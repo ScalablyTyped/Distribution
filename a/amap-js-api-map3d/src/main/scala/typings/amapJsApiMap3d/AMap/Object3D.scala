@@ -30,8 +30,7 @@ trait Object3D extends StObject {
 }
 object Object3D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DEPTH_TEST: Boolean,
     geometry: Geometry3D,
     needUpdate: Boolean,
@@ -53,8 +52,7 @@ object Object3D {
   }
   object Line {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEPTH_TEST: Boolean,
       geometry: typings.amapJsApiMap3d.AMap.Geometry3D.Line,
       needUpdate: Boolean,
@@ -67,11 +65,9 @@ object Object3D {
       __obj.asInstanceOf[Line]
     }
     
-    @scala.inline
-    implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+    extension [Self <: Line](x: Self) {
       
-      @scala.inline
-      def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Line): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Line): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,8 +80,7 @@ object Object3D {
   }
   object Mesh {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEPTH_TEST: Boolean,
       geometry: typings.amapJsApiMap3d.AMap.Geometry3D.Mesh,
       needUpdate: Boolean,
@@ -98,11 +93,9 @@ object Object3D {
       __obj.asInstanceOf[Mesh]
     }
     
-    @scala.inline
-    implicit class MeshMutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
+    extension [Self <: Mesh](x: Self) {
       
-      @scala.inline
-      def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Mesh): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Mesh): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,8 +108,7 @@ object Object3D {
   }
   object MeshAcceptLights {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEPTH_TEST: Boolean,
       geometry: MeshreadonlyvertexNormals,
       needUpdate: Boolean,
@@ -129,11 +121,9 @@ object Object3D {
       __obj.asInstanceOf[MeshAcceptLights]
     }
     
-    @scala.inline
-    implicit class MeshAcceptLightsMutableBuilder[Self <: MeshAcceptLights] (val x: Self) extends AnyVal {
+    extension [Self <: MeshAcceptLights](x: Self) {
       
-      @scala.inline
-      def setGeometry(value: MeshreadonlyvertexNormals): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: MeshreadonlyvertexNormals): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,32 +152,23 @@ object Object3D {
     type Options = Color & (Path | typings.amapJsApiMap3d.anon.Unit)
   }
   
-  @scala.inline
-  implicit class Object3DMutableBuilder[Self <: Object3D] (val x: Self) extends AnyVal {
+  extension [Self <: Object3D](x: Self) {
     
-    @scala.inline
-    def setDEPTH_TEST(value: Boolean): Self = StObject.set(x, "DEPTH_TEST", value.asInstanceOf[js.Any])
+    inline def setDEPTH_TEST(value: Boolean): Self = StObject.set(x, "DEPTH_TEST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: Geometry3D): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Geometry3D): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedUpdate(value: Boolean): Self = StObject.set(x, "needUpdate", value.asInstanceOf[js.Any])
+    inline def setNeedUpdate(value: Boolean): Self = StObject.set(x, "needUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReDraw(value: () => Unit): Self = StObject.set(x, "reDraw", js.Any.fromFunction0(value))
+    inline def setReDraw(value: () => Unit): Self = StObject.set(x, "reDraw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextures(value: js.Array[String | HTMLCanvasElement]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: js.Array[String | HTMLCanvasElement]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexturesVarargs(value: (String | HTMLCanvasElement)*): Self = StObject.set(x, "textures", js.Array(value :_*))
+    inline def setTexturesVarargs(value: (String | HTMLCanvasElement)*): Self = StObject.set(x, "textures", js.Array(value :_*))
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
   }
   
   trait Points
@@ -203,8 +184,7 @@ object Object3D {
   }
   object Points {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEPTH_TEST: Boolean,
       borderColor: String,
       borderWeight: Double,
@@ -219,17 +199,13 @@ object Object3D {
       __obj.asInstanceOf[Points]
     }
     
-    @scala.inline
-    implicit class PointsMutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
+    extension [Self <: Points](x: Self) {
       
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
+      inline def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Points): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Points): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,8 +223,7 @@ object Object3D {
     }
     object Options {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         color: String | (js.Array[js.Array[Double] | Double | String]),
         path: js.Array[(js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel]
       ): Options = {
@@ -256,35 +231,25 @@ object Object3D {
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setColor(value: String | (js.Array[js.Array[Double] | Double | String])): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String | (js.Array[js.Array[Double] | Double | String])): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColor2(value: String | (js.Array[js.Array[Double] | Double | String])): Self = StObject.set(x, "color2", value.asInstanceOf[js.Any])
+        inline def setColor2(value: String | (js.Array[js.Array[Double] | Double | String])): Self = StObject.set(x, "color2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColor2Undefined: Self = StObject.set(x, "color2", js.undefined)
+        inline def setColor2Undefined: Self = StObject.set(x, "color2", js.undefined)
         
-        @scala.inline
-        def setColor2Varargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color2", js.Array(value :_*))
+        inline def setColor2Varargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color2", js.Array(value :_*))
         
-        @scala.inline
-        def setColorVarargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color", js.Array(value :_*))
+        inline def setColorVarargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color", js.Array(value :_*))
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setPath(value: js.Array[(js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: js.Array[(js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathVarargs(value: ((js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel)*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: ((js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel)*): Self = StObject.set(x, "path", js.Array(value :_*))
       }
     }
   }
@@ -298,8 +263,7 @@ object Object3D {
   }
   object RoundPoints {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEPTH_TEST: Boolean,
       borderColor: String,
       borderWeight: Double,
@@ -315,11 +279,9 @@ object Object3D {
       __obj.asInstanceOf[RoundPoints]
     }
     
-    @scala.inline
-    implicit class RoundPointsMutableBuilder[Self <: RoundPoints] (val x: Self) extends AnyVal {
+    extension [Self <: RoundPoints](x: Self) {
       
-      @scala.inline
-      def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+      inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,38 +299,28 @@ object Object3D {
     }
     object Options {
       
-      @scala.inline
-      def apply(color: String, path: js.Array[js.Tuple2[Double, Double]]): Options = {
+      inline def apply(color: String, path: js.Array[js.Tuple2[Double, Double]]): Options = {
         val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+        inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+        inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
         
-        @scala.inline
-        def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashArray(value: js.Array[Double]): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
+        inline def setDashArray(value: js.Array[Double]): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashArrayUndefined: Self = StObject.set(x, "dashArray", js.undefined)
+        inline def setDashArrayUndefined: Self = StObject.set(x, "dashArray", js.undefined)
         
-        @scala.inline
-        def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value :_*))
+        inline def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value :_*))
         
-        @scala.inline
-        def setPath(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "path", js.Array(value :_*))
       }
     }
   }

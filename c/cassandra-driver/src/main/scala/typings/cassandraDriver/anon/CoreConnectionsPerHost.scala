@@ -17,37 +17,27 @@ trait CoreConnectionsPerHost extends StObject {
 }
 object CoreConnectionsPerHost {
   
-  @scala.inline
-  def apply(): CoreConnectionsPerHost = {
+  inline def apply(): CoreConnectionsPerHost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoreConnectionsPerHost]
   }
   
-  @scala.inline
-  implicit class CoreConnectionsPerHostMutableBuilder[Self <: CoreConnectionsPerHost] (val x: Self) extends AnyVal {
+  extension [Self <: CoreConnectionsPerHost](x: Self) {
     
-    @scala.inline
-    def setCoreConnectionsPerHost(value: NumberDictionary[Double]): Self = StObject.set(x, "coreConnectionsPerHost", value.asInstanceOf[js.Any])
+    inline def setCoreConnectionsPerHost(value: NumberDictionary[Double]): Self = StObject.set(x, "coreConnectionsPerHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoreConnectionsPerHostUndefined: Self = StObject.set(x, "coreConnectionsPerHost", js.undefined)
+    inline def setCoreConnectionsPerHostUndefined: Self = StObject.set(x, "coreConnectionsPerHost", js.undefined)
     
-    @scala.inline
-    def setHeartBeatInterval(value: Double): Self = StObject.set(x, "heartBeatInterval", value.asInstanceOf[js.Any])
+    inline def setHeartBeatInterval(value: Double): Self = StObject.set(x, "heartBeatInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartBeatIntervalUndefined: Self = StObject.set(x, "heartBeatInterval", js.undefined)
+    inline def setHeartBeatIntervalUndefined: Self = StObject.set(x, "heartBeatInterval", js.undefined)
     
-    @scala.inline
-    def setMaxRequestsPerConnection(value: Double): Self = StObject.set(x, "maxRequestsPerConnection", value.asInstanceOf[js.Any])
+    inline def setMaxRequestsPerConnection(value: Double): Self = StObject.set(x, "maxRequestsPerConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRequestsPerConnectionUndefined: Self = StObject.set(x, "maxRequestsPerConnection", js.undefined)
+    inline def setMaxRequestsPerConnectionUndefined: Self = StObject.set(x, "maxRequestsPerConnection", js.undefined)
     
-    @scala.inline
-    def setWarmup(value: Boolean): Self = StObject.set(x, "warmup", value.asInstanceOf[js.Any])
+    inline def setWarmup(value: Boolean): Self = StObject.set(x, "warmup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarmupUndefined: Self = StObject.set(x, "warmup", js.undefined)
+    inline def setWarmupUndefined: Self = StObject.set(x, "warmup", js.undefined)
   }
 }

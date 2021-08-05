@@ -28,10 +28,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ConfigType /* <: Config */](namespace: String): js.Promise[ConfigType & Config] = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ConfigType & Config]]
-  @scala.inline
-  def apply[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): js.Promise[ConfigType & Config] = (^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfigType & Config]]
+  inline def apply[ConfigType /* <: Config */](namespace: String): js.Promise[ConfigType & Config] = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ConfigType & Config]]
+  inline def apply[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): js.Promise[ConfigType & Config] = (^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfigType & Config]]
   
   @JSImport("pkg-conf", JSImport.Namespace)
   @js.native
@@ -41,25 +39,21 @@ object mod {
   @JSImport("pkg-conf", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pkgConf */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pkgConf */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pkgConf */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	@param config - The `config` returned from any of the above methods.
   	@returns The filepath to the `package.json` file or `null` when not found.
   	*/
-  @scala.inline
-  def filepath(config: Config): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("filepath")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def filepath(config: Config): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("filepath")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /**
   	Same as `pkgConf()`, but runs synchronously.
   	@param namespace - The `package.json` namespace you want.
   	@returns Returns the config.
   	*/
-  @scala.inline
-  def sync[ConfigType /* <: Config */](namespace: String): ConfigType & Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(namespace.asInstanceOf[js.Any]).asInstanceOf[ConfigType & Config]
-  @scala.inline
-  def sync[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): ConfigType & Config = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfigType & Config]
+  inline def sync[ConfigType /* <: Config */](namespace: String): ConfigType & Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(namespace.asInstanceOf[js.Any]).asInstanceOf[ConfigType & Config]
+  inline def sync[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): ConfigType & Config = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfigType & Config]
   
   type Config = StringDictionary[js.Any]
   
@@ -94,32 +88,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[ConfigType /* <: Config */](): Options[ConfigType] = {
+    inline def apply[ConfigType /* <: Config */](): Options[ConfigType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[ConfigType]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], ConfigType /* <: Config */] (val x: Self & Options[ConfigType]) extends AnyVal {
+    extension [Self <: Options[?], ConfigType /* <: Config */](x: Self & Options[ConfigType]) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDefaults(value: ConfigType): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: ConfigType): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setSkipOnFalse(value: Boolean): Self = StObject.set(x, "skipOnFalse", value.asInstanceOf[js.Any])
+      inline def setSkipOnFalse(value: Boolean): Self = StObject.set(x, "skipOnFalse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipOnFalseUndefined: Self = StObject.set(x, "skipOnFalse", js.undefined)
+      inline def setSkipOnFalseUndefined: Self = StObject.set(x, "skipOnFalse", js.undefined)
     }
   }
 }

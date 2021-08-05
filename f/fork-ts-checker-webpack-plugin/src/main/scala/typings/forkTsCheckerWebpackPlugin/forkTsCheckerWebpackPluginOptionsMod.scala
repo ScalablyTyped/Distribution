@@ -27,50 +27,36 @@ object forkTsCheckerWebpackPluginOptionsMod {
   }
   object ForkTsCheckerWebpackPluginOptions {
     
-    @scala.inline
-    def apply(): ForkTsCheckerWebpackPluginOptions = {
+    inline def apply(): ForkTsCheckerWebpackPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ForkTsCheckerWebpackPluginOptions]
     }
     
-    @scala.inline
-    implicit class ForkTsCheckerWebpackPluginOptionsMutableBuilder[Self <: ForkTsCheckerWebpackPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ForkTsCheckerWebpackPluginOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setEslint(value: EsLintReporterOptions): Self = StObject.set(x, "eslint", value.asInstanceOf[js.Any])
+      inline def setEslint(value: EsLintReporterOptions): Self = StObject.set(x, "eslint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEslintUndefined: Self = StObject.set(x, "eslint", js.undefined)
+      inline def setEslintUndefined: Self = StObject.set(x, "eslint", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: FormatterOptions): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: FormatterOptions): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setIssue(value: IssueOptions): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+      inline def setIssue(value: IssueOptions): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
+      inline def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
       
-      @scala.inline
-      def setLogger(value: LoggerOptions): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: LoggerOptions): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setTypescript(value: TypeScriptReporterOptions): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
+      inline def setTypescript(value: TypeScriptReporterOptions): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypescriptUndefined: Self = StObject.set(x, "typescript", js.undefined)
+      inline def setTypescriptUndefined: Self = StObject.set(x, "typescript", js.undefined)
     }
   }
 }

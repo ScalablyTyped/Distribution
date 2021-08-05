@@ -56,8 +56,7 @@ trait XTextInputStream
 }
 object XTextInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     available: () => Double,
     closeInput: () => Unit,
@@ -75,19 +74,14 @@ object XTextInputStream {
     __obj.asInstanceOf[XTextInputStream]
   }
   
-  @scala.inline
-  implicit class XTextInputStreamMutableBuilder[Self <: XTextInputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XTextInputStream](x: Self) {
     
-    @scala.inline
-    def setIsEOF(value: () => Boolean): Self = StObject.set(x, "isEOF", js.Any.fromFunction0(value))
+    inline def setIsEOF(value: () => Boolean): Self = StObject.set(x, "isEOF", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadLine(value: () => String): Self = StObject.set(x, "readLine", js.Any.fromFunction0(value))
+    inline def setReadLine(value: () => String): Self = StObject.set(x, "readLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadString(value: (SeqEquiv[String], Boolean) => String): Self = StObject.set(x, "readString", js.Any.fromFunction2(value))
+    inline def setReadString(value: (SeqEquiv[String], Boolean) => String): Self = StObject.set(x, "readString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetEncoding(value: String => Unit): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
+    inline def setSetEncoding(value: String => Unit): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
   }
 }

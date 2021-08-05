@@ -69,8 +69,7 @@ object mod {
       var serviceID: String = js.native
     }
     
-    @scala.inline
-    def BalanceContext_=(x: BalanceContextConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BalanceContext")(x.asInstanceOf[js.Any])
+    inline def BalanceContext_=(x: BalanceContextConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BalanceContext")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -134,8 +133,7 @@ object mod {
   @js.native
   val Logger: LoggerFactory = js.native
   
-  @scala.inline
-  def Middleware(): js.Function3[
+  inline def Middleware(): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -146,8 +144,7 @@ object mod {
     /* next */ NextFunction, 
     Unit
   ]]
-  @scala.inline
-  def Middleware(options: Service): js.Function3[
+  inline def Middleware(options: Service): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -178,19 +175,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def beforeRequest(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def beforeRequest(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def normalizeConfig(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def normalizeConfig(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object RAL {
     
-    @scala.inline
-    def apply(serviceName: String): RalRunner = ^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any]).asInstanceOf[RalRunner]
-    @scala.inline
-    def apply(serviceName: String, options: js.Object): RalRunner = (^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RalRunner]
+    inline def apply(serviceName: String): RalRunner = ^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any]).asInstanceOf[RalRunner]
+    inline def apply(serviceName: String, options: js.Object): RalRunner = (^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RalRunner]
     
     @JSImport("node-ral", "RAL")
     @js.native
@@ -225,33 +218,23 @@ object mod {
       def throwError(err: js.Any): Unit = js.native
     }
     
-    @scala.inline
-    def appendExtPath(extPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("appendExtPath")(extPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def appendExtPath(extPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("appendExtPath")(extPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
+    inline def getConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
     
-    @scala.inline
-    def getRawConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
+    inline def getRawConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
     
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-    @scala.inline
-    def init(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
-    @scala.inline
-    def reload(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
+    inline def reload(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setConfigNormalizer(normalizers: ConfigNormalizer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigNormalizer")(normalizers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setConfigNormalizer(normalizers: ConfigNormalizer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigNormalizer")(normalizers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def RALPromise[T](name: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def RALPromise[T](name: String, options: js.Object): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def RALPromise[T](name: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def RALPromise[T](name: String, options: js.Object): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("node-ral", "RalModule")
   @js.native
@@ -268,19 +251,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
+    inline def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
     
-    @scala.inline
-    def load(pathOrModule: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def load(pathOrModule: RalModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def load(pathOrModule: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def load(pathOrModule: RalModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("node-ral", "RalModule.modules")
     @js.native
     def modules: StringDictionary[RalModule] = js.native
-    @scala.inline
-    def modules_=(x: StringDictionary[RalModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
+    inline def modules_=(x: StringDictionary[RalModule]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
   }
   
   type BalanceContextConstructor = Instantiable2[/* serviceID */ String, /* service */ Service, BalanceContextClass]
@@ -321,8 +300,7 @@ object mod {
   }
   object LogInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       conv: String,
       cost: String,
       method: String,
@@ -344,56 +322,39 @@ object mod {
       __obj.asInstanceOf[LogInfo]
     }
     
-    @scala.inline
-    implicit class LogInfoMutableBuilder[Self <: LogInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LogInfo](x: Self) {
       
-      @scala.inline
-      def setConv(value: String): Self = StObject.set(x, "conv", value.asInstanceOf[js.Any])
+      inline def setConv(value: String): Self = StObject.set(x, "conv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCost(value: String): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+      inline def setCost(value: String): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPack(value: String): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
+      inline def setPack(value: String): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProt(value: String): Self = StObject.set(x, "prot", value.asInstanceOf[js.Any])
+      inline def setProt(value: String): Self = StObject.set(x, "prot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestID(value: String): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
+      inline def setRequestID(value: String): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry(value: String): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: String): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTalk(value: String): Self = StObject.set(x, "talk", value.asInstanceOf[js.Any])
+      inline def setTalk(value: String): Self = StObject.set(x, "talk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnpack(value: String): Self = StObject.set(x, "unpack", value.asInstanceOf[js.Any])
+      inline def setUnpack(value: String): Self = StObject.set(x, "unpack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: String): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+      inline def setWrite(value: String): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     }
   }
   
@@ -419,8 +380,7 @@ object mod {
   }
   object RalLogger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: /* repeated */ js.Any => Unit,
       fatal: /* repeated */ js.Any => Unit,
       notice: /* repeated */ js.Any => Unit,
@@ -431,23 +391,17 @@ object mod {
       __obj.asInstanceOf[RalLogger]
     }
     
-    @scala.inline
-    implicit class RalLoggerMutableBuilder[Self <: RalLogger] (val x: Self) extends AnyVal {
+    extension [Self <: RalLogger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
+      inline def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction1(value))
+      inline def setNotice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarning(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
     }
   }
   
@@ -461,26 +415,20 @@ object mod {
   }
   object Server {
     
-    @scala.inline
-    def apply(host: String, port: String | Double): Server = {
+    inline def apply(host: String, port: String | Double): Server = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Server]
     }
     
-    @scala.inline
-    implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+    extension [Self <: Server](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdc(value: String): Self = StObject.set(x, "idc", value.asInstanceOf[js.Any])
+      inline def setIdc(value: String): Self = StObject.set(x, "idc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdcUndefined: Self = StObject.set(x, "idc", js.undefined)
+      inline def setIdcUndefined: Self = StObject.set(x, "idc", js.undefined)
       
-      @scala.inline
-      def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -516,8 +464,7 @@ object mod {
   }
   object Service {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       balance: random | roundrobin | hashring,
       pack: buildInConverter,
       protocol: http | https | soap | redis,
@@ -528,80 +475,55 @@ object mod {
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setBalance(value: random | roundrobin | hashring): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: random | roundrobin | hashring): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: `utf-8` | GBK): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: `utf-8` | GBK): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHybird(value: Boolean): Self = StObject.set(x, "hybird", value.asInstanceOf[js.Any])
+      inline def setHybird(value: Boolean): Self = StObject.set(x, "hybird", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHybirdUndefined: Self = StObject.set(x, "hybird", js.undefined)
+      inline def setHybirdUndefined: Self = StObject.set(x, "hybird", js.undefined)
       
-      @scala.inline
-      def setMethod(value: GET | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPack(value: buildInConverter): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
+      inline def setPack(value: buildInConverter): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: http | https | soap | redis): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: http | https | soap | redis): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setServer(value: js.Array[Server]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: js.Array[Server]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerVarargs(value: Server*): Self = StObject.set(x, "server", js.Array(value :_*))
+      inline def setServerVarargs(value: Server*): Self = StObject.set(x, "server", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUnpack(value: buildInConverter): Self = StObject.set(x, "unpack", value.asInstanceOf[js.Any])
+      inline def setUnpack(value: buildInConverter): Self = StObject.set(x, "unpack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -619,31 +541,22 @@ object mod {
   trait buildInConverter extends StObject
   object buildInConverter {
     
-    @scala.inline
-    def form: typings.nodeRal.nodeRalStrings.form = "form".asInstanceOf[typings.nodeRal.nodeRalStrings.form]
+    inline def form: typings.nodeRal.nodeRalStrings.form = "form".asInstanceOf[typings.nodeRal.nodeRalStrings.form]
     
-    @scala.inline
-    def formData: typings.nodeRal.nodeRalStrings.formData = "formData".asInstanceOf[typings.nodeRal.nodeRalStrings.formData]
+    inline def formData: typings.nodeRal.nodeRalStrings.formData = "formData".asInstanceOf[typings.nodeRal.nodeRalStrings.formData]
     
-    @scala.inline
-    def json: typings.nodeRal.nodeRalStrings.json = "json".asInstanceOf[typings.nodeRal.nodeRalStrings.json]
+    inline def json: typings.nodeRal.nodeRalStrings.json = "json".asInstanceOf[typings.nodeRal.nodeRalStrings.json]
     
-    @scala.inline
-    def protobuf: typings.nodeRal.nodeRalStrings.protobuf = "protobuf".asInstanceOf[typings.nodeRal.nodeRalStrings.protobuf]
+    inline def protobuf: typings.nodeRal.nodeRalStrings.protobuf = "protobuf".asInstanceOf[typings.nodeRal.nodeRalStrings.protobuf]
     
-    @scala.inline
-    def querystring: typings.nodeRal.nodeRalStrings.querystring = "querystring".asInstanceOf[typings.nodeRal.nodeRalStrings.querystring]
+    inline def querystring: typings.nodeRal.nodeRalStrings.querystring = "querystring".asInstanceOf[typings.nodeRal.nodeRalStrings.querystring]
     
-    @scala.inline
-    def raw: typings.nodeRal.nodeRalStrings.raw = "raw".asInstanceOf[typings.nodeRal.nodeRalStrings.raw]
+    inline def raw: typings.nodeRal.nodeRalStrings.raw = "raw".asInstanceOf[typings.nodeRal.nodeRalStrings.raw]
     
-    @scala.inline
-    def redis: typings.nodeRal.nodeRalStrings.redis = "redis".asInstanceOf[typings.nodeRal.nodeRalStrings.redis]
+    inline def redis: typings.nodeRal.nodeRalStrings.redis = "redis".asInstanceOf[typings.nodeRal.nodeRalStrings.redis]
     
-    @scala.inline
-    def stream: typings.nodeRal.nodeRalStrings.stream = "stream".asInstanceOf[typings.nodeRal.nodeRalStrings.stream]
+    inline def stream: typings.nodeRal.nodeRalStrings.stream = "stream".asInstanceOf[typings.nodeRal.nodeRalStrings.stream]
     
-    @scala.inline
-    def string: typings.nodeRal.nodeRalStrings.string = "string".asInstanceOf[typings.nodeRal.nodeRalStrings.string]
+    inline def string: typings.nodeRal.nodeRalStrings.string = "string".asInstanceOf[typings.nodeRal.nodeRalStrings.string]
   }
 }

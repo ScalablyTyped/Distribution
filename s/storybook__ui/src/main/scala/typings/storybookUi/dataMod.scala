@@ -15,9 +15,7 @@ object dataMod {
   @js.native
   val DEFAULT_REF_ID: /* "storybook_internal" */ String = js.native
   
-  @scala.inline
-  def collapseAllStories(stories: StoriesHash): StoriesHash = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseAllStories")(stories.asInstanceOf[js.Any]).asInstanceOf[StoriesHash]
+  inline def collapseAllStories(stories: StoriesHash): StoriesHash = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseAllStories")(stories.asInstanceOf[js.Any]).asInstanceOf[StoriesHash]
   
-  @scala.inline
-  def collapseDocsOnlyStories(storiesHash: StoriesHash): StoriesHash = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseDocsOnlyStories")(storiesHash.asInstanceOf[js.Any]).asInstanceOf[StoriesHash]
+  inline def collapseDocsOnlyStories(storiesHash: StoriesHash): StoriesHash = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseDocsOnlyStories")(storiesHash.asInstanceOf[js.Any]).asInstanceOf[StoriesHash]
 }

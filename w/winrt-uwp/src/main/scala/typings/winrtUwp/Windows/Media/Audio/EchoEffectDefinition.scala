@@ -25,8 +25,7 @@ trait EchoEffectDefinition extends StObject {
 }
 object EchoEffectDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatableClassId: String,
     delay: Double,
     feedback: Double,
@@ -37,22 +36,16 @@ object EchoEffectDefinition {
     __obj.asInstanceOf[EchoEffectDefinition]
   }
   
-  @scala.inline
-  implicit class EchoEffectDefinitionMutableBuilder[Self <: EchoEffectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EchoEffectDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedback(value: Double): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: Double): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWetDryMix(value: Double): Self = StObject.set(x, "wetDryMix", value.asInstanceOf[js.Any])
+    inline def setWetDryMix(value: Double): Self = StObject.set(x, "wetDryMix", value.asInstanceOf[js.Any])
   }
 }

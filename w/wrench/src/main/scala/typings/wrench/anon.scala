@@ -12,20 +12,16 @@ object anon {
   }
   object Preserve {
     
-    @scala.inline
-    def apply(): Preserve = {
+    inline def apply(): Preserve = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Preserve]
     }
     
-    @scala.inline
-    implicit class PreserveMutableBuilder[Self <: Preserve] (val x: Self) extends AnyVal {
+    extension [Self <: Preserve](x: Self) {
       
-      @scala.inline
-      def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
     }
   }
 }

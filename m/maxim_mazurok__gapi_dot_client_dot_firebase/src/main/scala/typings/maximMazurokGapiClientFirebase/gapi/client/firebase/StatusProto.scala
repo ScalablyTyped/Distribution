@@ -23,43 +23,31 @@ trait StatusProto extends StObject {
 }
 object StatusProto {
   
-  @scala.inline
-  def apply(): StatusProto = {
+  inline def apply(): StatusProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatusProto]
   }
   
-  @scala.inline
-  implicit class StatusProtoMutableBuilder[Self <: StatusProto] (val x: Self) extends AnyVal {
+  extension [Self <: StatusProto](x: Self) {
     
-    @scala.inline
-    def setCanonicalCode(value: Double): Self = StObject.set(x, "canonicalCode", value.asInstanceOf[js.Any])
+    inline def setCanonicalCode(value: Double): Self = StObject.set(x, "canonicalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalCodeUndefined: Self = StObject.set(x, "canonicalCode", js.undefined)
+    inline def setCanonicalCodeUndefined: Self = StObject.set(x, "canonicalCode", js.undefined)
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageSet(value: js.Any): Self = StObject.set(x, "messageSet", value.asInstanceOf[js.Any])
+    inline def setMessageSet(value: js.Any): Self = StObject.set(x, "messageSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageSetUndefined: Self = StObject.set(x, "messageSet", js.undefined)
+    inline def setMessageSetUndefined: Self = StObject.set(x, "messageSet", js.undefined)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
   }
 }

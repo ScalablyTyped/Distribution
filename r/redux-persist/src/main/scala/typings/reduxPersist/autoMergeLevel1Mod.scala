@@ -11,8 +11,7 @@ object autoMergeLevel1Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](
+  inline def default[S](
     inboundState: S,
     originalState: S,
     reducedState: S,

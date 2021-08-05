@@ -10,16 +10,13 @@ trait SmartHomeV1SyncRequestInputs extends StObject {
 }
 object SmartHomeV1SyncRequestInputs {
   
-  @scala.inline
-  def apply(intent: SmartHomeV1Intents): SmartHomeV1SyncRequestInputs = {
+  inline def apply(intent: SmartHomeV1Intents): SmartHomeV1SyncRequestInputs = {
     val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1SyncRequestInputs]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1SyncRequestInputsMutableBuilder[Self <: SmartHomeV1SyncRequestInputs] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1SyncRequestInputs](x: Self) {
     
-    @scala.inline
-    def setIntent(value: SmartHomeV1Intents): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: SmartHomeV1Intents): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
   }
 }

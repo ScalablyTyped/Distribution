@@ -28,8 +28,7 @@ trait TrustedAdvisorResourcesSummary extends StObject {
 }
 object TrustedAdvisorResourcesSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     resourcesFlagged: Long,
     resourcesIgnored: Long,
     resourcesProcessed: Long,
@@ -39,19 +38,14 @@ object TrustedAdvisorResourcesSummary {
     __obj.asInstanceOf[TrustedAdvisorResourcesSummary]
   }
   
-  @scala.inline
-  implicit class TrustedAdvisorResourcesSummaryMutableBuilder[Self <: TrustedAdvisorResourcesSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedAdvisorResourcesSummary](x: Self) {
     
-    @scala.inline
-    def setResourcesFlagged(value: Long): Self = StObject.set(x, "resourcesFlagged", value.asInstanceOf[js.Any])
+    inline def setResourcesFlagged(value: Long): Self = StObject.set(x, "resourcesFlagged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesIgnored(value: Long): Self = StObject.set(x, "resourcesIgnored", value.asInstanceOf[js.Any])
+    inline def setResourcesIgnored(value: Long): Self = StObject.set(x, "resourcesIgnored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesProcessed(value: Long): Self = StObject.set(x, "resourcesProcessed", value.asInstanceOf[js.Any])
+    inline def setResourcesProcessed(value: Long): Self = StObject.set(x, "resourcesProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesSuppressed(value: Long): Self = StObject.set(x, "resourcesSuppressed", value.asInstanceOf[js.Any])
+    inline def setResourcesSuppressed(value: Long): Self = StObject.set(x, "resourcesSuppressed", value.asInstanceOf[js.Any])
   }
 }

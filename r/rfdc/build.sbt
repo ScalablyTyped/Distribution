@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rfdc"
-version := "1.1-dt-20191218Z-4ca0d7"
+version := "1.1-dt-20191218Z-4ca134"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

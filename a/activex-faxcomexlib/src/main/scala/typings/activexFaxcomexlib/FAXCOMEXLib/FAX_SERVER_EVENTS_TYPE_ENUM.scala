@@ -32,36 +32,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_SERVER_EVENTS_TYPE_ENUM extends StObject
 object FAX_SERVER_EVENTS_TYPE_ENUM {
   
-  @scala.inline
-  def fsetACTIVITY: `8` = 8.asInstanceOf[`8`]
+  inline def fsetACTIVITY: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def fsetCONFIG: `4` = 4.asInstanceOf[`4`]
+  inline def fsetCONFIG: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def fsetDEVICE_STATUS: `256` = 256.asInstanceOf[`256`]
+  inline def fsetDEVICE_STATUS: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def fsetFXSSVC_ENDED: `128` = 128.asInstanceOf[`128`]
+  inline def fsetFXSSVC_ENDED: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def fsetINCOMING_CALL: `512` = 512.asInstanceOf[`512`]
+  inline def fsetINCOMING_CALL: `512` = 512.asInstanceOf[`512`]
   
-  @scala.inline
-  def fsetIN_ARCHIVE: `32` = 32.asInstanceOf[`32`]
+  inline def fsetIN_ARCHIVE: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def fsetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
+  inline def fsetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fsetNONE: `0` = 0.asInstanceOf[`0`]
+  inline def fsetNONE: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fsetOUT_ARCHIVE: `64` = 64.asInstanceOf[`64`]
+  inline def fsetOUT_ARCHIVE: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def fsetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
+  inline def fsetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fsetQUEUE_STATE: `16` = 16.asInstanceOf[`16`]
+  inline def fsetQUEUE_STATE: `16` = 16.asInstanceOf[`16`]
 }

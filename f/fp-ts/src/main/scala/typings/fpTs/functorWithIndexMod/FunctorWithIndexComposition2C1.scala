@@ -16,8 +16,7 @@ trait FunctorWithIndexComposition2C1[F /* <: /* import warning: transforms.Quali
 }
 object FunctorWithIndexComposition2C1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI, E](
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
     mapWithIndex: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ js.Any, js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any]) => js.Any
   ): FunctorWithIndexComposition2C1[F, FI, G, GI, E] = {
@@ -25,11 +24,9 @@ object FunctorWithIndexComposition2C1 {
     __obj.asInstanceOf[FunctorWithIndexComposition2C1[F, FI, G, GI, E]]
   }
   
-  @scala.inline
-  implicit class FunctorWithIndexComposition2C1MutableBuilder[Self <: FunctorWithIndexComposition2C1[?, ?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI, E] (val x: Self & (FunctorWithIndexComposition2C1[F, FI, G, GI, E])) extends AnyVal {
+  extension [Self <: FunctorWithIndexComposition2C1[?, ?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI, E](x: Self & (FunctorWithIndexComposition2C1[F, FI, G, GI, E])) {
     
-    @scala.inline
-    def setMapWithIndex(
+    inline def setMapWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ js.Any, js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "mapWithIndex", js.Any.fromFunction2(value))
   }

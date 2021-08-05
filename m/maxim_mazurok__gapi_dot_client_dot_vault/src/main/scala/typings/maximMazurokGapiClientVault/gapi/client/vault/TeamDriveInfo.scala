@@ -11,22 +11,17 @@ trait TeamDriveInfo extends StObject {
 }
 object TeamDriveInfo {
   
-  @scala.inline
-  def apply(): TeamDriveInfo = {
+  inline def apply(): TeamDriveInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamDriveInfo]
   }
   
-  @scala.inline
-  implicit class TeamDriveInfoMutableBuilder[Self <: TeamDriveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TeamDriveInfo](x: Self) {
     
-    @scala.inline
-    def setTeamDriveIds(value: js.Array[String]): Self = StObject.set(x, "teamDriveIds", value.asInstanceOf[js.Any])
+    inline def setTeamDriveIds(value: js.Array[String]): Self = StObject.set(x, "teamDriveIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDriveIdsUndefined: Self = StObject.set(x, "teamDriveIds", js.undefined)
+    inline def setTeamDriveIdsUndefined: Self = StObject.set(x, "teamDriveIds", js.undefined)
     
-    @scala.inline
-    def setTeamDriveIdsVarargs(value: String*): Self = StObject.set(x, "teamDriveIds", js.Array(value :_*))
+    inline def setTeamDriveIdsVarargs(value: String*): Self = StObject.set(x, "teamDriveIds", js.Array(value :_*))
   }
 }

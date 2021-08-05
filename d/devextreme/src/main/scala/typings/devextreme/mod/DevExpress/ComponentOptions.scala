@@ -25,31 +25,23 @@ trait ComponentOptions[T] extends StObject {
 }
 object ComponentOptions {
   
-  @scala.inline
-  def apply[T](): ComponentOptions[T] = {
+  inline def apply[T](): ComponentOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentOptions[T]]
   }
   
-  @scala.inline
-  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], T] (val x: Self & ComponentOptions[T]) extends AnyVal {
+  extension [Self <: ComponentOptions[?], T](x: Self & ComponentOptions[T]) {
     
-    @scala.inline
-    def setOnDisposing(value: /* e */ typings.devextreme.anon.Component[T] => js.Any): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
+    inline def setOnDisposing(value: /* e */ typings.devextreme.anon.Component[T] => js.Any): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
+    inline def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
     
-    @scala.inline
-    def setOnInitialized(value: /* e */ Element[T] => js.Any): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
+    inline def setOnInitialized(value: /* e */ Element[T] => js.Any): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
+    inline def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
     
-    @scala.inline
-    def setOnOptionChanged(value: /* e */ FullName[T] => js.Any): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
+    inline def setOnOptionChanged(value: /* e */ FullName[T] => js.Any): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
+    inline def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
   }
 }

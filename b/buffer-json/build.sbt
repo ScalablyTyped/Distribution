@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "buffer-json"
-version := "2.0-dt-20200407Z-720be8"
+version := "2.0-dt-20200407Z-440932"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

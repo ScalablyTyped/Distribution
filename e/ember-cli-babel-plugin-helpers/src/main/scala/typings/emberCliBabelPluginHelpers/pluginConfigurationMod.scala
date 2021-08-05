@@ -12,11 +12,8 @@ object pluginConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findPluginIndex(plugins: js.Array[BabelPluginConfig], plugin: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findPluginIndex")(plugins.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findPluginIndex(plugins: js.Array[BabelPluginConfig], plugin: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findPluginIndex")(plugins.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getPluginsArray(target: js.Array[BabelPluginConfig]): js.Array[BabelPluginConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPluginsArray")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[BabelPluginConfig]]
-  @scala.inline
-  def getPluginsArray(target: ConfigurationTarget): js.Array[BabelPluginConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPluginsArray")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[BabelPluginConfig]]
+  inline def getPluginsArray(target: js.Array[BabelPluginConfig]): js.Array[BabelPluginConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPluginsArray")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[BabelPluginConfig]]
+  inline def getPluginsArray(target: ConfigurationTarget): js.Array[BabelPluginConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPluginsArray")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[BabelPluginConfig]]
 }

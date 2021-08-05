@@ -27,44 +27,32 @@ object Card {
   }
   object CardActionsProps {
     
-    @scala.inline
-    def apply(): CardActionsProps = {
+    inline def apply(): CardActionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardActionsProps]
     }
     
-    @scala.inline
-    implicit class CardActionsPropsMutableBuilder[Self <: CardActionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardActionsProps](x: Self) {
       
-      @scala.inline
-      def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
+      inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
+      inline def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
+      inline def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -80,32 +68,24 @@ object Card {
   }
   object CardExpandableProps {
     
-    @scala.inline
-    def apply(): CardExpandableProps = {
+    inline def apply(): CardExpandableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardExpandableProps]
     }
     
-    @scala.inline
-    implicit class CardExpandablePropsMutableBuilder[Self <: CardExpandableProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardExpandableProps](x: Self) {
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setOnExpanding(value: /* isExpanded */ Boolean => Unit): Self = StObject.set(x, "onExpanding", js.Any.fromFunction1(value))
+      inline def setOnExpanding(value: /* isExpanded */ Boolean => Unit): Self = StObject.set(x, "onExpanding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandingUndefined: Self = StObject.set(x, "onExpanding", js.undefined)
+      inline def setOnExpandingUndefined: Self = StObject.set(x, "onExpanding", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -147,110 +127,76 @@ object Card {
   }
   object CardHeaderProps {
     
-    @scala.inline
-    def apply(): CardHeaderProps = {
+    inline def apply(): CardHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardHeaderProps]
     }
     
-    @scala.inline
-    implicit class CardHeaderPropsMutableBuilder[Self <: CardHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardHeaderProps](x: Self) {
       
-      @scala.inline
-      def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
+      inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
-      @scala.inline
-      def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+      inline def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+      inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
       
-      @scala.inline
-      def setOpenIcon(value: ReactNode): Self = StObject.set(x, "openIcon", value.asInstanceOf[js.Any])
+      inline def setOpenIcon(value: ReactNode): Self = StObject.set(x, "openIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenIconUndefined: Self = StObject.set(x, "openIcon", js.undefined)
+      inline def setOpenIconUndefined: Self = StObject.set(x, "openIcon", js.undefined)
       
-      @scala.inline
-      def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
+      inline def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
+      inline def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
+      inline def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
+      inline def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
       
-      @scala.inline
-      def setSubtitleStyle(value: CSSProperties): Self = StObject.set(x, "subtitleStyle", value.asInstanceOf[js.Any])
+      inline def setSubtitleStyle(value: CSSProperties): Self = StObject.set(x, "subtitleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleStyleUndefined: Self = StObject.set(x, "subtitleStyle", js.undefined)
+      inline def setSubtitleStyleUndefined: Self = StObject.set(x, "subtitleStyle", js.undefined)
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: CSSProperties): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: CSSProperties): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+      inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+      inline def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+      inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -276,62 +222,44 @@ object Card {
   }
   object CardMediaProps {
     
-    @scala.inline
-    def apply(): CardMediaProps = {
+    inline def apply(): CardMediaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardMediaProps]
     }
     
-    @scala.inline
-    implicit class CardMediaPropsMutableBuilder[Self <: CardMediaProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardMediaProps](x: Self) {
       
-      @scala.inline
-      def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
+      inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setMediaStyle(value: CSSProperties): Self = StObject.set(x, "mediaStyle", value.asInstanceOf[js.Any])
+      inline def setMediaStyle(value: CSSProperties): Self = StObject.set(x, "mediaStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaStyleUndefined: Self = StObject.set(x, "mediaStyle", js.undefined)
+      inline def setMediaStyleUndefined: Self = StObject.set(x, "mediaStyle", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: ReactNode): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: ReactNode): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayContainerStyle(value: CSSProperties): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
+      inline def setOverlayContainerStyle(value: CSSProperties): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
+      inline def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
       
-      @scala.inline
-      def setOverlayContentStyle(value: CSSProperties): Self = StObject.set(x, "overlayContentStyle", value.asInstanceOf[js.Any])
+      inline def setOverlayContentStyle(value: CSSProperties): Self = StObject.set(x, "overlayContentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayContentStyleUndefined: Self = StObject.set(x, "overlayContentStyle", js.undefined)
+      inline def setOverlayContentStyleUndefined: Self = StObject.set(x, "overlayContentStyle", js.undefined)
       
-      @scala.inline
-      def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+      inline def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+      inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -357,68 +285,48 @@ object Card {
   }
   object CardProps {
     
-    @scala.inline
-    def apply(): CardProps = {
+    inline def apply(): CardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardProps]
     }
     
-    @scala.inline
-    implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardProps](x: Self) {
       
-      @scala.inline
-      def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
+      inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setInitiallyExpanded(value: Boolean): Self = StObject.set(x, "initiallyExpanded", value.asInstanceOf[js.Any])
+      inline def setInitiallyExpanded(value: Boolean): Self = StObject.set(x, "initiallyExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiallyExpandedUndefined: Self = StObject.set(x, "initiallyExpanded", js.undefined)
+      inline def setInitiallyExpandedUndefined: Self = StObject.set(x, "initiallyExpanded", js.undefined)
       
-      @scala.inline
-      def setOnExpandChange(value: /* isExpanded */ Boolean => Unit): Self = StObject.set(x, "onExpandChange", js.Any.fromFunction1(value))
+      inline def setOnExpandChange(value: /* isExpanded */ Boolean => Unit): Self = StObject.set(x, "onExpandChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandChangeUndefined: Self = StObject.set(x, "onExpandChange", js.undefined)
+      inline def setOnExpandChangeUndefined: Self = StObject.set(x, "onExpandChange", js.undefined)
       
-      @scala.inline
-      def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
+      inline def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
+      inline def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -438,44 +346,32 @@ object Card {
   }
   object CardTextProps {
     
-    @scala.inline
-    def apply(): CardTextProps = {
+    inline def apply(): CardTextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardTextProps]
     }
     
-    @scala.inline
-    implicit class CardTextPropsMutableBuilder[Self <: CardTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardTextProps](x: Self) {
       
-      @scala.inline
-      def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
+      inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -505,74 +401,52 @@ object Card {
   }
   object CardTitleProps {
     
-    @scala.inline
-    def apply(): CardTitleProps = {
+    inline def apply(): CardTitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardTitleProps]
     }
     
-    @scala.inline
-    implicit class CardTitlePropsMutableBuilder[Self <: CardTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardTitleProps](x: Self) {
       
-      @scala.inline
-      def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
+      inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
+      inline def setActAsExpanderUndefined: Self = StObject.set(x, "actAsExpander", js.undefined)
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
+      inline def setShowExpandableButton(value: Boolean): Self = StObject.set(x, "showExpandableButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
+      inline def setShowExpandableButtonUndefined: Self = StObject.set(x, "showExpandableButton", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
+      inline def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
+      inline def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
       
-      @scala.inline
-      def setSubtitleStyle(value: CSSProperties): Self = StObject.set(x, "subtitleStyle", value.asInstanceOf[js.Any])
+      inline def setSubtitleStyle(value: CSSProperties): Self = StObject.set(x, "subtitleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleStyleUndefined: Self = StObject.set(x, "subtitleStyle", js.undefined)
+      inline def setSubtitleStyleUndefined: Self = StObject.set(x, "subtitleStyle", js.undefined)
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+      inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+      inline def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+      inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

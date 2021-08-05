@@ -16,19 +16,15 @@ trait SourceTargetPathRequestedEventOptions
 }
 object SourceTargetPathRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, requestId: Double, sourcePath: String, targetPath: String): SourceTargetPathRequestedEventOptions = {
+  inline def apply(fileSystemId: String, requestId: Double, sourcePath: String, targetPath: String): SourceTargetPathRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], sourcePath = sourcePath.asInstanceOf[js.Any], targetPath = targetPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceTargetPathRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class SourceTargetPathRequestedEventOptionsMutableBuilder[Self <: SourceTargetPathRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SourceTargetPathRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
+    inline def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
   }
 }

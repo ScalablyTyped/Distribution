@@ -15,22 +15,17 @@ trait TakeCoverageDeltaResponse extends StObject {
 }
 object TakeCoverageDeltaResponse {
   
-  @scala.inline
-  def apply(coverage: js.Array[RuleUsage], timestamp: Double): TakeCoverageDeltaResponse = {
+  inline def apply(coverage: js.Array[RuleUsage], timestamp: Double): TakeCoverageDeltaResponse = {
     val __obj = js.Dynamic.literal(coverage = coverage.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakeCoverageDeltaResponse]
   }
   
-  @scala.inline
-  implicit class TakeCoverageDeltaResponseMutableBuilder[Self <: TakeCoverageDeltaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TakeCoverageDeltaResponse](x: Self) {
     
-    @scala.inline
-    def setCoverage(value: js.Array[RuleUsage]): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: js.Array[RuleUsage]): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageVarargs(value: RuleUsage*): Self = StObject.set(x, "coverage", js.Array(value :_*))
+    inline def setCoverageVarargs(value: RuleUsage*): Self = StObject.set(x, "coverage", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

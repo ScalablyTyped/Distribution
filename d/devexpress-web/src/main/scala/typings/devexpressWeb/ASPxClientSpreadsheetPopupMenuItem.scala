@@ -83,8 +83,7 @@ trait ASPxClientSpreadsheetPopupMenuItem extends StObject {
 }
 object ASPxClientSpreadsheetPopupMenuItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetItem: Double => ASPxClientSpreadsheetPopupMenuItem,
     GetItemByName: String => ASPxClientSpreadsheetPopupMenuItem,
     GetItemCount: () => Double,
@@ -104,49 +103,34 @@ object ASPxClientSpreadsheetPopupMenuItem {
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuItem]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetPopupMenuItemMutableBuilder[Self <: ASPxClientSpreadsheetPopupMenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetPopupMenuItem](x: Self) {
     
-    @scala.inline
-    def setBeginGroup(value: Boolean): Self = StObject.set(x, "beginGroup", value.asInstanceOf[js.Any])
+    inline def setBeginGroup(value: Boolean): Self = StObject.set(x, "beginGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetItem(value: Double => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: Double => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemByName(value: String => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
+    inline def setGetItemByName(value: String => ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
+    inline def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubItems(value: () => ASPxClientSpreadsheetPopupMenuItemCollection): Self = StObject.set(x, "GetSubItems", js.Any.fromFunction0(value))
+    inline def setGetSubItems(value: () => ASPxClientSpreadsheetPopupMenuItemCollection): Self = StObject.set(x, "GetSubItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImageClassName(value: String): Self = StObject.set(x, "imageClassName", value.asInstanceOf[js.Any])
+    inline def setImageClassName(value: String): Self = StObject.set(x, "imageClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigateUrl(value: String): Self = StObject.set(x, "navigateUrl", value.asInstanceOf[js.Any])
+    inline def setNavigateUrl(value: String): Self = StObject.set(x, "navigateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ASPxClientSpreadsheetPopupMenuItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

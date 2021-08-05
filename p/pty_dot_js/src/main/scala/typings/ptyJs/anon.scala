@@ -14,26 +14,20 @@ object anon {
   }
   object Cols {
     
-    @scala.inline
-    def apply(): Cols = {
+    inline def apply(): Cols = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cols]
     }
     
-    @scala.inline
-    implicit class ColsMutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
+    extension [Self <: Cols](x: Self) {
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     }
   }
   
@@ -43,20 +37,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(): End = {
+    inline def apply(): End = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     }
   }
   
@@ -70,23 +60,18 @@ object anon {
   }
   object Fd {
     
-    @scala.inline
-    def apply(fd: Double, pid: Double, pty: String): Fd = {
+    inline def apply(fd: Double, pid: Double, pty: String): Fd = {
       val __obj = js.Dynamic.literal(fd = fd.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], pty = pty.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fd]
     }
     
-    @scala.inline
-    implicit class FdMutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
+    extension [Self <: Fd](x: Self) {
       
-      @scala.inline
-      def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+      inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPty(value: String): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
+      inline def setPty(value: String): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,23 +85,18 @@ object anon {
   }
   object Master {
     
-    @scala.inline
-    def apply(master: Double, pty: String, slave: Double): Master = {
+    inline def apply(master: Double, pty: String, slave: Double): Master = {
       val __obj = js.Dynamic.literal(master = master.asInstanceOf[js.Any], pty = pty.asInstanceOf[js.Any], slave = slave.asInstanceOf[js.Any])
       __obj.asInstanceOf[Master]
     }
     
-    @scala.inline
-    implicit class MasterMutableBuilder[Self <: Master] (val x: Self) extends AnyVal {
+    extension [Self <: Master](x: Self) {
       
-      @scala.inline
-      def setMaster(value: Double): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+      inline def setMaster(value: Double): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPty(value: String): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
+      inline def setPty(value: String): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlave(value: Double): Self = StObject.set(x, "slave", value.asInstanceOf[js.Any])
+      inline def setSlave(value: Double): Self = StObject.set(x, "slave", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,23 +110,18 @@ object anon {
   }
   object Pid {
     
-    @scala.inline
-    def apply(fd: Double, pid: Double, pty: Double): Pid = {
+    inline def apply(fd: Double, pid: Double, pty: Double): Pid = {
       val __obj = js.Dynamic.literal(fd = fd.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], pty = pty.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pid]
     }
     
-    @scala.inline
-    implicit class PidMutableBuilder[Self <: Pid] (val x: Self) extends AnyVal {
+    extension [Self <: Pid](x: Self) {
       
-      @scala.inline
-      def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+      inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPty(value: Double): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
+      inline def setPty(value: Double): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
     }
   }
 }

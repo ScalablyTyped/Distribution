@@ -106,8 +106,7 @@ object textsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SystemText]
+      inline def create(model: IModel): SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SystemText]
       
       /**
         * Creates and returns a new SystemText instance in the SDK and on the server.
@@ -115,22 +114,19 @@ object textsMod {
         * of the parent SystemTextCollection element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: SystemTextCollection): SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SystemText]
+      inline def createIn(container: SystemTextCollection): SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SystemText]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.SystemText.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.SystemText.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -170,22 +166,19 @@ object textsMod {
         * Expects one argument, the projects.IProject in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IProject): SystemTextCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SystemTextCollection]
+      inline def createIn(container: IProject): SystemTextCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SystemTextCollection]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.SystemTextCollection.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.SystemTextCollection.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -303,8 +296,7 @@ object textsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def create(model: IModel): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -312,8 +304,7 @@ object textsMod {
         * of the parent domainmodels.AssociationDeleteBehavior element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInAssociationDeleteBehaviorUnderChildErrorMessage(container: AssociationDeleteBehavior): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderChildErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInAssociationDeleteBehaviorUnderChildErrorMessage(container: AssociationDeleteBehavior): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderChildErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -321,8 +312,7 @@ object textsMod {
         * of the parent domainmodels.AssociationDeleteBehavior element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInAssociationDeleteBehaviorUnderParentErrorMessage(container: AssociationDeleteBehavior): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderParentErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInAssociationDeleteBehaviorUnderParentErrorMessage(container: AssociationDeleteBehavior): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationDeleteBehaviorUnderParentErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -333,8 +323,7 @@ object textsMod {
         *  6.0.0 to 7.5.0
         */
       /* static member */
-      @scala.inline
-      def createInAttributeWidgetUnderRequiredMessage(container: AttributeWidget): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInAttributeWidgetUnderRequiredMessage(container: AttributeWidget): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -342,8 +331,7 @@ object textsMod {
         * of the parent pages.AttributeWidgetWithPlaceholder element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInAttributeWidgetWithPlaceholderUnderPlaceholder(container: AttributeWidgetWithPlaceholder): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetWithPlaceholderUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInAttributeWidgetWithPlaceholderUnderPlaceholder(container: AttributeWidgetWithPlaceholder): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetWithPlaceholderUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -351,8 +339,7 @@ object textsMod {
         * of the parent reports.BasicReportAggregate element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInBasicReportAggregateUnderCaption(container: BasicReportAggregate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportAggregateUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInBasicReportAggregateUnderCaption(container: BasicReportAggregate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportAggregateUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -360,8 +347,7 @@ object textsMod {
         * of the parent reports.BasicReportColumn element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInBasicReportColumnUnderCaption(container: BasicReportColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInBasicReportColumnUnderCaption(container: BasicReportColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicReportColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -372,8 +358,7 @@ object textsMod {
         *  8.0.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInBottomBarItemUnderCaption(container: BottomBarItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInBottomBarItemUnderCaption(container: BottomBarItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -381,8 +366,7 @@ object textsMod {
         * of the parent pages.Button element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInButtonUnderTooltip(container: Button): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInButtonUnderTooltip(container: Button): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -393,8 +377,7 @@ object textsMod {
         *  7.8.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInCallNanoflowClientActionUnderProgressMessage(container: CallNanoflowClientAction): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInCallNanoflowClientActionUnderProgressMessage(container: CallNanoflowClientAction): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -405,8 +388,7 @@ object textsMod {
         *  8.3.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInClientTemplateUnderFallback(container: ClientTemplate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderFallback")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInClientTemplateUnderFallback(container: ClientTemplate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderFallback")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -414,8 +396,7 @@ object textsMod {
         * of the parent pages.ClientTemplate element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInClientTemplateUnderTemplate(container: ClientTemplate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInClientTemplateUnderTemplate(container: ClientTemplate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateUnderTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -423,8 +404,7 @@ object textsMod {
         * of the parent pages.ConfirmationInfo element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInConfirmationInfoUnderCancelButtonCaption(container: ConfirmationInfo): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderCancelButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInConfirmationInfoUnderCancelButtonCaption(container: ConfirmationInfo): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderCancelButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -432,8 +412,7 @@ object textsMod {
         * of the parent pages.ConfirmationInfo element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInConfirmationInfoUnderProceedButtonCaption(container: ConfirmationInfo): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderProceedButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInConfirmationInfoUnderProceedButtonCaption(container: ConfirmationInfo): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderProceedButtonCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -441,8 +420,7 @@ object textsMod {
         * of the parent pages.ConfirmationInfo element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInConfirmationInfoUnderQuestion(container: ConfirmationInfo): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderQuestion")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInConfirmationInfoUnderQuestion(container: ConfirmationInfo): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConfirmationInfoUnderQuestion")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -450,8 +428,7 @@ object textsMod {
         * of the parent pages.ControlBarButton element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInControlBarButtonUnderTooltip(container: ControlBarButton): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInControlBarButtonUnderTooltip(container: ControlBarButton): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderTooltip")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -459,8 +436,7 @@ object textsMod {
         * of the parent documenttemplates.DataGridColumn element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInDataGridColumnUnderCaption(container: DataGridColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInDataGridColumnUnderCaption(container: DataGridColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -468,8 +444,7 @@ object textsMod {
         * of the parent pages.DataView element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInDataViewUnderNoEntityMessage(container: DataView): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderNoEntityMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInDataViewUnderNoEntityMessage(container: DataView): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderNoEntityMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -477,8 +452,7 @@ object textsMod {
         * of the parent pages.DropDownButtonItem element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInDropDownButtonItemUnderCaption(container: DropDownButtonItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownButtonItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInDropDownButtonItemUnderCaption(container: DropDownButtonItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownButtonItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -489,8 +463,7 @@ object textsMod {
         *  7.2.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInDropDownUnderEmptyOptionCaption(container: DropDown): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInDropDownUnderEmptyOptionCaption(container: DropDown): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropDownUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -498,8 +471,7 @@ object textsMod {
         * of the parent enumerations.EnumerationValue element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInEnumerationValueUnderCaption(container: EnumerationValue): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEnumerationValueUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInEnumerationValueUnderCaption(container: EnumerationValue): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEnumerationValueUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -507,8 +479,7 @@ object textsMod {
         * of the parent pages.GridColumn element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInGridColumnUnderAggregateCaption(container: GridColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAggregateCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInGridColumnUnderAggregateCaption(container: GridColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAggregateCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -516,8 +487,7 @@ object textsMod {
         * of the parent pages.GridColumn element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInGridColumnUnderCaption(container: GridColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInGridColumnUnderCaption(container: GridColumn): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -528,8 +498,7 @@ object textsMod {
         *  6.0.0 to 7.17.0
         */
       /* static member */
-      @scala.inline
-      def createInInputWidgetUnderLabel(container: InputWidget): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInInputWidgetUnderLabel(container: InputWidget): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -537,8 +506,7 @@ object textsMod {
         * of the parent pages.Label element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInLabelUnderCaption(container: Label): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInLabelUnderCaption(container: Label): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -549,8 +517,7 @@ object textsMod {
         *  7.0.2 and higher
         */
       /* static member */
-      @scala.inline
-      def createInLoginTextBoxUnderLabel(container: LoginTextBox): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInLoginTextBoxUnderLabel(container: LoginTextBox): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -561,8 +528,7 @@ object textsMod {
         *  7.0.2 and higher
         */
       /* static member */
-      @scala.inline
-      def createInLoginTextBoxUnderPlaceholder(container: LoginTextBox): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInLoginTextBoxUnderPlaceholder(container: LoginTextBox): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoginTextBoxUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -573,8 +539,7 @@ object textsMod {
         *  7.1.0 to 7.14.0
         */
       /* static member */
-      @scala.inline
-      def createInMasterDetailDetailRegionUnderTitle(container: MasterDetailDetailRegion): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailDetailRegionUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInMasterDetailDetailRegionUnderTitle(container: MasterDetailDetailRegion): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailDetailRegionUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -585,8 +550,7 @@ object textsMod {
         *  8.12.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInMenuItemUnderAlternativeText(container: MenuItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInMenuItemUnderAlternativeText(container: MenuItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -594,8 +558,7 @@ object textsMod {
         * of the parent menus.MenuItem element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInMenuItemUnderCaption(container: MenuItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInMenuItemUnderCaption(container: MenuItem): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -603,8 +566,7 @@ object textsMod {
         * of the parent pages.MicroflowSettings element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInMicroflowSettingsUnderProgressMessage(container: MicroflowSettings): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInMicroflowSettingsUnderProgressMessage(container: MicroflowSettings): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderProgressMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -612,8 +574,7 @@ object textsMod {
         * of the parent microflows.Microflow element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInMicroflowUnderConcurrencyErrorMessage(container: Microflow): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderConcurrencyErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInMicroflowUnderConcurrencyErrorMessage(container: Microflow): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderConcurrencyErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -624,8 +585,7 @@ object textsMod {
         *  8.12.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInNavigationProfileUnderAppTitle(container: NavigationProfile): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderAppTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInNavigationProfileUnderAppTitle(container: NavigationProfile): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderAppTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -636,8 +596,7 @@ object textsMod {
         *  6.0.0 to 8.11.0
         */
       /* static member */
-      @scala.inline
-      def createInPageSettingsUnderFormTitle(container: PageSettings): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageSettingsUnderFormTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInPageSettingsUnderFormTitle(container: PageSettings): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageSettingsUnderFormTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -645,8 +604,7 @@ object textsMod {
         * of the parent pages.Page element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInPageUnderTitle(container: Page): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInPageUnderTitle(container: Page): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -657,8 +615,7 @@ object textsMod {
         *  7.2.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInReferenceSelectorUnderEmptyOptionCaption(container: ReferenceSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReferenceSelectorUnderEmptyOptionCaption(container: ReferenceSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderEmptyOptionCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -669,8 +626,7 @@ object textsMod {
         *  6.0.0 to 7.5.0
         */
       /* static member */
-      @scala.inline
-      def createInReferenceSelectorUnderRequiredMessage(container: ReferenceSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReferenceSelectorUnderRequiredMessage(container: ReferenceSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderRequiredMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -678,8 +634,7 @@ object textsMod {
         * of the parent reports.ReportButton element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInReportButtonUnderCaption(container: ReportButton): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReportButtonUnderCaption(container: ReportButton): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -687,8 +642,7 @@ object textsMod {
         * of the parent reports.ReportChartSeries element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInReportChartSeriesUnderCaption(container: ReportChartSeries): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartSeriesUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReportChartSeriesUnderCaption(container: ReportChartSeries): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartSeriesUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -696,8 +650,7 @@ object textsMod {
         * of the parent reports.ReportChart element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInReportChartUnderXAxisCaption(container: ReportChart): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderXAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReportChartUnderXAxisCaption(container: ReportChart): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderXAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -705,8 +658,7 @@ object textsMod {
         * of the parent reports.ReportChart element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInReportChartUnderYAxisCaption(container: ReportChart): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderYAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReportChartUnderYAxisCaption(container: ReportChart): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderYAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -714,8 +666,7 @@ object textsMod {
         * of the parent reports.ReportDateRangeField element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInReportDateRangeFieldUnderCaption(container: ReportDateRangeField): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReportDateRangeFieldUnderCaption(container: ReportDateRangeField): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -723,8 +674,7 @@ object textsMod {
         * of the parent reports.ReportDateRangeSelector element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInReportDateRangeSelectorUnderFromCaption(container: ReportDateRangeSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderFromCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReportDateRangeSelectorUnderFromCaption(container: ReportDateRangeSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderFromCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -732,8 +682,7 @@ object textsMod {
         * of the parent reports.ReportDateRangeSelector element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInReportDateRangeSelectorUnderToCaption(container: ReportDateRangeSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderToCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInReportDateRangeSelectorUnderToCaption(container: ReportDateRangeSelector): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportDateRangeSelectorUnderToCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -741,8 +690,7 @@ object textsMod {
         * of the parent pages.SearchField element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInSearchFieldUnderCaption(container: SearchField): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInSearchFieldUnderCaption(container: SearchField): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -753,8 +701,7 @@ object textsMod {
         *  7.21.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInSearchFieldUnderPlaceholder(container: SearchField): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInSearchFieldUnderPlaceholder(container: SearchField): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSearchFieldUnderPlaceholder")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -762,8 +709,7 @@ object textsMod {
         * of the parent documenttemplates.StaticLabel element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInStaticLabelUnderCaption(container: StaticLabel): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInStaticLabelUnderCaption(container: StaticLabel): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticLabelUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -771,8 +717,7 @@ object textsMod {
         * of the parent SystemText element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInSystemTextUnderText(container: SystemText): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSystemTextUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInSystemTextUnderText(container: SystemText): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSystemTextUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -780,8 +725,7 @@ object textsMod {
         * of the parent pages.TabPage element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInTabPageUnderCaption(container: TabPage): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInTabPageUnderCaption(container: TabPage): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -789,8 +733,7 @@ object textsMod {
         * of the parent pages.TextArea element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInTextAreaUnderCounterMessage(container: TextArea): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderCounterMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInTextAreaUnderCounterMessage(container: TextArea): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderCounterMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -798,8 +741,7 @@ object textsMod {
         * of the parent pages.TextArea element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInTextAreaUnderTextTooLongMessage(container: TextArea): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderTextTooLongMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInTextAreaUnderTextTooLongMessage(container: TextArea): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextAreaUnderTextTooLongMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -807,8 +749,7 @@ object textsMod {
         * of the parent microflows.TextTemplate element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInTextTemplateUnderText(container: TextTemplate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextTemplateUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInTextTemplateUnderText(container: TextTemplate): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextTemplateUnderText")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -816,8 +757,7 @@ object textsMod {
         * of the parent documenttemplates.Title element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInTitleUnderCaption(container: Title): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTitleUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInTitleUnderCaption(container: Title): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTitleUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -825,8 +765,7 @@ object textsMod {
         * of the parent domainmodels.ValidationRule element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInValidationRuleUnderErrorMessage(container: ValidationRule): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValidationRuleUnderErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInValidationRuleUnderErrorMessage(container: ValidationRule): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValidationRuleUnderErrorMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -837,8 +776,7 @@ object textsMod {
         *  7.6.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValidationUnderMessage(container: WidgetValidation): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInWidgetValidationUnderMessage(container: WidgetValidation): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderMessage")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
@@ -846,22 +784,19 @@ object textsMod {
         * of the parent customwidgets.WidgetValue element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValueUnderTranslatableValue(container: WidgetValue): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTranslatableValue")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
+      inline def createInWidgetValueUnderTranslatableValue(container: WidgetValue): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTranslatableValue")(container.asInstanceOf[js.Any]).asInstanceOf[Text]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.Text.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.Text.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/texts", "texts.Translation")
@@ -896,8 +831,7 @@ object textsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Translation]
+      inline def create(model: IModel): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Translation]
       
       /**
         * Creates and returns a new Translation instance in the SDK and on the server.
@@ -905,22 +839,19 @@ object textsMod {
         * of the parent Text element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: Text): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Translation]
+      inline def createIn(container: Text): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Translation]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.Translation.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/texts", "texts.Translation.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**

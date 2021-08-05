@@ -23,34 +23,25 @@ trait GetInvitationConfigurationResponse extends StObject {
 }
 object GetInvitationConfigurationResponse {
   
-  @scala.inline
-  def apply(): GetInvitationConfigurationResponse = {
+  inline def apply(): GetInvitationConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInvitationConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class GetInvitationConfigurationResponseMutableBuilder[Self <: GetInvitationConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetInvitationConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setContactEmail(value: Email): Self = StObject.set(x, "ContactEmail", value.asInstanceOf[js.Any])
+    inline def setContactEmail(value: Email): Self = StObject.set(x, "ContactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactEmailUndefined: Self = StObject.set(x, "ContactEmail", js.undefined)
+    inline def setContactEmailUndefined: Self = StObject.set(x, "ContactEmail", js.undefined)
     
-    @scala.inline
-    def setOrganizationName(value: OrganizationName): Self = StObject.set(x, "OrganizationName", value.asInstanceOf[js.Any])
+    inline def setOrganizationName(value: OrganizationName): Self = StObject.set(x, "OrganizationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationNameUndefined: Self = StObject.set(x, "OrganizationName", js.undefined)
+    inline def setOrganizationNameUndefined: Self = StObject.set(x, "OrganizationName", js.undefined)
     
-    @scala.inline
-    def setPrivateSkillIds(value: ShortSkillIdList): Self = StObject.set(x, "PrivateSkillIds", value.asInstanceOf[js.Any])
+    inline def setPrivateSkillIds(value: ShortSkillIdList): Self = StObject.set(x, "PrivateSkillIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateSkillIdsUndefined: Self = StObject.set(x, "PrivateSkillIds", js.undefined)
+    inline def setPrivateSkillIdsUndefined: Self = StObject.set(x, "PrivateSkillIds", js.undefined)
     
-    @scala.inline
-    def setPrivateSkillIdsVarargs(value: SkillId*): Self = StObject.set(x, "PrivateSkillIds", js.Array(value :_*))
+    inline def setPrivateSkillIdsVarargs(value: SkillId*): Self = StObject.set(x, "PrivateSkillIds", js.Array(value :_*))
   }
 }

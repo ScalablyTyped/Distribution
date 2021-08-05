@@ -27,37 +27,27 @@ trait Statementdescriptor extends StObject {
 }
 object Statementdescriptor {
   
-  @scala.inline
-  def apply(): Statementdescriptor = {
+  inline def apply(): Statementdescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Statementdescriptor]
   }
   
-  @scala.inline
-  implicit class StatementdescriptorMutableBuilder[Self <: Statementdescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: Statementdescriptor](x: Self) {
     
-    @scala.inline
-    def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+    inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+    inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
     
-    @scala.inline
-    def setStatement_descriptor_kana(value: String): Self = StObject.set(x, "statement_descriptor_kana", value.asInstanceOf[js.Any])
+    inline def setStatement_descriptor_kana(value: String): Self = StObject.set(x, "statement_descriptor_kana", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement_descriptor_kanaNull: Self = StObject.set(x, "statement_descriptor_kana", null)
+    inline def setStatement_descriptor_kanaNull: Self = StObject.set(x, "statement_descriptor_kana", null)
     
-    @scala.inline
-    def setStatement_descriptor_kanaUndefined: Self = StObject.set(x, "statement_descriptor_kana", js.undefined)
+    inline def setStatement_descriptor_kanaUndefined: Self = StObject.set(x, "statement_descriptor_kana", js.undefined)
     
-    @scala.inline
-    def setStatement_descriptor_kanji(value: String): Self = StObject.set(x, "statement_descriptor_kanji", value.asInstanceOf[js.Any])
+    inline def setStatement_descriptor_kanji(value: String): Self = StObject.set(x, "statement_descriptor_kanji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement_descriptor_kanjiNull: Self = StObject.set(x, "statement_descriptor_kanji", null)
+    inline def setStatement_descriptor_kanjiNull: Self = StObject.set(x, "statement_descriptor_kanji", null)
     
-    @scala.inline
-    def setStatement_descriptor_kanjiUndefined: Self = StObject.set(x, "statement_descriptor_kanji", js.undefined)
+    inline def setStatement_descriptor_kanjiUndefined: Self = StObject.set(x, "statement_descriptor_kanji", js.undefined)
   }
 }

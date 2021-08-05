@@ -23,34 +23,25 @@ trait ThingGroupMetadata extends StObject {
 }
 object ThingGroupMetadata {
   
-  @scala.inline
-  def apply(): ThingGroupMetadata = {
+  inline def apply(): ThingGroupMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThingGroupMetadata]
   }
   
-  @scala.inline
-  implicit class ThingGroupMetadataMutableBuilder[Self <: ThingGroupMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ThingGroupMetadata](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setParentGroupName(value: ThingGroupName): Self = StObject.set(x, "parentGroupName", value.asInstanceOf[js.Any])
+    inline def setParentGroupName(value: ThingGroupName): Self = StObject.set(x, "parentGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentGroupNameUndefined: Self = StObject.set(x, "parentGroupName", js.undefined)
+    inline def setParentGroupNameUndefined: Self = StObject.set(x, "parentGroupName", js.undefined)
     
-    @scala.inline
-    def setRootToParentThingGroups(value: ThingGroupNameAndArnList): Self = StObject.set(x, "rootToParentThingGroups", value.asInstanceOf[js.Any])
+    inline def setRootToParentThingGroups(value: ThingGroupNameAndArnList): Self = StObject.set(x, "rootToParentThingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootToParentThingGroupsUndefined: Self = StObject.set(x, "rootToParentThingGroups", js.undefined)
+    inline def setRootToParentThingGroupsUndefined: Self = StObject.set(x, "rootToParentThingGroups", js.undefined)
     
-    @scala.inline
-    def setRootToParentThingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "rootToParentThingGroups", js.Array(value :_*))
+    inline def setRootToParentThingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "rootToParentThingGroups", js.Array(value :_*))
   }
 }

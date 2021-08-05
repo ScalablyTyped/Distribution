@@ -33,8 +33,7 @@ trait LocatorSuggestLocationsParams
 }
 object LocatorSuggestLocationsParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     location: Point,
@@ -45,22 +44,16 @@ object LocatorSuggestLocationsParams {
     __obj.asInstanceOf[LocatorSuggestLocationsParams]
   }
   
-  @scala.inline
-  implicit class LocatorSuggestLocationsParamsMutableBuilder[Self <: LocatorSuggestLocationsParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocatorSuggestLocationsParams](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -23,17 +23,14 @@ object radioMod {
   }
   object RadioConfig {
     
-    @scala.inline
-    def apply(isInline: Boolean, options: OptionsObject): RadioConfig = {
+    inline def apply(isInline: Boolean, options: OptionsObject): RadioConfig = {
       val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioConfig]
     }
     
-    @scala.inline
-    implicit class RadioConfigMutableBuilder[Self <: RadioConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RadioConfig](x: Self) {
       
-      @scala.inline
-      def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+      inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     }
   }
   

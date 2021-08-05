@@ -27,19 +27,15 @@ trait b2ContactFilter extends StObject {
 }
 object b2ContactFilter {
   
-  @scala.inline
-  def apply(RayCollide: js.Any => Boolean, ShouldCollide: (b2Fixture, b2Fixture) => Boolean): b2ContactFilter = {
+  inline def apply(RayCollide: js.Any => Boolean, ShouldCollide: (b2Fixture, b2Fixture) => Boolean): b2ContactFilter = {
     val __obj = js.Dynamic.literal(RayCollide = js.Any.fromFunction1(RayCollide), ShouldCollide = js.Any.fromFunction2(ShouldCollide))
     __obj.asInstanceOf[b2ContactFilter]
   }
   
-  @scala.inline
-  implicit class b2ContactFilterMutableBuilder[Self <: b2ContactFilter] (val x: Self) extends AnyVal {
+  extension [Self <: b2ContactFilter](x: Self) {
     
-    @scala.inline
-    def setRayCollide(value: js.Any => Boolean): Self = StObject.set(x, "RayCollide", js.Any.fromFunction1(value))
+    inline def setRayCollide(value: js.Any => Boolean): Self = StObject.set(x, "RayCollide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldCollide(value: (b2Fixture, b2Fixture) => Boolean): Self = StObject.set(x, "ShouldCollide", js.Any.fromFunction2(value))
+    inline def setShouldCollide(value: (b2Fixture, b2Fixture) => Boolean): Self = StObject.set(x, "ShouldCollide", js.Any.fromFunction2(value))
   }
 }

@@ -43,55 +43,39 @@ trait Record extends StObject {
 }
 object Record {
   
-  @scala.inline
-  def apply(): Record = {
+  inline def apply(): Record = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Record]
   }
   
-  @scala.inline
-  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+  extension [Self <: Record](x: Self) {
     
-    @scala.inline
-    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
+    inline def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
     
-    @scala.inline
-    def setDynamodb(value: StreamRecord): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+    inline def setDynamodb(value: StreamRecord): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+    inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
-    @scala.inline
-    def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
+    inline def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIDUndefined: Self = StObject.set(x, "eventID", js.undefined)
+    inline def setEventIDUndefined: Self = StObject.set(x, "eventID", js.undefined)
     
-    @scala.inline
-    def setEventName(value: OperationType): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: OperationType): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+    inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
     
-    @scala.inline
-    def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
+    inline def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
     
-    @scala.inline
-    def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
+    inline def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventVersionUndefined: Self = StObject.set(x, "eventVersion", js.undefined)
+    inline def setEventVersionUndefined: Self = StObject.set(x, "eventVersion", js.undefined)
     
-    @scala.inline
-    def setUserIdentity(value: Identity): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
+    inline def setUserIdentity(value: Identity): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdentityUndefined: Self = StObject.set(x, "userIdentity", js.undefined)
+    inline def setUserIdentityUndefined: Self = StObject.set(x, "userIdentity", js.undefined)
   }
 }

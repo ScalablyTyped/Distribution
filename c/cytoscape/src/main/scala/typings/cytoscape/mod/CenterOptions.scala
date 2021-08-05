@@ -10,16 +10,13 @@ trait CenterOptions extends StObject {
 }
 object CenterOptions {
   
-  @scala.inline
-  def apply(eles: CollectionArgument | Selector): CenterOptions = {
+  inline def apply(eles: CollectionArgument | Selector): CenterOptions = {
     val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CenterOptions]
   }
   
-  @scala.inline
-  implicit class CenterOptionsMutableBuilder[Self <: CenterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CenterOptions](x: Self) {
     
-    @scala.inline
-    def setEles(value: CollectionArgument | Selector): Self = StObject.set(x, "eles", value.asInstanceOf[js.Any])
+    inline def setEles(value: CollectionArgument | Selector): Self = StObject.set(x, "eles", value.asInstanceOf[js.Any])
   }
 }

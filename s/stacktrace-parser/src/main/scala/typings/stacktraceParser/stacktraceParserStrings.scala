@@ -8,6 +8,5 @@ object stacktraceParserStrings {
   
   @js.native
   sealed trait LessthansignunknownGreaterthansign extends StObject
-  @scala.inline
-  def LessthansignunknownGreaterthansign: LessthansignunknownGreaterthansign = "<unknown>".asInstanceOf[LessthansignunknownGreaterthansign]
+  inline def LessthansignunknownGreaterthansign: LessthansignunknownGreaterthansign = "<unknown>".asInstanceOf[LessthansignunknownGreaterthansign]
 }

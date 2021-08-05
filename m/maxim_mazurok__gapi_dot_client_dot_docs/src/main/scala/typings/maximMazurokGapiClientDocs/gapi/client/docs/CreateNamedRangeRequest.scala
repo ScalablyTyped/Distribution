@@ -14,25 +14,19 @@ trait CreateNamedRangeRequest extends StObject {
 }
 object CreateNamedRangeRequest {
   
-  @scala.inline
-  def apply(): CreateNamedRangeRequest = {
+  inline def apply(): CreateNamedRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNamedRangeRequest]
   }
   
-  @scala.inline
-  implicit class CreateNamedRangeRequestMutableBuilder[Self <: CreateNamedRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNamedRangeRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ object radioButtonDriverMod {
   }
   object RadioButtonDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       check: () => Unit,
       exists: () => Boolean,
       getContent: () => HTMLElement,
@@ -47,32 +46,23 @@ object radioButtonDriverMod {
       __obj.asInstanceOf[RadioButtonDriver]
     }
     
-    @scala.inline
-    implicit class RadioButtonDriverMutableBuilder[Self <: RadioButtonDriver] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonDriver](x: Self) {
       
-      @scala.inline
-      def setCheck(value: () => Unit): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
+      inline def setCheck(value: () => Unit): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContent(value: () => HTMLElement): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => HTMLElement): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelElement(value: () => Element): Self = StObject.set(x, "getLabelElement", js.Any.fromFunction0(value))
+      inline def setGetLabelElement(value: () => Element): Self = StObject.set(x, "getLabelElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTabIndex(value: () => String | Null): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
+      inline def setGetTabIndex(value: () => String | Null): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

@@ -22,7 +22,7 @@ trait Control extends StObject {
   
   def inCallback(): Boolean = js.native
   
-  val instance: js.Any = js.native
+  /* protected */ val instance: js.Any = js.native
   
   val name: String = js.native
   

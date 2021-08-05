@@ -10,16 +10,13 @@ trait MinimalEventObject[T /* <: js.Object */] extends StObject {
 }
 object MinimalEventObject {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](target: T): MinimalEventObject[T] = {
+  inline def apply[T /* <: js.Object */](target: T): MinimalEventObject[T] = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinimalEventObject[T]]
   }
   
-  @scala.inline
-  implicit class MinimalEventObjectMutableBuilder[Self <: MinimalEventObject[?], T /* <: js.Object */] (val x: Self & MinimalEventObject[T]) extends AnyVal {
+  extension [Self <: MinimalEventObject[?], T /* <: js.Object */](x: Self & MinimalEventObject[T]) {
     
-    @scala.inline
-    def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

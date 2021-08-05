@@ -191,10 +191,8 @@ object Intent {
       * @returns FollowupIntentInfo instance
       */
     /* static member */
-    @scala.inline
-    def create(): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FollowupIntentInfo]
-    @scala.inline
-    def create(properties: IFollowupIntentInfo): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def create(): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FollowupIntentInfo]
+    inline def create(properties: IFollowupIntentInfo): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Decodes a FollowupIntentInfo message from the specified reader or buffer.
@@ -205,14 +203,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
-    @scala.inline
-    def decode(reader: Reader, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
-    @scala.inline
-    def decode(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
+    inline def decode(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def decode(reader: Reader, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
+    inline def decode(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def decode(reader: Uint8Array, length: Double): FollowupIntentInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Decodes a FollowupIntentInfo message from the specified reader or buffer, length delimited.
@@ -222,10 +216,8 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def decodeDelimited(reader: Reader): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def decodeDelimited(reader: Uint8Array): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Encodes the specified FollowupIntentInfo message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.FollowupIntentInfo.verify|verify} messages.
@@ -234,10 +226,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IFollowupIntentInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IFollowupIntentInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IFollowupIntentInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IFollowupIntentInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified FollowupIntentInfo message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.FollowupIntentInfo.verify|verify} messages.
@@ -246,10 +236,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IFollowupIntentInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IFollowupIntentInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IFollowupIntentInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IFollowupIntentInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a FollowupIntentInfo message from a plain object. Also converts values to their respective internal types.
@@ -257,8 +245,7 @@ object Intent {
       * @returns FollowupIntentInfo
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
+    inline def fromObject(`object`: StringDictionary[js.Any]): FollowupIntentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FollowupIntentInfo]
     
     /**
       * Creates a plain object from a FollowupIntentInfo message. Also converts values to other types if specified.
@@ -267,10 +254,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: FollowupIntentInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: FollowupIntentInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: FollowupIntentInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: FollowupIntentInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a FollowupIntentInfo message.
@@ -278,8 +263,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Message. */
@@ -417,10 +401,8 @@ object Intent {
             * @returns OpenUriAction instance
             */
           /* static member */
-          @scala.inline
-          def create(): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUriAction]
-          @scala.inline
-          def create(properties: IOpenUriAction): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def create(): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUriAction]
+          inline def create(properties: IOpenUriAction): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Decodes an OpenUriAction message from the specified reader or buffer.
@@ -431,14 +413,10 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @scala.inline
-          def decode(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
-          @scala.inline
-          def decode(reader: Reader, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
-          @scala.inline
-          def decode(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
-          @scala.inline
-          def decode(reader: Uint8Array, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
+          inline def decode(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def decode(reader: Reader, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
+          inline def decode(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def decode(reader: Uint8Array, length: Double): OpenUriAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUriAction]
           
           /**
             * Decodes an OpenUriAction message from the specified reader or buffer, length delimited.
@@ -448,10 +426,8 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @scala.inline
-          def decodeDelimited(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
-          @scala.inline
-          def decodeDelimited(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def decodeDelimited(reader: Reader): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def decodeDelimited(reader: Uint8Array): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Encodes the specified OpenUriAction message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BasicCard.Button.OpenUriAction.verify|verify} messages.
@@ -460,10 +436,8 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @scala.inline
-          def encode(message: IOpenUriAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-          @scala.inline
-          def encode(message: IOpenUriAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+          inline def encode(message: IOpenUriAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          inline def encode(message: IOpenUriAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Encodes the specified OpenUriAction message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BasicCard.Button.OpenUriAction.verify|verify} messages.
@@ -472,10 +446,8 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @scala.inline
-          def encodeDelimited(message: IOpenUriAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-          @scala.inline
-          def encodeDelimited(message: IOpenUriAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+          inline def encodeDelimited(message: IOpenUriAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          inline def encodeDelimited(message: IOpenUriAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Creates an OpenUriAction message from a plain object. Also converts values to their respective internal types.
@@ -483,8 +455,7 @@ object Intent {
             * @returns OpenUriAction
             */
           /* static member */
-          @scala.inline
-          def fromObject(`object`: StringDictionary[js.Any]): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
+          inline def fromObject(`object`: StringDictionary[js.Any]): OpenUriAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUriAction]
           
           /**
             * Creates a plain object from an OpenUriAction message. Also converts values to other types if specified.
@@ -493,10 +464,8 @@ object Intent {
             * @returns Plain object
             */
           /* static member */
-          @scala.inline
-          def toObject(message: OpenUriAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-          @scala.inline
-          def toObject(message: OpenUriAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+          inline def toObject(message: OpenUriAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+          inline def toObject(message: OpenUriAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
           
           /**
             * Verifies an OpenUriAction message.
@@ -504,8 +473,7 @@ object Intent {
             * @returns `null` if valid, otherwise the reason why it is not
             */
           /* static member */
-          @scala.inline
-          def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+          inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         }
         
         /**
@@ -514,10 +482,8 @@ object Intent {
           * @returns Button instance
           */
         /* static member */
-        @scala.inline
-        def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
-        @scala.inline
-        def create(properties: IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
+        inline def create(properties: IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer.
@@ -528,14 +494,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        @scala.inline
-        def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
-        @scala.inline
-        def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        @scala.inline
-        def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
+        inline def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
+        inline def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer, length delimited.
@@ -545,10 +507,8 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        @scala.inline
-        def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Encodes the specified Button message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BasicCard.Button.verify|verify} messages.
@@ -557,10 +517,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encode(message: IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encode(message: IButton, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encode(message: IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encode(message: IButton, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Button message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BasicCard.Button.verify|verify} messages.
@@ -569,10 +527,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encodeDelimited(message: IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encodeDelimited(message: IButton, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IButton, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a Button message from a plain object. Also converts values to their respective internal types.
@@ -580,8 +536,7 @@ object Intent {
           * @returns Button
           */
         /* static member */
-        @scala.inline
-        def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Creates a plain object from a Button message. Also converts values to other types if specified.
@@ -590,10 +545,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @scala.inline
-        def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        @scala.inline
-        def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a Button message.
@@ -601,8 +554,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @scala.inline
-        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         
         /** Properties of an OpenUriAction. */
         trait IOpenUriAction extends StObject {
@@ -612,23 +564,18 @@ object Intent {
         }
         object IOpenUriAction {
           
-          @scala.inline
-          def apply(): IOpenUriAction = {
+          inline def apply(): IOpenUriAction = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[IOpenUriAction]
           }
           
-          @scala.inline
-          implicit class IOpenUriActionMutableBuilder[Self <: IOpenUriAction] (val x: Self) extends AnyVal {
+          extension [Self <: IOpenUriAction](x: Self) {
             
-            @scala.inline
-            def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+            inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setUriNull: Self = StObject.set(x, "uri", null)
+            inline def setUriNull: Self = StObject.set(x, "uri", null)
             
-            @scala.inline
-            def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+            inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
           }
         }
       }
@@ -639,10 +586,8 @@ object Intent {
         * @returns BasicCard instance
         */
       /* static member */
-      @scala.inline
-      def create(): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicCard]
-      @scala.inline
-      def create(properties: IBasicCard): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def create(): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicCard]
+      inline def create(properties: IBasicCard): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Decodes a BasicCard message from the specified reader or buffer.
@@ -653,14 +598,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
-      @scala.inline
-      def decode(reader: Reader, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
-      @scala.inline
-      def decode(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
+      inline def decode(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def decode(reader: Reader, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
+      inline def decode(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def decode(reader: Uint8Array, length: Double): BasicCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BasicCard]
       
       /**
         * Decodes a BasicCard message from the specified reader or buffer, length delimited.
@@ -670,10 +611,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def decodeDelimited(reader: Reader): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def decodeDelimited(reader: Uint8Array): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Encodes the specified BasicCard message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BasicCard.verify|verify} messages.
@@ -682,10 +621,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IBasicCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IBasicCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IBasicCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IBasicCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified BasicCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BasicCard.verify|verify} messages.
@@ -694,10 +631,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IBasicCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IBasicCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IBasicCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IBasicCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a BasicCard message from a plain object. Also converts values to their respective internal types.
@@ -705,8 +640,7 @@ object Intent {
         * @returns BasicCard
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
+      inline def fromObject(`object`: StringDictionary[js.Any]): BasicCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BasicCard]
       
       /**
         * Creates a plain object from a BasicCard message. Also converts values to other types if specified.
@@ -715,10 +649,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: BasicCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: BasicCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: BasicCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: BasicCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a BasicCard message.
@@ -726,8 +658,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Button. */
       trait IButton extends StObject {
@@ -740,32 +671,24 @@ object Intent {
       }
       object IButton {
         
-        @scala.inline
-        def apply(): IButton = {
+        inline def apply(): IButton = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IButton]
         }
         
-        @scala.inline
-        implicit class IButtonMutableBuilder[Self <: IButton] (val x: Self) extends AnyVal {
+        extension [Self <: IButton](x: Self) {
           
-          @scala.inline
-          def setOpenUriAction(value: IOpenUriAction): Self = StObject.set(x, "openUriAction", value.asInstanceOf[js.Any])
+          inline def setOpenUriAction(value: IOpenUriAction): Self = StObject.set(x, "openUriAction", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOpenUriActionNull: Self = StObject.set(x, "openUriAction", null)
+          inline def setOpenUriActionNull: Self = StObject.set(x, "openUriAction", null)
           
-          @scala.inline
-          def setOpenUriActionUndefined: Self = StObject.set(x, "openUriAction", js.undefined)
+          inline def setOpenUriActionUndefined: Self = StObject.set(x, "openUriAction", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleNull: Self = StObject.set(x, "title", null)
+          inline def setTitleNull: Self = StObject.set(x, "title", null)
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
     }
@@ -905,10 +828,8 @@ object Intent {
             * @returns OpenUrlAction instance
             */
           /* static member */
-          @scala.inline
-          def create(): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUrlAction]
-          @scala.inline
-          def create(properties: IOpenUrlAction): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def create(): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OpenUrlAction]
+          inline def create(properties: IOpenUrlAction): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Decodes an OpenUrlAction message from the specified reader or buffer.
@@ -919,14 +840,10 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @scala.inline
-          def decode(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
-          @scala.inline
-          def decode(reader: Reader, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
-          @scala.inline
-          def decode(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
-          @scala.inline
-          def decode(reader: Uint8Array, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
+          inline def decode(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def decode(reader: Reader, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
+          inline def decode(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def decode(reader: Uint8Array, length: Double): OpenUrlAction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OpenUrlAction]
           
           /**
             * Decodes an OpenUrlAction message from the specified reader or buffer, length delimited.
@@ -936,10 +853,8 @@ object Intent {
             * @throws {$protobuf.util.ProtocolError} If required fields are missing
             */
           /* static member */
-          @scala.inline
-          def decodeDelimited(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
-          @scala.inline
-          def decodeDelimited(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def decodeDelimited(reader: Reader): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def decodeDelimited(reader: Uint8Array): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Encodes the specified OpenUrlAction message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.verify|verify} messages.
@@ -948,10 +863,8 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @scala.inline
-          def encode(message: IOpenUrlAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-          @scala.inline
-          def encode(message: IOpenUrlAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+          inline def encode(message: IOpenUrlAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          inline def encode(message: IOpenUrlAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Encodes the specified OpenUrlAction message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.verify|verify} messages.
@@ -960,10 +873,8 @@ object Intent {
             * @returns Writer
             */
           /* static member */
-          @scala.inline
-          def encodeDelimited(message: IOpenUrlAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-          @scala.inline
-          def encodeDelimited(message: IOpenUrlAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+          inline def encodeDelimited(message: IOpenUrlAction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+          inline def encodeDelimited(message: IOpenUrlAction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
           
           /**
             * Creates an OpenUrlAction message from a plain object. Also converts values to their respective internal types.
@@ -971,8 +882,7 @@ object Intent {
             * @returns OpenUrlAction
             */
           /* static member */
-          @scala.inline
-          def fromObject(`object`: StringDictionary[js.Any]): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
+          inline def fromObject(`object`: StringDictionary[js.Any]): OpenUrlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OpenUrlAction]
           
           /**
             * Creates a plain object from an OpenUrlAction message. Also converts values to other types if specified.
@@ -981,10 +891,8 @@ object Intent {
             * @returns Plain object
             */
           /* static member */
-          @scala.inline
-          def toObject(message: OpenUrlAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-          @scala.inline
-          def toObject(message: OpenUrlAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+          inline def toObject(message: OpenUrlAction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+          inline def toObject(message: OpenUrlAction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
           
           /**
             * Verifies an OpenUrlAction message.
@@ -992,8 +900,7 @@ object Intent {
             * @returns `null` if valid, otherwise the reason why it is not
             */
           /* static member */
-          @scala.inline
-          def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+          inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         }
         
         /**
@@ -1002,10 +909,8 @@ object Intent {
           * @returns BrowseCarouselCardItem instance
           */
         /* static member */
-        @scala.inline
-        def create(): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCardItem]
-        @scala.inline
-        def create(properties: IBrowseCarouselCardItem): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def create(): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCardItem]
+        inline def create(properties: IBrowseCarouselCardItem): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Decodes a BrowseCarouselCardItem message from the specified reader or buffer.
@@ -1016,14 +921,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decode(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
-        @scala.inline
-        def decode(reader: Reader, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
-        @scala.inline
-        def decode(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
-        @scala.inline
-        def decode(reader: Uint8Array, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
+        inline def decode(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def decode(reader: Reader, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
+        inline def decode(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def decode(reader: Uint8Array, length: Double): BrowseCarouselCardItem = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Decodes a BrowseCarouselCardItem message from the specified reader or buffer, length delimited.
@@ -1033,10 +934,8 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decodeDelimited(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
-        @scala.inline
-        def decodeDelimited(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def decodeDelimited(reader: Reader): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def decodeDelimited(reader: Uint8Array): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Encodes the specified BrowseCarouselCardItem message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.verify|verify} messages.
@@ -1045,10 +944,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encode(message: IBrowseCarouselCardItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encode(message: IBrowseCarouselCardItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encode(message: IBrowseCarouselCardItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encode(message: IBrowseCarouselCardItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified BrowseCarouselCardItem message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.verify|verify} messages.
@@ -1057,10 +954,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encodeDelimited(message: IBrowseCarouselCardItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encodeDelimited(message: IBrowseCarouselCardItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IBrowseCarouselCardItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IBrowseCarouselCardItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a BrowseCarouselCardItem message from a plain object. Also converts values to their respective internal types.
@@ -1068,8 +963,7 @@ object Intent {
           * @returns BrowseCarouselCardItem
           */
         /* static member */
-        @scala.inline
-        def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
+        inline def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCardItem]
         
         /**
           * Creates a plain object from a BrowseCarouselCardItem message. Also converts values to other types if specified.
@@ -1078,10 +972,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @scala.inline
-        def toObject(message: BrowseCarouselCardItem): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        @scala.inline
-        def toObject(message: BrowseCarouselCardItem, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: BrowseCarouselCardItem): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: BrowseCarouselCardItem, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a BrowseCarouselCardItem message.
@@ -1089,8 +981,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @scala.inline
-        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
         
         /** Properties of an OpenUrlAction. */
         trait IOpenUrlAction extends StObject {
@@ -1105,34 +996,26 @@ object Intent {
         }
         object IOpenUrlAction {
           
-          @scala.inline
-          def apply(): IOpenUrlAction = {
+          inline def apply(): IOpenUrlAction = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[IOpenUrlAction]
           }
           
-          @scala.inline
-          implicit class IOpenUrlActionMutableBuilder[Self <: IOpenUrlAction] (val x: Self) extends AnyVal {
+          extension [Self <: IOpenUrlAction](x: Self) {
             
-            @scala.inline
-            def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+            inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setUrlNull: Self = StObject.set(x, "url", null)
+            inline def setUrlNull: Self = StObject.set(x, "url", null)
             
-            @scala.inline
-            def setUrlTypeHint(
+            inline def setUrlTypeHint(
               value: UrlTypeHint | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint * / any */ String)
             ): Self = StObject.set(x, "urlTypeHint", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setUrlTypeHintNull: Self = StObject.set(x, "urlTypeHint", null)
+            inline def setUrlTypeHintNull: Self = StObject.set(x, "urlTypeHint", null)
             
-            @scala.inline
-            def setUrlTypeHintUndefined: Self = StObject.set(x, "urlTypeHint", js.undefined)
+            inline def setUrlTypeHintUndefined: Self = StObject.set(x, "urlTypeHint", js.undefined)
             
-            @scala.inline
-            def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+            inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
           }
         }
       }
@@ -1184,10 +1067,8 @@ object Intent {
         * @returns BrowseCarouselCard instance
         */
       /* static member */
-      @scala.inline
-      def create(): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCard]
-      @scala.inline
-      def create(properties: IBrowseCarouselCard): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def create(): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BrowseCarouselCard]
+      inline def create(properties: IBrowseCarouselCard): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Decodes a BrowseCarouselCard message from the specified reader or buffer.
@@ -1198,14 +1079,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
-      @scala.inline
-      def decode(reader: Reader, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
-      @scala.inline
-      def decode(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
+      inline def decode(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def decode(reader: Reader, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
+      inline def decode(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def decode(reader: Uint8Array, length: Double): BrowseCarouselCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Decodes a BrowseCarouselCard message from the specified reader or buffer, length delimited.
@@ -1215,10 +1092,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def decodeDelimited(reader: Reader): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def decodeDelimited(reader: Uint8Array): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Encodes the specified BrowseCarouselCard message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.verify|verify} messages.
@@ -1227,10 +1102,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IBrowseCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IBrowseCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IBrowseCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IBrowseCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified BrowseCarouselCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.verify|verify} messages.
@@ -1239,10 +1112,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IBrowseCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IBrowseCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IBrowseCarouselCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IBrowseCarouselCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a BrowseCarouselCard message from a plain object. Also converts values to their respective internal types.
@@ -1250,8 +1121,7 @@ object Intent {
         * @returns BrowseCarouselCard
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
+      inline def fromObject(`object`: StringDictionary[js.Any]): BrowseCarouselCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BrowseCarouselCard]
       
       /**
         * Creates a plain object from a BrowseCarouselCard message. Also converts values to other types if specified.
@@ -1260,10 +1130,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: BrowseCarouselCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: BrowseCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: BrowseCarouselCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: BrowseCarouselCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a BrowseCarouselCard message.
@@ -1271,8 +1139,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a BrowseCarouselCardItem. */
       trait IBrowseCarouselCardItem extends StObject {
@@ -1294,59 +1161,42 @@ object Intent {
       }
       object IBrowseCarouselCardItem {
         
-        @scala.inline
-        def apply(): IBrowseCarouselCardItem = {
+        inline def apply(): IBrowseCarouselCardItem = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IBrowseCarouselCardItem]
         }
         
-        @scala.inline
-        implicit class IBrowseCarouselCardItemMutableBuilder[Self <: IBrowseCarouselCardItem] (val x: Self) extends AnyVal {
+        extension [Self <: IBrowseCarouselCardItem](x: Self) {
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionNull: Self = StObject.set(x, "description", null)
+          inline def setDescriptionNull: Self = StObject.set(x, "description", null)
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+          inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFooterNull: Self = StObject.set(x, "footer", null)
+          inline def setFooterNull: Self = StObject.set(x, "footer", null)
           
-          @scala.inline
-          def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+          inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
           
-          @scala.inline
-          def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+          inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageNull: Self = StObject.set(x, "image", null)
+          inline def setImageNull: Self = StObject.set(x, "image", null)
           
-          @scala.inline
-          def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+          inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
           
-          @scala.inline
-          def setOpenUriAction(value: IOpenUrlAction): Self = StObject.set(x, "openUriAction", value.asInstanceOf[js.Any])
+          inline def setOpenUriAction(value: IOpenUrlAction): Self = StObject.set(x, "openUriAction", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOpenUriActionNull: Self = StObject.set(x, "openUriAction", null)
+          inline def setOpenUriActionNull: Self = StObject.set(x, "openUriAction", null)
           
-          @scala.inline
-          def setOpenUriActionUndefined: Self = StObject.set(x, "openUriAction", js.undefined)
+          inline def setOpenUriActionUndefined: Self = StObject.set(x, "openUriAction", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleNull: Self = StObject.set(x, "title", null)
+          inline def setTitleNull: Self = StObject.set(x, "title", null)
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
     }
@@ -1429,10 +1279,8 @@ object Intent {
           * @returns Button instance
           */
         /* static member */
-        @scala.inline
-        def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
-        @scala.inline
-        def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def create(): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Button]
+        inline def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer.
@@ -1443,14 +1291,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        @scala.inline
-        def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
-        @scala.inline
-        def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        @scala.inline
-        def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
+        inline def decode(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decode(reader: Reader, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
+        inline def decode(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decode(reader: Uint8Array, length: Double): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Button]
         
         /**
           * Decodes a Button message from the specified reader or buffer, length delimited.
@@ -1460,10 +1304,8 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
-        @scala.inline
-        def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decodeDelimited(reader: Reader): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def decodeDelimited(reader: Uint8Array): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Encodes the specified Button message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Card.Button.verify|verify} messages.
@@ -1472,10 +1314,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encode(
+        inline def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encode(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton,
           writer: Writer
         ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
@@ -1487,10 +1327,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encodeDelimited(
+        inline def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encodeDelimited(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton,
           writer: Writer
         ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
@@ -1501,8 +1339,7 @@ object Intent {
           * @returns Button
           */
         /* static member */
-        @scala.inline
-        def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
+        inline def fromObject(`object`: StringDictionary[js.Any]): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Button]
         
         /**
           * Creates a plain object from a Button message. Also converts values to other types if specified.
@@ -1511,10 +1348,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @scala.inline
-        def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        @scala.inline
-        def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Button): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Button, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a Button message.
@@ -1522,8 +1357,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @scala.inline
-        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1532,10 +1366,8 @@ object Intent {
         * @returns Card instance
         */
       /* static member */
-      @scala.inline
-      def create(): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Card]
-      @scala.inline
-      def create(properties: ICard): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def create(): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Card]
+      inline def create(properties: ICard): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Decodes a Card message from the specified reader or buffer.
@@ -1546,14 +1378,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
-      @scala.inline
-      def decode(reader: Reader, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
-      @scala.inline
-      def decode(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
+      inline def decode(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def decode(reader: Reader, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
+      inline def decode(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def decode(reader: Uint8Array, length: Double): Card = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Card]
       
       /**
         * Decodes a Card message from the specified reader or buffer, length delimited.
@@ -1563,10 +1391,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def decodeDelimited(reader: Reader): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def decodeDelimited(reader: Uint8Array): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Encodes the specified Card message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Card.verify|verify} messages.
@@ -1575,10 +1401,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ICard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ICard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ICard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ICard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Card message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Card.verify|verify} messages.
@@ -1587,10 +1411,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ICard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ICard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ICard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ICard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Card message from a plain object. Also converts values to their respective internal types.
@@ -1598,8 +1420,7 @@ object Intent {
         * @returns Card
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Card]
+      inline def fromObject(`object`: StringDictionary[js.Any]): Card = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Card]
       
       /**
         * Creates a plain object from a Card message. Also converts values to other types if specified.
@@ -1608,10 +1429,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: Card): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: Card, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Card): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Card, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Card message.
@@ -1619,8 +1438,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Button. */
       trait IButton extends StObject {
@@ -1633,32 +1451,24 @@ object Intent {
       }
       object IButton {
         
-        @scala.inline
-        def apply(): typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton = {
+        inline def apply(): typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton]
         }
         
-        @scala.inline
-        implicit class IButtonMutableBuilder[Self <: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton] (val x: Self) extends AnyVal {
+        extension [Self <: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton](x: Self) {
           
-          @scala.inline
-          def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
+          inline def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPostbackNull: Self = StObject.set(x, "postback", null)
+          inline def setPostbackNull: Self = StObject.set(x, "postback", null)
           
-          @scala.inline
-          def setPostbackUndefined: Self = StObject.set(x, "postback", js.undefined)
+          inline def setPostbackUndefined: Self = StObject.set(x, "postback", js.undefined)
           
-          @scala.inline
-          def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+          inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTextNull: Self = StObject.set(x, "text", null)
+          inline def setTextNull: Self = StObject.set(x, "text", null)
           
-          @scala.inline
-          def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+          inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
         }
       }
     }
@@ -1729,10 +1539,8 @@ object Intent {
           * @returns Item instance
           */
         /* static member */
-        @scala.inline
-        def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
-        @scala.inline
-        def create(properties: IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
+        inline def create(properties: IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer.
@@ -1743,14 +1551,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        @scala.inline
-        def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
-        @scala.inline
-        def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        @scala.inline
-        def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
+        inline def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
+        inline def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer, length delimited.
@@ -1760,10 +1564,8 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        @scala.inline
-        def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Encodes the specified Item message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.CarouselSelect.Item.verify|verify} messages.
@@ -1772,10 +1574,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encode(message: IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encode(message: IItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encode(message: IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encode(message: IItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Item message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.CarouselSelect.Item.verify|verify} messages.
@@ -1784,10 +1584,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encodeDelimited(message: IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encodeDelimited(message: IItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IItem, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates an Item message from a plain object. Also converts values to their respective internal types.
@@ -1795,8 +1593,7 @@ object Intent {
           * @returns Item
           */
         /* static member */
-        @scala.inline
-        def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Creates a plain object from an Item message. Also converts values to other types if specified.
@@ -1805,10 +1602,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @scala.inline
-        def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        @scala.inline
-        def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies an Item message.
@@ -1816,8 +1611,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @scala.inline
-        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1826,10 +1620,8 @@ object Intent {
         * @returns CarouselSelect instance
         */
       /* static member */
-      @scala.inline
-      def create(): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CarouselSelect]
-      @scala.inline
-      def create(properties: ICarouselSelect): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def create(): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CarouselSelect]
+      inline def create(properties: ICarouselSelect): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Decodes a CarouselSelect message from the specified reader or buffer.
@@ -1840,14 +1632,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
-      @scala.inline
-      def decode(reader: Reader, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
-      @scala.inline
-      def decode(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
+      inline def decode(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def decode(reader: Reader, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
+      inline def decode(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def decode(reader: Uint8Array, length: Double): CarouselSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CarouselSelect]
       
       /**
         * Decodes a CarouselSelect message from the specified reader or buffer, length delimited.
@@ -1857,10 +1645,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def decodeDelimited(reader: Reader): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def decodeDelimited(reader: Uint8Array): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Encodes the specified CarouselSelect message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.CarouselSelect.verify|verify} messages.
@@ -1869,10 +1655,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ICarouselSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ICarouselSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ICarouselSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ICarouselSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified CarouselSelect message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.CarouselSelect.verify|verify} messages.
@@ -1881,10 +1665,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ICarouselSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ICarouselSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ICarouselSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ICarouselSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a CarouselSelect message from a plain object. Also converts values to their respective internal types.
@@ -1892,8 +1674,7 @@ object Intent {
         * @returns CarouselSelect
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
+      inline def fromObject(`object`: StringDictionary[js.Any]): CarouselSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CarouselSelect]
       
       /**
         * Creates a plain object from a CarouselSelect message. Also converts values to other types if specified.
@@ -1902,10 +1683,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: CarouselSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: CarouselSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: CarouselSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: CarouselSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a CarouselSelect message.
@@ -1913,8 +1692,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Item. */
       trait IItem extends StObject {
@@ -1933,50 +1711,36 @@ object Intent {
       }
       object IItem {
         
-        @scala.inline
-        def apply(): IItem = {
+        inline def apply(): IItem = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IItem]
         }
         
-        @scala.inline
-        implicit class IItemMutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
+        extension [Self <: IItem](x: Self) {
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionNull: Self = StObject.set(x, "description", null)
+          inline def setDescriptionNull: Self = StObject.set(x, "description", null)
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+          inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageNull: Self = StObject.set(x, "image", null)
+          inline def setImageNull: Self = StObject.set(x, "image", null)
           
-          @scala.inline
-          def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+          inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
           
-          @scala.inline
-          def setInfo(value: ISelectItemInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+          inline def setInfo(value: ISelectItemInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInfoNull: Self = StObject.set(x, "info", null)
+          inline def setInfoNull: Self = StObject.set(x, "info", null)
           
-          @scala.inline
-          def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+          inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleNull: Self = StObject.set(x, "title", null)
+          inline def setTitleNull: Self = StObject.set(x, "title", null)
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
     }
@@ -2054,10 +1818,8 @@ object Intent {
         * @returns ColumnProperties instance
         */
       /* static member */
-      @scala.inline
-      def create(): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ColumnProperties]
-      @scala.inline
-      def create(properties: IColumnProperties): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def create(): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ColumnProperties]
+      inline def create(properties: IColumnProperties): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Decodes a ColumnProperties message from the specified reader or buffer.
@@ -2068,14 +1830,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
-      @scala.inline
-      def decode(reader: Reader, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
-      @scala.inline
-      def decode(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
+      inline def decode(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def decode(reader: Reader, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
+      inline def decode(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def decode(reader: Uint8Array, length: Double): ColumnProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ColumnProperties]
       
       /**
         * Decodes a ColumnProperties message from the specified reader or buffer, length delimited.
@@ -2085,10 +1843,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def decodeDelimited(reader: Reader): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def decodeDelimited(reader: Uint8Array): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Encodes the specified ColumnProperties message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.ColumnProperties.verify|verify} messages.
@@ -2097,10 +1853,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IColumnProperties): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IColumnProperties, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IColumnProperties): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IColumnProperties, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified ColumnProperties message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.ColumnProperties.verify|verify} messages.
@@ -2109,10 +1863,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IColumnProperties): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IColumnProperties, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IColumnProperties): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IColumnProperties, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a ColumnProperties message from a plain object. Also converts values to their respective internal types.
@@ -2120,8 +1872,7 @@ object Intent {
         * @returns ColumnProperties
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
+      inline def fromObject(`object`: StringDictionary[js.Any]): ColumnProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ColumnProperties]
       
       /**
         * Creates a plain object from a ColumnProperties message. Also converts values to other types if specified.
@@ -2130,10 +1881,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: ColumnProperties): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: ColumnProperties, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: ColumnProperties): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: ColumnProperties, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a ColumnProperties message.
@@ -2141,8 +1890,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents an Image. */
@@ -2183,10 +1931,8 @@ object Intent {
         * @returns Image instance
         */
       /* static member */
-      @scala.inline
-      def create(): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Image]
-      @scala.inline
-      def create(properties: IImage): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def create(): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Image]
+      inline def create(properties: IImage): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Decodes an Image message from the specified reader or buffer.
@@ -2197,14 +1943,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
-      @scala.inline
-      def decode(reader: Reader, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
-      @scala.inline
-      def decode(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
+      inline def decode(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def decode(reader: Reader, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
+      inline def decode(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def decode(reader: Uint8Array, length: Double): Image = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Image]
       
       /**
         * Decodes an Image message from the specified reader or buffer, length delimited.
@@ -2214,10 +1956,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def decodeDelimited(reader: Reader): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def decodeDelimited(reader: Uint8Array): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Encodes the specified Image message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Image.verify|verify} messages.
@@ -2226,10 +1966,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IImage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IImage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IImage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IImage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Image message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Image.verify|verify} messages.
@@ -2238,10 +1976,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IImage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IImage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IImage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IImage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates an Image message from a plain object. Also converts values to their respective internal types.
@@ -2249,8 +1985,7 @@ object Intent {
         * @returns Image
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Image]
+      inline def fromObject(`object`: StringDictionary[js.Any]): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Image]
       
       /**
         * Creates a plain object from an Image message. Also converts values to other types if specified.
@@ -2259,10 +1994,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: Image): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: Image, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Image): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Image, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies an Image message.
@@ -2270,8 +2003,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a LinkOutSuggestion. */
@@ -2312,10 +2044,8 @@ object Intent {
         * @returns LinkOutSuggestion instance
         */
       /* static member */
-      @scala.inline
-      def create(): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[LinkOutSuggestion]
-      @scala.inline
-      def create(properties: ILinkOutSuggestion): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def create(): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[LinkOutSuggestion]
+      inline def create(properties: ILinkOutSuggestion): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Decodes a LinkOutSuggestion message from the specified reader or buffer.
@@ -2326,14 +2056,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
-      @scala.inline
-      def decode(reader: Reader, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
-      @scala.inline
-      def decode(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
+      inline def decode(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def decode(reader: Reader, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
+      inline def decode(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def decode(reader: Uint8Array, length: Double): LinkOutSuggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Decodes a LinkOutSuggestion message from the specified reader or buffer, length delimited.
@@ -2343,10 +2069,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def decodeDelimited(reader: Reader): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def decodeDelimited(reader: Uint8Array): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Encodes the specified LinkOutSuggestion message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.LinkOutSuggestion.verify|verify} messages.
@@ -2355,10 +2079,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ILinkOutSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ILinkOutSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ILinkOutSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ILinkOutSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified LinkOutSuggestion message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.LinkOutSuggestion.verify|verify} messages.
@@ -2367,10 +2089,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ILinkOutSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ILinkOutSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ILinkOutSuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ILinkOutSuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a LinkOutSuggestion message from a plain object. Also converts values to their respective internal types.
@@ -2378,8 +2098,7 @@ object Intent {
         * @returns LinkOutSuggestion
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
+      inline def fromObject(`object`: StringDictionary[js.Any]): LinkOutSuggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LinkOutSuggestion]
       
       /**
         * Creates a plain object from a LinkOutSuggestion message. Also converts values to other types if specified.
@@ -2388,10 +2107,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: LinkOutSuggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: LinkOutSuggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: LinkOutSuggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: LinkOutSuggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a LinkOutSuggestion message.
@@ -2399,8 +2116,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a ListSelect. */
@@ -2479,10 +2195,8 @@ object Intent {
           * @returns Item instance
           */
         /* static member */
-        @scala.inline
-        def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
-        @scala.inline
-        def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def create(): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Item]
+        inline def create(properties: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer.
@@ -2493,14 +2207,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        @scala.inline
-        def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
-        @scala.inline
-        def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        @scala.inline
-        def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
+        inline def decode(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decode(reader: Reader, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
+        inline def decode(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decode(reader: Uint8Array, length: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Item]
         
         /**
           * Decodes an Item message from the specified reader or buffer, length delimited.
@@ -2510,10 +2220,8 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
-        @scala.inline
-        def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decodeDelimited(reader: Reader): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def decodeDelimited(reader: Uint8Array): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Encodes the specified Item message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.ListSelect.Item.verify|verify} messages.
@@ -2522,10 +2230,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encode(
+        inline def encode(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encode(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem,
           writer: Writer
         ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
@@ -2537,10 +2243,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encodeDelimited(
+        inline def encodeDelimited(message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encodeDelimited(
           message: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem,
           writer: Writer
         ): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
@@ -2551,8 +2255,7 @@ object Intent {
           * @returns Item
           */
         /* static member */
-        @scala.inline
-        def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
+        inline def fromObject(`object`: StringDictionary[js.Any]): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Item]
         
         /**
           * Creates a plain object from an Item message. Also converts values to other types if specified.
@@ -2561,10 +2264,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @scala.inline
-        def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        @scala.inline
-        def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Item): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Item, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies an Item message.
@@ -2572,8 +2273,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @scala.inline
-        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -2582,10 +2282,8 @@ object Intent {
         * @returns ListSelect instance
         */
       /* static member */
-      @scala.inline
-      def create(): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSelect]
-      @scala.inline
-      def create(properties: IListSelect): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def create(): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSelect]
+      inline def create(properties: IListSelect): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Decodes a ListSelect message from the specified reader or buffer.
@@ -2596,14 +2294,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
-      @scala.inline
-      def decode(reader: Reader, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
-      @scala.inline
-      def decode(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
+      inline def decode(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def decode(reader: Reader, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
+      inline def decode(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def decode(reader: Uint8Array, length: Double): ListSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSelect]
       
       /**
         * Decodes a ListSelect message from the specified reader or buffer, length delimited.
@@ -2613,10 +2307,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def decodeDelimited(reader: Reader): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def decodeDelimited(reader: Uint8Array): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Encodes the specified ListSelect message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.ListSelect.verify|verify} messages.
@@ -2625,10 +2317,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IListSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IListSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IListSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IListSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified ListSelect message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.ListSelect.verify|verify} messages.
@@ -2637,10 +2327,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IListSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IListSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IListSelect): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IListSelect, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a ListSelect message from a plain object. Also converts values to their respective internal types.
@@ -2648,8 +2336,7 @@ object Intent {
         * @returns ListSelect
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
+      inline def fromObject(`object`: StringDictionary[js.Any]): ListSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSelect]
       
       /**
         * Creates a plain object from a ListSelect message. Also converts values to other types if specified.
@@ -2658,10 +2345,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: ListSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: ListSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: ListSelect): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: ListSelect, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a ListSelect message.
@@ -2669,8 +2354,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Item. */
       trait IItem extends StObject {
@@ -2689,50 +2373,36 @@ object Intent {
       }
       object IItem {
         
-        @scala.inline
-        def apply(): typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem = {
+        inline def apply(): typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem]
         }
         
-        @scala.inline
-        implicit class IItemMutableBuilder[Self <: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem] (val x: Self) extends AnyVal {
+        extension [Self <: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem](x: Self) {
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionNull: Self = StObject.set(x, "description", null)
+          inline def setDescriptionNull: Self = StObject.set(x, "description", null)
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+          inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageNull: Self = StObject.set(x, "image", null)
+          inline def setImageNull: Self = StObject.set(x, "image", null)
           
-          @scala.inline
-          def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+          inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
           
-          @scala.inline
-          def setInfo(value: ISelectItemInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+          inline def setInfo(value: ISelectItemInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInfoNull: Self = StObject.set(x, "info", null)
+          inline def setInfoNull: Self = StObject.set(x, "info", null)
           
-          @scala.inline
-          def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+          inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleNull: Self = StObject.set(x, "title", null)
+          inline def setTitleNull: Self = StObject.set(x, "title", null)
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
     }
@@ -2814,10 +2484,8 @@ object Intent {
           * @returns ResponseMediaObject instance
           */
         /* static member */
-        @scala.inline
-        def create(): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResponseMediaObject]
-        @scala.inline
-        def create(properties: IResponseMediaObject): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def create(): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResponseMediaObject]
+        inline def create(properties: IResponseMediaObject): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Decodes a ResponseMediaObject message from the specified reader or buffer.
@@ -2828,14 +2496,10 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decode(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
-        @scala.inline
-        def decode(reader: Reader, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
-        @scala.inline
-        def decode(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
-        @scala.inline
-        def decode(reader: Uint8Array, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
+        inline def decode(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def decode(reader: Reader, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
+        inline def decode(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def decode(reader: Uint8Array, length: Double): ResponseMediaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResponseMediaObject]
         
         /**
           * Decodes a ResponseMediaObject message from the specified reader or buffer, length delimited.
@@ -2845,10 +2509,8 @@ object Intent {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @scala.inline
-        def decodeDelimited(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
-        @scala.inline
-        def decodeDelimited(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def decodeDelimited(reader: Reader): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def decodeDelimited(reader: Uint8Array): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Encodes the specified ResponseMediaObject message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.MediaContent.ResponseMediaObject.verify|verify} messages.
@@ -2857,10 +2519,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encode(message: IResponseMediaObject): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encode(message: IResponseMediaObject, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encode(message: IResponseMediaObject): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encode(message: IResponseMediaObject, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified ResponseMediaObject message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.MediaContent.ResponseMediaObject.verify|verify} messages.
@@ -2869,10 +2529,8 @@ object Intent {
           * @returns Writer
           */
         /* static member */
-        @scala.inline
-        def encodeDelimited(message: IResponseMediaObject): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-        @scala.inline
-        def encodeDelimited(message: IResponseMediaObject, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IResponseMediaObject): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        inline def encodeDelimited(message: IResponseMediaObject, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a ResponseMediaObject message from a plain object. Also converts values to their respective internal types.
@@ -2880,8 +2538,7 @@ object Intent {
           * @returns ResponseMediaObject
           */
         /* static member */
-        @scala.inline
-        def fromObject(`object`: StringDictionary[js.Any]): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
+        inline def fromObject(`object`: StringDictionary[js.Any]): ResponseMediaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResponseMediaObject]
         
         /**
           * Creates a plain object from a ResponseMediaObject message. Also converts values to other types if specified.
@@ -2890,10 +2547,8 @@ object Intent {
           * @returns Plain object
           */
         /* static member */
-        @scala.inline
-        def toObject(message: ResponseMediaObject): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        @scala.inline
-        def toObject(message: ResponseMediaObject, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: ResponseMediaObject): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: ResponseMediaObject, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a ResponseMediaObject message.
@@ -2901,8 +2556,7 @@ object Intent {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @scala.inline
-        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       @js.native
@@ -2934,10 +2588,8 @@ object Intent {
         * @returns MediaContent instance
         */
       /* static member */
-      @scala.inline
-      def create(): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MediaContent]
-      @scala.inline
-      def create(properties: IMediaContent): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def create(): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MediaContent]
+      inline def create(properties: IMediaContent): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Decodes a MediaContent message from the specified reader or buffer.
@@ -2948,14 +2600,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
-      @scala.inline
-      def decode(reader: Reader, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
-      @scala.inline
-      def decode(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
+      inline def decode(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def decode(reader: Reader, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
+      inline def decode(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def decode(reader: Uint8Array, length: Double): MediaContent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MediaContent]
       
       /**
         * Decodes a MediaContent message from the specified reader or buffer, length delimited.
@@ -2965,10 +2613,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def decodeDelimited(reader: Reader): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def decodeDelimited(reader: Uint8Array): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Encodes the specified MediaContent message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.MediaContent.verify|verify} messages.
@@ -2977,10 +2623,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IMediaContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IMediaContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IMediaContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IMediaContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified MediaContent message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.MediaContent.verify|verify} messages.
@@ -2989,10 +2633,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IMediaContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IMediaContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IMediaContent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IMediaContent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a MediaContent message from a plain object. Also converts values to their respective internal types.
@@ -3000,8 +2642,7 @@ object Intent {
         * @returns MediaContent
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
+      inline def fromObject(`object`: StringDictionary[js.Any]): MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MediaContent]
       
       /**
         * Creates a plain object from a MediaContent message. Also converts values to other types if specified.
@@ -3010,10 +2651,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: MediaContent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: MediaContent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: MediaContent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: MediaContent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a MediaContent message.
@@ -3021,8 +2660,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a ResponseMediaObject. */
       trait IResponseMediaObject extends StObject {
@@ -3044,59 +2682,42 @@ object Intent {
       }
       object IResponseMediaObject {
         
-        @scala.inline
-        def apply(): IResponseMediaObject = {
+        inline def apply(): IResponseMediaObject = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IResponseMediaObject]
         }
         
-        @scala.inline
-        implicit class IResponseMediaObjectMutableBuilder[Self <: IResponseMediaObject] (val x: Self) extends AnyVal {
+        extension [Self <: IResponseMediaObject](x: Self) {
           
-          @scala.inline
-          def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+          inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
+          inline def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
           
-          @scala.inline
-          def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+          inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionNull: Self = StObject.set(x, "description", null)
+          inline def setDescriptionNull: Self = StObject.set(x, "description", null)
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setIcon(value: IImage): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+          inline def setIcon(value: IImage): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIconNull: Self = StObject.set(x, "icon", null)
+          inline def setIconNull: Self = StObject.set(x, "icon", null)
           
-          @scala.inline
-          def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+          inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
           
-          @scala.inline
-          def setLargeImage(value: IImage): Self = StObject.set(x, "largeImage", value.asInstanceOf[js.Any])
+          inline def setLargeImage(value: IImage): Self = StObject.set(x, "largeImage", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLargeImageNull: Self = StObject.set(x, "largeImage", null)
+          inline def setLargeImageNull: Self = StObject.set(x, "largeImage", null)
           
-          @scala.inline
-          def setLargeImageUndefined: Self = StObject.set(x, "largeImage", js.undefined)
+          inline def setLargeImageUndefined: Self = StObject.set(x, "largeImage", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameNull: Self = StObject.set(x, "name", null)
+          inline def setNameNull: Self = StObject.set(x, "name", null)
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         }
       }
     }
@@ -3210,10 +2831,8 @@ object Intent {
         * @returns QuickReplies instance
         */
       /* static member */
-      @scala.inline
-      def create(): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[QuickReplies]
-      @scala.inline
-      def create(properties: IQuickReplies): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def create(): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[QuickReplies]
+      inline def create(properties: IQuickReplies): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Decodes a QuickReplies message from the specified reader or buffer.
@@ -3224,14 +2843,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
-      @scala.inline
-      def decode(reader: Reader, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
-      @scala.inline
-      def decode(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
+      inline def decode(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def decode(reader: Reader, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
+      inline def decode(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def decode(reader: Uint8Array, length: Double): QuickReplies = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[QuickReplies]
       
       /**
         * Decodes a QuickReplies message from the specified reader or buffer, length delimited.
@@ -3241,10 +2856,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def decodeDelimited(reader: Reader): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def decodeDelimited(reader: Uint8Array): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Encodes the specified QuickReplies message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.QuickReplies.verify|verify} messages.
@@ -3253,10 +2866,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IQuickReplies): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IQuickReplies, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IQuickReplies): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IQuickReplies, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified QuickReplies message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.QuickReplies.verify|verify} messages.
@@ -3265,10 +2876,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IQuickReplies): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IQuickReplies, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IQuickReplies): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IQuickReplies, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a QuickReplies message from a plain object. Also converts values to their respective internal types.
@@ -3276,8 +2885,7 @@ object Intent {
         * @returns QuickReplies
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
+      inline def fromObject(`object`: StringDictionary[js.Any]): QuickReplies = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[QuickReplies]
       
       /**
         * Creates a plain object from a QuickReplies message. Also converts values to other types if specified.
@@ -3286,10 +2894,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: QuickReplies): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: QuickReplies, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: QuickReplies): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: QuickReplies, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a QuickReplies message.
@@ -3297,8 +2903,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SelectItemInfo. */
@@ -3339,10 +2944,8 @@ object Intent {
         * @returns SelectItemInfo instance
         */
       /* static member */
-      @scala.inline
-      def create(): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SelectItemInfo]
-      @scala.inline
-      def create(properties: ISelectItemInfo): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def create(): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SelectItemInfo]
+      inline def create(properties: ISelectItemInfo): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Decodes a SelectItemInfo message from the specified reader or buffer.
@@ -3353,14 +2956,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
-      @scala.inline
-      def decode(reader: Reader, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
-      @scala.inline
-      def decode(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
+      inline def decode(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def decode(reader: Reader, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
+      inline def decode(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def decode(reader: Uint8Array, length: Double): SelectItemInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SelectItemInfo]
       
       /**
         * Decodes a SelectItemInfo message from the specified reader or buffer, length delimited.
@@ -3370,10 +2969,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def decodeDelimited(reader: Reader): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def decodeDelimited(reader: Uint8Array): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Encodes the specified SelectItemInfo message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.SelectItemInfo.verify|verify} messages.
@@ -3382,10 +2979,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ISelectItemInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ISelectItemInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ISelectItemInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ISelectItemInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SelectItemInfo message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.SelectItemInfo.verify|verify} messages.
@@ -3394,10 +2989,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ISelectItemInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ISelectItemInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISelectItemInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISelectItemInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SelectItemInfo message from a plain object. Also converts values to their respective internal types.
@@ -3405,8 +2998,7 @@ object Intent {
         * @returns SelectItemInfo
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
+      inline def fromObject(`object`: StringDictionary[js.Any]): SelectItemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SelectItemInfo]
       
       /**
         * Creates a plain object from a SelectItemInfo message. Also converts values to other types if specified.
@@ -3415,10 +3007,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: SelectItemInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: SelectItemInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SelectItemInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SelectItemInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SelectItemInfo message.
@@ -3426,8 +3016,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SimpleResponse. */
@@ -3472,10 +3061,8 @@ object Intent {
         * @returns SimpleResponse instance
         */
       /* static member */
-      @scala.inline
-      def create(): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponse]
-      @scala.inline
-      def create(properties: ISimpleResponse): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def create(): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponse]
+      inline def create(properties: ISimpleResponse): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Decodes a SimpleResponse message from the specified reader or buffer.
@@ -3486,14 +3073,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
-      @scala.inline
-      def decode(reader: Reader, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
-      @scala.inline
-      def decode(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
+      inline def decode(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def decode(reader: Reader, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
+      inline def decode(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def decode(reader: Uint8Array, length: Double): SimpleResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponse]
       
       /**
         * Decodes a SimpleResponse message from the specified reader or buffer, length delimited.
@@ -3503,10 +3086,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def decodeDelimited(reader: Reader): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def decodeDelimited(reader: Uint8Array): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Encodes the specified SimpleResponse message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.SimpleResponse.verify|verify} messages.
@@ -3515,10 +3096,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ISimpleResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ISimpleResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ISimpleResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ISimpleResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SimpleResponse message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.SimpleResponse.verify|verify} messages.
@@ -3527,10 +3106,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ISimpleResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ISimpleResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISimpleResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISimpleResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SimpleResponse message from a plain object. Also converts values to their respective internal types.
@@ -3538,8 +3115,7 @@ object Intent {
         * @returns SimpleResponse
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
+      inline def fromObject(`object`: StringDictionary[js.Any]): SimpleResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponse]
       
       /**
         * Creates a plain object from a SimpleResponse message. Also converts values to other types if specified.
@@ -3548,10 +3124,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: SimpleResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: SimpleResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SimpleResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SimpleResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SimpleResponse message.
@@ -3559,8 +3133,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SimpleResponses. */
@@ -3597,10 +3170,8 @@ object Intent {
         * @returns SimpleResponses instance
         */
       /* static member */
-      @scala.inline
-      def create(): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponses]
-      @scala.inline
-      def create(properties: ISimpleResponses): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def create(): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SimpleResponses]
+      inline def create(properties: ISimpleResponses): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Decodes a SimpleResponses message from the specified reader or buffer.
@@ -3611,14 +3182,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
-      @scala.inline
-      def decode(reader: Reader, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
-      @scala.inline
-      def decode(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
+      inline def decode(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def decode(reader: Reader, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
+      inline def decode(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def decode(reader: Uint8Array, length: Double): SimpleResponses = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SimpleResponses]
       
       /**
         * Decodes a SimpleResponses message from the specified reader or buffer, length delimited.
@@ -3628,10 +3195,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def decodeDelimited(reader: Reader): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def decodeDelimited(reader: Uint8Array): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Encodes the specified SimpleResponses message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.SimpleResponses.verify|verify} messages.
@@ -3640,10 +3205,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ISimpleResponses): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ISimpleResponses, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ISimpleResponses): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ISimpleResponses, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SimpleResponses message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.SimpleResponses.verify|verify} messages.
@@ -3652,10 +3215,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ISimpleResponses): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ISimpleResponses, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISimpleResponses): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISimpleResponses, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SimpleResponses message from a plain object. Also converts values to their respective internal types.
@@ -3663,8 +3224,7 @@ object Intent {
         * @returns SimpleResponses
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
+      inline def fromObject(`object`: StringDictionary[js.Any]): SimpleResponses = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SimpleResponses]
       
       /**
         * Creates a plain object from a SimpleResponses message. Also converts values to other types if specified.
@@ -3673,10 +3233,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: SimpleResponses): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: SimpleResponses, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SimpleResponses): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: SimpleResponses, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SimpleResponses message.
@@ -3684,8 +3242,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Suggestion. */
@@ -3722,10 +3279,8 @@ object Intent {
         * @returns Suggestion instance
         */
       /* static member */
-      @scala.inline
-      def create(): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestion]
-      @scala.inline
-      def create(properties: ISuggestion): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def create(): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestion]
+      inline def create(properties: ISuggestion): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Decodes a Suggestion message from the specified reader or buffer.
@@ -3736,14 +3291,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
-      @scala.inline
-      def decode(reader: Reader, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
-      @scala.inline
-      def decode(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
+      inline def decode(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def decode(reader: Reader, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
+      inline def decode(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def decode(reader: Uint8Array, length: Double): Suggestion = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestion]
       
       /**
         * Decodes a Suggestion message from the specified reader or buffer, length delimited.
@@ -3753,10 +3304,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def decodeDelimited(reader: Reader): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def decodeDelimited(reader: Uint8Array): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Encodes the specified Suggestion message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Suggestion.verify|verify} messages.
@@ -3765,10 +3314,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ISuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ISuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ISuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ISuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Suggestion message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Suggestion.verify|verify} messages.
@@ -3777,10 +3324,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ISuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ISuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISuggestion): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISuggestion, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Suggestion message from a plain object. Also converts values to their respective internal types.
@@ -3788,8 +3333,7 @@ object Intent {
         * @returns Suggestion
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
+      inline def fromObject(`object`: StringDictionary[js.Any]): Suggestion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestion]
       
       /**
         * Creates a plain object from a Suggestion message. Also converts values to other types if specified.
@@ -3798,10 +3342,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: Suggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: Suggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Suggestion): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Suggestion, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Suggestion message.
@@ -3809,8 +3351,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Suggestions. */
@@ -3847,10 +3388,8 @@ object Intent {
         * @returns Suggestions instance
         */
       /* static member */
-      @scala.inline
-      def create(): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestions]
-      @scala.inline
-      def create(properties: ISuggestions): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def create(): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Suggestions]
+      inline def create(properties: ISuggestions): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Decodes a Suggestions message from the specified reader or buffer.
@@ -3861,14 +3400,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
-      @scala.inline
-      def decode(reader: Reader, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
-      @scala.inline
-      def decode(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
+      inline def decode(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def decode(reader: Reader, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
+      inline def decode(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def decode(reader: Uint8Array, length: Double): Suggestions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Suggestions]
       
       /**
         * Decodes a Suggestions message from the specified reader or buffer, length delimited.
@@ -3878,10 +3413,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def decodeDelimited(reader: Reader): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def decodeDelimited(reader: Uint8Array): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Encodes the specified Suggestions message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Suggestions.verify|verify} messages.
@@ -3890,10 +3423,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ISuggestions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ISuggestions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ISuggestions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ISuggestions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Suggestions message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Suggestions.verify|verify} messages.
@@ -3902,10 +3433,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ISuggestions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ISuggestions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISuggestions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ISuggestions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Suggestions message from a plain object. Also converts values to their respective internal types.
@@ -3913,8 +3442,7 @@ object Intent {
         * @returns Suggestions
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
+      inline def fromObject(`object`: StringDictionary[js.Any]): Suggestions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Suggestions]
       
       /**
         * Creates a plain object from a Suggestions message. Also converts values to other types if specified.
@@ -3923,10 +3451,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: Suggestions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: Suggestions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Suggestions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Suggestions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Suggestions message.
@@ -3934,8 +3460,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCard. */
@@ -3988,10 +3513,8 @@ object Intent {
         * @returns TableCard instance
         */
       /* static member */
-      @scala.inline
-      def create(): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCard]
-      @scala.inline
-      def create(properties: ITableCard): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def create(): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCard]
+      inline def create(properties: ITableCard): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Decodes a TableCard message from the specified reader or buffer.
@@ -4002,14 +3525,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
-      @scala.inline
-      def decode(reader: Reader, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
-      @scala.inline
-      def decode(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
+      inline def decode(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def decode(reader: Reader, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
+      inline def decode(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def decode(reader: Uint8Array, length: Double): TableCard = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCard]
       
       /**
         * Decodes a TableCard message from the specified reader or buffer, length delimited.
@@ -4019,10 +3538,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def decodeDelimited(reader: Reader): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def decodeDelimited(reader: Uint8Array): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Encodes the specified TableCard message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.TableCard.verify|verify} messages.
@@ -4031,10 +3548,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ITableCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ITableCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ITableCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ITableCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TableCard message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.TableCard.verify|verify} messages.
@@ -4043,10 +3558,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ITableCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ITableCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ITableCard): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ITableCard, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TableCard message from a plain object. Also converts values to their respective internal types.
@@ -4054,8 +3567,7 @@ object Intent {
         * @returns TableCard
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCard]
+      inline def fromObject(`object`: StringDictionary[js.Any]): TableCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCard]
       
       /**
         * Creates a plain object from a TableCard message. Also converts values to other types if specified.
@@ -4064,10 +3576,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: TableCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: TableCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCard): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCard, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TableCard message.
@@ -4075,8 +3585,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCardCell. */
@@ -4113,10 +3622,8 @@ object Intent {
         * @returns TableCardCell instance
         */
       /* static member */
-      @scala.inline
-      def create(): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardCell]
-      @scala.inline
-      def create(properties: ITableCardCell): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def create(): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardCell]
+      inline def create(properties: ITableCardCell): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Decodes a TableCardCell message from the specified reader or buffer.
@@ -4127,14 +3634,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
-      @scala.inline
-      def decode(reader: Reader, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
-      @scala.inline
-      def decode(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
+      inline def decode(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def decode(reader: Reader, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
+      inline def decode(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def decode(reader: Uint8Array, length: Double): TableCardCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardCell]
       
       /**
         * Decodes a TableCardCell message from the specified reader or buffer, length delimited.
@@ -4144,10 +3647,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def decodeDelimited(reader: Reader): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def decodeDelimited(reader: Uint8Array): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Encodes the specified TableCardCell message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.TableCardCell.verify|verify} messages.
@@ -4156,10 +3657,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ITableCardCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ITableCardCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ITableCardCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ITableCardCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TableCardCell message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.TableCardCell.verify|verify} messages.
@@ -4168,10 +3667,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ITableCardCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ITableCardCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ITableCardCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ITableCardCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TableCardCell message from a plain object. Also converts values to their respective internal types.
@@ -4179,8 +3676,7 @@ object Intent {
         * @returns TableCardCell
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
+      inline def fromObject(`object`: StringDictionary[js.Any]): TableCardCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardCell]
       
       /**
         * Creates a plain object from a TableCardCell message. Also converts values to other types if specified.
@@ -4189,10 +3685,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: TableCardCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: TableCardCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCardCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCardCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TableCardCell message.
@@ -4200,8 +3694,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TableCardRow. */
@@ -4242,10 +3735,8 @@ object Intent {
         * @returns TableCardRow instance
         */
       /* static member */
-      @scala.inline
-      def create(): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardRow]
-      @scala.inline
-      def create(properties: ITableCardRow): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def create(): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCardRow]
+      inline def create(properties: ITableCardRow): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Decodes a TableCardRow message from the specified reader or buffer.
@@ -4256,14 +3747,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
-      @scala.inline
-      def decode(reader: Reader, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
-      @scala.inline
-      def decode(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
+      inline def decode(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def decode(reader: Reader, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
+      inline def decode(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def decode(reader: Uint8Array, length: Double): TableCardRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCardRow]
       
       /**
         * Decodes a TableCardRow message from the specified reader or buffer, length delimited.
@@ -4273,10 +3760,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def decodeDelimited(reader: Reader): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def decodeDelimited(reader: Uint8Array): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Encodes the specified TableCardRow message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.TableCardRow.verify|verify} messages.
@@ -4285,10 +3770,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: ITableCardRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: ITableCardRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: ITableCardRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: ITableCardRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TableCardRow message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.TableCardRow.verify|verify} messages.
@@ -4297,10 +3780,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: ITableCardRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: ITableCardRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ITableCardRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: ITableCardRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TableCardRow message from a plain object. Also converts values to their respective internal types.
@@ -4308,8 +3789,7 @@ object Intent {
         * @returns TableCardRow
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
+      inline def fromObject(`object`: StringDictionary[js.Any]): TableCardRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCardRow]
       
       /**
         * Creates a plain object from a TableCardRow message. Also converts values to other types if specified.
@@ -4318,10 +3798,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: TableCardRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: TableCardRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCardRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableCardRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TableCardRow message.
@@ -4329,8 +3807,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Text. */
@@ -4367,10 +3844,8 @@ object Intent {
         * @returns Text instance
         */
       /* static member */
-      @scala.inline
-      def create(): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.std.Text]
-      @scala.inline
-      def create(properties: IText): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def create(): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.std.Text]
+      inline def create(properties: IText): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Decodes a Text message from the specified reader or buffer.
@@ -4381,14 +3856,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
-      @scala.inline
-      def decode(reader: Reader, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
-      @scala.inline
-      def decode(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
+      inline def decode(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def decode(reader: Reader, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
+      inline def decode(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def decode(reader: Uint8Array, length: Double): typings.std.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Text]
       
       /**
         * Decodes a Text message from the specified reader or buffer, length delimited.
@@ -4398,10 +3869,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def decodeDelimited(reader: Reader): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def decodeDelimited(reader: Uint8Array): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Encodes the specified Text message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Text.verify|verify} messages.
@@ -4410,10 +3879,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Text message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.Text.verify|verify} messages.
@@ -4422,10 +3889,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IText): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IText, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Text message from a plain object. Also converts values to their respective internal types.
@@ -4433,8 +3898,7 @@ object Intent {
         * @returns Text
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
+      inline def fromObject(`object`: StringDictionary[js.Any]): typings.std.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Text]
       
       /**
         * Creates a plain object from a Text message. Also converts values to other types if specified.
@@ -4443,10 +3907,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: typings.std.Text): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: typings.std.Text, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: typings.std.Text): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: typings.std.Text, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Text message.
@@ -4454,8 +3916,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /**
@@ -4464,10 +3925,8 @@ object Intent {
       * @returns Message instance
       */
     /* static member */
-    @scala.inline
-    def create(): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Message]
-    @scala.inline
-    def create(properties: IMessage): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def create(): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Message]
+    inline def create(properties: IMessage): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Decodes a Message message from the specified reader or buffer.
@@ -4478,14 +3937,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
-    @scala.inline
-    def decode(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
+    inline def decode(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def decode(reader: Reader, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
+    inline def decode(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def decode(reader: Uint8Array, length: Double): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message]
     
     /**
       * Decodes a Message message from the specified reader or buffer, length delimited.
@@ -4495,10 +3950,8 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def decodeDelimited(reader: Reader): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def decodeDelimited(reader: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Encodes the specified Message message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.verify|verify} messages.
@@ -4507,10 +3960,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IMessage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IMessage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IMessage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IMessage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Message message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Message.verify|verify} messages.
@@ -4519,10 +3970,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IMessage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IMessage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IMessage): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IMessage, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Message message from a plain object. Also converts values to their respective internal types.
@@ -4530,8 +3979,7 @@ object Intent {
       * @returns Message
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     /**
       * Creates a plain object from a Message message. Also converts values to other types if specified.
@@ -4540,10 +3988,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Message): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Message, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Message): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Message, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Message message.
@@ -4551,8 +3997,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a BasicCard. */
     trait IBasicCard extends StObject {
@@ -4574,62 +4019,44 @@ object Intent {
     }
     object IBasicCard {
       
-      @scala.inline
-      def apply(): IBasicCard = {
+      inline def apply(): IBasicCard = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IBasicCard]
       }
       
-      @scala.inline
-      implicit class IBasicCardMutableBuilder[Self <: IBasicCard] (val x: Self) extends AnyVal {
+      extension [Self <: IBasicCard](x: Self) {
         
-        @scala.inline
-        def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+        inline def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonsNull: Self = StObject.set(x, "buttons", null)
+        inline def setButtonsNull: Self = StObject.set(x, "buttons", null)
         
-        @scala.inline
-        def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+        inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
         
-        @scala.inline
-        def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
         
-        @scala.inline
-        def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
+        inline def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormattedTextNull: Self = StObject.set(x, "formattedText", null)
+        inline def setFormattedTextNull: Self = StObject.set(x, "formattedText", null)
         
-        @scala.inline
-        def setFormattedTextUndefined: Self = StObject.set(x, "formattedText", js.undefined)
+        inline def setFormattedTextUndefined: Self = StObject.set(x, "formattedText", js.undefined)
         
-        @scala.inline
-        def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+        inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageNull: Self = StObject.set(x, "image", null)
+        inline def setImageNull: Self = StObject.set(x, "image", null)
         
-        @scala.inline
-        def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+        inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
         
-        @scala.inline
-        def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+        inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
+        inline def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
         
-        @scala.inline
-        def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+        inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleNull: Self = StObject.set(x, "title", null)
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -4646,37 +4073,28 @@ object Intent {
     }
     object IBrowseCarouselCard {
       
-      @scala.inline
-      def apply(): IBrowseCarouselCard = {
+      inline def apply(): IBrowseCarouselCard = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IBrowseCarouselCard]
       }
       
-      @scala.inline
-      implicit class IBrowseCarouselCardMutableBuilder[Self <: IBrowseCarouselCard] (val x: Self) extends AnyVal {
+      extension [Self <: IBrowseCarouselCard](x: Self) {
         
-        @scala.inline
-        def setImageDisplayOptions(
+        inline def setImageDisplayOptions(
           value: ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String)
         ): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageDisplayOptionsNull: Self = StObject.set(x, "imageDisplayOptions", null)
+        inline def setImageDisplayOptionsNull: Self = StObject.set(x, "imageDisplayOptions", null)
         
-        @scala.inline
-        def setImageDisplayOptionsUndefined: Self = StObject.set(x, "imageDisplayOptions", js.undefined)
+        inline def setImageDisplayOptionsUndefined: Self = StObject.set(x, "imageDisplayOptions", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[IBrowseCarouselCardItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[IBrowseCarouselCardItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsNull: Self = StObject.set(x, "items", null)
+        inline def setItemsNull: Self = StObject.set(x, "items", null)
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: IBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: IBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       }
     }
     
@@ -4699,53 +4117,38 @@ object Intent {
     }
     object ICard {
       
-      @scala.inline
-      def apply(): ICard = {
+      inline def apply(): ICard = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ICard]
       }
       
-      @scala.inline
-      implicit class ICardMutableBuilder[Self <: ICard] (val x: Self) extends AnyVal {
+      extension [Self <: ICard](x: Self) {
         
-        @scala.inline
-        def setButtons(value: js.Array[typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+        inline def setButtons(value: js.Array[typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonsNull: Self = StObject.set(x, "buttons", null)
+        inline def setButtonsNull: Self = StObject.set(x, "buttons", null)
         
-        @scala.inline
-        def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+        inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
         
-        @scala.inline
-        def setButtonsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
         
-        @scala.inline
-        def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+        inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageUriNull: Self = StObject.set(x, "imageUri", null)
+        inline def setImageUriNull: Self = StObject.set(x, "imageUri", null)
         
-        @scala.inline
-        def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+        inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
         
-        @scala.inline
-        def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+        inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
+        inline def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
         
-        @scala.inline
-        def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+        inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleNull: Self = StObject.set(x, "title", null)
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -4757,26 +4160,20 @@ object Intent {
     }
     object ICarouselSelect {
       
-      @scala.inline
-      def apply(): ICarouselSelect = {
+      inline def apply(): ICarouselSelect = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ICarouselSelect]
       }
       
-      @scala.inline
-      implicit class ICarouselSelectMutableBuilder[Self <: ICarouselSelect] (val x: Self) extends AnyVal {
+      extension [Self <: ICarouselSelect](x: Self) {
         
-        @scala.inline
-        def setItems(value: js.Array[IItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[IItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsNull: Self = StObject.set(x, "items", null)
+        inline def setItemsNull: Self = StObject.set(x, "items", null)
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: IItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: IItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       }
     }
     
@@ -4793,34 +4190,26 @@ object Intent {
     }
     object IColumnProperties {
       
-      @scala.inline
-      def apply(): IColumnProperties = {
+      inline def apply(): IColumnProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IColumnProperties]
       }
       
-      @scala.inline
-      implicit class IColumnPropertiesMutableBuilder[Self <: IColumnProperties] (val x: Self) extends AnyVal {
+      extension [Self <: IColumnProperties](x: Self) {
         
-        @scala.inline
-        def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+        inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderNull: Self = StObject.set(x, "header", null)
+        inline def setHeaderNull: Self = StObject.set(x, "header", null)
         
-        @scala.inline
-        def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+        inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
         
-        @scala.inline
-        def setHorizontalAlignment(
+        inline def setHorizontalAlignment(
           value: HorizontalAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.ColumnProperties.HorizontalAlignment * / any */ String)
         ): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalAlignmentNull: Self = StObject.set(x, "horizontalAlignment", null)
+        inline def setHorizontalAlignmentNull: Self = StObject.set(x, "horizontalAlignment", null)
         
-        @scala.inline
-        def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+        inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
       }
     }
     
@@ -4835,32 +4224,24 @@ object Intent {
     }
     object IImage {
       
-      @scala.inline
-      def apply(): IImage = {
+      inline def apply(): IImage = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IImage]
       }
       
-      @scala.inline
-      implicit class IImageMutableBuilder[Self <: IImage] (val x: Self) extends AnyVal {
+      extension [Self <: IImage](x: Self) {
         
-        @scala.inline
-        def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
+        inline def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccessibilityTextNull: Self = StObject.set(x, "accessibilityText", null)
+        inline def setAccessibilityTextNull: Self = StObject.set(x, "accessibilityText", null)
         
-        @scala.inline
-        def setAccessibilityTextUndefined: Self = StObject.set(x, "accessibilityText", js.undefined)
+        inline def setAccessibilityTextUndefined: Self = StObject.set(x, "accessibilityText", js.undefined)
         
-        @scala.inline
-        def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+        inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageUriNull: Self = StObject.set(x, "imageUri", null)
+        inline def setImageUriNull: Self = StObject.set(x, "imageUri", null)
         
-        @scala.inline
-        def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+        inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
       }
     }
     
@@ -4875,32 +4256,24 @@ object Intent {
     }
     object ILinkOutSuggestion {
       
-      @scala.inline
-      def apply(): ILinkOutSuggestion = {
+      inline def apply(): ILinkOutSuggestion = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ILinkOutSuggestion]
       }
       
-      @scala.inline
-      implicit class ILinkOutSuggestionMutableBuilder[Self <: ILinkOutSuggestion] (val x: Self) extends AnyVal {
+      extension [Self <: ILinkOutSuggestion](x: Self) {
         
-        @scala.inline
-        def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+        inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestinationNameNull: Self = StObject.set(x, "destinationName", null)
+        inline def setDestinationNameNull: Self = StObject.set(x, "destinationName", null)
         
-        @scala.inline
-        def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+        inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
         
-        @scala.inline
-        def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+        inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUriNull: Self = StObject.set(x, "uri", null)
+        inline def setUriNull: Self = StObject.set(x, "uri", null)
         
-        @scala.inline
-        def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+        inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       }
     }
     
@@ -4922,48 +4295,36 @@ object Intent {
     }
     object IListSelect {
       
-      @scala.inline
-      def apply(): IListSelect = {
+      inline def apply(): IListSelect = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IListSelect]
       }
       
-      @scala.inline
-      implicit class IListSelectMutableBuilder[Self <: IListSelect] (val x: Self) extends AnyVal {
+      extension [Self <: IListSelect](x: Self) {
         
-        @scala.inline
-        def setItems(
+        inline def setItems(
           value: js.Array[
                   typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem
                 ]
         ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsNull: Self = StObject.set(x, "items", null)
+        inline def setItemsNull: Self = StObject.set(x, "items", null)
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: typings.dialogflow.mod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+        inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
+        inline def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
         
-        @scala.inline
-        def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+        inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleNull: Self = StObject.set(x, "title", null)
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -4980,37 +4341,28 @@ object Intent {
     }
     object IMediaContent {
       
-      @scala.inline
-      def apply(): IMediaContent = {
+      inline def apply(): IMediaContent = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IMediaContent]
       }
       
-      @scala.inline
-      implicit class IMediaContentMutableBuilder[Self <: IMediaContent] (val x: Self) extends AnyVal {
+      extension [Self <: IMediaContent](x: Self) {
         
-        @scala.inline
-        def setMediaObjects(value: js.Array[IResponseMediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
+        inline def setMediaObjects(value: js.Array[IResponseMediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaObjectsNull: Self = StObject.set(x, "mediaObjects", null)
+        inline def setMediaObjectsNull: Self = StObject.set(x, "mediaObjects", null)
         
-        @scala.inline
-        def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
+        inline def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
         
-        @scala.inline
-        def setMediaObjectsVarargs(value: IResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
+        inline def setMediaObjectsVarargs(value: IResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
         
-        @scala.inline
-        def setMediaType(
+        inline def setMediaType(
           value: ResponseMediaType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.MediaContent.ResponseMediaType * / any */ String)
         ): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaTypeNull: Self = StObject.set(x, "mediaType", null)
+        inline def setMediaTypeNull: Self = StObject.set(x, "mediaType", null)
         
-        @scala.inline
-        def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+        inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       }
     }
     
@@ -5025,35 +4377,26 @@ object Intent {
     }
     object IQuickReplies {
       
-      @scala.inline
-      def apply(): IQuickReplies = {
+      inline def apply(): IQuickReplies = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IQuickReplies]
       }
       
-      @scala.inline
-      implicit class IQuickRepliesMutableBuilder[Self <: IQuickReplies] (val x: Self) extends AnyVal {
+      extension [Self <: IQuickReplies](x: Self) {
         
-        @scala.inline
-        def setQuickReplies(value: js.Array[String]): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
+        inline def setQuickReplies(value: js.Array[String]): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuickRepliesNull: Self = StObject.set(x, "quickReplies", null)
+        inline def setQuickRepliesNull: Self = StObject.set(x, "quickReplies", null)
         
-        @scala.inline
-        def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
+        inline def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
         
-        @scala.inline
-        def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value :_*))
+        inline def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value :_*))
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleNull: Self = StObject.set(x, "title", null)
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -5068,35 +4411,26 @@ object Intent {
     }
     object ISelectItemInfo {
       
-      @scala.inline
-      def apply(): ISelectItemInfo = {
+      inline def apply(): ISelectItemInfo = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISelectItemInfo]
       }
       
-      @scala.inline
-      implicit class ISelectItemInfoMutableBuilder[Self <: ISelectItemInfo] (val x: Self) extends AnyVal {
+      extension [Self <: ISelectItemInfo](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyNull: Self = StObject.set(x, "key", null)
+        inline def setKeyNull: Self = StObject.set(x, "key", null)
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+        inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSynonymsNull: Self = StObject.set(x, "synonyms", null)
+        inline def setSynonymsNull: Self = StObject.set(x, "synonyms", null)
         
-        @scala.inline
-        def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
+        inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
         
-        @scala.inline
-        def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+        inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
       }
     }
     
@@ -5114,41 +4448,30 @@ object Intent {
     }
     object ISimpleResponse {
       
-      @scala.inline
-      def apply(): ISimpleResponse = {
+      inline def apply(): ISimpleResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISimpleResponse]
       }
       
-      @scala.inline
-      implicit class ISimpleResponseMutableBuilder[Self <: ISimpleResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ISimpleResponse](x: Self) {
         
-        @scala.inline
-        def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+        inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayTextNull: Self = StObject.set(x, "displayText", null)
+        inline def setDisplayTextNull: Self = StObject.set(x, "displayText", null)
         
-        @scala.inline
-        def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
+        inline def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
         
-        @scala.inline
-        def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+        inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSsmlNull: Self = StObject.set(x, "ssml", null)
+        inline def setSsmlNull: Self = StObject.set(x, "ssml", null)
         
-        @scala.inline
-        def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+        inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
         
-        @scala.inline
-        def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
+        inline def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextToSpeechNull: Self = StObject.set(x, "textToSpeech", null)
+        inline def setTextToSpeechNull: Self = StObject.set(x, "textToSpeech", null)
         
-        @scala.inline
-        def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
+        inline def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
       }
     }
     
@@ -5160,26 +4483,20 @@ object Intent {
     }
     object ISimpleResponses {
       
-      @scala.inline
-      def apply(): ISimpleResponses = {
+      inline def apply(): ISimpleResponses = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISimpleResponses]
       }
       
-      @scala.inline
-      implicit class ISimpleResponsesMutableBuilder[Self <: ISimpleResponses] (val x: Self) extends AnyVal {
+      extension [Self <: ISimpleResponses](x: Self) {
         
-        @scala.inline
-        def setSimpleResponses(value: js.Array[ISimpleResponse]): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
+        inline def setSimpleResponses(value: js.Array[ISimpleResponse]): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSimpleResponsesNull: Self = StObject.set(x, "simpleResponses", null)
+        inline def setSimpleResponsesNull: Self = StObject.set(x, "simpleResponses", null)
         
-        @scala.inline
-        def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
+        inline def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
         
-        @scala.inline
-        def setSimpleResponsesVarargs(value: ISimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value :_*))
+        inline def setSimpleResponsesVarargs(value: ISimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value :_*))
       }
     }
     
@@ -5191,23 +4508,18 @@ object Intent {
     }
     object ISuggestion {
       
-      @scala.inline
-      def apply(): ISuggestion = {
+      inline def apply(): ISuggestion = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISuggestion]
       }
       
-      @scala.inline
-      implicit class ISuggestionMutableBuilder[Self <: ISuggestion] (val x: Self) extends AnyVal {
+      extension [Self <: ISuggestion](x: Self) {
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleNull: Self = StObject.set(x, "title", null)
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -5219,26 +4531,20 @@ object Intent {
     }
     object ISuggestions {
       
-      @scala.inline
-      def apply(): ISuggestions = {
+      inline def apply(): ISuggestions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISuggestions]
       }
       
-      @scala.inline
-      implicit class ISuggestionsMutableBuilder[Self <: ISuggestions] (val x: Self) extends AnyVal {
+      extension [Self <: ISuggestions](x: Self) {
         
-        @scala.inline
-        def setSuggestions(value: js.Array[ISuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+        inline def setSuggestions(value: js.Array[ISuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestionsNull: Self = StObject.set(x, "suggestions", null)
+        inline def setSuggestionsNull: Self = StObject.set(x, "suggestions", null)
         
-        @scala.inline
-        def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+        inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
         
-        @scala.inline
-        def setSuggestionsVarargs(value: ISuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+        inline def setSuggestionsVarargs(value: ISuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
       }
     }
     
@@ -5265,77 +4571,54 @@ object Intent {
     }
     object ITableCard {
       
-      @scala.inline
-      def apply(): ITableCard = {
+      inline def apply(): ITableCard = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ITableCard]
       }
       
-      @scala.inline
-      implicit class ITableCardMutableBuilder[Self <: ITableCard] (val x: Self) extends AnyVal {
+      extension [Self <: ITableCard](x: Self) {
         
-        @scala.inline
-        def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+        inline def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonsNull: Self = StObject.set(x, "buttons", null)
+        inline def setButtonsNull: Self = StObject.set(x, "buttons", null)
         
-        @scala.inline
-        def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+        inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
         
-        @scala.inline
-        def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
         
-        @scala.inline
-        def setColumnProperties(value: js.Array[IColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
+        inline def setColumnProperties(value: js.Array[IColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnPropertiesNull: Self = StObject.set(x, "columnProperties", null)
+        inline def setColumnPropertiesNull: Self = StObject.set(x, "columnProperties", null)
         
-        @scala.inline
-        def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
+        inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
         
-        @scala.inline
-        def setColumnPropertiesVarargs(value: IColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+        inline def setColumnPropertiesVarargs(value: IColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
         
-        @scala.inline
-        def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+        inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageNull: Self = StObject.set(x, "image", null)
+        inline def setImageNull: Self = StObject.set(x, "image", null)
         
-        @scala.inline
-        def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+        inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
         
-        @scala.inline
-        def setRows(value: js.Array[ITableCardRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: js.Array[ITableCardRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsNull: Self = StObject.set(x, "rows", null)
+        inline def setRowsNull: Self = StObject.set(x, "rows", null)
         
-        @scala.inline
-        def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+        inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        @scala.inline
-        def setRowsVarargs(value: ITableCardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: ITableCardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
         
-        @scala.inline
-        def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+        inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
+        inline def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
         
-        @scala.inline
-        def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+        inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleNull: Self = StObject.set(x, "title", null)
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -5347,23 +4630,18 @@ object Intent {
     }
     object ITableCardCell {
       
-      @scala.inline
-      def apply(): ITableCardCell = {
+      inline def apply(): ITableCardCell = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ITableCardCell]
       }
       
-      @scala.inline
-      implicit class ITableCardCellMutableBuilder[Self <: ITableCardCell] (val x: Self) extends AnyVal {
+      extension [Self <: ITableCardCell](x: Self) {
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextNull: Self = StObject.set(x, "text", null)
+        inline def setTextNull: Self = StObject.set(x, "text", null)
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -5378,35 +4656,26 @@ object Intent {
     }
     object ITableCardRow {
       
-      @scala.inline
-      def apply(): ITableCardRow = {
+      inline def apply(): ITableCardRow = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ITableCardRow]
       }
       
-      @scala.inline
-      implicit class ITableCardRowMutableBuilder[Self <: ITableCardRow] (val x: Self) extends AnyVal {
+      extension [Self <: ITableCardRow](x: Self) {
         
-        @scala.inline
-        def setCells(value: js.Array[ITableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+        inline def setCells(value: js.Array[ITableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellsNull: Self = StObject.set(x, "cells", null)
+        inline def setCellsNull: Self = StObject.set(x, "cells", null)
         
-        @scala.inline
-        def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+        inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
         
-        @scala.inline
-        def setCellsVarargs(value: ITableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+        inline def setCellsVarargs(value: ITableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
         
-        @scala.inline
-        def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
+        inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDividerAfterNull: Self = StObject.set(x, "dividerAfter", null)
+        inline def setDividerAfterNull: Self = StObject.set(x, "dividerAfter", null)
         
-        @scala.inline
-        def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
+        inline def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
       }
     }
     
@@ -5418,26 +4687,20 @@ object Intent {
     }
     object IText {
       
-      @scala.inline
-      def apply(): IText = {
+      inline def apply(): IText = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IText]
       }
       
-      @scala.inline
-      implicit class ITextMutableBuilder[Self <: IText] (val x: Self) extends AnyVal {
+      extension [Self <: IText](x: Self) {
         
-        @scala.inline
-        def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextNull: Self = StObject.set(x, "text", null)
+        inline def setTextNull: Self = StObject.set(x, "text", null)
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
         
-        @scala.inline
-        def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+        inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
       }
     }
   }
@@ -5504,10 +4767,8 @@ object Intent {
       * @returns Parameter instance
       */
     /* static member */
-    @scala.inline
-    def create(): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Parameter]
-    @scala.inline
-    def create(properties: IParameter): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def create(): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Parameter]
+    inline def create(properties: IParameter): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Decodes a Parameter message from the specified reader or buffer.
@@ -5518,14 +4779,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
-    @scala.inline
-    def decode(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
+    inline def decode(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def decode(reader: Reader, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
+    inline def decode(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def decode(reader: Uint8Array, length: Double): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Parameter]
     
     /**
       * Decodes a Parameter message from the specified reader or buffer, length delimited.
@@ -5535,10 +4792,8 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def decodeDelimited(reader: Reader): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def decodeDelimited(reader: Uint8Array): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Encodes the specified Parameter message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Parameter.verify|verify} messages.
@@ -5547,10 +4802,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IParameter): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IParameter, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IParameter): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IParameter, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Parameter message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.Parameter.verify|verify} messages.
@@ -5559,10 +4812,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IParameter): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IParameter, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IParameter): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IParameter, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Parameter message from a plain object. Also converts values to their respective internal types.
@@ -5570,8 +4821,7 @@ object Intent {
       * @returns Parameter
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Parameter]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Parameter]
     
     /**
       * Creates a plain object from a Parameter message. Also converts values to other types if specified.
@@ -5580,10 +4830,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Parameter): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Parameter, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Parameter): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Parameter, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Parameter message.
@@ -5591,8 +4839,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a TrainingPhrase. */
@@ -5681,10 +4928,8 @@ object Intent {
         * @returns Part instance
         */
       /* static member */
-      @scala.inline
-      def create(): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Part]
-      @scala.inline
-      def create(properties: IPart): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def create(): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Part]
+      inline def create(properties: IPart): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Decodes a Part message from the specified reader or buffer.
@@ -5695,14 +4940,10 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decode(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
-      @scala.inline
-      def decode(reader: Reader, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
-      @scala.inline
-      def decode(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
-      @scala.inline
-      def decode(reader: Uint8Array, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
+      inline def decode(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def decode(reader: Reader, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
+      inline def decode(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def decode(reader: Uint8Array, length: Double): Part = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Part]
       
       /**
         * Decodes a Part message from the specified reader or buffer, length delimited.
@@ -5712,10 +4953,8 @@ object Intent {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @scala.inline
-      def decodeDelimited(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
-      @scala.inline
-      def decodeDelimited(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def decodeDelimited(reader: Reader): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def decodeDelimited(reader: Uint8Array): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Encodes the specified Part message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.TrainingPhrase.Part.verify|verify} messages.
@@ -5724,10 +4963,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encode(message: IPart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encode(message: IPart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encode(message: IPart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IPart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Part message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.TrainingPhrase.Part.verify|verify} messages.
@@ -5736,10 +4973,8 @@ object Intent {
         * @returns Writer
         */
       /* static member */
-      @scala.inline
-      def encodeDelimited(message: IPart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-      @scala.inline
-      def encodeDelimited(message: IPart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IPart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IPart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Part message from a plain object. Also converts values to their respective internal types.
@@ -5747,8 +4982,7 @@ object Intent {
         * @returns Part
         */
       /* static member */
-      @scala.inline
-      def fromObject(`object`: StringDictionary[js.Any]): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Part]
+      inline def fromObject(`object`: StringDictionary[js.Any]): Part = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Part]
       
       /**
         * Creates a plain object from a Part message. Also converts values to other types if specified.
@@ -5757,10 +4991,8 @@ object Intent {
         * @returns Plain object
         */
       /* static member */
-      @scala.inline
-      def toObject(message: Part): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      @scala.inline
-      def toObject(message: Part, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Part): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Part, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Part message.
@@ -5768,8 +5000,7 @@ object Intent {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @scala.inline
-      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     @js.native
@@ -5807,10 +5038,8 @@ object Intent {
       * @returns TrainingPhrase instance
       */
     /* static member */
-    @scala.inline
-    def create(): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TrainingPhrase]
-    @scala.inline
-    def create(properties: ITrainingPhrase): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def create(): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TrainingPhrase]
+    inline def create(properties: ITrainingPhrase): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Decodes a TrainingPhrase message from the specified reader or buffer.
@@ -5821,14 +5050,10 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
-    @scala.inline
-    def decode(reader: Reader, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
-    @scala.inline
-    def decode(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
+    inline def decode(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def decode(reader: Reader, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
+    inline def decode(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def decode(reader: Uint8Array, length: Double): TrainingPhrase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TrainingPhrase]
     
     /**
       * Decodes a TrainingPhrase message from the specified reader or buffer, length delimited.
@@ -5838,10 +5063,8 @@ object Intent {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def decodeDelimited(reader: Reader): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def decodeDelimited(reader: Uint8Array): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Encodes the specified TrainingPhrase message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.TrainingPhrase.verify|verify} messages.
@@ -5850,10 +5073,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ITrainingPhrase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ITrainingPhrase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ITrainingPhrase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ITrainingPhrase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified TrainingPhrase message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.TrainingPhrase.verify|verify} messages.
@@ -5862,10 +5083,8 @@ object Intent {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ITrainingPhrase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ITrainingPhrase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ITrainingPhrase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ITrainingPhrase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a TrainingPhrase message from a plain object. Also converts values to their respective internal types.
@@ -5873,8 +5092,7 @@ object Intent {
       * @returns TrainingPhrase
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
+    inline def fromObject(`object`: StringDictionary[js.Any]): TrainingPhrase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TrainingPhrase]
     
     /**
       * Creates a plain object from a TrainingPhrase message. Also converts values to other types if specified.
@@ -5883,10 +5101,8 @@ object Intent {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: TrainingPhrase): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: TrainingPhrase, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: TrainingPhrase): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: TrainingPhrase, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a TrainingPhrase message.
@@ -5894,8 +5110,7 @@ object Intent {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a Part. */
     trait IPart extends StObject {
@@ -5914,50 +5129,36 @@ object Intent {
     }
     object IPart {
       
-      @scala.inline
-      def apply(): IPart = {
+      inline def apply(): IPart = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IPart]
       }
       
-      @scala.inline
-      implicit class IPartMutableBuilder[Self <: IPart] (val x: Self) extends AnyVal {
+      extension [Self <: IPart](x: Self) {
         
-        @scala.inline
-        def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+        inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAliasNull: Self = StObject.set(x, "alias", null)
+        inline def setAliasNull: Self = StObject.set(x, "alias", null)
         
-        @scala.inline
-        def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+        inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
         
-        @scala.inline
-        def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+        inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEntityTypeNull: Self = StObject.set(x, "entityType", null)
+        inline def setEntityTypeNull: Self = StObject.set(x, "entityType", null)
         
-        @scala.inline
-        def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+        inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextNull: Self = StObject.set(x, "text", null)
+        inline def setTextNull: Self = StObject.set(x, "text", null)
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
         
-        @scala.inline
-        def setUserDefined(value: Boolean): Self = StObject.set(x, "userDefined", value.asInstanceOf[js.Any])
+        inline def setUserDefined(value: Boolean): Self = StObject.set(x, "userDefined", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserDefinedNull: Self = StObject.set(x, "userDefined", null)
+        inline def setUserDefinedNull: Self = StObject.set(x, "userDefined", null)
         
-        @scala.inline
-        def setUserDefinedUndefined: Self = StObject.set(x, "userDefined", js.undefined)
+        inline def setUserDefinedUndefined: Self = StObject.set(x, "userDefined", js.undefined)
       }
     }
   }
@@ -5997,10 +5198,8 @@ object Intent {
     * @returns Intent instance
     */
   /* static member */
-  @scala.inline
-  def create(): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Intent]
-  @scala.inline
-  def create(properties: IIntent): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def create(): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Intent]
+  inline def create(properties: IIntent): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Decodes an Intent message from the specified reader or buffer.
@@ -6011,14 +5210,10 @@ object Intent {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
-  @scala.inline
-  def decode(reader: Reader, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
-  @scala.inline
-  def decode(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
+  inline def decode(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def decode(reader: Reader, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
+  inline def decode(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def decode(reader: Uint8Array, length: Double): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Intent]
   
   /**
     * Decodes an Intent message from the specified reader or buffer, length delimited.
@@ -6028,10 +5223,8 @@ object Intent {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def decodeDelimited(reader: Reader): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def decodeDelimited(reader: Uint8Array): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Encodes the specified Intent message. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.verify|verify} messages.
@@ -6040,10 +5233,8 @@ object Intent {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IIntent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IIntent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IIntent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IIntent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Intent message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Intent.verify|verify} messages.
@@ -6052,10 +5243,8 @@ object Intent {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IIntent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IIntent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IIntent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IIntent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an Intent message from a plain object. Also converts values to their respective internal types.
@@ -6063,8 +5252,7 @@ object Intent {
     * @returns Intent
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Intent]
+  inline def fromObject(`object`: StringDictionary[js.Any]): Intent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Intent]
   
   /**
     * Creates a plain object from an Intent message. Also converts values to other types if specified.
@@ -6073,10 +5261,8 @@ object Intent {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: Intent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: Intent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Intent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Intent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an Intent message.
@@ -6084,8 +5270,7 @@ object Intent {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a FollowupIntentInfo. */
   trait IFollowupIntentInfo extends StObject {
@@ -6098,32 +5283,24 @@ object Intent {
   }
   object IFollowupIntentInfo {
     
-    @scala.inline
-    def apply(): IFollowupIntentInfo = {
+    inline def apply(): IFollowupIntentInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFollowupIntentInfo]
     }
     
-    @scala.inline
-    implicit class IFollowupIntentInfoMutableBuilder[Self <: IFollowupIntentInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IFollowupIntentInfo](x: Self) {
       
-      @scala.inline
-      def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
+      inline def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowupIntentNameNull: Self = StObject.set(x, "followupIntentName", null)
+      inline def setFollowupIntentNameNull: Self = StObject.set(x, "followupIntentName", null)
       
-      @scala.inline
-      def setFollowupIntentNameUndefined: Self = StObject.set(x, "followupIntentName", js.undefined)
+      inline def setFollowupIntentNameUndefined: Self = StObject.set(x, "followupIntentName", js.undefined)
       
-      @scala.inline
-      def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
+      inline def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentFollowupIntentNameNull: Self = StObject.set(x, "parentFollowupIntentName", null)
+      inline def setParentFollowupIntentNameNull: Self = StObject.set(x, "parentFollowupIntentName", null)
       
-      @scala.inline
-      def setParentFollowupIntentNameUndefined: Self = StObject.set(x, "parentFollowupIntentName", js.undefined)
+      inline def setParentFollowupIntentNameUndefined: Self = StObject.set(x, "parentFollowupIntentName", js.undefined)
     }
   }
   
@@ -6179,151 +5356,104 @@ object Intent {
   }
   object IMessage {
     
-    @scala.inline
-    def apply(): IMessage = {
+    inline def apply(): IMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMessage]
     }
     
-    @scala.inline
-    implicit class IMessageMutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
+    extension [Self <: IMessage](x: Self) {
       
-      @scala.inline
-      def setBasicCard(value: IBasicCard): Self = StObject.set(x, "basicCard", value.asInstanceOf[js.Any])
+      inline def setBasicCard(value: IBasicCard): Self = StObject.set(x, "basicCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasicCardNull: Self = StObject.set(x, "basicCard", null)
+      inline def setBasicCardNull: Self = StObject.set(x, "basicCard", null)
       
-      @scala.inline
-      def setBasicCardUndefined: Self = StObject.set(x, "basicCard", js.undefined)
+      inline def setBasicCardUndefined: Self = StObject.set(x, "basicCard", js.undefined)
       
-      @scala.inline
-      def setBrowseCarouselCard(value: IBrowseCarouselCard): Self = StObject.set(x, "browseCarouselCard", value.asInstanceOf[js.Any])
+      inline def setBrowseCarouselCard(value: IBrowseCarouselCard): Self = StObject.set(x, "browseCarouselCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowseCarouselCardNull: Self = StObject.set(x, "browseCarouselCard", null)
+      inline def setBrowseCarouselCardNull: Self = StObject.set(x, "browseCarouselCard", null)
       
-      @scala.inline
-      def setBrowseCarouselCardUndefined: Self = StObject.set(x, "browseCarouselCard", js.undefined)
+      inline def setBrowseCarouselCardUndefined: Self = StObject.set(x, "browseCarouselCard", js.undefined)
       
-      @scala.inline
-      def setCard(value: ICard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: ICard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardNull: Self = StObject.set(x, "card", null)
+      inline def setCardNull: Self = StObject.set(x, "card", null)
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
       
-      @scala.inline
-      def setCarouselSelect(value: ICarouselSelect): Self = StObject.set(x, "carouselSelect", value.asInstanceOf[js.Any])
+      inline def setCarouselSelect(value: ICarouselSelect): Self = StObject.set(x, "carouselSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselSelectNull: Self = StObject.set(x, "carouselSelect", null)
+      inline def setCarouselSelectNull: Self = StObject.set(x, "carouselSelect", null)
       
-      @scala.inline
-      def setCarouselSelectUndefined: Self = StObject.set(x, "carouselSelect", js.undefined)
+      inline def setCarouselSelectUndefined: Self = StObject.set(x, "carouselSelect", js.undefined)
       
-      @scala.inline
-      def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageNull: Self = StObject.set(x, "image", null)
+      inline def setImageNull: Self = StObject.set(x, "image", null)
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setLinkOutSuggestion(value: ILinkOutSuggestion): Self = StObject.set(x, "linkOutSuggestion", value.asInstanceOf[js.Any])
+      inline def setLinkOutSuggestion(value: ILinkOutSuggestion): Self = StObject.set(x, "linkOutSuggestion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkOutSuggestionNull: Self = StObject.set(x, "linkOutSuggestion", null)
+      inline def setLinkOutSuggestionNull: Self = StObject.set(x, "linkOutSuggestion", null)
       
-      @scala.inline
-      def setLinkOutSuggestionUndefined: Self = StObject.set(x, "linkOutSuggestion", js.undefined)
+      inline def setLinkOutSuggestionUndefined: Self = StObject.set(x, "linkOutSuggestion", js.undefined)
       
-      @scala.inline
-      def setListSelect(value: IListSelect): Self = StObject.set(x, "listSelect", value.asInstanceOf[js.Any])
+      inline def setListSelect(value: IListSelect): Self = StObject.set(x, "listSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListSelectNull: Self = StObject.set(x, "listSelect", null)
+      inline def setListSelectNull: Self = StObject.set(x, "listSelect", null)
       
-      @scala.inline
-      def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
+      inline def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
       
-      @scala.inline
-      def setMediaContent(value: IMediaContent): Self = StObject.set(x, "mediaContent", value.asInstanceOf[js.Any])
+      inline def setMediaContent(value: IMediaContent): Self = StObject.set(x, "mediaContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaContentNull: Self = StObject.set(x, "mediaContent", null)
+      inline def setMediaContentNull: Self = StObject.set(x, "mediaContent", null)
       
-      @scala.inline
-      def setMediaContentUndefined: Self = StObject.set(x, "mediaContent", js.undefined)
+      inline def setMediaContentUndefined: Self = StObject.set(x, "mediaContent", js.undefined)
       
-      @scala.inline
-      def setPayload(value: IStruct): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: IStruct): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadNull: Self = StObject.set(x, "payload", null)
+      inline def setPayloadNull: Self = StObject.set(x, "payload", null)
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setPlatform(
+      inline def setPlatform(
         value: Platform | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.Platform * / any */ String)
       ): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformNull: Self = StObject.set(x, "platform", null)
+      inline def setPlatformNull: Self = StObject.set(x, "platform", null)
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setQuickReplies(value: IQuickReplies): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
+      inline def setQuickReplies(value: IQuickReplies): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuickRepliesNull: Self = StObject.set(x, "quickReplies", null)
+      inline def setQuickRepliesNull: Self = StObject.set(x, "quickReplies", null)
       
-      @scala.inline
-      def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
+      inline def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
       
-      @scala.inline
-      def setSimpleResponses(value: ISimpleResponses): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
+      inline def setSimpleResponses(value: ISimpleResponses): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpleResponsesNull: Self = StObject.set(x, "simpleResponses", null)
+      inline def setSimpleResponsesNull: Self = StObject.set(x, "simpleResponses", null)
       
-      @scala.inline
-      def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
+      inline def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
       
-      @scala.inline
-      def setSuggestions(value: ISuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+      inline def setSuggestions(value: ISuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsNull: Self = StObject.set(x, "suggestions", null)
+      inline def setSuggestionsNull: Self = StObject.set(x, "suggestions", null)
       
-      @scala.inline
-      def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+      inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
       
-      @scala.inline
-      def setTableCard(value: ITableCard): Self = StObject.set(x, "tableCard", value.asInstanceOf[js.Any])
+      inline def setTableCard(value: ITableCard): Self = StObject.set(x, "tableCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableCardNull: Self = StObject.set(x, "tableCard", null)
+      inline def setTableCardNull: Self = StObject.set(x, "tableCard", null)
       
-      @scala.inline
-      def setTableCardUndefined: Self = StObject.set(x, "tableCard", js.undefined)
+      inline def setTableCardUndefined: Self = StObject.set(x, "tableCard", js.undefined)
       
-      @scala.inline
-      def setText(value: IText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: IText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextNull: Self = StObject.set(x, "text", null)
+      inline def setTextNull: Self = StObject.set(x, "text", null)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -6356,89 +5486,62 @@ object Intent {
   }
   object IParameter {
     
-    @scala.inline
-    def apply(): IParameter = {
+    inline def apply(): IParameter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IParameter]
     }
     
-    @scala.inline
-    implicit class IParameterMutableBuilder[Self <: IParameter] (val x: Self) extends AnyVal {
+    extension [Self <: IParameter](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+      inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setEntityTypeDisplayName(value: String): Self = StObject.set(x, "entityTypeDisplayName", value.asInstanceOf[js.Any])
+      inline def setEntityTypeDisplayName(value: String): Self = StObject.set(x, "entityTypeDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityTypeDisplayNameNull: Self = StObject.set(x, "entityTypeDisplayName", null)
+      inline def setEntityTypeDisplayNameNull: Self = StObject.set(x, "entityTypeDisplayName", null)
       
-      @scala.inline
-      def setEntityTypeDisplayNameUndefined: Self = StObject.set(x, "entityTypeDisplayName", js.undefined)
+      inline def setEntityTypeDisplayNameUndefined: Self = StObject.set(x, "entityTypeDisplayName", js.undefined)
       
-      @scala.inline
-      def setIsList(value: Boolean): Self = StObject.set(x, "isList", value.asInstanceOf[js.Any])
+      inline def setIsList(value: Boolean): Self = StObject.set(x, "isList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsListNull: Self = StObject.set(x, "isList", null)
+      inline def setIsListNull: Self = StObject.set(x, "isList", null)
       
-      @scala.inline
-      def setIsListUndefined: Self = StObject.set(x, "isList", js.undefined)
+      inline def setIsListUndefined: Self = StObject.set(x, "isList", js.undefined)
       
-      @scala.inline
-      def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+      inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandatoryNull: Self = StObject.set(x, "mandatory", null)
+      inline def setMandatoryNull: Self = StObject.set(x, "mandatory", null)
       
-      @scala.inline
-      def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+      inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrompts(value: js.Array[String]): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
+      inline def setPrompts(value: js.Array[String]): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptsNull: Self = StObject.set(x, "prompts", null)
+      inline def setPromptsNull: Self = StObject.set(x, "prompts", null)
       
-      @scala.inline
-      def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
+      inline def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
       
-      @scala.inline
-      def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value :_*))
+      inline def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -6461,55 +5564,40 @@ object Intent {
   }
   object ITrainingPhrase {
     
-    @scala.inline
-    def apply(): ITrainingPhrase = {
+    inline def apply(): ITrainingPhrase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITrainingPhrase]
     }
     
-    @scala.inline
-    implicit class ITrainingPhraseMutableBuilder[Self <: ITrainingPhrase] (val x: Self) extends AnyVal {
+    extension [Self <: ITrainingPhrase](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParts(value: js.Array[IPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[IPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsNull: Self = StObject.set(x, "parts", null)
+      inline def setPartsNull: Self = StObject.set(x, "parts", null)
       
-      @scala.inline
-      def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+      inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
       
-      @scala.inline
-      def setPartsVarargs(value: IPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: IPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
       
-      @scala.inline
-      def setTimesAddedCount(value: Double): Self = StObject.set(x, "timesAddedCount", value.asInstanceOf[js.Any])
+      inline def setTimesAddedCount(value: Double): Self = StObject.set(x, "timesAddedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimesAddedCountNull: Self = StObject.set(x, "timesAddedCount", null)
+      inline def setTimesAddedCountNull: Self = StObject.set(x, "timesAddedCount", null)
       
-      @scala.inline
-      def setTimesAddedCountUndefined: Self = StObject.set(x, "timesAddedCount", js.undefined)
+      inline def setTimesAddedCountUndefined: Self = StObject.set(x, "timesAddedCount", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.TrainingPhrase.Type * / any */ String)
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

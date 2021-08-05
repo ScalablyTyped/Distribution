@@ -33,8 +33,7 @@ object pageHeaderUniDriverMod {
   }
   object PageHeaderUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       breadcrumbsText: () => js.Promise[String],
       click: () => js.Promise[Unit],
       clickBackButton: () => js.Promise[Unit],
@@ -53,38 +52,27 @@ object pageHeaderUniDriverMod {
       __obj.asInstanceOf[PageHeaderUniDriver]
     }
     
-    @scala.inline
-    implicit class PageHeaderUniDriverMutableBuilder[Self <: PageHeaderUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: PageHeaderUniDriver](x: Self) {
       
-      @scala.inline
-      def setBreadcrumbsText(value: () => js.Promise[String]): Self = StObject.set(x, "breadcrumbsText", js.Any.fromFunction0(value))
+      inline def setBreadcrumbsText(value: () => js.Promise[String]): Self = StObject.set(x, "breadcrumbsText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickBackButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickBackButton", js.Any.fromFunction0(value))
+      inline def setClickBackButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickBackButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClass(value: String => js.Promise[Boolean]): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => js.Promise[Boolean]): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsActionBarExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isActionBarExists", js.Any.fromFunction0(value))
+      inline def setIsActionBarExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isActionBarExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsBackButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isBackButtonExists", js.Any.fromFunction0(value))
+      inline def setIsBackButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isBackButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsBreadcrumbsExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isBreadcrumbsExists", js.Any.fromFunction0(value))
+      inline def setIsBreadcrumbsExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isBreadcrumbsExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSubtitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSubtitleExists", js.Any.fromFunction0(value))
+      inline def setIsSubtitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSubtitleExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTitleExists", js.Any.fromFunction0(value))
+      inline def setIsTitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTitleExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "subtitleText", js.Any.fromFunction0(value))
+      inline def setSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "subtitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "titleText", js.Any.fromFunction0(value))
+      inline def setTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "titleText", js.Any.fromFunction0(value))
     }
   }
 }

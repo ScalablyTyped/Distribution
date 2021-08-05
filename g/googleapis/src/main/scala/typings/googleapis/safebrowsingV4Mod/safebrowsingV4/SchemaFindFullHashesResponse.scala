@@ -26,34 +26,25 @@ trait SchemaFindFullHashesResponse extends StObject {
 }
 object SchemaFindFullHashesResponse {
   
-  @scala.inline
-  def apply(): SchemaFindFullHashesResponse = {
+  inline def apply(): SchemaFindFullHashesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFindFullHashesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaFindFullHashesResponseMutableBuilder[Self <: SchemaFindFullHashesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFindFullHashesResponse](x: Self) {
     
-    @scala.inline
-    def setMatches(value: js.Array[SchemaThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[SchemaThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    @scala.inline
-    def setMatchesVarargs(value: SchemaThreatMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: SchemaThreatMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimumWaitDuration(value: String): Self = StObject.set(x, "minimumWaitDuration", value.asInstanceOf[js.Any])
+    inline def setMinimumWaitDuration(value: String): Self = StObject.set(x, "minimumWaitDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumWaitDurationUndefined: Self = StObject.set(x, "minimumWaitDuration", js.undefined)
+    inline def setMinimumWaitDurationUndefined: Self = StObject.set(x, "minimumWaitDuration", js.undefined)
     
-    @scala.inline
-    def setNegativeCacheDuration(value: String): Self = StObject.set(x, "negativeCacheDuration", value.asInstanceOf[js.Any])
+    inline def setNegativeCacheDuration(value: String): Self = StObject.set(x, "negativeCacheDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeCacheDurationUndefined: Self = StObject.set(x, "negativeCacheDuration", js.undefined)
+    inline def setNegativeCacheDurationUndefined: Self = StObject.set(x, "negativeCacheDuration", js.undefined)
   }
 }

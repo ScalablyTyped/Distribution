@@ -18,25 +18,19 @@ trait Scope extends StObject {
 }
 object Scope {
   
-  @scala.inline
-  def apply(): Scope = {
+  inline def apply(): Scope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scope]
   }
   
-  @scala.inline
-  implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+  extension [Self <: Scope](x: Self) {
     
-    @scala.inline
-    def setKey(value: ScopeType): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ScopeType): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: ScopeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ScopeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

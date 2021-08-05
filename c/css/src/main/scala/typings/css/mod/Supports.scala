@@ -17,28 +17,21 @@ trait Supports
 }
 object Supports {
   
-  @scala.inline
-  def apply(): Supports = {
+  inline def apply(): Supports = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Supports]
   }
   
-  @scala.inline
-  implicit class SupportsMutableBuilder[Self <: Supports] (val x: Self) extends AnyVal {
+  extension [Self <: Supports](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+    inline def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
+    inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
   }
 }

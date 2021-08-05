@@ -19,8 +19,7 @@ trait ISyndicationPerson
 }
 object ISyndicationPerson {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeExtensions: IVector[SyndicationAttribute],
     baseUri: Uri,
     elementExtensions: IVector[ISyndicationNode],
@@ -37,16 +36,12 @@ object ISyndicationPerson {
     __obj.asInstanceOf[ISyndicationPerson]
   }
   
-  @scala.inline
-  implicit class ISyndicationPersonMutableBuilder[Self <: ISyndicationPerson] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationPerson](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

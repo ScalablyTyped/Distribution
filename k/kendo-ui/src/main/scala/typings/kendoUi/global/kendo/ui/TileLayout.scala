@@ -21,13 +21,11 @@ object TileLayout {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TileLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TileLayout]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.TileLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TileLayout]
   
   /* static member */
   @JSGlobal("kendo.ui.TileLayout.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.TileLayout = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.TileLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.TileLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

@@ -18,7 +18,7 @@ trait AttachmentSelection extends StObject {
   
   val Location: OlSelectionLocation
   
-  @JSName("Outlook.AttachmentSelection_typekey")
+  /* private */ @JSName("Outlook.AttachmentSelection_typekey")
   var OutlookDotAttachmentSelection_typekey: AttachmentSelection
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait AttachmentSelection extends StObject {
 }
 object AttachmentSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
@@ -44,34 +43,24 @@ object AttachmentSelection {
     __obj.asInstanceOf[AttachmentSelection]
   }
   
-  @scala.inline
-  implicit class AttachmentSelectionMutableBuilder[Self <: AttachmentSelection] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentSelection](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSelection(value: OlSelectionContents => Selection): Self = StObject.set(x, "GetSelection", js.Any.fromFunction1(value))
+    inline def setGetSelection(value: OlSelectionContents => Selection): Self = StObject.set(x, "GetSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: js.Any => Attachment): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Attachment): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocation(value: OlSelectionLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: OlSelectionLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotAttachmentSelection_typekey(value: AttachmentSelection): Self = StObject.set(x, "Outlook.AttachmentSelection_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotAttachmentSelection_typekey(value: AttachmentSelection): Self = StObject.set(x, "Outlook.AttachmentSelection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

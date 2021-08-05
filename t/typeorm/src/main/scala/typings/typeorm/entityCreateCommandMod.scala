@@ -33,7 +33,6 @@ object entityCreateCommandMod {
     /**
       * Gets contents of the entity file.
       */
-    @scala.inline
-    def getTemplate(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getTemplate(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

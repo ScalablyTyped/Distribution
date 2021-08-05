@@ -14,25 +14,19 @@ trait ReusableConfigWrapper extends StObject {
 }
 object ReusableConfigWrapper {
   
-  @scala.inline
-  def apply(): ReusableConfigWrapper = {
+  inline def apply(): ReusableConfigWrapper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReusableConfigWrapper]
   }
   
-  @scala.inline
-  implicit class ReusableConfigWrapperMutableBuilder[Self <: ReusableConfigWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: ReusableConfigWrapper](x: Self) {
     
-    @scala.inline
-    def setReusableConfig(value: String): Self = StObject.set(x, "reusableConfig", value.asInstanceOf[js.Any])
+    inline def setReusableConfig(value: String): Self = StObject.set(x, "reusableConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReusableConfigUndefined: Self = StObject.set(x, "reusableConfig", js.undefined)
+    inline def setReusableConfigUndefined: Self = StObject.set(x, "reusableConfig", js.undefined)
     
-    @scala.inline
-    def setReusableConfigValues(value: ReusableConfigValues): Self = StObject.set(x, "reusableConfigValues", value.asInstanceOf[js.Any])
+    inline def setReusableConfigValues(value: ReusableConfigValues): Self = StObject.set(x, "reusableConfigValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReusableConfigValuesUndefined: Self = StObject.set(x, "reusableConfigValues", js.undefined)
+    inline def setReusableConfigValuesUndefined: Self = StObject.set(x, "reusableConfigValues", js.undefined)
   }
 }

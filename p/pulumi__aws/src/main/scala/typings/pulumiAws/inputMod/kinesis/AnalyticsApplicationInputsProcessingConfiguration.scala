@@ -14,16 +14,13 @@ trait AnalyticsApplicationInputsProcessingConfiguration extends StObject {
 }
 object AnalyticsApplicationInputsProcessingConfiguration {
   
-  @scala.inline
-  def apply(lambda: Input[AnalyticsApplicationInputsProcessingConfigurationLambda]): AnalyticsApplicationInputsProcessingConfiguration = {
+  inline def apply(lambda: Input[AnalyticsApplicationInputsProcessingConfigurationLambda]): AnalyticsApplicationInputsProcessingConfiguration = {
     val __obj = js.Dynamic.literal(lambda = lambda.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationInputsProcessingConfiguration]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationInputsProcessingConfigurationMutableBuilder[Self <: AnalyticsApplicationInputsProcessingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationInputsProcessingConfiguration](x: Self) {
     
-    @scala.inline
-    def setLambda(value: Input[AnalyticsApplicationInputsProcessingConfigurationLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    inline def setLambda(value: Input[AnalyticsApplicationInputsProcessingConfigurationLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
   }
 }

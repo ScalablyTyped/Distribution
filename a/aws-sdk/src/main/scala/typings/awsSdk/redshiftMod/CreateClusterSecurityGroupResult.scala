@@ -10,19 +10,15 @@ trait CreateClusterSecurityGroupResult extends StObject {
 }
 object CreateClusterSecurityGroupResult {
   
-  @scala.inline
-  def apply(): CreateClusterSecurityGroupResult = {
+  inline def apply(): CreateClusterSecurityGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClusterSecurityGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateClusterSecurityGroupResultMutableBuilder[Self <: CreateClusterSecurityGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterSecurityGroupResult](x: Self) {
     
-    @scala.inline
-    def setClusterSecurityGroup(value: ClusterSecurityGroup): Self = StObject.set(x, "ClusterSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setClusterSecurityGroup(value: ClusterSecurityGroup): Self = StObject.set(x, "ClusterSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterSecurityGroupUndefined: Self = StObject.set(x, "ClusterSecurityGroup", js.undefined)
+    inline def setClusterSecurityGroupUndefined: Self = StObject.set(x, "ClusterSecurityGroup", js.undefined)
   }
 }

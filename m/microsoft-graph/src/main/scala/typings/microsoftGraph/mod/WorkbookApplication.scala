@@ -13,19 +13,15 @@ trait WorkbookApplication
 }
 object WorkbookApplication {
   
-  @scala.inline
-  def apply(): WorkbookApplication = {
+  inline def apply(): WorkbookApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookApplication]
   }
   
-  @scala.inline
-  implicit class WorkbookApplicationMutableBuilder[Self <: WorkbookApplication] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookApplication](x: Self) {
     
-    @scala.inline
-    def setCalculationMode(value: String): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
+    inline def setCalculationMode(value: String): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
+    inline def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
   }
 }

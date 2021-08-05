@@ -31,29 +31,22 @@ trait WeakValidationMapListSele extends StObject {
 }
 object WeakValidationMapListSele {
   
-  @scala.inline
-  def apply(): WeakValidationMapListSele = {
+  inline def apply(): WeakValidationMapListSele = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapListSele]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapListSeleMutableBuilder[Self <: WeakValidationMapListSele] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapListSele](x: Self) {
     
-    @scala.inline
-    def setCheckBoxAriaLabel(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "checkBoxAriaLabel", value.asInstanceOf[js.Any])
+    inline def setCheckBoxAriaLabel(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "checkBoxAriaLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckBoxAriaLabelUndefined: Self = StObject.set(x, "checkBoxAriaLabel", js.undefined)
+    inline def setCheckBoxAriaLabelUndefined: Self = StObject.set(x, "checkBoxAriaLabel", js.undefined)
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setOnChange(
+    inline def setOnChange(
       value: Validator[
           js.UndefOr[
             (js.Function2[
@@ -65,13 +58,10 @@ object WeakValidationMapListSele {
         ]
     ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setSelected(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

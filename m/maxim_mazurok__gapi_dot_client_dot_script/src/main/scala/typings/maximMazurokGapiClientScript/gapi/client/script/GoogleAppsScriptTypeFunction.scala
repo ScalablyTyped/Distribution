@@ -11,19 +11,15 @@ trait GoogleAppsScriptTypeFunction extends StObject {
 }
 object GoogleAppsScriptTypeFunction {
   
-  @scala.inline
-  def apply(): GoogleAppsScriptTypeFunction = {
+  inline def apply(): GoogleAppsScriptTypeFunction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsScriptTypeFunction]
   }
   
-  @scala.inline
-  implicit class GoogleAppsScriptTypeFunctionMutableBuilder[Self <: GoogleAppsScriptTypeFunction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsScriptTypeFunction](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

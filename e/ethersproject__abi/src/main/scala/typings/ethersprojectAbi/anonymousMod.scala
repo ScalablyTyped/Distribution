@@ -12,6 +12,6 @@ object anonymousMod {
   class AnonymousCoder protected () extends Coder {
     def this(coder: Coder) = this()
     
-    var coder: js.Any = js.native
+    /* private */ var coder: js.Any = js.native
   }
 }

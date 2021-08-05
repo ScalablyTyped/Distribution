@@ -17,19 +17,15 @@ trait SchemaImportProductSetsInputConfig extends StObject {
 }
 object SchemaImportProductSetsInputConfig {
   
-  @scala.inline
-  def apply(): SchemaImportProductSetsInputConfig = {
+  inline def apply(): SchemaImportProductSetsInputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportProductSetsInputConfig]
   }
   
-  @scala.inline
-  implicit class SchemaImportProductSetsInputConfigMutableBuilder[Self <: SchemaImportProductSetsInputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportProductSetsInputConfig](x: Self) {
     
-    @scala.inline
-    def setGcsSource(value: SchemaImportProductSetsGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: SchemaImportProductSetsGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

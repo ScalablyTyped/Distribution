@@ -73,8 +73,7 @@ trait PaymentMethodCard extends StObject {
 }
 object PaymentMethodCard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brand: paymentMethodCardBrand,
     checks: Addressline1check,
     country: String,
@@ -89,46 +88,32 @@ object PaymentMethodCard {
     __obj.asInstanceOf[PaymentMethodCard]
   }
   
-  @scala.inline
-  implicit class PaymentMethodCardMutableBuilder[Self <: PaymentMethodCard] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodCard](x: Self) {
     
-    @scala.inline
-    def setBrand(value: paymentMethodCardBrand): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: paymentMethodCardBrand): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecks(value: Addressline1check): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+    inline def setChecks(value: Addressline1check): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
+    inline def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
+    inline def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunding(value: fundingType): Self = StObject.set(x, "funding", value.asInstanceOf[js.Any])
+    inline def setFunding(value: fundingType): Self = StObject.set(x, "funding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerated_from(value: Charge): Self = StObject.set(x, "generated_from", value.asInstanceOf[js.Any])
+    inline def setGenerated_from(value: Charge): Self = StObject.set(x, "generated_from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
+    inline def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThree_d_secure_usage(value: Supported): Self = StObject.set(x, "three_d_secure_usage", value.asInstanceOf[js.Any])
+    inline def setThree_d_secure_usage(value: Supported): Self = StObject.set(x, "three_d_secure_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThree_d_secure_usageUndefined: Self = StObject.set(x, "three_d_secure_usage", js.undefined)
+    inline def setThree_d_secure_usageUndefined: Self = StObject.set(x, "three_d_secure_usage", js.undefined)
     
-    @scala.inline
-    def setWallet(value: Amexexpresscheckout): Self = StObject.set(x, "wallet", value.asInstanceOf[js.Any])
+    inline def setWallet(value: Amexexpresscheckout): Self = StObject.set(x, "wallet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalletNull: Self = StObject.set(x, "wallet", null)
+    inline def setWalletNull: Self = StObject.set(x, "wallet", null)
   }
 }

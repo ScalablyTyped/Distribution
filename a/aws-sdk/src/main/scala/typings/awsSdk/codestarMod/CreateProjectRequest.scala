@@ -43,52 +43,37 @@ trait CreateProjectRequest extends StObject {
 }
 object CreateProjectRequest {
   
-  @scala.inline
-  def apply(id: ProjectId, name: ProjectName): CreateProjectRequest = {
+  inline def apply(id: ProjectId, name: ProjectName): CreateProjectRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProjectRequest]
   }
   
-  @scala.inline
-  implicit class CreateProjectRequestMutableBuilder[Self <: CreateProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProjectRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setDescription(value: ProjectDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ProjectDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ProjectName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProjectName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCode(value: SourceCode): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
+    inline def setSourceCode(value: SourceCode): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeUndefined: Self = StObject.set(x, "sourceCode", js.undefined)
+    inline def setSourceCodeUndefined: Self = StObject.set(x, "sourceCode", js.undefined)
     
-    @scala.inline
-    def setSourceCodeVarargs(value: Code*): Self = StObject.set(x, "sourceCode", js.Array(value :_*))
+    inline def setSourceCodeVarargs(value: Code*): Self = StObject.set(x, "sourceCode", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setToolchain(value: Toolchain): Self = StObject.set(x, "toolchain", value.asInstanceOf[js.Any])
+    inline def setToolchain(value: Toolchain): Self = StObject.set(x, "toolchain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolchainUndefined: Self = StObject.set(x, "toolchain", js.undefined)
+    inline def setToolchainUndefined: Self = StObject.set(x, "toolchain", js.undefined)
   }
 }

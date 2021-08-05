@@ -12,17 +12,14 @@ object CompilerDiagnostics {
   }
   object IDiagnosticWriter {
     
-    @scala.inline
-    def apply(Alert: String => Unit): IDiagnosticWriter = {
+    inline def apply(Alert: String => Unit): IDiagnosticWriter = {
       val __obj = js.Dynamic.literal(Alert = js.Any.fromFunction1(Alert))
       __obj.asInstanceOf[IDiagnosticWriter]
     }
     
-    @scala.inline
-    implicit class IDiagnosticWriterMutableBuilder[Self <: IDiagnosticWriter] (val x: Self) extends AnyVal {
+    extension [Self <: IDiagnosticWriter](x: Self) {
       
-      @scala.inline
-      def setAlert(value: String => Unit): Self = StObject.set(x, "Alert", js.Any.fromFunction1(value))
+      inline def setAlert(value: String => Unit): Self = StObject.set(x, "Alert", js.Any.fromFunction1(value))
     }
   }
 }

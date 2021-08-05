@@ -44,37 +44,27 @@ trait ListLoadOptions extends StObject {
 }
 object ListLoadOptions {
   
-  @scala.inline
-  def apply(): ListLoadOptions = {
+  inline def apply(): ListLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLoadOptions]
   }
   
-  @scala.inline
-  implicit class ListLoadOptionsMutableBuilder[Self <: ListLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLevelExistences(value: Boolean): Self = StObject.set(x, "levelExistences", value.asInstanceOf[js.Any])
+    inline def setLevelExistences(value: Boolean): Self = StObject.set(x, "levelExistences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelExistencesUndefined: Self = StObject.set(x, "levelExistences", js.undefined)
+    inline def setLevelExistencesUndefined: Self = StObject.set(x, "levelExistences", js.undefined)
     
-    @scala.inline
-    def setLevelTypes(value: Boolean): Self = StObject.set(x, "levelTypes", value.asInstanceOf[js.Any])
+    inline def setLevelTypes(value: Boolean): Self = StObject.set(x, "levelTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelTypesUndefined: Self = StObject.set(x, "levelTypes", js.undefined)
+    inline def setLevelTypesUndefined: Self = StObject.set(x, "levelTypes", js.undefined)
   }
 }

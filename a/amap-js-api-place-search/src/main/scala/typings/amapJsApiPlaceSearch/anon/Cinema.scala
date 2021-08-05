@@ -16,19 +16,15 @@ trait Cinema extends StObject {
 }
 object Cinema {
   
-  @scala.inline
-  def apply(cinema: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Cinema): Cinema = {
+  inline def apply(cinema: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Cinema): Cinema = {
     val __obj = js.Dynamic.literal(cinema = cinema.asInstanceOf[js.Any], deep_type = "CINEMA")
     __obj.asInstanceOf[Cinema]
   }
   
-  @scala.inline
-  implicit class CinemaMutableBuilder[Self <: Cinema] (val x: Self) extends AnyVal {
+  extension [Self <: Cinema](x: Self) {
     
-    @scala.inline
-    def setCinema(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Cinema): Self = StObject.set(x, "cinema", value.asInstanceOf[js.Any])
+    inline def setCinema(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Cinema): Self = StObject.set(x, "cinema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeep_type(value: CINEMA): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
+    inline def setDeep_type(value: CINEMA): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
   }
 }

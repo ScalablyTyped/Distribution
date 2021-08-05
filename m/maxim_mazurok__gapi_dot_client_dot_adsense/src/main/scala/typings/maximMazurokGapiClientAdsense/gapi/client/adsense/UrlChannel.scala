@@ -17,31 +17,23 @@ trait UrlChannel extends StObject {
 }
 object UrlChannel {
   
-  @scala.inline
-  def apply(): UrlChannel = {
+  inline def apply(): UrlChannel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlChannel]
   }
   
-  @scala.inline
-  implicit class UrlChannelMutableBuilder[Self <: UrlChannel] (val x: Self) extends AnyVal {
+  extension [Self <: UrlChannel](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+    inline def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
+    inline def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait ReshapeEventInfo
 }
 object ReshapeEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -35,10 +34,8 @@ object ReshapeEventInfo {
     __obj.asInstanceOf[ReshapeEventInfo]
   }
   
-  @scala.inline
-  implicit class ReshapeEventInfoMutableBuilder[Self <: ReshapeEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReshapeEventInfo](x: Self) {
     
-    @scala.inline
-    def setType(value: `reshape-start` | reshape | `reshape-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `reshape-start` | reshape | `reshape-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

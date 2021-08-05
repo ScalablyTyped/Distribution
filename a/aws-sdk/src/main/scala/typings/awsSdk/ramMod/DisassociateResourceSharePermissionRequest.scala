@@ -23,25 +23,19 @@ trait DisassociateResourceSharePermissionRequest extends StObject {
 }
 object DisassociateResourceSharePermissionRequest {
   
-  @scala.inline
-  def apply(permissionArn: String, resourceShareArn: String): DisassociateResourceSharePermissionRequest = {
+  inline def apply(permissionArn: String, resourceShareArn: String): DisassociateResourceSharePermissionRequest = {
     val __obj = js.Dynamic.literal(permissionArn = permissionArn.asInstanceOf[js.Any], resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateResourceSharePermissionRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateResourceSharePermissionRequestMutableBuilder[Self <: DisassociateResourceSharePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateResourceSharePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setPermissionArn(value: String): Self = StObject.set(x, "permissionArn", value.asInstanceOf[js.Any])
+    inline def setPermissionArn(value: String): Self = StObject.set(x, "permissionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }
 }

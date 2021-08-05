@@ -59,43 +59,31 @@ trait ChartErrorBarsUpdateData extends StObject {
 }
 object ChartErrorBarsUpdateData {
   
-  @scala.inline
-  def apply(): ChartErrorBarsUpdateData = {
+  inline def apply(): ChartErrorBarsUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartErrorBarsUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartErrorBarsUpdateDataMutableBuilder[Self <: ChartErrorBarsUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartErrorBarsUpdateData](x: Self) {
     
-    @scala.inline
-    def setEndStyleCap(value: Boolean): Self = StObject.set(x, "endStyleCap", value.asInstanceOf[js.Any])
+    inline def setEndStyleCap(value: Boolean): Self = StObject.set(x, "endStyleCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndStyleCapUndefined: Self = StObject.set(x, "endStyleCap", js.undefined)
+    inline def setEndStyleCapUndefined: Self = StObject.set(x, "endStyleCap", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartErrorBarsFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartErrorBarsFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setInclude(value: ChartErrorBarsInclude | Both | MinusValues | PlusValues): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: ChartErrorBarsInclude | Both | MinusValues | PlusValues): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setType(value: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -11,17 +11,14 @@ trait `158` extends StObject {
 }
 object `158` {
   
-  @scala.inline
-  def apply(): `158` = {
+  inline def apply(): `158` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("EnumStringBody")
     __obj.asInstanceOf[`158`]
   }
   
-  @scala.inline
-  implicit class `158MutableBuilder`[Self <: `158`] (val x: Self) extends AnyVal {
+  extension [Self <: `158`](x: Self) {
     
-    @scala.inline
-    def setType(value: EnumStringBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EnumStringBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

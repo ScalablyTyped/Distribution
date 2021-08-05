@@ -10,6 +10,5 @@ object disableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
+  inline def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
 }

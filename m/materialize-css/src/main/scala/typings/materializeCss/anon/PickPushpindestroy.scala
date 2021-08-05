@@ -11,19 +11,15 @@ trait PickPushpindestroy extends StObject {
 }
 object PickPushpindestroy {
   
-  @scala.inline
-  def apply(): PickPushpindestroy = {
+  inline def apply(): PickPushpindestroy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickPushpindestroy]
   }
   
-  @scala.inline
-  implicit class PickPushpindestroyMutableBuilder[Self <: PickPushpindestroy] (val x: Self) extends AnyVal {
+  extension [Self <: PickPushpindestroy](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
   }
 }

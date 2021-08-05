@@ -9,8 +9,7 @@ trait MediaProtectionServiceCompletion
      with IMediaProtectionServiceCompletion
 object MediaProtectionServiceCompletion {
   
-  @scala.inline
-  def apply(complete: Boolean => Unit): MediaProtectionServiceCompletion = {
+  inline def apply(complete: Boolean => Unit): MediaProtectionServiceCompletion = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[MediaProtectionServiceCompletion]
   }

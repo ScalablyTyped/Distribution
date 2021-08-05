@@ -21,19 +21,15 @@ trait ContainerStateWaiting extends StObject {
 }
 object ContainerStateWaiting {
   
-  @scala.inline
-  def apply(message: String, reason: String): ContainerStateWaiting = {
+  inline def apply(message: String, reason: String): ContainerStateWaiting = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerStateWaiting]
   }
   
-  @scala.inline
-  implicit class ContainerStateWaitingMutableBuilder[Self <: ContainerStateWaiting] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerStateWaiting](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

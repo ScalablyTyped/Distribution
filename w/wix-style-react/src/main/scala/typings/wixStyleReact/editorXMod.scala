@@ -11,6 +11,5 @@ object editorXMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def theme(): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")().asInstanceOf[ThemeInterface]
+  inline def theme(): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")().asInstanceOf[ThemeInterface]
 }

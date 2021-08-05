@@ -14,6 +14,5 @@ object withSafeTimeoutMod {
   val ^ : js.Any = js.native
   
   // prettier-ignore
-  @scala.inline
-  def default[T /* <: ComponentType[js.Any] */](component: T): ComponentType[Omit[js.Any, setTimeout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, setTimeout]]]
+  inline def default[T /* <: ComponentType[js.Any] */](component: T): ComponentType[Omit[js.Any, setTimeout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, setTimeout]]]
 }

@@ -41,8 +41,7 @@ trait ServicePort extends StObject {
 }
 object ServicePort {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appProtocol: String,
     name: String,
     nodePort: Double,
@@ -54,25 +53,18 @@ object ServicePort {
     __obj.asInstanceOf[ServicePort]
   }
   
-  @scala.inline
-  implicit class ServicePortMutableBuilder[Self <: ServicePort] (val x: Self) extends AnyVal {
+  extension [Self <: ServicePort](x: Self) {
     
-    @scala.inline
-    def setAppProtocol(value: String): Self = StObject.set(x, "appProtocol", value.asInstanceOf[js.Any])
+    inline def setAppProtocol(value: String): Self = StObject.set(x, "appProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePort(value: Double): Self = StObject.set(x, "nodePort", value.asInstanceOf[js.Any])
+    inline def setNodePort(value: Double): Self = StObject.set(x, "nodePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPort(value: Double | String): Self = StObject.set(x, "targetPort", value.asInstanceOf[js.Any])
+    inline def setTargetPort(value: Double | String): Self = StObject.set(x, "targetPort", value.asInstanceOf[js.Any])
   }
 }

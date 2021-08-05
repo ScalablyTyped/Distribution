@@ -16,8 +16,7 @@ trait FlowNode
 }
 object FlowNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -32,25 +31,18 @@ object FlowNode {
     __obj.asInstanceOf[FlowNode]
   }
   
-  @scala.inline
-  implicit class FlowNodeMutableBuilder[Self <: FlowNode] (val x: Self) extends AnyVal {
+  extension [Self <: FlowNode](x: Self) {
     
-    @scala.inline
-    def setIncoming(value: js.Array[SequenceFlow]): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
+    inline def setIncoming(value: js.Array[SequenceFlow]): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomingVarargs(value: SequenceFlow*): Self = StObject.set(x, "incoming", js.Array(value :_*))
+    inline def setIncomingVarargs(value: SequenceFlow*): Self = StObject.set(x, "incoming", js.Array(value :_*))
     
-    @scala.inline
-    def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
+    inline def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
+    inline def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
     
-    @scala.inline
-    def setOutgoing(value: js.Array[SequenceFlow]): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
+    inline def setOutgoing(value: js.Array[SequenceFlow]): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoingVarargs(value: SequenceFlow*): Self = StObject.set(x, "outgoing", js.Array(value :_*))
+    inline def setOutgoingVarargs(value: SequenceFlow*): Self = StObject.set(x, "outgoing", js.Array(value :_*))
   }
 }

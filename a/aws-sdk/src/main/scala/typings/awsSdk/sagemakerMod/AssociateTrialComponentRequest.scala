@@ -18,19 +18,15 @@ trait AssociateTrialComponentRequest extends StObject {
 }
 object AssociateTrialComponentRequest {
   
-  @scala.inline
-  def apply(TrialComponentName: ExperimentEntityName, TrialName: ExperimentEntityName): AssociateTrialComponentRequest = {
+  inline def apply(TrialComponentName: ExperimentEntityName, TrialName: ExperimentEntityName): AssociateTrialComponentRequest = {
     val __obj = js.Dynamic.literal(TrialComponentName = TrialComponentName.asInstanceOf[js.Any], TrialName = TrialName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateTrialComponentRequest]
   }
   
-  @scala.inline
-  implicit class AssociateTrialComponentRequestMutableBuilder[Self <: AssociateTrialComponentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateTrialComponentRequest](x: Self) {
     
-    @scala.inline
-    def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
+    inline def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
+    inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
   }
 }

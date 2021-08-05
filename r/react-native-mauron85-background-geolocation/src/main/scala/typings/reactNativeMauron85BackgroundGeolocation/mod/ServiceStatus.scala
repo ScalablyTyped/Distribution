@@ -25,22 +25,17 @@ trait ServiceStatus extends StObject {
 }
 object ServiceStatus {
   
-  @scala.inline
-  def apply(authorization: AuthorizationStatus, isRunning: Boolean, locationServicesEnabled: Boolean): ServiceStatus = {
+  inline def apply(authorization: AuthorizationStatus, isRunning: Boolean, locationServicesEnabled: Boolean): ServiceStatus = {
     val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], isRunning = isRunning.asInstanceOf[js.Any], locationServicesEnabled = locationServicesEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceStatus]
   }
   
-  @scala.inline
-  implicit class ServiceStatusMutableBuilder[Self <: ServiceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceStatus](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: AuthorizationStatus): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: AuthorizationStatus): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+    inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationServicesEnabled(value: Boolean): Self = StObject.set(x, "locationServicesEnabled", value.asInstanceOf[js.Any])
+    inline def setLocationServicesEnabled(value: Boolean): Self = StObject.set(x, "locationServicesEnabled", value.asInstanceOf[js.Any])
   }
 }

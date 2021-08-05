@@ -35,37 +35,27 @@ trait SchemaElection extends StObject {
 }
 object SchemaElection {
   
-  @scala.inline
-  def apply(): SchemaElection = {
+  inline def apply(): SchemaElection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaElection]
   }
   
-  @scala.inline
-  implicit class SchemaElectionMutableBuilder[Self <: SchemaElection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaElection](x: Self) {
     
-    @scala.inline
-    def setElectionDay(value: String): Self = StObject.set(x, "electionDay", value.asInstanceOf[js.Any])
+    inline def setElectionDay(value: String): Self = StObject.set(x, "electionDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElectionDayUndefined: Self = StObject.set(x, "electionDay", js.undefined)
+    inline def setElectionDayUndefined: Self = StObject.set(x, "electionDay", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOcdDivisionId(value: String): Self = StObject.set(x, "ocdDivisionId", value.asInstanceOf[js.Any])
+    inline def setOcdDivisionId(value: String): Self = StObject.set(x, "ocdDivisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcdDivisionIdUndefined: Self = StObject.set(x, "ocdDivisionId", js.undefined)
+    inline def setOcdDivisionIdUndefined: Self = StObject.set(x, "ocdDivisionId", js.undefined)
   }
 }

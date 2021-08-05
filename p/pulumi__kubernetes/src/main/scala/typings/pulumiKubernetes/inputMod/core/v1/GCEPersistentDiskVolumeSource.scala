@@ -34,34 +34,25 @@ trait GCEPersistentDiskVolumeSource extends StObject {
 }
 object GCEPersistentDiskVolumeSource {
   
-  @scala.inline
-  def apply(pdName: Input[String]): GCEPersistentDiskVolumeSource = {
+  inline def apply(pdName: Input[String]): GCEPersistentDiskVolumeSource = {
     val __obj = js.Dynamic.literal(pdName = pdName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GCEPersistentDiskVolumeSource]
   }
   
-  @scala.inline
-  implicit class GCEPersistentDiskVolumeSourceMutableBuilder[Self <: GCEPersistentDiskVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: GCEPersistentDiskVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setPartition(value: Input[Double]): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Input[Double]): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
-    @scala.inline
-    def setPdName(value: Input[String]): Self = StObject.set(x, "pdName", value.asInstanceOf[js.Any])
+    inline def setPdName(value: Input[String]): Self = StObject.set(x, "pdName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

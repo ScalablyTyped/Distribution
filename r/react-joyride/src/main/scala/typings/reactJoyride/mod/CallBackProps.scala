@@ -24,8 +24,7 @@ trait CallBackProps extends StObject {
 }
 object CallBackProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: String,
     controlled: Boolean,
     index: Double,
@@ -40,31 +39,22 @@ object CallBackProps {
     __obj.asInstanceOf[CallBackProps]
   }
   
-  @scala.inline
-  implicit class CallBackPropsMutableBuilder[Self <: CallBackProps] (val x: Self) extends AnyVal {
+  extension [Self <: CallBackProps](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlled(value: Boolean): Self = StObject.set(x, "controlled", value.asInstanceOf[js.Any])
+    inline def setControlled(value: Boolean): Self = StObject.set(x, "controlled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycle(value: String): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: String): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: valueof[status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: valueof[status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getMinPriority(Priority: FromName, priorities: StringDictionary[Boolean], defaultPriority: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMinPriority")(Priority.asInstanceOf[js.Any], priorities.asInstanceOf[js.Any], defaultPriority.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getMinPriority(Priority: FromName, priorities: StringDictionary[Boolean], defaultPriority: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMinPriority")(Priority.asInstanceOf[js.Any], priorities.asInstanceOf[js.Any], defaultPriority.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

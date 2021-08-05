@@ -24,22 +24,17 @@ trait INxSimpleValue extends StObject {
 }
 object INxSimpleValue {
   
-  @scala.inline
-  def apply(qNum: Double): INxSimpleValue = {
+  inline def apply(qNum: Double): INxSimpleValue = {
     val __obj = js.Dynamic.literal(qNum = qNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxSimpleValue]
   }
   
-  @scala.inline
-  implicit class INxSimpleValueMutableBuilder[Self <: INxSimpleValue] (val x: Self) extends AnyVal {
+  extension [Self <: INxSimpleValue](x: Self) {
     
-    @scala.inline
-    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
+    inline def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
   }
 }

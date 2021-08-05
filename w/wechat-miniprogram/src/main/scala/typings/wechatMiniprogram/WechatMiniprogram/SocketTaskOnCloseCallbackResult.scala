@@ -14,19 +14,15 @@ trait SocketTaskOnCloseCallbackResult extends StObject {
 }
 object SocketTaskOnCloseCallbackResult {
   
-  @scala.inline
-  def apply(code: Double, reason: String): SocketTaskOnCloseCallbackResult = {
+  inline def apply(code: Double, reason: String): SocketTaskOnCloseCallbackResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketTaskOnCloseCallbackResult]
   }
   
-  @scala.inline
-  implicit class SocketTaskOnCloseCallbackResultMutableBuilder[Self <: SocketTaskOnCloseCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: SocketTaskOnCloseCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

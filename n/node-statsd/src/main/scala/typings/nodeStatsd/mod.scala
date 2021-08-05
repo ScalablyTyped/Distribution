@@ -647,65 +647,46 @@ object mod {
   }
   object StatsDConfig {
     
-    @scala.inline
-    def apply(): StatsDConfig = {
+    inline def apply(): StatsDConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatsDConfig]
     }
     
-    @scala.inline
-    implicit class StatsDConfigMutableBuilder[Self <: StatsDConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StatsDConfig](x: Self) {
       
-      @scala.inline
-      def setCacheDns(value: Boolean): Self = StObject.set(x, "cacheDns", value.asInstanceOf[js.Any])
+      inline def setCacheDns(value: Boolean): Self = StObject.set(x, "cacheDns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheDnsUndefined: Self = StObject.set(x, "cacheDns", js.undefined)
+      inline def setCacheDnsUndefined: Self = StObject.set(x, "cacheDns", js.undefined)
       
-      @scala.inline
-      def setGlobal_tags(value: js.Array[String]): Self = StObject.set(x, "global_tags", value.asInstanceOf[js.Any])
+      inline def setGlobal_tags(value: js.Array[String]): Self = StObject.set(x, "global_tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal_tagsUndefined: Self = StObject.set(x, "global_tags", js.undefined)
+      inline def setGlobal_tagsUndefined: Self = StObject.set(x, "global_tags", js.undefined)
       
-      @scala.inline
-      def setGlobal_tagsVarargs(value: String*): Self = StObject.set(x, "global_tags", js.Array(value :_*))
+      inline def setGlobal_tagsVarargs(value: String*): Self = StObject.set(x, "global_tags", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobalize(value: Boolean): Self = StObject.set(x, "globalize", value.asInstanceOf[js.Any])
+      inline def setGlobalize(value: Boolean): Self = StObject.set(x, "globalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalizeUndefined: Self = StObject.set(x, "globalize", js.undefined)
+      inline def setGlobalizeUndefined: Self = StObject.set(x, "globalize", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setMock(value: Boolean): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
+      inline def setMock(value: Boolean): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockUndefined: Self = StObject.set(x, "mock", js.undefined)
+      inline def setMockUndefined: Self = StObject.set(x, "mock", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
 }

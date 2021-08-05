@@ -55,12 +55,10 @@ object mod {
   @JSImport("cids", "codecs")
   @js.native
   def codecs: Record[String, Double] = js.native
-  @scala.inline
-  def codecs_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codecs")(x.asInstanceOf[js.Any])
+  inline def codecs_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codecs")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def isCID(mixed: js.Any): /* is cids.cids.CID */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCID")(mixed.asInstanceOf[js.Any]).asInstanceOf[/* is cids.cids.CID */ Boolean]
+  inline def isCID(mixed: js.Any): /* is cids.cids.CID */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCID")(mixed.asInstanceOf[js.Any]).asInstanceOf[/* is cids.cids.CID */ Boolean]
   
   /**
     * Test if the given input is a valid CID object.
@@ -69,8 +67,7 @@ object mod {
     * @param other The other CID.
     */
   /* static member */
-  @scala.inline
-  def validateCID(other: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCID")(other.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateCID(other: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCID")(other.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait CID extends StObject {
@@ -153,10 +150,8 @@ object mod {
   trait CIDVersion extends StObject
   object CIDVersion {
     
-    @scala.inline
-    def `0`: typings.cids.cidsNumbers.`0` = 0.asInstanceOf[typings.cids.cidsNumbers.`0`]
+    inline def `0`: typings.cids.cidsNumbers.`0` = 0.asInstanceOf[typings.cids.cidsNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.cids.cidsNumbers.`1` = 1.asInstanceOf[typings.cids.cidsNumbers.`1`]
+    inline def `1`: typings.cids.cidsNumbers.`1` = 1.asInstanceOf[typings.cids.cidsNumbers.`1`]
   }
 }

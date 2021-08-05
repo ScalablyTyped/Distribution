@@ -58,73 +58,51 @@ trait DescribeActivitiesRequest extends StObject {
 }
 object DescribeActivitiesRequest {
   
-  @scala.inline
-  def apply(): DescribeActivitiesRequest = {
+  inline def apply(): DescribeActivitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeActivitiesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeActivitiesRequestMutableBuilder[Self <: DescribeActivitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeActivitiesRequest](x: Self) {
     
-    @scala.inline
-    def setActivityTypes(value: ActivityNamesFilterType): Self = StObject.set(x, "ActivityTypes", value.asInstanceOf[js.Any])
+    inline def setActivityTypes(value: ActivityNamesFilterType): Self = StObject.set(x, "ActivityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypesUndefined: Self = StObject.set(x, "ActivityTypes", js.undefined)
+    inline def setActivityTypesUndefined: Self = StObject.set(x, "ActivityTypes", js.undefined)
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setIncludeIndirectActivities(value: BooleanType): Self = StObject.set(x, "IncludeIndirectActivities", value.asInstanceOf[js.Any])
+    inline def setIncludeIndirectActivities(value: BooleanType): Self = StObject.set(x, "IncludeIndirectActivities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeIndirectActivitiesUndefined: Self = StObject.set(x, "IncludeIndirectActivities", js.undefined)
+    inline def setIncludeIndirectActivitiesUndefined: Self = StObject.set(x, "IncludeIndirectActivities", js.undefined)
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
+    inline def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: IdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: IdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setUserId(value: IdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: IdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

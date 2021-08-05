@@ -16,34 +16,25 @@ trait BaseImportUsersOptions extends StObject {
 }
 object BaseImportUsersOptions {
   
-  @scala.inline
-  def apply(connection_id: String): BaseImportUsersOptions = {
+  inline def apply(connection_id: String): BaseImportUsersOptions = {
     val __obj = js.Dynamic.literal(connection_id = connection_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseImportUsersOptions]
   }
   
-  @scala.inline
-  implicit class BaseImportUsersOptionsMutableBuilder[Self <: BaseImportUsersOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseImportUsersOptions](x: Self) {
     
-    @scala.inline
-    def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
+    inline def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+    inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
+    inline def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
     
-    @scala.inline
-    def setSend_completion_email(value: Boolean): Self = StObject.set(x, "send_completion_email", value.asInstanceOf[js.Any])
+    inline def setSend_completion_email(value: Boolean): Self = StObject.set(x, "send_completion_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSend_completion_emailUndefined: Self = StObject.set(x, "send_completion_email", js.undefined)
+    inline def setSend_completion_emailUndefined: Self = StObject.set(x, "send_completion_email", js.undefined)
     
-    @scala.inline
-    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+    inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

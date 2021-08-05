@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCDataChannelState extends StObject
 object RTCDataChannelState {
   
-  @scala.inline
-  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
+  inline def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   
-  @scala.inline
-  def closing: typings.std.stdStrings.closing = "closing".asInstanceOf[typings.std.stdStrings.closing]
+  inline def closing: typings.std.stdStrings.closing = "closing".asInstanceOf[typings.std.stdStrings.closing]
   
-  @scala.inline
-  def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
+  inline def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
   
-  @scala.inline
-  def open: typings.std.stdStrings.open = "open".asInstanceOf[typings.std.stdStrings.open]
+  inline def open: typings.std.stdStrings.open = "open".asInstanceOf[typings.std.stdStrings.open]
 }

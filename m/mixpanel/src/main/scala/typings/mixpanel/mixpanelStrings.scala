@@ -8,11 +8,9 @@ object mixpanelStrings {
   
   @js.native
   sealed trait cookie extends StObject
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
+  inline def cookie: cookie = "cookie".asInstanceOf[cookie]
   
   @js.native
   sealed trait localStorage extends StObject
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
 }

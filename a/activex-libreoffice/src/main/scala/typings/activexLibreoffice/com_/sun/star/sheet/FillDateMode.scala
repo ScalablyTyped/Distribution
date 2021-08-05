@@ -22,18 +22,14 @@ trait FillDateMode extends StObject
 object FillDateMode {
   
   /** for every new value a single day is added. */
-  @scala.inline
-  def FILL_DATE_DAY: `0` = 0.asInstanceOf[`0`]
+  inline def FILL_DATE_DAY: `0` = 0.asInstanceOf[`0`]
   
   /** for every new value one month is added (day keeps unchanged). */
-  @scala.inline
-  def FILL_DATE_MONTH: `2` = 2.asInstanceOf[`2`]
+  inline def FILL_DATE_MONTH: `2` = 2.asInstanceOf[`2`]
   
   /** for every new value a single day is added, but Saturdays and Sundays are skipped. */
-  @scala.inline
-  def FILL_DATE_WEEKDAY: `1` = 1.asInstanceOf[`1`]
+  inline def FILL_DATE_WEEKDAY: `1` = 1.asInstanceOf[`1`]
   
   /** for every new value one year is added (day and month keep unchanged). */
-  @scala.inline
-  def FILL_DATE_YEAR: `3` = 3.asInstanceOf[`3`]
+  inline def FILL_DATE_YEAR: `3` = 3.asInstanceOf[`3`]
 }

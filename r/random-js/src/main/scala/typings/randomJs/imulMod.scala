@@ -10,6 +10,5 @@ object imulMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def imul(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("imul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def imul(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("imul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

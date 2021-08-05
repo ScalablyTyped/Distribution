@@ -36,37 +36,27 @@ trait PartitionQueryRequest extends StObject {
 }
 object PartitionQueryRequest {
   
-  @scala.inline
-  def apply(): PartitionQueryRequest = {
+  inline def apply(): PartitionQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionQueryRequest]
   }
   
-  @scala.inline
-  implicit class PartitionQueryRequestMutableBuilder[Self <: PartitionQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionQueryRequest](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPartitionCount(value: String): Self = StObject.set(x, "partitionCount", value.asInstanceOf[js.Any])
+    inline def setPartitionCount(value: String): Self = StObject.set(x, "partitionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionCountUndefined: Self = StObject.set(x, "partitionCount", js.undefined)
+    inline def setPartitionCountUndefined: Self = StObject.set(x, "partitionCount", js.undefined)
     
-    @scala.inline
-    def setStructuredQuery(value: StructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
+    inline def setStructuredQuery(value: StructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
+    inline def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
   }
 }

@@ -6,15 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IXMLDOMImplementation extends StObject {
   
-  @JSName("MSXML2.IXMLDOMImplementation_typekey")
+  /* private */ @JSName("MSXML2.IXMLDOMImplementation_typekey")
   var MSXML2DotIXMLDOMImplementation_typekey: IXMLDOMImplementation
   
   def hasFeature(feature: String, version: String): Boolean
 }
 object IXMLDOMImplementation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotIXMLDOMImplementation_typekey: IXMLDOMImplementation,
     hasFeature: (String, String) => Boolean
   ): IXMLDOMImplementation = {
@@ -23,13 +22,10 @@ object IXMLDOMImplementation {
     __obj.asInstanceOf[IXMLDOMImplementation]
   }
   
-  @scala.inline
-  implicit class IXMLDOMImplementationMutableBuilder[Self <: IXMLDOMImplementation] (val x: Self) extends AnyVal {
+  extension [Self <: IXMLDOMImplementation](x: Self) {
     
-    @scala.inline
-    def setHasFeature(value: (String, String) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
+    inline def setHasFeature(value: (String, String) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMSXML2DotIXMLDOMImplementation_typekey(value: IXMLDOMImplementation): Self = StObject.set(x, "MSXML2.IXMLDOMImplementation_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotIXMLDOMImplementation_typekey(value: IXMLDOMImplementation): Self = StObject.set(x, "MSXML2.IXMLDOMImplementation_typekey", value.asInstanceOf[js.Any])
   }
 }

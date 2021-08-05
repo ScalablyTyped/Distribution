@@ -27,6 +27,5 @@ object Picker {
   @JSImport("proton-native", "Picker.Item")
   @js.native
   def Item: Instantiable0[PickerItem] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[PickerItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[PickerItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

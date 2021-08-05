@@ -14,25 +14,19 @@ trait ComponentRow extends StObject {
 }
 object ComponentRow {
   
-  @scala.inline
-  def apply(): ComponentRow = {
+  inline def apply(): ComponentRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentRow]
   }
   
-  @scala.inline
-  implicit class ComponentRowMutableBuilder[Self <: ComponentRow] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentRow](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setRow(value: dxDataGridRowObject): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: dxDataGridRowObject): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

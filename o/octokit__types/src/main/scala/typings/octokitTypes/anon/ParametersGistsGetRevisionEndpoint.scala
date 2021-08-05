@@ -18,8 +18,7 @@ trait ParametersGistsGetRevisionEndpoint extends StObject {
 }
 object ParametersGistsGetRevisionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GistsGetRevisionEndpoint,
     request: GistsGetRevisionRequestOptions,
     response: OctokitResponse[GistsGetRevisionResponseData]
@@ -28,16 +27,12 @@ object ParametersGistsGetRevisionEndpoint {
     __obj.asInstanceOf[ParametersGistsGetRevisionEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGistsGetRevisionEndpointMutableBuilder[Self <: ParametersGistsGetRevisionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGistsGetRevisionEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GistsGetRevisionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GistsGetRevisionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GistsGetRevisionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GistsGetRevisionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GistsGetRevisionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GistsGetRevisionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IEditorViewState extends StObject
 object IEditorViewState {
   
-  @scala.inline
-  def ICodeEditorViewState(
+  inline def ICodeEditorViewState(
     contributionsState: StringDictionary[js.Any],
     cursorState: js.Array[ICursorState],
     viewState: IViewState
@@ -22,8 +21,7 @@ object IEditorViewState {
     __obj.asInstanceOf[typings.monacoEditor.mod.editor.ICodeEditorViewState]
   }
   
-  @scala.inline
-  def IDiffEditorViewState(): typings.monacoEditor.mod.editor.IDiffEditorViewState = {
+  inline def IDiffEditorViewState(): typings.monacoEditor.mod.editor.IDiffEditorViewState = {
     val __obj = js.Dynamic.literal(modified = null, original = null)
     __obj.asInstanceOf[typings.monacoEditor.mod.editor.IDiffEditorViewState]
   }

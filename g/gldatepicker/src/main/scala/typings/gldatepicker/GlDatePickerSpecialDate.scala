@@ -15,25 +15,19 @@ trait GlDatePickerSpecialDate
 }
 object GlDatePickerSpecialDate {
   
-  @scala.inline
-  def apply(date: Date): GlDatePickerSpecialDate = {
+  inline def apply(date: Date): GlDatePickerSpecialDate = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerSpecialDate]
   }
   
-  @scala.inline
-  implicit class GlDatePickerSpecialDateMutableBuilder[Self <: GlDatePickerSpecialDate] (val x: Self) extends AnyVal {
+  extension [Self <: GlDatePickerSpecialDate](x: Self) {
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

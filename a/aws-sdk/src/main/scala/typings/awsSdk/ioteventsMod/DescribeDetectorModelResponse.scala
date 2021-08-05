@@ -13,19 +13,15 @@ trait DescribeDetectorModelResponse extends StObject {
 }
 object DescribeDetectorModelResponse {
   
-  @scala.inline
-  def apply(): DescribeDetectorModelResponse = {
+  inline def apply(): DescribeDetectorModelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDetectorModelResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDetectorModelResponseMutableBuilder[Self <: DescribeDetectorModelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDetectorModelResponse](x: Self) {
     
-    @scala.inline
-    def setDetectorModel(value: DetectorModel): Self = StObject.set(x, "detectorModel", value.asInstanceOf[js.Any])
+    inline def setDetectorModel(value: DetectorModel): Self = StObject.set(x, "detectorModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelUndefined: Self = StObject.set(x, "detectorModel", js.undefined)
+    inline def setDetectorModelUndefined: Self = StObject.set(x, "detectorModel", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait OnError extends StObject {
 }
 object OnError {
   
-  @scala.inline
-  def apply(): OnError = {
+  inline def apply(): OnError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnError]
   }
   
-  @scala.inline
-  implicit class OnErrorMutableBuilder[Self <: OnError] (val x: Self) extends AnyVal {
+  extension [Self <: OnError](x: Self) {
     
-    @scala.inline
-    def setOnError(value: js.Function): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: js.Function): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
   }
 }

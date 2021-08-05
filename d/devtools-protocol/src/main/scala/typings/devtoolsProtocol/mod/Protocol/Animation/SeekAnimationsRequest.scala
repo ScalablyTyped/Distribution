@@ -18,22 +18,17 @@ trait SeekAnimationsRequest extends StObject {
 }
 object SeekAnimationsRequest {
   
-  @scala.inline
-  def apply(animations: js.Array[String], currentTime: Double): SeekAnimationsRequest = {
+  inline def apply(animations: js.Array[String], currentTime: Double): SeekAnimationsRequest = {
     val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeekAnimationsRequest]
   }
   
-  @scala.inline
-  implicit class SeekAnimationsRequestMutableBuilder[Self <: SeekAnimationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SeekAnimationsRequest](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
   }
 }

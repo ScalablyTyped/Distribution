@@ -13,22 +13,17 @@ trait NodegroupHealth extends StObject {
 }
 object NodegroupHealth {
   
-  @scala.inline
-  def apply(): NodegroupHealth = {
+  inline def apply(): NodegroupHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodegroupHealth]
   }
   
-  @scala.inline
-  implicit class NodegroupHealthMutableBuilder[Self <: NodegroupHealth] (val x: Self) extends AnyVal {
+  extension [Self <: NodegroupHealth](x: Self) {
     
-    @scala.inline
-    def setIssues(value: IssueList): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+    inline def setIssues(value: IssueList): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
+    inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
-    @scala.inline
-    def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
   }
 }

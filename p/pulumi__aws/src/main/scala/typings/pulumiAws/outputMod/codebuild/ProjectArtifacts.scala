@@ -53,65 +53,46 @@ trait ProjectArtifacts extends StObject {
 }
 object ProjectArtifacts {
   
-  @scala.inline
-  def apply(`type`: String): ProjectArtifacts = {
+  inline def apply(`type`: String): ProjectArtifacts = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectArtifacts]
   }
   
-  @scala.inline
-  implicit class ProjectArtifactsMutableBuilder[Self <: ProjectArtifacts] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectArtifacts](x: Self) {
     
-    @scala.inline
-    def setArtifactIdentifier(value: String): Self = StObject.set(x, "artifactIdentifier", value.asInstanceOf[js.Any])
+    inline def setArtifactIdentifier(value: String): Self = StObject.set(x, "artifactIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactIdentifierUndefined: Self = StObject.set(x, "artifactIdentifier", js.undefined)
+    inline def setArtifactIdentifierUndefined: Self = StObject.set(x, "artifactIdentifier", js.undefined)
     
-    @scala.inline
-    def setEncryptionDisabled(value: Boolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
+    inline def setEncryptionDisabled(value: Boolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
+    inline def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamespaceType(value: String): Self = StObject.set(x, "namespaceType", value.asInstanceOf[js.Any])
+    inline def setNamespaceType(value: String): Self = StObject.set(x, "namespaceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceTypeUndefined: Self = StObject.set(x, "namespaceType", js.undefined)
+    inline def setNamespaceTypeUndefined: Self = StObject.set(x, "namespaceType", js.undefined)
     
-    @scala.inline
-    def setOverrideArtifactName(value: Boolean): Self = StObject.set(x, "overrideArtifactName", value.asInstanceOf[js.Any])
+    inline def setOverrideArtifactName(value: Boolean): Self = StObject.set(x, "overrideArtifactName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideArtifactNameUndefined: Self = StObject.set(x, "overrideArtifactName", js.undefined)
+    inline def setOverrideArtifactNameUndefined: Self = StObject.set(x, "overrideArtifactName", js.undefined)
     
-    @scala.inline
-    def setPackaging(value: String): Self = StObject.set(x, "packaging", value.asInstanceOf[js.Any])
+    inline def setPackaging(value: String): Self = StObject.set(x, "packaging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagingUndefined: Self = StObject.set(x, "packaging", js.undefined)
+    inline def setPackagingUndefined: Self = StObject.set(x, "packaging", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

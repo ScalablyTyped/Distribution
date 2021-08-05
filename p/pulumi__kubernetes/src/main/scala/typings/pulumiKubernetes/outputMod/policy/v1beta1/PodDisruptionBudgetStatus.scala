@@ -42,8 +42,7 @@ trait PodDisruptionBudgetStatus extends StObject {
 }
 object PodDisruptionBudgetStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentHealthy: Double,
     desiredHealthy: Double,
     disruptedPods: StringDictionary[String],
@@ -55,25 +54,18 @@ object PodDisruptionBudgetStatus {
     __obj.asInstanceOf[PodDisruptionBudgetStatus]
   }
   
-  @scala.inline
-  implicit class PodDisruptionBudgetStatusMutableBuilder[Self <: PodDisruptionBudgetStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PodDisruptionBudgetStatus](x: Self) {
     
-    @scala.inline
-    def setCurrentHealthy(value: Double): Self = StObject.set(x, "currentHealthy", value.asInstanceOf[js.Any])
+    inline def setCurrentHealthy(value: Double): Self = StObject.set(x, "currentHealthy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredHealthy(value: Double): Self = StObject.set(x, "desiredHealthy", value.asInstanceOf[js.Any])
+    inline def setDesiredHealthy(value: Double): Self = StObject.set(x, "desiredHealthy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisruptedPods(value: StringDictionary[String]): Self = StObject.set(x, "disruptedPods", value.asInstanceOf[js.Any])
+    inline def setDisruptedPods(value: StringDictionary[String]): Self = StObject.set(x, "disruptedPods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisruptionsAllowed(value: Double): Self = StObject.set(x, "disruptionsAllowed", value.asInstanceOf[js.Any])
+    inline def setDisruptionsAllowed(value: Double): Self = StObject.set(x, "disruptionsAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedPods(value: Double): Self = StObject.set(x, "expectedPods", value.asInstanceOf[js.Any])
+    inline def setExpectedPods(value: Double): Self = StObject.set(x, "expectedPods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
   }
 }

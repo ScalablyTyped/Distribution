@@ -26,8 +26,7 @@ trait ChatMessageChangeReader extends StObject {
 }
 object ChatMessageChangeReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptChanges: () => Unit,
     acceptChangesThrough: ChatMessageChange => Unit,
     readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
@@ -36,16 +35,12 @@ object ChatMessageChangeReader {
     __obj.asInstanceOf[ChatMessageChangeReader]
   }
   
-  @scala.inline
-  implicit class ChatMessageChangeReaderMutableBuilder[Self <: ChatMessageChangeReader] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageChangeReader](x: Self) {
     
-    @scala.inline
-    def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
+    inline def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAcceptChangesThrough(value: ChatMessageChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
+    inline def setAcceptChangesThrough(value: ChatMessageChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

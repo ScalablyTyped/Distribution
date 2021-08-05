@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hMod {
   
-  @scala.inline
-  def apply(tagName: String, children: String): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(tagName: String, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(tagName: String, properties: createProperties, children: String): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(tagName: String, properties: createProperties, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(tagName: String, children: String): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(tagName: String, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(tagName: String, properties: createProperties, children: String): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(tagName: String, properties: createProperties, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
   
   @JSImport("virtual-dom/h", JSImport.Namespace)
   @js.native

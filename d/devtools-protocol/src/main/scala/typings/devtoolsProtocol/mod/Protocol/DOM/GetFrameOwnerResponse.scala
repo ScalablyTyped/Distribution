@@ -18,22 +18,17 @@ trait GetFrameOwnerResponse extends StObject {
 }
 object GetFrameOwnerResponse {
   
-  @scala.inline
-  def apply(backendNodeId: BackendNodeId): GetFrameOwnerResponse = {
+  inline def apply(backendNodeId: BackendNodeId): GetFrameOwnerResponse = {
     val __obj = js.Dynamic.literal(backendNodeId = backendNodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFrameOwnerResponse]
   }
   
-  @scala.inline
-  implicit class GetFrameOwnerResponseMutableBuilder[Self <: GetFrameOwnerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFrameOwnerResponse](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
   }
 }

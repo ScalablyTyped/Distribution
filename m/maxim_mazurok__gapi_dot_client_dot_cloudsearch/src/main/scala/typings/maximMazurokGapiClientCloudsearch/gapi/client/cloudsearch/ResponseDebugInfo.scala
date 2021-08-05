@@ -11,19 +11,15 @@ trait ResponseDebugInfo extends StObject {
 }
 object ResponseDebugInfo {
   
-  @scala.inline
-  def apply(): ResponseDebugInfo = {
+  inline def apply(): ResponseDebugInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseDebugInfo]
   }
   
-  @scala.inline
-  implicit class ResponseDebugInfoMutableBuilder[Self <: ResponseDebugInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseDebugInfo](x: Self) {
     
-    @scala.inline
-    def setFormattedDebugInfo(value: String): Self = StObject.set(x, "formattedDebugInfo", value.asInstanceOf[js.Any])
+    inline def setFormattedDebugInfo(value: String): Self = StObject.set(x, "formattedDebugInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedDebugInfoUndefined: Self = StObject.set(x, "formattedDebugInfo", js.undefined)
+    inline def setFormattedDebugInfoUndefined: Self = StObject.set(x, "formattedDebugInfo", js.undefined)
   }
 }

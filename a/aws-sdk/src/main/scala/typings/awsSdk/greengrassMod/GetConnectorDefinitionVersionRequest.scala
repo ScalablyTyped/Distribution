@@ -23,25 +23,19 @@ trait GetConnectorDefinitionVersionRequest extends StObject {
 }
 object GetConnectorDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(ConnectorDefinitionId: string, ConnectorDefinitionVersionId: string): GetConnectorDefinitionVersionRequest = {
+  inline def apply(ConnectorDefinitionId: string, ConnectorDefinitionVersionId: string): GetConnectorDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(ConnectorDefinitionId = ConnectorDefinitionId.asInstanceOf[js.Any], ConnectorDefinitionVersionId = ConnectorDefinitionVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectorDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetConnectorDefinitionVersionRequestMutableBuilder[Self <: GetConnectorDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectorDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
+    inline def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorDefinitionVersionId(value: string): Self = StObject.set(x, "ConnectorDefinitionVersionId", value.asInstanceOf[js.Any])
+    inline def setConnectorDefinitionVersionId(value: string): Self = StObject.set(x, "ConnectorDefinitionVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

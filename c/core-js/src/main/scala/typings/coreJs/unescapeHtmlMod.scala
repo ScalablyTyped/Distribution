@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object unescapeHtmlMod {
   
   /* was `typeof core.String.unescapeHTML` */
-  @scala.inline
-  def apply(text: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def apply(text: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   @JSImport("core-js/fn/string/unescape-html", JSImport.Namespace)
   @js.native

@@ -13,19 +13,15 @@ trait QuotaBytes extends StObject {
 }
 object QuotaBytes {
   
-  @scala.inline
-  def apply(quotaBytes: integer, usageBytes: integer): QuotaBytes = {
+  inline def apply(quotaBytes: integer, usageBytes: integer): QuotaBytes = {
     val __obj = js.Dynamic.literal(quotaBytes = quotaBytes.asInstanceOf[js.Any], usageBytes = usageBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaBytes]
   }
   
-  @scala.inline
-  implicit class QuotaBytesMutableBuilder[Self <: QuotaBytes] (val x: Self) extends AnyVal {
+  extension [Self <: QuotaBytes](x: Self) {
     
-    @scala.inline
-    def setQuotaBytes(value: integer): Self = StObject.set(x, "quotaBytes", value.asInstanceOf[js.Any])
+    inline def setQuotaBytes(value: integer): Self = StObject.set(x, "quotaBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageBytes(value: integer): Self = StObject.set(x, "usageBytes", value.asInstanceOf[js.Any])
+    inline def setUsageBytes(value: integer): Self = StObject.set(x, "usageBytes", value.asInstanceOf[js.Any])
   }
 }

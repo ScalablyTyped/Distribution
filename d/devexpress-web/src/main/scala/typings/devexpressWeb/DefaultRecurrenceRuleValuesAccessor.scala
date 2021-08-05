@@ -36,8 +36,7 @@ trait DefaultRecurrenceRuleValuesAccessor extends StObject {
 }
 object DefaultRecurrenceRuleValuesAccessor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetDayNumber: () => Double,
     GetMonth: () => Double,
     GetPeriodicity: () => Double,
@@ -48,22 +47,16 @@ object DefaultRecurrenceRuleValuesAccessor {
     __obj.asInstanceOf[DefaultRecurrenceRuleValuesAccessor]
   }
   
-  @scala.inline
-  implicit class DefaultRecurrenceRuleValuesAccessorMutableBuilder[Self <: DefaultRecurrenceRuleValuesAccessor] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultRecurrenceRuleValuesAccessor](x: Self) {
     
-    @scala.inline
-    def setGetDayNumber(value: () => Double): Self = StObject.set(x, "GetDayNumber", js.Any.fromFunction0(value))
+    inline def setGetDayNumber(value: () => Double): Self = StObject.set(x, "GetDayNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonth(value: () => Double): Self = StObject.set(x, "GetMonth", js.Any.fromFunction0(value))
+    inline def setGetMonth(value: () => Double): Self = StObject.set(x, "GetMonth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPeriodicity(value: () => Double): Self = StObject.set(x, "GetPeriodicity", js.Any.fromFunction0(value))
+    inline def setGetPeriodicity(value: () => Double): Self = StObject.set(x, "GetPeriodicity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWeekDays(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetWeekDays", js.Any.fromFunction0(value))
+    inline def setGetWeekDays(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetWeekDays", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWeekOfMonth(value: () => ASPxClientWeekOfMonth): Self = StObject.set(x, "GetWeekOfMonth", js.Any.fromFunction0(value))
+    inline def setGetWeekOfMonth(value: () => ASPxClientWeekOfMonth): Self = StObject.set(x, "GetWeekOfMonth", js.Any.fromFunction0(value))
   }
 }

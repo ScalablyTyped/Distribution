@@ -16,31 +16,23 @@ trait ReadThumbnailOptions
 }
 object ReadThumbnailOptions {
   
-  @scala.inline
-  def apply(): ReadThumbnailOptions = {
+  inline def apply(): ReadThumbnailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadThumbnailOptions]
   }
   
-  @scala.inline
-  implicit class ReadThumbnailOptionsMutableBuilder[Self <: ReadThumbnailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadThumbnailOptions](x: Self) {
     
-    @scala.inline
-    def setArrayBuffer(value: Boolean): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
+    inline def setArrayBuffer(value: Boolean): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
+    inline def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
     
-    @scala.inline
-    def setBlob(value: Boolean): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: Boolean): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
-    @scala.inline
-    def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
   }
 }

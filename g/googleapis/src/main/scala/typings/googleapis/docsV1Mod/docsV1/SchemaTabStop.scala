@@ -21,25 +21,19 @@ trait SchemaTabStop extends StObject {
 }
 object SchemaTabStop {
   
-  @scala.inline
-  def apply(): SchemaTabStop = {
+  inline def apply(): SchemaTabStop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTabStop]
   }
   
-  @scala.inline
-  implicit class SchemaTabStopMutableBuilder[Self <: SchemaTabStop] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTabStop](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setOffset(value: SchemaDimension): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: SchemaDimension): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait ITimeZoneInformation extends StObject {
 }
 object ITimeZoneInformation {
   
-  @scala.inline
-  def apply(LoadTimeZoneByName: String => Unit, LoadWithCurrentTimeZone: () => Unit, StandardName: String): ITimeZoneInformation = {
+  inline def apply(LoadTimeZoneByName: String => Unit, LoadWithCurrentTimeZone: () => Unit, StandardName: String): ITimeZoneInformation = {
     val __obj = js.Dynamic.literal(LoadTimeZoneByName = js.Any.fromFunction1(LoadTimeZoneByName), LoadWithCurrentTimeZone = js.Any.fromFunction0(LoadWithCurrentTimeZone), StandardName = StandardName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeZoneInformation]
   }
   
-  @scala.inline
-  implicit class ITimeZoneInformationMutableBuilder[Self <: ITimeZoneInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ITimeZoneInformation](x: Self) {
     
-    @scala.inline
-    def setLoadTimeZoneByName(value: String => Unit): Self = StObject.set(x, "LoadTimeZoneByName", js.Any.fromFunction1(value))
+    inline def setLoadTimeZoneByName(value: String => Unit): Self = StObject.set(x, "LoadTimeZoneByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadWithCurrentTimeZone(value: () => Unit): Self = StObject.set(x, "LoadWithCurrentTimeZone", js.Any.fromFunction0(value))
+    inline def setLoadWithCurrentTimeZone(value: () => Unit): Self = StObject.set(x, "LoadWithCurrentTimeZone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStandardName(value: String): Self = StObject.set(x, "StandardName", value.asInstanceOf[js.Any])
+    inline def setStandardName(value: String): Self = StObject.set(x, "StandardName", value.asInstanceOf[js.Any])
   }
 }

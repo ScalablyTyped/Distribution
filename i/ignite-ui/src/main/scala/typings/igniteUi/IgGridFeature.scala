@@ -19,19 +19,15 @@ trait IgGridFeature
 }
 object IgGridFeature {
   
-  @scala.inline
-  def apply(): IgGridFeature = {
+  inline def apply(): IgGridFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridFeature]
   }
   
-  @scala.inline
-  implicit class IgGridFeatureMutableBuilder[Self <: IgGridFeature] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridFeature](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ trait BudgetOrder extends StObject {
 }
 object BudgetOrder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBillingAccount: () => BillingAccount,
     getEndDatetime: () => AdWordsDate,
     getId: () => Double,
@@ -39,31 +38,22 @@ object BudgetOrder {
     __obj.asInstanceOf[BudgetOrder]
   }
   
-  @scala.inline
-  implicit class BudgetOrderMutableBuilder[Self <: BudgetOrder] (val x: Self) extends AnyVal {
+  extension [Self <: BudgetOrder](x: Self) {
     
-    @scala.inline
-    def setGetBillingAccount(value: () => BillingAccount): Self = StObject.set(x, "getBillingAccount", js.Any.fromFunction0(value))
+    inline def setGetBillingAccount(value: () => BillingAccount): Self = StObject.set(x, "getBillingAccount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEndDatetime(value: () => AdWordsDate): Self = StObject.set(x, "getEndDatetime", js.Any.fromFunction0(value))
+    inline def setGetEndDatetime(value: () => AdWordsDate): Self = StObject.set(x, "getEndDatetime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPoNumber(value: () => Double): Self = StObject.set(x, "getPoNumber", js.Any.fromFunction0(value))
+    inline def setGetPoNumber(value: () => Double): Self = StObject.set(x, "getPoNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSpendingLimit(value: () => Double): Self = StObject.set(x, "getSpendingLimit", js.Any.fromFunction0(value))
+    inline def setGetSpendingLimit(value: () => Double): Self = StObject.set(x, "getSpendingLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStartDateTime(value: () => AdWordsDate): Self = StObject.set(x, "getStartDateTime", js.Any.fromFunction0(value))
+    inline def setGetStartDateTime(value: () => AdWordsDate): Self = StObject.set(x, "getStartDateTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTotalAdjustments(value: () => Double): Self = StObject.set(x, "getTotalAdjustments", js.Any.fromFunction0(value))
+    inline def setGetTotalAdjustments(value: () => Double): Self = StObject.set(x, "getTotalAdjustments", js.Any.fromFunction0(value))
   }
 }

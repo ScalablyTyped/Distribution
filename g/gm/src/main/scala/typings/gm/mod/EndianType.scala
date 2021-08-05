@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EndianType extends StObject
 object EndianType {
   
-  @scala.inline
-  def LSB: typings.gm.gmStrings.LSB = "LSB".asInstanceOf[typings.gm.gmStrings.LSB]
+  inline def LSB: typings.gm.gmStrings.LSB = "LSB".asInstanceOf[typings.gm.gmStrings.LSB]
   
-  @scala.inline
-  def MSB: typings.gm.gmStrings.MSB = "MSB".asInstanceOf[typings.gm.gmStrings.MSB]
+  inline def MSB: typings.gm.gmStrings.MSB = "MSB".asInstanceOf[typings.gm.gmStrings.MSB]
   
-  @scala.inline
-  def Native: typings.gm.gmStrings.Native = "Native".asInstanceOf[typings.gm.gmStrings.Native]
+  inline def Native: typings.gm.gmStrings.Native = "Native".asInstanceOf[typings.gm.gmStrings.Native]
 }

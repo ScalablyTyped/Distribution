@@ -12,16 +12,13 @@ trait PickImplscrollContext extends StObject {
 }
 object PickImplscrollContext {
   
-  @scala.inline
-  def apply(scrollContext: String | JQuery): PickImplscrollContext = {
+  inline def apply(scrollContext: String | JQuery): PickImplscrollContext = {
     val __obj = js.Dynamic.literal(scrollContext = scrollContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplscrollContext]
   }
   
-  @scala.inline
-  implicit class PickImplscrollContextMutableBuilder[Self <: PickImplscrollContext] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplscrollContext](x: Self) {
     
-    @scala.inline
-    def setScrollContext(value: String | JQuery): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
+    inline def setScrollContext(value: String | JQuery): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
   }
 }

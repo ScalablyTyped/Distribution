@@ -24,28 +24,21 @@ trait LiveDialogParams
 }
 object LiveDialogParams {
   
-  @scala.inline
-  def apply(display: popup | iframe, phase: create | publish): LiveDialogParams = {
+  inline def apply(display: popup | iframe, phase: create | publish): LiveDialogParams = {
     val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], method = "live_broadcast", phase = phase.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveDialogParams]
   }
   
-  @scala.inline
-  implicit class LiveDialogParamsMutableBuilder[Self <: LiveDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: LiveDialogParams](x: Self) {
     
-    @scala.inline
-    def setBroadcast_data(value: LiveDialogResponse): Self = StObject.set(x, "broadcast_data", value.asInstanceOf[js.Any])
+    inline def setBroadcast_data(value: LiveDialogResponse): Self = StObject.set(x, "broadcast_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcast_dataUndefined: Self = StObject.set(x, "broadcast_data", js.undefined)
+    inline def setBroadcast_dataUndefined: Self = StObject.set(x, "broadcast_data", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: popup | iframe): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: popup | iframe): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: live_broadcast): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: live_broadcast): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhase(value: create | publish): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: create | publish): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }
 }

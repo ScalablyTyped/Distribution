@@ -13,19 +13,15 @@ trait GridNavigateEvent
 }
 object GridNavigateEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Grid): GridNavigateEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Grid): GridNavigateEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridNavigateEvent]
   }
   
-  @scala.inline
-  implicit class GridNavigateEventMutableBuilder[Self <: GridNavigateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GridNavigateEvent](x: Self) {
     
-    @scala.inline
-    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
   }
 }

@@ -94,106 +94,73 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Slot {
   
-  @scala.inline
-  def apply(end: instant, schedule: Reference, start: instant, status: code): Slot = {
+  inline def apply(end: instant, schedule: Reference, start: instant, status: code): Slot = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slot]
   }
   
-  @scala.inline
-  implicit class SlotMutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
+  extension [Self <: Slot](x: Self) {
     
-    @scala.inline
-    def setAppointmentType(value: CodeableConcept): Self = StObject.set(x, "appointmentType", value.asInstanceOf[js.Any])
+    inline def setAppointmentType(value: CodeableConcept): Self = StObject.set(x, "appointmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentTypeUndefined: Self = StObject.set(x, "appointmentType", js.undefined)
+    inline def setAppointmentTypeUndefined: Self = StObject.set(x, "appointmentType", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setEnd(value: instant): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: instant): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
-    @scala.inline
-    def setOverbooked(value: Boolean): Self = StObject.set(x, "overbooked", value.asInstanceOf[js.Any])
+    inline def setOverbooked(value: Boolean): Self = StObject.set(x, "overbooked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverbookedUndefined: Self = StObject.set(x, "overbooked", js.undefined)
+    inline def setOverbookedUndefined: Self = StObject.set(x, "overbooked", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: Reference): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: Reference): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCategory(value: CodeableConcept): Self = StObject.set(x, "serviceCategory", value.asInstanceOf[js.Any])
+    inline def setServiceCategory(value: CodeableConcept): Self = StObject.set(x, "serviceCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCategoryUndefined: Self = StObject.set(x, "serviceCategory", js.undefined)
+    inline def setServiceCategoryUndefined: Self = StObject.set(x, "serviceCategory", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
     
-    @scala.inline
-    def setServiceTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceType", js.Array(value :_*))
+    inline def setServiceTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceType", js.Array(value :_*))
     
-    @scala.inline
-    def setSpecialty(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialty", value.asInstanceOf[js.Any])
+    inline def setSpecialty(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialtyUndefined: Self = StObject.set(x, "specialty", js.undefined)
+    inline def setSpecialtyUndefined: Self = StObject.set(x, "specialty", js.undefined)
     
-    @scala.inline
-    def setSpecialtyVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialty", js.Array(value :_*))
+    inline def setSpecialtyVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialty", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: instant): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: instant): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
+    inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
+    inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
-    @scala.inline
-    def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
+    inline def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
+    inline def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
     
-    @scala.inline
-    def set_overbooked(value: Element): Self = StObject.set(x, "_overbooked", value.asInstanceOf[js.Any])
+    inline def set_overbooked(value: Element): Self = StObject.set(x, "_overbooked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_overbookedUndefined: Self = StObject.set(x, "_overbooked", js.undefined)
+    inline def set_overbookedUndefined: Self = StObject.set(x, "_overbooked", js.undefined)
     
-    @scala.inline
-    def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
+    inline def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

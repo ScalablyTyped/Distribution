@@ -37,8 +37,7 @@ object baseMod {
   }
   object MarkCompiler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       encodeEntry: UnitModel => VgEncodeEntry,
       vgMark: arc | area | image | group | line | path | rect | rule | shape | symbol | text | trail
     ): MarkCompiler = {
@@ -46,20 +45,15 @@ object baseMod {
       __obj.asInstanceOf[MarkCompiler]
     }
     
-    @scala.inline
-    implicit class MarkCompilerMutableBuilder[Self <: MarkCompiler] (val x: Self) extends AnyVal {
+    extension [Self <: MarkCompiler](x: Self) {
       
-      @scala.inline
-      def setEncodeEntry(value: UnitModel => VgEncodeEntry): Self = StObject.set(x, "encodeEntry", js.Any.fromFunction1(value))
+      inline def setEncodeEntry(value: UnitModel => VgEncodeEntry): Self = StObject.set(x, "encodeEntry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostEncodingTransform(value: /* model */ UnitModel => js.Array[VgPostEncodingTransform]): Self = StObject.set(x, "postEncodingTransform", js.Any.fromFunction1(value))
+      inline def setPostEncodingTransform(value: /* model */ UnitModel => js.Array[VgPostEncodingTransform]): Self = StObject.set(x, "postEncodingTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostEncodingTransformUndefined: Self = StObject.set(x, "postEncodingTransform", js.undefined)
+      inline def setPostEncodingTransformUndefined: Self = StObject.set(x, "postEncodingTransform", js.undefined)
       
-      @scala.inline
-      def setVgMark(value: arc | area | image | group | line | path | rect | rule | shape | symbol | text | trail): Self = StObject.set(x, "vgMark", value.asInstanceOf[js.Any])
+      inline def setVgMark(value: arc | area | image | group | line | path | rect | rule | shape | symbol | text | trail): Self = StObject.set(x, "vgMark", value.asInstanceOf[js.Any])
     }
   }
 }

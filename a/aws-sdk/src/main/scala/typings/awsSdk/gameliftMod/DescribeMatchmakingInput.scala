@@ -13,19 +13,15 @@ trait DescribeMatchmakingInput extends StObject {
 }
 object DescribeMatchmakingInput {
   
-  @scala.inline
-  def apply(TicketIds: MatchmakingIdList): DescribeMatchmakingInput = {
+  inline def apply(TicketIds: MatchmakingIdList): DescribeMatchmakingInput = {
     val __obj = js.Dynamic.literal(TicketIds = TicketIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMatchmakingInput]
   }
   
-  @scala.inline
-  implicit class DescribeMatchmakingInputMutableBuilder[Self <: DescribeMatchmakingInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMatchmakingInput](x: Self) {
     
-    @scala.inline
-    def setTicketIds(value: MatchmakingIdList): Self = StObject.set(x, "TicketIds", value.asInstanceOf[js.Any])
+    inline def setTicketIds(value: MatchmakingIdList): Self = StObject.set(x, "TicketIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketIdsVarargs(value: MatchmakingIdStringModel*): Self = StObject.set(x, "TicketIds", js.Array(value :_*))
+    inline def setTicketIdsVarargs(value: MatchmakingIdStringModel*): Self = StObject.set(x, "TicketIds", js.Array(value :_*))
   }
 }

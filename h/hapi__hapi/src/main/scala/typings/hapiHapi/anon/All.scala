@@ -12,25 +12,19 @@ trait All extends StObject {
 }
 object All {
   
-  @scala.inline
-  def apply(tags: String | js.Array[String]): All = {
+  inline def apply(tags: String | js.Array[String]): All = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[All]
   }
   
-  @scala.inline
-  implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+  extension [Self <: All](x: Self) {
     
-    @scala.inline
-    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setTags(value: String | js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: String | js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

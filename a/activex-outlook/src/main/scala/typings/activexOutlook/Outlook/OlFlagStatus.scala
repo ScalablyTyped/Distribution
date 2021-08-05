@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlFlagStatus extends StObject
 object OlFlagStatus {
   
-  @scala.inline
-  def olFlagComplete: `1` = 1.asInstanceOf[`1`]
+  inline def olFlagComplete: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olFlagMarked: `2` = 2.asInstanceOf[`2`]
+  inline def olFlagMarked: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olNoFlag: `0` = 0.asInstanceOf[`0`]
+  inline def olNoFlag: `0` = 0.asInstanceOf[`0`]
 }

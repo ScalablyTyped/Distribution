@@ -19,19 +19,19 @@ object imageBaseMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MImageBase(nextProps: IImageProps): Unit = js.native
     
-    var _checkImageLoaded: js.Any = js.native
+    /* private */ var _checkImageLoaded: js.Any = js.native
     
-    var _computeCoverStyle: js.Any = js.native
+    /* private */ var _computeCoverStyle: js.Any = js.native
     
-    var _coverStyle: js.Any = js.native
+    /* private */ var _coverStyle: js.Any = js.native
     
-    var _frameElement: js.Any = js.native
+    /* private */ var _frameElement: js.Any = js.native
     
-    var _imageElement: js.Any = js.native
+    /* private */ var _imageElement: js.Any = js.native
     
-    var _onImageError: js.Any = js.native
+    /* private */ var _onImageError: js.Any = js.native
     
-    var _onImageLoaded: js.Any = js.native
+    /* private */ var _onImageLoaded: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MImageBase(prevProps: IImageProps, prevState: IImageState): Unit = js.native
@@ -46,14 +46,12 @@ object imageBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Image/Image.base", "ImageBase._svgRegex")
     @js.native
     def _svgRegex: js.Any = js.native
-    @scala.inline
-    def _svgRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
+    inline def _svgRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/Image/Image.base", "ImageBase.defaultProps")
     @js.native
     def defaultProps: ShouldFadeIn = js.native
-    @scala.inline
-    def defaultProps_=(x: ShouldFadeIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ShouldFadeIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IImageState extends StObject {
@@ -62,20 +60,16 @@ object imageBaseMod {
   }
   object IImageState {
     
-    @scala.inline
-    def apply(): IImageState = {
+    inline def apply(): IImageState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IImageState]
     }
     
-    @scala.inline
-    implicit class IImageStateMutableBuilder[Self <: IImageState] (val x: Self) extends AnyVal {
+    extension [Self <: IImageState](x: Self) {
       
-      @scala.inline
-      def setLoadState(value: ImageLoadState): Self = StObject.set(x, "loadState", value.asInstanceOf[js.Any])
+      inline def setLoadState(value: ImageLoadState): Self = StObject.set(x, "loadState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadStateUndefined: Self = StObject.set(x, "loadState", js.undefined)
+      inline def setLoadStateUndefined: Self = StObject.set(x, "loadState", js.undefined)
     }
   }
 }

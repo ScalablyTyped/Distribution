@@ -17,19 +17,15 @@ trait RemoteLauncherOptions extends StObject {
 }
 object RemoteLauncherOptions {
   
-  @scala.inline
-  def apply(FallbackUri: Uri, PreferredAppIds: IIterable[String]): RemoteLauncherOptions = {
+  inline def apply(FallbackUri: Uri, PreferredAppIds: IIterable[String]): RemoteLauncherOptions = {
     val __obj = js.Dynamic.literal(FallbackUri = FallbackUri.asInstanceOf[js.Any], PreferredAppIds = PreferredAppIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteLauncherOptions]
   }
   
-  @scala.inline
-  implicit class RemoteLauncherOptionsMutableBuilder[Self <: RemoteLauncherOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteLauncherOptions](x: Self) {
     
-    @scala.inline
-    def setFallbackUri(value: Uri): Self = StObject.set(x, "FallbackUri", value.asInstanceOf[js.Any])
+    inline def setFallbackUri(value: Uri): Self = StObject.set(x, "FallbackUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredAppIds(value: IIterable[String]): Self = StObject.set(x, "PreferredAppIds", value.asInstanceOf[js.Any])
+    inline def setPreferredAppIds(value: IIterable[String]): Self = StObject.set(x, "PreferredAppIds", value.asInstanceOf[js.Any])
   }
 }

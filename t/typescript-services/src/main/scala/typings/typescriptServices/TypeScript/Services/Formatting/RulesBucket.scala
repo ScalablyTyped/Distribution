@@ -15,12 +15,11 @@ trait RulesBucket extends StObject {
   
   def Rules(): js.Array[Rule]
   
-  var rules: js.Any
+  /* private */ var rules: js.Any
 }
 object RulesBucket {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddRule: (Rule, Boolean, js.Array[RulesBucketConstructionState], Double) => Unit,
     Rules: () => js.Array[Rule],
     rules: js.Any
@@ -29,13 +28,10 @@ object RulesBucket {
     __obj.asInstanceOf[RulesBucket]
   }
   
-  @scala.inline
-  implicit class RulesBucketMutableBuilder[Self <: RulesBucket] (val x: Self) extends AnyVal {
+  extension [Self <: RulesBucket](x: Self) {
     
-    @scala.inline
-    def setAddRule(value: (Rule, Boolean, js.Array[RulesBucketConstructionState], Double) => Unit): Self = StObject.set(x, "AddRule", js.Any.fromFunction4(value))
+    inline def setAddRule(value: (Rule, Boolean, js.Array[RulesBucketConstructionState], Double) => Unit): Self = StObject.set(x, "AddRule", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRules(value: () => js.Array[Rule]): Self = StObject.set(x, "Rules", js.Any.fromFunction0(value))
+    inline def setRules(value: () => js.Array[Rule]): Self = StObject.set(x, "Rules", js.Any.fromFunction0(value))
   }
 }

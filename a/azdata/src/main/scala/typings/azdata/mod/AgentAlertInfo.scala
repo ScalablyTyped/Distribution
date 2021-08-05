@@ -54,8 +54,7 @@ trait AgentAlertInfo extends StObject {
 }
 object AgentAlertInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alertType: AlertType,
     categoryName: String,
     countResetDate: String,
@@ -84,76 +83,52 @@ object AgentAlertInfo {
     __obj.asInstanceOf[AgentAlertInfo]
   }
   
-  @scala.inline
-  implicit class AgentAlertInfoMutableBuilder[Self <: AgentAlertInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AgentAlertInfo](x: Self) {
     
-    @scala.inline
-    def setAlertType(value: AlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
+    inline def setAlertType(value: AlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
+    inline def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountResetDate(value: String): Self = StObject.set(x, "countResetDate", value.asInstanceOf[js.Any])
+    inline def setCountResetDate(value: String): Self = StObject.set(x, "countResetDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayBetweenResponses(value: Double): Self = StObject.set(x, "delayBetweenResponses", value.asInstanceOf[js.Any])
+    inline def setDelayBetweenResponses(value: Double): Self = StObject.set(x, "delayBetweenResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDescriptionKeyword(value: String): Self = StObject.set(x, "eventDescriptionKeyword", value.asInstanceOf[js.Any])
+    inline def setEventDescriptionKeyword(value: String): Self = StObject.set(x, "eventDescriptionKeyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNotification(value: Double): Self = StObject.set(x, "hasNotification", value.asInstanceOf[js.Any])
+    inline def setHasNotification(value: Double): Self = StObject.set(x, "hasNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeEventDescription(value: NotifyMethods): Self = StObject.set(x, "includeEventDescription", value.asInstanceOf[js.Any])
+    inline def setIncludeEventDescription(value: NotifyMethods): Self = StObject.set(x, "includeEventDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastOccurrenceDate(value: String): Self = StObject.set(x, "lastOccurrenceDate", value.asInstanceOf[js.Any])
+    inline def setLastOccurrenceDate(value: String): Self = StObject.set(x, "lastOccurrenceDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastResponseDate(value: String): Self = StObject.set(x, "lastResponseDate", value.asInstanceOf[js.Any])
+    inline def setLastResponseDate(value: String): Self = StObject.set(x, "lastResponseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationMessage(value: String): Self = StObject.set(x, "notificationMessage", value.asInstanceOf[js.Any])
+    inline def setNotificationMessage(value: String): Self = StObject.set(x, "notificationMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceCount(value: Double): Self = StObject.set(x, "occurrenceCount", value.asInstanceOf[js.Any])
+    inline def setOccurrenceCount(value: Double): Self = StObject.set(x, "occurrenceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceCondition(value: String): Self = StObject.set(x, "performanceCondition", value.asInstanceOf[js.Any])
+    inline def setPerformanceCondition(value: String): Self = StObject.set(x, "performanceCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverity(value: Double): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: Double): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWmiEventNamespace(value: String): Self = StObject.set(x, "wmiEventNamespace", value.asInstanceOf[js.Any])
+    inline def setWmiEventNamespace(value: String): Self = StObject.set(x, "wmiEventNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWmiEventQuery(value: String): Self = StObject.set(x, "wmiEventQuery", value.asInstanceOf[js.Any])
+    inline def setWmiEventQuery(value: String): Self = StObject.set(x, "wmiEventQuery", value.asInstanceOf[js.Any])
   }
 }

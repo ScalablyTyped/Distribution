@@ -18,25 +18,19 @@ trait SaveRulesOptions extends StObject {
 }
 object SaveRulesOptions {
   
-  @scala.inline
-  def apply(): SaveRulesOptions = {
+  inline def apply(): SaveRulesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveRulesOptions]
   }
   
-  @scala.inline
-  implicit class SaveRulesOptionsMutableBuilder[Self <: SaveRulesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveRulesOptions](x: Self) {
     
-    @scala.inline
-    def setClearExistingRules(value: Boolean): Self = StObject.set(x, "clearExistingRules", value.asInstanceOf[js.Any])
+    inline def setClearExistingRules(value: Boolean): Self = StObject.set(x, "clearExistingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearExistingRulesUndefined: Self = StObject.set(x, "clearExistingRules", js.undefined)
+    inline def setClearExistingRulesUndefined: Self = StObject.set(x, "clearExistingRules", js.undefined)
     
-    @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
+    inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
+    inline def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
   }
 }

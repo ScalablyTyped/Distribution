@@ -18,25 +18,19 @@ trait GetPhoneNumberSettingsResponse extends StObject {
 }
 object GetPhoneNumberSettingsResponse {
   
-  @scala.inline
-  def apply(): GetPhoneNumberSettingsResponse = {
+  inline def apply(): GetPhoneNumberSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPhoneNumberSettingsResponse]
   }
   
-  @scala.inline
-  implicit class GetPhoneNumberSettingsResponseMutableBuilder[Self <: GetPhoneNumberSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPhoneNumberSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setCallingName(value: CallingName): Self = StObject.set(x, "CallingName", value.asInstanceOf[js.Any])
+    inline def setCallingName(value: CallingName): Self = StObject.set(x, "CallingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallingNameUndefined: Self = StObject.set(x, "CallingName", js.undefined)
+    inline def setCallingNameUndefined: Self = StObject.set(x, "CallingName", js.undefined)
     
-    @scala.inline
-    def setCallingNameUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CallingNameUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCallingNameUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CallingNameUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallingNameUpdatedTimestampUndefined: Self = StObject.set(x, "CallingNameUpdatedTimestamp", js.undefined)
+    inline def setCallingNameUpdatedTimestampUndefined: Self = StObject.set(x, "CallingNameUpdatedTimestamp", js.undefined)
   }
 }

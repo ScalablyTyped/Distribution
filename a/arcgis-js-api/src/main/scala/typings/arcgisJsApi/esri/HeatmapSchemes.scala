@@ -40,8 +40,7 @@ trait HeatmapSchemes
 }
 object HeatmapSchemes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
@@ -54,22 +53,16 @@ object HeatmapSchemes {
     __obj.asInstanceOf[HeatmapSchemes]
   }
   
-  @scala.inline
-  implicit class HeatmapSchemesMutableBuilder[Self <: HeatmapSchemes] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapSchemes](x: Self) {
     
-    @scala.inline
-    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
+    inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryScheme(value: HeatmapScheme): Self = StObject.set(x, "primaryScheme", value.asInstanceOf[js.Any])
+    inline def setPrimaryScheme(value: HeatmapScheme): Self = StObject.set(x, "primaryScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondarySchemes(value: js.Array[HeatmapScheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
+    inline def setSecondarySchemes(value: js.Array[HeatmapScheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondarySchemesVarargs(value: HeatmapScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
+    inline def setSecondarySchemesVarargs(value: HeatmapScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
   }
 }

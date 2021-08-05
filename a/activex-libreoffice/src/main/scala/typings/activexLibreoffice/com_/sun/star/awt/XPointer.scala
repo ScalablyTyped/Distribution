@@ -22,8 +22,7 @@ trait XPointer
 }
 object XPointer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Type: Double,
     acquire: () => Unit,
     getType: () => Double,
@@ -35,16 +34,12 @@ object XPointer {
     __obj.asInstanceOf[XPointer]
   }
   
-  @scala.inline
-  implicit class XPointerMutableBuilder[Self <: XPointer] (val x: Self) extends AnyVal {
+  extension [Self <: XPointer](x: Self) {
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

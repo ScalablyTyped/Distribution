@@ -28,40 +28,29 @@ trait ListClustersInput extends StObject {
 }
 object ListClustersInput {
   
-  @scala.inline
-  def apply(): ListClustersInput = {
+  inline def apply(): ListClustersInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListClustersInput]
   }
   
-  @scala.inline
-  implicit class ListClustersInputMutableBuilder[Self <: ListClustersInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListClustersInput](x: Self) {
     
-    @scala.inline
-    def setClusterStates(value: ClusterStateList): Self = StObject.set(x, "ClusterStates", value.asInstanceOf[js.Any])
+    inline def setClusterStates(value: ClusterStateList): Self = StObject.set(x, "ClusterStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterStatesUndefined: Self = StObject.set(x, "ClusterStates", js.undefined)
+    inline def setClusterStatesUndefined: Self = StObject.set(x, "ClusterStates", js.undefined)
     
-    @scala.inline
-    def setClusterStatesVarargs(value: ClusterState*): Self = StObject.set(x, "ClusterStates", js.Array(value :_*))
+    inline def setClusterStatesVarargs(value: ClusterState*): Self = StObject.set(x, "ClusterStates", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedAfter(value: Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
+    inline def setCreatedAfter(value: Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
+    inline def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
-    @scala.inline
-    def setCreatedBefore(value: Date): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
+    inline def setCreatedBefore(value: Date): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
+    inline def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

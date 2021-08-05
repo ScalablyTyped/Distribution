@@ -10,16 +10,13 @@ trait Mark extends StObject {
 }
 object Mark {
   
-  @scala.inline
-  def apply(clear: () => Unit): Mark = {
+  inline def apply(clear: () => Unit): Mark = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
     __obj.asInstanceOf[Mark]
   }
   
-  @scala.inline
-  implicit class MarkMutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
+  extension [Self <: Mark](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }
 }

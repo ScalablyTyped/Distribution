@@ -8,6 +8,5 @@ object asyncStrings {
   
   @js.native
   sealed trait AsyncAutoTasks extends StObject
-  @scala.inline
-  def AsyncAutoTasks: AsyncAutoTasks = "AsyncAutoTasks".asInstanceOf[AsyncAutoTasks]
+  inline def AsyncAutoTasks: AsyncAutoTasks = "AsyncAutoTasks".asInstanceOf[AsyncAutoTasks]
 }

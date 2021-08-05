@@ -15,7 +15,7 @@ object concatMod {
   class ConcatModel protected () extends Model {
     def this(spec: NormalizedConcatSpec, parent: Model, parentGivenName: String, config: Config[SignalRef]) = this()
     
-    var getChildren: js.Any = js.native
+    /* private */ var getChildren: js.Any = js.native
     
     def parseAxisGroup(): Unit = js.native
   }

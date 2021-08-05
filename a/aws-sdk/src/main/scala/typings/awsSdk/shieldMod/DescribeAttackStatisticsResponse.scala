@@ -15,22 +15,17 @@ trait DescribeAttackStatisticsResponse extends StObject {
 }
 object DescribeAttackStatisticsResponse {
   
-  @scala.inline
-  def apply(DataItems: AttackStatisticsDataList, TimeRange: TimeRange): DescribeAttackStatisticsResponse = {
+  inline def apply(DataItems: AttackStatisticsDataList, TimeRange: TimeRange): DescribeAttackStatisticsResponse = {
     val __obj = js.Dynamic.literal(DataItems = DataItems.asInstanceOf[js.Any], TimeRange = TimeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAttackStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAttackStatisticsResponseMutableBuilder[Self <: DescribeAttackStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAttackStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setDataItems(value: AttackStatisticsDataList): Self = StObject.set(x, "DataItems", value.asInstanceOf[js.Any])
+    inline def setDataItems(value: AttackStatisticsDataList): Self = StObject.set(x, "DataItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemsVarargs(value: AttackStatisticsDataItem*): Self = StObject.set(x, "DataItems", js.Array(value :_*))
+    inline def setDataItemsVarargs(value: AttackStatisticsDataItem*): Self = StObject.set(x, "DataItems", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeRange(value: TimeRange): Self = StObject.set(x, "TimeRange", value.asInstanceOf[js.Any])
+    inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "TimeRange", value.asInstanceOf[js.Any])
   }
 }

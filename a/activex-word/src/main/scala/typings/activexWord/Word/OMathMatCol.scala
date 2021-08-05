@@ -20,13 +20,12 @@ trait OMathMatCol extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.OMathMatCol_typekey")
+  /* private */ @JSName("Word.OMathMatCol_typekey")
   var WordDotOMathMatCol_typekey: OMathMatCol
 }
 object OMathMatCol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: WdOMathHorizAlignType,
     Application: Application,
     Args: OMathArgs,
@@ -41,31 +40,22 @@ object OMathMatCol {
     __obj.asInstanceOf[OMathMatCol]
   }
   
-  @scala.inline
-  implicit class OMathMatColMutableBuilder[Self <: OMathMatCol] (val x: Self) extends AnyVal {
+  extension [Self <: OMathMatCol](x: Self) {
     
-    @scala.inline
-    def setAlign(value: WdOMathHorizAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: WdOMathHorizAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgs(value: OMathArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: OMathArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColIndex(value: Double): Self = StObject.set(x, "ColIndex", value.asInstanceOf[js.Any])
+    inline def setColIndex(value: Double): Self = StObject.set(x, "ColIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathMatCol_typekey(value: OMathMatCol): Self = StObject.set(x, "Word.OMathMatCol_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathMatCol_typekey(value: OMathMatCol): Self = StObject.set(x, "Word.OMathMatCol_typekey", value.asInstanceOf[js.Any])
   }
 }

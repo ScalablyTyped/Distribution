@@ -10,19 +10,15 @@ trait Updatepublished extends StObject {
 }
 object Updatepublished {
   
-  @scala.inline
-  def apply(): Updatepublished = {
+  inline def apply(): Updatepublished = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Updatepublished]
   }
   
-  @scala.inline
-  implicit class UpdatepublishedMutableBuilder[Self <: Updatepublished] (val x: Self) extends AnyVal {
+  extension [Self <: Updatepublished](x: Self) {
     
-    @scala.inline
-    def setUpdate_published(value: Boolean): Self = StObject.set(x, "update_published", value.asInstanceOf[js.Any])
+    inline def setUpdate_published(value: Boolean): Self = StObject.set(x, "update_published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_publishedUndefined: Self = StObject.set(x, "update_published", js.undefined)
+    inline def setUpdate_publishedUndefined: Self = StObject.set(x, "update_published", js.undefined)
   }
 }

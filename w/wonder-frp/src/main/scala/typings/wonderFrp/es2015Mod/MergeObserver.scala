@@ -22,8 +22,7 @@ object MergeObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     currentObserver: IObserver,
     maxConcurrent: Double,
     groupDisposable: typings.wonderFrp.disposableGroupDisposableMod.GroupDisposable

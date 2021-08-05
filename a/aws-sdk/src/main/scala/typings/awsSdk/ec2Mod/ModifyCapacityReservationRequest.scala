@@ -33,40 +33,29 @@ trait ModifyCapacityReservationRequest extends StObject {
 }
 object ModifyCapacityReservationRequest {
   
-  @scala.inline
-  def apply(CapacityReservationId: CapacityReservationId): ModifyCapacityReservationRequest = {
+  inline def apply(CapacityReservationId: CapacityReservationId): ModifyCapacityReservationRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationId = CapacityReservationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCapacityReservationRequest]
   }
   
-  @scala.inline
-  implicit class ModifyCapacityReservationRequestMutableBuilder[Self <: ModifyCapacityReservationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyCapacityReservationRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityReservationId(value: CapacityReservationId): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationId(value: CapacityReservationId): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateType(value: EndDateType): Self = StObject.set(x, "EndDateType", value.asInstanceOf[js.Any])
+    inline def setEndDateType(value: EndDateType): Self = StObject.set(x, "EndDateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTypeUndefined: Self = StObject.set(x, "EndDateType", js.undefined)
+    inline def setEndDateTypeUndefined: Self = StObject.set(x, "EndDateType", js.undefined)
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
   }
 }

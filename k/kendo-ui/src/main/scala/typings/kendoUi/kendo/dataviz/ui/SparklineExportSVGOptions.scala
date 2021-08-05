@@ -10,19 +10,15 @@ trait SparklineExportSVGOptions extends StObject {
 }
 object SparklineExportSVGOptions {
   
-  @scala.inline
-  def apply(): SparklineExportSVGOptions = {
+  inline def apply(): SparklineExportSVGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineExportSVGOptions]
   }
   
-  @scala.inline
-  implicit class SparklineExportSVGOptionsMutableBuilder[Self <: SparklineExportSVGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineExportSVGOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

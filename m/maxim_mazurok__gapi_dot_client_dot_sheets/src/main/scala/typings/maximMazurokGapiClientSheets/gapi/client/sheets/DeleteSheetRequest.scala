@@ -11,19 +11,15 @@ trait DeleteSheetRequest extends StObject {
 }
 object DeleteSheetRequest {
   
-  @scala.inline
-  def apply(): DeleteSheetRequest = {
+  inline def apply(): DeleteSheetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSheetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSheetRequestMutableBuilder[Self <: DeleteSheetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSheetRequest](x: Self) {
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

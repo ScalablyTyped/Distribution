@@ -17,29 +17,22 @@ object TabBar {
   }
   object ItemOptions {
     
-    @scala.inline
-    def apply(image: String): ItemOptions = {
+    inline def apply(image: String): ItemOptions = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemOptions]
     }
     
-    @scala.inline
-    implicit class ItemOptionsMutableBuilder[Self <: ItemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ItemOptions](x: Self) {
       
-      @scala.inline
-      def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSelected(value: String): Self = StObject.set(x, "imageSelected", value.asInstanceOf[js.Any])
+      inline def setImageSelected(value: String): Self = StObject.set(x, "imageSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSelectedUndefined: Self = StObject.set(x, "imageSelected", js.undefined)
+      inline def setImageSelectedUndefined: Self = StObject.set(x, "imageSelected", js.undefined)
     }
   }
 }

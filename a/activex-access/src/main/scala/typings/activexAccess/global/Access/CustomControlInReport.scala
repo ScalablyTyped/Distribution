@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access._CustomControlInReport")
 @js.native
-class CustomControlInReport protected ()
+/* private */ class CustomControlInReport ()
   extends StObject
      with typings.activexAccess.Access.CustomControlInReport

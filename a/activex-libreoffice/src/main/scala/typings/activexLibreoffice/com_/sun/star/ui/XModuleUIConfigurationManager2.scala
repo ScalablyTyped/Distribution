@@ -23,8 +23,7 @@ trait XModuleUIConfigurationManager2
      with XUIConfiguration
 object XModuleUIConfigurationManager2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EventsManager: XInterface,
     ImageManager: XInterface,
     ShortCutManager: XAcceleratorConfiguration,

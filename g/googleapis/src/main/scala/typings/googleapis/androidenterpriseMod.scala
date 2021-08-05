@@ -40,8 +40,7 @@ object androidenterpriseMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Androidenterprise
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -50,11 +49,9 @@ object androidenterpriseMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def androidenterprise(options: Options): Androidenterprise = ^.asInstanceOf[js.Dynamic].applyDynamic("androidenterprise")(options.asInstanceOf[js.Any]).asInstanceOf[Androidenterprise]
+  inline def androidenterprise(options: Options): Androidenterprise = ^.asInstanceOf[js.Dynamic].applyDynamic("androidenterprise")(options.asInstanceOf[js.Any]).asInstanceOf[Androidenterprise]
   
-  @scala.inline
-  def androidenterprise_v1(version: v1): Androidenterprise = ^.asInstanceOf[js.Dynamic].applyDynamic("androidenterprise")(version.asInstanceOf[js.Any]).asInstanceOf[Androidenterprise]
+  inline def androidenterprise_v1(version: v1): Androidenterprise = ^.asInstanceOf[js.Dynamic].applyDynamic("androidenterprise")(version.asInstanceOf[js.Any]).asInstanceOf[Androidenterprise]
   
   object auth extends Shortcut {
     
@@ -89,8 +86,7 @@ object androidenterpriseMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

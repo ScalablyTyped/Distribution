@@ -40,8 +40,7 @@ trait XActionLockable
 }
 object XActionLockable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addActionLock: () => Unit,
     isActionLocked: () => Boolean,
@@ -55,22 +54,16 @@ object XActionLockable {
     __obj.asInstanceOf[XActionLockable]
   }
   
-  @scala.inline
-  implicit class XActionLockableMutableBuilder[Self <: XActionLockable] (val x: Self) extends AnyVal {
+  extension [Self <: XActionLockable](x: Self) {
     
-    @scala.inline
-    def setAddActionLock(value: () => Unit): Self = StObject.set(x, "addActionLock", js.Any.fromFunction0(value))
+    inline def setAddActionLock(value: () => Unit): Self = StObject.set(x, "addActionLock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsActionLocked(value: () => Boolean): Self = StObject.set(x, "isActionLocked", js.Any.fromFunction0(value))
+    inline def setIsActionLocked(value: () => Boolean): Self = StObject.set(x, "isActionLocked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveActionLock(value: () => Unit): Self = StObject.set(x, "removeActionLock", js.Any.fromFunction0(value))
+    inline def setRemoveActionLock(value: () => Unit): Self = StObject.set(x, "removeActionLock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetActionLocks(value: () => Double): Self = StObject.set(x, "resetActionLocks", js.Any.fromFunction0(value))
+    inline def setResetActionLocks(value: () => Double): Self = StObject.set(x, "resetActionLocks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActionLocks(value: Double => Unit): Self = StObject.set(x, "setActionLocks", js.Any.fromFunction1(value))
+    inline def setSetActionLocks(value: Double => Unit): Self = StObject.set(x, "setActionLocks", js.Any.fromFunction1(value))
   }
 }

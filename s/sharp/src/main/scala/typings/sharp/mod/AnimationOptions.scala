@@ -17,34 +17,25 @@ trait AnimationOptions extends StObject {
 }
 object AnimationOptions {
   
-  @scala.inline
-  def apply(): AnimationOptions = {
+  inline def apply(): AnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationOptions]
   }
   
-  @scala.inline
-  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDelay(value: js.Array[Double]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: js.Array[Double]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
+    inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
     
-    @scala.inline
-    def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setPageHeight(value: Double): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
+    inline def setPageHeight(value: Double): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeightUndefined: Self = StObject.set(x, "pageHeight", js.undefined)
+    inline def setPageHeightUndefined: Self = StObject.set(x, "pageHeight", js.undefined)
   }
 }

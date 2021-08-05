@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DispatchTouchEventRequestType extends StObject
 object DispatchTouchEventRequestType {
   
-  @scala.inline
-  def TouchCancel: touchCancel = "touchCancel".asInstanceOf[touchCancel]
+  inline def TouchCancel: touchCancel = "touchCancel".asInstanceOf[touchCancel]
   
-  @scala.inline
-  def TouchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
+  inline def TouchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
   
-  @scala.inline
-  def TouchMove: touchMove = "touchMove".asInstanceOf[touchMove]
+  inline def TouchMove: touchMove = "touchMove".asInstanceOf[touchMove]
   
-  @scala.inline
-  def TouchStart: touchStart = "touchStart".asInstanceOf[touchStart]
+  inline def TouchStart: touchStart = "touchStart".asInstanceOf[touchStart]
 }

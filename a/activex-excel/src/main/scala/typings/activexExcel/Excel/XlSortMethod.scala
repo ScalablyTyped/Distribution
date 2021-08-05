@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSortMethod extends StObject
 object XlSortMethod {
   
-  @scala.inline
-  def xlPinYin: `1` = 1.asInstanceOf[`1`]
+  inline def xlPinYin: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlStroke: `2` = 2.asInstanceOf[`2`]
+  inline def xlStroke: `2` = 2.asInstanceOf[`2`]
 }

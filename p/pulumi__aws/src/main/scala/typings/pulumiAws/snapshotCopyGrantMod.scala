@@ -61,21 +61,16 @@ object snapshotCopyGrantMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SnapshotCopyGrantState): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SnapshotCopyGrantState, opts: CustomResourceOptions): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
+    inline def get(name: String, id: Input[ID]): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
+    inline def get(name: String, id: Input[ID], state: SnapshotCopyGrantState): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
+    inline def get(name: String, id: Input[ID], state: SnapshotCopyGrantState, opts: CustomResourceOptions): SnapshotCopyGrant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopyGrant]
     
     /**
       * Returns true if the given object is an instance of SnapshotCopyGrant.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotCopyGrant.SnapshotCopyGrant */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/redshift/snapshotCopyGrant.SnapshotCopyGrant */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotCopyGrant.SnapshotCopyGrant */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/redshift/snapshotCopyGrant.SnapshotCopyGrant */ Boolean]
   }
   
   trait SnapshotCopyGrantArgs extends StObject {
@@ -97,29 +92,22 @@ object snapshotCopyGrantMod {
   }
   object SnapshotCopyGrantArgs {
     
-    @scala.inline
-    def apply(snapshotCopyGrantName: Input[String]): SnapshotCopyGrantArgs = {
+    inline def apply(snapshotCopyGrantName: Input[String]): SnapshotCopyGrantArgs = {
       val __obj = js.Dynamic.literal(snapshotCopyGrantName = snapshotCopyGrantName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapshotCopyGrantArgs]
     }
     
-    @scala.inline
-    implicit class SnapshotCopyGrantArgsMutableBuilder[Self <: SnapshotCopyGrantArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotCopyGrantArgs](x: Self) {
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setSnapshotCopyGrantName(value: Input[String]): Self = StObject.set(x, "snapshotCopyGrantName", value.asInstanceOf[js.Any])
+      inline def setSnapshotCopyGrantName(value: Input[String]): Self = StObject.set(x, "snapshotCopyGrantName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -147,38 +135,28 @@ object snapshotCopyGrantMod {
   }
   object SnapshotCopyGrantState {
     
-    @scala.inline
-    def apply(): SnapshotCopyGrantState = {
+    inline def apply(): SnapshotCopyGrantState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SnapshotCopyGrantState]
     }
     
-    @scala.inline
-    implicit class SnapshotCopyGrantStateMutableBuilder[Self <: SnapshotCopyGrantState] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotCopyGrantState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setSnapshotCopyGrantName(value: Input[String]): Self = StObject.set(x, "snapshotCopyGrantName", value.asInstanceOf[js.Any])
+      inline def setSnapshotCopyGrantName(value: Input[String]): Self = StObject.set(x, "snapshotCopyGrantName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotCopyGrantNameUndefined: Self = StObject.set(x, "snapshotCopyGrantName", js.undefined)
+      inline def setSnapshotCopyGrantNameUndefined: Self = StObject.set(x, "snapshotCopyGrantName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

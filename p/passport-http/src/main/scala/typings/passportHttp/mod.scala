@@ -51,26 +51,20 @@ object mod {
   }
   object BasicStrategyOptions {
     
-    @scala.inline
-    def apply[req /* <: Boolean */](): BasicStrategyOptions[req] = {
+    inline def apply[req /* <: Boolean */](): BasicStrategyOptions[req] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasicStrategyOptions[req]]
     }
     
-    @scala.inline
-    implicit class BasicStrategyOptionsMutableBuilder[Self <: BasicStrategyOptions[?], req /* <: Boolean */] (val x: Self & BasicStrategyOptions[req]) extends AnyVal {
+    extension [Self <: BasicStrategyOptions[?], req /* <: Boolean */](x: Self & BasicStrategyOptions[req]) {
       
-      @scala.inline
-      def setPassReqToCallback(value: req): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: req): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
       
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+      inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     }
   }
   
@@ -114,50 +108,36 @@ object mod {
   }
   object DigestStrategyOptions {
     
-    @scala.inline
-    def apply(): DigestStrategyOptions = {
+    inline def apply(): DigestStrategyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DigestStrategyOptions]
     }
     
-    @scala.inline
-    implicit class DigestStrategyOptionsMutableBuilder[Self <: DigestStrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DigestStrategyOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String | js.Array[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String | js.Array[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
       
-      @scala.inline
-      def setOpaque(value: String): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
+      inline def setOpaque(value: String): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpaqueUndefined: Self = StObject.set(x, "opaque", js.undefined)
+      inline def setOpaqueUndefined: Self = StObject.set(x, "opaque", js.undefined)
       
-      @scala.inline
-      def setQop(value: String | js.Array[String]): Self = StObject.set(x, "qop", value.asInstanceOf[js.Any])
+      inline def setQop(value: String | js.Array[String]): Self = StObject.set(x, "qop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQopUndefined: Self = StObject.set(x, "qop", js.undefined)
+      inline def setQopUndefined: Self = StObject.set(x, "qop", js.undefined)
       
-      @scala.inline
-      def setQopVarargs(value: String*): Self = StObject.set(x, "qop", js.Array(value :_*))
+      inline def setQopVarargs(value: String*): Self = StObject.set(x, "qop", js.Array(value :_*))
       
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+      inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     }
   }
   
@@ -179,26 +159,20 @@ object mod {
   }
   object DigestValidateOptions {
     
-    @scala.inline
-    def apply(cnonce: String, nc: Double, nonce: String, opaque: String): DigestValidateOptions = {
+    inline def apply(cnonce: String, nc: Double, nonce: String, opaque: String): DigestValidateOptions = {
       val __obj = js.Dynamic.literal(cnonce = cnonce.asInstanceOf[js.Any], nc = nc.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], opaque = opaque.asInstanceOf[js.Any])
       __obj.asInstanceOf[DigestValidateOptions]
     }
     
-    @scala.inline
-    implicit class DigestValidateOptionsMutableBuilder[Self <: DigestValidateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DigestValidateOptions](x: Self) {
       
-      @scala.inline
-      def setCnonce(value: String): Self = StObject.set(x, "cnonce", value.asInstanceOf[js.Any])
+      inline def setCnonce(value: String): Self = StObject.set(x, "cnonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNc(value: Double): Self = StObject.set(x, "nc", value.asInstanceOf[js.Any])
+      inline def setNc(value: Double): Self = StObject.set(x, "nc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpaque(value: String): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
+      inline def setOpaque(value: String): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
     }
   }
 }

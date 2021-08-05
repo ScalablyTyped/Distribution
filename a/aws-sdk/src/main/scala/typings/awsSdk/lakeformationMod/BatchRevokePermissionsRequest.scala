@@ -18,25 +18,19 @@ trait BatchRevokePermissionsRequest extends StObject {
 }
 object BatchRevokePermissionsRequest {
   
-  @scala.inline
-  def apply(Entries: BatchPermissionsRequestEntryList): BatchRevokePermissionsRequest = {
+  inline def apply(Entries: BatchPermissionsRequestEntryList): BatchRevokePermissionsRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchRevokePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class BatchRevokePermissionsRequestMutableBuilder[Self <: BatchRevokePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchRevokePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setEntries(value: BatchPermissionsRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: BatchPermissionsRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: BatchPermissionsRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: BatchPermissionsRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
   }
 }

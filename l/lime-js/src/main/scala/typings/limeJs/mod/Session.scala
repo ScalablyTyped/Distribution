@@ -26,64 +26,45 @@ trait Session
 }
 object Session {
   
-  @scala.inline
-  def apply(state: String): Session = {
+  inline def apply(state: String): Session = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
   
-  @scala.inline
-  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+  extension [Self <: Session](x: Self) {
     
-    @scala.inline
-    def setAuthentication(value: js.Any): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: js.Any): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
-    @scala.inline
-    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionOptions(value: js.Array[String]): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+    inline def setCompressionOptions(value: js.Array[String]): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+    inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
     
-    @scala.inline
-    def setCompressionOptionsVarargs(value: String*): Self = StObject.set(x, "compressionOptions", js.Array(value :_*))
+    inline def setCompressionOptionsVarargs(value: String*): Self = StObject.set(x, "compressionOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionOptions(value: js.Array[String]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
+    inline def setEncryptionOptions(value: js.Array[String]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
+    inline def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
     
-    @scala.inline
-    def setEncryptionOptionsVarargs(value: String*): Self = StObject.set(x, "encryptionOptions", js.Array(value :_*))
+    inline def setEncryptionOptionsVarargs(value: String*): Self = StObject.set(x, "encryptionOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     
-    @scala.inline
-    def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

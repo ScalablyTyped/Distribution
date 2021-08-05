@@ -82,8 +82,7 @@ trait Split extends StObject {
 }
 object Split {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => Unit,
     focus: () => Unit,
     forEach: (js.Function, String) => Unit,
@@ -102,46 +101,32 @@ object Split {
     __obj.asInstanceOf[Split]
   }
   
-  @scala.inline
-  implicit class SplitMutableBuilder[Self <: Split] (val x: Self) extends AnyVal {
+  extension [Self <: Split](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForEach(value: (js.Function, String) => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction2(value))
+    inline def setForEach(value: (js.Function, String) => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCurrentEditor(value: () => Editor): Self = StObject.set(x, "getCurrentEditor", js.Any.fromFunction0(value))
+    inline def setGetCurrentEditor(value: () => Editor): Self = StObject.set(x, "getCurrentEditor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEditor(value: Double => Unit): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
+    inline def setGetEditor(value: Double => Unit): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
+    inline def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSplits(value: () => Double): Self = StObject.set(x, "getSplits", js.Any.fromFunction0(value))
+    inline def setGetSplits(value: () => Double): Self = StObject.set(x, "getSplits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
+    inline def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFontSize(value: Double => Unit): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
+    inline def setSetFontSize(value: Double => Unit): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetKeyboardHandler(value: String => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
+    inline def setSetKeyboardHandler(value: String => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
+    inline def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSession(value: (IEditSession, Double) => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction2(value))
+    inline def setSetSession(value: (IEditSession, Double) => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTheme(value: String => Unit): Self = StObject.set(x, "setTheme", js.Any.fromFunction1(value))
+    inline def setSetTheme(value: String => Unit): Self = StObject.set(x, "setTheme", js.Any.fromFunction1(value))
   }
 }

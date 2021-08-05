@@ -12,19 +12,15 @@ trait DataSourceSchemaWithTimezone
 }
 object DataSourceSchemaWithTimezone {
   
-  @scala.inline
-  def apply(): DataSourceSchemaWithTimezone = {
+  inline def apply(): DataSourceSchemaWithTimezone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSchemaWithTimezone]
   }
   
-  @scala.inline
-  implicit class DataSourceSchemaWithTimezoneMutableBuilder[Self <: DataSourceSchemaWithTimezone] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSchemaWithTimezone](x: Self) {
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

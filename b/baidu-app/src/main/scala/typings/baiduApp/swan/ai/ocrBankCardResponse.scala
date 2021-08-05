@@ -14,19 +14,15 @@ trait ocrBankCardResponse extends StObject {
 }
 object ocrBankCardResponse {
   
-  @scala.inline
-  def apply(log_id: String, result: Bankcardnumber): ocrBankCardResponse = {
+  inline def apply(log_id: String, result: Bankcardnumber): ocrBankCardResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrBankCardResponse]
   }
   
-  @scala.inline
-  implicit class ocrBankCardResponseMutableBuilder[Self <: ocrBankCardResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ocrBankCardResponse](x: Self) {
     
-    @scala.inline
-    def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Bankcardnumber): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Bankcardnumber): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait ChartBase extends StObject {
 }
 object ChartBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContainer: () => Element,
     getSelection: () => js.Array[VisualizationSelectionArray],
     setSelection: js.Array[VisualizationSelectionArray] => Unit
@@ -25,16 +24,12 @@ object ChartBase {
     __obj.asInstanceOf[ChartBase]
   }
   
-  @scala.inline
-  implicit class ChartBaseMutableBuilder[Self <: ChartBase] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBase](x: Self) {
     
-    @scala.inline
-    def setGetContainer(value: () => Element): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+    inline def setGetContainer(value: () => Element): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelection(value: () => js.Array[VisualizationSelectionArray]): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
+    inline def setGetSelection(value: () => js.Array[VisualizationSelectionArray]): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSelection(value: js.Array[VisualizationSelectionArray] => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
+    inline def setSetSelection(value: js.Array[VisualizationSelectionArray] => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
   }
 }

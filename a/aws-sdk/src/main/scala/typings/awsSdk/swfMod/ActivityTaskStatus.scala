@@ -13,16 +13,13 @@ trait ActivityTaskStatus extends StObject {
 }
 object ActivityTaskStatus {
   
-  @scala.inline
-  def apply(cancelRequested: Canceled): ActivityTaskStatus = {
+  inline def apply(cancelRequested: Canceled): ActivityTaskStatus = {
     val __obj = js.Dynamic.literal(cancelRequested = cancelRequested.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskStatus]
   }
   
-  @scala.inline
-  implicit class ActivityTaskStatusMutableBuilder[Self <: ActivityTaskStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTaskStatus](x: Self) {
     
-    @scala.inline
-    def setCancelRequested(value: Canceled): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
+    inline def setCancelRequested(value: Canceled): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
   }
 }

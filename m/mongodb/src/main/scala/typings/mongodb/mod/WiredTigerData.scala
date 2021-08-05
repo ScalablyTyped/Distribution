@@ -32,8 +32,7 @@ trait WiredTigerData extends StObject {
 }
 object WiredTigerData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LSM: Bloomfilterfalsepositives,
     `block-manager`: Allocationsrequiringfileextension,
     btree: Btreecheckpointgeneration,
@@ -48,31 +47,22 @@ object WiredTigerData {
     __obj.asInstanceOf[WiredTigerData]
   }
   
-  @scala.inline
-  implicit class WiredTigerDataMutableBuilder[Self <: WiredTigerData] (val x: Self) extends AnyVal {
+  extension [Self <: WiredTigerData](x: Self) {
     
-    @scala.inline
-    def `setBlock-manager`(value: Allocationsrequiringfileextension): Self = StObject.set(x, "block-manager", value.asInstanceOf[js.Any])
+    inline def `setBlock-manager`(value: Allocationsrequiringfileextension): Self = StObject.set(x, "block-manager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBtree(value: Btreecheckpointgeneration): Self = StObject.set(x, "btree", value.asInstanceOf[js.Any])
+    inline def setBtree(value: Btreecheckpointgeneration): Self = StObject.set(x, "btree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache(value: Bytescurrentlyinthecache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Bytescurrentlyinthecache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache_walk(value: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered): Self = StObject.set(x, "cache_walk", value.asInstanceOf[js.Any])
+    inline def setCache_walk(value: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered): Self = StObject.set(x, "cache_walk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompression(value: Compressedpagesread): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: Compressedpagesread): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursor(value: Bulkloadedcursorinsertcalls): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: Bulkloadedcursorinsertcalls): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLSM(value: Bloomfilterfalsepositives): Self = StObject.set(x, "LSM", value.asInstanceOf[js.Any])
+    inline def setLSM(value: Bloomfilterfalsepositives): Self = StObject.set(x, "LSM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReconciliation(value: Dictionarymatches): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
+    inline def setReconciliation(value: Dictionarymatches): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
   }
 }

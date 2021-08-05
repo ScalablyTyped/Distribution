@@ -12,16 +12,13 @@ trait CurrentTimeChangeRequestedEventArgs extends StObject {
 }
 object CurrentTimeChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(time: Double): CurrentTimeChangeRequestedEventArgs = {
+  inline def apply(time: Double): CurrentTimeChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentTimeChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class CurrentTimeChangeRequestedEventArgsMutableBuilder[Self <: CurrentTimeChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentTimeChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

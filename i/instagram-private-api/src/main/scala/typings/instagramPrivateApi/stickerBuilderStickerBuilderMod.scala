@@ -40,7 +40,7 @@ object stickerBuilderStickerBuilderMod {
     
     def build(): StickerConfig = js.native
     
-    var stickers: js.Any = js.native
+    /* private */ var stickers: js.Any = js.native
   }
   /* static members */
   object StickerBuilder {
@@ -49,45 +49,31 @@ object stickerBuilderStickerBuilderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachment(options: StickerOptionsAttachmentS): AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachment")(options.asInstanceOf[js.Any]).asInstanceOf[AttachmentSticker]
+    inline def attachment(options: StickerOptionsAttachmentS): AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachment")(options.asInstanceOf[js.Any]).asInstanceOf[AttachmentSticker]
     
-    @scala.inline
-    def attachmentFromMedia(mediaInfo: User): AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[AttachmentSticker]
-    @scala.inline
-    def attachmentFromMedia(mediaInfo: User, additional: PartialStickerOptionsAtta): AttachmentSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[AttachmentSticker]
+    inline def attachmentFromMedia(mediaInfo: User): AttachmentSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[AttachmentSticker]
+    inline def attachmentFromMedia(mediaInfo: User, additional: PartialStickerOptionsAtta): AttachmentSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("attachmentFromMedia")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[AttachmentSticker]
     
-    @scala.inline
-    def chat(options: StickerOptionsChatSticker): ChatSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("chat")(options.asInstanceOf[js.Any]).asInstanceOf[ChatSticker]
+    inline def chat(options: StickerOptionsChatSticker): ChatSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("chat")(options.asInstanceOf[js.Any]).asInstanceOf[ChatSticker]
     
-    @scala.inline
-    def countdown(options: StickerOptionsCountdownSt): CountdownSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("countdown")(options.asInstanceOf[js.Any]).asInstanceOf[CountdownSticker]
+    inline def countdown(options: StickerOptionsCountdownSt): CountdownSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("countdown")(options.asInstanceOf[js.Any]).asInstanceOf[CountdownSticker]
     
-    @scala.inline
-    def hashtag(options: StickerOptionsHashtagStic): HashtagSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("hashtag")(options.asInstanceOf[js.Any]).asInstanceOf[HashtagSticker]
+    inline def hashtag(options: StickerOptionsHashtagStic): HashtagSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("hashtag")(options.asInstanceOf[js.Any]).asInstanceOf[HashtagSticker]
     
-    @scala.inline
-    def location(options: StickerOptionsLocationSti): LocationSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(options.asInstanceOf[js.Any]).asInstanceOf[LocationSticker]
+    inline def location(options: StickerOptionsLocationSti): LocationSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(options.asInstanceOf[js.Any]).asInstanceOf[LocationSticker]
     
-    @scala.inline
-    def mention(options: StickerOptionsMentionStic): MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mention")(options.asInstanceOf[js.Any]).asInstanceOf[MentionSticker]
+    inline def mention(options: StickerOptionsMentionStic): MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mention")(options.asInstanceOf[js.Any]).asInstanceOf[MentionSticker]
     
-    @scala.inline
-    def mentionReel(mediaInfo: User): MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[MentionSticker]
-    @scala.inline
-    def mentionReel(mediaInfo: User, additional: PartialStickerOptionsMent): MentionSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[MentionSticker]
+    inline def mentionReel(mediaInfo: User): MentionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any]).asInstanceOf[MentionSticker]
+    inline def mentionReel(mediaInfo: User, additional: PartialStickerOptionsMent): MentionSticker = (^.asInstanceOf[js.Dynamic].applyDynamic("mentionReel")(mediaInfo.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[MentionSticker]
     
-    @scala.inline
-    def poll(options: StickerOptionsPollSticker): PollSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("poll")(options.asInstanceOf[js.Any]).asInstanceOf[PollSticker]
+    inline def poll(options: StickerOptionsPollSticker): PollSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("poll")(options.asInstanceOf[js.Any]).asInstanceOf[PollSticker]
     
-    @scala.inline
-    def question(options: StickerOptionsQuestionSti): QuestionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("question")(options.asInstanceOf[js.Any]).asInstanceOf[QuestionSticker]
+    inline def question(options: StickerOptionsQuestionSti): QuestionSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("question")(options.asInstanceOf[js.Any]).asInstanceOf[QuestionSticker]
     
-    @scala.inline
-    def quiz(options: StickerOptionsQuizSticker): QuizSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("quiz")(options.asInstanceOf[js.Any]).asInstanceOf[QuizSticker]
+    inline def quiz(options: StickerOptionsQuizSticker): QuizSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("quiz")(options.asInstanceOf[js.Any]).asInstanceOf[QuizSticker]
     
-    @scala.inline
-    def slider(options: StickerOptionsSliderStick): SliderSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")(options.asInstanceOf[js.Any]).asInstanceOf[SliderSticker]
+    inline def slider(options: StickerOptionsSliderStick): SliderSticker = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")(options.asInstanceOf[js.Any]).asInstanceOf[SliderSticker]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -97,17 +83,14 @@ object stickerBuilderStickerBuilderMod {
   }
   object StickerConfig {
     
-    @scala.inline
-    def apply(story_sticker_ids: String): StickerConfig = {
+    inline def apply(story_sticker_ids: String): StickerConfig = {
       val __obj = js.Dynamic.literal(story_sticker_ids = story_sticker_ids.asInstanceOf[js.Any])
       __obj.asInstanceOf[StickerConfig]
     }
     
-    @scala.inline
-    implicit class StickerConfigMutableBuilder[Self <: StickerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StickerConfig](x: Self) {
       
-      @scala.inline
-      def setStory_sticker_ids(value: String): Self = StObject.set(x, "story_sticker_ids", value.asInstanceOf[js.Any])
+      inline def setStory_sticker_ids(value: String): Self = StObject.set(x, "story_sticker_ids", value.asInstanceOf[js.Any])
     }
   }
   

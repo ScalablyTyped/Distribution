@@ -48,16 +48,14 @@ object Module {
     * function.
     * @param url
     */
-  @scala.inline
-  def createLoader(url: String): ModuleLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoader")(url.asInstanceOf[js.Any]).asInstanceOf[ModuleLoader]
+  inline def createLoader(url: String): ModuleLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoader")(url.asInstanceOf[js.Any]).asInstanceOf[ModuleLoader]
   
   /**
     * Creates a "require" function that finds a module relative to the given path. If found the exports are
     * returned. Throws if no matching module can be found.
     * @param path An absolute path, beginning with "/". The path does not have to point to an existing file.
     */
-  @scala.inline
-  def createRequire(path: String): js.Function1[/* request */ String, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* request */ String, js.Object]]
+  inline def createRequire(path: String): js.Function1[/* request */ String, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* request */ String, js.Object]]
   
   /**
     * Evaluates the given JavaScript code and returns the result of the last expression. The url is used to
@@ -65,8 +63,7 @@ object Module {
     * @param code
     * @param url
     */
-  @scala.inline
-  def execute(code: String, url: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def execute(code: String, url: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Returns the source map object (decoded from base64 and parsed from JSON) for the JavaScript file of
@@ -74,8 +71,7 @@ object Module {
     * side-loaded via the tabris CLI `serve` command.
     * @param url
     */
-  @scala.inline
-  def getSourceMap(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceMap")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSourceMap(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceMap")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Loads a text from the given (local or http) url and returns its content. File is expected to be utf-8
@@ -83,8 +79,7 @@ object Module {
     * file system API to read a text file.
     * @param url
     */
-  @scala.inline
-  def load(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def load(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Loads the JSON file from the given (local or http) url, parses it and returns the result. This is a
@@ -92,6 +87,5 @@ object Module {
     * obtain and parse a JSON file.
     * @param url
     */
-  @scala.inline
-  def readJSON(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def readJSON(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

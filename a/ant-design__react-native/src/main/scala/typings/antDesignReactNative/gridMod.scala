@@ -27,8 +27,7 @@ object gridMod {
     @JSImport("@ant-design/react-native/lib/grid", "default.defaultProps")
     @js.native
     def defaultProps: GridProps = js.native
-    @scala.inline
-    def defaultProps_=(x: GridProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: GridProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -49,29 +48,22 @@ object gridMod {
   }
   object GridProps {
     
-    @scala.inline
-    def apply(carouselMaxRow: Double, columnNum: Double): GridProps = {
+    inline def apply(carouselMaxRow: Double, columnNum: Double): GridProps = {
       val __obj = js.Dynamic.literal(carouselMaxRow = carouselMaxRow.asInstanceOf[js.Any], columnNum = columnNum.asInstanceOf[js.Any])
       __obj.asInstanceOf[GridProps]
     }
     
-    @scala.inline
-    implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridProps](x: Self) {
       
-      @scala.inline
-      def setCarouselProps(value: CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
+      inline def setCarouselProps(value: CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselPropsUndefined: Self = StObject.set(x, "carouselProps", js.undefined)
+      inline def setCarouselPropsUndefined: Self = StObject.set(x, "carouselProps", js.undefined)
       
-      @scala.inline
-      def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
+      inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
       
-      @scala.inline
-      def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     }
   }
 }

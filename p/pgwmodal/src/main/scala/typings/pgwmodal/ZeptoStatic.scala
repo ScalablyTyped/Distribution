@@ -25,16 +25,13 @@ trait ZeptoStatic extends StObject {
 }
 object ZeptoStatic {
   
-  @scala.inline
-  def apply(pgwModal: PgwModalMethod): ZeptoStatic = {
+  inline def apply(pgwModal: PgwModalMethod): ZeptoStatic = {
     val __obj = js.Dynamic.literal(pgwModal = pgwModal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoStatic]
   }
   
-  @scala.inline
-  implicit class ZeptoStaticMutableBuilder[Self <: ZeptoStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ZeptoStatic](x: Self) {
     
-    @scala.inline
-    def setPgwModal(value: PgwModalMethod): Self = StObject.set(x, "pgwModal", value.asInstanceOf[js.Any])
+    inline def setPgwModal(value: PgwModalMethod): Self = StObject.set(x, "pgwModal", value.asInstanceOf[js.Any])
   }
 }

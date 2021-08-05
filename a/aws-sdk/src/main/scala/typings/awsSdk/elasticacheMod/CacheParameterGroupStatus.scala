@@ -23,34 +23,25 @@ trait CacheParameterGroupStatus extends StObject {
 }
 object CacheParameterGroupStatus {
   
-  @scala.inline
-  def apply(): CacheParameterGroupStatus = {
+  inline def apply(): CacheParameterGroupStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheParameterGroupStatus]
   }
   
-  @scala.inline
-  implicit class CacheParameterGroupStatusMutableBuilder[Self <: CacheParameterGroupStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CacheParameterGroupStatus](x: Self) {
     
-    @scala.inline
-    def setCacheNodeIdsToReboot(value: CacheNodeIdsList): Self = StObject.set(x, "CacheNodeIdsToReboot", value.asInstanceOf[js.Any])
+    inline def setCacheNodeIdsToReboot(value: CacheNodeIdsList): Self = StObject.set(x, "CacheNodeIdsToReboot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeIdsToRebootUndefined: Self = StObject.set(x, "CacheNodeIdsToReboot", js.undefined)
+    inline def setCacheNodeIdsToRebootUndefined: Self = StObject.set(x, "CacheNodeIdsToReboot", js.undefined)
     
-    @scala.inline
-    def setCacheNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToReboot", js.Array(value :_*))
+    inline def setCacheNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToReboot", js.Array(value :_*))
     
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
+    inline def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
     
-    @scala.inline
-    def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
+    inline def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
+    inline def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
   }
 }

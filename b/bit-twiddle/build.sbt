@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bit-twiddle"
-version := "1.0-dt-20200515Z-83812b"
+version := "1.0-dt-20200515Z-3f1c82"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

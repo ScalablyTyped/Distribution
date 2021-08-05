@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumericOperator extends StObject
 object NumericOperator {
   
-  @scala.inline
-  def NUMERIC_GREATER_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN = "NUMERIC_GREATER_THAN".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN]
+  inline def NUMERIC_GREATER_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN = "NUMERIC_GREATER_THAN".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN]
   
-  @scala.inline
-  def NUMERIC_GREATER_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL = "NUMERIC_GREATER_THAN_OR_EQUAL".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL]
+  inline def NUMERIC_GREATER_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL = "NUMERIC_GREATER_THAN_OR_EQUAL".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL]
   
-  @scala.inline
-  def NUMERIC_LESS_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN = "NUMERIC_LESS_THAN".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN]
+  inline def NUMERIC_LESS_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN = "NUMERIC_LESS_THAN".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN]
   
-  @scala.inline
-  def NUMERIC_LESS_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL = "NUMERIC_LESS_THAN_OR_EQUAL".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL]
+  inline def NUMERIC_LESS_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL = "NUMERIC_LESS_THAN_OR_EQUAL".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL]
 }

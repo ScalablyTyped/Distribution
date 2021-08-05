@@ -13,7 +13,7 @@ class Attribute () extends StObject {
   
   val json: AttributeJson = js.native
   
-  var `type`: String = js.native
+  /* private */ var `type`: String = js.native
   
   /**
     *  Array of string values, binaries are represented in base64.
@@ -30,9 +30,7 @@ object Attribute {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compare(a: Attribute, b: Attribute): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(a: Attribute, b: Attribute): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def isAttribute(`object`: js.Any): /* is ldapjs.ldapjs.Attribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttribute")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is ldapjs.ldapjs.Attribute */ Boolean]
+  inline def isAttribute(`object`: js.Any): /* is ldapjs.ldapjs.Attribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttribute")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is ldapjs.ldapjs.Attribute */ Boolean]
 }

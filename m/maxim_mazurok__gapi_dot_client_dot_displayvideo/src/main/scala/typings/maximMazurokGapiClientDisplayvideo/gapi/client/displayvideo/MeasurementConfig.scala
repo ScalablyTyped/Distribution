@@ -14,25 +14,19 @@ trait MeasurementConfig extends StObject {
 }
 object MeasurementConfig {
   
-  @scala.inline
-  def apply(): MeasurementConfig = {
+  inline def apply(): MeasurementConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeasurementConfig]
   }
   
-  @scala.inline
-  implicit class MeasurementConfigMutableBuilder[Self <: MeasurementConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MeasurementConfig](x: Self) {
     
-    @scala.inline
-    def setDv360ToCmCostReportingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
+    inline def setDv360ToCmCostReportingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDv360ToCmCostReportingEnabledUndefined: Self = StObject.set(x, "dv360ToCmCostReportingEnabled", js.undefined)
+    inline def setDv360ToCmCostReportingEnabledUndefined: Self = StObject.set(x, "dv360ToCmCostReportingEnabled", js.undefined)
     
-    @scala.inline
-    def setDv360ToCmDataSharingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmDataSharingEnabled", value.asInstanceOf[js.Any])
+    inline def setDv360ToCmDataSharingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmDataSharingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDv360ToCmDataSharingEnabledUndefined: Self = StObject.set(x, "dv360ToCmDataSharingEnabled", js.undefined)
+    inline def setDv360ToCmDataSharingEnabledUndefined: Self = StObject.set(x, "dv360ToCmDataSharingEnabled", js.undefined)
   }
 }

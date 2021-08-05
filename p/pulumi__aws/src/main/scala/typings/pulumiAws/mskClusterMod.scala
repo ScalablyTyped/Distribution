@@ -128,21 +128,16 @@ object mskClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/msk/cluster.Cluster */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/msk/cluster.Cluster */ Boolean]
   }
   
   trait ClusterArgs extends StObject {
@@ -204,8 +199,7 @@ object mskClusterMod {
   }
   object ClusterArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       brokerNodeGroupInfo: Input[typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo],
       kafkaVersion: Input[String],
       numberOfBrokerNodes: Input[Double]
@@ -214,65 +208,45 @@ object mskClusterMod {
       __obj.asInstanceOf[ClusterArgs]
     }
     
-    @scala.inline
-    implicit class ClusterArgsMutableBuilder[Self <: ClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterArgs](x: Self) {
       
-      @scala.inline
-      def setBrokerNodeGroupInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo]): Self = StObject.set(x, "brokerNodeGroupInfo", value.asInstanceOf[js.Any])
+      inline def setBrokerNodeGroupInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo]): Self = StObject.set(x, "brokerNodeGroupInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientAuthentication(value: Input[typings.pulumiAws.inputMod.msk.ClusterClientAuthentication]): Self = StObject.set(x, "clientAuthentication", value.asInstanceOf[js.Any])
+      inline def setClientAuthentication(value: Input[typings.pulumiAws.inputMod.msk.ClusterClientAuthentication]): Self = StObject.set(x, "clientAuthentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientAuthenticationUndefined: Self = StObject.set(x, "clientAuthentication", js.undefined)
+      inline def setClientAuthenticationUndefined: Self = StObject.set(x, "clientAuthentication", js.undefined)
       
-      @scala.inline
-      def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+      inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
       
-      @scala.inline
-      def setConfigurationInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterConfigurationInfo]): Self = StObject.set(x, "configurationInfo", value.asInstanceOf[js.Any])
+      inline def setConfigurationInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterConfigurationInfo]): Self = StObject.set(x, "configurationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationInfoUndefined: Self = StObject.set(x, "configurationInfo", js.undefined)
+      inline def setConfigurationInfoUndefined: Self = StObject.set(x, "configurationInfo", js.undefined)
       
-      @scala.inline
-      def setEncryptionInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterEncryptionInfo]): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
+      inline def setEncryptionInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterEncryptionInfo]): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionInfoUndefined: Self = StObject.set(x, "encryptionInfo", js.undefined)
+      inline def setEncryptionInfoUndefined: Self = StObject.set(x, "encryptionInfo", js.undefined)
       
-      @scala.inline
-      def setEnhancedMonitoring(value: Input[String]): Self = StObject.set(x, "enhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: Input[String]): Self = StObject.set(x, "enhancedMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedMonitoringUndefined: Self = StObject.set(x, "enhancedMonitoring", js.undefined)
+      inline def setEnhancedMonitoringUndefined: Self = StObject.set(x, "enhancedMonitoring", js.undefined)
       
-      @scala.inline
-      def setKafkaVersion(value: Input[String]): Self = StObject.set(x, "kafkaVersion", value.asInstanceOf[js.Any])
+      inline def setKafkaVersion(value: Input[String]): Self = StObject.set(x, "kafkaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterLoggingInfo]): Self = StObject.set(x, "loggingInfo", value.asInstanceOf[js.Any])
+      inline def setLoggingInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterLoggingInfo]): Self = StObject.set(x, "loggingInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingInfoUndefined: Self = StObject.set(x, "loggingInfo", js.undefined)
+      inline def setLoggingInfoUndefined: Self = StObject.set(x, "loggingInfo", js.undefined)
       
-      @scala.inline
-      def setNumberOfBrokerNodes(value: Input[Double]): Self = StObject.set(x, "numberOfBrokerNodes", value.asInstanceOf[js.Any])
+      inline def setNumberOfBrokerNodes(value: Input[Double]): Self = StObject.set(x, "numberOfBrokerNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenMonitoring(value: Input[typings.pulumiAws.inputMod.msk.ClusterOpenMonitoring]): Self = StObject.set(x, "openMonitoring", value.asInstanceOf[js.Any])
+      inline def setOpenMonitoring(value: Input[typings.pulumiAws.inputMod.msk.ClusterOpenMonitoring]): Self = StObject.set(x, "openMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenMonitoringUndefined: Self = StObject.set(x, "openMonitoring", js.undefined)
+      inline def setOpenMonitoringUndefined: Self = StObject.set(x, "openMonitoring", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -361,110 +335,76 @@ object mskClusterMod {
   }
   object ClusterState {
     
-    @scala.inline
-    def apply(): ClusterState = {
+    inline def apply(): ClusterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterState]
     }
     
-    @scala.inline
-    implicit class ClusterStateMutableBuilder[Self <: ClusterState] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBootstrapBrokers(value: Input[String]): Self = StObject.set(x, "bootstrapBrokers", value.asInstanceOf[js.Any])
+      inline def setBootstrapBrokers(value: Input[String]): Self = StObject.set(x, "bootstrapBrokers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrapBrokersTls(value: Input[String]): Self = StObject.set(x, "bootstrapBrokersTls", value.asInstanceOf[js.Any])
+      inline def setBootstrapBrokersTls(value: Input[String]): Self = StObject.set(x, "bootstrapBrokersTls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrapBrokersTlsUndefined: Self = StObject.set(x, "bootstrapBrokersTls", js.undefined)
+      inline def setBootstrapBrokersTlsUndefined: Self = StObject.set(x, "bootstrapBrokersTls", js.undefined)
       
-      @scala.inline
-      def setBootstrapBrokersUndefined: Self = StObject.set(x, "bootstrapBrokers", js.undefined)
+      inline def setBootstrapBrokersUndefined: Self = StObject.set(x, "bootstrapBrokers", js.undefined)
       
-      @scala.inline
-      def setBrokerNodeGroupInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo]): Self = StObject.set(x, "brokerNodeGroupInfo", value.asInstanceOf[js.Any])
+      inline def setBrokerNodeGroupInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo]): Self = StObject.set(x, "brokerNodeGroupInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerNodeGroupInfoUndefined: Self = StObject.set(x, "brokerNodeGroupInfo", js.undefined)
+      inline def setBrokerNodeGroupInfoUndefined: Self = StObject.set(x, "brokerNodeGroupInfo", js.undefined)
       
-      @scala.inline
-      def setClientAuthentication(value: Input[typings.pulumiAws.inputMod.msk.ClusterClientAuthentication]): Self = StObject.set(x, "clientAuthentication", value.asInstanceOf[js.Any])
+      inline def setClientAuthentication(value: Input[typings.pulumiAws.inputMod.msk.ClusterClientAuthentication]): Self = StObject.set(x, "clientAuthentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientAuthenticationUndefined: Self = StObject.set(x, "clientAuthentication", js.undefined)
+      inline def setClientAuthenticationUndefined: Self = StObject.set(x, "clientAuthentication", js.undefined)
       
-      @scala.inline
-      def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+      inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
       
-      @scala.inline
-      def setConfigurationInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterConfigurationInfo]): Self = StObject.set(x, "configurationInfo", value.asInstanceOf[js.Any])
+      inline def setConfigurationInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterConfigurationInfo]): Self = StObject.set(x, "configurationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationInfoUndefined: Self = StObject.set(x, "configurationInfo", js.undefined)
+      inline def setConfigurationInfoUndefined: Self = StObject.set(x, "configurationInfo", js.undefined)
       
-      @scala.inline
-      def setCurrentVersion(value: Input[String]): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
+      inline def setCurrentVersion(value: Input[String]): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
+      inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
       
-      @scala.inline
-      def setEncryptionInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterEncryptionInfo]): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
+      inline def setEncryptionInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterEncryptionInfo]): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionInfoUndefined: Self = StObject.set(x, "encryptionInfo", js.undefined)
+      inline def setEncryptionInfoUndefined: Self = StObject.set(x, "encryptionInfo", js.undefined)
       
-      @scala.inline
-      def setEnhancedMonitoring(value: Input[String]): Self = StObject.set(x, "enhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: Input[String]): Self = StObject.set(x, "enhancedMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedMonitoringUndefined: Self = StObject.set(x, "enhancedMonitoring", js.undefined)
+      inline def setEnhancedMonitoringUndefined: Self = StObject.set(x, "enhancedMonitoring", js.undefined)
       
-      @scala.inline
-      def setKafkaVersion(value: Input[String]): Self = StObject.set(x, "kafkaVersion", value.asInstanceOf[js.Any])
+      inline def setKafkaVersion(value: Input[String]): Self = StObject.set(x, "kafkaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafkaVersionUndefined: Self = StObject.set(x, "kafkaVersion", js.undefined)
+      inline def setKafkaVersionUndefined: Self = StObject.set(x, "kafkaVersion", js.undefined)
       
-      @scala.inline
-      def setLoggingInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterLoggingInfo]): Self = StObject.set(x, "loggingInfo", value.asInstanceOf[js.Any])
+      inline def setLoggingInfo(value: Input[typings.pulumiAws.inputMod.msk.ClusterLoggingInfo]): Self = StObject.set(x, "loggingInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingInfoUndefined: Self = StObject.set(x, "loggingInfo", js.undefined)
+      inline def setLoggingInfoUndefined: Self = StObject.set(x, "loggingInfo", js.undefined)
       
-      @scala.inline
-      def setNumberOfBrokerNodes(value: Input[Double]): Self = StObject.set(x, "numberOfBrokerNodes", value.asInstanceOf[js.Any])
+      inline def setNumberOfBrokerNodes(value: Input[Double]): Self = StObject.set(x, "numberOfBrokerNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfBrokerNodesUndefined: Self = StObject.set(x, "numberOfBrokerNodes", js.undefined)
+      inline def setNumberOfBrokerNodesUndefined: Self = StObject.set(x, "numberOfBrokerNodes", js.undefined)
       
-      @scala.inline
-      def setOpenMonitoring(value: Input[typings.pulumiAws.inputMod.msk.ClusterOpenMonitoring]): Self = StObject.set(x, "openMonitoring", value.asInstanceOf[js.Any])
+      inline def setOpenMonitoring(value: Input[typings.pulumiAws.inputMod.msk.ClusterOpenMonitoring]): Self = StObject.set(x, "openMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenMonitoringUndefined: Self = StObject.set(x, "openMonitoring", js.undefined)
+      inline def setOpenMonitoringUndefined: Self = StObject.set(x, "openMonitoring", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setZookeeperConnectString(value: Input[String]): Self = StObject.set(x, "zookeeperConnectString", value.asInstanceOf[js.Any])
+      inline def setZookeeperConnectString(value: Input[String]): Self = StObject.set(x, "zookeeperConnectString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZookeeperConnectStringUndefined: Self = StObject.set(x, "zookeeperConnectString", js.undefined)
+      inline def setZookeeperConnectStringUndefined: Self = StObject.set(x, "zookeeperConnectString", js.undefined)
     }
   }
 }

@@ -125,8 +125,7 @@ object TextMetrics {
   @JSImport("pixi.js", "TextMetrics.BASELINE_MULTIPLIER")
   @js.native
   def BASELINE_MULTIPLIER: Double = js.native
-  @scala.inline
-  def BASELINE_MULTIPLIER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_MULTIPLIER")(x.asInstanceOf[js.Any])
+  inline def BASELINE_MULTIPLIER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_MULTIPLIER")(x.asInstanceOf[js.Any])
   
   /**
     * Baseline symbol for calculate font metrics.
@@ -141,8 +140,7 @@ object TextMetrics {
   @JSImport("pixi.js", "TextMetrics.BASELINE_SYMBOL")
   @js.native
   def BASELINE_SYMBOL: String = js.native
-  @scala.inline
-  def BASELINE_SYMBOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_SYMBOL")(x.asInstanceOf[js.Any])
+  inline def BASELINE_SYMBOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_SYMBOL")(x.asInstanceOf[js.Any])
   
   /**
     * String used for calculate font metrics.
@@ -158,8 +156,7 @@ object TextMetrics {
   @JSImport("pixi.js", "TextMetrics.METRICS_STRING")
   @js.native
   def METRICS_STRING: String = js.native
-  @scala.inline
-  def METRICS_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METRICS_STRING")(x.asInstanceOf[js.Any])
+  inline def METRICS_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METRICS_STRING")(x.asInstanceOf[js.Any])
   
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
@@ -177,8 +174,7 @@ object TextMetrics {
     * @return {boolean} whether to break word or not
     */
   /* static member */
-  @scala.inline
-  def canBreakChars(char: String, nextChar: String, token: String, index: Double, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakChars")(char.asInstanceOf[js.Any], nextChar.asInstanceOf[js.Any], token.asInstanceOf[js.Any], index.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canBreakChars(char: String, nextChar: String, token: String, index: Double, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakChars")(char.asInstanceOf[js.Any], nextChar.asInstanceOf[js.Any], token.asInstanceOf[js.Any], index.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
@@ -192,8 +188,7 @@ object TextMetrics {
     * @return {boolean} whether to break word or not
     */
   /* static member */
-  @scala.inline
-  def canBreakWords(token: String, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakWords")(token.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canBreakWords(token: String, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakWords")(token.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Clear font metrics in metrics cache.
@@ -202,10 +197,8 @@ object TextMetrics {
     * @param {string} [font] - font name. If font name not set then clear cache for all fonts.
     */
   /* static member */
-  @scala.inline
-  def clearMetrics(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearMetrics")().asInstanceOf[Unit]
-  @scala.inline
-  def clearMetrics(font: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearMetrics")(font.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearMetrics(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearMetrics")().asInstanceOf[Unit]
+  inline def clearMetrics(font: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearMetrics")(font.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Calculates the ascent, descent and fontSize of a given font-style
@@ -215,8 +208,7 @@ object TextMetrics {
     * @return {PIXI.IFontMetrics} Font properties object
     */
   /* static member */
-  @scala.inline
-  def measureFont(font: String): IFontMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFont")(font.asInstanceOf[js.Any]).asInstanceOf[IFontMetrics]
+  inline def measureFont(font: String): IFontMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFont")(font.asInstanceOf[js.Any]).asInstanceOf[IFontMetrics]
   
   /**
     * Measures the supplied string of text and returns a Rectangle.
@@ -228,14 +220,10 @@ object TextMetrics {
     * @return {PIXI.TextMetrics} measured width and height of the text.
     */
   /* static member */
-  @scala.inline
-  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
-  @scala.inline
-  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
-  @scala.inline
-  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
-  @scala.inline
-  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Unit, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
+  inline def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
+  inline def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
+  inline def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
+  inline def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Unit, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
   
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
@@ -252,6 +240,5 @@ object TextMetrics {
     * @return {string[]} The characters of the token
     */
   /* static member */
-  @scala.inline
-  def wordWrapSplit(token: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrapSplit")(token.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def wordWrapSplit(token: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrapSplit")(token.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

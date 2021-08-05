@@ -81,21 +81,16 @@ object eipAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EipAssociationState): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EipAssociationState, opts: CustomResourceOptions): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
+    inline def get(name: String, id: Input[ID]): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
+    inline def get(name: String, id: Input[ID], state: EipAssociationState): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
+    inline def get(name: String, id: Input[ID], state: EipAssociationState, opts: CustomResourceOptions): EipAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EipAssociation]
     
     /**
       * Returns true if the given object is an instance of EipAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ Boolean]
   }
   
   trait EipAssociationArgs extends StObject {
@@ -141,50 +136,36 @@ object eipAssociationMod {
   }
   object EipAssociationArgs {
     
-    @scala.inline
-    def apply(): EipAssociationArgs = {
+    inline def apply(): EipAssociationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EipAssociationArgs]
     }
     
-    @scala.inline
-    implicit class EipAssociationArgsMutableBuilder[Self <: EipAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EipAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setAllocationId(value: Input[String]): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
+      inline def setAllocationId(value: Input[String]): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
+      inline def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
       
-      @scala.inline
-      def setAllowReassociation(value: Input[Boolean]): Self = StObject.set(x, "allowReassociation", value.asInstanceOf[js.Any])
+      inline def setAllowReassociation(value: Input[Boolean]): Self = StObject.set(x, "allowReassociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowReassociationUndefined: Self = StObject.set(x, "allowReassociation", js.undefined)
+      inline def setAllowReassociationUndefined: Self = StObject.set(x, "allowReassociation", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
+      inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
       
-      @scala.inline
-      def setPrivateIpAddress(value: Input[String]): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
+      inline def setPrivateIpAddress(value: Input[String]): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
+      inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
       
-      @scala.inline
-      def setPublicIp(value: Input[String]): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+      inline def setPublicIp(value: Input[String]): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
+      inline def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
     }
   }
   
@@ -231,50 +212,36 @@ object eipAssociationMod {
   }
   object EipAssociationState {
     
-    @scala.inline
-    def apply(): EipAssociationState = {
+    inline def apply(): EipAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EipAssociationState]
     }
     
-    @scala.inline
-    implicit class EipAssociationStateMutableBuilder[Self <: EipAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: EipAssociationState](x: Self) {
       
-      @scala.inline
-      def setAllocationId(value: Input[String]): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
+      inline def setAllocationId(value: Input[String]): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
+      inline def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
       
-      @scala.inline
-      def setAllowReassociation(value: Input[Boolean]): Self = StObject.set(x, "allowReassociation", value.asInstanceOf[js.Any])
+      inline def setAllowReassociation(value: Input[Boolean]): Self = StObject.set(x, "allowReassociation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowReassociationUndefined: Self = StObject.set(x, "allowReassociation", js.undefined)
+      inline def setAllowReassociationUndefined: Self = StObject.set(x, "allowReassociation", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
+      inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
       
-      @scala.inline
-      def setPrivateIpAddress(value: Input[String]): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
+      inline def setPrivateIpAddress(value: Input[String]): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
+      inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
       
-      @scala.inline
-      def setPublicIp(value: Input[String]): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+      inline def setPublicIp(value: Input[String]): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
+      inline def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
     }
   }
 }

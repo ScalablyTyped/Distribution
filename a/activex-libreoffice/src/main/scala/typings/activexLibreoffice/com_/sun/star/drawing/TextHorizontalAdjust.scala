@@ -27,12 +27,10 @@ object TextHorizontalAdjust {
     *
     * The text extends from the top to the bottom edge of the shape.
     */
-  @scala.inline
-  def BLOCK: `3` = 3.asInstanceOf[`3`]
+  inline def BLOCK: `3` = 3.asInstanceOf[`3`]
   
   /** The text is centered inside the shape. */
-  @scala.inline
-  def CENTER: `1` = 1.asInstanceOf[`1`]
+  inline def CENTER: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the connection line leaves the connected object to the left,
@@ -41,8 +39,7 @@ object TextHorizontalAdjust {
     *
     * The left edge of the text is adjusted to the left edge of the shape.
     */
-  @scala.inline
-  def LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def LEFT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the connection line leaves the connected object to the right,
@@ -51,6 +48,5 @@ object TextHorizontalAdjust {
     *
     * The right edge of the text is adjusted to the right edge of the shape.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
 }

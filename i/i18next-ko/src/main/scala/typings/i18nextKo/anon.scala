@@ -13,17 +13,14 @@ object anon {
   }
   object Translation {
     
-    @scala.inline
-    def apply(translation: StringDictionary[String]): Translation = {
+    inline def apply(translation: StringDictionary[String]): Translation = {
       val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Translation]
     }
     
-    @scala.inline
-    implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
+    extension [Self <: Translation](x: Self) {
       
-      @scala.inline
-      def setTranslation(value: StringDictionary[String]): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+      inline def setTranslation(value: StringDictionary[String]): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     }
   }
 }

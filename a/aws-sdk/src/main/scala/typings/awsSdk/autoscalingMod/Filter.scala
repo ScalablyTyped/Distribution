@@ -18,28 +18,21 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(): Filter = {
+  inline def apply(): Filter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: XmlString*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: XmlString*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

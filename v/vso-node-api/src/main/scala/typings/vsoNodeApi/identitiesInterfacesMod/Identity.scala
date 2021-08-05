@@ -44,8 +44,7 @@ trait Identity extends StObject {
 }
 object Identity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customDisplayName: String,
     descriptor: IdentityDescriptor,
     id: String,
@@ -66,61 +65,42 @@ object Identity {
     __obj.asInstanceOf[Identity]
   }
   
-  @scala.inline
-  implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+  extension [Self <: Identity](x: Self) {
     
-    @scala.inline
-    def setCustomDisplayName(value: String): Self = StObject.set(x, "customDisplayName", value.asInstanceOf[js.Any])
+    inline def setCustomDisplayName(value: String): Self = StObject.set(x, "customDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptor(value: IdentityDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: IdentityDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsContainer(value: Boolean): Self = StObject.set(x, "isContainer", value.asInstanceOf[js.Any])
+    inline def setIsContainer(value: Boolean): Self = StObject.set(x, "isContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterId(value: String): Self = StObject.set(x, "masterId", value.asInstanceOf[js.Any])
+    inline def setMasterId(value: String): Self = StObject.set(x, "masterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberIds(value: js.Array[String]): Self = StObject.set(x, "memberIds", value.asInstanceOf[js.Any])
+    inline def setMemberIds(value: js.Array[String]): Self = StObject.set(x, "memberIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberIdsVarargs(value: String*): Self = StObject.set(x, "memberIds", js.Array(value :_*))
+    inline def setMemberIdsVarargs(value: String*): Self = StObject.set(x, "memberIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMemberOf(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
+    inline def setMemberOf(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberOfVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
+    inline def setMemberOfVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
     
-    @scala.inline
-    def setMembers(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setMetaTypeId(value: Double): Self = StObject.set(x, "metaTypeId", value.asInstanceOf[js.Any])
+    inline def setMetaTypeId(value: Double): Self = StObject.set(x, "metaTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderDisplayName(value: String): Self = StObject.set(x, "providerDisplayName", value.asInstanceOf[js.Any])
+    inline def setProviderDisplayName(value: String): Self = StObject.set(x, "providerDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectDescriptor(value: String): Self = StObject.set(x, "subjectDescriptor", value.asInstanceOf[js.Any])
+    inline def setSubjectDescriptor(value: String): Self = StObject.set(x, "subjectDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUserId(value: Double): Self = StObject.set(x, "uniqueUserId", value.asInstanceOf[js.Any])
+    inline def setUniqueUserId(value: Double): Self = StObject.set(x, "uniqueUserId", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait XmlEntityReference
      with IXmlEntityReference
 object XmlEntityReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,

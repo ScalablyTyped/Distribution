@@ -21,43 +21,31 @@ trait InvitedUserMessageInfo extends StObject {
 }
 object InvitedUserMessageInfo {
   
-  @scala.inline
-  def apply(): InvitedUserMessageInfo = {
+  inline def apply(): InvitedUserMessageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvitedUserMessageInfo]
   }
   
-  @scala.inline
-  implicit class InvitedUserMessageInfoMutableBuilder[Self <: InvitedUserMessageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InvitedUserMessageInfo](x: Self) {
     
-    @scala.inline
-    def setCcRecipients(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
+    inline def setCcRecipients(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcRecipientsNull: Self = StObject.set(x, "ccRecipients", null)
+    inline def setCcRecipientsNull: Self = StObject.set(x, "ccRecipients", null)
     
-    @scala.inline
-    def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
+    inline def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
     
-    @scala.inline
-    def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
+    inline def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomizedMessageBody(value: NullableOption[String]): Self = StObject.set(x, "customizedMessageBody", value.asInstanceOf[js.Any])
+    inline def setCustomizedMessageBody(value: NullableOption[String]): Self = StObject.set(x, "customizedMessageBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomizedMessageBodyNull: Self = StObject.set(x, "customizedMessageBody", null)
+    inline def setCustomizedMessageBodyNull: Self = StObject.set(x, "customizedMessageBody", null)
     
-    @scala.inline
-    def setCustomizedMessageBodyUndefined: Self = StObject.set(x, "customizedMessageBody", js.undefined)
+    inline def setCustomizedMessageBodyUndefined: Self = StObject.set(x, "customizedMessageBody", js.undefined)
     
-    @scala.inline
-    def setMessageLanguage(value: NullableOption[String]): Self = StObject.set(x, "messageLanguage", value.asInstanceOf[js.Any])
+    inline def setMessageLanguage(value: NullableOption[String]): Self = StObject.set(x, "messageLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageLanguageNull: Self = StObject.set(x, "messageLanguage", null)
+    inline def setMessageLanguageNull: Self = StObject.set(x, "messageLanguage", null)
     
-    @scala.inline
-    def setMessageLanguageUndefined: Self = StObject.set(x, "messageLanguage", js.undefined)
+    inline def setMessageLanguageUndefined: Self = StObject.set(x, "messageLanguage", js.undefined)
   }
 }

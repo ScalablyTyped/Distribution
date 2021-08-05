@@ -38,31 +38,23 @@ trait SchemaLayoutPlaceholderIdMapping extends StObject {
 }
 object SchemaLayoutPlaceholderIdMapping {
   
-  @scala.inline
-  def apply(): SchemaLayoutPlaceholderIdMapping = {
+  inline def apply(): SchemaLayoutPlaceholderIdMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLayoutPlaceholderIdMapping]
   }
   
-  @scala.inline
-  implicit class SchemaLayoutPlaceholderIdMappingMutableBuilder[Self <: SchemaLayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLayoutPlaceholderIdMapping](x: Self) {
     
-    @scala.inline
-    def setLayoutPlaceholder(value: SchemaPlaceholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
+    inline def setLayoutPlaceholder(value: SchemaPlaceholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutPlaceholderObjectId(value: String): Self = StObject.set(x, "layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
+    inline def setLayoutPlaceholderObjectId(value: String): Self = StObject.set(x, "layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutPlaceholderObjectIdUndefined: Self = StObject.set(x, "layoutPlaceholderObjectId", js.undefined)
+    inline def setLayoutPlaceholderObjectIdUndefined: Self = StObject.set(x, "layoutPlaceholderObjectId", js.undefined)
     
-    @scala.inline
-    def setLayoutPlaceholderUndefined: Self = StObject.set(x, "layoutPlaceholder", js.undefined)
+    inline def setLayoutPlaceholderUndefined: Self = StObject.set(x, "layoutPlaceholder", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

@@ -21,28 +21,21 @@ trait PullsDismissReviewEndpoint extends StObject {
 }
 object PullsDismissReviewEndpoint {
   
-  @scala.inline
-  def apply(message: String, owner: String, pull_number: Double, repo: String, review_id: Double): PullsDismissReviewEndpoint = {
+  inline def apply(message: String, owner: String, pull_number: Double, repo: String, review_id: Double): PullsDismissReviewEndpoint = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], review_id = review_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsDismissReviewEndpoint]
   }
   
-  @scala.inline
-  implicit class PullsDismissReviewEndpointMutableBuilder[Self <: PullsDismissReviewEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: PullsDismissReviewEndpoint](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
+    inline def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReview_id(value: Double): Self = StObject.set(x, "review_id", value.asInstanceOf[js.Any])
+    inline def setReview_id(value: Double): Self = StObject.set(x, "review_id", value.asInstanceOf[js.Any])
   }
 }

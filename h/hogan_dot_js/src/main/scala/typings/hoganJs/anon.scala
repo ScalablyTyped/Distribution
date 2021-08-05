@@ -22,38 +22,28 @@ object anon {
   }
   object HoganOptionsasStringfalse {
     
-    @scala.inline
-    def apply(asString: js.UndefOr[Boolean] & `false`): HoganOptionsasStringfalse = {
+    inline def apply(asString: js.UndefOr[Boolean] & `false`): HoganOptionsasStringfalse = {
       val __obj = js.Dynamic.literal(asString = asString.asInstanceOf[js.Any])
       __obj.asInstanceOf[HoganOptionsasStringfalse]
     }
     
-    @scala.inline
-    implicit class HoganOptionsasStringfalseMutableBuilder[Self <: HoganOptionsasStringfalse] (val x: Self) extends AnyVal {
+    extension [Self <: HoganOptionsasStringfalse](x: Self) {
       
-      @scala.inline
-      def setAsString(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
+      inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      @scala.inline
-      def setDisableLambda(value: Boolean): Self = StObject.set(x, "disableLambda", value.asInstanceOf[js.Any])
+      inline def setDisableLambda(value: Boolean): Self = StObject.set(x, "disableLambda", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableLambdaUndefined: Self = StObject.set(x, "disableLambda", js.undefined)
+      inline def setDisableLambdaUndefined: Self = StObject.set(x, "disableLambda", js.undefined)
       
-      @scala.inline
-      def setSectionTags(value: js.Array[SectionTags]): Self = StObject.set(x, "sectionTags", value.asInstanceOf[js.Any])
+      inline def setSectionTags(value: js.Array[SectionTags]): Self = StObject.set(x, "sectionTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionTagsUndefined: Self = StObject.set(x, "sectionTags", js.undefined)
+      inline def setSectionTagsUndefined: Self = StObject.set(x, "sectionTags", js.undefined)
       
-      @scala.inline
-      def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value :_*))
+      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value :_*))
     }
   }
   
@@ -70,38 +60,28 @@ object anon {
   }
   object HoganOptionsasStringtrue {
     
-    @scala.inline
-    def apply(asString: js.UndefOr[Boolean] & `true`): HoganOptionsasStringtrue = {
+    inline def apply(asString: js.UndefOr[Boolean] & `true`): HoganOptionsasStringtrue = {
       val __obj = js.Dynamic.literal(asString = asString.asInstanceOf[js.Any])
       __obj.asInstanceOf[HoganOptionsasStringtrue]
     }
     
-    @scala.inline
-    implicit class HoganOptionsasStringtrueMutableBuilder[Self <: HoganOptionsasStringtrue] (val x: Self) extends AnyVal {
+    extension [Self <: HoganOptionsasStringtrue](x: Self) {
       
-      @scala.inline
-      def setAsString(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
+      inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      @scala.inline
-      def setDisableLambda(value: Boolean): Self = StObject.set(x, "disableLambda", value.asInstanceOf[js.Any])
+      inline def setDisableLambda(value: Boolean): Self = StObject.set(x, "disableLambda", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableLambdaUndefined: Self = StObject.set(x, "disableLambda", js.undefined)
+      inline def setDisableLambdaUndefined: Self = StObject.set(x, "disableLambda", js.undefined)
       
-      @scala.inline
-      def setSectionTags(value: js.Array[SectionTags]): Self = StObject.set(x, "sectionTags", value.asInstanceOf[js.Any])
+      inline def setSectionTags(value: js.Array[SectionTags]): Self = StObject.set(x, "sectionTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionTagsUndefined: Self = StObject.set(x, "sectionTags", js.undefined)
+      inline def setSectionTagsUndefined: Self = StObject.set(x, "sectionTags", js.undefined)
       
-      @scala.inline
-      def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value :_*))
+      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value :_*))
     }
   }
 }

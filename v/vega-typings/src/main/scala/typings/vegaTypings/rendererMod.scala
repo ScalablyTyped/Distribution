@@ -31,8 +31,7 @@ object rendererMod {
     def resize(width: Double, height: Double, origin: js.Array[Double]): this.type = js.native
   }
   
-  @scala.inline
-  def renderModule(moduleName: String, renderModule: RenderModule_): RenderModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderModule")(moduleName.asInstanceOf[js.Any], renderModule.asInstanceOf[js.Any])).asInstanceOf[RenderModule_]
+  inline def renderModule(moduleName: String, renderModule: RenderModule_): RenderModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderModule")(moduleName.asInstanceOf[js.Any], renderModule.asInstanceOf[js.Any])).asInstanceOf[RenderModule_]
   
   trait RenderModule_ extends StObject {
     
@@ -44,26 +43,20 @@ object rendererMod {
   }
   object RenderModule_ {
     
-    @scala.inline
-    def apply(handler: Handler, renderer: Instantiable1[/* loader */ Loader_, Renderer]): RenderModule_ = {
+    inline def apply(handler: Handler, renderer: Instantiable1[/* loader */ Loader_, Renderer]): RenderModule_ = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderModule_]
     }
     
-    @scala.inline
-    implicit class RenderModule_MutableBuilder[Self <: RenderModule_] (val x: Self) extends AnyVal {
+    extension [Self <: RenderModule_](x: Self) {
       
-      @scala.inline
-      def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadless(value: Renderer): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+      inline def setHeadless(value: Renderer): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+      inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: Instantiable1[/* loader */ Loader_, Renderer]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: Instantiable1[/* loader */ Loader_, Renderer]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,13 +68,10 @@ object rendererMod {
   trait Renderers extends StObject
   object Renderers {
     
-    @scala.inline
-    def canvas: typings.vegaTypings.vegaTypingsStrings.canvas = "canvas".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.canvas]
+    inline def canvas: typings.vegaTypings.vegaTypingsStrings.canvas = "canvas".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.canvas]
     
-    @scala.inline
-    def none: typings.vegaTypings.vegaTypingsStrings.none = "none".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.none]
+    inline def none: typings.vegaTypings.vegaTypingsStrings.none = "none".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.none]
     
-    @scala.inline
-    def svg: typings.vegaTypings.vegaTypingsStrings.svg = "svg".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.svg]
+    inline def svg: typings.vegaTypings.vegaTypingsStrings.svg = "svg".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.svg]
   }
 }

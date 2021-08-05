@@ -115,79 +115,55 @@ trait PlusStreamStreamOptions extends StObject {
 }
 object PlusStreamStreamOptions {
   
-  @scala.inline
-  def apply(): PlusStreamStreamOptions = {
+  inline def apply(): PlusStreamStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusStreamStreamOptions]
   }
   
-  @scala.inline
-  implicit class PlusStreamStreamOptionsMutableBuilder[Self <: PlusStreamStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusStreamStreamOptions](x: Self) {
     
-    @scala.inline
-    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
-    @scala.inline
-    def setAppmode(value: String): Self = StObject.set(x, "appmode", value.asInstanceOf[js.Any])
+    inline def setAppmode(value: String): Self = StObject.set(x, "appmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppmodeUndefined: Self = StObject.set(x, "appmode", js.undefined)
+    inline def setAppmodeUndefined: Self = StObject.set(x, "appmode", js.undefined)
     
-    @scala.inline
-    def setDirect_page(value: String): Self = StObject.set(x, "direct_page", value.asInstanceOf[js.Any])
+    inline def setDirect_page(value: String): Self = StObject.set(x, "direct_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirect_pageUndefined: Self = StObject.set(x, "direct_page", js.undefined)
+    inline def setDirect_pageUndefined: Self = StObject.set(x, "direct_page", js.undefined)
     
-    @scala.inline
-    def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
+    inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLauncher(value: String): Self = StObject.set(x, "launcher", value.asInstanceOf[js.Any])
+    inline def setLauncher(value: String): Self = StObject.set(x, "launcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLauncherUndefined: Self = StObject.set(x, "launcher", js.undefined)
+    inline def setLauncherUndefined: Self = StObject.set(x, "launcher", js.undefined)
     
-    @scala.inline
-    def setShortcut(value: String): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+    inline def setShortcut(value: String): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcutQuit(value: String): Self = StObject.set(x, "shortcutQuit", value.asInstanceOf[js.Any])
+    inline def setShortcutQuit(value: String): Self = StObject.set(x, "shortcutQuit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcutQuitUndefined: Self = StObject.set(x, "shortcutQuit", js.undefined)
+    inline def setShortcutQuitUndefined: Self = StObject.set(x, "shortcutQuit", js.undefined)
     
-    @scala.inline
-    def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+    inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
     
-    @scala.inline
-    def setSplash(value: String): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
+    inline def setSplash(value: String): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashUndefined: Self = StObject.set(x, "splash", js.undefined)
+    inline def setSplashUndefined: Self = StObject.set(x, "splash", js.undefined)
     
-    @scala.inline
-    def setStyles(value: PlusStreamLaunchWebviewStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlusStreamLaunchWebviewStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait XLinkUpdate
 }
 object XLinkUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -27,10 +26,8 @@ object XLinkUpdate {
     __obj.asInstanceOf[XLinkUpdate]
   }
   
-  @scala.inline
-  implicit class XLinkUpdateMutableBuilder[Self <: XLinkUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: XLinkUpdate](x: Self) {
     
-    @scala.inline
-    def setUpdateLinks(value: () => Unit): Self = StObject.set(x, "updateLinks", js.Any.fromFunction0(value))
+    inline def setUpdateLinks(value: () => Unit): Self = StObject.set(x, "updateLinks", js.Any.fromFunction0(value))
   }
 }

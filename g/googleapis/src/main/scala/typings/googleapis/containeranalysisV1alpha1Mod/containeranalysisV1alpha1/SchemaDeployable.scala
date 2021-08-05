@@ -16,22 +16,17 @@ trait SchemaDeployable extends StObject {
 }
 object SchemaDeployable {
   
-  @scala.inline
-  def apply(): SchemaDeployable = {
+  inline def apply(): SchemaDeployable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeployable]
   }
   
-  @scala.inline
-  implicit class SchemaDeployableMutableBuilder[Self <: SchemaDeployable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeployable](x: Self) {
     
-    @scala.inline
-    def setResourceUri(value: js.Array[String]): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: js.Array[String]): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
+    inline def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
     
-    @scala.inline
-    def setResourceUriVarargs(value: String*): Self = StObject.set(x, "resourceUri", js.Array(value :_*))
+    inline def setResourceUriVarargs(value: String*): Self = StObject.set(x, "resourceUri", js.Array(value :_*))
   }
 }

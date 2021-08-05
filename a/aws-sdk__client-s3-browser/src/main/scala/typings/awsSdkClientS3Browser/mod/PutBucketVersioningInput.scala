@@ -10,8 +10,7 @@ trait PutBucketVersioningInput
      with typings.awsSdkClientS3Browser.typesPutBucketVersioningInputMod.PutBucketVersioningInput
 object PutBucketVersioningInput {
   
-  @scala.inline
-  def apply(Bucket: String, VersioningConfiguration: VersioningConfiguration): PutBucketVersioningInput = {
+  inline def apply(Bucket: String, VersioningConfiguration: VersioningConfiguration): PutBucketVersioningInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], VersioningConfiguration = VersioningConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketVersioningInput]
   }

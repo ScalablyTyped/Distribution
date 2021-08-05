@@ -15,23 +15,18 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(name: String, pure: Boolean, `type`: CompileTypeMetadata): Name = {
+  inline def apply(name: String, pure: Boolean, `type`: CompileTypeMetadata): Name = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+    inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

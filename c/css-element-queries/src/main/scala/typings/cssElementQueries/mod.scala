@@ -23,14 +23,12 @@ object mod {
       * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
       * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
       */
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /**
       * Attaches to DOMLoadContent
       */
-    @scala.inline
-    def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
+    inline def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
   }
   
   @JSImport("css-element-queries", "ResizeSensor")
@@ -51,25 +49,19 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def detach(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def detach(element: js.Array[Element], callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def detach(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def detach(element: js.Array[Element], callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Removes the resize sensor, and stops listening to resize events.
       */
-    @scala.inline
-    def detach(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def detach(element: Element, callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def detach(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def detach(element: Element, callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def reset(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def reset(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Resets the resize sensors, so for the next element resize is correctly detected. This is rare cases necessary
       * when the resize sensor isn't initialised correctly or is in a broken state due to DOM modifications.
       */
-    @scala.inline
-    def reset(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def reset(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

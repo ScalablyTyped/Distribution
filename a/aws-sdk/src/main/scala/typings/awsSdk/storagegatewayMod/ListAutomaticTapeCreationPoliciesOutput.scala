@@ -13,22 +13,17 @@ trait ListAutomaticTapeCreationPoliciesOutput extends StObject {
 }
 object ListAutomaticTapeCreationPoliciesOutput {
   
-  @scala.inline
-  def apply(): ListAutomaticTapeCreationPoliciesOutput = {
+  inline def apply(): ListAutomaticTapeCreationPoliciesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAutomaticTapeCreationPoliciesOutput]
   }
   
-  @scala.inline
-  implicit class ListAutomaticTapeCreationPoliciesOutputMutableBuilder[Self <: ListAutomaticTapeCreationPoliciesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListAutomaticTapeCreationPoliciesOutput](x: Self) {
     
-    @scala.inline
-    def setAutomaticTapeCreationPolicyInfos(value: AutomaticTapeCreationPolicyInfos): Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", value.asInstanceOf[js.Any])
+    inline def setAutomaticTapeCreationPolicyInfos(value: AutomaticTapeCreationPolicyInfos): Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticTapeCreationPolicyInfosUndefined: Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", js.undefined)
+    inline def setAutomaticTapeCreationPolicyInfosUndefined: Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", js.undefined)
     
-    @scala.inline
-    def setAutomaticTapeCreationPolicyInfosVarargs(value: AutomaticTapeCreationPolicyInfo*): Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", js.Array(value :_*))
+    inline def setAutomaticTapeCreationPolicyInfosVarargs(value: AutomaticTapeCreationPolicyInfo*): Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", js.Array(value :_*))
   }
 }

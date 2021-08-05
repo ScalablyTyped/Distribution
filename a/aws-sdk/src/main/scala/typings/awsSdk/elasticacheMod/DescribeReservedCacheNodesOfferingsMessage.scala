@@ -43,55 +43,39 @@ trait DescribeReservedCacheNodesOfferingsMessage extends StObject {
 }
 object DescribeReservedCacheNodesOfferingsMessage {
   
-  @scala.inline
-  def apply(): DescribeReservedCacheNodesOfferingsMessage = {
+  inline def apply(): DescribeReservedCacheNodesOfferingsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedCacheNodesOfferingsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeReservedCacheNodesOfferingsMessageMutableBuilder[Self <: DescribeReservedCacheNodesOfferingsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedCacheNodesOfferingsMessage](x: Self) {
     
-    @scala.inline
-    def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
+    inline def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
+    inline def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setOfferingType(value: String): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
+    inline def setOfferingType(value: String): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
+    inline def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
     
-    @scala.inline
-    def setProductDescription(value: String): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
+    inline def setProductDescription(value: String): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
+    inline def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
     
-    @scala.inline
-    def setReservedCacheNodesOfferingId(value: String): Self = StObject.set(x, "ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedCacheNodesOfferingId(value: String): Self = StObject.set(x, "ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedCacheNodesOfferingIdUndefined: Self = StObject.set(x, "ReservedCacheNodesOfferingId", js.undefined)
+    inline def setReservedCacheNodesOfferingIdUndefined: Self = StObject.set(x, "ReservedCacheNodesOfferingId", js.undefined)
   }
 }

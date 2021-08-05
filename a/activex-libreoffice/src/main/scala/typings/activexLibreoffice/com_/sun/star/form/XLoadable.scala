@@ -51,8 +51,7 @@ trait XLoadable
 }
 object XLoadable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addLoadListener: XLoadListener => Unit,
     isLoaded: () => Boolean,
@@ -67,25 +66,18 @@ object XLoadable {
     __obj.asInstanceOf[XLoadable]
   }
   
-  @scala.inline
-  implicit class XLoadableMutableBuilder[Self <: XLoadable] (val x: Self) extends AnyVal {
+  extension [Self <: XLoadable](x: Self) {
     
-    @scala.inline
-    def setAddLoadListener(value: XLoadListener => Unit): Self = StObject.set(x, "addLoadListener", js.Any.fromFunction1(value))
+    inline def setAddLoadListener(value: XLoadListener => Unit): Self = StObject.set(x, "addLoadListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLoaded(value: () => Boolean): Self = StObject.set(x, "isLoaded", js.Any.fromFunction0(value))
+    inline def setIsLoaded(value: () => Boolean): Self = StObject.set(x, "isLoaded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+    inline def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+    inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveLoadListener(value: XLoadListener => Unit): Self = StObject.set(x, "removeLoadListener", js.Any.fromFunction1(value))
+    inline def setRemoveLoadListener(value: XLoadListener => Unit): Self = StObject.set(x, "removeLoadListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnload(value: () => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction0(value))
+    inline def setUnload(value: () => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction0(value))
   }
 }

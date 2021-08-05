@@ -23,31 +23,23 @@ trait WeeklyStartTime extends StObject {
 }
 object WeeklyStartTime {
   
-  @scala.inline
-  def apply(): WeeklyStartTime = {
+  inline def apply(): WeeklyStartTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeeklyStartTime]
   }
   
-  @scala.inline
-  implicit class WeeklyStartTimeMutableBuilder[Self <: WeeklyStartTime] (val x: Self) extends AnyVal {
+  extension [Self <: WeeklyStartTime](x: Self) {
     
-    @scala.inline
-    def setDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "DayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "DayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "DayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "DayOfWeek", js.undefined)
     
-    @scala.inline
-    def setTimeOfDay(value: string): Self = StObject.set(x, "TimeOfDay", value.asInstanceOf[js.Any])
+    inline def setTimeOfDay(value: string): Self = StObject.set(x, "TimeOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOfDayUndefined: Self = StObject.set(x, "TimeOfDay", js.undefined)
+    inline def setTimeOfDayUndefined: Self = StObject.set(x, "TimeOfDay", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: string): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: string): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "TimeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "TimeZone", js.undefined)
   }
 }

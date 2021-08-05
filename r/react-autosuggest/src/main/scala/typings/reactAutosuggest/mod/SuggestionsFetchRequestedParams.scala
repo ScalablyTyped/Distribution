@@ -12,19 +12,15 @@ trait SuggestionsFetchRequestedParams extends StObject {
 }
 object SuggestionsFetchRequestedParams {
   
-  @scala.inline
-  def apply(reason: FetchRequestedReasons, value: String): SuggestionsFetchRequestedParams = {
+  inline def apply(reason: FetchRequestedReasons, value: String): SuggestionsFetchRequestedParams = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestionsFetchRequestedParams]
   }
   
-  @scala.inline
-  implicit class SuggestionsFetchRequestedParamsMutableBuilder[Self <: SuggestionsFetchRequestedParams] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionsFetchRequestedParams](x: Self) {
     
-    @scala.inline
-    def setReason(value: FetchRequestedReasons): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: FetchRequestedReasons): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

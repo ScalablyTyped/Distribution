@@ -14,31 +14,23 @@ trait InitialRouteName extends StObject {
 }
 object InitialRouteName {
   
-  @scala.inline
-  def apply(): InitialRouteName = {
+  inline def apply(): InitialRouteName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitialRouteName]
   }
   
-  @scala.inline
-  implicit class InitialRouteNameMutableBuilder[Self <: InitialRouteName] (val x: Self) extends AnyVal {
+  extension [Self <: InitialRouteName](x: Self) {
     
-    @scala.inline
-    def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+    inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+    inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
     
-    @scala.inline
-    def setResetOnBlur(value: Boolean): Self = StObject.set(x, "resetOnBlur", value.asInstanceOf[js.Any])
+    inline def setResetOnBlur(value: Boolean): Self = StObject.set(x, "resetOnBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOnBlurUndefined: Self = StObject.set(x, "resetOnBlur", js.undefined)
+    inline def setResetOnBlurUndefined: Self = StObject.set(x, "resetOnBlur", js.undefined)
     
-    @scala.inline
-    def setUnmountInactiveRoutes(value: Boolean): Self = StObject.set(x, "unmountInactiveRoutes", value.asInstanceOf[js.Any])
+    inline def setUnmountInactiveRoutes(value: Boolean): Self = StObject.set(x, "unmountInactiveRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmountInactiveRoutesUndefined: Self = StObject.set(x, "unmountInactiveRoutes", js.undefined)
+    inline def setUnmountInactiveRoutesUndefined: Self = StObject.set(x, "unmountInactiveRoutes", js.undefined)
   }
 }

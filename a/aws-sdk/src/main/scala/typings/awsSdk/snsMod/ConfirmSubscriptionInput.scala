@@ -23,25 +23,19 @@ trait ConfirmSubscriptionInput extends StObject {
 }
 object ConfirmSubscriptionInput {
   
-  @scala.inline
-  def apply(Token: token, TopicArn: topicARN): ConfirmSubscriptionInput = {
+  inline def apply(Token: token, TopicArn: topicARN): ConfirmSubscriptionInput = {
     val __obj = js.Dynamic.literal(Token = Token.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmSubscriptionInput]
   }
   
-  @scala.inline
-  implicit class ConfirmSubscriptionInputMutableBuilder[Self <: ConfirmSubscriptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmSubscriptionInput](x: Self) {
     
-    @scala.inline
-    def setAuthenticateOnUnsubscribe(value: authenticateOnUnsubscribe): Self = StObject.set(x, "AuthenticateOnUnsubscribe", value.asInstanceOf[js.Any])
+    inline def setAuthenticateOnUnsubscribe(value: authenticateOnUnsubscribe): Self = StObject.set(x, "AuthenticateOnUnsubscribe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateOnUnsubscribeUndefined: Self = StObject.set(x, "AuthenticateOnUnsubscribe", js.undefined)
+    inline def setAuthenticateOnUnsubscribeUndefined: Self = StObject.set(x, "AuthenticateOnUnsubscribe", js.undefined)
     
-    @scala.inline
-    def setToken(value: token): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: token): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

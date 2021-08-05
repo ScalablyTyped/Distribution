@@ -13,19 +13,15 @@ trait SchemaOrderpaymentsNotifyAuthDeclinedRequest extends StObject {
 }
 object SchemaOrderpaymentsNotifyAuthDeclinedRequest {
   
-  @scala.inline
-  def apply(): SchemaOrderpaymentsNotifyAuthDeclinedRequest = {
+  inline def apply(): SchemaOrderpaymentsNotifyAuthDeclinedRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderpaymentsNotifyAuthDeclinedRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrderpaymentsNotifyAuthDeclinedRequestMutableBuilder[Self <: SchemaOrderpaymentsNotifyAuthDeclinedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderpaymentsNotifyAuthDeclinedRequest](x: Self) {
     
-    @scala.inline
-    def setDeclineReason(value: String): Self = StObject.set(x, "declineReason", value.asInstanceOf[js.Any])
+    inline def setDeclineReason(value: String): Self = StObject.set(x, "declineReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclineReasonUndefined: Self = StObject.set(x, "declineReason", js.undefined)
+    inline def setDeclineReasonUndefined: Self = StObject.set(x, "declineReason", js.undefined)
   }
 }

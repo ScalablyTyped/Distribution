@@ -18,22 +18,17 @@ trait ListTagsForDeliveryStreamOutput extends StObject {
 }
 object ListTagsForDeliveryStreamOutput {
   
-  @scala.inline
-  def apply(HasMoreTags: BooleanObject, Tags: ListTagsForDeliveryStreamOutputTagList): ListTagsForDeliveryStreamOutput = {
+  inline def apply(HasMoreTags: BooleanObject, Tags: ListTagsForDeliveryStreamOutputTagList): ListTagsForDeliveryStreamOutput = {
     val __obj = js.Dynamic.literal(HasMoreTags = HasMoreTags.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForDeliveryStreamOutput]
   }
   
-  @scala.inline
-  implicit class ListTagsForDeliveryStreamOutputMutableBuilder[Self <: ListTagsForDeliveryStreamOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForDeliveryStreamOutput](x: Self) {
     
-    @scala.inline
-    def setHasMoreTags(value: BooleanObject): Self = StObject.set(x, "HasMoreTags", value.asInstanceOf[js.Any])
+    inline def setHasMoreTags(value: BooleanObject): Self = StObject.set(x, "HasMoreTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: ListTagsForDeliveryStreamOutputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: ListTagsForDeliveryStreamOutputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -24,37 +24,27 @@ trait UserGroup extends StObject {
 }
 object UserGroup {
   
-  @scala.inline
-  def apply(id: Double, name: String): UserGroup = {
+  inline def apply(id: Double, name: String): UserGroup = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserGroup]
   }
   
-  @scala.inline
-  implicit class UserGroupMutableBuilder[Self <: UserGroup] (val x: Self) extends AnyVal {
+  extension [Self <: UserGroup](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setIsSystemGroup(value: Boolean): Self = StObject.set(x, "isSystemGroup", value.asInstanceOf[js.Any])
+    inline def setIsSystemGroup(value: Boolean): Self = StObject.set(x, "isSystemGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSystemGroupUndefined: Self = StObject.set(x, "isSystemGroup", js.undefined)
+    inline def setIsSystemGroupUndefined: Self = StObject.set(x, "isSystemGroup", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
+    inline def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNameUndefined: Self = StObject.set(x, "showName", js.undefined)
+    inline def setShowNameUndefined: Self = StObject.set(x, "showName", js.undefined)
   }
 }

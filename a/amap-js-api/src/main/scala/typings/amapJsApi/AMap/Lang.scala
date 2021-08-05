@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Lang extends StObject
 object Lang {
   
-  @scala.inline
-  def en: typings.amapJsApi.amapJsApiStrings.en = "en".asInstanceOf[typings.amapJsApi.amapJsApiStrings.en]
+  inline def en: typings.amapJsApi.amapJsApiStrings.en = "en".asInstanceOf[typings.amapJsApi.amapJsApiStrings.en]
   
-  @scala.inline
-  def zh_cn: typings.amapJsApi.amapJsApiStrings.zh_cn = "zh_cn".asInstanceOf[typings.amapJsApi.amapJsApiStrings.zh_cn]
+  inline def zh_cn: typings.amapJsApi.amapJsApiStrings.zh_cn = "zh_cn".asInstanceOf[typings.amapJsApi.amapJsApiStrings.zh_cn]
   
-  @scala.inline
-  def zh_en: typings.amapJsApi.amapJsApiStrings.zh_en = "zh_en".asInstanceOf[typings.amapJsApi.amapJsApiStrings.zh_en]
+  inline def zh_en: typings.amapJsApi.amapJsApiStrings.zh_en = "zh_en".asInstanceOf[typings.amapJsApi.amapJsApiStrings.zh_en]
 }

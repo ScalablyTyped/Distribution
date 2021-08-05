@@ -16,19 +16,15 @@ trait BluetoothLEAdvertisementPublisherStatusChangedEventArgs extends StObject {
 }
 object BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
   
-  @scala.inline
-  def apply(error: BluetoothError, status: BluetoothLEAdvertisementPublisherStatus): BluetoothLEAdvertisementPublisherStatusChangedEventArgs = {
+  inline def apply(error: BluetoothError, status: BluetoothLEAdvertisementPublisherStatus): BluetoothLEAdvertisementPublisherStatusChangedEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEAdvertisementPublisherStatusChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementPublisherStatusChangedEventArgsMutableBuilder[Self <: BluetoothLEAdvertisementPublisherStatusChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementPublisherStatusChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: BluetoothLEAdvertisementPublisherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BluetoothLEAdvertisementPublisherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

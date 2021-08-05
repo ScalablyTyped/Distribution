@@ -10,19 +10,15 @@ trait SchedulerMessagesEditable extends StObject {
 }
 object SchedulerMessagesEditable {
   
-  @scala.inline
-  def apply(): SchedulerMessagesEditable = {
+  inline def apply(): SchedulerMessagesEditable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesEditable]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesEditableMutableBuilder[Self <: SchedulerMessagesEditable] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesEditable](x: Self) {
     
-    @scala.inline
-    def setConfirmation(value: String): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
+    inline def setConfirmation(value: String): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmationUndefined: Self = StObject.set(x, "confirmation", js.undefined)
+    inline def setConfirmationUndefined: Self = StObject.set(x, "confirmation", js.undefined)
   }
 }

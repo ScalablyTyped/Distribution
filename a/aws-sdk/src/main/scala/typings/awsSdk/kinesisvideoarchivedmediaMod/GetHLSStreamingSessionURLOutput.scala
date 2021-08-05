@@ -13,19 +13,15 @@ trait GetHLSStreamingSessionURLOutput extends StObject {
 }
 object GetHLSStreamingSessionURLOutput {
   
-  @scala.inline
-  def apply(): GetHLSStreamingSessionURLOutput = {
+  inline def apply(): GetHLSStreamingSessionURLOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetHLSStreamingSessionURLOutput]
   }
   
-  @scala.inline
-  implicit class GetHLSStreamingSessionURLOutputMutableBuilder[Self <: GetHLSStreamingSessionURLOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetHLSStreamingSessionURLOutput](x: Self) {
     
-    @scala.inline
-    def setHLSStreamingSessionURL(value: HLSStreamingSessionURL): Self = StObject.set(x, "HLSStreamingSessionURL", value.asInstanceOf[js.Any])
+    inline def setHLSStreamingSessionURL(value: HLSStreamingSessionURL): Self = StObject.set(x, "HLSStreamingSessionURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHLSStreamingSessionURLUndefined: Self = StObject.set(x, "HLSStreamingSessionURL", js.undefined)
+    inline def setHLSStreamingSessionURLUndefined: Self = StObject.set(x, "HLSStreamingSessionURL", js.undefined)
   }
 }

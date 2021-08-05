@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSortOrder extends StObject
 object MsoSortOrder {
   
-  @scala.inline
-  def msoSortOrderAscending: `1` = 1.asInstanceOf[`1`]
+  inline def msoSortOrderAscending: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoSortOrderDescending: `2` = 2.asInstanceOf[`2`]
+  inline def msoSortOrderDescending: `2` = 2.asInstanceOf[`2`]
 }

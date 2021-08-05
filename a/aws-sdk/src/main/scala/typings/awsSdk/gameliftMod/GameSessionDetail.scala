@@ -18,25 +18,19 @@ trait GameSessionDetail extends StObject {
 }
 object GameSessionDetail {
   
-  @scala.inline
-  def apply(): GameSessionDetail = {
+  inline def apply(): GameSessionDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameSessionDetail]
   }
   
-  @scala.inline
-  implicit class GameSessionDetailMutableBuilder[Self <: GameSessionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: GameSessionDetail](x: Self) {
     
-    @scala.inline
-    def setGameSession(value: GameSession): Self = StObject.set(x, "GameSession", value.asInstanceOf[js.Any])
+    inline def setGameSession(value: GameSession): Self = StObject.set(x, "GameSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionUndefined: Self = StObject.set(x, "GameSession", js.undefined)
+    inline def setGameSessionUndefined: Self = StObject.set(x, "GameSession", js.undefined)
     
-    @scala.inline
-    def setProtectionPolicy(value: ProtectionPolicy): Self = StObject.set(x, "ProtectionPolicy", value.asInstanceOf[js.Any])
+    inline def setProtectionPolicy(value: ProtectionPolicy): Self = StObject.set(x, "ProtectionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionPolicyUndefined: Self = StObject.set(x, "ProtectionPolicy", js.undefined)
+    inline def setProtectionPolicyUndefined: Self = StObject.set(x, "ProtectionPolicy", js.undefined)
   }
 }

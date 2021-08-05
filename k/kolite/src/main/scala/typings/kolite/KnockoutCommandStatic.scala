@@ -13,8 +13,7 @@ trait KnockoutCommandStatic extends StObject {
 }
 object KnockoutCommandStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asyncCommand: KoLiteCommandOptions => KoliteAsyncCommand,
     command: KoLiteCommandOptions => KoliteCommand
   ): KnockoutCommandStatic = {
@@ -22,13 +21,10 @@ object KnockoutCommandStatic {
     __obj.asInstanceOf[KnockoutCommandStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutCommandStaticMutableBuilder[Self <: KnockoutCommandStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutCommandStatic](x: Self) {
     
-    @scala.inline
-    def setAsyncCommand(value: KoLiteCommandOptions => KoliteAsyncCommand): Self = StObject.set(x, "asyncCommand", js.Any.fromFunction1(value))
+    inline def setAsyncCommand(value: KoLiteCommandOptions => KoliteAsyncCommand): Self = StObject.set(x, "asyncCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommand(value: KoLiteCommandOptions => KoliteCommand): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
+    inline def setCommand(value: KoLiteCommandOptions => KoliteCommand): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
   }
 }

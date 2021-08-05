@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleTextLineThroughStyle extends StObject
 object styleTextLineThroughStyle {
   
-  @scala.inline
-  def styleTextLineThroughStyleDouble: `2` = 2.asInstanceOf[`2`]
+  inline def styleTextLineThroughStyleDouble: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleTextLineThroughStyleSingle: `1` = 1.asInstanceOf[`1`]
+  inline def styleTextLineThroughStyleSingle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleTextLineThroughStyleUndefined: `0` = 0.asInstanceOf[`0`]
+  inline def styleTextLineThroughStyleUndefined: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleTextLineThroughStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleTextLineThroughStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

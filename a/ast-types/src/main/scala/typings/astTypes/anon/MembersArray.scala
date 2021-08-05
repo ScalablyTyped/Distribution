@@ -11,19 +11,15 @@ trait MembersArray extends StObject {
 }
 object MembersArray {
   
-  @scala.inline
-  def apply(members: js.Array[EnumDefaultedMemberKind]): MembersArray = {
+  inline def apply(members: js.Array[EnumDefaultedMemberKind]): MembersArray = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
     __obj.asInstanceOf[MembersArray]
   }
   
-  @scala.inline
-  implicit class MembersArrayMutableBuilder[Self <: MembersArray] (val x: Self) extends AnyVal {
+  extension [Self <: MembersArray](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[EnumDefaultedMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[EnumDefaultedMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: EnumDefaultedMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: EnumDefaultedMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait InsightsServiceAccountResponsePromotionsUnit extends StObject {
 }
 object InsightsServiceAccountResponsePromotionsUnit {
   
-  @scala.inline
-  def apply(summary_promotions: InsightsServiceAccountResponseSummaryPromotions): InsightsServiceAccountResponsePromotionsUnit = {
+  inline def apply(summary_promotions: InsightsServiceAccountResponseSummaryPromotions): InsightsServiceAccountResponsePromotionsUnit = {
     val __obj = js.Dynamic.literal(summary_promotions = summary_promotions.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponsePromotionsUnit]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponsePromotionsUnitMutableBuilder[Self <: InsightsServiceAccountResponsePromotionsUnit] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponsePromotionsUnit](x: Self) {
     
-    @scala.inline
-    def setSummary_promotions(value: InsightsServiceAccountResponseSummaryPromotions): Self = StObject.set(x, "summary_promotions", value.asInstanceOf[js.Any])
+    inline def setSummary_promotions(value: InsightsServiceAccountResponseSummaryPromotions): Self = StObject.set(x, "summary_promotions", value.asInstanceOf[js.Any])
   }
 }

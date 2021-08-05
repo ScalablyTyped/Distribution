@@ -16,19 +16,15 @@ trait SchemaGoogleCloudVisionV1p2beta1WebDetectionParams extends StObject {
 }
 object SchemaGoogleCloudVisionV1p2beta1WebDetectionParams {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1WebDetectionParams = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1WebDetectionParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1WebDetectionParams]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1WebDetectionParamsMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1WebDetectionParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1WebDetectionParams](x: Self) {
     
-    @scala.inline
-    def setIncludeGeoResults(value: Boolean): Self = StObject.set(x, "includeGeoResults", value.asInstanceOf[js.Any])
+    inline def setIncludeGeoResults(value: Boolean): Self = StObject.set(x, "includeGeoResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGeoResultsUndefined: Self = StObject.set(x, "includeGeoResults", js.undefined)
+    inline def setIncludeGeoResultsUndefined: Self = StObject.set(x, "includeGeoResults", js.undefined)
   }
 }

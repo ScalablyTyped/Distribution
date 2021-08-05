@@ -22,8 +22,7 @@ trait AccountsResource extends StObject {
 }
 object AccountsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clients: ClientsResource,
     creatives: CreativesResource,
     filterSets: FilterSetsResource,
@@ -36,28 +35,20 @@ object AccountsResource {
     __obj.asInstanceOf[AccountsResource]
   }
   
-  @scala.inline
-  implicit class AccountsResourceMutableBuilder[Self <: AccountsResource] (val x: Self) extends AnyVal {
+  extension [Self <: AccountsResource](x: Self) {
     
-    @scala.inline
-    def setClients(value: ClientsResource): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
+    inline def setClients(value: ClientsResource): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatives(value: CreativesResource): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
+    inline def setCreatives(value: CreativesResource): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSets(value: FilterSetsResource): Self = StObject.set(x, "filterSets", value.asInstanceOf[js.Any])
+    inline def setFilterSets(value: FilterSetsResource): Self = StObject.set(x, "filterSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizedProposals(value: FinalizedProposalsResource): Self = StObject.set(x, "finalizedProposals", value.asInstanceOf[js.Any])
+    inline def setFinalizedProposals(value: FinalizedProposalsResource): Self = StObject.set(x, "finalizedProposals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducts(value: ProductsResource): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: ProductsResource): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposals(value: ProposalsResource): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
+    inline def setProposals(value: ProposalsResource): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherProfiles(value: PublisherProfilesResource): Self = StObject.set(x, "publisherProfiles", value.asInstanceOf[js.Any])
+    inline def setPublisherProfiles(value: PublisherProfilesResource): Self = StObject.set(x, "publisherProfiles", value.asInstanceOf[js.Any])
   }
 }

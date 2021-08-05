@@ -13,18 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@ckeditor/ckeditor5-engine", "view.Element")
 @js.native
 class Element protected () extends Node {
-  protected def this(name: String) = this()
-  protected def this(name: String, attrs: js.Object) = this()
-  protected def this(name: String, attrs: Iterable[js.Tuple2[String, String]]) = this()
-  protected def this(name: String, attrs: Map[String, String]) = this()
-  protected def this(name: String, attrs: js.Object, children: Node) = this()
-  protected def this(name: String, attrs: js.Object, children: Iterable[Node]) = this()
-  protected def this(name: String, attrs: Unit, children: Node) = this()
-  protected def this(name: String, attrs: Unit, children: Iterable[Node]) = this()
-  protected def this(name: String, attrs: Iterable[js.Tuple2[String, String]], children: Node) = this()
-  protected def this(name: String, attrs: Iterable[js.Tuple2[String, String]], children: Iterable[Node]) = this()
-  protected def this(name: String, attrs: Map[String, String], children: Node) = this()
-  protected def this(name: String, attrs: Map[String, String], children: Iterable[Node]) = this()
+  /* protected */ def this(name: String) = this()
+  /* protected */ def this(name: String, attrs: js.Object) = this()
+  /* protected */ def this(name: String, attrs: Iterable[js.Tuple2[String, String]]) = this()
+  /* protected */ def this(name: String, attrs: Map[String, String]) = this()
+  /* protected */ def this(name: String, attrs: js.Object, children: Node) = this()
+  /* protected */ def this(name: String, attrs: js.Object, children: Iterable[Node]) = this()
+  /* protected */ def this(name: String, attrs: Unit, children: Node) = this()
+  /* protected */ def this(name: String, attrs: Unit, children: Iterable[Node]) = this()
+  /* protected */ def this(name: String, attrs: Iterable[js.Tuple2[String, String]], children: Node) = this()
+  /* protected */ def this(name: String, attrs: Iterable[js.Tuple2[String, String]], children: Iterable[Node]) = this()
+  /* protected */ def this(name: String, attrs: Map[String, String], children: Node) = this()
+  /* protected */ def this(name: String, attrs: Map[String, String], children: Iterable[Node]) = this()
   
   /* protected */ def _addClass(className: String): Unit = js.native
   /* protected */ def _addClass(className: js.Array[String]): Unit = js.native
@@ -32,15 +32,15 @@ class Element protected () extends Node {
   /* protected */ def _appendChild(items: Item): Double = js.native
   /* protected */ def _appendChild(items: Iterable[Item]): Double = js.native
   
-  var _attrs: Map[String, String] = js.native
+  /* protected */ var _attrs: Map[String, String] = js.native
   
-  var _children: js.Array[Node] = js.native
+  /* protected */ var _children: js.Array[Node] = js.native
   
-  var _classes: Set[String] = js.native
+  /* protected */ var _classes: Set[String] = js.native
   
   /* protected */ def _clone(deep: Boolean): Element = js.native
   
-  var _customProperties: Map[String, js.Any] = js.native
+  /* protected */ var _customProperties: Map[String, js.Any] = js.native
   
   /* protected */ def _insertChild(index: Double, items: Item): Double = js.native
   /* protected */ def _insertChild(index: Double, items: Iterable[Item]): Double = js.native
@@ -69,7 +69,7 @@ class Element protected () extends Node {
   /* protected */ def _setStyle(property: StringDictionary[String]): Unit = js.native
   /* protected */ def _setStyle(property: StringDictionary[String], value: String): Unit = js.native
   
-  var _styles: Map[String, String] = js.native
+  /* protected */ var _styles: Map[String, String] = js.native
   
   val childCount: Double = js.native
   

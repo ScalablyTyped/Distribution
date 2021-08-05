@@ -13,16 +13,13 @@ trait FrameDetachedEvent extends StObject {
 }
 object FrameDetachedEvent {
   
-  @scala.inline
-  def apply(frameId: FrameId): FrameDetachedEvent = {
+  inline def apply(frameId: FrameId): FrameDetachedEvent = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameDetachedEvent]
   }
   
-  @scala.inline
-  implicit class FrameDetachedEventMutableBuilder[Self <: FrameDetachedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FrameDetachedEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }
 }

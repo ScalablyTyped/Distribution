@@ -40,14 +40,11 @@ object datePickerCoreMod {
   @js.native
   val SELECTED_RANGE_MODIFIER: /* "selected-range" */ String = js.native
   
-  @scala.inline
-  def combineModifiers(baseModifiers: IDatePickerModifiers, userModifiers: IDatePickerModifiers): IDatePickerModifiers = (^.asInstanceOf[js.Dynamic].applyDynamic("combineModifiers")(baseModifiers.asInstanceOf[js.Any], userModifiers.asInstanceOf[js.Any])).asInstanceOf[IDatePickerModifiers]
+  inline def combineModifiers(baseModifiers: IDatePickerModifiers, userModifiers: IDatePickerModifiers): IDatePickerModifiers = (^.asInstanceOf[js.Dynamic].applyDynamic("combineModifiers")(baseModifiers.asInstanceOf[js.Any], userModifiers.asInstanceOf[js.Any])).asInstanceOf[IDatePickerModifiers]
   
-  @scala.inline
-  def getDefaultMaxDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMaxDate")().asInstanceOf[Date]
+  inline def getDefaultMaxDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMaxDate")().asInstanceOf[Date]
   
-  @scala.inline
-  def getDefaultMinDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMinDate")().asInstanceOf[Date]
+  inline def getDefaultMinDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMinDate")().asInstanceOf[Date]
   
   trait IDatePickerBaseProps extends StObject {
     
@@ -136,80 +133,56 @@ object datePickerCoreMod {
   }
   object IDatePickerBaseProps {
     
-    @scala.inline
-    def apply(): IDatePickerBaseProps = {
+    inline def apply(): IDatePickerBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDatePickerBaseProps]
     }
     
-    @scala.inline
-    implicit class IDatePickerBasePropsMutableBuilder[Self <: IDatePickerBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerBaseProps](x: Self) {
       
-      @scala.inline
-      def setDayPickerProps(value: DayPickerProps): Self = StObject.set(x, "dayPickerProps", value.asInstanceOf[js.Any])
+      inline def setDayPickerProps(value: DayPickerProps): Self = StObject.set(x, "dayPickerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayPickerPropsUndefined: Self = StObject.set(x, "dayPickerProps", js.undefined)
+      inline def setDayPickerPropsUndefined: Self = StObject.set(x, "dayPickerProps", js.undefined)
       
-      @scala.inline
-      def setHighlightCurrentDay(value: Boolean): Self = StObject.set(x, "highlightCurrentDay", value.asInstanceOf[js.Any])
+      inline def setHighlightCurrentDay(value: Boolean): Self = StObject.set(x, "highlightCurrentDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightCurrentDayUndefined: Self = StObject.set(x, "highlightCurrentDay", js.undefined)
+      inline def setHighlightCurrentDayUndefined: Self = StObject.set(x, "highlightCurrentDay", js.undefined)
       
-      @scala.inline
-      def setInitialMonth(value: Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
+      inline def setInitialMonth(value: Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
+      inline def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLocaleUtils(value: TypeofLocaleUtils): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
+      inline def setLocaleUtils(value: TypeofLocaleUtils): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUtilsUndefined: Self = StObject.set(x, "localeUtils", js.undefined)
+      inline def setLocaleUtilsUndefined: Self = StObject.set(x, "localeUtils", js.undefined)
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      @scala.inline
-      def setModifiers(value: IDatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: IDatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+      inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      @scala.inline
-      def setReverseMonthAndYearMenus(value: Boolean): Self = StObject.set(x, "reverseMonthAndYearMenus", value.asInstanceOf[js.Any])
+      inline def setReverseMonthAndYearMenus(value: Boolean): Self = StObject.set(x, "reverseMonthAndYearMenus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseMonthAndYearMenusUndefined: Self = StObject.set(x, "reverseMonthAndYearMenus", js.undefined)
+      inline def setReverseMonthAndYearMenusUndefined: Self = StObject.set(x, "reverseMonthAndYearMenus", js.undefined)
       
-      @scala.inline
-      def setTimePickerProps(value: ITimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
+      inline def setTimePickerProps(value: ITimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePickerPropsUndefined: Self = StObject.set(x, "timePickerProps", js.undefined)
+      inline def setTimePickerPropsUndefined: Self = StObject.set(x, "timePickerProps", js.undefined)
       
-      @scala.inline
-      def setTimePrecision(value: TimePrecision): Self = StObject.set(x, "timePrecision", value.asInstanceOf[js.Any])
+      inline def setTimePrecision(value: TimePrecision): Self = StObject.set(x, "timePrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePrecisionUndefined: Self = StObject.set(x, "timePrecision", js.undefined)
+      inline def setTimePrecisionUndefined: Self = StObject.set(x, "timePrecision", js.undefined)
     }
   }
   

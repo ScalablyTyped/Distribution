@@ -12,22 +12,17 @@ trait FlowNodeBase extends StObject {
 }
 object FlowNodeBase {
   
-  @scala.inline
-  def apply(flags: FlowFlags): FlowNodeBase = {
+  inline def apply(flags: FlowFlags): FlowNodeBase = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowNodeBase]
   }
   
-  @scala.inline
-  implicit class FlowNodeBaseMutableBuilder[Self <: FlowNodeBase] (val x: Self) extends AnyVal {
+  extension [Self <: FlowNodeBase](x: Self) {
     
-    @scala.inline
-    def setFlags(value: FlowFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: FlowFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

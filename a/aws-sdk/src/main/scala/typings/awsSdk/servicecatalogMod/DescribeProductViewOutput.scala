@@ -18,28 +18,21 @@ trait DescribeProductViewOutput extends StObject {
 }
 object DescribeProductViewOutput {
   
-  @scala.inline
-  def apply(): DescribeProductViewOutput = {
+  inline def apply(): DescribeProductViewOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProductViewOutput]
   }
   
-  @scala.inline
-  implicit class DescribeProductViewOutputMutableBuilder[Self <: DescribeProductViewOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProductViewOutput](x: Self) {
     
-    @scala.inline
-    def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
+    inline def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductViewSummaryUndefined: Self = StObject.set(x, "ProductViewSummary", js.undefined)
+    inline def setProductViewSummaryUndefined: Self = StObject.set(x, "ProductViewSummary", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifacts(value: ProvisioningArtifacts): Self = StObject.set(x, "ProvisioningArtifacts", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifacts(value: ProvisioningArtifacts): Self = StObject.set(x, "ProvisioningArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactsUndefined: Self = StObject.set(x, "ProvisioningArtifacts", js.undefined)
+    inline def setProvisioningArtifactsUndefined: Self = StObject.set(x, "ProvisioningArtifacts", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactsVarargs(value: ProvisioningArtifact*): Self = StObject.set(x, "ProvisioningArtifacts", js.Array(value :_*))
+    inline def setProvisioningArtifactsVarargs(value: ProvisioningArtifact*): Self = StObject.set(x, "ProvisioningArtifacts", js.Array(value :_*))
   }
 }

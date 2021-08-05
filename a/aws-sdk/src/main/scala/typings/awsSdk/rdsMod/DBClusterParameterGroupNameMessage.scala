@@ -13,19 +13,15 @@ trait DBClusterParameterGroupNameMessage extends StObject {
 }
 object DBClusterParameterGroupNameMessage {
   
-  @scala.inline
-  def apply(): DBClusterParameterGroupNameMessage = {
+  inline def apply(): DBClusterParameterGroupNameMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterParameterGroupNameMessage]
   }
   
-  @scala.inline
-  implicit class DBClusterParameterGroupNameMessageMutableBuilder[Self <: DBClusterParameterGroupNameMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterParameterGroupNameMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterParameterGroupNameUndefined: Self = StObject.set(x, "DBClusterParameterGroupName", js.undefined)
+    inline def setDBClusterParameterGroupNameUndefined: Self = StObject.set(x, "DBClusterParameterGroupName", js.undefined)
   }
 }

@@ -15,25 +15,19 @@ trait CategoriesResult extends StObject {
 }
 object CategoriesResult {
   
-  @scala.inline
-  def apply(): CategoriesResult = {
+  inline def apply(): CategoriesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CategoriesResult]
   }
   
-  @scala.inline
-  implicit class CategoriesResultMutableBuilder[Self <: CategoriesResult] (val x: Self) extends AnyVal {
+  extension [Self <: CategoriesResult](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

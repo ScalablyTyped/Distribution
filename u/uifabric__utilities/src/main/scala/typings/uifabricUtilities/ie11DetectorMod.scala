@@ -10,6 +10,5 @@ object ie11DetectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isIE11(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE11")().asInstanceOf[Boolean]
+  inline def isIE11(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE11")().asInstanceOf[Boolean]
 }

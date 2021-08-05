@@ -11,17 +11,14 @@ trait ReqlType extends StObject {
 }
 object ReqlType {
   
-  @scala.inline
-  def apply(Dollarreql_typeDollar: String): ReqlType = {
+  inline def apply(Dollarreql_typeDollar: String): ReqlType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("$reql_type$")(Dollarreql_typeDollar.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReqlType]
   }
   
-  @scala.inline
-  implicit class ReqlTypeMutableBuilder[Self <: ReqlType] (val x: Self) extends AnyVal {
+  extension [Self <: ReqlType](x: Self) {
     
-    @scala.inline
-    def setDollarreql_typeDollar(value: String): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
+    inline def setDollarreql_typeDollar(value: String): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait TagsModel extends StObject {
 }
 object TagsModel {
   
-  @scala.inline
-  def apply(tags: MapOfString): TagsModel = {
+  inline def apply(tags: MapOfString): TagsModel = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagsModel]
   }
   
-  @scala.inline
-  implicit class TagsModelMutableBuilder[Self <: TagsModel] (val x: Self) extends AnyVal {
+  extension [Self <: TagsModel](x: Self) {
     
-    @scala.inline
-    def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

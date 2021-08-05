@@ -89,8 +89,7 @@ object ientityMod {
   }
   object IEntity {
     
-    @scala.inline
-    def apply(TAG: () => String, construct: XML => Unit, key: () => js.Any, toXML: () => XML): IEntity = {
+    inline def apply(TAG: () => String, construct: XML => Unit, key: () => js.Any, toXML: () => XML): IEntity = {
       val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), key = js.Any.fromFunction0(key), toXML = js.Any.fromFunction0(toXML))
       __obj.asInstanceOf[IEntity]
     }
@@ -99,26 +98,19 @@ object ientityMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def construct(entity: IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toXML(entity: IEntity, prohibited_names: String*): XML = (^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(entity.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[XML]
+    inline def toXML(entity: IEntity, prohibited_names: String*): XML = (^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(entity.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[XML]
     
-    @scala.inline
-    implicit class IEntityMutableBuilder[Self <: IEntity] (val x: Self) extends AnyVal {
+    extension [Self <: IEntity](x: Self) {
       
-      @scala.inline
-      def setConstruct(value: XML => Unit): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
+      inline def setConstruct(value: XML => Unit): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+      inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+      inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToXML(value: () => XML): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+      inline def setToXML(value: () => XML): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
     }
   }
 }

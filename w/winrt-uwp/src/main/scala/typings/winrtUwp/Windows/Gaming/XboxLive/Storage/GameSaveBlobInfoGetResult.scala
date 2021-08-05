@@ -16,19 +16,15 @@ trait GameSaveBlobInfoGetResult extends StObject {
 }
 object GameSaveBlobInfoGetResult {
   
-  @scala.inline
-  def apply(status: GameSaveErrorStatus, value: IVectorView[GameSaveBlobInfo]): GameSaveBlobInfoGetResult = {
+  inline def apply(status: GameSaveErrorStatus, value: IVectorView[GameSaveBlobInfo]): GameSaveBlobInfoGetResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSaveBlobInfoGetResult]
   }
   
-  @scala.inline
-  implicit class GameSaveBlobInfoGetResultMutableBuilder[Self <: GameSaveBlobInfoGetResult] (val x: Self) extends AnyVal {
+  extension [Self <: GameSaveBlobInfoGetResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GameSaveErrorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GameSaveErrorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: IVectorView[GameSaveBlobInfo]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: IVectorView[GameSaveBlobInfo]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

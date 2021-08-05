@@ -18,25 +18,19 @@ trait EnabledMetric extends StObject {
 }
 object EnabledMetric {
   
-  @scala.inline
-  def apply(): EnabledMetric = {
+  inline def apply(): EnabledMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnabledMetric]
   }
   
-  @scala.inline
-  implicit class EnabledMetricMutableBuilder[Self <: EnabledMetric] (val x: Self) extends AnyVal {
+  extension [Self <: EnabledMetric](x: Self) {
     
-    @scala.inline
-    def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
     
-    @scala.inline
-    def setMetric(value: XmlStringMaxLen255): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: XmlStringMaxLen255): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "Metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "Metric", js.undefined)
   }
 }

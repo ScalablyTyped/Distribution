@@ -11,16 +11,13 @@ trait ValueTextBaseline extends StObject {
 }
 object ValueTextBaseline {
   
-  @scala.inline
-  def apply(value: TextBaseline): ValueTextBaseline = {
+  inline def apply(value: TextBaseline): ValueTextBaseline = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueTextBaseline]
   }
   
-  @scala.inline
-  implicit class ValueTextBaselineMutableBuilder[Self <: ValueTextBaseline] (val x: Self) extends AnyVal {
+  extension [Self <: ValueTextBaseline](x: Self) {
     
-    @scala.inline
-    def setValue(value: TextBaseline): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TextBaseline): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

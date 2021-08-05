@@ -30,25 +30,19 @@ trait PlusStreamFreetrafficOptions extends StObject {
 }
 object PlusStreamFreetrafficOptions {
   
-  @scala.inline
-  def apply(): PlusStreamFreetrafficOptions = {
+  inline def apply(): PlusStreamFreetrafficOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusStreamFreetrafficOptions]
   }
   
-  @scala.inline
-  implicit class PlusStreamFreetrafficOptionsMutableBuilder[Self <: PlusStreamFreetrafficOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusStreamFreetrafficOptions](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
   }
 }

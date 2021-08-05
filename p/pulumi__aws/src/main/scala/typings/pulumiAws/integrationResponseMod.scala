@@ -71,21 +71,16 @@ object integrationResponseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IntegrationResponseState): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    inline def get(name: String, id: Input[ID]): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    inline def get(name: String, id: Input[ID], state: IntegrationResponseState): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    inline def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
     
     /**
       * Returns true if the given object is an instance of IntegrationResponse.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean]
   }
   
   trait IntegrationResponseArgs extends StObject {
@@ -122,41 +117,30 @@ object integrationResponseMod {
   }
   object IntegrationResponseArgs {
     
-    @scala.inline
-    def apply(apiId: Input[String], integrationId: Input[String], integrationResponseKey: Input[String]): IntegrationResponseArgs = {
+    inline def apply(apiId: Input[String], integrationId: Input[String], integrationResponseKey: Input[String]): IntegrationResponseArgs = {
       val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], integrationId = integrationId.asInstanceOf[js.Any], integrationResponseKey = integrationResponseKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntegrationResponseArgs]
     }
     
-    @scala.inline
-    implicit class IntegrationResponseArgsMutableBuilder[Self <: IntegrationResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IntegrationResponseArgs](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHandlingStrategy(value: Input[String]): Self = StObject.set(x, "contentHandlingStrategy", value.asInstanceOf[js.Any])
+      inline def setContentHandlingStrategy(value: Input[String]): Self = StObject.set(x, "contentHandlingStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHandlingStrategyUndefined: Self = StObject.set(x, "contentHandlingStrategy", js.undefined)
+      inline def setContentHandlingStrategyUndefined: Self = StObject.set(x, "contentHandlingStrategy", js.undefined)
       
-      @scala.inline
-      def setIntegrationId(value: Input[String]): Self = StObject.set(x, "integrationId", value.asInstanceOf[js.Any])
+      inline def setIntegrationId(value: Input[String]): Self = StObject.set(x, "integrationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationResponseKey(value: Input[String]): Self = StObject.set(x, "integrationResponseKey", value.asInstanceOf[js.Any])
+      inline def setIntegrationResponseKey(value: Input[String]): Self = StObject.set(x, "integrationResponseKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
+      inline def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
+      inline def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
       
-      @scala.inline
-      def setTemplateSelectionExpression(value: Input[String]): Self = StObject.set(x, "templateSelectionExpression", value.asInstanceOf[js.Any])
+      inline def setTemplateSelectionExpression(value: Input[String]): Self = StObject.set(x, "templateSelectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "templateSelectionExpression", js.undefined)
+      inline def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "templateSelectionExpression", js.undefined)
     }
   }
   
@@ -194,50 +178,36 @@ object integrationResponseMod {
   }
   object IntegrationResponseState {
     
-    @scala.inline
-    def apply(): IntegrationResponseState = {
+    inline def apply(): IntegrationResponseState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntegrationResponseState]
     }
     
-    @scala.inline
-    implicit class IntegrationResponseStateMutableBuilder[Self <: IntegrationResponseState] (val x: Self) extends AnyVal {
+    extension [Self <: IntegrationResponseState](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setContentHandlingStrategy(value: Input[String]): Self = StObject.set(x, "contentHandlingStrategy", value.asInstanceOf[js.Any])
+      inline def setContentHandlingStrategy(value: Input[String]): Self = StObject.set(x, "contentHandlingStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHandlingStrategyUndefined: Self = StObject.set(x, "contentHandlingStrategy", js.undefined)
+      inline def setContentHandlingStrategyUndefined: Self = StObject.set(x, "contentHandlingStrategy", js.undefined)
       
-      @scala.inline
-      def setIntegrationId(value: Input[String]): Self = StObject.set(x, "integrationId", value.asInstanceOf[js.Any])
+      inline def setIntegrationId(value: Input[String]): Self = StObject.set(x, "integrationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationIdUndefined: Self = StObject.set(x, "integrationId", js.undefined)
+      inline def setIntegrationIdUndefined: Self = StObject.set(x, "integrationId", js.undefined)
       
-      @scala.inline
-      def setIntegrationResponseKey(value: Input[String]): Self = StObject.set(x, "integrationResponseKey", value.asInstanceOf[js.Any])
+      inline def setIntegrationResponseKey(value: Input[String]): Self = StObject.set(x, "integrationResponseKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationResponseKeyUndefined: Self = StObject.set(x, "integrationResponseKey", js.undefined)
+      inline def setIntegrationResponseKeyUndefined: Self = StObject.set(x, "integrationResponseKey", js.undefined)
       
-      @scala.inline
-      def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
+      inline def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
+      inline def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
       
-      @scala.inline
-      def setTemplateSelectionExpression(value: Input[String]): Self = StObject.set(x, "templateSelectionExpression", value.asInstanceOf[js.Any])
+      inline def setTemplateSelectionExpression(value: Input[String]): Self = StObject.set(x, "templateSelectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "templateSelectionExpression", js.undefined)
+      inline def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "templateSelectionExpression", js.undefined)
     }
   }
 }

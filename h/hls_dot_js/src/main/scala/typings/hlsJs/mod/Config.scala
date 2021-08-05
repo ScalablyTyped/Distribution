@@ -516,8 +516,7 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abrBandWidthFactor: Double,
     abrBandWidthUpFactor: Double,
     abrController: AbrController,
@@ -584,220 +583,148 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setAbrBandWidthFactor(value: Double): Self = StObject.set(x, "abrBandWidthFactor", value.asInstanceOf[js.Any])
+    inline def setAbrBandWidthFactor(value: Double): Self = StObject.set(x, "abrBandWidthFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrBandWidthUpFactor(value: Double): Self = StObject.set(x, "abrBandWidthUpFactor", value.asInstanceOf[js.Any])
+    inline def setAbrBandWidthUpFactor(value: Double): Self = StObject.set(x, "abrBandWidthUpFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrController(value: AbrController): Self = StObject.set(x, "abrController", value.asInstanceOf[js.Any])
+    inline def setAbrController(value: AbrController): Self = StObject.set(x, "abrController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrEwmaDefaultEstimate(value: Double): Self = StObject.set(x, "abrEwmaDefaultEstimate", value.asInstanceOf[js.Any])
+    inline def setAbrEwmaDefaultEstimate(value: Double): Self = StObject.set(x, "abrEwmaDefaultEstimate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrEwmaFastLive(value: Double): Self = StObject.set(x, "abrEwmaFastLive", value.asInstanceOf[js.Any])
+    inline def setAbrEwmaFastLive(value: Double): Self = StObject.set(x, "abrEwmaFastLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrEwmaFastVod(value: Double): Self = StObject.set(x, "abrEwmaFastVod", value.asInstanceOf[js.Any])
+    inline def setAbrEwmaFastVod(value: Double): Self = StObject.set(x, "abrEwmaFastVod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrEwmaSlowLive(value: Double): Self = StObject.set(x, "abrEwmaSlowLive", value.asInstanceOf[js.Any])
+    inline def setAbrEwmaSlowLive(value: Double): Self = StObject.set(x, "abrEwmaSlowLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrEwmaSlowVod(value: Double): Self = StObject.set(x, "abrEwmaSlowVod", value.asInstanceOf[js.Any])
+    inline def setAbrEwmaSlowVod(value: Double): Self = StObject.set(x, "abrEwmaSlowVod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbrMaxWithRealBitrate(value: Boolean): Self = StObject.set(x, "abrMaxWithRealBitrate", value.asInstanceOf[js.Any])
+    inline def setAbrMaxWithRealBitrate(value: Boolean): Self = StObject.set(x, "abrMaxWithRealBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendErrorMaxRetry(value: Double): Self = StObject.set(x, "appendErrorMaxRetry", value.asInstanceOf[js.Any])
+    inline def setAppendErrorMaxRetry(value: Double): Self = StObject.set(x, "appendErrorMaxRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStartLoad(value: Boolean): Self = StObject.set(x, "autoStartLoad", value.asInstanceOf[js.Any])
+    inline def setAutoStartLoad(value: Boolean): Self = StObject.set(x, "autoStartLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapLevelToPlayerSize(value: Boolean): Self = StObject.set(x, "capLevelToPlayerSize", value.asInstanceOf[js.Any])
+    inline def setCapLevelToPlayerSize(value: Boolean): Self = StObject.set(x, "capLevelToPlayerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionsTextTrack1Label(value: String): Self = StObject.set(x, "captionsTextTrack1Label", value.asInstanceOf[js.Any])
+    inline def setCaptionsTextTrack1Label(value: String): Self = StObject.set(x, "captionsTextTrack1Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionsTextTrack1LanguagedCode(value: String): Self = StObject.set(x, "captionsTextTrack1LanguagedCode", value.asInstanceOf[js.Any])
+    inline def setCaptionsTextTrack1LanguagedCode(value: String): Self = StObject.set(x, "captionsTextTrack1LanguagedCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionsTextTrack2Label(value: String): Self = StObject.set(x, "captionsTextTrack2Label", value.asInstanceOf[js.Any])
+    inline def setCaptionsTextTrack2Label(value: String): Self = StObject.set(x, "captionsTextTrack2Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionsTextTrack2LanguageCode(value: String): Self = StObject.set(x, "captionsTextTrack2LanguageCode", value.asInstanceOf[js.Any])
+    inline def setCaptionsTextTrack2LanguageCode(value: String): Self = StObject.set(x, "captionsTextTrack2LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebug(value: Boolean | CustomLoggerObject): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean | CustomLoggerObject): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAudioCodec(value: String): Self = StObject.set(x, "defaultAudioCodec", value.asInstanceOf[js.Any])
+    inline def setDefaultAudioCodec(value: String): Self = StObject.set(x, "defaultAudioCodec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCEA708Captions(value: Boolean): Self = StObject.set(x, "enableCEA708Captions", value.asInstanceOf[js.Any])
+    inline def setEnableCEA708Captions(value: Boolean): Self = StObject.set(x, "enableCEA708Captions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSoftwareAES(value: Boolean): Self = StObject.set(x, "enableSoftwareAES", value.asInstanceOf[js.Any])
+    inline def setEnableSoftwareAES(value: Boolean): Self = StObject.set(x, "enableSoftwareAES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableWebVTT(value: Boolean): Self = StObject.set(x, "enableWebVTT", value.asInstanceOf[js.Any])
+    inline def setEnableWebVTT(value: Boolean): Self = StObject.set(x, "enableWebVTT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableWebVTTUndefined: Self = StObject.set(x, "enableWebVTT", js.undefined)
+    inline def setEnableWebVTTUndefined: Self = StObject.set(x, "enableWebVTT", js.undefined)
     
-    @scala.inline
-    def setEnableWorker(value: Boolean): Self = StObject.set(x, "enableWorker", value.asInstanceOf[js.Any])
+    inline def setEnableWorker(value: Boolean): Self = StObject.set(x, "enableWorker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFLoader(value: Instantiable1[/* config */ LoaderConfig, Loader]): Self = StObject.set(x, "fLoader", value.asInstanceOf[js.Any])
+    inline def setFLoader(value: Instantiable1[/* config */ LoaderConfig, Loader]): Self = StObject.set(x, "fLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFLoaderUndefined: Self = StObject.set(x, "fLoader", js.undefined)
+    inline def setFLoaderUndefined: Self = StObject.set(x, "fLoader", js.undefined)
     
-    @scala.inline
-    def setFetchSetup(value: (/* context */ js.Any, /* initParams */ js.Any) => Request): Self = StObject.set(x, "fetchSetup", js.Any.fromFunction2(value))
+    inline def setFetchSetup(value: (/* context */ js.Any, /* initParams */ js.Any) => Request): Self = StObject.set(x, "fetchSetup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFetchSetupUndefined: Self = StObject.set(x, "fetchSetup", js.undefined)
+    inline def setFetchSetupUndefined: Self = StObject.set(x, "fetchSetup", js.undefined)
     
-    @scala.inline
-    def setForceKeyFrameOnDiscontinuity(value: Boolean): Self = StObject.set(x, "forceKeyFrameOnDiscontinuity", value.asInstanceOf[js.Any])
+    inline def setForceKeyFrameOnDiscontinuity(value: Boolean): Self = StObject.set(x, "forceKeyFrameOnDiscontinuity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragLoadingMaxRetry(value: Double): Self = StObject.set(x, "fragLoadingMaxRetry", value.asInstanceOf[js.Any])
+    inline def setFragLoadingMaxRetry(value: Double): Self = StObject.set(x, "fragLoadingMaxRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragLoadingMaxRetryDelay(value: Double): Self = StObject.set(x, "fragLoadingMaxRetryDelay", value.asInstanceOf[js.Any])
+    inline def setFragLoadingMaxRetryDelay(value: Double): Self = StObject.set(x, "fragLoadingMaxRetryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragLoadingRetryDelay(value: Double): Self = StObject.set(x, "fragLoadingRetryDelay", value.asInstanceOf[js.Any])
+    inline def setFragLoadingRetryDelay(value: Double): Self = StObject.set(x, "fragLoadingRetryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragLoadingTimeOut(value: Double): Self = StObject.set(x, "fragLoadingTimeOut", value.asInstanceOf[js.Any])
+    inline def setFragLoadingTimeOut(value: Double): Self = StObject.set(x, "fragLoadingTimeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighBufferWatchdogPeriod(value: Double): Self = StObject.set(x, "highBufferWatchdogPeriod", value.asInstanceOf[js.Any])
+    inline def setHighBufferWatchdogPeriod(value: Double): Self = StObject.set(x, "highBufferWatchdogPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialLiveManifestSize(value: Double): Self = StObject.set(x, "initialLiveManifestSize", value.asInstanceOf[js.Any])
+    inline def setInitialLiveManifestSize(value: Double): Self = StObject.set(x, "initialLiveManifestSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelLoadingMaxRetry(value: Double): Self = StObject.set(x, "levelLoadingMaxRetry", value.asInstanceOf[js.Any])
+    inline def setLevelLoadingMaxRetry(value: Double): Self = StObject.set(x, "levelLoadingMaxRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelLoadingMaxRetryTimeout(value: Double): Self = StObject.set(x, "levelLoadingMaxRetryTimeout", value.asInstanceOf[js.Any])
+    inline def setLevelLoadingMaxRetryTimeout(value: Double): Self = StObject.set(x, "levelLoadingMaxRetryTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelLoadingRetryDelay(value: Double): Self = StObject.set(x, "levelLoadingRetryDelay", value.asInstanceOf[js.Any])
+    inline def setLevelLoadingRetryDelay(value: Double): Self = StObject.set(x, "levelLoadingRetryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelLoadingTimeOut(value: Double): Self = StObject.set(x, "levelLoadingTimeOut", value.asInstanceOf[js.Any])
+    inline def setLevelLoadingTimeOut(value: Double): Self = StObject.set(x, "levelLoadingTimeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveBackBufferLength(value: Double): Self = StObject.set(x, "liveBackBufferLength", value.asInstanceOf[js.Any])
+    inline def setLiveBackBufferLength(value: Double): Self = StObject.set(x, "liveBackBufferLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveDurationInfinity(value: Boolean): Self = StObject.set(x, "liveDurationInfinity", value.asInstanceOf[js.Any])
+    inline def setLiveDurationInfinity(value: Boolean): Self = StObject.set(x, "liveDurationInfinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveMaxLatencyDuration(value: Double): Self = StObject.set(x, "liveMaxLatencyDuration", value.asInstanceOf[js.Any])
+    inline def setLiveMaxLatencyDuration(value: Double): Self = StObject.set(x, "liveMaxLatencyDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveMaxLatencyDurationCount(value: Double): Self = StObject.set(x, "liveMaxLatencyDurationCount", value.asInstanceOf[js.Any])
+    inline def setLiveMaxLatencyDurationCount(value: Double): Self = StObject.set(x, "liveMaxLatencyDurationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSyncDuration(value: Double): Self = StObject.set(x, "liveSyncDuration", value.asInstanceOf[js.Any])
+    inline def setLiveSyncDuration(value: Double): Self = StObject.set(x, "liveSyncDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSyncDurationCount(value: Double): Self = StObject.set(x, "liveSyncDurationCount", value.asInstanceOf[js.Any])
+    inline def setLiveSyncDurationCount(value: Double): Self = StObject.set(x, "liveSyncDurationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoader(value: Instantiable1[/* config */ LoaderConfig, Loader]): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: Instantiable1[/* config */ LoaderConfig, Loader]): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowBufferWatchdogPeriod(value: Double): Self = StObject.set(x, "lowBufferWatchdogPeriod", value.asInstanceOf[js.Any])
+    inline def setLowBufferWatchdogPeriod(value: Double): Self = StObject.set(x, "lowBufferWatchdogPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestLoadingMaxRetry(value: Double): Self = StObject.set(x, "manifestLoadingMaxRetry", value.asInstanceOf[js.Any])
+    inline def setManifestLoadingMaxRetry(value: Double): Self = StObject.set(x, "manifestLoadingMaxRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestLoadingMaxRetryTimeout(value: Double): Self = StObject.set(x, "manifestLoadingMaxRetryTimeout", value.asInstanceOf[js.Any])
+    inline def setManifestLoadingMaxRetryTimeout(value: Double): Self = StObject.set(x, "manifestLoadingMaxRetryTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestLoadingRetryDelay(value: Double): Self = StObject.set(x, "manifestLoadingRetryDelay", value.asInstanceOf[js.Any])
+    inline def setManifestLoadingRetryDelay(value: Double): Self = StObject.set(x, "manifestLoadingRetryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestLoadingTimeOut(value: Double): Self = StObject.set(x, "manifestLoadingTimeOut", value.asInstanceOf[js.Any])
+    inline def setManifestLoadingTimeOut(value: Double): Self = StObject.set(x, "manifestLoadingTimeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAudioFramesDrift(value: Double): Self = StObject.set(x, "maxAudioFramesDrift", value.asInstanceOf[js.Any])
+    inline def setMaxAudioFramesDrift(value: Double): Self = StObject.set(x, "maxAudioFramesDrift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBufferHole(value: Double): Self = StObject.set(x, "maxBufferHole", value.asInstanceOf[js.Any])
+    inline def setMaxBufferHole(value: Double): Self = StObject.set(x, "maxBufferHole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBufferLength(value: Double): Self = StObject.set(x, "maxBufferLength", value.asInstanceOf[js.Any])
+    inline def setMaxBufferLength(value: Double): Self = StObject.set(x, "maxBufferLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
+    inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFragLookUpTolerance(value: Double): Self = StObject.set(x, "maxFragLookUpTolerance", value.asInstanceOf[js.Any])
+    inline def setMaxFragLookUpTolerance(value: Double): Self = StObject.set(x, "maxFragLookUpTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLoadingDelay(value: Double): Self = StObject.set(x, "maxLoadingDelay", value.asInstanceOf[js.Any])
+    inline def setMaxLoadingDelay(value: Double): Self = StObject.set(x, "maxLoadingDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMaxBufferLength(value: Double): Self = StObject.set(x, "maxMaxBufferLength", value.asInstanceOf[js.Any])
+    inline def setMaxMaxBufferLength(value: Double): Self = StObject.set(x, "maxMaxBufferLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSeekHole(value: Double): Self = StObject.set(x, "maxSeekHole", value.asInstanceOf[js.Any])
+    inline def setMaxSeekHole(value: Double): Self = StObject.set(x, "maxSeekHole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStarvationDelay(value: Double): Self = StObject.set(x, "maxStarvationDelay", value.asInstanceOf[js.Any])
+    inline def setMaxStarvationDelay(value: Double): Self = StObject.set(x, "maxStarvationDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAutoBitrate(value: Double): Self = StObject.set(x, "minAutoBitrate", value.asInstanceOf[js.Any])
+    inline def setMinAutoBitrate(value: Double): Self = StObject.set(x, "minAutoBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNudgeMaxRetry(value: Double): Self = StObject.set(x, "nudgeMaxRetry", value.asInstanceOf[js.Any])
+    inline def setNudgeMaxRetry(value: Double): Self = StObject.set(x, "nudgeMaxRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNudgeOffset(value: Double): Self = StObject.set(x, "nudgeOffset", value.asInstanceOf[js.Any])
+    inline def setNudgeOffset(value: Double): Self = StObject.set(x, "nudgeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLoader(value: Instantiable1[/* config */ LoaderConfig, Loader]): Self = StObject.set(x, "pLoader", value.asInstanceOf[js.Any])
+    inline def setPLoader(value: Instantiable1[/* config */ LoaderConfig, Loader]): Self = StObject.set(x, "pLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLoaderUndefined: Self = StObject.set(x, "pLoader", js.undefined)
+    inline def setPLoaderUndefined: Self = StObject.set(x, "pLoader", js.undefined)
     
-    @scala.inline
-    def setStartFragPrefetch(value: Boolean): Self = StObject.set(x, "startFragPrefetch", value.asInstanceOf[js.Any])
+    inline def setStartFragPrefetch(value: Boolean): Self = StObject.set(x, "startFragPrefetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLevel(value: Double): Self = StObject.set(x, "startLevel", value.asInstanceOf[js.Any])
+    inline def setStartLevel(value: Double): Self = StObject.set(x, "startLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchShortVideoTrack(value: Boolean): Self = StObject.set(x, "stretchShortVideoTrack", value.asInstanceOf[js.Any])
+    inline def setStretchShortVideoTrack(value: Boolean): Self = StObject.set(x, "stretchShortVideoTrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineController(value: TimelineController): Self = StObject.set(x, "timelineController", value.asInstanceOf[js.Any])
+    inline def setTimelineController(value: TimelineController): Self = StObject.set(x, "timelineController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSetup(value: (/* xhr */ XMLHttpRequest, /* url */ String) => Unit): Self = StObject.set(x, "xhrSetup", js.Any.fromFunction2(value))
+    inline def setXhrSetup(value: (/* xhr */ XMLHttpRequest, /* url */ String) => Unit): Self = StObject.set(x, "xhrSetup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setXhrSetupUndefined: Self = StObject.set(x, "xhrSetup", js.undefined)
+    inline def setXhrSetupUndefined: Self = StObject.set(x, "xhrSetup", js.undefined)
   }
 }

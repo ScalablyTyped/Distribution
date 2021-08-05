@@ -23,43 +23,31 @@ trait PieChartSpec extends StObject {
 }
 object PieChartSpec {
   
-  @scala.inline
-  def apply(): PieChartSpec = {
+  inline def apply(): PieChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PieChartSpec]
   }
   
-  @scala.inline
-  implicit class PieChartSpecMutableBuilder[Self <: PieChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PieChartSpec](x: Self) {
     
-    @scala.inline
-    def setDomain(value: ChartData): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: ChartData): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
+    inline def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
+    inline def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
     
-    @scala.inline
-    def setPieHole(value: Double): Self = StObject.set(x, "pieHole", value.asInstanceOf[js.Any])
+    inline def setPieHole(value: Double): Self = StObject.set(x, "pieHole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPieHoleUndefined: Self = StObject.set(x, "pieHole", js.undefined)
+    inline def setPieHoleUndefined: Self = StObject.set(x, "pieHole", js.undefined)
     
-    @scala.inline
-    def setSeries(value: ChartData): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: ChartData): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setThreeDimensional(value: Boolean): Self = StObject.set(x, "threeDimensional", value.asInstanceOf[js.Any])
+    inline def setThreeDimensional(value: Boolean): Self = StObject.set(x, "threeDimensional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeDimensionalUndefined: Self = StObject.set(x, "threeDimensional", js.undefined)
+    inline def setThreeDimensionalUndefined: Self = StObject.set(x, "threeDimensional", js.undefined)
   }
 }

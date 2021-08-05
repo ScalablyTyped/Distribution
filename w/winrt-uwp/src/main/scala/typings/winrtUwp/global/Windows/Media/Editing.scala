@@ -79,8 +79,7 @@ object Editing {
       * @return A new background audio track object containing audio content copied from the embedded audio track.
       */
     /* static member */
-    @scala.inline
-    def createFromEmbeddedAudioTrack(embeddedAudioTrack: typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack): typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromEmbeddedAudioTrack")(embeddedAudioTrack.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack]
+    inline def createFromEmbeddedAudioTrack(embeddedAudioTrack: typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack): typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromEmbeddedAudioTrack")(embeddedAudioTrack.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack]
     
     /**
       * Creates a background audio track from an audio file.
@@ -88,8 +87,7 @@ object Editing {
       * @return A new background audio track object containing the contents of the audio file.
       */
     /* static member */
-    @scala.inline
-    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack]]
+    inline def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack]]
   }
   
   /** Represents an audio track embedded in the media clip. */
@@ -182,8 +180,7 @@ object Editing {
       * @return A new media clip object containing the color-based video clip.
       */
     /* static member */
-    @scala.inline
-    def createFromColor(color: Color, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromColor")(color.asInstanceOf[js.Any], originalDuration.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Editing.MediaClip]
+    inline def createFromColor(color: Color, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromColor")(color.asInstanceOf[js.Any], originalDuration.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Editing.MediaClip]
     
     /**
       * Creates a video clip from a video file.
@@ -191,8 +188,7 @@ object Editing {
       * @return A new media clip object containing a video clip of the video file.
       */
     /* static member */
-    @scala.inline
-    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip]]
+    inline def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip]]
     
     /**
       * Creates a video clip that displays a single image for a specified length of time.
@@ -201,8 +197,7 @@ object Editing {
       * @return A new media clip object containing the image-based video clip.
       */
     /* static member */
-    @scala.inline
-    def createFromImageFileAsync(file: IStorageFile, originalDuration: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromImageFileAsync")(file.asInstanceOf[js.Any], originalDuration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip]]
+    inline def createFromImageFileAsync(file: IStorageFile, originalDuration: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromImageFileAsync")(file.asInstanceOf[js.Any], originalDuration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaClip]]
     
     /**
       * Creates a video clip from a Direct3D surface.
@@ -211,8 +206,7 @@ object Editing {
       * @return A new media clip object containing the video clip.
       */
     /* static member */
-    @scala.inline
-    def createFromSurface(surface: IDirect3DSurface, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSurface")(surface.asInstanceOf[js.Any], originalDuration.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Editing.MediaClip]
+    inline def createFromSurface(surface: IDirect3DSurface, originalDuration: Double): typings.winrtUwp.Windows.Media.Editing.MediaClip = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSurface")(surface.asInstanceOf[js.Any], originalDuration.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Editing.MediaClip]
   }
   
   /** Represents a collection of media clips and background audio tracks. */
@@ -234,8 +228,7 @@ object Editing {
       * @return An async operation which can be used to track the success or failure of the operation.
       */
     /* static member */
-    @scala.inline
-    def loadAsync(file: StorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaComposition] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaComposition]]
+    inline def loadAsync(file: StorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaComposition] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Editing.MediaComposition]]
   }
   
   /** Represents an overlay that can be used in a media composition. */

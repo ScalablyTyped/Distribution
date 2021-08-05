@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DispatchKeyEventRequestType extends StObject
 object DispatchKeyEventRequestType {
   
-  @scala.inline
-  def Char: char = "char".asInstanceOf[char]
+  inline def Char: char = "char".asInstanceOf[char]
   
-  @scala.inline
-  def KeyDown: keyDown = "keyDown".asInstanceOf[keyDown]
+  inline def KeyDown: keyDown = "keyDown".asInstanceOf[keyDown]
   
-  @scala.inline
-  def KeyUp: keyUp = "keyUp".asInstanceOf[keyUp]
+  inline def KeyUp: keyUp = "keyUp".asInstanceOf[keyUp]
   
-  @scala.inline
-  def RawKeyDown: rawKeyDown = "rawKeyDown".asInstanceOf[rawKeyDown]
+  inline def RawKeyDown: rawKeyDown = "rawKeyDown".asInstanceOf[rawKeyDown]
 }

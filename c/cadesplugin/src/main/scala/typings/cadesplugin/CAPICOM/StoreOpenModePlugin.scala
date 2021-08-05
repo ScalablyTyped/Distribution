@@ -11,16 +11,13 @@ trait StoreOpenModePlugin extends StObject {
 }
 object StoreOpenModePlugin {
   
-  @scala.inline
-  def apply(): StoreOpenModePlugin = {
+  inline def apply(): StoreOpenModePlugin = {
     val __obj = js.Dynamic.literal(CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED = 2)
     __obj.asInstanceOf[StoreOpenModePlugin]
   }
   
-  @scala.inline
-  implicit class StoreOpenModePluginMutableBuilder[Self <: StoreOpenModePlugin] (val x: Self) extends AnyVal {
+  extension [Self <: StoreOpenModePlugin](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_STORE_OPEN_MAXIMUM_ALLOWED(value: `2`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_STORE_OPEN_MAXIMUM_ALLOWED(value: `2`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,31 @@ object entryMod {
        with EntryFilter {
     def this(_settings: typings.fastGlob.settingsMod.default, _micromatchOptions: MicromatchOptions) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _createIndexRecord: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _filter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isDuplicateEntry: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isMatchToPatterns: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isSkippedByAbsoluteNegativePatterns: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _micromatchOptions: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onlyDirectoryFilter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onlyFileFilter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _settings: js.Any = js.native
     
     /* CompleteClass */
@@ -53,23 +53,23 @@ object entryMod {
   
   trait EntryFilter extends StObject {
     
-    var _createIndexRecord: js.Any
+    /* private */ var _createIndexRecord: js.Any
     
-    var _filter: js.Any
+    /* private */ var _filter: js.Any
     
-    var _isDuplicateEntry: js.Any
+    /* private */ var _isDuplicateEntry: js.Any
     
-    var _isMatchToPatterns: js.Any
+    /* private */ var _isMatchToPatterns: js.Any
     
-    var _isSkippedByAbsoluteNegativePatterns: js.Any
+    /* private */ var _isSkippedByAbsoluteNegativePatterns: js.Any
     
-    val _micromatchOptions: js.Any
+    /* private */ val _micromatchOptions: js.Any
     
-    var _onlyDirectoryFilter: js.Any
+    /* private */ var _onlyDirectoryFilter: js.Any
     
-    var _onlyFileFilter: js.Any
+    /* private */ var _onlyFileFilter: js.Any
     
-    val _settings: js.Any
+    /* private */ val _settings: js.Any
     
     def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction
     
@@ -77,8 +77,7 @@ object entryMod {
   }
   object EntryFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _createIndexRecord: js.Any,
       _filter: js.Any,
       _isDuplicateEntry: js.Any,
@@ -95,41 +94,29 @@ object entryMod {
       __obj.asInstanceOf[EntryFilter]
     }
     
-    @scala.inline
-    implicit class EntryFilterMutableBuilder[Self <: EntryFilter] (val x: Self) extends AnyVal {
+    extension [Self <: EntryFilter](x: Self) {
       
-      @scala.inline
-      def setGetFilter(value: (js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction2(value))
+      inline def setGetFilter(value: (js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIndex(value: Map[String, Unit]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Map[String, Unit]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_createIndexRecord(value: js.Any): Self = StObject.set(x, "_createIndexRecord", value.asInstanceOf[js.Any])
+      inline def set_createIndexRecord(value: js.Any): Self = StObject.set(x, "_createIndexRecord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_filter(value: js.Any): Self = StObject.set(x, "_filter", value.asInstanceOf[js.Any])
+      inline def set_filter(value: js.Any): Self = StObject.set(x, "_filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isDuplicateEntry(value: js.Any): Self = StObject.set(x, "_isDuplicateEntry", value.asInstanceOf[js.Any])
+      inline def set_isDuplicateEntry(value: js.Any): Self = StObject.set(x, "_isDuplicateEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isMatchToPatterns(value: js.Any): Self = StObject.set(x, "_isMatchToPatterns", value.asInstanceOf[js.Any])
+      inline def set_isMatchToPatterns(value: js.Any): Self = StObject.set(x, "_isMatchToPatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isSkippedByAbsoluteNegativePatterns(value: js.Any): Self = StObject.set(x, "_isSkippedByAbsoluteNegativePatterns", value.asInstanceOf[js.Any])
+      inline def set_isSkippedByAbsoluteNegativePatterns(value: js.Any): Self = StObject.set(x, "_isSkippedByAbsoluteNegativePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_micromatchOptions(value: js.Any): Self = StObject.set(x, "_micromatchOptions", value.asInstanceOf[js.Any])
+      inline def set_micromatchOptions(value: js.Any): Self = StObject.set(x, "_micromatchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onlyDirectoryFilter(value: js.Any): Self = StObject.set(x, "_onlyDirectoryFilter", value.asInstanceOf[js.Any])
+      inline def set_onlyDirectoryFilter(value: js.Any): Self = StObject.set(x, "_onlyDirectoryFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onlyFileFilter(value: js.Any): Self = StObject.set(x, "_onlyFileFilter", value.asInstanceOf[js.Any])
+      inline def set_onlyFileFilter(value: js.Any): Self = StObject.set(x, "_onlyFileFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     }
   }
 }

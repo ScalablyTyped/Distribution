@@ -24,8 +24,7 @@ object EmailManager {
     * @return The requested email store.
     */
   /* static member */
-  @scala.inline
-  def requestStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Email.EmailStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Email.EmailStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Email.EmailStore]]
+  inline def requestStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Email.EmailStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Email.EmailStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Email.EmailStore]]
   
   /**
     * Launches the email application with a new message displayed.
@@ -33,6 +32,5 @@ object EmailManager {
     * @return An asynchronous action.
     */
   /* static member */
-  @scala.inline
-  def showComposeNewEmailAsync(message: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessage): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showComposeNewEmailAsync")(message.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def showComposeNewEmailAsync(message: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessage): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showComposeNewEmailAsync")(message.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
 }

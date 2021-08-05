@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArrayRelation extends StObject
 object ArrayRelation {
   
-  @scala.inline
-  def `extension`: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.`extension` = "extension".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.`extension`]
+  inline def `extension`: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.`extension` = "extension".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.`extension`]
   
-  @scala.inline
-  def prefix: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.prefix = "prefix".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.prefix]
+  inline def prefix: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.prefix = "prefix".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.prefix]
   
-  @scala.inline
-  def same: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.same = "same".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.same]
+  inline def same: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.same = "same".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.same]
 }

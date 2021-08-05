@@ -61,21 +61,16 @@ object basePathMappingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BasePathMappingState): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BasePathMappingState, opts: CustomResourceOptions): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
+    inline def get(name: String, id: Input[ID]): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
+    inline def get(name: String, id: Input[ID], state: BasePathMappingState): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
+    inline def get(name: String, id: Input[ID], state: BasePathMappingState, opts: CustomResourceOptions): BasePathMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BasePathMapping]
     
     /**
       * Returns true if the given object is an instance of BasePathMapping.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ Boolean]
   }
   
   trait BasePathMappingArgs extends StObject {
@@ -102,32 +97,24 @@ object basePathMappingMod {
   }
   object BasePathMappingArgs {
     
-    @scala.inline
-    def apply(domainName: Input[String], restApi: Input[String | RestApi]): BasePathMappingArgs = {
+    inline def apply(domainName: Input[String], restApi: Input[String | RestApi]): BasePathMappingArgs = {
       val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasePathMappingArgs]
     }
     
-    @scala.inline
-    implicit class BasePathMappingArgsMutableBuilder[Self <: BasePathMappingArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BasePathMappingArgs](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: Input[String]): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: Input[String]): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+      inline def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+      inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     }
   }
   
@@ -155,38 +142,28 @@ object basePathMappingMod {
   }
   object BasePathMappingState {
     
-    @scala.inline
-    def apply(): BasePathMappingState = {
+    inline def apply(): BasePathMappingState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasePathMappingState]
     }
     
-    @scala.inline
-    implicit class BasePathMappingStateMutableBuilder[Self <: BasePathMappingState] (val x: Self) extends AnyVal {
+    extension [Self <: BasePathMappingState](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: Input[String]): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: Input[String]): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
+      inline def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
       
-      @scala.inline
-      def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+      inline def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+      inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     }
   }
 }

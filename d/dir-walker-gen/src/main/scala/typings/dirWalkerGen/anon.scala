@@ -45,59 +45,42 @@ object anon {
   }
   object ExcludeExtensions {
     
-    @scala.inline
-    def apply(folders: js.Array[String]): ExcludeExtensions = {
+    inline def apply(folders: js.Array[String]): ExcludeExtensions = {
       val __obj = js.Dynamic.literal(folders = folders.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExcludeExtensions]
     }
     
-    @scala.inline
-    implicit class ExcludeExtensionsMutableBuilder[Self <: ExcludeExtensions] (val x: Self) extends AnyVal {
+    extension [Self <: ExcludeExtensions](x: Self) {
       
-      @scala.inline
-      def setExcludeExtensions(value: js.Array[String]): Self = StObject.set(x, "excludeExtensions", value.asInstanceOf[js.Any])
+      inline def setExcludeExtensions(value: js.Array[String]): Self = StObject.set(x, "excludeExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeExtensionsUndefined: Self = StObject.set(x, "excludeExtensions", js.undefined)
+      inline def setExcludeExtensionsUndefined: Self = StObject.set(x, "excludeExtensions", js.undefined)
       
-      @scala.inline
-      def setExcludeExtensionsVarargs(value: String*): Self = StObject.set(x, "excludeExtensions", js.Array(value :_*))
+      inline def setExcludeExtensionsVarargs(value: String*): Self = StObject.set(x, "excludeExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludeFolders(value: js.Array[String]): Self = StObject.set(x, "excludeFolders", value.asInstanceOf[js.Any])
+      inline def setExcludeFolders(value: js.Array[String]): Self = StObject.set(x, "excludeFolders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeFoldersUndefined: Self = StObject.set(x, "excludeFolders", js.undefined)
+      inline def setExcludeFoldersUndefined: Self = StObject.set(x, "excludeFolders", js.undefined)
       
-      @scala.inline
-      def setExcludeFoldersVarargs(value: String*): Self = StObject.set(x, "excludeFolders", js.Array(value :_*))
+      inline def setExcludeFoldersVarargs(value: String*): Self = StObject.set(x, "excludeFolders", js.Array(value :_*))
       
-      @scala.inline
-      def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+      inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoldersVarargs(value: String*): Self = StObject.set(x, "folders", js.Array(value :_*))
+      inline def setFoldersVarargs(value: String*): Self = StObject.set(x, "folders", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreDotDir(value: Boolean): Self = StObject.set(x, "ignoreDotDir", value.asInstanceOf[js.Any])
+      inline def setIgnoreDotDir(value: Boolean): Self = StObject.set(x, "ignoreDotDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDotDirUndefined: Self = StObject.set(x, "ignoreDotDir", js.undefined)
+      inline def setIgnoreDotDirUndefined: Self = StObject.set(x, "ignoreDotDir", js.undefined)
       
-      @scala.inline
-      def setIncludeExtensions(value: js.Array[String]): Self = StObject.set(x, "includeExtensions", value.asInstanceOf[js.Any])
+      inline def setIncludeExtensions(value: js.Array[String]): Self = StObject.set(x, "includeExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeExtensionsUndefined: Self = StObject.set(x, "includeExtensions", js.undefined)
+      inline def setIncludeExtensionsUndefined: Self = StObject.set(x, "includeExtensions", js.undefined)
       
-      @scala.inline
-      def setIncludeExtensionsVarargs(value: String*): Self = StObject.set(x, "includeExtensions", js.Array(value :_*))
+      inline def setIncludeExtensionsVarargs(value: String*): Self = StObject.set(x, "includeExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
 }

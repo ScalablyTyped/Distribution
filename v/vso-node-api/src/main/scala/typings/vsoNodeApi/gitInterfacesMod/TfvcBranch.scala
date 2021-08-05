@@ -32,8 +32,7 @@ trait TfvcBranch
 }
 object TfvcBranch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     children: js.Array[TfvcBranch],
     createdDate: Date,
@@ -50,28 +49,20 @@ object TfvcBranch {
     __obj.asInstanceOf[TfvcBranch]
   }
   
-  @scala.inline
-  implicit class TfvcBranchMutableBuilder[Self <: TfvcBranch] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcBranch](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[TfvcBranch]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[TfvcBranch]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: TfvcBranch*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TfvcBranch*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setMappings(value: js.Array[TfvcBranchMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: js.Array[TfvcBranchMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingsVarargs(value: TfvcBranchMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: TfvcBranchMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: TfvcShallowBranchRef): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: TfvcShallowBranchRef): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedBranches(value: js.Array[TfvcShallowBranchRef]): Self = StObject.set(x, "relatedBranches", value.asInstanceOf[js.Any])
+    inline def setRelatedBranches(value: js.Array[TfvcShallowBranchRef]): Self = StObject.set(x, "relatedBranches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedBranchesVarargs(value: TfvcShallowBranchRef*): Self = StObject.set(x, "relatedBranches", js.Array(value :_*))
+    inline def setRelatedBranchesVarargs(value: TfvcShallowBranchRef*): Self = StObject.set(x, "relatedBranches", js.Array(value :_*))
   }
 }

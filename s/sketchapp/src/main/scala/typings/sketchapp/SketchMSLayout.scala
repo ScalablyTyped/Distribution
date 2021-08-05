@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchMSLayout extends StObject
 object SketchMSLayout {
   
-  @scala.inline
-  def SketchMSLayoutGrid(
+  inline def SketchMSLayoutGrid(
     columnWidth: Double,
     drawHorizontal: Boolean,
     drawHorizontalLines: Boolean,
@@ -30,8 +29,7 @@ object SketchMSLayout {
     __obj.asInstanceOf[typings.sketchapp.SketchMSLayoutGrid]
   }
   
-  @scala.inline
-  def SketchMSLayoutSimpleGrid(gridSize: Double, isEnabled: Double, thickGridTimes: Double): typings.sketchapp.SketchMSLayoutSimpleGrid = {
+  inline def SketchMSLayoutSimpleGrid(gridSize: Double, isEnabled: Double, thickGridTimes: Double): typings.sketchapp.SketchMSLayoutSimpleGrid = {
     val __obj = js.Dynamic.literal(_class = "simpleGrid", gridSize = gridSize.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], thickGridTimes = thickGridTimes.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sketchapp.SketchMSLayoutSimpleGrid]
   }

@@ -28,31 +28,23 @@ trait CreateDataSourceFromS3Input extends StObject {
 }
 object CreateDataSourceFromS3Input {
   
-  @scala.inline
-  def apply(DataSourceId: EntityId, DataSpec: S3DataSpec): CreateDataSourceFromS3Input = {
+  inline def apply(DataSourceId: EntityId, DataSpec: S3DataSpec): CreateDataSourceFromS3Input = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId.asInstanceOf[js.Any], DataSpec = DataSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSourceFromS3Input]
   }
   
-  @scala.inline
-  implicit class CreateDataSourceFromS3InputMutableBuilder[Self <: CreateDataSourceFromS3Input] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataSourceFromS3Input](x: Self) {
     
-    @scala.inline
-    def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
+    inline def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeStatisticsUndefined: Self = StObject.set(x, "ComputeStatistics", js.undefined)
+    inline def setComputeStatisticsUndefined: Self = StObject.set(x, "ComputeStatistics", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceName(value: EntityName): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: EntityName): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceNameUndefined: Self = StObject.set(x, "DataSourceName", js.undefined)
+    inline def setDataSourceNameUndefined: Self = StObject.set(x, "DataSourceName", js.undefined)
     
-    @scala.inline
-    def setDataSpec(value: S3DataSpec): Self = StObject.set(x, "DataSpec", value.asInstanceOf[js.Any])
+    inline def setDataSpec(value: S3DataSpec): Self = StObject.set(x, "DataSpec", value.asInstanceOf[js.Any])
   }
 }

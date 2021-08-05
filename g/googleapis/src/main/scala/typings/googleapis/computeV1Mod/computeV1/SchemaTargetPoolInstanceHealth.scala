@@ -16,28 +16,21 @@ trait SchemaTargetPoolInstanceHealth extends StObject {
 }
 object SchemaTargetPoolInstanceHealth {
   
-  @scala.inline
-  def apply(): SchemaTargetPoolInstanceHealth = {
+  inline def apply(): SchemaTargetPoolInstanceHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetPoolInstanceHealth]
   }
   
-  @scala.inline
-  implicit class SchemaTargetPoolInstanceHealthMutableBuilder[Self <: SchemaTargetPoolInstanceHealth] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetPoolInstanceHealth](x: Self) {
     
-    @scala.inline
-    def setHealthStatus(value: js.Array[SchemaHealthStatus]): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: js.Array[SchemaHealthStatus]): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
-    @scala.inline
-    def setHealthStatusVarargs(value: SchemaHealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value :_*))
+    inline def setHealthStatusVarargs(value: SchemaHealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

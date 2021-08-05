@@ -12,16 +12,13 @@ trait AllJoynSessionLostEventArgs extends StObject {
 }
 object AllJoynSessionLostEventArgs {
   
-  @scala.inline
-  def apply(reason: AllJoynSessionLostReason): AllJoynSessionLostEventArgs = {
+  inline def apply(reason: AllJoynSessionLostReason): AllJoynSessionLostEventArgs = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynSessionLostEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynSessionLostEventArgsMutableBuilder[Self <: AllJoynSessionLostEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynSessionLostEventArgs](x: Self) {
     
-    @scala.inline
-    def setReason(value: AllJoynSessionLostReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: AllJoynSessionLostReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait IosHomeScreenPage extends StObject {
 }
 object IosHomeScreenPage {
   
-  @scala.inline
-  def apply(): IosHomeScreenPage = {
+  inline def apply(): IosHomeScreenPage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosHomeScreenPage]
   }
   
-  @scala.inline
-  implicit class IosHomeScreenPageMutableBuilder[Self <: IosHomeScreenPage] (val x: Self) extends AnyVal {
+  extension [Self <: IosHomeScreenPage](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIcons(value: js.Array[IosHomeScreenItem]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: js.Array[IosHomeScreenItem]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "icons", js.Array(value :_*))
   }
 }

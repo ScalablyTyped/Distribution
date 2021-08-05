@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](data: js.Array[T], callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply[T](data: js.Array[T], callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("data-driven", JSImport.Namespace)
   @js.native

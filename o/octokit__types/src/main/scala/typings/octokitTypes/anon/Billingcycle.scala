@@ -22,8 +22,7 @@ trait Billingcycle extends StObject {
 }
 object Billingcycle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     billing_cycle: String,
     free_trial_ends_on: String,
     next_billing_date: String,
@@ -36,28 +35,20 @@ object Billingcycle {
     __obj.asInstanceOf[Billingcycle]
   }
   
-  @scala.inline
-  implicit class BillingcycleMutableBuilder[Self <: Billingcycle] (val x: Self) extends AnyVal {
+  extension [Self <: Billingcycle](x: Self) {
     
-    @scala.inline
-    def setBilling_cycle(value: String): Self = StObject.set(x, "billing_cycle", value.asInstanceOf[js.Any])
+    inline def setBilling_cycle(value: String): Self = StObject.set(x, "billing_cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFree_trial_ends_on(value: String): Self = StObject.set(x, "free_trial_ends_on", value.asInstanceOf[js.Any])
+    inline def setFree_trial_ends_on(value: String): Self = StObject.set(x, "free_trial_ends_on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_billing_date(value: String): Self = StObject.set(x, "next_billing_date", value.asInstanceOf[js.Any])
+    inline def setNext_billing_date(value: String): Self = StObject.set(x, "next_billing_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_free_trial(value: Boolean): Self = StObject.set(x, "on_free_trial", value.asInstanceOf[js.Any])
+    inline def setOn_free_trial(value: Boolean): Self = StObject.set(x, "on_free_trial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan(value: Bullets): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: Bullets): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit_count(value: Double): Self = StObject.set(x, "unit_count", value.asInstanceOf[js.Any])
+    inline def setUnit_count(value: Double): Self = StObject.set(x, "unit_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

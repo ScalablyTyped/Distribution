@@ -49,8 +49,7 @@ trait AudioFeaturesObject extends StObject {
 }
 object AudioFeaturesObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acousticness: Double,
     analysis_url: String,
     danceability: Double,
@@ -74,61 +73,42 @@ object AudioFeaturesObject {
     __obj.asInstanceOf[AudioFeaturesObject]
   }
   
-  @scala.inline
-  implicit class AudioFeaturesObjectMutableBuilder[Self <: AudioFeaturesObject] (val x: Self) extends AnyVal {
+  extension [Self <: AudioFeaturesObject](x: Self) {
     
-    @scala.inline
-    def setAcousticness(value: Double): Self = StObject.set(x, "acousticness", value.asInstanceOf[js.Any])
+    inline def setAcousticness(value: Double): Self = StObject.set(x, "acousticness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysis_url(value: String): Self = StObject.set(x, "analysis_url", value.asInstanceOf[js.Any])
+    inline def setAnalysis_url(value: String): Self = StObject.set(x, "analysis_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDanceability(value: Double): Self = StObject.set(x, "danceability", value.asInstanceOf[js.Any])
+    inline def setDanceability(value: Double): Self = StObject.set(x, "danceability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
+    inline def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+    inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstrumentalness(value: Double): Self = StObject.set(x, "instrumentalness", value.asInstanceOf[js.Any])
+    inline def setInstrumentalness(value: Double): Self = StObject.set(x, "instrumentalness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveness(value: Double): Self = StObject.set(x, "liveness", value.asInstanceOf[js.Any])
+    inline def setLiveness(value: Double): Self = StObject.set(x, "liveness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoudness(value: Double): Self = StObject.set(x, "loudness", value.asInstanceOf[js.Any])
+    inline def setLoudness(value: Double): Self = StObject.set(x, "loudness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechiness(value: Double): Self = StObject.set(x, "speechiness", value.asInstanceOf[js.Any])
+    inline def setSpeechiness(value: Double): Self = StObject.set(x, "speechiness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempo(value: Double): Self = StObject.set(x, "tempo", value.asInstanceOf[js.Any])
+    inline def setTempo(value: Double): Self = StObject.set(x, "tempo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_signature(value: Double): Self = StObject.set(x, "time_signature", value.asInstanceOf[js.Any])
+    inline def setTime_signature(value: Double): Self = StObject.set(x, "time_signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack_href(value: String): Self = StObject.set(x, "track_href", value.asInstanceOf[js.Any])
+    inline def setTrack_href(value: String): Self = StObject.set(x, "track_href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: audio_features): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: audio_features): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValence(value: Double): Self = StObject.set(x, "valence", value.asInstanceOf[js.Any])
+    inline def setValence(value: Double): Self = StObject.set(x, "valence", value.asInstanceOf[js.Any])
   }
 }

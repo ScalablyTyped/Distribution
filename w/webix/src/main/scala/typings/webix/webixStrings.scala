@@ -170,8 +170,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onAfterAdd: onAfterAdd = "onAfterAdd".asInstanceOf[onAfterAdd]
+  inline def onAfterAdd: onAfterAdd = "onAfterAdd".asInstanceOf[onAfterAdd]
   
   @js.native
   sealed trait onAfterAreaAdd
@@ -182,8 +181,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterAreaAdd: onAfterAreaAdd = "onAfterAreaAdd".asInstanceOf[onAfterAreaAdd]
+  inline def onAfterAreaAdd: onAfterAreaAdd = "onAfterAreaAdd".asInstanceOf[onAfterAreaAdd]
   
   @js.native
   sealed trait onAfterAreaRemove
@@ -194,16 +192,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterAreaRemove: onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[onAfterAreaRemove]
+  inline def onAfterAreaRemove: onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[onAfterAreaRemove]
   
   @js.native
   sealed trait onAfterBack
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterBack: onAfterBack = "onAfterBack".asInstanceOf[onAfterBack]
+  inline def onAfterBack: onAfterBack = "onAfterBack".asInstanceOf[onAfterBack]
   
   @js.native
   sealed trait onAfterBlockSelect
@@ -214,8 +210,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterBlockSelect: onAfterBlockSelect = "onAfterBlockSelect".asInstanceOf[onAfterBlockSelect]
+  inline def onAfterBlockSelect: onAfterBlockSelect = "onAfterBlockSelect".asInstanceOf[onAfterBlockSelect]
   
   @js.native
   sealed trait onAfterClose
@@ -230,8 +225,7 @@ object webixStrings {
        with typings.webix.webix.ui.treemapEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterClose: onAfterClose = "onAfterClose".asInstanceOf[onAfterClose]
+  inline def onAfterClose: onAfterClose = "onAfterClose".asInstanceOf[onAfterClose]
   
   @js.native
   sealed trait onAfterCollapse
@@ -242,8 +236,7 @@ object webixStrings {
        with typings.webix.webix.ui.headerlayoutEventName
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onAfterCollapse: onAfterCollapse = "onAfterCollapse".asInstanceOf[onAfterCollapse]
+  inline def onAfterCollapse: onAfterCollapse = "onAfterCollapse".asInstanceOf[onAfterCollapse]
   
   @js.native
   sealed trait onAfterColumnDrop
@@ -254,8 +247,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterColumnDrop: onAfterColumnDrop = "onAfterColumnDrop".asInstanceOf[onAfterColumnDrop]
+  inline def onAfterColumnDrop: onAfterColumnDrop = "onAfterColumnDrop".asInstanceOf[onAfterColumnDrop]
   
   @js.native
   sealed trait onAfterColumnDropOrder
@@ -266,8 +258,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterColumnDropOrder: onAfterColumnDropOrder = "onAfterColumnDropOrder".asInstanceOf[onAfterColumnDropOrder]
+  inline def onAfterColumnDropOrder: onAfterColumnDropOrder = "onAfterColumnDropOrder".asInstanceOf[onAfterColumnDropOrder]
   
   @js.native
   sealed trait onAfterColumnHide
@@ -278,8 +269,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterColumnHide: onAfterColumnHide = "onAfterColumnHide".asInstanceOf[onAfterColumnHide]
+  inline def onAfterColumnHide: onAfterColumnHide = "onAfterColumnHide".asInstanceOf[onAfterColumnHide]
   
   @js.native
   sealed trait onAfterColumnShow
@@ -290,16 +280,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterColumnShow: onAfterColumnShow = "onAfterColumnShow".asInstanceOf[onAfterColumnShow]
+  inline def onAfterColumnShow: onAfterColumnShow = "onAfterColumnShow".asInstanceOf[onAfterColumnShow]
   
   @js.native
   sealed trait onAfterConditionSet
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onAfterConditionSet: onAfterConditionSet = "onAfterConditionSet".asInstanceOf[onAfterConditionSet]
+  inline def onAfterConditionSet: onAfterConditionSet = "onAfterConditionSet".asInstanceOf[onAfterConditionSet]
   
   @js.native
   sealed trait onAfterContextMenu
@@ -346,24 +334,21 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onAfterContextMenu: onAfterContextMenu = "onAfterContextMenu".asInstanceOf[onAfterContextMenu]
+  inline def onAfterContextMenu: onAfterContextMenu = "onAfterContextMenu".asInstanceOf[onAfterContextMenu]
   
   @js.native
   sealed trait onAfterCopy
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
+  inline def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
   
   @js.native
   sealed trait onAfterCreateFolder
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterCreateFolder: onAfterCreateFolder = "onAfterCreateFolder".asInstanceOf[onAfterCreateFolder]
+  inline def onAfterCreateFolder: onAfterCreateFolder = "onAfterCreateFolder".asInstanceOf[onAfterCreateFolder]
   
   @js.native
   sealed trait onAfterCursorChange
@@ -372,8 +357,7 @@ object webixStrings {
        with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typings.webix.webix.TreeCollectionEventName
-  @scala.inline
-  def onAfterCursorChange: onAfterCursorChange = "onAfterCursorChange".asInstanceOf[onAfterCursorChange]
+  inline def onAfterCursorChange: onAfterCursorChange = "onAfterCursorChange".asInstanceOf[onAfterCursorChange]
   
   @js.native
   sealed trait onAfterDateSelect
@@ -382,8 +366,7 @@ object webixStrings {
        with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typings.webix.webix.ui.daterangeEventName
-  @scala.inline
-  def onAfterDateSelect: onAfterDateSelect = "onAfterDateSelect".asInstanceOf[onAfterDateSelect]
+  inline def onAfterDateSelect: onAfterDateSelect = "onAfterDateSelect".asInstanceOf[onAfterDateSelect]
   
   @js.native
   sealed trait onAfterDelete
@@ -442,16 +425,14 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onAfterDelete: onAfterDelete = "onAfterDelete".asInstanceOf[onAfterDelete]
+  inline def onAfterDelete: onAfterDelete = "onAfterDelete".asInstanceOf[onAfterDelete]
   
   @js.native
   sealed trait onAfterDeleteFile
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterDeleteFile: onAfterDeleteFile = "onAfterDeleteFile".asInstanceOf[onAfterDeleteFile]
+  inline def onAfterDeleteFile: onAfterDeleteFile = "onAfterDeleteFile".asInstanceOf[onAfterDeleteFile]
   
   @js.native
   sealed trait onAfterDrop
@@ -484,24 +465,21 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
+  inline def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
   
   @js.native
   sealed trait onAfterDynParse
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterDynParse: onAfterDynParse = "onAfterDynParse".asInstanceOf[onAfterDynParse]
+  inline def onAfterDynParse: onAfterDynParse = "onAfterDynParse".asInstanceOf[onAfterDynParse]
   
   @js.native
   sealed trait onAfterEditFile
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterEditFile: onAfterEditFile = "onAfterEditFile".asInstanceOf[onAfterEditFile]
+  inline def onAfterEditFile: onAfterEditFile = "onAfterEditFile".asInstanceOf[onAfterEditFile]
   
   @js.native
   sealed trait onAfterEditStart
@@ -516,8 +494,7 @@ object webixStrings {
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterEditStart: onAfterEditStart = "onAfterEditStart".asInstanceOf[onAfterEditStart]
+  inline def onAfterEditStart: onAfterEditStart = "onAfterEditStart".asInstanceOf[onAfterEditStart]
   
   @js.native
   sealed trait onAfterEditStop
@@ -532,16 +509,14 @@ object webixStrings {
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterEditStop: onAfterEditStop = "onAfterEditStop".asInstanceOf[onAfterEditStop]
+  inline def onAfterEditStop: onAfterEditStop = "onAfterEditStop".asInstanceOf[onAfterEditStop]
   
   @js.native
   sealed trait onAfterEditorShow
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onAfterEditorShow: onAfterEditorShow = "onAfterEditorShow".asInstanceOf[onAfterEditorShow]
+  inline def onAfterEditorShow: onAfterEditorShow = "onAfterEditorShow".asInstanceOf[onAfterEditorShow]
   
   @js.native
   sealed trait onAfterExpand
@@ -552,24 +527,21 @@ object webixStrings {
        with typings.webix.webix.ui.headerlayoutEventName
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onAfterExpand: onAfterExpand = "onAfterExpand".asInstanceOf[onAfterExpand]
+  inline def onAfterExpand: onAfterExpand = "onAfterExpand".asInstanceOf[onAfterExpand]
   
   @js.native
   sealed trait onAfterFileAdd
     extends StObject
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onAfterFileAdd: onAfterFileAdd = "onAfterFileAdd".asInstanceOf[onAfterFileAdd]
+  inline def onAfterFileAdd: onAfterFileAdd = "onAfterFileAdd".asInstanceOf[onAfterFileAdd]
   
   @js.native
   sealed trait onAfterFileUpload
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterFileUpload: onAfterFileUpload = "onAfterFileUpload".asInstanceOf[onAfterFileUpload]
+  inline def onAfterFileUpload: onAfterFileUpload = "onAfterFileUpload".asInstanceOf[onAfterFileUpload]
   
   @js.native
   sealed trait onAfterFilter
@@ -580,32 +552,28 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterFilter: onAfterFilter = "onAfterFilter".asInstanceOf[onAfterFilter]
+  inline def onAfterFilter: onAfterFilter = "onAfterFilter".asInstanceOf[onAfterFilter]
   
   @js.native
   sealed trait onAfterHideTree
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterHideTree: onAfterHideTree = "onAfterHideTree".asInstanceOf[onAfterHideTree]
+  inline def onAfterHideTree: onAfterHideTree = "onAfterHideTree".asInstanceOf[onAfterHideTree]
   
   @js.native
   sealed trait onAfterLevelDown
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterLevelDown: onAfterLevelDown = "onAfterLevelDown".asInstanceOf[onAfterLevelDown]
+  inline def onAfterLevelDown: onAfterLevelDown = "onAfterLevelDown".asInstanceOf[onAfterLevelDown]
   
   @js.native
   sealed trait onAfterLevelUp
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterLevelUp: onAfterLevelUp = "onAfterLevelUp".asInstanceOf[onAfterLevelUp]
+  inline def onAfterLevelUp: onAfterLevelUp = "onAfterLevelUp".asInstanceOf[onAfterLevelUp]
   
   @js.native
   sealed trait onAfterLoad
@@ -684,48 +652,42 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onAfterLoad: onAfterLoad = "onAfterLoad".asInstanceOf[onAfterLoad]
+  inline def onAfterLoad: onAfterLoad = "onAfterLoad".asInstanceOf[onAfterLoad]
   
   @js.native
   sealed trait onAfterMarkCopy
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterMarkCopy: onAfterMarkCopy = "onAfterMarkCopy".asInstanceOf[onAfterMarkCopy]
+  inline def onAfterMarkCopy: onAfterMarkCopy = "onAfterMarkCopy".asInstanceOf[onAfterMarkCopy]
   
   @js.native
   sealed trait onAfterMarkCut
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterMarkCut: onAfterMarkCut = "onAfterMarkCut".asInstanceOf[onAfterMarkCut]
+  inline def onAfterMarkCut: onAfterMarkCut = "onAfterMarkCut".asInstanceOf[onAfterMarkCut]
   
   @js.native
   sealed trait onAfterMenu
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterMenu: onAfterMenu = "onAfterMenu".asInstanceOf[onAfterMenu]
+  inline def onAfterMenu: onAfterMenu = "onAfterMenu".asInstanceOf[onAfterMenu]
   
   @js.native
   sealed trait onAfterModeChange
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterModeChange: onAfterModeChange = "onAfterModeChange".asInstanceOf[onAfterModeChange]
+  inline def onAfterModeChange: onAfterModeChange = "onAfterModeChange".asInstanceOf[onAfterModeChange]
   
   @js.native
   sealed trait onAfterMonthChange
     extends StObject
        with calendarEventName
        with typings.webix.webix.ui.calendarEventName
-  @scala.inline
-  def onAfterMonthChange: onAfterMonthChange = "onAfterMonthChange".asInstanceOf[onAfterMonthChange]
+  inline def onAfterMonthChange: onAfterMonthChange = "onAfterMonthChange".asInstanceOf[onAfterMonthChange]
   
   @js.native
   sealed trait onAfterOpen
@@ -740,56 +702,49 @@ object webixStrings {
        with typings.webix.webix.ui.treemapEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterOpen: onAfterOpen = "onAfterOpen".asInstanceOf[onAfterOpen]
+  inline def onAfterOpen: onAfterOpen = "onAfterOpen".asInstanceOf[onAfterOpen]
   
   @js.native
   sealed trait onAfterPageChange
     extends StObject
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
-  @scala.inline
-  def onAfterPageChange: onAfterPageChange = "onAfterPageChange".asInstanceOf[onAfterPageChange]
+  inline def onAfterPageChange: onAfterPageChange = "onAfterPageChange".asInstanceOf[onAfterPageChange]
   
   @js.native
   sealed trait onAfterPasteFile
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterPasteFile: onAfterPasteFile = "onAfterPasteFile".asInstanceOf[onAfterPasteFile]
+  inline def onAfterPasteFile: onAfterPasteFile = "onAfterPasteFile".asInstanceOf[onAfterPasteFile]
   
   @js.native
   sealed trait onAfterPathClick
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterPathClick: onAfterPathClick = "onAfterPathClick".asInstanceOf[onAfterPathClick]
+  inline def onAfterPathClick: onAfterPathClick = "onAfterPathClick".asInstanceOf[onAfterPathClick]
   
   @js.native
   sealed trait onAfterPortletMove
     extends StObject
        with portletEventName
        with typings.webix.webix.ui.portletEventName
-  @scala.inline
-  def onAfterPortletMove: onAfterPortletMove = "onAfterPortletMove".asInstanceOf[onAfterPortletMove]
+  inline def onAfterPortletMove: onAfterPortletMove = "onAfterPortletMove".asInstanceOf[onAfterPortletMove]
   
   @js.native
   sealed trait onAfterRangeChange
     extends StObject
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
-  @scala.inline
-  def onAfterRangeChange: onAfterRangeChange = "onAfterRangeChange".asInstanceOf[onAfterRangeChange]
+  inline def onAfterRangeChange: onAfterRangeChange = "onAfterRangeChange".asInstanceOf[onAfterRangeChange]
   
   @js.native
   sealed trait onAfterRangeSet
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onAfterRangeSet: onAfterRangeSet = "onAfterRangeSet".asInstanceOf[onAfterRangeSet]
+  inline def onAfterRangeSet: onAfterRangeSet = "onAfterRangeSet".asInstanceOf[onAfterRangeSet]
   
   @js.native
   sealed trait onAfterRender
@@ -894,16 +849,14 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
+  inline def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
   
   @js.native
   sealed trait onAfterRun
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterRun: onAfterRun = "onAfterRun".asInstanceOf[onAfterRun]
+  inline def onAfterRun: onAfterRun = "onAfterRun".asInstanceOf[onAfterRun]
   
   @js.native
   sealed trait onAfterScroll
@@ -1068,16 +1021,14 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onAfterScroll: onAfterScroll = "onAfterScroll".asInstanceOf[onAfterScroll]
+  inline def onAfterScroll: onAfterScroll = "onAfterScroll".asInstanceOf[onAfterScroll]
   
   @js.native
   sealed trait onAfterSearch
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterSearch: onAfterSearch = "onAfterSearch".asInstanceOf[onAfterSearch]
+  inline def onAfterSearch: onAfterSearch = "onAfterSearch".asInstanceOf[onAfterSearch]
   
   @js.native
   sealed trait onAfterSelect
@@ -1112,24 +1063,21 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onAfterSelect: onAfterSelect = "onAfterSelect".asInstanceOf[onAfterSelect]
+  inline def onAfterSelect: onAfterSelect = "onAfterSelect".asInstanceOf[onAfterSelect]
   
   @js.native
   sealed trait onAfterSheetShow
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onAfterSheetShow: onAfterSheetShow = "onAfterSheetShow".asInstanceOf[onAfterSheetShow]
+  inline def onAfterSheetShow: onAfterSheetShow = "onAfterSheetShow".asInstanceOf[onAfterSheetShow]
   
   @js.native
   sealed trait onAfterShowTree
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterShowTree: onAfterShowTree = "onAfterShowTree".asInstanceOf[onAfterShowTree]
+  inline def onAfterShowTree: onAfterShowTree = "onAfterShowTree".asInstanceOf[onAfterShowTree]
   
   @js.native
   sealed trait onAfterSort
@@ -1186,40 +1134,35 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onAfterSort: onAfterSort = "onAfterSort".asInstanceOf[onAfterSort]
+  inline def onAfterSort: onAfterSort = "onAfterSort".asInstanceOf[onAfterSort]
   
   @js.native
   sealed trait onAfterSpan
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onAfterSpan: onAfterSpan = "onAfterSpan".asInstanceOf[onAfterSpan]
+  inline def onAfterSpan: onAfterSpan = "onAfterSpan".asInstanceOf[onAfterSpan]
   
   @js.native
   sealed trait onAfterSplit
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onAfterSplit: onAfterSplit = "onAfterSplit".asInstanceOf[onAfterSplit]
+  inline def onAfterSplit: onAfterSplit = "onAfterSplit".asInstanceOf[onAfterSplit]
   
   @js.native
   sealed trait onAfterStart
     extends StObject
        with hintEventName
        with typings.webix.webix.ui.hintEventName
-  @scala.inline
-  def onAfterStart: onAfterStart = "onAfterStart".asInstanceOf[onAfterStart]
+  inline def onAfterStart: onAfterStart = "onAfterStart".asInstanceOf[onAfterStart]
   
   @js.native
   sealed trait onAfterStatusChange
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onAfterStatusChange: onAfterStatusChange = "onAfterStatusChange".asInstanceOf[onAfterStatusChange]
+  inline def onAfterStatusChange: onAfterStatusChange = "onAfterStatusChange".asInstanceOf[onAfterStatusChange]
   
   @js.native
   sealed trait onAfterTabClick
@@ -1228,8 +1171,7 @@ object webixStrings {
        with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typings.webix.webix.ui.tabbarEventName
-  @scala.inline
-  def onAfterTabClick: onAfterTabClick = "onAfterTabClick".asInstanceOf[onAfterTabClick]
+  inline def onAfterTabClick: onAfterTabClick = "onAfterTabClick".asInstanceOf[onAfterTabClick]
   
   @js.native
   sealed trait onAfterUnSelect
@@ -1240,16 +1182,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAfterUnSelect: onAfterUnSelect = "onAfterUnSelect".asInstanceOf[onAfterUnSelect]
+  inline def onAfterUnSelect: onAfterUnSelect = "onAfterUnSelect".asInstanceOf[onAfterUnSelect]
   
   @js.native
   sealed trait onAfterUploadDialog
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onAfterUploadDialog: onAfterUploadDialog = "onAfterUploadDialog".asInstanceOf[onAfterUploadDialog]
+  inline def onAfterUploadDialog: onAfterUploadDialog = "onAfterUploadDialog".asInstanceOf[onAfterUploadDialog]
   
   @js.native
   sealed trait onAfterValidation
@@ -1258,16 +1198,14 @@ object webixStrings {
        with typings.webix.webix.ui.formEventName
        with toolbarEventName
        with typings.webix.webix.ui.toolbarEventName
-  @scala.inline
-  def onAfterValidation: onAfterValidation = "onAfterValidation".asInstanceOf[onAfterValidation]
+  inline def onAfterValidation: onAfterValidation = "onAfterValidation".asInstanceOf[onAfterValidation]
   
   @js.native
   sealed trait onAfterZoom
     extends StObject
        with calendarEventName
        with typings.webix.webix.ui.calendarEventName
-  @scala.inline
-  def onAfterZoom: onAfterZoom = "onAfterZoom".asInstanceOf[onAfterZoom]
+  inline def onAfterZoom: onAfterZoom = "onAfterZoom".asInstanceOf[onAfterZoom]
   
   @js.native
   sealed trait onAreaDrag
@@ -1278,16 +1216,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onAreaDrag: onAreaDrag = "onAreaDrag".asInstanceOf[onAreaDrag]
+  inline def onAreaDrag: onAreaDrag = "onAreaDrag".asInstanceOf[onAreaDrag]
   
   @js.native
   sealed trait onAvatarClick
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onAvatarClick: onAvatarClick = "onAvatarClick".asInstanceOf[onAvatarClick]
+  inline def onAvatarClick: onAvatarClick = "onAvatarClick".asInstanceOf[onAvatarClick]
   
   @js.native
   sealed trait onBeforeAdd
@@ -1346,16 +1282,14 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeAdd: onBeforeAdd = "onBeforeAdd".asInstanceOf[onBeforeAdd]
+  inline def onBeforeAdd: onBeforeAdd = "onBeforeAdd".asInstanceOf[onBeforeAdd]
   
   @js.native
   sealed trait onBeforeApply
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onBeforeApply: onBeforeApply = "onBeforeApply".asInstanceOf[onBeforeApply]
+  inline def onBeforeApply: onBeforeApply = "onBeforeApply".asInstanceOf[onBeforeApply]
   
   @js.native
   sealed trait onBeforeAreaAdd
@@ -1366,8 +1300,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeAreaAdd: onBeforeAreaAdd = "onBeforeAreaAdd".asInstanceOf[onBeforeAreaAdd]
+  inline def onBeforeAreaAdd: onBeforeAreaAdd = "onBeforeAreaAdd".asInstanceOf[onBeforeAreaAdd]
   
   @js.native
   sealed trait onBeforeAreaRemove
@@ -1378,8 +1311,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeAreaRemove: onBeforeAreaRemove = "onBeforeAreaRemove".asInstanceOf[onBeforeAreaRemove]
+  inline def onBeforeAreaRemove: onBeforeAreaRemove = "onBeforeAreaRemove".asInstanceOf[onBeforeAreaRemove]
   
   @js.native
   sealed trait onBeforeBack
@@ -1388,8 +1320,7 @@ object webixStrings {
        with typings.webix.webix.ui.filemanagerEventName
        with multiviewEventName
        with typings.webix.webix.ui.multiviewEventName
-  @scala.inline
-  def onBeforeBack: onBeforeBack = "onBeforeBack".asInstanceOf[onBeforeBack]
+  inline def onBeforeBack: onBeforeBack = "onBeforeBack".asInstanceOf[onBeforeBack]
   
   @js.native
   sealed trait onBeforeBlockSelect
@@ -1400,16 +1331,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeBlockSelect: onBeforeBlockSelect = "onBeforeBlockSelect".asInstanceOf[onBeforeBlockSelect]
+  inline def onBeforeBlockSelect: onBeforeBlockSelect = "onBeforeBlockSelect".asInstanceOf[onBeforeBlockSelect]
   
   @js.native
   sealed trait onBeforeCancel
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onBeforeCancel: onBeforeCancel = "onBeforeCancel".asInstanceOf[onBeforeCancel]
+  inline def onBeforeCancel: onBeforeCancel = "onBeforeCancel".asInstanceOf[onBeforeCancel]
   
   @js.native
   sealed trait onBeforeClose
@@ -1424,8 +1353,7 @@ object webixStrings {
        with typings.webix.webix.ui.treemapEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeClose: onBeforeClose = "onBeforeClose".asInstanceOf[onBeforeClose]
+  inline def onBeforeClose: onBeforeClose = "onBeforeClose".asInstanceOf[onBeforeClose]
   
   @js.native
   sealed trait onBeforeColumnDrag
@@ -1436,8 +1364,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeColumnDrag: onBeforeColumnDrag = "onBeforeColumnDrag".asInstanceOf[onBeforeColumnDrag]
+  inline def onBeforeColumnDrag: onBeforeColumnDrag = "onBeforeColumnDrag".asInstanceOf[onBeforeColumnDrag]
   
   @js.native
   sealed trait onBeforeColumnDrop
@@ -1448,8 +1375,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeColumnDrop: onBeforeColumnDrop = "onBeforeColumnDrop".asInstanceOf[onBeforeColumnDrop]
+  inline def onBeforeColumnDrop: onBeforeColumnDrop = "onBeforeColumnDrop".asInstanceOf[onBeforeColumnDrop]
   
   @js.native
   sealed trait onBeforeColumnDropOrder
@@ -1460,8 +1386,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeColumnDropOrder: onBeforeColumnDropOrder = "onBeforeColumnDropOrder".asInstanceOf[onBeforeColumnDropOrder]
+  inline def onBeforeColumnDropOrder: onBeforeColumnDropOrder = "onBeforeColumnDropOrder".asInstanceOf[onBeforeColumnDropOrder]
   
   @js.native
   sealed trait onBeforeColumnHide
@@ -1472,8 +1397,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeColumnHide: onBeforeColumnHide = "onBeforeColumnHide".asInstanceOf[onBeforeColumnHide]
+  inline def onBeforeColumnHide: onBeforeColumnHide = "onBeforeColumnHide".asInstanceOf[onBeforeColumnHide]
   
   @js.native
   sealed trait onBeforeColumnShow
@@ -1484,16 +1408,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeColumnShow: onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[onBeforeColumnShow]
+  inline def onBeforeColumnShow: onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[onBeforeColumnShow]
   
   @js.native
   sealed trait onBeforeCommentShow
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onBeforeCommentShow: onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[onBeforeCommentShow]
+  inline def onBeforeCommentShow: onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[onBeforeCommentShow]
   
   @js.native
   sealed trait onBeforeContextMenu
@@ -1540,24 +1462,21 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeContextMenu: onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[onBeforeContextMenu]
+  inline def onBeforeContextMenu: onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[onBeforeContextMenu]
   
   @js.native
   sealed trait onBeforeCopy
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
+  inline def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
   
   @js.native
   sealed trait onBeforeCreateFolder
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeCreateFolder: onBeforeCreateFolder = "onBeforeCreateFolder".asInstanceOf[onBeforeCreateFolder]
+  inline def onBeforeCreateFolder: onBeforeCreateFolder = "onBeforeCreateFolder".asInstanceOf[onBeforeCreateFolder]
   
   @js.native
   sealed trait onBeforeCursorChange
@@ -1566,8 +1485,7 @@ object webixStrings {
        with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typings.webix.webix.TreeCollectionEventName
-  @scala.inline
-  def onBeforeCursorChange: onBeforeCursorChange = "onBeforeCursorChange".asInstanceOf[onBeforeCursorChange]
+  inline def onBeforeCursorChange: onBeforeCursorChange = "onBeforeCursorChange".asInstanceOf[onBeforeCursorChange]
   
   @js.native
   sealed trait onBeforeDateSelect
@@ -1576,8 +1494,7 @@ object webixStrings {
        with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typings.webix.webix.ui.daterangeEventName
-  @scala.inline
-  def onBeforeDateSelect: onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[onBeforeDateSelect]
+  inline def onBeforeDateSelect: onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[onBeforeDateSelect]
   
   @js.native
   sealed trait onBeforeDelete
@@ -1636,16 +1553,14 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeDelete: onBeforeDelete = "onBeforeDelete".asInstanceOf[onBeforeDelete]
+  inline def onBeforeDelete: onBeforeDelete = "onBeforeDelete".asInstanceOf[onBeforeDelete]
   
   @js.native
   sealed trait onBeforeDeleteFile
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeDeleteFile: onBeforeDeleteFile = "onBeforeDeleteFile".asInstanceOf[onBeforeDeleteFile]
+  inline def onBeforeDeleteFile: onBeforeDeleteFile = "onBeforeDeleteFile".asInstanceOf[onBeforeDeleteFile]
   
   @js.native
   sealed trait onBeforeDrag
@@ -1678,8 +1593,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeDrag: onBeforeDrag = "onBeforeDrag".asInstanceOf[onBeforeDrag]
+  inline def onBeforeDrag: onBeforeDrag = "onBeforeDrag".asInstanceOf[onBeforeDrag]
   
   @js.native
   sealed trait onBeforeDragIn
@@ -1712,8 +1626,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeDragIn: onBeforeDragIn = "onBeforeDragIn".asInstanceOf[onBeforeDragIn]
+  inline def onBeforeDragIn: onBeforeDragIn = "onBeforeDragIn".asInstanceOf[onBeforeDragIn]
   
   @js.native
   sealed trait onBeforeDrop
@@ -1746,8 +1659,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeDrop: onBeforeDrop = "onBeforeDrop".asInstanceOf[onBeforeDrop]
+  inline def onBeforeDrop: onBeforeDrop = "onBeforeDrop".asInstanceOf[onBeforeDrop]
   
   @js.native
   sealed trait onBeforeDropOut
@@ -1776,32 +1688,28 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
+  inline def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
   
   @js.native
   sealed trait onBeforeDynLoad
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeDynLoad: onBeforeDynLoad = "onBeforeDynLoad".asInstanceOf[onBeforeDynLoad]
+  inline def onBeforeDynLoad: onBeforeDynLoad = "onBeforeDynLoad".asInstanceOf[onBeforeDynLoad]
   
   @js.native
   sealed trait onBeforeDynParse
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeDynParse: onBeforeDynParse = "onBeforeDynParse".asInstanceOf[onBeforeDynParse]
+  inline def onBeforeDynParse: onBeforeDynParse = "onBeforeDynParse".asInstanceOf[onBeforeDynParse]
   
   @js.native
   sealed trait onBeforeEditFile
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeEditFile: onBeforeEditFile = "onBeforeEditFile".asInstanceOf[onBeforeEditFile]
+  inline def onBeforeEditFile: onBeforeEditFile = "onBeforeEditFile".asInstanceOf[onBeforeEditFile]
   
   @js.native
   sealed trait onBeforeEditStart
@@ -1816,8 +1724,7 @@ object webixStrings {
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeEditStart: onBeforeEditStart = "onBeforeEditStart".asInstanceOf[onBeforeEditStart]
+  inline def onBeforeEditStart: onBeforeEditStart = "onBeforeEditStart".asInstanceOf[onBeforeEditStart]
   
   @js.native
   sealed trait onBeforeEditStop
@@ -1832,40 +1739,35 @@ object webixStrings {
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeEditStop: onBeforeEditStop = "onBeforeEditStop".asInstanceOf[onBeforeEditStop]
+  inline def onBeforeEditStop: onBeforeEditStop = "onBeforeEditStop".asInstanceOf[onBeforeEditStop]
   
   @js.native
   sealed trait onBeforeEditorAction
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onBeforeEditorAction: onBeforeEditorAction = "onBeforeEditorAction".asInstanceOf[onBeforeEditorAction]
+  inline def onBeforeEditorAction: onBeforeEditorAction = "onBeforeEditorAction".asInstanceOf[onBeforeEditorAction]
   
   @js.native
   sealed trait onBeforeEditorShow
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onBeforeEditorShow: onBeforeEditorShow = "onBeforeEditorShow".asInstanceOf[onBeforeEditorShow]
+  inline def onBeforeEditorShow: onBeforeEditorShow = "onBeforeEditorShow".asInstanceOf[onBeforeEditorShow]
   
   @js.native
   sealed trait onBeforeFileAdd
     extends StObject
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
+  inline def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
   
   @js.native
   sealed trait onBeforeFileUpload
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeFileUpload: onBeforeFileUpload = "onBeforeFileUpload".asInstanceOf[onBeforeFileUpload]
+  inline def onBeforeFileUpload: onBeforeFileUpload = "onBeforeFileUpload".asInstanceOf[onBeforeFileUpload]
   
   @js.native
   sealed trait onBeforeFilter
@@ -1876,32 +1778,28 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeFilter: onBeforeFilter = "onBeforeFilter".asInstanceOf[onBeforeFilter]
+  inline def onBeforeFilter: onBeforeFilter = "onBeforeFilter".asInstanceOf[onBeforeFilter]
   
   @js.native
   sealed trait onBeforeHideTree
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeHideTree: onBeforeHideTree = "onBeforeHideTree".asInstanceOf[onBeforeHideTree]
+  inline def onBeforeHideTree: onBeforeHideTree = "onBeforeHideTree".asInstanceOf[onBeforeHideTree]
   
   @js.native
   sealed trait onBeforeLevelDown
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeLevelDown: onBeforeLevelDown = "onBeforeLevelDown".asInstanceOf[onBeforeLevelDown]
+  inline def onBeforeLevelDown: onBeforeLevelDown = "onBeforeLevelDown".asInstanceOf[onBeforeLevelDown]
   
   @js.native
   sealed trait onBeforeLevelUp
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeLevelUp: onBeforeLevelUp = "onBeforeLevelUp".asInstanceOf[onBeforeLevelUp]
+  inline def onBeforeLevelUp: onBeforeLevelUp = "onBeforeLevelUp".asInstanceOf[onBeforeLevelUp]
   
   @js.native
   sealed trait onBeforeLoad
@@ -1980,56 +1878,49 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeLoad: onBeforeLoad = "onBeforeLoad".asInstanceOf[onBeforeLoad]
+  inline def onBeforeLoad: onBeforeLoad = "onBeforeLoad".asInstanceOf[onBeforeLoad]
   
   @js.native
   sealed trait onBeforeMarkCopy
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeMarkCopy: onBeforeMarkCopy = "onBeforeMarkCopy".asInstanceOf[onBeforeMarkCopy]
+  inline def onBeforeMarkCopy: onBeforeMarkCopy = "onBeforeMarkCopy".asInstanceOf[onBeforeMarkCopy]
   
   @js.native
   sealed trait onBeforeMarkCut
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeMarkCut: onBeforeMarkCut = "onBeforeMarkCut".asInstanceOf[onBeforeMarkCut]
+  inline def onBeforeMarkCut: onBeforeMarkCut = "onBeforeMarkCut".asInstanceOf[onBeforeMarkCut]
   
   @js.native
   sealed trait onBeforeMenu
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeMenu: onBeforeMenu = "onBeforeMenu".asInstanceOf[onBeforeMenu]
+  inline def onBeforeMenu: onBeforeMenu = "onBeforeMenu".asInstanceOf[onBeforeMenu]
   
   @js.native
   sealed trait onBeforeMenuAction
     extends StObject
        with commentsEventName
        with typings.webix.webix.ui.commentsEventName
-  @scala.inline
-  def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
+  inline def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
   
   @js.native
   sealed trait onBeforeModeChange
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeModeChange: onBeforeModeChange = "onBeforeModeChange".asInstanceOf[onBeforeModeChange]
+  inline def onBeforeModeChange: onBeforeModeChange = "onBeforeModeChange".asInstanceOf[onBeforeModeChange]
   
   @js.native
   sealed trait onBeforeMonthChange
     extends StObject
        with calendarEventName
        with typings.webix.webix.ui.calendarEventName
-  @scala.inline
-  def onBeforeMonthChange: onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[onBeforeMonthChange]
+  inline def onBeforeMonthChange: onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[onBeforeMonthChange]
   
   @js.native
   sealed trait onBeforeOpen
@@ -2044,32 +1935,28 @@ object webixStrings {
        with typings.webix.webix.ui.treemapEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeOpen: onBeforeOpen = "onBeforeOpen".asInstanceOf[onBeforeOpen]
+  inline def onBeforeOpen: onBeforeOpen = "onBeforeOpen".asInstanceOf[onBeforeOpen]
   
   @js.native
   sealed trait onBeforePageChange
     extends StObject
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
-  @scala.inline
-  def onBeforePageChange: onBeforePageChange = "onBeforePageChange".asInstanceOf[onBeforePageChange]
+  inline def onBeforePageChange: onBeforePageChange = "onBeforePageChange".asInstanceOf[onBeforePageChange]
   
   @js.native
   sealed trait onBeforePasteFile
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforePasteFile: onBeforePasteFile = "onBeforePasteFile".asInstanceOf[onBeforePasteFile]
+  inline def onBeforePasteFile: onBeforePasteFile = "onBeforePasteFile".asInstanceOf[onBeforePasteFile]
   
   @js.native
   sealed trait onBeforePortletMove
     extends StObject
        with portletEventName
        with typings.webix.webix.ui.portletEventName
-  @scala.inline
-  def onBeforePortletMove: onBeforePortletMove = "onBeforePortletMove".asInstanceOf[onBeforePortletMove]
+  inline def onBeforePortletMove: onBeforePortletMove = "onBeforePortletMove".asInstanceOf[onBeforePortletMove]
   
   @js.native
   sealed trait onBeforeRender
@@ -2176,40 +2063,35 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onBeforeRender: onBeforeRender = "onBeforeRender".asInstanceOf[onBeforeRender]
+  inline def onBeforeRender: onBeforeRender = "onBeforeRender".asInstanceOf[onBeforeRender]
   
   @js.native
   sealed trait onBeforeRequest
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeRequest: onBeforeRequest = "onBeforeRequest".asInstanceOf[onBeforeRequest]
+  inline def onBeforeRequest: onBeforeRequest = "onBeforeRequest".asInstanceOf[onBeforeRequest]
   
   @js.native
   sealed trait onBeforeRun
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeRun: onBeforeRun = "onBeforeRun".asInstanceOf[onBeforeRun]
+  inline def onBeforeRun: onBeforeRun = "onBeforeRun".asInstanceOf[onBeforeRun]
   
   @js.native
   sealed trait onBeforeSearch
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeSearch: onBeforeSearch = "onBeforeSearch".asInstanceOf[onBeforeSearch]
+  inline def onBeforeSearch: onBeforeSearch = "onBeforeSearch".asInstanceOf[onBeforeSearch]
   
   @js.native
   sealed trait onBeforeSearchRequest
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeSearchRequest: onBeforeSearchRequest = "onBeforeSearchRequest".asInstanceOf[onBeforeSearchRequest]
+  inline def onBeforeSearchRequest: onBeforeSearchRequest = "onBeforeSearchRequest".asInstanceOf[onBeforeSearchRequest]
   
   @js.native
   sealed trait onBeforeSelect
@@ -2242,16 +2124,14 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeSelect: onBeforeSelect = "onBeforeSelect".asInstanceOf[onBeforeSelect]
+  inline def onBeforeSelect: onBeforeSelect = "onBeforeSelect".asInstanceOf[onBeforeSelect]
   
   @js.native
   sealed trait onBeforeSheetShow
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onBeforeSheetShow: onBeforeSheetShow = "onBeforeSheetShow".asInstanceOf[onBeforeSheetShow]
+  inline def onBeforeSheetShow: onBeforeSheetShow = "onBeforeSheetShow".asInstanceOf[onBeforeSheetShow]
   
   @js.native
   sealed trait onBeforeShow
@@ -2280,16 +2160,14 @@ object webixStrings {
        with typings.webix.webix.ui.suggestEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onBeforeShow: onBeforeShow = "onBeforeShow".asInstanceOf[onBeforeShow]
+  inline def onBeforeShow: onBeforeShow = "onBeforeShow".asInstanceOf[onBeforeShow]
   
   @js.native
   sealed trait onBeforeShowTree
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeShowTree: onBeforeShowTree = "onBeforeShowTree".asInstanceOf[onBeforeShowTree]
+  inline def onBeforeShowTree: onBeforeShowTree = "onBeforeShowTree".asInstanceOf[onBeforeShowTree]
   
   @js.native
   sealed trait onBeforeSort
@@ -2346,40 +2224,35 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onBeforeSort: onBeforeSort = "onBeforeSort".asInstanceOf[onBeforeSort]
+  inline def onBeforeSort: onBeforeSort = "onBeforeSort".asInstanceOf[onBeforeSort]
   
   @js.native
   sealed trait onBeforeSpan
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onBeforeSpan: onBeforeSpan = "onBeforeSpan".asInstanceOf[onBeforeSpan]
+  inline def onBeforeSpan: onBeforeSpan = "onBeforeSpan".asInstanceOf[onBeforeSpan]
   
   @js.native
   sealed trait onBeforeSplit
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onBeforeSplit: onBeforeSplit = "onBeforeSplit".asInstanceOf[onBeforeSplit]
+  inline def onBeforeSplit: onBeforeSplit = "onBeforeSplit".asInstanceOf[onBeforeSplit]
   
   @js.native
   sealed trait onBeforeStart
     extends StObject
        with hintEventName
        with typings.webix.webix.ui.hintEventName
-  @scala.inline
-  def onBeforeStart: onBeforeStart = "onBeforeStart".asInstanceOf[onBeforeStart]
+  inline def onBeforeStart: onBeforeStart = "onBeforeStart".asInstanceOf[onBeforeStart]
   
   @js.native
   sealed trait onBeforeStatusChange
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onBeforeStatusChange: onBeforeStatusChange = "onBeforeStatusChange".asInstanceOf[onBeforeStatusChange]
+  inline def onBeforeStatusChange: onBeforeStatusChange = "onBeforeStatusChange".asInstanceOf[onBeforeStatusChange]
   
   @js.native
   sealed trait onBeforeTabClick
@@ -2388,16 +2261,14 @@ object webixStrings {
        with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typings.webix.webix.ui.tabbarEventName
-  @scala.inline
-  def onBeforeTabClick: onBeforeTabClick = "onBeforeTabClick".asInstanceOf[onBeforeTabClick]
+  inline def onBeforeTabClick: onBeforeTabClick = "onBeforeTabClick".asInstanceOf[onBeforeTabClick]
   
   @js.native
   sealed trait onBeforeTabClose
     extends StObject
        with tabbarEventName
        with typings.webix.webix.ui.tabbarEventName
-  @scala.inline
-  def onBeforeTabClose: onBeforeTabClose = "onBeforeTabClose".asInstanceOf[onBeforeTabClose]
+  inline def onBeforeTabClose: onBeforeTabClose = "onBeforeTabClose".asInstanceOf[onBeforeTabClose]
   
   @js.native
   sealed trait onBeforeUnSelect
@@ -2408,16 +2279,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onBeforeUnSelect: onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[onBeforeUnSelect]
+  inline def onBeforeUnSelect: onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[onBeforeUnSelect]
   
   @js.native
   sealed trait onBeforeUploadDialog
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onBeforeUploadDialog: onBeforeUploadDialog = "onBeforeUploadDialog".asInstanceOf[onBeforeUploadDialog]
+  inline def onBeforeUploadDialog: onBeforeUploadDialog = "onBeforeUploadDialog".asInstanceOf[onBeforeUploadDialog]
   
   @js.native
   sealed trait onBeforeValidate
@@ -2426,24 +2295,21 @@ object webixStrings {
        with typings.webix.webix.ui.formEventName
        with toolbarEventName
        with typings.webix.webix.ui.toolbarEventName
-  @scala.inline
-  def onBeforeValidate: onBeforeValidate = "onBeforeValidate".asInstanceOf[onBeforeValidate]
+  inline def onBeforeValidate: onBeforeValidate = "onBeforeValidate".asInstanceOf[onBeforeValidate]
   
   @js.native
   sealed trait onBeforeValueChange
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onBeforeValueChange: onBeforeValueChange = "onBeforeValueChange".asInstanceOf[onBeforeValueChange]
+  inline def onBeforeValueChange: onBeforeValueChange = "onBeforeValueChange".asInstanceOf[onBeforeValueChange]
   
   @js.native
   sealed trait onBeforeZoom
     extends StObject
        with calendarEventName
        with typings.webix.webix.ui.calendarEventName
-  @scala.inline
-  def onBeforeZoom: onBeforeZoom = "onBeforeZoom".asInstanceOf[onBeforeZoom]
+  inline def onBeforeZoom: onBeforeZoom = "onBeforeZoom".asInstanceOf[onBeforeZoom]
   
   @js.native
   sealed trait onBindRequest
@@ -2660,8 +2526,7 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onBindRequest: onBindRequest = "onBindRequest".asInstanceOf[onBindRequest]
+  inline def onBindRequest: onBindRequest = "onBindRequest".asInstanceOf[onBindRequest]
   
   @js.native
   sealed trait onBindUpdate
@@ -2670,8 +2535,7 @@ object webixStrings {
        with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typings.webix.webix.TreeCollectionEventName
-  @scala.inline
-  def onBindUpdate: onBindUpdate = "onBindUpdate".asInstanceOf[onBindUpdate]
+  inline def onBindUpdate: onBindUpdate = "onBindUpdate".asInstanceOf[onBindUpdate]
   
   @js.native
   sealed trait onBlur
@@ -2830,24 +2694,21 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
   sealed trait onCancel
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onCancel: onCancel = "onCancel".asInstanceOf[onCancel]
+  inline def onCancel: onCancel = "onCancel".asInstanceOf[onCancel]
   
   @js.native
   sealed trait onCellChange
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onCellChange: onCellChange = "onCellChange".asInstanceOf[onCellChange]
+  inline def onCellChange: onCellChange = "onCellChange".asInstanceOf[onCellChange]
   
   @js.native
   sealed trait onChange
@@ -2924,8 +2785,7 @@ object webixStrings {
        with typings.webix.webix.ui.toggleEventName
        with toolbarEventName
        with typings.webix.webix.ui.toolbarEventName
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
   sealed trait onCheck
@@ -2938,8 +2798,7 @@ object webixStrings {
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onCheck: onCheck = "onCheck".asInstanceOf[onCheck]
+  inline def onCheck: onCheck = "onCheck".asInstanceOf[onCheck]
   
   @js.native
   sealed trait onCollectValues
@@ -2950,8 +2809,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
+  inline def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
   
   @js.native
   sealed trait onColumnGroupCollapse
@@ -2960,8 +2818,7 @@ object webixStrings {
        with typings.webix.webix.ui.datatableEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onColumnGroupCollapse: onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[onColumnGroupCollapse]
+  inline def onColumnGroupCollapse: onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[onColumnGroupCollapse]
   
   @js.native
   sealed trait onColumnResize
@@ -2972,16 +2829,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onColumnResize: onColumnResize = "onColumnResize".asInstanceOf[onColumnResize]
+  inline def onColumnResize: onColumnResize = "onColumnResize".asInstanceOf[onColumnResize]
   
   @js.native
   sealed trait onCommentHide
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onCommentHide: onCommentHide = "onCommentHide".asInstanceOf[onCommentHide]
+  inline def onCommentHide: onCommentHide = "onCommentHide".asInstanceOf[onCommentHide]
   
   @js.native
   sealed trait onComponentInit
@@ -2990,24 +2845,21 @@ object webixStrings {
        with typings.webix.webix.ui.filemanagerEventName
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
+  inline def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
   
   @js.native
   sealed trait onCopyError
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onCopyError: onCopyError = "onCopyError".asInstanceOf[onCopyError]
+  inline def onCopyError: onCopyError = "onCopyError".asInstanceOf[onCopyError]
   
   @js.native
   sealed trait onDataParse
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onDataParse: onDataParse = "onDataParse".asInstanceOf[onDataParse]
+  inline def onDataParse: onDataParse = "onDataParse".asInstanceOf[onDataParse]
   
   @js.native
   sealed trait onDataRequest
@@ -3064,16 +2916,14 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onDataRequest: onDataRequest = "onDataRequest".asInstanceOf[onDataRequest]
+  inline def onDataRequest: onDataRequest = "onDataRequest".asInstanceOf[onDataRequest]
   
   @js.native
   sealed trait onDataSerialize
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onDataSerialize: onDataSerialize = "onDataSerialize".asInstanceOf[onDataSerialize]
+  inline def onDataSerialize: onDataSerialize = "onDataSerialize".asInstanceOf[onDataSerialize]
   
   @js.native
   sealed trait onDataUpdate
@@ -3130,8 +2980,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onDataUpdate: onDataUpdate = "onDataUpdate".asInstanceOf[onDataUpdate]
+  inline def onDataUpdate: onDataUpdate = "onDataUpdate".asInstanceOf[onDataUpdate]
   
   @js.native
   sealed trait onDateClear
@@ -3140,16 +2989,14 @@ object webixStrings {
        with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typings.webix.webix.ui.daterangeEventName
-  @scala.inline
-  def onDateClear: onDateClear = "onDateClear".asInstanceOf[onDateClear]
+  inline def onDateClear: onDateClear = "onDateClear".asInstanceOf[onDateClear]
   
   @js.native
   sealed trait onDateSelect
     extends StObject
        with calendarEventName
        with typings.webix.webix.ui.calendarEventName
-  @scala.inline
-  def onDateSelect: onDateSelect = "onDateSelect".asInstanceOf[onDateSelect]
+  inline def onDateSelect: onDateSelect = "onDateSelect".asInstanceOf[onDateSelect]
   
   @js.native
   sealed trait onDestruct
@@ -3362,16 +3209,14 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onDestruct: onDestruct = "onDestruct".asInstanceOf[onDestruct]
+  inline def onDestruct: onDestruct = "onDestruct".asInstanceOf[onDestruct]
   
   @js.native
   sealed trait onDocumentReady
     extends StObject
        with pdfviewerEventName
        with typings.webix.webix.ui.pdfviewerEventName
-  @scala.inline
-  def onDocumentReady: onDocumentReady = "onDocumentReady".asInstanceOf[onDocumentReady]
+  inline def onDocumentReady: onDocumentReady = "onDocumentReady".asInstanceOf[onDocumentReady]
   
   @js.native
   sealed trait onDragOut
@@ -3402,16 +3247,14 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onDragOut: onDragOut = "onDragOut".asInstanceOf[onDragOut]
+  inline def onDragOut: onDragOut = "onDragOut".asInstanceOf[onDragOut]
   
   @js.native
   sealed trait onDynLoadError
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onDynLoadError: onDynLoadError = "onDynLoadError".asInstanceOf[onDynLoadError]
+  inline def onDynLoadError: onDynLoadError = "onDynLoadError".asInstanceOf[onDynLoadError]
   
   @js.native
   sealed trait onEditorChange
@@ -3422,16 +3265,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onEditorChange: onEditorChange = "onEditorChange".asInstanceOf[onEditorChange]
+  inline def onEditorChange: onEditorChange = "onEditorChange".asInstanceOf[onEditorChange]
   
   @js.native
   sealed trait onEnd
     extends StObject
        with hintEventName
        with typings.webix.webix.ui.hintEventName
-  @scala.inline
-  def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
+  inline def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
   
   @js.native
   sealed trait onEnter
@@ -3590,48 +3431,42 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
+  inline def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
   
   @js.native
   sealed trait onErrorResponse
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onErrorResponse: onErrorResponse = "onErrorResponse".asInstanceOf[onErrorResponse]
+  inline def onErrorResponse: onErrorResponse = "onErrorResponse".asInstanceOf[onErrorResponse]
   
   @js.native
   sealed trait onFileUpload
     extends StObject
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onFileUpload: onFileUpload = "onFileUpload".asInstanceOf[onFileUpload]
+  inline def onFileUpload: onFileUpload = "onFileUpload".asInstanceOf[onFileUpload]
   
   @js.native
   sealed trait onFileUploadError
     extends StObject
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onFileUploadError: onFileUploadError = "onFileUploadError".asInstanceOf[onFileUploadError]
+  inline def onFileUploadError: onFileUploadError = "onFileUploadError".asInstanceOf[onFileUploadError]
   
   @js.native
   sealed trait onFilterChange
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onFilterChange: onFilterChange = "onFilterChange".asInstanceOf[onFilterChange]
+  inline def onFilterChange: onFilterChange = "onFilterChange".asInstanceOf[onFilterChange]
   
   @js.native
   sealed trait onFilterCreate
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onFilterCreate: onFilterCreate = "onFilterCreate".asInstanceOf[onFilterCreate]
+  inline def onFilterCreate: onFilterCreate = "onFilterCreate".asInstanceOf[onFilterCreate]
   
   @js.native
   sealed trait onFocus
@@ -3790,16 +3625,14 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
+  inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   
   @js.native
   sealed trait onFolderSelect
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onFolderSelect: onFolderSelect = "onFolderSelect".asInstanceOf[onFolderSelect]
+  inline def onFolderSelect: onFolderSelect = "onFolderSelect".asInstanceOf[onFolderSelect]
   
   @js.native
   sealed trait onHeaderClick
@@ -3810,24 +3643,21 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onHeaderClick: onHeaderClick = "onHeaderClick".asInstanceOf[onHeaderClick]
+  inline def onHeaderClick: onHeaderClick = "onHeaderClick".asInstanceOf[onHeaderClick]
   
   @js.native
   sealed trait onHeaderInit
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onHeaderInit: onHeaderInit = "onHeaderInit".asInstanceOf[onHeaderInit]
+  inline def onHeaderInit: onHeaderInit = "onHeaderInit".asInstanceOf[onHeaderInit]
   
   @js.native
   sealed trait onHeatMapRender
     extends StObject
        with googleMapEventName
        with typings.webix.webix.ui.googleMapEventName
-  @scala.inline
-  def onHeatMapRender: onHeatMapRender = "onHeatMapRender".asInstanceOf[onHeatMapRender]
+  inline def onHeatMapRender: onHeatMapRender = "onHeatMapRender".asInstanceOf[onHeatMapRender]
   
   @js.native
   sealed trait onHide
@@ -3856,24 +3686,21 @@ object webixStrings {
        with typings.webix.webix.ui.suggestEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onHide: onHide = "onHide".asInstanceOf[onHide]
+  inline def onHide: onHide = "onHide".asInstanceOf[onHide]
   
   @js.native
   sealed trait onHideSearchResults
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onHideSearchResults: onHideSearchResults = "onHideSearchResults".asInstanceOf[onHideSearchResults]
+  inline def onHideSearchResults: onHideSearchResults = "onHideSearchResults".asInstanceOf[onHideSearchResults]
   
   @js.native
   sealed trait onHistoryChange
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onHistoryChange: onHistoryChange = "onHistoryChange".asInstanceOf[onHistoryChange]
+  inline def onHistoryChange: onHistoryChange = "onHistoryChange".asInstanceOf[onHistoryChange]
   
   @js.native
   sealed trait onItemCheck
@@ -3888,8 +3715,7 @@ object webixStrings {
        with typings.webix.webix.ui.treemapEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onItemCheck: onItemCheck = "onItemCheck".asInstanceOf[onItemCheck]
+  inline def onItemCheck: onItemCheck = "onItemCheck".asInstanceOf[onItemCheck]
   
   @js.native
   sealed trait onItemClick
@@ -3990,8 +3816,7 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onItemClick: onItemClick = "onItemClick".asInstanceOf[onItemClick]
+  inline def onItemClick: onItemClick = "onItemClick".asInstanceOf[onItemClick]
   
   @js.native
   sealed trait onItemDblClick
@@ -4038,16 +3863,14 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onItemDblClick: onItemDblClick = "onItemDblClick".asInstanceOf[onItemDblClick]
+  inline def onItemDblClick: onItemDblClick = "onItemDblClick".asInstanceOf[onItemDblClick]
   
   @js.native
   sealed trait onItemRename
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onItemRename: onItemRename = "onItemRename".asInstanceOf[onItemRename]
+  inline def onItemRename: onItemRename = "onItemRename".asInstanceOf[onItemRename]
   
   @js.native
   sealed trait onItemRender
@@ -4078,16 +3901,14 @@ object webixStrings {
        with typings.webix.webix.ui.treemapEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onItemRender: onItemRender = "onItemRender".asInstanceOf[onItemRender]
+  inline def onItemRender: onItemRender = "onItemRender".asInstanceOf[onItemRender]
   
   @js.native
   sealed trait onItemSelect
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onItemSelect: onItemSelect = "onItemSelect".asInstanceOf[onItemSelect]
+  inline def onItemSelect: onItemSelect = "onItemSelect".asInstanceOf[onItemSelect]
   
   @js.native
   sealed trait onKeyPress
@@ -4246,16 +4067,14 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
+  inline def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
   
   @js.native
   sealed trait onKeySelect
     extends StObject
        with querybuilderEventName
        with typings.webix.webix.ui.querybuilderEventName
-  @scala.inline
-  def onKeySelect: onKeySelect = "onKeySelect".asInstanceOf[onKeySelect]
+  inline def onKeySelect: onKeySelect = "onKeySelect".asInstanceOf[onKeySelect]
   
   @js.native
   sealed trait onLegendClick
@@ -4264,96 +4083,84 @@ object webixStrings {
        with typings.webix.webix.ui.chartEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
-  @scala.inline
-  def onLegendClick: onLegendClick = "onLegendClick".asInstanceOf[onLegendClick]
+  inline def onLegendClick: onLegendClick = "onLegendClick".asInstanceOf[onLegendClick]
   
   @js.native
   sealed trait onListAfterContextMenu
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListAfterContextMenu: onListAfterContextMenu = "onListAfterContextMenu".asInstanceOf[onListAfterContextMenu]
+  inline def onListAfterContextMenu: onListAfterContextMenu = "onListAfterContextMenu".asInstanceOf[onListAfterContextMenu]
   
   @js.native
   sealed trait onListAfterDrop
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListAfterDrop: onListAfterDrop = "onListAfterDrop".asInstanceOf[onListAfterDrop]
+  inline def onListAfterDrop: onListAfterDrop = "onListAfterDrop".asInstanceOf[onListAfterDrop]
   
   @js.native
   sealed trait onListAfterSelect
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListAfterSelect: onListAfterSelect = "onListAfterSelect".asInstanceOf[onListAfterSelect]
+  inline def onListAfterSelect: onListAfterSelect = "onListAfterSelect".asInstanceOf[onListAfterSelect]
   
   @js.native
   sealed trait onListBeforeContextMenu
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListBeforeContextMenu: onListBeforeContextMenu = "onListBeforeContextMenu".asInstanceOf[onListBeforeContextMenu]
+  inline def onListBeforeContextMenu: onListBeforeContextMenu = "onListBeforeContextMenu".asInstanceOf[onListBeforeContextMenu]
   
   @js.native
   sealed trait onListBeforeDrag
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListBeforeDrag: onListBeforeDrag = "onListBeforeDrag".asInstanceOf[onListBeforeDrag]
+  inline def onListBeforeDrag: onListBeforeDrag = "onListBeforeDrag".asInstanceOf[onListBeforeDrag]
   
   @js.native
   sealed trait onListBeforeDragIn
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListBeforeDragIn: onListBeforeDragIn = "onListBeforeDragIn".asInstanceOf[onListBeforeDragIn]
+  inline def onListBeforeDragIn: onListBeforeDragIn = "onListBeforeDragIn".asInstanceOf[onListBeforeDragIn]
   
   @js.native
   sealed trait onListBeforeDrop
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListBeforeDrop: onListBeforeDrop = "onListBeforeDrop".asInstanceOf[onListBeforeDrop]
+  inline def onListBeforeDrop: onListBeforeDrop = "onListBeforeDrop".asInstanceOf[onListBeforeDrop]
   
   @js.native
   sealed trait onListBeforeSelect
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListBeforeSelect: onListBeforeSelect = "onListBeforeSelect".asInstanceOf[onListBeforeSelect]
+  inline def onListBeforeSelect: onListBeforeSelect = "onListBeforeSelect".asInstanceOf[onListBeforeSelect]
   
   @js.native
   sealed trait onListIconClick
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListIconClick: onListIconClick = "onListIconClick".asInstanceOf[onListIconClick]
+  inline def onListIconClick: onListIconClick = "onListIconClick".asInstanceOf[onListIconClick]
   
   @js.native
   sealed trait onListItemClick
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListItemClick: onListItemClick = "onListItemClick".asInstanceOf[onListItemClick]
+  inline def onListItemClick: onListItemClick = "onListItemClick".asInstanceOf[onListItemClick]
   
   @js.native
   sealed trait onListItemDblClick
     extends StObject
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
-  @scala.inline
-  def onListItemDblClick: onListItemDblClick = "onListItemDblClick".asInstanceOf[onListItemDblClick]
+  inline def onListItemDblClick: onListItemDblClick = "onListItemDblClick".asInstanceOf[onListItemDblClick]
   
   @js.native
   sealed trait onLiveEdit
@@ -4366,8 +4173,7 @@ object webixStrings {
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onLiveEdit: onLiveEdit = "onLiveEdit".asInstanceOf[onLiveEdit]
+  inline def onLiveEdit: onLiveEdit = "onLiveEdit".asInstanceOf[onLiveEdit]
   
   @js.native
   sealed trait onLoadError
@@ -4444,8 +4250,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onLoadError: onLoadError = "onLoadError".asInstanceOf[onLoadError]
+  inline def onLoadError: onLoadError = "onLoadError".asInstanceOf[onLoadError]
   
   @js.native
   sealed trait onLongTouch
@@ -4604,32 +4409,28 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onLongTouch: onLongTouch = "onLongTouch".asInstanceOf[onLongTouch]
+  inline def onLongTouch: onLongTouch = "onLongTouch".asInstanceOf[onLongTouch]
   
   @js.native
   sealed trait onMapError
     extends StObject
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
-  @scala.inline
-  def onMapError: onMapError = "onMapError".asInstanceOf[onMapError]
+  inline def onMapError: onMapError = "onMapError".asInstanceOf[onMapError]
   
   @js.native
   sealed trait onMapReady
     extends StObject
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
-  @scala.inline
-  def onMapReady: onMapReady = "onMapReady".asInstanceOf[onMapReady]
+  inline def onMapReady: onMapReady = "onMapReady".asInstanceOf[onMapReady]
   
   @js.native
   sealed trait onMathRefresh
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onMathRefresh: onMathRefresh = "onMathRefresh".asInstanceOf[onMathRefresh]
+  inline def onMathRefresh: onMathRefresh = "onMathRefresh".asInstanceOf[onMathRefresh]
   
   @js.native
   sealed trait onMenuItemClick
@@ -4640,8 +4441,7 @@ object webixStrings {
        with typings.webix.webix.ui.menuEventName
        with submenuEventName
        with typings.webix.webix.ui.submenuEventName
-  @scala.inline
-  def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
+  inline def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
   
   @js.native
   sealed trait onMouseMove
@@ -4688,8 +4488,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
+  inline def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
   
   @js.native
   sealed trait onMouseMoving
@@ -4736,8 +4535,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onMouseMoving: onMouseMoving = "onMouseMoving".asInstanceOf[onMouseMoving]
+  inline def onMouseMoving: onMouseMoving = "onMouseMoving".asInstanceOf[onMouseMoving]
   
   @js.native
   sealed trait onMouseOut
@@ -4784,24 +4582,21 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
+  inline def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
   
   @js.native
   sealed trait onMoveError
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onMoveError: onMoveError = "onMoveError".asInstanceOf[onMoveError]
+  inline def onMoveError: onMoveError = "onMoveError".asInstanceOf[onMoveError]
   
   @js.native
   sealed trait onNext
     extends StObject
        with hintEventName
        with typings.webix.webix.ui.hintEventName
-  @scala.inline
-  def onNext: onNext = "onNext".asInstanceOf[onNext]
+  inline def onNext: onNext = "onNext".asInstanceOf[onNext]
   
   @js.native
   sealed trait onOptionAdd
@@ -4812,8 +4607,7 @@ object webixStrings {
        with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typings.webix.webix.ui.tabbarEventName
-  @scala.inline
-  def onOptionAdd: onOptionAdd = "onOptionAdd".asInstanceOf[onOptionAdd]
+  inline def onOptionAdd: onOptionAdd = "onOptionAdd".asInstanceOf[onOptionAdd]
   
   @js.native
   sealed trait onOptionRemove
@@ -4824,16 +4618,14 @@ object webixStrings {
        with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typings.webix.webix.ui.tabbarEventName
-  @scala.inline
-  def onOptionRemove: onOptionRemove = "onOptionRemove".asInstanceOf[onOptionRemove]
+  inline def onOptionRemove: onOptionRemove = "onOptionRemove".asInstanceOf[onOptionRemove]
   
   @js.native
   sealed trait onPageRender
     extends StObject
        with pdfviewerEventName
        with typings.webix.webix.ui.pdfviewerEventName
-  @scala.inline
-  def onPageRender: onPageRender = "onPageRender".asInstanceOf[onPageRender]
+  inline def onPageRender: onPageRender = "onPageRender".asInstanceOf[onPageRender]
   
   @js.native
   sealed trait onPartialRender
@@ -4844,8 +4636,7 @@ object webixStrings {
        with typings.webix.webix.ui.treeEventName
        with treemapEventName
        with typings.webix.webix.ui.treemapEventName
-  @scala.inline
-  def onPartialRender: onPartialRender = "onPartialRender".asInstanceOf[onPartialRender]
+  inline def onPartialRender: onPartialRender = "onPartialRender".asInstanceOf[onPartialRender]
   
   @js.native
   sealed trait onPaste
@@ -4874,56 +4665,49 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
+  inline def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
   
   @js.native
   sealed trait onPathComplete
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onPathComplete: onPathComplete = "onPathComplete".asInstanceOf[onPathComplete]
+  inline def onPathComplete: onPathComplete = "onPathComplete".asInstanceOf[onPathComplete]
   
   @js.native
   sealed trait onPathLevel
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onPathLevel: onPathLevel = "onPathLevel".asInstanceOf[onPathLevel]
+  inline def onPathLevel: onPathLevel = "onPathLevel".asInstanceOf[onPathLevel]
   
   @js.native
   sealed trait onPopup
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onPopup: onPopup = "onPopup".asInstanceOf[onPopup]
+  inline def onPopup: onPopup = "onPopup".asInstanceOf[onPopup]
   
   @js.native
   sealed trait onPrevious
     extends StObject
        with hintEventName
        with typings.webix.webix.ui.hintEventName
-  @scala.inline
-  def onPrevious: onPrevious = "onPrevious".asInstanceOf[onPrevious]
+  inline def onPrevious: onPrevious = "onPrevious".asInstanceOf[onPrevious]
   
   @js.native
   sealed trait onRegionClick
     extends StObject
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
-  @scala.inline
-  def onRegionClick: onRegionClick = "onRegionClick".asInstanceOf[onRegionClick]
+  inline def onRegionClick: onRegionClick = "onRegionClick".asInstanceOf[onRegionClick]
   
   @js.native
   sealed trait onReset
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onReset: onReset = "onReset".asInstanceOf[onReset]
+  inline def onReset: onReset = "onReset".asInstanceOf[onReset]
   
   @js.native
   sealed trait onResize
@@ -4936,16 +4720,14 @@ object webixStrings {
        with typings.webix.webix.ui.resizeareaEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onResize: onResize = "onResize".asInstanceOf[onResize]
+  inline def onResize: onResize = "onResize".asInstanceOf[onResize]
   
   @js.native
   sealed trait onResizeEnd
     extends StObject
        with resizeareaEventName
        with typings.webix.webix.ui.resizeareaEventName
-  @scala.inline
-  def onResizeEnd: onResizeEnd = "onResizeEnd".asInstanceOf[onResizeEnd]
+  inline def onResizeEnd: onResizeEnd = "onResizeEnd".asInstanceOf[onResizeEnd]
   
   @js.native
   sealed trait onRowResize
@@ -4956,21 +4738,18 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onRowResize: onRowResize = "onRowResize".asInstanceOf[onRowResize]
+  inline def onRowResize: onRowResize = "onRowResize".asInstanceOf[onRowResize]
   
   @js.native
   sealed trait onScaleChange
     extends StObject
        with pdfviewerEventName
        with typings.webix.webix.ui.pdfviewerEventName
-  @scala.inline
-  def onScaleChange: onScaleChange = "onScaleChange".asInstanceOf[onScaleChange]
+  inline def onScaleChange: onScaleChange = "onScaleChange".asInstanceOf[onScaleChange]
   
   @js.native
   sealed trait onScroll extends StObject
-  @scala.inline
-  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
+  inline def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
   
   @js.native
   sealed trait onScrollX
@@ -4981,8 +4760,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onScrollX: onScrollX = "onScrollX".asInstanceOf[onScrollX]
+  inline def onScrollX: onScrollX = "onScrollX".asInstanceOf[onScrollX]
   
   @js.native
   sealed trait onScrollY
@@ -4993,40 +4771,35 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onScrollY: onScrollY = "onScrollY".asInstanceOf[onScrollY]
+  inline def onScrollY: onScrollY = "onScrollY".asInstanceOf[onScrollY]
   
   @js.native
   sealed trait onSearchIconClick
     extends StObject
        with searchEventName
        with typings.webix.webix.ui.searchEventName
-  @scala.inline
-  def onSearchIconClick: onSearchIconClick = "onSearchIconClick".asInstanceOf[onSearchIconClick]
+  inline def onSearchIconClick: onSearchIconClick = "onSearchIconClick".asInstanceOf[onSearchIconClick]
   
   @js.native
   sealed trait onSectionAdd
     extends StObject
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-  @scala.inline
-  def onSectionAdd: onSectionAdd = "onSectionAdd".asInstanceOf[onSectionAdd]
+  inline def onSectionAdd: onSectionAdd = "onSectionAdd".asInstanceOf[onSectionAdd]
   
   @js.native
   sealed trait onSectionRemove
     extends StObject
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-  @scala.inline
-  def onSectionRemove: onSectionRemove = "onSectionRemove".asInstanceOf[onSectionRemove]
+  inline def onSectionRemove: onSectionRemove = "onSectionRemove".asInstanceOf[onSectionRemove]
   
   @js.native
   sealed trait onSelect
     extends StObject
        with colorboardEventName
        with typings.webix.webix.ui.colorboardEventName
-  @scala.inline
-  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
+  inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
   
   @js.native
   sealed trait onSelectChange
@@ -5059,32 +4832,28 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onSelectChange: onSelectChange = "onSelectChange".asInstanceOf[onSelectChange]
+  inline def onSelectChange: onSelectChange = "onSelectChange".asInstanceOf[onSelectChange]
   
   @js.native
   sealed trait onSheetAdd
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onSheetAdd: onSheetAdd = "onSheetAdd".asInstanceOf[onSheetAdd]
+  inline def onSheetAdd: onSheetAdd = "onSheetAdd".asInstanceOf[onSheetAdd]
   
   @js.native
   sealed trait onSheetRemove
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onSheetRemove: onSheetRemove = "onSheetRemove".asInstanceOf[onSheetRemove]
+  inline def onSheetRemove: onSheetRemove = "onSheetRemove".asInstanceOf[onSheetRemove]
   
   @js.native
   sealed trait onSheetRename
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onSheetRename: onSheetRename = "onSheetRename".asInstanceOf[onSheetRename]
+  inline def onSheetRename: onSheetRename = "onSheetRename".asInstanceOf[onSheetRename]
   
   @js.native
   sealed trait onShow
@@ -5115,24 +4884,21 @@ object webixStrings {
        with typings.webix.webix.ui.suggestEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onShow: onShow = "onShow".asInstanceOf[onShow]
+  inline def onShow: onShow = "onShow".asInstanceOf[onShow]
   
   @js.native
   sealed trait onShowSearchResults
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onShowSearchResults: onShowSearchResults = "onShowSearchResults".asInstanceOf[onShowSearchResults]
+  inline def onShowSearchResults: onShowSearchResults = "onShowSearchResults".asInstanceOf[onShowSearchResults]
   
   @js.native
   sealed trait onSkip
     extends StObject
        with hintEventName
        with typings.webix.webix.ui.hintEventName
-  @scala.inline
-  def onSkip: onSkip = "onSkip".asInstanceOf[onSkip]
+  inline def onSkip: onSkip = "onSkip".asInstanceOf[onSkip]
   
   @js.native
   sealed trait onSliderDrag
@@ -5141,8 +4907,7 @@ object webixStrings {
        with typings.webix.webix.ui.rangesliderEventName
        with sliderEventName
        with typings.webix.webix.ui.sliderEventName
-  @scala.inline
-  def onSliderDrag: onSliderDrag = "onSliderDrag".asInstanceOf[onSliderDrag]
+  inline def onSliderDrag: onSliderDrag = "onSliderDrag".asInstanceOf[onSliderDrag]
   
   @js.native
   sealed trait onStructureLoad
@@ -5153,8 +4918,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onStructureLoad: onStructureLoad = "onStructureLoad".asInstanceOf[onStructureLoad]
+  inline def onStructureLoad: onStructureLoad = "onStructureLoad".asInstanceOf[onStructureLoad]
   
   @js.native
   sealed trait onStructureUpdate
@@ -5165,16 +4929,14 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onStructureUpdate: onStructureUpdate = "onStructureUpdate".asInstanceOf[onStructureUpdate]
+  inline def onStructureUpdate: onStructureUpdate = "onStructureUpdate".asInstanceOf[onStructureUpdate]
   
   @js.native
   sealed trait onStyleSet
     extends StObject
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onStyleSet: onStyleSet = "onStyleSet".asInstanceOf[onStyleSet]
+  inline def onStyleSet: onStyleSet = "onStyleSet".asInstanceOf[onStyleSet]
   
   @js.native
   sealed trait onSubViewClose
@@ -5185,8 +4947,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onSubViewClose: onSubViewClose = "onSubViewClose".asInstanceOf[onSubViewClose]
+  inline def onSubViewClose: onSubViewClose = "onSubViewClose".asInstanceOf[onSubViewClose]
   
   @js.native
   sealed trait onSubViewCreate
@@ -5197,8 +4958,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onSubViewCreate: onSubViewCreate = "onSubViewCreate".asInstanceOf[onSubViewCreate]
+  inline def onSubViewCreate: onSubViewCreate = "onSubViewCreate".asInstanceOf[onSubViewCreate]
   
   @js.native
   sealed trait onSubViewOpen
@@ -5209,8 +4969,7 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onSubViewOpen: onSubViewOpen = "onSubViewOpen".asInstanceOf[onSubViewOpen]
+  inline def onSubViewOpen: onSubViewOpen = "onSubViewOpen".asInstanceOf[onSubViewOpen]
   
   @js.native
   sealed trait onSubViewRender
@@ -5221,24 +4980,21 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
-  @scala.inline
-  def onSubViewRender: onSubViewRender = "onSubViewRender".asInstanceOf[onSubViewRender]
+  inline def onSubViewRender: onSubViewRender = "onSubViewRender".asInstanceOf[onSubViewRender]
   
   @js.native
   sealed trait onSubmit
     extends StObject
        with formEventName
        with typings.webix.webix.ui.formEventName
-  @scala.inline
-  def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
+  inline def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
   
   @js.native
   sealed trait onSuccessResponse
     extends StObject
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  @scala.inline
-  def onSuccessResponse: onSuccessResponse = "onSuccessResponse".asInstanceOf[onSuccessResponse]
+  inline def onSuccessResponse: onSuccessResponse = "onSuccessResponse".asInstanceOf[onSuccessResponse]
   
   @js.native
   sealed trait onSwipeX
@@ -5397,8 +5153,7 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onSwipeX: onSwipeX = "onSwipeX".asInstanceOf[onSwipeX]
+  inline def onSwipeX: onSwipeX = "onSwipeX".asInstanceOf[onSwipeX]
   
   @js.native
   sealed trait onSwipeY
@@ -5557,8 +5312,7 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onSwipeY: onSwipeY = "onSwipeY".asInstanceOf[onSwipeY]
+  inline def onSwipeY: onSwipeY = "onSwipeY".asInstanceOf[onSwipeY]
   
   @js.native
   sealed trait onTabFocus
@@ -5605,8 +5359,7 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with viewEventName
        with typings.webix.webix.ui.viewEventName
-  @scala.inline
-  def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
+  inline def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
   
   @js.native
   sealed trait onTimedKeyPress
@@ -5765,8 +5518,7 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onTimedKeyPress: onTimedKeyPress = "onTimedKeyPress".asInstanceOf[onTimedKeyPress]
+  inline def onTimedKeyPress: onTimedKeyPress = "onTimedKeyPress".asInstanceOf[onTimedKeyPress]
   
   @js.native
   sealed trait onTodaySet
@@ -5775,8 +5527,7 @@ object webixStrings {
        with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typings.webix.webix.ui.daterangeEventName
-  @scala.inline
-  def onTodaySet: onTodaySet = "onTodaySet".asInstanceOf[onTodaySet]
+  inline def onTodaySet: onTodaySet = "onTodaySet".asInstanceOf[onTodaySet]
   
   @js.native
   sealed trait onTouchEnd
@@ -5935,8 +5686,7 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
+  inline def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
   
   @js.native
   sealed trait onTouchMove
@@ -6095,8 +5845,7 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
+  inline def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
   
   @js.native
   sealed trait onTouchStart
@@ -6255,24 +6004,21 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
+  inline def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
   
   @js.native
   sealed trait onUploadComplete
     extends StObject
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
-  @scala.inline
-  def onUploadComplete: onUploadComplete = "onUploadComplete".asInstanceOf[onUploadComplete]
+  inline def onUploadComplete: onUploadComplete = "onUploadComplete".asInstanceOf[onUploadComplete]
   
   @js.native
   sealed trait onUserMentioned
     extends StObject
        with commentsEventName
        with typings.webix.webix.ui.commentsEventName
-  @scala.inline
-  def onUserMentioned: onUserMentioned = "onUserMentioned".asInstanceOf[onUserMentioned]
+  inline def onUserMentioned: onUserMentioned = "onUserMentioned".asInstanceOf[onUserMentioned]
   
   @js.native
   sealed trait onValidationError
@@ -6313,8 +6059,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onValidationError: onValidationError = "onValidationError".asInstanceOf[onValidationError]
+  inline def onValidationError: onValidationError = "onValidationError".asInstanceOf[onValidationError]
   
   @js.native
   sealed trait onValidationSuccess
@@ -6355,8 +6100,7 @@ object webixStrings {
        with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
-  @scala.inline
-  def onValidationSuccess: onValidationSuccess = "onValidationSuccess".asInstanceOf[onValidationSuccess]
+  inline def onValidationSuccess: onValidationSuccess = "onValidationSuccess".asInstanceOf[onValidationSuccess]
   
   @js.native
   sealed trait onValueSuggest
@@ -6373,8 +6117,7 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with suggestEventName
        with typings.webix.webix.ui.suggestEventName
-  @scala.inline
-  def onValueSuggest: onValueSuggest = "onValueSuggest".asInstanceOf[onValueSuggest]
+  inline def onValueSuggest: onValueSuggest = "onValueSuggest".asInstanceOf[onValueSuggest]
   
   @js.native
   sealed trait onValues
@@ -6385,16 +6128,14 @@ object webixStrings {
        with typings.webix.webix.ui.htmlformEventName
        with toolbarEventName
        with typings.webix.webix.ui.toolbarEventName
-  @scala.inline
-  def onValues: onValues = "onValues".asInstanceOf[onValues]
+  inline def onValues: onValues = "onValues".asInstanceOf[onValues]
   
   @js.native
   sealed trait onViewChange
     extends StObject
        with multiviewEventName
        with typings.webix.webix.ui.multiviewEventName
-  @scala.inline
-  def onViewChange: onViewChange = "onViewChange".asInstanceOf[onViewChange]
+  inline def onViewChange: onViewChange = "onViewChange".asInstanceOf[onViewChange]
   
   @js.native
   sealed trait onViewInit
@@ -6405,8 +6146,7 @@ object webixStrings {
        with typings.webix.webix.ui.pivotEventName
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
-  @scala.inline
-  def onViewInit: onViewInit = "onViewInit".asInstanceOf[onViewInit]
+  inline def onViewInit: onViewInit = "onViewInit".asInstanceOf[onViewInit]
   
   @js.native
   sealed trait onViewMove
@@ -6435,8 +6175,7 @@ object webixStrings {
        with typings.webix.webix.ui.suggestEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onViewMove: onViewMove = "onViewMove".asInstanceOf[onViewMove]
+  inline def onViewMove: onViewMove = "onViewMove".asInstanceOf[onViewMove]
   
   @js.native
   sealed trait onViewMoveEnd
@@ -6465,8 +6204,7 @@ object webixStrings {
        with typings.webix.webix.ui.suggestEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onViewMoveEnd: onViewMoveEnd = "onViewMoveEnd".asInstanceOf[onViewMoveEnd]
+  inline def onViewMoveEnd: onViewMoveEnd = "onViewMoveEnd".asInstanceOf[onViewMoveEnd]
   
   @js.native
   sealed trait onViewResize
@@ -6627,8 +6365,7 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onViewResize: onViewResize = "onViewResize".asInstanceOf[onViewResize]
+  inline def onViewResize: onViewResize = "onViewResize".asInstanceOf[onViewResize]
   
   @js.native
   sealed trait onViewShow
@@ -6837,22 +6574,19 @@ object webixStrings {
        with typings.webix.webix.ui.viewEventName
        with windowEventName
        with typings.webix.webix.ui.windowEventName
-  @scala.inline
-  def onViewShow: onViewShow = "onViewShow".asInstanceOf[onViewShow]
+  inline def onViewShow: onViewShow = "onViewShow".asInstanceOf[onViewShow]
   
   @js.native
   sealed trait onWebWorkerEnd
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onWebWorkerEnd: onWebWorkerEnd = "onWebWorkerEnd".asInstanceOf[onWebWorkerEnd]
+  inline def onWebWorkerEnd: onWebWorkerEnd = "onWebWorkerEnd".asInstanceOf[onWebWorkerEnd]
   
   @js.native
   sealed trait onWebWorkerStart
     extends StObject
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
-  @scala.inline
-  def onWebWorkerStart: onWebWorkerStart = "onWebWorkerStart".asInstanceOf[onWebWorkerStart]
+  inline def onWebWorkerStart: onWebWorkerStart = "onWebWorkerStart".asInstanceOf[onWebWorkerStart]
 }

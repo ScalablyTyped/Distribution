@@ -26,31 +26,24 @@ trait CIMGeometricEffectOffsetTangent
 }
 object CIMGeometricEffectOffsetTangent {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectOffsetTangent = {
+  inline def apply(): CIMGeometricEffectOffsetTangent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectOffsetTangent")
     __obj.asInstanceOf[CIMGeometricEffectOffsetTangent]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectOffsetTangentMutableBuilder[Self <: CIMGeometricEffectOffsetTangent] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectOffsetTangent](x: Self) {
     
-    @scala.inline
-    def setMethod(
+    inline def setMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetTangentMethod * / any */ String
     ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetTangent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetTangent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

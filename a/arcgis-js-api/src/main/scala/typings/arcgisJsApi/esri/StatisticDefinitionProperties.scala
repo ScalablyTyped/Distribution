@@ -47,39 +47,29 @@ trait StatisticDefinitionProperties extends StObject {
 }
 object StatisticDefinitionProperties {
   
-  @scala.inline
-  def apply(): StatisticDefinitionProperties = {
+  inline def apply(): StatisticDefinitionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatisticDefinitionProperties]
   }
   
-  @scala.inline
-  implicit class StatisticDefinitionPropertiesMutableBuilder[Self <: StatisticDefinitionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: StatisticDefinitionProperties](x: Self) {
     
-    @scala.inline
-    def setOnStatisticField(value: String): Self = StObject.set(x, "onStatisticField", value.asInstanceOf[js.Any])
+    inline def setOnStatisticField(value: String): Self = StObject.set(x, "onStatisticField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStatisticFieldUndefined: Self = StObject.set(x, "onStatisticField", js.undefined)
+    inline def setOnStatisticFieldUndefined: Self = StObject.set(x, "onStatisticField", js.undefined)
     
-    @scala.inline
-    def setOutStatisticFieldName(value: String): Self = StObject.set(x, "outStatisticFieldName", value.asInstanceOf[js.Any])
+    inline def setOutStatisticFieldName(value: String): Self = StObject.set(x, "outStatisticFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutStatisticFieldNameUndefined: Self = StObject.set(x, "outStatisticFieldName", js.undefined)
+    inline def setOutStatisticFieldNameUndefined: Self = StObject.set(x, "outStatisticFieldName", js.undefined)
     
-    @scala.inline
-    def setStatisticParameters(value: StatisticDefinitionStatisticParameters): Self = StObject.set(x, "statisticParameters", value.asInstanceOf[js.Any])
+    inline def setStatisticParameters(value: StatisticDefinitionStatisticParameters): Self = StObject.set(x, "statisticParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticParametersUndefined: Self = StObject.set(x, "statisticParameters", js.undefined)
+    inline def setStatisticParametersUndefined: Self = StObject.set(x, "statisticParameters", js.undefined)
     
-    @scala.inline
-    def setStatisticType(
+    inline def setStatisticType(
       value: count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete`
     ): Self = StObject.set(x, "statisticType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticTypeUndefined: Self = StObject.set(x, "statisticType", js.undefined)
+    inline def setStatisticTypeUndefined: Self = StObject.set(x, "statisticType", js.undefined)
   }
 }

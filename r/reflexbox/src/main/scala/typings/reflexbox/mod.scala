@@ -43,20 +43,16 @@ object mod {
   }
   object BoxProps {
     
-    @scala.inline
-    def apply(): BoxProps = {
+    inline def apply(): BoxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BoxProps]
     }
     
-    @scala.inline
-    implicit class BoxPropsMutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: BoxProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     }
   }
   

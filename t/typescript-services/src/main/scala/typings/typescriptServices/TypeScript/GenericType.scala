@@ -16,8 +16,7 @@ trait GenericType
 }
 object GenericType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,16 +44,12 @@ object GenericType {
     __obj.asInstanceOf[GenericType]
   }
   
-  @scala.inline
-  implicit class GenericTypeMutableBuilder[Self <: GenericType] (val x: Self) extends AnyVal {
+  extension [Self <: GenericType](x: Self) {
     
-    @scala.inline
-    def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (GenericType, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (GenericType, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTypeArgumentList(value: TypeArgumentList): Self = StObject.set(x, "typeArgumentList", value.asInstanceOf[js.Any])
+    inline def setTypeArgumentList(value: TypeArgumentList): Self = StObject.set(x, "typeArgumentList", value.asInstanceOf[js.Any])
   }
 }

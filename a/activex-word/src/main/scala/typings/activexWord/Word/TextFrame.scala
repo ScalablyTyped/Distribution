@@ -63,15 +63,14 @@ trait TextFrame extends StObject {
   
   var WarpFormat: MsoWarpFormat
   
-  @JSName("Word.TextFrame_typekey")
+  /* private */ @JSName("Word.TextFrame_typekey")
   var WordDotTextFrame_typekey: TextFrame
   
   var WordWrap: Double
 }
 object TextFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AutoSize: Double,
     BreakForwardLink: () => Unit,
@@ -105,88 +104,60 @@ object TextFrame {
     __obj.asInstanceOf[TextFrame]
   }
   
-  @scala.inline
-  implicit class TextFrameMutableBuilder[Self <: TextFrame] (val x: Self) extends AnyVal {
+  extension [Self <: TextFrame](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSize(value: Double): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
+    inline def setAutoSize(value: Double): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakForwardLink(value: () => Unit): Self = StObject.set(x, "BreakForwardLink", js.Any.fromFunction0(value))
+    inline def setBreakForwardLink(value: () => Unit): Self = StObject.set(x, "BreakForwardLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setColumn(value: TextColumn2): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: TextColumn2): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainingRange(value: Range): Self = StObject.set(x, "ContainingRange", value.asInstanceOf[js.Any])
+    inline def setContainingRange(value: Range): Self = StObject.set(x, "ContainingRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteText(value: () => Unit): Self = StObject.set(x, "DeleteText", js.Any.fromFunction0(value))
+    inline def setDeleteText(value: () => Unit): Self = StObject.set(x, "DeleteText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasText(value: Double): Self = StObject.set(x, "HasText", value.asInstanceOf[js.Any])
+    inline def setHasText(value: Double): Self = StObject.set(x, "HasText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAnchor(value: MsoHorizontalAnchor): Self = StObject.set(x, "HorizontalAnchor", value.asInstanceOf[js.Any])
+    inline def setHorizontalAnchor(value: MsoHorizontalAnchor): Self = StObject.set(x, "HorizontalAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBottom(value: Double): Self = StObject.set(x, "MarginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: Double): Self = StObject.set(x, "MarginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "MarginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "MarginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRight(value: Double): Self = StObject.set(x, "MarginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "MarginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "MarginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "MarginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: TextFrame): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
+    inline def setNext(value: TextFrame): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoTextRotation(value: MsoTriState): Self = StObject.set(x, "NoTextRotation", value.asInstanceOf[js.Any])
+    inline def setNoTextRotation(value: MsoTriState): Self = StObject.set(x, "NoTextRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: MsoTextOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: MsoTextOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowing(value: Boolean): Self = StObject.set(x, "Overflowing", value.asInstanceOf[js.Any])
+    inline def setOverflowing(value: Boolean): Self = StObject.set(x, "Overflowing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Shape): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Shape): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFormat(value: MsoPathFormat): Self = StObject.set(x, "PathFormat", value.asInstanceOf[js.Any])
+    inline def setPathFormat(value: MsoPathFormat): Self = StObject.set(x, "PathFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious(value: TextFrame): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: TextFrame): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRange(value: Range): Self = StObject.set(x, "TextRange", value.asInstanceOf[js.Any])
+    inline def setTextRange(value: Range): Self = StObject.set(x, "TextRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
+    inline def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidLinkTarget(value: TextFrame => Boolean): Self = StObject.set(x, "ValidLinkTarget", js.Any.fromFunction1(value))
+    inline def setValidLinkTarget(value: TextFrame => Boolean): Self = StObject.set(x, "ValidLinkTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerticalAnchor(value: MsoVerticalAnchor): Self = StObject.set(x, "VerticalAnchor", value.asInstanceOf[js.Any])
+    inline def setVerticalAnchor(value: MsoVerticalAnchor): Self = StObject.set(x, "VerticalAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarpFormat(value: MsoWarpFormat): Self = StObject.set(x, "WarpFormat", value.asInstanceOf[js.Any])
+    inline def setWarpFormat(value: MsoWarpFormat): Self = StObject.set(x, "WarpFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotTextFrame_typekey(value: TextFrame): Self = StObject.set(x, "Word.TextFrame_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotTextFrame_typekey(value: TextFrame): Self = StObject.set(x, "Word.TextFrame_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordWrap(value: Double): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: Double): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

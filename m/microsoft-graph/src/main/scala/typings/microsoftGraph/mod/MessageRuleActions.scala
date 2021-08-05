@@ -41,124 +41,85 @@ trait MessageRuleActions extends StObject {
 }
 object MessageRuleActions {
   
-  @scala.inline
-  def apply(): MessageRuleActions = {
+  inline def apply(): MessageRuleActions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageRuleActions]
   }
   
-  @scala.inline
-  implicit class MessageRuleActionsMutableBuilder[Self <: MessageRuleActions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageRuleActions](x: Self) {
     
-    @scala.inline
-    def setAssignCategories(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "assignCategories", value.asInstanceOf[js.Any])
+    inline def setAssignCategories(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "assignCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignCategoriesNull: Self = StObject.set(x, "assignCategories", null)
+    inline def setAssignCategoriesNull: Self = StObject.set(x, "assignCategories", null)
     
-    @scala.inline
-    def setAssignCategoriesUndefined: Self = StObject.set(x, "assignCategories", js.undefined)
+    inline def setAssignCategoriesUndefined: Self = StObject.set(x, "assignCategories", js.undefined)
     
-    @scala.inline
-    def setAssignCategoriesVarargs(value: String*): Self = StObject.set(x, "assignCategories", js.Array(value :_*))
+    inline def setAssignCategoriesVarargs(value: String*): Self = StObject.set(x, "assignCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setCopyToFolder(value: NullableOption[String]): Self = StObject.set(x, "copyToFolder", value.asInstanceOf[js.Any])
+    inline def setCopyToFolder(value: NullableOption[String]): Self = StObject.set(x, "copyToFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyToFolderNull: Self = StObject.set(x, "copyToFolder", null)
+    inline def setCopyToFolderNull: Self = StObject.set(x, "copyToFolder", null)
     
-    @scala.inline
-    def setCopyToFolderUndefined: Self = StObject.set(x, "copyToFolder", js.undefined)
+    inline def setCopyToFolderUndefined: Self = StObject.set(x, "copyToFolder", js.undefined)
     
-    @scala.inline
-    def setDelete(value: NullableOption[Boolean]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: NullableOption[Boolean]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteNull: Self = StObject.set(x, "delete", null)
+    inline def setDeleteNull: Self = StObject.set(x, "delete", null)
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setForwardAsAttachmentTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "forwardAsAttachmentTo", value.asInstanceOf[js.Any])
+    inline def setForwardAsAttachmentTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "forwardAsAttachmentTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardAsAttachmentToNull: Self = StObject.set(x, "forwardAsAttachmentTo", null)
+    inline def setForwardAsAttachmentToNull: Self = StObject.set(x, "forwardAsAttachmentTo", null)
     
-    @scala.inline
-    def setForwardAsAttachmentToUndefined: Self = StObject.set(x, "forwardAsAttachmentTo", js.undefined)
+    inline def setForwardAsAttachmentToUndefined: Self = StObject.set(x, "forwardAsAttachmentTo", js.undefined)
     
-    @scala.inline
-    def setForwardAsAttachmentToVarargs(value: Recipient*): Self = StObject.set(x, "forwardAsAttachmentTo", js.Array(value :_*))
+    inline def setForwardAsAttachmentToVarargs(value: Recipient*): Self = StObject.set(x, "forwardAsAttachmentTo", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "forwardTo", value.asInstanceOf[js.Any])
+    inline def setForwardTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "forwardTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardToNull: Self = StObject.set(x, "forwardTo", null)
+    inline def setForwardToNull: Self = StObject.set(x, "forwardTo", null)
     
-    @scala.inline
-    def setForwardToUndefined: Self = StObject.set(x, "forwardTo", js.undefined)
+    inline def setForwardToUndefined: Self = StObject.set(x, "forwardTo", js.undefined)
     
-    @scala.inline
-    def setForwardToVarargs(value: Recipient*): Self = StObject.set(x, "forwardTo", js.Array(value :_*))
+    inline def setForwardToVarargs(value: Recipient*): Self = StObject.set(x, "forwardTo", js.Array(value :_*))
     
-    @scala.inline
-    def setMarkAsRead(value: NullableOption[Boolean]): Self = StObject.set(x, "markAsRead", value.asInstanceOf[js.Any])
+    inline def setMarkAsRead(value: NullableOption[Boolean]): Self = StObject.set(x, "markAsRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkAsReadNull: Self = StObject.set(x, "markAsRead", null)
+    inline def setMarkAsReadNull: Self = StObject.set(x, "markAsRead", null)
     
-    @scala.inline
-    def setMarkAsReadUndefined: Self = StObject.set(x, "markAsRead", js.undefined)
+    inline def setMarkAsReadUndefined: Self = StObject.set(x, "markAsRead", js.undefined)
     
-    @scala.inline
-    def setMarkImportance(value: NullableOption[Importance]): Self = StObject.set(x, "markImportance", value.asInstanceOf[js.Any])
+    inline def setMarkImportance(value: NullableOption[Importance]): Self = StObject.set(x, "markImportance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkImportanceNull: Self = StObject.set(x, "markImportance", null)
+    inline def setMarkImportanceNull: Self = StObject.set(x, "markImportance", null)
     
-    @scala.inline
-    def setMarkImportanceUndefined: Self = StObject.set(x, "markImportance", js.undefined)
+    inline def setMarkImportanceUndefined: Self = StObject.set(x, "markImportance", js.undefined)
     
-    @scala.inline
-    def setMoveToFolder(value: NullableOption[String]): Self = StObject.set(x, "moveToFolder", value.asInstanceOf[js.Any])
+    inline def setMoveToFolder(value: NullableOption[String]): Self = StObject.set(x, "moveToFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveToFolderNull: Self = StObject.set(x, "moveToFolder", null)
+    inline def setMoveToFolderNull: Self = StObject.set(x, "moveToFolder", null)
     
-    @scala.inline
-    def setMoveToFolderUndefined: Self = StObject.set(x, "moveToFolder", js.undefined)
+    inline def setMoveToFolderUndefined: Self = StObject.set(x, "moveToFolder", js.undefined)
     
-    @scala.inline
-    def setPermanentDelete(value: NullableOption[Boolean]): Self = StObject.set(x, "permanentDelete", value.asInstanceOf[js.Any])
+    inline def setPermanentDelete(value: NullableOption[Boolean]): Self = StObject.set(x, "permanentDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentDeleteNull: Self = StObject.set(x, "permanentDelete", null)
+    inline def setPermanentDeleteNull: Self = StObject.set(x, "permanentDelete", null)
     
-    @scala.inline
-    def setPermanentDeleteUndefined: Self = StObject.set(x, "permanentDelete", js.undefined)
+    inline def setPermanentDeleteUndefined: Self = StObject.set(x, "permanentDelete", js.undefined)
     
-    @scala.inline
-    def setRedirectTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+    inline def setRedirectTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectToNull: Self = StObject.set(x, "redirectTo", null)
+    inline def setRedirectToNull: Self = StObject.set(x, "redirectTo", null)
     
-    @scala.inline
-    def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+    inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
     
-    @scala.inline
-    def setRedirectToVarargs(value: Recipient*): Self = StObject.set(x, "redirectTo", js.Array(value :_*))
+    inline def setRedirectToVarargs(value: Recipient*): Self = StObject.set(x, "redirectTo", js.Array(value :_*))
     
-    @scala.inline
-    def setStopProcessingRules(value: NullableOption[Boolean]): Self = StObject.set(x, "stopProcessingRules", value.asInstanceOf[js.Any])
+    inline def setStopProcessingRules(value: NullableOption[Boolean]): Self = StObject.set(x, "stopProcessingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopProcessingRulesNull: Self = StObject.set(x, "stopProcessingRules", null)
+    inline def setStopProcessingRulesNull: Self = StObject.set(x, "stopProcessingRules", null)
     
-    @scala.inline
-    def setStopProcessingRulesUndefined: Self = StObject.set(x, "stopProcessingRules", js.undefined)
+    inline def setStopProcessingRulesUndefined: Self = StObject.set(x, "stopProcessingRules", js.undefined)
   }
 }

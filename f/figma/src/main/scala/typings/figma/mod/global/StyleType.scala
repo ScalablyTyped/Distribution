@@ -15,15 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StyleType extends StObject
 object StyleType {
   
-  @scala.inline
-  def EFFECT: typings.figma.figmaStrings.EFFECT = "EFFECT".asInstanceOf[typings.figma.figmaStrings.EFFECT]
+  inline def EFFECT: typings.figma.figmaStrings.EFFECT = "EFFECT".asInstanceOf[typings.figma.figmaStrings.EFFECT]
   
-  @scala.inline
-  def GRID: typings.figma.figmaStrings.GRID = "GRID".asInstanceOf[typings.figma.figmaStrings.GRID]
+  inline def GRID: typings.figma.figmaStrings.GRID = "GRID".asInstanceOf[typings.figma.figmaStrings.GRID]
   
-  @scala.inline
-  def PAINT: typings.figma.figmaStrings.PAINT = "PAINT".asInstanceOf[typings.figma.figmaStrings.PAINT]
+  inline def PAINT: typings.figma.figmaStrings.PAINT = "PAINT".asInstanceOf[typings.figma.figmaStrings.PAINT]
   
-  @scala.inline
-  def TEXT: typings.figma.figmaStrings.TEXT = "TEXT".asInstanceOf[typings.figma.figmaStrings.TEXT]
+  inline def TEXT: typings.figma.figmaStrings.TEXT = "TEXT".asInstanceOf[typings.figma.figmaStrings.TEXT]
 }

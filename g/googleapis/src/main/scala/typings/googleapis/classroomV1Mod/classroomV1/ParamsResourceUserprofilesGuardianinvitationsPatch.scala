@@ -43,43 +43,31 @@ trait ParamsResourceUserprofilesGuardianinvitationsPatch
 }
 object ParamsResourceUserprofilesGuardianinvitationsPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceUserprofilesGuardianinvitationsPatch = {
+  inline def apply(): ParamsResourceUserprofilesGuardianinvitationsPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUserprofilesGuardianinvitationsPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUserprofilesGuardianinvitationsPatchMutableBuilder[Self <: ParamsResourceUserprofilesGuardianinvitationsPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUserprofilesGuardianinvitationsPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaGuardianInvitation): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaGuardianInvitation): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
+    inline def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
+    inline def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

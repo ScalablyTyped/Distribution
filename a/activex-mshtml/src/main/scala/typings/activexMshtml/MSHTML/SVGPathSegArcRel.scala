@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGPathSegArcRel extends StObject {
   
-  @JSName("MSHTML.SVGPathSegArcRel_typekey")
+  /* private */ @JSName("MSHTML.SVGPathSegArcRel_typekey")
   var MSHTMLDotSVGPathSegArcRel_typekey: SVGPathSegArcRel
   
   var angle: Double
@@ -29,8 +29,7 @@ trait SVGPathSegArcRel extends StObject {
 }
 object SVGPathSegArcRel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGPathSegArcRel_typekey: SVGPathSegArcRel,
     angle: Double,
     largeArcFlag: Boolean,
@@ -47,37 +46,26 @@ object SVGPathSegArcRel {
     __obj.asInstanceOf[SVGPathSegArcRel]
   }
   
-  @scala.inline
-  implicit class SVGPathSegArcRelMutableBuilder[Self <: SVGPathSegArcRel] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegArcRel](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeArcFlag(value: Boolean): Self = StObject.set(x, "largeArcFlag", value.asInstanceOf[js.Any])
+    inline def setLargeArcFlag(value: Boolean): Self = StObject.set(x, "largeArcFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGPathSegArcRel_typekey(value: SVGPathSegArcRel): Self = StObject.set(x, "MSHTML.SVGPathSegArcRel_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGPathSegArcRel_typekey(value: SVGPathSegArcRel): Self = StObject.set(x, "MSHTML.SVGPathSegArcRel_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
+    inline def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
+    inline def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+    inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+    inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSweepFlag(value: Boolean): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
+    inline def setSweepFlag(value: Boolean): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

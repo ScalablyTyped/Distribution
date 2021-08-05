@@ -22,26 +22,20 @@ trait Properties extends StObject {
 }
 object Properties {
   
-  @scala.inline
-  def apply(indicate: Boolean, notify_ : Boolean, read: Boolean, write: Boolean): Properties = {
+  inline def apply(indicate: Boolean, notify_ : Boolean, read: Boolean, write: Boolean): Properties = {
     val __obj = js.Dynamic.literal(indicate = indicate.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
     __obj.updateDynamic("notify")(notify_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
   
-  @scala.inline
-  implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+  extension [Self <: Properties](x: Self) {
     
-    @scala.inline
-    def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
+    inline def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
   }
 }

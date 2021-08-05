@@ -11,16 +11,13 @@ trait Time extends StObject {
 }
 object Time {
   
-  @scala.inline
-  def apply(time: Timestamp): Time = {
+  inline def apply(time: Timestamp): Time = {
     val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Time]
   }
   
-  @scala.inline
-  implicit class TimeMutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
+  extension [Self <: Time](x: Self) {
     
-    @scala.inline
-    def setTime(value: Timestamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Timestamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

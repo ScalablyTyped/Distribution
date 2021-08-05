@@ -10,8 +10,7 @@ trait PutBucketLoggingOutput
      with typings.awsSdkClientS3Node.typesPutBucketLoggingOutputMod.PutBucketLoggingOutput
 object PutBucketLoggingOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): PutBucketLoggingOutput = {
+  inline def apply($metadata: ResponseMetadata): PutBucketLoggingOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLoggingOutput]
   }

@@ -58,11 +58,9 @@ object TransactionToCommit {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): TransactionToCommit = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionToCommit]
+  inline def deserializeBinary(bytes: Uint8Array): TransactionToCommit = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionToCommit]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: TransactionToCommit, reader: BinaryReader): TransactionToCommit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionToCommit]
+  inline def deserializeBinaryFromReader(message: TransactionToCommit, reader: BinaryReader): TransactionToCommit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionToCommit]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit.extensions")
   @js.native
@@ -71,17 +69,13 @@ object TransactionToCommit {
   @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionToCommit.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: TransactionToCommit, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: TransactionToCommit, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: TransactionToCommit): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: TransactionToCommit): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -95,8 +89,7 @@ object TransactionToCommit {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accountStatesList: js.Array[typings.libraCore.transactionPbMod.AccountState.AsObject],
       eventsList: js.Array[typings.libraCore.eventsPbMod.Event.AsObject],
       gasUsed: String
@@ -105,29 +98,21 @@ object TransactionToCommit {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setAccountStatesList(value: js.Array[typings.libraCore.transactionPbMod.AccountState.AsObject]): Self = StObject.set(x, "accountStatesList", value.asInstanceOf[js.Any])
+      inline def setAccountStatesList(value: js.Array[typings.libraCore.transactionPbMod.AccountState.AsObject]): Self = StObject.set(x, "accountStatesList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountStatesListVarargs(value: typings.libraCore.transactionPbMod.AccountState.AsObject*): Self = StObject.set(x, "accountStatesList", js.Array(value :_*))
+      inline def setAccountStatesListVarargs(value: typings.libraCore.transactionPbMod.AccountState.AsObject*): Self = StObject.set(x, "accountStatesList", js.Array(value :_*))
       
-      @scala.inline
-      def setEventsList(value: js.Array[typings.libraCore.eventsPbMod.Event.AsObject]): Self = StObject.set(x, "eventsList", value.asInstanceOf[js.Any])
+      inline def setEventsList(value: js.Array[typings.libraCore.eventsPbMod.Event.AsObject]): Self = StObject.set(x, "eventsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsListVarargs(value: typings.libraCore.eventsPbMod.Event.AsObject*): Self = StObject.set(x, "eventsList", js.Array(value :_*))
+      inline def setEventsListVarargs(value: typings.libraCore.eventsPbMod.Event.AsObject*): Self = StObject.set(x, "eventsList", js.Array(value :_*))
       
-      @scala.inline
-      def setGasUsed(value: String): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      inline def setGasUsed(value: String): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedTxn(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject): Self = StObject.set(x, "signedTxn", value.asInstanceOf[js.Any])
+      inline def setSignedTxn(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject): Self = StObject.set(x, "signedTxn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedTxnUndefined: Self = StObject.set(x, "signedTxn", js.undefined)
+      inline def setSignedTxnUndefined: Self = StObject.set(x, "signedTxn", js.undefined)
     }
   }
 }

@@ -31,31 +31,23 @@ trait IRowEditor
 }
 object IRowEditor {
   
-  @scala.inline
-  def apply(): IRowEditor = {
+  inline def apply(): IRowEditor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRowEditor]
   }
   
-  @scala.inline
-  implicit class IRowEditorMutableBuilder[Self <: IRowEditor] (val x: Self) extends AnyVal {
+  extension [Self <: IRowEditor](x: Self) {
     
-    @scala.inline
-    def setGetRefItems(value: () => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction0(value))
+    inline def setGetRefItems(value: () => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
+    inline def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
     
-    @scala.inline
-    def setLoadRecord(value: /* record */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
+    inline def setLoadRecord(value: /* record */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
+    inline def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
     
-    @scala.inline
-    def setStartEdit(value: (/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
+    inline def setStartEdit(value: (/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartEditUndefined: Self = StObject.set(x, "startEdit", js.undefined)
+    inline def setStartEditUndefined: Self = StObject.set(x, "startEdit", js.undefined)
   }
 }

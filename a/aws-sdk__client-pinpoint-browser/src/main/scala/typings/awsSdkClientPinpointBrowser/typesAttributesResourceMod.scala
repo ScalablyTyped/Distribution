@@ -26,35 +26,26 @@ object typesAttributesResourceMod {
   }
   object AttributesResource {
     
-    @scala.inline
-    def apply(): AttributesResource = {
+    inline def apply(): AttributesResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributesResource]
     }
     
-    @scala.inline
-    implicit class AttributesResourceMutableBuilder[Self <: AttributesResource] (val x: Self) extends AnyVal {
+    extension [Self <: AttributesResource](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
       
-      @scala.inline
-      def setAttributeType(value: String): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+      inline def setAttributeType(value: String): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
+      inline def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     }
   }
   
@@ -70,23 +61,18 @@ object typesAttributesResourceMod {
   }
   object UnmarshalledAttributesResource {
     
-    @scala.inline
-    def apply(): UnmarshalledAttributesResource = {
+    inline def apply(): UnmarshalledAttributesResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledAttributesResource]
     }
     
-    @scala.inline
-    implicit class UnmarshalledAttributesResourceMutableBuilder[Self <: UnmarshalledAttributesResource] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledAttributesResource](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     }
   }
 }

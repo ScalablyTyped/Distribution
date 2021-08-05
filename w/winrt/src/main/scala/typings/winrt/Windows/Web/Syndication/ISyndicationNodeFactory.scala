@@ -10,16 +10,13 @@ trait ISyndicationNodeFactory extends StObject {
 }
 object ISyndicationNodeFactory {
   
-  @scala.inline
-  def apply(createSyndicationNode: (String, String, String) => SyndicationNode): ISyndicationNodeFactory = {
+  inline def apply(createSyndicationNode: (String, String, String) => SyndicationNode): ISyndicationNodeFactory = {
     val __obj = js.Dynamic.literal(createSyndicationNode = js.Any.fromFunction3(createSyndicationNode))
     __obj.asInstanceOf[ISyndicationNodeFactory]
   }
   
-  @scala.inline
-  implicit class ISyndicationNodeFactoryMutableBuilder[Self <: ISyndicationNodeFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationNodeFactory](x: Self) {
     
-    @scala.inline
-    def setCreateSyndicationNode(value: (String, String, String) => SyndicationNode): Self = StObject.set(x, "createSyndicationNode", js.Any.fromFunction3(value))
+    inline def setCreateSyndicationNode(value: (String, String, String) => SyndicationNode): Self = StObject.set(x, "createSyndicationNode", js.Any.fromFunction3(value))
   }
 }

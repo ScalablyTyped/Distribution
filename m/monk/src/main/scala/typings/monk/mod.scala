@@ -53,14 +53,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(database: String): js.Promise[IMonkManager] & IMonkManager = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
-  @scala.inline
-  def default(database: String, options: MongoClientOptionscollect): js.Promise[IMonkManager] & IMonkManager = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
-  @scala.inline
-  def default(database: js.Array[String]): js.Promise[IMonkManager] & IMonkManager = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
-  @scala.inline
-  def default(database: js.Array[String], options: MongoClientOptionscollect): js.Promise[IMonkManager] & IMonkManager = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
+  inline def default(database: String): js.Promise[IMonkManager] & IMonkManager = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
+  inline def default(database: String, options: MongoClientOptionscollect): js.Promise[IMonkManager] & IMonkManager = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
+  inline def default(database: js.Array[String]): js.Promise[IMonkManager] & IMonkManager = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
+  inline def default(database: js.Array[String], options: MongoClientOptionscollect): js.Promise[IMonkManager] & IMonkManager = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(database.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IMonkManager] & IMonkManager]
   
   @JSImport("monk", "ICollection")
   @js.native
@@ -356,21 +352,14 @@ object mod {
     def setDefaultCollectionOptions(collectionOptions: CollectionOptions): Unit = js.native
   }
   
-  @scala.inline
-  def cast(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")().asInstanceOf[js.Any]
-  @scala.inline
-  def cast(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def cast(obj: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def cast(obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def cast(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")().asInstanceOf[js.Any]
+  inline def cast(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def cast(obj: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def cast(obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def id(): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[IObjectID]
-  @scala.inline
-  def id(hexstring: String): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(hexstring.asInstanceOf[js.Any]).asInstanceOf[IObjectID]
-  @scala.inline
-  def id(obj: IObjectID): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(obj.asInstanceOf[js.Any]).asInstanceOf[IObjectID]
+  inline def id(): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[IObjectID]
+  inline def id(hexstring: String): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(hexstring.asInstanceOf[js.Any]).asInstanceOf[IObjectID]
+  inline def id(obj: IObjectID): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(obj.asInstanceOf[js.Any]).asInstanceOf[IObjectID]
   
   type Callback[T] = js.Function2[/* err */ Error | Null, /* data */ T, Unit]
   
@@ -382,17 +371,14 @@ object mod {
   }
   object CollectionInsertOneOptionsMonk {
     
-    @scala.inline
-    def apply(castIds: Boolean): CollectionInsertOneOptionsMonk = {
+    inline def apply(castIds: Boolean): CollectionInsertOneOptionsMonk = {
       val __obj = js.Dynamic.literal(castIds = castIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollectionInsertOneOptionsMonk]
     }
     
-    @scala.inline
-    implicit class CollectionInsertOneOptionsMonkMutableBuilder[Self <: CollectionInsertOneOptionsMonk] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionInsertOneOptionsMonk](x: Self) {
       
-      @scala.inline
-      def setCastIds(value: Boolean): Self = StObject.set(x, "castIds", value.asInstanceOf[js.Any])
+      inline def setCastIds(value: Boolean): Self = StObject.set(x, "castIds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -402,23 +388,18 @@ object mod {
   }
   object CollectionOptions {
     
-    @scala.inline
-    def apply(): CollectionOptions = {
+    inline def apply(): CollectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollectionOptions]
     }
     
-    @scala.inline
-    implicit class CollectionOptionsMutableBuilder[Self <: CollectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionOptions](x: Self) {
       
-      @scala.inline
-      def setMiddlewares(value: js.Array[TMiddleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+      inline def setMiddlewares(value: js.Array[TMiddleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
+      inline def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
       
-      @scala.inline
-      def setMiddlewaresVarargs(value: TMiddleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
+      inline def setMiddlewaresVarargs(value: TMiddleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
     }
   }
   
@@ -436,20 +417,16 @@ object mod {
   }
   object DropIndexOptions {
     
-    @scala.inline
-    def apply(): DropIndexOptions = {
+    inline def apply(): DropIndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropIndexOptions]
     }
     
-    @scala.inline
-    implicit class DropIndexOptionsMutableBuilder[Self <: DropIndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DropIndexOptions](x: Self) {
       
-      @scala.inline
-      def setMaxTimeMS(value: Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
+      inline def setMaxTimeMS(value: Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
+      inline def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     }
   }
   
@@ -461,20 +438,16 @@ object mod {
   }
   object DropIndexResult {
     
-    @scala.inline
-    def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkNumbers.`0`): DropIndexResult = {
+    inline def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkNumbers.`0`): DropIndexResult = {
       val __obj = js.Dynamic.literal(nIndexesWas = nIndexesWas.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropIndexResult]
     }
     
-    @scala.inline
-    implicit class DropIndexResultMutableBuilder[Self <: DropIndexResult] (val x: Self) extends AnyVal {
+    extension [Self <: DropIndexResult](x: Self) {
       
-      @scala.inline
-      def setNIndexesWas(value: Double): Self = StObject.set(x, "nIndexesWas", value.asInstanceOf[js.Any])
+      inline def setNIndexesWas(value: Double): Self = StObject.set(x, "nIndexesWas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: `1` | typings.monk.monkNumbers.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: `1` | typings.monk.monkNumbers.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,20 +459,16 @@ object mod {
   }
   object DropIndexesResult {
     
-    @scala.inline
-    def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkNumbers.`0`): DropIndexesResult = {
+    inline def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkNumbers.`0`): DropIndexesResult = {
       val __obj = js.Dynamic.literal(nIndexesWas = nIndexesWas.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropIndexesResult]
     }
     
-    @scala.inline
-    implicit class DropIndexesResultMutableBuilder[Self <: DropIndexesResult] (val x: Self) extends AnyVal {
+    extension [Self <: DropIndexesResult](x: Self) {
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     }
   }
   
@@ -511,11 +480,9 @@ object mod {
   trait DropResult extends StObject
   object DropResult {
     
-    @scala.inline
-    def `ns not found`: typings.monk.monkStrings.`ns not found` = ("ns not found").asInstanceOf[typings.monk.monkStrings.`ns not found`]
+    inline def `ns not found`: typings.monk.monkStrings.`ns not found` = ("ns not found").asInstanceOf[typings.monk.monkStrings.`ns not found`]
     
-    @scala.inline
-    def `true`: typings.monk.monkBooleans.`true` = true.asInstanceOf[typings.monk.monkBooleans.`true`]
+    inline def `true`: typings.monk.monkBooleans.`true` = true.asInstanceOf[typings.monk.monkBooleans.`true`]
   }
   
   type FindOneResult[T] = WithID[T] | Null
@@ -528,20 +495,16 @@ object mod {
   }
   object FindOptions {
     
-    @scala.inline
-    def apply[T](): FindOptions[T] = {
+    inline def apply[T](): FindOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOptions[T]]
     }
     
-    @scala.inline
-    implicit class FindOptionsMutableBuilder[Self <: FindOptions[?], T] (val x: Self & FindOptions[T]) extends AnyVal {
+    extension [Self <: FindOptions[?], T](x: Self & FindOptions[T]) {
       
-      @scala.inline
-      def setRawCursor(value: Boolean): Self = StObject.set(x, "rawCursor", value.asInstanceOf[js.Any])
+      inline def setRawCursor(value: Boolean): Self = StObject.set(x, "rawCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawCursorUndefined: Self = StObject.set(x, "rawCursor", js.undefined)
+      inline def setRawCursorUndefined: Self = StObject.set(x, "rawCursor", js.undefined)
     }
   }
   
@@ -563,17 +526,14 @@ object mod {
   }
   object IObjectID {
     
-    @scala.inline
-    def apply(toHexString: () => String): IObjectID = {
+    inline def apply(toHexString: () => String): IObjectID = {
       val __obj = js.Dynamic.literal(toHexString = js.Any.fromFunction0(toHexString))
       __obj.asInstanceOf[IObjectID]
     }
     
-    @scala.inline
-    implicit class IObjectIDMutableBuilder[Self <: IObjectID] (val x: Self) extends AnyVal {
+    extension [Self <: IObjectID](x: Self) {
       
-      @scala.inline
-      def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
+      inline def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
     }
   }
   
@@ -587,8 +547,7 @@ object mod {
        with SingleMulti
   object RemoveOptions {
     
-    @scala.inline
-    def apply(): RemoveOptions = {
+    inline def apply(): RemoveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoveOptions]
     }
@@ -603,26 +562,20 @@ object mod {
   }
   object SingleMulti {
     
-    @scala.inline
-    def apply(): SingleMulti = {
+    inline def apply(): SingleMulti = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SingleMulti]
     }
     
-    @scala.inline
-    implicit class SingleMultiMutableBuilder[Self <: SingleMulti] (val x: Self) extends AnyVal {
+    extension [Self <: SingleMulti](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+      inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
     }
   }
   
@@ -637,23 +590,18 @@ object mod {
   }
   object StatsOptions {
     
-    @scala.inline
-    def apply(scale: Double): StatsOptions = {
+    inline def apply(scale: Double): StatsOptions = {
       val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatsOptions]
     }
     
-    @scala.inline
-    implicit class StatsOptionsMutableBuilder[Self <: StatsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StatsOptions](x: Self) {
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     }
   }
   
@@ -678,14 +626,11 @@ object mod {
   trait UpdateResult extends StObject
   object UpdateResult {
     
-    @scala.inline
-    def n: typings.monk.monkStrings.n = "n".asInstanceOf[typings.monk.monkStrings.n]
+    inline def n: typings.monk.monkStrings.n = "n".asInstanceOf[typings.monk.monkStrings.n]
     
-    @scala.inline
-    def nModified: typings.monk.monkStrings.nModified = "nModified".asInstanceOf[typings.monk.monkStrings.nModified]
+    inline def nModified: typings.monk.monkStrings.nModified = "nModified".asInstanceOf[typings.monk.monkStrings.nModified]
     
-    @scala.inline
-    def ok: typings.monk.monkStrings.ok = "ok".asInstanceOf[typings.monk.monkStrings.ok]
+    inline def ok: typings.monk.monkStrings.ok = "ok".asInstanceOf[typings.monk.monkStrings.ok]
   }
   
   type WithID[T] = Id & T

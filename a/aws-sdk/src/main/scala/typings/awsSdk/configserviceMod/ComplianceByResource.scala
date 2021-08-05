@@ -23,31 +23,23 @@ trait ComplianceByResource extends StObject {
 }
 object ComplianceByResource {
   
-  @scala.inline
-  def apply(): ComplianceByResource = {
+  inline def apply(): ComplianceByResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceByResource]
   }
   
-  @scala.inline
-  implicit class ComplianceByResourceMutableBuilder[Self <: ComplianceByResource] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceByResource](x: Self) {
     
-    @scala.inline
-    def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
+    inline def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
+    inline def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: BaseResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: BaseResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

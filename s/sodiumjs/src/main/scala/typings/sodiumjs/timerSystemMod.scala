@@ -19,11 +19,11 @@ object timerSystemMod {
       */
     def at(tAlarm: Cell[Double]): Stream[Double] = js.native
     
-    var eventQueue: js.Any = js.native
+    /* private */ var eventQueue: js.Any = js.native
     
-    var impl: js.Any = js.native
+    /* private */ var impl: js.Any = js.native
     
-    var tMinimum: js.Any = js.native
+    /* private */ var tMinimum: js.Any = js.native
     
     /**
       * A cell giving the current clock time.

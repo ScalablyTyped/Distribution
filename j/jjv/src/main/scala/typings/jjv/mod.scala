@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Env = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Env]
+  inline def apply(): Env = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Env]
   
   @JSImport("jjv", JSImport.Namespace)
   @js.native
@@ -42,17 +41,14 @@ object mod {
   }
   object Errors {
     
-    @scala.inline
-    def apply(validation: StringDictionary[Required]): Errors = {
+    inline def apply(validation: StringDictionary[Required]): Errors = {
       val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setValidation(value: StringDictionary[Required]): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+      inline def setValidation(value: StringDictionary[Required]): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,38 +64,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCheckRequired(value: Boolean): Self = StObject.set(x, "checkRequired", value.asInstanceOf[js.Any])
+      inline def setCheckRequired(value: Boolean): Self = StObject.set(x, "checkRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckRequiredUndefined: Self = StObject.set(x, "checkRequired", js.undefined)
+      inline def setCheckRequiredUndefined: Self = StObject.set(x, "checkRequired", js.undefined)
       
-      @scala.inline
-      def setRemoveAdditional(value: Boolean): Self = StObject.set(x, "removeAdditional", value.asInstanceOf[js.Any])
+      inline def setRemoveAdditional(value: Boolean): Self = StObject.set(x, "removeAdditional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAdditionalUndefined: Self = StObject.set(x, "removeAdditional", js.undefined)
+      inline def setRemoveAdditionalUndefined: Self = StObject.set(x, "removeAdditional", js.undefined)
       
-      @scala.inline
-      def setUseCoerce(value: Boolean): Self = StObject.set(x, "useCoerce", value.asInstanceOf[js.Any])
+      inline def setUseCoerce(value: Boolean): Self = StObject.set(x, "useCoerce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCoerceUndefined: Self = StObject.set(x, "useCoerce", js.undefined)
+      inline def setUseCoerceUndefined: Self = StObject.set(x, "useCoerce", js.undefined)
       
-      @scala.inline
-      def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
+      inline def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDefaultUndefined: Self = StObject.set(x, "useDefault", js.undefined)
+      inline def setUseDefaultUndefined: Self = StObject.set(x, "useDefault", js.undefined)
     }
   }
 }

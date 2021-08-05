@@ -12,25 +12,19 @@ trait SBBaseType extends StObject {
 }
 object SBBaseType {
   
-  @scala.inline
-  def apply(): SBBaseType = {
+  inline def apply(): SBBaseType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SBBaseType]
   }
   
-  @scala.inline
-  implicit class SBBaseTypeMutableBuilder[Self <: SBBaseType] (val x: Self) extends AnyVal {
+  extension [Self <: SBBaseType](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

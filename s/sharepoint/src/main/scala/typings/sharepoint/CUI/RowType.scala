@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RowType extends StObject
 object RowType {
   
-  @scala.inline
-  def `2`: typings.sharepoint.sharepointNumbers.`2` = 2.asInstanceOf[typings.sharepoint.sharepointNumbers.`2`]
+  inline def `2`: typings.sharepoint.sharepointNumbers.`2` = 2.asInstanceOf[typings.sharepoint.sharepointNumbers.`2`]
   
-  @scala.inline
-  def `3`: typings.sharepoint.sharepointNumbers.`3` = 3.asInstanceOf[typings.sharepoint.sharepointNumbers.`3`]
+  inline def `3`: typings.sharepoint.sharepointNumbers.`3` = 3.asInstanceOf[typings.sharepoint.sharepointNumbers.`3`]
   
-  @scala.inline
-  def `4`: typings.sharepoint.sharepointNumbers.`4` = 4.asInstanceOf[typings.sharepoint.sharepointNumbers.`4`]
+  inline def `4`: typings.sharepoint.sharepointNumbers.`4` = 4.asInstanceOf[typings.sharepoint.sharepointNumbers.`4`]
 }

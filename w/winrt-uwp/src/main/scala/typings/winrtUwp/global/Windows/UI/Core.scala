@@ -377,7 +377,6 @@ object Core {
       * @return The SystemNavigationManager object associated with the current window.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.UI.Core.SystemNavigationManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Core.SystemNavigationManager]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.UI.Core.SystemNavigationManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Core.SystemNavigationManager]
   }
 }

@@ -24,8 +24,7 @@ trait CloseButtonAriaLabel extends StObject {
 }
 object CloseButtonAriaLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeButtonAriaLabel: String,
     keyboardShortcuts: js.Array[Recordunicodelabelactions],
     onCloseButtonClick: MouseEvent[Element, NativeMouseEvent] => Unit,
@@ -36,25 +35,18 @@ object CloseButtonAriaLabel {
     __obj.asInstanceOf[CloseButtonAriaLabel]
   }
   
-  @scala.inline
-  implicit class CloseButtonAriaLabelMutableBuilder[Self <: CloseButtonAriaLabel] (val x: Self) extends AnyVal {
+  extension [Self <: CloseButtonAriaLabel](x: Self) {
     
-    @scala.inline
-    def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
+    inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardShortcuts(value: js.Array[Recordunicodelabelactions]): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
+    inline def setKeyboardShortcuts(value: js.Array[Recordunicodelabelactions]): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardShortcutsVarargs(value: Recordunicodelabelactions*): Self = StObject.set(x, "keyboardShortcuts", js.Array(value :_*))
+    inline def setKeyboardShortcutsVarargs(value: Recordunicodelabelactions*): Self = StObject.set(x, "keyboardShortcuts", js.Array(value :_*))
     
-    @scala.inline
-    def setOnCloseButtonClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCloseButtonClick", js.Any.fromFunction1(value))
+    inline def setOnCloseButtonClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCloseButtonClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

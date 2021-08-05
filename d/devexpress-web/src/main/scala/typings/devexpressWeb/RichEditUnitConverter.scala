@@ -71,8 +71,7 @@ trait RichEditUnitConverter extends StObject {
 }
 object RichEditUnitConverter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     centimetersToTwips: Double => Double,
     inchesToTwips: Double => Double,
     pixelsToCentimeters: Double => Double,
@@ -88,37 +87,26 @@ object RichEditUnitConverter {
     __obj.asInstanceOf[RichEditUnitConverter]
   }
   
-  @scala.inline
-  implicit class RichEditUnitConverterMutableBuilder[Self <: RichEditUnitConverter] (val x: Self) extends AnyVal {
+  extension [Self <: RichEditUnitConverter](x: Self) {
     
-    @scala.inline
-    def setCentimetersToTwips(value: Double => Double): Self = StObject.set(x, "centimetersToTwips", js.Any.fromFunction1(value))
+    inline def setCentimetersToTwips(value: Double => Double): Self = StObject.set(x, "centimetersToTwips", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInchesToTwips(value: Double => Double): Self = StObject.set(x, "inchesToTwips", js.Any.fromFunction1(value))
+    inline def setInchesToTwips(value: Double => Double): Self = StObject.set(x, "inchesToTwips", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPixelsToCentimeters(value: Double => Double): Self = StObject.set(x, "pixelsToCentimeters", js.Any.fromFunction1(value))
+    inline def setPixelsToCentimeters(value: Double => Double): Self = StObject.set(x, "pixelsToCentimeters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPixelsToInches(value: Double => Double): Self = StObject.set(x, "pixelsToInches", js.Any.fromFunction1(value))
+    inline def setPixelsToInches(value: Double => Double): Self = StObject.set(x, "pixelsToInches", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPixelsToPoints(value: Double => Double): Self = StObject.set(x, "pixelsToPoints", js.Any.fromFunction1(value))
+    inline def setPixelsToPoints(value: Double => Double): Self = StObject.set(x, "pixelsToPoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPixelsToTwips(value: Double => Double): Self = StObject.set(x, "pixelsToTwips", js.Any.fromFunction1(value))
+    inline def setPixelsToTwips(value: Double => Double): Self = StObject.set(x, "pixelsToTwips", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPointsToTwips(value: Double => Double): Self = StObject.set(x, "pointsToTwips", js.Any.fromFunction1(value))
+    inline def setPointsToTwips(value: Double => Double): Self = StObject.set(x, "pointsToTwips", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTwipsToCentimeters(value: Double => Double): Self = StObject.set(x, "twipsToCentimeters", js.Any.fromFunction1(value))
+    inline def setTwipsToCentimeters(value: Double => Double): Self = StObject.set(x, "twipsToCentimeters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTwipsToInches(value: Double => Double): Self = StObject.set(x, "twipsToInches", js.Any.fromFunction1(value))
+    inline def setTwipsToInches(value: Double => Double): Self = StObject.set(x, "twipsToInches", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTwipsToPoints(value: Double => Double): Self = StObject.set(x, "twipsToPoints", js.Any.fromFunction1(value))
+    inline def setTwipsToPoints(value: Double => Double): Self = StObject.set(x, "twipsToPoints", js.Any.fromFunction1(value))
   }
 }

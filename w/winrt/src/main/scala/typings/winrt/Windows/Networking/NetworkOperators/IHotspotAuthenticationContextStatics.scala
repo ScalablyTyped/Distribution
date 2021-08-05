@@ -11,16 +11,13 @@ trait IHotspotAuthenticationContextStatics extends StObject {
 }
 object IHotspotAuthenticationContextStatics {
   
-  @scala.inline
-  def apply(tryGetAuthenticationContext: String => Context): IHotspotAuthenticationContextStatics = {
+  inline def apply(tryGetAuthenticationContext: String => Context): IHotspotAuthenticationContextStatics = {
     val __obj = js.Dynamic.literal(tryGetAuthenticationContext = js.Any.fromFunction1(tryGetAuthenticationContext))
     __obj.asInstanceOf[IHotspotAuthenticationContextStatics]
   }
   
-  @scala.inline
-  implicit class IHotspotAuthenticationContextStaticsMutableBuilder[Self <: IHotspotAuthenticationContextStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IHotspotAuthenticationContextStatics](x: Self) {
     
-    @scala.inline
-    def setTryGetAuthenticationContext(value: String => Context): Self = StObject.set(x, "tryGetAuthenticationContext", js.Any.fromFunction1(value))
+    inline def setTryGetAuthenticationContext(value: String => Context): Self = StObject.set(x, "tryGetAuthenticationContext", js.Any.fromFunction1(value))
   }
 }

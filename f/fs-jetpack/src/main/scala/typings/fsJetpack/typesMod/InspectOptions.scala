@@ -20,43 +20,31 @@ trait InspectOptions extends StObject {
 }
 object InspectOptions {
   
-  @scala.inline
-  def apply(): InspectOptions = {
+  inline def apply(): InspectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InspectOptions]
   }
   
-  @scala.inline
-  implicit class InspectOptionsMutableBuilder[Self <: InspectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InspectOptions](x: Self) {
     
-    @scala.inline
-    def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+    inline def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+    inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
-    @scala.inline
-    def setChecksum(value: Checksum): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: Checksum): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setMode(value: Boolean): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Boolean): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSymlinks(value: report | follow): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
+    inline def setSymlinks(value: report | follow): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
+    inline def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
     
-    @scala.inline
-    def setTimes(value: Boolean): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    inline def setTimes(value: Boolean): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
+    inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
   }
 }

@@ -40,23 +40,18 @@ object pointMod {
   }
   object BasicPoint {
     
-    @scala.inline
-    def apply(time: Double, x: Double, y: Double): BasicPoint = {
+    inline def apply(time: Double, x: Double, y: Double): BasicPoint = {
       val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasicPoint]
     }
     
-    @scala.inline
-    implicit class BasicPointMutableBuilder[Self <: BasicPoint] (val x: Self) extends AnyVal {
+    extension [Self <: BasicPoint](x: Self) {
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

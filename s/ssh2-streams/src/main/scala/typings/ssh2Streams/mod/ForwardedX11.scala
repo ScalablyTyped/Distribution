@@ -12,19 +12,15 @@ trait ForwardedX11 extends StObject {
 }
 object ForwardedX11 {
   
-  @scala.inline
-  def apply(originAddr: String, originPort: Double): ForwardedX11 = {
+  inline def apply(originAddr: String, originPort: Double): ForwardedX11 = {
     val __obj = js.Dynamic.literal(originAddr = originAddr.asInstanceOf[js.Any], originPort = originPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardedX11]
   }
   
-  @scala.inline
-  implicit class ForwardedX11MutableBuilder[Self <: ForwardedX11] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardedX11](x: Self) {
     
-    @scala.inline
-    def setOriginAddr(value: String): Self = StObject.set(x, "originAddr", value.asInstanceOf[js.Any])
+    inline def setOriginAddr(value: String): Self = StObject.set(x, "originAddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginPort(value: Double): Self = StObject.set(x, "originPort", value.asInstanceOf[js.Any])
+    inline def setOriginPort(value: Double): Self = StObject.set(x, "originPort", value.asInstanceOf[js.Any])
   }
 }

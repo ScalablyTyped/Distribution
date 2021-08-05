@@ -20,25 +20,19 @@ trait NgContentSelectors extends StObject {
 }
 object NgContentSelectors {
   
-  @scala.inline
-  def apply(ngContentSelectors: js.Array[String], nodes: js.Array[Node]): NgContentSelectors = {
+  inline def apply(ngContentSelectors: js.Array[String], nodes: js.Array[Node]): NgContentSelectors = {
     val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgContentSelectors]
   }
   
-  @scala.inline
-  implicit class NgContentSelectorsMutableBuilder[Self <: NgContentSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: NgContentSelectors](x: Self) {
     
-    @scala.inline
-    def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
+    inline def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
+    inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

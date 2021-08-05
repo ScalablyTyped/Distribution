@@ -15,33 +15,25 @@ object monoid {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fold[A](M: Monoid[A]): js.Function1[/* as */ js.Array[A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fold")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], A]]
+  inline def fold[A](M: Monoid[A]): js.Function1[/* as */ js.Array[A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fold")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], A]]
   
-  @scala.inline
-  def getDualMonoid[A](M: Monoid[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDualMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
+  inline def getDualMonoid[A](M: Monoid[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDualMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
   
-  @scala.inline
-  def getEndomorphismMonoid[A](): Monoid[Endomorphism[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndomorphismMonoid")().asInstanceOf[Monoid[Endomorphism[A]]]
+  inline def getEndomorphismMonoid[A](): Monoid[Endomorphism[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndomorphismMonoid")().asInstanceOf[Monoid[Endomorphism[A]]]
   
-  @scala.inline
-  def getFunctionMonoid[M](M: Monoid[M]): js.Function0[Monoid[js.Function1[/* a */ scala.Nothing, M]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Monoid[js.Function1[/* a */ scala.Nothing, M]]]]
+  inline def getFunctionMonoid[M](M: Monoid[M]): js.Function0[Monoid[js.Function1[/* a */ scala.Nothing, M]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Monoid[js.Function1[/* a */ scala.Nothing, M]]]]
   
-  @scala.inline
-  def getJoinMonoid[A](B: Bounded[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJoinMonoid")(B.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
+  inline def getJoinMonoid[A](B: Bounded[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJoinMonoid")(B.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
   
-  @scala.inline
-  def getMeetMonoid[A](B: Bounded[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeetMonoid")(B.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
+  inline def getMeetMonoid[A](B: Bounded[A]): Monoid[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeetMonoid")(B.asInstanceOf[js.Any]).asInstanceOf[Monoid[A]]
   
-  @scala.inline
-  def getStructMonoid[O /* <: ReadonlyRecord_[String, js.Any] */](
+  inline def getStructMonoid[O /* <: ReadonlyRecord_[String, js.Any] */](
     monoids: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Monoid.Monoid<O[K]>}
     */ typings.fpTs.fpTsStrings.getStructMonoid & TopLevel[O]
   ): Monoid[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStructMonoid")(monoids.asInstanceOf[js.Any]).asInstanceOf[Monoid[O]]
   
-  @scala.inline
-  def getTupleMonoid[T /* <: js.Array[Monoid[js.Any]] */](
+  inline def getTupleMonoid[T /* <: js.Array[Monoid[js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param monoids because its type T is not an array type */ monoids: T
   ): Monoid[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 

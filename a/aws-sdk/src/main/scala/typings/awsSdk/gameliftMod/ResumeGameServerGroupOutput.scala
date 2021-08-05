@@ -13,19 +13,15 @@ trait ResumeGameServerGroupOutput extends StObject {
 }
 object ResumeGameServerGroupOutput {
   
-  @scala.inline
-  def apply(): ResumeGameServerGroupOutput = {
+  inline def apply(): ResumeGameServerGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResumeGameServerGroupOutput]
   }
   
-  @scala.inline
-  implicit class ResumeGameServerGroupOutputMutableBuilder[Self <: ResumeGameServerGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeGameServerGroupOutput](x: Self) {
     
-    @scala.inline
-    def setGameServerGroup(value: GameServerGroup): Self = StObject.set(x, "GameServerGroup", value.asInstanceOf[js.Any])
+    inline def setGameServerGroup(value: GameServerGroup): Self = StObject.set(x, "GameServerGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerGroupUndefined: Self = StObject.set(x, "GameServerGroup", js.undefined)
+    inline def setGameServerGroupUndefined: Self = StObject.set(x, "GameServerGroup", js.undefined)
   }
 }

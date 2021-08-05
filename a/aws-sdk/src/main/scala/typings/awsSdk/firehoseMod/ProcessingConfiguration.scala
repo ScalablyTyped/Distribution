@@ -18,28 +18,21 @@ trait ProcessingConfiguration extends StObject {
 }
 object ProcessingConfiguration {
   
-  @scala.inline
-  def apply(): ProcessingConfiguration = {
+  inline def apply(): ProcessingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessingConfiguration]
   }
   
-  @scala.inline
-  implicit class ProcessingConfigurationMutableBuilder[Self <: ProcessingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setProcessors(value: ProcessorList): Self = StObject.set(x, "Processors", value.asInstanceOf[js.Any])
+    inline def setProcessors(value: ProcessorList): Self = StObject.set(x, "Processors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorsUndefined: Self = StObject.set(x, "Processors", js.undefined)
+    inline def setProcessorsUndefined: Self = StObject.set(x, "Processors", js.undefined)
     
-    @scala.inline
-    def setProcessorsVarargs(value: Processor*): Self = StObject.set(x, "Processors", js.Array(value :_*))
+    inline def setProcessorsVarargs(value: Processor*): Self = StObject.set(x, "Processors", js.Array(value :_*))
   }
 }

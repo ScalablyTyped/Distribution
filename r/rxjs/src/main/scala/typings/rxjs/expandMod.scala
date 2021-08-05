@@ -33,11 +33,11 @@ object expandMod {
     /* CompleteClass */
     override def call(subscriber: Subscriber[R], source: js.Any): TeardownLogic = js.native
     
-    var concurrent: js.Any = js.native
+    /* private */ var concurrent: js.Any = js.native
     
-    var project: js.Any = js.native
+    /* private */ var project: js.Any = js.native
     
-    var scheduler: js.Any = js.native
+    /* private */ var scheduler: js.Any = js.native
   }
   
   @JSImport("rxjs/internal/operators/expand", "ExpandSubscriber")
@@ -57,21 +57,21 @@ object expandMod {
     
     /* protected */ def _next(value: js.Any): Unit = js.native
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var concurrent: js.Any = js.native
+    /* private */ var concurrent: js.Any = js.native
     
-    var hasCompleted: js.Any = js.native
+    /* private */ var hasCompleted: js.Any = js.native
     
-    var index: js.Any = js.native
+    /* private */ var index: js.Any = js.native
     
-    var project: js.Any = js.native
+    /* private */ var project: js.Any = js.native
     
-    var scheduler: js.Any = js.native
+    /* private */ var scheduler: js.Any = js.native
     
-    var subscribeToProjection: js.Any = js.native
+    /* private */ var subscribeToProjection: js.Any = js.native
   }
   /* static members */
   object ExpandSubscriber {
@@ -83,39 +83,30 @@ object expandMod {
     @JSImport("rxjs/internal/operators/expand", "ExpandSubscriber.dispatch")
     @js.native
     def dispatch: js.Any = js.native
-    @scala.inline
-    def dispatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatch")(x.asInstanceOf[js.Any])
+    inline def dispatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatch")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]], concurrent: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def expand[T](
+  inline def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]], concurrent: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def expand[T](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
     concurrent: Double,
     scheduler: SchedulerLike
   ): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def expand[T](
+  inline def expand[T](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
     concurrent: Unit,
     scheduler: SchedulerLike
   ): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
   
-  @scala.inline
-  def expand_TR_OperatorFunction[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
-  @scala.inline
-  def expand_TR_OperatorFunction[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
-  @scala.inline
-  def expand_TR_OperatorFunction[T, R](
+  inline def expand_TR_OperatorFunction[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
+  inline def expand_TR_OperatorFunction[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  inline def expand_TR_OperatorFunction[T, R](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
     concurrent: Double,
     scheduler: SchedulerLike
   ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
-  @scala.inline
-  def expand_TR_OperatorFunction[T, R](
+  inline def expand_TR_OperatorFunction[T, R](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
     concurrent: Unit,
     scheduler: SchedulerLike

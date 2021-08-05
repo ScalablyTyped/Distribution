@@ -14,20 +14,16 @@ trait IImageEncodingProperties
 }
 object IImageEncodingProperties {
   
-  @scala.inline
-  def apply(height: Double, properties: MediaPropertySet, subtype: String, `type`: String, width: Double): IImageEncodingProperties = {
+  inline def apply(height: Double, properties: MediaPropertySet, subtype: String, `type`: String, width: Double): IImageEncodingProperties = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageEncodingProperties]
   }
   
-  @scala.inline
-  implicit class IImageEncodingPropertiesMutableBuilder[Self <: IImageEncodingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IImageEncodingProperties](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

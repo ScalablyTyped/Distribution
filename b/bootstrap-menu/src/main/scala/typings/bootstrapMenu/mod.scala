@@ -47,20 +47,16 @@ object mod {
   }
   object BootstrapMenu {
     
-    @scala.inline
-    def apply(close: () => Unit, destroy: () => Unit): BootstrapMenu = {
+    inline def apply(close: () => Unit, destroy: () => Unit): BootstrapMenu = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[BootstrapMenu]
     }
     
-    @scala.inline
-    implicit class BootstrapMenuMutableBuilder[Self <: BootstrapMenu] (val x: Self) extends AnyVal {
+    extension [Self <: BootstrapMenu](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
   
@@ -102,47 +98,34 @@ object mod {
   }
   object BootstrapMenuActions {
     
-    @scala.inline
-    def apply(name: String, onClick: BootstrapMenuRowElement => Unit): BootstrapMenuActions = {
+    inline def apply(name: String, onClick: BootstrapMenuRowElement => Unit): BootstrapMenuActions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[BootstrapMenuActions]
     }
     
-    @scala.inline
-    implicit class BootstrapMenuActionsMutableBuilder[Self <: BootstrapMenuActions] (val x: Self) extends AnyVal {
+    extension [Self <: BootstrapMenuActions](x: Self) {
       
-      @scala.inline
-      def setClassNames(value: String | js.Object | (js.Function0[String | js.Object])): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: String | js.Object | (js.Function0[String | js.Object])): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesFunction0(value: () => String | js.Object): Self = StObject.set(x, "classNames", js.Any.fromFunction0(value))
+      inline def setClassNamesFunction0(value: () => String | js.Object): Self = StObject.set(x, "classNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: /* rowElement */ BootstrapMenuRowElement => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
+      inline def setIsEnabled(value: /* rowElement */ BootstrapMenuRowElement => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setIsShown(value: /* rowElement */ BootstrapMenuRowElement => Boolean): Self = StObject.set(x, "isShown", js.Any.fromFunction1(value))
+      inline def setIsShown(value: /* rowElement */ BootstrapMenuRowElement => Boolean): Self = StObject.set(x, "isShown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsShownUndefined: Self = StObject.set(x, "isShown", js.undefined)
+      inline def setIsShownUndefined: Self = StObject.set(x, "isShown", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: BootstrapMenuRowElement => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: BootstrapMenuRowElement => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -154,14 +137,11 @@ object mod {
   trait BootstrapMenuEvent extends StObject
   object BootstrapMenuEvent {
     
-    @scala.inline
-    def click: typings.bootstrapMenu.bootstrapMenuStrings.click = "click".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.click]
+    inline def click: typings.bootstrapMenu.bootstrapMenuStrings.click = "click".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.click]
     
-    @scala.inline
-    def hover: typings.bootstrapMenu.bootstrapMenuStrings.hover = "hover".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.hover]
+    inline def hover: typings.bootstrapMenu.bootstrapMenuStrings.hover = "hover".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.hover]
     
-    @scala.inline
-    def `right-click`: typings.bootstrapMenu.bootstrapMenuStrings.`right-click` = "right-click".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.`right-click`]
+    inline def `right-click`: typings.bootstrapMenu.bootstrapMenuStrings.`right-click` = "right-click".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.`right-click`]
   }
   
   trait BootstrapMenuOptions extends StObject {
@@ -222,71 +202,50 @@ object mod {
   }
   object BootstrapMenuOptions {
     
-    @scala.inline
-    def apply(actions: StringDictionary[BootstrapMenuActions] | js.Array[BootstrapMenuActions]): BootstrapMenuOptions = {
+    inline def apply(actions: StringDictionary[BootstrapMenuActions] | js.Array[BootstrapMenuActions]): BootstrapMenuOptions = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
       __obj.asInstanceOf[BootstrapMenuOptions]
     }
     
-    @scala.inline
-    implicit class BootstrapMenuOptionsMutableBuilder[Self <: BootstrapMenuOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BootstrapMenuOptions](x: Self) {
       
-      @scala.inline
-      def setActions(value: StringDictionary[BootstrapMenuActions] | js.Array[BootstrapMenuActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: StringDictionary[BootstrapMenuActions] | js.Array[BootstrapMenuActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsGroups(value: js.Array[js.Array[String]]): Self = StObject.set(x, "actionsGroups", value.asInstanceOf[js.Any])
+      inline def setActionsGroups(value: js.Array[js.Array[String]]): Self = StObject.set(x, "actionsGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsGroupsUndefined: Self = StObject.set(x, "actionsGroups", js.undefined)
+      inline def setActionsGroupsUndefined: Self = StObject.set(x, "actionsGroups", js.undefined)
       
-      @scala.inline
-      def setActionsGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "actionsGroups", js.Array(value :_*))
+      inline def setActionsGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "actionsGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setActionsVarargs(value: BootstrapMenuActions*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: BootstrapMenuActions*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setFetchElementData(value: /* jqueryElement */ JQuery[HTMLElement] => BootstrapMenuRowElement): Self = StObject.set(x, "fetchElementData", js.Any.fromFunction1(value))
+      inline def setFetchElementData(value: /* jqueryElement */ JQuery[HTMLElement] => BootstrapMenuRowElement): Self = StObject.set(x, "fetchElementData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFetchElementDataUndefined: Self = StObject.set(x, "fetchElementData", js.undefined)
+      inline def setFetchElementDataUndefined: Self = StObject.set(x, "fetchElementData", js.undefined)
       
-      @scala.inline
-      def setMenuEvent(value: BootstrapMenuEvent): Self = StObject.set(x, "menuEvent", value.asInstanceOf[js.Any])
+      inline def setMenuEvent(value: BootstrapMenuEvent): Self = StObject.set(x, "menuEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuEventUndefined: Self = StObject.set(x, "menuEvent", js.undefined)
+      inline def setMenuEventUndefined: Self = StObject.set(x, "menuEvent", js.undefined)
       
-      @scala.inline
-      def setMenuPosition(value: BootstrapMenuPosition): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
+      inline def setMenuPosition(value: BootstrapMenuPosition): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
+      inline def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
       
-      @scala.inline
-      def setMenuSource(value: BootstrapMenuSource): Self = StObject.set(x, "menuSource", value.asInstanceOf[js.Any])
+      inline def setMenuSource(value: BootstrapMenuSource): Self = StObject.set(x, "menuSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuSourceUndefined: Self = StObject.set(x, "menuSource", js.undefined)
+      inline def setMenuSourceUndefined: Self = StObject.set(x, "menuSource", js.undefined)
       
-      @scala.inline
-      def setNoActionsMessage(value: String): Self = StObject.set(x, "noActionsMessage", value.asInstanceOf[js.Any])
+      inline def setNoActionsMessage(value: String): Self = StObject.set(x, "noActionsMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoActionsMessageUndefined: Self = StObject.set(x, "noActionsMessage", js.undefined)
+      inline def setNoActionsMessageUndefined: Self = StObject.set(x, "noActionsMessage", js.undefined)
       
-      @scala.inline
-      def set_actionSelectEvent(value: String): Self = StObject.set(x, "_actionSelectEvent", value.asInstanceOf[js.Any])
+      inline def set_actionSelectEvent(value: String): Self = StObject.set(x, "_actionSelectEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_actionSelectEventUndefined: Self = StObject.set(x, "_actionSelectEvent", js.undefined)
+      inline def set_actionSelectEventUndefined: Self = StObject.set(x, "_actionSelectEvent", js.undefined)
     }
   }
   
@@ -299,17 +258,13 @@ object mod {
   trait BootstrapMenuPosition extends StObject
   object BootstrapMenuPosition {
     
-    @scala.inline
-    def aboveLeft: typings.bootstrapMenu.bootstrapMenuStrings.aboveLeft = "aboveLeft".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.aboveLeft]
+    inline def aboveLeft: typings.bootstrapMenu.bootstrapMenuStrings.aboveLeft = "aboveLeft".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.aboveLeft]
     
-    @scala.inline
-    def aboveRight: typings.bootstrapMenu.bootstrapMenuStrings.aboveRight = "aboveRight".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.aboveRight]
+    inline def aboveRight: typings.bootstrapMenu.bootstrapMenuStrings.aboveRight = "aboveRight".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.aboveRight]
     
-    @scala.inline
-    def belowLeft: typings.bootstrapMenu.bootstrapMenuStrings.belowLeft = "belowLeft".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.belowLeft]
+    inline def belowLeft: typings.bootstrapMenu.bootstrapMenuStrings.belowLeft = "belowLeft".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.belowLeft]
     
-    @scala.inline
-    def belowRight: typings.bootstrapMenu.bootstrapMenuStrings.belowRight = "belowRight".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.belowRight]
+    inline def belowRight: typings.bootstrapMenu.bootstrapMenuStrings.belowRight = "belowRight".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.belowRight]
   }
   
   type BootstrapMenuRowElement = js.Any
@@ -321,10 +276,8 @@ object mod {
   trait BootstrapMenuSource extends StObject
   object BootstrapMenuSource {
     
-    @scala.inline
-    def element: typings.bootstrapMenu.bootstrapMenuStrings.element = "element".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.element]
+    inline def element: typings.bootstrapMenu.bootstrapMenuStrings.element = "element".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.element]
     
-    @scala.inline
-    def mouse: typings.bootstrapMenu.bootstrapMenuStrings.mouse = "mouse".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.mouse]
+    inline def mouse: typings.bootstrapMenu.bootstrapMenuStrings.mouse = "mouse".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.mouse]
   }
 }

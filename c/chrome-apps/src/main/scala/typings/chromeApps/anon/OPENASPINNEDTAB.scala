@@ -20,25 +20,19 @@ trait OPENASPINNEDTAB extends StObject {
 }
 object OPENASPINNEDTAB {
   
-  @scala.inline
-  def apply(): OPENASPINNEDTAB = {
+  inline def apply(): OPENASPINNEDTAB = {
     val __obj = js.Dynamic.literal(OPEN_AS_PINNED_TAB = "OPEN_AS_PINNED_TAB", OPEN_AS_REGULAR_TAB = "OPEN_AS_REGULAR_TAB", OPEN_AS_WINDOW = "OPEN_AS_WINDOW", OPEN_FULL_SCREEN = "OPEN_FULL_SCREEN")
     __obj.asInstanceOf[OPENASPINNEDTAB]
   }
   
-  @scala.inline
-  implicit class OPENASPINNEDTABMutableBuilder[Self <: OPENASPINNEDTAB] (val x: Self) extends AnyVal {
+  extension [Self <: OPENASPINNEDTAB](x: Self) {
     
-    @scala.inline
-    def setOPEN_AS_PINNED_TAB(value: OPEN_AS_PINNED_TAB): Self = StObject.set(x, "OPEN_AS_PINNED_TAB", value.asInstanceOf[js.Any])
+    inline def setOPEN_AS_PINNED_TAB(value: OPEN_AS_PINNED_TAB): Self = StObject.set(x, "OPEN_AS_PINNED_TAB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPEN_AS_REGULAR_TAB(value: OPEN_AS_REGULAR_TAB): Self = StObject.set(x, "OPEN_AS_REGULAR_TAB", value.asInstanceOf[js.Any])
+    inline def setOPEN_AS_REGULAR_TAB(value: OPEN_AS_REGULAR_TAB): Self = StObject.set(x, "OPEN_AS_REGULAR_TAB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPEN_AS_WINDOW(value: OPEN_AS_WINDOW): Self = StObject.set(x, "OPEN_AS_WINDOW", value.asInstanceOf[js.Any])
+    inline def setOPEN_AS_WINDOW(value: OPEN_AS_WINDOW): Self = StObject.set(x, "OPEN_AS_WINDOW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPEN_FULL_SCREEN(value: OPEN_FULL_SCREEN): Self = StObject.set(x, "OPEN_FULL_SCREEN", value.asInstanceOf[js.Any])
+    inline def setOPEN_FULL_SCREEN(value: OPEN_FULL_SCREEN): Self = StObject.set(x, "OPEN_FULL_SCREEN", value.asInstanceOf[js.Any])
   }
 }

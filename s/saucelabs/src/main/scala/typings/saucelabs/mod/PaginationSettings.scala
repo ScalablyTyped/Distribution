@@ -21,37 +21,27 @@ trait PaginationSettings
 }
 object PaginationSettings {
   
-  @scala.inline
-  def apply(): PaginationSettings = {
+  inline def apply(): PaginationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationSettings]
   }
   
-  @scala.inline
-  implicit class PaginationSettingsMutableBuilder[Self <: PaginationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationSettings](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
+    inline def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTermUndefined: Self = StObject.set(x, "searchTerm", js.undefined)
+    inline def setSearchTermUndefined: Self = StObject.set(x, "searchTerm", js.undefined)
     
-    @scala.inline
-    def setSortDirection(value: ASCENDING | DESCENDING): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: ASCENDING | DESCENDING): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
+    inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
   }
 }

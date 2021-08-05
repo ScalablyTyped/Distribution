@@ -13,22 +13,17 @@ trait ICellOutput extends StObject {
 }
 object ICellOutput {
   
-  @scala.inline
-  def apply(output_type: OutputTypeName): ICellOutput = {
+  inline def apply(output_type: OutputTypeName): ICellOutput = {
     val __obj = js.Dynamic.literal(output_type = output_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICellOutput]
   }
   
-  @scala.inline
-  implicit class ICellOutputMutableBuilder[Self <: ICellOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ICellOutput](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: AzdatachartOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: AzdatachartOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setOutput_type(value: OutputTypeName): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: OutputTypeName): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

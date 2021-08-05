@@ -22,12 +22,12 @@ object navStepperDotdriverMod {
     
     def clickOnStep(index: Double): Unit = js.native
     
-    val element: js.Any = js.native
+    /* private */ val element: js.Any = js.native
     
     /* CompleteClass */
     override def exists(): Boolean = js.native
     
-    val hasStyleState: js.Any = js.native
+    /* private */ val hasStyleState: js.Any = js.native
     
     /** checks if a step is active */
     def isStepActive(index: Double): Boolean = js.native
@@ -41,12 +41,12 @@ object navStepperDotdriverMod {
     /**  returns the root element */
     def root(): Element = js.native
     
-    val stepAt: js.Any = js.native
+    /* private */ val stepAt: js.Any = js.native
     
     /** returns text content of a step */
     def stepContentAt(index: Double): String = js.native
     
-    val styleUtil: js.Any = js.native
+    /* private */ val styleUtil: js.Any = js.native
   }
   
   @JSImport("wix-ui-core/dist/standalone/src/components/nav-stepper/NavStepper.driver", "navStepperDriverFactory")

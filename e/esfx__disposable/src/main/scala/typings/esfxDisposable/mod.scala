@@ -24,49 +24,41 @@ object mod {
     /**
       * Creates an `AsyncDisposable` wrapper around a callback used to dispose resources.
       */
-    @scala.inline
-    def create(dispose: js.Function0[Unit | js.Thenable[Unit]]): typings.esfxDisposable.distMod.AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distMod.AsyncDisposable]
+    inline def create(dispose: js.Function0[Unit | js.Thenable[Unit]]): typings.esfxDisposable.distMod.AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distMod.AsyncDisposable]
     
     /**
       * Creates an `AsyncDisposable` wrapper around a set of other disposables.
       * @param resources An `Iterable` of `AsyncDisposable` or `Disposable` objects.
       */
-    @scala.inline
-    def from(
+    inline def from(
       resources: Iterable[js.UndefOr[typings.esfxDisposable.distMod.AsyncDisposable | Disposable | Null]]
     ): typings.esfxDisposable.distMod.AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(resources.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distMod.AsyncDisposable]
     
     /**
       * Determines whether a value is [[AsyncDisposable]].
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean]
     
     /**
       * Determines whether a value is [[AsyncDisposable]].
       * @deprecated Use `AsyncDisposable.hasInstance` instead.
       */
-    @scala.inline
-    def isAsyncDisposable(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncDisposable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean]
+    inline def isAsyncDisposable(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncDisposable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.AsyncDisposable */ Boolean]
     
     @JSImport("@esfx/disposable", "AsyncDisposable.name")
     @js.native
     val name: /* "AsyncDisposable" */ String = js.native
     
-    @scala.inline
-    def use[U](resource: Null, callback: js.Function1[/* resource */ Null, U | js.Thenable[U]]): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
-    @scala.inline
-    def use[U](resource: Unit, callback: js.Function1[/* resource */ Unit, U | js.Thenable[U]]): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
+    inline def use[U](resource: Null, callback: js.Function1[/* resource */ Null, U | js.Thenable[U]]): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
+    inline def use[U](resource: Unit, callback: js.Function1[/* resource */ Unit, U | js.Thenable[U]]): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
     /**
       * Executes a callback with the provided `AsyncDisposable` resource, disposing the resource when the callback completes asynchronously.
       */
-    @scala.inline
-    def use[U](
+    inline def use[U](
       resource: typings.esfxDisposable.distMod.AsyncDisposable,
       callback: js.Function1[/* resource */ typings.esfxDisposable.distMod.AsyncDisposable, U | js.Thenable[U]]
     ): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
-    @scala.inline
-    def use[U](resource: Disposable, callback: js.Function1[/* resource */ Disposable, U | js.Thenable[U]]): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
+    inline def use[U](resource: Disposable, callback: js.Function1[/* resource */ Disposable, U | js.Thenable[U]]): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
   }
   
   object Disposable {
@@ -78,8 +70,7 @@ object mod {
     /**
       * Creates a `Disposable` wrapper around a callback used to dispose of a resource.
       */
-    @scala.inline
-    def create(dispose: js.Function0[Unit]): typings.esfxDisposable.distMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distMod.Disposable]
+    inline def create(dispose: js.Function0[Unit]): typings.esfxDisposable.distMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distMod.Disposable]
     
     /**
       * A well-known symbol used to define an explicit resource disposal method on an object.
@@ -92,21 +83,18 @@ object mod {
       * Creates a `Disposable` wrapper around a set of other disposables.
       * @param disposables An `Iterable` of `Disposable` objects.
       */
-    @scala.inline
-    def from(disposables: Iterable[js.UndefOr[typings.esfxDisposable.distMod.Disposable | Null]]): typings.esfxDisposable.distMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(disposables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distMod.Disposable]
+    inline def from(disposables: Iterable[js.UndefOr[typings.esfxDisposable.distMod.Disposable | Null]]): typings.esfxDisposable.distMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(disposables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distMod.Disposable]
     
     /**
       * Determines whether a value is Disposable.
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean]
     
     /**
       * Determines whether a value is Disposable.
       * @deprecated Use `Disposable.hasInstance` instead.
       */
-    @scala.inline
-    def isDisposable(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean]
+    inline def isDisposable(value: js.Any): /* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/disposable.@esfx/disposable/dist.Disposable */ Boolean]
     
     @JSImport("@esfx/disposable", "Disposable.name")
     @js.native
@@ -115,7 +103,6 @@ object mod {
     /**
       * Executes a callback with the provided `Disposable` resource, disposing the resource when the callback completes.
       */
-    @scala.inline
-    def use[T /* <: js.UndefOr[typings.esfxDisposable.distMod.Disposable | Null] */, U](resource: T, callback: js.Function1[/* resource */ T, U]): U = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[U]
+    inline def use[T /* <: js.UndefOr[typings.esfxDisposable.distMod.Disposable | Null] */, U](resource: T, callback: js.Function1[/* resource */ T, U]): U = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[U]
   }
 }

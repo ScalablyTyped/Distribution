@@ -16,19 +16,15 @@ trait IPaymentIntentListOptions
 }
 object IPaymentIntentListOptions {
   
-  @scala.inline
-  def apply(): IPaymentIntentListOptions = {
+  inline def apply(): IPaymentIntentListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPaymentIntentListOptions]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentListOptionsMutableBuilder[Self <: IPaymentIntentListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentListOptions](x: Self) {
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
   }
 }

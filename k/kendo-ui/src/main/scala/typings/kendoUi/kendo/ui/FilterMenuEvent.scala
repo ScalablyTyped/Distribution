@@ -14,22 +14,17 @@ trait FilterMenuEvent extends StObject {
 }
 object FilterMenuEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: FilterMenu): FilterMenuEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: FilterMenu): FilterMenuEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMenuEvent]
   }
   
-  @scala.inline
-  implicit class FilterMenuEventMutableBuilder[Self <: FilterMenuEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FilterMenuEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: FilterMenu): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: FilterMenu): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

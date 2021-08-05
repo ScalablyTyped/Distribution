@@ -14,22 +14,17 @@ trait MinuteStep extends StObject {
 }
 object MinuteStep {
   
-  @scala.inline
-  def apply(minuteStep: Double, mode: String, use12Hours: Boolean): MinuteStep = {
+  inline def apply(minuteStep: Double, mode: String, use12Hours: Boolean): MinuteStep = {
     val __obj = js.Dynamic.literal(minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], use12Hours = use12Hours.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinuteStep]
   }
   
-  @scala.inline
-  implicit class MinuteStepMutableBuilder[Self <: MinuteStep] (val x: Self) extends AnyVal {
+  extension [Self <: MinuteStep](x: Self) {
     
-    @scala.inline
-    def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+    inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
+    inline def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
   }
 }

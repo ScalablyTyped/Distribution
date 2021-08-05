@@ -130,10 +130,8 @@ object Status {
     @js.native
     val UPSTREAM_UNAVAILABLE: `0x0208` = js.native
     
-    @scala.inline
-    def fromHTTPCode(status: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
+    inline def fromHTTPCode(status: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
     
-    @scala.inline
-    def fromWebSocketCode(code: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
+    inline def fromWebSocketCode(code: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
   }
 }

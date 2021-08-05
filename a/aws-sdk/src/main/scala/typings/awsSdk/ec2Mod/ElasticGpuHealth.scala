@@ -13,19 +13,15 @@ trait ElasticGpuHealth extends StObject {
 }
 object ElasticGpuHealth {
   
-  @scala.inline
-  def apply(): ElasticGpuHealth = {
+  inline def apply(): ElasticGpuHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticGpuHealth]
   }
   
-  @scala.inline
-  implicit class ElasticGpuHealthMutableBuilder[Self <: ElasticGpuHealth] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticGpuHealth](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ElasticGpuStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ElasticGpuStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

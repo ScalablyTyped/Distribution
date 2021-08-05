@@ -68,8 +68,7 @@ trait DeliveryStreamDescription extends StObject {
 }
 object DeliveryStreamDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DeliveryStreamARN: DeliveryStreamARN,
     DeliveryStreamName: DeliveryStreamName,
     DeliveryStreamStatus: DeliveryStreamStatus,
@@ -82,61 +81,42 @@ object DeliveryStreamDescription {
     __obj.asInstanceOf[DeliveryStreamDescription]
   }
   
-  @scala.inline
-  implicit class DeliveryStreamDescriptionMutableBuilder[Self <: DeliveryStreamDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryStreamDescription](x: Self) {
     
-    @scala.inline
-    def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
+    inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
-    @scala.inline
-    def setDeliveryStreamARN(value: DeliveryStreamARN): Self = StObject.set(x, "DeliveryStreamARN", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamARN(value: DeliveryStreamARN): Self = StObject.set(x, "DeliveryStreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamEncryptionConfiguration(value: DeliveryStreamEncryptionConfiguration): Self = StObject.set(x, "DeliveryStreamEncryptionConfiguration", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamEncryptionConfiguration(value: DeliveryStreamEncryptionConfiguration): Self = StObject.set(x, "DeliveryStreamEncryptionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamEncryptionConfigurationUndefined: Self = StObject.set(x, "DeliveryStreamEncryptionConfiguration", js.undefined)
+    inline def setDeliveryStreamEncryptionConfigurationUndefined: Self = StObject.set(x, "DeliveryStreamEncryptionConfiguration", js.undefined)
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamStatus(value: DeliveryStreamStatus): Self = StObject.set(x, "DeliveryStreamStatus", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamStatus(value: DeliveryStreamStatus): Self = StObject.set(x, "DeliveryStreamStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinations(value: DestinationDescriptionList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: DestinationDescriptionList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsVarargs(value: DestinationDescription*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: DestinationDescription*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
+    inline def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
+    inline def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
     
-    @scala.inline
-    def setHasMoreDestinations(value: BooleanObject): Self = StObject.set(x, "HasMoreDestinations", value.asInstanceOf[js.Any])
+    inline def setHasMoreDestinations(value: BooleanObject): Self = StObject.set(x, "HasMoreDestinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimestampUndefined: Self = StObject.set(x, "LastUpdateTimestamp", js.undefined)
+    inline def setLastUpdateTimestampUndefined: Self = StObject.set(x, "LastUpdateTimestamp", js.undefined)
     
-    @scala.inline
-    def setSource(value: SourceDescription): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SourceDescription): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: DeliveryStreamVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DeliveryStreamVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
   }
 }

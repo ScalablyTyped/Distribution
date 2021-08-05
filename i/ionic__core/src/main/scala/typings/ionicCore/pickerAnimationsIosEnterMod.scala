@@ -12,6 +12,5 @@ object pickerAnimationsIosEnterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iosEnterAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("iosEnterAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def iosEnterAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("iosEnterAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

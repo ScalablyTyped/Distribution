@@ -18,25 +18,19 @@ trait ListUserIDsOptions extends StObject {
 }
 object ListUserIDsOptions {
   
-  @scala.inline
-  def apply(): ListUserIDsOptions = {
+  inline def apply(): ListUserIDsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUserIDsOptions]
   }
   
-  @scala.inline
-  implicit class ListUserIDsOptionsMutableBuilder[Self <: ListUserIDsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserIDsOptions](x: Self) {
     
-    @scala.inline
-    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
+    inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
+    inline def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

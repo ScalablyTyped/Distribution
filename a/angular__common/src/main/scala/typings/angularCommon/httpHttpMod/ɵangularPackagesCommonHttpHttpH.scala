@@ -12,7 +12,7 @@ class ɵangularPackagesCommonHttpHttpH protected ()
      with HttpInterceptor {
   def this(tokenService: HttpXsrfTokenExtractor, headerName: String) = this()
   
-  var headerName: js.Any = js.native
+  /* private */ var headerName: js.Any = js.native
   
   /**
     * Identifies and handles a given HTTP request.
@@ -24,5 +24,5 @@ class ɵangularPackagesCommonHttpHttpH protected ()
   /* CompleteClass */
   override def intercept(req: HttpRequest[js.Any], next: HttpHandler): Observable_[HttpEvent[js.Any]] = js.native
   
-  var tokenService: js.Any = js.native
+  /* private */ var tokenService: js.Any = js.native
 }

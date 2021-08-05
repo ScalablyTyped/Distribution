@@ -34,20 +34,16 @@ object workmailmessageflowMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -65,17 +61,14 @@ object workmailmessageflowMod {
   }
   object GetRawMessageContentRequest {
     
-    @scala.inline
-    def apply(messageId: messageIdType): GetRawMessageContentRequest = {
+    inline def apply(messageId: messageIdType): GetRawMessageContentRequest = {
       val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRawMessageContentRequest]
     }
     
-    @scala.inline
-    implicit class GetRawMessageContentRequestMutableBuilder[Self <: GetRawMessageContentRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetRawMessageContentRequest](x: Self) {
       
-      @scala.inline
-      def setMessageId(value: messageIdType): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: messageIdType): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,17 +81,14 @@ object workmailmessageflowMod {
   }
   object GetRawMessageContentResponse {
     
-    @scala.inline
-    def apply(messageContent: messageContentBlob): GetRawMessageContentResponse = {
+    inline def apply(messageContent: messageContentBlob): GetRawMessageContentResponse = {
       val __obj = js.Dynamic.literal(messageContent = messageContent.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRawMessageContentResponse]
     }
     
-    @scala.inline
-    implicit class GetRawMessageContentResponseMutableBuilder[Self <: GetRawMessageContentResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetRawMessageContentResponse](x: Self) {
       
-      @scala.inline
-      def setMessageContent(value: messageContentBlob): Self = StObject.set(x, "messageContent", value.asInstanceOf[js.Any])
+      inline def setMessageContent(value: messageContentBlob): Self = StObject.set(x, "messageContent", value.asInstanceOf[js.Any])
     }
   }
   

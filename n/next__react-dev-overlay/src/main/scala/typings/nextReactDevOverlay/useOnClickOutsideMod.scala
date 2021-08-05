@@ -13,12 +13,8 @@ object useOnClickOutsideMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useOnClickOutside(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")().asInstanceOf[Unit]
-  @scala.inline
-  def useOnClickOutside(el: Null, handler: js.Function1[/* e */ MouseEvent | TouchEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")(el.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useOnClickOutside(el: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def useOnClickOutside(el: Node, handler: js.Function1[/* e */ MouseEvent | TouchEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")(el.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useOnClickOutside(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")().asInstanceOf[Unit]
+  inline def useOnClickOutside(el: Null, handler: js.Function1[/* e */ MouseEvent | TouchEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")(el.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useOnClickOutside(el: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useOnClickOutside(el: Node, handler: js.Function1[/* e */ MouseEvent | TouchEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useOnClickOutside")(el.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

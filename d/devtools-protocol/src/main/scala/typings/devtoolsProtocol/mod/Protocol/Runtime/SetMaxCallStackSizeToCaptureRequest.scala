@@ -11,16 +11,13 @@ trait SetMaxCallStackSizeToCaptureRequest extends StObject {
 }
 object SetMaxCallStackSizeToCaptureRequest {
   
-  @scala.inline
-  def apply(size: integer): SetMaxCallStackSizeToCaptureRequest = {
+  inline def apply(size: integer): SetMaxCallStackSizeToCaptureRequest = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetMaxCallStackSizeToCaptureRequest]
   }
   
-  @scala.inline
-  implicit class SetMaxCallStackSizeToCaptureRequestMutableBuilder[Self <: SetMaxCallStackSizeToCaptureRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetMaxCallStackSizeToCaptureRequest](x: Self) {
     
-    @scala.inline
-    def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

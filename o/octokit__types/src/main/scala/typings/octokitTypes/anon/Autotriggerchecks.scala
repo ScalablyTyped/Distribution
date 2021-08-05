@@ -10,19 +10,15 @@ trait Autotriggerchecks extends StObject {
 }
 object Autotriggerchecks {
   
-  @scala.inline
-  def apply(auto_trigger_checks: js.Array[Appid]): Autotriggerchecks = {
+  inline def apply(auto_trigger_checks: js.Array[Appid]): Autotriggerchecks = {
     val __obj = js.Dynamic.literal(auto_trigger_checks = auto_trigger_checks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Autotriggerchecks]
   }
   
-  @scala.inline
-  implicit class AutotriggerchecksMutableBuilder[Self <: Autotriggerchecks] (val x: Self) extends AnyVal {
+  extension [Self <: Autotriggerchecks](x: Self) {
     
-    @scala.inline
-    def setAuto_trigger_checks(value: js.Array[Appid]): Self = StObject.set(x, "auto_trigger_checks", value.asInstanceOf[js.Any])
+    inline def setAuto_trigger_checks(value: js.Array[Appid]): Self = StObject.set(x, "auto_trigger_checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_trigger_checksVarargs(value: Appid*): Self = StObject.set(x, "auto_trigger_checks", js.Array(value :_*))
+    inline def setAuto_trigger_checksVarargs(value: Appid*): Self = StObject.set(x, "auto_trigger_checks", js.Array(value :_*))
   }
 }

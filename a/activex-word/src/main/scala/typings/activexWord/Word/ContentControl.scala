@@ -87,7 +87,7 @@ trait ContentControl extends StObject {
   
   def Ungroup(): Unit = js.native
   
-  @JSName("Word.ContentControl_typekey")
+  /* private */ @JSName("Word.ContentControl_typekey")
   var WordDotContentControl_typekey: ContentControl = js.native
   
   val XMLMapping: typings.activexWord.Word.XMLMapping = js.native

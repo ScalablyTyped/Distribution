@@ -23,19 +23,15 @@ trait AnimationOptions extends StObject {
 }
 object AnimationOptions {
   
-  @scala.inline
-  def apply(duration: Double, easingFunction: EasingFunction): AnimationOptions = {
+  inline def apply(duration: Double, easingFunction: EasingFunction): AnimationOptions = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easingFunction = easingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
   
-  @scala.inline
-  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
+    inline def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
   }
 }

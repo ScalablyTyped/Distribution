@@ -112,14 +112,11 @@ object BugReporting {
     /* 1 */ val emailFieldOptional: typings.instabugReactnative.mod.BugReporting.invocationOptions.emailFieldOptional & Double = js.native
   }
   
-  @scala.inline
-  def onInvokeHandler(handler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onInvokeHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onInvokeHandler(handler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onInvokeHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def onReportSubmitHandler(preSendingHandler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onReportSubmitHandler")(preSendingHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onReportSubmitHandler(preSendingHandler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onReportSubmitHandler")(preSendingHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def onSDKDismissedHandler(handler: js.Function2[/* dismiss */ dismissType, /* report */ reportType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSDKDismissedHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onSDKDismissedHandler(handler: js.Function2[/* dismiss */ dismissType, /* report */ reportType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSDKDismissedHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   sealed trait option extends StObject
@@ -183,42 +180,29 @@ object BugReporting {
     /* 2 */ val question: typings.instabugReactnative.mod.BugReporting.reportType.question & Double = js.native
   }
   
-  @scala.inline
-  def setAutoScreenRecordingEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoScreenRecordingEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAutoScreenRecordingEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoScreenRecordingEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDidSelectPromptOptionHandler(didSelectPromptOptionHandler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDidSelectPromptOptionHandler")(didSelectPromptOptionHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDidSelectPromptOptionHandler(didSelectPromptOptionHandler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDidSelectPromptOptionHandler")(didSelectPromptOptionHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setExtendedBugReportMode(extendedBugReportMode: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExtendedBugReportMode")(extendedBugReportMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setExtendedBugReportMode(extendedBugReportMode: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExtendedBugReportMode")(extendedBugReportMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setInvocationEvents(invocationEvents: js.Array[typings.instabugReactnative.mod.BugReporting.invocationEvent]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInvocationEvents")(invocationEvents.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setInvocationEvents(invocationEvents: js.Array[typings.instabugReactnative.mod.BugReporting.invocationEvent]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInvocationEvents")(invocationEvents.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setInvocationOptions(invocationOptions: js.Array[typings.instabugReactnative.mod.BugReporting.invocationOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInvocationOptions")(invocationOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setInvocationOptions(invocationOptions: js.Array[typings.instabugReactnative.mod.BugReporting.invocationOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInvocationOptions")(invocationOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setReportTypes(types: js.Array[reportType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setReportTypes")(types.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setReportTypes(types: js.Array[reportType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setReportTypes")(types.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setShakingThresholdForAndroid(androidThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForAndroid")(androidThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShakingThresholdForAndroid(androidThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForAndroid")(androidThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setShakingThresholdForiPad(iPadShakingThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForiPad")(iPadShakingThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShakingThresholdForiPad(iPadShakingThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForiPad")(iPadShakingThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setShakingThresholdForiPhone(iPhoneShakingThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForiPhone")(iPhoneShakingThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShakingThresholdForiPhone(iPhoneShakingThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForiPhone")(iPhoneShakingThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setViewHierarchyEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setViewHierarchyEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setViewHierarchyEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setViewHierarchyEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def show(`type`: reportType, options: js.Array[option]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def show(`type`: reportType, options: js.Array[option]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def showWithOptions(`type`: reportType, options: js.Array[option]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showWithOptions")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showWithOptions(`type`: reportType, options: js.Array[option]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showWithOptions")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

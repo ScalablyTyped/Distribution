@@ -19,11 +19,11 @@ object reorderGroupMod {
     extends StObject
        with ComponentInterface {
     
-    var autoscroll: js.Any = js.native
+    /* private */ var autoscroll: js.Any = js.native
     
-    var cachedHeights: js.Any = js.native
+    /* private */ var cachedHeights: js.Any = js.native
     
-    var canStart: js.Any = js.native
+    /* private */ var canStart: js.Any = js.native
     
     /**
       * Completes the reorder operation. Must be called by the `ionItemReorder` event.
@@ -42,14 +42,14 @@ object reorderGroupMod {
     def complete(listOrReorder: js.Array[js.Any]): js.Promise[js.Any] = js.native
     def complete(listOrReorder: Boolean): js.Promise[js.Any] = js.native
     
-    var completeSync: js.Any = js.native
+    /* private */ var completeSync: js.Any = js.native
     
     @JSName("connectedCallback")
     def connectedCallback_MReorderGroup(): js.Promise[Unit] = js.native
     
-    var containerBottom: js.Any = js.native
+    /* private */ var containerBottom: js.Any = js.native
     
-    var containerTop: js.Any = js.native
+    /* private */ var containerTop: js.Any = js.native
     
     /**
       * If `true`, the reorder will be hidden.
@@ -63,7 +63,7 @@ object reorderGroupMod {
     
     var el: HTMLElement = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
     /**
       * Event that needs to be listened to in order to complete the reorder action.
@@ -72,33 +72,33 @@ object reorderGroupMod {
       */
     var ionItemReorder: EventEmitter[ItemReorderEventDetail] = js.native
     
-    var itemIndexForTop: js.Any = js.native
+    /* private */ var itemIndexForTop: js.Any = js.native
     
-    var lastToIndex: js.Any = js.native
+    /* private */ var lastToIndex: js.Any = js.native
     
-    var onEnd: js.Any = js.native
+    /* private */ var onEnd: js.Any = js.native
     
-    var onMove: js.Any = js.native
+    /* private */ var onMove: js.Any = js.native
     
-    var onStart: js.Any = js.native
+    /* private */ var onStart: js.Any = js.native
     
     @JSName("render")
     def render_MReorderGroup(): js.Any = js.native
     
     /********* DOM WRITE ********* */
-    var reorderMove: js.Any = js.native
+    /* private */ var reorderMove: js.Any = js.native
     
-    var scrollEl: js.Any = js.native
+    /* private */ var scrollEl: js.Any = js.native
     
-    var scrollElBottom: js.Any = js.native
+    /* private */ var scrollElBottom: js.Any = js.native
     
-    var scrollElInitial: js.Any = js.native
+    /* private */ var scrollElInitial: js.Any = js.native
     
-    var scrollElTop: js.Any = js.native
+    /* private */ var scrollElTop: js.Any = js.native
     
-    var selectedItemEl: js.Any = js.native
+    /* private */ var selectedItemEl: js.Any = js.native
     
-    var selectedItemHeight: js.Any = js.native
+    /* private */ var selectedItemHeight: js.Any = js.native
     
     var state: ReorderGroupState = js.native
   }
@@ -111,13 +111,10 @@ object reorderGroupMod {
   trait ReorderGroupState extends StObject
   object ReorderGroupState {
     
-    @scala.inline
-    def Active: `1` = 1.asInstanceOf[`1`]
+    inline def Active: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Complete: `2` = 2.asInstanceOf[`2`]
+    inline def Complete: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Idle: `0` = 0.asInstanceOf[`0`]
+    inline def Idle: `0` = 0.asInstanceOf[`0`]
   }
 }

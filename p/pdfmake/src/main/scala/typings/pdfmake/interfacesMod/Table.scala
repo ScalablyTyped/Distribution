@@ -24,64 +24,45 @@ trait Table extends StObject {
 }
 object Table {
   
-  @scala.inline
-  def apply(body: js.Array[js.Array[TableCell]]): Table = {
+  inline def apply(body: js.Array[js.Array[TableCell]]): Table = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
   
-  @scala.inline
-  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+  extension [Self <: Table](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[js.Array[TableCell]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[js.Array[TableCell]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: js.Array[TableCell]*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: js.Array[TableCell]*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setDontBreakRows(value: Boolean): Self = StObject.set(x, "dontBreakRows", value.asInstanceOf[js.Any])
+    inline def setDontBreakRows(value: Boolean): Self = StObject.set(x, "dontBreakRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDontBreakRowsUndefined: Self = StObject.set(x, "dontBreakRows", js.undefined)
+    inline def setDontBreakRowsUndefined: Self = StObject.set(x, "dontBreakRows", js.undefined)
     
-    @scala.inline
-    def setHeaderRows(value: Double): Self = StObject.set(x, "headerRows", value.asInstanceOf[js.Any])
+    inline def setHeaderRows(value: Double): Self = StObject.set(x, "headerRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRowsUndefined: Self = StObject.set(x, "headerRows", js.undefined)
+    inline def setHeaderRowsUndefined: Self = StObject.set(x, "headerRows", js.undefined)
     
-    @scala.inline
-    def setHeights(value: Double | js.Array[Double] | DynamicRowSize): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
+    inline def setHeights(value: Double | js.Array[Double] | DynamicRowSize): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightsFunction1(value: /* row */ Double => Double | auto): Self = StObject.set(x, "heights", js.Any.fromFunction1(value))
+    inline def setHeightsFunction1(value: /* row */ Double => Double | auto): Self = StObject.set(x, "heights", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
+    inline def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
     
-    @scala.inline
-    def setHeightsVarargs(value: Double*): Self = StObject.set(x, "heights", js.Array(value :_*))
+    inline def setHeightsVarargs(value: Double*): Self = StObject.set(x, "heights", js.Array(value :_*))
     
-    @scala.inline
-    def setKeepWithHeaderRows(value: Double): Self = StObject.set(x, "keepWithHeaderRows", value.asInstanceOf[js.Any])
+    inline def setKeepWithHeaderRows(value: Double): Self = StObject.set(x, "keepWithHeaderRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepWithHeaderRowsUndefined: Self = StObject.set(x, "keepWithHeaderRows", js.undefined)
+    inline def setKeepWithHeaderRowsUndefined: Self = StObject.set(x, "keepWithHeaderRows", js.undefined)
     
-    @scala.inline
-    def setLayout(value: TableLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: TableLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setWidths(value: Asterisk | auto | js.Array[Size]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+    inline def setWidths(value: Asterisk | auto | js.Array[Size]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+    inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
     
-    @scala.inline
-    def setWidthsVarargs(value: Size*): Self = StObject.set(x, "widths", js.Array(value :_*))
+    inline def setWidthsVarargs(value: Size*): Self = StObject.set(x, "widths", js.Array(value :_*))
   }
 }

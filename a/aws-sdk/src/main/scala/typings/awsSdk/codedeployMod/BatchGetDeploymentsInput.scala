@@ -13,19 +13,15 @@ trait BatchGetDeploymentsInput extends StObject {
 }
 object BatchGetDeploymentsInput {
   
-  @scala.inline
-  def apply(deploymentIds: DeploymentsList): BatchGetDeploymentsInput = {
+  inline def apply(deploymentIds: DeploymentsList): BatchGetDeploymentsInput = {
     val __obj = js.Dynamic.literal(deploymentIds = deploymentIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetDeploymentsInput]
   }
   
-  @scala.inline
-  implicit class BatchGetDeploymentsInputMutableBuilder[Self <: BatchGetDeploymentsInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetDeploymentsInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentIds(value: DeploymentsList): Self = StObject.set(x, "deploymentIds", value.asInstanceOf[js.Any])
+    inline def setDeploymentIds(value: DeploymentsList): Self = StObject.set(x, "deploymentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdsVarargs(value: DeploymentId*): Self = StObject.set(x, "deploymentIds", js.Array(value :_*))
+    inline def setDeploymentIdsVarargs(value: DeploymentId*): Self = StObject.set(x, "deploymentIds", js.Array(value :_*))
   }
 }

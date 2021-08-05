@@ -45,6 +45,5 @@ trait UIManager extends StObject {
 }
 object UIManager {
   
-  @scala.inline
-  def apply: UIManager = ^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[UIManager]
+  inline def apply: UIManager = ^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[UIManager]
 }

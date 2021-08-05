@@ -20,46 +20,33 @@ trait EnterpriseProjectIntegration
 }
 object EnterpriseProjectIntegration {
   
-  @scala.inline
-  def apply(): EnterpriseProjectIntegration = {
+  inline def apply(): EnterpriseProjectIntegration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnterpriseProjectIntegration]
   }
   
-  @scala.inline
-  implicit class EnterpriseProjectIntegrationMutableBuilder[Self <: EnterpriseProjectIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseProjectIntegration](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: Double): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: Double): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setOrgId(value: String): Self = StObject.set(x, "orgId", value.asInstanceOf[js.Any])
+    inline def setOrgId(value: String): Self = StObject.set(x, "orgId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgIdUndefined: Self = StObject.set(x, "orgId", js.undefined)
+    inline def setOrgIdUndefined: Self = StObject.set(x, "orgId", js.undefined)
     
-    @scala.inline
-    def setProductKey(value: String): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
+    inline def setProductKey(value: String): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
+    inline def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
     
-    @scala.inline
-    def setRegistries(value: js.Array[String]): Self = StObject.set(x, "registries", value.asInstanceOf[js.Any])
+    inline def setRegistries(value: js.Array[String]): Self = StObject.set(x, "registries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistriesUndefined: Self = StObject.set(x, "registries", js.undefined)
+    inline def setRegistriesUndefined: Self = StObject.set(x, "registries", js.undefined)
     
-    @scala.inline
-    def setRegistriesVarargs(value: String*): Self = StObject.set(x, "registries", js.Array(value :_*))
+    inline def setRegistriesVarargs(value: String*): Self = StObject.set(x, "registries", js.Array(value :_*))
   }
 }

@@ -25,26 +25,20 @@ object typesMod {
   }
   object SegmentDetail {
     
-    @scala.inline
-    def apply(index: Double, selected: Boolean): SegmentDetail = {
+    inline def apply(index: Double, selected: Boolean): SegmentDetail = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[SegmentDetail]
     }
     
-    @scala.inline
-    implicit class SegmentDetailMutableBuilder[Self <: SegmentDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentDetail](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+      inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+      inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

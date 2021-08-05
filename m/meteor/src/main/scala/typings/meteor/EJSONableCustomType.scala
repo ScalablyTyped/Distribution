@@ -18,31 +18,23 @@ trait EJSONableCustomType extends StObject {
 }
 object EJSONableCustomType {
   
-  @scala.inline
-  def apply(toJSONValue: () => JSONable, typeName: () => String): EJSONableCustomType = {
+  inline def apply(toJSONValue: () => JSONable, typeName: () => String): EJSONableCustomType = {
     val __obj = js.Dynamic.literal(toJSONValue = js.Any.fromFunction0(toJSONValue), typeName = js.Any.fromFunction0(typeName))
     __obj.asInstanceOf[EJSONableCustomType]
   }
   
-  @scala.inline
-  implicit class EJSONableCustomTypeMutableBuilder[Self <: EJSONableCustomType] (val x: Self) extends AnyVal {
+  extension [Self <: EJSONableCustomType](x: Self) {
     
-    @scala.inline
-    def setClone_(value: () => EJSONableCustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
+    inline def setClone_(value: () => EJSONableCustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    @scala.inline
-    def setEquals_(value: /* other */ js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: /* other */ js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+    inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
-    @scala.inline
-    def setToJSONValue(value: () => JSONable): Self = StObject.set(x, "toJSONValue", js.Any.fromFunction0(value))
+    inline def setToJSONValue(value: () => JSONable): Self = StObject.set(x, "toJSONValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTypeName(value: () => String): Self = StObject.set(x, "typeName", js.Any.fromFunction0(value))
+    inline def setTypeName(value: () => String): Self = StObject.set(x, "typeName", js.Any.fromFunction0(value))
   }
 }

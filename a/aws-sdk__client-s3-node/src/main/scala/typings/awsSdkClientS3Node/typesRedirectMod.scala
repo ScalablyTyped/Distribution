@@ -37,44 +37,32 @@ object typesRedirectMod {
   }
   object Redirect {
     
-    @scala.inline
-    def apply(): Redirect = {
+    inline def apply(): Redirect = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Redirect]
     }
     
-    @scala.inline
-    implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
+    extension [Self <: Redirect](x: Self) {
       
-      @scala.inline
-      def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
+      inline def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNameUndefined: Self = StObject.set(x, "HostName", js.undefined)
+      inline def setHostNameUndefined: Self = StObject.set(x, "HostName", js.undefined)
       
-      @scala.inline
-      def setHttpRedirectCode(value: String): Self = StObject.set(x, "HttpRedirectCode", value.asInstanceOf[js.Any])
+      inline def setHttpRedirectCode(value: String): Self = StObject.set(x, "HttpRedirectCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpRedirectCodeUndefined: Self = StObject.set(x, "HttpRedirectCode", js.undefined)
+      inline def setHttpRedirectCodeUndefined: Self = StObject.set(x, "HttpRedirectCode", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: http | https | String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: http | https | String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
       
-      @scala.inline
-      def setReplaceKeyPrefixWith(value: String): Self = StObject.set(x, "ReplaceKeyPrefixWith", value.asInstanceOf[js.Any])
+      inline def setReplaceKeyPrefixWith(value: String): Self = StObject.set(x, "ReplaceKeyPrefixWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceKeyPrefixWithUndefined: Self = StObject.set(x, "ReplaceKeyPrefixWith", js.undefined)
+      inline def setReplaceKeyPrefixWithUndefined: Self = StObject.set(x, "ReplaceKeyPrefixWith", js.undefined)
       
-      @scala.inline
-      def setReplaceKeyWith(value: String): Self = StObject.set(x, "ReplaceKeyWith", value.asInstanceOf[js.Any])
+      inline def setReplaceKeyWith(value: String): Self = StObject.set(x, "ReplaceKeyWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceKeyWithUndefined: Self = StObject.set(x, "ReplaceKeyWith", js.undefined)
+      inline def setReplaceKeyWithUndefined: Self = StObject.set(x, "ReplaceKeyWith", js.undefined)
     }
   }
   

@@ -312,17 +312,14 @@ object najaMod {
   }
   object Extension {
     
-    @scala.inline
-    def apply(initialize: Naja => Unit): Extension = {
+    inline def apply(initialize: Naja => Unit): Extension = {
       val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize))
       __obj.asInstanceOf[Extension]
     }
     
-    @scala.inline
-    implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
+    extension [Self <: Extension](x: Self) {
       
-      @scala.inline
-      def setInitialize(value: Naja => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: Naja => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     }
   }
   
@@ -346,8 +343,7 @@ object najaMod {
   }
   object NajaEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: AbortEvent,
       before: BeforeEvent,
       complete: CompleteEvent,
@@ -360,29 +356,21 @@ object najaMod {
       __obj.asInstanceOf[NajaEventMap]
     }
     
-    @scala.inline
-    implicit class NajaEventMapMutableBuilder[Self <: NajaEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: NajaEventMap](x: Self) {
       
-      @scala.inline
-      def setAbort(value: AbortEvent): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+      inline def setAbort(value: AbortEvent): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: BeforeEvent): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: BeforeEvent): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplete(value: CompleteEvent): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: CompleteEvent): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(value: InitEvent): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: InitEvent): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: StartEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: StartEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: SuccessEvent): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: SuccessEvent): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -394,20 +382,16 @@ object najaMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFetch(value: RequestInit): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: RequestInit): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
     }
   }
   
@@ -425,38 +409,28 @@ object najaMod {
   }
   object Payload {
     
-    @scala.inline
-    def apply(): Payload = {
+    inline def apply(): Payload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setPostGet(value: Boolean): Self = StObject.set(x, "postGet", value.asInstanceOf[js.Any])
+      inline def setPostGet(value: Boolean): Self = StObject.set(x, "postGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostGetUndefined: Self = StObject.set(x, "postGet", js.undefined)
+      inline def setPostGetUndefined: Self = StObject.set(x, "postGet", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setSnippets(value: StringDictionary[String]): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
+      inline def setSnippets(value: StringDictionary[String]): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnippetsUndefined: Self = StObject.set(x, "snippets", js.undefined)
+      inline def setSnippetsUndefined: Self = StObject.set(x, "snippets", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

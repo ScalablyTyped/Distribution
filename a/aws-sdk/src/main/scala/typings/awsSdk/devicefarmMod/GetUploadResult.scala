@@ -13,19 +13,15 @@ trait GetUploadResult extends StObject {
 }
 object GetUploadResult {
   
-  @scala.inline
-  def apply(): GetUploadResult = {
+  inline def apply(): GetUploadResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUploadResult]
   }
   
-  @scala.inline
-  implicit class GetUploadResultMutableBuilder[Self <: GetUploadResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetUploadResult](x: Self) {
     
-    @scala.inline
-    def setUpload(value: Upload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: Upload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

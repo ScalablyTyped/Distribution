@@ -17,22 +17,17 @@ trait OnBackgroundFetchDataCallbackResult extends StObject {
 }
 object OnBackgroundFetchDataCallbackResult {
   
-  @scala.inline
-  def apply(fetchType: String, fetchedData: String, timeStamp: Double): OnBackgroundFetchDataCallbackResult = {
+  inline def apply(fetchType: String, fetchedData: String, timeStamp: Double): OnBackgroundFetchDataCallbackResult = {
     val __obj = js.Dynamic.literal(fetchType = fetchType.asInstanceOf[js.Any], fetchedData = fetchedData.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBackgroundFetchDataCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnBackgroundFetchDataCallbackResultMutableBuilder[Self <: OnBackgroundFetchDataCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnBackgroundFetchDataCallbackResult](x: Self) {
     
-    @scala.inline
-    def setFetchType(value: String): Self = StObject.set(x, "fetchType", value.asInstanceOf[js.Any])
+    inline def setFetchType(value: String): Self = StObject.set(x, "fetchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchedData(value: String): Self = StObject.set(x, "fetchedData", value.asInstanceOf[js.Any])
+    inline def setFetchedData(value: String): Self = StObject.set(x, "fetchedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

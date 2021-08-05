@@ -12,16 +12,13 @@ trait RequiredParams
 }
 object RequiredParams {
   
-  @scala.inline
-  def apply(missingProperty: String): RequiredParams = {
+  inline def apply(missingProperty: String): RequiredParams = {
     val __obj = js.Dynamic.literal(missingProperty = missingProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredParams]
   }
   
-  @scala.inline
-  implicit class RequiredParamsMutableBuilder[Self <: RequiredParams] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredParams](x: Self) {
     
-    @scala.inline
-    def setMissingProperty(value: String): Self = StObject.set(x, "missingProperty", value.asInstanceOf[js.Any])
+    inline def setMissingProperty(value: String): Self = StObject.set(x, "missingProperty", value.asInstanceOf[js.Any])
   }
 }

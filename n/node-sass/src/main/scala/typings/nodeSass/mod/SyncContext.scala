@@ -13,16 +13,13 @@ trait SyncContext
 }
 object SyncContext {
   
-  @scala.inline
-  def apply(callback: Unit, options: Options): SyncContext = {
+  inline def apply(callback: Unit, options: Options): SyncContext = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncContext]
   }
   
-  @scala.inline
-  implicit class SyncContextMutableBuilder[Self <: SyncContext] (val x: Self) extends AnyVal {
+  extension [Self <: SyncContext](x: Self) {
     
-    @scala.inline
-    def setCallback(value: Unit): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: Unit): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
   }
 }

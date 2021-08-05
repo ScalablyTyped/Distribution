@@ -10,8 +10,7 @@ trait PlayToSourceRequest
      with IPlayToSourceRequest
 object PlayToSourceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deadline: Date,
     displayErrorString: String => Unit,
     getDeferral: () => PlayToSourceDeferral,

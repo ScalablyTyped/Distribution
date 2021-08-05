@@ -40,8 +40,7 @@ trait opacityVisualVariableResult
 }
 object opacityVisualVariableResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authoringInfo: AuthoringInfo,
     constructor: js.Function,
     defaultValuesUsed: Boolean,
@@ -54,19 +53,14 @@ object opacityVisualVariableResult {
     __obj.asInstanceOf[opacityVisualVariableResult]
   }
   
-  @scala.inline
-  implicit class opacityVisualVariableResultMutableBuilder[Self <: opacityVisualVariableResult] (val x: Self) extends AnyVal {
+  extension [Self <: opacityVisualVariableResult](x: Self) {
     
-    @scala.inline
-    def setAuthoringInfo(value: AuthoringInfo): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
+    inline def setAuthoringInfo(value: AuthoringInfo): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
+    inline def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariable(value: OpacityVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
+    inline def setVisualVariable(value: OpacityVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
   }
 }

@@ -89,8 +89,7 @@ object serviceMod {
   }
   object Service {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       custom: Custom,
       getAllEventsInFunction: String => js.Array[Event],
       getAllFunctions: () => js.Array[String],
@@ -109,47 +108,33 @@ object serviceMod {
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAllEventsInFunction(value: String => js.Array[Event]): Self = StObject.set(x, "getAllEventsInFunction", js.Any.fromFunction1(value))
+      inline def setGetAllEventsInFunction(value: String => js.Array[Event]): Self = StObject.set(x, "getAllEventsInFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAllFunctions(value: () => js.Array[String]): Self = StObject.set(x, "getAllFunctions", js.Any.fromFunction0(value))
+      inline def setGetAllFunctions(value: () => js.Array[String]): Self = StObject.set(x, "getAllFunctions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllFunctionsNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllFunctionsNames", js.Any.fromFunction0(value))
+      inline def setGetAllFunctionsNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllFunctionsNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEventInFunction(value: (String, String) => Event): Self = StObject.set(x, "getEventInFunction", js.Any.fromFunction2(value))
+      inline def setGetEventInFunction(value: (String, String) => Event): Self = StObject.set(x, "getEventInFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetFunction(value: String => FunctionDefinition): Self = StObject.set(x, "getFunction", js.Any.fromFunction1(value))
+      inline def setGetFunction(value: String => FunctionDefinition): Self = StObject.set(x, "getFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
+      inline def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoad(value: js.Object => js.Promise[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: js.Object => js.Promise[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMergeResourceArrays(value: () => Unit): Self = StObject.set(x, "mergeResourceArrays", js.Any.fromFunction0(value))
+      inline def setMergeResourceArrays(value: () => Unit): Self = StObject.set(x, "mergeResourceArrays", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProvider(value: CompiledCloudFormationTemplate): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: CompiledCloudFormationTemplate): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFunctionNames(value: js.Object => Unit): Self = StObject.set(x, "setFunctionNames", js.Any.fromFunction1(value))
+      inline def setSetFunctionNames(value: js.Object => Unit): Self = StObject.set(x, "setFunctionNames", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: js.Object => js.Object): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: js.Object => js.Object): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidate(value: () => Service): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+      inline def setValidate(value: () => Service): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
   }
 }

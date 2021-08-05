@@ -21,8 +21,7 @@ object appBarNavMod {
        with AppBarColorInherit
   object AppBarNavProps {
     
-    @scala.inline
-    def apply(): AppBarNavProps = {
+    inline def apply(): AppBarNavProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppBarNavProps]
     }

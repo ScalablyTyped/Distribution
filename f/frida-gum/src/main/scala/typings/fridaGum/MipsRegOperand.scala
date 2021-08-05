@@ -15,20 +15,16 @@ trait MipsRegOperand
 }
 object MipsRegOperand {
   
-  @scala.inline
-  def apply(value: MipsRegister): MipsRegOperand = {
+  inline def apply(value: MipsRegister): MipsRegOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reg")
     __obj.asInstanceOf[MipsRegOperand]
   }
   
-  @scala.inline
-  implicit class MipsRegOperandMutableBuilder[Self <: MipsRegOperand] (val x: Self) extends AnyVal {
+  extension [Self <: MipsRegOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: reg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: reg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: MipsRegister): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MipsRegister): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

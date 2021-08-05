@@ -33,49 +33,35 @@ trait Datum extends StObject {
 }
 object Datum {
   
-  @scala.inline
-  def apply(): Datum = {
+  inline def apply(): Datum = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Datum]
   }
   
-  @scala.inline
-  implicit class DatumMutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
+  extension [Self <: Datum](x: Self) {
     
-    @scala.inline
-    def setArrayValue(value: DatumList): Self = StObject.set(x, "ArrayValue", value.asInstanceOf[js.Any])
+    inline def setArrayValue(value: DatumList): Self = StObject.set(x, "ArrayValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayValueUndefined: Self = StObject.set(x, "ArrayValue", js.undefined)
+    inline def setArrayValueUndefined: Self = StObject.set(x, "ArrayValue", js.undefined)
     
-    @scala.inline
-    def setArrayValueVarargs(value: Datum*): Self = StObject.set(x, "ArrayValue", js.Array(value :_*))
+    inline def setArrayValueVarargs(value: Datum*): Self = StObject.set(x, "ArrayValue", js.Array(value :_*))
     
-    @scala.inline
-    def setNullValue(value: NullableBoolean): Self = StObject.set(x, "NullValue", value.asInstanceOf[js.Any])
+    inline def setNullValue(value: NullableBoolean): Self = StObject.set(x, "NullValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullValueUndefined: Self = StObject.set(x, "NullValue", js.undefined)
+    inline def setNullValueUndefined: Self = StObject.set(x, "NullValue", js.undefined)
     
-    @scala.inline
-    def setRowValue(value: Row): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
+    inline def setRowValue(value: Row): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowValueUndefined: Self = StObject.set(x, "RowValue", js.undefined)
+    inline def setRowValueUndefined: Self = StObject.set(x, "RowValue", js.undefined)
     
-    @scala.inline
-    def setScalarValue(value: ScalarValue): Self = StObject.set(x, "ScalarValue", value.asInstanceOf[js.Any])
+    inline def setScalarValue(value: ScalarValue): Self = StObject.set(x, "ScalarValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalarValueUndefined: Self = StObject.set(x, "ScalarValue", js.undefined)
+    inline def setScalarValueUndefined: Self = StObject.set(x, "ScalarValue", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesValue(value: TimeSeriesDataPointList): Self = StObject.set(x, "TimeSeriesValue", value.asInstanceOf[js.Any])
+    inline def setTimeSeriesValue(value: TimeSeriesDataPointList): Self = StObject.set(x, "TimeSeriesValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesValueUndefined: Self = StObject.set(x, "TimeSeriesValue", js.undefined)
+    inline def setTimeSeriesValueUndefined: Self = StObject.set(x, "TimeSeriesValue", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesValueVarargs(value: TimeSeriesDataPoint*): Self = StObject.set(x, "TimeSeriesValue", js.Array(value :_*))
+    inline def setTimeSeriesValueVarargs(value: TimeSeriesDataPoint*): Self = StObject.set(x, "TimeSeriesValue", js.Array(value :_*))
   }
 }

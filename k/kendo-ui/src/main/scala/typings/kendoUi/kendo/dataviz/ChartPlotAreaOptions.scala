@@ -10,19 +10,15 @@ trait ChartPlotAreaOptions extends StObject {
 }
 object ChartPlotAreaOptions {
   
-  @scala.inline
-  def apply(): ChartPlotAreaOptions = {
+  inline def apply(): ChartPlotAreaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartPlotAreaOptions]
   }
   
-  @scala.inline
-  implicit class ChartPlotAreaOptionsMutableBuilder[Self <: ChartPlotAreaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartPlotAreaOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

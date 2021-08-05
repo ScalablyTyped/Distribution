@@ -16,8 +16,7 @@ object Syntax {
   }
   object EmptySyntaxList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
       collectTextElements: js.Array[String] => Unit,
@@ -46,14 +45,11 @@ object Syntax {
       __obj.asInstanceOf[EmptySyntaxList]
     }
     
-    @scala.inline
-    implicit class EmptySyntaxListMutableBuilder[Self <: EmptySyntaxList] (val x: Self) extends AnyVal {
+    extension [Self <: EmptySyntaxList](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (PositionedElement, Double, Double) => PositionedToken): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (PositionedElement, Double, Double) => PositionedToken): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     }
   }
   
@@ -61,11 +57,11 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    var _fullText: js.Any
+    /* private */ var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: js.Any
     
-    var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: js.Any
     
     /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
@@ -75,8 +71,7 @@ object Syntax {
   }
   object FixedWidthTokenWithLeadingAndTrailingTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fullText: js.Any,
       _leadingTriviaInfo: js.Any,
       _trailingTriviaInfo: js.Any,
@@ -128,26 +123,19 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithLeadingAndTrailingTrivia]
     }
     
-    @scala.inline
-    implicit class FixedWidthTokenWithLeadingAndTrailingTriviaMutableBuilder[Self <: FixedWidthTokenWithLeadingAndTrailingTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: FixedWidthTokenWithLeadingAndTrailingTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,9 +143,9 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    var _fullText: js.Any
+    /* private */ var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: js.Any
     
     /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
@@ -167,8 +155,7 @@ object Syntax {
   }
   object FixedWidthTokenWithLeadingTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fullText: js.Any,
       _leadingTriviaInfo: js.Any,
       accept: ISyntaxVisitor => js.Any,
@@ -219,23 +206,17 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithLeadingTrivia]
     }
     
-    @scala.inline
-    implicit class FixedWidthTokenWithLeadingTriviaMutableBuilder[Self <: FixedWidthTokenWithLeadingTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: FixedWidthTokenWithLeadingTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,8 +232,7 @@ object Syntax {
   }
   object FixedWidthTokenWithNoTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accept: ISyntaxVisitor => js.Any,
       childAt: Double => ISyntaxElement,
       childCount: () => Double,
@@ -301,17 +281,13 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithNoTrivia]
     }
     
-    @scala.inline
-    implicit class FixedWidthTokenWithNoTriviaMutableBuilder[Self <: FixedWidthTokenWithNoTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: FixedWidthTokenWithNoTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     }
   }
   
@@ -319,9 +295,9 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    var _fullText: js.Any
+    /* private */ var _fullText: js.Any
     
-    var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: js.Any
     
     /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
@@ -331,8 +307,7 @@ object Syntax {
   }
   object FixedWidthTokenWithTrailingTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fullText: js.Any,
       _trailingTriviaInfo: js.Any,
       accept: ISyntaxVisitor => js.Any,
@@ -383,23 +358,17 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithTrailingTrivia]
     }
     
-    @scala.inline
-    implicit class FixedWidthTokenWithTrailingTriviaMutableBuilder[Self <: FixedWidthTokenWithTrailingTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: FixedWidthTokenWithTrailingTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -804,8 +773,7 @@ object Syntax {
   }
   object IFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       argumentList: (TypeArgumentListSyntax, ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArgumentListSyntax,
       arrayLiteralExpression: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArrayLiteralExpressionSyntax,
       arrayType: (ITypeSyntax, ISyntaxToken, ISyntaxToken) => ArrayTypeSyntax,
@@ -896,315 +864,229 @@ object Syntax {
       __obj.asInstanceOf[IFactory]
     }
     
-    @scala.inline
-    implicit class IFactoryMutableBuilder[Self <: IFactory] (val x: Self) extends AnyVal {
+    extension [Self <: IFactory](x: Self) {
       
-      @scala.inline
-      def setArgumentList(
+      inline def setArgumentList(
         value: (TypeArgumentListSyntax, ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArgumentListSyntax
       ): Self = StObject.set(x, "argumentList", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setArrayLiteralExpression(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArrayLiteralExpressionSyntax): Self = StObject.set(x, "arrayLiteralExpression", js.Any.fromFunction3(value))
+      inline def setArrayLiteralExpression(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArrayLiteralExpressionSyntax): Self = StObject.set(x, "arrayLiteralExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setArrayType(value: (ITypeSyntax, ISyntaxToken, ISyntaxToken) => ArrayTypeSyntax): Self = StObject.set(x, "arrayType", js.Any.fromFunction3(value))
+      inline def setArrayType(value: (ITypeSyntax, ISyntaxToken, ISyntaxToken) => ArrayTypeSyntax): Self = StObject.set(x, "arrayType", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBinaryExpression(value: (SyntaxKind, IExpressionSyntax, ISyntaxToken, IExpressionSyntax) => BinaryExpressionSyntax): Self = StObject.set(x, "binaryExpression", js.Any.fromFunction4(value))
+      inline def setBinaryExpression(value: (SyntaxKind, IExpressionSyntax, ISyntaxToken, IExpressionSyntax) => BinaryExpressionSyntax): Self = StObject.set(x, "binaryExpression", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setBlock(value: (ISyntaxToken, ISyntaxList, ISyntaxToken) => BlockSyntax): Self = StObject.set(x, "block", js.Any.fromFunction3(value))
+      inline def setBlock(value: (ISyntaxToken, ISyntaxList, ISyntaxToken) => BlockSyntax): Self = StObject.set(x, "block", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBreakStatement(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken) => BreakStatementSyntax): Self = StObject.set(x, "breakStatement", js.Any.fromFunction3(value))
+      inline def setBreakStatement(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken) => BreakStatementSyntax): Self = StObject.set(x, "breakStatement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallSignature(value: (TypeParameterListSyntax, ParameterListSyntax, TypeAnnotationSyntax) => CallSignatureSyntax): Self = StObject.set(x, "callSignature", js.Any.fromFunction3(value))
+      inline def setCallSignature(value: (TypeParameterListSyntax, ParameterListSyntax, TypeAnnotationSyntax) => CallSignatureSyntax): Self = StObject.set(x, "callSignature", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCaseSwitchClause(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken, ISyntaxList) => CaseSwitchClauseSyntax): Self = StObject.set(x, "caseSwitchClause", js.Any.fromFunction4(value))
+      inline def setCaseSwitchClause(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken, ISyntaxList) => CaseSwitchClauseSyntax): Self = StObject.set(x, "caseSwitchClause", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCastExpression(value: (ISyntaxToken, ITypeSyntax, ISyntaxToken, IUnaryExpressionSyntax) => CastExpressionSyntax): Self = StObject.set(x, "castExpression", js.Any.fromFunction4(value))
+      inline def setCastExpression(value: (ISyntaxToken, ITypeSyntax, ISyntaxToken, IUnaryExpressionSyntax) => CastExpressionSyntax): Self = StObject.set(x, "castExpression", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCatchClause(
+      inline def setCatchClause(
         value: (ISyntaxToken, ISyntaxToken, ISyntaxToken, TypeAnnotationSyntax, ISyntaxToken, BlockSyntax) => CatchClauseSyntax
       ): Self = StObject.set(x, "catchClause", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setClassDeclaration(
+      inline def setClassDeclaration(
         value: (ISyntaxList, ISyntaxToken, ISyntaxToken, TypeParameterListSyntax, ISyntaxList, ISyntaxToken, ISyntaxList, ISyntaxToken) => ClassDeclarationSyntax
       ): Self = StObject.set(x, "classDeclaration", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setConditionalExpression(
+      inline def setConditionalExpression(
         value: (IExpressionSyntax, ISyntaxToken, IExpressionSyntax, ISyntaxToken, IExpressionSyntax) => ConditionalExpressionSyntax
       ): Self = StObject.set(x, "conditionalExpression", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setConstraint(value: (ISyntaxToken, ITypeSyntax) => ConstraintSyntax): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
+      inline def setConstraint(value: (ISyntaxToken, ITypeSyntax) => ConstraintSyntax): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConstructSignature(value: (ISyntaxToken, CallSignatureSyntax) => ConstructSignatureSyntax): Self = StObject.set(x, "constructSignature", js.Any.fromFunction2(value))
+      inline def setConstructSignature(value: (ISyntaxToken, CallSignatureSyntax) => ConstructSignatureSyntax): Self = StObject.set(x, "constructSignature", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConstructorDeclaration(
+      inline def setConstructorDeclaration(
         value: (ISyntaxList, ISyntaxToken, CallSignatureSyntax, BlockSyntax, ISyntaxToken) => ConstructorDeclarationSyntax
       ): Self = StObject.set(x, "constructorDeclaration", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setConstructorType(
+      inline def setConstructorType(
         value: (ISyntaxToken, TypeParameterListSyntax, ParameterListSyntax, ISyntaxToken, ITypeSyntax) => ConstructorTypeSyntax
       ): Self = StObject.set(x, "constructorType", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setContinueStatement(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken) => ContinueStatementSyntax): Self = StObject.set(x, "continueStatement", js.Any.fromFunction3(value))
+      inline def setContinueStatement(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken) => ContinueStatementSyntax): Self = StObject.set(x, "continueStatement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDebuggerStatement(value: (ISyntaxToken, ISyntaxToken) => DebuggerStatementSyntax): Self = StObject.set(x, "debuggerStatement", js.Any.fromFunction2(value))
+      inline def setDebuggerStatement(value: (ISyntaxToken, ISyntaxToken) => DebuggerStatementSyntax): Self = StObject.set(x, "debuggerStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDefaultSwitchClause(value: (ISyntaxToken, ISyntaxToken, ISyntaxList) => DefaultSwitchClauseSyntax): Self = StObject.set(x, "defaultSwitchClause", js.Any.fromFunction3(value))
+      inline def setDefaultSwitchClause(value: (ISyntaxToken, ISyntaxToken, ISyntaxList) => DefaultSwitchClauseSyntax): Self = StObject.set(x, "defaultSwitchClause", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDeleteExpression(value: (ISyntaxToken, IUnaryExpressionSyntax) => DeleteExpressionSyntax): Self = StObject.set(x, "deleteExpression", js.Any.fromFunction2(value))
+      inline def setDeleteExpression(value: (ISyntaxToken, IUnaryExpressionSyntax) => DeleteExpressionSyntax): Self = StObject.set(x, "deleteExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDoStatement(
+      inline def setDoStatement(
         value: (ISyntaxToken, IStatementSyntax, ISyntaxToken, ISyntaxToken, IExpressionSyntax, ISyntaxToken, ISyntaxToken) => DoStatementSyntax
       ): Self = StObject.set(x, "doStatement", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setElementAccessExpression(
+      inline def setElementAccessExpression(
         value: (IExpressionSyntax, ISyntaxToken, IExpressionSyntax, ISyntaxToken) => ElementAccessExpressionSyntax
       ): Self = StObject.set(x, "elementAccessExpression", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setElseClause(value: (ISyntaxToken, IStatementSyntax) => ElseClauseSyntax): Self = StObject.set(x, "elseClause", js.Any.fromFunction2(value))
+      inline def setElseClause(value: (ISyntaxToken, IStatementSyntax) => ElseClauseSyntax): Self = StObject.set(x, "elseClause", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmptyStatement(value: ISyntaxToken => EmptyStatementSyntax): Self = StObject.set(x, "emptyStatement", js.Any.fromFunction1(value))
+      inline def setEmptyStatement(value: ISyntaxToken => EmptyStatementSyntax): Self = StObject.set(x, "emptyStatement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnumDeclaration(
+      inline def setEnumDeclaration(
         value: (ISyntaxList, ISyntaxToken, ISyntaxToken, ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => EnumDeclarationSyntax
       ): Self = StObject.set(x, "enumDeclaration", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setEnumElement(value: (ISyntaxToken, EqualsValueClauseSyntax) => EnumElementSyntax): Self = StObject.set(x, "enumElement", js.Any.fromFunction2(value))
+      inline def setEnumElement(value: (ISyntaxToken, EqualsValueClauseSyntax) => EnumElementSyntax): Self = StObject.set(x, "enumElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEqualsValueClause(value: (ISyntaxToken, IExpressionSyntax) => EqualsValueClauseSyntax): Self = StObject.set(x, "equalsValueClause", js.Any.fromFunction2(value))
+      inline def setEqualsValueClause(value: (ISyntaxToken, IExpressionSyntax) => EqualsValueClauseSyntax): Self = StObject.set(x, "equalsValueClause", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExportAssignment(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken, ISyntaxToken) => ExportAssignmentSyntax): Self = StObject.set(x, "exportAssignment", js.Any.fromFunction4(value))
+      inline def setExportAssignment(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken, ISyntaxToken) => ExportAssignmentSyntax): Self = StObject.set(x, "exportAssignment", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setExpressionStatement(value: (IExpressionSyntax, ISyntaxToken) => ExpressionStatementSyntax): Self = StObject.set(x, "expressionStatement", js.Any.fromFunction2(value))
+      inline def setExpressionStatement(value: (IExpressionSyntax, ISyntaxToken) => ExpressionStatementSyntax): Self = StObject.set(x, "expressionStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExternalModuleReference(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken, ISyntaxToken) => ExternalModuleReferenceSyntax): Self = StObject.set(x, "externalModuleReference", js.Any.fromFunction4(value))
+      inline def setExternalModuleReference(value: (ISyntaxToken, ISyntaxToken, ISyntaxToken, ISyntaxToken) => ExternalModuleReferenceSyntax): Self = StObject.set(x, "externalModuleReference", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFinallyClause(value: (ISyntaxToken, BlockSyntax) => FinallyClauseSyntax): Self = StObject.set(x, "finallyClause", js.Any.fromFunction2(value))
+      inline def setFinallyClause(value: (ISyntaxToken, BlockSyntax) => FinallyClauseSyntax): Self = StObject.set(x, "finallyClause", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForInStatement(
+      inline def setForInStatement(
         value: (ISyntaxToken, ISyntaxToken, VariableDeclarationSyntax, IExpressionSyntax, ISyntaxToken, IExpressionSyntax, ISyntaxToken, IStatementSyntax) => ForInStatementSyntax
       ): Self = StObject.set(x, "forInStatement", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setForStatement(
+      inline def setForStatement(
         value: (ISyntaxToken, ISyntaxToken, VariableDeclarationSyntax, IExpressionSyntax, ISyntaxToken, IExpressionSyntax, ISyntaxToken, IExpressionSyntax, ISyntaxToken, IStatementSyntax) => ForStatementSyntax
       ): Self = StObject.set(x, "forStatement", js.Any.fromFunction10(value))
       
-      @scala.inline
-      def setFunctionDeclaration(
+      inline def setFunctionDeclaration(
         value: (ISyntaxList, ISyntaxToken, ISyntaxToken, CallSignatureSyntax, BlockSyntax, ISyntaxToken) => FunctionDeclarationSyntax
       ): Self = StObject.set(x, "functionDeclaration", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setFunctionExpression(value: (ISyntaxToken, ISyntaxToken, CallSignatureSyntax, BlockSyntax) => FunctionExpressionSyntax): Self = StObject.set(x, "functionExpression", js.Any.fromFunction4(value))
+      inline def setFunctionExpression(value: (ISyntaxToken, ISyntaxToken, CallSignatureSyntax, BlockSyntax) => FunctionExpressionSyntax): Self = StObject.set(x, "functionExpression", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFunctionPropertyAssignment(value: (ISyntaxToken, CallSignatureSyntax, BlockSyntax) => FunctionPropertyAssignmentSyntax): Self = StObject.set(x, "functionPropertyAssignment", js.Any.fromFunction3(value))
+      inline def setFunctionPropertyAssignment(value: (ISyntaxToken, CallSignatureSyntax, BlockSyntax) => FunctionPropertyAssignmentSyntax): Self = StObject.set(x, "functionPropertyAssignment", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFunctionType(
+      inline def setFunctionType(
         value: (TypeParameterListSyntax, ParameterListSyntax, ISyntaxToken, ITypeSyntax) => FunctionTypeSyntax
       ): Self = StObject.set(x, "functionType", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGenericType(value: (INameSyntax, TypeArgumentListSyntax) => GenericTypeSyntax): Self = StObject.set(x, "genericType", js.Any.fromFunction2(value))
+      inline def setGenericType(value: (INameSyntax, TypeArgumentListSyntax) => GenericTypeSyntax): Self = StObject.set(x, "genericType", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAccessor(
+      inline def setGetAccessor(
         value: (ISyntaxList, ISyntaxToken, ISyntaxToken, ParameterListSyntax, TypeAnnotationSyntax, BlockSyntax) => GetAccessorSyntax
       ): Self = StObject.set(x, "getAccessor", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setHeritageClause(value: (SyntaxKind, ISyntaxToken, ISeparatedSyntaxList) => HeritageClauseSyntax): Self = StObject.set(x, "heritageClause", js.Any.fromFunction3(value))
+      inline def setHeritageClause(value: (SyntaxKind, ISyntaxToken, ISeparatedSyntaxList) => HeritageClauseSyntax): Self = StObject.set(x, "heritageClause", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIfStatement(
+      inline def setIfStatement(
         value: (ISyntaxToken, ISyntaxToken, IExpressionSyntax, ISyntaxToken, IStatementSyntax, ElseClauseSyntax) => IfStatementSyntax
       ): Self = StObject.set(x, "ifStatement", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setImportDeclaration(
+      inline def setImportDeclaration(
         value: (ISyntaxList, ISyntaxToken, ISyntaxToken, ISyntaxToken, IModuleReferenceSyntax, ISyntaxToken) => ImportDeclarationSyntax
       ): Self = StObject.set(x, "importDeclaration", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setIndexMemberDeclaration(value: (ISyntaxList, IndexSignatureSyntax, ISyntaxToken) => IndexMemberDeclarationSyntax): Self = StObject.set(x, "indexMemberDeclaration", js.Any.fromFunction3(value))
+      inline def setIndexMemberDeclaration(value: (ISyntaxList, IndexSignatureSyntax, ISyntaxToken) => IndexMemberDeclarationSyntax): Self = StObject.set(x, "indexMemberDeclaration", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIndexSignature(value: (ISyntaxToken, ParameterSyntax, ISyntaxToken, TypeAnnotationSyntax) => IndexSignatureSyntax): Self = StObject.set(x, "indexSignature", js.Any.fromFunction4(value))
+      inline def setIndexSignature(value: (ISyntaxToken, ParameterSyntax, ISyntaxToken, TypeAnnotationSyntax) => IndexSignatureSyntax): Self = StObject.set(x, "indexSignature", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setInterfaceDeclaration(
+      inline def setInterfaceDeclaration(
         value: (ISyntaxList, ISyntaxToken, ISyntaxToken, TypeParameterListSyntax, ISyntaxList, ObjectTypeSyntax) => InterfaceDeclarationSyntax
       ): Self = StObject.set(x, "interfaceDeclaration", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setInvocationExpression(value: (IMemberExpressionSyntax, ArgumentListSyntax) => InvocationExpressionSyntax): Self = StObject.set(x, "invocationExpression", js.Any.fromFunction2(value))
+      inline def setInvocationExpression(value: (IMemberExpressionSyntax, ArgumentListSyntax) => InvocationExpressionSyntax): Self = StObject.set(x, "invocationExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLabeledStatement(value: (ISyntaxToken, ISyntaxToken, IStatementSyntax) => LabeledStatementSyntax): Self = StObject.set(x, "labeledStatement", js.Any.fromFunction3(value))
+      inline def setLabeledStatement(value: (ISyntaxToken, ISyntaxToken, IStatementSyntax) => LabeledStatementSyntax): Self = StObject.set(x, "labeledStatement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMemberAccessExpression(value: (IExpressionSyntax, ISyntaxToken, ISyntaxToken) => MemberAccessExpressionSyntax): Self = StObject.set(x, "memberAccessExpression", js.Any.fromFunction3(value))
+      inline def setMemberAccessExpression(value: (IExpressionSyntax, ISyntaxToken, ISyntaxToken) => MemberAccessExpressionSyntax): Self = StObject.set(x, "memberAccessExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMemberFunctionDeclaration(
+      inline def setMemberFunctionDeclaration(
         value: (ISyntaxList, ISyntaxToken, CallSignatureSyntax, BlockSyntax, ISyntaxToken) => MemberFunctionDeclarationSyntax
       ): Self = StObject.set(x, "memberFunctionDeclaration", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setMemberVariableDeclaration(value: (ISyntaxList, VariableDeclaratorSyntax, ISyntaxToken) => MemberVariableDeclarationSyntax): Self = StObject.set(x, "memberVariableDeclaration", js.Any.fromFunction3(value))
+      inline def setMemberVariableDeclaration(value: (ISyntaxList, VariableDeclaratorSyntax, ISyntaxToken) => MemberVariableDeclarationSyntax): Self = StObject.set(x, "memberVariableDeclaration", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMethodSignature(value: (ISyntaxToken, ISyntaxToken, CallSignatureSyntax) => MethodSignatureSyntax): Self = StObject.set(x, "methodSignature", js.Any.fromFunction3(value))
+      inline def setMethodSignature(value: (ISyntaxToken, ISyntaxToken, CallSignatureSyntax) => MethodSignatureSyntax): Self = StObject.set(x, "methodSignature", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setModuleDeclaration(
+      inline def setModuleDeclaration(
         value: (ISyntaxList, ISyntaxToken, INameSyntax, ISyntaxToken, ISyntaxToken, ISyntaxList, ISyntaxToken) => ModuleDeclarationSyntax
       ): Self = StObject.set(x, "moduleDeclaration", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setModuleNameModuleReference(value: INameSyntax => ModuleNameModuleReferenceSyntax): Self = StObject.set(x, "moduleNameModuleReference", js.Any.fromFunction1(value))
+      inline def setModuleNameModuleReference(value: INameSyntax => ModuleNameModuleReferenceSyntax): Self = StObject.set(x, "moduleNameModuleReference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObjectCreationExpression(
+      inline def setObjectCreationExpression(
         value: (ISyntaxToken, IMemberExpressionSyntax, ArgumentListSyntax) => ObjectCreationExpressionSyntax
       ): Self = StObject.set(x, "objectCreationExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setObjectLiteralExpression(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ObjectLiteralExpressionSyntax): Self = StObject.set(x, "objectLiteralExpression", js.Any.fromFunction3(value))
+      inline def setObjectLiteralExpression(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ObjectLiteralExpressionSyntax): Self = StObject.set(x, "objectLiteralExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setObjectType(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ObjectTypeSyntax): Self = StObject.set(x, "objectType", js.Any.fromFunction3(value))
+      inline def setObjectType(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ObjectTypeSyntax): Self = StObject.set(x, "objectType", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOmittedExpression(value: () => OmittedExpressionSyntax): Self = StObject.set(x, "omittedExpression", js.Any.fromFunction0(value))
+      inline def setOmittedExpression(value: () => OmittedExpressionSyntax): Self = StObject.set(x, "omittedExpression", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParameter(
+      inline def setParameter(
         value: (ISyntaxToken, ISyntaxList, ISyntaxToken, ISyntaxToken, TypeAnnotationSyntax, EqualsValueClauseSyntax) => ParameterSyntax
       ): Self = StObject.set(x, "parameter", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setParameterList(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ParameterListSyntax): Self = StObject.set(x, "parameterList", js.Any.fromFunction3(value))
+      inline def setParameterList(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ParameterListSyntax): Self = StObject.set(x, "parameterList", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setParenthesizedArrowFunctionExpression(
+      inline def setParenthesizedArrowFunctionExpression(
         value: (CallSignatureSyntax, ISyntaxToken, BlockSyntax, IExpressionSyntax) => ParenthesizedArrowFunctionExpressionSyntax
       ): Self = StObject.set(x, "parenthesizedArrowFunctionExpression", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setParenthesizedExpression(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken) => ParenthesizedExpressionSyntax): Self = StObject.set(x, "parenthesizedExpression", js.Any.fromFunction3(value))
+      inline def setParenthesizedExpression(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken) => ParenthesizedExpressionSyntax): Self = StObject.set(x, "parenthesizedExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostfixUnaryExpression(value: (SyntaxKind, IMemberExpressionSyntax, ISyntaxToken) => PostfixUnaryExpressionSyntax): Self = StObject.set(x, "postfixUnaryExpression", js.Any.fromFunction3(value))
+      inline def setPostfixUnaryExpression(value: (SyntaxKind, IMemberExpressionSyntax, ISyntaxToken) => PostfixUnaryExpressionSyntax): Self = StObject.set(x, "postfixUnaryExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPrefixUnaryExpression(value: (SyntaxKind, ISyntaxToken, IUnaryExpressionSyntax) => PrefixUnaryExpressionSyntax): Self = StObject.set(x, "prefixUnaryExpression", js.Any.fromFunction3(value))
+      inline def setPrefixUnaryExpression(value: (SyntaxKind, ISyntaxToken, IUnaryExpressionSyntax) => PrefixUnaryExpressionSyntax): Self = StObject.set(x, "prefixUnaryExpression", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPropertySignature(value: (ISyntaxToken, ISyntaxToken, TypeAnnotationSyntax) => PropertySignatureSyntax): Self = StObject.set(x, "propertySignature", js.Any.fromFunction3(value))
+      inline def setPropertySignature(value: (ISyntaxToken, ISyntaxToken, TypeAnnotationSyntax) => PropertySignatureSyntax): Self = StObject.set(x, "propertySignature", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQualifiedName(value: (INameSyntax, ISyntaxToken, ISyntaxToken) => QualifiedNameSyntax): Self = StObject.set(x, "qualifiedName", js.Any.fromFunction3(value))
+      inline def setQualifiedName(value: (INameSyntax, ISyntaxToken, ISyntaxToken) => QualifiedNameSyntax): Self = StObject.set(x, "qualifiedName", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReturnStatement(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken) => ReturnStatementSyntax): Self = StObject.set(x, "returnStatement", js.Any.fromFunction3(value))
+      inline def setReturnStatement(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken) => ReturnStatementSyntax): Self = StObject.set(x, "returnStatement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetAccessor(
+      inline def setSetAccessor(
         value: (ISyntaxList, ISyntaxToken, ISyntaxToken, ParameterListSyntax, BlockSyntax) => SetAccessorSyntax
       ): Self = StObject.set(x, "setAccessor", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setSimpleArrowFunctionExpression(
+      inline def setSimpleArrowFunctionExpression(
         value: (ISyntaxToken, ISyntaxToken, BlockSyntax, IExpressionSyntax) => SimpleArrowFunctionExpressionSyntax
       ): Self = StObject.set(x, "simpleArrowFunctionExpression", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSimplePropertyAssignment(value: (ISyntaxToken, ISyntaxToken, IExpressionSyntax) => SimplePropertyAssignmentSyntax): Self = StObject.set(x, "simplePropertyAssignment", js.Any.fromFunction3(value))
+      inline def setSimplePropertyAssignment(value: (ISyntaxToken, ISyntaxToken, IExpressionSyntax) => SimplePropertyAssignmentSyntax): Self = StObject.set(x, "simplePropertyAssignment", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSourceUnit(value: (ISyntaxList, ISyntaxToken) => SourceUnitSyntax): Self = StObject.set(x, "sourceUnit", js.Any.fromFunction2(value))
+      inline def setSourceUnit(value: (ISyntaxList, ISyntaxToken) => SourceUnitSyntax): Self = StObject.set(x, "sourceUnit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSwitchStatement(
+      inline def setSwitchStatement(
         value: (ISyntaxToken, ISyntaxToken, IExpressionSyntax, ISyntaxToken, ISyntaxToken, ISyntaxList, ISyntaxToken) => SwitchStatementSyntax
       ): Self = StObject.set(x, "switchStatement", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setThrowStatement(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken) => ThrowStatementSyntax): Self = StObject.set(x, "throwStatement", js.Any.fromFunction3(value))
+      inline def setThrowStatement(value: (ISyntaxToken, IExpressionSyntax, ISyntaxToken) => ThrowStatementSyntax): Self = StObject.set(x, "throwStatement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTryStatement(value: (ISyntaxToken, BlockSyntax, CatchClauseSyntax, FinallyClauseSyntax) => TryStatementSyntax): Self = StObject.set(x, "tryStatement", js.Any.fromFunction4(value))
+      inline def setTryStatement(value: (ISyntaxToken, BlockSyntax, CatchClauseSyntax, FinallyClauseSyntax) => TryStatementSyntax): Self = StObject.set(x, "tryStatement", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setTypeAnnotation(value: (ISyntaxToken, ITypeSyntax) => TypeAnnotationSyntax): Self = StObject.set(x, "typeAnnotation", js.Any.fromFunction2(value))
+      inline def setTypeAnnotation(value: (ISyntaxToken, ITypeSyntax) => TypeAnnotationSyntax): Self = StObject.set(x, "typeAnnotation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeArgumentList(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => TypeArgumentListSyntax): Self = StObject.set(x, "typeArgumentList", js.Any.fromFunction3(value))
+      inline def setTypeArgumentList(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => TypeArgumentListSyntax): Self = StObject.set(x, "typeArgumentList", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTypeOfExpression(value: (ISyntaxToken, IUnaryExpressionSyntax) => TypeOfExpressionSyntax): Self = StObject.set(x, "typeOfExpression", js.Any.fromFunction2(value))
+      inline def setTypeOfExpression(value: (ISyntaxToken, IUnaryExpressionSyntax) => TypeOfExpressionSyntax): Self = StObject.set(x, "typeOfExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeParameter(value: (ISyntaxToken, ConstraintSyntax) => TypeParameterSyntax): Self = StObject.set(x, "typeParameter", js.Any.fromFunction2(value))
+      inline def setTypeParameter(value: (ISyntaxToken, ConstraintSyntax) => TypeParameterSyntax): Self = StObject.set(x, "typeParameter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeParameterList(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => TypeParameterListSyntax): Self = StObject.set(x, "typeParameterList", js.Any.fromFunction3(value))
+      inline def setTypeParameterList(value: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => TypeParameterListSyntax): Self = StObject.set(x, "typeParameterList", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTypeQuery(value: (ISyntaxToken, INameSyntax) => TypeQuerySyntax): Self = StObject.set(x, "typeQuery", js.Any.fromFunction2(value))
+      inline def setTypeQuery(value: (ISyntaxToken, INameSyntax) => TypeQuerySyntax): Self = StObject.set(x, "typeQuery", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVariableDeclaration(value: (ISyntaxToken, ISeparatedSyntaxList) => VariableDeclarationSyntax): Self = StObject.set(x, "variableDeclaration", js.Any.fromFunction2(value))
+      inline def setVariableDeclaration(value: (ISyntaxToken, ISeparatedSyntaxList) => VariableDeclarationSyntax): Self = StObject.set(x, "variableDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVariableDeclarator(value: (ISyntaxToken, TypeAnnotationSyntax, EqualsValueClauseSyntax) => VariableDeclaratorSyntax): Self = StObject.set(x, "variableDeclarator", js.Any.fromFunction3(value))
+      inline def setVariableDeclarator(value: (ISyntaxToken, TypeAnnotationSyntax, EqualsValueClauseSyntax) => VariableDeclaratorSyntax): Self = StObject.set(x, "variableDeclarator", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setVariableStatement(value: (ISyntaxList, VariableDeclarationSyntax, ISyntaxToken) => VariableStatementSyntax): Self = StObject.set(x, "variableStatement", js.Any.fromFunction3(value))
+      inline def setVariableStatement(value: (ISyntaxList, VariableDeclarationSyntax, ISyntaxToken) => VariableStatementSyntax): Self = StObject.set(x, "variableStatement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setVoidExpression(value: (ISyntaxToken, IUnaryExpressionSyntax) => VoidExpressionSyntax): Self = StObject.set(x, "voidExpression", js.Any.fromFunction2(value))
+      inline def setVoidExpression(value: (ISyntaxToken, IUnaryExpressionSyntax) => VoidExpressionSyntax): Self = StObject.set(x, "voidExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWhileStatement(
+      inline def setWhileStatement(
         value: (ISyntaxToken, ISyntaxToken, IExpressionSyntax, ISyntaxToken, IStatementSyntax) => WhileStatementSyntax
       ): Self = StObject.set(x, "whileStatement", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setWithStatement(
+      inline def setWithStatement(
         value: (ISyntaxToken, ISyntaxToken, IExpressionSyntax, ISyntaxToken, IStatementSyntax) => WithStatementSyntax
       ): Self = StObject.set(x, "withStatement", js.Any.fromFunction5(value))
     }
@@ -1215,8 +1097,7 @@ object Syntax {
        with IFactory
   object NormalModeFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       argumentList: (TypeArgumentListSyntax, ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArgumentListSyntax,
       arrayLiteralExpression: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArrayLiteralExpressionSyntax,
       arrayType: (ITypeSyntax, ISyntaxToken, ISyntaxToken) => ArrayTypeSyntax,
@@ -1313,8 +1194,7 @@ object Syntax {
        with IFactory
   object StrictModeFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       argumentList: (TypeArgumentListSyntax, ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArgumentListSyntax,
       arrayLiteralExpression: (ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArrayLiteralExpressionSyntax,
       arrayType: (ITypeSyntax, ISyntaxToken, ISyntaxToken) => ArrayTypeSyntax,
@@ -1410,11 +1290,11 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    var _fullText: js.Any
+    /* private */ var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: js.Any
     
-    var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: js.Any
     
     /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
@@ -1424,8 +1304,7 @@ object Syntax {
   }
   object VariableWidthTokenWithLeadingAndTrailingTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fullText: js.Any,
       _leadingTriviaInfo: js.Any,
       _trailingTriviaInfo: js.Any,
@@ -1477,26 +1356,19 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithLeadingAndTrailingTrivia]
     }
     
-    @scala.inline
-    implicit class VariableWidthTokenWithLeadingAndTrailingTriviaMutableBuilder[Self <: VariableWidthTokenWithLeadingAndTrailingTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: VariableWidthTokenWithLeadingAndTrailingTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1504,9 +1376,9 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    var _fullText: js.Any
+    /* private */ var _fullText: js.Any
     
-    var _leadingTriviaInfo: js.Any
+    /* private */ var _leadingTriviaInfo: js.Any
     
     /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
@@ -1516,8 +1388,7 @@ object Syntax {
   }
   object VariableWidthTokenWithLeadingTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fullText: js.Any,
       _leadingTriviaInfo: js.Any,
       accept: ISyntaxVisitor => js.Any,
@@ -1568,23 +1439,17 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithLeadingTrivia]
     }
     
-    @scala.inline
-    implicit class VariableWidthTokenWithLeadingTriviaMutableBuilder[Self <: VariableWidthTokenWithLeadingTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: VariableWidthTokenWithLeadingTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_leadingTriviaInfo(value: js.Any): Self = StObject.set(x, "_leadingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1592,7 +1457,7 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    var _fullText: js.Any
+    /* private */ var _fullText: js.Any
     
     /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
@@ -1602,8 +1467,7 @@ object Syntax {
   }
   object VariableWidthTokenWithNoTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fullText: js.Any,
       accept: ISyntaxVisitor => js.Any,
       childAt: Double => ISyntaxElement,
@@ -1653,20 +1517,15 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithNoTrivia]
     }
     
-    @scala.inline
-    implicit class VariableWidthTokenWithNoTriviaMutableBuilder[Self <: VariableWidthTokenWithNoTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: VariableWidthTokenWithNoTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1674,9 +1533,9 @@ object Syntax {
     extends StObject
        with ISyntaxToken {
     
-    var _fullText: js.Any
+    /* private */ var _fullText: js.Any
     
-    var _trailingTriviaInfo: js.Any
+    /* private */ var _trailingTriviaInfo: js.Any
     
     /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any
     
@@ -1686,8 +1545,7 @@ object Syntax {
   }
   object VariableWidthTokenWithTrailingTrivia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fullText: js.Any,
       _trailingTriviaInfo: js.Any,
       accept: ISyntaxVisitor => js.Any,
@@ -1738,23 +1596,17 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithTrailingTrivia]
     }
     
-    @scala.inline
-    implicit class VariableWidthTokenWithTrailingTriviaMutableBuilder[Self <: VariableWidthTokenWithTrailingTrivia] (val x: Self) extends AnyVal {
+    extension [Self <: VariableWidthTokenWithTrailingTrivia](x: Self) {
       
-      @scala.inline
-      def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
+      inline def setFindTokenInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
+      inline def setRealize(value: () => js.Any): Self = StObject.set(x, "realize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
+      inline def set_fullText(value: js.Any): Self = StObject.set(x, "_fullText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
+      inline def set_trailingTriviaInfo(value: js.Any): Self = StObject.set(x, "_trailingTriviaInfo", value.asInstanceOf[js.Any])
     }
   }
 }

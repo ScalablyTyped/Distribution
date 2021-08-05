@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptureAttribute extends StObject
 object CaptureAttribute {
   
-  @scala.inline
-  def camcorder: typings.filepond.filepondStrings.camcorder = "camcorder".asInstanceOf[typings.filepond.filepondStrings.camcorder]
+  inline def camcorder: typings.filepond.filepondStrings.camcorder = "camcorder".asInstanceOf[typings.filepond.filepondStrings.camcorder]
   
-  @scala.inline
-  def camera: typings.filepond.filepondStrings.camera = "camera".asInstanceOf[typings.filepond.filepondStrings.camera]
+  inline def camera: typings.filepond.filepondStrings.camera = "camera".asInstanceOf[typings.filepond.filepondStrings.camera]
   
-  @scala.inline
-  def microphone: typings.filepond.filepondStrings.microphone = "microphone".asInstanceOf[typings.filepond.filepondStrings.microphone]
+  inline def microphone: typings.filepond.filepondStrings.microphone = "microphone".asInstanceOf[typings.filepond.filepondStrings.microphone]
 }

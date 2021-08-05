@@ -40,8 +40,7 @@ trait VideoTransformEffectDefinition extends StObject {
 }
 object VideoTransformEffectDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatableClassId: String,
     cropRectangle: Rect,
     mirror: MediaMirroringOptions,
@@ -55,31 +54,22 @@ object VideoTransformEffectDefinition {
     __obj.asInstanceOf[VideoTransformEffectDefinition]
   }
   
-  @scala.inline
-  implicit class VideoTransformEffectDefinitionMutableBuilder[Self <: VideoTransformEffectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: VideoTransformEffectDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropRectangle(value: Rect): Self = StObject.set(x, "cropRectangle", value.asInstanceOf[js.Any])
+    inline def setCropRectangle(value: Rect): Self = StObject.set(x, "cropRectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirror(value: MediaMirroringOptions): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+    inline def setMirror(value: MediaMirroringOptions): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSize(value: Size): Self = StObject.set(x, "outputSize", value.asInstanceOf[js.Any])
+    inline def setOutputSize(value: Size): Self = StObject.set(x, "outputSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingColor(value: Color): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
+    inline def setPaddingColor(value: Color): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingAlgorithm(value: MediaVideoProcessingAlgorithm): Self = StObject.set(x, "processingAlgorithm", value.asInstanceOf[js.Any])
+    inline def setProcessingAlgorithm(value: MediaVideoProcessingAlgorithm): Self = StObject.set(x, "processingAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: MediaRotation): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: MediaRotation): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
   }
 }

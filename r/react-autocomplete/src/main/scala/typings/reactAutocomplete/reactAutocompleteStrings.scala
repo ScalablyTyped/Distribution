@@ -8,16 +8,13 @@ object reactAutocompleteStrings {
   
   @js.native
   sealed trait backward extends StObject
-  @scala.inline
-  def backward: backward = "backward".asInstanceOf[backward]
+  inline def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
   sealed trait forward extends StObject
-  @scala.inline
-  def forward: forward = "forward".asInstanceOf[forward]
+  inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

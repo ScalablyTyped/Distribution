@@ -18,19 +18,15 @@ trait PartialUpdateObjectResponse extends StObject {
 }
 object PartialUpdateObjectResponse {
   
-  @scala.inline
-  def apply(objectID: String, taskID: Double): PartialUpdateObjectResponse = {
+  inline def apply(objectID: String, taskID: Double): PartialUpdateObjectResponse = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialUpdateObjectResponse]
   }
   
-  @scala.inline
-  implicit class PartialUpdateObjectResponseMutableBuilder[Self <: PartialUpdateObjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PartialUpdateObjectResponse](x: Self) {
     
-    @scala.inline
-    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+    inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
   }
 }

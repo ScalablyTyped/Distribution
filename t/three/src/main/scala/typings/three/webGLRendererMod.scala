@@ -514,17 +514,14 @@ object webGLRendererMod {
   }
   object WebGLDebug {
     
-    @scala.inline
-    def apply(checkShaderErrors: Boolean): WebGLDebug = {
+    inline def apply(checkShaderErrors: Boolean): WebGLDebug = {
       val __obj = js.Dynamic.literal(checkShaderErrors = checkShaderErrors.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebGLDebug]
     }
     
-    @scala.inline
-    implicit class WebGLDebugMutableBuilder[Self <: WebGLDebug] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLDebug](x: Self) {
       
-      @scala.inline
-      def setCheckShaderErrors(value: Boolean): Self = StObject.set(x, "checkShaderErrors", value.asInstanceOf[js.Any])
+      inline def setCheckShaderErrors(value: Boolean): Self = StObject.set(x, "checkShaderErrors", value.asInstanceOf[js.Any])
     }
   }
   
@@ -589,80 +586,56 @@ object webGLRendererMod {
   }
   object WebGLRendererParameters {
     
-    @scala.inline
-    def apply(): WebGLRendererParameters = {
+    inline def apply(): WebGLRendererParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebGLRendererParameters]
     }
     
-    @scala.inline
-    implicit class WebGLRendererParametersMutableBuilder[Self <: WebGLRendererParameters] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLRendererParameters](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+      inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+      inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
       
-      @scala.inline
-      def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+      inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
       
-      @scala.inline
-      def setContext(value: WebGLRenderingContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: WebGLRenderingContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setLogarithmicDepthBuffer(value: Boolean): Self = StObject.set(x, "logarithmicDepthBuffer", value.asInstanceOf[js.Any])
+      inline def setLogarithmicDepthBuffer(value: Boolean): Self = StObject.set(x, "logarithmicDepthBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogarithmicDepthBufferUndefined: Self = StObject.set(x, "logarithmicDepthBuffer", js.undefined)
+      inline def setLogarithmicDepthBufferUndefined: Self = StObject.set(x, "logarithmicDepthBuffer", js.undefined)
       
-      @scala.inline
-      def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
+      inline def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerPreferenceUndefined: Self = StObject.set(x, "powerPreference", js.undefined)
+      inline def setPowerPreferenceUndefined: Self = StObject.set(x, "powerPreference", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+      inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
+      inline def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
       
-      @scala.inline
-      def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+      inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
+      inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
       
-      @scala.inline
-      def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+      inline def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
+      inline def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
     }
   }
 }

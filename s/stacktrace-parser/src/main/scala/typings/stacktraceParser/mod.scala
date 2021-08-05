@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(stackString: String): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stackString.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  inline def parse(stackString: String): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stackString.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
   
   trait StackFrame extends StObject {
     
@@ -29,41 +28,30 @@ object mod {
   }
   object StackFrame {
     
-    @scala.inline
-    def apply(arguments: js.Array[String], methodName: LiteralUnion[LessthansignunknownGreaterthansign, String]): StackFrame = {
+    inline def apply(arguments: js.Array[String], methodName: LiteralUnion[LessthansignunknownGreaterthansign, String]): StackFrame = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], column = null, file = null, lineNumber = null)
       __obj.asInstanceOf[StackFrame]
     }
     
-    @scala.inline
-    implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+    extension [Self <: StackFrame](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNull: Self = StObject.set(x, "column", null)
+      inline def setColumnNull: Self = StObject.set(x, "column", null)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNull: Self = StObject.set(x, "file", null)
+      inline def setFileNull: Self = StObject.set(x, "file", null)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberNull: Self = StObject.set(x, "lineNumber", null)
+      inline def setLineNumberNull: Self = StObject.set(x, "lineNumber", null)
       
-      @scala.inline
-      def setMethodName(value: LiteralUnion[LessthansignunknownGreaterthansign, String]): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: LiteralUnion[LessthansignunknownGreaterthansign, String]): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     }
   }
 }

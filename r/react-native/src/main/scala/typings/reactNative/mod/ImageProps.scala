@@ -16,22 +16,17 @@ trait ImageProps
 }
 object ImageProps {
   
-  @scala.inline
-  def apply(source: ImageSourcePropType): ImageProps = {
+  inline def apply(source: ImageSourcePropType): ImageProps = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }
   
-  @scala.inline
-  implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
+  extension [Self <: ImageProps](x: Self) {
     
-    @scala.inline
-    def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

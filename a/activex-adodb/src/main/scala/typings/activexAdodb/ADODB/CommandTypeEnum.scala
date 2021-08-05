@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommandTypeEnum extends StObject
 object CommandTypeEnum {
   
-  @scala.inline
-  def adCmdFile: `256` = 256.asInstanceOf[`256`]
+  inline def adCmdFile: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def adCmdStoredProc: `4` = 4.asInstanceOf[`4`]
+  inline def adCmdStoredProc: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adCmdTable: `2` = 2.asInstanceOf[`2`]
+  inline def adCmdTable: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adCmdTableDirect: `512` = 512.asInstanceOf[`512`]
+  inline def adCmdTableDirect: `512` = 512.asInstanceOf[`512`]
   
-  @scala.inline
-  def adCmdText: `1` = 1.asInstanceOf[`1`]
+  inline def adCmdText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adCmdUnknown: `8` = 8.asInstanceOf[`8`]
+  inline def adCmdUnknown: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def adCmdUnspecified: `-1` = -1.asInstanceOf[`-1`]
+  inline def adCmdUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }

@@ -11,14 +11,10 @@ object unitToNumberMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unitToNumber(unit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def unitToNumber(unit: String, options: UnitToNumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def unitToNumber(unit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def unitToNumber(unit: Double, options: UnitToNumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unitToNumber(unit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def unitToNumber(unit: String, options: UnitToNumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unitToNumber(unit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def unitToNumber(unit: Double, options: UnitToNumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait UnitToNumberOptions extends StObject {
     
@@ -28,26 +24,20 @@ object unitToNumberMod {
   }
   object UnitToNumberOptions {
     
-    @scala.inline
-    def apply(): UnitToNumberOptions = {
+    inline def apply(): UnitToNumberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnitToNumberOptions]
     }
     
-    @scala.inline
-    implicit class UnitToNumberOptionsMutableBuilder[Self <: UnitToNumberOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnitToNumberOptions](x: Self) {
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setFontSizeFallback(value: Double): Self = StObject.set(x, "fontSizeFallback", value.asInstanceOf[js.Any])
+      inline def setFontSizeFallback(value: Double): Self = StObject.set(x, "fontSizeFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeFallbackUndefined: Self = StObject.set(x, "fontSizeFallback", js.undefined)
+      inline def setFontSizeFallbackUndefined: Self = StObject.set(x, "fontSizeFallback", js.undefined)
     }
   }
 }

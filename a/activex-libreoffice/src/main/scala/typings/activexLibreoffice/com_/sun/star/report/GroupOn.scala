@@ -31,34 +31,24 @@ object GroupOn {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DAY: `6` = 6.asInstanceOf[`6`]
+    inline def DAY: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def DEFAULT: `0` = 0.asInstanceOf[`0`]
+    inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def HOUR: `7` = 7.asInstanceOf[`7`]
+    inline def HOUR: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def INTERVAL: `9` = 9.asInstanceOf[`9`]
+    inline def INTERVAL: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def MINUTE: `8` = 8.asInstanceOf[`8`]
+    inline def MINUTE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def MONTH: `4` = 4.asInstanceOf[`4`]
+    inline def MONTH: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def PREFIX_CHARACTERS: `1` = 1.asInstanceOf[`1`]
+    inline def PREFIX_CHARACTERS: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def QUARTAL: `3` = 3.asInstanceOf[`3`]
+    inline def QUARTAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def WEEK: `5` = 5.asInstanceOf[`5`]
+    inline def WEEK: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def YEAR: `2` = 2.asInstanceOf[`2`]
+    inline def YEAR: `2` = 2.asInstanceOf[`2`]
   }
 }

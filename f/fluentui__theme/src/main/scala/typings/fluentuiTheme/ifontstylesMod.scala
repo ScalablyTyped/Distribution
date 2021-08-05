@@ -45,8 +45,7 @@ object ifontstylesMod {
   }
   object IFontStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       large: IRawStyle,
       medium: IRawStyle,
       mediumPlus: IRawStyle,
@@ -65,47 +64,33 @@ object ifontstylesMod {
       __obj.asInstanceOf[IFontStyles]
     }
     
-    @scala.inline
-    implicit class IFontStylesMutableBuilder[Self <: IFontStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IFontStyles](x: Self) {
       
-      @scala.inline
-      def setLarge(value: IRawStyle): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: IRawStyle): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedium(value: IRawStyle): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: IRawStyle): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumPlus(value: IRawStyle): Self = StObject.set(x, "mediumPlus", value.asInstanceOf[js.Any])
+      inline def setMediumPlus(value: IRawStyle): Self = StObject.set(x, "mediumPlus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMega(value: IRawStyle): Self = StObject.set(x, "mega", value.asInstanceOf[js.Any])
+      inline def setMega(value: IRawStyle): Self = StObject.set(x, "mega", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmall(value: IRawStyle): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: IRawStyle): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallPlus(value: IRawStyle): Self = StObject.set(x, "smallPlus", value.asInstanceOf[js.Any])
+      inline def setSmallPlus(value: IRawStyle): Self = StObject.set(x, "smallPlus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuperLarge(value: IRawStyle): Self = StObject.set(x, "superLarge", value.asInstanceOf[js.Any])
+      inline def setSuperLarge(value: IRawStyle): Self = StObject.set(x, "superLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiny(value: IRawStyle): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
+      inline def setTiny(value: IRawStyle): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXLarge(value: IRawStyle): Self = StObject.set(x, "xLarge", value.asInstanceOf[js.Any])
+      inline def setXLarge(value: IRawStyle): Self = StObject.set(x, "xLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXLargePlus(value: IRawStyle): Self = StObject.set(x, "xLargePlus", value.asInstanceOf[js.Any])
+      inline def setXLargePlus(value: IRawStyle): Self = StObject.set(x, "xLargePlus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXSmall(value: IRawStyle): Self = StObject.set(x, "xSmall", value.asInstanceOf[js.Any])
+      inline def setXSmall(value: IRawStyle): Self = StObject.set(x, "xSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxLarge(value: IRawStyle): Self = StObject.set(x, "xxLarge", value.asInstanceOf[js.Any])
+      inline def setXxLarge(value: IRawStyle): Self = StObject.set(x, "xxLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxLargePlus(value: IRawStyle): Self = StObject.set(x, "xxLargePlus", value.asInstanceOf[js.Any])
+      inline def setXxLargePlus(value: IRawStyle): Self = StObject.set(x, "xxLargePlus", value.asInstanceOf[js.Any])
     }
   }
 }

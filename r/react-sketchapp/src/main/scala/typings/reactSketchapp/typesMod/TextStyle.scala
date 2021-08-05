@@ -54,115 +54,79 @@ trait TextStyle extends StObject {
 }
 object TextStyle {
   
-  @scala.inline
-  def apply(): TextStyle = {
+  inline def apply(): TextStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextStyle]
   }
   
-  @scala.inline
-  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyle](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setFontStyle(value: normal | italic): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: normal | italic): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    @scala.inline
-    def setParagraphSpacing(value: Double): Self = StObject.set(x, "paragraphSpacing", value.asInstanceOf[js.Any])
+    inline def setParagraphSpacing(value: Double): Self = StObject.set(x, "paragraphSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphSpacingUndefined: Self = StObject.set(x, "paragraphSpacing", js.undefined)
+    inline def setParagraphSpacingUndefined: Self = StObject.set(x, "paragraphSpacing", js.undefined)
     
-    @scala.inline
-    def setTextAlign(value: auto | left | right | center | justify): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: auto | left | right | center | justify): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    @scala.inline
-    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+    inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
     
-    @scala.inline
-    def setTextShadowColor(value: Color): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
+    inline def setTextShadowColor(value: Color): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadowColorUndefined: Self = StObject.set(x, "textShadowColor", js.undefined)
+    inline def setTextShadowColorUndefined: Self = StObject.set(x, "textShadowColor", js.undefined)
     
-    @scala.inline
-    def setTextShadowOffset(value: Width): Self = StObject.set(x, "textShadowOffset", value.asInstanceOf[js.Any])
+    inline def setTextShadowOffset(value: Width): Self = StObject.set(x, "textShadowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadowOffsetUndefined: Self = StObject.set(x, "textShadowOffset", js.undefined)
+    inline def setTextShadowOffsetUndefined: Self = StObject.set(x, "textShadowOffset", js.undefined)
     
-    @scala.inline
-    def setTextShadowOpacity(value: Double): Self = StObject.set(x, "textShadowOpacity", value.asInstanceOf[js.Any])
+    inline def setTextShadowOpacity(value: Double): Self = StObject.set(x, "textShadowOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadowOpacityUndefined: Self = StObject.set(x, "textShadowOpacity", js.undefined)
+    inline def setTextShadowOpacityUndefined: Self = StObject.set(x, "textShadowOpacity", js.undefined)
     
-    @scala.inline
-    def setTextShadowRadius(value: Double): Self = StObject.set(x, "textShadowRadius", value.asInstanceOf[js.Any])
+    inline def setTextShadowRadius(value: Double): Self = StObject.set(x, "textShadowRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadowRadiusUndefined: Self = StObject.set(x, "textShadowRadius", js.undefined)
+    inline def setTextShadowRadiusUndefined: Self = StObject.set(x, "textShadowRadius", js.undefined)
     
-    @scala.inline
-    def setTextShadowSpread(value: Double): Self = StObject.set(x, "textShadowSpread", value.asInstanceOf[js.Any])
+    inline def setTextShadowSpread(value: Double): Self = StObject.set(x, "textShadowSpread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadowSpreadUndefined: Self = StObject.set(x, "textShadowSpread", js.undefined)
+    inline def setTextShadowSpreadUndefined: Self = StObject.set(x, "textShadowSpread", js.undefined)
     
-    @scala.inline
-    def setTextTransform(value: uppercase | lowercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+    inline def setTextTransform(value: uppercase | lowercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+    inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
-    @scala.inline
-    def setWritingDirection(value: auto | ltr | rtl): Self = StObject.set(x, "writingDirection", value.asInstanceOf[js.Any])
+    inline def setWritingDirection(value: auto | ltr | rtl): Self = StObject.set(x, "writingDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritingDirectionUndefined: Self = StObject.set(x, "writingDirection", js.undefined)
+    inline def setWritingDirectionUndefined: Self = StObject.set(x, "writingDirection", js.undefined)
   }
 }

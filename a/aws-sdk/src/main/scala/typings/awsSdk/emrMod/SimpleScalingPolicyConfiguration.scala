@@ -23,28 +23,21 @@ trait SimpleScalingPolicyConfiguration extends StObject {
 }
 object SimpleScalingPolicyConfiguration {
   
-  @scala.inline
-  def apply(ScalingAdjustment: Integer): SimpleScalingPolicyConfiguration = {
+  inline def apply(ScalingAdjustment: Integer): SimpleScalingPolicyConfiguration = {
     val __obj = js.Dynamic.literal(ScalingAdjustment = ScalingAdjustment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleScalingPolicyConfiguration]
   }
   
-  @scala.inline
-  implicit class SimpleScalingPolicyConfigurationMutableBuilder[Self <: SimpleScalingPolicyConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleScalingPolicyConfiguration](x: Self) {
     
-    @scala.inline
-    def setAdjustmentType(value: AdjustmentType): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
+    inline def setAdjustmentType(value: AdjustmentType): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
+    inline def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
     
-    @scala.inline
-    def setCoolDown(value: Integer): Self = StObject.set(x, "CoolDown", value.asInstanceOf[js.Any])
+    inline def setCoolDown(value: Integer): Self = StObject.set(x, "CoolDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoolDownUndefined: Self = StObject.set(x, "CoolDown", js.undefined)
+    inline def setCoolDownUndefined: Self = StObject.set(x, "CoolDown", js.undefined)
     
-    @scala.inline
-    def setScalingAdjustment(value: Integer): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
+    inline def setScalingAdjustment(value: Integer): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
   }
 }

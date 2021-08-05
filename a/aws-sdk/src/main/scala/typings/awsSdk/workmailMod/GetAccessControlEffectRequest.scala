@@ -28,8 +28,7 @@ trait GetAccessControlEffectRequest extends StObject {
 }
 object GetAccessControlEffectRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Action: AccessControlRuleAction,
     IpAddress: IpAddress,
     OrganizationId: OrganizationId,
@@ -39,19 +38,14 @@ object GetAccessControlEffectRequest {
     __obj.asInstanceOf[GetAccessControlEffectRequest]
   }
   
-  @scala.inline
-  implicit class GetAccessControlEffectRequestMutableBuilder[Self <: GetAccessControlEffectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessControlEffectRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: AccessControlRuleAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: AccessControlRuleAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: WorkMailIdentifier): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: WorkMailIdentifier): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

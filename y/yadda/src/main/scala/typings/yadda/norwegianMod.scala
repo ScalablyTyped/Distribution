@@ -628,8 +628,7 @@ object norwegianMod extends Shortcut {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _steps: js.Array[String],
       background: String,
       examples: String,
@@ -650,17 +649,13 @@ object norwegianMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def setGitt(value: String): Self = StObject.set(x, "gitt", value.asInstanceOf[js.Any])
+      inline def setGitt(value: String): Self = StObject.set(x, "gitt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNår(value: String): Self = StObject.set(x, "n\u00E5r", value.asInstanceOf[js.Any])
+      inline def setNår(value: String): Self = StObject.set(x, "n\u00E5r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSå(value: String): Self = StObject.set(x, "s\u00E5", value.asInstanceOf[js.Any])
+      inline def setSå(value: String): Self = StObject.set(x, "s\u00E5", value.asInstanceOf[js.Any])
     }
   }
   

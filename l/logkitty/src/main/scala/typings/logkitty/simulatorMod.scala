@@ -11,6 +11,5 @@ object simulatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def runSimulatorLoggingProcess(): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("runSimulatorLoggingProcess")().asInstanceOf[ChildProcess]
+  inline def runSimulatorLoggingProcess(): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("runSimulatorLoggingProcess")().asInstanceOf[ChildProcess]
 }

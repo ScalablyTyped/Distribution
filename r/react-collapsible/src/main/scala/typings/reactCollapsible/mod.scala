@@ -90,191 +90,130 @@ object mod {
   }
   object CollapsibleProps {
     
-    @scala.inline
-    def apply(trigger: String | ReactElement): CollapsibleProps = {
+    inline def apply(trigger: String | ReactElement): CollapsibleProps = {
       val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollapsibleProps]
     }
     
-    @scala.inline
-    implicit class CollapsiblePropsMutableBuilder[Self <: CollapsibleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapsibleProps](x: Self) {
       
-      @scala.inline
-      def setAccordionPosition(value: String | Double): Self = StObject.set(x, "accordionPosition", value.asInstanceOf[js.Any])
+      inline def setAccordionPosition(value: String | Double): Self = StObject.set(x, "accordionPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccordionPositionUndefined: Self = StObject.set(x, "accordionPosition", js.undefined)
+      inline def setAccordionPositionUndefined: Self = StObject.set(x, "accordionPosition", js.undefined)
       
-      @scala.inline
-      def setClassParentString(value: String): Self = StObject.set(x, "classParentString", value.asInstanceOf[js.Any])
+      inline def setClassParentString(value: String): Self = StObject.set(x, "classParentString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassParentStringUndefined: Self = StObject.set(x, "classParentString", js.undefined)
+      inline def setClassParentStringUndefined: Self = StObject.set(x, "classParentString", js.undefined)
       
-      @scala.inline
-      def setContainerElementProps(value: js.Object): Self = StObject.set(x, "containerElementProps", value.asInstanceOf[js.Any])
+      inline def setContainerElementProps(value: js.Object): Self = StObject.set(x, "containerElementProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerElementPropsUndefined: Self = StObject.set(x, "containerElementProps", js.undefined)
+      inline def setContainerElementPropsUndefined: Self = StObject.set(x, "containerElementProps", js.undefined)
       
-      @scala.inline
-      def setContentContainerTagName(value: String): Self = StObject.set(x, "contentContainerTagName", value.asInstanceOf[js.Any])
+      inline def setContentContainerTagName(value: String): Self = StObject.set(x, "contentContainerTagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentContainerTagNameUndefined: Self = StObject.set(x, "contentContainerTagName", js.undefined)
+      inline def setContentContainerTagNameUndefined: Self = StObject.set(x, "contentContainerTagName", js.undefined)
       
-      @scala.inline
-      def setContentHiddenWhenClosed(value: Boolean): Self = StObject.set(x, "contentHiddenWhenClosed", value.asInstanceOf[js.Any])
+      inline def setContentHiddenWhenClosed(value: Boolean): Self = StObject.set(x, "contentHiddenWhenClosed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHiddenWhenClosedUndefined: Self = StObject.set(x, "contentHiddenWhenClosed", js.undefined)
+      inline def setContentHiddenWhenClosedUndefined: Self = StObject.set(x, "contentHiddenWhenClosed", js.undefined)
       
-      @scala.inline
-      def setContentInnerClassName(value: String): Self = StObject.set(x, "contentInnerClassName", value.asInstanceOf[js.Any])
+      inline def setContentInnerClassName(value: String): Self = StObject.set(x, "contentInnerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentInnerClassNameUndefined: Self = StObject.set(x, "contentInnerClassName", js.undefined)
+      inline def setContentInnerClassNameUndefined: Self = StObject.set(x, "contentInnerClassName", js.undefined)
       
-      @scala.inline
-      def setContentOuterClassName(value: String): Self = StObject.set(x, "contentOuterClassName", value.asInstanceOf[js.Any])
+      inline def setContentOuterClassName(value: String): Self = StObject.set(x, "contentOuterClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentOuterClassNameUndefined: Self = StObject.set(x, "contentOuterClassName", js.undefined)
+      inline def setContentOuterClassNameUndefined: Self = StObject.set(x, "contentOuterClassName", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setHandleTriggerClick(value: /* accordionPosition */ js.UndefOr[String | Double] => Unit): Self = StObject.set(x, "handleTriggerClick", js.Any.fromFunction1(value))
+      inline def setHandleTriggerClick(value: /* accordionPosition */ js.UndefOr[String | Double] => Unit): Self = StObject.set(x, "handleTriggerClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleTriggerClickUndefined: Self = StObject.set(x, "handleTriggerClick", js.undefined)
+      inline def setHandleTriggerClickUndefined: Self = StObject.set(x, "handleTriggerClick", js.undefined)
       
-      @scala.inline
-      def setLazyRender(value: Boolean): Self = StObject.set(x, "lazyRender", value.asInstanceOf[js.Any])
+      inline def setLazyRender(value: Boolean): Self = StObject.set(x, "lazyRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyRenderUndefined: Self = StObject.set(x, "lazyRender", js.undefined)
+      inline def setLazyRenderUndefined: Self = StObject.set(x, "lazyRender", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnClosing(value: () => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction0(value))
+      inline def setOnClosing(value: () => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
+      inline def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOnOpening(value: () => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction0(value))
+      inline def setOnOpening(value: () => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
+      inline def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
       
-      @scala.inline
-      def setOnTriggerClosing(value: () => Unit): Self = StObject.set(x, "onTriggerClosing", js.Any.fromFunction0(value))
+      inline def setOnTriggerClosing(value: () => Unit): Self = StObject.set(x, "onTriggerClosing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTriggerClosingUndefined: Self = StObject.set(x, "onTriggerClosing", js.undefined)
+      inline def setOnTriggerClosingUndefined: Self = StObject.set(x, "onTriggerClosing", js.undefined)
       
-      @scala.inline
-      def setOnTriggerOpening(value: () => Unit): Self = StObject.set(x, "onTriggerOpening", js.Any.fromFunction0(value))
+      inline def setOnTriggerOpening(value: () => Unit): Self = StObject.set(x, "onTriggerOpening", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTriggerOpeningUndefined: Self = StObject.set(x, "onTriggerOpening", js.undefined)
+      inline def setOnTriggerOpeningUndefined: Self = StObject.set(x, "onTriggerOpening", js.undefined)
       
-      @scala.inline
-      def setOpenedClassName(value: String): Self = StObject.set(x, "openedClassName", value.asInstanceOf[js.Any])
+      inline def setOpenedClassName(value: String): Self = StObject.set(x, "openedClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenedClassNameUndefined: Self = StObject.set(x, "openedClassName", js.undefined)
+      inline def setOpenedClassNameUndefined: Self = StObject.set(x, "openedClassName", js.undefined)
       
-      @scala.inline
-      def setOverflowWhenOpen(value: hidden | visible | auto | scroll | inherit | initial | unset): Self = StObject.set(x, "overflowWhenOpen", value.asInstanceOf[js.Any])
+      inline def setOverflowWhenOpen(value: hidden | visible | auto | scroll | inherit | initial | unset): Self = StObject.set(x, "overflowWhenOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowWhenOpenUndefined: Self = StObject.set(x, "overflowWhenOpen", js.undefined)
+      inline def setOverflowWhenOpenUndefined: Self = StObject.set(x, "overflowWhenOpen", js.undefined)
       
-      @scala.inline
-      def setTransitionCloseTime(value: Double): Self = StObject.set(x, "transitionCloseTime", value.asInstanceOf[js.Any])
+      inline def setTransitionCloseTime(value: Double): Self = StObject.set(x, "transitionCloseTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionCloseTimeNull: Self = StObject.set(x, "transitionCloseTime", null)
+      inline def setTransitionCloseTimeNull: Self = StObject.set(x, "transitionCloseTime", null)
       
-      @scala.inline
-      def setTransitionCloseTimeUndefined: Self = StObject.set(x, "transitionCloseTime", js.undefined)
+      inline def setTransitionCloseTimeUndefined: Self = StObject.set(x, "transitionCloseTime", js.undefined)
       
-      @scala.inline
-      def setTransitionTime(value: Double): Self = StObject.set(x, "transitionTime", value.asInstanceOf[js.Any])
+      inline def setTransitionTime(value: Double): Self = StObject.set(x, "transitionTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionTimeUndefined: Self = StObject.set(x, "transitionTime", js.undefined)
+      inline def setTransitionTimeUndefined: Self = StObject.set(x, "transitionTime", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: String | ReactElement): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: String | ReactElement): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerClassName(value: String): Self = StObject.set(x, "triggerClassName", value.asInstanceOf[js.Any])
+      inline def setTriggerClassName(value: String): Self = StObject.set(x, "triggerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerClassNameUndefined: Self = StObject.set(x, "triggerClassName", js.undefined)
+      inline def setTriggerClassNameUndefined: Self = StObject.set(x, "triggerClassName", js.undefined)
       
-      @scala.inline
-      def setTriggerDisabled(value: Boolean): Self = StObject.set(x, "triggerDisabled", value.asInstanceOf[js.Any])
+      inline def setTriggerDisabled(value: Boolean): Self = StObject.set(x, "triggerDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerDisabledUndefined: Self = StObject.set(x, "triggerDisabled", js.undefined)
+      inline def setTriggerDisabledUndefined: Self = StObject.set(x, "triggerDisabled", js.undefined)
       
-      @scala.inline
-      def setTriggerElementProps(value: js.Object): Self = StObject.set(x, "triggerElementProps", value.asInstanceOf[js.Any])
+      inline def setTriggerElementProps(value: js.Object): Self = StObject.set(x, "triggerElementProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerElementPropsUndefined: Self = StObject.set(x, "triggerElementProps", js.undefined)
+      inline def setTriggerElementPropsUndefined: Self = StObject.set(x, "triggerElementProps", js.undefined)
       
-      @scala.inline
-      def setTriggerOpenedClassName(value: String): Self = StObject.set(x, "triggerOpenedClassName", value.asInstanceOf[js.Any])
+      inline def setTriggerOpenedClassName(value: String): Self = StObject.set(x, "triggerOpenedClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerOpenedClassNameUndefined: Self = StObject.set(x, "triggerOpenedClassName", js.undefined)
+      inline def setTriggerOpenedClassNameUndefined: Self = StObject.set(x, "triggerOpenedClassName", js.undefined)
       
-      @scala.inline
-      def setTriggerSibling(value: ReactElement): Self = StObject.set(x, "triggerSibling", value.asInstanceOf[js.Any])
+      inline def setTriggerSibling(value: ReactElement): Self = StObject.set(x, "triggerSibling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerSiblingUndefined: Self = StObject.set(x, "triggerSibling", js.undefined)
+      inline def setTriggerSiblingUndefined: Self = StObject.set(x, "triggerSibling", js.undefined)
       
-      @scala.inline
-      def setTriggerStyle(value: CSSProperties): Self = StObject.set(x, "triggerStyle", value.asInstanceOf[js.Any])
+      inline def setTriggerStyle(value: CSSProperties): Self = StObject.set(x, "triggerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerStyleNull: Self = StObject.set(x, "triggerStyle", null)
+      inline def setTriggerStyleNull: Self = StObject.set(x, "triggerStyle", null)
       
-      @scala.inline
-      def setTriggerStyleUndefined: Self = StObject.set(x, "triggerStyle", js.undefined)
+      inline def setTriggerStyleUndefined: Self = StObject.set(x, "triggerStyle", js.undefined)
       
-      @scala.inline
-      def setTriggerTagName(value: String): Self = StObject.set(x, "triggerTagName", value.asInstanceOf[js.Any])
+      inline def setTriggerTagName(value: String): Self = StObject.set(x, "triggerTagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerTagNameUndefined: Self = StObject.set(x, "triggerTagName", js.undefined)
+      inline def setTriggerTagNameUndefined: Self = StObject.set(x, "triggerTagName", js.undefined)
       
-      @scala.inline
-      def setTriggerWhenOpen(value: String | ReactElement): Self = StObject.set(x, "triggerWhenOpen", value.asInstanceOf[js.Any])
+      inline def setTriggerWhenOpen(value: String | ReactElement): Self = StObject.set(x, "triggerWhenOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerWhenOpenUndefined: Self = StObject.set(x, "triggerWhenOpen", js.undefined)
+      inline def setTriggerWhenOpenUndefined: Self = StObject.set(x, "triggerWhenOpen", js.undefined)
     }
   }
 }

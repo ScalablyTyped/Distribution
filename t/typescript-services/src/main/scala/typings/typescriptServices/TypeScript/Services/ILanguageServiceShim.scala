@@ -62,8 +62,7 @@ trait ILanguageServiceShim
 }
 object ILanguageServiceShim {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cleanupSemanticCache: () => Unit,
     dispose: js.Any => Unit,
     getBraceMatchingAtPosition: (String, Double) => String,
@@ -96,85 +95,58 @@ object ILanguageServiceShim {
     __obj.asInstanceOf[ILanguageServiceShim]
   }
   
-  @scala.inline
-  implicit class ILanguageServiceShimMutableBuilder[Self <: ILanguageServiceShim] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageServiceShim](x: Self) {
     
-    @scala.inline
-    def setCleanupSemanticCache(value: () => Unit): Self = StObject.set(x, "cleanupSemanticCache", js.Any.fromFunction0(value))
+    inline def setCleanupSemanticCache(value: () => Unit): Self = StObject.set(x, "cleanupSemanticCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBraceMatchingAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getBraceMatchingAtPosition", js.Any.fromFunction2(value))
+    inline def setGetBraceMatchingAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getBraceMatchingAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBreakpointStatementAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getBreakpointStatementAtPosition", js.Any.fromFunction2(value))
+    inline def setGetBreakpointStatementAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getBreakpointStatementAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCompilerOptionsDiagnostics(value: () => String): Self = StObject.set(x, "getCompilerOptionsDiagnostics", js.Any.fromFunction0(value))
+    inline def setGetCompilerOptionsDiagnostics(value: () => String): Self = StObject.set(x, "getCompilerOptionsDiagnostics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCompletionEntryDetails(value: (String, Double, String) => String): Self = StObject.set(x, "getCompletionEntryDetails", js.Any.fromFunction3(value))
+    inline def setGetCompletionEntryDetails(value: (String, Double, String) => String): Self = StObject.set(x, "getCompletionEntryDetails", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetCompletionsAtPosition(value: (String, Double, Boolean) => String): Self = StObject.set(x, "getCompletionsAtPosition", js.Any.fromFunction3(value))
+    inline def setGetCompletionsAtPosition(value: (String, Double, Boolean) => String): Self = StObject.set(x, "getCompletionsAtPosition", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetDefinitionAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getDefinitionAtPosition", js.Any.fromFunction2(value))
+    inline def setGetDefinitionAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getDefinitionAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetEmitOutput(value: String => String): Self = StObject.set(x, "getEmitOutput", js.Any.fromFunction1(value))
+    inline def setGetEmitOutput(value: String => String): Self = StObject.set(x, "getEmitOutput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFormattingEditsAfterKeystroke(value: (String, Double, String, String) => String): Self = StObject.set(x, "getFormattingEditsAfterKeystroke", js.Any.fromFunction4(value))
+    inline def setGetFormattingEditsAfterKeystroke(value: (String, Double, String, String) => String): Self = StObject.set(x, "getFormattingEditsAfterKeystroke", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetFormattingEditsForDocument(value: (String, Double, Double, String) => String): Self = StObject.set(x, "getFormattingEditsForDocument", js.Any.fromFunction4(value))
+    inline def setGetFormattingEditsForDocument(value: (String, Double, Double, String) => String): Self = StObject.set(x, "getFormattingEditsForDocument", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetFormattingEditsForRange(value: (String, Double, Double, String) => String): Self = StObject.set(x, "getFormattingEditsForRange", js.Any.fromFunction4(value))
+    inline def setGetFormattingEditsForRange(value: (String, Double, Double, String) => String): Self = StObject.set(x, "getFormattingEditsForRange", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetFormattingEditsOnPaste(value: (String, Double, Double, String) => String): Self = StObject.set(x, "getFormattingEditsOnPaste", js.Any.fromFunction4(value))
+    inline def setGetFormattingEditsOnPaste(value: (String, Double, Double, String) => String): Self = StObject.set(x, "getFormattingEditsOnPaste", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetImplementorsAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getImplementorsAtPosition", js.Any.fromFunction2(value))
+    inline def setGetImplementorsAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getImplementorsAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetIndentationAtPosition(value: (String, Double, String) => String): Self = StObject.set(x, "getIndentationAtPosition", js.Any.fromFunction3(value))
+    inline def setGetIndentationAtPosition(value: (String, Double, String) => String): Self = StObject.set(x, "getIndentationAtPosition", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetNameOrDottedNameSpan(value: (String, Double, Double) => String): Self = StObject.set(x, "getNameOrDottedNameSpan", js.Any.fromFunction3(value))
+    inline def setGetNameOrDottedNameSpan(value: (String, Double, Double) => String): Self = StObject.set(x, "getNameOrDottedNameSpan", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetNavigateToItems(value: String => String): Self = StObject.set(x, "getNavigateToItems", js.Any.fromFunction1(value))
+    inline def setGetNavigateToItems(value: String => String): Self = StObject.set(x, "getNavigateToItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOccurrencesAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getOccurrencesAtPosition", js.Any.fromFunction2(value))
+    inline def setGetOccurrencesAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getOccurrencesAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetOutliningRegions(value: String => String): Self = StObject.set(x, "getOutliningRegions", js.Any.fromFunction1(value))
+    inline def setGetOutliningRegions(value: String => String): Self = StObject.set(x, "getOutliningRegions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetReferencesAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getReferencesAtPosition", js.Any.fromFunction2(value))
+    inline def setGetReferencesAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getReferencesAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetScriptLexicalStructure(value: String => String): Self = StObject.set(x, "getScriptLexicalStructure", js.Any.fromFunction1(value))
+    inline def setGetScriptLexicalStructure(value: String => String): Self = StObject.set(x, "getScriptLexicalStructure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSemanticDiagnostics(value: String => String): Self = StObject.set(x, "getSemanticDiagnostics", js.Any.fromFunction1(value))
+    inline def setGetSemanticDiagnostics(value: String => String): Self = StObject.set(x, "getSemanticDiagnostics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSignatureAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getSignatureAtPosition", js.Any.fromFunction2(value))
+    inline def setGetSignatureAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getSignatureAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSyntacticDiagnostics(value: String => String): Self = StObject.set(x, "getSyntacticDiagnostics", js.Any.fromFunction1(value))
+    inline def setGetSyntacticDiagnostics(value: String => String): Self = StObject.set(x, "getSyntacticDiagnostics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTypeAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getTypeAtPosition", js.Any.fromFunction2(value))
+    inline def setGetTypeAtPosition(value: (String, Double) => String): Self = StObject.set(x, "getTypeAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLanguageService(value: ILanguageService): Self = StObject.set(x, "languageService", value.asInstanceOf[js.Any])
+    inline def setLanguageService(value: ILanguageService): Self = StObject.set(x, "languageService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: Boolean => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+    inline def setRefresh(value: Boolean => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
   }
 }

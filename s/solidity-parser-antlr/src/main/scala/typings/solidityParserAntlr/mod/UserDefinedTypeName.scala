@@ -17,20 +17,16 @@ trait UserDefinedTypeName
 }
 object UserDefinedTypeName {
   
-  @scala.inline
-  def apply(namePath: String): UserDefinedTypeName = {
+  inline def apply(namePath: String): UserDefinedTypeName = {
     val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("UserDefinedTypeName")
     __obj.asInstanceOf[UserDefinedTypeName]
   }
   
-  @scala.inline
-  implicit class UserDefinedTypeNameMutableBuilder[Self <: UserDefinedTypeName] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedTypeName](x: Self) {
     
-    @scala.inline
-    def setNamePath(value: String): Self = StObject.set(x, "namePath", value.asInstanceOf[js.Any])
+    inline def setNamePath(value: String): Self = StObject.set(x, "namePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

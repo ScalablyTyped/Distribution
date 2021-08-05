@@ -18,22 +18,17 @@ trait SchemaNamedStyles extends StObject {
 }
 object SchemaNamedStyles {
   
-  @scala.inline
-  def apply(): SchemaNamedStyles = {
+  inline def apply(): SchemaNamedStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNamedStyles]
   }
   
-  @scala.inline
-  implicit class SchemaNamedStylesMutableBuilder[Self <: SchemaNamedStyles] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNamedStyles](x: Self) {
     
-    @scala.inline
-    def setStyles(value: js.Array[SchemaNamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[SchemaNamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setStylesVarargs(value: SchemaNamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: SchemaNamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

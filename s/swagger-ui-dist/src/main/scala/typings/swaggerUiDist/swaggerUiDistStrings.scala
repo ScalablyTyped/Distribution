@@ -8,16 +8,13 @@ object swaggerUiDistStrings {
   
   @js.native
   sealed trait full extends StObject
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait list extends StObject
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

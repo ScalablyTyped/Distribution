@@ -64,7 +64,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -72,7 +72,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -105,8 +105,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -125,7 +125,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -134,8 +134,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -219,7 +219,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -227,7 +227,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -271,8 +271,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -291,7 +291,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -300,8 +300,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -393,7 +393,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -401,7 +401,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -434,8 +434,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -454,7 +454,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -463,8 +463,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -534,12 +534,9 @@ object resources {
       * @param {boolean|string} [crossorigin=true] - Cross origin value to use
       */
     /* static member */
-    @scala.inline
-    def crossOrigin(element: HTMLElement, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crossOrigin")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def crossOrigin(element: HTMLElement, url: String, crossorigin: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crossOrigin")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any], crossorigin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def crossOrigin(element: HTMLElement, url: String, crossorigin: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crossOrigin")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any], crossorigin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def crossOrigin(element: HTMLElement, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crossOrigin")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def crossOrigin(element: HTMLElement, url: String, crossorigin: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crossOrigin")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any], crossorigin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def crossOrigin(element: HTMLElement, url: String, crossorigin: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crossOrigin")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any], crossorigin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -562,7 +559,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -570,7 +567,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -612,8 +609,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -632,7 +629,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -641,8 +638,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -726,8 +723,7 @@ object resources {
       * @return {boolean} `true` if <canvas>
       */
     /* static member */
-    @scala.inline
-    def test(source: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(source: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -749,7 +745,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -757,7 +753,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -790,8 +786,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -810,7 +806,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -819,8 +815,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -890,10 +886,8 @@ object resources {
       * @return {boolean} `true` if source is HTMLCanvasElement or OffscreenCanvas
       */
     /* static member */
-    @scala.inline
-    def test(source: HTMLCanvasElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def test(source: OffscreenCanvas): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(source: HTMLCanvasElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(source: OffscreenCanvas): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -925,7 +919,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -933,7 +927,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -977,8 +971,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -997,7 +991,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -1005,7 +999,7 @@ object resources {
       * @member {boolean} PIXI.resources.CubeResource#linkBaseTexture
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var linkBaseTexture: Boolean = js.native
     
     /**
@@ -1014,8 +1008,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -1110,8 +1104,7 @@ object resources {
     @JSGlobal("PIXI.resources.CubeResource.SIDES")
     @js.native
     def SIDES: Double = js.native
-    @scala.inline
-    def SIDES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDES")(x.asInstanceOf[js.Any])
+    inline def SIDES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDES")(x.asInstanceOf[js.Any])
     
     /**
       * Used to auto-detect the type of resource.
@@ -1121,8 +1114,7 @@ object resources {
       * @return {boolean} `true` if source is an array of 6 elements
       */
     /* static member */
-    @scala.inline
-    def test(source: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(source: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -1142,7 +1134,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -1150,7 +1142,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -1192,8 +1184,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -1212,7 +1204,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -1221,8 +1213,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -1322,8 +1314,7 @@ object resources {
   @JSGlobal("PIXI.resources.INSTALLED")
   @js.native
   def INSTALLED: js.Array[js.Any] = js.native
-  @scala.inline
-  def INSTALLED_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSTALLED")(x.asInstanceOf[js.Any])
+  inline def INSTALLED_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSTALLED")(x.asInstanceOf[js.Any])
   
   /**
     * Resource type for ImageBitmap.
@@ -1344,7 +1335,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -1352,7 +1343,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -1385,8 +1376,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -1405,7 +1396,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -1414,8 +1405,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -1485,8 +1476,7 @@ object resources {
       * @return {boolean} `true` if source is an ImageBitmap
       */
     /* static member */
-    @scala.inline
-    def test(source: ImageBitmap): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(source: ImageBitmap): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -1510,7 +1500,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -1518,7 +1508,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -1551,8 +1541,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -1571,7 +1561,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -1580,8 +1570,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -1651,10 +1641,8 @@ object resources {
       * @return {boolean} `true` if source is string or HTMLImageElement
       */
     /* static member */
-    @scala.inline
-    def test(source: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def test(source: HTMLImageElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(source: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(source: HTMLImageElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -1679,7 +1667,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -1687,7 +1675,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -1720,8 +1708,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -1740,7 +1728,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -1749,8 +1737,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -1820,8 +1808,7 @@ object resources {
       * @param {string} extension - The extension of source, if set
       */
     /* static member */
-    @scala.inline
-    def test(source: js.Any, `extension`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def test(source: js.Any, `extension`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -1849,7 +1836,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -1857,7 +1844,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -1890,8 +1877,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -1910,7 +1897,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -1919,8 +1906,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -2003,8 +1990,7 @@ object resources {
       * @return {PIXI.ISize} image extension
       */
     /* static member */
-    @scala.inline
-    def getSize(svgString: String): ISize = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(svgString.asInstanceOf[js.Any]).asInstanceOf[ISize]
+    inline def getSize(svgString: String): ISize = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(svgString.asInstanceOf[js.Any]).asInstanceOf[ISize]
     
     /**
       * Used to auto-detect the type of resource.
@@ -2014,8 +2000,7 @@ object resources {
       * @param {string} extension - The extension of source, if set
       */
     /* static member */
-    @scala.inline
-    def test(source: js.Any, `extension`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def test(source: js.Any, `extension`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -2050,7 +2035,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _height: Double = js.native
     
     /**
@@ -2058,7 +2043,7 @@ object resources {
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _width: Double = js.native
     
     /**
@@ -2091,8 +2076,8 @@ object resources {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def dispose(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * The height of the resource.
@@ -2111,7 +2096,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var internal: Boolean = js.native
     
     /**
@@ -2120,8 +2105,8 @@ object resources {
       * @protected
       * @return {Promise<void>} Handle the validate event
       */
-    /* CompleteClass */
-    /* protected */ override def load(): js.Promise[Unit] = js.native
+    /* protected */ /* CompleteClass */
+    override def load(): js.Promise[Unit] = js.native
     
     /**
       * Trigger a resize event
@@ -2216,8 +2201,7 @@ object resources {
       * @return {boolean} `true` if video source
       */
     /* static member */
-    @scala.inline
-    def test(source: js.Any, `extension`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def test(source: js.Any, `extension`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -2249,12 +2233,8 @@ object resources {
     *        texture should be updated from the video. Leave at 0 to update at every render
     * @return {PIXI.resources.Resource} The created resource.
     */
-  @scala.inline
-  def autoDetectResource(source: String): typings.pixiJs.PIXI.resources.Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
-  @scala.inline
-  def autoDetectResource(source: String, options: Crossorigin): typings.pixiJs.PIXI.resources.Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
-  @scala.inline
-  def autoDetectResource(source: js.Any): typings.pixiJs.PIXI.resources.Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
-  @scala.inline
-  def autoDetectResource(source: js.Any, options: Crossorigin): typings.pixiJs.PIXI.resources.Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
+  inline def autoDetectResource(source: String): typings.pixiJs.PIXI.resources.Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
+  inline def autoDetectResource(source: String, options: Crossorigin): typings.pixiJs.PIXI.resources.Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
+  inline def autoDetectResource(source: js.Any): typings.pixiJs.PIXI.resources.Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
+  inline def autoDetectResource(source: js.Any, options: Crossorigin): typings.pixiJs.PIXI.resources.Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.resources.Resource]
 }

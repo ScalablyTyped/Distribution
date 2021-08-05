@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessibilityActionName extends StObject
 object AccessibilityActionName {
   
-  @scala.inline
-  def activate: typings.reactNative.reactNativeStrings.activate = "activate".asInstanceOf[typings.reactNative.reactNativeStrings.activate]
+  inline def activate: typings.reactNative.reactNativeStrings.activate = "activate".asInstanceOf[typings.reactNative.reactNativeStrings.activate]
   
-  @scala.inline
-  def decrement: typings.reactNative.reactNativeStrings.decrement = "decrement".asInstanceOf[typings.reactNative.reactNativeStrings.decrement]
+  inline def decrement: typings.reactNative.reactNativeStrings.decrement = "decrement".asInstanceOf[typings.reactNative.reactNativeStrings.decrement]
   
-  @scala.inline
-  def escape: typings.reactNative.reactNativeStrings.escape = "escape".asInstanceOf[typings.reactNative.reactNativeStrings.escape]
+  inline def escape: typings.reactNative.reactNativeStrings.escape = "escape".asInstanceOf[typings.reactNative.reactNativeStrings.escape]
   
-  @scala.inline
-  def increment: typings.reactNative.reactNativeStrings.increment = "increment".asInstanceOf[typings.reactNative.reactNativeStrings.increment]
+  inline def increment: typings.reactNative.reactNativeStrings.increment = "increment".asInstanceOf[typings.reactNative.reactNativeStrings.increment]
   
-  @scala.inline
-  def longpress: typings.reactNative.reactNativeStrings.longpress = "longpress".asInstanceOf[typings.reactNative.reactNativeStrings.longpress]
+  inline def longpress: typings.reactNative.reactNativeStrings.longpress = "longpress".asInstanceOf[typings.reactNative.reactNativeStrings.longpress]
   
-  @scala.inline
-  def magicTap: typings.reactNative.reactNativeStrings.magicTap = "magicTap".asInstanceOf[typings.reactNative.reactNativeStrings.magicTap]
+  inline def magicTap: typings.reactNative.reactNativeStrings.magicTap = "magicTap".asInstanceOf[typings.reactNative.reactNativeStrings.magicTap]
 }

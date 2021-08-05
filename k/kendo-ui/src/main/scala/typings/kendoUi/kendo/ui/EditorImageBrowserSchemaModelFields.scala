@@ -14,31 +14,23 @@ trait EditorImageBrowserSchemaModelFields extends StObject {
 }
 object EditorImageBrowserSchemaModelFields {
   
-  @scala.inline
-  def apply(): EditorImageBrowserSchemaModelFields = {
+  inline def apply(): EditorImageBrowserSchemaModelFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorImageBrowserSchemaModelFields]
   }
   
-  @scala.inline
-  implicit class EditorImageBrowserSchemaModelFieldsMutableBuilder[Self <: EditorImageBrowserSchemaModelFields] (val x: Self) extends AnyVal {
+  extension [Self <: EditorImageBrowserSchemaModelFields](x: Self) {
     
-    @scala.inline
-    def setName(value: String | EditorImageBrowserSchemaModelFieldsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | EditorImageBrowserSchemaModelFieldsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSize(value: String | EditorImageBrowserSchemaModelFieldsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String | EditorImageBrowserSchemaModelFieldsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setType(value: String | EditorImageBrowserSchemaModelFieldsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | EditorImageBrowserSchemaModelFieldsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

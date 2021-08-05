@@ -63,79 +63,55 @@ trait PutSessionResponse extends StObject {
 }
 object PutSessionResponse {
   
-  @scala.inline
-  def apply(): PutSessionResponse = {
+  inline def apply(): PutSessionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutSessionResponse]
   }
   
-  @scala.inline
-  implicit class PutSessionResponseMutableBuilder[Self <: PutSessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutSessionResponse](x: Self) {
     
-    @scala.inline
-    def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
+    inline def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
+    inline def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
-    @scala.inline
-    def setAudioStream(value: BlobStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
+    inline def setAudioStream(value: BlobStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
+    inline def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
     
-    @scala.inline
-    def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setDialogState(value: DialogState): Self = StObject.set(x, "dialogState", value.asInstanceOf[js.Any])
+    inline def setDialogState(value: DialogState): Self = StObject.set(x, "dialogState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogStateUndefined: Self = StObject.set(x, "dialogState", js.undefined)
+    inline def setDialogStateUndefined: Self = StObject.set(x, "dialogState", js.undefined)
     
-    @scala.inline
-    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+    inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
+    inline def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+    inline def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+    inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSessionAttributes(value: String): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+    inline def setSessionAttributes(value: String): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
+    inline def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
-    @scala.inline
-    def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
+    inline def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
+    inline def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
     
-    @scala.inline
-    def setSlots(value: String): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: String): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

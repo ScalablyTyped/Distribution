@@ -18,25 +18,19 @@ trait InstanceMonitoring extends StObject {
 }
 object InstanceMonitoring {
   
-  @scala.inline
-  def apply(): InstanceMonitoring = {
+  inline def apply(): InstanceMonitoring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceMonitoring]
   }
   
-  @scala.inline
-  implicit class InstanceMonitoringMutableBuilder[Self <: InstanceMonitoring] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceMonitoring](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setMonitoring(value: Monitoring): Self = StObject.set(x, "Monitoring", value.asInstanceOf[js.Any])
+    inline def setMonitoring(value: Monitoring): Self = StObject.set(x, "Monitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringUndefined: Self = StObject.set(x, "Monitoring", js.undefined)
+    inline def setMonitoringUndefined: Self = StObject.set(x, "Monitoring", js.undefined)
   }
 }

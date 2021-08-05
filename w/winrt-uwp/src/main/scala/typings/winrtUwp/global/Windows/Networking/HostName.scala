@@ -58,6 +58,5 @@ object HostName {
     * @return The return value indicates the lexicographic relation of value1 to value2. If the two parameters represent the same canonical hostname, then zero is returned. If value1 is less than value2, the return value is less than zero. If value1 is greater than value2, the return vale is greater than zero.
     */
   /* static member */
-  @scala.inline
-  def compare(value1: String, value2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(value1: String, value2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

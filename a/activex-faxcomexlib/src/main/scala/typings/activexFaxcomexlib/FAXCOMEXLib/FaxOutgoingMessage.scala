@@ -10,7 +10,7 @@ trait FaxOutgoingMessage
   extends StObject
      with IFaxOutgoingMessage {
   
-  @JSName("FAXCOMEXLib.FaxOutgoingMessage_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxOutgoingMessage_typekey")
   var FAXCOMEXLibDotFaxOutgoingMessage_typekey: FaxOutgoingMessage
   
   /** Has Cover page */
@@ -33,8 +33,7 @@ trait FaxOutgoingMessage
 }
 object FaxOutgoingMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CSID: String,
     CopyTiff: String => Unit,
     Delete: () => Unit,
@@ -67,28 +66,20 @@ object FaxOutgoingMessage {
     __obj.asInstanceOf[FaxOutgoingMessage]
   }
   
-  @scala.inline
-  implicit class FaxOutgoingMessageMutableBuilder[Self <: FaxOutgoingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: FaxOutgoingMessage](x: Self) {
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxOutgoingMessage_typekey(value: FaxOutgoingMessage): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingMessage_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxOutgoingMessage_typekey(value: FaxOutgoingMessage): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingMessage_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCoverPage(value: Boolean): Self = StObject.set(x, "HasCoverPage", value.asInstanceOf[js.Any])
+    inline def setHasCoverPage(value: Boolean): Self = StObject.set(x, "HasCoverPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: Boolean): Self = StObject.set(x, "Read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Boolean): Self = StObject.set(x, "Read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptAddress(value: String): Self = StObject.set(x, "ReceiptAddress", value.asInstanceOf[js.Any])
+    inline def setReceiptAddress(value: String): Self = StObject.set(x, "ReceiptAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptType(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "ReceiptType", value.asInstanceOf[js.Any])
+    inline def setReceiptType(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "ReceiptType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
   }
 }

@@ -10,8 +10,7 @@ trait FakeTexture
      with Texture
 object FakeTexture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _image: HTMLImageElement,
     dispose: () => Unit,
     getImage: () => HTMLImageElement,

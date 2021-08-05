@@ -38,8 +38,7 @@ object colorInputUniDriverMod {
   }
   object ColorInputUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: () => js.Promise[Unit],
       click: () => js.Promise[Unit],
       clickColorViewer: () => js.Promise[Unit],
@@ -59,41 +58,29 @@ object colorInputUniDriverMod {
       __obj.asInstanceOf[ColorInputUniDriver]
     }
     
-    @scala.inline
-    implicit class ColorInputUniDriverMutableBuilder[Self <: ColorInputUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ColorInputUniDriver](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickColorViewer(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickColorViewer", js.Any.fromFunction0(value))
+      inline def setClickColorViewer(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickColorViewer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setColorPickerVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "colorPickerVisible", js.Any.fromFunction0(value))
+      inline def setColorPickerVisible(value: () => js.Promise[Boolean]): Self = StObject.set(x, "colorPickerVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConfirm(value: () => js.Promise[Unit]): Self = StObject.set(x, "confirm", js.Any.fromFunction0(value))
+      inline def setConfirm(value: () => js.Promise[Unit]): Self = StObject.set(x, "confirm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPlaceholder(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
+      inline def setGetPlaceholder(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => js.Promise[InputSize | Null]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => js.Promise[InputSize | Null]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
+      inline def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

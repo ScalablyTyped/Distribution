@@ -12,19 +12,15 @@ trait RecreateSubscriptionResult extends StObject {
 }
 object RecreateSubscriptionResult {
   
-  @scala.inline
-  def apply(eventType: String, repositoryType: String): RecreateSubscriptionResult = {
+  inline def apply(eventType: String, repositoryType: String): RecreateSubscriptionResult = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], repositoryType = repositoryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecreateSubscriptionResult]
   }
   
-  @scala.inline
-  implicit class RecreateSubscriptionResultMutableBuilder[Self <: RecreateSubscriptionResult] (val x: Self) extends AnyVal {
+  extension [Self <: RecreateSubscriptionResult](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryType(value: String): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
+    inline def setRepositoryType(value: String): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
   }
 }

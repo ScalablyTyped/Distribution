@@ -16,19 +16,15 @@ trait SchemaUserAsset extends StObject {
 }
 object SchemaUserAsset {
   
-  @scala.inline
-  def apply(): SchemaUserAsset = {
+  inline def apply(): SchemaUserAsset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserAsset]
   }
   
-  @scala.inline
-  implicit class SchemaUserAssetMutableBuilder[Self <: SchemaUserAsset] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserAsset](x: Self) {
     
-    @scala.inline
-    def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+    inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
   }
 }

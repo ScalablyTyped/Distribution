@@ -16,19 +16,15 @@ trait SchemaGrafeasV1beta1DiscoveryDetails extends StObject {
 }
 object SchemaGrafeasV1beta1DiscoveryDetails {
   
-  @scala.inline
-  def apply(): SchemaGrafeasV1beta1DiscoveryDetails = {
+  inline def apply(): SchemaGrafeasV1beta1DiscoveryDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGrafeasV1beta1DiscoveryDetails]
   }
   
-  @scala.inline
-  implicit class SchemaGrafeasV1beta1DiscoveryDetailsMutableBuilder[Self <: SchemaGrafeasV1beta1DiscoveryDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGrafeasV1beta1DiscoveryDetails](x: Self) {
     
-    @scala.inline
-    def setDiscovered(value: SchemaDiscovered): Self = StObject.set(x, "discovered", value.asInstanceOf[js.Any])
+    inline def setDiscovered(value: SchemaDiscovered): Self = StObject.set(x, "discovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoveredUndefined: Self = StObject.set(x, "discovered", js.undefined)
+    inline def setDiscoveredUndefined: Self = StObject.set(x, "discovered", js.undefined)
   }
 }

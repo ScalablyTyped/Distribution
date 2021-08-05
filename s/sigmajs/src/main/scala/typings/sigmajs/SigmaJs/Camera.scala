@@ -28,8 +28,7 @@ trait Camera extends StObject {
 }
 object Camera {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angle: Double,
     cameraPosition: (Double, Double) => X,
     goTo: StringDictionary[js.Any] => Unit,
@@ -44,34 +43,24 @@ object Camera {
     __obj.asInstanceOf[Camera]
   }
   
-  @scala.inline
-  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
+  extension [Self <: Camera](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraPosition(value: (Double, Double) => X): Self = StObject.set(x, "cameraPosition", js.Any.fromFunction2(value))
+    inline def setCameraPosition(value: (Double, Double) => X): Self = StObject.set(x, "cameraPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoTo(value: StringDictionary[js.Any] => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
+    inline def setGoTo(value: StringDictionary[js.Any] => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGraphPosition(value: (Double, Double) => X): Self = StObject.set(x, "graphPosition", js.Any.fromFunction2(value))
+    inline def setGraphPosition(value: (Double, Double) => X): Self = StObject.set(x, "graphPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPrefix(value: String): Self = StObject.set(x, "readPrefix", value.asInstanceOf[js.Any])
+    inline def setReadPrefix(value: String): Self = StObject.set(x, "readPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: String => js.Any): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
+    inline def setSettings(value: String => js.Any): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

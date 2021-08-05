@@ -22,110 +22,92 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.dsaSha1")
     @js.native
     def dsaSha1: String = js.native
-    @scala.inline
-    def dsaSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsaSha1")(x.asInstanceOf[js.Any])
+    inline def dsaSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsaSha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.dsaSha256")
     @js.native
     def dsaSha256: String = js.native
-    @scala.inline
-    def dsaSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsaSha256")(x.asInstanceOf[js.Any])
+    inline def dsaSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsaSha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.ecdsaP256Sha256")
     @js.native
     def ecdsaP256Sha256: String = js.native
-    @scala.inline
-    def ecdsaP256Sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsaP256Sha256")(x.asInstanceOf[js.Any])
+    inline def ecdsaP256Sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsaP256Sha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.ecdsaP384Sha384")
     @js.native
     def ecdsaP384Sha384: String = js.native
-    @scala.inline
-    def ecdsaP384Sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsaP384Sha384")(x.asInstanceOf[js.Any])
+    inline def ecdsaP384Sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsaP384Sha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.ecdsaP521Sha512")
     @js.native
     def ecdsaP521Sha512: String = js.native
-    @scala.inline
-    def ecdsaP521Sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsaP521Sha512")(x.asInstanceOf[js.Any])
+    inline def ecdsaP521Sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsaP521Sha512")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaOaepSha1")
     @js.native
     def rsaOaepSha1: String = js.native
-    @scala.inline
-    def rsaOaepSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha1")(x.asInstanceOf[js.Any])
+    inline def rsaOaepSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaOaepSha256")
     @js.native
     def rsaOaepSha256: String = js.native
-    @scala.inline
-    def rsaOaepSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha256")(x.asInstanceOf[js.Any])
+    inline def rsaOaepSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaOaepSha384")
     @js.native
     def rsaOaepSha384: String = js.native
-    @scala.inline
-    def rsaOaepSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha384")(x.asInstanceOf[js.Any])
+    inline def rsaOaepSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaOaepSha512")
     @js.native
     def rsaOaepSha512: String = js.native
-    @scala.inline
-    def rsaOaepSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha512")(x.asInstanceOf[js.Any])
+    inline def rsaOaepSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaOaepSha512")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaPkcs1")
     @js.native
     def rsaPkcs1: String = js.native
-    @scala.inline
-    def rsaPkcs1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaPkcs1")(x.asInstanceOf[js.Any])
+    inline def rsaPkcs1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaPkcs1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPkcs1Sha1")
     @js.native
     def rsaSignPkcs1Sha1: String = js.native
-    @scala.inline
-    def rsaSignPkcs1Sha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha1")(x.asInstanceOf[js.Any])
+    inline def rsaSignPkcs1Sha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPkcs1Sha256")
     @js.native
     def rsaSignPkcs1Sha256: String = js.native
-    @scala.inline
-    def rsaSignPkcs1Sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha256")(x.asInstanceOf[js.Any])
+    inline def rsaSignPkcs1Sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPkcs1Sha384")
     @js.native
     def rsaSignPkcs1Sha384: String = js.native
-    @scala.inline
-    def rsaSignPkcs1Sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha384")(x.asInstanceOf[js.Any])
+    inline def rsaSignPkcs1Sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPkcs1Sha512")
     @js.native
     def rsaSignPkcs1Sha512: String = js.native
-    @scala.inline
-    def rsaSignPkcs1Sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha512")(x.asInstanceOf[js.Any])
+    inline def rsaSignPkcs1Sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPkcs1Sha512")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPssSha1")
     @js.native
     def rsaSignPssSha1: String = js.native
-    @scala.inline
-    def rsaSignPssSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha1")(x.asInstanceOf[js.Any])
+    inline def rsaSignPssSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPssSha256")
     @js.native
     def rsaSignPssSha256: String = js.native
-    @scala.inline
-    def rsaSignPssSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha256")(x.asInstanceOf[js.Any])
+    inline def rsaSignPssSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPssSha384")
     @js.native
     def rsaSignPssSha384: String = js.native
-    @scala.inline
-    def rsaSignPssSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha384")(x.asInstanceOf[js.Any])
+    inline def rsaSignPssSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames.rsaSignPssSha512")
     @js.native
     def rsaSignPssSha512: String = js.native
-    @scala.inline
-    def rsaSignPssSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha512")(x.asInstanceOf[js.Any])
+    inline def rsaSignPssSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsaSignPssSha512")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
@@ -140,8 +122,7 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider]
+    inline def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
@@ -156,11 +137,9 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
+    inline def decrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @scala.inline
-    def decryptAndAuthenticate(
+    inline def decryptAndAuthenticate(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       data: IBuffer,
       nonce: IBuffer,
@@ -168,29 +147,24 @@ object Core {
       authenticatedData: IBuffer
     ): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptAndAuthenticate")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], authenticationTag.asInstanceOf[js.Any], authenticatedData.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @scala.inline
-    def deriveKeyMaterial(
+    inline def deriveKeyMaterial(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       parameters: typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters,
       desiredKeySize: Double
     ): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("deriveKeyMaterial")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], desiredKeySize.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @scala.inline
-    def encrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
+    inline def encrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @scala.inline
-    def encryptAndAuthenticate(
+    inline def encryptAndAuthenticate(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       data: IBuffer,
       nonce: IBuffer,
       authenticatedData: IBuffer
     ): typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptAndAuthenticate")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], authenticatedData.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData]
     
-    @scala.inline
-    def sign(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
+    inline def sign(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @scala.inline
-    def verifySignature(
+    inline def verifySignature(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       data: IBuffer,
       signature: IBuffer
@@ -280,32 +254,27 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames.md5")
     @js.native
     def md5: String = js.native
-    @scala.inline
-    def md5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
+    inline def md5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames.sha1")
     @js.native
     def sha1: String = js.native
-    @scala.inline
-    def sha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
+    inline def sha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames.sha256")
     @js.native
     def sha256: String = js.native
-    @scala.inline
-    def sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
+    inline def sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames.sha384")
     @js.native
     def sha384: String = js.native
-    @scala.inline
-    def sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
+    inline def sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames.sha512")
     @js.native
     def sha512: String = js.native
-    @scala.inline
-    def sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
+    inline def sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
@@ -333,8 +302,7 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider]
+    inline def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames")
@@ -352,92 +320,77 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.pbkdf2Md5")
     @js.native
     def pbkdf2Md5: String = js.native
-    @scala.inline
-    def pbkdf2Md5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Md5")(x.asInstanceOf[js.Any])
+    inline def pbkdf2Md5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Md5")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.pbkdf2Sha1")
     @js.native
     def pbkdf2Sha1: String = js.native
-    @scala.inline
-    def pbkdf2Sha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha1")(x.asInstanceOf[js.Any])
+    inline def pbkdf2Sha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.pbkdf2Sha256")
     @js.native
     def pbkdf2Sha256: String = js.native
-    @scala.inline
-    def pbkdf2Sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha256")(x.asInstanceOf[js.Any])
+    inline def pbkdf2Sha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.pbkdf2Sha384")
     @js.native
     def pbkdf2Sha384: String = js.native
-    @scala.inline
-    def pbkdf2Sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha384")(x.asInstanceOf[js.Any])
+    inline def pbkdf2Sha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.pbkdf2Sha512")
     @js.native
     def pbkdf2Sha512: String = js.native
-    @scala.inline
-    def pbkdf2Sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha512")(x.asInstanceOf[js.Any])
+    inline def pbkdf2Sha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pbkdf2Sha512")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp800108CtrHmacMd5")
     @js.native
     def sp800108CtrHmacMd5: String = js.native
-    @scala.inline
-    def sp800108CtrHmacMd5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacMd5")(x.asInstanceOf[js.Any])
+    inline def sp800108CtrHmacMd5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacMd5")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp800108CtrHmacSha1")
     @js.native
     def sp800108CtrHmacSha1: String = js.native
-    @scala.inline
-    def sp800108CtrHmacSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha1")(x.asInstanceOf[js.Any])
+    inline def sp800108CtrHmacSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp800108CtrHmacSha256")
     @js.native
     def sp800108CtrHmacSha256: String = js.native
-    @scala.inline
-    def sp800108CtrHmacSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha256")(x.asInstanceOf[js.Any])
+    inline def sp800108CtrHmacSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp800108CtrHmacSha384")
     @js.native
     def sp800108CtrHmacSha384: String = js.native
-    @scala.inline
-    def sp800108CtrHmacSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha384")(x.asInstanceOf[js.Any])
+    inline def sp800108CtrHmacSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp800108CtrHmacSha512")
     @js.native
     def sp800108CtrHmacSha512: String = js.native
-    @scala.inline
-    def sp800108CtrHmacSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha512")(x.asInstanceOf[js.Any])
+    inline def sp800108CtrHmacSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp800108CtrHmacSha512")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp80056aConcatMd5")
     @js.native
     def sp80056aConcatMd5: String = js.native
-    @scala.inline
-    def sp80056aConcatMd5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatMd5")(x.asInstanceOf[js.Any])
+    inline def sp80056aConcatMd5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatMd5")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp80056aConcatSha1")
     @js.native
     def sp80056aConcatSha1: String = js.native
-    @scala.inline
-    def sp80056aConcatSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha1")(x.asInstanceOf[js.Any])
+    inline def sp80056aConcatSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp80056aConcatSha256")
     @js.native
     def sp80056aConcatSha256: String = js.native
-    @scala.inline
-    def sp80056aConcatSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha256")(x.asInstanceOf[js.Any])
+    inline def sp80056aConcatSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp80056aConcatSha384")
     @js.native
     def sp80056aConcatSha384: String = js.native
-    @scala.inline
-    def sp80056aConcatSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha384")(x.asInstanceOf[js.Any])
+    inline def sp80056aConcatSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames.sp80056aConcatSha512")
     @js.native
     def sp80056aConcatSha512: String = js.native
-    @scala.inline
-    def sp80056aConcatSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha512")(x.asInstanceOf[js.Any])
+    inline def sp80056aConcatSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sp80056aConcatSha512")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
@@ -459,8 +412,7 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider]
+    inline def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
@@ -482,14 +434,11 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForPbkdf2")(pbkdf2Salt.asInstanceOf[js.Any], iterationCount.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters]
+    inline def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForPbkdf2")(pbkdf2Salt.asInstanceOf[js.Any], iterationCount.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters]
     
-    @scala.inline
-    def buildForSP800108(label: IBuffer, context: IBuffer): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForSP800108")(label.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters]
+    inline def buildForSP800108(label: IBuffer, context: IBuffer): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForSP800108")(label.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters]
     
-    @scala.inline
-    def buildForSP80056a(
+    inline def buildForSP80056a(
       algorithmId: IBuffer,
       partyUInfo: IBuffer,
       partyVInfo: IBuffer,
@@ -513,38 +462,32 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames.aesCmac")
     @js.native
     def aesCmac: String = js.native
-    @scala.inline
-    def aesCmac_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCmac")(x.asInstanceOf[js.Any])
+    inline def aesCmac_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCmac")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames.hmacMd5")
     @js.native
     def hmacMd5: String = js.native
-    @scala.inline
-    def hmacMd5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacMd5")(x.asInstanceOf[js.Any])
+    inline def hmacMd5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacMd5")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames.hmacSha1")
     @js.native
     def hmacSha1: String = js.native
-    @scala.inline
-    def hmacSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha1")(x.asInstanceOf[js.Any])
+    inline def hmacSha1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha1")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames.hmacSha256")
     @js.native
     def hmacSha256: String = js.native
-    @scala.inline
-    def hmacSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha256")(x.asInstanceOf[js.Any])
+    inline def hmacSha256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames.hmacSha384")
     @js.native
     def hmacSha384: String = js.native
-    @scala.inline
-    def hmacSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha384")(x.asInstanceOf[js.Any])
+    inline def hmacSha384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames.hmacSha512")
     @js.native
     def hmacSha512: String = js.native
-    @scala.inline
-    def hmacSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha512")(x.asInstanceOf[js.Any])
+    inline def hmacSha512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hmacSha512")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
@@ -569,8 +512,7 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider]
+    inline def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames")
@@ -592,17 +534,14 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesCbcPkcs7")
     @js.native
     def aesCbcPkcs7: String = js.native
-    @scala.inline
-    def aesCbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCbcPkcs7")(x.asInstanceOf[js.Any])
+    inline def aesCbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCbcPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def aesCbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCbc")(x.asInstanceOf[js.Any])
+    inline def aesCbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCbc")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesCcm")
     @js.native
     def aesCcm: String = js.native
-    @scala.inline
-    def aesCcm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCcm")(x.asInstanceOf[js.Any])
+    inline def aesCcm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesCcm")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcb")
     @js.native
@@ -611,17 +550,14 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcbPkcs7")
     @js.native
     def aesEcbPkcs7: String = js.native
-    @scala.inline
-    def aesEcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesEcbPkcs7")(x.asInstanceOf[js.Any])
+    inline def aesEcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesEcbPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def aesEcb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesEcb")(x.asInstanceOf[js.Any])
+    inline def aesEcb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesEcb")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesGcm")
     @js.native
     def aesGcm: String = js.native
-    @scala.inline
-    def aesGcm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesGcm")(x.asInstanceOf[js.Any])
+    inline def aesGcm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aesGcm")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.desCbc")
     @js.native
@@ -630,11 +566,9 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.desCbcPkcs7")
     @js.native
     def desCbcPkcs7: String = js.native
-    @scala.inline
-    def desCbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desCbcPkcs7")(x.asInstanceOf[js.Any])
+    inline def desCbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desCbcPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def desCbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desCbc")(x.asInstanceOf[js.Any])
+    inline def desCbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desCbc")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.desEcb")
     @js.native
@@ -643,11 +577,9 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.desEcbPkcs7")
     @js.native
     def desEcbPkcs7: String = js.native
-    @scala.inline
-    def desEcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desEcbPkcs7")(x.asInstanceOf[js.Any])
+    inline def desEcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desEcbPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def desEcb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desEcb")(x.asInstanceOf[js.Any])
+    inline def desEcb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desEcb")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.rc2Cbc")
     @js.native
@@ -656,11 +588,9 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.rc2CbcPkcs7")
     @js.native
     def rc2CbcPkcs7: String = js.native
-    @scala.inline
-    def rc2CbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2CbcPkcs7")(x.asInstanceOf[js.Any])
+    inline def rc2CbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2CbcPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def rc2Cbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2Cbc")(x.asInstanceOf[js.Any])
+    inline def rc2Cbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2Cbc")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.rc2Ecb")
     @js.native
@@ -669,17 +599,14 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.rc2EcbPkcs7")
     @js.native
     def rc2EcbPkcs7: String = js.native
-    @scala.inline
-    def rc2EcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2EcbPkcs7")(x.asInstanceOf[js.Any])
+    inline def rc2EcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2EcbPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def rc2Ecb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2Ecb")(x.asInstanceOf[js.Any])
+    inline def rc2Ecb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc2Ecb")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.rc4")
     @js.native
     def rc4: String = js.native
-    @scala.inline
-    def rc4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc4")(x.asInstanceOf[js.Any])
+    inline def rc4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rc4")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.tripleDesCbc")
     @js.native
@@ -688,11 +615,9 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.tripleDesCbcPkcs7")
     @js.native
     def tripleDesCbcPkcs7: String = js.native
-    @scala.inline
-    def tripleDesCbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesCbcPkcs7")(x.asInstanceOf[js.Any])
+    inline def tripleDesCbcPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesCbcPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def tripleDesCbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesCbc")(x.asInstanceOf[js.Any])
+    inline def tripleDesCbc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesCbc")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.tripleDesEcb")
     @js.native
@@ -701,11 +626,9 @@ object Core {
     @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.tripleDesEcbPkcs7")
     @js.native
     def tripleDesEcbPkcs7: String = js.native
-    @scala.inline
-    def tripleDesEcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesEcbPkcs7")(x.asInstanceOf[js.Any])
+    inline def tripleDesEcbPkcs7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesEcbPkcs7")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def tripleDesEcb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesEcb")(x.asInstanceOf[js.Any])
+    inline def tripleDesEcb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tripleDesEcb")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
@@ -730,7 +653,6 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider]
+    inline def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider]
   }
 }

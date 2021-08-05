@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NightwatchTests extends StObject
 object NightwatchTests {
   
-  @scala.inline
-  def NightwatchTestFunctions(): typings.nightwatch.mod.NightwatchTestFunctions = {
+  inline def NightwatchTestFunctions(): typings.nightwatch.mod.NightwatchTestFunctions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.nightwatch.mod.NightwatchTestFunctions]
   }
   
-  @scala.inline
-  def NightwatchTestHooks(): typings.nightwatch.mod.NightwatchTestHooks = {
+  inline def NightwatchTestHooks(): typings.nightwatch.mod.NightwatchTestHooks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.nightwatch.mod.NightwatchTestHooks]
   }

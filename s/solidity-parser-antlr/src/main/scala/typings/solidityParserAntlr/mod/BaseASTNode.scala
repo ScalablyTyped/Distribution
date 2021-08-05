@@ -14,29 +14,22 @@ trait BaseASTNode extends StObject {
 }
 object BaseASTNode {
   
-  @scala.inline
-  def apply(`type`: ASTNodeTypeString): BaseASTNode = {
+  inline def apply(`type`: ASTNodeTypeString): BaseASTNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseASTNode]
   }
   
-  @scala.inline
-  implicit class BaseASTNodeMutableBuilder[Self <: BaseASTNode] (val x: Self) extends AnyVal {
+  extension [Self <: BaseASTNode](x: Self) {
     
-    @scala.inline
-    def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setType(value: ASTNodeTypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ASTNodeTypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

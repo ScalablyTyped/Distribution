@@ -12,22 +12,17 @@ trait SignerRole extends StObject {
 }
 object SignerRole {
   
-  @scala.inline
-  def apply(name: String): SignerRole = {
+  inline def apply(name: String): SignerRole = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignerRole]
   }
   
-  @scala.inline
-  implicit class SignerRoleMutableBuilder[Self <: SignerRole] (val x: Self) extends AnyVal {
+  extension [Self <: SignerRole](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

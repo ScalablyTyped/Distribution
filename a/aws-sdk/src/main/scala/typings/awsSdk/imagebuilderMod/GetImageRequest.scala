@@ -13,16 +13,13 @@ trait GetImageRequest extends StObject {
 }
 object GetImageRequest {
   
-  @scala.inline
-  def apply(imageBuildVersionArn: ImageVersionArnOrBuildVersionArn): GetImageRequest = {
+  inline def apply(imageBuildVersionArn: ImageVersionArnOrBuildVersionArn): GetImageRequest = {
     val __obj = js.Dynamic.literal(imageBuildVersionArn = imageBuildVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageRequest]
   }
   
-  @scala.inline
-  implicit class GetImageRequestMutableBuilder[Self <: GetImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetImageRequest](x: Self) {
     
-    @scala.inline
-    def setImageBuildVersionArn(value: ImageVersionArnOrBuildVersionArn): Self = StObject.set(x, "imageBuildVersionArn", value.asInstanceOf[js.Any])
+    inline def setImageBuildVersionArn(value: ImageVersionArnOrBuildVersionArn): Self = StObject.set(x, "imageBuildVersionArn", value.asInstanceOf[js.Any])
   }
 }

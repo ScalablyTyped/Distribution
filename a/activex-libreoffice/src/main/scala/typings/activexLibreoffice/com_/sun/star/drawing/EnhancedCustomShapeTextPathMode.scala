@@ -20,14 +20,11 @@ object EnhancedCustomShapeTextPathMode {
     *
     * the point is normal, from the curve discussion view.
     */
-  @scala.inline
-  def NORMAL: `0` = 0.asInstanceOf[`0`]
+  inline def NORMAL: `0` = 0.asInstanceOf[`0`]
   
   /** the text is fit to the path. */
-  @scala.inline
-  def PATH: `1` = 1.asInstanceOf[`1`]
+  inline def PATH: `1` = 1.asInstanceOf[`1`]
   
   /** the text is fit to the bounding box of the shape. */
-  @scala.inline
-  def SHAPE: `2` = 2.asInstanceOf[`2`]
+  inline def SHAPE: `2` = 2.asInstanceOf[`2`]
 }

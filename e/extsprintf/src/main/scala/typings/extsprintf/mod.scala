@@ -10,14 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fprintf(stream: Stream, format: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fprintf")(stream.asInstanceOf[js.Any], format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fprintf(stream: Stream, format: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fprintf")(stream.asInstanceOf[js.Any], format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def printf(format: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("printf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def printf(format: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("printf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def sprintf(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sprintf(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Stream extends StObject {
     
@@ -25,17 +22,14 @@ object mod {
   }
   object Stream {
     
-    @scala.inline
-    def apply(write: String => Unit): Stream = {
+    inline def apply(write: String => Unit): Stream = {
       val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[Stream]
     }
     
-    @scala.inline
-    implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+    extension [Self <: Stream](x: Self) {
       
-      @scala.inline
-      def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

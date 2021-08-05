@@ -18,20 +18,16 @@ trait RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchSt
 }
 object RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchStatementTextTransformation {
   
-  @scala.inline
-  def apply(priority: Double, `type`: String): RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchStatementTextTransformation = {
+  inline def apply(priority: Double, `type`: String): RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchStatementTextTransformation = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchStatementTextTransformation]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchStatementTextTransformationMutableBuilder[Self <: RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchStatementTextTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementNotStatementStatementAndStatementStatementXssMatchStatementTextTransformation](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

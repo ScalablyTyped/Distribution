@@ -67,76 +67,53 @@ trait SchemaEnterprise extends StObject {
 }
 object SchemaEnterprise {
   
-  @scala.inline
-  def apply(): SchemaEnterprise = {
+  inline def apply(): SchemaEnterprise = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnterprise]
   }
   
-  @scala.inline
-  implicit class SchemaEnterpriseMutableBuilder[Self <: SchemaEnterprise] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnterprise](x: Self) {
     
-    @scala.inline
-    def setAppAutoApprovalEnabled(value: Boolean): Self = StObject.set(x, "appAutoApprovalEnabled", value.asInstanceOf[js.Any])
+    inline def setAppAutoApprovalEnabled(value: Boolean): Self = StObject.set(x, "appAutoApprovalEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppAutoApprovalEnabledUndefined: Self = StObject.set(x, "appAutoApprovalEnabled", js.undefined)
+    inline def setAppAutoApprovalEnabledUndefined: Self = StObject.set(x, "appAutoApprovalEnabled", js.undefined)
     
-    @scala.inline
-    def setEnabledNotificationTypes(value: js.Array[String]): Self = StObject.set(x, "enabledNotificationTypes", value.asInstanceOf[js.Any])
+    inline def setEnabledNotificationTypes(value: js.Array[String]): Self = StObject.set(x, "enabledNotificationTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledNotificationTypesUndefined: Self = StObject.set(x, "enabledNotificationTypes", js.undefined)
+    inline def setEnabledNotificationTypesUndefined: Self = StObject.set(x, "enabledNotificationTypes", js.undefined)
     
-    @scala.inline
-    def setEnabledNotificationTypesVarargs(value: String*): Self = StObject.set(x, "enabledNotificationTypes", js.Array(value :_*))
+    inline def setEnabledNotificationTypesVarargs(value: String*): Self = StObject.set(x, "enabledNotificationTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterpriseDisplayName(value: String): Self = StObject.set(x, "enterpriseDisplayName", value.asInstanceOf[js.Any])
+    inline def setEnterpriseDisplayName(value: String): Self = StObject.set(x, "enterpriseDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseDisplayNameUndefined: Self = StObject.set(x, "enterpriseDisplayName", js.undefined)
+    inline def setEnterpriseDisplayNameUndefined: Self = StObject.set(x, "enterpriseDisplayName", js.undefined)
     
-    @scala.inline
-    def setLogo(value: SchemaExternalData): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: SchemaExternalData): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrimaryColor(value: Double): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+    inline def setPrimaryColor(value: Double): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+    inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
     
-    @scala.inline
-    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
+    inline def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
+    inline def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
     
-    @scala.inline
-    def setSigninDetails(value: js.Array[SchemaSigninDetail]): Self = StObject.set(x, "signinDetails", value.asInstanceOf[js.Any])
+    inline def setSigninDetails(value: js.Array[SchemaSigninDetail]): Self = StObject.set(x, "signinDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninDetailsUndefined: Self = StObject.set(x, "signinDetails", js.undefined)
+    inline def setSigninDetailsUndefined: Self = StObject.set(x, "signinDetails", js.undefined)
     
-    @scala.inline
-    def setSigninDetailsVarargs(value: SchemaSigninDetail*): Self = StObject.set(x, "signinDetails", js.Array(value :_*))
+    inline def setSigninDetailsVarargs(value: SchemaSigninDetail*): Self = StObject.set(x, "signinDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setTermsAndConditions(value: js.Array[SchemaTermsAndConditions]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
+    inline def setTermsAndConditions(value: js.Array[SchemaTermsAndConditions]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
+    inline def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
-    @scala.inline
-    def setTermsAndConditionsVarargs(value: SchemaTermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value :_*))
+    inline def setTermsAndConditionsVarargs(value: SchemaTermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value :_*))
   }
 }

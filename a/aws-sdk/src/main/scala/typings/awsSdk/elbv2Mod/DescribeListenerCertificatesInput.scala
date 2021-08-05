@@ -23,28 +23,21 @@ trait DescribeListenerCertificatesInput extends StObject {
 }
 object DescribeListenerCertificatesInput {
   
-  @scala.inline
-  def apply(ListenerArn: ListenerArn): DescribeListenerCertificatesInput = {
+  inline def apply(ListenerArn: ListenerArn): DescribeListenerCertificatesInput = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeListenerCertificatesInput]
   }
   
-  @scala.inline
-  implicit class DescribeListenerCertificatesInputMutableBuilder[Self <: DescribeListenerCertificatesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeListenerCertificatesInput](x: Self) {
     
-    @scala.inline
-    def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
+    inline def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

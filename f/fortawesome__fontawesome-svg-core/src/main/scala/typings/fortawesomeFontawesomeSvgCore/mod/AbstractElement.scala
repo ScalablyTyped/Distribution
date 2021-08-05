@@ -14,28 +14,21 @@ trait AbstractElement extends StObject {
 }
 object AbstractElement {
   
-  @scala.inline
-  def apply(attributes: js.Any, tag: String): AbstractElement = {
+  inline def apply(attributes: js.Any, tag: String): AbstractElement = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractElement]
   }
   
-  @scala.inline
-  implicit class AbstractElementMutableBuilder[Self <: AbstractElement] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractElement](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[AbstractElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[AbstractElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: AbstractElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: AbstractElement*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

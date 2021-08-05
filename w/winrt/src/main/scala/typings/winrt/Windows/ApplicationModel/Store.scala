@@ -36,8 +36,7 @@ object Store {
   }
   object ICurrentApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appId: String,
       getAppReceiptAsync: () => IAsyncOperation[String],
       getProductReceiptAsync: String => IAsyncOperation[String],
@@ -51,32 +50,23 @@ object Store {
       __obj.asInstanceOf[ICurrentApp]
     }
     
-    @scala.inline
-    implicit class ICurrentAppMutableBuilder[Self <: ICurrentApp] (val x: Self) extends AnyVal {
+    extension [Self <: ICurrentApp](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAppReceiptAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getAppReceiptAsync", js.Any.fromFunction0(value))
+      inline def setGetAppReceiptAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getAppReceiptAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetProductReceiptAsync(value: String => IAsyncOperation[String]): Self = StObject.set(x, "getProductReceiptAsync", js.Any.fromFunction1(value))
+      inline def setGetProductReceiptAsync(value: String => IAsyncOperation[String]): Self = StObject.set(x, "getProductReceiptAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLicenseInformation(value: LicenseInformation): Self = StObject.set(x, "licenseInformation", value.asInstanceOf[js.Any])
+      inline def setLicenseInformation(value: LicenseInformation): Self = StObject.set(x, "licenseInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUri(value: Uri): Self = StObject.set(x, "linkUri", value.asInstanceOf[js.Any])
+      inline def setLinkUri(value: Uri): Self = StObject.set(x, "linkUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadListingInformationAsync(value: () => IAsyncOperation[ListingInformation]): Self = StObject.set(x, "loadListingInformationAsync", js.Any.fromFunction0(value))
+      inline def setLoadListingInformationAsync(value: () => IAsyncOperation[ListingInformation]): Self = StObject.set(x, "loadListingInformationAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequestAppPurchaseAsync(value: Boolean => IAsyncOperation[String]): Self = StObject.set(x, "requestAppPurchaseAsync", js.Any.fromFunction1(value))
+      inline def setRequestAppPurchaseAsync(value: Boolean => IAsyncOperation[String]): Self = StObject.set(x, "requestAppPurchaseAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestProductPurchaseAsync(value: (String, Boolean) => IAsyncOperation[String]): Self = StObject.set(x, "requestProductPurchaseAsync", js.Any.fromFunction2(value))
+      inline def setRequestProductPurchaseAsync(value: (String, Boolean) => IAsyncOperation[String]): Self = StObject.set(x, "requestProductPurchaseAsync", js.Any.fromFunction2(value))
     }
   }
   
@@ -102,8 +92,7 @@ object Store {
   }
   object ICurrentAppSimulator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appId: String,
       getAppReceiptAsync: () => IAsyncOperation[String],
       getProductReceiptAsync: String => IAsyncOperation[String],
@@ -118,35 +107,25 @@ object Store {
       __obj.asInstanceOf[ICurrentAppSimulator]
     }
     
-    @scala.inline
-    implicit class ICurrentAppSimulatorMutableBuilder[Self <: ICurrentAppSimulator] (val x: Self) extends AnyVal {
+    extension [Self <: ICurrentAppSimulator](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAppReceiptAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getAppReceiptAsync", js.Any.fromFunction0(value))
+      inline def setGetAppReceiptAsync(value: () => IAsyncOperation[String]): Self = StObject.set(x, "getAppReceiptAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetProductReceiptAsync(value: String => IAsyncOperation[String]): Self = StObject.set(x, "getProductReceiptAsync", js.Any.fromFunction1(value))
+      inline def setGetProductReceiptAsync(value: String => IAsyncOperation[String]): Self = StObject.set(x, "getProductReceiptAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLicenseInformation(value: LicenseInformation): Self = StObject.set(x, "licenseInformation", value.asInstanceOf[js.Any])
+      inline def setLicenseInformation(value: LicenseInformation): Self = StObject.set(x, "licenseInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUri(value: Uri): Self = StObject.set(x, "linkUri", value.asInstanceOf[js.Any])
+      inline def setLinkUri(value: Uri): Self = StObject.set(x, "linkUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadListingInformationAsync(value: () => IAsyncOperation[ListingInformation]): Self = StObject.set(x, "loadListingInformationAsync", js.Any.fromFunction0(value))
+      inline def setLoadListingInformationAsync(value: () => IAsyncOperation[ListingInformation]): Self = StObject.set(x, "loadListingInformationAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReloadSimulatorAsync(value: StorageFile => IAsyncAction): Self = StObject.set(x, "reloadSimulatorAsync", js.Any.fromFunction1(value))
+      inline def setReloadSimulatorAsync(value: StorageFile => IAsyncAction): Self = StObject.set(x, "reloadSimulatorAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestAppPurchaseAsync(value: Boolean => IAsyncOperation[String]): Self = StObject.set(x, "requestAppPurchaseAsync", js.Any.fromFunction1(value))
+      inline def setRequestAppPurchaseAsync(value: Boolean => IAsyncOperation[String]): Self = StObject.set(x, "requestAppPurchaseAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestProductPurchaseAsync(value: (String, Boolean) => IAsyncOperation[String]): Self = StObject.set(x, "requestProductPurchaseAsync", js.Any.fromFunction2(value))
+      inline def setRequestProductPurchaseAsync(value: (String, Boolean) => IAsyncOperation[String]): Self = StObject.set(x, "requestProductPurchaseAsync", js.Any.fromFunction2(value))
     }
   }
   
@@ -164,8 +143,7 @@ object Store {
   }
   object ILicenseInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expirationDate: Date,
       isActive: Boolean,
       isTrial: Boolean,
@@ -176,23 +154,17 @@ object Store {
       __obj.asInstanceOf[ILicenseInformation]
     }
     
-    @scala.inline
-    implicit class ILicenseInformationMutableBuilder[Self <: ILicenseInformation] (val x: Self) extends AnyVal {
+    extension [Self <: ILicenseInformation](x: Self) {
       
-      @scala.inline
-      def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
+      inline def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlicensechanged(value: js.Any): Self = StObject.set(x, "onlicensechanged", value.asInstanceOf[js.Any])
+      inline def setOnlicensechanged(value: js.Any): Self = StObject.set(x, "onlicensechanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductLicenses(value: IMapView[String, ProductLicense]): Self = StObject.set(x, "productLicenses", value.asInstanceOf[js.Any])
+      inline def setProductLicenses(value: IMapView[String, ProductLicense]): Self = StObject.set(x, "productLicenses", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,8 +184,7 @@ object Store {
   }
   object IListingInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ageRating: Double,
       currentMarket: String,
       description: String,
@@ -225,26 +196,19 @@ object Store {
       __obj.asInstanceOf[IListingInformation]
     }
     
-    @scala.inline
-    implicit class IListingInformationMutableBuilder[Self <: IListingInformation] (val x: Self) extends AnyVal {
+    extension [Self <: IListingInformation](x: Self) {
       
-      @scala.inline
-      def setAgeRating(value: Double): Self = StObject.set(x, "ageRating", value.asInstanceOf[js.Any])
+      inline def setAgeRating(value: Double): Self = StObject.set(x, "ageRating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentMarket(value: String): Self = StObject.set(x, "currentMarket", value.asInstanceOf[js.Any])
+      inline def setCurrentMarket(value: String): Self = StObject.set(x, "currentMarket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
+      inline def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductListings(value: IMapView[String, ProductListing]): Self = StObject.set(x, "productListings", value.asInstanceOf[js.Any])
+      inline def setProductListings(value: IMapView[String, ProductListing]): Self = StObject.set(x, "productListings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -258,23 +222,18 @@ object Store {
   }
   object IProductLicense {
     
-    @scala.inline
-    def apply(expirationDate: Date, isActive: Boolean, productId: String): IProductLicense = {
+    inline def apply(expirationDate: Date, isActive: Boolean, productId: String): IProductLicense = {
       val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProductLicense]
     }
     
-    @scala.inline
-    implicit class IProductLicenseMutableBuilder[Self <: IProductLicense] (val x: Self) extends AnyVal {
+    extension [Self <: IProductLicense](x: Self) {
       
-      @scala.inline
-      def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,23 +247,18 @@ object Store {
   }
   object IProductListing {
     
-    @scala.inline
-    def apply(formattedPrice: String, name: String, productId: String): IProductListing = {
+    inline def apply(formattedPrice: String, name: String, productId: String): IProductListing = {
       val __obj = js.Dynamic.literal(formattedPrice = formattedPrice.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProductListing]
     }
     
-    @scala.inline
-    implicit class IProductListingMutableBuilder[Self <: IProductListing] (val x: Self) extends AnyVal {
+    extension [Self <: IProductListing](x: Self) {
       
-      @scala.inline
-      def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
+      inline def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,8 +269,7 @@ object Store {
        with ILicenseInformation
   object LicenseInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expirationDate: Date,
       isActive: Boolean,
       isTrial: Boolean,
@@ -333,8 +286,7 @@ object Store {
        with IListingInformation
   object ListingInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ageRating: Double,
       currentMarket: String,
       description: String,
@@ -352,8 +304,7 @@ object Store {
        with IProductLicense
   object ProductLicense {
     
-    @scala.inline
-    def apply(expirationDate: Date, isActive: Boolean, productId: String): ProductLicense = {
+    inline def apply(expirationDate: Date, isActive: Boolean, productId: String): ProductLicense = {
       val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProductLicense]
     }
@@ -364,8 +315,7 @@ object Store {
        with IProductListing
   object ProductListing {
     
-    @scala.inline
-    def apply(formattedPrice: String, name: String, productId: String): ProductListing = {
+    inline def apply(formattedPrice: String, name: String, productId: String): ProductListing = {
       val __obj = js.Dynamic.literal(formattedPrice = formattedPrice.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProductListing]
     }

@@ -11,48 +11,41 @@ object chaiMomentStrings {
   sealed trait day
     extends StObject
        with Granularity
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait hour
     extends StObject
        with Granularity
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait minute
     extends StObject
        with Granularity
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait month
     extends StObject
        with Granularity
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait second
     extends StObject
        with Granularity
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
+  inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait week
     extends StObject
        with Granularity
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
+  inline def week: week = "week".asInstanceOf[week]
   
   @js.native
   sealed trait year
     extends StObject
        with Granularity
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  inline def year: year = "year".asInstanceOf[year]
 }

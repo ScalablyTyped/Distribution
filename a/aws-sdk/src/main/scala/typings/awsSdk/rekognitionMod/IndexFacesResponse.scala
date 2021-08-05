@@ -28,43 +28,31 @@ trait IndexFacesResponse extends StObject {
 }
 object IndexFacesResponse {
   
-  @scala.inline
-  def apply(): IndexFacesResponse = {
+  inline def apply(): IndexFacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndexFacesResponse]
   }
   
-  @scala.inline
-  implicit class IndexFacesResponseMutableBuilder[Self <: IndexFacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IndexFacesResponse](x: Self) {
     
-    @scala.inline
-    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
+    inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
+    inline def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
     
-    @scala.inline
-    def setFaceRecords(value: FaceRecordList): Self = StObject.set(x, "FaceRecords", value.asInstanceOf[js.Any])
+    inline def setFaceRecords(value: FaceRecordList): Self = StObject.set(x, "FaceRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceRecordsUndefined: Self = StObject.set(x, "FaceRecords", js.undefined)
+    inline def setFaceRecordsUndefined: Self = StObject.set(x, "FaceRecords", js.undefined)
     
-    @scala.inline
-    def setFaceRecordsVarargs(value: FaceRecord*): Self = StObject.set(x, "FaceRecords", js.Array(value :_*))
+    inline def setFaceRecordsVarargs(value: FaceRecord*): Self = StObject.set(x, "FaceRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
+    inline def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
+    inline def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
     
-    @scala.inline
-    def setUnindexedFaces(value: UnindexedFaces): Self = StObject.set(x, "UnindexedFaces", value.asInstanceOf[js.Any])
+    inline def setUnindexedFaces(value: UnindexedFaces): Self = StObject.set(x, "UnindexedFaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnindexedFacesUndefined: Self = StObject.set(x, "UnindexedFaces", js.undefined)
+    inline def setUnindexedFacesUndefined: Self = StObject.set(x, "UnindexedFaces", js.undefined)
     
-    @scala.inline
-    def setUnindexedFacesVarargs(value: UnindexedFace*): Self = StObject.set(x, "UnindexedFaces", js.Array(value :_*))
+    inline def setUnindexedFacesVarargs(value: UnindexedFace*): Self = StObject.set(x, "UnindexedFaces", js.Array(value :_*))
   }
 }

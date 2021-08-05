@@ -33,8 +33,7 @@ trait CreateOptionGroupMessage extends StObject {
 }
 object CreateOptionGroupMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EngineName: String,
     MajorEngineVersion: String,
     OptionGroupDescription: String,
@@ -44,28 +43,20 @@ object CreateOptionGroupMessage {
     __obj.asInstanceOf[CreateOptionGroupMessage]
   }
   
-  @scala.inline
-  implicit class CreateOptionGroupMessageMutableBuilder[Self <: CreateOptionGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOptionGroupMessage](x: Self) {
     
-    @scala.inline
-    def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
+    inline def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorEngineVersion(value: String): Self = StObject.set(x, "MajorEngineVersion", value.asInstanceOf[js.Any])
+    inline def setMajorEngineVersion(value: String): Self = StObject.set(x, "MajorEngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionGroupDescription(value: String): Self = StObject.set(x, "OptionGroupDescription", value.asInstanceOf[js.Any])
+    inline def setOptionGroupDescription(value: String): Self = StObject.set(x, "OptionGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
+    inline def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

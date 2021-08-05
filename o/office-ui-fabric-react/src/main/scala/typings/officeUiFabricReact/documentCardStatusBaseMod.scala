@@ -14,6 +14,6 @@ object documentCardStatusBaseMod {
     extends Component[IDocumentCardStatusProps, js.Any, js.Any] {
     def this(props: IDocumentCardStatusProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
   }
 }

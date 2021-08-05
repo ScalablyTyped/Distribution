@@ -13,19 +13,15 @@ trait CreateSystemInstanceResponse extends StObject {
 }
 object CreateSystemInstanceResponse {
   
-  @scala.inline
-  def apply(): CreateSystemInstanceResponse = {
+  inline def apply(): CreateSystemInstanceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSystemInstanceResponse]
   }
   
-  @scala.inline
-  implicit class CreateSystemInstanceResponseMutableBuilder[Self <: CreateSystemInstanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSystemInstanceResponse](x: Self) {
     
-    @scala.inline
-    def setSummary(value: SystemInstanceSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: SystemInstanceSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

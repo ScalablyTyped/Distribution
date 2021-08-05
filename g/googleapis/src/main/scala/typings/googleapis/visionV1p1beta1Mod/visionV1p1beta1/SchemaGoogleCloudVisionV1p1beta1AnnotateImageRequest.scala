@@ -27,34 +27,25 @@ trait SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequest extends StObject {
 }
 object SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequest = {
+  inline def apply(): SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequestMutableBuilder[Self <: SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p1beta1AnnotateImageRequest](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[SchemaGoogleCloudVisionV1p1beta1Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[SchemaGoogleCloudVisionV1p1beta1Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: SchemaGoogleCloudVisionV1p1beta1Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: SchemaGoogleCloudVisionV1p1beta1Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: SchemaGoogleCloudVisionV1p1beta1Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SchemaGoogleCloudVisionV1p1beta1Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageContext(value: SchemaGoogleCloudVisionV1p1beta1ImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
+    inline def setImageContext(value: SchemaGoogleCloudVisionV1p1beta1ImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
+    inline def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

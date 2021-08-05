@@ -16,8 +16,7 @@ object ObjectSharingInformation {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getListItemSharingInformation(
+  inline def getListItemSharingInformation(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     listID: typings.sharepoint.SP.Guid,
     itemID: Double,
@@ -30,8 +29,7 @@ object ObjectSharingInformation {
   ): typings.sharepoint.SP.ObjectSharingInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("getListItemSharingInformation")(context.asInstanceOf[js.Any], listID.asInstanceOf[js.Any], itemID.asInstanceOf[js.Any], excludeCurrentUser.asInstanceOf[js.Any], excludeSiteAdmin.asInstanceOf[js.Any], excludeSecurityGroups.asInstanceOf[js.Any], retrieveAnonymousLinks.asInstanceOf[js.Any], retrieveUserInfoDetails.asInstanceOf[js.Any], checkForAccessRequests.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ObjectSharingInformation]
   
   /* static member */
-  @scala.inline
-  def getObjectSharingInformation(
+  inline def getObjectSharingInformation(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     securableObject: typings.sharepoint.SP.SecurableObject,
     excludeCurrentUser: Boolean,
@@ -44,8 +42,7 @@ object ObjectSharingInformation {
   ): typings.sharepoint.SP.ObjectSharingInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("getObjectSharingInformation")(context.asInstanceOf[js.Any], securableObject.asInstanceOf[js.Any], excludeCurrentUser.asInstanceOf[js.Any], excludeSiteAdmin.asInstanceOf[js.Any], excludeSecurityGroups.asInstanceOf[js.Any], retrieveAnonymousLinks.asInstanceOf[js.Any], retrieveUserInfoDetails.asInstanceOf[js.Any], checkForAccessRequests.asInstanceOf[js.Any], retrievePermissionLevels.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ObjectSharingInformation]
   
   /* static member */
-  @scala.inline
-  def getWebSharingInformation(
+  inline def getWebSharingInformation(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     excludeCurrentUser: Boolean,
     excludeSiteAdmin: Boolean,

@@ -37,55 +37,39 @@ trait JobOperation extends StObject {
 }
 object JobOperation {
   
-  @scala.inline
-  def apply(): JobOperation = {
+  inline def apply(): JobOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobOperation]
   }
   
-  @scala.inline
-  implicit class JobOperationMutableBuilder[Self <: JobOperation] (val x: Self) extends AnyVal {
+  extension [Self <: JobOperation](x: Self) {
     
-    @scala.inline
-    def setLambdaInvoke(value: LambdaInvokeOperation): Self = StObject.set(x, "LambdaInvoke", value.asInstanceOf[js.Any])
+    inline def setLambdaInvoke(value: LambdaInvokeOperation): Self = StObject.set(x, "LambdaInvoke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaInvokeUndefined: Self = StObject.set(x, "LambdaInvoke", js.undefined)
+    inline def setLambdaInvokeUndefined: Self = StObject.set(x, "LambdaInvoke", js.undefined)
     
-    @scala.inline
-    def setS3InitiateRestoreObject(value: S3InitiateRestoreObjectOperation): Self = StObject.set(x, "S3InitiateRestoreObject", value.asInstanceOf[js.Any])
+    inline def setS3InitiateRestoreObject(value: S3InitiateRestoreObjectOperation): Self = StObject.set(x, "S3InitiateRestoreObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3InitiateRestoreObjectUndefined: Self = StObject.set(x, "S3InitiateRestoreObject", js.undefined)
+    inline def setS3InitiateRestoreObjectUndefined: Self = StObject.set(x, "S3InitiateRestoreObject", js.undefined)
     
-    @scala.inline
-    def setS3PutObjectAcl(value: S3SetObjectAclOperation): Self = StObject.set(x, "S3PutObjectAcl", value.asInstanceOf[js.Any])
+    inline def setS3PutObjectAcl(value: S3SetObjectAclOperation): Self = StObject.set(x, "S3PutObjectAcl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PutObjectAclUndefined: Self = StObject.set(x, "S3PutObjectAcl", js.undefined)
+    inline def setS3PutObjectAclUndefined: Self = StObject.set(x, "S3PutObjectAcl", js.undefined)
     
-    @scala.inline
-    def setS3PutObjectCopy(value: S3CopyObjectOperation): Self = StObject.set(x, "S3PutObjectCopy", value.asInstanceOf[js.Any])
+    inline def setS3PutObjectCopy(value: S3CopyObjectOperation): Self = StObject.set(x, "S3PutObjectCopy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PutObjectCopyUndefined: Self = StObject.set(x, "S3PutObjectCopy", js.undefined)
+    inline def setS3PutObjectCopyUndefined: Self = StObject.set(x, "S3PutObjectCopy", js.undefined)
     
-    @scala.inline
-    def setS3PutObjectLegalHold(value: S3SetObjectLegalHoldOperation): Self = StObject.set(x, "S3PutObjectLegalHold", value.asInstanceOf[js.Any])
+    inline def setS3PutObjectLegalHold(value: S3SetObjectLegalHoldOperation): Self = StObject.set(x, "S3PutObjectLegalHold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PutObjectLegalHoldUndefined: Self = StObject.set(x, "S3PutObjectLegalHold", js.undefined)
+    inline def setS3PutObjectLegalHoldUndefined: Self = StObject.set(x, "S3PutObjectLegalHold", js.undefined)
     
-    @scala.inline
-    def setS3PutObjectRetention(value: S3SetObjectRetentionOperation): Self = StObject.set(x, "S3PutObjectRetention", value.asInstanceOf[js.Any])
+    inline def setS3PutObjectRetention(value: S3SetObjectRetentionOperation): Self = StObject.set(x, "S3PutObjectRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PutObjectRetentionUndefined: Self = StObject.set(x, "S3PutObjectRetention", js.undefined)
+    inline def setS3PutObjectRetentionUndefined: Self = StObject.set(x, "S3PutObjectRetention", js.undefined)
     
-    @scala.inline
-    def setS3PutObjectTagging(value: S3SetObjectTaggingOperation): Self = StObject.set(x, "S3PutObjectTagging", value.asInstanceOf[js.Any])
+    inline def setS3PutObjectTagging(value: S3SetObjectTaggingOperation): Self = StObject.set(x, "S3PutObjectTagging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PutObjectTaggingUndefined: Self = StObject.set(x, "S3PutObjectTagging", js.undefined)
+    inline def setS3PutObjectTaggingUndefined: Self = StObject.set(x, "S3PutObjectTagging", js.undefined)
   }
 }

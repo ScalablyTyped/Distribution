@@ -58,64 +58,45 @@ trait CreateResolverRequest extends StObject {
 }
 object CreateResolverRequest {
   
-  @scala.inline
-  def apply(apiId: String, fieldName: ResourceName, typeName: ResourceName): CreateResolverRequest = {
+  inline def apply(apiId: String, fieldName: ResourceName, typeName: ResourceName): CreateResolverRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResolverRequest]
   }
   
-  @scala.inline
-  implicit class CreateResolverRequestMutableBuilder[Self <: CreateResolverRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResolverRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachingConfig(value: CachingConfig): Self = StObject.set(x, "cachingConfig", value.asInstanceOf[js.Any])
+    inline def setCachingConfig(value: CachingConfig): Self = StObject.set(x, "cachingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachingConfigUndefined: Self = StObject.set(x, "cachingConfig", js.undefined)
+    inline def setCachingConfigUndefined: Self = StObject.set(x, "cachingConfig", js.undefined)
     
-    @scala.inline
-    def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
+    inline def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
     
-    @scala.inline
-    def setFieldName(value: ResourceName): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: ResourceName): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ResolverKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ResolverKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPipelineConfig(value: PipelineConfig): Self = StObject.set(x, "pipelineConfig", value.asInstanceOf[js.Any])
+    inline def setPipelineConfig(value: PipelineConfig): Self = StObject.set(x, "pipelineConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineConfigUndefined: Self = StObject.set(x, "pipelineConfig", js.undefined)
+    inline def setPipelineConfigUndefined: Self = StObject.set(x, "pipelineConfig", js.undefined)
     
-    @scala.inline
-    def setRequestMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
+    inline def setRequestMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMappingTemplateUndefined: Self = StObject.set(x, "requestMappingTemplate", js.undefined)
+    inline def setRequestMappingTemplateUndefined: Self = StObject.set(x, "requestMappingTemplate", js.undefined)
     
-    @scala.inline
-    def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
+    inline def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
+    inline def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
     
-    @scala.inline
-    def setSyncConfig(value: SyncConfig): Self = StObject.set(x, "syncConfig", value.asInstanceOf[js.Any])
+    inline def setSyncConfig(value: SyncConfig): Self = StObject.set(x, "syncConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncConfigUndefined: Self = StObject.set(x, "syncConfig", js.undefined)
+    inline def setSyncConfigUndefined: Self = StObject.set(x, "syncConfig", js.undefined)
     
-    @scala.inline
-    def setTypeName(value: ResourceName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: ResourceName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait MeasureGroup extends StObject {
 }
 object MeasureGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: js.Object => String,
     catalogName: js.Object => String,
     cubeName: js.Object => String,
@@ -55,22 +54,16 @@ object MeasureGroup {
     __obj.asInstanceOf[MeasureGroup]
   }
   
-  @scala.inline
-  implicit class MeasureGroupMutableBuilder[Self <: MeasureGroup] (val x: Self) extends AnyVal {
+  extension [Self <: MeasureGroup](x: Self) {
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCatalogName(value: js.Object => String): Self = StObject.set(x, "catalogName", js.Any.fromFunction1(value))
+    inline def setCatalogName(value: js.Object => String): Self = StObject.set(x, "catalogName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCubeName(value: js.Object => String): Self = StObject.set(x, "cubeName", js.Any.fromFunction1(value))
+    inline def setCubeName(value: js.Object => String): Self = StObject.set(x, "cubeName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
+    inline def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
   }
 }

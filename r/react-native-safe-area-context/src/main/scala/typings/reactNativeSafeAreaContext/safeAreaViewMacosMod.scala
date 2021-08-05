@@ -24,7 +24,6 @@ object safeAreaViewMacosMod {
     @JSImport("react-native-safe-area-context/lib/typescript/src/SafeAreaView.macos", "SafeAreaView.forceTouchAvailable")
     @js.native
     def forceTouchAvailable: Boolean = js.native
-    @scala.inline
-    def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
+    inline def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
   }
 }

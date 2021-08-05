@@ -128,145 +128,99 @@ trait SchemaImageSettings extends StObject {
 }
 object SchemaImageSettings {
   
-  @scala.inline
-  def apply(): SchemaImageSettings = {
+  inline def apply(): SchemaImageSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImageSettings]
   }
   
-  @scala.inline
-  implicit class SchemaImageSettingsMutableBuilder[Self <: SchemaImageSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImageSettings](x: Self) {
     
-    @scala.inline
-    def setBackgroundImageUrl(value: SchemaLocalizedProperty): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageUrl(value: SchemaLocalizedProperty): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageUrlUndefined: Self = StObject.set(x, "backgroundImageUrl", js.undefined)
+    inline def setBackgroundImageUrlUndefined: Self = StObject.set(x, "backgroundImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerExternalUrl(value: String): Self = StObject.set(x, "bannerExternalUrl", value.asInstanceOf[js.Any])
+    inline def setBannerExternalUrl(value: String): Self = StObject.set(x, "bannerExternalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerExternalUrlUndefined: Self = StObject.set(x, "bannerExternalUrl", js.undefined)
+    inline def setBannerExternalUrlUndefined: Self = StObject.set(x, "bannerExternalUrl", js.undefined)
     
-    @scala.inline
-    def setBannerImageUrl(value: String): Self = StObject.set(x, "bannerImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerImageUrl(value: String): Self = StObject.set(x, "bannerImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerImageUrlUndefined: Self = StObject.set(x, "bannerImageUrl", js.undefined)
+    inline def setBannerImageUrlUndefined: Self = StObject.set(x, "bannerImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerMobileExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileExtraHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileExtraHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileExtraHdImageUrlUndefined: Self = StObject.set(x, "bannerMobileExtraHdImageUrl", js.undefined)
+    inline def setBannerMobileExtraHdImageUrlUndefined: Self = StObject.set(x, "bannerMobileExtraHdImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerMobileHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileHdImageUrlUndefined: Self = StObject.set(x, "bannerMobileHdImageUrl", js.undefined)
+    inline def setBannerMobileHdImageUrlUndefined: Self = StObject.set(x, "bannerMobileHdImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerMobileImageUrl(value: String): Self = StObject.set(x, "bannerMobileImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileImageUrl(value: String): Self = StObject.set(x, "bannerMobileImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileImageUrlUndefined: Self = StObject.set(x, "bannerMobileImageUrl", js.undefined)
+    inline def setBannerMobileImageUrlUndefined: Self = StObject.set(x, "bannerMobileImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerMobileLowImageUrl(value: String): Self = StObject.set(x, "bannerMobileLowImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileLowImageUrl(value: String): Self = StObject.set(x, "bannerMobileLowImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileLowImageUrlUndefined: Self = StObject.set(x, "bannerMobileLowImageUrl", js.undefined)
+    inline def setBannerMobileLowImageUrlUndefined: Self = StObject.set(x, "bannerMobileLowImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerMobileMediumHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileMediumHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileMediumHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileMediumHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileMediumHdImageUrlUndefined: Self = StObject.set(x, "bannerMobileMediumHdImageUrl", js.undefined)
+    inline def setBannerMobileMediumHdImageUrlUndefined: Self = StObject.set(x, "bannerMobileMediumHdImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTabletExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletExtraHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletExtraHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletExtraHdImageUrlUndefined: Self = StObject.set(x, "bannerTabletExtraHdImageUrl", js.undefined)
+    inline def setBannerTabletExtraHdImageUrlUndefined: Self = StObject.set(x, "bannerTabletExtraHdImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTabletHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletHdImageUrlUndefined: Self = StObject.set(x, "bannerTabletHdImageUrl", js.undefined)
+    inline def setBannerTabletHdImageUrlUndefined: Self = StObject.set(x, "bannerTabletHdImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTabletImageUrl(value: String): Self = StObject.set(x, "bannerTabletImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletImageUrl(value: String): Self = StObject.set(x, "bannerTabletImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletImageUrlUndefined: Self = StObject.set(x, "bannerTabletImageUrl", js.undefined)
+    inline def setBannerTabletImageUrlUndefined: Self = StObject.set(x, "bannerTabletImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTabletLowImageUrl(value: String): Self = StObject.set(x, "bannerTabletLowImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletLowImageUrl(value: String): Self = StObject.set(x, "bannerTabletLowImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletLowImageUrlUndefined: Self = StObject.set(x, "bannerTabletLowImageUrl", js.undefined)
+    inline def setBannerTabletLowImageUrlUndefined: Self = StObject.set(x, "bannerTabletLowImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTvHighImageUrl(value: String): Self = StObject.set(x, "bannerTvHighImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTvHighImageUrl(value: String): Self = StObject.set(x, "bannerTvHighImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTvHighImageUrlUndefined: Self = StObject.set(x, "bannerTvHighImageUrl", js.undefined)
+    inline def setBannerTvHighImageUrlUndefined: Self = StObject.set(x, "bannerTvHighImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTvImageUrl(value: String): Self = StObject.set(x, "bannerTvImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTvImageUrl(value: String): Self = StObject.set(x, "bannerTvImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTvImageUrlUndefined: Self = StObject.set(x, "bannerTvImageUrl", js.undefined)
+    inline def setBannerTvImageUrlUndefined: Self = StObject.set(x, "bannerTvImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTvLowImageUrl(value: String): Self = StObject.set(x, "bannerTvLowImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTvLowImageUrl(value: String): Self = StObject.set(x, "bannerTvLowImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTvLowImageUrlUndefined: Self = StObject.set(x, "bannerTvLowImageUrl", js.undefined)
+    inline def setBannerTvLowImageUrlUndefined: Self = StObject.set(x, "bannerTvLowImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerTvMediumImageUrl(value: String): Self = StObject.set(x, "bannerTvMediumImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTvMediumImageUrl(value: String): Self = StObject.set(x, "bannerTvMediumImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTvMediumImageUrlUndefined: Self = StObject.set(x, "bannerTvMediumImageUrl", js.undefined)
+    inline def setBannerTvMediumImageUrlUndefined: Self = StObject.set(x, "bannerTvMediumImageUrl", js.undefined)
     
-    @scala.inline
-    def setLargeBrandedBannerImageImapScript(value: SchemaLocalizedProperty): Self = StObject.set(x, "largeBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
+    inline def setLargeBrandedBannerImageImapScript(value: SchemaLocalizedProperty): Self = StObject.set(x, "largeBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeBrandedBannerImageImapScriptUndefined: Self = StObject.set(x, "largeBrandedBannerImageImapScript", js.undefined)
+    inline def setLargeBrandedBannerImageImapScriptUndefined: Self = StObject.set(x, "largeBrandedBannerImageImapScript", js.undefined)
     
-    @scala.inline
-    def setLargeBrandedBannerImageUrl(value: SchemaLocalizedProperty): Self = StObject.set(x, "largeBrandedBannerImageUrl", value.asInstanceOf[js.Any])
+    inline def setLargeBrandedBannerImageUrl(value: SchemaLocalizedProperty): Self = StObject.set(x, "largeBrandedBannerImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeBrandedBannerImageUrlUndefined: Self = StObject.set(x, "largeBrandedBannerImageUrl", js.undefined)
+    inline def setLargeBrandedBannerImageUrlUndefined: Self = StObject.set(x, "largeBrandedBannerImageUrl", js.undefined)
     
-    @scala.inline
-    def setSmallBrandedBannerImageImapScript(value: SchemaLocalizedProperty): Self = StObject.set(x, "smallBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
+    inline def setSmallBrandedBannerImageImapScript(value: SchemaLocalizedProperty): Self = StObject.set(x, "smallBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallBrandedBannerImageImapScriptUndefined: Self = StObject.set(x, "smallBrandedBannerImageImapScript", js.undefined)
+    inline def setSmallBrandedBannerImageImapScriptUndefined: Self = StObject.set(x, "smallBrandedBannerImageImapScript", js.undefined)
     
-    @scala.inline
-    def setSmallBrandedBannerImageUrl(value: SchemaLocalizedProperty): Self = StObject.set(x, "smallBrandedBannerImageUrl", value.asInstanceOf[js.Any])
+    inline def setSmallBrandedBannerImageUrl(value: SchemaLocalizedProperty): Self = StObject.set(x, "smallBrandedBannerImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallBrandedBannerImageUrlUndefined: Self = StObject.set(x, "smallBrandedBannerImageUrl", js.undefined)
+    inline def setSmallBrandedBannerImageUrlUndefined: Self = StObject.set(x, "smallBrandedBannerImageUrl", js.undefined)
     
-    @scala.inline
-    def setTrackingImageUrl(value: String): Self = StObject.set(x, "trackingImageUrl", value.asInstanceOf[js.Any])
+    inline def setTrackingImageUrl(value: String): Self = StObject.set(x, "trackingImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingImageUrlUndefined: Self = StObject.set(x, "trackingImageUrl", js.undefined)
+    inline def setTrackingImageUrlUndefined: Self = StObject.set(x, "trackingImageUrl", js.undefined)
     
-    @scala.inline
-    def setWatchIconImageUrl(value: String): Self = StObject.set(x, "watchIconImageUrl", value.asInstanceOf[js.Any])
+    inline def setWatchIconImageUrl(value: String): Self = StObject.set(x, "watchIconImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchIconImageUrlUndefined: Self = StObject.set(x, "watchIconImageUrl", js.undefined)
+    inline def setWatchIconImageUrlUndefined: Self = StObject.set(x, "watchIconImageUrl", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait AppId extends StObject {
 }
 object AppId {
   
-  @scala.inline
-  def apply(appId: String): AppId = {
+  inline def apply(appId: String): AppId = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppId]
   }
   
-  @scala.inline
-  implicit class AppIdMutableBuilder[Self <: AppId] (val x: Self) extends AnyVal {
+  extension [Self <: AppId](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }
 }

@@ -22,6 +22,5 @@ object mod {
   @js.native
   val canSymlinkFile: Boolean = js.native
   
-  @scala.inline
-  def sync(srcPath: String, destPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(srcPath.asInstanceOf[js.Any], destPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sync(srcPath: String, destPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(srcPath.asInstanceOf[js.Any], destPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

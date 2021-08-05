@@ -46,34 +46,25 @@ trait SchemaGoogleApiHttpBody extends StObject {
 }
 object SchemaGoogleApiHttpBody {
   
-  @scala.inline
-  def apply(): SchemaGoogleApiHttpBody = {
+  inline def apply(): SchemaGoogleApiHttpBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleApiHttpBody]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleApiHttpBodyMutableBuilder[Self <: SchemaGoogleApiHttpBody] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleApiHttpBody](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "extensions", js.Array(value :_*))
   }
 }

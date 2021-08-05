@@ -17,16 +17,13 @@ trait ConnectAppInstance
 }
 object ConnectAppInstance {
   
-  @scala.inline
-  def apply(get: RestMethod, post: RestMethod, update: RestMethod): ConnectAppInstance = {
+  inline def apply(get: RestMethod, post: RestMethod, update: RestMethod): ConnectAppInstance = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectAppInstance]
   }
   
-  @scala.inline
-  implicit class ConnectAppInstanceMutableBuilder[Self <: ConnectAppInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectAppInstance](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

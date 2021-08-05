@@ -18,23 +18,18 @@ trait RulePlain
 }
 object RulePlain {
   
-  @scala.inline
-  def apply(block: BlockPlain, prelude: SelectorListPlain | Raw): RulePlain = {
+  inline def apply(block: BlockPlain, prelude: SelectorListPlain | Raw): RulePlain = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], prelude = prelude.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Rule")
     __obj.asInstanceOf[RulePlain]
   }
   
-  @scala.inline
-  implicit class RulePlainMutableBuilder[Self <: RulePlain] (val x: Self) extends AnyVal {
+  extension [Self <: RulePlain](x: Self) {
     
-    @scala.inline
-    def setBlock(value: BlockPlain): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: BlockPlain): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrelude(value: SelectorListPlain | Raw): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
+    inline def setPrelude(value: SelectorListPlain | Raw): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Rule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Rule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

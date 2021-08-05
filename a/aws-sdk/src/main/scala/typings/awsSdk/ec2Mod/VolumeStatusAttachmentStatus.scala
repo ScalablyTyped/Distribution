@@ -18,25 +18,19 @@ trait VolumeStatusAttachmentStatus extends StObject {
 }
 object VolumeStatusAttachmentStatus {
   
-  @scala.inline
-  def apply(): VolumeStatusAttachmentStatus = {
+  inline def apply(): VolumeStatusAttachmentStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeStatusAttachmentStatus]
   }
   
-  @scala.inline
-  implicit class VolumeStatusAttachmentStatusMutableBuilder[Self <: VolumeStatusAttachmentStatus] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeStatusAttachmentStatus](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setIoPerformance(value: String): Self = StObject.set(x, "IoPerformance", value.asInstanceOf[js.Any])
+    inline def setIoPerformance(value: String): Self = StObject.set(x, "IoPerformance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIoPerformanceUndefined: Self = StObject.set(x, "IoPerformance", js.undefined)
+    inline def setIoPerformanceUndefined: Self = StObject.set(x, "IoPerformance", js.undefined)
   }
 }

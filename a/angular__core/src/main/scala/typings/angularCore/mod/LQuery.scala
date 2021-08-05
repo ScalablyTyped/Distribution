@@ -30,28 +30,21 @@ trait LQuery[T] extends StObject {
 }
 object LQuery {
   
-  @scala.inline
-  def apply[T](queryList: QueryList[T], setDirty: () => Unit): LQuery[T] = {
+  inline def apply[T](queryList: QueryList[T], setDirty: () => Unit): LQuery[T] = {
     val __obj = js.Dynamic.literal(queryList = queryList.asInstanceOf[js.Any], setDirty = js.Any.fromFunction0(setDirty), matches = null)
     __obj.asInstanceOf[LQuery[T]]
   }
   
-  @scala.inline
-  implicit class LQueryMutableBuilder[Self <: LQuery[?], T] (val x: Self & LQuery[T]) extends AnyVal {
+  extension [Self <: LQuery[?], T](x: Self & LQuery[T]) {
     
-    @scala.inline
-    def setMatches(value: js.Array[T | Null]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[T | Null]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesNull: Self = StObject.set(x, "matches", null)
+    inline def setMatchesNull: Self = StObject.set(x, "matches", null)
     
-    @scala.inline
-    def setMatchesVarargs(value: (T | Null)*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: (T | Null)*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryList(value: QueryList[T]): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
+    inline def setQueryList(value: QueryList[T]): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDirty(value: () => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction0(value))
+    inline def setSetDirty(value: () => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction0(value))
   }
 }

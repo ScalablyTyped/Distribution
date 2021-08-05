@@ -21,6 +21,5 @@ object BreadcrumbBase {
   @JSImport("office-ui-fabric-react", "BreadcrumbBase.defaultProps")
   @js.native
   def defaultProps: IBreadcrumbProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IBreadcrumbProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IBreadcrumbProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

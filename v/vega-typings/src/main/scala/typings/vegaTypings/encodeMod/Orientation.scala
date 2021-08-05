@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Orientation extends StObject
 object Orientation {
   
-  @scala.inline
-  def horizontal: typings.vegaTypings.vegaTypingsStrings.horizontal = "horizontal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.horizontal]
+  inline def horizontal: typings.vegaTypings.vegaTypingsStrings.horizontal = "horizontal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.vegaTypings.vegaTypingsStrings.vertical = "vertical".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.vertical]
+  inline def vertical: typings.vegaTypings.vegaTypingsStrings.vertical = "vertical".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.vertical]
 }

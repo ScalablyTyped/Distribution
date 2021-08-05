@@ -14,19 +14,15 @@ trait CommitTextParameters extends StObject {
 }
 object CommitTextParameters {
   
-  @scala.inline
-  def apply(contextID: Double, text: String): CommitTextParameters = {
+  inline def apply(contextID: Double, text: String): CommitTextParameters = {
     val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitTextParameters]
   }
   
-  @scala.inline
-  implicit class CommitTextParametersMutableBuilder[Self <: CommitTextParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CommitTextParameters](x: Self) {
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

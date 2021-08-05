@@ -18,28 +18,21 @@ trait DescribeEffectivePatchesForPatchBaselineResult extends StObject {
 }
 object DescribeEffectivePatchesForPatchBaselineResult {
   
-  @scala.inline
-  def apply(): DescribeEffectivePatchesForPatchBaselineResult = {
+  inline def apply(): DescribeEffectivePatchesForPatchBaselineResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEffectivePatchesForPatchBaselineResult]
   }
   
-  @scala.inline
-  implicit class DescribeEffectivePatchesForPatchBaselineResultMutableBuilder[Self <: DescribeEffectivePatchesForPatchBaselineResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEffectivePatchesForPatchBaselineResult](x: Self) {
     
-    @scala.inline
-    def setEffectivePatches(value: EffectivePatchList): Self = StObject.set(x, "EffectivePatches", value.asInstanceOf[js.Any])
+    inline def setEffectivePatches(value: EffectivePatchList): Self = StObject.set(x, "EffectivePatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectivePatchesUndefined: Self = StObject.set(x, "EffectivePatches", js.undefined)
+    inline def setEffectivePatchesUndefined: Self = StObject.set(x, "EffectivePatches", js.undefined)
     
-    @scala.inline
-    def setEffectivePatchesVarargs(value: EffectivePatch*): Self = StObject.set(x, "EffectivePatches", js.Array(value :_*))
+    inline def setEffectivePatchesVarargs(value: EffectivePatch*): Self = StObject.set(x, "EffectivePatches", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

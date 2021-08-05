@@ -21,14 +21,12 @@ object OrientationSensor {
     * @return The default orientation sensor or null if no orientation sensors are found.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor]
   
   /**
     * Gets the default orientation sensor.
     * @return The default orientation sensor or null if no orientation sensors are found.
     */
   /* static member */
-  @scala.inline
-  def getDefaultForRelativeReadings(): typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultForRelativeReadings")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor]
+  inline def getDefaultForRelativeReadings(): typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultForRelativeReadings")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor]
 }

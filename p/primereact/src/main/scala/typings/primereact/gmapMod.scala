@@ -49,89 +49,62 @@ object gmapMod {
   }
   object GMapProps {
     
-    @scala.inline
-    def apply(): GMapProps = {
+    inline def apply(): GMapProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GMapProps]
     }
     
-    @scala.inline
-    implicit class GMapPropsMutableBuilder[Self <: GMapProps] (val x: Self) extends AnyVal {
+    extension [Self <: GMapProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnMapClick(value: /* event */ Event => Unit): Self = StObject.set(x, "onMapClick", js.Any.fromFunction1(value))
+      inline def setOnMapClick(value: /* event */ Event => Unit): Self = StObject.set(x, "onMapClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMapClickUndefined: Self = StObject.set(x, "onMapClick", js.undefined)
+      inline def setOnMapClickUndefined: Self = StObject.set(x, "onMapClick", js.undefined)
       
-      @scala.inline
-      def setOnMapDragEnd(value: () => Unit): Self = StObject.set(x, "onMapDragEnd", js.Any.fromFunction0(value))
+      inline def setOnMapDragEnd(value: () => Unit): Self = StObject.set(x, "onMapDragEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMapDragEndUndefined: Self = StObject.set(x, "onMapDragEnd", js.undefined)
+      inline def setOnMapDragEndUndefined: Self = StObject.set(x, "onMapDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnMapReady(value: /* map */ js.Any => Unit): Self = StObject.set(x, "onMapReady", js.Any.fromFunction1(value))
+      inline def setOnMapReady(value: /* map */ js.Any => Unit): Self = StObject.set(x, "onMapReady", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMapReadyUndefined: Self = StObject.set(x, "onMapReady", js.undefined)
+      inline def setOnMapReadyUndefined: Self = StObject.set(x, "onMapReady", js.undefined)
       
-      @scala.inline
-      def setOnOverlayClick(value: /* e */ Map => Unit): Self = StObject.set(x, "onOverlayClick", js.Any.fromFunction1(value))
+      inline def setOnOverlayClick(value: /* e */ Map => Unit): Self = StObject.set(x, "onOverlayClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOverlayClickUndefined: Self = StObject.set(x, "onOverlayClick", js.undefined)
+      inline def setOnOverlayClickUndefined: Self = StObject.set(x, "onOverlayClick", js.undefined)
       
-      @scala.inline
-      def setOnOverlayDrag(value: /* event */ Event => Unit): Self = StObject.set(x, "onOverlayDrag", js.Any.fromFunction1(value))
+      inline def setOnOverlayDrag(value: /* event */ Event => Unit): Self = StObject.set(x, "onOverlayDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOverlayDragEnd(value: /* event */ Event => Unit): Self = StObject.set(x, "onOverlayDragEnd", js.Any.fromFunction1(value))
+      inline def setOnOverlayDragEnd(value: /* event */ Event => Unit): Self = StObject.set(x, "onOverlayDragEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOverlayDragEndUndefined: Self = StObject.set(x, "onOverlayDragEnd", js.undefined)
+      inline def setOnOverlayDragEndUndefined: Self = StObject.set(x, "onOverlayDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnOverlayDragStart(value: /* event */ Event => Unit): Self = StObject.set(x, "onOverlayDragStart", js.Any.fromFunction1(value))
+      inline def setOnOverlayDragStart(value: /* event */ Event => Unit): Self = StObject.set(x, "onOverlayDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOverlayDragStartUndefined: Self = StObject.set(x, "onOverlayDragStart", js.undefined)
+      inline def setOnOverlayDragStartUndefined: Self = StObject.set(x, "onOverlayDragStart", js.undefined)
       
-      @scala.inline
-      def setOnOverlayDragUndefined: Self = StObject.set(x, "onOverlayDrag", js.undefined)
+      inline def setOnOverlayDragUndefined: Self = StObject.set(x, "onOverlayDrag", js.undefined)
       
-      @scala.inline
-      def setOnZoomChanged(value: () => Unit): Self = StObject.set(x, "onZoomChanged", js.Any.fromFunction0(value))
+      inline def setOnZoomChanged(value: () => Unit): Self = StObject.set(x, "onZoomChanged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnZoomChangedUndefined: Self = StObject.set(x, "onZoomChanged", js.undefined)
+      inline def setOnZoomChangedUndefined: Self = StObject.set(x, "onZoomChanged", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOverlays(value: js.Array[js.Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+      inline def setOverlays(value: js.Array[js.Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
+      inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
       
-      @scala.inline
-      def setOverlaysVarargs(value: js.Any*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+      inline def setOverlaysVarargs(value: js.Any*): Self = StObject.set(x, "overlays", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

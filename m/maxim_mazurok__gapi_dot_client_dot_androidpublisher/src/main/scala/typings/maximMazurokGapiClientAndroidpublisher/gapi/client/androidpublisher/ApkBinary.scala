@@ -14,25 +14,19 @@ trait ApkBinary extends StObject {
 }
 object ApkBinary {
   
-  @scala.inline
-  def apply(): ApkBinary = {
+  inline def apply(): ApkBinary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApkBinary]
   }
   
-  @scala.inline
-  implicit class ApkBinaryMutableBuilder[Self <: ApkBinary] (val x: Self) extends AnyVal {
+  extension [Self <: ApkBinary](x: Self) {
     
-    @scala.inline
-    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
+    inline def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait GoogleCloudVisionV1p4beta1FaceAnnotationLandmark extends StObject {
 }
 object GoogleCloudVisionV1p4beta1FaceAnnotationLandmark {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1FaceAnnotationLandmark = {
+  inline def apply(): GoogleCloudVisionV1p4beta1FaceAnnotationLandmark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1FaceAnnotationLandmark]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1FaceAnnotationLandmarkMutableBuilder[Self <: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark](x: Self) {
     
-    @scala.inline
-    def setPosition(value: GoogleCloudVisionV1p4beta1Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: GoogleCloudVisionV1p4beta1Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Comment extends StObject
 object Comment {
   
-  @scala.inline
-  def CommentBlock(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.mod.CommentBlock = {
+  inline def CommentBlock(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.mod.CommentBlock = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CommentBlock")
     __obj.asInstanceOf[typings.babelTypes.mod.CommentBlock]
   }
   
-  @scala.inline
-  def CommentLine(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.mod.CommentLine = {
+  inline def CommentLine(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.mod.CommentLine = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CommentLine")
     __obj.asInstanceOf[typings.babelTypes.mod.CommentLine]

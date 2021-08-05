@@ -16,28 +16,21 @@ trait ManagedApp
 }
 object ManagedApp {
   
-  @scala.inline
-  def apply(): ManagedApp = {
+  inline def apply(): ManagedApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedApp]
   }
   
-  @scala.inline
-  implicit class ManagedAppMutableBuilder[Self <: ManagedApp] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedApp](x: Self) {
     
-    @scala.inline
-    def setAppAvailability(value: ManagedAppAvailability): Self = StObject.set(x, "appAvailability", value.asInstanceOf[js.Any])
+    inline def setAppAvailability(value: ManagedAppAvailability): Self = StObject.set(x, "appAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppAvailabilityUndefined: Self = StObject.set(x, "appAvailability", js.undefined)
+    inline def setAppAvailabilityUndefined: Self = StObject.set(x, "appAvailability", js.undefined)
     
-    @scala.inline
-    def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

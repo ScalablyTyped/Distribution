@@ -23,28 +23,21 @@ trait UpdateLagRequest extends StObject {
 }
 object UpdateLagRequest {
   
-  @scala.inline
-  def apply(lagId: LagId): UpdateLagRequest = {
+  inline def apply(lagId: LagId): UpdateLagRequest = {
     val __obj = js.Dynamic.literal(lagId = lagId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLagRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLagRequestMutableBuilder[Self <: UpdateLagRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLagRequest](x: Self) {
     
-    @scala.inline
-    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+    inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagName(value: LagName): Self = StObject.set(x, "lagName", value.asInstanceOf[js.Any])
+    inline def setLagName(value: LagName): Self = StObject.set(x, "lagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagNameUndefined: Self = StObject.set(x, "lagName", js.undefined)
+    inline def setLagNameUndefined: Self = StObject.set(x, "lagName", js.undefined)
     
-    @scala.inline
-    def setMinimumLinks(value: Count): Self = StObject.set(x, "minimumLinks", value.asInstanceOf[js.Any])
+    inline def setMinimumLinks(value: Count): Self = StObject.set(x, "minimumLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumLinksUndefined: Self = StObject.set(x, "minimumLinks", js.undefined)
+    inline def setMinimumLinksUndefined: Self = StObject.set(x, "minimumLinks", js.undefined)
   }
 }

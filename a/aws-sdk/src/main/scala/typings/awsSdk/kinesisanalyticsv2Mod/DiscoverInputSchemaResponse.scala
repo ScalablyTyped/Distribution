@@ -28,46 +28,33 @@ trait DiscoverInputSchemaResponse extends StObject {
 }
 object DiscoverInputSchemaResponse {
   
-  @scala.inline
-  def apply(): DiscoverInputSchemaResponse = {
+  inline def apply(): DiscoverInputSchemaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiscoverInputSchemaResponse]
   }
   
-  @scala.inline
-  implicit class DiscoverInputSchemaResponseMutableBuilder[Self <: DiscoverInputSchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoverInputSchemaResponse](x: Self) {
     
-    @scala.inline
-    def setInputSchema(value: SourceSchema): Self = StObject.set(x, "InputSchema", value.asInstanceOf[js.Any])
+    inline def setInputSchema(value: SourceSchema): Self = StObject.set(x, "InputSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSchemaUndefined: Self = StObject.set(x, "InputSchema", js.undefined)
+    inline def setInputSchemaUndefined: Self = StObject.set(x, "InputSchema", js.undefined)
     
-    @scala.inline
-    def setParsedInputRecords(value: ParsedInputRecords): Self = StObject.set(x, "ParsedInputRecords", value.asInstanceOf[js.Any])
+    inline def setParsedInputRecords(value: ParsedInputRecords): Self = StObject.set(x, "ParsedInputRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsedInputRecordsUndefined: Self = StObject.set(x, "ParsedInputRecords", js.undefined)
+    inline def setParsedInputRecordsUndefined: Self = StObject.set(x, "ParsedInputRecords", js.undefined)
     
-    @scala.inline
-    def setParsedInputRecordsVarargs(value: ParsedInputRecord*): Self = StObject.set(x, "ParsedInputRecords", js.Array(value :_*))
+    inline def setParsedInputRecordsVarargs(value: ParsedInputRecord*): Self = StObject.set(x, "ParsedInputRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessedInputRecords(value: ProcessedInputRecords): Self = StObject.set(x, "ProcessedInputRecords", value.asInstanceOf[js.Any])
+    inline def setProcessedInputRecords(value: ProcessedInputRecords): Self = StObject.set(x, "ProcessedInputRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessedInputRecordsUndefined: Self = StObject.set(x, "ProcessedInputRecords", js.undefined)
+    inline def setProcessedInputRecordsUndefined: Self = StObject.set(x, "ProcessedInputRecords", js.undefined)
     
-    @scala.inline
-    def setProcessedInputRecordsVarargs(value: ProcessedInputRecord*): Self = StObject.set(x, "ProcessedInputRecords", js.Array(value :_*))
+    inline def setProcessedInputRecordsVarargs(value: ProcessedInputRecord*): Self = StObject.set(x, "ProcessedInputRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setRawInputRecords(value: RawInputRecords): Self = StObject.set(x, "RawInputRecords", value.asInstanceOf[js.Any])
+    inline def setRawInputRecords(value: RawInputRecords): Self = StObject.set(x, "RawInputRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawInputRecordsUndefined: Self = StObject.set(x, "RawInputRecords", js.undefined)
+    inline def setRawInputRecordsUndefined: Self = StObject.set(x, "RawInputRecords", js.undefined)
     
-    @scala.inline
-    def setRawInputRecordsVarargs(value: RawInputRecord*): Self = StObject.set(x, "RawInputRecords", js.Array(value :_*))
+    inline def setRawInputRecordsVarargs(value: RawInputRecord*): Self = StObject.set(x, "RawInputRecords", js.Array(value :_*))
   }
 }

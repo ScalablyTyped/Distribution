@@ -9,8 +9,7 @@ trait GetUserEndpointsInput
      with typings.awsSdkClientPinpointBrowser.typesGetUserEndpointsInputMod.GetUserEndpointsInput
 object GetUserEndpointsInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, UserId: String): GetUserEndpointsInput = {
+  inline def apply(ApplicationId: String, UserId: String): GetUserEndpointsInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserEndpointsInput]
   }

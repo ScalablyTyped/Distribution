@@ -27,31 +27,23 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask](x: Self) {
     
-    @scala.inline
-    def setExpectedOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs): Self = StObject.set(x, "expectedOutputs", value.asInstanceOf[js.Any])
+    inline def setExpectedOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs): Self = StObject.set(x, "expectedOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedOutputsUndefined: Self = StObject.set(x, "expectedOutputs", js.undefined)
+    inline def setExpectedOutputsUndefined: Self = StObject.set(x, "expectedOutputs", js.undefined)
     
-    @scala.inline
-    def setInputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setTimeouts(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
+    inline def setTimeouts(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutsUndefined: Self = StObject.set(x, "timeouts", js.undefined)
+    inline def setTimeoutsUndefined: Self = StObject.set(x, "timeouts", js.undefined)
   }
 }

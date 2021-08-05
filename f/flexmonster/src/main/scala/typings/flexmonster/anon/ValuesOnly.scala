@@ -20,49 +20,35 @@ trait ValuesOnly extends StObject {
 }
 object ValuesOnly {
   
-  @scala.inline
-  def apply(): ValuesOnly = {
+  inline def apply(): ValuesOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValuesOnly]
   }
   
-  @scala.inline
-  implicit class ValuesOnlyMutableBuilder[Self <: ValuesOnly] (val x: Self) extends AnyVal {
+  extension [Self <: ValuesOnly](x: Self) {
     
-    @scala.inline
-    def setPrepareDataFunction(value: /* rawData */ js.Any => js.Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
+    inline def setPrepareDataFunction(value: /* rawData */ js.Any => js.Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrepareDataFunctionUndefined: Self = StObject.set(x, "prepareDataFunction", js.undefined)
+    inline def setPrepareDataFunctionUndefined: Self = StObject.set(x, "prepareDataFunction", js.undefined)
     
-    @scala.inline
-    def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValuesOnly(value: Boolean): Self = StObject.set(x, "valuesOnly", value.asInstanceOf[js.Any])
+    inline def setValuesOnly(value: Boolean): Self = StObject.set(x, "valuesOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesOnlyUndefined: Self = StObject.set(x, "valuesOnly", js.undefined)
+    inline def setValuesOnlyUndefined: Self = StObject.set(x, "valuesOnly", js.undefined)
     
-    @scala.inline
-    def setWithDrilldown(value: Boolean): Self = StObject.set(x, "withDrilldown", value.asInstanceOf[js.Any])
+    inline def setWithDrilldown(value: Boolean): Self = StObject.set(x, "withDrilldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithDrilldownUndefined: Self = StObject.set(x, "withDrilldown", js.undefined)
+    inline def setWithDrilldownUndefined: Self = StObject.set(x, "withDrilldown", js.undefined)
     
-    @scala.inline
-    def setXAxisType(value: String): Self = StObject.set(x, "xAxisType", value.asInstanceOf[js.Any])
+    inline def setXAxisType(value: String): Self = StObject.set(x, "xAxisType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisTypeUndefined: Self = StObject.set(x, "xAxisType", js.undefined)
+    inline def setXAxisTypeUndefined: Self = StObject.set(x, "xAxisType", js.undefined)
   }
 }

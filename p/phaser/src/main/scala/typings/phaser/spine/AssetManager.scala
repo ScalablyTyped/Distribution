@@ -11,9 +11,9 @@ trait AssetManager
   extends StObject
      with Disposable {
   
-  var assets: js.Any = js.native
+  /* private */ var assets: js.Any = js.native
   
-  var errors: js.Any = js.native
+  /* private */ var errors: js.Any = js.native
   
   def get(path: String): js.Any = js.native
   
@@ -82,15 +82,15 @@ trait AssetManager
     error: js.Function2[/* path */ String, /* error */ String, Unit]
   ): Unit = js.native
   
-  var loaded: js.Any = js.native
+  /* private */ var loaded: js.Any = js.native
   
-  var pathPrefix: js.Any = js.native
+  /* private */ var pathPrefix: js.Any = js.native
   
   def remove(path: String): Unit = js.native
   
   def removeAll(): Unit = js.native
   
-  var textureLoader: js.Any = js.native
+  /* private */ var textureLoader: js.Any = js.native
   
-  var toLoad: js.Any = js.native
+  /* private */ var toLoad: js.Any = js.native
 }

@@ -15,8 +15,7 @@ object objectsMod {
     *
     * @return {boolean} Whether the two objects are shallow equal.
     */
-  @scala.inline
-  def apply(a: Record[String, js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: Record[String, js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@wordpress/is-shallow-equal/build-types/objects", JSImport.Namespace)
   @js.native

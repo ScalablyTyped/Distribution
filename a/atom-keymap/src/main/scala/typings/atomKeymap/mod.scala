@@ -82,26 +82,20 @@ object mod extends Shortcut {
         }
         object AddedKeystrokeResolver {
           
-          @scala.inline
-          def apply(event: KeyboardEvent, keymap: js.Object, keystroke: String, layoutName: String): AddedKeystrokeResolver = {
+          inline def apply(event: KeyboardEvent, keymap: js.Object, keystroke: String, layoutName: String): AddedKeystrokeResolver = {
             val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], keymap = keymap.asInstanceOf[js.Any], keystroke = keystroke.asInstanceOf[js.Any], layoutName = layoutName.asInstanceOf[js.Any])
             __obj.asInstanceOf[AddedKeystrokeResolver]
           }
           
-          @scala.inline
-          implicit class AddedKeystrokeResolverMutableBuilder[Self <: AddedKeystrokeResolver] (val x: Self) extends AnyVal {
+          extension [Self <: AddedKeystrokeResolver](x: Self) {
             
-            @scala.inline
-            def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+            inline def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKeymap(value: js.Object): Self = StObject.set(x, "keymap", value.asInstanceOf[js.Any])
+            inline def setKeymap(value: js.Object): Self = StObject.set(x, "keymap", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKeystroke(value: String): Self = StObject.set(x, "keystroke", value.asInstanceOf[js.Any])
+            inline def setKeystroke(value: String): Self = StObject.set(x, "keystroke", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setLayoutName(value: String): Self = StObject.set(x, "layoutName", value.asInstanceOf[js.Any])
+            inline def setLayoutName(value: String): Self = StObject.set(x, "layoutName", value.asInstanceOf[js.Any])
           }
         }
         
@@ -133,20 +127,16 @@ object mod extends Shortcut {
         }
         object FailedKeybindingMatch {
           
-          @scala.inline
-          def apply(keyboardEventTarget: Element, keystrokes: String): FailedKeybindingMatch = {
+          inline def apply(keyboardEventTarget: Element, keystrokes: String): FailedKeybindingMatch = {
             val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], keystrokes = keystrokes.asInstanceOf[js.Any])
             __obj.asInstanceOf[FailedKeybindingMatch]
           }
           
-          @scala.inline
-          implicit class FailedKeybindingMatchMutableBuilder[Self <: FailedKeybindingMatch] (val x: Self) extends AnyVal {
+          extension [Self <: FailedKeybindingMatch](x: Self) {
             
-            @scala.inline
-            def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
+            inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+            inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
           }
         }
         
@@ -160,20 +150,16 @@ object mod extends Shortcut {
         }
         object FailedKeymapFileRead {
           
-          @scala.inline
-          def apply(message: String, stack: String): FailedKeymapFileRead = {
+          inline def apply(message: String, stack: String): FailedKeymapFileRead = {
             val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
             __obj.asInstanceOf[FailedKeymapFileRead]
           }
           
-          @scala.inline
-          implicit class FailedKeymapFileReadMutableBuilder[Self <: FailedKeymapFileRead] (val x: Self) extends AnyVal {
+          extension [Self <: FailedKeymapFileRead](x: Self) {
             
-            @scala.inline
-            def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+            inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+            inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
           }
         }
         
@@ -190,23 +176,18 @@ object mod extends Shortcut {
         }
         object FullKeybindingMatch {
           
-          @scala.inline
-          def apply(binding: KeyBinding, keyboardEventTarget: Element, keystrokes: String): FullKeybindingMatch = {
+          inline def apply(binding: KeyBinding, keyboardEventTarget: Element, keystrokes: String): FullKeybindingMatch = {
             val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], keystrokes = keystrokes.asInstanceOf[js.Any])
             __obj.asInstanceOf[FullKeybindingMatch]
           }
           
-          @scala.inline
-          implicit class FullKeybindingMatchMutableBuilder[Self <: FullKeybindingMatch] (val x: Self) extends AnyVal {
+          extension [Self <: FullKeybindingMatch](x: Self) {
             
-            @scala.inline
-            def setBinding(value: KeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+            inline def setBinding(value: KeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
+            inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+            inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
           }
         }
         
@@ -217,17 +198,14 @@ object mod extends Shortcut {
         }
         object KeymapLoaded {
           
-          @scala.inline
-          def apply(path: String): KeymapLoaded = {
+          inline def apply(path: String): KeymapLoaded = {
             val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
             __obj.asInstanceOf[KeymapLoaded]
           }
           
-          @scala.inline
-          implicit class KeymapLoadedMutableBuilder[Self <: KeymapLoaded] (val x: Self) extends AnyVal {
+          extension [Self <: KeymapLoaded](x: Self) {
             
-            @scala.inline
-            def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+            inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
           }
         }
         
@@ -244,26 +222,20 @@ object mod extends Shortcut {
         }
         object PartialKeybindingMatch {
           
-          @scala.inline
-          def apply(keyboardEventTarget: Element, keystrokes: String, partiallyMatchedBindings: js.Array[KeyBinding]): PartialKeybindingMatch = {
+          inline def apply(keyboardEventTarget: Element, keystrokes: String, partiallyMatchedBindings: js.Array[KeyBinding]): PartialKeybindingMatch = {
             val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], keystrokes = keystrokes.asInstanceOf[js.Any], partiallyMatchedBindings = partiallyMatchedBindings.asInstanceOf[js.Any])
             __obj.asInstanceOf[PartialKeybindingMatch]
           }
           
-          @scala.inline
-          implicit class PartialKeybindingMatchMutableBuilder[Self <: PartialKeybindingMatch] (val x: Self) extends AnyVal {
+          extension [Self <: PartialKeybindingMatch](x: Self) {
             
-            @scala.inline
-            def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
+            inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+            inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setPartiallyMatchedBindings(value: js.Array[KeyBinding]): Self = StObject.set(x, "partiallyMatchedBindings", value.asInstanceOf[js.Any])
+            inline def setPartiallyMatchedBindings(value: js.Array[KeyBinding]): Self = StObject.set(x, "partiallyMatchedBindings", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setPartiallyMatchedBindingsVarargs(value: KeyBinding*): Self = StObject.set(x, "partiallyMatchedBindings", js.Array(value :_*))
+            inline def setPartiallyMatchedBindingsVarargs(value: KeyBinding*): Self = StObject.set(x, "partiallyMatchedBindings", js.Array(value :_*))
           }
         }
       }
@@ -301,8 +273,7 @@ object mod extends Shortcut {
       }
       object KeyBinding {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           command: String,
           compare: KeyBinding => Double,
           enabled: Boolean,
@@ -318,41 +289,29 @@ object mod extends Shortcut {
           __obj.asInstanceOf[KeyBinding]
         }
         
-        @scala.inline
-        implicit class KeyBindingMutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
+        extension [Self <: KeyBinding](x: Self) {
           
-          @scala.inline
-          def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+          inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCompare(value: KeyBinding => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
+          inline def setCompare(value: KeyBinding => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+          inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeystrokeArray(value: js.Array[String]): Self = StObject.set(x, "keystrokeArray", value.asInstanceOf[js.Any])
+          inline def setKeystrokeArray(value: js.Array[String]): Self = StObject.set(x, "keystrokeArray", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeystrokeArrayVarargs(value: String*): Self = StObject.set(x, "keystrokeArray", js.Array(value :_*))
+          inline def setKeystrokeArrayVarargs(value: String*): Self = StObject.set(x, "keystrokeArray", js.Array(value :_*))
           
-          @scala.inline
-          def setKeystrokeCount(value: Double): Self = StObject.set(x, "keystrokeCount", value.asInstanceOf[js.Any])
+          inline def setKeystrokeCount(value: Double): Self = StObject.set(x, "keystrokeCount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+          inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMatches(value: String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+          inline def setMatches(value: String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+          inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+          inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpecificity(value: Double): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
+          inline def setSpecificity(value: Double): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
         }
       }
       
@@ -483,50 +442,36 @@ object mod extends Shortcut {
         }
         object BuildKeyEvent {
           
-          @scala.inline
-          def apply(): BuildKeyEvent = {
+          inline def apply(): BuildKeyEvent = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[BuildKeyEvent]
           }
           
-          @scala.inline
-          implicit class BuildKeyEventMutableBuilder[Self <: BuildKeyEvent] (val x: Self) extends AnyVal {
+          extension [Self <: BuildKeyEvent](x: Self) {
             
-            @scala.inline
-            def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+            inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+            inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
             
-            @scala.inline
-            def setCmd(value: Boolean): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+            inline def setCmd(value: Boolean): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
+            inline def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
             
-            @scala.inline
-            def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
+            inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setCtrlUndefined: Self = StObject.set(x, "ctrl", js.undefined)
+            inline def setCtrlUndefined: Self = StObject.set(x, "ctrl", js.undefined)
             
-            @scala.inline
-            def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+            inline def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+            inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
             
-            @scala.inline
-            def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+            inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+            inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
             
-            @scala.inline
-            def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+            inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
+            inline def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
           }
         }
       }

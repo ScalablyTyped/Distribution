@@ -18,19 +18,15 @@ trait RegexPatternSetUpdate extends StObject {
 }
 object RegexPatternSetUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, RegexPatternString: RegexPatternString): RegexPatternSetUpdate = {
+  inline def apply(Action: ChangeAction, RegexPatternString: RegexPatternString): RegexPatternSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], RegexPatternString = RegexPatternString.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexPatternSetUpdate]
   }
   
-  @scala.inline
-  implicit class RegexPatternSetUpdateMutableBuilder[Self <: RegexPatternSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: RegexPatternSetUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternString(value: RegexPatternString): Self = StObject.set(x, "RegexPatternString", value.asInstanceOf[js.Any])
+    inline def setRegexPatternString(value: RegexPatternString): Self = StObject.set(x, "RegexPatternString", value.asInstanceOf[js.Any])
   }
 }

@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: AccessTokenUrl): WeMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[WeMiddleware]
-  @scala.inline
-  def apply(options: AccessTokenUrl, errorHandler: js.Function1[/* e */ js.Any, js.Any]): WeMiddleware = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[WeMiddleware]
+  inline def apply(options: AccessTokenUrl): WeMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[WeMiddleware]
+  inline def apply(options: AccessTokenUrl, errorHandler: js.Function1[/* e */ js.Any, js.Any]): WeMiddleware = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[WeMiddleware]
   
   @JSImport("express-wechat-access", JSImport.Namespace)
   @js.native
@@ -34,38 +32,28 @@ object mod {
   }
   object WeAccessMidOption {
     
-    @scala.inline
-    def apply(appId: String, appSecret: String): WeAccessMidOption = {
+    inline def apply(appId: String, appSecret: String): WeAccessMidOption = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], appSecret = appSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[WeAccessMidOption]
     }
     
-    @scala.inline
-    implicit class WeAccessMidOptionMutableBuilder[Self <: WeAccessMidOption] (val x: Self) extends AnyVal {
+    extension [Self <: WeAccessMidOption](x: Self) {
       
-      @scala.inline
-      def setAccessTokenUrl(value: String): Self = StObject.set(x, "accessTokenUrl", value.asInstanceOf[js.Any])
+      inline def setAccessTokenUrl(value: String): Self = StObject.set(x, "accessTokenUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUrlUndefined: Self = StObject.set(x, "accessTokenUrl", js.undefined)
+      inline def setAccessTokenUrlUndefined: Self = StObject.set(x, "accessTokenUrl", js.undefined)
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppSecret(value: String): Self = StObject.set(x, "appSecret", value.asInstanceOf[js.Any])
+      inline def setAppSecret(value: String): Self = StObject.set(x, "appSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
-      @scala.inline
-      def setTicketUrl(value: String): Self = StObject.set(x, "ticketUrl", value.asInstanceOf[js.Any])
+      inline def setTicketUrl(value: String): Self = StObject.set(x, "ticketUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicketUrlUndefined: Self = StObject.set(x, "ticketUrl", js.undefined)
+      inline def setTicketUrlUndefined: Self = StObject.set(x, "ticketUrl", js.undefined)
     }
   }
   

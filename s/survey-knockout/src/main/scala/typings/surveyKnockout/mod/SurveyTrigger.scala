@@ -12,7 +12,7 @@ class SurveyTrigger () extends Trigger {
   
   val owner: ISurveyTriggerOwner = js.native
   
-  var ownerValue: ISurveyTriggerOwner = js.native
+  /* protected */ var ownerValue: ISurveyTriggerOwner = js.native
   
   def setOwner(owner: ISurveyTriggerOwner): Unit = js.native
 }

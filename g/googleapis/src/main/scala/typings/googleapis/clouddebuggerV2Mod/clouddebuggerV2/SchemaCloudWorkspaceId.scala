@@ -24,25 +24,19 @@ trait SchemaCloudWorkspaceId extends StObject {
 }
 object SchemaCloudWorkspaceId {
   
-  @scala.inline
-  def apply(): SchemaCloudWorkspaceId = {
+  inline def apply(): SchemaCloudWorkspaceId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCloudWorkspaceId]
   }
   
-  @scala.inline
-  implicit class SchemaCloudWorkspaceIdMutableBuilder[Self <: SchemaCloudWorkspaceId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCloudWorkspaceId](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRepoId(value: SchemaRepoId): Self = StObject.set(x, "repoId", value.asInstanceOf[js.Any])
+    inline def setRepoId(value: SchemaRepoId): Self = StObject.set(x, "repoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoIdUndefined: Self = StObject.set(x, "repoId", js.undefined)
+    inline def setRepoIdUndefined: Self = StObject.set(x, "repoId", js.undefined)
   }
 }

@@ -39,20 +39,16 @@ object mod {
   }
   object Persister {
     
-    @scala.inline
-    def apply(options: StringDictionary[js.Any], persist: () => js.Promise[Unit]): Persister = {
+    inline def apply(options: StringDictionary[js.Any], persist: () => js.Promise[Unit]): Persister = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist))
       __obj.asInstanceOf[Persister]
     }
     
-    @scala.inline
-    implicit class PersisterMutableBuilder[Self <: Persister] (val x: Self) extends AnyVal {
+    extension [Self <: Persister](x: Self) {
       
-      @scala.inline
-      def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersist(value: () => js.Promise[Unit]): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
+      inline def setPersist(value: () => js.Promise[Unit]): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
     }
   }
 }

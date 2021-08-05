@@ -22,25 +22,19 @@ trait SchemaPositionedObjectProperties extends StObject {
 }
 object SchemaPositionedObjectProperties {
   
-  @scala.inline
-  def apply(): SchemaPositionedObjectProperties = {
+  inline def apply(): SchemaPositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPositionedObjectProperties]
   }
   
-  @scala.inline
-  implicit class SchemaPositionedObjectPropertiesMutableBuilder[Self <: SchemaPositionedObjectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPositionedObjectProperties](x: Self) {
     
-    @scala.inline
-    def setEmbeddedObject(value: SchemaEmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
+    inline def setEmbeddedObject(value: SchemaEmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
+    inline def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
     
-    @scala.inline
-    def setPositioning(value: SchemaPositionedObjectPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
+    inline def setPositioning(value: SchemaPositionedObjectPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
+    inline def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
   }
 }

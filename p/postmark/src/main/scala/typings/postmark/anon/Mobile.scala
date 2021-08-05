@@ -16,25 +16,19 @@ trait Mobile extends StObject {
 }
 object Mobile {
   
-  @scala.inline
-  def apply(Date: String, Desktop: Double, Mobile: Double, Unknown: Double): Mobile = {
+  inline def apply(Date: String, Desktop: Double, Mobile: Double, Unknown: Double): Mobile = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Desktop = Desktop.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Unknown = Unknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mobile]
   }
   
-  @scala.inline
-  implicit class MobileMutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
+  extension [Self <: Mobile](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
+    inline def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Double): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Double): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: Double): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: Double): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
   }
 }

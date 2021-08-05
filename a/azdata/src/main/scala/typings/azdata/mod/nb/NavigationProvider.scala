@@ -14,19 +14,15 @@ trait NavigationProvider extends StObject {
 }
 object NavigationProvider {
   
-  @scala.inline
-  def apply(getNavigation: Uri => Thenable[NavigationResult], providerId: String): NavigationProvider = {
+  inline def apply(getNavigation: Uri => Thenable[NavigationResult], providerId: String): NavigationProvider = {
     val __obj = js.Dynamic.literal(getNavigation = js.Any.fromFunction1(getNavigation), providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationProvider]
   }
   
-  @scala.inline
-  implicit class NavigationProviderMutableBuilder[Self <: NavigationProvider] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationProvider](x: Self) {
     
-    @scala.inline
-    def setGetNavigation(value: Uri => Thenable[NavigationResult]): Self = StObject.set(x, "getNavigation", js.Any.fromFunction1(value))
+    inline def setGetNavigation(value: Uri => Thenable[NavigationResult]): Self = StObject.set(x, "getNavigation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
   }
 }

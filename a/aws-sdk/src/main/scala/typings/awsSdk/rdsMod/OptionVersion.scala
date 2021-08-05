@@ -18,25 +18,19 @@ trait OptionVersion extends StObject {
 }
 object OptionVersion {
   
-  @scala.inline
-  def apply(): OptionVersion = {
+  inline def apply(): OptionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionVersion]
   }
   
-  @scala.inline
-  implicit class OptionVersionMutableBuilder[Self <: OptionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: OptionVersion](x: Self) {
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

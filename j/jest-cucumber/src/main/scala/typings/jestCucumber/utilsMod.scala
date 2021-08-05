@@ -10,6 +10,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indent(stringToIndent: String, tabsToIndent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indent")(stringToIndent.asInstanceOf[js.Any], tabsToIndent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def indent(stringToIndent: String, tabsToIndent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indent")(stringToIndent.asInstanceOf[js.Any], tabsToIndent.asInstanceOf[js.Any])).asInstanceOf[String]
 }

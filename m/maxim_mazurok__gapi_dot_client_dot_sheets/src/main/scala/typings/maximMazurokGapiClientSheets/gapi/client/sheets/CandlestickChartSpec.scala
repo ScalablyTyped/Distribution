@@ -14,28 +14,21 @@ trait CandlestickChartSpec extends StObject {
 }
 object CandlestickChartSpec {
   
-  @scala.inline
-  def apply(): CandlestickChartSpec = {
+  inline def apply(): CandlestickChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CandlestickChartSpec]
   }
   
-  @scala.inline
-  implicit class CandlestickChartSpecMutableBuilder[Self <: CandlestickChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: CandlestickChartSpec](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[CandlestickData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[CandlestickData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: CandlestickData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: CandlestickData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: CandlestickDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: CandlestickDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
   }
 }

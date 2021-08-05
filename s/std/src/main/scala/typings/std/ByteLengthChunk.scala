@@ -10,19 +10,15 @@ trait ByteLengthChunk extends StObject {
 }
 object ByteLengthChunk {
   
-  @scala.inline
-  def apply(): ByteLengthChunk = {
+  inline def apply(): ByteLengthChunk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ByteLengthChunk]
   }
   
-  @scala.inline
-  implicit class ByteLengthChunkMutableBuilder[Self <: ByteLengthChunk] (val x: Self) extends AnyVal {
+  extension [Self <: ByteLengthChunk](x: Self) {
     
-    @scala.inline
-    def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
+    inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteLengthUndefined: Self = StObject.set(x, "byteLength", js.undefined)
+    inline def setByteLengthUndefined: Self = StObject.set(x, "byteLength", js.undefined)
   }
 }

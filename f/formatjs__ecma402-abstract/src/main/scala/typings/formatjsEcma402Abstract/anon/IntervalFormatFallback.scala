@@ -10,16 +10,13 @@ trait IntervalFormatFallback extends StObject {
 }
 object IntervalFormatFallback {
   
-  @scala.inline
-  def apply(intervalFormatFallback: String): IntervalFormatFallback = {
+  inline def apply(intervalFormatFallback: String): IntervalFormatFallback = {
     val __obj = js.Dynamic.literal(intervalFormatFallback = intervalFormatFallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntervalFormatFallback]
   }
   
-  @scala.inline
-  implicit class IntervalFormatFallbackMutableBuilder[Self <: IntervalFormatFallback] (val x: Self) extends AnyVal {
+  extension [Self <: IntervalFormatFallback](x: Self) {
     
-    @scala.inline
-    def setIntervalFormatFallback(value: String): Self = StObject.set(x, "intervalFormatFallback", value.asInstanceOf[js.Any])
+    inline def setIntervalFormatFallback(value: String): Self = StObject.set(x, "intervalFormatFallback", value.asInstanceOf[js.Any])
   }
 }

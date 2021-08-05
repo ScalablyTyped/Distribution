@@ -11,8 +11,6 @@ object popoverUtilsShouldAnimatePopoverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def shouldAnimatePopover(timeout: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAnimatePopover")(timeout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def shouldAnimatePopover(timeout: Enter): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAnimatePopover")(timeout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def shouldAnimatePopover(timeout: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAnimatePopover")(timeout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def shouldAnimatePopover(timeout: Enter): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAnimatePopover")(timeout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

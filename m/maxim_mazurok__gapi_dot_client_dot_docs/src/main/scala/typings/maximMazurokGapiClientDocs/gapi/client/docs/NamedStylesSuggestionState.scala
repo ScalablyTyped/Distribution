@@ -14,22 +14,17 @@ trait NamedStylesSuggestionState extends StObject {
 }
 object NamedStylesSuggestionState {
   
-  @scala.inline
-  def apply(): NamedStylesSuggestionState = {
+  inline def apply(): NamedStylesSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedStylesSuggestionState]
   }
   
-  @scala.inline
-  implicit class NamedStylesSuggestionStateMutableBuilder[Self <: NamedStylesSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: NamedStylesSuggestionState](x: Self) {
     
-    @scala.inline
-    def setStylesSuggestionStates(value: js.Array[NamedStyleSuggestionState]): Self = StObject.set(x, "stylesSuggestionStates", value.asInstanceOf[js.Any])
+    inline def setStylesSuggestionStates(value: js.Array[NamedStyleSuggestionState]): Self = StObject.set(x, "stylesSuggestionStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesSuggestionStatesUndefined: Self = StObject.set(x, "stylesSuggestionStates", js.undefined)
+    inline def setStylesSuggestionStatesUndefined: Self = StObject.set(x, "stylesSuggestionStates", js.undefined)
     
-    @scala.inline
-    def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value :_*))
+    inline def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value :_*))
   }
 }

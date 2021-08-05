@@ -16,8 +16,7 @@ trait DirectionOriginalEvent extends StObject {
 }
 object DirectionOriginalEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: String,
     originalEvent: typings.std.Event,
     source: js.Array[js.Any],
@@ -27,25 +26,18 @@ object DirectionOriginalEvent {
     __obj.asInstanceOf[DirectionOriginalEvent]
   }
   
-  @scala.inline
-  implicit class DirectionOriginalEventMutableBuilder[Self <: DirectionOriginalEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionOriginalEvent](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: js.Array[js.Any]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Array[js.Any]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVarargs(value: js.Any*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: js.Any*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

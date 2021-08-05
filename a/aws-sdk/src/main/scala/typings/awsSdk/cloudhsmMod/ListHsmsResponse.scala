@@ -18,28 +18,21 @@ trait ListHsmsResponse extends StObject {
 }
 object ListHsmsResponse {
   
-  @scala.inline
-  def apply(): ListHsmsResponse = {
+  inline def apply(): ListHsmsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHsmsResponse]
   }
   
-  @scala.inline
-  implicit class ListHsmsResponseMutableBuilder[Self <: ListHsmsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHsmsResponse](x: Self) {
     
-    @scala.inline
-    def setHsmList(value: HsmList): Self = StObject.set(x, "HsmList", value.asInstanceOf[js.Any])
+    inline def setHsmList(value: HsmList): Self = StObject.set(x, "HsmList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmListUndefined: Self = StObject.set(x, "HsmList", js.undefined)
+    inline def setHsmListUndefined: Self = StObject.set(x, "HsmList", js.undefined)
     
-    @scala.inline
-    def setHsmListVarargs(value: HsmArn*): Self = StObject.set(x, "HsmList", js.Array(value :_*))
+    inline def setHsmListVarargs(value: HsmArn*): Self = StObject.set(x, "HsmList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

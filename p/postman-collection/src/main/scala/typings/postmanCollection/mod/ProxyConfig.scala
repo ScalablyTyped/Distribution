@@ -39,6 +39,5 @@ object ProxyConfig {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isProxyConfig(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isProxyConfig(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

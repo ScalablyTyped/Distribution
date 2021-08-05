@@ -38,46 +38,33 @@ trait RedirectActionConfig extends StObject {
 }
 object RedirectActionConfig {
   
-  @scala.inline
-  def apply(StatusCode: RedirectActionStatusCodeEnum): RedirectActionConfig = {
+  inline def apply(StatusCode: RedirectActionStatusCodeEnum): RedirectActionConfig = {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectActionConfig]
   }
   
-  @scala.inline
-  implicit class RedirectActionConfigMutableBuilder[Self <: RedirectActionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectActionConfig](x: Self) {
     
-    @scala.inline
-    def setHost(value: RedirectActionHost): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: RedirectActionHost): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
-    @scala.inline
-    def setPath(value: RedirectActionPath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: RedirectActionPath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setPort(value: RedirectActionPort): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: RedirectActionPort): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: RedirectActionProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: RedirectActionProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setQuery(value: RedirectActionQuery): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: RedirectActionQuery): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: RedirectActionStatusCodeEnum): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: RedirectActionStatusCodeEnum): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
   }
 }

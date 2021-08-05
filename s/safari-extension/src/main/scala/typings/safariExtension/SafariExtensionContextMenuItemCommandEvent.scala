@@ -29,8 +29,7 @@ trait SafariExtensionContextMenuItemCommandEvent
 }
 object SafariExtensionContextMenuItemCommandEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Boolean,
     cancelable: Boolean,
     command: String,
@@ -49,16 +48,12 @@ object SafariExtensionContextMenuItemCommandEvent {
     __obj.asInstanceOf[SafariExtensionContextMenuItemCommandEvent]
   }
   
-  @scala.inline
-  implicit class SafariExtensionContextMenuItemCommandEventMutableBuilder[Self <: SafariExtensionContextMenuItemCommandEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SafariExtensionContextMenuItemCommandEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

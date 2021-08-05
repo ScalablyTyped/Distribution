@@ -11,19 +11,15 @@ trait Cursor extends StObject {
 }
 object Cursor {
   
-  @scala.inline
-  def apply(): Cursor = {
+  inline def apply(): Cursor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cursor]
   }
   
-  @scala.inline
-  implicit class CursorMutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
+  extension [Self <: Cursor](x: Self) {
     
-    @scala.inline
-    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

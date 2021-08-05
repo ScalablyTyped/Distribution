@@ -20,34 +20,25 @@ trait Manifest extends StObject {
 }
 object Manifest {
   
-  @scala.inline
-  def apply(): Manifest = {
+  inline def apply(): Manifest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Manifest]
   }
   
-  @scala.inline
-  implicit class ManifestMutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
+  extension [Self <: Manifest](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setMuxStreams(value: js.Array[String]): Self = StObject.set(x, "muxStreams", value.asInstanceOf[js.Any])
+    inline def setMuxStreams(value: js.Array[String]): Self = StObject.set(x, "muxStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuxStreamsUndefined: Self = StObject.set(x, "muxStreams", js.undefined)
+    inline def setMuxStreamsUndefined: Self = StObject.set(x, "muxStreams", js.undefined)
     
-    @scala.inline
-    def setMuxStreamsVarargs(value: String*): Self = StObject.set(x, "muxStreams", js.Array(value :_*))
+    inline def setMuxStreamsVarargs(value: String*): Self = StObject.set(x, "muxStreams", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

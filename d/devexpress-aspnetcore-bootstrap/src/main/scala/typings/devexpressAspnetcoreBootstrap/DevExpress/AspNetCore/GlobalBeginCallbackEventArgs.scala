@@ -12,16 +12,13 @@ trait GlobalBeginCallbackEventArgs
 }
 object GlobalBeginCallbackEventArgs {
   
-  @scala.inline
-  def apply(command: String, control: Control, sender: Control): GlobalBeginCallbackEventArgs = {
+  inline def apply(command: String, control: Control, sender: Control): GlobalBeginCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalBeginCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class GlobalBeginCallbackEventArgsMutableBuilder[Self <: GlobalBeginCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalBeginCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setControl(value: Control): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Control): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
   }
 }

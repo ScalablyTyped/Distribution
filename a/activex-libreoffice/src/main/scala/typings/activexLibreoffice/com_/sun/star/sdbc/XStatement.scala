@@ -65,8 +65,7 @@ trait XStatement
 }
 object XStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connection: XConnection,
     acquire: () => Unit,
     execute: String => Boolean,
@@ -80,22 +79,16 @@ object XStatement {
     __obj.asInstanceOf[XStatement]
   }
   
-  @scala.inline
-  implicit class XStatementMutableBuilder[Self <: XStatement] (val x: Self) extends AnyVal {
+  extension [Self <: XStatement](x: Self) {
     
-    @scala.inline
-    def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecuteQuery(value: String => XResultSet): Self = StObject.set(x, "executeQuery", js.Any.fromFunction1(value))
+    inline def setExecuteQuery(value: String => XResultSet): Self = StObject.set(x, "executeQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecuteUpdate(value: String => Double): Self = StObject.set(x, "executeUpdate", js.Any.fromFunction1(value))
+    inline def setExecuteUpdate(value: String => Double): Self = StObject.set(x, "executeUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetConnection(value: () => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction0(value))
+    inline def setGetConnection(value: () => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction0(value))
   }
 }

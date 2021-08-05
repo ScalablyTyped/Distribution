@@ -15,19 +15,15 @@ trait CreateTenancyUnitRequest extends StObject {
 }
 object CreateTenancyUnitRequest {
   
-  @scala.inline
-  def apply(): CreateTenancyUnitRequest = {
+  inline def apply(): CreateTenancyUnitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTenancyUnitRequest]
   }
   
-  @scala.inline
-  implicit class CreateTenancyUnitRequestMutableBuilder[Self <: CreateTenancyUnitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTenancyUnitRequest](x: Self) {
     
-    @scala.inline
-    def setTenancyUnitId(value: String): Self = StObject.set(x, "tenancyUnitId", value.asInstanceOf[js.Any])
+    inline def setTenancyUnitId(value: String): Self = StObject.set(x, "tenancyUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUnitIdUndefined: Self = StObject.set(x, "tenancyUnitId", js.undefined)
+    inline def setTenancyUnitIdUndefined: Self = StObject.set(x, "tenancyUnitId", js.undefined)
   }
 }

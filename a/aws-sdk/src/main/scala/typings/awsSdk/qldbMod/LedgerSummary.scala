@@ -23,31 +23,23 @@ trait LedgerSummary extends StObject {
 }
 object LedgerSummary {
   
-  @scala.inline
-  def apply(): LedgerSummary = {
+  inline def apply(): LedgerSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LedgerSummary]
   }
   
-  @scala.inline
-  implicit class LedgerSummaryMutableBuilder[Self <: LedgerSummary] (val x: Self) extends AnyVal {
+  extension [Self <: LedgerSummary](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Timestamp): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Timestamp): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setState(value: LedgerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: LedgerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

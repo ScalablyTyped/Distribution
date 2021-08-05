@@ -17,31 +17,23 @@ trait Create extends StObject {
 }
 object Create {
   
-  @scala.inline
-  def apply(): Create = {
+  inline def apply(): Create = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Create]
   }
   
-  @scala.inline
-  implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+  extension [Self <: Create](x: Self) {
     
-    @scala.inline
-    def setCopy(value: Copy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    inline def setCopy(value: Copy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+    inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    @scala.inline
-    def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+    inline def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
+    inline def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
     
-    @scala.inline
-    def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

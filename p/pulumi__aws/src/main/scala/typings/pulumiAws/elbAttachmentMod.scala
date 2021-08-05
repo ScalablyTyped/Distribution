@@ -50,21 +50,16 @@ object elbAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Attachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Attachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AttachmentState): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Attachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Attachment]
+    inline def get(name: String, id: Input[ID]): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Attachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Attachment]
+    inline def get(name: String, id: Input[ID], state: AttachmentState): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Attachment]
+    inline def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Attachment]
     
     /**
       * Returns true if the given object is an instance of Attachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/attachment.Attachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/attachment.Attachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/attachment.Attachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/attachment.Attachment */ Boolean]
   }
   
   trait AttachmentArgs extends StObject {
@@ -81,20 +76,16 @@ object elbAttachmentMod {
   }
   object AttachmentArgs {
     
-    @scala.inline
-    def apply(elb: Input[String], instance: Input[String]): AttachmentArgs = {
+    inline def apply(elb: Input[String], instance: Input[String]): AttachmentArgs = {
       val __obj = js.Dynamic.literal(elb = elb.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttachmentArgs]
     }
     
-    @scala.inline
-    implicit class AttachmentArgsMutableBuilder[Self <: AttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setElb(value: Input[String]): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
+      inline def setElb(value: Input[String]): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object elbAttachmentMod {
   }
   object AttachmentState {
     
-    @scala.inline
-    def apply(): AttachmentState = {
+    inline def apply(): AttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttachmentState]
     }
     
-    @scala.inline
-    implicit class AttachmentStateMutableBuilder[Self <: AttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: AttachmentState](x: Self) {
       
-      @scala.inline
-      def setElb(value: Input[String]): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
+      inline def setElb(value: Input[String]): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElbUndefined: Self = StObject.set(x, "elb", js.undefined)
+      inline def setElbUndefined: Self = StObject.set(x, "elb", js.undefined)
       
-      @scala.inline
-      def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     }
   }
 }

@@ -69,23 +69,18 @@ object mod {
     def this(props: StatusProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def whenActive[Props](): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")().asInstanceOf[WhenActiveReturnType[Props]]
-  @scala.inline
-  def whenActive[Props](options: WhenActiveOptions): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")(options.asInstanceOf[js.Any]).asInstanceOf[WhenActiveReturnType[Props]]
+  inline def whenActive[Props](): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")().asInstanceOf[WhenActiveReturnType[Props]]
+  inline def whenActive[Props](options: WhenActiveOptions): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")(options.asInstanceOf[js.Any]).asInstanceOf[WhenActiveReturnType[Props]]
   
-  @scala.inline
-  def withScroll(
+  inline def withScroll(
     component: ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]
   ): ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]]
-  @scala.inline
-  def withScroll(
+  inline def withScroll(
     component: ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object],
     options: WithScrollOptions
   ): ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]]
   
-  @scala.inline
-  def wrapSwitch[WrapperProps, Params](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] & WrapperProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapSwitch")(Wrapper.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[WrapSwitchProps[Params] & WrapperProps]]
+  inline def wrapSwitch[WrapperProps, Params](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] & WrapperProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapSwitch")(Wrapper.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[WrapSwitchProps[Params] & WrapperProps]]
   
   type ComponentConstructor[Props] = ComponentType[Props]
   
@@ -108,23 +103,18 @@ object mod {
   }
   object OnUpdateProps {
     
-    @scala.inline
-    def apply(call: /* location */ Location[LocationState] => Unit): OnUpdateProps = {
+    inline def apply(call: /* location */ Location[LocationState] => Unit): OnUpdateProps = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction1(call))
       __obj.asInstanceOf[OnUpdateProps]
     }
     
-    @scala.inline
-    implicit class OnUpdatePropsMutableBuilder[Self <: OnUpdateProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnUpdateProps](x: Self) {
       
-      @scala.inline
-      def setCall(value: /* location */ Location[LocationState] => Unit): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
+      inline def setCall(value: /* location */ Location[LocationState] => Unit): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+      inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     }
   }
   
@@ -138,20 +128,16 @@ object mod {
   }
   object RouteConfiguration {
     
-    @scala.inline
-    def apply(): RouteConfiguration = {
+    inline def apply(): RouteConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteConfiguration]
     }
     
-    @scala.inline
-    implicit class RouteConfigurationMutableBuilder[Self <: RouteConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: RouteConfiguration](x: Self) {
       
-      @scala.inline
-      def setInject(value: StringDictionary[js.Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: StringDictionary[js.Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
     }
   }
   
@@ -163,23 +149,18 @@ object mod {
   }
   object ScrollIntoViewProps {
     
-    @scala.inline
-    def apply(id: String): ScrollIntoViewProps = {
+    inline def apply(id: String): ScrollIntoViewProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollIntoViewProps]
     }
     
-    @scala.inline
-    implicit class ScrollIntoViewPropsMutableBuilder[Self <: ScrollIntoViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollIntoViewProps](x: Self) {
       
-      @scala.inline
-      def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
+      inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignToTopUndefined: Self = StObject.set(x, "alignToTop", js.undefined)
+      inline def setAlignToTopUndefined: Self = StObject.set(x, "alignToTop", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,17 +170,14 @@ object mod {
   }
   object StatusProps {
     
-    @scala.inline
-    def apply(code: String): StatusProps = {
+    inline def apply(code: String): StatusProps = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatusProps]
     }
     
-    @scala.inline
-    implicit class StatusPropsMutableBuilder[Self <: StatusProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatusProps](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,23 +189,18 @@ object mod {
   }
   object SwitchProps {
     
-    @scala.inline
-    def apply(location: LocationDescriptorObjectL, routes: js.Array[RouteConfiguration]): SwitchProps = {
+    inline def apply(location: LocationDescriptorObjectL, routes: js.Array[RouteConfiguration]): SwitchProps = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwitchProps]
     }
     
-    @scala.inline
-    implicit class SwitchPropsMutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwitchProps](x: Self) {
       
-      @scala.inline
-      def setLocation(value: LocationDescriptorObjectL): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LocationDescriptorObjectL): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutes(value: js.Array[RouteConfiguration]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[RouteConfiguration]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: RouteConfiguration*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: RouteConfiguration*): Self = StObject.set(x, "routes", js.Array(value :_*))
     }
   }
   
@@ -247,50 +220,36 @@ object mod {
   }
   object WhenActiveOptions {
     
-    @scala.inline
-    def apply(): WhenActiveOptions = {
+    inline def apply(): WhenActiveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WhenActiveOptions]
     }
     
-    @scala.inline
-    implicit class WhenActiveOptionsMutableBuilder[Self <: WhenActiveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WhenActiveOptions](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+      inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setPathProp(value: String): Self = StObject.set(x, "pathProp", value.asInstanceOf[js.Any])
+      inline def setPathProp(value: String): Self = StObject.set(x, "pathProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPropUndefined: Self = StObject.set(x, "pathProp", js.undefined)
+      inline def setPathPropUndefined: Self = StObject.set(x, "pathProp", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -304,26 +263,20 @@ object mod {
   }
   object WithScrollOptions {
     
-    @scala.inline
-    def apply(): WithScrollOptions = {
+    inline def apply(): WithScrollOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithScrollOptions]
     }
     
-    @scala.inline
-    implicit class WithScrollOptionsMutableBuilder[Self <: WithScrollOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WithScrollOptions](x: Self) {
       
-      @scala.inline
-      def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
+      inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignToTopUndefined: Self = StObject.set(x, "alignToTop", js.undefined)
+      inline def setAlignToTopUndefined: Self = StObject.set(x, "alignToTop", js.undefined)
       
-      @scala.inline
-      def setPropId(value: () => String): Self = StObject.set(x, "propId", js.Any.fromFunction0(value))
+      inline def setPropId(value: () => String): Self = StObject.set(x, "propId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPropIdUndefined: Self = StObject.set(x, "propId", js.undefined)
+      inline def setPropIdUndefined: Self = StObject.set(x, "propId", js.undefined)
     }
   }
   
@@ -335,22 +288,18 @@ object mod {
   }
   object WrapSwitchProps {
     
-    @scala.inline
-    def apply[Params](location: LocationDescriptorObjectL, routes: js.Array[RouteConfiguration]): WrapSwitchProps[Params] = {
+    inline def apply[Params](location: LocationDescriptorObjectL, routes: js.Array[RouteConfiguration]): WrapSwitchProps[Params] = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapSwitchProps[Params]]
     }
     
-    @scala.inline
-    implicit class WrapSwitchPropsMutableBuilder[Self <: WrapSwitchProps[?], Params] (val x: Self & WrapSwitchProps[Params]) extends AnyVal {
+    extension [Self <: WrapSwitchProps[?], Params](x: Self & WrapSwitchProps[Params]) {
       
-      @scala.inline
-      def setGetKey(
+      inline def setGetKey(
         value: (/* match */ `match`[Params], /* route */ RouteConfiguration, /* location */ Location[LocationState]) => String
       ): Self = StObject.set(x, "getKey", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+      inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     }
   }
 }

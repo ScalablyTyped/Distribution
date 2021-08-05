@@ -25,25 +25,18 @@ object FontStrikeout {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BOLD: `4` = 4.asInstanceOf[`4`]
+    inline def BOLD: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def DONTKNOW: `3` = 3.asInstanceOf[`3`]
+    inline def DONTKNOW: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DOUBLE: `2` = 2.asInstanceOf[`2`]
+    inline def DOUBLE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SINGLE: `1` = 1.asInstanceOf[`1`]
+    inline def SINGLE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SLASH: `5` = 5.asInstanceOf[`5`]
+    inline def SLASH: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def X: `6` = 6.asInstanceOf[`6`]
+    inline def X: `6` = 6.asInstanceOf[`6`]
   }
 }

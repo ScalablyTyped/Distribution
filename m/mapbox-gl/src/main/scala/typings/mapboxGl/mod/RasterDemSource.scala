@@ -34,71 +34,50 @@ trait RasterDemSource
 }
 object RasterDemSource {
   
-  @scala.inline
-  def apply(): RasterDemSource = {
+  inline def apply(): RasterDemSource = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("raster-dem")
     __obj.asInstanceOf[RasterDemSource]
   }
   
-  @scala.inline
-  implicit class RasterDemSourceMutableBuilder[Self <: RasterDemSource] (val x: Self) extends AnyVal {
+  extension [Self <: RasterDemSource](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
-    @scala.inline
-    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
-    @scala.inline
-    def setEncoding(value: terrarium | mapbox): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: terrarium | mapbox): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
+    inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
+    inline def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
     
-    @scala.inline
-    def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
+    inline def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
+    inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
     
-    @scala.inline
-    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
-    @scala.inline
-    def setTiles(value: js.Array[String]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+    inline def setTiles(value: js.Array[String]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
+    inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    @scala.inline
-    def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `raster-dem`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `raster-dem`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

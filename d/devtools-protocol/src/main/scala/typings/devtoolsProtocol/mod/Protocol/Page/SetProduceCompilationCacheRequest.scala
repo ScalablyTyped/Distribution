@@ -10,16 +10,13 @@ trait SetProduceCompilationCacheRequest extends StObject {
 }
 object SetProduceCompilationCacheRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetProduceCompilationCacheRequest = {
+  inline def apply(enabled: Boolean): SetProduceCompilationCacheRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetProduceCompilationCacheRequest]
   }
   
-  @scala.inline
-  implicit class SetProduceCompilationCacheRequestMutableBuilder[Self <: SetProduceCompilationCacheRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetProduceCompilationCacheRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

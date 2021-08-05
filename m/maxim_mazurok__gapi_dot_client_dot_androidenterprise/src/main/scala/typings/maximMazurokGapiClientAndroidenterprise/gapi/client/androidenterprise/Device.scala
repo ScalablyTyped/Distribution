@@ -25,37 +25,27 @@ trait Device extends StObject {
 }
 object Device {
   
-  @scala.inline
-  def apply(): Device = {
+  inline def apply(): Device = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Device]
   }
   
-  @scala.inline
-  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+  extension [Self <: Device](x: Self) {
     
-    @scala.inline
-    def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
+    inline def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidIdUndefined: Self = StObject.set(x, "androidId", js.undefined)
+    inline def setAndroidIdUndefined: Self = StObject.set(x, "androidId", js.undefined)
     
-    @scala.inline
-    def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
+    inline def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
+    inline def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setReport(value: DeviceReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: DeviceReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
+    inline def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
   }
 }

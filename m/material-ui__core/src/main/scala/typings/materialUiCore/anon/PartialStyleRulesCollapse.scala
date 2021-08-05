@@ -18,37 +18,27 @@ trait PartialStyleRulesCollapse extends StObject {
 }
 object PartialStyleRulesCollapse {
   
-  @scala.inline
-  def apply(): PartialStyleRulesCollapse = {
+  inline def apply(): PartialStyleRulesCollapse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesCollapse]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesCollapseMutableBuilder[Self <: PartialStyleRulesCollapse] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesCollapse](x: Self) {
     
-    @scala.inline
-    def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setEntered(value: CSSProperties): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
+    inline def setEntered(value: CSSProperties): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnteredUndefined: Self = StObject.set(x, "entered", js.undefined)
+    inline def setEnteredUndefined: Self = StObject.set(x, "entered", js.undefined)
     
-    @scala.inline
-    def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperInner(value: CSSProperties): Self = StObject.set(x, "wrapperInner", value.asInstanceOf[js.Any])
+    inline def setWrapperInner(value: CSSProperties): Self = StObject.set(x, "wrapperInner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperInnerUndefined: Self = StObject.set(x, "wrapperInner", js.undefined)
+    inline def setWrapperInnerUndefined: Self = StObject.set(x, "wrapperInner", js.undefined)
     
-    @scala.inline
-    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

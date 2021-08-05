@@ -16,19 +16,15 @@ trait CMDP1 extends StObject {
 }
 object CMDP1 {
   
-  @scala.inline
-  def apply(): CMDP1 = {
+  inline def apply(): CMDP1 = {
     val __obj = js.Dynamic.literal(CMD_P1 = "\u001D(k", CMD_P2 = "1P0")
     __obj.asInstanceOf[CMDP1]
   }
   
-  @scala.inline
-  implicit class CMDP1MutableBuilder[Self <: CMDP1] (val x: Self) extends AnyVal {
+  extension [Self <: CMDP1](x: Self) {
     
-    @scala.inline
-    def setCMD_P1(value: InformationseparatorthreeLeftparenthesisk): Self = StObject.set(x, "CMD_P1", value.asInstanceOf[js.Any])
+    inline def setCMD_P1(value: InformationseparatorthreeLeftparenthesisk): Self = StObject.set(x, "CMD_P1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCMD_P2(value: `1P0`): Self = StObject.set(x, "CMD_P2", value.asInstanceOf[js.Any])
+    inline def setCMD_P2(value: `1P0`): Self = StObject.set(x, "CMD_P2", value.asInstanceOf[js.Any])
   }
 }

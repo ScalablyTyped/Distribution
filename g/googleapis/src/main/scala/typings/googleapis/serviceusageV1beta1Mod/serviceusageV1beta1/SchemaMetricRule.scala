@@ -27,25 +27,19 @@ trait SchemaMetricRule extends StObject {
 }
 object SchemaMetricRule {
   
-  @scala.inline
-  def apply(): SchemaMetricRule = {
+  inline def apply(): SchemaMetricRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetricRule]
   }
   
-  @scala.inline
-  implicit class SchemaMetricRuleMutableBuilder[Self <: SchemaMetricRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetricRule](x: Self) {
     
-    @scala.inline
-    def setMetricCosts(value: StringDictionary[String]): Self = StObject.set(x, "metricCosts", value.asInstanceOf[js.Any])
+    inline def setMetricCosts(value: StringDictionary[String]): Self = StObject.set(x, "metricCosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricCostsUndefined: Self = StObject.set(x, "metricCosts", js.undefined)
+    inline def setMetricCostsUndefined: Self = StObject.set(x, "metricCosts", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

@@ -13,17 +13,14 @@ object JQueryValidation {
   }
   object ValidatorStatic {
     
-    @scala.inline
-    def apply(unobtrusive: Validator): ValidatorStatic = {
+    inline def apply(unobtrusive: Validator): ValidatorStatic = {
       val __obj = js.Dynamic.literal(unobtrusive = unobtrusive.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidatorStatic]
     }
     
-    @scala.inline
-    implicit class ValidatorStaticMutableBuilder[Self <: ValidatorStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatorStatic](x: Self) {
       
-      @scala.inline
-      def setUnobtrusive(value: Validator): Self = StObject.set(x, "unobtrusive", value.asInstanceOf[js.Any])
+      inline def setUnobtrusive(value: Validator): Self = StObject.set(x, "unobtrusive", value.asInstanceOf[js.Any])
     }
   }
 }

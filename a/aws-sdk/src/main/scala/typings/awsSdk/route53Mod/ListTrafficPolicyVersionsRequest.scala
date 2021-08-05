@@ -23,28 +23,21 @@ trait ListTrafficPolicyVersionsRequest extends StObject {
 }
 object ListTrafficPolicyVersionsRequest {
   
-  @scala.inline
-  def apply(Id: TrafficPolicyId): ListTrafficPolicyVersionsRequest = {
+  inline def apply(Id: TrafficPolicyId): ListTrafficPolicyVersionsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTrafficPolicyVersionsRequest]
   }
   
-  @scala.inline
-  implicit class ListTrafficPolicyVersionsRequestMutableBuilder[Self <: ListTrafficPolicyVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTrafficPolicyVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setTrafficPolicyVersionMarker(value: TrafficPolicyVersionMarker): Self = StObject.set(x, "TrafficPolicyVersionMarker", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyVersionMarker(value: TrafficPolicyVersionMarker): Self = StObject.set(x, "TrafficPolicyVersionMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyVersionMarkerUndefined: Self = StObject.set(x, "TrafficPolicyVersionMarker", js.undefined)
+    inline def setTrafficPolicyVersionMarkerUndefined: Self = StObject.set(x, "TrafficPolicyVersionMarker", js.undefined)
   }
 }

@@ -20,16 +20,12 @@ object wms {
   trait ServerType extends StObject
   object ServerType {
     
-    @scala.inline
-    def carmentaserver: typings.openlayers.openlayersStrings.carmentaserver = "carmentaserver".asInstanceOf[typings.openlayers.openlayersStrings.carmentaserver]
+    inline def carmentaserver: typings.openlayers.openlayersStrings.carmentaserver = "carmentaserver".asInstanceOf[typings.openlayers.openlayersStrings.carmentaserver]
     
-    @scala.inline
-    def geoserver: typings.openlayers.openlayersStrings.geoserver = "geoserver".asInstanceOf[typings.openlayers.openlayersStrings.geoserver]
+    inline def geoserver: typings.openlayers.openlayersStrings.geoserver = "geoserver".asInstanceOf[typings.openlayers.openlayersStrings.geoserver]
     
-    @scala.inline
-    def mapserver: typings.openlayers.openlayersStrings.mapserver = "mapserver".asInstanceOf[typings.openlayers.openlayersStrings.mapserver]
+    inline def mapserver: typings.openlayers.openlayersStrings.mapserver = "mapserver".asInstanceOf[typings.openlayers.openlayersStrings.mapserver]
     
-    @scala.inline
-    def qgis: typings.openlayers.openlayersStrings.qgis = "qgis".asInstanceOf[typings.openlayers.openlayersStrings.qgis]
+    inline def qgis: typings.openlayers.openlayersStrings.qgis = "qgis".asInstanceOf[typings.openlayers.openlayersStrings.qgis]
   }
 }

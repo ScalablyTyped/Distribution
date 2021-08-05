@@ -13,22 +13,17 @@ trait ConfigurationSettingsDescriptions extends StObject {
 }
 object ConfigurationSettingsDescriptions {
   
-  @scala.inline
-  def apply(): ConfigurationSettingsDescriptions = {
+  inline def apply(): ConfigurationSettingsDescriptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationSettingsDescriptions]
   }
   
-  @scala.inline
-  implicit class ConfigurationSettingsDescriptionsMutableBuilder[Self <: ConfigurationSettingsDescriptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationSettingsDescriptions](x: Self) {
     
-    @scala.inline
-    def setConfigurationSettings(value: ConfigurationSettingsDescriptionList): Self = StObject.set(x, "ConfigurationSettings", value.asInstanceOf[js.Any])
+    inline def setConfigurationSettings(value: ConfigurationSettingsDescriptionList): Self = StObject.set(x, "ConfigurationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSettingsUndefined: Self = StObject.set(x, "ConfigurationSettings", js.undefined)
+    inline def setConfigurationSettingsUndefined: Self = StObject.set(x, "ConfigurationSettings", js.undefined)
     
-    @scala.inline
-    def setConfigurationSettingsVarargs(value: ConfigurationSettingsDescription*): Self = StObject.set(x, "ConfigurationSettings", js.Array(value :_*))
+    inline def setConfigurationSettingsVarargs(value: ConfigurationSettingsDescription*): Self = StObject.set(x, "ConfigurationSettings", js.Array(value :_*))
   }
 }

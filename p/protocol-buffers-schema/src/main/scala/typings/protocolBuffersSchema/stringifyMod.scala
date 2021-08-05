@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object stringifyMod {
   
-  @scala.inline
-  def apply(schema: Schema): String = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(schema: Schema): String = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("protocol-buffers-schema/stringify", JSImport.Namespace)
   @js.native

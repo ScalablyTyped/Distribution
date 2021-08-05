@@ -70,55 +70,39 @@ trait PageContentData extends StObject {
 }
 object PageContentData {
   
-  @scala.inline
-  def apply(): PageContentData = {
+  inline def apply(): PageContentData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageContentData]
   }
   
-  @scala.inline
-  implicit class PageContentDataMutableBuilder[Self <: PageContentData] (val x: Self) extends AnyVal {
+  extension [Self <: PageContentData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImage(value: ImageData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setInk(value: FloatingInkData): Self = StObject.set(x, "ink", value.asInstanceOf[js.Any])
+    inline def setInk(value: FloatingInkData): Self = StObject.set(x, "ink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkUndefined: Self = StObject.set(x, "ink", js.undefined)
+    inline def setInkUndefined: Self = StObject.set(x, "ink", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setOutline(value: OutlineData): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: OutlineData): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setType(value: PageContentType | Outline | Image | Ink | Other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PageContentType | Outline | Image | Ink | Other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -50,55 +50,39 @@ trait ParamsResourceBlogsListbyuser
 }
 object ParamsResourceBlogsListbyuser {
   
-  @scala.inline
-  def apply(): ParamsResourceBlogsListbyuser = {
+  inline def apply(): ParamsResourceBlogsListbyuser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBlogsListbyuser]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBlogsListbyuserMutableBuilder[Self <: ParamsResourceBlogsListbyuser] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBlogsListbyuser](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFetchUserInfo(value: Boolean): Self = StObject.set(x, "fetchUserInfo", value.asInstanceOf[js.Any])
+    inline def setFetchUserInfo(value: Boolean): Self = StObject.set(x, "fetchUserInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchUserInfoUndefined: Self = StObject.set(x, "fetchUserInfo", js.undefined)
+    inline def setFetchUserInfoUndefined: Self = StObject.set(x, "fetchUserInfo", js.undefined)
     
-    @scala.inline
-    def setRole(value: js.Array[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: js.Array[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value :_*))
+    inline def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait ReadonlyPromiseRule extends StObject {
 }
 object ReadonlyPromiseRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[Rule | js.Any],
     `finally`: () => js.Promise[Rule],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseRule {
     __obj.asInstanceOf[ReadonlyPromiseRule]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseRuleMutableBuilder[Self <: ReadonlyPromiseRule] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseRule](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[Rule | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[Rule | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[Rule]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[Rule]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

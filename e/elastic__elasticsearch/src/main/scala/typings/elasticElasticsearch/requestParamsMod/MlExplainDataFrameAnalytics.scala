@@ -14,25 +14,19 @@ trait MlExplainDataFrameAnalytics[T]
 }
 object MlExplainDataFrameAnalytics {
   
-  @scala.inline
-  def apply[T](): MlExplainDataFrameAnalytics[T] = {
+  inline def apply[T](): MlExplainDataFrameAnalytics[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MlExplainDataFrameAnalytics[T]]
   }
   
-  @scala.inline
-  implicit class MlExplainDataFrameAnalyticsMutableBuilder[Self <: MlExplainDataFrameAnalytics[?], T] (val x: Self & MlExplainDataFrameAnalytics[T]) extends AnyVal {
+  extension [Self <: MlExplainDataFrameAnalytics[?], T](x: Self & MlExplainDataFrameAnalytics[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

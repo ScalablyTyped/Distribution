@@ -45,49 +45,35 @@ trait SchemaEntityUserLink extends StObject {
 }
 object SchemaEntityUserLink {
   
-  @scala.inline
-  def apply(): SchemaEntityUserLink = {
+  inline def apply(): SchemaEntityUserLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntityUserLink]
   }
   
-  @scala.inline
-  implicit class SchemaEntityUserLinkMutableBuilder[Self <: SchemaEntityUserLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntityUserLink](x: Self) {
     
-    @scala.inline
-    def setEntity(value: AccountRef): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: AccountRef): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: Local): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Local): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setUserRef(value: SchemaUserRef): Self = StObject.set(x, "userRef", value.asInstanceOf[js.Any])
+    inline def setUserRef(value: SchemaUserRef): Self = StObject.set(x, "userRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRefUndefined: Self = StObject.set(x, "userRef", js.undefined)
+    inline def setUserRefUndefined: Self = StObject.set(x, "userRef", js.undefined)
   }
 }

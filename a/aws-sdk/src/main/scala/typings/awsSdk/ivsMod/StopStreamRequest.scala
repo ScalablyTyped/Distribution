@@ -13,16 +13,13 @@ trait StopStreamRequest extends StObject {
 }
 object StopStreamRequest {
   
-  @scala.inline
-  def apply(channelArn: ChannelArn): StopStreamRequest = {
+  inline def apply(channelArn: ChannelArn): StopStreamRequest = {
     val __obj = js.Dynamic.literal(channelArn = channelArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopStreamRequest]
   }
   
-  @scala.inline
-  implicit class StopStreamRequestMutableBuilder[Self <: StopStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopStreamRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
   }
 }

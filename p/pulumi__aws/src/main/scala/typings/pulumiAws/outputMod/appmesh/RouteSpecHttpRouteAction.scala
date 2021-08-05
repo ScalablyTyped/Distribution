@@ -14,19 +14,15 @@ trait RouteSpecHttpRouteAction extends StObject {
 }
 object RouteSpecHttpRouteAction {
   
-  @scala.inline
-  def apply(weightedTargets: js.Array[RouteSpecHttpRouteActionWeightedTarget]): RouteSpecHttpRouteAction = {
+  inline def apply(weightedTargets: js.Array[RouteSpecHttpRouteActionWeightedTarget]): RouteSpecHttpRouteAction = {
     val __obj = js.Dynamic.literal(weightedTargets = weightedTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRouteAction]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttpRouteActionMutableBuilder[Self <: RouteSpecHttpRouteAction] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttpRouteAction](x: Self) {
     
-    @scala.inline
-    def setWeightedTargets(value: js.Array[RouteSpecHttpRouteActionWeightedTarget]): Self = StObject.set(x, "weightedTargets", value.asInstanceOf[js.Any])
+    inline def setWeightedTargets(value: js.Array[RouteSpecHttpRouteActionWeightedTarget]): Self = StObject.set(x, "weightedTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedTargetsVarargs(value: RouteSpecHttpRouteActionWeightedTarget*): Self = StObject.set(x, "weightedTargets", js.Array(value :_*))
+    inline def setWeightedTargetsVarargs(value: RouteSpecHttpRouteActionWeightedTarget*): Self = StObject.set(x, "weightedTargets", js.Array(value :_*))
   }
 }

@@ -40,53 +40,38 @@ object dropdownButtonMod {
   }
   object DropdownButtonBaseProps {
     
-    @scala.inline
-    def apply(id: String): DropdownButtonBaseProps = {
+    inline def apply(id: String): DropdownButtonBaseProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropdownButtonBaseProps]
     }
     
-    @scala.inline
-    implicit class DropdownButtonBasePropsMutableBuilder[Self <: DropdownButtonBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownButtonBaseProps](x: Self) {
       
-      @scala.inline
-      def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
+      inline def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsStyleNull: Self = StObject.set(x, "bsStyle", null)
+      inline def setBsStyleNull: Self = StObject.set(x, "bsStyle", null)
       
-      @scala.inline
-      def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
+      inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      @scala.inline
-      def setNavItem(value: Boolean): Self = StObject.set(x, "navItem", value.asInstanceOf[js.Any])
+      inline def setNavItem(value: Boolean): Self = StObject.set(x, "navItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavItemUndefined: Self = StObject.set(x, "navItem", js.undefined)
+      inline def setNavItemUndefined: Self = StObject.set(x, "navItem", js.undefined)
       
-      @scala.inline
-      def setNoCaret(value: Boolean): Self = StObject.set(x, "noCaret", value.asInstanceOf[js.Any])
+      inline def setNoCaret(value: Boolean): Self = StObject.set(x, "noCaret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoCaretUndefined: Self = StObject.set(x, "noCaret", js.undefined)
+      inline def setNoCaretUndefined: Self = StObject.set(x, "noCaret", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

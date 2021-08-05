@@ -18,25 +18,19 @@ trait DescribeActionTargetsResponse extends StObject {
 }
 object DescribeActionTargetsResponse {
   
-  @scala.inline
-  def apply(ActionTargets: ActionTargetList): DescribeActionTargetsResponse = {
+  inline def apply(ActionTargets: ActionTargetList): DescribeActionTargetsResponse = {
     val __obj = js.Dynamic.literal(ActionTargets = ActionTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeActionTargetsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeActionTargetsResponseMutableBuilder[Self <: DescribeActionTargetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeActionTargetsResponse](x: Self) {
     
-    @scala.inline
-    def setActionTargets(value: ActionTargetList): Self = StObject.set(x, "ActionTargets", value.asInstanceOf[js.Any])
+    inline def setActionTargets(value: ActionTargetList): Self = StObject.set(x, "ActionTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTargetsVarargs(value: ActionTarget*): Self = StObject.set(x, "ActionTargets", js.Array(value :_*))
+    inline def setActionTargetsVarargs(value: ActionTarget*): Self = StObject.set(x, "ActionTargets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

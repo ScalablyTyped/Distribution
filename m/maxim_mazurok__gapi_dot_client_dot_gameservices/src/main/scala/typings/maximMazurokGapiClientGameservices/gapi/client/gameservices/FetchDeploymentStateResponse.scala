@@ -14,31 +14,23 @@ trait FetchDeploymentStateResponse extends StObject {
 }
 object FetchDeploymentStateResponse {
   
-  @scala.inline
-  def apply(): FetchDeploymentStateResponse = {
+  inline def apply(): FetchDeploymentStateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FetchDeploymentStateResponse]
   }
   
-  @scala.inline
-  implicit class FetchDeploymentStateResponseMutableBuilder[Self <: FetchDeploymentStateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FetchDeploymentStateResponse](x: Self) {
     
-    @scala.inline
-    def setClusterState(value: js.Array[DeployedClusterState]): Self = StObject.set(x, "clusterState", value.asInstanceOf[js.Any])
+    inline def setClusterState(value: js.Array[DeployedClusterState]): Self = StObject.set(x, "clusterState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterStateUndefined: Self = StObject.set(x, "clusterState", js.undefined)
+    inline def setClusterStateUndefined: Self = StObject.set(x, "clusterState", js.undefined)
     
-    @scala.inline
-    def setClusterStateVarargs(value: DeployedClusterState*): Self = StObject.set(x, "clusterState", js.Array(value :_*))
+    inline def setClusterStateVarargs(value: DeployedClusterState*): Self = StObject.set(x, "clusterState", js.Array(value :_*))
     
-    @scala.inline
-    def setUnavailable(value: js.Array[String]): Self = StObject.set(x, "unavailable", value.asInstanceOf[js.Any])
+    inline def setUnavailable(value: js.Array[String]): Self = StObject.set(x, "unavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnavailableUndefined: Self = StObject.set(x, "unavailable", js.undefined)
+    inline def setUnavailableUndefined: Self = StObject.set(x, "unavailable", js.undefined)
     
-    @scala.inline
-    def setUnavailableVarargs(value: String*): Self = StObject.set(x, "unavailable", js.Array(value :_*))
+    inline def setUnavailableVarargs(value: String*): Self = StObject.set(x, "unavailable", js.Array(value :_*))
   }
 }

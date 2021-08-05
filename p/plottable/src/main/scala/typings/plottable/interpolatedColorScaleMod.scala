@@ -17,16 +17,16 @@ object interpolatedColorScaleMod {
   class InterpolatedColor () extends Scale[Double, String] {
     def this(scaleType: String) = this()
     
-    var _colorRange: js.Any = js.native
+    /* private */ var _colorRange: js.Any = js.native
     
-    var _colorScale: js.Any = js.native
+    /* private */ var _colorScale: js.Any = js.native
     
     /**
       * Generates the converted QuantitativeScale.
       */
     /* private */ def _d3InterpolatedScale(): js.Any = js.native
     
-    var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: js.Any = js.native
     
     /**
       * Generates the d3 interpolator for colors.
@@ -45,19 +45,16 @@ object interpolatedColorScaleMod {
     @JSImport("plottable/build/src/scales/interpolatedColorScale", "InterpolatedColor.BLUES")
     @js.native
     def BLUES: js.Array[String] = js.native
-    @scala.inline
-    def BLUES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUES")(x.asInstanceOf[js.Any])
+    inline def BLUES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUES")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/scales/interpolatedColorScale", "InterpolatedColor.POSNEG")
     @js.native
     def POSNEG: js.Array[String] = js.native
-    @scala.inline
-    def POSNEG_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSNEG")(x.asInstanceOf[js.Any])
+    inline def POSNEG_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSNEG")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/scales/interpolatedColorScale", "InterpolatedColor.REDS")
     @js.native
     def REDS: js.Array[String] = js.native
-    @scala.inline
-    def REDS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REDS")(x.asInstanceOf[js.Any])
+    inline def REDS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REDS")(x.asInstanceOf[js.Any])
   }
 }

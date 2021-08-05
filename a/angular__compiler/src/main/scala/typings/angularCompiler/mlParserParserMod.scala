@@ -47,9 +47,7 @@ object mlParserParserMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(elementName: String, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
-    @scala.inline
-    def create(elementName: Null, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
+    inline def create(elementName: String, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
+    inline def create(elementName: Null, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
   }
 }

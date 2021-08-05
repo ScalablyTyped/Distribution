@@ -81,8 +81,7 @@ trait VboxInfoData extends StObject {
 }
 object VboxInfoData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ACPI: Boolean,
     APIC: Boolean,
     HPET: Boolean,
@@ -124,115 +123,78 @@ object VboxInfoData {
     __obj.asInstanceOf[VboxInfoData]
   }
   
-  @scala.inline
-  implicit class VboxInfoDataMutableBuilder[Self <: VboxInfoData] (val x: Self) extends AnyVal {
+  extension [Self <: VboxInfoData](x: Self) {
     
-    @scala.inline
-    def setACPI(value: Boolean): Self = StObject.set(x, "ACPI", value.asInstanceOf[js.Any])
+    inline def setACPI(value: Boolean): Self = StObject.set(x, "ACPI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPIC(value: Boolean): Self = StObject.set(x, "APIC", value.asInstanceOf[js.Any])
+    inline def setAPIC(value: Boolean): Self = StObject.set(x, "APIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiosAPICmode(value: String): Self = StObject.set(x, "biosAPICmode", value.asInstanceOf[js.Any])
+    inline def setBiosAPICmode(value: String): Self = StObject.set(x, "biosAPICmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDevice1(value: String): Self = StObject.set(x, "bootDevice1", value.asInstanceOf[js.Any])
+    inline def setBootDevice1(value: String): Self = StObject.set(x, "bootDevice1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDevice2(value: String): Self = StObject.set(x, "bootDevice2", value.asInstanceOf[js.Any])
+    inline def setBootDevice2(value: String): Self = StObject.set(x, "bootDevice2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDevice3(value: String): Self = StObject.set(x, "bootDevice3", value.asInstanceOf[js.Any])
+    inline def setBootDevice3(value: String): Self = StObject.set(x, "bootDevice3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDevice4(value: String): Self = StObject.set(x, "bootDevice4", value.asInstanceOf[js.Any])
+    inline def setBootDevice4(value: String): Self = StObject.set(x, "bootDevice4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootMenuMode(value: String): Self = StObject.set(x, "bootMenuMode", value.asInstanceOf[js.Any])
+    inline def setBootMenuMode(value: String): Self = StObject.set(x, "bootMenuMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChipset(value: String): Self = StObject.set(x, "chipset", value.asInstanceOf[js.Any])
+    inline def setChipset(value: String): Self = StObject.set(x, "chipset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+    inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuExepCap(value: String): Self = StObject.set(x, "cpuExepCap", value.asInstanceOf[js.Any])
+    inline def setCpuExepCap(value: String): Self = StObject.set(x, "cpuExepCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuProfile(value: String): Self = StObject.set(x, "cpuProfile", value.asInstanceOf[js.Any])
+    inline def setCpuProfile(value: String): Self = StObject.set(x, "cpuProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpus(value: Double): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
+    inline def setCpus(value: Double): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirmware(value: String): Self = StObject.set(x, "firmware", value.asInstanceOf[js.Any])
+    inline def setFirmware(value: String): Self = StObject.set(x, "firmware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestOS(value: String): Self = StObject.set(x, "guestOS", value.asInstanceOf[js.Any])
+    inline def setGuestOS(value: String): Self = StObject.set(x, "guestOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHPET(value: Boolean): Self = StObject.set(x, "HPET", value.asInstanceOf[js.Any])
+    inline def setHPET(value: Boolean): Self = StObject.set(x, "HPET", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareUUID(value: String): Self = StObject.set(x, "hardwareUUID", value.asInstanceOf[js.Any])
+    inline def setHardwareUUID(value: String): Self = StObject.set(x, "hardwareUUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOAPIC(value: Boolean): Self = StObject.set(x, "IOAPIC", value.asInstanceOf[js.Any])
+    inline def setIOAPIC(value: Boolean): Self = StObject.set(x, "IOAPIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogFolder(value: String): Self = StObject.set(x, "logFolder", value.asInstanceOf[js.Any])
+    inline def setLogFolder(value: String): Self = StObject.set(x, "logFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongMode(value: Boolean): Self = StObject.set(x, "longMode", value.asInstanceOf[js.Any])
+    inline def setLongMode(value: Boolean): Self = StObject.set(x, "longMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPAE(value: Boolean): Self = StObject.set(x, "PAE", value.asInstanceOf[js.Any])
+    inline def setPAE(value: Boolean): Self = StObject.set(x, "PAE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFusion(value: Boolean): Self = StObject.set(x, "pageFusion", value.asInstanceOf[js.Any])
+    inline def setPageFusion(value: Boolean): Self = StObject.set(x, "pageFusion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRTC(value: String): Self = StObject.set(x, "RTC", value.asInstanceOf[js.Any])
+    inline def setRTC(value: String): Self = StObject.set(x, "RTC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningSince(value: Double): Self = StObject.set(x, "runningSince", value.asInstanceOf[js.Any])
+    inline def setRunningSince(value: Double): Self = StObject.set(x, "runningSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotFolder(value: String): Self = StObject.set(x, "snapshotFolder", value.asInstanceOf[js.Any])
+    inline def setSnapshotFolder(value: String): Self = StObject.set(x, "snapshotFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted(value: String): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: String): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopped(value: String): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: String): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppedSince(value: Double): Self = StObject.set(x, "stoppedSince", value.asInstanceOf[js.Any])
+    inline def setStoppedSince(value: Double): Self = StObject.set(x, "stoppedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTripleFaultReset(value: Boolean): Self = StObject.set(x, "tripleFaultReset", value.asInstanceOf[js.Any])
+    inline def setTripleFaultReset(value: Boolean): Self = StObject.set(x, "tripleFaultReset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVram(value: Double): Self = StObject.set(x, "vram", value.asInstanceOf[js.Any])
+    inline def setVram(value: Double): Self = StObject.set(x, "vram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2APIC(value: Boolean): Self = StObject.set(x, "X2APIC", value.asInstanceOf[js.Any])
+    inline def setX2APIC(value: Boolean): Self = StObject.set(x, "X2APIC", value.asInstanceOf[js.Any])
   }
 }

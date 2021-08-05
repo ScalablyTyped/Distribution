@@ -33,43 +33,31 @@ trait S3Storage extends StObject {
 }
 object S3Storage {
   
-  @scala.inline
-  def apply(): S3Storage = {
+  inline def apply(): S3Storage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Storage]
   }
   
-  @scala.inline
-  implicit class S3StorageMutableBuilder[Self <: S3Storage] (val x: Self) extends AnyVal {
+  extension [Self <: S3Storage](x: Self) {
     
-    @scala.inline
-    def setAWSAccessKeyId(value: String): Self = StObject.set(x, "AWSAccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAWSAccessKeyId(value: String): Self = StObject.set(x, "AWSAccessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAWSAccessKeyIdUndefined: Self = StObject.set(x, "AWSAccessKeyId", js.undefined)
+    inline def setAWSAccessKeyIdUndefined: Self = StObject.set(x, "AWSAccessKeyId", js.undefined)
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setUploadPolicy(value: _Blob): Self = StObject.set(x, "UploadPolicy", value.asInstanceOf[js.Any])
+    inline def setUploadPolicy(value: _Blob): Self = StObject.set(x, "UploadPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadPolicySignature(value: String): Self = StObject.set(x, "UploadPolicySignature", value.asInstanceOf[js.Any])
+    inline def setUploadPolicySignature(value: String): Self = StObject.set(x, "UploadPolicySignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadPolicySignatureUndefined: Self = StObject.set(x, "UploadPolicySignature", js.undefined)
+    inline def setUploadPolicySignatureUndefined: Self = StObject.set(x, "UploadPolicySignature", js.undefined)
     
-    @scala.inline
-    def setUploadPolicyUndefined: Self = StObject.set(x, "UploadPolicy", js.undefined)
+    inline def setUploadPolicyUndefined: Self = StObject.set(x, "UploadPolicy", js.undefined)
   }
 }

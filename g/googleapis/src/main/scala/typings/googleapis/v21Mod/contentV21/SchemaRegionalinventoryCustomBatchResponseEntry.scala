@@ -32,37 +32,27 @@ trait SchemaRegionalinventoryCustomBatchResponseEntry extends StObject {
 }
 object SchemaRegionalinventoryCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): SchemaRegionalinventoryCustomBatchResponseEntry = {
+  inline def apply(): SchemaRegionalinventoryCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionalinventoryCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class SchemaRegionalinventoryCustomBatchResponseEntryMutableBuilder[Self <: SchemaRegionalinventoryCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionalinventoryCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRegionalInventory(value: SchemaRegionalInventory): Self = StObject.set(x, "regionalInventory", value.asInstanceOf[js.Any])
+    inline def setRegionalInventory(value: SchemaRegionalInventory): Self = StObject.set(x, "regionalInventory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalInventoryUndefined: Self = StObject.set(x, "regionalInventory", js.undefined)
+    inline def setRegionalInventoryUndefined: Self = StObject.set(x, "regionalInventory", js.undefined)
   }
 }

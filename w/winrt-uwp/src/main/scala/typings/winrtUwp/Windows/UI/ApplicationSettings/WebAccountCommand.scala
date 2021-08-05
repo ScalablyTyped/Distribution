@@ -22,8 +22,7 @@ trait WebAccountCommand extends StObject {
 }
 object WebAccountCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: SupportedWebAccountActions,
     invoked: (/* command */ WebAccountCommand, /* args */ WebAccountInvokedArgs) => Unit,
     webAccount: WebAccount
@@ -32,16 +31,12 @@ object WebAccountCommand {
     __obj.asInstanceOf[WebAccountCommand]
   }
   
-  @scala.inline
-  implicit class WebAccountCommandMutableBuilder[Self <: WebAccountCommand] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountCommand](x: Self) {
     
-    @scala.inline
-    def setActions(value: SupportedWebAccountActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: SupportedWebAccountActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoked(value: (/* command */ WebAccountCommand, /* args */ WebAccountInvokedArgs) => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction2(value))
+    inline def setInvoked(value: (/* command */ WebAccountCommand, /* args */ WebAccountInvokedArgs) => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
+    inline def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
   }
 }

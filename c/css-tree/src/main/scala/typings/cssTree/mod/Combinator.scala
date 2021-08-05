@@ -17,20 +17,16 @@ trait Combinator
 }
 object Combinator {
   
-  @scala.inline
-  def apply(name: String): Combinator = {
+  inline def apply(name: String): Combinator = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Combinator")
     __obj.asInstanceOf[Combinator]
   }
   
-  @scala.inline
-  implicit class CombinatorMutableBuilder[Self <: Combinator] (val x: Self) extends AnyVal {
+  extension [Self <: Combinator](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Combinator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Combinator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

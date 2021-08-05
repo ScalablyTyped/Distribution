@@ -14,31 +14,23 @@ trait MUR extends StObject {
 }
 object MUR {
   
-  @scala.inline
-  def apply(JPY: js.Array[String], MUR: js.Array[String], USD: js.Array[String]): MUR = {
+  inline def apply(JPY: js.Array[String], MUR: js.Array[String], USD: js.Array[String]): MUR = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], MUR = MUR.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUR]
   }
   
-  @scala.inline
-  implicit class MURMutableBuilder[Self <: MUR] (val x: Self) extends AnyVal {
+  extension [Self <: MUR](x: Self) {
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setMUR(value: js.Array[String]): Self = StObject.set(x, "MUR", value.asInstanceOf[js.Any])
+    inline def setMUR(value: js.Array[String]): Self = StObject.set(x, "MUR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMURVarargs(value: String*): Self = StObject.set(x, "MUR", js.Array(value :_*))
+    inline def setMURVarargs(value: String*): Self = StObject.set(x, "MUR", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

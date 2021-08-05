@@ -13,19 +13,15 @@ trait DescribeChannelModeratedByAppInstanceUserResponse extends StObject {
 }
 object DescribeChannelModeratedByAppInstanceUserResponse {
   
-  @scala.inline
-  def apply(): DescribeChannelModeratedByAppInstanceUserResponse = {
+  inline def apply(): DescribeChannelModeratedByAppInstanceUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeChannelModeratedByAppInstanceUserResponse]
   }
   
-  @scala.inline
-  implicit class DescribeChannelModeratedByAppInstanceUserResponseMutableBuilder[Self <: DescribeChannelModeratedByAppInstanceUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelModeratedByAppInstanceUserResponse](x: Self) {
     
-    @scala.inline
-    def setChannel(value: ChannelModeratedByAppInstanceUserSummary): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: ChannelModeratedByAppInstanceUserSummary): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
   }
 }

@@ -46,55 +46,39 @@ trait Linegapsize extends StObject {
 }
 object Linegapsize {
   
-  @scala.inline
-  def apply(): Linegapsize = {
+  inline def apply(): Linegapsize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Linegapsize]
   }
   
-  @scala.inline
-  implicit class LinegapsizeMutableBuilder[Self <: Linegapsize] (val x: Self) extends AnyVal {
+  extension [Self <: Linegapsize](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
+    inline def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
+    inline def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
     
-    @scala.inline
-    def `setLine-gap-size`(value: js.Any): Self = StObject.set(x, "line-gap-size", value.asInstanceOf[js.Any])
+    inline def `setLine-gap-size`(value: js.Any): Self = StObject.set(x, "line-gap-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-gap-sizeUndefined`: Self = StObject.set(x, "line-gap-size", js.undefined)
+    inline def `setLine-gap-sizeUndefined`: Self = StObject.set(x, "line-gap-size", js.undefined)
     
-    @scala.inline
-    def `setLine-segment-size`(value: js.Any): Self = StObject.set(x, "line-segment-size", value.asInstanceOf[js.Any])
+    inline def `setLine-segment-size`(value: js.Any): Self = StObject.set(x, "line-segment-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-segment-sizeUndefined`: Self = StObject.set(x, "line-segment-size", js.undefined)
+    inline def `setLine-segment-sizeUndefined`: Self = StObject.set(x, "line-segment-size", js.undefined)
     
-    @scala.inline
-    def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
+    inline def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
+    inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
-    @scala.inline
-    def `setLine-width`(value: js.Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
+    inline def `setLine-width`(value: js.Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
+    inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
     
-    @scala.inline
-    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait venmoCreateOptions extends StObject {
 }
 object venmoCreateOptions {
   
-  @scala.inline
-  def apply(): venmoCreateOptions = {
+  inline def apply(): venmoCreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[venmoCreateOptions]
   }
   
-  @scala.inline
-  implicit class venmoCreateOptionsMutableBuilder[Self <: venmoCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: venmoCreateOptions](x: Self) {
     
-    @scala.inline
-    def setAllowNewBrowserTab(value: Boolean): Self = StObject.set(x, "allowNewBrowserTab", value.asInstanceOf[js.Any])
+    inline def setAllowNewBrowserTab(value: Boolean): Self = StObject.set(x, "allowNewBrowserTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNewBrowserTabUndefined: Self = StObject.set(x, "allowNewBrowserTab", js.undefined)
+    inline def setAllowNewBrowserTabUndefined: Self = StObject.set(x, "allowNewBrowserTab", js.undefined)
   }
 }

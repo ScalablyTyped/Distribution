@@ -22,23 +22,18 @@ object interfacesMod {
   }
   object AddrInfo {
     
-    @scala.inline
-    def apply(addrs: js.Array[^], id: typings.peerId.mod.^): AddrInfo = {
+    inline def apply(addrs: js.Array[^], id: typings.peerId.mod.^): AddrInfo = {
       val __obj = js.Dynamic.literal(addrs = addrs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddrInfo]
     }
     
-    @scala.inline
-    implicit class AddrInfoMutableBuilder[Self <: AddrInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AddrInfo](x: Self) {
       
-      @scala.inline
-      def setAddrs(value: js.Array[^]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
+      inline def setAddrs(value: js.Array[^]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddrsVarargs(value: ^ *): Self = StObject.set(x, "addrs", js.Array(value :_*))
+      inline def setAddrsVarargs(value: ^ *): Self = StObject.set(x, "addrs", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: typings.peerId.mod.^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: typings.peerId.mod.^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,8 +47,7 @@ object interfacesMod {
   }
   object AddressBook {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (typings.peerId.mod.^, js.Array[^]) => AddressBook,
       consumePeerRecord: Envelope => Boolean,
       get: typings.peerId.mod.^ => js.Array[js.Array[^]],
@@ -64,14 +58,11 @@ object interfacesMod {
       __obj.asInstanceOf[AddressBook]
     }
     
-    @scala.inline
-    implicit class AddressBookMutableBuilder[Self <: AddressBook] (val x: Self) extends AnyVal {
+    extension [Self <: AddressBook](x: Self) {
       
-      @scala.inline
-      def setConsumePeerRecord(value: Envelope => Boolean): Self = StObject.set(x, "consumePeerRecord", js.Any.fromFunction1(value))
+      inline def setConsumePeerRecord(value: Envelope => Boolean): Self = StObject.set(x, "consumePeerRecord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRawEnvelope(value: typings.peerId.mod.^ => js.UndefOr[Uint8Array]): Self = StObject.set(x, "getRawEnvelope", js.Any.fromFunction1(value))
+      inline def setGetRawEnvelope(value: typings.peerId.mod.^ => js.UndefOr[Uint8Array]): Self = StObject.set(x, "getRawEnvelope", js.Any.fromFunction1(value))
     }
   }
   
@@ -85,23 +76,18 @@ object interfacesMod {
   }
   object Book {
     
-    @scala.inline
-    def apply[K, V](add: (K, V) => Book[K, V], get: K => js.Array[V], set: (K, js.Array[V]) => Book[K, V]): Book[K, V] = {
+    inline def apply[K, V](add: (K, V) => Book[K, V], get: K => js.Array[V], set: (K, js.Array[V]) => Book[K, V]): Book[K, V] = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Book[K, V]]
     }
     
-    @scala.inline
-    implicit class BookMutableBuilder[Self <: Book[?, ?], K, V] (val x: Self & (Book[K, V])) extends AnyVal {
+    extension [Self <: Book[?, ?], K, V](x: Self & (Book[K, V])) {
       
-      @scala.inline
-      def setAdd(value: (K, V) => Book[K, V]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (K, V) => Book[K, V]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGet(value: K => js.Array[V]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: K => js.Array[V]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (K, js.Array[V]) => Book[K, V]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (K, js.Array[V]) => Book[K, V]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -117,26 +103,20 @@ object interfacesMod {
   }
   object Connection {
     
-    @scala.inline
-    def apply(registry: Map[String, Protocol], remoteAddr: ^, remotePeer: typings.peerId.mod.^, stat: Direction): Connection = {
+    inline def apply(registry: Map[String, Protocol], remoteAddr: ^, remotePeer: typings.peerId.mod.^, stat: Direction): Connection = {
       val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any], remoteAddr = remoteAddr.asInstanceOf[js.Any], remotePeer = remotePeer.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connection]
     }
     
-    @scala.inline
-    implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+    extension [Self <: Connection](x: Self) {
       
-      @scala.inline
-      def setRegistry(value: Map[String, Protocol]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: Map[String, Protocol]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteAddr(value: ^): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
+      inline def setRemoteAddr(value: ^): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotePeer(value: typings.peerId.mod.^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
+      inline def setRemotePeer(value: typings.peerId.mod.^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStat(value: Direction): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Direction): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,17 +126,14 @@ object interfacesMod {
   }
   object ConnectionManager {
     
-    @scala.inline
-    def apply(getAll: typings.peerId.mod.^ => js.Array[Connection]): ConnectionManager = {
+    inline def apply(getAll: typings.peerId.mod.^ => js.Array[Connection]): ConnectionManager = {
       val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction1(getAll))
       __obj.asInstanceOf[ConnectionManager]
     }
     
-    @scala.inline
-    implicit class ConnectionManagerMutableBuilder[Self <: ConnectionManager] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionManager](x: Self) {
       
-      @scala.inline
-      def setGetAll(value: typings.peerId.mod.^ => js.Array[Connection]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
+      inline def setGetAll(value: typings.peerId.mod.^ => js.Array[Connection]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
     }
   }
   
@@ -168,20 +145,16 @@ object interfacesMod {
   }
   object DuplexIterableStream {
     
-    @scala.inline
-    def apply[T, U, V](sink: T => js.Promise[U], source: () => AsyncIterator[V, js.Any, Unit]): DuplexIterableStream[T, U, V] = {
+    inline def apply[T, U, V](sink: T => js.Promise[U], source: () => AsyncIterator[V, js.Any, Unit]): DuplexIterableStream[T, U, V] = {
       val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink), source = js.Any.fromFunction0(source))
       __obj.asInstanceOf[DuplexIterableStream[T, U, V]]
     }
     
-    @scala.inline
-    implicit class DuplexIterableStreamMutableBuilder[Self <: DuplexIterableStream[?, ?, ?], T, U, V] (val x: Self & (DuplexIterableStream[T, U, V])) extends AnyVal {
+    extension [Self <: DuplexIterableStream[?, ?, ?], T, U, V](x: Self & (DuplexIterableStream[T, U, V])) {
       
-      @scala.inline
-      def setSink(value: T => js.Promise[U]): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
+      inline def setSink(value: T => js.Promise[U]): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: () => AsyncIterator[V, js.Any, Unit]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
+      inline def setSource(value: () => AsyncIterator[V, js.Any, Unit]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
     }
   }
   
@@ -203,8 +176,7 @@ object interfacesMod {
   }
   object Envelope {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isEqual: Envelope => Boolean,
       marshal: () => Uint8Array,
       payload: Uint8Array,
@@ -217,29 +189,21 @@ object interfacesMod {
       __obj.asInstanceOf[Envelope]
     }
     
-    @scala.inline
-    implicit class EnvelopeMutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
+    extension [Self <: Envelope](x: Self) {
       
-      @scala.inline
-      def setIsEqual(value: Envelope => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+      inline def setIsEqual(value: Envelope => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMarshal(value: () => Uint8Array): Self = StObject.set(x, "marshal", js.Any.fromFunction0(value))
+      inline def setMarshal(value: () => Uint8Array): Self = StObject.set(x, "marshal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadType(value: Uint8Array): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
+      inline def setPayloadType(value: Uint8Array): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerId(value: typings.peerId.mod.^): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      inline def setPeerId(value: typings.peerId.mod.^): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: Uint8Array): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Uint8Array): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: String => js.Promise[Boolean]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: String => js.Promise[Boolean]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
   
@@ -249,17 +213,14 @@ object interfacesMod {
   }
   object EnvelopeClass {
     
-    @scala.inline
-    def apply(openAndCertify: (Uint8Array, String) => js.Promise[Envelope]): EnvelopeClass = {
+    inline def apply(openAndCertify: (Uint8Array, String) => js.Promise[Envelope]): EnvelopeClass = {
       val __obj = js.Dynamic.literal(openAndCertify = js.Any.fromFunction2(openAndCertify))
       __obj.asInstanceOf[EnvelopeClass]
     }
     
-    @scala.inline
-    implicit class EnvelopeClassMutableBuilder[Self <: EnvelopeClass] (val x: Self) extends AnyVal {
+    extension [Self <: EnvelopeClass](x: Self) {
       
-      @scala.inline
-      def setOpenAndCertify(value: (Uint8Array, String) => js.Promise[Envelope]): Self = StObject.set(x, "openAndCertify", js.Any.fromFunction2(value))
+      inline def setOpenAndCertify(value: (Uint8Array, String) => js.Promise[Envelope]): Self = StObject.set(x, "openAndCertify", js.Any.fromFunction2(value))
     }
   }
   
@@ -296,17 +257,14 @@ object interfacesMod {
   }
   object PeerStore {
     
-    @scala.inline
-    def apply(addressBook: AddressBook): PeerStore = {
+    inline def apply(addressBook: AddressBook): PeerStore = {
       val __obj = js.Dynamic.literal(addressBook = addressBook.asInstanceOf[js.Any])
       __obj.asInstanceOf[PeerStore]
     }
     
-    @scala.inline
-    implicit class PeerStoreMutableBuilder[Self <: PeerStore] (val x: Self) extends AnyVal {
+    extension [Self <: PeerStore](x: Self) {
       
-      @scala.inline
-      def setAddressBook(value: AddressBook): Self = StObject.set(x, "addressBook", value.asInstanceOf[js.Any])
+      inline def setAddressBook(value: AddressBook): Self = StObject.set(x, "addressBook", value.asInstanceOf[js.Any])
     }
   }
   
@@ -320,23 +278,18 @@ object interfacesMod {
   }
   object Registrar {
     
-    @scala.inline
-    def apply(handle: () => Unit, register: () => Unit, unregister: () => Unit): Registrar = {
+    inline def apply(handle: () => Unit, register: () => Unit, unregister: () => Unit): Registrar = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction0(handle), register = js.Any.fromFunction0(register), unregister = js.Any.fromFunction0(unregister))
       __obj.asInstanceOf[Registrar]
     }
     
-    @scala.inline
-    implicit class RegistrarMutableBuilder[Self <: Registrar] (val x: Self) extends AnyVal {
+    extension [Self <: Registrar](x: Self) {
       
-      @scala.inline
-      def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
+      inline def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
+      inline def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+      inline def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
   }
 }

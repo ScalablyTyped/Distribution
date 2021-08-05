@@ -13,19 +13,15 @@ trait AnalyticsApplicationOutputSchema extends StObject {
 }
 object AnalyticsApplicationOutputSchema {
   
-  @scala.inline
-  def apply(): AnalyticsApplicationOutputSchema = {
+  inline def apply(): AnalyticsApplicationOutputSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsApplicationOutputSchema]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationOutputSchemaMutableBuilder[Self <: AnalyticsApplicationOutputSchema] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationOutputSchema](x: Self) {
     
-    @scala.inline
-    def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
+    inline def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordFormatTypeUndefined: Self = StObject.set(x, "recordFormatType", js.undefined)
+    inline def setRecordFormatTypeUndefined: Self = StObject.set(x, "recordFormatType", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait RTCIceCandidatePair extends StObject {
 }
 object RTCIceCandidatePair {
   
-  @scala.inline
-  def apply(): RTCIceCandidatePair = {
+  inline def apply(): RTCIceCandidatePair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCIceCandidatePair]
   }
   
-  @scala.inline
-  implicit class RTCIceCandidatePairMutableBuilder[Self <: RTCIceCandidatePair] (val x: Self) extends AnyVal {
+  extension [Self <: RTCIceCandidatePair](x: Self) {
     
-    @scala.inline
-    def setLocal(value: RTCIceCandidate): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: RTCIceCandidate): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setRemote(value: RTCIceCandidate): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: RTCIceCandidate): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
   }
 }

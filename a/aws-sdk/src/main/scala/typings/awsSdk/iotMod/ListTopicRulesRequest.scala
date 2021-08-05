@@ -28,37 +28,27 @@ trait ListTopicRulesRequest extends StObject {
 }
 object ListTopicRulesRequest {
   
-  @scala.inline
-  def apply(): ListTopicRulesRequest = {
+  inline def apply(): ListTopicRulesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTopicRulesRequest]
   }
   
-  @scala.inline
-  implicit class ListTopicRulesRequestMutableBuilder[Self <: ListTopicRulesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTopicRulesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: TopicRuleMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: TopicRuleMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
+    inline def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
+    inline def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
     
-    @scala.inline
-    def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

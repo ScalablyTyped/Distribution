@@ -14,22 +14,17 @@ trait FontSizeMarginLeft extends StObject {
 }
 object FontSizeMarginLeft {
   
-  @scala.inline
-  def apply(color: String, fontSize: Double, marginLeft: Double): FontSizeMarginLeft = {
+  inline def apply(color: String, fontSize: Double, marginLeft: Double): FontSizeMarginLeft = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSizeMarginLeft]
   }
   
-  @scala.inline
-  implicit class FontSizeMarginLeftMutableBuilder[Self <: FontSizeMarginLeft] (val x: Self) extends AnyVal {
+  extension [Self <: FontSizeMarginLeft](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
   }
 }

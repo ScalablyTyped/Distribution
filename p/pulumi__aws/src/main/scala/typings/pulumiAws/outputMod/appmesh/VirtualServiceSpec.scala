@@ -13,19 +13,15 @@ trait VirtualServiceSpec extends StObject {
 }
 object VirtualServiceSpec {
   
-  @scala.inline
-  def apply(): VirtualServiceSpec = {
+  inline def apply(): VirtualServiceSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualServiceSpec]
   }
   
-  @scala.inline
-  implicit class VirtualServiceSpecMutableBuilder[Self <: VirtualServiceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualServiceSpec](x: Self) {
     
-    @scala.inline
-    def setProvider(value: VirtualServiceSpecProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: VirtualServiceSpecProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

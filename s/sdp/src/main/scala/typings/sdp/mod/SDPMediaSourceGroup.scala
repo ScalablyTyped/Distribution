@@ -12,22 +12,17 @@ trait SDPMediaSourceGroup extends StObject {
 }
 object SDPMediaSourceGroup {
   
-  @scala.inline
-  def apply(semantics: String, ssrcs: js.Array[Double]): SDPMediaSourceGroup = {
+  inline def apply(semantics: String, ssrcs: js.Array[Double]): SDPMediaSourceGroup = {
     val __obj = js.Dynamic.literal(semantics = semantics.asInstanceOf[js.Any], ssrcs = ssrcs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPMediaSourceGroup]
   }
   
-  @scala.inline
-  implicit class SDPMediaSourceGroupMutableBuilder[Self <: SDPMediaSourceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SDPMediaSourceGroup](x: Self) {
     
-    @scala.inline
-    def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
+    inline def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrcs(value: js.Array[Double]): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
+    inline def setSsrcs(value: js.Array[Double]): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrcsVarargs(value: Double*): Self = StObject.set(x, "ssrcs", js.Array(value :_*))
+    inline def setSsrcsVarargs(value: Double*): Self = StObject.set(x, "ssrcs", js.Array(value :_*))
   }
 }

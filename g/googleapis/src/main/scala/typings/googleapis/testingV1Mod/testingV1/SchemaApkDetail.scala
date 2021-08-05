@@ -14,19 +14,15 @@ trait SchemaApkDetail extends StObject {
 }
 object SchemaApkDetail {
   
-  @scala.inline
-  def apply(): SchemaApkDetail = {
+  inline def apply(): SchemaApkDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApkDetail]
   }
   
-  @scala.inline
-  implicit class SchemaApkDetailMutableBuilder[Self <: SchemaApkDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApkDetail](x: Self) {
     
-    @scala.inline
-    def setApkManifest(value: SchemaApkManifest): Self = StObject.set(x, "apkManifest", value.asInstanceOf[js.Any])
+    inline def setApkManifest(value: SchemaApkManifest): Self = StObject.set(x, "apkManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApkManifestUndefined: Self = StObject.set(x, "apkManifest", js.undefined)
+    inline def setApkManifestUndefined: Self = StObject.set(x, "apkManifest", js.undefined)
   }
 }

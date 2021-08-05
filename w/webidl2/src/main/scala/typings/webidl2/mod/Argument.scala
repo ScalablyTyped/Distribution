@@ -32,8 +32,7 @@ trait Argument
 }
 object Argument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
@@ -46,31 +45,22 @@ object Argument {
     __obj.asInstanceOf[Argument]
   }
   
-  @scala.inline
-  implicit class ArgumentMutableBuilder[Self <: Argument] (val x: Self) extends AnyVal {
+  extension [Self <: Argument](x: Self) {
     
-    @scala.inline
-    def setDefault(value: ValueDescription): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: ValueDescription): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: CallbackType | ConstructorMemberType | ExtendedAttribute | OperationMemberType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: CallbackType | ConstructorMemberType | ExtendedAttribute | OperationMemberType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: argument): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: argument): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariadic(value: Boolean): Self = StObject.set(x, "variadic", value.asInstanceOf[js.Any])
+    inline def setVariadic(value: Boolean): Self = StObject.set(x, "variadic", value.asInstanceOf[js.Any])
   }
 }

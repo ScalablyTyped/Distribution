@@ -13,19 +13,15 @@ trait ModelVR[VR /* <: TypeORMVerificationRequestModel */] extends StObject {
 }
 object ModelVR {
   
-  @scala.inline
-  def apply[VR /* <: TypeORMVerificationRequestModel */](model: VR, schema: typings.nextAuth.adaptersMod.Schema[VR]): ModelVR[VR] = {
+  inline def apply[VR /* <: TypeORMVerificationRequestModel */](model: VR, schema: typings.nextAuth.adaptersMod.Schema[VR]): ModelVR[VR] = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelVR[VR]]
   }
   
-  @scala.inline
-  implicit class ModelVRMutableBuilder[Self <: ModelVR[?], VR /* <: TypeORMVerificationRequestModel */] (val x: Self & ModelVR[VR]) extends AnyVal {
+  extension [Self <: ModelVR[?], VR /* <: TypeORMVerificationRequestModel */](x: Self & ModelVR[VR]) {
     
-    @scala.inline
-    def setModel(value: VR): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: VR): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: typings.nextAuth.adaptersMod.Schema[VR]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: typings.nextAuth.adaptersMod.Schema[VR]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

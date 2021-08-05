@@ -10,19 +10,15 @@ trait UpdateChannelClassResponse extends StObject {
 }
 object UpdateChannelClassResponse {
   
-  @scala.inline
-  def apply(): UpdateChannelClassResponse = {
+  inline def apply(): UpdateChannelClassResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateChannelClassResponse]
   }
   
-  @scala.inline
-  implicit class UpdateChannelClassResponseMutableBuilder[Self <: UpdateChannelClassResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateChannelClassResponse](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
   }
 }

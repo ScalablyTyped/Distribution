@@ -24,8 +24,7 @@ trait IVerifyVaultJob extends StObject {
 }
 object IVerifyVaultJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IVerifyVaultJob,
     FixErrors: Boolean,
     GetNumberOfSteps: () => Double,
@@ -39,31 +38,22 @@ object IVerifyVaultJob {
     __obj.asInstanceOf[IVerifyVaultJob]
   }
   
-  @scala.inline
-  implicit class IVerifyVaultJobMutableBuilder[Self <: IVerifyVaultJob] (val x: Self) extends AnyVal {
+  extension [Self <: IVerifyVaultJob](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IVerifyVaultJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IVerifyVaultJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFixErrors(value: Boolean): Self = StObject.set(x, "FixErrors", value.asInstanceOf[js.Any])
+    inline def setFixErrors(value: Boolean): Self = StObject.set(x, "FixErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetNumberOfSteps(value: () => Double): Self = StObject.set(x, "GetNumberOfSteps", js.Any.fromFunction0(value))
+    inline def setGetNumberOfSteps(value: () => Double): Self = StObject.set(x, "GetNumberOfSteps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOneBasedIndexOfStep(value: Double => Double): Self = StObject.set(x, "GetOneBasedIndexOfStep", js.Any.fromFunction1(value))
+    inline def setGetOneBasedIndexOfStep(value: Double => Double): Self = StObject.set(x, "GetOneBasedIndexOfStep", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStepProgressText(value: Double => String): Self = StObject.set(x, "GetStepProgressText", js.Any.fromFunction1(value))
+    inline def setGetStepProgressText(value: Double => String): Self = StObject.set(x, "GetStepProgressText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
+    inline def setSet(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
+    inline def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyFileContents(value: Boolean): Self = StObject.set(x, "VerifyFileContents", value.asInstanceOf[js.Any])
+    inline def setVerifyFileContents(value: Boolean): Self = StObject.set(x, "VerifyFileContents", value.asInstanceOf[js.Any])
   }
 }

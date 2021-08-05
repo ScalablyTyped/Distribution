@@ -23,8 +23,7 @@ trait NavigationItem
 }
 object NavigationItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getId: () => String,
     getLabel: () => String,
     getVisible: () => Boolean,
@@ -36,10 +35,8 @@ object NavigationItem {
     __obj.asInstanceOf[NavigationItem]
   }
   
-  @scala.inline
-  implicit class NavigationItemMutableBuilder[Self <: NavigationItem] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationItem](x: Self) {
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
   }
 }

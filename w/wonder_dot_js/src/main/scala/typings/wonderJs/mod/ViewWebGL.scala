@@ -17,6 +17,5 @@ object ViewWebGL {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(view: js.Any): typings.wonderJs.viewMod.ViewWebGL = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(view.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.viewMod.ViewWebGL]
+  inline def create(view: js.Any): typings.wonderJs.viewMod.ViewWebGL = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(view.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.viewMod.ViewWebGL]
 }

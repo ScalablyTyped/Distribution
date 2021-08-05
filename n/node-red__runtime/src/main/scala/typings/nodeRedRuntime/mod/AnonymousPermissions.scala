@@ -15,22 +15,17 @@ trait AnonymousPermissions
 }
 object AnonymousPermissions {
   
-  @scala.inline
-  def apply(permissions: Permission | js.Array[Permission]): AnonymousPermissions = {
+  inline def apply(permissions: Permission | js.Array[Permission]): AnonymousPermissions = {
     val __obj = js.Dynamic.literal(anonymous = true, permissions = permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonymousPermissions]
   }
   
-  @scala.inline
-  implicit class AnonymousPermissionsMutableBuilder[Self <: AnonymousPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: AnonymousPermissions](x: Self) {
     
-    @scala.inline
-    def setAnonymous(value: `true`): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+    inline def setAnonymous(value: `true`): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: Permission | js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Permission | js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

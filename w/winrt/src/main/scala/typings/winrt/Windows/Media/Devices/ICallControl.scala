@@ -30,8 +30,7 @@ trait ICallControl extends StObject {
 }
 object ICallControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endCall: Double => Unit,
     hasRinger: Boolean,
     indicateActiveCall: Double => Unit,
@@ -48,40 +47,28 @@ object ICallControl {
     __obj.asInstanceOf[ICallControl]
   }
   
-  @scala.inline
-  implicit class ICallControlMutableBuilder[Self <: ICallControl] (val x: Self) extends AnyVal {
+  extension [Self <: ICallControl](x: Self) {
     
-    @scala.inline
-    def setEndCall(value: Double => Unit): Self = StObject.set(x, "endCall", js.Any.fromFunction1(value))
+    inline def setEndCall(value: Double => Unit): Self = StObject.set(x, "endCall", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasRinger(value: Boolean): Self = StObject.set(x, "hasRinger", value.asInstanceOf[js.Any])
+    inline def setHasRinger(value: Boolean): Self = StObject.set(x, "hasRinger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicateActiveCall(value: Double => Unit): Self = StObject.set(x, "indicateActiveCall", js.Any.fromFunction1(value))
+    inline def setIndicateActiveCall(value: Double => Unit): Self = StObject.set(x, "indicateActiveCall", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndicateNewIncomingCall(value: (Boolean, String) => Double): Self = StObject.set(x, "indicateNewIncomingCall", js.Any.fromFunction2(value))
+    inline def setIndicateNewIncomingCall(value: (Boolean, String) => Double): Self = StObject.set(x, "indicateNewIncomingCall", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIndicateNewOutgoingCall(value: () => Double): Self = StObject.set(x, "indicateNewOutgoingCall", js.Any.fromFunction0(value))
+    inline def setIndicateNewOutgoingCall(value: () => Double): Self = StObject.set(x, "indicateNewOutgoingCall", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnanswerrequested(value: js.Any): Self = StObject.set(x, "onanswerrequested", value.asInstanceOf[js.Any])
+    inline def setOnanswerrequested(value: js.Any): Self = StObject.set(x, "onanswerrequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnaudiotransferrequested(value: js.Any): Self = StObject.set(x, "onaudiotransferrequested", value.asInstanceOf[js.Any])
+    inline def setOnaudiotransferrequested(value: js.Any): Self = StObject.set(x, "onaudiotransferrequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndialrequested(value: js.Any): Self = StObject.set(x, "ondialrequested", value.asInstanceOf[js.Any])
+    inline def setOndialrequested(value: js.Any): Self = StObject.set(x, "ondialrequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnhanguprequested(value: js.Any): Self = StObject.set(x, "onhanguprequested", value.asInstanceOf[js.Any])
+    inline def setOnhanguprequested(value: js.Any): Self = StObject.set(x, "onhanguprequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnkeypadpressed(value: js.Any): Self = StObject.set(x, "onkeypadpressed", value.asInstanceOf[js.Any])
+    inline def setOnkeypadpressed(value: js.Any): Self = StObject.set(x, "onkeypadpressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnredialrequested(value: js.Any): Self = StObject.set(x, "onredialrequested", value.asInstanceOf[js.Any])
+    inline def setOnredialrequested(value: js.Any): Self = StObject.set(x, "onredialrequested", value.asInstanceOf[js.Any])
   }
 }

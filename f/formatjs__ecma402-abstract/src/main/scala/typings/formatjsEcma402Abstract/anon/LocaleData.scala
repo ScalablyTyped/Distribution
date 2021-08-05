@@ -23,8 +23,7 @@ trait LocaleData extends StObject {
 }
 object LocaleData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availableLocales: Set[String],
     getDefaultLocale: () => String,
     getInternalSlots: PluralRules => PluralRulesInternal,
@@ -35,25 +34,18 @@ object LocaleData {
     __obj.asInstanceOf[LocaleData]
   }
   
-  @scala.inline
-  implicit class LocaleDataMutableBuilder[Self <: LocaleData] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleData](x: Self) {
     
-    @scala.inline
-    def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
+    inline def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
+    inline def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInternalSlots(value: PluralRules => PluralRulesInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
+    inline def setGetInternalSlots(value: PluralRules => PluralRulesInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocaleData(value: Record[String, js.UndefOr[PluralRulesData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
+    inline def setLocaleData(value: Record[String, js.UndefOr[PluralRulesData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantExtensionKeys(value: js.Array[String]): Self = StObject.set(x, "relevantExtensionKeys", value.asInstanceOf[js.Any])
+    inline def setRelevantExtensionKeys(value: js.Array[String]): Self = StObject.set(x, "relevantExtensionKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
+    inline def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait CopyOptionGroupResult extends StObject {
 }
 object CopyOptionGroupResult {
   
-  @scala.inline
-  def apply(): CopyOptionGroupResult = {
+  inline def apply(): CopyOptionGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyOptionGroupResult]
   }
   
-  @scala.inline
-  implicit class CopyOptionGroupResultMutableBuilder[Self <: CopyOptionGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyOptionGroupResult](x: Self) {
     
-    @scala.inline
-    def setOptionGroup(value: OptionGroup): Self = StObject.set(x, "OptionGroup", value.asInstanceOf[js.Any])
+    inline def setOptionGroup(value: OptionGroup): Self = StObject.set(x, "OptionGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionGroupUndefined: Self = StObject.set(x, "OptionGroup", js.undefined)
+    inline def setOptionGroupUndefined: Self = StObject.set(x, "OptionGroup", js.undefined)
   }
 }

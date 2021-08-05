@@ -38,49 +38,35 @@ trait AwsEc2SecurityGroupUserIdGroupPair extends StObject {
 }
 object AwsEc2SecurityGroupUserIdGroupPair {
   
-  @scala.inline
-  def apply(): AwsEc2SecurityGroupUserIdGroupPair = {
+  inline def apply(): AwsEc2SecurityGroupUserIdGroupPair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2SecurityGroupUserIdGroupPair]
   }
   
-  @scala.inline
-  implicit class AwsEc2SecurityGroupUserIdGroupPairMutableBuilder[Self <: AwsEc2SecurityGroupUserIdGroupPair] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2SecurityGroupUserIdGroupPair](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setPeeringStatus(value: NonEmptyString): Self = StObject.set(x, "PeeringStatus", value.asInstanceOf[js.Any])
+    inline def setPeeringStatus(value: NonEmptyString): Self = StObject.set(x, "PeeringStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeeringStatusUndefined: Self = StObject.set(x, "PeeringStatus", js.undefined)
+    inline def setPeeringStatusUndefined: Self = StObject.set(x, "PeeringStatus", js.undefined)
     
-    @scala.inline
-    def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionId(value: NonEmptyString): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectionId(value: NonEmptyString): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
+    inline def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: (String, js.Object, Boolean, CbCallback) => Unit,
     getAllServices: CbCallback => Unit,
     systemKey: String,
@@ -30,22 +29,16 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (String, js.Object, Boolean, CbCallback) => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction4(value))
+    inline def setExecute(value: (String, js.Object, Boolean, CbCallback) => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetAllServices(value: CbCallback => Unit): Self = StObject.set(x, "getAllServices", js.Any.fromFunction1(value))
+    inline def setGetAllServices(value: CbCallback => Unit): Self = StObject.set(x, "getAllServices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

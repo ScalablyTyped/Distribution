@@ -21,28 +21,21 @@ trait MessageEntry
 }
 object MessageEntry {
   
-  @scala.inline
-  def apply(cluid: String, flagRead: Boolean, msgid: String, subject: String, timestamp: Double): MessageEntry = {
+  inline def apply(cluid: String, flagRead: Boolean, msgid: String, subject: String, timestamp: Double): MessageEntry = {
     val __obj = js.Dynamic.literal(cluid = cluid.asInstanceOf[js.Any], flagRead = flagRead.asInstanceOf[js.Any], msgid = msgid.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageEntry]
   }
   
-  @scala.inline
-  implicit class MessageEntryMutableBuilder[Self <: MessageEntry] (val x: Self) extends AnyVal {
+  extension [Self <: MessageEntry](x: Self) {
     
-    @scala.inline
-    def setCluid(value: String): Self = StObject.set(x, "cluid", value.asInstanceOf[js.Any])
+    inline def setCluid(value: String): Self = StObject.set(x, "cluid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagRead(value: Boolean): Self = StObject.set(x, "flagRead", value.asInstanceOf[js.Any])
+    inline def setFlagRead(value: Boolean): Self = StObject.set(x, "flagRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
+    inline def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

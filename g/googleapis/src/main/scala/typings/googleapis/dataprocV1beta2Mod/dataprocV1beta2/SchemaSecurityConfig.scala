@@ -16,19 +16,15 @@ trait SchemaSecurityConfig extends StObject {
 }
 object SchemaSecurityConfig {
   
-  @scala.inline
-  def apply(): SchemaSecurityConfig = {
+  inline def apply(): SchemaSecurityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityConfigMutableBuilder[Self <: SchemaSecurityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityConfig](x: Self) {
     
-    @scala.inline
-    def setKerberosConfig(value: SchemaKerberosConfig): Self = StObject.set(x, "kerberosConfig", value.asInstanceOf[js.Any])
+    inline def setKerberosConfig(value: SchemaKerberosConfig): Self = StObject.set(x, "kerberosConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKerberosConfigUndefined: Self = StObject.set(x, "kerberosConfig", js.undefined)
+    inline def setKerberosConfigUndefined: Self = StObject.set(x, "kerberosConfig", js.undefined)
   }
 }

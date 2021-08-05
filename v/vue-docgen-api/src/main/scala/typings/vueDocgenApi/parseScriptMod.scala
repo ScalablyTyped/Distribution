@@ -14,10 +14,8 @@ object parseScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(source: String, preHandlers: js.Array[Handler], handlers: js.Array[Handler], options: ParseOptions): js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], preHandlers.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]]]
-  @scala.inline
-  def default(
+  inline def default(source: String, preHandlers: js.Array[Handler], handlers: js.Array[Handler], options: ParseOptions): js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], preHandlers.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]]]
+  inline def default(
     source: String,
     preHandlers: js.Array[Handler],
     handlers: js.Array[Handler],
@@ -25,16 +23,14 @@ object parseScriptMod {
     documentation: Unit,
     forceSingleExport: Boolean
   ): js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], preHandlers.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any], options.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], forceSingleExport.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]]]
-  @scala.inline
-  def default(
+  inline def default(
     source: String,
     preHandlers: js.Array[Handler],
     handlers: js.Array[Handler],
     options: ParseOptions,
     documentation: typings.vueDocgenApi.documentationMod.default
   ): js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], preHandlers.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any], options.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.vueDocgenApi.documentationMod.default]]]]
-  @scala.inline
-  def default(
+  inline def default(
     source: String,
     preHandlers: js.Array[Handler],
     handlers: js.Array[Handler],

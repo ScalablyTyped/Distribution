@@ -18,16 +18,13 @@ trait IFnJQuery extends StObject {
 }
 object IFnJQuery {
   
-  @scala.inline
-  def apply(fnPlugin: (JQuery[HTMLElement], js.Any, String, String, String) => JQuery[HTMLElement]): IFnJQuery = {
+  inline def apply(fnPlugin: (JQuery[HTMLElement], js.Any, String, String, String) => JQuery[HTMLElement]): IFnJQuery = {
     val __obj = js.Dynamic.literal(fnPlugin = js.Any.fromFunction5(fnPlugin))
     __obj.asInstanceOf[IFnJQuery]
   }
   
-  @scala.inline
-  implicit class IFnJQueryMutableBuilder[Self <: IFnJQuery] (val x: Self) extends AnyVal {
+  extension [Self <: IFnJQuery](x: Self) {
     
-    @scala.inline
-    def setFnPlugin(value: (JQuery[HTMLElement], js.Any, String, String, String) => JQuery[HTMLElement]): Self = StObject.set(x, "fnPlugin", js.Any.fromFunction5(value))
+    inline def setFnPlugin(value: (JQuery[HTMLElement], js.Any, String, String, String) => JQuery[HTMLElement]): Self = StObject.set(x, "fnPlugin", js.Any.fromFunction5(value))
   }
 }

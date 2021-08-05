@@ -14,8 +14,7 @@ object withThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PropInjector[WithTheme, ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithTheme, ThemedComponentProps]]
+  inline def default(): PropInjector[WithTheme, ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithTheme, ThemedComponentProps]]
   
   /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/withTheme.WithTheme> */
   trait ThemedComponentProps extends StObject {
@@ -26,32 +25,24 @@ object withThemeMod {
   }
   object ThemedComponentProps {
     
-    @scala.inline
-    def apply(): ThemedComponentProps = {
+    inline def apply(): ThemedComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThemedComponentProps]
     }
     
-    @scala.inline
-    implicit class ThemedComponentPropsMutableBuilder[Self <: ThemedComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ThemedComponentProps](x: Self) {
       
-      @scala.inline
-      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -61,17 +52,14 @@ object withThemeMod {
   }
   object WithTheme {
     
-    @scala.inline
-    def apply(theme: Theme): WithTheme = {
+    inline def apply(theme: Theme): WithTheme = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithTheme]
     }
     
-    @scala.inline
-    implicit class WithThemeMutableBuilder[Self <: WithTheme] (val x: Self) extends AnyVal {
+    extension [Self <: WithTheme](x: Self) {
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
 }

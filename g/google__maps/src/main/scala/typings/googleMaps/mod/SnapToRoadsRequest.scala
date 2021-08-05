@@ -31,25 +31,19 @@ trait SnapToRoadsRequest extends StObject {
 }
 object SnapToRoadsRequest {
   
-  @scala.inline
-  def apply(path: js.Array[LatLng]): SnapToRoadsRequest = {
+  inline def apply(path: js.Array[LatLng]): SnapToRoadsRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapToRoadsRequest]
   }
   
-  @scala.inline
-  implicit class SnapToRoadsRequestMutableBuilder[Self <: SnapToRoadsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SnapToRoadsRequest](x: Self) {
     
-    @scala.inline
-    def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+    inline def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+    inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
-    @scala.inline
-    def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

@@ -32,8 +32,7 @@ trait PartialStateReadonlykeystIndex extends StObject {
 }
 object PartialStateReadonlykeystIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     routes: js.Array[
       PartialRoute[
         typings.tuyaPanelKit.routersTypesMod.Route[
@@ -47,41 +46,29 @@ object PartialStateReadonlykeystIndex {
     __obj.asInstanceOf[PartialStateReadonlykeystIndex]
   }
   
-  @scala.inline
-  implicit class PartialStateReadonlykeystIndexMutableBuilder[Self <: PartialStateReadonlykeystIndex] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStateReadonlykeystIndex](x: Self) {
     
-    @scala.inline
-    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
+    inline def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteNamesUndefined: Self = StObject.set(x, "routeNames", js.undefined)
+    inline def setRouteNamesUndefined: Self = StObject.set(x, "routeNames", js.undefined)
     
-    @scala.inline
-    def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutes(
+    inline def setRoutes(
       value: js.Array[
           PartialRoute[
             typings.tuyaPanelKit.routersTypesMod.Route[
@@ -92,8 +79,7 @@ object PartialStateReadonlykeystIndex {
         ]
     ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(
+    inline def setRoutesVarargs(
       value: (PartialRoute[
           typings.tuyaPanelKit.routersTypesMod.Route[
             /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<tuya-panel-kit.anon.Index>['routeNames'][number] */ js.Any, 
@@ -102,16 +88,12 @@ object PartialStateReadonlykeystIndex {
         ])*
     ): Self = StObject.set(x, "routes", js.Array(value :_*))
     
-    @scala.inline
-    def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+    inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+    inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

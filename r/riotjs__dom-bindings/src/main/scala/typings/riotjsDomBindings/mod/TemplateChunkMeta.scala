@@ -16,22 +16,17 @@ trait TemplateChunkMeta extends StObject {
 }
 object TemplateChunkMeta {
   
-  @scala.inline
-  def apply(avoidDOMInjection: Boolean, children: HTMLCollection, fragment: DocumentFragment): TemplateChunkMeta = {
+  inline def apply(avoidDOMInjection: Boolean, children: HTMLCollection, fragment: DocumentFragment): TemplateChunkMeta = {
     val __obj = js.Dynamic.literal(avoidDOMInjection = avoidDOMInjection.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateChunkMeta]
   }
   
-  @scala.inline
-  implicit class TemplateChunkMetaMutableBuilder[Self <: TemplateChunkMeta] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateChunkMeta](x: Self) {
     
-    @scala.inline
-    def setAvoidDOMInjection(value: Boolean): Self = StObject.set(x, "avoidDOMInjection", value.asInstanceOf[js.Any])
+    inline def setAvoidDOMInjection(value: Boolean): Self = StObject.set(x, "avoidDOMInjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: HTMLCollection): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: HTMLCollection): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragment(value: DocumentFragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: DocumentFragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
   }
 }

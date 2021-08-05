@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DialogFrame")
 @js.native
-class DialogFrame protected ()
+/* private */ class DialogFrame ()
   extends StObject
      with typings.activexExcel.Excel.DialogFrame

@@ -33,8 +33,7 @@ trait SupportingWidgetDefaults
 }
 object SupportingWidgetDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object SupportingWidgetDefaults {
     __obj.asInstanceOf[SupportingWidgetDefaults]
   }
   
-  @scala.inline
-  implicit class SupportingWidgetDefaultsMutableBuilder[Self <: SupportingWidgetDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: SupportingWidgetDefaults](x: Self) {
     
-    @scala.inline
-    def setFeatureForm(value: SupportingWidgetDefaultsFeatureForm): Self = StObject.set(x, "featureForm", value.asInstanceOf[js.Any])
+    inline def setFeatureForm(value: SupportingWidgetDefaultsFeatureForm): Self = StObject.set(x, "featureForm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureFormUndefined: Self = StObject.set(x, "featureForm", js.undefined)
+    inline def setFeatureFormUndefined: Self = StObject.set(x, "featureForm", js.undefined)
     
-    @scala.inline
-    def setFeatureTemplates(value: SupportingWidgetDefaultsFeatureTemplates): Self = StObject.set(x, "featureTemplates", value.asInstanceOf[js.Any])
+    inline def setFeatureTemplates(value: SupportingWidgetDefaultsFeatureTemplates): Self = StObject.set(x, "featureTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTemplatesUndefined: Self = StObject.set(x, "featureTemplates", js.undefined)
+    inline def setFeatureTemplatesUndefined: Self = StObject.set(x, "featureTemplates", js.undefined)
     
-    @scala.inline
-    def setSketch(value: SupportingWidgetDefaultsSketch): Self = StObject.set(x, "sketch", value.asInstanceOf[js.Any])
+    inline def setSketch(value: SupportingWidgetDefaultsSketch): Self = StObject.set(x, "sketch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSketchUndefined: Self = StObject.set(x, "sketch", js.undefined)
+    inline def setSketchUndefined: Self = StObject.set(x, "sketch", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait CaptionSourceFramerate extends StObject {
 }
 object CaptionSourceFramerate {
   
-  @scala.inline
-  def apply(): CaptionSourceFramerate = {
+  inline def apply(): CaptionSourceFramerate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionSourceFramerate]
   }
   
-  @scala.inline
-  implicit class CaptionSourceFramerateMutableBuilder[Self <: CaptionSourceFramerate] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionSourceFramerate](x: Self) {
     
-    @scala.inline
-    def setFramerateDenominator(value: integerMin1Max1001): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
+    inline def setFramerateDenominator(value: integerMin1Max1001): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
+    inline def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
     
-    @scala.inline
-    def setFramerateNumerator(value: integerMin1Max60000): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
+    inline def setFramerateNumerator(value: integerMin1Max60000): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
+    inline def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
   }
 }

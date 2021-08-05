@@ -23,22 +23,17 @@ trait IWordAtPosition extends StObject {
 }
 object IWordAtPosition {
   
-  @scala.inline
-  def apply(endColumn: Double, startColumn: Double, word: String): IWordAtPosition = {
+  inline def apply(endColumn: Double, startColumn: Double, word: String): IWordAtPosition = {
     val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWordAtPosition]
   }
   
-  @scala.inline
-  implicit class IWordAtPositionMutableBuilder[Self <: IWordAtPosition] (val x: Self) extends AnyVal {
+  extension [Self <: IWordAtPosition](x: Self) {
     
-    @scala.inline
-    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

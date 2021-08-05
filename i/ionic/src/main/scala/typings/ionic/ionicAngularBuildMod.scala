@@ -38,7 +38,7 @@ object ionicAngularBuildMod {
   class IonicAngularBuildRunner protected () extends BuildRunner[IonicAngularBuildOptions] {
     def this(e: IonicAngularBuildRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_IonicAngularBuildRunner: IonicAngularBuildRunnerDeps = js.native
   }
   
@@ -51,17 +51,14 @@ object ionicAngularBuildMod {
   }
   object IonicAngularBuildRunnerDeps {
     
-    @scala.inline
-    def apply(config: IConfig, log: ILogger, project: IonicAngularProject, prompt: PromptModule, shell: IShell): IonicAngularBuildRunnerDeps = {
+    inline def apply(config: IConfig, log: ILogger, project: IonicAngularProject, prompt: PromptModule, shell: IShell): IonicAngularBuildRunnerDeps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
       __obj.asInstanceOf[IonicAngularBuildRunnerDeps]
     }
     
-    @scala.inline
-    implicit class IonicAngularBuildRunnerDepsMutableBuilder[Self <: IonicAngularBuildRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: IonicAngularBuildRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

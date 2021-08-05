@@ -12,25 +12,19 @@ trait DirectionsResult extends StObject {
 }
 object DirectionsResult {
   
-  @scala.inline
-  def apply(geocoded_waypoints: js.Array[DirectionsGeocodedWaypoint], routes: js.Array[DirectionsRoute]): DirectionsResult = {
+  inline def apply(geocoded_waypoints: js.Array[DirectionsGeocodedWaypoint], routes: js.Array[DirectionsRoute]): DirectionsResult = {
     val __obj = js.Dynamic.literal(geocoded_waypoints = geocoded_waypoints.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsResult]
   }
   
-  @scala.inline
-  implicit class DirectionsResultMutableBuilder[Self <: DirectionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsResult](x: Self) {
     
-    @scala.inline
-    def setGeocoded_waypoints(value: js.Array[DirectionsGeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
+    inline def setGeocoded_waypoints(value: js.Array[DirectionsGeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocoded_waypointsVarargs(value: DirectionsGeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value :_*))
+    inline def setGeocoded_waypointsVarargs(value: DirectionsGeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
   }
 }

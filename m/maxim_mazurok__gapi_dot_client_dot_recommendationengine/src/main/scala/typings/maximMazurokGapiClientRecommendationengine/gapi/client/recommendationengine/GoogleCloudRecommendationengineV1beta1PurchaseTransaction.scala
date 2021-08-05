@@ -39,51 +39,39 @@ trait GoogleCloudRecommendationengineV1beta1PurchaseTransaction extends StObject
 }
 object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1PurchaseTransaction = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1PurchaseTransaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurchaseTransaction]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PurchaseTransactionMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurchaseTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1PurchaseTransaction](x: Self) {
     
-    @scala.inline
-    def setCosts(
+    inline def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
     ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
+    inline def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
+    inline def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
+    inline def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
     
-    @scala.inline
-    def setTaxes(
+    inline def setTaxes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
     ): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxesUndefined: Self = StObject.set(x, "taxes", js.undefined)
+    inline def setTaxesUndefined: Self = StObject.set(x, "taxes", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait UpateCollectionResult extends StObject {
 }
 object UpateCollectionResult {
   
-  @scala.inline
-  def apply(stats: Updated): UpateCollectionResult = {
+  inline def apply(stats: Updated): UpateCollectionResult = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpateCollectionResult]
   }
   
-  @scala.inline
-  implicit class UpateCollectionResultMutableBuilder[Self <: UpateCollectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpateCollectionResult](x: Self) {
     
-    @scala.inline
-    def setStats(value: Updated): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Updated): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

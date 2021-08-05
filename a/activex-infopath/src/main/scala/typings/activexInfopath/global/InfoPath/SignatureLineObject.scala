@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SignatureLineObject")
 @js.native
-class SignatureLineObject protected ()
+/* private */ class SignatureLineObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SignatureLineObject {
   
   /* CompleteClass */
   override val Id: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.SignatureLineObject_typekey")
   var InfoPathDotSignatureLineObject_typekey: typings.activexInfopath.InfoPath.SignatureLineObject = js.native
   

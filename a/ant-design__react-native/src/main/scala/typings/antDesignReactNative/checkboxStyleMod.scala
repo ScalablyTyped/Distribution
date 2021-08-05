@@ -13,8 +13,7 @@ object checkboxStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): CheckboxStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[CheckboxStyle]
+  inline def default(theme: Theme): CheckboxStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[CheckboxStyle]
   
   trait CheckboxStyle extends StObject {
     
@@ -32,8 +31,7 @@ object checkboxStyleMod {
   }
   object CheckboxStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       agreeItem: ViewStyle,
       agreeItemCheckbox: TextStyle,
       checkboxItemCheckbox: TextStyle,
@@ -45,26 +43,19 @@ object checkboxStyleMod {
       __obj.asInstanceOf[CheckboxStyle]
     }
     
-    @scala.inline
-    implicit class CheckboxStyleMutableBuilder[Self <: CheckboxStyle] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxStyle](x: Self) {
       
-      @scala.inline
-      def setAgreeItem(value: ViewStyle): Self = StObject.set(x, "agreeItem", value.asInstanceOf[js.Any])
+      inline def setAgreeItem(value: ViewStyle): Self = StObject.set(x, "agreeItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgreeItemCheckbox(value: TextStyle): Self = StObject.set(x, "agreeItemCheckbox", value.asInstanceOf[js.Any])
+      inline def setAgreeItemCheckbox(value: TextStyle): Self = StObject.set(x, "agreeItemCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxItemCheckbox(value: TextStyle): Self = StObject.set(x, "checkboxItemCheckbox", value.asInstanceOf[js.Any])
+      inline def setCheckboxItemCheckbox(value: TextStyle): Self = StObject.set(x, "checkboxItemCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: TextStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: TextStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconRight(value: TextStyle): Self = StObject.set(x, "iconRight", value.asInstanceOf[js.Any])
+      inline def setIconRight(value: TextStyle): Self = StObject.set(x, "iconRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

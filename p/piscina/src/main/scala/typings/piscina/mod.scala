@@ -22,12 +22,9 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def move(`val`: Transferable): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
-  @scala.inline
-  def move(`val`: TransferListItem): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
-  @scala.inline
-  def move(`val`: ArrayBufferView): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
+  inline def move(`val`: Transferable): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
+  inline def move(`val`: TransferListItem): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
+  inline def move(`val`: ArrayBufferView): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
   
   /* Rewritten from type alias, can be one of: 
     - typings.piscina.mod.AbortSignalEventTarget
@@ -44,17 +41,14 @@ object mod {
   }
   object AbortSignalEventEmitter {
     
-    @scala.inline
-    def apply(once: (abort, js.Function0[Unit]) => Unit): AbortSignalEventEmitter = {
+    inline def apply(once: (abort, js.Function0[Unit]) => Unit): AbortSignalEventEmitter = {
       val __obj = js.Dynamic.literal(once = js.Any.fromFunction2(once))
       __obj.asInstanceOf[AbortSignalEventEmitter]
     }
     
-    @scala.inline
-    implicit class AbortSignalEventEmitterMutableBuilder[Self <: AbortSignalEventEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: AbortSignalEventEmitter](x: Self) {
       
-      @scala.inline
-      def setOnce(value: (abort, js.Function0[Unit]) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (abort, js.Function0[Unit]) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     }
   }
   
@@ -77,17 +71,14 @@ object mod {
   }
   object AbortSignalEventTargetAddOptions {
     
-    @scala.inline
-    def apply(once: Boolean): AbortSignalEventTargetAddOptions = {
+    inline def apply(once: Boolean): AbortSignalEventTargetAddOptions = {
       val __obj = js.Dynamic.literal(once = once.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbortSignalEventTargetAddOptions]
     }
     
-    @scala.inline
-    implicit class AbortSignalEventTargetAddOptionsMutableBuilder[Self <: AbortSignalEventTargetAddOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AbortSignalEventTargetAddOptions](x: Self) {
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,8 +117,7 @@ object mod {
   }
   object FilledOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       concurrentTasksPerWorker: Double,
       idleTimeout: Double,
       maxQueue: Double,
@@ -141,38 +131,27 @@ object mod {
       __obj.asInstanceOf[FilledOptions]
     }
     
-    @scala.inline
-    implicit class FilledOptionsMutableBuilder[Self <: FilledOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FilledOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrentTasksPerWorker(value: Double): Self = StObject.set(x, "concurrentTasksPerWorker", value.asInstanceOf[js.Any])
+      inline def setConcurrentTasksPerWorker(value: Double): Self = StObject.set(x, "concurrentTasksPerWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameNull: Self = StObject.set(x, "filename", null)
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
       
-      @scala.inline
-      def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxQueue(value: Double): Self = StObject.set(x, "maxQueue", value.asInstanceOf[js.Any])
+      inline def setMaxQueue(value: Double): Self = StObject.set(x, "maxQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxThreads(value: Double): Self = StObject.set(x, "maxThreads", value.asInstanceOf[js.Any])
+      inline def setMaxThreads(value: Double): Self = StObject.set(x, "maxThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinThreads(value: Double): Self = StObject.set(x, "minThreads", value.asInstanceOf[js.Any])
+      inline def setMinThreads(value: Double): Self = StObject.set(x, "minThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNiceIncrement(value: Double): Self = StObject.set(x, "niceIncrement", value.asInstanceOf[js.Any])
+      inline def setNiceIncrement(value: Double): Self = StObject.set(x, "niceIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskQueue(value: TaskQueue): Self = StObject.set(x, "taskQueue", value.asInstanceOf[js.Any])
+      inline def setTaskQueue(value: TaskQueue): Self = StObject.set(x, "taskQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAtomics(value: Boolean): Self = StObject.set(x, "useAtomics", value.asInstanceOf[js.Any])
+      inline def setUseAtomics(value: Boolean): Self = StObject.set(x, "useAtomics", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,107 +187,74 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
+      inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      @scala.inline
-      def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
       
-      @scala.inline
-      def setConcurrentTasksPerWorker(value: Double): Self = StObject.set(x, "concurrentTasksPerWorker", value.asInstanceOf[js.Any])
+      inline def setConcurrentTasksPerWorker(value: Double): Self = StObject.set(x, "concurrentTasksPerWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentTasksPerWorkerUndefined: Self = StObject.set(x, "concurrentTasksPerWorker", js.undefined)
+      inline def setConcurrentTasksPerWorkerUndefined: Self = StObject.set(x, "concurrentTasksPerWorker", js.undefined)
       
-      @scala.inline
-      def setEnv(value: EnvSpecifier): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: EnvSpecifier): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
+      inline def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
+      inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
-      @scala.inline
-      def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameNull: Self = StObject.set(x, "filename", null)
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      @scala.inline
-      def setMaxQueue(value: Double | auto): Self = StObject.set(x, "maxQueue", value.asInstanceOf[js.Any])
+      inline def setMaxQueue(value: Double | auto): Self = StObject.set(x, "maxQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxQueueUndefined: Self = StObject.set(x, "maxQueue", js.undefined)
+      inline def setMaxQueueUndefined: Self = StObject.set(x, "maxQueue", js.undefined)
       
-      @scala.inline
-      def setMaxThreads(value: Double): Self = StObject.set(x, "maxThreads", value.asInstanceOf[js.Any])
+      inline def setMaxThreads(value: Double): Self = StObject.set(x, "maxThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxThreadsUndefined: Self = StObject.set(x, "maxThreads", js.undefined)
+      inline def setMaxThreadsUndefined: Self = StObject.set(x, "maxThreads", js.undefined)
       
-      @scala.inline
-      def setMinThreads(value: Double): Self = StObject.set(x, "minThreads", value.asInstanceOf[js.Any])
+      inline def setMinThreads(value: Double): Self = StObject.set(x, "minThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinThreadsUndefined: Self = StObject.set(x, "minThreads", js.undefined)
+      inline def setMinThreadsUndefined: Self = StObject.set(x, "minThreads", js.undefined)
       
-      @scala.inline
-      def setNiceIncrement(value: Double): Self = StObject.set(x, "niceIncrement", value.asInstanceOf[js.Any])
+      inline def setNiceIncrement(value: Double): Self = StObject.set(x, "niceIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNiceIncrementUndefined: Self = StObject.set(x, "niceIncrement", js.undefined)
+      inline def setNiceIncrementUndefined: Self = StObject.set(x, "niceIncrement", js.undefined)
       
-      @scala.inline
-      def setResourceLimits(value: ResourceLimits): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
+      inline def setResourceLimits(value: ResourceLimits): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
+      inline def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
       
-      @scala.inline
-      def setTaskQueue(value: TaskQueue): Self = StObject.set(x, "taskQueue", value.asInstanceOf[js.Any])
+      inline def setTaskQueue(value: TaskQueue): Self = StObject.set(x, "taskQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskQueueUndefined: Self = StObject.set(x, "taskQueue", js.undefined)
+      inline def setTaskQueueUndefined: Self = StObject.set(x, "taskQueue", js.undefined)
       
-      @scala.inline
-      def setUseAtomics(value: Boolean): Self = StObject.set(x, "useAtomics", value.asInstanceOf[js.Any])
+      inline def setUseAtomics(value: Boolean): Self = StObject.set(x, "useAtomics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAtomicsUndefined: Self = StObject.set(x, "useAtomics", js.undefined)
+      inline def setUseAtomicsUndefined: Self = StObject.set(x, "useAtomics", js.undefined)
       
-      @scala.inline
-      def setWorkerData(value: js.Any): Self = StObject.set(x, "workerData", value.asInstanceOf[js.Any])
+      inline def setWorkerData(value: js.Any): Self = StObject.set(x, "workerData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerDataUndefined: Self = StObject.set(x, "workerData", js.undefined)
+      inline def setWorkerDataUndefined: Self = StObject.set(x, "workerData", js.undefined)
     }
   }
   
@@ -324,7 +270,7 @@ object mod {
     
     def options: FilledOptions = js.native
     
-    var `private`: js.Any = js.native
+    /* private */ var `private`: js.Any = js.native
     
     def queueSize: Double = js.native
     

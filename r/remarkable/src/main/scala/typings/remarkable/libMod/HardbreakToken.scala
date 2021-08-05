@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object HardbreakToken {
   
-  @scala.inline
-  def apply(level: Double): HardbreakToken = {
+  inline def apply(level: Double): HardbreakToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("hardbreak")
     __obj.asInstanceOf[HardbreakToken]
   }
   
-  @scala.inline
-  implicit class HardbreakTokenMutableBuilder[Self <: HardbreakToken] (val x: Self) extends AnyVal {
+  extension [Self <: HardbreakToken](x: Self) {
     
-    @scala.inline
-    def setType(value: hardbreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: hardbreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

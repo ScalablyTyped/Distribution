@@ -16,20 +16,16 @@ trait RangeSelectionChangedEvent
 }
 object RangeSelectionChangedEvent {
   
-  @scala.inline
-  def apply(api: GridApi, columnApi: ColumnApi, finished: Boolean, started: Boolean, `type`: String): RangeSelectionChangedEvent = {
+  inline def apply(api: GridApi, columnApi: ColumnApi, finished: Boolean, started: Boolean, `type`: String): RangeSelectionChangedEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectionChangedEvent]
   }
   
-  @scala.inline
-  implicit class RangeSelectionChangedEventMutableBuilder[Self <: RangeSelectionChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RangeSelectionChangedEvent](x: Self) {
     
-    @scala.inline
-    def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
   }
 }

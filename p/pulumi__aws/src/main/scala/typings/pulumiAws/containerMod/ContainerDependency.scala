@@ -12,25 +12,19 @@ trait ContainerDependency extends StObject {
 }
 object ContainerDependency {
   
-  @scala.inline
-  def apply(): ContainerDependency = {
+  inline def apply(): ContainerDependency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerDependency]
   }
   
-  @scala.inline
-  implicit class ContainerDependencyMutableBuilder[Self <: ContainerDependency] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerDependency](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
   }
 }

@@ -39,73 +39,51 @@ trait Features extends StObject {
 }
 object Features {
   
-  @scala.inline
-  def apply(): Features = {
+  inline def apply(): Features = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Features]
   }
   
-  @scala.inline
-  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
+  extension [Self <: Features](x: Self) {
     
-    @scala.inline
-    def setCategories(value: CategoriesOptions): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: CategoriesOptions): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setConcepts(value: ConceptsOptions): Self = StObject.set(x, "concepts", value.asInstanceOf[js.Any])
+    inline def setConcepts(value: ConceptsOptions): Self = StObject.set(x, "concepts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConceptsUndefined: Self = StObject.set(x, "concepts", js.undefined)
+    inline def setConceptsUndefined: Self = StObject.set(x, "concepts", js.undefined)
     
-    @scala.inline
-    def setEmotion(value: EmotionOptions): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
+    inline def setEmotion(value: EmotionOptions): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
+    inline def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
-    @scala.inline
-    def setEntities(value: EntitiesOptions): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: EntitiesOptions): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setKeywords(value: KeywordsOptions): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: KeywordsOptions): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: MetadataOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setRelations(value: RelationsOptions): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: RelationsOptions): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
+    inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
-    @scala.inline
-    def setSemantic_roles(value: SemanticRolesOptions): Self = StObject.set(x, "semantic_roles", value.asInstanceOf[js.Any])
+    inline def setSemantic_roles(value: SemanticRolesOptions): Self = StObject.set(x, "semantic_roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemantic_rolesUndefined: Self = StObject.set(x, "semantic_roles", js.undefined)
+    inline def setSemantic_rolesUndefined: Self = StObject.set(x, "semantic_roles", js.undefined)
     
-    @scala.inline
-    def setSentiment(value: SentimentOptions): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: SentimentOptions): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
-    @scala.inline
-    def setSyntax(value: SyntaxOptions): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: SyntaxOptions): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

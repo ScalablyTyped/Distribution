@@ -14,27 +14,22 @@ trait SizeProps[TLength] extends StObject {
 }
 object SizeProps {
   
-  @scala.inline
-  def apply[TLength](): SizeProps[TLength] = {
+  inline def apply[TLength](): SizeProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeProps[TLength]]
   }
   
-  @scala.inline
-  implicit class SizePropsMutableBuilder[Self <: SizeProps[?], TLength] (val x: Self & SizeProps[TLength]) extends AnyVal {
+  extension [Self <: SizeProps[?], TLength](x: Self & SizeProps[TLength]) {
     
-    @scala.inline
-    def setSize(
+    inline def setSize(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSizeVarargs(
+    inline def setSizeVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any)*
     ): Self = StObject.set(x, "size", js.Array(value :_*))
   }

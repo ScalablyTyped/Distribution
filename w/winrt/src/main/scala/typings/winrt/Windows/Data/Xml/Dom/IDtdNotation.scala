@@ -14,8 +14,7 @@ trait IDtdNotation
 }
 object IDtdNotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,
@@ -50,13 +49,10 @@ object IDtdNotation {
     __obj.asInstanceOf[IDtdNotation]
   }
   
-  @scala.inline
-  implicit class IDtdNotationMutableBuilder[Self <: IDtdNotation] (val x: Self) extends AnyVal {
+  extension [Self <: IDtdNotation](x: Self) {
     
-    @scala.inline
-    def setPublicId(value: js.Any): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: js.Any): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemId(value: js.Any): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: js.Any): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
   }
 }

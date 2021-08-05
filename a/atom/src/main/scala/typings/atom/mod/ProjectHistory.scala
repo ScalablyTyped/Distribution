@@ -13,22 +13,17 @@ trait ProjectHistory extends StObject {
 }
 object ProjectHistory {
   
-  @scala.inline
-  def apply(lastOpened: Date, paths: js.Array[String]): ProjectHistory = {
+  inline def apply(lastOpened: Date, paths: js.Array[String]): ProjectHistory = {
     val __obj = js.Dynamic.literal(lastOpened = lastOpened.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectHistory]
   }
   
-  @scala.inline
-  implicit class ProjectHistoryMutableBuilder[Self <: ProjectHistory] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectHistory](x: Self) {
     
-    @scala.inline
-    def setLastOpened(value: Date): Self = StObject.set(x, "lastOpened", value.asInstanceOf[js.Any])
+    inline def setLastOpened(value: Date): Self = StObject.set(x, "lastOpened", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

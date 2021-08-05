@@ -14,25 +14,19 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(): JQueryStatic = {
+  inline def apply(): JQueryStatic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setBlockUI(value: JQBlockUIStatic): Self = StObject.set(x, "blockUI", value.asInstanceOf[js.Any])
+    inline def setBlockUI(value: JQBlockUIStatic): Self = StObject.set(x, "blockUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUIUndefined: Self = StObject.set(x, "blockUI", js.undefined)
+    inline def setBlockUIUndefined: Self = StObject.set(x, "blockUI", js.undefined)
     
-    @scala.inline
-    def setUnblockUI(value: JQBlockUIStatic): Self = StObject.set(x, "unblockUI", value.asInstanceOf[js.Any])
+    inline def setUnblockUI(value: JQBlockUIStatic): Self = StObject.set(x, "unblockUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnblockUIUndefined: Self = StObject.set(x, "unblockUI", js.undefined)
+    inline def setUnblockUIUndefined: Self = StObject.set(x, "unblockUI", js.undefined)
   }
 }

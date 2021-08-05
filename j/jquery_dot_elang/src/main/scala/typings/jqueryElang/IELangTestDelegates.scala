@@ -22,8 +22,7 @@ trait IELangTestDelegates extends StObject {
 }
 object IELangTestDelegates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     rdoModeClickHandler: js.Function,
     rdoModeHandler: js.Function,
     rdoQuestionClickHandler: js.Function,
@@ -36,28 +35,20 @@ object IELangTestDelegates {
     __obj.asInstanceOf[IELangTestDelegates]
   }
   
-  @scala.inline
-  implicit class IELangTestDelegatesMutableBuilder[Self <: IELangTestDelegates] (val x: Self) extends AnyVal {
+  extension [Self <: IELangTestDelegates](x: Self) {
     
-    @scala.inline
-    def setRdoModeClickHandler(value: js.Function): Self = StObject.set(x, "rdoModeClickHandler", value.asInstanceOf[js.Any])
+    inline def setRdoModeClickHandler(value: js.Function): Self = StObject.set(x, "rdoModeClickHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoModeHandler(value: js.Function): Self = StObject.set(x, "rdoModeHandler", value.asInstanceOf[js.Any])
+    inline def setRdoModeHandler(value: js.Function): Self = StObject.set(x, "rdoModeHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoQuestionClickHandler(value: js.Function): Self = StObject.set(x, "rdoQuestionClickHandler", value.asInstanceOf[js.Any])
+    inline def setRdoQuestionClickHandler(value: js.Function): Self = StObject.set(x, "rdoQuestionClickHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoQuestionHandler(value: js.Function): Self = StObject.set(x, "rdoQuestionHandler", value.asInstanceOf[js.Any])
+    inline def setRdoQuestionHandler(value: js.Function): Self = StObject.set(x, "rdoQuestionHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoVariantClickHandler(value: js.Function): Self = StObject.set(x, "rdoVariantClickHandler", value.asInstanceOf[js.Any])
+    inline def setRdoVariantClickHandler(value: js.Function): Self = StObject.set(x, "rdoVariantClickHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoVariantHandler(value: js.Function): Self = StObject.set(x, "rdoVariantHandler", value.asInstanceOf[js.Any])
+    inline def setRdoVariantHandler(value: js.Function): Self = StObject.set(x, "rdoVariantHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartStopHandler(value: js.Function): Self = StObject.set(x, "startStopHandler", value.asInstanceOf[js.Any])
+    inline def setStartStopHandler(value: js.Function): Self = StObject.set(x, "startStopHandler", value.asInstanceOf[js.Any])
   }
 }

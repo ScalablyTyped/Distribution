@@ -30,19 +30,15 @@ trait DataRefreshCompleteEventArgs extends StObject {
 }
 object DataRefreshCompleteEventArgs {
   
-  @scala.inline
-  def apply(document: Document, success: Boolean): DataRefreshCompleteEventArgs = {
+  inline def apply(document: Document, success: Boolean): DataRefreshCompleteEventArgs = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRefreshCompleteEventArgs]
   }
   
-  @scala.inline
-  implicit class DataRefreshCompleteEventArgsMutableBuilder[Self <: DataRefreshCompleteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DataRefreshCompleteEventArgs](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

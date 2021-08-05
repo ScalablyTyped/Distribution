@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Resampling extends StObject
 object Resampling {
   
-  @scala.inline
-  def AVERAGE: typings.gdal.gdalStrings.AVERAGE = "AVERAGE".asInstanceOf[typings.gdal.gdalStrings.AVERAGE]
+  inline def AVERAGE: typings.gdal.gdalStrings.AVERAGE = "AVERAGE".asInstanceOf[typings.gdal.gdalStrings.AVERAGE]
   
-  @scala.inline
-  def AVERAGE_MAGPHASE: typings.gdal.gdalStrings.AVERAGE_MAGPHASE = "AVERAGE_MAGPHASE".asInstanceOf[typings.gdal.gdalStrings.AVERAGE_MAGPHASE]
+  inline def AVERAGE_MAGPHASE: typings.gdal.gdalStrings.AVERAGE_MAGPHASE = "AVERAGE_MAGPHASE".asInstanceOf[typings.gdal.gdalStrings.AVERAGE_MAGPHASE]
   
-  @scala.inline
-  def CUBIC: typings.gdal.gdalStrings.CUBIC = "CUBIC".asInstanceOf[typings.gdal.gdalStrings.CUBIC]
+  inline def CUBIC: typings.gdal.gdalStrings.CUBIC = "CUBIC".asInstanceOf[typings.gdal.gdalStrings.CUBIC]
   
-  @scala.inline
-  def GAUSS: typings.gdal.gdalStrings.GAUSS = "GAUSS".asInstanceOf[typings.gdal.gdalStrings.GAUSS]
+  inline def GAUSS: typings.gdal.gdalStrings.GAUSS = "GAUSS".asInstanceOf[typings.gdal.gdalStrings.GAUSS]
   
-  @scala.inline
-  def MODE: typings.gdal.gdalStrings.MODE = "MODE".asInstanceOf[typings.gdal.gdalStrings.MODE]
+  inline def MODE: typings.gdal.gdalStrings.MODE = "MODE".asInstanceOf[typings.gdal.gdalStrings.MODE]
   
-  @scala.inline
-  def NEAREST: typings.gdal.gdalStrings.NEAREST = "NEAREST".asInstanceOf[typings.gdal.gdalStrings.NEAREST]
+  inline def NEAREST: typings.gdal.gdalStrings.NEAREST = "NEAREST".asInstanceOf[typings.gdal.gdalStrings.NEAREST]
   
-  @scala.inline
-  def NONE: typings.gdal.gdalStrings.NONE = "NONE".asInstanceOf[typings.gdal.gdalStrings.NONE]
+  inline def NONE: typings.gdal.gdalStrings.NONE = "NONE".asInstanceOf[typings.gdal.gdalStrings.NONE]
 }

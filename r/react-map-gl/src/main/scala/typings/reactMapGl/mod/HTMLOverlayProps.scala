@@ -15,22 +15,17 @@ trait HTMLOverlayProps
 }
 object HTMLOverlayProps {
   
-  @scala.inline
-  def apply(redraw: HTMLRedrawOptions => Unit): HTMLOverlayProps = {
+  inline def apply(redraw: HTMLRedrawOptions => Unit): HTMLOverlayProps = {
     val __obj = js.Dynamic.literal(redraw = js.Any.fromFunction1(redraw))
     __obj.asInstanceOf[HTMLOverlayProps]
   }
   
-  @scala.inline
-  implicit class HTMLOverlayPropsMutableBuilder[Self <: HTMLOverlayProps] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLOverlayProps](x: Self) {
     
-    @scala.inline
-    def setRedraw(value: HTMLRedrawOptions => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
+    inline def setRedraw(value: HTMLRedrawOptions => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

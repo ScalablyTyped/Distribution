@@ -10,19 +10,15 @@ trait DataSourceTransportBatchOptionsData extends StObject {
 }
 object DataSourceTransportBatchOptionsData {
   
-  @scala.inline
-  def apply(models: js.Array[js.Any]): DataSourceTransportBatchOptionsData = {
+  inline def apply(models: js.Array[js.Any]): DataSourceTransportBatchOptionsData = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportBatchOptionsData]
   }
   
-  @scala.inline
-  implicit class DataSourceTransportBatchOptionsDataMutableBuilder[Self <: DataSourceTransportBatchOptionsData] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceTransportBatchOptionsData](x: Self) {
     
-    @scala.inline
-    def setModels(value: js.Array[js.Any]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: js.Array[js.Any]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsVarargs(value: js.Any*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: js.Any*): Self = StObject.set(x, "models", js.Array(value :_*))
   }
 }

@@ -37,56 +37,41 @@ trait TenantProjectConfig extends StObject {
 }
 object TenantProjectConfig {
   
-  @scala.inline
-  def apply(): TenantProjectConfig = {
+  inline def apply(): TenantProjectConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TenantProjectConfig]
   }
   
-  @scala.inline
-  implicit class TenantProjectConfigMutableBuilder[Self <: TenantProjectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TenantProjectConfig](x: Self) {
     
-    @scala.inline
-    def setBillingConfig(value: BillingConfig): Self = StObject.set(x, "billingConfig", value.asInstanceOf[js.Any])
+    inline def setBillingConfig(value: BillingConfig): Self = StObject.set(x, "billingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingConfigUndefined: Self = StObject.set(x, "billingConfig", js.undefined)
+    inline def setBillingConfigUndefined: Self = StObject.set(x, "billingConfig", js.undefined)
     
-    @scala.inline
-    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.TenantProjectConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setServiceAccountConfig(value: ServiceAccountConfig): Self = StObject.set(x, "serviceAccountConfig", value.asInstanceOf[js.Any])
+    inline def setServiceAccountConfig(value: ServiceAccountConfig): Self = StObject.set(x, "serviceAccountConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountConfigUndefined: Self = StObject.set(x, "serviceAccountConfig", js.undefined)
+    inline def setServiceAccountConfigUndefined: Self = StObject.set(x, "serviceAccountConfig", js.undefined)
     
-    @scala.inline
-    def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
     
-    @scala.inline
-    def setTenantProjectPolicy(value: TenantProjectPolicy): Self = StObject.set(x, "tenantProjectPolicy", value.asInstanceOf[js.Any])
+    inline def setTenantProjectPolicy(value: TenantProjectPolicy): Self = StObject.set(x, "tenantProjectPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantProjectPolicyUndefined: Self = StObject.set(x, "tenantProjectPolicy", js.undefined)
+    inline def setTenantProjectPolicyUndefined: Self = StObject.set(x, "tenantProjectPolicy", js.undefined)
   }
 }

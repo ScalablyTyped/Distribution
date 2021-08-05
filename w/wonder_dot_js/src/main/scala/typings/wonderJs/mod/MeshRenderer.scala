@@ -15,6 +15,5 @@ object MeshRenderer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.meshRendererMod.MeshRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.meshRendererMod.MeshRenderer]
+  inline def create(): typings.wonderJs.meshRendererMod.MeshRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.meshRendererMod.MeshRenderer]
 }

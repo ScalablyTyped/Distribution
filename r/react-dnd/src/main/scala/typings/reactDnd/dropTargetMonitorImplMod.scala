@@ -15,8 +15,8 @@ object dropTargetMonitorImplMod {
        with DropTargetMonitor {
     def this(manager: DragDropManager) = this()
     
-    var internalMonitor: js.Any = js.native
+    /* private */ var internalMonitor: js.Any = js.native
     
-    var targetId: js.Any = js.native
+    /* private */ var targetId: js.Any = js.native
   }
 }

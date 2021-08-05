@@ -26,22 +26,17 @@ trait ObserverBaseDescriptor[T /* <: Ractive[T] */]
 }
 object ObserverBaseDescriptor {
   
-  @scala.inline
-  def apply[T /* <: Ractive[T] */](handler: ObserverCallback[T]): ObserverBaseDescriptor[T] = {
+  inline def apply[T /* <: Ractive[T] */](handler: ObserverCallback[T]): ObserverBaseDescriptor[T] = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverBaseDescriptor[T]]
   }
   
-  @scala.inline
-  implicit class ObserverBaseDescriptorMutableBuilder[Self <: ObserverBaseDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ObserverBaseDescriptor[T]) extends AnyVal {
+  extension [Self <: ObserverBaseDescriptor[?], T /* <: Ractive[T] */](x: Self & ObserverBaseDescriptor[T]) {
     
-    @scala.inline
-    def setHandler(value: ObserverCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: ObserverCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
   }
 }

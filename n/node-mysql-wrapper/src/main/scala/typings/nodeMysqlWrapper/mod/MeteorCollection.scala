@@ -18,7 +18,7 @@ class MeteorCollection[T] protected () extends StObject {
   //ONLY MONGO/METEOR COLLECTION METHODS START
   def allow(options: Fetch[T]): Boolean = js.native
   
-  var collection: Collection[T] = js.native
+  /* private */ var collection: Collection[T] = js.native
   
   def deny(options: Fetch[T]): Boolean = js.native
   
@@ -42,5 +42,5 @@ class MeteorCollection[T] protected () extends StObject {
   
   def startListeningToDatabase(): Unit = js.native
   
-  var table: Table[T] = js.native
+  /* protected */ var table: Table[T] = js.native
 }

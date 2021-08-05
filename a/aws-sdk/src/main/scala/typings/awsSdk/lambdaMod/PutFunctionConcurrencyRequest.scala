@@ -18,19 +18,15 @@ trait PutFunctionConcurrencyRequest extends StObject {
 }
 object PutFunctionConcurrencyRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName, ReservedConcurrentExecutions: ReservedConcurrentExecutions): PutFunctionConcurrencyRequest = {
+  inline def apply(FunctionName: FunctionName, ReservedConcurrentExecutions: ReservedConcurrentExecutions): PutFunctionConcurrencyRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], ReservedConcurrentExecutions = ReservedConcurrentExecutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFunctionConcurrencyRequest]
   }
   
-  @scala.inline
-  implicit class PutFunctionConcurrencyRequestMutableBuilder[Self <: PutFunctionConcurrencyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutFunctionConcurrencyRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedConcurrentExecutions(value: ReservedConcurrentExecutions): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
+    inline def setReservedConcurrentExecutions(value: ReservedConcurrentExecutions): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
   }
 }

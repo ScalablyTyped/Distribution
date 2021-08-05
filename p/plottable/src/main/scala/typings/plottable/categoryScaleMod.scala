@@ -19,7 +19,7 @@ object categoryScaleMod {
     extends Scale[String, Double]
        with ITransformableScale {
     
-    var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: js.Any = js.native
     
     /**
       * An additional linear scale to apply pan/zoom interactions to the category
@@ -36,13 +36,13 @@ object categoryScaleMod {
       * *Transformation Space* and transformed to screen space in methods like
       * `rangeBand()` and `stepWidth()`.
       */
-    var _d3TransformationScale: js.Any = js.native
+    /* private */ var _d3TransformationScale: js.Any = js.native
     
-    var _innerPadding: js.Any = js.native
+    /* private */ var _innerPadding: js.Any = js.native
     
-    var _outerPadding: js.Any = js.native
+    /* private */ var _outerPadding: js.Any = js.native
     
-    var _range: js.Any = js.native
+    /* private */ var _range: js.Any = js.native
     
     /**
       * Converts a width or height in *Transformation Space* into *Screen Space*.
@@ -182,10 +182,8 @@ object categoryScaleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableInnerPadding")(d3InnerPadding.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableInnerPadding")(d3InnerPadding.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableOuterPadding")(d3OuterPadding.asInstanceOf[js.Any], d3InnerPadding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableOuterPadding")(d3OuterPadding.asInstanceOf[js.Any], d3InnerPadding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

@@ -14,7 +14,7 @@ object pipeResolverMod {
   class PipeResolver protected () extends StObject {
     def this(_reflector: CompileReflector) = this()
     
-    var _reflector: js.Any = js.native
+    /* private */ var _reflector: js.Any = js.native
     
     def isPipe(`type`: Type): Boolean = js.native
     

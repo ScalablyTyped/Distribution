@@ -12,16 +12,13 @@ trait IFileInputOptions
 }
 object IFileInputOptions {
   
-  @scala.inline
-  def apply(baseDir: String): IFileInputOptions = {
+  inline def apply(baseDir: String): IFileInputOptions = {
     val __obj = js.Dynamic.literal(baseDir = baseDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileInputOptions]
   }
   
-  @scala.inline
-  implicit class IFileInputOptionsMutableBuilder[Self <: IFileInputOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFileInputOptions](x: Self) {
     
-    @scala.inline
-    def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+    inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
   }
 }

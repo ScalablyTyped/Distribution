@@ -33,8 +33,7 @@ object tooltipSimpleMod {
     @JSImport("carbon-components/components/tooltip/tooltip--simple", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -48,8 +47,7 @@ object tooltipSimpleMod {
   }
   object TooltipSimple {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowTooltipVisibility: js.Any => Unit,
       getTooltipTriggerButton: () => js.Any,
       tooltipFadeOut: js.Any
@@ -58,17 +56,13 @@ object tooltipSimpleMod {
       __obj.asInstanceOf[TooltipSimple]
     }
     
-    @scala.inline
-    implicit class TooltipSimpleMutableBuilder[Self <: TooltipSimple] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipSimple](x: Self) {
       
-      @scala.inline
-      def setAllowTooltipVisibility(value: js.Any => Unit): Self = StObject.set(x, "allowTooltipVisibility", js.Any.fromFunction1(value))
+      inline def setAllowTooltipVisibility(value: js.Any => Unit): Self = StObject.set(x, "allowTooltipVisibility", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTooltipTriggerButton(value: () => js.Any): Self = StObject.set(x, "getTooltipTriggerButton", js.Any.fromFunction0(value))
+      inline def setGetTooltipTriggerButton(value: () => js.Any): Self = StObject.set(x, "getTooltipTriggerButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTooltipFadeOut(value: js.Any): Self = StObject.set(x, "tooltipFadeOut", value.asInstanceOf[js.Any])
+      inline def setTooltipFadeOut(value: js.Any): Self = StObject.set(x, "tooltipFadeOut", value.asInstanceOf[js.Any])
     }
   }
 }

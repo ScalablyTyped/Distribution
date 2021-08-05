@@ -20,8 +20,7 @@ trait DirectInboxFeedResponseFriendshipStatus extends StObject {
 }
 object DirectInboxFeedResponseFriendshipStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blocking: Boolean,
     following: Boolean,
     incoming_request: Boolean,
@@ -33,25 +32,18 @@ object DirectInboxFeedResponseFriendshipStatus {
     __obj.asInstanceOf[DirectInboxFeedResponseFriendshipStatus]
   }
   
-  @scala.inline
-  implicit class DirectInboxFeedResponseFriendshipStatusMutableBuilder[Self <: DirectInboxFeedResponseFriendshipStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DirectInboxFeedResponseFriendshipStatus](x: Self) {
     
-    @scala.inline
-    def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
+    inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+    inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+    inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+    inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+    inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+    inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
   }
 }

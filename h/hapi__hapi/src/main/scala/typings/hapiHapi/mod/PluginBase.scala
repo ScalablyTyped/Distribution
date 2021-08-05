@@ -31,43 +31,31 @@ trait PluginBase[T] extends StObject {
 }
 object PluginBase {
   
-  @scala.inline
-  def apply[T](register: (Server_, T) => Unit | js.Promise[Unit]): PluginBase[T] = {
+  inline def apply[T](register: (Server_, T) => Unit | js.Promise[Unit]): PluginBase[T] = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
     __obj.asInstanceOf[PluginBase[T]]
   }
   
-  @scala.inline
-  implicit class PluginBaseMutableBuilder[Self <: PluginBase[?], T] (val x: Self & PluginBase[T]) extends AnyVal {
+  extension [Self <: PluginBase[?], T](x: Self & PluginBase[T]) {
     
-    @scala.inline
-    def setDependencies(value: Dependencies): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: Dependencies): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    @scala.inline
-    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
-    @scala.inline
-    def setRegister(value: (Server_, T) => Unit | js.Promise[Unit]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (Server_, T) => Unit | js.Promise[Unit]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRequirements(value: Hapi): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+    inline def setRequirements(value: Hapi): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+    inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpTextUnitEffect extends StObject
 object PpTextUnitEffect {
   
-  @scala.inline
-  def ppAnimateByCharacter: `2` = 2.asInstanceOf[`2`]
+  inline def ppAnimateByCharacter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppAnimateByParagraph: `0` = 0.asInstanceOf[`0`]
+  inline def ppAnimateByParagraph: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ppAnimateByWord: `1` = 1.asInstanceOf[`1`]
+  inline def ppAnimateByWord: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppAnimateUnitMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppAnimateUnitMixed: `-2` = -2.asInstanceOf[`-2`]
 }

@@ -14,22 +14,17 @@ trait RemoveChannelMembersParameters
 }
 object RemoveChannelMembersParameters {
   
-  @scala.inline
-  def apply(channel: String, uuids: js.Array[String]): RemoveChannelMembersParameters = {
+  inline def apply(channel: String, uuids: js.Array[String]): RemoveChannelMembersParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], uuids = uuids.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveChannelMembersParameters]
   }
   
-  @scala.inline
-  implicit class RemoveChannelMembersParametersMutableBuilder[Self <: RemoveChannelMembersParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveChannelMembersParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
+    inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
   }
 }

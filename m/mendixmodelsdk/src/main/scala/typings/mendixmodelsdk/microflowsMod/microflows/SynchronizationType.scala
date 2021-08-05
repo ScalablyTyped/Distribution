@@ -21,13 +21,11 @@ object SynchronizationType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SynchronizationType.All")
   @js.native
   def All: SynchronizationType = js.native
-  @scala.inline
-  def All_=(x: SynchronizationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
+  inline def All_=(x: SynchronizationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SynchronizationType.Specific")
   @js.native
   def Specific: SynchronizationType = js.native
-  @scala.inline
-  def Specific_=(x: SynchronizationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Specific")(x.asInstanceOf[js.Any])
+  inline def Specific_=(x: SynchronizationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Specific")(x.asInstanceOf[js.Any])
 }

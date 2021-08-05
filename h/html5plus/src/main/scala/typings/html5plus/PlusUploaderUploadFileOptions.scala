@@ -38,31 +38,23 @@ trait PlusUploaderUploadFileOptions extends StObject {
 }
 object PlusUploaderUploadFileOptions {
   
-  @scala.inline
-  def apply(): PlusUploaderUploadFileOptions = {
+  inline def apply(): PlusUploaderUploadFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusUploaderUploadFileOptions]
   }
   
-  @scala.inline
-  implicit class PlusUploaderUploadFileOptionsMutableBuilder[Self <: PlusUploaderUploadFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusUploaderUploadFileOptions](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

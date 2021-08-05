@@ -18,25 +18,19 @@ trait AssociateClientVpnTargetNetworkResult extends StObject {
 }
 object AssociateClientVpnTargetNetworkResult {
   
-  @scala.inline
-  def apply(): AssociateClientVpnTargetNetworkResult = {
+  inline def apply(): AssociateClientVpnTargetNetworkResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateClientVpnTargetNetworkResult]
   }
   
-  @scala.inline
-  implicit class AssociateClientVpnTargetNetworkResultMutableBuilder[Self <: AssociateClientVpnTargetNetworkResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateClientVpnTargetNetworkResult](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

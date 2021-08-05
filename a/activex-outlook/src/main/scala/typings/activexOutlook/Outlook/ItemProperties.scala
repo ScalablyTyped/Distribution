@@ -20,7 +20,7 @@ trait ItemProperties extends StObject {
   
   def Item(Index: js.Any): ItemProperty = js.native
   
-  @JSName("Outlook.ItemProperties_typekey")
+  /* private */ @JSName("Outlook.ItemProperties_typekey")
   var OutlookDotItemProperties_typekey: ItemProperties = js.native
   
   val Parent: js.Any = js.native

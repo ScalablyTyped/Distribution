@@ -28,37 +28,27 @@ trait AwsLambdaFunctionCode extends StObject {
 }
 object AwsLambdaFunctionCode {
   
-  @scala.inline
-  def apply(): AwsLambdaFunctionCode = {
+  inline def apply(): AwsLambdaFunctionCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsLambdaFunctionCode]
   }
   
-  @scala.inline
-  implicit class AwsLambdaFunctionCodeMutableBuilder[Self <: AwsLambdaFunctionCode] (val x: Self) extends AnyVal {
+  extension [Self <: AwsLambdaFunctionCode](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: NonEmptyString): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: NonEmptyString): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: NonEmptyString): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: NonEmptyString): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
     
-    @scala.inline
-    def setS3ObjectVersion(value: NonEmptyString): Self = StObject.set(x, "S3ObjectVersion", value.asInstanceOf[js.Any])
+    inline def setS3ObjectVersion(value: NonEmptyString): Self = StObject.set(x, "S3ObjectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ObjectVersionUndefined: Self = StObject.set(x, "S3ObjectVersion", js.undefined)
+    inline def setS3ObjectVersionUndefined: Self = StObject.set(x, "S3ObjectVersion", js.undefined)
     
-    @scala.inline
-    def setZipFile(value: NonEmptyString): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
+    inline def setZipFile(value: NonEmptyString): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
+    inline def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
   }
 }

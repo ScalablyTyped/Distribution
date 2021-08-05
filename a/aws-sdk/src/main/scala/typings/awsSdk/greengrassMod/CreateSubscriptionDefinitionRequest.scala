@@ -28,37 +28,27 @@ trait CreateSubscriptionDefinitionRequest extends StObject {
 }
 object CreateSubscriptionDefinitionRequest {
   
-  @scala.inline
-  def apply(): CreateSubscriptionDefinitionRequest = {
+  inline def apply(): CreateSubscriptionDefinitionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSubscriptionDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSubscriptionDefinitionRequestMutableBuilder[Self <: CreateSubscriptionDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSubscriptionDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setInitialVersion(value: SubscriptionDefinitionVersion): Self = StObject.set(x, "InitialVersion", value.asInstanceOf[js.Any])
+    inline def setInitialVersion(value: SubscriptionDefinitionVersion): Self = StObject.set(x, "InitialVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialVersionUndefined: Self = StObject.set(x, "InitialVersion", js.undefined)
+    inline def setInitialVersionUndefined: Self = StObject.set(x, "InitialVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

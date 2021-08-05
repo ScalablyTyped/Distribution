@@ -12,8 +12,7 @@ trait CSSMathMax
 }
 object CSSMathMax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: /* repeated */ CSSNumberish => CSSNumericValue,
     div: /* repeated */ CSSNumberish => CSSNumericValue,
     equals_ : /* repeated */ CSSNumberish => Boolean,
@@ -33,10 +32,8 @@ object CSSMathMax {
     __obj.asInstanceOf[CSSMathMax]
   }
   
-  @scala.inline
-  implicit class CSSMathMaxMutableBuilder[Self <: CSSMathMax] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMathMax](x: Self) {
     
-    @scala.inline
-    def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

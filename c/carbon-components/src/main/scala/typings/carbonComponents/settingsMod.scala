@@ -15,19 +15,16 @@ object settingsMod {
     @JSImport("carbon-components/globals/js/settings", "default.prefix")
     @js.native
     def prefix: String = js.native
-    @scala.inline
-    def prefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
+    inline def prefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
     
     @JSImport("carbon-components/globals/js/settings", "default.selectorFocusable")
     @js.native
     def selectorFocusable: String = js.native
-    @scala.inline
-    def selectorFocusable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorFocusable")(x.asInstanceOf[js.Any])
+    inline def selectorFocusable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorFocusable")(x.asInstanceOf[js.Any])
     
     @JSImport("carbon-components/globals/js/settings", "default.selectorTabbable")
     @js.native
     def selectorTabbable: String = js.native
-    @scala.inline
-    def selectorTabbable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorTabbable")(x.asInstanceOf[js.Any])
+    inline def selectorTabbable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorTabbable")(x.asInstanceOf[js.Any])
   }
 }

@@ -190,8 +190,7 @@ object mod extends Shortcut {
   }
   object TilebeltStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bboxToTile: js.Array[Double] => js.Array[Double],
       getChildren: js.Array[Double] => js.Array[js.Array[Double]],
       getParent: js.Array[Double] => js.Array[Double],
@@ -210,47 +209,33 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TilebeltStatic]
     }
     
-    @scala.inline
-    implicit class TilebeltStaticMutableBuilder[Self <: TilebeltStatic] (val x: Self) extends AnyVal {
+    extension [Self <: TilebeltStatic](x: Self) {
       
-      @scala.inline
-      def setBboxToTile(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "bboxToTile", js.Any.fromFunction1(value))
+      inline def setBboxToTile(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "bboxToTile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetChildren(value: js.Array[Double] => js.Array[js.Array[Double]]): Self = StObject.set(x, "getChildren", js.Any.fromFunction1(value))
+      inline def setGetChildren(value: js.Array[Double] => js.Array[js.Array[Double]]): Self = StObject.set(x, "getChildren", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetParent(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
+      inline def setGetParent(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSiblings(value: js.Array[Double] => js.Array[js.Array[Double]]): Self = StObject.set(x, "getSiblings", js.Any.fromFunction1(value))
+      inline def setGetSiblings(value: js.Array[Double] => js.Array[js.Array[Double]]): Self = StObject.set(x, "getSiblings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasSiblings(value: (js.Array[Double], js.Array[js.Array[Double]]) => Boolean): Self = StObject.set(x, "hasSiblings", js.Any.fromFunction2(value))
+      inline def setHasSiblings(value: (js.Array[Double], js.Array[js.Array[Double]]) => Boolean): Self = StObject.set(x, "hasSiblings", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasTile(value: (js.Array[js.Array[Double]], js.Array[Double]) => Boolean): Self = StObject.set(x, "hasTile", js.Any.fromFunction2(value))
+      inline def setHasTile(value: (js.Array[js.Array[Double]], js.Array[Double]) => Boolean): Self = StObject.set(x, "hasTile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointToTile(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "pointToTile", js.Any.fromFunction3(value))
+      inline def setPointToTile(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "pointToTile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPointToTileFraction(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "pointToTileFraction", js.Any.fromFunction3(value))
+      inline def setPointToTileFraction(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "pointToTileFraction", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQuadkeyToTile(value: String => js.Array[Double]): Self = StObject.set(x, "quadkeyToTile", js.Any.fromFunction1(value))
+      inline def setQuadkeyToTile(value: String => js.Array[Double]): Self = StObject.set(x, "quadkeyToTile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTileToBBOX(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "tileToBBOX", js.Any.fromFunction1(value))
+      inline def setTileToBBOX(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "tileToBBOX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTileToGeoJSON(value: js.Array[Double] => Polygon): Self = StObject.set(x, "tileToGeoJSON", js.Any.fromFunction1(value))
+      inline def setTileToGeoJSON(value: js.Array[Double] => Polygon): Self = StObject.set(x, "tileToGeoJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTileToQuadkey(value: js.Array[Double] => String): Self = StObject.set(x, "tileToQuadkey", js.Any.fromFunction1(value))
+      inline def setTileToQuadkey(value: js.Array[Double] => String): Self = StObject.set(x, "tileToQuadkey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTilesEqual(value: (js.Array[Double], js.Array[Double]) => Boolean): Self = StObject.set(x, "tilesEqual", js.Any.fromFunction2(value))
+      inline def setTilesEqual(value: (js.Array[Double], js.Array[Double]) => Boolean): Self = StObject.set(x, "tilesEqual", js.Any.fromFunction2(value))
     }
   }
   

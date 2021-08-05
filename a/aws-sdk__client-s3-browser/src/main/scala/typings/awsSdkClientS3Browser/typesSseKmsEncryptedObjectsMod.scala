@@ -17,17 +17,14 @@ object typesSseKmsEncryptedObjectsMod {
   }
   object SseKmsEncryptedObjects {
     
-    @scala.inline
-    def apply(Status: Enabled | Disabled | String): SseKmsEncryptedObjects = {
+    inline def apply(Status: Enabled | Disabled | String): SseKmsEncryptedObjects = {
       val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
       __obj.asInstanceOf[SseKmsEncryptedObjects]
     }
     
-    @scala.inline
-    implicit class SseKmsEncryptedObjectsMutableBuilder[Self <: SseKmsEncryptedObjects] (val x: Self) extends AnyVal {
+    extension [Self <: SseKmsEncryptedObjects](x: Self) {
       
-      @scala.inline
-      def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     }
   }
   

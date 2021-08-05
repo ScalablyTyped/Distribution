@@ -14,16 +14,13 @@ trait GetNetworkTypeOptions
 }
 object GetNetworkTypeOptions {
   
-  @scala.inline
-  def apply(success: NetworkTypeData => Unit): GetNetworkTypeOptions = {
+  inline def apply(success: NetworkTypeData => Unit): GetNetworkTypeOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetNetworkTypeOptions]
   }
   
-  @scala.inline
-  implicit class GetNetworkTypeOptionsMutableBuilder[Self <: GetNetworkTypeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkTypeOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: NetworkTypeData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: NetworkTypeData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

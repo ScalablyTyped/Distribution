@@ -13,19 +13,15 @@ trait ReplicationTimeValue extends StObject {
 }
 object ReplicationTimeValue {
   
-  @scala.inline
-  def apply(): ReplicationTimeValue = {
+  inline def apply(): ReplicationTimeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationTimeValue]
   }
   
-  @scala.inline
-  implicit class ReplicationTimeValueMutableBuilder[Self <: ReplicationTimeValue] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationTimeValue](x: Self) {
     
-    @scala.inline
-    def setMinutes(value: Minutes): Self = StObject.set(x, "Minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Minutes): Self = StObject.set(x, "Minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutesUndefined: Self = StObject.set(x, "Minutes", js.undefined)
+    inline def setMinutesUndefined: Self = StObject.set(x, "Minutes", js.undefined)
   }
 }

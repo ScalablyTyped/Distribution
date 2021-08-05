@@ -28,34 +28,25 @@ trait CreatePipelineInput extends StObject {
 }
 object CreatePipelineInput {
   
-  @scala.inline
-  def apply(name: id, uniqueId: id): CreatePipelineInput = {
+  inline def apply(name: id, uniqueId: id): CreatePipelineInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePipelineInput]
   }
   
-  @scala.inline
-  implicit class CreatePipelineInputMutableBuilder[Self <: CreatePipelineInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePipelineInput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUniqueId(value: id): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+    inline def setUniqueId(value: id): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
   }
 }

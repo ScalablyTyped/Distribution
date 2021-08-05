@@ -18,37 +18,27 @@ trait Opacity extends StObject {
 }
 object Opacity {
   
-  @scala.inline
-  def apply(points: js.Array[X]): Opacity = {
+  inline def apply(points: js.Array[X]): Opacity = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opacity]
   }
   
-  @scala.inline
-  implicit class OpacityMutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
+  extension [Self <: Opacity](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: (/* value */ Double, /* percentage */ Double) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
+    inline def setText(value: (/* value */ Double, /* percentage */ Double) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

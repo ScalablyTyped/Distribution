@@ -18,16 +18,13 @@ trait ASPxClientHtmlEditorTabEventArgs
 }
 object ASPxClientHtmlEditorTabEventArgs {
   
-  @scala.inline
-  def apply(name: String): ASPxClientHtmlEditorTabEventArgs = {
+  inline def apply(name: String): ASPxClientHtmlEditorTabEventArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorTabEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTabEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorTabEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTabEventArgs](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -11,11 +11,9 @@ object timeUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLastDay[DateType](generateConfig: GenerateConfig[DateType], date: DateType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastDay")(generateConfig.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getLastDay[DateType](generateConfig: GenerateConfig[DateType], date: DateType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastDay")(generateConfig.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getLowerBoundTime(
+  inline def getLowerBoundTime(
     hour: Double,
     minute: Double,
     second: Double,
@@ -24,8 +22,7 @@ object timeUtilMod {
     secondStep: Double
   ): js.Tuple3[Double, Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLowerBoundTime")(hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], hourStep.asInstanceOf[js.Any], minuteStep.asInstanceOf[js.Any], secondStep.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Double, Double]]
   
-  @scala.inline
-  def setTime[DateType](
+  inline def setTime[DateType](
     generateConfig: GenerateConfig[DateType],
     date: DateType,
     hour: Double,

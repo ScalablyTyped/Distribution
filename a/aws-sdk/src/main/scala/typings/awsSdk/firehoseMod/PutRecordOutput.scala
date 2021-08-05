@@ -18,22 +18,17 @@ trait PutRecordOutput extends StObject {
 }
 object PutRecordOutput {
   
-  @scala.inline
-  def apply(RecordId: PutResponseRecordId): PutRecordOutput = {
+  inline def apply(RecordId: PutResponseRecordId): PutRecordOutput = {
     val __obj = js.Dynamic.literal(RecordId = RecordId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordOutput]
   }
   
-  @scala.inline
-  implicit class PutRecordOutputMutableBuilder[Self <: PutRecordOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecordOutput](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: BooleanObject): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: BooleanObject): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
-    @scala.inline
-    def setRecordId(value: PutResponseRecordId): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
+    inline def setRecordId(value: PutResponseRecordId): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
   }
 }

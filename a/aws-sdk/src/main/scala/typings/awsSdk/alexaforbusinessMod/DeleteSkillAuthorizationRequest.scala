@@ -18,22 +18,17 @@ trait DeleteSkillAuthorizationRequest extends StObject {
 }
 object DeleteSkillAuthorizationRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId): DeleteSkillAuthorizationRequest = {
+  inline def apply(SkillId: SkillId): DeleteSkillAuthorizationRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSkillAuthorizationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSkillAuthorizationRequestMutableBuilder[Self <: DeleteSkillAuthorizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSkillAuthorizationRequest](x: Self) {
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

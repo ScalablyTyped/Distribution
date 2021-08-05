@@ -25,19 +25,16 @@ object mod {
     @JSImport("bounce.js", "default.FPS")
     @js.native
     def FPS: Double = js.native
-    @scala.inline
-    def FPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FPS")(x.asInstanceOf[js.Any])
+    inline def FPS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FPS")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("bounce.js", "default.counter")
     @js.native
     def counter: Double = js.native
-    @scala.inline
-    def counter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("counter")(x.asInstanceOf[js.Any])
+    inline def counter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("counter")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+    inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
   
   trait AnimationOptions extends StObject {
@@ -50,32 +47,24 @@ object mod {
   }
   object AnimationOptions {
     
-    @scala.inline
-    def apply(): AnimationOptions = {
+    inline def apply(): AnimationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimationOptions]
     }
     
-    @scala.inline
-    implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationOptions](x: Self) {
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+      inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     }
   }
   
@@ -124,50 +113,36 @@ object mod {
   }
   object BounceOptions {
     
-    @scala.inline
-    def apply[T](from: T, to: T): BounceOptions[T] = {
+    inline def apply[T](from: T, to: T): BounceOptions[T] = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[BounceOptions[T]]
     }
     
-    @scala.inline
-    implicit class BounceOptionsMutableBuilder[Self <: BounceOptions[?], T] (val x: Self & BounceOptions[T]) extends AnyVal {
+    extension [Self <: BounceOptions[?], T](x: Self & BounceOptions[T]) {
       
-      @scala.inline
-      def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
+      inline def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
+      inline def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setFrom(value: T): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: T): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+      inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
       
-      @scala.inline
-      def setTo(value: T): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: T): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,20 +154,16 @@ object mod {
   }
   object Point2D {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Point2D = {
+    inline def apply(x: Double, y: Double): Point2D = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point2D]
     }
     
-    @scala.inline
-    implicit class Point2DMutableBuilder[Self <: Point2D] (val x: Self) extends AnyVal {
+    extension [Self <: Point2D](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,8 +187,7 @@ object mod {
   }
   object SerailizedComponent {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       bounces: Double,
       delay: Double,
       duration: Double,
@@ -232,32 +202,23 @@ object mod {
       __obj.asInstanceOf[SerailizedComponent[T]]
     }
     
-    @scala.inline
-    implicit class SerailizedComponentMutableBuilder[Self <: SerailizedComponent[?], T] (val x: Self & SerailizedComponent[T]) extends AnyVal {
+    extension [Self <: SerailizedComponent[?], T](x: Self & SerailizedComponent[T]) {
       
-      @scala.inline
-      def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
+      inline def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: T): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: T): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: T): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: T): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

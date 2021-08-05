@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormattingFilter extends StObject
 object FormattingFilter {
   
-  @scala.inline
-  def ^ : typings.pgPromise.pgPromiseStrings.^ = "^".asInstanceOf[typings.pgPromise.pgPromiseStrings.^]
+  inline def ^ : typings.pgPromise.pgPromiseStrings.^ = "^".asInstanceOf[typings.pgPromise.pgPromiseStrings.^]
   
-  @scala.inline
-  def Colonalias: typings.pgPromise.pgPromiseStrings.Colonalias = ":alias".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonalias]
+  inline def Colonalias: typings.pgPromise.pgPromiseStrings.Colonalias = ":alias".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonalias]
   
-  @scala.inline
-  def Coloncsv: typings.pgPromise.pgPromiseStrings.Coloncsv = ":csv".asInstanceOf[typings.pgPromise.pgPromiseStrings.Coloncsv]
+  inline def Coloncsv: typings.pgPromise.pgPromiseStrings.Coloncsv = ":csv".asInstanceOf[typings.pgPromise.pgPromiseStrings.Coloncsv]
   
-  @scala.inline
-  def Colonjson: typings.pgPromise.pgPromiseStrings.Colonjson = ":json".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonjson]
+  inline def Colonjson: typings.pgPromise.pgPromiseStrings.Colonjson = ":json".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonjson]
   
-  @scala.inline
-  def Colonlist: typings.pgPromise.pgPromiseStrings.Colonlist = ":list".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonlist]
+  inline def Colonlist: typings.pgPromise.pgPromiseStrings.Colonlist = ":list".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonlist]
   
-  @scala.inline
-  def Colonname: typings.pgPromise.pgPromiseStrings.Colonname = ":name".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonname]
+  inline def Colonname: typings.pgPromise.pgPromiseStrings.Colonname = ":name".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonname]
   
-  @scala.inline
-  def Colonraw: typings.pgPromise.pgPromiseStrings.Colonraw = ":raw".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonraw]
+  inline def Colonraw: typings.pgPromise.pgPromiseStrings.Colonraw = ":raw".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonraw]
   
-  @scala.inline
-  def Colonvalue: typings.pgPromise.pgPromiseStrings.Colonvalue = ":value".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonvalue]
+  inline def Colonvalue: typings.pgPromise.pgPromiseStrings.Colonvalue = ":value".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonvalue]
   
-  @scala.inline
-  def Numbersign: typings.pgPromise.pgPromiseStrings.Numbersign = "#".asInstanceOf[typings.pgPromise.pgPromiseStrings.Numbersign]
+  inline def Numbersign: typings.pgPromise.pgPromiseStrings.Numbersign = "#".asInstanceOf[typings.pgPromise.pgPromiseStrings.Numbersign]
   
-  @scala.inline
-  def Tilde: typings.pgPromise.pgPromiseStrings.Tilde = "~".asInstanceOf[typings.pgPromise.pgPromiseStrings.Tilde]
+  inline def Tilde: typings.pgPromise.pgPromiseStrings.Tilde = "~".asInstanceOf[typings.pgPromise.pgPromiseStrings.Tilde]
 }

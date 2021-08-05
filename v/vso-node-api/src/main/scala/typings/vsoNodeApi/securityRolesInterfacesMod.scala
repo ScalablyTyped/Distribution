@@ -45,14 +45,12 @@ object securityRolesInterfacesMod {
     @JSImport("vso-node-api/interfaces/SecurityRolesInterfaces", "TypeInfo.RoleAccess")
     @js.native
     def RoleAccess: EnumValuesAssignedInherited = js.native
-    @scala.inline
-    def RoleAccess_=(x: EnumValuesAssignedInherited): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoleAccess")(x.asInstanceOf[js.Any])
+    inline def RoleAccess_=(x: EnumValuesAssignedInherited): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoleAccess")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/SecurityRolesInterfaces", "TypeInfo.RoleAssignment")
     @js.native
     def RoleAssignment: js.Any = js.native
-    @scala.inline
-    def RoleAssignment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoleAssignment")(x.asInstanceOf[js.Any])
+    inline def RoleAssignment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoleAssignment")(x.asInstanceOf[js.Any])
   }
   
   trait RoleAssignment extends StObject {
@@ -79,26 +77,20 @@ object securityRolesInterfacesMod {
   }
   object RoleAssignment {
     
-    @scala.inline
-    def apply(access: RoleAccess, accessDisplayName: String, identity: IdentityRef, role: SecurityRole): RoleAssignment = {
+    inline def apply(access: RoleAccess, accessDisplayName: String, identity: IdentityRef, role: SecurityRole): RoleAssignment = {
       val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], accessDisplayName = accessDisplayName.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleAssignment]
     }
     
-    @scala.inline
-    implicit class RoleAssignmentMutableBuilder[Self <: RoleAssignment] (val x: Self) extends AnyVal {
+    extension [Self <: RoleAssignment](x: Self) {
       
-      @scala.inline
-      def setAccess(value: RoleAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+      inline def setAccess(value: RoleAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessDisplayName(value: String): Self = StObject.set(x, "accessDisplayName", value.asInstanceOf[js.Any])
+      inline def setAccessDisplayName(value: String): Self = StObject.set(x, "accessDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: IdentityRef): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: IdentityRef): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: SecurityRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: SecurityRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,8 +133,7 @@ object securityRolesInterfacesMod {
   }
   object SecurityRole {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowPermissions: Double,
       denyPermissions: Double,
       description: String,
@@ -155,29 +146,21 @@ object securityRolesInterfacesMod {
       __obj.asInstanceOf[SecurityRole]
     }
     
-    @scala.inline
-    implicit class SecurityRoleMutableBuilder[Self <: SecurityRole] (val x: Self) extends AnyVal {
+    extension [Self <: SecurityRole](x: Self) {
       
-      @scala.inline
-      def setAllowPermissions(value: Double): Self = StObject.set(x, "allowPermissions", value.asInstanceOf[js.Any])
+      inline def setAllowPermissions(value: Double): Self = StObject.set(x, "allowPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenyPermissions(value: Double): Self = StObject.set(x, "denyPermissions", value.asInstanceOf[js.Any])
+      inline def setDenyPermissions(value: Double): Self = StObject.set(x, "denyPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,23 +183,18 @@ object securityRolesInterfacesMod {
   }
   object UserRoleAssignmentRef {
     
-    @scala.inline
-    def apply(roleName: String, uniqueName: String, userId: String): UserRoleAssignmentRef = {
+    inline def apply(roleName: String, uniqueName: String, userId: String): UserRoleAssignmentRef = {
       val __obj = js.Dynamic.literal(roleName = roleName.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRoleAssignmentRef]
     }
     
-    @scala.inline
-    implicit class UserRoleAssignmentRefMutableBuilder[Self <: UserRoleAssignmentRef] (val x: Self) extends AnyVal {
+    extension [Self <: UserRoleAssignmentRef](x: Self) {
       
-      @scala.inline
-      def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+      inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
 }

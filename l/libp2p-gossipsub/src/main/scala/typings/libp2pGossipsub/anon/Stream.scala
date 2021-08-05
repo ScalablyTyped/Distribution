@@ -13,19 +13,15 @@ trait Stream extends StObject {
 }
 object Stream {
   
-  @scala.inline
-  def apply(protocol: String, stream: DuplexIterableStream[js.Any, js.Any, js.Any]): Stream = {
+  inline def apply(protocol: String, stream: DuplexIterableStream[js.Any, js.Any, js.Any]): Stream = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stream]
   }
   
-  @scala.inline
-  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+  extension [Self <: Stream](x: Self) {
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: DuplexIterableStream[js.Any, js.Any, js.Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: DuplexIterableStream[js.Any, js.Any, js.Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

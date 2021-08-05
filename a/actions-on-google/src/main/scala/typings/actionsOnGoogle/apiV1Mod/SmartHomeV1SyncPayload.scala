@@ -16,37 +16,27 @@ trait SmartHomeV1SyncPayload extends StObject {
 }
 object SmartHomeV1SyncPayload {
   
-  @scala.inline
-  def apply(devices: js.Array[SmartHomeV1SyncDevices]): SmartHomeV1SyncPayload = {
+  inline def apply(devices: js.Array[SmartHomeV1SyncDevices]): SmartHomeV1SyncPayload = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1SyncPayload]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1SyncPayloadMutableBuilder[Self <: SmartHomeV1SyncPayload] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1SyncPayload](x: Self) {
     
-    @scala.inline
-    def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
+    inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
+    inline def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
     
-    @scala.inline
-    def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
+    inline def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
+    inline def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
     
-    @scala.inline
-    def setDevices(value: js.Array[SmartHomeV1SyncDevices]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[SmartHomeV1SyncDevices]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesVarargs(value: SmartHomeV1SyncDevices*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: SmartHomeV1SyncDevices*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
   }
 }

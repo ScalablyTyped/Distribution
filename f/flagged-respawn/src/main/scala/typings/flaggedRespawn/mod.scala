@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(flags: js.Array[String], argv: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(flags: js.Array[String], argv: js.Array[String], forcedFlags: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], forcedFlags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(flags: js.Array[String], argv: js.Array[String], forcedFlags: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], forcedFlags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(flags: js.Array[String], argv: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(flags: js.Array[String], argv: js.Array[String], forcedFlags: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], forcedFlags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(flags: js.Array[String], argv: js.Array[String], forcedFlags: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], forcedFlags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("flagged-respawn", JSImport.Namespace)
   @js.native

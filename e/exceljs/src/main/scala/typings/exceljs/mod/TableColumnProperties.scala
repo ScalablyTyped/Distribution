@@ -46,40 +46,29 @@ trait TableColumnProperties extends StObject {
 }
 object TableColumnProperties {
   
-  @scala.inline
-  def apply(name: String): TableColumnProperties = {
+  inline def apply(name: String): TableColumnProperties = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnProperties]
   }
   
-  @scala.inline
-  implicit class TableColumnPropertiesMutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TableColumnProperties](x: Self) {
     
-    @scala.inline
-    def setFilterButton(value: Boolean): Self = StObject.set(x, "filterButton", value.asInstanceOf[js.Any])
+    inline def setFilterButton(value: Boolean): Self = StObject.set(x, "filterButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterButtonUndefined: Self = StObject.set(x, "filterButton", js.undefined)
+    inline def setFilterButtonUndefined: Self = StObject.set(x, "filterButton", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRowFormula(value: String): Self = StObject.set(x, "totalsRowFormula", value.asInstanceOf[js.Any])
+    inline def setTotalsRowFormula(value: String): Self = StObject.set(x, "totalsRowFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRowFormulaUndefined: Self = StObject.set(x, "totalsRowFormula", js.undefined)
+    inline def setTotalsRowFormulaUndefined: Self = StObject.set(x, "totalsRowFormula", js.undefined)
     
-    @scala.inline
-    def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = StObject.set(x, "totalsRowFunction", value.asInstanceOf[js.Any])
+    inline def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = StObject.set(x, "totalsRowFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRowFunctionUndefined: Self = StObject.set(x, "totalsRowFunction", js.undefined)
+    inline def setTotalsRowFunctionUndefined: Self = StObject.set(x, "totalsRowFunction", js.undefined)
     
-    @scala.inline
-    def setTotalsRowLabel(value: String): Self = StObject.set(x, "totalsRowLabel", value.asInstanceOf[js.Any])
+    inline def setTotalsRowLabel(value: String): Self = StObject.set(x, "totalsRowLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRowLabelUndefined: Self = StObject.set(x, "totalsRowLabel", js.undefined)
+    inline def setTotalsRowLabelUndefined: Self = StObject.set(x, "totalsRowLabel", js.undefined)
   }
 }

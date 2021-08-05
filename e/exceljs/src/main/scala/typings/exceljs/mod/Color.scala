@@ -18,19 +18,15 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(argb: String, theme: Double): Color = {
+  inline def apply(argb: String, theme: Double): Color = {
     val __obj = js.Dynamic.literal(argb = argb.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setArgb(value: String): Self = StObject.set(x, "argb", value.asInstanceOf[js.Any])
+    inline def setArgb(value: String): Self = StObject.set(x, "argb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: Double): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Double): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

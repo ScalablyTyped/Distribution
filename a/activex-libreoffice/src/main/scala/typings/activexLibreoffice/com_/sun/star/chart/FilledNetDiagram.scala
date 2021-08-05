@@ -26,8 +26,7 @@ trait FilledNetDiagram
      with StackableDiagram
 object FilledNetDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     DataCaption: Double,

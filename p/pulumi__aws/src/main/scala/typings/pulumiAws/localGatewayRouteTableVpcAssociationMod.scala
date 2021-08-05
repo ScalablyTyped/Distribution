@@ -58,14 +58,10 @@ object localGatewayRouteTableVpcAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LocalGatewayRouteTableVpcAssociationState): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
+    inline def get(name: String, id: Input[ID], state: LocalGatewayRouteTableVpcAssociationState): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
+    inline def get(
       name: String,
       id: Input[ID],
       state: LocalGatewayRouteTableVpcAssociationState,
@@ -76,8 +72,7 @@ object localGatewayRouteTableVpcAssociationMod {
       * Returns true if the given object is an instance of LocalGatewayRouteTableVpcAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean]
   }
   
   trait LocalGatewayRouteTableVpcAssociationArgs extends StObject {
@@ -99,26 +94,20 @@ object localGatewayRouteTableVpcAssociationMod {
   }
   object LocalGatewayRouteTableVpcAssociationArgs {
     
-    @scala.inline
-    def apply(localGatewayRouteTableId: Input[String], vpcId: Input[String]): LocalGatewayRouteTableVpcAssociationArgs = {
+    inline def apply(localGatewayRouteTableId: Input[String], vpcId: Input[String]): LocalGatewayRouteTableVpcAssociationArgs = {
       val __obj = js.Dynamic.literal(localGatewayRouteTableId = localGatewayRouteTableId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalGatewayRouteTableVpcAssociationArgs]
     }
     
-    @scala.inline
-    implicit class LocalGatewayRouteTableVpcAssociationArgsMutableBuilder[Self <: LocalGatewayRouteTableVpcAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LocalGatewayRouteTableVpcAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,38 +132,28 @@ object localGatewayRouteTableVpcAssociationMod {
   }
   object LocalGatewayRouteTableVpcAssociationState {
     
-    @scala.inline
-    def apply(): LocalGatewayRouteTableVpcAssociationState = {
+    inline def apply(): LocalGatewayRouteTableVpcAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalGatewayRouteTableVpcAssociationState]
     }
     
-    @scala.inline
-    implicit class LocalGatewayRouteTableVpcAssociationStateMutableBuilder[Self <: LocalGatewayRouteTableVpcAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: LocalGatewayRouteTableVpcAssociationState](x: Self) {
       
-      @scala.inline
-      def setLocalGatewayId(value: Input[String]): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayId(value: Input[String]): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayIdUndefined: Self = StObject.set(x, "localGatewayId", js.undefined)
+      inline def setLocalGatewayIdUndefined: Self = StObject.set(x, "localGatewayId", js.undefined)
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
+      inline def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

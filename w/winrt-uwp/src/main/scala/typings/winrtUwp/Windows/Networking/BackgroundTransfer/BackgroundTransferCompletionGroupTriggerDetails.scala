@@ -16,19 +16,15 @@ trait BackgroundTransferCompletionGroupTriggerDetails extends StObject {
 }
 object BackgroundTransferCompletionGroupTriggerDetails {
   
-  @scala.inline
-  def apply(downloads: IVectorView[DownloadOperation], uploads: IVectorView[UploadOperation]): BackgroundTransferCompletionGroupTriggerDetails = {
+  inline def apply(downloads: IVectorView[DownloadOperation], uploads: IVectorView[UploadOperation]): BackgroundTransferCompletionGroupTriggerDetails = {
     val __obj = js.Dynamic.literal(downloads = downloads.asInstanceOf[js.Any], uploads = uploads.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundTransferCompletionGroupTriggerDetails]
   }
   
-  @scala.inline
-  implicit class BackgroundTransferCompletionGroupTriggerDetailsMutableBuilder[Self <: BackgroundTransferCompletionGroupTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundTransferCompletionGroupTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setDownloads(value: IVectorView[DownloadOperation]): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
+    inline def setDownloads(value: IVectorView[DownloadOperation]): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploads(value: IVectorView[UploadOperation]): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
+    inline def setUploads(value: IVectorView[UploadOperation]): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
   }
 }

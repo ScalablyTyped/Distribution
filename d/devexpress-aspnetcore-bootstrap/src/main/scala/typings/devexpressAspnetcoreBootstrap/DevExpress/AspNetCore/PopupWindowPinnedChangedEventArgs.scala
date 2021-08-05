@@ -12,16 +12,13 @@ trait PopupWindowPinnedChangedEventArgs
 }
 object PopupWindowPinnedChangedEventArgs {
   
-  @scala.inline
-  def apply(pinned: Boolean, sender: Control, window: BootstrapPopupWindow): PopupWindowPinnedChangedEventArgs = {
+  inline def apply(pinned: Boolean, sender: Control, window: BootstrapPopupWindow): PopupWindowPinnedChangedEventArgs = {
     val __obj = js.Dynamic.literal(pinned = pinned.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupWindowPinnedChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PopupWindowPinnedChangedEventArgsMutableBuilder[Self <: PopupWindowPinnedChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PopupWindowPinnedChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
   }
 }

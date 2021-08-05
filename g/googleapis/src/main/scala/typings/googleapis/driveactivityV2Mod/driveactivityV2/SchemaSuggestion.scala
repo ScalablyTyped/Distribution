@@ -16,19 +16,15 @@ trait SchemaSuggestion extends StObject {
 }
 object SchemaSuggestion {
   
-  @scala.inline
-  def apply(): SchemaSuggestion = {
+  inline def apply(): SchemaSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestion]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestionMutableBuilder[Self <: SchemaSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestion](x: Self) {
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
   }
 }

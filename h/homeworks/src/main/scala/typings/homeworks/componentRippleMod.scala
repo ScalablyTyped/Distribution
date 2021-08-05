@@ -14,10 +14,10 @@ object componentRippleMod {
   class WorksRipple protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
-    var elementRef: js.Any = js.native
+    /* private */ var elementRef: js.Any = js.native
     
     def ngOnInit(): Unit = js.native
     

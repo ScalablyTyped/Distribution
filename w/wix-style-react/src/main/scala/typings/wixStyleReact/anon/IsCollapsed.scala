@@ -12,19 +12,15 @@ trait IsCollapsed extends StObject {
 }
 object IsCollapsed {
   
-  @scala.inline
-  def apply(isCollapsed: () => Boolean, isExpandable: () => Boolean): IsCollapsed = {
+  inline def apply(isCollapsed: () => Boolean, isExpandable: () => Boolean): IsCollapsed = {
     val __obj = js.Dynamic.literal(isCollapsed = js.Any.fromFunction0(isCollapsed), isExpandable = js.Any.fromFunction0(isExpandable))
     __obj.asInstanceOf[IsCollapsed]
   }
   
-  @scala.inline
-  implicit class IsCollapsedMutableBuilder[Self <: IsCollapsed] (val x: Self) extends AnyVal {
+  extension [Self <: IsCollapsed](x: Self) {
     
-    @scala.inline
-    def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
+    inline def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExpandable(value: () => Boolean): Self = StObject.set(x, "isExpandable", js.Any.fromFunction0(value))
+    inline def setIsExpandable(value: () => Boolean): Self = StObject.set(x, "isExpandable", js.Any.fromFunction0(value))
   }
 }

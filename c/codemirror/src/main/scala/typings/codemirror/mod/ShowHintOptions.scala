@@ -33,76 +33,53 @@ trait ShowHintOptions extends StObject {
 }
 object ShowHintOptions {
   
-  @scala.inline
-  def apply(hint: HintFunction | AsyncHintFunction): ShowHintOptions = {
+  inline def apply(hint: HintFunction | AsyncHintFunction): ShowHintOptions = {
     val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowHintOptions]
   }
   
-  @scala.inline
-  implicit class ShowHintOptionsMutableBuilder[Self <: ShowHintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShowHintOptions](x: Self) {
     
-    @scala.inline
-    def setAlignWithWord(value: Boolean): Self = StObject.set(x, "alignWithWord", value.asInstanceOf[js.Any])
+    inline def setAlignWithWord(value: Boolean): Self = StObject.set(x, "alignWithWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignWithWordUndefined: Self = StObject.set(x, "alignWithWord", js.undefined)
+    inline def setAlignWithWordUndefined: Self = StObject.set(x, "alignWithWord", js.undefined)
     
-    @scala.inline
-    def setCloseCharacters(value: RegExp): Self = StObject.set(x, "closeCharacters", value.asInstanceOf[js.Any])
+    inline def setCloseCharacters(value: RegExp): Self = StObject.set(x, "closeCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseCharactersUndefined: Self = StObject.set(x, "closeCharacters", js.undefined)
+    inline def setCloseCharactersUndefined: Self = StObject.set(x, "closeCharacters", js.undefined)
     
-    @scala.inline
-    def setCloseOnUnfocus(value: Boolean): Self = StObject.set(x, "closeOnUnfocus", value.asInstanceOf[js.Any])
+    inline def setCloseOnUnfocus(value: Boolean): Self = StObject.set(x, "closeOnUnfocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnUnfocusUndefined: Self = StObject.set(x, "closeOnUnfocus", js.undefined)
+    inline def setCloseOnUnfocusUndefined: Self = StObject.set(x, "closeOnUnfocus", js.undefined)
     
-    @scala.inline
-    def setCompleteOnSingleClick(value: Boolean): Self = StObject.set(x, "completeOnSingleClick", value.asInstanceOf[js.Any])
+    inline def setCompleteOnSingleClick(value: Boolean): Self = StObject.set(x, "completeOnSingleClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteOnSingleClickUndefined: Self = StObject.set(x, "completeOnSingleClick", js.undefined)
+    inline def setCompleteOnSingleClickUndefined: Self = StObject.set(x, "completeOnSingleClick", js.undefined)
     
-    @scala.inline
-    def setCompleteSingle(value: Boolean): Self = StObject.set(x, "completeSingle", value.asInstanceOf[js.Any])
+    inline def setCompleteSingle(value: Boolean): Self = StObject.set(x, "completeSingle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteSingleUndefined: Self = StObject.set(x, "completeSingle", js.undefined)
+    inline def setCompleteSingleUndefined: Self = StObject.set(x, "completeSingle", js.undefined)
     
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNull: Self = StObject.set(x, "container", null)
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setCustomKeys(value: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]): Self = StObject.set(x, "customKeys", value.asInstanceOf[js.Any])
+    inline def setCustomKeys(value: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]): Self = StObject.set(x, "customKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeysNull: Self = StObject.set(x, "customKeys", null)
+    inline def setCustomKeysNull: Self = StObject.set(x, "customKeys", null)
     
-    @scala.inline
-    def setCustomKeysUndefined: Self = StObject.set(x, "customKeys", js.undefined)
+    inline def setCustomKeysUndefined: Self = StObject.set(x, "customKeys", js.undefined)
     
-    @scala.inline
-    def setExtraKeys(value: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]): Self = StObject.set(x, "extraKeys", value.asInstanceOf[js.Any])
+    inline def setExtraKeys(value: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]): Self = StObject.set(x, "extraKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraKeysNull: Self = StObject.set(x, "extraKeys", null)
+    inline def setExtraKeysNull: Self = StObject.set(x, "extraKeys", null)
     
-    @scala.inline
-    def setExtraKeysUndefined: Self = StObject.set(x, "extraKeys", js.undefined)
+    inline def setExtraKeysUndefined: Self = StObject.set(x, "extraKeys", js.undefined)
     
-    @scala.inline
-    def setHint(value: HintFunction | AsyncHintFunction): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: HintFunction | AsyncHintFunction): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintFunction1(value: /* cm */ Editor => Hints): Self = StObject.set(x, "hint", js.Any.fromFunction1(value))
+    inline def setHintFunction1(value: /* cm */ Editor => Hints): Self = StObject.set(x, "hint", js.Any.fromFunction1(value))
   }
 }

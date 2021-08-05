@@ -18,19 +18,15 @@ trait MLTransformSchema extends StObject {
 }
 object MLTransformSchema {
   
-  @scala.inline
-  def apply(dataType: String, name: String): MLTransformSchema = {
+  inline def apply(dataType: String, name: String): MLTransformSchema = {
     val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MLTransformSchema]
   }
   
-  @scala.inline
-  implicit class MLTransformSchemaMutableBuilder[Self <: MLTransformSchema] (val x: Self) extends AnyVal {
+  extension [Self <: MLTransformSchema](x: Self) {
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait AlbEvent extends StObject {
 }
 object AlbEvent {
   
-  @scala.inline
-  def apply(conditions: Host, listenerArn: String, priority: Double | String): AlbEvent = {
+  inline def apply(conditions: Host, listenerArn: String, priority: Double | String): AlbEvent = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], listenerArn = listenerArn.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbEvent]
   }
   
-  @scala.inline
-  implicit class AlbEventMutableBuilder[Self <: AlbEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AlbEvent](x: Self) {
     
-    @scala.inline
-    def setConditions(value: Host): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Host): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerArn(value: String): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
+    inline def setListenerArn(value: String): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double | String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double | String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }
 }

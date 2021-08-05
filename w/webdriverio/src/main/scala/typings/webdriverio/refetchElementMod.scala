@@ -11,6 +11,5 @@ object refetchElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(currentElement: CurrentElement, commandName: String): js.Promise[CurrentElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentElement.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CurrentElement]]
+  inline def default(currentElement: CurrentElement, commandName: String): js.Promise[CurrentElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentElement.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CurrentElement]]
 }

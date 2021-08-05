@@ -34,8 +34,7 @@ trait XUpdateListener
 }
 object XUpdateListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveUpdate: EventObject => Boolean,
     disposing: EventObject => Unit,
@@ -47,13 +46,10 @@ object XUpdateListener {
     __obj.asInstanceOf[XUpdateListener]
   }
   
-  @scala.inline
-  implicit class XUpdateListenerMutableBuilder[Self <: XUpdateListener] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdateListener](x: Self) {
     
-    @scala.inline
-    def setApproveUpdate(value: EventObject => Boolean): Self = StObject.set(x, "approveUpdate", js.Any.fromFunction1(value))
+    inline def setApproveUpdate(value: EventObject => Boolean): Self = StObject.set(x, "approveUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdated(value: EventObject => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction1(value))
+    inline def setUpdated(value: EventObject => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction1(value))
   }
 }

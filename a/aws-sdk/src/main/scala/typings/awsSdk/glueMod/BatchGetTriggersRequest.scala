@@ -13,19 +13,15 @@ trait BatchGetTriggersRequest extends StObject {
 }
 object BatchGetTriggersRequest {
   
-  @scala.inline
-  def apply(TriggerNames: TriggerNameList): BatchGetTriggersRequest = {
+  inline def apply(TriggerNames: TriggerNameList): BatchGetTriggersRequest = {
     val __obj = js.Dynamic.literal(TriggerNames = TriggerNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetTriggersRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetTriggersRequestMutableBuilder[Self <: BatchGetTriggersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetTriggersRequest](x: Self) {
     
-    @scala.inline
-    def setTriggerNames(value: TriggerNameList): Self = StObject.set(x, "TriggerNames", value.asInstanceOf[js.Any])
+    inline def setTriggerNames(value: TriggerNameList): Self = StObject.set(x, "TriggerNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerNamesVarargs(value: NameString*): Self = StObject.set(x, "TriggerNames", js.Array(value :_*))
+    inline def setTriggerNamesVarargs(value: NameString*): Self = StObject.set(x, "TriggerNames", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait DialogModal extends StObject {
 }
 object DialogModal {
   
-  @scala.inline
-  def apply(): DialogModal = {
+  inline def apply(): DialogModal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogModal]
   }
   
-  @scala.inline
-  implicit class DialogModalMutableBuilder[Self <: DialogModal] (val x: Self) extends AnyVal {
+  extension [Self <: DialogModal](x: Self) {
     
-    @scala.inline
-    def setPreventScroll(value: String): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+    inline def setPreventScroll(value: String): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
+    inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
   }
 }

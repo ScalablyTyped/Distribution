@@ -52,51 +52,37 @@ trait ILruCache
 }
 object ILruCache {
   
-  @scala.inline
-  def apply(): ILruCache = {
+  inline def apply(): ILruCache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILruCache]
   }
   
-  @scala.inline
-  implicit class ILruCacheMutableBuilder[Self <: ILruCache] (val x: Self) extends AnyVal {
+  extension [Self <: ILruCache](x: Self) {
     
-    @scala.inline
-    def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setClone_(value: () => IHashMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
+    inline def setClone_(value: () => IHashMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    @scala.inline
-    def setEach(
+    inline def setEach(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* reverse */ js.UndefOr[Boolean]) => ILruCache
     ): Self = StObject.set(x, "each", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setGet(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setPrune(value: () => Unit): Self = StObject.set(x, "prune", js.Any.fromFunction0(value))
+    inline def setPrune(value: () => Unit): Self = StObject.set(x, "prune", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
+    inline def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
   }
 }

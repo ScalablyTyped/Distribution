@@ -44,14 +44,14 @@ trait TypeofBrowserPollConnecti
     */
   def forceAllow(): Unit = js.native
   
-  var forceAllow_ : js.Any = js.native
+  /* private */ var forceAllow_ : js.Any = js.native
   
   /**
     * Forces longpolling to not be considered as a potential transport
     */
   def forceDisallow(): Unit = js.native
   
-  var forceDisallow_ : js.Any = js.native
+  /* private */ var forceDisallow_ : js.Any = js.native
   
   def isAvailable(): Boolean = js.native
 }

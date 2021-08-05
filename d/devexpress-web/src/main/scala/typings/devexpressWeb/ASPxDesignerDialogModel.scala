@@ -16,8 +16,7 @@ trait ASPxDesignerDialogModel extends StObject {
 }
 object ASPxDesignerDialogModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getUrl: () => String,
     onShow: ASPxDesignerNavigateTab => Unit,
     popupButtons: js.Array[js.Any],
@@ -27,22 +26,16 @@ object ASPxDesignerDialogModel {
     __obj.asInstanceOf[ASPxDesignerDialogModel]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerDialogModelMutableBuilder[Self <: ASPxDesignerDialogModel] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerDialogModel](x: Self) {
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShow(value: ASPxDesignerNavigateTab => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: ASPxDesignerNavigateTab => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPopupButtons(value: js.Array[js.Any]): Self = StObject.set(x, "popupButtons", value.asInstanceOf[js.Any])
+    inline def setPopupButtons(value: js.Array[js.Any]): Self = StObject.set(x, "popupButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupButtonsVarargs(value: js.Any*): Self = StObject.set(x, "popupButtons", js.Array(value :_*))
+    inline def setPopupButtonsVarargs(value: js.Any*): Self = StObject.set(x, "popupButtons", js.Array(value :_*))
     
-    @scala.inline
-    def setSetUrl(value: String => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: String => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
   }
 }

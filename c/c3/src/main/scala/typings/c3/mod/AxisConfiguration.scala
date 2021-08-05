@@ -36,43 +36,31 @@ trait AxisConfiguration extends StObject {
 }
 object AxisConfiguration {
   
-  @scala.inline
-  def apply(): AxisConfiguration = {
+  inline def apply(): AxisConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisConfiguration]
   }
   
-  @scala.inline
-  implicit class AxisConfigurationMutableBuilder[Self <: AxisConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AxisConfiguration](x: Self) {
     
-    @scala.inline
-    def setInner(value: Boolean): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
+    inline def setInner(value: Boolean): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
+    inline def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
     
-    @scala.inline
-    def setMax(value: String | Double | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String | Double | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: String | Double | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String | Double | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

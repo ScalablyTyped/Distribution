@@ -108,7 +108,7 @@ object completedDocsRuleMod {
   class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    var getExclusionsMap: js.Any = js.native
+    /* private */ var getExclusionsMap: js.Any = js.native
   }
   /* static members */
   object Rule {
@@ -120,50 +120,42 @@ object completedDocsRuleMod {
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.ARGUMENT_DESCRIPTOR_BLOCK")
     @js.native
     def ARGUMENT_DESCRIPTOR_BLOCK: PropertiesType = js.native
-    @scala.inline
-    def ARGUMENT_DESCRIPTOR_BLOCK_=(x: PropertiesType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_BLOCK")(x.asInstanceOf[js.Any])
+    inline def ARGUMENT_DESCRIPTOR_BLOCK_=(x: PropertiesType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_BLOCK")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.ARGUMENT_DESCRIPTOR_CLASS")
     @js.native
     def ARGUMENT_DESCRIPTOR_CLASS: PropertiesLocations = js.native
-    @scala.inline
-    def ARGUMENT_DESCRIPTOR_CLASS_=(x: PropertiesLocations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_CLASS")(x.asInstanceOf[js.Any])
+    inline def ARGUMENT_DESCRIPTOR_CLASS_=(x: PropertiesLocations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.ARGUMENT_DESCRIPTOR_CONSTRUCTOR")
     @js.native
     def ARGUMENT_DESCRIPTOR_CONSTRUCTOR: PropertiesOverloads = js.native
-    @scala.inline
-    def ARGUMENT_DESCRIPTOR_CONSTRUCTOR_=(x: PropertiesOverloads): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_CONSTRUCTOR")(x.asInstanceOf[js.Any])
+    inline def ARGUMENT_DESCRIPTOR_CONSTRUCTOR_=(x: PropertiesOverloads): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_CONSTRUCTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.ARGUMENT_DESCRIPTOR_FUNCTION")
     @js.native
     def ARGUMENT_DESCRIPTOR_FUNCTION: PropertiesVisibilities = js.native
-    @scala.inline
-    def ARGUMENT_DESCRIPTOR_FUNCTION_=(x: PropertiesVisibilities): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_FUNCTION")(x.asInstanceOf[js.Any])
+    inline def ARGUMENT_DESCRIPTOR_FUNCTION_=(x: PropertiesVisibilities): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_FUNCTION")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.ARGUMENT_DESCRIPTOR_METHOD")
     @js.native
     def ARGUMENT_DESCRIPTOR_METHOD: PropertiesPrivacies = js.native
-    @scala.inline
-    def ARGUMENT_DESCRIPTOR_METHOD_=(x: PropertiesPrivacies): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_METHOD")(x.asInstanceOf[js.Any])
+    inline def ARGUMENT_DESCRIPTOR_METHOD_=(x: PropertiesPrivacies): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARGUMENT_DESCRIPTOR_METHOD")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.FAILURE_STRING_EXIST")
     @js.native
     def FAILURE_STRING_EXIST: String = js.native
-    @scala.inline
-    def FAILURE_STRING_EXIST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_EXIST")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_EXIST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_EXIST")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.defaultArguments")
     @js.native
     def defaultArguments: IInputExclusionDescriptors = js.native
-    @scala.inline
-    def defaultArguments_=(x: IInputExclusionDescriptors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultArguments")(x.asInstanceOf[js.Any])
+    inline def defaultArguments_=(x: IInputExclusionDescriptors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultArguments")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/completedDocsRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/rules/completedDocsRule", "TAGS_FOR_CONTENT")

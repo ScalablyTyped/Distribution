@@ -64,58 +64,41 @@ trait PlusBluetoothBluetoothDeviceInfo extends StObject {
 }
 object PlusBluetoothBluetoothDeviceInfo {
   
-  @scala.inline
-  def apply(): PlusBluetoothBluetoothDeviceInfo = {
+  inline def apply(): PlusBluetoothBluetoothDeviceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusBluetoothBluetoothDeviceInfo]
   }
   
-  @scala.inline
-  implicit class PlusBluetoothBluetoothDeviceInfoMutableBuilder[Self <: PlusBluetoothBluetoothDeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlusBluetoothBluetoothDeviceInfo](x: Self) {
     
-    @scala.inline
-    def setAdvertisData(value: ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
+    inline def setAdvertisData(value: ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisDataUndefined: Self = StObject.set(x, "advertisData", js.undefined)
+    inline def setAdvertisDataUndefined: Self = StObject.set(x, "advertisData", js.undefined)
     
-    @scala.inline
-    def setAdvertisServiceUUIDs(value: js.Array[js.Any]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
+    inline def setAdvertisServiceUUIDs(value: js.Array[js.Any]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisServiceUUIDsUndefined: Self = StObject.set(x, "advertisServiceUUIDs", js.undefined)
+    inline def setAdvertisServiceUUIDsUndefined: Self = StObject.set(x, "advertisServiceUUIDs", js.undefined)
     
-    @scala.inline
-    def setAdvertisServiceUUIDsVarargs(value: js.Any*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value :_*))
+    inline def setAdvertisServiceUUIDsVarargs(value: js.Any*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value :_*))
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
+    inline def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRSSI(value: String): Self = StObject.set(x, "RSSI", value.asInstanceOf[js.Any])
+    inline def setRSSI(value: String): Self = StObject.set(x, "RSSI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRSSIUndefined: Self = StObject.set(x, "RSSI", js.undefined)
+    inline def setRSSIUndefined: Self = StObject.set(x, "RSSI", js.undefined)
     
-    @scala.inline
-    def setServiceData(value: js.Any): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
+    inline def setServiceData(value: js.Any): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
+    inline def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
   }
 }

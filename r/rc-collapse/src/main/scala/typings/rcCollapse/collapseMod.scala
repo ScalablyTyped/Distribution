@@ -40,29 +40,24 @@ object collapseMod {
         @JSImport("rc-collapse/es/Collapse", "default.Panel.defaultProps.forceRender")
         @js.native
         def forceRender: Boolean = js.native
-        @scala.inline
-        def forceRender_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceRender")(x.asInstanceOf[js.Any])
+        inline def forceRender_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceRender")(x.asInstanceOf[js.Any])
         
         @JSImport("rc-collapse/es/Collapse", "default.Panel.defaultProps.headerClass")
         @js.native
         def headerClass: String = js.native
-        @scala.inline
-        def headerClass_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerClass")(x.asInstanceOf[js.Any])
+        inline def headerClass_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerClass")(x.asInstanceOf[js.Any])
         
         @JSImport("rc-collapse/es/Collapse", "default.Panel.defaultProps.isActive")
         @js.native
         def isActive: Boolean = js.native
-        @scala.inline
-        def isActive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isActive")(x.asInstanceOf[js.Any])
+        inline def isActive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isActive")(x.asInstanceOf[js.Any])
         
-        @scala.inline
-        def onItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onItemClick")().asInstanceOf[Unit]
+        inline def onItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onItemClick")().asInstanceOf[Unit]
         
         @JSImport("rc-collapse/es/Collapse", "default.Panel.defaultProps.showArrow")
         @js.native
         def showArrow: Boolean = js.native
-        @scala.inline
-        def showArrow_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showArrow")(x.asInstanceOf[js.Any])
+        inline def showArrow_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showArrow")(x.asInstanceOf[js.Any])
       }
     }
     
@@ -76,28 +71,23 @@ object collapseMod {
       @JSImport("rc-collapse/es/Collapse", "default.defaultProps.accordion")
       @js.native
       def accordion: Boolean = js.native
-      @scala.inline
-      def accordion_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accordion")(x.asInstanceOf[js.Any])
+      inline def accordion_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accordion")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-collapse/es/Collapse", "default.defaultProps.destroyInactivePanel")
       @js.native
       def destroyInactivePanel: Boolean = js.native
-      @scala.inline
-      def destroyInactivePanel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destroyInactivePanel")(x.asInstanceOf[js.Any])
+      inline def destroyInactivePanel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destroyInactivePanel")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
+      inline def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
       
       @JSImport("rc-collapse/es/Collapse", "default.defaultProps.prefixCls")
       @js.native
       def prefixCls: String = js.native
-      @scala.inline
-      def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
+      inline def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: CollapseProps): PartialCollapseState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[PartialCollapseState]
+    inline def getDerivedStateFromProps(nextProps: CollapseProps): PartialCollapseState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[PartialCollapseState]
   }
   
   @js.native
@@ -129,20 +119,16 @@ object collapseMod {
   }
   object CollapseState {
     
-    @scala.inline
-    def apply(activeKey: js.Array[Key]): CollapseState = {
+    inline def apply(activeKey: js.Array[Key]): CollapseState = {
       val __obj = js.Dynamic.literal(activeKey = activeKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollapseState]
     }
     
-    @scala.inline
-    implicit class CollapseStateMutableBuilder[Self <: CollapseState] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseState](x: Self) {
       
-      @scala.inline
-      def setActiveKey(value: js.Array[Key]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: js.Array[Key]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveKeyVarargs(value: Key*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
+      inline def setActiveKeyVarargs(value: Key*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
     }
   }
 }

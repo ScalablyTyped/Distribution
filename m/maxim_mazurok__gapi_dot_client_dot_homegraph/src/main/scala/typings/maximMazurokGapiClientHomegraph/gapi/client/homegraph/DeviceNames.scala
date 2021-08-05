@@ -17,37 +17,27 @@ trait DeviceNames extends StObject {
 }
 object DeviceNames {
   
-  @scala.inline
-  def apply(): DeviceNames = {
+  inline def apply(): DeviceNames = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceNames]
   }
   
-  @scala.inline
-  implicit class DeviceNamesMutableBuilder[Self <: DeviceNames] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceNames](x: Self) {
     
-    @scala.inline
-    def setDefaultNames(value: js.Array[String]): Self = StObject.set(x, "defaultNames", value.asInstanceOf[js.Any])
+    inline def setDefaultNames(value: js.Array[String]): Self = StObject.set(x, "defaultNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNamesUndefined: Self = StObject.set(x, "defaultNames", js.undefined)
+    inline def setDefaultNamesUndefined: Self = StObject.set(x, "defaultNames", js.undefined)
     
-    @scala.inline
-    def setDefaultNamesVarargs(value: String*): Self = StObject.set(x, "defaultNames", js.Array(value :_*))
+    inline def setDefaultNamesVarargs(value: String*): Self = StObject.set(x, "defaultNames", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNicknames(value: js.Array[String]): Self = StObject.set(x, "nicknames", value.asInstanceOf[js.Any])
+    inline def setNicknames(value: js.Array[String]): Self = StObject.set(x, "nicknames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNicknamesUndefined: Self = StObject.set(x, "nicknames", js.undefined)
+    inline def setNicknamesUndefined: Self = StObject.set(x, "nicknames", js.undefined)
     
-    @scala.inline
-    def setNicknamesVarargs(value: String*): Self = StObject.set(x, "nicknames", js.Array(value :_*))
+    inline def setNicknamesVarargs(value: String*): Self = StObject.set(x, "nicknames", js.Array(value :_*))
   }
 }

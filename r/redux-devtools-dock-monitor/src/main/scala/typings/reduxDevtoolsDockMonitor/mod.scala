@@ -24,17 +24,13 @@ object mod {
   trait DockPosition extends StObject
   object DockPosition {
     
-    @scala.inline
-    def bottom: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom = "bottom".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom]
+    inline def bottom: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom = "bottom".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom]
     
-    @scala.inline
-    def left: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left = "left".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left]
+    inline def left: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left = "left".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left]
     
-    @scala.inline
-    def right: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right = "right".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right]
+    inline def right: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right = "right".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right]
     
-    @scala.inline
-    def top: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top = "top".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top]
+    inline def top: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top = "top".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top]
   }
   
   trait IDockMonitorProps extends StObject {
@@ -95,56 +91,40 @@ object mod {
   }
   object IDockMonitorProps {
     
-    @scala.inline
-    def apply(changePositionKey: String, toggleVisibilityKey: String): IDockMonitorProps = {
+    inline def apply(changePositionKey: String, toggleVisibilityKey: String): IDockMonitorProps = {
       val __obj = js.Dynamic.literal(changePositionKey = changePositionKey.asInstanceOf[js.Any], toggleVisibilityKey = toggleVisibilityKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDockMonitorProps]
     }
     
-    @scala.inline
-    implicit class IDockMonitorPropsMutableBuilder[Self <: IDockMonitorProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDockMonitorProps](x: Self) {
       
-      @scala.inline
-      def setChangeMonitorKey(value: String): Self = StObject.set(x, "changeMonitorKey", value.asInstanceOf[js.Any])
+      inline def setChangeMonitorKey(value: String): Self = StObject.set(x, "changeMonitorKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeMonitorKeyUndefined: Self = StObject.set(x, "changeMonitorKey", js.undefined)
+      inline def setChangeMonitorKeyUndefined: Self = StObject.set(x, "changeMonitorKey", js.undefined)
       
-      @scala.inline
-      def setChangePositionKey(value: String): Self = StObject.set(x, "changePositionKey", value.asInstanceOf[js.Any])
+      inline def setChangePositionKey(value: String): Self = StObject.set(x, "changePositionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultIsVisible(value: Boolean): Self = StObject.set(x, "defaultIsVisible", value.asInstanceOf[js.Any])
+      inline def setDefaultIsVisible(value: Boolean): Self = StObject.set(x, "defaultIsVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultIsVisibleUndefined: Self = StObject.set(x, "defaultIsVisible", js.undefined)
+      inline def setDefaultIsVisibleUndefined: Self = StObject.set(x, "defaultIsVisible", js.undefined)
       
-      @scala.inline
-      def setDefaultPosition(value: DockPosition): Self = StObject.set(x, "defaultPosition", value.asInstanceOf[js.Any])
+      inline def setDefaultPosition(value: DockPosition): Self = StObject.set(x, "defaultPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPositionUndefined: Self = StObject.set(x, "defaultPosition", js.undefined)
+      inline def setDefaultPositionUndefined: Self = StObject.set(x, "defaultPosition", js.undefined)
       
-      @scala.inline
-      def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
+      inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      @scala.inline
-      def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+      inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      @scala.inline
-      def setToggleVisibilityKey(value: String): Self = StObject.set(x, "toggleVisibilityKey", value.asInstanceOf[js.Any])
+      inline def setToggleVisibilityKey(value: String): Self = StObject.set(x, "toggleVisibilityKey", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,8 +18,7 @@ trait SearchAdGroupAudienceBuilder[SearchAdGroupAudience]
 }
 object SearchAdGroupAudienceBuilder {
   
-  @scala.inline
-  def apply[SearchAdGroupAudience](
+  inline def apply[SearchAdGroupAudience](
     build: () => AdWordsOperation[SearchAdGroupAudience],
     exclude: () => AdWordsOperation[SearchAdGroupAudience],
     withAudience: UserList => SearchAdGroupAudienceBuilder[SearchAdGroupAudience],
@@ -30,19 +29,14 @@ object SearchAdGroupAudienceBuilder {
     __obj.asInstanceOf[SearchAdGroupAudienceBuilder[SearchAdGroupAudience]]
   }
   
-  @scala.inline
-  implicit class SearchAdGroupAudienceBuilderMutableBuilder[Self <: SearchAdGroupAudienceBuilder[?], SearchAdGroupAudience] (val x: Self & SearchAdGroupAudienceBuilder[SearchAdGroupAudience]) extends AnyVal {
+  extension [Self <: SearchAdGroupAudienceBuilder[?], SearchAdGroupAudience](x: Self & SearchAdGroupAudienceBuilder[SearchAdGroupAudience]) {
     
-    @scala.inline
-    def setExclude(value: () => AdWordsOperation[SearchAdGroupAudience]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
+    inline def setExclude(value: () => AdWordsOperation[SearchAdGroupAudience]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWithAudience(value: UserList => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
+    inline def setWithAudience(value: UserList => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithAudienceId(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
+    inline def setWithAudienceId(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithBidModifier(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withBidModifier", js.Any.fromFunction1(value))
+    inline def setWithBidModifier(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withBidModifier", js.Any.fromFunction1(value))
   }
 }

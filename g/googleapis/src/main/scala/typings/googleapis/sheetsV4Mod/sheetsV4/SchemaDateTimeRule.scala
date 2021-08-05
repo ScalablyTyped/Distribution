@@ -27,19 +27,15 @@ trait SchemaDateTimeRule extends StObject {
 }
 object SchemaDateTimeRule {
   
-  @scala.inline
-  def apply(): SchemaDateTimeRule = {
+  inline def apply(): SchemaDateTimeRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDateTimeRule]
   }
   
-  @scala.inline
-  implicit class SchemaDateTimeRuleMutableBuilder[Self <: SchemaDateTimeRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDateTimeRule](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -29,31 +29,23 @@ trait SchemaRange extends StObject {
 }
 object SchemaRange {
   
-  @scala.inline
-  def apply(): SchemaRange = {
+  inline def apply(): SchemaRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRange]
   }
   
-  @scala.inline
-  implicit class SchemaRangeMutableBuilder[Self <: SchemaRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRange](x: Self) {
     
-    @scala.inline
-    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

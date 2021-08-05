@@ -11,19 +11,15 @@ trait RealtimeTimeRange extends StObject {
 }
 object RealtimeTimeRange {
   
-  @scala.inline
-  def apply(): RealtimeTimeRange = {
+  inline def apply(): RealtimeTimeRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RealtimeTimeRange]
   }
   
-  @scala.inline
-  implicit class RealtimeTimeRangeMutableBuilder[Self <: RealtimeTimeRange] (val x: Self) extends AnyVal {
+  extension [Self <: RealtimeTimeRange](x: Self) {
     
-    @scala.inline
-    def setStartTimestamp(value: String): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: String): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
+    inline def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
   }
 }

@@ -21,25 +21,19 @@ trait SchemaOffsetPosition extends StObject {
 }
 object SchemaOffsetPosition {
   
-  @scala.inline
-  def apply(): SchemaOffsetPosition = {
+  inline def apply(): SchemaOffsetPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOffsetPosition]
   }
   
-  @scala.inline
-  implicit class SchemaOffsetPositionMutableBuilder[Self <: SchemaOffsetPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOffsetPosition](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

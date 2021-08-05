@@ -34,49 +34,35 @@ trait Browser extends StObject {
 }
 object Browser {
   
-  @scala.inline
-  def apply(): Browser = {
+  inline def apply(): Browser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Browser]
   }
   
-  @scala.inline
-  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+  extension [Self <: Browser](x: Self) {
     
-    @scala.inline
-    def setBrowserVersionId(value: String): Self = StObject.set(x, "browserVersionId", value.asInstanceOf[js.Any])
+    inline def setBrowserVersionId(value: String): Self = StObject.set(x, "browserVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserVersionIdUndefined: Self = StObject.set(x, "browserVersionId", js.undefined)
+    inline def setBrowserVersionIdUndefined: Self = StObject.set(x, "browserVersionId", js.undefined)
     
-    @scala.inline
-    def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
+    inline def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
+    inline def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorVersionUndefined: Self = StObject.set(x, "majorVersion", js.undefined)
+    inline def setMajorVersionUndefined: Self = StObject.set(x, "majorVersion", js.undefined)
     
-    @scala.inline
-    def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersionUndefined: Self = StObject.set(x, "minorVersion", js.undefined)
+    inline def setMinorVersionUndefined: Self = StObject.set(x, "minorVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

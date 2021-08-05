@@ -14,22 +14,17 @@ trait ReposDeleteReleaseAssetEndpoint extends StObject {
 }
 object ReposDeleteReleaseAssetEndpoint {
   
-  @scala.inline
-  def apply(asset_id: Double, owner: String, repo: String): ReposDeleteReleaseAssetEndpoint = {
+  inline def apply(asset_id: Double, owner: String, repo: String): ReposDeleteReleaseAssetEndpoint = {
     val __obj = js.Dynamic.literal(asset_id = asset_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposDeleteReleaseAssetEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposDeleteReleaseAssetEndpointMutableBuilder[Self <: ReposDeleteReleaseAssetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeleteReleaseAssetEndpoint](x: Self) {
     
-    @scala.inline
-    def setAsset_id(value: Double): Self = StObject.set(x, "asset_id", value.asInstanceOf[js.Any])
+    inline def setAsset_id(value: Double): Self = StObject.set(x, "asset_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

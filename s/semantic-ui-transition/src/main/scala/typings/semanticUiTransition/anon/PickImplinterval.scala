@@ -11,16 +11,13 @@ trait PickImplinterval extends StObject {
 }
 object PickImplinterval {
   
-  @scala.inline
-  def apply(interval: Double): PickImplinterval = {
+  inline def apply(interval: Double): PickImplinterval = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinterval]
   }
   
-  @scala.inline
-  implicit class PickImplintervalMutableBuilder[Self <: PickImplinterval] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplinterval](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }
 }

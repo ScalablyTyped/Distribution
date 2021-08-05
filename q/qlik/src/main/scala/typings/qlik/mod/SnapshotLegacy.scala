@@ -10,16 +10,13 @@ trait SnapshotLegacy extends StObject {
 }
 object SnapshotLegacy {
   
-  @scala.inline
-  def apply(canTakeSnapshot: Boolean): SnapshotLegacy = {
+  inline def apply(canTakeSnapshot: Boolean): SnapshotLegacy = {
     val __obj = js.Dynamic.literal(canTakeSnapshot = canTakeSnapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotLegacy]
   }
   
-  @scala.inline
-  implicit class SnapshotLegacyMutableBuilder[Self <: SnapshotLegacy] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotLegacy](x: Self) {
     
-    @scala.inline
-    def setCanTakeSnapshot(value: Boolean): Self = StObject.set(x, "canTakeSnapshot", value.asInstanceOf[js.Any])
+    inline def setCanTakeSnapshot(value: Boolean): Self = StObject.set(x, "canTakeSnapshot", value.asInstanceOf[js.Any])
   }
 }

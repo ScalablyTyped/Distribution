@@ -57,18 +57,14 @@ object mod {
       *
       * @returns Parsed shortcode attributes.
       */
-    @scala.inline
-    def attrs(text: String): ShortcodeAttrs = ^.asInstanceOf[js.Dynamic].applyDynamic("attrs")(text.asInstanceOf[js.Any]).asInstanceOf[ShortcodeAttrs]
-    @scala.inline
-    def attrs_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attrs")(x.asInstanceOf[js.Any])
+    inline def attrs(text: String): ShortcodeAttrs = ^.asInstanceOf[js.Dynamic].applyDynamic("attrs")(text.asInstanceOf[js.Any]).asInstanceOf[ShortcodeAttrs]
+    inline def attrs_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attrs")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/shortcode", "default.fromMatch")
     @js.native
     def fromMatch: js.Function1[/* match */ RegExpMatchArray, Shortcode_] = js.native
-    @scala.inline
-    def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
-    @scala.inline
-    def fromMatch_=(x: js.Function1[/* match */ RegExpMatchArray, Shortcode_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromMatch")(x.asInstanceOf[js.Any])
+    inline def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
+    inline def fromMatch_=(x: js.Function1[/* match */ RegExpMatchArray, Shortcode_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromMatch")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/shortcode", "default.next")
     @js.native
@@ -78,12 +74,9 @@ object mod {
         /* index */ js.UndefOr[Double], 
         js.UndefOr[ShortcodeMatch]
       ] = js.native
-    @scala.inline
-    def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
-    @scala.inline
-    def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
-    @scala.inline
-    def next_=(
+    inline def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
+    inline def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
+    inline def next_=(
       x: js.Function3[
           /* tag */ String, 
           /* text */ String, 
@@ -95,10 +88,8 @@ object mod {
     @JSImport("@wordpress/shortcode", "default.regexp")
     @js.native
     def regexp: js.Function1[/* tag */ String, RegExp] = js.native
-    @scala.inline
-    def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-    @scala.inline
-    def regexp_=(x: js.Function1[/* tag */ String, RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
+    inline def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+    inline def regexp_=(x: js.Function1[/* tag */ String, RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/shortcode", "default.replace")
     @js.native
@@ -108,10 +99,8 @@ object mod {
         /* callback */ js.Function1[/* shortcode */ Shortcode_, String], 
         String
       ] = js.native
-    @scala.inline
-    def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def replace_=(
+    inline def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def replace_=(
       x: js.Function3[
           /* tag */ String, 
           /* text */ String, 
@@ -124,8 +113,7 @@ object mod {
     @JSImport("@wordpress/shortcode", "default.string")
     @js.native
     def string: String = js.native
-    @scala.inline
-    def string_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
+    inline def string_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
   }
   
   object attrs {
@@ -148,8 +136,7 @@ object mod {
       *
       * @returns Parsed shortcode attributes.
       */
-    @scala.inline
-    def apply(text: String): ShortcodeAttrs = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[ShortcodeAttrs]
+    inline def apply(text: String): ShortcodeAttrs = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[ShortcodeAttrs]
     
     @JSImport("@wordpress/shortcode", "attrs")
     @js.native
@@ -158,26 +145,19 @@ object mod {
     /**
       * Used to clear the memoized cache of this function.
       */
-    @scala.inline
-    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
+  inline def fromMatch(`match`: RegExpMatchArray): Shortcode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[Shortcode_]
   
-  @scala.inline
-  def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
-  @scala.inline
-  def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
+  inline def next(tag: String, text: String): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
+  inline def next(tag: String, text: String, index: Double): js.UndefOr[ShortcodeMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ShortcodeMatch]]
   
-  @scala.inline
-  def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def regexp(tag: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(tag.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
-  @scala.inline
-  def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replace(tag: String, text: String, callback: js.Function1[/* shortcode */ Shortcode_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(tag.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def string(options: ShortcodeOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def string(options: ShortcodeOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait ShortcodeAttrs extends StObject {
     
@@ -187,23 +167,18 @@ object mod {
   }
   object ShortcodeAttrs {
     
-    @scala.inline
-    def apply(named: Record[String, js.UndefOr[String]], numeric: js.Array[String]): ShortcodeAttrs = {
+    inline def apply(named: Record[String, js.UndefOr[String]], numeric: js.Array[String]): ShortcodeAttrs = {
       val __obj = js.Dynamic.literal(named = named.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShortcodeAttrs]
     }
     
-    @scala.inline
-    implicit class ShortcodeAttrsMutableBuilder[Self <: ShortcodeAttrs] (val x: Self) extends AnyVal {
+    extension [Self <: ShortcodeAttrs](x: Self) {
       
-      @scala.inline
-      def setNamed(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeric(value: js.Array[String]): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: js.Array[String]): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value :_*))
+      inline def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value :_*))
     }
   }
   
@@ -217,23 +192,18 @@ object mod {
   }
   object ShortcodeMatch {
     
-    @scala.inline
-    def apply(content: String, index: Double, shortcode: Shortcode_): ShortcodeMatch = {
+    inline def apply(content: String, index: Double, shortcode: Shortcode_): ShortcodeMatch = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], shortcode = shortcode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShortcodeMatch]
     }
     
-    @scala.inline
-    implicit class ShortcodeMatchMutableBuilder[Self <: ShortcodeMatch] (val x: Self) extends AnyVal {
+    extension [Self <: ShortcodeMatch](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcode(value: Shortcode_): Self = StObject.set(x, "shortcode", value.asInstanceOf[js.Any])
+      inline def setShortcode(value: Shortcode_): Self = StObject.set(x, "shortcode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,35 +219,26 @@ object mod {
   }
   object ShortcodeOptions {
     
-    @scala.inline
-    def apply(tag: String): ShortcodeOptions = {
+    inline def apply(tag: String): ShortcodeOptions = {
       val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShortcodeOptions]
     }
     
-    @scala.inline
-    implicit class ShortcodeOptionsMutableBuilder[Self <: ShortcodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShortcodeOptions](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: PartialShortcodeAttrs | String): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: PartialShortcodeAttrs | String): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: closed | `self-closing` | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: closed | `self-closing` | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

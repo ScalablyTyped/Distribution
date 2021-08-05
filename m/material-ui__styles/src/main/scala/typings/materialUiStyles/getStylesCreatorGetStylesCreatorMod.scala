@@ -12,8 +12,7 @@ object getStylesCreatorGetStylesCreatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S /* <: Styles[js.Any, js.Any, String] */](style: S): StylesCreator[js.Any, js.Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[StylesCreator[js.Any, js.Any, String]]
+  inline def default[S /* <: Styles[js.Any, js.Any, String] */](style: S): StylesCreator[js.Any, js.Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[StylesCreator[js.Any, js.Any, String]]
   
   trait StylesCreator[Theme, Props /* <: js.Object */, ClassKey /* <: String */] extends StObject {
     
@@ -23,20 +22,16 @@ object getStylesCreatorGetStylesCreatorMod {
   }
   object StylesCreator {
     
-    @scala.inline
-    def apply[Theme, Props /* <: js.Object */, ClassKey /* <: String */](create: (Theme, String) => StyleRules[Props, ClassKey], themingEnabled: Boolean): StylesCreator[Theme, Props, ClassKey] = {
+    inline def apply[Theme, Props /* <: js.Object */, ClassKey /* <: String */](create: (Theme, String) => StyleRules[Props, ClassKey], themingEnabled: Boolean): StylesCreator[Theme, Props, ClassKey] = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), themingEnabled = themingEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylesCreator[Theme, Props, ClassKey]]
     }
     
-    @scala.inline
-    implicit class StylesCreatorMutableBuilder[Self <: StylesCreator[?, ?, ?], Theme, Props /* <: js.Object */, ClassKey /* <: String */] (val x: Self & (StylesCreator[Theme, Props, ClassKey])) extends AnyVal {
+    extension [Self <: StylesCreator[?, ?, ?], Theme, Props /* <: js.Object */, ClassKey /* <: String */](x: Self & (StylesCreator[Theme, Props, ClassKey])) {
       
-      @scala.inline
-      def setCreate(value: (Theme, String) => StyleRules[Props, ClassKey]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (Theme, String) => StyleRules[Props, ClassKey]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setThemingEnabled(value: Boolean): Self = StObject.set(x, "themingEnabled", value.asInstanceOf[js.Any])
+      inline def setThemingEnabled(value: Boolean): Self = StObject.set(x, "themingEnabled", value.asInstanceOf[js.Any])
     }
   }
 }

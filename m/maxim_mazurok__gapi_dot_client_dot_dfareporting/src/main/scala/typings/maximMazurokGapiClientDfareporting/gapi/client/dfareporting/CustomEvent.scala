@@ -38,70 +38,49 @@ trait CustomEvent extends StObject {
 }
 object CustomEvent {
   
-  @scala.inline
-  def apply(): CustomEvent = {
+  inline def apply(): CustomEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomEvent]
   }
   
-  @scala.inline
-  implicit class CustomEventMutableBuilder[Self <: CustomEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CustomEvent](x: Self) {
     
-    @scala.inline
-    def setAnnotateClickEvent(value: CustomEventClickAnnotation): Self = StObject.set(x, "annotateClickEvent", value.asInstanceOf[js.Any])
+    inline def setAnnotateClickEvent(value: CustomEventClickAnnotation): Self = StObject.set(x, "annotateClickEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotateClickEventUndefined: Self = StObject.set(x, "annotateClickEvent", js.undefined)
+    inline def setAnnotateClickEventUndefined: Self = StObject.set(x, "annotateClickEvent", js.undefined)
     
-    @scala.inline
-    def setAnnotateImpressionEvent(value: CustomEventImpressionAnnotation): Self = StObject.set(x, "annotateImpressionEvent", value.asInstanceOf[js.Any])
+    inline def setAnnotateImpressionEvent(value: CustomEventImpressionAnnotation): Self = StObject.set(x, "annotateImpressionEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotateImpressionEventUndefined: Self = StObject.set(x, "annotateImpressionEvent", js.undefined)
+    inline def setAnnotateImpressionEventUndefined: Self = StObject.set(x, "annotateImpressionEvent", js.undefined)
     
-    @scala.inline
-    def setCustomVariables(value: js.Array[CustomVariable]): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
+    inline def setCustomVariables(value: js.Array[CustomVariable]): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
+    inline def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
     
-    @scala.inline
-    def setCustomVariablesVarargs(value: CustomVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
+    inline def setCustomVariablesVarargs(value: CustomVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
+    inline def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
+    inline def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
     
-    @scala.inline
-    def setInsertEvent(value: CustomEventInsert): Self = StObject.set(x, "insertEvent", value.asInstanceOf[js.Any])
+    inline def setInsertEvent(value: CustomEventInsert): Self = StObject.set(x, "insertEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertEventUndefined: Self = StObject.set(x, "insertEvent", js.undefined)
+    inline def setInsertEventUndefined: Self = StObject.set(x, "insertEvent", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOrdinal(value: String): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: String): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
-    @scala.inline
-    def setTimestampMicros(value: String): Self = StObject.set(x, "timestampMicros", value.asInstanceOf[js.Any])
+    inline def setTimestampMicros(value: String): Self = StObject.set(x, "timestampMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMicrosUndefined: Self = StObject.set(x, "timestampMicros", js.undefined)
+    inline def setTimestampMicrosUndefined: Self = StObject.set(x, "timestampMicros", js.undefined)
   }
 }

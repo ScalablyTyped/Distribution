@@ -10,16 +10,13 @@ trait DropPayload extends StObject {
 }
 object DropPayload {
   
-  @scala.inline
-  def apply(dropResult: js.Any): DropPayload = {
+  inline def apply(dropResult: js.Any): DropPayload = {
     val __obj = js.Dynamic.literal(dropResult = dropResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropPayload]
   }
   
-  @scala.inline
-  implicit class DropPayloadMutableBuilder[Self <: DropPayload] (val x: Self) extends AnyVal {
+  extension [Self <: DropPayload](x: Self) {
     
-    @scala.inline
-    def setDropResult(value: js.Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
+    inline def setDropResult(value: js.Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
   }
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object errorHandlerMod {
   
-  @scala.inline
-  def apply(server: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(server: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("ipfs-http-server/dist/src/error-handler", JSImport.Namespace)
   @js.native

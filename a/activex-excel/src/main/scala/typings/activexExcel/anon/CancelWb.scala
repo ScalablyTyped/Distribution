@@ -13,19 +13,15 @@ trait CancelWb extends StObject {
 }
 object CancelWb {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Wb: Workbook): CancelWb = {
+  inline def apply(Cancel: Boolean, Wb: Workbook): CancelWb = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelWb]
   }
   
-  @scala.inline
-  implicit class CancelWbMutableBuilder[Self <: CancelWb] (val x: Self) extends AnyVal {
+  extension [Self <: CancelWb](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
+    inline def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
   }
 }

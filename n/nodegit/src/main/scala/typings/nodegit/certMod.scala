@@ -26,11 +26,9 @@ object certMod {
     trait SSH extends StObject
     object SSH {
       
-      @scala.inline
-      def MD5: `1` = 1.asInstanceOf[`1`]
+      inline def MD5: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def SHA1: `2` = 2.asInstanceOf[`2`]
+      inline def SHA1: `2` = 2.asInstanceOf[`2`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -42,17 +40,13 @@ object certMod {
     trait TYPE extends StObject
     object TYPE {
       
-      @scala.inline
-      def HOSTKEY_LIBSSH2: `2` = 2.asInstanceOf[`2`]
+      inline def HOSTKEY_LIBSSH2: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def NONE: `0` = 0.asInstanceOf[`0`]
+      inline def NONE: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def STRARRAY: `3` = 3.asInstanceOf[`3`]
+      inline def STRARRAY: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def X509: `1` = 1.asInstanceOf[`1`]
+      inline def X509: `1` = 1.asInstanceOf[`1`]
     }
   }
 }

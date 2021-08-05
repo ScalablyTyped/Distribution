@@ -12,7 +12,7 @@ trait FileExportConverter extends StObject {
   
   val Description: String
   
-  @JSName("Excel.FileExportConverter_typekey")
+  /* private */ @JSName("Excel.FileExportConverter_typekey")
   var ExcelDotFileExportConverter_typekey: FileExportConverter
   
   val Extensions: String
@@ -23,8 +23,7 @@ trait FileExportConverter extends StObject {
 }
 object FileExportConverter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Description: String,
@@ -38,28 +37,20 @@ object FileExportConverter {
     __obj.asInstanceOf[FileExportConverter]
   }
   
-  @scala.inline
-  implicit class FileExportConverterMutableBuilder[Self <: FileExportConverter] (val x: Self) extends AnyVal {
+  extension [Self <: FileExportConverter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotFileExportConverter_typekey(value: FileExportConverter): Self = StObject.set(x, "Excel.FileExportConverter_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotFileExportConverter_typekey(value: FileExportConverter): Self = StObject.set(x, "Excel.FileExportConverter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensions(value: String): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: String): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
+    inline def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

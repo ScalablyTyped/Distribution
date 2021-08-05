@@ -20,8 +20,7 @@ trait ListReelMediaViewerFeedResponseFriendshipStatus extends StObject {
 }
 object ListReelMediaViewerFeedResponseFriendshipStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     following: Boolean,
     incoming_request: Boolean,
     is_bestie: Boolean,
@@ -33,25 +32,18 @@ object ListReelMediaViewerFeedResponseFriendshipStatus {
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseFriendshipStatus]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseFriendshipStatusMutableBuilder[Self <: ListReelMediaViewerFeedResponseFriendshipStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseFriendshipStatus](x: Self) {
     
-    @scala.inline
-    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+    inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+    inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+    inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+    inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
+    inline def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+    inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
   }
 }

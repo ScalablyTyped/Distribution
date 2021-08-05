@@ -8,7 +8,7 @@ trait TypeScriptServicesFactory
   extends StObject
      with IShimFactory {
   
-  var _shims: js.Any
+  /* private */ var _shims: js.Any
   
   def close(): Unit
   
@@ -26,8 +26,7 @@ trait TypeScriptServicesFactory
 }
 object TypeScriptServicesFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _shims: js.Any,
     close: () => Unit,
     createClassifier: IClassifierHost => Classifier,
@@ -43,31 +42,22 @@ object TypeScriptServicesFactory {
     __obj.asInstanceOf[TypeScriptServicesFactory]
   }
   
-  @scala.inline
-  implicit class TypeScriptServicesFactoryMutableBuilder[Self <: TypeScriptServicesFactory] (val x: Self) extends AnyVal {
+  extension [Self <: TypeScriptServicesFactory](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateClassifier(value: IClassifierHost => Classifier): Self = StObject.set(x, "createClassifier", js.Any.fromFunction1(value))
+    inline def setCreateClassifier(value: IClassifierHost => Classifier): Self = StObject.set(x, "createClassifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateClassifierShim(value: IClassifierHost => ClassifierShim): Self = StObject.set(x, "createClassifierShim", js.Any.fromFunction1(value))
+    inline def setCreateClassifierShim(value: IClassifierHost => ClassifierShim): Self = StObject.set(x, "createClassifierShim", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCoreServices(value: ICoreServicesHost => CoreServices): Self = StObject.set(x, "createCoreServices", js.Any.fromFunction1(value))
+    inline def setCreateCoreServices(value: ICoreServicesHost => CoreServices): Self = StObject.set(x, "createCoreServices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCoreServicesShim(value: ICoreServicesHost => CoreServicesShim): Self = StObject.set(x, "createCoreServicesShim", js.Any.fromFunction1(value))
+    inline def setCreateCoreServicesShim(value: ICoreServicesHost => CoreServicesShim): Self = StObject.set(x, "createCoreServicesShim", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLanguageServiceShim(value: ILanguageServiceShimHost => ILanguageServiceShim): Self = StObject.set(x, "createLanguageServiceShim", js.Any.fromFunction1(value))
+    inline def setCreateLanguageServiceShim(value: ILanguageServiceShimHost => ILanguageServiceShim): Self = StObject.set(x, "createLanguageServiceShim", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePullLanguageService(value: ILanguageServiceHost => ILanguageService): Self = StObject.set(x, "createPullLanguageService", js.Any.fromFunction1(value))
+    inline def setCreatePullLanguageService(value: ILanguageServiceHost => ILanguageService): Self = StObject.set(x, "createPullLanguageService", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_shims(value: js.Any): Self = StObject.set(x, "_shims", value.asInstanceOf[js.Any])
+    inline def set_shims(value: js.Any): Self = StObject.set(x, "_shims", value.asInstanceOf[js.Any])
   }
 }

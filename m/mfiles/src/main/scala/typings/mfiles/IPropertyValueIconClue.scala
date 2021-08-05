@@ -15,8 +15,7 @@ trait IPropertyValueIconClue extends StObject {
 }
 object IPropertyValueIconClue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IPropertyValueIconClue,
     PropertyDef: MFBuiltInPropertyDef | Double,
     ValueListItem: Double
@@ -25,16 +24,12 @@ object IPropertyValueIconClue {
     __obj.asInstanceOf[IPropertyValueIconClue]
   }
   
-  @scala.inline
-  implicit class IPropertyValueIconClueMutableBuilder[Self <: IPropertyValueIconClue] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValueIconClue](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyValueIconClue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyValueIconClue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
+    inline def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueListItem(value: Double): Self = StObject.set(x, "ValueListItem", value.asInstanceOf[js.Any])
+    inline def setValueListItem(value: Double): Self = StObject.set(x, "ValueListItem", value.asInstanceOf[js.Any])
   }
 }

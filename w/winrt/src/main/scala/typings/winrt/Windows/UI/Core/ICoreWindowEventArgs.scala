@@ -10,16 +10,13 @@ trait ICoreWindowEventArgs extends StObject {
 }
 object ICoreWindowEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean): ICoreWindowEventArgs = {
+  inline def apply(handled: Boolean): ICoreWindowEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoreWindowEventArgs]
   }
   
-  @scala.inline
-  implicit class ICoreWindowEventArgsMutableBuilder[Self <: ICoreWindowEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreWindowEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

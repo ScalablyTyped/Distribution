@@ -15,16 +15,13 @@ trait TargetRange extends StObject {
 }
 object TargetRange {
   
-  @scala.inline
-  def apply(Target: Range): TargetRange = {
+  inline def apply(Target: Range): TargetRange = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetRange]
   }
   
-  @scala.inline
-  implicit class TargetRangeMutableBuilder[Self <: TargetRange] (val x: Self) extends AnyVal {
+  extension [Self <: TargetRange](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

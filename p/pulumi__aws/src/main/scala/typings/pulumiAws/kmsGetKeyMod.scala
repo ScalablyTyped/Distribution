@@ -11,10 +11,8 @@ object kmsGetKeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetKeyResult]]
-  @scala.inline
-  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetKeyResult]]
+  inline def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetKeyResult]]
+  inline def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetKeyResult]]
   
   trait GetKeyArgs extends StObject {
     
@@ -34,26 +32,20 @@ object kmsGetKeyMod {
   }
   object GetKeyArgs {
     
-    @scala.inline
-    def apply(keyId: String): GetKeyArgs = {
+    inline def apply(keyId: String): GetKeyArgs = {
       val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetKeyArgs]
     }
     
-    @scala.inline
-    implicit class GetKeyArgsMutableBuilder[Self <: GetKeyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetKeyArgs](x: Self) {
       
-      @scala.inline
-      def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
+      inline def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
+      inline def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
       
-      @scala.inline
-      def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
+      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,8 +88,7 @@ object kmsGetKeyMod {
   }
   object GetKeyResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       awsAccountId: String,
       creationDate: String,
@@ -118,62 +109,43 @@ object kmsGetKeyMod {
       __obj.asInstanceOf[GetKeyResult]
     }
     
-    @scala.inline
-    implicit class GetKeyResultMutableBuilder[Self <: GetKeyResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetKeyResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsAccountId(value: String): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
+      inline def setAwsAccountId(value: String): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerMasterKeySpec(value: String): Self = StObject.set(x, "customerMasterKeySpec", value.asInstanceOf[js.Any])
+      inline def setCustomerMasterKeySpec(value: String): Self = StObject.set(x, "customerMasterKeySpec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionDate(value: String): Self = StObject.set(x, "deletionDate", value.asInstanceOf[js.Any])
+      inline def setDeletionDate(value: String): Self = StObject.set(x, "deletionDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationModel(value: String): Self = StObject.set(x, "expirationModel", value.asInstanceOf[js.Any])
+      inline def setExpirationModel(value: String): Self = StObject.set(x, "expirationModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
+      inline def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
+      inline def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
       
-      @scala.inline
-      def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
+      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyManager(value: String): Self = StObject.set(x, "keyManager", value.asInstanceOf[js.Any])
+      inline def setKeyManager(value: String): Self = StObject.set(x, "keyManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyState(value: String): Self = StObject.set(x, "keyState", value.asInstanceOf[js.Any])
+      inline def setKeyState(value: String): Self = StObject.set(x, "keyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUsage(value: String): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
+      inline def setKeyUsage(value: String): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidTo(value: String): Self = StObject.set(x, "validTo", value.asInstanceOf[js.Any])
+      inline def setValidTo(value: String): Self = StObject.set(x, "validTo", value.asInstanceOf[js.Any])
     }
   }
 }

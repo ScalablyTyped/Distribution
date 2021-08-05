@@ -47,18 +47,14 @@ object propertiesMod {
   @js.native
   val formProperties: Record[String, Double] = js.native
   
-  @scala.inline
-  def getNativeProps[T /* <: Record[String, js.Any] */](props: Record[String, js.Any], allowedPropNames: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def getNativeProps[T /* <: Record[String, js.Any] */](
+  inline def getNativeProps[T /* <: Record[String, js.Any] */](props: Record[String, js.Any], allowedPropNames: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def getNativeProps[T /* <: Record[String, js.Any] */](
     props: Record[String, js.Any],
     allowedPropNames: js.Array[String],
     excludedPropNames: js.Array[String]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def getNativeProps[T /* <: Record[String, js.Any] */](props: Record[String, js.Any], allowedPropNames: Record[String, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def getNativeProps[T /* <: Record[String, js.Any] */](
+  inline def getNativeProps[T /* <: Record[String, js.Any] */](props: Record[String, js.Any], allowedPropNames: Record[String, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def getNativeProps[T /* <: Record[String, js.Any] */](
     props: Record[String, js.Any],
     allowedPropNames: Record[String, Double],
     excludedPropNames: js.Array[String]

@@ -18,19 +18,15 @@ trait QueueInfo extends StObject {
 }
 object QueueInfo {
   
-  @scala.inline
-  def apply(QueuedIngestion: java.lang.String, WaitingOnIngestion: java.lang.String): QueueInfo = {
+  inline def apply(QueuedIngestion: java.lang.String, WaitingOnIngestion: java.lang.String): QueueInfo = {
     val __obj = js.Dynamic.literal(QueuedIngestion = QueuedIngestion.asInstanceOf[js.Any], WaitingOnIngestion = WaitingOnIngestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueInfo]
   }
   
-  @scala.inline
-  implicit class QueueInfoMutableBuilder[Self <: QueueInfo] (val x: Self) extends AnyVal {
+  extension [Self <: QueueInfo](x: Self) {
     
-    @scala.inline
-    def setQueuedIngestion(value: java.lang.String): Self = StObject.set(x, "QueuedIngestion", value.asInstanceOf[js.Any])
+    inline def setQueuedIngestion(value: java.lang.String): Self = StObject.set(x, "QueuedIngestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingOnIngestion(value: java.lang.String): Self = StObject.set(x, "WaitingOnIngestion", value.asInstanceOf[js.Any])
+    inline def setWaitingOnIngestion(value: java.lang.String): Self = StObject.set(x, "WaitingOnIngestion", value.asInstanceOf[js.Any])
   }
 }

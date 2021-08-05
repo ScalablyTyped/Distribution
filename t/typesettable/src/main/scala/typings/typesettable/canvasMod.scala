@@ -39,11 +39,11 @@ object canvasMod {
     @JSName("createRuler")
     var createRuler_Original: IRulerFactory = js.native
     
-    var ctx: js.Any = js.native
+    /* private */ var ctx: js.Any = js.native
     
-    var lineHeight: js.Any = js.native
+    /* private */ var lineHeight: js.Any = js.native
     
-    var style: js.Any = js.native
+    /* private */ var style: js.Any = js.native
   }
   
   trait ICanvasFontStyle extends StObject {
@@ -74,32 +74,24 @@ object canvasMod {
   }
   object ICanvasFontStyle {
     
-    @scala.inline
-    def apply(): ICanvasFontStyle = {
+    inline def apply(): ICanvasFontStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICanvasFontStyle]
     }
     
-    @scala.inline
-    implicit class ICanvasFontStyleMutableBuilder[Self <: ICanvasFontStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ICanvasFontStyle](x: Self) {
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     }
   }
 }

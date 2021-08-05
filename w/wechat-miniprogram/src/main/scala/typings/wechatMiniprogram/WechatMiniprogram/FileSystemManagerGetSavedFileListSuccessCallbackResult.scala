@@ -13,22 +13,17 @@ trait FileSystemManagerGetSavedFileListSuccessCallbackResult extends StObject {
 }
 object FileSystemManagerGetSavedFileListSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, fileList: js.Array[FileItem]): FileSystemManagerGetSavedFileListSuccessCallbackResult = {
+  inline def apply(errMsg: String, fileList: js.Array[FileItem]): FileSystemManagerGetSavedFileListSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemManagerGetSavedFileListSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class FileSystemManagerGetSavedFileListSuccessCallbackResultMutableBuilder[Self <: FileSystemManagerGetSavedFileListSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemManagerGetSavedFileListSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileList(value: js.Array[FileItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[FileItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: FileItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: FileItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

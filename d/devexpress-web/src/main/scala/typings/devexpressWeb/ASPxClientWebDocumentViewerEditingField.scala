@@ -20,8 +20,7 @@ trait ASPxClientWebDocumentViewerEditingField extends StObject {
 }
 object ASPxClientWebDocumentViewerEditingField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     editValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any,
     editorName: () => String,
     groupID: () => String,
@@ -33,28 +32,21 @@ object ASPxClientWebDocumentViewerEditingField {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingField]
   }
   
-  @scala.inline
-  implicit class ASPxClientWebDocumentViewerEditingFieldMutableBuilder[Self <: ASPxClientWebDocumentViewerEditingField] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWebDocumentViewerEditingField](x: Self) {
     
-    @scala.inline
-    def setEditValue(
+    inline def setEditValue(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
     ): Self = StObject.set(x, "editValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorName(value: () => String): Self = StObject.set(x, "editorName", js.Any.fromFunction0(value))
+    inline def setEditorName(value: () => String): Self = StObject.set(x, "editorName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroupID(value: () => String): Self = StObject.set(x, "groupID", js.Any.fromFunction0(value))
+    inline def setGroupID(value: () => String): Self = StObject.set(x, "groupID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
+    inline def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPageIndex(value: () => Double): Self = StObject.set(x, "pageIndex", js.Any.fromFunction0(value))
+    inline def setPageIndex(value: () => Double): Self = StObject.set(x, "pageIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadOnly(
+    inline def setReadOnly(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }

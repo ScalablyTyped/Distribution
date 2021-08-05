@@ -22,8 +22,7 @@ trait BitmapCanvas
      with XBitmap
 object BitmapCanvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Device: XGraphicDevice,
     Size: IntegerSize2D,
     acquire: () => Unit,

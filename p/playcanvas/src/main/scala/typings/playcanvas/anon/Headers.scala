@@ -27,67 +27,47 @@ trait Headers extends StObject {
 }
 object Headers {
   
-  @scala.inline
-  def apply(): Headers = {
+  inline def apply(): Headers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Headers]
   }
   
-  @scala.inline
-  implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+  extension [Self <: Headers](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
-    @scala.inline
-    def setMaxRetryDelay(value: Double): Self = StObject.set(x, "maxRetryDelay", value.asInstanceOf[js.Any])
+    inline def setMaxRetryDelay(value: Double): Self = StObject.set(x, "maxRetryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetryDelayUndefined: Self = StObject.set(x, "maxRetryDelay", js.undefined)
+    inline def setMaxRetryDelayUndefined: Self = StObject.set(x, "maxRetryDelay", js.undefined)
     
-    @scala.inline
-    def setPostdata(value: Document | js.Any): Self = StObject.set(x, "postdata", value.asInstanceOf[js.Any])
+    inline def setPostdata(value: Document | js.Any): Self = StObject.set(x, "postdata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostdataUndefined: Self = StObject.set(x, "postdata", js.undefined)
+    inline def setPostdataUndefined: Self = StObject.set(x, "postdata", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

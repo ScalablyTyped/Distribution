@@ -13,22 +13,17 @@ trait DescribeServiceActionExecutionParametersOutput extends StObject {
 }
 object DescribeServiceActionExecutionParametersOutput {
   
-  @scala.inline
-  def apply(): DescribeServiceActionExecutionParametersOutput = {
+  inline def apply(): DescribeServiceActionExecutionParametersOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeServiceActionExecutionParametersOutput]
   }
   
-  @scala.inline
-  implicit class DescribeServiceActionExecutionParametersOutputMutableBuilder[Self <: DescribeServiceActionExecutionParametersOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServiceActionExecutionParametersOutput](x: Self) {
     
-    @scala.inline
-    def setServiceActionParameters(value: ExecutionParameters): Self = StObject.set(x, "ServiceActionParameters", value.asInstanceOf[js.Any])
+    inline def setServiceActionParameters(value: ExecutionParameters): Self = StObject.set(x, "ServiceActionParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceActionParametersUndefined: Self = StObject.set(x, "ServiceActionParameters", js.undefined)
+    inline def setServiceActionParametersUndefined: Self = StObject.set(x, "ServiceActionParameters", js.undefined)
     
-    @scala.inline
-    def setServiceActionParametersVarargs(value: ExecutionParameter*): Self = StObject.set(x, "ServiceActionParameters", js.Array(value :_*))
+    inline def setServiceActionParametersVarargs(value: ExecutionParameter*): Self = StObject.set(x, "ServiceActionParameters", js.Array(value :_*))
   }
 }

@@ -13,25 +13,19 @@ trait `3` extends StObject {
 }
 object `3` {
   
-  @scala.inline
-  def apply(): `3` = {
+  inline def apply(): `3` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`3`]
   }
   
-  @scala.inline
-  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+  extension [Self <: `3`](x: Self) {
     
-    @scala.inline
-    def setNewVal(value: Config): Self = StObject.set(x, "newVal", value.asInstanceOf[js.Any])
+    inline def setNewVal(value: Config): Self = StObject.set(x, "newVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValUndefined: Self = StObject.set(x, "newVal", js.undefined)
+    inline def setNewValUndefined: Self = StObject.set(x, "newVal", js.undefined)
     
-    @scala.inline
-    def setOldVal(value: Config): Self = StObject.set(x, "oldVal", value.asInstanceOf[js.Any])
+    inline def setOldVal(value: Config): Self = StObject.set(x, "oldVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValUndefined: Self = StObject.set(x, "oldVal", js.undefined)
+    inline def setOldValUndefined: Self = StObject.set(x, "oldVal", js.undefined)
   }
 }

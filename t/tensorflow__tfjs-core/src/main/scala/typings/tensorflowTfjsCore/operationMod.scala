@@ -15,6 +15,5 @@ object operationMod {
   @js.native
   val OP_SCOPE_SUFFIX: /* "__op" */ String = js.native
   
-  @scala.inline
-  def op[T /* <: js.Function */](f: StringDictionary[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("op")(f.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def op[T /* <: js.Function */](f: StringDictionary[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("op")(f.asInstanceOf[js.Any]).asInstanceOf[T]
 }

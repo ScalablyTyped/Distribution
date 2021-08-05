@@ -13,19 +13,15 @@ trait TemplateViews extends StObject {
 }
 object TemplateViews {
   
-  @scala.inline
-  def apply(): TemplateViews = {
+  inline def apply(): TemplateViews = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateViews]
   }
   
-  @scala.inline
-  implicit class TemplateViewsMutableBuilder[Self <: TemplateViews] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateViews](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

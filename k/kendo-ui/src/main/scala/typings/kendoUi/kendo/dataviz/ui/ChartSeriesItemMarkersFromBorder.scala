@@ -12,25 +12,19 @@ trait ChartSeriesItemMarkersFromBorder extends StObject {
 }
 object ChartSeriesItemMarkersFromBorder {
   
-  @scala.inline
-  def apply(): ChartSeriesItemMarkersFromBorder = {
+  inline def apply(): ChartSeriesItemMarkersFromBorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesItemMarkersFromBorder]
   }
   
-  @scala.inline
-  implicit class ChartSeriesItemMarkersFromBorderMutableBuilder[Self <: ChartSeriesItemMarkersFromBorder] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesItemMarkersFromBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

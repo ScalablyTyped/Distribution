@@ -60,11 +60,8 @@ object linesMod {
   @js.native
   val ZERO_LENGTH_ERROR: /* "~nil" */ String = js.native
   
-  @scala.inline
-  def parseLine(text: String): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLine")(text.asInstanceOf[js.Any]).asInstanceOf[Line]
+  inline def parseLine(text: String): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLine")(text.asInstanceOf[js.Any]).asInstanceOf[Line]
   
-  @scala.inline
-  def printLine(fileName: String, line: Line): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("printLine")(fileName.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def printLine(fileName: String, line: Line, code: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("printLine")(fileName.asInstanceOf[js.Any], line.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def printLine(fileName: String, line: Line): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("printLine")(fileName.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def printLine(fileName: String, line: Line, code: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("printLine")(fileName.asInstanceOf[js.Any], line.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

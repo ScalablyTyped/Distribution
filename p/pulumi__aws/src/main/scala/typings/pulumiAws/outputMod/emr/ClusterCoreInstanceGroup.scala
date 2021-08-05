@@ -43,49 +43,35 @@ trait ClusterCoreInstanceGroup extends StObject {
 }
 object ClusterCoreInstanceGroup {
   
-  @scala.inline
-  def apply(ebsConfigs: js.Array[ClusterCoreInstanceGroupEbsConfig], id: String, instanceType: String): ClusterCoreInstanceGroup = {
+  inline def apply(ebsConfigs: js.Array[ClusterCoreInstanceGroupEbsConfig], id: String, instanceType: String): ClusterCoreInstanceGroup = {
     val __obj = js.Dynamic.literal(ebsConfigs = ebsConfigs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterCoreInstanceGroup]
   }
   
-  @scala.inline
-  implicit class ClusterCoreInstanceGroupMutableBuilder[Self <: ClusterCoreInstanceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterCoreInstanceGroup](x: Self) {
     
-    @scala.inline
-    def setAutoscalingPolicy(value: String): Self = StObject.set(x, "autoscalingPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoscalingPolicy(value: String): Self = StObject.set(x, "autoscalingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalingPolicyUndefined: Self = StObject.set(x, "autoscalingPolicy", js.undefined)
+    inline def setAutoscalingPolicyUndefined: Self = StObject.set(x, "autoscalingPolicy", js.undefined)
     
-    @scala.inline
-    def setBidPrice(value: String): Self = StObject.set(x, "bidPrice", value.asInstanceOf[js.Any])
+    inline def setBidPrice(value: String): Self = StObject.set(x, "bidPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceUndefined: Self = StObject.set(x, "bidPrice", js.undefined)
+    inline def setBidPriceUndefined: Self = StObject.set(x, "bidPrice", js.undefined)
     
-    @scala.inline
-    def setEbsConfigs(value: js.Array[ClusterCoreInstanceGroupEbsConfig]): Self = StObject.set(x, "ebsConfigs", value.asInstanceOf[js.Any])
+    inline def setEbsConfigs(value: js.Array[ClusterCoreInstanceGroupEbsConfig]): Self = StObject.set(x, "ebsConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsConfigsVarargs(value: ClusterCoreInstanceGroupEbsConfig*): Self = StObject.set(x, "ebsConfigs", js.Array(value :_*))
+    inline def setEbsConfigsVarargs(value: ClusterCoreInstanceGroupEbsConfig*): Self = StObject.set(x, "ebsConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCount(value: Double): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Double): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

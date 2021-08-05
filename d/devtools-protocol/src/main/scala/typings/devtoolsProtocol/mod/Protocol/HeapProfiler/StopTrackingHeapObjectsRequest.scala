@@ -16,25 +16,19 @@ trait StopTrackingHeapObjectsRequest extends StObject {
 }
 object StopTrackingHeapObjectsRequest {
   
-  @scala.inline
-  def apply(): StopTrackingHeapObjectsRequest = {
+  inline def apply(): StopTrackingHeapObjectsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopTrackingHeapObjectsRequest]
   }
   
-  @scala.inline
-  implicit class StopTrackingHeapObjectsRequestMutableBuilder[Self <: StopTrackingHeapObjectsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopTrackingHeapObjectsRequest](x: Self) {
     
-    @scala.inline
-    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
+    inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
+    inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
-    @scala.inline
-    def setTreatGlobalObjectsAsRoots(value: Boolean): Self = StObject.set(x, "treatGlobalObjectsAsRoots", value.asInstanceOf[js.Any])
+    inline def setTreatGlobalObjectsAsRoots(value: Boolean): Self = StObject.set(x, "treatGlobalObjectsAsRoots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatGlobalObjectsAsRootsUndefined: Self = StObject.set(x, "treatGlobalObjectsAsRoots", js.undefined)
+    inline def setTreatGlobalObjectsAsRootsUndefined: Self = StObject.set(x, "treatGlobalObjectsAsRoots", js.undefined)
   }
 }

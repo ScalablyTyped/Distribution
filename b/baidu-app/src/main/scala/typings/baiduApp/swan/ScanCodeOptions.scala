@@ -26,31 +26,23 @@ trait ScanCodeOptions
 }
 object ScanCodeOptions {
   
-  @scala.inline
-  def apply(success: ScanCodeData => Unit): ScanCodeOptions = {
+  inline def apply(success: ScanCodeData => Unit): ScanCodeOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[ScanCodeOptions]
   }
   
-  @scala.inline
-  implicit class ScanCodeOptionsMutableBuilder[Self <: ScanCodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScanCodeOptions](x: Self) {
     
-    @scala.inline
-    def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
+    inline def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
+    inline def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
     
-    @scala.inline
-    def setScanType(value: js.Array[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: js.Array[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
+    inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
-    @scala.inline
-    def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: ScanCodeData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ScanCodeData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

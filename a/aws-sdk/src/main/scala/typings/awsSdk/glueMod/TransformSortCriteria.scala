@@ -18,19 +18,15 @@ trait TransformSortCriteria extends StObject {
 }
 object TransformSortCriteria {
   
-  @scala.inline
-  def apply(Column: TransformSortColumnType, SortDirection: SortDirectionType): TransformSortCriteria = {
+  inline def apply(Column: TransformSortColumnType, SortDirection: SortDirectionType): TransformSortCriteria = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], SortDirection = SortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformSortCriteria]
   }
   
-  @scala.inline
-  implicit class TransformSortCriteriaMutableBuilder[Self <: TransformSortCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: TransformSortCriteria](x: Self) {
     
-    @scala.inline
-    def setColumn(value: TransformSortColumnType): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: TransformSortColumnType): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "SortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "SortDirection", value.asInstanceOf[js.Any])
   }
 }

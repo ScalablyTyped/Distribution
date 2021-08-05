@@ -37,8 +37,7 @@ object runMod {
     @JSImport("googleapis/build/src/apis/run", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Run] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Run]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Run]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/run", "VERSIONS.v1alpha1")
@@ -55,8 +54,7 @@ object runMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.runV1alpha1Mod.runV1alpha1.Run
       ] = js.native
-    @scala.inline
-    def v1alpha1_=(
+    inline def v1alpha1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -98,8 +96,7 @@ object runMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -143,14 +140,10 @@ object runMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def run(options: Options): Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[Run]
-  @scala.inline
-  def run(options: typings.googleapis.runV1alpha1Mod.runV1alpha1.Options): typings.googleapis.runV1alpha1Mod.runV1alpha1.Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.runV1alpha1Mod.runV1alpha1.Run]
+  inline def run(options: Options): Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[Run]
+  inline def run(options: typings.googleapis.runV1alpha1Mod.runV1alpha1.Options): typings.googleapis.runV1alpha1Mod.runV1alpha1.Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.runV1alpha1Mod.runV1alpha1.Run]
   
-  @scala.inline
-  def run_v1(version: v1): Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(version.asInstanceOf[js.Any]).asInstanceOf[Run]
+  inline def run_v1(version: v1): Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(version.asInstanceOf[js.Any]).asInstanceOf[Run]
   
-  @scala.inline
-  def run_v1alpha1(version: v1alpha1): typings.googleapis.runV1alpha1Mod.runV1alpha1.Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.runV1alpha1Mod.runV1alpha1.Run]
+  inline def run_v1alpha1(version: v1alpha1): typings.googleapis.runV1alpha1Mod.runV1alpha1.Run = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.runV1alpha1Mod.runV1alpha1.Run]
 }

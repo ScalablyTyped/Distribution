@@ -28,8 +28,7 @@ trait PolarLayout extends StObject {
 }
 object PolarLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angularaxis: PartialLayoutAxisAnchor,
     bgcolor: Color,
     domain: PartialDomain,
@@ -43,37 +42,26 @@ object PolarLayout {
     __obj.asInstanceOf[PolarLayout]
   }
   
-  @scala.inline
-  implicit class PolarLayoutMutableBuilder[Self <: PolarLayout] (val x: Self) extends AnyVal {
+  extension [Self <: PolarLayout](x: Self) {
     
-    @scala.inline
-    def setAngularaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
+    inline def setAngularaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+    inline def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridshape(value: circular | linear): Self = StObject.set(x, "gridshape", value.asInstanceOf[js.Any])
+    inline def setGridshape(value: circular | linear): Self = StObject.set(x, "gridshape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHole(value: Double): Self = StObject.set(x, "hole", value.asInstanceOf[js.Any])
+    inline def setHole(value: Double): Self = StObject.set(x, "hole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
+    inline def setRadialaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSector(value: js.Array[Double]): Self = StObject.set(x, "sector", value.asInstanceOf[js.Any])
+    inline def setSector(value: js.Array[Double]): Self = StObject.set(x, "sector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value :_*))
+    inline def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value :_*))
     
-    @scala.inline
-    def setUirevision(value: String | Double): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
+    inline def setUirevision(value: String | Double): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
   }
 }

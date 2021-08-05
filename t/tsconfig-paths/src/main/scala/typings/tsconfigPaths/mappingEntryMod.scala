@@ -11,8 +11,7 @@ object mappingEntryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAbsoluteMappingEntries(absoluteBaseUrl: String, paths: Paths, addMatchAll: Boolean): js.Array[MappingEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteMappingEntries")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], addMatchAll.asInstanceOf[js.Any])).asInstanceOf[js.Array[MappingEntry]]
+  inline def getAbsoluteMappingEntries(absoluteBaseUrl: String, paths: Paths, addMatchAll: Boolean): js.Array[MappingEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteMappingEntries")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], addMatchAll.asInstanceOf[js.Any])).asInstanceOf[js.Array[MappingEntry]]
   
   trait MappingEntry extends StObject {
     
@@ -22,23 +21,18 @@ object mappingEntryMod {
   }
   object MappingEntry {
     
-    @scala.inline
-    def apply(paths: js.Array[String], pattern: String): MappingEntry = {
+    inline def apply(paths: js.Array[String], pattern: String): MappingEntry = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[MappingEntry]
     }
     
-    @scala.inline
-    implicit class MappingEntryMutableBuilder[Self <: MappingEntry] (val x: Self) extends AnyVal {
+    extension [Self <: MappingEntry](x: Self) {
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
   

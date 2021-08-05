@@ -13,14 +13,10 @@ object getVolumeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVolume(): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")().asInstanceOf[js.Promise[GetVolumeResult]]
-  @scala.inline
-  def getVolume(args: Unit, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
-  @scala.inline
-  def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVolumeResult]]
-  @scala.inline
-  def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
+  inline def getVolume(): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")().asInstanceOf[js.Promise[GetVolumeResult]]
+  inline def getVolume(args: Unit, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
+  inline def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVolumeResult]]
+  inline def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVolumeResult]]
   
   trait GetVolumeArgs extends StObject {
     
@@ -44,35 +40,26 @@ object getVolumeMod {
   }
   object GetVolumeArgs {
     
-    @scala.inline
-    def apply(): GetVolumeArgs = {
+    inline def apply(): GetVolumeArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetVolumeArgs]
     }
     
-    @scala.inline
-    implicit class GetVolumeArgsMutableBuilder[Self <: GetVolumeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetVolumeArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetVolumeFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetVolumeFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetVolumeFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetVolumeFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -149,8 +136,7 @@ object getVolumeMod {
   }
   object GetVolumeResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       availabilityZone: String,
       encrypted: Boolean,
@@ -169,62 +155,43 @@ object getVolumeMod {
       __obj.asInstanceOf[GetVolumeResult]
     }
     
-    @scala.inline
-    implicit class GetVolumeResultMutableBuilder[Self <: GetVolumeResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetVolumeResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ebs.GetVolumeFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ebs.GetVolumeFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ebs.GetVolumeFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ebs.GetVolumeFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+      inline def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setMultiAttachEnabled(value: Boolean): Self = StObject.set(x, "multiAttachEnabled", value.asInstanceOf[js.Any])
+      inline def setMultiAttachEnabled(value: Boolean): Self = StObject.set(x, "multiAttachEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+      inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+      inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
+      inline def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
     }
   }
 }

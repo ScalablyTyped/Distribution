@@ -14,22 +14,17 @@ trait Session extends StObject {
 }
 object Session {
   
-  @scala.inline
-  def apply(readPreference: ReadPreferenceOrMode): Session = {
+  inline def apply(readPreference: ReadPreferenceOrMode): Session = {
     val __obj = js.Dynamic.literal(readPreference = readPreference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
   
-  @scala.inline
-  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+  extension [Self <: Session](x: Self) {
     
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

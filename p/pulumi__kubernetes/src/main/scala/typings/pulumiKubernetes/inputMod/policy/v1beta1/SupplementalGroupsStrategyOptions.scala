@@ -22,28 +22,21 @@ trait SupplementalGroupsStrategyOptions extends StObject {
 }
 object SupplementalGroupsStrategyOptions {
   
-  @scala.inline
-  def apply(): SupplementalGroupsStrategyOptions = {
+  inline def apply(): SupplementalGroupsStrategyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupplementalGroupsStrategyOptions]
   }
   
-  @scala.inline
-  implicit class SupplementalGroupsStrategyOptionsMutableBuilder[Self <: SupplementalGroupsStrategyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SupplementalGroupsStrategyOptions](x: Self) {
     
-    @scala.inline
-    def setRanges(value: Input[js.Array[Input[IDRange]]]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: Input[js.Array[Input[IDRange]]]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRangesVarargs(value: Input[IDRange]*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: Input[IDRange]*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
-    @scala.inline
-    def setRule(value: Input[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: Input[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

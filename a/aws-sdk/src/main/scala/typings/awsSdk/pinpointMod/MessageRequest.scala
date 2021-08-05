@@ -38,46 +38,33 @@ trait MessageRequest extends StObject {
 }
 object MessageRequest {
   
-  @scala.inline
-  def apply(MessageConfiguration: DirectMessageConfiguration): MessageRequest = {
+  inline def apply(MessageConfiguration: DirectMessageConfiguration): MessageRequest = {
     val __obj = js.Dynamic.literal(MessageConfiguration = MessageConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRequest]
   }
   
-  @scala.inline
-  implicit class MessageRequestMutableBuilder[Self <: MessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MessageRequest](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: MapOfAddressConfiguration): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: MapOfAddressConfiguration): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
     
-    @scala.inline
-    def setContext(value: MapOfString): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    inline def setContext(value: MapOfString): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
     
-    @scala.inline
-    def setEndpoints(value: MapOfEndpointSendConfiguration): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: MapOfEndpointSendConfiguration): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    @scala.inline
-    def setMessageConfiguration(value: DirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+    inline def setMessageConfiguration(value: DirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateConfiguration(value: TemplateConfiguration): Self = StObject.set(x, "TemplateConfiguration", value.asInstanceOf[js.Any])
+    inline def setTemplateConfiguration(value: TemplateConfiguration): Self = StObject.set(x, "TemplateConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateConfigurationUndefined: Self = StObject.set(x, "TemplateConfiguration", js.undefined)
+    inline def setTemplateConfigurationUndefined: Self = StObject.set(x, "TemplateConfiguration", js.undefined)
     
-    @scala.inline
-    def setTraceId(value: string): Self = StObject.set(x, "TraceId", value.asInstanceOf[js.Any])
+    inline def setTraceId(value: string): Self = StObject.set(x, "TraceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceIdUndefined: Self = StObject.set(x, "TraceId", js.undefined)
+    inline def setTraceIdUndefined: Self = StObject.set(x, "TraceId", js.undefined)
   }
 }

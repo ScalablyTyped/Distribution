@@ -74,21 +74,16 @@ object configurationTemplateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationTemplateState): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID]): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID], state: ConfigurationTemplateState): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
+    inline def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
     
     /**
       * Returns true if the given object is an instance of ConfigurationTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean]
   }
   
   trait ConfigurationTemplateArgs extends StObject {
@@ -132,54 +127,40 @@ object configurationTemplateMod {
   }
   object ConfigurationTemplateArgs {
     
-    @scala.inline
-    def apply(application: Input[String]): ConfigurationTemplateArgs = {
+    inline def apply(application: Input[String]): ConfigurationTemplateArgs = {
       val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationTemplateArgs]
     }
     
-    @scala.inline
-    implicit class ConfigurationTemplateArgsMutableBuilder[Self <: ConfigurationTemplateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationTemplateArgs](x: Self) {
       
-      @scala.inline
-      def setApplication(value: Input[String]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: Input[String]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnvironmentId(value: Input[String]): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+      inline def setEnvironmentId(value: Input[String]): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
+      inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSettings(
+      inline def setSettings(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]]
             ]
       ): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
+      inline def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
       
-      @scala.inline
-      def setSolutionStackName(value: Input[String]): Self = StObject.set(x, "solutionStackName", value.asInstanceOf[js.Any])
+      inline def setSolutionStackName(value: Input[String]): Self = StObject.set(x, "solutionStackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionStackNameUndefined: Self = StObject.set(x, "solutionStackName", js.undefined)
+      inline def setSolutionStackNameUndefined: Self = StObject.set(x, "solutionStackName", js.undefined)
     }
   }
   
@@ -224,57 +205,42 @@ object configurationTemplateMod {
   }
   object ConfigurationTemplateState {
     
-    @scala.inline
-    def apply(): ConfigurationTemplateState = {
+    inline def apply(): ConfigurationTemplateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationTemplateState]
     }
     
-    @scala.inline
-    implicit class ConfigurationTemplateStateMutableBuilder[Self <: ConfigurationTemplateState] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationTemplateState](x: Self) {
       
-      @scala.inline
-      def setApplication(value: Input[String]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: Input[String]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnvironmentId(value: Input[String]): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+      inline def setEnvironmentId(value: Input[String]): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
+      inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSettings(
+      inline def setSettings(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]]
             ]
       ): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
+      inline def setSettingsVarargs(value: Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]*): Self = StObject.set(x, "settings", js.Array(value :_*))
       
-      @scala.inline
-      def setSolutionStackName(value: Input[String]): Self = StObject.set(x, "solutionStackName", value.asInstanceOf[js.Any])
+      inline def setSolutionStackName(value: Input[String]): Self = StObject.set(x, "solutionStackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionStackNameUndefined: Self = StObject.set(x, "solutionStackName", js.undefined)
+      inline def setSolutionStackNameUndefined: Self = StObject.set(x, "solutionStackName", js.undefined)
     }
   }
 }

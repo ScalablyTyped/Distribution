@@ -13,11 +13,9 @@ object credentialDerivationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createScope(shortDate: String, region: String, service: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createScope")(shortDate.asInstanceOf[js.Any], region.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createScope(shortDate: String, region: String, service: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createScope")(shortDate.asInstanceOf[js.Any], region.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getSigningKey(
+  inline def getSigningKey(
     sha256Constructor: HashConstructor,
     credentials: Credentials,
     shortDate: String,

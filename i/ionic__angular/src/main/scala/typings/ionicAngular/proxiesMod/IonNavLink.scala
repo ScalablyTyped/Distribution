@@ -16,7 +16,7 @@ class IonNavLink protected ()
      with typings.ionicCore.componentsMod.Components.IonNavLink {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * The transition direction when navigating to another page.
@@ -24,5 +24,5 @@ class IonNavLink protected ()
   /* CompleteClass */
   var routerDirection: RouterDirection = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

@@ -23,31 +23,23 @@ trait CancelImportTaskResult extends StObject {
 }
 object CancelImportTaskResult {
   
-  @scala.inline
-  def apply(): CancelImportTaskResult = {
+  inline def apply(): CancelImportTaskResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelImportTaskResult]
   }
   
-  @scala.inline
-  implicit class CancelImportTaskResultMutableBuilder[Self <: CancelImportTaskResult] (val x: Self) extends AnyVal {
+  extension [Self <: CancelImportTaskResult](x: Self) {
     
-    @scala.inline
-    def setImportTaskId(value: String): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
+    inline def setImportTaskId(value: String): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTaskIdUndefined: Self = StObject.set(x, "ImportTaskId", js.undefined)
+    inline def setImportTaskIdUndefined: Self = StObject.set(x, "ImportTaskId", js.undefined)
     
-    @scala.inline
-    def setPreviousState(value: String): Self = StObject.set(x, "PreviousState", value.asInstanceOf[js.Any])
+    inline def setPreviousState(value: String): Self = StObject.set(x, "PreviousState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousStateUndefined: Self = StObject.set(x, "PreviousState", js.undefined)
+    inline def setPreviousStateUndefined: Self = StObject.set(x, "PreviousState", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

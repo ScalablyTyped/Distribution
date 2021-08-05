@@ -14,22 +14,17 @@ trait TodoComment extends StObject {
 }
 object TodoComment {
   
-  @scala.inline
-  def apply(descriptor: TodoCommentDescriptor, message: java.lang.String, position: Double): TodoComment = {
+  inline def apply(descriptor: TodoCommentDescriptor, message: java.lang.String, position: Double): TodoComment = {
     val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TodoComment]
   }
   
-  @scala.inline
-  implicit class TodoCommentMutableBuilder[Self <: TodoComment] (val x: Self) extends AnyVal {
+  extension [Self <: TodoComment](x: Self) {
     
-    @scala.inline
-    def setDescriptor(value: TodoCommentDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: TodoCommentDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

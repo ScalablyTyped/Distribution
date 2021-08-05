@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Cloud_[Word] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Cloud_[Word]]
+  inline def apply(): Cloud_[Word] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Cloud_[Word]]
   
   @JSImport("d3-cloud", JSImport.Namespace)
   @js.native
@@ -26,8 +25,7 @@ object mod {
       
       object cloud {
         
-        @scala.inline
-        def apply(): Cloud_[Word] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Cloud_[Word]]
+        inline def apply(): Cloud_[Word] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Cloud_[Word]]
         
         @JSImport("d3", "layout.cloud")
         @js.native
@@ -55,68 +53,48 @@ object mod {
         }
         object Word {
           
-          @scala.inline
-          def apply(): Word = {
+          inline def apply(): Word = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[Word]
           }
           
-          @scala.inline
-          implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
+          extension [Self <: Word](x: Self) {
             
-            @scala.inline
-            def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+            inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+            inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
             
-            @scala.inline
-            def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+            inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+            inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
             
-            @scala.inline
-            def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+            inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+            inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
             
-            @scala.inline
-            def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+            inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+            inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
             
-            @scala.inline
-            def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+            inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+            inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
             
-            @scala.inline
-            def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+            inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+            inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
             
-            @scala.inline
-            def setWeight(value: String | Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+            inline def setWeight(value: String | Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+            inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
             
-            @scala.inline
-            def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+            inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+            inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
             
-            @scala.inline
-            def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+            inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+            inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
           }
         }
       }

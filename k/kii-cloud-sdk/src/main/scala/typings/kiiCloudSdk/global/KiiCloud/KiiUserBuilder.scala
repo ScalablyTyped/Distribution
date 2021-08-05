@@ -111,8 +111,7 @@ object KiiUserBuilder {
     *     proper format
     */
   /* static member */
-  @scala.inline
-  def builderWithEmailAddress(emailAddress: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithEmailAddress")(emailAddress.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
+  inline def builderWithEmailAddress(emailAddress: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithEmailAddress")(emailAddress.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
   
   /**
     * Create KiiUser builder with global phone number
@@ -126,8 +125,7 @@ object KiiUserBuilder {
     * @throws If the phone number is not in the proper format
     */
   /* static member */
-  @scala.inline
-  def builderWithGlobalPhoneNumber(phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithGlobalPhoneNumber")(phoneNumber.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
+  inline def builderWithGlobalPhoneNumber(phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithGlobalPhoneNumber")(phoneNumber.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
   
   /**
     * Create a KiiUser builder with identifier.
@@ -156,8 +154,7 @@ object KiiUserBuilder {
     *     proper format
     */
   /* static member */
-  @scala.inline
-  def builderWithIdentifier(identifier: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithIdentifier")(identifier.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
+  inline def builderWithIdentifier(identifier: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithIdentifier")(identifier.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
   
   /**
     * Create KiiUser builder with local phone number
@@ -177,8 +174,7 @@ object KiiUserBuilder {
     *     proper format
     */
   /* static member */
-  @scala.inline
-  def builderWithLocalPhoneNumber(phoneNumber: String, country: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithLocalPhoneNumber")(phoneNumber.asInstanceOf[js.Any], country.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
+  inline def builderWithLocalPhoneNumber(phoneNumber: String, country: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithLocalPhoneNumber")(phoneNumber.asInstanceOf[js.Any], country.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
   
   /**
     * Create KiiUser builder with user name
@@ -196,6 +192,5 @@ object KiiUserBuilder {
     *     proper format
     */
   /* static member */
-  @scala.inline
-  def builderWithUsername(username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithUsername")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
+  inline def builderWithUsername(username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("builderWithUsername")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiUserBuilder]
 }

@@ -16,22 +16,17 @@ trait LanguageId
 }
 object LanguageId {
   
-  @scala.inline
-  def apply(languageId: String): LanguageId = {
+  inline def apply(languageId: String): LanguageId = {
     val __obj = js.Dynamic.literal(languageId = languageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageId]
   }
   
-  @scala.inline
-  implicit class LanguageIdMutableBuilder[Self <: LanguageId] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageId](x: Self) {
     
-    @scala.inline
-    def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    inline def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

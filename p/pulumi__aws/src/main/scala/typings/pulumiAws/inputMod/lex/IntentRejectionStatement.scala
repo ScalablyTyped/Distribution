@@ -23,25 +23,19 @@ trait IntentRejectionStatement extends StObject {
 }
 object IntentRejectionStatement {
   
-  @scala.inline
-  def apply(messages: Input[js.Array[Input[IntentRejectionStatementMessage]]]): IntentRejectionStatement = {
+  inline def apply(messages: Input[js.Array[Input[IntentRejectionStatementMessage]]]): IntentRejectionStatement = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentRejectionStatement]
   }
   
-  @scala.inline
-  implicit class IntentRejectionStatementMutableBuilder[Self <: IntentRejectionStatement] (val x: Self) extends AnyVal {
+  extension [Self <: IntentRejectionStatement](x: Self) {
     
-    @scala.inline
-    def setMessages(value: Input[js.Array[Input[IntentRejectionStatementMessage]]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Input[js.Array[Input[IntentRejectionStatementMessage]]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: Input[IntentRejectionStatementMessage]*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Input[IntentRejectionStatementMessage]*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+    inline def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+    inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

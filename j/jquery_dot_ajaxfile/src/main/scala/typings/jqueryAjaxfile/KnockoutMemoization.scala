@@ -16,8 +16,7 @@ trait KnockoutMemoization extends StObject {
 }
 object KnockoutMemoization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     memoize: js.Function0[String] => String,
     parseMemoText: String => String,
     unmemoize: (String, js.Array[js.Any]) => Boolean,
@@ -27,19 +26,14 @@ object KnockoutMemoization {
     __obj.asInstanceOf[KnockoutMemoization]
   }
   
-  @scala.inline
-  implicit class KnockoutMemoizationMutableBuilder[Self <: KnockoutMemoization] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutMemoization](x: Self) {
     
-    @scala.inline
-    def setMemoize(value: js.Function0[String] => String): Self = StObject.set(x, "memoize", js.Any.fromFunction1(value))
+    inline def setMemoize(value: js.Function0[String] => String): Self = StObject.set(x, "memoize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseMemoText(value: String => String): Self = StObject.set(x, "parseMemoText", js.Any.fromFunction1(value))
+    inline def setParseMemoText(value: String => String): Self = StObject.set(x, "parseMemoText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnmemoize(value: (String, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "unmemoize", js.Any.fromFunction2(value))
+    inline def setUnmemoize(value: (String, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "unmemoize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnmemoizeDomNodeAndDescendants(value: (js.Any, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "unmemoizeDomNodeAndDescendants", js.Any.fromFunction2(value))
+    inline def setUnmemoizeDomNodeAndDescendants(value: (js.Any, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "unmemoizeDomNodeAndDescendants", js.Any.fromFunction2(value))
   }
 }

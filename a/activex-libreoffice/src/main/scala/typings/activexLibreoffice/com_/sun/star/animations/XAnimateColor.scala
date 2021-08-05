@@ -33,8 +33,7 @@ trait XAnimateColor
 }
 object XAnimateColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     Accumulate: Boolean,
     Additive: Double,
@@ -77,13 +76,10 @@ object XAnimateColor {
     __obj.asInstanceOf[XAnimateColor]
   }
   
-  @scala.inline
-  implicit class XAnimateColorMutableBuilder[Self <: XAnimateColor] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimateColor](x: Self) {
     
-    @scala.inline
-    def setColorInterpolation(value: Double): Self = StObject.set(x, "ColorInterpolation", value.asInstanceOf[js.Any])
+    inline def setColorInterpolation(value: Double): Self = StObject.set(x, "ColorInterpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: Boolean): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Boolean): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
   }
 }

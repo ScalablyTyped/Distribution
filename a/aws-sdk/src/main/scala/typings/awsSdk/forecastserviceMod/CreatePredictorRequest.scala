@@ -73,8 +73,7 @@ trait CreatePredictorRequest extends StObject {
 }
 object CreatePredictorRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FeaturizationConfig: FeaturizationConfig,
     ForecastHorizon: Integer,
     InputDataConfig: InputDataConfig,
@@ -84,79 +83,54 @@ object CreatePredictorRequest {
     __obj.asInstanceOf[CreatePredictorRequest]
   }
   
-  @scala.inline
-  implicit class CreatePredictorRequestMutableBuilder[Self <: CreatePredictorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePredictorRequest](x: Self) {
     
-    @scala.inline
-    def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
+    inline def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmArnUndefined: Self = StObject.set(x, "AlgorithmArn", js.undefined)
+    inline def setAlgorithmArnUndefined: Self = StObject.set(x, "AlgorithmArn", js.undefined)
     
-    @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
     
-    @scala.inline
-    def setEvaluationParameters(value: EvaluationParameters): Self = StObject.set(x, "EvaluationParameters", value.asInstanceOf[js.Any])
+    inline def setEvaluationParameters(value: EvaluationParameters): Self = StObject.set(x, "EvaluationParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationParametersUndefined: Self = StObject.set(x, "EvaluationParameters", js.undefined)
+    inline def setEvaluationParametersUndefined: Self = StObject.set(x, "EvaluationParameters", js.undefined)
     
-    @scala.inline
-    def setFeaturizationConfig(value: FeaturizationConfig): Self = StObject.set(x, "FeaturizationConfig", value.asInstanceOf[js.Any])
+    inline def setFeaturizationConfig(value: FeaturizationConfig): Self = StObject.set(x, "FeaturizationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastHorizon(value: Integer): Self = StObject.set(x, "ForecastHorizon", value.asInstanceOf[js.Any])
+    inline def setForecastHorizon(value: Integer): Self = StObject.set(x, "ForecastHorizon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastTypes(value: ForecastTypes): Self = StObject.set(x, "ForecastTypes", value.asInstanceOf[js.Any])
+    inline def setForecastTypes(value: ForecastTypes): Self = StObject.set(x, "ForecastTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastTypesUndefined: Self = StObject.set(x, "ForecastTypes", js.undefined)
+    inline def setForecastTypesUndefined: Self = StObject.set(x, "ForecastTypes", js.undefined)
     
-    @scala.inline
-    def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value :_*))
+    inline def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setHPOConfig(value: HyperParameterTuningJobConfig): Self = StObject.set(x, "HPOConfig", value.asInstanceOf[js.Any])
+    inline def setHPOConfig(value: HyperParameterTuningJobConfig): Self = StObject.set(x, "HPOConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHPOConfigUndefined: Self = StObject.set(x, "HPOConfig", js.undefined)
+    inline def setHPOConfigUndefined: Self = StObject.set(x, "HPOConfig", js.undefined)
     
-    @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformAutoML(value: Boolean): Self = StObject.set(x, "PerformAutoML", value.asInstanceOf[js.Any])
+    inline def setPerformAutoML(value: Boolean): Self = StObject.set(x, "PerformAutoML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformAutoMLUndefined: Self = StObject.set(x, "PerformAutoML", js.undefined)
+    inline def setPerformAutoMLUndefined: Self = StObject.set(x, "PerformAutoML", js.undefined)
     
-    @scala.inline
-    def setPerformHPO(value: Boolean): Self = StObject.set(x, "PerformHPO", value.asInstanceOf[js.Any])
+    inline def setPerformHPO(value: Boolean): Self = StObject.set(x, "PerformHPO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformHPOUndefined: Self = StObject.set(x, "PerformHPO", js.undefined)
+    inline def setPerformHPOUndefined: Self = StObject.set(x, "PerformHPO", js.undefined)
     
-    @scala.inline
-    def setPredictorName(value: Name): Self = StObject.set(x, "PredictorName", value.asInstanceOf[js.Any])
+    inline def setPredictorName(value: Name): Self = StObject.set(x, "PredictorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTrainingParameters(value: TrainingParameters): Self = StObject.set(x, "TrainingParameters", value.asInstanceOf[js.Any])
+    inline def setTrainingParameters(value: TrainingParameters): Self = StObject.set(x, "TrainingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingParametersUndefined: Self = StObject.set(x, "TrainingParameters", js.undefined)
+    inline def setTrainingParametersUndefined: Self = StObject.set(x, "TrainingParameters", js.undefined)
   }
 }

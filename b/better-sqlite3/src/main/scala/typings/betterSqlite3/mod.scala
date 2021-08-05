@@ -50,35 +50,26 @@ object mod extends Shortcut {
   }
   object AggregateOptions {
     
-    @scala.inline
-    def apply(step: (js.Any, js.Any) => js.Any): AggregateOptions = {
+    inline def apply(step: (js.Any, js.Any) => js.Any): AggregateOptions = {
       val __obj = js.Dynamic.literal(step = js.Any.fromFunction2(step))
       __obj.asInstanceOf[AggregateOptions]
     }
     
-    @scala.inline
-    implicit class AggregateOptionsMutableBuilder[Self <: AggregateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AggregateOptions](x: Self) {
       
-      @scala.inline
-      def setInverse(value: (/* total */ js.Any, /* dropped */ js.Any) => js.Any): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
+      inline def setInverse(value: (/* total */ js.Any, /* dropped */ js.Any) => js.Any): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setResult(value: /* total */ js.Any => js.Any): Self = StObject.set(x, "result", js.Any.fromFunction1(value))
+      inline def setResult(value: /* total */ js.Any => js.Any): Self = StObject.set(x, "result", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStep(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
+      inline def setStep(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
     }
   }
   
@@ -92,20 +83,16 @@ object mod extends Shortcut {
   }
   object BackupMetadata {
     
-    @scala.inline
-    def apply(remainingPages: Double, totalPages: Double): BackupMetadata = {
+    inline def apply(remainingPages: Double, totalPages: Double): BackupMetadata = {
       val __obj = js.Dynamic.literal(remainingPages = remainingPages.asInstanceOf[js.Any], totalPages = totalPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackupMetadata]
     }
     
-    @scala.inline
-    implicit class BackupMetadataMutableBuilder[Self <: BackupMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: BackupMetadata](x: Self) {
       
-      @scala.inline
-      def setRemainingPages(value: Double): Self = StObject.set(x, "remainingPages", value.asInstanceOf[js.Any])
+      inline def setRemainingPages(value: Double): Self = StObject.set(x, "remainingPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,17 +102,14 @@ object mod extends Shortcut {
   }
   object BackupOptions {
     
-    @scala.inline
-    def apply(progress: BackupMetadata => Double): BackupOptions = {
+    inline def apply(progress: BackupMetadata => Double): BackupOptions = {
       val __obj = js.Dynamic.literal(progress = js.Any.fromFunction1(progress))
       __obj.asInstanceOf[BackupOptions]
     }
     
-    @scala.inline
-    implicit class BackupOptionsMutableBuilder[Self <: BackupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BackupOptions](x: Self) {
       
-      @scala.inline
-      def setProgress(value: BackupMetadata => Double): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      inline def setProgress(value: BackupMetadata => Double): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     }
   }
   
@@ -145,42 +129,31 @@ object mod extends Shortcut {
     }
     object ColumnDefinition {
       
-      @scala.inline
-      def apply(name: String): typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition = {
+      inline def apply(name: String): typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], column = null, database = null, table = null)
         __obj.updateDynamic("type")(null)
         __obj.asInstanceOf[typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition]
       }
       
-      @scala.inline
-      implicit class ColumnDefinitionMutableBuilder[Self <: typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition] (val x: Self) extends AnyVal {
+      extension [Self <: typings.betterSqlite3.mod.BetterSqlite3.ColumnDefinition](x: Self) {
         
-        @scala.inline
-        def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnNull: Self = StObject.set(x, "column", null)
+        inline def setColumnNull: Self = StObject.set(x, "column", null)
         
-        @scala.inline
-        def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+        inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseNull: Self = StObject.set(x, "database", null)
+        inline def setDatabaseNull: Self = StObject.set(x, "database", null)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+        inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableNull: Self = StObject.set(x, "table", null)
+        inline def setTableNull: Self = StObject.set(x, "table", null)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeNull: Self = StObject.set(x, "type", null)
+        inline def setTypeNull: Self = StObject.set(x, "type", null)
       }
     }
     
@@ -334,44 +307,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFileMustExist(value: Boolean): Self = StObject.set(x, "fileMustExist", value.asInstanceOf[js.Any])
+      inline def setFileMustExist(value: Boolean): Self = StObject.set(x, "fileMustExist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileMustExistUndefined: Self = StObject.set(x, "fileMustExist", js.undefined)
+      inline def setFileMustExistUndefined: Self = StObject.set(x, "fileMustExist", js.undefined)
       
-      @scala.inline
-      def setMemory(value: Boolean): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Boolean): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+      inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+      inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction2(value))
+      inline def setVerbose(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -381,20 +342,16 @@ object mod extends Shortcut {
   }
   object PragmaOptions {
     
-    @scala.inline
-    def apply(): PragmaOptions = {
+    inline def apply(): PragmaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PragmaOptions]
     }
     
-    @scala.inline
-    implicit class PragmaOptionsMutableBuilder[Self <: PragmaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PragmaOptions](x: Self) {
       
-      @scala.inline
-      def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
+      inline def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
+      inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
     }
   }
   
@@ -408,32 +365,24 @@ object mod extends Shortcut {
   }
   object RegistrationOptions {
     
-    @scala.inline
-    def apply(): RegistrationOptions = {
+    inline def apply(): RegistrationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegistrationOptions]
     }
     
-    @scala.inline
-    implicit class RegistrationOptionsMutableBuilder[Self <: RegistrationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegistrationOptions](x: Self) {
       
-      @scala.inline
-      def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
+      inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeterministicUndefined: Self = StObject.set(x, "deterministic", js.undefined)
+      inline def setDeterministicUndefined: Self = StObject.set(x, "deterministic", js.undefined)
       
-      @scala.inline
-      def setSafeIntegers(value: Boolean): Self = StObject.set(x, "safeIntegers", value.asInstanceOf[js.Any])
+      inline def setSafeIntegers(value: Boolean): Self = StObject.set(x, "safeIntegers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeIntegersUndefined: Self = StObject.set(x, "safeIntegers", js.undefined)
+      inline def setSafeIntegersUndefined: Self = StObject.set(x, "safeIntegers", js.undefined)
       
-      @scala.inline
-      def setVarargs(value: Boolean): Self = StObject.set(x, "varargs", value.asInstanceOf[js.Any])
+      inline def setVarargs(value: Boolean): Self = StObject.set(x, "varargs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarargsUndefined: Self = StObject.set(x, "varargs", js.undefined)
+      inline def setVarargsUndefined: Self = StObject.set(x, "varargs", js.undefined)
     }
   }
   
@@ -445,20 +394,16 @@ object mod extends Shortcut {
   }
   object RunResult {
     
-    @scala.inline
-    def apply(changes: Double, lastInsertRowid: IntLike): RunResult = {
+    inline def apply(changes: Double, lastInsertRowid: IntLike): RunResult = {
       val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], lastInsertRowid = lastInsertRowid.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunResult]
     }
     
-    @scala.inline
-    implicit class RunResultMutableBuilder[Self <: RunResult] (val x: Self) extends AnyVal {
+    extension [Self <: RunResult](x: Self) {
       
-      @scala.inline
-      def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      inline def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastInsertRowid(value: IntLike): Self = StObject.set(x, "lastInsertRowid", value.asInstanceOf[js.Any])
+      inline def setLastInsertRowid(value: IntLike): Self = StObject.set(x, "lastInsertRowid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -470,17 +415,14 @@ object mod extends Shortcut {
   }
   object SqliteError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String): SqliteError = {
+    inline def apply(code: String, message: String, name: String): SqliteError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SqliteError]
     }
     
-    @scala.inline
-    implicit class SqliteErrorMutableBuilder[Self <: SqliteError] (val x: Self) extends AnyVal {
+    extension [Self <: SqliteError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   

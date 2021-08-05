@@ -28,8 +28,7 @@ trait CursorUpdateEventInfo
 }
 object CursorUpdateEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     coordinates: js.Array[Double],
     hasOwnProperty: PropertyKey => Boolean,
@@ -40,16 +39,12 @@ object CursorUpdateEventInfo {
     __obj.asInstanceOf[CursorUpdateEventInfo]
   }
   
-  @scala.inline
-  implicit class CursorUpdateEventInfoMutableBuilder[Self <: CursorUpdateEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CursorUpdateEventInfo](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `cursor-update`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `cursor-update`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

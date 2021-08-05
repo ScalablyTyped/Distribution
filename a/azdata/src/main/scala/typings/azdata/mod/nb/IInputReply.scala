@@ -10,16 +10,13 @@ trait IInputReply extends StObject {
 }
 object IInputReply {
   
-  @scala.inline
-  def apply(value: String): IInputReply = {
+  inline def apply(value: String): IInputReply = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInputReply]
   }
   
-  @scala.inline
-  implicit class IInputReplyMutableBuilder[Self <: IInputReply] (val x: Self) extends AnyVal {
+  extension [Self <: IInputReply](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

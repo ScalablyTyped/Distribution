@@ -39,8 +39,7 @@ trait KmlRegion
 }
 object KmlRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -66,22 +65,16 @@ object KmlRegion {
     __obj.asInstanceOf[KmlRegion]
   }
   
-  @scala.inline
-  implicit class KmlRegionMutableBuilder[Self <: KmlRegion] (val x: Self) extends AnyVal {
+  extension [Self <: KmlRegion](x: Self) {
     
-    @scala.inline
-    def setGetLatLonAltBox(value: () => KmlLatLonAltBox): Self = StObject.set(x, "getLatLonAltBox", js.Any.fromFunction0(value))
+    inline def setGetLatLonAltBox(value: () => KmlLatLonAltBox): Self = StObject.set(x, "getLatLonAltBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLod(value: () => KmlLod): Self = StObject.set(x, "getLod", js.Any.fromFunction0(value))
+    inline def setGetLod(value: () => KmlLod): Self = StObject.set(x, "getLod", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (KmlLatLonAltBox, KmlLod) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (KmlLatLonAltBox, KmlLod) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLatLonAltBox(value: KmlLatLonAltBox => Unit): Self = StObject.set(x, "setLatLonAltBox", js.Any.fromFunction1(value))
+    inline def setSetLatLonAltBox(value: KmlLatLonAltBox => Unit): Self = StObject.set(x, "setLatLonAltBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLod(value: KmlLod => Unit): Self = StObject.set(x, "setLod", js.Any.fromFunction1(value))
+    inline def setSetLod(value: KmlLod => Unit): Self = StObject.set(x, "setLod", js.Any.fromFunction1(value))
   }
 }

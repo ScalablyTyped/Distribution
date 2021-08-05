@@ -12,12 +12,12 @@ object baseS3PublisherMod {
   @JSImport("app-builder-lib/out/publish/s3/BaseS3Publisher", "BaseS3Publisher")
   @js.native
   abstract class BaseS3Publisher protected () extends Publisher {
-    protected def this(context: PublishContext, options: BaseS3Options) = this()
+    /* protected */ def this(context: PublishContext, options: BaseS3Options) = this()
     
     /* protected */ def configureS3Options(args: js.Array[String]): Unit = js.native
     
     /* protected */ def getBucketName(): String = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
   }
 }

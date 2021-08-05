@@ -17,37 +17,27 @@ trait PartialPickImplkeyofImplChecked extends StObject {
 }
 object PartialPickImplkeyofImplChecked {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplChecked = {
+  inline def apply(): PartialPickImplkeyofImplChecked = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplChecked]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplCheckedMutableBuilder[Self <: PartialPickImplkeyofImplChecked] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplChecked](x: Self) {
     
-    @scala.inline
-    def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    inline def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
+    inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

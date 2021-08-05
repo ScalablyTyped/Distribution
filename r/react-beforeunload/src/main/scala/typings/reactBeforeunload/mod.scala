@@ -17,10 +17,8 @@ object mod {
   @js.native
   val Beforeunload: FC[Children] = js.native
   
-  @scala.inline
-  def useBeforeunload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBeforeunload")().asInstanceOf[Unit]
-  @scala.inline
-  def useBeforeunload(handler: UseBeforeunloadHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBeforeunload")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useBeforeunload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBeforeunload")().asInstanceOf[Unit]
+  inline def useBeforeunload(handler: UseBeforeunloadHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBeforeunload")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type UseBeforeunloadHandler = js.Function1[/* arg */ Event, js.UndefOr[String | Unit]]
 }

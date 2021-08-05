@@ -28,28 +28,21 @@ trait MessageDefinitionAllowedResponse
 }
 object MessageDefinitionAllowedResponse {
   
-  @scala.inline
-  def apply(message: Reference): MessageDefinitionAllowedResponse = {
+  inline def apply(message: Reference): MessageDefinitionAllowedResponse = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDefinitionAllowedResponse]
   }
   
-  @scala.inline
-  implicit class MessageDefinitionAllowedResponseMutableBuilder[Self <: MessageDefinitionAllowedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessageDefinitionAllowedResponse](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Reference): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Reference): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSituation(value: markdown): Self = StObject.set(x, "situation", value.asInstanceOf[js.Any])
+    inline def setSituation(value: markdown): Self = StObject.set(x, "situation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSituationUndefined: Self = StObject.set(x, "situation", js.undefined)
+    inline def setSituationUndefined: Self = StObject.set(x, "situation", js.undefined)
     
-    @scala.inline
-    def set_situation(value: Element): Self = StObject.set(x, "_situation", value.asInstanceOf[js.Any])
+    inline def set_situation(value: Element): Self = StObject.set(x, "_situation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_situationUndefined: Self = StObject.set(x, "_situation", js.undefined)
+    inline def set_situationUndefined: Self = StObject.set(x, "_situation", js.undefined)
   }
 }

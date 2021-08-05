@@ -13,19 +13,15 @@ trait ImscDestinationSettings extends StObject {
 }
 object ImscDestinationSettings {
   
-  @scala.inline
-  def apply(): ImscDestinationSettings = {
+  inline def apply(): ImscDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImscDestinationSettings]
   }
   
-  @scala.inline
-  implicit class ImscDestinationSettingsMutableBuilder[Self <: ImscDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ImscDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setStylePassthrough(value: ImscStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
+    inline def setStylePassthrough(value: ImscStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylePassthroughUndefined: Self = StObject.set(x, "StylePassthrough", js.undefined)
+    inline def setStylePassthroughUndefined: Self = StObject.set(x, "StylePassthrough", js.undefined)
   }
 }

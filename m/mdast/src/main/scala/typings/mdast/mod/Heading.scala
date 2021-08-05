@@ -26,26 +26,20 @@ trait Heading
 }
 object Heading {
   
-  @scala.inline
-  def apply(children: js.Array[PhrasingContent], depth: `1` | `2` | `3` | `4` | `5` | `6`): Heading = {
+  inline def apply(children: js.Array[PhrasingContent], depth: `1` | `2` | `3` | `4` | `5` | `6`): Heading = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("heading")
     __obj.asInstanceOf[Heading]
   }
   
-  @scala.inline
-  implicit class HeadingMutableBuilder[Self <: Heading] (val x: Self) extends AnyVal {
+  extension [Self <: Heading](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setDepth(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: heading): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: heading): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

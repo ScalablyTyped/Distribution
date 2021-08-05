@@ -11,19 +11,15 @@ trait RequestOptions extends StObject {
 }
 object RequestOptions {
   
-  @scala.inline
-  def apply(): RequestOptions = {
+  inline def apply(): RequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestOptions]
   }
   
-  @scala.inline
-  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestOptions](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

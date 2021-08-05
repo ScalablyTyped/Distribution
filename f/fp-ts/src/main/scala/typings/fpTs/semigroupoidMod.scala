@@ -17,8 +17,7 @@ object semigroupoidMod {
   }
   object Semigroupoid {
     
-    @scala.inline
-    def apply[F](
+    inline def apply[F](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ js.Any) => js.Any
     ): Semigroupoid[F] = {
@@ -26,16 +25,13 @@ object semigroupoidMod {
       __obj.asInstanceOf[Semigroupoid[F]]
     }
     
-    @scala.inline
-    implicit class SemigroupoidMutableBuilder[Self <: Semigroupoid[?], F] (val x: Self & Semigroupoid[F]) extends AnyVal {
+    extension [Self <: Semigroupoid[?], F](x: Self & Semigroupoid[F]) {
       
-      @scala.inline
-      def setCompose(
+      inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ js.Any) => js.Any
       ): Self = StObject.set(x, "compose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,8 +46,7 @@ object semigroupoidMod {
   }
   object Semigroupoid2 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ js.Any) => js.Any
     ): Semigroupoid2[F] = {
@@ -59,16 +54,13 @@ object semigroupoidMod {
       __obj.asInstanceOf[Semigroupoid2[F]]
     }
     
-    @scala.inline
-    implicit class Semigroupoid2MutableBuilder[Self <: Semigroupoid2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Semigroupoid2[F]) extends AnyVal {
+    extension [Self <: Semigroupoid2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Semigroupoid2[F]) {
       
-      @scala.inline
-      def setCompose(
+      inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ js.Any) => js.Any
       ): Self = StObject.set(x, "compose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,8 +77,7 @@ object semigroupoidMod {
   }
   object Semigroupoid2C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, A](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, A](
       URI: F,
       _E: A,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ js.Any) => js.Any
@@ -95,19 +86,15 @@ object semigroupoidMod {
       __obj.asInstanceOf[Semigroupoid2C[F, A]]
     }
     
-    @scala.inline
-    implicit class Semigroupoid2CMutableBuilder[Self <: Semigroupoid2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, A] (val x: Self & (Semigroupoid2C[F, A])) extends AnyVal {
+    extension [Self <: Semigroupoid2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, A](x: Self & (Semigroupoid2C[F, A])) {
       
-      @scala.inline
-      def setCompose(
+      inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ js.Any) => js.Any
       ): Self = StObject.set(x, "compose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_E(value: A): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+      inline def set_E(value: A): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,8 +109,7 @@ object semigroupoidMod {
   }
   object Semigroupoid3 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ js.Any) => js.Any
     ): Semigroupoid3[F] = {
@@ -131,16 +117,13 @@ object semigroupoidMod {
       __obj.asInstanceOf[Semigroupoid3[F]]
     }
     
-    @scala.inline
-    implicit class Semigroupoid3MutableBuilder[Self <: Semigroupoid3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Semigroupoid3[F]) extends AnyVal {
+    extension [Self <: Semigroupoid3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Semigroupoid3[F]) {
       
-      @scala.inline
-      def setCompose(
+      inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ js.Any) => js.Any
       ): Self = StObject.set(x, "compose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,8 +140,7 @@ object semigroupoidMod {
   }
   object Semigroupoid3C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, A](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, A](
       URI: F,
       _E: A,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ js.Any) => js.Any
@@ -167,19 +149,15 @@ object semigroupoidMod {
       __obj.asInstanceOf[Semigroupoid3C[F, A]]
     }
     
-    @scala.inline
-    implicit class Semigroupoid3CMutableBuilder[Self <: Semigroupoid3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, A] (val x: Self & (Semigroupoid3C[F, A])) extends AnyVal {
+    extension [Self <: Semigroupoid3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, A](x: Self & (Semigroupoid3C[F, A])) {
       
-      @scala.inline
-      def setCompose(
+      inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ js.Any) => js.Any
       ): Self = StObject.set(x, "compose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_E(value: A): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+      inline def set_E(value: A): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,8 +172,7 @@ object semigroupoidMod {
   }
   object Semigroupoid4 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ js.Any) => js.Any
     ): Semigroupoid4[F] = {
@@ -203,16 +180,13 @@ object semigroupoidMod {
       __obj.asInstanceOf[Semigroupoid4[F]]
     }
     
-    @scala.inline
-    implicit class Semigroupoid4MutableBuilder[Self <: Semigroupoid4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Semigroupoid4[F]) extends AnyVal {
+    extension [Self <: Semigroupoid4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Semigroupoid4[F]) {
       
-      @scala.inline
-      def setCompose(
+      inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ js.Any) => js.Any
       ): Self = StObject.set(x, "compose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
 }

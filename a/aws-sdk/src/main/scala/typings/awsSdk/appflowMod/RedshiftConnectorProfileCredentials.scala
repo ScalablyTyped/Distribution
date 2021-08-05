@@ -18,19 +18,15 @@ trait RedshiftConnectorProfileCredentials extends StObject {
 }
 object RedshiftConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(password: Password, username: Username): RedshiftConnectorProfileCredentials = {
+  inline def apply(password: Password, username: Username): RedshiftConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class RedshiftConnectorProfileCredentialsMutableBuilder[Self <: RedshiftConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

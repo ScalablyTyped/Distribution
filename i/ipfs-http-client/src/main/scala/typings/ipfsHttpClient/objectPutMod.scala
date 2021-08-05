@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object objectPutMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function2[
+  inline def apply(clientOptions: ClientOptions): js.Function2[
     /* obj */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
     js.Promise[typings.cids.mod.^]

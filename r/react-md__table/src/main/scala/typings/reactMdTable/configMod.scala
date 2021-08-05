@@ -17,8 +17,7 @@ object configMod {
   @js.native
   val TableConfigProvider: Provider[RequiredTableConfig] = js.native
   
-  @scala.inline
-  def useTableConfig(options: TableConfig): TableConfigContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTableConfig")(options.asInstanceOf[js.Any]).asInstanceOf[TableConfigContext]
+  inline def useTableConfig(options: TableConfig): TableConfigContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTableConfig")(options.asInstanceOf[js.Any]).asInstanceOf[TableConfigContext]
   
   trait TableCellConfig
     extends StObject
@@ -37,20 +36,16 @@ object configMod {
   }
   object TableCellConfig {
     
-    @scala.inline
-    def apply(): TableCellConfig = {
+    inline def apply(): TableCellConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableCellConfig]
     }
     
-    @scala.inline
-    implicit class TableCellConfigMutableBuilder[Self <: TableCellConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TableCellConfig](x: Self) {
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
   
@@ -85,32 +80,24 @@ object configMod {
   }
   object TableCellConfiguration {
     
-    @scala.inline
-    def apply(): TableCellConfiguration = {
+    inline def apply(): TableCellConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableCellConfiguration]
     }
     
-    @scala.inline
-    implicit class TableCellConfigurationMutableBuilder[Self <: TableCellConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TableCellConfiguration](x: Self) {
       
-      @scala.inline
-      def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
-      @scala.inline
-      def setLineWrap(value: Boolean | padded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
+      inline def setLineWrap(value: Boolean | padded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWrapUndefined: Self = StObject.set(x, "lineWrap", js.undefined)
+      inline def setLineWrapUndefined: Self = StObject.set(x, "lineWrap", js.undefined)
       
-      @scala.inline
-      def setVAlign(value: TableCellVerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: TableCellVerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
+      inline def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
     }
   }
   
@@ -122,14 +109,11 @@ object configMod {
   trait TableCellHorizontalAlignment extends StObject
   object TableCellHorizontalAlignment {
     
-    @scala.inline
-    def center: typings.reactMdTable.reactMdTableStrings.center = "center".asInstanceOf[typings.reactMdTable.reactMdTableStrings.center]
+    inline def center: typings.reactMdTable.reactMdTableStrings.center = "center".asInstanceOf[typings.reactMdTable.reactMdTableStrings.center]
     
-    @scala.inline
-    def left: typings.reactMdTable.reactMdTableStrings.left = "left".asInstanceOf[typings.reactMdTable.reactMdTableStrings.left]
+    inline def left: typings.reactMdTable.reactMdTableStrings.left = "left".asInstanceOf[typings.reactMdTable.reactMdTableStrings.left]
     
-    @scala.inline
-    def right: typings.reactMdTable.reactMdTableStrings.right = "right".asInstanceOf[typings.reactMdTable.reactMdTableStrings.right]
+    inline def right: typings.reactMdTable.reactMdTableStrings.right = "right".asInstanceOf[typings.reactMdTable.reactMdTableStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -140,14 +124,11 @@ object configMod {
   trait TableCellVerticalAlignment extends StObject
   object TableCellVerticalAlignment {
     
-    @scala.inline
-    def bottom: typings.reactMdTable.reactMdTableStrings.bottom = "bottom".asInstanceOf[typings.reactMdTable.reactMdTableStrings.bottom]
+    inline def bottom: typings.reactMdTable.reactMdTableStrings.bottom = "bottom".asInstanceOf[typings.reactMdTable.reactMdTableStrings.bottom]
     
-    @scala.inline
-    def middle: typings.reactMdTable.reactMdTableStrings.middle = "middle".asInstanceOf[typings.reactMdTable.reactMdTableStrings.middle]
+    inline def middle: typings.reactMdTable.reactMdTableStrings.middle = "middle".asInstanceOf[typings.reactMdTable.reactMdTableStrings.middle]
     
-    @scala.inline
-    def top: typings.reactMdTable.reactMdTableStrings.top = "top".asInstanceOf[typings.reactMdTable.reactMdTableStrings.top]
+    inline def top: typings.reactMdTable.reactMdTableStrings.top = "top".asInstanceOf[typings.reactMdTable.reactMdTableStrings.top]
   }
   
   trait TableConfig
@@ -156,8 +137,7 @@ object configMod {
        with TableCellConfig
   object TableConfig {
     
-    @scala.inline
-    def apply(): TableConfig = {
+    inline def apply(): TableConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableConfig]
     }
@@ -180,8 +160,7 @@ object configMod {
   }
   object TableConfigContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableBorders: Boolean,
       disableHover: Boolean,
       hAlign: TableCellHorizontalAlignment,
@@ -193,26 +172,19 @@ object configMod {
       __obj.asInstanceOf[TableConfigContext]
     }
     
-    @scala.inline
-    implicit class TableConfigContextMutableBuilder[Self <: TableConfigContext] (val x: Self) extends AnyVal {
+    extension [Self <: TableConfigContext](x: Self) {
       
-      @scala.inline
-      def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
+      inline def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
+      inline def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWrap(value: Boolean | padded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
+      inline def setLineWrap(value: Boolean | padded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlign(value: TableCellVerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: TableCellVerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,26 +210,20 @@ object configMod {
   }
   object TableConfiguration {
     
-    @scala.inline
-    def apply(): TableConfiguration = {
+    inline def apply(): TableConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableConfiguration]
     }
     
-    @scala.inline
-    implicit class TableConfigurationMutableBuilder[Self <: TableConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TableConfiguration](x: Self) {
       
-      @scala.inline
-      def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+      inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+      inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     }
   }
   
@@ -277,26 +243,20 @@ object configMod {
   }
   object TableRowConfiguration {
     
-    @scala.inline
-    def apply(): TableRowConfiguration = {
+    inline def apply(): TableRowConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableRowConfiguration]
     }
     
-    @scala.inline
-    implicit class TableRowConfigurationMutableBuilder[Self <: TableRowConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TableRowConfiguration](x: Self) {
       
-      @scala.inline
-      def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
+      inline def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableBordersUndefined: Self = StObject.set(x, "disableBorders", js.undefined)
+      inline def setDisableBordersUndefined: Self = StObject.set(x, "disableBorders", js.undefined)
       
-      @scala.inline
-      def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
+      inline def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
+      inline def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
     }
   }
 }

@@ -8,7 +8,7 @@ trait PrefixUnaryExpression
   extends StObject
      with AST {
   
-  var _nodeType: js.Any
+  /* private */ var _nodeType: js.Any
   
   var operand: AST
   
@@ -16,8 +16,7 @@ trait PrefixUnaryExpression
 }
 object PrefixUnaryExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _nodeType: js.Any,
@@ -45,16 +44,12 @@ object PrefixUnaryExpression {
     __obj.asInstanceOf[PrefixUnaryExpression]
   }
   
-  @scala.inline
-  implicit class PrefixUnaryExpressionMutableBuilder[Self <: PrefixUnaryExpression] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixUnaryExpression](x: Self) {
     
-    @scala.inline
-    def setOperand(value: AST): Self = StObject.set(x, "operand", value.asInstanceOf[js.Any])
+    inline def setOperand(value: AST): Self = StObject.set(x, "operand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (PrefixUnaryExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (PrefixUnaryExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
+    inline def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
   }
 }

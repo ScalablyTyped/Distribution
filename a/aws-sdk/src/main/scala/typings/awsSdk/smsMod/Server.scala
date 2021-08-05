@@ -33,43 +33,31 @@ trait Server extends StObject {
 }
 object Server {
   
-  @scala.inline
-  def apply(): Server = {
+  inline def apply(): Server = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Server]
   }
   
-  @scala.inline
-  implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+  extension [Self <: Server](x: Self) {
     
-    @scala.inline
-    def setReplicationJobId(value: ReplicationJobId): Self = StObject.set(x, "replicationJobId", value.asInstanceOf[js.Any])
+    inline def setReplicationJobId(value: ReplicationJobId): Self = StObject.set(x, "replicationJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationJobIdUndefined: Self = StObject.set(x, "replicationJobId", js.undefined)
+    inline def setReplicationJobIdUndefined: Self = StObject.set(x, "replicationJobId", js.undefined)
     
-    @scala.inline
-    def setReplicationJobTerminated(value: ReplicationJobTerminated): Self = StObject.set(x, "replicationJobTerminated", value.asInstanceOf[js.Any])
+    inline def setReplicationJobTerminated(value: ReplicationJobTerminated): Self = StObject.set(x, "replicationJobTerminated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationJobTerminatedUndefined: Self = StObject.set(x, "replicationJobTerminated", js.undefined)
+    inline def setReplicationJobTerminatedUndefined: Self = StObject.set(x, "replicationJobTerminated", js.undefined)
     
-    @scala.inline
-    def setServerId(value: ServerId): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: ServerId): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
+    inline def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
     
-    @scala.inline
-    def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+    inline def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
+    inline def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
     
-    @scala.inline
-    def setVmServer(value: VmServer): Self = StObject.set(x, "vmServer", value.asInstanceOf[js.Any])
+    inline def setVmServer(value: VmServer): Self = StObject.set(x, "vmServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmServerUndefined: Self = StObject.set(x, "vmServer", js.undefined)
+    inline def setVmServerUndefined: Self = StObject.set(x, "vmServer", js.undefined)
   }
 }

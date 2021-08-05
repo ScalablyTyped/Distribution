@@ -10,16 +10,13 @@ trait CaptionsChangedParam extends StObject {
 }
 object CaptionsChangedParam {
   
-  @scala.inline
-  def apply(currentTrack: Double): CaptionsChangedParam = {
+  inline def apply(currentTrack: Double): CaptionsChangedParam = {
     val __obj = js.Dynamic.literal(currentTrack = currentTrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionsChangedParam]
   }
   
-  @scala.inline
-  implicit class CaptionsChangedParamMutableBuilder[Self <: CaptionsChangedParam] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionsChangedParam](x: Self) {
     
-    @scala.inline
-    def setCurrentTrack(value: Double): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
+    inline def setCurrentTrack(value: Double): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
   }
 }

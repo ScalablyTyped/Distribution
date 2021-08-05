@@ -48,38 +48,28 @@ object documentCardActivityTypesMod {
   }
   object IDocumentCardActivityPerson {
     
-    @scala.inline
-    def apply(name: String, profileImageSrc: String): IDocumentCardActivityPerson = {
+    inline def apply(name: String, profileImageSrc: String): IDocumentCardActivityPerson = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], profileImageSrc = profileImageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocumentCardActivityPerson]
     }
     
-    @scala.inline
-    implicit class IDocumentCardActivityPersonMutableBuilder[Self <: IDocumentCardActivityPerson] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardActivityPerson](x: Self) {
       
-      @scala.inline
-      def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
+      inline def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowPhoneInitialsUndefined: Self = StObject.set(x, "allowPhoneInitials", js.undefined)
+      inline def setAllowPhoneInitialsUndefined: Self = StObject.set(x, "allowPhoneInitials", js.undefined)
       
-      @scala.inline
-      def setInitials(value: String): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
+      inline def setInitials(value: String): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialsColor(value: PersonaInitialsColor): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
+      inline def setInitialsColor(value: PersonaInitialsColor): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
+      inline def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
       
-      @scala.inline
-      def setInitialsUndefined: Self = StObject.set(x, "initials", js.undefined)
+      inline def setInitialsUndefined: Self = StObject.set(x, "initials", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileImageSrc(value: String): Self = StObject.set(x, "profileImageSrc", value.asInstanceOf[js.Any])
+      inline def setProfileImageSrc(value: String): Self = StObject.set(x, "profileImageSrc", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,53 +111,38 @@ object documentCardActivityTypesMod {
   }
   object IDocumentCardActivityProps {
     
-    @scala.inline
-    def apply(activity: String, people: js.Array[IDocumentCardActivityPerson]): IDocumentCardActivityProps = {
+    inline def apply(activity: String, people: js.Array[IDocumentCardActivityPerson]): IDocumentCardActivityProps = {
       val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any], people = people.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocumentCardActivityProps]
     }
     
-    @scala.inline
-    implicit class IDocumentCardActivityPropsMutableBuilder[Self <: IDocumentCardActivityProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardActivityProps](x: Self) {
       
-      @scala.inline
-      def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+      inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IDocumentCardActivity]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IDocumentCardActivity]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IDocumentCardActivity | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IDocumentCardActivity | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setPeople(value: js.Array[IDocumentCardActivityPerson]): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
+      inline def setPeople(value: js.Array[IDocumentCardActivityPerson]): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeopleVarargs(value: IDocumentCardActivityPerson*): Self = StObject.set(x, "people", js.Array(value :_*))
+      inline def setPeopleVarargs(value: IDocumentCardActivityPerson*): Self = StObject.set(x, "people", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IDocumentCardActivityStyleProps, IDocumentCardActivityStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IDocumentCardActivityStyleProps, IDocumentCardActivityStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IDocumentCardActivityStyleProps => DeepPartial[IDocumentCardActivityStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IDocumentCardActivityStyleProps => DeepPartial[IDocumentCardActivityStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -190,29 +165,22 @@ object documentCardActivityTypesMod {
   }
   object IDocumentCardActivityStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IDocumentCardActivityStyleProps = {
+    inline def apply(theme: ITheme): IDocumentCardActivityStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocumentCardActivityStyleProps]
     }
     
-    @scala.inline
-    implicit class IDocumentCardActivityStylePropsMutableBuilder[Self <: IDocumentCardActivityStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardActivityStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setMultiplePeople(value: Boolean): Self = StObject.set(x, "multiplePeople", value.asInstanceOf[js.Any])
+      inline def setMultiplePeople(value: Boolean): Self = StObject.set(x, "multiplePeople", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplePeopleUndefined: Self = StObject.set(x, "multiplePeople", js.undefined)
+      inline def setMultiplePeopleUndefined: Self = StObject.set(x, "multiplePeople", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,68 +200,48 @@ object documentCardActivityTypesMod {
   }
   object IDocumentCardActivityStyles {
     
-    @scala.inline
-    def apply(): IDocumentCardActivityStyles = {
+    inline def apply(): IDocumentCardActivityStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDocumentCardActivityStyles]
     }
     
-    @scala.inline
-    implicit class IDocumentCardActivityStylesMutableBuilder[Self <: IDocumentCardActivityStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardActivityStyles](x: Self) {
       
-      @scala.inline
-      def setActivity(value: IStyle): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+      inline def setActivity(value: IStyle): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityNull: Self = StObject.set(x, "activity", null)
+      inline def setActivityNull: Self = StObject.set(x, "activity", null)
       
-      @scala.inline
-      def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
+      inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
       
-      @scala.inline
-      def setAvatar(value: IStyle): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: IStyle): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarNull: Self = StObject.set(x, "avatar", null)
+      inline def setAvatarNull: Self = StObject.set(x, "avatar", null)
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setAvatars(value: IStyle): Self = StObject.set(x, "avatars", value.asInstanceOf[js.Any])
+      inline def setAvatars(value: IStyle): Self = StObject.set(x, "avatars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarsNull: Self = StObject.set(x, "avatars", null)
+      inline def setAvatarsNull: Self = StObject.set(x, "avatars", null)
       
-      @scala.inline
-      def setAvatarsUndefined: Self = StObject.set(x, "avatars", js.undefined)
+      inline def setAvatarsUndefined: Self = StObject.set(x, "avatars", js.undefined)
       
-      @scala.inline
-      def setDetails(value: IStyle): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: IStyle): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsNull: Self = StObject.set(x, "details", null)
+      inline def setDetailsNull: Self = StObject.set(x, "details", null)
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setName(value: IStyle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: IStyle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

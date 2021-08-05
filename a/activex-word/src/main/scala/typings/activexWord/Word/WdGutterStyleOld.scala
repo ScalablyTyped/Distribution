@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdGutterStyleOld extends StObject
 object WdGutterStyleOld {
   
-  @scala.inline
-  def wdGutterStyleBidi: `2` = 2.asInstanceOf[`2`]
+  inline def wdGutterStyleBidi: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdGutterStyleLatin: `-10` = -10.asInstanceOf[`-10`]
+  inline def wdGutterStyleLatin: `-10` = -10.asInstanceOf[`-10`]
 }

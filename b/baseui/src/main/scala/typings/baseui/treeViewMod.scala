@@ -55,17 +55,14 @@ object treeViewMod {
   }
   object StatefulContainerProps {
     
-    @scala.inline
-    def apply(children: TreeViewProps => ReactNode, data: js.Array[TreeNode[js.Any]]): StatefulContainerProps = {
+    inline def apply(children: TreeViewProps => ReactNode, data: js.Array[TreeNode[js.Any]]): StatefulContainerProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    @scala.inline
-    implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulContainerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: TreeViewProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: TreeViewProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -99,62 +96,48 @@ object treeViewMod {
   }
   object TreeLabelOverrides {
     
-    @scala.inline
-    def apply(): TreeLabelOverrides = {
+    inline def apply(): TreeLabelOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeLabelOverrides]
     }
     
-    @scala.inline
-    implicit class TreeLabelOverridesMutableBuilder[Self <: TreeLabelOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: TreeLabelOverrides](x: Self) {
       
-      @scala.inline
-      def setCollapseIcon(
+      inline def setCollapseIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "CollapseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseIconUndefined: Self = StObject.set(x, "CollapseIcon", js.undefined)
+      inline def setCollapseIconUndefined: Self = StObject.set(x, "CollapseIcon", js.undefined)
       
-      @scala.inline
-      def setExpandIcon(
+      inline def setExpandIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "ExpandIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconUndefined: Self = StObject.set(x, "ExpandIcon", js.undefined)
+      inline def setExpandIconUndefined: Self = StObject.set(x, "ExpandIcon", js.undefined)
       
-      @scala.inline
-      def setIconContainer(
+      inline def setIconContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "IconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainerUndefined: Self = StObject.set(x, "IconContainer", js.undefined)
+      inline def setIconContainerUndefined: Self = StObject.set(x, "IconContainer", js.undefined)
       
-      @scala.inline
-      def setLeafIcon(
+      inline def setLeafIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "LeafIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeafIconContainer(
+      inline def setLeafIconContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "LeafIconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeafIconContainerUndefined: Self = StObject.set(x, "LeafIconContainer", js.undefined)
+      inline def setLeafIconContainerUndefined: Self = StObject.set(x, "LeafIconContainer", js.undefined)
       
-      @scala.inline
-      def setLeafIconUndefined: Self = StObject.set(x, "LeafIcon", js.undefined)
+      inline def setLeafIconUndefined: Self = StObject.set(x, "LeafIcon", js.undefined)
       
-      @scala.inline
-      def setTreeItemContent(
+      inline def setTreeItemContent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "TreeItemContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeItemContentUndefined: Self = StObject.set(x, "TreeItemContent", js.undefined)
+      inline def setTreeItemContentUndefined: Self = StObject.set(x, "TreeItemContent", js.undefined)
     }
   }
   
@@ -172,8 +155,7 @@ object treeViewMod {
   }
   object TreeLabelProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasChildren: Boolean,
       label: (js.Function1[/* node */ TreeNode[js.Any], ReactNode]) | String,
       node: TreeNode[js.Any]
@@ -182,32 +164,23 @@ object treeViewMod {
       __obj.asInstanceOf[TreeLabelProps]
     }
     
-    @scala.inline
-    implicit class TreeLabelPropsMutableBuilder[Self <: TreeLabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeLabelProps](x: Self) {
       
-      @scala.inline
-      def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
+      inline def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setLabel(value: (js.Function1[/* node */ TreeNode[js.Any], ReactNode]) | String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: (js.Function1[/* node */ TreeNode[js.Any], ReactNode]) | String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFunction1(value: /* node */ TreeNode[js.Any] => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+      inline def setLabelFunction1(value: /* node */ TreeNode[js.Any] => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNode(value: TreeNode[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: TreeNode[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrides(value: TreeLabelOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TreeLabelOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -227,47 +200,34 @@ object treeViewMod {
   }
   object TreeNode {
     
-    @scala.inline
-    def apply[T](label: (js.Function1[/* node */ TreeNode[js.Any], ReactNode]) | String): TreeNode[T] = {
+    inline def apply[T](label: (js.Function1[/* node */ TreeNode[js.Any], ReactNode]) | String): TreeNode[T] = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeNode[T]]
     }
     
-    @scala.inline
-    implicit class TreeNodeMutableBuilder[Self <: TreeNode[?], T] (val x: Self & TreeNode[T]) extends AnyVal {
+    extension [Self <: TreeNode[?], T](x: Self & TreeNode[T]) {
       
-      @scala.inline
-      def setChildren(value: js.Array[TreeNode[js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[TreeNode[js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: TreeNode[js.Any]*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: TreeNode[js.Any]*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInfo(value: T): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: T): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setLabel(value: (js.Function1[/* node */ TreeNode[js.Any], ReactNode]) | String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: (js.Function1[/* node */ TreeNode[js.Any], ReactNode]) | String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFunction1(value: /* node */ TreeNode[js.Any] => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+      inline def setLabelFunction1(value: /* node */ TreeNode[js.Any] => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     }
   }
   
@@ -283,35 +243,26 @@ object treeViewMod {
   }
   object TreeNodeProps {
     
-    @scala.inline
-    def apply(node: TreeNode[js.Any]): TreeNodeProps = {
+    inline def apply(node: TreeNode[js.Any]): TreeNodeProps = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeNodeProps]
     }
     
-    @scala.inline
-    implicit class TreeNodePropsMutableBuilder[Self <: TreeNodeProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeNodeProps](x: Self) {
       
-      @scala.inline
-      def setIndentGuides(value: Boolean): Self = StObject.set(x, "indentGuides", value.asInstanceOf[js.Any])
+      inline def setIndentGuides(value: Boolean): Self = StObject.set(x, "indentGuides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentGuidesUndefined: Self = StObject.set(x, "indentGuides", js.undefined)
+      inline def setIndentGuidesUndefined: Self = StObject.set(x, "indentGuides", js.undefined)
       
-      @scala.inline
-      def setNode(value: TreeNode[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: TreeNode[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnToggle(value: /* node */ TreeNode[js.Any] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: /* node */ TreeNode[js.Any] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+      inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: TreeViewOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TreeViewOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -337,46 +288,36 @@ object treeViewMod {
   }
   object TreeViewOverrides {
     
-    @scala.inline
-    def apply(): TreeViewOverrides = {
+    inline def apply(): TreeViewOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeViewOverrides]
     }
     
-    @scala.inline
-    implicit class TreeViewOverridesMutableBuilder[Self <: TreeViewOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: TreeViewOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setTreeItem(
+      inline def setTreeItem(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isLeafNode :boolean | undefined}> */ js.Any
       ): Self = StObject.set(x, "TreeItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeItemList(
+      inline def setTreeItemList(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isChildNode :boolean | undefined}> */ js.Any
       ): Self = StObject.set(x, "TreeItemList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeItemListUndefined: Self = StObject.set(x, "TreeItemList", js.undefined)
+      inline def setTreeItemListUndefined: Self = StObject.set(x, "TreeItemList", js.undefined)
       
-      @scala.inline
-      def setTreeItemUndefined: Self = StObject.set(x, "TreeItem", js.undefined)
+      inline def setTreeItemUndefined: Self = StObject.set(x, "TreeItem", js.undefined)
       
-      @scala.inline
-      def setTreeLabel(
+      inline def setTreeLabel(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<TreeLabelProps> */ js.Any
       ): Self = StObject.set(x, "TreeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeLabelUndefined: Self = StObject.set(x, "TreeLabel", js.undefined)
+      inline def setTreeLabelUndefined: Self = StObject.set(x, "TreeLabel", js.undefined)
     }
   }
   
@@ -398,56 +339,40 @@ object treeViewMod {
   }
   object TreeViewProps {
     
-    @scala.inline
-    def apply(data: js.Array[TreeNode[js.Any]]): TreeViewProps = {
+    inline def apply(data: js.Array[TreeNode[js.Any]]): TreeViewProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeViewProps]
     }
     
-    @scala.inline
-    implicit class TreeViewPropsMutableBuilder[Self <: TreeViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeViewProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[TreeNode[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[TreeNode[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: TreeNode[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: TreeNode[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setGetId(value: /* node */ TreeNode[js.Any] => Double | String): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
+      inline def setGetId(value: /* node */ TreeNode[js.Any] => Double | String): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
+      inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
       
-      @scala.inline
-      def setIndentGuides(value: Boolean): Self = StObject.set(x, "indentGuides", value.asInstanceOf[js.Any])
+      inline def setIndentGuides(value: Boolean): Self = StObject.set(x, "indentGuides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentGuidesUndefined: Self = StObject.set(x, "indentGuides", js.undefined)
+      inline def setIndentGuidesUndefined: Self = StObject.set(x, "indentGuides", js.undefined)
       
-      @scala.inline
-      def setOnToggle(value: /* node */ TreeNode[js.Any] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: /* node */ TreeNode[js.Any] => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+      inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: TreeViewOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TreeViewOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
+      inline def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
+      inline def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
       
-      @scala.inline
-      def setSingleExpanded(value: Boolean): Self = StObject.set(x, "singleExpanded", value.asInstanceOf[js.Any])
+      inline def setSingleExpanded(value: Boolean): Self = StObject.set(x, "singleExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleExpandedUndefined: Self = StObject.set(x, "singleExpanded", js.undefined)
+      inline def setSingleExpandedUndefined: Self = StObject.set(x, "singleExpanded", js.undefined)
     }
   }
   

@@ -38,46 +38,33 @@ trait UpdateFindingsFilterRequest extends StObject {
 }
 object UpdateFindingsFilterRequest {
   
-  @scala.inline
-  def apply(id: string): UpdateFindingsFilterRequest = {
+  inline def apply(id: string): UpdateFindingsFilterRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFindingsFilterRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFindingsFilterRequestMutableBuilder[Self <: UpdateFindingsFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFindingsFilterRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: FindingsFilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: FindingsFilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
+    inline def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteriaUndefined: Self = StObject.set(x, "findingCriteria", js.undefined)
+    inline def setFindingCriteriaUndefined: Self = StObject.set(x, "findingCriteria", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPosition(value: integer): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: integer): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

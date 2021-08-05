@@ -17,31 +17,23 @@ trait AutoForwarding extends StObject {
 }
 object AutoForwarding {
   
-  @scala.inline
-  def apply(): AutoForwarding = {
+  inline def apply(): AutoForwarding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoForwarding]
   }
   
-  @scala.inline
-  implicit class AutoForwardingMutableBuilder[Self <: AutoForwarding] (val x: Self) extends AnyVal {
+  extension [Self <: AutoForwarding](x: Self) {
     
-    @scala.inline
-    def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+    inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+    inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

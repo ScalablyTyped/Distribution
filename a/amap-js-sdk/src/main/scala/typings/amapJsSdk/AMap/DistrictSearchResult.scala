@@ -12,22 +12,17 @@ trait DistrictSearchResult extends StObject {
 }
 object DistrictSearchResult {
   
-  @scala.inline
-  def apply(districtList: js.Array[District], info: String): DistrictSearchResult = {
+  inline def apply(districtList: js.Array[District], info: String): DistrictSearchResult = {
     val __obj = js.Dynamic.literal(districtList = districtList.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistrictSearchResult]
   }
   
-  @scala.inline
-  implicit class DistrictSearchResultMutableBuilder[Self <: DistrictSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: DistrictSearchResult](x: Self) {
     
-    @scala.inline
-    def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
+    inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
+    inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }
 }

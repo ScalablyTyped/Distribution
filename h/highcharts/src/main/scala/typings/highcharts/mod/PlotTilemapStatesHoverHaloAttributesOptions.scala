@@ -10,19 +10,15 @@ trait PlotTilemapStatesHoverHaloAttributesOptions extends StObject {
 }
 object PlotTilemapStatesHoverHaloAttributesOptions {
   
-  @scala.inline
-  def apply(): PlotTilemapStatesHoverHaloAttributesOptions = {
+  inline def apply(): PlotTilemapStatesHoverHaloAttributesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotTilemapStatesHoverHaloAttributesOptions]
   }
   
-  @scala.inline
-  implicit class PlotTilemapStatesHoverHaloAttributesOptionsMutableBuilder[Self <: PlotTilemapStatesHoverHaloAttributesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotTilemapStatesHoverHaloAttributesOptions](x: Self) {
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

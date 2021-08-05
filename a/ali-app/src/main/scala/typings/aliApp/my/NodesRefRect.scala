@@ -16,8 +16,7 @@ trait NodesRefRect
 }
 object NodesRefRect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: Double,
     dataset: js.Any,
     height: Double,
@@ -31,13 +30,10 @@ object NodesRefRect {
     __obj.asInstanceOf[NodesRefRect]
   }
   
-  @scala.inline
-  implicit class NodesRefRectMutableBuilder[Self <: NodesRefRect] (val x: Self) extends AnyVal {
+  extension [Self <: NodesRefRect](x: Self) {
     
-    @scala.inline
-    def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

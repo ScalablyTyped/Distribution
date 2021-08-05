@@ -56,8 +56,7 @@ trait XAccessibleHypertext
 }
 object XAccessibleHypertext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaretPosition: Double,
     CharacterCount: Double,
     HyperLinkCount: Double,
@@ -93,19 +92,14 @@ object XAccessibleHypertext {
     __obj.asInstanceOf[XAccessibleHypertext]
   }
   
-  @scala.inline
-  implicit class XAccessibleHypertextMutableBuilder[Self <: XAccessibleHypertext] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleHypertext](x: Self) {
     
-    @scala.inline
-    def setGetHyperLink(value: Double => XAccessibleHyperlink): Self = StObject.set(x, "getHyperLink", js.Any.fromFunction1(value))
+    inline def setGetHyperLink(value: Double => XAccessibleHyperlink): Self = StObject.set(x, "getHyperLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHyperLinkCount(value: () => Double): Self = StObject.set(x, "getHyperLinkCount", js.Any.fromFunction0(value))
+    inline def setGetHyperLinkCount(value: () => Double): Self = StObject.set(x, "getHyperLinkCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHyperLinkIndex(value: Double => Double): Self = StObject.set(x, "getHyperLinkIndex", js.Any.fromFunction1(value))
+    inline def setGetHyperLinkIndex(value: Double => Double): Self = StObject.set(x, "getHyperLinkIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHyperLinkCount(value: Double): Self = StObject.set(x, "HyperLinkCount", value.asInstanceOf[js.Any])
+    inline def setHyperLinkCount(value: Double): Self = StObject.set(x, "HyperLinkCount", value.asInstanceOf[js.Any])
   }
 }

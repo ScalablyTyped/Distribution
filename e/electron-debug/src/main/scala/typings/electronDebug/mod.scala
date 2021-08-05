@@ -26,10 +26,8 @@ object mod {
   	});
   	```
   	*/
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(options: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("electron-debug", JSImport.Namespace)
   @js.native
@@ -39,28 +37,22 @@ object mod {
   	Toggle DevTools for the specified `BrowserWindow` instance or the focused one.
   	@param window - Default: `BrowserWindow.getFocusedWindow()`
   	*/
-  @scala.inline
-  def devTools(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("devTools")().asInstanceOf[Unit]
-  @scala.inline
-  def devTools(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("devTools")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def devTools(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("devTools")().asInstanceOf[Unit]
+  inline def devTools(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("devTools")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   	Open DevTools for the specified `BrowserWindow` instance or the focused one.
   	@param window - Default: `BrowserWindow.getFocusedWindow()`
   	*/
-  @scala.inline
-  def openDevTools(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDevTools")().asInstanceOf[Unit]
-  @scala.inline
-  def openDevTools(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDevTools")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openDevTools(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDevTools")().asInstanceOf[Unit]
+  inline def openDevTools(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDevTools")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
   	Reload the specified `BrowserWindow` instance or the focused one.
   	@param window - Default: `BrowserWindow.getFocusedWindow()`
   	*/
-  @scala.inline
-  def refresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[Unit]
-  @scala.inline
-  def refresh(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def refresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[Unit]
+  inline def refresh(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -83,32 +75,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDevToolsMode(value: undocked | right | bottom | previous | detach): Self = StObject.set(x, "devToolsMode", value.asInstanceOf[js.Any])
+      inline def setDevToolsMode(value: undocked | right | bottom | previous | detach): Self = StObject.set(x, "devToolsMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevToolsModeUndefined: Self = StObject.set(x, "devToolsMode", js.undefined)
+      inline def setDevToolsModeUndefined: Self = StObject.set(x, "devToolsMode", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setShowDevTools(value: Boolean): Self = StObject.set(x, "showDevTools", value.asInstanceOf[js.Any])
+      inline def setShowDevTools(value: Boolean): Self = StObject.set(x, "showDevTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDevToolsUndefined: Self = StObject.set(x, "showDevTools", js.undefined)
+      inline def setShowDevToolsUndefined: Self = StObject.set(x, "showDevTools", js.undefined)
     }
   }
 }

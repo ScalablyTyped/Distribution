@@ -12,16 +12,13 @@ trait PickImpldisplayType extends StObject {
 }
 object PickImpldisplayType {
   
-  @scala.inline
-  def apply(displayType: `false` | String): PickImpldisplayType = {
+  inline def apply(displayType: `false` | String): PickImpldisplayType = {
     val __obj = js.Dynamic.literal(displayType = displayType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldisplayType]
   }
   
-  @scala.inline
-  implicit class PickImpldisplayTypeMutableBuilder[Self <: PickImpldisplayType] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldisplayType](x: Self) {
     
-    @scala.inline
-    def setDisplayType(value: `false` | String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+    inline def setDisplayType(value: `false` | String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
   }
 }

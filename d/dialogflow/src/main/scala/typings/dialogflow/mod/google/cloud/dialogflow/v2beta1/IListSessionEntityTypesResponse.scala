@@ -15,34 +15,25 @@ trait IListSessionEntityTypesResponse extends StObject {
 }
 object IListSessionEntityTypesResponse {
   
-  @scala.inline
-  def apply(): IListSessionEntityTypesResponse = {
+  inline def apply(): IListSessionEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListSessionEntityTypesResponse]
   }
   
-  @scala.inline
-  implicit class IListSessionEntityTypesResponseMutableBuilder[Self <: IListSessionEntityTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IListSessionEntityTypesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypes(value: js.Array[ISessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
+    inline def setSessionEntityTypes(value: js.Array[ISessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionEntityTypesNull: Self = StObject.set(x, "sessionEntityTypes", null)
+    inline def setSessionEntityTypesNull: Self = StObject.set(x, "sessionEntityTypes", null)
     
-    @scala.inline
-    def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
+    inline def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypesVarargs(value: ISessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
+    inline def setSessionEntityTypesVarargs(value: ISessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
   }
 }

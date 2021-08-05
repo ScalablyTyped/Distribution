@@ -14,22 +14,17 @@ trait ReturnTypeGetSearchResultsResponse extends StObject {
 }
 object ReturnTypeGetSearchResultsResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetSearchResultsRequest], returnType: GetSearchResultsResponse): ReturnTypeGetSearchResultsResponse = {
+  inline def apply(paramsType: js.Array[GetSearchResultsRequest], returnType: GetSearchResultsResponse): ReturnTypeGetSearchResultsResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetSearchResultsResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetSearchResultsResponseMutableBuilder[Self <: ReturnTypeGetSearchResultsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetSearchResultsResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetSearchResultsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetSearchResultsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetSearchResultsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetSearchResultsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetSearchResultsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetSearchResultsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

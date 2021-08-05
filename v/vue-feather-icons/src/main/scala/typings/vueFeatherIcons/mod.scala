@@ -1144,17 +1144,14 @@ object mod {
   }
   object FeatherIconProps {
     
-    @scala.inline
-    def apply(size: String): FeatherIconProps = {
+    inline def apply(size: String): FeatherIconProps = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeatherIconProps]
     }
     
-    @scala.inline
-    implicit class FeatherIconPropsMutableBuilder[Self <: FeatherIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: FeatherIconProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,37 +28,27 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(): Deployment = {
+  inline def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setApiSummary(value: PathToMapOfMethodSnapshot): Self = StObject.set(x, "apiSummary", value.asInstanceOf[js.Any])
+    inline def setApiSummary(value: PathToMapOfMethodSnapshot): Self = StObject.set(x, "apiSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiSummaryUndefined: Self = StObject.set(x, "apiSummary", js.undefined)
+    inline def setApiSummaryUndefined: Self = StObject.set(x, "apiSummary", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

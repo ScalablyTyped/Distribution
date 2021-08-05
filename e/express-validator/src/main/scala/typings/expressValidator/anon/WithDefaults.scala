@@ -16,16 +16,13 @@ trait WithDefaults extends StObject {
 }
 object WithDefaults {
   
-  @scala.inline
-  def apply(withDefaults: FnCall): WithDefaults = {
+  inline def apply(withDefaults: FnCall): WithDefaults = {
     val __obj = js.Dynamic.literal(withDefaults = withDefaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithDefaults]
   }
   
-  @scala.inline
-  implicit class WithDefaultsMutableBuilder[Self <: WithDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: WithDefaults](x: Self) {
     
-    @scala.inline
-    def setWithDefaults(value: FnCall): Self = StObject.set(x, "withDefaults", value.asInstanceOf[js.Any])
+    inline def setWithDefaults(value: FnCall): Self = StObject.set(x, "withDefaults", value.asInstanceOf[js.Any])
   }
 }

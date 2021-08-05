@@ -18,23 +18,18 @@ object anon {
   }
   object Component {
     
-    @scala.inline
-    def apply[P, S](component: String | (ComponentClass[P, S]) | SFC[P]): Component[P, S] = {
+    inline def apply[P, S](component: String | (ComponentClass[P, S]) | SFC[P]): Component[P, S] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[Component[P, S]]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component[?, ?], P, S] (val x: Self & (Component[P, S])) extends AnyVal {
+    extension [Self <: Component[?, ?], P, S](x: Self & (Component[P, S])) {
       
-      @scala.inline
-      def setComponent(value: String | (ComponentClass[P, S]) | SFC[P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String | (ComponentClass[P, S]) | SFC[P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   
@@ -108,200 +103,136 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setA(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+      inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
-      @scala.inline
-      def setBr(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
+      inline def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
       
-      @scala.inline
-      def setButton(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setCode(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDel(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+      inline def setDel(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
+      inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
       
-      @scala.inline
-      def setDiv(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+      inline def setDiv(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivUndefined: Self = StObject.set(x, "div", js.undefined)
+      inline def setDivUndefined: Self = StObject.set(x, "div", js.undefined)
       
-      @scala.inline
-      def setEm(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
+      inline def setEm(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmUndefined: Self = StObject.set(x, "em", js.undefined)
+      inline def setEmUndefined: Self = StObject.set(x, "em", js.undefined)
       
-      @scala.inline
-      def setFooter(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setH1(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+      inline def setH1(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
+      inline def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
       
-      @scala.inline
-      def setH2(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+      inline def setH2(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
+      inline def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
       
-      @scala.inline
-      def setH3(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+      inline def setH3(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
+      inline def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
       
-      @scala.inline
-      def setH4(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+      inline def setH4(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
+      inline def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
       
-      @scala.inline
-      def setH5(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+      inline def setH5(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
+      inline def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
       
-      @scala.inline
-      def setH6(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+      inline def setH6(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
+      inline def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
       
-      @scala.inline
-      def setHr(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+      inline def setHr(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
+      inline def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
       
-      @scala.inline
-      def setImg(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+      inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
       
-      @scala.inline
-      def setInput(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setOl(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+      inline def setOl(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
+      inline def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
       
-      @scala.inline
-      def setP(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+      inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      @scala.inline
-      def setPre(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      @scala.inline
-      def setSpan(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
       
-      @scala.inline
-      def setStrong(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+      inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
       
-      @scala.inline
-      def setSub(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
       
-      @scala.inline
-      def setSup(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      inline def setSup(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
       
-      @scala.inline
-      def setTable(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def setTbody(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+      inline def setTbody(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
+      inline def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
       
-      @scala.inline
-      def setTd(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+      inline def setTd(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTdUndefined: Self = StObject.set(x, "td", js.undefined)
+      inline def setTdUndefined: Self = StObject.set(x, "td", js.undefined)
       
-      @scala.inline
-      def setTh(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+      inline def setTh(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThUndefined: Self = StObject.set(x, "th", js.undefined)
+      inline def setThUndefined: Self = StObject.set(x, "th", js.undefined)
       
-      @scala.inline
-      def setThead(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
+      inline def setThead(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheadUndefined: Self = StObject.set(x, "thead", js.undefined)
+      inline def setTheadUndefined: Self = StObject.set(x, "thead", js.undefined)
       
-      @scala.inline
-      def setTr(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      inline def setTr(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
+      inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
       
-      @scala.inline
-      def setUl(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+      inline def setUl(value: ComponentOverride[js.Any, js.Any]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
+      inline def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
     }
   }
 }

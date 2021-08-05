@@ -12,16 +12,13 @@ trait MiniProgram extends StObject {
 }
 object MiniProgram {
   
-  @scala.inline
-  def apply(appId: String): MiniProgram = {
+  inline def apply(appId: String): MiniProgram = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiniProgram]
   }
   
-  @scala.inline
-  implicit class MiniProgramMutableBuilder[Self <: MiniProgram] (val x: Self) extends AnyVal {
+  extension [Self <: MiniProgram](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ object categoryMod {
   }
   object Category {
     
-    @scala.inline
-    def apply[F](
+    inline def apply[F](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ js.Any) => js.Any,
       id: () => js.Any
@@ -28,11 +27,9 @@ object categoryMod {
       __obj.asInstanceOf[Category[F]]
     }
     
-    @scala.inline
-    implicit class CategoryMutableBuilder[Self <: Category[?], F] (val x: Self & Category[F]) extends AnyVal {
+    extension [Self <: Category[?], F](x: Self & Category[F]) {
       
-      @scala.inline
-      def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
+      inline def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }
   }
   
@@ -44,8 +41,7 @@ object categoryMod {
   }
   object Category2 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ js.Any) => js.Any,
       id: () => js.Any
@@ -54,11 +50,9 @@ object categoryMod {
       __obj.asInstanceOf[Category2[F]]
     }
     
-    @scala.inline
-    implicit class Category2MutableBuilder[Self <: Category2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Category2[F]) extends AnyVal {
+    extension [Self <: Category2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Category2[F]) {
       
-      @scala.inline
-      def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
+      inline def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }
   }
   
@@ -70,8 +64,7 @@ object categoryMod {
   }
   object Category3 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ js.Any) => js.Any,
       id: () => js.Any
@@ -80,11 +73,9 @@ object categoryMod {
       __obj.asInstanceOf[Category3[F]]
     }
     
-    @scala.inline
-    implicit class Category3MutableBuilder[Self <: Category3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Category3[F]) extends AnyVal {
+    extension [Self <: Category3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Category3[F]) {
       
-      @scala.inline
-      def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
+      inline def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }
   }
   
@@ -96,8 +87,7 @@ object categoryMod {
   }
   object Category4 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: F,
       compose: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, B, C> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ js.Any) => js.Any,
       id: () => js.Any
@@ -106,11 +96,9 @@ object categoryMod {
       __obj.asInstanceOf[Category4[F]]
     }
     
-    @scala.inline
-    implicit class Category4MutableBuilder[Self <: Category4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Category4[F]) extends AnyVal {
+    extension [Self <: Category4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Category4[F]) {
       
-      @scala.inline
-      def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
+      inline def setId(value: () => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }
   }
 }

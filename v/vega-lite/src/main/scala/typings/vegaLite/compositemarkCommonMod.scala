@@ -32,38 +32,31 @@ object compositemarkCommonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compositeMarkContinuousAxis[M /* <: CompositeMark */](
+  inline def compositeMarkContinuousAxis[M /* <: CompositeMark */](
     spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef],
     orient: Orientation,
     compositeMark: M
   ): ContinuousAxis = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkContinuousAxis")(spec.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[ContinuousAxis]
   
-  @scala.inline
-  def compositeMarkOrient[M /* <: CompositeMark */](spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef], compositeMark: M): Orientation = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkOrient")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[Orientation]
+  inline def compositeMarkOrient[M /* <: CompositeMark */](spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef], compositeMark: M): Orientation = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkOrient")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[Orientation]
   
-  @scala.inline
-  def filterTooltipWithAggregatedField[F /* <: Field */](oldEncoding: Encoding[F]): CustomTooltipWithoutAggregatedField[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterTooltipWithAggregatedField")(oldEncoding.asInstanceOf[js.Any]).asInstanceOf[CustomTooltipWithoutAggregatedField[F]]
+  inline def filterTooltipWithAggregatedField[F /* <: Field */](oldEncoding: Encoding[F]): CustomTooltipWithoutAggregatedField[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterTooltipWithAggregatedField")(oldEncoding.asInstanceOf[js.Any]).asInstanceOf[CustomTooltipWithoutAggregatedField[F]]
   
-  @scala.inline
-  def getCompositeMarkTooltip(
+  inline def getCompositeMarkTooltip(
     tooltipSummary: js.Array[CompositeMarkTooltipSummary],
     continuousAxisChannelDef: PositionFieldDef[String],
     encodingWithoutContinuousAxis: Encoding[String]
   ): Encoding[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompositeMarkTooltip")(tooltipSummary.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], encodingWithoutContinuousAxis.asInstanceOf[js.Any])).asInstanceOf[Encoding[String]]
-  @scala.inline
-  def getCompositeMarkTooltip(
+  inline def getCompositeMarkTooltip(
     tooltipSummary: js.Array[CompositeMarkTooltipSummary],
     continuousAxisChannelDef: PositionFieldDef[String],
     encodingWithoutContinuousAxis: Encoding[String],
     withFieldName: Boolean
   ): Encoding[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompositeMarkTooltip")(tooltipSummary.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], encodingWithoutContinuousAxis.asInstanceOf[js.Any], withFieldName.asInstanceOf[js.Any])).asInstanceOf[Encoding[String]]
   
-  @scala.inline
-  def getTitle(continuousAxisChannelDef: PositionFieldDef[String]): String | js.Array[String] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(continuousAxisChannelDef.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String] | SignalRef]
+  inline def getTitle(continuousAxisChannelDef: PositionFieldDef[String]): String | js.Array[String] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(continuousAxisChannelDef.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String] | SignalRef]
   
-  @scala.inline
-  def makeCompositeAggregatePartFactory_x[P /* <: PartsMixins[js.Any] */](
+  inline def makeCompositeAggregatePartFactory_x[P /* <: PartsMixins[js.Any] */](
     compositeMarkDef: GenericCompositeMarkDef[js.Any] & P,
     continuousAxis: x,
     continuousAxisChannelDef: PositionFieldDef[String],
@@ -77,8 +70,7 @@ object compositemarkCommonMod {
     js.Array[NormalizedUnitSpec]
   ]]
   
-  @scala.inline
-  def makeCompositeAggregatePartFactory_y[P /* <: PartsMixins[js.Any] */](
+  inline def makeCompositeAggregatePartFactory_y[P /* <: PartsMixins[js.Any] */](
     compositeMarkDef: GenericCompositeMarkDef[js.Any] & P,
     continuousAxis: y,
     continuousAxisChannelDef: PositionFieldDef[String],
@@ -92,8 +84,7 @@ object compositemarkCommonMod {
     js.Array[NormalizedUnitSpec]
   ]]
   
-  @scala.inline
-  def partLayerMixins[P /* <: PartsMixins[js.Any] */](
+  inline def partLayerMixins[P /* <: PartsMixins[js.Any] */](
     markDef: GenericCompositeMarkDef[js.Any] & P,
     part: /* keyof P */ String,
     compositeMarkConfig: P,
@@ -114,23 +105,18 @@ object compositemarkCommonMod {
   }
   object CompositeMarkTooltipSummary {
     
-    @scala.inline
-    def apply(fieldPrefix: String, titlePrefix: Text | SignalRef): CompositeMarkTooltipSummary = {
+    inline def apply(fieldPrefix: String, titlePrefix: Text | SignalRef): CompositeMarkTooltipSummary = {
       val __obj = js.Dynamic.literal(fieldPrefix = fieldPrefix.asInstanceOf[js.Any], titlePrefix = titlePrefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompositeMarkTooltipSummary]
     }
     
-    @scala.inline
-    implicit class CompositeMarkTooltipSummaryMutableBuilder[Self <: CompositeMarkTooltipSummary] (val x: Self) extends AnyVal {
+    extension [Self <: CompositeMarkTooltipSummary](x: Self) {
       
-      @scala.inline
-      def setFieldPrefix(value: String): Self = StObject.set(x, "fieldPrefix", value.asInstanceOf[js.Any])
+      inline def setFieldPrefix(value: String): Self = StObject.set(x, "fieldPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePrefix(value: Text | SignalRef): Self = StObject.set(x, "titlePrefix", value.asInstanceOf[js.Any])
+      inline def setTitlePrefix(value: Text | SignalRef): Self = StObject.set(x, "titlePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePrefixVarargs(value: String*): Self = StObject.set(x, "titlePrefix", js.Array(value :_*))
+      inline def setTitlePrefixVarargs(value: String*): Self = StObject.set(x, "titlePrefix", js.Array(value :_*))
     }
   }
   
@@ -151,27 +137,21 @@ object compositemarkCommonMod {
   }
   object GenericCompositeMarkDef {
     
-    @scala.inline
-    def apply[T](`type`: T): GenericCompositeMarkDef[T] = {
+    inline def apply[T](`type`: T): GenericCompositeMarkDef[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericCompositeMarkDef[T]]
     }
     
-    @scala.inline
-    implicit class GenericCompositeMarkDefMutableBuilder[Self <: GenericCompositeMarkDef[?], T] (val x: Self & GenericCompositeMarkDef[T]) extends AnyVal {
+    extension [Self <: GenericCompositeMarkDef[?], T](x: Self & GenericCompositeMarkDef[T]) {
       
-      @scala.inline
-      def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+      inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     }
   }
   

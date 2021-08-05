@@ -10,6 +10,5 @@ object profanityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def profanity(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("profanity")().asInstanceOf[js.Array[String]]
+  inline def profanity(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("profanity")().asInstanceOf[js.Array[String]]
 }

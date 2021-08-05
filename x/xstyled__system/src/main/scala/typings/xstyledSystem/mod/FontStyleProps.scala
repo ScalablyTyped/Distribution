@@ -14,27 +14,22 @@ trait FontStyleProps extends StObject {
 }
 object FontStyleProps {
   
-  @scala.inline
-  def apply(): FontStyleProps = {
+  inline def apply(): FontStyleProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontStyleProps]
   }
   
-  @scala.inline
-  implicit class FontStylePropsMutableBuilder[Self <: FontStyleProps] (val x: Self) extends AnyVal {
+  extension [Self <: FontStyleProps](x: Self) {
     
-    @scala.inline
-    def setFontStyle(
+    inline def setFontStyle(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any
         ]
     ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setFontStyleVarargs(
+    inline def setFontStyleVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any)*
     ): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
   }

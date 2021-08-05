@@ -38,46 +38,33 @@ trait ISpatialFilterOptions extends StObject {
 }
 object ISpatialFilterOptions {
   
-  @scala.inline
-  def apply(spatialFilterType: String): ISpatialFilterOptions = {
+  inline def apply(spatialFilterType: String): ISpatialFilterOptions = {
     val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpatialFilterOptions]
   }
   
-  @scala.inline
-  implicit class ISpatialFilterOptionsMutableBuilder[Self <: ISpatialFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISpatialFilterOptions](x: Self) {
     
-    @scala.inline
-    def setEnd(value: String | Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String | Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setIntersects(value: String | LocationRect | IPrimitive): Self = StObject.set(x, "intersects", value.asInstanceOf[js.Any])
+    inline def setIntersects(value: String | LocationRect | IPrimitive): Self = StObject.set(x, "intersects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectsUndefined: Self = StObject.set(x, "intersects", js.undefined)
+    inline def setIntersectsUndefined: Self = StObject.set(x, "intersects", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSpatialFilterType(value: String): Self = StObject.set(x, "spatialFilterType", value.asInstanceOf[js.Any])
+    inline def setSpatialFilterType(value: String): Self = StObject.set(x, "spatialFilterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: String | Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String | Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

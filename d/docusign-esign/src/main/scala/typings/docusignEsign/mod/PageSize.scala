@@ -12,25 +12,19 @@ trait PageSize extends StObject {
 }
 object PageSize {
   
-  @scala.inline
-  def apply(): PageSize = {
+  inline def apply(): PageSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageSize]
   }
   
-  @scala.inline
-  implicit class PageSizeMutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
+  extension [Self <: PageSize](x: Self) {
     
-    @scala.inline
-    def setPageHeight(value: String): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
+    inline def setPageHeight(value: String): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeightUndefined: Self = StObject.set(x, "pageHeight", js.undefined)
+    inline def setPageHeightUndefined: Self = StObject.set(x, "pageHeight", js.undefined)
     
-    @scala.inline
-    def setPageWidth(value: String): Self = StObject.set(x, "pageWidth", value.asInstanceOf[js.Any])
+    inline def setPageWidth(value: String): Self = StObject.set(x, "pageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageWidthUndefined: Self = StObject.set(x, "pageWidth", js.undefined)
+    inline def setPageWidthUndefined: Self = StObject.set(x, "pageWidth", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait LogoutOptions extends StObject {
 }
 object LogoutOptions {
   
-  @scala.inline
-  def apply(): LogoutOptions = {
+  inline def apply(): LogoutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogoutOptions]
   }
   
-  @scala.inline
-  implicit class LogoutOptionsMutableBuilder[Self <: LogoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LogoutOptions](x: Self) {
     
-    @scala.inline
-    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+    inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
     
-    @scala.inline
-    def setFederated(value: Boolean): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
+    inline def setFederated(value: Boolean): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFederatedUndefined: Self = StObject.set(x, "federated", js.undefined)
+    inline def setFederatedUndefined: Self = StObject.set(x, "federated", js.undefined)
     
-    @scala.inline
-    def setReturnTo(value: String): Self = StObject.set(x, "returnTo", value.asInstanceOf[js.Any])
+    inline def setReturnTo(value: String): Self = StObject.set(x, "returnTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnToUndefined: Self = StObject.set(x, "returnTo", js.undefined)
+    inline def setReturnToUndefined: Self = StObject.set(x, "returnTo", js.undefined)
   }
 }

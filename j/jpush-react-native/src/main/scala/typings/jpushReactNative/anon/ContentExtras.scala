@@ -24,22 +24,17 @@ trait ContentExtras extends StObject {
 }
 object ContentExtras {
   
-  @scala.inline
-  def apply(content: String, extras: Extra, messageID: String): ContentExtras = {
+  inline def apply(content: String, extras: Extra, messageID: String): ContentExtras = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentExtras]
   }
   
-  @scala.inline
-  implicit class ContentExtrasMutableBuilder[Self <: ContentExtras] (val x: Self) extends AnyVal {
+  extension [Self <: ContentExtras](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtras(value: Extra): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: Extra): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
+    inline def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
   }
 }

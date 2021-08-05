@@ -30,44 +30,32 @@ trait CIMMultiLayerSymbol
 }
 object CIMMultiLayerSymbol {
   
-  @scala.inline
-  def apply(`type`: String): CIMMultiLayerSymbol = {
+  inline def apply(`type`: String): CIMMultiLayerSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMMultiLayerSymbol]
   }
   
-  @scala.inline
-  implicit class CIMMultiLayerSymbolMutableBuilder[Self <: CIMMultiLayerSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMultiLayerSymbol](x: Self) {
     
-    @scala.inline
-    def setEffects(value: js.Array[CIMGeometricEffectType]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: js.Array[CIMGeometricEffectType]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+    inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
     
-    @scala.inline
-    def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
-    @scala.inline
-    def setSymbolLayers(value: js.Array[CIMSymbolLayerType]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
+    inline def setSymbolLayers(value: js.Array[CIMSymbolLayerType]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
+    inline def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
     
-    @scala.inline
-    def setSymbolLayersVarargs(value: CIMSymbolLayerType*): Self = StObject.set(x, "symbolLayers", js.Array(value :_*))
+    inline def setSymbolLayersVarargs(value: CIMSymbolLayerType*): Self = StObject.set(x, "symbolLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setThumbnailURI(value: String): Self = StObject.set(x, "thumbnailURI", value.asInstanceOf[js.Any])
+    inline def setThumbnailURI(value: String): Self = StObject.set(x, "thumbnailURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailURIUndefined: Self = StObject.set(x, "thumbnailURI", js.undefined)
+    inline def setThumbnailURIUndefined: Self = StObject.set(x, "thumbnailURI", js.undefined)
     
-    @scala.inline
-    def setUseRealWorldSymbolSizes(value: Boolean): Self = StObject.set(x, "useRealWorldSymbolSizes", value.asInstanceOf[js.Any])
+    inline def setUseRealWorldSymbolSizes(value: Boolean): Self = StObject.set(x, "useRealWorldSymbolSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseRealWorldSymbolSizesUndefined: Self = StObject.set(x, "useRealWorldSymbolSizes", js.undefined)
+    inline def setUseRealWorldSymbolSizesUndefined: Self = StObject.set(x, "useRealWorldSymbolSizes", js.undefined)
   }
 }

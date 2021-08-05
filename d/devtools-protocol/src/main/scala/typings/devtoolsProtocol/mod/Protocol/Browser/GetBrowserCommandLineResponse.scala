@@ -13,19 +13,15 @@ trait GetBrowserCommandLineResponse extends StObject {
 }
 object GetBrowserCommandLineResponse {
   
-  @scala.inline
-  def apply(arguments: js.Array[String]): GetBrowserCommandLineResponse = {
+  inline def apply(arguments: js.Array[String]): GetBrowserCommandLineResponse = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBrowserCommandLineResponse]
   }
   
-  @scala.inline
-  implicit class GetBrowserCommandLineResponseMutableBuilder[Self <: GetBrowserCommandLineResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBrowserCommandLineResponse](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
   }
 }

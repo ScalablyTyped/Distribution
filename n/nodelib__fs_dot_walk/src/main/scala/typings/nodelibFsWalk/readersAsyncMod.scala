@@ -20,25 +20,25 @@ object readersAsyncMod {
   trait AsyncReader
     extends typings.nodelibFsWalk.readerMod.default {
     
-    var _emitEntry: js.Any = js.native
+    /* private */ var _emitEntry: js.Any = js.native
     
-    val _emitter: EventEmitter = js.native
+    /* protected */ val _emitter: EventEmitter = js.native
     
-    var _handleEntry: js.Any = js.native
+    /* private */ var _handleEntry: js.Any = js.native
     
-    var _handleError: js.Any = js.native
+    /* private */ var _handleError: js.Any = js.native
     
-    var _isDestroyed: js.Any = js.native
+    /* private */ var _isDestroyed: js.Any = js.native
     
-    var _isFatalError: js.Any = js.native
+    /* private */ var _isFatalError: js.Any = js.native
     
-    var _pushToQueue: js.Any = js.native
+    /* private */ var _pushToQueue: js.Any = js.native
     
-    val _queue: js.Any = js.native
+    /* private */ val _queue: js.Any = js.native
     
-    val _scandir: Typeofscandir = js.native
+    /* protected */ val _scandir: Typeofscandir = js.native
     
-    var _worker: js.Any = js.native
+    /* private */ var _worker: js.Any = js.native
     
     def destroy(): Unit = js.native
     

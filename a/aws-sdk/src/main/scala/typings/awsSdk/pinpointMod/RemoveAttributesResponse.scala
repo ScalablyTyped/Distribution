@@ -10,16 +10,13 @@ trait RemoveAttributesResponse extends StObject {
 }
 object RemoveAttributesResponse {
   
-  @scala.inline
-  def apply(AttributesResource: AttributesResource): RemoveAttributesResponse = {
+  inline def apply(AttributesResource: AttributesResource): RemoveAttributesResponse = {
     val __obj = js.Dynamic.literal(AttributesResource = AttributesResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAttributesResponse]
   }
   
-  @scala.inline
-  implicit class RemoveAttributesResponseMutableBuilder[Self <: RemoveAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributesResource(value: AttributesResource): Self = StObject.set(x, "AttributesResource", value.asInstanceOf[js.Any])
+    inline def setAttributesResource(value: AttributesResource): Self = StObject.set(x, "AttributesResource", value.asInstanceOf[js.Any])
   }
 }

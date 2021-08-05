@@ -182,93 +182,59 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def cloneFrames(frames: js.Array[GifFrame]): js.Array[GifFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[js.Array[GifFrame]]
+    inline def cloneFrames(frames: js.Array[GifFrame]): js.Array[GifFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[js.Array[GifFrame]]
     
-    @scala.inline
-    def copyAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copyAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def getColorInfo(frames: js.Array[GifFrame]): Colors = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any]).asInstanceOf[Colors]
-    @scala.inline
-    def getColorInfo(frames: js.Array[GifFrame], maxGlobalIndex: Double): Colors = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any], maxGlobalIndex.asInstanceOf[js.Any])).asInstanceOf[Colors]
+    inline def getColorInfo(frames: js.Array[GifFrame]): Colors = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any]).asInstanceOf[Colors]
+    inline def getColorInfo(frames: js.Array[GifFrame], maxGlobalIndex: Double): Colors = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any], maxGlobalIndex.asInstanceOf[js.Any])).asInstanceOf[Colors]
     
-    @scala.inline
-    def getMaxDimensions(frames: js.Array[GifFrame]): MaxHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxDimensions")(frames.asInstanceOf[js.Any]).asInstanceOf[MaxHeight]
+    inline def getMaxDimensions(frames: js.Array[GifFrame]): MaxHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxDimensions")(frames.asInstanceOf[js.Any]).asInstanceOf[MaxHeight]
     
-    @scala.inline
-    def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, significantBits: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeWu(
+    inline def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, significantBits: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeWu(
       imageOrImages: js.Array[BitmapImage],
       maxColorIndexes: Double,
       significantBits: Double,
       dither: Dither
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeWu(
+    inline def quantizeWu(
       imageOrImages: js.Array[BitmapImage],
       maxColorIndexes: Double,
       significantBits: Unit,
       dither: Dither
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def read(source: String): js.Promise[Gif] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Gif]]
-    @scala.inline
-    def read(source: String, decoder: GifDecoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
-    @scala.inline
-    def read(source: Buffer): js.Promise[Gif] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Gif]]
-    @scala.inline
-    def read(source: Buffer, decoder: GifDecoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    inline def read(source: String): js.Promise[Gif] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Gif]]
+    inline def read(source: String, decoder: GifDecoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    inline def read(source: Buffer): js.Promise[Gif] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Gif]]
+    inline def read(source: Buffer, decoder: GifDecoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
     
-    @scala.inline
-    def shareAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def shareAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def write(path: String, frames: js.Array[GifFrame]): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
-    @scala.inline
-    def write(path: String, frames: js.Array[GifFrame], spec: Unit, encoder: GifEncoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
-    @scala.inline
-    def write(path: String, frames: js.Array[GifFrame], spec: GifSpec): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
-    @scala.inline
-    def write(path: String, frames: js.Array[GifFrame], spec: GifSpec, encoder: GifEncoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    inline def write(path: String, frames: js.Array[GifFrame]): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    inline def write(path: String, frames: js.Array[GifFrame], spec: Unit, encoder: GifEncoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    inline def write(path: String, frames: js.Array[GifFrame], spec: GifSpec): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    inline def write(path: String, frames: js.Array[GifFrame], spec: GifSpec, encoder: GifEncoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
   }
   
   trait Dither extends StObject {
@@ -285,35 +251,26 @@ object mod {
   }
   object Dither {
     
-    @scala.inline
-    def apply(ditherAlgorithm: DitherAlgorithm): Dither = {
+    inline def apply(ditherAlgorithm: DitherAlgorithm): Dither = {
       val __obj = js.Dynamic.literal(ditherAlgorithm = ditherAlgorithm.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dither]
     }
     
-    @scala.inline
-    implicit class DitherMutableBuilder[Self <: Dither] (val x: Self) extends AnyVal {
+    extension [Self <: Dither](x: Self) {
       
-      @scala.inline
-      def setCalculateErrorLikeGIMP(value: Boolean): Self = StObject.set(x, "calculateErrorLikeGIMP", value.asInstanceOf[js.Any])
+      inline def setCalculateErrorLikeGIMP(value: Boolean): Self = StObject.set(x, "calculateErrorLikeGIMP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalculateErrorLikeGIMPUndefined: Self = StObject.set(x, "calculateErrorLikeGIMP", js.undefined)
+      inline def setCalculateErrorLikeGIMPUndefined: Self = StObject.set(x, "calculateErrorLikeGIMP", js.undefined)
       
-      @scala.inline
-      def setDitherAlgorithm(value: DitherAlgorithm): Self = StObject.set(x, "ditherAlgorithm", value.asInstanceOf[js.Any])
+      inline def setDitherAlgorithm(value: DitherAlgorithm): Self = StObject.set(x, "ditherAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumColorDistanceToDither(value: Double): Self = StObject.set(x, "minimumColorDistanceToDither", value.asInstanceOf[js.Any])
+      inline def setMinimumColorDistanceToDither(value: Double): Self = StObject.set(x, "minimumColorDistanceToDither", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumColorDistanceToDitherUndefined: Self = StObject.set(x, "minimumColorDistanceToDither", js.undefined)
+      inline def setMinimumColorDistanceToDitherUndefined: Self = StObject.set(x, "minimumColorDistanceToDither", js.undefined)
       
-      @scala.inline
-      def setSerpentine(value: Boolean): Self = StObject.set(x, "serpentine", value.asInstanceOf[js.Any])
+      inline def setSerpentine(value: Boolean): Self = StObject.set(x, "serpentine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerpentineUndefined: Self = StObject.set(x, "serpentine", js.undefined)
+      inline def setSerpentineUndefined: Self = StObject.set(x, "serpentine", js.undefined)
     }
   }
   
@@ -331,32 +288,23 @@ object mod {
   trait DitherAlgorithm extends StObject
   object DitherAlgorithm {
     
-    @scala.inline
-    def Atkinson: typings.gifwrap.gifwrapStrings.Atkinson = "Atkinson".asInstanceOf[typings.gifwrap.gifwrapStrings.Atkinson]
+    inline def Atkinson: typings.gifwrap.gifwrapStrings.Atkinson = "Atkinson".asInstanceOf[typings.gifwrap.gifwrapStrings.Atkinson]
     
-    @scala.inline
-    def Burkes: typings.gifwrap.gifwrapStrings.Burkes = "Burkes".asInstanceOf[typings.gifwrap.gifwrapStrings.Burkes]
+    inline def Burkes: typings.gifwrap.gifwrapStrings.Burkes = "Burkes".asInstanceOf[typings.gifwrap.gifwrapStrings.Burkes]
     
-    @scala.inline
-    def FalseFloydSteinberg: typings.gifwrap.gifwrapStrings.FalseFloydSteinberg = "FalseFloydSteinberg".asInstanceOf[typings.gifwrap.gifwrapStrings.FalseFloydSteinberg]
+    inline def FalseFloydSteinberg: typings.gifwrap.gifwrapStrings.FalseFloydSteinberg = "FalseFloydSteinberg".asInstanceOf[typings.gifwrap.gifwrapStrings.FalseFloydSteinberg]
     
-    @scala.inline
-    def FloydSteinberg: typings.gifwrap.gifwrapStrings.FloydSteinberg = "FloydSteinberg".asInstanceOf[typings.gifwrap.gifwrapStrings.FloydSteinberg]
+    inline def FloydSteinberg: typings.gifwrap.gifwrapStrings.FloydSteinberg = "FloydSteinberg".asInstanceOf[typings.gifwrap.gifwrapStrings.FloydSteinberg]
     
-    @scala.inline
-    def Jarvis: typings.gifwrap.gifwrapStrings.Jarvis = "Jarvis".asInstanceOf[typings.gifwrap.gifwrapStrings.Jarvis]
+    inline def Jarvis: typings.gifwrap.gifwrapStrings.Jarvis = "Jarvis".asInstanceOf[typings.gifwrap.gifwrapStrings.Jarvis]
     
-    @scala.inline
-    def Sierra: typings.gifwrap.gifwrapStrings.Sierra = "Sierra".asInstanceOf[typings.gifwrap.gifwrapStrings.Sierra]
+    inline def Sierra: typings.gifwrap.gifwrapStrings.Sierra = "Sierra".asInstanceOf[typings.gifwrap.gifwrapStrings.Sierra]
     
-    @scala.inline
-    def SierraLite: typings.gifwrap.gifwrapStrings.SierraLite = "SierraLite".asInstanceOf[typings.gifwrap.gifwrapStrings.SierraLite]
+    inline def SierraLite: typings.gifwrap.gifwrapStrings.SierraLite = "SierraLite".asInstanceOf[typings.gifwrap.gifwrapStrings.SierraLite]
     
-    @scala.inline
-    def Stucki: typings.gifwrap.gifwrapStrings.Stucki = "Stucki".asInstanceOf[typings.gifwrap.gifwrapStrings.Stucki]
+    inline def Stucki: typings.gifwrap.gifwrapStrings.Stucki = "Stucki".asInstanceOf[typings.gifwrap.gifwrapStrings.Stucki]
     
-    @scala.inline
-    def TwoSierra: typings.gifwrap.gifwrapStrings.TwoSierra = "TwoSierra".asInstanceOf[typings.gifwrap.gifwrapStrings.TwoSierra]
+    inline def TwoSierra: typings.gifwrap.gifwrapStrings.TwoSierra = "TwoSierra".asInstanceOf[typings.gifwrap.gifwrapStrings.TwoSierra]
   }
   
   trait GifCodecOptions extends StObject {
@@ -365,20 +313,16 @@ object mod {
   }
   object GifCodecOptions {
     
-    @scala.inline
-    def apply(): GifCodecOptions = {
+    inline def apply(): GifCodecOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GifCodecOptions]
     }
     
-    @scala.inline
-    implicit class GifCodecOptionsMutableBuilder[Self <: GifCodecOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GifCodecOptions](x: Self) {
       
-      @scala.inline
-      def setTransparentRGB(value: Double): Self = StObject.set(x, "transparentRGB", value.asInstanceOf[js.Any])
+      inline def setTransparentRGB(value: Double): Self = StObject.set(x, "transparentRGB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparentRGBUndefined: Self = StObject.set(x, "transparentRGB", js.undefined)
+      inline def setTransparentRGBUndefined: Self = StObject.set(x, "transparentRGB", js.undefined)
     }
   }
   
@@ -388,17 +332,14 @@ object mod {
   }
   object GifDecoder {
     
-    @scala.inline
-    def apply(decodeGif: Buffer => js.Promise[Gif]): GifDecoder = {
+    inline def apply(decodeGif: Buffer => js.Promise[Gif]): GifDecoder = {
       val __obj = js.Dynamic.literal(decodeGif = js.Any.fromFunction1(decodeGif))
       __obj.asInstanceOf[GifDecoder]
     }
     
-    @scala.inline
-    implicit class GifDecoderMutableBuilder[Self <: GifDecoder] (val x: Self) extends AnyVal {
+    extension [Self <: GifDecoder](x: Self) {
       
-      @scala.inline
-      def setDecodeGif(value: Buffer => js.Promise[Gif]): Self = StObject.set(x, "decodeGif", js.Any.fromFunction1(value))
+      inline def setDecodeGif(value: Buffer => js.Promise[Gif]): Self = StObject.set(x, "decodeGif", js.Any.fromFunction1(value))
     }
   }
   
@@ -408,17 +349,14 @@ object mod {
   }
   object GifEncoder {
     
-    @scala.inline
-    def apply(encodeGif: (js.Array[GifFrame], GifSpec) => js.Promise[Gif]): GifEncoder = {
+    inline def apply(encodeGif: (js.Array[GifFrame], GifSpec) => js.Promise[Gif]): GifEncoder = {
       val __obj = js.Dynamic.literal(encodeGif = js.Any.fromFunction2(encodeGif))
       __obj.asInstanceOf[GifEncoder]
     }
     
-    @scala.inline
-    implicit class GifEncoderMutableBuilder[Self <: GifEncoder] (val x: Self) extends AnyVal {
+    extension [Self <: GifEncoder](x: Self) {
       
-      @scala.inline
-      def setEncodeGif(value: (js.Array[GifFrame], GifSpec) => js.Promise[Gif]): Self = StObject.set(x, "encodeGif", js.Any.fromFunction2(value))
+      inline def setEncodeGif(value: (js.Array[GifFrame], GifSpec) => js.Promise[Gif]): Self = StObject.set(x, "encodeGif", js.Any.fromFunction2(value))
     }
   }
   
@@ -436,44 +374,32 @@ object mod {
   }
   object GifFrameOptions {
     
-    @scala.inline
-    def apply(): GifFrameOptions = {
+    inline def apply(): GifFrameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GifFrameOptions]
     }
     
-    @scala.inline
-    implicit class GifFrameOptionsMutableBuilder[Self <: GifFrameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GifFrameOptions](x: Self) {
       
-      @scala.inline
-      def setDelayCentisecs(value: Double): Self = StObject.set(x, "delayCentisecs", value.asInstanceOf[js.Any])
+      inline def setDelayCentisecs(value: Double): Self = StObject.set(x, "delayCentisecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayCentisecsUndefined: Self = StObject.set(x, "delayCentisecs", js.undefined)
+      inline def setDelayCentisecsUndefined: Self = StObject.set(x, "delayCentisecs", js.undefined)
       
-      @scala.inline
-      def setDisposalMethod(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "disposalMethod", value.asInstanceOf[js.Any])
+      inline def setDisposalMethod(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "disposalMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisposalMethodUndefined: Self = StObject.set(x, "disposalMethod", js.undefined)
+      inline def setDisposalMethodUndefined: Self = StObject.set(x, "disposalMethod", js.undefined)
       
-      @scala.inline
-      def setIsInterlaced(value: Boolean): Self = StObject.set(x, "isInterlaced", value.asInstanceOf[js.Any])
+      inline def setIsInterlaced(value: Boolean): Self = StObject.set(x, "isInterlaced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInterlacedUndefined: Self = StObject.set(x, "isInterlaced", js.undefined)
+      inline def setIsInterlacedUndefined: Self = StObject.set(x, "isInterlaced", js.undefined)
       
-      @scala.inline
-      def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+      inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+      inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
       
-      @scala.inline
-      def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+      inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
+      inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
     }
   }
   
@@ -487,26 +413,20 @@ object mod {
   }
   object GifPalette {
     
-    @scala.inline
-    def apply(colors: js.Array[Double], indexCount: Double, usesTransparency: Boolean): GifPalette = {
+    inline def apply(colors: js.Array[Double], indexCount: Double, usesTransparency: Boolean): GifPalette = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], indexCount = indexCount.asInstanceOf[js.Any], usesTransparency = usesTransparency.asInstanceOf[js.Any])
       __obj.asInstanceOf[GifPalette]
     }
     
-    @scala.inline
-    implicit class GifPaletteMutableBuilder[Self <: GifPalette] (val x: Self) extends AnyVal {
+    extension [Self <: GifPalette](x: Self) {
       
-      @scala.inline
-      def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
+      inline def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsesTransparency(value: Boolean): Self = StObject.set(x, "usesTransparency", value.asInstanceOf[js.Any])
+      inline def setUsesTransparency(value: Boolean): Self = StObject.set(x, "usesTransparency", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,26 +438,20 @@ object mod {
   }
   object GifSpec {
     
-    @scala.inline
-    def apply(): GifSpec = {
+    inline def apply(): GifSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GifSpec]
     }
     
-    @scala.inline
-    implicit class GifSpecMutableBuilder[Self <: GifSpec] (val x: Self) extends AnyVal {
+    extension [Self <: GifSpec](x: Self) {
       
-      @scala.inline
-      def setColorScope(value: `0` | `1` | `2`): Self = StObject.set(x, "colorScope", value.asInstanceOf[js.Any])
+      inline def setColorScope(value: `0` | `1` | `2`): Self = StObject.set(x, "colorScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorScopeUndefined: Self = StObject.set(x, "colorScope", js.undefined)
+      inline def setColorScopeUndefined: Self = StObject.set(x, "colorScope", js.undefined)
       
-      @scala.inline
-      def setLoops(value: Double): Self = StObject.set(x, "loops", value.asInstanceOf[js.Any])
+      inline def setLoops(value: Double): Self = StObject.set(x, "loops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopsUndefined: Self = StObject.set(x, "loops", js.undefined)
+      inline def setLoopsUndefined: Self = StObject.set(x, "loops", js.undefined)
     }
   }
   
@@ -551,23 +465,18 @@ object mod {
   }
   object JimpBitmap {
     
-    @scala.inline
-    def apply(data: Buffer, height: Double, width: Double): JimpBitmap = {
+    inline def apply(data: Buffer, height: Double, width: Double): JimpBitmap = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[JimpBitmap]
     }
     
-    @scala.inline
-    implicit class JimpBitmapMutableBuilder[Self <: JimpBitmap] (val x: Self) extends AnyVal {
+    extension [Self <: JimpBitmap](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

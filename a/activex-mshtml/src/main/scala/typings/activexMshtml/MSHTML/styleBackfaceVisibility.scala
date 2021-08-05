@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBackfaceVisibility extends StObject
 object styleBackfaceVisibility {
   
-  @scala.inline
-  def styleBackfaceVisibilityHidden: `1` = 1.asInstanceOf[`1`]
+  inline def styleBackfaceVisibilityHidden: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBackfaceVisibilityNotSet: `2` = 2.asInstanceOf[`2`]
+  inline def styleBackfaceVisibilityNotSet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBackfaceVisibilityVisible: `0` = 0.asInstanceOf[`0`]
+  inline def styleBackfaceVisibilityVisible: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBackfaceVisibility_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBackfaceVisibility_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

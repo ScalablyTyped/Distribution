@@ -12,22 +12,17 @@ trait CloudWatchLogs extends StObject {
 }
 object CloudWatchLogs {
   
-  @scala.inline
-  def apply(Enabled: boolean): CloudWatchLogs = {
+  inline def apply(Enabled: boolean): CloudWatchLogs = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLogs]
   }
   
-  @scala.inline
-  implicit class CloudWatchLogsMutableBuilder[Self <: CloudWatchLogs] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchLogs](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroup(value: string): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
+    inline def setLogGroup(value: string): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
+    inline def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
   }
 }

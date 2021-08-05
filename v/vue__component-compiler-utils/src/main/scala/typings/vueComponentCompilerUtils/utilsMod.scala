@@ -11,10 +11,8 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def urlToRequire(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToRequire")(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def urlToRequire(url: String, transformAssetUrlsOption: TransformAssetUrlsOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlToRequire")(url.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def urlToRequire(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToRequire")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def urlToRequire(url: String, transformAssetUrlsOption: TransformAssetUrlsOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlToRequire")(url.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ASTNode extends StObject {
     
@@ -24,23 +22,18 @@ object utilsMod {
   }
   object ASTNode {
     
-    @scala.inline
-    def apply(attrs: js.Array[Attr], tag: String): ASTNode = {
+    inline def apply(attrs: js.Array[Attr], tag: String): ASTNode = {
       val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[ASTNode]
     }
     
-    @scala.inline
-    implicit class ASTNodeMutableBuilder[Self <: ASTNode] (val x: Self) extends AnyVal {
+    extension [Self <: ASTNode](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: js.Array[Attr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: js.Array[Attr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsVarargs(value: Attr*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+      inline def setAttrsVarargs(value: Attr*): Self = StObject.set(x, "attrs", js.Array(value :_*))
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,20 +45,16 @@ object utilsMod {
   }
   object Attr {
     
-    @scala.inline
-    def apply(name: String, value: String): Attr = {
+    inline def apply(name: String, value: String): Attr = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attr]
     }
     
-    @scala.inline
-    implicit class AttrMutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
+    extension [Self <: Attr](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

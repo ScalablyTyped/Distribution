@@ -34,41 +34,30 @@ object fillerMod extends Shortcut {
   }
   object FillerProps {
     
-    @scala.inline
-    def apply(height: Double): FillerProps = {
+    inline def apply(height: Double): FillerProps = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
       __obj.asInstanceOf[FillerProps]
     }
     
-    @scala.inline
-    implicit class FillerPropsMutableBuilder[Self <: FillerProps] (val x: Self) extends AnyVal {
+    extension [Self <: FillerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnInnerResize(value: () => Unit): Self = StObject.set(x, "onInnerResize", js.Any.fromFunction0(value))
+      inline def setOnInnerResize(value: () => Unit): Self = StObject.set(x, "onInnerResize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInnerResizeUndefined: Self = StObject.set(x, "onInnerResize", js.undefined)
+      inline def setOnInnerResizeUndefined: Self = StObject.set(x, "onInnerResize", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
   

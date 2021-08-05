@@ -12,22 +12,17 @@ trait ITestRunStarted extends StObject {
 }
 object ITestRunStarted {
   
-  @scala.inline
-  def apply(): ITestRunStarted = {
+  inline def apply(): ITestRunStarted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestRunStarted]
   }
   
-  @scala.inline
-  implicit class ITestRunStartedMutableBuilder[Self <: ITestRunStarted] (val x: Self) extends AnyVal {
+  extension [Self <: ITestRunStarted](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampNull: Self = StObject.set(x, "timestamp", null)
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

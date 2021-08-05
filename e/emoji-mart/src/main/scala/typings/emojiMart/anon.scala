@@ -36,80 +36,56 @@ object anon {
   }
   object PartialRecordCategoryName {
     
-    @scala.inline
-    def apply(): PartialRecordCategoryName = {
+    inline def apply(): PartialRecordCategoryName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRecordCategoryName]
     }
     
-    @scala.inline
-    implicit class PartialRecordCategoryNameMutableBuilder[Self <: PartialRecordCategoryName] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRecordCategoryName](x: Self) {
       
-      @scala.inline
-      def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+      inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
+      inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
       
-      @scala.inline
-      def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setFoods(value: String): Self = StObject.set(x, "foods", value.asInstanceOf[js.Any])
+      inline def setFoods(value: String): Self = StObject.set(x, "foods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoodsUndefined: Self = StObject.set(x, "foods", js.undefined)
+      inline def setFoodsUndefined: Self = StObject.set(x, "foods", js.undefined)
       
-      @scala.inline
-      def setNature(value: String): Self = StObject.set(x, "nature", value.asInstanceOf[js.Any])
+      inline def setNature(value: String): Self = StObject.set(x, "nature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNatureUndefined: Self = StObject.set(x, "nature", js.undefined)
+      inline def setNatureUndefined: Self = StObject.set(x, "nature", js.undefined)
       
-      @scala.inline
-      def setObjects(value: String): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: String): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+      inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
       
-      @scala.inline
-      def setPeople(value: String): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
+      inline def setPeople(value: String): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeopleUndefined: Self = StObject.set(x, "people", js.undefined)
+      inline def setPeopleUndefined: Self = StObject.set(x, "people", js.undefined)
       
-      @scala.inline
-      def setPlaces(value: String): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+      inline def setPlaces(value: String): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
+      inline def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
       
-      @scala.inline
-      def setRecent(value: String): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
+      inline def setRecent(value: String): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
+      inline def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setSymbols(value: String): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: String): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+      inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     }
   }
   
@@ -120,20 +96,16 @@ object anon {
   }
   object PickEmojiDataid {
     
-    @scala.inline
-    def apply(): PickEmojiDataid = {
+    inline def apply(): PickEmojiDataid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickEmojiDataid]
     }
     
-    @scala.inline
-    implicit class PickEmojiDataidMutableBuilder[Self <: PickEmojiDataid] (val x: Self) extends AnyVal {
+    extension [Self <: PickEmojiDataid](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -164,8 +136,7 @@ object anon {
   }
   object RecordCategoryNameReactNo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activity: () => ReactNode,
       custom: () => ReactNode,
       flags: () => ReactNode,
@@ -182,41 +153,29 @@ object anon {
       __obj.asInstanceOf[RecordCategoryNameReactNo]
     }
     
-    @scala.inline
-    implicit class RecordCategoryNameReactNoMutableBuilder[Self <: RecordCategoryNameReactNo] (val x: Self) extends AnyVal {
+    extension [Self <: RecordCategoryNameReactNo](x: Self) {
       
-      @scala.inline
-      def setActivity(value: () => ReactNode): Self = StObject.set(x, "activity", js.Any.fromFunction0(value))
+      inline def setActivity(value: () => ReactNode): Self = StObject.set(x, "activity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCustom(value: () => ReactNode): Self = StObject.set(x, "custom", js.Any.fromFunction0(value))
+      inline def setCustom(value: () => ReactNode): Self = StObject.set(x, "custom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFlags(value: () => ReactNode): Self = StObject.set(x, "flags", js.Any.fromFunction0(value))
+      inline def setFlags(value: () => ReactNode): Self = StObject.set(x, "flags", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFoods(value: () => ReactNode): Self = StObject.set(x, "foods", js.Any.fromFunction0(value))
+      inline def setFoods(value: () => ReactNode): Self = StObject.set(x, "foods", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNature(value: () => ReactNode): Self = StObject.set(x, "nature", js.Any.fromFunction0(value))
+      inline def setNature(value: () => ReactNode): Self = StObject.set(x, "nature", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setObjects(value: () => ReactNode): Self = StObject.set(x, "objects", js.Any.fromFunction0(value))
+      inline def setObjects(value: () => ReactNode): Self = StObject.set(x, "objects", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeople(value: () => ReactNode): Self = StObject.set(x, "people", js.Any.fromFunction0(value))
+      inline def setPeople(value: () => ReactNode): Self = StObject.set(x, "people", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlaces(value: () => ReactNode): Self = StObject.set(x, "places", js.Any.fromFunction0(value))
+      inline def setPlaces(value: () => ReactNode): Self = StObject.set(x, "places", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRecent(value: () => ReactNode): Self = StObject.set(x, "recent", js.Any.fromFunction0(value))
+      inline def setRecent(value: () => ReactNode): Self = StObject.set(x, "recent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSearch(value: () => ReactNode): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
+      inline def setSearch(value: () => ReactNode): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSymbols(value: () => ReactNode): Self = StObject.set(x, "symbols", js.Any.fromFunction0(value))
+      inline def setSymbols(value: () => ReactNode): Self = StObject.set(x, "symbols", js.Any.fromFunction0(value))
     }
   }
   
@@ -247,8 +206,7 @@ object anon {
   }
   object RecordCategoryNamestring {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activity: String,
       custom: String,
       flags: String,
@@ -265,41 +223,29 @@ object anon {
       __obj.asInstanceOf[RecordCategoryNamestring]
     }
     
-    @scala.inline
-    implicit class RecordCategoryNamestringMutableBuilder[Self <: RecordCategoryNamestring] (val x: Self) extends AnyVal {
+    extension [Self <: RecordCategoryNamestring](x: Self) {
       
-      @scala.inline
-      def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+      inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoods(value: String): Self = StObject.set(x, "foods", value.asInstanceOf[js.Any])
+      inline def setFoods(value: String): Self = StObject.set(x, "foods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNature(value: String): Self = StObject.set(x, "nature", value.asInstanceOf[js.Any])
+      inline def setNature(value: String): Self = StObject.set(x, "nature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjects(value: String): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: String): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeople(value: String): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
+      inline def setPeople(value: String): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaces(value: String): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+      inline def setPlaces(value: String): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecent(value: String): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
+      inline def setRecent(value: String): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbols(value: String): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: String): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,8 +268,7 @@ object anon {
   }
   object variantinEmojiSkinEmojiDa {
     
-    @scala.inline
-    def apply(`1`: EmojiData, `2`: EmojiData, `3`: EmojiData, `4`: EmojiData, `5`: EmojiData, `6`: EmojiData): variantinEmojiSkinEmojiDa = {
+    inline def apply(`1`: EmojiData, `2`: EmojiData, `3`: EmojiData, `4`: EmojiData, `5`: EmojiData, `6`: EmojiData): variantinEmojiSkinEmojiDa = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
       __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
@@ -334,26 +279,19 @@ object anon {
       __obj.asInstanceOf[variantinEmojiSkinEmojiDa]
     }
     
-    @scala.inline
-    implicit class variantinEmojiSkinEmojiDaMutableBuilder[Self <: variantinEmojiSkinEmojiDa] (val x: Self) extends AnyVal {
+    extension [Self <: variantinEmojiSkinEmojiDa](x: Self) {
       
-      @scala.inline
-      def set1(value: EmojiData): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: EmojiData): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2(value: EmojiData): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: EmojiData): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3(value: EmojiData): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: EmojiData): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(value: EmojiData): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: EmojiData): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5(value: EmojiData): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      inline def set5(value: EmojiData): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6(value: EmojiData): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      inline def set6(value: EmojiData): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     }
   }
 }

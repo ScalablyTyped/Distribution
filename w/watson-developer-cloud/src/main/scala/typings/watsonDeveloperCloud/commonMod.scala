@@ -10,6 +10,5 @@ object commonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSdkHeaders(serviceName: String, serviceVersion: String, operationId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSdkHeaders")(serviceName.asInstanceOf[js.Any], serviceVersion.asInstanceOf[js.Any], operationId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getSdkHeaders(serviceName: String, serviceVersion: String, operationId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSdkHeaders")(serviceName.asInstanceOf[js.Any], serviceVersion.asInstanceOf[js.Any], operationId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

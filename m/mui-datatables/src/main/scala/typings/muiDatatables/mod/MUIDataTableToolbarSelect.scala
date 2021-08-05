@@ -21,49 +21,35 @@ trait MUIDataTableToolbarSelect extends StObject {
 }
 object MUIDataTableToolbarSelect {
   
-  @scala.inline
-  def apply(options: MUIDataTableOptions): MUIDataTableToolbarSelect = {
+  inline def apply(options: MUIDataTableOptions): MUIDataTableToolbarSelect = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableToolbarSelect]
   }
   
-  @scala.inline
-  implicit class MUIDataTableToolbarSelectMutableBuilder[Self <: MUIDataTableToolbarSelect] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableToolbarSelect](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setDisplayData(value: DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
+    inline def setDisplayData(value: DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
+    inline def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
-    @scala.inline
-    def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
+    inline def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
-    @scala.inline
-    def setOnRowsDelete(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onRowsDelete", js.Any.fromFunction1(value))
+    inline def setOnRowsDelete(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onRowsDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowsDeleteUndefined: Self = StObject.set(x, "onRowsDelete", js.undefined)
+    inline def setOnRowsDeleteUndefined: Self = StObject.set(x, "onRowsDelete", js.undefined)
     
-    @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelected(value: Boolean): Self = StObject.set(x, "rowSelected", value.asInstanceOf[js.Any])
+    inline def setRowSelected(value: Boolean): Self = StObject.set(x, "rowSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
+    inline def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
     
-    @scala.inline
-    def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
+    inline def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
+    inline def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
   }
 }

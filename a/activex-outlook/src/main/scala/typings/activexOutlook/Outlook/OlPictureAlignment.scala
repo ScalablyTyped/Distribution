@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlPictureAlignment extends StObject
 object OlPictureAlignment {
   
-  @scala.inline
-  def olPictureAlignmentLeft: `0` = 0.asInstanceOf[`0`]
+  inline def olPictureAlignmentLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olPictureAlignmentTop: `1` = 1.asInstanceOf[`1`]
+  inline def olPictureAlignmentTop: `1` = 1.asInstanceOf[`1`]
 }

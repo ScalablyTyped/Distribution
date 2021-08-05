@@ -8,6 +8,5 @@ object jsreportXlsxStrings {
   
   @js.native
   sealed trait xlsx extends StObject
-  @scala.inline
-  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
+  inline def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
 }

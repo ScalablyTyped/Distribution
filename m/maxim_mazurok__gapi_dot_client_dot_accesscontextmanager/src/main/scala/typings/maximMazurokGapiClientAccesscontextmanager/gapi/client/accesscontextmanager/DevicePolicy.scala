@@ -26,58 +26,41 @@ trait DevicePolicy extends StObject {
 }
 object DevicePolicy {
   
-  @scala.inline
-  def apply(): DevicePolicy = {
+  inline def apply(): DevicePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DevicePolicy]
   }
   
-  @scala.inline
-  implicit class DevicePolicyMutableBuilder[Self <: DevicePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: DevicePolicy](x: Self) {
     
-    @scala.inline
-    def setAllowedDeviceManagementLevels(value: js.Array[String]): Self = StObject.set(x, "allowedDeviceManagementLevels", value.asInstanceOf[js.Any])
+    inline def setAllowedDeviceManagementLevels(value: js.Array[String]): Self = StObject.set(x, "allowedDeviceManagementLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedDeviceManagementLevelsUndefined: Self = StObject.set(x, "allowedDeviceManagementLevels", js.undefined)
+    inline def setAllowedDeviceManagementLevelsUndefined: Self = StObject.set(x, "allowedDeviceManagementLevels", js.undefined)
     
-    @scala.inline
-    def setAllowedDeviceManagementLevelsVarargs(value: String*): Self = StObject.set(x, "allowedDeviceManagementLevels", js.Array(value :_*))
+    inline def setAllowedDeviceManagementLevelsVarargs(value: String*): Self = StObject.set(x, "allowedDeviceManagementLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedEncryptionStatuses(value: js.Array[String]): Self = StObject.set(x, "allowedEncryptionStatuses", value.asInstanceOf[js.Any])
+    inline def setAllowedEncryptionStatuses(value: js.Array[String]): Self = StObject.set(x, "allowedEncryptionStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedEncryptionStatusesUndefined: Self = StObject.set(x, "allowedEncryptionStatuses", js.undefined)
+    inline def setAllowedEncryptionStatusesUndefined: Self = StObject.set(x, "allowedEncryptionStatuses", js.undefined)
     
-    @scala.inline
-    def setAllowedEncryptionStatusesVarargs(value: String*): Self = StObject.set(x, "allowedEncryptionStatuses", js.Array(value :_*))
+    inline def setAllowedEncryptionStatusesVarargs(value: String*): Self = StObject.set(x, "allowedEncryptionStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setOsConstraints(value: js.Array[OsConstraint]): Self = StObject.set(x, "osConstraints", value.asInstanceOf[js.Any])
+    inline def setOsConstraints(value: js.Array[OsConstraint]): Self = StObject.set(x, "osConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsConstraintsUndefined: Self = StObject.set(x, "osConstraints", js.undefined)
+    inline def setOsConstraintsUndefined: Self = StObject.set(x, "osConstraints", js.undefined)
     
-    @scala.inline
-    def setOsConstraintsVarargs(value: OsConstraint*): Self = StObject.set(x, "osConstraints", js.Array(value :_*))
+    inline def setOsConstraintsVarargs(value: OsConstraint*): Self = StObject.set(x, "osConstraints", js.Array(value :_*))
     
-    @scala.inline
-    def setRequireAdminApproval(value: Boolean): Self = StObject.set(x, "requireAdminApproval", value.asInstanceOf[js.Any])
+    inline def setRequireAdminApproval(value: Boolean): Self = StObject.set(x, "requireAdminApproval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireAdminApprovalUndefined: Self = StObject.set(x, "requireAdminApproval", js.undefined)
+    inline def setRequireAdminApprovalUndefined: Self = StObject.set(x, "requireAdminApproval", js.undefined)
     
-    @scala.inline
-    def setRequireCorpOwned(value: Boolean): Self = StObject.set(x, "requireCorpOwned", value.asInstanceOf[js.Any])
+    inline def setRequireCorpOwned(value: Boolean): Self = StObject.set(x, "requireCorpOwned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireCorpOwnedUndefined: Self = StObject.set(x, "requireCorpOwned", js.undefined)
+    inline def setRequireCorpOwnedUndefined: Self = StObject.set(x, "requireCorpOwned", js.undefined)
     
-    @scala.inline
-    def setRequireScreenlock(value: Boolean): Self = StObject.set(x, "requireScreenlock", value.asInstanceOf[js.Any])
+    inline def setRequireScreenlock(value: Boolean): Self = StObject.set(x, "requireScreenlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireScreenlockUndefined: Self = StObject.set(x, "requireScreenlock", js.undefined)
+    inline def setRequireScreenlockUndefined: Self = StObject.set(x, "requireScreenlock", js.undefined)
   }
 }

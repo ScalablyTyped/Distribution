@@ -32,8 +32,7 @@ trait ButtonHelper extends StObject {
 }
 object ButtonHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     downLabel: String | Double,
     enabled: Boolean,
     getEnabled: () => Boolean,
@@ -47,31 +46,22 @@ object ButtonHelper {
     __obj.asInstanceOf[ButtonHelper]
   }
   
-  @scala.inline
-  implicit class ButtonHelperMutableBuilder[Self <: ButtonHelper] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonHelper](x: Self) {
     
-    @scala.inline
-    def setDownLabel(value: String | Double): Self = StObject.set(x, "downLabel", value.asInstanceOf[js.Any])
+    inline def setDownLabel(value: String | Double): Self = StObject.set(x, "downLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
+    inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOutLabel(value: String | Double): Self = StObject.set(x, "outLabel", value.asInstanceOf[js.Any])
+    inline def setOutLabel(value: String | Double): Self = StObject.set(x, "outLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverLabel(value: String | Double): Self = StObject.set(x, "overLabel", value.asInstanceOf[js.Any])
+    inline def setOverLabel(value: String | Double): Self = StObject.set(x, "overLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTarget(value: MovieClip | Sprite): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: MovieClip | Sprite): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

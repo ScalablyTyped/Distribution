@@ -58,8 +58,7 @@ trait XConfiguration
 }
 object XConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addResource: XResourceId => Unit,
     createClone: () => XCloneable,
@@ -73,19 +72,14 @@ object XConfiguration {
     __obj.asInstanceOf[XConfiguration]
   }
   
-  @scala.inline
-  implicit class XConfigurationMutableBuilder[Self <: XConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: XConfiguration](x: Self) {
     
-    @scala.inline
-    def setAddResource(value: XResourceId => Unit): Self = StObject.set(x, "addResource", js.Any.fromFunction1(value))
+    inline def setAddResource(value: XResourceId => Unit): Self = StObject.set(x, "addResource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetResources(value: (XResourceId, String, AnchorBindingMode) => SafeArray[XResourceId]): Self = StObject.set(x, "getResources", js.Any.fromFunction3(value))
+    inline def setGetResources(value: (XResourceId, String, AnchorBindingMode) => SafeArray[XResourceId]): Self = StObject.set(x, "getResources", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHasResource(value: XResourceId => Boolean): Self = StObject.set(x, "hasResource", js.Any.fromFunction1(value))
+    inline def setHasResource(value: XResourceId => Boolean): Self = StObject.set(x, "hasResource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveResource(value: XResourceId => Unit): Self = StObject.set(x, "removeResource", js.Any.fromFunction1(value))
+    inline def setRemoveResource(value: XResourceId => Unit): Self = StObject.set(x, "removeResource", js.Any.fromFunction1(value))
   }
 }

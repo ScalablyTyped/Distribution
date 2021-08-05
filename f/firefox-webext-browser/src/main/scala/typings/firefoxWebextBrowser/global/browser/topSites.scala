@@ -21,8 +21,6 @@ object topSites {
   
   /* topSites functions */
   /** Gets a list of top sites. */
-  @scala.inline
-  def get(): js.Promise[js.Array[MostVisitedURL]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Array[MostVisitedURL]]]
-  @scala.inline
-  def get(options: GetOptions): js.Promise[js.Array[MostVisitedURL]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MostVisitedURL]]]
+  inline def get(): js.Promise[js.Array[MostVisitedURL]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Array[MostVisitedURL]]]
+  inline def get(options: GetOptions): js.Promise[js.Array[MostVisitedURL]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MostVisitedURL]]]
 }

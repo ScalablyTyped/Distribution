@@ -41,44 +41,32 @@ object typesDescribeIdentityOutputMod {
   }
   object DescribeIdentityOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DescribeIdentityOutput = {
+    inline def apply($metadata: ResponseMetadata): DescribeIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeIdentityOutput]
     }
     
-    @scala.inline
-    implicit class DescribeIdentityOutputMutableBuilder[Self <: DescribeIdentityOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeIdentityOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+      inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+      inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
       
-      @scala.inline
-      def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+      inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
       
-      @scala.inline
-      def setLogins(value: js.Array[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+      inline def setLogins(value: js.Array[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+      inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
       
-      @scala.inline
-      def setLoginsVarargs(value: String*): Self = StObject.set(x, "Logins", js.Array(value :_*))
+      inline def setLoginsVarargs(value: String*): Self = StObject.set(x, "Logins", js.Array(value :_*))
     }
   }
 }

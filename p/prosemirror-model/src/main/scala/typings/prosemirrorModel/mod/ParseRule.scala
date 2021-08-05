@@ -135,142 +135,97 @@ trait ParseRule extends StObject {
 }
 object ParseRule {
   
-  @scala.inline
-  def apply(): ParseRule = {
+  inline def apply(): ParseRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParseRule]
   }
   
-  @scala.inline
-  implicit class ParseRuleMutableBuilder[Self <: ParseRule] (val x: Self) extends AnyVal {
+  extension [Self <: ParseRule](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrsNull: Self = StObject.set(x, "attrs", null)
+    inline def setAttrsNull: Self = StObject.set(x, "attrs", null)
     
-    @scala.inline
-    def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+    inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     
-    @scala.inline
-    def setContentElement(value: String | (js.Function1[/* p */ typings.std.Node, typings.std.Node])): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    inline def setContentElement(value: String | (js.Function1[/* p */ typings.std.Node, typings.std.Node])): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentElementFunction1(value: /* p */ typings.std.Node => typings.std.Node): Self = StObject.set(x, "contentElement", js.Any.fromFunction1(value))
+    inline def setContentElementFunction1(value: /* p */ typings.std.Node => typings.std.Node): Self = StObject.set(x, "contentElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContentElementNull: Self = StObject.set(x, "contentElement", null)
+    inline def setContentElementNull: Self = StObject.set(x, "contentElement", null)
     
-    @scala.inline
-    def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
+    inline def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContextNull: Self = StObject.set(x, "context", null)
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setGetAttrs(value: /* p */ typings.std.Node | String => js.UndefOr[StringDictionary[js.Any] | `false` | Null]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
+    inline def setGetAttrs(value: /* p */ typings.std.Node | String => js.UndefOr[StringDictionary[js.Any] | `false` | Null]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAttrsNull: Self = StObject.set(x, "getAttrs", null)
+    inline def setGetAttrsNull: Self = StObject.set(x, "getAttrs", null)
     
-    @scala.inline
-    def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
+    inline def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
     
-    @scala.inline
-    def setGetContent(value: (/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
+    inline def setGetContent(value: (/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetContentNull: Self = StObject.set(x, "getContent", null)
+    inline def setGetContentNull: Self = StObject.set(x, "getContent", null)
     
-    @scala.inline
-    def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
+    inline def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
     
-    @scala.inline
-    def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreNull: Self = StObject.set(x, "ignore", null)
+    inline def setIgnoreNull: Self = StObject.set(x, "ignore", null)
     
-    @scala.inline
-    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+    inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    @scala.inline
-    def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkNull: Self = StObject.set(x, "mark", null)
+    inline def setMarkNull: Self = StObject.set(x, "mark", null)
     
-    @scala.inline
-    def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+    inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceNull: Self = StObject.set(x, "namespace", null)
+    inline def setNamespaceNull: Self = StObject.set(x, "namespace", null)
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeNull: Self = StObject.set(x, "node", null)
+    inline def setNodeNull: Self = StObject.set(x, "node", null)
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setPreserveWhitespace(value: Boolean | full): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
+    inline def setPreserveWhitespace(value: Boolean | full): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveWhitespaceNull: Self = StObject.set(x, "preserveWhitespace", null)
+    inline def setPreserveWhitespaceNull: Self = StObject.set(x, "preserveWhitespace", null)
     
-    @scala.inline
-    def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
+    inline def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityNull: Self = StObject.set(x, "priority", null)
+    inline def setPriorityNull: Self = StObject.set(x, "priority", null)
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipNull: Self = StObject.set(x, "skip", null)
+    inline def setSkipNull: Self = StObject.set(x, "skip", null)
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNull: Self = StObject.set(x, "tag", null)
+    inline def setTagNull: Self = StObject.set(x, "tag", null)
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait PageLifetimes extends StObject {
 }
 object PageLifetimes {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: () => Unit): PageLifetimes = {
+  inline def apply(hide: () => Unit, show: () => Unit): PageLifetimes = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[PageLifetimes]
   }
   
-  @scala.inline
-  implicit class PageLifetimesMutableBuilder[Self <: PageLifetimes] (val x: Self) extends AnyVal {
+  extension [Self <: PageLifetimes](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

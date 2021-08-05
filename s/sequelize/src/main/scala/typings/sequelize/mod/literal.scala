@@ -10,17 +10,14 @@ trait literal extends StObject {
 }
 object literal {
   
-  @scala.inline
-  def apply(`val`: js.Any): literal = {
+  inline def apply(`val`: js.Any): literal = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[literal]
   }
   
-  @scala.inline
-  implicit class literalMutableBuilder[Self <: literal] (val x: Self) extends AnyVal {
+  extension [Self <: literal](x: Self) {
     
-    @scala.inline
-    def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

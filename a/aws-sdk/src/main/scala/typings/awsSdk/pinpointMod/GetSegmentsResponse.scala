@@ -10,16 +10,13 @@ trait GetSegmentsResponse extends StObject {
 }
 object GetSegmentsResponse {
   
-  @scala.inline
-  def apply(SegmentsResponse: SegmentsResponse): GetSegmentsResponse = {
+  inline def apply(SegmentsResponse: SegmentsResponse): GetSegmentsResponse = {
     val __obj = js.Dynamic.literal(SegmentsResponse = SegmentsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentsResponse]
   }
   
-  @scala.inline
-  implicit class GetSegmentsResponseMutableBuilder[Self <: GetSegmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSegmentsResponse](x: Self) {
     
-    @scala.inline
-    def setSegmentsResponse(value: SegmentsResponse): Self = StObject.set(x, "SegmentsResponse", value.asInstanceOf[js.Any])
+    inline def setSegmentsResponse(value: SegmentsResponse): Self = StObject.set(x, "SegmentsResponse", value.asInstanceOf[js.Any])
   }
 }

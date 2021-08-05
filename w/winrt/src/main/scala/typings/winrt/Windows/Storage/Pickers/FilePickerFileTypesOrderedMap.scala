@@ -14,8 +14,7 @@ trait FilePickerFileTypesOrderedMap
      with IMap[String, IVector[String]]
 object FilePickerFileTypesOrderedMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     first: () => IIterator[IKeyValuePair[String, IVector[String]]],
     getView: () => IMapView[String, IVector[String]],

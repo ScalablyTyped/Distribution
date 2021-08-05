@@ -17,31 +17,23 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(): Environment = {
+  inline def apply(): Environment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setBenchmarkIndex(value: Double): Self = StObject.set(x, "benchmarkIndex", value.asInstanceOf[js.Any])
+    inline def setBenchmarkIndex(value: Double): Self = StObject.set(x, "benchmarkIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenchmarkIndexUndefined: Self = StObject.set(x, "benchmarkIndex", js.undefined)
+    inline def setBenchmarkIndexUndefined: Self = StObject.set(x, "benchmarkIndex", js.undefined)
     
-    @scala.inline
-    def setHostUserAgent(value: String): Self = StObject.set(x, "hostUserAgent", value.asInstanceOf[js.Any])
+    inline def setHostUserAgent(value: String): Self = StObject.set(x, "hostUserAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUserAgentUndefined: Self = StObject.set(x, "hostUserAgent", js.undefined)
+    inline def setHostUserAgentUndefined: Self = StObject.set(x, "hostUserAgent", js.undefined)
     
-    @scala.inline
-    def setNetworkUserAgent(value: String): Self = StObject.set(x, "networkUserAgent", value.asInstanceOf[js.Any])
+    inline def setNetworkUserAgent(value: String): Self = StObject.set(x, "networkUserAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUserAgentUndefined: Self = StObject.set(x, "networkUserAgent", js.undefined)
+    inline def setNetworkUserAgentUndefined: Self = StObject.set(x, "networkUserAgent", js.undefined)
   }
 }

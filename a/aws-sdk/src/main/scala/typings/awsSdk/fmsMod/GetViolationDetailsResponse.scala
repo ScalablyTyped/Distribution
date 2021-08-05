@@ -13,19 +13,15 @@ trait GetViolationDetailsResponse extends StObject {
 }
 object GetViolationDetailsResponse {
   
-  @scala.inline
-  def apply(): GetViolationDetailsResponse = {
+  inline def apply(): GetViolationDetailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetViolationDetailsResponse]
   }
   
-  @scala.inline
-  implicit class GetViolationDetailsResponseMutableBuilder[Self <: GetViolationDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetViolationDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setViolationDetail(value: ViolationDetail): Self = StObject.set(x, "ViolationDetail", value.asInstanceOf[js.Any])
+    inline def setViolationDetail(value: ViolationDetail): Self = StObject.set(x, "ViolationDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationDetailUndefined: Self = StObject.set(x, "ViolationDetail", js.undefined)
+    inline def setViolationDetailUndefined: Self = StObject.set(x, "ViolationDetail", js.undefined)
   }
 }

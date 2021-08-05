@@ -13,19 +13,15 @@ trait DeleteSqlInjectionMatchSetResponse extends StObject {
 }
 object DeleteSqlInjectionMatchSetResponse {
   
-  @scala.inline
-  def apply(): DeleteSqlInjectionMatchSetResponse = {
+  inline def apply(): DeleteSqlInjectionMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSqlInjectionMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteSqlInjectionMatchSetResponseMutableBuilder[Self <: DeleteSqlInjectionMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSqlInjectionMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

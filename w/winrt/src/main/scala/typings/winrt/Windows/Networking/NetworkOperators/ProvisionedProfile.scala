@@ -10,8 +10,7 @@ trait ProvisionedProfile
      with IProvisionedProfile
 object ProvisionedProfile {
   
-  @scala.inline
-  def apply(updateCost: NetworkCostType => Unit, updateUsage: ProfileUsage => Unit): ProvisionedProfile = {
+  inline def apply(updateCost: NetworkCostType => Unit, updateUsage: ProfileUsage => Unit): ProvisionedProfile = {
     val __obj = js.Dynamic.literal(updateCost = js.Any.fromFunction1(updateCost), updateUsage = js.Any.fromFunction1(updateUsage))
     __obj.asInstanceOf[ProvisionedProfile]
   }

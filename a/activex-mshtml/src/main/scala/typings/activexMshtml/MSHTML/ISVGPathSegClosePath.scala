@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISVGPathSegClosePath extends StObject {
   
-  @JSName("MSHTML.ISVGPathSegClosePath_typekey")
+  /* private */ @JSName("MSHTML.ISVGPathSegClosePath_typekey")
   var MSHTMLDotISVGPathSegClosePath_typekey: ISVGPathSegClosePath
 }
 object ISVGPathSegClosePath {
   
-  @scala.inline
-  def apply(MSHTMLDotISVGPathSegClosePath_typekey: ISVGPathSegClosePath): ISVGPathSegClosePath = {
+  inline def apply(MSHTMLDotISVGPathSegClosePath_typekey: ISVGPathSegClosePath): ISVGPathSegClosePath = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("MSHTML.ISVGPathSegClosePath_typekey")(MSHTMLDotISVGPathSegClosePath_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISVGPathSegClosePath]
   }
   
-  @scala.inline
-  implicit class ISVGPathSegClosePathMutableBuilder[Self <: ISVGPathSegClosePath] (val x: Self) extends AnyVal {
+  extension [Self <: ISVGPathSegClosePath](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotISVGPathSegClosePath_typekey(value: ISVGPathSegClosePath): Self = StObject.set(x, "MSHTML.ISVGPathSegClosePath_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotISVGPathSegClosePath_typekey(value: ISVGPathSegClosePath): Self = StObject.set(x, "MSHTML.ISVGPathSegClosePath_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -39,46 +39,34 @@ object typesEndpointSendConfigurationMod {
   }
   object EndpointSendConfiguration {
     
-    @scala.inline
-    def apply(): EndpointSendConfiguration = {
+    inline def apply(): EndpointSendConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointSendConfiguration]
     }
     
-    @scala.inline
-    implicit class EndpointSendConfigurationMutableBuilder[Self <: EndpointSendConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointSendConfiguration](x: Self) {
       
-      @scala.inline
-      def setBodyOverride(value: String): Self = StObject.set(x, "BodyOverride", value.asInstanceOf[js.Any])
+      inline def setBodyOverride(value: String): Self = StObject.set(x, "BodyOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyOverrideUndefined: Self = StObject.set(x, "BodyOverride", js.undefined)
+      inline def setBodyOverrideUndefined: Self = StObject.set(x, "BodyOverride", js.undefined)
       
-      @scala.inline
-      def setContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
       
-      @scala.inline
-      def setRawContent(value: String): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
+      inline def setRawContent(value: String): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
+      inline def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
       
-      @scala.inline
-      def setSubstitutions(
+      inline def setSubstitutions(
         value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
       ): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+      inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
       
-      @scala.inline
-      def setTitleOverride(value: String): Self = StObject.set(x, "TitleOverride", value.asInstanceOf[js.Any])
+      inline def setTitleOverride(value: String): Self = StObject.set(x, "TitleOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleOverrideUndefined: Self = StObject.set(x, "TitleOverride", js.undefined)
+      inline def setTitleOverrideUndefined: Self = StObject.set(x, "TitleOverride", js.undefined)
     }
   }
   
@@ -100,26 +88,20 @@ object typesEndpointSendConfigurationMod {
   }
   object UnmarshalledEndpointSendConfiguration {
     
-    @scala.inline
-    def apply(): UnmarshalledEndpointSendConfiguration = {
+    inline def apply(): UnmarshalledEndpointSendConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEndpointSendConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEndpointSendConfigurationMutableBuilder[Self <: UnmarshalledEndpointSendConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEndpointSendConfiguration](x: Self) {
       
-      @scala.inline
-      def setContext(value: StringDictionary[String]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
       
-      @scala.inline
-      def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
+      inline def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+      inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     }
   }
 }

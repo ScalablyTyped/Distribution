@@ -34,8 +34,7 @@ trait sizeRangeSizeRangeParams
 }
 object sizeRangeSizeRangeParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | GeoJSONLayer,
@@ -46,19 +45,14 @@ object sizeRangeSizeRangeParams {
     __obj.asInstanceOf[sizeRangeSizeRangeParams]
   }
   
-  @scala.inline
-  implicit class sizeRangeSizeRangeParamsMutableBuilder[Self <: sizeRangeSizeRangeParams] (val x: Self) extends AnyVal {
+  extension [Self <: sizeRangeSizeRangeParams](x: Self) {
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

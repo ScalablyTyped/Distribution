@@ -95,23 +95,16 @@ object fetchMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Response]
+    inline def error(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Response]
     
-    @scala.inline
-    def redirect(url: String): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[Response]
-    @scala.inline
-    def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def redirect(url: String): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[Response]
+    inline def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
-  @scala.inline
-  def fetch(): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.Promise[Response]]
-  @scala.inline
-  def fetch(input: Unit, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
-  @scala.inline
-  def fetch(input: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
-  @scala.inline
-  def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  inline def fetch(): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.Promise[Response]]
+  inline def fetch(input: Unit, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  inline def fetch(input: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  inline def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
   type BodyInit = ArrayBuffer | ArrayBufferView | String
   
@@ -131,32 +124,23 @@ object fetchMod {
   trait ReferrerPolicy extends StObject
   object ReferrerPolicy {
     
-    @scala.inline
-    def _empty: typings.apolloServerEnv.apolloServerEnvStrings._empty = "".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings._empty]
+    inline def _empty: typings.apolloServerEnv.apolloServerEnvStrings._empty = "".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings._empty]
     
-    @scala.inline
-    def `no-referrer`: typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer`]
+    inline def `no-referrer`: typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer`]
     
-    @scala.inline
-    def `no-referrer-when-downgrade`: typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer-when-downgrade`]
+    inline def `no-referrer-when-downgrade`: typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-referrer-when-downgrade`]
     
-    @scala.inline
-    def origin: typings.apolloServerEnv.apolloServerEnvStrings.origin = "origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.origin]
+    inline def origin: typings.apolloServerEnv.apolloServerEnvStrings.origin = "origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.origin]
     
-    @scala.inline
-    def `origin-when-cross-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`origin-when-cross-origin`]
+    inline def `origin-when-cross-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`origin-when-cross-origin`]
     
-    @scala.inline
-    def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`same-origin`]
+    inline def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`same-origin`]
     
-    @scala.inline
-    def `strict-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin`]
+    inline def `strict-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin`]
     
-    @scala.inline
-    def `strict-origin-when-cross-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin-when-cross-origin`]
+    inline def `strict-origin-when-cross-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`strict-origin-when-cross-origin`]
     
-    @scala.inline
-    def `unsafe-url`: typings.apolloServerEnv.apolloServerEnvStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`unsafe-url`]
+    inline def `unsafe-url`: typings.apolloServerEnv.apolloServerEnvStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`unsafe-url`]
   }
   
   type RequestAgent = Agent | typings.node.httpsMod.Agent
@@ -172,23 +156,17 @@ object fetchMod {
   trait RequestCache extends StObject
   object RequestCache {
     
-    @scala.inline
-    def default: typings.apolloServerEnv.apolloServerEnvStrings.default = "default".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.default]
+    inline def default: typings.apolloServerEnv.apolloServerEnvStrings.default = "default".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.default]
     
-    @scala.inline
-    def `force-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`force-cache` = "force-cache".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`force-cache`]
+    inline def `force-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`force-cache` = "force-cache".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`force-cache`]
     
-    @scala.inline
-    def `no-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cache` = "no-cache".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-cache`]
+    inline def `no-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cache` = "no-cache".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-cache`]
     
-    @scala.inline
-    def `no-store`: typings.apolloServerEnv.apolloServerEnvStrings.`no-store` = "no-store".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-store`]
+    inline def `no-store`: typings.apolloServerEnv.apolloServerEnvStrings.`no-store` = "no-store".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-store`]
     
-    @scala.inline
-    def `only-if-cached`: typings.apolloServerEnv.apolloServerEnvStrings.`only-if-cached` = "only-if-cached".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`only-if-cached`]
+    inline def `only-if-cached`: typings.apolloServerEnv.apolloServerEnvStrings.`only-if-cached` = "only-if-cached".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`only-if-cached`]
     
-    @scala.inline
-    def reload: typings.apolloServerEnv.apolloServerEnvStrings.reload = "reload".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.reload]
+    inline def reload: typings.apolloServerEnv.apolloServerEnvStrings.reload = "reload".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.reload]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -199,14 +177,11 @@ object fetchMod {
   trait RequestCredentials extends StObject
   object RequestCredentials {
     
-    @scala.inline
-    def include: typings.apolloServerEnv.apolloServerEnvStrings.include = "include".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.include]
+    inline def include: typings.apolloServerEnv.apolloServerEnvStrings.include = "include".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.include]
     
-    @scala.inline
-    def omit: typings.apolloServerEnv.apolloServerEnvStrings.omit = "omit".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.omit]
+    inline def omit: typings.apolloServerEnv.apolloServerEnvStrings.omit = "omit".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.omit]
     
-    @scala.inline
-    def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`same-origin`]
+    inline def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`same-origin`]
   }
   
   type RequestInfo = Request | String
@@ -250,113 +225,78 @@ object fetchMod {
   }
   object RequestInit {
     
-    @scala.inline
-    def apply(): RequestInit = {
+    inline def apply(): RequestInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestInit]
     }
     
-    @scala.inline
-    implicit class RequestInitMutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
+    extension [Self <: RequestInit](x: Self) {
       
-      @scala.inline
-      def setAgent(value: RequestAgent | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: RequestAgent | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCache(value: RequestCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: RequestCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCf(value: StringDictionary[js.Any]): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
+      inline def setCf(value: StringDictionary[js.Any]): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCfUndefined: Self = StObject.set(x, "cf", js.undefined)
+      inline def setCfUndefined: Self = StObject.set(x, "cf", js.undefined)
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      inline def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+      inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMode(value: RequestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: RequestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      @scala.inline
-      def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+      inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -369,17 +309,13 @@ object fetchMod {
   trait RequestMode extends StObject
   object RequestMode {
     
-    @scala.inline
-    def cors: typings.apolloServerEnv.apolloServerEnvStrings.cors = "cors".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.cors]
+    inline def cors: typings.apolloServerEnv.apolloServerEnvStrings.cors = "cors".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.cors]
     
-    @scala.inline
-    def navigate: typings.apolloServerEnv.apolloServerEnvStrings.navigate = "navigate".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.navigate]
+    inline def navigate: typings.apolloServerEnv.apolloServerEnvStrings.navigate = "navigate".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.navigate]
     
-    @scala.inline
-    def `no-cors`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cors` = "no-cors".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-cors`]
+    inline def `no-cors`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cors` = "no-cors".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-cors`]
     
-    @scala.inline
-    def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`same-origin`]
+    inline def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`same-origin`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -390,14 +326,11 @@ object fetchMod {
   trait RequestRedirect extends StObject
   object RequestRedirect {
     
-    @scala.inline
-    def error: typings.apolloServerEnv.apolloServerEnvStrings.error = "error".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.error]
+    inline def error: typings.apolloServerEnv.apolloServerEnvStrings.error = "error".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.error]
     
-    @scala.inline
-    def follow: typings.apolloServerEnv.apolloServerEnvStrings.follow = "follow".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.follow]
+    inline def follow: typings.apolloServerEnv.apolloServerEnvStrings.follow = "follow".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.follow]
     
-    @scala.inline
-    def manual: typings.apolloServerEnv.apolloServerEnvStrings.manual = "manual".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.manual]
+    inline def manual: typings.apolloServerEnv.apolloServerEnvStrings.manual = "manual".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.manual]
   }
   
   trait ResponseInit extends StObject {
@@ -413,41 +346,30 @@ object fetchMod {
   }
   object ResponseInit {
     
-    @scala.inline
-    def apply(): ResponseInit = {
+    inline def apply(): ResponseInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseInit]
     }
     
-    @scala.inline
-    implicit class ResponseInitMutableBuilder[Self <: ResponseInit] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseInit](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

@@ -37,8 +37,7 @@ trait XDispatchProvider
 }
 object XDispatchProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
@@ -49,13 +48,10 @@ object XDispatchProvider {
     __obj.asInstanceOf[XDispatchProvider]
   }
   
-  @scala.inline
-  implicit class XDispatchProviderMutableBuilder[Self <: XDispatchProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchProvider](x: Self) {
     
-    @scala.inline
-    def setQueryDispatch(value: (URL, String, Double) => XDispatch): Self = StObject.set(x, "queryDispatch", js.Any.fromFunction3(value))
+    inline def setQueryDispatch(value: (URL, String, Double) => XDispatch): Self = StObject.set(x, "queryDispatch", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueryDispatches(value: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch]): Self = StObject.set(x, "queryDispatches", js.Any.fromFunction1(value))
+    inline def setQueryDispatches(value: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch]): Self = StObject.set(x, "queryDispatches", js.Any.fromFunction1(value))
   }
 }

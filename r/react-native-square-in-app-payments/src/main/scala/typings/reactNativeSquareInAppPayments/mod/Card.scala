@@ -29,8 +29,7 @@ trait Card extends StObject {
 }
 object Card {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brand: Brand,
     expirationMonth: Double,
     expirationYear: Double,
@@ -43,31 +42,22 @@ object Card {
     __obj.asInstanceOf[Card]
   }
   
-  @scala.inline
-  implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
+  extension [Self <: Card](x: Self) {
     
-    @scala.inline
-    def setBrand(value: Brand): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: Brand): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    inline def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationYear(value: Double): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    inline def setExpirationYear(value: Double): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFourDigits(value: String): Self = StObject.set(x, "lastFourDigits", value.asInstanceOf[js.Any])
+    inline def setLastFourDigits(value: String): Self = StObject.set(x, "lastFourDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeNull: Self = StObject.set(x, "postalCode", null)
+    inline def setPostalCodeNull: Self = StObject.set(x, "postalCode", null)
     
-    @scala.inline
-    def setPrepaidType(value: CardPrepaidType): Self = StObject.set(x, "prepaidType", value.asInstanceOf[js.Any])
+    inline def setPrepaidType(value: CardPrepaidType): Self = StObject.set(x, "prepaidType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

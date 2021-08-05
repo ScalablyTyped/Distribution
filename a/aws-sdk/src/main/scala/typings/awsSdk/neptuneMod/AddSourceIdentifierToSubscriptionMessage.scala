@@ -18,19 +18,15 @@ trait AddSourceIdentifierToSubscriptionMessage extends StObject {
 }
 object AddSourceIdentifierToSubscriptionMessage {
   
-  @scala.inline
-  def apply(SourceIdentifier: String, SubscriptionName: String): AddSourceIdentifierToSubscriptionMessage = {
+  inline def apply(SourceIdentifier: String, SubscriptionName: String): AddSourceIdentifierToSubscriptionMessage = {
     val __obj = js.Dynamic.literal(SourceIdentifier = SourceIdentifier.asInstanceOf[js.Any], SubscriptionName = SubscriptionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddSourceIdentifierToSubscriptionMessage]
   }
   
-  @scala.inline
-  implicit class AddSourceIdentifierToSubscriptionMessageMutableBuilder[Self <: AddSourceIdentifierToSubscriptionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AddSourceIdentifierToSubscriptionMessage](x: Self) {
     
-    @scala.inline
-    def setSourceIdentifier(value: String): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceIdentifier(value: String): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
+    inline def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
   }
 }

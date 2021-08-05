@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcDataObjectType extends StObject
 object AcDataObjectType {
   
-  @scala.inline
-  def acActiveDataObject: `-1` = -1.asInstanceOf[`-1`]
+  inline def acActiveDataObject: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def acDataForm: `2` = 2.asInstanceOf[`2`]
+  inline def acDataForm: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acDataFunction: `10` = 10.asInstanceOf[`10`]
+  inline def acDataFunction: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def acDataQuery: `1` = 1.asInstanceOf[`1`]
+  inline def acDataQuery: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acDataReport: `3` = 3.asInstanceOf[`3`]
+  inline def acDataReport: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acDataServerView: `7` = 7.asInstanceOf[`7`]
+  inline def acDataServerView: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def acDataStoredProcedure: `9` = 9.asInstanceOf[`9`]
+  inline def acDataStoredProcedure: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def acDataTable: `0` = 0.asInstanceOf[`0`]
+  inline def acDataTable: `0` = 0.asInstanceOf[`0`]
 }

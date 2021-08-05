@@ -38,43 +38,31 @@ trait ListJobsInput extends StObject {
 }
 object ListJobsInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): ListJobsInput = {
+  inline def apply(accountId: String, vaultName: String): ListJobsInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobsInput]
   }
   
-  @scala.inline
-  implicit class ListJobsInputMutableBuilder[Self <: ListJobsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+    inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setStatuscode(value: String): Self = StObject.set(x, "statuscode", value.asInstanceOf[js.Any])
+    inline def setStatuscode(value: String): Self = StObject.set(x, "statuscode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatuscodeUndefined: Self = StObject.set(x, "statuscode", js.undefined)
+    inline def setStatuscodeUndefined: Self = StObject.set(x, "statuscode", js.undefined)
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

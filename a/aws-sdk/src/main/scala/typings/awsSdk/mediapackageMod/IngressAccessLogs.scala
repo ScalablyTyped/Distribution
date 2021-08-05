@@ -13,19 +13,15 @@ trait IngressAccessLogs extends StObject {
 }
 object IngressAccessLogs {
   
-  @scala.inline
-  def apply(): IngressAccessLogs = {
+  inline def apply(): IngressAccessLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngressAccessLogs]
   }
   
-  @scala.inline
-  implicit class IngressAccessLogsMutableBuilder[Self <: IngressAccessLogs] (val x: Self) extends AnyVal {
+  extension [Self <: IngressAccessLogs](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: string): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: string): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
   }
 }

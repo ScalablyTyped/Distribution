@@ -61,29 +61,22 @@ object mod {
   }
   object PortalProps {
     
-    @scala.inline
-    def apply(): PortalProps = {
+    inline def apply(): PortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortalProps]
     }
     
-    @scala.inline
-    implicit class PortalPropsMutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNull: Self = StObject.set(x, "node", null)
+      inline def setNodeNull: Self = StObject.set(x, "node", null)
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     }
   }
   
@@ -110,62 +103,44 @@ object mod {
   }
   object PortalWithStateProps {
     
-    @scala.inline
-    def apply(children: PortalFunctionParams => ReactNode): PortalWithStateProps = {
+    inline def apply(children: PortalFunctionParams => ReactNode): PortalWithStateProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[PortalWithStateProps]
     }
     
-    @scala.inline
-    implicit class PortalWithStatePropsMutableBuilder[Self <: PortalWithStateProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalWithStateProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: PortalFunctionParams => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: PortalFunctionParams => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+      inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+      inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
       
-      @scala.inline
-      def setCloseOnOutsideClick(value: Boolean): Self = StObject.set(x, "closeOnOutsideClick", value.asInstanceOf[js.Any])
+      inline def setCloseOnOutsideClick(value: Boolean): Self = StObject.set(x, "closeOnOutsideClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnOutsideClickUndefined: Self = StObject.set(x, "closeOnOutsideClick", js.undefined)
+      inline def setCloseOnOutsideClickUndefined: Self = StObject.set(x, "closeOnOutsideClick", js.undefined)
       
-      @scala.inline
-      def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
+      inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
+      inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
-      @scala.inline
-      def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNull: Self = StObject.set(x, "node", null)
+      inline def setNodeNull: Self = StObject.set(x, "node", null)
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOpenByClickOn(value: ReactElement): Self = StObject.set(x, "openByClickOn", value.asInstanceOf[js.Any])
+      inline def setOpenByClickOn(value: ReactElement): Self = StObject.set(x, "openByClickOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenByClickOnUndefined: Self = StObject.set(x, "openByClickOn", js.undefined)
+      inline def setOpenByClickOnUndefined: Self = StObject.set(x, "openByClickOn", js.undefined)
     }
   }
 }

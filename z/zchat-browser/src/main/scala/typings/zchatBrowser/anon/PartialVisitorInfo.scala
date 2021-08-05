@@ -15,31 +15,23 @@ trait PartialVisitorInfo extends StObject {
 }
 object PartialVisitorInfo {
   
-  @scala.inline
-  def apply(): PartialVisitorInfo = {
+  inline def apply(): PartialVisitorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialVisitorInfo]
   }
   
-  @scala.inline
-  implicit class PartialVisitorInfoMutableBuilder[Self <: PartialVisitorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PartialVisitorInfo](x: Self) {
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+    inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
   }
 }

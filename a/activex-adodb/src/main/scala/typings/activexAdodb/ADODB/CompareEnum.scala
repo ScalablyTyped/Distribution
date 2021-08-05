@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompareEnum extends StObject
 object CompareEnum {
   
-  @scala.inline
-  def adCompareEqual: `1` = 1.asInstanceOf[`1`]
+  inline def adCompareEqual: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adCompareGreaterThan: `2` = 2.asInstanceOf[`2`]
+  inline def adCompareGreaterThan: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adCompareLessThan: `0` = 0.asInstanceOf[`0`]
+  inline def adCompareLessThan: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adCompareNotComparable: `4` = 4.asInstanceOf[`4`]
+  inline def adCompareNotComparable: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adCompareNotEqual: `3` = 3.asInstanceOf[`3`]
+  inline def adCompareNotEqual: `3` = 3.asInstanceOf[`3`]
 }

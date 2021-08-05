@@ -71,76 +71,53 @@ trait ABOUTPAGE extends StObject {
 }
 object ABOUTPAGE {
   
-  @scala.inline
-  def apply(): ABOUTPAGE = {
+  inline def apply(): ABOUTPAGE = {
     val __obj = js.Dynamic.literal(ABOUT_PAGE = "about_page", APP_LAUNCHER = "app_launcher", BACKGROUND = "background", CHROME_INTERNAL = "chrome_internal", COMMAND_LINE = "command_line", CONTEXT_MENU = "context_menu", EPHEMERAL_APP = "ephemeral_app", EXTENSIONS_PAGE = "extensions_page", FILE_HANDLER = "file_handler", INSTALLED_NOTIFICATION = "installed_notification", KEYBOARD = "keyboard", KIOSK = "kiosk", LOAD_AND_LAUNCH = "load_and_launch", MANAGEMENT_API = "management_api", NEW_TAB_PAGE = "new_tab_page", RELOAD = "reload", RESTART = "restart", SYSTEM_TRAY = "system_tray", TEST = "test", UNTRACKED = "untracked", URL_HANDLER = "url_handler")
     __obj.asInstanceOf[ABOUTPAGE]
   }
   
-  @scala.inline
-  implicit class ABOUTPAGEMutableBuilder[Self <: ABOUTPAGE] (val x: Self) extends AnyVal {
+  extension [Self <: ABOUTPAGE](x: Self) {
     
-    @scala.inline
-    def setABOUT_PAGE(value: about_page_): Self = StObject.set(x, "ABOUT_PAGE", value.asInstanceOf[js.Any])
+    inline def setABOUT_PAGE(value: about_page_): Self = StObject.set(x, "ABOUT_PAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPP_LAUNCHER(value: app_launcher_): Self = StObject.set(x, "APP_LAUNCHER", value.asInstanceOf[js.Any])
+    inline def setAPP_LAUNCHER(value: app_launcher_): Self = StObject.set(x, "APP_LAUNCHER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBACKGROUND(value: background_): Self = StObject.set(x, "BACKGROUND", value.asInstanceOf[js.Any])
+    inline def setBACKGROUND(value: background_): Self = StObject.set(x, "BACKGROUND", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCHROME_INTERNAL(value: chrome_internal_): Self = StObject.set(x, "CHROME_INTERNAL", value.asInstanceOf[js.Any])
+    inline def setCHROME_INTERNAL(value: chrome_internal_): Self = StObject.set(x, "CHROME_INTERNAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMMAND_LINE(value: command_line_): Self = StObject.set(x, "COMMAND_LINE", value.asInstanceOf[js.Any])
+    inline def setCOMMAND_LINE(value: command_line_): Self = StObject.set(x, "COMMAND_LINE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCONTEXT_MENU(value: context_menu_): Self = StObject.set(x, "CONTEXT_MENU", value.asInstanceOf[js.Any])
+    inline def setCONTEXT_MENU(value: context_menu_): Self = StObject.set(x, "CONTEXT_MENU", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEPHEMERAL_APP(value: ephemeral_app_): Self = StObject.set(x, "EPHEMERAL_APP", value.asInstanceOf[js.Any])
+    inline def setEPHEMERAL_APP(value: ephemeral_app_): Self = StObject.set(x, "EPHEMERAL_APP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXTENSIONS_PAGE(value: extensions_page_): Self = StObject.set(x, "EXTENSIONS_PAGE", value.asInstanceOf[js.Any])
+    inline def setEXTENSIONS_PAGE(value: extensions_page_): Self = StObject.set(x, "EXTENSIONS_PAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFILE_HANDLER(value: file_handler_): Self = StObject.set(x, "FILE_HANDLER", value.asInstanceOf[js.Any])
+    inline def setFILE_HANDLER(value: file_handler_): Self = StObject.set(x, "FILE_HANDLER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINSTALLED_NOTIFICATION(value: installed_notification_): Self = StObject.set(x, "INSTALLED_NOTIFICATION", value.asInstanceOf[js.Any])
+    inline def setINSTALLED_NOTIFICATION(value: installed_notification_): Self = StObject.set(x, "INSTALLED_NOTIFICATION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEYBOARD(value: keyboard_): Self = StObject.set(x, "KEYBOARD", value.asInstanceOf[js.Any])
+    inline def setKEYBOARD(value: keyboard_): Self = StObject.set(x, "KEYBOARD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKIOSK(value: kiosk_): Self = StObject.set(x, "KIOSK", value.asInstanceOf[js.Any])
+    inline def setKIOSK(value: kiosk_): Self = StObject.set(x, "KIOSK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOAD_AND_LAUNCH(value: load_and_launch_): Self = StObject.set(x, "LOAD_AND_LAUNCH", value.asInstanceOf[js.Any])
+    inline def setLOAD_AND_LAUNCH(value: load_and_launch_): Self = StObject.set(x, "LOAD_AND_LAUNCH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMANAGEMENT_API(value: management_api_): Self = StObject.set(x, "MANAGEMENT_API", value.asInstanceOf[js.Any])
+    inline def setMANAGEMENT_API(value: management_api_): Self = StObject.set(x, "MANAGEMENT_API", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNEW_TAB_PAGE(value: new_tab_page_): Self = StObject.set(x, "NEW_TAB_PAGE", value.asInstanceOf[js.Any])
+    inline def setNEW_TAB_PAGE(value: new_tab_page_): Self = StObject.set(x, "NEW_TAB_PAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRELOAD(value: reload_): Self = StObject.set(x, "RELOAD", value.asInstanceOf[js.Any])
+    inline def setRELOAD(value: reload_): Self = StObject.set(x, "RELOAD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRESTART(value: restart_): Self = StObject.set(x, "RESTART", value.asInstanceOf[js.Any])
+    inline def setRESTART(value: restart_): Self = StObject.set(x, "RESTART", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSYSTEM_TRAY(value: system_tray_): Self = StObject.set(x, "SYSTEM_TRAY", value.asInstanceOf[js.Any])
+    inline def setSYSTEM_TRAY(value: system_tray_): Self = StObject.set(x, "SYSTEM_TRAY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEST(value: test_): Self = StObject.set(x, "TEST", value.asInstanceOf[js.Any])
+    inline def setTEST(value: test_): Self = StObject.set(x, "TEST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNTRACKED(value: untracked_): Self = StObject.set(x, "UNTRACKED", value.asInstanceOf[js.Any])
+    inline def setUNTRACKED(value: untracked_): Self = StObject.set(x, "UNTRACKED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL_HANDLER(value: url_handler_): Self = StObject.set(x, "URL_HANDLER", value.asInstanceOf[js.Any])
+    inline def setURL_HANDLER(value: url_handler_): Self = StObject.set(x, "URL_HANDLER", value.asInstanceOf[js.Any])
   }
 }

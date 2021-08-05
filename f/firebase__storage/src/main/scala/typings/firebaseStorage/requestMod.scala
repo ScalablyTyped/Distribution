@@ -32,27 +32,18 @@ object requestMod {
     var xhr: XhrIo | Null = js.native
   }
   
-  @scala.inline
-  def addAuthHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAuthHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addAuthHeader(headers: Headers, authToken: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAuthHeader_")(headers.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAuthHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAuthHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addAuthHeader(headers: Headers, authToken: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAuthHeader_")(headers.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addGmpidHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGmpidHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addGmpidHeader(headers: Headers, appId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addGmpidHeader_")(headers.asInstanceOf[js.Any], appId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addGmpidHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGmpidHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addGmpidHeader(headers: Headers, appId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addGmpidHeader_")(headers.asInstanceOf[js.Any], appId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addVersionHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addVersionHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addVersionHeader(headers: Headers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addVersionHeader_")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: String, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
-  @scala.inline
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: Null, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
-  @scala.inline
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: String, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
-  @scala.inline
-  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: Null, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
+  inline def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: String, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
+  inline def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: Null, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
+  inline def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: String, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
+  inline def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: Null, pool: XhrIoPool): Request[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRequest")(requestInfo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], pool.asInstanceOf[js.Any])).asInstanceOf[Request[T]]
   
   @js.native
   trait Request[T] extends StObject {

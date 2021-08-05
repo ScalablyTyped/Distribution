@@ -13,19 +13,15 @@ trait GetSipRuleResponse extends StObject {
 }
 object GetSipRuleResponse {
   
-  @scala.inline
-  def apply(): GetSipRuleResponse = {
+  inline def apply(): GetSipRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSipRuleResponse]
   }
   
-  @scala.inline
-  implicit class GetSipRuleResponseMutableBuilder[Self <: GetSipRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSipRuleResponse](x: Self) {
     
-    @scala.inline
-    def setSipRule(value: SipRule): Self = StObject.set(x, "SipRule", value.asInstanceOf[js.Any])
+    inline def setSipRule(value: SipRule): Self = StObject.set(x, "SipRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipRuleUndefined: Self = StObject.set(x, "SipRule", js.undefined)
+    inline def setSipRuleUndefined: Self = StObject.set(x, "SipRule", js.undefined)
   }
 }

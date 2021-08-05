@@ -23,22 +23,17 @@ trait OriginRequestPolicy extends StObject {
 }
 object OriginRequestPolicy {
   
-  @scala.inline
-  def apply(Id: String, LastModifiedTime: timestamp, OriginRequestPolicyConfig: OriginRequestPolicyConfig): OriginRequestPolicy = {
+  inline def apply(Id: String, LastModifiedTime: timestamp, OriginRequestPolicyConfig: OriginRequestPolicyConfig): OriginRequestPolicy = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], OriginRequestPolicyConfig = OriginRequestPolicyConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginRequestPolicy]
   }
   
-  @scala.inline
-  implicit class OriginRequestPolicyMutableBuilder[Self <: OriginRequestPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: OriginRequestPolicy](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginRequestPolicyConfig(value: OriginRequestPolicyConfig): Self = StObject.set(x, "OriginRequestPolicyConfig", value.asInstanceOf[js.Any])
+    inline def setOriginRequestPolicyConfig(value: OriginRequestPolicyConfig): Self = StObject.set(x, "OriginRequestPolicyConfig", value.asInstanceOf[js.Any])
   }
 }

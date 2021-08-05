@@ -12,19 +12,15 @@ trait MUIDataTableTextLabelsViewColumns extends StObject {
 }
 object MUIDataTableTextLabelsViewColumns {
   
-  @scala.inline
-  def apply(title: String, titleAria: String): MUIDataTableTextLabelsViewColumns = {
+  inline def apply(title: String, titleAria: String): MUIDataTableTextLabelsViewColumns = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], titleAria = titleAria.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableTextLabelsViewColumns]
   }
   
-  @scala.inline
-  implicit class MUIDataTableTextLabelsViewColumnsMutableBuilder[Self <: MUIDataTableTextLabelsViewColumns] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableTextLabelsViewColumns](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleAria(value: String): Self = StObject.set(x, "titleAria", value.asInstanceOf[js.Any])
+    inline def setTitleAria(value: String): Self = StObject.set(x, "titleAria", value.asInstanceOf[js.Any])
   }
 }

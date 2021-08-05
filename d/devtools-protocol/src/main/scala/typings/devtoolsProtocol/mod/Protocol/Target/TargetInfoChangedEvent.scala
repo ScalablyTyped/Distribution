@@ -10,16 +10,13 @@ trait TargetInfoChangedEvent extends StObject {
 }
 object TargetInfoChangedEvent {
   
-  @scala.inline
-  def apply(targetInfo: TargetInfo): TargetInfoChangedEvent = {
+  inline def apply(targetInfo: TargetInfo): TargetInfoChangedEvent = {
     val __obj = js.Dynamic.literal(targetInfo = targetInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetInfoChangedEvent]
   }
   
-  @scala.inline
-  implicit class TargetInfoChangedEventMutableBuilder[Self <: TargetInfoChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TargetInfoChangedEvent](x: Self) {
     
-    @scala.inline
-    def setTargetInfo(value: TargetInfo): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
+    inline def setTargetInfo(value: TargetInfo): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
   }
 }

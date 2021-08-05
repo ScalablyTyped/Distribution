@@ -24,8 +24,7 @@ trait Bad extends StObject {
 }
 object Bad {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bad: scala.Double,
     blob: scala.Double,
     commit: scala.Double,
@@ -39,31 +38,22 @@ object Bad {
     __obj.asInstanceOf[Bad]
   }
   
-  @scala.inline
-  implicit class BadMutableBuilder[Self <: Bad] (val x: Self) extends AnyVal {
+  extension [Self <: Bad](x: Self) {
     
-    @scala.inline
-    def setBad(value: scala.Double): Self = StObject.set(x, "bad", value.asInstanceOf[js.Any])
+    inline def setBad(value: scala.Double): Self = StObject.set(x, "bad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlob(value: scala.Double): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: scala.Double): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: scala.Double): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: scala.Double): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExt2(value: scala.Double): Self = StObject.set(x, "ext2", value.asInstanceOf[js.Any])
+    inline def setExt2(value: scala.Double): Self = StObject.set(x, "ext2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfsDelta(value: scala.Double): Self = StObject.set(x, "ofsDelta", value.asInstanceOf[js.Any])
+    inline def setOfsDelta(value: scala.Double): Self = StObject.set(x, "ofsDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefDelta(value: scala.Double): Self = StObject.set(x, "refDelta", value.asInstanceOf[js.Any])
+    inline def setRefDelta(value: scala.Double): Self = StObject.set(x, "refDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: scala.Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: scala.Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: scala.Double): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: scala.Double): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
   }
 }

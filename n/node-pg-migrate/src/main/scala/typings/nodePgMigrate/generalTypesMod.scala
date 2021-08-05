@@ -14,20 +14,16 @@ object generalTypesMod {
   }
   object CascadeOption {
     
-    @scala.inline
-    def apply(): CascadeOption = {
+    inline def apply(): CascadeOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CascadeOption]
     }
     
-    @scala.inline
-    implicit class CascadeOptionMutableBuilder[Self <: CascadeOption] (val x: Self) extends AnyVal {
+    extension [Self <: CascadeOption](x: Self) {
       
-      @scala.inline
-      def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+      inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+      inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
     }
   }
   
@@ -37,8 +33,7 @@ object generalTypesMod {
        with CascadeOption
   object DropOptions {
     
-    @scala.inline
-    def apply(): DropOptions = {
+    inline def apply(): DropOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropOptions]
     }
@@ -50,20 +45,16 @@ object generalTypesMod {
   }
   object IfExistsOption {
     
-    @scala.inline
-    def apply(): IfExistsOption = {
+    inline def apply(): IfExistsOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IfExistsOption]
     }
     
-    @scala.inline
-    implicit class IfExistsOptionMutableBuilder[Self <: IfExistsOption] (val x: Self) extends AnyVal {
+    extension [Self <: IfExistsOption](x: Self) {
       
-      @scala.inline
-      def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
+      inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
+      inline def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
     }
   }
   
@@ -73,20 +64,16 @@ object generalTypesMod {
   }
   object IfNotExistsOption {
     
-    @scala.inline
-    def apply(): IfNotExistsOption = {
+    inline def apply(): IfNotExistsOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IfNotExistsOption]
     }
     
-    @scala.inline
-    implicit class IfNotExistsOptionMutableBuilder[Self <: IfNotExistsOption] (val x: Self) extends AnyVal {
+    extension [Self <: IfNotExistsOption](x: Self) {
       
-      @scala.inline
-      def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
+      inline def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfNotExistsUndefined: Self = StObject.set(x, "ifNotExists", js.undefined)
+      inline def setIfNotExistsUndefined: Self = StObject.set(x, "ifNotExists", js.undefined)
     }
   }
   
@@ -117,8 +104,7 @@ object generalTypesMod {
   }
   object PgLiteralValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constructor: /* value */ String => js.Any,
       literal: /* true */ Boolean,
       toString_ : () => String,
@@ -129,26 +115,19 @@ object generalTypesMod {
       __obj.asInstanceOf[PgLiteralValue]
     }
     
-    @scala.inline
-    implicit class PgLiteralValueMutableBuilder[Self <: PgLiteralValue] (val x: Self) extends AnyVal {
+    extension [Self <: PgLiteralValue](x: Self) {
       
-      @scala.inline
-      def setConstructor(value: /* value */ String => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+      inline def setConstructor(value: /* value */ String => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

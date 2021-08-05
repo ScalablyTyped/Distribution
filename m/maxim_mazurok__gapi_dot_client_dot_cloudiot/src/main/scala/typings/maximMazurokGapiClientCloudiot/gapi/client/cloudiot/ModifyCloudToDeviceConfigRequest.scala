@@ -17,25 +17,19 @@ trait ModifyCloudToDeviceConfigRequest extends StObject {
 }
 object ModifyCloudToDeviceConfigRequest {
   
-  @scala.inline
-  def apply(): ModifyCloudToDeviceConfigRequest = {
+  inline def apply(): ModifyCloudToDeviceConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyCloudToDeviceConfigRequest]
   }
   
-  @scala.inline
-  implicit class ModifyCloudToDeviceConfigRequestMutableBuilder[Self <: ModifyCloudToDeviceConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyCloudToDeviceConfigRequest](x: Self) {
     
-    @scala.inline
-    def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
+    inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
+    inline def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
     
-    @scala.inline
-    def setVersionToUpdate(value: String): Self = StObject.set(x, "versionToUpdate", value.asInstanceOf[js.Any])
+    inline def setVersionToUpdate(value: String): Self = StObject.set(x, "versionToUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionToUpdateUndefined: Self = StObject.set(x, "versionToUpdate", js.undefined)
+    inline def setVersionToUpdateUndefined: Self = StObject.set(x, "versionToUpdate", js.undefined)
   }
 }

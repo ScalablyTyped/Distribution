@@ -18,14 +18,10 @@ object mod {
     * first parameter, this parameter is ignored.
     * @returns The `NpmCredentials` object or undefined if no match found.
     */
-  @scala.inline
-  def apply(registryUrl: String): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
-  @scala.inline
-  def apply(registryUrl: String, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
-  @scala.inline
-  def apply(registryUrl: AuthOptions): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
-  @scala.inline
-  def apply(registryUrl: AuthOptions, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
+  inline def apply(registryUrl: String): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
+  inline def apply(registryUrl: String, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
+  inline def apply(registryUrl: AuthOptions): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
+  inline def apply(registryUrl: AuthOptions, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
   
   @JSImport("registry-auth-token", JSImport.Namespace)
   @js.native
@@ -50,26 +46,20 @@ object mod {
   }
   object AuthOptions {
     
-    @scala.inline
-    def apply(): AuthOptions = {
+    inline def apply(): AuthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthOptions]
     }
     
-    @scala.inline
-    implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthOptions](x: Self) {
       
-      @scala.inline
-      def setNpmrc(value: DictregistryUrls): Self = StObject.set(x, "npmrc", value.asInstanceOf[js.Any])
+      inline def setNpmrc(value: DictregistryUrls): Self = StObject.set(x, "npmrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNpmrcUndefined: Self = StObject.set(x, "npmrc", js.undefined)
+      inline def setNpmrcUndefined: Self = StObject.set(x, "npmrc", js.undefined)
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     }
   }
   
@@ -100,33 +90,25 @@ object mod {
   }
   object NpmCredentials {
     
-    @scala.inline
-    def apply(token: String, `type`: Basic | Bearer): NpmCredentials = {
+    inline def apply(token: String, `type`: Basic | Bearer): NpmCredentials = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NpmCredentials]
     }
     
-    @scala.inline
-    implicit class NpmCredentialsMutableBuilder[Self <: NpmCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: NpmCredentials](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Basic | Bearer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Basic | Bearer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

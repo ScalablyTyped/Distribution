@@ -18,25 +18,19 @@ trait PublicAccess extends StObject {
 }
 object PublicAccess {
   
-  @scala.inline
-  def apply(): PublicAccess = {
+  inline def apply(): PublicAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicAccess]
   }
   
-  @scala.inline
-  implicit class PublicAccessMutableBuilder[Self <: PublicAccess] (val x: Self) extends AnyVal {
+  extension [Self <: PublicAccess](x: Self) {
     
-    @scala.inline
-    def setEffectivePermission(value: String): Self = StObject.set(x, "EffectivePermission", value.asInstanceOf[js.Any])
+    inline def setEffectivePermission(value: String): Self = StObject.set(x, "EffectivePermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectivePermissionUndefined: Self = StObject.set(x, "EffectivePermission", js.undefined)
+    inline def setEffectivePermissionUndefined: Self = StObject.set(x, "EffectivePermission", js.undefined)
     
-    @scala.inline
-    def setPermissionConfiguration(value: PermissionConfiguration): Self = StObject.set(x, "PermissionConfiguration", value.asInstanceOf[js.Any])
+    inline def setPermissionConfiguration(value: PermissionConfiguration): Self = StObject.set(x, "PermissionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionConfigurationUndefined: Self = StObject.set(x, "PermissionConfiguration", js.undefined)
+    inline def setPermissionConfigurationUndefined: Self = StObject.set(x, "PermissionConfiguration", js.undefined)
   }
 }

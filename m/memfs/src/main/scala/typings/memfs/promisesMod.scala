@@ -31,8 +31,7 @@ object promisesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(vol: Volume): Null | IPromisesAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(vol.asInstanceOf[js.Any]).asInstanceOf[Null | IPromisesAPI]
+  inline def default(vol: Volume): Null | IPromisesAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(vol.asInstanceOf[js.Any]).asInstanceOf[Null | IPromisesAPI]
   
   @JSImport("memfs/lib/promises", "FileHandle")
   @js.native
@@ -43,7 +42,7 @@ object promisesMod {
     
     def sync(): js.Promise[Unit] = js.native
     
-    var vol: js.Any = js.native
+    /* private */ var vol: js.Any = js.native
   }
   
   @js.native
@@ -183,20 +182,16 @@ object promisesMod {
   }
   object TFileHandleReadResult {
     
-    @scala.inline
-    def apply(buffer: Buffer | Uint8Array, bytesRead: Double): TFileHandleReadResult = {
+    inline def apply(buffer: Buffer | Uint8Array, bytesRead: Double): TFileHandleReadResult = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
       __obj.asInstanceOf[TFileHandleReadResult]
     }
     
-    @scala.inline
-    implicit class TFileHandleReadResultMutableBuilder[Self <: TFileHandleReadResult] (val x: Self) extends AnyVal {
+    extension [Self <: TFileHandleReadResult](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer | Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer | Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
+      inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,20 +203,16 @@ object promisesMod {
   }
   object TFileHandleWriteResult {
     
-    @scala.inline
-    def apply(buffer: Buffer | Uint8Array, bytesWritten: Double): TFileHandleWriteResult = {
+    inline def apply(buffer: Buffer | Uint8Array, bytesWritten: Double): TFileHandleWriteResult = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
       __obj.asInstanceOf[TFileHandleWriteResult]
     }
     
-    @scala.inline
-    implicit class TFileHandleWriteResultMutableBuilder[Self <: TFileHandleWriteResult] (val x: Self) extends AnyVal {
+    extension [Self <: TFileHandleWriteResult](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer | Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer | Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+      inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     }
   }
 }

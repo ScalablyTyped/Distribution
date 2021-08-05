@@ -13,19 +13,15 @@ trait CreateNodegroupResponse extends StObject {
 }
 object CreateNodegroupResponse {
   
-  @scala.inline
-  def apply(): CreateNodegroupResponse = {
+  inline def apply(): CreateNodegroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNodegroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateNodegroupResponseMutableBuilder[Self <: CreateNodegroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNodegroupResponse](x: Self) {
     
-    @scala.inline
-    def setNodegroup(value: Nodegroup): Self = StObject.set(x, "nodegroup", value.asInstanceOf[js.Any])
+    inline def setNodegroup(value: Nodegroup): Self = StObject.set(x, "nodegroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupUndefined: Self = StObject.set(x, "nodegroup", js.undefined)
+    inline def setNodegroupUndefined: Self = StObject.set(x, "nodegroup", js.undefined)
   }
 }

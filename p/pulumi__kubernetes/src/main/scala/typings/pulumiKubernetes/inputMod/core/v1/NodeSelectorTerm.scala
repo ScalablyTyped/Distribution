@@ -22,31 +22,23 @@ trait NodeSelectorTerm extends StObject {
 }
 object NodeSelectorTerm {
   
-  @scala.inline
-  def apply(): NodeSelectorTerm = {
+  inline def apply(): NodeSelectorTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeSelectorTerm]
   }
   
-  @scala.inline
-  implicit class NodeSelectorTermMutableBuilder[Self <: NodeSelectorTerm] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSelectorTerm](x: Self) {
     
-    @scala.inline
-    def setMatchExpressions(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
+    inline def setMatchExpressions(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchExpressionsUndefined: Self = StObject.set(x, "matchExpressions", js.undefined)
+    inline def setMatchExpressionsUndefined: Self = StObject.set(x, "matchExpressions", js.undefined)
     
-    @scala.inline
-    def setMatchExpressionsVarargs(value: Input[NodeSelectorRequirement]*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
+    inline def setMatchExpressionsVarargs(value: Input[NodeSelectorRequirement]*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setMatchFields(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = StObject.set(x, "matchFields", value.asInstanceOf[js.Any])
+    inline def setMatchFields(value: Input[js.Array[Input[NodeSelectorRequirement]]]): Self = StObject.set(x, "matchFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchFieldsUndefined: Self = StObject.set(x, "matchFields", js.undefined)
+    inline def setMatchFieldsUndefined: Self = StObject.set(x, "matchFields", js.undefined)
     
-    @scala.inline
-    def setMatchFieldsVarargs(value: Input[NodeSelectorRequirement]*): Self = StObject.set(x, "matchFields", js.Array(value :_*))
+    inline def setMatchFieldsVarargs(value: Input[NodeSelectorRequirement]*): Self = StObject.set(x, "matchFields", js.Array(value :_*))
   }
 }

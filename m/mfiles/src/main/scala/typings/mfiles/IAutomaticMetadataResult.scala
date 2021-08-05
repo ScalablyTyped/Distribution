@@ -12,19 +12,15 @@ trait IAutomaticMetadataResult extends StObject {
 }
 object IAutomaticMetadataResult {
   
-  @scala.inline
-  def apply(Clone: () => IAutomaticMetadataResult, PropertyValueSuggestions: IPropertyValueSuggestions): IAutomaticMetadataResult = {
+  inline def apply(Clone: () => IAutomaticMetadataResult, PropertyValueSuggestions: IPropertyValueSuggestions): IAutomaticMetadataResult = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyValueSuggestions = PropertyValueSuggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutomaticMetadataResult]
   }
   
-  @scala.inline
-  implicit class IAutomaticMetadataResultMutableBuilder[Self <: IAutomaticMetadataResult] (val x: Self) extends AnyVal {
+  extension [Self <: IAutomaticMetadataResult](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IAutomaticMetadataResult): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAutomaticMetadataResult): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPropertyValueSuggestions(value: IPropertyValueSuggestions): Self = StObject.set(x, "PropertyValueSuggestions", value.asInstanceOf[js.Any])
+    inline def setPropertyValueSuggestions(value: IPropertyValueSuggestions): Self = StObject.set(x, "PropertyValueSuggestions", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ListRuleGroupsResponse extends StObject {
 }
 object ListRuleGroupsResponse {
   
-  @scala.inline
-  def apply(): ListRuleGroupsResponse = {
+  inline def apply(): ListRuleGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRuleGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListRuleGroupsResponseMutableBuilder[Self <: ListRuleGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRuleGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRuleGroups(value: RuleGroups): Self = StObject.set(x, "RuleGroups", value.asInstanceOf[js.Any])
+    inline def setRuleGroups(value: RuleGroups): Self = StObject.set(x, "RuleGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupsUndefined: Self = StObject.set(x, "RuleGroups", js.undefined)
+    inline def setRuleGroupsUndefined: Self = StObject.set(x, "RuleGroups", js.undefined)
     
-    @scala.inline
-    def setRuleGroupsVarargs(value: RuleGroupMetadata*): Self = StObject.set(x, "RuleGroups", js.Array(value :_*))
+    inline def setRuleGroupsVarargs(value: RuleGroupMetadata*): Self = StObject.set(x, "RuleGroups", js.Array(value :_*))
   }
 }

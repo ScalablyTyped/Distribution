@@ -19,11 +19,11 @@ object selectedItemWithContextMenuMod {
     extends Component[ISelectedItemWithContextMenuProps, IPeoplePickerItemState, js.Any] {
     def this(props: ISelectedItemWithContextMenuProps) = this()
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _onCloseContextualMenu: js.Any = js.native
+    /* private */ var _onCloseContextualMenu: js.Any = js.native
     
-    var itemElement: RefObject[HTMLDivElement] = js.native
+    /* protected */ var itemElement: RefObject[HTMLDivElement] = js.native
   }
   
   trait IPeoplePickerItemState extends StObject {
@@ -32,17 +32,14 @@ object selectedItemWithContextMenuMod {
   }
   object IPeoplePickerItemState {
     
-    @scala.inline
-    def apply(contextualMenuVisible: Boolean): IPeoplePickerItemState = {
+    inline def apply(contextualMenuVisible: Boolean): IPeoplePickerItemState = {
       val __obj = js.Dynamic.literal(contextualMenuVisible = contextualMenuVisible.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemState]
     }
     
-    @scala.inline
-    implicit class IPeoplePickerItemStateMutableBuilder[Self <: IPeoplePickerItemState] (val x: Self) extends AnyVal {
+    extension [Self <: IPeoplePickerItemState](x: Self) {
       
-      @scala.inline
-      def setContextualMenuVisible(value: Boolean): Self = StObject.set(x, "contextualMenuVisible", value.asInstanceOf[js.Any])
+      inline def setContextualMenuVisible(value: Boolean): Self = StObject.set(x, "contextualMenuVisible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,32 +57,24 @@ object selectedItemWithContextMenuMod {
   }
   object ISelectedItemWithContextMenuProps {
     
-    @scala.inline
-    def apply(item: IExtendedPersonaProps, menuItems: js.Array[IContextualMenuItem], renderedItem: Element): ISelectedItemWithContextMenuProps = {
+    inline def apply(item: IExtendedPersonaProps, menuItems: js.Array[IContextualMenuItem], renderedItem: Element): ISelectedItemWithContextMenuProps = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], menuItems = menuItems.asInstanceOf[js.Any], renderedItem = renderedItem.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectedItemWithContextMenuProps]
     }
     
-    @scala.inline
-    implicit class ISelectedItemWithContextMenuPropsMutableBuilder[Self <: ISelectedItemWithContextMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectedItemWithContextMenuProps](x: Self) {
       
-      @scala.inline
-      def setBeginEditing(value: /* item */ IExtendedPersonaProps => Unit): Self = StObject.set(x, "beginEditing", js.Any.fromFunction1(value))
+      inline def setBeginEditing(value: /* item */ IExtendedPersonaProps => Unit): Self = StObject.set(x, "beginEditing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeginEditingUndefined: Self = StObject.set(x, "beginEditing", js.undefined)
+      inline def setBeginEditingUndefined: Self = StObject.set(x, "beginEditing", js.undefined)
       
-      @scala.inline
-      def setItem(value: IExtendedPersonaProps): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: IExtendedPersonaProps): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+      inline def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
       
-      @scala.inline
-      def setRenderedItem(value: Element): Self = StObject.set(x, "renderedItem", value.asInstanceOf[js.Any])
+      inline def setRenderedItem(value: Element): Self = StObject.set(x, "renderedItem", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlTabIndex extends StObject
 object htmlTabIndex {
   
-  @scala.inline
-  def htmlTabIndexNotSet: `-32768` = -32768.asInstanceOf[`-32768`]
+  inline def htmlTabIndexNotSet: `-32768` = -32768.asInstanceOf[`-32768`]
   
-  @scala.inline
-  def htmlTabIndex_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlTabIndex_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

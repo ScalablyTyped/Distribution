@@ -40,8 +40,7 @@ trait GitCreateTagEndpoint extends StObject {
 }
 object GitCreateTagEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: String,
     `object`: String,
     owner: String,
@@ -55,31 +54,22 @@ object GitCreateTagEndpoint {
     __obj.asInstanceOf[GitCreateTagEndpoint]
   }
   
-  @scala.inline
-  implicit class GitCreateTagEndpointMutableBuilder[Self <: GitCreateTagEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateTagEndpoint](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagger(value: GitCreateTagParamsTagger): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
+    inline def setTagger(value: GitCreateTagParamsTagger): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaggerUndefined: Self = StObject.set(x, "tagger", js.undefined)
+    inline def setTaggerUndefined: Self = StObject.set(x, "tagger", js.undefined)
     
-    @scala.inline
-    def setType(value: commit | tree | blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: commit | tree | blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

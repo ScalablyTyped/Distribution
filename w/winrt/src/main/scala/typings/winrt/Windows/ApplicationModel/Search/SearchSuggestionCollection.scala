@@ -11,8 +11,7 @@ trait SearchSuggestionCollection
      with ISearchSuggestionCollection
 object SearchSuggestionCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendQuerySuggestion: String => Unit,
     appendQuerySuggestions: IIterable[String] => Unit,
     appendResultSuggestion: (String, String, String, IRandomAccessStreamReference, String) => Unit,

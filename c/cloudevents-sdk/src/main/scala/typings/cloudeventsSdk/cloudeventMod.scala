@@ -154,29 +154,25 @@ object cloudeventMod {
   trait CE extends StObject
   object CE {
     
-    @scala.inline
-    def CloudEventV03(id: String, source: String, specversion: String, `type`: String): typings.cloudeventsSdk.v03Mod.CloudEventV03 = {
+    inline def CloudEventV03(id: String, source: String, specversion: String, `type`: String): typings.cloudeventsSdk.v03Mod.CloudEventV03 = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], specversion = specversion.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cloudeventsSdk.v03Mod.CloudEventV03]
     }
     
-    @scala.inline
-    def CloudEventV03Attributes(source: String, `type`: String): typings.cloudeventsSdk.v03Mod.CloudEventV03Attributes = {
+    inline def CloudEventV03Attributes(source: String, `type`: String): typings.cloudeventsSdk.v03Mod.CloudEventV03Attributes = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cloudeventsSdk.v03Mod.CloudEventV03Attributes]
     }
     
-    @scala.inline
-    def CloudEventV1(id: String, source: String, specversion: String, `type`: String): typings.cloudeventsSdk.v1Mod.CloudEventV1 = {
+    inline def CloudEventV1(id: String, source: String, specversion: String, `type`: String): typings.cloudeventsSdk.v1Mod.CloudEventV1 = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], specversion = specversion.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cloudeventsSdk.v1Mod.CloudEventV1]
     }
     
-    @scala.inline
-    def CloudEventV1Attributes(source: String, `type`: String): typings.cloudeventsSdk.v1Mod.CloudEventV1Attributes = {
+    inline def CloudEventV1Attributes(source: String, `type`: String): typings.cloudeventsSdk.v1Mod.CloudEventV1Attributes = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cloudeventsSdk.v1Mod.CloudEventV1Attributes]

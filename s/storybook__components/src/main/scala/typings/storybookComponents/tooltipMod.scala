@@ -45,8 +45,7 @@ object tooltipMod {
   }
   object ArrowProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText,
       placement: String
     ): ArrowProps = {
@@ -54,16 +53,13 @@ object tooltipMod {
       __obj.asInstanceOf[ArrowProps]
     }
     
-    @scala.inline
-    implicit class ArrowPropsMutableBuilder[Self <: ArrowProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArrowProps](x: Self) {
       
-      @scala.inline
-      def setColor(
+      inline def setColor(
         value: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,52 +81,38 @@ object tooltipMod {
   }
   object TooltipProps {
     
-    @scala.inline
-    def apply(): TooltipProps = {
+    inline def apply(): TooltipProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TooltipProps]
     }
     
-    @scala.inline
-    implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipProps](x: Self) {
       
-      @scala.inline
-      def setArrowProps(value: js.Any): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+      inline def setArrowProps(value: js.Any): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowPropsUndefined: Self = StObject.set(x, "arrowProps", js.undefined)
+      inline def setArrowPropsUndefined: Self = StObject.set(x, "arrowProps", js.undefined)
       
-      @scala.inline
-      def setArrowRef(value: js.Any): Self = StObject.set(x, "arrowRef", value.asInstanceOf[js.Any])
+      inline def setArrowRef(value: js.Any): Self = StObject.set(x, "arrowRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowRefUndefined: Self = StObject.set(x, "arrowRef", js.undefined)
+      inline def setArrowRefUndefined: Self = StObject.set(x, "arrowRef", js.undefined)
       
-      @scala.inline
-      def setColor(
+      inline def setColor(
         value: primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setHasChrome(value: Boolean): Self = StObject.set(x, "hasChrome", value.asInstanceOf[js.Any])
+      inline def setHasChrome(value: Boolean): Self = StObject.set(x, "hasChrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasChromeUndefined: Self = StObject.set(x, "hasChrome", js.undefined)
+      inline def setHasChromeUndefined: Self = StObject.set(x, "hasChrome", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setTooltipRef(value: js.Any): Self = StObject.set(x, "tooltipRef", value.asInstanceOf[js.Any])
+      inline def setTooltipRef(value: js.Any): Self = StObject.set(x, "tooltipRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipRefUndefined: Self = StObject.set(x, "tooltipRef", js.undefined)
+      inline def setTooltipRefUndefined: Self = StObject.set(x, "tooltipRef", js.undefined)
     }
   }
   
@@ -146,8 +128,7 @@ object tooltipMod {
   }
   object WrapperProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText,
       hasChrome: Boolean,
       placement: String
@@ -156,25 +137,19 @@ object tooltipMod {
       __obj.asInstanceOf[WrapperProps]
     }
     
-    @scala.inline
-    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperProps](x: Self) {
       
-      @scala.inline
-      def setColor(
+      inline def setColor(
         value: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasChrome(value: Boolean): Self = StObject.set(x, "hasChrome", value.asInstanceOf[js.Any])
+      inline def setHasChrome(value: Boolean): Self = StObject.set(x, "hasChrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     }
   }
 }

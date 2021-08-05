@@ -17,19 +17,15 @@ trait CustomResourceValidation extends StObject {
 }
 object CustomResourceValidation {
   
-  @scala.inline
-  def apply(): CustomResourceValidation = {
+  inline def apply(): CustomResourceValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomResourceValidation]
   }
   
-  @scala.inline
-  implicit class CustomResourceValidationMutableBuilder[Self <: CustomResourceValidation] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceValidation](x: Self) {
     
-    @scala.inline
-    def setOpenAPIV3Schema(value: Input[JSONSchemaProps]): Self = StObject.set(x, "openAPIV3Schema", value.asInstanceOf[js.Any])
+    inline def setOpenAPIV3Schema(value: Input[JSONSchemaProps]): Self = StObject.set(x, "openAPIV3Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenAPIV3SchemaUndefined: Self = StObject.set(x, "openAPIV3Schema", js.undefined)
+    inline def setOpenAPIV3SchemaUndefined: Self = StObject.set(x, "openAPIV3Schema", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object fetchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFetch(): js.Promise[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFetch")().asInstanceOf[js.Promise[FnCall]]
+  inline def getFetch(): js.Promise[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFetch")().asInstanceOf[js.Promise[FnCall]]
 }

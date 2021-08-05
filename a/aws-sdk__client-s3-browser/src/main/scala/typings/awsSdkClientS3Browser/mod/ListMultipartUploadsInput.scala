@@ -9,8 +9,7 @@ trait ListMultipartUploadsInput
      with typings.awsSdkClientS3Browser.typesListMultipartUploadsInputMod.ListMultipartUploadsInput
 object ListMultipartUploadsInput {
   
-  @scala.inline
-  def apply(Bucket: String): ListMultipartUploadsInput = {
+  inline def apply(Bucket: String): ListMultipartUploadsInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultipartUploadsInput]
   }

@@ -16,17 +16,14 @@ object typesExpiredImportTokenExceptionMod {
   }
   object ExpiredImportTokenException {
     
-    @scala.inline
-    def apply(): ExpiredImportTokenException = {
+    inline def apply(): ExpiredImportTokenException = {
       val __obj = js.Dynamic.literal(name = "ExpiredImportTokenException")
       __obj.asInstanceOf[ExpiredImportTokenException]
     }
     
-    @scala.inline
-    implicit class ExpiredImportTokenExceptionMutableBuilder[Self <: ExpiredImportTokenException] (val x: Self) extends AnyVal {
+    extension [Self <: ExpiredImportTokenException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.ExpiredImportTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.ExpiredImportTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +36,16 @@ object typesExpiredImportTokenExceptionMod {
   }
   object ExpiredImportTokenExceptionDetails {
     
-    @scala.inline
-    def apply(): ExpiredImportTokenExceptionDetails = {
+    inline def apply(): ExpiredImportTokenExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpiredImportTokenExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ExpiredImportTokenExceptionDetailsMutableBuilder[Self <: ExpiredImportTokenExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ExpiredImportTokenExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

@@ -16,26 +16,20 @@ trait ContinueStatement
 }
 object ContinueStatement {
   
-  @scala.inline
-  def apply(): ContinueStatement = {
+  inline def apply(): ContinueStatement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ContinueStatement")
     __obj.asInstanceOf[ContinueStatement]
   }
   
-  @scala.inline
-  implicit class ContinueStatementMutableBuilder[Self <: ContinueStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueStatement](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Identifier): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Identifier): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelNull: Self = StObject.set(x, "label", null)
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -38,7 +38,7 @@ trait IMsoLegend extends StObject {
   
   val Name: String = js.native
   
-  @JSName("Office.IMsoLegend_typekey")
+  /* private */ @JSName("Office.IMsoLegend_typekey")
   var OfficeDotIMsoLegend_typekey: IMsoLegend = js.native
   
   val Parent: js.Any = js.native

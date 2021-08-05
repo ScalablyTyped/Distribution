@@ -13,22 +13,17 @@ trait ClassicLoadBalancersConfig extends StObject {
 }
 object ClassicLoadBalancersConfig {
   
-  @scala.inline
-  def apply(): ClassicLoadBalancersConfig = {
+  inline def apply(): ClassicLoadBalancersConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassicLoadBalancersConfig]
   }
   
-  @scala.inline
-  implicit class ClassicLoadBalancersConfigMutableBuilder[Self <: ClassicLoadBalancersConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClassicLoadBalancersConfig](x: Self) {
     
-    @scala.inline
-    def setClassicLoadBalancers(value: ClassicLoadBalancers): Self = StObject.set(x, "ClassicLoadBalancers", value.asInstanceOf[js.Any])
+    inline def setClassicLoadBalancers(value: ClassicLoadBalancers): Self = StObject.set(x, "ClassicLoadBalancers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassicLoadBalancersUndefined: Self = StObject.set(x, "ClassicLoadBalancers", js.undefined)
+    inline def setClassicLoadBalancersUndefined: Self = StObject.set(x, "ClassicLoadBalancers", js.undefined)
     
-    @scala.inline
-    def setClassicLoadBalancersVarargs(value: ClassicLoadBalancer*): Self = StObject.set(x, "ClassicLoadBalancers", js.Array(value :_*))
+    inline def setClassicLoadBalancersVarargs(value: ClassicLoadBalancer*): Self = StObject.set(x, "ClassicLoadBalancers", js.Array(value :_*))
   }
 }

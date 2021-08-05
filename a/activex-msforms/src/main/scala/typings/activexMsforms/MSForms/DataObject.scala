@@ -16,7 +16,7 @@ trait DataObject extends StObject {
   def GetText(): String = js.native
   def GetText(Format: js.Any): String = js.native
   
-  @JSName("MSForms.DataObject_typekey")
+  /* private */ @JSName("MSForms.DataObject_typekey")
   var MSFormsDotDataObject_typekey: DataObject = js.native
   
   def PutInClipboard(): Unit = js.native

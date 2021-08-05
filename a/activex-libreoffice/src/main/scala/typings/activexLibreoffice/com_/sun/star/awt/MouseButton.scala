@@ -17,13 +17,10 @@ object MouseButton {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def LEFT: `1` = 1.asInstanceOf[`1`]
+    inline def LEFT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def MIDDLE: `4` = 4.asInstanceOf[`4`]
+    inline def MIDDLE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def RIGHT: `2` = 2.asInstanceOf[`2`]
+    inline def RIGHT: `2` = 2.asInstanceOf[`2`]
   }
 }

@@ -12,16 +12,13 @@ trait CreateUserData
 }
 object CreateUserData {
   
-  @scala.inline
-  def apply(connection: String): CreateUserData = {
+  inline def apply(connection: String): CreateUserData = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserData]
   }
   
-  @scala.inline
-  implicit class CreateUserDataMutableBuilder[Self <: CreateUserData] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserData](x: Self) {
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
   }
 }

@@ -32,8 +32,7 @@ trait GetUserInfoSuccessCallbackResult extends StObject {
 }
 object GetUserInfoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloudID: String,
     encryptedData: String,
     errMsg: String,
@@ -46,28 +45,20 @@ object GetUserInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetUserInfoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetUserInfoSuccessCallbackResultMutableBuilder[Self <: GetUserInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserInfoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
+    inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

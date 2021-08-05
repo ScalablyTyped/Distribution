@@ -34,7 +34,7 @@ object astBuilderMod {
     
     def build(token: typings.gherkin.tokenMod.default): Unit = js.native
     
-    var comments: js.Any = js.native
+    /* private */ var comments: js.Any = js.native
     
     def currentNode(): typings.gherkin.astNodeMod.default = js.native
     
@@ -57,11 +57,11 @@ object astBuilderMod {
     
     def getTags(node: typings.gherkin.astNodeMod.default): js.Array[ITag] = js.native
     
-    val newId: js.Any = js.native
+    /* private */ val newId: js.Any = js.native
     
     def reset(): Unit = js.native
     
-    var stack: js.Any = js.native
+    /* private */ var stack: js.Any = js.native
     
     def startRule(ruleType: RuleType): Unit = js.native
     

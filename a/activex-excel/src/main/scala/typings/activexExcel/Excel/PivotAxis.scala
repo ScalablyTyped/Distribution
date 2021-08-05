@@ -10,7 +10,7 @@ trait PivotAxis extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.PivotAxis_typekey")
+  /* private */ @JSName("Excel.PivotAxis_typekey")
   var ExcelDotPivotAxis_typekey: PivotAxis
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait PivotAxis extends StObject {
 }
 object PivotAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotPivotAxis_typekey: PivotAxis,
@@ -34,22 +33,16 @@ object PivotAxis {
     __obj.asInstanceOf[PivotAxis]
   }
   
-  @scala.inline
-  implicit class PivotAxisMutableBuilder[Self <: PivotAxis] (val x: Self) extends AnyVal {
+  extension [Self <: PivotAxis](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotPivotAxis_typekey(value: PivotAxis): Self = StObject.set(x, "Excel.PivotAxis_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotPivotAxis_typekey(value: PivotAxis): Self = StObject.set(x, "Excel.PivotAxis_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotLines(value: PivotLines): Self = StObject.set(x, "PivotLines", value.asInstanceOf[js.Any])
+    inline def setPivotLines(value: PivotLines): Self = StObject.set(x, "PivotLines", value.asInstanceOf[js.Any])
   }
 }

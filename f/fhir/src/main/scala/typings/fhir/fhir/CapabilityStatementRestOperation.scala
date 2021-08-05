@@ -28,25 +28,19 @@ trait CapabilityStatementRestOperation
 }
 object CapabilityStatementRestOperation {
   
-  @scala.inline
-  def apply(definition: Reference, name: String): CapabilityStatementRestOperation = {
+  inline def apply(definition: Reference, name: String): CapabilityStatementRestOperation = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementRestOperation]
   }
   
-  @scala.inline
-  implicit class CapabilityStatementRestOperationMutableBuilder[Self <: CapabilityStatementRestOperation] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilityStatementRestOperation](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

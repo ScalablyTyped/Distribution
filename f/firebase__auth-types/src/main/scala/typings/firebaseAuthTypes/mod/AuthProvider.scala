@@ -10,16 +10,13 @@ trait AuthProvider extends StObject {
 }
 object AuthProvider {
   
-  @scala.inline
-  def apply(providerId: String): AuthProvider = {
+  inline def apply(providerId: String): AuthProvider = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthProvider]
   }
   
-  @scala.inline
-  implicit class AuthProviderMutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AuthProvider](x: Self) {
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
   }
 }

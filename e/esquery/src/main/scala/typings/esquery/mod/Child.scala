@@ -16,17 +16,14 @@ trait Child
 }
 object Child {
   
-  @scala.inline
-  def apply(left: SubjectSelector, right: SubjectSelector): Child = {
+  inline def apply(left: SubjectSelector, right: SubjectSelector): Child = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("child")
     __obj.asInstanceOf[Child]
   }
   
-  @scala.inline
-  implicit class ChildMutableBuilder[Self <: Child] (val x: Self) extends AnyVal {
+  extension [Self <: Child](x: Self) {
     
-    @scala.inline
-    def setType(value: child): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: child): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

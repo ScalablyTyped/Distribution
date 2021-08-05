@@ -15,31 +15,23 @@ trait MarkedDateCustomStyles extends StObject {
 }
 object MarkedDateCustomStyles {
   
-  @scala.inline
-  def apply(): MarkedDateCustomStyles = {
+  inline def apply(): MarkedDateCustomStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkedDateCustomStyles]
   }
   
-  @scala.inline
-  implicit class MarkedDateCustomStylesMutableBuilder[Self <: MarkedDateCustomStyles] (val x: Self) extends AnyVal {
+  extension [Self <: MarkedDateCustomStyles](x: Self) {
     
-    @scala.inline
-    def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNull: Self = StObject.set(x, "container", null)
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setText(value: StyleProp[TextStyle]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: StyleProp[TextStyle]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

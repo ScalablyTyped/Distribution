@@ -202,266 +202,180 @@ object JQueryCycle2 {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowWrap(value: Boolean): Self = StObject.set(x, "allowWrap", value.asInstanceOf[js.Any])
+      inline def setAllowWrap(value: Boolean): Self = StObject.set(x, "allowWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowWrapUndefined: Self = StObject.set(x, "allowWrap", js.undefined)
+      inline def setAllowWrapUndefined: Self = StObject.set(x, "allowWrap", js.undefined)
       
-      @scala.inline
-      def setAutoHeight(value: js.Any): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+      inline def setAutoHeight(value: js.Any): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
+      inline def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
       
-      @scala.inline
-      def setAutoSelector(value: String): Self = StObject.set(x, "autoSelector", value.asInstanceOf[js.Any])
+      inline def setAutoSelector(value: String): Self = StObject.set(x, "autoSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSelectorUndefined: Self = StObject.set(x, "autoSelector", js.undefined)
+      inline def setAutoSelectorUndefined: Self = StObject.set(x, "autoSelector", js.undefined)
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionTemplate(value: String): Self = StObject.set(x, "captionTemplate", value.asInstanceOf[js.Any])
+      inline def setCaptionTemplate(value: String): Self = StObject.set(x, "captionTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionTemplateUndefined: Self = StObject.set(x, "captionTemplate", js.undefined)
+      inline def setCaptionTemplateUndefined: Self = StObject.set(x, "captionTemplate", js.undefined)
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setContinueAuto(value: Boolean): Self = StObject.set(x, "continueAuto", value.asInstanceOf[js.Any])
+      inline def setContinueAuto(value: Boolean): Self = StObject.set(x, "continueAuto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueAutoUndefined: Self = StObject.set(x, "continueAuto", js.undefined)
+      inline def setContinueAutoUndefined: Self = StObject.set(x, "continueAuto", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
+      inline def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
+      inline def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setFx(value: String): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+      inline def setFx(value: String): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
+      inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
       
-      @scala.inline
-      def setHideNonActive(value: Boolean): Self = StObject.set(x, "hideNonActive", value.asInstanceOf[js.Any])
+      inline def setHideNonActive(value: Boolean): Self = StObject.set(x, "hideNonActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideNonActiveUndefined: Self = StObject.set(x, "hideNonActive", js.undefined)
+      inline def setHideNonActiveUndefined: Self = StObject.set(x, "hideNonActive", js.undefined)
       
-      @scala.inline
-      def setLoader(value: js.Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: js.Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+      inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      @scala.inline
-      def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setManualSpeed(value: Double): Self = StObject.set(x, "manualSpeed", value.asInstanceOf[js.Any])
+      inline def setManualSpeed(value: Double): Self = StObject.set(x, "manualSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManualSpeedUndefined: Self = StObject.set(x, "manualSpeed", js.undefined)
+      inline def setManualSpeedUndefined: Self = StObject.set(x, "manualSpeed", js.undefined)
       
-      @scala.inline
-      def setManualTrump(value: Boolean): Self = StObject.set(x, "manualTrump", value.asInstanceOf[js.Any])
+      inline def setManualTrump(value: Boolean): Self = StObject.set(x, "manualTrump", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManualTrumpUndefined: Self = StObject.set(x, "manualTrump", js.undefined)
+      inline def setManualTrumpUndefined: Self = StObject.set(x, "manualTrump", js.undefined)
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextEvent(value: String): Self = StObject.set(x, "nextEvent", value.asInstanceOf[js.Any])
+      inline def setNextEvent(value: String): Self = StObject.set(x, "nextEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextEventUndefined: Self = StObject.set(x, "nextEvent", js.undefined)
+      inline def setNextEventUndefined: Self = StObject.set(x, "nextEvent", js.undefined)
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayTemplate(value: String): Self = StObject.set(x, "overlayTemplate", value.asInstanceOf[js.Any])
+      inline def setOverlayTemplate(value: String): Self = StObject.set(x, "overlayTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayTemplateUndefined: Self = StObject.set(x, "overlayTemplate", js.undefined)
+      inline def setOverlayTemplateUndefined: Self = StObject.set(x, "overlayTemplate", js.undefined)
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setPager(value: String): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+      inline def setPager(value: String): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagerActivateClass(value: String): Self = StObject.set(x, "pagerActivateClass", value.asInstanceOf[js.Any])
+      inline def setPagerActivateClass(value: String): Self = StObject.set(x, "pagerActivateClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagerActivateClassUndefined: Self = StObject.set(x, "pagerActivateClass", js.undefined)
+      inline def setPagerActivateClassUndefined: Self = StObject.set(x, "pagerActivateClass", js.undefined)
       
-      @scala.inline
-      def setPagerEvent(value: String): Self = StObject.set(x, "pagerEvent", value.asInstanceOf[js.Any])
+      inline def setPagerEvent(value: String): Self = StObject.set(x, "pagerEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagerEventUndefined: Self = StObject.set(x, "pagerEvent", js.undefined)
+      inline def setPagerEventUndefined: Self = StObject.set(x, "pagerEvent", js.undefined)
       
-      @scala.inline
-      def setPagerTemplate(value: String): Self = StObject.set(x, "pagerTemplate", value.asInstanceOf[js.Any])
+      inline def setPagerTemplate(value: String): Self = StObject.set(x, "pagerTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagerTemplateUndefined: Self = StObject.set(x, "pagerTemplate", js.undefined)
+      inline def setPagerTemplateUndefined: Self = StObject.set(x, "pagerTemplate", js.undefined)
       
-      @scala.inline
-      def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+      inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
       
-      @scala.inline
-      def setPauseOnHover(value: js.Any): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
+      inline def setPauseOnHover(value: js.Any): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseOnHoverUndefined: Self = StObject.set(x, "pauseOnHover", js.undefined)
+      inline def setPauseOnHoverUndefined: Self = StObject.set(x, "pauseOnHover", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevEvent(value: String): Self = StObject.set(x, "prevEvent", value.asInstanceOf[js.Any])
+      inline def setPrevEvent(value: String): Self = StObject.set(x, "prevEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevEventUndefined: Self = StObject.set(x, "prevEvent", js.undefined)
+      inline def setPrevEventUndefined: Self = StObject.set(x, "prevEvent", js.undefined)
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
-      @scala.inline
-      def setProgressive(value: String): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
+      inline def setProgressive(value: String): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
+      inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
       
-      @scala.inline
-      def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setSlideActiveClass(value: String): Self = StObject.set(x, "slideActiveClass", value.asInstanceOf[js.Any])
+      inline def setSlideActiveClass(value: String): Self = StObject.set(x, "slideActiveClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideActiveClassUndefined: Self = StObject.set(x, "slideActiveClass", js.undefined)
+      inline def setSlideActiveClassUndefined: Self = StObject.set(x, "slideActiveClass", js.undefined)
       
-      @scala.inline
-      def setSlideClass(value: String): Self = StObject.set(x, "slideClass", value.asInstanceOf[js.Any])
+      inline def setSlideClass(value: String): Self = StObject.set(x, "slideClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideClassUndefined: Self = StObject.set(x, "slideClass", js.undefined)
+      inline def setSlideClassUndefined: Self = StObject.set(x, "slideClass", js.undefined)
       
-      @scala.inline
-      def setSlideCss(value: js.Any): Self = StObject.set(x, "slideCss", value.asInstanceOf[js.Any])
+      inline def setSlideCss(value: js.Any): Self = StObject.set(x, "slideCss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideCssUndefined: Self = StObject.set(x, "slideCss", js.undefined)
+      inline def setSlideCssUndefined: Self = StObject.set(x, "slideCss", js.undefined)
       
-      @scala.inline
-      def setSlides(value: String): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+      inline def setSlides(value: String): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
+      inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStartingSlide(value: Double): Self = StObject.set(x, "startingSlide", value.asInstanceOf[js.Any])
+      inline def setStartingSlide(value: Double): Self = StObject.set(x, "startingSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingSlideUndefined: Self = StObject.set(x, "startingSlide", js.undefined)
+      inline def setStartingSlideUndefined: Self = StObject.set(x, "startingSlide", js.undefined)
       
-      @scala.inline
-      def setSwipe(value: Boolean): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+      inline def setSwipe(value: Boolean): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+      inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTmplRegex(value: String): Self = StObject.set(x, "tmplRegex", value.asInstanceOf[js.Any])
+      inline def setTmplRegex(value: String): Self = StObject.set(x, "tmplRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmplRegexUndefined: Self = StObject.set(x, "tmplRegex", js.undefined)
+      inline def setTmplRegexUndefined: Self = StObject.set(x, "tmplRegex", js.undefined)
       
-      @scala.inline
-      def setUpdateView(value: Double): Self = StObject.set(x, "updateView", value.asInstanceOf[js.Any])
+      inline def setUpdateView(value: Double): Self = StObject.set(x, "updateView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateViewUndefined: Self = StObject.set(x, "updateView", js.undefined)
+      inline def setUpdateViewUndefined: Self = StObject.set(x, "updateView", js.undefined)
     }
   }
   
@@ -484,8 +398,7 @@ object JQueryCycle2 {
   }
   object OptionsWithState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       busy: Boolean,
       currSlide: Double,
       nextSlide: Double,
@@ -497,26 +410,19 @@ object JQueryCycle2 {
       __obj.asInstanceOf[OptionsWithState]
     }
     
-    @scala.inline
-    implicit class OptionsWithStateMutableBuilder[Self <: OptionsWithState] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsWithState](x: Self) {
       
-      @scala.inline
-      def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
+      inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrSlide(value: Double): Self = StObject.set(x, "currSlide", value.asInstanceOf[js.Any])
+      inline def setCurrSlide(value: Double): Self = StObject.set(x, "currSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextSlide(value: Double): Self = StObject.set(x, "nextSlide", value.asInstanceOf[js.Any])
+      inline def setNextSlide(value: Double): Self = StObject.set(x, "nextSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
+      inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideNum(value: Double): Self = StObject.set(x, "slideNum", value.asInstanceOf[js.Any])
+      inline def setSlideNum(value: Double): Self = StObject.set(x, "slideNum", value.asInstanceOf[js.Any])
     }
   }
   
@@ -526,17 +432,14 @@ object JQueryCycle2 {
   }
   object Transition {
     
-    @scala.inline
-    def apply(before: (Options, Element, Element, Boolean) => Unit): Transition = {
+    inline def apply(before: (Options, Element, Element, Boolean) => Unit): Transition = {
       val __obj = js.Dynamic.literal(before = js.Any.fromFunction4(before))
       __obj.asInstanceOf[Transition]
     }
     
-    @scala.inline
-    implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
+    extension [Self <: Transition](x: Self) {
       
-      @scala.inline
-      def setBefore(value: (Options, Element, Element, Boolean) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction4(value))
+      inline def setBefore(value: (Options, Element, Element, Boolean) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction4(value))
     }
   }
 }

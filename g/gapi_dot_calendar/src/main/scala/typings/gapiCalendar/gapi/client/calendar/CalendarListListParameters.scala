@@ -21,49 +21,35 @@ trait CalendarListListParameters extends StObject {
 }
 object CalendarListListParameters {
   
-  @scala.inline
-  def apply(): CalendarListListParameters = {
+  inline def apply(): CalendarListListParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalendarListListParameters]
   }
   
-  @scala.inline
-  implicit class CalendarListListParametersMutableBuilder[Self <: CalendarListListParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarListListParameters](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMinAccessRole(value: AccessRoleWithoutNone): Self = StObject.set(x, "minAccessRole", value.asInstanceOf[js.Any])
+    inline def setMinAccessRole(value: AccessRoleWithoutNone): Self = StObject.set(x, "minAccessRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAccessRoleUndefined: Self = StObject.set(x, "minAccessRole", js.undefined)
+    inline def setMinAccessRoleUndefined: Self = StObject.set(x, "minAccessRole", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
+    inline def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
+    inline def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
     
-    @scala.inline
-    def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
+    inline def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHiddenUndefined: Self = StObject.set(x, "showHidden", js.undefined)
+    inline def setShowHiddenUndefined: Self = StObject.set(x, "showHidden", js.undefined)
     
-    @scala.inline
-    def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
+    inline def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
+    inline def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
   }
 }

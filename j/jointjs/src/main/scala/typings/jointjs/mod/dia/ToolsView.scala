@@ -49,44 +49,32 @@ object ToolsView {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setComponent(value: Boolean): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Boolean): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRelatedView(value: CellView): Self = StObject.set(x, "relatedView", value.asInstanceOf[js.Any])
+      inline def setRelatedView(value: CellView): Self = StObject.set(x, "relatedView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedViewUndefined: Self = StObject.set(x, "relatedView", js.undefined)
+      inline def setRelatedViewUndefined: Self = StObject.set(x, "relatedView", js.undefined)
       
-      @scala.inline
-      def setTools(value: js.Array[ToolView]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+      inline def setTools(value: js.Array[ToolView]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+      inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
       
-      @scala.inline
-      def setToolsVarargs(value: ToolView*): Self = StObject.set(x, "tools", js.Array(value :_*))
+      inline def setToolsVarargs(value: ToolView*): Self = StObject.set(x, "tools", js.Array(value :_*))
     }
   }
 }

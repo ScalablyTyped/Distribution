@@ -28,8 +28,7 @@ trait InstanceTreeAccess extends StObject {
 }
 object InstanceTreeAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Any,
     dbIdToIndex: js.Any,
     nameSuffixes: js.Any,
@@ -45,40 +44,28 @@ object InstanceTreeAccess {
     __obj.asInstanceOf[InstanceTreeAccess]
   }
   
-  @scala.inline
-  implicit class InstanceTreeAccessMutableBuilder[Self <: InstanceTreeAccess] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceTreeAccess](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbIdToIndex(value: js.Any): Self = StObject.set(x, "dbIdToIndex", value.asInstanceOf[js.Any])
+    inline def setDbIdToIndex(value: js.Any): Self = StObject.set(x, "dbIdToIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameSuffixes(value: js.Any): Self = StObject.set(x, "nameSuffixes", value.asInstanceOf[js.Any])
+    inline def setNameSuffixes(value: js.Any): Self = StObject.set(x, "nameSuffixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNames(value: js.Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeBoxes(value: js.Any): Self = StObject.set(x, "nodeBoxes", value.asInstanceOf[js.Any])
+    inline def setNodeBoxes(value: js.Any): Self = StObject.set(x, "nodeBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumNodes(value: Double): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
+    inline def setNumNodes(value: Double): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootId(value: Double): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
+    inline def setRootId(value: Double): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+    inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibleIds(value: Double): Self = StObject.set(x, "visibleIds", value.asInstanceOf[js.Any])
+    inline def setVisibleIds(value: Double): Self = StObject.set(x, "visibleIds", value.asInstanceOf[js.Any])
   }
 }

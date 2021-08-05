@@ -21,8 +21,7 @@ object undecoratedClassesWithDecoratedFieldsUpdateRecorderMod {
   }
   object UpdateRecorder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClassDecorator: (ClassDeclaration, String) => Unit,
       addClassTodo: (ClassDeclaration, String) => Unit,
       addNewImport: (Double, String) => Unit,
@@ -33,17 +32,13 @@ object undecoratedClassesWithDecoratedFieldsUpdateRecorderMod {
       __obj.asInstanceOf[UpdateRecorder]
     }
     
-    @scala.inline
-    implicit class UpdateRecorderMutableBuilder[Self <: UpdateRecorder] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateRecorder](x: Self) {
       
-      @scala.inline
-      def setAddClassDecorator(value: (ClassDeclaration, String) => Unit): Self = StObject.set(x, "addClassDecorator", js.Any.fromFunction2(value))
+      inline def setAddClassDecorator(value: (ClassDeclaration, String) => Unit): Self = StObject.set(x, "addClassDecorator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddClassTodo(value: (ClassDeclaration, String) => Unit): Self = StObject.set(x, "addClassTodo", js.Any.fromFunction2(value))
+      inline def setAddClassTodo(value: (ClassDeclaration, String) => Unit): Self = StObject.set(x, "addClassTodo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCommitUpdate(value: () => Unit): Self = StObject.set(x, "commitUpdate", js.Any.fromFunction0(value))
+      inline def setCommitUpdate(value: () => Unit): Self = StObject.set(x, "commitUpdate", js.Any.fromFunction0(value))
     }
   }
 }

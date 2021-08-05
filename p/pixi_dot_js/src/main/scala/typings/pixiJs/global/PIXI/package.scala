@@ -14,10 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   * @example data:image/png;base64
   */
-@scala.inline
-def DATA_URI: typings.std.RegExp | java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("DATA_URI").asInstanceOf[typings.std.RegExp | java.lang.String]
-@scala.inline
-def DATA_URI_=(x: typings.std.RegExp | java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("DATA_URI")(x.asInstanceOf[js.Any])
+inline def DATA_URI: typings.std.RegExp | java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("DATA_URI").asInstanceOf[typings.std.RegExp | java.lang.String]
+inline def DATA_URI_=(x: typings.std.RegExp | java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("DATA_URI")(x.asInstanceOf[js.Any])
 
 /**
   * Conversion factor for converting degrees to radians.
@@ -26,10 +24,8 @@ def DATA_URI_=(x: typings.std.RegExp | java.lang.String): scala.Unit = typings.p
   * @constant {number} DEG_TO_RAD
   * @memberof PIXI
   */
-@scala.inline
-def DEG_TO_RAD: scala.Double = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("DEG_TO_RAD").asInstanceOf[scala.Double]
-@scala.inline
-def DEG_TO_RAD_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("DEG_TO_RAD")(x.asInstanceOf[js.Any])
+inline def DEG_TO_RAD: scala.Double = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("DEG_TO_RAD").asInstanceOf[scala.Double]
+inline def DEG_TO_RAD_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("DEG_TO_RAD")(x.asInstanceOf[js.Any])
 
 /**
   * Two Pi.
@@ -38,10 +34,8 @@ def DEG_TO_RAD_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asI
   * @constant {number} PI_2
   * @memberof PIXI
   */
-@scala.inline
-def PI_2: scala.Double = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("PI_2").asInstanceOf[scala.Double]
-@scala.inline
-def PI_2_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("PI_2")(x.asInstanceOf[js.Any])
+inline def PI_2: scala.Double = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("PI_2").asInstanceOf[scala.Double]
+inline def PI_2_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("PI_2")(x.asInstanceOf[js.Any])
 
 /**
   * Conversion factor for converting radians to degrees.
@@ -50,10 +44,8 @@ def PI_2_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanc
   * @constant {number} RAD_TO_DEG
   * @memberof PIXI
   */
-@scala.inline
-def RAD_TO_DEG: scala.Double = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("RAD_TO_DEG").asInstanceOf[scala.Double]
-@scala.inline
-def RAD_TO_DEG_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("RAD_TO_DEG")(x.asInstanceOf[js.Any])
+inline def RAD_TO_DEG: scala.Double = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("RAD_TO_DEG").asInstanceOf[scala.Double]
+inline def RAD_TO_DEG_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("RAD_TO_DEG")(x.asInstanceOf[js.Any])
 
 /**
   * String of the current PIXI version.
@@ -64,10 +56,8 @@ def RAD_TO_DEG_=(x: scala.Double): scala.Unit = typings.pixiJs.global.PIXI.^.asI
   * @name VERSION
   * @type {string}
   */
-@scala.inline
-def VERSION: java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
-@scala.inline
-def VERSION_=(x: java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+inline def VERSION: java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION_=(x: java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
 
 /**
   * This helper function will automatically detect which renderer you should be using.
@@ -98,27 +88,21 @@ def VERSION_=(x: java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.as
   *  for devices with dual graphics card **webgl only**
   * @return {PIXI.Renderer|PIXI.CanvasRenderer} Returns WebGL renderer if available, otherwise CanvasRenderer
   */
-@scala.inline
-def autoDetectRenderer(): typings.pixiJs.PIXI.Renderer = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")().asInstanceOf[typings.pixiJs.PIXI.Renderer]
-@scala.inline
-def autoDetectRenderer(options: typings.pixiJs.anon.ClearBeforeRender): typings.pixiJs.PIXI.Renderer = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Renderer]
+inline def autoDetectRenderer(): typings.pixiJs.PIXI.Renderer = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")().asInstanceOf[typings.pixiJs.PIXI.Renderer]
+inline def autoDetectRenderer(options: typings.pixiJs.anon.ClearBeforeRender): typings.pixiJs.PIXI.Renderer = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Renderer]
 
 /**
   * Default filter vertex shader
   * @memberof PIXI
   * @member {string} defaultFilterVertex
   */
-@scala.inline
-def defaultFilterVertex: java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("defaultFilterVertex").asInstanceOf[java.lang.String]
-@scala.inline
-def defaultFilterVertex_=(x: java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("defaultFilterVertex")(x.asInstanceOf[js.Any])
+inline def defaultFilterVertex: java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("defaultFilterVertex").asInstanceOf[java.lang.String]
+inline def defaultFilterVertex_=(x: java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("defaultFilterVertex")(x.asInstanceOf[js.Any])
 
 /**
   * Default vertex shader
   * @memberof PIXI
   * @member {string} defaultVertex
   */
-@scala.inline
-def defaultVertex: java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("defaultVertex").asInstanceOf[java.lang.String]
-@scala.inline
-def defaultVertex_=(x: java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertex")(x.asInstanceOf[js.Any])
+inline def defaultVertex: java.lang.String = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].selectDynamic("defaultVertex").asInstanceOf[java.lang.String]
+inline def defaultVertex_=(x: java.lang.String): scala.Unit = typings.pixiJs.global.PIXI.^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertex")(x.asInstanceOf[js.Any])

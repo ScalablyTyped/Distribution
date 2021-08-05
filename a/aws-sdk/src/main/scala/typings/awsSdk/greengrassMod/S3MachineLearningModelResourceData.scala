@@ -20,31 +20,23 @@ trait S3MachineLearningModelResourceData extends StObject {
 }
 object S3MachineLearningModelResourceData {
   
-  @scala.inline
-  def apply(): S3MachineLearningModelResourceData = {
+  inline def apply(): S3MachineLearningModelResourceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3MachineLearningModelResourceData]
   }
   
-  @scala.inline
-  implicit class S3MachineLearningModelResourceDataMutableBuilder[Self <: S3MachineLearningModelResourceData] (val x: Self) extends AnyVal {
+  extension [Self <: S3MachineLearningModelResourceData](x: Self) {
     
-    @scala.inline
-    def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
+    inline def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
+    inline def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
     
-    @scala.inline
-    def setOwnerSetting(value: ResourceDownloadOwnerSetting): Self = StObject.set(x, "OwnerSetting", value.asInstanceOf[js.Any])
+    inline def setOwnerSetting(value: ResourceDownloadOwnerSetting): Self = StObject.set(x, "OwnerSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerSettingUndefined: Self = StObject.set(x, "OwnerSetting", js.undefined)
+    inline def setOwnerSettingUndefined: Self = StObject.set(x, "OwnerSetting", js.undefined)
     
-    @scala.inline
-    def setS3Uri(value: string): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: string): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
+    inline def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
   }
 }

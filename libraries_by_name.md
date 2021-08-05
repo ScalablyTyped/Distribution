@@ -2657,6 +2657,7 @@
 | [fullcalendar__vue](./f/fullcalendar__vue) | An official FullCalendar component for Vue | vue, calendar, fullcalendar |
 | [fullname](./f/fullname) | Get the fullname of the current user | name, fullname, realname, full name, surname, full, real, given, user, gecos, pwuid, uid |
 | [fullpage_dot_js](./f/fullpage_dot_js) | Create beautiful fullscreen snap scrolling website | jquery, javacript, scrolling, single_page, onepage, fullpage, fullpagejs, one_page, sliding, snap, scroll, swipe, mousewheel, sections, slides, slidehow |
+| [function-bind](./f/function-bind) | Implementation of Function.prototype.bind | function, bind, shim, es5 |
 | [fundamental-react](./f/fundamental-react) | SAP Fundamental Library, implemented in React | - |
 | [furigana-markdown-it](./f/furigana-markdown-it) | Furigana extension for markdown-it. | markdown-it, markdown, furigana |
 | [fuse_dot_js](./f/fuse_dot_js) | Lightweight fuzzy-search | fuzzy, search, bitap |
@@ -4650,6 +4651,7 @@
 | [loadable__server](./l/loadable__server) | Server utilities for loadable. | loadable |
 | [loadable__webpack-plugin](./l/loadable__webpack-plugin) | Webpack plugin for loadable (required for SSR). | loadable |
 | [loader-runner](./l/loader-runner) | Runs (webpack) loaders | webpack, loader |
+| [loader-utils](./l/loader-utils) | utils for webpack loaders | - |
 | [loadicons](./l/loadicons) | Load SVG icon sprites safely and asynchronously | svg, sprite |
 | [loadjs](./l/loadjs) | Tiny async loader for modern browsers | async, loader, dependency manager |
 | [loadware](./l/loadware) | A library to make sense of a bunch of middleware d | loadware, middleware, load, normalize |
@@ -8843,6 +8845,7 @@
 | [terraformer__arcgis](./t/terraformer__arcgis) | Convert ArcGIS JSON geometries to GeoJSON geometri | arcgis, convert, geo, geojson, geometry |
 | [terraformer__spatial](./t/terraformer__spatial) | Spatial predicates for GeoJSON. | arcgis, convert, geo, geojson, geometry |
 | [terser](./t/terser) | JavaScript parser, mangler/compressor and beautifi | uglify, terser, uglify-es, uglify-js, minify, minifier, javascript, ecmascript, es5, es6, es7, es8, es2015, es2016, es2017, async, await |
+| [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack | uglify, uglify-js, uglify-es, terser, webpack, webpack-plugin, minification, compress, compressor, min, minification, minifier, minify, optimize, optimizer |
 | [teslajs](./t/teslajs) | Full-featured Tesla REST API NodeJS package | Tesla, Model S, Model X, Model 3, REST |
 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR | - |
 | [test-console](./t/test-console) | A simple and pragmatic library for testing Node.js | console, stdout, stderr, test, spy, test double |
@@ -9032,6 +9035,7 @@
 | [tslib](./t/tslib) | Runtime library for TypeScript helper functions | TypeScript, Microsoft, compiler, language, javascript, tslib, runtime |
 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS | cli, typescript, linter |
 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript | typescript, monad, functional |
+| [tspromise](./t/tspromise) | A ES6-compatible node.js promise library for harmo | promises, harmony, generators |
 | [tsscmp](./t/tsscmp) | Timing safe string compare using double HMAC | timing safe string compare, double hmac string compare, safe string compare, hmac |
 | [tsutils](./t/tsutils) | utilities for working with typescript's AST | typescript, ts, ast, typeguard, utils, helper, node |
 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones. | ttf, woff2, fonts |

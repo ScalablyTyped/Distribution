@@ -21,13 +21,11 @@ object DesignPropertyValueType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValueType.DropDown")
   @js.native
   def DropDown: DesignPropertyValueType = js.native
-  @scala.inline
-  def DropDown_=(x: DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropDown")(x.asInstanceOf[js.Any])
+  inline def DropDown_=(x: DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropDown")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValueType.Toggle")
   @js.native
   def Toggle: DesignPropertyValueType = js.native
-  @scala.inline
-  def Toggle_=(x: DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
+  inline def Toggle_=(x: DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
 }

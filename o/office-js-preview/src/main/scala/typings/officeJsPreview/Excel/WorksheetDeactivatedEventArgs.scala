@@ -31,20 +31,16 @@ trait WorksheetDeactivatedEventArgs extends StObject {
 }
 object WorksheetDeactivatedEventArgs {
   
-  @scala.inline
-  def apply(worksheetId: String): WorksheetDeactivatedEventArgs = {
+  inline def apply(worksheetId: String): WorksheetDeactivatedEventArgs = {
     val __obj = js.Dynamic.literal(worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WorksheetDeactivated")
     __obj.asInstanceOf[WorksheetDeactivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class WorksheetDeactivatedEventArgsMutableBuilder[Self <: WorksheetDeactivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetDeactivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setType(value: WorksheetDeactivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WorksheetDeactivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

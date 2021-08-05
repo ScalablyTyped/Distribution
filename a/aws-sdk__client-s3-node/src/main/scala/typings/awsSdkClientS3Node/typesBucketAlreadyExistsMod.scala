@@ -16,17 +16,14 @@ object typesBucketAlreadyExistsMod {
   }
   object BucketAlreadyExists {
     
-    @scala.inline
-    def apply(): BucketAlreadyExists = {
+    inline def apply(): BucketAlreadyExists = {
       val __obj = js.Dynamic.literal(name = "BucketAlreadyExists")
       __obj.asInstanceOf[BucketAlreadyExists]
     }
     
-    @scala.inline
-    implicit class BucketAlreadyExistsMutableBuilder[Self <: BucketAlreadyExists] (val x: Self) extends AnyVal {
+    extension [Self <: BucketAlreadyExists](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyExists): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyExists): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

@@ -17,20 +17,16 @@ object anon {
   }
   object From {
     
-    @scala.inline
-    def apply(from: String, nonce: BigNumberish): From = {
+    inline def apply(from: String, nonce: BigNumberish): From = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.asInstanceOf[From]
     }
     
-    @scala.inline
-    implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+    extension [Self <: From](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: BigNumberish): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: BigNumberish): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +38,16 @@ object anon {
   }
   object Nonce {
     
-    @scala.inline
-    def apply(from: String, nonce: BytesLike | BigNumber | Double): Nonce = {
+    inline def apply(from: String, nonce: BytesLike | BigNumber | Double): Nonce = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.asInstanceOf[Nonce]
     }
     
-    @scala.inline
-    implicit class NonceMutableBuilder[Self <: Nonce] (val x: Self) extends AnyVal {
+    extension [Self <: Nonce](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: BytesLike | BigNumber | Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: BytesLike | BigNumber | Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,18 +57,15 @@ object anon {
   }
   object Object {
     
-    @scala.inline
-    def apply(`object`: String): Object = {
+    inline def apply(`object`: String): Object = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Object]
     }
     
-    @scala.inline
-    implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+    extension [Self <: Object](x: Self) {
       
-      @scala.inline
-      def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
 }

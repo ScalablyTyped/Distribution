@@ -14,25 +14,19 @@ trait TextSpan extends StObject {
 }
 object TextSpan {
   
-  @scala.inline
-  def apply(): TextSpan = {
+  inline def apply(): TextSpan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextSpan]
   }
   
-  @scala.inline
-  implicit class TextSpanMutableBuilder[Self <: TextSpan] (val x: Self) extends AnyVal {
+  extension [Self <: TextSpan](x: Self) {
     
-    @scala.inline
-    def setBeginOffset(value: Double): Self = StObject.set(x, "beginOffset", value.asInstanceOf[js.Any])
+    inline def setBeginOffset(value: Double): Self = StObject.set(x, "beginOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginOffsetUndefined: Self = StObject.set(x, "beginOffset", js.undefined)
+    inline def setBeginOffsetUndefined: Self = StObject.set(x, "beginOffset", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

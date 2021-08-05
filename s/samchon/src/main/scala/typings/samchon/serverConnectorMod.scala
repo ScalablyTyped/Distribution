@@ -25,12 +25,12 @@ object serverConnectorMod {
     /**
       * @hidden
       */
-    var _Handle_connect: js.Any = js.native
+    /* private */ var _Handle_connect: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Send_dummy_packet_repeatedly: js.Any = js.native
+    /* private */ var _Send_dummy_packet_repeatedly: js.Any = js.native
     
     /**
       * @inheritdoc

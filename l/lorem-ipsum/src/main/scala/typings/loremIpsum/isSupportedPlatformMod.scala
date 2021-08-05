@@ -10,6 +10,5 @@ object isSupportedPlatformMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(platform: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(platform.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(platform: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(platform.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

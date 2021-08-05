@@ -11,12 +11,9 @@ object validateArgsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isApiKeyCredentials(opts: NotarizeCredentials): /* is electron-notarize.electron-notarize.NotarizeApiKeyCredentials */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isApiKeyCredentials")(opts.asInstanceOf[js.Any]).asInstanceOf[/* is electron-notarize.electron-notarize.NotarizeApiKeyCredentials */ Boolean]
+  inline def isApiKeyCredentials(opts: NotarizeCredentials): /* is electron-notarize.electron-notarize.NotarizeApiKeyCredentials */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isApiKeyCredentials")(opts.asInstanceOf[js.Any]).asInstanceOf[/* is electron-notarize.electron-notarize.NotarizeApiKeyCredentials */ Boolean]
   
-  @scala.inline
-  def isPasswordCredentials(opts: NotarizeCredentials): /* is electron-notarize.electron-notarize.NotarizePasswordCredentials */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPasswordCredentials")(opts.asInstanceOf[js.Any]).asInstanceOf[/* is electron-notarize.electron-notarize.NotarizePasswordCredentials */ Boolean]
+  inline def isPasswordCredentials(opts: NotarizeCredentials): /* is electron-notarize.electron-notarize.NotarizePasswordCredentials */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPasswordCredentials")(opts.asInstanceOf[js.Any]).asInstanceOf[/* is electron-notarize.electron-notarize.NotarizePasswordCredentials */ Boolean]
   
-  @scala.inline
-  def validateAuthorizationArgs(opts: NotarizeCredentials): NotarizeCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("validateAuthorizationArgs")(opts.asInstanceOf[js.Any]).asInstanceOf[NotarizeCredentials]
+  inline def validateAuthorizationArgs(opts: NotarizeCredentials): NotarizeCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("validateAuthorizationArgs")(opts.asInstanceOf[js.Any]).asInstanceOf[NotarizeCredentials]
 }

@@ -20,8 +20,7 @@ trait Queue extends StObject {
 }
 object Queue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appEngineHttpQueue: AppEngineHttpQueue,
     name: String,
     purgeTime: String,
@@ -33,25 +32,18 @@ object Queue {
     __obj.asInstanceOf[Queue]
   }
   
-  @scala.inline
-  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
+  extension [Self <: Queue](x: Self) {
     
-    @scala.inline
-    def setAppEngineHttpQueue(value: AppEngineHttpQueue): Self = StObject.set(x, "appEngineHttpQueue", value.asInstanceOf[js.Any])
+    inline def setAppEngineHttpQueue(value: AppEngineHttpQueue): Self = StObject.set(x, "appEngineHttpQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurgeTime(value: String): Self = StObject.set(x, "purgeTime", value.asInstanceOf[js.Any])
+    inline def setPurgeTime(value: String): Self = StObject.set(x, "purgeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateLimits(value: RateLimits): Self = StObject.set(x, "rateLimits", value.asInstanceOf[js.Any])
+    inline def setRateLimits(value: RateLimits): Self = StObject.set(x, "rateLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryConfig(value: RetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
+    inline def setRetryConfig(value: RetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

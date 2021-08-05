@@ -13,19 +13,15 @@ trait DescribeChannelMembershipResponse extends StObject {
 }
 object DescribeChannelMembershipResponse {
   
-  @scala.inline
-  def apply(): DescribeChannelMembershipResponse = {
+  inline def apply(): DescribeChannelMembershipResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeChannelMembershipResponse]
   }
   
-  @scala.inline
-  implicit class DescribeChannelMembershipResponseMutableBuilder[Self <: DescribeChannelMembershipResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelMembershipResponse](x: Self) {
     
-    @scala.inline
-    def setChannelMembership(value: ChannelMembership): Self = StObject.set(x, "ChannelMembership", value.asInstanceOf[js.Any])
+    inline def setChannelMembership(value: ChannelMembership): Self = StObject.set(x, "ChannelMembership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelMembershipUndefined: Self = StObject.set(x, "ChannelMembership", js.undefined)
+    inline def setChannelMembershipUndefined: Self = StObject.set(x, "ChannelMembership", js.undefined)
   }
 }

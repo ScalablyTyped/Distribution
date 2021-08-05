@@ -22,23 +22,18 @@ trait SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch extends StObject {
 }
 object SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch {
   
-  @scala.inline
-  def apply(`type`: String): SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch = {
+  inline def apply(`type`: String): SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch]
   }
   
-  @scala.inline
-  implicit class SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchMutableBuilder[Self <: SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

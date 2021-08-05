@@ -18,23 +18,18 @@ trait DataEventType[UUIDCustom /* <: ObjectCustom */] extends StObject {
 }
 object DataEventType {
   
-  @scala.inline
-  def apply[UUIDCustom /* <: ObjectCustom */](data: UUIDMetadataObject[UUIDCustom]): DataEventType[UUIDCustom] = {
+  inline def apply[UUIDCustom /* <: ObjectCustom */](data: UUIDMetadataObject[UUIDCustom]): DataEventType[UUIDCustom] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
     __obj.updateDynamic("type")("uuid")
     __obj.asInstanceOf[DataEventType[UUIDCustom]]
   }
   
-  @scala.inline
-  implicit class DataEventTypeMutableBuilder[Self <: DataEventType[?], UUIDCustom /* <: ObjectCustom */] (val x: Self & DataEventType[UUIDCustom]) extends AnyVal {
+  extension [Self <: DataEventType[?], UUIDCustom /* <: ObjectCustom */](x: Self & DataEventType[UUIDCustom]) {
     
-    @scala.inline
-    def setData(value: UUIDMetadataObject[UUIDCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: UUIDMetadataObject[UUIDCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

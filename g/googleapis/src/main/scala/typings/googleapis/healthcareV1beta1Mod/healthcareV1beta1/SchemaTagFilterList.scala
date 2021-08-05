@@ -20,22 +20,17 @@ trait SchemaTagFilterList extends StObject {
 }
 object SchemaTagFilterList {
   
-  @scala.inline
-  def apply(): SchemaTagFilterList = {
+  inline def apply(): SchemaTagFilterList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTagFilterList]
   }
   
-  @scala.inline
-  implicit class SchemaTagFilterListMutableBuilder[Self <: SchemaTagFilterList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTagFilterList](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

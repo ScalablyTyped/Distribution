@@ -10,16 +10,13 @@ trait TargetGroupArn extends StObject {
 }
 object TargetGroupArn {
   
-  @scala.inline
-  def apply(targetGroupArn: String): TargetGroupArn = {
+  inline def apply(targetGroupArn: String): TargetGroupArn = {
     val __obj = js.Dynamic.literal(targetGroupArn = targetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupArn]
   }
   
-  @scala.inline
-  implicit class TargetGroupArnMutableBuilder[Self <: TargetGroupArn] (val x: Self) extends AnyVal {
+  extension [Self <: TargetGroupArn](x: Self) {
     
-    @scala.inline
-    def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
   }
 }

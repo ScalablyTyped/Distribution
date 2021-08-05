@@ -27,28 +27,20 @@ object DateDisplayFormat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DDMMMMYYYY: `5` = 5.asInstanceOf[`5`]
+    inline def DDMMMMYYYY: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def DDMMMYYYY: `4` = 4.asInstanceOf[`4`]
+    inline def DDMMMYYYY: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def MMDDYY: `2` = 2.asInstanceOf[`2`]
+    inline def MMDDYY: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MMDDYYYY: `3` = 3.asInstanceOf[`3`]
+    inline def MMDDYYYY: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NNDDMMMMYYYY: `6` = 6.asInstanceOf[`6`]
+    inline def NNDDMMMMYYYY: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def NNNNDDMMMMYYYY: `7` = 7.asInstanceOf[`7`]
+    inline def NNNNDDMMMMYYYY: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def STANDARD_LONG: `1` = 1.asInstanceOf[`1`]
+    inline def STANDARD_LONG: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def STANDARD_SHORT: `0` = 0.asInstanceOf[`0`]
+    inline def STANDARD_SHORT: `0` = 0.asInstanceOf[`0`]
   }
 }

@@ -12,6 +12,5 @@ object toggleStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IToggleStyleProps): IToggleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IToggleStyles]
+  inline def getStyles(props: IToggleStyleProps): IToggleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IToggleStyles]
 }

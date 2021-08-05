@@ -35,42 +35,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlListDataType extends StObject
 object XlListDataType {
   
-  @scala.inline
-  def xlListDataTypeCheckbox: `9` = 9.asInstanceOf[`9`]
+  inline def xlListDataTypeCheckbox: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def xlListDataTypeChoice: `6` = 6.asInstanceOf[`6`]
+  inline def xlListDataTypeChoice: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlListDataTypeChoiceMulti: `7` = 7.asInstanceOf[`7`]
+  inline def xlListDataTypeChoiceMulti: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlListDataTypeCounter: `11` = 11.asInstanceOf[`11`]
+  inline def xlListDataTypeCounter: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def xlListDataTypeCurrency: `4` = 4.asInstanceOf[`4`]
+  inline def xlListDataTypeCurrency: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlListDataTypeDateTime: `5` = 5.asInstanceOf[`5`]
+  inline def xlListDataTypeDateTime: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlListDataTypeHyperLink: `10` = 10.asInstanceOf[`10`]
+  inline def xlListDataTypeHyperLink: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def xlListDataTypeListLookup: `8` = 8.asInstanceOf[`8`]
+  inline def xlListDataTypeListLookup: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlListDataTypeMultiLineRichText: `12` = 12.asInstanceOf[`12`]
+  inline def xlListDataTypeMultiLineRichText: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def xlListDataTypeMultiLineText: `2` = 2.asInstanceOf[`2`]
+  inline def xlListDataTypeMultiLineText: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlListDataTypeNone: `0` = 0.asInstanceOf[`0`]
+  inline def xlListDataTypeNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlListDataTypeNumber: `3` = 3.asInstanceOf[`3`]
+  inline def xlListDataTypeNumber: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlListDataTypeText: `1` = 1.asInstanceOf[`1`]
+  inline def xlListDataTypeText: `1` = 1.asInstanceOf[`1`]
 }

@@ -18,19 +18,15 @@ trait AnalyticsApplicationOutputKinesisStream extends StObject {
 }
 object AnalyticsApplicationOutputKinesisStream {
   
-  @scala.inline
-  def apply(resourceArn: String, roleArn: String): AnalyticsApplicationOutputKinesisStream = {
+  inline def apply(resourceArn: String, roleArn: String): AnalyticsApplicationOutputKinesisStream = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationOutputKinesisStream]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationOutputKinesisStreamMutableBuilder[Self <: AnalyticsApplicationOutputKinesisStream] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationOutputKinesisStream](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait XPresentation
 }
 object XPresentation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     end: () => Unit,
     queryInterface: `type` => js.Any,
@@ -35,16 +34,12 @@ object XPresentation {
     __obj.asInstanceOf[XPresentation]
   }
   
-  @scala.inline
-  implicit class XPresentationMutableBuilder[Self <: XPresentation] (val x: Self) extends AnyVal {
+  extension [Self <: XPresentation](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRehearseTimings(value: () => Unit): Self = StObject.set(x, "rehearseTimings", js.Any.fromFunction0(value))
+    inline def setRehearseTimings(value: () => Unit): Self = StObject.set(x, "rehearseTimings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
   }
 }

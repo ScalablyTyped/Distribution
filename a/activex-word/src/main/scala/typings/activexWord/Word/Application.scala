@@ -693,7 +693,7 @@ trait Application extends StObject {
   
   val WordBasic: js.Any = js.native
   
-  @JSName("Word.Application_typekey")
+  /* private */ @JSName("Word.Application_typekey")
   var WordDotApplication_typekey: typings.activexWord.Word.Application = js.native
   
   val XMLNamespaces: typings.activexWord.Word.XMLNamespaces = js.native

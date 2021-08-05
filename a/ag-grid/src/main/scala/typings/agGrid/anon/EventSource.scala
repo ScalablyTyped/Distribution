@@ -28,59 +28,42 @@ trait EventSource extends StObject {
 }
 object EventSource {
   
-  @scala.inline
-  def apply(ePopup: HTMLElement, eventSource: HTMLElement, `type`: String): EventSource = {
+  inline def apply(ePopup: HTMLElement, eventSource: HTMLElement, `type`: String): EventSource = {
     val __obj = js.Dynamic.literal(ePopup = ePopup.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSource]
   }
   
-  @scala.inline
-  implicit class EventSourceMutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
+  extension [Self <: EventSource](x: Self) {
     
-    @scala.inline
-    def setColumn(value: typings.agGrid.columnMod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: typings.agGrid.columnMod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setEPopup(value: HTMLElement): Self = StObject.set(x, "ePopup", value.asInstanceOf[js.Any])
+    inline def setEPopup(value: HTMLElement): Self = StObject.set(x, "ePopup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSource(value: HTMLElement): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: HTMLElement): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepWithinBounds(value: Boolean): Self = StObject.set(x, "keepWithinBounds", value.asInstanceOf[js.Any])
+    inline def setKeepWithinBounds(value: Boolean): Self = StObject.set(x, "keepWithinBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepWithinBoundsUndefined: Self = StObject.set(x, "keepWithinBounds", js.undefined)
+    inline def setKeepWithinBoundsUndefined: Self = StObject.set(x, "keepWithinBounds", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setNudgeX(value: Double): Self = StObject.set(x, "nudgeX", value.asInstanceOf[js.Any])
+    inline def setNudgeX(value: Double): Self = StObject.set(x, "nudgeX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNudgeXUndefined: Self = StObject.set(x, "nudgeX", js.undefined)
+    inline def setNudgeXUndefined: Self = StObject.set(x, "nudgeX", js.undefined)
     
-    @scala.inline
-    def setNudgeY(value: Double): Self = StObject.set(x, "nudgeY", value.asInstanceOf[js.Any])
+    inline def setNudgeY(value: Double): Self = StObject.set(x, "nudgeY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNudgeYUndefined: Self = StObject.set(x, "nudgeY", js.undefined)
+    inline def setNudgeYUndefined: Self = StObject.set(x, "nudgeY", js.undefined)
     
-    @scala.inline
-    def setRowNode(value: RowNode): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
+    inline def setRowNode(value: RowNode): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowNodeUndefined: Self = StObject.set(x, "rowNode", js.undefined)
+    inline def setRowNodeUndefined: Self = StObject.set(x, "rowNode", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

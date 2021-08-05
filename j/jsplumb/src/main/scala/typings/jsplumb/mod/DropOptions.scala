@@ -10,16 +10,13 @@ trait DropOptions extends StObject {
 }
 object DropOptions {
   
-  @scala.inline
-  def apply(hoverClass: String): DropOptions = {
+  inline def apply(hoverClass: String): DropOptions = {
     val __obj = js.Dynamic.literal(hoverClass = hoverClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropOptions]
   }
   
-  @scala.inline
-  implicit class DropOptionsMutableBuilder[Self <: DropOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DropOptions](x: Self) {
     
-    @scala.inline
-    def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
+    inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
   }
 }

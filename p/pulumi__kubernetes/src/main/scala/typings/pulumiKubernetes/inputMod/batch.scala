@@ -64,44 +64,32 @@ object batch {
     }
     object Job {
       
-      @scala.inline
-      def apply(): Job = {
+      inline def apply(): Job = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Job]
       }
       
-      @scala.inline
-      implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+      extension [Self <: Job](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[batchSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[batchSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Job]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Job]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[JobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[JobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[JobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[JobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -142,45 +130,33 @@ object batch {
     }
     object JobCondition {
       
-      @scala.inline
-      def apply(status: Input[String], `type`: Input[String]): JobCondition = {
+      inline def apply(status: Input[String], `type`: Input[String]): JobCondition = {
         val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[JobCondition]
       }
       
-      @scala.inline
-      implicit class JobConditionMutableBuilder[Self <: JobCondition] (val x: Self) extends AnyVal {
+      extension [Self <: JobCondition](x: Self) {
         
-        @scala.inline
-        def setLastProbeTime(value: Input[String]): Self = StObject.set(x, "lastProbeTime", value.asInstanceOf[js.Any])
+        inline def setLastProbeTime(value: Input[String]): Self = StObject.set(x, "lastProbeTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastProbeTimeUndefined: Self = StObject.set(x, "lastProbeTime", js.undefined)
+        inline def setLastProbeTimeUndefined: Self = StObject.set(x, "lastProbeTime", js.undefined)
         
-        @scala.inline
-        def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+        inline def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
+        inline def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
         
-        @scala.inline
-        def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -231,59 +207,42 @@ object batch {
     }
     object JobSpec {
       
-      @scala.inline
-      def apply(template: Input[PodTemplateSpec]): JobSpec = {
+      inline def apply(template: Input[PodTemplateSpec]): JobSpec = {
         val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
         __obj.asInstanceOf[JobSpec]
       }
       
-      @scala.inline
-      implicit class JobSpecMutableBuilder[Self <: JobSpec] (val x: Self) extends AnyVal {
+      extension [Self <: JobSpec](x: Self) {
         
-        @scala.inline
-        def setActiveDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "activeDeadlineSeconds", value.asInstanceOf[js.Any])
+        inline def setActiveDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "activeDeadlineSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActiveDeadlineSecondsUndefined: Self = StObject.set(x, "activeDeadlineSeconds", js.undefined)
+        inline def setActiveDeadlineSecondsUndefined: Self = StObject.set(x, "activeDeadlineSeconds", js.undefined)
         
-        @scala.inline
-        def setBackoffLimit(value: Input[Double]): Self = StObject.set(x, "backoffLimit", value.asInstanceOf[js.Any])
+        inline def setBackoffLimit(value: Input[Double]): Self = StObject.set(x, "backoffLimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackoffLimitUndefined: Self = StObject.set(x, "backoffLimit", js.undefined)
+        inline def setBackoffLimitUndefined: Self = StObject.set(x, "backoffLimit", js.undefined)
         
-        @scala.inline
-        def setCompletions(value: Input[Double]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
+        inline def setCompletions(value: Input[Double]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompletionsUndefined: Self = StObject.set(x, "completions", js.undefined)
+        inline def setCompletionsUndefined: Self = StObject.set(x, "completions", js.undefined)
         
-        @scala.inline
-        def setManualSelector(value: Input[Boolean]): Self = StObject.set(x, "manualSelector", value.asInstanceOf[js.Any])
+        inline def setManualSelector(value: Input[Boolean]): Self = StObject.set(x, "manualSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManualSelectorUndefined: Self = StObject.set(x, "manualSelector", js.undefined)
+        inline def setManualSelectorUndefined: Self = StObject.set(x, "manualSelector", js.undefined)
         
-        @scala.inline
-        def setParallelism(value: Input[Double]): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
+        inline def setParallelism(value: Input[Double]): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
+        inline def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
         
-        @scala.inline
-        def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTtlSecondsAfterFinished(value: Input[Double]): Self = StObject.set(x, "ttlSecondsAfterFinished", value.asInstanceOf[js.Any])
+        inline def setTtlSecondsAfterFinished(value: Input[Double]): Self = StObject.set(x, "ttlSecondsAfterFinished", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTtlSecondsAfterFinishedUndefined: Self = StObject.set(x, "ttlSecondsAfterFinished", js.undefined)
+        inline def setTtlSecondsAfterFinishedUndefined: Self = StObject.set(x, "ttlSecondsAfterFinished", js.undefined)
       }
     }
     
@@ -324,53 +283,38 @@ object batch {
     }
     object JobStatus {
       
-      @scala.inline
-      def apply(): JobStatus = {
+      inline def apply(): JobStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[JobStatus]
       }
       
-      @scala.inline
-      implicit class JobStatusMutableBuilder[Self <: JobStatus] (val x: Self) extends AnyVal {
+      extension [Self <: JobStatus](x: Self) {
         
-        @scala.inline
-        def setActive(value: Input[Double]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Input[Double]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+        inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
         
-        @scala.inline
-        def setCompletionTime(value: Input[String]): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
+        inline def setCompletionTime(value: Input[String]): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
+        inline def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
         
-        @scala.inline
-        def setConditions(value: Input[js.Array[Input[JobCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: Input[js.Array[Input[JobCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+        inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
         
-        @scala.inline
-        def setConditionsVarargs(value: Input[JobCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: Input[JobCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
         
-        @scala.inline
-        def setFailed(value: Input[Double]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+        inline def setFailed(value: Input[Double]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+        inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
         
-        @scala.inline
-        def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+        inline def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+        inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
         
-        @scala.inline
-        def setSucceeded(value: Input[Double]): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+        inline def setSucceeded(value: Input[Double]): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSucceededUndefined: Self = StObject.set(x, "succeeded", js.undefined)
+        inline def setSucceededUndefined: Self = StObject.set(x, "succeeded", js.undefined)
       }
     }
   }
@@ -409,44 +353,32 @@ object batch {
     }
     object CronJob {
       
-      @scala.inline
-      def apply(): CronJob = {
+      inline def apply(): CronJob = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CronJob]
       }
       
-      @scala.inline
-      implicit class CronJobMutableBuilder[Self <: CronJob] (val x: Self) extends AnyVal {
+      extension [Self <: CronJob](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[batchSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[batchSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[CronJobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[CronJobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[CronJobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[CronJobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -492,50 +424,36 @@ object batch {
     }
     object CronJobSpec {
       
-      @scala.inline
-      def apply(jobTemplate: Input[JobTemplateSpec], schedule: Input[String]): CronJobSpec = {
+      inline def apply(jobTemplate: Input[JobTemplateSpec], schedule: Input[String]): CronJobSpec = {
         val __obj = js.Dynamic.literal(jobTemplate = jobTemplate.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any])
         __obj.asInstanceOf[CronJobSpec]
       }
       
-      @scala.inline
-      implicit class CronJobSpecMutableBuilder[Self <: CronJobSpec] (val x: Self) extends AnyVal {
+      extension [Self <: CronJobSpec](x: Self) {
         
-        @scala.inline
-        def setConcurrencyPolicy(value: Input[String]): Self = StObject.set(x, "concurrencyPolicy", value.asInstanceOf[js.Any])
+        inline def setConcurrencyPolicy(value: Input[String]): Self = StObject.set(x, "concurrencyPolicy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConcurrencyPolicyUndefined: Self = StObject.set(x, "concurrencyPolicy", js.undefined)
+        inline def setConcurrencyPolicyUndefined: Self = StObject.set(x, "concurrencyPolicy", js.undefined)
         
-        @scala.inline
-        def setFailedJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "failedJobsHistoryLimit", value.asInstanceOf[js.Any])
+        inline def setFailedJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "failedJobsHistoryLimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFailedJobsHistoryLimitUndefined: Self = StObject.set(x, "failedJobsHistoryLimit", js.undefined)
+        inline def setFailedJobsHistoryLimitUndefined: Self = StObject.set(x, "failedJobsHistoryLimit", js.undefined)
         
-        @scala.inline
-        def setJobTemplate(value: Input[JobTemplateSpec]): Self = StObject.set(x, "jobTemplate", value.asInstanceOf[js.Any])
+        inline def setJobTemplate(value: Input[JobTemplateSpec]): Self = StObject.set(x, "jobTemplate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+        inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartingDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "startingDeadlineSeconds", value.asInstanceOf[js.Any])
+        inline def setStartingDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "startingDeadlineSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartingDeadlineSecondsUndefined: Self = StObject.set(x, "startingDeadlineSeconds", js.undefined)
+        inline def setStartingDeadlineSecondsUndefined: Self = StObject.set(x, "startingDeadlineSeconds", js.undefined)
         
-        @scala.inline
-        def setSuccessfulJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "successfulJobsHistoryLimit", value.asInstanceOf[js.Any])
+        inline def setSuccessfulJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "successfulJobsHistoryLimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuccessfulJobsHistoryLimitUndefined: Self = StObject.set(x, "successfulJobsHistoryLimit", js.undefined)
+        inline def setSuccessfulJobsHistoryLimitUndefined: Self = StObject.set(x, "successfulJobsHistoryLimit", js.undefined)
         
-        @scala.inline
-        def setSuspend(value: Input[Boolean]): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
+        inline def setSuspend(value: Input[Boolean]): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuspendUndefined: Self = StObject.set(x, "suspend", js.undefined)
+        inline def setSuspendUndefined: Self = StObject.set(x, "suspend", js.undefined)
       }
     }
     
@@ -556,29 +474,22 @@ object batch {
     }
     object CronJobStatus {
       
-      @scala.inline
-      def apply(): CronJobStatus = {
+      inline def apply(): CronJobStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CronJobStatus]
       }
       
-      @scala.inline
-      implicit class CronJobStatusMutableBuilder[Self <: CronJobStatus] (val x: Self) extends AnyVal {
+      extension [Self <: CronJobStatus](x: Self) {
         
-        @scala.inline
-        def setActive(value: Input[js.Array[Input[ObjectReference]]]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Input[js.Array[Input[ObjectReference]]]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+        inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
         
-        @scala.inline
-        def setActiveVarargs(value: Input[ObjectReference]*): Self = StObject.set(x, "active", js.Array(value :_*))
+        inline def setActiveVarargs(value: Input[ObjectReference]*): Self = StObject.set(x, "active", js.Array(value :_*))
         
-        @scala.inline
-        def setLastScheduleTime(value: Input[String]): Self = StObject.set(x, "lastScheduleTime", value.asInstanceOf[js.Any])
+        inline def setLastScheduleTime(value: Input[String]): Self = StObject.set(x, "lastScheduleTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastScheduleTimeUndefined: Self = StObject.set(x, "lastScheduleTime", js.undefined)
+        inline def setLastScheduleTimeUndefined: Self = StObject.set(x, "lastScheduleTime", js.undefined)
       }
     }
     
@@ -599,26 +510,20 @@ object batch {
     }
     object JobTemplateSpec {
       
-      @scala.inline
-      def apply(): JobTemplateSpec = {
+      inline def apply(): JobTemplateSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[JobTemplateSpec]
       }
       
-      @scala.inline
-      implicit class JobTemplateSpecMutableBuilder[Self <: JobTemplateSpec] (val x: Self) extends AnyVal {
+      extension [Self <: JobTemplateSpec](x: Self) {
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[JobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[JobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       }
     }
   }
@@ -657,44 +562,32 @@ object batch {
     }
     object CronJob {
       
-      @scala.inline
-      def apply(): CronJob = {
+      inline def apply(): CronJob = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CronJob]
       }
       
-      @scala.inline
-      implicit class CronJobMutableBuilder[Self <: CronJob] (val x: Self) extends AnyVal {
+      extension [Self <: CronJob](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[batchSlashv2alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[batchSlashv2alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[CronJobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[CronJobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[CronJobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[CronJobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -740,50 +633,36 @@ object batch {
     }
     object CronJobSpec {
       
-      @scala.inline
-      def apply(jobTemplate: Input[JobTemplateSpec], schedule: Input[String]): CronJobSpec = {
+      inline def apply(jobTemplate: Input[JobTemplateSpec], schedule: Input[String]): CronJobSpec = {
         val __obj = js.Dynamic.literal(jobTemplate = jobTemplate.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any])
         __obj.asInstanceOf[CronJobSpec]
       }
       
-      @scala.inline
-      implicit class CronJobSpecMutableBuilder[Self <: CronJobSpec] (val x: Self) extends AnyVal {
+      extension [Self <: CronJobSpec](x: Self) {
         
-        @scala.inline
-        def setConcurrencyPolicy(value: Input[String]): Self = StObject.set(x, "concurrencyPolicy", value.asInstanceOf[js.Any])
+        inline def setConcurrencyPolicy(value: Input[String]): Self = StObject.set(x, "concurrencyPolicy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConcurrencyPolicyUndefined: Self = StObject.set(x, "concurrencyPolicy", js.undefined)
+        inline def setConcurrencyPolicyUndefined: Self = StObject.set(x, "concurrencyPolicy", js.undefined)
         
-        @scala.inline
-        def setFailedJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "failedJobsHistoryLimit", value.asInstanceOf[js.Any])
+        inline def setFailedJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "failedJobsHistoryLimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFailedJobsHistoryLimitUndefined: Self = StObject.set(x, "failedJobsHistoryLimit", js.undefined)
+        inline def setFailedJobsHistoryLimitUndefined: Self = StObject.set(x, "failedJobsHistoryLimit", js.undefined)
         
-        @scala.inline
-        def setJobTemplate(value: Input[JobTemplateSpec]): Self = StObject.set(x, "jobTemplate", value.asInstanceOf[js.Any])
+        inline def setJobTemplate(value: Input[JobTemplateSpec]): Self = StObject.set(x, "jobTemplate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+        inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartingDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "startingDeadlineSeconds", value.asInstanceOf[js.Any])
+        inline def setStartingDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "startingDeadlineSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartingDeadlineSecondsUndefined: Self = StObject.set(x, "startingDeadlineSeconds", js.undefined)
+        inline def setStartingDeadlineSecondsUndefined: Self = StObject.set(x, "startingDeadlineSeconds", js.undefined)
         
-        @scala.inline
-        def setSuccessfulJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "successfulJobsHistoryLimit", value.asInstanceOf[js.Any])
+        inline def setSuccessfulJobsHistoryLimit(value: Input[Double]): Self = StObject.set(x, "successfulJobsHistoryLimit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuccessfulJobsHistoryLimitUndefined: Self = StObject.set(x, "successfulJobsHistoryLimit", js.undefined)
+        inline def setSuccessfulJobsHistoryLimitUndefined: Self = StObject.set(x, "successfulJobsHistoryLimit", js.undefined)
         
-        @scala.inline
-        def setSuspend(value: Input[Boolean]): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
+        inline def setSuspend(value: Input[Boolean]): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuspendUndefined: Self = StObject.set(x, "suspend", js.undefined)
+        inline def setSuspendUndefined: Self = StObject.set(x, "suspend", js.undefined)
       }
     }
     
@@ -804,29 +683,22 @@ object batch {
     }
     object CronJobStatus {
       
-      @scala.inline
-      def apply(): CronJobStatus = {
+      inline def apply(): CronJobStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CronJobStatus]
       }
       
-      @scala.inline
-      implicit class CronJobStatusMutableBuilder[Self <: CronJobStatus] (val x: Self) extends AnyVal {
+      extension [Self <: CronJobStatus](x: Self) {
         
-        @scala.inline
-        def setActive(value: Input[js.Array[Input[ObjectReference]]]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Input[js.Array[Input[ObjectReference]]]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+        inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
         
-        @scala.inline
-        def setActiveVarargs(value: Input[ObjectReference]*): Self = StObject.set(x, "active", js.Array(value :_*))
+        inline def setActiveVarargs(value: Input[ObjectReference]*): Self = StObject.set(x, "active", js.Array(value :_*))
         
-        @scala.inline
-        def setLastScheduleTime(value: Input[String]): Self = StObject.set(x, "lastScheduleTime", value.asInstanceOf[js.Any])
+        inline def setLastScheduleTime(value: Input[String]): Self = StObject.set(x, "lastScheduleTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastScheduleTimeUndefined: Self = StObject.set(x, "lastScheduleTime", js.undefined)
+        inline def setLastScheduleTimeUndefined: Self = StObject.set(x, "lastScheduleTime", js.undefined)
       }
     }
     
@@ -847,26 +719,20 @@ object batch {
     }
     object JobTemplateSpec {
       
-      @scala.inline
-      def apply(): JobTemplateSpec = {
+      inline def apply(): JobTemplateSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[JobTemplateSpec]
       }
       
-      @scala.inline
-      implicit class JobTemplateSpecMutableBuilder[Self <: JobTemplateSpec] (val x: Self) extends AnyVal {
+      extension [Self <: JobTemplateSpec](x: Self) {
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[JobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[JobSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       }
     }
   }

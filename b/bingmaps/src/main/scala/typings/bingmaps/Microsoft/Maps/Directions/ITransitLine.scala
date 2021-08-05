@@ -32,8 +32,7 @@ trait ITransitLine extends StObject {
 }
 object ITransitLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abbreviatedName: String,
     agencyId: Double,
     agencyName: String,
@@ -47,31 +46,22 @@ object ITransitLine {
     __obj.asInstanceOf[ITransitLine]
   }
   
-  @scala.inline
-  implicit class ITransitLineMutableBuilder[Self <: ITransitLine] (val x: Self) extends AnyVal {
+  extension [Self <: ITransitLine](x: Self) {
     
-    @scala.inline
-    def setAbbreviatedName(value: String): Self = StObject.set(x, "abbreviatedName", value.asInstanceOf[js.Any])
+    inline def setAbbreviatedName(value: String): Self = StObject.set(x, "abbreviatedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgencyId(value: Double): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
+    inline def setAgencyId(value: Double): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgencyName(value: String): Self = StObject.set(x, "agencyName", value.asInstanceOf[js.Any])
+    inline def setAgencyName(value: String): Self = StObject.set(x, "agencyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgencyUrl(value: String): Self = StObject.set(x, "agencyUrl", value.asInstanceOf[js.Any])
+    inline def setAgencyUrl(value: String): Self = StObject.set(x, "agencyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderInfo(value: String): Self = StObject.set(x, "providerInfo", value.asInstanceOf[js.Any])
+    inline def setProviderInfo(value: String): Self = StObject.set(x, "providerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseName(value: String): Self = StObject.set(x, "verboseName", value.asInstanceOf[js.Any])
+    inline def setVerboseName(value: String): Self = StObject.set(x, "verboseName", value.asInstanceOf[js.Any])
   }
 }

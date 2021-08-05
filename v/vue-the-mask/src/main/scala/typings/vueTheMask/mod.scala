@@ -40,8 +40,7 @@ object mod extends Shortcut {
   }
   object VueTheMaskPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       TheMask: Component[
           DefaultData[scala.Nothing], 
           DefaultMethods[scala.Nothing], 
@@ -57,16 +56,13 @@ object mod extends Shortcut {
     
     type VueStatic = js.Function0[Unit]
     
-    @scala.inline
-    implicit class VueTheMaskPluginMutableBuilder[Self <: VueTheMaskPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: VueTheMaskPlugin](x: Self) {
       
-      @scala.inline
-      def setMask(
+      inline def setMask(
         value: (/* el */ HTMLElement, /* binding */ DirectiveBinding, /* vnode */ VNode, /* oldVnode */ VNode) => Unit
       ): Self = StObject.set(x, "mask", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setTheMask(
+      inline def setTheMask(
         value: Component[
               DefaultData[scala.Nothing], 
               DefaultMethods[scala.Nothing], 

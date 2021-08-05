@@ -16,15 +16,15 @@ object linkBaseMod {
        with ILink {
     def this(props: ILinkProps) = this()
     
-    var _adjustPropsForRootType: js.Any = js.native
+    /* private */ var _adjustPropsForRootType: js.Any = js.native
     
-    var _getRootType: js.Any = js.native
+    /* private */ var _getRootType: js.Any = js.native
     
-    var _link: js.Any = js.native
+    /* private */ var _link: js.Any = js.native
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _renderContent: js.Any = js.native
+    /* private */ var _renderContent: js.Any = js.native
     
     /** Sets focus to the link. */
     /* CompleteClass */

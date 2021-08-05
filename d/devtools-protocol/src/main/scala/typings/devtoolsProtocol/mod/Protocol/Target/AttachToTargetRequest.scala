@@ -17,22 +17,17 @@ trait AttachToTargetRequest extends StObject {
 }
 object AttachToTargetRequest {
   
-  @scala.inline
-  def apply(targetId: TargetID): AttachToTargetRequest = {
+  inline def apply(targetId: TargetID): AttachToTargetRequest = {
     val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachToTargetRequest]
   }
   
-  @scala.inline
-  implicit class AttachToTargetRequestMutableBuilder[Self <: AttachToTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachToTargetRequest](x: Self) {
     
-    @scala.inline
-    def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+    inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+    inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

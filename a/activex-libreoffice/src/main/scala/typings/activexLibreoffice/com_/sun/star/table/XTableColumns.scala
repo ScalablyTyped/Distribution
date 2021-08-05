@@ -30,8 +30,7 @@ trait XTableColumns
 }
 object XTableColumns {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -48,13 +47,10 @@ object XTableColumns {
     __obj.asInstanceOf[XTableColumns]
   }
   
-  @scala.inline
-  implicit class XTableColumnsMutableBuilder[Self <: XTableColumns] (val x: Self) extends AnyVal {
+  extension [Self <: XTableColumns](x: Self) {
     
-    @scala.inline
-    def setInsertByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
+    inline def setInsertByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction2(value))
+    inline def setRemoveByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction2(value))
   }
 }

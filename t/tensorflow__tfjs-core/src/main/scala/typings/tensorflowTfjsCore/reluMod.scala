@@ -13,6 +13,5 @@ object reluMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def relu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("relu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def relu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("relu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

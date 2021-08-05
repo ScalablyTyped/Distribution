@@ -16,19 +16,15 @@ trait SchemaDeleteAttachmentsResponse extends StObject {
 }
 object SchemaDeleteAttachmentsResponse {
   
-  @scala.inline
-  def apply(): SchemaDeleteAttachmentsResponse = {
+  inline def apply(): SchemaDeleteAttachmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteAttachmentsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteAttachmentsResponseMutableBuilder[Self <: SchemaDeleteAttachmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteAttachmentsResponse](x: Self) {
     
-    @scala.inline
-    def setNumDeleted(value: Double): Self = StObject.set(x, "numDeleted", value.asInstanceOf[js.Any])
+    inline def setNumDeleted(value: Double): Self = StObject.set(x, "numDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumDeletedUndefined: Self = StObject.set(x, "numDeleted", js.undefined)
+    inline def setNumDeletedUndefined: Self = StObject.set(x, "numDeleted", js.undefined)
   }
 }

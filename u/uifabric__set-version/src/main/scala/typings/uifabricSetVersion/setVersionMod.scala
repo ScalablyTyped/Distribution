@@ -10,6 +10,5 @@ object setVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setVersion(packageName: String, packageVersion: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVersion")(packageName.asInstanceOf[js.Any], packageVersion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setVersion(packageName: String, packageVersion: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVersion")(packageName.asInstanceOf[js.Any], packageVersion.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -11,6 +11,5 @@ object scaleService {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def updateScaleDefaults(`type`: ScaleType, updates: ChartScales): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateScaleDefaults")(`type`.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateScaleDefaults(`type`: ScaleType, updates: ChartScales): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateScaleDefaults")(`type`.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

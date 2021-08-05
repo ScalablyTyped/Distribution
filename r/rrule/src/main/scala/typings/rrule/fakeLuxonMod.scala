@@ -12,7 +12,6 @@ object fakeLuxonMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromJSDate(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")().asInstanceOf[scala.Nothing]
+    inline def fromJSDate(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")().asInstanceOf[scala.Nothing]
   }
 }

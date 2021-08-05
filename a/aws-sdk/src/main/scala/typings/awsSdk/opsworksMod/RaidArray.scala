@@ -73,91 +73,63 @@ trait RaidArray extends StObject {
 }
 object RaidArray {
   
-  @scala.inline
-  def apply(): RaidArray = {
+  inline def apply(): RaidArray = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RaidArray]
   }
   
-  @scala.inline
-  implicit class RaidArrayMutableBuilder[Self <: RaidArray] (val x: Self) extends AnyVal {
+  extension [Self <: RaidArray](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
-    @scala.inline
-    def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
+    inline def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPointUndefined: Self = StObject.set(x, "MountPoint", js.undefined)
+    inline def setMountPointUndefined: Self = StObject.set(x, "MountPoint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNumberOfDisks(value: Integer): Self = StObject.set(x, "NumberOfDisks", value.asInstanceOf[js.Any])
+    inline def setNumberOfDisks(value: Integer): Self = StObject.set(x, "NumberOfDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDisksUndefined: Self = StObject.set(x, "NumberOfDisks", js.undefined)
+    inline def setNumberOfDisksUndefined: Self = StObject.set(x, "NumberOfDisks", js.undefined)
     
-    @scala.inline
-    def setRaidArrayId(value: String): Self = StObject.set(x, "RaidArrayId", value.asInstanceOf[js.Any])
+    inline def setRaidArrayId(value: String): Self = StObject.set(x, "RaidArrayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidArrayIdUndefined: Self = StObject.set(x, "RaidArrayId", js.undefined)
+    inline def setRaidArrayIdUndefined: Self = StObject.set(x, "RaidArrayId", js.undefined)
     
-    @scala.inline
-    def setRaidLevel(value: Integer): Self = StObject.set(x, "RaidLevel", value.asInstanceOf[js.Any])
+    inline def setRaidLevel(value: Integer): Self = StObject.set(x, "RaidLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidLevelUndefined: Self = StObject.set(x, "RaidLevel", js.undefined)
+    inline def setRaidLevelUndefined: Self = StObject.set(x, "RaidLevel", js.undefined)
     
-    @scala.inline
-    def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
-    @scala.inline
-    def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
+    inline def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
   }
 }

@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T], knots: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any], knots.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T], knots: js.Array[Double], weights: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any], knots.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T], knots: Unit, weights: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any], knots.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T], knots: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any], knots.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T], knots: js.Array[Double], weights: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any], knots.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: ArrayLike[Double] */](t: Double, degree: Double, points: js.Array[T], knots: Unit, weights: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(t.asInstanceOf[js.Any], degree.asInstanceOf[js.Any], points.asInstanceOf[js.Any], knots.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("b-spline", JSImport.Namespace)
   @js.native

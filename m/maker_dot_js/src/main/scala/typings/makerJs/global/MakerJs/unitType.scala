@@ -19,30 +19,25 @@ object unitType {
   @JSGlobal("MakerJs.unitType.Centimeter")
   @js.native
   def Centimeter: String = js.native
-  @scala.inline
-  def Centimeter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Centimeter")(x.asInstanceOf[js.Any])
+  inline def Centimeter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Centimeter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("MakerJs.unitType.Foot")
   @js.native
   def Foot: String = js.native
-  @scala.inline
-  def Foot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Foot")(x.asInstanceOf[js.Any])
+  inline def Foot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Foot")(x.asInstanceOf[js.Any])
   
   @JSGlobal("MakerJs.unitType.Inch")
   @js.native
   def Inch: String = js.native
-  @scala.inline
-  def Inch_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inch")(x.asInstanceOf[js.Any])
+  inline def Inch_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inch")(x.asInstanceOf[js.Any])
   
   @JSGlobal("MakerJs.unitType.Meter")
   @js.native
   def Meter: String = js.native
-  @scala.inline
-  def Meter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Meter")(x.asInstanceOf[js.Any])
+  inline def Meter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Meter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("MakerJs.unitType.Millimeter")
   @js.native
   def Millimeter: String = js.native
-  @scala.inline
-  def Millimeter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Millimeter")(x.asInstanceOf[js.Any])
+  inline def Millimeter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Millimeter")(x.asInstanceOf[js.Any])
 }

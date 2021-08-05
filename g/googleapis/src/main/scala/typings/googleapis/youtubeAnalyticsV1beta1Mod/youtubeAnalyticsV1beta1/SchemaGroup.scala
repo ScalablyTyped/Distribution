@@ -20,43 +20,31 @@ trait SchemaGroup extends StObject {
 }
 object SchemaGroup {
   
-  @scala.inline
-  def apply(): SchemaGroup = {
+  inline def apply(): SchemaGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroup]
   }
   
-  @scala.inline
-  implicit class SchemaGroupMutableBuilder[Self <: SchemaGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroup](x: Self) {
     
-    @scala.inline
-    def setContentDetails(value: ItemCount): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: ItemCount): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
+    inline def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: PublishedAt): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: PublishedAt): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

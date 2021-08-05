@@ -22,19 +22,15 @@ trait ChangeFloatingObjectPropertyCommandBase[T] extends StObject {
 }
 object ChangeFloatingObjectPropertyCommandBase {
   
-  @scala.inline
-  def apply[T](execute: T => Boolean, getState: () => CommandState[T]): ChangeFloatingObjectPropertyCommandBase[T] = {
+  inline def apply[T](execute: T => Boolean, getState: () => CommandState[T]): ChangeFloatingObjectPropertyCommandBase[T] = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeFloatingObjectPropertyCommandBase[T]]
   }
   
-  @scala.inline
-  implicit class ChangeFloatingObjectPropertyCommandBaseMutableBuilder[Self <: ChangeFloatingObjectPropertyCommandBase[?], T] (val x: Self & ChangeFloatingObjectPropertyCommandBase[T]) extends AnyVal {
+  extension [Self <: ChangeFloatingObjectPropertyCommandBase[?], T](x: Self & ChangeFloatingObjectPropertyCommandBase[T]) {
     
-    @scala.inline
-    def setExecute(value: T => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: T => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[T]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[T]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

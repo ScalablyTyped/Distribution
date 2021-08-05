@@ -16,31 +16,23 @@ trait PartialIPanelState extends StObject {
 }
 object PartialIPanelState {
   
-  @scala.inline
-  def apply(): PartialIPanelState = {
+  inline def apply(): PartialIPanelState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIPanelState]
   }
   
-  @scala.inline
-  implicit class PartialIPanelStateMutableBuilder[Self <: PartialIPanelState] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIPanelState](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsFooterSticky(value: Boolean): Self = StObject.set(x, "isFooterSticky", value.asInstanceOf[js.Any])
+    inline def setIsFooterSticky(value: Boolean): Self = StObject.set(x, "isFooterSticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFooterStickyUndefined: Self = StObject.set(x, "isFooterSticky", js.undefined)
+    inline def setIsFooterStickyUndefined: Self = StObject.set(x, "isFooterSticky", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: PanelVisibilityState): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: PanelVisibilityState): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

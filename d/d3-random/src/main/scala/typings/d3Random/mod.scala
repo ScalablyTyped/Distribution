@@ -50,10 +50,8 @@ object mod {
   @js.native
   val randomIrwinHall: RandomIrwinHall_ = js.native
   
-  @scala.inline
-  def randomLcg(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")().asInstanceOf[js.Function0[Double]]
-  @scala.inline
-  def randomLcg(seed: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")(seed.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  inline def randomLcg(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")().asInstanceOf[js.Function0[Double]]
+  inline def randomLcg(seed: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")(seed.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("d3-random", "randomLogNormal")
   @js.native
@@ -309,17 +307,14 @@ object mod {
   }
   object RandomNumberGenerationSource {
     
-    @scala.inline
-    def apply(source: js.Function0[Double] => RandomNumberGenerationSource): RandomNumberGenerationSource = {
+    inline def apply(source: js.Function0[Double] => RandomNumberGenerationSource): RandomNumberGenerationSource = {
       val __obj = js.Dynamic.literal(source = js.Any.fromFunction1(source))
       __obj.asInstanceOf[RandomNumberGenerationSource]
     }
     
-    @scala.inline
-    implicit class RandomNumberGenerationSourceMutableBuilder[Self <: RandomNumberGenerationSource] (val x: Self) extends AnyVal {
+    extension [Self <: RandomNumberGenerationSource](x: Self) {
       
-      @scala.inline
-      def setSource(value: js.Function0[Double] => RandomNumberGenerationSource): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
+      inline def setSource(value: js.Function0[Double] => RandomNumberGenerationSource): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
     }
   }
   

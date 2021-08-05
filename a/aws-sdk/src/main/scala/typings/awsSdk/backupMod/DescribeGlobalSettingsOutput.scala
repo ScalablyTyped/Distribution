@@ -18,25 +18,19 @@ trait DescribeGlobalSettingsOutput extends StObject {
 }
 object DescribeGlobalSettingsOutput {
   
-  @scala.inline
-  def apply(): DescribeGlobalSettingsOutput = {
+  inline def apply(): DescribeGlobalSettingsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeGlobalSettingsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeGlobalSettingsOutputMutableBuilder[Self <: DescribeGlobalSettingsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGlobalSettingsOutput](x: Self) {
     
-    @scala.inline
-    def setGlobalSettings(value: GlobalSettings): Self = StObject.set(x, "GlobalSettings", value.asInstanceOf[js.Any])
+    inline def setGlobalSettings(value: GlobalSettings): Self = StObject.set(x, "GlobalSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalSettingsUndefined: Self = StObject.set(x, "GlobalSettings", js.undefined)
+    inline def setGlobalSettingsUndefined: Self = StObject.set(x, "GlobalSettings", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: timestamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: timestamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
   }
 }

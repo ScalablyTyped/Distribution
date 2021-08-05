@@ -57,55 +57,39 @@ trait ServerInfoProperties extends StObject {
 }
 object ServerInfoProperties {
   
-  @scala.inline
-  def apply(): ServerInfoProperties = {
+  inline def apply(): ServerInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerInfoProperties]
   }
   
-  @scala.inline
-  implicit class ServerInfoPropertiesMutableBuilder[Self <: ServerInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ServerInfoProperties](x: Self) {
     
-    @scala.inline
-    def setAdminTokenServiceUrl(value: String): Self = StObject.set(x, "adminTokenServiceUrl", value.asInstanceOf[js.Any])
+    inline def setAdminTokenServiceUrl(value: String): Self = StObject.set(x, "adminTokenServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminTokenServiceUrlUndefined: Self = StObject.set(x, "adminTokenServiceUrl", js.undefined)
+    inline def setAdminTokenServiceUrlUndefined: Self = StObject.set(x, "adminTokenServiceUrl", js.undefined)
     
-    @scala.inline
-    def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
-    @scala.inline
-    def setHasPortal(value: Boolean): Self = StObject.set(x, "hasPortal", value.asInstanceOf[js.Any])
+    inline def setHasPortal(value: Boolean): Self = StObject.set(x, "hasPortal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPortalUndefined: Self = StObject.set(x, "hasPortal", js.undefined)
+    inline def setHasPortalUndefined: Self = StObject.set(x, "hasPortal", js.undefined)
     
-    @scala.inline
-    def setHasServer(value: Boolean): Self = StObject.set(x, "hasServer", value.asInstanceOf[js.Any])
+    inline def setHasServer(value: Boolean): Self = StObject.set(x, "hasServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasServerUndefined: Self = StObject.set(x, "hasServer", js.undefined)
+    inline def setHasServerUndefined: Self = StObject.set(x, "hasServer", js.undefined)
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    @scala.inline
-    def setShortLivedTokenValidity(value: Double): Self = StObject.set(x, "shortLivedTokenValidity", value.asInstanceOf[js.Any])
+    inline def setShortLivedTokenValidity(value: Double): Self = StObject.set(x, "shortLivedTokenValidity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortLivedTokenValidityUndefined: Self = StObject.set(x, "shortLivedTokenValidity", js.undefined)
+    inline def setShortLivedTokenValidityUndefined: Self = StObject.set(x, "shortLivedTokenValidity", js.undefined)
     
-    @scala.inline
-    def setTokenServiceUrl(value: String): Self = StObject.set(x, "tokenServiceUrl", value.asInstanceOf[js.Any])
+    inline def setTokenServiceUrl(value: String): Self = StObject.set(x, "tokenServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenServiceUrlUndefined: Self = StObject.set(x, "tokenServiceUrl", js.undefined)
+    inline def setTokenServiceUrlUndefined: Self = StObject.set(x, "tokenServiceUrl", js.undefined)
   }
 }

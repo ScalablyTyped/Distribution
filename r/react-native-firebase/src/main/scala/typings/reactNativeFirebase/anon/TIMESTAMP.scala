@@ -11,16 +11,13 @@ trait TIMESTAMP extends StObject {
 }
 object TIMESTAMP {
   
-  @scala.inline
-  def apply(TIMESTAMP: StringDictionary[String]): TIMESTAMP = {
+  inline def apply(TIMESTAMP: StringDictionary[String]): TIMESTAMP = {
     val __obj = js.Dynamic.literal(TIMESTAMP = TIMESTAMP.asInstanceOf[js.Any])
     __obj.asInstanceOf[TIMESTAMP]
   }
   
-  @scala.inline
-  implicit class TIMESTAMPMutableBuilder[Self <: TIMESTAMP] (val x: Self) extends AnyVal {
+  extension [Self <: TIMESTAMP](x: Self) {
     
-    @scala.inline
-    def setTIMESTAMP(value: StringDictionary[String]): Self = StObject.set(x, "TIMESTAMP", value.asInstanceOf[js.Any])
+    inline def setTIMESTAMP(value: StringDictionary[String]): Self = StObject.set(x, "TIMESTAMP", value.asInstanceOf[js.Any])
   }
 }

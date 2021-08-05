@@ -36,8 +36,7 @@ object indexingMod {
     @JSImport("googleapis/build/src/apis/indexing", "VERSIONS.v3")
     @js.native
     def v3: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Indexing] = js.native
-    @scala.inline
-    def v3_=(
+    inline def v3_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Indexing]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object indexingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object indexingMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def indexing(options: Options): Indexing = ^.asInstanceOf[js.Dynamic].applyDynamic("indexing")(options.asInstanceOf[js.Any]).asInstanceOf[Indexing]
+  inline def indexing(options: Options): Indexing = ^.asInstanceOf[js.Dynamic].applyDynamic("indexing")(options.asInstanceOf[js.Any]).asInstanceOf[Indexing]
   
-  @scala.inline
-  def indexing_v3(version: v3): Indexing = ^.asInstanceOf[js.Dynamic].applyDynamic("indexing")(version.asInstanceOf[js.Any]).asInstanceOf[Indexing]
+  inline def indexing_v3(version: v3): Indexing = ^.asInstanceOf[js.Dynamic].applyDynamic("indexing")(version.asInstanceOf[js.Any]).asInstanceOf[Indexing]
 }

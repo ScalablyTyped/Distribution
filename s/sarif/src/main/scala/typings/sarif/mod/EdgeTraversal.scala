@@ -34,40 +34,29 @@ trait EdgeTraversal extends StObject {
 }
 object EdgeTraversal {
   
-  @scala.inline
-  def apply(edgeId: String): EdgeTraversal = {
+  inline def apply(edgeId: String): EdgeTraversal = {
     val __obj = js.Dynamic.literal(edgeId = edgeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeTraversal]
   }
   
-  @scala.inline
-  implicit class EdgeTraversalMutableBuilder[Self <: EdgeTraversal] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeTraversal](x: Self) {
     
-    @scala.inline
-    def setEdgeId(value: String): Self = StObject.set(x, "edgeId", value.asInstanceOf[js.Any])
+    inline def setEdgeId(value: String): Self = StObject.set(x, "edgeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "finalState", value.asInstanceOf[js.Any])
+    inline def setFinalState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "finalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalStateUndefined: Self = StObject.set(x, "finalState", js.undefined)
+    inline def setFinalStateUndefined: Self = StObject.set(x, "finalState", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setStepOverEdgeCount(value: Double): Self = StObject.set(x, "stepOverEdgeCount", value.asInstanceOf[js.Any])
+    inline def setStepOverEdgeCount(value: Double): Self = StObject.set(x, "stepOverEdgeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepOverEdgeCountUndefined: Self = StObject.set(x, "stepOverEdgeCount", js.undefined)
+    inline def setStepOverEdgeCountUndefined: Self = StObject.set(x, "stepOverEdgeCount", js.undefined)
   }
 }

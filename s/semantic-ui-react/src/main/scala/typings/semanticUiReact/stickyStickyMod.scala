@@ -37,8 +37,7 @@ object stickyStickyMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object StickyProps {
     
-    @scala.inline
-    def apply(): StickyProps = {
+    inline def apply(): StickyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StickyProps]
     }
@@ -118,110 +117,76 @@ object stickyStickyMod extends Shortcut {
   }
   object StrictStickyProps {
     
-    @scala.inline
-    def apply(): StrictStickyProps = {
+    inline def apply(): StrictStickyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictStickyProps]
     }
     
-    @scala.inline
-    implicit class StrictStickyPropsMutableBuilder[Self <: StrictStickyProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictStickyProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
+      inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
+      inline def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContext(value: Document | Window | HTMLElement | Ref[HTMLElement]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Document | Window | HTMLElement | Ref[HTMLElement]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+      inline def setContextFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextNull: Self = StObject.set(x, "context", null)
+      inline def setContextNull: Self = StObject.set(x, "context", null)
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnBottom(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onBottom", js.Any.fromFunction2(value))
+      inline def setOnBottom(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onBottom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBottomUndefined: Self = StObject.set(x, "onBottom", js.undefined)
+      inline def setOnBottomUndefined: Self = StObject.set(x, "onBottom", js.undefined)
       
-      @scala.inline
-      def setOnStick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onStick", js.Any.fromFunction2(value))
+      inline def setOnStick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onStick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStickUndefined: Self = StObject.set(x, "onStick", js.undefined)
+      inline def setOnStickUndefined: Self = StObject.set(x, "onStick", js.undefined)
       
-      @scala.inline
-      def setOnTop(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onTop", js.Any.fromFunction2(value))
+      inline def setOnTop(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onTop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTopUndefined: Self = StObject.set(x, "onTop", js.undefined)
+      inline def setOnTopUndefined: Self = StObject.set(x, "onTop", js.undefined)
       
-      @scala.inline
-      def setOnUnstick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onUnstick", js.Any.fromFunction2(value))
+      inline def setOnUnstick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps) => Unit): Self = StObject.set(x, "onUnstick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUnstickUndefined: Self = StObject.set(x, "onUnstick", js.undefined)
+      inline def setOnUnstickUndefined: Self = StObject.set(x, "onUnstick", js.undefined)
       
-      @scala.inline
-      def setPushing(value: Boolean): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
+      inline def setPushing(value: Boolean): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushingUndefined: Self = StObject.set(x, "pushing", js.undefined)
+      inline def setPushingUndefined: Self = StObject.set(x, "pushing", js.undefined)
       
-      @scala.inline
-      def setScrollContext(value: Document | Window | HTMLElement | Ref[HTMLElement]): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
+      inline def setScrollContext(value: Document | Window | HTMLElement | Ref[HTMLElement]): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollContextFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "scrollContext", js.Any.fromFunction1(value))
+      inline def setScrollContextFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "scrollContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollContextNull: Self = StObject.set(x, "scrollContext", null)
+      inline def setScrollContextNull: Self = StObject.set(x, "scrollContext", null)
       
-      @scala.inline
-      def setScrollContextUndefined: Self = StObject.set(x, "scrollContext", js.undefined)
+      inline def setScrollContextUndefined: Self = StObject.set(x, "scrollContext", js.undefined)
       
-      @scala.inline
-      def setStyleElement(value: CSSProperties): Self = StObject.set(x, "styleElement", value.asInstanceOf[js.Any])
+      inline def setStyleElement(value: CSSProperties): Self = StObject.set(x, "styleElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleElementUndefined: Self = StObject.set(x, "styleElement", js.undefined)
+      inline def setStyleElementUndefined: Self = StObject.set(x, "styleElement", js.undefined)
     }
   }
   

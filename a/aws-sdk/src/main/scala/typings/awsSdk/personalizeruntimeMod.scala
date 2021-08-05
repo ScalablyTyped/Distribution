@@ -38,20 +38,16 @@ object personalizeruntimeMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -102,44 +98,32 @@ object personalizeruntimeMod {
   }
   object GetPersonalizedRankingRequest {
     
-    @scala.inline
-    def apply(campaignArn: Arn, inputList: InputList, userId: UserID): GetPersonalizedRankingRequest = {
+    inline def apply(campaignArn: Arn, inputList: InputList, userId: UserID): GetPersonalizedRankingRequest = {
       val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any], inputList = inputList.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPersonalizedRankingRequest]
     }
     
-    @scala.inline
-    implicit class GetPersonalizedRankingRequestMutableBuilder[Self <: GetPersonalizedRankingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetPersonalizedRankingRequest](x: Self) {
       
-      @scala.inline
-      def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
+      inline def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
+      inline def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterArnUndefined: Self = StObject.set(x, "filterArn", js.undefined)
+      inline def setFilterArnUndefined: Self = StObject.set(x, "filterArn", js.undefined)
       
-      @scala.inline
-      def setFilterValues(value: FilterValues): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
+      inline def setFilterValues(value: FilterValues): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
+      inline def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
       
-      @scala.inline
-      def setInputList(value: InputList): Self = StObject.set(x, "inputList", value.asInstanceOf[js.Any])
+      inline def setInputList(value: InputList): Self = StObject.set(x, "inputList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputListVarargs(value: ItemID*): Self = StObject.set(x, "inputList", js.Array(value :_*))
+      inline def setInputListVarargs(value: ItemID*): Self = StObject.set(x, "inputList", js.Array(value :_*))
       
-      @scala.inline
-      def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,29 +141,22 @@ object personalizeruntimeMod {
   }
   object GetPersonalizedRankingResponse {
     
-    @scala.inline
-    def apply(): GetPersonalizedRankingResponse = {
+    inline def apply(): GetPersonalizedRankingResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPersonalizedRankingResponse]
     }
     
-    @scala.inline
-    implicit class GetPersonalizedRankingResponseMutableBuilder[Self <: GetPersonalizedRankingResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetPersonalizedRankingResponse](x: Self) {
       
-      @scala.inline
-      def setPersonalizedRanking(value: ItemList): Self = StObject.set(x, "personalizedRanking", value.asInstanceOf[js.Any])
+      inline def setPersonalizedRanking(value: ItemList): Self = StObject.set(x, "personalizedRanking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonalizedRankingUndefined: Self = StObject.set(x, "personalizedRanking", js.undefined)
+      inline def setPersonalizedRankingUndefined: Self = StObject.set(x, "personalizedRanking", js.undefined)
       
-      @scala.inline
-      def setPersonalizedRankingVarargs(value: PredictedItem*): Self = StObject.set(x, "personalizedRanking", js.Array(value :_*))
+      inline def setPersonalizedRankingVarargs(value: PredictedItem*): Self = StObject.set(x, "personalizedRanking", js.Array(value :_*))
       
-      @scala.inline
-      def setRecommendationId(value: RecommendationID): Self = StObject.set(x, "recommendationId", value.asInstanceOf[js.Any])
+      inline def setRecommendationId(value: RecommendationID): Self = StObject.set(x, "recommendationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommendationIdUndefined: Self = StObject.set(x, "recommendationId", js.undefined)
+      inline def setRecommendationIdUndefined: Self = StObject.set(x, "recommendationId", js.undefined)
     }
   }
   
@@ -222,53 +199,38 @@ object personalizeruntimeMod {
   }
   object GetRecommendationsRequest {
     
-    @scala.inline
-    def apply(campaignArn: Arn): GetRecommendationsRequest = {
+    inline def apply(campaignArn: Arn): GetRecommendationsRequest = {
       val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRecommendationsRequest]
     }
     
-    @scala.inline
-    implicit class GetRecommendationsRequestMutableBuilder[Self <: GetRecommendationsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetRecommendationsRequest](x: Self) {
       
-      @scala.inline
-      def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
+      inline def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
+      inline def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterArnUndefined: Self = StObject.set(x, "filterArn", js.undefined)
+      inline def setFilterArnUndefined: Self = StObject.set(x, "filterArn", js.undefined)
       
-      @scala.inline
-      def setFilterValues(value: FilterValues): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
+      inline def setFilterValues(value: FilterValues): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
+      inline def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
       
-      @scala.inline
-      def setItemId(value: ItemID): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      inline def setItemId(value: ItemID): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      @scala.inline
-      def setNumResults(value: NumResults): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
+      inline def setNumResults(value: NumResults): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
+      inline def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
       
-      @scala.inline
-      def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
@@ -286,29 +248,22 @@ object personalizeruntimeMod {
   }
   object GetRecommendationsResponse {
     
-    @scala.inline
-    def apply(): GetRecommendationsResponse = {
+    inline def apply(): GetRecommendationsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetRecommendationsResponse]
     }
     
-    @scala.inline
-    implicit class GetRecommendationsResponseMutableBuilder[Self <: GetRecommendationsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetRecommendationsResponse](x: Self) {
       
-      @scala.inline
-      def setItemList(value: ItemList): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
+      inline def setItemList(value: ItemList): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemListUndefined: Self = StObject.set(x, "itemList", js.undefined)
+      inline def setItemListUndefined: Self = StObject.set(x, "itemList", js.undefined)
       
-      @scala.inline
-      def setItemListVarargs(value: PredictedItem*): Self = StObject.set(x, "itemList", js.Array(value :_*))
+      inline def setItemListVarargs(value: PredictedItem*): Self = StObject.set(x, "itemList", js.Array(value :_*))
       
-      @scala.inline
-      def setRecommendationId(value: RecommendationID): Self = StObject.set(x, "recommendationId", value.asInstanceOf[js.Any])
+      inline def setRecommendationId(value: RecommendationID): Self = StObject.set(x, "recommendationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommendationIdUndefined: Self = StObject.set(x, "recommendationId", js.undefined)
+      inline def setRecommendationIdUndefined: Self = StObject.set(x, "recommendationId", js.undefined)
     }
   }
   
@@ -369,26 +324,20 @@ object personalizeruntimeMod {
   }
   object PredictedItem {
     
-    @scala.inline
-    def apply(): PredictedItem = {
+    inline def apply(): PredictedItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PredictedItem]
     }
     
-    @scala.inline
-    implicit class PredictedItemMutableBuilder[Self <: PredictedItem] (val x: Self) extends AnyVal {
+    extension [Self <: PredictedItem](x: Self) {
       
-      @scala.inline
-      def setItemId(value: ItemID): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      inline def setItemId(value: ItemID): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      @scala.inline
-      def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+      inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     }
   }
   

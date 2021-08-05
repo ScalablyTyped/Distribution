@@ -18,28 +18,21 @@ trait UserMentionEntity extends StObject {
 }
 object UserMentionEntity {
   
-  @scala.inline
-  def apply(id: Double, id_str: String, indices: js.Tuple2[Double, Double], name: String, screen_name: String): UserMentionEntity = {
+  inline def apply(id: Double, id_str: String, indices: js.Tuple2[Double, Double], name: String, screen_name: String): UserMentionEntity = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], id_str = id_str.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], screen_name = screen_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserMentionEntity]
   }
   
-  @scala.inline
-  implicit class UserMentionEntityMutableBuilder[Self <: UserMentionEntity] (val x: Self) extends AnyVal {
+  extension [Self <: UserMentionEntity](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+    inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
+    inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
   }
 }

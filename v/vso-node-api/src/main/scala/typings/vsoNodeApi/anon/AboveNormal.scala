@@ -18,8 +18,7 @@ trait AboveNormal extends StObject {
 }
 object AboveNormal {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aboveNormal: scala.Double,
     belowNormal: scala.Double,
     high: scala.Double,
@@ -30,22 +29,16 @@ object AboveNormal {
     __obj.asInstanceOf[AboveNormal]
   }
   
-  @scala.inline
-  implicit class AboveNormalMutableBuilder[Self <: AboveNormal] (val x: Self) extends AnyVal {
+  extension [Self <: AboveNormal](x: Self) {
     
-    @scala.inline
-    def setAboveNormal(value: scala.Double): Self = StObject.set(x, "aboveNormal", value.asInstanceOf[js.Any])
+    inline def setAboveNormal(value: scala.Double): Self = StObject.set(x, "aboveNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBelowNormal(value: scala.Double): Self = StObject.set(x, "belowNormal", value.asInstanceOf[js.Any])
+    inline def setBelowNormal(value: scala.Double): Self = StObject.set(x, "belowNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHigh(value: scala.Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: scala.Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLow(value: scala.Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: scala.Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: scala.Double): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: scala.Double): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
   }
 }

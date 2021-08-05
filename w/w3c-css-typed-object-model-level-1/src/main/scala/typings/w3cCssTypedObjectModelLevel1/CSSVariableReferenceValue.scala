@@ -12,22 +12,17 @@ trait CSSVariableReferenceValue extends StObject {
 }
 object CSSVariableReferenceValue {
   
-  @scala.inline
-  def apply(variable: String): CSSVariableReferenceValue = {
+  inline def apply(variable: String): CSSVariableReferenceValue = {
     val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSVariableReferenceValue]
   }
   
-  @scala.inline
-  implicit class CSSVariableReferenceValueMutableBuilder[Self <: CSSVariableReferenceValue] (val x: Self) extends AnyVal {
+  extension [Self <: CSSVariableReferenceValue](x: Self) {
     
-    @scala.inline
-    def setFallback(value: CSSUnparsedValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: CSSUnparsedValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
-    @scala.inline
-    def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
   }
 }

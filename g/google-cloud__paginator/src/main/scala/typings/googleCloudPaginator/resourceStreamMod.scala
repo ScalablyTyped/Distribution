@@ -95,8 +95,7 @@ object resourceStreamMod {
   }
   object ResourceEvents {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       addListener: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
       emit: (data, T) => Boolean,
       on: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
@@ -109,29 +108,21 @@ object resourceStreamMod {
       __obj.asInstanceOf[ResourceEvents[T]]
     }
     
-    @scala.inline
-    implicit class ResourceEventsMutableBuilder[Self <: ResourceEvents[?], T] (val x: Self & ResourceEvents[T]) extends AnyVal {
+    extension [Self <: ResourceEvents[?], T](x: Self & ResourceEvents[T]) {
       
-      @scala.inline
-      def setAddListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmit(value: (data, T) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (data, T) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+      inline def setPrependListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependOnceListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+      inline def setPrependOnceListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
 }

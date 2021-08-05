@@ -12,19 +12,15 @@ trait InspectorIssue extends StObject {
 }
 object InspectorIssue {
   
-  @scala.inline
-  def apply(code: InspectorIssueCode, details: InspectorIssueDetails): InspectorIssue = {
+  inline def apply(code: InspectorIssueCode, details: InspectorIssueDetails): InspectorIssue = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectorIssue]
   }
   
-  @scala.inline
-  implicit class InspectorIssueMutableBuilder[Self <: InspectorIssue] (val x: Self) extends AnyVal {
+  extension [Self <: InspectorIssue](x: Self) {
     
-    @scala.inline
-    def setCode(value: InspectorIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: InspectorIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: InspectorIssueDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: InspectorIssueDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
   }
 }

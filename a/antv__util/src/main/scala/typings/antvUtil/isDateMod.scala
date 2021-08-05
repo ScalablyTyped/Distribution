@@ -10,6 +10,5 @@ object isDateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+  inline def default(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
 }

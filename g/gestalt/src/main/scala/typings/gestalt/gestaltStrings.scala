@@ -9,1866 +9,1561 @@ object gestaltStrings {
   
   @js.native
   sealed trait MasonryDefaultLayout extends StObject
-  @scala.inline
-  def MasonryDefaultLayout: MasonryDefaultLayout = "MasonryDefaultLayout".asInstanceOf[MasonryDefaultLayout]
+  inline def MasonryDefaultLayout: MasonryDefaultLayout = "MasonryDefaultLayout".asInstanceOf[MasonryDefaultLayout]
   
   @js.native
   sealed trait MasonryUniformRowLayout extends StObject
-  @scala.inline
-  def MasonryUniformRowLayout: MasonryUniformRowLayout = "MasonryUniformRowLayout".asInstanceOf[MasonryUniformRowLayout]
+  inline def MasonryUniformRowLayout: MasonryUniformRowLayout = "MasonryUniformRowLayout".asInstanceOf[MasonryUniformRowLayout]
   
   @js.native
   sealed trait absolute extends StObject
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
   sealed trait active extends StObject
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait ad
     extends StObject
        with Icons
-  @scala.inline
-  def ad: ad = "ad".asInstanceOf[ad]
+  inline def ad: ad = "ad".asInstanceOf[ad]
   
   @js.native
   sealed trait `ad-group`
     extends StObject
        with Icons
-  @scala.inline
-  def `ad-group`: `ad-group` = "ad-group".asInstanceOf[`ad-group`]
+  inline def `ad-group`: `ad-group` = "ad-group".asInstanceOf[`ad-group`]
   
   @js.native
   sealed trait add
     extends StObject
        with Icons
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait `add-circle`
     extends StObject
        with Icons
-  @scala.inline
-  def `add-circle`: `add-circle` = "add-circle".asInstanceOf[`add-circle`]
+  inline def `add-circle`: `add-circle` = "add-circle".asInstanceOf[`add-circle`]
   
   @js.native
   sealed trait `add-layout`
     extends StObject
        with Icons
-  @scala.inline
-  def `add-layout`: `add-layout` = "add-layout".asInstanceOf[`add-layout`]
+  inline def `add-layout`: `add-layout` = "add-layout".asInstanceOf[`add-layout`]
   
   @js.native
   sealed trait `add-pin`
     extends StObject
        with Icons
-  @scala.inline
-  def `add-pin`: `add-pin` = "add-pin".asInstanceOf[`add-pin`]
+  inline def `add-pin`: `add-pin` = "add-pin".asInstanceOf[`add-pin`]
   
   @js.native
   sealed trait `ads-overview`
     extends StObject
        with Icons
-  @scala.inline
-  def `ads-overview`: `ads-overview` = "ads-overview".asInstanceOf[`ads-overview`]
+  inline def `ads-overview`: `ads-overview` = "ads-overview".asInstanceOf[`ads-overview`]
   
   @js.native
   sealed trait `ads-stats`
     extends StObject
        with Icons
-  @scala.inline
-  def `ads-stats`: `ads-stats` = "ads-stats".asInstanceOf[`ads-stats`]
+  inline def `ads-stats`: `ads-stats` = "ads-stats".asInstanceOf[`ads-stats`]
   
   @js.native
   sealed trait alert
     extends StObject
        with Icons
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
+  inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
   sealed trait alertdialog extends StObject
-  @scala.inline
-  def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
+  inline def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
   
   @js.native
   sealed trait `align-bottom`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-bottom`: `align-bottom` = "align-bottom".asInstanceOf[`align-bottom`]
+  inline def `align-bottom`: `align-bottom` = "align-bottom".asInstanceOf[`align-bottom`]
   
   @js.native
   sealed trait `align-bottom-center`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-bottom-center`: `align-bottom-center` = "align-bottom-center".asInstanceOf[`align-bottom-center`]
+  inline def `align-bottom-center`: `align-bottom-center` = "align-bottom-center".asInstanceOf[`align-bottom-center`]
   
   @js.native
   sealed trait `align-bottom-left`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-bottom-left`: `align-bottom-left` = "align-bottom-left".asInstanceOf[`align-bottom-left`]
+  inline def `align-bottom-left`: `align-bottom-left` = "align-bottom-left".asInstanceOf[`align-bottom-left`]
   
   @js.native
   sealed trait `align-bottom-right`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-bottom-right`: `align-bottom-right` = "align-bottom-right".asInstanceOf[`align-bottom-right`]
+  inline def `align-bottom-right`: `align-bottom-right` = "align-bottom-right".asInstanceOf[`align-bottom-right`]
   
   @js.native
   sealed trait `align-middle`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-middle`: `align-middle` = "align-middle".asInstanceOf[`align-middle`]
+  inline def `align-middle`: `align-middle` = "align-middle".asInstanceOf[`align-middle`]
   
   @js.native
   sealed trait `align-top`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-top`: `align-top` = "align-top".asInstanceOf[`align-top`]
+  inline def `align-top`: `align-top` = "align-top".asInstanceOf[`align-top`]
   
   @js.native
   sealed trait `align-top-center`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-top-center`: `align-top-center` = "align-top-center".asInstanceOf[`align-top-center`]
+  inline def `align-top-center`: `align-top-center` = "align-top-center".asInstanceOf[`align-top-center`]
   
   @js.native
   sealed trait `align-top-left`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-top-left`: `align-top-left` = "align-top-left".asInstanceOf[`align-top-left`]
+  inline def `align-top-left`: `align-top-left` = "align-top-left".asInstanceOf[`align-top-left`]
   
   @js.native
   sealed trait `align-top-right`
     extends StObject
        with Icons
-  @scala.inline
-  def `align-top-right`: `align-top-right` = "align-top-right".asInstanceOf[`align-top-right`]
+  inline def `align-top-right`: `align-top-right` = "align-top-right".asInstanceOf[`align-top-right`]
   
   @js.native
   sealed trait `android-share`
     extends StObject
        with Icons
-  @scala.inline
-  def `android-share`: `android-share` = "android-share".asInstanceOf[`android-share`]
+  inline def `android-share`: `android-share` = "android-share".asInstanceOf[`android-share`]
   
   @js.native
   sealed trait `angled-pin`
     extends StObject
        with Icons
-  @scala.inline
-  def `angled-pin`: `angled-pin` = "angled-pin".asInstanceOf[`angled-pin`]
+  inline def `angled-pin`: `angled-pin` = "angled-pin".asInstanceOf[`angled-pin`]
   
   @js.native
   sealed trait anonymous extends StObject
-  @scala.inline
-  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait apps
     extends StObject
        with Icons
-  @scala.inline
-  def apps: apps = "apps".asInstanceOf[apps]
+  inline def apps: apps = "apps".asInstanceOf[apps]
   
   @js.native
   sealed trait around extends StObject
-  @scala.inline
-  def around: around = "around".asInstanceOf[around]
+  inline def around: around = "around".asInstanceOf[around]
   
   @js.native
   sealed trait `arrow-back`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-back`: `arrow-back` = "arrow-back".asInstanceOf[`arrow-back`]
+  inline def `arrow-back`: `arrow-back` = "arrow-back".asInstanceOf[`arrow-back`]
   
   @js.native
   sealed trait `arrow-circle-down`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-circle-down`: `arrow-circle-down` = "arrow-circle-down".asInstanceOf[`arrow-circle-down`]
+  inline def `arrow-circle-down`: `arrow-circle-down` = "arrow-circle-down".asInstanceOf[`arrow-circle-down`]
   
   @js.native
   sealed trait `arrow-circle-forward`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-circle-forward`: `arrow-circle-forward` = "arrow-circle-forward".asInstanceOf[`arrow-circle-forward`]
+  inline def `arrow-circle-forward`: `arrow-circle-forward` = "arrow-circle-forward".asInstanceOf[`arrow-circle-forward`]
   
   @js.native
   sealed trait `arrow-circle-up`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-circle-up`: `arrow-circle-up` = "arrow-circle-up".asInstanceOf[`arrow-circle-up`]
+  inline def `arrow-circle-up`: `arrow-circle-up` = "arrow-circle-up".asInstanceOf[`arrow-circle-up`]
   
   @js.native
   sealed trait `arrow-down`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-down`: `arrow-down` = "arrow-down".asInstanceOf[`arrow-down`]
+  inline def `arrow-down`: `arrow-down` = "arrow-down".asInstanceOf[`arrow-down`]
   
   @js.native
   sealed trait `arrow-end`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-end`: `arrow-end` = "arrow-end".asInstanceOf[`arrow-end`]
+  inline def `arrow-end`: `arrow-end` = "arrow-end".asInstanceOf[`arrow-end`]
   
   @js.native
   sealed trait `arrow-forward`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-forward`: `arrow-forward` = "arrow-forward".asInstanceOf[`arrow-forward`]
+  inline def `arrow-forward`: `arrow-forward` = "arrow-forward".asInstanceOf[`arrow-forward`]
   
   @js.native
   sealed trait `arrow-start`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-start`: `arrow-start` = "arrow-start".asInstanceOf[`arrow-start`]
+  inline def `arrow-start`: `arrow-start` = "arrow-start".asInstanceOf[`arrow-start`]
   
   @js.native
   sealed trait `arrow-up`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-up`: `arrow-up` = "arrow-up".asInstanceOf[`arrow-up`]
+  inline def `arrow-up`: `arrow-up` = "arrow-up".asInstanceOf[`arrow-up`]
   
   @js.native
   sealed trait `arrow-up-right`
     extends StObject
        with Icons
-  @scala.inline
-  def `arrow-up-right`: `arrow-up-right` = "arrow-up-right".asInstanceOf[`arrow-up-right`]
+  inline def `arrow-up-right`: `arrow-up-right` = "arrow-up-right".asInstanceOf[`arrow-up-right`]
   
   @js.native
   sealed trait asc extends StObject
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait baseline extends StObject
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
   sealed trait bell
     extends StObject
        with Icons
-  @scala.inline
-  def bell: bell = "bell".asInstanceOf[bell]
+  inline def bell: bell = "bell".asInstanceOf[bell]
   
   @js.native
   sealed trait between extends StObject
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
+  inline def between: between = "between".asInstanceOf[between]
   
   @js.native
   sealed trait blank extends StObject
-  @scala.inline
-  def blank: blank = "blank".asInstanceOf[blank]
+  inline def blank: blank = "blank".asInstanceOf[blank]
   
   @js.native
   sealed trait block extends StObject
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait blue extends StObject
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
   sealed trait bold extends StObject
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
+  inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
   sealed trait breakWord extends StObject
-  @scala.inline
-  def breakWord: breakWord = "breakWord".asInstanceOf[breakWord]
+  inline def breakWord: breakWord = "breakWord".asInstanceOf[breakWord]
   
   @js.native
   sealed trait button extends StObject
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait calendar
     extends StObject
        with Icons
-  @scala.inline
-  def calendar: calendar = "calendar".asInstanceOf[calendar]
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
   sealed trait camera
     extends StObject
        with Icons
-  @scala.inline
-  def camera: camera = "camera".asInstanceOf[camera]
+  inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
   sealed trait `camera-roll`
     extends StObject
        with Icons
-  @scala.inline
-  def `camera-roll`: `camera-roll` = "camera-roll".asInstanceOf[`camera-roll`]
+  inline def `camera-roll`: `camera-roll` = "camera-roll".asInstanceOf[`camera-roll`]
   
   @js.native
   sealed trait cancel
     extends StObject
        with Icons
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait `canonical-pin`
     extends StObject
        with Icons
-  @scala.inline
-  def `canonical-pin`: `canonical-pin` = "canonical-pin".asInstanceOf[`canonical-pin`]
+  inline def `canonical-pin`: `canonical-pin` = "canonical-pin".asInstanceOf[`canonical-pin`]
   
   @js.native
   sealed trait center extends StObject
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait check
     extends StObject
        with Icons
-  @scala.inline
-  def check: check = "check".asInstanceOf[check]
+  inline def check: check = "check".asInstanceOf[check]
   
   @js.native
   sealed trait `check-circle`
     extends StObject
        with Icons
-  @scala.inline
-  def `check-circle`: `check-circle` = "check-circle".asInstanceOf[`check-circle`]
+  inline def `check-circle`: `check-circle` = "check-circle".asInstanceOf[`check-circle`]
   
   @js.native
   sealed trait circle extends StObject
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait `circle-outline`
     extends StObject
        with Icons
-  @scala.inline
-  def `circle-outline`: `circle-outline` = "circle-outline".asInstanceOf[`circle-outline`]
+  inline def `circle-outline`: `circle-outline` = "circle-outline".asInstanceOf[`circle-outline`]
   
   @js.native
   sealed trait circule extends StObject
-  @scala.inline
-  def circule: circule = "circule".asInstanceOf[circule]
+  inline def circule: circule = "circule".asInstanceOf[circule]
   
   @js.native
   sealed trait clear
     extends StObject
        with Icons
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
+  inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
   sealed trait clock
     extends StObject
        with Icons
-  @scala.inline
-  def clock: clock = "clock".asInstanceOf[clock]
+  inline def clock: clock = "clock".asInstanceOf[clock]
   
   @js.native
   sealed trait code
     extends StObject
        with Icons
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait cog
     extends StObject
        with Icons
-  @scala.inline
-  def cog: cog = "cog".asInstanceOf[cog]
+  inline def cog: cog = "cog".asInstanceOf[cog]
   
   @js.native
   sealed trait col extends StObject
-  @scala.inline
-  def col: col = "col".asInstanceOf[col]
+  inline def col: col = "col".asInstanceOf[col]
   
   @js.native
   sealed trait colgroup extends StObject
-  @scala.inline
-  def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
+  inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
   sealed trait `color-picker`
     extends StObject
        with Icons
-  @scala.inline
-  def `color-picker`: `color-picker` = "color-picker".asInstanceOf[`color-picker`]
+  inline def `color-picker`: `color-picker` = "color-picker".asInstanceOf[`color-picker`]
   
   @js.native
   sealed trait column extends StObject
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
   sealed trait compass
     extends StObject
        with Icons
-  @scala.inline
-  def compass: compass = "compass".asInstanceOf[compass]
+  inline def compass: compass = "compass".asInstanceOf[compass]
   
   @js.native
   sealed trait complete extends StObject
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait compose
     extends StObject
        with Icons
-  @scala.inline
-  def compose: compose = "compose".asInstanceOf[compose]
+  inline def compose: compose = "compose".asInstanceOf[compose]
   
   @js.native
   sealed trait compress extends StObject
-  @scala.inline
-  def compress: compress = "compress".asInstanceOf[compress]
+  inline def compress: compress = "compress".asInstanceOf[compress]
   
   @js.native
   sealed trait contain extends StObject
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
+  inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
   sealed trait `conversion-tag`
     extends StObject
        with Icons
-  @scala.inline
-  def `conversion-tag`: `conversion-tag` = "conversion-tag".asInstanceOf[`conversion-tag`]
+  inline def `conversion-tag`: `conversion-tag` = "conversion-tag".asInstanceOf[`conversion-tag`]
   
   @js.native
   sealed trait copy extends StObject
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
   sealed trait cover extends StObject
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
+  inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
   sealed trait `credit-card`
     extends StObject
        with Icons
-  @scala.inline
-  def `credit-card`: `credit-card` = "credit-card".asInstanceOf[`credit-card`]
+  inline def `credit-card`: `credit-card` = "credit-card".asInstanceOf[`credit-card`]
   
   @js.native
   sealed trait crop
     extends StObject
        with Icons
-  @scala.inline
-  def crop: crop = "crop".asInstanceOf[crop]
+  inline def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
   sealed trait `current-password` extends StObject
-  @scala.inline
-  def `current-password`: `current-password` = "current-password".asInstanceOf[`current-password`]
+  inline def `current-password`: `current-password` = "current-password".asInstanceOf[`current-password`]
   
   @js.native
   sealed trait dark extends StObject
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait darkGray extends StObject
-  @scala.inline
-  def darkGray: darkGray = "darkGray".asInstanceOf[darkGray]
+  inline def darkGray: darkGray = "darkGray".asInstanceOf[darkGray]
   
   @js.native
   sealed trait darkWash extends StObject
-  @scala.inline
-  def darkWash: darkWash = "darkWash".asInstanceOf[darkWash]
+  inline def darkWash: darkWash = "darkWash".asInstanceOf[darkWash]
   
   @js.native
   sealed trait dash
     extends StObject
        with Icons
-  @scala.inline
-  def dash: dash = "dash".asInstanceOf[dash]
+  inline def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
   sealed trait date extends StObject
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait desc extends StObject
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait dialog extends StObject
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
   sealed trait `directional-arrow-left`
     extends StObject
        with Icons
-  @scala.inline
-  def `directional-arrow-left`: `directional-arrow-left` = "directional-arrow-left".asInstanceOf[`directional-arrow-left`]
+  inline def `directional-arrow-left`: `directional-arrow-left` = "directional-arrow-left".asInstanceOf[`directional-arrow-left`]
   
   @js.native
   sealed trait `directional-arrow-right`
     extends StObject
        with Icons
-  @scala.inline
-  def `directional-arrow-right`: `directional-arrow-right` = "directional-arrow-right".asInstanceOf[`directional-arrow-right`]
+  inline def `directional-arrow-right`: `directional-arrow-right` = "directional-arrow-right".asInstanceOf[`directional-arrow-right`]
   
   @js.native
   sealed trait down extends StObject
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait download
     extends StObject
        with Icons
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
+  inline def download: download = "download".asInstanceOf[download]
   
   @js.native
   sealed trait `drag-drop`
     extends StObject
        with Icons
-  @scala.inline
-  def `drag-drop`: `drag-drop` = "drag-drop".asInstanceOf[`drag-drop`]
+  inline def `drag-drop`: `drag-drop` = "drag-drop".asInstanceOf[`drag-drop`]
   
   @js.native
   sealed trait duplicate
     extends StObject
        with Icons
-  @scala.inline
-  def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
+  inline def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   
   @js.native
   sealed trait eager extends StObject
-  @scala.inline
-  def eager: eager = "eager".asInstanceOf[eager]
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait edit
     extends StObject
        with Icons
-  @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
+  inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
   sealed trait eggplant extends StObject
-  @scala.inline
-  def eggplant: eggplant = "eggplant".asInstanceOf[eggplant]
+  inline def eggplant: eggplant = "eggplant".asInstanceOf[eggplant]
   
   @js.native
   sealed trait ellipsis
     extends StObject
        with Icons
-  @scala.inline
-  def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
+  inline def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
   
   @js.native
   sealed trait `ellipsis-circle-outline`
     extends StObject
        with Icons
-  @scala.inline
-  def `ellipsis-circle-outline`: `ellipsis-circle-outline` = "ellipsis-circle-outline".asInstanceOf[`ellipsis-circle-outline`]
+  inline def `ellipsis-circle-outline`: `ellipsis-circle-outline` = "ellipsis-circle-outline".asInstanceOf[`ellipsis-circle-outline`]
   
   @js.native
   sealed trait email extends StObject
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait envelope
     extends StObject
        with Icons
-  @scala.inline
-  def envelope: envelope = "envelope".asInstanceOf[envelope]
+  inline def envelope: envelope = "envelope".asInstanceOf[envelope]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait evenly extends StObject
-  @scala.inline
-  def evenly: evenly = "evenly".asInstanceOf[evenly]
+  inline def evenly: evenly = "evenly".asInstanceOf[evenly]
   
   @js.native
   sealed trait eye
     extends StObject
        with Icons
-  @scala.inline
-  def eye: eye = "eye".asInstanceOf[eye]
+  inline def eye: eye = "eye".asInstanceOf[eye]
   
   @js.native
   sealed trait `face-happy`
     extends StObject
        with Icons
-  @scala.inline
-  def `face-happy`: `face-happy` = "face-happy".asInstanceOf[`face-happy`]
+  inline def `face-happy`: `face-happy` = "face-happy".asInstanceOf[`face-happy`]
   
   @js.native
   sealed trait `face-sad`
     extends StObject
        with Icons
-  @scala.inline
-  def `face-sad`: `face-sad` = "face-sad".asInstanceOf[`face-sad`]
+  inline def `face-sad`: `face-sad` = "face-sad".asInstanceOf[`face-sad`]
   
   @js.native
   sealed trait `face-smiley`
     extends StObject
        with Icons
-  @scala.inline
-  def `face-smiley`: `face-smiley` = "face-smiley".asInstanceOf[`face-smiley`]
+  inline def `face-smiley`: `face-smiley` = "face-smiley".asInstanceOf[`face-smiley`]
   
   @js.native
   sealed trait facebook
     extends StObject
        with Icons
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  inline def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
   sealed trait `file-unknown`
     extends StObject
        with Icons
-  @scala.inline
-  def `file-unknown`: `file-unknown` = "file-unknown".asInstanceOf[`file-unknown`]
+  inline def `file-unknown`: `file-unknown` = "file-unknown".asInstanceOf[`file-unknown`]
   
   @js.native
   sealed trait fill extends StObject
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait `fill-opaque`
     extends StObject
        with Icons
-  @scala.inline
-  def `fill-opaque`: `fill-opaque` = "fill-opaque".asInstanceOf[`fill-opaque`]
+  inline def `fill-opaque`: `fill-opaque` = "fill-opaque".asInstanceOf[`fill-opaque`]
   
   @js.native
   sealed trait `fill-transparent`
     extends StObject
        with Icons
-  @scala.inline
-  def `fill-transparent`: `fill-transparent` = "fill-transparent".asInstanceOf[`fill-transparent`]
+  inline def `fill-transparent`: `fill-transparent` = "fill-transparent".asInstanceOf[`fill-transparent`]
   
   @js.native
   sealed trait filter
     extends StObject
        with Icons
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
   sealed trait fit extends StObject
-  @scala.inline
-  def fit: fit = "fit".asInstanceOf[fit]
+  inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
   sealed trait fixed extends StObject
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
   sealed trait flag
     extends StObject
        with Icons
-  @scala.inline
-  def flag: flag = "flag".asInstanceOf[flag]
+  inline def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
   sealed trait flash
     extends StObject
        with Icons
-  @scala.inline
-  def flash: flash = "flash".asInstanceOf[flash]
+  inline def flash: flash = "flash".asInstanceOf[flash]
   
   @js.native
   sealed trait flashlight
     extends StObject
        with Icons
-  @scala.inline
-  def flashlight: flashlight = "flashlight".asInstanceOf[flashlight]
+  inline def flashlight: flashlight = "flashlight".asInstanceOf[flashlight]
   
   @js.native
   sealed trait flex extends StObject
-  @scala.inline
-  def flex: flex = "flex".asInstanceOf[flex]
+  inline def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
   sealed trait flexible extends StObject
-  @scala.inline
-  def flexible: flexible = "flexible".asInstanceOf[flexible]
+  inline def flexible: flexible = "flexible".asInstanceOf[flexible]
   
   @js.native
   sealed trait flipHorizontal
     extends StObject
        with Icons
-  @scala.inline
-  def flipHorizontal: flipHorizontal = "flipHorizontal".asInstanceOf[flipHorizontal]
+  inline def flipHorizontal: flipHorizontal = "flipHorizontal".asInstanceOf[flipHorizontal]
   
   @js.native
   sealed trait flipVertical
     extends StObject
        with Icons
-  @scala.inline
-  def flipVertical: flipVertical = "flipVertical".asInstanceOf[flipVertical]
+  inline def flipVertical: flipVertical = "flipVertical".asInstanceOf[flipVertical]
   
   @js.native
   sealed trait folder
     extends StObject
        with Icons
-  @scala.inline
-  def folder: folder = "folder".asInstanceOf[folder]
+  inline def folder: folder = "folder".asInstanceOf[folder]
   
   @js.native
   sealed trait gif
     extends StObject
        with Icons
-  @scala.inline
-  def gif: gif = "gif".asInstanceOf[gif]
+  inline def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
   sealed trait globe
     extends StObject
        with Icons
-  @scala.inline
-  def globe: globe = "globe".asInstanceOf[globe]
+  inline def globe: globe = "globe".asInstanceOf[globe]
   
   @js.native
   sealed trait `globe-checked`
     extends StObject
        with Icons
-  @scala.inline
-  def `globe-checked`: `globe-checked` = "globe-checked".asInstanceOf[`globe-checked`]
+  inline def `globe-checked`: `globe-checked` = "globe-checked".asInstanceOf[`globe-checked`]
   
   @js.native
   sealed trait gmail
     extends StObject
        with Icons
-  @scala.inline
-  def gmail: gmail = "gmail".asInstanceOf[gmail]
+  inline def gmail: gmail = "gmail".asInstanceOf[gmail]
   
   @js.native
   sealed trait `google-plus`
     extends StObject
        with Icons
-  @scala.inline
-  def `google-plus`: `google-plus` = "google-plus".asInstanceOf[`google-plus`]
+  inline def `google-plus`: `google-plus` = "google-plus".asInstanceOf[`google-plus`]
   
   @js.native
   sealed trait grab extends StObject
-  @scala.inline
-  def grab: grab = "grab".asInstanceOf[grab]
+  inline def grab: grab = "grab".asInstanceOf[grab]
   
   @js.native
   sealed trait grabbing extends StObject
-  @scala.inline
-  def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
+  inline def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
   
   @js.native
   sealed trait `graph-bar`
     extends StObject
        with Icons
-  @scala.inline
-  def `graph-bar`: `graph-bar` = "graph-bar".asInstanceOf[`graph-bar`]
+  inline def `graph-bar`: `graph-bar` = "graph-bar".asInstanceOf[`graph-bar`]
   
   @js.native
   sealed trait gray extends StObject
-  @scala.inline
-  def gray: gray = "gray".asInstanceOf[gray]
+  inline def gray: gray = "gray".asInstanceOf[gray]
   
   @js.native
   sealed trait green extends StObject
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait grow extends StObject
-  @scala.inline
-  def grow: grow = "grow".asInstanceOf[grow]
+  inline def grow: grow = "grow".asInstanceOf[grow]
   
   @js.native
   sealed trait `hand-pointing`
     extends StObject
        with Icons
-  @scala.inline
-  def `hand-pointing`: `hand-pointing` = "hand-pointing".asInstanceOf[`hand-pointing`]
+  inline def `hand-pointing`: `hand-pointing` = "hand-pointing".asInstanceOf[`hand-pointing`]
   
   @js.native
   sealed trait handle
     extends StObject
        with Icons
-  @scala.inline
-  def handle: handle = "handle".asInstanceOf[handle]
+  inline def handle: handle = "handle".asInstanceOf[handle]
   
   @js.native
   sealed trait heart
     extends StObject
        with Icons
-  @scala.inline
-  def heart: heart = "heart".asInstanceOf[heart]
+  inline def heart: heart = "heart".asInstanceOf[heart]
   
   @js.native
   sealed trait `heart-broken`
     extends StObject
        with Icons
-  @scala.inline
-  def `heart-broken`: `heart-broken` = "heart-broken".asInstanceOf[`heart-broken`]
+  inline def `heart-broken`: `heart-broken` = "heart-broken".asInstanceOf[`heart-broken`]
   
   @js.native
   sealed trait `heart-outline`
     extends StObject
        with Icons
-  @scala.inline
-  def `heart-outline`: `heart-outline` = "heart-outline".asInstanceOf[`heart-outline`]
+  inline def `heart-outline`: `heart-outline` = "heart-outline".asInstanceOf[`heart-outline`]
   
   @js.native
   sealed trait hidden extends StObject
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait high extends StObject
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
   sealed trait impressum
     extends StObject
        with Icons
-  @scala.inline
-  def impressum: impressum = "impressum".asInstanceOf[impressum]
+  inline def impressum: impressum = "impressum".asInstanceOf[impressum]
   
   @js.native
   sealed trait inactive extends StObject
-  @scala.inline
-  def inactive: inactive = "inactive".asInstanceOf[inactive]
+  inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
   sealed trait info extends StObject
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait `info-circle`
     extends StObject
        with Icons
-  @scala.inline
-  def `info-circle`: `info-circle` = "info-circle".asInstanceOf[`info-circle`]
+  inline def `info-circle`: `info-circle` = "info-circle".asInstanceOf[`info-circle`]
   
   @js.native
   sealed trait inlineBlock extends StObject
-  @scala.inline
-  def inlineBlock: inlineBlock = "inlineBlock".asInstanceOf[inlineBlock]
+  inline def inlineBlock: inlineBlock = "inlineBlock".asInstanceOf[inlineBlock]
   
   @js.native
   sealed trait justify extends StObject
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait key
     extends StObject
        with Icons
-  @scala.inline
-  def key: key = "key".asInstanceOf[key]
+  inline def key: key = "key".asInstanceOf[key]
   
   @js.native
   sealed trait knoop
     extends StObject
        with Icons
-  @scala.inline
-  def knoop: knoop = "knoop".asInstanceOf[knoop]
+  inline def knoop: knoop = "knoop".asInstanceOf[knoop]
   
   @js.native
   sealed trait `lazy` extends StObject
-  @scala.inline
-  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait lg extends StObject
-  @scala.inline
-  def lg: lg = "lg".asInstanceOf[lg]
+  inline def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
   sealed trait light extends StObject
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
   sealed trait lightGray extends StObject
-  @scala.inline
-  def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
+  inline def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
   
   @js.native
   sealed trait lightWash extends StObject
-  @scala.inline
-  def lightWash: lightWash = "lightWash".asInstanceOf[lightWash]
+  inline def lightWash: lightWash = "lightWash".asInstanceOf[lightWash]
   
   @js.native
   sealed trait lightbulb
     extends StObject
        with Icons
-  @scala.inline
-  def lightbulb: lightbulb = "lightbulb".asInstanceOf[lightbulb]
+  inline def lightbulb: lightbulb = "lightbulb".asInstanceOf[lightbulb]
   
   @js.native
   sealed trait `lightning-bolt-circle`
     extends StObject
        with Icons
-  @scala.inline
-  def `lightning-bolt-circle`: `lightning-bolt-circle` = "lightning-bolt-circle".asInstanceOf[`lightning-bolt-circle`]
+  inline def `lightning-bolt-circle`: `lightning-bolt-circle` = "lightning-bolt-circle".asInstanceOf[`lightning-bolt-circle`]
   
   @js.native
   sealed trait link
     extends StObject
        with Icons
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait location
     extends StObject
        with Icons
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
+  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
   sealed trait lock
     extends StObject
        with Icons
-  @scala.inline
-  def lock: lock = "lock".asInstanceOf[lock]
+  inline def lock: lock = "lock".asInstanceOf[lock]
   
   @js.native
   sealed trait `logo-large`
     extends StObject
        with Icons
-  @scala.inline
-  def `logo-large`: `logo-large` = "logo-large".asInstanceOf[`logo-large`]
+  inline def `logo-large`: `logo-large` = "logo-large".asInstanceOf[`logo-large`]
   
   @js.native
   sealed trait `logo-small`
     extends StObject
        with Icons
-  @scala.inline
-  def `logo-small`: `logo-small` = "logo-small".asInstanceOf[`logo-small`]
+  inline def `logo-small`: `logo-small` = "logo-small".asInstanceOf[`logo-small`]
   
   @js.native
   sealed trait logout
     extends StObject
        with Icons
-  @scala.inline
-  def logout: logout = "logout".asInstanceOf[logout]
+  inline def logout: logout = "logout".asInstanceOf[logout]
   
   @js.native
   sealed trait low extends StObject
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
   sealed trait `margins-large`
     extends StObject
        with Icons
-  @scala.inline
-  def `margins-large`: `margins-large` = "margins-large".asInstanceOf[`margins-large`]
+  inline def `margins-large`: `margins-large` = "margins-large".asInstanceOf[`margins-large`]
   
   @js.native
   sealed trait `margins-medium`
     extends StObject
        with Icons
-  @scala.inline
-  def `margins-medium`: `margins-medium` = "margins-medium".asInstanceOf[`margins-medium`]
+  inline def `margins-medium`: `margins-medium` = "margins-medium".asInstanceOf[`margins-medium`]
   
   @js.native
   sealed trait `margins-small`
     extends StObject
        with Icons
-  @scala.inline
-  def `margins-small`: `margins-small` = "margins-small".asInstanceOf[`margins-small`]
+  inline def `margins-small`: `margins-small` = "margins-small".asInstanceOf[`margins-small`]
   
   @js.native
   sealed trait maroon extends StObject
-  @scala.inline
-  def maroon: maroon = "maroon".asInstanceOf[maroon]
+  inline def maroon: maroon = "maroon".asInstanceOf[maroon]
   
   @js.native
   sealed trait maximize
     extends StObject
        with Icons
-  @scala.inline
-  def maximize: maximize = "maximize".asInstanceOf[maximize]
+  inline def maximize: maximize = "maximize".asInstanceOf[maximize]
   
   @js.native
   sealed trait md extends StObject
-  @scala.inline
-  def md: md = "md".asInstanceOf[md]
+  inline def md: md = "md".asInstanceOf[md]
   
   @js.native
   sealed trait megaphone
     extends StObject
        with Icons
-  @scala.inline
-  def megaphone: megaphone = "megaphone".asInstanceOf[megaphone]
+  inline def megaphone: megaphone = "megaphone".asInstanceOf[megaphone]
   
   @js.native
   sealed trait menu
     extends StObject
        with Icons
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
+  inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
   sealed trait metadata extends StObject
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
+  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
   sealed trait middle extends StObject
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait midnight extends StObject
-  @scala.inline
-  def midnight: midnight = "midnight".asInstanceOf[midnight]
+  inline def midnight: midnight = "midnight".asInstanceOf[midnight]
   
   @js.native
   sealed trait minimize
     extends StObject
        with Icons
-  @scala.inline
-  def minimize: minimize = "minimize".asInstanceOf[minimize]
+  inline def minimize: minimize = "minimize".asInstanceOf[minimize]
   
   @js.native
   sealed trait move
     extends StObject
        with Icons
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait mute
     extends StObject
        with Icons
-  @scala.inline
-  def mute: mute = "mute".asInstanceOf[mute]
+  inline def mute: mute = "mute".asInstanceOf[mute]
   
   @js.native
   sealed trait name extends StObject
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait navy extends StObject
-  @scala.inline
-  def navy: navy = "navy".asInstanceOf[navy]
+  inline def navy: navy = "navy".asInstanceOf[navy]
   
   @js.native
   sealed trait needsAttention extends StObject
-  @scala.inline
-  def needsAttention: needsAttention = "needsAttention".asInstanceOf[needsAttention]
+  inline def needsAttention: needsAttention = "needsAttention".asInstanceOf[needsAttention]
   
   @js.native
   sealed trait `new-password` extends StObject
-  @scala.inline
-  def `new-password`: `new-password` = "new-password".asInstanceOf[`new-password`]
+  inline def `new-password`: `new-password` = "new-password".asInstanceOf[`new-password`]
   
   @js.native
   sealed trait noDrop extends StObject
-  @scala.inline
-  def noDrop: noDrop = "noDrop".asInstanceOf[noDrop]
+  inline def noDrop: noDrop = "noDrop".asInstanceOf[noDrop]
   
   @js.native
   sealed trait nofollow extends StObject
-  @scala.inline
-  def nofollow: nofollow = "nofollow".asInstanceOf[nofollow]
+  inline def nofollow: nofollow = "nofollow".asInstanceOf[nofollow]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait normal extends StObject
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait notStarted extends StObject
-  @scala.inline
-  def notStarted: notStarted = "notStarted".asInstanceOf[notStarted]
+  inline def notStarted: notStarted = "notStarted".asInstanceOf[notStarted]
   
   @js.native
   sealed trait number extends StObject
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait off extends StObject
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
   sealed trait olive extends StObject
-  @scala.inline
-  def olive: olive = "olive".asInstanceOf[olive]
+  inline def olive: olive = "olive".asInstanceOf[olive]
   
   @js.native
   sealed trait on extends StObject
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
+  inline def on: on = "on".asInstanceOf[on]
   
   @js.native
   sealed trait orange extends StObject
-  @scala.inline
-  def orange: orange = "orange".asInstanceOf[orange]
+  inline def orange: orange = "orange".asInstanceOf[orange]
   
   @js.native
   sealed trait orchid extends StObject
-  @scala.inline
-  def orchid: orchid = "orchid".asInstanceOf[orchid]
+  inline def orchid: orchid = "orchid".asInstanceOf[orchid]
   
   @js.native
   sealed trait `overlay-text`
     extends StObject
        with Icons
-  @scala.inline
-  def `overlay-text`: `overlay-text` = "overlay-text".asInstanceOf[`overlay-text`]
+  inline def `overlay-text`: `overlay-text` = "overlay-text".asInstanceOf[`overlay-text`]
   
   @js.native
   sealed trait password extends StObject
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
+  inline def password: password = "password".asInstanceOf[password]
   
   @js.native
   sealed trait pause
     extends StObject
        with Icons
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
   sealed trait pending extends StObject
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait people
     extends StObject
        with Icons
-  @scala.inline
-  def people: people = "people".asInstanceOf[people]
+  inline def people: people = "people".asInstanceOf[people]
   
   @js.native
   sealed trait person
     extends StObject
        with Icons
-  @scala.inline
-  def person: person = "person".asInstanceOf[person]
+  inline def person: person = "person".asInstanceOf[person]
   
   @js.native
   sealed trait `person-add`
     extends StObject
        with Icons
-  @scala.inline
-  def `person-add`: `person-add` = "person-add".asInstanceOf[`person-add`]
+  inline def `person-add`: `person-add` = "person-add".asInstanceOf[`person-add`]
   
   @js.native
   sealed trait phone
     extends StObject
        with Icons
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
   sealed trait pill extends StObject
-  @scala.inline
-  def pill: pill = "pill".asInstanceOf[pill]
+  inline def pill: pill = "pill".asInstanceOf[pill]
   
   @js.native
   sealed trait pin
     extends StObject
        with Icons
-  @scala.inline
-  def pin: pin = "pin".asInstanceOf[pin]
+  inline def pin: pin = "pin".asInstanceOf[pin]
   
   @js.native
   sealed trait `pin-hide`
     extends StObject
        with Icons
-  @scala.inline
-  def `pin-hide`: `pin-hide` = "pin-hide".asInstanceOf[`pin-hide`]
+  inline def `pin-hide`: `pin-hide` = "pin-hide".asInstanceOf[`pin-hide`]
   
   @js.native
   sealed trait pine extends StObject
-  @scala.inline
-  def pine: pine = "pine".asInstanceOf[pine]
+  inline def pine: pine = "pine".asInstanceOf[pine]
   
   @js.native
   sealed trait pinterest
     extends StObject
        with Icons
-  @scala.inline
-  def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
+  inline def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   
   @js.native
   sealed trait play
     extends StObject
        with Icons
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
+  inline def play: play = "play".asInstanceOf[play]
   
   @js.native
   sealed trait pointer extends StObject
-  @scala.inline
-  def pointer: pointer = "pointer".asInstanceOf[pointer]
+  inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
   sealed trait protect
     extends StObject
        with Icons
-  @scala.inline
-  def protect: protect = "protect".asInstanceOf[protect]
+  inline def protect: protect = "protect".asInstanceOf[protect]
   
   @js.native
   sealed trait purple extends StObject
-  @scala.inline
-  def purple: purple = "purple".asInstanceOf[purple]
+  inline def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
   sealed trait `question-mark`
     extends StObject
        with Icons
-  @scala.inline
-  def `question-mark`: `question-mark` = "question-mark".asInstanceOf[`question-mark`]
+  inline def `question-mark`: `question-mark` = "question-mark".asInstanceOf[`question-mark`]
   
   @js.native
   sealed trait rectangle extends StObject
-  @scala.inline
-  def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
+  inline def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   
   @js.native
   sealed trait red extends StObject
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
+  inline def red: red = "red".asInstanceOf[red]
   
   @js.native
   sealed trait refresh
     extends StObject
        with Icons
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
   sealed trait relative extends StObject
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
+  inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
   sealed trait remove
     extends StObject
        with Icons
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait `reorder-images`
     extends StObject
        with Icons
-  @scala.inline
-  def `reorder-images`: `reorder-images` = "reorder-images".asInstanceOf[`reorder-images`]
+  inline def `reorder-images`: `reorder-images` = "reorder-images".asInstanceOf[`reorder-images`]
   
   @js.native
   sealed trait replace
     extends StObject
        with Icons
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
   sealed trait report
     extends StObject
        with Icons
-  @scala.inline
-  def report: report = "report".asInstanceOf[report]
+  inline def report: report = "report".asInstanceOf[report]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait rotate
     extends StObject
        with Icons
-  @scala.inline
-  def rotate: rotate = "rotate".asInstanceOf[rotate]
+  inline def rotate: rotate = "rotate".asInstanceOf[rotate]
   
   @js.native
   sealed trait row extends StObject
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait rowgroup extends StObject
-  @scala.inline
-  def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
+  inline def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
   
   @js.native
   sealed trait scale
     extends StObject
        with Icons
-  @scala.inline
-  def scale: scale = "scale".asInstanceOf[scale]
+  inline def scale: scale = "scale".asInstanceOf[scale]
   
   @js.native
   sealed trait `scale-down` extends StObject
-  @scala.inline
-  def `scale-down`: `scale-down` = "scale-down".asInstanceOf[`scale-down`]
+  inline def `scale-down`: `scale-down` = "scale-down".asInstanceOf[`scale-down`]
   
   @js.native
   sealed trait scroll extends StObject
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait scrollX extends StObject
-  @scala.inline
-  def scrollX: scrollX = "scrollX".asInstanceOf[scrollX]
+  inline def scrollX: scrollX = "scrollX".asInstanceOf[scrollX]
   
   @js.native
   sealed trait scrollY extends StObject
-  @scala.inline
-  def scrollY: scrollY = "scrollY".asInstanceOf[scrollY]
+  inline def scrollY: scrollY = "scrollY".asInstanceOf[scrollY]
   
   @js.native
   sealed trait search
     extends StObject
        with Icons
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait security
     extends StObject
        with Icons
-  @scala.inline
-  def security: security = "security".asInstanceOf[security]
+  inline def security: security = "security".asInstanceOf[security]
   
   @js.native
   sealed trait self extends StObject
-  @scala.inline
-  def self: self = "self".asInstanceOf[self]
+  inline def self: self = "self".asInstanceOf[self]
   
   @js.native
   sealed trait send
     extends StObject
        with Icons
-  @scala.inline
-  def send: send = "send".asInstanceOf[send]
+  inline def send: send = "send".asInstanceOf[send]
   
   @js.native
   sealed trait shadow extends StObject
-  @scala.inline
-  def shadow: shadow = "shadow".asInstanceOf[shadow]
+  inline def shadow: shadow = "shadow".asInstanceOf[shadow]
   
   @js.native
   sealed trait share
     extends StObject
        with Icons
-  @scala.inline
-  def share: share = "share".asInstanceOf[share]
+  inline def share: share = "share".asInstanceOf[share]
   
   @js.native
   sealed trait `shopping-bag`
     extends StObject
        with Icons
-  @scala.inline
-  def `shopping-bag`: `shopping-bag` = "shopping-bag".asInstanceOf[`shopping-bag`]
+  inline def `shopping-bag`: `shopping-bag` = "shopping-bag".asInstanceOf[`shopping-bag`]
   
   @js.native
   sealed trait shrink extends StObject
-  @scala.inline
-  def shrink: shrink = "shrink".asInstanceOf[shrink]
+  inline def shrink: shrink = "shrink".asInstanceOf[shrink]
   
   @js.native
   sealed trait sm extends StObject
-  @scala.inline
-  def sm: sm = "sm".asInstanceOf[sm]
+  inline def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
   sealed trait smiley
     extends StObject
        with Icons
-  @scala.inline
-  def smiley: smiley = "smiley".asInstanceOf[smiley]
+  inline def smiley: smiley = "smiley".asInstanceOf[smiley]
   
   @js.native
   sealed trait `smiley-outline`
     extends StObject
        with Icons
-  @scala.inline
-  def `smiley-outline`: `smiley-outline` = "smiley-outline".asInstanceOf[`smiley-outline`]
+  inline def `smiley-outline`: `smiley-outline` = "smiley-outline".asInstanceOf[`smiley-outline`]
   
   @js.native
   sealed trait `sort-ascending`
     extends StObject
        with Icons
-  @scala.inline
-  def `sort-ascending`: `sort-ascending` = "sort-ascending".asInstanceOf[`sort-ascending`]
+  inline def `sort-ascending`: `sort-ascending` = "sort-ascending".asInstanceOf[`sort-ascending`]
   
   @js.native
   sealed trait `sort-descending`
     extends StObject
        with Icons
-  @scala.inline
-  def `sort-descending`: `sort-descending` = "sort-descending".asInstanceOf[`sort-descending`]
+  inline def `sort-descending`: `sort-descending` = "sort-descending".asInstanceOf[`sort-descending`]
   
   @js.native
   sealed trait sound
     extends StObject
        with Icons
-  @scala.inline
-  def sound: sound = "sound".asInstanceOf[sound]
+  inline def sound: sound = "sound".asInstanceOf[sound]
   
   @js.native
   sealed trait sparkle
     extends StObject
        with Icons
-  @scala.inline
-  def sparkle: sparkle = "sparkle".asInstanceOf[sparkle]
+  inline def sparkle: sparkle = "sparkle".asInstanceOf[sparkle]
   
   @js.native
   sealed trait speech
     extends StObject
        with Icons
-  @scala.inline
-  def speech: speech = "speech".asInstanceOf[speech]
+  inline def speech: speech = "speech".asInstanceOf[speech]
   
   @js.native
   sealed trait `speech-ellipsis`
     extends StObject
        with Icons
-  @scala.inline
-  def `speech-ellipsis`: `speech-ellipsis` = "speech-ellipsis".asInstanceOf[`speech-ellipsis`]
+  inline def `speech-ellipsis`: `speech-ellipsis` = "speech-ellipsis".asInstanceOf[`speech-ellipsis`]
   
   @js.native
   sealed trait square extends StObject
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
   sealed trait star
     extends StObject
        with Icons
-  @scala.inline
-  def star: star = "star".asInstanceOf[star]
+  inline def star: star = "star".asInstanceOf[star]
   
   @js.native
   sealed trait `star-half`
     extends StObject
        with Icons
-  @scala.inline
-  def `star-half`: `star-half` = "star-half".asInstanceOf[`star-half`]
+  inline def `star-half`: `star-half` = "star-half".asInstanceOf[`star-half`]
   
   @js.native
   sealed trait start extends StObject
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait static extends StObject
-  @scala.inline
-  def static: static = "static".asInstanceOf[static]
+  inline def static: static = "static".asInstanceOf[static]
   
   @js.native
   sealed trait `story-pin`
     extends StObject
        with Icons
-  @scala.inline
-  def `story-pin`: `story-pin` = "story-pin".asInstanceOf[`story-pin`]
+  inline def `story-pin`: `story-pin` = "story-pin".asInstanceOf[`story-pin`]
   
   @js.native
   sealed trait stretch extends StObject
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
+  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait submit extends StObject
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
+  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
   sealed trait `switch-account`
     extends StObject
        with Icons
-  @scala.inline
-  def `switch-account`: `switch-account` = "switch-account".asInstanceOf[`switch-account`]
+  inline def `switch-account`: `switch-account` = "switch-account".asInstanceOf[`switch-account`]
   
   @js.native
   sealed trait tab extends StObject
-  @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
+  inline def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
   sealed trait tag
     extends StObject
        with Icons
-  @scala.inline
-  def tag: tag = "tag".asInstanceOf[tag]
+  inline def tag: tag = "tag".asInstanceOf[tag]
   
   @js.native
   sealed trait terms
     extends StObject
        with Icons
-  @scala.inline
-  def terms: terms = "terms".asInstanceOf[terms]
+  inline def terms: terms = "terms".asInstanceOf[terms]
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait `text-align-center`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-align-center`: `text-align-center` = "text-align-center".asInstanceOf[`text-align-center`]
+  inline def `text-align-center`: `text-align-center` = "text-align-center".asInstanceOf[`text-align-center`]
   
   @js.native
   sealed trait `text-align-left`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-align-left`: `text-align-left` = "text-align-left".asInstanceOf[`text-align-left`]
+  inline def `text-align-left`: `text-align-left` = "text-align-left".asInstanceOf[`text-align-left`]
   
   @js.native
   sealed trait `text-align-right`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-align-right`: `text-align-right` = "text-align-right".asInstanceOf[`text-align-right`]
+  inline def `text-align-right`: `text-align-right` = "text-align-right".asInstanceOf[`text-align-right`]
   
   @js.native
   sealed trait `text-all-caps`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-all-caps`: `text-all-caps` = "text-all-caps".asInstanceOf[`text-all-caps`]
+  inline def `text-all-caps`: `text-all-caps` = "text-all-caps".asInstanceOf[`text-all-caps`]
   
   @js.native
   sealed trait `text-extra-small`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-extra-small`: `text-extra-small` = "text-extra-small".asInstanceOf[`text-extra-small`]
+  inline def `text-extra-small`: `text-extra-small` = "text-extra-small".asInstanceOf[`text-extra-small`]
   
   @js.native
   sealed trait `text-large`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-large`: `text-large` = "text-large".asInstanceOf[`text-large`]
+  inline def `text-large`: `text-large` = "text-large".asInstanceOf[`text-large`]
   
   @js.native
   sealed trait `text-line-height`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-line-height`: `text-line-height` = "text-line-height".asInstanceOf[`text-line-height`]
+  inline def `text-line-height`: `text-line-height` = "text-line-height".asInstanceOf[`text-line-height`]
   
   @js.native
   sealed trait `text-medium`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-medium`: `text-medium` = "text-medium".asInstanceOf[`text-medium`]
+  inline def `text-medium`: `text-medium` = "text-medium".asInstanceOf[`text-medium`]
   
   @js.native
   sealed trait `text-sentence-case`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-sentence-case`: `text-sentence-case` = "text-sentence-case".asInstanceOf[`text-sentence-case`]
+  inline def `text-sentence-case`: `text-sentence-case` = "text-sentence-case".asInstanceOf[`text-sentence-case`]
   
   @js.native
   sealed trait `text-size`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-size`: `text-size` = "text-size".asInstanceOf[`text-size`]
+  inline def `text-size`: `text-size` = "text-size".asInstanceOf[`text-size`]
   
   @js.native
   sealed trait `text-small`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-small`: `text-small` = "text-small".asInstanceOf[`text-small`]
+  inline def `text-small`: `text-small` = "text-small".asInstanceOf[`text-small`]
   
   @js.native
   sealed trait `text-spacing`
     extends StObject
        with Icons
-  @scala.inline
-  def `text-spacing`: `text-spacing` = "text-spacing".asInstanceOf[`text-spacing`]
+  inline def `text-spacing`: `text-spacing` = "text-spacing".asInstanceOf[`text-spacing`]
   
   @js.native
   sealed trait top extends StObject
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait transparent extends StObject
-  @scala.inline
-  def transparent: transparent = "transparent".asInstanceOf[transparent]
+  inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
   sealed trait transparentDarkGray extends StObject
-  @scala.inline
-  def transparentDarkGray: transparentDarkGray = "transparentDarkGray".asInstanceOf[transparentDarkGray]
+  inline def transparentDarkGray: transparentDarkGray = "transparentDarkGray".asInstanceOf[transparentDarkGray]
   
   @js.native
   sealed trait transparentWhiteText extends StObject
-  @scala.inline
-  def transparentWhiteText: transparentWhiteText = "transparentWhiteText".asInstanceOf[transparentWhiteText]
+  inline def transparentWhiteText: transparentWhiteText = "transparentWhiteText".asInstanceOf[transparentWhiteText]
   
   @js.native
   sealed trait `trash-can`
     extends StObject
        with Icons
-  @scala.inline
-  def `trash-can`: `trash-can` = "trash-can".asInstanceOf[`trash-can`]
+  inline def `trash-can`: `trash-can` = "trash-can".asInstanceOf[`trash-can`]
   
   @js.native
   sealed trait twitter
     extends StObject
        with Icons
-  @scala.inline
-  def twitter: twitter = "twitter".asInstanceOf[twitter]
+  inline def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
   sealed trait underline extends StObject
-  @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
+  inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
   sealed trait up extends StObject
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  inline def up: up = "up".asInstanceOf[up]
   
   @js.native
   sealed trait url extends StObject
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
   sealed trait `use-credentials` extends StObject
-  @scala.inline
-  def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait userPreference extends StObject
-  @scala.inline
-  def userPreference: userPreference = "userPreference".asInstanceOf[userPreference]
+  inline def userPreference: userPreference = "userPreference".asInstanceOf[userPreference]
   
   @js.native
   sealed trait username extends StObject
-  @scala.inline
-  def username: username = "username".asInstanceOf[username]
+  inline def username: username = "username".asInstanceOf[username]
   
   @js.native
   sealed trait `video-camera`
     extends StObject
        with Icons
-  @scala.inline
-  def `video-camera`: `video-camera` = "video-camera".asInstanceOf[`video-camera`]
+  inline def `video-camera`: `video-camera` = "video-camera".asInstanceOf[`video-camera`]
   
   @js.native
   sealed trait videoSlashm3u8 extends StObject
-  @scala.inline
-  def videoSlashm3u8: videoSlashm3u8 = "video/m3u8".asInstanceOf[videoSlashm3u8]
+  inline def videoSlashm3u8: videoSlashm3u8 = "video/m3u8".asInstanceOf[videoSlashm3u8]
   
   @js.native
   sealed trait videoSlashmp4 extends StObject
-  @scala.inline
-  def videoSlashmp4: videoSlashmp4 = "video/mp4".asInstanceOf[videoSlashmp4]
+  inline def videoSlashmp4: videoSlashmp4 = "video/mp4".asInstanceOf[videoSlashmp4]
   
   @js.native
   sealed trait videoSlashogg extends StObject
-  @scala.inline
-  def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
+  inline def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
   
   @js.native
   sealed trait `view-type-default`
     extends StObject
        with Icons
-  @scala.inline
-  def `view-type-default`: `view-type-default` = "view-type-default".asInstanceOf[`view-type-default`]
+  inline def `view-type-default`: `view-type-default` = "view-type-default".asInstanceOf[`view-type-default`]
   
   @js.native
   sealed trait `view-type-dense`
     extends StObject
        with Icons
-  @scala.inline
-  def `view-type-dense`: `view-type-dense` = "view-type-dense".asInstanceOf[`view-type-dense`]
+  inline def `view-type-dense`: `view-type-dense` = "view-type-dense".asInstanceOf[`view-type-dense`]
   
   @js.native
   sealed trait `view-type-list`
     extends StObject
        with Icons
-  @scala.inline
-  def `view-type-list`: `view-type-list` = "view-type-list".asInstanceOf[`view-type-list`]
+  inline def `view-type-list`: `view-type-list` = "view-type-list".asInstanceOf[`view-type-list`]
   
   @js.native
   sealed trait visible extends StObject
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
+  inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
   sealed trait visuallyHidden extends StObject
-  @scala.inline
-  def visuallyHidden: visuallyHidden = "visuallyHidden".asInstanceOf[visuallyHidden]
+  inline def visuallyHidden: visuallyHidden = "visuallyHidden".asInstanceOf[visuallyHidden]
   
   @js.native
   sealed trait warning extends StObject
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
   sealed trait watermelon extends StObject
-  @scala.inline
-  def watermelon: watermelon = "watermelon".asInstanceOf[watermelon]
+  inline def watermelon: watermelon = "watermelon".asInstanceOf[watermelon]
   
   @js.native
   sealed trait white extends StObject
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  inline def white: white = "white".asInstanceOf[white]
   
   @js.native
   sealed trait `workflow-status-all`
     extends StObject
        with Icons
-  @scala.inline
-  def `workflow-status-all`: `workflow-status-all` = "workflow-status-all".asInstanceOf[`workflow-status-all`]
+  inline def `workflow-status-all`: `workflow-status-all` = "workflow-status-all".asInstanceOf[`workflow-status-all`]
   
   @js.native
   sealed trait `workflow-status-halted`
     extends StObject
        with Icons
-  @scala.inline
-  def `workflow-status-halted`: `workflow-status-halted` = "workflow-status-halted".asInstanceOf[`workflow-status-halted`]
+  inline def `workflow-status-halted`: `workflow-status-halted` = "workflow-status-halted".asInstanceOf[`workflow-status-halted`]
   
   @js.native
   sealed trait `workflow-status-in-progress`
     extends StObject
        with Icons
-  @scala.inline
-  def `workflow-status-in-progress`: `workflow-status-in-progress` = "workflow-status-in-progress".asInstanceOf[`workflow-status-in-progress`]
+  inline def `workflow-status-in-progress`: `workflow-status-in-progress` = "workflow-status-in-progress".asInstanceOf[`workflow-status-in-progress`]
   
   @js.native
   sealed trait `workflow-status-ok`
     extends StObject
        with Icons
-  @scala.inline
-  def `workflow-status-ok`: `workflow-status-ok` = "workflow-status-ok".asInstanceOf[`workflow-status-ok`]
+  inline def `workflow-status-ok`: `workflow-status-ok` = "workflow-status-ok".asInstanceOf[`workflow-status-ok`]
   
   @js.native
   sealed trait `workflow-status-problem`
     extends StObject
        with Icons
-  @scala.inline
-  def `workflow-status-problem`: `workflow-status-problem` = "workflow-status-problem".asInstanceOf[`workflow-status-problem`]
+  inline def `workflow-status-problem`: `workflow-status-problem` = "workflow-status-problem".asInstanceOf[`workflow-status-problem`]
   
   @js.native
   sealed trait `workflow-status-unstarted`
     extends StObject
        with Icons
-  @scala.inline
-  def `workflow-status-unstarted`: `workflow-status-unstarted` = "workflow-status-unstarted".asInstanceOf[`workflow-status-unstarted`]
+  inline def `workflow-status-unstarted`: `workflow-status-unstarted` = "workflow-status-unstarted".asInstanceOf[`workflow-status-unstarted`]
   
   @js.native
   sealed trait `workflow-status-warning`
     extends StObject
        with Icons
-  @scala.inline
-  def `workflow-status-warning`: `workflow-status-warning` = "workflow-status-warning".asInstanceOf[`workflow-status-warning`]
+  inline def `workflow-status-warning`: `workflow-status-warning` = "workflow-status-warning".asInstanceOf[`workflow-status-warning`]
   
   @js.native
   sealed trait xl extends StObject
-  @scala.inline
-  def xl: xl = "xl".asInstanceOf[xl]
+  inline def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
   sealed trait xs extends StObject
-  @scala.inline
-  def xs: xs = "xs".asInstanceOf[xs]
+  inline def xs: xs = "xs".asInstanceOf[xs]
   
   @js.native
   sealed trait zoomIn extends StObject
-  @scala.inline
-  def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
+  inline def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
   
   @js.native
   sealed trait zoomOut extends StObject
-  @scala.inline
-  def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
+  inline def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
 }

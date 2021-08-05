@@ -18,28 +18,21 @@ trait ListMitigationActionsResponse extends StObject {
 }
 object ListMitigationActionsResponse {
   
-  @scala.inline
-  def apply(): ListMitigationActionsResponse = {
+  inline def apply(): ListMitigationActionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMitigationActionsResponse]
   }
   
-  @scala.inline
-  implicit class ListMitigationActionsResponseMutableBuilder[Self <: ListMitigationActionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMitigationActionsResponse](x: Self) {
     
-    @scala.inline
-    def setActionIdentifiers(value: MitigationActionIdentifierList): Self = StObject.set(x, "actionIdentifiers", value.asInstanceOf[js.Any])
+    inline def setActionIdentifiers(value: MitigationActionIdentifierList): Self = StObject.set(x, "actionIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdentifiersUndefined: Self = StObject.set(x, "actionIdentifiers", js.undefined)
+    inline def setActionIdentifiersUndefined: Self = StObject.set(x, "actionIdentifiers", js.undefined)
     
-    @scala.inline
-    def setActionIdentifiersVarargs(value: MitigationActionIdentifier*): Self = StObject.set(x, "actionIdentifiers", js.Array(value :_*))
+    inline def setActionIdentifiersVarargs(value: MitigationActionIdentifier*): Self = StObject.set(x, "actionIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

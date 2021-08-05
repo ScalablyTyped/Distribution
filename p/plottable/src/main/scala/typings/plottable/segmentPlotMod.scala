@@ -67,13 +67,11 @@ object segmentPlotMod {
     @JSImport("plottable/build/src/plots/segmentPlot", "Segment._X2_KEY")
     @js.native
     def _X2_KEY: js.Any = js.native
-    @scala.inline
-    def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    inline def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/segmentPlot", "Segment._Y2_KEY")
     @js.native
     def _Y2_KEY: js.Any = js.native
-    @scala.inline
-    def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
+    inline def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
 }

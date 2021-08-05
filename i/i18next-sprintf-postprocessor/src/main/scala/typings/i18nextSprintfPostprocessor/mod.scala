@@ -27,8 +27,7 @@ object mod extends Shortcut {
   }
   object I18nextSprintfPostProcessor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       overloadTranslationOptionHandler: js.Array[String] => PostProcess,
       process: (js.Any, String, js.Any) => js.Any
@@ -38,17 +37,13 @@ object mod extends Shortcut {
       __obj.asInstanceOf[I18nextSprintfPostProcessor]
     }
     
-    @scala.inline
-    implicit class I18nextSprintfPostProcessorMutableBuilder[Self <: I18nextSprintfPostProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: I18nextSprintfPostProcessor](x: Self) {
       
-      @scala.inline
-      def setOverloadTranslationOptionHandler(value: js.Array[String] => PostProcess): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
+      inline def setOverloadTranslationOptionHandler(value: js.Array[String] => PostProcess): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcess(value: (js.Any, String, js.Any) => js.Any): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
+      inline def setProcess(value: (js.Any, String, js.Any) => js.Any): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setType(value: postProcessor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: postProcessor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

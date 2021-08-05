@@ -31,44 +31,32 @@ object transfer {
   }
   object ServerEndpointDetails {
     
-    @scala.inline
-    def apply(): ServerEndpointDetails = {
+    inline def apply(): ServerEndpointDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerEndpointDetails]
     }
     
-    @scala.inline
-    implicit class ServerEndpointDetailsMutableBuilder[Self <: ServerEndpointDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ServerEndpointDetails](x: Self) {
       
-      @scala.inline
-      def setAddressAllocationIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "addressAllocationIds", value.asInstanceOf[js.Any])
+      inline def setAddressAllocationIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "addressAllocationIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressAllocationIdsUndefined: Self = StObject.set(x, "addressAllocationIds", js.undefined)
+      inline def setAddressAllocationIdsUndefined: Self = StObject.set(x, "addressAllocationIds", js.undefined)
       
-      @scala.inline
-      def setAddressAllocationIdsVarargs(value: Input[String]*): Self = StObject.set(x, "addressAllocationIds", js.Array(value :_*))
+      inline def setAddressAllocationIdsVarargs(value: Input[String]*): Self = StObject.set(x, "addressAllocationIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
+      inline def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
   
@@ -86,20 +74,16 @@ object transfer {
   }
   object UserHomeDirectoryMapping {
     
-    @scala.inline
-    def apply(entry: Input[String], target: Input[String]): UserHomeDirectoryMapping = {
+    inline def apply(entry: Input[String], target: Input[String]): UserHomeDirectoryMapping = {
       val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserHomeDirectoryMapping]
     }
     
-    @scala.inline
-    implicit class UserHomeDirectoryMappingMutableBuilder[Self <: UserHomeDirectoryMapping] (val x: Self) extends AnyVal {
+    extension [Self <: UserHomeDirectoryMapping](x: Self) {
       
-      @scala.inline
-      def setEntry(value: Input[String]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: Input[String]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Input[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Input[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

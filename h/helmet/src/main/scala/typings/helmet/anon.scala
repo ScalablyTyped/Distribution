@@ -24,26 +24,20 @@ object anon {
   }
   object ReadonlyContentSecurityPo {
     
-    @scala.inline
-    def apply(): ReadonlyContentSecurityPo = {
+    inline def apply(): ReadonlyContentSecurityPo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyContentSecurityPo]
     }
     
-    @scala.inline
-    implicit class ReadonlyContentSecurityPoMutableBuilder[Self <: ReadonlyContentSecurityPo] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyContentSecurityPo](x: Self) {
       
-      @scala.inline
-      def setDirectives(value: ContentSecurityPolicyDirectives): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      inline def setDirectives(value: ContentSecurityPolicyDirectives): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+      inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
       
-      @scala.inline
-      def setReportOnly(value: Boolean): Self = StObject.set(x, "reportOnly", value.asInstanceOf[js.Any])
+      inline def setReportOnly(value: Boolean): Self = StObject.set(x, "reportOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportOnlyUndefined: Self = StObject.set(x, "reportOnly", js.undefined)
+      inline def setReportOnlyUndefined: Self = StObject.set(x, "reportOnly", js.undefined)
     }
   }
   
@@ -58,32 +52,24 @@ object anon {
   }
   object ReadonlyExpectCtOptions {
     
-    @scala.inline
-    def apply(): ReadonlyExpectCtOptions = {
+    inline def apply(): ReadonlyExpectCtOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyExpectCtOptions]
     }
     
-    @scala.inline
-    implicit class ReadonlyExpectCtOptionsMutableBuilder[Self <: ReadonlyExpectCtOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyExpectCtOptions](x: Self) {
       
-      @scala.inline
-      def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
+      inline def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
+      inline def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
+      inline def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
+      inline def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
     }
   }
   
@@ -114,80 +100,56 @@ object anon {
   }
   object ReadonlyHelmetOptions {
     
-    @scala.inline
-    def apply(): ReadonlyHelmetOptions = {
+    inline def apply(): ReadonlyHelmetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyHelmetOptions]
     }
     
-    @scala.inline
-    implicit class ReadonlyHelmetOptionsMutableBuilder[Self <: ReadonlyHelmetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyHelmetOptions](x: Self) {
       
-      @scala.inline
-      def setContentSecurityPolicy(value: MiddlewareOption[ContentSecurityPolicyOptions]): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
+      inline def setContentSecurityPolicy(value: MiddlewareOption[ContentSecurityPolicyOptions]): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentSecurityPolicyUndefined: Self = StObject.set(x, "contentSecurityPolicy", js.undefined)
+      inline def setContentSecurityPolicyUndefined: Self = StObject.set(x, "contentSecurityPolicy", js.undefined)
       
-      @scala.inline
-      def setDnsPrefetchControl(value: MiddlewareOption[XDnsPrefetchControlOptions]): Self = StObject.set(x, "dnsPrefetchControl", value.asInstanceOf[js.Any])
+      inline def setDnsPrefetchControl(value: MiddlewareOption[XDnsPrefetchControlOptions]): Self = StObject.set(x, "dnsPrefetchControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsPrefetchControlUndefined: Self = StObject.set(x, "dnsPrefetchControl", js.undefined)
+      inline def setDnsPrefetchControlUndefined: Self = StObject.set(x, "dnsPrefetchControl", js.undefined)
       
-      @scala.inline
-      def setExpectCt(value: MiddlewareOption[ExpectCtOptions]): Self = StObject.set(x, "expectCt", value.asInstanceOf[js.Any])
+      inline def setExpectCt(value: MiddlewareOption[ExpectCtOptions]): Self = StObject.set(x, "expectCt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectCtUndefined: Self = StObject.set(x, "expectCt", js.undefined)
+      inline def setExpectCtUndefined: Self = StObject.set(x, "expectCt", js.undefined)
       
-      @scala.inline
-      def setFrameguard(value: MiddlewareOption[XFrameOptionsOptions]): Self = StObject.set(x, "frameguard", value.asInstanceOf[js.Any])
+      inline def setFrameguard(value: MiddlewareOption[XFrameOptionsOptions]): Self = StObject.set(x, "frameguard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameguardUndefined: Self = StObject.set(x, "frameguard", js.undefined)
+      inline def setFrameguardUndefined: Self = StObject.set(x, "frameguard", js.undefined)
       
-      @scala.inline
-      def setHidePoweredBy(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "hidePoweredBy", value.asInstanceOf[js.Any])
+      inline def setHidePoweredBy(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "hidePoweredBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePoweredByUndefined: Self = StObject.set(x, "hidePoweredBy", js.undefined)
+      inline def setHidePoweredByUndefined: Self = StObject.set(x, "hidePoweredBy", js.undefined)
       
-      @scala.inline
-      def setHsts(value: MiddlewareOption[StrictTransportSecurityOptions]): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
+      inline def setHsts(value: MiddlewareOption[StrictTransportSecurityOptions]): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
+      inline def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
       
-      @scala.inline
-      def setIeNoOpen(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "ieNoOpen", value.asInstanceOf[js.Any])
+      inline def setIeNoOpen(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "ieNoOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIeNoOpenUndefined: Self = StObject.set(x, "ieNoOpen", js.undefined)
+      inline def setIeNoOpenUndefined: Self = StObject.set(x, "ieNoOpen", js.undefined)
       
-      @scala.inline
-      def setNoSniff(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
+      inline def setNoSniff(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
+      inline def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
       
-      @scala.inline
-      def setPermittedCrossDomainPolicies(value: MiddlewareOption[XPermittedCrossDomainPoliciesOptions]): Self = StObject.set(x, "permittedCrossDomainPolicies", value.asInstanceOf[js.Any])
+      inline def setPermittedCrossDomainPolicies(value: MiddlewareOption[XPermittedCrossDomainPoliciesOptions]): Self = StObject.set(x, "permittedCrossDomainPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermittedCrossDomainPoliciesUndefined: Self = StObject.set(x, "permittedCrossDomainPolicies", js.undefined)
+      inline def setPermittedCrossDomainPoliciesUndefined: Self = StObject.set(x, "permittedCrossDomainPolicies", js.undefined)
       
-      @scala.inline
-      def setReferrerPolicy(value: MiddlewareOption[ReferrerPolicyOptions]): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: MiddlewareOption[ReferrerPolicyOptions]): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      @scala.inline
-      def setXssFilter(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "xssFilter", value.asInstanceOf[js.Any])
+      inline def setXssFilter(value: MiddlewareOption[scala.Nothing]): Self = StObject.set(x, "xssFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXssFilterUndefined: Self = StObject.set(x, "xssFilter", js.undefined)
+      inline def setXssFilterUndefined: Self = StObject.set(x, "xssFilter", js.undefined)
     }
   }
   
@@ -198,23 +160,18 @@ object anon {
   }
   object ReadonlyReferrerPolicyOpt {
     
-    @scala.inline
-    def apply(): ReadonlyReferrerPolicyOpt = {
+    inline def apply(): ReadonlyReferrerPolicyOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyReferrerPolicyOpt]
     }
     
-    @scala.inline
-    implicit class ReadonlyReferrerPolicyOptMutableBuilder[Self <: ReadonlyReferrerPolicyOpt] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyReferrerPolicyOpt](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: String | js.Array[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String | js.Array[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setPolicyVarargs(value: String*): Self = StObject.set(x, "policy", js.Array(value :_*))
+      inline def setPolicyVarargs(value: String*): Self = StObject.set(x, "policy", js.Array(value :_*))
     }
   }
   
@@ -229,32 +186,24 @@ object anon {
   }
   object ReadonlyStrictTransportSe {
     
-    @scala.inline
-    def apply(): ReadonlyStrictTransportSe = {
+    inline def apply(): ReadonlyStrictTransportSe = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyStrictTransportSe]
     }
     
-    @scala.inline
-    implicit class ReadonlyStrictTransportSeMutableBuilder[Self <: ReadonlyStrictTransportSe] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyStrictTransportSe](x: Self) {
       
-      @scala.inline
-      def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
+      inline def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSubDomainsUndefined: Self = StObject.set(x, "includeSubDomains", js.undefined)
+      inline def setIncludeSubDomainsUndefined: Self = StObject.set(x, "includeSubDomains", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     }
   }
   
@@ -265,20 +214,16 @@ object anon {
   }
   object ReadonlyXDnsPrefetchContr {
     
-    @scala.inline
-    def apply(): ReadonlyXDnsPrefetchContr = {
+    inline def apply(): ReadonlyXDnsPrefetchContr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyXDnsPrefetchContr]
     }
     
-    @scala.inline
-    implicit class ReadonlyXDnsPrefetchContrMutableBuilder[Self <: ReadonlyXDnsPrefetchContr] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyXDnsPrefetchContr](x: Self) {
       
-      @scala.inline
-      def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+      inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+      inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     }
   }
   
@@ -289,20 +234,16 @@ object anon {
   }
   object ReadonlyXFrameOptionsOpti {
     
-    @scala.inline
-    def apply(): ReadonlyXFrameOptionsOpti = {
+    inline def apply(): ReadonlyXFrameOptionsOpti = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyXFrameOptionsOpti]
     }
     
-    @scala.inline
-    implicit class ReadonlyXFrameOptionsOptiMutableBuilder[Self <: ReadonlyXFrameOptionsOpti] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyXFrameOptionsOpti](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     }
   }
   
@@ -313,20 +254,16 @@ object anon {
   }
   object ReadonlyXPermittedCrossDo {
     
-    @scala.inline
-    def apply(): ReadonlyXPermittedCrossDo = {
+    inline def apply(): ReadonlyXPermittedCrossDo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyXPermittedCrossDo]
     }
     
-    @scala.inline
-    implicit class ReadonlyXPermittedCrossDoMutableBuilder[Self <: ReadonlyXPermittedCrossDo] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyXPermittedCrossDo](x: Self) {
       
-      @scala.inline
-      def setPermittedPolicies(value: String): Self = StObject.set(x, "permittedPolicies", value.asInstanceOf[js.Any])
+      inline def setPermittedPolicies(value: String): Self = StObject.set(x, "permittedPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermittedPoliciesUndefined: Self = StObject.set(x, "permittedPolicies", js.undefined)
+      inline def setPermittedPoliciesUndefined: Self = StObject.set(x, "permittedPolicies", js.undefined)
     }
   }
 }

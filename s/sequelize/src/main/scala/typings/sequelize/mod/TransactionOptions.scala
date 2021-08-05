@@ -42,51 +42,37 @@ trait TransactionOptions extends StObject {
 }
 object TransactionOptions {
   
-  @scala.inline
-  def apply(): TransactionOptions = {
+  inline def apply(): TransactionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransactionOptions]
   }
   
-  @scala.inline
-  implicit class TransactionOptionsMutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionOptions](x: Self) {
     
-    @scala.inline
-    def setAutocommit(value: Boolean): Self = StObject.set(x, "autocommit", value.asInstanceOf[js.Any])
+    inline def setAutocommit(value: Boolean): Self = StObject.set(x, "autocommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutocommitUndefined: Self = StObject.set(x, "autocommit", js.undefined)
+    inline def setAutocommitUndefined: Self = StObject.set(x, "autocommit", js.undefined)
     
-    @scala.inline
-    def setDeferrable(
+    inline def setDeferrable(
       value: DeferrableSetImmediate | DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred
     ): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+    inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
     
-    @scala.inline
-    def setIsolationLevel(value: TransactionIsolationLevel): Self = StObject.set(x, "isolationLevel", value.asInstanceOf[js.Any])
+    inline def setIsolationLevel(value: TransactionIsolationLevel): Self = StObject.set(x, "isolationLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolationLevelUndefined: Self = StObject.set(x, "isolationLevel", js.undefined)
+    inline def setIsolationLevelUndefined: Self = StObject.set(x, "isolationLevel", js.undefined)
     
-    @scala.inline
-    def setLogging(value: js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
-    @scala.inline
-    def setType(value: TransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

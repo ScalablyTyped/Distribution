@@ -16,8 +16,7 @@ trait StartModule
 }
 object StartModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     Model: XModel,
     ViewData: js.Any,
@@ -40,10 +39,8 @@ object StartModule {
     __obj.asInstanceOf[StartModule]
   }
   
-  @scala.inline
-  implicit class StartModuleMutableBuilder[Self <: StartModule] (val x: Self) extends AnyVal {
+  extension [Self <: StartModule](x: Self) {
     
-    @scala.inline
-    def setCreateWithParentWindow(value: XWindow => Unit): Self = StObject.set(x, "createWithParentWindow", js.Any.fromFunction1(value))
+    inline def setCreateWithParentWindow(value: XWindow => Unit): Self = StObject.set(x, "createWithParentWindow", js.Any.fromFunction1(value))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoBorder")
 @js.native
-class IMsoBorder protected ()
+/* private */ class IMsoBorder ()
   extends StObject
      with typings.activexOffice.Office.IMsoBorder {
   
@@ -25,7 +25,7 @@ class IMsoBorder protected ()
   /* CompleteClass */
   var LineStyle: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoBorder_typekey")
   var OfficeDotIMsoBorder_typekey: typings.activexOffice.Office.IMsoBorder = js.native
   

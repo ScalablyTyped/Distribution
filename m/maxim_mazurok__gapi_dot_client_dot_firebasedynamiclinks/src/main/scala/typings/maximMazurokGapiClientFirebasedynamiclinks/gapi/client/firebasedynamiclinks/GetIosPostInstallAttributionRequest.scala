@@ -35,61 +35,43 @@ trait GetIosPostInstallAttributionRequest extends StObject {
 }
 object GetIosPostInstallAttributionRequest {
   
-  @scala.inline
-  def apply(): GetIosPostInstallAttributionRequest = {
+  inline def apply(): GetIosPostInstallAttributionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIosPostInstallAttributionRequest]
   }
   
-  @scala.inline
-  implicit class GetIosPostInstallAttributionRequestMutableBuilder[Self <: GetIosPostInstallAttributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIosPostInstallAttributionRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstallationTime(value: String): Self = StObject.set(x, "appInstallationTime", value.asInstanceOf[js.Any])
+    inline def setAppInstallationTime(value: String): Self = StObject.set(x, "appInstallationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstallationTimeUndefined: Self = StObject.set(x, "appInstallationTime", js.undefined)
+    inline def setAppInstallationTimeUndefined: Self = StObject.set(x, "appInstallationTime", js.undefined)
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setDevice(value: DeviceInfo): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: DeviceInfo): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setIosVersion(value: String): Self = StObject.set(x, "iosVersion", value.asInstanceOf[js.Any])
+    inline def setIosVersion(value: String): Self = StObject.set(x, "iosVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosVersionUndefined: Self = StObject.set(x, "iosVersion", js.undefined)
+    inline def setIosVersionUndefined: Self = StObject.set(x, "iosVersion", js.undefined)
     
-    @scala.inline
-    def setRetrievalMethod(value: String): Self = StObject.set(x, "retrievalMethod", value.asInstanceOf[js.Any])
+    inline def setRetrievalMethod(value: String): Self = StObject.set(x, "retrievalMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrievalMethodUndefined: Self = StObject.set(x, "retrievalMethod", js.undefined)
+    inline def setRetrievalMethodUndefined: Self = StObject.set(x, "retrievalMethod", js.undefined)
     
-    @scala.inline
-    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+    inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
+    inline def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
     
-    @scala.inline
-    def setUniqueMatchLinkToCheck(value: String): Self = StObject.set(x, "uniqueMatchLinkToCheck", value.asInstanceOf[js.Any])
+    inline def setUniqueMatchLinkToCheck(value: String): Self = StObject.set(x, "uniqueMatchLinkToCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueMatchLinkToCheckUndefined: Self = StObject.set(x, "uniqueMatchLinkToCheck", js.undefined)
+    inline def setUniqueMatchLinkToCheckUndefined: Self = StObject.set(x, "uniqueMatchLinkToCheck", js.undefined)
     
-    @scala.inline
-    def setVisualStyle(value: String): Self = StObject.set(x, "visualStyle", value.asInstanceOf[js.Any])
+    inline def setVisualStyle(value: String): Self = StObject.set(x, "visualStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualStyleUndefined: Self = StObject.set(x, "visualStyle", js.undefined)
+    inline def setVisualStyleUndefined: Self = StObject.set(x, "visualStyle", js.undefined)
   }
 }

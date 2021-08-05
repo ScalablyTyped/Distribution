@@ -24,25 +24,19 @@ trait ListUsersResult extends StObject {
 }
 object ListUsersResult {
   
-  @scala.inline
-  def apply(users: js.Array[UserRecord]): ListUsersResult = {
+  inline def apply(users: js.Array[UserRecord]): ListUsersResult = {
     val __obj = js.Dynamic.literal(users = users.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsersResult]
   }
   
-  @scala.inline
-  implicit class ListUsersResultMutableBuilder[Self <: ListUsersResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListUsersResult](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[UserRecord]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UserRecord]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: UserRecord*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserRecord*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

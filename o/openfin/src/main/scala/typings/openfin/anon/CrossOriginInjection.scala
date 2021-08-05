@@ -12,25 +12,19 @@ trait CrossOriginInjection extends StObject {
 }
 object CrossOriginInjection {
   
-  @scala.inline
-  def apply(): CrossOriginInjection = {
+  inline def apply(): CrossOriginInjection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrossOriginInjection]
   }
   
-  @scala.inline
-  implicit class CrossOriginInjectionMutableBuilder[Self <: CrossOriginInjection] (val x: Self) extends AnyVal {
+  extension [Self <: CrossOriginInjection](x: Self) {
     
-    @scala.inline
-    def setCrossOriginInjection(value: Boolean): Self = StObject.set(x, "crossOriginInjection", value.asInstanceOf[js.Any])
+    inline def setCrossOriginInjection(value: Boolean): Self = StObject.set(x, "crossOriginInjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginInjectionUndefined: Self = StObject.set(x, "crossOriginInjection", js.undefined)
+    inline def setCrossOriginInjectionUndefined: Self = StObject.set(x, "crossOriginInjection", js.undefined)
     
-    @scala.inline
-    def setSameOriginInjection(value: Boolean): Self = StObject.set(x, "sameOriginInjection", value.asInstanceOf[js.Any])
+    inline def setSameOriginInjection(value: Boolean): Self = StObject.set(x, "sameOriginInjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSameOriginInjectionUndefined: Self = StObject.set(x, "sameOriginInjection", js.undefined)
+    inline def setSameOriginInjectionUndefined: Self = StObject.set(x, "sameOriginInjection", js.undefined)
   }
 }

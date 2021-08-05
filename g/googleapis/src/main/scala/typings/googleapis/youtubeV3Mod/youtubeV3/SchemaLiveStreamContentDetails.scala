@@ -32,25 +32,19 @@ trait SchemaLiveStreamContentDetails extends StObject {
 }
 object SchemaLiveStreamContentDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveStreamContentDetails = {
+  inline def apply(): SchemaLiveStreamContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveStreamContentDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveStreamContentDetailsMutableBuilder[Self <: SchemaLiveStreamContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveStreamContentDetails](x: Self) {
     
-    @scala.inline
-    def setClosedCaptionsIngestionUrl(value: String): Self = StObject.set(x, "closedCaptionsIngestionUrl", value.asInstanceOf[js.Any])
+    inline def setClosedCaptionsIngestionUrl(value: String): Self = StObject.set(x, "closedCaptionsIngestionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedCaptionsIngestionUrlUndefined: Self = StObject.set(x, "closedCaptionsIngestionUrl", js.undefined)
+    inline def setClosedCaptionsIngestionUrlUndefined: Self = StObject.set(x, "closedCaptionsIngestionUrl", js.undefined)
     
-    @scala.inline
-    def setIsReusable(value: Boolean): Self = StObject.set(x, "isReusable", value.asInstanceOf[js.Any])
+    inline def setIsReusable(value: Boolean): Self = StObject.set(x, "isReusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReusableUndefined: Self = StObject.set(x, "isReusable", js.undefined)
+    inline def setIsReusableUndefined: Self = StObject.set(x, "isReusable", js.undefined)
   }
 }

@@ -16,37 +16,27 @@ trait Context extends StObject {
 }
 object Context {
   
-  @scala.inline
-  def apply(): Context = {
+  inline def apply(): Context = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Context]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+  extension [Self <: Context](x: Self) {
     
-    @scala.inline
-    def setContext(value: SchemaContextDefinition): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: SchemaContextDefinition): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setContextVarargs(value: (String | Node)*): Self = StObject.set(x, "context", js.Array(value :_*))
+    inline def setContextVarargs(value: (String | Node)*): Self = StObject.set(x, "context", js.Array(value :_*))
     
-    @scala.inline
-    def setLastRangeBackward(value: Boolean): Self = StObject.set(x, "lastRangeBackward", value.asInstanceOf[js.Any])
+    inline def setLastRangeBackward(value: Boolean): Self = StObject.set(x, "lastRangeBackward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRangeBackwardUndefined: Self = StObject.set(x, "lastRangeBackward", js.undefined)
+    inline def setLastRangeBackwardUndefined: Self = StObject.set(x, "lastRangeBackward", js.undefined)
     
-    @scala.inline
-    def setSelectionAttributes(value: js.Array[js.Object]): Self = StObject.set(x, "selectionAttributes", value.asInstanceOf[js.Any])
+    inline def setSelectionAttributes(value: js.Array[js.Object]): Self = StObject.set(x, "selectionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionAttributesUndefined: Self = StObject.set(x, "selectionAttributes", js.undefined)
+    inline def setSelectionAttributesUndefined: Self = StObject.set(x, "selectionAttributes", js.undefined)
     
-    @scala.inline
-    def setSelectionAttributesVarargs(value: js.Object*): Self = StObject.set(x, "selectionAttributes", js.Array(value :_*))
+    inline def setSelectionAttributesVarargs(value: js.Object*): Self = StObject.set(x, "selectionAttributes", js.Array(value :_*))
   }
 }

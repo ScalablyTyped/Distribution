@@ -13,19 +13,15 @@ trait RuleGroupRuleGroupRuleVariablesIpSetIpSet extends StObject {
 }
 object RuleGroupRuleGroupRuleVariablesIpSetIpSet {
   
-  @scala.inline
-  def apply(definitions: js.Array[String]): RuleGroupRuleGroupRuleVariablesIpSetIpSet = {
+  inline def apply(definitions: js.Array[String]): RuleGroupRuleGroupRuleVariablesIpSetIpSet = {
     val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRuleVariablesIpSetIpSet]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRuleVariablesIpSetIpSetMutableBuilder[Self <: RuleGroupRuleGroupRuleVariablesIpSetIpSet] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRuleVariablesIpSetIpSet](x: Self) {
     
-    @scala.inline
-    def setDefinitions(value: js.Array[String]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: js.Array[String]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionsVarargs(value: String*): Self = StObject.set(x, "definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: String*): Self = StObject.set(x, "definitions", js.Array(value :_*))
   }
 }

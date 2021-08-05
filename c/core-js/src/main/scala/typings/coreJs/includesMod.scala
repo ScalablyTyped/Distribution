@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object includesMod {
   
   /* was `typeof core.Array.includes` */
-  @scala.inline
-  def apply[T](array: ArrayLike[T], value: T): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply[T](array: ArrayLike[T], value: T): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("core-js/fn/array/includes", JSImport.Namespace)
   @js.native

@@ -111,21 +111,16 @@ object restApiMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RestApi]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApi]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RestApiState): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RestApi]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RestApiState, opts: CustomResourceOptions): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApi]
+    inline def get(name: String, id: Input[ID]): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RestApi]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApi]
+    inline def get(name: String, id: Input[ID], state: RestApiState): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RestApi]
+    inline def get(name: String, id: Input[ID], state: RestApiState, opts: CustomResourceOptions): RestApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RestApi]
     
     /**
       * Returns true if the given object is an instance of RestApi.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ Boolean]
   }
   
   trait RestApiArgs extends StObject {
@@ -177,71 +172,50 @@ object restApiMod {
   }
   object RestApiArgs {
     
-    @scala.inline
-    def apply(): RestApiArgs = {
+    inline def apply(): RestApiArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestApiArgs]
     }
     
-    @scala.inline
-    implicit class RestApiArgsMutableBuilder[Self <: RestApiArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RestApiArgs](x: Self) {
       
-      @scala.inline
-      def setApiKeySource(value: Input[String]): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
+      inline def setApiKeySource(value: Input[String]): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeySourceUndefined: Self = StObject.set(x, "apiKeySource", js.undefined)
+      inline def setApiKeySourceUndefined: Self = StObject.set(x, "apiKeySource", js.undefined)
       
-      @scala.inline
-      def setBinaryMediaTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
+      inline def setBinaryMediaTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
+      inline def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
       
-      @scala.inline
-      def setBinaryMediaTypesVarargs(value: Input[String]*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
+      inline def setBinaryMediaTypesVarargs(value: Input[String]*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setBody(value: Input[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Input[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEndpointConfiguration(value: Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]): Self = StObject.set(x, "endpointConfiguration", value.asInstanceOf[js.Any])
+      inline def setEndpointConfiguration(value: Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]): Self = StObject.set(x, "endpointConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointConfigurationUndefined: Self = StObject.set(x, "endpointConfiguration", js.undefined)
+      inline def setEndpointConfigurationUndefined: Self = StObject.set(x, "endpointConfiguration", js.undefined)
       
-      @scala.inline
-      def setMinimumCompressionSize(value: Input[Double]): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
+      inline def setMinimumCompressionSize(value: Input[Double]): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumCompressionSizeUndefined: Self = StObject.set(x, "minimumCompressionSize", js.undefined)
+      inline def setMinimumCompressionSizeUndefined: Self = StObject.set(x, "minimumCompressionSize", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -316,95 +290,66 @@ object restApiMod {
   }
   object RestApiState {
     
-    @scala.inline
-    def apply(): RestApiState = {
+    inline def apply(): RestApiState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestApiState]
     }
     
-    @scala.inline
-    implicit class RestApiStateMutableBuilder[Self <: RestApiState] (val x: Self) extends AnyVal {
+    extension [Self <: RestApiState](x: Self) {
       
-      @scala.inline
-      def setApiKeySource(value: Input[String]): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
+      inline def setApiKeySource(value: Input[String]): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeySourceUndefined: Self = StObject.set(x, "apiKeySource", js.undefined)
+      inline def setApiKeySourceUndefined: Self = StObject.set(x, "apiKeySource", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBinaryMediaTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
+      inline def setBinaryMediaTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
+      inline def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
       
-      @scala.inline
-      def setBinaryMediaTypesVarargs(value: Input[String]*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
+      inline def setBinaryMediaTypesVarargs(value: Input[String]*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setBody(value: Input[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Input[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+      inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEndpointConfiguration(value: Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]): Self = StObject.set(x, "endpointConfiguration", value.asInstanceOf[js.Any])
+      inline def setEndpointConfiguration(value: Input[typings.pulumiAws.inputMod.apigateway.RestApiEndpointConfiguration]): Self = StObject.set(x, "endpointConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointConfigurationUndefined: Self = StObject.set(x, "endpointConfiguration", js.undefined)
+      inline def setEndpointConfigurationUndefined: Self = StObject.set(x, "endpointConfiguration", js.undefined)
       
-      @scala.inline
-      def setExecutionArn(value: Input[String]): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+      inline def setExecutionArn(value: Input[String]): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionArnUndefined: Self = StObject.set(x, "executionArn", js.undefined)
+      inline def setExecutionArnUndefined: Self = StObject.set(x, "executionArn", js.undefined)
       
-      @scala.inline
-      def setMinimumCompressionSize(value: Input[Double]): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
+      inline def setMinimumCompressionSize(value: Input[Double]): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumCompressionSizeUndefined: Self = StObject.set(x, "minimumCompressionSize", js.undefined)
+      inline def setMinimumCompressionSizeUndefined: Self = StObject.set(x, "minimumCompressionSize", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setRootResourceId(value: Input[String]): Self = StObject.set(x, "rootResourceId", value.asInstanceOf[js.Any])
+      inline def setRootResourceId(value: Input[String]): Self = StObject.set(x, "rootResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootResourceIdUndefined: Self = StObject.set(x, "rootResourceId", js.undefined)
+      inline def setRootResourceIdUndefined: Self = StObject.set(x, "rootResourceId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

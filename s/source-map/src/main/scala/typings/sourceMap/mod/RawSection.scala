@@ -12,19 +12,15 @@ trait RawSection extends StObject {
 }
 object RawSection {
   
-  @scala.inline
-  def apply(map: RawSourceMap, offset: Position): RawSection = {
+  inline def apply(map: RawSourceMap, offset: Position): RawSection = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawSection]
   }
   
-  @scala.inline
-  implicit class RawSectionMutableBuilder[Self <: RawSection] (val x: Self) extends AnyVal {
+  extension [Self <: RawSection](x: Self) {
     
-    @scala.inline
-    def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

@@ -24,61 +24,43 @@ trait GroupEnd extends StObject {
 }
 object GroupEnd {
   
-  @scala.inline
-  def apply(): GroupEnd = {
+  inline def apply(): GroupEnd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupEnd]
   }
   
-  @scala.inline
-  implicit class GroupEndMutableBuilder[Self <: GroupEnd] (val x: Self) extends AnyVal {
+  extension [Self <: GroupEnd](x: Self) {
     
-    @scala.inline
-    def setBody(value: `14`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: `14`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setGroupEnd(value: `16`): Self = StObject.set(x, "groupEnd", value.asInstanceOf[js.Any])
+    inline def setGroupEnd(value: `16`): Self = StObject.set(x, "groupEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupEndUndefined: Self = StObject.set(x, "groupEnd", js.undefined)
+    inline def setGroupEndUndefined: Self = StObject.set(x, "groupEnd", js.undefined)
     
-    @scala.inline
-    def setGroupHeader(value: Fill): Self = StObject.set(x, "groupHeader", value.asInstanceOf[js.Any])
+    inline def setGroupHeader(value: Fill): Self = StObject.set(x, "groupHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupHeaderUndefined: Self = StObject.set(x, "groupHeader", js.undefined)
+    inline def setGroupHeaderUndefined: Self = StObject.set(x, "groupHeader", js.undefined)
     
-    @scala.inline
-    def setHeader(value: Gap): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Gap): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setIcons(value: Ascending): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Ascending): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setPinned(value: Body): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Body): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: `18`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: `18`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setResize(value: `17`): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: `17`): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
   }
 }

@@ -17,19 +17,15 @@ trait MipsWriterOptions extends StObject {
 }
 object MipsWriterOptions {
   
-  @scala.inline
-  def apply(): MipsWriterOptions = {
+  inline def apply(): MipsWriterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MipsWriterOptions]
   }
   
-  @scala.inline
-  implicit class MipsWriterOptionsMutableBuilder[Self <: MipsWriterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MipsWriterOptions](x: Self) {
     
-    @scala.inline
-    def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+    inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
   }
 }

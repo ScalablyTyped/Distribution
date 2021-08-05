@@ -15,6 +15,5 @@ object PopupHelper {
     * @param sPercentage A percentage value in string format, for example "25%"
     * @param fBaseSize A float number which the calculation is based on.
     */
-  @scala.inline
-  def calcPercentageSize(sPercentage: String, fBaseSize: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calcPercentageSize")(sPercentage.asInstanceOf[js.Any], fBaseSize.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def calcPercentageSize(sPercentage: String, fBaseSize: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calcPercentageSize")(sPercentage.asInstanceOf[js.Any], fBaseSize.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

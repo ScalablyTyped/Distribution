@@ -13,22 +13,17 @@ trait Value extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply(key: String, value: js.Array[WorkItemTypeColorAndIcon]): Value = {
+  inline def apply(key: String, value: js.Array[WorkItemTypeColorAndIcon]): Value = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[WorkItemTypeColorAndIcon]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[WorkItemTypeColorAndIcon]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: WorkItemTypeColorAndIcon*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: WorkItemTypeColorAndIcon*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

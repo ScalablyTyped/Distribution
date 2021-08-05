@@ -49,8 +49,7 @@ trait TextBufferFileBackend extends StObject {
 }
 object TextBufferFileBackend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createReadStream: () => ReadStream,
     createWriteStream: () => WriteStream,
     existsSync: () => Boolean,
@@ -60,37 +59,26 @@ object TextBufferFileBackend {
     __obj.asInstanceOf[TextBufferFileBackend]
   }
   
-  @scala.inline
-  implicit class TextBufferFileBackendMutableBuilder[Self <: TextBufferFileBackend] (val x: Self) extends AnyVal {
+  extension [Self <: TextBufferFileBackend](x: Self) {
     
-    @scala.inline
-    def setCreateReadStream(value: () => ReadStream): Self = StObject.set(x, "createReadStream", js.Any.fromFunction0(value))
+    inline def setCreateReadStream(value: () => ReadStream): Self = StObject.set(x, "createReadStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWriteStream(value: () => WriteStream): Self = StObject.set(x, "createWriteStream", js.Any.fromFunction0(value))
+    inline def setCreateWriteStream(value: () => WriteStream): Self = StObject.set(x, "createWriteStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExistsSync(value: () => Boolean): Self = StObject.set(x, "existsSync", js.Any.fromFunction0(value))
+    inline def setExistsSync(value: () => Boolean): Self = StObject.set(x, "existsSync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPath(value: () => String): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
+    inline def setGetPath(value: () => String): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDidChange(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidChange", js.Any.fromFunction1(value))
+    inline def setOnDidChange(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
+    inline def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
     
-    @scala.inline
-    def setOnDidDelete(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDelete", js.Any.fromFunction1(value))
+    inline def setOnDidDelete(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidDeleteUndefined: Self = StObject.set(x, "onDidDelete", js.undefined)
+    inline def setOnDidDeleteUndefined: Self = StObject.set(x, "onDidDelete", js.undefined)
     
-    @scala.inline
-    def setOnDidRename(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidRename", js.Any.fromFunction1(value))
+    inline def setOnDidRename(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidRename", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidRenameUndefined: Self = StObject.set(x, "onDidRename", js.undefined)
+    inline def setOnDidRenameUndefined: Self = StObject.set(x, "onDidRename", js.undefined)
   }
 }

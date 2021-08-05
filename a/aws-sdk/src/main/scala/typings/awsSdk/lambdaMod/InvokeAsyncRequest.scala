@@ -18,19 +18,15 @@ trait InvokeAsyncRequest extends StObject {
 }
 object InvokeAsyncRequest {
   
-  @scala.inline
-  def apply(FunctionName: NamespacedFunctionName, InvokeArgs: BlobStream): InvokeAsyncRequest = {
+  inline def apply(FunctionName: NamespacedFunctionName, InvokeArgs: BlobStream): InvokeAsyncRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], InvokeArgs = InvokeArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeAsyncRequest]
   }
   
-  @scala.inline
-  implicit class InvokeAsyncRequestMutableBuilder[Self <: InvokeAsyncRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InvokeAsyncRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokeArgs(value: BlobStream): Self = StObject.set(x, "InvokeArgs", value.asInstanceOf[js.Any])
+    inline def setInvokeArgs(value: BlobStream): Self = StObject.set(x, "InvokeArgs", value.asInstanceOf[js.Any])
   }
 }

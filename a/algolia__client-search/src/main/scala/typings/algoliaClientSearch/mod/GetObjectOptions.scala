@@ -13,22 +13,17 @@ trait GetObjectOptions extends StObject {
 }
 object GetObjectOptions {
   
-  @scala.inline
-  def apply(): GetObjectOptions = {
+  inline def apply(): GetObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectOptions]
   }
   
-  @scala.inline
-  implicit class GetObjectOptionsMutableBuilder[Self <: GetObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectOptions](x: Self) {
     
-    @scala.inline
-    def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
+    inline def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesToRetrieveUndefined: Self = StObject.set(x, "attributesToRetrieve", js.undefined)
+    inline def setAttributesToRetrieveUndefined: Self = StObject.set(x, "attributesToRetrieve", js.undefined)
     
-    @scala.inline
-    def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value :_*))
+    inline def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value :_*))
   }
 }

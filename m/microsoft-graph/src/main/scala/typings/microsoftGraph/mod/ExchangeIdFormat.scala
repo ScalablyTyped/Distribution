@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExchangeIdFormat extends StObject
 object ExchangeIdFormat {
   
-  @scala.inline
-  def entryId: typings.microsoftGraph.microsoftGraphStrings.entryId = "entryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.entryId]
+  inline def entryId: typings.microsoftGraph.microsoftGraphStrings.entryId = "entryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.entryId]
   
-  @scala.inline
-  def ewsId: typings.microsoftGraph.microsoftGraphStrings.ewsId = "ewsId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ewsId]
+  inline def ewsId: typings.microsoftGraph.microsoftGraphStrings.ewsId = "ewsId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ewsId]
   
-  @scala.inline
-  def immutableEntryId: typings.microsoftGraph.microsoftGraphStrings.immutableEntryId = "immutableEntryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.immutableEntryId]
+  inline def immutableEntryId: typings.microsoftGraph.microsoftGraphStrings.immutableEntryId = "immutableEntryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.immutableEntryId]
   
-  @scala.inline
-  def restId: typings.microsoftGraph.microsoftGraphStrings.restId = "restId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restId]
+  inline def restId: typings.microsoftGraph.microsoftGraphStrings.restId = "restId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restId]
   
-  @scala.inline
-  def restImmutableEntryId: typings.microsoftGraph.microsoftGraphStrings.restImmutableEntryId = "restImmutableEntryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restImmutableEntryId]
+  inline def restImmutableEntryId: typings.microsoftGraph.microsoftGraphStrings.restImmutableEntryId = "restImmutableEntryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restImmutableEntryId]
 }

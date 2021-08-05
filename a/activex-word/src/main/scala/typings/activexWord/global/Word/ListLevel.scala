@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ListLevel")
 @js.native
-class ListLevel protected ()
+/* private */ class ListLevel ()
   extends StObject
      with typings.activexWord.Word.ListLevel {
   
@@ -67,7 +67,7 @@ class ListLevel protected ()
   /* CompleteClass */
   var TrailingCharacter: WdTrailingCharacter = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ListLevel_typekey")
   var WordDotListLevel_typekey: typings.activexWord.Word.ListLevel = js.native
 }

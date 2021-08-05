@@ -18,19 +18,15 @@ trait CreateCacheSecurityGroupMessage extends StObject {
 }
 object CreateCacheSecurityGroupMessage {
   
-  @scala.inline
-  def apply(CacheSecurityGroupName: String, Description: String): CreateCacheSecurityGroupMessage = {
+  inline def apply(CacheSecurityGroupName: String, Description: String): CreateCacheSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSecurityGroupName = CacheSecurityGroupName.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCacheSecurityGroupMessage]
   }
   
-  @scala.inline
-  implicit class CreateCacheSecurityGroupMessageMutableBuilder[Self <: CreateCacheSecurityGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCacheSecurityGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
   }
 }

@@ -16,37 +16,27 @@ trait InstanceOptions extends StObject {
 }
 object InstanceOptions {
   
-  @scala.inline
-  def apply(): InstanceOptions = {
+  inline def apply(): InstanceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceOptions]
   }
   
-  @scala.inline
-  implicit class InstanceOptionsMutableBuilder[Self <: InstanceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceOptions](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+    inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+    inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

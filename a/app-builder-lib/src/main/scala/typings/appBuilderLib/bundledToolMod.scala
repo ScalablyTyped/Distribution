@@ -10,15 +10,11 @@ object bundledToolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeEnv(oldValue: String, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def computeEnv(oldValue: Null, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def computeEnv(oldValue: Unit, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def computeEnv(oldValue: String, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def computeEnv(oldValue: Null, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def computeEnv(oldValue: Unit, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def computeToolEnv(libPath: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeToolEnv")(libPath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def computeToolEnv(libPath: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeToolEnv")(libPath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait ToolInfo extends StObject {
     
@@ -28,23 +24,18 @@ object bundledToolMod {
   }
   object ToolInfo {
     
-    @scala.inline
-    def apply(path: String): ToolInfo = {
+    inline def apply(path: String): ToolInfo = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToolInfo]
     }
     
-    @scala.inline
-    implicit class ToolInfoMutableBuilder[Self <: ToolInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ToolInfo](x: Self) {
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

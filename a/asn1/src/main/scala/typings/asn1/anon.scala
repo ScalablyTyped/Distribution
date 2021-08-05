@@ -14,20 +14,16 @@ object anon {
   }
   object GrowthFactor {
     
-    @scala.inline
-    def apply(growthFactor: Double, size: Double): GrowthFactor = {
+    inline def apply(growthFactor: Double, size: Double): GrowthFactor = {
       val __obj = js.Dynamic.literal(growthFactor = growthFactor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[GrowthFactor]
     }
     
-    @scala.inline
-    implicit class GrowthFactorMutableBuilder[Self <: GrowthFactor] (val x: Self) extends AnyVal {
+    extension [Self <: GrowthFactor](x: Self) {
       
-      @scala.inline
-      def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
+      inline def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,19 +17,15 @@ trait TriggerNameTaskCreated
 }
 object TriggerNameTaskCreated {
   
-  @scala.inline
-  def apply(triggerName: TaskCreated): TriggerNameTaskCreated = {
+  inline def apply(triggerName: TaskCreated): TriggerNameTaskCreated = {
     val __obj = js.Dynamic.literal(triggerId = 6, triggerName = triggerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerNameTaskCreated]
   }
   
-  @scala.inline
-  implicit class TriggerNameTaskCreatedMutableBuilder[Self <: TriggerNameTaskCreated] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerNameTaskCreated](x: Self) {
     
-    @scala.inline
-    def setTriggerId(value: `6`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: `6`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerName(value: TaskCreated): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: TaskCreated): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
   }
 }

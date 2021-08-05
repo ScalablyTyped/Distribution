@@ -13,22 +13,17 @@ trait DetailsMap extends StObject {
 }
 object DetailsMap {
   
-  @scala.inline
-  def apply(): DetailsMap = {
+  inline def apply(): DetailsMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetailsMap]
   }
   
-  @scala.inline
-  implicit class DetailsMapMutableBuilder[Self <: DetailsMap] (val x: Self) extends AnyVal {
+  extension [Self <: DetailsMap](x: Self) {
     
-    @scala.inline
-    def setResourceShare(value: ResourceShareList): Self = StObject.set(x, "ResourceShare", value.asInstanceOf[js.Any])
+    inline def setResourceShare(value: ResourceShareList): Self = StObject.set(x, "ResourceShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareUndefined: Self = StObject.set(x, "ResourceShare", js.undefined)
+    inline def setResourceShareUndefined: Self = StObject.set(x, "ResourceShare", js.undefined)
     
-    @scala.inline
-    def setResourceShareVarargs(value: RAMResourceShareArn*): Self = StObject.set(x, "ResourceShare", js.Array(value :_*))
+    inline def setResourceShareVarargs(value: RAMResourceShareArn*): Self = StObject.set(x, "ResourceShare", js.Array(value :_*))
   }
 }

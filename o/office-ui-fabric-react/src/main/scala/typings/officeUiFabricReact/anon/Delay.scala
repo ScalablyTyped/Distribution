@@ -11,16 +11,13 @@ trait Delay extends StObject {
 }
 object Delay {
   
-  @scala.inline
-  def apply(delay: TooltipDelay): Delay = {
+  inline def apply(delay: TooltipDelay): Delay = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delay]
   }
   
-  @scala.inline
-  implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+  extension [Self <: Delay](x: Self) {
     
-    @scala.inline
-    def setDelay(value: TooltipDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: TooltipDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
   }
 }

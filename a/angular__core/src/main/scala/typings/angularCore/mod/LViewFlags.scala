@@ -39,12 +39,10 @@ trait LViewFlags extends StObject
 object LViewFlags {
   
   /** Whether or not this view is currently attached to change detection tree. */
-  @scala.inline
-  def Attached: `128` = 128.asInstanceOf[`128`]
+  inline def Attached: `128` = 128.asInstanceOf[`128`]
   
   /** Whether this view has default change detection strategy (checks always) or onPush */
-  @scala.inline
-  def CheckAlways: `16` = 16.asInstanceOf[`16`]
+  inline def CheckAlways: `16` = 16.asInstanceOf[`16`]
   
   /**
     * Whether or not the view is in creationMode.
@@ -54,16 +52,13 @@ object LViewFlags {
     * back into the parent view, `data` will be defined and `creationMode` will be
     * improperly reported as false.
     */
-  @scala.inline
-  def CreationMode: `4` = 4.asInstanceOf[`4`]
+  inline def CreationMode: `4` = 4.asInstanceOf[`4`]
   
   /** Whether or not this view is destroyed. */
-  @scala.inline
-  def Destroyed: `256` = 256.asInstanceOf[`256`]
+  inline def Destroyed: `256` = 256.asInstanceOf[`256`]
   
   /** Whether or not this view is currently dirty (needing check) */
-  @scala.inline
-  def Dirty: `64` = 64.asInstanceOf[`64`]
+  inline def Dirty: `64` = 64.asInstanceOf[`64`]
   
   /**
     * Whether or not this LView instance is on its first processing pass.
@@ -72,31 +67,24 @@ object LViewFlags {
     * has completed one creation mode run and one update mode run. At this
     * time, the flag is turned off.
     */
-  @scala.inline
-  def FirstLViewPass: `8` = 8.asInstanceOf[`8`]
+  inline def FirstLViewPass: `8` = 8.asInstanceOf[`8`]
   
   /**
     * Index of the current init phase on last 21 bits
     */
-  @scala.inline
-  def IndexWithinInitPhaseIncrementer: `2048` = 2048.asInstanceOf[`2048`]
+  inline def IndexWithinInitPhaseIncrementer: `2048` = 2048.asInstanceOf[`2048`]
   
-  @scala.inline
-  def IndexWithinInitPhaseReset: `2047` = 2047.asInstanceOf[`2047`]
+  inline def IndexWithinInitPhaseReset: `2047` = 2047.asInstanceOf[`2047`]
   
-  @scala.inline
-  def IndexWithinInitPhaseShift: `11` = 11.asInstanceOf[`11`]
+  inline def IndexWithinInitPhaseShift: `11` = 11.asInstanceOf[`11`]
   
   /** The state of the init phase on the first 2 bits */
-  @scala.inline
-  def InitPhaseStateIncrementer: `1` = 1.asInstanceOf[`1`]
+  inline def InitPhaseStateIncrementer: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def InitPhaseStateMask: `3` = 3.asInstanceOf[`3`]
+  inline def InitPhaseStateMask: `3` = 3.asInstanceOf[`3`]
   
   /** Whether or not this view is the root view */
-  @scala.inline
-  def IsRoot: `512` = 512.asInstanceOf[`512`]
+  inline def IsRoot: `512` = 512.asInstanceOf[`512`]
   
   /**
     * Whether or not manual change detection is turned on for onPush components.
@@ -113,13 +101,11 @@ object LViewFlags {
     *
     * TODO: Add a public API to ChangeDetectionStrategy to turn this mode on
     */
-  @scala.inline
-  def ManualOnPush: `32` = 32.asInstanceOf[`32`]
+  inline def ManualOnPush: `32` = 32.asInstanceOf[`32`]
   
   /**
     * Whether this moved LView was needs to be refreshed at the insertion location because the
     * declaration was dirty.
     */
-  @scala.inline
-  def RefreshTransplantedView: `1024` = 1024.asInstanceOf[`1024`]
+  inline def RefreshTransplantedView: `1024` = 1024.asInstanceOf[`1024`]
 }

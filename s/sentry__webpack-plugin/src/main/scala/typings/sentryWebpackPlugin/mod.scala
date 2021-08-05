@@ -63,143 +63,98 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(include: String | js.Array[String]): Options = {
+    inline def apply(include: String | js.Array[String]): Options = {
       val __obj = js.Dynamic.literal(include = include.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
+      inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
       
-      @scala.inline
-      def setEntries(value: js.Array[js.Any] | RegExp | EntriesFunction): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[js.Any] | RegExp | EntriesFunction): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesFunction1(value: /* key */ String => Boolean): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
+      inline def setEntriesFunction1(value: /* key */ String => Boolean): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+      inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      @scala.inline
-      def setEntriesVarargs(value: js.Any*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: js.Any*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
-      @scala.inline
-      def setErrorHandler(value: (/* err */ Error, /* invokeErr */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+      inline def setErrorHandler(value: (/* err */ Error, /* invokeErr */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setExt(value: js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
+      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreFile(value: String): Self = StObject.set(x, "ignoreFile", value.asInstanceOf[js.Any])
+      inline def setIgnoreFile(value: String): Self = StObject.set(x, "ignoreFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreFileUndefined: Self = StObject.set(x, "ignoreFile", js.undefined)
+      inline def setIgnoreFileUndefined: Self = StObject.set(x, "ignoreFile", js.undefined)
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
       
-      @scala.inline
-      def setRewrite(value: Boolean): Self = StObject.set(x, "rewrite", value.asInstanceOf[js.Any])
+      inline def setRewrite(value: Boolean): Self = StObject.set(x, "rewrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
+      inline def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
       
-      @scala.inline
-      def setSetCommits(value: SetCommitsOptions): Self = StObject.set(x, "setCommits", value.asInstanceOf[js.Any])
+      inline def setSetCommits(value: SetCommitsOptions): Self = StObject.set(x, "setCommits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetCommitsUndefined: Self = StObject.set(x, "setCommits", js.undefined)
+      inline def setSetCommitsUndefined: Self = StObject.set(x, "setCommits", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setSourceMapReference(value: Boolean): Self = StObject.set(x, "sourceMapReference", value.asInstanceOf[js.Any])
+      inline def setSourceMapReference(value: Boolean): Self = StObject.set(x, "sourceMapReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapReferenceUndefined: Self = StObject.set(x, "sourceMapReference", js.undefined)
+      inline def setSourceMapReferenceUndefined: Self = StObject.set(x, "sourceMapReference", js.undefined)
       
-      @scala.inline
-      def setStripCommonPrefix(value: Boolean): Self = StObject.set(x, "stripCommonPrefix", value.asInstanceOf[js.Any])
+      inline def setStripCommonPrefix(value: Boolean): Self = StObject.set(x, "stripCommonPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripCommonPrefixUndefined: Self = StObject.set(x, "stripCommonPrefix", js.undefined)
+      inline def setStripCommonPrefixUndefined: Self = StObject.set(x, "stripCommonPrefix", js.undefined)
       
-      @scala.inline
-      def setStripPrefix(value: js.Array[js.Any]): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
+      inline def setStripPrefix(value: js.Array[js.Any]): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripPrefixUndefined: Self = StObject.set(x, "stripPrefix", js.undefined)
+      inline def setStripPrefixUndefined: Self = StObject.set(x, "stripPrefix", js.undefined)
       
-      @scala.inline
-      def setStripPrefixVarargs(value: js.Any*): Self = StObject.set(x, "stripPrefix", js.Array(value :_*))
+      inline def setStripPrefixVarargs(value: js.Any*): Self = StObject.set(x, "stripPrefix", js.Array(value :_*))
       
-      @scala.inline
-      def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
+      inline def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlPrefixUndefined: Self = StObject.set(x, "urlPrefix", js.undefined)
+      inline def setUrlPrefixUndefined: Self = StObject.set(x, "urlPrefix", js.undefined)
       
-      @scala.inline
-      def setUrlSuffix(value: String): Self = StObject.set(x, "urlSuffix", value.asInstanceOf[js.Any])
+      inline def setUrlSuffix(value: String): Self = StObject.set(x, "urlSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlSuffixUndefined: Self = StObject.set(x, "urlSuffix", js.undefined)
+      inline def setUrlSuffixUndefined: Self = StObject.set(x, "urlSuffix", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -217,35 +172,26 @@ object mod {
   }
   object SetCommitsOptions {
     
-    @scala.inline
-    def apply(repo: String): SetCommitsOptions = {
+    inline def apply(repo: String): SetCommitsOptions = {
       val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetCommitsOptions]
     }
     
-    @scala.inline
-    implicit class SetCommitsOptionsMutableBuilder[Self <: SetCommitsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetCommitsOptions](x: Self) {
       
-      @scala.inline
-      def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+      inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
       
-      @scala.inline
-      def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+      inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
       
-      @scala.inline
-      def setPreviousCommit(value: String): Self = StObject.set(x, "previousCommit", value.asInstanceOf[js.Any])
+      inline def setPreviousCommit(value: String): Self = StObject.set(x, "previousCommit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousCommitUndefined: Self = StObject.set(x, "previousCommit", js.undefined)
+      inline def setPreviousCommitUndefined: Self = StObject.set(x, "previousCommit", js.undefined)
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Error")
 @js.native
-class Error protected ()
+/* private */ class Error ()
   extends StObject
      with typings.activexExcel.Excel.Error {
   
@@ -17,7 +17,7 @@ class Error protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Error_typekey")
   var ExcelDotError_typekey: typings.activexExcel.Excel.Error = js.native
   

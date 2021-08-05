@@ -18,22 +18,17 @@ trait ExportClientVpnClientConfigurationRequest extends StObject {
 }
 object ExportClientVpnClientConfigurationRequest {
   
-  @scala.inline
-  def apply(ClientVpnEndpointId: ClientVpnEndpointId): ExportClientVpnClientConfigurationRequest = {
+  inline def apply(ClientVpnEndpointId: ClientVpnEndpointId): ExportClientVpnClientConfigurationRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportClientVpnClientConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class ExportClientVpnClientConfigurationRequestMutableBuilder[Self <: ExportClientVpnClientConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportClientVpnClientConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

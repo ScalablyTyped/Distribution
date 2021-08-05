@@ -10,8 +10,7 @@ trait ListResourceTagsOutput
      with typings.awsSdkClientKmsNode.typesListResourceTagsOutputMod.ListResourceTagsOutput
 object ListResourceTagsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListResourceTagsOutput = {
+  inline def apply($metadata: ResponseMetadata): ListResourceTagsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceTagsOutput]
   }

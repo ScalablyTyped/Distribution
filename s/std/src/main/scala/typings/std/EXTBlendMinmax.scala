@@ -12,19 +12,15 @@ trait EXTBlendMinmax extends StObject {
 }
 object EXTBlendMinmax {
   
-  @scala.inline
-  def apply(MAX_EXT: GLenum, MIN_EXT: GLenum): EXTBlendMinmax = {
+  inline def apply(MAX_EXT: GLenum, MIN_EXT: GLenum): EXTBlendMinmax = {
     val __obj = js.Dynamic.literal(MAX_EXT = MAX_EXT.asInstanceOf[js.Any], MIN_EXT = MIN_EXT.asInstanceOf[js.Any])
     __obj.asInstanceOf[EXTBlendMinmax]
   }
   
-  @scala.inline
-  implicit class EXTBlendMinmaxMutableBuilder[Self <: EXTBlendMinmax] (val x: Self) extends AnyVal {
+  extension [Self <: EXTBlendMinmax](x: Self) {
     
-    @scala.inline
-    def setMAX_EXT(value: GLenum): Self = StObject.set(x, "MAX_EXT", value.asInstanceOf[js.Any])
+    inline def setMAX_EXT(value: GLenum): Self = StObject.set(x, "MAX_EXT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMIN_EXT(value: GLenum): Self = StObject.set(x, "MIN_EXT", value.asInstanceOf[js.Any])
+    inline def setMIN_EXT(value: GLenum): Self = StObject.set(x, "MIN_EXT", value.asInstanceOf[js.Any])
   }
 }

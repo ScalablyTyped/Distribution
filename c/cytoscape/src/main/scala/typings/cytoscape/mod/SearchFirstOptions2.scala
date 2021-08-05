@@ -16,16 +16,13 @@ trait SearchFirstOptions2
 }
 object SearchFirstOptions2 {
   
-  @scala.inline
-  def apply(roots: Selector | CollectionArgument): SearchFirstOptions2 = {
+  inline def apply(roots: Selector | CollectionArgument): SearchFirstOptions2 = {
     val __obj = js.Dynamic.literal(roots = roots.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFirstOptions2]
   }
   
-  @scala.inline
-  implicit class SearchFirstOptions2MutableBuilder[Self <: SearchFirstOptions2] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFirstOptions2](x: Self) {
     
-    @scala.inline
-    def setRoots(value: Selector | CollectionArgument): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
+    inline def setRoots(value: Selector | CollectionArgument): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
   }
 }

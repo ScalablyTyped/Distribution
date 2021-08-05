@@ -18,25 +18,19 @@ trait StackInstanceFilter extends StObject {
 }
 object StackInstanceFilter {
   
-  @scala.inline
-  def apply(): StackInstanceFilter = {
+  inline def apply(): StackInstanceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackInstanceFilter]
   }
   
-  @scala.inline
-  implicit class StackInstanceFilterMutableBuilder[Self <: StackInstanceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: StackInstanceFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: StackInstanceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StackInstanceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValues(value: StackInstanceFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StackInstanceFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
   }
 }

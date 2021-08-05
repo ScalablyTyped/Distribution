@@ -13,19 +13,15 @@ trait Monitoring extends StObject {
 }
 object Monitoring {
   
-  @scala.inline
-  def apply(): Monitoring = {
+  inline def apply(): Monitoring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Monitoring]
   }
   
-  @scala.inline
-  implicit class MonitoringMutableBuilder[Self <: Monitoring] (val x: Self) extends AnyVal {
+  extension [Self <: Monitoring](x: Self) {
     
-    @scala.inline
-    def setState(value: MonitoringState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: MonitoringState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

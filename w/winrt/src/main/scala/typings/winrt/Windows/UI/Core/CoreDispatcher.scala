@@ -10,8 +10,7 @@ trait CoreDispatcher
      with ICoreDispatcher
 object CoreDispatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasThreadAccess: Boolean,
     onacceleratorkeyactivated: js.Any,
     processEvents: CoreProcessEventsOption => Unit,

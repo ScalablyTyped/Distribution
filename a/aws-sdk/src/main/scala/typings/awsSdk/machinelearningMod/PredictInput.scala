@@ -17,22 +17,17 @@ trait PredictInput extends StObject {
 }
 object PredictInput {
   
-  @scala.inline
-  def apply(MLModelId: EntityId, PredictEndpoint: VipURL, Record: Record): PredictInput = {
+  inline def apply(MLModelId: EntityId, PredictEndpoint: VipURL, Record: Record): PredictInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any], PredictEndpoint = PredictEndpoint.asInstanceOf[js.Any], Record = Record.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredictInput]
   }
   
-  @scala.inline
-  implicit class PredictInputMutableBuilder[Self <: PredictInput] (val x: Self) extends AnyVal {
+  extension [Self <: PredictInput](x: Self) {
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictEndpoint(value: VipURL): Self = StObject.set(x, "PredictEndpoint", value.asInstanceOf[js.Any])
+    inline def setPredictEndpoint(value: VipURL): Self = StObject.set(x, "PredictEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecord(value: Record): Self = StObject.set(x, "Record", value.asInstanceOf[js.Any])
+    inline def setRecord(value: Record): Self = StObject.set(x, "Record", value.asInstanceOf[js.Any])
   }
 }

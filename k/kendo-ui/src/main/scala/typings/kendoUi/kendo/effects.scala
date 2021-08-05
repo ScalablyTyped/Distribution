@@ -22,8 +22,7 @@ object effects {
   }
   object Effect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       duration: Double => Effect,
       play: () => JQueryPromise[js.Any],
@@ -34,23 +33,17 @@ object effects {
       __obj.asInstanceOf[Effect]
     }
     
-    @scala.inline
-    implicit class EffectMutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
+    extension [Self <: Effect](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Effect => Effect): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Effect => Effect): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDuration(value: Double => Effect): Self = StObject.set(x, "duration", js.Any.fromFunction1(value))
+      inline def setDuration(value: Double => Effect): Self = StObject.set(x, "duration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlay(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+      inline def setPlay(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReverse(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      inline def setReverse(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Effect): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Effect): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -110,8 +103,7 @@ object effects {
   }
   object Element {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expand: String => Expand,
       expandHorizontal: () => Expand,
       expandVertical: () => Expand,
@@ -143,86 +135,59 @@ object effects {
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setExpand(value: String => Expand): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+      inline def setExpand(value: String => Expand): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpandHorizontal(value: () => Expand): Self = StObject.set(x, "expandHorizontal", js.Any.fromFunction0(value))
+      inline def setExpandHorizontal(value: () => Expand): Self = StObject.set(x, "expandHorizontal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExpandVertical(value: () => Expand): Self = StObject.set(x, "expandVertical", js.Any.fromFunction0(value))
+      inline def setExpandVertical(value: () => Expand): Self = StObject.set(x, "expandVertical", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFade(value: String => Fade): Self = StObject.set(x, "fade", js.Any.fromFunction1(value))
+      inline def setFade(value: String => Fade): Self = StObject.set(x, "fade", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeIn(value: () => Fade): Self = StObject.set(x, "fadeIn", js.Any.fromFunction0(value))
+      inline def setFadeIn(value: () => Fade): Self = StObject.set(x, "fadeIn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFadeOut(value: () => Fade): Self = StObject.set(x, "fadeOut", js.Any.fromFunction0(value))
+      inline def setFadeOut(value: () => Fade): Self = StObject.set(x, "fadeOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFlip(value: (String, JQuery, JQuery) => Flip): Self = StObject.set(x, "flip", js.Any.fromFunction3(value))
+      inline def setFlip(value: (String, JQuery, JQuery) => Flip): Self = StObject.set(x, "flip", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFlipHorizontal(value: (JQuery, JQuery) => Flip): Self = StObject.set(x, "flipHorizontal", js.Any.fromFunction2(value))
+      inline def setFlipHorizontal(value: (JQuery, JQuery) => Flip): Self = StObject.set(x, "flipHorizontal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFlipVertical(value: (JQuery, JQuery) => Flip): Self = StObject.set(x, "flipVertical", js.Any.fromFunction2(value))
+      inline def setFlipVertical(value: (JQuery, JQuery) => Flip): Self = StObject.set(x, "flipVertical", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPageturn(value: (String, JQuery, JQuery) => PageTurn): Self = StObject.set(x, "pageturn", js.Any.fromFunction3(value))
+      inline def setPageturn(value: (String, JQuery, JQuery) => PageTurn): Self = StObject.set(x, "pageturn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPageturnHorizontal(value: (JQuery, JQuery) => PageTurn): Self = StObject.set(x, "pageturnHorizontal", js.Any.fromFunction2(value))
+      inline def setPageturnHorizontal(value: (JQuery, JQuery) => PageTurn): Self = StObject.set(x, "pageturnHorizontal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPageturnVertical(value: (JQuery, JQuery) => PageTurn): Self = StObject.set(x, "pageturnVertical", js.Any.fromFunction2(value))
+      inline def setPageturnVertical(value: (JQuery, JQuery) => PageTurn): Self = StObject.set(x, "pageturnVertical", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSlideIn(value: String => SlideIn): Self = StObject.set(x, "slideIn", js.Any.fromFunction1(value))
+      inline def setSlideIn(value: String => SlideIn): Self = StObject.set(x, "slideIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideInDown(value: () => SlideIn): Self = StObject.set(x, "slideInDown", js.Any.fromFunction0(value))
+      inline def setSlideInDown(value: () => SlideIn): Self = StObject.set(x, "slideInDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlideInLeft(value: () => SlideIn): Self = StObject.set(x, "slideInLeft", js.Any.fromFunction0(value))
+      inline def setSlideInLeft(value: () => SlideIn): Self = StObject.set(x, "slideInLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlideInRight(value: () => SlideIn): Self = StObject.set(x, "slideInRight", js.Any.fromFunction0(value))
+      inline def setSlideInRight(value: () => SlideIn): Self = StObject.set(x, "slideInRight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlideInUp(value: () => SlideIn): Self = StObject.set(x, "slideInUp", js.Any.fromFunction0(value))
+      inline def setSlideInUp(value: () => SlideIn): Self = StObject.set(x, "slideInUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTile(value: (String, JQuery) => Tile): Self = StObject.set(x, "tile", js.Any.fromFunction2(value))
+      inline def setTile(value: (String, JQuery) => Tile): Self = StObject.set(x, "tile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTileDown(value: JQuery => Tile): Self = StObject.set(x, "tileDown", js.Any.fromFunction1(value))
+      inline def setTileDown(value: JQuery => Tile): Self = StObject.set(x, "tileDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTileLeft(value: JQuery => Tile): Self = StObject.set(x, "tileLeft", js.Any.fromFunction1(value))
+      inline def setTileLeft(value: JQuery => Tile): Self = StObject.set(x, "tileLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTileRight(value: JQuery => Tile): Self = StObject.set(x, "tileRight", js.Any.fromFunction1(value))
+      inline def setTileRight(value: JQuery => Tile): Self = StObject.set(x, "tileRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTileUp(value: JQuery => Tile): Self = StObject.set(x, "tileUp", js.Any.fromFunction1(value))
+      inline def setTileUp(value: JQuery => Tile): Self = StObject.set(x, "tileUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransfer(value: JQuery => Transfer): Self = StObject.set(x, "transfer", js.Any.fromFunction1(value))
+      inline def setTransfer(value: JQuery => Transfer): Self = StObject.set(x, "transfer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoom(value: String => Zoom): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
+      inline def setZoom(value: String => Zoom): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomIn(value: () => Zoom): Self = StObject.set(x, "zoomIn", js.Any.fromFunction0(value))
+      inline def setZoomIn(value: () => Zoom): Self = StObject.set(x, "zoomIn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoomOut(value: () => Zoom): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
+      inline def setZoomOut(value: () => Zoom): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
     }
   }
   
@@ -234,8 +199,7 @@ object effects {
   }
   object Expand {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       direction: String => Expand,
       duration: Double => Effect,
@@ -247,11 +211,9 @@ object effects {
       __obj.asInstanceOf[Expand]
     }
     
-    @scala.inline
-    implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
+    extension [Self <: Expand](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String => Expand): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
+      inline def setDirection(value: String => Expand): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
   }
   
@@ -267,8 +229,7 @@ object effects {
   }
   object Fade {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       direction: String => Fade,
       duration: Double => Effect,
@@ -282,17 +243,13 @@ object effects {
       __obj.asInstanceOf[Fade]
     }
     
-    @scala.inline
-    implicit class FadeMutableBuilder[Self <: Fade] (val x: Self) extends AnyVal {
+    extension [Self <: Fade](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String => Fade): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
+      inline def setDirection(value: String => Fade): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndValue(value: Double => Fade): Self = StObject.set(x, "endValue", js.Any.fromFunction1(value))
+      inline def setEndValue(value: Double => Fade): Self = StObject.set(x, "endValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartValue(value: Double => Fade): Self = StObject.set(x, "startValue", js.Any.fromFunction1(value))
+      inline def setStartValue(value: Double => Fade): Self = StObject.set(x, "startValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -304,8 +261,7 @@ object effects {
   }
   object Flip {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       direction: String => Flip,
       duration: Double => Effect,
@@ -317,11 +273,9 @@ object effects {
       __obj.asInstanceOf[Flip]
     }
     
-    @scala.inline
-    implicit class FlipMutableBuilder[Self <: Flip] (val x: Self) extends AnyVal {
+    extension [Self <: Flip](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String => Flip): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
+      inline def setDirection(value: String => Flip): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
   }
   
@@ -333,8 +287,7 @@ object effects {
   }
   object PageTurn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       direction: String => PageTurn,
       duration: Double => Effect,
@@ -346,11 +299,9 @@ object effects {
       __obj.asInstanceOf[PageTurn]
     }
     
-    @scala.inline
-    implicit class PageTurnMutableBuilder[Self <: PageTurn] (val x: Self) extends AnyVal {
+    extension [Self <: PageTurn](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String => PageTurn): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
+      inline def setDirection(value: String => PageTurn): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
   }
   
@@ -362,8 +313,7 @@ object effects {
   }
   object SlideIn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       direction: String => SlideIn,
       duration: Double => Effect,
@@ -375,11 +325,9 @@ object effects {
       __obj.asInstanceOf[SlideIn]
     }
     
-    @scala.inline
-    implicit class SlideInMutableBuilder[Self <: SlideIn] (val x: Self) extends AnyVal {
+    extension [Self <: SlideIn](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String => SlideIn): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
+      inline def setDirection(value: String => SlideIn): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
   }
   
@@ -391,8 +339,7 @@ object effects {
   }
   object Tile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       direction: String => Tile,
       duration: Double => Effect,
@@ -404,11 +351,9 @@ object effects {
       __obj.asInstanceOf[Tile]
     }
     
-    @scala.inline
-    implicit class TileMutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
+    extension [Self <: Tile](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String => Tile): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
+      inline def setDirection(value: String => Tile): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     }
   }
   
@@ -417,8 +362,7 @@ object effects {
        with Effect
   object Transfer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       duration: Double => Effect,
       play: () => JQueryPromise[js.Any],
@@ -442,8 +386,7 @@ object effects {
   }
   object Zoom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Effect => Effect,
       direction: String => Zoom,
       duration: Double => Effect,
@@ -457,17 +400,13 @@ object effects {
       __obj.asInstanceOf[Zoom]
     }
     
-    @scala.inline
-    implicit class ZoomMutableBuilder[Self <: Zoom] (val x: Self) extends AnyVal {
+    extension [Self <: Zoom](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String => Zoom): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
+      inline def setDirection(value: String => Zoom): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndValue(value: Double => Zoom): Self = StObject.set(x, "endValue", js.Any.fromFunction1(value))
+      inline def setEndValue(value: Double => Zoom): Self = StObject.set(x, "endValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartValue(value: Double => Zoom): Self = StObject.set(x, "startValue", js.Any.fromFunction1(value))
+      inline def setStartValue(value: Double => Zoom): Self = StObject.set(x, "startValue", js.Any.fromFunction1(value))
     }
   }
 }

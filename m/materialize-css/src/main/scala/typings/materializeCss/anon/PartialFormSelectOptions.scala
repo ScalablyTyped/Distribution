@@ -13,25 +13,19 @@ trait PartialFormSelectOptions extends StObject {
 }
 object PartialFormSelectOptions {
   
-  @scala.inline
-  def apply(): PartialFormSelectOptions = {
+  inline def apply(): PartialFormSelectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFormSelectOptions]
   }
   
-  @scala.inline
-  implicit class PartialFormSelectOptionsMutableBuilder[Self <: PartialFormSelectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFormSelectOptions](x: Self) {
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setDropdownOptions(value: PartialDropdownOptions): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
+    inline def setDropdownOptions(value: PartialDropdownOptions): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownOptionsUndefined: Self = StObject.set(x, "dropdownOptions", js.undefined)
+    inline def setDropdownOptionsUndefined: Self = StObject.set(x, "dropdownOptions", js.undefined)
   }
 }

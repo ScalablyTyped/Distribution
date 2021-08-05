@@ -63,6 +63,6 @@ object invokeMod {
     /**
       * Listener, represent function's name.
       */
-    var listener: js.Any = js.native
+    /* private */ var listener: js.Any = js.native
   }
 }

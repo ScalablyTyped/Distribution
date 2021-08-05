@@ -10,19 +10,15 @@ trait AcceptDirectConnectGatewayAssociationProposalResult extends StObject {
 }
 object AcceptDirectConnectGatewayAssociationProposalResult {
   
-  @scala.inline
-  def apply(): AcceptDirectConnectGatewayAssociationProposalResult = {
+  inline def apply(): AcceptDirectConnectGatewayAssociationProposalResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcceptDirectConnectGatewayAssociationProposalResult]
   }
   
-  @scala.inline
-  implicit class AcceptDirectConnectGatewayAssociationProposalResultMutableBuilder[Self <: AcceptDirectConnectGatewayAssociationProposalResult] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptDirectConnectGatewayAssociationProposalResult](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGatewayAssociation(value: DirectConnectGatewayAssociation): Self = StObject.set(x, "directConnectGatewayAssociation", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayAssociation(value: DirectConnectGatewayAssociation): Self = StObject.set(x, "directConnectGatewayAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayAssociationUndefined: Self = StObject.set(x, "directConnectGatewayAssociation", js.undefined)
+    inline def setDirectConnectGatewayAssociationUndefined: Self = StObject.set(x, "directConnectGatewayAssociation", js.undefined)
   }
 }

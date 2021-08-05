@@ -23,8 +23,7 @@ trait ASPxClientMassIndex
 }
 object ASPxClientMassIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     movingAveragePointsCount: Double,
@@ -37,13 +36,10 @@ object ASPxClientMassIndex {
     __obj.asInstanceOf[ASPxClientMassIndex]
   }
   
-  @scala.inline
-  implicit class ASPxClientMassIndexMutableBuilder[Self <: ASPxClientMassIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMassIndex](x: Self) {
     
-    @scala.inline
-    def setMovingAveragePointsCount(value: Double): Self = StObject.set(x, "movingAveragePointsCount", value.asInstanceOf[js.Any])
+    inline def setMovingAveragePointsCount(value: Double): Self = StObject.set(x, "movingAveragePointsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumPointsCount(value: Double): Self = StObject.set(x, "sumPointsCount", value.asInstanceOf[js.Any])
+    inline def setSumPointsCount(value: Double): Self = StObject.set(x, "sumPointsCount", value.asInstanceOf[js.Any])
   }
 }

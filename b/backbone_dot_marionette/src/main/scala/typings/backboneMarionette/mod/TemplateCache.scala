@@ -141,8 +141,7 @@ object TemplateCache {
     * from the DOM the next time it is retrieved.
     * @param  the templateId used for loading / caching of the templates to clear. If none specified, all templates will be cleared from the cache.
     */
-  @scala.inline
-  def clear(templateId: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(templateId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(templateId: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(templateId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * To use the TemplateCache, call the get method on TemplateCache
@@ -150,8 +149,6 @@ object TemplateCache {
     * created and stored but you do not have to manually create these
     * instances yourself. get will return a compiled template function.
     */
-  @scala.inline
-  def get(templateId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(templateId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def get(templateId: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(templateId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(templateId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(templateId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(templateId: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(templateId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

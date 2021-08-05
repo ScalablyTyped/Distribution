@@ -13,19 +13,15 @@ trait GetRoomRequest extends StObject {
 }
 object GetRoomRequest {
   
-  @scala.inline
-  def apply(): GetRoomRequest = {
+  inline def apply(): GetRoomRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRoomRequest]
   }
   
-  @scala.inline
-  implicit class GetRoomRequestMutableBuilder[Self <: GetRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRoomRequest](x: Self) {
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
   }
 }

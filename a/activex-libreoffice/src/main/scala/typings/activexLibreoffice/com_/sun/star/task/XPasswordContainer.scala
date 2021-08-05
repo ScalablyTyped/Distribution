@@ -73,8 +73,7 @@ trait XPasswordContainer
 }
 object XPasswordContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     add: (String, String, SeqEquiv[String], XInteractionHandler) => Unit,
     addPersistent: (String, String, SeqEquiv[String], XInteractionHandler) => Unit,
@@ -91,31 +90,22 @@ object XPasswordContainer {
     __obj.asInstanceOf[XPasswordContainer]
   }
   
-  @scala.inline
-  implicit class XPasswordContainerMutableBuilder[Self <: XPasswordContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XPasswordContainer](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, String, SeqEquiv[String], XInteractionHandler) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
+    inline def setAdd(value: (String, String, SeqEquiv[String], XInteractionHandler) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAddPersistent(value: (String, String, SeqEquiv[String], XInteractionHandler) => Unit): Self = StObject.set(x, "addPersistent", js.Any.fromFunction4(value))
+    inline def setAddPersistent(value: (String, String, SeqEquiv[String], XInteractionHandler) => Unit): Self = StObject.set(x, "addPersistent", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFind(value: (String, XInteractionHandler) => UrlRecord): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
+    inline def setFind(value: (String, XInteractionHandler) => UrlRecord): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindForName(value: (String, String, XInteractionHandler) => UrlRecord): Self = StObject.set(x, "findForName", js.Any.fromFunction3(value))
+    inline def setFindForName(value: (String, String, XInteractionHandler) => UrlRecord): Self = StObject.set(x, "findForName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAllPersistent(value: XInteractionHandler => SafeArray[UrlRecord]): Self = StObject.set(x, "getAllPersistent", js.Any.fromFunction1(value))
+    inline def setGetAllPersistent(value: XInteractionHandler => SafeArray[UrlRecord]): Self = StObject.set(x, "getAllPersistent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+    inline def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveAllPersistent(value: () => Unit): Self = StObject.set(x, "removeAllPersistent", js.Any.fromFunction0(value))
+    inline def setRemoveAllPersistent(value: () => Unit): Self = StObject.set(x, "removeAllPersistent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemovePersistent(value: (String, String) => Unit): Self = StObject.set(x, "removePersistent", js.Any.fromFunction2(value))
+    inline def setRemovePersistent(value: (String, String) => Unit): Self = StObject.set(x, "removePersistent", js.Any.fromFunction2(value))
   }
 }

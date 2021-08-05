@@ -14,31 +14,23 @@ trait MediaId extends StObject {
 }
 object MediaId {
   
-  @scala.inline
-  def apply(): MediaId = {
+  inline def apply(): MediaId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaId]
   }
   
-  @scala.inline
-  implicit class MediaIdMutableBuilder[Self <: MediaId] (val x: Self) extends AnyVal {
+  extension [Self <: MediaId](x: Self) {
     
-    @scala.inline
-    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
+    inline def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaIdUndefined: Self = StObject.set(x, "mediaId", js.undefined)
+    inline def setMediaIdUndefined: Self = StObject.set(x, "mediaId", js.undefined)
     
-    @scala.inline
-    def setTargetPostsAuthorId(value: String): Self = StObject.set(x, "targetPostsAuthorId", value.asInstanceOf[js.Any])
+    inline def setTargetPostsAuthorId(value: String): Self = StObject.set(x, "targetPostsAuthorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPostsAuthorIdUndefined: Self = StObject.set(x, "targetPostsAuthorId", js.undefined)
+    inline def setTargetPostsAuthorIdUndefined: Self = StObject.set(x, "targetPostsAuthorId", js.undefined)
     
-    @scala.inline
-    def setTargetReelAuthorId(value: String): Self = StObject.set(x, "targetReelAuthorId", value.asInstanceOf[js.Any])
+    inline def setTargetReelAuthorId(value: String): Self = StObject.set(x, "targetReelAuthorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetReelAuthorIdUndefined: Self = StObject.set(x, "targetReelAuthorId", js.undefined)
+    inline def setTargetReelAuthorIdUndefined: Self = StObject.set(x, "targetReelAuthorId", js.undefined)
   }
 }

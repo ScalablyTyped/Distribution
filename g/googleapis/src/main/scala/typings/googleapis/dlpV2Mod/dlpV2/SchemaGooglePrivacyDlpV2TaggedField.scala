@@ -35,37 +35,27 @@ trait SchemaGooglePrivacyDlpV2TaggedField extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TaggedField {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TaggedField = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TaggedField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TaggedField]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TaggedFieldMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TaggedField] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TaggedField](x: Self) {
     
-    @scala.inline
-    def setCustomTag(value: String): Self = StObject.set(x, "customTag", value.asInstanceOf[js.Any])
+    inline def setCustomTag(value: String): Self = StObject.set(x, "customTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTagUndefined: Self = StObject.set(x, "customTag", js.undefined)
+    inline def setCustomTagUndefined: Self = StObject.set(x, "customTag", js.undefined)
     
-    @scala.inline
-    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setInferred(value: SchemaGoogleProtobufEmpty): Self = StObject.set(x, "inferred", value.asInstanceOf[js.Any])
+    inline def setInferred(value: SchemaGoogleProtobufEmpty): Self = StObject.set(x, "inferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferredUndefined: Self = StObject.set(x, "inferred", js.undefined)
+    inline def setInferredUndefined: Self = StObject.set(x, "inferred", js.undefined)
     
-    @scala.inline
-    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
   }
 }

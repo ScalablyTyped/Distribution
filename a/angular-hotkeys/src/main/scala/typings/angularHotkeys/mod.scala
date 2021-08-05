@@ -59,8 +59,7 @@ object mod {
       }
       object Hotkey {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           callback: (Event, typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey) => Unit,
           combo: String | js.Array[String]
         ): typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey = {
@@ -68,44 +67,31 @@ object mod {
           __obj.asInstanceOf[typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey]
         }
         
-        @scala.inline
-        implicit class HotkeyMutableBuilder[Self <: typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey](x: Self) {
           
-          @scala.inline
-          def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+          inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+          inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
           
-          @scala.inline
-          def setAllowIn(value: js.Array[INPUT | SELECT | TEXTAREA]): Self = StObject.set(x, "allowIn", value.asInstanceOf[js.Any])
+          inline def setAllowIn(value: js.Array[INPUT | SELECT | TEXTAREA]): Self = StObject.set(x, "allowIn", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAllowInUndefined: Self = StObject.set(x, "allowIn", js.undefined)
+          inline def setAllowInUndefined: Self = StObject.set(x, "allowIn", js.undefined)
           
-          @scala.inline
-          def setAllowInVarargs(value: (INPUT | SELECT | TEXTAREA)*): Self = StObject.set(x, "allowIn", js.Array(value :_*))
+          inline def setAllowInVarargs(value: (INPUT | SELECT | TEXTAREA)*): Self = StObject.set(x, "allowIn", js.Array(value :_*))
           
-          @scala.inline
-          def setCallback(value: (Event, typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+          inline def setCallback(value: (Event, typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setCombo(value: String | js.Array[String]): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
+          inline def setCombo(value: String | js.Array[String]): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setComboVarargs(value: String*): Self = StObject.set(x, "combo", js.Array(value :_*))
+          inline def setComboVarargs(value: String*): Self = StObject.set(x, "combo", js.Array(value :_*))
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+          inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+          inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
         }
       }
       

@@ -20,8 +20,7 @@ trait KmlPlacemark
 }
 object KmlPlacemark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -74,13 +73,10 @@ object KmlPlacemark {
     __obj.asInstanceOf[KmlPlacemark]
   }
   
-  @scala.inline
-  implicit class KmlPlacemarkMutableBuilder[Self <: KmlPlacemark] (val x: Self) extends AnyVal {
+  extension [Self <: KmlPlacemark](x: Self) {
     
-    @scala.inline
-    def setGetGeometry(value: () => KmlGeometry): Self = StObject.set(x, "getGeometry", js.Any.fromFunction0(value))
+    inline def setGetGeometry(value: () => KmlGeometry): Self = StObject.set(x, "getGeometry", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetGeometry(value: KmlGeometry => Unit): Self = StObject.set(x, "setGeometry", js.Any.fromFunction1(value))
+    inline def setSetGeometry(value: KmlGeometry => Unit): Self = StObject.set(x, "setGeometry", js.Any.fromFunction1(value))
   }
 }

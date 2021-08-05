@@ -32,61 +32,43 @@ trait TransmissionOptions extends StObject {
 }
 object TransmissionOptions {
   
-  @scala.inline
-  def apply(): TransmissionOptions = {
+  inline def apply(): TransmissionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransmissionOptions]
   }
   
-  @scala.inline
-  implicit class TransmissionOptionsMutableBuilder[Self <: TransmissionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransmissionOptions](x: Self) {
     
-    @scala.inline
-    def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
+    inline def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick_trackingUndefined: Self = StObject.set(x, "click_tracking", js.undefined)
+    inline def setClick_trackingUndefined: Self = StObject.set(x, "click_tracking", js.undefined)
     
-    @scala.inline
-    def setInline_css(value: Boolean): Self = StObject.set(x, "inline_css", value.asInstanceOf[js.Any])
+    inline def setInline_css(value: Boolean): Self = StObject.set(x, "inline_css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInline_cssUndefined: Self = StObject.set(x, "inline_css", js.undefined)
+    inline def setInline_cssUndefined: Self = StObject.set(x, "inline_css", js.undefined)
     
-    @scala.inline
-    def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
+    inline def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
+    inline def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
     
-    @scala.inline
-    def setOpen_tracking(value: Boolean): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
+    inline def setOpen_tracking(value: Boolean): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen_trackingUndefined: Self = StObject.set(x, "open_tracking", js.undefined)
+    inline def setOpen_trackingUndefined: Self = StObject.set(x, "open_tracking", js.undefined)
     
-    @scala.inline
-    def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
-    @scala.inline
-    def setSkip_suppression(value: Boolean): Self = StObject.set(x, "skip_suppression", value.asInstanceOf[js.Any])
+    inline def setSkip_suppression(value: Boolean): Self = StObject.set(x, "skip_suppression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip_suppressionUndefined: Self = StObject.set(x, "skip_suppression", js.undefined)
+    inline def setSkip_suppressionUndefined: Self = StObject.set(x, "skip_suppression", js.undefined)
     
-    @scala.inline
-    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
+    inline def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
     
-    @scala.inline
-    def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
+    inline def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
+    inline def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
   }
 }

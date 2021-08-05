@@ -29,29 +29,22 @@ trait DrillupEventObject extends StObject {
 }
 object DrillupEventObject {
   
-  @scala.inline
-  def apply(preventDefault: js.Function, target: Chart_): DrillupEventObject = {
+  inline def apply(preventDefault: js.Function, target: Chart_): DrillupEventObject = {
     val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("drillup")
     __obj.asInstanceOf[DrillupEventObject]
   }
   
-  @scala.inline
-  implicit class DrillupEventObjectMutableBuilder[Self <: DrillupEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: DrillupEventObject](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOptions(value: SeriesOptionsType): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesOptions(value: SeriesOptionsType): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
+    inline def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: drillup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: drillup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

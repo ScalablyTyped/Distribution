@@ -5,14 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def MKColor: typings.reactNativeMaterialKit.mod.MKColorStatic = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MKColor").asInstanceOf[typings.reactNativeMaterialKit.mod.MKColorStatic]
+inline def MKColor: typings.reactNativeMaterialKit.mod.MKColorStatic = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MKColor").asInstanceOf[typings.reactNativeMaterialKit.mod.MKColorStatic]
 
-@scala.inline
-def getTheme(): typings.reactNativeMaterialKit.mod.ThemeStatic = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[typings.reactNativeMaterialKit.mod.ThemeStatic]
+inline def getTheme(): typings.reactNativeMaterialKit.mod.ThemeStatic = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[typings.reactNativeMaterialKit.mod.ThemeStatic]
 
-@scala.inline
-def setTheme(theme: typings.reactNativeMaterialKit.mod.ThemeStatic): scala.Unit = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setTheme(theme: typings.reactNativeMaterialKit.mod.ThemeStatic): scala.Unit = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def theme: typings.reactNativeMaterialKit.mod.ThemeStatic = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].selectDynamic("theme").asInstanceOf[typings.reactNativeMaterialKit.mod.ThemeStatic]
+inline def theme: typings.reactNativeMaterialKit.mod.ThemeStatic = typings.reactNativeMaterialKit.mod.^.asInstanceOf[js.Dynamic].selectDynamic("theme").asInstanceOf[typings.reactNativeMaterialKit.mod.ThemeStatic]

@@ -21,17 +21,14 @@ object buildErrorMod {
   }
   object BuildErrorProps {
     
-    @scala.inline
-    def apply(message: String): BuildErrorProps = {
+    inline def apply(message: String): BuildErrorProps = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildErrorProps]
     }
     
-    @scala.inline
-    implicit class BuildErrorPropsMutableBuilder[Self <: BuildErrorProps] (val x: Self) extends AnyVal {
+    extension [Self <: BuildErrorProps](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

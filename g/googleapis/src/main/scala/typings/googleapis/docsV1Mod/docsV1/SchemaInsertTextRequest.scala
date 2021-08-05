@@ -40,31 +40,23 @@ trait SchemaInsertTextRequest extends StObject {
 }
 object SchemaInsertTextRequest {
   
-  @scala.inline
-  def apply(): SchemaInsertTextRequest = {
+  inline def apply(): SchemaInsertTextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInsertTextRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInsertTextRequestMutableBuilder[Self <: SchemaInsertTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInsertTextRequest](x: Self) {
     
-    @scala.inline
-    def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+    inline def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+    inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
-    @scala.inline
-    def setLocation(value: SchemaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SchemaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

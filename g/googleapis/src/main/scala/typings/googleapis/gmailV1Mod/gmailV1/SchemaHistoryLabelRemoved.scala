@@ -15,28 +15,21 @@ trait SchemaHistoryLabelRemoved extends StObject {
 }
 object SchemaHistoryLabelRemoved {
   
-  @scala.inline
-  def apply(): SchemaHistoryLabelRemoved = {
+  inline def apply(): SchemaHistoryLabelRemoved = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistoryLabelRemoved]
   }
   
-  @scala.inline
-  implicit class SchemaHistoryLabelRemovedMutableBuilder[Self <: SchemaHistoryLabelRemoved] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistoryLabelRemoved](x: Self) {
     
-    @scala.inline
-    def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+    inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+    inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    @scala.inline
-    def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

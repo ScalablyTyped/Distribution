@@ -16,8 +16,7 @@ object tagMod {
   val ^ : js.Any = js.native
   
   // tslint:disable:unified-signatures
-  @scala.inline
-  def default(props: FCProps[ChipTagProps | FilterTagProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default(props: FCProps[ChipTagProps | FilterTagProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/Tag", "types")
   @js.native

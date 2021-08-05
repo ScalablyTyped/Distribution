@@ -21,49 +21,35 @@ trait Locale extends StObject {
 }
 object Locale {
   
-  @scala.inline
-  def apply(): Locale = {
+  inline def apply(): Locale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Locale]
   }
   
-  @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+  extension [Self <: Locale](x: Self) {
     
-    @scala.inline
-    def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
+    inline def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
     
-    @scala.inline
-    def setClose(value: ReactNode): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: ReactNode): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setLast(value: ReactNode): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: ReactNode): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setNext(value: ReactNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ReactNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setOpen(value: ReactNode): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: ReactNode): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setSkip(value: ReactNode): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: ReactNode): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
   }
 }

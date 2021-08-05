@@ -43,55 +43,39 @@ trait MetadataDroppedEventUIParam extends StObject {
 }
 object MetadataDroppedEventUIParam {
   
-  @scala.inline
-  def apply(): MetadataDroppedEventUIParam = {
+  inline def apply(): MetadataDroppedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetadataDroppedEventUIParam]
   }
   
-  @scala.inline
-  implicit class MetadataDroppedEventUIParamMutableBuilder[Self <: MetadataDroppedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataDroppedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDraggedElement(value: String): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+    inline def setDraggedElement(value: String): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
+    inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
     
-    @scala.inline
-    def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataIndex(value: Double): Self = StObject.set(x, "metadataIndex", value.asInstanceOf[js.Any])
+    inline def setMetadataIndex(value: Double): Self = StObject.set(x, "metadataIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataIndexUndefined: Self = StObject.set(x, "metadataIndex", js.undefined)
+    inline def setMetadataIndexUndefined: Self = StObject.set(x, "metadataIndex", js.undefined)
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTargetElement(value: String): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: String): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
+    inline def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
   }
 }

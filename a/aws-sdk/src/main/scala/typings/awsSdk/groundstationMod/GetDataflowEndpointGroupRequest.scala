@@ -13,16 +13,13 @@ trait GetDataflowEndpointGroupRequest extends StObject {
 }
 object GetDataflowEndpointGroupRequest {
   
-  @scala.inline
-  def apply(dataflowEndpointGroupId: String): GetDataflowEndpointGroupRequest = {
+  inline def apply(dataflowEndpointGroupId: String): GetDataflowEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(dataflowEndpointGroupId = dataflowEndpointGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataflowEndpointGroupRequest]
   }
   
-  @scala.inline
-  implicit class GetDataflowEndpointGroupRequestMutableBuilder[Self <: GetDataflowEndpointGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataflowEndpointGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDataflowEndpointGroupId(value: String): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
+    inline def setDataflowEndpointGroupId(value: String): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
   }
 }

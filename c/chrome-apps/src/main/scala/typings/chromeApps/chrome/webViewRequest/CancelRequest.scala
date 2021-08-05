@@ -11,23 +11,19 @@ trait CancelRequest
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest
 }
 object CancelRequest {
   
-  @scala.inline
-  def apply(instanceType: String): CancelRequest = {
+  inline def apply(instanceType: String): CancelRequest = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "CancelRequest")
     __obj.asInstanceOf[CancelRequest]
   }
   
-  @scala.inline
-  implicit class CancelRequestMutableBuilder[Self <: CancelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.CancelRequest): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.CancelRequest): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

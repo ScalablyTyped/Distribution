@@ -43,49 +43,35 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(Id: NonEmptyString, Type: NonEmptyString): Resource = {
+  inline def apply(Id: NonEmptyString, Type: NonEmptyString): Resource = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setDetails(value: ResourceDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: ResourceDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartition(value: Partition): Self = StObject.set(x, "Partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Partition): Self = StObject.set(x, "Partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "Partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "Partition", js.undefined)
     
-    @scala.inline
-    def setRegion(value: NonEmptyString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: NonEmptyString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setResourceRole(value: NonEmptyString): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
+    inline def setResourceRole(value: NonEmptyString): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
+    inline def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
     
-    @scala.inline
-    def setTags(value: FieldMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: FieldMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

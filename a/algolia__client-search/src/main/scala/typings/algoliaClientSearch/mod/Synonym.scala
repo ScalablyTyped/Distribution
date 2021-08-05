@@ -48,65 +48,46 @@ trait Synonym extends StObject {
 }
 object Synonym {
   
-  @scala.inline
-  def apply(objectID: String, `type`: SynonymType): Synonym = {
+  inline def apply(objectID: String, `type`: SynonymType): Synonym = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Synonym]
   }
   
-  @scala.inline
-  implicit class SynonymMutableBuilder[Self <: Synonym] (val x: Self) extends AnyVal {
+  extension [Self <: Synonym](x: Self) {
     
-    @scala.inline
-    def setCorrections(value: js.Array[String]): Self = StObject.set(x, "corrections", value.asInstanceOf[js.Any])
+    inline def setCorrections(value: js.Array[String]): Self = StObject.set(x, "corrections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectionsUndefined: Self = StObject.set(x, "corrections", js.undefined)
+    inline def setCorrectionsUndefined: Self = StObject.set(x, "corrections", js.undefined)
     
-    @scala.inline
-    def setCorrectionsVarargs(value: String*): Self = StObject.set(x, "corrections", js.Array(value :_*))
+    inline def setCorrectionsVarargs(value: String*): Self = StObject.set(x, "corrections", js.Array(value :_*))
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setReplacements(value: js.Array[String]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
+    inline def setReplacements(value: js.Array[String]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementsUndefined: Self = StObject.set(x, "replacements", js.undefined)
+    inline def setReplacementsUndefined: Self = StObject.set(x, "replacements", js.undefined)
     
-    @scala.inline
-    def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+    inline def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value :_*))
     
-    @scala.inline
-    def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
+    inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    @scala.inline
-    def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: SynonymType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SynonymType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+    inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

@@ -237,86 +237,60 @@ object mod {
   }
   object GrammarOptions {
     
-    @scala.inline
-    def apply(): GrammarOptions = {
+    inline def apply(): GrammarOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GrammarOptions]
     }
     
-    @scala.inline
-    implicit class GrammarOptionsMutableBuilder[Self <: GrammarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GrammarOptions](x: Self) {
       
-      @scala.inline
-      def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+      inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+      inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
       
-      @scala.inline
-      def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+      inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setFirstLineMatch(value: Boolean): Self = StObject.set(x, "firstLineMatch", value.asInstanceOf[js.Any])
+      inline def setFirstLineMatch(value: Boolean): Self = StObject.set(x, "firstLineMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstLineMatchUndefined: Self = StObject.set(x, "firstLineMatch", js.undefined)
+      inline def setFirstLineMatchUndefined: Self = StObject.set(x, "firstLineMatch", js.undefined)
       
-      @scala.inline
-      def setFoldingStopMarker(value: String): Self = StObject.set(x, "foldingStopMarker", value.asInstanceOf[js.Any])
+      inline def setFoldingStopMarker(value: String): Self = StObject.set(x, "foldingStopMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoldingStopMarkerUndefined: Self = StObject.set(x, "foldingStopMarker", js.undefined)
+      inline def setFoldingStopMarkerUndefined: Self = StObject.set(x, "foldingStopMarker", js.undefined)
       
-      @scala.inline
-      def setInjectionSelector(value: ScopeSelector): Self = StObject.set(x, "injectionSelector", value.asInstanceOf[js.Any])
+      inline def setInjectionSelector(value: ScopeSelector): Self = StObject.set(x, "injectionSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectionSelectorUndefined: Self = StObject.set(x, "injectionSelector", js.undefined)
+      inline def setInjectionSelectorUndefined: Self = StObject.set(x, "injectionSelector", js.undefined)
       
-      @scala.inline
-      def setInjections(value: js.Object): Self = StObject.set(x, "injections", value.asInstanceOf[js.Any])
+      inline def setInjections(value: js.Object): Self = StObject.set(x, "injections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectionsUndefined: Self = StObject.set(x, "injections", js.undefined)
+      inline def setInjectionsUndefined: Self = StObject.set(x, "injections", js.undefined)
       
-      @scala.inline
-      def setMaxLineLength(value: Double): Self = StObject.set(x, "maxLineLength", value.asInstanceOf[js.Any])
+      inline def setMaxLineLength(value: Double): Self = StObject.set(x, "maxLineLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLineLengthUndefined: Self = StObject.set(x, "maxLineLength", js.undefined)
+      inline def setMaxLineLengthUndefined: Self = StObject.set(x, "maxLineLength", js.undefined)
       
-      @scala.inline
-      def setMaxTokensPerLine(value: Double): Self = StObject.set(x, "maxTokensPerLine", value.asInstanceOf[js.Any])
+      inline def setMaxTokensPerLine(value: Double): Self = StObject.set(x, "maxTokensPerLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTokensPerLineUndefined: Self = StObject.set(x, "maxTokensPerLine", js.undefined)
+      inline def setMaxTokensPerLineUndefined: Self = StObject.set(x, "maxTokensPerLine", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPatterns(value: js.Array[js.Object]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[js.Object]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
+      inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      @scala.inline
-      def setPatternsVarargs(value: js.Object*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: js.Object*): Self = StObject.set(x, "patterns", js.Array(value :_*))
       
-      @scala.inline
-      def setRepository(value: js.Object): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: js.Object): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
+      inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeNameUndefined: Self = StObject.set(x, "scopeName", js.undefined)
+      inline def setScopeNameUndefined: Self = StObject.set(x, "scopeName", js.undefined)
     }
   }
   
@@ -332,23 +306,18 @@ object mod {
   }
   object GrammarRule {
     
-    @scala.inline
-    def apply(contentScopeName: String, rule: js.Object, scopeName: String): GrammarRule = {
+    inline def apply(contentScopeName: String, rule: js.Object, scopeName: String): GrammarRule = {
       val __obj = js.Dynamic.literal(contentScopeName = contentScopeName.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GrammarRule]
     }
     
-    @scala.inline
-    implicit class GrammarRuleMutableBuilder[Self <: GrammarRule] (val x: Self) extends AnyVal {
+    extension [Self <: GrammarRule](x: Self) {
       
-      @scala.inline
-      def setContentScopeName(value: String): Self = StObject.set(x, "contentScopeName", value.asInstanceOf[js.Any])
+      inline def setContentScopeName(value: String): Self = StObject.set(x, "contentScopeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: js.Object): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: js.Object): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
+      inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,23 +329,18 @@ object mod {
   }
   object GrammarToken {
     
-    @scala.inline
-    def apply(scopes: js.Array[String], value: String): GrammarToken = {
+    inline def apply(scopes: js.Array[String], value: String): GrammarToken = {
       val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[GrammarToken]
     }
     
-    @scala.inline
-    implicit class GrammarTokenMutableBuilder[Self <: GrammarToken] (val x: Self) extends AnyVal {
+    extension [Self <: GrammarToken](x: Self) {
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -409,8 +373,7 @@ object mod {
   }
   object TokenizeLineResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       line: String,
       ruleStack: js.Array[GrammarRule],
       tags: js.Array[Double | String],
@@ -420,29 +383,21 @@ object mod {
       __obj.asInstanceOf[TokenizeLineResult]
     }
     
-    @scala.inline
-    implicit class TokenizeLineResultMutableBuilder[Self <: TokenizeLineResult] (val x: Self) extends AnyVal {
+    extension [Self <: TokenizeLineResult](x: Self) {
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleStack(value: js.Array[GrammarRule]): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
+      inline def setRuleStack(value: js.Array[GrammarRule]): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleStackVarargs(value: GrammarRule*): Self = StObject.set(x, "ruleStack", js.Array(value :_*))
+      inline def setRuleStackVarargs(value: GrammarRule*): Self = StObject.set(x, "ruleStack", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[Double | String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Double | String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: (Double | String)*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: (Double | String)*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTokens(value: js.Array[GrammarToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Array[GrammarToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensVarargs(value: GrammarToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: GrammarToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     }
   }
 }

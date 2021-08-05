@@ -12,19 +12,15 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Response: js.Any): Response = {
+  inline def apply(Cancel: Boolean, Response: js.Any): Response = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: js.Any): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: js.Any): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
   }
 }

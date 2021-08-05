@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFObjectOperationFlags extends StObject
 object MFObjectOperationFlags {
   
-  @scala.inline
-  def ChangeACLInAllVersions: `32` = 32.asInstanceOf[`32`]
+  inline def ChangeACLInAllVersions: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def DisallowNameChange: `4` = 4.asInstanceOf[`4`]
+  inline def DisallowNameChange: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def RequireChangeSecurityAccess: `8` = 8.asInstanceOf[`8`]
+  inline def RequireChangeSecurityAccess: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def RequireEditAccess: `2` = 2.asInstanceOf[`2`]
+  inline def RequireEditAccess: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def RequireFullAccess: `16` = 16.asInstanceOf[`16`]
+  inline def RequireFullAccess: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def RequireReadAccess: `1` = 1.asInstanceOf[`1`]
+  inline def RequireReadAccess: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def RequireSomeAccess: `64` = 64.asInstanceOf[`64`]
+  inline def RequireSomeAccess: `64` = 64.asInstanceOf[`64`]
 }

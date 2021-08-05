@@ -11,16 +11,13 @@ trait PersistenceAOFOffInfo extends StObject {
 }
 object PersistenceAOFOffInfo {
   
-  @scala.inline
-  def apply(aof_enabled: OFF): PersistenceAOFOffInfo = {
+  inline def apply(aof_enabled: OFF): PersistenceAOFOffInfo = {
     val __obj = js.Dynamic.literal(aof_enabled = aof_enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistenceAOFOffInfo]
   }
   
-  @scala.inline
-  implicit class PersistenceAOFOffInfoMutableBuilder[Self <: PersistenceAOFOffInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PersistenceAOFOffInfo](x: Self) {
     
-    @scala.inline
-    def setAof_enabled(value: OFF): Self = StObject.set(x, "aof_enabled", value.asInstanceOf[js.Any])
+    inline def setAof_enabled(value: OFF): Self = StObject.set(x, "aof_enabled", value.asInstanceOf[js.Any])
   }
 }

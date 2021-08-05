@@ -23,25 +23,19 @@ trait AdvancedEncryptionSchemePKCS1OAEP
 }
 object AdvancedEncryptionSchemePKCS1OAEP {
   
-  @scala.inline
-  def apply(hash: HashingAlgorithm): AdvancedEncryptionSchemePKCS1OAEP = {
+  inline def apply(hash: HashingAlgorithm): AdvancedEncryptionSchemePKCS1OAEP = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = "pkcs1_oaep")
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1OAEP]
   }
   
-  @scala.inline
-  implicit class AdvancedEncryptionSchemePKCS1OAEPMutableBuilder[Self <: AdvancedEncryptionSchemePKCS1OAEP] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedEncryptionSchemePKCS1OAEP](x: Self) {
     
-    @scala.inline
-    def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMgf(value: (/* data */ Buffer, /* length */ Double, /* hash */ HashingAlgorithm) => Buffer): Self = StObject.set(x, "mgf", js.Any.fromFunction3(value))
+    inline def setMgf(value: (/* data */ Buffer, /* length */ Double, /* hash */ HashingAlgorithm) => Buffer): Self = StObject.set(x, "mgf", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMgfUndefined: Self = StObject.set(x, "mgf", js.undefined)
+    inline def setMgfUndefined: Self = StObject.set(x, "mgf", js.undefined)
     
-    @scala.inline
-    def setScheme(value: pkcs1_oaep): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: pkcs1_oaep): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

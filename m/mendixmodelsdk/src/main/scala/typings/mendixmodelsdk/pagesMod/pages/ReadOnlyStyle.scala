@@ -21,20 +21,17 @@ object ReadOnlyStyle {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReadOnlyStyle.Control")
   @js.native
   def Control: ReadOnlyStyle = js.native
-  @scala.inline
-  def Control_=(x: ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
+  inline def Control_=(x: ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReadOnlyStyle.Inherit")
   @js.native
   def Inherit: ReadOnlyStyle = js.native
-  @scala.inline
-  def Inherit_=(x: ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inherit")(x.asInstanceOf[js.Any])
+  inline def Inherit_=(x: ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inherit")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReadOnlyStyle.Text")
   @js.native
   def Text: ReadOnlyStyle = js.native
-  @scala.inline
-  def Text_=(x: ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  inline def Text_=(x: ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

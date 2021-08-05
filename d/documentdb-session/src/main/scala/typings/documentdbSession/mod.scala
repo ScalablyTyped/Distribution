@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(expressSession: FnCall): DocumentDBStoreConstructor = ^.asInstanceOf[js.Dynamic].apply(expressSession.asInstanceOf[js.Any]).asInstanceOf[DocumentDBStoreConstructor]
+  inline def apply(expressSession: FnCall): DocumentDBStoreConstructor = ^.asInstanceOf[js.Dynamic].apply(expressSession.asInstanceOf[js.Any]).asInstanceOf[DocumentDBStoreConstructor]
   
   @JSImport("documentdb-session", JSImport.Namespace)
   @js.native
@@ -74,44 +73,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(host: String, key: String): Options = {
+    inline def apply(host: String, key: String): Options = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setDiscriminator(value: js.Object): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
+      inline def setDiscriminator(value: js.Object): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
+      inline def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
 }

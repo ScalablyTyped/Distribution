@@ -17,22 +17,17 @@ trait NotifyReturn extends StObject {
 }
 object NotifyReturn {
   
-  @scala.inline
-  def apply($ele: JQuery[HTMLElement], close: () => Unit, update: (String, js.Any) => Unit): NotifyReturn = {
+  inline def apply($ele: JQuery[HTMLElement], close: () => Unit, update: (String, js.Any) => Unit): NotifyReturn = {
     val __obj = js.Dynamic.literal($ele = $ele.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[NotifyReturn]
   }
   
-  @scala.inline
-  implicit class NotifyReturnMutableBuilder[Self <: NotifyReturn] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyReturn](x: Self) {
     
-    @scala.inline
-    def set$ele(value: JQuery[HTMLElement]): Self = StObject.set(x, "$ele", value.asInstanceOf[js.Any])
+    inline def set$ele(value: JQuery[HTMLElement]): Self = StObject.set(x, "$ele", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: (String, js.Any) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (String, js.Any) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

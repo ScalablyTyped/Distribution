@@ -14,23 +14,18 @@ object anon {
   }
   object Base {
     
-    @scala.inline
-    def apply(base: String): Base = {
+    inline def apply(base: String): Base = {
       val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrandTitle(value: String): Self = StObject.set(x, "brandTitle", value.asInstanceOf[js.Any])
+      inline def setBrandTitle(value: String): Self = StObject.set(x, "brandTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrandTitleUndefined: Self = StObject.set(x, "brandTitle", js.undefined)
+      inline def setBrandTitleUndefined: Self = StObject.set(x, "brandTitle", js.undefined)
     }
   }
   
@@ -40,17 +35,14 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply[T](current: T): Current[T] = {
+    inline def apply[T](current: T): Current[T] = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
       __obj.asInstanceOf[Current[T]]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current[?], T] (val x: Self & Current[T]) extends AnyVal {
+    extension [Self <: Current[?], T](x: Self & Current[T]) {
       
-      @scala.inline
-      def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
   }
 }

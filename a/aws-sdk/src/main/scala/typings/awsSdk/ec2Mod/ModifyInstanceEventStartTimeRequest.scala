@@ -28,28 +28,21 @@ trait ModifyInstanceEventStartTimeRequest extends StObject {
 }
 object ModifyInstanceEventStartTimeRequest {
   
-  @scala.inline
-  def apply(InstanceEventId: String, InstanceId: InstanceId, NotBefore: DateTime): ModifyInstanceEventStartTimeRequest = {
+  inline def apply(InstanceEventId: String, InstanceId: InstanceId, NotBefore: DateTime): ModifyInstanceEventStartTimeRequest = {
     val __obj = js.Dynamic.literal(InstanceEventId = InstanceEventId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], NotBefore = NotBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceEventStartTimeRequest]
   }
   
-  @scala.inline
-  implicit class ModifyInstanceEventStartTimeRequestMutableBuilder[Self <: ModifyInstanceEventStartTimeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstanceEventStartTimeRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceEventId(value: String): Self = StObject.set(x, "InstanceEventId", value.asInstanceOf[js.Any])
+    inline def setInstanceEventId(value: String): Self = StObject.set(x, "InstanceEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBefore(value: DateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: DateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
   }
 }

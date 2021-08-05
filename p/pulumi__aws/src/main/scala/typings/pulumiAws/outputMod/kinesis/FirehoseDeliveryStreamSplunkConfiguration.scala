@@ -48,8 +48,7 @@ trait FirehoseDeliveryStreamSplunkConfiguration extends StObject {
 }
 object FirehoseDeliveryStreamSplunkConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloudwatchLoggingOptions: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions,
     hecEndpoint: String,
     hecToken: String
@@ -58,46 +57,32 @@ object FirehoseDeliveryStreamSplunkConfiguration {
     __obj.asInstanceOf[FirehoseDeliveryStreamSplunkConfiguration]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamSplunkConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamSplunkConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamSplunkConfiguration](x: Self) {
     
-    @scala.inline
-    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    inline def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHecAcknowledgmentTimeout(value: Double): Self = StObject.set(x, "hecAcknowledgmentTimeout", value.asInstanceOf[js.Any])
+    inline def setHecAcknowledgmentTimeout(value: Double): Self = StObject.set(x, "hecAcknowledgmentTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHecAcknowledgmentTimeoutUndefined: Self = StObject.set(x, "hecAcknowledgmentTimeout", js.undefined)
+    inline def setHecAcknowledgmentTimeoutUndefined: Self = StObject.set(x, "hecAcknowledgmentTimeout", js.undefined)
     
-    @scala.inline
-    def setHecEndpoint(value: String): Self = StObject.set(x, "hecEndpoint", value.asInstanceOf[js.Any])
+    inline def setHecEndpoint(value: String): Self = StObject.set(x, "hecEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHecEndpointType(value: String): Self = StObject.set(x, "hecEndpointType", value.asInstanceOf[js.Any])
+    inline def setHecEndpointType(value: String): Self = StObject.set(x, "hecEndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHecEndpointTypeUndefined: Self = StObject.set(x, "hecEndpointType", js.undefined)
+    inline def setHecEndpointTypeUndefined: Self = StObject.set(x, "hecEndpointType", js.undefined)
     
-    @scala.inline
-    def setHecToken(value: String): Self = StObject.set(x, "hecToken", value.asInstanceOf[js.Any])
+    inline def setHecToken(value: String): Self = StObject.set(x, "hecToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingConfiguration(value: FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
+    inline def setProcessingConfiguration(value: FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
+    inline def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
     
-    @scala.inline
-    def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
+    inline def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
+    inline def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
     
-    @scala.inline
-    def setS3BackupMode(value: String): Self = StObject.set(x, "s3BackupMode", value.asInstanceOf[js.Any])
+    inline def setS3BackupMode(value: String): Self = StObject.set(x, "s3BackupMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupModeUndefined: Self = StObject.set(x, "s3BackupMode", js.undefined)
+    inline def setS3BackupModeUndefined: Self = StObject.set(x, "s3BackupMode", js.undefined)
   }
 }

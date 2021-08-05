@@ -34,8 +34,7 @@ object useAutoCompleteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useAutoComplete(
+  inline def useAutoComplete(
     hasSuggestionsIdDataPropValueDefaultValueFilterFnFilterOptionsFilterOnNoValueValueKeyGetResultIdGetResultValueOnBlurOnFocusOnClickOnChangeOnKeyDownForwardedRefOnAutoCompleteClearOnAutoCompleteAnchorXMarginYMarginVwMarginVhMarginTransformOriginListboxWidthListboxStylePreventOverlapDisableSwappingDisableVHBoundsCloseOnResizeCloseOnScrollPropDisableShowOnFocusIsListAutocompleteIsInlineAutocomplete: AutoCompleteOptions
   ): AutoCompleteReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoComplete")(hasSuggestionsIdDataPropValueDefaultValueFilterFnFilterOptionsFilterOnNoValueValueKeyGetResultIdGetResultValueOnBlurOnFocusOnClickOnChangeOnKeyDownForwardedRefOnAutoCompleteClearOnAutoCompleteAnchorXMarginYMarginVwMarginVhMarginTransformOriginListboxWidthListboxStylePreventOverlapDisableSwappingDisableVHBoundsCloseOnResizeCloseOnScrollPropDisableShowOnFocusIsListAutocompleteIsInlineAutocomplete.asInstanceOf[js.Any]).asInstanceOf[AutoCompleteReturnValue]
   
@@ -60,8 +59,7 @@ object useAutoCompleteMod {
   }
   object AutoCompleteOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearOnAutoComplete: Boolean,
       data: js.Array[AutoCompleteData],
       filter: AutoCompleteFilterFunction[js.Object],
@@ -78,41 +76,29 @@ object useAutoCompleteMod {
       __obj.asInstanceOf[AutoCompleteOptions]
     }
     
-    @scala.inline
-    implicit class AutoCompleteOptionsMutableBuilder[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AutoCompleteOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setForwardedRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+      inline def setForwardedRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardedRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
+      inline def setForwardedRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForwardedRefNull: Self = StObject.set(x, "forwardedRef", null)
+      inline def setForwardedRefNull: Self = StObject.set(x, "forwardedRef", null)
       
-      @scala.inline
-      def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+      inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
       
-      @scala.inline
-      def setIsInlineAutocomplete(value: Boolean): Self = StObject.set(x, "isInlineAutocomplete", value.asInstanceOf[js.Any])
+      inline def setIsInlineAutocomplete(value: Boolean): Self = StObject.set(x, "isInlineAutocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsListAutocomplete(value: Boolean): Self = StObject.set(x, "isListAutocomplete", value.asInstanceOf[js.Any])
+      inline def setIsListAutocomplete(value: Boolean): Self = StObject.set(x, "isListAutocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropValue(value: String): Self = StObject.set(x, "propValue", value.asInstanceOf[js.Any])
+      inline def setPropValue(value: String): Self = StObject.set(x, "propValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropValueUndefined: Self = StObject.set(x, "propValue", js.undefined)
+      inline def setPropValueUndefined: Self = StObject.set(x, "propValue", js.undefined)
       
-      @scala.inline
-      def setSuggestionsId(value: String): Self = StObject.set(x, "suggestionsId", value.asInstanceOf[js.Any])
+      inline def setSuggestionsId(value: String): Self = StObject.set(x, "suggestionsId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,44 +154,32 @@ object useAutoCompleteMod {
   }
   object EventHandlers {
     
-    @scala.inline
-    def apply(): EventHandlers = {
+    inline def apply(): EventHandlers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventHandlers]
     }
     
-    @scala.inline
-    implicit class EventHandlersMutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: EventHandlers](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -218,26 +192,20 @@ object useAutoCompleteMod {
   }
   object OptionalAutoCompleteProps {
     
-    @scala.inline
-    def apply(): OptionalAutoCompleteProps = {
+    inline def apply(): OptionalAutoCompleteProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalAutoCompleteProps]
     }
     
-    @scala.inline
-    implicit class OptionalAutoCompletePropsMutableBuilder[Self <: OptionalAutoCompleteProps] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalAutoCompleteProps](x: Self) {
       
-      @scala.inline
-      def setDisableShowOnFocus(value: Boolean): Self = StObject.set(x, "disableShowOnFocus", value.asInstanceOf[js.Any])
+      inline def setDisableShowOnFocus(value: Boolean): Self = StObject.set(x, "disableShowOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableShowOnFocusUndefined: Self = StObject.set(x, "disableShowOnFocus", js.undefined)
+      inline def setDisableShowOnFocusUndefined: Self = StObject.set(x, "disableShowOnFocus", js.undefined)
       
-      @scala.inline
-      def setOnAutoComplete(value: /* result */ AutoCompleteResult => Unit): Self = StObject.set(x, "onAutoComplete", js.Any.fromFunction1(value))
+      inline def setOnAutoComplete(value: /* result */ AutoCompleteResult => Unit): Self = StObject.set(x, "onAutoComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAutoCompleteUndefined: Self = StObject.set(x, "onAutoComplete", js.undefined)
+      inline def setOnAutoCompleteUndefined: Self = StObject.set(x, "onAutoComplete", js.undefined)
     }
   }
   
@@ -262,8 +230,7 @@ object useAutoCompleteMod {
   }
   object RequiredAutoCompleteProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearOnAutoComplete: Boolean,
       data: js.Array[AutoCompleteData],
       filter: AutoCompleteFilterFunction[js.Object],
@@ -277,40 +244,29 @@ object useAutoCompleteMod {
       __obj.asInstanceOf[RequiredAutoCompleteProps]
     }
     
-    @scala.inline
-    implicit class RequiredAutoCompletePropsMutableBuilder[Self <: RequiredAutoCompleteProps] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredAutoCompleteProps](x: Self) {
       
-      @scala.inline
-      def setClearOnAutoComplete(value: Boolean): Self = StObject.set(x, "clearOnAutoComplete", value.asInstanceOf[js.Any])
+      inline def setClearOnAutoComplete(value: Boolean): Self = StObject.set(x, "clearOnAutoComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Array[AutoCompleteData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[AutoCompleteData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: AutoCompleteData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: AutoCompleteData*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: AutoCompleteFilterFunction[js.Object]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: AutoCompleteFilterFunction[js.Object]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction3(
+      inline def setFilterFunction3(
         value: (/* query */ String, /* data */ js.Array[AutoCompleteData], /* options */ typings.reactMdAutocomplete.typesMod.FilterFunctionOptions[js.Object]) => js.Array[AutoCompleteData]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterOnNoValue(value: Boolean): Self = StObject.set(x, "filterOnNoValue", value.asInstanceOf[js.Any])
+      inline def setFilterOnNoValue(value: Boolean): Self = StObject.set(x, "filterOnNoValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterOptions(value: FilterFunctionOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+      inline def setFilterOptions(value: FilterFunctionOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetResultId(value: (/* id */ String, /* index */ Double) => String): Self = StObject.set(x, "getResultId", js.Any.fromFunction2(value))
+      inline def setGetResultId(value: (/* id */ String, /* index */ Double) => String): Self = StObject.set(x, "getResultId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetResultValue(value: (/* datum */ AutoCompleteData, /* valueKey */ String) => String): Self = StObject.set(x, "getResultValue", js.Any.fromFunction2(value))
+      inline def setGetResultValue(value: (/* datum */ AutoCompleteData, /* valueKey */ String) => String): Self = StObject.set(x, "getResultValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
     }
   }
 }

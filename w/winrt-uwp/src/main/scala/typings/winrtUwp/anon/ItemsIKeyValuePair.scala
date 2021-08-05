@@ -13,19 +13,15 @@ trait ItemsIKeyValuePair extends StObject {
 }
 object ItemsIKeyValuePair {
   
-  @scala.inline
-  def apply(items: IKeyValuePair[js.Any, js.Any], returnValue: Double): ItemsIKeyValuePair = {
+  inline def apply(items: IKeyValuePair[js.Any, js.Any], returnValue: Double): ItemsIKeyValuePair = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsIKeyValuePair]
   }
   
-  @scala.inline
-  implicit class ItemsIKeyValuePairMutableBuilder[Self <: ItemsIKeyValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsIKeyValuePair](x: Self) {
     
-    @scala.inline
-    def setItems(value: IKeyValuePair[js.Any, js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IKeyValuePair[js.Any, js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

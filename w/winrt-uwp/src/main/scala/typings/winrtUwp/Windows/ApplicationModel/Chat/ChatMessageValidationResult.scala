@@ -21,8 +21,7 @@ trait ChatMessageValidationResult extends StObject {
 }
 object ChatMessageValidationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maxPartCount: Double,
     partCount: Double,
     remainingCharacterCountInPart: Double,
@@ -32,19 +31,14 @@ object ChatMessageValidationResult {
     __obj.asInstanceOf[ChatMessageValidationResult]
   }
   
-  @scala.inline
-  implicit class ChatMessageValidationResultMutableBuilder[Self <: ChatMessageValidationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageValidationResult](x: Self) {
     
-    @scala.inline
-    def setMaxPartCount(value: Double): Self = StObject.set(x, "maxPartCount", value.asInstanceOf[js.Any])
+    inline def setMaxPartCount(value: Double): Self = StObject.set(x, "maxPartCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartCount(value: Double): Self = StObject.set(x, "partCount", value.asInstanceOf[js.Any])
+    inline def setPartCount(value: Double): Self = StObject.set(x, "partCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingCharacterCountInPart(value: Double): Self = StObject.set(x, "remainingCharacterCountInPart", value.asInstanceOf[js.Any])
+    inline def setRemainingCharacterCountInPart(value: Double): Self = StObject.set(x, "remainingCharacterCountInPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ChatMessageValidationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ChatMessageValidationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

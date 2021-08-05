@@ -337,8 +337,7 @@ object valueAxesSettingsMod {
   }
   object ValueAxesSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoGridCount: Boolean,
       axisAlpha: Double,
       axisColor: String,
@@ -372,92 +371,63 @@ object valueAxesSettingsMod {
       __obj.asInstanceOf[ValueAxesSettings]
     }
     
-    @scala.inline
-    implicit class ValueAxesSettingsMutableBuilder[Self <: ValueAxesSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ValueAxesSettings](x: Self) {
       
-      @scala.inline
-      def setAutoGridCount(value: Boolean): Self = StObject.set(x, "autoGridCount", value.asInstanceOf[js.Any])
+      inline def setAutoGridCount(value: Boolean): Self = StObject.set(x, "autoGridCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisAlpha(value: Double): Self = StObject.set(x, "axisAlpha", value.asInstanceOf[js.Any])
+      inline def setAxisAlpha(value: Double): Self = StObject.set(x, "axisAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisColor(value: String): Self = StObject.set(x, "axisColor", value.asInstanceOf[js.Any])
+      inline def setAxisColor(value: String): Self = StObject.set(x, "axisColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisThickness(value: Double): Self = StObject.set(x, "axisThickness", value.asInstanceOf[js.Any])
+      inline def setAxisThickness(value: Double): Self = StObject.set(x, "axisThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashLength(value: Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
+      inline def setDashLength(value: Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
+      inline def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAlpha(value: Double): Self = StObject.set(x, "gridAlpha", value.asInstanceOf[js.Any])
+      inline def setGridAlpha(value: Double): Self = StObject.set(x, "gridAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColor(value: String): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
+      inline def setGridColor(value: String): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridCount(value: Double): Self = StObject.set(x, "gridCount", value.asInstanceOf[js.Any])
+      inline def setGridCount(value: Double): Self = StObject.set(x, "gridCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridThickness(value: Double): Self = StObject.set(x, "gridThickness", value.asInstanceOf[js.Any])
+      inline def setGridThickness(value: Double): Self = StObject.set(x, "gridThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeGuidesInMinMax(value: Boolean): Self = StObject.set(x, "includeGuidesInMinMax", value.asInstanceOf[js.Any])
+      inline def setIncludeGuidesInMinMax(value: Boolean): Self = StObject.set(x, "includeGuidesInMinMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeHidden(value: Boolean): Self = StObject.set(x, "includeHidden", value.asInstanceOf[js.Any])
+      inline def setIncludeHidden(value: Boolean): Self = StObject.set(x, "includeHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
+      inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegersOnly(value: Boolean): Self = StObject.set(x, "integersOnly", value.asInstanceOf[js.Any])
+      inline def setIntegersOnly(value: Boolean): Self = StObject.set(x, "integersOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFrequency(value: Double): Self = StObject.set(x, "labelFrequency", value.asInstanceOf[js.Any])
+      inline def setLabelFrequency(value: Double): Self = StObject.set(x, "labelFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsEnabled(value: Boolean): Self = StObject.set(x, "labelsEnabled", value.asInstanceOf[js.Any])
+      inline def setLabelsEnabled(value: Boolean): Self = StObject.set(x, "labelsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogarithmic(value: Boolean): Self = StObject.set(x, "logarithmic", value.asInstanceOf[js.Any])
+      inline def setLogarithmic(value: Boolean): Self = StObject.set(x, "logarithmic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFirstLabel(value: Boolean): Self = StObject.set(x, "showFirstLabel", value.asInstanceOf[js.Any])
+      inline def setShowFirstLabel(value: Boolean): Self = StObject.set(x, "showFirstLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLastLabel(value: Boolean): Self = StObject.set(x, "showLastLabel", value.asInstanceOf[js.Any])
+      inline def setShowLastLabel(value: Boolean): Self = StObject.set(x, "showLastLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackType(value: String): Self = StObject.set(x, "stackType", value.asInstanceOf[js.Any])
+      inline def setStackType(value: String): Self = StObject.set(x, "stackType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickLength(value: Double): Self = StObject.set(x, "tickLength", value.asInstanceOf[js.Any])
+      inline def setTickLength(value: Double): Self = StObject.set(x, "tickLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitPosition(value: String): Self = StObject.set(x, "unitPosition", value.asInstanceOf[js.Any])
+      inline def setUnitPosition(value: String): Self = StObject.set(x, "unitPosition", value.asInstanceOf[js.Any])
     }
   }
 }

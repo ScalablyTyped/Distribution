@@ -29,44 +29,32 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(): Body = {
+    inline def apply(): Body = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: OptionsUrlencoded): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: OptionsUrlencoded): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setData(value: DataParserOptions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataParserOptions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setJson(value: OptionsJson): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: OptionsJson): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setText(value: OptionsText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: OptionsText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -76,20 +64,16 @@ object anon {
   }
   object Csurf {
     
-    @scala.inline
-    def apply(): Csurf = {
+    inline def apply(): Csurf = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Csurf]
     }
     
-    @scala.inline
-    implicit class CsurfMutableBuilder[Self <: Csurf] (val x: Self) extends AnyVal {
+    extension [Self <: Csurf](x: Self) {
       
-      @scala.inline
-      def setCsurf(value: `false` | CsurfOptions): Self = StObject.set(x, "csurf", value.asInstanceOf[js.Any])
+      inline def setCsurf(value: `false` | CsurfOptions): Self = StObject.set(x, "csurf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsurfUndefined: Self = StObject.set(x, "csurf", js.undefined)
+      inline def setCsurfUndefined: Self = StObject.set(x, "csurf", js.undefined)
     }
   }
   
@@ -101,20 +85,16 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(level: LogLevel, report: (String, LogLevel) => Unit): Level = {
+    inline def apply(level: LogLevel, report: (String, LogLevel) => Unit): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], report = js.Any.fromFunction2(report))
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReport(value: (String, LogLevel) => Unit): Self = StObject.set(x, "report", js.Any.fromFunction2(value))
+      inline def setReport(value: (String, LogLevel) => Unit): Self = StObject.set(x, "report", js.Any.fromFunction2(value))
     }
   }
   
@@ -155,8 +135,7 @@ object anon {
   }
   object keyinLogLevelLogFn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alert: LogFn,
       critical: LogFn,
       debug: LogFn,
@@ -170,32 +149,23 @@ object anon {
       __obj.asInstanceOf[keyinLogLevelLogFn]
     }
     
-    @scala.inline
-    implicit class keyinLogLevelLogFnMutableBuilder[Self <: keyinLogLevelLogFn] (val x: Self) extends AnyVal {
+    extension [Self <: keyinLogLevelLogFn](x: Self) {
       
-      @scala.inline
-      def setAlert(value: LogFn): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: LogFn): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritical(value: LogFn): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+      inline def setCritical(value: LogFn): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: LogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: LogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmergency(value: LogFn): Self = StObject.set(x, "emergency", value.asInstanceOf[js.Any])
+      inline def setEmergency(value: LogFn): Self = StObject.set(x, "emergency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: LogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: LogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: LogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: LogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotice(value: LogFn): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
+      inline def setNotice(value: LogFn): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: LogFn): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: LogFn): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
 }

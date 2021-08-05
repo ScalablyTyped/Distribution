@@ -18,22 +18,17 @@ trait UntagRoleRequest extends StObject {
 }
 object UntagRoleRequest {
   
-  @scala.inline
-  def apply(RoleName: roleNameType, TagKeys: tagKeyListType): UntagRoleRequest = {
+  inline def apply(RoleName: roleNameType, TagKeys: tagKeyListType): UntagRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagRoleRequest]
   }
   
-  @scala.inline
-  implicit class UntagRoleRequestMutableBuilder[Self <: UntagRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UntagRoleRequest](x: Self) {
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeys(value: tagKeyListType): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: tagKeyListType): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysVarargs(value: tagKeyType*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: tagKeyType*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

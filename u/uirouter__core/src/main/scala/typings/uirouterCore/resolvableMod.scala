@@ -115,13 +115,11 @@ object resolvableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromData(token: js.Any, data: js.Any): Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Resolvable]
+    inline def fromData(token: js.Any, data: js.Any): Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Resolvable]
   }
   
   @JSImport("@uirouter/core/lib/resolve/resolvable", "defaultResolvePolicy")
   @js.native
   def defaultResolvePolicy: ResolvePolicy = js.native
-  @scala.inline
-  def defaultResolvePolicy_=(x: ResolvePolicy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolvePolicy")(x.asInstanceOf[js.Any])
+  inline def defaultResolvePolicy_=(x: ResolvePolicy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolvePolicy")(x.asInstanceOf[js.Any])
 }

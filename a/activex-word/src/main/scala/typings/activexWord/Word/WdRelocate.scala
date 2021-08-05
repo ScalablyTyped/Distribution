@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRelocate extends StObject
 object WdRelocate {
   
-  @scala.inline
-  def wdRelocateDown: `1` = 1.asInstanceOf[`1`]
+  inline def wdRelocateDown: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdRelocateUp: `0` = 0.asInstanceOf[`0`]
+  inline def wdRelocateUp: `0` = 0.asInstanceOf[`0`]
 }

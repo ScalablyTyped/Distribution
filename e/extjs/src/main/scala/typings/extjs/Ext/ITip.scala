@@ -13,19 +13,15 @@ trait ITip
 }
 object ITip {
   
-  @scala.inline
-  def apply(): ITip = {
+  inline def apply(): ITip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITip]
   }
   
-  @scala.inline
-  implicit class ITipMutableBuilder[Self <: ITip] (val x: Self) extends AnyVal {
+  extension [Self <: ITip](x: Self) {
     
-    @scala.inline
-    def setConstrainPosition(value: Boolean): Self = StObject.set(x, "constrainPosition", value.asInstanceOf[js.Any])
+    inline def setConstrainPosition(value: Boolean): Self = StObject.set(x, "constrainPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainPositionUndefined: Self = StObject.set(x, "constrainPosition", js.undefined)
+    inline def setConstrainPositionUndefined: Self = StObject.set(x, "constrainPosition", js.undefined)
   }
 }

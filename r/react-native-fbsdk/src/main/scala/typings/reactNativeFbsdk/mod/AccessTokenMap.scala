@@ -28,8 +28,7 @@ trait AccessTokenMap extends StObject {
 }
 object AccessTokenMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessToken: String,
     applicationID: String,
     dataAccessExpirationTime: Double,
@@ -44,49 +43,34 @@ object AccessTokenMap {
     __obj.asInstanceOf[AccessTokenMap]
   }
   
-  @scala.inline
-  implicit class AccessTokenMapMutableBuilder[Self <: AccessTokenMap] (val x: Self) extends AnyVal {
+  extension [Self <: AccessTokenMap](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenSource(value: String): Self = StObject.set(x, "accessTokenSource", value.asInstanceOf[js.Any])
+    inline def setAccessTokenSource(value: String): Self = StObject.set(x, "accessTokenSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenSourceUndefined: Self = StObject.set(x, "accessTokenSource", js.undefined)
+    inline def setAccessTokenSourceUndefined: Self = StObject.set(x, "accessTokenSource", js.undefined)
     
-    @scala.inline
-    def setApplicationID(value: String): Self = StObject.set(x, "applicationID", value.asInstanceOf[js.Any])
+    inline def setApplicationID(value: String): Self = StObject.set(x, "applicationID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAccessExpirationTime(value: Double): Self = StObject.set(x, "dataAccessExpirationTime", value.asInstanceOf[js.Any])
+    inline def setDataAccessExpirationTime(value: Double): Self = StObject.set(x, "dataAccessExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclinedPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "declinedPermissions", value.asInstanceOf[js.Any])
+    inline def setDeclinedPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "declinedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclinedPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "declinedPermissions", js.Array(value :_*))
+    inline def setDeclinedPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "declinedPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "expiredPermissions", value.asInstanceOf[js.Any])
+    inline def setExpiredPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "expiredPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "expiredPermissions", js.Array(value :_*))
+    inline def setExpiredPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "expiredPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setLastRefreshTime(value: Double): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
+    inline def setLastRefreshTime(value: Double): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
+    inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

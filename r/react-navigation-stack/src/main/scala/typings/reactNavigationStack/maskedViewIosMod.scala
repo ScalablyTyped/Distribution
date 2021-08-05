@@ -12,6 +12,5 @@ object maskedViewIosMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasChildrenRest: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasChildrenRest: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

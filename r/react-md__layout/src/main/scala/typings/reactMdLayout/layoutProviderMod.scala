@@ -16,8 +16,7 @@ object layoutProviderMod {
   
   object LayoutProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasBaseIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutChildren: LayoutProviderProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasBaseIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -34,49 +33,41 @@ object layoutProviderMod {
       @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.baseId")
       @js.native
       def baseId: js.Any = js.native
-      @scala.inline
-      def baseId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseId")(x.asInstanceOf[js.Any])
+      inline def baseId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseId")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.desktopLayout")
       @js.native
       def desktopLayout: js.Any = js.native
-      @scala.inline
-      def desktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopLayout")(x.asInstanceOf[js.Any])
+      inline def desktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopLayout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.landscapeTabletLayout")
       @js.native
       def landscapeTabletLayout: js.Any = js.native
-      @scala.inline
-      def landscapeTabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("landscapeTabletLayout")(x.asInstanceOf[js.Any])
+      inline def landscapeTabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("landscapeTabletLayout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.largeDesktopLayout")
       @js.native
       def largeDesktopLayout: js.Any = js.native
-      @scala.inline
-      def largeDesktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("largeDesktopLayout")(x.asInstanceOf[js.Any])
+      inline def largeDesktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("largeDesktopLayout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.phoneLayout")
       @js.native
       def phoneLayout: js.Any = js.native
-      @scala.inline
-      def phoneLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneLayout")(x.asInstanceOf[js.Any])
+      inline def phoneLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneLayout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.tabletLayout")
       @js.native
       def tabletLayout: js.Any = js.native
-      @scala.inline
-      def tabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletLayout")(x.asInstanceOf[js.Any])
+      inline def tabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletLayout")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def useLayoutConfig(): LayoutContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutConfig")().asInstanceOf[LayoutContext]
+  inline def useLayoutConfig(): LayoutContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutConfig")().asInstanceOf[LayoutContext]
   
   trait LayoutContext extends StObject {
     
@@ -109,8 +100,7 @@ object layoutProviderMod {
   }
   object LayoutContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseId: String,
       hideNav: () => Unit,
       layout: SupportedWideLayout,
@@ -121,23 +111,17 @@ object layoutProviderMod {
       __obj.asInstanceOf[LayoutContext]
     }
     
-    @scala.inline
-    implicit class LayoutContextMutableBuilder[Self <: LayoutContext] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutContext](x: Self) {
       
-      @scala.inline
-      def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
+      inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideNav(value: () => Unit): Self = StObject.set(x, "hideNav", js.Any.fromFunction0(value))
+      inline def setHideNav(value: () => Unit): Self = StObject.set(x, "hideNav", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLayout(value: SupportedWideLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: SupportedWideLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNav(value: () => Unit): Self = StObject.set(x, "showNav", js.Any.fromFunction0(value))
+      inline def setShowNav(value: () => Unit): Self = StObject.set(x, "showNav", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,23 +142,18 @@ object layoutProviderMod {
   }
   object LayoutProviderProps {
     
-    @scala.inline
-    def apply(baseId: String): LayoutProviderProps = {
+    inline def apply(baseId: String): LayoutProviderProps = {
       val __obj = js.Dynamic.literal(baseId = baseId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutProviderProps]
     }
     
-    @scala.inline
-    implicit class LayoutProviderPropsMutableBuilder[Self <: LayoutProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutProviderProps](x: Self) {
       
-      @scala.inline
-      def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
+      inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

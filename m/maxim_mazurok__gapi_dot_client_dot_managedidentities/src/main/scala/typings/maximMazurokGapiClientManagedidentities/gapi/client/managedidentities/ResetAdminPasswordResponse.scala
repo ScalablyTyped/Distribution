@@ -11,19 +11,15 @@ trait ResetAdminPasswordResponse extends StObject {
 }
 object ResetAdminPasswordResponse {
   
-  @scala.inline
-  def apply(): ResetAdminPasswordResponse = {
+  inline def apply(): ResetAdminPasswordResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetAdminPasswordResponse]
   }
   
-  @scala.inline
-  implicit class ResetAdminPasswordResponseMutableBuilder[Self <: ResetAdminPasswordResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResetAdminPasswordResponse](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
   }
 }

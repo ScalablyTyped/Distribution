@@ -54,8 +54,7 @@ trait XCellRangesAccess
 }
 object XCellRangesAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getCellByPosition: (Double, Double, Double) => XCell,
     getCellRangeByPosition: (Double, Double, Double, Double, Double) => XCellRange,
@@ -67,16 +66,12 @@ object XCellRangesAccess {
     __obj.asInstanceOf[XCellRangesAccess]
   }
   
-  @scala.inline
-  implicit class XCellRangesAccessMutableBuilder[Self <: XCellRangesAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRangesAccess](x: Self) {
     
-    @scala.inline
-    def setGetCellByPosition(value: (Double, Double, Double) => XCell): Self = StObject.set(x, "getCellByPosition", js.Any.fromFunction3(value))
+    inline def setGetCellByPosition(value: (Double, Double, Double) => XCell): Self = StObject.set(x, "getCellByPosition", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetCellRangeByPosition(value: (Double, Double, Double, Double, Double) => XCellRange): Self = StObject.set(x, "getCellRangeByPosition", js.Any.fromFunction5(value))
+    inline def setGetCellRangeByPosition(value: (Double, Double, Double, Double, Double) => XCellRange): Self = StObject.set(x, "getCellRangeByPosition", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetCellRangesByName(value: String => SafeArray[XCellRange]): Self = StObject.set(x, "getCellRangesByName", js.Any.fromFunction1(value))
+    inline def setGetCellRangesByName(value: String => SafeArray[XCellRange]): Self = StObject.set(x, "getCellRangesByName", js.Any.fromFunction1(value))
   }
 }

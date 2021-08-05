@@ -23,25 +23,19 @@ trait SchemaAddTenantProjectRequest extends StObject {
 }
 object SchemaAddTenantProjectRequest {
   
-  @scala.inline
-  def apply(): SchemaAddTenantProjectRequest = {
+  inline def apply(): SchemaAddTenantProjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddTenantProjectRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAddTenantProjectRequestMutableBuilder[Self <: SchemaAddTenantProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddTenantProjectRequest](x: Self) {
     
-    @scala.inline
-    def setProjectConfig(value: SchemaTenantProjectConfig): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
+    inline def setProjectConfig(value: SchemaTenantProjectConfig): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectConfigUndefined: Self = StObject.set(x, "projectConfig", js.undefined)
+    inline def setProjectConfigUndefined: Self = StObject.set(x, "projectConfig", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait RemoveAutoScalingPolicyInput extends StObject {
 }
 object RemoveAutoScalingPolicyInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId, InstanceGroupId: InstanceGroupId): RemoveAutoScalingPolicyInput = {
+  inline def apply(ClusterId: ClusterId, InstanceGroupId: InstanceGroupId): RemoveAutoScalingPolicyInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], InstanceGroupId = InstanceGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAutoScalingPolicyInput]
   }
   
-  @scala.inline
-  implicit class RemoveAutoScalingPolicyInputMutableBuilder[Self <: RemoveAutoScalingPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveAutoScalingPolicyInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupId(value: InstanceGroupId): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupId(value: InstanceGroupId): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
   }
 }

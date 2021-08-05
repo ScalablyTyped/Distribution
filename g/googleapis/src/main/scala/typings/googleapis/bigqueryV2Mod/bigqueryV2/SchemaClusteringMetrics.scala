@@ -21,25 +21,19 @@ trait SchemaClusteringMetrics extends StObject {
 }
 object SchemaClusteringMetrics {
   
-  @scala.inline
-  def apply(): SchemaClusteringMetrics = {
+  inline def apply(): SchemaClusteringMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClusteringMetrics]
   }
   
-  @scala.inline
-  implicit class SchemaClusteringMetricsMutableBuilder[Self <: SchemaClusteringMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClusteringMetrics](x: Self) {
     
-    @scala.inline
-    def setDaviesBouldinIndex(value: Double): Self = StObject.set(x, "daviesBouldinIndex", value.asInstanceOf[js.Any])
+    inline def setDaviesBouldinIndex(value: Double): Self = StObject.set(x, "daviesBouldinIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaviesBouldinIndexUndefined: Self = StObject.set(x, "daviesBouldinIndex", js.undefined)
+    inline def setDaviesBouldinIndexUndefined: Self = StObject.set(x, "daviesBouldinIndex", js.undefined)
     
-    @scala.inline
-    def setMeanSquaredDistance(value: Double): Self = StObject.set(x, "meanSquaredDistance", value.asInstanceOf[js.Any])
+    inline def setMeanSquaredDistance(value: Double): Self = StObject.set(x, "meanSquaredDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanSquaredDistanceUndefined: Self = StObject.set(x, "meanSquaredDistance", js.undefined)
+    inline def setMeanSquaredDistanceUndefined: Self = StObject.set(x, "meanSquaredDistance", js.undefined)
   }
 }

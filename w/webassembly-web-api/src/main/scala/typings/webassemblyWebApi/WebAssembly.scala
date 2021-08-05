@@ -21,20 +21,16 @@ object WebAssembly {
   }
   object ResultObject {
     
-    @scala.inline
-    def apply(instance: Instance, module: Module): ResultObject = {
+    inline def apply(instance: Instance, module: Module): ResultObject = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultObject]
     }
     
-    @scala.inline
-    implicit class ResultObjectMutableBuilder[Self <: ResultObject] (val x: Self) extends AnyVal {
+    extension [Self <: ResultObject](x: Self) {
       
-      @scala.inline
-      def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule(value: Module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
   }
 }

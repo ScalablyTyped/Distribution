@@ -19,40 +19,29 @@ trait IGossipMessage extends StObject {
 }
 object IGossipMessage {
   
-  @scala.inline
-  def apply(): IGossipMessage = {
+  inline def apply(): IGossipMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGossipMessage]
   }
   
-  @scala.inline
-  implicit class IGossipMessageMutableBuilder[Self <: IGossipMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IGossipMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeNull: Self = StObject.set(x, "contentType", null)
+    inline def setContentTypeNull: Self = StObject.set(x, "contentType", null)
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
+    inline def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveNull: Self = StObject.set(x, "timeToLive", null)
+    inline def setTimeToLiveNull: Self = StObject.set(x, "timeToLive", null)
     
-    @scala.inline
-    def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
+    inline def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait BatchPutMessageResponse extends StObject {
 }
 object BatchPutMessageResponse {
   
-  @scala.inline
-  def apply(): BatchPutMessageResponse = {
+  inline def apply(): BatchPutMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchPutMessageResponse]
   }
   
-  @scala.inline
-  implicit class BatchPutMessageResponseMutableBuilder[Self <: BatchPutMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutMessageResponse](x: Self) {
     
-    @scala.inline
-    def setBatchPutMessageErrorEntries(value: BatchPutMessageErrorEntries): Self = StObject.set(x, "batchPutMessageErrorEntries", value.asInstanceOf[js.Any])
+    inline def setBatchPutMessageErrorEntries(value: BatchPutMessageErrorEntries): Self = StObject.set(x, "batchPutMessageErrorEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchPutMessageErrorEntriesUndefined: Self = StObject.set(x, "batchPutMessageErrorEntries", js.undefined)
+    inline def setBatchPutMessageErrorEntriesUndefined: Self = StObject.set(x, "batchPutMessageErrorEntries", js.undefined)
     
-    @scala.inline
-    def setBatchPutMessageErrorEntriesVarargs(value: BatchPutMessageErrorEntry*): Self = StObject.set(x, "batchPutMessageErrorEntries", js.Array(value :_*))
+    inline def setBatchPutMessageErrorEntriesVarargs(value: BatchPutMessageErrorEntry*): Self = StObject.set(x, "batchPutMessageErrorEntries", js.Array(value :_*))
   }
 }

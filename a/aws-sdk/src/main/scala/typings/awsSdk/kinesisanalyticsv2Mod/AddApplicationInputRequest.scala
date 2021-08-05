@@ -23,22 +23,17 @@ trait AddApplicationInputRequest extends StObject {
 }
 object AddApplicationInputRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId, Input: Input): AddApplicationInputRequest = {
+  inline def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId, Input: Input): AddApplicationInputRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddApplicationInputRequest]
   }
   
-  @scala.inline
-  implicit class AddApplicationInputRequestMutableBuilder[Self <: AddApplicationInputRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationInputRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
   }
 }

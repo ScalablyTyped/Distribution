@@ -10,8 +10,7 @@ trait UploadPartOutput
      with typings.awsSdkClientS3Browser.typesUploadPartOutputMod.UploadPartOutput
 object UploadPartOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UploadPartOutput = {
+  inline def apply($metadata: ResponseMetadata): UploadPartOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPartOutput]
   }

@@ -15,25 +15,19 @@ trait DescribeBudgetPerformanceHistoryResponse extends StObject {
 }
 object DescribeBudgetPerformanceHistoryResponse {
   
-  @scala.inline
-  def apply(): DescribeBudgetPerformanceHistoryResponse = {
+  inline def apply(): DescribeBudgetPerformanceHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBudgetPerformanceHistoryResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBudgetPerformanceHistoryResponseMutableBuilder[Self <: DescribeBudgetPerformanceHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBudgetPerformanceHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setBudgetPerformanceHistory(value: BudgetPerformanceHistory): Self = StObject.set(x, "BudgetPerformanceHistory", value.asInstanceOf[js.Any])
+    inline def setBudgetPerformanceHistory(value: BudgetPerformanceHistory): Self = StObject.set(x, "BudgetPerformanceHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetPerformanceHistoryUndefined: Self = StObject.set(x, "BudgetPerformanceHistory", js.undefined)
+    inline def setBudgetPerformanceHistoryUndefined: Self = StObject.set(x, "BudgetPerformanceHistory", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

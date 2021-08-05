@@ -19,43 +19,31 @@ trait PartialPickImplkeyofImplLoading extends StObject {
 }
 object PartialPickImplkeyofImplLoading {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplLoading = {
+  inline def apply(): PartialPickImplkeyofImplLoading = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplLoading]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplLoadingMutableBuilder[Self <: PartialPickImplkeyofImplLoading] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplLoading](x: Self) {
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    @scala.inline
-    def setPopupVisible(value: String): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+    inline def setPopupVisible(value: String): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
+    inline def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait EnumDeclaration
 }
 object EnumDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -46,19 +45,14 @@ object EnumDeclaration {
     __obj.asInstanceOf[EnumDeclaration]
   }
   
-  @scala.inline
-  implicit class EnumDeclarationMutableBuilder[Self <: EnumDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: EnumDeclaration](x: Self) {
     
-    @scala.inline
-    def setEnumElements(value: ISeparatedSyntaxList2): Self = StObject.set(x, "enumElements", value.asInstanceOf[js.Any])
+    inline def setEnumElements(value: ISeparatedSyntaxList2): Self = StObject.set(x, "enumElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
   }
 }

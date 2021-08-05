@@ -26,22 +26,17 @@ trait FileSystemWatcher extends StObject {
 }
 object FileSystemWatcher {
   
-  @scala.inline
-  def apply(globPattern: String): FileSystemWatcher = {
+  inline def apply(globPattern: String): FileSystemWatcher = {
     val __obj = js.Dynamic.literal(globPattern = globPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemWatcher]
   }
   
-  @scala.inline
-  implicit class FileSystemWatcherMutableBuilder[Self <: FileSystemWatcher] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemWatcher](x: Self) {
     
-    @scala.inline
-    def setGlobPattern(value: String): Self = StObject.set(x, "globPattern", value.asInstanceOf[js.Any])
+    inline def setGlobPattern(value: String): Self = StObject.set(x, "globPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: Double): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Double): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

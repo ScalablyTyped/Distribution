@@ -149,80 +149,58 @@ object facepileTypesMod {
   }
   object IFacepilePersona {
     
-    @scala.inline
-    def apply(): IFacepilePersona = {
+    inline def apply(): IFacepilePersona = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFacepilePersona]
     }
     
-    @scala.inline
-    implicit class IFacepilePersonaMutableBuilder[Self <: IFacepilePersona] (val x: Self) extends AnyVal {
+    extension [Self <: IFacepilePersona](x: Self) {
       
-      @scala.inline
-      def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
+      inline def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowPhoneInitialsUndefined: Self = StObject.set(x, "allowPhoneInitials", js.undefined)
+      inline def setAllowPhoneInitialsUndefined: Self = StObject.set(x, "allowPhoneInitials", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
+      inline def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageInitialsUndefined: Self = StObject.set(x, "imageInitials", js.undefined)
+      inline def setImageInitialsUndefined: Self = StObject.set(x, "imageInitials", js.undefined)
       
-      @scala.inline
-      def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+      inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
       
-      @scala.inline
-      def setInitialsColor(value: PersonaInitialsColor): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
+      inline def setInitialsColor(value: PersonaInitialsColor): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
+      inline def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
       
-      @scala.inline
-      def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
+      inline def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
+      inline def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
       
-      @scala.inline
-      def setOnClick(
+      inline def setOnClick(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* persona */ js.UndefOr[IFacepilePersona]) => Unit
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(
+      inline def setOnMouseMove(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* persona */ js.UndefOr[IFacepilePersona]) => Unit
       ): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnMouseOut(
+      inline def setOnMouseOut(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* persona */ js.UndefOr[IFacepilePersona]) => Unit
       ): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
+      inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
-      @scala.inline
-      def setPersonaName(value: String): Self = StObject.set(x, "personaName", value.asInstanceOf[js.Any])
+      inline def setPersonaName(value: String): Self = StObject.set(x, "personaName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaNameUndefined: Self = StObject.set(x, "personaName", js.undefined)
+      inline def setPersonaNameUndefined: Self = StObject.set(x, "personaName", js.undefined)
     }
   }
   
@@ -305,135 +283,94 @@ object facepileTypesMod {
   }
   object IFacepileProps {
     
-    @scala.inline
-    def apply(personas: js.Array[IFacepilePersona]): IFacepileProps = {
+    inline def apply(personas: js.Array[IFacepilePersona]): IFacepileProps = {
       val __obj = js.Dynamic.literal(personas = personas.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFacepileProps]
     }
     
-    @scala.inline
-    implicit class IFacepilePropsMutableBuilder[Self <: IFacepileProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFacepileProps](x: Self) {
       
-      @scala.inline
-      def setAddButtonProps(value: IButtonProps): Self = StObject.set(x, "addButtonProps", value.asInstanceOf[js.Any])
+      inline def setAddButtonProps(value: IButtonProps): Self = StObject.set(x, "addButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddButtonPropsUndefined: Self = StObject.set(x, "addButtonProps", js.undefined)
+      inline def setAddButtonPropsUndefined: Self = StObject.set(x, "addButtonProps", js.undefined)
       
-      @scala.inline
-      def setAriaDescription(value: String): Self = StObject.set(x, "ariaDescription", value.asInstanceOf[js.Any])
+      inline def setAriaDescription(value: String): Self = StObject.set(x, "ariaDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescriptionUndefined: Self = StObject.set(x, "ariaDescription", js.undefined)
+      inline def setAriaDescriptionUndefined: Self = StObject.set(x, "ariaDescription", js.undefined)
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setChevronButtonProps(value: IButtonProps): Self = StObject.set(x, "chevronButtonProps", value.asInstanceOf[js.Any])
+      inline def setChevronButtonProps(value: IButtonProps): Self = StObject.set(x, "chevronButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChevronButtonPropsUndefined: Self = StObject.set(x, "chevronButtonProps", js.undefined)
+      inline def setChevronButtonPropsUndefined: Self = StObject.set(x, "chevronButtonProps", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IFacepile]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IFacepile]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IFacepile | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IFacepile | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setGetPersonaProps(value: /* persona */ IFacepilePersona => IPersonaSharedProps): Self = StObject.set(x, "getPersonaProps", js.Any.fromFunction1(value))
+      inline def setGetPersonaProps(value: /* persona */ IFacepilePersona => IPersonaSharedProps): Self = StObject.set(x, "getPersonaProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPersonaPropsUndefined: Self = StObject.set(x, "getPersonaProps", js.undefined)
+      inline def setGetPersonaPropsUndefined: Self = StObject.set(x, "getPersonaProps", js.undefined)
       
-      @scala.inline
-      def setMaxDisplayablePersonas(value: Double): Self = StObject.set(x, "maxDisplayablePersonas", value.asInstanceOf[js.Any])
+      inline def setMaxDisplayablePersonas(value: Double): Self = StObject.set(x, "maxDisplayablePersonas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDisplayablePersonasUndefined: Self = StObject.set(x, "maxDisplayablePersonas", js.undefined)
+      inline def setMaxDisplayablePersonasUndefined: Self = StObject.set(x, "maxDisplayablePersonas", js.undefined)
       
-      @scala.inline
-      def setOnRenderPersona(
+      inline def setOnRenderPersona(
         value: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderPersona", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderPersonaCoin(
+      inline def setOnRenderPersonaCoin(
         value: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderPersonaCoin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderPersonaCoinUndefined: Self = StObject.set(x, "onRenderPersonaCoin", js.undefined)
+      inline def setOnRenderPersonaCoinUndefined: Self = StObject.set(x, "onRenderPersonaCoin", js.undefined)
       
-      @scala.inline
-      def setOnRenderPersonaUndefined: Self = StObject.set(x, "onRenderPersona", js.undefined)
+      inline def setOnRenderPersonaUndefined: Self = StObject.set(x, "onRenderPersona", js.undefined)
       
-      @scala.inline
-      def setOverflowButtonProps(value: IButtonProps): Self = StObject.set(x, "overflowButtonProps", value.asInstanceOf[js.Any])
+      inline def setOverflowButtonProps(value: IButtonProps): Self = StObject.set(x, "overflowButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButtonPropsUndefined: Self = StObject.set(x, "overflowButtonProps", js.undefined)
+      inline def setOverflowButtonPropsUndefined: Self = StObject.set(x, "overflowButtonProps", js.undefined)
       
-      @scala.inline
-      def setOverflowButtonType(value: OverflowButtonType): Self = StObject.set(x, "overflowButtonType", value.asInstanceOf[js.Any])
+      inline def setOverflowButtonType(value: OverflowButtonType): Self = StObject.set(x, "overflowButtonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButtonTypeUndefined: Self = StObject.set(x, "overflowButtonType", js.undefined)
+      inline def setOverflowButtonTypeUndefined: Self = StObject.set(x, "overflowButtonType", js.undefined)
       
-      @scala.inline
-      def setOverflowPersonas(value: js.Array[IFacepilePersona]): Self = StObject.set(x, "overflowPersonas", value.asInstanceOf[js.Any])
+      inline def setOverflowPersonas(value: js.Array[IFacepilePersona]): Self = StObject.set(x, "overflowPersonas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowPersonasUndefined: Self = StObject.set(x, "overflowPersonas", js.undefined)
+      inline def setOverflowPersonasUndefined: Self = StObject.set(x, "overflowPersonas", js.undefined)
       
-      @scala.inline
-      def setOverflowPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "overflowPersonas", js.Array(value :_*))
+      inline def setOverflowPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "overflowPersonas", js.Array(value :_*))
       
-      @scala.inline
-      def setPersonaSize(value: PersonaSize): Self = StObject.set(x, "personaSize", value.asInstanceOf[js.Any])
+      inline def setPersonaSize(value: PersonaSize): Self = StObject.set(x, "personaSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaSizeUndefined: Self = StObject.set(x, "personaSize", js.undefined)
+      inline def setPersonaSizeUndefined: Self = StObject.set(x, "personaSize", js.undefined)
       
-      @scala.inline
-      def setPersonas(value: js.Array[IFacepilePersona]): Self = StObject.set(x, "personas", value.asInstanceOf[js.Any])
+      inline def setPersonas(value: js.Array[IFacepilePersona]): Self = StObject.set(x, "personas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "personas", js.Array(value :_*))
+      inline def setPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "personas", js.Array(value :_*))
       
-      @scala.inline
-      def setShowAddButton(value: Boolean): Self = StObject.set(x, "showAddButton", value.asInstanceOf[js.Any])
+      inline def setShowAddButton(value: Boolean): Self = StObject.set(x, "showAddButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAddButtonUndefined: Self = StObject.set(x, "showAddButton", js.undefined)
+      inline def setShowAddButtonUndefined: Self = StObject.set(x, "showAddButton", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IFacepileStyleProps => DeepPartial[IFacepileStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IFacepileStyleProps => DeepPartial[IFacepileStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -456,29 +393,22 @@ object facepileTypesMod {
   }
   object IFacepileStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IFacepileStyleProps = {
+    inline def apply(theme: ITheme): IFacepileStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFacepileStyleProps]
     }
     
-    @scala.inline
-    implicit class IFacepileStylePropsMutableBuilder[Self <: IFacepileStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFacepileStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setSpacingAroundItemButton(value: Double): Self = StObject.set(x, "spacingAroundItemButton", value.asInstanceOf[js.Any])
+      inline def setSpacingAroundItemButton(value: Double): Self = StObject.set(x, "spacingAroundItemButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingAroundItemButtonUndefined: Self = StObject.set(x, "spacingAroundItemButton", js.undefined)
+      inline def setSpacingAroundItemButtonUndefined: Self = StObject.set(x, "spacingAroundItemButton", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -509,104 +439,72 @@ object facepileTypesMod {
   }
   object IFacepileStyles {
     
-    @scala.inline
-    def apply(): IFacepileStyles = {
+    inline def apply(): IFacepileStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFacepileStyles]
     }
     
-    @scala.inline
-    implicit class IFacepileStylesMutableBuilder[Self <: IFacepileStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IFacepileStyles](x: Self) {
       
-      @scala.inline
-      def setAddButton(value: IStyle): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
+      inline def setAddButton(value: IStyle): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddButtonNull: Self = StObject.set(x, "addButton", null)
+      inline def setAddButtonNull: Self = StObject.set(x, "addButton", null)
       
-      @scala.inline
-      def setAddButtonUndefined: Self = StObject.set(x, "addButton", js.undefined)
+      inline def setAddButtonUndefined: Self = StObject.set(x, "addButton", js.undefined)
       
-      @scala.inline
-      def setDescriptiveOverflowButton(value: IStyle): Self = StObject.set(x, "descriptiveOverflowButton", value.asInstanceOf[js.Any])
+      inline def setDescriptiveOverflowButton(value: IStyle): Self = StObject.set(x, "descriptiveOverflowButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptiveOverflowButtonNull: Self = StObject.set(x, "descriptiveOverflowButton", null)
+      inline def setDescriptiveOverflowButtonNull: Self = StObject.set(x, "descriptiveOverflowButton", null)
       
-      @scala.inline
-      def setDescriptiveOverflowButtonUndefined: Self = StObject.set(x, "descriptiveOverflowButton", js.undefined)
+      inline def setDescriptiveOverflowButtonUndefined: Self = StObject.set(x, "descriptiveOverflowButton", js.undefined)
       
-      @scala.inline
-      def setItemButton(value: IStyle): Self = StObject.set(x, "itemButton", value.asInstanceOf[js.Any])
+      inline def setItemButton(value: IStyle): Self = StObject.set(x, "itemButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemButtonNull: Self = StObject.set(x, "itemButton", null)
+      inline def setItemButtonNull: Self = StObject.set(x, "itemButton", null)
       
-      @scala.inline
-      def setItemButtonUndefined: Self = StObject.set(x, "itemButton", js.undefined)
+      inline def setItemButtonUndefined: Self = StObject.set(x, "itemButton", js.undefined)
       
-      @scala.inline
-      def setItemContainer(value: IStyle): Self = StObject.set(x, "itemContainer", value.asInstanceOf[js.Any])
+      inline def setItemContainer(value: IStyle): Self = StObject.set(x, "itemContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemContainerNull: Self = StObject.set(x, "itemContainer", null)
+      inline def setItemContainerNull: Self = StObject.set(x, "itemContainer", null)
       
-      @scala.inline
-      def setItemContainerUndefined: Self = StObject.set(x, "itemContainer", js.undefined)
+      inline def setItemContainerUndefined: Self = StObject.set(x, "itemContainer", js.undefined)
       
-      @scala.inline
-      def setMember(value: IStyle): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
+      inline def setMember(value: IStyle): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberNull: Self = StObject.set(x, "member", null)
+      inline def setMemberNull: Self = StObject.set(x, "member", null)
       
-      @scala.inline
-      def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
+      inline def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
       
-      @scala.inline
-      def setMembers(value: IStyle): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: IStyle): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersNull: Self = StObject.set(x, "members", null)
+      inline def setMembersNull: Self = StObject.set(x, "members", null)
       
-      @scala.inline
-      def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+      inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      @scala.inline
-      def setOverflowButton(value: IStyle): Self = StObject.set(x, "overflowButton", value.asInstanceOf[js.Any])
+      inline def setOverflowButton(value: IStyle): Self = StObject.set(x, "overflowButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButtonNull: Self = StObject.set(x, "overflowButton", null)
+      inline def setOverflowButtonNull: Self = StObject.set(x, "overflowButton", null)
       
-      @scala.inline
-      def setOverflowButtonUndefined: Self = StObject.set(x, "overflowButton", js.undefined)
+      inline def setOverflowButtonUndefined: Self = StObject.set(x, "overflowButton", js.undefined)
       
-      @scala.inline
-      def setOverflowInitialsIcon(value: IStyle): Self = StObject.set(x, "overflowInitialsIcon", value.asInstanceOf[js.Any])
+      inline def setOverflowInitialsIcon(value: IStyle): Self = StObject.set(x, "overflowInitialsIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowInitialsIconNull: Self = StObject.set(x, "overflowInitialsIcon", null)
+      inline def setOverflowInitialsIconNull: Self = StObject.set(x, "overflowInitialsIcon", null)
       
-      @scala.inline
-      def setOverflowInitialsIconUndefined: Self = StObject.set(x, "overflowInitialsIcon", js.undefined)
+      inline def setOverflowInitialsIconUndefined: Self = StObject.set(x, "overflowInitialsIcon", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setScreenReaderOnly(value: IStyle): Self = StObject.set(x, "screenReaderOnly", value.asInstanceOf[js.Any])
+      inline def setScreenReaderOnly(value: IStyle): Self = StObject.set(x, "screenReaderOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenReaderOnlyNull: Self = StObject.set(x, "screenReaderOnly", null)
+      inline def setScreenReaderOnlyNull: Self = StObject.set(x, "screenReaderOnly", null)
       
-      @scala.inline
-      def setScreenReaderOnlyUndefined: Self = StObject.set(x, "screenReaderOnly", js.undefined)
+      inline def setScreenReaderOnlyUndefined: Self = StObject.set(x, "screenReaderOnly", js.undefined)
     }
   }
 }

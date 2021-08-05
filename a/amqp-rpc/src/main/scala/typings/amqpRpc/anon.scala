@@ -14,26 +14,20 @@ object anon {
   }
   object AutoDelete {
     
-    @scala.inline
-    def apply(): AutoDelete = {
+    inline def apply(): AutoDelete = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoDelete]
     }
     
-    @scala.inline
-    implicit class AutoDeleteMutableBuilder[Self <: AutoDelete] (val x: Self) extends AnyVal {
+    extension [Self <: AutoDelete](x: Self) {
       
-      @scala.inline
-      def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
+      inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
+      inline def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     }
   }
   
@@ -43,20 +37,16 @@ object anon {
   }
   object DefaultExchangeName {
     
-    @scala.inline
-    def apply(): DefaultExchangeName = {
+    inline def apply(): DefaultExchangeName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultExchangeName]
     }
     
-    @scala.inline
-    implicit class DefaultExchangeNameMutableBuilder[Self <: DefaultExchangeName] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultExchangeName](x: Self) {
       
-      @scala.inline
-      def setDefaultExchangeName(value: String): Self = StObject.set(x, "defaultExchangeName", value.asInstanceOf[js.Any])
+      inline def setDefaultExchangeName(value: String): Self = StObject.set(x, "defaultExchangeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExchangeNameUndefined: Self = StObject.set(x, "defaultExchangeName", js.undefined)
+      inline def setDefaultExchangeNameUndefined: Self = StObject.set(x, "defaultExchangeName", js.undefined)
     }
   }
 }

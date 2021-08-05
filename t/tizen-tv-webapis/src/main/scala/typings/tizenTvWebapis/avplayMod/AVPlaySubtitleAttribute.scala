@@ -14,22 +14,17 @@ trait AVPlaySubtitleAttribute extends StObject {
 }
 object AVPlaySubtitleAttribute {
   
-  @scala.inline
-  def apply(attr_type: String, start_pos: Double, stop_pos: Double): AVPlaySubtitleAttribute = {
+  inline def apply(attr_type: String, start_pos: Double, stop_pos: Double): AVPlaySubtitleAttribute = {
     val __obj = js.Dynamic.literal(attr_type = attr_type.asInstanceOf[js.Any], start_pos = start_pos.asInstanceOf[js.Any], stop_pos = stop_pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[AVPlaySubtitleAttribute]
   }
   
-  @scala.inline
-  implicit class AVPlaySubtitleAttributeMutableBuilder[Self <: AVPlaySubtitleAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: AVPlaySubtitleAttribute](x: Self) {
     
-    @scala.inline
-    def setAttr_type(value: String): Self = StObject.set(x, "attr_type", value.asInstanceOf[js.Any])
+    inline def setAttr_type(value: String): Self = StObject.set(x, "attr_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_pos(value: Double): Self = StObject.set(x, "start_pos", value.asInstanceOf[js.Any])
+    inline def setStart_pos(value: Double): Self = StObject.set(x, "start_pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop_pos(value: Double): Self = StObject.set(x, "stop_pos", value.asInstanceOf[js.Any])
+    inline def setStop_pos(value: Double): Self = StObject.set(x, "stop_pos", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait InAppPurchasesFound extends StObject {
 }
 object InAppPurchasesFound {
   
-  @scala.inline
-  def apply(): InAppPurchasesFound = {
+  inline def apply(): InAppPurchasesFound = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InAppPurchasesFound]
   }
   
-  @scala.inline
-  implicit class InAppPurchasesFoundMutableBuilder[Self <: InAppPurchasesFound] (val x: Self) extends AnyVal {
+  extension [Self <: InAppPurchasesFound](x: Self) {
     
-    @scala.inline
-    def setInAppPurchasesFlowsExplored(value: Double): Self = StObject.set(x, "inAppPurchasesFlowsExplored", value.asInstanceOf[js.Any])
+    inline def setInAppPurchasesFlowsExplored(value: Double): Self = StObject.set(x, "inAppPurchasesFlowsExplored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAppPurchasesFlowsExploredUndefined: Self = StObject.set(x, "inAppPurchasesFlowsExplored", js.undefined)
+    inline def setInAppPurchasesFlowsExploredUndefined: Self = StObject.set(x, "inAppPurchasesFlowsExplored", js.undefined)
     
-    @scala.inline
-    def setInAppPurchasesFlowsStarted(value: Double): Self = StObject.set(x, "inAppPurchasesFlowsStarted", value.asInstanceOf[js.Any])
+    inline def setInAppPurchasesFlowsStarted(value: Double): Self = StObject.set(x, "inAppPurchasesFlowsStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAppPurchasesFlowsStartedUndefined: Self = StObject.set(x, "inAppPurchasesFlowsStarted", js.undefined)
+    inline def setInAppPurchasesFlowsStartedUndefined: Self = StObject.set(x, "inAppPurchasesFlowsStarted", js.undefined)
   }
 }

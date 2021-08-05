@@ -33,28 +33,21 @@ trait Module extends StObject {
 }
 object Module {
   
-  @scala.inline
-  def apply(description: String, name: String, status: String, support_level: String, use_count: Double): Module = {
+  inline def apply(description: String, name: String, status: String, support_level: String, use_count: Double): Module = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], support_level = support_level.asInstanceOf[js.Any], use_count = use_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
   
-  @scala.inline
-  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+  extension [Self <: Module](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport_level(value: String): Self = StObject.set(x, "support_level", value.asInstanceOf[js.Any])
+    inline def setSupport_level(value: String): Self = StObject.set(x, "support_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_count(value: Double): Self = StObject.set(x, "use_count", value.asInstanceOf[js.Any])
+    inline def setUse_count(value: Double): Self = StObject.set(x, "use_count", value.asInstanceOf[js.Any])
   }
 }

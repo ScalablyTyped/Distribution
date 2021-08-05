@@ -16,17 +16,14 @@ object anon {
   }
   object Connection {
     
-    @scala.inline
-    def apply(connection: typings.cordovaPluginNetworkInformation.Connection): typings.cordovaPluginNetworkInformation.anon.Connection = {
+    inline def apply(connection: typings.cordovaPluginNetworkInformation.Connection): typings.cordovaPluginNetworkInformation.anon.Connection = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cordovaPluginNetworkInformation.anon.Connection]
     }
     
-    @scala.inline
-    implicit class ConnectionMutableBuilder[Self <: typings.cordovaPluginNetworkInformation.anon.Connection] (val x: Self) extends AnyVal {
+    extension [Self <: typings.cordovaPluginNetworkInformation.anon.Connection](x: Self) {
       
-      @scala.inline
-      def setConnection(value: typings.cordovaPluginNetworkInformation.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: typings.cordovaPluginNetworkInformation.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     }
   }
 }

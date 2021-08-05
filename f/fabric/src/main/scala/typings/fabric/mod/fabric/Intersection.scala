@@ -20,8 +20,7 @@ object Intersection {
   /**
     * Checks if one line intersects another
     */
-  @scala.inline
-  def intersectLineLine(
+  inline def intersectLineLine(
     a1: typings.fabric.fabricImplMod.Point,
     a2: typings.fabric.fabricImplMod.Point,
     b1: typings.fabric.fabricImplMod.Point,
@@ -31,8 +30,7 @@ object Intersection {
   /**
     * Checks if line intersects polygon
     */
-  @scala.inline
-  def intersectLinePolygon(
+  inline def intersectLinePolygon(
     a1: typings.fabric.fabricImplMod.Point,
     a2: typings.fabric.fabricImplMod.Point,
     points: js.Array[typings.fabric.fabricImplMod.Point]
@@ -41,8 +39,7 @@ object Intersection {
   /**
     * Checks if polygon intersects another polygon
     */
-  @scala.inline
-  def intersectPolygonPolygon(
+  inline def intersectPolygonPolygon(
     points1: js.Array[typings.fabric.fabricImplMod.Point],
     points2: js.Array[typings.fabric.fabricImplMod.Point]
   ): typings.fabric.fabricImplMod.Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonPolygon")(points1.asInstanceOf[js.Any], points2.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Intersection]
@@ -50,6 +47,5 @@ object Intersection {
   /**
     * Checks if polygon intersects rectangle
     */
-  @scala.inline
-  def intersectPolygonRectangle(points: js.Array[typings.fabric.fabricImplMod.Point], r1: Double, r2: Double): typings.fabric.fabricImplMod.Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonRectangle")(points.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Intersection]
+  inline def intersectPolygonRectangle(points: js.Array[typings.fabric.fabricImplMod.Point], r1: Double, r2: Double): typings.fabric.fabricImplMod.Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonRectangle")(points.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Intersection]
 }

@@ -11,19 +11,15 @@ trait DimensionValue extends StObject {
 }
 object DimensionValue {
   
-  @scala.inline
-  def apply(): DimensionValue = {
+  inline def apply(): DimensionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionValue]
   }
   
-  @scala.inline
-  implicit class DimensionValueMutableBuilder[Self <: DimensionValue] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

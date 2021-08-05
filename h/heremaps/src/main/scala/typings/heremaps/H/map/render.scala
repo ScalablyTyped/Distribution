@@ -207,8 +207,7 @@ object render {
   }
   object RenderingParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: typings.heremaps.H.geo.Rect,
       cacheOnly: Boolean,
       pixelRatio: Double,
@@ -222,32 +221,23 @@ object render {
       __obj.asInstanceOf[RenderingParams]
     }
     
-    @scala.inline
-    implicit class RenderingParamsMutableBuilder[Self <: RenderingParams] (val x: Self) extends AnyVal {
+    extension [Self <: RenderingParams](x: Self) {
       
-      @scala.inline
-      def setBounds(value: typings.heremaps.H.geo.Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: typings.heremaps.H.geo.Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheOnly(value: Boolean): Self = StObject.set(x, "cacheOnly", value.asInstanceOf[js.Any])
+      inline def setCacheOnly(value: Boolean): Self = StObject.set(x, "cacheOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityCenter(value: Point): Self = StObject.set(x, "priorityCenter", value.asInstanceOf[js.Any])
+      inline def setPriorityCenter(value: Point): Self = StObject.set(x, "priorityCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjection(value: PixelProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: PixelProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenCenter(value: Point): Self = StObject.set(x, "screenCenter", value.asInstanceOf[js.Any])
+      inline def setScreenCenter(value: Point): Self = StObject.set(x, "screenCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
   
@@ -311,29 +301,22 @@ object render {
       }
       object Options {
         
-        @scala.inline
-        def apply(pixelRatio: Double): Options = {
+        inline def apply(pixelRatio: Double): Options = {
           val __obj = js.Dynamic.literal(pixelRatio = pixelRatio.asInstanceOf[js.Any])
           __obj.asInstanceOf[Options]
         }
         
-        @scala.inline
-        implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+        extension [Self <: Options](x: Self) {
           
-          @scala.inline
-          def setEnableSubpixelRendering(value: Boolean): Self = StObject.set(x, "enableSubpixelRendering", value.asInstanceOf[js.Any])
+          inline def setEnableSubpixelRendering(value: Boolean): Self = StObject.set(x, "enableSubpixelRendering", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEnableSubpixelRenderingUndefined: Self = StObject.set(x, "enableSubpixelRendering", js.undefined)
+          inline def setEnableSubpixelRenderingUndefined: Self = StObject.set(x, "enableSubpixelRendering", js.undefined)
           
-          @scala.inline
-          def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+          inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRenderBaseBackground(value: js.Object): Self = StObject.set(x, "renderBaseBackground", value.asInstanceOf[js.Any])
+          inline def setRenderBaseBackground(value: js.Object): Self = StObject.set(x, "renderBaseBackground", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRenderBaseBackgroundUndefined: Self = StObject.set(x, "renderBaseBackground", js.undefined)
+          inline def setRenderBaseBackgroundUndefined: Self = StObject.set(x, "renderBaseBackground", js.undefined)
         }
       }
     }

@@ -18,22 +18,17 @@ trait StopDeploymentInput extends StObject {
 }
 object StopDeploymentInput {
   
-  @scala.inline
-  def apply(deploymentId: DeploymentId): StopDeploymentInput = {
+  inline def apply(deploymentId: DeploymentId): StopDeploymentInput = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopDeploymentInput]
   }
   
-  @scala.inline
-  implicit class StopDeploymentInputMutableBuilder[Self <: StopDeploymentInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopDeploymentInput](x: Self) {
     
-    @scala.inline
-    def setAutoRollbackEnabled(value: NullableBoolean): Self = StObject.set(x, "autoRollbackEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoRollbackEnabled(value: NullableBoolean): Self = StObject.set(x, "autoRollbackEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRollbackEnabledUndefined: Self = StObject.set(x, "autoRollbackEnabled", js.undefined)
+    inline def setAutoRollbackEnabledUndefined: Self = StObject.set(x, "autoRollbackEnabled", js.undefined)
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
   }
 }

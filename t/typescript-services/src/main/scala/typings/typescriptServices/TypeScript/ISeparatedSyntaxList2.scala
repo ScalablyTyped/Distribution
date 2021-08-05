@@ -8,11 +8,11 @@ trait ISeparatedSyntaxList2
   extends StObject
      with AST {
   
-  var _fileName: js.Any
+  /* private */ var _fileName: js.Any
   
-  var _separatorCount: js.Any
+  /* private */ var _separatorCount: js.Any
   
-  var members: js.Any
+  /* private */ var members: js.Any
   
   def nonSeparatorAt(index: Double): AST
   
@@ -26,8 +26,7 @@ trait ISeparatedSyntaxList2
 }
 object ISeparatedSyntaxList2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _fileName: js.Any,
@@ -60,31 +59,22 @@ object ISeparatedSyntaxList2 {
     __obj.asInstanceOf[ISeparatedSyntaxList2]
   }
   
-  @scala.inline
-  implicit class ISeparatedSyntaxList2MutableBuilder[Self <: ISeparatedSyntaxList2] (val x: Self) extends AnyVal {
+  extension [Self <: ISeparatedSyntaxList2](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonSeparatorAt(value: Double => AST): Self = StObject.set(x, "nonSeparatorAt", js.Any.fromFunction1(value))
+    inline def setNonSeparatorAt(value: Double => AST): Self = StObject.set(x, "nonSeparatorAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNonSeparatorCount(value: () => Double): Self = StObject.set(x, "nonSeparatorCount", js.Any.fromFunction0(value))
+    inline def setNonSeparatorCount(value: () => Double): Self = StObject.set(x, "nonSeparatorCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNonSeparatorIndexOf(value: AST => Double): Self = StObject.set(x, "nonSeparatorIndexOf", js.Any.fromFunction1(value))
+    inline def setNonSeparatorIndexOf(value: AST => Double): Self = StObject.set(x, "nonSeparatorIndexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparatorCount(value: () => Double): Self = StObject.set(x, "separatorCount", js.Any.fromFunction0(value))
+    inline def setSeparatorCount(value: () => Double): Self = StObject.set(x, "separatorCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStructuralEquals(value: (ISeparatedSyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ISeparatedSyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_separatorCount(value: js.Any): Self = StObject.set(x, "_separatorCount", value.asInstanceOf[js.Any])
+    inline def set_separatorCount(value: js.Any): Self = StObject.set(x, "_separatorCount", value.asInstanceOf[js.Any])
   }
 }

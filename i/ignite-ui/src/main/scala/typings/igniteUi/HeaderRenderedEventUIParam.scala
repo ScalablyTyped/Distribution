@@ -19,25 +19,19 @@ trait HeaderRenderedEventUIParam extends StObject {
 }
 object HeaderRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): HeaderRenderedEventUIParam = {
+  inline def apply(): HeaderRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class HeaderRenderedEventUIParamMutableBuilder[Self <: HeaderRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTable(value: Element): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Element): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

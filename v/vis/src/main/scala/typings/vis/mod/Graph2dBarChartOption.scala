@@ -16,37 +16,27 @@ trait Graph2dBarChartOption extends StObject {
 }
 object Graph2dBarChartOption {
   
-  @scala.inline
-  def apply(): Graph2dBarChartOption = {
+  inline def apply(): Graph2dBarChartOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Graph2dBarChartOption]
   }
   
-  @scala.inline
-  implicit class Graph2dBarChartOptionMutableBuilder[Self <: Graph2dBarChartOption] (val x: Self) extends AnyVal {
+  extension [Self <: Graph2dBarChartOption](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Graph2dBarChartAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Graph2dBarChartAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setSideBySide(value: Boolean): Self = StObject.set(x, "sideBySide", value.asInstanceOf[js.Any])
+    inline def setSideBySide(value: Boolean): Self = StObject.set(x, "sideBySide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideBySideUndefined: Self = StObject.set(x, "sideBySide", js.undefined)
+    inline def setSideBySideUndefined: Self = StObject.set(x, "sideBySide", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

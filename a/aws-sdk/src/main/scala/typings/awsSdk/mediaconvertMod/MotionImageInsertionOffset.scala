@@ -18,25 +18,19 @@ trait MotionImageInsertionOffset extends StObject {
 }
 object MotionImageInsertionOffset {
   
-  @scala.inline
-  def apply(): MotionImageInsertionOffset = {
+  inline def apply(): MotionImageInsertionOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionImageInsertionOffset]
   }
   
-  @scala.inline
-  implicit class MotionImageInsertionOffsetMutableBuilder[Self <: MotionImageInsertionOffset] (val x: Self) extends AnyVal {
+  extension [Self <: MotionImageInsertionOffset](x: Self) {
     
-    @scala.inline
-    def setImageX(value: integerMin0Max2147483647): Self = StObject.set(x, "ImageX", value.asInstanceOf[js.Any])
+    inline def setImageX(value: integerMin0Max2147483647): Self = StObject.set(x, "ImageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageXUndefined: Self = StObject.set(x, "ImageX", js.undefined)
+    inline def setImageXUndefined: Self = StObject.set(x, "ImageX", js.undefined)
     
-    @scala.inline
-    def setImageY(value: integerMin0Max2147483647): Self = StObject.set(x, "ImageY", value.asInstanceOf[js.Any])
+    inline def setImageY(value: integerMin0Max2147483647): Self = StObject.set(x, "ImageY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageYUndefined: Self = StObject.set(x, "ImageY", js.undefined)
+    inline def setImageYUndefined: Self = StObject.set(x, "ImageY", js.undefined)
   }
 }

@@ -46,37 +46,27 @@ trait IntlListFormatOptionsvalu extends StObject {
 }
 object IntlListFormatOptionsvalu {
   
-  @scala.inline
-  def apply(value: js.Array[ReactNode]): IntlListFormatOptionsvalu = {
+  inline def apply(value: js.Array[ReactNode]): IntlListFormatOptionsvalu = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntlListFormatOptionsvalu]
   }
   
-  @scala.inline
-  implicit class IntlListFormatOptionsvaluMutableBuilder[Self <: IntlListFormatOptionsvalu] (val x: Self) extends AnyVal {
+  extension [Self <: IntlListFormatOptionsvalu](x: Self) {
     
-    @scala.inline
-    def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+    inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
-    @scala.inline
-    def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: conjunction | disjunction | unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: conjunction | disjunction | unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Array[ReactNode]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[ReactNode]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: ReactNode*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: ReactNode*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

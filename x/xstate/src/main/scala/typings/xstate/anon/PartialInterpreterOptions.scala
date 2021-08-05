@@ -25,55 +25,39 @@ trait PartialInterpreterOptions extends StObject {
 }
 object PartialInterpreterOptions {
   
-  @scala.inline
-  def apply(): PartialInterpreterOptions = {
+  inline def apply(): PartialInterpreterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialInterpreterOptions]
   }
   
-  @scala.inline
-  implicit class PartialInterpreterOptionsMutableBuilder[Self <: PartialInterpreterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialInterpreterOptions](x: Self) {
     
-    @scala.inline
-    def setClock(value: Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
+    inline def setClock(value: Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
+    inline def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
     
-    @scala.inline
-    def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
+    inline def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferEventsUndefined: Self = StObject.set(x, "deferEvents", js.undefined)
+    inline def setDeferEventsUndefined: Self = StObject.set(x, "deferEvents", js.undefined)
     
-    @scala.inline
-    def setDevTools(value: Boolean | js.Object): Self = StObject.set(x, "devTools", value.asInstanceOf[js.Any])
+    inline def setDevTools(value: Boolean | js.Object): Self = StObject.set(x, "devTools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevToolsUndefined: Self = StObject.set(x, "devTools", js.undefined)
+    inline def setDevToolsUndefined: Self = StObject.set(x, "devTools", js.undefined)
     
-    @scala.inline
-    def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+    inline def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+    inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLogger(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+    inline def setLogger(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
-    @scala.inline
-    def setParent(value: Interpreter[js.Any, js.Any, js.Any, ContextAny]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Interpreter[js.Any, js.Any, js.Any, ContextAny]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

@@ -17,19 +17,15 @@ trait CompleteEvent
 }
 object CompleteEvent {
   
-  @scala.inline
-  def apply(dur: Double, ph: COMPLETE_EVENTS): CompleteEvent = {
+  inline def apply(dur: Double, ph: COMPLETE_EVENTS): CompleteEvent = {
     val __obj = js.Dynamic.literal(dur = dur.asInstanceOf[js.Any], ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteEvent]
   }
   
-  @scala.inline
-  implicit class CompleteEventMutableBuilder[Self <: CompleteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteEvent](x: Self) {
     
-    @scala.inline
-    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
+    inline def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPh(value: COMPLETE_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: COMPLETE_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

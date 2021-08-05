@@ -10,19 +10,15 @@ trait PlotTilemapAnimationOptions extends StObject {
 }
 object PlotTilemapAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotTilemapAnimationOptions = {
+  inline def apply(): PlotTilemapAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotTilemapAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotTilemapAnimationOptionsMutableBuilder[Self <: PlotTilemapAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotTilemapAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

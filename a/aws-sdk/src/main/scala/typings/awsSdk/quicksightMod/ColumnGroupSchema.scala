@@ -18,28 +18,21 @@ trait ColumnGroupSchema extends StObject {
 }
 object ColumnGroupSchema {
   
-  @scala.inline
-  def apply(): ColumnGroupSchema = {
+  inline def apply(): ColumnGroupSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnGroupSchema]
   }
   
-  @scala.inline
-  implicit class ColumnGroupSchemaMutableBuilder[Self <: ColumnGroupSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnGroupSchema](x: Self) {
     
-    @scala.inline
-    def setColumnGroupColumnSchemaList(value: ColumnGroupColumnSchemaList): Self = StObject.set(x, "ColumnGroupColumnSchemaList", value.asInstanceOf[js.Any])
+    inline def setColumnGroupColumnSchemaList(value: ColumnGroupColumnSchemaList): Self = StObject.set(x, "ColumnGroupColumnSchemaList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGroupColumnSchemaListUndefined: Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.undefined)
+    inline def setColumnGroupColumnSchemaListUndefined: Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.undefined)
     
-    @scala.inline
-    def setColumnGroupColumnSchemaListVarargs(value: ColumnGroupColumnSchema*): Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.Array(value :_*))
+    inline def setColumnGroupColumnSchemaListVarargs(value: ColumnGroupColumnSchema*): Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

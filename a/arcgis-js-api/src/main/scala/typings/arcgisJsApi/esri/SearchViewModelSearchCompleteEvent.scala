@@ -18,8 +18,7 @@ trait SearchViewModelSearchCompleteEvent extends StObject {
 }
 object SearchViewModelSearchCompleteEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeSourceIndex: Double,
     errors: js.Array[Error],
     numResults: Double,
@@ -30,28 +29,20 @@ object SearchViewModelSearchCompleteEvent {
     __obj.asInstanceOf[SearchViewModelSearchCompleteEvent]
   }
   
-  @scala.inline
-  implicit class SearchViewModelSearchCompleteEventMutableBuilder[Self <: SearchViewModelSearchCompleteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SearchViewModelSearchCompleteEvent](x: Self) {
     
-    @scala.inline
-    def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
+    inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[SearchViewModelSearchCompleteEventResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SearchViewModelSearchCompleteEventResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SearchViewModelSearchCompleteEventResults*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchViewModelSearchCompleteEventResults*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
+    inline def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
   }
 }

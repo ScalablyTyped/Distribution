@@ -26,9 +26,9 @@ object mod {
     def this(jsonInterface: js.Array[AbiItem], address: String, options: ContractOptions) = this()
     def this(jsonInterface: js.Array[AbiItem], address: Unit, options: ContractOptions) = this()
     
-    var _address: String = js.native
+    /* private */ var _address: String = js.native
     
-    var _jsonInterface: js.Array[AbiItem] = js.native
+    /* private */ var _jsonInterface: js.Array[AbiItem] = js.native
     
     var defaultAccount: String | Null = js.native
     
@@ -83,32 +83,24 @@ object mod {
   }
   object CallOptions {
     
-    @scala.inline
-    def apply(): CallOptions = {
+    inline def apply(): CallOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallOptions]
     }
     
-    @scala.inline
-    implicit class CallOptionsMutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CallOptions](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
-      @scala.inline
-      def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
     }
   }
   
@@ -128,38 +120,28 @@ object mod {
   }
   object ContractOptions {
     
-    @scala.inline
-    def apply(): ContractOptions = {
+    inline def apply(): ContractOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContractOptions]
     }
     
-    @scala.inline
-    implicit class ContractOptionsMutableBuilder[Self <: ContractOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ContractOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
-      @scala.inline
-      def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
     }
   }
   
@@ -190,26 +172,20 @@ object mod {
   }
   object DeployOptions {
     
-    @scala.inline
-    def apply(data: String): DeployOptions = {
+    inline def apply(data: String): DeployOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeployOptions]
     }
     
-    @scala.inline
-    implicit class DeployOptionsMutableBuilder[Self <: DeployOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeployOptions](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+      inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      @scala.inline
-      def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,32 +199,24 @@ object mod {
   }
   object EstimateGasOptions {
     
-    @scala.inline
-    def apply(): EstimateGasOptions = {
+    inline def apply(): EstimateGasOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EstimateGasOptions]
     }
     
-    @scala.inline
-    implicit class EstimateGasOptionsMutableBuilder[Self <: EstimateGasOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EstimateGasOptions](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String | ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String | ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -276,8 +244,7 @@ object mod {
   }
   object EventData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       blockHash: String,
       blockNumber: Double,
@@ -293,38 +260,27 @@ object mod {
       __obj.asInstanceOf[EventData]
     }
     
-    @scala.inline
-    implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+    extension [Self <: EventData](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+      inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
+      inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
+      inline def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: Data): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Data): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
+      inline def setReturnValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
+      inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+      inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,20 +292,16 @@ object mod {
   }
   object EventOptions {
     
-    @scala.inline
-    def apply(): EventOptions = {
+    inline def apply(): EventOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventOptions]
     }
     
-    @scala.inline
-    implicit class EventOptionsMutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EventOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     }
   }
   
@@ -365,23 +317,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(address: String, jsonInterface: js.Array[AbiItem]): Options = {
+    inline def apply(address: String, jsonInterface: js.Array[AbiItem]): Options = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], jsonInterface = jsonInterface.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonInterface(value: js.Array[AbiItem]): Self = StObject.set(x, "jsonInterface", value.asInstanceOf[js.Any])
+      inline def setJsonInterface(value: js.Array[AbiItem]): Self = StObject.set(x, "jsonInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonInterfaceVarargs(value: AbiItem*): Self = StObject.set(x, "jsonInterface", js.Array(value :_*))
+      inline def setJsonInterfaceVarargs(value: AbiItem*): Self = StObject.set(x, "jsonInterface", js.Array(value :_*))
     }
   }
   
@@ -393,20 +340,16 @@ object mod {
   }
   object PastEventOptions {
     
-    @scala.inline
-    def apply(): PastEventOptions = {
+    inline def apply(): PastEventOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PastEventOptions]
     }
     
-    @scala.inline
-    implicit class PastEventOptionsMutableBuilder[Self <: PastEventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PastEventOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     }
   }
   
@@ -422,35 +365,26 @@ object mod {
   }
   object SendOptions {
     
-    @scala.inline
-    def apply(from: String): SendOptions = {
+    inline def apply(from: String): SendOptions = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendOptions]
     }
     
-    @scala.inline
-    implicit class SendOptionsMutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SendOptions](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
-      @scala.inline
-      def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String | ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String | ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

@@ -54,89 +54,62 @@ object inviterOptionsMod {
   }
   object InviterOptions {
     
-    @scala.inline
-    def apply(): InviterOptions = {
+    inline def apply(): InviterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InviterOptions]
     }
     
-    @scala.inline
-    implicit class InviterOptionsMutableBuilder[Self <: InviterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InviterOptions](x: Self) {
       
-      @scala.inline
-      def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+      inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+      inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
       
-      @scala.inline
-      def setEarlyMedia(value: Boolean): Self = StObject.set(x, "earlyMedia", value.asInstanceOf[js.Any])
+      inline def setEarlyMedia(value: Boolean): Self = StObject.set(x, "earlyMedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEarlyMediaUndefined: Self = StObject.set(x, "earlyMedia", js.undefined)
+      inline def setEarlyMediaUndefined: Self = StObject.set(x, "earlyMedia", js.undefined)
       
-      @scala.inline
-      def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      @scala.inline
-      def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setInviteWithoutSdp(value: Boolean): Self = StObject.set(x, "inviteWithoutSdp", value.asInstanceOf[js.Any])
+      inline def setInviteWithoutSdp(value: Boolean): Self = StObject.set(x, "inviteWithoutSdp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInviteWithoutSdpUndefined: Self = StObject.set(x, "inviteWithoutSdp", js.undefined)
+      inline def setInviteWithoutSdpUndefined: Self = StObject.set(x, "inviteWithoutSdp", js.undefined)
       
-      @scala.inline
-      def setParams(value: FromDisplayName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: FromDisplayName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setRenderbody(value: String): Self = StObject.set(x, "renderbody", value.asInstanceOf[js.Any])
+      inline def setRenderbody(value: String): Self = StObject.set(x, "renderbody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderbodyUndefined: Self = StObject.set(x, "renderbody", js.undefined)
+      inline def setRenderbodyUndefined: Self = StObject.set(x, "renderbody", js.undefined)
       
-      @scala.inline
-      def setRendertype(value: String): Self = StObject.set(x, "rendertype", value.asInstanceOf[js.Any])
+      inline def setRendertype(value: String): Self = StObject.set(x, "rendertype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendertypeUndefined: Self = StObject.set(x, "rendertype", js.undefined)
+      inline def setRendertypeUndefined: Self = StObject.set(x, "rendertype", js.undefined)
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
+      inline def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiersReInvite(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiersReInvite", value.asInstanceOf[js.Any])
+      inline def setSessionDescriptionHandlerModifiersReInvite(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiersReInvite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiersReInviteUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiersReInvite", js.undefined)
+      inline def setSessionDescriptionHandlerModifiersReInviteUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiersReInvite", js.undefined)
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiersReInviteVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiersReInvite", js.Array(value :_*))
+      inline def setSessionDescriptionHandlerModifiersReInviteVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiersReInvite", js.Array(value :_*))
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiersUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.undefined)
+      inline def setSessionDescriptionHandlerModifiersUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.undefined)
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value :_*))
+      inline def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setSessionDescriptionHandlerOptions(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptions", value.asInstanceOf[js.Any])
+      inline def setSessionDescriptionHandlerOptions(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionDescriptionHandlerOptionsReInvite(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptionsReInvite", value.asInstanceOf[js.Any])
+      inline def setSessionDescriptionHandlerOptionsReInvite(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptionsReInvite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionDescriptionHandlerOptionsReInviteUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptionsReInvite", js.undefined)
+      inline def setSessionDescriptionHandlerOptionsReInviteUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptionsReInvite", js.undefined)
       
-      @scala.inline
-      def setSessionDescriptionHandlerOptionsUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptions", js.undefined)
+      inline def setSessionDescriptionHandlerOptionsUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptions", js.undefined)
     }
   }
 }

@@ -34,8 +34,7 @@ trait ReadonlyNativeMethods extends StObject {
 }
 object ReadonlyNativeMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => Unit,
     focus: () => Unit,
     measure: /* callback */ MeasureOnSuccessCallback => Unit,
@@ -48,30 +47,22 @@ object ReadonlyNativeMethods {
     __obj.asInstanceOf[ReadonlyNativeMethods]
   }
   
-  @scala.inline
-  implicit class ReadonlyNativeMethodsMutableBuilder[Self <: ReadonlyNativeMethods] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyNativeMethods](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMeasure(value: /* callback */ MeasureOnSuccessCallback => Unit): Self = StObject.set(x, "measure", js.Any.fromFunction1(value))
+    inline def setMeasure(value: /* callback */ MeasureOnSuccessCallback => Unit): Self = StObject.set(x, "measure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMeasureInWindow(value: /* callback */ MeasureInWindowOnSuccessCallback => Unit): Self = StObject.set(x, "measureInWindow", js.Any.fromFunction1(value))
+    inline def setMeasureInWindow(value: /* callback */ MeasureInWindowOnSuccessCallback => Unit): Self = StObject.set(x, "measureInWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMeasureLayout(
+    inline def setMeasureLayout(
       value: (/* relativeToNativeComponentRef */ HostComponent[js.Any] | Double, /* onSuccess */ MeasureLayoutOnSuccessCallback, /* onFail */ js.Function0[Unit]) => Unit
     ): Self = StObject.set(x, "measureLayout", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRefs(value: StringDictionary[Component[js.Any, js.Any, js.Any]]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+    inline def setRefs(value: StringDictionary[Component[js.Any, js.Any, js.Any]]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetNativeProps(value: /* nativeProps */ js.Object => Unit): Self = StObject.set(x, "setNativeProps", js.Any.fromFunction1(value))
+    inline def setSetNativeProps(value: /* nativeProps */ js.Object => Unit): Self = StObject.set(x, "setNativeProps", js.Any.fromFunction1(value))
   }
 }

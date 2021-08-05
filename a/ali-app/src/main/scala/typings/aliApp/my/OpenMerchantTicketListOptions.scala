@@ -12,16 +12,13 @@ trait OpenMerchantTicketListOptions
 }
 object OpenMerchantTicketListOptions {
   
-  @scala.inline
-  def apply(partnerId: String): OpenMerchantTicketListOptions = {
+  inline def apply(partnerId: String): OpenMerchantTicketListOptions = {
     val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenMerchantTicketListOptions]
   }
   
-  @scala.inline
-  implicit class OpenMerchantTicketListOptionsMutableBuilder[Self <: OpenMerchantTicketListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenMerchantTicketListOptions](x: Self) {
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
   }
 }

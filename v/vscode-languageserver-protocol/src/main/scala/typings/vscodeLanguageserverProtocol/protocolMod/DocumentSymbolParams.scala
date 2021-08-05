@@ -17,16 +17,13 @@ trait DocumentSymbolParams
 }
 object DocumentSymbolParams {
   
-  @scala.inline
-  def apply(textDocument: TextDocumentIdentifier): DocumentSymbolParams = {
+  inline def apply(textDocument: TextDocumentIdentifier): DocumentSymbolParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSymbolParams]
   }
   
-  @scala.inline
-  implicit class DocumentSymbolParamsMutableBuilder[Self <: DocumentSymbolParams] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSymbolParams](x: Self) {
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait UIkitAlertOptions extends StObject {
 }
 object UIkitAlertOptions {
   
-  @scala.inline
-  def apply(): UIkitAlertOptions = {
+  inline def apply(): UIkitAlertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitAlertOptions]
   }
   
-  @scala.inline
-  implicit class UIkitAlertOptionsMutableBuilder[Self <: UIkitAlertOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitAlertOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def `setSel-close`(value: String): Self = StObject.set(x, "sel-close", value.asInstanceOf[js.Any])
+    inline def `setSel-close`(value: String): Self = StObject.set(x, "sel-close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSel-closeUndefined`: Self = StObject.set(x, "sel-close", js.undefined)
+    inline def `setSel-closeUndefined`: Self = StObject.set(x, "sel-close", js.undefined)
   }
 }

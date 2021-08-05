@@ -28,37 +28,27 @@ trait InsertTextRequest extends StObject {
 }
 object InsertTextRequest {
   
-  @scala.inline
-  def apply(): InsertTextRequest = {
+  inline def apply(): InsertTextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertTextRequest]
   }
   
-  @scala.inline
-  implicit class InsertTextRequestMutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTextRequest](x: Self) {
     
-    @scala.inline
-    def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+    inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+    inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
     
-    @scala.inline
-    def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
+    inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
+    inline def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

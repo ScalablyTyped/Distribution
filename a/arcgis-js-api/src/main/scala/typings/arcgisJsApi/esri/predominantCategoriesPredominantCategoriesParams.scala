@@ -41,8 +41,7 @@ trait predominantCategoriesPredominantCategoriesParams
 }
 object predominantCategoriesPredominantCategoriesParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     fields: js.Array[String],
     hasOwnProperty: PropertyKey => Boolean,
@@ -53,28 +52,20 @@ object predominantCategoriesPredominantCategoriesParams {
     __obj.asInstanceOf[predominantCategoriesPredominantCategoriesParams]
   }
   
-  @scala.inline
-  implicit class predominantCategoriesPredominantCategoriesParamsMutableBuilder[Self <: predominantCategoriesPredominantCategoriesParams] (val x: Self) extends AnyVal {
+  extension [Self <: predominantCategoriesPredominantCategoriesParams](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

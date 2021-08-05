@@ -10,19 +10,15 @@ trait PlotPcTopLineOptions extends StObject {
 }
 object PlotPcTopLineOptions {
   
-  @scala.inline
-  def apply(): PlotPcTopLineOptions = {
+  inline def apply(): PlotPcTopLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotPcTopLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotPcTopLineOptionsMutableBuilder[Self <: PlotPcTopLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotPcTopLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotPcTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotPcTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait Success[T]
 }
 object Success {
   
-  @scala.inline
-  def apply[T](id: Double, payload: T): Success[T] = {
+  inline def apply[T](id: Double, payload: T): Success[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], success = true)
     __obj.asInstanceOf[Success[T]]
   }
   
-  @scala.inline
-  implicit class SuccessMutableBuilder[Self <: Success[?], T] (val x: Self & Success[T]) extends AnyVal {
+  extension [Self <: Success[?], T](x: Self & Success[T]) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

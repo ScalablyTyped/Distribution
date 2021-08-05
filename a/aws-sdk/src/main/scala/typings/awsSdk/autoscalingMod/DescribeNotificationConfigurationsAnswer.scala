@@ -18,25 +18,19 @@ trait DescribeNotificationConfigurationsAnswer extends StObject {
 }
 object DescribeNotificationConfigurationsAnswer {
   
-  @scala.inline
-  def apply(NotificationConfigurations: NotificationConfigurations): DescribeNotificationConfigurationsAnswer = {
+  inline def apply(NotificationConfigurations: NotificationConfigurations): DescribeNotificationConfigurationsAnswer = {
     val __obj = js.Dynamic.literal(NotificationConfigurations = NotificationConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotificationConfigurationsAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeNotificationConfigurationsAnswerMutableBuilder[Self <: DescribeNotificationConfigurationsAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotificationConfigurationsAnswer](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNotificationConfigurations(value: NotificationConfigurations): Self = StObject.set(x, "NotificationConfigurations", value.asInstanceOf[js.Any])
+    inline def setNotificationConfigurations(value: NotificationConfigurations): Self = StObject.set(x, "NotificationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigurationsVarargs(value: NotificationConfiguration*): Self = StObject.set(x, "NotificationConfigurations", js.Array(value :_*))
+    inline def setNotificationConfigurationsVarargs(value: NotificationConfiguration*): Self = StObject.set(x, "NotificationConfigurations", js.Array(value :_*))
   }
 }

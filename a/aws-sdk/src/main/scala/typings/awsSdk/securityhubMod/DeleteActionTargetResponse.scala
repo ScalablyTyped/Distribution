@@ -13,16 +13,13 @@ trait DeleteActionTargetResponse extends StObject {
 }
 object DeleteActionTargetResponse {
   
-  @scala.inline
-  def apply(ActionTargetArn: NonEmptyString): DeleteActionTargetResponse = {
+  inline def apply(ActionTargetArn: NonEmptyString): DeleteActionTargetResponse = {
     val __obj = js.Dynamic.literal(ActionTargetArn = ActionTargetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteActionTargetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteActionTargetResponseMutableBuilder[Self <: DeleteActionTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteActionTargetResponse](x: Self) {
     
-    @scala.inline
-    def setActionTargetArn(value: NonEmptyString): Self = StObject.set(x, "ActionTargetArn", value.asInstanceOf[js.Any])
+    inline def setActionTargetArn(value: NonEmptyString): Self = StObject.set(x, "ActionTargetArn", value.asInstanceOf[js.Any])
   }
 }

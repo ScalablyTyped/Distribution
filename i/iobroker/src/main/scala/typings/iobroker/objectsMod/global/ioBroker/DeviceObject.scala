@@ -19,20 +19,16 @@ trait DeviceObject
 }
 object DeviceObject {
   
-  @scala.inline
-  def apply(_id: String, common: DeviceCommon, native: Record[String, js.Any]): DeviceObject = {
+  inline def apply(_id: String, common: DeviceCommon, native: Record[String, js.Any]): DeviceObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("device")
     __obj.asInstanceOf[DeviceObject]
   }
   
-  @scala.inline
-  implicit class DeviceObjectMutableBuilder[Self <: DeviceObject] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: DeviceCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: DeviceCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: device): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: device): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

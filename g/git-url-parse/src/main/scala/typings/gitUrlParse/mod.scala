@@ -6,17 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): GitUrl = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[GitUrl]
+  inline def apply(url: String): GitUrl = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[GitUrl]
   
   @JSImport("git-url-parse", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stringify(url: GitUrl): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(url: GitUrl, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(url.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(url: GitUrl): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(url: GitUrl, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(url.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait GitUrl extends StObject {

@@ -33,8 +33,7 @@ trait WorkflowExecutionOpenCounts extends StObject {
 }
 object WorkflowExecutionOpenCounts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     openActivityTasks: Count,
     openChildWorkflowExecutions: Count,
     openDecisionTasks: OpenDecisionTasksCount,
@@ -44,25 +43,18 @@ object WorkflowExecutionOpenCounts {
     __obj.asInstanceOf[WorkflowExecutionOpenCounts]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionOpenCountsMutableBuilder[Self <: WorkflowExecutionOpenCounts] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionOpenCounts](x: Self) {
     
-    @scala.inline
-    def setOpenActivityTasks(value: Count): Self = StObject.set(x, "openActivityTasks", value.asInstanceOf[js.Any])
+    inline def setOpenActivityTasks(value: Count): Self = StObject.set(x, "openActivityTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenChildWorkflowExecutions(value: Count): Self = StObject.set(x, "openChildWorkflowExecutions", value.asInstanceOf[js.Any])
+    inline def setOpenChildWorkflowExecutions(value: Count): Self = StObject.set(x, "openChildWorkflowExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenDecisionTasks(value: OpenDecisionTasksCount): Self = StObject.set(x, "openDecisionTasks", value.asInstanceOf[js.Any])
+    inline def setOpenDecisionTasks(value: OpenDecisionTasksCount): Self = StObject.set(x, "openDecisionTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenLambdaFunctions(value: Count): Self = StObject.set(x, "openLambdaFunctions", value.asInstanceOf[js.Any])
+    inline def setOpenLambdaFunctions(value: Count): Self = StObject.set(x, "openLambdaFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenLambdaFunctionsUndefined: Self = StObject.set(x, "openLambdaFunctions", js.undefined)
+    inline def setOpenLambdaFunctionsUndefined: Self = StObject.set(x, "openLambdaFunctions", js.undefined)
     
-    @scala.inline
-    def setOpenTimers(value: Count): Self = StObject.set(x, "openTimers", value.asInstanceOf[js.Any])
+    inline def setOpenTimers(value: Count): Self = StObject.set(x, "openTimers", value.asInstanceOf[js.Any])
   }
 }

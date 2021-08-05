@@ -13,16 +13,13 @@ trait DeleteLocationRequest extends StObject {
 }
 object DeleteLocationRequest {
   
-  @scala.inline
-  def apply(LocationArn: LocationArn): DeleteLocationRequest = {
+  inline def apply(LocationArn: LocationArn): DeleteLocationRequest = {
     val __obj = js.Dynamic.literal(LocationArn = LocationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLocationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLocationRequestMutableBuilder[Self <: DeleteLocationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLocationRequest](x: Self) {
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }
 }

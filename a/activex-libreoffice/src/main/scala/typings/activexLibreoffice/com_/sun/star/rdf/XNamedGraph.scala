@@ -91,8 +91,7 @@ trait XNamedGraph
 }
 object XNamedGraph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LocalName: String,
     Name: XURI,
     Namespace: String,
@@ -107,25 +106,18 @@ object XNamedGraph {
     __obj.asInstanceOf[XNamedGraph]
   }
   
-  @scala.inline
-  implicit class XNamedGraphMutableBuilder[Self <: XNamedGraph] (val x: Self) extends AnyVal {
+  extension [Self <: XNamedGraph](x: Self) {
     
-    @scala.inline
-    def setAddStatement(value: (XResource, XURI, XNode) => Unit): Self = StObject.set(x, "addStatement", js.Any.fromFunction3(value))
+    inline def setAddStatement(value: (XResource, XURI, XNode) => Unit): Self = StObject.set(x, "addStatement", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => XURI): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => XURI): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatements(value: (XResource, XURI, XNode) => XEnumeration): Self = StObject.set(x, "getStatements", js.Any.fromFunction3(value))
+    inline def setGetStatements(value: (XResource, XURI, XNode) => XEnumeration): Self = StObject.set(x, "getStatements", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setName(value: XURI): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XURI): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStatements(value: (XResource, XURI, XNode) => Unit): Self = StObject.set(x, "removeStatements", js.Any.fromFunction3(value))
+    inline def setRemoveStatements(value: (XResource, XURI, XNode) => Unit): Self = StObject.set(x, "removeStatements", js.Any.fromFunction3(value))
   }
 }

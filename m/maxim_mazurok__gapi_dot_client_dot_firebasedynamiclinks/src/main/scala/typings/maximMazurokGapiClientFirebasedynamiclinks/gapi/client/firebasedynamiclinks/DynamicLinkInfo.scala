@@ -44,67 +44,47 @@ trait DynamicLinkInfo extends StObject {
 }
 object DynamicLinkInfo {
   
-  @scala.inline
-  def apply(): DynamicLinkInfo = {
+  inline def apply(): DynamicLinkInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicLinkInfo]
   }
   
-  @scala.inline
-  implicit class DynamicLinkInfoMutableBuilder[Self <: DynamicLinkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicLinkInfo](x: Self) {
     
-    @scala.inline
-    def setAnalyticsInfo(value: AnalyticsInfo): Self = StObject.set(x, "analyticsInfo", value.asInstanceOf[js.Any])
+    inline def setAnalyticsInfo(value: AnalyticsInfo): Self = StObject.set(x, "analyticsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsInfoUndefined: Self = StObject.set(x, "analyticsInfo", js.undefined)
+    inline def setAnalyticsInfoUndefined: Self = StObject.set(x, "analyticsInfo", js.undefined)
     
-    @scala.inline
-    def setAndroidInfo(value: AndroidInfo): Self = StObject.set(x, "androidInfo", value.asInstanceOf[js.Any])
+    inline def setAndroidInfo(value: AndroidInfo): Self = StObject.set(x, "androidInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidInfoUndefined: Self = StObject.set(x, "androidInfo", js.undefined)
+    inline def setAndroidInfoUndefined: Self = StObject.set(x, "androidInfo", js.undefined)
     
-    @scala.inline
-    def setDesktopInfo(value: DesktopInfo): Self = StObject.set(x, "desktopInfo", value.asInstanceOf[js.Any])
+    inline def setDesktopInfo(value: DesktopInfo): Self = StObject.set(x, "desktopInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopInfoUndefined: Self = StObject.set(x, "desktopInfo", js.undefined)
+    inline def setDesktopInfoUndefined: Self = StObject.set(x, "desktopInfo", js.undefined)
     
-    @scala.inline
-    def setDomainUriPrefix(value: String): Self = StObject.set(x, "domainUriPrefix", value.asInstanceOf[js.Any])
+    inline def setDomainUriPrefix(value: String): Self = StObject.set(x, "domainUriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUriPrefixUndefined: Self = StObject.set(x, "domainUriPrefix", js.undefined)
+    inline def setDomainUriPrefixUndefined: Self = StObject.set(x, "domainUriPrefix", js.undefined)
     
-    @scala.inline
-    def setDynamicLinkDomain(value: String): Self = StObject.set(x, "dynamicLinkDomain", value.asInstanceOf[js.Any])
+    inline def setDynamicLinkDomain(value: String): Self = StObject.set(x, "dynamicLinkDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicLinkDomainUndefined: Self = StObject.set(x, "dynamicLinkDomain", js.undefined)
+    inline def setDynamicLinkDomainUndefined: Self = StObject.set(x, "dynamicLinkDomain", js.undefined)
     
-    @scala.inline
-    def setIosInfo(value: IosInfo): Self = StObject.set(x, "iosInfo", value.asInstanceOf[js.Any])
+    inline def setIosInfo(value: IosInfo): Self = StObject.set(x, "iosInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosInfoUndefined: Self = StObject.set(x, "iosInfo", js.undefined)
+    inline def setIosInfoUndefined: Self = StObject.set(x, "iosInfo", js.undefined)
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setNavigationInfo(value: NavigationInfo): Self = StObject.set(x, "navigationInfo", value.asInstanceOf[js.Any])
+    inline def setNavigationInfo(value: NavigationInfo): Self = StObject.set(x, "navigationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationInfoUndefined: Self = StObject.set(x, "navigationInfo", js.undefined)
+    inline def setNavigationInfoUndefined: Self = StObject.set(x, "navigationInfo", js.undefined)
     
-    @scala.inline
-    def setSocialMetaTagInfo(value: SocialMetaTagInfo): Self = StObject.set(x, "socialMetaTagInfo", value.asInstanceOf[js.Any])
+    inline def setSocialMetaTagInfo(value: SocialMetaTagInfo): Self = StObject.set(x, "socialMetaTagInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialMetaTagInfoUndefined: Self = StObject.set(x, "socialMetaTagInfo", js.undefined)
+    inline def setSocialMetaTagInfoUndefined: Self = StObject.set(x, "socialMetaTagInfo", js.undefined)
   }
 }

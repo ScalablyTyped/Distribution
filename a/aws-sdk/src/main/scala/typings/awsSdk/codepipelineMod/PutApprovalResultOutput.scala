@@ -13,19 +13,15 @@ trait PutApprovalResultOutput extends StObject {
 }
 object PutApprovalResultOutput {
   
-  @scala.inline
-  def apply(): PutApprovalResultOutput = {
+  inline def apply(): PutApprovalResultOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutApprovalResultOutput]
   }
   
-  @scala.inline
-  implicit class PutApprovalResultOutputMutableBuilder[Self <: PutApprovalResultOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutApprovalResultOutput](x: Self) {
     
-    @scala.inline
-    def setApprovedAt(value: Timestamp): Self = StObject.set(x, "approvedAt", value.asInstanceOf[js.Any])
+    inline def setApprovedAt(value: Timestamp): Self = StObject.set(x, "approvedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedAtUndefined: Self = StObject.set(x, "approvedAt", js.undefined)
+    inline def setApprovedAtUndefined: Self = StObject.set(x, "approvedAt", js.undefined)
   }
 }

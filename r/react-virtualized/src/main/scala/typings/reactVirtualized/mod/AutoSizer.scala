@@ -22,6 +22,5 @@ object AutoSizer {
   @JSImport("react-virtualized", "AutoSizer.defaultProps")
   @js.native
   def defaultProps: DisableHeight = js.native
-  @scala.inline
-  def defaultProps_=(x: DisableHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: DisableHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -14,19 +14,15 @@ trait KnockoutTemplateSources extends StObject {
 }
 object KnockoutTemplateSources {
   
-  @scala.inline
-  def apply(anonymousTemplate: InstantiableKnockoutTemplateAnonymous, domElement: Instantiable): KnockoutTemplateSources = {
+  inline def apply(anonymousTemplate: InstantiableKnockoutTemplateAnonymous, domElement: Instantiable): KnockoutTemplateSources = {
     val __obj = js.Dynamic.literal(anonymousTemplate = anonymousTemplate.asInstanceOf[js.Any], domElement = domElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutTemplateSources]
   }
   
-  @scala.inline
-  implicit class KnockoutTemplateSourcesMutableBuilder[Self <: KnockoutTemplateSources] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutTemplateSources](x: Self) {
     
-    @scala.inline
-    def setAnonymousTemplate(value: InstantiableKnockoutTemplateAnonymous): Self = StObject.set(x, "anonymousTemplate", value.asInstanceOf[js.Any])
+    inline def setAnonymousTemplate(value: InstantiableKnockoutTemplateAnonymous): Self = StObject.set(x, "anonymousTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomElement(value: Instantiable): Self = StObject.set(x, "domElement", value.asInstanceOf[js.Any])
+    inline def setDomElement(value: Instantiable): Self = StObject.set(x, "domElement", value.asInstanceOf[js.Any])
   }
 }

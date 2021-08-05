@@ -74,100 +74,69 @@ trait DatabaseChangesParams extends StObject {
 }
 object DatabaseChangesParams {
   
-  @scala.inline
-  def apply(): DatabaseChangesParams = {
+  inline def apply(): DatabaseChangesParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatabaseChangesParams]
   }
   
-  @scala.inline
-  implicit class DatabaseChangesParamsMutableBuilder[Self <: DatabaseChangesParams] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseChangesParams](x: Self) {
     
-    @scala.inline
-    def setAtt_encoding_info(value: Boolean): Self = StObject.set(x, "att_encoding_info", value.asInstanceOf[js.Any])
+    inline def setAtt_encoding_info(value: Boolean): Self = StObject.set(x, "att_encoding_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtt_encoding_infoUndefined: Self = StObject.set(x, "att_encoding_info", js.undefined)
+    inline def setAtt_encoding_infoUndefined: Self = StObject.set(x, "att_encoding_info", js.undefined)
     
-    @scala.inline
-    def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
+    inline def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
+    inline def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
-    @scala.inline
-    def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
+    inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
-    @scala.inline
-    def setDoc_ids(value: js.Array[String]): Self = StObject.set(x, "doc_ids", value.asInstanceOf[js.Any])
+    inline def setDoc_ids(value: js.Array[String]): Self = StObject.set(x, "doc_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoc_idsUndefined: Self = StObject.set(x, "doc_ids", js.undefined)
+    inline def setDoc_idsUndefined: Self = StObject.set(x, "doc_ids", js.undefined)
     
-    @scala.inline
-    def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value :_*))
+    inline def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setFeed(value: normal | longpoll | continuous | eventsource): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
+    inline def setFeed(value: normal | longpoll | continuous | eventsource): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
+    inline def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
+    inline def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
+    inline def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
     
-    @scala.inline
-    def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
+    inline def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
+    inline def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

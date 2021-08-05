@@ -21,25 +21,19 @@ trait GetWeRunDataSuccessCallbackResult extends StObject {
 }
 object GetWeRunDataSuccessCallbackResult {
   
-  @scala.inline
-  def apply(cloudID: String, encryptedData: String, errMsg: String, iv: String): GetWeRunDataSuccessCallbackResult = {
+  inline def apply(cloudID: String, encryptedData: String, errMsg: String, iv: String): GetWeRunDataSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(cloudID = cloudID.asInstanceOf[js.Any], encryptedData = encryptedData.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWeRunDataSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetWeRunDataSuccessCallbackResultMutableBuilder[Self <: GetWeRunDataSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetWeRunDataSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
+    inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
   }
 }

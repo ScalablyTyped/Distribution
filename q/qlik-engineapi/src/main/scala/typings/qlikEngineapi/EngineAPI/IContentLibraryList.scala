@@ -16,16 +16,13 @@ trait IContentLibraryList extends StObject {
 }
 object IContentLibraryList {
   
-  @scala.inline
-  def apply(qItems: IContentLibraryListItem): IContentLibraryList = {
+  inline def apply(qItems: IContentLibraryListItem): IContentLibraryList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentLibraryList]
   }
   
-  @scala.inline
-  implicit class IContentLibraryListMutableBuilder[Self <: IContentLibraryList] (val x: Self) extends AnyVal {
+  extension [Self <: IContentLibraryList](x: Self) {
     
-    @scala.inline
-    def setQItems(value: IContentLibraryListItem): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: IContentLibraryListItem): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
   }
 }

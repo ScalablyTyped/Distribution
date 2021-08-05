@@ -25,32 +25,24 @@ object dropdownFooterMod extends Shortcut {
   }
   object DropdownFooterProps {
     
-    @scala.inline
-    def apply(): DropdownFooterProps = {
+    inline def apply(): DropdownFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownFooterProps]
     }
     
-    @scala.inline
-    implicit class DropdownFooterPropsMutableBuilder[Self <: DropdownFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownFooterProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClear(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
+      inline def setOnClear(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+      inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      @scala.inline
-      def setOnConfirm(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
+      inline def setOnConfirm(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+      inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     }
   }
   

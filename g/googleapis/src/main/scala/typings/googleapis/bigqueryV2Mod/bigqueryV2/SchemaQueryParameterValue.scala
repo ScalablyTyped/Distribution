@@ -25,34 +25,25 @@ trait SchemaQueryParameterValue extends StObject {
 }
 object SchemaQueryParameterValue {
   
-  @scala.inline
-  def apply(): SchemaQueryParameterValue = {
+  inline def apply(): SchemaQueryParameterValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryParameterValue]
   }
   
-  @scala.inline
-  implicit class SchemaQueryParameterValueMutableBuilder[Self <: SchemaQueryParameterValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryParameterValue](x: Self) {
     
-    @scala.inline
-    def setArrayValues(value: js.Array[SchemaQueryParameterValue]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
+    inline def setArrayValues(value: js.Array[SchemaQueryParameterValue]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
+    inline def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
-    @scala.inline
-    def setArrayValuesVarargs(value: SchemaQueryParameterValue*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+    inline def setArrayValuesVarargs(value: SchemaQueryParameterValue*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
     
-    @scala.inline
-    def setStructValues(value: StringDictionary[SchemaQueryParameterValue]): Self = StObject.set(x, "structValues", value.asInstanceOf[js.Any])
+    inline def setStructValues(value: StringDictionary[SchemaQueryParameterValue]): Self = StObject.set(x, "structValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructValuesUndefined: Self = StObject.set(x, "structValues", js.undefined)
+    inline def setStructValuesUndefined: Self = StObject.set(x, "structValues", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

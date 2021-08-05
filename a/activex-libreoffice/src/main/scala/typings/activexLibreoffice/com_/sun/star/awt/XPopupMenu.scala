@@ -114,8 +114,7 @@ trait XPopupMenu
 }
 object XPopupMenu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultItem: Double,
     ItemCount: Double,
     acquire: () => Unit,
@@ -164,46 +163,32 @@ object XPopupMenu {
     __obj.asInstanceOf[XPopupMenu]
   }
   
-  @scala.inline
-  implicit class XPopupMenuMutableBuilder[Self <: XPopupMenu] (val x: Self) extends AnyVal {
+  extension [Self <: XPopupMenu](x: Self) {
     
-    @scala.inline
-    def setCheckItem(value: (Double, Boolean) => Unit): Self = StObject.set(x, "checkItem", js.Any.fromFunction2(value))
+    inline def setCheckItem(value: (Double, Boolean) => Unit): Self = StObject.set(x, "checkItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDefaultItem(value: Double): Self = StObject.set(x, "DefaultItem", value.asInstanceOf[js.Any])
+    inline def setDefaultItem(value: Double): Self = StObject.set(x, "DefaultItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndExecute(value: () => Unit): Self = StObject.set(x, "endExecute", js.Any.fromFunction0(value))
+    inline def setEndExecute(value: () => Unit): Self = StObject.set(x, "endExecute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecute(value: (XWindowPeer, Rectangle, Double) => Double): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (XWindowPeer, Rectangle, Double) => Double): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAcceleratorKeyEvent(value: Double => KeyEvent): Self = StObject.set(x, "getAcceleratorKeyEvent", js.Any.fromFunction1(value))
+    inline def setGetAcceleratorKeyEvent(value: Double => KeyEvent): Self = StObject.set(x, "getAcceleratorKeyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultItem(value: () => Double): Self = StObject.set(x, "getDefaultItem", js.Any.fromFunction0(value))
+    inline def setGetDefaultItem(value: () => Double): Self = StObject.set(x, "getDefaultItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemImage(value: Double => XGraphic): Self = StObject.set(x, "getItemImage", js.Any.fromFunction1(value))
+    inline def setGetItemImage(value: Double => XGraphic): Self = StObject.set(x, "getItemImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertSeparator(value: Double => Unit): Self = StObject.set(x, "insertSeparator", js.Any.fromFunction1(value))
+    inline def setInsertSeparator(value: Double => Unit): Self = StObject.set(x, "insertSeparator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsInExecute(value: () => Boolean): Self = StObject.set(x, "isInExecute", js.Any.fromFunction0(value))
+    inline def setIsInExecute(value: () => Boolean): Self = StObject.set(x, "isInExecute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsItemChecked(value: Double => Boolean): Self = StObject.set(x, "isItemChecked", js.Any.fromFunction1(value))
+    inline def setIsItemChecked(value: Double => Boolean): Self = StObject.set(x, "isItemChecked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAcceleratorKeyEvent(value: (Double, KeyEvent) => Unit): Self = StObject.set(x, "setAcceleratorKeyEvent", js.Any.fromFunction2(value))
+    inline def setSetAcceleratorKeyEvent(value: (Double, KeyEvent) => Unit): Self = StObject.set(x, "setAcceleratorKeyEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDefaultItem(value: Double => Unit): Self = StObject.set(x, "setDefaultItem", js.Any.fromFunction1(value))
+    inline def setSetDefaultItem(value: Double => Unit): Self = StObject.set(x, "setDefaultItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItemImage(value: (Double, XGraphic, Boolean) => Unit): Self = StObject.set(x, "setItemImage", js.Any.fromFunction3(value))
+    inline def setSetItemImage(value: (Double, XGraphic, Boolean) => Unit): Self = StObject.set(x, "setItemImage", js.Any.fromFunction3(value))
   }
 }

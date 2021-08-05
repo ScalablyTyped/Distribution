@@ -21,25 +21,19 @@ trait SchemaFloatingPointMean extends StObject {
 }
 object SchemaFloatingPointMean {
   
-  @scala.inline
-  def apply(): SchemaFloatingPointMean = {
+  inline def apply(): SchemaFloatingPointMean = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFloatingPointMean]
   }
   
-  @scala.inline
-  implicit class SchemaFloatingPointMeanMutableBuilder[Self <: SchemaFloatingPointMean] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFloatingPointMean](x: Self) {
     
-    @scala.inline
-    def setCount(value: SchemaSplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: SchemaSplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

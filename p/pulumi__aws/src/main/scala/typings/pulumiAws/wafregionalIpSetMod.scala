@@ -58,21 +58,16 @@ object wafregionalIpSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IpSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IpSetState): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IpSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    inline def get(name: String, id: Input[ID]): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    inline def get(name: String, id: Input[ID], state: IpSetState): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    inline def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
     
     /**
       * Returns true if the given object is an instance of IpSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/ipSet.IpSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/ipSet.IpSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/ipSet.IpSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/ipSet.IpSet */ Boolean]
   }
   
   trait IpSetArgs extends StObject {
@@ -91,29 +86,22 @@ object wafregionalIpSetMod {
   }
   object IpSetArgs {
     
-    @scala.inline
-    def apply(): IpSetArgs = {
+    inline def apply(): IpSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IpSetArgs]
     }
     
-    @scala.inline
-    implicit class IpSetArgsMutableBuilder[Self <: IpSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IpSetArgs](x: Self) {
       
-      @scala.inline
-      def setIpSetDescriptors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]]]): Self = StObject.set(x, "ipSetDescriptors", value.asInstanceOf[js.Any])
+      inline def setIpSetDescriptors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]]]): Self = StObject.set(x, "ipSetDescriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpSetDescriptorsUndefined: Self = StObject.set(x, "ipSetDescriptors", js.undefined)
+      inline def setIpSetDescriptorsUndefined: Self = StObject.set(x, "ipSetDescriptors", js.undefined)
       
-      @scala.inline
-      def setIpSetDescriptorsVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]*): Self = StObject.set(x, "ipSetDescriptors", js.Array(value :_*))
+      inline def setIpSetDescriptorsVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]*): Self = StObject.set(x, "ipSetDescriptors", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -138,35 +126,26 @@ object wafregionalIpSetMod {
   }
   object IpSetState {
     
-    @scala.inline
-    def apply(): IpSetState = {
+    inline def apply(): IpSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IpSetState]
     }
     
-    @scala.inline
-    implicit class IpSetStateMutableBuilder[Self <: IpSetState] (val x: Self) extends AnyVal {
+    extension [Self <: IpSetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setIpSetDescriptors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]]]): Self = StObject.set(x, "ipSetDescriptors", value.asInstanceOf[js.Any])
+      inline def setIpSetDescriptors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]]]): Self = StObject.set(x, "ipSetDescriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpSetDescriptorsUndefined: Self = StObject.set(x, "ipSetDescriptors", js.undefined)
+      inline def setIpSetDescriptorsUndefined: Self = StObject.set(x, "ipSetDescriptors", js.undefined)
       
-      @scala.inline
-      def setIpSetDescriptorsVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]*): Self = StObject.set(x, "ipSetDescriptors", js.Array(value :_*))
+      inline def setIpSetDescriptorsVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.IpSetIpSetDescriptor]*): Self = StObject.set(x, "ipSetDescriptors", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

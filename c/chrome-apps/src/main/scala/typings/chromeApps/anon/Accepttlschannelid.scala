@@ -28,31 +28,23 @@ trait Accepttlschannelid extends StObject {
 }
 object Accepttlschannelid {
   
-  @scala.inline
-  def apply(id: js.Array[String], matches: js.Array[String]): Accepttlschannelid = {
+  inline def apply(id: js.Array[String], matches: js.Array[String]): Accepttlschannelid = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accepttlschannelid]
   }
   
-  @scala.inline
-  implicit class AccepttlschannelidMutableBuilder[Self <: Accepttlschannelid] (val x: Self) extends AnyVal {
+  extension [Self <: Accepttlschannelid](x: Self) {
     
-    @scala.inline
-    def setAccept_tls_channel_id(value: Boolean): Self = StObject.set(x, "accept_tls_channel_id", value.asInstanceOf[js.Any])
+    inline def setAccept_tls_channel_id(value: Boolean): Self = StObject.set(x, "accept_tls_channel_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_tls_channel_idUndefined: Self = StObject.set(x, "accept_tls_channel_id", js.undefined)
+    inline def setAccept_tls_channel_idUndefined: Self = StObject.set(x, "accept_tls_channel_id", js.undefined)
     
-    @scala.inline
-    def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
     
-    @scala.inline
-    def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

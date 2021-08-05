@@ -17,16 +17,13 @@ trait DaemonEndpoint extends StObject {
 }
 object DaemonEndpoint {
   
-  @scala.inline
-  def apply(Port: Input[Double]): DaemonEndpoint = {
+  inline def apply(Port: Input[Double]): DaemonEndpoint = {
     val __obj = js.Dynamic.literal(Port = Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaemonEndpoint]
   }
   
-  @scala.inline
-  implicit class DaemonEndpointMutableBuilder[Self <: DaemonEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: DaemonEndpoint](x: Self) {
     
-    @scala.inline
-    def setPort(value: Input[Double]): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Input[Double]): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait AddProtectedRangeRequest extends StObject {
 }
 object AddProtectedRangeRequest {
   
-  @scala.inline
-  def apply(): AddProtectedRangeRequest = {
+  inline def apply(): AddProtectedRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddProtectedRangeRequest]
   }
   
-  @scala.inline
-  implicit class AddProtectedRangeRequestMutableBuilder[Self <: AddProtectedRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddProtectedRangeRequest](x: Self) {
     
-    @scala.inline
-    def setProtectedRange(value: ProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
+    inline def setProtectedRange(value: ProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedRangeUndefined: Self = StObject.set(x, "protectedRange", js.undefined)
+    inline def setProtectedRangeUndefined: Self = StObject.set(x, "protectedRange", js.undefined)
   }
 }

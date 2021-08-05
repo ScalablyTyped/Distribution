@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlEndStyleCap extends StObject
 object XlEndStyleCap {
   
-  @scala.inline
-  def xlCap: `1` = 1.asInstanceOf[`1`]
+  inline def xlCap: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlNoCap: `2` = 2.asInstanceOf[`2`]
+  inline def xlNoCap: `2` = 2.asInstanceOf[`2`]
 }

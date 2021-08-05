@@ -31,37 +31,27 @@ trait ObjectSelectorModifier extends StObject {
 }
 object ObjectSelectorModifier {
   
-  @scala.inline
-  def apply(): ObjectSelectorModifier = {
+  inline def apply(): ObjectSelectorModifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectSelectorModifier]
   }
   
-  @scala.inline
-  implicit class ObjectSelectorModifierMutableBuilder[Self <: ObjectSelectorModifier] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectSelectorModifier](x: Self) {
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
+    inline def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
+    inline def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

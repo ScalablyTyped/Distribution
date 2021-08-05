@@ -16,20 +16,16 @@ object mod {
   }
   object BuildChangeObject {
     
-    @scala.inline
-    def apply(changedNodes: js.Array[Boolean]): BuildChangeObject = {
+    inline def apply(changedNodes: js.Array[Boolean]): BuildChangeObject = {
       val __obj = js.Dynamic.literal(changedNodes = changedNodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildChangeObject]
     }
     
-    @scala.inline
-    implicit class BuildChangeObjectMutableBuilder[Self <: BuildChangeObject] (val x: Self) extends AnyVal {
+    extension [Self <: BuildChangeObject](x: Self) {
       
-      @scala.inline
-      def setChangedNodes(value: js.Array[Boolean]): Self = StObject.set(x, "changedNodes", value.asInstanceOf[js.Any])
+      inline def setChangedNodes(value: js.Array[Boolean]): Self = StObject.set(x, "changedNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedNodesVarargs(value: Boolean*): Self = StObject.set(x, "changedNodes", js.Array(value :_*))
+      inline def setChangedNodesVarargs(value: Boolean*): Self = StObject.set(x, "changedNodes", js.Array(value :_*))
     }
   }
   
@@ -52,32 +48,24 @@ object mod {
   }
   object FeatureSet {
     
-    @scala.inline
-    def apply(): FeatureSet = {
+    inline def apply(): FeatureSet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeatureSet]
     }
     
-    @scala.inline
-    implicit class FeatureSetMutableBuilder[Self <: FeatureSet] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureSet](x: Self) {
       
-      @scala.inline
-      def setNeedsCacheFlag(value: Boolean): Self = StObject.set(x, "needsCacheFlag", value.asInstanceOf[js.Any])
+      inline def setNeedsCacheFlag(value: Boolean): Self = StObject.set(x, "needsCacheFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedsCacheFlagUndefined: Self = StObject.set(x, "needsCacheFlag", js.undefined)
+      inline def setNeedsCacheFlagUndefined: Self = StObject.set(x, "needsCacheFlag", js.undefined)
       
-      @scala.inline
-      def setPersistentOutputFlag(value: Boolean): Self = StObject.set(x, "persistentOutputFlag", value.asInstanceOf[js.Any])
+      inline def setPersistentOutputFlag(value: Boolean): Self = StObject.set(x, "persistentOutputFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentOutputFlagUndefined: Self = StObject.set(x, "persistentOutputFlag", js.undefined)
+      inline def setPersistentOutputFlagUndefined: Self = StObject.set(x, "persistentOutputFlag", js.undefined)
       
-      @scala.inline
-      def setSourceDirectories(value: Boolean): Self = StObject.set(x, "sourceDirectories", value.asInstanceOf[js.Any])
+      inline def setSourceDirectories(value: Boolean): Self = StObject.set(x, "sourceDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirectoriesUndefined: Self = StObject.set(x, "sourceDirectories", js.undefined)
+      inline def setSourceDirectoriesUndefined: Self = StObject.set(x, "sourceDirectories", js.undefined)
     }
   }
   
@@ -91,11 +79,9 @@ object mod {
   trait Node extends StObject
   object Node {
     
-    @scala.inline
-    def __broccoliFeatures__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliFeatures__ = "__broccoliFeatures__".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliFeatures__]
+    inline def __broccoliFeatures__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliFeatures__ = "__broccoliFeatures__".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliFeatures__]
     
-    @scala.inline
-    def __broccoliGetInfo__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__ = "__broccoliGetInfo__".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__]
+    inline def __broccoliGetInfo__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__ = "__broccoliGetInfo__".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__]
   }
   
   trait NodeCommon[T /* <: NodeInfo */] extends StObject {
@@ -113,20 +99,16 @@ object mod {
   }
   object NodeCommon {
     
-    @scala.inline
-    def apply[T /* <: NodeInfo */](__broccoliFeatures__ : FeatureSet, __broccoliGetInfo__ : FeatureSet => T): NodeCommon[T] = {
+    inline def apply[T /* <: NodeInfo */](__broccoliFeatures__ : FeatureSet, __broccoliGetInfo__ : FeatureSet => T): NodeCommon[T] = {
       val __obj = js.Dynamic.literal(__broccoliFeatures__ = __broccoliFeatures__.asInstanceOf[js.Any], __broccoliGetInfo__ = js.Any.fromFunction1(__broccoliGetInfo__))
       __obj.asInstanceOf[NodeCommon[T]]
     }
     
-    @scala.inline
-    implicit class NodeCommonMutableBuilder[Self <: NodeCommon[?], T /* <: NodeInfo */] (val x: Self & NodeCommon[T]) extends AnyVal {
+    extension [Self <: NodeCommon[?], T /* <: NodeInfo */](x: Self & NodeCommon[T]) {
       
-      @scala.inline
-      def set__broccoliFeatures__(value: FeatureSet): Self = StObject.set(x, "__broccoliFeatures__", value.asInstanceOf[js.Any])
+      inline def set__broccoliFeatures__(value: FeatureSet): Self = StObject.set(x, "__broccoliFeatures__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__broccoliGetInfo__(value: FeatureSet => T): Self = StObject.set(x, "__broccoliGetInfo__", js.Any.fromFunction1(value))
+      inline def set__broccoliGetInfo__(value: FeatureSet => T): Self = StObject.set(x, "__broccoliGetInfo__", js.Any.fromFunction1(value))
     }
   }
   
@@ -145,32 +127,23 @@ object mod {
   trait NodeInfo extends StObject
   object NodeInfo {
     
-    @scala.inline
-    def getCallbackObject: typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject = "getCallbackObject".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject]
+    inline def getCallbackObject: typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject = "getCallbackObject".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject]
     
-    @scala.inline
-    def inputNodes: typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes = "inputNodes".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes]
+    inline def inputNodes: typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes = "inputNodes".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes]
     
-    @scala.inline
-    def needsCache: typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache = "needsCache".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache]
+    inline def needsCache: typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache = "needsCache".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache]
     
-    @scala.inline
-    def persistentOutput: typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput = "persistentOutput".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput]
+    inline def persistentOutput: typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput = "persistentOutput".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput]
     
-    @scala.inline
-    def setup: typings.broccoliNodeApi.broccoliNodeApiStrings.setup = "setup".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.setup]
+    inline def setup: typings.broccoliNodeApi.broccoliNodeApiStrings.setup = "setup".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.setup]
     
-    @scala.inline
-    def sourceDirectory: typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory = "sourceDirectory".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory]
+    inline def sourceDirectory: typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory = "sourceDirectory".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory]
     
-    @scala.inline
-    def trackInputChanges: typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges = "trackInputChanges".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges]
+    inline def trackInputChanges: typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges = "trackInputChanges".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges]
     
-    @scala.inline
-    def volatile: typings.broccoliNodeApi.broccoliNodeApiStrings.volatile = "volatile".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.volatile]
+    inline def volatile: typings.broccoliNodeApi.broccoliNodeApiStrings.volatile = "volatile".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.volatile]
     
-    @scala.inline
-    def watched: typings.broccoliNodeApi.broccoliNodeApiStrings.watched = "watched".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.watched]
+    inline def watched: typings.broccoliNodeApi.broccoliNodeApiStrings.watched = "watched".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.watched]
   }
   
   trait NodeInfoCommon[T /* <: NodeType */] extends StObject {
@@ -201,32 +174,24 @@ object mod {
   }
   object NodeInfoCommon {
     
-    @scala.inline
-    def apply[T /* <: NodeType */](instantiationStack: String, name: String, nodeType: T): NodeInfoCommon[T] = {
+    inline def apply[T /* <: NodeType */](instantiationStack: String, name: String, nodeType: T): NodeInfoCommon[T] = {
       val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeInfoCommon[T]]
     }
     
-    @scala.inline
-    implicit class NodeInfoCommonMutableBuilder[Self <: NodeInfoCommon[?], T /* <: NodeType */] (val x: Self & NodeInfoCommon[T]) extends AnyVal {
+    extension [Self <: NodeInfoCommon[?], T /* <: NodeType */](x: Self & NodeInfoCommon[T]) {
       
-      @scala.inline
-      def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+      inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationNull: Self = StObject.set(x, "annotation", null)
+      inline def setAnnotationNull: Self = StObject.set(x, "annotation", null)
       
-      @scala.inline
-      def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
+      inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
       
-      @scala.inline
-      def setInstantiationStack(value: String): Self = StObject.set(x, "instantiationStack", value.asInstanceOf[js.Any])
+      inline def setInstantiationStack(value: String): Self = StObject.set(x, "instantiationStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeType(value: T): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: T): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,20 +203,16 @@ object mod {
   }
   object NodeInfoMap {
     
-    @scala.inline
-    def apply(source: SourceNodeInfo, transform: TransformNodeInfo): NodeInfoMap = {
+    inline def apply(source: SourceNodeInfo, transform: TransformNodeInfo): NodeInfoMap = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeInfoMap]
     }
     
-    @scala.inline
-    implicit class NodeInfoMapMutableBuilder[Self <: NodeInfoMap] (val x: Self) extends AnyVal {
+    extension [Self <: NodeInfoMap](x: Self) {
       
-      @scala.inline
-      def setSource(value: SourceNodeInfo): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: SourceNodeInfo): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: TransformNodeInfo): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: TransformNodeInfo): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,20 +224,16 @@ object mod {
   }
   object NodeMap {
     
-    @scala.inline
-    def apply(source: SourceNode, transform: TransformNode): NodeMap = {
+    inline def apply(source: SourceNode, transform: TransformNode): NodeMap = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeMap]
     }
     
-    @scala.inline
-    implicit class NodeMapMutableBuilder[Self <: NodeMap] (val x: Self) extends AnyVal {
+    extension [Self <: NodeMap](x: Self) {
       
-      @scala.inline
-      def setSource(value: SourceNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: SourceNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: TransformNode): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: TransformNode): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,20 +264,16 @@ object mod {
   }
   object SourceNodeInfo {
     
-    @scala.inline
-    def apply(instantiationStack: String, name: String, sourceDirectory: String, watched: Boolean): SourceNodeInfo = {
+    inline def apply(instantiationStack: String, name: String, sourceDirectory: String, watched: Boolean): SourceNodeInfo = {
       val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = "source", sourceDirectory = sourceDirectory.asInstanceOf[js.Any], watched = watched.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceNodeInfo]
     }
     
-    @scala.inline
-    implicit class SourceNodeInfoMutableBuilder[Self <: SourceNodeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SourceNodeInfo](x: Self) {
       
-      @scala.inline
-      def setSourceDirectory(value: String): Self = StObject.set(x, "sourceDirectory", value.asInstanceOf[js.Any])
+      inline def setSourceDirectory(value: String): Self = StObject.set(x, "sourceDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatched(value: Boolean): Self = StObject.set(x, "watched", value.asInstanceOf[js.Any])
+      inline def setWatched(value: Boolean): Self = StObject.set(x, "watched", value.asInstanceOf[js.Any])
     }
   }
   
@@ -399,8 +352,7 @@ object mod {
   }
   object TransformNodeInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCallbackObject: () => CallbackObject,
       inputNodes: js.Array[InputNode],
       instantiationStack: String,
@@ -415,32 +367,23 @@ object mod {
       __obj.asInstanceOf[TransformNodeInfo]
     }
     
-    @scala.inline
-    implicit class TransformNodeInfoMutableBuilder[Self <: TransformNodeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TransformNodeInfo](x: Self) {
       
-      @scala.inline
-      def setGetCallbackObject(value: () => CallbackObject): Self = StObject.set(x, "getCallbackObject", js.Any.fromFunction0(value))
+      inline def setGetCallbackObject(value: () => CallbackObject): Self = StObject.set(x, "getCallbackObject", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInputNodes(value: js.Array[InputNode]): Self = StObject.set(x, "inputNodes", value.asInstanceOf[js.Any])
+      inline def setInputNodes(value: js.Array[InputNode]): Self = StObject.set(x, "inputNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputNodesVarargs(value: InputNode*): Self = StObject.set(x, "inputNodes", js.Array(value :_*))
+      inline def setInputNodesVarargs(value: InputNode*): Self = StObject.set(x, "inputNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setNeedsCache(value: Boolean): Self = StObject.set(x, "needsCache", value.asInstanceOf[js.Any])
+      inline def setNeedsCache(value: Boolean): Self = StObject.set(x, "needsCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentOutput(value: Boolean): Self = StObject.set(x, "persistentOutput", value.asInstanceOf[js.Any])
+      inline def setPersistentOutput(value: Boolean): Self = StObject.set(x, "persistentOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetup(value: (FeatureSet, CachePath) => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
+      inline def setSetup(value: (FeatureSet, CachePath) => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTrackInputChanges(value: Boolean): Self = StObject.set(x, "trackInputChanges", value.asInstanceOf[js.Any])
+      inline def setTrackInputChanges(value: Boolean): Self = StObject.set(x, "trackInputChanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolatile(value: Boolean): Self = StObject.set(x, "volatile", value.asInstanceOf[js.Any])
+      inline def setVolatile(value: Boolean): Self = StObject.set(x, "volatile", value.asInstanceOf[js.Any])
     }
   }
 }

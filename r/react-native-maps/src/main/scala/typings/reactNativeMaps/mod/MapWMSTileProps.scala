@@ -23,40 +23,29 @@ trait MapWMSTileProps
 }
 object MapWMSTileProps {
   
-  @scala.inline
-  def apply(opacity: Double, tileSize: Double, urlTemplate: String): MapWMSTileProps = {
+  inline def apply(opacity: Double, tileSize: Double, urlTemplate: String): MapWMSTileProps = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any], tileSize = tileSize.asInstanceOf[js.Any], urlTemplate = urlTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapWMSTileProps]
   }
   
-  @scala.inline
-  implicit class MapWMSTilePropsMutableBuilder[Self <: MapWMSTileProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapWMSTileProps](x: Self) {
     
-    @scala.inline
-    def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
+    inline def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumZUndefined: Self = StObject.set(x, "maximumZ", js.undefined)
+    inline def setMaximumZUndefined: Self = StObject.set(x, "maximumZ", js.undefined)
     
-    @scala.inline
-    def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
+    inline def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumZUndefined: Self = StObject.set(x, "minimumZ", js.undefined)
+    inline def setMinimumZUndefined: Self = StObject.set(x, "minimumZ", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
+    inline def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

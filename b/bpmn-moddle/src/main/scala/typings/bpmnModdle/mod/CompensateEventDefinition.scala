@@ -14,8 +14,7 @@ trait CompensateEventDefinition
 }
 object CompensateEventDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     activityRef: Activity,
@@ -26,13 +25,10 @@ object CompensateEventDefinition {
     __obj.asInstanceOf[CompensateEventDefinition]
   }
   
-  @scala.inline
-  implicit class CompensateEventDefinitionMutableBuilder[Self <: CompensateEventDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CompensateEventDefinition](x: Self) {
     
-    @scala.inline
-    def setActivityRef(value: Activity): Self = StObject.set(x, "activityRef", value.asInstanceOf[js.Any])
+    inline def setActivityRef(value: Activity): Self = StObject.set(x, "activityRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
+    inline def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
   }
 }

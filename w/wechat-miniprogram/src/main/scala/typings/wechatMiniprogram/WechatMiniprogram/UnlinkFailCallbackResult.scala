@@ -16,16 +16,13 @@ trait UnlinkFailCallbackResult extends StObject {
 }
 object UnlinkFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): UnlinkFailCallbackResult = {
+  inline def apply(errMsg: String): UnlinkFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlinkFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class UnlinkFailCallbackResultMutableBuilder[Self <: UnlinkFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UnlinkFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

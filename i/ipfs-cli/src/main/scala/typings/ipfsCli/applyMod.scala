@@ -23,14 +23,12 @@ object applyMod {
     @js.native
     def dryRun: TypeString = js.native
     
-    @scala.inline
-    def dryRun_=(x: TypeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dry-run")(x.asInstanceOf[js.Any])
+    inline def dryRun_=(x: TypeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dry-run")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/config/profile/apply", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/config/profile/apply", "command")
@@ -41,6 +39,5 @@ object applyMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxProfileDryRunTimeout: DryRun): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxProfileDryRunTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxProfileDryRunTimeout: DryRun): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxProfileDryRunTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

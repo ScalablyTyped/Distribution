@@ -24,10 +24,8 @@ object mod {
     * @param res An instance of a HTTP response.
     * @param statsCallback A callback which will be called with a stats object when the HTTP request completes.
     */
-  @scala.inline
-  def apply(req: IncomingMessage, res: ServerResponse): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
-  @scala.inline
-  def apply(req: IncomingMessage, res: ServerResponse, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(req: IncomingMessage, res: ServerResponse): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(req: IncomingMessage, res: ServerResponse, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
   /**
     * Attach request-stats to a HTTP server.
     * If no callback is provided, you can later attach a listener on the "complete" event.
@@ -35,14 +33,10 @@ object mod {
     * @param server Initialize request-stats with an instance a HTTP server.
     * @param statsCallback A callback which will be called for each completed HTTP request with a stats object.
     */
-  @scala.inline
-  def apply(server: Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
-  @scala.inline
-  def apply(server: Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
-  @scala.inline
-  def apply(server: typings.node.httpsMod.Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
-  @scala.inline
-  def apply(server: typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(server: Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
+  inline def apply(server: Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(server: typings.node.httpsMod.Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
+  inline def apply(server: typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
   
   @JSImport("request-stats", JSImport.Namespace)
   @js.native
@@ -71,29 +65,22 @@ object mod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(completed: Boolean, req: BytesDelta, res: Speed, time: Double, timeDelta: Double): Progress = {
+    inline def apply(completed: Boolean, req: BytesDelta, res: Speed, time: Double, timeDelta: Double): Progress = {
       val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timeDelta = timeDelta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: BytesDelta): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: BytesDelta): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRes(value: Speed): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Speed): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDelta(value: Double): Self = StObject.set(x, "timeDelta", value.asInstanceOf[js.Any])
+      inline def setTimeDelta(value: Double): Self = StObject.set(x, "timeDelta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,17 +95,14 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply(progress: () => Progress): Request = {
+    inline def apply(progress: () => Progress): Request = {
       val __obj = js.Dynamic.literal(progress = js.Any.fromFunction0(progress))
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setProgress(value: () => Progress): Self = StObject.set(x, "progress", js.Any.fromFunction0(value))
+      inline def setProgress(value: () => Progress): Self = StObject.set(x, "progress", js.Any.fromFunction0(value))
     }
   }
   
@@ -140,26 +124,20 @@ object mod {
   }
   object Stats {
     
-    @scala.inline
-    def apply(ok: Boolean, req: Bytes, res: Headers, time: Double): Stats = {
+    inline def apply(ok: Boolean, req: Bytes, res: Headers, time: Double): Stats = {
       val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: Bytes): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Bytes): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRes(value: Headers): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Headers): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   

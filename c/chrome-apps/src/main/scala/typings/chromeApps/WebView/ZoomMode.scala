@@ -35,12 +35,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ZoomMode extends StObject
 object ZoomMode {
   
-  @scala.inline
-  def disabled: disabled__ = "disabled".asInstanceOf[disabled__]
+  inline def disabled: disabled__ = "disabled".asInstanceOf[disabled__]
   
-  @scala.inline
-  def `per-origin`: typings.chromeApps.chromeAppsStrings.`per-origin` = "per-origin".asInstanceOf[typings.chromeApps.chromeAppsStrings.`per-origin`]
+  inline def `per-origin`: typings.chromeApps.chromeAppsStrings.`per-origin` = "per-origin".asInstanceOf[typings.chromeApps.chromeAppsStrings.`per-origin`]
   
-  @scala.inline
-  def `per-view`: typings.chromeApps.chromeAppsStrings.`per-view` = "per-view".asInstanceOf[typings.chromeApps.chromeAppsStrings.`per-view`]
+  inline def `per-view`: typings.chromeApps.chromeAppsStrings.`per-view` = "per-view".asInstanceOf[typings.chromeApps.chromeAppsStrings.`per-view`]
 }

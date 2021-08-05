@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnenoteSourceService extends StObject
 object OnenoteSourceService {
   
-  @scala.inline
-  def OnPremOneDriveForBusiness: typings.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness = "OnPremOneDriveForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness]
+  inline def OnPremOneDriveForBusiness: typings.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness = "OnPremOneDriveForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness]
   
-  @scala.inline
-  def OneDrive: typings.microsoftGraph.microsoftGraphStrings.OneDrive = "OneDrive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.OneDrive]
+  inline def OneDrive: typings.microsoftGraph.microsoftGraphStrings.OneDrive = "OneDrive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.OneDrive]
   
-  @scala.inline
-  def OneDriveForBusiness: typings.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness = "OneDriveForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness]
+  inline def OneDriveForBusiness: typings.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness = "OneDriveForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness]
   
-  @scala.inline
-  def Unknown: typings.microsoftGraph.microsoftGraphStrings.Unknown = "Unknown".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Unknown]
+  inline def Unknown: typings.microsoftGraph.microsoftGraphStrings.Unknown = "Unknown".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Unknown]
 }

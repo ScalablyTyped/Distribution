@@ -43,8 +43,7 @@ trait XDocumentBuilder
 }
 object XDocumentBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DOMImplementation: XDOMImplementation,
     acquire: () => Unit,
     getDOMImplementation: () => XDOMImplementation,
@@ -62,34 +61,24 @@ object XDocumentBuilder {
     __obj.asInstanceOf[XDocumentBuilder]
   }
   
-  @scala.inline
-  implicit class XDocumentBuilderMutableBuilder[Self <: XDocumentBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentBuilder](x: Self) {
     
-    @scala.inline
-    def setDOMImplementation(value: XDOMImplementation): Self = StObject.set(x, "DOMImplementation", value.asInstanceOf[js.Any])
+    inline def setDOMImplementation(value: XDOMImplementation): Self = StObject.set(x, "DOMImplementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDOMImplementation(value: () => XDOMImplementation): Self = StObject.set(x, "getDOMImplementation", js.Any.fromFunction0(value))
+    inline def setGetDOMImplementation(value: () => XDOMImplementation): Self = StObject.set(x, "getDOMImplementation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNamespaceAware(value: () => Boolean): Self = StObject.set(x, "isNamespaceAware", js.Any.fromFunction0(value))
+    inline def setIsNamespaceAware(value: () => Boolean): Self = StObject.set(x, "isNamespaceAware", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidating(value: () => Boolean): Self = StObject.set(x, "isValidating", js.Any.fromFunction0(value))
+    inline def setIsValidating(value: () => Boolean): Self = StObject.set(x, "isValidating", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDocument(value: () => XDocument): Self = StObject.set(x, "newDocument", js.Any.fromFunction0(value))
+    inline def setNewDocument(value: () => XDocument): Self = StObject.set(x, "newDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParse(value: XInputStream => XDocument): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: XInputStream => XDocument): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseURI(value: String => XDocument): Self = StObject.set(x, "parseURI", js.Any.fromFunction1(value))
+    inline def setParseURI(value: String => XDocument): Self = StObject.set(x, "parseURI", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
+    inline def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
+    inline def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
   }
 }

@@ -32,8 +32,7 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     callTimeout: Double,
     create: (String, String, CbCallback) => Unit,
@@ -51,43 +50,30 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
+    inline def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: (String, String, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+    inline def setCreate(value: (String, String, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDelete(value: (String, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+    inline def setDelete(value: (String, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExecute(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAllServices(value: CbCallback => Unit): Self = StObject.set(x, "getAllServices", js.Any.fromFunction1(value))
+    inline def setGetAllServices(value: CbCallback => Unit): Self = StObject.set(x, "getAllServices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCompletedServices(value: CbCallback => Unit): Self = StObject.set(x, "getCompletedServices", js.Any.fromFunction1(value))
+    inline def setGetCompletedServices(value: CbCallback => Unit): Self = StObject.set(x, "getCompletedServices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFailedServices(value: CbCallback => Unit): Self = StObject.set(x, "getFailedServices", js.Any.fromFunction1(value))
+    inline def setGetFailedServices(value: CbCallback => Unit): Self = StObject.set(x, "getFailedServices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (String, String, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (String, String, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

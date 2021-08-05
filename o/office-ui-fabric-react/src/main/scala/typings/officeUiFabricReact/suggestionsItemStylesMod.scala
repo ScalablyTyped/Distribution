@@ -21,28 +21,23 @@ object suggestionsItemStylesMod {
     @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.styles", "SuggestionsItemGlobalClassNames.closeButton")
     @js.native
     def closeButton: String = js.native
-    @scala.inline
-    def closeButton_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeButton")(x.asInstanceOf[js.Any])
+    inline def closeButton_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeButton")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.styles", "SuggestionsItemGlobalClassNames.isSuggested")
     @js.native
     def isSuggested: String = js.native
-    @scala.inline
-    def isSuggested_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSuggested")(x.asInstanceOf[js.Any])
+    inline def isSuggested_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSuggested")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.styles", "SuggestionsItemGlobalClassNames.itemButton")
     @js.native
     def itemButton: String = js.native
-    @scala.inline
-    def itemButton_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemButton")(x.asInstanceOf[js.Any])
+    inline def itemButton_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemButton")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.styles", "SuggestionsItemGlobalClassNames.root")
     @js.native
     def root: String = js.native
-    @scala.inline
-    def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+    inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getStyles(props: ISuggestionsItemStyleProps): ISuggestionsItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISuggestionsItemStyles]
+  inline def getStyles(props: ISuggestionsItemStyleProps): ISuggestionsItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISuggestionsItemStyles]
 }

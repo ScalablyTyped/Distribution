@@ -14,31 +14,23 @@ trait CallbackParameterName extends StObject {
 }
 object CallbackParameterName {
   
-  @scala.inline
-  def apply(): CallbackParameterName = {
+  inline def apply(): CallbackParameterName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallbackParameterName]
   }
   
-  @scala.inline
-  implicit class CallbackParameterNameMutableBuilder[Self <: CallbackParameterName] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackParameterName](x: Self) {
     
-    @scala.inline
-    def setCallbackParameterName(value: String): Self = StObject.set(x, "callbackParameterName", value.asInstanceOf[js.Any])
+    inline def setCallbackParameterName(value: String): Self = StObject.set(x, "callbackParameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackParameterNameUndefined: Self = StObject.set(x, "callbackParameterName", js.undefined)
+    inline def setCallbackParameterNameUndefined: Self = StObject.set(x, "callbackParameterName", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
   }
 }

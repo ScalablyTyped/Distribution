@@ -12,17 +12,14 @@ object anon {
   }
   object Next {
     
-    @scala.inline
-    def apply(next: () => js.Promise[js.Any]): Next = {
+    inline def apply(next: () => js.Promise[js.Any]): Next = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[Next]
     }
     
-    @scala.inline
-    implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+    extension [Self <: Next](x: Self) {
       
-      @scala.inline
-      def setNext(value: () => js.Promise[js.Any]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => js.Promise[js.Any]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
 }

@@ -9,8 +9,7 @@ trait ContactField
      with IContactField
 object ContactField {
   
-  @scala.inline
-  def apply(category: ContactFieldCategory, name: String, `type`: ContactFieldType, value: String): ContactField = {
+  inline def apply(category: ContactFieldCategory, name: String, `type`: ContactFieldType, value: String): ContactField = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactField]

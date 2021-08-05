@@ -35,8 +35,7 @@ trait OpsRange extends StObject {
 }
 object OpsRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`20`, 
       typings.screeps.screepsNumbers.`21`, 
@@ -56,20 +55,15 @@ object OpsRange {
     __obj.asInstanceOf[OpsRange]
   }
   
-  @scala.inline
-  implicit class OpsRangeMutableBuilder[Self <: OpsRange] (val x: Self) extends AnyVal {
+  extension [Self <: OpsRange](x: Self) {
     
-    @scala.inline
-    def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldown(value: typings.screeps.screepsNumbers.`8`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: typings.screeps.screepsNumbers.`8`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: typings.screeps.screepsNumbers.`10`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: typings.screeps.screepsNumbers.`10`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(
+    inline def setLevel(
       value: js.Tuple5[
           typings.screeps.screepsNumbers.`20`, 
           typings.screeps.screepsNumbers.`21`, 
@@ -79,8 +73,7 @@ object OpsRange {
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOps(
+    inline def setOps(
       value: js.Tuple5[
           `50`, 
           `40`, 
@@ -90,7 +83,6 @@ object OpsRange {
         ]
     ): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: `50`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: `50`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

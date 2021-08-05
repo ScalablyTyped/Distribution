@@ -61,8 +61,7 @@ object AccessToken {
     * @param {string} toke
     */
   /* static member */
-  @scala.inline
-  def createAccessTokenId(callback: js.Function2[/* err */ Error, /* token */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccessTokenId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createAccessTokenId(callback: js.Function2[/* err */ Error, /* token */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccessTokenId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Find a token for the given `any`
@@ -73,16 +72,12 @@ object AccessToken {
     * @param {AccessToken} toke
     */
   /* static member */
-  @scala.inline
-  def findForRequest(req: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def findForRequest(req: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def findForRequest(
+  inline def findForRequest(req: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def findForRequest(req: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findForRequest(
     req: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def findForRequest(req: js.Any, options: Unit, callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findForRequest(req: js.Any, options: Unit, callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findForRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

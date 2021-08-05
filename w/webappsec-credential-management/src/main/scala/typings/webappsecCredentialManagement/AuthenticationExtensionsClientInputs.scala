@@ -26,64 +26,45 @@ trait AuthenticationExtensionsClientInputs extends StObject {
 }
 object AuthenticationExtensionsClientInputs {
   
-  @scala.inline
-  def apply(): AuthenticationExtensionsClientInputs = {
+  inline def apply(): AuthenticationExtensionsClientInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationExtensionsClientInputs]
   }
   
-  @scala.inline
-  implicit class AuthenticationExtensionsClientInputsMutableBuilder[Self <: AuthenticationExtensionsClientInputs] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationExtensionsClientInputs](x: Self) {
     
-    @scala.inline
-    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
-    @scala.inline
-    def setAuthnSel(value: js.Array[ArrayBufferView | ArrayBuffer]): Self = StObject.set(x, "authnSel", value.asInstanceOf[js.Any])
+    inline def setAuthnSel(value: js.Array[ArrayBufferView | ArrayBuffer]): Self = StObject.set(x, "authnSel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthnSelUndefined: Self = StObject.set(x, "authnSel", js.undefined)
+    inline def setAuthnSelUndefined: Self = StObject.set(x, "authnSel", js.undefined)
     
-    @scala.inline
-    def setAuthnSelVarargs(value: (ArrayBufferView | ArrayBuffer)*): Self = StObject.set(x, "authnSel", js.Array(value :_*))
+    inline def setAuthnSelVarargs(value: (ArrayBufferView | ArrayBuffer)*): Self = StObject.set(x, "authnSel", js.Array(value :_*))
     
-    @scala.inline
-    def setExts(value: Boolean): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
+    inline def setExts(value: Boolean): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtsUndefined: Self = StObject.set(x, "exts", js.undefined)
+    inline def setExtsUndefined: Self = StObject.set(x, "exts", js.undefined)
     
-    @scala.inline
-    def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setTxAuthGeneric(value: txAuthGenericArg): Self = StObject.set(x, "txAuthGeneric", value.asInstanceOf[js.Any])
+    inline def setTxAuthGeneric(value: txAuthGenericArg): Self = StObject.set(x, "txAuthGeneric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTxAuthGenericUndefined: Self = StObject.set(x, "txAuthGeneric", js.undefined)
+    inline def setTxAuthGenericUndefined: Self = StObject.set(x, "txAuthGeneric", js.undefined)
     
-    @scala.inline
-    def setTxAuthSimple(value: String): Self = StObject.set(x, "txAuthSimple", value.asInstanceOf[js.Any])
+    inline def setTxAuthSimple(value: String): Self = StObject.set(x, "txAuthSimple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTxAuthSimpleUndefined: Self = StObject.set(x, "txAuthSimple", js.undefined)
+    inline def setTxAuthSimpleUndefined: Self = StObject.set(x, "txAuthSimple", js.undefined)
     
-    @scala.inline
-    def setUvi(value: Boolean): Self = StObject.set(x, "uvi", value.asInstanceOf[js.Any])
+    inline def setUvi(value: Boolean): Self = StObject.set(x, "uvi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUviUndefined: Self = StObject.set(x, "uvi", js.undefined)
+    inline def setUviUndefined: Self = StObject.set(x, "uvi", js.undefined)
     
-    @scala.inline
-    def setUvm(value: Boolean): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
+    inline def setUvm(value: Boolean): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
+    inline def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
   }
 }

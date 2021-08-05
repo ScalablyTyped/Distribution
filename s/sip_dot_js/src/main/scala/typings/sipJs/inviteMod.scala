@@ -66,26 +66,20 @@ object inviteMod {
   }
   object OutgoingInviteRequestDelegate {
     
-    @scala.inline
-    def apply(): OutgoingInviteRequestDelegate = {
+    inline def apply(): OutgoingInviteRequestDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutgoingInviteRequestDelegate]
     }
     
-    @scala.inline
-    implicit class OutgoingInviteRequestDelegateMutableBuilder[Self <: OutgoingInviteRequestDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: OutgoingInviteRequestDelegate](x: Self) {
       
-      @scala.inline
-      def setOnAccept(value: /* response */ AckableIncomingResponseWithSession => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
+      inline def setOnAccept(value: /* response */ AckableIncomingResponseWithSession => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAcceptUndefined: Self = StObject.set(x, "onAccept", js.undefined)
+      inline def setOnAcceptUndefined: Self = StObject.set(x, "onAccept", js.undefined)
       
-      @scala.inline
-      def setOnProgress(value: /* response */ PrackableIncomingResponseWithSession => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: /* response */ PrackableIncomingResponseWithSession => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     }
   }
   
@@ -101,17 +95,14 @@ object inviteMod {
   }
   object OutgoingResponseWithSession {
     
-    @scala.inline
-    def apply(message: String, session: Session): OutgoingResponseWithSession = {
+    inline def apply(message: String, session: Session): OutgoingResponseWithSession = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutgoingResponseWithSession]
     }
     
-    @scala.inline
-    implicit class OutgoingResponseWithSessionMutableBuilder[Self <: OutgoingResponseWithSession] (val x: Self) extends AnyVal {
+    extension [Self <: OutgoingResponseWithSession](x: Self) {
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     }
   }
   

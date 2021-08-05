@@ -31,8 +31,7 @@ trait ChartTwoAxisYSupplier
 }
 object ChartTwoAxisYSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HasSecondaryYAxis: Boolean,
     HasSecondaryYAxisDescription: Boolean,
     HasSecondaryYAxisTitle: Boolean,
@@ -59,16 +58,12 @@ object ChartTwoAxisYSupplier {
     __obj.asInstanceOf[ChartTwoAxisYSupplier]
   }
   
-  @scala.inline
-  implicit class ChartTwoAxisYSupplierMutableBuilder[Self <: ChartTwoAxisYSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTwoAxisYSupplier](x: Self) {
     
-    @scala.inline
-    def setHasSecondaryYAxis(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxis", value.asInstanceOf[js.Any])
+    inline def setHasSecondaryYAxis(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSecondaryYAxisDescription(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxisDescription", value.asInstanceOf[js.Any])
+    inline def setHasSecondaryYAxisDescription(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxisDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSecondaryYAxisTitle(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxisTitle", value.asInstanceOf[js.Any])
+    inline def setHasSecondaryYAxisTitle(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxisTitle", value.asInstanceOf[js.Any])
   }
 }

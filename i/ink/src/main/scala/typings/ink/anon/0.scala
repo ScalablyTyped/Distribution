@@ -10,16 +10,13 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(nodeName: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): `0` = {
+  inline def apply(nodeName: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): `0` = {
     val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setNodeName(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }
 }

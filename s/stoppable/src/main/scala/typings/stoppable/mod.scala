@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(server: Server): StoppableServer = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StoppableServer]
-  @scala.inline
-  def apply(server: Server, grace: Double): StoppableServer = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], grace.asInstanceOf[js.Any])).asInstanceOf[StoppableServer]
+  inline def apply(server: Server): StoppableServer = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StoppableServer]
+  inline def apply(server: Server, grace: Double): StoppableServer = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], grace.asInstanceOf[js.Any])).asInstanceOf[StoppableServer]
   
   @JSImport("stoppable", JSImport.Namespace)
   @js.native

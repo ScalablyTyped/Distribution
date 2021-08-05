@@ -12,28 +12,21 @@ trait ListKafkaVersionsResponse extends StObject {
 }
 object ListKafkaVersionsResponse {
   
-  @scala.inline
-  def apply(): ListKafkaVersionsResponse = {
+  inline def apply(): ListKafkaVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListKafkaVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListKafkaVersionsResponseMutableBuilder[Self <: ListKafkaVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListKafkaVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setKafkaVersions(value: listOfKafkaVersion): Self = StObject.set(x, "KafkaVersions", value.asInstanceOf[js.Any])
+    inline def setKafkaVersions(value: listOfKafkaVersion): Self = StObject.set(x, "KafkaVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKafkaVersionsUndefined: Self = StObject.set(x, "KafkaVersions", js.undefined)
+    inline def setKafkaVersionsUndefined: Self = StObject.set(x, "KafkaVersions", js.undefined)
     
-    @scala.inline
-    def setKafkaVersionsVarargs(value: KafkaVersion*): Self = StObject.set(x, "KafkaVersions", js.Array(value :_*))
+    inline def setKafkaVersionsVarargs(value: KafkaVersion*): Self = StObject.set(x, "KafkaVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

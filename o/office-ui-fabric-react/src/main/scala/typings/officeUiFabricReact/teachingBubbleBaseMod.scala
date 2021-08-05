@@ -17,7 +17,7 @@ object teachingBubbleBaseMod {
     extends Component[ITeachingBubbleProps, ITeachingBubbleState, js.Any] {
     def this(props: ITeachingBubbleProps) = this()
     
-    var _defaultCalloutProps: js.Any = js.native
+    /* private */ var _defaultCalloutProps: js.Any = js.native
     
     def focus(): Unit = js.native
     
@@ -33,8 +33,7 @@ object teachingBubbleBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.base", "TeachingBubbleBase.defaultProps")
     @js.native
     def defaultProps: CalloutProps = js.native
-    @scala.inline
-    def defaultProps_=(x: CalloutProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CalloutProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ITeachingBubbleState extends StObject {
@@ -43,20 +42,16 @@ object teachingBubbleBaseMod {
   }
   object ITeachingBubbleState {
     
-    @scala.inline
-    def apply(): ITeachingBubbleState = {
+    inline def apply(): ITeachingBubbleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITeachingBubbleState]
     }
     
-    @scala.inline
-    implicit class ITeachingBubbleStateMutableBuilder[Self <: ITeachingBubbleState] (val x: Self) extends AnyVal {
+    extension [Self <: ITeachingBubbleState](x: Self) {
       
-      @scala.inline
-      def setIsTeachingBubbleVisible(value: Boolean): Self = StObject.set(x, "isTeachingBubbleVisible", value.asInstanceOf[js.Any])
+      inline def setIsTeachingBubbleVisible(value: Boolean): Self = StObject.set(x, "isTeachingBubbleVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTeachingBubbleVisibleUndefined: Self = StObject.set(x, "isTeachingBubbleVisible", js.undefined)
+      inline def setIsTeachingBubbleVisibleUndefined: Self = StObject.set(x, "isTeachingBubbleVisible", js.undefined)
     }
   }
 }

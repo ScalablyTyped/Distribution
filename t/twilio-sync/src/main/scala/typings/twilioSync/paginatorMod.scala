@@ -24,7 +24,7 @@ object paginatorMod {
       */
     def nextPage(): js.Promise[js.Any] = js.native
     
-    var nextToken: js.Any = js.native
+    /* private */ var nextToken: js.Any = js.native
     
     /**
       * Request previous page.
@@ -33,8 +33,8 @@ object paginatorMod {
       */
     def prevPage(): js.Promise[js.Any] = js.native
     
-    var prevToken: js.Any = js.native
+    /* private */ var prevToken: js.Any = js.native
     
-    var source: js.Any = js.native
+    /* private */ var source: js.Any = js.native
   }
 }

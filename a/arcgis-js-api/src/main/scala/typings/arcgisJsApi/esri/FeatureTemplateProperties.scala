@@ -53,39 +53,29 @@ trait FeatureTemplateProperties extends StObject {
 }
 object FeatureTemplateProperties {
   
-  @scala.inline
-  def apply(): FeatureTemplateProperties = {
+  inline def apply(): FeatureTemplateProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureTemplateProperties]
   }
   
-  @scala.inline
-  implicit class FeatureTemplatePropertiesMutableBuilder[Self <: FeatureTemplateProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTemplateProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDrawingTool(
+    inline def setDrawingTool(
       value: `auto-complete-polygon` | circle | ellipse | freehand | line | none | point | polygon | rectangle | arrow | triangle | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow`
     ): Self = StObject.set(x, "drawingTool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawingToolUndefined: Self = StObject.set(x, "drawingTool", js.undefined)
+    inline def setDrawingToolUndefined: Self = StObject.set(x, "drawingTool", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: FeatureTemplateThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: FeatureTemplateThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait MicrosoftStoreForBusinessAppAssignmentSettings
 }
 object MicrosoftStoreForBusinessAppAssignmentSettings {
   
-  @scala.inline
-  def apply(): MicrosoftStoreForBusinessAppAssignmentSettings = {
+  inline def apply(): MicrosoftStoreForBusinessAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MicrosoftStoreForBusinessAppAssignmentSettings]
   }
   
-  @scala.inline
-  implicit class MicrosoftStoreForBusinessAppAssignmentSettingsMutableBuilder[Self <: MicrosoftStoreForBusinessAppAssignmentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MicrosoftStoreForBusinessAppAssignmentSettings](x: Self) {
     
-    @scala.inline
-    def setUseDeviceContext(value: Boolean): Self = StObject.set(x, "useDeviceContext", value.asInstanceOf[js.Any])
+    inline def setUseDeviceContext(value: Boolean): Self = StObject.set(x, "useDeviceContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDeviceContextUndefined: Self = StObject.set(x, "useDeviceContext", js.undefined)
+    inline def setUseDeviceContextUndefined: Self = StObject.set(x, "useDeviceContext", js.undefined)
   }
 }

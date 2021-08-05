@@ -50,11 +50,9 @@ object htmlWhitespacesMod {
     def visitText(text: Text, context: SiblingVisitorContext): js.Any = js.native
   }
   
-  @scala.inline
-  def removeWhitespaces(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = ^.asInstanceOf[js.Dynamic].applyDynamic("removeWhitespaces")(htmlAstWithErrors.asInstanceOf[js.Any]).asInstanceOf[ParseTreeResult]
+  inline def removeWhitespaces(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = ^.asInstanceOf[js.Dynamic].applyDynamic("removeWhitespaces")(htmlAstWithErrors.asInstanceOf[js.Any]).asInstanceOf[ParseTreeResult]
   
-  @scala.inline
-  def replaceNgsp(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceNgsp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def replaceNgsp(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceNgsp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait SiblingVisitorContext extends StObject {
     
@@ -64,26 +62,20 @@ object htmlWhitespacesMod {
   }
   object SiblingVisitorContext {
     
-    @scala.inline
-    def apply(): SiblingVisitorContext = {
+    inline def apply(): SiblingVisitorContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SiblingVisitorContext]
     }
     
-    @scala.inline
-    implicit class SiblingVisitorContextMutableBuilder[Self <: SiblingVisitorContext] (val x: Self) extends AnyVal {
+    extension [Self <: SiblingVisitorContext](x: Self) {
       
-      @scala.inline
-      def setNext(value: Node): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Node): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPrev(value: Node): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: Node): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     }
   }
 }

@@ -15,6 +15,5 @@ object actionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ActionButton(options: Badge): typings.jpm.FFAddonSDK.ActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("ActionButton")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.ActionButton]
+  inline def ActionButton(options: Badge): typings.jpm.FFAddonSDK.ActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("ActionButton")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.ActionButton]
 }

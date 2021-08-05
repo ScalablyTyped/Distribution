@@ -15,23 +15,18 @@ trait MinusPattern
 }
 object MinusPattern {
   
-  @scala.inline
-  def apply(patterns: js.Array[Pattern]): MinusPattern = {
+  inline def apply(patterns: js.Array[Pattern]): MinusPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("minus")
     __obj.asInstanceOf[MinusPattern]
   }
   
-  @scala.inline
-  implicit class MinusPatternMutableBuilder[Self <: MinusPattern] (val x: Self) extends AnyVal {
+  extension [Self <: MinusPattern](x: Self) {
     
-    @scala.inline
-    def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: minus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: minus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait ComponentProps
 }
 object ComponentProps {
   
-  @scala.inline
-  def apply(onBlur: () => Unit, onFocus: () => Unit, tabIndex: TabIndex): ComponentProps = {
+  inline def apply(onBlur: () => Unit, onFocus: () => Unit, tabIndex: TabIndex): ComponentProps = {
     val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction0(onBlur), onFocus = js.Any.fromFunction0(onFocus), tabIndex = tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentProps]
   }
   
-  @scala.inline
-  implicit class ComponentPropsMutableBuilder[Self <: ComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentProps](x: Self) {
     
-    @scala.inline
-    def setRef(value: MutableRefObject[ComponentClass[js.Object, ComponentState]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: MutableRefObject[ComponentClass[js.Object, ComponentState]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

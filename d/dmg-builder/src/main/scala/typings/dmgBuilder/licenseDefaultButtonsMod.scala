@@ -10,6 +10,5 @@ object licenseDefaultButtonsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDefaultButtons(langWithRegion: String, id: Double, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultButtons")(langWithRegion.asInstanceOf[js.Any], id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getDefaultButtons(langWithRegion: String, id: Double, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultButtons")(langWithRegion.asInstanceOf[js.Any], id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
 }

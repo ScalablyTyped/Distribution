@@ -20,59 +20,42 @@ object DDPRateLimiter {
   }
   object Matcher {
     
-    @scala.inline
-    def apply(): Matcher = {
+    inline def apply(): Matcher = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Matcher]
     }
     
-    @scala.inline
-    implicit class MatcherMutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
+    extension [Self <: Matcher](x: Self) {
       
-      @scala.inline
-      def setClientAddress(value: String | (js.Function1[/* clientAddress */ String, Boolean])): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
+      inline def setClientAddress(value: String | (js.Function1[/* clientAddress */ String, Boolean])): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientAddressFunction1(value: /* clientAddress */ String => Boolean): Self = StObject.set(x, "clientAddress", js.Any.fromFunction1(value))
+      inline def setClientAddressFunction1(value: /* clientAddress */ String => Boolean): Self = StObject.set(x, "clientAddress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
+      inline def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
       
-      @scala.inline
-      def setConnectionId(value: String | (js.Function1[/* connectionId */ String, Boolean])): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: String | (js.Function1[/* connectionId */ String, Boolean])): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionIdFunction1(value: /* connectionId */ String => Boolean): Self = StObject.set(x, "connectionId", js.Any.fromFunction1(value))
+      inline def setConnectionIdFunction1(value: /* connectionId */ String => Boolean): Self = StObject.set(x, "connectionId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+      inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
       
-      @scala.inline
-      def setName(value: String | (js.Function1[/* name */ String, Boolean])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | (js.Function1[/* name */ String, Boolean])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFunction1(value: /* name */ String => Boolean): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+      inline def setNameFunction1(value: /* name */ String => Boolean): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String | (js.Function1[/* type */ String, Boolean])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | (js.Function1[/* type */ String, Boolean])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction1(value: /* type */ String => Boolean): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setTypeFunction1(value: /* type */ String => Boolean): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUserId(value: String | (js.Function1[/* userId */ String, Boolean])): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String | (js.Function1[/* userId */ String, Boolean])): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdFunction1(value: /* userId */ String => Boolean): Self = StObject.set(x, "userId", js.Any.fromFunction1(value))
+      inline def setUserIdFunction1(value: /* userId */ String => Boolean): Self = StObject.set(x, "userId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
 }

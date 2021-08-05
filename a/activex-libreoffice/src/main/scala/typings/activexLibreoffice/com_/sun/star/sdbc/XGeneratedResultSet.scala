@@ -35,8 +35,7 @@ trait XGeneratedResultSet
 }
 object XGeneratedResultSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GeneratedValues: XResultSet,
     acquire: () => Unit,
     getGeneratedValues: () => XResultSet,
@@ -47,13 +46,10 @@ object XGeneratedResultSet {
     __obj.asInstanceOf[XGeneratedResultSet]
   }
   
-  @scala.inline
-  implicit class XGeneratedResultSetMutableBuilder[Self <: XGeneratedResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: XGeneratedResultSet](x: Self) {
     
-    @scala.inline
-    def setGeneratedValues(value: XResultSet): Self = StObject.set(x, "GeneratedValues", value.asInstanceOf[js.Any])
+    inline def setGeneratedValues(value: XResultSet): Self = StObject.set(x, "GeneratedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetGeneratedValues(value: () => XResultSet): Self = StObject.set(x, "getGeneratedValues", js.Any.fromFunction0(value))
+    inline def setGetGeneratedValues(value: () => XResultSet): Self = StObject.set(x, "getGeneratedValues", js.Any.fromFunction0(value))
   }
 }

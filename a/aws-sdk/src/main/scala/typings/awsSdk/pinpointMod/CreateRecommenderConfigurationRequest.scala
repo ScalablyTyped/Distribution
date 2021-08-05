@@ -10,16 +10,13 @@ trait CreateRecommenderConfigurationRequest extends StObject {
 }
 object CreateRecommenderConfigurationRequest {
   
-  @scala.inline
-  def apply(CreateRecommenderConfiguration: CreateRecommenderConfiguration): CreateRecommenderConfigurationRequest = {
+  inline def apply(CreateRecommenderConfiguration: CreateRecommenderConfiguration): CreateRecommenderConfigurationRequest = {
     val __obj = js.Dynamic.literal(CreateRecommenderConfiguration = CreateRecommenderConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRecommenderConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class CreateRecommenderConfigurationRequestMutableBuilder[Self <: CreateRecommenderConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRecommenderConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setCreateRecommenderConfiguration(value: CreateRecommenderConfiguration): Self = StObject.set(x, "CreateRecommenderConfiguration", value.asInstanceOf[js.Any])
+    inline def setCreateRecommenderConfiguration(value: CreateRecommenderConfiguration): Self = StObject.set(x, "CreateRecommenderConfiguration", value.asInstanceOf[js.Any])
   }
 }

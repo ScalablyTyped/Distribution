@@ -29,6 +29,5 @@ object renameMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintNameNewNameTimeout: NewName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNameNewNameTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintNameNewNameTimeout: NewName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNameNewNameTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

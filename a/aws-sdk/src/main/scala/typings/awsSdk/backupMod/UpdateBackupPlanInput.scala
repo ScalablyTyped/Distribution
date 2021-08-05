@@ -18,19 +18,15 @@ trait UpdateBackupPlanInput extends StObject {
 }
 object UpdateBackupPlanInput {
   
-  @scala.inline
-  def apply(BackupPlan: BackupPlanInput, BackupPlanId: String): UpdateBackupPlanInput = {
+  inline def apply(BackupPlan: BackupPlanInput, BackupPlanId: String): UpdateBackupPlanInput = {
     val __obj = js.Dynamic.literal(BackupPlan = BackupPlan.asInstanceOf[js.Any], BackupPlanId = BackupPlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBackupPlanInput]
   }
   
-  @scala.inline
-  implicit class UpdateBackupPlanInputMutableBuilder[Self <: UpdateBackupPlanInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBackupPlanInput](x: Self) {
     
-    @scala.inline
-    def setBackupPlan(value: BackupPlanInput): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
+    inline def setBackupPlan(value: BackupPlanInput): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
   }
 }

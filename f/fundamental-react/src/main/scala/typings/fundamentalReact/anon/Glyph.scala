@@ -23,37 +23,27 @@ trait Glyph extends StObject {
 }
 object Glyph {
   
-  @scala.inline
-  def apply(glyph: String, notificationCount: Double): Glyph = {
+  inline def apply(glyph: String, notificationCount: Double): Glyph = {
     val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any], notificationCount = notificationCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Glyph]
   }
   
-  @scala.inline
-  implicit class GlyphMutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
+  extension [Self <: Glyph](x: Self) {
     
-    @scala.inline
-    def setCallback(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+    inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    @scala.inline
-    def setNotificationCount(value: Double): Self = StObject.set(x, "notificationCount", value.asInstanceOf[js.Any])
+    inline def setNotificationCount(value: Double): Self = StObject.set(x, "notificationCount", value.asInstanceOf[js.Any])
   }
 }

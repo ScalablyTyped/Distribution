@@ -20,8 +20,7 @@ object withStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
+  inline def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -34,8 +33,7 @@ object withStylesMod {
     ], 
     StyledComponentProps[ClassKey]
   ]]
-  @scala.inline
-  def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey]): PropInjector[
+  inline def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -48,8 +46,7 @@ object withStylesMod {
     ], 
     StyledComponentProps[ClassKey]
   ]]
-  @scala.inline
-  def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey], options: Options): PropInjector[
+  inline def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -62,8 +59,7 @@ object withStylesMod {
     ], 
     StyledComponentProps[ClassKey]
   ]]
-  @scala.inline
-  def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey], options: Options): PropInjector[
+  inline def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -88,8 +84,7 @@ object withStylesMod {
         ]
   object CSSProperties {
     
-    @scala.inline
-    def apply(): CSSProperties = {
+    inline def apply(): CSSProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSProperties]
     }
@@ -109,32 +104,24 @@ object withStylesMod {
   }
   object StyledComponentProps {
     
-    @scala.inline
-    def apply[ClassKey /* <: String */](): StyledComponentProps[ClassKey] = {
+    inline def apply[ClassKey /* <: String */](): StyledComponentProps[ClassKey] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyledComponentProps[ClassKey]]
     }
     
-    @scala.inline
-    implicit class StyledComponentPropsMutableBuilder[Self <: StyledComponentProps[?], ClassKey /* <: String */] (val x: Self & StyledComponentProps[ClassKey]) extends AnyVal {
+    extension [Self <: StyledComponentProps[?], ClassKey /* <: String */](x: Self & StyledComponentProps[ClassKey]) {
       
-      @scala.inline
-      def setClasses(value: Partial[ClassNameMap[ClassKey]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Partial[ClassNameMap[ClassKey]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     }
   }
   
@@ -148,23 +135,18 @@ object withStylesMod {
   }
   object StylesCreator {
     
-    @scala.inline
-    def apply(create: (Theme, String) => StyleRules[String], options: Index, themingEnabled: Boolean): StylesCreator = {
+    inline def apply(create: (Theme, String) => StyleRules[String], options: Index, themingEnabled: Boolean): StylesCreator = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), options = options.asInstanceOf[js.Any], themingEnabled = themingEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylesCreator]
     }
     
-    @scala.inline
-    implicit class StylesCreatorMutableBuilder[Self <: StylesCreator] (val x: Self) extends AnyVal {
+    extension [Self <: StylesCreator](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (Theme, String) => StyleRules[String]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (Theme, String) => StyleRules[String]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptions(value: Index): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Index): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemingEnabled(value: Boolean): Self = StObject.set(x, "themingEnabled", value.asInstanceOf[js.Any])
+      inline def setThemingEnabled(value: Boolean): Self = StObject.set(x, "themingEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,32 +163,24 @@ object withStylesMod {
   }
   object WithStylesOptions {
     
-    @scala.inline
-    def apply[ClassKey /* <: String */](): WithStylesOptions[ClassKey] = {
+    inline def apply[ClassKey /* <: String */](): WithStylesOptions[ClassKey] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithStylesOptions[ClassKey]]
     }
     
-    @scala.inline
-    implicit class WithStylesOptionsMutableBuilder[Self <: WithStylesOptions[?], ClassKey /* <: String */] (val x: Self & WithStylesOptions[ClassKey]) extends AnyVal {
+    extension [Self <: WithStylesOptions[?], ClassKey /* <: String */](x: Self & WithStylesOptions[ClassKey]) {
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
+      inline def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
+      inline def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
     }
   }
 }

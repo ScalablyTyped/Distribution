@@ -19,22 +19,17 @@ trait Parameters
 }
 object Parameters {
   
-  @scala.inline
-  def apply(): Parameters = {
+  inline def apply(): Parameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parameters]
   }
   
-  @scala.inline
-  implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+  extension [Self <: Parameters](x: Self) {
     
-    @scala.inline
-    def setParameter(value: js.Array[ParametersParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Array[ParametersParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    @scala.inline
-    def setParameterVarargs(value: ParametersParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+    inline def setParameterVarargs(value: ParametersParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
   }
 }

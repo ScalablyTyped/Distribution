@@ -23,55 +23,39 @@ trait MimeType extends StObject {
 }
 object MimeType {
   
-  @scala.inline
-  def apply(mode: String, name: String): MimeType = {
+  inline def apply(mode: String, name: String): MimeType = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MimeType]
   }
   
-  @scala.inline
-  implicit class MimeTypeMutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
+  extension [Self <: MimeType](x: Self) {
     
-    @scala.inline
-    def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+    inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
     
-    @scala.inline
-    def setExt(value: js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+    inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
-    @scala.inline
-    def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
+    inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
     
-    @scala.inline
-    def setFile(value: RegExp): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: RegExp): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setMimes(value: String): Self = StObject.set(x, "mimes", value.asInstanceOf[js.Any])
+    inline def setMimes(value: String): Self = StObject.set(x, "mimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimesUndefined: Self = StObject.set(x, "mimes", js.undefined)
+    inline def setMimesUndefined: Self = StObject.set(x, "mimes", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -32,26 +32,20 @@ object anon {
   }
   object Failed {
     
-    @scala.inline
-    def apply(failed: String, pending: String, success: String, todo: String): Failed = {
+    inline def apply(failed: String, pending: String, success: String, todo: String): Failed = {
       val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], todo = todo.asInstanceOf[js.Any])
       __obj.asInstanceOf[Failed]
     }
     
-    @scala.inline
-    implicit class FailedMutableBuilder[Self <: Failed] (val x: Self) extends AnyVal {
+    extension [Self <: Failed](x: Self) {
       
-      @scala.inline
-      def setFailed(value: String): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: String): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodo(value: String): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
+      inline def setTodo(value: String): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,20 +121,16 @@ object anon {
   }
   object TypeofpreRunMessage {
     
-    @scala.inline
-    def apply(print: WritableStream => Unit, remove: WritableStream => Unit): TypeofpreRunMessage = {
+    inline def apply(print: WritableStream => Unit, remove: WritableStream => Unit): TypeofpreRunMessage = {
       val __obj = js.Dynamic.literal(print = js.Any.fromFunction1(print), remove = js.Any.fromFunction1(remove))
       __obj.asInstanceOf[TypeofpreRunMessage]
     }
     
-    @scala.inline
-    implicit class TypeofpreRunMessageMutableBuilder[Self <: TypeofpreRunMessage] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofpreRunMessage](x: Self) {
       
-      @scala.inline
-      def setPrint(value: WritableStream => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
+      inline def setPrint(value: WritableStream => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: WritableStream => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: WritableStream => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
   
@@ -154,23 +144,18 @@ object anon {
   }
   object TypeofspecialChars {
     
-    @scala.inline
-    def apply(ARROW: /* " \\u203A " */ String, CLEAR: String, ICONS: Failed): TypeofspecialChars = {
+    inline def apply(ARROW: /* " \\u203A " */ String, CLEAR: String, ICONS: Failed): TypeofspecialChars = {
       val __obj = js.Dynamic.literal(ARROW = ARROW.asInstanceOf[js.Any], CLEAR = CLEAR.asInstanceOf[js.Any], ICONS = ICONS.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofspecialChars]
     }
     
-    @scala.inline
-    implicit class TypeofspecialCharsMutableBuilder[Self <: TypeofspecialChars] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofspecialChars](x: Self) {
       
-      @scala.inline
-      def setARROW(value: /* " \\u203A " */ String): Self = StObject.set(x, "ARROW", value.asInstanceOf[js.Any])
+      inline def setARROW(value: /* " \\u203A " */ String): Self = StObject.set(x, "ARROW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR(value: String): Self = StObject.set(x, "CLEAR", value.asInstanceOf[js.Any])
+      inline def setCLEAR(value: String): Self = StObject.set(x, "CLEAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setICONS(value: Failed): Self = StObject.set(x, "ICONS", value.asInstanceOf[js.Any])
+      inline def setICONS(value: Failed): Self = StObject.set(x, "ICONS", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,6 +10,5 @@ object ampMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useAmp(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useAmp")().asInstanceOf[Boolean]
+  inline def useAmp(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useAmp")().asInstanceOf[Boolean]
 }

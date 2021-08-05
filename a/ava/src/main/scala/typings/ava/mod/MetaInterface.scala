@@ -14,19 +14,15 @@ trait MetaInterface extends StObject {
 }
 object MetaInterface {
   
-  @scala.inline
-  def apply(file: String, snapshotDirectory: String): MetaInterface = {
+  inline def apply(file: String, snapshotDirectory: String): MetaInterface = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], snapshotDirectory = snapshotDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaInterface]
   }
   
-  @scala.inline
-  implicit class MetaInterfaceMutableBuilder[Self <: MetaInterface] (val x: Self) extends AnyVal {
+  extension [Self <: MetaInterface](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotDirectory(value: String): Self = StObject.set(x, "snapshotDirectory", value.asInstanceOf[js.Any])
+    inline def setSnapshotDirectory(value: String): Self = StObject.set(x, "snapshotDirectory", value.asInstanceOf[js.Any])
   }
 }

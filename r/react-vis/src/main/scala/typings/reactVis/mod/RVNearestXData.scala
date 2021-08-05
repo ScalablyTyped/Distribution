@@ -17,8 +17,7 @@ trait RVNearestXData[T /* <: AbstractSeriesPoint */] extends StObject {
 }
 object RVNearestXData {
   
-  @scala.inline
-  def apply[T /* <: AbstractSeriesPoint */](
+  inline def apply[T /* <: AbstractSeriesPoint */](
     event: MouseEvent[HTMLElement, NativeMouseEvent],
     index: Double,
     innerX: /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any
@@ -27,16 +26,12 @@ object RVNearestXData {
     __obj.asInstanceOf[RVNearestXData[T]]
   }
   
-  @scala.inline
-  implicit class RVNearestXDataMutableBuilder[Self <: RVNearestXData[?], T /* <: AbstractSeriesPoint */] (val x: Self & RVNearestXData[T]) extends AnyVal {
+  extension [Self <: RVNearestXData[?], T /* <: AbstractSeriesPoint */](x: Self & RVNearestXData[T]) {
     
-    @scala.inline
-    def setEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerX(value: /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any): Self = StObject.set(x, "innerX", value.asInstanceOf[js.Any])
+    inline def setInnerX(value: /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any): Self = StObject.set(x, "innerX", value.asInstanceOf[js.Any])
   }
 }

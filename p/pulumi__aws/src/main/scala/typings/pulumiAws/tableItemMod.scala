@@ -61,21 +61,16 @@ object tableItemMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TableItem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TableItem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TableItemState): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TableItem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TableItemState, opts: CustomResourceOptions): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TableItem]
+    inline def get(name: String, id: Input[ID]): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TableItem]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TableItem]
+    inline def get(name: String, id: Input[ID], state: TableItemState): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TableItem]
+    inline def get(name: String, id: Input[ID], state: TableItemState, opts: CustomResourceOptions): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TableItem]
     
     /**
       * Returns true if the given object is an instance of TableItem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean]
   }
   
   trait TableItemArgs extends StObject {
@@ -103,29 +98,22 @@ object tableItemMod {
   }
   object TableItemArgs {
     
-    @scala.inline
-    def apply(hashKey: Input[String], item: Input[String], tableName: Input[String]): TableItemArgs = {
+    inline def apply(hashKey: Input[String], item: Input[String], tableName: Input[String]): TableItemArgs = {
       val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableItemArgs]
     }
     
-    @scala.inline
-    implicit class TableItemArgsMutableBuilder[Self <: TableItemArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TableItemArgs](x: Self) {
       
-      @scala.inline
-      def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+      inline def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: Input[String]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Input[String]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+      inline def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
+      inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
       
-      @scala.inline
-      def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,38 +142,28 @@ object tableItemMod {
   }
   object TableItemState {
     
-    @scala.inline
-    def apply(): TableItemState = {
+    inline def apply(): TableItemState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableItemState]
     }
     
-    @scala.inline
-    implicit class TableItemStateMutableBuilder[Self <: TableItemState] (val x: Self) extends AnyVal {
+    extension [Self <: TableItemState](x: Self) {
       
-      @scala.inline
-      def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+      inline def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashKeyUndefined: Self = StObject.set(x, "hashKey", js.undefined)
+      inline def setHashKeyUndefined: Self = StObject.set(x, "hashKey", js.undefined)
       
-      @scala.inline
-      def setItem(value: Input[String]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Input[String]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+      inline def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
+      inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
       
-      @scala.inline
-      def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     }
   }
 }

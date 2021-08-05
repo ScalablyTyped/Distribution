@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _LINE_DIRECTION extends StObject
 object _LINE_DIRECTION {
   
-  @scala.inline
-  def LINE_DIRECTION_LeftToRight: `2` = 2.asInstanceOf[`2`]
+  inline def LINE_DIRECTION_LeftToRight: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def LINE_DIRECTION_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def LINE_DIRECTION_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def LINE_DIRECTION_RightToLeft: `1` = 1.asInstanceOf[`1`]
+  inline def LINE_DIRECTION_RightToLeft: `1` = 1.asInstanceOf[`1`]
 }

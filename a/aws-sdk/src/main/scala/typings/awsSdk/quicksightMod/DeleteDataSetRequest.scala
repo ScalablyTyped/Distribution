@@ -18,19 +18,15 @@ trait DeleteDataSetRequest extends StObject {
 }
 object DeleteDataSetRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DataSetId: ResourceId): DeleteDataSetRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DataSetId: ResourceId): DeleteDataSetRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDataSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDataSetRequestMutableBuilder[Self <: DeleteDataSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDataSetRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
   }
 }

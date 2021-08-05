@@ -11,8 +11,7 @@ object libDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isMissingLocaleDataError(e: Error): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMissingLocaleDataError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean]
+  inline def isMissingLocaleDataError(e: Error): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMissingLocaleDataError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean]
   
   trait MissingLocaleDataError
     extends StObject
@@ -22,18 +21,15 @@ object libDataMod {
   }
   object MissingLocaleDataError {
     
-    @scala.inline
-    def apply(message: String, name: String, `type`: String): MissingLocaleDataError = {
+    inline def apply(message: String, name: String, `type`: String): MissingLocaleDataError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MissingLocaleDataError]
     }
     
-    @scala.inline
-    implicit class MissingLocaleDataErrorMutableBuilder[Self <: MissingLocaleDataError] (val x: Self) extends AnyVal {
+    extension [Self <: MissingLocaleDataError](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -48,8 +48,7 @@ trait Tier extends StObject {
 }
 object Tier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     achievUnlock: Double,
     color: String,
     iconRow: Double,
@@ -67,38 +66,27 @@ object Tier {
     __obj.asInstanceOf[Tier]
   }
   
-  @scala.inline
-  implicit class TierMutableBuilder[Self <: Tier] (val x: Self) extends AnyVal {
+  extension [Self <: Tier](x: Self) {
     
-    @scala.inline
-    def setAchievUnlock(value: Double): Self = StObject.set(x, "achievUnlock", value.asInstanceOf[js.Any])
+    inline def setAchievUnlock(value: Double): Self = StObject.set(x, "achievUnlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconRow(value: Double): Self = StObject.set(x, "iconRow", value.asInstanceOf[js.Any])
+    inline def setIconRow(value: Double): Self = StObject.set(x, "iconRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: String): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: String): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
-    @scala.inline
-    def setSpecial(value: PseudoBoolean | Boolean): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+    inline def setSpecial(value: PseudoBoolean | Boolean): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+    inline def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgrades(
+    inline def setUpgrades(
       value: js.Array[
           TieredUpgradeClass[
             /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
@@ -106,8 +94,7 @@ object Tier {
         ]
     ): Self = StObject.set(x, "upgrades", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradesVarargs(
+    inline def setUpgradesVarargs(
       value: (TieredUpgradeClass[
           /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
         ])*

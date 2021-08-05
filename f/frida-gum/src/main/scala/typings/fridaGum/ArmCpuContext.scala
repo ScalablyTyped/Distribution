@@ -39,8 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ArmCpuContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lr: NativePointer,
     pc: NativePointer,
     r0: NativePointer,
@@ -62,49 +61,34 @@ object ArmCpuContext {
     __obj.asInstanceOf[ArmCpuContext]
   }
   
-  @scala.inline
-  implicit class ArmCpuContextMutableBuilder[Self <: ArmCpuContext] (val x: Self) extends AnyVal {
+  extension [Self <: ArmCpuContext](x: Self) {
     
-    @scala.inline
-    def setLr(value: NativePointer): Self = StObject.set(x, "lr", value.asInstanceOf[js.Any])
+    inline def setLr(value: NativePointer): Self = StObject.set(x, "lr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR0(value: NativePointer): Self = StObject.set(x, "r0", value.asInstanceOf[js.Any])
+    inline def setR0(value: NativePointer): Self = StObject.set(x, "r0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR1(value: NativePointer): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+    inline def setR1(value: NativePointer): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR10(value: NativePointer): Self = StObject.set(x, "r10", value.asInstanceOf[js.Any])
+    inline def setR10(value: NativePointer): Self = StObject.set(x, "r10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR11(value: NativePointer): Self = StObject.set(x, "r11", value.asInstanceOf[js.Any])
+    inline def setR11(value: NativePointer): Self = StObject.set(x, "r11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR12(value: NativePointer): Self = StObject.set(x, "r12", value.asInstanceOf[js.Any])
+    inline def setR12(value: NativePointer): Self = StObject.set(x, "r12", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2(value: NativePointer): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+    inline def setR2(value: NativePointer): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR3(value: NativePointer): Self = StObject.set(x, "r3", value.asInstanceOf[js.Any])
+    inline def setR3(value: NativePointer): Self = StObject.set(x, "r3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR4(value: NativePointer): Self = StObject.set(x, "r4", value.asInstanceOf[js.Any])
+    inline def setR4(value: NativePointer): Self = StObject.set(x, "r4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR5(value: NativePointer): Self = StObject.set(x, "r5", value.asInstanceOf[js.Any])
+    inline def setR5(value: NativePointer): Self = StObject.set(x, "r5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR6(value: NativePointer): Self = StObject.set(x, "r6", value.asInstanceOf[js.Any])
+    inline def setR6(value: NativePointer): Self = StObject.set(x, "r6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR7(value: NativePointer): Self = StObject.set(x, "r7", value.asInstanceOf[js.Any])
+    inline def setR7(value: NativePointer): Self = StObject.set(x, "r7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR8(value: NativePointer): Self = StObject.set(x, "r8", value.asInstanceOf[js.Any])
+    inline def setR8(value: NativePointer): Self = StObject.set(x, "r8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR9(value: NativePointer): Self = StObject.set(x, "r9", value.asInstanceOf[js.Any])
+    inline def setR9(value: NativePointer): Self = StObject.set(x, "r9", value.asInstanceOf[js.Any])
   }
 }

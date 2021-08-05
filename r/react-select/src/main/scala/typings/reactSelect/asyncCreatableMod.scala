@@ -29,8 +29,7 @@ object asyncCreatableMod {
     @JSImport("react-select/async-creatable", "default.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/async-creatable", "AsyncCreatable")
@@ -54,7 +53,6 @@ object asyncCreatableMod {
     @JSImport("react-select/async-creatable", "AsyncCreatable.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

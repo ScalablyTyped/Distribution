@@ -11,9 +11,9 @@ object bigIntegerMod {
   class BigIntExponentiation protected () extends StObject {
     def this(base: Double) = this()
     
-    val base: js.Any = js.native
+    /* private */ val base: js.Any = js.native
     
-    val exponents: js.Any = js.native
+    /* private */ val exponents: js.Any = js.native
     
     /**
       * Compute the value for `this.base^exponent`, resulting in a big integer that is optimized for
@@ -30,7 +30,7 @@ object bigIntegerMod {
     /**
       * Computes and memoizes the big integer value for `this.number * 2^exponent`.
       */
-    var getMultipliedByPowerOfTwo: js.Any = js.native
+    /* private */ var getMultipliedByPowerOfTwo: js.Any = js.native
     
     /**
       * Returns the big integer itself.
@@ -74,7 +74,7 @@ object bigIntegerMod {
     /**
       * Stores all memoized power-of-twos, where each index represents `this.number * 2^index`.
       */
-    val powerOfTwos: js.Any = js.native
+    /* private */ val powerOfTwos: js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/i18n/big_integer", "BigInteger")
@@ -82,7 +82,7 @@ object bigIntegerMod {
   /**
     * Creates a big integer using its individual digits in little endian storage.
     */
-  class BigInteger protected () extends StObject {
+  /* private */ class BigInteger () extends StObject {
     
     /**
       * Returns a new big integer with the sum of `this` and `other` as its value. This does not mutate
@@ -95,7 +95,7 @@ object bigIntegerMod {
       */
     def addToSelf(other: BigInteger): Unit = js.native
     
-    val digits: js.Any = js.native
+    /* private */ val digits: js.Any = js.native
   }
   /* static members */
   object BigInteger {
@@ -104,10 +104,8 @@ object bigIntegerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def one(): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("one")().asInstanceOf[BigInteger]
+    inline def one(): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("one")().asInstanceOf[BigInteger]
     
-    @scala.inline
-    def zero(): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[BigInteger]
+    inline def zero(): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[BigInteger]
   }
 }

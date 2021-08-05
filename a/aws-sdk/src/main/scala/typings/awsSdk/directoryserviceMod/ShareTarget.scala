@@ -18,19 +18,15 @@ trait ShareTarget extends StObject {
 }
 object ShareTarget {
   
-  @scala.inline
-  def apply(Id: TargetId, Type: TargetType): ShareTarget = {
+  inline def apply(Id: TargetId, Type: TargetType): ShareTarget = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareTarget]
   }
   
-  @scala.inline
-  implicit class ShareTargetMutableBuilder[Self <: ShareTarget] (val x: Self) extends AnyVal {
+  extension [Self <: ShareTarget](x: Self) {
     
-    @scala.inline
-    def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TargetType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: TargetType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait UpdateDeviceRequest extends StObject {
 }
 object UpdateDeviceRequest {
   
-  @scala.inline
-  def apply(): UpdateDeviceRequest = {
+  inline def apply(): UpdateDeviceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDeviceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceRequestMutableBuilder[Self <: UpdateDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
+    inline def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: DeviceName): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: DeviceName): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
   }
 }

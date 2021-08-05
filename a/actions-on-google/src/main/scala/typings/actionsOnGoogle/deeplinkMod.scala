@@ -51,30 +51,23 @@ object deeplinkMod {
   }
   object DeepLinkOptions {
     
-    @scala.inline
-    def apply(_package: String, destination: String, url: String): DeepLinkOptions = {
+    inline def apply(_package: String, destination: String, url: String): DeepLinkOptions = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeepLinkOptions]
     }
     
-    @scala.inline
-    implicit class DeepLinkOptionsMutableBuilder[Self <: DeepLinkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeepLinkOptions](x: Self) {
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     }
   }
 }

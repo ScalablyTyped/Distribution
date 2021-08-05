@@ -31,7 +31,7 @@ object abstractRepositoryMod {
       * Gets custom repository's managed entity.
       * If given custom repository does not manage any entity then undefined will be returned.
       */
-    var getCustomRepositoryTarget: js.Any = js.native
+    /* private */ var getCustomRepositoryTarget: js.Any = js.native
     
     /**
       * Gets the original ORM repository for the given entity class.
@@ -46,18 +46,18 @@ object abstractRepositoryMod {
     /**
       * Gets entity manager that allows to perform repository operations with any entity.
       */
-    var manager: EntityManager = js.native
+    /* protected */ var manager: EntityManager = js.native
     
     /**
       * Gets the original ORM repository for the entity that is managed by this repository.
       * If current repository does not manage any entity, then exception will be thrown.
       */
-    val repository: Repository[Entity] = js.native
+    /* protected */ val repository: Repository[Entity] = js.native
     
     /**
       * Gets the original ORM tree repository for the entity that is managed by this repository.
       * If current repository does not manage any entity, then exception will be thrown.
       */
-    val treeRepository: TreeRepository[Entity] = js.native
+    /* protected */ val treeRepository: TreeRepository[Entity] = js.native
   }
 }

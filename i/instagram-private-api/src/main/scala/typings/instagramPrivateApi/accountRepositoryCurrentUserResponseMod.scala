@@ -14,23 +14,18 @@ object accountRepositoryCurrentUserResponseMod {
   }
   object AccountRepositoryCurrentUserResponseBiographyWithEntities {
     
-    @scala.inline
-    def apply(entities: js.Array[js.Any], raw_text: String): AccountRepositoryCurrentUserResponseBiographyWithEntities = {
+    inline def apply(entities: js.Array[js.Any], raw_text: String): AccountRepositoryCurrentUserResponseBiographyWithEntities = {
       val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryCurrentUserResponseBiographyWithEntities]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryCurrentUserResponseBiographyWithEntitiesMutableBuilder[Self <: AccountRepositoryCurrentUserResponseBiographyWithEntities] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryCurrentUserResponseBiographyWithEntities](x: Self) {
       
-      @scala.inline
-      def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
+      inline def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
       
-      @scala.inline
-      def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
+      inline def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,23 +39,18 @@ object accountRepositoryCurrentUserResponseMod {
   }
   object AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo {
     
-    @scala.inline
-    def apply(height: Double, url: String, width: Double): AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo = {
+    inline def apply(height: Double, url: String, width: Double): AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryCurrentUserResponseHdProfilePicUrlInfoMutableBuilder[Self <: AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,23 +64,18 @@ object accountRepositoryCurrentUserResponseMod {
   }
   object AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem {
     
-    @scala.inline
-    def apply(height: Double, url: String, width: Double): AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem = {
+    inline def apply(height: Double, url: String, width: Double): AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryCurrentUserResponseHdProfilePicVersionsItemMutableBuilder[Self <: AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,20 +87,16 @@ object accountRepositoryCurrentUserResponseMod {
   }
   object AccountRepositoryCurrentUserResponseRootObject {
     
-    @scala.inline
-    def apply(status: String, user: AccountRepositoryCurrentUserResponseUser): AccountRepositoryCurrentUserResponseRootObject = {
+    inline def apply(status: String, user: AccountRepositoryCurrentUserResponseUser): AccountRepositoryCurrentUserResponseRootObject = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryCurrentUserResponseRootObject]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryCurrentUserResponseRootObjectMutableBuilder[Self <: AccountRepositoryCurrentUserResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryCurrentUserResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: AccountRepositoryCurrentUserResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: AccountRepositoryCurrentUserResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,8 +152,7 @@ object accountRepositoryCurrentUserResponseMod {
   }
   object AccountRepositoryCurrentUserResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowed_commenter_type: String,
       biography: String,
       biography_with_entities: AccountRepositoryCurrentUserResponseBiographyWithEntities,
@@ -202,83 +182,57 @@ object accountRepositoryCurrentUserResponseMod {
       __obj.asInstanceOf[AccountRepositoryCurrentUserResponseUser]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryCurrentUserResponseUserMutableBuilder[Self <: AccountRepositoryCurrentUserResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryCurrentUserResponseUser](x: Self) {
       
-      @scala.inline
-      def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
+      inline def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
+      inline def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiography_with_entities(value: AccountRepositoryCurrentUserResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
+      inline def setBiography_with_entities(value: AccountRepositoryCurrentUserResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBirthday(value: Null): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+      inline def setBirthday(value: Null): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_link_entities_in_bio(value: Boolean): Self = StObject.set(x, "can_link_entities_in_bio", value.asInstanceOf[js.Any])
+      inline def setCan_link_entities_in_bio(value: Boolean): Self = StObject.set(x, "can_link_entities_in_bio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_code(value: Double): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+      inline def setCountry_code(value: Double): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
+      inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGender(value: Double): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: Double): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
+      inline def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHd_profile_pic_url_info(value: AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo): Self = StObject.set(x, "hd_profile_pic_url_info", value.asInstanceOf[js.Any])
+      inline def setHd_profile_pic_url_info(value: AccountRepositoryCurrentUserResponseHdProfilePicUrlInfo): Self = StObject.set(x, "hd_profile_pic_url_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHd_profile_pic_versions(value: js.Array[AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem]): Self = StObject.set(x, "hd_profile_pic_versions", value.asInstanceOf[js.Any])
+      inline def setHd_profile_pic_versions(value: js.Array[AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem]): Self = StObject.set(x, "hd_profile_pic_versions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHd_profile_pic_versionsVarargs(value: AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem*): Self = StObject.set(x, "hd_profile_pic_versions", js.Array(value :_*))
+      inline def setHd_profile_pic_versionsVarargs(value: AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem*): Self = StObject.set(x, "hd_profile_pic_versions", js.Array(value :_*))
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNational_number(value: Double): Self = StObject.set(x, "national_number", value.asInstanceOf[js.Any])
+      inline def setNational_number(value: Double): Self = StObject.set(x, "national_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+      inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
+      inline def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_conversion_edit_entry(value: Boolean): Self = StObject.set(x, "show_conversion_edit_entry", value.asInstanceOf[js.Any])
+      inline def setShow_conversion_edit_entry(value: Boolean): Self = StObject.set(x, "show_conversion_edit_entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.InputParameterCollection")
 @js.native
-class InputParameterCollection protected ()
+/* private */ class InputParameterCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.InputParameterCollection {
   
   /* CompleteClass */
   override val Count: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.InputParameterCollection_typekey")
   var InfoPathDotInputParameterCollection_typekey: typings.activexInfopath.InfoPath.InputParameterCollection = js.native
   

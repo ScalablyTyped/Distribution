@@ -84,29 +84,22 @@ object mod {
   }
   object App {
     
-    @scala.inline
-    def apply(allowStop: Boolean, launch: String => Unit, name: String, pid: String, state: String): App = {
+    inline def apply(allowStop: Boolean, launch: String => Unit, name: String, pid: String, state: String): App = {
       val __obj = js.Dynamic.literal(allowStop = allowStop.asInstanceOf[js.Any], launch = js.Any.fromFunction1(launch), name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[App]
     }
     
-    @scala.inline
-    implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+    extension [Self <: App](x: Self) {
       
-      @scala.inline
-      def setAllowStop(value: Boolean): Self = StObject.set(x, "allowStop", value.asInstanceOf[js.Any])
+      inline def setAllowStop(value: Boolean): Self = StObject.set(x, "allowStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunch(value: String => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction1(value))
+      inline def setLaunch(value: String => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: String): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: String): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,29 +117,22 @@ object mod {
   }
   object AppInfo {
     
-    @scala.inline
-    def apply(dialVer: String, name: String, options: AppInfoOptions, state: String, xmlns: String): AppInfo = {
+    inline def apply(dialVer: String, name: String, options: AppInfoOptions, state: String, xmlns: String): AppInfo = {
       val __obj = js.Dynamic.literal(dialVer = dialVer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], xmlns = xmlns.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppInfo]
     }
     
-    @scala.inline
-    implicit class AppInfoMutableBuilder[Self <: AppInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AppInfo](x: Self) {
       
-      @scala.inline
-      def setDialVer(value: String): Self = StObject.set(x, "dialVer", value.asInstanceOf[js.Any])
+      inline def setDialVer(value: String): Self = StObject.set(x, "dialVer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: AppInfoOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: AppInfoOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+      inline def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,17 +142,14 @@ object mod {
   }
   object AppInfoOptions {
     
-    @scala.inline
-    def apply(allowStop: String): AppInfoOptions = {
+    inline def apply(allowStop: String): AppInfoOptions = {
       val __obj = js.Dynamic.literal(allowStop = allowStop.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppInfoOptions]
     }
     
-    @scala.inline
-    implicit class AppInfoOptionsMutableBuilder[Self <: AppInfoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppInfoOptions](x: Self) {
       
-      @scala.inline
-      def setAllowStop(value: String): Self = StObject.set(x, "allowStop", value.asInstanceOf[js.Any])
+      inline def setAllowStop(value: String): Self = StObject.set(x, "allowStop", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,29 +163,22 @@ object mod {
   }
   object CorsOptions {
     
-    @scala.inline
-    def apply(exposedHeaders: js.Array[String], methods: js.Array[String], origin: Boolean): CorsOptions = {
+    inline def apply(exposedHeaders: js.Array[String], methods: js.Array[String], origin: Boolean): CorsOptions = {
       val __obj = js.Dynamic.literal(exposedHeaders = exposedHeaders.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[CorsOptions]
     }
     
-    @scala.inline
-    implicit class CorsOptionsMutableBuilder[Self <: CorsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CorsOptions](x: Self) {
       
-      @scala.inline
-      def setExposedHeaders(value: js.Array[String]): Self = StObject.set(x, "exposedHeaders", value.asInstanceOf[js.Any])
+      inline def setExposedHeaders(value: js.Array[String]): Self = StObject.set(x, "exposedHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposedHeadersVarargs(value: String*): Self = StObject.set(x, "exposedHeaders", js.Array(value :_*))
+      inline def setExposedHeadersVarargs(value: String*): Self = StObject.set(x, "exposedHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setOrigin(value: Boolean): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Boolean): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,8 +192,7 @@ object mod {
   }
   object Delegate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getApp: String => App,
       launchApp: (String, String, js.Function1[/* data */ String, Unit]) => Unit,
       stopApp: (String, String, js.Function1[/* data */ Boolean, Unit]) => Unit
@@ -226,17 +201,13 @@ object mod {
       __obj.asInstanceOf[Delegate]
     }
     
-    @scala.inline
-    implicit class DelegateMutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
+    extension [Self <: Delegate](x: Self) {
       
-      @scala.inline
-      def setGetApp(value: String => App): Self = StObject.set(x, "getApp", js.Any.fromFunction1(value))
+      inline def setGetApp(value: String => App): Self = StObject.set(x, "getApp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLaunchApp(value: (String, String, js.Function1[/* data */ String, Unit]) => Unit): Self = StObject.set(x, "launchApp", js.Any.fromFunction3(value))
+      inline def setLaunchApp(value: (String, String, js.Function1[/* data */ String, Unit]) => Unit): Self = StObject.set(x, "launchApp", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStopApp(value: (String, String, js.Function1[/* data */ Boolean, Unit]) => Unit): Self = StObject.set(x, "stopApp", js.Any.fromFunction3(value))
+      inline def setStopApp(value: (String, String, js.Function1[/* data */ Boolean, Unit]) => Unit): Self = StObject.set(x, "stopApp", js.Any.fromFunction3(value))
     }
   }
   
@@ -260,8 +231,7 @@ object mod {
   }
   object DeviceInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       UDN: String,
       applicationUrl: String,
       descriptionUrl: String,
@@ -275,35 +245,25 @@ object mod {
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    @scala.inline
-    implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceInfo](x: Self) {
       
-      @scala.inline
-      def setApplicationUrl(value: String): Self = StObject.set(x, "applicationUrl", value.asInstanceOf[js.Any])
+      inline def setApplicationUrl(value: String): Self = StObject.set(x, "applicationUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUrl(value: String): Self = StObject.set(x, "descriptionUrl", value.asInstanceOf[js.Any])
+      inline def setDescriptionUrl(value: String): Self = StObject.set(x, "descriptionUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+      inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconList(value: js.Array[js.Object] | Icon): Self = StObject.set(x, "iconList", value.asInstanceOf[js.Any])
+      inline def setIconList(value: js.Array[js.Object] | Icon): Self = StObject.set(x, "iconList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconListVarargs(value: js.Object*): Self = StObject.set(x, "iconList", js.Array(value :_*))
+      inline def setIconListVarargs(value: js.Object*): Self = StObject.set(x, "iconList", js.Array(value :_*))
       
-      @scala.inline
-      def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+      inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUDN(value: String): Self = StObject.set(x, "UDN", value.asInstanceOf[js.Any])
+      inline def setUDN(value: String): Self = StObject.set(x, "UDN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -344,8 +304,7 @@ object mod {
   }
   object ServerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       corsAllowOrigins: String | Boolean,
       delegate: Delegate,
       expressApp: Express,
@@ -358,59 +317,41 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    @scala.inline
-    implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServerOptions](x: Self) {
       
-      @scala.inline
-      def setCorsAllowOrigins(value: String | Boolean): Self = StObject.set(x, "corsAllowOrigins", value.asInstanceOf[js.Any])
+      inline def setCorsAllowOrigins(value: String | Boolean): Self = StObject.set(x, "corsAllowOrigins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegate(value: Delegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: Delegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressApp(value: Express): Self = StObject.set(x, "expressApp", value.asInstanceOf[js.Any])
+      inline def setExpressApp(value: Express): Self = StObject.set(x, "expressApp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeaders(value: js.Object): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      inline def setExtraHeaders(value: js.Object): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      @scala.inline
-      def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+      inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
+      inline def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
+      inline def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
       
-      @scala.inline
-      def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: UUIDOptions): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: UUIDOptions): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
 }

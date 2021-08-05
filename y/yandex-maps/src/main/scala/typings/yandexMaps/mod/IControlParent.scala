@@ -13,16 +13,13 @@ trait IControlParent
 }
 object IControlParent {
   
-  @scala.inline
-  def apply(getChildElement: IControl => js.Promise[HTMLElement], getMap: () => Map_): IControlParent = {
+  inline def apply(getChildElement: IControl => js.Promise[HTMLElement], getMap: () => Map_): IControlParent = {
     val __obj = js.Dynamic.literal(getChildElement = js.Any.fromFunction1(getChildElement), getMap = js.Any.fromFunction0(getMap))
     __obj.asInstanceOf[IControlParent]
   }
   
-  @scala.inline
-  implicit class IControlParentMutableBuilder[Self <: IControlParent] (val x: Self) extends AnyVal {
+  extension [Self <: IControlParent](x: Self) {
     
-    @scala.inline
-    def setGetChildElement(value: IControl => js.Promise[HTMLElement]): Self = StObject.set(x, "getChildElement", js.Any.fromFunction1(value))
+    inline def setGetChildElement(value: IControl => js.Promise[HTMLElement]): Self = StObject.set(x, "getChildElement", js.Any.fromFunction1(value))
   }
 }

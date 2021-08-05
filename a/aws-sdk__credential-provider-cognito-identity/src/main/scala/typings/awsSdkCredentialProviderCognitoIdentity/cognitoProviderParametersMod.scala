@@ -36,29 +36,22 @@ object cognitoProviderParametersMod {
   }
   object CognitoProviderParameters {
     
-    @scala.inline
-    def apply(client: CognitoIdentityClient): CognitoProviderParameters = {
+    inline def apply(client: CognitoIdentityClient): CognitoProviderParameters = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[CognitoProviderParameters]
     }
     
-    @scala.inline
-    implicit class CognitoProviderParametersMutableBuilder[Self <: CognitoProviderParameters] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoProviderParameters](x: Self) {
       
-      @scala.inline
-      def setClient(value: CognitoIdentityClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: CognitoIdentityClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRoleArn(value: String): Self = StObject.set(x, "customRoleArn", value.asInstanceOf[js.Any])
+      inline def setCustomRoleArn(value: String): Self = StObject.set(x, "customRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRoleArnUndefined: Self = StObject.set(x, "customRoleArn", js.undefined)
+      inline def setCustomRoleArnUndefined: Self = StObject.set(x, "customRoleArn", js.undefined)
       
-      @scala.inline
-      def setLogins(value: Logins): Self = StObject.set(x, "logins", value.asInstanceOf[js.Any])
+      inline def setLogins(value: Logins): Self = StObject.set(x, "logins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginsUndefined: Self = StObject.set(x, "logins", js.undefined)
+      inline def setLoginsUndefined: Self = StObject.set(x, "logins", js.undefined)
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparkColor")
 @js.native
-class SparkColor protected ()
+/* private */ class SparkColor ()
   extends StObject
      with typings.activexExcel.Excel.SparkColor {
   
@@ -20,7 +20,7 @@ class SparkColor protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SparkColor_typekey")
   var ExcelDotSparkColor_typekey: typings.activexExcel.Excel.SparkColor = js.native
   

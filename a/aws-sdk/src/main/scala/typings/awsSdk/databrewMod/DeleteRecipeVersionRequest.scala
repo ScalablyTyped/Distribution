@@ -18,19 +18,15 @@ trait DeleteRecipeVersionRequest extends StObject {
 }
 object DeleteRecipeVersionRequest {
   
-  @scala.inline
-  def apply(Name: RecipeName, RecipeVersion: RecipeVersion): DeleteRecipeVersionRequest = {
+  inline def apply(Name: RecipeName, RecipeVersion: RecipeVersion): DeleteRecipeVersionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RecipeVersion = RecipeVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRecipeVersionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRecipeVersionRequestMutableBuilder[Self <: DeleteRecipeVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRecipeVersionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
+    inline def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
   }
 }

@@ -28,31 +28,23 @@ trait CustomRule extends StObject {
 }
 object CustomRule {
   
-  @scala.inline
-  def apply(source: Source, target: Target): CustomRule = {
+  inline def apply(source: Source, target: Target): CustomRule = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomRule]
   }
   
-  @scala.inline
-  implicit class CustomRuleMutableBuilder[Self <: CustomRule] (val x: Self) extends AnyVal {
+  extension [Self <: CustomRule](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

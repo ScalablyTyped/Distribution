@@ -29,8 +29,7 @@ trait DocumentChange[T] extends StObject {
 }
 object DocumentChange {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     doc: typings.firebase.mod.firebase.firestore.QueryDocumentSnapshot[T],
     newIndex: Double,
     oldIndex: Double,
@@ -41,19 +40,14 @@ object DocumentChange {
     __obj.asInstanceOf[DocumentChange[T]]
   }
   
-  @scala.inline
-  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange[?], T] (val x: Self & DocumentChange[T]) extends AnyVal {
+  extension [Self <: DocumentChange[?], T](x: Self & DocumentChange[T]) {
     
-    @scala.inline
-    def setDoc(value: typings.firebase.mod.firebase.firestore.QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: typings.firebase.mod.firebase.firestore.QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.firebase.mod.firebase.firestore.DocumentChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.firebase.mod.firebase.firestore.DocumentChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

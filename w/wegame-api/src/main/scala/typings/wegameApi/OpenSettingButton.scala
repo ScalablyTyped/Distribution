@@ -16,8 +16,7 @@ trait OpenSettingButton
 }
 object OpenSettingButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     hide: () => Unit,
     image: String,
@@ -33,13 +32,10 @@ object OpenSettingButton {
     __obj.asInstanceOf[OpenSettingButton]
   }
   
-  @scala.inline
-  implicit class OpenSettingButtonMutableBuilder[Self <: OpenSettingButton] (val x: Self) extends AnyVal {
+  extension [Self <: OpenSettingButton](x: Self) {
     
-    @scala.inline
-    def setOffTap(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
+    inline def setOffTap(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTap(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+    inline def setOnTap(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
   }
 }

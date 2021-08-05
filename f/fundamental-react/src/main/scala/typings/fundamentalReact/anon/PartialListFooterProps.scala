@@ -11,19 +11,15 @@ trait PartialListFooterProps extends StObject {
 }
 object PartialListFooterProps {
   
-  @scala.inline
-  def apply(): PartialListFooterProps = {
+  inline def apply(): PartialListFooterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialListFooterProps]
   }
   
-  @scala.inline
-  implicit class PartialListFooterPropsMutableBuilder[Self <: PartialListFooterProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialListFooterProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
   }
 }

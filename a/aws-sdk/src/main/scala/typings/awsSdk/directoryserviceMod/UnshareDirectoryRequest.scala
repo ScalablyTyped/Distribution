@@ -18,19 +18,15 @@ trait UnshareDirectoryRequest extends StObject {
 }
 object UnshareDirectoryRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, UnshareTarget: UnshareTarget): UnshareDirectoryRequest = {
+  inline def apply(DirectoryId: DirectoryId, UnshareTarget: UnshareTarget): UnshareDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], UnshareTarget = UnshareTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnshareDirectoryRequest]
   }
   
-  @scala.inline
-  implicit class UnshareDirectoryRequestMutableBuilder[Self <: UnshareDirectoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnshareDirectoryRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnshareTarget(value: UnshareTarget): Self = StObject.set(x, "UnshareTarget", value.asInstanceOf[js.Any])
+    inline def setUnshareTarget(value: UnshareTarget): Self = StObject.set(x, "UnshareTarget", value.asInstanceOf[js.Any])
   }
 }

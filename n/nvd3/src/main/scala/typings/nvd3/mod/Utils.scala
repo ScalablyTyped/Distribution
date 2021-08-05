@@ -24,8 +24,7 @@ trait Utils extends StObject {
 }
 object Utils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultColor: () => js.Array[String],
     getColor: js.Any => js.Array[String],
     state: () => State,
@@ -37,25 +36,18 @@ object Utils {
     __obj.asInstanceOf[Utils]
   }
   
-  @scala.inline
-  implicit class UtilsMutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
+  extension [Self <: Utils](x: Self) {
     
-    @scala.inline
-    def setDefaultColor(value: () => js.Array[String]): Self = StObject.set(x, "defaultColor", js.Any.fromFunction0(value))
+    inline def setDefaultColor(value: () => js.Array[String]): Self = StObject.set(x, "defaultColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColor(value: js.Any => js.Array[String]): Self = StObject.set(x, "getColor", js.Any.fromFunction1(value))
+    inline def setGetColor(value: js.Any => js.Array[String]): Self = StObject.set(x, "getColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: () => State): Self = StObject.set(x, "state", js.Any.fromFunction0(value))
+    inline def setState(value: () => State): Self = StObject.set(x, "state", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSymbolMap(value: SymbolMap): Self = StObject.set(x, "symbolMap", value.asInstanceOf[js.Any])
+    inline def setSymbolMap(value: SymbolMap): Self = StObject.set(x, "symbolMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowResize(value: js.Function1[/* ev */ Event, js.Any] => Unit): Self = StObject.set(x, "windowResize", js.Any.fromFunction1(value))
+    inline def setWindowResize(value: js.Function1[/* ev */ Event, js.Any] => Unit): Self = StObject.set(x, "windowResize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowSize(value: () => Size): Self = StObject.set(x, "windowSize", js.Any.fromFunction0(value))
+    inline def setWindowSize(value: () => Size): Self = StObject.set(x, "windowSize", js.Any.fromFunction0(value))
   }
 }

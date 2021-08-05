@@ -13,19 +13,15 @@ trait Precondition extends StObject {
 }
 object Precondition {
   
-  @scala.inline
-  def apply(): Precondition = {
+  inline def apply(): Precondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Precondition]
   }
   
-  @scala.inline
-  implicit class PreconditionMutableBuilder[Self <: Precondition] (val x: Self) extends AnyVal {
+  extension [Self <: Precondition](x: Self) {
     
-    @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
   }
 }

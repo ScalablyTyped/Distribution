@@ -14,10 +14,8 @@ object getOrganizationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOrganization(): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")().asInstanceOf[js.Promise[GetOrganizationResult]]
-  @scala.inline
-  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationResult]]
+  inline def getOrganization(): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")().asInstanceOf[js.Promise[GetOrganizationResult]]
+  inline def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationResult]]
   
   trait GetOrganizationResult extends StObject {
     
@@ -78,8 +76,7 @@ object getOrganizationMod {
   }
   object GetOrganizationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accounts: js.Array[GetOrganizationAccount],
       arn: String,
       awsServiceAccessPrincipals: js.Array[String],
@@ -96,56 +93,39 @@ object getOrganizationMod {
       __obj.asInstanceOf[GetOrganizationResult]
     }
     
-    @scala.inline
-    implicit class GetOrganizationResultMutableBuilder[Self <: GetOrganizationResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationResult](x: Self) {
       
-      @scala.inline
-      def setAccounts(value: js.Array[GetOrganizationAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
+      inline def setAccounts(value: js.Array[GetOrganizationAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountsVarargs(value: GetOrganizationAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+      inline def setAccountsVarargs(value: GetOrganizationAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsServiceAccessPrincipals(value: js.Array[String]): Self = StObject.set(x, "awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
+      inline def setAwsServiceAccessPrincipals(value: js.Array[String]): Self = StObject.set(x, "awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsServiceAccessPrincipalsVarargs(value: String*): Self = StObject.set(x, "awsServiceAccessPrincipals", js.Array(value :_*))
+      inline def setAwsServiceAccessPrincipalsVarargs(value: String*): Self = StObject.set(x, "awsServiceAccessPrincipals", js.Array(value :_*))
       
-      @scala.inline
-      def setEnabledPolicyTypes(value: js.Array[String]): Self = StObject.set(x, "enabledPolicyTypes", value.asInstanceOf[js.Any])
+      inline def setEnabledPolicyTypes(value: js.Array[String]): Self = StObject.set(x, "enabledPolicyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledPolicyTypesVarargs(value: String*): Self = StObject.set(x, "enabledPolicyTypes", js.Array(value :_*))
+      inline def setEnabledPolicyTypesVarargs(value: String*): Self = StObject.set(x, "enabledPolicyTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatureSet(value: String): Self = StObject.set(x, "featureSet", value.asInstanceOf[js.Any])
+      inline def setFeatureSet(value: String): Self = StObject.set(x, "featureSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountArn(value: String): Self = StObject.set(x, "masterAccountArn", value.asInstanceOf[js.Any])
+      inline def setMasterAccountArn(value: String): Self = StObject.set(x, "masterAccountArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountEmail(value: String): Self = StObject.set(x, "masterAccountEmail", value.asInstanceOf[js.Any])
+      inline def setMasterAccountEmail(value: String): Self = StObject.set(x, "masterAccountEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountId(value: String): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
+      inline def setMasterAccountId(value: String): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonMasterAccounts(value: js.Array[GetOrganizationNonMasterAccount]): Self = StObject.set(x, "nonMasterAccounts", value.asInstanceOf[js.Any])
+      inline def setNonMasterAccounts(value: js.Array[GetOrganizationNonMasterAccount]): Self = StObject.set(x, "nonMasterAccounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonMasterAccountsVarargs(value: GetOrganizationNonMasterAccount*): Self = StObject.set(x, "nonMasterAccounts", js.Array(value :_*))
+      inline def setNonMasterAccountsVarargs(value: GetOrganizationNonMasterAccount*): Self = StObject.set(x, "nonMasterAccounts", js.Array(value :_*))
       
-      @scala.inline
-      def setRoots(value: js.Array[GetOrganizationRoot]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
+      inline def setRoots(value: js.Array[GetOrganizationRoot]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootsVarargs(value: GetOrganizationRoot*): Self = StObject.set(x, "roots", js.Array(value :_*))
+      inline def setRootsVarargs(value: GetOrganizationRoot*): Self = StObject.set(x, "roots", js.Array(value :_*))
     }
   }
 }

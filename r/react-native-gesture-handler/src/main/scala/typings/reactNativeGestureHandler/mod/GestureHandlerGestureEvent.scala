@@ -10,16 +10,13 @@ trait GestureHandlerGestureEvent extends StObject {
 }
 object GestureHandlerGestureEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent): GestureHandlerGestureEvent = {
+  inline def apply(nativeEvent: GestureHandlerGestureEventNativeEvent): GestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GestureHandlerGestureEvent]
   }
   
-  @scala.inline
-  implicit class GestureHandlerGestureEventMutableBuilder[Self <: GestureHandlerGestureEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GestureHandlerGestureEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: GestureHandlerGestureEventNativeEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: GestureHandlerGestureEventNativeEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

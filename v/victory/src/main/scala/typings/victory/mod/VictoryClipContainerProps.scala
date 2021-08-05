@@ -120,112 +120,77 @@ trait VictoryClipContainerProps extends StObject {
 }
 object VictoryClipContainerProps {
   
-  @scala.inline
-  def apply(): VictoryClipContainerProps = {
+  inline def apply(): VictoryClipContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryClipContainerProps]
   }
   
-  @scala.inline
-  implicit class VictoryClipContainerPropsMutableBuilder[Self <: VictoryClipContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryClipContainerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setCircleComponent(value: ReactElement): Self = StObject.set(x, "circleComponent", value.asInstanceOf[js.Any])
+    inline def setCircleComponent(value: ReactElement): Self = StObject.set(x, "circleComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleComponentUndefined: Self = StObject.set(x, "circleComponent", js.undefined)
+    inline def setCircleComponentUndefined: Self = StObject.set(x, "circleComponent", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setClipHeight(value: Double): Self = StObject.set(x, "clipHeight", value.asInstanceOf[js.Any])
+    inline def setClipHeight(value: Double): Self = StObject.set(x, "clipHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipHeightUndefined: Self = StObject.set(x, "clipHeight", js.undefined)
+    inline def setClipHeightUndefined: Self = StObject.set(x, "clipHeight", js.undefined)
     
-    @scala.inline
-    def setClipId(value: Double | String): Self = StObject.set(x, "clipId", value.asInstanceOf[js.Any])
+    inline def setClipId(value: Double | String): Self = StObject.set(x, "clipId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipIdUndefined: Self = StObject.set(x, "clipId", js.undefined)
+    inline def setClipIdUndefined: Self = StObject.set(x, "clipId", js.undefined)
     
-    @scala.inline
-    def setClipPadding(value: BlockProps): Self = StObject.set(x, "clipPadding", value.asInstanceOf[js.Any])
+    inline def setClipPadding(value: BlockProps): Self = StObject.set(x, "clipPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipPaddingUndefined: Self = StObject.set(x, "clipPadding", js.undefined)
+    inline def setClipPaddingUndefined: Self = StObject.set(x, "clipPadding", js.undefined)
     
-    @scala.inline
-    def setClipPathComponent(value: ReactElement): Self = StObject.set(x, "clipPathComponent", value.asInstanceOf[js.Any])
+    inline def setClipPathComponent(value: ReactElement): Self = StObject.set(x, "clipPathComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipPathComponentUndefined: Self = StObject.set(x, "clipPathComponent", js.undefined)
+    inline def setClipPathComponentUndefined: Self = StObject.set(x, "clipPathComponent", js.undefined)
     
-    @scala.inline
-    def setClipWidth(value: Double): Self = StObject.set(x, "clipWidth", value.asInstanceOf[js.Any])
+    inline def setClipWidth(value: Double): Self = StObject.set(x, "clipWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipWidthUndefined: Self = StObject.set(x, "clipWidth", js.undefined)
+    inline def setClipWidthUndefined: Self = StObject.set(x, "clipWidth", js.undefined)
     
-    @scala.inline
-    def setEvents(value: DOMAttributes[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: DOMAttributes[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+    inline def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
+    inline def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: `0`): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: `0`): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPolar(value: Boolean): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
+    inline def setPolar(value: Boolean): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
+    inline def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setRectComponent(value: ReactElement): Self = StObject.set(x, "rectComponent", value.asInstanceOf[js.Any])
+    inline def setRectComponent(value: ReactElement): Self = StObject.set(x, "rectComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectComponentUndefined: Self = StObject.set(x, "rectComponent", js.undefined)
+    inline def setRectComponentUndefined: Self = StObject.set(x, "rectComponent", js.undefined)
     
-    @scala.inline
-    def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+    inline def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
+    inline def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
     
-    @scala.inline
-    def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    inline def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
+    inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
   }
 }

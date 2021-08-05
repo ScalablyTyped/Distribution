@@ -15,25 +15,19 @@ trait ServerTemplate extends StObject {
 }
 object ServerTemplate {
   
-  @scala.inline
-  def apply(): ServerTemplate = {
+  inline def apply(): ServerTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerTemplate]
   }
   
-  @scala.inline
-  implicit class ServerTemplateMutableBuilder[Self <: ServerTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ServerTemplate](x: Self) {
     
-    @scala.inline
-    def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
+    inline def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

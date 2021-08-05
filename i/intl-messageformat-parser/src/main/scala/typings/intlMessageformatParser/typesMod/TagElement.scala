@@ -19,32 +19,24 @@ trait TagElement
 }
 object TagElement {
   
-  @scala.inline
-  def apply(children: js.Array[MessageFormatElement], `type`: tag, value: String): TagElement = {
+  inline def apply(children: js.Array[MessageFormatElement], `type`: tag, value: String): TagElement = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagElement]
   }
   
-  @scala.inline
-  implicit class TagElementMutableBuilder[Self <: TagElement] (val x: Self) extends AnyVal {
+  extension [Self <: TagElement](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[MessageFormatElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[MessageFormatElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: MessageFormatElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: MessageFormatElement*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setType(value: tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

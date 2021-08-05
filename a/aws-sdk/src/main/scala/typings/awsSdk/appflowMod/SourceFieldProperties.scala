@@ -18,25 +18,19 @@ trait SourceFieldProperties extends StObject {
 }
 object SourceFieldProperties {
   
-  @scala.inline
-  def apply(): SourceFieldProperties = {
+  inline def apply(): SourceFieldProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceFieldProperties]
   }
   
-  @scala.inline
-  implicit class SourceFieldPropertiesMutableBuilder[Self <: SourceFieldProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SourceFieldProperties](x: Self) {
     
-    @scala.inline
-    def setIsQueryable(value: Boolean): Self = StObject.set(x, "isQueryable", value.asInstanceOf[js.Any])
+    inline def setIsQueryable(value: Boolean): Self = StObject.set(x, "isQueryable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsQueryableUndefined: Self = StObject.set(x, "isQueryable", js.undefined)
+    inline def setIsQueryableUndefined: Self = StObject.set(x, "isQueryable", js.undefined)
     
-    @scala.inline
-    def setIsRetrievable(value: Boolean): Self = StObject.set(x, "isRetrievable", value.asInstanceOf[js.Any])
+    inline def setIsRetrievable(value: Boolean): Self = StObject.set(x, "isRetrievable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRetrievableUndefined: Self = StObject.set(x, "isRetrievable", js.undefined)
+    inline def setIsRetrievableUndefined: Self = StObject.set(x, "isRetrievable", js.undefined)
   }
 }

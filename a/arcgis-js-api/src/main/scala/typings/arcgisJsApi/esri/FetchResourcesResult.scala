@@ -33,8 +33,7 @@ trait FetchResourcesResult
 }
 object FetchResourcesResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     nextStart: Double,
@@ -46,19 +45,14 @@ object FetchResourcesResult {
     __obj.asInstanceOf[FetchResourcesResult]
   }
   
-  @scala.inline
-  implicit class FetchResourcesResultMutableBuilder[Self <: FetchResourcesResult] (val x: Self) extends AnyVal {
+  extension [Self <: FetchResourcesResult](x: Self) {
     
-    @scala.inline
-    def setNextStart(value: Double): Self = StObject.set(x, "nextStart", value.asInstanceOf[js.Any])
+    inline def setNextStart(value: Double): Self = StObject.set(x, "nextStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: js.Array[FetchResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[FetchResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: FetchResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: FetchResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

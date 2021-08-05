@@ -11,19 +11,15 @@ trait IdentitytoolkitRelyingpartySignOutUserResponse extends StObject {
 }
 object IdentitytoolkitRelyingpartySignOutUserResponse {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartySignOutUserResponse = {
+  inline def apply(): IdentitytoolkitRelyingpartySignOutUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySignOutUserResponse]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartySignOutUserResponseMutableBuilder[Self <: IdentitytoolkitRelyingpartySignOutUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartySignOutUserResponse](x: Self) {
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
+    inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
   }
 }

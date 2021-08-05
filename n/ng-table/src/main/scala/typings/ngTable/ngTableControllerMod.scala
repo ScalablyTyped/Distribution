@@ -41,39 +41,39 @@ object ngTableControllerMod {
       ngTableEventsChannel: NgTableEventsChannel
     ) = this()
     
-    @JSName("$attrs")
+    /* private */ @JSName("$attrs")
     var $attrs: js.Any = js.native
     
-    @JSName("$compile")
+    /* private */ @JSName("$compile")
     var $compile: js.Any = js.native
     
-    @JSName("$document")
+    /* private */ @JSName("$document")
     var $document: js.Any = js.native
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
-    @JSName("$parse")
+    /* private */ @JSName("$parse")
     var $parse: js.Any = js.native
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
     def buildColumns(columns: js.Array[TCol]): js.Array[IColumnDef] = js.native
     
     def compileDirectiveTemplates(): Unit = js.native
     
-    var delayFilter: js.Any = js.native
+    /* private */ var delayFilter: js.Any = js.native
     
     /* private */ def getVisibleColumns(): js.Any = js.native
     
-    val hasVisibleFilterColumn: js.Any = js.native
+    /* private */ val hasVisibleFilterColumn: js.Any = js.native
     
     def loadFilterData($columns: js.Array[IColumnDef]): Unit = js.native
     
-    var ngTableColumn: js.Any = js.native
+    /* private */ var ngTableColumn: js.Any = js.native
     
-    var ngTableEventsChannel: js.Any = js.native
+    /* private */ var ngTableEventsChannel: js.Any = js.native
     
     /* private */ def onDataReloadStatusChange(newStatus: js.Any): js.Any = js.native
     
@@ -99,8 +99,7 @@ object ngTableControllerMod {
     @JSImport("ng-table/src/browser/ngTableController", "NgTableController.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @js.native

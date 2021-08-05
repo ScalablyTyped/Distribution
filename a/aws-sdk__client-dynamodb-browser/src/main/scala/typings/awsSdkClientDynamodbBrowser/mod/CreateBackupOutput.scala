@@ -10,8 +10,7 @@ trait CreateBackupOutput
      with typings.awsSdkClientDynamodbBrowser.typesCreateBackupOutputMod.CreateBackupOutput
 object CreateBackupOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CreateBackupOutput = {
+  inline def apply($metadata: ResponseMetadata): CreateBackupOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupOutput]
   }

@@ -68,8 +68,7 @@ trait IDocListEntry extends StObject {
 }
 object IDocListEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qConnectedUsers: Double,
     qDocId: String,
     qDocName: String,
@@ -85,37 +84,26 @@ object IDocListEntry {
     __obj.asInstanceOf[IDocListEntry]
   }
   
-  @scala.inline
-  implicit class IDocListEntryMutableBuilder[Self <: IDocListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: IDocListEntry](x: Self) {
     
-    @scala.inline
-    def setQConnectedUsers(value: Double): Self = StObject.set(x, "qConnectedUsers", value.asInstanceOf[js.Any])
+    inline def setQConnectedUsers(value: Double): Self = StObject.set(x, "qConnectedUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDocId(value: String): Self = StObject.set(x, "qDocId", value.asInstanceOf[js.Any])
+    inline def setQDocId(value: String): Self = StObject.set(x, "qDocId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDocName(value: String): Self = StObject.set(x, "qDocName", value.asInstanceOf[js.Any])
+    inline def setQDocName(value: String): Self = StObject.set(x, "qDocName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFileSize(value: Double): Self = StObject.set(x, "qFileSize", value.asInstanceOf[js.Any])
+    inline def setQFileSize(value: Double): Self = StObject.set(x, "qFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFileTime(value: Double): Self = StObject.set(x, "qFileTime", value.asInstanceOf[js.Any])
+    inline def setQFileTime(value: Double): Self = StObject.set(x, "qFileTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
+    inline def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQReadOnly(value: Boolean): Self = StObject.set(x, "qReadOnly", value.asInstanceOf[js.Any])
+    inline def setQReadOnly(value: Boolean): Self = StObject.set(x, "qReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQThumbnail(value: IStaticContentUrl): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
+    inline def setQThumbnail(value: IStaticContentUrl): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
+    inline def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
   }
 }

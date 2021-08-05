@@ -23,6 +23,5 @@ class Int16Array protected ()
 }
 object Int16Array {
   
-  @scala.inline
-  def apply: Int16ArrayConstructor = js.Dynamic.global.selectDynamic("Int16Array").asInstanceOf[Int16ArrayConstructor]
+  inline def apply: Int16ArrayConstructor = js.Dynamic.global.selectDynamic("Int16Array").asInstanceOf[Int16ArrayConstructor]
 }

@@ -12,16 +12,13 @@ trait PickImplsource extends StObject {
 }
 object PickImplsource {
   
-  @scala.inline
-  def apply(source: `false` | String): PickImplsource = {
+  inline def apply(source: `false` | String): PickImplsource = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsource]
   }
   
-  @scala.inline
-  implicit class PickImplsourceMutableBuilder[Self <: PickImplsource] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsource](x: Self) {
     
-    @scala.inline
-    def setSource(value: `false` | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: `false` | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

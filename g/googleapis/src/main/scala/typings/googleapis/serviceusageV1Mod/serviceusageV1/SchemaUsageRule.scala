@@ -42,31 +42,23 @@ trait SchemaUsageRule extends StObject {
 }
 object SchemaUsageRule {
   
-  @scala.inline
-  def apply(): SchemaUsageRule = {
+  inline def apply(): SchemaUsageRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUsageRule]
   }
   
-  @scala.inline
-  implicit class SchemaUsageRuleMutableBuilder[Self <: SchemaUsageRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUsageRule](x: Self) {
     
-    @scala.inline
-    def setAllowUnregisteredCalls(value: Boolean): Self = StObject.set(x, "allowUnregisteredCalls", value.asInstanceOf[js.Any])
+    inline def setAllowUnregisteredCalls(value: Boolean): Self = StObject.set(x, "allowUnregisteredCalls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnregisteredCallsUndefined: Self = StObject.set(x, "allowUnregisteredCalls", js.undefined)
+    inline def setAllowUnregisteredCallsUndefined: Self = StObject.set(x, "allowUnregisteredCalls", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSkipServiceControl(value: Boolean): Self = StObject.set(x, "skipServiceControl", value.asInstanceOf[js.Any])
+    inline def setSkipServiceControl(value: Boolean): Self = StObject.set(x, "skipServiceControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipServiceControlUndefined: Self = StObject.set(x, "skipServiceControl", js.undefined)
+    inline def setSkipServiceControlUndefined: Self = StObject.set(x, "skipServiceControl", js.undefined)
   }
 }

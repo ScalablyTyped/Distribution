@@ -36,53 +36,38 @@ object mod {
   }
   object InputMomentProps {
     
-    @scala.inline
-    def apply(moment: Moment): InputMomentProps = {
+    inline def apply(moment: Moment): InputMomentProps = {
       val __obj = js.Dynamic.literal(moment = moment.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputMomentProps]
     }
     
-    @scala.inline
-    implicit class InputMomentPropsMutableBuilder[Self <: InputMomentProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputMomentProps](x: Self) {
       
-      @scala.inline
-      def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
+      inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
+      inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
       
-      @scala.inline
-      def setMinStep(value: Double): Self = StObject.set(x, "minStep", value.asInstanceOf[js.Any])
+      inline def setMinStep(value: Double): Self = StObject.set(x, "minStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinStepUndefined: Self = StObject.set(x, "minStep", js.undefined)
+      inline def setMinStepUndefined: Self = StObject.set(x, "minStep", js.undefined)
       
-      @scala.inline
-      def setMoment(value: Moment): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
+      inline def setMoment(value: Moment): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextMonthIcon(value: String): Self = StObject.set(x, "nextMonthIcon", value.asInstanceOf[js.Any])
+      inline def setNextMonthIcon(value: String): Self = StObject.set(x, "nextMonthIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextMonthIconUndefined: Self = StObject.set(x, "nextMonthIcon", js.undefined)
+      inline def setNextMonthIconUndefined: Self = StObject.set(x, "nextMonthIcon", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* m */ Moment => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* m */ Moment => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnSave(value: () => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction0(value))
+      inline def setOnSave(value: () => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSaveUndefined: Self = StObject.set(x, "onSave", js.undefined)
+      inline def setOnSaveUndefined: Self = StObject.set(x, "onSave", js.undefined)
       
-      @scala.inline
-      def setPrevMonthIcon(value: String): Self = StObject.set(x, "prevMonthIcon", value.asInstanceOf[js.Any])
+      inline def setPrevMonthIcon(value: String): Self = StObject.set(x, "prevMonthIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMonthIconUndefined: Self = StObject.set(x, "prevMonthIcon", js.undefined)
+      inline def setPrevMonthIconUndefined: Self = StObject.set(x, "prevMonthIcon", js.undefined)
     }
   }
   

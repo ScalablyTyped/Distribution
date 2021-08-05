@@ -14,393 +14,338 @@ object swiperStrings {
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait autoplay
     extends StObject
        with AutoplayEvent
        with SwiperEvent
-  @scala.inline
-  def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
+  inline def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
   
   @js.native
   sealed trait autoplayStart
     extends StObject
        with AutoplayEvent
        with SwiperEvent
-  @scala.inline
-  def autoplayStart: autoplayStart = "autoplayStart".asInstanceOf[autoplayStart]
+  inline def autoplayStart: autoplayStart = "autoplayStart".asInstanceOf[autoplayStart]
   
   @js.native
   sealed trait autoplayStop
     extends StObject
        with AutoplayEvent
        with SwiperEvent
-  @scala.inline
-  def autoplayStop: autoplayStop = "autoplayStop".asInstanceOf[autoplayStop]
+  inline def autoplayStop: autoplayStop = "autoplayStop".asInstanceOf[autoplayStop]
   
   @js.native
   sealed trait beforeDestroy
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def beforeDestroy: beforeDestroy = "beforeDestroy".asInstanceOf[beforeDestroy]
+  inline def beforeDestroy: beforeDestroy = "beforeDestroy".asInstanceOf[beforeDestroy]
   
   @js.native
   sealed trait beforeLoopFix
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def beforeLoopFix: beforeLoopFix = "beforeLoopFix".asInstanceOf[beforeLoopFix]
+  inline def beforeLoopFix: beforeLoopFix = "beforeLoopFix".asInstanceOf[beforeLoopFix]
   
   @js.native
   sealed trait bullets extends StObject
-  @scala.inline
-  def bullets: bullets = "bullets".asInstanceOf[bullets]
+  inline def bullets: bullets = "bullets".asInstanceOf[bullets]
   
   @js.native
   sealed trait click
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait column extends StObject
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
   sealed trait container extends StObject
-  @scala.inline
-  def container: container = "container".asInstanceOf[container]
+  inline def container: container = "container".asInstanceOf[container]
   
   @js.native
   sealed trait coverflow extends StObject
-  @scala.inline
-  def coverflow: coverflow = "coverflow".asInstanceOf[coverflow]
+  inline def coverflow: coverflow = "coverflow".asInstanceOf[coverflow]
   
   @js.native
   sealed trait cube extends StObject
-  @scala.inline
-  def cube: cube = "cube".asInstanceOf[cube]
+  inline def cube: cube = "cube".asInstanceOf[cube]
   
   @js.native
   sealed trait custom extends StObject
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait doubleTap
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def doubleTap: doubleTap = "doubleTap".asInstanceOf[doubleTap]
+  inline def doubleTap: doubleTap = "doubleTap".asInstanceOf[doubleTap]
   
   @js.native
   sealed trait fade extends StObject
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
   sealed trait flip extends StObject
-  @scala.inline
-  def flip: flip = "flip".asInstanceOf[flip]
+  inline def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
   sealed trait fraction extends StObject
-  @scala.inline
-  def fraction: fraction = "fraction".asInstanceOf[fraction]
+  inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
   @js.native
   sealed trait fromEdge
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def fromEdge: fromEdge = "fromEdge".asInstanceOf[fromEdge]
+  inline def fromEdge: fromEdge = "fromEdge".asInstanceOf[fromEdge]
   
   @js.native
   sealed trait hashChange
     extends StObject
        with HashNavigationEvent
        with SwiperEvent
-  @scala.inline
-  def hashChange: hashChange = "hashChange".asInstanceOf[hashChange]
+  inline def hashChange: hashChange = "hashChange".asInstanceOf[hashChange]
   
   @js.native
   sealed trait hashSet
     extends StObject
        with HashNavigationEvent
        with SwiperEvent
-  @scala.inline
-  def hashSet: hashSet = "hashSet".asInstanceOf[hashSet]
+  inline def hashSet: hashSet = "hashSet".asInstanceOf[hashSet]
   
   @js.native
   sealed trait horizontal extends StObject
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait imagesReady
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def imagesReady: imagesReady = "imagesReady".asInstanceOf[imagesReady]
+  inline def imagesReady: imagesReady = "imagesReady".asInstanceOf[imagesReady]
   
   @js.native
   sealed trait init
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
+  inline def init: init = "init".asInstanceOf[init]
   
   @js.native
   sealed trait lazyImageLoad
     extends StObject
        with LazyLoadingEvent
        with SwiperEvent
-  @scala.inline
-  def lazyImageLoad: lazyImageLoad = "lazyImageLoad".asInstanceOf[lazyImageLoad]
+  inline def lazyImageLoad: lazyImageLoad = "lazyImageLoad".asInstanceOf[lazyImageLoad]
   
   @js.native
   sealed trait lazyImageReady
     extends StObject
        with LazyLoadingEvent
        with SwiperEvent
-  @scala.inline
-  def lazyImageReady: lazyImageReady = "lazyImageReady".asInstanceOf[lazyImageReady]
+  inline def lazyImageReady: lazyImageReady = "lazyImageReady".asInstanceOf[lazyImageReady]
   
   @js.native
   sealed trait loopFix
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def loopFix: loopFix = "loopFix".asInstanceOf[loopFix]
+  inline def loopFix: loopFix = "loopFix".asInstanceOf[loopFix]
   
   @js.native
   sealed trait observerUpdate
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def observerUpdate: observerUpdate = "observerUpdate".asInstanceOf[observerUpdate]
+  inline def observerUpdate: observerUpdate = "observerUpdate".asInstanceOf[observerUpdate]
   
   @js.native
   sealed trait paginationRender
     extends StObject
        with PaginationEvent
        with SwiperEvent
-  @scala.inline
-  def paginationRender: paginationRender = "paginationRender".asInstanceOf[paginationRender]
+  inline def paginationRender: paginationRender = "paginationRender".asInstanceOf[paginationRender]
   
   @js.native
   sealed trait paginationUpdate
     extends StObject
        with PaginationEvent
        with SwiperEvent
-  @scala.inline
-  def paginationUpdate: paginationUpdate = "paginationUpdate".asInstanceOf[paginationUpdate]
+  inline def paginationUpdate: paginationUpdate = "paginationUpdate".asInstanceOf[paginationUpdate]
   
   @js.native
   sealed trait progress
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
   sealed trait progressbar extends StObject
-  @scala.inline
-  def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
+  inline def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
   
   @js.native
   sealed trait reachBeginning
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def reachBeginning: reachBeginning = "reachBeginning".asInstanceOf[reachBeginning]
+  inline def reachBeginning: reachBeginning = "reachBeginning".asInstanceOf[reachBeginning]
   
   @js.native
   sealed trait reachEnd
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def reachEnd: reachEnd = "reachEnd".asInstanceOf[reachEnd]
+  inline def reachEnd: reachEnd = "reachEnd".asInstanceOf[reachEnd]
   
   @js.native
   sealed trait resize
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
   sealed trait row extends StObject
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait setTransition
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def setTransition: setTransition = "setTransition".asInstanceOf[setTransition]
+  inline def setTransition: setTransition = "setTransition".asInstanceOf[setTransition]
   
   @js.native
   sealed trait setTranslate
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def setTranslate: setTranslate = "setTranslate".asInstanceOf[setTranslate]
+  inline def setTranslate: setTranslate = "setTranslate".asInstanceOf[setTranslate]
   
   @js.native
   sealed trait slide extends StObject
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
   sealed trait slideChange
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def slideChange: slideChange = "slideChange".asInstanceOf[slideChange]
+  inline def slideChange: slideChange = "slideChange".asInstanceOf[slideChange]
   
   @js.native
   sealed trait slideChangeTransitionEnd
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def slideChangeTransitionEnd: slideChangeTransitionEnd = "slideChangeTransitionEnd".asInstanceOf[slideChangeTransitionEnd]
+  inline def slideChangeTransitionEnd: slideChangeTransitionEnd = "slideChangeTransitionEnd".asInstanceOf[slideChangeTransitionEnd]
   
   @js.native
   sealed trait slideChangeTransitionStart
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def slideChangeTransitionStart: slideChangeTransitionStart = "slideChangeTransitionStart".asInstanceOf[slideChangeTransitionStart]
+  inline def slideChangeTransitionStart: slideChangeTransitionStart = "slideChangeTransitionStart".asInstanceOf[slideChangeTransitionStart]
   
   @js.native
   sealed trait slideNextTransitionEnd
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def slideNextTransitionEnd: slideNextTransitionEnd = "slideNextTransitionEnd".asInstanceOf[slideNextTransitionEnd]
+  inline def slideNextTransitionEnd: slideNextTransitionEnd = "slideNextTransitionEnd".asInstanceOf[slideNextTransitionEnd]
   
   @js.native
   sealed trait slideNextTransitionStart
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def slideNextTransitionStart: slideNextTransitionStart = "slideNextTransitionStart".asInstanceOf[slideNextTransitionStart]
+  inline def slideNextTransitionStart: slideNextTransitionStart = "slideNextTransitionStart".asInstanceOf[slideNextTransitionStart]
   
   @js.native
   sealed trait slidePrevTransitionEnd
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def slidePrevTransitionEnd: slidePrevTransitionEnd = "slidePrevTransitionEnd".asInstanceOf[slidePrevTransitionEnd]
+  inline def slidePrevTransitionEnd: slidePrevTransitionEnd = "slidePrevTransitionEnd".asInstanceOf[slidePrevTransitionEnd]
   
   @js.native
   sealed trait slidePrevTransitionStart
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def slidePrevTransitionStart: slidePrevTransitionStart = "slidePrevTransitionStart".asInstanceOf[slidePrevTransitionStart]
+  inline def slidePrevTransitionStart: slidePrevTransitionStart = "slidePrevTransitionStart".asInstanceOf[slidePrevTransitionStart]
   
   @js.native
   sealed trait sliderMove
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def sliderMove: sliderMove = "sliderMove".asInstanceOf[sliderMove]
+  inline def sliderMove: sliderMove = "sliderMove".asInstanceOf[sliderMove]
   
   @js.native
   sealed trait tap
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def tap: tap = "tap".asInstanceOf[tap]
+  inline def tap: tap = "tap".asInstanceOf[tap]
   
   @js.native
   sealed trait touchEnd
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
+  inline def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
   
   @js.native
   sealed trait touchMove
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def touchMove: touchMove = "touchMove".asInstanceOf[touchMove]
+  inline def touchMove: touchMove = "touchMove".asInstanceOf[touchMove]
   
   @js.native
   sealed trait touchMoveOpposite
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def touchMoveOpposite: touchMoveOpposite = "touchMoveOpposite".asInstanceOf[touchMoveOpposite]
+  inline def touchMoveOpposite: touchMoveOpposite = "touchMoveOpposite".asInstanceOf[touchMoveOpposite]
   
   @js.native
   sealed trait touchStart
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def touchStart: touchStart = "touchStart".asInstanceOf[touchStart]
+  inline def touchStart: touchStart = "touchStart".asInstanceOf[touchStart]
   
   @js.native
   sealed trait transitionEnd
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def transitionEnd: transitionEnd = "transitionEnd".asInstanceOf[transitionEnd]
+  inline def transitionEnd: transitionEnd = "transitionEnd".asInstanceOf[transitionEnd]
   
   @js.native
   sealed trait transitionStart
     extends StObject
        with CommonEvent
        with SwiperEvent
-  @scala.inline
-  def transitionStart: transitionStart = "transitionStart".asInstanceOf[transitionStart]
+  inline def transitionStart: transitionStart = "transitionStart".asInstanceOf[transitionStart]
   
   @js.native
   sealed trait vertical extends StObject
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
   sealed trait wrapper extends StObject
-  @scala.inline
-  def wrapper: wrapper = "wrapper".asInstanceOf[wrapper]
+  inline def wrapper: wrapper = "wrapper".asInstanceOf[wrapper]
 }

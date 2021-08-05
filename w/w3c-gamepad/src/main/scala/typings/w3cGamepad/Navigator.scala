@@ -17,8 +17,7 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getGamepads: () => js.Array[typings.w3cGamepad.Gamepad.Gamepad],
     webkitGetGamepads: () => GamepadList
   ): Navigator = {
@@ -26,13 +25,10 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setGetGamepads(value: () => js.Array[typings.w3cGamepad.Gamepad.Gamepad]): Self = StObject.set(x, "getGamepads", js.Any.fromFunction0(value))
+    inline def setGetGamepads(value: () => js.Array[typings.w3cGamepad.Gamepad.Gamepad]): Self = StObject.set(x, "getGamepads", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWebkitGetGamepads(value: () => GamepadList): Self = StObject.set(x, "webkitGetGamepads", js.Any.fromFunction0(value))
+    inline def setWebkitGetGamepads(value: () => GamepadList): Self = StObject.set(x, "webkitGetGamepads", js.Any.fromFunction0(value))
   }
 }

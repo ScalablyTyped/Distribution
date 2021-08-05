@@ -44,11 +44,11 @@ object eventRegistrationMod {
     def this(callbacks_ : Null, cancelCallback_ : js.Function1[/* e */ Error, Unit], context_ : js.Object) = this()
     def this(callbacks_ : Null, cancelCallback_ : Null, context_ : js.Object) = this()
     
-    var callbacks_ : js.Any = js.native
+    /* private */ var callbacks_ : js.Any = js.native
     
-    var cancelCallback_ : js.Any = js.native
+    /* private */ var cancelCallback_ : js.Any = js.native
     
-    var context_ : js.Any = js.native
+    /* private */ var context_ : js.Any = js.native
     
     /**
       * @param {!Error} error
@@ -132,11 +132,11 @@ object eventRegistrationMod {
     def this(callback_ : Null, cancelCallback_ : js.Function1[/* e */ Error, Unit], context_ : js.Object) = this()
     def this(callback_ : Null, cancelCallback_ : Null, context_ : js.Object) = this()
     
-    var callback_ : js.Any = js.native
+    /* private */ var callback_ : js.Any = js.native
     
-    var cancelCallback_ : js.Any = js.native
+    /* private */ var cancelCallback_ : js.Any = js.native
     
-    var context_ : js.Any = js.native
+    /* private */ var context_ : js.Any = js.native
     
     /**
       * @param {!Error} error
@@ -244,8 +244,7 @@ object eventRegistrationMod {
   }
   object EventRegistration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createCancelEvent: (Error, Path) => CancelEvent | Null,
       createEvent: (Change, Query) => Event,
       getEventRunner: Event => js.Function0[Unit],
@@ -257,26 +256,19 @@ object eventRegistrationMod {
       __obj.asInstanceOf[EventRegistration]
     }
     
-    @scala.inline
-    implicit class EventRegistrationMutableBuilder[Self <: EventRegistration] (val x: Self) extends AnyVal {
+    extension [Self <: EventRegistration](x: Self) {
       
-      @scala.inline
-      def setCreateCancelEvent(value: (Error, Path) => CancelEvent | Null): Self = StObject.set(x, "createCancelEvent", js.Any.fromFunction2(value))
+      inline def setCreateCancelEvent(value: (Error, Path) => CancelEvent | Null): Self = StObject.set(x, "createCancelEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateEvent(value: (Change, Query) => Event): Self = StObject.set(x, "createEvent", js.Any.fromFunction2(value))
+      inline def setCreateEvent(value: (Change, Query) => Event): Self = StObject.set(x, "createEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetEventRunner(value: Event => js.Function0[Unit]): Self = StObject.set(x, "getEventRunner", js.Any.fromFunction1(value))
+      inline def setGetEventRunner(value: Event => js.Function0[Unit]): Self = StObject.set(x, "getEventRunner", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasAnyCallback(value: () => Boolean): Self = StObject.set(x, "hasAnyCallback", js.Any.fromFunction0(value))
+      inline def setHasAnyCallback(value: () => Boolean): Self = StObject.set(x, "hasAnyCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMatches(value: EventRegistration => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+      inline def setMatches(value: EventRegistration => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRespondsTo(value: String => Boolean): Self = StObject.set(x, "respondsTo", js.Any.fromFunction1(value))
+      inline def setRespondsTo(value: String => Boolean): Self = StObject.set(x, "respondsTo", js.Any.fromFunction1(value))
     }
   }
 }

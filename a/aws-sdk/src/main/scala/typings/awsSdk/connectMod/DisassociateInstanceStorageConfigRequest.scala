@@ -23,22 +23,17 @@ trait DisassociateInstanceStorageConfigRequest extends StObject {
 }
 object DisassociateInstanceStorageConfigRequest {
   
-  @scala.inline
-  def apply(AssociationId: AssociationId, InstanceId: InstanceId, ResourceType: InstanceStorageResourceType): DisassociateInstanceStorageConfigRequest = {
+  inline def apply(AssociationId: AssociationId, InstanceId: InstanceId, ResourceType: InstanceStorageResourceType): DisassociateInstanceStorageConfigRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateInstanceStorageConfigRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateInstanceStorageConfigRequestMutableBuilder[Self <: DisassociateInstanceStorageConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateInstanceStorageConfigRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: InstanceStorageResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: InstanceStorageResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

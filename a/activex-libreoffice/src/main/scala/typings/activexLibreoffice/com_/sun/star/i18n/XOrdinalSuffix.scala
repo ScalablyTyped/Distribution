@@ -29,8 +29,7 @@ trait XOrdinalSuffix
 }
 object XOrdinalSuffix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getOrdinalSuffix: (Double, Locale) => SafeArray[String],
     queryInterface: `type` => js.Any,
@@ -40,10 +39,8 @@ object XOrdinalSuffix {
     __obj.asInstanceOf[XOrdinalSuffix]
   }
   
-  @scala.inline
-  implicit class XOrdinalSuffixMutableBuilder[Self <: XOrdinalSuffix] (val x: Self) extends AnyVal {
+  extension [Self <: XOrdinalSuffix](x: Self) {
     
-    @scala.inline
-    def setGetOrdinalSuffix(value: (Double, Locale) => SafeArray[String]): Self = StObject.set(x, "getOrdinalSuffix", js.Any.fromFunction2(value))
+    inline def setGetOrdinalSuffix(value: (Double, Locale) => SafeArray[String]): Self = StObject.set(x, "getOrdinalSuffix", js.Any.fromFunction2(value))
   }
 }

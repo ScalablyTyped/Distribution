@@ -28,8 +28,7 @@ trait Participant extends StObject {
 }
 object Participant {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     championId: Double,
     highestAchievedSeasonTier: String,
     masteries: js.Array[Mastery],
@@ -45,43 +44,30 @@ object Participant {
     __obj.asInstanceOf[Participant]
   }
   
-  @scala.inline
-  implicit class ParticipantMutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
+  extension [Self <: Participant](x: Self) {
     
-    @scala.inline
-    def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
+    inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighestAchievedSeasonTier(value: String): Self = StObject.set(x, "highestAchievedSeasonTier", value.asInstanceOf[js.Any])
+    inline def setHighestAchievedSeasonTier(value: String): Self = StObject.set(x, "highestAchievedSeasonTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasteries(value: js.Array[Mastery]): Self = StObject.set(x, "masteries", value.asInstanceOf[js.Any])
+    inline def setMasteries(value: js.Array[Mastery]): Self = StObject.set(x, "masteries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasteriesVarargs(value: Mastery*): Self = StObject.set(x, "masteries", js.Array(value :_*))
+    inline def setMasteriesVarargs(value: Mastery*): Self = StObject.set(x, "masteries", js.Array(value :_*))
     
-    @scala.inline
-    def setParticipantId(value: Double): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
+    inline def setParticipantId(value: Double): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunes(value: js.Array[Rune]): Self = StObject.set(x, "runes", value.asInstanceOf[js.Any])
+    inline def setRunes(value: js.Array[Rune]): Self = StObject.set(x, "runes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunesVarargs(value: Rune*): Self = StObject.set(x, "runes", js.Array(value :_*))
+    inline def setRunesVarargs(value: Rune*): Self = StObject.set(x, "runes", js.Array(value :_*))
     
-    @scala.inline
-    def setSpell1Id(value: Double): Self = StObject.set(x, "spell1Id", value.asInstanceOf[js.Any])
+    inline def setSpell1Id(value: Double): Self = StObject.set(x, "spell1Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpell2Id(value: Double): Self = StObject.set(x, "spell2Id", value.asInstanceOf[js.Any])
+    inline def setSpell2Id(value: Double): Self = StObject.set(x, "spell2Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: ParticipantStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: ParticipantStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+    inline def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeline(value: ParticipantTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: ParticipantTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

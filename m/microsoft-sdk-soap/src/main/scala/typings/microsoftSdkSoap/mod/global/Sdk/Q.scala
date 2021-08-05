@@ -25,8 +25,7 @@ object Q {
     * @param relatedEntities A collection of Sdk.EntityReference objects to be associated.
     */
   /* static member */
-  @scala.inline
-  def associate(
+  inline def associate(
     entityName: java.lang.String,
     entityId: java.lang.String,
     relationship: java.lang.String,
@@ -38,8 +37,7 @@ object Q {
     * @param entity An entity instance.
     */
   /* static member */
-  @scala.inline
-  def create(entity: Entity): Promise[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entity.asInstanceOf[js.Any]).asInstanceOf[Promise[java.lang.String]]
+  inline def create(entity: Entity): Promise[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entity.asInstanceOf[js.Any]).asInstanceOf[Promise[java.lang.String]]
   
   /**
     * Deletes an entity record
@@ -47,8 +45,7 @@ object Q {
     * @param id An ID of the record to delete.
     */
   /* static member */
-  @scala.inline
-  def del(entityName: java.lang.String, id: java.lang.String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(entityName.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  inline def del(entityName: java.lang.String, id: java.lang.String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(entityName.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
   /**
     * Removes a link between records.
@@ -58,8 +55,7 @@ object Q {
     * @param relatedEntities A collection of Sdk.EntityReference objects to be disassociated.
     */
   /* static member */
-  @scala.inline
-  def disassociate(
+  inline def disassociate(
     entityName: java.lang.String,
     entityId: java.lang.String,
     relationship: java.lang.String,
@@ -71,8 +67,7 @@ object Q {
     * @param request A request object.
     */
   /* static member */
-  @scala.inline
-  def execute(request: OrganizationRequest): Promise[OrganizationResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(request.asInstanceOf[js.Any]).asInstanceOf[Promise[OrganizationResponse]]
+  inline def execute(request: OrganizationRequest): Promise[OrganizationResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(request.asInstanceOf[js.Any]).asInstanceOf[Promise[OrganizationResponse]]
   
   /**
     * Retrieves an entity instance.
@@ -81,36 +76,31 @@ object Q {
     * @param columnSet The columns of the entities to retrieve.
     */
   /* static member */
-  @scala.inline
-  def retrieve(entityName: java.lang.String, id: java.lang.String, columnSet: ColumnSet): Promise[Entity] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(entityName.asInstanceOf[js.Any], id.asInstanceOf[js.Any], columnSet.asInstanceOf[js.Any])).asInstanceOf[Promise[Entity]]
+  inline def retrieve(entityName: java.lang.String, id: java.lang.String, columnSet: ColumnSet): Promise[Entity] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(entityName.asInstanceOf[js.Any], id.asInstanceOf[js.Any], columnSet.asInstanceOf[js.Any])).asInstanceOf[Promise[Entity]]
   
   /**
     * Retrieves the results of a query
     * @param query An Sdk.Query.FetchExpression query.
     */
   /* static member */
-  @scala.inline
-  def retrieveMultiple(query: FetchExpression): Promise[EntityCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveMultiple")(query.asInstanceOf[js.Any]).asInstanceOf[Promise[EntityCollection]]
+  inline def retrieveMultiple(query: FetchExpression): Promise[EntityCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveMultiple")(query.asInstanceOf[js.Any]).asInstanceOf[Promise[EntityCollection]]
   /**
     * Retrieves the results of a query
     * @param query An Sdk.Query.QueryByAttribute query.
     */
   /* static member */
-  @scala.inline
-  def retrieveMultiple(query: QueryByAttribute): Promise[EntityCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveMultiple")(query.asInstanceOf[js.Any]).asInstanceOf[Promise[EntityCollection]]
+  inline def retrieveMultiple(query: QueryByAttribute): Promise[EntityCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveMultiple")(query.asInstanceOf[js.Any]).asInstanceOf[Promise[EntityCollection]]
   /**
     * Retrieves the results of a query
     * @param query An Sdk.Query.QueryExpression query.
     */
   /* static member */
-  @scala.inline
-  def retrieveMultiple(query: QueryExpression): Promise[EntityCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveMultiple")(query.asInstanceOf[js.Any]).asInstanceOf[Promise[EntityCollection]]
+  inline def retrieveMultiple(query: QueryExpression): Promise[EntityCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveMultiple")(query.asInstanceOf[js.Any]).asInstanceOf[Promise[EntityCollection]]
   
   /**
     * Updates an entity instance.
     * @param entity An entity instance to update.
     */
   /* static member */
-  @scala.inline
-  def update(entity: Entity): Promise[scala.Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(entity.asInstanceOf[js.Any]).asInstanceOf[Promise[scala.Boolean]]
+  inline def update(entity: Entity): Promise[scala.Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(entity.asInstanceOf[js.Any]).asInstanceOf[Promise[scala.Boolean]]
 }

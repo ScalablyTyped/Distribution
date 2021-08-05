@@ -79,91 +79,63 @@ trait SchemaMessage extends StObject {
 }
 object SchemaMessage {
   
-  @scala.inline
-  def apply(): SchemaMessage = {
+  inline def apply(): SchemaMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMessage]
   }
   
-  @scala.inline
-  implicit class SchemaMessageMutableBuilder[Self <: SchemaMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMessage](x: Self) {
     
-    @scala.inline
-    def setActionResponse(value: SchemaActionResponse): Self = StObject.set(x, "actionResponse", value.asInstanceOf[js.Any])
+    inline def setActionResponse(value: SchemaActionResponse): Self = StObject.set(x, "actionResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionResponseUndefined: Self = StObject.set(x, "actionResponse", js.undefined)
+    inline def setActionResponseUndefined: Self = StObject.set(x, "actionResponse", js.undefined)
     
-    @scala.inline
-    def setAnnotations(value: js.Array[SchemaAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: js.Array[SchemaAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setAnnotationsVarargs(value: SchemaAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: SchemaAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
-    @scala.inline
-    def setArgumentText(value: String): Self = StObject.set(x, "argumentText", value.asInstanceOf[js.Any])
+    inline def setArgumentText(value: String): Self = StObject.set(x, "argumentText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentTextUndefined: Self = StObject.set(x, "argumentText", js.undefined)
+    inline def setArgumentTextUndefined: Self = StObject.set(x, "argumentText", js.undefined)
     
-    @scala.inline
-    def setCards(value: js.Array[SchemaCard]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
+    inline def setCards(value: js.Array[SchemaCard]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
+    inline def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
     
-    @scala.inline
-    def setCardsVarargs(value: SchemaCard*): Self = StObject.set(x, "cards", js.Array(value :_*))
+    inline def setCardsVarargs(value: SchemaCard*): Self = StObject.set(x, "cards", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setFallbackText(value: String): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
+    inline def setFallbackText(value: String): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackTextUndefined: Self = StObject.set(x, "fallbackText", js.undefined)
+    inline def setFallbackTextUndefined: Self = StObject.set(x, "fallbackText", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPreviewText(value: String): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
+    inline def setPreviewText(value: String): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
+    inline def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
     
-    @scala.inline
-    def setSender(value: SchemaUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: SchemaUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
-    @scala.inline
-    def setSpace(value: SchemaSpace): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: SchemaSpace): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setThread(value: SchemaThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
+    inline def setThread(value: SchemaThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadUndefined: Self = StObject.set(x, "thread", js.undefined)
+    inline def setThreadUndefined: Self = StObject.set(x, "thread", js.undefined)
   }
 }

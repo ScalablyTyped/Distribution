@@ -10,8 +10,7 @@ trait CSSOthersObjectForCSSObject
      with /* propertiesName */ StringDictionary[CSSInterpolation]
 object CSSOthersObjectForCSSObject {
   
-  @scala.inline
-  def apply(): CSSOthersObjectForCSSObject = {
+  inline def apply(): CSSOthersObjectForCSSObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSOthersObjectForCSSObject]
   }

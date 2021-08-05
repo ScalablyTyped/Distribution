@@ -12,16 +12,13 @@ trait OfflineAudioCompletionEventInit
 }
 object OfflineAudioCompletionEventInit {
   
-  @scala.inline
-  def apply(renderedBuffer: AudioBuffer): OfflineAudioCompletionEventInit = {
+  inline def apply(renderedBuffer: AudioBuffer): OfflineAudioCompletionEventInit = {
     val __obj = js.Dynamic.literal(renderedBuffer = renderedBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineAudioCompletionEventInit]
   }
   
-  @scala.inline
-  implicit class OfflineAudioCompletionEventInitMutableBuilder[Self <: OfflineAudioCompletionEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: OfflineAudioCompletionEventInit](x: Self) {
     
-    @scala.inline
-    def setRenderedBuffer(value: AudioBuffer): Self = StObject.set(x, "renderedBuffer", value.asInstanceOf[js.Any])
+    inline def setRenderedBuffer(value: AudioBuffer): Self = StObject.set(x, "renderedBuffer", value.asInstanceOf[js.Any])
   }
 }

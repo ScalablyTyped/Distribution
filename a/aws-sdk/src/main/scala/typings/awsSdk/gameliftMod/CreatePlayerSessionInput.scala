@@ -23,25 +23,19 @@ trait CreatePlayerSessionInput extends StObject {
 }
 object CreatePlayerSessionInput {
   
-  @scala.inline
-  def apply(GameSessionId: ArnStringModel, PlayerId: NonZeroAndMaxString): CreatePlayerSessionInput = {
+  inline def apply(GameSessionId: ArnStringModel, PlayerId: NonZeroAndMaxString): CreatePlayerSessionInput = {
     val __obj = js.Dynamic.literal(GameSessionId = GameSessionId.asInstanceOf[js.Any], PlayerId = PlayerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlayerSessionInput]
   }
   
-  @scala.inline
-  implicit class CreatePlayerSessionInputMutableBuilder[Self <: CreatePlayerSessionInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlayerSessionInput](x: Self) {
     
-    @scala.inline
-    def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
+    inline def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerData(value: PlayerData): Self = StObject.set(x, "PlayerData", value.asInstanceOf[js.Any])
+    inline def setPlayerData(value: PlayerData): Self = StObject.set(x, "PlayerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerDataUndefined: Self = StObject.set(x, "PlayerData", js.undefined)
+    inline def setPlayerDataUndefined: Self = StObject.set(x, "PlayerData", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
   }
 }

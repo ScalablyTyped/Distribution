@@ -18,28 +18,21 @@ trait DBSnapshotAttribute extends StObject {
 }
 object DBSnapshotAttribute {
   
-  @scala.inline
-  def apply(): DBSnapshotAttribute = {
+  inline def apply(): DBSnapshotAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBSnapshotAttribute]
   }
   
-  @scala.inline
-  implicit class DBSnapshotAttributeMutableBuilder[Self <: DBSnapshotAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: DBSnapshotAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeValues(value: AttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
+    inline def setAttributeValues(value: AttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
+    inline def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
     
-    @scala.inline
-    def setAttributeValuesVarargs(value: String*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
+    inline def setAttributeValuesVarargs(value: String*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
   }
 }

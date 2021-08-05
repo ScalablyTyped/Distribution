@@ -20,8 +20,7 @@ trait Android extends StObject {
 }
 object Android {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Android: Boolean,
     BlackBerry: Boolean,
     Opera: Boolean,
@@ -33,25 +32,18 @@ object Android {
     __obj.asInstanceOf[Android]
   }
   
-  @scala.inline
-  implicit class AndroidMutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
+  extension [Self <: Android](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: Boolean): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: Boolean): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
+    inline def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBlackBerry(value: Boolean): Self = StObject.set(x, "BlackBerry", value.asInstanceOf[js.Any])
+    inline def setBlackBerry(value: Boolean): Self = StObject.set(x, "BlackBerry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
+    inline def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpera(value: Boolean): Self = StObject.set(x, "Opera", value.asInstanceOf[js.Any])
+    inline def setOpera(value: Boolean): Self = StObject.set(x, "Opera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindows(value: Boolean): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: Boolean): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
   }
 }

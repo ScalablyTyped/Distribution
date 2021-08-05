@@ -22,31 +22,23 @@ trait IIdGenerator
 }
 object IIdGenerator {
   
-  @scala.inline
-  def apply(): IIdGenerator = {
+  inline def apply(): IIdGenerator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IIdGenerator]
   }
   
-  @scala.inline
-  implicit class IIdGeneratorMutableBuilder[Self <: IIdGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: IIdGenerator](x: Self) {
     
-    @scala.inline
-    def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
+    inline def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
+    inline def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsGenerator(value: Boolean): Self = StObject.set(x, "isGenerator", value.asInstanceOf[js.Any])
+    inline def setIsGenerator(value: Boolean): Self = StObject.set(x, "isGenerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGeneratorUndefined: Self = StObject.set(x, "isGenerator", js.undefined)
+    inline def setIsGeneratorUndefined: Self = StObject.set(x, "isGenerator", js.undefined)
   }
 }

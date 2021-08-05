@@ -24,16 +24,13 @@ trait IconMouseEvent
 }
 object IconMouseEvent {
   
-  @scala.inline
-  def apply(latLng: LatLng, placeId: String, stop: () => Unit): IconMouseEvent = {
+  inline def apply(latLng: LatLng, placeId: String, stop: () => Unit): IconMouseEvent = {
     val __obj = js.Dynamic.literal(latLng = latLng.asInstanceOf[js.Any], placeId = placeId.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[IconMouseEvent]
   }
   
-  @scala.inline
-  implicit class IconMouseEventMutableBuilder[Self <: IconMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IconMouseEvent](x: Self) {
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
   }
 }

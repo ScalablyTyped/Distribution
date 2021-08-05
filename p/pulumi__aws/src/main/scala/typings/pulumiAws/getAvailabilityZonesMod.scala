@@ -12,14 +12,10 @@ object getAvailabilityZonesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAvailabilityZones(): js.Promise[GetAvailabilityZonesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")().asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
-  @scala.inline
-  def getAvailabilityZones(args: Unit, opts: InvokeOptions): js.Promise[GetAvailabilityZonesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
-  @scala.inline
-  def getAvailabilityZones(args: GetAvailabilityZonesArgs): js.Promise[GetAvailabilityZonesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
-  @scala.inline
-  def getAvailabilityZones(args: GetAvailabilityZonesArgs, opts: InvokeOptions): js.Promise[GetAvailabilityZonesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
+  inline def getAvailabilityZones(): js.Promise[GetAvailabilityZonesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")().asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
+  inline def getAvailabilityZones(args: Unit, opts: InvokeOptions): js.Promise[GetAvailabilityZonesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
+  inline def getAvailabilityZones(args: GetAvailabilityZonesArgs): js.Promise[GetAvailabilityZonesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
+  inline def getAvailabilityZones(args: GetAvailabilityZonesArgs, opts: InvokeOptions): js.Promise[GetAvailabilityZonesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZones")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAvailabilityZonesResult]]
   
   trait GetAvailabilityZonesArgs extends StObject {
     
@@ -53,53 +49,38 @@ object getAvailabilityZonesMod {
   }
   object GetAvailabilityZonesArgs {
     
-    @scala.inline
-    def apply(): GetAvailabilityZonesArgs = {
+    inline def apply(): GetAvailabilityZonesArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAvailabilityZonesArgs]
     }
     
-    @scala.inline
-    implicit class GetAvailabilityZonesArgsMutableBuilder[Self <: GetAvailabilityZonesArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetAvailabilityZonesArgs](x: Self) {
       
-      @scala.inline
-      def setAllAvailabilityZones(value: Boolean): Self = StObject.set(x, "allAvailabilityZones", value.asInstanceOf[js.Any])
+      inline def setAllAvailabilityZones(value: Boolean): Self = StObject.set(x, "allAvailabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllAvailabilityZonesUndefined: Self = StObject.set(x, "allAvailabilityZones", js.undefined)
+      inline def setAllAvailabilityZonesUndefined: Self = StObject.set(x, "allAvailabilityZones", js.undefined)
       
-      @scala.inline
-      def setExcludeNames(value: js.Array[String]): Self = StObject.set(x, "excludeNames", value.asInstanceOf[js.Any])
+      inline def setExcludeNames(value: js.Array[String]): Self = StObject.set(x, "excludeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeNamesUndefined: Self = StObject.set(x, "excludeNames", js.undefined)
+      inline def setExcludeNamesUndefined: Self = StObject.set(x, "excludeNames", js.undefined)
       
-      @scala.inline
-      def setExcludeNamesVarargs(value: String*): Self = StObject.set(x, "excludeNames", js.Array(value :_*))
+      inline def setExcludeNamesVarargs(value: String*): Self = StObject.set(x, "excludeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludeZoneIds(value: js.Array[String]): Self = StObject.set(x, "excludeZoneIds", value.asInstanceOf[js.Any])
+      inline def setExcludeZoneIds(value: js.Array[String]): Self = StObject.set(x, "excludeZoneIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeZoneIdsUndefined: Self = StObject.set(x, "excludeZoneIds", js.undefined)
+      inline def setExcludeZoneIdsUndefined: Self = StObject.set(x, "excludeZoneIds", js.undefined)
       
-      @scala.inline
-      def setExcludeZoneIdsVarargs(value: String*): Self = StObject.set(x, "excludeZoneIds", js.Array(value :_*))
+      inline def setExcludeZoneIdsVarargs(value: String*): Self = StObject.set(x, "excludeZoneIds", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[GetAvailabilityZonesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetAvailabilityZonesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetAvailabilityZonesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetAvailabilityZonesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -134,74 +115,52 @@ object getAvailabilityZonesMod {
   }
   object GetAvailabilityZonesResult {
     
-    @scala.inline
-    def apply(groupNames: js.Array[String], id: String, names: js.Array[String], zoneIds: js.Array[String]): GetAvailabilityZonesResult = {
+    inline def apply(groupNames: js.Array[String], id: String, names: js.Array[String], zoneIds: js.Array[String]): GetAvailabilityZonesResult = {
       val __obj = js.Dynamic.literal(groupNames = groupNames.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], zoneIds = zoneIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAvailabilityZonesResult]
     }
     
-    @scala.inline
-    implicit class GetAvailabilityZonesResultMutableBuilder[Self <: GetAvailabilityZonesResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetAvailabilityZonesResult](x: Self) {
       
-      @scala.inline
-      def setAllAvailabilityZones(value: Boolean): Self = StObject.set(x, "allAvailabilityZones", value.asInstanceOf[js.Any])
+      inline def setAllAvailabilityZones(value: Boolean): Self = StObject.set(x, "allAvailabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllAvailabilityZonesUndefined: Self = StObject.set(x, "allAvailabilityZones", js.undefined)
+      inline def setAllAvailabilityZonesUndefined: Self = StObject.set(x, "allAvailabilityZones", js.undefined)
       
-      @scala.inline
-      def setExcludeNames(value: js.Array[String]): Self = StObject.set(x, "excludeNames", value.asInstanceOf[js.Any])
+      inline def setExcludeNames(value: js.Array[String]): Self = StObject.set(x, "excludeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeNamesUndefined: Self = StObject.set(x, "excludeNames", js.undefined)
+      inline def setExcludeNamesUndefined: Self = StObject.set(x, "excludeNames", js.undefined)
       
-      @scala.inline
-      def setExcludeNamesVarargs(value: String*): Self = StObject.set(x, "excludeNames", js.Array(value :_*))
+      inline def setExcludeNamesVarargs(value: String*): Self = StObject.set(x, "excludeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludeZoneIds(value: js.Array[String]): Self = StObject.set(x, "excludeZoneIds", value.asInstanceOf[js.Any])
+      inline def setExcludeZoneIds(value: js.Array[String]): Self = StObject.set(x, "excludeZoneIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeZoneIdsUndefined: Self = StObject.set(x, "excludeZoneIds", js.undefined)
+      inline def setExcludeZoneIdsUndefined: Self = StObject.set(x, "excludeZoneIds", js.undefined)
       
-      @scala.inline
-      def setExcludeZoneIdsVarargs(value: String*): Self = StObject.set(x, "excludeZoneIds", js.Array(value :_*))
+      inline def setExcludeZoneIdsVarargs(value: String*): Self = StObject.set(x, "excludeZoneIds", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetAvailabilityZonesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetAvailabilityZonesFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetAvailabilityZonesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetAvailabilityZonesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setGroupNames(value: js.Array[String]): Self = StObject.set(x, "groupNames", value.asInstanceOf[js.Any])
+      inline def setGroupNames(value: js.Array[String]): Self = StObject.set(x, "groupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupNamesVarargs(value: String*): Self = StObject.set(x, "groupNames", js.Array(value :_*))
+      inline def setGroupNamesVarargs(value: String*): Self = StObject.set(x, "groupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setZoneIds(value: js.Array[String]): Self = StObject.set(x, "zoneIds", value.asInstanceOf[js.Any])
+      inline def setZoneIds(value: js.Array[String]): Self = StObject.set(x, "zoneIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdsVarargs(value: String*): Self = StObject.set(x, "zoneIds", js.Array(value :_*))
+      inline def setZoneIdsVarargs(value: String*): Self = StObject.set(x, "zoneIds", js.Array(value :_*))
     }
   }
 }

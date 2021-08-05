@@ -12,19 +12,15 @@ trait Register extends StObject {
 }
 object Register {
   
-  @scala.inline
-  def apply(register: String => Unit, unregister: String => Unit): Register = {
+  inline def apply(register: String => Unit, unregister: String => Unit): Register = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register), unregister = js.Any.fromFunction1(unregister))
     __obj.asInstanceOf[Register]
   }
   
-  @scala.inline
-  implicit class RegisterMutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
+  extension [Self <: Register](x: Self) {
     
-    @scala.inline
-    def setRegister(value: String => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: String => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregister(value: String => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: String => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
   }
 }

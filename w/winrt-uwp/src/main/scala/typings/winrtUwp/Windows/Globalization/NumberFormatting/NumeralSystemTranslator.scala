@@ -26,8 +26,7 @@ trait NumeralSystemTranslator extends StObject {
 }
 object NumeralSystemTranslator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     languages: IVectorView[String],
     numeralSystem: String,
     resolvedLanguage: String,
@@ -37,19 +36,14 @@ object NumeralSystemTranslator {
     __obj.asInstanceOf[NumeralSystemTranslator]
   }
   
-  @scala.inline
-  implicit class NumeralSystemTranslatorMutableBuilder[Self <: NumeralSystemTranslator] (val x: Self) extends AnyVal {
+  extension [Self <: NumeralSystemTranslator](x: Self) {
     
-    @scala.inline
-    def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumeralSystem(value: String): Self = StObject.set(x, "numeralSystem", value.asInstanceOf[js.Any])
+    inline def setNumeralSystem(value: String): Self = StObject.set(x, "numeralSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
+    inline def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateNumerals(value: String => String): Self = StObject.set(x, "translateNumerals", js.Any.fromFunction1(value))
+    inline def setTranslateNumerals(value: String => String): Self = StObject.set(x, "translateNumerals", js.Any.fromFunction1(value))
   }
 }

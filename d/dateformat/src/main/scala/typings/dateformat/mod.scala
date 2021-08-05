@@ -18,78 +18,42 @@ object mod {
     *
     * https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L18
     */
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(date: String): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(date: String, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: String, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: String, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: String, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: String, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: String, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: String, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Double, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Unit, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Unit, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Unit, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Unit, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Unit, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Unit, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Unit, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(date: Date, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(date: String): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(date: String, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: String, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: String, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: String, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: String, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: String, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: String, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(date: Double, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Unit, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Unit, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Unit, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Unit, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Unit, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Unit, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Unit, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Date): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(date: Date, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Date, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Date, mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Date, mask: String, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Date, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Date, mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Date, mask: Unit, utc: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(mask: String, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(mask: Unit, utc: Boolean, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("dateformat", JSImport.Namespace)
   @js.native
@@ -98,8 +62,7 @@ object mod {
   @JSImport("dateformat", "i18n")
   @js.native
   def i18n: DateFormatI18n = js.native
-  @scala.inline
-  def i18n_=(x: DateFormatI18n): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18n")(x.asInstanceOf[js.Any])
+  inline def i18n_=(x: DateFormatI18n): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18n")(x.asInstanceOf[js.Any])
   
   @JSImport("dateformat", "masks")
   @js.native
@@ -139,32 +102,24 @@ object mod {
   }
   object DateFormatI18n {
     
-    @scala.inline
-    def apply(dayNames: js.Array[String], monthNames: js.Array[String], timeNames: js.Array[String]): DateFormatI18n = {
+    inline def apply(dayNames: js.Array[String], monthNames: js.Array[String], timeNames: js.Array[String]): DateFormatI18n = {
       val __obj = js.Dynamic.literal(dayNames = dayNames.asInstanceOf[js.Any], monthNames = monthNames.asInstanceOf[js.Any], timeNames = timeNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateFormatI18n]
     }
     
-    @scala.inline
-    implicit class DateFormatI18nMutableBuilder[Self <: DateFormatI18n] (val x: Self) extends AnyVal {
+    extension [Self <: DateFormatI18n](x: Self) {
       
-      @scala.inline
-      def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
+      inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
+      inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeNames(value: js.Array[String]): Self = StObject.set(x, "timeNames", value.asInstanceOf[js.Any])
+      inline def setTimeNames(value: js.Array[String]): Self = StObject.set(x, "timeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeNamesVarargs(value: String*): Self = StObject.set(x, "timeNames", js.Array(value :_*))
+      inline def setTimeNamesVarargs(value: String*): Self = StObject.set(x, "timeNames", js.Array(value :_*))
     }
   }
   
@@ -207,8 +162,7 @@ object mod {
   }
   object DateFormatMasks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       default: String,
       expiresHeaderFormat: String,
       fullDate: String,
@@ -227,47 +181,33 @@ object mod {
       __obj.asInstanceOf[DateFormatMasks]
     }
     
-    @scala.inline
-    implicit class DateFormatMasksMutableBuilder[Self <: DateFormatMasks] (val x: Self) extends AnyVal {
+    extension [Self <: DateFormatMasks](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresHeaderFormat(value: String): Self = StObject.set(x, "expiresHeaderFormat", value.asInstanceOf[js.Any])
+      inline def setExpiresHeaderFormat(value: String): Self = StObject.set(x, "expiresHeaderFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullDate(value: String): Self = StObject.set(x, "fullDate", value.asInstanceOf[js.Any])
+      inline def setFullDate(value: String): Self = StObject.set(x, "fullDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoDate(value: String): Self = StObject.set(x, "isoDate", value.asInstanceOf[js.Any])
+      inline def setIsoDate(value: String): Self = StObject.set(x, "isoDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoDateTime(value: String): Self = StObject.set(x, "isoDateTime", value.asInstanceOf[js.Any])
+      inline def setIsoDateTime(value: String): Self = StObject.set(x, "isoDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoTime(value: String): Self = StObject.set(x, "isoTime", value.asInstanceOf[js.Any])
+      inline def setIsoTime(value: String): Self = StObject.set(x, "isoTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoUtcDateTime(value: String): Self = StObject.set(x, "isoUtcDateTime", value.asInstanceOf[js.Any])
+      inline def setIsoUtcDateTime(value: String): Self = StObject.set(x, "isoUtcDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongDate(value: String): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
+      inline def setLongDate(value: String): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongTime(value: String): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
+      inline def setLongTime(value: String): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumDate(value: String): Self = StObject.set(x, "mediumDate", value.asInstanceOf[js.Any])
+      inline def setMediumDate(value: String): Self = StObject.set(x, "mediumDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumTime(value: String): Self = StObject.set(x, "mediumTime", value.asInstanceOf[js.Any])
+      inline def setMediumTime(value: String): Self = StObject.set(x, "mediumTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDate(value: String): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
+      inline def setShortDate(value: String): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortTime(value: String): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
+      inline def setShortTime(value: String): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
     }
   }
 }

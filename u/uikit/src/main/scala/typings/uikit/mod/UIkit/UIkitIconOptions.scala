@@ -12,25 +12,19 @@ trait UIkitIconOptions extends StObject {
 }
 object UIkitIconOptions {
   
-  @scala.inline
-  def apply(): UIkitIconOptions = {
+  inline def apply(): UIkitIconOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitIconOptions]
   }
   
-  @scala.inline
-  implicit class UIkitIconOptionsMutableBuilder[Self <: UIkitIconOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitIconOptions](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
   }
 }

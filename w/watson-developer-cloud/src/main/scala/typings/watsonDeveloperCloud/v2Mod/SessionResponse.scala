@@ -12,16 +12,13 @@ trait SessionResponse extends StObject {
 }
 object SessionResponse {
   
-  @scala.inline
-  def apply(session_id: String): SessionResponse = {
+  inline def apply(session_id: String): SessionResponse = {
     val __obj = js.Dynamic.literal(session_id = session_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionResponse]
   }
   
-  @scala.inline
-  implicit class SessionResponseMutableBuilder[Self <: SessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SessionResponse](x: Self) {
     
-    @scala.inline
-    def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
+    inline def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
   }
 }

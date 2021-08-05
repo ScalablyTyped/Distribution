@@ -17,8 +17,7 @@ trait XUpdate extends StObject {
 }
 object XUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     insertExtensionXcsFile: (Boolean, String) => Unit,
     insertExtensionXcuFile: (Boolean, String) => Unit,
     insertModificationXcuFile: (String, SeqEquiv[String], SeqEquiv[String]) => Unit,
@@ -28,19 +27,14 @@ object XUpdate {
     __obj.asInstanceOf[XUpdate]
   }
   
-  @scala.inline
-  implicit class XUpdateMutableBuilder[Self <: XUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdate](x: Self) {
     
-    @scala.inline
-    def setInsertExtensionXcsFile(value: (Boolean, String) => Unit): Self = StObject.set(x, "insertExtensionXcsFile", js.Any.fromFunction2(value))
+    inline def setInsertExtensionXcsFile(value: (Boolean, String) => Unit): Self = StObject.set(x, "insertExtensionXcsFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertExtensionXcuFile(value: (Boolean, String) => Unit): Self = StObject.set(x, "insertExtensionXcuFile", js.Any.fromFunction2(value))
+    inline def setInsertExtensionXcuFile(value: (Boolean, String) => Unit): Self = StObject.set(x, "insertExtensionXcuFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertModificationXcuFile(value: (String, SeqEquiv[String], SeqEquiv[String]) => Unit): Self = StObject.set(x, "insertModificationXcuFile", js.Any.fromFunction3(value))
+    inline def setInsertModificationXcuFile(value: (String, SeqEquiv[String], SeqEquiv[String]) => Unit): Self = StObject.set(x, "insertModificationXcuFile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveExtensionXcuFile(value: String => Unit): Self = StObject.set(x, "removeExtensionXcuFile", js.Any.fromFunction1(value))
+    inline def setRemoveExtensionXcuFile(value: String => Unit): Self = StObject.set(x, "removeExtensionXcuFile", js.Any.fromFunction1(value))
   }
 }

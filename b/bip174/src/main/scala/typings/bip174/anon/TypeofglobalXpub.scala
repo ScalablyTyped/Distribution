@@ -21,8 +21,7 @@ trait TypeofglobalXpub extends StObject {
 }
 object TypeofglobalXpub {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAddToArray: (js.Array[GlobalXpub], GlobalXpub, Set[String]) => Boolean,
     check: js.Any => /* is bip174.bip174/src/lib/interfaces.GlobalXpub */ Boolean,
     decode: KeyValue => GlobalXpub,
@@ -33,22 +32,16 @@ object TypeofglobalXpub {
     __obj.asInstanceOf[TypeofglobalXpub]
   }
   
-  @scala.inline
-  implicit class TypeofglobalXpubMutableBuilder[Self <: TypeofglobalXpub] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofglobalXpub](x: Self) {
     
-    @scala.inline
-    def setCanAddToArray(value: (js.Array[GlobalXpub], GlobalXpub, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
+    inline def setCanAddToArray(value: (js.Array[GlobalXpub], GlobalXpub, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.GlobalXpub */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.GlobalXpub */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecode(value: KeyValue => GlobalXpub): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => GlobalXpub): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: GlobalXpub => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: GlobalXpub => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpected(value: /* "{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: /* "{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

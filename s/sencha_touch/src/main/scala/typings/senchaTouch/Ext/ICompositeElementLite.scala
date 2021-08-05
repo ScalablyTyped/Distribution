@@ -463,323 +463,225 @@ trait ICompositeElementLite
 }
 object ICompositeElementLite {
   
-  @scala.inline
-  def apply(): ICompositeElementLite = {
+  inline def apply(): ICompositeElementLite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICompositeElementLite]
   }
   
-  @scala.inline
-  implicit class ICompositeElementLiteMutableBuilder[Self <: ICompositeElementLite] (val x: Self) extends AnyVal {
+  extension [Self <: ICompositeElementLite](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddCls(
+    inline def setAddCls(
       value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "addCls", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
+    inline def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
     
-    @scala.inline
-    def setAddListener(
+    inline def setAddListener(
       value: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => ICompositeElementLite
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
+    inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAppendChild(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
+    inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
-    @scala.inline
-    def setAppendTo(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+    inline def setAppendTo(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
-    @scala.inline
-    def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
+    inline def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
+    inline def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setCreateChild(
+    inline def setCreateChild(
       value: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "createChild", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateChildUndefined: Self = StObject.set(x, "createChild", js.undefined)
+    inline def setCreateChildUndefined: Self = StObject.set(x, "createChild", js.undefined)
     
-    @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setElements(value: Array): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: Array): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setFill(value: /* els */ js.UndefOr[js.Any] => ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* els */ js.UndefOr[js.Any] => ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setFilter(value: /* selector */ js.UndefOr[js.Any] => ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* selector */ js.UndefOr[js.Any] => ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
+    inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    @scala.inline
-    def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
+    inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
-    @scala.inline
-    def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+    inline def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
+    inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
     
-    @scala.inline
-    def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+    inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
-    @scala.inline
-    def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
+    inline def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
+    inline def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
     
-    @scala.inline
-    def setInsertSibling(
+    inline def setInsertSibling(
       value: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "insertSibling", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInsertSiblingUndefined: Self = StObject.set(x, "insertSibling", js.undefined)
+    inline def setInsertSiblingUndefined: Self = StObject.set(x, "insertSibling", js.undefined)
     
-    @scala.inline
-    def setItem(value: /* index */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: /* index */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setRadioCls(value: /* className */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
+    inline def setRadioCls(value: /* className */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRadioClsUndefined: Self = StObject.set(x, "radioCls", js.undefined)
+    inline def setRadioClsUndefined: Self = StObject.set(x, "radioCls", js.undefined)
     
-    @scala.inline
-    def setRemoveCls(
+    inline def setRemoveCls(
       value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "removeCls", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
+    inline def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
     
-    @scala.inline
-    def setRemoveElement(value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => ICompositeElementLite): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
+    inline def setRemoveElement(value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => ICompositeElementLite): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
+    inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
     
-    @scala.inline
-    def setRepaint(value: () => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
+    inline def setRepaint(value: () => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
+    inline def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
     
-    @scala.inline
-    def setReplace(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+    inline def setReplace(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceCls(
+    inline def setReplaceCls(
       value: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "replaceCls", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setReplaceClsUndefined: Self = StObject.set(x, "replaceCls", js.undefined)
+    inline def setReplaceClsUndefined: Self = StObject.set(x, "replaceCls", js.undefined)
     
-    @scala.inline
-    def setReplaceElement(
+    inline def setReplaceElement(
       value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => ICompositeElementLite
     ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
+    inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+    inline def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
+    inline def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
     
-    @scala.inline
-    def setSelect(
+    inline def setSelect(
       value: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => ICompositeElementLite
     ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSet(
+    inline def setSet(
       value: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
+    inline def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
+    inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
     
-    @scala.inline
-    def setSetBox(value: /* box */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
+    inline def setSetBox(value: /* box */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
+    inline def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
     
-    @scala.inline
-    def setSetHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
+    inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
-    @scala.inline
-    def setSetLeft(value: /* left */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
+    inline def setSetLeft(value: /* left */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
+    inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
-    @scala.inline
-    def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
+    inline def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxHeightUndefined: Self = StObject.set(x, "setMaxHeight", js.undefined)
+    inline def setSetMaxHeightUndefined: Self = StObject.set(x, "setMaxHeight", js.undefined)
     
-    @scala.inline
-    def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
+    inline def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxWidthUndefined: Self = StObject.set(x, "setMaxWidth", js.undefined)
+    inline def setSetMaxWidthUndefined: Self = StObject.set(x, "setMaxWidth", js.undefined)
     
-    @scala.inline
-    def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
+    inline def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
+    inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
-    @scala.inline
-    def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
+    inline def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinWidthUndefined: Self = StObject.set(x, "setMinWidth", js.undefined)
+    inline def setSetMinWidthUndefined: Self = StObject.set(x, "setMinWidth", js.undefined)
     
-    @scala.inline
-    def setSetRight(value: /* right */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
+    inline def setSetRight(value: /* right */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
+    inline def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
     
-    @scala.inline
-    def setSetSize(
+    inline def setSetSize(
       value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
+    inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
     
-    @scala.inline
-    def setSetStyle(
+    inline def setSetStyle(
       value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
+    inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
     
-    @scala.inline
-    def setSetTop(value: /* top */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
+    inline def setSetTop(value: /* top */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTopUndefined: Self = StObject.set(x, "setTop", js.undefined)
+    inline def setSetTopUndefined: Self = StObject.set(x, "setTop", js.undefined)
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
+    inline def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisibilityModeUndefined: Self = StObject.set(x, "setVisibilityMode", js.undefined)
+    inline def setSetVisibilityModeUndefined: Self = StObject.set(x, "setVisibilityMode", js.undefined)
     
-    @scala.inline
-    def setSetVisible(value: /* visible */ js.UndefOr[Boolean] => IElement): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: /* visible */ js.UndefOr[Boolean] => IElement): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
+    inline def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
     
-    @scala.inline
-    def setSetWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
+    inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
     
-    @scala.inline
-    def setSetX(value: /* x */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
+    inline def setSetX(value: /* x */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXUndefined: Self = StObject.set(x, "setX", js.undefined)
+    inline def setSetXUndefined: Self = StObject.set(x, "setX", js.undefined)
     
-    @scala.inline
-    def setSetXY(value: /* pos */ js.UndefOr[Array] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setXY", js.Any.fromFunction1(value))
+    inline def setSetXY(value: /* pos */ js.UndefOr[Array] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setXY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXYUndefined: Self = StObject.set(x, "setXY", js.undefined)
+    inline def setSetXYUndefined: Self = StObject.set(x, "setXY", js.undefined)
     
-    @scala.inline
-    def setSetY(value: /* y */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
+    inline def setSetY(value: /* y */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYUndefined: Self = StObject.set(x, "setY", js.undefined)
+    inline def setSetYUndefined: Self = StObject.set(x, "setY", js.undefined)
     
-    @scala.inline
-    def setToggleCls(value: /* className */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "toggleCls", js.Any.fromFunction1(value))
+    inline def setToggleCls(value: /* className */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "toggleCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleClsUndefined: Self = StObject.set(x, "toggleCls", js.undefined)
+    inline def setToggleClsUndefined: Self = StObject.set(x, "toggleCls", js.undefined)
   }
 }

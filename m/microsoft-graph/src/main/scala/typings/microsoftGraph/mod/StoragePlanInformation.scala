@@ -11,22 +11,17 @@ trait StoragePlanInformation extends StObject {
 }
 object StoragePlanInformation {
   
-  @scala.inline
-  def apply(): StoragePlanInformation = {
+  inline def apply(): StoragePlanInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StoragePlanInformation]
   }
   
-  @scala.inline
-  implicit class StoragePlanInformationMutableBuilder[Self <: StoragePlanInformation] (val x: Self) extends AnyVal {
+  extension [Self <: StoragePlanInformation](x: Self) {
     
-    @scala.inline
-    def setUpgradeAvailable(value: NullableOption[Boolean]): Self = StObject.set(x, "upgradeAvailable", value.asInstanceOf[js.Any])
+    inline def setUpgradeAvailable(value: NullableOption[Boolean]): Self = StObject.set(x, "upgradeAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeAvailableNull: Self = StObject.set(x, "upgradeAvailable", null)
+    inline def setUpgradeAvailableNull: Self = StObject.set(x, "upgradeAvailable", null)
     
-    @scala.inline
-    def setUpgradeAvailableUndefined: Self = StObject.set(x, "upgradeAvailable", js.undefined)
+    inline def setUpgradeAvailableUndefined: Self = StObject.set(x, "upgradeAvailable", js.undefined)
   }
 }

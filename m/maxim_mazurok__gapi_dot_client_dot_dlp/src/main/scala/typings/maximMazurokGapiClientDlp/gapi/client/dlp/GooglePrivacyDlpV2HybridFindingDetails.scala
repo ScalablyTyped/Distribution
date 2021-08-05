@@ -39,47 +39,35 @@ trait GooglePrivacyDlpV2HybridFindingDetails extends StObject {
 }
 object GooglePrivacyDlpV2HybridFindingDetails {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2HybridFindingDetails = {
+  inline def apply(): GooglePrivacyDlpV2HybridFindingDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2HybridFindingDetails]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2HybridFindingDetailsMutableBuilder[Self <: GooglePrivacyDlpV2HybridFindingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2HybridFindingDetails](x: Self) {
     
-    @scala.inline
-    def setContainerDetails(value: GooglePrivacyDlpV2Container): Self = StObject.set(x, "containerDetails", value.asInstanceOf[js.Any])
+    inline def setContainerDetails(value: GooglePrivacyDlpV2Container): Self = StObject.set(x, "containerDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerDetailsUndefined: Self = StObject.set(x, "containerDetails", js.undefined)
+    inline def setContainerDetailsUndefined: Self = StObject.set(x, "containerDetails", js.undefined)
     
-    @scala.inline
-    def setFileOffset(value: String): Self = StObject.set(x, "fileOffset", value.asInstanceOf[js.Any])
+    inline def setFileOffset(value: String): Self = StObject.set(x, "fileOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileOffsetUndefined: Self = StObject.set(x, "fileOffset", js.undefined)
+    inline def setFileOffsetUndefined: Self = StObject.set(x, "fileOffset", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridFindingDetails & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setRowOffset(value: String): Self = StObject.set(x, "rowOffset", value.asInstanceOf[js.Any])
+    inline def setRowOffset(value: String): Self = StObject.set(x, "rowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowOffsetUndefined: Self = StObject.set(x, "rowOffset", js.undefined)
+    inline def setRowOffsetUndefined: Self = StObject.set(x, "rowOffset", js.undefined)
     
-    @scala.inline
-    def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
+    inline def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
+    inline def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
   }
 }

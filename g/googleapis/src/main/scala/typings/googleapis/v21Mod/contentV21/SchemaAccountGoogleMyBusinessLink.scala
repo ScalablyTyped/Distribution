@@ -21,25 +21,19 @@ trait SchemaAccountGoogleMyBusinessLink extends StObject {
 }
 object SchemaAccountGoogleMyBusinessLink {
   
-  @scala.inline
-  def apply(): SchemaAccountGoogleMyBusinessLink = {
+  inline def apply(): SchemaAccountGoogleMyBusinessLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountGoogleMyBusinessLink]
   }
   
-  @scala.inline
-  implicit class SchemaAccountGoogleMyBusinessLinkMutableBuilder[Self <: SchemaAccountGoogleMyBusinessLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountGoogleMyBusinessLink](x: Self) {
     
-    @scala.inline
-    def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
+    inline def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
+    inline def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

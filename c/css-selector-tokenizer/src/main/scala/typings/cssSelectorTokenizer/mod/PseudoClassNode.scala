@@ -19,26 +19,20 @@ trait PseudoClassNode
 }
 object PseudoClassNode {
   
-  @scala.inline
-  def apply(name: String): PseudoClassNode = {
+  inline def apply(name: String): PseudoClassNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pseudo-class")
     __obj.asInstanceOf[PseudoClassNode]
   }
   
-  @scala.inline
-  implicit class PseudoClassNodeMutableBuilder[Self <: PseudoClassNode] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoClassNode](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

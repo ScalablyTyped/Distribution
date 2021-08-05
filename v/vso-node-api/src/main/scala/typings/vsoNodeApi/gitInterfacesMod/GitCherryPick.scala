@@ -12,8 +12,7 @@ trait GitCherryPick
 }
 object GitCherryPick {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     cherryPickId: Double,
     detailedStatus: GitAsyncRefOperationDetail,
@@ -25,10 +24,8 @@ object GitCherryPick {
     __obj.asInstanceOf[GitCherryPick]
   }
   
-  @scala.inline
-  implicit class GitCherryPickMutableBuilder[Self <: GitCherryPick] (val x: Self) extends AnyVal {
+  extension [Self <: GitCherryPick](x: Self) {
     
-    @scala.inline
-    def setCherryPickId(value: Double): Self = StObject.set(x, "cherryPickId", value.asInstanceOf[js.Any])
+    inline def setCherryPickId(value: Double): Self = StObject.set(x, "cherryPickId", value.asInstanceOf[js.Any])
   }
 }

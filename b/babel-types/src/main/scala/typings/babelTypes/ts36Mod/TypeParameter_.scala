@@ -20,35 +20,26 @@ trait TypeParameter_
 }
 object TypeParameter_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): TypeParameter_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): TypeParameter_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], bound = null, default = null, name = null)
     __obj.updateDynamic("type")("TypeParameterDeclaration")
     __obj.asInstanceOf[TypeParameter_]
   }
   
-  @scala.inline
-  implicit class TypeParameter_MutableBuilder[Self <: TypeParameter_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParameter_](x: Self) {
     
-    @scala.inline
-    def setBound(value: TypeAnnotation_): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
+    inline def setBound(value: TypeAnnotation_): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundNull: Self = StObject.set(x, "bound", null)
+    inline def setBoundNull: Self = StObject.set(x, "bound", null)
     
-    @scala.inline
-    def setDefault(value: Flow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Flow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

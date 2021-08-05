@@ -10,7 +10,7 @@ trait HTMLLegendElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLLegendElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLLegendElement_typekey")
   var MSHTMLDotHTMLLegendElement_typekey: HTMLLegendElement = js.native
   
   var accessKey: String = js.native

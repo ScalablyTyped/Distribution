@@ -22,20 +22,16 @@ object chevronDownSmallMod extends Shortcut {
   }
   object ChevronDownSmallProps {
     
-    @scala.inline
-    def apply(): ChevronDownSmallProps = {
+    inline def apply(): ChevronDownSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChevronDownSmallProps]
     }
     
-    @scala.inline
-    implicit class ChevronDownSmallPropsMutableBuilder[Self <: ChevronDownSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChevronDownSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

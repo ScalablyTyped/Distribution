@@ -19,8 +19,7 @@ trait XFormattedString2
      with XFormattedString
 object XFormattedString2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     String: String,
     acquire: () => Unit,

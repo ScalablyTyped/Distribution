@@ -15,16 +15,13 @@ trait VideoByMediaContentUrlSettings
 }
 object VideoByMediaContentUrlSettings {
   
-  @scala.inline
-  def apply(mediaContentUrl: String): VideoByMediaContentUrlSettings = {
+  inline def apply(mediaContentUrl: String): VideoByMediaContentUrlSettings = {
     val __obj = js.Dynamic.literal(mediaContentUrl = mediaContentUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoByMediaContentUrlSettings]
   }
   
-  @scala.inline
-  implicit class VideoByMediaContentUrlSettingsMutableBuilder[Self <: VideoByMediaContentUrlSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoByMediaContentUrlSettings](x: Self) {
     
-    @scala.inline
-    def setMediaContentUrl(value: String): Self = StObject.set(x, "mediaContentUrl", value.asInstanceOf[js.Any])
+    inline def setMediaContentUrl(value: String): Self = StObject.set(x, "mediaContentUrl", value.asInstanceOf[js.Any])
   }
 }

@@ -17,34 +17,25 @@ trait QueryRequest extends StObject {
 }
 object QueryRequest {
   
-  @scala.inline
-  def apply(): QueryRequest = {
+  inline def apply(): QueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRequest]
   }
   
-  @scala.inline
-  implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRequest](x: Self) {
     
-    @scala.inline
-    def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
+    inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
+    inline def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
     
-    @scala.inline
-    def setInputs(value: js.Array[QueryRequestInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[QueryRequestInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: QueryRequestInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: QueryRequestInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

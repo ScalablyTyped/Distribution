@@ -18,19 +18,15 @@ trait SchemaPartition extends StObject {
 }
 object SchemaPartition {
   
-  @scala.inline
-  def apply(): SchemaPartition = {
+  inline def apply(): SchemaPartition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPartition]
   }
   
-  @scala.inline
-  implicit class SchemaPartitionMutableBuilder[Self <: SchemaPartition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPartition](x: Self) {
     
-    @scala.inline
-    def setPartitionToken(value: String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
+    inline def setPartitionToken(value: String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionTokenUndefined: Self = StObject.set(x, "partitionToken", js.undefined)
+    inline def setPartitionTokenUndefined: Self = StObject.set(x, "partitionToken", js.undefined)
   }
 }

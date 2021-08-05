@@ -2708,17 +2708,13 @@ object mod {
   @js.native
   val SW_VIDEOOUT_INSERT: Double = js.native
   
-  @scala.inline
-  def create(stream: WriteStream, options: CreateOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(stream: WriteStream, options: CreateOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def emitCombo(stream: WriteStream, codes: js.Array[Double], callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emit_combo")(stream.asInstanceOf[js.Any], codes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def emitCombo(stream: WriteStream, codes: js.Array[Double], callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emit_combo")(stream.asInstanceOf[js.Any], codes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def keyEvent(stream: WriteStream, code: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("key_event")(stream.asInstanceOf[js.Any], code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def keyEvent(stream: WriteStream, code: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("key_event")(stream.asInstanceOf[js.Any], code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sendEvent(
+  inline def sendEvent(
     stream: WriteStream,
     typeParam: Double,
     code: Double,
@@ -2726,8 +2722,7 @@ object mod {
     callback: js.Function1[/* err */ Error, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send_event")(stream.asInstanceOf[js.Any], typeParam.asInstanceOf[js.Any], code.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setup(options: SetupOptions, callback: js.Function2[/* err */ Error, /* stream */ WriteStream, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setup(options: SetupOptions, callback: js.Function2[/* err */ Error, /* stream */ WriteStream, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait CreateID extends StObject {
     
@@ -2751,68 +2746,48 @@ object mod {
   }
   object CreateID {
     
-    @scala.inline
-    def apply(bustype: Double, product: Double, vendor: Double, version: Double): CreateID = {
+    inline def apply(bustype: Double, product: Double, vendor: Double, version: Double): CreateID = {
       val __obj = js.Dynamic.literal(bustype = bustype.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateID]
     }
     
-    @scala.inline
-    implicit class CreateIDMutableBuilder[Self <: CreateID] (val x: Self) extends AnyVal {
+    extension [Self <: CreateID](x: Self) {
       
-      @scala.inline
-      def setAbsflat(value: js.Array[Double]): Self = StObject.set(x, "absflat", value.asInstanceOf[js.Any])
+      inline def setAbsflat(value: js.Array[Double]): Self = StObject.set(x, "absflat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsflatUndefined: Self = StObject.set(x, "absflat", js.undefined)
+      inline def setAbsflatUndefined: Self = StObject.set(x, "absflat", js.undefined)
       
-      @scala.inline
-      def setAbsflatVarargs(value: Double*): Self = StObject.set(x, "absflat", js.Array(value :_*))
+      inline def setAbsflatVarargs(value: Double*): Self = StObject.set(x, "absflat", js.Array(value :_*))
       
-      @scala.inline
-      def setAbsfuzz(value: js.Array[Double]): Self = StObject.set(x, "absfuzz", value.asInstanceOf[js.Any])
+      inline def setAbsfuzz(value: js.Array[Double]): Self = StObject.set(x, "absfuzz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsfuzzUndefined: Self = StObject.set(x, "absfuzz", js.undefined)
+      inline def setAbsfuzzUndefined: Self = StObject.set(x, "absfuzz", js.undefined)
       
-      @scala.inline
-      def setAbsfuzzVarargs(value: Double*): Self = StObject.set(x, "absfuzz", js.Array(value :_*))
+      inline def setAbsfuzzVarargs(value: Double*): Self = StObject.set(x, "absfuzz", js.Array(value :_*))
       
-      @scala.inline
-      def setAbsmax(value: js.Array[Double]): Self = StObject.set(x, "absmax", value.asInstanceOf[js.Any])
+      inline def setAbsmax(value: js.Array[Double]): Self = StObject.set(x, "absmax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsmaxUndefined: Self = StObject.set(x, "absmax", js.undefined)
+      inline def setAbsmaxUndefined: Self = StObject.set(x, "absmax", js.undefined)
       
-      @scala.inline
-      def setAbsmaxVarargs(value: Double*): Self = StObject.set(x, "absmax", js.Array(value :_*))
+      inline def setAbsmaxVarargs(value: Double*): Self = StObject.set(x, "absmax", js.Array(value :_*))
       
-      @scala.inline
-      def setAbsmin(value: js.Array[Double]): Self = StObject.set(x, "absmin", value.asInstanceOf[js.Any])
+      inline def setAbsmin(value: js.Array[Double]): Self = StObject.set(x, "absmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsminUndefined: Self = StObject.set(x, "absmin", js.undefined)
+      inline def setAbsminUndefined: Self = StObject.set(x, "absmin", js.undefined)
       
-      @scala.inline
-      def setAbsminVarargs(value: Double*): Self = StObject.set(x, "absmin", js.Array(value :_*))
+      inline def setAbsminVarargs(value: Double*): Self = StObject.set(x, "absmin", js.Array(value :_*))
       
-      @scala.inline
-      def setBustype(value: Double): Self = StObject.set(x, "bustype", value.asInstanceOf[js.Any])
+      inline def setBustype(value: Double): Self = StObject.set(x, "bustype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFf_effects_max(value: Double): Self = StObject.set(x, "ff_effects_max", value.asInstanceOf[js.Any])
+      inline def setFf_effects_max(value: Double): Self = StObject.set(x, "ff_effects_max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFf_effects_maxUndefined: Self = StObject.set(x, "ff_effects_max", js.undefined)
+      inline def setFf_effects_maxUndefined: Self = StObject.set(x, "ff_effects_max", js.undefined)
       
-      @scala.inline
-      def setProduct(value: Double): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: Double): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendor(value: Double): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+      inline def setVendor(value: Double): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2824,20 +2799,16 @@ object mod {
   }
   object CreateOptions {
     
-    @scala.inline
-    def apply(id: CreateID, name: String): CreateOptions = {
+    inline def apply(id: CreateID, name: String): CreateOptions = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateOptions]
     }
     
-    @scala.inline
-    implicit class CreateOptionsMutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: CreateID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: CreateID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2847,20 +2818,16 @@ object mod {
   }
   object SetupOptions {
     
-    @scala.inline
-    def apply(EV_KEY: js.Array[js.Any]): SetupOptions = {
+    inline def apply(EV_KEY: js.Array[js.Any]): SetupOptions = {
       val __obj = js.Dynamic.literal(EV_KEY = EV_KEY.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetupOptions]
     }
     
-    @scala.inline
-    implicit class SetupOptionsMutableBuilder[Self <: SetupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetupOptions](x: Self) {
       
-      @scala.inline
-      def setEV_KEY(value: js.Array[js.Any]): Self = StObject.set(x, "EV_KEY", value.asInstanceOf[js.Any])
+      inline def setEV_KEY(value: js.Array[js.Any]): Self = StObject.set(x, "EV_KEY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEV_KEYVarargs(value: js.Any*): Self = StObject.set(x, "EV_KEY", js.Array(value :_*))
+      inline def setEV_KEYVarargs(value: js.Any*): Self = StObject.set(x, "EV_KEY", js.Array(value :_*))
     }
   }
 }

@@ -28,37 +28,27 @@ trait BatchGetImageRequest extends StObject {
 }
 object BatchGetImageRequest {
   
-  @scala.inline
-  def apply(imageIds: ImageIdentifierList, repositoryName: RepositoryName): BatchGetImageRequest = {
+  inline def apply(imageIds: ImageIdentifierList, repositoryName: RepositoryName): BatchGetImageRequest = {
     val __obj = js.Dynamic.literal(imageIds = imageIds.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetImageRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetImageRequestMutableBuilder[Self <: BatchGetImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetImageRequest](x: Self) {
     
-    @scala.inline
-    def setAcceptedMediaTypes(value: MediaTypeList): Self = StObject.set(x, "acceptedMediaTypes", value.asInstanceOf[js.Any])
+    inline def setAcceptedMediaTypes(value: MediaTypeList): Self = StObject.set(x, "acceptedMediaTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedMediaTypesUndefined: Self = StObject.set(x, "acceptedMediaTypes", js.undefined)
+    inline def setAcceptedMediaTypesUndefined: Self = StObject.set(x, "acceptedMediaTypes", js.undefined)
     
-    @scala.inline
-    def setAcceptedMediaTypesVarargs(value: MediaType*): Self = StObject.set(x, "acceptedMediaTypes", js.Array(value :_*))
+    inline def setAcceptedMediaTypesVarargs(value: MediaType*): Self = StObject.set(x, "acceptedMediaTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
+    inline def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

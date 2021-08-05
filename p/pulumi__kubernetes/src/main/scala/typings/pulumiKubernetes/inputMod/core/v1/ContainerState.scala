@@ -27,31 +27,23 @@ trait ContainerState extends StObject {
 }
 object ContainerState {
   
-  @scala.inline
-  def apply(): ContainerState = {
+  inline def apply(): ContainerState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerState]
   }
   
-  @scala.inline
-  implicit class ContainerStateMutableBuilder[Self <: ContainerState] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerState](x: Self) {
     
-    @scala.inline
-    def setRunning(value: Input[ContainerStateRunning]): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Input[ContainerStateRunning]): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
+    inline def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
     
-    @scala.inline
-    def setTerminated(value: Input[ContainerStateTerminated]): Self = StObject.set(x, "terminated", value.asInstanceOf[js.Any])
+    inline def setTerminated(value: Input[ContainerStateTerminated]): Self = StObject.set(x, "terminated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminatedUndefined: Self = StObject.set(x, "terminated", js.undefined)
+    inline def setTerminatedUndefined: Self = StObject.set(x, "terminated", js.undefined)
     
-    @scala.inline
-    def setWaiting(value: Input[ContainerStateWaiting]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+    inline def setWaiting(value: Input[ContainerStateWaiting]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
+    inline def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
   }
 }

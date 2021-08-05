@@ -12,22 +12,17 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(): Parameter = {
+  inline def apply(): Parameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setParameter(value: js.Array[NestedParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Array[NestedParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    @scala.inline
-    def setParameterVarargs(value: NestedParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+    inline def setParameterVarargs(value: NestedParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
   }
 }

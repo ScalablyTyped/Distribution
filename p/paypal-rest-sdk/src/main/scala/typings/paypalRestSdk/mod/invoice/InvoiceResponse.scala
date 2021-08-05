@@ -11,8 +11,7 @@ trait InvoiceResponse
      with Response
 object InvoiceResponse {
   
-  @scala.inline
-  def apply(httpStatusCode: Double): InvoiceResponse = {
+  inline def apply(httpStatusCode: Double): InvoiceResponse = {
     val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceResponse]
   }

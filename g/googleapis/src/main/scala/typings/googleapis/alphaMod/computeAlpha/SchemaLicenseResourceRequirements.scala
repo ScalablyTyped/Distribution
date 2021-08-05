@@ -20,25 +20,19 @@ trait SchemaLicenseResourceRequirements extends StObject {
 }
 object SchemaLicenseResourceRequirements {
   
-  @scala.inline
-  def apply(): SchemaLicenseResourceRequirements = {
+  inline def apply(): SchemaLicenseResourceRequirements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLicenseResourceRequirements]
   }
   
-  @scala.inline
-  implicit class SchemaLicenseResourceRequirementsMutableBuilder[Self <: SchemaLicenseResourceRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLicenseResourceRequirements](x: Self) {
     
-    @scala.inline
-    def setMinGuestCpuCount(value: Double): Self = StObject.set(x, "minGuestCpuCount", value.asInstanceOf[js.Any])
+    inline def setMinGuestCpuCount(value: Double): Self = StObject.set(x, "minGuestCpuCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinGuestCpuCountUndefined: Self = StObject.set(x, "minGuestCpuCount", js.undefined)
+    inline def setMinGuestCpuCountUndefined: Self = StObject.set(x, "minGuestCpuCount", js.undefined)
     
-    @scala.inline
-    def setMinMemoryMb(value: Double): Self = StObject.set(x, "minMemoryMb", value.asInstanceOf[js.Any])
+    inline def setMinMemoryMb(value: Double): Self = StObject.set(x, "minMemoryMb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinMemoryMbUndefined: Self = StObject.set(x, "minMemoryMb", js.undefined)
+    inline def setMinMemoryMbUndefined: Self = StObject.set(x, "minMemoryMb", js.undefined)
   }
 }

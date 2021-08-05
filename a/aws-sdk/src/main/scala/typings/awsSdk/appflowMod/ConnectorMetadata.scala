@@ -93,115 +93,79 @@ trait ConnectorMetadata extends StObject {
 }
 object ConnectorMetadata {
   
-  @scala.inline
-  def apply(): ConnectorMetadata = {
+  inline def apply(): ConnectorMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorMetadata]
   }
   
-  @scala.inline
-  implicit class ConnectorMetadataMutableBuilder[Self <: ConnectorMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorMetadata](x: Self) {
     
-    @scala.inline
-    def setAmplitude(value: AmplitudeMetadata): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
+    inline def setAmplitude(value: AmplitudeMetadata): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
+    inline def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
-    @scala.inline
-    def setDatadog(value: DatadogMetadata): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
+    inline def setDatadog(value: DatadogMetadata): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
+    inline def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
     
-    @scala.inline
-    def setDynatrace(value: DynatraceMetadata): Self = StObject.set(x, "Dynatrace", value.asInstanceOf[js.Any])
+    inline def setDynatrace(value: DynatraceMetadata): Self = StObject.set(x, "Dynatrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynatraceUndefined: Self = StObject.set(x, "Dynatrace", js.undefined)
+    inline def setDynatraceUndefined: Self = StObject.set(x, "Dynatrace", js.undefined)
     
-    @scala.inline
-    def setEventBridge(value: EventBridgeMetadata): Self = StObject.set(x, "EventBridge", value.asInstanceOf[js.Any])
+    inline def setEventBridge(value: EventBridgeMetadata): Self = StObject.set(x, "EventBridge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBridgeUndefined: Self = StObject.set(x, "EventBridge", js.undefined)
+    inline def setEventBridgeUndefined: Self = StObject.set(x, "EventBridge", js.undefined)
     
-    @scala.inline
-    def setGoogleAnalytics(value: GoogleAnalyticsMetadata): Self = StObject.set(x, "GoogleAnalytics", value.asInstanceOf[js.Any])
+    inline def setGoogleAnalytics(value: GoogleAnalyticsMetadata): Self = StObject.set(x, "GoogleAnalytics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
+    inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
     
-    @scala.inline
-    def setInforNexus(value: InforNexusMetadata): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
+    inline def setInforNexus(value: InforNexusMetadata): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
+    inline def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
     
-    @scala.inline
-    def setMarketo(value: MarketoMetadata): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
+    inline def setMarketo(value: MarketoMetadata): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
+    inline def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
     
-    @scala.inline
-    def setRedshift(value: RedshiftMetadata): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
+    inline def setRedshift(value: RedshiftMetadata): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
+    inline def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
     
-    @scala.inline
-    def setS3(value: S3Metadata): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3Metadata): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
-    @scala.inline
-    def setSalesforce(value: SalesforceMetadata): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
+    inline def setSalesforce(value: SalesforceMetadata): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
+    inline def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
     
-    @scala.inline
-    def setServiceNow(value: ServiceNowMetadata): Self = StObject.set(x, "ServiceNow", value.asInstanceOf[js.Any])
+    inline def setServiceNow(value: ServiceNowMetadata): Self = StObject.set(x, "ServiceNow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNowUndefined: Self = StObject.set(x, "ServiceNow", js.undefined)
+    inline def setServiceNowUndefined: Self = StObject.set(x, "ServiceNow", js.undefined)
     
-    @scala.inline
-    def setSingular(value: SingularMetadata): Self = StObject.set(x, "Singular", value.asInstanceOf[js.Any])
+    inline def setSingular(value: SingularMetadata): Self = StObject.set(x, "Singular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingularUndefined: Self = StObject.set(x, "Singular", js.undefined)
+    inline def setSingularUndefined: Self = StObject.set(x, "Singular", js.undefined)
     
-    @scala.inline
-    def setSlack(value: SlackMetadata): Self = StObject.set(x, "Slack", value.asInstanceOf[js.Any])
+    inline def setSlack(value: SlackMetadata): Self = StObject.set(x, "Slack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlackUndefined: Self = StObject.set(x, "Slack", js.undefined)
+    inline def setSlackUndefined: Self = StObject.set(x, "Slack", js.undefined)
     
-    @scala.inline
-    def setSnowflake(value: SnowflakeMetadata): Self = StObject.set(x, "Snowflake", value.asInstanceOf[js.Any])
+    inline def setSnowflake(value: SnowflakeMetadata): Self = StObject.set(x, "Snowflake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowflakeUndefined: Self = StObject.set(x, "Snowflake", js.undefined)
+    inline def setSnowflakeUndefined: Self = StObject.set(x, "Snowflake", js.undefined)
     
-    @scala.inline
-    def setTrendmicro(value: TrendmicroMetadata): Self = StObject.set(x, "Trendmicro", value.asInstanceOf[js.Any])
+    inline def setTrendmicro(value: TrendmicroMetadata): Self = StObject.set(x, "Trendmicro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrendmicroUndefined: Self = StObject.set(x, "Trendmicro", js.undefined)
+    inline def setTrendmicroUndefined: Self = StObject.set(x, "Trendmicro", js.undefined)
     
-    @scala.inline
-    def setVeeva(value: VeevaMetadata): Self = StObject.set(x, "Veeva", value.asInstanceOf[js.Any])
+    inline def setVeeva(value: VeevaMetadata): Self = StObject.set(x, "Veeva", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVeevaUndefined: Self = StObject.set(x, "Veeva", js.undefined)
+    inline def setVeevaUndefined: Self = StObject.set(x, "Veeva", js.undefined)
     
-    @scala.inline
-    def setZendesk(value: ZendeskMetadata): Self = StObject.set(x, "Zendesk", value.asInstanceOf[js.Any])
+    inline def setZendesk(value: ZendeskMetadata): Self = StObject.set(x, "Zendesk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZendeskUndefined: Self = StObject.set(x, "Zendesk", js.undefined)
+    inline def setZendeskUndefined: Self = StObject.set(x, "Zendesk", js.undefined)
   }
 }

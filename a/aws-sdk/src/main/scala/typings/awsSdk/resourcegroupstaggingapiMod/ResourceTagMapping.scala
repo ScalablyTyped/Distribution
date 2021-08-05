@@ -23,34 +23,25 @@ trait ResourceTagMapping extends StObject {
 }
 object ResourceTagMapping {
   
-  @scala.inline
-  def apply(): ResourceTagMapping = {
+  inline def apply(): ResourceTagMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceTagMapping]
   }
   
-  @scala.inline
-  implicit class ResourceTagMappingMutableBuilder[Self <: ResourceTagMapping] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceTagMapping](x: Self) {
     
-    @scala.inline
-    def setComplianceDetails(value: ComplianceDetails): Self = StObject.set(x, "ComplianceDetails", value.asInstanceOf[js.Any])
+    inline def setComplianceDetails(value: ComplianceDetails): Self = StObject.set(x, "ComplianceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceDetailsUndefined: Self = StObject.set(x, "ComplianceDetails", js.undefined)
+    inline def setComplianceDetailsUndefined: Self = StObject.set(x, "ComplianceDetails", js.undefined)
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

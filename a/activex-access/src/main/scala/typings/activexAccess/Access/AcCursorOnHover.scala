@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcCursorOnHover extends StObject
 object AcCursorOnHover {
   
-  @scala.inline
-  def acCursorOnHoverDefault: `0` = 0.asInstanceOf[`0`]
+  inline def acCursorOnHoverDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acCursorOnHoverHyperlinkHand: `1` = 1.asInstanceOf[`1`]
+  inline def acCursorOnHoverHyperlinkHand: `1` = 1.asInstanceOf[`1`]
 }

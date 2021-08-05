@@ -11,16 +11,13 @@ trait GradientMap extends StObject {
 }
 object GradientMap {
   
-  @scala.inline
-  def apply(gradientMap: IUniform): GradientMap = {
+  inline def apply(gradientMap: IUniform): GradientMap = {
     val __obj = js.Dynamic.literal(gradientMap = gradientMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientMap]
   }
   
-  @scala.inline
-  implicit class GradientMapMutableBuilder[Self <: GradientMap] (val x: Self) extends AnyVal {
+  extension [Self <: GradientMap](x: Self) {
     
-    @scala.inline
-    def setGradientMap(value: IUniform): Self = StObject.set(x, "gradientMap", value.asInstanceOf[js.Any])
+    inline def setGradientMap(value: IUniform): Self = StObject.set(x, "gradientMap", value.asInstanceOf[js.Any])
   }
 }

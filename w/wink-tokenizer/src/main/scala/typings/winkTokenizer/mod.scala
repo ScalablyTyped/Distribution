@@ -101,98 +101,68 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: Boolean): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: Boolean): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setEmoji(value: Boolean): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: Boolean): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
+      inline def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
       
-      @scala.inline
-      def setEmoticon(value: Boolean): Self = StObject.set(x, "emoticon", value.asInstanceOf[js.Any])
+      inline def setEmoticon(value: Boolean): Self = StObject.set(x, "emoticon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmoticonUndefined: Self = StObject.set(x, "emoticon", js.undefined)
+      inline def setEmoticonUndefined: Self = StObject.set(x, "emoticon", js.undefined)
       
-      @scala.inline
-      def setHashtag(value: Boolean): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: Boolean): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+      inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
       
-      @scala.inline
-      def setMention(value: Boolean): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
+      inline def setMention(value: Boolean): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMentionUndefined: Self = StObject.set(x, "mention", js.undefined)
+      inline def setMentionUndefined: Self = StObject.set(x, "mention", js.undefined)
       
-      @scala.inline
-      def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setOrdinal(value: Boolean): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+      inline def setOrdinal(value: Boolean): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+      inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
       
-      @scala.inline
-      def setPunctuation(value: Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
+      inline def setPunctuation(value: Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
+      inline def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
       
-      @scala.inline
-      def setQuoted_phrase(value: Boolean): Self = StObject.set(x, "quoted_phrase", value.asInstanceOf[js.Any])
+      inline def setQuoted_phrase(value: Boolean): Self = StObject.set(x, "quoted_phrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoted_phraseUndefined: Self = StObject.set(x, "quoted_phrase", js.undefined)
+      inline def setQuoted_phraseUndefined: Self = StObject.set(x, "quoted_phrase", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: Boolean): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Boolean): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWord(value: Boolean): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      inline def setWord(value: Boolean): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+      inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
     }
   }
   
@@ -216,50 +186,35 @@ object mod {
   trait Tag extends StObject
   object Tag {
     
-    @scala.inline
-    def alien: typings.winkTokenizer.winkTokenizerStrings.alien = "alien".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.alien]
+    inline def alien: typings.winkTokenizer.winkTokenizerStrings.alien = "alien".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.alien]
     
-    @scala.inline
-    def currency: typings.winkTokenizer.winkTokenizerStrings.currency = "currency".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.currency]
+    inline def currency: typings.winkTokenizer.winkTokenizerStrings.currency = "currency".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.currency]
     
-    @scala.inline
-    def email: typings.winkTokenizer.winkTokenizerStrings.email = "email".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.email]
+    inline def email: typings.winkTokenizer.winkTokenizerStrings.email = "email".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.email]
     
-    @scala.inline
-    def emoji: typings.winkTokenizer.winkTokenizerStrings.emoji = "emoji".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.emoji]
+    inline def emoji: typings.winkTokenizer.winkTokenizerStrings.emoji = "emoji".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.emoji]
     
-    @scala.inline
-    def emoticon: typings.winkTokenizer.winkTokenizerStrings.emoticon = "emoticon".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.emoticon]
+    inline def emoticon: typings.winkTokenizer.winkTokenizerStrings.emoticon = "emoticon".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.emoticon]
     
-    @scala.inline
-    def hashtag: typings.winkTokenizer.winkTokenizerStrings.hashtag = "hashtag".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.hashtag]
+    inline def hashtag: typings.winkTokenizer.winkTokenizerStrings.hashtag = "hashtag".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.hashtag]
     
-    @scala.inline
-    def mention: typings.winkTokenizer.winkTokenizerStrings.mention = "mention".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.mention]
+    inline def mention: typings.winkTokenizer.winkTokenizerStrings.mention = "mention".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.mention]
     
-    @scala.inline
-    def number: typings.winkTokenizer.winkTokenizerStrings.number = "number".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.number]
+    inline def number: typings.winkTokenizer.winkTokenizerStrings.number = "number".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.number]
     
-    @scala.inline
-    def ordinal: typings.winkTokenizer.winkTokenizerStrings.ordinal = "ordinal".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.ordinal]
+    inline def ordinal: typings.winkTokenizer.winkTokenizerStrings.ordinal = "ordinal".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.ordinal]
     
-    @scala.inline
-    def punctuation: typings.winkTokenizer.winkTokenizerStrings.punctuation = "punctuation".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.punctuation]
+    inline def punctuation: typings.winkTokenizer.winkTokenizerStrings.punctuation = "punctuation".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.punctuation]
     
-    @scala.inline
-    def quoted_phrase: typings.winkTokenizer.winkTokenizerStrings.quoted_phrase = "quoted_phrase".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.quoted_phrase]
+    inline def quoted_phrase: typings.winkTokenizer.winkTokenizerStrings.quoted_phrase = "quoted_phrase".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.quoted_phrase]
     
-    @scala.inline
-    def symbol: typings.winkTokenizer.winkTokenizerStrings.symbol = "symbol".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.symbol]
+    inline def symbol: typings.winkTokenizer.winkTokenizerStrings.symbol = "symbol".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.symbol]
     
-    @scala.inline
-    def time: typings.winkTokenizer.winkTokenizerStrings.time = "time".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.time]
+    inline def time: typings.winkTokenizer.winkTokenizerStrings.time = "time".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.time]
     
-    @scala.inline
-    def url: typings.winkTokenizer.winkTokenizerStrings.url = "url".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.url]
+    inline def url: typings.winkTokenizer.winkTokenizerStrings.url = "url".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.url]
     
-    @scala.inline
-    def word: typings.winkTokenizer.winkTokenizerStrings.word = "word".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.word]
+    inline def word: typings.winkTokenizer.winkTokenizerStrings.word = "word".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.word]
   }
   
   trait Token extends StObject {
@@ -270,20 +225,16 @@ object mod {
   }
   object Token {
     
-    @scala.inline
-    def apply(tag: Tag, value: String): Token = {
+    inline def apply(tag: Tag, value: String): Token = {
       val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

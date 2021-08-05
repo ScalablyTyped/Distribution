@@ -16,37 +16,27 @@ trait WebExtensionManifestTelemetryPublicKeyKey extends StObject {
 }
 object WebExtensionManifestTelemetryPublicKeyKey {
   
-  @scala.inline
-  def apply(): WebExtensionManifestTelemetryPublicKeyKey = {
+  inline def apply(): WebExtensionManifestTelemetryPublicKeyKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionManifestTelemetryPublicKeyKey]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestTelemetryPublicKeyKeyMutableBuilder[Self <: WebExtensionManifestTelemetryPublicKeyKey] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestTelemetryPublicKeyKey](x: Self) {
     
-    @scala.inline
-    def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
+    inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrvUndefined: Self = StObject.set(x, "crv", js.undefined)
+    inline def setCrvUndefined: Self = StObject.set(x, "crv", js.undefined)
     
-    @scala.inline
-    def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+    inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
+    inline def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
     
-    @scala.inline
-    def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

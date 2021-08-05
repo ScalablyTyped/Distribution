@@ -11,16 +11,13 @@ trait TypeofDropTarget extends StObject {
 }
 object TypeofDropTarget {
   
-  @scala.inline
-  def apply(destroyGroup: String => Unit): TypeofDropTarget = {
+  inline def apply(destroyGroup: String => Unit): TypeofDropTarget = {
     val __obj = js.Dynamic.literal(destroyGroup = js.Any.fromFunction1(destroyGroup))
     __obj.asInstanceOf[TypeofDropTarget]
   }
   
-  @scala.inline
-  implicit class TypeofDropTargetMutableBuilder[Self <: TypeofDropTarget] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDropTarget](x: Self) {
     
-    @scala.inline
-    def setDestroyGroup(value: String => Unit): Self = StObject.set(x, "destroyGroup", js.Any.fromFunction1(value))
+    inline def setDestroyGroup(value: String => Unit): Self = StObject.set(x, "destroyGroup", js.Any.fromFunction1(value))
   }
 }

@@ -19,22 +19,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CircleMarkerProps {
   
-  @scala.inline
-  def apply(center: LatLngExpression): CircleMarkerProps = {
+  inline def apply(center: LatLngExpression): CircleMarkerProps = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleMarkerProps]
   }
   
-  @scala.inline
-  implicit class CircleMarkerPropsMutableBuilder[Self <: CircleMarkerProps] (val x: Self) extends AnyVal {
+  extension [Self <: CircleMarkerProps](x: Self) {
     
-    @scala.inline
-    def setCenter(value: LatLngExpression): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: LatLngExpression): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

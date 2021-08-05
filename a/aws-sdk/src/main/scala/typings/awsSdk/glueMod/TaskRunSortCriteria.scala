@@ -18,19 +18,15 @@ trait TaskRunSortCriteria extends StObject {
 }
 object TaskRunSortCriteria {
   
-  @scala.inline
-  def apply(Column: TaskRunSortColumnType, SortDirection: SortDirectionType): TaskRunSortCriteria = {
+  inline def apply(Column: TaskRunSortColumnType, SortDirection: SortDirectionType): TaskRunSortCriteria = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], SortDirection = SortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskRunSortCriteria]
   }
   
-  @scala.inline
-  implicit class TaskRunSortCriteriaMutableBuilder[Self <: TaskRunSortCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRunSortCriteria](x: Self) {
     
-    @scala.inline
-    def setColumn(value: TaskRunSortColumnType): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: TaskRunSortColumnType): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "SortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "SortDirection", value.asInstanceOf[js.Any])
   }
 }

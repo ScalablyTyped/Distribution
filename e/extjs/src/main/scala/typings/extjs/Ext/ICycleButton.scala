@@ -51,73 +51,51 @@ trait ICycleButton
 }
 object ICycleButton {
   
-  @scala.inline
-  def apply(): ICycleButton = {
+  inline def apply(): ICycleButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICycleButton]
   }
   
-  @scala.inline
-  implicit class ICycleButtonMutableBuilder[Self <: ICycleButton] (val x: Self) extends AnyVal {
+  extension [Self <: ICycleButton](x: Self) {
     
-    @scala.inline
-    def setChangeHandler(value: js.Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
+    inline def setChangeHandler(value: js.Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
+    inline def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
     
-    @scala.inline
-    def setForceGlyph(value: js.Any): Self = StObject.set(x, "forceGlyph", value.asInstanceOf[js.Any])
+    inline def setForceGlyph(value: js.Any): Self = StObject.set(x, "forceGlyph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceGlyphUndefined: Self = StObject.set(x, "forceGlyph", js.undefined)
+    inline def setForceGlyphUndefined: Self = StObject.set(x, "forceGlyph", js.undefined)
     
-    @scala.inline
-    def setForceIcon(value: java.lang.String): Self = StObject.set(x, "forceIcon", value.asInstanceOf[js.Any])
+    inline def setForceIcon(value: java.lang.String): Self = StObject.set(x, "forceIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceIconUndefined: Self = StObject.set(x, "forceIcon", js.undefined)
+    inline def setForceIconUndefined: Self = StObject.set(x, "forceIcon", js.undefined)
     
-    @scala.inline
-    def setGetActiveItem(value: () => ICheckItem): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
+    inline def setGetActiveItem(value: () => ICheckItem): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
+    inline def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
     
-    @scala.inline
-    def setItems(value: Array): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Array): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setMenu(value: IMenu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: IMenu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    @scala.inline
-    def setPrependText(value: java.lang.String): Self = StObject.set(x, "prependText", value.asInstanceOf[js.Any])
+    inline def setPrependText(value: java.lang.String): Self = StObject.set(x, "prependText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrependTextUndefined: Self = StObject.set(x, "prependText", js.undefined)
+    inline def setPrependTextUndefined: Self = StObject.set(x, "prependText", js.undefined)
     
-    @scala.inline
-    def setSetActiveItem(value: (/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction2(value))
+    inline def setSetActiveItem(value: (/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
+    inline def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
     
-    @scala.inline
-    def setShowText(value: Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
+    inline def setShowText(value: Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
+    inline def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
     
-    @scala.inline
-    def setToggleSelected(value: () => Unit): Self = StObject.set(x, "toggleSelected", js.Any.fromFunction0(value))
+    inline def setToggleSelected(value: () => Unit): Self = StObject.set(x, "toggleSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleSelectedUndefined: Self = StObject.set(x, "toggleSelected", js.undefined)
+    inline def setToggleSelectedUndefined: Self = StObject.set(x, "toggleSelected", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object integerGetBitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(int32: Double, position: Double): Bit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Bit]
+  inline def default(int32: Double, position: Double): Bit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Bit]
 }

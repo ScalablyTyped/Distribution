@@ -13,6 +13,5 @@ class CertIDList ()
   extends typings.xadesjs.xmlMod.CertIDList
 object CertIDList {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CertIDList] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertIDList").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertIDList]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CertIDList] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertIDList").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertIDList]]
 }

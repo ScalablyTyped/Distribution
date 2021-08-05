@@ -20,25 +20,19 @@ trait ChecksSetSuitesPreferencesRequestOptions extends StObject {
 }
 object ChecksSetSuitesPreferencesRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ChecksSetSuitesPreferencesRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ChecksSetSuitesPreferencesRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/check-suites/preferences")
     __obj.asInstanceOf[ChecksSetSuitesPreferencesRequestOptions]
   }
   
-  @scala.inline
-  implicit class ChecksSetSuitesPreferencesRequestOptionsMutableBuilder[Self <: ChecksSetSuitesPreferencesRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksSetSuitesPreferencesRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashpreferences`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashpreferences`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

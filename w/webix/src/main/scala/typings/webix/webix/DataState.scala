@@ -12,19 +12,15 @@ trait DataState extends StObject {
 }
 object DataState {
   
-  @scala.inline
-  def apply(getState: () => js.Any, setState: js.Any => Unit): DataState = {
+  inline def apply(getState: () => js.Any, setState: js.Any => Unit): DataState = {
     val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), setState = js.Any.fromFunction1(setState))
     __obj.asInstanceOf[DataState]
   }
   
-  @scala.inline
-  implicit class DataStateMutableBuilder[Self <: DataState] (val x: Self) extends AnyVal {
+  extension [Self <: DataState](x: Self) {
     
-    @scala.inline
-    def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetState(value: js.Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+    inline def setSetState(value: js.Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
   }
 }

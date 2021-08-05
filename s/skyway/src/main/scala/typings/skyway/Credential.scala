@@ -14,31 +14,23 @@ trait Credential extends StObject {
 }
 object Credential {
   
-  @scala.inline
-  def apply(): Credential = {
+  inline def apply(): Credential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Credential]
   }
   
-  @scala.inline
-  implicit class CredentialMutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
+  extension [Self <: Credential](x: Self) {
     
-    @scala.inline
-    def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+    inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
+    inline def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait ConfigIPlayerConfig extends StObject {
 }
 object ConfigIPlayerConfig {
   
-  @scala.inline
-  def apply(config: IPlayerConfig): ConfigIPlayerConfig = {
+  inline def apply(config: IPlayerConfig): ConfigIPlayerConfig = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigIPlayerConfig]
   }
   
-  @scala.inline
-  implicit class ConfigIPlayerConfigMutableBuilder[Self <: ConfigIPlayerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigIPlayerConfig](x: Self) {
     
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }
 }

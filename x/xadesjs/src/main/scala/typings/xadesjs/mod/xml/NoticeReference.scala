@@ -13,6 +13,5 @@ class NoticeReference ()
   extends typings.xadesjs.xmlMod.NoticeReference
 object NoticeReference {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.NoticeReference] = ^.asInstanceOf[js.Dynamic].selectDynamic("NoticeReference").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.NoticeReference]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.NoticeReference] = ^.asInstanceOf[js.Dynamic].selectDynamic("NoticeReference").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.NoticeReference]]
 }

@@ -36,21 +36,21 @@ object observablemapMod {
     def this(initialData: IObservableMapInitialValues[K, V], enhancer: Unit, name: String) = this()
     def this(initialData: IObservableMapInitialValues[K, V], enhancer: IEnhancer[V], name: String) = this()
     
-    var _addValue: js.Any = js.native
+    /* private */ var _addValue: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var _has: js.Any = js.native
+    /* private */ var _has: js.Any = js.native
     
-    var _hasMap: js.Any = js.native
+    /* private */ var _hasMap: js.Any = js.native
     
-    var _keysAtom: js.Any = js.native
+    /* private */ var _keysAtom: js.Any = js.native
     
-    var _updateHasMapEntry: js.Any = js.native
+    /* private */ var _updateHasMapEntry: js.Any = js.native
     
-    var _updateValue: js.Any = js.native
+    /* private */ var _updateValue: js.Any = js.native
     
-    var dehanceValue: js.Any = js.native
+    /* private */ var dehanceValue: js.Any = js.native
     
     var dehancer: js.Any = js.native
     
@@ -106,8 +106,7 @@ object observablemapMod {
     var toStringTag_ObservableMap: typings.mobx.mobxStrings.Map = js.native
   }
   
-  @scala.inline
-  def isObservableMap(thing: js.Any): /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableMap")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ Boolean]
+  inline def isObservableMap(thing: js.Any): /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableMap")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ Boolean]
   
   type IKeyValueMap[V] = StringDictionary[V]
   
@@ -119,24 +118,21 @@ object observablemapMod {
   trait IMapDidChange[K, V] extends StObject
   object IMapDidChange {
     
-    @scala.inline
-    def Name[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], oldValue: V): typings.mobx.anon.Name[K, V] = {
+    inline def Name[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], oldValue: V): typings.mobx.anon.Name[K, V] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[typings.mobx.anon.Name[K, V]]
     }
     
-    @scala.inline
-    def NewValue[K, V](name: K, newValue: V, `object`: ObservableMap[K, V]): typings.mobx.anon.NewValue[K, V] = {
+    inline def NewValue[K, V](name: K, newValue: V, `object`: ObservableMap[K, V]): typings.mobx.anon.NewValue[K, V] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add")
       __obj.asInstanceOf[typings.mobx.anon.NewValue[K, V]]
     }
     
-    @scala.inline
-    def Object[K, V](name: K, `object`: ObservableMap[K, V], oldValue: V): typings.mobx.anon.Object[K, V] = {
+    inline def Object[K, V](name: K, `object`: ObservableMap[K, V], oldValue: V): typings.mobx.anon.Object[K, V] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("delete")
@@ -160,31 +156,24 @@ object observablemapMod {
   }
   object IMapWillChange {
     
-    @scala.inline
-    def apply[K, V](name: K, `object`: ObservableMap[K, V], `type`: update | add | delete): IMapWillChange[K, V] = {
+    inline def apply[K, V](name: K, `object`: ObservableMap[K, V], `type`: update | add | delete): IMapWillChange[K, V] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMapWillChange[K, V]]
     }
     
-    @scala.inline
-    implicit class IMapWillChangeMutableBuilder[Self <: IMapWillChange[?, ?], K, V] (val x: Self & (IMapWillChange[K, V])) extends AnyVal {
+    extension [Self <: IMapWillChange[?, ?], K, V](x: Self & (IMapWillChange[K, V])) {
       
-      @scala.inline
-      def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewValue(value: V): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: V): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      @scala.inline
-      def setObject(value: ObservableMap[K, V]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: ObservableMap[K, V]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: update | add | delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: update | add | delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

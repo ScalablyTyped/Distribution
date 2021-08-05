@@ -38,40 +38,29 @@ trait SchemaParagraph extends StObject {
 }
 object SchemaParagraph {
   
-  @scala.inline
-  def apply(): SchemaParagraph = {
+  inline def apply(): SchemaParagraph = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParagraph]
   }
   
-  @scala.inline
-  implicit class SchemaParagraphMutableBuilder[Self <: SchemaParagraph] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParagraph](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setProperty(value: SchemaTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: SchemaTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setWords(value: js.Array[SchemaWord]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[SchemaWord]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: SchemaWord*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: SchemaWord*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

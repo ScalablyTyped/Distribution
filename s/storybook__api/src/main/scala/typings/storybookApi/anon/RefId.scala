@@ -12,8 +12,7 @@ trait RefId extends StObject {
 }
 object RefId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     refId: String,
     storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
   ): RefId = {
@@ -21,14 +20,11 @@ object RefId {
     __obj.asInstanceOf[RefId]
   }
   
-  @scala.inline
-  implicit class RefIdMutableBuilder[Self <: RefId] (val x: Self) extends AnyVal {
+  extension [Self <: RefId](x: Self) {
     
-    @scala.inline
-    def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+    inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryId(
+    inline def setStoryId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
     ): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
   }

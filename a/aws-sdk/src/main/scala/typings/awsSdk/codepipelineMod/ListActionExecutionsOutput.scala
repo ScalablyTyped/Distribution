@@ -18,28 +18,21 @@ trait ListActionExecutionsOutput extends StObject {
 }
 object ListActionExecutionsOutput {
   
-  @scala.inline
-  def apply(): ListActionExecutionsOutput = {
+  inline def apply(): ListActionExecutionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListActionExecutionsOutput]
   }
   
-  @scala.inline
-  implicit class ListActionExecutionsOutputMutableBuilder[Self <: ListActionExecutionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListActionExecutionsOutput](x: Self) {
     
-    @scala.inline
-    def setActionExecutionDetails(value: ActionExecutionDetailList): Self = StObject.set(x, "actionExecutionDetails", value.asInstanceOf[js.Any])
+    inline def setActionExecutionDetails(value: ActionExecutionDetailList): Self = StObject.set(x, "actionExecutionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionExecutionDetailsUndefined: Self = StObject.set(x, "actionExecutionDetails", js.undefined)
+    inline def setActionExecutionDetailsUndefined: Self = StObject.set(x, "actionExecutionDetails", js.undefined)
     
-    @scala.inline
-    def setActionExecutionDetailsVarargs(value: ActionExecutionDetail*): Self = StObject.set(x, "actionExecutionDetails", js.Array(value :_*))
+    inline def setActionExecutionDetailsVarargs(value: ActionExecutionDetail*): Self = StObject.set(x, "actionExecutionDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

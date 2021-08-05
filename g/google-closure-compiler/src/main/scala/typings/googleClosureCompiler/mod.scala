@@ -28,20 +28,17 @@ object mod {
     @JSImport("google-closure-compiler", "compiler.COMPILER_PATH")
     @js.native
     def COMPILER_PATH: String = js.native
-    @scala.inline
-    def COMPILER_PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPILER_PATH")(x.asInstanceOf[js.Any])
+    inline def COMPILER_PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPILER_PATH")(x.asInstanceOf[js.Any])
     
     @JSImport("google-closure-compiler", "compiler.CONTRIB_PATH")
     @js.native
     def CONTRIB_PATH: String = js.native
-    @scala.inline
-    def CONTRIB_PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTRIB_PATH")(x.asInstanceOf[js.Any])
+    inline def CONTRIB_PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTRIB_PATH")(x.asInstanceOf[js.Any])
     
     @JSImport("google-closure-compiler", "compiler.JAR_PATH")
     @js.native
     def JAR_PATH: String = js.native
-    @scala.inline
-    def JAR_PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JAR_PATH")(x.asInstanceOf[js.Any])
+    inline def JAR_PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JAR_PATH")(x.asInstanceOf[js.Any])
   }
   
   type CompileOption = String | Boolean
@@ -75,26 +72,20 @@ object mod {
   }
   object JSONStreamFile {
     
-    @scala.inline
-    def apply(path: String, src: String): JSONStreamFile = {
+    inline def apply(path: String, src: String): JSONStreamFile = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONStreamFile]
     }
     
-    @scala.inline
-    implicit class JSONStreamFileMutableBuilder[Self <: JSONStreamFile] (val x: Self) extends AnyVal {
+    extension [Self <: JSONStreamFile](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcmap(value: String): Self = StObject.set(x, "srcmap", value.asInstanceOf[js.Any])
+      inline def setSrcmap(value: String): Self = StObject.set(x, "srcmap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcmapUndefined: Self = StObject.set(x, "srcmap", js.undefined)
+      inline def setSrcmapUndefined: Self = StObject.set(x, "srcmap", js.undefined)
     }
   }
 }

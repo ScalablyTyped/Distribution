@@ -22,37 +22,27 @@ trait PartialPaginateArgsRespon extends StObject {
 }
 object PartialPaginateArgsRespon {
   
-  @scala.inline
-  def apply(): PartialPaginateArgsRespon = {
+  inline def apply(): PartialPaginateArgsRespon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPaginateArgsRespon]
   }
   
-  @scala.inline
-  implicit class PartialPaginateArgsResponMutableBuilder[Self <: PartialPaginateArgsRespon] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPaginateArgsRespon](x: Self) {
     
-    @scala.inline
-    def setGuard(value: /* res */ APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
+    inline def setGuard(value: /* res */ APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGuardUndefined: Self = StObject.set(x, "guard", js.undefined)
+    inline def setGuardUndefined: Self = StObject.set(x, "guard", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setReqgen(value: () => js.Promise[Req]): Self = StObject.set(x, "reqgen", js.Any.fromFunction0(value))
+    inline def setReqgen(value: () => js.Promise[Req]): Self = StObject.set(x, "reqgen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReqgenUndefined: Self = StObject.set(x, "reqgen", js.undefined)
+    inline def setReqgenUndefined: Self = StObject.set(x, "reqgen", js.undefined)
     
-    @scala.inline
-    def setState(value: PartialPaginatorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PartialPaginatorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

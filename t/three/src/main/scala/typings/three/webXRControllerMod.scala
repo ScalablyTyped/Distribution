@@ -41,34 +41,24 @@ object webXRControllerMod {
   trait XRControllerEventType extends StObject
   object XRControllerEventType {
     
-    @scala.inline
-    def connected: typings.three.threeStrings.connected = "connected".asInstanceOf[typings.three.threeStrings.connected]
+    inline def connected: typings.three.threeStrings.connected = "connected".asInstanceOf[typings.three.threeStrings.connected]
     
-    @scala.inline
-    def disconnected: typings.three.threeStrings.disconnected = "disconnected".asInstanceOf[typings.three.threeStrings.disconnected]
+    inline def disconnected: typings.three.threeStrings.disconnected = "disconnected".asInstanceOf[typings.three.threeStrings.disconnected]
     
-    @scala.inline
-    def end: typings.three.threeStrings.end = "end".asInstanceOf[typings.three.threeStrings.end]
+    inline def end: typings.three.threeStrings.end = "end".asInstanceOf[typings.three.threeStrings.end]
     
-    @scala.inline
-    def inputsourceschange: typings.three.threeStrings.inputsourceschange = "inputsourceschange".asInstanceOf[typings.three.threeStrings.inputsourceschange]
+    inline def inputsourceschange: typings.three.threeStrings.inputsourceschange = "inputsourceschange".asInstanceOf[typings.three.threeStrings.inputsourceschange]
     
-    @scala.inline
-    def select: typings.three.threeStrings.select = "select".asInstanceOf[typings.three.threeStrings.select]
+    inline def select: typings.three.threeStrings.select = "select".asInstanceOf[typings.three.threeStrings.select]
     
-    @scala.inline
-    def selectend: typings.three.threeStrings.selectend = "selectend".asInstanceOf[typings.three.threeStrings.selectend]
+    inline def selectend: typings.three.threeStrings.selectend = "selectend".asInstanceOf[typings.three.threeStrings.selectend]
     
-    @scala.inline
-    def selectstart: typings.three.threeStrings.selectstart = "selectstart".asInstanceOf[typings.three.threeStrings.selectstart]
+    inline def selectstart: typings.three.threeStrings.selectstart = "selectstart".asInstanceOf[typings.three.threeStrings.selectstart]
     
-    @scala.inline
-    def squeeze: typings.three.threeStrings.squeeze = "squeeze".asInstanceOf[typings.three.threeStrings.squeeze]
+    inline def squeeze: typings.three.threeStrings.squeeze = "squeeze".asInstanceOf[typings.three.threeStrings.squeeze]
     
-    @scala.inline
-    def squeezeend: typings.three.threeStrings.squeezeend = "squeezeend".asInstanceOf[typings.three.threeStrings.squeezeend]
+    inline def squeezeend: typings.three.threeStrings.squeezeend = "squeezeend".asInstanceOf[typings.three.threeStrings.squeezeend]
     
-    @scala.inline
-    def squeezestart: typings.three.threeStrings.squeezestart = "squeezestart".asInstanceOf[typings.three.threeStrings.squeezestart]
+    inline def squeezestart: typings.three.threeStrings.squeezestart = "squeezestart".asInstanceOf[typings.three.threeStrings.squeezestart]
   }
 }

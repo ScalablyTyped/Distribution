@@ -13,19 +13,15 @@ trait ChannelRetentionSettings extends StObject {
 }
 object ChannelRetentionSettings {
   
-  @scala.inline
-  def apply(): ChannelRetentionSettings = {
+  inline def apply(): ChannelRetentionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelRetentionSettings]
   }
   
-  @scala.inline
-  implicit class ChannelRetentionSettingsMutableBuilder[Self <: ChannelRetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelRetentionSettings](x: Self) {
     
-    @scala.inline
-    def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
+    inline def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
+    inline def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
   }
 }

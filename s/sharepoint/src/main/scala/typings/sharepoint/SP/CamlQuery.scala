@@ -34,8 +34,7 @@ trait CamlQuery
 }
 object CamlQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -54,31 +53,22 @@ object CamlQuery {
     __obj.asInstanceOf[CamlQuery]
   }
   
-  @scala.inline
-  implicit class CamlQueryMutableBuilder[Self <: CamlQuery] (val x: Self) extends AnyVal {
+  extension [Self <: CamlQuery](x: Self) {
     
-    @scala.inline
-    def setGet_datesInUtc(value: () => Boolean): Self = StObject.set(x, "get_datesInUtc", js.Any.fromFunction0(value))
+    inline def setGet_datesInUtc(value: () => Boolean): Self = StObject.set(x, "get_datesInUtc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_folderServerRelativeUrl(value: () => String): Self = StObject.set(x, "get_folderServerRelativeUrl", js.Any.fromFunction0(value))
+    inline def setGet_folderServerRelativeUrl(value: () => String): Self = StObject.set(x, "get_folderServerRelativeUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_listItemCollectionPosition(value: () => ListItemCollectionPosition): Self = StObject.set(x, "get_listItemCollectionPosition", js.Any.fromFunction0(value))
+    inline def setGet_listItemCollectionPosition(value: () => ListItemCollectionPosition): Self = StObject.set(x, "get_listItemCollectionPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_viewXml(value: () => String): Self = StObject.set(x, "get_viewXml", js.Any.fromFunction0(value))
+    inline def setGet_viewXml(value: () => String): Self = StObject.set(x, "get_viewXml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_datesInUtc(value: Boolean => Unit): Self = StObject.set(x, "set_datesInUtc", js.Any.fromFunction1(value))
+    inline def setSet_datesInUtc(value: Boolean => Unit): Self = StObject.set(x, "set_datesInUtc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_folderServerRelativeUrl(value: String => Unit): Self = StObject.set(x, "set_folderServerRelativeUrl", js.Any.fromFunction1(value))
+    inline def setSet_folderServerRelativeUrl(value: String => Unit): Self = StObject.set(x, "set_folderServerRelativeUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_listItemCollectionPosition(value: ListItemCollectionPosition => Unit): Self = StObject.set(x, "set_listItemCollectionPosition", js.Any.fromFunction1(value))
+    inline def setSet_listItemCollectionPosition(value: ListItemCollectionPosition => Unit): Self = StObject.set(x, "set_listItemCollectionPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_viewXml(value: String => Unit): Self = StObject.set(x, "set_viewXml", js.Any.fromFunction1(value))
+    inline def setSet_viewXml(value: String => Unit): Self = StObject.set(x, "set_viewXml", js.Any.fromFunction1(value))
   }
 }

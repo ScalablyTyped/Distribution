@@ -59,58 +59,41 @@ trait HttpRouteAction extends StObject {
 }
 object HttpRouteAction {
   
-  @scala.inline
-  def apply(): HttpRouteAction = {
+  inline def apply(): HttpRouteAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpRouteAction]
   }
   
-  @scala.inline
-  implicit class HttpRouteActionMutableBuilder[Self <: HttpRouteAction] (val x: Self) extends AnyVal {
+  extension [Self <: HttpRouteAction](x: Self) {
     
-    @scala.inline
-    def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "corsPolicy", value.asInstanceOf[js.Any])
+    inline def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "corsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsPolicyUndefined: Self = StObject.set(x, "corsPolicy", js.undefined)
+    inline def setCorsPolicyUndefined: Self = StObject.set(x, "corsPolicy", js.undefined)
     
-    @scala.inline
-    def setFaultInjectionPolicy(value: HttpFaultInjection): Self = StObject.set(x, "faultInjectionPolicy", value.asInstanceOf[js.Any])
+    inline def setFaultInjectionPolicy(value: HttpFaultInjection): Self = StObject.set(x, "faultInjectionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultInjectionPolicyUndefined: Self = StObject.set(x, "faultInjectionPolicy", js.undefined)
+    inline def setFaultInjectionPolicyUndefined: Self = StObject.set(x, "faultInjectionPolicy", js.undefined)
     
-    @scala.inline
-    def setRequestMirrorPolicy(value: RequestMirrorPolicy): Self = StObject.set(x, "requestMirrorPolicy", value.asInstanceOf[js.Any])
+    inline def setRequestMirrorPolicy(value: RequestMirrorPolicy): Self = StObject.set(x, "requestMirrorPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMirrorPolicyUndefined: Self = StObject.set(x, "requestMirrorPolicy", js.undefined)
+    inline def setRequestMirrorPolicyUndefined: Self = StObject.set(x, "requestMirrorPolicy", js.undefined)
     
-    @scala.inline
-    def setRetryPolicy(value: HttpRetryPolicy): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
+    inline def setRetryPolicy(value: HttpRetryPolicy): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
+    inline def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Duration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Duration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUrlRewrite(value: UrlRewrite): Self = StObject.set(x, "urlRewrite", value.asInstanceOf[js.Any])
+    inline def setUrlRewrite(value: UrlRewrite): Self = StObject.set(x, "urlRewrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlRewriteUndefined: Self = StObject.set(x, "urlRewrite", js.undefined)
+    inline def setUrlRewriteUndefined: Self = StObject.set(x, "urlRewrite", js.undefined)
     
-    @scala.inline
-    def setWeightedBackendServices(value: js.Array[WeightedBackendService]): Self = StObject.set(x, "weightedBackendServices", value.asInstanceOf[js.Any])
+    inline def setWeightedBackendServices(value: js.Array[WeightedBackendService]): Self = StObject.set(x, "weightedBackendServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedBackendServicesUndefined: Self = StObject.set(x, "weightedBackendServices", js.undefined)
+    inline def setWeightedBackendServicesUndefined: Self = StObject.set(x, "weightedBackendServices", js.undefined)
     
-    @scala.inline
-    def setWeightedBackendServicesVarargs(value: WeightedBackendService*): Self = StObject.set(x, "weightedBackendServices", js.Array(value :_*))
+    inline def setWeightedBackendServicesVarargs(value: WeightedBackendService*): Self = StObject.set(x, "weightedBackendServices", js.Array(value :_*))
   }
 }

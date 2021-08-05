@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SheetView extends StObject
 object SheetView {
   
-  @scala.inline
-  def DialogSheetView(
+  inline def DialogSheetView(
     Application: Application,
     Creator: XlCreator,
     ExcelDotDialogSheetView_typekey: typings.activexExcel.Excel.DialogSheetView,
@@ -24,8 +23,7 @@ object SheetView {
     __obj.asInstanceOf[typings.activexExcel.Excel.DialogSheetView]
   }
   
-  @scala.inline
-  def WorksheetView(
+  inline def WorksheetView(
     Application: Application,
     Creator: XlCreator,
     DisplayFormulas: Boolean,

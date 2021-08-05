@@ -10,6 +10,5 @@ object path2AbsoluteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(pathString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def default(pathString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

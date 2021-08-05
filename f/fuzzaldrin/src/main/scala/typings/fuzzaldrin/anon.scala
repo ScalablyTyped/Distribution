@@ -14,23 +14,18 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply[K /* <: /* keyof T */ String */, T](key: K): Key[K, T] = {
+    inline def apply[K /* <: /* keyof T */ String */, T](key: K): Key[K, T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key[K, T]]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key[?, ?], K /* <: /* keyof T */ String */, T] (val x: Self & (Key[K, T])) extends AnyVal {
+    extension [Self <: Key[?, ?], K /* <: /* keyof T */ String */, T](x: Self & (Key[K, T])) {
       
-      @scala.inline
-      def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     }
   }
   
@@ -40,20 +35,16 @@ object anon {
   }
   object MaxResults {
     
-    @scala.inline
-    def apply(): MaxResults = {
+    inline def apply(): MaxResults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxResults]
     }
     
-    @scala.inline
-    implicit class MaxResultsMutableBuilder[Self <: MaxResults] (val x: Self) extends AnyVal {
+    extension [Self <: MaxResults](x: Self) {
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     }
   }
 }

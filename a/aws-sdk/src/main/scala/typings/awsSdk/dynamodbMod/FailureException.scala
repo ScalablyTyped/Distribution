@@ -18,25 +18,19 @@ trait FailureException extends StObject {
 }
 object FailureException {
   
-  @scala.inline
-  def apply(): FailureException = {
+  inline def apply(): FailureException = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailureException]
   }
   
-  @scala.inline
-  implicit class FailureExceptionMutableBuilder[Self <: FailureException] (val x: Self) extends AnyVal {
+  extension [Self <: FailureException](x: Self) {
     
-    @scala.inline
-    def setExceptionDescription(value: ExceptionDescription): Self = StObject.set(x, "ExceptionDescription", value.asInstanceOf[js.Any])
+    inline def setExceptionDescription(value: ExceptionDescription): Self = StObject.set(x, "ExceptionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionDescriptionUndefined: Self = StObject.set(x, "ExceptionDescription", js.undefined)
+    inline def setExceptionDescriptionUndefined: Self = StObject.set(x, "ExceptionDescription", js.undefined)
     
-    @scala.inline
-    def setExceptionName(value: ExceptionName): Self = StObject.set(x, "ExceptionName", value.asInstanceOf[js.Any])
+    inline def setExceptionName(value: ExceptionName): Self = StObject.set(x, "ExceptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionNameUndefined: Self = StObject.set(x, "ExceptionName", js.undefined)
+    inline def setExceptionNameUndefined: Self = StObject.set(x, "ExceptionName", js.undefined)
   }
 }

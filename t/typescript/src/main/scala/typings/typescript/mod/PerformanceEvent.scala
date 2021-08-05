@@ -14,19 +14,15 @@ trait PerformanceEvent extends StObject {
 }
 object PerformanceEvent {
   
-  @scala.inline
-  def apply(durationMs: Double, kind: UpdateGraph | CreatePackageJsonAutoImportProvider): PerformanceEvent = {
+  inline def apply(durationMs: Double, kind: UpdateGraph | CreatePackageJsonAutoImportProvider): PerformanceEvent = {
     val __obj = js.Dynamic.literal(durationMs = durationMs.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceEvent]
   }
   
-  @scala.inline
-  implicit class PerformanceEventMutableBuilder[Self <: PerformanceEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceEvent](x: Self) {
     
-    @scala.inline
-    def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
+    inline def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: UpdateGraph | CreatePackageJsonAutoImportProvider): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: UpdateGraph | CreatePackageJsonAutoImportProvider): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

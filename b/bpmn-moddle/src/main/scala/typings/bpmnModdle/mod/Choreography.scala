@@ -37,8 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Choreography {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
@@ -61,73 +60,50 @@ object Choreography {
     __obj.asInstanceOf[Choreography]
   }
   
-  @scala.inline
-  implicit class ChoreographyMutableBuilder[Self <: Choreography] (val x: Self) extends AnyVal {
+  extension [Self <: Choreography](x: Self) {
     
-    @scala.inline
-    def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
-    @scala.inline
-    def setChoreographyRef(value: js.Array[Choreography]): Self = StObject.set(x, "choreographyRef", value.asInstanceOf[js.Any])
+    inline def setChoreographyRef(value: js.Array[Choreography]): Self = StObject.set(x, "choreographyRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoreographyRefVarargs(value: Choreography*): Self = StObject.set(x, "choreographyRef", js.Array(value :_*))
+    inline def setChoreographyRefVarargs(value: Choreography*): Self = StObject.set(x, "choreographyRef", js.Array(value :_*))
     
-    @scala.inline
-    def setConversationAssociations(value: js.Array[ConversationAssociation]): Self = StObject.set(x, "conversationAssociations", value.asInstanceOf[js.Any])
+    inline def setConversationAssociations(value: js.Array[ConversationAssociation]): Self = StObject.set(x, "conversationAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationAssociationsVarargs(value: ConversationAssociation*): Self = StObject.set(x, "conversationAssociations", js.Array(value :_*))
+    inline def setConversationAssociationsVarargs(value: ConversationAssociation*): Self = StObject.set(x, "conversationAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setConversationLinks(value: js.Array[ConversationLink]): Self = StObject.set(x, "conversationLinks", value.asInstanceOf[js.Any])
+    inline def setConversationLinks(value: js.Array[ConversationLink]): Self = StObject.set(x, "conversationLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationLinksVarargs(value: ConversationLink*): Self = StObject.set(x, "conversationLinks", js.Array(value :_*))
+    inline def setConversationLinksVarargs(value: ConversationLink*): Self = StObject.set(x, "conversationLinks", js.Array(value :_*))
     
-    @scala.inline
-    def setConversations(value: js.Array[ConversationNode]): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
+    inline def setConversations(value: js.Array[ConversationNode]): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationsVarargs(value: ConversationNode*): Self = StObject.set(x, "conversations", js.Array(value :_*))
+    inline def setConversationsVarargs(value: ConversationNode*): Self = StObject.set(x, "conversations", js.Array(value :_*))
     
-    @scala.inline
-    def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
+    inline def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
+    inline def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
+    inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFlowAssociations(value: js.Array[MessageFlowAssociation]): Self = StObject.set(x, "messageFlowAssociations", value.asInstanceOf[js.Any])
+    inline def setMessageFlowAssociations(value: js.Array[MessageFlowAssociation]): Self = StObject.set(x, "messageFlowAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFlowAssociationsVarargs(value: MessageFlowAssociation*): Self = StObject.set(x, "messageFlowAssociations", js.Array(value :_*))
+    inline def setMessageFlowAssociationsVarargs(value: MessageFlowAssociation*): Self = StObject.set(x, "messageFlowAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setMessageFlows(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlows", value.asInstanceOf[js.Any])
+    inline def setMessageFlows(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFlowsVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlows", js.Array(value :_*))
+    inline def setMessageFlowsVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlows", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantAssociations(value: js.Array[ParticipantAssociation]): Self = StObject.set(x, "participantAssociations", value.asInstanceOf[js.Any])
+    inline def setParticipantAssociations(value: js.Array[ParticipantAssociation]): Self = StObject.set(x, "participantAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantAssociationsVarargs(value: ParticipantAssociation*): Self = StObject.set(x, "participantAssociations", js.Array(value :_*))
+    inline def setParticipantAssociationsVarargs(value: ParticipantAssociation*): Self = StObject.set(x, "participantAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setParticipants(value: js.Array[Participant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: js.Array[Participant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
   }
 }

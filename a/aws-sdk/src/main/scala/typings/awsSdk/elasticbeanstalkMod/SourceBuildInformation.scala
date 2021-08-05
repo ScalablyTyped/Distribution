@@ -23,22 +23,17 @@ trait SourceBuildInformation extends StObject {
 }
 object SourceBuildInformation {
   
-  @scala.inline
-  def apply(SourceLocation: SourceLocation, SourceRepository: SourceRepository, SourceType: SourceType): SourceBuildInformation = {
+  inline def apply(SourceLocation: SourceLocation, SourceRepository: SourceRepository, SourceType: SourceType): SourceBuildInformation = {
     val __obj = js.Dynamic.literal(SourceLocation = SourceLocation.asInstanceOf[js.Any], SourceRepository = SourceRepository.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceBuildInformation]
   }
   
-  @scala.inline
-  implicit class SourceBuildInformationMutableBuilder[Self <: SourceBuildInformation] (val x: Self) extends AnyVal {
+  extension [Self <: SourceBuildInformation](x: Self) {
     
-    @scala.inline
-    def setSourceLocation(value: SourceLocation): Self = StObject.set(x, "SourceLocation", value.asInstanceOf[js.Any])
+    inline def setSourceLocation(value: SourceLocation): Self = StObject.set(x, "SourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRepository(value: SourceRepository): Self = StObject.set(x, "SourceRepository", value.asInstanceOf[js.Any])
+    inline def setSourceRepository(value: SourceRepository): Self = StObject.set(x, "SourceRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
   }
 }

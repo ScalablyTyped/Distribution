@@ -41,28 +41,21 @@ trait SchemaMetadataFilter extends StObject {
 }
 object SchemaMetadataFilter {
   
-  @scala.inline
-  def apply(): SchemaMetadataFilter = {
+  inline def apply(): SchemaMetadataFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetadataFilter]
   }
   
-  @scala.inline
-  implicit class SchemaMetadataFilterMutableBuilder[Self <: SchemaMetadataFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetadataFilter](x: Self) {
     
-    @scala.inline
-    def setFilterLabels(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = StObject.set(x, "filterLabels", value.asInstanceOf[js.Any])
+    inline def setFilterLabels(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = StObject.set(x, "filterLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterLabelsUndefined: Self = StObject.set(x, "filterLabels", js.undefined)
+    inline def setFilterLabelsUndefined: Self = StObject.set(x, "filterLabels", js.undefined)
     
-    @scala.inline
-    def setFilterLabelsVarargs(value: SchemaMetadataFilterLabelMatch*): Self = StObject.set(x, "filterLabels", js.Array(value :_*))
+    inline def setFilterLabelsVarargs(value: SchemaMetadataFilterLabelMatch*): Self = StObject.set(x, "filterLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterMatchCriteria(value: String): Self = StObject.set(x, "filterMatchCriteria", value.asInstanceOf[js.Any])
+    inline def setFilterMatchCriteria(value: String): Self = StObject.set(x, "filterMatchCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterMatchCriteriaUndefined: Self = StObject.set(x, "filterMatchCriteria", js.undefined)
+    inline def setFilterMatchCriteriaUndefined: Self = StObject.set(x, "filterMatchCriteria", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ object mod {
   @JSImport("bytebuffer", "BIG_ENDIAN")
   @js.native
   def BIG_ENDIAN: Boolean = js.native
-  @scala.inline
-  def BIG_ENDIAN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIG_ENDIAN")(x.asInstanceOf[js.Any])
+  inline def BIG_ENDIAN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIG_ENDIAN")(x.asInstanceOf[js.Any])
   
   /**
     * Default initial capacity of 16.
@@ -51,8 +50,7 @@ object mod {
   @JSImport("bytebuffer", "DEFAULT_CAPACITY")
   @js.native
   def DEFAULT_CAPACITY: Double = js.native
-  @scala.inline
-  def DEFAULT_CAPACITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_CAPACITY")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_CAPACITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_CAPACITY")(x.asInstanceOf[js.Any])
   
   /**
     * Default endianess of false for big endian.
@@ -61,8 +59,7 @@ object mod {
   @JSImport("bytebuffer", "DEFAULT_ENDIAN")
   @js.native
   def DEFAULT_ENDIAN: Boolean = js.native
-  @scala.inline
-  def DEFAULT_ENDIAN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ENDIAN")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_ENDIAN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ENDIAN")(x.asInstanceOf[js.Any])
   
   /**
     * Default no assertions flag of false.
@@ -71,8 +68,7 @@ object mod {
   @JSImport("bytebuffer", "DEFAULT_NOASSERT")
   @js.native
   def DEFAULT_NOASSERT: Boolean = js.native
-  @scala.inline
-  def DEFAULT_NOASSERT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_NOASSERT")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_NOASSERT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_NOASSERT")(x.asInstanceOf[js.Any])
   
   /**
     * Little endian constant that can be used instead of its boolean value. Evaluates to true.
@@ -81,8 +77,7 @@ object mod {
   @JSImport("bytebuffer", "LITTLE_ENDIAN")
   @js.native
   def LITTLE_ENDIAN: Boolean = js.native
-  @scala.inline
-  def LITTLE_ENDIAN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LITTLE_ENDIAN")(x.asInstanceOf[js.Any])
+  inline def LITTLE_ENDIAN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LITTLE_ENDIAN")(x.asInstanceOf[js.Any])
   
   /**
     * Maximum number of bytes required to store a 32bit base 128 variable-length integer.
@@ -91,8 +86,7 @@ object mod {
   @JSImport("bytebuffer", "MAX_VARINT32_BYTES")
   @js.native
   def MAX_VARINT32_BYTES: Double = js.native
-  @scala.inline
-  def MAX_VARINT32_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VARINT32_BYTES")(x.asInstanceOf[js.Any])
+  inline def MAX_VARINT32_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VARINT32_BYTES")(x.asInstanceOf[js.Any])
   
   /**
     * Maximum number of bytes required to store a 64bit base 128 variable-length integer.
@@ -101,8 +95,7 @@ object mod {
   @JSImport("bytebuffer", "MAX_VARINT64_BYTES")
   @js.native
   def MAX_VARINT64_BYTES: Double = js.native
-  @scala.inline
-  def MAX_VARINT64_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VARINT64_BYTES")(x.asInstanceOf[js.Any])
+  inline def MAX_VARINT64_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VARINT64_BYTES")(x.asInstanceOf[js.Any])
   
   /**
     * Metrics representing number of bytes.Evaluates to 2.
@@ -111,8 +104,7 @@ object mod {
   @JSImport("bytebuffer", "METRICS_BYTES")
   @js.native
   def METRICS_BYTES: Double = js.native
-  @scala.inline
-  def METRICS_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METRICS_BYTES")(x.asInstanceOf[js.Any])
+  inline def METRICS_BYTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METRICS_BYTES")(x.asInstanceOf[js.Any])
   
   /**
     * Metrics representing number of UTF8 characters.Evaluates to 1.
@@ -121,8 +113,7 @@ object mod {
   @JSImport("bytebuffer", "METRICS_CHARS")
   @js.native
   def METRICS_CHARS: Double = js.native
-  @scala.inline
-  def METRICS_CHARS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METRICS_CHARS")(x.asInstanceOf[js.Any])
+  inline def METRICS_CHARS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METRICS_CHARS")(x.asInstanceOf[js.Any])
   
   /**
     * ByteBuffer version.
@@ -131,146 +122,117 @@ object mod {
   @JSImport("bytebuffer", "VERSION")
   @js.native
   def VERSION: String = js.native
-  @scala.inline
-  def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+  inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   
   /**
     * Allocates a new ByteBuffer backed by a buffer of the specified capacity.
     */
   /* static member */
-  @scala.inline
-  def allocate(): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[ByteBuffer]
-  @scala.inline
-  def allocate(capacity: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def allocate(capacity: Double, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def allocate(capacity: Double, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def allocate(capacity: Double, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def allocate(capacity: Unit, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def allocate(capacity: Unit, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def allocate(capacity: Unit, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def allocate(): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[ByteBuffer]
+  inline def allocate(capacity: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def allocate(capacity: Double, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def allocate(capacity: Double, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def allocate(capacity: Double, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def allocate(capacity: Unit, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def allocate(capacity: Unit, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def allocate(capacity: Unit, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a base64 encoded string to binary like window.atob does.
     */
   /* static member */
-  @scala.inline
-  def atob(b64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(b64.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def atob(b64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(b64.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Encodes a binary string to base64 like window.btoa does.
     */
   /* static member */
-  @scala.inline
-  def btoa(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def btoa(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Calculates the number of UTF8 bytes of a string. This is an alias of ByteBuffer#calculateUTF8Bytes.
     */
   /* static member */
-  @scala.inline
-  def calculateString(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateString")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateString(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateString")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the number of UTF8 bytes of a string.
     */
   /* static member */
-  @scala.inline
-  def calculateUTF8Bytes(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateUTF8Bytes")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateUTF8Bytes(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateUTF8Bytes")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the number of UTF8 characters of a string.JavaScript itself uses UTF- 16, so that a string's length property does not reflect its actual UTF8 size if it contains code points larger than 0xFFFF.
     */
   /* static member */
-  @scala.inline
-  def calculateUTF8Chars(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateUTF8Chars")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateUTF8Chars(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateUTF8Chars")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the actual number of bytes required to store a 32bit base 128 variable-length integer.
     */
   /* static member */
-  @scala.inline
-  def calculateVarint32(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint32")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateVarint32(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint32")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the actual number of bytes required to store a 64bit base 128 variable-length integer.
     */
   /* static member */
-  @scala.inline
-  def calculateVarint64(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def calculateVarint64(value: Long): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateVarint64(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateVarint64(value: Long): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Concatenates multiple ByteBuffers into one.
     */
   /* static member */
-  @scala.inline
-  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String]): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: String): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String]): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: String): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: String,
     litteEndian: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: String,
     litteEndian: Boolean,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: String,
     litteEndian: Unit,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Boolean,
     litteEndian: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Boolean,
     litteEndian: Boolean,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Boolean,
     litteEndian: Unit,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Unit,
     litteEndian: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Unit,
     litteEndian: Boolean,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def concat(
+  inline def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Unit,
     litteEndian: Unit,
@@ -281,73 +243,52 @@ object mod {
     * Decodes a base64 encoded string to a ByteBuffer.
     */
   /* static member */
-  @scala.inline
-  def fromBase64(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromBase64(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromBase64(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromBase64(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromBase64(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def fromBase64(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromBase64(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromBase64(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a binary encoded string, that is using only characters 0x00-0xFF as bytes, to a ByteBuffer.
     */
   /* static member */
-  @scala.inline
-  def fromBinary(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromBinary(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromBinary(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromBinary(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromBinary(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def fromBinary(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromBinary(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromBinary(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a hex encoded string with marked offsets to a ByteBuffer.
     */
   /* static member */
-  @scala.inline
-  def fromDebug(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromDebug(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromDebug(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromDebug(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromDebug(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def fromDebug(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromDebug(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromDebug(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a hex encoded string to a ByteBuffer.
     */
   /* static member */
-  @scala.inline
-  def fromHex(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromHex(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromHex(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromHex(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromHex(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def fromHex(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromHex(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromHex(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes an UTF8 encoded string to a ByteBuffer.
     */
   /* static member */
-  @scala.inline
-  def fromUTF8(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromUTF8(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromUTF8(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def fromUTF8(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromUTF8(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def fromUTF8(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromUTF8(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def fromUTF8(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Gets the backing buffer type.
     */
   /* static member */
-  @scala.inline
-  def isByteBuffer(bb: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isByteBuffer(bb: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Wraps a buffer or a string. Sets the allocated ByteBuffer's ByteBuffer#offset to 0 and its ByteBuffer#limit to the length of the wrapped data.
@@ -357,8 +298,7 @@ object mod {
     * @param noAssert Whether to skip assertions of offsets and values. Defaults to ByteBuffer.DEFAULT_NOASSERT.
     */
   /* static member */
-  @scala.inline
-  def wrap(
+  inline def wrap(
     buffer: ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String,
     enc: js.UndefOr[String | Boolean],
     littleEndian: js.UndefOr[Boolean],
@@ -369,33 +309,27 @@ object mod {
     * Decodes a zigzag encoded signed 32bit integer.
     */
   /* static member */
-  @scala.inline
-  def zigZagDecode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def zigZagDecode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Decodes a zigzag encoded signed 64bit integer.
     */
   /* static member */
-  @scala.inline
-  def zigZagDecode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def zigZagDecode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def zigZagDecode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def zigZagDecode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   /**
     * Zigzag encodes a signed 32bit integer so that it can be effectively used with varint encoding.
     */
   /* static member */
-  @scala.inline
-  def zigZagEncode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def zigZagEncode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Zigzag encodes a signed 64bit integer so that it can be effectively used with varint encoding.
     */
   /* static member */
-  @scala.inline
-  def zigZagEncode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def zigZagEncode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def zigZagEncode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def zigZagEncode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   @js.native
   trait ByteBuffer extends StObject {

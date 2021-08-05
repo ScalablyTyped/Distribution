@@ -11,16 +11,13 @@ trait Pages extends StObject {
 }
 object Pages {
   
-  @scala.inline
-  def apply(Pages: PropertyPages): Pages = {
+  inline def apply(Pages: PropertyPages): Pages = {
     val __obj = js.Dynamic.literal(Pages = Pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pages]
   }
   
-  @scala.inline
-  implicit class PagesMutableBuilder[Self <: Pages] (val x: Self) extends AnyVal {
+  extension [Self <: Pages](x: Self) {
     
-    @scala.inline
-    def setPages(value: PropertyPages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: PropertyPages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait InkColor extends StObject {
 }
 object InkColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     light: String,
     lightActive: String,
     lightHover: String,
@@ -42,34 +41,24 @@ object InkColor {
     __obj.asInstanceOf[InkColor]
   }
   
-  @scala.inline
-  implicit class InkColorMutableBuilder[Self <: InkColor] (val x: Self) extends AnyVal {
+  extension [Self <: InkColor](x: Self) {
     
-    @scala.inline
-    def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightActive(value: String): Self = StObject.set(x, "lightActive", value.asInstanceOf[js.Any])
+    inline def setLightActive(value: String): Self = StObject.set(x, "lightActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightHover(value: String): Self = StObject.set(x, "lightHover", value.asInstanceOf[js.Any])
+    inline def setLightHover(value: String): Self = StObject.set(x, "lightHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighter(value: String): Self = StObject.set(x, "lighter", value.asInstanceOf[js.Any])
+    inline def setLighter(value: String): Self = StObject.set(x, "lighter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighterActive(value: String): Self = StObject.set(x, "lighterActive", value.asInstanceOf[js.Any])
+    inline def setLighterActive(value: String): Self = StObject.set(x, "lighterActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighterHover(value: String): Self = StObject.set(x, "lighterHover", value.asInstanceOf[js.Any])
+    inline def setLighterHover(value: String): Self = StObject.set(x, "lighterHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalActive(value: String): Self = StObject.set(x, "normalActive", value.asInstanceOf[js.Any])
+    inline def setNormalActive(value: String): Self = StObject.set(x, "normalActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalHover(value: String): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
+    inline def setNormalHover(value: String): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
   }
 }

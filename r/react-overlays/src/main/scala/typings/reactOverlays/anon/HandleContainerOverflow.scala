@@ -12,25 +12,19 @@ trait HandleContainerOverflow extends StObject {
 }
 object HandleContainerOverflow {
   
-  @scala.inline
-  def apply(): HandleContainerOverflow = {
+  inline def apply(): HandleContainerOverflow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HandleContainerOverflow]
   }
   
-  @scala.inline
-  implicit class HandleContainerOverflowMutableBuilder[Self <: HandleContainerOverflow] (val x: Self) extends AnyVal {
+  extension [Self <: HandleContainerOverflow](x: Self) {
     
-    @scala.inline
-    def setHandleContainerOverflow(value: Boolean): Self = StObject.set(x, "handleContainerOverflow", value.asInstanceOf[js.Any])
+    inline def setHandleContainerOverflow(value: Boolean): Self = StObject.set(x, "handleContainerOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleContainerOverflowUndefined: Self = StObject.set(x, "handleContainerOverflow", js.undefined)
+    inline def setHandleContainerOverflowUndefined: Self = StObject.set(x, "handleContainerOverflow", js.undefined)
     
-    @scala.inline
-    def setHideSiblingNodes(value: Boolean): Self = StObject.set(x, "hideSiblingNodes", value.asInstanceOf[js.Any])
+    inline def setHideSiblingNodes(value: Boolean): Self = StObject.set(x, "hideSiblingNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSiblingNodesUndefined: Self = StObject.set(x, "hideSiblingNodes", js.undefined)
+    inline def setHideSiblingNodesUndefined: Self = StObject.set(x, "hideSiblingNodes", js.undefined)
   }
 }

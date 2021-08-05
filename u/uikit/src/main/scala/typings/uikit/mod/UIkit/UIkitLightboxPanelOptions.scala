@@ -30,82 +30,57 @@ trait UIkitLightboxPanelOptions extends StObject {
 }
 object UIkitLightboxPanelOptions {
   
-  @scala.inline
-  def apply(): UIkitLightboxPanelOptions = {
+  inline def apply(): UIkitLightboxPanelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitLightboxPanelOptions]
   }
   
-  @scala.inline
-  implicit class UIkitLightboxPanelOptionsMutableBuilder[Self <: UIkitLightboxPanelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitLightboxPanelOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAutoplay-interval`(value: Double): Self = StObject.set(x, "autoplay-interval", value.asInstanceOf[js.Any])
+    inline def `setAutoplay-interval`(value: Double): Self = StObject.set(x, "autoplay-interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAutoplay-intervalUndefined`: Self = StObject.set(x, "autoplay-interval", js.undefined)
+    inline def `setAutoplay-intervalUndefined`: Self = StObject.set(x, "autoplay-interval", js.undefined)
     
-    @scala.inline
-    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
-    @scala.inline
-    def `setDelay-controls`(value: Double): Self = StObject.set(x, "delay-controls", value.asInstanceOf[js.Any])
+    inline def `setDelay-controls`(value: Double): Self = StObject.set(x, "delay-controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDelay-controlsUndefined`: Self = StObject.set(x, "delay-controls", js.undefined)
+    inline def `setDelay-controlsUndefined`: Self = StObject.set(x, "delay-controls", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def `setPause-on-hover`(value: Boolean): Self = StObject.set(x, "pause-on-hover", value.asInstanceOf[js.Any])
+    inline def `setPause-on-hover`(value: Boolean): Self = StObject.set(x, "pause-on-hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPause-on-hoverUndefined`: Self = StObject.set(x, "pause-on-hover", js.undefined)
+    inline def `setPause-on-hoverUndefined`: Self = StObject.set(x, "pause-on-hover", js.undefined)
     
-    @scala.inline
-    def setPreload(value: Double): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: Double): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+    inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
+    inline def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
     
-    @scala.inline
-    def `setVideo-autoplay`(value: Boolean): Self = StObject.set(x, "video-autoplay", value.asInstanceOf[js.Any])
+    inline def `setVideo-autoplay`(value: Boolean): Self = StObject.set(x, "video-autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setVideo-autoplayUndefined`: Self = StObject.set(x, "video-autoplay", js.undefined)
+    inline def `setVideo-autoplayUndefined`: Self = StObject.set(x, "video-autoplay", js.undefined)
   }
 }

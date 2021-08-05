@@ -22,26 +22,20 @@ object storyViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(stories: js.Any, url: String): Props = {
+    inline def apply(stories: js.Any, url: String): Props = {
       val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setOnDevice(value: Boolean): Self = StObject.set(x, "onDevice", value.asInstanceOf[js.Any])
+      inline def setOnDevice(value: Boolean): Self = StObject.set(x, "onDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeviceUndefined: Self = StObject.set(x, "onDevice", js.undefined)
+      inline def setOnDeviceUndefined: Self = StObject.set(x, "onDevice", js.undefined)
       
-      @scala.inline
-      def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

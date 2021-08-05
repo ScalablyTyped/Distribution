@@ -31,53 +31,39 @@ trait GoogleCloudDialogflowCxV3beta1WebhookResponse extends StObject {
 }
 object GoogleCloudDialogflowCxV3beta1WebhookResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3beta1WebhookResponse = {
+  inline def apply(): GoogleCloudDialogflowCxV3beta1WebhookResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1WebhookResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1WebhookResponseMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1WebhookResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3beta1WebhookResponse](x: Self) {
     
-    @scala.inline
-    def setFulfillmentResponse(value: GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse): Self = StObject.set(x, "fulfillmentResponse", value.asInstanceOf[js.Any])
+    inline def setFulfillmentResponse(value: GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse): Self = StObject.set(x, "fulfillmentResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentResponseUndefined: Self = StObject.set(x, "fulfillmentResponse", js.undefined)
+    inline def setFulfillmentResponseUndefined: Self = StObject.set(x, "fulfillmentResponse", js.undefined)
     
-    @scala.inline
-    def setPageInfo(value: GoogleCloudDialogflowCxV3beta1PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: GoogleCloudDialogflowCxV3beta1PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setPayload(
+    inline def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1WebhookResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setSessionInfo(value: GoogleCloudDialogflowCxV3beta1SessionInfo): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
+    inline def setSessionInfo(value: GoogleCloudDialogflowCxV3beta1SessionInfo): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
+    inline def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
     
-    @scala.inline
-    def setTargetFlow(value: String): Self = StObject.set(x, "targetFlow", value.asInstanceOf[js.Any])
+    inline def setTargetFlow(value: String): Self = StObject.set(x, "targetFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFlowUndefined: Self = StObject.set(x, "targetFlow", js.undefined)
+    inline def setTargetFlowUndefined: Self = StObject.set(x, "targetFlow", js.undefined)
     
-    @scala.inline
-    def setTargetPage(value: String): Self = StObject.set(x, "targetPage", value.asInstanceOf[js.Any])
+    inline def setTargetPage(value: String): Self = StObject.set(x, "targetPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPageUndefined: Self = StObject.set(x, "targetPage", js.undefined)
+    inline def setTargetPageUndefined: Self = StObject.set(x, "targetPage", js.undefined)
   }
 }

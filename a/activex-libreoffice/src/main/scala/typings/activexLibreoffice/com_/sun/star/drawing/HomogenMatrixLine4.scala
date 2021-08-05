@@ -17,25 +17,19 @@ trait HomogenMatrixLine4 extends StObject {
 }
 object HomogenMatrixLine4 {
   
-  @scala.inline
-  def apply(Column1: Double, Column2: Double, Column3: Double, Column4: Double): HomogenMatrixLine4 = {
+  inline def apply(Column1: Double, Column2: Double, Column3: Double, Column4: Double): HomogenMatrixLine4 = {
     val __obj = js.Dynamic.literal(Column1 = Column1.asInstanceOf[js.Any], Column2 = Column2.asInstanceOf[js.Any], Column3 = Column3.asInstanceOf[js.Any], Column4 = Column4.asInstanceOf[js.Any])
     __obj.asInstanceOf[HomogenMatrixLine4]
   }
   
-  @scala.inline
-  implicit class HomogenMatrixLine4MutableBuilder[Self <: HomogenMatrixLine4] (val x: Self) extends AnyVal {
+  extension [Self <: HomogenMatrixLine4](x: Self) {
     
-    @scala.inline
-    def setColumn1(value: Double): Self = StObject.set(x, "Column1", value.asInstanceOf[js.Any])
+    inline def setColumn1(value: Double): Self = StObject.set(x, "Column1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn2(value: Double): Self = StObject.set(x, "Column2", value.asInstanceOf[js.Any])
+    inline def setColumn2(value: Double): Self = StObject.set(x, "Column2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn3(value: Double): Self = StObject.set(x, "Column3", value.asInstanceOf[js.Any])
+    inline def setColumn3(value: Double): Self = StObject.set(x, "Column3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn4(value: Double): Self = StObject.set(x, "Column4", value.asInstanceOf[js.Any])
+    inline def setColumn4(value: Double): Self = StObject.set(x, "Column4", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait PosCustomBatchRequest extends StObject {
 }
 object PosCustomBatchRequest {
   
-  @scala.inline
-  def apply(): PosCustomBatchRequest = {
+  inline def apply(): PosCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PosCustomBatchRequest]
   }
   
-  @scala.inline
-  implicit class PosCustomBatchRequestMutableBuilder[Self <: PosCustomBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PosCustomBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[PosCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[PosCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: PosCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: PosCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

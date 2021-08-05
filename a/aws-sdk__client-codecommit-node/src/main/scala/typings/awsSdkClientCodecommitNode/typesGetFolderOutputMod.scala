@@ -59,65 +59,46 @@ object typesGetFolderOutputMod {
   }
   object GetFolderOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, commitId: String, folderPath: String): GetFolderOutput = {
+    inline def apply($metadata: ResponseMetadata, commitId: String, folderPath: String): GetFolderOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], folderPath = folderPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetFolderOutput]
     }
     
-    @scala.inline
-    implicit class GetFolderOutputMutableBuilder[Self <: GetFolderOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetFolderOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+      inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiles(value: js.Array[UnmarshalledFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[UnmarshalledFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: UnmarshalledFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: UnmarshalledFile*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
+      inline def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubFolders(value: js.Array[UnmarshalledFolder]): Self = StObject.set(x, "subFolders", value.asInstanceOf[js.Any])
+      inline def setSubFolders(value: js.Array[UnmarshalledFolder]): Self = StObject.set(x, "subFolders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubFoldersUndefined: Self = StObject.set(x, "subFolders", js.undefined)
+      inline def setSubFoldersUndefined: Self = StObject.set(x, "subFolders", js.undefined)
       
-      @scala.inline
-      def setSubFoldersVarargs(value: UnmarshalledFolder*): Self = StObject.set(x, "subFolders", js.Array(value :_*))
+      inline def setSubFoldersVarargs(value: UnmarshalledFolder*): Self = StObject.set(x, "subFolders", js.Array(value :_*))
       
-      @scala.inline
-      def setSubModules(value: js.Array[UnmarshalledSubModule]): Self = StObject.set(x, "subModules", value.asInstanceOf[js.Any])
+      inline def setSubModules(value: js.Array[UnmarshalledSubModule]): Self = StObject.set(x, "subModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubModulesUndefined: Self = StObject.set(x, "subModules", js.undefined)
+      inline def setSubModulesUndefined: Self = StObject.set(x, "subModules", js.undefined)
       
-      @scala.inline
-      def setSubModulesVarargs(value: UnmarshalledSubModule*): Self = StObject.set(x, "subModules", js.Array(value :_*))
+      inline def setSubModulesVarargs(value: UnmarshalledSubModule*): Self = StObject.set(x, "subModules", js.Array(value :_*))
       
-      @scala.inline
-      def setSymbolicLinks(value: js.Array[UnmarshalledSymbolicLink]): Self = StObject.set(x, "symbolicLinks", value.asInstanceOf[js.Any])
+      inline def setSymbolicLinks(value: js.Array[UnmarshalledSymbolicLink]): Self = StObject.set(x, "symbolicLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolicLinksUndefined: Self = StObject.set(x, "symbolicLinks", js.undefined)
+      inline def setSymbolicLinksUndefined: Self = StObject.set(x, "symbolicLinks", js.undefined)
       
-      @scala.inline
-      def setSymbolicLinksVarargs(value: UnmarshalledSymbolicLink*): Self = StObject.set(x, "symbolicLinks", js.Array(value :_*))
+      inline def setSymbolicLinksVarargs(value: UnmarshalledSymbolicLink*): Self = StObject.set(x, "symbolicLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+      inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
+      inline def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
     }
   }
 }

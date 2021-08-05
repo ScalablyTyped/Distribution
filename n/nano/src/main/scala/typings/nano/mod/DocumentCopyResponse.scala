@@ -18,22 +18,17 @@ trait DocumentCopyResponse extends StObject {
 }
 object DocumentCopyResponse {
   
-  @scala.inline
-  def apply(id: String, ok: Boolean, rev: String): DocumentCopyResponse = {
+  inline def apply(id: String, ok: Boolean, rev: String): DocumentCopyResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentCopyResponse]
   }
   
-  @scala.inline
-  implicit class DocumentCopyResponseMutableBuilder[Self <: DocumentCopyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentCopyResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }
 }

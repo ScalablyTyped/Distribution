@@ -14,19 +14,15 @@ trait WriteControl extends StObject {
 }
 object WriteControl {
   
-  @scala.inline
-  def apply(): WriteControl = {
+  inline def apply(): WriteControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteControl]
   }
   
-  @scala.inline
-  implicit class WriteControlMutableBuilder[Self <: WriteControl] (val x: Self) extends AnyVal {
+  extension [Self <: WriteControl](x: Self) {
     
-    @scala.inline
-    def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
+    inline def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
+    inline def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
   }
 }

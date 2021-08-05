@@ -18,19 +18,15 @@ trait CreateMonitoringSubscriptionRequest extends StObject {
 }
 object CreateMonitoringSubscriptionRequest {
   
-  @scala.inline
-  def apply(DistributionId: String, MonitoringSubscription: MonitoringSubscription): CreateMonitoringSubscriptionRequest = {
+  inline def apply(DistributionId: String, MonitoringSubscription: MonitoringSubscription): CreateMonitoringSubscriptionRequest = {
     val __obj = js.Dynamic.literal(DistributionId = DistributionId.asInstanceOf[js.Any], MonitoringSubscription = MonitoringSubscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMonitoringSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class CreateMonitoringSubscriptionRequestMutableBuilder[Self <: CreateMonitoringSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMonitoringSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
+    inline def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringSubscription(value: MonitoringSubscription): Self = StObject.set(x, "MonitoringSubscription", value.asInstanceOf[js.Any])
+    inline def setMonitoringSubscription(value: MonitoringSubscription): Self = StObject.set(x, "MonitoringSubscription", value.asInstanceOf[js.Any])
   }
 }

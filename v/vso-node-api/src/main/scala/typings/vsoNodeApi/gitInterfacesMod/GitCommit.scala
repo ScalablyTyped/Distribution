@@ -15,8 +15,7 @@ trait GitCommit
 }
 object GitCommit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     author: GitUserDate,
     changeCounts: ChangeCountDictionary,
@@ -37,13 +36,10 @@ object GitCommit {
     __obj.asInstanceOf[GitCommit]
   }
   
-  @scala.inline
-  implicit class GitCommitMutableBuilder[Self <: GitCommit] (val x: Self) extends AnyVal {
+  extension [Self <: GitCommit](x: Self) {
     
-    @scala.inline
-    def setPush(value: GitPushRef): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: GitPushRef): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+    inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
   }
 }

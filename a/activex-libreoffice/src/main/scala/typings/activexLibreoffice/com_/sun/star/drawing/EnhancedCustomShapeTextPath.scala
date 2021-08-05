@@ -18,22 +18,17 @@ trait EnhancedCustomShapeTextPath extends StObject {
 }
 object EnhancedCustomShapeTextPath {
   
-  @scala.inline
-  def apply(ScaleX: Boolean, TextPath: Boolean, TextPathMode: EnhancedCustomShapeTextPathMode): EnhancedCustomShapeTextPath = {
+  inline def apply(ScaleX: Boolean, TextPath: Boolean, TextPathMode: EnhancedCustomShapeTextPathMode): EnhancedCustomShapeTextPath = {
     val __obj = js.Dynamic.literal(ScaleX = ScaleX.asInstanceOf[js.Any], TextPath = TextPath.asInstanceOf[js.Any], TextPathMode = TextPathMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedCustomShapeTextPath]
   }
   
-  @scala.inline
-  implicit class EnhancedCustomShapeTextPathMutableBuilder[Self <: EnhancedCustomShapeTextPath] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedCustomShapeTextPath](x: Self) {
     
-    @scala.inline
-    def setScaleX(value: Boolean): Self = StObject.set(x, "ScaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Boolean): Self = StObject.set(x, "ScaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPath(value: Boolean): Self = StObject.set(x, "TextPath", value.asInstanceOf[js.Any])
+    inline def setTextPath(value: Boolean): Self = StObject.set(x, "TextPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPathMode(value: EnhancedCustomShapeTextPathMode): Self = StObject.set(x, "TextPathMode", value.asInstanceOf[js.Any])
+    inline def setTextPathMode(value: EnhancedCustomShapeTextPathMode): Self = StObject.set(x, "TextPathMode", value.asInstanceOf[js.Any])
   }
 }

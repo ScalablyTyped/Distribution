@@ -23,31 +23,23 @@ trait ApplicationSettingsResponse extends StObject {
 }
 object ApplicationSettingsResponse {
   
-  @scala.inline
-  def apply(): ApplicationSettingsResponse = {
+  inline def apply(): ApplicationSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationSettingsResponse]
   }
   
-  @scala.inline
-  implicit class ApplicationSettingsResponseMutableBuilder[Self <: ApplicationSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
-    @scala.inline
-    def setSettingsGroup(value: SettingsGroup): Self = StObject.set(x, "SettingsGroup", value.asInstanceOf[js.Any])
+    inline def setSettingsGroup(value: SettingsGroup): Self = StObject.set(x, "SettingsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsGroupUndefined: Self = StObject.set(x, "SettingsGroup", js.undefined)
+    inline def setSettingsGroupUndefined: Self = StObject.set(x, "SettingsGroup", js.undefined)
   }
 }

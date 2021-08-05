@@ -29,20 +29,16 @@ object mod extends Shortcut {
     }
     object SetOptions {
       
-      @scala.inline
-      def apply(): SetOptions = {
+      inline def apply(): SetOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SetOptions]
       }
       
-      @scala.inline
-      implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SetOptions](x: Self) {
         
-        @scala.inline
-        def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
+        inline def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
+        inline def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
       }
     }
     

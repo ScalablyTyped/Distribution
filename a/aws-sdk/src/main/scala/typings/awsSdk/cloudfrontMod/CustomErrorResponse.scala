@@ -28,34 +28,25 @@ trait CustomErrorResponse extends StObject {
 }
 object CustomErrorResponse {
   
-  @scala.inline
-  def apply(ErrorCode: integer): CustomErrorResponse = {
+  inline def apply(ErrorCode: integer): CustomErrorResponse = {
     val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomErrorResponse]
   }
   
-  @scala.inline
-  implicit class CustomErrorResponseMutableBuilder[Self <: CustomErrorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CustomErrorResponse](x: Self) {
     
-    @scala.inline
-    def setErrorCachingMinTTL(value: long): Self = StObject.set(x, "ErrorCachingMinTTL", value.asInstanceOf[js.Any])
+    inline def setErrorCachingMinTTL(value: long): Self = StObject.set(x, "ErrorCachingMinTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCachingMinTTLUndefined: Self = StObject.set(x, "ErrorCachingMinTTL", js.undefined)
+    inline def setErrorCachingMinTTLUndefined: Self = StObject.set(x, "ErrorCachingMinTTL", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: integer): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: integer): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: String): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: String): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCodeUndefined: Self = StObject.set(x, "ResponseCode", js.undefined)
+    inline def setResponseCodeUndefined: Self = StObject.set(x, "ResponseCode", js.undefined)
     
-    @scala.inline
-    def setResponsePagePath(value: String): Self = StObject.set(x, "ResponsePagePath", value.asInstanceOf[js.Any])
+    inline def setResponsePagePath(value: String): Self = StObject.set(x, "ResponsePagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsePagePathUndefined: Self = StObject.set(x, "ResponsePagePath", js.undefined)
+    inline def setResponsePagePathUndefined: Self = StObject.set(x, "ResponsePagePath", js.undefined)
   }
 }

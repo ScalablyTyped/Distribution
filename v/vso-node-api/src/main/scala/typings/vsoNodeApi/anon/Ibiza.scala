@@ -18,8 +18,7 @@ trait Ibiza extends StObject {
 }
 object Ibiza {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ibiza: scala.Double,
     portalExtensionApi: scala.Double,
     restApi: scala.Double,
@@ -30,22 +29,16 @@ object Ibiza {
     __obj.asInstanceOf[Ibiza]
   }
   
-  @scala.inline
-  implicit class IbizaMutableBuilder[Self <: Ibiza] (val x: Self) extends AnyVal {
+  extension [Self <: Ibiza](x: Self) {
     
-    @scala.inline
-    def setIbiza(value: scala.Double): Self = StObject.set(x, "ibiza", value.asInstanceOf[js.Any])
+    inline def setIbiza(value: scala.Double): Self = StObject.set(x, "ibiza", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalExtensionApi(value: scala.Double): Self = StObject.set(x, "portalExtensionApi", value.asInstanceOf[js.Any])
+    inline def setPortalExtensionApi(value: scala.Double): Self = StObject.set(x, "portalExtensionApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApi(value: scala.Double): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+    inline def setRestApi(value: scala.Double): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInterface(value: scala.Double): Self = StObject.set(x, "userInterface", value.asInstanceOf[js.Any])
+    inline def setUserInterface(value: scala.Double): Self = StObject.set(x, "userInterface", value.asInstanceOf[js.Any])
   }
 }

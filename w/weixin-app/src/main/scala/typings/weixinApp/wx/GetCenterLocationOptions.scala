@@ -15,16 +15,13 @@ trait GetCenterLocationOptions
 }
 object GetCenterLocationOptions {
   
-  @scala.inline
-  def apply(success: Latitude => Unit): GetCenterLocationOptions = {
+  inline def apply(success: Latitude => Unit): GetCenterLocationOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetCenterLocationOptions]
   }
   
-  @scala.inline
-  implicit class GetCenterLocationOptionsMutableBuilder[Self <: GetCenterLocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetCenterLocationOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Latitude => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Latitude => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

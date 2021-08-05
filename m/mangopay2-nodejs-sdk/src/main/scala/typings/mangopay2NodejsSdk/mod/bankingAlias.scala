@@ -45,8 +45,7 @@ object bankingAlias {
   }
   object BankingAliasData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Active: Boolean,
       Country: CountryISO,
       CreationDate: Double,
@@ -61,26 +60,19 @@ object bankingAlias {
       __obj.asInstanceOf[BankingAliasData]
     }
     
-    @scala.inline
-    implicit class BankingAliasDataMutableBuilder[Self <: BankingAliasData] (val x: Self) extends AnyVal {
+    extension [Self <: BankingAliasData](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditedUserId(value: String): Self = StObject.set(x, "CreditedUserId", value.asInstanceOf[js.Any])
+      inline def setCreditedUserId(value: String): Self = StObject.set(x, "CreditedUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+      inline def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: BankingAliasType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: BankingAliasType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWalletId(value: String): Self = StObject.set(x, "WalletId", value.asInstanceOf[js.Any])
+      inline def setWalletId(value: String): Self = StObject.set(x, "WalletId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,32 +91,24 @@ object bankingAlias {
   }
   object CreateIBANBankingAlias {
     
-    @scala.inline
-    def apply(Country: CountryISO, OwnerName: String): CreateIBANBankingAlias = {
+    inline def apply(Country: CountryISO, OwnerName: String): CreateIBANBankingAlias = {
       val __obj = js.Dynamic.literal(Country = Country.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateIBANBankingAlias]
     }
     
-    @scala.inline
-    implicit class CreateIBANBankingAliasMutableBuilder[Self <: CreateIBANBankingAlias] (val x: Self) extends AnyVal {
+    extension [Self <: CreateIBANBankingAlias](x: Self) {
       
-      @scala.inline
-      def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditedUserId(value: String): Self = StObject.set(x, "CreditedUserId", value.asInstanceOf[js.Any])
+      inline def setCreditedUserId(value: String): Self = StObject.set(x, "CreditedUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditedUserIdUndefined: Self = StObject.set(x, "CreditedUserId", js.undefined)
+      inline def setCreditedUserIdUndefined: Self = StObject.set(x, "CreditedUserId", js.undefined)
       
-      @scala.inline
-      def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+      inline def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -150,8 +134,7 @@ object bankingAlias {
   }
   object IBANBankingAliasData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Active: Boolean,
       BIC: String,
       Country: CountryISO,
@@ -167,17 +150,13 @@ object bankingAlias {
       __obj.asInstanceOf[IBANBankingAliasData]
     }
     
-    @scala.inline
-    implicit class IBANBankingAliasDataMutableBuilder[Self <: IBANBankingAliasData] (val x: Self) extends AnyVal {
+    extension [Self <: IBANBankingAliasData](x: Self) {
       
-      @scala.inline
-      def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
+      inline def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
+      inline def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: IBAN): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: IBAN): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
 }

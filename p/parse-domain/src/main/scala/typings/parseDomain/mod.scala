@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): ParsedDomain | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ParsedDomain | Null]
-  @scala.inline
-  def apply(url: String, options: ParseOptions): ParsedDomain | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedDomain | Null]
+  inline def apply(url: String): ParsedDomain | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ParsedDomain | Null]
+  inline def apply(url: String, options: ParseOptions): ParsedDomain | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedDomain | Null]
   
   @JSImport("parse-domain", JSImport.Namespace)
   @js.native
@@ -24,29 +22,22 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setCustomTlds(value: RegExp | js.Array[String]): Self = StObject.set(x, "customTlds", value.asInstanceOf[js.Any])
+      inline def setCustomTlds(value: RegExp | js.Array[String]): Self = StObject.set(x, "customTlds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomTldsUndefined: Self = StObject.set(x, "customTlds", js.undefined)
+      inline def setCustomTldsUndefined: Self = StObject.set(x, "customTlds", js.undefined)
       
-      @scala.inline
-      def setCustomTldsVarargs(value: String*): Self = StObject.set(x, "customTlds", js.Array(value :_*))
+      inline def setCustomTldsVarargs(value: String*): Self = StObject.set(x, "customTlds", js.Array(value :_*))
       
-      @scala.inline
-      def setPrivateTlds(value: Boolean): Self = StObject.set(x, "privateTlds", value.asInstanceOf[js.Any])
+      inline def setPrivateTlds(value: Boolean): Self = StObject.set(x, "privateTlds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateTldsUndefined: Self = StObject.set(x, "privateTlds", js.undefined)
+      inline def setPrivateTldsUndefined: Self = StObject.set(x, "privateTlds", js.undefined)
     }
   }
   
@@ -60,23 +51,18 @@ object mod {
   }
   object ParsedDomain {
     
-    @scala.inline
-    def apply(domain: String, subdomain: String, tld: String): ParsedDomain = {
+    inline def apply(domain: String, subdomain: String, tld: String): ParsedDomain = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], subdomain = subdomain.asInstanceOf[js.Any], tld = tld.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedDomain]
     }
     
-    @scala.inline
-    implicit class ParsedDomainMutableBuilder[Self <: ParsedDomain] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedDomain](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
+      inline def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTld(value: String): Self = StObject.set(x, "tld", value.asInstanceOf[js.Any])
+      inline def setTld(value: String): Self = StObject.set(x, "tld", value.asInstanceOf[js.Any])
     }
   }
 }

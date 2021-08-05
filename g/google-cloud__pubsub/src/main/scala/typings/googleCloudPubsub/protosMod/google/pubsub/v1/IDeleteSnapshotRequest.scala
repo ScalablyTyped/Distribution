@@ -12,22 +12,17 @@ trait IDeleteSnapshotRequest extends StObject {
 }
 object IDeleteSnapshotRequest {
   
-  @scala.inline
-  def apply(): IDeleteSnapshotRequest = {
+  inline def apply(): IDeleteSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDeleteSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class IDeleteSnapshotRequestMutableBuilder[Self <: IDeleteSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IDeleteSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotNull: Self = StObject.set(x, "snapshot", null)
+    inline def setSnapshotNull: Self = StObject.set(x, "snapshot", null)
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
   }
 }

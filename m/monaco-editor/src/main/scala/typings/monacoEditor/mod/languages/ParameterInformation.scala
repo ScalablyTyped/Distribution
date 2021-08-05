@@ -21,22 +21,17 @@ trait ParameterInformation extends StObject {
 }
 object ParameterInformation {
   
-  @scala.inline
-  def apply(label: String | (js.Tuple2[Double, Double])): ParameterInformation = {
+  inline def apply(label: String | (js.Tuple2[Double, Double])): ParameterInformation = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterInformation]
   }
   
-  @scala.inline
-  implicit class ParameterInformationMutableBuilder[Self <: ParameterInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterInformation](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: String | IMarkdownString): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String | IMarkdownString): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String | (js.Tuple2[Double, Double])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | (js.Tuple2[Double, Double])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

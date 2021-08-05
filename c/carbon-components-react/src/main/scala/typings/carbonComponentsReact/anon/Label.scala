@@ -14,8 +14,7 @@ trait Label extends StObject {
 }
 object Label {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     label: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['label'] */ js.Any,
     value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['value'] */ js.Any
@@ -24,19 +23,15 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(
+    inline def setLabel(
       value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['label'] */ js.Any
     ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['value'] */ js.Any
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

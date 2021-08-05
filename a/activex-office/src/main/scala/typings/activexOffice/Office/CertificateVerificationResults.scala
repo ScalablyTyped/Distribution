@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateVerificationResults extends StObject
 object CertificateVerificationResults {
   
-  @scala.inline
-  def certverresError: `0` = 0.asInstanceOf[`0`]
+  inline def certverresError: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def certverresExpired: `5` = 5.asInstanceOf[`5`]
+  inline def certverresExpired: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def certverresInvalid: `4` = 4.asInstanceOf[`4`]
+  inline def certverresInvalid: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def certverresRevoked: `6` = 6.asInstanceOf[`6`]
+  inline def certverresRevoked: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def certverresUntrusted: `7` = 7.asInstanceOf[`7`]
+  inline def certverresUntrusted: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def certverresUnverified: `2` = 2.asInstanceOf[`2`]
+  inline def certverresUnverified: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def certverresValid: `3` = 3.asInstanceOf[`3`]
+  inline def certverresValid: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def certverresVerifying: `1` = 1.asInstanceOf[`1`]
+  inline def certverresVerifying: `1` = 1.asInstanceOf[`1`]
 }

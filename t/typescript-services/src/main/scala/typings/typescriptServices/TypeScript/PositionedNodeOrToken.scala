@@ -12,8 +12,7 @@ trait PositionedNodeOrToken
 }
 object PositionedNodeOrToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _element: js.Any,
     _fullStart: js.Any,
     _parent: js.Any,
@@ -42,10 +41,8 @@ object PositionedNodeOrToken {
     __obj.asInstanceOf[PositionedNodeOrToken]
   }
   
-  @scala.inline
-  implicit class PositionedNodeOrTokenMutableBuilder[Self <: PositionedNodeOrToken] (val x: Self) extends AnyVal {
+  extension [Self <: PositionedNodeOrToken](x: Self) {
     
-    @scala.inline
-    def setNodeOrToken(value: () => ISyntaxNodeOrToken): Self = StObject.set(x, "nodeOrToken", js.Any.fromFunction0(value))
+    inline def setNodeOrToken(value: () => ISyntaxNodeOrToken): Self = StObject.set(x, "nodeOrToken", js.Any.fromFunction0(value))
   }
 }

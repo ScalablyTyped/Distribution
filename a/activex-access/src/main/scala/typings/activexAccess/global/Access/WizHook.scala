@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.WizHook")
 @js.native
-class WizHook protected ()
+/* private */ class WizHook ()
   extends StObject
      with typings.activexAccess.Access.WizHook {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.WizHook_typekey")
   var AccessDotWizHook_typekey: typings.activexAccess.Access.WizHook = js.native
   

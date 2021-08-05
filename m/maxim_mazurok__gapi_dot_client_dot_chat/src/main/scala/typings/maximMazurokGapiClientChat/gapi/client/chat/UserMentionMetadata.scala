@@ -14,25 +14,19 @@ trait UserMentionMetadata extends StObject {
 }
 object UserMentionMetadata {
   
-  @scala.inline
-  def apply(): UserMentionMetadata = {
+  inline def apply(): UserMentionMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserMentionMetadata]
   }
   
-  @scala.inline
-  implicit class UserMentionMetadataMutableBuilder[Self <: UserMentionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UserMentionMetadata](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

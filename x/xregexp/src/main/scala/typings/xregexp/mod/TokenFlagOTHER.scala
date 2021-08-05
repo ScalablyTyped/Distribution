@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TokenFlagOTHER extends StObject
 object TokenFlagOTHER {
   
-  @scala.inline
-  def $: typings.xregexp.xregexpStrings.$ = "$".asInstanceOf[typings.xregexp.xregexpStrings.$]
+  inline def $: typings.xregexp.xregexpStrings.$ = "$".asInstanceOf[typings.xregexp.xregexpStrings.$]
   
-  @scala.inline
-  def _underscore: typings.xregexp.xregexpStrings._underscore = "_".asInstanceOf[typings.xregexp.xregexpStrings._underscore]
+  inline def _underscore: typings.xregexp.xregexpStrings._underscore = "_".asInstanceOf[typings.xregexp.xregexpStrings._underscore]
 }

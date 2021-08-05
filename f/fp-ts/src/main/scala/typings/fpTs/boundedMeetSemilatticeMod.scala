@@ -15,17 +15,14 @@ object boundedMeetSemilatticeMod {
   }
   object BoundedMeetSemilattice {
     
-    @scala.inline
-    def apply[A](meet: (A, A) => A, one: A): BoundedMeetSemilattice[A] = {
+    inline def apply[A](meet: (A, A) => A, one: A): BoundedMeetSemilattice[A] = {
       val __obj = js.Dynamic.literal(meet = js.Any.fromFunction2(meet), one = one.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundedMeetSemilattice[A]]
     }
     
-    @scala.inline
-    implicit class BoundedMeetSemilatticeMutableBuilder[Self <: BoundedMeetSemilattice[?], A] (val x: Self & BoundedMeetSemilattice[A]) extends AnyVal {
+    extension [Self <: BoundedMeetSemilattice[?], A](x: Self & BoundedMeetSemilattice[A]) {
       
-      @scala.inline
-      def setOne(value: A): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: A): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     }
   }
 }

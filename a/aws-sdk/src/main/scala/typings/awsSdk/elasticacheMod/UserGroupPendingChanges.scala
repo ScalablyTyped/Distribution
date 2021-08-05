@@ -18,31 +18,23 @@ trait UserGroupPendingChanges extends StObject {
 }
 object UserGroupPendingChanges {
   
-  @scala.inline
-  def apply(): UserGroupPendingChanges = {
+  inline def apply(): UserGroupPendingChanges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserGroupPendingChanges]
   }
   
-  @scala.inline
-  implicit class UserGroupPendingChangesMutableBuilder[Self <: UserGroupPendingChanges] (val x: Self) extends AnyVal {
+  extension [Self <: UserGroupPendingChanges](x: Self) {
     
-    @scala.inline
-    def setUserIdsToAdd(value: UserIdList): Self = StObject.set(x, "UserIdsToAdd", value.asInstanceOf[js.Any])
+    inline def setUserIdsToAdd(value: UserIdList): Self = StObject.set(x, "UserIdsToAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsToAddUndefined: Self = StObject.set(x, "UserIdsToAdd", js.undefined)
+    inline def setUserIdsToAddUndefined: Self = StObject.set(x, "UserIdsToAdd", js.undefined)
     
-    @scala.inline
-    def setUserIdsToAddVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToAdd", js.Array(value :_*))
+    inline def setUserIdsToAddVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToAdd", js.Array(value :_*))
     
-    @scala.inline
-    def setUserIdsToRemove(value: UserIdList): Self = StObject.set(x, "UserIdsToRemove", value.asInstanceOf[js.Any])
+    inline def setUserIdsToRemove(value: UserIdList): Self = StObject.set(x, "UserIdsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsToRemoveUndefined: Self = StObject.set(x, "UserIdsToRemove", js.undefined)
+    inline def setUserIdsToRemoveUndefined: Self = StObject.set(x, "UserIdsToRemove", js.undefined)
     
-    @scala.inline
-    def setUserIdsToRemoveVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToRemove", js.Array(value :_*))
+    inline def setUserIdsToRemoveVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToRemove", js.Array(value :_*))
   }
 }

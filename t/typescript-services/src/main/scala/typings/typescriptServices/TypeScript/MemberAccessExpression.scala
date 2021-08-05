@@ -16,8 +16,7 @@ trait MemberAccessExpression
 }
 object MemberAccessExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,16 +44,12 @@ object MemberAccessExpression {
     __obj.asInstanceOf[MemberAccessExpression]
   }
   
-  @scala.inline
-  implicit class MemberAccessExpressionMutableBuilder[Self <: MemberAccessExpression] (val x: Self) extends AnyVal {
+  extension [Self <: MemberAccessExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (MemberAccessExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (MemberAccessExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

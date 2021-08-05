@@ -14,31 +14,23 @@ trait ConnectionEndCap extends StObject {
 }
 object ConnectionEndCap {
   
-  @scala.inline
-  def apply(): ConnectionEndCap = {
+  inline def apply(): ConnectionEndCap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionEndCap]
   }
   
-  @scala.inline
-  implicit class ConnectionEndCapMutableBuilder[Self <: ConnectionEndCap] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionEndCap](x: Self) {
     
-    @scala.inline
-    def setFill(value: String | ConnectionEndCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String | ConnectionEndCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: String | ConnectionEndCapStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String | ConnectionEndCapStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

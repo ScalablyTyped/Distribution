@@ -61,8 +61,7 @@ trait decoratorsPropertyPropertyMetadata
 }
 object decoratorsPropertyPropertyMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -71,52 +70,36 @@ object decoratorsPropertyPropertyMetadata {
     __obj.asInstanceOf[decoratorsPropertyPropertyMetadata]
   }
   
-  @scala.inline
-  implicit class decoratorsPropertyPropertyMetadataMutableBuilder[Self <: decoratorsPropertyPropertyMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: decoratorsPropertyPropertyMetadata](x: Self) {
     
-    @scala.inline
-    def setAliasOf(value: String): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
+    inline def setAliasOf(value: String): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasOfUndefined: Self = StObject.set(x, "aliasOf", js.undefined)
+    inline def setAliasOfUndefined: Self = StObject.set(x, "aliasOf", js.undefined)
     
-    @scala.inline
-    def setCast(value: js.Function): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+    inline def setCast(value: js.Function): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+    inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
     
-    @scala.inline
-    def setConstructOnly(value: Boolean): Self = StObject.set(x, "constructOnly", value.asInstanceOf[js.Any])
+    inline def setConstructOnly(value: Boolean): Self = StObject.set(x, "constructOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstructOnlyUndefined: Self = StObject.set(x, "constructOnly", js.undefined)
+    inline def setConstructOnlyUndefined: Self = StObject.set(x, "constructOnly", js.undefined)
     
-    @scala.inline
-    def setDependsOn(value: js.Array[String]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
+    inline def setDependsOn(value: js.Array[String]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
+    inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    @scala.inline
-    def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setType(value: js.Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

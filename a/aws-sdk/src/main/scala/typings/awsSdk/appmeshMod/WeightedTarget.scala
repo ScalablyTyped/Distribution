@@ -18,19 +18,15 @@ trait WeightedTarget extends StObject {
 }
 object WeightedTarget {
   
-  @scala.inline
-  def apply(virtualNode: ResourceName, weight: PercentInt): WeightedTarget = {
+  inline def apply(virtualNode: ResourceName, weight: PercentInt): WeightedTarget = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedTarget]
   }
   
-  @scala.inline
-  implicit class WeightedTargetMutableBuilder[Self <: WeightedTarget] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedTarget](x: Self) {
     
-    @scala.inline
-    def setVirtualNode(value: ResourceName): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
+    inline def setVirtualNode(value: ResourceName): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: PercentInt): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: PercentInt): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

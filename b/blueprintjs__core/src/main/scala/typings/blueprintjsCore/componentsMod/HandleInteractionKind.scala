@@ -17,8 +17,7 @@ object HandleInteractionKind {
   @JSImport("@blueprintjs/core/lib/esm/components", "HandleInteractionKind.LOCK")
   @js.native
   def LOCK: lock = js.native
-  @scala.inline
-  def LOCK_=(x: lock): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCK")(x.asInstanceOf[js.Any])
+  inline def LOCK_=(x: lock): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCK")(x.asInstanceOf[js.Any])
   
   /**
     * Handles marked "none" are not interactive and do not appear in the UI.
@@ -27,13 +26,11 @@ object HandleInteractionKind {
   @JSImport("@blueprintjs/core/lib/esm/components", "HandleInteractionKind.NONE")
   @js.native
   def NONE: none = js.native
-  @scala.inline
-  def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
+  inline def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
   
   /** Push handles move overlapping handles with them as they are dragged. */
   @JSImport("@blueprintjs/core/lib/esm/components", "HandleInteractionKind.PUSH")
   @js.native
   def PUSH: push = js.native
-  @scala.inline
-  def PUSH_=(x: push): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUSH")(x.asInstanceOf[js.Any])
+  inline def PUSH_=(x: push): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUSH")(x.asInstanceOf[js.Any])
 }

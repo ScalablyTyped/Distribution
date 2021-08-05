@@ -18,25 +18,19 @@ trait PutWebhookInput extends StObject {
 }
 object PutWebhookInput {
   
-  @scala.inline
-  def apply(webhook: WebhookDefinition): PutWebhookInput = {
+  inline def apply(webhook: WebhookDefinition): PutWebhookInput = {
     val __obj = js.Dynamic.literal(webhook = webhook.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutWebhookInput]
   }
   
-  @scala.inline
-  implicit class PutWebhookInputMutableBuilder[Self <: PutWebhookInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutWebhookInput](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setWebhook(value: WebhookDefinition): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+    inline def setWebhook(value: WebhookDefinition): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
   }
 }

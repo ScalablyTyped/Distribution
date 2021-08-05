@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Axis")
 @js.native
-class Axis protected ()
+/* private */ class Axis ()
   extends StObject
      with typings.activexExcel.Excel.Axis {
   
@@ -70,7 +70,7 @@ class Axis protected ()
   /* CompleteClass */
   override val DisplayUnitLabel: typings.activexExcel.Excel.DisplayUnitLabel = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Axis_typekey")
   var ExcelDotAxis_typekey: typings.activexExcel.Excel.Axis = js.native
   

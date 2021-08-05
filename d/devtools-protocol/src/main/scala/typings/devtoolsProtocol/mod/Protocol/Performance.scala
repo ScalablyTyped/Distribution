@@ -17,20 +17,16 @@ object Performance {
   }
   object EnableRequest {
     
-    @scala.inline
-    def apply(): EnableRequest = {
+    inline def apply(): EnableRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnableRequest]
     }
     
-    @scala.inline
-    implicit class EnableRequestMutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EnableRequest](x: Self) {
       
-      @scala.inline
-      def setTimeDomain(value: timeTicks | threadTicks): Self = StObject.set(x, "timeDomain", value.asInstanceOf[js.Any])
+      inline def setTimeDomain(value: timeTicks | threadTicks): Self = StObject.set(x, "timeDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDomainUndefined: Self = StObject.set(x, "timeDomain", js.undefined)
+      inline def setTimeDomainUndefined: Self = StObject.set(x, "timeDomain", js.undefined)
     }
   }
   
@@ -41,11 +37,9 @@ object Performance {
   trait EnableRequestTimeDomain extends StObject
   object EnableRequestTimeDomain {
     
-    @scala.inline
-    def ThreadTicks: threadTicks = "threadTicks".asInstanceOf[threadTicks]
+    inline def ThreadTicks: threadTicks = "threadTicks".asInstanceOf[threadTicks]
     
-    @scala.inline
-    def TimeTicks: timeTicks = "timeTicks".asInstanceOf[timeTicks]
+    inline def TimeTicks: timeTicks = "timeTicks".asInstanceOf[timeTicks]
   }
   
   trait GetMetricsResponse extends StObject {
@@ -57,20 +51,16 @@ object Performance {
   }
   object GetMetricsResponse {
     
-    @scala.inline
-    def apply(metrics: js.Array[Metric]): GetMetricsResponse = {
+    inline def apply(metrics: js.Array[Metric]): GetMetricsResponse = {
       val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetMetricsResponse]
     }
     
-    @scala.inline
-    implicit class GetMetricsResponseMutableBuilder[Self <: GetMetricsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetMetricsResponse](x: Self) {
       
-      @scala.inline
-      def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+      inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     }
   }
   
@@ -88,20 +78,16 @@ object Performance {
   }
   object Metric {
     
-    @scala.inline
-    def apply(name: String, value: Double): Metric = {
+    inline def apply(name: String, value: Double): Metric = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metric]
     }
     
-    @scala.inline
-    implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+    extension [Self <: Metric](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,23 +105,18 @@ object Performance {
   }
   object MetricsEvent {
     
-    @scala.inline
-    def apply(metrics: js.Array[Metric], title: String): MetricsEvent = {
+    inline def apply(metrics: js.Array[Metric], title: String): MetricsEvent = {
       val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricsEvent]
     }
     
-    @scala.inline
-    implicit class MetricsEventMutableBuilder[Self <: MetricsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MetricsEvent](x: Self) {
       
-      @scala.inline
-      def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+      inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,17 +129,14 @@ object Performance {
   }
   object SetTimeDomainRequest {
     
-    @scala.inline
-    def apply(timeDomain: timeTicks | threadTicks): SetTimeDomainRequest = {
+    inline def apply(timeDomain: timeTicks | threadTicks): SetTimeDomainRequest = {
       val __obj = js.Dynamic.literal(timeDomain = timeDomain.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetTimeDomainRequest]
     }
     
-    @scala.inline
-    implicit class SetTimeDomainRequestMutableBuilder[Self <: SetTimeDomainRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetTimeDomainRequest](x: Self) {
       
-      @scala.inline
-      def setTimeDomain(value: timeTicks | threadTicks): Self = StObject.set(x, "timeDomain", value.asInstanceOf[js.Any])
+      inline def setTimeDomain(value: timeTicks | threadTicks): Self = StObject.set(x, "timeDomain", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,10 +147,8 @@ object Performance {
   trait SetTimeDomainRequestTimeDomain extends StObject
   object SetTimeDomainRequestTimeDomain {
     
-    @scala.inline
-    def ThreadTicks: threadTicks = "threadTicks".asInstanceOf[threadTicks]
+    inline def ThreadTicks: threadTicks = "threadTicks".asInstanceOf[threadTicks]
     
-    @scala.inline
-    def TimeTicks: timeTicks = "timeTicks".asInstanceOf[timeTicks]
+    inline def TimeTicks: timeTicks = "timeTicks".asInstanceOf[timeTicks]
   }
 }

@@ -15,16 +15,13 @@ trait FlowEventStart
 }
 object FlowEventStart {
   
-  @scala.inline
-  def apply(ph: FLOW_EVENTS_START): FlowEventStart = {
+  inline def apply(ph: FLOW_EVENTS_START): FlowEventStart = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowEventStart]
   }
   
-  @scala.inline
-  implicit class FlowEventStartMutableBuilder[Self <: FlowEventStart] (val x: Self) extends AnyVal {
+  extension [Self <: FlowEventStart](x: Self) {
     
-    @scala.inline
-    def setPh(value: FLOW_EVENTS_START): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: FLOW_EVENTS_START): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

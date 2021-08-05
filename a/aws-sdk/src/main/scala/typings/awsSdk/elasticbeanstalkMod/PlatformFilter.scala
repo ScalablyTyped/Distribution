@@ -23,34 +23,25 @@ trait PlatformFilter extends StObject {
 }
 object PlatformFilter {
   
-  @scala.inline
-  def apply(): PlatformFilter = {
+  inline def apply(): PlatformFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlatformFilter]
   }
   
-  @scala.inline
-  implicit class PlatformFilterMutableBuilder[Self <: PlatformFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformFilter](x: Self) {
     
-    @scala.inline
-    def setOperator(value: PlatformFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: PlatformFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
     
-    @scala.inline
-    def setType(value: PlatformFilterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PlatformFilterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValues(value: PlatformFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: PlatformFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: PlatformFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: PlatformFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

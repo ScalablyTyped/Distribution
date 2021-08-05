@@ -35,8 +35,7 @@ trait univariateColorSizeCreateVisualVariablesParamsSizeOptions
 }
 object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -45,25 +44,18 @@ object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsSizeOptions]
   }
   
-  @scala.inline
-  implicit class univariateColorSizeCreateVisualVariablesParamsSizeOptionsMutableBuilder[Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptions](x: Self) {
     
-    @scala.inline
-    def setAxis(value: all | height): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: all | height): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setLegendOptions(value: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    @scala.inline
-    def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
+    inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeSchemeUndefined: Self = StObject.set(x, "sizeScheme", js.undefined)
+    inline def setSizeSchemeUndefined: Self = StObject.set(x, "sizeScheme", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait TSet extends StObject {
 }
 object TSet {
   
-  @scala.inline
-  def apply(etype: Type, size: Double): TSet = {
+  inline def apply(etype: Type, size: Double): TSet = {
     val __obj = js.Dynamic.literal(etype = etype.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSet]
   }
   
-  @scala.inline
-  implicit class TSetMutableBuilder[Self <: TSet] (val x: Self) extends AnyVal {
+  extension [Self <: TSet](x: Self) {
     
-    @scala.inline
-    def setEtype(value: Type): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
+    inline def setEtype(value: Type): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

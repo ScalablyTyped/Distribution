@@ -30,49 +30,35 @@ trait RouteStatus extends StObject {
 }
 object RouteStatus {
   
-  @scala.inline
-  def apply(): RouteStatus = {
+  inline def apply(): RouteStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteStatus]
   }
   
-  @scala.inline
-  implicit class RouteStatusMutableBuilder[Self <: RouteStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RouteStatus](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Addressable): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Addressable): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
+    inline def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
-    @scala.inline
-    def setTraffic(value: js.Array[TrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+    inline def setTraffic(value: js.Array[TrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
+    inline def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
-    @scala.inline
-    def setTrafficVarargs(value: TrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
+    inline def setTrafficVarargs(value: TrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

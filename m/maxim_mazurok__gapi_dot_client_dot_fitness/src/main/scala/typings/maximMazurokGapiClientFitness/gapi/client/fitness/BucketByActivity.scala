@@ -14,25 +14,19 @@ trait BucketByActivity extends StObject {
 }
 object BucketByActivity {
   
-  @scala.inline
-  def apply(): BucketByActivity = {
+  inline def apply(): BucketByActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketByActivity]
   }
   
-  @scala.inline
-  implicit class BucketByActivityMutableBuilder[Self <: BucketByActivity] (val x: Self) extends AnyVal {
+  extension [Self <: BucketByActivity](x: Self) {
     
-    @scala.inline
-    def setActivityDataSourceId(value: String): Self = StObject.set(x, "activityDataSourceId", value.asInstanceOf[js.Any])
+    inline def setActivityDataSourceId(value: String): Self = StObject.set(x, "activityDataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityDataSourceIdUndefined: Self = StObject.set(x, "activityDataSourceId", js.undefined)
+    inline def setActivityDataSourceIdUndefined: Self = StObject.set(x, "activityDataSourceId", js.undefined)
     
-    @scala.inline
-    def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
+    inline def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
+    inline def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
   }
 }

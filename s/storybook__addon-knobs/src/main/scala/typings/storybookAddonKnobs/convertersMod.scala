@@ -12,32 +12,23 @@ object convertersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def jsonParse(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonParse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def jsonParse(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonParse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def jsonStringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonStringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def jsonStringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonStringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def simple(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def simple(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def stringifyIfSet(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyIfSet")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringifyIfSet(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyIfSet")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def stringifyIfTruthy(value: js.Any): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyIfTruthy")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def stringifyIfTruthy(value: js.Any): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyIfTruthy")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    @scala.inline
-    def toArray(value: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def toArray(value: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @scala.inline
-    def toBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def toBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def toDate(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def toDate(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def toFloat(value: js.Any): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toFloat")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+    inline def toFloat(value: js.Any): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toFloat")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   }
   
   object deserializers {
@@ -46,44 +37,31 @@ object convertersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def array(value: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def array(value: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @scala.inline
-    def boolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def boolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def button(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("button")().asInstanceOf[Unit]
+    inline def button(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("button")().asInstanceOf[Unit]
     
-    @scala.inline
-    def checkbox(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def checkbox(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def color(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def color(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def date(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def date(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def files(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("files")().asInstanceOf[Unit]
+    inline def files(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("files")().asInstanceOf[Unit]
     
-    @scala.inline
-    def number(value: js.Any): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+    inline def number(value: js.Any): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
     
-    @scala.inline
-    def `object`(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def `object`(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def options(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def options(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def radios(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("radios")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def radios(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("radios")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def select(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def select(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def text(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def text(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object serializers {
@@ -92,43 +70,30 @@ object convertersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def array(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def array(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def boolean(value: js.Any): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def boolean(value: js.Any): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    @scala.inline
-    def button(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("button")().asInstanceOf[Unit]
+    inline def button(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("button")().asInstanceOf[Unit]
     
-    @scala.inline
-    def checkbox(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def checkbox(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def color(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def color(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def date(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def date(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def files(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("files")().asInstanceOf[Unit]
+    inline def files(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("files")().asInstanceOf[Unit]
     
-    @scala.inline
-    def number(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def number(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def `object`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def `object`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def options(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def options(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def radios(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("radios")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def radios(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("radios")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def select(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def select(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def text(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def text(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

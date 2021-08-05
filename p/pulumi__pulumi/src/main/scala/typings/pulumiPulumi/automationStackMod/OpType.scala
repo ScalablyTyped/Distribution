@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpType extends StObject
 object OpType {
   
-  @scala.inline
-  def create: typings.pulumiPulumi.pulumiPulumiStrings.create = "create".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.create]
+  inline def create: typings.pulumiPulumi.pulumiPulumiStrings.create = "create".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.create]
   
-  @scala.inline
-  def `create-replacement`: typings.pulumiPulumi.pulumiPulumiStrings.`create-replacement` = "create-replacement".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`create-replacement`]
+  inline def `create-replacement`: typings.pulumiPulumi.pulumiPulumiStrings.`create-replacement` = "create-replacement".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`create-replacement`]
   
-  @scala.inline
-  def delete: typings.pulumiPulumi.pulumiPulumiStrings.delete = "delete".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.delete]
+  inline def delete: typings.pulumiPulumi.pulumiPulumiStrings.delete = "delete".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.delete]
   
-  @scala.inline
-  def `delete-replaced`: typings.pulumiPulumi.pulumiPulumiStrings.`delete-replaced` = "delete-replaced".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`delete-replaced`]
+  inline def `delete-replaced`: typings.pulumiPulumi.pulumiPulumiStrings.`delete-replaced` = "delete-replaced".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`delete-replaced`]
   
-  @scala.inline
-  def replace: typings.pulumiPulumi.pulumiPulumiStrings.replace = "replace".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.replace]
+  inline def replace: typings.pulumiPulumi.pulumiPulumiStrings.replace = "replace".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.replace]
   
-  @scala.inline
-  def same: typings.pulumiPulumi.pulumiPulumiStrings.same = "same".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.same]
+  inline def same: typings.pulumiPulumi.pulumiPulumiStrings.same = "same".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.same]
   
-  @scala.inline
-  def update: typings.pulumiPulumi.pulumiPulumiStrings.update = "update".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.update]
+  inline def update: typings.pulumiPulumi.pulumiPulumiStrings.update = "update".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.update]
 }

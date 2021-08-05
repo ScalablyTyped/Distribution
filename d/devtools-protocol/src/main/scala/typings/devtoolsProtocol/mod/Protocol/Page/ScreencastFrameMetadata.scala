@@ -44,8 +44,7 @@ trait ScreencastFrameMetadata extends StObject {
 }
 object ScreencastFrameMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceHeight: Double,
     deviceWidth: Double,
     offsetTop: Double,
@@ -57,31 +56,22 @@ object ScreencastFrameMetadata {
     __obj.asInstanceOf[ScreencastFrameMetadata]
   }
   
-  @scala.inline
-  implicit class ScreencastFrameMetadataMutableBuilder[Self <: ScreencastFrameMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ScreencastFrameMetadata](x: Self) {
     
-    @scala.inline
-    def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
+    inline def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceWidth(value: Double): Self = StObject.set(x, "deviceWidth", value.asInstanceOf[js.Any])
+    inline def setDeviceWidth(value: Double): Self = StObject.set(x, "deviceWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+    inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageScaleFactor(value: Double): Self = StObject.set(x, "pageScaleFactor", value.asInstanceOf[js.Any])
+    inline def setPageScaleFactor(value: Double): Self = StObject.set(x, "pageScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetX(value: Double): Self = StObject.set(x, "scrollOffsetX", value.asInstanceOf[js.Any])
+    inline def setScrollOffsetX(value: Double): Self = StObject.set(x, "scrollOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetY(value: Double): Self = StObject.set(x, "scrollOffsetY", value.asInstanceOf[js.Any])
+    inline def setScrollOffsetY(value: Double): Self = StObject.set(x, "scrollOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

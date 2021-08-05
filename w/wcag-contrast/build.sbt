@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wcag-contrast"
-version := "3.0-dt-20200817Z-d27300"
+version := "3.0-dt-20200817Z-2f0f53"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

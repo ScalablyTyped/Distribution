@@ -14,28 +14,21 @@ trait CredentialsDirty extends StObject {
 }
 object CredentialsDirty {
   
-  @scala.inline
-  def apply(credentials: js.Object, flows: js.Array[js.Object]): CredentialsDirty = {
+  inline def apply(credentials: js.Object, flows: js.Array[js.Object]): CredentialsDirty = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], flows = flows.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialsDirty]
   }
   
-  @scala.inline
-  implicit class CredentialsDirtyMutableBuilder[Self <: CredentialsDirty] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialsDirty](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsDirty(value: Boolean): Self = StObject.set(x, "credentialsDirty", value.asInstanceOf[js.Any])
+    inline def setCredentialsDirty(value: Boolean): Self = StObject.set(x, "credentialsDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsDirtyUndefined: Self = StObject.set(x, "credentialsDirty", js.undefined)
+    inline def setCredentialsDirtyUndefined: Self = StObject.set(x, "credentialsDirty", js.undefined)
     
-    @scala.inline
-    def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
+    inline def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value :_*))
+    inline def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value :_*))
   }
 }

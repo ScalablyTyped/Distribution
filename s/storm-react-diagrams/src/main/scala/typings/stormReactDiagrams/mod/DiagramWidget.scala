@@ -21,6 +21,5 @@ object DiagramWidget {
   @JSImport("storm-react-diagrams", "DiagramWidget.defaultProps")
   @js.native
   def defaultProps: DiagramProps = js.native
-  @scala.inline
-  def defaultProps_=(x: DiagramProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: DiagramProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

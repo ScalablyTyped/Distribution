@@ -8,6 +8,5 @@ object ejsStrings {
   
   @js.native
   sealed trait ejs extends StObject
-  @scala.inline
-  def ejs: ejs = "ejs".asInstanceOf[ejs]
+  inline def ejs: ejs = "ejs".asInstanceOf[ejs]
 }

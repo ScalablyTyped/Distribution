@@ -11,19 +11,15 @@ trait ReopenMatterResponse extends StObject {
 }
 object ReopenMatterResponse {
   
-  @scala.inline
-  def apply(): ReopenMatterResponse = {
+  inline def apply(): ReopenMatterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReopenMatterResponse]
   }
   
-  @scala.inline
-  implicit class ReopenMatterResponseMutableBuilder[Self <: ReopenMatterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReopenMatterResponse](x: Self) {
     
-    @scala.inline
-    def setMatter(value: Matter): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
+    inline def setMatter(value: Matter): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
+    inline def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
   }
 }

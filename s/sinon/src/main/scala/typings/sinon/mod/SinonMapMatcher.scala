@@ -20,8 +20,7 @@ trait SinonMapMatcher
 }
 object SinonMapMatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     and: SinonMatcher => SinonMatcher,
     contains: SimplifiedMap => SinonMatcher,
     deepEquals: SimplifiedMap => SinonMatcher,
@@ -32,13 +31,10 @@ object SinonMapMatcher {
     __obj.asInstanceOf[SinonMapMatcher]
   }
   
-  @scala.inline
-  implicit class SinonMapMatcherMutableBuilder[Self <: SinonMapMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: SinonMapMatcher](x: Self) {
     
-    @scala.inline
-    def setContains(value: SimplifiedMap => SinonMatcher): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: SimplifiedMap => SinonMatcher): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeepEquals(value: SimplifiedMap => SinonMatcher): Self = StObject.set(x, "deepEquals", js.Any.fromFunction1(value))
+    inline def setDeepEquals(value: SimplifiedMap => SinonMatcher): Self = StObject.set(x, "deepEquals", js.Any.fromFunction1(value))
   }
 }

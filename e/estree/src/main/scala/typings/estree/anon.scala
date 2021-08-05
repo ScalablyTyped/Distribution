@@ -14,20 +14,16 @@ object anon {
   }
   object Cooked {
     
-    @scala.inline
-    def apply(cooked: String, raw: String): Cooked = {
+    inline def apply(cooked: String, raw: String): Cooked = {
       val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cooked]
     }
     
-    @scala.inline
-    implicit class CookedMutableBuilder[Self <: Cooked] (val x: Self) extends AnyVal {
+    extension [Self <: Cooked](x: Self) {
       
-      @scala.inline
-      def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
+      inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Flags {
     
-    @scala.inline
-    def apply(flags: String, pattern: String): Flags = {
+    inline def apply(flags: String, pattern: String): Flags = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Flags]
     }
     
-    @scala.inline
-    implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
+    extension [Self <: Flags](x: Self) {
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
 }

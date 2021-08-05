@@ -13,19 +13,15 @@ trait Imag extends StObject {
 }
 object Imag {
   
-  @scala.inline
-  def apply(imag: TensorInfo, real: TensorInfo): Imag = {
+  inline def apply(imag: TensorInfo, real: TensorInfo): Imag = {
     val __obj = js.Dynamic.literal(imag = imag.asInstanceOf[js.Any], real = real.asInstanceOf[js.Any])
     __obj.asInstanceOf[Imag]
   }
   
-  @scala.inline
-  implicit class ImagMutableBuilder[Self <: Imag] (val x: Self) extends AnyVal {
+  extension [Self <: Imag](x: Self) {
     
-    @scala.inline
-    def setImag(value: TensorInfo): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
+    inline def setImag(value: TensorInfo): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReal(value: TensorInfo): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+    inline def setReal(value: TensorInfo): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
   }
 }

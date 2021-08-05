@@ -18,8 +18,7 @@ trait VerifyResults
 }
 object VerifyResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abuse_at_status: valid | invalid | unverified | pending,
     cname_status: valid | invalid | unverified | pending,
     compliance_status: valid | pending | blocked,
@@ -33,13 +32,10 @@ object VerifyResults {
     __obj.asInstanceOf[VerifyResults]
   }
   
-  @scala.inline
-  implicit class VerifyResultsMutableBuilder[Self <: VerifyResults] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyResults](x: Self) {
     
-    @scala.inline
-    def setDns(value: Dkimrecord): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: Dkimrecord): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
+    inline def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
   }
 }

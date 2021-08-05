@@ -15,16 +15,13 @@ trait ExclusiveAssertingTestOptions[U, P /* <: Record[String, js.Any] */, C]
 }
 object ExclusiveAssertingTestOptions {
   
-  @scala.inline
-  def apply[U, P /* <: Record[String, js.Any] */, C](name: String, test: AssertingTestFunction[U, C]): ExclusiveAssertingTestOptions[U, P, C] = {
+  inline def apply[U, P /* <: Record[String, js.Any] */, C](name: String, test: AssertingTestFunction[U, C]): ExclusiveAssertingTestOptions[U, P, C] = {
     val __obj = js.Dynamic.literal(exclusive = true, name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExclusiveAssertingTestOptions[U, P, C]]
   }
   
-  @scala.inline
-  implicit class ExclusiveAssertingTestOptionsMutableBuilder[Self <: ExclusiveAssertingTestOptions[?, ?, ?], U, P /* <: Record[String, js.Any] */, C] (val x: Self & (ExclusiveAssertingTestOptions[U, P, C])) extends AnyVal {
+  extension [Self <: ExclusiveAssertingTestOptions[?, ?, ?], U, P /* <: Record[String, js.Any] */, C](x: Self & (ExclusiveAssertingTestOptions[U, P, C])) {
     
-    @scala.inline
-    def setTest(value: AssertingTestFunction[U, C]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: AssertingTestFunction[U, C]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

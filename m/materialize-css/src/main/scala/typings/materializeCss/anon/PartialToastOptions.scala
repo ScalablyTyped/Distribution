@@ -23,55 +23,39 @@ trait PartialToastOptions extends StObject {
 }
 object PartialToastOptions {
   
-  @scala.inline
-  def apply(): PartialToastOptions = {
+  inline def apply(): PartialToastOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialToastOptions]
   }
   
-  @scala.inline
-  implicit class PartialToastOptionsMutableBuilder[Self <: PartialToastOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialToastOptions](x: Self) {
     
-    @scala.inline
-    def setActivationPercent(value: Double): Self = StObject.set(x, "activationPercent", value.asInstanceOf[js.Any])
+    inline def setActivationPercent(value: Double): Self = StObject.set(x, "activationPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationPercentUndefined: Self = StObject.set(x, "activationPercent", js.undefined)
+    inline def setActivationPercentUndefined: Self = StObject.set(x, "activationPercent", js.undefined)
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
+    inline def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteCallbackUndefined: Self = StObject.set(x, "completeCallback", js.undefined)
+    inline def setCompleteCallbackUndefined: Self = StObject.set(x, "completeCallback", js.undefined)
     
-    @scala.inline
-    def setDisplayLength(value: Double): Self = StObject.set(x, "displayLength", value.asInstanceOf[js.Any])
+    inline def setDisplayLength(value: Double): Self = StObject.set(x, "displayLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLengthUndefined: Self = StObject.set(x, "displayLength", js.undefined)
+    inline def setDisplayLengthUndefined: Self = StObject.set(x, "displayLength", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
+    inline def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInDurationUndefined: Self = StObject.set(x, "inDuration", js.undefined)
+    inline def setInDurationUndefined: Self = StObject.set(x, "inDuration", js.undefined)
     
-    @scala.inline
-    def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
+    inline def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutDurationUndefined: Self = StObject.set(x, "outDuration", js.undefined)
+    inline def setOutDurationUndefined: Self = StObject.set(x, "outDuration", js.undefined)
   }
 }

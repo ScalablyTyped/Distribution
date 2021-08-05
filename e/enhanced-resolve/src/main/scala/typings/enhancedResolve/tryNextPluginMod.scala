@@ -41,29 +41,22 @@ object tryNextPluginMod {
   }
   object TryNextPlugin {
     
-    @scala.inline
-    def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String, target: String): TryNextPlugin = {
+    inline def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String, target: String): TryNextPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], message = null)
       __obj.asInstanceOf[TryNextPlugin]
     }
     
-    @scala.inline
-    implicit class TryNextPluginMutableBuilder[Self <: TryNextPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: TryNextPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageNull: Self = StObject.set(x, "message", null)
+      inline def setMessageNull: Self = StObject.set(x, "message", null)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

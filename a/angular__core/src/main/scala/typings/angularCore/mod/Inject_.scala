@@ -17,10 +17,8 @@ object Inject_ {
   @js.native
   val ^ : InjectDecorator = js.native
   
-  @scala.inline
-  implicit class Inject_MutableBuilder[Self <: Inject_] (val x: Self) extends AnyVal {
+  extension [Self <: Inject_](x: Self) {
     
-    @scala.inline
-    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

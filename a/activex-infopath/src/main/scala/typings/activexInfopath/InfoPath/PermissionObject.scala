@@ -20,7 +20,7 @@ trait PermissionObject extends StObject {
   
   var Enabled: Boolean = js.native
   
-  @JSName("InfoPath.PermissionObject_typekey")
+  /* private */ @JSName("InfoPath.PermissionObject_typekey")
   var InfoPathDotPermissionObject_typekey: PermissionObject = js.native
   
   def Item(varIndex: js.Any): UserPermissionObject = js.native

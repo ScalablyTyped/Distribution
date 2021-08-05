@@ -98,15 +98,12 @@ object mod {
   
   /** Given a number of bytes, this returns a human-readable string, e.g. 1.23 MB */
   /* static member */
-  @scala.inline
-  def bytesToSize(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToSize")(size.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bytesToSize(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToSize")(size.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** invokes the browser's Save-As dialog */
   /* static member */
-  @scala.inline
-  def invokeSaveAsDialog(file: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def invokeSaveAsDialog(file: File, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def invokeSaveAsDialog(file: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def invokeSaveAsDialog(file: File, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   //
   // static helpers
@@ -116,8 +113,7 @@ object mod {
   @JSImport("recordrtc", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   trait Disk extends StObject {
     
@@ -129,32 +125,24 @@ object mod {
   }
   object Disk {
     
-    @scala.inline
-    def apply(): Disk = {
+    inline def apply(): Disk = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Disk]
     }
     
-    @scala.inline
-    implicit class DiskMutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
+    extension [Self <: Disk](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Blob): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Blob): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setGif(value: Blob): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
+      inline def setGif(value: Blob): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGifUndefined: Self = StObject.set(x, "gif", js.undefined)
+      inline def setGifUndefined: Self = StObject.set(x, "gif", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Blob): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Blob): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
   
@@ -166,14 +154,11 @@ object mod {
   trait MediaStreamKind extends StObject
   object MediaStreamKind {
     
-    @scala.inline
-    def audioinput: typings.recordrtc.recordrtcStrings.audioinput = "audioinput".asInstanceOf[typings.recordrtc.recordrtcStrings.audioinput]
+    inline def audioinput: typings.recordrtc.recordrtcStrings.audioinput = "audioinput".asInstanceOf[typings.recordrtc.recordrtcStrings.audioinput]
     
-    @scala.inline
-    def audiooutput: typings.recordrtc.recordrtcStrings.audiooutput = "audiooutput".asInstanceOf[typings.recordrtc.recordrtcStrings.audiooutput]
+    inline def audiooutput: typings.recordrtc.recordrtcStrings.audiooutput = "audiooutput".asInstanceOf[typings.recordrtc.recordrtcStrings.audiooutput]
     
-    @scala.inline
-    def videoinput: typings.recordrtc.recordrtcStrings.videoinput = "videoinput".asInstanceOf[typings.recordrtc.recordrtcStrings.videoinput]
+    inline def videoinput: typings.recordrtc.recordrtcStrings.videoinput = "videoinput".asInstanceOf[typings.recordrtc.recordrtcStrings.videoinput]
   }
   
   trait Options extends StObject {
@@ -246,150 +231,104 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
+      inline def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioBitsPerSecondUndefined: Self = StObject.set(x, "audioBitsPerSecond", js.undefined)
+      inline def setAudioBitsPerSecondUndefined: Self = StObject.set(x, "audioBitsPerSecond", js.undefined)
       
-      @scala.inline
-      def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+      inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+      inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
       
-      @scala.inline
-      def setBitsPerSecond(value: Double): Self = StObject.set(x, "bitsPerSecond", value.asInstanceOf[js.Any])
+      inline def setBitsPerSecond(value: Double): Self = StObject.set(x, "bitsPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitsPerSecondUndefined: Self = StObject.set(x, "bitsPerSecond", js.undefined)
+      inline def setBitsPerSecondUndefined: Self = StObject.set(x, "bitsPerSecond", js.undefined)
       
-      @scala.inline
-      def setBufferSize(value: `256` | `512` | `1024` | `2048` | `4096` | `8192` | `16384`): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: `256` | `512` | `1024` | `2048` | `4096` | `8192` | `16384`): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setCanvas(value: Height): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: Height): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+      inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
       
-      @scala.inline
-      def setCheckForInactiveTracks(value: Boolean): Self = StObject.set(x, "checkForInactiveTracks", value.asInstanceOf[js.Any])
+      inline def setCheckForInactiveTracks(value: Boolean): Self = StObject.set(x, "checkForInactiveTracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckForInactiveTracksUndefined: Self = StObject.set(x, "checkForInactiveTracks", js.undefined)
+      inline def setCheckForInactiveTracksUndefined: Self = StObject.set(x, "checkForInactiveTracks", js.undefined)
       
-      @scala.inline
-      def setDesiredSampRate(value: Double): Self = StObject.set(x, "desiredSampRate", value.asInstanceOf[js.Any])
+      inline def setDesiredSampRate(value: Double): Self = StObject.set(x, "desiredSampRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredSampRateUndefined: Self = StObject.set(x, "desiredSampRate", js.undefined)
+      inline def setDesiredSampRateUndefined: Self = StObject.set(x, "desiredSampRate", js.undefined)
       
-      @scala.inline
-      def setDisableLogs(value: Boolean): Self = StObject.set(x, "disableLogs", value.asInstanceOf[js.Any])
+      inline def setDisableLogs(value: Boolean): Self = StObject.set(x, "disableLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableLogsUndefined: Self = StObject.set(x, "disableLogs", js.undefined)
+      inline def setDisableLogsUndefined: Self = StObject.set(x, "disableLogs", js.undefined)
       
-      @scala.inline
-      def setElementClass(value: String): Self = StObject.set(x, "elementClass", value.asInstanceOf[js.Any])
+      inline def setElementClass(value: String): Self = StObject.set(x, "elementClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementClassUndefined: Self = StObject.set(x, "elementClass", js.undefined)
+      inline def setElementClassUndefined: Self = StObject.set(x, "elementClass", js.undefined)
       
-      @scala.inline
-      def setFrameInterval(value: Double): Self = StObject.set(x, "frameInterval", value.asInstanceOf[js.Any])
+      inline def setFrameInterval(value: Double): Self = StObject.set(x, "frameInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameIntervalUndefined: Self = StObject.set(x, "frameInterval", js.undefined)
+      inline def setFrameIntervalUndefined: Self = StObject.set(x, "frameInterval", js.undefined)
       
-      @scala.inline
-      def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+      inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+      inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
       
-      @scala.inline
-      def setMimeType(
+      inline def setMimeType(
         value: audioSlashwebm | audioSlashwebmSemicoloncodecsEqualssignpcm | videoSlashmp4 | videoSlashwebm | videoSlashwebmSemicoloncodecsEqualssignvp9 | videoSlashwebmSemicoloncodecsEqualssignvp8 | videoSlashwebmSemicoloncodecsEqualssignh264 | `videoSlashx-matroskaSemicoloncodecsEqualssignavc1` | videoSlashmpeg | audioSlashwav | audioSlashogg
       ): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setNumberOfAudioChannels(value: `1` | `2`): Self = StObject.set(x, "numberOfAudioChannels", value.asInstanceOf[js.Any])
+      inline def setNumberOfAudioChannels(value: `1` | `2`): Self = StObject.set(x, "numberOfAudioChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfAudioChannelsUndefined: Self = StObject.set(x, "numberOfAudioChannels", js.undefined)
+      inline def setNumberOfAudioChannelsUndefined: Self = StObject.set(x, "numberOfAudioChannels", js.undefined)
       
-      @scala.inline
-      def setOnTimeStamp(value: (/* timestamp */ Double, /* timestamps */ js.Array[Double]) => Unit): Self = StObject.set(x, "onTimeStamp", js.Any.fromFunction2(value))
+      inline def setOnTimeStamp(value: (/* timestamp */ Double, /* timestamps */ js.Array[Double]) => Unit): Self = StObject.set(x, "onTimeStamp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTimeStampUndefined: Self = StObject.set(x, "onTimeStamp", js.undefined)
+      inline def setOnTimeStampUndefined: Self = StObject.set(x, "onTimeStamp", js.undefined)
       
-      @scala.inline
-      def setOndataavailable(value: /* blob */ Blob => Unit): Self = StObject.set(x, "ondataavailable", js.Any.fromFunction1(value))
+      inline def setOndataavailable(value: /* blob */ Blob => Unit): Self = StObject.set(x, "ondataavailable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOndataavailableUndefined: Self = StObject.set(x, "ondataavailable", js.undefined)
+      inline def setOndataavailableUndefined: Self = StObject.set(x, "ondataavailable", js.undefined)
       
-      @scala.inline
-      def setPreviewStream(value: /* stream */ MediaStream => Unit): Self = StObject.set(x, "previewStream", js.Any.fromFunction1(value))
+      inline def setPreviewStream(value: /* stream */ MediaStream => Unit): Self = StObject.set(x, "previewStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreviewStreamUndefined: Self = StObject.set(x, "previewStream", js.undefined)
+      inline def setPreviewStreamUndefined: Self = StObject.set(x, "previewStream", js.undefined)
       
-      @scala.inline
-      def setRecorderType(
+      inline def setRecorderType(
         value: MediaStreamRecorder | StereoAudioRecorder | WebAssemblyRecorder | CanvasRecorder | GifRecorder | WhammyRecorder
       ): Self = StObject.set(x, "recorderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecorderTypeUndefined: Self = StObject.set(x, "recorderType", js.undefined)
+      inline def setRecorderTypeUndefined: Self = StObject.set(x, "recorderType", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
       
-      @scala.inline
-      def setTimeSlice(value: Double): Self = StObject.set(x, "timeSlice", value.asInstanceOf[js.Any])
+      inline def setTimeSlice(value: Double): Self = StObject.set(x, "timeSlice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeSliceUndefined: Self = StObject.set(x, "timeSlice", js.undefined)
+      inline def setTimeSliceUndefined: Self = StObject.set(x, "timeSlice", js.undefined)
       
-      @scala.inline
-      def setType(value: video | audio | canvas | gif): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: video | audio | canvas | gif): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoBitsPerSecond(value: Double): Self = StObject.set(x, "videoBitsPerSecond", value.asInstanceOf[js.Any])
+      inline def setVideoBitsPerSecond(value: Double): Self = StObject.set(x, "videoBitsPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoBitsPerSecondUndefined: Self = StObject.set(x, "videoBitsPerSecond", js.undefined)
+      inline def setVideoBitsPerSecondUndefined: Self = StObject.set(x, "videoBitsPerSecond", js.undefined)
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
   }
   
@@ -491,19 +430,14 @@ object mod {
   trait State extends StObject
   object State {
     
-    @scala.inline
-    def destroyed: typings.recordrtc.recordrtcStrings.destroyed = "destroyed".asInstanceOf[typings.recordrtc.recordrtcStrings.destroyed]
+    inline def destroyed: typings.recordrtc.recordrtcStrings.destroyed = "destroyed".asInstanceOf[typings.recordrtc.recordrtcStrings.destroyed]
     
-    @scala.inline
-    def inactive: typings.recordrtc.recordrtcStrings.inactive = "inactive".asInstanceOf[typings.recordrtc.recordrtcStrings.inactive]
+    inline def inactive: typings.recordrtc.recordrtcStrings.inactive = "inactive".asInstanceOf[typings.recordrtc.recordrtcStrings.inactive]
     
-    @scala.inline
-    def paused: typings.recordrtc.recordrtcStrings.paused = "paused".asInstanceOf[typings.recordrtc.recordrtcStrings.paused]
+    inline def paused: typings.recordrtc.recordrtcStrings.paused = "paused".asInstanceOf[typings.recordrtc.recordrtcStrings.paused]
     
-    @scala.inline
-    def recording: typings.recordrtc.recordrtcStrings.recording = "recording".asInstanceOf[typings.recordrtc.recordrtcStrings.recording]
+    inline def recording: typings.recordrtc.recordrtcStrings.recording = "recording".asInstanceOf[typings.recordrtc.recordrtcStrings.recording]
     
-    @scala.inline
-    def stopped: typings.recordrtc.recordrtcStrings.stopped = "stopped".asInstanceOf[typings.recordrtc.recordrtcStrings.stopped]
+    inline def stopped: typings.recordrtc.recordrtcStrings.stopped = "stopped".asInstanceOf[typings.recordrtc.recordrtcStrings.stopped]
   }
 }

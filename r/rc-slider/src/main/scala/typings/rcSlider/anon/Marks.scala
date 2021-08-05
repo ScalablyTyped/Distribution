@@ -16,25 +16,19 @@ trait Marks extends StObject {
 }
 object Marks {
   
-  @scala.inline
-  def apply(marks: js.Any, max: js.Any, min: js.Any, step: js.Any): Marks = {
+  inline def apply(marks: js.Any, max: js.Any, min: js.Any, step: js.Any): Marks = {
     val __obj = js.Dynamic.literal(marks = marks.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[Marks]
   }
   
-  @scala.inline
-  implicit class MarksMutableBuilder[Self <: Marks] (val x: Self) extends AnyVal {
+  extension [Self <: Marks](x: Self) {
     
-    @scala.inline
-    def setMarks(value: js.Any): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+    inline def setMarks(value: js.Any): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

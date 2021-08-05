@@ -10,19 +10,15 @@ trait StartDBInstanceResult extends StObject {
 }
 object StartDBInstanceResult {
   
-  @scala.inline
-  def apply(): StartDBInstanceResult = {
+  inline def apply(): StartDBInstanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartDBInstanceResult]
   }
   
-  @scala.inline
-  implicit class StartDBInstanceResultMutableBuilder[Self <: StartDBInstanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartDBInstanceResult](x: Self) {
     
-    @scala.inline
-    def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
+    inline def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
+    inline def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
   }
 }

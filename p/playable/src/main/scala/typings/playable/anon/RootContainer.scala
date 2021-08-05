@@ -20,8 +20,7 @@ trait RootContainer extends StObject {
 }
 object RootContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     config: IPlayerConfig,
     engine: IPlaybackEngine,
     eventEmitter: IEventEmitter,
@@ -31,19 +30,14 @@ object RootContainer {
     __obj.asInstanceOf[RootContainer]
   }
   
-  @scala.inline
-  implicit class RootContainerMutableBuilder[Self <: RootContainer] (val x: Self) extends AnyVal {
+  extension [Self <: RootContainer](x: Self) {
     
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
+    inline def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
   }
 }

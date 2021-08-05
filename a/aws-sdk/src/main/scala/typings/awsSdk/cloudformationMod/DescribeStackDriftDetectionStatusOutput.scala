@@ -43,8 +43,7 @@ trait DescribeStackDriftDetectionStatusOutput extends StObject {
 }
 object DescribeStackDriftDetectionStatusOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DetectionStatus: StackDriftDetectionStatus,
     StackDriftDetectionId: StackDriftDetectionId,
     StackId: StackId,
@@ -54,37 +53,26 @@ object DescribeStackDriftDetectionStatusOutput {
     __obj.asInstanceOf[DescribeStackDriftDetectionStatusOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStackDriftDetectionStatusOutputMutableBuilder[Self <: DescribeStackDriftDetectionStatusOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackDriftDetectionStatusOutput](x: Self) {
     
-    @scala.inline
-    def setDetectionStatus(value: StackDriftDetectionStatus): Self = StObject.set(x, "DetectionStatus", value.asInstanceOf[js.Any])
+    inline def setDetectionStatus(value: StackDriftDetectionStatus): Self = StObject.set(x, "DetectionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionStatusReason(value: StackDriftDetectionStatusReason): Self = StObject.set(x, "DetectionStatusReason", value.asInstanceOf[js.Any])
+    inline def setDetectionStatusReason(value: StackDriftDetectionStatusReason): Self = StObject.set(x, "DetectionStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionStatusReasonUndefined: Self = StObject.set(x, "DetectionStatusReason", js.undefined)
+    inline def setDetectionStatusReasonUndefined: Self = StObject.set(x, "DetectionStatusReason", js.undefined)
     
-    @scala.inline
-    def setDriftedStackResourceCount(value: BoxedInteger): Self = StObject.set(x, "DriftedStackResourceCount", value.asInstanceOf[js.Any])
+    inline def setDriftedStackResourceCount(value: BoxedInteger): Self = StObject.set(x, "DriftedStackResourceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriftedStackResourceCountUndefined: Self = StObject.set(x, "DriftedStackResourceCount", js.undefined)
+    inline def setDriftedStackResourceCountUndefined: Self = StObject.set(x, "DriftedStackResourceCount", js.undefined)
     
-    @scala.inline
-    def setStackDriftDetectionId(value: StackDriftDetectionId): Self = StObject.set(x, "StackDriftDetectionId", value.asInstanceOf[js.Any])
+    inline def setStackDriftDetectionId(value: StackDriftDetectionId): Self = StObject.set(x, "StackDriftDetectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackDriftStatus(value: StackDriftStatus): Self = StObject.set(x, "StackDriftStatus", value.asInstanceOf[js.Any])
+    inline def setStackDriftStatus(value: StackDriftStatus): Self = StObject.set(x, "StackDriftStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackDriftStatusUndefined: Self = StObject.set(x, "StackDriftStatus", js.undefined)
+    inline def setStackDriftStatusUndefined: Self = StObject.set(x, "StackDriftStatus", js.undefined)
     
-    @scala.inline
-    def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

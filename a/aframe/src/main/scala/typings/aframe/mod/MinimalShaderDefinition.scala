@@ -12,8 +12,7 @@ trait MinimalShaderDefinition extends StObject {
 }
 object MinimalShaderDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     schema: Schema_[
       /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ js.Any
     ]
@@ -22,11 +21,9 @@ object MinimalShaderDefinition {
     __obj.asInstanceOf[MinimalShaderDefinition]
   }
   
-  @scala.inline
-  implicit class MinimalShaderDefinitionMutableBuilder[Self <: MinimalShaderDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: MinimalShaderDefinition](x: Self) {
     
-    @scala.inline
-    def setSchema(
+    inline def setSchema(
       value: Schema_[
           /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ js.Any
         ]

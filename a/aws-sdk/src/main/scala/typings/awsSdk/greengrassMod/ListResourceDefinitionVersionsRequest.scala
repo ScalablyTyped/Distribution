@@ -23,28 +23,21 @@ trait ListResourceDefinitionVersionsRequest extends StObject {
 }
 object ListResourceDefinitionVersionsRequest {
   
-  @scala.inline
-  def apply(ResourceDefinitionId: string): ListResourceDefinitionVersionsRequest = {
+  inline def apply(ResourceDefinitionId: string): ListResourceDefinitionVersionsRequest = {
     val __obj = js.Dynamic.literal(ResourceDefinitionId = ResourceDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceDefinitionVersionsRequest]
   }
   
-  @scala.inline
-  implicit class ListResourceDefinitionVersionsRequestMutableBuilder[Self <: ListResourceDefinitionVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceDefinitionVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,25 @@ object headerTransformerMod {
     
     var headers: HeaderArray | Null = js.native
     
-    var headersLength: js.Any = js.native
+    /* private */ var headersLength: js.Any = js.native
     
-    val headersTransform: js.Any = js.native
+    /* private */ val headersTransform: js.Any = js.native
     
-    var mapHeaders: js.Any = js.native
+    /* private */ var mapHeaders: js.Any = js.native
     
-    val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: js.Any = js.native
     
-    var processRow: js.Any = js.native
+    /* private */ var processRow: js.Any = js.native
     
-    var processedFirstRow: js.Any = js.native
+    /* private */ var processedFirstRow: js.Any = js.native
     
-    var receivedHeaders: js.Any = js.native
+    /* private */ var receivedHeaders: js.Any = js.native
     
-    var setHeaders: js.Any = js.native
+    /* private */ var setHeaders: js.Any = js.native
     
-    var shouldMapRow: js.Any = js.native
+    /* private */ var shouldMapRow: js.Any = js.native
     
-    val shouldUseFirstRow: js.Any = js.native
+    /* private */ val shouldUseFirstRow: js.Any = js.native
     
     def transform(row: RowArray[js.Any], cb: RowValidatorCallback[O]): Unit = js.native
   }

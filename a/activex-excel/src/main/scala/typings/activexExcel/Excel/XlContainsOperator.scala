@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlContainsOperator extends StObject
 object XlContainsOperator {
   
-  @scala.inline
-  def xlBeginsWith: `2` = 2.asInstanceOf[`2`]
+  inline def xlBeginsWith: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlContains: `0` = 0.asInstanceOf[`0`]
+  inline def xlContains: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlDoesNotContain: `1` = 1.asInstanceOf[`1`]
+  inline def xlDoesNotContain: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlEndsWith: `3` = 3.asInstanceOf[`3`]
+  inline def xlEndsWith: `3` = 3.asInstanceOf[`3`]
 }

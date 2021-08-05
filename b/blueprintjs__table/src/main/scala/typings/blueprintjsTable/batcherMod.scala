@@ -17,24 +17,24 @@ object batcherMod {
       */
     def addArgsToBatch(args: SimpleStringifyable*): Unit = js.native
     
-    var batchArgs: js.Any = js.native
+    /* private */ var batchArgs: js.Any = js.native
     
-    var callback: js.Any = js.native
+    /* private */ var callback: js.Any = js.native
     
     def cancelOutstandingCallback(): Unit = js.native
     
-    var currentObjects: js.Any = js.native
+    /* private */ var currentObjects: js.Any = js.native
     
-    var done: js.Any = js.native
+    /* private */ var done: js.Any = js.native
     
-    var getKey: js.Any = js.native
+    /* private */ var getKey: js.Any = js.native
     
     /**
       * Returns all the objects in the "current" set.
       */
     def getList(): js.Array[T] = js.native
     
-    var handleIdleCallback: js.Any = js.native
+    /* private */ var handleIdleCallback: js.Any = js.native
     
     /**
       * Registers a callback to be invoked on the next idle frame. If a callback
@@ -47,9 +47,9 @@ object batcherMod {
       */
     def isDone(): Boolean = js.native
     
-    var mapCurrentObjectKey: js.Any = js.native
+    /* private */ var mapCurrentObjectKey: js.Any = js.native
     
-    var oldObjects: js.Any = js.native
+    /* private */ var oldObjects: js.Any = js.native
     
     /**
       * Compares the set of "batch" arguments to the "current" set. Creates any
@@ -104,11 +104,11 @@ object batcherMod {
     /**
       * Returns true of objects `a` and `b` have exactly the same keys.
       */
-    var setHasSameKeys: js.Any = js.native
+    /* private */ var setHasSameKeys: js.Any = js.native
     
-    var setKeysDifference: js.Any = js.native
+    /* private */ var setKeysDifference: js.Any = js.native
     
-    var setKeysIntersection: js.Any = js.native
+    /* private */ var setKeysIntersection: js.Any = js.native
     
     /**
       * Compares the keys of A from B -- and performs an "intersection" or
@@ -119,7 +119,7 @@ object batcherMod {
       *
       * Returns an array of at most `limit` keys.
       */
-    var setKeysOperation: js.Any = js.native
+    /* private */ var setKeysOperation: js.Any = js.native
     
     /**
       * Forcibly overwrites the current list of batched objects. Not recommended
@@ -142,26 +142,22 @@ object batcherMod {
     @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.ARG_DELIMITER")
     @js.native
     def ARG_DELIMITER: String = js.native
-    @scala.inline
-    def ARG_DELIMITER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARG_DELIMITER")(x.asInstanceOf[js.Any])
+    inline def ARG_DELIMITER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARG_DELIMITER")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.DEFAULT_ADD_LIMIT")
     @js.native
     def DEFAULT_ADD_LIMIT: Double = js.native
-    @scala.inline
-    def DEFAULT_ADD_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ADD_LIMIT")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_ADD_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ADD_LIMIT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.DEFAULT_REMOVE_LIMIT")
     @js.native
     def DEFAULT_REMOVE_LIMIT: Double = js.native
-    @scala.inline
-    def DEFAULT_REMOVE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_REMOVE_LIMIT")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_REMOVE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_REMOVE_LIMIT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.DEFAULT_UPDATE_LIMIT")
     @js.native
     def DEFAULT_UPDATE_LIMIT: Double = js.native
-    @scala.inline
-    def DEFAULT_UPDATE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_UPDATE_LIMIT")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_UPDATE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_UPDATE_LIMIT")(x.asInstanceOf[js.Any])
   }
   
   type Callback = js.Function0[Unit]

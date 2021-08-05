@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkSenderPhoto")
 @js.native
-class OlkSenderPhoto protected ()
+/* private */ class OlkSenderPhoto ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkSenderPhoto {
   
@@ -21,7 +21,7 @@ class OlkSenderPhoto protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkSenderPhoto_typekey")
   var OutlookDotOlkSenderPhoto_typekey: typings.activexOutlook.Outlook.OlkSenderPhoto = js.native
   

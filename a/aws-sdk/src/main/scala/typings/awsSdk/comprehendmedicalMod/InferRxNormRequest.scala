@@ -13,16 +13,13 @@ trait InferRxNormRequest extends StObject {
 }
 object InferRxNormRequest {
   
-  @scala.inline
-  def apply(Text: OntologyLinkingBoundedLengthString): InferRxNormRequest = {
+  inline def apply(Text: OntologyLinkingBoundedLengthString): InferRxNormRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferRxNormRequest]
   }
   
-  @scala.inline
-  implicit class InferRxNormRequestMutableBuilder[Self <: InferRxNormRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InferRxNormRequest](x: Self) {
     
-    @scala.inline
-    def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ object anon {
   }
   object Buffer {
     
-    @scala.inline
-    def apply(buffer: ArrayBuffer): Buffer = {
+    inline def apply(buffer: ArrayBuffer): Buffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
-    @scala.inline
-    implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+    extension [Self <: Buffer](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }
   }
 }

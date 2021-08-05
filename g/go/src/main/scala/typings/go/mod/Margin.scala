@@ -103,14 +103,12 @@ object Margin {
     * @param {string} str
     */
   /* static member */
-  @scala.inline
-  def parse(str: String): Margin = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Margin]
+  inline def parse(str: String): Margin = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Margin]
   
   /**
     * This static function can be used to write out a Margin as a string that can be read by Margin.parse.
     * @param {Margin} val
     */
   /* static member */
-  @scala.inline
-  def stringify(`val`: Margin): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(`val`: Margin): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

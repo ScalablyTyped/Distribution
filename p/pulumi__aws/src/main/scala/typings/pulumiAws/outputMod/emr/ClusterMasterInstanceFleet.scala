@@ -42,55 +42,39 @@ trait ClusterMasterInstanceFleet extends StObject {
 }
 object ClusterMasterInstanceFleet {
   
-  @scala.inline
-  def apply(id: String, provisionedOnDemandCapacity: Double, provisionedSpotCapacity: Double): ClusterMasterInstanceFleet = {
+  inline def apply(id: String, provisionedOnDemandCapacity: Double, provisionedSpotCapacity: Double): ClusterMasterInstanceFleet = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provisionedOnDemandCapacity = provisionedOnDemandCapacity.asInstanceOf[js.Any], provisionedSpotCapacity = provisionedSpotCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterMasterInstanceFleet]
   }
   
-  @scala.inline
-  implicit class ClusterMasterInstanceFleetMutableBuilder[Self <: ClusterMasterInstanceFleet] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterMasterInstanceFleet](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeConfigs(value: js.Array[ClusterMasterInstanceFleetInstanceTypeConfig]): Self = StObject.set(x, "instanceTypeConfigs", value.asInstanceOf[js.Any])
+    inline def setInstanceTypeConfigs(value: js.Array[ClusterMasterInstanceFleetInstanceTypeConfig]): Self = StObject.set(x, "instanceTypeConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeConfigsUndefined: Self = StObject.set(x, "instanceTypeConfigs", js.undefined)
+    inline def setInstanceTypeConfigsUndefined: Self = StObject.set(x, "instanceTypeConfigs", js.undefined)
     
-    @scala.inline
-    def setInstanceTypeConfigsVarargs(value: ClusterMasterInstanceFleetInstanceTypeConfig*): Self = StObject.set(x, "instanceTypeConfigs", js.Array(value :_*))
+    inline def setInstanceTypeConfigsVarargs(value: ClusterMasterInstanceFleetInstanceTypeConfig*): Self = StObject.set(x, "instanceTypeConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setLaunchSpecifications(value: ClusterMasterInstanceFleetLaunchSpecifications): Self = StObject.set(x, "launchSpecifications", value.asInstanceOf[js.Any])
+    inline def setLaunchSpecifications(value: ClusterMasterInstanceFleetLaunchSpecifications): Self = StObject.set(x, "launchSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchSpecificationsUndefined: Self = StObject.set(x, "launchSpecifications", js.undefined)
+    inline def setLaunchSpecificationsUndefined: Self = StObject.set(x, "launchSpecifications", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProvisionedOnDemandCapacity(value: Double): Self = StObject.set(x, "provisionedOnDemandCapacity", value.asInstanceOf[js.Any])
+    inline def setProvisionedOnDemandCapacity(value: Double): Self = StObject.set(x, "provisionedOnDemandCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedSpotCapacity(value: Double): Self = StObject.set(x, "provisionedSpotCapacity", value.asInstanceOf[js.Any])
+    inline def setProvisionedSpotCapacity(value: Double): Self = StObject.set(x, "provisionedSpotCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOnDemandCapacity(value: Double): Self = StObject.set(x, "targetOnDemandCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetOnDemandCapacity(value: Double): Self = StObject.set(x, "targetOnDemandCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOnDemandCapacityUndefined: Self = StObject.set(x, "targetOnDemandCapacity", js.undefined)
+    inline def setTargetOnDemandCapacityUndefined: Self = StObject.set(x, "targetOnDemandCapacity", js.undefined)
     
-    @scala.inline
-    def setTargetSpotCapacity(value: Double): Self = StObject.set(x, "targetSpotCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetSpotCapacity(value: Double): Self = StObject.set(x, "targetSpotCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSpotCapacityUndefined: Self = StObject.set(x, "targetSpotCapacity", js.undefined)
+    inline def setTargetSpotCapacityUndefined: Self = StObject.set(x, "targetSpotCapacity", js.undefined)
   }
 }

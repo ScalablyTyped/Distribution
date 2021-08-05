@@ -105,20 +105,17 @@ object mod {
     @JSImport("xml-crypto", "SignedXml.CanonicalizationAlgorithms")
     @js.native
     def CanonicalizationAlgorithms: StringDictionary[Instantiable0[TransformationAlgorithm]] = js.native
-    @scala.inline
-    def CanonicalizationAlgorithms_=(x: StringDictionary[Instantiable0[TransformationAlgorithm]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CanonicalizationAlgorithms")(x.asInstanceOf[js.Any])
+    inline def CanonicalizationAlgorithms_=(x: StringDictionary[Instantiable0[TransformationAlgorithm]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CanonicalizationAlgorithms")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-crypto", "SignedXml.HashAlgorithms")
     @js.native
     def HashAlgorithms: StringDictionary[Instantiable0[HashAlgorithm]] = js.native
-    @scala.inline
-    def HashAlgorithms_=(x: StringDictionary[Instantiable0[HashAlgorithm]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HashAlgorithms")(x.asInstanceOf[js.Any])
+    inline def HashAlgorithms_=(x: StringDictionary[Instantiable0[HashAlgorithm]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HashAlgorithms")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-crypto", "SignedXml.SignatureAlgorithms")
     @js.native
     def SignatureAlgorithms: StringDictionary[Instantiable0[SignatureAlgorithm]] = js.native
-    @scala.inline
-    def SignatureAlgorithms_=(x: StringDictionary[Instantiable0[SignatureAlgorithm]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SignatureAlgorithms")(x.asInstanceOf[js.Any])
+    inline def SignatureAlgorithms_=(x: StringDictionary[Instantiable0[SignatureAlgorithm]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SignatureAlgorithms")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("xml-crypto", "TransformationAlgorithm")
@@ -130,8 +127,7 @@ object mod {
     def process(node: Node): String = js.native
   }
   
-  @scala.inline
-  def xpath(node: Node, xpath: String): js.Array[SelectedValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[js.Array[SelectedValue]]
+  inline def xpath(node: Node, xpath: String): js.Array[SelectedValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[js.Array[SelectedValue]]
   
   trait Reference extends StObject {
     
@@ -151,56 +147,40 @@ object mod {
   }
   object Reference {
     
-    @scala.inline
-    def apply(xpath: String): Reference = {
+    inline def apply(xpath: String): Reference = {
       val __obj = js.Dynamic.literal(xpath = xpath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reference]
     }
     
-    @scala.inline
-    implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+    extension [Self <: Reference](x: Self) {
       
-      @scala.inline
-      def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+      inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+      inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
       
-      @scala.inline
-      def setDigestValue(value: String): Self = StObject.set(x, "digestValue", value.asInstanceOf[js.Any])
+      inline def setDigestValue(value: String): Self = StObject.set(x, "digestValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestValueUndefined: Self = StObject.set(x, "digestValue", js.undefined)
+      inline def setDigestValueUndefined: Self = StObject.set(x, "digestValue", js.undefined)
       
-      @scala.inline
-      def setInclusiveNamespacesPrefixList(value: String): Self = StObject.set(x, "inclusiveNamespacesPrefixList", value.asInstanceOf[js.Any])
+      inline def setInclusiveNamespacesPrefixList(value: String): Self = StObject.set(x, "inclusiveNamespacesPrefixList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusiveNamespacesPrefixListUndefined: Self = StObject.set(x, "inclusiveNamespacesPrefixList", js.undefined)
+      inline def setInclusiveNamespacesPrefixListUndefined: Self = StObject.set(x, "inclusiveNamespacesPrefixList", js.undefined)
       
-      @scala.inline
-      def setIsEmptyUri(value: Boolean): Self = StObject.set(x, "isEmptyUri", value.asInstanceOf[js.Any])
+      inline def setIsEmptyUri(value: Boolean): Self = StObject.set(x, "isEmptyUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUriUndefined: Self = StObject.set(x, "isEmptyUri", js.undefined)
+      inline def setIsEmptyUriUndefined: Self = StObject.set(x, "isEmptyUri", js.undefined)
       
-      @scala.inline
-      def setTransforms(value: js.Array[String]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      inline def setTransforms(value: js.Array[String]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+      inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
       
-      @scala.inline
-      def setTransformsVarargs(value: String*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+      inline def setTransformsVarargs(value: String*): Self = StObject.set(x, "transforms", js.Array(value :_*))
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       
-      @scala.inline
-      def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
+      inline def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     }
   }
 }

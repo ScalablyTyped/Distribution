@@ -152,154 +152,105 @@ trait SimplePaginationOptions extends StObject {
 }
 object SimplePaginationOptions {
   
-  @scala.inline
-  def apply(): SimplePaginationOptions = {
+  inline def apply(): SimplePaginationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimplePaginationOptions]
   }
   
-  @scala.inline
-  implicit class SimplePaginationOptionsMutableBuilder[Self <: SimplePaginationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SimplePaginationOptions](x: Self) {
     
-    @scala.inline
-    def setCssStyle(value: String): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
+    inline def setCssStyle(value: String): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssStyleUndefined: Self = StObject.set(x, "cssStyle", js.undefined)
+    inline def setCssStyleUndefined: Self = StObject.set(x, "cssStyle", js.undefined)
     
-    @scala.inline
-    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+    inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
-    @scala.inline
-    def setDisplayedPages(value: Double): Self = StObject.set(x, "displayedPages", value.asInstanceOf[js.Any])
+    inline def setDisplayedPages(value: Double): Self = StObject.set(x, "displayedPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedPagesUndefined: Self = StObject.set(x, "displayedPages", js.undefined)
+    inline def setDisplayedPagesUndefined: Self = StObject.set(x, "displayedPages", js.undefined)
     
-    @scala.inline
-    def setEdges(value: Double): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: Double): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
-    @scala.inline
-    def setEllipsePageSet(value: Boolean): Self = StObject.set(x, "ellipsePageSet", value.asInstanceOf[js.Any])
+    inline def setEllipsePageSet(value: Boolean): Self = StObject.set(x, "ellipsePageSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsePageSetUndefined: Self = StObject.set(x, "ellipsePageSet", js.undefined)
+    inline def setEllipsePageSetUndefined: Self = StObject.set(x, "ellipsePageSet", js.undefined)
     
-    @scala.inline
-    def setEllipseText(value: String): Self = StObject.set(x, "ellipseText", value.asInstanceOf[js.Any])
+    inline def setEllipseText(value: String): Self = StObject.set(x, "ellipseText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipseTextUndefined: Self = StObject.set(x, "ellipseText", js.undefined)
+    inline def setEllipseTextUndefined: Self = StObject.set(x, "ellipseText", js.undefined)
     
-    @scala.inline
-    def setHrefTextPrefix(value: String): Self = StObject.set(x, "hrefTextPrefix", value.asInstanceOf[js.Any])
+    inline def setHrefTextPrefix(value: String): Self = StObject.set(x, "hrefTextPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefTextPrefixUndefined: Self = StObject.set(x, "hrefTextPrefix", js.undefined)
+    inline def setHrefTextPrefixUndefined: Self = StObject.set(x, "hrefTextPrefix", js.undefined)
     
-    @scala.inline
-    def setHrefTextSuffix(value: String): Self = StObject.set(x, "hrefTextSuffix", value.asInstanceOf[js.Any])
+    inline def setHrefTextSuffix(value: String): Self = StObject.set(x, "hrefTextSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefTextSuffixUndefined: Self = StObject.set(x, "hrefTextSuffix", js.undefined)
+    inline def setHrefTextSuffixUndefined: Self = StObject.set(x, "hrefTextSuffix", js.undefined)
     
-    @scala.inline
-    def setInvertPageOrder(value: Boolean): Self = StObject.set(x, "invertPageOrder", value.asInstanceOf[js.Any])
+    inline def setInvertPageOrder(value: Boolean): Self = StObject.set(x, "invertPageOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertPageOrderUndefined: Self = StObject.set(x, "invertPageOrder", js.undefined)
+    inline def setInvertPageOrderUndefined: Self = StObject.set(x, "invertPageOrder", js.undefined)
     
-    @scala.inline
-    def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsOnPage(value: Double): Self = StObject.set(x, "itemsOnPage", value.asInstanceOf[js.Any])
+    inline def setItemsOnPage(value: Double): Self = StObject.set(x, "itemsOnPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsOnPageUndefined: Self = StObject.set(x, "itemsOnPage", js.undefined)
+    inline def setItemsOnPageUndefined: Self = StObject.set(x, "itemsOnPage", js.undefined)
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setLabelMap(value: js.Array[js.Any]): Self = StObject.set(x, "labelMap", value.asInstanceOf[js.Any])
+    inline def setLabelMap(value: js.Array[js.Any]): Self = StObject.set(x, "labelMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelMapUndefined: Self = StObject.set(x, "labelMap", js.undefined)
+    inline def setLabelMapUndefined: Self = StObject.set(x, "labelMap", js.undefined)
     
-    @scala.inline
-    def setLabelMapVarargs(value: js.Any*): Self = StObject.set(x, "labelMap", js.Array(value :_*))
+    inline def setLabelMapVarargs(value: js.Any*): Self = StObject.set(x, "labelMap", js.Array(value :_*))
     
-    @scala.inline
-    def setListStyle(value: Boolean): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+    inline def setListStyle(value: Boolean): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+    inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
-    @scala.inline
-    def setNextAtFront(value: Boolean): Self = StObject.set(x, "nextAtFront", value.asInstanceOf[js.Any])
+    inline def setNextAtFront(value: Boolean): Self = StObject.set(x, "nextAtFront", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextAtFrontUndefined: Self = StObject.set(x, "nextAtFront", js.undefined)
+    inline def setNextAtFrontUndefined: Self = StObject.set(x, "nextAtFront", js.undefined)
     
-    @scala.inline
-    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
+    inline def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
+    inline def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
-    @scala.inline
-    def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
+    inline def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+    inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
     
-    @scala.inline
-    def setOnPageClick(value: (/* page */ Double, /* event */ js.Any) => Unit): Self = StObject.set(x, "onPageClick", js.Any.fromFunction2(value))
+    inline def setOnPageClick(value: (/* page */ Double, /* event */ js.Any) => Unit): Self = StObject.set(x, "onPageClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnPageClickUndefined: Self = StObject.set(x, "onPageClick", js.undefined)
+    inline def setOnPageClickUndefined: Self = StObject.set(x, "onPageClick", js.undefined)
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPrevText(value: String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
+    inline def setPrevText(value: String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevTextUndefined: Self = StObject.set(x, "prevText", js.undefined)
+    inline def setPrevTextUndefined: Self = StObject.set(x, "prevText", js.undefined)
     
-    @scala.inline
-    def setSelectOnClick(value: Boolean): Self = StObject.set(x, "selectOnClick", value.asInstanceOf[js.Any])
+    inline def setSelectOnClick(value: Boolean): Self = StObject.set(x, "selectOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectOnClickUndefined: Self = StObject.set(x, "selectOnClick", js.undefined)
+    inline def setSelectOnClickUndefined: Self = StObject.set(x, "selectOnClick", js.undefined)
     
-    @scala.inline
-    def setUseAnchors(value: Boolean): Self = StObject.set(x, "useAnchors", value.asInstanceOf[js.Any])
+    inline def setUseAnchors(value: Boolean): Self = StObject.set(x, "useAnchors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAnchorsUndefined: Self = StObject.set(x, "useAnchors", js.undefined)
+    inline def setUseAnchorsUndefined: Self = StObject.set(x, "useAnchors", js.undefined)
     
-    @scala.inline
-    def setUseEndEdge(value: Boolean): Self = StObject.set(x, "useEndEdge", value.asInstanceOf[js.Any])
+    inline def setUseEndEdge(value: Boolean): Self = StObject.set(x, "useEndEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseEndEdgeUndefined: Self = StObject.set(x, "useEndEdge", js.undefined)
+    inline def setUseEndEdgeUndefined: Self = StObject.set(x, "useEndEdge", js.undefined)
     
-    @scala.inline
-    def setUseStartEdge(value: Boolean): Self = StObject.set(x, "useStartEdge", value.asInstanceOf[js.Any])
+    inline def setUseStartEdge(value: Boolean): Self = StObject.set(x, "useStartEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseStartEdgeUndefined: Self = StObject.set(x, "useStartEdge", js.undefined)
+    inline def setUseStartEdgeUndefined: Self = StObject.set(x, "useStartEdge", js.undefined)
   }
 }

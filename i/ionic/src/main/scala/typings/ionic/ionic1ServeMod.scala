@@ -20,7 +20,7 @@ object ionic1ServeMod {
   class Ionic1ServeRunner protected () extends ServeRunner[Ionic1ServeOptions] {
     def this(e: Ionic1ServeRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_Ionic1ServeRunner: Ionic1ServeRunnerDeps = js.native
   }
   
@@ -33,8 +33,7 @@ object ionic1ServeMod {
   }
   object Ionic1ServeRunnerDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: IConfig,
       flags: IonicEnvironmentFlags,
       log: ILogger,
@@ -46,11 +45,9 @@ object ionic1ServeMod {
       __obj.asInstanceOf[Ionic1ServeRunnerDeps]
     }
     
-    @scala.inline
-    implicit class Ionic1ServeRunnerDepsMutableBuilder[Self <: Ionic1ServeRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: Ionic1ServeRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: Ionic1Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Ionic1Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

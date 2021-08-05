@@ -24,16 +24,13 @@ trait UserDefinedAttributesSupplier extends StObject {
 }
 object UserDefinedAttributesSupplier {
   
-  @scala.inline
-  def apply(UserDefinedAttributes: XNameContainer): UserDefinedAttributesSupplier = {
+  inline def apply(UserDefinedAttributes: XNameContainer): UserDefinedAttributesSupplier = {
     val __obj = js.Dynamic.literal(UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedAttributesSupplier]
   }
   
-  @scala.inline
-  implicit class UserDefinedAttributesSupplierMutableBuilder[Self <: UserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedAttributesSupplier](x: Self) {
     
-    @scala.inline
-    def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
+    inline def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
   }
 }

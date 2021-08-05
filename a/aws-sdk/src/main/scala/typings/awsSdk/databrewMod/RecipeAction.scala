@@ -18,22 +18,17 @@ trait RecipeAction extends StObject {
 }
 object RecipeAction {
   
-  @scala.inline
-  def apply(Operation: Operation): RecipeAction = {
+  inline def apply(Operation: Operation): RecipeAction = {
     val __obj = js.Dynamic.literal(Operation = Operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipeAction]
   }
   
-  @scala.inline
-  implicit class RecipeActionMutableBuilder[Self <: RecipeAction] (val x: Self) extends AnyVal {
+  extension [Self <: RecipeAction](x: Self) {
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: ParameterMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParameterMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
   }
 }

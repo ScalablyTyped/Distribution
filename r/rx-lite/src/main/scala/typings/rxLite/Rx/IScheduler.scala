@@ -68,8 +68,7 @@ trait IScheduler extends StObject {
 }
 object IScheduler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isScheduler: js.Any => Boolean,
     now: () => Double,
     schedule: js.Function0[Unit] => IDisposable,
@@ -91,65 +90,48 @@ object IScheduler {
     __obj.asInstanceOf[IScheduler]
   }
   
-  @scala.inline
-  implicit class ISchedulerMutableBuilder[Self <: IScheduler] (val x: Self) extends AnyVal {
+  extension [Self <: IScheduler](x: Self) {
     
-    @scala.inline
-    def setIsScheduler(value: js.Any => Boolean): Self = StObject.set(x, "isScheduler", js.Any.fromFunction1(value))
+    inline def setIsScheduler(value: js.Any => Boolean): Self = StObject.set(x, "isScheduler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+    inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSchedule(value: js.Function0[Unit] => IDisposable): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+    inline def setSchedule(value: js.Function0[Unit] => IDisposable): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSchedulePeriodic(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "schedulePeriodic", js.Any.fromFunction2(value))
+    inline def setSchedulePeriodic(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "schedulePeriodic", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSchedulePeriodicWithState(value: (js.Any, Double, js.Function1[js.Any, js.Any]) => IDisposable): Self = StObject.set(x, "schedulePeriodicWithState", js.Any.fromFunction3(value))
+    inline def setSchedulePeriodicWithState(value: (js.Any, Double, js.Function1[js.Any, js.Any]) => IDisposable): Self = StObject.set(x, "schedulePeriodicWithState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScheduleRecursive(value: js.Function1[/* action */ js.Function0[Unit], Unit] => IDisposable): Self = StObject.set(x, "scheduleRecursive", js.Any.fromFunction1(value))
+    inline def setScheduleRecursive(value: js.Function1[/* action */ js.Function0[Unit], Unit] => IDisposable): Self = StObject.set(x, "scheduleRecursive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScheduleRecursiveWithAbsolute(
+    inline def setScheduleRecursiveWithAbsolute(
       value: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable
     ): Self = StObject.set(x, "scheduleRecursiveWithAbsolute", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScheduleRecursiveWithAbsoluteAndState(
+    inline def setScheduleRecursiveWithAbsoluteAndState(
       value: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable
     ): Self = StObject.set(x, "scheduleRecursiveWithAbsoluteAndState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScheduleRecursiveWithRelative(
+    inline def setScheduleRecursiveWithRelative(
       value: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable
     ): Self = StObject.set(x, "scheduleRecursiveWithRelative", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScheduleRecursiveWithRelativeAndState(
+    inline def setScheduleRecursiveWithRelativeAndState(
       value: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable
     ): Self = StObject.set(x, "scheduleRecursiveWithRelativeAndState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScheduleRecursiveWithState(
+    inline def setScheduleRecursiveWithState(
       value: (js.Any, js.Function2[js.Any, /* action */ js.Function1[js.Any, Unit], Unit]) => IDisposable
     ): Self = StObject.set(x, "scheduleRecursiveWithState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScheduleWithAbsolute(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleWithAbsolute", js.Any.fromFunction2(value))
+    inline def setScheduleWithAbsolute(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleWithAbsolute", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScheduleWithAbsoluteAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithAbsoluteAndState", js.Any.fromFunction3(value))
+    inline def setScheduleWithAbsoluteAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithAbsoluteAndState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScheduleWithRelative(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleWithRelative", js.Any.fromFunction2(value))
+    inline def setScheduleWithRelative(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleWithRelative", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScheduleWithRelativeAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithRelativeAndState", js.Any.fromFunction3(value))
+    inline def setScheduleWithRelativeAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithRelativeAndState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScheduleWithState(value: (js.Any, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithState", js.Any.fromFunction2(value))
+    inline def setScheduleWithState(value: (js.Any, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithState", js.Any.fromFunction2(value))
   }
 }

@@ -14,19 +14,15 @@ trait SendMessageOptions extends StObject {
 }
 object SendMessageOptions {
   
-  @scala.inline
-  def apply(): SendMessageOptions = {
+  inline def apply(): SendMessageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendMessageOptions]
   }
   
-  @scala.inline
-  implicit class SendMessageOptionsMutableBuilder[Self <: SendMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
+    inline def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTlsChannelIdUndefined: Self = StObject.set(x, "includeTlsChannelId", js.undefined)
+    inline def setIncludeTlsChannelIdUndefined: Self = StObject.set(x, "includeTlsChannelId", js.undefined)
   }
 }

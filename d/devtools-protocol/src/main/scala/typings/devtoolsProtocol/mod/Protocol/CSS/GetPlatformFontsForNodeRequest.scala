@@ -11,16 +11,13 @@ trait GetPlatformFontsForNodeRequest extends StObject {
 }
 object GetPlatformFontsForNodeRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): GetPlatformFontsForNodeRequest = {
+  inline def apply(nodeId: NodeId): GetPlatformFontsForNodeRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPlatformFontsForNodeRequest]
   }
   
-  @scala.inline
-  implicit class GetPlatformFontsForNodeRequestMutableBuilder[Self <: GetPlatformFontsForNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPlatformFontsForNodeRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

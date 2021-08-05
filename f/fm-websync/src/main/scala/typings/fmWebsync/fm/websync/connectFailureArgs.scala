@@ -26,8 +26,7 @@ trait connectFailureArgs
 }
 object connectFailureArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client: client,
     clientId: String,
     error: String,
@@ -40,16 +39,12 @@ object connectFailureArgs {
     __obj.asInstanceOf[connectFailureArgs]
   }
   
-  @scala.inline
-  implicit class connectFailureArgsMutableBuilder[Self <: connectFailureArgs] (val x: Self) extends AnyVal {
+  extension [Self <: connectFailureArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReconnect(value: Boolean): Self = StObject.set(x, "isReconnect", value.asInstanceOf[js.Any])
+    inline def setIsReconnect(value: Boolean): Self = StObject.set(x, "isReconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+    inline def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
   }
 }

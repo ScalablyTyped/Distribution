@@ -110,14 +110,12 @@ object FunctionExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     functionKeyword: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax,
     block: typings.typescriptServices.TypeScript.BlockSyntax
   ): typings.typescriptServices.TypeScript.FunctionExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(functionKeyword.asInstanceOf[js.Any], callSignature.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.FunctionExpressionSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.FunctionExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.FunctionExpressionSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.FunctionExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.FunctionExpressionSyntax]
 }

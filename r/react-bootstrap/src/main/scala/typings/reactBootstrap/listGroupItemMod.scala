@@ -37,50 +37,36 @@ object listGroupItemMod {
   }
   object ListGroupItemProps {
     
-    @scala.inline
-    def apply(): ListGroupItemProps = {
+    inline def apply(): ListGroupItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListGroupItemProps]
     }
     
-    @scala.inline
-    implicit class ListGroupItemPropsMutableBuilder[Self <: ListGroupItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListGroupItemProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: js.Any): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: js.Any): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
+      inline def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
+      inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      @scala.inline
-      def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+      inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       
-      @scala.inline
-      def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setListItem(value: Boolean): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      inline def setListItem(value: Boolean): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     }
   }
 }

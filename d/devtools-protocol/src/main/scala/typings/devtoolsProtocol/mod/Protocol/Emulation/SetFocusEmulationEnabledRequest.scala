@@ -13,16 +13,13 @@ trait SetFocusEmulationEnabledRequest extends StObject {
 }
 object SetFocusEmulationEnabledRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetFocusEmulationEnabledRequest = {
+  inline def apply(enabled: Boolean): SetFocusEmulationEnabledRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetFocusEmulationEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetFocusEmulationEnabledRequestMutableBuilder[Self <: SetFocusEmulationEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetFocusEmulationEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

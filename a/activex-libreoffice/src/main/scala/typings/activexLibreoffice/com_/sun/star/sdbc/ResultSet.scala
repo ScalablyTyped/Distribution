@@ -94,8 +94,7 @@ trait ResultSet
 }
 object ResultSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CursorName: String,
     FetchDirection: Double,
     FetchSize: Double,
@@ -190,22 +189,16 @@ object ResultSet {
     __obj.asInstanceOf[ResultSet]
   }
   
-  @scala.inline
-  implicit class ResultSetMutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSet](x: Self) {
     
-    @scala.inline
-    def setCursorName(value: String): Self = StObject.set(x, "CursorName", value.asInstanceOf[js.Any])
+    inline def setCursorName(value: String): Self = StObject.set(x, "CursorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchDirection(value: Double): Self = StObject.set(x, "FetchDirection", value.asInstanceOf[js.Any])
+    inline def setFetchDirection(value: Double): Self = StObject.set(x, "FetchDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchSize(value: Double): Self = StObject.set(x, "FetchSize", value.asInstanceOf[js.Any])
+    inline def setFetchSize(value: Double): Self = StObject.set(x, "FetchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetConcurrency(value: Double): Self = StObject.set(x, "ResultSetConcurrency", value.asInstanceOf[js.Any])
+    inline def setResultSetConcurrency(value: Double): Self = StObject.set(x, "ResultSetConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetType(value: Double): Self = StObject.set(x, "ResultSetType", value.asInstanceOf[js.Any])
+    inline def setResultSetType(value: Double): Self = StObject.set(x, "ResultSetType", value.asInstanceOf[js.Any])
   }
 }

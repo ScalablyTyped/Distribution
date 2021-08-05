@@ -18,15 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _SCHEMATYPEVARIETY extends StObject
 object _SCHEMATYPEVARIETY {
   
-  @scala.inline
-  def SCHEMATYPEVARIETY_ATOMIC: `0` = 0.asInstanceOf[`0`]
+  inline def SCHEMATYPEVARIETY_ATOMIC: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SCHEMATYPEVARIETY_LIST: `1` = 1.asInstanceOf[`1`]
+  inline def SCHEMATYPEVARIETY_LIST: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SCHEMATYPEVARIETY_NONE: `-1` = -1.asInstanceOf[`-1`]
+  inline def SCHEMATYPEVARIETY_NONE: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def SCHEMATYPEVARIETY_UNION: `2` = 2.asInstanceOf[`2`]
+  inline def SCHEMATYPEVARIETY_UNION: `2` = 2.asInstanceOf[`2`]
 }

@@ -20,52 +20,40 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def load(source: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def load(source: js.Any, typeSet: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(source.asInstanceOf[js.Any], typeSet.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def load(
+  inline def load(source: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def load(source: js.Any, typeSet: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(source.asInstanceOf[js.Any], typeSet.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def load(
     source: js.Any,
     typeSet: js.Any,
     callback: js.Function2[/* error */ String, /* data */ js.Any, js.Any]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(source.asInstanceOf[js.Any], typeSet.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def load(
+  inline def load(
     source: js.Any,
     typeSet: Unit,
     callback: js.Function2[/* error */ String, /* data */ js.Any, js.Any]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(source.asInstanceOf[js.Any], typeSet.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def loadData(source: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadData")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def loadData(source: js.Any, callback: js.Function2[/* error */ String, /* data */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("loadData")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def loadData(source: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadData")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def loadData(source: js.Any, callback: js.Function2[/* error */ String, /* data */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("loadData")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def saveAs(destination: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(destination.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def saveAs(destination: js.Any, mimeType: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(destination.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def saveAs(
+  inline def saveAs(destination: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(destination.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def saveAs(destination: js.Any, mimeType: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(destination.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def saveAs(
     destination: js.Any,
     mimeType: String,
     callback: js.Function2[/* error */ String, /* data */ js.Any, js.Any]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(destination.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def saveAs(
+  inline def saveAs(
     destination: js.Any,
     mimeType: Unit,
     callback: js.Function2[/* error */ String, /* data */ js.Any, js.Any]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(destination.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def toURI(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toURI")().asInstanceOf[js.Any]
-  @scala.inline
-  def toURI(mimeType: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toURI")(mimeType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toURI(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toURI")().asInstanceOf[js.Any]
+  inline def toURI(mimeType: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toURI")(mimeType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @js.native
   trait jBinary extends StObject {

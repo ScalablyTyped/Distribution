@@ -145,172 +145,117 @@ trait AndroidNotification extends StObject {
 }
 object AndroidNotification {
   
-  @scala.inline
-  def apply(): AndroidNotification = {
+  inline def apply(): AndroidNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidNotification]
   }
   
-  @scala.inline
-  implicit class AndroidNotificationMutableBuilder[Self <: AndroidNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidNotification](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyLocArgs(value: js.Array[String]): Self = StObject.set(x, "bodyLocArgs", value.asInstanceOf[js.Any])
+    inline def setBodyLocArgs(value: js.Array[String]): Self = StObject.set(x, "bodyLocArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyLocArgsUndefined: Self = StObject.set(x, "bodyLocArgs", js.undefined)
+    inline def setBodyLocArgsUndefined: Self = StObject.set(x, "bodyLocArgs", js.undefined)
     
-    @scala.inline
-    def setBodyLocArgsVarargs(value: String*): Self = StObject.set(x, "bodyLocArgs", js.Array(value :_*))
+    inline def setBodyLocArgsVarargs(value: String*): Self = StObject.set(x, "bodyLocArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setBodyLocKey(value: String): Self = StObject.set(x, "bodyLocKey", value.asInstanceOf[js.Any])
+    inline def setBodyLocKey(value: String): Self = StObject.set(x, "bodyLocKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyLocKeyUndefined: Self = StObject.set(x, "bodyLocKey", js.undefined)
+    inline def setBodyLocKeyUndefined: Self = StObject.set(x, "bodyLocKey", js.undefined)
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setClickAction(value: String): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
+    inline def setClickAction(value: String): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickActionUndefined: Self = StObject.set(x, "clickAction", js.undefined)
+    inline def setClickActionUndefined: Self = StObject.set(x, "clickAction", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDefaultLightSettings(value: Boolean): Self = StObject.set(x, "defaultLightSettings", value.asInstanceOf[js.Any])
+    inline def setDefaultLightSettings(value: Boolean): Self = StObject.set(x, "defaultLightSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLightSettingsUndefined: Self = StObject.set(x, "defaultLightSettings", js.undefined)
+    inline def setDefaultLightSettingsUndefined: Self = StObject.set(x, "defaultLightSettings", js.undefined)
     
-    @scala.inline
-    def setDefaultSound(value: Boolean): Self = StObject.set(x, "defaultSound", value.asInstanceOf[js.Any])
+    inline def setDefaultSound(value: Boolean): Self = StObject.set(x, "defaultSound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSoundUndefined: Self = StObject.set(x, "defaultSound", js.undefined)
+    inline def setDefaultSoundUndefined: Self = StObject.set(x, "defaultSound", js.undefined)
     
-    @scala.inline
-    def setDefaultVibrateTimings(value: Boolean): Self = StObject.set(x, "defaultVibrateTimings", value.asInstanceOf[js.Any])
+    inline def setDefaultVibrateTimings(value: Boolean): Self = StObject.set(x, "defaultVibrateTimings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVibrateTimingsUndefined: Self = StObject.set(x, "defaultVibrateTimings", js.undefined)
+    inline def setDefaultVibrateTimingsUndefined: Self = StObject.set(x, "defaultVibrateTimings", js.undefined)
     
-    @scala.inline
-    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
+    inline def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLightSettings(value: LightSettings): Self = StObject.set(x, "lightSettings", value.asInstanceOf[js.Any])
+    inline def setLightSettings(value: LightSettings): Self = StObject.set(x, "lightSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightSettingsUndefined: Self = StObject.set(x, "lightSettings", js.undefined)
+    inline def setLightSettingsUndefined: Self = StObject.set(x, "lightSettings", js.undefined)
     
-    @scala.inline
-    def setLocalOnly(value: Boolean): Self = StObject.set(x, "localOnly", value.asInstanceOf[js.Any])
+    inline def setLocalOnly(value: Boolean): Self = StObject.set(x, "localOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalOnlyUndefined: Self = StObject.set(x, "localOnly", js.undefined)
+    inline def setLocalOnlyUndefined: Self = StObject.set(x, "localOnly", js.undefined)
     
-    @scala.inline
-    def setNotificationCount(value: Double): Self = StObject.set(x, "notificationCount", value.asInstanceOf[js.Any])
+    inline def setNotificationCount(value: Double): Self = StObject.set(x, "notificationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationCountUndefined: Self = StObject.set(x, "notificationCount", js.undefined)
+    inline def setNotificationCountUndefined: Self = StObject.set(x, "notificationCount", js.undefined)
     
-    @scala.inline
-    def setNotificationPriority(value: String): Self = StObject.set(x, "notificationPriority", value.asInstanceOf[js.Any])
+    inline def setNotificationPriority(value: String): Self = StObject.set(x, "notificationPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationPriorityUndefined: Self = StObject.set(x, "notificationPriority", js.undefined)
+    inline def setNotificationPriorityUndefined: Self = StObject.set(x, "notificationPriority", js.undefined)
     
-    @scala.inline
-    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+    inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
+    inline def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickerUndefined: Self = StObject.set(x, "ticker", js.undefined)
+    inline def setTickerUndefined: Self = StObject.set(x, "ticker", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLocArgs(value: js.Array[String]): Self = StObject.set(x, "titleLocArgs", value.asInstanceOf[js.Any])
+    inline def setTitleLocArgs(value: js.Array[String]): Self = StObject.set(x, "titleLocArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLocArgsUndefined: Self = StObject.set(x, "titleLocArgs", js.undefined)
+    inline def setTitleLocArgsUndefined: Self = StObject.set(x, "titleLocArgs", js.undefined)
     
-    @scala.inline
-    def setTitleLocArgsVarargs(value: String*): Self = StObject.set(x, "titleLocArgs", js.Array(value :_*))
+    inline def setTitleLocArgsVarargs(value: String*): Self = StObject.set(x, "titleLocArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setTitleLocKey(value: String): Self = StObject.set(x, "titleLocKey", value.asInstanceOf[js.Any])
+    inline def setTitleLocKey(value: String): Self = StObject.set(x, "titleLocKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLocKeyUndefined: Self = StObject.set(x, "titleLocKey", js.undefined)
+    inline def setTitleLocKeyUndefined: Self = StObject.set(x, "titleLocKey", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVibrateTimings(value: js.Array[String]): Self = StObject.set(x, "vibrateTimings", value.asInstanceOf[js.Any])
+    inline def setVibrateTimings(value: js.Array[String]): Self = StObject.set(x, "vibrateTimings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVibrateTimingsUndefined: Self = StObject.set(x, "vibrateTimings", js.undefined)
+    inline def setVibrateTimingsUndefined: Self = StObject.set(x, "vibrateTimings", js.undefined)
     
-    @scala.inline
-    def setVibrateTimingsVarargs(value: String*): Self = StObject.set(x, "vibrateTimings", js.Array(value :_*))
+    inline def setVibrateTimingsVarargs(value: String*): Self = StObject.set(x, "vibrateTimings", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

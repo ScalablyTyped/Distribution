@@ -78,6 +78,5 @@ trait TreeStore extends StObject {
 }
 object TreeStore {
   
-  @scala.inline
-  def apply: TreeStore = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStore").asInstanceOf[TreeStore]
+  inline def apply: TreeStore = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStore").asInstanceOf[TreeStore]
 }

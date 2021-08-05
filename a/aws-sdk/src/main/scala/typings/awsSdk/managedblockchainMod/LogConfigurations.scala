@@ -13,19 +13,15 @@ trait LogConfigurations extends StObject {
 }
 object LogConfigurations {
   
-  @scala.inline
-  def apply(): LogConfigurations = {
+  inline def apply(): LogConfigurations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogConfigurations]
   }
   
-  @scala.inline
-  implicit class LogConfigurationsMutableBuilder[Self <: LogConfigurations] (val x: Self) extends AnyVal {
+  extension [Self <: LogConfigurations](x: Self) {
     
-    @scala.inline
-    def setCloudwatch(value: LogConfiguration): Self = StObject.set(x, "Cloudwatch", value.asInstanceOf[js.Any])
+    inline def setCloudwatch(value: LogConfiguration): Self = StObject.set(x, "Cloudwatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchUndefined: Self = StObject.set(x, "Cloudwatch", js.undefined)
+    inline def setCloudwatchUndefined: Self = StObject.set(x, "Cloudwatch", js.undefined)
   }
 }

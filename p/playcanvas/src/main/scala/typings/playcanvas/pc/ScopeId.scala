@@ -30,22 +30,17 @@ trait ScopeId extends StObject {
 }
 object ScopeId {
   
-  @scala.inline
-  def apply(getValue: () => js.Any, name: String, setValue: js.Any => Unit): ScopeId = {
+  inline def apply(getValue: () => js.Any, name: String, setValue: js.Any => Unit): ScopeId = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue), name = name.asInstanceOf[js.Any], setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[ScopeId]
   }
   
-  @scala.inline
-  implicit class ScopeIdMutableBuilder[Self <: ScopeId] (val x: Self) extends AnyVal {
+  extension [Self <: ScopeId](x: Self) {
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

@@ -158,8 +158,7 @@ object mod {
       *   `true` if either of the masks is `true` or an ObjectMask wrapping
       *   `true`.
       */
-    @scala.inline
-    def addMasks(masks: (ObjectMask | Mask)*): ObjectMask | `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("addMasks")(masks.asInstanceOf[js.Any]).asInstanceOf[ObjectMask | `true`]
+    inline def addMasks(masks: (ObjectMask | Mask)*): ObjectMask | `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("addMasks")(masks.asInstanceOf[js.Any]).asInstanceOf[ObjectMask | `true`]
     
     /**
       * Adds a set of masks together, but using a logical AND instead of a
@@ -169,8 +168,7 @@ object mod {
       * @returns The result of ANDing together the component masks. Will be
       *   `false` if the result would be an empty mask.
       */
-    @scala.inline
-    def andMasks(masks: (ObjectMask | Mask)*): ObjectMask | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("andMasks")(masks.asInstanceOf[js.Any]).asInstanceOf[ObjectMask | `false`]
+    inline def andMasks(masks: (ObjectMask | Mask)*): ObjectMask | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("andMasks")(masks.asInstanceOf[js.Any]).asInstanceOf[ObjectMask | `false`]
     
     /**
       * Creates a structured mask given a list of fields that should be included
@@ -178,36 +176,28 @@ object mod {
       * @param fields - Array of fields to include
       * @returns The created mask
       */
-    @scala.inline
-    def createMaskFromFieldList(fields: js.Array[String]): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaskFromFieldList")(fields.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
+    inline def createMaskFromFieldList(fields: js.Array[String]): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaskFromFieldList")(fields.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
     
-    @scala.inline
-    def invertMask(mask: Mask): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMask")(mask.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
+    inline def invertMask(mask: Mask): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMask")(mask.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
     /**
       * Inverts a mask. The resulting mask disallows all fields previously
       * allowed, and allows all fields previously disallowed.
       * @param - the mask to invert
       * @returns the inverted mask
       */
-    @scala.inline
-    def invertMask(mask: ObjectMask): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMask")(mask.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
+    inline def invertMask(mask: ObjectMask): ObjectMask = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMask")(mask.asInstanceOf[js.Any]).asInstanceOf[ObjectMask]
     
-    @scala.inline
-    def isObjectMask(mask: Mask): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMask")(mask.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObjectMask(mask: Mask): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMask")(mask.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     /**
       * Check if an object is an ObjectMask
       * @param obj - the object to determine if is an ObjectMask
       * @returns true if obj is an ObjectMask, false otherwise
       */
-    @scala.inline
-    def isObjectMask(mask: ObjectMask): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMask")(mask.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObjectMask(mask: ObjectMask): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMask")(mask.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def subtractMasks(min: Mask, sub: Mask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
-    @scala.inline
-    def subtractMasks(min: Mask, sub: ObjectMask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
-    @scala.inline
-    def subtractMasks(min: ObjectMask, sub: Mask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
+    inline def subtractMasks(min: Mask, sub: Mask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
+    inline def subtractMasks(min: Mask, sub: ObjectMask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
+    inline def subtractMasks(min: ObjectMask, sub: Mask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
     /**
       * Combines two or more masks such that the result mask matches fields
       * matched by the first mask but not the second
@@ -215,93 +205,62 @@ object mod {
       * @param sub - the subtrahend
       * @returns The result of subtracting the second mask from the first
       */
-    @scala.inline
-    def subtractMasks(min: ObjectMask, sub: ObjectMask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
+    inline def subtractMasks(min: ObjectMask, sub: ObjectMask): ObjectMask = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractMasks")(min.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[ObjectMask]
   }
   
-  @scala.inline
-  def collapseToDotted(obj: Record[String, js.Any]): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
-  @scala.inline
-  def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
-  @scala.inline
-  def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Boolean, stopAtArrays: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any], stopAtArrays.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
-  @scala.inline
-  def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Unit, stopAtArrays: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any], stopAtArrays.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def collapseToDotted(obj: Record[String, js.Any]): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  inline def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Boolean, stopAtArrays: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any], stopAtArrays.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def collapseToDotted(obj: Record[String, js.Any], includeRedundantLevels: Unit, stopAtArrays: Boolean): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToDotted")(obj.asInstanceOf[js.Any], includeRedundantLevels.asInstanceOf[js.Any], stopAtArrays.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @scala.inline
-  def deepCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def deepCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def deepEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def deepEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def deletePath(obj: Record[String, js.Any], path: String): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deletePath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def deletePath(obj: Record[String, js.Any], path: String): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deletePath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @scala.inline
-  def diffObjects(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def diffObjects(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def diffObjects_Record(objects: (Record[String, js.Any])*): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  inline def diffObjects_Record(objects: (Record[String, js.Any])*): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
   
-  @scala.inline
-  def dottedDiff(val1: js.Any, val2: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("dottedDiff")(val1.asInstanceOf[js.Any], val2.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def dottedDiff(val1: js.Any, val2: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("dottedDiff")(val1.asInstanceOf[js.Any], val2.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getDuplicates(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDuplicates")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getDuplicates(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDuplicates")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getPath(obj: Record[String, js.Any], path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getPath(obj: Record[String, js.Any], path: String, allowSkipArrays: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], allowSkipArrays.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getPath(obj: Record[String, js.Any], path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getPath(obj: Record[String, js.Any], path: String, allowSkipArrays: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], allowSkipArrays.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isEmpty(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmpty(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEmptyArray(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmptyArray(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEmptyObject(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmptyObject(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPlainObject(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPlainObject(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isScalar(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalar")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isScalar(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalar")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTerminal(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTerminal")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTerminal(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTerminal")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchDottedObject(doc: Record[String, js.Any], query: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchDottedObject")(doc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchDottedObject(doc: Record[String, js.Any], query: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchDottedObject")(doc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchObject(doc: Record[String, js.Any], query: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchObject")(doc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchObject(doc: Record[String, js.Any], query: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchObject")(doc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def merge(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def merge[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
-  @scala.inline
-  def merge[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
-  @scala.inline
-  def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
-  @scala.inline
-  def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
-  @scala.inline
-  def merge[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
-  @scala.inline
-  def merge[TTarget, TSource1, TSource2, TSource3](
+  inline def merge(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def merge[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  inline def merge[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  inline def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  inline def merge[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  inline def merge[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  inline def merge[TTarget, TSource1, TSource2, TSource3](
     target: TTarget,
     source1: TSource1,
     source2: TSource2,
     source3: TSource3,
     customizer: MergeCustomizer
   ): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
-  @scala.inline
-  def merge[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
-  @scala.inline
-  def merge[TTarget, TSource1, TSource2, TSource3, TSource4](
+  inline def merge[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
+  inline def merge[TTarget, TSource1, TSource2, TSource3, TSource4](
     target: TTarget,
     source1: TSource1,
     source2: TSource2,
@@ -310,30 +269,21 @@ object mod {
     customizer: MergeCustomizer
   ): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
   
-  @scala.inline
-  def mergeHeavy(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource1, TSource2, TSource3](
+  inline def mergeHeavy(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  inline def mergeHeavy[TTarget, TSource](target: TTarget, source: TSource, customizer: MergeCustomizer): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  inline def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  inline def mergeHeavy[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2, customizer: MergeCustomizer): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  inline def mergeHeavy[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  inline def mergeHeavy[TTarget, TSource1, TSource2, TSource3](
     target: TTarget,
     source1: TSource1,
     source2: TSource2,
     source3: TSource3,
     customizer: MergeCustomizer
   ): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
-  @scala.inline
-  def mergeHeavy[TTarget, TSource1, TSource2, TSource3, TSource4](
+  inline def mergeHeavy[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
+  inline def mergeHeavy[TTarget, TSource1, TSource2, TSource3, TSource4](
     target: TTarget,
     source1: TSource1,
     source2: TSource2,
@@ -342,33 +292,22 @@ object mod {
     customizer: MergeCustomizer
   ): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeHeavy")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any], customizer.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
   
-  @scala.inline
-  def mergeLight(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def mergeLight[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
-  @scala.inline
-  def mergeLight[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
-  @scala.inline
-  def mergeLight[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
-  @scala.inline
-  def mergeLight[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
+  inline def mergeLight(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def mergeLight[TTarget, TSource](target: TTarget, source: TSource): TTarget & TSource = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource]
+  inline def mergeLight[TTarget, TSource1, TSource2](target: TTarget, source1: TSource1, source2: TSource2): TTarget & TSource1 & TSource2 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2]
+  inline def mergeLight[TTarget, TSource1, TSource2, TSource3](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3): TTarget & TSource1 & TSource2 & TSource3 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3]
+  inline def mergeLight[TTarget, TSource1, TSource2, TSource3, TSource4](target: TTarget, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TTarget & TSource1 & TSource2 & TSource3 & TSource4 = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLight")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any], source4.asInstanceOf[js.Any])).asInstanceOf[TTarget & TSource1 & TSource2 & TSource3 & TSource4]
   
-  @scala.inline
-  def objectHash(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectHash")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def objectHash(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectHash")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def sanitizeDate(value: js.Any): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
+  inline def sanitizeDate(value: js.Any): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
   
-  @scala.inline
-  def scalarEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def scalarEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def setPath(obj: Record[String, js.Any], path: String, value: js.Any): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def setPath(obj: Record[String, js.Any], path: String, value: js.Any): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @scala.inline
-  def syncObject(toObj: Record[String, js.Any], fromObj: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncObject")(toObj.asInstanceOf[js.Any], fromObj.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
-  @scala.inline
-  def syncObject(toObj: Record[String, js.Any], fromObj: Record[String, js.Any], options: SyncObjectOptions): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncObject")(toObj.asInstanceOf[js.Any], fromObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def syncObject(toObj: Record[String, js.Any], fromObj: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncObject")(toObj.asInstanceOf[js.Any], fromObj.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def syncObject(toObj: Record[String, js.Any], fromObj: Record[String, js.Any], options: SyncObjectOptions): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncObject")(toObj.asInstanceOf[js.Any], fromObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
   type Mask = MaskObj | js.Array[MaskObj] | Boolean
   
@@ -377,8 +316,7 @@ object mod {
        with /* key */ StringDictionary[Mask]
   object MaskObj {
     
-    @scala.inline
-    def apply(): MaskObj = {
+    inline def apply(): MaskObj = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaskObj]
     }
@@ -430,8 +368,7 @@ object mod {
   }
   object SyncObjectOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onChange: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any,
       onField: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any
     ): SyncObjectOptions = {
@@ -439,16 +376,13 @@ object mod {
       __obj.asInstanceOf[SyncObjectOptions]
     }
     
-    @scala.inline
-    implicit class SyncObjectOptionsMutableBuilder[Self <: SyncObjectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SyncObjectOptions](x: Self) {
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnField(
+      inline def setOnField(
         value: (/* field */ String, /* toVal */ js.Any, /* fromVal */ js.Any, /* parentObj */ Record[String, js.Any]) => js.Any
       ): Self = StObject.set(x, "onField", js.Any.fromFunction4(value))
     }

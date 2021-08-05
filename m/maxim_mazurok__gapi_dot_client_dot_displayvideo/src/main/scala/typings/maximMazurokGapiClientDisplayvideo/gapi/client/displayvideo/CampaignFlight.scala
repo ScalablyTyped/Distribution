@@ -22,25 +22,19 @@ trait CampaignFlight extends StObject {
 }
 object CampaignFlight {
   
-  @scala.inline
-  def apply(): CampaignFlight = {
+  inline def apply(): CampaignFlight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CampaignFlight]
   }
   
-  @scala.inline
-  implicit class CampaignFlightMutableBuilder[Self <: CampaignFlight] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignFlight](x: Self) {
     
-    @scala.inline
-    def setPlannedDates(value: DateRange): Self = StObject.set(x, "plannedDates", value.asInstanceOf[js.Any])
+    inline def setPlannedDates(value: DateRange): Self = StObject.set(x, "plannedDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlannedDatesUndefined: Self = StObject.set(x, "plannedDates", js.undefined)
+    inline def setPlannedDatesUndefined: Self = StObject.set(x, "plannedDates", js.undefined)
     
-    @scala.inline
-    def setPlannedSpendAmountMicros(value: String): Self = StObject.set(x, "plannedSpendAmountMicros", value.asInstanceOf[js.Any])
+    inline def setPlannedSpendAmountMicros(value: String): Self = StObject.set(x, "plannedSpendAmountMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlannedSpendAmountMicrosUndefined: Self = StObject.set(x, "plannedSpendAmountMicros", js.undefined)
+    inline def setPlannedSpendAmountMicrosUndefined: Self = StObject.set(x, "plannedSpendAmountMicros", js.undefined)
   }
 }

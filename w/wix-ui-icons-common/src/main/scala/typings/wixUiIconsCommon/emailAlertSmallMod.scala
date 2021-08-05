@@ -22,20 +22,16 @@ object emailAlertSmallMod extends Shortcut {
   }
   object EmailAlertSmallProps {
     
-    @scala.inline
-    def apply(): EmailAlertSmallProps = {
+    inline def apply(): EmailAlertSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmailAlertSmallProps]
     }
     
-    @scala.inline
-    implicit class EmailAlertSmallPropsMutableBuilder[Self <: EmailAlertSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: EmailAlertSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

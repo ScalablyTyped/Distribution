@@ -17,20 +17,16 @@ object formContextMod {
   }
   object FormContextProps {
     
-    @scala.inline
-    def apply(): FormContextProps = {
+    inline def apply(): FormContextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormContextProps]
     }
     
-    @scala.inline
-    implicit class FormContextPropsMutableBuilder[Self <: FormContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormContextProps](x: Self) {
       
-      @scala.inline
-      def setIsFluid(value: Boolean): Self = StObject.set(x, "isFluid", value.asInstanceOf[js.Any])
+      inline def setIsFluid(value: Boolean): Self = StObject.set(x, "isFluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFluidUndefined: Self = StObject.set(x, "isFluid", js.undefined)
+      inline def setIsFluidUndefined: Self = StObject.set(x, "isFluid", js.undefined)
     }
   }
 }

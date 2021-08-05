@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMailMergeDataSource extends StObject
 object WdMailMergeDataSource {
   
-  @scala.inline
-  def wdMergeInfoFromAccessDDE: `1` = 1.asInstanceOf[`1`]
+  inline def wdMergeInfoFromAccessDDE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdMergeInfoFromExcelDDE: `2` = 2.asInstanceOf[`2`]
+  inline def wdMergeInfoFromExcelDDE: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdMergeInfoFromMSQueryDDE: `3` = 3.asInstanceOf[`3`]
+  inline def wdMergeInfoFromMSQueryDDE: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdMergeInfoFromODBC: `4` = 4.asInstanceOf[`4`]
+  inline def wdMergeInfoFromODBC: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdMergeInfoFromODSO: `5` = 5.asInstanceOf[`5`]
+  inline def wdMergeInfoFromODSO: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdMergeInfoFromWord: `0` = 0.asInstanceOf[`0`]
+  inline def wdMergeInfoFromWord: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdNoMergeInfo: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdNoMergeInfo: `-1` = -1.asInstanceOf[`-1`]
 }

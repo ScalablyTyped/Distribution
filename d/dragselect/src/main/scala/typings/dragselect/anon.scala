@@ -32,32 +32,24 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): Bottom = {
+    inline def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): Bottom = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,127 +100,88 @@ object anon {
   }
   object PartialareaHTMLElementSVG {
     
-    @scala.inline
-    def apply(): PartialareaHTMLElementSVG = {
+    inline def apply(): PartialareaHTMLElementSVG = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialareaHTMLElementSVG]
     }
     
-    @scala.inline
-    implicit class PartialareaHTMLElementSVGMutableBuilder[Self <: PartialareaHTMLElementSVG] (val x: Self) extends AnyVal {
+    extension [Self <: PartialareaHTMLElementSVG](x: Self) {
       
-      @scala.inline
-      def setArea(value: HTMLElement | SVGElement | Document): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: HTMLElement | SVGElement | Document): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+      inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
       
-      @scala.inline
-      def setAutoScrollSpeed(value: Double): Self = StObject.set(x, "autoScrollSpeed", value.asInstanceOf[js.Any])
+      inline def setAutoScrollSpeed(value: Double): Self = StObject.set(x, "autoScrollSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScrollSpeedUndefined: Self = StObject.set(x, "autoScrollSpeed", js.undefined)
+      inline def setAutoScrollSpeedUndefined: Self = StObject.set(x, "autoScrollSpeed", js.undefined)
       
-      @scala.inline
-      def setCallback(
+      inline def setCallback(
         value: (/* selected */ js.Array[HTMLElement | SVGElement], /* event */ MouseEvent | TouchEvent) => Unit
       ): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCustomStyles(value: Boolean): Self = StObject.set(x, "customStyles", value.asInstanceOf[js.Any])
+      inline def setCustomStyles(value: Boolean): Self = StObject.set(x, "customStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomStylesUndefined: Self = StObject.set(x, "customStyles", js.undefined)
+      inline def setCustomStylesUndefined: Self = StObject.set(x, "customStyles", js.undefined)
       
-      @scala.inline
-      def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
+      inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
+      inline def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
       
-      @scala.inline
-      def setMultiSelectKeys(value: js.Array[ctrlKey | shiftKey | metaKey | altKey]): Self = StObject.set(x, "multiSelectKeys", value.asInstanceOf[js.Any])
+      inline def setMultiSelectKeys(value: js.Array[ctrlKey | shiftKey | metaKey | altKey]): Self = StObject.set(x, "multiSelectKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectKeysUndefined: Self = StObject.set(x, "multiSelectKeys", js.undefined)
+      inline def setMultiSelectKeysUndefined: Self = StObject.set(x, "multiSelectKeys", js.undefined)
       
-      @scala.inline
-      def setMultiSelectKeysVarargs(value: (ctrlKey | shiftKey | metaKey | altKey)*): Self = StObject.set(x, "multiSelectKeys", js.Array(value :_*))
+      inline def setMultiSelectKeysVarargs(value: (ctrlKey | shiftKey | metaKey | altKey)*): Self = StObject.set(x, "multiSelectKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiSelectMode(value: Boolean): Self = StObject.set(x, "multiSelectMode", value.asInstanceOf[js.Any])
+      inline def setMultiSelectMode(value: Boolean): Self = StObject.set(x, "multiSelectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectModeUndefined: Self = StObject.set(x, "multiSelectMode", js.undefined)
+      inline def setMultiSelectModeUndefined: Self = StObject.set(x, "multiSelectMode", js.undefined)
       
-      @scala.inline
-      def setOnDragMove(value: /* event */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
+      inline def setOnDragMove(value: /* event */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
+      inline def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: /* event */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* event */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartBegin(value: /* event */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onDragStartBegin", js.Any.fromFunction1(value))
+      inline def setOnDragStartBegin(value: /* event */ MouseEvent | TouchEvent => Unit): Self = StObject.set(x, "onDragStartBegin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartBeginUndefined: Self = StObject.set(x, "onDragStartBegin", js.undefined)
+      inline def setOnDragStartBeginUndefined: Self = StObject.set(x, "onDragStartBegin", js.undefined)
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnElementSelect(value: /* selected */ HTMLElement | SVGElement => Unit): Self = StObject.set(x, "onElementSelect", js.Any.fromFunction1(value))
+      inline def setOnElementSelect(value: /* selected */ HTMLElement | SVGElement => Unit): Self = StObject.set(x, "onElementSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnElementSelectUndefined: Self = StObject.set(x, "onElementSelect", js.undefined)
+      inline def setOnElementSelectUndefined: Self = StObject.set(x, "onElementSelect", js.undefined)
       
-      @scala.inline
-      def setOnElementUnselect(value: /* selected */ HTMLElement | SVGElement => Unit): Self = StObject.set(x, "onElementUnselect", js.Any.fromFunction1(value))
+      inline def setOnElementUnselect(value: /* selected */ HTMLElement | SVGElement => Unit): Self = StObject.set(x, "onElementUnselect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnElementUnselectUndefined: Self = StObject.set(x, "onElementUnselect", js.undefined)
+      inline def setOnElementUnselectUndefined: Self = StObject.set(x, "onElementUnselect", js.undefined)
       
-      @scala.inline
-      def setSelectableClass(value: String): Self = StObject.set(x, "selectableClass", value.asInstanceOf[js.Any])
+      inline def setSelectableClass(value: String): Self = StObject.set(x, "selectableClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableClassUndefined: Self = StObject.set(x, "selectableClass", js.undefined)
+      inline def setSelectableClassUndefined: Self = StObject.set(x, "selectableClass", js.undefined)
       
-      @scala.inline
-      def setSelectables(value: (ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement): Self = StObject.set(x, "selectables", value.asInstanceOf[js.Any])
+      inline def setSelectables(value: (ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement): Self = StObject.set(x, "selectables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectablesUndefined: Self = StObject.set(x, "selectables", js.undefined)
+      inline def setSelectablesUndefined: Self = StObject.set(x, "selectables", js.undefined)
       
-      @scala.inline
-      def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
+      inline def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
+      inline def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
       
-      @scala.inline
-      def setSelector(value: HTMLElement): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: HTMLElement): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorClass(value: String): Self = StObject.set(x, "selectorClass", value.asInstanceOf[js.Any])
+      inline def setSelectorClass(value: String): Self = StObject.set(x, "selectorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorClassUndefined: Self = StObject.set(x, "selectorClass", js.undefined)
+      inline def setSelectorClassUndefined: Self = StObject.set(x, "selectorClass", js.undefined)
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -240,20 +193,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,20 +214,16 @@ object anon {
   }
   object Y {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Y = {
+    inline def apply(x: Double, y: Double): Y = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Y]
     }
     
-    @scala.inline
-    implicit class YMutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
+    extension [Self <: Y](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

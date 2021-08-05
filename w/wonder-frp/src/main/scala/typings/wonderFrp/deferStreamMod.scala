@@ -12,7 +12,7 @@ object deferStreamMod {
   class DeferStream protected () extends BaseStream {
     def this(buildStreamFunc: js.Function) = this()
     
-    var _buildStreamFunc: js.Any = js.native
+    /* private */ var _buildStreamFunc: js.Any = js.native
   }
   /* static members */
   object DeferStream {
@@ -21,7 +21,6 @@ object deferStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(buildStreamFunc: js.Function): DeferStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buildStreamFunc.asInstanceOf[js.Any]).asInstanceOf[DeferStream]
+    inline def create(buildStreamFunc: js.Function): DeferStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buildStreamFunc.asInstanceOf[js.Any]).asInstanceOf[DeferStream]
   }
 }

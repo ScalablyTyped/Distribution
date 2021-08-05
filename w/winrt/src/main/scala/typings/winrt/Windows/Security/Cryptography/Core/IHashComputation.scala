@@ -13,19 +13,15 @@ trait IHashComputation extends StObject {
 }
 object IHashComputation {
   
-  @scala.inline
-  def apply(append: IBuffer => Unit, getValueAndReset: () => IBuffer): IHashComputation = {
+  inline def apply(append: IBuffer => Unit, getValueAndReset: () => IBuffer): IHashComputation = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), getValueAndReset = js.Any.fromFunction0(getValueAndReset))
     __obj.asInstanceOf[IHashComputation]
   }
   
-  @scala.inline
-  implicit class IHashComputationMutableBuilder[Self <: IHashComputation] (val x: Self) extends AnyVal {
+  extension [Self <: IHashComputation](x: Self) {
     
-    @scala.inline
-    def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValueAndReset(value: () => IBuffer): Self = StObject.set(x, "getValueAndReset", js.Any.fromFunction0(value))
+    inline def setGetValueAndReset(value: () => IBuffer): Self = StObject.set(x, "getValueAndReset", js.Any.fromFunction0(value))
   }
 }

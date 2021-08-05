@@ -18,28 +18,21 @@ trait BackendBucketCdnPolicy extends StObject {
 }
 object BackendBucketCdnPolicy {
   
-  @scala.inline
-  def apply(): BackendBucketCdnPolicy = {
+  inline def apply(): BackendBucketCdnPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackendBucketCdnPolicy]
   }
   
-  @scala.inline
-  implicit class BackendBucketCdnPolicyMutableBuilder[Self <: BackendBucketCdnPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: BackendBucketCdnPolicy](x: Self) {
     
-    @scala.inline
-    def setSignedUrlCacheMaxAgeSec(value: String): Self = StObject.set(x, "signedUrlCacheMaxAgeSec", value.asInstanceOf[js.Any])
+    inline def setSignedUrlCacheMaxAgeSec(value: String): Self = StObject.set(x, "signedUrlCacheMaxAgeSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUrlCacheMaxAgeSecUndefined: Self = StObject.set(x, "signedUrlCacheMaxAgeSec", js.undefined)
+    inline def setSignedUrlCacheMaxAgeSecUndefined: Self = StObject.set(x, "signedUrlCacheMaxAgeSec", js.undefined)
     
-    @scala.inline
-    def setSignedUrlKeyNames(value: js.Array[String]): Self = StObject.set(x, "signedUrlKeyNames", value.asInstanceOf[js.Any])
+    inline def setSignedUrlKeyNames(value: js.Array[String]): Self = StObject.set(x, "signedUrlKeyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUrlKeyNamesUndefined: Self = StObject.set(x, "signedUrlKeyNames", js.undefined)
+    inline def setSignedUrlKeyNamesUndefined: Self = StObject.set(x, "signedUrlKeyNames", js.undefined)
     
-    @scala.inline
-    def setSignedUrlKeyNamesVarargs(value: String*): Self = StObject.set(x, "signedUrlKeyNames", js.Array(value :_*))
+    inline def setSignedUrlKeyNamesVarargs(value: String*): Self = StObject.set(x, "signedUrlKeyNames", js.Array(value :_*))
   }
 }

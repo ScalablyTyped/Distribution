@@ -14,20 +14,16 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: AddressObject, bidModifier: Double): typings.googleAdwordsScripts.anon.Address = {
+    inline def apply(address: AddressObject, bidModifier: Double): typings.googleAdwordsScripts.anon.Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], bidModifier = bidModifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.googleAdwordsScripts.anon.Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: typings.googleAdwordsScripts.anon.Address] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAdwordsScripts.anon.Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: AddressObject): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: AddressObject): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
+      inline def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: Double): Id = {
+    inline def apply(id: Double): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

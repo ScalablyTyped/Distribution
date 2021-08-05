@@ -49,26 +49,20 @@ object mod {
   }
   object ReactSignatureCanvasProps {
     
-    @scala.inline
-    def apply(): ReactSignatureCanvasProps = {
+    inline def apply(): ReactSignatureCanvasProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactSignatureCanvasProps]
     }
     
-    @scala.inline
-    implicit class ReactSignatureCanvasPropsMutableBuilder[Self <: ReactSignatureCanvasProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactSignatureCanvasProps](x: Self) {
       
-      @scala.inline
-      def setCanvasProps(value: CanvasHTMLAttributes[HTMLCanvasElement]): Self = StObject.set(x, "canvasProps", value.asInstanceOf[js.Any])
+      inline def setCanvasProps(value: CanvasHTMLAttributes[HTMLCanvasElement]): Self = StObject.set(x, "canvasProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasPropsUndefined: Self = StObject.set(x, "canvasProps", js.undefined)
+      inline def setCanvasPropsUndefined: Self = StObject.set(x, "canvasProps", js.undefined)
       
-      @scala.inline
-      def setClearOnResize(value: Boolean): Self = StObject.set(x, "clearOnResize", value.asInstanceOf[js.Any])
+      inline def setClearOnResize(value: Boolean): Self = StObject.set(x, "clearOnResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearOnResizeUndefined: Self = StObject.set(x, "clearOnResize", js.undefined)
+      inline def setClearOnResizeUndefined: Self = StObject.set(x, "clearOnResize", js.undefined)
     }
   }
 }

@@ -23,22 +23,17 @@ trait DeploymentApplicationConfig extends StObject {
 }
 object DeploymentApplicationConfig {
   
-  @scala.inline
-  def apply(application: Arn, applicationVersion: DeploymentVersion, launchConfig: DeploymentLaunchConfig): DeploymentApplicationConfig = {
+  inline def apply(application: Arn, applicationVersion: DeploymentVersion, launchConfig: DeploymentLaunchConfig): DeploymentApplicationConfig = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], applicationVersion = applicationVersion.asInstanceOf[js.Any], launchConfig = launchConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentApplicationConfig]
   }
   
-  @scala.inline
-  implicit class DeploymentApplicationConfigMutableBuilder[Self <: DeploymentApplicationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentApplicationConfig](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersion(value: DeploymentVersion): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: DeploymentVersion): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchConfig(value: DeploymentLaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
+    inline def setLaunchConfig(value: DeploymentLaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
   }
 }

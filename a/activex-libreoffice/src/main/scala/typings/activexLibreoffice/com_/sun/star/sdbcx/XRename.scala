@@ -24,16 +24,13 @@ trait XRename
 }
 object XRename {
   
-  @scala.inline
-  def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, rename: String => Unit): XRename = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, rename: String => Unit): XRename = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), rename = js.Any.fromFunction1(rename))
     __obj.asInstanceOf[XRename]
   }
   
-  @scala.inline
-  implicit class XRenameMutableBuilder[Self <: XRename] (val x: Self) extends AnyVal {
+  extension [Self <: XRename](x: Self) {
     
-    @scala.inline
-    def setRename(value: String => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
+    inline def setRename(value: String => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
   }
 }

@@ -19,16 +19,13 @@ trait GetDirectPropertyTolerantResult
 }
 object GetDirectPropertyTolerantResult {
   
-  @scala.inline
-  def apply(Name: String, Result: Double, State: PropertyState, Value: js.Any): GetDirectPropertyTolerantResult = {
+  inline def apply(Name: String, Result: Double, State: PropertyState, Value: js.Any): GetDirectPropertyTolerantResult = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDirectPropertyTolerantResult]
   }
   
-  @scala.inline
-  implicit class GetDirectPropertyTolerantResultMutableBuilder[Self <: GetDirectPropertyTolerantResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDirectPropertyTolerantResult](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

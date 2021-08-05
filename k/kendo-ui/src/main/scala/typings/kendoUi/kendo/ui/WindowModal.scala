@@ -10,19 +10,15 @@ trait WindowModal extends StObject {
 }
 object WindowModal {
   
-  @scala.inline
-  def apply(): WindowModal = {
+  inline def apply(): WindowModal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowModal]
   }
   
-  @scala.inline
-  implicit class WindowModalMutableBuilder[Self <: WindowModal] (val x: Self) extends AnyVal {
+  extension [Self <: WindowModal](x: Self) {
     
-    @scala.inline
-    def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+    inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
+    inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
   }
 }

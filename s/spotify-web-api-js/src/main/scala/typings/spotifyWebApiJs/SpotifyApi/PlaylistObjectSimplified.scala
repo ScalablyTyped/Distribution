@@ -17,8 +17,7 @@ trait PlaylistObjectSimplified
 }
 object PlaylistObjectSimplified {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collaborative: Boolean,
     external_urls: ExternalUrlObject,
     href: String,
@@ -36,10 +35,8 @@ object PlaylistObjectSimplified {
     __obj.asInstanceOf[PlaylistObjectSimplified]
   }
   
-  @scala.inline
-  implicit class PlaylistObjectSimplifiedMutableBuilder[Self <: PlaylistObjectSimplified] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistObjectSimplified](x: Self) {
     
-    @scala.inline
-    def setTracks(value: Href): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: Href): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }

@@ -15,25 +15,19 @@ trait ToneAnalysis extends StObject {
 }
 object ToneAnalysis {
   
-  @scala.inline
-  def apply(document_tone: DocumentAnalysis): ToneAnalysis = {
+  inline def apply(document_tone: DocumentAnalysis): ToneAnalysis = {
     val __obj = js.Dynamic.literal(document_tone = document_tone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneAnalysis]
   }
   
-  @scala.inline
-  implicit class ToneAnalysisMutableBuilder[Self <: ToneAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: ToneAnalysis](x: Self) {
     
-    @scala.inline
-    def setDocument_tone(value: DocumentAnalysis): Self = StObject.set(x, "document_tone", value.asInstanceOf[js.Any])
+    inline def setDocument_tone(value: DocumentAnalysis): Self = StObject.set(x, "document_tone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentences_tone(value: js.Array[SentenceAnalysis]): Self = StObject.set(x, "sentences_tone", value.asInstanceOf[js.Any])
+    inline def setSentences_tone(value: js.Array[SentenceAnalysis]): Self = StObject.set(x, "sentences_tone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentences_toneUndefined: Self = StObject.set(x, "sentences_tone", js.undefined)
+    inline def setSentences_toneUndefined: Self = StObject.set(x, "sentences_tone", js.undefined)
     
-    @scala.inline
-    def setSentences_toneVarargs(value: SentenceAnalysis*): Self = StObject.set(x, "sentences_tone", js.Array(value :_*))
+    inline def setSentences_toneVarargs(value: SentenceAnalysis*): Self = StObject.set(x, "sentences_tone", js.Array(value :_*))
   }
 }

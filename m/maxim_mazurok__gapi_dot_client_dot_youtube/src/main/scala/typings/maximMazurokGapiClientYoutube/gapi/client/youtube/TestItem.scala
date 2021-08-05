@@ -14,31 +14,23 @@ trait TestItem extends StObject {
 }
 object TestItem {
   
-  @scala.inline
-  def apply(): TestItem = {
+  inline def apply(): TestItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestItem]
   }
   
-  @scala.inline
-  implicit class TestItemMutableBuilder[Self <: TestItem] (val x: Self) extends AnyVal {
+  extension [Self <: TestItem](x: Self) {
     
-    @scala.inline
-    def setGaia(value: String): Self = StObject.set(x, "gaia", value.asInstanceOf[js.Any])
+    inline def setGaia(value: String): Self = StObject.set(x, "gaia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaiaUndefined: Self = StObject.set(x, "gaia", js.undefined)
+    inline def setGaiaUndefined: Self = StObject.set(x, "gaia", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: js.Any): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: js.Any): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

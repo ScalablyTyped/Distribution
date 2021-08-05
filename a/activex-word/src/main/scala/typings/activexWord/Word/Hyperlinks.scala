@@ -162,7 +162,7 @@ trait Hyperlinks extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.Hyperlinks_typekey")
+  /* private */ @JSName("Word.Hyperlinks_typekey")
   var WordDotHyperlinks_typekey: Hyperlinks = js.native
   
   def _Add(Anchor: js.Any): Hyperlink = js.native

@@ -20,20 +20,20 @@ object teenyStatisticsMod {
       * @private
       * @default 0
       */
-    var _concurrentRequests: js.Any = js.native
+    /* private */ var _concurrentRequests: js.Any = js.native
     
     /**
       * @type {boolean}
       * @private
       * @default false
       */
-    var _didConcurrentRequestWarn: js.Any = js.native
+    /* private */ var _didConcurrentRequestWarn: js.Any = js.native
     
     /**
       * @type {TeenyStatisticsConfig}
       * @private
       */
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /**
       * @readonly
@@ -100,8 +100,7 @@ object teenyStatisticsMod {
     @JSImport("teeny-request/build/src/TeenyStatistics", "TeenyStatistics._prepareOptions")
     @js.native
     def _prepareOptions: js.Any = js.native
-    @scala.inline
-    def _prepareOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_prepareOptions")(x.asInstanceOf[js.Any])
+    inline def _prepareOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_prepareOptions")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("teeny-request/build/src/TeenyStatistics", "TeenyStatisticsWarning")
@@ -141,17 +140,14 @@ object teenyStatisticsMod {
   }
   object TeenyStatisticsConfig {
     
-    @scala.inline
-    def apply(concurrentRequests: Double): TeenyStatisticsConfig = {
+    inline def apply(concurrentRequests: Double): TeenyStatisticsConfig = {
       val __obj = js.Dynamic.literal(concurrentRequests = concurrentRequests.asInstanceOf[js.Any])
       __obj.asInstanceOf[TeenyStatisticsConfig]
     }
     
-    @scala.inline
-    implicit class TeenyStatisticsConfigMutableBuilder[Self <: TeenyStatisticsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TeenyStatisticsConfig](x: Self) {
       
-      @scala.inline
-      def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
+      inline def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,17 +157,14 @@ object teenyStatisticsMod {
   }
   object TeenyStatisticsCounters {
     
-    @scala.inline
-    def apply(concurrentRequests: Double): TeenyStatisticsCounters = {
+    inline def apply(concurrentRequests: Double): TeenyStatisticsCounters = {
       val __obj = js.Dynamic.literal(concurrentRequests = concurrentRequests.asInstanceOf[js.Any])
       __obj.asInstanceOf[TeenyStatisticsCounters]
     }
     
-    @scala.inline
-    implicit class TeenyStatisticsCountersMutableBuilder[Self <: TeenyStatisticsCounters] (val x: Self) extends AnyVal {
+    extension [Self <: TeenyStatisticsCounters](x: Self) {
       
-      @scala.inline
-      def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
+      inline def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,20 +181,16 @@ object teenyStatisticsMod {
   }
   object TeenyStatisticsOptions {
     
-    @scala.inline
-    def apply(): TeenyStatisticsOptions = {
+    inline def apply(): TeenyStatisticsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TeenyStatisticsOptions]
     }
     
-    @scala.inline
-    implicit class TeenyStatisticsOptionsMutableBuilder[Self <: TeenyStatisticsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TeenyStatisticsOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
+      inline def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentRequestsUndefined: Self = StObject.set(x, "concurrentRequests", js.undefined)
+      inline def setConcurrentRequestsUndefined: Self = StObject.set(x, "concurrentRequests", js.undefined)
     }
   }
 }

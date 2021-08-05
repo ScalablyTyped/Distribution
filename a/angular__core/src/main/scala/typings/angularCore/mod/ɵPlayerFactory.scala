@@ -11,16 +11,13 @@ trait ɵPlayerFactory extends StObject {
 }
 object ɵPlayerFactory {
   
-  @scala.inline
-  def apply(): ɵPlayerFactory = {
+  inline def apply(): ɵPlayerFactory = {
     val __obj = js.Dynamic.literal(__brand__ = "Brand for PlayerFactory that nothing will match")
     __obj.asInstanceOf[ɵPlayerFactory]
   }
   
-  @scala.inline
-  implicit class ɵPlayerFactoryMutableBuilder[Self <: ɵPlayerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ɵPlayerFactory](x: Self) {
     
-    @scala.inline
-    def set__brand__(value: `Brand for PlayerFactory that nothing will match`): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: `Brand for PlayerFactory that nothing will match`): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

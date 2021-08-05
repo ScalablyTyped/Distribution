@@ -46,7 +46,7 @@ object viewProcessorMod {
       * @return {!ViewCache}
       * @private
       */
-    var ackUserWrite_ : js.Any = js.native
+    /* private */ var ackUserWrite_ : js.Any = js.native
     
     /**
       * @param {!Node} node
@@ -54,7 +54,7 @@ object viewProcessorMod {
       * @return {!Node}
       * @private
       */
-    var applyMerge_ : js.Any = js.native
+    /* private */ var applyMerge_ : js.Any = js.native
     
     /**
       * @param {!ViewCache} oldViewCache
@@ -77,7 +77,7 @@ object viewProcessorMod {
       * @return {!ViewCache}
       * @private
       */
-    var applyServerMerge_ : js.Any = js.native
+    /* private */ var applyServerMerge_ : js.Any = js.native
     
     def applyServerOverwrite_(
       oldViewCache: ViewCache,
@@ -119,7 +119,7 @@ object viewProcessorMod {
       * @return {!ViewCache}
       * @private
       */
-    var applyUserMerge_ : js.Any = js.native
+    /* private */ var applyUserMerge_ : js.Any = js.native
     
     def applyUserOverwrite_(
       oldViewCache: ViewCache,
@@ -153,7 +153,7 @@ object viewProcessorMod {
       */
     def assertIndexed(viewCache: ViewCache): Unit = js.native
     
-    val filter_ : js.Any = js.native
+    /* private */ val filter_ : js.Any = js.native
     
     /**
       * @param {!ViewCache} viewCache
@@ -164,7 +164,7 @@ object viewProcessorMod {
       * @return {!ViewCache}
       * @private
       */
-    var generateEventCacheAfterServerEvent_ : js.Any = js.native
+    /* private */ var generateEventCacheAfterServerEvent_ : js.Any = js.native
     
     /**
       * @param {!ViewCache} viewCache
@@ -174,7 +174,7 @@ object viewProcessorMod {
       * @return {!ViewCache}
       * @private
       */
-    var listenComplete_ : js.Any = js.native
+    /* private */ var listenComplete_ : js.Any = js.native
     
     /**
       * @param {!ViewCache} viewCache
@@ -185,7 +185,7 @@ object viewProcessorMod {
       * @return {!ViewCache}
       * @private
       */
-    var revertUserWrite_ : js.Any = js.native
+    /* private */ var revertUserWrite_ : js.Any = js.native
   }
   /* static members */
   object ViewProcessor {
@@ -203,8 +203,7 @@ object viewProcessorMod {
     @JSImport("@firebase/database/dist/src/core/view/ViewProcessor", "ViewProcessor.cacheHasChild_")
     @js.native
     def cacheHasChild_ : js.Any = js.native
-    @scala.inline
-    def cacheHasChild__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHasChild_")(x.asInstanceOf[js.Any])
+    inline def cacheHasChild__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHasChild_")(x.asInstanceOf[js.Any])
     
     /**
       * @param {!ViewCache} oldViewCache
@@ -215,7 +214,6 @@ object viewProcessorMod {
     @JSImport("@firebase/database/dist/src/core/view/ViewProcessor", "ViewProcessor.maybeAddValueEvent_")
     @js.native
     def maybeAddValueEvent_ : js.Any = js.native
-    @scala.inline
-    def maybeAddValueEvent__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maybeAddValueEvent_")(x.asInstanceOf[js.Any])
+    inline def maybeAddValueEvent__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maybeAddValueEvent_")(x.asInstanceOf[js.Any])
   }
 }

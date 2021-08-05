@@ -12,19 +12,15 @@ trait Pathname extends StObject {
 }
 object Pathname {
   
-  @scala.inline
-  def apply(pathname: String, search: String): Pathname = {
+  inline def apply(pathname: String, search: String): Pathname = {
     val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pathname]
   }
   
-  @scala.inline
-  implicit class PathnameMutableBuilder[Self <: Pathname] (val x: Self) extends AnyVal {
+  extension [Self <: Pathname](x: Self) {
     
-    @scala.inline
-    def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+    inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
   }
 }

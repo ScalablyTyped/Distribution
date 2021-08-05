@@ -27,8 +27,7 @@ trait KnockoutVirtualElements extends StObject {
 }
 object KnockoutVirtualElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedBindings: StringDictionary[Boolean],
     childNodes: KnockoutVirtualElement => js.Array[Node],
     emptyNode: KnockoutVirtualElement => Unit,
@@ -42,31 +41,22 @@ object KnockoutVirtualElements {
     __obj.asInstanceOf[KnockoutVirtualElements]
   }
   
-  @scala.inline
-  implicit class KnockoutVirtualElementsMutableBuilder[Self <: KnockoutVirtualElements] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutVirtualElements](x: Self) {
     
-    @scala.inline
-    def setAllowedBindings(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedBindings", value.asInstanceOf[js.Any])
+    inline def setAllowedBindings(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodes(value: KnockoutVirtualElement => js.Array[Node]): Self = StObject.set(x, "childNodes", js.Any.fromFunction1(value))
+    inline def setChildNodes(value: KnockoutVirtualElement => js.Array[Node]): Self = StObject.set(x, "childNodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmptyNode(value: KnockoutVirtualElement => Unit): Self = StObject.set(x, "emptyNode", js.Any.fromFunction1(value))
+    inline def setEmptyNode(value: KnockoutVirtualElement => Unit): Self = StObject.set(x, "emptyNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirstChild(value: KnockoutVirtualElement => KnockoutVirtualElement): Self = StObject.set(x, "firstChild", js.Any.fromFunction1(value))
+    inline def setFirstChild(value: KnockoutVirtualElement => KnockoutVirtualElement): Self = StObject.set(x, "firstChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertAfter(value: (KnockoutVirtualElement, Node, Node) => Unit): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
+    inline def setInsertAfter(value: (KnockoutVirtualElement, Node, Node) => Unit): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNextSibling(value: KnockoutVirtualElement => Node): Self = StObject.set(x, "nextSibling", js.Any.fromFunction1(value))
+    inline def setNextSibling(value: KnockoutVirtualElement => Node): Self = StObject.set(x, "nextSibling", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrepend(value: (KnockoutVirtualElement, Node) => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
+    inline def setPrepend(value: (KnockoutVirtualElement, Node) => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDomNodeChildren(value: (KnockoutVirtualElement, Dictindex) => Unit): Self = StObject.set(x, "setDomNodeChildren", js.Any.fromFunction2(value))
+    inline def setSetDomNodeChildren(value: (KnockoutVirtualElement, Dictindex) => Unit): Self = StObject.set(x, "setDomNodeChildren", js.Any.fromFunction2(value))
   }
 }

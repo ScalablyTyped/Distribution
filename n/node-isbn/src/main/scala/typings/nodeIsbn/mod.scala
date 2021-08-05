@@ -54,8 +54,7 @@ object mod extends Shortcut {
     }
     object Book {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         authors: js.Array[String],
         categories: js.Array[String],
         industryIdentifiers: js.Array[String],
@@ -70,65 +69,45 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Book]
       }
       
-      @scala.inline
-      implicit class BookMutableBuilder[Self <: Book] (val x: Self) extends AnyVal {
+      extension [Self <: Book](x: Self) {
         
-        @scala.inline
-        def setAuthors(value: js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+        inline def setAuthors(value: js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
+        inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
         
-        @scala.inline
-        def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+        inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setImageLinks(value: SmallThumbnail): Self = StObject.set(x, "imageLinks", value.asInstanceOf[js.Any])
+        inline def setImageLinks(value: SmallThumbnail): Self = StObject.set(x, "imageLinks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageLinksUndefined: Self = StObject.set(x, "imageLinks", js.undefined)
+        inline def setImageLinksUndefined: Self = StObject.set(x, "imageLinks", js.undefined)
         
-        @scala.inline
-        def setIndustryIdentifiers(value: js.Array[String]): Self = StObject.set(x, "industryIdentifiers", value.asInstanceOf[js.Any])
+        inline def setIndustryIdentifiers(value: js.Array[String]): Self = StObject.set(x, "industryIdentifiers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndustryIdentifiersVarargs(value: String*): Self = StObject.set(x, "industryIdentifiers", js.Array(value :_*))
+        inline def setIndustryIdentifiersVarargs(value: String*): Self = StObject.set(x, "industryIdentifiers", js.Array(value :_*))
         
-        @scala.inline
-        def setInfoLink(value: String): Self = StObject.set(x, "infoLink", value.asInstanceOf[js.Any])
+        inline def setInfoLink(value: String): Self = StObject.set(x, "infoLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguage(value: BookLanguage): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: BookLanguage): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+        inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
+        inline def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
         
-        @scala.inline
-        def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
+        inline def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrintType(value: BOOK): Self = StObject.set(x, "printType", value.asInstanceOf[js.Any])
+        inline def setPrintType(value: BOOK): Self = StObject.set(x, "printType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublishedDate(value: String): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+        inline def setPublishedDate(value: String): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+        inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -141,17 +120,13 @@ object mod extends Shortcut {
     trait BookLanguage extends StObject
     object BookLanguage {
       
-      @scala.inline
-      def en: typings.nodeIsbn.nodeIsbnStrings.en = "en".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.en]
+      inline def en: typings.nodeIsbn.nodeIsbnStrings.en = "en".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.en]
       
-      @scala.inline
-      def es: typings.nodeIsbn.nodeIsbnStrings.es = "es".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.es]
+      inline def es: typings.nodeIsbn.nodeIsbnStrings.es = "es".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.es]
       
-      @scala.inline
-      def fr: typings.nodeIsbn.nodeIsbnStrings.fr = "fr".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.fr]
+      inline def fr: typings.nodeIsbn.nodeIsbnStrings.fr = "fr".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.fr]
       
-      @scala.inline
-      def unknown: typings.nodeIsbn.nodeIsbnStrings.unknown = "unknown".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.unknown]
+      inline def unknown: typings.nodeIsbn.nodeIsbnStrings.unknown = "unknown".asInstanceOf[typings.nodeIsbn.nodeIsbnStrings.unknown]
     }
     
     @js.native

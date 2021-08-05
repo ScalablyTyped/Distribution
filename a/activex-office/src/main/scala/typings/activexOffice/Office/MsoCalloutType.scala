@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoCalloutType extends StObject
 object MsoCalloutType {
   
-  @scala.inline
-  def msoCalloutFour: `4` = 4.asInstanceOf[`4`]
+  inline def msoCalloutFour: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoCalloutMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoCalloutMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoCalloutOne: `1` = 1.asInstanceOf[`1`]
+  inline def msoCalloutOne: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCalloutThree: `3` = 3.asInstanceOf[`3`]
+  inline def msoCalloutThree: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoCalloutTwo: `2` = 2.asInstanceOf[`2`]
+  inline def msoCalloutTwo: `2` = 2.asInstanceOf[`2`]
 }

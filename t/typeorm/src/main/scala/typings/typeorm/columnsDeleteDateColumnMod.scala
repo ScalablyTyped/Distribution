@@ -12,8 +12,6 @@ object columnsDeleteDateColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DeleteDateColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteDateColumn")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def DeleteDateColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteDateColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def DeleteDateColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteDateColumn")().asInstanceOf[PropertyDecorator]
+  inline def DeleteDateColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteDateColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

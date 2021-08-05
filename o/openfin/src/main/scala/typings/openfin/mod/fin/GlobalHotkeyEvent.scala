@@ -20,26 +20,20 @@ trait GlobalHotkeyEvent extends StObject {
 }
 object GlobalHotkeyEvent {
   
-  @scala.inline
-  def apply(hotkey: String, identity: EntityType, topic: String, `type`: OpenFinGlobalHotkeyEventType): GlobalHotkeyEvent = {
+  inline def apply(hotkey: String, identity: EntityType, topic: String, `type`: OpenFinGlobalHotkeyEventType): GlobalHotkeyEvent = {
     val __obj = js.Dynamic.literal(hotkey = hotkey.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalHotkeyEvent]
   }
   
-  @scala.inline
-  implicit class GlobalHotkeyEventMutableBuilder[Self <: GlobalHotkeyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalHotkeyEvent](x: Self) {
     
-    @scala.inline
-    def setHotkey(value: String): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+    inline def setHotkey(value: String): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: EntityType): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: EntityType): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: OpenFinGlobalHotkeyEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OpenFinGlobalHotkeyEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

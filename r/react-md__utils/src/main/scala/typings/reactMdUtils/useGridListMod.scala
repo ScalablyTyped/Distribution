@@ -34,15 +34,12 @@ object useGridListMod {
   @js.native
   val GridListSizeProvider: Provider[GridListSize] = js.native
   
-  @scala.inline
-  def useGridList[E /* <: HTMLElement */](): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")().asInstanceOf[UseGridListReturnValue[E]]
-  @scala.inline
-  def useGridList[E /* <: HTMLElement */](
+  inline def useGridList[E /* <: HTMLElement */](): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")().asInstanceOf[UseGridListReturnValue[E]]
+  inline def useGridList[E /* <: HTMLElement */](
     hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding: PropsWithRef[UseGridListOptions, E]
   ): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")(hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding.asInstanceOf[js.Any]).asInstanceOf[UseGridListReturnValue[E]]
   
-  @scala.inline
-  def useGridListSize(): GridListSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridListSize")().asInstanceOf[GridListSize]
+  inline def useGridListSize(): GridListSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridListSize")().asInstanceOf[GridListSize]
   
   @js.native
   trait CSSProperties
@@ -63,20 +60,16 @@ object useGridListMod {
   }
   object GridListSize {
     
-    @scala.inline
-    def apply(cellWidth: Double, columns: Double): GridListSize = {
+    inline def apply(cellWidth: Double, columns: Double): GridListSize = {
       val __obj = js.Dynamic.literal(cellWidth = cellWidth.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
       __obj.asInstanceOf[GridListSize]
     }
     
-    @scala.inline
-    implicit class GridListSizeMutableBuilder[Self <: GridListSize] (val x: Self) extends AnyVal {
+    extension [Self <: GridListSize](x: Self) {
       
-      @scala.inline
-      def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
+      inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,23 +83,18 @@ object useGridListMod {
   }
   object ProvidedGridListProps {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](className: String, ref: /* instance */ (E | Null) | Null => Unit, style: CSSProperties): ProvidedGridListProps[E] = {
+    inline def apply[E /* <: HTMLElement */](className: String, ref: /* instance */ (E | Null) | Null => Unit, style: CSSProperties): ProvidedGridListProps[E] = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref), style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProvidedGridListProps[E]]
     }
     
-    @scala.inline
-    implicit class ProvidedGridListPropsMutableBuilder[Self <: ProvidedGridListProps[?], E /* <: HTMLElement */] (val x: Self & ProvidedGridListProps[E]) extends AnyVal {
+    extension [Self <: ProvidedGridListProps[?], E /* <: HTMLElement */](x: Self & ProvidedGridListProps[E]) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: /* instance */ (E | Null) | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: /* instance */ (E | Null) | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,65 +157,46 @@ object useGridListMod {
   }
   object UseGridListOptions {
     
-    @scala.inline
-    def apply(): UseGridListOptions = {
+    inline def apply(): UseGridListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UseGridListOptions]
     }
     
-    @scala.inline
-    implicit class UseGridListOptionsMutableBuilder[Self <: UseGridListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UseGridListOptions](x: Self) {
       
-      @scala.inline
-      def setCellMargin(value: String): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
+      inline def setCellMargin(value: String): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
+      inline def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContainerPadding(value: Double): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
+      inline def setContainerPadding(value: Double): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
+      inline def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
       
-      @scala.inline
-      def setDefaultSize(value: GridListSize | js.Function0[GridListSize]): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(value: GridListSize | js.Function0[GridListSize]): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSizeFunction0(value: () => GridListSize): Self = StObject.set(x, "defaultSize", js.Any.fromFunction0(value))
+      inline def setDefaultSizeFunction0(value: () => GridListSize): Self = StObject.set(x, "defaultSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
+      inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      @scala.inline
-      def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
+      inline def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
+      inline def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
       
-      @scala.inline
-      def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
+      inline def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
+      inline def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
       
-      @scala.inline
-      def setMaxCellSize(value: Double): Self = StObject.set(x, "maxCellSize", value.asInstanceOf[js.Any])
+      inline def setMaxCellSize(value: Double): Self = StObject.set(x, "maxCellSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCellSizeUndefined: Self = StObject.set(x, "maxCellSize", js.undefined)
+      inline def setMaxCellSizeUndefined: Self = StObject.set(x, "maxCellSize", js.undefined)
       
-      @scala.inline
-      def setStyle(value: typings.react.mod.CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: typings.react.mod.CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

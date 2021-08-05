@@ -17,22 +17,17 @@ trait Attrs extends StObject {
 }
 object Attrs {
   
-  @scala.inline
-  def apply(attrs: AvgPoolAttrs, backend: MathBackendWebGL, inputs: AvgPoolInputs): Attrs = {
+  inline def apply(attrs: AvgPoolAttrs, backend: MathBackendWebGL, inputs: AvgPoolInputs): Attrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attrs]
   }
   
-  @scala.inline
-  implicit class AttrsMutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
+  extension [Self <: Attrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: AvgPoolAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: AvgPoolAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: AvgPoolInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: AvgPoolInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

@@ -81,94 +81,66 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+      inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
+      inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
       
-      @scala.inline
-      def setCustomExceedCheck(
+      inline def setCustomExceedCheck(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any => Boolean
       ): Self = StObject.set(x, "customExceedCheck", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomExceedCheckUndefined: Self = StObject.set(x, "customExceedCheck", js.undefined)
+      inline def setCustomExceedCheckUndefined: Self = StObject.set(x, "customExceedCheck", js.undefined)
       
-      @scala.inline
-      def setDefaultDelay(value: Double): Self = StObject.set(x, "defaultDelay", value.asInstanceOf[js.Any])
+      inline def setDefaultDelay(value: Double): Self = StObject.set(x, "defaultDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDelayUndefined: Self = StObject.set(x, "defaultDelay", js.undefined)
+      inline def setDefaultDelayUndefined: Self = StObject.set(x, "defaultDelay", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setInvisibletime(value: Double): Self = StObject.set(x, "invisibletime", value.asInstanceOf[js.Any])
+      inline def setInvisibletime(value: Double): Self = StObject.set(x, "invisibletime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvisibletimeUndefined: Self = StObject.set(x, "invisibletime", js.undefined)
+      inline def setInvisibletimeUndefined: Self = StObject.set(x, "invisibletime", js.undefined)
       
-      @scala.inline
-      def setMaxReceiveCount(value: Double): Self = StObject.set(x, "maxReceiveCount", value.asInstanceOf[js.Any])
+      inline def setMaxReceiveCount(value: Double): Self = StObject.set(x, "maxReceiveCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReceiveCountUndefined: Self = StObject.set(x, "maxReceiveCount", js.undefined)
+      inline def setMaxReceiveCountUndefined: Self = StObject.set(x, "maxReceiveCount", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ClientOpts): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ClientOpts): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRedis(value: RedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(value: RedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedisPrefix(value: String): Self = StObject.set(x, "redisPrefix", value.asInstanceOf[js.Any])
+      inline def setRedisPrefix(value: String): Self = StObject.set(x, "redisPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedisPrefixUndefined: Self = StObject.set(x, "redisPrefix", js.undefined)
+      inline def setRedisPrefixUndefined: Self = StObject.set(x, "redisPrefix", js.undefined)
       
-      @scala.inline
-      def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
+      inline def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
       
-      @scala.inline
-      def setRsmq(value: Client): Self = StObject.set(x, "rsmq", value.asInstanceOf[js.Any])
+      inline def setRsmq(value: Client): Self = StObject.set(x, "rsmq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRsmqUndefined: Self = StObject.set(x, "rsmq", js.undefined)
+      inline def setRsmqUndefined: Self = StObject.set(x, "rsmq", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

@@ -23,34 +23,25 @@ trait EmailOptions extends StObject {
 }
 object EmailOptions {
   
-  @scala.inline
-  def apply(): EmailOptions = {
+  inline def apply(): EmailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailOptions]
   }
   
-  @scala.inline
-  implicit class EmailOptionsMutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmailOptions](x: Self) {
     
-    @scala.inline
-    def setErrorLevel(value: Double | Boolean): Self = StObject.set(x, "errorLevel", value.asInstanceOf[js.Any])
+    inline def setErrorLevel(value: Double | Boolean): Self = StObject.set(x, "errorLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorLevelUndefined: Self = StObject.set(x, "errorLevel", js.undefined)
+    inline def setErrorLevelUndefined: Self = StObject.set(x, "errorLevel", js.undefined)
     
-    @scala.inline
-    def setMinDomainAtoms(value: Double): Self = StObject.set(x, "minDomainAtoms", value.asInstanceOf[js.Any])
+    inline def setMinDomainAtoms(value: Double): Self = StObject.set(x, "minDomainAtoms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDomainAtomsUndefined: Self = StObject.set(x, "minDomainAtoms", js.undefined)
+    inline def setMinDomainAtomsUndefined: Self = StObject.set(x, "minDomainAtoms", js.undefined)
     
-    @scala.inline
-    def setTldWhitelist(value: js.Array[String] | js.Object): Self = StObject.set(x, "tldWhitelist", value.asInstanceOf[js.Any])
+    inline def setTldWhitelist(value: js.Array[String] | js.Object): Self = StObject.set(x, "tldWhitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTldWhitelistUndefined: Self = StObject.set(x, "tldWhitelist", js.undefined)
+    inline def setTldWhitelistUndefined: Self = StObject.set(x, "tldWhitelist", js.undefined)
     
-    @scala.inline
-    def setTldWhitelistVarargs(value: String*): Self = StObject.set(x, "tldWhitelist", js.Array(value :_*))
+    inline def setTldWhitelistVarargs(value: String*): Self = StObject.set(x, "tldWhitelist", js.Array(value :_*))
   }
 }

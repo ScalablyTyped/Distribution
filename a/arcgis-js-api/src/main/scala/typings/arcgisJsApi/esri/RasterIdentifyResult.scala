@@ -26,8 +26,7 @@ trait RasterIdentifyResult
 }
 object RasterIdentifyResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     location: Point,
@@ -38,16 +37,12 @@ object RasterIdentifyResult {
     __obj.asInstanceOf[RasterIdentifyResult]
   }
   
-  @scala.inline
-  implicit class RasterIdentifyResultMutableBuilder[Self <: RasterIdentifyResult] (val x: Self) extends AnyVal {
+  extension [Self <: RasterIdentifyResult](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

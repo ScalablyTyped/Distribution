@@ -37,8 +37,7 @@ trait ScaleEventInfo
 }
 object ScaleEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -51,16 +50,12 @@ object ScaleEventInfo {
     __obj.asInstanceOf[ScaleEventInfo]
   }
   
-  @scala.inline
-  implicit class ScaleEventInfoMutableBuilder[Self <: ScaleEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleEventInfo](x: Self) {
     
-    @scala.inline
-    def setType(value: `scale-start` | scale | `scale-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `scale-start` | scale | `scale-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXScale(value: Double): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
+    inline def setXScale(value: Double): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYScale(value: Double): Self = StObject.set(x, "yScale", value.asInstanceOf[js.Any])
+    inline def setYScale(value: Double): Self = StObject.set(x, "yScale", value.asInstanceOf[js.Any])
   }
 }

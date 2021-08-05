@@ -28,8 +28,7 @@ trait MapContext extends StObject {
 }
 object MapContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCenterLocation: GetCenterLocationOptions => OpenLocationOptions,
     getRegion: GetRegionOptions => Unit,
     includePoints: Padding => Unit,
@@ -40,22 +39,16 @@ object MapContext {
     __obj.asInstanceOf[MapContext]
   }
   
-  @scala.inline
-  implicit class MapContextMutableBuilder[Self <: MapContext] (val x: Self) extends AnyVal {
+  extension [Self <: MapContext](x: Self) {
     
-    @scala.inline
-    def setGetCenterLocation(value: GetCenterLocationOptions => OpenLocationOptions): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
+    inline def setGetCenterLocation(value: GetCenterLocationOptions => OpenLocationOptions): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRegion(value: GetRegionOptions => Unit): Self = StObject.set(x, "getRegion", js.Any.fromFunction1(value))
+    inline def setGetRegion(value: GetRegionOptions => Unit): Self = StObject.set(x, "getRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludePoints(value: Padding => Unit): Self = StObject.set(x, "includePoints", js.Any.fromFunction1(value))
+    inline def setIncludePoints(value: Padding => Unit): Self = StObject.set(x, "includePoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
+    inline def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTranslateMarker(value: TranslateMarkerOptions => Unit): Self = StObject.set(x, "translateMarker", js.Any.fromFunction1(value))
+    inline def setTranslateMarker(value: TranslateMarkerOptions => Unit): Self = StObject.set(x, "translateMarker", js.Any.fromFunction1(value))
   }
 }

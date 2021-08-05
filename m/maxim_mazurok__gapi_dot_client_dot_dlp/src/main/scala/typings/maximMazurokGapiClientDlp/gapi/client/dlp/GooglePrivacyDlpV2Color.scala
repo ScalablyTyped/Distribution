@@ -17,31 +17,23 @@ trait GooglePrivacyDlpV2Color extends StObject {
 }
 object GooglePrivacyDlpV2Color {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Color = {
+  inline def apply(): GooglePrivacyDlpV2Color = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Color]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ColorMutableBuilder[Self <: GooglePrivacyDlpV2Color] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Color](x: Self) {
     
-    @scala.inline
-    def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
+    inline def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
     
-    @scala.inline
-    def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
+    inline def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
     
-    @scala.inline
-    def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
+    inline def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
   }
 }

@@ -11,27 +11,23 @@ object requestDebugStrings {
   sealed trait auth
     extends StObject
        with LogPhase
-  @scala.inline
-  def auth: auth = "auth".asInstanceOf[auth]
+  inline def auth: auth = "auth".asInstanceOf[auth]
   
   @js.native
   sealed trait redirect
     extends StObject
        with LogPhase
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
   sealed trait request
     extends StObject
        with LogPhase
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
+  inline def request: request = "request".asInstanceOf[request]
   
   @js.native
   sealed trait response
     extends StObject
        with LogPhase
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
+  inline def response: response = "response".asInstanceOf[response]
 }

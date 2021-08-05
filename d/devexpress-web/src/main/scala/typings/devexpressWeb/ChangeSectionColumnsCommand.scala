@@ -22,19 +22,15 @@ trait ChangeSectionColumnsCommand extends StObject {
 }
 object ChangeSectionColumnsCommand {
   
-  @scala.inline
-  def apply(execute: js.Array[SectionColumn] => Boolean, getState: () => CommandState[js.Array[SectionColumn]]): ChangeSectionColumnsCommand = {
+  inline def apply(execute: js.Array[SectionColumn] => Boolean, getState: () => CommandState[js.Array[SectionColumn]]): ChangeSectionColumnsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeSectionColumnsCommand]
   }
   
-  @scala.inline
-  implicit class ChangeSectionColumnsCommandMutableBuilder[Self <: ChangeSectionColumnsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeSectionColumnsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: js.Array[SectionColumn] => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: js.Array[SectionColumn] => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[js.Array[SectionColumn]]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[js.Array[SectionColumn]]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

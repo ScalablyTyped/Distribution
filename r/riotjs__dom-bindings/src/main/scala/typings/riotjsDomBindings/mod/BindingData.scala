@@ -14,32 +14,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BindingData extends StObject
 object BindingData {
   
-  @scala.inline
-  def EachBindingData(itemName: String, template: TemplateChunk[js.Any, js.Any]): typings.riotjsDomBindings.mod.EachBindingData = {
+  inline def EachBindingData(itemName: String, template: TemplateChunk[js.Any, js.Any]): typings.riotjsDomBindings.mod.EachBindingData = {
     val __obj = js.Dynamic.literal(itemName = itemName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.riotjsDomBindings.mod.EachBindingData]
   }
   
-  @scala.inline
-  def IfBindingData(template: TemplateChunk[js.Any, js.Any]): typings.riotjsDomBindings.mod.IfBindingData = {
+  inline def IfBindingData(template: TemplateChunk[js.Any, js.Any]): typings.riotjsDomBindings.mod.IfBindingData = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.riotjsDomBindings.mod.IfBindingData]
   }
   
-  @scala.inline
-  def SimpleBindingData(expressions: js.Array[ExpressionData]): typings.riotjsDomBindings.mod.SimpleBindingData = {
+  inline def SimpleBindingData(expressions: js.Array[ExpressionData]): typings.riotjsDomBindings.mod.SimpleBindingData = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.riotjsDomBindings.mod.SimpleBindingData]
   }
   
-  @scala.inline
-  def SlotBindingData(bindings: BindingData, html: String, id: String): typings.riotjsDomBindings.mod.SlotBindingData = {
+  inline def SlotBindingData(bindings: BindingData, html: String, id: String): typings.riotjsDomBindings.mod.SlotBindingData = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.riotjsDomBindings.mod.SlotBindingData]
   }
   
-  @scala.inline
-  def TagBindingData(
+  inline def TagBindingData(
     attributes: js.Array[AttributeExpressionData],
     getComponent: String => TemplateChunk[js.Any, js.Any],
     slots: js.Array[SlotBindingData]

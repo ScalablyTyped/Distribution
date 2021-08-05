@@ -16,23 +16,18 @@ object anon {
   }
   object H {
     
-    @scala.inline
-    def apply(h: Double, i: String, w: Double): H = {
+    inline def apply(h: Double, i: String, w: Double): H = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[H]
     }
     
-    @scala.inline
-    implicit class HMutableBuilder[Self <: H] (val x: Self) extends AnyVal {
+    extension [Self <: H](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      inline def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
 }

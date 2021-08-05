@@ -13,16 +13,13 @@ trait SetCacheDisabledRequest extends StObject {
 }
 object SetCacheDisabledRequest {
   
-  @scala.inline
-  def apply(cacheDisabled: Boolean): SetCacheDisabledRequest = {
+  inline def apply(cacheDisabled: Boolean): SetCacheDisabledRequest = {
     val __obj = js.Dynamic.literal(cacheDisabled = cacheDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCacheDisabledRequest]
   }
   
-  @scala.inline
-  implicit class SetCacheDisabledRequestMutableBuilder[Self <: SetCacheDisabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetCacheDisabledRequest](x: Self) {
     
-    @scala.inline
-    def setCacheDisabled(value: Boolean): Self = StObject.set(x, "cacheDisabled", value.asInstanceOf[js.Any])
+    inline def setCacheDisabled(value: Boolean): Self = StObject.set(x, "cacheDisabled", value.asInstanceOf[js.Any])
   }
 }

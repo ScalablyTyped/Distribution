@@ -38,49 +38,35 @@ trait ListReviewPolicyResultsForHITRequest extends StObject {
 }
 object ListReviewPolicyResultsForHITRequest {
   
-  @scala.inline
-  def apply(HITId: EntityId): ListReviewPolicyResultsForHITRequest = {
+  inline def apply(HITId: EntityId): ListReviewPolicyResultsForHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReviewPolicyResultsForHITRequest]
   }
   
-  @scala.inline
-  implicit class ListReviewPolicyResultsForHITRequestMutableBuilder[Self <: ListReviewPolicyResultsForHITRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListReviewPolicyResultsForHITRequest](x: Self) {
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPolicyLevels(value: ReviewPolicyLevelList): Self = StObject.set(x, "PolicyLevels", value.asInstanceOf[js.Any])
+    inline def setPolicyLevels(value: ReviewPolicyLevelList): Self = StObject.set(x, "PolicyLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyLevelsUndefined: Self = StObject.set(x, "PolicyLevels", js.undefined)
+    inline def setPolicyLevelsUndefined: Self = StObject.set(x, "PolicyLevels", js.undefined)
     
-    @scala.inline
-    def setPolicyLevelsVarargs(value: ReviewPolicyLevel*): Self = StObject.set(x, "PolicyLevels", js.Array(value :_*))
+    inline def setPolicyLevelsVarargs(value: ReviewPolicyLevel*): Self = StObject.set(x, "PolicyLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setRetrieveActions(value: Boolean): Self = StObject.set(x, "RetrieveActions", value.asInstanceOf[js.Any])
+    inline def setRetrieveActions(value: Boolean): Self = StObject.set(x, "RetrieveActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrieveActionsUndefined: Self = StObject.set(x, "RetrieveActions", js.undefined)
+    inline def setRetrieveActionsUndefined: Self = StObject.set(x, "RetrieveActions", js.undefined)
     
-    @scala.inline
-    def setRetrieveResults(value: Boolean): Self = StObject.set(x, "RetrieveResults", value.asInstanceOf[js.Any])
+    inline def setRetrieveResults(value: Boolean): Self = StObject.set(x, "RetrieveResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrieveResultsUndefined: Self = StObject.set(x, "RetrieveResults", js.undefined)
+    inline def setRetrieveResultsUndefined: Self = StObject.set(x, "RetrieveResults", js.undefined)
   }
 }

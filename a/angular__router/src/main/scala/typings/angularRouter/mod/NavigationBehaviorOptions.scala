@@ -46,31 +46,23 @@ trait NavigationBehaviorOptions extends StObject {
 }
 object NavigationBehaviorOptions {
   
-  @scala.inline
-  def apply(): NavigationBehaviorOptions = {
+  inline def apply(): NavigationBehaviorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationBehaviorOptions]
   }
   
-  @scala.inline
-  implicit class NavigationBehaviorOptionsMutableBuilder[Self <: NavigationBehaviorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBehaviorOptions](x: Self) {
     
-    @scala.inline
-    def setReplaceUrl(value: Boolean): Self = StObject.set(x, "replaceUrl", value.asInstanceOf[js.Any])
+    inline def setReplaceUrl(value: Boolean): Self = StObject.set(x, "replaceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUrlUndefined: Self = StObject.set(x, "replaceUrl", js.undefined)
+    inline def setReplaceUrlUndefined: Self = StObject.set(x, "replaceUrl", js.undefined)
     
-    @scala.inline
-    def setSkipLocationChange(value: Boolean): Self = StObject.set(x, "skipLocationChange", value.asInstanceOf[js.Any])
+    inline def setSkipLocationChange(value: Boolean): Self = StObject.set(x, "skipLocationChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipLocationChangeUndefined: Self = StObject.set(x, "skipLocationChange", js.undefined)
+    inline def setSkipLocationChangeUndefined: Self = StObject.set(x, "skipLocationChange", js.undefined)
     
-    @scala.inline
-    def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

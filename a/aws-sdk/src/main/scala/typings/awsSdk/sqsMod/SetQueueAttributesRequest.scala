@@ -18,19 +18,15 @@ trait SetQueueAttributesRequest extends StObject {
 }
 object SetQueueAttributesRequest {
   
-  @scala.inline
-  def apply(Attributes: QueueAttributeMap, QueueUrl: String): SetQueueAttributesRequest = {
+  inline def apply(Attributes: QueueAttributeMap, QueueUrl: String): SetQueueAttributesRequest = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetQueueAttributesRequest]
   }
   
-  @scala.inline
-  implicit class SetQueueAttributesRequestMutableBuilder[Self <: SetQueueAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetQueueAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: QueueAttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: QueueAttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

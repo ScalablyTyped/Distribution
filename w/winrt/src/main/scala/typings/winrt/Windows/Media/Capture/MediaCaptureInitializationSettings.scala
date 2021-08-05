@@ -9,8 +9,7 @@ trait MediaCaptureInitializationSettings
      with IMediaCaptureInitializationSettings
 object MediaCaptureInitializationSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioDeviceId: String,
     photoCaptureSource: PhotoCaptureSource,
     streamingCaptureMode: StreamingCaptureMode,

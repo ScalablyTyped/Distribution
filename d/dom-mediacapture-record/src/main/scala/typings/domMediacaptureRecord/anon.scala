@@ -13,17 +13,14 @@ object anon {
   }
   object TypeofMediaRecorder {
     
-    @scala.inline
-    def apply(isTypeSupported: String => Boolean): TypeofMediaRecorder = {
+    inline def apply(isTypeSupported: String => Boolean): TypeofMediaRecorder = {
       val __obj = js.Dynamic.literal(isTypeSupported = js.Any.fromFunction1(isTypeSupported))
       __obj.asInstanceOf[TypeofMediaRecorder]
     }
     
-    @scala.inline
-    implicit class TypeofMediaRecorderMutableBuilder[Self <: TypeofMediaRecorder] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofMediaRecorder](x: Self) {
       
-      @scala.inline
-      def setIsTypeSupported(value: String => Boolean): Self = StObject.set(x, "isTypeSupported", js.Any.fromFunction1(value))
+      inline def setIsTypeSupported(value: String => Boolean): Self = StObject.set(x, "isTypeSupported", js.Any.fromFunction1(value))
     }
   }
 }

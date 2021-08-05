@@ -14,22 +14,17 @@ trait Default extends StObject {
 }
 object Default {
   
-  @scala.inline
-  def apply(custom: scala.Double, default: scala.Double, upgrade: scala.Double): Default = {
+  inline def apply(custom: scala.Double, default: scala.Double, upgrade: scala.Double): Default = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], upgrade = upgrade.asInstanceOf[js.Any])
     __obj.asInstanceOf[Default]
   }
   
-  @scala.inline
-  implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+  extension [Self <: Default](x: Self) {
     
-    @scala.inline
-    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: scala.Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: scala.Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgrade(value: scala.Double): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
+    inline def setUpgrade(value: scala.Double): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
   }
 }

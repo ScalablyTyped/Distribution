@@ -28,43 +28,31 @@ trait AwsVPCSecurityGroupViolation extends StObject {
 }
 object AwsVPCSecurityGroupViolation {
   
-  @scala.inline
-  def apply(): AwsVPCSecurityGroupViolation = {
+  inline def apply(): AwsVPCSecurityGroupViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsVPCSecurityGroupViolation]
   }
   
-  @scala.inline
-  implicit class AwsVPCSecurityGroupViolationMutableBuilder[Self <: AwsVPCSecurityGroupViolation] (val x: Self) extends AnyVal {
+  extension [Self <: AwsVPCSecurityGroupViolation](x: Self) {
     
-    @scala.inline
-    def setPartialMatches(value: PartialMatches): Self = StObject.set(x, "PartialMatches", value.asInstanceOf[js.Any])
+    inline def setPartialMatches(value: PartialMatches): Self = StObject.set(x, "PartialMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialMatchesUndefined: Self = StObject.set(x, "PartialMatches", js.undefined)
+    inline def setPartialMatchesUndefined: Self = StObject.set(x, "PartialMatches", js.undefined)
     
-    @scala.inline
-    def setPartialMatchesVarargs(value: PartialMatch*): Self = StObject.set(x, "PartialMatches", js.Array(value :_*))
+    inline def setPartialMatchesVarargs(value: PartialMatch*): Self = StObject.set(x, "PartialMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setPossibleSecurityGroupRemediationActions(value: SecurityGroupRemediationActions): Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", value.asInstanceOf[js.Any])
+    inline def setPossibleSecurityGroupRemediationActions(value: SecurityGroupRemediationActions): Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleSecurityGroupRemediationActionsUndefined: Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", js.undefined)
+    inline def setPossibleSecurityGroupRemediationActionsUndefined: Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", js.undefined)
     
-    @scala.inline
-    def setPossibleSecurityGroupRemediationActionsVarargs(value: SecurityGroupRemediationAction*): Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", js.Array(value :_*))
+    inline def setPossibleSecurityGroupRemediationActionsVarargs(value: SecurityGroupRemediationAction*): Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", js.Array(value :_*))
     
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
+    inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationTargetDescription(value: LengthBoundedString): Self = StObject.set(x, "ViolationTargetDescription", value.asInstanceOf[js.Any])
+    inline def setViolationTargetDescription(value: LengthBoundedString): Self = StObject.set(x, "ViolationTargetDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationTargetDescriptionUndefined: Self = StObject.set(x, "ViolationTargetDescription", js.undefined)
+    inline def setViolationTargetDescriptionUndefined: Self = StObject.set(x, "ViolationTargetDescription", js.undefined)
     
-    @scala.inline
-    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
+    inline def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

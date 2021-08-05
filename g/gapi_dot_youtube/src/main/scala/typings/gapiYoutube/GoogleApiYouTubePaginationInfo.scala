@@ -39,8 +39,7 @@ trait GoogleApiYouTubePaginationInfo[T] extends StObject {
 }
 object GoogleApiYouTubePaginationInfo {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     etag: String,
     items: js.Array[T],
     kind: String,
@@ -52,28 +51,20 @@ object GoogleApiYouTubePaginationInfo {
     __obj.asInstanceOf[GoogleApiYouTubePaginationInfo[T]]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubePaginationInfoMutableBuilder[Self <: GoogleApiYouTubePaginationInfo[?], T] (val x: Self & GoogleApiYouTubePaginationInfo[T]) extends AnyVal {
+  extension [Self <: GoogleApiYouTubePaginationInfo[?], T](x: Self & GoogleApiYouTubePaginationInfo[T]) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfo(value: ResultsPerPage): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: ResultsPerPage): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevPageToken(value: String): Self = StObject.set(x, "prevPageToken", value.asInstanceOf[js.Any])
+    inline def setPrevPageToken(value: String): Self = StObject.set(x, "prevPageToken", value.asInstanceOf[js.Any])
   }
 }

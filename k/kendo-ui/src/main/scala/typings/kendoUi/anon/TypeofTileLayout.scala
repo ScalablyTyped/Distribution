@@ -15,19 +15,15 @@ trait TypeofTileLayout extends StObject {
 }
 object TypeofTileLayout {
   
-  @scala.inline
-  def apply(extend: js.Object => TileLayout, fn: TileLayout): TypeofTileLayout = {
+  inline def apply(extend: js.Object => TileLayout, fn: TileLayout): TypeofTileLayout = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTileLayout]
   }
   
-  @scala.inline
-  implicit class TypeofTileLayoutMutableBuilder[Self <: TypeofTileLayout] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTileLayout](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => TileLayout): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => TileLayout): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: TileLayout): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TileLayout): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

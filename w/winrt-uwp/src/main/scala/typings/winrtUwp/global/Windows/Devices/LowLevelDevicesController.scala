@@ -19,6 +19,5 @@ object LowLevelDevicesController {
   @JSGlobal("Windows.Devices.LowLevelDevicesController.defaultProvider")
   @js.native
   def defaultProvider: js.Any = js.native
-  @scala.inline
-  def defaultProvider_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProvider")(x.asInstanceOf[js.Any])
+  inline def defaultProvider_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProvider")(x.asInstanceOf[js.Any])
 }

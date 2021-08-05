@@ -8,16 +8,13 @@ object colorStringStrings {
   
   @js.native
   sealed trait hsl extends StObject
-  @scala.inline
-  def hsl: hsl = "hsl".asInstanceOf[hsl]
+  inline def hsl: hsl = "hsl".asInstanceOf[hsl]
   
   @js.native
   sealed trait hwb extends StObject
-  @scala.inline
-  def hwb: hwb = "hwb".asInstanceOf[hwb]
+  inline def hwb: hwb = "hwb".asInstanceOf[hwb]
   
   @js.native
   sealed trait rgb extends StObject
-  @scala.inline
-  def rgb: rgb = "rgb".asInstanceOf[rgb]
+  inline def rgb: rgb = "rgb".asInstanceOf[rgb]
 }

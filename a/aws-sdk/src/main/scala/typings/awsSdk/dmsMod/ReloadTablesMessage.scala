@@ -23,28 +23,21 @@ trait ReloadTablesMessage extends StObject {
 }
 object ReloadTablesMessage {
   
-  @scala.inline
-  def apply(ReplicationTaskArn: String, TablesToReload: TableListToReload): ReloadTablesMessage = {
+  inline def apply(ReplicationTaskArn: String, TablesToReload: TableListToReload): ReloadTablesMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any], TablesToReload = TablesToReload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReloadTablesMessage]
   }
   
-  @scala.inline
-  implicit class ReloadTablesMessageMutableBuilder[Self <: ReloadTablesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ReloadTablesMessage](x: Self) {
     
-    @scala.inline
-    def setReloadOption(value: ReloadOptionValue): Self = StObject.set(x, "ReloadOption", value.asInstanceOf[js.Any])
+    inline def setReloadOption(value: ReloadOptionValue): Self = StObject.set(x, "ReloadOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReloadOptionUndefined: Self = StObject.set(x, "ReloadOption", js.undefined)
+    inline def setReloadOptionUndefined: Self = StObject.set(x, "ReloadOption", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesToReload(value: TableListToReload): Self = StObject.set(x, "TablesToReload", value.asInstanceOf[js.Any])
+    inline def setTablesToReload(value: TableListToReload): Self = StObject.set(x, "TablesToReload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesToReloadVarargs(value: TableToReload*): Self = StObject.set(x, "TablesToReload", js.Array(value :_*))
+    inline def setTablesToReloadVarargs(value: TableToReload*): Self = StObject.set(x, "TablesToReload", js.Array(value :_*))
   }
 }

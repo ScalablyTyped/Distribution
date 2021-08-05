@@ -28,37 +28,27 @@ trait AssetPropertyVariant extends StObject {
 }
 object AssetPropertyVariant {
   
-  @scala.inline
-  def apply(): AssetPropertyVariant = {
+  inline def apply(): AssetPropertyVariant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssetPropertyVariant]
   }
   
-  @scala.inline
-  implicit class AssetPropertyVariantMutableBuilder[Self <: AssetPropertyVariant] (val x: Self) extends AnyVal {
+  extension [Self <: AssetPropertyVariant](x: Self) {
     
-    @scala.inline
-    def setBooleanValue(value: AssetPropertyBooleanValue): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
+    inline def setBooleanValue(value: AssetPropertyBooleanValue): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
+    inline def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
-    @scala.inline
-    def setDoubleValue(value: AssetPropertyDoubleValue): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setDoubleValue(value: AssetPropertyDoubleValue): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
-    @scala.inline
-    def setIntegerValue(value: AssetPropertyIntegerValue): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: AssetPropertyIntegerValue): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: AssetPropertyStringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: AssetPropertyStringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

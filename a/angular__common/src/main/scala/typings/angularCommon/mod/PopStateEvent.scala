@@ -16,37 +16,27 @@ trait PopStateEvent extends StObject {
 }
 object PopStateEvent {
   
-  @scala.inline
-  def apply(): PopStateEvent = {
+  inline def apply(): PopStateEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopStateEvent]
   }
   
-  @scala.inline
-  implicit class PopStateEventMutableBuilder[Self <: PopStateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PopStateEvent](x: Self) {
     
-    @scala.inline
-    def setPop(value: Boolean): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
+    inline def setPop(value: Boolean): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
+    inline def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

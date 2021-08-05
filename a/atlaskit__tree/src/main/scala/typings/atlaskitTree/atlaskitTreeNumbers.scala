@@ -8,6 +8,5 @@ object atlaskitTreeNumbers {
   
   @js.native
   sealed trait `35` extends StObject
-  @scala.inline
-  def `35`: `35` = 35.asInstanceOf[`35`]
+  inline def `35`: `35` = 35.asInstanceOf[`35`]
 }

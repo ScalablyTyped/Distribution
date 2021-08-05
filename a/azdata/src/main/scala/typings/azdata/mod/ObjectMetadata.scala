@@ -18,28 +18,21 @@ trait ObjectMetadata extends StObject {
 }
 object ObjectMetadata {
   
-  @scala.inline
-  def apply(metadataType: MetadataType, metadataTypeName: String, name: String, schema: String, urn: String): ObjectMetadata = {
+  inline def apply(metadataType: MetadataType, metadataTypeName: String, name: String, schema: String, urn: String): ObjectMetadata = {
     val __obj = js.Dynamic.literal(metadataType = metadataType.asInstanceOf[js.Any], metadataTypeName = metadataTypeName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], urn = urn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectMetadata]
   }
   
-  @scala.inline
-  implicit class ObjectMetadataMutableBuilder[Self <: ObjectMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectMetadata](x: Self) {
     
-    @scala.inline
-    def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
+    inline def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataTypeName(value: String): Self = StObject.set(x, "metadataTypeName", value.asInstanceOf[js.Any])
+    inline def setMetadataTypeName(value: String): Self = StObject.set(x, "metadataTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
+    inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
   }
 }

@@ -21,15 +21,15 @@ object basicTracerProviderMod {
        with TracerProvider {
     def this(config: TracerConfig) = this()
     
-    var _cleanNotifyOnGlobalShutdown: js.Any = js.native
+    /* private */ var _cleanNotifyOnGlobalShutdown: js.Any = js.native
     
-    val _config: js.Any = js.native
+    /* private */ val _config: js.Any = js.native
     
-    val _registeredSpanProcessors: js.Any = js.native
+    /* private */ val _registeredSpanProcessors: js.Any = js.native
     
-    var _shutdownActiveProcessor: js.Any = js.native
+    /* private */ var _shutdownActiveProcessor: js.Any = js.native
     
-    val _tracers: js.Any = js.native
+    /* private */ val _tracers: js.Any = js.native
     
     var activeSpanProcessor: NoopSpanProcessor = js.native
     

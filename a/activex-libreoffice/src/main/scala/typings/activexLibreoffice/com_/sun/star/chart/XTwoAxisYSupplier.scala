@@ -29,8 +29,7 @@ trait XTwoAxisYSupplier
 }
 object XTwoAxisYSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SecondaryYAxis: XPropertySet,
     YAxis: XPropertySet,
     YAxisTitle: XShape,
@@ -49,13 +48,10 @@ object XTwoAxisYSupplier {
     __obj.asInstanceOf[XTwoAxisYSupplier]
   }
   
-  @scala.inline
-  implicit class XTwoAxisYSupplierMutableBuilder[Self <: XTwoAxisYSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTwoAxisYSupplier](x: Self) {
     
-    @scala.inline
-    def setGetSecondaryYAxis(value: () => XPropertySet): Self = StObject.set(x, "getSecondaryYAxis", js.Any.fromFunction0(value))
+    inline def setGetSecondaryYAxis(value: () => XPropertySet): Self = StObject.set(x, "getSecondaryYAxis", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSecondaryYAxis(value: XPropertySet): Self = StObject.set(x, "SecondaryYAxis", value.asInstanceOf[js.Any])
+    inline def setSecondaryYAxis(value: XPropertySet): Self = StObject.set(x, "SecondaryYAxis", value.asInstanceOf[js.Any])
   }
 }

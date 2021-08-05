@@ -15,19 +15,15 @@ trait XdsLoadBalancingConfig
 }
 object XdsLoadBalancingConfig {
   
-  @scala.inline
-  def apply(xds: XdsConfig): XdsLoadBalancingConfig = {
+  inline def apply(xds: XdsConfig): XdsLoadBalancingConfig = {
     val __obj = js.Dynamic.literal(name = "xds", xds = xds.asInstanceOf[js.Any])
     __obj.asInstanceOf[XdsLoadBalancingConfig]
   }
   
-  @scala.inline
-  implicit class XdsLoadBalancingConfigMutableBuilder[Self <: XdsLoadBalancingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: XdsLoadBalancingConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: xds): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: xds): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXds(value: XdsConfig): Self = StObject.set(x, "xds", value.asInstanceOf[js.Any])
+    inline def setXds(value: XdsConfig): Self = StObject.set(x, "xds", value.asInstanceOf[js.Any])
   }
 }

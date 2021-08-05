@@ -13,19 +13,15 @@ trait GetInstancesRequest extends StObject {
 }
 object GetInstancesRequest {
   
-  @scala.inline
-  def apply(): GetInstancesRequest = {
+  inline def apply(): GetInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInstancesRequest]
   }
   
-  @scala.inline
-  implicit class GetInstancesRequestMutableBuilder[Self <: GetInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

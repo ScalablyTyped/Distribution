@@ -10,6 +10,5 @@ object ensureWindowsDriveLetterIsUppercaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ensureWindowsDriveLetterIsUppercase(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureWindowsDriveLetterIsUppercase")().asInstanceOf[Unit]
+  inline def ensureWindowsDriveLetterIsUppercase(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureWindowsDriveLetterIsUppercase")().asInstanceOf[Unit]
 }

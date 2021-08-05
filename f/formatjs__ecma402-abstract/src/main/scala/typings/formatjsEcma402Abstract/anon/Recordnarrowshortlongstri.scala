@@ -15,31 +15,23 @@ trait Recordnarrowshortlongstri extends StObject {
 }
 object Recordnarrowshortlongstri {
   
-  @scala.inline
-  def apply(): Recordnarrowshortlongstri = {
+  inline def apply(): Recordnarrowshortlongstri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Recordnarrowshortlongstri]
   }
   
-  @scala.inline
-  implicit class RecordnarrowshortlongstriMutableBuilder[Self <: Recordnarrowshortlongstri] (val x: Self) extends AnyVal {
+  extension [Self <: Recordnarrowshortlongstri](x: Self) {
     
-    @scala.inline
-    def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
+    inline def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
     
-    @scala.inline
-    def setNarrow(value: String): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: String): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrowUndefined: Self = StObject.set(x, "narrow", js.undefined)
+    inline def setNarrowUndefined: Self = StObject.set(x, "narrow", js.undefined)
     
-    @scala.inline
-    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+    inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait fragParsingData extends StObject {
 }
 object fragParsingData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endDTS: Double,
     endPTS: Double,
     frag: Fragment,
@@ -46,37 +45,26 @@ object fragParsingData {
     __obj.asInstanceOf[fragParsingData]
   }
   
-  @scala.inline
-  implicit class fragParsingDataMutableBuilder[Self <: fragParsingData] (val x: Self) extends AnyVal {
+  extension [Self <: fragParsingData](x: Self) {
     
-    @scala.inline
-    def setEndDTS(value: Double): Self = StObject.set(x, "endDTS", value.asInstanceOf[js.Any])
+    inline def setEndDTS(value: Double): Self = StObject.set(x, "endDTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPTS(value: Double): Self = StObject.set(x, "endPTS", value.asInstanceOf[js.Any])
+    inline def setEndPTS(value: Double): Self = StObject.set(x, "endPTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdat(value: js.Any): Self = StObject.set(x, "mdat", value.asInstanceOf[js.Any])
+    inline def setMdat(value: js.Any): Self = StObject.set(x, "mdat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoof(value: js.Any): Self = StObject.set(x, "moof", value.asInstanceOf[js.Any])
+    inline def setMoof(value: js.Any): Self = StObject.set(x, "moof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNb(value: Double): Self = StObject.set(x, "nb", value.asInstanceOf[js.Any])
+    inline def setNb(value: Double): Self = StObject.set(x, "nb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDTS(value: Double): Self = StObject.set(x, "startDTS", value.asInstanceOf[js.Any])
+    inline def setStartDTS(value: Double): Self = StObject.set(x, "startDTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPTS(value: Double): Self = StObject.set(x, "startPTS", value.asInstanceOf[js.Any])
+    inline def setStartPTS(value: Double): Self = StObject.set(x, "startPTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

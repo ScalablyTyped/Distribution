@@ -38,6 +38,5 @@ object Application {
     * Create a new instance of Word.Application object
     */
   /* static member */
-  @scala.inline
-  def newObject(context: ClientRequestContext): typings.officeJsPreview.Word.Application = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.officeJsPreview.Word.Application]
+  inline def newObject(context: ClientRequestContext): typings.officeJsPreview.Word.Application = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.officeJsPreview.Word.Application]
 }

@@ -52,8 +52,7 @@ object Gantt {
   @JSGlobal("ej.Gantt.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Gantt.RowPosition")
   @js.native
@@ -229,8 +228,7 @@ object Gantt {
   @JSGlobal("ej.Gantt.fn")
   @js.native
   def fn: typings.ejWebAll.ej.Gantt = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.Gantt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.Gantt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Gantt.minutesPerInterval")
   @js.native

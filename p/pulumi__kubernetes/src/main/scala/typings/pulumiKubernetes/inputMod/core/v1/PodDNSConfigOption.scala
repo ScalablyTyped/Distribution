@@ -19,25 +19,19 @@ trait PodDNSConfigOption extends StObject {
 }
 object PodDNSConfigOption {
   
-  @scala.inline
-  def apply(): PodDNSConfigOption = {
+  inline def apply(): PodDNSConfigOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PodDNSConfigOption]
   }
   
-  @scala.inline
-  implicit class PodDNSConfigOptionMutableBuilder[Self <: PodDNSConfigOption] (val x: Self) extends AnyVal {
+  extension [Self <: PodDNSConfigOption](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -26,53 +26,38 @@ trait ImputeTransform
 }
 object ImputeTransform {
   
-  @scala.inline
-  def apply(field: FieldRef, key: FieldRef): ImputeTransform = {
+  inline def apply(field: FieldRef, key: FieldRef): ImputeTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("impute")
     __obj.asInstanceOf[ImputeTransform]
   }
   
-  @scala.inline
-  implicit class ImputeTransformMutableBuilder[Self <: ImputeTransform] (val x: Self) extends AnyVal {
+  extension [Self <: ImputeTransform](x: Self) {
     
-    @scala.inline
-    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: FieldRef): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: FieldRef): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyvals(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
+    inline def setKeyvals(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)
+    inline def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)
     
-    @scala.inline
-    def setKeyvalsVarargs(value: js.Any*): Self = StObject.set(x, "keyvals", js.Array(value :_*))
+    inline def setKeyvalsVarargs(value: js.Any*): Self = StObject.set(x, "keyvals", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: ImputeMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: ImputeMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setType(value: impute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: impute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

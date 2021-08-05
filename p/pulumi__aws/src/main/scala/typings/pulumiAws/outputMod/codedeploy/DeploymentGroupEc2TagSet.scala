@@ -13,22 +13,17 @@ trait DeploymentGroupEc2TagSet extends StObject {
 }
 object DeploymentGroupEc2TagSet {
   
-  @scala.inline
-  def apply(): DeploymentGroupEc2TagSet = {
+  inline def apply(): DeploymentGroupEc2TagSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupEc2TagSet]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupEc2TagSetMutableBuilder[Self <: DeploymentGroupEc2TagSet] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupEc2TagSet](x: Self) {
     
-    @scala.inline
-    def setEc2TagFilters(value: js.Array[DeploymentGroupEc2TagSetEc2TagFilter]): Self = StObject.set(x, "ec2TagFilters", value.asInstanceOf[js.Any])
+    inline def setEc2TagFilters(value: js.Array[DeploymentGroupEc2TagSetEc2TagFilter]): Self = StObject.set(x, "ec2TagFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2TagFiltersUndefined: Self = StObject.set(x, "ec2TagFilters", js.undefined)
+    inline def setEc2TagFiltersUndefined: Self = StObject.set(x, "ec2TagFilters", js.undefined)
     
-    @scala.inline
-    def setEc2TagFiltersVarargs(value: DeploymentGroupEc2TagSetEc2TagFilter*): Self = StObject.set(x, "ec2TagFilters", js.Array(value :_*))
+    inline def setEc2TagFiltersVarargs(value: DeploymentGroupEc2TagSetEc2TagFilter*): Self = StObject.set(x, "ec2TagFilters", js.Array(value :_*))
   }
 }

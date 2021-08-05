@@ -8,16 +8,13 @@ object gulpWatchStrings {
   
   @js.native
   sealed trait add extends StObject
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait change extends StObject
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
   sealed trait unlink extends StObject
-  @scala.inline
-  def unlink: unlink = "unlink".asInstanceOf[unlink]
+  inline def unlink: unlink = "unlink".asInstanceOf[unlink]
 }

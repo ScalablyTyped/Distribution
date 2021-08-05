@@ -24,40 +24,29 @@ trait ChangesListResponse extends StObject {
 }
 object ChangesListResponse {
   
-  @scala.inline
-  def apply(): ChangesListResponse = {
+  inline def apply(): ChangesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangesListResponse]
   }
   
-  @scala.inline
-  implicit class ChangesListResponseMutableBuilder[Self <: ChangesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ChangesListResponse](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+    inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
-    @scala.inline
-    def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
-    @scala.inline
-    def setHeader(value: ResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: ResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait SchemaLocation extends StObject {
 }
 object SchemaLocation {
   
-  @scala.inline
-  def apply(): SchemaLocation = {
+  inline def apply(): SchemaLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocation]
   }
   
-  @scala.inline
-  implicit class SchemaLocationMutableBuilder[Self <: SchemaLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocation](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
   }
 }

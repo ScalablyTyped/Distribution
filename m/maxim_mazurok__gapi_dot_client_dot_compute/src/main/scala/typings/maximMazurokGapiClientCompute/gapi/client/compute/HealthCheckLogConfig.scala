@@ -11,19 +11,15 @@ trait HealthCheckLogConfig extends StObject {
 }
 object HealthCheckLogConfig {
   
-  @scala.inline
-  def apply(): HealthCheckLogConfig = {
+  inline def apply(): HealthCheckLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HealthCheckLogConfig]
   }
   
-  @scala.inline
-  implicit class HealthCheckLogConfigMutableBuilder[Self <: HealthCheckLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheckLogConfig](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
   }
 }

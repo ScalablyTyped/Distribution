@@ -53,73 +53,51 @@ trait MetricDatum extends StObject {
 }
 object MetricDatum {
   
-  @scala.inline
-  def apply(MetricName: MetricName): MetricDatum = {
+  inline def apply(MetricName: MetricName): MetricDatum = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDatum]
   }
   
-  @scala.inline
-  implicit class MetricDatumMutableBuilder[Self <: MetricDatum] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDatum](x: Self) {
     
-    @scala.inline
-    def setCounts(value: Counts): Self = StObject.set(x, "Counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: Counts): Self = StObject.set(x, "Counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountsUndefined: Self = StObject.set(x, "Counts", js.undefined)
+    inline def setCountsUndefined: Self = StObject.set(x, "Counts", js.undefined)
     
-    @scala.inline
-    def setCountsVarargs(value: DatapointValue*): Self = StObject.set(x, "Counts", js.Array(value :_*))
+    inline def setCountsVarargs(value: DatapointValue*): Self = StObject.set(x, "Counts", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticValues(value: StatisticSet): Self = StObject.set(x, "StatisticValues", value.asInstanceOf[js.Any])
+    inline def setStatisticValues(value: StatisticSet): Self = StObject.set(x, "StatisticValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticValuesUndefined: Self = StObject.set(x, "StatisticValues", js.undefined)
+    inline def setStatisticValuesUndefined: Self = StObject.set(x, "StatisticValues", js.undefined)
     
-    @scala.inline
-    def setStorageResolution(value: StorageResolution): Self = StObject.set(x, "StorageResolution", value.asInstanceOf[js.Any])
+    inline def setStorageResolution(value: StorageResolution): Self = StObject.set(x, "StorageResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageResolutionUndefined: Self = StObject.set(x, "StorageResolution", js.undefined)
+    inline def setStorageResolutionUndefined: Self = StObject.set(x, "StorageResolution", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
     
-    @scala.inline
-    def setValue(value: DatapointValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DatapointValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     
-    @scala.inline
-    def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

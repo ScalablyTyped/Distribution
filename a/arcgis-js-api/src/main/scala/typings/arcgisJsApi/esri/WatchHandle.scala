@@ -19,8 +19,7 @@ trait WatchHandle
 }
 object WatchHandle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object WatchHandle {
     __obj.asInstanceOf[WatchHandle]
   }
   
-  @scala.inline
-  implicit class WatchHandleMutableBuilder[Self <: WatchHandle] (val x: Self) extends AnyVal {
+  extension [Self <: WatchHandle](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

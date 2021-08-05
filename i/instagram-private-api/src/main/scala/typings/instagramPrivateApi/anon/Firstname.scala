@@ -16,37 +16,27 @@ trait Firstname extends StObject {
 }
 object Firstname {
   
-  @scala.inline
-  def apply(email_addresses: js.Array[String], phone_numbers: js.Array[String]): Firstname = {
+  inline def apply(email_addresses: js.Array[String], phone_numbers: js.Array[String]): Firstname = {
     val __obj = js.Dynamic.literal(email_addresses = email_addresses.asInstanceOf[js.Any], phone_numbers = phone_numbers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Firstname]
   }
   
-  @scala.inline
-  implicit class FirstnameMutableBuilder[Self <: Firstname] (val x: Self) extends AnyVal {
+  extension [Self <: Firstname](x: Self) {
     
-    @scala.inline
-    def setEmail_addresses(value: js.Array[String]): Self = StObject.set(x, "email_addresses", value.asInstanceOf[js.Any])
+    inline def setEmail_addresses(value: js.Array[String]): Self = StObject.set(x, "email_addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_addressesVarargs(value: String*): Self = StObject.set(x, "email_addresses", js.Array(value :_*))
+    inline def setEmail_addressesVarargs(value: String*): Self = StObject.set(x, "email_addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
+    inline def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
+    inline def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
-    @scala.inline
-    def setPhone_numbers(value: js.Array[String]): Self = StObject.set(x, "phone_numbers", value.asInstanceOf[js.Any])
+    inline def setPhone_numbers(value: js.Array[String]): Self = StObject.set(x, "phone_numbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_numbersVarargs(value: String*): Self = StObject.set(x, "phone_numbers", js.Array(value :_*))
+    inline def setPhone_numbersVarargs(value: String*): Self = StObject.set(x, "phone_numbers", js.Array(value :_*))
   }
 }

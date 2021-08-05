@@ -14,26 +14,20 @@ object anon {
   }
   object Groups {
     
-    @scala.inline
-    def apply(groups: js.Array[String]): Groups = {
+    inline def apply(groups: js.Array[String]): Groups = {
       val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], root = null)
       __obj.asInstanceOf[Groups]
     }
     
-    @scala.inline
-    implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
+    extension [Self <: Groups](x: Self) {
       
-      @scala.inline
-      def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
     }
   }
 }

@@ -16,8 +16,7 @@ trait ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem extends St
 }
 object ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount_raised: String,
     charity: ListReelMediaViewerFeedResponseCharity,
     donations: ListReelMediaViewerFeedResponseDonations,
@@ -27,19 +26,14 @@ object ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem {
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItemMutableBuilder[Self <: ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem](x: Self) {
     
-    @scala.inline
-    def setAmount_raised(value: String): Self = StObject.set(x, "amount_raised", value.asInstanceOf[js.Any])
+    inline def setAmount_raised(value: String): Self = StObject.set(x, "amount_raised", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharity(value: ListReelMediaViewerFeedResponseCharity): Self = StObject.set(x, "charity", value.asInstanceOf[js.Any])
+    inline def setCharity(value: ListReelMediaViewerFeedResponseCharity): Self = StObject.set(x, "charity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonations(value: ListReelMediaViewerFeedResponseDonations): Self = StObject.set(x, "donations", value.asInstanceOf[js.Any])
+    inline def setDonations(value: ListReelMediaViewerFeedResponseDonations): Self = StObject.set(x, "donations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFundraiser_id(value: String): Self = StObject.set(x, "fundraiser_id", value.asInstanceOf[js.Any])
+    inline def setFundraiser_id(value: String): Self = StObject.set(x, "fundraiser_id", value.asInstanceOf[js.Any])
   }
 }

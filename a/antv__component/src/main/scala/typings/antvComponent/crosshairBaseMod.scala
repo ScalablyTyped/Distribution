@@ -29,7 +29,7 @@ object crosshairBaseMod {
       */
     /* protected */ def getTextPoint(): Point = js.native
     
-    var renderBackground: js.Any = js.native
+    /* private */ var renderBackground: js.Any = js.native
     
     /* protected */ def renderLine(group: IGroup): Unit = js.native
     

@@ -15,17 +15,14 @@ object groupMod {
   }
   object Group {
     
-    @scala.inline
-    def apply[A](concat: (A, A) => A, empty: A, inverse: A => A): Group[A] = {
+    inline def apply[A](concat: (A, A) => A, empty: A, inverse: A => A): Group[A] = {
       val __obj = js.Dynamic.literal(concat = js.Any.fromFunction2(concat), empty = empty.asInstanceOf[js.Any], inverse = js.Any.fromFunction1(inverse))
       __obj.asInstanceOf[Group[A]]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group[?], A] (val x: Self & Group[A]) extends AnyVal {
+    extension [Self <: Group[?], A](x: Self & Group[A]) {
       
-      @scala.inline
-      def setInverse(value: A => A): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
+      inline def setInverse(value: A => A): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
     }
   }
 }

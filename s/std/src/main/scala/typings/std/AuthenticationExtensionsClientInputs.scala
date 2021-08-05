@@ -16,37 +16,27 @@ trait AuthenticationExtensionsClientInputs extends StObject {
 }
 object AuthenticationExtensionsClientInputs {
   
-  @scala.inline
-  def apply(): AuthenticationExtensionsClientInputs = {
+  inline def apply(): AuthenticationExtensionsClientInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationExtensionsClientInputs]
   }
   
-  @scala.inline
-  implicit class AuthenticationExtensionsClientInputsMutableBuilder[Self <: AuthenticationExtensionsClientInputs] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationExtensionsClientInputs](x: Self) {
     
-    @scala.inline
-    def setAppid(value: java.lang.String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    inline def setAppid(value: java.lang.String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppidExclude(value: java.lang.String): Self = StObject.set(x, "appidExclude", value.asInstanceOf[js.Any])
+    inline def setAppidExclude(value: java.lang.String): Self = StObject.set(x, "appidExclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppidExcludeUndefined: Self = StObject.set(x, "appidExclude", js.undefined)
+    inline def setAppidExcludeUndefined: Self = StObject.set(x, "appidExclude", js.undefined)
     
-    @scala.inline
-    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
-    @scala.inline
-    def setCredProps(value: scala.Boolean): Self = StObject.set(x, "credProps", value.asInstanceOf[js.Any])
+    inline def setCredProps(value: scala.Boolean): Self = StObject.set(x, "credProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredPropsUndefined: Self = StObject.set(x, "credProps", js.undefined)
+    inline def setCredPropsUndefined: Self = StObject.set(x, "credProps", js.undefined)
     
-    @scala.inline
-    def setUvm(value: scala.Boolean): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
+    inline def setUvm(value: scala.Boolean): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
+    inline def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
   }
 }

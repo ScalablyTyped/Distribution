@@ -11,24 +11,17 @@ object processMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def process[R](generator: js.Function0[IterableIterator[js.Any]]): js.Function0[js.Promise[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[R]]]
-  @scala.inline
-  def process[A1](generator: js.Function1[/* a1 */ A1, IterableIterator[js.Any]]): js.Function1[/* a1 */ A1, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a1 */ A1, js.Promise[js.Any]]]
-  @scala.inline
-  def process[A1, A2](generator: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[js.Any]]]
-  @scala.inline
-  def process[A1, A2, A3](generator: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[js.Any]]]
-  @scala.inline
-  def process[A1, A2, A3, A4](
+  inline def process[R](generator: js.Function0[IterableIterator[js.Any]]): js.Function0[js.Promise[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[R]]]
+  inline def process[A1](generator: js.Function1[/* a1 */ A1, IterableIterator[js.Any]]): js.Function1[/* a1 */ A1, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a1 */ A1, js.Promise[js.Any]]]
+  inline def process[A1, A2](generator: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[js.Any]]]
+  inline def process[A1, A2, A3](generator: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[js.Any]]]
+  inline def process[A1, A2, A3, A4](
     generator: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, js.Promise[js.Any]]]
-  @scala.inline
-  def process[A1, A2, A3, A4, A5](
+  inline def process[A1, A2, A3, A4, A5](
     generator: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]]
   ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, js.Promise[js.Any]]]
-  @scala.inline
-  def process[A1, A2, A3, A4, A5, A6](
+  inline def process[A1, A2, A3, A4, A5, A6](
     generator: js.Function6[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -55,8 +48,7 @@ object processMod {
     /* a6 */ A6, 
     js.Promise[js.Any]
   ]]
-  @scala.inline
-  def process[A1, A2, A3, A4, A5, A6, A7](
+  inline def process[A1, A2, A3, A4, A5, A6, A7](
     generator: js.Function7[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -86,8 +78,7 @@ object processMod {
     /* a7 */ A7, 
     js.Promise[js.Any]
   ]]
-  @scala.inline
-  def process[A1, A2, A3, A4, A5, A6, A7, A8](
+  inline def process[A1, A2, A3, A4, A5, A6, A7, A8](
     generator: js.Function8[
       /* a1 */ A1, 
       /* a2 */ A2, 

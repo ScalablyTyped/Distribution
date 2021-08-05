@@ -23,31 +23,23 @@ trait DescribeHubResponse extends StObject {
 }
 object DescribeHubResponse {
   
-  @scala.inline
-  def apply(): DescribeHubResponse = {
+  inline def apply(): DescribeHubResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHubResponse]
   }
   
-  @scala.inline
-  implicit class DescribeHubResponseMutableBuilder[Self <: DescribeHubResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHubResponse](x: Self) {
     
-    @scala.inline
-    def setAutoEnableControls(value: Boolean): Self = StObject.set(x, "AutoEnableControls", value.asInstanceOf[js.Any])
+    inline def setAutoEnableControls(value: Boolean): Self = StObject.set(x, "AutoEnableControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoEnableControlsUndefined: Self = StObject.set(x, "AutoEnableControls", js.undefined)
+    inline def setAutoEnableControlsUndefined: Self = StObject.set(x, "AutoEnableControls", js.undefined)
     
-    @scala.inline
-    def setHubArn(value: NonEmptyString): Self = StObject.set(x, "HubArn", value.asInstanceOf[js.Any])
+    inline def setHubArn(value: NonEmptyString): Self = StObject.set(x, "HubArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHubArnUndefined: Self = StObject.set(x, "HubArn", js.undefined)
+    inline def setHubArnUndefined: Self = StObject.set(x, "HubArn", js.undefined)
     
-    @scala.inline
-    def setSubscribedAt(value: NonEmptyString): Self = StObject.set(x, "SubscribedAt", value.asInstanceOf[js.Any])
+    inline def setSubscribedAt(value: NonEmptyString): Self = StObject.set(x, "SubscribedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedAtUndefined: Self = StObject.set(x, "SubscribedAt", js.undefined)
+    inline def setSubscribedAtUndefined: Self = StObject.set(x, "SubscribedAt", js.undefined)
   }
 }

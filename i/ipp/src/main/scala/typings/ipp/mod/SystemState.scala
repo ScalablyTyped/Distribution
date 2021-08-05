@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SystemState extends StObject
 object SystemState {
   
-  @scala.inline
-  def idle: typings.ipp.ippStrings.idle = "idle".asInstanceOf[typings.ipp.ippStrings.idle]
+  inline def idle: typings.ipp.ippStrings.idle = "idle".asInstanceOf[typings.ipp.ippStrings.idle]
   
-  @scala.inline
-  def processing: typings.ipp.ippStrings.processing = "processing".asInstanceOf[typings.ipp.ippStrings.processing]
+  inline def processing: typings.ipp.ippStrings.processing = "processing".asInstanceOf[typings.ipp.ippStrings.processing]
   
-  @scala.inline
-  def stopped: typings.ipp.ippStrings.stopped = "stopped".asInstanceOf[typings.ipp.ippStrings.stopped]
+  inline def stopped: typings.ipp.ippStrings.stopped = "stopped".asInstanceOf[typings.ipp.ippStrings.stopped]
 }

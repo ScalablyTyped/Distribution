@@ -16,16 +16,13 @@ trait NodeCollectionLayout extends StObject {
 }
 object NodeCollectionLayout {
   
-  @scala.inline
-  def apply(layoutPositions: (String, LayoutPositionOptions, ElementPositionFunction) => Unit): NodeCollectionLayout = {
+  inline def apply(layoutPositions: (String, LayoutPositionOptions, ElementPositionFunction) => Unit): NodeCollectionLayout = {
     val __obj = js.Dynamic.literal(layoutPositions = js.Any.fromFunction3(layoutPositions))
     __obj.asInstanceOf[NodeCollectionLayout]
   }
   
-  @scala.inline
-  implicit class NodeCollectionLayoutMutableBuilder[Self <: NodeCollectionLayout] (val x: Self) extends AnyVal {
+  extension [Self <: NodeCollectionLayout](x: Self) {
     
-    @scala.inline
-    def setLayoutPositions(value: (String, LayoutPositionOptions, ElementPositionFunction) => Unit): Self = StObject.set(x, "layoutPositions", js.Any.fromFunction3(value))
+    inline def setLayoutPositions(value: (String, LayoutPositionOptions, ElementPositionFunction) => Unit): Self = StObject.set(x, "layoutPositions", js.Any.fromFunction3(value))
   }
 }

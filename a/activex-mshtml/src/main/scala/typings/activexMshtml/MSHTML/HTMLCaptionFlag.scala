@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLCaptionFlag extends StObject
 object HTMLCaptionFlag {
   
-  @scala.inline
-  def HTMLCaptionFlagNo: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLCaptionFlagNo: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLCaptionFlagYes: `12582912` = 12582912.asInstanceOf[`12582912`]
+  inline def HTMLCaptionFlagYes: `12582912` = 12582912.asInstanceOf[`12582912`]
   
-  @scala.inline
-  def HTMLCaptionFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLCaptionFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

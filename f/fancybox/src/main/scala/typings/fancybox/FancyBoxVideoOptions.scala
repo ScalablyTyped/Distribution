@@ -14,31 +14,23 @@ trait FancyBoxVideoOptions extends StObject {
 }
 object FancyBoxVideoOptions {
   
-  @scala.inline
-  def apply(): FancyBoxVideoOptions = {
+  inline def apply(): FancyBoxVideoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancyBoxVideoOptions]
   }
   
-  @scala.inline
-  implicit class FancyBoxVideoOptionsMutableBuilder[Self <: FancyBoxVideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxVideoOptions](x: Self) {
     
-    @scala.inline
-    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+    inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+    inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

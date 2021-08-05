@@ -16,22 +16,17 @@ trait Align extends StObject {
 }
 object Align {
   
-  @scala.inline
-  def apply(align: TabAlignment, leader: TabLeader, position: Double): Align = {
+  inline def apply(align: TabAlignment, leader: TabLeader, position: Double): Align = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], leader = leader.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Align]
   }
   
-  @scala.inline
-  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+  extension [Self <: Align](x: Self) {
     
-    @scala.inline
-    def setAlign(value: TabAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: TabAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeader(value: TabLeader): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
+    inline def setLeader(value: TabLeader): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

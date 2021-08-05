@@ -10,8 +10,7 @@ trait GetKeyPolicyOutput
      with typings.awsSdkClientKmsNode.typesGetKeyPolicyOutputMod.GetKeyPolicyOutput
 object GetKeyPolicyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetKeyPolicyOutput = {
+  inline def apply($metadata: ResponseMetadata): GetKeyPolicyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyPolicyOutput]
   }

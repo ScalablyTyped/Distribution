@@ -30,8 +30,7 @@ object textUniDriverMod {
   }
   object TextUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -47,29 +46,21 @@ object textUniDriverMod {
       __obj.asInstanceOf[TextUniDriver]
     }
     
-    @scala.inline
-    implicit class TextUniDriverMutableBuilder[Self <: TextUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TextUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetSize(value: () => js.Promise[TextSize]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => js.Promise[TextSize]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => js.Promise[TextSkin]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => js.Promise[TextSkin]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTagName(value: () => js.Promise[String]): Self = StObject.set(x, "getTagName", js.Any.fromFunction0(value))
+      inline def setGetTagName(value: () => js.Promise[String]): Self = StObject.set(x, "getTagName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeight(value: () => js.Promise[TextWeight]): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
+      inline def setGetWeight(value: () => js.Promise[TextWeight]): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLight(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
+      inline def setIsLight(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSecondary(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSecondary", js.Any.fromFunction0(value))
+      inline def setIsSecondary(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSecondary", js.Any.fromFunction0(value))
     }
   }
 }

@@ -24,8 +24,7 @@ trait GmailImageAdBuilder[GmailImageAd]
 }
 object GmailImageAdBuilder {
   
-  @scala.inline
-  def apply[GmailImageAd](
+  inline def apply[GmailImageAd](
     build: () => AdWordsOperation[GmailImageAdBuilder[GmailImageAd]],
     withAdvertiser: String => GmailImageAdBuilder[GmailImageAd],
     withCustomParameters: js.Object => GmailImageAdBuilder[GmailImageAd],
@@ -43,28 +42,20 @@ object GmailImageAdBuilder {
     __obj.asInstanceOf[GmailImageAdBuilder[GmailImageAd]]
   }
   
-  @scala.inline
-  implicit class GmailImageAdBuilderMutableBuilder[Self <: GmailImageAdBuilder[?], GmailImageAd] (val x: Self & GmailImageAdBuilder[GmailImageAd]) extends AnyVal {
+  extension [Self <: GmailImageAdBuilder[?], GmailImageAd](x: Self & GmailImageAdBuilder[GmailImageAd]) {
     
-    @scala.inline
-    def setWithAdvertiser(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
+    inline def setWithAdvertiser(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithDescription(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
+    inline def setWithDescription(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithDisplayUrl(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
+    inline def setWithDisplayUrl(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithImage(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
+    inline def setWithImage(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithLogo(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withLogo", js.Any.fromFunction1(value))
+    inline def setWithLogo(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withLogo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithName(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithSubject(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withSubject", js.Any.fromFunction1(value))
+    inline def setWithSubject(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withSubject", js.Any.fromFunction1(value))
   }
 }

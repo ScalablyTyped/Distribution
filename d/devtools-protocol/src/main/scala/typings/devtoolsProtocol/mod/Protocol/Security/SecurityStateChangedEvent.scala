@@ -34,8 +34,7 @@ trait SecurityStateChangedEvent extends StObject {
 }
 object SecurityStateChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     explanations: js.Array[SecurityStateExplanation],
     insecureContentStatus: InsecureContentStatus,
     schemeIsCryptographic: Boolean,
@@ -45,28 +44,20 @@ object SecurityStateChangedEvent {
     __obj.asInstanceOf[SecurityStateChangedEvent]
   }
   
-  @scala.inline
-  implicit class SecurityStateChangedEventMutableBuilder[Self <: SecurityStateChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityStateChangedEvent](x: Self) {
     
-    @scala.inline
-    def setExplanations(value: js.Array[SecurityStateExplanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
+    inline def setExplanations(value: js.Array[SecurityStateExplanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplanationsVarargs(value: SecurityStateExplanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
+    inline def setExplanationsVarargs(value: SecurityStateExplanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
     
-    @scala.inline
-    def setInsecureContentStatus(value: InsecureContentStatus): Self = StObject.set(x, "insecureContentStatus", value.asInstanceOf[js.Any])
+    inline def setInsecureContentStatus(value: InsecureContentStatus): Self = StObject.set(x, "insecureContentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeIsCryptographic(value: Boolean): Self = StObject.set(x, "schemeIsCryptographic", value.asInstanceOf[js.Any])
+    inline def setSchemeIsCryptographic(value: Boolean): Self = StObject.set(x, "schemeIsCryptographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
+    inline def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

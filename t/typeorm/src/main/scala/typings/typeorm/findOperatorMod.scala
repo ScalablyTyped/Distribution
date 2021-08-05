@@ -212,32 +212,32 @@ object findOperatorMod {
     /**
       * SQL generator
       */
-    var _getSql: js.Any = js.native
+    /* private */ var _getSql: js.Any = js.native
     
     /**
       * Indicates if multiple parameters must be used for this operator.
       */
-    var _multipleParameters: js.Any = js.native
+    /* private */ var _multipleParameters: js.Any = js.native
     
     /**
       * ObjectLiteral parameters.
       */
-    var _objectLiteralParameters: js.Any = js.native
+    /* private */ var _objectLiteralParameters: js.Any = js.native
     
     /**
       * Operator type.
       */
-    var _type: js.Any = js.native
+    /* private */ var _type: js.Any = js.native
     
     /**
       * Indicates if parameter is used or not for this operator.
       */
-    var _useParameter: js.Any = js.native
+    /* private */ var _useParameter: js.Any = js.native
     
     /**
       * Parameter value.
       */
-    var _value: js.Any = js.native
+    /* private */ var _value: js.Any = js.native
     
     /**
       * Gets the child FindOperator if it exists

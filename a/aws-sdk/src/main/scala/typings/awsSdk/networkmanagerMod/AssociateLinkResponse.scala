@@ -13,19 +13,15 @@ trait AssociateLinkResponse extends StObject {
 }
 object AssociateLinkResponse {
   
-  @scala.inline
-  def apply(): AssociateLinkResponse = {
+  inline def apply(): AssociateLinkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateLinkResponse]
   }
   
-  @scala.inline
-  implicit class AssociateLinkResponseMutableBuilder[Self <: AssociateLinkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateLinkResponse](x: Self) {
     
-    @scala.inline
-    def setLinkAssociation(value: LinkAssociation): Self = StObject.set(x, "LinkAssociation", value.asInstanceOf[js.Any])
+    inline def setLinkAssociation(value: LinkAssociation): Self = StObject.set(x, "LinkAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkAssociationUndefined: Self = StObject.set(x, "LinkAssociation", js.undefined)
+    inline def setLinkAssociationUndefined: Self = StObject.set(x, "LinkAssociation", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object intersectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def intersection(array1: js.Any, array2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def intersection(array1: js.Any, array2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

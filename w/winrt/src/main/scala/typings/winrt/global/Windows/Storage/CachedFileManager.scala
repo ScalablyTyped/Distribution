@@ -19,9 +19,7 @@ object CachedFileManager {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def completeUpdatesAsync(file: IStorageFile): IAsyncOperation[FileUpdateStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeUpdatesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[FileUpdateStatus]]
+  inline def completeUpdatesAsync(file: IStorageFile): IAsyncOperation[FileUpdateStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeUpdatesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[FileUpdateStatus]]
   
-  @scala.inline
-  def deferUpdates(file: IStorageFile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deferUpdates")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deferUpdates(file: IStorageFile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deferUpdates")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

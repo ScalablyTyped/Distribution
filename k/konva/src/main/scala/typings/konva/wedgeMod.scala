@@ -52,26 +52,20 @@ object wedgeMod {
   }
   object WedgeConfig {
     
-    @scala.inline
-    def apply(angle: Double, radius: Double): WedgeConfig = {
+    inline def apply(angle: Double, radius: Double): WedgeConfig = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
       __obj.asInstanceOf[WedgeConfig]
     }
     
-    @scala.inline
-    implicit class WedgeConfigMutableBuilder[Self <: WedgeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WedgeConfig](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+      inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
+      inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     }
   }
 }

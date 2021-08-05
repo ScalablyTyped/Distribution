@@ -17,31 +17,23 @@ trait GoogleCloudVisionV1p2beta1WebDetectionWebEntity extends StObject {
 }
 object GoogleCloudVisionV1p2beta1WebDetectionWebEntity {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p2beta1WebDetectionWebEntity = {
+  inline def apply(): GoogleCloudVisionV1p2beta1WebDetectionWebEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1WebDetectionWebEntity]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1WebDetectionWebEntityMutableBuilder[Self <: GoogleCloudVisionV1p2beta1WebDetectionWebEntity] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p2beta1WebDetectionWebEntity](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

@@ -25,10 +25,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connect(urls: js.Array[String]): AmqpConnectionManager = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any]).asInstanceOf[AmqpConnectionManager]
-  @scala.inline
-  def connect(urls: js.Array[String], options: AmqpConnectionManagerOptions): AmqpConnectionManager = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AmqpConnectionManager]
+  inline def connect(urls: js.Array[String]): AmqpConnectionManager = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any]).asInstanceOf[AmqpConnectionManager]
+  inline def connect(urls: js.Array[String], options: AmqpConnectionManagerOptions): AmqpConnectionManager = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AmqpConnectionManager]
   
   @js.native
   trait AmqpConnectionManager extends EventEmitter {
@@ -107,46 +105,34 @@ object mod {
   }
   object AmqpConnectionManagerOptions {
     
-    @scala.inline
-    def apply(): AmqpConnectionManagerOptions = {
+    inline def apply(): AmqpConnectionManagerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AmqpConnectionManagerOptions]
     }
     
-    @scala.inline
-    implicit class AmqpConnectionManagerOptionsMutableBuilder[Self <: AmqpConnectionManagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AmqpConnectionManagerOptions](x: Self) {
       
-      @scala.inline
-      def setConnectionOptions(value: ConnectionOptionsnoDelayb): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
+      inline def setConnectionOptions(value: ConnectionOptionsnoDelayb): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
+      inline def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
       
-      @scala.inline
-      def setFindServers(
+      inline def setFindServers(
         value: (js.Function1[/* callback */ js.Function1[/* urls */ String | js.Array[String], Unit], Unit]) | (js.Function0[js.Promise[String | js.Array[String]]])
       ): Self = StObject.set(x, "findServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindServersFunction0(value: () => js.Promise[String | js.Array[String]]): Self = StObject.set(x, "findServers", js.Any.fromFunction0(value))
+      inline def setFindServersFunction0(value: () => js.Promise[String | js.Array[String]]): Self = StObject.set(x, "findServers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindServersFunction1(value: /* callback */ js.Function1[/* urls */ String | js.Array[String], Unit] => Unit): Self = StObject.set(x, "findServers", js.Any.fromFunction1(value))
+      inline def setFindServersFunction1(value: /* callback */ js.Function1[/* urls */ String | js.Array[String], Unit] => Unit): Self = StObject.set(x, "findServers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindServersUndefined: Self = StObject.set(x, "findServers", js.undefined)
+      inline def setFindServersUndefined: Self = StObject.set(x, "findServers", js.undefined)
       
-      @scala.inline
-      def setHeartbeatIntervalInSeconds(value: Double): Self = StObject.set(x, "heartbeatIntervalInSeconds", value.asInstanceOf[js.Any])
+      inline def setHeartbeatIntervalInSeconds(value: Double): Self = StObject.set(x, "heartbeatIntervalInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatIntervalInSecondsUndefined: Self = StObject.set(x, "heartbeatIntervalInSeconds", js.undefined)
+      inline def setHeartbeatIntervalInSecondsUndefined: Self = StObject.set(x, "heartbeatIntervalInSeconds", js.undefined)
       
-      @scala.inline
-      def setReconnectTimeInSeconds(value: Double): Self = StObject.set(x, "reconnectTimeInSeconds", value.asInstanceOf[js.Any])
+      inline def setReconnectTimeInSeconds(value: Double): Self = StObject.set(x, "reconnectTimeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectTimeInSecondsUndefined: Self = StObject.set(x, "reconnectTimeInSeconds", js.undefined)
+      inline def setReconnectTimeInSecondsUndefined: Self = StObject.set(x, "reconnectTimeInSeconds", js.undefined)
     }
   }
   
@@ -343,40 +329,30 @@ object mod {
   }
   object CreateChannelOpts {
     
-    @scala.inline
-    def apply(): CreateChannelOpts = {
+    inline def apply(): CreateChannelOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateChannelOpts]
     }
     
-    @scala.inline
-    implicit class CreateChannelOptsMutableBuilder[Self <: CreateChannelOpts] (val x: Self) extends AnyVal {
+    extension [Self <: CreateChannelOpts](x: Self) {
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSetup(value: SetupFunc): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      inline def setSetup(value: SetupFunc): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupFunction1(value: /* channel */ ConfirmChannel => js.Promise[Unit]): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
+      inline def setSetupFunction1(value: /* channel */ ConfirmChannel => js.Promise[Unit]): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetupFunction2(
+      inline def setSetupFunction2(
         value: (/* channel */ ConfirmChannel, /* callback */ js.Function1[/* error */ js.UndefOr[Error], Unit]) => Unit
       ): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+      inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     }
   }
   

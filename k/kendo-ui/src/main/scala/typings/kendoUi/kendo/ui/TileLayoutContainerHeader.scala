@@ -12,25 +12,19 @@ trait TileLayoutContainerHeader extends StObject {
 }
 object TileLayoutContainerHeader {
   
-  @scala.inline
-  def apply(): TileLayoutContainerHeader = {
+  inline def apply(): TileLayoutContainerHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayoutContainerHeader]
   }
   
-  @scala.inline
-  implicit class TileLayoutContainerHeaderMutableBuilder[Self <: TileLayoutContainerHeader] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayoutContainerHeader](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

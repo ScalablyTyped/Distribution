@@ -18,20 +18,16 @@ trait JSXIdentifier_
 }
 object JSXIdentifier_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, name: String, start: Double): JSXIdentifier_ = {
+  inline def apply(end: Double, loc: SourceLocation, name: String, start: Double): JSXIdentifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXIdentifier")
     __obj.asInstanceOf[JSXIdentifier_]
   }
   
-  @scala.inline
-  implicit class JSXIdentifier_MutableBuilder[Self <: JSXIdentifier_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXIdentifier_](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: JSXIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

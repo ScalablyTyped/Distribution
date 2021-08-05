@@ -25,19 +25,15 @@ object documentCardPreviewStylesMod {
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardPreview.styles", "DocumentCardPreviewGlobalClassNames.iconContainer")
     @js.native
     def iconContainer: String = js.native
-    @scala.inline
-    def iconContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconContainer")(x.asInstanceOf[js.Any])
+    inline def iconContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconContainer")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def icon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
+    inline def icon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardPreview.styles", "DocumentCardPreviewGlobalClassNames.root")
     @js.native
     def root: String = js.native
-    @scala.inline
-    def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+    inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getStyles(props: IDocumentCardPreviewStyleProps): IDocumentCardPreviewStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardPreviewStyles]
+  inline def getStyles(props: IDocumentCardPreviewStyleProps): IDocumentCardPreviewStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardPreviewStyles]
 }

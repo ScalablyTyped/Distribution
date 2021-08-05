@@ -12,16 +12,13 @@ trait IStringValidator
 }
 object IStringValidator {
   
-  @scala.inline
-  def apply(isAcceptable: String => Boolean): IStringValidator = {
+  inline def apply(isAcceptable: String => Boolean): IStringValidator = {
     val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable))
     __obj.asInstanceOf[IStringValidator]
   }
   
-  @scala.inline
-  implicit class IStringValidatorMutableBuilder[Self <: IStringValidator] (val x: Self) extends AnyVal {
+  extension [Self <: IStringValidator](x: Self) {
     
-    @scala.inline
-    def setIsAcceptable(value: String => Boolean): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
+    inline def setIsAcceptable(value: String => Boolean): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
   }
 }

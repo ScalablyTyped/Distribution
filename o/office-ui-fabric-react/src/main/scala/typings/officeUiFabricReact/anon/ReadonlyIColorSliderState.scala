@@ -11,16 +11,13 @@ trait ReadonlyIColorSliderState extends StObject {
 }
 object ReadonlyIColorSliderState {
   
-  @scala.inline
-  def apply(currentValue: Double): ReadonlyIColorSliderState = {
+  inline def apply(currentValue: Double): ReadonlyIColorSliderState = {
     val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIColorSliderState]
   }
   
-  @scala.inline
-  implicit class ReadonlyIColorSliderStateMutableBuilder[Self <: ReadonlyIColorSliderState] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyIColorSliderState](x: Self) {
     
-    @scala.inline
-    def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+    inline def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
   }
 }

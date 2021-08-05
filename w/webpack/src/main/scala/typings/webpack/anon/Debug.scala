@@ -26,31 +26,23 @@ trait Debug extends StObject {
 }
 object Debug {
   
-  @scala.inline
-  def apply(): Debug = {
+  inline def apply(): Debug = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Debug]
   }
   
-  @scala.inline
-  implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+  extension [Self <: Debug](x: Self) {
     
-    @scala.inline
-    def setDebug(value: FilterTypes | Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: FilterTypes | Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebugFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDebugVarargs(value: FilterItemTypes*): Self = StObject.set(x, "debug", js.Array(value :_*))
+    inline def setDebugVarargs(value: FilterItemTypes*): Self = StObject.set(x, "debug", js.Array(value :_*))
     
-    @scala.inline
-    def setLevel(value: none | error | warn | info | log | verbose): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: none | error | warn | info | log | verbose): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

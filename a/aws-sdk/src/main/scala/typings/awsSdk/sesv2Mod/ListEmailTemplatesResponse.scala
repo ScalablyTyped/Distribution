@@ -18,28 +18,21 @@ trait ListEmailTemplatesResponse extends StObject {
 }
 object ListEmailTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListEmailTemplatesResponse = {
+  inline def apply(): ListEmailTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEmailTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListEmailTemplatesResponseMutableBuilder[Self <: ListEmailTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEmailTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTemplatesMetadata(value: EmailTemplateMetadataList): Self = StObject.set(x, "TemplatesMetadata", value.asInstanceOf[js.Any])
+    inline def setTemplatesMetadata(value: EmailTemplateMetadataList): Self = StObject.set(x, "TemplatesMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesMetadataUndefined: Self = StObject.set(x, "TemplatesMetadata", js.undefined)
+    inline def setTemplatesMetadataUndefined: Self = StObject.set(x, "TemplatesMetadata", js.undefined)
     
-    @scala.inline
-    def setTemplatesMetadataVarargs(value: EmailTemplateMetadata*): Self = StObject.set(x, "TemplatesMetadata", js.Array(value :_*))
+    inline def setTemplatesMetadataVarargs(value: EmailTemplateMetadata*): Self = StObject.set(x, "TemplatesMetadata", js.Array(value :_*))
   }
 }

@@ -21,20 +21,16 @@ object endMod {
   }
   object EndProps {
     
-    @scala.inline
-    def apply(): EndProps = {
+    inline def apply(): EndProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndProps]
     }
     
-    @scala.inline
-    implicit class EndPropsMutableBuilder[Self <: EndProps] (val x: Self) extends AnyVal {
+    extension [Self <: EndProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

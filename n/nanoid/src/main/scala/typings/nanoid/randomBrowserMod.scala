@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object randomBrowserMod {
   
-  @scala.inline
-  def apply(bytes: Double): js.Promise[Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8Array]]
+  inline def apply(bytes: Double): js.Promise[Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8Array]]
   
   @JSImport("nanoid/async/random-browser", JSImport.Namespace)
   @js.native

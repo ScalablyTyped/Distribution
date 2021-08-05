@@ -10,16 +10,13 @@ trait EnumValuesAdminResponseForReview extends StObject {
 }
 object EnumValuesAdminResponseForReview {
   
-  @scala.inline
-  def apply(enumValues: AdminResponseForReview): EnumValuesAdminResponseForReview = {
+  inline def apply(enumValues: AdminResponseForReview): EnumValuesAdminResponseForReview = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAdminResponseForReview]
   }
   
-  @scala.inline
-  implicit class EnumValuesAdminResponseForReviewMutableBuilder[Self <: EnumValuesAdminResponseForReview] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAdminResponseForReview](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AdminResponseForReview): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AdminResponseForReview): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

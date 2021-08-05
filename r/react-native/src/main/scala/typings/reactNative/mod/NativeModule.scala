@@ -26,19 +26,15 @@ trait NativeModule extends StObject {
 }
 object NativeModule {
   
-  @scala.inline
-  def apply(addListener: String => Unit, removeListeners: Double => Unit): NativeModule = {
+  inline def apply(addListener: String => Unit, removeListeners: Double => Unit): NativeModule = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), removeListeners = js.Any.fromFunction1(removeListeners))
     __obj.asInstanceOf[NativeModule]
   }
   
-  @scala.inline
-  implicit class NativeModuleMutableBuilder[Self <: NativeModule] (val x: Self) extends AnyVal {
+  extension [Self <: NativeModule](x: Self) {
     
-    @scala.inline
-    def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+    inline def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
+    inline def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
   }
 }

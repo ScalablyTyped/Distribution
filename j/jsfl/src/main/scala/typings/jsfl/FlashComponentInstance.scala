@@ -10,19 +10,15 @@ trait FlashComponentInstance extends StObject {
 }
 object FlashComponentInstance {
   
-  @scala.inline
-  def apply(parameters: js.Array[js.Any]): FlashComponentInstance = {
+  inline def apply(parameters: js.Array[js.Any]): FlashComponentInstance = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashComponentInstance]
   }
   
-  @scala.inline
-  implicit class FlashComponentInstanceMutableBuilder[Self <: FlashComponentInstance] (val x: Self) extends AnyVal {
+  extension [Self <: FlashComponentInstance](x: Self) {
     
-    @scala.inline
-    def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

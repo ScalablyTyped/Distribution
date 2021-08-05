@@ -32,8 +32,7 @@ trait Polyline
 }
 object Polyline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBounds: () => Bounds,
     getExtData: () => js.Any,
     getLength: () => Double,
@@ -52,40 +51,28 @@ object Polyline {
     __obj.asInstanceOf[Polyline]
   }
   
-  @scala.inline
-  implicit class PolylineMutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
+  extension [Self <: Polyline](x: Self) {
     
-    @scala.inline
-    def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtData(value: () => js.Any): Self = StObject.set(x, "getExtData", js.Any.fromFunction0(value))
+    inline def setGetExtData(value: () => js.Any): Self = StObject.set(x, "getExtData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptions(value: () => PolylineOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+    inline def setGetOptions(value: () => PolylineOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPath(value: () => js.Array[LngLat]): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
+    inline def setGetPath(value: () => js.Array[LngLat]): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetExtData(value: js.Any => Unit): Self = StObject.set(x, "setExtData", js.Any.fromFunction1(value))
+    inline def setSetExtData(value: js.Any => Unit): Self = StObject.set(x, "setExtData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
+    inline def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: PolylineOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: PolylineOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPath(value: js.Array[LngLat] => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
+    inline def setSetPath(value: js.Array[LngLat] => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

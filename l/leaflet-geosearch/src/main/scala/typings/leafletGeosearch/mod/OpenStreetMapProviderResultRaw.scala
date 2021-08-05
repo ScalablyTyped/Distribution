@@ -35,8 +35,7 @@ trait OpenStreetMapProviderResultRaw extends StObject {
 }
 object OpenStreetMapProviderResultRaw {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingbox: js.Tuple4[String, String, String, String],
     `class`: String,
     display_name: String,
@@ -56,43 +55,30 @@ object OpenStreetMapProviderResultRaw {
     __obj.asInstanceOf[OpenStreetMapProviderResultRaw]
   }
   
-  @scala.inline
-  implicit class OpenStreetMapProviderResultRawMutableBuilder[Self <: OpenStreetMapProviderResultRaw] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStreetMapProviderResultRaw](x: Self) {
     
-    @scala.inline
-    def setBoundingbox(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "boundingbox", value.asInstanceOf[js.Any])
+    inline def setBoundingbox(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "boundingbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportance(value: Double): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: Double): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLat(value: String): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: String): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicence(value: String): Self = StObject.set(x, "licence", value.asInstanceOf[js.Any])
+    inline def setLicence(value: String): Self = StObject.set(x, "licence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLon(value: String): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
+    inline def setLon(value: String): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsm_id(value: Double): Self = StObject.set(x, "osm_id", value.asInstanceOf[js.Any])
+    inline def setOsm_id(value: Double): Self = StObject.set(x, "osm_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsm_type(value: String): Self = StObject.set(x, "osm_type", value.asInstanceOf[js.Any])
+    inline def setOsm_type(value: String): Self = StObject.set(x, "osm_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlace_id(value: Double): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: Double): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

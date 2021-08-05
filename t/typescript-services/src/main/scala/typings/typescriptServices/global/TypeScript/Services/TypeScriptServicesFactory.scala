@@ -17,7 +17,7 @@ class TypeScriptServicesFactory ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.TypeScriptServicesFactory {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _shims: js.Any = js.native
   
   /* CompleteClass */

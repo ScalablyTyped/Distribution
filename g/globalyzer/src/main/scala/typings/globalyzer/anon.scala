@@ -16,23 +16,18 @@ object anon {
   }
   object Base {
     
-    @scala.inline
-    def apply(base: String, glob: String, isGlob: Boolean): Base = {
+    inline def apply(base: String, glob: String, isGlob: Boolean): Base = {
       val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], glob = glob.asInstanceOf[js.Any], isGlob = isGlob.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGlob(value: Boolean): Self = StObject.set(x, "isGlob", value.asInstanceOf[js.Any])
+      inline def setIsGlob(value: Boolean): Self = StObject.set(x, "isGlob", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,20 +41,16 @@ object anon {
   }
   object Strict {
     
-    @scala.inline
-    def apply(): Strict = {
+    inline def apply(): Strict = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Strict]
     }
     
-    @scala.inline
-    implicit class StrictMutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
+    extension [Self <: Strict](x: Self) {
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

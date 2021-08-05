@@ -25,19 +25,15 @@ trait XToolPanel extends StObject {
 }
 object XToolPanel {
   
-  @scala.inline
-  def apply(Window: XWindow, createAccessible: XAccessible => XAccessible): XToolPanel = {
+  inline def apply(Window: XWindow, createAccessible: XAccessible => XAccessible): XToolPanel = {
     val __obj = js.Dynamic.literal(Window = Window.asInstanceOf[js.Any], createAccessible = js.Any.fromFunction1(createAccessible))
     __obj.asInstanceOf[XToolPanel]
   }
   
-  @scala.inline
-  implicit class XToolPanelMutableBuilder[Self <: XToolPanel] (val x: Self) extends AnyVal {
+  extension [Self <: XToolPanel](x: Self) {
     
-    @scala.inline
-    def setCreateAccessible(value: XAccessible => XAccessible): Self = StObject.set(x, "createAccessible", js.Any.fromFunction1(value))
+    inline def setCreateAccessible(value: XAccessible => XAccessible): Self = StObject.set(x, "createAccessible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

@@ -82,8 +82,7 @@ object Loader {
     * @return {PIXI.Loader} Reference to PIXI.Loader for chaining
     */
   /* static member */
-  @scala.inline
-  def registerPlugin(plugin: ILoaderPlugin): typings.pixiJs.PIXI.Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Loader]
+  inline def registerPlugin(plugin: ILoaderPlugin): typings.pixiJs.PIXI.Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Loader]
   
   /**
     * A premade instance of the loader that can be used to load resources.
@@ -96,6 +95,5 @@ object Loader {
   @JSImport("pixi.js", "Loader.shared")
   @js.native
   def shared: typings.pixiJs.PIXI.Loader = js.native
-  @scala.inline
-  def shared_=(x: typings.pixiJs.PIXI.Loader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
+  inline def shared_=(x: typings.pixiJs.PIXI.Loader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
 }

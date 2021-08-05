@@ -43,55 +43,39 @@ trait IpAddressResponse extends StObject {
 }
 object IpAddressResponse {
   
-  @scala.inline
-  def apply(): IpAddressResponse = {
+  inline def apply(): IpAddressResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpAddressResponse]
   }
   
-  @scala.inline
-  implicit class IpAddressResponseMutableBuilder[Self <: IpAddressResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IpAddressResponse](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpId(value: ResourceId): Self = StObject.set(x, "IpId", value.asInstanceOf[js.Any])
+    inline def setIpId(value: ResourceId): Self = StObject.set(x, "IpId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpIdUndefined: Self = StObject.set(x, "IpId", js.undefined)
+    inline def setIpIdUndefined: Self = StObject.set(x, "IpId", js.undefined)
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "Ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "Ip", js.undefined)
     
-    @scala.inline
-    def setModificationTime(value: Rfc3339TimeString): Self = StObject.set(x, "ModificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: Rfc3339TimeString): Self = StObject.set(x, "ModificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationTimeUndefined: Self = StObject.set(x, "ModificationTime", js.undefined)
+    inline def setModificationTimeUndefined: Self = StObject.set(x, "ModificationTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: IpAddressStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: IpAddressStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

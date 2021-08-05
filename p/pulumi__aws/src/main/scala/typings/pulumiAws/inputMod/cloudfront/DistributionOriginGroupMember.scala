@@ -14,16 +14,13 @@ trait DistributionOriginGroupMember extends StObject {
 }
 object DistributionOriginGroupMember {
   
-  @scala.inline
-  def apply(originId: Input[String]): DistributionOriginGroupMember = {
+  inline def apply(originId: Input[String]): DistributionOriginGroupMember = {
     val __obj = js.Dynamic.literal(originId = originId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOriginGroupMember]
   }
   
-  @scala.inline
-  implicit class DistributionOriginGroupMemberMutableBuilder[Self <: DistributionOriginGroupMember] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOriginGroupMember](x: Self) {
     
-    @scala.inline
-    def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
+    inline def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
   }
 }

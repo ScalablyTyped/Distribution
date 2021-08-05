@@ -39,37 +39,27 @@ trait Binary
 }
 object Binary {
   
-  @scala.inline
-  def apply(content: base64Binary, contentType: code): Binary = {
+  inline def apply(content: base64Binary, contentType: code): Binary = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Binary]
   }
   
-  @scala.inline
-  implicit class BinaryMutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
+  extension [Self <: Binary](x: Self) {
     
-    @scala.inline
-    def setContent(value: base64Binary): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: base64Binary): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityContext(value: Reference): Self = StObject.set(x, "securityContext", value.asInstanceOf[js.Any])
+    inline def setSecurityContext(value: Reference): Self = StObject.set(x, "securityContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityContextUndefined: Self = StObject.set(x, "securityContext", js.undefined)
+    inline def setSecurityContextUndefined: Self = StObject.set(x, "securityContext", js.undefined)
     
-    @scala.inline
-    def set_content(value: Element): Self = StObject.set(x, "_content", value.asInstanceOf[js.Any])
+    inline def set_content(value: Element): Self = StObject.set(x, "_content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
+    inline def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
+    inline def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
     
-    @scala.inline
-    def set_contentUndefined: Self = StObject.set(x, "_content", js.undefined)
+    inline def set_contentUndefined: Self = StObject.set(x, "_content", js.undefined)
   }
 }

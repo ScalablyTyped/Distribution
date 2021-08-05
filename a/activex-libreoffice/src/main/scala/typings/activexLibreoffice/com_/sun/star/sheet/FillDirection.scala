@@ -19,18 +19,14 @@ trait FillDirection extends StObject
 object FillDirection {
   
   /** specifies that rows are filled from top to bottom. */
-  @scala.inline
-  def TO_BOTTOM: `0` = 0.asInstanceOf[`0`]
+  inline def TO_BOTTOM: `0` = 0.asInstanceOf[`0`]
   
   /** specifies that columns are filled from right to left. */
-  @scala.inline
-  def TO_LEFT: `3` = 3.asInstanceOf[`3`]
+  inline def TO_LEFT: `3` = 3.asInstanceOf[`3`]
   
   /** specifies that columns are filled from left to right. */
-  @scala.inline
-  def TO_RIGHT: `1` = 1.asInstanceOf[`1`]
+  inline def TO_RIGHT: `1` = 1.asInstanceOf[`1`]
   
   /** specifies that rows are filled from bottom to top. */
-  @scala.inline
-  def TO_TOP: `2` = 2.asInstanceOf[`2`]
+  inline def TO_TOP: `2` = 2.asInstanceOf[`2`]
 }

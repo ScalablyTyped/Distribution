@@ -28,8 +28,7 @@ trait StatisticDefinitionStatisticParameters
 }
 object StatisticDefinitionStatisticParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -39,16 +38,12 @@ object StatisticDefinitionStatisticParameters {
     __obj.asInstanceOf[StatisticDefinitionStatisticParameters]
   }
   
-  @scala.inline
-  implicit class StatisticDefinitionStatisticParametersMutableBuilder[Self <: StatisticDefinitionStatisticParameters] (val x: Self) extends AnyVal {
+  extension [Self <: StatisticDefinitionStatisticParameters](x: Self) {
     
-    @scala.inline
-    def setOrderBy(value: ASC | DESC): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: ASC | DESC): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

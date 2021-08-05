@@ -38,8 +38,7 @@ trait DataColumn
 }
 object DataColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: Double,
     Array: XArray,
     BinaryStream: XInputStream,
@@ -145,13 +144,10 @@ object DataColumn {
     __obj.asInstanceOf[DataColumn]
   }
   
-  @scala.inline
-  implicit class DataColumnMutableBuilder[Self <: DataColumn] (val x: Self) extends AnyVal {
+  extension [Self <: DataColumn](x: Self) {
     
-    @scala.inline
-    def setOriginalValue(value: js.Any): Self = StObject.set(x, "OriginalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "OriginalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

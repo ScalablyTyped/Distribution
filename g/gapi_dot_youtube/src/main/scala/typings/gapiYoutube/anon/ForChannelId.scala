@@ -53,64 +53,45 @@ trait ForChannelId extends StObject {
 }
 object ForChannelId {
   
-  @scala.inline
-  def apply(part: String): ForChannelId = {
+  inline def apply(part: String): ForChannelId = {
     val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForChannelId]
   }
   
-  @scala.inline
-  implicit class ForChannelIdMutableBuilder[Self <: ForChannelId] (val x: Self) extends AnyVal {
+  extension [Self <: ForChannelId](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setForChannelId(value: String): Self = StObject.set(x, "forChannelId", value.asInstanceOf[js.Any])
+    inline def setForChannelId(value: String): Self = StObject.set(x, "forChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForChannelIdUndefined: Self = StObject.set(x, "forChannelId", js.undefined)
+    inline def setForChannelIdUndefined: Self = StObject.set(x, "forChannelId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMine(value: Boolean): Self = StObject.set(x, "mine", value.asInstanceOf[js.Any])
+    inline def setMine(value: Boolean): Self = StObject.set(x, "mine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMineUndefined: Self = StObject.set(x, "mine", js.undefined)
+    inline def setMineUndefined: Self = StObject.set(x, "mine", js.undefined)
     
-    @scala.inline
-    def setMySubscripbers(value: Boolean): Self = StObject.set(x, "mySubscripbers", value.asInstanceOf[js.Any])
+    inline def setMySubscripbers(value: Boolean): Self = StObject.set(x, "mySubscripbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMySubscripbersUndefined: Self = StObject.set(x, "mySubscripbers", js.undefined)
+    inline def setMySubscripbersUndefined: Self = StObject.set(x, "mySubscripbers", js.undefined)
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
   }
 }

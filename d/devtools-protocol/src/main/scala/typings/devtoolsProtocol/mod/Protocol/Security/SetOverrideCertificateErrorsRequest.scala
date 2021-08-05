@@ -13,17 +13,14 @@ trait SetOverrideCertificateErrorsRequest extends StObject {
 }
 object SetOverrideCertificateErrorsRequest {
   
-  @scala.inline
-  def apply(`override`: Boolean): SetOverrideCertificateErrorsRequest = {
+  inline def apply(`override`: Boolean): SetOverrideCertificateErrorsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOverrideCertificateErrorsRequest]
   }
   
-  @scala.inline
-  implicit class SetOverrideCertificateErrorsRequestMutableBuilder[Self <: SetOverrideCertificateErrorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetOverrideCertificateErrorsRequest](x: Self) {
     
-    @scala.inline
-    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
   }
 }

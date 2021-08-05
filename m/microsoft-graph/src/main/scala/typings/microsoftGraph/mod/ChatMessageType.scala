@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatMessageType extends StObject
 object ChatMessageType {
   
-  @scala.inline
-  def chatEvent: typings.microsoftGraph.microsoftGraphStrings.chatEvent = "chatEvent".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.chatEvent]
+  inline def chatEvent: typings.microsoftGraph.microsoftGraphStrings.chatEvent = "chatEvent".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.chatEvent]
   
-  @scala.inline
-  def message: typings.microsoftGraph.microsoftGraphStrings.message = "message".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.message]
+  inline def message: typings.microsoftGraph.microsoftGraphStrings.message = "message".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.message]
   
-  @scala.inline
-  def typing: typings.microsoftGraph.microsoftGraphStrings.typing = "typing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.typing]
+  inline def typing: typings.microsoftGraph.microsoftGraphStrings.typing = "typing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.typing]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

@@ -16,10 +16,8 @@ object ServerSettings {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getAlternateUrls(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AlternateUrl] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlternateUrls")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AlternateUrl]]
+  inline def getAlternateUrls(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AlternateUrl] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlternateUrls")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AlternateUrl]]
   
   /* static member */
-  @scala.inline
-  def getGlobalInstalledLanguages(context: typings.sharepoint.SP.ClientRuntimeContext, compatibilityLevel: Double): js.Array[typings.sharepoint.SP.Language] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalInstalledLanguages")(context.asInstanceOf[js.Any], compatibilityLevel.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.sharepoint.SP.Language]]
+  inline def getGlobalInstalledLanguages(context: typings.sharepoint.SP.ClientRuntimeContext, compatibilityLevel: Double): js.Array[typings.sharepoint.SP.Language] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalInstalledLanguages")(context.asInstanceOf[js.Any], compatibilityLevel.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.sharepoint.SP.Language]]
 }

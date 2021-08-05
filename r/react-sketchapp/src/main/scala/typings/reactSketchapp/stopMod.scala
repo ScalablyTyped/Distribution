@@ -26,35 +26,26 @@ object stopMod {
   }
   object StopProps {
     
-    @scala.inline
-    def apply(): StopProps = {
+    inline def apply(): StopProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StopProps]
     }
     
-    @scala.inline
-    implicit class StopPropsMutableBuilder[Self <: StopProps] (val x: Self) extends AnyVal {
+    extension [Self <: StopProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setStopColor(value: String): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
+      inline def setStopColor(value: String): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
+      inline def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
       
-      @scala.inline
-      def setStopOpacity(value: NumberProp): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
+      inline def setStopOpacity(value: NumberProp): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
+      inline def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
     }
   }
 }

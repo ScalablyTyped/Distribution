@@ -17,31 +17,23 @@ trait ScreenshotOptions extends StObject {
 }
 object ScreenshotOptions {
   
-  @scala.inline
-  def apply(): ScreenshotOptions = {
+  inline def apply(): ScreenshotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScreenshotOptions]
   }
   
-  @scala.inline
-  implicit class ScreenshotOptionsMutableBuilder[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenshotOptions](x: Self) {
     
-    @scala.inline
-    def setDocumentComplete(value: Boolean): Self = StObject.set(x, "documentComplete", value.asInstanceOf[js.Any])
+    inline def setDocumentComplete(value: Boolean): Self = StObject.set(x, "documentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentCompleteUndefined: Self = StObject.set(x, "documentComplete", js.undefined)
+    inline def setDocumentCompleteUndefined: Self = StObject.set(x, "documentComplete", js.undefined)
     
-    @scala.inline
-    def setFullResolution(value: Boolean): Self = StObject.set(x, "fullResolution", value.asInstanceOf[js.Any])
+    inline def setFullResolution(value: Boolean): Self = StObject.set(x, "fullResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullResolutionUndefined: Self = StObject.set(x, "fullResolution", js.undefined)
+    inline def setFullResolutionUndefined: Self = StObject.set(x, "fullResolution", js.undefined)
     
-    @scala.inline
-    def setStartRender(value: Boolean): Self = StObject.set(x, "startRender", value.asInstanceOf[js.Any])
+    inline def setStartRender(value: Boolean): Self = StObject.set(x, "startRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRenderUndefined: Self = StObject.set(x, "startRender", js.undefined)
+    inline def setStartRenderUndefined: Self = StObject.set(x, "startRender", js.undefined)
   }
 }

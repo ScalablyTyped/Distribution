@@ -26,8 +26,7 @@ trait Comment
 }
 object Comment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anchor: Null,
     comment: String,
     hasComment: Boolean,
@@ -44,22 +43,16 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValue(value: Null): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: Null): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: COMMENT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: COMMENT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

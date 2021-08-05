@@ -22,6 +22,5 @@ object TableCheck {
   /**
     * Creates checks from the check metadata object.
     */
-  @scala.inline
-  def create(checkMetadata: CheckMetadata): typings.typeorm.tableCheckMod.TableCheck = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableCheckMod.TableCheck]
+  inline def create(checkMetadata: CheckMetadata): typings.typeorm.tableCheckMod.TableCheck = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableCheckMod.TableCheck]
 }

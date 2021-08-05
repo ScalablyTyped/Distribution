@@ -18,25 +18,19 @@ trait JobExecutionSettings extends StObject {
 }
 object JobExecutionSettings {
   
-  @scala.inline
-  def apply(): JobExecutionSettings = {
+  inline def apply(): JobExecutionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobExecutionSettings]
   }
   
-  @scala.inline
-  implicit class JobExecutionSettingsMutableBuilder[Self <: JobExecutionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: JobExecutionSettings](x: Self) {
     
-    @scala.inline
-    def setAllowDeferredExecution(value: Boolean): Self = StObject.set(x, "AllowDeferredExecution", value.asInstanceOf[js.Any])
+    inline def setAllowDeferredExecution(value: Boolean): Self = StObject.set(x, "AllowDeferredExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDeferredExecutionUndefined: Self = StObject.set(x, "AllowDeferredExecution", js.undefined)
+    inline def setAllowDeferredExecutionUndefined: Self = StObject.set(x, "AllowDeferredExecution", js.undefined)
     
-    @scala.inline
-    def setDataAccessRoleArn(value: DataAccessRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setDataAccessRoleArn(value: DataAccessRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
+    inline def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
   }
 }

@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RestHTTPMethods extends StObject
 object RestHTTPMethods {
   
-  @scala.inline
-  def delete: typings.servicenow.servicenowStrings.delete = "delete".asInstanceOf[typings.servicenow.servicenowStrings.delete]
+  inline def delete: typings.servicenow.servicenowStrings.delete = "delete".asInstanceOf[typings.servicenow.servicenowStrings.delete]
   
-  @scala.inline
-  def get: typings.servicenow.servicenowStrings.get = "get".asInstanceOf[typings.servicenow.servicenowStrings.get]
+  inline def get: typings.servicenow.servicenowStrings.get = "get".asInstanceOf[typings.servicenow.servicenowStrings.get]
   
-  @scala.inline
-  def head: typings.servicenow.servicenowStrings.head = "head".asInstanceOf[typings.servicenow.servicenowStrings.head]
+  inline def head: typings.servicenow.servicenowStrings.head = "head".asInstanceOf[typings.servicenow.servicenowStrings.head]
   
-  @scala.inline
-  def options: typings.servicenow.servicenowStrings.options = "options".asInstanceOf[typings.servicenow.servicenowStrings.options]
+  inline def options: typings.servicenow.servicenowStrings.options = "options".asInstanceOf[typings.servicenow.servicenowStrings.options]
   
-  @scala.inline
-  def patch: typings.servicenow.servicenowStrings.patch = "patch".asInstanceOf[typings.servicenow.servicenowStrings.patch]
+  inline def patch: typings.servicenow.servicenowStrings.patch = "patch".asInstanceOf[typings.servicenow.servicenowStrings.patch]
   
-  @scala.inline
-  def post: typings.servicenow.servicenowStrings.post = "post".asInstanceOf[typings.servicenow.servicenowStrings.post]
+  inline def post: typings.servicenow.servicenowStrings.post = "post".asInstanceOf[typings.servicenow.servicenowStrings.post]
   
-  @scala.inline
-  def put: typings.servicenow.servicenowStrings.put = "put".asInstanceOf[typings.servicenow.servicenowStrings.put]
+  inline def put: typings.servicenow.servicenowStrings.put = "put".asInstanceOf[typings.servicenow.servicenowStrings.put]
 }

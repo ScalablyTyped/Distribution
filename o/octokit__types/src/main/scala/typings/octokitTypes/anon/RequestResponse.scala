@@ -17,8 +17,7 @@ trait RequestResponse extends StObject {
 }
 object RequestResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsDeleteTokenEndpoint,
     request: AppsDeleteTokenRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object RequestResponse {
     __obj.asInstanceOf[RequestResponse]
   }
   
-  @scala.inline
-  implicit class RequestResponseMutableBuilder[Self <: RequestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RequestResponse](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsDeleteTokenEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsDeleteTokenEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsDeleteTokenRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsDeleteTokenRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

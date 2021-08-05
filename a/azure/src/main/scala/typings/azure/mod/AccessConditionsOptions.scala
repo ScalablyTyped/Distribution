@@ -12,19 +12,15 @@ trait AccessConditionsOptions
 }
 object AccessConditionsOptions {
   
-  @scala.inline
-  def apply(): AccessConditionsOptions = {
+  inline def apply(): AccessConditionsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessConditionsOptions]
   }
   
-  @scala.inline
-  implicit class AccessConditionsOptionsMutableBuilder[Self <: AccessConditionsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessConditionsOptions](x: Self) {
     
-    @scala.inline
-    def setAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "accessConditions", value.asInstanceOf[js.Any])
+    inline def setAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "accessConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessConditionsUndefined: Self = StObject.set(x, "accessConditions", js.undefined)
+    inline def setAccessConditionsUndefined: Self = StObject.set(x, "accessConditions", js.undefined)
   }
 }

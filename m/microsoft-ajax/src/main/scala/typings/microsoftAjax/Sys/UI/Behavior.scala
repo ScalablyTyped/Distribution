@@ -37,8 +37,7 @@ trait Behavior
 }
 object Behavior {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add_disposing: js.Function => Unit,
     add_propertyChanged: js.Function => Unit,
     beginUpdate: () => Unit,
@@ -62,16 +61,12 @@ object Behavior {
     __obj.asInstanceOf[Behavior]
   }
   
-  @scala.inline
-  implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
+  extension [Self <: Behavior](x: Self) {
     
-    @scala.inline
-    def setGet_element(value: () => HTMLElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
+    inline def setGet_element(value: () => HTMLElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
   }
 }

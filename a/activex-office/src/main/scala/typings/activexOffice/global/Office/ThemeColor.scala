@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ThemeColor")
 @js.native
-class ThemeColor protected ()
+/* private */ class ThemeColor ()
   extends StObject
      with typings.activexOffice.Office.ThemeColor {
   
@@ -17,7 +17,7 @@ class ThemeColor protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ThemeColor_typekey")
   var OfficeDotThemeColor_typekey: typings.activexOffice.Office.ThemeColor = js.native
   

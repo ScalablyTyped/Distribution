@@ -14,22 +14,17 @@ trait CreateLinkOptions extends StObject {
 }
 object CreateLinkOptions {
   
-  @scala.inline
-  def apply(newWindow: Boolean, text: String, url: String): CreateLinkOptions = {
+  inline def apply(newWindow: Boolean, text: String, url: String): CreateLinkOptions = {
     val __obj = js.Dynamic.literal(newWindow = newWindow.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLinkOptions]
   }
   
-  @scala.inline
-  implicit class CreateLinkOptionsMutableBuilder[Self <: CreateLinkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLinkOptions](x: Self) {
     
-    @scala.inline
-    def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
+    inline def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

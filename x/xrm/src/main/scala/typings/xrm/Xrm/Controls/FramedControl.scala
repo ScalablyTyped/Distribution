@@ -48,8 +48,7 @@ trait FramedControl
 }
 object FramedControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContentWindow: () => js.Promise[Window],
     getControlType: () => ControlType | String,
     getLabel: () => String,
@@ -65,19 +64,14 @@ object FramedControl {
     __obj.asInstanceOf[FramedControl]
   }
   
-  @scala.inline
-  implicit class FramedControlMutableBuilder[Self <: FramedControl] (val x: Self) extends AnyVal {
+  extension [Self <: FramedControl](x: Self) {
     
-    @scala.inline
-    def setGetContentWindow(value: () => js.Promise[Window]): Self = StObject.set(x, "getContentWindow", js.Any.fromFunction0(value))
+    inline def setGetContentWindow(value: () => js.Promise[Window]): Self = StObject.set(x, "getContentWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObject(value: () => HTMLIFrameElement): Self = StObject.set(x, "getObject", js.Any.fromFunction0(value))
+    inline def setGetObject(value: () => HTMLIFrameElement): Self = StObject.set(x, "getObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSrc(value: () => String): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
+    inline def setGetSrc(value: () => String): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSrc(value: String => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
+    inline def setSetSrc(value: String => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesManage extends StObject {
 }
 object EnumValuesManage {
   
-  @scala.inline
-  def apply(enumValues: Manage): EnumValuesManage = {
+  inline def apply(enumValues: Manage): EnumValuesManage = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesManage]
   }
   
-  @scala.inline
-  implicit class EnumValuesManageMutableBuilder[Self <: EnumValuesManage] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesManage](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Manage): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Manage): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

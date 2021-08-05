@@ -33,22 +33,17 @@ trait PropertySetInfoChangeEvent
 }
 object PropertySetInfoChangeEvent {
   
-  @scala.inline
-  def apply(Handle: Double, Name: String, Reason: Double, Source: XInterface): PropertySetInfoChangeEvent = {
+  inline def apply(Handle: Double, Name: String, Reason: Double, Source: XInterface): PropertySetInfoChangeEvent = {
     val __obj = js.Dynamic.literal(Handle = Handle.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertySetInfoChangeEvent]
   }
   
-  @scala.inline
-  implicit class PropertySetInfoChangeEventMutableBuilder[Self <: PropertySetInfoChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PropertySetInfoChangeEvent](x: Self) {
     
-    @scala.inline
-    def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

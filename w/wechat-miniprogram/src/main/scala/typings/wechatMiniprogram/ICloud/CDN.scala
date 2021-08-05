@@ -13,16 +13,13 @@ trait CDN extends StObject {
 }
 object CDN {
   
-  @scala.inline
-  def apply(target: String | ArrayBuffer | ICDNFilePathSpec): CDN = {
+  inline def apply(target: String | ArrayBuffer | ICDNFilePathSpec): CDN = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CDN]
   }
   
-  @scala.inline
-  implicit class CDNMutableBuilder[Self <: CDN] (val x: Self) extends AnyVal {
+  extension [Self <: CDN](x: Self) {
     
-    @scala.inline
-    def setTarget(value: String | ArrayBuffer | ICDNFilePathSpec): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String | ArrayBuffer | ICDNFilePathSpec): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

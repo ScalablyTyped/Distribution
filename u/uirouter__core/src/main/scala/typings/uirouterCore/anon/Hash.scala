@@ -16,25 +16,19 @@ trait Hash extends StObject {
 }
 object Hash {
   
-  @scala.inline
-  def apply(hash: js.Any, path: js.Any, search: js.Any, url: String): Hash = {
+  inline def apply(hash: js.Any, path: js.Any, search: js.Any, url: String): Hash = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hash]
   }
   
-  @scala.inline
-  implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+  extension [Self <: Hash](x: Self) {
     
-    @scala.inline
-    def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

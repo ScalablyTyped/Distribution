@@ -11,47 +11,31 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPoint(A: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(A.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPoint(A: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(A.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPointCompressed(A: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPointCompressed")(A.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPointCompressed(A: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPointCompressed")(A.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPrivate(d: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPrivate(d: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def pointAdd(A: Buffer, B: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAdd")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
-  @scala.inline
-  def pointAdd(A: Buffer, B: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAdd")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def pointAdd(A: Buffer, B: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAdd")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def pointAdd(A: Buffer, B: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAdd")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @scala.inline
-  def pointAddScalar(A: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAddScalar")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
-  @scala.inline
-  def pointAddScalar(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAddScalar")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def pointAddScalar(A: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAddScalar")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def pointAddScalar(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAddScalar")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @scala.inline
-  def pointCompress(A: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pointCompress")(A.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def pointCompress(A: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pointCompress")(A.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def pointFromScalar(d: Buffer): Buffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("pointFromScalar")(d.asInstanceOf[js.Any]).asInstanceOf[Buffer | Null]
-  @scala.inline
-  def pointFromScalar(d: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointFromScalar")(d.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def pointFromScalar(d: Buffer): Buffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("pointFromScalar")(d.asInstanceOf[js.Any]).asInstanceOf[Buffer | Null]
+  inline def pointFromScalar(d: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointFromScalar")(d.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @scala.inline
-  def pointMultiply(A: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointMultiply")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
-  @scala.inline
-  def pointMultiply(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointMultiply")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def pointMultiply(A: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointMultiply")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def pointMultiply(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointMultiply")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @scala.inline
-  def privateAdd(d: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("privateAdd")(d.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def privateAdd(d: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("privateAdd")(d.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @scala.inline
-  def privateSub(d: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("privateSub")(d.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  inline def privateSub(d: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("privateSub")(d.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @scala.inline
-  def sign(message: Buffer, privateKey: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def sign(message: Buffer, privateKey: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def verify(message: Buffer, publicKey: Buffer, signature: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def verify(message: Buffer, publicKey: Buffer, signature: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -23,25 +23,19 @@ trait DefineNameOptions extends StObject {
 }
 object DefineNameOptions {
   
-  @scala.inline
-  def apply(): DefineNameOptions = {
+  inline def apply(): DefineNameOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefineNameOptions]
   }
   
-  @scala.inline
-  implicit class DefineNameOptionsMutableBuilder[Self <: DefineNameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefineNameOptions](x: Self) {
     
-    @scala.inline
-    def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+    inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
+    inline def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
     
-    @scala.inline
-    def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+    inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
+    inline def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
   }
 }

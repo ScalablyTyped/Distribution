@@ -52,48 +52,37 @@ trait DistanceMeasurement2DViewModelProperties extends StObject {
 }
 object DistanceMeasurement2DViewModelProperties {
   
-  @scala.inline
-  def apply(): DistanceMeasurement2DViewModelProperties = {
+  inline def apply(): DistanceMeasurement2DViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistanceMeasurement2DViewModelProperties]
   }
   
-  @scala.inline
-  implicit class DistanceMeasurement2DViewModelPropertiesMutableBuilder[Self <: DistanceMeasurement2DViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceMeasurement2DViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setGeodesicDistanceThreshold(value: Double): Self = StObject.set(x, "geodesicDistanceThreshold", value.asInstanceOf[js.Any])
+    inline def setGeodesicDistanceThreshold(value: Double): Self = StObject.set(x, "geodesicDistanceThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeodesicDistanceThresholdUndefined: Self = StObject.set(x, "geodesicDistanceThreshold", js.undefined)
+    inline def setGeodesicDistanceThresholdUndefined: Self = StObject.set(x, "geodesicDistanceThreshold", js.undefined)
     
-    @scala.inline
-    def setUnit(
+    inline def setUnit(
       value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitOptions(
+    inline def setUnitOptions(
       value: js.Array[
           metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
         ]
     ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
+    inline def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
     
-    @scala.inline
-    def setUnitOptionsVarargs(
+    inline def setUnitOptionsVarargs(
       value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
     ): Self = StObject.set(x, "unitOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

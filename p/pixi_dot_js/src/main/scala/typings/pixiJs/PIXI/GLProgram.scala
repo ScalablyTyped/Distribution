@@ -19,16 +19,13 @@ trait GLProgram extends StObject {
 }
 object GLProgram {
   
-  @scala.inline
-  def apply(destroy: () => Unit): GLProgram = {
+  inline def apply(destroy: () => Unit): GLProgram = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[GLProgram]
   }
   
-  @scala.inline
-  implicit class GLProgramMutableBuilder[Self <: GLProgram] (val x: Self) extends AnyVal {
+  extension [Self <: GLProgram](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

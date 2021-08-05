@@ -40,14 +40,12 @@ object mod {
   @JSImport("cloudevents-sdk", "CloudEvent")
   @js.native
   def CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent] = js.native
-  @scala.inline
-  def CloudEvent_=(x: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CloudEvent")(x.asInstanceOf[js.Any])
+  inline def CloudEvent_=(x: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CloudEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("cloudevents-sdk", "Constants")
   @js.native
   def Constants: js.Any = js.native
-  @scala.inline
-  def Constants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constants")(x.asInstanceOf[js.Any])
+  inline def Constants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constants")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cloudevents-sdk", "HTTPEmitter")
@@ -68,8 +66,7 @@ object mod {
   @JSImport("cloudevents-sdk", "HTTPEmitter")
   @js.native
   def HTTPEmitter: TypeofHTTPEmitter = js.native
-  @scala.inline
-  def HTTPEmitter_=(x: TypeofHTTPEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPEmitter")(x.asInstanceOf[js.Any])
+  inline def HTTPEmitter_=(x: TypeofHTTPEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPEmitter")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cloudevents-sdk", "HTTPReceiver")
@@ -82,6 +79,5 @@ object mod {
   @JSImport("cloudevents-sdk", "HTTPReceiver")
   @js.native
   def HTTPReceiver: Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver] = js.native
-  @scala.inline
-  def HTTPReceiver_=(x: Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPReceiver")(x.asInstanceOf[js.Any])
+  inline def HTTPReceiver_=(x: Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPReceiver")(x.asInstanceOf[js.Any])
 }

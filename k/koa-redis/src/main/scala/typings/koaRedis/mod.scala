@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: RedisOptions): RedisSessionStore = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RedisSessionStore]
+  inline def apply(options: RedisOptions): RedisSessionStore = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RedisSessionStore]
   
   @JSImport("koa-redis", JSImport.Namespace)
   @js.native
@@ -25,26 +24,20 @@ object mod {
   }
   object RedisOptions {
     
-    @scala.inline
-    def apply(): RedisOptions = {
+    inline def apply(): RedisOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RedisOptions]
     }
     
-    @scala.inline
-    implicit class RedisOptionsMutableBuilder[Self <: RedisOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RedisOptions](x: Self) {
       
-      @scala.inline
-      def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setDuplicate(value: Boolean): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
+      inline def setDuplicate(value: Boolean): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicateUndefined: Self = StObject.set(x, "duplicate", js.undefined)
+      inline def setDuplicateUndefined: Self = StObject.set(x, "duplicate", js.undefined)
     }
   }
   

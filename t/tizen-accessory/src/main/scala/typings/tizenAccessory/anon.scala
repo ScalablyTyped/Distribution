@@ -18,32 +18,24 @@ object anon {
   }
   object Oncomplete {
     
-    @scala.inline
-    def apply(): Oncomplete = {
+    inline def apply(): Oncomplete = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Oncomplete]
     }
     
-    @scala.inline
-    implicit class OncompleteMutableBuilder[Self <: Oncomplete] (val x: Self) extends AnyVal {
+    extension [Self <: Oncomplete](x: Self) {
       
-      @scala.inline
-      def setOncomplete(value: (/* id */ String, /* localPath */ String) => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction2(value))
+      inline def setOncomplete(value: (/* id */ String, /* localPath */ String) => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
+      inline def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
       
-      @scala.inline
-      def setOnerror(value: (/* errorCode */ String, /* id */ String) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
+      inline def setOnerror(value: (/* errorCode */ String, /* id */ String) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setOnprogress(value: (/* id */ String, /* progress */ Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction2(value))
+      inline def setOnprogress(value: (/* id */ String, /* progress */ Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
+      inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
     }
   }
   
@@ -57,32 +49,24 @@ object anon {
   }
   object Onconnect {
     
-    @scala.inline
-    def apply(): Onconnect = {
+    inline def apply(): Onconnect = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Onconnect]
     }
     
-    @scala.inline
-    implicit class OnconnectMutableBuilder[Self <: Onconnect] (val x: Self) extends AnyVal {
+    extension [Self <: Onconnect](x: Self) {
       
-      @scala.inline
-      def setOnconnect(value: /* socket */ SASocket => Unit): Self = StObject.set(x, "onconnect", js.Any.fromFunction1(value))
+      inline def setOnconnect(value: /* socket */ SASocket => Unit): Self = StObject.set(x, "onconnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnconnectUndefined: Self = StObject.set(x, "onconnect", js.undefined)
+      inline def setOnconnectUndefined: Self = StObject.set(x, "onconnect", js.undefined)
       
-      @scala.inline
-      def setOnerror(value: (/* errorCode */ String, /* peerAgent */ SAPeerAgent) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
+      inline def setOnerror(value: (/* errorCode */ String, /* peerAgent */ SAPeerAgent) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setOnrequest(value: /* peerAgent */ SAPeerAgent => Unit): Self = StObject.set(x, "onrequest", js.Any.fromFunction1(value))
+      inline def setOnrequest(value: /* peerAgent */ SAPeerAgent => Unit): Self = StObject.set(x, "onrequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnrequestUndefined: Self = StObject.set(x, "onrequest", js.undefined)
+      inline def setOnrequestUndefined: Self = StObject.set(x, "onrequest", js.undefined)
     }
   }
   
@@ -98,29 +82,22 @@ object anon {
   }
   object Onerror {
     
-    @scala.inline
-    def apply(onpeeragentfound: SAPeerAgent => Unit): Onerror = {
+    inline def apply(onpeeragentfound: SAPeerAgent => Unit): Onerror = {
       val __obj = js.Dynamic.literal(onpeeragentfound = js.Any.fromFunction1(onpeeragentfound))
       __obj.asInstanceOf[Onerror]
     }
     
-    @scala.inline
-    implicit class OnerrorMutableBuilder[Self <: Onerror] (val x: Self) extends AnyVal {
+    extension [Self <: Onerror](x: Self) {
       
-      @scala.inline
-      def setOnerror(value: /* errorCode */ String => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+      inline def setOnerror(value: /* errorCode */ String => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setOnpeeragentfound(value: SAPeerAgent => Unit): Self = StObject.set(x, "onpeeragentfound", js.Any.fromFunction1(value))
+      inline def setOnpeeragentfound(value: SAPeerAgent => Unit): Self = StObject.set(x, "onpeeragentfound", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnpeeragentupdated(value: (/* peerAgent */ SAPeerAgent, /* status */ AVAILABLE | UNAVAILABLE) => Unit): Self = StObject.set(x, "onpeeragentupdated", js.Any.fromFunction2(value))
+      inline def setOnpeeragentupdated(value: (/* peerAgent */ SAPeerAgent, /* status */ AVAILABLE | UNAVAILABLE) => Unit): Self = StObject.set(x, "onpeeragentupdated", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnpeeragentupdatedUndefined: Self = StObject.set(x, "onpeeragentupdated", js.undefined)
+      inline def setOnpeeragentupdatedUndefined: Self = StObject.set(x, "onpeeragentupdated", js.undefined)
     }
   }
   
@@ -136,38 +113,28 @@ object anon {
   }
   object Onprogress {
     
-    @scala.inline
-    def apply(): Onprogress = {
+    inline def apply(): Onprogress = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Onprogress]
     }
     
-    @scala.inline
-    implicit class OnprogressMutableBuilder[Self <: Onprogress] (val x: Self) extends AnyVal {
+    extension [Self <: Onprogress](x: Self) {
       
-      @scala.inline
-      def setOncomplete(value: (/* id */ String, /* localPath */ String) => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction2(value))
+      inline def setOncomplete(value: (/* id */ String, /* localPath */ String) => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
+      inline def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
       
-      @scala.inline
-      def setOnerror(value: (/* errorCode */ String, /* id */ String) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
+      inline def setOnerror(value: (/* errorCode */ String, /* id */ String) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setOnprogress(value: (/* id */ String, /* progress */ Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction2(value))
+      inline def setOnprogress(value: (/* id */ String, /* progress */ Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
+      inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
       
-      @scala.inline
-      def setOnreceive(value: (/* id */ String, /* fileName */ String) => Unit): Self = StObject.set(x, "onreceive", js.Any.fromFunction2(value))
+      inline def setOnreceive(value: (/* id */ String, /* fileName */ String) => Unit): Self = StObject.set(x, "onreceive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnreceiveUndefined: Self = StObject.set(x, "onreceive", js.undefined)
+      inline def setOnreceiveUndefined: Self = StObject.set(x, "onreceive", js.undefined)
     }
   }
   
@@ -181,26 +148,20 @@ object anon {
   }
   object Onsent {
     
-    @scala.inline
-    def apply(): Onsent = {
+    inline def apply(): Onsent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Onsent]
     }
     
-    @scala.inline
-    implicit class OnsentMutableBuilder[Self <: Onsent] (val x: Self) extends AnyVal {
+    extension [Self <: Onsent](x: Self) {
       
-      @scala.inline
-      def setOnerror(value: (/* errorCode */ String, /* peerAgent */ SAPeerAgent, /* id */ String) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction3(value))
+      inline def setOnerror(value: (/* errorCode */ String, /* peerAgent */ SAPeerAgent, /* id */ String) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setOnsent(value: (/* peerAgent */ SAPeerAgent, /* id */ String) => Unit): Self = StObject.set(x, "onsent", js.Any.fromFunction2(value))
+      inline def setOnsent(value: (/* peerAgent */ SAPeerAgent, /* id */ String) => Unit): Self = StObject.set(x, "onsent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnsentUndefined: Self = StObject.set(x, "onsent", js.undefined)
+      inline def setOnsentUndefined: Self = StObject.set(x, "onsent", js.undefined)
     }
   }
 }

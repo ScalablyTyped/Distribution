@@ -10,6 +10,5 @@ object isElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

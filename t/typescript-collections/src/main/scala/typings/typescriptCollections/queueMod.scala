@@ -91,7 +91,7 @@ object queueMod {
       * @type collections.LinkedList
       * @private
       */
-    var list: js.Any = js.native
+    /* private */ var list: js.Any = js.native
     
     /**
       * Retrieves, but does not remove, the head of this queue.

@@ -16,8 +16,7 @@ object keyring {
       * Array of keys
       * @param keys The keys to store in this array
       */
-    @scala.inline
-    def KeyArray(keys: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("KeyArray")(keys.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def KeyArray(keys: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("KeyArray")(keys.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("openpgp", "keyring.keyring.Keyring")
     @js.native

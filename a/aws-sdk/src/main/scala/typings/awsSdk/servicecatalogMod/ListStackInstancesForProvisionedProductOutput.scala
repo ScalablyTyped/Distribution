@@ -18,28 +18,21 @@ trait ListStackInstancesForProvisionedProductOutput extends StObject {
 }
 object ListStackInstancesForProvisionedProductOutput {
   
-  @scala.inline
-  def apply(): ListStackInstancesForProvisionedProductOutput = {
+  inline def apply(): ListStackInstancesForProvisionedProductOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStackInstancesForProvisionedProductOutput]
   }
   
-  @scala.inline
-  implicit class ListStackInstancesForProvisionedProductOutputMutableBuilder[Self <: ListStackInstancesForProvisionedProductOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStackInstancesForProvisionedProductOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setStackInstances(value: StackInstances): Self = StObject.set(x, "StackInstances", value.asInstanceOf[js.Any])
+    inline def setStackInstances(value: StackInstances): Self = StObject.set(x, "StackInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackInstancesUndefined: Self = StObject.set(x, "StackInstances", js.undefined)
+    inline def setStackInstancesUndefined: Self = StObject.set(x, "StackInstances", js.undefined)
     
-    @scala.inline
-    def setStackInstancesVarargs(value: StackInstance*): Self = StObject.set(x, "StackInstances", js.Array(value :_*))
+    inline def setStackInstancesVarargs(value: StackInstance*): Self = StObject.set(x, "StackInstances", js.Array(value :_*))
   }
 }

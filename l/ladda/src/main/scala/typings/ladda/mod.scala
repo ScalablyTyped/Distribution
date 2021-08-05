@@ -12,20 +12,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bind(target: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def bind(target: String, options: BindOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def bind(target: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def bind(target: HTMLElement, options: BindOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bind(target: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def bind(target: String, options: BindOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bind(target: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def bind(target: HTMLElement, options: BindOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def create(button: HTMLButtonElement): LaddaButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(button.asInstanceOf[js.Any]).asInstanceOf[LaddaButton]
+  inline def create(button: HTMLButtonElement): LaddaButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(button.asInstanceOf[js.Any]).asInstanceOf[LaddaButton]
   
-  @scala.inline
-  def stopAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopAll")().asInstanceOf[Unit]
+  inline def stopAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopAll")().asInstanceOf[Unit]
   
   trait BindOptions extends StObject {
     
@@ -41,26 +35,20 @@ object mod {
   }
   object BindOptions {
     
-    @scala.inline
-    def apply(): BindOptions = {
+    inline def apply(): BindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BindOptions]
     }
     
-    @scala.inline
-    implicit class BindOptionsMutableBuilder[Self <: BindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BindOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: /* instance */ LaddaButton => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* instance */ LaddaButton => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -82,8 +70,7 @@ object mod {
   }
   object LaddaButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isLoading: () => Boolean,
       remove: () => Unit,
       setProgress: Double => Unit,
@@ -96,29 +83,21 @@ object mod {
       __obj.asInstanceOf[LaddaButton]
     }
     
-    @scala.inline
-    implicit class LaddaButtonMutableBuilder[Self <: LaddaButton] (val x: Self) extends AnyVal {
+    extension [Self <: LaddaButton](x: Self) {
       
-      @scala.inline
-      def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+      inline def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetProgress(value: Double => Unit): Self = StObject.set(x, "setProgress", js.Any.fromFunction1(value))
+      inline def setSetProgress(value: Double => Unit): Self = StObject.set(x, "setProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => LaddaButton): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => LaddaButton): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartAfter(value: Double => LaddaButton): Self = StObject.set(x, "startAfter", js.Any.fromFunction1(value))
+      inline def setStartAfter(value: Double => LaddaButton): Self = StObject.set(x, "startAfter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStop(value: () => LaddaButton): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => LaddaButton): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => LaddaButton): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => LaddaButton): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
 }

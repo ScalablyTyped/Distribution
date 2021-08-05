@@ -38,55 +38,39 @@ trait Expression extends StObject {
 }
 object Expression {
   
-  @scala.inline
-  def apply(): Expression = {
+  inline def apply(): Expression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Expression]
   }
   
-  @scala.inline
-  implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
+  extension [Self <: Expression](x: Self) {
     
-    @scala.inline
-    def setAnd(value: Expressions): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
+    inline def setAnd(value: Expressions): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
+    inline def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
     
-    @scala.inline
-    def setAndVarargs(value: Expression*): Self = StObject.set(x, "And", js.Array(value :_*))
+    inline def setAndVarargs(value: Expression*): Self = StObject.set(x, "And", js.Array(value :_*))
     
-    @scala.inline
-    def setCostCategories(value: CostCategoryValues): Self = StObject.set(x, "CostCategories", value.asInstanceOf[js.Any])
+    inline def setCostCategories(value: CostCategoryValues): Self = StObject.set(x, "CostCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostCategoriesUndefined: Self = StObject.set(x, "CostCategories", js.undefined)
+    inline def setCostCategoriesUndefined: Self = StObject.set(x, "CostCategories", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: DimensionValues): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionValues): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setNot(value: Expression): Self = StObject.set(x, "Not", value.asInstanceOf[js.Any])
+    inline def setNot(value: Expression): Self = StObject.set(x, "Not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotUndefined: Self = StObject.set(x, "Not", js.undefined)
+    inline def setNotUndefined: Self = StObject.set(x, "Not", js.undefined)
     
-    @scala.inline
-    def setOr(value: Expressions): Self = StObject.set(x, "Or", value.asInstanceOf[js.Any])
+    inline def setOr(value: Expressions): Self = StObject.set(x, "Or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrUndefined: Self = StObject.set(x, "Or", js.undefined)
+    inline def setOrUndefined: Self = StObject.set(x, "Or", js.undefined)
     
-    @scala.inline
-    def setOrVarargs(value: Expression*): Self = StObject.set(x, "Or", js.Array(value :_*))
+    inline def setOrVarargs(value: Expression*): Self = StObject.set(x, "Or", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagValues): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagValues): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

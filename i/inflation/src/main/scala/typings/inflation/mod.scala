@@ -16,10 +16,8 @@ object mod {
     *
     * @returns a stream that emits inflated data from the given stream.
     */
-  @scala.inline
-  def apply(req: Readable): Readable = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[Readable]
-  @scala.inline
-  def apply(req: Readable, options: Options): Readable = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply(req: Readable): Readable = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply(req: Readable, options: Options): Readable = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
   @JSImport("inflation", JSImport.Namespace)
   @js.native
@@ -36,20 +34,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGzip(value: deflate | gzip | identity): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+      inline def setGzip(value: deflate | gzip | identity): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+      inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
     }
   }
 }

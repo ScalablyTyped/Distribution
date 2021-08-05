@@ -90,79 +90,45 @@ object Interval {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def after(start: DateObject, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: DateObject, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: DateObject, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: DateTime, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: DateTime, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: DateTime, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: Date, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: Date, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def after(start: Date, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: DateObject, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: DateObject, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: DateObject, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: DateTime, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: DateTime, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: DateTime, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: Date, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: Date, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def after(start: Date, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(start.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @scala.inline
-  def before(end: DateObject, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: DateObject, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: DateObject, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: DateTime, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: DateTime, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: DateTime, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: Date, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: Date, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def before(end: Date, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: DateObject, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: DateObject, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: DateObject, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: DateTime, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: DateTime, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: DateTime, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: Date, duration: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: Date, duration: Duration): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def before(end: Date, duration: DurationObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(end.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @scala.inline
-  def fromDateTimes(start: DateObject, end: DateObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: DateObject, end: DateTime): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: DateObject, end: Date): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: DateTime, end: DateObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: DateTime, end: DateTime): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: DateTime, end: Date): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: Date, end: DateObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: Date, end: DateTime): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
-  @scala.inline
-  def fromDateTimes(start: Date, end: Date): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: DateObject, end: DateObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: DateObject, end: DateTime): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: DateObject, end: Date): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: DateTime, end: DateObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: DateTime, end: DateTime): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: DateTime, end: Date): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: Date, end: DateObject): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: Date, end: DateTime): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromDateTimes(start: Date, end: Date): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDateTimes")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @scala.inline
-  def fromISO(string: String): Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(string.asInstanceOf[js.Any]).asInstanceOf[Interval]
-  @scala.inline
-  def fromISO(string: String, options: DateTimeOptions): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def fromISO(string: String): Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(string.asInstanceOf[js.Any]).asInstanceOf[Interval]
+  inline def fromISO(string: String, options: DateTimeOptions): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @scala.inline
-  def invalid(): Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Interval]
-  @scala.inline
-  def invalid(reason: String): Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[Interval]
+  inline def invalid(): Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Interval]
+  inline def invalid(reason: String): Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[Interval]
   
-  @scala.inline
-  def isInterval(o: js.Any): /* is luxon.luxon.Interval */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterval")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.Interval */ Boolean]
+  inline def isInterval(o: js.Any): /* is luxon.luxon.Interval */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterval")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.Interval */ Boolean]
   
-  @scala.inline
-  def merge(intervals: js.Array[Interval]): js.Array[Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interval]]
+  inline def merge(intervals: js.Array[Interval]): js.Array[Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interval]]
   
-  @scala.inline
-  def xor(intervals: js.Array[Interval]): js.Array[Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interval]]
+  inline def xor(intervals: js.Array[Interval]): js.Array[Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interval]]
 }

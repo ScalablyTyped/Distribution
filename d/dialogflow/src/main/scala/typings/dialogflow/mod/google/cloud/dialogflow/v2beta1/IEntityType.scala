@@ -34,74 +34,53 @@ trait IEntityType extends StObject {
 }
 object IEntityType {
   
-  @scala.inline
-  def apply(): IEntityType = {
+  inline def apply(): IEntityType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEntityType]
   }
   
-  @scala.inline
-  implicit class IEntityTypeMutableBuilder[Self <: IEntityType] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityType](x: Self) {
     
-    @scala.inline
-    def setAutoExpansionMode(
+    inline def setAutoExpansionMode(
       value: AutoExpansionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode * / any */ String)
     ): Self = StObject.set(x, "autoExpansionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoExpansionModeNull: Self = StObject.set(x, "autoExpansionMode", null)
+    inline def setAutoExpansionModeNull: Self = StObject.set(x, "autoExpansionMode", null)
     
-    @scala.inline
-    def setAutoExpansionModeUndefined: Self = StObject.set(x, "autoExpansionMode", js.undefined)
+    inline def setAutoExpansionModeUndefined: Self = StObject.set(x, "autoExpansionMode", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnableFuzzyExtraction(value: Boolean): Self = StObject.set(x, "enableFuzzyExtraction", value.asInstanceOf[js.Any])
+    inline def setEnableFuzzyExtraction(value: Boolean): Self = StObject.set(x, "enableFuzzyExtraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFuzzyExtractionNull: Self = StObject.set(x, "enableFuzzyExtraction", null)
+    inline def setEnableFuzzyExtractionNull: Self = StObject.set(x, "enableFuzzyExtraction", null)
     
-    @scala.inline
-    def setEnableFuzzyExtractionUndefined: Self = StObject.set(x, "enableFuzzyExtraction", js.undefined)
+    inline def setEnableFuzzyExtractionUndefined: Self = StObject.set(x, "enableFuzzyExtraction", js.undefined)
     
-    @scala.inline
-    def setEntities(value: js.Array[IEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[IEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesNull: Self = StObject.set(x, "entities", null)
+    inline def setEntitiesNull: Self = StObject.set(x, "entities", null)
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: IEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: IEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(
+    inline def setKind(
       value: Kind | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.Kind * / any */ String)
     ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindNull: Self = StObject.set(x, "kind", null)
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

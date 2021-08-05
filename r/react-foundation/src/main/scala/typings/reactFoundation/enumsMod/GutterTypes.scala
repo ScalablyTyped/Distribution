@@ -18,12 +18,10 @@ object GutterTypes {
   @JSImport("react-foundation/enums", "GutterTypes.MARGIN")
   @js.native
   def MARGIN: GutterTypes = js.native
-  @scala.inline
-  def MARGIN_=(x: GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARGIN")(x.asInstanceOf[js.Any])
+  inline def MARGIN_=(x: GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARGIN")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "GutterTypes.PADDING")
   @js.native
   def PADDING: GutterTypes = js.native
-  @scala.inline
-  def PADDING_=(x: GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PADDING")(x.asInstanceOf[js.Any])
+  inline def PADDING_=(x: GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PADDING")(x.asInstanceOf[js.Any])
 }

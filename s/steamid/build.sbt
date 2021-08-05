@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "steamid"
-version := "1.1-dt-20180323Z-90373c"
+version := "1.1-dt-20180323Z-b2ae31"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,8 +13,7 @@ object avatarUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avatarDriverFactory(base: UniDriver[js.Any]): AvatarDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("avatarDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[AvatarDriver]
+  inline def avatarDriverFactory(base: UniDriver[js.Any]): AvatarDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("avatarDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[AvatarDriver]
   
   trait AvatarDriver
     extends StObject
@@ -31,8 +30,7 @@ object avatarUniDotDriverMod {
   }
   object AvatarDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -44,17 +42,13 @@ object avatarUniDotDriverMod {
       __obj.asInstanceOf[AvatarDriver]
     }
     
-    @scala.inline
-    implicit class AvatarDriverMutableBuilder[Self <: AvatarDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarDriver](x: Self) {
       
-      @scala.inline
-      def setGetContentType(value: () => js.Promise[ContentType]): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
+      inline def setGetContentType(value: () => js.Promise[ContentType]): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
+      inline def setGetTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageLoaded(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isImageLoaded", js.Any.fromFunction0(value))
+      inline def setIsImageLoaded(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isImageLoaded", js.Any.fromFunction0(value))
     }
   }
 }

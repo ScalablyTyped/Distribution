@@ -28,23 +28,18 @@ object anon {
   }
   object Arrow {
     
-    @scala.inline
-    def apply(arrow: Left, popper: Offset, reference: Offset): Arrow = {
+    inline def apply(arrow: Left, popper: Offset, reference: Offset): Arrow = {
       val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arrow]
     }
     
-    @scala.inline
-    implicit class ArrowMutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
+    extension [Self <: Arrow](x: Self) {
       
-      @scala.inline
-      def setArrow(value: Left): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: Left): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopper(value: Offset): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      inline def setPopper(value: Offset): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference(value: Offset): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: Offset): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,65 +64,46 @@ object anon {
   }
   object BaseModifierbehaviorBehav {
     
-    @scala.inline
-    def apply(): BaseModifierbehaviorBehav = {
+    inline def apply(): BaseModifierbehaviorBehav = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseModifierbehaviorBehav]
     }
     
-    @scala.inline
-    implicit class BaseModifierbehaviorBehavMutableBuilder[Self <: BaseModifierbehaviorBehav] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModifierbehaviorBehav](x: Self) {
       
-      @scala.inline
-      def setBehavior(value: Behavior | js.Array[Position]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: Behavior | js.Array[Position]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      @scala.inline
-      def setBehaviorVarargs(value: Position*): Self = StObject.set(x, "behavior", js.Array(value :_*))
+      inline def setBehaviorVarargs(value: Position*): Self = StObject.set(x, "behavior", js.Array(value :_*))
       
-      @scala.inline
-      def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
+      inline def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundariesElementUndefined: Self = StObject.set(x, "boundariesElement", js.undefined)
+      inline def setBoundariesElementUndefined: Self = StObject.set(x, "boundariesElement", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFlipVariations(value: Boolean): Self = StObject.set(x, "flipVariations", value.asInstanceOf[js.Any])
+      inline def setFlipVariations(value: Boolean): Self = StObject.set(x, "flipVariations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipVariationsByContent(value: Boolean): Self = StObject.set(x, "flipVariationsByContent", value.asInstanceOf[js.Any])
+      inline def setFlipVariationsByContent(value: Boolean): Self = StObject.set(x, "flipVariationsByContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipVariationsByContentUndefined: Self = StObject.set(x, "flipVariationsByContent", js.undefined)
+      inline def setFlipVariationsByContentUndefined: Self = StObject.set(x, "flipVariationsByContent", js.undefined)
       
-      @scala.inline
-      def setFlipVariationsUndefined: Self = StObject.set(x, "flipVariations", js.undefined)
+      inline def setFlipVariationsUndefined: Self = StObject.set(x, "flipVariations", js.undefined)
       
-      @scala.inline
-      def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
   
@@ -144,38 +120,28 @@ object anon {
   }
   object BaseModifierelementstring {
     
-    @scala.inline
-    def apply(): BaseModifierelementstring = {
+    inline def apply(): BaseModifierelementstring = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseModifierelementstring]
     }
     
-    @scala.inline
-    implicit class BaseModifierelementstringMutableBuilder[Self <: BaseModifierelementstring] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModifierelementstring](x: Self) {
       
-      @scala.inline
-      def setElement(value: String | Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: String | Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -196,50 +162,36 @@ object anon {
   }
   object BaseModifiergpuAccelerati {
     
-    @scala.inline
-    def apply(): BaseModifiergpuAccelerati = {
+    inline def apply(): BaseModifiergpuAccelerati = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseModifiergpuAccelerati]
     }
     
-    @scala.inline
-    implicit class BaseModifiergpuAcceleratiMutableBuilder[Self <: BaseModifiergpuAccelerati] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModifiergpuAccelerati](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
+      inline def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpuAccelerationUndefined: Self = StObject.set(x, "gpuAcceleration", js.undefined)
+      inline def setGpuAccelerationUndefined: Self = StObject.set(x, "gpuAcceleration", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setX(value: bottom | top): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: bottom | top): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: left | right): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: left | right): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -256,35 +208,26 @@ object anon {
   }
   object BaseModifiernamestring {
     
-    @scala.inline
-    def apply(name: String): BaseModifiernamestring = {
+    inline def apply(name: String): BaseModifiernamestring = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseModifiernamestring]
     }
     
-    @scala.inline
-    implicit class BaseModifiernamestringMutableBuilder[Self <: BaseModifiernamestring] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModifiernamestring](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -301,38 +244,28 @@ object anon {
   }
   object BaseModifieroffsetnumbers {
     
-    @scala.inline
-    def apply(): BaseModifieroffsetnumbers = {
+    inline def apply(): BaseModifieroffsetnumbers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseModifieroffsetnumbers]
     }
     
-    @scala.inline
-    implicit class BaseModifieroffsetnumbersMutableBuilder[Self <: BaseModifieroffsetnumbers] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModifieroffsetnumbers](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -351,44 +284,32 @@ object anon {
   }
   object BaseModifieronLoadFunctio {
     
-    @scala.inline
-    def apply(): BaseModifieronLoadFunctio = {
+    inline def apply(): BaseModifieronLoadFunctio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseModifieronLoadFunctio]
     }
     
-    @scala.inline
-    implicit class BaseModifieronLoadFunctioMutableBuilder[Self <: BaseModifieronLoadFunctio] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModifieronLoadFunctio](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
+      inline def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpuAccelerationUndefined: Self = StObject.set(x, "gpuAcceleration", js.undefined)
+      inline def setGpuAccelerationUndefined: Self = StObject.set(x, "gpuAcceleration", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: js.Function): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+      inline def setOnLoad(value: js.Function): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -411,59 +332,42 @@ object anon {
   }
   object BaseModifierpriorityArray {
     
-    @scala.inline
-    def apply(): BaseModifierpriorityArray = {
+    inline def apply(): BaseModifierpriorityArray = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseModifierpriorityArray]
     }
     
-    @scala.inline
-    implicit class BaseModifierpriorityArrayMutableBuilder[Self <: BaseModifierpriorityArray] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModifierpriorityArray](x: Self) {
       
-      @scala.inline
-      def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
+      inline def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundariesElementUndefined: Self = StObject.set(x, "boundariesElement", js.undefined)
+      inline def setBoundariesElementUndefined: Self = StObject.set(x, "boundariesElement", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEscapeWithReference(value: Boolean): Self = StObject.set(x, "escapeWithReference", value.asInstanceOf[js.Any])
+      inline def setEscapeWithReference(value: Boolean): Self = StObject.set(x, "escapeWithReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeWithReferenceUndefined: Self = StObject.set(x, "escapeWithReference", js.undefined)
+      inline def setEscapeWithReferenceUndefined: Self = StObject.set(x, "escapeWithReference", js.undefined)
       
-      @scala.inline
-      def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* data */ Data, /* options */ js.Object) => Data): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPriority(value: js.Array[Position]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: js.Array[Position]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setPriorityVarargs(value: Position*): Self = StObject.set(x, "priority", js.Array(value :_*))
+      inline def setPriorityVarargs(value: Position*): Self = StObject.set(x, "priority", js.Array(value :_*))
     }
   }
   
@@ -475,20 +379,16 @@ object anon {
   }
   object Left {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Left = {
+    inline def apply(left: Double, top: Double): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
-    @scala.inline
-    implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    extension [Self <: Left](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

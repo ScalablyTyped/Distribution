@@ -16,19 +16,15 @@ trait SchemaImportSshPublicKeyResponse extends StObject {
 }
 object SchemaImportSshPublicKeyResponse {
   
-  @scala.inline
-  def apply(): SchemaImportSshPublicKeyResponse = {
+  inline def apply(): SchemaImportSshPublicKeyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportSshPublicKeyResponse]
   }
   
-  @scala.inline
-  implicit class SchemaImportSshPublicKeyResponseMutableBuilder[Self <: SchemaImportSshPublicKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportSshPublicKeyResponse](x: Self) {
     
-    @scala.inline
-    def setLoginProfile(value: SchemaLoginProfile): Self = StObject.set(x, "loginProfile", value.asInstanceOf[js.Any])
+    inline def setLoginProfile(value: SchemaLoginProfile): Self = StObject.set(x, "loginProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginProfileUndefined: Self = StObject.set(x, "loginProfile", js.undefined)
+    inline def setLoginProfileUndefined: Self = StObject.set(x, "loginProfile", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait MaximumInputs extends StObject {
 }
 object MaximumInputs {
   
-  @scala.inline
-  def apply(): MaximumInputs = {
+  inline def apply(): MaximumInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaximumInputs]
   }
   
-  @scala.inline
-  implicit class MaximumInputsMutableBuilder[Self <: MaximumInputs] (val x: Self) extends AnyVal {
+  extension [Self <: MaximumInputs](x: Self) {
     
-    @scala.inline
-    def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
-    @scala.inline
-    def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
   }
 }

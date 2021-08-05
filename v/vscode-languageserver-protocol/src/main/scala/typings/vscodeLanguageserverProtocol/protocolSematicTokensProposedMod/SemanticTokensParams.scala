@@ -19,16 +19,13 @@ trait SemanticTokensParams
 }
 object SemanticTokensParams {
   
-  @scala.inline
-  def apply(textDocument: TextDocumentIdentifier): SemanticTokensParams = {
+  inline def apply(textDocument: TextDocumentIdentifier): SemanticTokensParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensParams]
   }
   
-  @scala.inline
-  implicit class SemanticTokensParamsMutableBuilder[Self <: SemanticTokensParams] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensParams](x: Self) {
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

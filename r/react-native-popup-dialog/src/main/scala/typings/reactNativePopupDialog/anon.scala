@@ -15,26 +15,20 @@ object anon {
   }
   object AnimationDuration {
     
-    @scala.inline
-    def apply(): AnimationDuration = {
+    inline def apply(): AnimationDuration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimationDuration]
     }
     
-    @scala.inline
-    implicit class AnimationDurationMutableBuilder[Self <: AnimationDuration] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationDuration](x: Self) {
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+      inline def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
+      inline def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
     }
   }
   
@@ -46,26 +40,20 @@ object anon {
   }
   object SlideFrom {
     
-    @scala.inline
-    def apply(): SlideFrom = {
+    inline def apply(): SlideFrom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlideFrom]
     }
     
-    @scala.inline
-    implicit class SlideFromMutableBuilder[Self <: SlideFrom] (val x: Self) extends AnyVal {
+    extension [Self <: SlideFrom](x: Self) {
       
-      @scala.inline
-      def setSlideFrom(value: SlideFromTypes): Self = StObject.set(x, "slideFrom", value.asInstanceOf[js.Any])
+      inline def setSlideFrom(value: SlideFromTypes): Self = StObject.set(x, "slideFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideFromUndefined: Self = StObject.set(x, "slideFrom", js.undefined)
+      inline def setSlideFromUndefined: Self = StObject.set(x, "slideFrom", js.undefined)
       
-      @scala.inline
-      def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+      inline def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
+      inline def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
     }
   }
 }

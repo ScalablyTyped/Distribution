@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlFolderDisplayMode extends StObject
 object OlFolderDisplayMode {
   
-  @scala.inline
-  def olFolderDisplayFolderOnly: `1` = 1.asInstanceOf[`1`]
+  inline def olFolderDisplayFolderOnly: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olFolderDisplayNoNavigation: `2` = 2.asInstanceOf[`2`]
+  inline def olFolderDisplayNoNavigation: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olFolderDisplayNormal: `0` = 0.asInstanceOf[`0`]
+  inline def olFolderDisplayNormal: `0` = 0.asInstanceOf[`0`]
 }

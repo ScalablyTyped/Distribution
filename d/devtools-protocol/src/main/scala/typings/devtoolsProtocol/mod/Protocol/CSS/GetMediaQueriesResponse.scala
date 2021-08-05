@@ -10,19 +10,15 @@ trait GetMediaQueriesResponse extends StObject {
 }
 object GetMediaQueriesResponse {
   
-  @scala.inline
-  def apply(medias: js.Array[CSSMedia]): GetMediaQueriesResponse = {
+  inline def apply(medias: js.Array[CSSMedia]): GetMediaQueriesResponse = {
     val __obj = js.Dynamic.literal(medias = medias.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMediaQueriesResponse]
   }
   
-  @scala.inline
-  implicit class GetMediaQueriesResponseMutableBuilder[Self <: GetMediaQueriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMediaQueriesResponse](x: Self) {
     
-    @scala.inline
-    def setMedias(value: js.Array[CSSMedia]): Self = StObject.set(x, "medias", value.asInstanceOf[js.Any])
+    inline def setMedias(value: js.Array[CSSMedia]): Self = StObject.set(x, "medias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediasVarargs(value: CSSMedia*): Self = StObject.set(x, "medias", js.Array(value :_*))
+    inline def setMediasVarargs(value: CSSMedia*): Self = StObject.set(x, "medias", js.Array(value :_*))
   }
 }

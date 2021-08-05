@@ -18,28 +18,21 @@ trait GetAssociatedIpv6PoolCidrsResult extends StObject {
 }
 object GetAssociatedIpv6PoolCidrsResult {
   
-  @scala.inline
-  def apply(): GetAssociatedIpv6PoolCidrsResult = {
+  inline def apply(): GetAssociatedIpv6PoolCidrsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAssociatedIpv6PoolCidrsResult]
   }
   
-  @scala.inline
-  implicit class GetAssociatedIpv6PoolCidrsResultMutableBuilder[Self <: GetAssociatedIpv6PoolCidrsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssociatedIpv6PoolCidrsResult](x: Self) {
     
-    @scala.inline
-    def setIpv6CidrAssociations(value: Ipv6CidrAssociationSet): Self = StObject.set(x, "Ipv6CidrAssociations", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrAssociations(value: Ipv6CidrAssociationSet): Self = StObject.set(x, "Ipv6CidrAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrAssociationsUndefined: Self = StObject.set(x, "Ipv6CidrAssociations", js.undefined)
+    inline def setIpv6CidrAssociationsUndefined: Self = StObject.set(x, "Ipv6CidrAssociations", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrAssociationsVarargs(value: Ipv6CidrAssociation*): Self = StObject.set(x, "Ipv6CidrAssociations", js.Array(value :_*))
+    inline def setIpv6CidrAssociationsVarargs(value: Ipv6CidrAssociation*): Self = StObject.set(x, "Ipv6CidrAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

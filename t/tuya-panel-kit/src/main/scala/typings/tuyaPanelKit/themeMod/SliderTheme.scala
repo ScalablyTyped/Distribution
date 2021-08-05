@@ -22,8 +22,7 @@ trait SliderTheme extends StObject {
 }
 object SliderTheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maximumTrackTintColor: String,
     thumbRadius: Double,
     thumbSize: Double,
@@ -35,31 +34,22 @@ object SliderTheme {
     __obj.asInstanceOf[SliderTheme]
   }
   
-  @scala.inline
-  implicit class SliderThemeMutableBuilder[Self <: SliderTheme] (val x: Self) extends AnyVal {
+  extension [Self <: SliderTheme](x: Self) {
     
-    @scala.inline
-    def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
+    inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
+    inline def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
+    inline def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
+    inline def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackHeight(value: Double): Self = StObject.set(x, "trackHeight", value.asInstanceOf[js.Any])
+    inline def setTrackHeight(value: Double): Self = StObject.set(x, "trackHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackRadius(value: Double): Self = StObject.set(x, "trackRadius", value.asInstanceOf[js.Any])
+    inline def setTrackRadius(value: Double): Self = StObject.set(x, "trackRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
   }
 }

@@ -28,8 +28,7 @@ trait NumberFormatsSupplier
 }
 object NumberFormatsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NumberFormatSettings: XPropertySet,
     NumberFormats: XNumberFormats,
     acquire: () => Unit,
@@ -44,13 +43,10 @@ object NumberFormatsSupplier {
     __obj.asInstanceOf[NumberFormatsSupplier]
   }
   
-  @scala.inline
-  implicit class NumberFormatsSupplierMutableBuilder[Self <: NumberFormatsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatsSupplier](x: Self) {
     
-    @scala.inline
-    def setCreateWithDefaultLocale(value: () => Unit): Self = StObject.set(x, "createWithDefaultLocale", js.Any.fromFunction0(value))
+    inline def setCreateWithDefaultLocale(value: () => Unit): Self = StObject.set(x, "createWithDefaultLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithLocale(value: Locale => Unit): Self = StObject.set(x, "createWithLocale", js.Any.fromFunction1(value))
+    inline def setCreateWithLocale(value: Locale => Unit): Self = StObject.set(x, "createWithLocale", js.Any.fromFunction1(value))
   }
 }

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-cognito-identity"
-version := "1.0.0-rc.7-f57249"
+version := "1.0.0-rc.7-108af2"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "1.0.0-rc.7-e5c109",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "1.0.0-rc.7-c24818",
-  "org.scalablytyped" %%% "aws-sdk__types" % "1.0.0-rc.7-917262",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "1.0.0-rc.7-85d90f",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "1.0.0-rc.7-62a054",
+  "org.scalablytyped" %%% "aws-sdk__types" % "1.0.0-rc.7-d8ebf5",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

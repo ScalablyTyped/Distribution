@@ -17,25 +17,19 @@ trait DeidentifyDatasetRequest extends StObject {
 }
 object DeidentifyDatasetRequest {
   
-  @scala.inline
-  def apply(): DeidentifyDatasetRequest = {
+  inline def apply(): DeidentifyDatasetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeidentifyDatasetRequest]
   }
   
-  @scala.inline
-  implicit class DeidentifyDatasetRequestMutableBuilder[Self <: DeidentifyDatasetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeidentifyDatasetRequest](x: Self) {
     
-    @scala.inline
-    def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDestinationDataset(value: String): Self = StObject.set(x, "destinationDataset", value.asInstanceOf[js.Any])
+    inline def setDestinationDataset(value: String): Self = StObject.set(x, "destinationDataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDatasetUndefined: Self = StObject.set(x, "destinationDataset", js.undefined)
+    inline def setDestinationDatasetUndefined: Self = StObject.set(x, "destinationDataset", js.undefined)
   }
 }

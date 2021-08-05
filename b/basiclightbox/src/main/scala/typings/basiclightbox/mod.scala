@@ -11,17 +11,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(content: String): BasicLightBox = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any]).asInstanceOf[BasicLightBox]
-  @scala.inline
-  def create(content: String, options: BasicLightBoxOptions): BasicLightBox = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BasicLightBox]
-  @scala.inline
-  def create(content: Element): BasicLightBox = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any]).asInstanceOf[BasicLightBox]
-  @scala.inline
-  def create(content: Element, options: BasicLightBoxOptions): BasicLightBox = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BasicLightBox]
+  inline def create(content: String): BasicLightBox = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any]).asInstanceOf[BasicLightBox]
+  inline def create(content: String, options: BasicLightBoxOptions): BasicLightBox = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BasicLightBox]
+  inline def create(content: Element): BasicLightBox = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any]).asInstanceOf[BasicLightBox]
+  inline def create(content: Element, options: BasicLightBoxOptions): BasicLightBox = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BasicLightBox]
   
-  @scala.inline
-  def visible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("visible")().asInstanceOf[Boolean]
+  inline def visible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("visible")().asInstanceOf[Boolean]
   
   @js.native
   trait BasicLightBox extends StObject {
@@ -79,38 +74,28 @@ object mod {
   }
   object BasicLightBoxOptions {
     
-    @scala.inline
-    def apply(): BasicLightBoxOptions = {
+    inline def apply(): BasicLightBoxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasicLightBoxOptions]
     }
     
-    @scala.inline
-    implicit class BasicLightBoxOptionsMutableBuilder[Self <: BasicLightBoxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BasicLightBoxOptions](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+      inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+      inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* instance */ BasicLightBox => Boolean): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* instance */ BasicLightBox => Boolean): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: /* instance */ BasicLightBox => Boolean): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* instance */ BasicLightBox => Boolean): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     }
   }
 }

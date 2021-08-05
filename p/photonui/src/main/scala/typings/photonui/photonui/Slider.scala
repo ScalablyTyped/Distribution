@@ -15,8 +15,7 @@ trait Slider
 }
 object Slider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -50,10 +49,8 @@ object Slider {
     __obj.asInstanceOf[Slider]
   }
   
-  @scala.inline
-  implicit class SliderMutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
+  extension [Self <: Slider](x: Self) {
     
-    @scala.inline
-    def setFieldVisible(value: Boolean): Self = StObject.set(x, "fieldVisible", value.asInstanceOf[js.Any])
+    inline def setFieldVisible(value: Boolean): Self = StObject.set(x, "fieldVisible", value.asInstanceOf[js.Any])
   }
 }

@@ -37,43 +37,31 @@ trait SchemaAnnotation extends StObject {
 }
 object SchemaAnnotation {
   
-  @scala.inline
-  def apply(): SchemaAnnotation = {
+  inline def apply(): SchemaAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaAnnotationMutableBuilder[Self <: SchemaAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnnotation](x: Self) {
     
-    @scala.inline
-    def setAnnotationSource(value: SchemaAnnotationSource): Self = StObject.set(x, "annotationSource", value.asInstanceOf[js.Any])
+    inline def setAnnotationSource(value: SchemaAnnotationSource): Self = StObject.set(x, "annotationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSourceUndefined: Self = StObject.set(x, "annotationSource", js.undefined)
+    inline def setAnnotationSourceUndefined: Self = StObject.set(x, "annotationSource", js.undefined)
     
-    @scala.inline
-    def setImageAnnotation(value: SchemaImageAnnotation): Self = StObject.set(x, "imageAnnotation", value.asInstanceOf[js.Any])
+    inline def setImageAnnotation(value: SchemaImageAnnotation): Self = StObject.set(x, "imageAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageAnnotationUndefined: Self = StObject.set(x, "imageAnnotation", js.undefined)
+    inline def setImageAnnotationUndefined: Self = StObject.set(x, "imageAnnotation", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceAnnotation(value: SchemaResourceAnnotation): Self = StObject.set(x, "resourceAnnotation", value.asInstanceOf[js.Any])
+    inline def setResourceAnnotation(value: SchemaResourceAnnotation): Self = StObject.set(x, "resourceAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAnnotationUndefined: Self = StObject.set(x, "resourceAnnotation", js.undefined)
+    inline def setResourceAnnotationUndefined: Self = StObject.set(x, "resourceAnnotation", js.undefined)
     
-    @scala.inline
-    def setTextAnnotation(value: SchemaSensitiveTextAnnotation): Self = StObject.set(x, "textAnnotation", value.asInstanceOf[js.Any])
+    inline def setTextAnnotation(value: SchemaSensitiveTextAnnotation): Self = StObject.set(x, "textAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAnnotationUndefined: Self = StObject.set(x, "textAnnotation", js.undefined)
+    inline def setTextAnnotationUndefined: Self = StObject.set(x, "textAnnotation", js.undefined)
   }
 }

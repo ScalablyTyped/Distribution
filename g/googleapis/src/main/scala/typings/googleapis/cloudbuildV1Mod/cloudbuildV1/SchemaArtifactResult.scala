@@ -24,28 +24,21 @@ trait SchemaArtifactResult extends StObject {
 }
 object SchemaArtifactResult {
   
-  @scala.inline
-  def apply(): SchemaArtifactResult = {
+  inline def apply(): SchemaArtifactResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaArtifactResult]
   }
   
-  @scala.inline
-  implicit class SchemaArtifactResultMutableBuilder[Self <: SchemaArtifactResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaArtifactResult](x: Self) {
     
-    @scala.inline
-    def setFileHash(value: js.Array[SchemaFileHashes]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
+    inline def setFileHash(value: js.Array[SchemaFileHashes]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
+    inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
-    @scala.inline
-    def setFileHashVarargs(value: SchemaFileHashes*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
+    inline def setFileHashVarargs(value: SchemaFileHashes*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

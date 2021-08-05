@@ -33,8 +33,7 @@ trait Macro
 }
 object Macro {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -66,16 +65,12 @@ object Macro {
     __obj.asInstanceOf[Macro]
   }
   
-  @scala.inline
-  implicit class MacroMutableBuilder[Self <: Macro] (val x: Self) extends AnyVal {
+  extension [Self <: Macro](x: Self) {
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacroLibrary(value: String): Self = StObject.set(x, "MacroLibrary", value.asInstanceOf[js.Any])
+    inline def setMacroLibrary(value: String): Self = StObject.set(x, "MacroLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacroName(value: String): Self = StObject.set(x, "MacroName", value.asInstanceOf[js.Any])
+    inline def setMacroName(value: String): Self = StObject.set(x, "MacroName", value.asInstanceOf[js.Any])
   }
 }

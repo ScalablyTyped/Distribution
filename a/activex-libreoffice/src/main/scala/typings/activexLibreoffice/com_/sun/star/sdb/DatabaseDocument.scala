@@ -30,8 +30,7 @@ trait DatabaseDocument
 }
 object DatabaseDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     PropertySetInfo: XPropertySetInfo,
     URL: String,
@@ -52,13 +51,10 @@ object DatabaseDocument {
     __obj.asInstanceOf[DatabaseDocument]
   }
   
-  @scala.inline
-  implicit class DatabaseDocumentMutableBuilder[Self <: DatabaseDocument] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseDocument](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

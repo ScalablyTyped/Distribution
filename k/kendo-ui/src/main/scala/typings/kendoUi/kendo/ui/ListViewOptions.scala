@@ -43,115 +43,79 @@ trait ListViewOptions extends StObject {
 }
 object ListViewOptions {
   
-  @scala.inline
-  def apply(): ListViewOptions = {
+  inline def apply(): ListViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListViewOptions]
   }
   
-  @scala.inline
-  implicit class ListViewOptionsMutableBuilder[Self <: ListViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListViewOptions](x: Self) {
     
-    @scala.inline
-    def setAltTemplate(value: js.Function): Self = StObject.set(x, "altTemplate", value.asInstanceOf[js.Any])
+    inline def setAltTemplate(value: js.Function): Self = StObject.set(x, "altTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTemplateUndefined: Self = StObject.set(x, "altTemplate", js.undefined)
+    inline def setAltTemplateUndefined: Self = StObject.set(x, "altTemplate", js.undefined)
     
-    @scala.inline
-    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
+    inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
+    inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
-    @scala.inline
-    def setCancel(value: /* e */ ListViewCancelEvent => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* e */ ListViewCancelEvent => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setChange(value: /* e */ ListViewEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ ListViewEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setDataBinding(value: /* e */ ListViewEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
+    inline def setDataBinding(value: /* e */ ListViewEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
-    @scala.inline
-    def setDataBound(value: /* e */ ListViewEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    inline def setDataBound(value: /* e */ ListViewEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setEdit(value: /* e */ ListViewEditEvent => Unit): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
+    inline def setEdit(value: /* e */ ListViewEditEvent => Unit): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEditTemplate(value: js.Function): Self = StObject.set(x, "editTemplate", value.asInstanceOf[js.Any])
+    inline def setEditTemplate(value: js.Function): Self = StObject.set(x, "editTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditTemplateUndefined: Self = StObject.set(x, "editTemplate", js.undefined)
+    inline def setEditTemplateUndefined: Self = StObject.set(x, "editTemplate", js.undefined)
     
-    @scala.inline
-    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
     
-    @scala.inline
-    def setRemove(value: /* e */ ListViewRemoveEvent => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* e */ ListViewRemoveEvent => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setSave(value: /* e */ ListViewSaveEvent => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: /* e */ ListViewSaveEvent => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setScrollable(value: Boolean | String): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    inline def setScrollable(value: Boolean | String): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
-    @scala.inline
-    def setSelectable(value: Boolean | String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean | String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

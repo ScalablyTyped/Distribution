@@ -26,12 +26,12 @@ object storageMod {
       */
     def this(config: StorageConfig, platformId: js.Object) = this()
     
-    var _dbPromise: js.Any = js.native
+    /* private */ var _dbPromise: js.Any = js.native
     
-    var _driver: js.Any = js.native
+    /* private */ var _driver: js.Any = js.native
     
     /** @hidden */
-    var _getDriverOrder: js.Any = js.native
+    /* private */ var _getDriverOrder: js.Any = js.native
     
     /**
       * Clear the entire key value store. WARNING: HOT!
@@ -71,7 +71,7 @@ object storageMod {
       */
     def length(): js.Promise[Double] = js.native
     
-    var platformId: js.Any = js.native
+    /* private */ var platformId: js.Any = js.native
     
     /**
       * Reflect the readiness of the store.
@@ -99,11 +99,9 @@ object storageMod {
   @js.native
   val StorageConfigToken: InjectionToken[js.Any] = js.native
   
-  @scala.inline
-  def getDefaultConfig(): DbKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")().asInstanceOf[DbKey]
+  inline def getDefaultConfig(): DbKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")().asInstanceOf[DbKey]
   
-  @scala.inline
-  def provideStorage(storageConfig: StorageConfig, platformID: js.Object): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("provideStorage")(storageConfig.asInstanceOf[js.Any], platformID.asInstanceOf[js.Any])).asInstanceOf[Storage]
+  inline def provideStorage(storageConfig: StorageConfig, platformID: js.Object): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("provideStorage")(storageConfig.asInstanceOf[js.Any], platformID.asInstanceOf[js.Any])).asInstanceOf[Storage]
   
   trait StorageConfig extends StObject {
     
@@ -123,59 +121,42 @@ object storageMod {
   }
   object StorageConfig {
     
-    @scala.inline
-    def apply(): StorageConfig = {
+    inline def apply(): StorageConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StorageConfig]
     }
     
-    @scala.inline
-    implicit class StorageConfigMutableBuilder[Self <: StorageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StorageConfig](x: Self) {
       
-      @scala.inline
-      def setDbKey(value: String): Self = StObject.set(x, "dbKey", value.asInstanceOf[js.Any])
+      inline def setDbKey(value: String): Self = StObject.set(x, "dbKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbKeyUndefined: Self = StObject.set(x, "dbKey", js.undefined)
+      inline def setDbKeyUndefined: Self = StObject.set(x, "dbKey", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDriverOrder(value: js.Array[String]): Self = StObject.set(x, "driverOrder", value.asInstanceOf[js.Any])
+      inline def setDriverOrder(value: js.Array[String]): Self = StObject.set(x, "driverOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriverOrderUndefined: Self = StObject.set(x, "driverOrder", js.undefined)
+      inline def setDriverOrderUndefined: Self = StObject.set(x, "driverOrder", js.undefined)
       
-      @scala.inline
-      def setDriverOrderVarargs(value: String*): Self = StObject.set(x, "driverOrder", js.Array(value :_*))
+      inline def setDriverOrderVarargs(value: String*): Self = StObject.set(x, "driverOrder", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+      inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
+      inline def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

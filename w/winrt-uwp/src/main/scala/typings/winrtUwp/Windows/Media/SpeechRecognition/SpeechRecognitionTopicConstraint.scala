@@ -27,8 +27,7 @@ trait SpeechRecognitionTopicConstraint extends StObject {
 }
 object SpeechRecognitionTopicConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isEnabled: Boolean,
     probability: SpeechRecognitionConstraintProbability,
     scenario: SpeechRecognitionScenario,
@@ -41,25 +40,18 @@ object SpeechRecognitionTopicConstraint {
     __obj.asInstanceOf[SpeechRecognitionTopicConstraint]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionTopicConstraintMutableBuilder[Self <: SpeechRecognitionTopicConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionTopicConstraint](x: Self) {
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    inline def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenario(value: SpeechRecognitionScenario): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
+    inline def setScenario(value: SpeechRecognitionScenario): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicHint(value: String): Self = StObject.set(x, "topicHint", value.asInstanceOf[js.Any])
+    inline def setTopicHint(value: String): Self = StObject.set(x, "topicHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

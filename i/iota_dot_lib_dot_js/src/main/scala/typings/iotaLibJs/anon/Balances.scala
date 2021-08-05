@@ -16,28 +16,21 @@ trait Balances extends StObject {
 }
 object Balances {
   
-  @scala.inline
-  def apply(balances: js.Array[Double], duration: Double, milestone: String, milestoneIndex: Double): Balances = {
+  inline def apply(balances: js.Array[Double], duration: Double, milestone: String, milestoneIndex: Double): Balances = {
     val __obj = js.Dynamic.literal(balances = balances.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], milestoneIndex = milestoneIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Balances]
   }
   
-  @scala.inline
-  implicit class BalancesMutableBuilder[Self <: Balances] (val x: Self) extends AnyVal {
+  extension [Self <: Balances](x: Self) {
     
-    @scala.inline
-    def setBalances(value: js.Array[Double]): Self = StObject.set(x, "balances", value.asInstanceOf[js.Any])
+    inline def setBalances(value: js.Array[Double]): Self = StObject.set(x, "balances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBalancesVarargs(value: Double*): Self = StObject.set(x, "balances", js.Array(value :_*))
+    inline def setBalancesVarargs(value: Double*): Self = StObject.set(x, "balances", js.Array(value :_*))
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilestone(value: String): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setMilestone(value: String): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilestoneIndex(value: Double): Self = StObject.set(x, "milestoneIndex", value.asInstanceOf[js.Any])
+    inline def setMilestoneIndex(value: Double): Self = StObject.set(x, "milestoneIndex", value.asInstanceOf[js.Any])
   }
 }

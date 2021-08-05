@@ -12,13 +12,9 @@ object scenarioGenerationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateScenarioCode(scenario: ParsedScenario): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCode")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def generateScenarioCode(scenario: ParsedScenarioOutline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCode")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateScenarioCode(scenario: ParsedScenario): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCode")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateScenarioCode(scenario: ParsedScenarioOutline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCode")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def generateScenarioCodeWithSeparateStepFunctions(scenario: ParsedScenario): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCodeWithSeparateStepFunctions")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def generateScenarioCodeWithSeparateStepFunctions(scenario: ParsedScenarioOutline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCodeWithSeparateStepFunctions")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateScenarioCodeWithSeparateStepFunctions(scenario: ParsedScenario): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCodeWithSeparateStepFunctions")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateScenarioCodeWithSeparateStepFunctions(scenario: ParsedScenarioOutline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateScenarioCodeWithSeparateStepFunctions")(scenario.asInstanceOf[js.Any]).asInstanceOf[String]
 }

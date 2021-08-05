@@ -13,10 +13,7 @@ object isDocumentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Document): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
-  @scala.inline
-  def default(element: Element): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
-  @scala.inline
-  def default(element: Window): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
+  inline def default(element: Document): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
+  inline def default(element: Element): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
+  inline def default(element: Window): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
 }

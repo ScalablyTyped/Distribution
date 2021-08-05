@@ -8,15 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(stringInput: String): DataURL | Null = ^.asInstanceOf[js.Dynamic].apply(stringInput.asInstanceOf[js.Any]).asInstanceOf[DataURL | Null]
+  inline def apply(stringInput: String): DataURL | Null = ^.asInstanceOf[js.Dynamic].apply(stringInput.asInstanceOf[js.Any]).asInstanceOf[DataURL | Null]
   
   @JSImport("data-urls", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromURLRecord(urlRecord: URLRecord): DataURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURLRecord")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[DataURL | Null]
+  inline def fromURLRecord(urlRecord: URLRecord): DataURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURLRecord")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[DataURL | Null]
   
   trait DataURL extends StObject {
     
@@ -26,20 +24,16 @@ object mod {
   }
   object DataURL {
     
-    @scala.inline
-    def apply(body: Buffer, mimeType: typings.whatwgMimetype.mod.^): DataURL = {
+    inline def apply(body: Buffer, mimeType: typings.whatwgMimetype.mod.^): DataURL = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataURL]
     }
     
-    @scala.inline
-    implicit class DataURLMutableBuilder[Self <: DataURL] (val x: Self) extends AnyVal {
+    extension [Self <: DataURL](x: Self) {
       
-      @scala.inline
-      def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeType(value: typings.whatwgMimetype.mod.^): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: typings.whatwgMimetype.mod.^): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -29,8 +29,7 @@ trait DirectionalSuspenseListProps
 }
 object DirectionalSuspenseListProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]]),
     revealOrder: forwards | backwards
   ): DirectionalSuspenseListProps = {
@@ -38,18 +37,14 @@ object DirectionalSuspenseListProps {
     __obj.asInstanceOf[DirectionalSuspenseListProps]
   }
   
-  @scala.inline
-  implicit class DirectionalSuspenseListPropsMutableBuilder[Self <: DirectionalSuspenseListProps] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionalSuspenseListProps](x: Self) {
     
-    @scala.inline
-    def setRevealOrder(value: forwards | backwards): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
+    inline def setRevealOrder(value: forwards | backwards): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTail(
+    inline def setTail(
       value: typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListTailMode
     ): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
+    inline def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
   }
 }

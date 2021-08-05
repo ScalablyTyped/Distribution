@@ -25,20 +25,16 @@ object clickAwayListenerMod {
   }
   object ClickAwayListenerProps {
     
-    @scala.inline
-    def apply(): ClickAwayListenerProps = {
+    inline def apply(): ClickAwayListenerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClickAwayListenerProps]
     }
     
-    @scala.inline
-    implicit class ClickAwayListenerPropsMutableBuilder[Self <: ClickAwayListenerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClickAwayListenerProps](x: Self) {
       
-      @scala.inline
-      def setOnClickAway(value: js.Any): Self = StObject.set(x, "onClickAway", value.asInstanceOf[js.Any])
+      inline def setOnClickAway(value: js.Any): Self = StObject.set(x, "onClickAway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickAwayUndefined: Self = StObject.set(x, "onClickAway", js.undefined)
+      inline def setOnClickAwayUndefined: Self = StObject.set(x, "onClickAway", js.undefined)
     }
   }
 }

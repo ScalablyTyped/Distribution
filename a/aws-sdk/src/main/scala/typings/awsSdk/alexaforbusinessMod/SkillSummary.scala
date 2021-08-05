@@ -33,43 +33,31 @@ trait SkillSummary extends StObject {
 }
 object SkillSummary {
   
-  @scala.inline
-  def apply(): SkillSummary = {
+  inline def apply(): SkillSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SkillSummary]
   }
   
-  @scala.inline
-  implicit class SkillSummaryMutableBuilder[Self <: SkillSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SkillSummary](x: Self) {
     
-    @scala.inline
-    def setEnablementType(value: EnablementType): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
+    inline def setEnablementType(value: EnablementType): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablementTypeUndefined: Self = StObject.set(x, "EnablementType", js.undefined)
+    inline def setEnablementTypeUndefined: Self = StObject.set(x, "EnablementType", js.undefined)
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillIdUndefined: Self = StObject.set(x, "SkillId", js.undefined)
+    inline def setSkillIdUndefined: Self = StObject.set(x, "SkillId", js.undefined)
     
-    @scala.inline
-    def setSkillName(value: SkillName): Self = StObject.set(x, "SkillName", value.asInstanceOf[js.Any])
+    inline def setSkillName(value: SkillName): Self = StObject.set(x, "SkillName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillNameUndefined: Self = StObject.set(x, "SkillName", js.undefined)
+    inline def setSkillNameUndefined: Self = StObject.set(x, "SkillName", js.undefined)
     
-    @scala.inline
-    def setSkillType(value: SkillType): Self = StObject.set(x, "SkillType", value.asInstanceOf[js.Any])
+    inline def setSkillType(value: SkillType): Self = StObject.set(x, "SkillType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillTypeUndefined: Self = StObject.set(x, "SkillType", js.undefined)
+    inline def setSkillTypeUndefined: Self = StObject.set(x, "SkillType", js.undefined)
     
-    @scala.inline
-    def setSupportsLinking(value: scala.Boolean): Self = StObject.set(x, "SupportsLinking", value.asInstanceOf[js.Any])
+    inline def setSupportsLinking(value: scala.Boolean): Self = StObject.set(x, "SupportsLinking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsLinkingUndefined: Self = StObject.set(x, "SupportsLinking", js.undefined)
+    inline def setSupportsLinkingUndefined: Self = StObject.set(x, "SupportsLinking", js.undefined)
   }
 }

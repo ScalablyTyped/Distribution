@@ -26,8 +26,7 @@ object mod {
   @js.native
   val openAPI: js.Any = js.native
   
-  @scala.inline
-  def register(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def register(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait CallbackResult extends StObject {
     
@@ -37,20 +36,16 @@ object mod {
   }
   object CallbackResult {
     
-    @scala.inline
-    def apply(data: js.Any, info: Info): CallbackResult = {
+    inline def apply(data: js.Any, info: Info): CallbackResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallbackResult]
     }
     
-    @scala.inline
-    implicit class CallbackResultMutableBuilder[Self <: CallbackResult] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackResult](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,17 +55,14 @@ object mod {
   }
   object CallbackResultNoData {
     
-    @scala.inline
-    def apply(info: Info): CallbackResultNoData = {
+    inline def apply(info: Info): CallbackResultNoData = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallbackResultNoData]
     }
     
-    @scala.inline
-    implicit class CallbackResultNoDataMutableBuilder[Self <: CallbackResultNoData] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackResultNoData](x: Self) {
       
-      @scala.inline
-      def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +74,16 @@ object mod {
   }
   object Info {
     
-    @scala.inline
-    def apply(error_code: String, error_message: String): Info = {
+    inline def apply(error_code: String, error_message: String): Info = {
       val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
+      inline def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+      inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -778,8 +766,7 @@ object mod {
   }
   object Native_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addButton: (js.Any, js.Function0[Unit]) => Unit,
       analyticsSendEvent: (js.Any, js.Function0[Unit]) => Unit,
       back: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit,
@@ -856,221 +843,149 @@ object mod {
       __obj.asInstanceOf[Native_]
     }
     
-    @scala.inline
-    implicit class Native_MutableBuilder[Self <: Native_] (val x: Self) extends AnyVal {
+    extension [Self <: Native_](x: Self) {
       
-      @scala.inline
-      def setAddButton(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
+      inline def setAddButton(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnalyticsSendEvent(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "analyticsSendEvent", js.Any.fromFunction2(value))
+      inline def setAnalyticsSendEvent(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "analyticsSendEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBack(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "back", js.Any.fromFunction2(value))
+      inline def setBack(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "back", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChooseImage(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "chooseImage", js.Any.fromFunction2(value))
+      inline def setChooseImage(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "chooseImage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClose(value: (Null, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
+      inline def setClose(value: (Null, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "createCalendar", js.Any.fromFunction2(value))
+      inline def setCreateCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "createCalendar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteCalendar(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "deleteCalendar", js.Any.fromFunction2(value))
+      inline def setDeleteCalendar(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "deleteCalendar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "deleteData", js.Any.fromFunction2(value))
+      inline def setDeleteData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "deleteData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilePreview(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "filePreview", js.Any.fromFunction2(value))
+      inline def setFilePreview(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "filePreview", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFileSave(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "fileSave", js.Any.fromFunction2(value))
+      inline def setFileSave(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "fileSave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenCode(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "genCode", js.Any.fromFunction2(value))
+      inline def setGenCode(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "genCode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBase64(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getBase64", js.Any.fromFunction2(value))
+      inline def setGetBase64(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getBase64", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetClipBoardContent(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getClipBoardContent", js.Any.fromFunction2(value))
+      inline def setGetClipBoardContent(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getClipBoardContent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetContactInfo(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getContactInfo", js.Any.fromFunction2(value))
+      inline def setGetContactInfo(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getContactInfo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetCurrentPages(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getCurrentPages", js.Any.fromFunction2(value))
+      inline def setGetCurrentPages(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getCurrentPages", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetLocation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getLocation", js.Any.fromFunction2(value))
+      inline def setGetLocation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getLocation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetLocationStatus(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getLocationStatus", js.Any.fromFunction2(value))
+      inline def setGetLocationStatus(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getLocationStatus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetNetworkStatus(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getNetworkStatus", js.Any.fromFunction2(value))
+      inline def setGetNetworkStatus(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getNetworkStatus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetStatusBarHeight(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getStatusBarHeight", js.Any.fromFunction2(value))
+      inline def setGetStatusBarHeight(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getStatusBarHeight", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetSystemInfo(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getSystemInfo", js.Any.fromFunction2(value))
+      inline def setGetSystemInfo(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getSystemInfo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUDID(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getUDID", js.Any.fromFunction2(value))
+      inline def setGetUDID(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getUDID", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetVersion(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getVersion", js.Any.fromFunction2(value))
+      inline def setGetVersion(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "getVersion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHeadSetAlpha(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "headSetAlpha", js.Any.fromFunction2(value))
+      inline def setHeadSetAlpha(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "headSetAlpha", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHeadSetSearchView(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "headSetSearchView", js.Any.fromFunction2(value))
+      inline def setHeadSetSearchView(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "headSetSearchView", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIapPurchase(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "iapPurchase", js.Any.fromFunction2(value))
+      inline def setIapPurchase(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "iapPurchase", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImagePicker(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "imagePicker", js.Any.fromFunction2(value))
+      inline def setImagePicker(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "imagePicker", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImagePreview(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "imagePreview", js.Any.fromFunction2(value))
+      inline def setImagePreview(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "imagePreview", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLog(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpenURL(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction2(value))
+      inline def setOpenURL(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreVerifyOpeation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "preVerifyOpeation", js.Any.fromFunction2(value))
+      inline def setPreVerifyOpeation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "preVerifyOpeation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPushAddEventListener(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "pushAddEventListener", js.Any.fromFunction2(value))
+      inline def setPushAddEventListener(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "pushAddEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPushAddTags(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "pushAddTags", js.Any.fromFunction2(value))
+      inline def setPushAddTags(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "pushAddTags", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPushDeleteTags(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "pushDeleteTags", js.Any.fromFunction2(value))
+      inline def setPushDeleteTags(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "pushDeleteTags", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPushGetRegistrationID(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "pushGetRegistrationID", js.Any.fromFunction2(value))
+      inline def setPushGetRegistrationID(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "pushGetRegistrationID", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPushGetTags(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "pushGetTags", js.Any.fromFunction2(value))
+      inline def setPushGetTags(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "pushGetTags", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPushSetAlias(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "pushSetAlias", js.Any.fromFunction2(value))
+      inline def setPushSetAlias(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "pushSetAlias", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "queryCalendar", js.Any.fromFunction2(value))
+      inline def setQueryCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "queryCalendar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "readData", js.Any.fromFunction2(value))
+      inline def setReadData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "readData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveButton(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "removeButton", js.Any.fromFunction2(value))
+      inline def setRemoveButton(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "removeButton", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSafekeyboardHide(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "safekeyboardHide", js.Any.fromFunction2(value))
+      inline def setSafekeyboardHide(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "safekeyboardHide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSafekeyboardShow(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "safekeyboardShow", js.Any.fromFunction2(value))
+      inline def setSafekeyboardShow(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "safekeyboardShow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSaveImage(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "saveImage", js.Any.fromFunction2(value))
+      inline def setSaveImage(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "saveImage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScanCode(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "scanCode", js.Any.fromFunction2(value))
+      inline def setScanCode(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "scanCode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetBackgroundColor(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction2(value))
+      inline def setSetBackgroundColor(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetClipBoardContent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setClipBoardContent", js.Any.fromFunction2(value))
+      inline def setSetClipBoardContent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setClipBoardContent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetScreenOrientation(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setScreenOrientation", js.Any.fromFunction2(value))
+      inline def setSetScreenOrientation(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setScreenOrientation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSubtitle(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setSubtitle", js.Any.fromFunction2(value))
+      inline def setSetSubtitle(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setSubtitle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSupportScreenOrientation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "setSupportScreenOrientation", js.Any.fromFunction2(value))
+      inline def setSetSupportScreenOrientation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "setSupportScreenOrientation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSystemStatusBar(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setSystemStatusBar", js.Any.fromFunction2(value))
+      inline def setSetSystemStatusBar(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setSystemStatusBar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTabBarBadge(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setTabBarBadge", js.Any.fromFunction2(value))
+      inline def setSetTabBarBadge(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setTabBarBadge", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTitle(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction2(value))
+      inline def setSetTitle(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShowNativeBadge(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "showNativeBadge", js.Any.fromFunction2(value))
+      inline def setShowNativeBadge(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "showNativeBadge", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShowOverlay(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction2(value))
+      inline def setShowOverlay(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSocialAppInstalled(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "socialAppInstalled", js.Any.fromFunction2(value))
+      inline def setSocialAppInstalled(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "socialAppInstalled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSocialLogin(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "socialLogin", js.Any.fromFunction2(value))
+      inline def setSocialLogin(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "socialLogin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSocialShare(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "socialShare", js.Any.fromFunction2(value))
+      inline def setSocialShare(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "socialShare", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStartRecord(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction2(value))
+      inline def setStartRecord(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStopLocation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "stopLocation", js.Any.fromFunction2(value))
+      inline def setStopLocation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "stopLocation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStopRecord(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = StObject.set(x, "stopRecord", js.Any.fromFunction1(value))
+      inline def setStopRecord(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = StObject.set(x, "stopRecord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStreamFetch(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "streamFetch", js.Any.fromFunction2(value))
+      inline def setStreamFetch(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "streamFetch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSwitchTab(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "switchTab", js.Any.fromFunction2(value))
+      inline def setSwitchTab(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "switchTab", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTradePay(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "tradePay", js.Any.fromFunction2(value))
+      inline def setTradePay(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "tradePay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTradekeyboardHide(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "tradekeyboardHide", js.Any.fromFunction2(value))
+      inline def setTradekeyboardHide(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = StObject.set(x, "tradekeyboardHide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTradekeyboardShow(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "tradekeyboardShow", js.Any.fromFunction2(value))
+      inline def setTradekeyboardShow(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "tradekeyboardShow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "updateCalendar", js.Any.fromFunction2(value))
+      inline def setUpdateCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "updateCalendar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUserGetInfo(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = StObject.set(x, "userGetInfo", js.Any.fromFunction1(value))
+      inline def setUserGetInfo(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = StObject.set(x, "userGetInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUserLogin(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "userLogin", js.Any.fromFunction2(value))
+      inline def setUserLogin(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "userLogin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUserSetInfo(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "userSetInfo", js.Any.fromFunction2(value))
+      inline def setUserSetInfo(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "userSetInfo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUserlogout(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = StObject.set(x, "userlogout", js.Any.fromFunction1(value))
+      inline def setUserlogout(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = StObject.set(x, "userlogout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerifyOpeation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "verifyOpeation", js.Any.fromFunction2(value))
+      inline def setVerifyOpeation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "verifyOpeation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWriteData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "writeData", js.Any.fromFunction2(value))
+      inline def setWriteData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = StObject.set(x, "writeData", js.Any.fromFunction2(value))
     }
   }
 }

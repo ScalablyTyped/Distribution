@@ -18,22 +18,17 @@ trait ProtectiveEquipmentSummarizationAttributes extends StObject {
 }
 object ProtectiveEquipmentSummarizationAttributes {
   
-  @scala.inline
-  def apply(MinConfidence: Percent, RequiredEquipmentTypes: ProtectiveEquipmentTypes): ProtectiveEquipmentSummarizationAttributes = {
+  inline def apply(MinConfidence: Percent, RequiredEquipmentTypes: ProtectiveEquipmentTypes): ProtectiveEquipmentSummarizationAttributes = {
     val __obj = js.Dynamic.literal(MinConfidence = MinConfidence.asInstanceOf[js.Any], RequiredEquipmentTypes = RequiredEquipmentTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectiveEquipmentSummarizationAttributes]
   }
   
-  @scala.inline
-  implicit class ProtectiveEquipmentSummarizationAttributesMutableBuilder[Self <: ProtectiveEquipmentSummarizationAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectiveEquipmentSummarizationAttributes](x: Self) {
     
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
+    inline def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredEquipmentTypes(value: ProtectiveEquipmentTypes): Self = StObject.set(x, "RequiredEquipmentTypes", value.asInstanceOf[js.Any])
+    inline def setRequiredEquipmentTypes(value: ProtectiveEquipmentTypes): Self = StObject.set(x, "RequiredEquipmentTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredEquipmentTypesVarargs(value: ProtectiveEquipmentType*): Self = StObject.set(x, "RequiredEquipmentTypes", js.Array(value :_*))
+    inline def setRequiredEquipmentTypesVarargs(value: ProtectiveEquipmentType*): Self = StObject.set(x, "RequiredEquipmentTypes", js.Array(value :_*))
   }
 }

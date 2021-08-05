@@ -10,16 +10,13 @@ trait IsMoving extends StObject {
 }
 object IsMoving {
   
-  @scala.inline
-  def apply(isMoving: Boolean): IsMoving = {
+  inline def apply(isMoving: Boolean): IsMoving = {
     val __obj = js.Dynamic.literal(isMoving = isMoving.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsMoving]
   }
   
-  @scala.inline
-  implicit class IsMovingMutableBuilder[Self <: IsMoving] (val x: Self) extends AnyVal {
+  extension [Self <: IsMoving](x: Self) {
     
-    @scala.inline
-    def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
+    inline def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
   }
 }

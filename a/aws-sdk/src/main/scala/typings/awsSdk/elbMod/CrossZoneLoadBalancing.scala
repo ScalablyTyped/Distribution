@@ -13,16 +13,13 @@ trait CrossZoneLoadBalancing extends StObject {
 }
 object CrossZoneLoadBalancing {
   
-  @scala.inline
-  def apply(Enabled: CrossZoneLoadBalancingEnabled): CrossZoneLoadBalancing = {
+  inline def apply(Enabled: CrossZoneLoadBalancingEnabled): CrossZoneLoadBalancing = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossZoneLoadBalancing]
   }
   
-  @scala.inline
-  implicit class CrossZoneLoadBalancingMutableBuilder[Self <: CrossZoneLoadBalancing] (val x: Self) extends AnyVal {
+  extension [Self <: CrossZoneLoadBalancing](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: CrossZoneLoadBalancingEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: CrossZoneLoadBalancingEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

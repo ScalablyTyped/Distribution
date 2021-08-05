@@ -17,14 +17,12 @@ object mod {
     @JSImport("vuex-i18n", "default.plugin")
     @js.native
     def plugin: PluginObject[Ii18n] = js.native
-    @scala.inline
-    def plugin_=(x: PluginObject[Ii18n]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
+    inline def plugin_=(x: PluginObject[Ii18n]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
     
     @JSImport("vuex-i18n", "default.store")
     @js.native
     def store: js.Object = js.native
-    @scala.inline
-    def store_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("store")(x.asInstanceOf[js.Any])
+    inline def store_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("store")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -115,8 +113,7 @@ object mod {
        with /* key */ StringDictionary[String | Translations]
   object Translations {
     
-    @scala.inline
-    def apply(): Translations = {
+    inline def apply(): Translations = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Translations]
     }
@@ -132,29 +129,22 @@ object mod {
   }
   object i18nState {
     
-    @scala.inline
-    def apply(translations: StringDictionary[Translations]): i18nState = {
+    inline def apply(translations: StringDictionary[Translations]): i18nState = {
       val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any], fallback = null, locale = null)
       __obj.asInstanceOf[i18nState]
     }
     
-    @scala.inline
-    implicit class i18nStateMutableBuilder[Self <: i18nState] (val x: Self) extends AnyVal {
+    extension [Self <: i18nState](x: Self) {
       
-      @scala.inline
-      def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackNull: Self = StObject.set(x, "fallback", null)
+      inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleNull: Self = StObject.set(x, "locale", null)
+      inline def setLocaleNull: Self = StObject.set(x, "locale", null)
       
-      @scala.inline
-      def setTranslations(value: StringDictionary[Translations]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: StringDictionary[Translations]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,17 +180,14 @@ object mod {
     }
     object VueConstructor {
       
-      @scala.inline
-      def apply[V /* <: Vue */](i18n: Ii18n): VueConstructor[V] = {
+      inline def apply[V /* <: Vue */](i18n: Ii18n): VueConstructor[V] = {
         val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
         __obj.asInstanceOf[VueConstructor[V]]
       }
       
-      @scala.inline
-      implicit class VueConstructorMutableBuilder[Self <: VueConstructor[?], V /* <: Vue */] (val x: Self & VueConstructor[V]) extends AnyVal {
+      extension [Self <: VueConstructor[?], V /* <: Vue */](x: Self & VueConstructor[V]) {
         
-        @scala.inline
-        def setI18n(value: Ii18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+        inline def setI18n(value: Ii18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       }
     }
   }

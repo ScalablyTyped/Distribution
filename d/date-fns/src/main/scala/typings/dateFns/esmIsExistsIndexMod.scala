@@ -8,8 +8,7 @@ object esmIsExistsIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(year: Double, month: Double, day: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(year: Double, month: Double, day: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("date-fns/esm/isExists/index", JSImport.Default)
     @js.native

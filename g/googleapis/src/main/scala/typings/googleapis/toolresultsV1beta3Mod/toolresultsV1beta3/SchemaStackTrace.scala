@@ -16,19 +16,15 @@ trait SchemaStackTrace extends StObject {
 }
 object SchemaStackTrace {
   
-  @scala.inline
-  def apply(): SchemaStackTrace = {
+  inline def apply(): SchemaStackTrace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStackTrace]
   }
   
-  @scala.inline
-  implicit class SchemaStackTraceMutableBuilder[Self <: SchemaStackTrace] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStackTrace](x: Self) {
     
-    @scala.inline
-    def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+    inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait BootstrapClientTabControlTabCancelEventArgs
 }
 object BootstrapClientTabControlTabCancelEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     processOnServer: Boolean,
     reloadContentOnCallback: Boolean,
@@ -34,13 +33,10 @@ object BootstrapClientTabControlTabCancelEventArgs {
     __obj.asInstanceOf[BootstrapClientTabControlTabCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientTabControlTabCancelEventArgsMutableBuilder[Self <: BootstrapClientTabControlTabCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientTabControlTabCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setReloadContentOnCallback(value: Boolean): Self = StObject.set(x, "reloadContentOnCallback", value.asInstanceOf[js.Any])
+    inline def setReloadContentOnCallback(value: Boolean): Self = StObject.set(x, "reloadContentOnCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTab(value: BootstrapClientTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: BootstrapClientTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

@@ -20,20 +20,16 @@ object mod extends Shortcut {
   }
   object GlobalNPM {
     
-    @scala.inline
-    def apply(GLOBAL_NPM_BIN: String, GLOBAL_NPM_PATH: String): GlobalNPM = {
+    inline def apply(GLOBAL_NPM_BIN: String, GLOBAL_NPM_PATH: String): GlobalNPM = {
       val __obj = js.Dynamic.literal(GLOBAL_NPM_BIN = GLOBAL_NPM_BIN.asInstanceOf[js.Any], GLOBAL_NPM_PATH = GLOBAL_NPM_PATH.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalNPM]
     }
     
-    @scala.inline
-    implicit class GlobalNPMMutableBuilder[Self <: GlobalNPM] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalNPM](x: Self) {
       
-      @scala.inline
-      def setGLOBAL_NPM_BIN(value: String): Self = StObject.set(x, "GLOBAL_NPM_BIN", value.asInstanceOf[js.Any])
+      inline def setGLOBAL_NPM_BIN(value: String): Self = StObject.set(x, "GLOBAL_NPM_BIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGLOBAL_NPM_PATH(value: String): Self = StObject.set(x, "GLOBAL_NPM_PATH", value.asInstanceOf[js.Any])
+      inline def setGLOBAL_NPM_PATH(value: String): Self = StObject.set(x, "GLOBAL_NPM_PATH", value.asInstanceOf[js.Any])
     }
   }
   

@@ -75,97 +75,67 @@ trait MedicalTranscriptionJob extends StObject {
 }
 object MedicalTranscriptionJob {
   
-  @scala.inline
-  def apply(): MedicalTranscriptionJob = {
+  inline def apply(): MedicalTranscriptionJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicalTranscriptionJob]
   }
   
-  @scala.inline
-  implicit class MedicalTranscriptionJobMutableBuilder[Self <: MedicalTranscriptionJob] (val x: Self) extends AnyVal {
+  extension [Self <: MedicalTranscriptionJob](x: Self) {
     
-    @scala.inline
-    def setCompletionTime(value: DateTime): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: DateTime): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionTimeUndefined: Self = StObject.set(x, "CompletionTime", js.undefined)
+    inline def setCompletionTimeUndefined: Self = StObject.set(x, "CompletionTime", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaFormat(value: MediaFormat): Self = StObject.set(x, "MediaFormat", value.asInstanceOf[js.Any])
+    inline def setMediaFormat(value: MediaFormat): Self = StObject.set(x, "MediaFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaFormatUndefined: Self = StObject.set(x, "MediaFormat", js.undefined)
+    inline def setMediaFormatUndefined: Self = StObject.set(x, "MediaFormat", js.undefined)
     
-    @scala.inline
-    def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = StObject.set(x, "MediaSampleRateHertz", value.asInstanceOf[js.Any])
+    inline def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = StObject.set(x, "MediaSampleRateHertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSampleRateHertzUndefined: Self = StObject.set(x, "MediaSampleRateHertz", js.undefined)
+    inline def setMediaSampleRateHertzUndefined: Self = StObject.set(x, "MediaSampleRateHertz", js.undefined)
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "Media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "Media", js.undefined)
     
-    @scala.inline
-    def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
+    inline def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedicalTranscriptionJobNameUndefined: Self = StObject.set(x, "MedicalTranscriptionJobName", js.undefined)
+    inline def setMedicalTranscriptionJobNameUndefined: Self = StObject.set(x, "MedicalTranscriptionJobName", js.undefined)
     
-    @scala.inline
-    def setSettings(value: MedicalTranscriptionSetting): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: MedicalTranscriptionSetting): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
-    @scala.inline
-    def setSpecialty(value: Specialty): Self = StObject.set(x, "Specialty", value.asInstanceOf[js.Any])
+    inline def setSpecialty(value: Specialty): Self = StObject.set(x, "Specialty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialtyUndefined: Self = StObject.set(x, "Specialty", js.undefined)
+    inline def setSpecialtyUndefined: Self = StObject.set(x, "Specialty", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setTranscript(value: MedicalTranscript): Self = StObject.set(x, "Transcript", value.asInstanceOf[js.Any])
+    inline def setTranscript(value: MedicalTranscript): Self = StObject.set(x, "Transcript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptUndefined: Self = StObject.set(x, "Transcript", js.undefined)
+    inline def setTranscriptUndefined: Self = StObject.set(x, "Transcript", js.undefined)
     
-    @scala.inline
-    def setTranscriptionJobStatus(value: TranscriptionJobStatus): Self = StObject.set(x, "TranscriptionJobStatus", value.asInstanceOf[js.Any])
+    inline def setTranscriptionJobStatus(value: TranscriptionJobStatus): Self = StObject.set(x, "TranscriptionJobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptionJobStatusUndefined: Self = StObject.set(x, "TranscriptionJobStatus", js.undefined)
+    inline def setTranscriptionJobStatusUndefined: Self = StObject.set(x, "TranscriptionJobStatus", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

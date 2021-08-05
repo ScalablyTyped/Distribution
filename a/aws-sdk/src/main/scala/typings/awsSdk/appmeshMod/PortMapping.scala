@@ -18,19 +18,15 @@ trait PortMapping extends StObject {
 }
 object PortMapping {
   
-  @scala.inline
-  def apply(port: PortNumber, protocol: PortProtocol): PortMapping = {
+  inline def apply(port: PortNumber, protocol: PortProtocol): PortMapping = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortMapping]
   }
   
-  @scala.inline
-  implicit class PortMappingMutableBuilder[Self <: PortMapping] (val x: Self) extends AnyVal {
+  extension [Self <: PortMapping](x: Self) {
     
-    @scala.inline
-    def setPort(value: PortNumber): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: PortNumber): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: PortProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: PortProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

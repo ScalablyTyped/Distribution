@@ -61,8 +61,7 @@ trait SummaryStatisticsResult
 }
 object SummaryStatisticsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     avg: Double,
     constructor: js.Function,
     count: Double,
@@ -78,28 +77,20 @@ object SummaryStatisticsResult {
     __obj.asInstanceOf[SummaryStatisticsResult]
   }
   
-  @scala.inline
-  implicit class SummaryStatisticsResultMutableBuilder[Self <: SummaryStatisticsResult] (val x: Self) extends AnyVal {
+  extension [Self <: SummaryStatisticsResult](x: Self) {
     
-    @scala.inline
-    def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+    inline def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+    inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
   }
 }

@@ -19,20 +19,16 @@ trait UploadBlob extends StObject {
 }
 object UploadBlob {
   
-  @scala.inline
-  def apply(blobUUID: String, `type`: String): UploadBlob = {
+  inline def apply(blobUUID: String, `type`: String): UploadBlob = {
     val __obj = js.Dynamic.literal(blobUUID = blobUUID.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadBlob]
   }
   
-  @scala.inline
-  implicit class UploadBlobMutableBuilder[Self <: UploadBlob] (val x: Self) extends AnyVal {
+  extension [Self <: UploadBlob](x: Self) {
     
-    @scala.inline
-    def setBlobUUID(value: String): Self = StObject.set(x, "blobUUID", value.asInstanceOf[js.Any])
+    inline def setBlobUUID(value: String): Self = StObject.set(x, "blobUUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

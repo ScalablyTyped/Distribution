@@ -61,175 +61,119 @@ trait CasperOptions extends StObject {
 }
 object CasperOptions {
   
-  @scala.inline
-  def apply(): CasperOptions = {
+  inline def apply(): CasperOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CasperOptions]
   }
   
-  @scala.inline
-  implicit class CasperOptionsMutableBuilder[Self <: CasperOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CasperOptions](x: Self) {
     
-    @scala.inline
-    def setClientScripts(value: js.Array[js.Any]): Self = StObject.set(x, "clientScripts", value.asInstanceOf[js.Any])
+    inline def setClientScripts(value: js.Array[js.Any]): Self = StObject.set(x, "clientScripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientScriptsUndefined: Self = StObject.set(x, "clientScripts", js.undefined)
+    inline def setClientScriptsUndefined: Self = StObject.set(x, "clientScripts", js.undefined)
     
-    @scala.inline
-    def setClientScriptsVarargs(value: js.Any*): Self = StObject.set(x, "clientScripts", js.Array(value :_*))
+    inline def setClientScriptsVarargs(value: js.Any*): Self = StObject.set(x, "clientScripts", js.Array(value :_*))
     
-    @scala.inline
-    def setExitOnError(value: Boolean): Self = StObject.set(x, "exitOnError", value.asInstanceOf[js.Any])
+    inline def setExitOnError(value: Boolean): Self = StObject.set(x, "exitOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
+    inline def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
     
-    @scala.inline
-    def setHttpStatusHandlers(value: js.Any): Self = StObject.set(x, "httpStatusHandlers", value.asInstanceOf[js.Any])
+    inline def setHttpStatusHandlers(value: js.Any): Self = StObject.set(x, "httpStatusHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpStatusHandlersUndefined: Self = StObject.set(x, "httpStatusHandlers", js.undefined)
+    inline def setHttpStatusHandlersUndefined: Self = StObject.set(x, "httpStatusHandlers", js.undefined)
     
-    @scala.inline
-    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setOnAlert(value: js.Function): Self = StObject.set(x, "onAlert", value.asInstanceOf[js.Any])
+    inline def setOnAlert(value: js.Function): Self = StObject.set(x, "onAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAlertUndefined: Self = StObject.set(x, "onAlert", js.undefined)
+    inline def setOnAlertUndefined: Self = StObject.set(x, "onAlert", js.undefined)
     
-    @scala.inline
-    def setOnDie(value: js.Function): Self = StObject.set(x, "onDie", value.asInstanceOf[js.Any])
+    inline def setOnDie(value: js.Function): Self = StObject.set(x, "onDie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDieUndefined: Self = StObject.set(x, "onDie", js.undefined)
+    inline def setOnDieUndefined: Self = StObject.set(x, "onDie", js.undefined)
     
-    @scala.inline
-    def setOnError(value: js.Function): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: js.Function): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnLoadError(value: js.Function): Self = StObject.set(x, "onLoadError", value.asInstanceOf[js.Any])
+    inline def setOnLoadError(value: js.Function): Self = StObject.set(x, "onLoadError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
+    inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
     
-    @scala.inline
-    def setOnPageInitialized(value: js.Function): Self = StObject.set(x, "onPageInitialized", value.asInstanceOf[js.Any])
+    inline def setOnPageInitialized(value: js.Function): Self = StObject.set(x, "onPageInitialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPageInitializedUndefined: Self = StObject.set(x, "onPageInitialized", js.undefined)
+    inline def setOnPageInitializedUndefined: Self = StObject.set(x, "onPageInitialized", js.undefined)
     
-    @scala.inline
-    def setOnResourceReceived(value: js.Function): Self = StObject.set(x, "onResourceReceived", value.asInstanceOf[js.Any])
+    inline def setOnResourceReceived(value: js.Function): Self = StObject.set(x, "onResourceReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResourceReceivedUndefined: Self = StObject.set(x, "onResourceReceived", js.undefined)
+    inline def setOnResourceReceivedUndefined: Self = StObject.set(x, "onResourceReceived", js.undefined)
     
-    @scala.inline
-    def setOnResourceRequested(value: js.Function): Self = StObject.set(x, "onResourceRequested", value.asInstanceOf[js.Any])
+    inline def setOnResourceRequested(value: js.Function): Self = StObject.set(x, "onResourceRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResourceRequestedUndefined: Self = StObject.set(x, "onResourceRequested", js.undefined)
+    inline def setOnResourceRequestedUndefined: Self = StObject.set(x, "onResourceRequested", js.undefined)
     
-    @scala.inline
-    def setOnStepComplete(value: js.Function): Self = StObject.set(x, "onStepComplete", value.asInstanceOf[js.Any])
+    inline def setOnStepComplete(value: js.Function): Self = StObject.set(x, "onStepComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStepCompleteUndefined: Self = StObject.set(x, "onStepComplete", js.undefined)
+    inline def setOnStepCompleteUndefined: Self = StObject.set(x, "onStepComplete", js.undefined)
     
-    @scala.inline
-    def setOnStepTimeout(value: js.Function): Self = StObject.set(x, "onStepTimeout", value.asInstanceOf[js.Any])
+    inline def setOnStepTimeout(value: js.Function): Self = StObject.set(x, "onStepTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStepTimeoutUndefined: Self = StObject.set(x, "onStepTimeout", js.undefined)
+    inline def setOnStepTimeoutUndefined: Self = StObject.set(x, "onStepTimeout", js.undefined)
     
-    @scala.inline
-    def setOnTimeout(value: js.Function): Self = StObject.set(x, "onTimeout", value.asInstanceOf[js.Any])
+    inline def setOnTimeout(value: js.Function): Self = StObject.set(x, "onTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
+    inline def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
     
-    @scala.inline
-    def setOnWaitTimeout(value: js.Function): Self = StObject.set(x, "onWaitTimeout", value.asInstanceOf[js.Any])
+    inline def setOnWaitTimeout(value: js.Function): Self = StObject.set(x, "onWaitTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnWaitTimeoutUndefined: Self = StObject.set(x, "onWaitTimeout", js.undefined)
+    inline def setOnWaitTimeoutUndefined: Self = StObject.set(x, "onWaitTimeout", js.undefined)
     
-    @scala.inline
-    def setPage(value: WebPage): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: WebPage): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSettings(value: js.Any): Self = StObject.set(x, "pageSettings", value.asInstanceOf[js.Any])
+    inline def setPageSettings(value: js.Any): Self = StObject.set(x, "pageSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSettingsUndefined: Self = StObject.set(x, "pageSettings", js.undefined)
+    inline def setPageSettingsUndefined: Self = StObject.set(x, "pageSettings", js.undefined)
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setRemoteScripts(value: js.Array[js.Any]): Self = StObject.set(x, "remoteScripts", value.asInstanceOf[js.Any])
+    inline def setRemoteScripts(value: js.Array[js.Any]): Self = StObject.set(x, "remoteScripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteScriptsUndefined: Self = StObject.set(x, "remoteScripts", js.undefined)
+    inline def setRemoteScriptsUndefined: Self = StObject.set(x, "remoteScripts", js.undefined)
     
-    @scala.inline
-    def setRemoteScriptsVarargs(value: js.Any*): Self = StObject.set(x, "remoteScripts", js.Array(value :_*))
+    inline def setRemoteScriptsVarargs(value: js.Any*): Self = StObject.set(x, "remoteScripts", js.Array(value :_*))
     
-    @scala.inline
-    def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
+    inline def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryTimeoutUndefined: Self = StObject.set(x, "retryTimeout", js.undefined)
+    inline def setRetryTimeoutUndefined: Self = StObject.set(x, "retryTimeout", js.undefined)
     
-    @scala.inline
-    def setSafeLogs(value: Boolean): Self = StObject.set(x, "safeLogs", value.asInstanceOf[js.Any])
+    inline def setSafeLogs(value: Boolean): Self = StObject.set(x, "safeLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeLogsUndefined: Self = StObject.set(x, "safeLogs", js.undefined)
+    inline def setSafeLogsUndefined: Self = StObject.set(x, "safeLogs", js.undefined)
     
-    @scala.inline
-    def setSilentErrors(value: Boolean): Self = StObject.set(x, "silentErrors", value.asInstanceOf[js.Any])
+    inline def setSilentErrors(value: Boolean): Self = StObject.set(x, "silentErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentErrorsUndefined: Self = StObject.set(x, "silentErrors", js.undefined)
+    inline def setSilentErrorsUndefined: Self = StObject.set(x, "silentErrors", js.undefined)
     
-    @scala.inline
-    def setStepTimeout(value: Double): Self = StObject.set(x, "stepTimeout", value.asInstanceOf[js.Any])
+    inline def setStepTimeout(value: Double): Self = StObject.set(x, "stepTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepTimeoutUndefined: Self = StObject.set(x, "stepTimeout", js.undefined)
+    inline def setStepTimeoutUndefined: Self = StObject.set(x, "stepTimeout", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     
-    @scala.inline
-    def setViewportSize(value: js.Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
+    inline def setViewportSize(value: js.Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportSizeUndefined: Self = StObject.set(x, "viewportSize", js.undefined)
+    inline def setViewportSizeUndefined: Self = StObject.set(x, "viewportSize", js.undefined)
     
-    @scala.inline
-    def setWaitTimeout(value: Double): Self = StObject.set(x, "waitTimeout", value.asInstanceOf[js.Any])
+    inline def setWaitTimeout(value: Double): Self = StObject.set(x, "waitTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitTimeoutUndefined: Self = StObject.set(x, "waitTimeout", js.undefined)
+    inline def setWaitTimeoutUndefined: Self = StObject.set(x, "waitTimeout", js.undefined)
   }
 }

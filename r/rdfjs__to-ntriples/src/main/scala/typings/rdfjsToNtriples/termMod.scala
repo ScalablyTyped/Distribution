@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object termMod {
   
-  @scala.inline
-  def apply(term: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(term.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(term: Term): String = ^.asInstanceOf[js.Dynamic].apply(term.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(term: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(term.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(term: Term): String = ^.asInstanceOf[js.Dynamic].apply(term.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@rdfjs/to-ntriples/lib/term", JSImport.Namespace)
   @js.native

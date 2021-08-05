@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpandableType extends StObject
 object ExpandableType {
   
-  @scala.inline
-  def `false`: typings.rcTable.rcTableBooleans.`false` = false.asInstanceOf[typings.rcTable.rcTableBooleans.`false`]
+  inline def `false`: typings.rcTable.rcTableBooleans.`false` = false.asInstanceOf[typings.rcTable.rcTableBooleans.`false`]
   
-  @scala.inline
-  def nest: typings.rcTable.rcTableStrings.nest = "nest".asInstanceOf[typings.rcTable.rcTableStrings.nest]
+  inline def nest: typings.rcTable.rcTableStrings.nest = "nest".asInstanceOf[typings.rcTable.rcTableStrings.nest]
   
-  @scala.inline
-  def row: typings.rcTable.rcTableStrings.row = "row".asInstanceOf[typings.rcTable.rcTableStrings.row]
+  inline def row: typings.rcTable.rcTableStrings.row = "row".asInstanceOf[typings.rcTable.rcTableStrings.row]
 }

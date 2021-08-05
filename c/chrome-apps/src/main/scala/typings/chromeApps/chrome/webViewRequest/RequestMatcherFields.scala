@@ -71,103 +71,71 @@ trait RequestMatcherFields extends StObject {
 }
 object RequestMatcherFields {
   
-  @scala.inline
-  def apply(): RequestMatcherFields = {
+  inline def apply(): RequestMatcherFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestMatcherFields]
   }
   
-  @scala.inline
-  implicit class RequestMatcherFieldsMutableBuilder[Self <: RequestMatcherFields] (val x: Self) extends AnyVal {
+  extension [Self <: RequestMatcherFields](x: Self) {
     
-    @scala.inline
-    def setContentType(value: js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
+    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeContentType(value: js.Array[String]): Self = StObject.set(x, "excludeContentType", value.asInstanceOf[js.Any])
+    inline def setExcludeContentType(value: js.Array[String]): Self = StObject.set(x, "excludeContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeContentTypeUndefined: Self = StObject.set(x, "excludeContentType", js.undefined)
+    inline def setExcludeContentTypeUndefined: Self = StObject.set(x, "excludeContentType", js.undefined)
     
-    @scala.inline
-    def setExcludeContentTypeVarargs(value: String*): Self = StObject.set(x, "excludeContentType", js.Array(value :_*))
+    inline def setExcludeContentTypeVarargs(value: String*): Self = StObject.set(x, "excludeContentType", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeRequestHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeRequestHeaders", value.asInstanceOf[js.Any])
+    inline def setExcludeRequestHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeRequestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeRequestHeadersUndefined: Self = StObject.set(x, "excludeRequestHeaders", js.undefined)
+    inline def setExcludeRequestHeadersUndefined: Self = StObject.set(x, "excludeRequestHeaders", js.undefined)
     
-    @scala.inline
-    def setExcludeRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeRequestHeaders", js.Array(value :_*))
+    inline def setExcludeRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeRequestHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeResponseHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeResponseHeaders", value.asInstanceOf[js.Any])
+    inline def setExcludeResponseHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeResponseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeResponseHeadersUndefined: Self = StObject.set(x, "excludeResponseHeaders", js.undefined)
+    inline def setExcludeResponseHeadersUndefined: Self = StObject.set(x, "excludeResponseHeaders", js.undefined)
     
-    @scala.inline
-    def setExcludeResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeResponseHeaders", js.Array(value :_*))
+    inline def setExcludeResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeResponseHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstPartyForCookiesUrl(value: UrlFilter): Self = StObject.set(x, "firstPartyForCookiesUrl", value.asInstanceOf[js.Any])
+    inline def setFirstPartyForCookiesUrl(value: UrlFilter): Self = StObject.set(x, "firstPartyForCookiesUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPartyForCookiesUrlUndefined: Self = StObject.set(x, "firstPartyForCookiesUrl", js.undefined)
+    inline def setFirstPartyForCookiesUrlUndefined: Self = StObject.set(x, "firstPartyForCookiesUrl", js.undefined)
     
-    @scala.inline
-    def setRequestHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    inline def setRequestHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+    inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    @scala.inline
-    def setRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceType(value: js.Array[ResourceType]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: js.Array[ResourceType]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setResourceTypeVarargs(value: ResourceType*): Self = StObject.set(x, "resourceType", js.Array(value :_*))
+    inline def setResourceTypeVarargs(value: ResourceType*): Self = StObject.set(x, "resourceType", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setStages(value: js.Array[Stage]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+    inline def setStages(value: js.Array[Stage]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
+    inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
-    @scala.inline
-    def setStagesVarargs(value: Stage*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: Stage*): Self = StObject.set(x, "stages", js.Array(value :_*))
     
-    @scala.inline
-    def setThirdPartyForCookies(value: Boolean): Self = StObject.set(x, "thirdPartyForCookies", value.asInstanceOf[js.Any])
+    inline def setThirdPartyForCookies(value: Boolean): Self = StObject.set(x, "thirdPartyForCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyForCookiesUndefined: Self = StObject.set(x, "thirdPartyForCookies", js.undefined)
+    inline def setThirdPartyForCookiesUndefined: Self = StObject.set(x, "thirdPartyForCookies", js.undefined)
     
-    @scala.inline
-    def setUrl(value: UrlFilter): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: UrlFilter): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

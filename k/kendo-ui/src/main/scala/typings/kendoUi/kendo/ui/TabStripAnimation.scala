@@ -12,25 +12,19 @@ trait TabStripAnimation extends StObject {
 }
 object TabStripAnimation {
   
-  @scala.inline
-  def apply(): TabStripAnimation = {
+  inline def apply(): TabStripAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabStripAnimation]
   }
   
-  @scala.inline
-  implicit class TabStripAnimationMutableBuilder[Self <: TabStripAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: TabStripAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: TabStripAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: TabStripAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: TabStripAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: TabStripAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

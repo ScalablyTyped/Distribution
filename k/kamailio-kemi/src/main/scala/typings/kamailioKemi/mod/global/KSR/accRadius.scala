@@ -10,6 +10,5 @@ object accRadius {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def request(comment: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(comment.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def request(comment: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(comment.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

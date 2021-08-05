@@ -43,55 +43,39 @@ trait Dataset extends StObject {
 }
 object Dataset {
   
-  @scala.inline
-  def apply(): Dataset = {
+  inline def apply(): Dataset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dataset]
   }
   
-  @scala.inline
-  implicit class DatasetMutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
+  extension [Self <: Dataset](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setDataStorage(value: Long): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
+    inline def setDataStorage(value: Long): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataStorageUndefined: Self = StObject.set(x, "DataStorage", js.undefined)
+    inline def setDataStorageUndefined: Self = StObject.set(x, "DataStorage", js.undefined)
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetNameUndefined: Self = StObject.set(x, "DatasetName", js.undefined)
+    inline def setDatasetNameUndefined: Self = StObject.set(x, "DatasetName", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setLastModifiedBy(value: String): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBy(value: String): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setNumRecords(value: Long): Self = StObject.set(x, "NumRecords", value.asInstanceOf[js.Any])
+    inline def setNumRecords(value: Long): Self = StObject.set(x, "NumRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRecordsUndefined: Self = StObject.set(x, "NumRecords", js.undefined)
+    inline def setNumRecordsUndefined: Self = StObject.set(x, "NumRecords", js.undefined)
   }
 }

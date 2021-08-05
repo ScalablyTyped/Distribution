@@ -23,8 +23,7 @@ trait ConnectionMadeEventInfo extends StObject {
 }
 object ConnectionMadeEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connection: Connection,
     source: HTMLDivElement,
     sourceEndpoint: Endpoint,
@@ -37,28 +36,20 @@ object ConnectionMadeEventInfo {
     __obj.asInstanceOf[ConnectionMadeEventInfo]
   }
   
-  @scala.inline
-  implicit class ConnectionMadeEventInfoMutableBuilder[Self <: ConnectionMadeEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionMadeEventInfo](x: Self) {
     
-    @scala.inline
-    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: HTMLDivElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: HTMLDivElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEndpoint(value: Endpoint): Self = StObject.set(x, "sourceEndpoint", value.asInstanceOf[js.Any])
+    inline def setSourceEndpoint(value: Endpoint): Self = StObject.set(x, "sourceEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: HTMLDivElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLDivElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetEndpoint(value: Endpoint): Self = StObject.set(x, "targetEndpoint", value.asInstanceOf[js.Any])
+    inline def setTargetEndpoint(value: Endpoint): Self = StObject.set(x, "targetEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

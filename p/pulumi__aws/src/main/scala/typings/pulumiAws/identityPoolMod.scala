@@ -88,21 +88,16 @@ object identityPoolMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityPoolState): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
+    inline def get(name: String, id: Input[ID]): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
+    inline def get(name: String, id: Input[ID], state: IdentityPoolState): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
+    inline def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
     
     /**
       * Returns true if the given object is an instance of IdentityPool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean]
   }
   
   trait IdentityPoolArgs extends StObject {
@@ -154,72 +149,52 @@ object identityPoolMod {
   }
   object IdentityPoolArgs {
     
-    @scala.inline
-    def apply(identityPoolName: Input[String]): IdentityPoolArgs = {
+    inline def apply(identityPoolName: Input[String]): IdentityPoolArgs = {
       val __obj = js.Dynamic.literal(identityPoolName = identityPoolName.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdentityPoolArgs]
     }
     
-    @scala.inline
-    implicit class IdentityPoolArgsMutableBuilder[Self <: IdentityPoolArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityPoolArgs](x: Self) {
       
-      @scala.inline
-      def setAllowUnauthenticatedIdentities(value: Input[Boolean]): Self = StObject.set(x, "allowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
+      inline def setAllowUnauthenticatedIdentities(value: Input[Boolean]): Self = StObject.set(x, "allowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnauthenticatedIdentitiesUndefined: Self = StObject.set(x, "allowUnauthenticatedIdentities", js.undefined)
+      inline def setAllowUnauthenticatedIdentitiesUndefined: Self = StObject.set(x, "allowUnauthenticatedIdentities", js.undefined)
       
-      @scala.inline
-      def setCognitoIdentityProviders(
+      inline def setCognitoIdentityProviders(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]]
             ]
       ): Self = StObject.set(x, "cognitoIdentityProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "cognitoIdentityProviders", js.undefined)
+      inline def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "cognitoIdentityProviders", js.undefined)
       
-      @scala.inline
-      def setCognitoIdentityProvidersVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]*): Self = StObject.set(x, "cognitoIdentityProviders", js.Array(value :_*))
+      inline def setCognitoIdentityProvidersVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]*): Self = StObject.set(x, "cognitoIdentityProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setDeveloperProviderName(value: Input[String]): Self = StObject.set(x, "developerProviderName", value.asInstanceOf[js.Any])
+      inline def setDeveloperProviderName(value: Input[String]): Self = StObject.set(x, "developerProviderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeveloperProviderNameUndefined: Self = StObject.set(x, "developerProviderName", js.undefined)
+      inline def setDeveloperProviderNameUndefined: Self = StObject.set(x, "developerProviderName", js.undefined)
       
-      @scala.inline
-      def setIdentityPoolName(value: Input[String]): Self = StObject.set(x, "identityPoolName", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolName(value: Input[String]): Self = StObject.set(x, "identityPoolName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenidConnectProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "openidConnectProviderArns", value.asInstanceOf[js.Any])
+      inline def setOpenidConnectProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "openidConnectProviderArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenidConnectProviderArnsUndefined: Self = StObject.set(x, "openidConnectProviderArns", js.undefined)
+      inline def setOpenidConnectProviderArnsUndefined: Self = StObject.set(x, "openidConnectProviderArns", js.undefined)
       
-      @scala.inline
-      def setOpenidConnectProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "openidConnectProviderArns", js.Array(value :_*))
+      inline def setOpenidConnectProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "openidConnectProviderArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSamlProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "samlProviderArns", value.asInstanceOf[js.Any])
+      inline def setSamlProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "samlProviderArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamlProviderArnsUndefined: Self = StObject.set(x, "samlProviderArns", js.undefined)
+      inline def setSamlProviderArnsUndefined: Self = StObject.set(x, "samlProviderArns", js.undefined)
       
-      @scala.inline
-      def setSamlProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "samlProviderArns", js.Array(value :_*))
+      inline def setSamlProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "samlProviderArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedLoginProviders(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "supportedLoginProviders", value.asInstanceOf[js.Any])
+      inline def setSupportedLoginProviders(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "supportedLoginProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "supportedLoginProviders", js.undefined)
+      inline def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "supportedLoginProviders", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -277,81 +252,58 @@ object identityPoolMod {
   }
   object IdentityPoolState {
     
-    @scala.inline
-    def apply(): IdentityPoolState = {
+    inline def apply(): IdentityPoolState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdentityPoolState]
     }
     
-    @scala.inline
-    implicit class IdentityPoolStateMutableBuilder[Self <: IdentityPoolState] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityPoolState](x: Self) {
       
-      @scala.inline
-      def setAllowUnauthenticatedIdentities(value: Input[Boolean]): Self = StObject.set(x, "allowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
+      inline def setAllowUnauthenticatedIdentities(value: Input[Boolean]): Self = StObject.set(x, "allowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnauthenticatedIdentitiesUndefined: Self = StObject.set(x, "allowUnauthenticatedIdentities", js.undefined)
+      inline def setAllowUnauthenticatedIdentitiesUndefined: Self = StObject.set(x, "allowUnauthenticatedIdentities", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCognitoIdentityProviders(
+      inline def setCognitoIdentityProviders(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]]
             ]
       ): Self = StObject.set(x, "cognitoIdentityProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "cognitoIdentityProviders", js.undefined)
+      inline def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "cognitoIdentityProviders", js.undefined)
       
-      @scala.inline
-      def setCognitoIdentityProvidersVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]*): Self = StObject.set(x, "cognitoIdentityProviders", js.Array(value :_*))
+      inline def setCognitoIdentityProvidersVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]*): Self = StObject.set(x, "cognitoIdentityProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setDeveloperProviderName(value: Input[String]): Self = StObject.set(x, "developerProviderName", value.asInstanceOf[js.Any])
+      inline def setDeveloperProviderName(value: Input[String]): Self = StObject.set(x, "developerProviderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeveloperProviderNameUndefined: Self = StObject.set(x, "developerProviderName", js.undefined)
+      inline def setDeveloperProviderNameUndefined: Self = StObject.set(x, "developerProviderName", js.undefined)
       
-      @scala.inline
-      def setIdentityPoolName(value: Input[String]): Self = StObject.set(x, "identityPoolName", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolName(value: Input[String]): Self = StObject.set(x, "identityPoolName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityPoolNameUndefined: Self = StObject.set(x, "identityPoolName", js.undefined)
+      inline def setIdentityPoolNameUndefined: Self = StObject.set(x, "identityPoolName", js.undefined)
       
-      @scala.inline
-      def setOpenidConnectProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "openidConnectProviderArns", value.asInstanceOf[js.Any])
+      inline def setOpenidConnectProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "openidConnectProviderArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenidConnectProviderArnsUndefined: Self = StObject.set(x, "openidConnectProviderArns", js.undefined)
+      inline def setOpenidConnectProviderArnsUndefined: Self = StObject.set(x, "openidConnectProviderArns", js.undefined)
       
-      @scala.inline
-      def setOpenidConnectProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "openidConnectProviderArns", js.Array(value :_*))
+      inline def setOpenidConnectProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "openidConnectProviderArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSamlProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "samlProviderArns", value.asInstanceOf[js.Any])
+      inline def setSamlProviderArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "samlProviderArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamlProviderArnsUndefined: Self = StObject.set(x, "samlProviderArns", js.undefined)
+      inline def setSamlProviderArnsUndefined: Self = StObject.set(x, "samlProviderArns", js.undefined)
       
-      @scala.inline
-      def setSamlProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "samlProviderArns", js.Array(value :_*))
+      inline def setSamlProviderArnsVarargs(value: Input[String]*): Self = StObject.set(x, "samlProviderArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedLoginProviders(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "supportedLoginProviders", value.asInstanceOf[js.Any])
+      inline def setSupportedLoginProviders(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "supportedLoginProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "supportedLoginProviders", js.undefined)
+      inline def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "supportedLoginProviders", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

@@ -29,8 +29,7 @@ trait TableColumn extends StObject {
 }
 object TableColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterButton: Boolean,
     name: String,
     totalsRowFormula: String,
@@ -41,22 +40,16 @@ object TableColumn {
     __obj.asInstanceOf[TableColumn]
   }
   
-  @scala.inline
-  implicit class TableColumnMutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
+  extension [Self <: TableColumn](x: Self) {
     
-    @scala.inline
-    def setFilterButton(value: Boolean): Self = StObject.set(x, "filterButton", value.asInstanceOf[js.Any])
+    inline def setFilterButton(value: Boolean): Self = StObject.set(x, "filterButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRowFormula(value: String): Self = StObject.set(x, "totalsRowFormula", value.asInstanceOf[js.Any])
+    inline def setTotalsRowFormula(value: String): Self = StObject.set(x, "totalsRowFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = StObject.set(x, "totalsRowFunction", value.asInstanceOf[js.Any])
+    inline def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = StObject.set(x, "totalsRowFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRowLabel(value: String): Self = StObject.set(x, "totalsRowLabel", value.asInstanceOf[js.Any])
+    inline def setTotalsRowLabel(value: String): Self = StObject.set(x, "totalsRowLabel", value.asInstanceOf[js.Any])
   }
 }

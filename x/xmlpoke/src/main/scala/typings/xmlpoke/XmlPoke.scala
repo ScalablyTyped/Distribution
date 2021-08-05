@@ -41,17 +41,14 @@ object XmlPoke {
   }
   object CDataValue {
     
-    @scala.inline
-    def apply(value: String): CDataValue = {
+    inline def apply(value: String): CDataValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CDataValue]
     }
     
-    @scala.inline
-    implicit class CDataValueMutableBuilder[Self <: CDataValue] (val x: Self) extends AnyVal {
+    extension [Self <: CDataValue](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,8 +58,7 @@ object XmlPoke {
        with _Value
   object PathToValueMap {
     
-    @scala.inline
-    def apply(): PathToValueMap = {
+    inline def apply(): PathToValueMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathToValueMap]
     }
@@ -96,17 +92,14 @@ object XmlPoke {
   }
   object XmlValue {
     
-    @scala.inline
-    def apply(value: String): XmlValue = {
+    inline def apply(value: String): XmlValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[XmlValue]
     }
     
-    @scala.inline
-    implicit class XmlValueMutableBuilder[Self <: XmlValue] (val x: Self) extends AnyVal {
+    extension [Self <: XmlValue](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

@@ -24,8 +24,7 @@ trait BarcodeScannerCapabilities extends StObject {
 }
 object BarcodeScannerCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isImagePreviewSupported: Boolean,
     isSoftwareTriggerSupported: Boolean,
     isStatisticsReportingSupported: Boolean,
@@ -36,22 +35,16 @@ object BarcodeScannerCapabilities {
     __obj.asInstanceOf[BarcodeScannerCapabilities]
   }
   
-  @scala.inline
-  implicit class BarcodeScannerCapabilitiesMutableBuilder[Self <: BarcodeScannerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeScannerCapabilities](x: Self) {
     
-    @scala.inline
-    def setIsImagePreviewSupported(value: Boolean): Self = StObject.set(x, "isImagePreviewSupported", value.asInstanceOf[js.Any])
+    inline def setIsImagePreviewSupported(value: Boolean): Self = StObject.set(x, "isImagePreviewSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSoftwareTriggerSupported(value: Boolean): Self = StObject.set(x, "isSoftwareTriggerSupported", value.asInstanceOf[js.Any])
+    inline def setIsSoftwareTriggerSupported(value: Boolean): Self = StObject.set(x, "isSoftwareTriggerSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
+    inline def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
   }
 }

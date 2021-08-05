@@ -31,8 +31,7 @@ trait XDocumentRevisionListPersistence
 }
 object XDocumentRevisionListPersistence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     load: XStorage => SafeArray[RevisionTag],
     queryInterface: `type` => js.Any,
@@ -43,13 +42,10 @@ object XDocumentRevisionListPersistence {
     __obj.asInstanceOf[XDocumentRevisionListPersistence]
   }
   
-  @scala.inline
-  implicit class XDocumentRevisionListPersistenceMutableBuilder[Self <: XDocumentRevisionListPersistence] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentRevisionListPersistence](x: Self) {
     
-    @scala.inline
-    def setLoad(value: XStorage => SafeArray[RevisionTag]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: XStorage => SafeArray[RevisionTag]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStore(value: (XStorage, SeqEquiv[RevisionTag]) => Unit): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
+    inline def setStore(value: (XStorage, SeqEquiv[RevisionTag]) => Unit): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
   }
 }

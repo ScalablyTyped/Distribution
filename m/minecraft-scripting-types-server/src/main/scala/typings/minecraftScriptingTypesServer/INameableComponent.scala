@@ -40,8 +40,7 @@ trait INameableComponent extends StObject {
 }
 object INameableComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowNameTagRenaming: Boolean,
     alwaysShow: Boolean,
     default_trigger: MinecraftTrigger | String,
@@ -52,25 +51,18 @@ object INameableComponent {
     __obj.asInstanceOf[INameableComponent]
   }
   
-  @scala.inline
-  implicit class INameableComponentMutableBuilder[Self <: INameableComponent] (val x: Self) extends AnyVal {
+  extension [Self <: INameableComponent](x: Self) {
     
-    @scala.inline
-    def setAllowNameTagRenaming(value: Boolean): Self = StObject.set(x, "allowNameTagRenaming", value.asInstanceOf[js.Any])
+    inline def setAllowNameTagRenaming(value: Boolean): Self = StObject.set(x, "allowNameTagRenaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysShow(value: Boolean): Self = StObject.set(x, "alwaysShow", value.asInstanceOf[js.Any])
+    inline def setAlwaysShow(value: Boolean): Self = StObject.set(x, "alwaysShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_trigger(value: MinecraftTrigger | String): Self = StObject.set(x, "default_trigger", value.asInstanceOf[js.Any])
+    inline def setDefault_trigger(value: MinecraftTrigger | String): Self = StObject.set(x, "default_trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_actions(value: js.Array[Namefilter]): Self = StObject.set(x, "name_actions", value.asInstanceOf[js.Any])
+    inline def setName_actions(value: js.Array[Namefilter]): Self = StObject.set(x, "name_actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_actionsVarargs(value: Namefilter*): Self = StObject.set(x, "name_actions", js.Array(value :_*))
+    inline def setName_actionsVarargs(value: Namefilter*): Self = StObject.set(x, "name_actions", js.Array(value :_*))
   }
 }

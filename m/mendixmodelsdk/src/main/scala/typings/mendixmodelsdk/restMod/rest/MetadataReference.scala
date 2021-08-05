@@ -59,8 +59,7 @@ object MetadataReference {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
+  inline def create(model: IModel): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -71,8 +70,7 @@ object MetadataReference {
     *  8.6.0 to 8.7.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: ConsumedODataService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
+  inline def createIn(container: ConsumedODataService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -83,8 +81,7 @@ object MetadataReference {
     *  8.11.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConsumedKafkaServiceUnderMetadataReferences(container: ConsumedKafkaService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedKafkaServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
+  inline def createInConsumedKafkaServiceUnderMetadataReferences(container: ConsumedKafkaService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedKafkaServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -95,8 +92,7 @@ object MetadataReference {
     *  8.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConsumedODataServiceUnderMetadataReferences(container: ConsumedODataService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
+  inline def createInConsumedODataServiceUnderMetadataReferences(container: ConsumedODataService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -107,20 +103,17 @@ object MetadataReference {
     *  8.8.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMetadataReferenceUnderMetadataReferences(container: MetadataReference): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMetadataReferenceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
+  inline def createInMetadataReferenceUnderMetadataReferences(container: MetadataReference): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMetadataReferenceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

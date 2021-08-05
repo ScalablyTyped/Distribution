@@ -72,8 +72,7 @@ object ShapeOverlay {
   }
   object EventMap {
     
-    @scala.inline
-    def apply[I](
+    inline def apply[I](
       change: Event_[change, TargetI[I]],
       click: MapsEvent[click, I],
       dblclick: MapsEvent[dblclick, I],
@@ -93,20 +92,15 @@ object ShapeOverlay {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
+    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
       
-      @scala.inline
-      def setChange(value: Event_[change, TargetI[I]]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: Event_[change, TargetI[I]]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: Event_[hide, TargetI[I]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Event_[hide, TargetI[I]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Event_[options, Unit]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Event_[options, Unit]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: Event_[show, TargetI[I]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Event_[show, TargetI[I]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,8 +158,7 @@ object ShapeOverlay {
   }
   object GetOptionsResult {
     
-    @scala.inline
-    def apply[ExtraData](
+    inline def apply[ExtraData](
       bubble: Boolean,
       clickable: Boolean,
       extData: ExtraData | js.Object,
@@ -181,41 +174,29 @@ object ShapeOverlay {
       __obj.asInstanceOf[GetOptionsResult[ExtraData]]
     }
     
-    @scala.inline
-    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
+    extension [Self <: GetOptionsResult[?], ExtraData](x: Self & GetOptionsResult[ExtraData]) {
       
-      @scala.inline
-      def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
+      inline def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtData(value: ExtraData | js.Object): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
+      inline def setExtData(value: ExtraData | js.Object): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDasharray(value: js.Array[Double]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+      inline def setStrokeDasharray(value: js.Array[Double]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDasharrayVarargs(value: Double*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
+      inline def setStrokeDasharrayVarargs(value: Double*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
       
-      @scala.inline
-      def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStyle(value: StrokeStyle): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+      inline def setStrokeStyle(value: StrokeStyle): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
+      inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     }
   }
 }

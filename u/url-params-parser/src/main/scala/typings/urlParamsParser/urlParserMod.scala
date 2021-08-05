@@ -11,10 +11,8 @@ object urlParserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def UrlParser(urlString: String): UrlParserResult = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any]).asInstanceOf[UrlParserResult]
-  @scala.inline
-  def UrlParser(urlString: String, namedUrl: String): UrlParserResult = (^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any], namedUrl.asInstanceOf[js.Any])).asInstanceOf[UrlParserResult]
+  inline def UrlParser(urlString: String): UrlParserResult = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any]).asInstanceOf[UrlParserResult]
+  inline def UrlParser(urlString: String, namedUrl: String): UrlParserResult = (^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any], namedUrl.asInstanceOf[js.Any])).asInstanceOf[UrlParserResult]
   
   trait UrlParserResult extends StObject {
     
@@ -46,8 +44,7 @@ object urlParserMod {
   }
   object UrlParserResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       host: String,
       hostname: String,
       namedParams: StringDictionary[String],
@@ -66,62 +63,43 @@ object urlParserMod {
       __obj.asInstanceOf[UrlParserResult]
     }
     
-    @scala.inline
-    implicit class UrlParserResultMutableBuilder[Self <: UrlParserResult] (val x: Self) extends AnyVal {
+    extension [Self <: UrlParserResult](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedParams(value: StringDictionary[String]): Self = StObject.set(x, "namedParams", value.asInstanceOf[js.Any])
+      inline def setNamedParams(value: StringDictionary[String]): Self = StObject.set(x, "namedParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedParamsKeys(value: js.Array[String]): Self = StObject.set(x, "namedParamsKeys", value.asInstanceOf[js.Any])
+      inline def setNamedParamsKeys(value: js.Array[String]): Self = StObject.set(x, "namedParamsKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedParamsKeysVarargs(value: String*): Self = StObject.set(x, "namedParamsKeys", js.Array(value :_*))
+      inline def setNamedParamsKeysVarargs(value: String*): Self = StObject.set(x, "namedParamsKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setNamedParamsValues(value: js.Array[String]): Self = StObject.set(x, "namedParamsValues", value.asInstanceOf[js.Any])
+      inline def setNamedParamsValues(value: js.Array[String]): Self = StObject.set(x, "namedParamsValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedParamsValuesVarargs(value: String*): Self = StObject.set(x, "namedParamsValues", js.Array(value :_*))
+      inline def setNamedParamsValuesVarargs(value: String*): Self = StObject.set(x, "namedParamsValues", js.Array(value :_*))
       
-      @scala.inline
-      def setPathNames(value: js.Array[String]): Self = StObject.set(x, "pathNames", value.asInstanceOf[js.Any])
+      inline def setPathNames(value: js.Array[String]): Self = StObject.set(x, "pathNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathNamesVarargs(value: String*): Self = StObject.set(x, "pathNames", js.Array(value :_*))
+      inline def setPathNamesVarargs(value: String*): Self = StObject.set(x, "pathNames", js.Array(value :_*))
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: StringDictionary[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: StringDictionary[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsKeys(value: js.Array[String]): Self = StObject.set(x, "queryParamsKeys", value.asInstanceOf[js.Any])
+      inline def setQueryParamsKeys(value: js.Array[String]): Self = StObject.set(x, "queryParamsKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsKeysVarargs(value: String*): Self = StObject.set(x, "queryParamsKeys", js.Array(value :_*))
+      inline def setQueryParamsKeysVarargs(value: String*): Self = StObject.set(x, "queryParamsKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setQueryParamsValues(value: js.Array[String]): Self = StObject.set(x, "queryParamsValues", value.asInstanceOf[js.Any])
+      inline def setQueryParamsValues(value: js.Array[String]): Self = StObject.set(x, "queryParamsValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsValuesVarargs(value: String*): Self = StObject.set(x, "queryParamsValues", js.Array(value :_*))
+      inline def setQueryParamsValuesVarargs(value: String*): Self = StObject.set(x, "queryParamsValues", js.Array(value :_*))
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }
   }
 }

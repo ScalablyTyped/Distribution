@@ -12,22 +12,17 @@ trait StateOffsets extends StObject {
 }
 object StateOffsets {
   
-  @scala.inline
-  def apply(popper: Offsets): StateOffsets = {
+  inline def apply(popper: Offsets): StateOffsets = {
     val __obj = js.Dynamic.literal(popper = popper.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateOffsets]
   }
   
-  @scala.inline
-  implicit class StateOffsetsMutableBuilder[Self <: StateOffsets] (val x: Self) extends AnyVal {
+  extension [Self <: StateOffsets](x: Self) {
     
-    @scala.inline
-    def setArrow(value: Offsets): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: Offsets): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+    inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
-    @scala.inline
-    def setPopper(value: Offsets): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: Offsets): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
   }
 }

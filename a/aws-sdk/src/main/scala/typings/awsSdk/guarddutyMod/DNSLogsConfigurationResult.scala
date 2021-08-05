@@ -13,16 +13,13 @@ trait DNSLogsConfigurationResult extends StObject {
 }
 object DNSLogsConfigurationResult {
   
-  @scala.inline
-  def apply(Status: DataSourceStatus): DNSLogsConfigurationResult = {
+  inline def apply(Status: DataSourceStatus): DNSLogsConfigurationResult = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DNSLogsConfigurationResult]
   }
   
-  @scala.inline
-  implicit class DNSLogsConfigurationResultMutableBuilder[Self <: DNSLogsConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: DNSLogsConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

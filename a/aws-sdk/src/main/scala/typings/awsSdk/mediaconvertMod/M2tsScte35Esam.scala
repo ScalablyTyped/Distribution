@@ -13,19 +13,15 @@ trait M2tsScte35Esam extends StObject {
 }
 object M2tsScte35Esam {
   
-  @scala.inline
-  def apply(): M2tsScte35Esam = {
+  inline def apply(): M2tsScte35Esam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[M2tsScte35Esam]
   }
   
-  @scala.inline
-  implicit class M2tsScte35EsamMutableBuilder[Self <: M2tsScte35Esam] (val x: Self) extends AnyVal {
+  extension [Self <: M2tsScte35Esam](x: Self) {
     
-    @scala.inline
-    def setScte35EsamPid(value: integerMin32Max8182): Self = StObject.set(x, "Scte35EsamPid", value.asInstanceOf[js.Any])
+    inline def setScte35EsamPid(value: integerMin32Max8182): Self = StObject.set(x, "Scte35EsamPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35EsamPidUndefined: Self = StObject.set(x, "Scte35EsamPid", js.undefined)
+    inline def setScte35EsamPidUndefined: Self = StObject.set(x, "Scte35EsamPid", js.undefined)
   }
 }

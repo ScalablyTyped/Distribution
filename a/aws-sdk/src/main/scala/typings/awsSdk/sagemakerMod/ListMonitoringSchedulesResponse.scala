@@ -18,25 +18,19 @@ trait ListMonitoringSchedulesResponse extends StObject {
 }
 object ListMonitoringSchedulesResponse {
   
-  @scala.inline
-  def apply(MonitoringScheduleSummaries: MonitoringScheduleSummaryList): ListMonitoringSchedulesResponse = {
+  inline def apply(MonitoringScheduleSummaries: MonitoringScheduleSummaryList): ListMonitoringSchedulesResponse = {
     val __obj = js.Dynamic.literal(MonitoringScheduleSummaries = MonitoringScheduleSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMonitoringSchedulesResponse]
   }
   
-  @scala.inline
-  implicit class ListMonitoringSchedulesResponseMutableBuilder[Self <: ListMonitoringSchedulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMonitoringSchedulesResponse](x: Self) {
     
-    @scala.inline
-    def setMonitoringScheduleSummaries(value: MonitoringScheduleSummaryList): Self = StObject.set(x, "MonitoringScheduleSummaries", value.asInstanceOf[js.Any])
+    inline def setMonitoringScheduleSummaries(value: MonitoringScheduleSummaryList): Self = StObject.set(x, "MonitoringScheduleSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringScheduleSummariesVarargs(value: MonitoringScheduleSummary*): Self = StObject.set(x, "MonitoringScheduleSummaries", js.Array(value :_*))
+    inline def setMonitoringScheduleSummariesVarargs(value: MonitoringScheduleSummary*): Self = StObject.set(x, "MonitoringScheduleSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait TypeError
 }
 object TypeError {
   
-  @scala.inline
-  def apply(message: String, method: String): TypeError = {
+  inline def apply(message: String, method: String): TypeError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "TypeError")
     __obj.asInstanceOf[TypeError]
   }
   
-  @scala.inline
-  implicit class TypeErrorMutableBuilder[Self <: TypeError] (val x: Self) extends AnyVal {
+  extension [Self <: TypeError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.TypeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.TypeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

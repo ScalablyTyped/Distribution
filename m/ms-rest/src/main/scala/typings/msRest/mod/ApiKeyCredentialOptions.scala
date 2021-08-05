@@ -19,25 +19,19 @@ trait ApiKeyCredentialOptions extends StObject {
 }
 object ApiKeyCredentialOptions {
   
-  @scala.inline
-  def apply(): ApiKeyCredentialOptions = {
+  inline def apply(): ApiKeyCredentialOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiKeyCredentialOptions]
   }
   
-  @scala.inline
-  implicit class ApiKeyCredentialOptionsMutableBuilder[Self <: ApiKeyCredentialOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApiKeyCredentialOptions](x: Self) {
     
-    @scala.inline
-    def setInHeader(value: StringDictionary[js.Any]): Self = StObject.set(x, "inHeader", value.asInstanceOf[js.Any])
+    inline def setInHeader(value: StringDictionary[js.Any]): Self = StObject.set(x, "inHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInHeaderUndefined: Self = StObject.set(x, "inHeader", js.undefined)
+    inline def setInHeaderUndefined: Self = StObject.set(x, "inHeader", js.undefined)
     
-    @scala.inline
-    def setInQuery(value: StringDictionary[js.Any]): Self = StObject.set(x, "inQuery", value.asInstanceOf[js.Any])
+    inline def setInQuery(value: StringDictionary[js.Any]): Self = StObject.set(x, "inQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInQueryUndefined: Self = StObject.set(x, "inQuery", js.undefined)
+    inline def setInQueryUndefined: Self = StObject.set(x, "inQuery", js.undefined)
   }
 }

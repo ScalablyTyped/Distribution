@@ -18,28 +18,21 @@ trait ListPoliciesGrantingServiceAccessEntry extends StObject {
 }
 object ListPoliciesGrantingServiceAccessEntry {
   
-  @scala.inline
-  def apply(): ListPoliciesGrantingServiceAccessEntry = {
+  inline def apply(): ListPoliciesGrantingServiceAccessEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPoliciesGrantingServiceAccessEntry]
   }
   
-  @scala.inline
-  implicit class ListPoliciesGrantingServiceAccessEntryMutableBuilder[Self <: ListPoliciesGrantingServiceAccessEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ListPoliciesGrantingServiceAccessEntry](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: policyGrantingServiceAccessListType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: policyGrantingServiceAccessListType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: PolicyGrantingServiceAccess*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: PolicyGrantingServiceAccess*): Self = StObject.set(x, "Policies", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespaceUndefined: Self = StObject.set(x, "ServiceNamespace", js.undefined)
+    inline def setServiceNamespaceUndefined: Self = StObject.set(x, "ServiceNamespace", js.undefined)
   }
 }

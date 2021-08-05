@@ -10,8 +10,7 @@ object prefixerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(property: String, value: String): js.Array[Rule] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Rule]]
+  inline def default(property: String, value: String): js.Array[Rule] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Rule]]
   
   trait Rule extends StObject {
     
@@ -21,20 +20,16 @@ object prefixerMod {
   }
   object Rule {
     
-    @scala.inline
-    def apply(property: String, value: String): Rule = {
+    inline def apply(property: String, value: String): Rule = {
       val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
     }
     
-    @scala.inline
-    implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+    extension [Self <: Rule](x: Self) {
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

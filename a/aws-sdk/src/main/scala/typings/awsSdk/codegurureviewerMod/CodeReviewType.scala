@@ -13,16 +13,13 @@ trait CodeReviewType extends StObject {
 }
 object CodeReviewType {
   
-  @scala.inline
-  def apply(RepositoryAnalysis: RepositoryAnalysis): CodeReviewType = {
+  inline def apply(RepositoryAnalysis: RepositoryAnalysis): CodeReviewType = {
     val __obj = js.Dynamic.literal(RepositoryAnalysis = RepositoryAnalysis.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeReviewType]
   }
   
-  @scala.inline
-  implicit class CodeReviewTypeMutableBuilder[Self <: CodeReviewType] (val x: Self) extends AnyVal {
+  extension [Self <: CodeReviewType](x: Self) {
     
-    @scala.inline
-    def setRepositoryAnalysis(value: RepositoryAnalysis): Self = StObject.set(x, "RepositoryAnalysis", value.asInstanceOf[js.Any])
+    inline def setRepositoryAnalysis(value: RepositoryAnalysis): Self = StObject.set(x, "RepositoryAnalysis", value.asInstanceOf[js.Any])
   }
 }

@@ -29,36 +29,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowTypeAnnotation extends StObject
 object FlowTypeAnnotation {
   
-  @scala.inline
-  def AnyTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.AnyTypeAnnotation_ = {
+  inline def AnyTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.AnyTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AnyTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.AnyTypeAnnotation_]
   }
   
-  @scala.inline
-  def ArrayTypeAnnotation_(elementType: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ArrayTypeAnnotation_ = {
+  inline def ArrayTypeAnnotation_(elementType: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ArrayTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ArrayTypeAnnotation_]
   }
   
-  @scala.inline
-  def BooleanLiteralTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BooleanLiteralTypeAnnotation_ = {
+  inline def BooleanLiteralTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BooleanLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BooleanLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BooleanLiteralTypeAnnotation_]
   }
   
-  @scala.inline
-  def BooleanTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BooleanTypeAnnotation_ = {
+  inline def BooleanTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BooleanTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BooleanTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BooleanTypeAnnotation_]
   }
   
-  @scala.inline
-  def FunctionTypeAnnotation_(
+  inline def FunctionTypeAnnotation_(
     end: Double,
     loc: SourceLocation,
     params: js.Array[FunctionTypeParam_],
@@ -72,8 +67,7 @@ object FlowTypeAnnotation {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionTypeAnnotation_]
   }
   
-  @scala.inline
-  def GenericTypeAnnotation_(
+  inline def GenericTypeAnnotation_(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -85,43 +79,37 @@ object FlowTypeAnnotation {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.GenericTypeAnnotation_]
   }
   
-  @scala.inline
-  def IntersectionTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): typings.babelTypes.ts36Mod.IntersectionTypeAnnotation_ = {
+  inline def IntersectionTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): typings.babelTypes.ts36Mod.IntersectionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("IntersectionTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.IntersectionTypeAnnotation_]
   }
   
-  @scala.inline
-  def MixedTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.MixedTypeAnnotation_ = {
+  inline def MixedTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.MixedTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MixedTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.MixedTypeAnnotation_]
   }
   
-  @scala.inline
-  def NullableTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, typeAnnotation: FlowTypeAnnotation): typings.babelTypes.ts36Mod.NullableTypeAnnotation_ = {
+  inline def NullableTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, typeAnnotation: FlowTypeAnnotation): typings.babelTypes.ts36Mod.NullableTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NullableTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.NullableTypeAnnotation_]
   }
   
-  @scala.inline
-  def NumberTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.NumberTypeAnnotation_ = {
+  inline def NumberTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.NumberTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumberTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.NumberTypeAnnotation_]
   }
   
-  @scala.inline
-  def NumericLiteralTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.NumericLiteralTypeAnnotation_ = {
+  inline def NumericLiteralTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.NumericLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumericLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.NumericLiteralTypeAnnotation_]
   }
   
-  @scala.inline
-  def ObjectTypeAnnotation_(
+  inline def ObjectTypeAnnotation_(
     callProperties: js.Array[ObjectTypeCallProperty_],
     end: Double,
     indexers: js.Array[ObjectTypeIndexer_],
@@ -134,57 +122,49 @@ object FlowTypeAnnotation {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectTypeAnnotation_]
   }
   
-  @scala.inline
-  def StringLiteralTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.StringLiteralTypeAnnotation_ = {
+  inline def StringLiteralTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.StringLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.StringLiteralTypeAnnotation_]
   }
   
-  @scala.inline
-  def StringTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.StringTypeAnnotation_ = {
+  inline def StringTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.StringTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.StringTypeAnnotation_]
   }
   
-  @scala.inline
-  def ThisTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ThisTypeAnnotation_ = {
+  inline def ThisTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ThisTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ThisTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ThisTypeAnnotation_]
   }
   
-  @scala.inline
-  def TupleTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): typings.babelTypes.ts36Mod.TupleTypeAnnotation_ = {
+  inline def TupleTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): typings.babelTypes.ts36Mod.TupleTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TupleTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TupleTypeAnnotation_]
   }
   
-  @scala.inline
-  def TypeAnnotation_(end: Double, loc: SourceLocation, start: Double, typeAnnotation: FlowTypeAnnotation): typings.babelTypes.ts36Mod.TypeAnnotation_ = {
+  inline def TypeAnnotation_(end: Double, loc: SourceLocation, start: Double, typeAnnotation: FlowTypeAnnotation): typings.babelTypes.ts36Mod.TypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TypeAnnotation_]
   }
   
-  @scala.inline
-  def TypeofTypeAnnotation_(argument: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TypeofTypeAnnotation_ = {
+  inline def TypeofTypeAnnotation_(argument: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TypeofTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeofTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TypeofTypeAnnotation_]
   }
   
-  @scala.inline
-  def UnionTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): typings.babelTypes.ts36Mod.UnionTypeAnnotation_ = {
+  inline def UnionTypeAnnotation_(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): typings.babelTypes.ts36Mod.UnionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("UnionTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.UnionTypeAnnotation_]
   }
   
-  @scala.inline
-  def VoidTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.VoidTypeAnnotation_ = {
+  inline def VoidTypeAnnotation_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.VoidTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VoidTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.VoidTypeAnnotation_]

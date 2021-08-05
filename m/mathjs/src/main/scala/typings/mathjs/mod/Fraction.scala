@@ -17,22 +17,17 @@ trait Fraction
 }
 object Fraction {
   
-  @scala.inline
-  def apply(d: Double, n: Double, s: Double): Fraction = {
+  inline def apply(d: Double, n: Double, s: Double): Fraction = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fraction]
   }
   
-  @scala.inline
-  implicit class FractionMutableBuilder[Self <: Fraction] (val x: Self) extends AnyVal {
+  extension [Self <: Fraction](x: Self) {
     
-    @scala.inline
-    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

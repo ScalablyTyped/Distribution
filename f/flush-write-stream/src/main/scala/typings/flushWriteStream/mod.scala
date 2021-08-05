@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: WritableOptions, write: Write): Writable = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  @scala.inline
-  def apply(opts: WritableOptions, write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  @scala.inline
-  def apply(write: Write): Writable = ^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any]).asInstanceOf[Writable]
-  @scala.inline
-  def apply(write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def apply(opts: WritableOptions, write: Write): Writable = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def apply(opts: WritableOptions, write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def apply(write: Write): Writable = ^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  inline def apply(write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("flush-write-stream", JSImport.Namespace)
@@ -31,14 +27,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def obj(opts: WritableOptions, write: Write): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  @scala.inline
-  def obj(opts: WritableOptions, write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  @scala.inline
-  def obj(write: Write): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(write.asInstanceOf[js.Any]).asInstanceOf[Writable]
-  @scala.inline
-  def obj(write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def obj(opts: WritableOptions, write: Write): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def obj(opts: WritableOptions, write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def obj(write: Write): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(write.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  inline def obj(write: Write, flush: Flush): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(write.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
   type Callback = js.Function1[/* error */ js.UndefOr[Error], Unit]
   

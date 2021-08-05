@@ -191,8 +191,7 @@ trait XRow
 }
 object XRow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getArray: Double => XArray,
     getBinaryStream: Double => XInputStream,
@@ -221,67 +220,46 @@ object XRow {
     __obj.asInstanceOf[XRow]
   }
   
-  @scala.inline
-  implicit class XRowMutableBuilder[Self <: XRow] (val x: Self) extends AnyVal {
+  extension [Self <: XRow](x: Self) {
     
-    @scala.inline
-    def setGetArray(value: Double => XArray): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
+    inline def setGetArray(value: Double => XArray): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBinaryStream(value: Double => XInputStream): Self = StObject.set(x, "getBinaryStream", js.Any.fromFunction1(value))
+    inline def setGetBinaryStream(value: Double => XInputStream): Self = StObject.set(x, "getBinaryStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBlob(value: Double => XBlob): Self = StObject.set(x, "getBlob", js.Any.fromFunction1(value))
+    inline def setGetBlob(value: Double => XBlob): Self = StObject.set(x, "getBlob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBoolean(value: Double => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction1(value))
+    inline def setGetBoolean(value: Double => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetByte(value: Double => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction1(value))
+    inline def setGetByte(value: Double => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBytes(value: Double => SafeArray[Double]): Self = StObject.set(x, "getBytes", js.Any.fromFunction1(value))
+    inline def setGetBytes(value: Double => SafeArray[Double]): Self = StObject.set(x, "getBytes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCharacterStream(value: Double => XInputStream): Self = StObject.set(x, "getCharacterStream", js.Any.fromFunction1(value))
+    inline def setGetCharacterStream(value: Double => XInputStream): Self = StObject.set(x, "getCharacterStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClob(value: Double => XClob): Self = StObject.set(x, "getClob", js.Any.fromFunction1(value))
+    inline def setGetClob(value: Double => XClob): Self = StObject.set(x, "getClob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDate(value: Double => Date): Self = StObject.set(x, "getDate", js.Any.fromFunction1(value))
+    inline def setGetDate(value: Double => Date): Self = StObject.set(x, "getDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDouble(value: Double => Double): Self = StObject.set(x, "getDouble", js.Any.fromFunction1(value))
+    inline def setGetDouble(value: Double => Double): Self = StObject.set(x, "getDouble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFloat(value: Double => Double): Self = StObject.set(x, "getFloat", js.Any.fromFunction1(value))
+    inline def setGetFloat(value: Double => Double): Self = StObject.set(x, "getFloat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInt(value: Double => Double): Self = StObject.set(x, "getInt", js.Any.fromFunction1(value))
+    inline def setGetInt(value: Double => Double): Self = StObject.set(x, "getInt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLong(value: Double => Double): Self = StObject.set(x, "getLong", js.Any.fromFunction1(value))
+    inline def setGetLong(value: Double => Double): Self = StObject.set(x, "getLong", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetObject(value: (Double, XNameAccess) => js.Any): Self = StObject.set(x, "getObject", js.Any.fromFunction2(value))
+    inline def setGetObject(value: (Double, XNameAccess) => js.Any): Self = StObject.set(x, "getObject", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetRef(value: Double => XRef): Self = StObject.set(x, "getRef", js.Any.fromFunction1(value))
+    inline def setGetRef(value: Double => XRef): Self = StObject.set(x, "getRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetShort(value: Double => Double): Self = StObject.set(x, "getShort", js.Any.fromFunction1(value))
+    inline def setGetShort(value: Double => Double): Self = StObject.set(x, "getShort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetString(value: Double => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+    inline def setGetString(value: Double => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTime(value: Double => Time): Self = StObject.set(x, "getTime", js.Any.fromFunction1(value))
+    inline def setGetTime(value: Double => Time): Self = StObject.set(x, "getTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTimestamp(value: Double => DateTime): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction1(value))
+    inline def setGetTimestamp(value: Double => DateTime): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWasNull(value: () => Boolean): Self = StObject.set(x, "wasNull", js.Any.fromFunction0(value))
+    inline def setWasNull(value: () => Boolean): Self = StObject.set(x, "wasNull", js.Any.fromFunction0(value))
   }
 }

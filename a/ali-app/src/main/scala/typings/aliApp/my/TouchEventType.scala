@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TouchEventType extends StObject
 object TouchEventType {
   
-  @scala.inline
-  def tap: typings.aliApp.aliAppStrings.tap = "tap".asInstanceOf[typings.aliApp.aliAppStrings.tap]
+  inline def tap: typings.aliApp.aliAppStrings.tap = "tap".asInstanceOf[typings.aliApp.aliAppStrings.tap]
   
-  @scala.inline
-  def touchcancel: typings.aliApp.aliAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.aliApp.aliAppStrings.touchcancel]
+  inline def touchcancel: typings.aliApp.aliAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.aliApp.aliAppStrings.touchcancel]
   
-  @scala.inline
-  def touchend: typings.aliApp.aliAppStrings.touchend = "touchend".asInstanceOf[typings.aliApp.aliAppStrings.touchend]
+  inline def touchend: typings.aliApp.aliAppStrings.touchend = "touchend".asInstanceOf[typings.aliApp.aliAppStrings.touchend]
   
-  @scala.inline
-  def touchforcechange: typings.aliApp.aliAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.aliApp.aliAppStrings.touchforcechange]
+  inline def touchforcechange: typings.aliApp.aliAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.aliApp.aliAppStrings.touchforcechange]
   
-  @scala.inline
-  def touchmove: typings.aliApp.aliAppStrings.touchmove = "touchmove".asInstanceOf[typings.aliApp.aliAppStrings.touchmove]
+  inline def touchmove: typings.aliApp.aliAppStrings.touchmove = "touchmove".asInstanceOf[typings.aliApp.aliAppStrings.touchmove]
   
-  @scala.inline
-  def touchstart: typings.aliApp.aliAppStrings.touchstart = "touchstart".asInstanceOf[typings.aliApp.aliAppStrings.touchstart]
+  inline def touchstart: typings.aliApp.aliAppStrings.touchstart = "touchstart".asInstanceOf[typings.aliApp.aliAppStrings.touchstart]
 }

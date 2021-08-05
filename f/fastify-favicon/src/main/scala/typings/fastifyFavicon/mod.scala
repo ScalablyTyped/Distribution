@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
   
   @JSImport("fastify-favicon", JSImport.Namespace)
   @js.native
@@ -19,20 +18,16 @@ object mod {
   }
   object FastifyFaviconOptions {
     
-    @scala.inline
-    def apply(): FastifyFaviconOptions = {
+    inline def apply(): FastifyFaviconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastifyFaviconOptions]
     }
     
-    @scala.inline
-    implicit class FastifyFaviconOptionsMutableBuilder[Self <: FastifyFaviconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyFaviconOptions](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
 }

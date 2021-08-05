@@ -38,20 +38,16 @@ object jimpMod {
   }
   object DiffReturn {
     
-    @scala.inline
-    def apply[This](image: This, percent: Double): DiffReturn[This] = {
+    inline def apply[This](image: This, percent: Double): DiffReturn[This] = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffReturn[This]]
     }
     
-    @scala.inline
-    implicit class DiffReturnMutableBuilder[Self <: DiffReturn[?], This] (val x: Self & DiffReturn[This]) extends AnyVal {
+    extension [Self <: DiffReturn[?], This](x: Self & DiffReturn[This]) {
       
-      @scala.inline
-      def setImage(value: This): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: This): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -426,26 +422,20 @@ object jimpMod {
   }
   object ScanIteratorReturn {
     
-    @scala.inline
-    def apply[This](idx: Double, image: This, x: Double, y: Double): ScanIteratorReturn[This] = {
+    inline def apply[This](idx: Double, image: This, x: Double, y: Double): ScanIteratorReturn[This] = {
       val __obj = js.Dynamic.literal(idx = idx.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScanIteratorReturn[This]]
     }
     
-    @scala.inline
-    implicit class ScanIteratorReturnMutableBuilder[Self <: ScanIteratorReturn[?], This] (val x: Self & ScanIteratorReturn[This]) extends AnyVal {
+    extension [Self <: ScanIteratorReturn[?], This](x: Self & ScanIteratorReturn[This]) {
       
-      @scala.inline
-      def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+      inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: This): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: This): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

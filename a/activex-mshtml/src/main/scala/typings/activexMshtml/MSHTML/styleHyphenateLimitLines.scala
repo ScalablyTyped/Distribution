@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleHyphenateLimitLines extends StObject
 object styleHyphenateLimitLines {
   
-  @scala.inline
-  def styleHyphenateLimitLinesNoLimit: `0` = 0.asInstanceOf[`0`]
+  inline def styleHyphenateLimitLinesNoLimit: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleHyphenateLimitLines_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleHyphenateLimitLines_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

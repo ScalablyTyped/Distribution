@@ -16,17 +16,14 @@ object typesPurgeQueueInProgressMod {
   }
   object PurgeQueueInProgress {
     
-    @scala.inline
-    def apply(): PurgeQueueInProgress = {
+    inline def apply(): PurgeQueueInProgress = {
       val __obj = js.Dynamic.literal(name = "PurgeQueueInProgress")
       __obj.asInstanceOf[PurgeQueueInProgress]
     }
     
-    @scala.inline
-    implicit class PurgeQueueInProgressMutableBuilder[Self <: PurgeQueueInProgress] (val x: Self) extends AnyVal {
+    extension [Self <: PurgeQueueInProgress](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.PurgeQueueInProgress): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.PurgeQueueInProgress): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,19 +14,15 @@ trait RecordsEvent extends StObject {
 }
 object RecordsEvent {
   
-  @scala.inline
-  def apply(): RecordsEvent = {
+  inline def apply(): RecordsEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordsEvent]
   }
   
-  @scala.inline
-  implicit class RecordsEventMutableBuilder[Self <: RecordsEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RecordsEvent](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Buffer): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Buffer): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
   }
 }

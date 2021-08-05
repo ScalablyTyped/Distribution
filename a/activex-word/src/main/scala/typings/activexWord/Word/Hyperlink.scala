@@ -79,6 +79,6 @@ trait Hyperlink extends StObject {
   
   val Type: MsoHyperlinkType = js.native
   
-  @JSName("Word.Hyperlink_typekey")
+  /* private */ @JSName("Word.Hyperlink_typekey")
   var WordDotHyperlink_typekey: Hyperlink = js.native
 }

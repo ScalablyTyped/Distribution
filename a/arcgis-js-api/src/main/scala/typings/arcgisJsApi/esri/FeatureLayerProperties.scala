@@ -245,223 +245,151 @@ trait FeatureLayerProperties
 }
 object FeatureLayerProperties {
   
-  @scala.inline
-  def apply(): FeatureLayerProperties = {
+  inline def apply(): FeatureLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureLayerProperties]
   }
   
-  @scala.inline
-  implicit class FeatureLayerPropertiesMutableBuilder[Self <: FeatureLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
+    inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
+    inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
     
-    @scala.inline
-    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+    inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
-    @scala.inline
-    def setDynamicDataSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "dynamicDataSource", value.asInstanceOf[js.Any])
+    inline def setDynamicDataSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "dynamicDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicDataSourceUndefined: Self = StObject.set(x, "dynamicDataSource", js.undefined)
+    inline def setDynamicDataSourceUndefined: Self = StObject.set(x, "dynamicDataSource", js.undefined)
     
-    @scala.inline
-    def setElevationInfo(value: FeatureLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    inline def setElevationInfo(value: FeatureLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
+    inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    @scala.inline
-    def setFeatureReduction(value: FeatureReductionClusterProperties | FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(value: FeatureReductionClusterProperties | FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
+    inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
+    inline def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
+    inline def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
-    @scala.inline
-    def setGeometryType(value: point | multipoint | polyline | polygon | multipatch | mesh): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: point | multipoint | polyline | polygon | multipatch | mesh): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
+    inline def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
-    @scala.inline
-    def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
+    inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
+    inline def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
     
-    @scala.inline
-    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+    inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+    inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     
-    @scala.inline
-    def setHistoricMoment(value: DateProperties): Self = StObject.set(x, "historicMoment", value.asInstanceOf[js.Any])
+    inline def setHistoricMoment(value: DateProperties): Self = StObject.set(x, "historicMoment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoricMomentUndefined: Self = StObject.set(x, "historicMoment", js.undefined)
+    inline def setHistoricMomentUndefined: Self = StObject.set(x, "historicMoment", js.undefined)
     
-    @scala.inline
-    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
+    inline def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
+    inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    @scala.inline
-    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
+    inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: Double): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: Double): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
-    @scala.inline
-    def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
+    inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
+    inline def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
     
-    @scala.inline
-    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
-    @scala.inline
-    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
-    @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
-    @scala.inline
-    def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
+    inline def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
+    inline def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
     
-    @scala.inline
-    def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
+    inline def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
+    inline def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
     
-    @scala.inline
-    def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
+    inline def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
+    inline def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
     
-    @scala.inline
-    def setSource(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSourceVarargs(value: GraphicProperties*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: GraphicProperties*): Self = StObject.set(x, "source", js.Array(value :_*))
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setTemplates(value: js.Array[FeatureTemplateProperties]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: js.Array[FeatureTemplateProperties]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    @scala.inline
-    def setTemplatesVarargs(value: FeatureTemplateProperties*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: FeatureTemplateProperties*): Self = StObject.set(x, "templates", js.Array(value :_*))
     
-    @scala.inline
-    def setTypeIdField(value: String): Self = StObject.set(x, "typeIdField", value.asInstanceOf[js.Any])
+    inline def setTypeIdField(value: String): Self = StObject.set(x, "typeIdField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeIdFieldUndefined: Self = StObject.set(x, "typeIdField", js.undefined)
+    inline def setTypeIdFieldUndefined: Self = StObject.set(x, "typeIdField", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[FeatureTypeProperties]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[FeatureTypeProperties]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: FeatureTypeProperties*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: FeatureTypeProperties*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

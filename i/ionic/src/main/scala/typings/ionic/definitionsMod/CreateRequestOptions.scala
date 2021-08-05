@@ -12,25 +12,19 @@ trait CreateRequestOptions extends StObject {
 }
 object CreateRequestOptions {
   
-  @scala.inline
-  def apply(): CreateRequestOptions = {
+  inline def apply(): CreateRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRequestOptions]
   }
   
-  @scala.inline
-  implicit class CreateRequestOptionsMutableBuilder[Self <: CreateRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRequestOptions](x: Self) {
     
-    @scala.inline
-    def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setSsl(value: SSLConfig): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: SSLConfig): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
   }
 }

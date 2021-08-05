@@ -20,13 +20,10 @@ object EnumDefaultedMember {
   @js.native
   val ^ : Type[EnumDefaultedMember] = js.native
   
-  @scala.inline
-  implicit class EnumDefaultedMemberMutableBuilder[Self <: EnumDefaultedMember] (val x: Self) extends AnyVal {
+  extension [Self <: EnumDefaultedMember](x: Self) {
     
-    @scala.inline
-    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.EnumDefaultedMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.EnumDefaultedMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,22 +10,17 @@ trait ObjectValues extends StObject {
 }
 object ObjectValues {
   
-  @scala.inline
-  def apply(): ObjectValues = {
+  inline def apply(): ObjectValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectValues]
   }
   
-  @scala.inline
-  implicit class ObjectValuesMutableBuilder[Self <: ObjectValues] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectValues](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[StructuredDataObject]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[StructuredDataObject]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: StructuredDataObject*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StructuredDataObject*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

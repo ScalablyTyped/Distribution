@@ -9,8 +9,7 @@ trait PutObjectAclInput
      with typings.awsSdkClientS3Browser.typesPutObjectAclInputMod.PutObjectAclInput
 object PutObjectAclInput {
   
-  @scala.inline
-  def apply(Bucket: String, Key: String): PutObjectAclInput = {
+  inline def apply(Bucket: String, Key: String): PutObjectAclInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutObjectAclInput]
   }

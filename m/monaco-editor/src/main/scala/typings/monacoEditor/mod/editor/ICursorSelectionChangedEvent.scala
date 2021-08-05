@@ -44,8 +44,7 @@ trait ICursorSelectionChangedEvent extends StObject {
 }
 object ICursorSelectionChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     modelVersionId: Double,
     oldModelVersionId: Double,
     reason: CursorChangeReason,
@@ -57,37 +56,26 @@ object ICursorSelectionChangedEvent {
     __obj.asInstanceOf[ICursorSelectionChangedEvent]
   }
   
-  @scala.inline
-  implicit class ICursorSelectionChangedEventMutableBuilder[Self <: ICursorSelectionChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ICursorSelectionChangedEvent](x: Self) {
     
-    @scala.inline
-    def setModelVersionId(value: Double): Self = StObject.set(x, "modelVersionId", value.asInstanceOf[js.Any])
+    inline def setModelVersionId(value: Double): Self = StObject.set(x, "modelVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldModelVersionId(value: Double): Self = StObject.set(x, "oldModelVersionId", value.asInstanceOf[js.Any])
+    inline def setOldModelVersionId(value: Double): Self = StObject.set(x, "oldModelVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldSelections(value: js.Array[Selection]): Self = StObject.set(x, "oldSelections", value.asInstanceOf[js.Any])
+    inline def setOldSelections(value: js.Array[Selection]): Self = StObject.set(x, "oldSelections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldSelectionsNull: Self = StObject.set(x, "oldSelections", null)
+    inline def setOldSelectionsNull: Self = StObject.set(x, "oldSelections", null)
     
-    @scala.inline
-    def setOldSelectionsVarargs(value: Selection*): Self = StObject.set(x, "oldSelections", js.Array(value :_*))
+    inline def setOldSelectionsVarargs(value: Selection*): Self = StObject.set(x, "oldSelections", js.Array(value :_*))
     
-    @scala.inline
-    def setReason(value: CursorChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: CursorChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondarySelections(value: js.Array[Selection]): Self = StObject.set(x, "secondarySelections", value.asInstanceOf[js.Any])
+    inline def setSecondarySelections(value: js.Array[Selection]): Self = StObject.set(x, "secondarySelections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondarySelectionsVarargs(value: Selection*): Self = StObject.set(x, "secondarySelections", js.Array(value :_*))
+    inline def setSecondarySelectionsVarargs(value: Selection*): Self = StObject.set(x, "secondarySelections", js.Array(value :_*))
     
-    @scala.inline
-    def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

@@ -33,7 +33,7 @@ trait VBE extends StObject {
   
   val SelectedVBComponent: VBComponent
   
-  @JSName("VBIDE.VBE_typekey")
+  /* private */ @JSName("VBIDE.VBE_typekey")
   var VBIDEDotVBE_typekey: VBE
   
   def VBProjects(index: js.Any): VBProject
@@ -48,8 +48,7 @@ trait VBE extends StObject {
 }
 object VBE {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveCodePane: CodePane,
     ActiveVBProject: VBProject,
     ActiveWindow: Window,
@@ -69,46 +68,32 @@ object VBE {
     __obj.asInstanceOf[VBE]
   }
   
-  @scala.inline
-  implicit class VBEMutableBuilder[Self <: VBE] (val x: Self) extends AnyVal {
+  extension [Self <: VBE](x: Self) {
     
-    @scala.inline
-    def setActiveCodePane(value: CodePane): Self = StObject.set(x, "ActiveCodePane", value.asInstanceOf[js.Any])
+    inline def setActiveCodePane(value: CodePane): Self = StObject.set(x, "ActiveCodePane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveVBProject(value: VBProject): Self = StObject.set(x, "ActiveVBProject", value.asInstanceOf[js.Any])
+    inline def setActiveVBProject(value: VBProject): Self = StObject.set(x, "ActiveVBProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveWindow(value: Window): Self = StObject.set(x, "ActiveWindow", value.asInstanceOf[js.Any])
+    inline def setActiveWindow(value: Window): Self = StObject.set(x, "ActiveWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddins(value: Addins): Self = StObject.set(x, "Addins", value.asInstanceOf[js.Any])
+    inline def setAddins(value: Addins): Self = StObject.set(x, "Addins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodePanes(value: CodePanes): Self = StObject.set(x, "CodePanes", value.asInstanceOf[js.Any])
+    inline def setCodePanes(value: CodePanes): Self = StObject.set(x, "CodePanes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
+    inline def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: Events): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Events): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainWindow(value: Window): Self = StObject.set(x, "MainWindow", value.asInstanceOf[js.Any])
+    inline def setMainWindow(value: Window): Self = StObject.set(x, "MainWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedVBComponent(value: VBComponent): Self = StObject.set(x, "SelectedVBComponent", value.asInstanceOf[js.Any])
+    inline def setSelectedVBComponent(value: VBComponent): Self = StObject.set(x, "SelectedVBComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotVBE_typekey(value: VBE): Self = StObject.set(x, "VBIDE.VBE_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotVBE_typekey(value: VBE): Self = StObject.set(x, "VBIDE.VBE_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBProjects(value: VBProjects): Self = StObject.set(x, "VBProjects", value.asInstanceOf[js.Any])
+    inline def setVBProjects(value: VBProjects): Self = StObject.set(x, "VBProjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindows(value: Windows): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: Windows): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
   }
 }

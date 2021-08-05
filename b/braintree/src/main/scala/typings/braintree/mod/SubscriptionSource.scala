@@ -14,12 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubscriptionSource extends StObject
 object SubscriptionSource {
   
-  @scala.inline
-  def api: api_ = "api".asInstanceOf[api_]
+  inline def api: api_ = "api".asInstanceOf[api_]
   
-  @scala.inline
-  def control_panel: typings.braintree.braintreeStrings.control_panel = "control_panel".asInstanceOf[typings.braintree.braintreeStrings.control_panel]
+  inline def control_panel: typings.braintree.braintreeStrings.control_panel = "control_panel".asInstanceOf[typings.braintree.braintreeStrings.control_panel]
   
-  @scala.inline
-  def recurring: recurring_ = "recurring".asInstanceOf[recurring_]
+  inline def recurring: recurring_ = "recurring".asInstanceOf[recurring_]
 }

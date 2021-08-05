@@ -12,28 +12,21 @@ trait ReportTime extends StObject {
 }
 object ReportTime {
   
-  @scala.inline
-  def apply(): ReportTime = {
+  inline def apply(): ReportTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportTime]
   }
   
-  @scala.inline
-  implicit class ReportTimeMutableBuilder[Self <: ReportTime] (val x: Self) extends AnyVal {
+  extension [Self <: ReportTime](x: Self) {
     
-    @scala.inline
-    def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
+    inline def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTimeUndefined: Self = StObject.set(x, "reportTime", js.undefined)
+    inline def setReportTimeUndefined: Self = StObject.set(x, "reportTime", js.undefined)
     
-    @scala.inline
-    def setSystemRamFreeInfo(value: js.Array[String]): Self = StObject.set(x, "systemRamFreeInfo", value.asInstanceOf[js.Any])
+    inline def setSystemRamFreeInfo(value: js.Array[String]): Self = StObject.set(x, "systemRamFreeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemRamFreeInfoUndefined: Self = StObject.set(x, "systemRamFreeInfo", js.undefined)
+    inline def setSystemRamFreeInfoUndefined: Self = StObject.set(x, "systemRamFreeInfo", js.undefined)
     
-    @scala.inline
-    def setSystemRamFreeInfoVarargs(value: String*): Self = StObject.set(x, "systemRamFreeInfo", js.Array(value :_*))
+    inline def setSystemRamFreeInfoVarargs(value: String*): Self = StObject.set(x, "systemRamFreeInfo", js.Array(value :_*))
   }
 }

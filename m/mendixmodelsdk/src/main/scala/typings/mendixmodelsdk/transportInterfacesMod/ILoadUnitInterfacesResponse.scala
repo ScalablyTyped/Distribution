@@ -12,22 +12,17 @@ trait ILoadUnitInterfacesResponse extends StObject {
 }
 object ILoadUnitInterfacesResponse {
   
-  @scala.inline
-  def apply(eventId: Double, units: js.Array[IAbstractUnitJson]): ILoadUnitInterfacesResponse = {
+  inline def apply(eventId: Double, units: js.Array[IAbstractUnitJson]): ILoadUnitInterfacesResponse = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], units = units.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoadUnitInterfacesResponse]
   }
   
-  @scala.inline
-  implicit class ILoadUnitInterfacesResponseMutableBuilder[Self <: ILoadUnitInterfacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ILoadUnitInterfacesResponse](x: Self) {
     
-    @scala.inline
-    def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnits(value: js.Array[IAbstractUnitJson]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: js.Array[IAbstractUnitJson]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsVarargs(value: IAbstractUnitJson*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: IAbstractUnitJson*): Self = StObject.set(x, "units", js.Array(value :_*))
   }
 }

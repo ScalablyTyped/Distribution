@@ -12,19 +12,15 @@ trait SetStyleSheetTextRequest extends StObject {
 }
 object SetStyleSheetTextRequest {
   
-  @scala.inline
-  def apply(styleSheetId: StyleSheetId, text: String): SetStyleSheetTextRequest = {
+  inline def apply(styleSheetId: StyleSheetId, text: String): SetStyleSheetTextRequest = {
     val __obj = js.Dynamic.literal(styleSheetId = styleSheetId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStyleSheetTextRequest]
   }
   
-  @scala.inline
-  implicit class SetStyleSheetTextRequestMutableBuilder[Self <: SetStyleSheetTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetStyleSheetTextRequest](x: Self) {
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

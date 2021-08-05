@@ -22,8 +22,7 @@ object global {
     @JSGlobal("Meteor.roles")
     @js.native
     def roles: Collection[Role, Role] = js.native
-    @scala.inline
-    def roles_=(x: Collection[Role, Role]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
+    inline def roles_=(x: Collection[Role, Role]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -57,8 +56,7 @@ object global {
     @JSGlobal("Roles.GLOBAL_GROUP")
     @js.native
     def GLOBAL_GROUP: String = js.native
-    @scala.inline
-    def GLOBAL_GROUP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GLOBAL_GROUP")(x.asInstanceOf[js.Any])
+    inline def GLOBAL_GROUP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GLOBAL_GROUP")(x.asInstanceOf[js.Any])
     
     /**
       * Add users to roles. Will create roles as needed.
@@ -91,30 +89,18 @@ object global {
       *                         Roles.GLOBAL_GROUP group will be automatically
       *                         included in checks for any group.
       */
-    @scala.inline
-    def addUsersToRoles(user: String, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: String, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Object, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Object, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addUsersToRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: String, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: String, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Array[js.Object | String], roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Object, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Object, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addUsersToRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUsersToRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a new role. Whitespace will be trimmed.
@@ -123,8 +109,7 @@ object global {
       * @param {String} role Name of role
       * @return {String} id of new role
       */
-    @scala.inline
-    def createRole(role: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createRole")(role.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createRole(role: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createRole")(role.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Delete an existing role.  Will throw "Role in use" error if any users
@@ -133,8 +118,7 @@ object global {
       * @method deleteRole
       * @param {String} role Name of role
       */
-    @scala.inline
-    def deleteRole(role: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRole")(role.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deleteRole(role: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRole")(role.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Retrieve set of all existing roles
@@ -142,8 +126,7 @@ object global {
       * @method getAllRoles
       * @return {Cursor} cursor of existing roles
       */
-    @scala.inline
-    def getAllRoles(): Cursor[Role, Role] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllRoles")().asInstanceOf[Cursor[Role, Role]]
+    inline def getAllRoles(): Cursor[Role, Role] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllRoles")().asInstanceOf[Cursor[Role, Role]]
     
     /**
       * Retrieve users groups, if any
@@ -154,14 +137,10 @@ object global {
       *
       * @return {Array} Array of user's groups, unsorted. Roles.GLOBAL_GROUP will be omitted
       */
-    @scala.inline
-    def getGroupsForUser(user: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getGroupsForUser(user: String, role: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getGroupsForUser(user: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getGroupsForUser(user: js.Object, role: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getGroupsForUser(user: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getGroupsForUser(user: String, role: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getGroupsForUser(user: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getGroupsForUser(user: js.Object, role: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupsForUser")(user.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Retrieve users roles
@@ -172,14 +151,10 @@ object global {
       *                         User's Roles.GLOBAL_GROUP will also be included.
       * @return {Array} Array of user's roles, unsorted.
       */
-    @scala.inline
-    def getRolesForUser(user: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRolesForUser(user: String, group: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRolesForUser(user: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRolesForUser(user: js.Object, group: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getRolesForUser(user: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getRolesForUser(user: String, group: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getRolesForUser(user: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getRolesForUser(user: js.Object, group: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRolesForUser")(user.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Retrieve all users who are in target role.
@@ -199,22 +174,14 @@ object global {
       *                           through to `Meteor.users.find(query, options)`
       * @return {Cursor} cursor of users in role
       */
-    @scala.inline
-    def getUsersInRole(role: String): Cursor[User, User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any]).asInstanceOf[Cursor[User, User]]
-    @scala.inline
-    def getUsersInRole(role: String, group: String): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
-    @scala.inline
-    def getUsersInRole(role: String, group: String, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
-    @scala.inline
-    def getUsersInRole(role: String, group: Unit, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
-    @scala.inline
-    def getUsersInRole(role: js.Array[String]): Cursor[User, User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any]).asInstanceOf[Cursor[User, User]]
-    @scala.inline
-    def getUsersInRole(role: js.Array[String], group: String): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
-    @scala.inline
-    def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
-    @scala.inline
-    def getUsersInRole(role: js.Array[String], group: Unit, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: String): Cursor[User, User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any]).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: String, group: String): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: String, group: String, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: String, group: Unit, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: js.Array[String]): Cursor[User, User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any]).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: js.Array[String], group: String): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
+    inline def getUsersInRole(role: js.Array[String], group: Unit, options: Fields): Cursor[User, User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersInRole")(role.asInstanceOf[js.Any], group.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[User, User]]
     
     /**
       * Remove users from roles
@@ -231,30 +198,18 @@ object global {
       * @param {String} [group] Optional. Group name. If supplied, only that
       *                         group will have roles removed.
       */
-    @scala.inline
-    def removeUsersFromRoles(user: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: String, roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Array[js.Object | String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeUsersFromRoles(user: js.Object, roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: String, roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Array[js.Object | String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Array[js.Object | String], roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeUsersFromRoles(user: js.Object, roles: Unit, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUsersFromRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set a users roles/permissions.
@@ -280,30 +235,18 @@ object global {
       *                         Roles.GLOBAL_GROUP group will be automatically
       *                         included in checks for any group.
       */
-    @scala.inline
-    def setUserRoles(user: String, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: String, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Array[js.Object | String], roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Object, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Object, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setUserRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: String, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: String, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: String, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: String, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Array[js.Object | String], roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Object, roles: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Object, roles: String, group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Object, roles: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setUserRoles(user: js.Object, roles: js.Array[String], group: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserRoles")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Subscription handle for the currently logged in user's permissions.
@@ -323,8 +266,7 @@ object global {
     @JSGlobal("Roles.subscription")
     @js.native
     def subscription: Subscription = js.native
-    @scala.inline
-    def subscription_=(x: Subscription): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscription")(x.asInstanceOf[js.Any])
+    inline def subscription_=(x: Subscription): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscription")(x.asInstanceOf[js.Any])
     
     /**
       * Check if user has specified permissions/roles
@@ -355,29 +297,17 @@ object global {
       *                         whether group is specified or not.
       * @return {Boolean} true if user is in _any_ of the target roles
       */
-    @scala.inline
-    def userIsInRole(user: String, roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: String, roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: String, roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: String, roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Array[js.Object | String], roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Array[js.Object | String], roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Object, roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Object, roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Object, roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def userIsInRole(user: js.Object, roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: String, roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: String, roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: String, roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: String, roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Array[js.Object | String], roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Array[js.Object | String], roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Object, roles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Object, roles: String, group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Object, roles: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def userIsInRole(user: js.Object, roles: js.Array[String], group: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("userIsInRole")(user.asInstanceOf[js.Any], roles.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

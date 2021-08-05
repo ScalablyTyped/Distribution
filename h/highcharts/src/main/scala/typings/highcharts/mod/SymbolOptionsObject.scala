@@ -46,55 +46,39 @@ trait SymbolOptionsObject extends StObject {
 }
 object SymbolOptionsObject {
   
-  @scala.inline
-  def apply(): SymbolOptionsObject = {
+  inline def apply(): SymbolOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SymbolOptionsObject]
   }
   
-  @scala.inline
-  implicit class SymbolOptionsObjectMutableBuilder[Self <: SymbolOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
+    inline def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorXUndefined: Self = StObject.set(x, "anchorX", js.undefined)
+    inline def setAnchorXUndefined: Self = StObject.set(x, "anchorX", js.undefined)
     
-    @scala.inline
-    def setAnchorY(value: Double): Self = StObject.set(x, "anchorY", value.asInstanceOf[js.Any])
+    inline def setAnchorY(value: Double): Self = StObject.set(x, "anchorY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorYUndefined: Self = StObject.set(x, "anchorY", js.undefined)
+    inline def setAnchorYUndefined: Self = StObject.set(x, "anchorY", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

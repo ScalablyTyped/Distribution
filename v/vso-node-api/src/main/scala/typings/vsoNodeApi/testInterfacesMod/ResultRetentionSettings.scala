@@ -18,8 +18,7 @@ trait ResultRetentionSettings extends StObject {
 }
 object ResultRetentionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automatedResultsRetentionDuration: Double,
     lastUpdatedBy: IdentityRef,
     lastUpdatedDate: Date,
@@ -29,19 +28,14 @@ object ResultRetentionSettings {
     __obj.asInstanceOf[ResultRetentionSettings]
   }
   
-  @scala.inline
-  implicit class ResultRetentionSettingsMutableBuilder[Self <: ResultRetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ResultRetentionSettings](x: Self) {
     
-    @scala.inline
-    def setAutomatedResultsRetentionDuration(value: Double): Self = StObject.set(x, "automatedResultsRetentionDuration", value.asInstanceOf[js.Any])
+    inline def setAutomatedResultsRetentionDuration(value: Double): Self = StObject.set(x, "automatedResultsRetentionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualResultsRetentionDuration(value: Double): Self = StObject.set(x, "manualResultsRetentionDuration", value.asInstanceOf[js.Any])
+    inline def setManualResultsRetentionDuration(value: Double): Self = StObject.set(x, "manualResultsRetentionDuration", value.asInstanceOf[js.Any])
   }
 }

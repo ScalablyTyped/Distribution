@@ -37,8 +37,7 @@ trait WebAccountProviderRetrieveCookiesOperation extends StObject {
 }
 object WebAccountProviderRetrieveCookiesOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applicationCallbackUri: Uri,
     context: Uri,
     cookies: IVector[HttpCookie],
@@ -51,28 +50,20 @@ object WebAccountProviderRetrieveCookiesOperation {
     __obj.asInstanceOf[WebAccountProviderRetrieveCookiesOperation]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderRetrieveCookiesOperationMutableBuilder[Self <: WebAccountProviderRetrieveCookiesOperation] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderRetrieveCookiesOperation](x: Self) {
     
-    @scala.inline
-    def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
+    inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: Uri): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Uri): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookies(value: IVector[HttpCookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: IVector[HttpCookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
+    inline def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+    inline def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

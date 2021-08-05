@@ -22,19 +22,15 @@ trait ConfigurationInfo extends StObject {
 }
 object ConfigurationInfo {
   
-  @scala.inline
-  def apply(Arn: string, Revision: long): ConfigurationInfo = {
+  inline def apply(Arn: string, Revision: long): ConfigurationInfo = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Revision = Revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationInfo]
   }
   
-  @scala.inline
-  implicit class ConfigurationInfoMutableBuilder[Self <: ConfigurationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationInfo](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
   }
 }

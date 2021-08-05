@@ -20,7 +20,6 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(options: ConsumerOptions): typings.sqsConsumer.consumerMod.Consumer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.sqsConsumer.consumerMod.Consumer]
+    inline def create(options: ConsumerOptions): typings.sqsConsumer.consumerMod.Consumer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.sqsConsumer.consumerMod.Consumer]
   }
 }

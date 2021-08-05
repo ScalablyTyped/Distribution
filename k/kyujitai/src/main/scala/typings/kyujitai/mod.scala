@@ -35,20 +35,16 @@ object mod {
   }
   object EncodeOptions {
     
-    @scala.inline
-    def apply(): EncodeOptions = {
+    inline def apply(): EncodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    @scala.inline
-    implicit class EncodeOptionsMutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EncodeOptions](x: Self) {
       
-      @scala.inline
-      def setIVD(value: Boolean): Self = StObject.set(x, "IVD", value.asInstanceOf[js.Any])
+      inline def setIVD(value: Boolean): Self = StObject.set(x, "IVD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIVDUndefined: Self = StObject.set(x, "IVD", js.undefined)
+      inline def setIVDUndefined: Self = StObject.set(x, "IVD", js.undefined)
     }
   }
   
@@ -91,26 +87,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIvd(value: String): Self = StObject.set(x, "ivd", value.asInstanceOf[js.Any])
+      inline def setIvd(value: String): Self = StObject.set(x, "ivd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvdUndefined: Self = StObject.set(x, "ivd", js.undefined)
+      inline def setIvdUndefined: Self = StObject.set(x, "ivd", js.undefined)
       
-      @scala.inline
-      def setKyujitai(value: String): Self = StObject.set(x, "kyujitai", value.asInstanceOf[js.Any])
+      inline def setKyujitai(value: String): Self = StObject.set(x, "kyujitai", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKyujitaiUndefined: Self = StObject.set(x, "kyujitai", js.undefined)
+      inline def setKyujitaiUndefined: Self = StObject.set(x, "kyujitai", js.undefined)
     }
   }
 }

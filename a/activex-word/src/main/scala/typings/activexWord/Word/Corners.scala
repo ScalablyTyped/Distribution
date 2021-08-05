@@ -16,13 +16,12 @@ trait Corners extends StObject {
   
   def Select(): js.Any
   
-  @JSName("Word.Corners_typekey")
+  /* private */ @JSName("Word.Corners_typekey")
   var WordDotCorners_typekey: Corners
 }
 object Corners {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Name: String,
@@ -35,25 +34,18 @@ object Corners {
     __obj.asInstanceOf[Corners]
   }
   
-  @scala.inline
-  implicit class CornersMutableBuilder[Self <: Corners] (val x: Self) extends AnyVal {
+  extension [Self <: Corners](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotCorners_typekey(value: Corners): Self = StObject.set(x, "Word.Corners_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCorners_typekey(value: Corners): Self = StObject.set(x, "Word.Corners_typekey", value.asInstanceOf[js.Any])
   }
 }

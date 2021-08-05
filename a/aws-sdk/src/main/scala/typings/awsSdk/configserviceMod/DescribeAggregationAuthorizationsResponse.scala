@@ -18,28 +18,21 @@ trait DescribeAggregationAuthorizationsResponse extends StObject {
 }
 object DescribeAggregationAuthorizationsResponse {
   
-  @scala.inline
-  def apply(): DescribeAggregationAuthorizationsResponse = {
+  inline def apply(): DescribeAggregationAuthorizationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAggregationAuthorizationsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAggregationAuthorizationsResponseMutableBuilder[Self <: DescribeAggregationAuthorizationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAggregationAuthorizationsResponse](x: Self) {
     
-    @scala.inline
-    def setAggregationAuthorizations(value: AggregationAuthorizationList): Self = StObject.set(x, "AggregationAuthorizations", value.asInstanceOf[js.Any])
+    inline def setAggregationAuthorizations(value: AggregationAuthorizationList): Self = StObject.set(x, "AggregationAuthorizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationAuthorizationsUndefined: Self = StObject.set(x, "AggregationAuthorizations", js.undefined)
+    inline def setAggregationAuthorizationsUndefined: Self = StObject.set(x, "AggregationAuthorizations", js.undefined)
     
-    @scala.inline
-    def setAggregationAuthorizationsVarargs(value: AggregationAuthorization*): Self = StObject.set(x, "AggregationAuthorizations", js.Array(value :_*))
+    inline def setAggregationAuthorizationsVarargs(value: AggregationAuthorization*): Self = StObject.set(x, "AggregationAuthorizations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

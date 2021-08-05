@@ -20,19 +20,15 @@ trait WriteEventStream extends StObject {
 }
 object WriteEventStream {
   
-  @scala.inline
-  def apply(DestinationStreamArn: string, RoleArn: string): WriteEventStream = {
+  inline def apply(DestinationStreamArn: string, RoleArn: string): WriteEventStream = {
     val __obj = js.Dynamic.literal(DestinationStreamArn = DestinationStreamArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteEventStream]
   }
   
-  @scala.inline
-  implicit class WriteEventStreamMutableBuilder[Self <: WriteEventStream] (val x: Self) extends AnyVal {
+  extension [Self <: WriteEventStream](x: Self) {
     
-    @scala.inline
-    def setDestinationStreamArn(value: string): Self = StObject.set(x, "DestinationStreamArn", value.asInstanceOf[js.Any])
+    inline def setDestinationStreamArn(value: string): Self = StObject.set(x, "DestinationStreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

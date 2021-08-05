@@ -13,22 +13,17 @@ trait InitProps extends StObject {
 }
 object InitProps {
   
-  @scala.inline
-  def apply(account_key: String): InitProps = {
+  inline def apply(account_key: String): InitProps = {
     val __obj = js.Dynamic.literal(account_key = account_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitProps]
   }
   
-  @scala.inline
-  implicit class InitPropsMutableBuilder[Self <: InitProps] (val x: Self) extends AnyVal {
+  extension [Self <: InitProps](x: Self) {
     
-    @scala.inline
-    def setAccount_key(value: String): Self = StObject.set(x, "account_key", value.asInstanceOf[js.Any])
+    inline def setAccount_key(value: String): Self = StObject.set(x, "account_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthentication(value: Jwtfn): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: Jwtfn): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
   }
 }

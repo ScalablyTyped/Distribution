@@ -19,19 +19,15 @@ trait VirtualNodeSpecListenerTlsCertificateFile extends StObject {
 }
 object VirtualNodeSpecListenerTlsCertificateFile {
   
-  @scala.inline
-  def apply(certificateChain: Input[String], privateKey: Input[String]): VirtualNodeSpecListenerTlsCertificateFile = {
+  inline def apply(certificateChain: Input[String], privateKey: Input[String]): VirtualNodeSpecListenerTlsCertificateFile = {
     val __obj = js.Dynamic.literal(certificateChain = certificateChain.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecListenerTlsCertificateFile]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerTlsCertificateFileMutableBuilder[Self <: VirtualNodeSpecListenerTlsCertificateFile] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListenerTlsCertificateFile](x: Self) {
     
-    @scala.inline
-    def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }
 }

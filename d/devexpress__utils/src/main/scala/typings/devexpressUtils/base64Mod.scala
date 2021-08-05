@@ -62,56 +62,40 @@ object base64Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def checkPrependDataUrl(base64: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPrependDataUrl")(base64.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def checkPrependDataUrl(base64: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkPrependDataUrl")(base64.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("@devexpress/utils/lib/utils/base64", "Base64Utils.dataUrl")
     @js.native
     def dataUrl: RegExp = js.native
-    @scala.inline
-    def dataUrl_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataUrl")(x.asInstanceOf[js.Any])
+    inline def dataUrl_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataUrl")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deleteDataUrlPrefix(base64DataUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDataUrlPrefix")(base64DataUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def deleteDataUrlPrefix(base64DataUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDataUrlPrefix")(base64DataUrl.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def fromArrayBuffer(buffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fromArrayBuffer(buffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def fromBlobAsArrayBuffer(blob: Blob, callback: js.Function1[/* base64 */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBlobAsArrayBuffer")(blob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fromBlobAsArrayBuffer(blob: Blob, callback: js.Function1[/* base64 */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBlobAsArrayBuffer")(blob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def fromBlobAsDataUrl(blob: Blob, callback: js.Function1[/* base64 */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBlobAsDataUrl")(blob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fromBlobAsDataUrl(blob: Blob, callback: js.Function1[/* base64 */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBlobAsDataUrl")(blob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def getFileFromBase64(base64: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[File]
-    @scala.inline
-    def getFileFromBase64(base64: String, fileName: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[File]
-    @scala.inline
-    def getFileFromBase64(base64: String, fileName: String, options: FilePropertyBag): File = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File]
-    @scala.inline
-    def getFileFromBase64(base64: String, fileName: Unit, options: FilePropertyBag): File = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File]
+    inline def getFileFromBase64(base64: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[File]
+    inline def getFileFromBase64(base64: String, fileName: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[File]
+    inline def getFileFromBase64(base64: String, fileName: String, options: FilePropertyBag): File = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File]
+    inline def getFileFromBase64(base64: String, fileName: Unit, options: FilePropertyBag): File = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromBase64")(base64.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File]
     
-    @scala.inline
-    def getKnownMimeType(base64: String): Base64MimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("getKnownMimeType")(base64.asInstanceOf[js.Any]).asInstanceOf[Base64MimeType]
+    inline def getKnownMimeType(base64: String): Base64MimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("getKnownMimeType")(base64.asInstanceOf[js.Any]).asInstanceOf[Base64MimeType]
     
-    @scala.inline
-    def getMimeTypeAsString(base64: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getMimeTypeAsString")(base64.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def getMimeTypeAsString(base64: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getMimeTypeAsString")(base64.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    @scala.inline
-    def getUint8Array(base64: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getUint8Array")(base64.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def getUint8Array(base64: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getUint8Array")(base64.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
     @JSImport("@devexpress/utils/lib/utils/base64", "Base64Utils.mimeTypesMap")
     @js.native
     def mimeTypesMap: js.Any = js.native
-    @scala.inline
-    def mimeTypesMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mimeTypesMap")(x.asInstanceOf[js.Any])
+    inline def mimeTypesMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mimeTypesMap")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def normalizeToDataUrl(base64: String, mimeType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeToDataUrl")(base64.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def normalizeToDataUrl(base64: String, mimeType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeToDataUrl")(base64.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def prependByDataUrl(base64: String, mimeType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prependByDataUrl")(base64.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def prependByDataUrl(base64: String, mimeType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prependByDataUrl")(base64.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("@devexpress/utils/lib/utils/base64", "DocmMimeType")

@@ -13,19 +13,15 @@ object padarrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def padarray(A: Matrix, hasPadHeightPadWidth: js.Tuple2[Double, Double]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def padarray(
+  inline def padarray(A: Matrix, hasPadHeightPadWidth: js.Tuple2[Double, Double]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def padarray(
     A: Matrix,
     hasPadHeightPadWidth: js.Tuple2[Double, Double],
     _padval: Unit,
     _direction: PaddingDirection
   ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any], _direction.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def padarray(A: Matrix, hasPadHeightPadWidth: js.Tuple2[Double, Double], _padval: PaddingValue): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def padarray(
+  inline def padarray(A: Matrix, hasPadHeightPadWidth: js.Tuple2[Double, Double], _padval: PaddingValue): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def padarray(
     A: Matrix,
     hasPadHeightPadWidth: js.Tuple2[Double, Double],
     _padval: PaddingValue,

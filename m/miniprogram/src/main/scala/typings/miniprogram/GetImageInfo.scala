@@ -13,16 +13,13 @@ trait GetImageInfo
 }
 object GetImageInfo {
   
-  @scala.inline
-  def apply(src: String): GetImageInfo = {
+  inline def apply(src: String): GetImageInfo = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageInfo]
   }
   
-  @scala.inline
-  implicit class GetImageInfoMutableBuilder[Self <: GetImageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GetImageInfo](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

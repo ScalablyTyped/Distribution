@@ -12,25 +12,19 @@ trait CreateVersion extends StObject {
 }
 object CreateVersion {
   
-  @scala.inline
-  def apply(): CreateVersion = {
+  inline def apply(): CreateVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVersion]
   }
   
-  @scala.inline
-  implicit class CreateVersionMutableBuilder[Self <: CreateVersion] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVersion](x: Self) {
     
-    @scala.inline
-    def setData(value: CreateVersionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CreateVersionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
+    inline def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
   }
 }

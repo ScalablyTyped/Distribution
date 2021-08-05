@@ -21,13 +21,11 @@ object UnaryOperator {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.UnaryOperator.None")
   @js.native
   def None: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator = js.native
-  @scala.inline
-  def None_=(x: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.UnaryOperator.UnaryMinus")
   @js.native
   def UnaryMinus: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator = js.native
-  @scala.inline
-  def UnaryMinus_=(x: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryMinus")(x.asInstanceOf[js.Any])
+  inline def UnaryMinus_=(x: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryMinus")(x.asInstanceOf[js.Any])
 }

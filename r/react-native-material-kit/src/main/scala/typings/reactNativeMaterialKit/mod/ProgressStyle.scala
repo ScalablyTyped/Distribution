@@ -14,31 +14,23 @@ trait ProgressStyle extends StObject {
 }
 object ProgressStyle {
   
-  @scala.inline
-  def apply(): ProgressStyle = {
+  inline def apply(): ProgressStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressStyle]
   }
   
-  @scala.inline
-  implicit class ProgressStyleMutableBuilder[Self <: ProgressStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressStyle](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBufferColor(value: String): Self = StObject.set(x, "bufferColor", value.asInstanceOf[js.Any])
+    inline def setBufferColor(value: String): Self = StObject.set(x, "bufferColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferColorUndefined: Self = StObject.set(x, "bufferColor", js.undefined)
+    inline def setBufferColorUndefined: Self = StObject.set(x, "bufferColor", js.undefined)
     
-    @scala.inline
-    def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
+    inline def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
+    inline def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
   }
 }

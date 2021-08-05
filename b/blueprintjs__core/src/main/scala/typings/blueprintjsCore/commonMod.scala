@@ -98,20 +98,17 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Alignment.CENTER")
     @js.native
     def CENTER: center = js.native
-    @scala.inline
-    def CENTER_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
+    inline def CENTER_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Alignment.LEFT")
     @js.native
     def LEFT: left = js.native
-    @scala.inline
-    def LEFT_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+    inline def LEFT_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Alignment.RIGHT")
     @js.native
     def RIGHT: right = js.native
-    @scala.inline
-    def RIGHT_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+    inline def RIGHT_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
   }
   
   object Boundary {
@@ -123,14 +120,12 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Boundary.END")
     @js.native
     def END: end = js.native
-    @scala.inline
-    def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+    inline def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Boundary.START")
     @js.native
     def START: start = js.native
-    @scala.inline
-    def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
+    inline def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
   }
   
   object Classes {
@@ -975,57 +970,37 @@ object commonMod {
     @js.native
     val VERTICAL: String = js.native
     
-    @scala.inline
-    def alignmentClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def alignmentClass(alignment: Alignment): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")(alignment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def alignmentClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")().asInstanceOf[js.UndefOr[String]]
+    inline def alignmentClass(alignment: Alignment): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alignmentClass")(alignment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
-    @scala.inline
-    def elevationClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def elevationClass(elevation: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def elevationClass(elevation: Elevation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def elevationClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")().asInstanceOf[js.UndefOr[String]]
+    inline def elevationClass(elevation: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def elevationClass(elevation: Elevation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def elevationClass_Union(elevation: Elevation): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def elevationClass_Union(elevation: Elevation): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("elevationClass")(elevation.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
-    @scala.inline
-    def getClassNamespace(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNamespace")().asInstanceOf[String]
+    inline def getClassNamespace(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNamespace")().asInstanceOf[String]
     
-    @scala.inline
-    def iconClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def iconClass(iconName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def iconClass(iconName: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def iconClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")().asInstanceOf[js.UndefOr[String]]
+    inline def iconClass(iconName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def iconClass(iconName: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def iconClass_Union(iconName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def iconClass_Union(iconName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iconClass")(iconName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
-    @scala.inline
-    def intentClass(): js.UndefOr[Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[js.UndefOr[Intent]]
-    @scala.inline
-    def intentClass(intent: Intent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def intentClass(): js.UndefOr[Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[js.UndefOr[Intent]]
+    inline def intentClass(intent: Intent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def intentClass_Union(intent: Intent): js.UndefOr[Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Intent]]
+    inline def intentClass_Union(intent: Intent): js.UndefOr[Intent] = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Intent]]
     
-    @scala.inline
-    def intentClass_Unit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[Unit]
+    inline def intentClass_Unit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")().asInstanceOf[Unit]
     
-    @scala.inline
-    def intentClass_none(intent: none): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def intentClass_none(intent: none): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intentClass")(intent.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def positionClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def positionClass(position: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def positionClass(position: Position): String = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def positionClass(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")().asInstanceOf[js.UndefOr[String]]
+    inline def positionClass(position: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def positionClass(position: Position): String = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def positionClass_Union(position: Position): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def positionClass_Union(position: Position): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("positionClass")(position.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   }
   
   object Colors {
@@ -1037,524 +1012,437 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLACK")
     @js.native
     def BLACK: String = js.native
-    @scala.inline
-    def BLACK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
+    inline def BLACK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE1")
     @js.native
     def BLUE1: String = js.native
-    @scala.inline
-    def BLUE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE1")(x.asInstanceOf[js.Any])
+    inline def BLUE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE2")
     @js.native
     def BLUE2: String = js.native
-    @scala.inline
-    def BLUE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE2")(x.asInstanceOf[js.Any])
+    inline def BLUE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE3")
     @js.native
     def BLUE3: String = js.native
-    @scala.inline
-    def BLUE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE3")(x.asInstanceOf[js.Any])
+    inline def BLUE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE4")
     @js.native
     def BLUE4: String = js.native
-    @scala.inline
-    def BLUE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE4")(x.asInstanceOf[js.Any])
+    inline def BLUE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.BLUE5")
     @js.native
     def BLUE5: String = js.native
-    @scala.inline
-    def BLUE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE5")(x.asInstanceOf[js.Any])
+    inline def BLUE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT1")
     @js.native
     def COBALT1: String = js.native
-    @scala.inline
-    def COBALT1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT1")(x.asInstanceOf[js.Any])
+    inline def COBALT1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT2")
     @js.native
     def COBALT2: String = js.native
-    @scala.inline
-    def COBALT2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT2")(x.asInstanceOf[js.Any])
+    inline def COBALT2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT3")
     @js.native
     def COBALT3: String = js.native
-    @scala.inline
-    def COBALT3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT3")(x.asInstanceOf[js.Any])
+    inline def COBALT3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT4")
     @js.native
     def COBALT4: String = js.native
-    @scala.inline
-    def COBALT4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT4")(x.asInstanceOf[js.Any])
+    inline def COBALT4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.COBALT5")
     @js.native
     def COBALT5: String = js.native
-    @scala.inline
-    def COBALT5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT5")(x.asInstanceOf[js.Any])
+    inline def COBALT5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COBALT5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY1")
     @js.native
     def DARK_GRAY1: String = js.native
-    @scala.inline
-    def DARK_GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY1")(x.asInstanceOf[js.Any])
+    inline def DARK_GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY2")
     @js.native
     def DARK_GRAY2: String = js.native
-    @scala.inline
-    def DARK_GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY2")(x.asInstanceOf[js.Any])
+    inline def DARK_GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY3")
     @js.native
     def DARK_GRAY3: String = js.native
-    @scala.inline
-    def DARK_GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY3")(x.asInstanceOf[js.Any])
+    inline def DARK_GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY4")
     @js.native
     def DARK_GRAY4: String = js.native
-    @scala.inline
-    def DARK_GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY4")(x.asInstanceOf[js.Any])
+    inline def DARK_GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.DARK_GRAY5")
     @js.native
     def DARK_GRAY5: String = js.native
-    @scala.inline
-    def DARK_GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY5")(x.asInstanceOf[js.Any])
+    inline def DARK_GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK_GRAY5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST1")
     @js.native
     def FOREST1: String = js.native
-    @scala.inline
-    def FOREST1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST1")(x.asInstanceOf[js.Any])
+    inline def FOREST1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST2")
     @js.native
     def FOREST2: String = js.native
-    @scala.inline
-    def FOREST2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST2")(x.asInstanceOf[js.Any])
+    inline def FOREST2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST3")
     @js.native
     def FOREST3: String = js.native
-    @scala.inline
-    def FOREST3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST3")(x.asInstanceOf[js.Any])
+    inline def FOREST3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST4")
     @js.native
     def FOREST4: String = js.native
-    @scala.inline
-    def FOREST4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST4")(x.asInstanceOf[js.Any])
+    inline def FOREST4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.FOREST5")
     @js.native
     def FOREST5: String = js.native
-    @scala.inline
-    def FOREST5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST5")(x.asInstanceOf[js.Any])
+    inline def FOREST5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREST5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD1")
     @js.native
     def GOLD1: String = js.native
-    @scala.inline
-    def GOLD1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD1")(x.asInstanceOf[js.Any])
+    inline def GOLD1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD2")
     @js.native
     def GOLD2: String = js.native
-    @scala.inline
-    def GOLD2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD2")(x.asInstanceOf[js.Any])
+    inline def GOLD2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD3")
     @js.native
     def GOLD3: String = js.native
-    @scala.inline
-    def GOLD3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD3")(x.asInstanceOf[js.Any])
+    inline def GOLD3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD4")
     @js.native
     def GOLD4: String = js.native
-    @scala.inline
-    def GOLD4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD4")(x.asInstanceOf[js.Any])
+    inline def GOLD4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GOLD5")
     @js.native
     def GOLD5: String = js.native
-    @scala.inline
-    def GOLD5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD5")(x.asInstanceOf[js.Any])
+    inline def GOLD5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY1")
     @js.native
     def GRAY1: String = js.native
-    @scala.inline
-    def GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY1")(x.asInstanceOf[js.Any])
+    inline def GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY2")
     @js.native
     def GRAY2: String = js.native
-    @scala.inline
-    def GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY2")(x.asInstanceOf[js.Any])
+    inline def GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY3")
     @js.native
     def GRAY3: String = js.native
-    @scala.inline
-    def GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY3")(x.asInstanceOf[js.Any])
+    inline def GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY4")
     @js.native
     def GRAY4: String = js.native
-    @scala.inline
-    def GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY4")(x.asInstanceOf[js.Any])
+    inline def GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GRAY5")
     @js.native
     def GRAY5: String = js.native
-    @scala.inline
-    def GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY5")(x.asInstanceOf[js.Any])
+    inline def GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN1")
     @js.native
     def GREEN1: String = js.native
-    @scala.inline
-    def GREEN1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN1")(x.asInstanceOf[js.Any])
+    inline def GREEN1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN2")
     @js.native
     def GREEN2: String = js.native
-    @scala.inline
-    def GREEN2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN2")(x.asInstanceOf[js.Any])
+    inline def GREEN2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN3")
     @js.native
     def GREEN3: String = js.native
-    @scala.inline
-    def GREEN3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN3")(x.asInstanceOf[js.Any])
+    inline def GREEN3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN4")
     @js.native
     def GREEN4: String = js.native
-    @scala.inline
-    def GREEN4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN4")(x.asInstanceOf[js.Any])
+    inline def GREEN4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.GREEN5")
     @js.native
     def GREEN5: String = js.native
-    @scala.inline
-    def GREEN5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN5")(x.asInstanceOf[js.Any])
+    inline def GREEN5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO1")
     @js.native
     def INDIGO1: String = js.native
-    @scala.inline
-    def INDIGO1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO1")(x.asInstanceOf[js.Any])
+    inline def INDIGO1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO2")
     @js.native
     def INDIGO2: String = js.native
-    @scala.inline
-    def INDIGO2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO2")(x.asInstanceOf[js.Any])
+    inline def INDIGO2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO3")
     @js.native
     def INDIGO3: String = js.native
-    @scala.inline
-    def INDIGO3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO3")(x.asInstanceOf[js.Any])
+    inline def INDIGO3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO4")
     @js.native
     def INDIGO4: String = js.native
-    @scala.inline
-    def INDIGO4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO4")(x.asInstanceOf[js.Any])
+    inline def INDIGO4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.INDIGO5")
     @js.native
     def INDIGO5: String = js.native
-    @scala.inline
-    def INDIGO5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO5")(x.asInstanceOf[js.Any])
+    inline def INDIGO5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY1")
     @js.native
     def LIGHT_GRAY1: String = js.native
-    @scala.inline
-    def LIGHT_GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY1")(x.asInstanceOf[js.Any])
+    inline def LIGHT_GRAY1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY2")
     @js.native
     def LIGHT_GRAY2: String = js.native
-    @scala.inline
-    def LIGHT_GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY2")(x.asInstanceOf[js.Any])
+    inline def LIGHT_GRAY2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY3")
     @js.native
     def LIGHT_GRAY3: String = js.native
-    @scala.inline
-    def LIGHT_GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY3")(x.asInstanceOf[js.Any])
+    inline def LIGHT_GRAY3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY4")
     @js.native
     def LIGHT_GRAY4: String = js.native
-    @scala.inline
-    def LIGHT_GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY4")(x.asInstanceOf[js.Any])
+    inline def LIGHT_GRAY4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIGHT_GRAY5")
     @js.native
     def LIGHT_GRAY5: String = js.native
-    @scala.inline
-    def LIGHT_GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY5")(x.asInstanceOf[js.Any])
+    inline def LIGHT_GRAY5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME1")
     @js.native
     def LIME1: String = js.native
-    @scala.inline
-    def LIME1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME1")(x.asInstanceOf[js.Any])
+    inline def LIME1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME2")
     @js.native
     def LIME2: String = js.native
-    @scala.inline
-    def LIME2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME2")(x.asInstanceOf[js.Any])
+    inline def LIME2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME3")
     @js.native
     def LIME3: String = js.native
-    @scala.inline
-    def LIME3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME3")(x.asInstanceOf[js.Any])
+    inline def LIME3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME4")
     @js.native
     def LIME4: String = js.native
-    @scala.inline
-    def LIME4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME4")(x.asInstanceOf[js.Any])
+    inline def LIME4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.LIME5")
     @js.native
     def LIME5: String = js.native
-    @scala.inline
-    def LIME5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME5")(x.asInstanceOf[js.Any])
+    inline def LIME5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE1")
     @js.native
     def ORANGE1: String = js.native
-    @scala.inline
-    def ORANGE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE1")(x.asInstanceOf[js.Any])
+    inline def ORANGE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE2")
     @js.native
     def ORANGE2: String = js.native
-    @scala.inline
-    def ORANGE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE2")(x.asInstanceOf[js.Any])
+    inline def ORANGE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE3")
     @js.native
     def ORANGE3: String = js.native
-    @scala.inline
-    def ORANGE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE3")(x.asInstanceOf[js.Any])
+    inline def ORANGE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE4")
     @js.native
     def ORANGE4: String = js.native
-    @scala.inline
-    def ORANGE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE4")(x.asInstanceOf[js.Any])
+    inline def ORANGE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ORANGE5")
     @js.native
     def ORANGE5: String = js.native
-    @scala.inline
-    def ORANGE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE5")(x.asInstanceOf[js.Any])
+    inline def ORANGE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED1")
     @js.native
     def RED1: String = js.native
-    @scala.inline
-    def RED1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED1")(x.asInstanceOf[js.Any])
+    inline def RED1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED2")
     @js.native
     def RED2: String = js.native
-    @scala.inline
-    def RED2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED2")(x.asInstanceOf[js.Any])
+    inline def RED2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED3")
     @js.native
     def RED3: String = js.native
-    @scala.inline
-    def RED3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED3")(x.asInstanceOf[js.Any])
+    inline def RED3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED4")
     @js.native
     def RED4: String = js.native
-    @scala.inline
-    def RED4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED4")(x.asInstanceOf[js.Any])
+    inline def RED4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.RED5")
     @js.native
     def RED5: String = js.native
-    @scala.inline
-    def RED5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED5")(x.asInstanceOf[js.Any])
+    inline def RED5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE1")
     @js.native
     def ROSE1: String = js.native
-    @scala.inline
-    def ROSE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE1")(x.asInstanceOf[js.Any])
+    inline def ROSE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE2")
     @js.native
     def ROSE2: String = js.native
-    @scala.inline
-    def ROSE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE2")(x.asInstanceOf[js.Any])
+    inline def ROSE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE3")
     @js.native
     def ROSE3: String = js.native
-    @scala.inline
-    def ROSE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE3")(x.asInstanceOf[js.Any])
+    inline def ROSE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE4")
     @js.native
     def ROSE4: String = js.native
-    @scala.inline
-    def ROSE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE4")(x.asInstanceOf[js.Any])
+    inline def ROSE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.ROSE5")
     @js.native
     def ROSE5: String = js.native
-    @scala.inline
-    def ROSE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE5")(x.asInstanceOf[js.Any])
+    inline def ROSE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSE5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA1")
     @js.native
     def SEPIA1: String = js.native
-    @scala.inline
-    def SEPIA1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA1")(x.asInstanceOf[js.Any])
+    inline def SEPIA1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA2")
     @js.native
     def SEPIA2: String = js.native
-    @scala.inline
-    def SEPIA2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA2")(x.asInstanceOf[js.Any])
+    inline def SEPIA2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA3")
     @js.native
     def SEPIA3: String = js.native
-    @scala.inline
-    def SEPIA3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA3")(x.asInstanceOf[js.Any])
+    inline def SEPIA3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA4")
     @js.native
     def SEPIA4: String = js.native
-    @scala.inline
-    def SEPIA4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA4")(x.asInstanceOf[js.Any])
+    inline def SEPIA4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.SEPIA5")
     @js.native
     def SEPIA5: String = js.native
-    @scala.inline
-    def SEPIA5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA5")(x.asInstanceOf[js.Any])
+    inline def SEPIA5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPIA5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE1")
     @js.native
     def TURQUOISE1: String = js.native
-    @scala.inline
-    def TURQUOISE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE1")(x.asInstanceOf[js.Any])
+    inline def TURQUOISE1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE2")
     @js.native
     def TURQUOISE2: String = js.native
-    @scala.inline
-    def TURQUOISE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE2")(x.asInstanceOf[js.Any])
+    inline def TURQUOISE2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE3")
     @js.native
     def TURQUOISE3: String = js.native
-    @scala.inline
-    def TURQUOISE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE3")(x.asInstanceOf[js.Any])
+    inline def TURQUOISE3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE4")
     @js.native
     def TURQUOISE4: String = js.native
-    @scala.inline
-    def TURQUOISE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE4")(x.asInstanceOf[js.Any])
+    inline def TURQUOISE4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.TURQUOISE5")
     @js.native
     def TURQUOISE5: String = js.native
-    @scala.inline
-    def TURQUOISE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE5")(x.asInstanceOf[js.Any])
+    inline def TURQUOISE5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION1")
     @js.native
     def VERMILION1: String = js.native
-    @scala.inline
-    def VERMILION1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION1")(x.asInstanceOf[js.Any])
+    inline def VERMILION1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION2")
     @js.native
     def VERMILION2: String = js.native
-    @scala.inline
-    def VERMILION2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION2")(x.asInstanceOf[js.Any])
+    inline def VERMILION2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION3")
     @js.native
     def VERMILION3: String = js.native
-    @scala.inline
-    def VERMILION3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION3")(x.asInstanceOf[js.Any])
+    inline def VERMILION3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION4")
     @js.native
     def VERMILION4: String = js.native
-    @scala.inline
-    def VERMILION4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION4")(x.asInstanceOf[js.Any])
+    inline def VERMILION4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VERMILION5")
     @js.native
     def VERMILION5: String = js.native
-    @scala.inline
-    def VERMILION5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION5")(x.asInstanceOf[js.Any])
+    inline def VERMILION5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERMILION5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET1")
     @js.native
     def VIOLET1: String = js.native
-    @scala.inline
-    def VIOLET1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET1")(x.asInstanceOf[js.Any])
+    inline def VIOLET1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET1")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET2")
     @js.native
     def VIOLET2: String = js.native
-    @scala.inline
-    def VIOLET2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET2")(x.asInstanceOf[js.Any])
+    inline def VIOLET2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET2")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET3")
     @js.native
     def VIOLET3: String = js.native
-    @scala.inline
-    def VIOLET3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET3")(x.asInstanceOf[js.Any])
+    inline def VIOLET3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET3")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET4")
     @js.native
     def VIOLET4: String = js.native
-    @scala.inline
-    def VIOLET4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET4")(x.asInstanceOf[js.Any])
+    inline def VIOLET4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET4")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.VIOLET5")
     @js.native
     def VIOLET5: String = js.native
-    @scala.inline
-    def VIOLET5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET5")(x.asInstanceOf[js.Any])
+    inline def VIOLET5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET5")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Colors.WHITE")
     @js.native
     def WHITE: String = js.native
-    @scala.inline
-    def WHITE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
+    inline def WHITE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@blueprintjs/core/lib/esm/common", "DISPLAYNAME_PREFIX")
@@ -1570,32 +1458,27 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Elevation.FOUR")
     @js.native
     def FOUR: `4` = js.native
-    @scala.inline
-    def FOUR_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
+    inline def FOUR_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Elevation.ONE")
     @js.native
     def ONE: `1` = js.native
-    @scala.inline
-    def ONE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    inline def ONE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Elevation.THREE")
     @js.native
     def THREE: `3` = js.native
-    @scala.inline
-    def THREE_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
+    inline def THREE_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Elevation.TWO")
     @js.native
     def TWO: `2` = js.native
-    @scala.inline
-    def TWO_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
+    inline def TWO_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Elevation.ZERO")
     @js.native
     def ZERO: `0` = js.native
-    @scala.inline
-    def ZERO_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    inline def ZERO_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   }
   
   object Intent {
@@ -1607,32 +1490,27 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Intent.DANGER")
     @js.native
     def DANGER: danger = js.native
-    @scala.inline
-    def DANGER_=(x: danger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DANGER")(x.asInstanceOf[js.Any])
+    inline def DANGER_=(x: danger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DANGER")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Intent.NONE")
     @js.native
     def NONE: none = js.native
-    @scala.inline
-    def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
+    inline def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Intent.PRIMARY")
     @js.native
     def PRIMARY: primary = js.native
-    @scala.inline
-    def PRIMARY_=(x: primary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY")(x.asInstanceOf[js.Any])
+    inline def PRIMARY_=(x: primary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Intent.SUCCESS")
     @js.native
     def SUCCESS: success = js.native
-    @scala.inline
-    def SUCCESS_=(x: success): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+    inline def SUCCESS_=(x: success): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Intent.WARNING")
     @js.native
     def WARNING: warning = js.native
-    @scala.inline
-    def WARNING_=(x: warning): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
+    inline def WARNING_=(x: warning): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
   }
   
   object Keys {
@@ -1685,8 +1563,7 @@ object commonMod {
     @js.native
     val TAB: /* 9 */ Double = js.native
     
-    @scala.inline
-    def isKeyboardClick(keyCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardClick")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isKeyboardClick(keyCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardClick")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object Position {
@@ -1698,74 +1575,62 @@ object commonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.BOTTOM")
     @js.native
     def BOTTOM: bottom = js.native
-    @scala.inline
-    def BOTTOM_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
+    inline def BOTTOM_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.BOTTOM_LEFT")
     @js.native
     def BOTTOM_LEFT: `bottom-left` = js.native
-    @scala.inline
-    def BOTTOM_LEFT_=(x: `bottom-left`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM_LEFT")(x.asInstanceOf[js.Any])
+    inline def BOTTOM_LEFT_=(x: `bottom-left`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM_LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.BOTTOM_RIGHT")
     @js.native
     def BOTTOM_RIGHT: `bottom-right` = js.native
-    @scala.inline
-    def BOTTOM_RIGHT_=(x: `bottom-right`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM_RIGHT")(x.asInstanceOf[js.Any])
+    inline def BOTTOM_RIGHT_=(x: `bottom-right`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM_RIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.LEFT")
     @js.native
     def LEFT: left = js.native
-    @scala.inline
-    def LEFT_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+    inline def LEFT_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.LEFT_BOTTOM")
     @js.native
     def LEFT_BOTTOM: `left-bottom` = js.native
-    @scala.inline
-    def LEFT_BOTTOM_=(x: `left-bottom`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT_BOTTOM")(x.asInstanceOf[js.Any])
+    inline def LEFT_BOTTOM_=(x: `left-bottom`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT_BOTTOM")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.LEFT_TOP")
     @js.native
     def LEFT_TOP: `left-top` = js.native
-    @scala.inline
-    def LEFT_TOP_=(x: `left-top`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT_TOP")(x.asInstanceOf[js.Any])
+    inline def LEFT_TOP_=(x: `left-top`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT_TOP")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.RIGHT")
     @js.native
     def RIGHT: right = js.native
-    @scala.inline
-    def RIGHT_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+    inline def RIGHT_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.RIGHT_BOTTOM")
     @js.native
     def RIGHT_BOTTOM: `right-bottom` = js.native
-    @scala.inline
-    def RIGHT_BOTTOM_=(x: `right-bottom`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT_BOTTOM")(x.asInstanceOf[js.Any])
+    inline def RIGHT_BOTTOM_=(x: `right-bottom`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT_BOTTOM")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.RIGHT_TOP")
     @js.native
     def RIGHT_TOP: `right-top` = js.native
-    @scala.inline
-    def RIGHT_TOP_=(x: `right-top`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT_TOP")(x.asInstanceOf[js.Any])
+    inline def RIGHT_TOP_=(x: `right-top`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT_TOP")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.TOP")
     @js.native
     def TOP: top = js.native
-    @scala.inline
-    def TOP_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
+    inline def TOP_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.TOP_LEFT")
     @js.native
     def TOP_LEFT: `top-left` = js.native
-    @scala.inline
-    def TOP_LEFT_=(x: `top-left`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_LEFT")(x.asInstanceOf[js.Any])
+    inline def TOP_LEFT_=(x: `top-left`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Position.TOP_RIGHT")
     @js.native
     def TOP_RIGHT: `top-right` = js.native
-    @scala.inline
-    def TOP_RIGHT_=(x: `top-right`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_RIGHT")(x.asInstanceOf[js.Any])
+    inline def TOP_RIGHT_=(x: `top-right`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_RIGHT")(x.asInstanceOf[js.Any])
   }
   
   object Utils {
@@ -1774,262 +1639,169 @@ object commonMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def approxEqual(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approxEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def approxEqual(a: Double, b: Double, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approxEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def approxEqual(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approxEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def approxEqual(a: Double, b: Double, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approxEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def arrayLengthCompare(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")().asInstanceOf[Double]
-    @scala.inline
-    def arrayLengthCompare(a: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def arrayLengthCompare(a: js.Array[js.Any], b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def arrayLengthCompare(a: Unit, b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def arrayLengthCompare(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")().asInstanceOf[Double]
+    inline def arrayLengthCompare(a: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def arrayLengthCompare(a: js.Array[js.Any], b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def arrayLengthCompare(a: Unit, b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def arraysEqual(arrA: js.Array[js.Any], arrB: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def arraysEqual(
+    inline def arraysEqual(arrA: js.Array[js.Any], arrB: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def arraysEqual(
       arrA: js.Array[js.Any],
       arrB: js.Array[js.Any],
       compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def countDecimalPlaces(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countDecimalPlaces")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def countDecimalPlaces(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countDecimalPlaces")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def createReactRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactRef")().asInstanceOf[RefObject[T]]
+    inline def createReactRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactRef")().asInstanceOf[RefObject[T]]
     
-    @scala.inline
-    def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
-    @scala.inline
-    def ensureElement(
+    inline def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
+    inline def ensureElement(
       child: Unit,
       tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
     ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
-    @scala.inline
-    def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
-    @scala.inline
-    def ensureElement(
+    inline def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
+    inline def ensureElement(
       child: ReactNode,
       tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
     ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
     
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")().asInstanceOf[js.Array[Key[T]]]
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
-    @scala.inline
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")().asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+    inline def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
     
-    @scala.inline
-    def getDisplayName(ComponentClass: INamed): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def getDisplayName(ComponentClass: ComponentType[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDisplayName(ComponentClass: INamed): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDisplayName(ComponentClass: ComponentType[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
-    @scala.inline
-    def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
-    @scala.inline
-    def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    inline def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
+    inline def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    inline def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
     
-    @scala.inline
-    def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], ComponentType.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+    inline def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], ComponentType.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactElement */ Boolean]
     
-    @scala.inline
-    def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+    inline def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
     
-    @scala.inline
-    def isNodeEnv(env: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNodeEnv(env: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isReactElement[T](child: ReactNode): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactElement")(child.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+    inline def isReactElement[T](child: ReactNode): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactElement")(child.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
     
-    @scala.inline
-    def isReactNodeEmpty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")().asInstanceOf[Boolean]
-    @scala.inline
-    def isReactNodeEmpty(node: Unit, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def isReactNodeEmpty(node: ReactNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def isReactNodeEmpty(node: ReactNode, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isReactNodeEmpty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")().asInstanceOf[Boolean]
+    inline def isReactNodeEmpty(node: Unit, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isReactNodeEmpty(node: ReactNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isReactNodeEmpty(node: ReactNode, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def safeInvoke[R](): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")().asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, R](func: js.Function1[/* arg1 */ A, R], arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, R](func: Unit, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, B, R](func: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, B, R](func: Unit, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, B, C, R](func: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, B, C, R](func: Unit, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, B, C, D, R](
+    inline def safeInvoke[R](): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")().asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, R](func: js.Function1[/* arg1 */ A, R], arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, R](func: Unit, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, B, R](func: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, B, R](func: Unit, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, B, C, R](func: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, B, C, R](func: Unit, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, B, C, D, R](
       func: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
       arg1: A,
       arg2: B,
       arg3: C,
       arg4: D
     ): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvoke[A, B, C, D, R](func: Unit, arg1: A, arg2: B, arg3: C, arg4: D): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+    inline def safeInvoke[A, B, C, D, R](func: Unit, arg1: A, arg2: B, arg3: C, arg4: D): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
     
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: T, key: K): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: Unit, key: K): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: T, key: K, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: Unit, key: K, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A, b : B): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: T, key: K, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A, b : B): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: Unit, key: K, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A, b : B, c : C): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: T, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
-    @scala.inline
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A, b : B, c : C): R}
       */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: Unit, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
     
-    @scala.inline
-    def safeInvokeOrValue[R](): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")().asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[R](funcOrValue: R): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, R](funcOrValue: R, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, R](funcOrValue: js.Function1[/* arg1 */ A, R], arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, R](funcOrValue: Unit, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, R](funcOrValue: R, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, R](funcOrValue: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, R](funcOrValue: Unit, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, C, R](funcOrValue: R, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, C, R](funcOrValue: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, C, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, C, D, R](funcOrValue: R, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, C, D, R](
+    inline def safeInvokeOrValue[R](): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")().asInstanceOf[R]
+    inline def safeInvokeOrValue[R](funcOrValue: R): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
+    inline def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, R](funcOrValue: R, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, R](funcOrValue: js.Function1[/* arg1 */ A, R], arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, R](funcOrValue: Unit, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, R](funcOrValue: R, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, R](funcOrValue: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, R](funcOrValue: Unit, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, C, R](funcOrValue: R, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, C, R](funcOrValue: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, C, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, C, D, R](funcOrValue: R, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, C, D, R](
       funcOrValue: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
       arg1: A,
       arg2: B,
       arg3: C,
       arg4: D
     ): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
-    @scala.inline
-    def safeInvokeOrValue[A, B, C, D, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
+    inline def safeInvokeOrValue[A, B, C, D, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
     
-    @scala.inline
-    def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def throttle[T /* <: js.Function */](method: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def throttle[T /* <: js.Function */](method: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @scala.inline
-    def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], newEventName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, Unit]]
+    inline def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], newEventName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, Unit]]
     
-    @scala.inline
-    def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
-    @scala.inline
-    def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](
+    inline def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
+    inline def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](
       callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any],
       options: IThrottledReactEventOptions
     ): js.Function1[/* event2 */ E, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
   }
   
-  @scala.inline
-  def getPositionIgnoreAngles(position: Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
+  inline def getPositionIgnoreAngles(position: Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
   
-  @scala.inline
-  def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
-  @scala.inline
-  def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
-  @scala.inline
-  def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  inline def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
+  inline def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  inline def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
   
-  @scala.inline
-  def isPositionHorizontal(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPositionHorizontal(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPositionVertical(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPositionVertical(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isRefCallback[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
-  @scala.inline
-  def isRefCallback[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
+  inline def isRefCallback[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
+  inline def isRefCallback[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
   
-  @scala.inline
-  def isRefObject[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
-  @scala.inline
-  def isRefObject[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
+  inline def isRefObject[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
+  inline def isRefObject[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
   
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
 }

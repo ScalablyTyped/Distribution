@@ -30,8 +30,7 @@ object modalMod {
     @JSImport("rmc-dialog/lib/Modal", "default.defaultProps")
     @js.native
     def defaultProps: IModalPropTypes = js.native
-    @scala.inline
-    def defaultProps_=(x: IModalPropTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IModalPropTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IModalPropTypes extends StObject {
@@ -58,68 +57,48 @@ object modalMod {
   }
   object IModalPropTypes {
     
-    @scala.inline
-    def apply(animationType: none | fade | `slide-up` | `slide-down`, visible: Boolean): IModalPropTypes = {
+    inline def apply(animationType: none | fade | `slide-up` | `slide-down`, visible: Boolean): IModalPropTypes = {
       val __obj = js.Dynamic.literal(animationType = animationType.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[IModalPropTypes]
     }
     
-    @scala.inline
-    implicit class IModalPropTypesMutableBuilder[Self <: IModalPropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: IModalPropTypes](x: Self) {
       
-      @scala.inline
-      def setAnimateAppear(value: Boolean): Self = StObject.set(x, "animateAppear", value.asInstanceOf[js.Any])
+      inline def setAnimateAppear(value: Boolean): Self = StObject.set(x, "animateAppear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateAppearUndefined: Self = StObject.set(x, "animateAppear", js.undefined)
+      inline def setAnimateAppearUndefined: Self = StObject.set(x, "animateAppear", js.undefined)
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setAnimationType(value: none | fade | `slide-up` | `slide-down`): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+      inline def setAnimationType(value: none | fade | `slide-up` | `slide-down`): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
+      inline def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClosableUndefined: Self = StObject.set(x, "maskClosable", js.undefined)
+      inline def setMaskClosableUndefined: Self = StObject.set(x, "maskClosable", js.undefined)
       
-      @scala.inline
-      def setMaskStyle(value: ViewStyle): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
+      inline def setMaskStyle(value: ViewStyle): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
+      inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapStyle(value: ViewStyle): Self = StObject.set(x, "wrapStyle", value.asInstanceOf[js.Any])
+      inline def setWrapStyle(value: ViewStyle): Self = StObject.set(x, "wrapStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapStyleUndefined: Self = StObject.set(x, "wrapStyle", js.undefined)
+      inline def setWrapStyleUndefined: Self = StObject.set(x, "wrapStyle", js.undefined)
     }
   }
   

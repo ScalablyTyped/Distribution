@@ -16,8 +16,7 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     files: FilesResource,
     images: ImagesResource,
     locations: LocationsResource,
@@ -27,19 +26,14 @@ object ProjectsResource {
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setFiles(value: FilesResource): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: FilesResource): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: ImagesResource): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: ImagesResource): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

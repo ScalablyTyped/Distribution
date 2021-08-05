@@ -26,8 +26,7 @@ trait ScriptFile
      with File
 object ScriptFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

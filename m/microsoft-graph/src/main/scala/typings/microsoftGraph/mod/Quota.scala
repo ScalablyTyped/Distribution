@@ -26,67 +26,47 @@ trait Quota extends StObject {
 }
 object Quota {
   
-  @scala.inline
-  def apply(): Quota = {
+  inline def apply(): Quota = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Quota]
   }
   
-  @scala.inline
-  implicit class QuotaMutableBuilder[Self <: Quota] (val x: Self) extends AnyVal {
+  extension [Self <: Quota](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: NullableOption[Double]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: NullableOption[Double]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedNull: Self = StObject.set(x, "deleted", null)
+    inline def setDeletedNull: Self = StObject.set(x, "deleted", null)
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setRemaining(value: NullableOption[Double]): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+    inline def setRemaining(value: NullableOption[Double]): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingNull: Self = StObject.set(x, "remaining", null)
+    inline def setRemainingNull: Self = StObject.set(x, "remaining", null)
     
-    @scala.inline
-    def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
+    inline def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
     
-    @scala.inline
-    def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStoragePlanInformation(value: NullableOption[StoragePlanInformation]): Self = StObject.set(x, "storagePlanInformation", value.asInstanceOf[js.Any])
+    inline def setStoragePlanInformation(value: NullableOption[StoragePlanInformation]): Self = StObject.set(x, "storagePlanInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragePlanInformationNull: Self = StObject.set(x, "storagePlanInformation", null)
+    inline def setStoragePlanInformationNull: Self = StObject.set(x, "storagePlanInformation", null)
     
-    @scala.inline
-    def setStoragePlanInformationUndefined: Self = StObject.set(x, "storagePlanInformation", js.undefined)
+    inline def setStoragePlanInformationUndefined: Self = StObject.set(x, "storagePlanInformation", js.undefined)
     
-    @scala.inline
-    def setTotal(value: NullableOption[Double]): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: NullableOption[Double]): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalNull: Self = StObject.set(x, "total", null)
+    inline def setTotalNull: Self = StObject.set(x, "total", null)
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setUsed(value: NullableOption[Double]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: NullableOption[Double]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedNull: Self = StObject.set(x, "used", null)
+    inline def setUsedNull: Self = StObject.set(x, "used", null)
     
-    @scala.inline
-    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
+    inline def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
   }
 }

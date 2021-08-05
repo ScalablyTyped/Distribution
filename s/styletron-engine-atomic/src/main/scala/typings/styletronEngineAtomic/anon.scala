@@ -14,20 +14,16 @@ object anon {
   }
   object Block {
     
-    @scala.inline
-    def apply(block: String, pseudo: String): Block = {
+    inline def apply(block: String, pseudo: String): Block = {
       val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], pseudo = pseudo.asInstanceOf[js.Any])
       __obj.asInstanceOf[Block]
     }
     
-    @scala.inline
-    implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    extension [Self <: Block](x: Self) {
       
-      @scala.inline
-      def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPseudo(value: String): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
+      inline def setPseudo(value: String): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
     }
   }
 }

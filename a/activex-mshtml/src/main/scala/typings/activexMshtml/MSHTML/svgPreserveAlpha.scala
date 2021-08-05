@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait svgPreserveAlpha extends StObject
 object svgPreserveAlpha {
   
-  @scala.inline
-  def SVG_PRESERVEALPHA_FALSE: `0` = 0.asInstanceOf[`0`]
+  inline def SVG_PRESERVEALPHA_FALSE: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SVG_PRESERVEALPHA_TRUE: `1` = 1.asInstanceOf[`1`]
+  inline def SVG_PRESERVEALPHA_TRUE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def svgPreserveAlpha_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def svgPreserveAlpha_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

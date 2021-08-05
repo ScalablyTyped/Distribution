@@ -31,19 +31,19 @@ object overflowListMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MOverflowList(prevProps: IOverflowListProps[T], prevState: IOverflowListState[T]): Unit = js.native
     
-    var maybeRenderOverflow: js.Any = js.native
+    /* private */ var maybeRenderOverflow: js.Any = js.native
     
     /** A cache containing the widths of all elements being observed to detect growing/shrinking */
-    var previousWidths: js.Any = js.native
+    /* private */ var previousWidths: js.Any = js.native
     
-    var repartition: js.Any = js.native
+    /* private */ var repartition: js.Any = js.native
     
-    var resize: js.Any = js.native
+    /* private */ var resize: js.Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MOverflowList(_nextProps: IOverflowListProps[T], nextState: IOverflowListState[T]): Boolean = js.native
     
-    var spacer: js.Any = js.native
+    /* private */ var spacer: js.Any = js.native
   }
   /* static members */
   object OverflowList {
@@ -55,17 +55,14 @@ object overflowListMod {
     @JSImport("@blueprintjs/core/lib/esm/components/overflow-list/overflowList", "OverflowList.defaultProps")
     @js.native
     def defaultProps: PartialIOverflowListPropsClassName = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIOverflowListPropsClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIOverflowListPropsClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/overflow-list/overflowList", "OverflowList.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ofType[U](): Instantiable1[/* props */ IOverflowListProps[U], OverflowList[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOverflowListProps[U], OverflowList[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ IOverflowListProps[U], OverflowList[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOverflowListProps[U], OverflowList[U]]]
   }
   
   trait IOverflowListProps[T]
@@ -141,8 +138,7 @@ object overflowListMod {
   }
   object IOverflowListProps {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       items: js.Array[T],
       overflowRenderer: js.Array[T] => ReactNode,
       visibleItemRenderer: (T, Double) => ReactChild
@@ -151,56 +147,39 @@ object overflowListMod {
       __obj.asInstanceOf[IOverflowListProps[T]]
     }
     
-    @scala.inline
-    implicit class IOverflowListPropsMutableBuilder[Self <: IOverflowListProps[?], T] (val x: Self & IOverflowListProps[T]) extends AnyVal {
+    extension [Self <: IOverflowListProps[?], T](x: Self & IOverflowListProps[T]) {
       
-      @scala.inline
-      def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
+      inline def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseFromUndefined: Self = StObject.set(x, "collapseFrom", js.undefined)
+      inline def setCollapseFromUndefined: Self = StObject.set(x, "collapseFrom", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMinVisibleItems(value: Double): Self = StObject.set(x, "minVisibleItems", value.asInstanceOf[js.Any])
+      inline def setMinVisibleItems(value: Double): Self = StObject.set(x, "minVisibleItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinVisibleItemsUndefined: Self = StObject.set(x, "minVisibleItems", js.undefined)
+      inline def setMinVisibleItemsUndefined: Self = StObject.set(x, "minVisibleItems", js.undefined)
       
-      @scala.inline
-      def setObserveParents(value: Boolean): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
+      inline def setObserveParents(value: Boolean): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserveParentsUndefined: Self = StObject.set(x, "observeParents", js.undefined)
+      inline def setObserveParentsUndefined: Self = StObject.set(x, "observeParents", js.undefined)
       
-      @scala.inline
-      def setOnOverflow(value: /* overflowItems */ js.Array[T] => Unit): Self = StObject.set(x, "onOverflow", js.Any.fromFunction1(value))
+      inline def setOnOverflow(value: /* overflowItems */ js.Array[T] => Unit): Self = StObject.set(x, "onOverflow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOverflowUndefined: Self = StObject.set(x, "onOverflow", js.undefined)
+      inline def setOnOverflowUndefined: Self = StObject.set(x, "onOverflow", js.undefined)
       
-      @scala.inline
-      def setOverflowRenderer(value: js.Array[T] => ReactNode): Self = StObject.set(x, "overflowRenderer", js.Any.fromFunction1(value))
+      inline def setOverflowRenderer(value: js.Array[T] => ReactNode): Self = StObject.set(x, "overflowRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
-      @scala.inline
-      def setVisibleItemRenderer(value: (T, Double) => ReactChild): Self = StObject.set(x, "visibleItemRenderer", js.Any.fromFunction2(value))
+      inline def setVisibleItemRenderer(value: (T, Double) => ReactChild): Self = StObject.set(x, "visibleItemRenderer", js.Any.fromFunction2(value))
     }
   }
   
@@ -215,29 +194,22 @@ object overflowListMod {
   }
   object IOverflowListState {
     
-    @scala.inline
-    def apply[T](lastOverflowCount: Double, overflow: js.Array[T], visible: js.Array[T]): IOverflowListState[T] = {
+    inline def apply[T](lastOverflowCount: Double, overflow: js.Array[T], visible: js.Array[T]): IOverflowListState[T] = {
       val __obj = js.Dynamic.literal(lastOverflowCount = lastOverflowCount.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOverflowListState[T]]
     }
     
-    @scala.inline
-    implicit class IOverflowListStateMutableBuilder[Self <: IOverflowListState[?], T] (val x: Self & IOverflowListState[T]) extends AnyVal {
+    extension [Self <: IOverflowListState[?], T](x: Self & IOverflowListState[T]) {
       
-      @scala.inline
-      def setLastOverflowCount(value: Double): Self = StObject.set(x, "lastOverflowCount", value.asInstanceOf[js.Any])
+      inline def setLastOverflowCount(value: Double): Self = StObject.set(x, "lastOverflowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflow(value: js.Array[T]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: js.Array[T]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowVarargs(value: T*): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: T*): Self = StObject.set(x, "overflow", js.Array(value :_*))
       
-      @scala.inline
-      def setVisible(value: js.Array[T]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: js.Array[T]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleVarargs(value: T*): Self = StObject.set(x, "visible", js.Array(value :_*))
+      inline def setVisibleVarargs(value: T*): Self = StObject.set(x, "visible", js.Array(value :_*))
     }
   }
 }

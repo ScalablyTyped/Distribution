@@ -73,43 +73,31 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
 }
 object PlusWebviewWebviewBounceStyle {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewBounceStyle = {
+  inline def apply(): PlusWebviewWebviewBounceStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewBounceStyle]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewBounceStyleMutableBuilder[Self <: PlusWebviewWebviewBounceStyle] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewBounceStyle](x: Self) {
     
-    @scala.inline
-    def setChangeoffset(value: js.Any): Self = StObject.set(x, "changeoffset", value.asInstanceOf[js.Any])
+    inline def setChangeoffset(value: js.Any): Self = StObject.set(x, "changeoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeoffsetUndefined: Self = StObject.set(x, "changeoffset", js.undefined)
+    inline def setChangeoffsetUndefined: Self = StObject.set(x, "changeoffset", js.undefined)
     
-    @scala.inline
-    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPreventTouchEvent(value: Boolean): Self = StObject.set(x, "preventTouchEvent", value.asInstanceOf[js.Any])
+    inline def setPreventTouchEvent(value: Boolean): Self = StObject.set(x, "preventTouchEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventTouchEventUndefined: Self = StObject.set(x, "preventTouchEvent", js.undefined)
+    inline def setPreventTouchEventUndefined: Self = StObject.set(x, "preventTouchEvent", js.undefined)
     
-    @scala.inline
-    def setSlideoffset(value: js.Any): Self = StObject.set(x, "slideoffset", value.asInstanceOf[js.Any])
+    inline def setSlideoffset(value: js.Any): Self = StObject.set(x, "slideoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideoffsetUndefined: Self = StObject.set(x, "slideoffset", js.undefined)
+    inline def setSlideoffsetUndefined: Self = StObject.set(x, "slideoffset", js.undefined)
   }
 }

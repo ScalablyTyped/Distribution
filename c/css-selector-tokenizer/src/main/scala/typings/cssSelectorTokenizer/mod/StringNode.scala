@@ -18,23 +18,18 @@ trait StringNode
 }
 object StringNode {
   
-  @scala.inline
-  def apply(stringType: String, value: String): StringNode = {
+  inline def apply(stringType: String, value: String): StringNode = {
     val __obj = js.Dynamic.literal(stringType = stringType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringNode]
   }
   
-  @scala.inline
-  implicit class StringNodeMutableBuilder[Self <: StringNode] (val x: Self) extends AnyVal {
+  extension [Self <: StringNode](x: Self) {
     
-    @scala.inline
-    def setStringType(value: String): Self = StObject.set(x, "stringType", value.asInstanceOf[js.Any])
+    inline def setStringType(value: String): Self = StObject.set(x, "stringType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

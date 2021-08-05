@@ -32,25 +32,19 @@ trait ScrollSpyOptions extends StObject {
 }
 object ScrollSpyOptions {
   
-  @scala.inline
-  def apply(activeClass: String, getActiveElement: String => String, scrollOffset: Double, throttle: Double): ScrollSpyOptions = {
+  inline def apply(activeClass: String, getActiveElement: String => String, scrollOffset: Double, throttle: Double): ScrollSpyOptions = {
     val __obj = js.Dynamic.literal(activeClass = activeClass.asInstanceOf[js.Any], getActiveElement = js.Any.fromFunction1(getActiveElement), scrollOffset = scrollOffset.asInstanceOf[js.Any], throttle = throttle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollSpyOptions]
   }
   
-  @scala.inline
-  implicit class ScrollSpyOptionsMutableBuilder[Self <: ScrollSpyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollSpyOptions](x: Self) {
     
-    @scala.inline
-    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+    inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveElement(value: String => String): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
+    inline def setGetActiveElement(value: String => String): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+    inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
   }
 }

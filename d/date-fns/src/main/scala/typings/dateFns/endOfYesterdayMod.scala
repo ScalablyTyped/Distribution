@@ -9,8 +9,7 @@ object endOfYesterdayMod {
   
   object default {
     
-    @scala.inline
-    def apply(): Date = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Date]
+    inline def apply(): Date = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Date]
     
     @JSImport("date-fns/endOfYesterday", JSImport.Default)
     @js.native

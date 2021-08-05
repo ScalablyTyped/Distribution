@@ -29,37 +29,27 @@ trait AggregateTimeout extends StObject {
 }
 object AggregateTimeout {
   
-  @scala.inline
-  def apply(): AggregateTimeout = {
+  inline def apply(): AggregateTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregateTimeout]
   }
   
-  @scala.inline
-  implicit class AggregateTimeoutMutableBuilder[Self <: AggregateTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateTimeout](x: Self) {
     
-    @scala.inline
-    def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
+    inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
+    inline def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
     
-    @scala.inline
-    def setIgnored(value: StringDictionary[js.Any]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+    inline def setIgnored(value: StringDictionary[js.Any]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+    inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
-    @scala.inline
-    def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+    inline def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+    inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
     
-    @scala.inline
-    def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+    inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
   }
 }

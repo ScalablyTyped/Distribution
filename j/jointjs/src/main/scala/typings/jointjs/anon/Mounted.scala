@@ -12,19 +12,15 @@ trait Mounted extends StObject {
 }
 object Mounted {
   
-  @scala.inline
-  def apply(mounted: Double, unmounted: Double): Mounted = {
+  inline def apply(mounted: Double, unmounted: Double): Mounted = {
     val __obj = js.Dynamic.literal(mounted = mounted.asInstanceOf[js.Any], unmounted = unmounted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mounted]
   }
   
-  @scala.inline
-  implicit class MountedMutableBuilder[Self <: Mounted] (val x: Self) extends AnyVal {
+  extension [Self <: Mounted](x: Self) {
     
-    @scala.inline
-    def setMounted(value: Double): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
+    inline def setMounted(value: Double): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmounted(value: Double): Self = StObject.set(x, "unmounted", value.asInstanceOf[js.Any])
+    inline def setUnmounted(value: Double): Self = StObject.set(x, "unmounted", value.asInstanceOf[js.Any])
   }
 }

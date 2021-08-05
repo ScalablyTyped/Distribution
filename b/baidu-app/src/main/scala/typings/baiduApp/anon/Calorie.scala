@@ -17,22 +17,17 @@ trait Calorie extends StObject {
 }
 object Calorie {
   
-  @scala.inline
-  def apply(calorie: Double, name: String, probability: Double): Calorie = {
+  inline def apply(calorie: Double, name: String, probability: Double): Calorie = {
     val __obj = js.Dynamic.literal(calorie = calorie.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calorie]
   }
   
-  @scala.inline
-  implicit class CalorieMutableBuilder[Self <: Calorie] (val x: Self) extends AnyVal {
+  extension [Self <: Calorie](x: Self) {
     
-    @scala.inline
-    def setCalorie(value: Double): Self = StObject.set(x, "calorie", value.asInstanceOf[js.Any])
+    inline def setCalorie(value: Double): Self = StObject.set(x, "calorie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    inline def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
   }
 }

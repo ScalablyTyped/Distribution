@@ -22,17 +22,14 @@ trait _WorkspaceMiddleware extends StObject {
 }
 object _WorkspaceMiddleware {
   
-  @scala.inline
-  def apply(): _WorkspaceMiddleware = {
+  inline def apply(): _WorkspaceMiddleware = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[_WorkspaceMiddleware]
   }
   
-  @scala.inline
-  implicit class _WorkspaceMiddlewareMutableBuilder[Self <: _WorkspaceMiddleware] (val x: Self) extends AnyVal {
+  extension [Self <: _WorkspaceMiddleware](x: Self) {
     
-    @scala.inline
-    def setDidChangeConfiguration(
+    inline def setDidChangeConfiguration(
       value: js.ThisFunction2[
           /* this */ Unit, 
           /* sections */ js.UndefOr[js.Array[String]], 
@@ -41,15 +38,12 @@ object _WorkspaceMiddleware {
         ]
     ): Self = StObject.set(x, "didChangeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidChangeConfigurationUndefined: Self = StObject.set(x, "didChangeConfiguration", js.undefined)
+    inline def setDidChangeConfigurationUndefined: Self = StObject.set(x, "didChangeConfiguration", js.undefined)
     
-    @scala.inline
-    def setDidChangeWatchedFile(
+    inline def setDidChangeWatchedFile(
       value: js.ThisFunction2[/* this */ Unit, /* event */ FileEvent, /* next */ DidChangeWatchedFileSignature, Unit]
     ): Self = StObject.set(x, "didChangeWatchedFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidChangeWatchedFileUndefined: Self = StObject.set(x, "didChangeWatchedFile", js.undefined)
+    inline def setDidChangeWatchedFileUndefined: Self = StObject.set(x, "didChangeWatchedFile", js.undefined)
   }
 }

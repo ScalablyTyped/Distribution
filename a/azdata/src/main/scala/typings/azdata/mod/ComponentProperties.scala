@@ -52,67 +52,47 @@ trait ComponentProperties extends StObject {
 }
 object ComponentProperties {
   
-  @scala.inline
-  def apply(): ComponentProperties = {
+  inline def apply(): ComponentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentProperties]
   }
   
-  @scala.inline
-  implicit class ComponentPropertiesMutableBuilder[Self <: ComponentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentProperties](x: Self) {
     
-    @scala.inline
-    def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+    inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+    inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
     
-    @scala.inline
-    def setAriaRole(value: String): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
+    inline def setAriaRole(value: String): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
+    inline def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
     
-    @scala.inline
-    def setAriaSelected(value: Boolean): Self = StObject.set(x, "ariaSelected", value.asInstanceOf[js.Any])
+    inline def setAriaSelected(value: Boolean): Self = StObject.set(x, "ariaSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaSelectedUndefined: Self = StObject.set(x, "ariaSelected", js.undefined)
+    inline def setAriaSelectedUndefined: Self = StObject.set(x, "ariaSelected", js.undefined)
     
-    @scala.inline
-    def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
+    inline def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
+    inline def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: DisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: DisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

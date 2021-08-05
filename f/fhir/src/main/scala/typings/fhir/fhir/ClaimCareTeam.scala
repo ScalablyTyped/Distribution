@@ -48,49 +48,35 @@ trait ClaimCareTeam
 }
 object ClaimCareTeam {
   
-  @scala.inline
-  def apply(provider: Reference, sequence: positiveInt): ClaimCareTeam = {
+  inline def apply(provider: Reference, sequence: positiveInt): ClaimCareTeam = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimCareTeam]
   }
   
-  @scala.inline
-  implicit class ClaimCareTeamMutableBuilder[Self <: ClaimCareTeam] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimCareTeam](x: Self) {
     
-    @scala.inline
-    def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualification(value: CodeableConcept): Self = StObject.set(x, "qualification", value.asInstanceOf[js.Any])
+    inline def setQualification(value: CodeableConcept): Self = StObject.set(x, "qualification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationUndefined: Self = StObject.set(x, "qualification", js.undefined)
+    inline def setQualificationUndefined: Self = StObject.set(x, "qualification", js.undefined)
     
-    @scala.inline
-    def setResponsible(value: Boolean): Self = StObject.set(x, "responsible", value.asInstanceOf[js.Any])
+    inline def setResponsible(value: Boolean): Self = StObject.set(x, "responsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsibleUndefined: Self = StObject.set(x, "responsible", js.undefined)
+    inline def setResponsibleUndefined: Self = StObject.set(x, "responsible", js.undefined)
     
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_responsible(value: Element): Self = StObject.set(x, "_responsible", value.asInstanceOf[js.Any])
+    inline def set_responsible(value: Element): Self = StObject.set(x, "_responsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_responsibleUndefined: Self = StObject.set(x, "_responsible", js.undefined)
+    inline def set_responsibleUndefined: Self = StObject.set(x, "_responsible", js.undefined)
     
-    @scala.inline
-    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
+    inline def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
+    inline def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
   }
 }

@@ -14,12 +14,9 @@ trait DisplayOutside
      with _DisplayProperty
 object DisplayOutside {
   
-  @scala.inline
-  def block: typings.preact.preactStrings.block = "block".asInstanceOf[typings.preact.preactStrings.block]
+  inline def block: typings.preact.preactStrings.block = "block".asInstanceOf[typings.preact.preactStrings.block]
   
-  @scala.inline
-  def `inline`: typings.preact.preactStrings.`inline` = "inline".asInstanceOf[typings.preact.preactStrings.`inline`]
+  inline def `inline`: typings.preact.preactStrings.`inline` = "inline".asInstanceOf[typings.preact.preactStrings.`inline`]
   
-  @scala.inline
-  def `run-in`: typings.preact.preactStrings.`run-in` = "run-in".asInstanceOf[typings.preact.preactStrings.`run-in`]
+  inline def `run-in`: typings.preact.preactStrings.`run-in` = "run-in".asInstanceOf[typings.preact.preactStrings.`run-in`]
 }

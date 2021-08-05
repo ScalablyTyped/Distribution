@@ -13,16 +13,13 @@ trait DescribeLocationEfsRequest extends StObject {
 }
 object DescribeLocationEfsRequest {
   
-  @scala.inline
-  def apply(LocationArn: LocationArn): DescribeLocationEfsRequest = {
+  inline def apply(LocationArn: LocationArn): DescribeLocationEfsRequest = {
     val __obj = js.Dynamic.literal(LocationArn = LocationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLocationEfsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLocationEfsRequestMutableBuilder[Self <: DescribeLocationEfsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocationEfsRequest](x: Self) {
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }
 }

@@ -13,25 +13,19 @@ trait ManifestBaseBrowserSpecificSettings extends StObject {
 }
 object ManifestBaseBrowserSpecificSettings {
   
-  @scala.inline
-  def apply(): ManifestBaseBrowserSpecificSettings = {
+  inline def apply(): ManifestBaseBrowserSpecificSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManifestBaseBrowserSpecificSettings]
   }
   
-  @scala.inline
-  implicit class ManifestBaseBrowserSpecificSettingsMutableBuilder[Self <: ManifestBaseBrowserSpecificSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestBaseBrowserSpecificSettings](x: Self) {
     
-    @scala.inline
-    def setEdge(value: StringDictionary[js.Any]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: StringDictionary[js.Any]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+    inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
-    @scala.inline
-    def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
+    inline def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeckoUndefined: Self = StObject.set(x, "gecko", js.undefined)
+    inline def setGeckoUndefined: Self = StObject.set(x, "gecko", js.undefined)
   }
 }

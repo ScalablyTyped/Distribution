@@ -11,34 +11,29 @@ object eggMockStrings {
   sealed trait default
     extends StObject
        with EnvType
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait local
     extends StObject
        with EnvType
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait prod
     extends StObject
        with EnvType
-  @scala.inline
-  def prod: prod = "prod".asInstanceOf[prod]
+  inline def prod: prod = "prod".asInstanceOf[prod]
   
   @js.native
   sealed trait test
     extends StObject
        with EnvType
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
+  inline def test: test = "test".asInstanceOf[test]
   
   @js.native
   sealed trait unittest
     extends StObject
        with EnvType
-  @scala.inline
-  def unittest: unittest = "unittest".asInstanceOf[unittest]
+  inline def unittest: unittest = "unittest".asInstanceOf[unittest]
 }

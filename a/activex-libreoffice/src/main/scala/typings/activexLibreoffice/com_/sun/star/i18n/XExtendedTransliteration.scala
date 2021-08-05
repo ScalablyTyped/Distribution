@@ -46,8 +46,7 @@ trait XExtendedTransliteration
 }
 object XExtendedTransliteration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     Type: Double,
     acquire: () => Unit,
@@ -75,16 +74,12 @@ object XExtendedTransliteration {
     __obj.asInstanceOf[XExtendedTransliteration]
   }
   
-  @scala.inline
-  implicit class XExtendedTransliterationMutableBuilder[Self <: XExtendedTransliteration] (val x: Self) extends AnyVal {
+  extension [Self <: XExtendedTransliteration](x: Self) {
     
-    @scala.inline
-    def setTransliterateChar2Char(value: String => String): Self = StObject.set(x, "transliterateChar2Char", js.Any.fromFunction1(value))
+    inline def setTransliterateChar2Char(value: String => String): Self = StObject.set(x, "transliterateChar2Char", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransliterateChar2String(value: String => String): Self = StObject.set(x, "transliterateChar2String", js.Any.fromFunction1(value))
+    inline def setTransliterateChar2String(value: String => String): Self = StObject.set(x, "transliterateChar2String", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransliterateString2String(value: (String, Double, Double) => String): Self = StObject.set(x, "transliterateString2String", js.Any.fromFunction3(value))
+    inline def setTransliterateString2String(value: (String, Double, Double) => String): Self = StObject.set(x, "transliterateString2String", js.Any.fromFunction3(value))
   }
 }

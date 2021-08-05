@@ -19,8 +19,7 @@ trait IPasswordCredential extends StObject {
 }
 object IPasswordCredential {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     password: String,
     properties: IPropertySet,
     resource: String,
@@ -31,22 +30,16 @@ object IPasswordCredential {
     __obj.asInstanceOf[IPasswordCredential]
   }
   
-  @scala.inline
-  implicit class IPasswordCredentialMutableBuilder[Self <: IPasswordCredential] (val x: Self) extends AnyVal {
+  extension [Self <: IPasswordCredential](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrievePassword(value: () => Unit): Self = StObject.set(x, "retrievePassword", js.Any.fromFunction0(value))
+    inline def setRetrievePassword(value: () => Unit): Self = StObject.set(x, "retrievePassword", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

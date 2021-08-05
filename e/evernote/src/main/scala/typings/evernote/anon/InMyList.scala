@@ -16,37 +16,27 @@ trait InMyList extends StObject {
 }
 object InMyList {
   
-  @scala.inline
-  def apply(): InMyList = {
+  inline def apply(): InMyList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InMyList]
   }
   
-  @scala.inline
-  implicit class InMyListMutableBuilder[Self <: InMyList] (val x: Self) extends AnyVal {
+  extension [Self <: InMyList](x: Self) {
     
-    @scala.inline
-    def setInMyList(value: Boolean): Self = StObject.set(x, "inMyList", value.asInstanceOf[js.Any])
+    inline def setInMyList(value: Boolean): Self = StObject.set(x, "inMyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInMyListUndefined: Self = StObject.set(x, "inMyList", js.undefined)
+    inline def setInMyListUndefined: Self = StObject.set(x, "inMyList", js.undefined)
     
-    @scala.inline
-    def setReminderNotifyEmail(value: Boolean): Self = StObject.set(x, "reminderNotifyEmail", value.asInstanceOf[js.Any])
+    inline def setReminderNotifyEmail(value: Boolean): Self = StObject.set(x, "reminderNotifyEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderNotifyEmailUndefined: Self = StObject.set(x, "reminderNotifyEmail", js.undefined)
+    inline def setReminderNotifyEmailUndefined: Self = StObject.set(x, "reminderNotifyEmail", js.undefined)
     
-    @scala.inline
-    def setReminderNotifyInApp(value: Boolean): Self = StObject.set(x, "reminderNotifyInApp", value.asInstanceOf[js.Any])
+    inline def setReminderNotifyInApp(value: Boolean): Self = StObject.set(x, "reminderNotifyInApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderNotifyInAppUndefined: Self = StObject.set(x, "reminderNotifyInApp", js.undefined)
+    inline def setReminderNotifyInAppUndefined: Self = StObject.set(x, "reminderNotifyInApp", js.undefined)
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

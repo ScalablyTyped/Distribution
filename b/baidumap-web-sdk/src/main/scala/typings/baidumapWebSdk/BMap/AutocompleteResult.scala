@@ -14,22 +14,17 @@ trait AutocompleteResult extends StObject {
 }
 object AutocompleteResult {
   
-  @scala.inline
-  def apply(getNumPois: () => Double, getPoi: Double => AutocompleteResultPoi, keyword: String): AutocompleteResult = {
+  inline def apply(getNumPois: () => Double, getPoi: Double => AutocompleteResultPoi, keyword: String): AutocompleteResult = {
     val __obj = js.Dynamic.literal(getNumPois = js.Any.fromFunction0(getNumPois), getPoi = js.Any.fromFunction1(getPoi), keyword = keyword.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteResult]
   }
   
-  @scala.inline
-  implicit class AutocompleteResultMutableBuilder[Self <: AutocompleteResult] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteResult](x: Self) {
     
-    @scala.inline
-    def setGetNumPois(value: () => Double): Self = StObject.set(x, "getNumPois", js.Any.fromFunction0(value))
+    inline def setGetNumPois(value: () => Double): Self = StObject.set(x, "getNumPois", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPoi(value: Double => AutocompleteResultPoi): Self = StObject.set(x, "getPoi", js.Any.fromFunction1(value))
+    inline def setGetPoi(value: Double => AutocompleteResultPoi): Self = StObject.set(x, "getPoi", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
   }
 }

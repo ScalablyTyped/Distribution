@@ -18,19 +18,15 @@ trait DeleteFacetRequest extends StObject {
 }
 object DeleteFacetRequest {
   
-  @scala.inline
-  def apply(Name: FacetName, SchemaArn: Arn): DeleteFacetRequest = {
+  inline def apply(Name: FacetName, SchemaArn: Arn): DeleteFacetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFacetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFacetRequestMutableBuilder[Self <: DeleteFacetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFacetRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

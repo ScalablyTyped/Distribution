@@ -17,15 +17,15 @@ object commonDialogMod {
     def this(client: CDPSession, `type`: DialogType, message: String) = this()
     def this(client: CDPSession, `type`: DialogType, message: String, defaultValue: String) = this()
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var _defaultValue: js.Any = js.native
+    /* private */ var _defaultValue: js.Any = js.native
     
-    var _handled: js.Any = js.native
+    /* private */ var _handled: js.Any = js.native
     
-    var _message: js.Any = js.native
+    /* private */ var _message: js.Any = js.native
     
-    var _type: js.Any = js.native
+    /* private */ var _type: js.Any = js.native
     
     /**
       * @param promptText - optional text that will be entered in the dialog

@@ -63,76 +63,53 @@ trait MarkDefMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
 }
 object MarkDefMixins {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): MarkDefMixins[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): MarkDefMixins[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkDefMixins[ES]]
   }
   
-  @scala.inline
-  implicit class MarkDefMixinsMutableBuilder[Self <: MarkDefMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & MarkDefMixins[ES]) extends AnyVal {
+  extension [Self <: MarkDefMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & MarkDefMixins[ES]) {
     
-    @scala.inline
-    def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    @scala.inline
-    def setRadius2Offset(value: Double | ES): Self = StObject.set(x, "radius2Offset", value.asInstanceOf[js.Any])
+    inline def setRadius2Offset(value: Double | ES): Self = StObject.set(x, "radius2Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius2OffsetUndefined: Self = StObject.set(x, "radius2Offset", js.undefined)
+    inline def setRadius2OffsetUndefined: Self = StObject.set(x, "radius2Offset", js.undefined)
     
-    @scala.inline
-    def setRadiusOffset(value: Double | ES): Self = StObject.set(x, "radiusOffset", value.asInstanceOf[js.Any])
+    inline def setRadiusOffset(value: Double | ES): Self = StObject.set(x, "radiusOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusOffsetUndefined: Self = StObject.set(x, "radiusOffset", js.undefined)
+    inline def setRadiusOffsetUndefined: Self = StObject.set(x, "radiusOffset", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
     
-    @scala.inline
-    def setTheta2Offset(value: Double | ES): Self = StObject.set(x, "theta2Offset", value.asInstanceOf[js.Any])
+    inline def setTheta2Offset(value: Double | ES): Self = StObject.set(x, "theta2Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheta2OffsetUndefined: Self = StObject.set(x, "theta2Offset", js.undefined)
+    inline def setTheta2OffsetUndefined: Self = StObject.set(x, "theta2Offset", js.undefined)
     
-    @scala.inline
-    def setThetaOffset(value: Double | ES): Self = StObject.set(x, "thetaOffset", value.asInstanceOf[js.Any])
+    inline def setThetaOffset(value: Double | ES): Self = StObject.set(x, "thetaOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaOffsetUndefined: Self = StObject.set(x, "thetaOffset", js.undefined)
+    inline def setThetaOffsetUndefined: Self = StObject.set(x, "thetaOffset", js.undefined)
     
-    @scala.inline
-    def setX2Offset(value: Double | ES): Self = StObject.set(x, "x2Offset", value.asInstanceOf[js.Any])
+    inline def setX2Offset(value: Double | ES): Self = StObject.set(x, "x2Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2OffsetUndefined: Self = StObject.set(x, "x2Offset", js.undefined)
+    inline def setX2OffsetUndefined: Self = StObject.set(x, "x2Offset", js.undefined)
     
-    @scala.inline
-    def setXOffset(value: Double | ES): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+    inline def setXOffset(value: Double | ES): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+    inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
     
-    @scala.inline
-    def setY2Offset(value: Double | ES): Self = StObject.set(x, "y2Offset", value.asInstanceOf[js.Any])
+    inline def setY2Offset(value: Double | ES): Self = StObject.set(x, "y2Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2OffsetUndefined: Self = StObject.set(x, "y2Offset", js.undefined)
+    inline def setY2OffsetUndefined: Self = StObject.set(x, "y2Offset", js.undefined)
     
-    @scala.inline
-    def setYOffset(value: Double | ES): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double | ES): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
+    inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

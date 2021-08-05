@@ -33,43 +33,31 @@ trait ListServicesRequest extends StObject {
 }
 object ListServicesRequest {
   
-  @scala.inline
-  def apply(): ListServicesRequest = {
+  inline def apply(): ListServicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServicesRequest]
   }
   
-  @scala.inline
-  implicit class ListServicesRequestMutableBuilder[Self <: ListServicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListServicesRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setLaunchType(value: LaunchType): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
+    inline def setLaunchType(value: LaunchType): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
+    inline def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSchedulingStrategy(value: SchedulingStrategy): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
+    inline def setSchedulingStrategy(value: SchedulingStrategy): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulingStrategyUndefined: Self = StObject.set(x, "schedulingStrategy", js.undefined)
+    inline def setSchedulingStrategyUndefined: Self = StObject.set(x, "schedulingStrategy", js.undefined)
   }
 }

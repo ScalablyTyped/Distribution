@@ -48,50 +48,36 @@ object decoratorConfigMod {
   }
   object DecoratorConfigOptions {
     
-    @scala.inline
-    def apply(): DecoratorConfigOptions = {
+    inline def apply(): DecoratorConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecoratorConfigOptions]
     }
     
-    @scala.inline
-    implicit class DecoratorConfigOptionsMutableBuilder[Self <: DecoratorConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DecoratorConfigOptions](x: Self) {
       
-      @scala.inline
-      def setBound(value: Boolean): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
+      inline def setBound(value: Boolean): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
+      inline def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
       
-      @scala.inline
-      def setGetter(value: Boolean): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
+      inline def setGetter(value: Boolean): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
+      inline def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
       
-      @scala.inline
-      def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setOptionalParams(value: Boolean): Self = StObject.set(x, "optionalParams", value.asInstanceOf[js.Any])
+      inline def setOptionalParams(value: Boolean): Self = StObject.set(x, "optionalParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalParamsUndefined: Self = StObject.set(x, "optionalParams", js.undefined)
+      inline def setOptionalParamsUndefined: Self = StObject.set(x, "optionalParams", js.undefined)
       
-      @scala.inline
-      def setProperty(value: Boolean): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: Boolean): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setSetter(value: Boolean): Self = StObject.set(x, "setter", value.asInstanceOf[js.Any])
+      inline def setSetter(value: Boolean): Self = StObject.set(x, "setter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
+      inline def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
     }
   }
 }

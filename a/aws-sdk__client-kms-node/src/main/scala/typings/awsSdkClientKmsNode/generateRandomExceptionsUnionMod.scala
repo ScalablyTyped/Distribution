@@ -13,14 +13,12 @@ object generateRandomExceptionsUnionMod {
   trait GenerateRandomExceptionsUnion extends StObject
   object GenerateRandomExceptionsUnion {
     
-    @scala.inline
-    def DependencyTimeoutException(): typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
+    inline def DependencyTimeoutException(): typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
       val __obj = js.Dynamic.literal(name = "DependencyTimeoutException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException]
     }
     
-    @scala.inline
-    def KMSInternalException(): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
+    inline def KMSInternalException(): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
       val __obj = js.Dynamic.literal(name = "KMSInternalException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException]
     }

@@ -10,16 +10,13 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(amdTemplateEngine: KnockoutAMDTemplate): KnockoutStatic = {
+  inline def apply(amdTemplateEngine: KnockoutAMDTemplate): KnockoutStatic = {
     val __obj = js.Dynamic.literal(amdTemplateEngine = amdTemplateEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setAmdTemplateEngine(value: KnockoutAMDTemplate): Self = StObject.set(x, "amdTemplateEngine", value.asInstanceOf[js.Any])
+    inline def setAmdTemplateEngine(value: KnockoutAMDTemplate): Self = StObject.set(x, "amdTemplateEngine", value.asInstanceOf[js.Any])
   }
 }

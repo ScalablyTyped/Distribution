@@ -39,8 +39,7 @@ trait TransientDocumentsDocumentContent
      with XContentCreator
 object TransientDocumentsDocumentContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

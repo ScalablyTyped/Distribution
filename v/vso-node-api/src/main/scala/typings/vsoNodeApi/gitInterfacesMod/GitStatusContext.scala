@@ -18,19 +18,15 @@ trait GitStatusContext extends StObject {
 }
 object GitStatusContext {
   
-  @scala.inline
-  def apply(genre: String, name: String): GitStatusContext = {
+  inline def apply(genre: String, name: String): GitStatusContext = {
     val __obj = js.Dynamic.literal(genre = genre.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitStatusContext]
   }
   
-  @scala.inline
-  implicit class GitStatusContextMutableBuilder[Self <: GitStatusContext] (val x: Self) extends AnyVal {
+  extension [Self <: GitStatusContext](x: Self) {
     
-    @scala.inline
-    def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+    inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

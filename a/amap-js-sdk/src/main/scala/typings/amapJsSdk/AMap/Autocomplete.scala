@@ -13,19 +13,16 @@ trait Autocomplete extends StObject {
 }
 object Autocomplete {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     search: (String, js.Function2[/* status */ String, /* result */ String | AutocompleteResult, Unit]) => Unit
   ): Autocomplete = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction2(search))
     __obj.asInstanceOf[Autocomplete]
   }
   
-  @scala.inline
-  implicit class AutocompleteMutableBuilder[Self <: Autocomplete] (val x: Self) extends AnyVal {
+  extension [Self <: Autocomplete](x: Self) {
     
-    @scala.inline
-    def setSearch(
+    inline def setSearch(
       value: (String, js.Function2[/* status */ String, /* result */ String | AutocompleteResult, Unit]) => Unit
     ): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
   }

@@ -54,36 +54,31 @@ object mod {
   @JSImport("vivus", "EASE")
   @js.native
   def EASE: TimingFunction = js.native
-  @scala.inline
-  def EASE_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE")(x.asInstanceOf[js.Any])
+  inline def EASE_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("vivus", "EASE_IN")
   @js.native
   def EASE_IN: TimingFunction = js.native
-  @scala.inline
-  def EASE_IN_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE_IN")(x.asInstanceOf[js.Any])
+  inline def EASE_IN_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE_IN")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("vivus", "EASE_OUT")
   @js.native
   def EASE_OUT: TimingFunction = js.native
-  @scala.inline
-  def EASE_OUT_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE_OUT")(x.asInstanceOf[js.Any])
+  inline def EASE_OUT_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE_OUT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("vivus", "EASE_OUT_BOUNCE")
   @js.native
   def EASE_OUT_BOUNCE: TimingFunction = js.native
-  @scala.inline
-  def EASE_OUT_BOUNCE_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE_OUT_BOUNCE")(x.asInstanceOf[js.Any])
+  inline def EASE_OUT_BOUNCE_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EASE_OUT_BOUNCE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("vivus", "LINEAR")
   @js.native
   def LINEAR: TimingFunction = js.native
-  @scala.inline
-  def LINEAR_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR")(x.asInstanceOf[js.Any])
+  inline def LINEAR_=(x: TimingFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR")(x.asInstanceOf[js.Any])
   
   type TimingFunction = js.Function1[/* input */ Double, Double]
   
@@ -236,86 +231,60 @@ object mod {
   }
   object VivusOptions {
     
-    @scala.inline
-    def apply(): VivusOptions = {
+    inline def apply(): VivusOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VivusOptions]
     }
     
-    @scala.inline
-    implicit class VivusOptionsMutableBuilder[Self <: VivusOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VivusOptions](x: Self) {
       
-      @scala.inline
-      def setAnimTimingFunction(value: /* input */ Double => Double): Self = StObject.set(x, "animTimingFunction", js.Any.fromFunction1(value))
+      inline def setAnimTimingFunction(value: /* input */ Double => Double): Self = StObject.set(x, "animTimingFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnimTimingFunctionUndefined: Self = StObject.set(x, "animTimingFunction", js.undefined)
+      inline def setAnimTimingFunctionUndefined: Self = StObject.set(x, "animTimingFunction", js.undefined)
       
-      @scala.inline
-      def setDashGap(value: Double): Self = StObject.set(x, "dashGap", value.asInstanceOf[js.Any])
+      inline def setDashGap(value: Double): Self = StObject.set(x, "dashGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashGapUndefined: Self = StObject.set(x, "dashGap", js.undefined)
+      inline def setDashGapUndefined: Self = StObject.set(x, "dashGap", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      @scala.inline
-      def setOnReady(value: /* vivusInstance */ Vivus => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+      inline def setOnReady(value: /* vivusInstance */ Vivus => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+      inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      @scala.inline
-      def setPathTimingFunction(value: /* input */ Double => Double): Self = StObject.set(x, "pathTimingFunction", js.Any.fromFunction1(value))
+      inline def setPathTimingFunction(value: /* input */ Double => Double): Self = StObject.set(x, "pathTimingFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPathTimingFunctionUndefined: Self = StObject.set(x, "pathTimingFunction", js.undefined)
+      inline def setPathTimingFunctionUndefined: Self = StObject.set(x, "pathTimingFunction", js.undefined)
       
-      @scala.inline
-      def setReverseStack(value: Boolean): Self = StObject.set(x, "reverseStack", value.asInstanceOf[js.Any])
+      inline def setReverseStack(value: Boolean): Self = StObject.set(x, "reverseStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseStackUndefined: Self = StObject.set(x, "reverseStack", js.undefined)
+      inline def setReverseStackUndefined: Self = StObject.set(x, "reverseStack", js.undefined)
       
-      @scala.inline
-      def setSelfDestroy(value: Boolean): Self = StObject.set(x, "selfDestroy", value.asInstanceOf[js.Any])
+      inline def setSelfDestroy(value: Boolean): Self = StObject.set(x, "selfDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfDestroyUndefined: Self = StObject.set(x, "selfDestroy", js.undefined)
+      inline def setSelfDestroyUndefined: Self = StObject.set(x, "selfDestroy", js.undefined)
       
-      @scala.inline
-      def setStart(value: inViewport | manual | autostart): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: inViewport | manual | autostart): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setType(value: delayed | sync | oneByOne | script | scenario | `scenario-sync`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: delayed | sync | oneByOne | script | scenario | `scenario-sync`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

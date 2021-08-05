@@ -23,8 +23,7 @@ trait AddApplicationReferenceDataSourceRequest extends StObject {
 }
 object AddApplicationReferenceDataSourceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationName: ApplicationName,
     CurrentApplicationVersionId: ApplicationVersionId,
     ReferenceDataSource: ReferenceDataSource
@@ -33,16 +32,12 @@ object AddApplicationReferenceDataSourceRequest {
     __obj.asInstanceOf[AddApplicationReferenceDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class AddApplicationReferenceDataSourceRequestMutableBuilder[Self <: AddApplicationReferenceDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationReferenceDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceDataSource(value: ReferenceDataSource): Self = StObject.set(x, "ReferenceDataSource", value.asInstanceOf[js.Any])
+    inline def setReferenceDataSource(value: ReferenceDataSource): Self = StObject.set(x, "ReferenceDataSource", value.asInstanceOf[js.Any])
   }
 }

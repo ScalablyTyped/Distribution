@@ -18,28 +18,21 @@ trait DescribeMaintenanceWindowExecutionTasksResult extends StObject {
 }
 object DescribeMaintenanceWindowExecutionTasksResult {
   
-  @scala.inline
-  def apply(): DescribeMaintenanceWindowExecutionTasksResult = {
+  inline def apply(): DescribeMaintenanceWindowExecutionTasksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMaintenanceWindowExecutionTasksResult]
   }
   
-  @scala.inline
-  implicit class DescribeMaintenanceWindowExecutionTasksResultMutableBuilder[Self <: DescribeMaintenanceWindowExecutionTasksResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMaintenanceWindowExecutionTasksResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWindowExecutionTaskIdentities(value: MaintenanceWindowExecutionTaskIdentityList): Self = StObject.set(x, "WindowExecutionTaskIdentities", value.asInstanceOf[js.Any])
+    inline def setWindowExecutionTaskIdentities(value: MaintenanceWindowExecutionTaskIdentityList): Self = StObject.set(x, "WindowExecutionTaskIdentities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowExecutionTaskIdentitiesUndefined: Self = StObject.set(x, "WindowExecutionTaskIdentities", js.undefined)
+    inline def setWindowExecutionTaskIdentitiesUndefined: Self = StObject.set(x, "WindowExecutionTaskIdentities", js.undefined)
     
-    @scala.inline
-    def setWindowExecutionTaskIdentitiesVarargs(value: MaintenanceWindowExecutionTaskIdentity*): Self = StObject.set(x, "WindowExecutionTaskIdentities", js.Array(value :_*))
+    inline def setWindowExecutionTaskIdentitiesVarargs(value: MaintenanceWindowExecutionTaskIdentity*): Self = StObject.set(x, "WindowExecutionTaskIdentities", js.Array(value :_*))
   }
 }

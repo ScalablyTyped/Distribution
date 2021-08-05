@@ -16,20 +16,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setJsonPreprocessor(value: JsonPreprocessorOptions): Self = StObject.set(x, "jsonPreprocessor", value.asInstanceOf[js.Any])
+      inline def setJsonPreprocessor(value: JsonPreprocessorOptions): Self = StObject.set(x, "jsonPreprocessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonPreprocessorUndefined: Self = StObject.set(x, "jsonPreprocessor", js.undefined)
+      inline def setJsonPreprocessorUndefined: Self = StObject.set(x, "jsonPreprocessor", js.undefined)
     }
   }
   
@@ -51,26 +47,20 @@ object mod {
   }
   object JsonPreprocessorOptions {
     
-    @scala.inline
-    def apply(): JsonPreprocessorOptions = {
+    inline def apply(): JsonPreprocessorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonPreprocessorOptions]
     }
     
-    @scala.inline
-    implicit class JsonPreprocessorOptionsMutableBuilder[Self <: JsonPreprocessorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsonPreprocessorOptions](x: Self) {
       
-      @scala.inline
-      def setStripPrefix(value: String): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
+      inline def setStripPrefix(value: String): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripPrefixUndefined: Self = StObject.set(x, "stripPrefix", js.undefined)
+      inline def setStripPrefixUndefined: Self = StObject.set(x, "stripPrefix", js.undefined)
       
-      @scala.inline
-      def setVarName(value: String): Self = StObject.set(x, "varName", value.asInstanceOf[js.Any])
+      inline def setVarName(value: String): Self = StObject.set(x, "varName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarNameUndefined: Self = StObject.set(x, "varName", js.undefined)
+      inline def setVarNameUndefined: Self = StObject.set(x, "varName", js.undefined)
     }
   }
 }

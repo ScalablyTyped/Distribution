@@ -19,8 +19,7 @@ trait WebCLImageDescriptor extends StObject {
 }
 object WebCLImageDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channelOrder: ChannelOrder,
     channelType: ChannelType,
     height: Double,
@@ -31,22 +30,16 @@ object WebCLImageDescriptor {
     __obj.asInstanceOf[WebCLImageDescriptor]
   }
   
-  @scala.inline
-  implicit class WebCLImageDescriptorMutableBuilder[Self <: WebCLImageDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLImageDescriptor](x: Self) {
     
-    @scala.inline
-    def setChannelOrder(value: ChannelOrder): Self = StObject.set(x, "channelOrder", value.asInstanceOf[js.Any])
+    inline def setChannelOrder(value: ChannelOrder): Self = StObject.set(x, "channelOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelType(value: ChannelType): Self = StObject.set(x, "channelType", value.asInstanceOf[js.Any])
+    inline def setChannelType(value: ChannelType): Self = StObject.set(x, "channelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowPitch(value: Double): Self = StObject.set(x, "rowPitch", value.asInstanceOf[js.Any])
+    inline def setRowPitch(value: Double): Self = StObject.set(x, "rowPitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

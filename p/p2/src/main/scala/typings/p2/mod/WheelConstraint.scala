@@ -12,7 +12,7 @@ class WheelConstraint protected () extends Constraint {
   
   var engineForce: Double = js.native
   
-  var forwardEquation: FrictionEquation = js.native
+  /* protected */ var forwardEquation: FrictionEquation = js.native
   
   def getSpeed(): Double = js.native
   
@@ -24,9 +24,9 @@ class WheelConstraint protected () extends Constraint {
   
   def setSideFriction(force: Double): Unit = js.native
   
-  var sideEquation: FrictionEquation = js.native
+  /* protected */ var sideEquation: FrictionEquation = js.native
   
   var steerValue: Double = js.native
   
-  var vehicle: TopDownVehicle = js.native
+  /* protected */ var vehicle: TopDownVehicle = js.native
 }

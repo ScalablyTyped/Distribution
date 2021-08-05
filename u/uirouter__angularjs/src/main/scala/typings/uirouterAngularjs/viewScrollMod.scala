@@ -18,17 +18,14 @@ object viewScrollMod {
   }
   object UIViewScrollProvider {
     
-    @scala.inline
-    def apply(useAnchorScroll: () => Unit): UIViewScrollProvider = {
+    inline def apply(useAnchorScroll: () => Unit): UIViewScrollProvider = {
       val __obj = js.Dynamic.literal(useAnchorScroll = js.Any.fromFunction0(useAnchorScroll))
       __obj.asInstanceOf[UIViewScrollProvider]
     }
     
-    @scala.inline
-    implicit class UIViewScrollProviderMutableBuilder[Self <: UIViewScrollProvider] (val x: Self) extends AnyVal {
+    extension [Self <: UIViewScrollProvider](x: Self) {
       
-      @scala.inline
-      def setUseAnchorScroll(value: () => Unit): Self = StObject.set(x, "useAnchorScroll", js.Any.fromFunction0(value))
+      inline def setUseAnchorScroll(value: () => Unit): Self = StObject.set(x, "useAnchorScroll", js.Any.fromFunction0(value))
     }
   }
 }

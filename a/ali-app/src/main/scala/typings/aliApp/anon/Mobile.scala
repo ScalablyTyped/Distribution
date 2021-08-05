@@ -13,19 +13,15 @@ trait Mobile extends StObject {
 }
 object Mobile {
   
-  @scala.inline
-  def apply(mobile: String, name: String): Mobile = {
+  inline def apply(mobile: String, name: String): Mobile = {
     val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mobile]
   }
   
-  @scala.inline
-  implicit class MobileMutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
+  extension [Self <: Mobile](x: Self) {
     
-    @scala.inline
-    def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -18,17 +18,14 @@ object typesInvalidRelativeFileVersionEnumExceptionMod {
   }
   object InvalidRelativeFileVersionEnumException {
     
-    @scala.inline
-    def apply(): InvalidRelativeFileVersionEnumException = {
+    inline def apply(): InvalidRelativeFileVersionEnumException = {
       val __obj = js.Dynamic.literal(name = "InvalidRelativeFileVersionEnumException")
       __obj.asInstanceOf[InvalidRelativeFileVersionEnumException]
     }
     
-    @scala.inline
-    implicit class InvalidRelativeFileVersionEnumExceptionMutableBuilder[Self <: InvalidRelativeFileVersionEnumException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRelativeFileVersionEnumException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRelativeFileVersionEnumException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -13,22 +13,17 @@ trait BatchDeleteDocumentResponse extends StObject {
 }
 object BatchDeleteDocumentResponse {
   
-  @scala.inline
-  def apply(): BatchDeleteDocumentResponse = {
+  inline def apply(): BatchDeleteDocumentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteDocumentResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteDocumentResponseMutableBuilder[Self <: BatchDeleteDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setFailedDocuments(value: BatchDeleteDocumentResponseFailedDocuments): Self = StObject.set(x, "FailedDocuments", value.asInstanceOf[js.Any])
+    inline def setFailedDocuments(value: BatchDeleteDocumentResponseFailedDocuments): Self = StObject.set(x, "FailedDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedDocumentsUndefined: Self = StObject.set(x, "FailedDocuments", js.undefined)
+    inline def setFailedDocumentsUndefined: Self = StObject.set(x, "FailedDocuments", js.undefined)
     
-    @scala.inline
-    def setFailedDocumentsVarargs(value: BatchDeleteDocumentResponseFailedDocument*): Self = StObject.set(x, "FailedDocuments", js.Array(value :_*))
+    inline def setFailedDocumentsVarargs(value: BatchDeleteDocumentResponseFailedDocument*): Self = StObject.set(x, "FailedDocuments", js.Array(value :_*))
   }
 }

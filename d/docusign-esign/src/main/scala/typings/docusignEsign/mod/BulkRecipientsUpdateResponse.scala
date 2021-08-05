@@ -10,19 +10,15 @@ trait BulkRecipientsUpdateResponse extends StObject {
 }
 object BulkRecipientsUpdateResponse {
   
-  @scala.inline
-  def apply(): BulkRecipientsUpdateResponse = {
+  inline def apply(): BulkRecipientsUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkRecipientsUpdateResponse]
   }
   
-  @scala.inline
-  implicit class BulkRecipientsUpdateResponseMutableBuilder[Self <: BulkRecipientsUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkRecipientsUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setSigner(value: Signer): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+    inline def setSigner(value: Signer): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
+    inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
   }
 }

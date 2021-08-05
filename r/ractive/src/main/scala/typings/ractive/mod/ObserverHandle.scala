@@ -28,25 +28,19 @@ trait ObserverHandle extends StObject {
 }
 object ObserverHandle {
   
-  @scala.inline
-  def apply(cancel: () => Unit, isSilenced: () => Boolean, resume: () => Unit, silence: () => Unit): ObserverHandle = {
+  inline def apply(cancel: () => Unit, isSilenced: () => Boolean, resume: () => Unit, silence: () => Unit): ObserverHandle = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), isSilenced = js.Any.fromFunction0(isSilenced), resume = js.Any.fromFunction0(resume), silence = js.Any.fromFunction0(silence))
     __obj.asInstanceOf[ObserverHandle]
   }
   
-  @scala.inline
-  implicit class ObserverHandleMutableBuilder[Self <: ObserverHandle] (val x: Self) extends AnyVal {
+  extension [Self <: ObserverHandle](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSilenced(value: () => Boolean): Self = StObject.set(x, "isSilenced", js.Any.fromFunction0(value))
+    inline def setIsSilenced(value: () => Boolean): Self = StObject.set(x, "isSilenced", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSilence(value: () => Unit): Self = StObject.set(x, "silence", js.Any.fromFunction0(value))
+    inline def setSilence(value: () => Unit): Self = StObject.set(x, "silence", js.Any.fromFunction0(value))
   }
 }

@@ -15,16 +15,13 @@ trait DOMException
 }
 object DOMException {
   
-  @scala.inline
-  def apply(Code: DOMExceptionType, Context: XInterface, Message: String): DOMException = {
+  inline def apply(Code: DOMExceptionType, Context: XInterface, Message: String): DOMException = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMException]
   }
   
-  @scala.inline
-  implicit class DOMExceptionMutableBuilder[Self <: DOMException] (val x: Self) extends AnyVal {
+  extension [Self <: DOMException](x: Self) {
     
-    @scala.inline
-    def setCode(value: DOMExceptionType): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: DOMExceptionType): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait SchemaGetOrgPolicyRequest extends StObject {
 }
 object SchemaGetOrgPolicyRequest {
   
-  @scala.inline
-  def apply(): SchemaGetOrgPolicyRequest = {
+  inline def apply(): SchemaGetOrgPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetOrgPolicyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGetOrgPolicyRequestMutableBuilder[Self <: SchemaGetOrgPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetOrgPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
   }
 }

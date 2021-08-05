@@ -8,11 +8,9 @@ object reactNativeShareExtensionStrings {
   
   @js.native
   sealed trait imagesSlashAsterisk extends StObject
-  @scala.inline
-  def imagesSlashAsterisk: imagesSlashAsterisk = "images/*".asInstanceOf[imagesSlashAsterisk]
+  inline def imagesSlashAsterisk: imagesSlashAsterisk = "images/*".asInstanceOf[imagesSlashAsterisk]
   
   @js.native
   sealed trait textSlashplain extends StObject
-  @scala.inline
-  def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
+  inline def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
 }

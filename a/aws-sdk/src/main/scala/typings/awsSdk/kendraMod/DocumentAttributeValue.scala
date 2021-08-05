@@ -28,40 +28,29 @@ trait DocumentAttributeValue extends StObject {
 }
 object DocumentAttributeValue {
   
-  @scala.inline
-  def apply(): DocumentAttributeValue = {
+  inline def apply(): DocumentAttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentAttributeValue]
   }
   
-  @scala.inline
-  implicit class DocumentAttributeValueMutableBuilder[Self <: DocumentAttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAttributeValue](x: Self) {
     
-    @scala.inline
-    def setDateValue(value: Timestamp): Self = StObject.set(x, "DateValue", value.asInstanceOf[js.Any])
+    inline def setDateValue(value: Timestamp): Self = StObject.set(x, "DateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateValueUndefined: Self = StObject.set(x, "DateValue", js.undefined)
+    inline def setDateValueUndefined: Self = StObject.set(x, "DateValue", js.undefined)
     
-    @scala.inline
-    def setLongValue(value: Long): Self = StObject.set(x, "LongValue", value.asInstanceOf[js.Any])
+    inline def setLongValue(value: Long): Self = StObject.set(x, "LongValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValueUndefined: Self = StObject.set(x, "LongValue", js.undefined)
+    inline def setLongValueUndefined: Self = StObject.set(x, "LongValue", js.undefined)
     
-    @scala.inline
-    def setStringListValue(value: DocumentAttributeStringListValue): Self = StObject.set(x, "StringListValue", value.asInstanceOf[js.Any])
+    inline def setStringListValue(value: DocumentAttributeStringListValue): Self = StObject.set(x, "StringListValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringListValueUndefined: Self = StObject.set(x, "StringListValue", js.undefined)
+    inline def setStringListValueUndefined: Self = StObject.set(x, "StringListValue", js.undefined)
     
-    @scala.inline
-    def setStringListValueVarargs(value: String*): Self = StObject.set(x, "StringListValue", js.Array(value :_*))
+    inline def setStringListValueVarargs(value: String*): Self = StObject.set(x, "StringListValue", js.Array(value :_*))
     
-    @scala.inline
-    def setStringValue(value: DocumentAttributeStringValue): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: DocumentAttributeStringValue): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
   }
 }

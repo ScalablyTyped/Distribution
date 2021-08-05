@@ -19,6 +19,5 @@ object Slider {
   @JSImport("antd-mobile", "Slider.defaultProps")
   @js.native
   def defaultProps: PrefixCls = js.native
-  @scala.inline
-  def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

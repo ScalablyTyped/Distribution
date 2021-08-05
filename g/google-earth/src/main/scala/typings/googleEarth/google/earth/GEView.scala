@@ -71,8 +71,7 @@ trait GEView extends StObject {
 }
 object GEView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copyAsCamera: KmlAltitudeModeEnum => KmlCamera,
     copyAsLookAt: KmlAltitudeModeEnum => KmlLookAt,
     getViewportGlobeBounds: () => KmlLatLonBox,
@@ -84,25 +83,18 @@ object GEView {
     __obj.asInstanceOf[GEView]
   }
   
-  @scala.inline
-  implicit class GEViewMutableBuilder[Self <: GEView] (val x: Self) extends AnyVal {
+  extension [Self <: GEView](x: Self) {
     
-    @scala.inline
-    def setCopyAsCamera(value: KmlAltitudeModeEnum => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction1(value))
+    inline def setCopyAsCamera(value: KmlAltitudeModeEnum => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyAsLookAt(value: KmlAltitudeModeEnum => KmlLookAt): Self = StObject.set(x, "copyAsLookAt", js.Any.fromFunction1(value))
+    inline def setCopyAsLookAt(value: KmlAltitudeModeEnum => KmlLookAt): Self = StObject.set(x, "copyAsLookAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetViewportGlobeBounds(value: () => KmlLatLonBox): Self = StObject.set(x, "getViewportGlobeBounds", js.Any.fromFunction0(value))
+    inline def setGetViewportGlobeBounds(value: () => KmlLatLonBox): Self = StObject.set(x, "getViewportGlobeBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHitTest(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum, GEHitTestModeEnum) => GEHitTestResult): Self = StObject.set(x, "hitTest", js.Any.fromFunction5(value))
+    inline def setHitTest(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum, GEHitTestModeEnum) => GEHitTestResult): Self = StObject.set(x, "hitTest", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setProject(value: (Double, Double, Double, KmlAltitudeModeEnum) => KmlVec2): Self = StObject.set(x, "project", js.Any.fromFunction4(value))
+    inline def setProject(value: (Double, Double, Double, KmlAltitudeModeEnum) => KmlVec2): Self = StObject.set(x, "project", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetAbstractView(value: KmlAbstractView => Unit): Self = StObject.set(x, "setAbstractView", js.Any.fromFunction1(value))
+    inline def setSetAbstractView(value: KmlAbstractView => Unit): Self = StObject.set(x, "setAbstractView", js.Any.fromFunction1(value))
   }
 }

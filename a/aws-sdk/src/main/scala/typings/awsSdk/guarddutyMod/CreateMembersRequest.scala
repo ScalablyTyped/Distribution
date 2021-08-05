@@ -18,22 +18,17 @@ trait CreateMembersRequest extends StObject {
 }
 object CreateMembersRequest {
   
-  @scala.inline
-  def apply(AccountDetails: AccountDetails, DetectorId: DetectorId): CreateMembersRequest = {
+  inline def apply(AccountDetails: AccountDetails, DetectorId: DetectorId): CreateMembersRequest = {
     val __obj = js.Dynamic.literal(AccountDetails = AccountDetails.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMembersRequest]
   }
   
-  @scala.inline
-  implicit class CreateMembersRequestMutableBuilder[Self <: CreateMembersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMembersRequest](x: Self) {
     
-    @scala.inline
-    def setAccountDetails(value: AccountDetails): Self = StObject.set(x, "AccountDetails", value.asInstanceOf[js.Any])
+    inline def setAccountDetails(value: AccountDetails): Self = StObject.set(x, "AccountDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountDetailsVarargs(value: AccountDetail*): Self = StObject.set(x, "AccountDetails", js.Array(value :_*))
+    inline def setAccountDetailsVarargs(value: AccountDetail*): Self = StObject.set(x, "AccountDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

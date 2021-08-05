@@ -13,22 +13,17 @@ trait GetConnectedBluetoothDevicesSuccessCallbackResult extends StObject {
 }
 object GetConnectedBluetoothDevicesSuccessCallbackResult {
   
-  @scala.inline
-  def apply(devices: js.Array[BluetoothDeviceInfo], errMsg: String): GetConnectedBluetoothDevicesSuccessCallbackResult = {
+  inline def apply(devices: js.Array[BluetoothDeviceInfo], errMsg: String): GetConnectedBluetoothDevicesSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectedBluetoothDevicesSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetConnectedBluetoothDevicesSuccessCallbackResultMutableBuilder[Self <: GetConnectedBluetoothDevicesSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectedBluetoothDevicesSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[BluetoothDeviceInfo]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[BluetoothDeviceInfo]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesVarargs(value: BluetoothDeviceInfo*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: BluetoothDeviceInfo*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

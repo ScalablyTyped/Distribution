@@ -14,25 +14,19 @@ trait DatabaseType extends StObject {
 }
 object DatabaseType {
   
-  @scala.inline
-  def apply(): DatabaseType = {
+  inline def apply(): DatabaseType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatabaseType]
   }
   
-  @scala.inline
-  implicit class DatabaseTypeMutableBuilder[Self <: DatabaseType] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseType](x: Self) {
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

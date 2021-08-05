@@ -14,28 +14,21 @@ trait NotifierSpec extends StObject {
 }
 object NotifierSpec {
   
-  @scala.inline
-  def apply(): NotifierSpec = {
+  inline def apply(): NotifierSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifierSpec]
   }
   
-  @scala.inline
-  implicit class NotifierSpecMutableBuilder[Self <: NotifierSpec] (val x: Self) extends AnyVal {
+  extension [Self <: NotifierSpec](x: Self) {
     
-    @scala.inline
-    def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setSecrets(value: js.Array[NotifierSecret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setSecrets(value: js.Array[NotifierSecret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
+    inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
     
-    @scala.inline
-    def setSecretsVarargs(value: NotifierSecret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: NotifierSecret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
   }
 }

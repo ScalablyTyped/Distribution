@@ -14,19 +14,15 @@ trait SchemaSslPolicyReference extends StObject {
 }
 object SchemaSslPolicyReference {
   
-  @scala.inline
-  def apply(): SchemaSslPolicyReference = {
+  inline def apply(): SchemaSslPolicyReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSslPolicyReference]
   }
   
-  @scala.inline
-  implicit class SchemaSslPolicyReferenceMutableBuilder[Self <: SchemaSslPolicyReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSslPolicyReference](x: Self) {
     
-    @scala.inline
-    def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
+    inline def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
+    inline def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
   }
 }

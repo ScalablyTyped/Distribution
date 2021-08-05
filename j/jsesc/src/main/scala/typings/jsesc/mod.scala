@@ -13,10 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(argument: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(argument: js.Any, opts: Opts): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(argument: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(argument: js.Any, opts: Opts): String = (^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("jsesc", JSImport.Namespace)
   @js.native
@@ -25,8 +23,7 @@ object mod {
   @JSImport("jsesc", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   trait Opts extends StObject {
     
@@ -114,86 +111,60 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(): Opts = {
+    inline def apply(): Opts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setEs6(value: Boolean): Self = StObject.set(x, "es6", value.asInstanceOf[js.Any])
+      inline def setEs6(value: Boolean): Self = StObject.set(x, "es6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs6Undefined: Self = StObject.set(x, "es6", js.undefined)
+      inline def setEs6Undefined: Self = StObject.set(x, "es6", js.undefined)
       
-      @scala.inline
-      def setEscapeEverything(value: Boolean): Self = StObject.set(x, "escapeEverything", value.asInstanceOf[js.Any])
+      inline def setEscapeEverything(value: Boolean): Self = StObject.set(x, "escapeEverything", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeEverythingUndefined: Self = StObject.set(x, "escapeEverything", js.undefined)
+      inline def setEscapeEverythingUndefined: Self = StObject.set(x, "escapeEverything", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentLevel(value: Double): Self = StObject.set(x, "indentLevel", value.asInstanceOf[js.Any])
+      inline def setIndentLevel(value: Double): Self = StObject.set(x, "indentLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentLevelUndefined: Self = StObject.set(x, "indentLevel", js.undefined)
+      inline def setIndentLevelUndefined: Self = StObject.set(x, "indentLevel", js.undefined)
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setIsScriptContext(value: Boolean): Self = StObject.set(x, "isScriptContext", value.asInstanceOf[js.Any])
+      inline def setIsScriptContext(value: Boolean): Self = StObject.set(x, "isScriptContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScriptContextUndefined: Self = StObject.set(x, "isScriptContext", js.undefined)
+      inline def setIsScriptContextUndefined: Self = StObject.set(x, "isScriptContext", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setLowercaseHex(value: Boolean): Self = StObject.set(x, "lowercaseHex", value.asInstanceOf[js.Any])
+      inline def setLowercaseHex(value: Boolean): Self = StObject.set(x, "lowercaseHex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowercaseHexUndefined: Self = StObject.set(x, "lowercaseHex", js.undefined)
+      inline def setLowercaseHexUndefined: Self = StObject.set(x, "lowercaseHex", js.undefined)
       
-      @scala.inline
-      def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
+      inline def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
+      inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
       
-      @scala.inline
-      def setNumbers(value: binary | octal | decimal | hexadecimal): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      inline def setNumbers(value: binary | octal | decimal | hexadecimal): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
+      inline def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
       
-      @scala.inline
-      def setQuotes(value: single | double | backtick): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: single | double | backtick): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+      inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
 }

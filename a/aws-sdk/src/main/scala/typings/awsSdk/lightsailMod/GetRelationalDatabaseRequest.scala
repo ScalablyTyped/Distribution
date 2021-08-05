@@ -13,16 +13,13 @@ trait GetRelationalDatabaseRequest extends StObject {
 }
 object GetRelationalDatabaseRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseRequestMutableBuilder[Self <: GetRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }
 }

@@ -60,67 +60,47 @@ trait CreateProfileJobRequest extends StObject {
 }
 object CreateProfileJobRequest {
   
-  @scala.inline
-  def apply(DatasetName: DatasetName, Name: JobName, OutputLocation: S3Location, RoleArn: Arn): CreateProfileJobRequest = {
+  inline def apply(DatasetName: DatasetName, Name: JobName, OutputLocation: S3Location, RoleArn: Arn): CreateProfileJobRequest = {
     val __obj = js.Dynamic.literal(DatasetName = DatasetName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OutputLocation = OutputLocation.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProfileJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateProfileJobRequestMutableBuilder[Self <: CreateProfileJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProfileJobRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyArn(value: EncryptionKeyArn): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
+    inline def setEncryptionKeyArn(value: EncryptionKeyArn): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
+    inline def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
     
-    @scala.inline
-    def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "EncryptionMode", value.asInstanceOf[js.Any])
+    inline def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "EncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionModeUndefined: Self = StObject.set(x, "EncryptionMode", js.undefined)
+    inline def setEncryptionModeUndefined: Self = StObject.set(x, "EncryptionMode", js.undefined)
     
-    @scala.inline
-    def setLogSubscription(value: LogSubscription): Self = StObject.set(x, "LogSubscription", value.asInstanceOf[js.Any])
+    inline def setLogSubscription(value: LogSubscription): Self = StObject.set(x, "LogSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogSubscriptionUndefined: Self = StObject.set(x, "LogSubscription", js.undefined)
+    inline def setLogSubscriptionUndefined: Self = StObject.set(x, "LogSubscription", js.undefined)
     
-    @scala.inline
-    def setMaxCapacity(value: MaxCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
+    inline def setMaxCapacity(value: MaxCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
+    inline def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: MaxRetries): Self = StObject.set(x, "MaxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: MaxRetries): Self = StObject.set(x, "MaxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "MaxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "MaxRetries", js.undefined)
     
-    @scala.inline
-    def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLocation(value: S3Location): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
+    inline def setOutputLocation(value: S3Location): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
   }
 }

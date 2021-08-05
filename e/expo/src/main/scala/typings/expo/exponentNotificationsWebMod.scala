@@ -16,38 +16,26 @@ object exponentNotificationsWebMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def cancelAllScheduledNotificationsAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAllScheduledNotificationsAsync")().asInstanceOf[js.Promise[Unit]]
+    inline def cancelAllScheduledNotificationsAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAllScheduledNotificationsAsync")().asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def cancelScheduledNotificationAsync(notificationId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelScheduledNotificationAsync")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def cancelScheduledNotificationAsync(notificationId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelScheduledNotificationAsync")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def dismissAllNotifications(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAllNotifications")().asInstanceOf[js.Promise[Unit]]
+    inline def dismissAllNotifications(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAllNotifications")().asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def dismissNotification(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotification")().asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def dismissNotification(notificationId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotification")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def dismissNotification(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotification")().asInstanceOf[js.Promise[Unit]]
+    inline def dismissNotification(notificationId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotification")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def getBadgeNumberAsync(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeNumberAsync")().asInstanceOf[js.Promise[Double]]
+    inline def getBadgeNumberAsync(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeNumberAsync")().asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def getDevicePushTokenAsync(): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePushTokenAsync")().asInstanceOf[js.Promise[Data]]
+    inline def getDevicePushTokenAsync(): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePushTokenAsync")().asInstanceOf[js.Promise[Data]]
     
-    @scala.inline
-    def getExponentPushTokenAsync(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExponentPushTokenAsync")().asInstanceOf[js.Promise[String]]
+    inline def getExponentPushTokenAsync(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExponentPushTokenAsync")().asInstanceOf[js.Promise[String]]
     
-    @scala.inline
-    def presentLocalNotification(notification: LocalNotification): js.Promise[LocalNotificationId] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentLocalNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalNotificationId]]
+    inline def presentLocalNotification(notification: LocalNotification): js.Promise[LocalNotificationId] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentLocalNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalNotificationId]]
     
-    @scala.inline
-    def scheduleLocalNotification(notification: js.Any): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    @scala.inline
-    def scheduleLocalNotification(notification: js.Any, options: IntervalMs): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotification")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def scheduleLocalNotification(notification: js.Any): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def scheduleLocalNotification(notification: js.Any, options: IntervalMs): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleLocalNotification")(notification.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @scala.inline
-    def setBadgeNumberAsync(badgeNumber: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeNumberAsync")(badgeNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def setBadgeNumberAsync(badgeNumber: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeNumberAsync")(badgeNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
 }

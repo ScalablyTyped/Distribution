@@ -18,25 +18,19 @@ trait TerminateRecommendationDetail extends StObject {
 }
 object TerminateRecommendationDetail {
   
-  @scala.inline
-  def apply(): TerminateRecommendationDetail = {
+  inline def apply(): TerminateRecommendationDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminateRecommendationDetail]
   }
   
-  @scala.inline
-  implicit class TerminateRecommendationDetailMutableBuilder[Self <: TerminateRecommendationDetail] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateRecommendationDetail](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setEstimatedMonthlySavings(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavings", value.asInstanceOf[js.Any])
+    inline def setEstimatedMonthlySavings(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedMonthlySavingsUndefined: Self = StObject.set(x, "EstimatedMonthlySavings", js.undefined)
+    inline def setEstimatedMonthlySavingsUndefined: Self = StObject.set(x, "EstimatedMonthlySavings", js.undefined)
   }
 }

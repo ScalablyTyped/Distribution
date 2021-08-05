@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSaveOptions extends StObject
 object WdSaveOptions {
   
-  @scala.inline
-  def wdDoNotSaveChanges: `0` = 0.asInstanceOf[`0`]
+  inline def wdDoNotSaveChanges: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdPromptToSaveChanges: `-2` = -2.asInstanceOf[`-2`]
+  inline def wdPromptToSaveChanges: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def wdSaveChanges: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdSaveChanges: `-1` = -1.asInstanceOf[`-1`]
 }

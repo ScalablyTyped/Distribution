@@ -129,97 +129,67 @@ trait WorksheetProtectionOptions extends StObject {
 }
 object WorksheetProtectionOptions {
   
-  @scala.inline
-  def apply(): WorksheetProtectionOptions = {
+  inline def apply(): WorksheetProtectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetProtectionOptions]
   }
   
-  @scala.inline
-  implicit class WorksheetProtectionOptionsMutableBuilder[Self <: WorksheetProtectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetProtectionOptions](x: Self) {
     
-    @scala.inline
-    def setAllowAutoFilter(value: Boolean): Self = StObject.set(x, "allowAutoFilter", value.asInstanceOf[js.Any])
+    inline def setAllowAutoFilter(value: Boolean): Self = StObject.set(x, "allowAutoFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAutoFilterUndefined: Self = StObject.set(x, "allowAutoFilter", js.undefined)
+    inline def setAllowAutoFilterUndefined: Self = StObject.set(x, "allowAutoFilter", js.undefined)
     
-    @scala.inline
-    def setAllowDeleteColumns(value: Boolean): Self = StObject.set(x, "allowDeleteColumns", value.asInstanceOf[js.Any])
+    inline def setAllowDeleteColumns(value: Boolean): Self = StObject.set(x, "allowDeleteColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDeleteColumnsUndefined: Self = StObject.set(x, "allowDeleteColumns", js.undefined)
+    inline def setAllowDeleteColumnsUndefined: Self = StObject.set(x, "allowDeleteColumns", js.undefined)
     
-    @scala.inline
-    def setAllowDeleteRows(value: Boolean): Self = StObject.set(x, "allowDeleteRows", value.asInstanceOf[js.Any])
+    inline def setAllowDeleteRows(value: Boolean): Self = StObject.set(x, "allowDeleteRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDeleteRowsUndefined: Self = StObject.set(x, "allowDeleteRows", js.undefined)
+    inline def setAllowDeleteRowsUndefined: Self = StObject.set(x, "allowDeleteRows", js.undefined)
     
-    @scala.inline
-    def setAllowEditObjects(value: Boolean): Self = StObject.set(x, "allowEditObjects", value.asInstanceOf[js.Any])
+    inline def setAllowEditObjects(value: Boolean): Self = StObject.set(x, "allowEditObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditObjectsUndefined: Self = StObject.set(x, "allowEditObjects", js.undefined)
+    inline def setAllowEditObjectsUndefined: Self = StObject.set(x, "allowEditObjects", js.undefined)
     
-    @scala.inline
-    def setAllowEditScenarios(value: Boolean): Self = StObject.set(x, "allowEditScenarios", value.asInstanceOf[js.Any])
+    inline def setAllowEditScenarios(value: Boolean): Self = StObject.set(x, "allowEditScenarios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditScenariosUndefined: Self = StObject.set(x, "allowEditScenarios", js.undefined)
+    inline def setAllowEditScenariosUndefined: Self = StObject.set(x, "allowEditScenarios", js.undefined)
     
-    @scala.inline
-    def setAllowFormatCells(value: Boolean): Self = StObject.set(x, "allowFormatCells", value.asInstanceOf[js.Any])
+    inline def setAllowFormatCells(value: Boolean): Self = StObject.set(x, "allowFormatCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFormatCellsUndefined: Self = StObject.set(x, "allowFormatCells", js.undefined)
+    inline def setAllowFormatCellsUndefined: Self = StObject.set(x, "allowFormatCells", js.undefined)
     
-    @scala.inline
-    def setAllowFormatColumns(value: Boolean): Self = StObject.set(x, "allowFormatColumns", value.asInstanceOf[js.Any])
+    inline def setAllowFormatColumns(value: Boolean): Self = StObject.set(x, "allowFormatColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFormatColumnsUndefined: Self = StObject.set(x, "allowFormatColumns", js.undefined)
+    inline def setAllowFormatColumnsUndefined: Self = StObject.set(x, "allowFormatColumns", js.undefined)
     
-    @scala.inline
-    def setAllowFormatRows(value: Boolean): Self = StObject.set(x, "allowFormatRows", value.asInstanceOf[js.Any])
+    inline def setAllowFormatRows(value: Boolean): Self = StObject.set(x, "allowFormatRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFormatRowsUndefined: Self = StObject.set(x, "allowFormatRows", js.undefined)
+    inline def setAllowFormatRowsUndefined: Self = StObject.set(x, "allowFormatRows", js.undefined)
     
-    @scala.inline
-    def setAllowInsertColumns(value: Boolean): Self = StObject.set(x, "allowInsertColumns", value.asInstanceOf[js.Any])
+    inline def setAllowInsertColumns(value: Boolean): Self = StObject.set(x, "allowInsertColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInsertColumnsUndefined: Self = StObject.set(x, "allowInsertColumns", js.undefined)
+    inline def setAllowInsertColumnsUndefined: Self = StObject.set(x, "allowInsertColumns", js.undefined)
     
-    @scala.inline
-    def setAllowInsertHyperlinks(value: Boolean): Self = StObject.set(x, "allowInsertHyperlinks", value.asInstanceOf[js.Any])
+    inline def setAllowInsertHyperlinks(value: Boolean): Self = StObject.set(x, "allowInsertHyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInsertHyperlinksUndefined: Self = StObject.set(x, "allowInsertHyperlinks", js.undefined)
+    inline def setAllowInsertHyperlinksUndefined: Self = StObject.set(x, "allowInsertHyperlinks", js.undefined)
     
-    @scala.inline
-    def setAllowInsertRows(value: Boolean): Self = StObject.set(x, "allowInsertRows", value.asInstanceOf[js.Any])
+    inline def setAllowInsertRows(value: Boolean): Self = StObject.set(x, "allowInsertRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInsertRowsUndefined: Self = StObject.set(x, "allowInsertRows", js.undefined)
+    inline def setAllowInsertRowsUndefined: Self = StObject.set(x, "allowInsertRows", js.undefined)
     
-    @scala.inline
-    def setAllowPivotTables(value: Boolean): Self = StObject.set(x, "allowPivotTables", value.asInstanceOf[js.Any])
+    inline def setAllowPivotTables(value: Boolean): Self = StObject.set(x, "allowPivotTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPivotTablesUndefined: Self = StObject.set(x, "allowPivotTables", js.undefined)
+    inline def setAllowPivotTablesUndefined: Self = StObject.set(x, "allowPivotTables", js.undefined)
     
-    @scala.inline
-    def setAllowSort(value: Boolean): Self = StObject.set(x, "allowSort", value.asInstanceOf[js.Any])
+    inline def setAllowSort(value: Boolean): Self = StObject.set(x, "allowSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSortUndefined: Self = StObject.set(x, "allowSort", js.undefined)
+    inline def setAllowSortUndefined: Self = StObject.set(x, "allowSort", js.undefined)
     
-    @scala.inline
-    def setSelectionMode(value: ProtectionSelectionMode | Normal | Unlocked | None): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    inline def setSelectionMode(value: ProtectionSelectionMode | Normal | Unlocked | None): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
   }
 }

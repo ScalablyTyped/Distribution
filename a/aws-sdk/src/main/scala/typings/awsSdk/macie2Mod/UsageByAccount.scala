@@ -28,37 +28,27 @@ trait UsageByAccount extends StObject {
 }
 object UsageByAccount {
   
-  @scala.inline
-  def apply(): UsageByAccount = {
+  inline def apply(): UsageByAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageByAccount]
   }
   
-  @scala.inline
-  implicit class UsageByAccountMutableBuilder[Self <: UsageByAccount] (val x: Self) extends AnyVal {
+  extension [Self <: UsageByAccount](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setEstimatedCost(value: string): Self = StObject.set(x, "estimatedCost", value.asInstanceOf[js.Any])
+    inline def setEstimatedCost(value: string): Self = StObject.set(x, "estimatedCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedCostUndefined: Self = StObject.set(x, "estimatedCost", js.undefined)
+    inline def setEstimatedCostUndefined: Self = StObject.set(x, "estimatedCost", js.undefined)
     
-    @scala.inline
-    def setServiceLimit(value: ServiceLimit): Self = StObject.set(x, "serviceLimit", value.asInstanceOf[js.Any])
+    inline def setServiceLimit(value: ServiceLimit): Self = StObject.set(x, "serviceLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceLimitUndefined: Self = StObject.set(x, "serviceLimit", js.undefined)
+    inline def setServiceLimitUndefined: Self = StObject.set(x, "serviceLimit", js.undefined)
     
-    @scala.inline
-    def setType(value: UsageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UsageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

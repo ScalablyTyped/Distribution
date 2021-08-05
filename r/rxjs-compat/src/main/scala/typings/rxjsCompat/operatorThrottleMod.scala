@@ -10,15 +10,13 @@ object operatorThrottleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def throttle[T](
+  inline def throttle[T](
     durationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(durationSelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def throttle[T](
+  inline def throttle[T](
     durationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any

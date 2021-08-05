@@ -30,38 +30,28 @@ object distMod {
   }
   object AccessorPropertyDescriptor {
     
-    @scala.inline
-    def apply[T](): AccessorPropertyDescriptor[T] = {
+    inline def apply[T](): AccessorPropertyDescriptor[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessorPropertyDescriptor[T]]
     }
     
-    @scala.inline
-    implicit class AccessorPropertyDescriptorMutableBuilder[Self <: AccessorPropertyDescriptor[?], T] (val x: Self & AccessorPropertyDescriptor[T]) extends AnyVal {
+    extension [Self <: AccessorPropertyDescriptor[?], T](x: Self & AccessorPropertyDescriptor[T]) {
       
-      @scala.inline
-      def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+      inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
+      inline def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
       
-      @scala.inline
-      def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+      inline def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
+      inline def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
       
-      @scala.inline
-      def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      @scala.inline
-      def setSet(value: /* v */ T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: /* v */ T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     }
   }
   
@@ -197,35 +187,26 @@ object distMod {
   }
   object MethodPropertyDescriptor {
     
-    @scala.inline
-    def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](value: T): MethodPropertyDescriptor[T] = {
+    inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](value: T): MethodPropertyDescriptor[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MethodPropertyDescriptor[T]]
     }
     
-    @scala.inline
-    implicit class MethodPropertyDescriptorMutableBuilder[Self <: MethodPropertyDescriptor[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & MethodPropertyDescriptor[T]) extends AnyVal {
+    extension [Self <: MethodPropertyDescriptor[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & MethodPropertyDescriptor[T]) {
       
-      @scala.inline
-      def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+      inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
+      inline def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
       
-      @scala.inline
-      def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+      inline def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
+      inline def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+      inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
     }
   }
   

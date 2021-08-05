@@ -8,46 +8,37 @@ object hotShotsStrings {
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait info extends StObject
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait low extends StObject
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
   sealed trait normal extends StObject
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait tcp extends StObject
-  @scala.inline
-  def tcp: tcp = "tcp".asInstanceOf[tcp]
+  inline def tcp: tcp = "tcp".asInstanceOf[tcp]
   
   @js.native
   sealed trait udp extends StObject
-  @scala.inline
-  def udp: udp = "udp".asInstanceOf[udp]
+  inline def udp: udp = "udp".asInstanceOf[udp]
   
   @js.native
   sealed trait uds extends StObject
-  @scala.inline
-  def uds: uds = "uds".asInstanceOf[uds]
+  inline def uds: uds = "uds".asInstanceOf[uds]
   
   @js.native
   sealed trait warning extends StObject
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

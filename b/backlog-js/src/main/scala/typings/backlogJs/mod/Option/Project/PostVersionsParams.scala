@@ -16,25 +16,19 @@ trait PostVersionsParams extends StObject {
 }
 object PostVersionsParams {
   
-  @scala.inline
-  def apply(description: String, name: String, releaseDueDate: String, startDate: String): PostVersionsParams = {
+  inline def apply(description: String, name: String, releaseDueDate: String, startDate: String): PostVersionsParams = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], releaseDueDate = releaseDueDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostVersionsParams]
   }
   
-  @scala.inline
-  implicit class PostVersionsParamsMutableBuilder[Self <: PostVersionsParams] (val x: Self) extends AnyVal {
+  extension [Self <: PostVersionsParams](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDueDate(value: String): Self = StObject.set(x, "releaseDueDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDueDate(value: String): Self = StObject.set(x, "releaseDueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
   }
 }

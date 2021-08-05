@@ -10,19 +10,15 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(children: js.Array[Value]): `1` = {
+  inline def apply(children: js.Array[Value]): `1` = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[Value]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Value]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: Value*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Value*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

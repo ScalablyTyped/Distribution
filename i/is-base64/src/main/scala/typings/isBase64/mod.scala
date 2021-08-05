@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(string: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(string: String, options: IsBase64Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(string: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(string: String, options: IsBase64Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("is-base64", JSImport.Namespace)
   @js.native
@@ -27,38 +25,28 @@ object mod {
   }
   object IsBase64Options {
     
-    @scala.inline
-    def apply(): IsBase64Options = {
+    inline def apply(): IsBase64Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsBase64Options]
     }
     
-    @scala.inline
-    implicit class IsBase64OptionsMutableBuilder[Self <: IsBase64Options] (val x: Self) extends AnyVal {
+    extension [Self <: IsBase64Options](x: Self) {
       
-      @scala.inline
-      def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+      inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+      inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
       
-      @scala.inline
-      def setAllowMime(value: Boolean): Self = StObject.set(x, "allowMime", value.asInstanceOf[js.Any])
+      inline def setAllowMime(value: Boolean): Self = StObject.set(x, "allowMime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMimeUndefined: Self = StObject.set(x, "allowMime", js.undefined)
+      inline def setAllowMimeUndefined: Self = StObject.set(x, "allowMime", js.undefined)
       
-      @scala.inline
-      def setMimeRequired(value: Boolean): Self = StObject.set(x, "mimeRequired", value.asInstanceOf[js.Any])
+      inline def setMimeRequired(value: Boolean): Self = StObject.set(x, "mimeRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeRequiredUndefined: Self = StObject.set(x, "mimeRequired", js.undefined)
+      inline def setMimeRequiredUndefined: Self = StObject.set(x, "mimeRequired", js.undefined)
       
-      @scala.inline
-      def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
+      inline def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingRequiredUndefined: Self = StObject.set(x, "paddingRequired", js.undefined)
+      inline def setPaddingRequiredUndefined: Self = StObject.set(x, "paddingRequired", js.undefined)
     }
   }
 }

@@ -12,19 +12,15 @@ trait OriginalEventEventValue extends StObject {
 }
 object OriginalEventEventValue {
   
-  @scala.inline
-  def apply(originalEvent: typings.std.Event, value: Double | (js.Tuple2[Double, Double])): OriginalEventEventValue = {
+  inline def apply(originalEvent: typings.std.Event, value: Double | (js.Tuple2[Double, Double])): OriginalEventEventValue = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginalEventEventValue]
   }
   
-  @scala.inline
-  implicit class OriginalEventEventValueMutableBuilder[Self <: OriginalEventEventValue] (val x: Self) extends AnyVal {
+  extension [Self <: OriginalEventEventValue](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

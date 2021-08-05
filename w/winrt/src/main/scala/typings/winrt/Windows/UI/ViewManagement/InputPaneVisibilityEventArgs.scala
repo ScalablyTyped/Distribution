@@ -10,8 +10,7 @@ trait InputPaneVisibilityEventArgs
      with IInputPaneVisibilityEventArgs
 object InputPaneVisibilityEventArgs {
   
-  @scala.inline
-  def apply(ensuredFocusedElementInView: Boolean, occludedRect: Rect): InputPaneVisibilityEventArgs = {
+  inline def apply(ensuredFocusedElementInView: Boolean, occludedRect: Rect): InputPaneVisibilityEventArgs = {
     val __obj = js.Dynamic.literal(ensuredFocusedElementInView = ensuredFocusedElementInView.asInstanceOf[js.Any], occludedRect = occludedRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputPaneVisibilityEventArgs]
   }

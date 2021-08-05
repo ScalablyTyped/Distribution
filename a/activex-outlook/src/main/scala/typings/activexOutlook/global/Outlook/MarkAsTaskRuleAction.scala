@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.MarkAsTaskRuleAction")
 @js.native
-class MarkAsTaskRuleAction protected ()
+/* private */ class MarkAsTaskRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.MarkAsTaskRuleAction {
   
@@ -31,7 +31,7 @@ class MarkAsTaskRuleAction protected ()
   /* CompleteClass */
   var MarkInterval: OlMarkInterval = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.MarkAsTaskRuleAction_typekey")
   var OutlookDotMarkAsTaskRuleAction_typekey: typings.activexOutlook.Outlook.MarkAsTaskRuleAction = js.native
   

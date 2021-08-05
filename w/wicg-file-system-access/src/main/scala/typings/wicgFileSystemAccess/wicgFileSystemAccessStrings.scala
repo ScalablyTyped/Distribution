@@ -12,62 +12,51 @@ object wicgFileSystemAccessStrings {
   sealed trait directory
     extends StObject
        with FileSystemHandleKind
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
   sealed trait file
     extends StObject
        with FileSystemHandleKind
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait `open-directory` extends StObject
-  @scala.inline
-  def `open-directory`: `open-directory` = "open-directory".asInstanceOf[`open-directory`]
+  inline def `open-directory`: `open-directory` = "open-directory".asInstanceOf[`open-directory`]
   
   @js.native
   sealed trait `open-file` extends StObject
-  @scala.inline
-  def `open-file`: `open-file` = "open-file".asInstanceOf[`open-file`]
+  inline def `open-file`: `open-file` = "open-file".asInstanceOf[`open-file`]
   
   @js.native
   sealed trait read
     extends StObject
        with FileSystemPermissionMode
-  @scala.inline
-  def read: read = "read".asInstanceOf[read]
+  inline def read: read = "read".asInstanceOf[read]
   
   @js.native
   sealed trait readwrite
     extends StObject
        with FileSystemPermissionMode
-  @scala.inline
-  def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
+  inline def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   
   @js.native
   sealed trait sandbox extends StObject
-  @scala.inline
-  def sandbox: sandbox = "sandbox".asInstanceOf[sandbox]
+  inline def sandbox: sandbox = "sandbox".asInstanceOf[sandbox]
   
   @js.native
   sealed trait `save-file` extends StObject
-  @scala.inline
-  def `save-file`: `save-file` = "save-file".asInstanceOf[`save-file`]
+  inline def `save-file`: `save-file` = "save-file".asInstanceOf[`save-file`]
   
   @js.native
   sealed trait seek extends StObject
-  @scala.inline
-  def seek: seek = "seek".asInstanceOf[seek]
+  inline def seek: seek = "seek".asInstanceOf[seek]
   
   @js.native
   sealed trait truncate extends StObject
-  @scala.inline
-  def truncate: truncate = "truncate".asInstanceOf[truncate]
+  inline def truncate: truncate = "truncate".asInstanceOf[truncate]
   
   @js.native
   sealed trait write extends StObject
-  @scala.inline
-  def write: write = "write".asInstanceOf[write]
+  inline def write: write = "write".asInstanceOf[write]
 }

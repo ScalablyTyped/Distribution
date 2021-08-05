@@ -37,8 +37,7 @@ trait Additionaldocument extends StObject {
 }
 object Additionaldocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additional_document: IPersonDocument,
     details: String,
     details_code: String,
@@ -49,22 +48,16 @@ object Additionaldocument {
     __obj.asInstanceOf[Additionaldocument]
   }
   
-  @scala.inline
-  implicit class AdditionaldocumentMutableBuilder[Self <: Additionaldocument] (val x: Self) extends AnyVal {
+  extension [Self <: Additionaldocument](x: Self) {
     
-    @scala.inline
-    def setAdditional_document(value: IPersonDocument): Self = StObject.set(x, "additional_document", value.asInstanceOf[js.Any])
+    inline def setAdditional_document(value: IPersonDocument): Self = StObject.set(x, "additional_document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails_code(value: String): Self = StObject.set(x, "details_code", value.asInstanceOf[js.Any])
+    inline def setDetails_code(value: String): Self = StObject.set(x, "details_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: IPersonDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: IPersonDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

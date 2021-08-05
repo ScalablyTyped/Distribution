@@ -280,16 +280,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(qtip: Plugin): JQuery = {
+  inline def apply(qtip: Plugin): JQuery = {
     val __obj = js.Dynamic.literal(qtip = qtip.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setQtip(value: Plugin): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
+    inline def setQtip(value: Plugin): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
   }
 }

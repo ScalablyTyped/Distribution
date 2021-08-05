@@ -47,8 +47,7 @@ object iconImageCacheMod {
     override def setSize(maxCacheSize: Double): Unit = js.native
   }
   
-  @scala.inline
-  def shared(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shared")().asInstanceOf[Unit]
+  inline def shared(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shared")().asInstanceOf[Unit]
   
   trait IconImageCache extends StObject {
     
@@ -77,8 +76,7 @@ object iconImageCacheMod {
   }
   object IconImageCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canExpireCache: () => Boolean,
       clear: () => Unit,
       expire: () => Unit,
@@ -90,26 +88,19 @@ object iconImageCacheMod {
       __obj.asInstanceOf[IconImageCache]
     }
     
-    @scala.inline
-    implicit class IconImageCacheMutableBuilder[Self <: IconImageCache] (val x: Self) extends AnyVal {
+    extension [Self <: IconImageCache](x: Self) {
       
-      @scala.inline
-      def setCanExpireCache(value: () => Boolean): Self = StObject.set(x, "canExpireCache", js.Any.fromFunction0(value))
+      inline def setCanExpireCache(value: () => Boolean): Self = StObject.set(x, "canExpireCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExpire(value: () => Unit): Self = StObject.set(x, "expire", js.Any.fromFunction0(value))
+      inline def setExpire(value: () => Unit): Self = StObject.set(x, "expire", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: (String, String, Color) => typings.ol.iconImageMod.default): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+      inline def setGet(value: (String, String, Color) => typings.ol.iconImageMod.default): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSet(value: (String, String, Color, typings.ol.iconImageMod.default) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+      inline def setSet(value: (String, String, Color, typings.ol.iconImageMod.default) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSetSize(value: Double => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
+      inline def setSetSize(value: Double => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
     }
   }
 }

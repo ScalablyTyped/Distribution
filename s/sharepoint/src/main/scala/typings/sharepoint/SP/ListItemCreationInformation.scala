@@ -26,8 +26,7 @@ trait ListItemCreationInformation
 }
 object ListItemCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -44,25 +43,18 @@ object ListItemCreationInformation {
     __obj.asInstanceOf[ListItemCreationInformation]
   }
   
-  @scala.inline
-  implicit class ListItemCreationInformationMutableBuilder[Self <: ListItemCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_folderUrl(value: () => String): Self = StObject.set(x, "get_folderUrl", js.Any.fromFunction0(value))
+    inline def setGet_folderUrl(value: () => String): Self = StObject.set(x, "get_folderUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_leafName(value: () => String): Self = StObject.set(x, "get_leafName", js.Any.fromFunction0(value))
+    inline def setGet_leafName(value: () => String): Self = StObject.set(x, "get_leafName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_underlyingObjectType(value: () => FileSystemObjectType): Self = StObject.set(x, "get_underlyingObjectType", js.Any.fromFunction0(value))
+    inline def setGet_underlyingObjectType(value: () => FileSystemObjectType): Self = StObject.set(x, "get_underlyingObjectType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_folderUrl(value: String => Unit): Self = StObject.set(x, "set_folderUrl", js.Any.fromFunction1(value))
+    inline def setSet_folderUrl(value: String => Unit): Self = StObject.set(x, "set_folderUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_leafName(value: String => Unit): Self = StObject.set(x, "set_leafName", js.Any.fromFunction1(value))
+    inline def setSet_leafName(value: String => Unit): Self = StObject.set(x, "set_leafName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_underlyingObjectType(value: FileSystemObjectType => Unit): Self = StObject.set(x, "set_underlyingObjectType", js.Any.fromFunction1(value))
+    inline def setSet_underlyingObjectType(value: FileSystemObjectType => Unit): Self = StObject.set(x, "set_underlyingObjectType", js.Any.fromFunction1(value))
   }
 }

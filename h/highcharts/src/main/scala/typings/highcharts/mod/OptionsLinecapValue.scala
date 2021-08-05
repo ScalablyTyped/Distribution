@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsLinecapValue extends StObject
 object OptionsLinecapValue {
   
-  @scala.inline
-  def round: typings.highcharts.highchartsStrings.round = "round".asInstanceOf[typings.highcharts.highchartsStrings.round]
+  inline def round: typings.highcharts.highchartsStrings.round = "round".asInstanceOf[typings.highcharts.highchartsStrings.round]
   
-  @scala.inline
-  def square: typings.highcharts.highchartsStrings.square = "square".asInstanceOf[typings.highcharts.highchartsStrings.square]
+  inline def square: typings.highcharts.highchartsStrings.square = "square".asInstanceOf[typings.highcharts.highchartsStrings.square]
 }

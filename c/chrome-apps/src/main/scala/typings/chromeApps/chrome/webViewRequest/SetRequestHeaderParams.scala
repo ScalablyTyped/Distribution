@@ -14,19 +14,15 @@ trait SetRequestHeaderParams extends StObject {
 }
 object SetRequestHeaderParams {
   
-  @scala.inline
-  def apply(name: String, value: String): SetRequestHeaderParams = {
+  inline def apply(name: String, value: String): SetRequestHeaderParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetRequestHeaderParams]
   }
   
-  @scala.inline
-  implicit class SetRequestHeaderParamsMutableBuilder[Self <: SetRequestHeaderParams] (val x: Self) extends AnyVal {
+  extension [Self <: SetRequestHeaderParams](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

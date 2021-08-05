@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(branchNameOrTest: BranchNameOrTest): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def apply(branchNameOrTest: BranchNameOrTest, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(branchNameOrTest: BranchNameOrTest, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(branchNameOrTest: BranchNameOrTest, options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(branchNameOrTest: BranchNameOrTest): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(branchNameOrTest: BranchNameOrTest, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(branchNameOrTest: BranchNameOrTest, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(branchNameOrTest: BranchNameOrTest, options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("git-branch-is", JSImport.Namespace)
   @js.native
@@ -72,41 +68,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setGitArgs(value: js.Array[String]): Self = StObject.set(x, "gitArgs", value.asInstanceOf[js.Any])
+      inline def setGitArgs(value: js.Array[String]): Self = StObject.set(x, "gitArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitArgsUndefined: Self = StObject.set(x, "gitArgs", js.undefined)
+      inline def setGitArgsUndefined: Self = StObject.set(x, "gitArgs", js.undefined)
       
-      @scala.inline
-      def setGitArgsVarargs(value: String*): Self = StObject.set(x, "gitArgs", js.Array(value :_*))
+      inline def setGitArgsVarargs(value: String*): Self = StObject.set(x, "gitArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setGitDir(value: String): Self = StObject.set(x, "gitDir", value.asInstanceOf[js.Any])
+      inline def setGitDir(value: String): Self = StObject.set(x, "gitDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitDirUndefined: Self = StObject.set(x, "gitDir", js.undefined)
+      inline def setGitDirUndefined: Self = StObject.set(x, "gitDir", js.undefined)
       
-      @scala.inline
-      def setGitPath(value: String): Self = StObject.set(x, "gitPath", value.asInstanceOf[js.Any])
+      inline def setGitPath(value: String): Self = StObject.set(x, "gitPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitPathUndefined: Self = StObject.set(x, "gitPath", js.undefined)
+      inline def setGitPathUndefined: Self = StObject.set(x, "gitPath", js.undefined)
     }
   }
 }

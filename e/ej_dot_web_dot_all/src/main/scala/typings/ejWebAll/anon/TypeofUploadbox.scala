@@ -15,19 +15,15 @@ trait TypeofUploadbox extends StObject {
 }
 object TypeofUploadbox {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Uploadbox): TypeofUploadbox = {
+  inline def apply(Locale: js.Any, fn: Uploadbox): TypeofUploadbox = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofUploadbox]
   }
   
-  @scala.inline
-  implicit class TypeofUploadboxMutableBuilder[Self <: TypeofUploadbox] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofUploadbox](x: Self) {
     
-    @scala.inline
-    def setFn(value: Uploadbox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Uploadbox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

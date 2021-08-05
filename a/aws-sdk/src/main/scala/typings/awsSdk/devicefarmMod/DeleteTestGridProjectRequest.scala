@@ -13,16 +13,13 @@ trait DeleteTestGridProjectRequest extends StObject {
 }
 object DeleteTestGridProjectRequest {
   
-  @scala.inline
-  def apply(projectArn: DeviceFarmArn): DeleteTestGridProjectRequest = {
+  inline def apply(projectArn: DeviceFarmArn): DeleteTestGridProjectRequest = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTestGridProjectRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTestGridProjectRequestMutableBuilder[Self <: DeleteTestGridProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTestGridProjectRequest](x: Self) {
     
-    @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
   }
 }

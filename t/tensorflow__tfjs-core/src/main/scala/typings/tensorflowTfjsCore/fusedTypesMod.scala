@@ -21,20 +21,15 @@ object fusedTypesMod {
   trait Activation extends StObject
   object Activation {
     
-    @scala.inline
-    def elu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.elu = "elu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.elu]
+    inline def elu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.elu = "elu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.elu]
     
-    @scala.inline
-    def linear: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.linear = "linear".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.linear]
+    inline def linear: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.linear = "linear".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.linear]
     
-    @scala.inline
-    def prelu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.prelu = "prelu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.prelu]
+    inline def prelu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.prelu = "prelu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.prelu]
     
-    @scala.inline
-    def relu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu = "relu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu]
+    inline def relu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu = "relu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu]
     
-    @scala.inline
-    def relu6: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6 = "relu6".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6]
+    inline def relu6: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6 = "relu6".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6]
   }
   
   trait FusedBatchMatMulConfig extends StObject {
@@ -55,44 +50,32 @@ object fusedTypesMod {
   }
   object FusedBatchMatMulConfig {
     
-    @scala.inline
-    def apply(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean): FusedBatchMatMulConfig = {
+    inline def apply(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean): FusedBatchMatMulConfig = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], transposeA = transposeA.asInstanceOf[js.Any], transposeB = transposeB.asInstanceOf[js.Any])
       __obj.asInstanceOf[FusedBatchMatMulConfig]
     }
     
-    @scala.inline
-    implicit class FusedBatchMatMulConfigMutableBuilder[Self <: FusedBatchMatMulConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FusedBatchMatMulConfig](x: Self) {
       
-      @scala.inline
-      def setA(value: Tensor3D): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Tensor3D): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+      inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
       
-      @scala.inline
-      def setB(value: Tensor3D): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Tensor3D): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBias(value: Tensor[Rank]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+      inline def setBias(value: Tensor[Rank]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+      inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
       
-      @scala.inline
-      def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
+      inline def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
+      inline def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
       
-      @scala.inline
-      def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
+      inline def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
+      inline def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,41 +95,30 @@ object fusedTypesMod {
   }
   object FusedConv2DConfig {
     
-    @scala.inline
-    def apply(convInfo: Conv2DInfo, filter: Tensor4D, input: Tensor4D): FusedConv2DConfig = {
+    inline def apply(convInfo: Conv2DInfo, filter: Tensor4D, input: Tensor4D): FusedConv2DConfig = {
       val __obj = js.Dynamic.literal(convInfo = convInfo.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
       __obj.asInstanceOf[FusedConv2DConfig]
     }
     
-    @scala.inline
-    implicit class FusedConv2DConfigMutableBuilder[Self <: FusedConv2DConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FusedConv2DConfig](x: Self) {
       
-      @scala.inline
-      def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+      inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+      inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
       
-      @scala.inline
-      def setBias(value: Tensor[Rank]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+      inline def setBias(value: Tensor[Rank]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+      inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
       
-      @scala.inline
-      def setConvInfo(value: Conv2DInfo): Self = StObject.set(x, "convInfo", value.asInstanceOf[js.Any])
+      inline def setConvInfo(value: Conv2DInfo): Self = StObject.set(x, "convInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: Tensor4D): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Tensor4D): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: Tensor4D): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Tensor4D): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
+      inline def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
+      inline def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
     }
   }
 }

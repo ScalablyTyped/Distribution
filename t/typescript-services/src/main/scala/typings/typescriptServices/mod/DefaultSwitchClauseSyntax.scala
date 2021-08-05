@@ -101,10 +101,8 @@ object DefaultSwitchClauseSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(defaultKeyword: ISyntaxToken, colonToken: ISyntaxToken): typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(defaultKeyword.asInstanceOf[js.Any], colonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax]
+  inline def create(defaultKeyword: ISyntaxToken, colonToken: ISyntaxToken): typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(defaultKeyword.asInstanceOf[js.Any], colonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.DefaultSwitchClauseSyntax]
 }

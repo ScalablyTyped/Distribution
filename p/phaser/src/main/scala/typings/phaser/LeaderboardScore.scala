@@ -48,8 +48,7 @@ trait LeaderboardScore extends StObject {
 }
 object LeaderboardScore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: String,
     playerID: String,
     playerName: String,
@@ -63,31 +62,22 @@ object LeaderboardScore {
     __obj.asInstanceOf[LeaderboardScore]
   }
   
-  @scala.inline
-  implicit class LeaderboardScoreMutableBuilder[Self <: LeaderboardScore] (val x: Self) extends AnyVal {
+  extension [Self <: LeaderboardScore](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerID(value: String): Self = StObject.set(x, "playerID", value.asInstanceOf[js.Any])
+    inline def setPlayerID(value: String): Self = StObject.set(x, "playerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerName(value: String): Self = StObject.set(x, "playerName", value.asInstanceOf[js.Any])
+    inline def setPlayerName(value: String): Self = StObject.set(x, "playerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerPhotoURL(value: String): Self = StObject.set(x, "playerPhotoURL", value.asInstanceOf[js.Any])
+    inline def setPlayerPhotoURL(value: String): Self = StObject.set(x, "playerPhotoURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: integer): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: integer): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: integer): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: integer): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreFormatted(value: String): Self = StObject.set(x, "scoreFormatted", value.asInstanceOf[js.Any])
+    inline def setScoreFormatted(value: String): Self = StObject.set(x, "scoreFormatted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: integer): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: integer): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

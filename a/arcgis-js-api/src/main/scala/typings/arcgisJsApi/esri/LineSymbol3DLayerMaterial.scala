@@ -19,8 +19,7 @@ trait LineSymbol3DLayerMaterial
 }
 object LineSymbol3DLayerMaterial {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -32,13 +31,10 @@ object LineSymbol3DLayerMaterial {
     __obj.asInstanceOf[LineSymbol3DLayerMaterial]
   }
   
-  @scala.inline
-  implicit class LineSymbol3DLayerMaterialMutableBuilder[Self <: LineSymbol3DLayerMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: LineSymbol3DLayerMaterial](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait IgtvChannelFeedResponseBiographyWithEntities extends StObject {
 }
 object IgtvChannelFeedResponseBiographyWithEntities {
   
-  @scala.inline
-  def apply(entities: js.Array[js.Any], raw_text: String): IgtvChannelFeedResponseBiographyWithEntities = {
+  inline def apply(entities: js.Array[js.Any], raw_text: String): IgtvChannelFeedResponseBiographyWithEntities = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvChannelFeedResponseBiographyWithEntities]
   }
   
-  @scala.inline
-  implicit class IgtvChannelFeedResponseBiographyWithEntitiesMutableBuilder[Self <: IgtvChannelFeedResponseBiographyWithEntities] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvChannelFeedResponseBiographyWithEntities](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
+    inline def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
   }
 }

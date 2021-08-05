@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrinterKind extends StObject
 object PrinterKind {
   
-  @scala.inline
-  def disc: typings.ipp.ippStrings.disc = "disc".asInstanceOf[typings.ipp.ippStrings.disc]
+  inline def disc: typings.ipp.ippStrings.disc = "disc".asInstanceOf[typings.ipp.ippStrings.disc]
   
-  @scala.inline
-  def document: typings.ipp.ippStrings.document = "document".asInstanceOf[typings.ipp.ippStrings.document]
+  inline def document: typings.ipp.ippStrings.document = "document".asInstanceOf[typings.ipp.ippStrings.document]
   
-  @scala.inline
-  def envelope: typings.ipp.ippStrings.envelope = "envelope".asInstanceOf[typings.ipp.ippStrings.envelope]
+  inline def envelope: typings.ipp.ippStrings.envelope = "envelope".asInstanceOf[typings.ipp.ippStrings.envelope]
   
-  @scala.inline
-  def label: typings.ipp.ippStrings.label = "label".asInstanceOf[typings.ipp.ippStrings.label]
+  inline def label: typings.ipp.ippStrings.label = "label".asInstanceOf[typings.ipp.ippStrings.label]
   
-  @scala.inline
-  def large: typings.ipp.ippStrings.large = "large".asInstanceOf[typings.ipp.ippStrings.large]
+  inline def large: typings.ipp.ippStrings.large = "large".asInstanceOf[typings.ipp.ippStrings.large]
   
-  @scala.inline
-  def photo: typings.ipp.ippStrings.photo = "photo".asInstanceOf[typings.ipp.ippStrings.photo]
+  inline def photo: typings.ipp.ippStrings.photo = "photo".asInstanceOf[typings.ipp.ippStrings.photo]
   
-  @scala.inline
-  def postcard: typings.ipp.ippStrings.postcard = "postcard".asInstanceOf[typings.ipp.ippStrings.postcard]
+  inline def postcard: typings.ipp.ippStrings.postcard = "postcard".asInstanceOf[typings.ipp.ippStrings.postcard]
   
-  @scala.inline
-  def receipt: typings.ipp.ippStrings.receipt = "receipt".asInstanceOf[typings.ipp.ippStrings.receipt]
+  inline def receipt: typings.ipp.ippStrings.receipt = "receipt".asInstanceOf[typings.ipp.ippStrings.receipt]
   
-  @scala.inline
-  def roll: typings.ipp.ippStrings.roll = "roll".asInstanceOf[typings.ipp.ippStrings.roll]
+  inline def roll: typings.ipp.ippStrings.roll = "roll".asInstanceOf[typings.ipp.ippStrings.roll]
 }

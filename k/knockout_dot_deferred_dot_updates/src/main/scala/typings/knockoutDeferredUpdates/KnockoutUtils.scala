@@ -13,19 +13,15 @@ trait KnockoutUtils extends StObject {
 }
 object KnockoutUtils {
   
-  @scala.inline
-  def apply(objectForEach: (js.Any, js.Function) => Unit, objectMap: (js.Any, js.Function) => js.Any): KnockoutUtils = {
+  inline def apply(objectForEach: (js.Any, js.Function) => Unit, objectMap: (js.Any, js.Function) => js.Any): KnockoutUtils = {
     val __obj = js.Dynamic.literal(objectForEach = js.Any.fromFunction2(objectForEach), objectMap = js.Any.fromFunction2(objectMap))
     __obj.asInstanceOf[KnockoutUtils]
   }
   
-  @scala.inline
-  implicit class KnockoutUtilsMutableBuilder[Self <: KnockoutUtils] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutUtils](x: Self) {
     
-    @scala.inline
-    def setObjectForEach(value: (js.Any, js.Function) => Unit): Self = StObject.set(x, "objectForEach", js.Any.fromFunction2(value))
+    inline def setObjectForEach(value: (js.Any, js.Function) => Unit): Self = StObject.set(x, "objectForEach", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setObjectMap(value: (js.Any, js.Function) => js.Any): Self = StObject.set(x, "objectMap", js.Any.fromFunction2(value))
+    inline def setObjectMap(value: (js.Any, js.Function) => js.Any): Self = StObject.set(x, "objectMap", js.Any.fromFunction2(value))
   }
 }

@@ -11,19 +11,15 @@ trait KeyValueTargetingExpression extends StObject {
 }
 object KeyValueTargetingExpression {
   
-  @scala.inline
-  def apply(): KeyValueTargetingExpression = {
+  inline def apply(): KeyValueTargetingExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyValueTargetingExpression]
   }
   
-  @scala.inline
-  implicit class KeyValueTargetingExpressionMutableBuilder[Self <: KeyValueTargetingExpression] (val x: Self) extends AnyVal {
+  extension [Self <: KeyValueTargetingExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
   }
 }

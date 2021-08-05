@@ -38,20 +38,16 @@ object rulerMod {
   }
   object RuleOptions {
     
-    @scala.inline
-    def apply(alt: js.Array[String]): RuleOptions = {
+    inline def apply(alt: js.Array[String]): RuleOptions = {
       val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleOptions]
     }
     
-    @scala.inline
-    implicit class RuleOptionsMutableBuilder[Self <: RuleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RuleOptions](x: Self) {
       
-      @scala.inline
-      def setAlt(value: js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
+      inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
     }
   }
   

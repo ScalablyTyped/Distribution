@@ -13,8 +13,7 @@ trait IPrintTaskSettingsActivatedEventArgs
 }
 object IPrintTaskSettingsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configuration: PrintTaskConfiguration,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -24,10 +23,8 @@ object IPrintTaskSettingsActivatedEventArgs {
     __obj.asInstanceOf[IPrintTaskSettingsActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IPrintTaskSettingsActivatedEventArgsMutableBuilder[Self <: IPrintTaskSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskSettingsActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: PrintTaskConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: PrintTaskConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
   }
 }

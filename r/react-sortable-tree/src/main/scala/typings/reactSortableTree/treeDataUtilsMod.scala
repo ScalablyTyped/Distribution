@@ -28,58 +28,40 @@ object treeDataUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addNodeUnderParent(data: FullTreenewNodeTreeItempa): FullTree & TreeIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("addNodeUnderParent")(data.asInstanceOf[js.Any]).asInstanceOf[FullTree & TreeIndex]
+  inline def addNodeUnderParent(data: FullTreenewNodeTreeItempa): FullTree & TreeIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("addNodeUnderParent")(data.asInstanceOf[js.Any]).asInstanceOf[FullTree & TreeIndex]
   
-  @scala.inline
-  def changeNodeAtPath(data: FullTreeTreePathnewNodeFu): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
+  inline def changeNodeAtPath(data: FullTreeTreePathnewNodeFu): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @scala.inline
-  def find(data: FullTreegetNodeKeyGetNodeExpandAllMatchPaths): matchesArrayNodeDataFullT = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(data.asInstanceOf[js.Any]).asInstanceOf[matchesArrayNodeDataFullT]
+  inline def find(data: FullTreegetNodeKeyGetNodeExpandAllMatchPaths): matchesArrayNodeDataFullT = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(data.asInstanceOf[js.Any]).asInstanceOf[matchesArrayNodeDataFullT]
   
-  @scala.inline
-  def getDepth(node: TreeItem): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDepth")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getDepth(node: TreeItem, depth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDepth")(node.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDepth(node: TreeItem): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDepth")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getDepth(node: TreeItem, depth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDepth")(node.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getDescendantCount(data: TreeNodeignoreCollapsedbo): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDescendantCount")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getDescendantCount(data: TreeNodeignoreCollapsedbo): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDescendantCount")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getFlatDataFromTree(data: FullTreegetNodeKeyGetNode): js.Array[FlatDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatDataFromTree")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlatDataItem]]
+  inline def getFlatDataFromTree(data: FullTreegetNodeKeyGetNode): js.Array[FlatDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatDataFromTree")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlatDataItem]]
   
-  @scala.inline
-  def getNodeAtPath(data: FullTreeTreePathgetNodeKe): (TreeNode & TreeIndex) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[(TreeNode & TreeIndex) | Null]
+  inline def getNodeAtPath(data: FullTreeTreePathgetNodeKe): (TreeNode & TreeIndex) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[(TreeNode & TreeIndex) | Null]
   
-  @scala.inline
-  def getTreeFromFlatData[T, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */, I /* <: String | Double */](data: FlatData[T, I, K, P]): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeFromFlatData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
+  inline def getTreeFromFlatData[T, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */, I /* <: String | Double */](data: FlatData[T, I, K, P]): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeFromFlatData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @scala.inline
-  def getVisibleNodeCount(data: FullTree): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeCount")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getVisibleNodeCount(data: FullTree): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeCount")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getVisibleNodeInfoAtIndex(data: FullTreeindexnumbergetNod): TreeNodeTreePathlowerSibl | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeInfoAtIndex")(data.asInstanceOf[js.Any]).asInstanceOf[TreeNodeTreePathlowerSibl | Null]
+  inline def getVisibleNodeInfoAtIndex(data: FullTreeindexnumbergetNod): TreeNodeTreePathlowerSibl | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeInfoAtIndex")(data.asInstanceOf[js.Any]).asInstanceOf[TreeNodeTreePathlowerSibl | Null]
   
-  @scala.inline
-  def insertNode(data: FullTreedepthnumbernewNod): FullTreeTreeIndexTreePath = ^.asInstanceOf[js.Dynamic].applyDynamic("insertNode")(data.asInstanceOf[js.Any]).asInstanceOf[FullTreeTreeIndexTreePath]
+  inline def insertNode(data: FullTreedepthnumbernewNod): FullTreeTreeIndexTreePath = ^.asInstanceOf[js.Dynamic].applyDynamic("insertNode")(data.asInstanceOf[js.Any]).asInstanceOf[FullTreeTreeIndexTreePath]
   
-  @scala.inline
-  def isDescendant(older: TreeItem, younger: TreeItem): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDescendant")(older.asInstanceOf[js.Any], younger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isDescendant(older: TreeItem, younger: TreeItem): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDescendant")(older.asInstanceOf[js.Any], younger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def map(data: WalkAndMapFunctionParameters): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
+  inline def map(data: WalkAndMapFunctionParameters): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @scala.inline
-  def removeNode(data: FullTreeTreePathgetNodeKe): (FullTree & TreeNode & TreeIndex) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(data.asInstanceOf[js.Any]).asInstanceOf[(FullTree & TreeNode & TreeIndex) | Null]
+  inline def removeNode(data: FullTreeTreePathgetNodeKe): (FullTree & TreeNode & TreeIndex) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(data.asInstanceOf[js.Any]).asInstanceOf[(FullTree & TreeNode & TreeIndex) | Null]
   
-  @scala.inline
-  def removeNodeAtPath(data: FullTreeTreePathgetNodeKe): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
+  inline def removeNodeAtPath(data: FullTreeTreePathgetNodeKe): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @scala.inline
-  def toggleExpandedForAll(data: FullTreeexpandedbooleanun): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleExpandedForAll")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
+  inline def toggleExpandedForAll(data: FullTreeexpandedbooleanun): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleExpandedForAll")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @scala.inline
-  def walk(data: WalkAndMapFunctionParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def walk(data: WalkAndMapFunctionParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type GetNodeKeyFunction = js.Function1[/* data */ TreeIndex & TreeNode, String | Double]
   
@@ -95,8 +77,7 @@ object treeDataUtilsMod {
   }
   object WalkAndMapFunctionParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callback: js.Function,
       getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
       treeData: js.Array[TreeItem]
@@ -105,20 +86,15 @@ object treeDataUtilsMod {
       __obj.asInstanceOf[WalkAndMapFunctionParameters]
     }
     
-    @scala.inline
-    implicit class WalkAndMapFunctionParametersMutableBuilder[Self <: WalkAndMapFunctionParameters] (val x: Self) extends AnyVal {
+    extension [Self <: WalkAndMapFunctionParameters](x: Self) {
       
-      @scala.inline
-      def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+      inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
+      inline def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
+      inline def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
     }
   }
 }

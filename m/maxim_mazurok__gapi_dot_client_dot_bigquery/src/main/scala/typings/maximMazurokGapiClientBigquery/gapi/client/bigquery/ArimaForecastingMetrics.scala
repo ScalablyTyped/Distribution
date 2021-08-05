@@ -26,67 +26,47 @@ trait ArimaForecastingMetrics extends StObject {
 }
 object ArimaForecastingMetrics {
   
-  @scala.inline
-  def apply(): ArimaForecastingMetrics = {
+  inline def apply(): ArimaForecastingMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArimaForecastingMetrics]
   }
   
-  @scala.inline
-  implicit class ArimaForecastingMetricsMutableBuilder[Self <: ArimaForecastingMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ArimaForecastingMetrics](x: Self) {
     
-    @scala.inline
-    def setArimaFittingMetrics(value: js.Array[ArimaFittingMetrics]): Self = StObject.set(x, "arimaFittingMetrics", value.asInstanceOf[js.Any])
+    inline def setArimaFittingMetrics(value: js.Array[ArimaFittingMetrics]): Self = StObject.set(x, "arimaFittingMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArimaFittingMetricsUndefined: Self = StObject.set(x, "arimaFittingMetrics", js.undefined)
+    inline def setArimaFittingMetricsUndefined: Self = StObject.set(x, "arimaFittingMetrics", js.undefined)
     
-    @scala.inline
-    def setArimaFittingMetricsVarargs(value: ArimaFittingMetrics*): Self = StObject.set(x, "arimaFittingMetrics", js.Array(value :_*))
+    inline def setArimaFittingMetricsVarargs(value: ArimaFittingMetrics*): Self = StObject.set(x, "arimaFittingMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setArimaSingleModelForecastingMetrics(value: js.Array[ArimaSingleModelForecastingMetrics]): Self = StObject.set(x, "arimaSingleModelForecastingMetrics", value.asInstanceOf[js.Any])
+    inline def setArimaSingleModelForecastingMetrics(value: js.Array[ArimaSingleModelForecastingMetrics]): Self = StObject.set(x, "arimaSingleModelForecastingMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArimaSingleModelForecastingMetricsUndefined: Self = StObject.set(x, "arimaSingleModelForecastingMetrics", js.undefined)
+    inline def setArimaSingleModelForecastingMetricsUndefined: Self = StObject.set(x, "arimaSingleModelForecastingMetrics", js.undefined)
     
-    @scala.inline
-    def setArimaSingleModelForecastingMetricsVarargs(value: ArimaSingleModelForecastingMetrics*): Self = StObject.set(x, "arimaSingleModelForecastingMetrics", js.Array(value :_*))
+    inline def setArimaSingleModelForecastingMetricsVarargs(value: ArimaSingleModelForecastingMetrics*): Self = StObject.set(x, "arimaSingleModelForecastingMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setHasDrift(value: js.Array[Boolean]): Self = StObject.set(x, "hasDrift", value.asInstanceOf[js.Any])
+    inline def setHasDrift(value: js.Array[Boolean]): Self = StObject.set(x, "hasDrift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDriftUndefined: Self = StObject.set(x, "hasDrift", js.undefined)
+    inline def setHasDriftUndefined: Self = StObject.set(x, "hasDrift", js.undefined)
     
-    @scala.inline
-    def setHasDriftVarargs(value: Boolean*): Self = StObject.set(x, "hasDrift", js.Array(value :_*))
+    inline def setHasDriftVarargs(value: Boolean*): Self = StObject.set(x, "hasDrift", js.Array(value :_*))
     
-    @scala.inline
-    def setNonSeasonalOrder(value: js.Array[ArimaOrder]): Self = StObject.set(x, "nonSeasonalOrder", value.asInstanceOf[js.Any])
+    inline def setNonSeasonalOrder(value: js.Array[ArimaOrder]): Self = StObject.set(x, "nonSeasonalOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonSeasonalOrderUndefined: Self = StObject.set(x, "nonSeasonalOrder", js.undefined)
+    inline def setNonSeasonalOrderUndefined: Self = StObject.set(x, "nonSeasonalOrder", js.undefined)
     
-    @scala.inline
-    def setNonSeasonalOrderVarargs(value: ArimaOrder*): Self = StObject.set(x, "nonSeasonalOrder", js.Array(value :_*))
+    inline def setNonSeasonalOrderVarargs(value: ArimaOrder*): Self = StObject.set(x, "nonSeasonalOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setSeasonalPeriods(value: js.Array[String]): Self = StObject.set(x, "seasonalPeriods", value.asInstanceOf[js.Any])
+    inline def setSeasonalPeriods(value: js.Array[String]): Self = StObject.set(x, "seasonalPeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeasonalPeriodsUndefined: Self = StObject.set(x, "seasonalPeriods", js.undefined)
+    inline def setSeasonalPeriodsUndefined: Self = StObject.set(x, "seasonalPeriods", js.undefined)
     
-    @scala.inline
-    def setSeasonalPeriodsVarargs(value: String*): Self = StObject.set(x, "seasonalPeriods", js.Array(value :_*))
+    inline def setSeasonalPeriodsVarargs(value: String*): Self = StObject.set(x, "seasonalPeriods", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeSeriesId(value: js.Array[String]): Self = StObject.set(x, "timeSeriesId", value.asInstanceOf[js.Any])
+    inline def setTimeSeriesId(value: js.Array[String]): Self = StObject.set(x, "timeSeriesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesIdUndefined: Self = StObject.set(x, "timeSeriesId", js.undefined)
+    inline def setTimeSeriesIdUndefined: Self = StObject.set(x, "timeSeriesId", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesIdVarargs(value: String*): Self = StObject.set(x, "timeSeriesId", js.Array(value :_*))
+    inline def setTimeSeriesIdVarargs(value: String*): Self = StObject.set(x, "timeSeriesId", js.Array(value :_*))
   }
 }

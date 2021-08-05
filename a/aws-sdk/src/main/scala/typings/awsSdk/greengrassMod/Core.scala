@@ -28,28 +28,21 @@ trait Core extends StObject {
 }
 object Core {
   
-  @scala.inline
-  def apply(CertificateArn: string, Id: string, ThingArn: string): Core = {
+  inline def apply(CertificateArn: string, Id: string, ThingArn: string): Core = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], ThingArn = ThingArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Core]
   }
   
-  @scala.inline
-  implicit class CoreMutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
+  extension [Self <: Core](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: string): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: string): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncShadow(value: boolean): Self = StObject.set(x, "SyncShadow", value.asInstanceOf[js.Any])
+    inline def setSyncShadow(value: boolean): Self = StObject.set(x, "SyncShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncShadowUndefined: Self = StObject.set(x, "SyncShadow", js.undefined)
+    inline def setSyncShadowUndefined: Self = StObject.set(x, "SyncShadow", js.undefined)
     
-    @scala.inline
-    def setThingArn(value: string): Self = StObject.set(x, "ThingArn", value.asInstanceOf[js.Any])
+    inline def setThingArn(value: string): Self = StObject.set(x, "ThingArn", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait DesiredPlayerSession extends StObject {
 }
 object DesiredPlayerSession {
   
-  @scala.inline
-  def apply(): DesiredPlayerSession = {
+  inline def apply(): DesiredPlayerSession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DesiredPlayerSession]
   }
   
-  @scala.inline
-  implicit class DesiredPlayerSessionMutableBuilder[Self <: DesiredPlayerSession] (val x: Self) extends AnyVal {
+  extension [Self <: DesiredPlayerSession](x: Self) {
     
-    @scala.inline
-    def setPlayerData(value: PlayerData): Self = StObject.set(x, "PlayerData", value.asInstanceOf[js.Any])
+    inline def setPlayerData(value: PlayerData): Self = StObject.set(x, "PlayerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerDataUndefined: Self = StObject.set(x, "PlayerData", js.undefined)
+    inline def setPlayerDataUndefined: Self = StObject.set(x, "PlayerData", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
   }
 }

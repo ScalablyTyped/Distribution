@@ -49,17 +49,14 @@ object mod {
   }
   object TripleToQuadTransformOptions {
     
-    @scala.inline
-    def apply(factory: DataFactory[Quad, Quad]): TripleToQuadTransformOptions = {
+    inline def apply(factory: DataFactory[Quad, Quad]): TripleToQuadTransformOptions = {
       val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any])
       __obj.asInstanceOf[TripleToQuadTransformOptions]
     }
     
-    @scala.inline
-    implicit class TripleToQuadTransformOptionsMutableBuilder[Self <: TripleToQuadTransformOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TripleToQuadTransformOptions](x: Self) {
       
-      @scala.inline
-      def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     }
   }
 }

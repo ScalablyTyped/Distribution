@@ -47,8 +47,7 @@ trait XFormLayerAccess
 }
 object XFormLayerAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getControl: XControlModel => XControl,
     getFormController: XForm => XFormController,
@@ -61,16 +60,12 @@ object XFormLayerAccess {
     __obj.asInstanceOf[XFormLayerAccess]
   }
   
-  @scala.inline
-  implicit class XFormLayerAccessMutableBuilder[Self <: XFormLayerAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XFormLayerAccess](x: Self) {
     
-    @scala.inline
-    def setGetFormController(value: XForm => XFormController): Self = StObject.set(x, "getFormController", js.Any.fromFunction1(value))
+    inline def setGetFormController(value: XForm => XFormController): Self = StObject.set(x, "getFormController", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFormDesignMode(value: () => Boolean): Self = StObject.set(x, "isFormDesignMode", js.Any.fromFunction0(value))
+    inline def setIsFormDesignMode(value: () => Boolean): Self = StObject.set(x, "isFormDesignMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFormDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setFormDesignMode", js.Any.fromFunction1(value))
+    inline def setSetFormDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setFormDesignMode", js.Any.fromFunction1(value))
   }
 }

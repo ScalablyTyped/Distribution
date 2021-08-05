@@ -15,10 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(oldObj: js.Any, newObj: js.Any): js.Array[Event] = (^.asInstanceOf[js.Dynamic].apply(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
-  @scala.inline
-  def apply(oldObj: js.Any, newObj: js.Any, options: Options): js.Array[Event] = (^.asInstanceOf[js.Dynamic].apply(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def apply(oldObj: js.Any, newObj: js.Any): js.Array[Event] = (^.asInstanceOf[js.Dynamic].apply(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def apply(oldObj: js.Any, newObj: js.Any, options: Options): js.Array[Event] = (^.asInstanceOf[js.Dynamic].apply(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
   
   @JSImport("simple-diff", JSImport.Namespace)
   @js.native
@@ -40,36 +38,27 @@ object mod {
   }
   object AddEvent {
     
-    @scala.inline
-    def apply(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: Unit): AddEvent = {
+    inline def apply(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: Unit): AddEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add")
       __obj.asInstanceOf[AddEvent]
     }
     
-    @scala.inline
-    implicit class AddEventMutableBuilder[Self <: AddEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AddEvent](x: Self) {
       
-      @scala.inline
-      def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
+      inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
       
-      @scala.inline
-      def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+      inline def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
+      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
       
-      @scala.inline
-      def setOldValue(value: Unit): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Unit): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,42 +82,31 @@ object mod {
   }
   object AddItemEvent {
     
-    @scala.inline
-    def apply(newIndex: Double, newPath: Path, newValue: js.Any, oldPath: Path): AddItemEvent = {
+    inline def apply(newIndex: Double, newPath: Path, newValue: js.Any, oldPath: Path): AddItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = -1, newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldIndex = -1, oldPath = oldPath.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add-item")
       __obj.asInstanceOf[AddItemEvent]
     }
     
-    @scala.inline
-    implicit class AddItemEventMutableBuilder[Self <: AddItemEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AddItemEvent](x: Self) {
       
-      @scala.inline
-      def setCurIndex(value: `-1`): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
+      inline def setCurIndex(value: `-1`): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
+      inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
       
-      @scala.inline
-      def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldIndex(value: `-1`): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: `-1`): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+      inline def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
+      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: `add-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `add-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,36 +126,27 @@ object mod {
   }
   object ChangeEvent {
     
-    @scala.inline
-    def apply(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any): ChangeEvent = {
+    inline def apply(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any): ChangeEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("change")
       __obj.asInstanceOf[ChangeEvent]
     }
     
-    @scala.inline
-    implicit class ChangeEventMutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeEvent](x: Self) {
       
-      @scala.inline
-      def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
+      inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
       
-      @scala.inline
-      def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+      inline def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
+      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
       
-      @scala.inline
-      def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: change): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: change): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,43 +161,37 @@ object mod {
   trait Event extends StObject
   object Event {
     
-    @scala.inline
-    def AddEvent(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: Unit): typings.simpleDiff.mod.AddEvent = {
+    inline def AddEvent(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: Unit): typings.simpleDiff.mod.AddEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add")
       __obj.asInstanceOf[typings.simpleDiff.mod.AddEvent]
     }
     
-    @scala.inline
-    def AddItemEvent(newIndex: Double, newPath: Path, newValue: js.Any, oldPath: Path): typings.simpleDiff.mod.AddItemEvent = {
+    inline def AddItemEvent(newIndex: Double, newPath: Path, newValue: js.Any, oldPath: Path): typings.simpleDiff.mod.AddItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = -1, newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldIndex = -1, oldPath = oldPath.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add-item")
       __obj.asInstanceOf[typings.simpleDiff.mod.AddItemEvent]
     }
     
-    @scala.inline
-    def ChangeEvent(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.ChangeEvent = {
+    inline def ChangeEvent(newPath: Path, newValue: js.Any, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.ChangeEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("change")
       __obj.asInstanceOf[typings.simpleDiff.mod.ChangeEvent]
     }
     
-    @scala.inline
-    def MoveItemEvent(curIndex: Double, newIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path): typings.simpleDiff.mod.MoveItemEvent = {
+    inline def MoveItemEvent(curIndex: Double, newIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path): typings.simpleDiff.mod.MoveItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("move-item")
       __obj.asInstanceOf[typings.simpleDiff.mod.MoveItemEvent]
     }
     
-    @scala.inline
-    def RemoveEvent(newPath: Path, newValue: Unit, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.RemoveEvent = {
+    inline def RemoveEvent(newPath: Path, newValue: Unit, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.RemoveEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("remove")
       __obj.asInstanceOf[typings.simpleDiff.mod.RemoveEvent]
     }
     
-    @scala.inline
-    def RemoveItemEvent(curIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.RemoveItemEvent = {
+    inline def RemoveItemEvent(curIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path, oldValue: js.Any): typings.simpleDiff.mod.RemoveItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = -1, newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("remove-item")
       __obj.asInstanceOf[typings.simpleDiff.mod.RemoveItemEvent]
@@ -253,39 +216,29 @@ object mod {
   }
   object MoveItemEvent {
     
-    @scala.inline
-    def apply(curIndex: Double, newIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path): MoveItemEvent = {
+    inline def apply(curIndex: Double, newIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path): MoveItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("move-item")
       __obj.asInstanceOf[MoveItemEvent]
     }
     
-    @scala.inline
-    implicit class MoveItemEventMutableBuilder[Self <: MoveItemEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MoveItemEvent](x: Self) {
       
-      @scala.inline
-      def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
+      inline def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
+      inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
       
-      @scala.inline
-      def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+      inline def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
+      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: `move-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `move-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,41 +277,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAddEvent(value: String): Self = StObject.set(x, "addEvent", value.asInstanceOf[js.Any])
+      inline def setAddEvent(value: String): Self = StObject.set(x, "addEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddEventUndefined: Self = StObject.set(x, "addEvent", js.undefined)
+      inline def setAddEventUndefined: Self = StObject.set(x, "addEvent", js.undefined)
       
-      @scala.inline
-      def setAddItemEvent(value: String): Self = StObject.set(x, "addItemEvent", value.asInstanceOf[js.Any])
+      inline def setAddItemEvent(value: String): Self = StObject.set(x, "addItemEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddItemEventUndefined: Self = StObject.set(x, "addItemEvent", js.undefined)
+      inline def setAddItemEventUndefined: Self = StObject.set(x, "addItemEvent", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* event */ Event => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* event */ Event => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setChangeEvent(value: String): Self = StObject.set(x, "changeEvent", value.asInstanceOf[js.Any])
+      inline def setChangeEvent(value: String): Self = StObject.set(x, "changeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeEventUndefined: Self = StObject.set(x, "changeEvent", js.undefined)
+      inline def setChangeEventUndefined: Self = StObject.set(x, "changeEvent", js.undefined)
       
-      @scala.inline
-      def setComparators(
+      inline def setComparators(
         value: js.Array[
               js.Tuple2[
                 js.Any, 
@@ -367,52 +309,38 @@ object mod {
             ]
       ): Self = StObject.set(x, "comparators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorsUndefined: Self = StObject.set(x, "comparators", js.undefined)
+      inline def setComparatorsUndefined: Self = StObject.set(x, "comparators", js.undefined)
       
-      @scala.inline
-      def setComparatorsVarargs(
+      inline def setComparatorsVarargs(
         value: (js.Tuple2[
               js.Any, 
               js.Function3[/* oldValue */ js.Any, /* newValue */ js.Any, /* options */ NewPath, Boolean]
             ])*
       ): Self = StObject.set(x, "comparators", js.Array(value :_*))
       
-      @scala.inline
-      def setIdProp(value: String): Self = StObject.set(x, "idProp", value.asInstanceOf[js.Any])
+      inline def setIdProp(value: String): Self = StObject.set(x, "idProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdPropUndefined: Self = StObject.set(x, "idProp", js.undefined)
+      inline def setIdPropUndefined: Self = StObject.set(x, "idProp", js.undefined)
       
-      @scala.inline
-      def setIdProps(value: StringDictionary[String]): Self = StObject.set(x, "idProps", value.asInstanceOf[js.Any])
+      inline def setIdProps(value: StringDictionary[String]): Self = StObject.set(x, "idProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdPropsUndefined: Self = StObject.set(x, "idProps", js.undefined)
+      inline def setIdPropsUndefined: Self = StObject.set(x, "idProps", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: (/* oldValue */ js.Any, /* newValue */ js.Any, /* options */ NewPath) => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction3(value))
+      inline def setIgnore(value: (/* oldValue */ js.Any, /* newValue */ js.Any, /* options */ NewPath) => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setMoveItemEvent(value: String): Self = StObject.set(x, "moveItemEvent", value.asInstanceOf[js.Any])
+      inline def setMoveItemEvent(value: String): Self = StObject.set(x, "moveItemEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveItemEventUndefined: Self = StObject.set(x, "moveItemEvent", js.undefined)
+      inline def setMoveItemEventUndefined: Self = StObject.set(x, "moveItemEvent", js.undefined)
       
-      @scala.inline
-      def setRemoveEvent(value: String): Self = StObject.set(x, "removeEvent", value.asInstanceOf[js.Any])
+      inline def setRemoveEvent(value: String): Self = StObject.set(x, "removeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEventUndefined: Self = StObject.set(x, "removeEvent", js.undefined)
+      inline def setRemoveEventUndefined: Self = StObject.set(x, "removeEvent", js.undefined)
       
-      @scala.inline
-      def setRemoveItemEvent(value: String): Self = StObject.set(x, "removeItemEvent", value.asInstanceOf[js.Any])
+      inline def setRemoveItemEvent(value: String): Self = StObject.set(x, "removeItemEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveItemEventUndefined: Self = StObject.set(x, "removeItemEvent", js.undefined)
+      inline def setRemoveItemEventUndefined: Self = StObject.set(x, "removeItemEvent", js.undefined)
     }
   }
   
@@ -434,36 +362,27 @@ object mod {
   }
   object RemoveEvent {
     
-    @scala.inline
-    def apply(newPath: Path, newValue: Unit, oldPath: Path, oldValue: js.Any): RemoveEvent = {
+    inline def apply(newPath: Path, newValue: Unit, oldPath: Path, oldValue: js.Any): RemoveEvent = {
       val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("remove")
       __obj.asInstanceOf[RemoveEvent]
     }
     
-    @scala.inline
-    implicit class RemoveEventMutableBuilder[Self <: RemoveEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveEvent](x: Self) {
       
-      @scala.inline
-      def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
+      inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
       
-      @scala.inline
-      def setNewValue(value: Unit): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Unit): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+      inline def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
+      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
       
-      @scala.inline
-      def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -487,42 +406,31 @@ object mod {
   }
   object RemoveItemEvent {
     
-    @scala.inline
-    def apply(curIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path, oldValue: js.Any): RemoveItemEvent = {
+    inline def apply(curIndex: Double, newPath: Path, oldIndex: Double, oldPath: Path, oldValue: js.Any): RemoveItemEvent = {
       val __obj = js.Dynamic.literal(curIndex = curIndex.asInstanceOf[js.Any], newIndex = -1, newPath = newPath.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("remove-item")
       __obj.asInstanceOf[RemoveItemEvent]
     }
     
-    @scala.inline
-    implicit class RemoveItemEventMutableBuilder[Self <: RemoveItemEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveItemEvent](x: Self) {
       
-      @scala.inline
-      def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
+      inline def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewIndex(value: `-1`): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      inline def setNewIndex(value: `-1`): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
+      inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
       
-      @scala.inline
-      def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+      inline def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
+      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
       
-      @scala.inline
-      def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `remove-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `remove-item`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

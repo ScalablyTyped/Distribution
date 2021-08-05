@@ -11,16 +11,13 @@ trait UpdateCheckDetails extends StObject {
 }
 object UpdateCheckDetails {
   
-  @scala.inline
-  def apply(version: String): UpdateCheckDetails = {
+  inline def apply(version: String): UpdateCheckDetails = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCheckDetails]
   }
   
-  @scala.inline
-  implicit class UpdateCheckDetailsMutableBuilder[Self <: UpdateCheckDetails] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCheckDetails](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

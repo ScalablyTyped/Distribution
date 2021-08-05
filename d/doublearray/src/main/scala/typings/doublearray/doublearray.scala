@@ -77,8 +77,7 @@ object doublearray {
   }
   object DoubleArray {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bc: BaseAndCheck,
       calc: () => All,
       commonPrefixSearch: String => KeyValue,
@@ -92,32 +91,23 @@ object doublearray {
       __obj.asInstanceOf[DoubleArray]
     }
     
-    @scala.inline
-    implicit class DoubleArrayMutableBuilder[Self <: DoubleArray] (val x: Self) extends AnyVal {
+    extension [Self <: DoubleArray](x: Self) {
       
-      @scala.inline
-      def setBc(value: BaseAndCheck): Self = StObject.set(x, "bc", value.asInstanceOf[js.Any])
+      inline def setBc(value: BaseAndCheck): Self = StObject.set(x, "bc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalc(value: () => All): Self = StObject.set(x, "calc", js.Any.fromFunction0(value))
+      inline def setCalc(value: () => All): Self = StObject.set(x, "calc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCommonPrefixSearch(value: String => KeyValue): Self = StObject.set(x, "commonPrefixSearch", js.Any.fromFunction1(value))
+      inline def setCommonPrefixSearch(value: String => KeyValue): Self = StObject.set(x, "commonPrefixSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContain(value: String => Boolean): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
+      inline def setContain(value: String => Boolean): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDump(value: () => String): Self = StObject.set(x, "dump", js.Any.fromFunction0(value))
+      inline def setDump(value: () => String): Self = StObject.set(x, "dump", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLookup(value: String => Double): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => Double): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTraverse(value: (Double, Double) => Double): Self = StObject.set(x, "traverse", js.Any.fromFunction2(value))
+      inline def setTraverse(value: (Double, Double) => Double): Self = StObject.set(x, "traverse", js.Any.fromFunction2(value))
     }
   }
   
@@ -152,20 +142,16 @@ object doublearray {
   }
   object KeyValue {
     
-    @scala.inline
-    def apply(k: String, v: Double): KeyValue = {
+    inline def apply(k: String, v: Double): KeyValue = {
       val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyValue]
     }
     
-    @scala.inline
-    implicit class KeyValueMutableBuilder[Self <: KeyValue] (val x: Self) extends AnyVal {
+    extension [Self <: KeyValue](x: Self) {
       
-      @scala.inline
-      def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
 }

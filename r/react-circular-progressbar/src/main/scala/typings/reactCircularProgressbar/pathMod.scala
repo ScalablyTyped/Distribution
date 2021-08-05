@@ -12,6 +12,5 @@ object pathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasClassNameCounterClockwiseDashRatioPathRadiusStrokeWidthStyle: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameCounterClockwiseDashRatioPathRadiusStrokeWidthStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasClassNameCounterClockwiseDashRatioPathRadiusStrokeWidthStyle: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameCounterClockwiseDashRatioPathRadiusStrokeWidthStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

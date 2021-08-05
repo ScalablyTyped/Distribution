@@ -9,10 +9,8 @@ object areIntervalsOverlappingIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def apply(
+    inline def apply(intervalLeft: typings.dateFns.mod.Interval, intervalRight: typings.dateFns.mod.Interval): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(
       intervalLeft: typings.dateFns.mod.Interval,
       intervalRight: typings.dateFns.mod.Interval,
       options: Inclusive

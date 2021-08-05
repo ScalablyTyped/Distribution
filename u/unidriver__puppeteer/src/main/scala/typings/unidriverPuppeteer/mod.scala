@@ -16,13 +16,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pupUniDriver(el: BaseElementContainer): UniDriver[ElementContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pupUniDriver")(el.asInstanceOf[js.Any]).asInstanceOf[UniDriver[ElementContainer]]
-  @scala.inline
-  def pupUniDriver(el: ElementGetter): UniDriver[ElementContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pupUniDriver")(el.asInstanceOf[js.Any]).asInstanceOf[UniDriver[ElementContainer]]
+  inline def pupUniDriver(el: BaseElementContainer): UniDriver[ElementContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pupUniDriver")(el.asInstanceOf[js.Any]).asInstanceOf[UniDriver[ElementContainer]]
+  inline def pupUniDriver(el: ElementGetter): UniDriver[ElementContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pupUniDriver")(el.asInstanceOf[js.Any]).asInstanceOf[UniDriver[ElementContainer]]
   
-  @scala.inline
-  def pupUniDriverList(elems: ElementsGetter): UniDriverList[ElementContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pupUniDriverList")(elems.asInstanceOf[js.Any]).asInstanceOf[UniDriverList[ElementContainer]]
+  inline def pupUniDriverList(elems: ElementsGetter): UniDriverList[ElementContainer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pupUniDriverList")(elems.asInstanceOf[js.Any]).asInstanceOf[UniDriverList[ElementContainer]]
   
   trait BaseElementContainer extends StObject {
     
@@ -32,20 +29,16 @@ object mod {
   }
   object BaseElementContainer {
     
-    @scala.inline
-    def apply(page: Page | Frame, selector: String): BaseElementContainer = {
+    inline def apply(page: Page | Frame, selector: String): BaseElementContainer = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseElementContainer]
     }
     
-    @scala.inline
-    implicit class BaseElementContainerMutableBuilder[Self <: BaseElementContainer] (val x: Self) extends AnyVal {
+    extension [Self <: BaseElementContainer](x: Self) {
       
-      @scala.inline
-      def setPage(value: Page | Frame): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Page | Frame): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,20 +50,16 @@ object mod {
   }
   object ElementContainer {
     
-    @scala.inline
-    def apply(page: Page | Frame, selector: String): ElementContainer = {
+    inline def apply(page: Page | Frame, selector: String): ElementContainer = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], element = null)
       __obj.asInstanceOf[ElementContainer]
     }
     
-    @scala.inline
-    implicit class ElementContainerMutableBuilder[Self <: ElementContainer] (val x: Self) extends AnyVal {
+    extension [Self <: ElementContainer](x: Self) {
       
-      @scala.inline
-      def setElement(value: ElementHandle[Element]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: ElementHandle[Element]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNull: Self = StObject.set(x, "element", null)
+      inline def setElementNull: Self = StObject.set(x, "element", null)
     }
   }
   
@@ -84,20 +73,16 @@ object mod {
   }
   object ElementsContainer {
     
-    @scala.inline
-    def apply(elements: js.Array[ElementHandle[Element]], page: Page | Frame, selector: String): ElementsContainer = {
+    inline def apply(elements: js.Array[ElementHandle[Element]], page: Page | Frame, selector: String): ElementsContainer = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementsContainer]
     }
     
-    @scala.inline
-    implicit class ElementsContainerMutableBuilder[Self <: ElementsContainer] (val x: Self) extends AnyVal {
+    extension [Self <: ElementsContainer](x: Self) {
       
-      @scala.inline
-      def setElements(value: js.Array[ElementHandle[Element]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[ElementHandle[Element]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: ElementHandle[Element]*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: ElementHandle[Element]*): Self = StObject.set(x, "elements", js.Array(value :_*))
     }
   }
   

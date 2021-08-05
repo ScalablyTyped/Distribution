@@ -126,116 +126,80 @@ object mod {
   }
   object SwaggerConfigs {
     
-    @scala.inline
-    def apply(): SwaggerConfigs = {
+    inline def apply(): SwaggerConfigs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwaggerConfigs]
     }
     
-    @scala.inline
-    implicit class SwaggerConfigsMutableBuilder[Self <: SwaggerConfigs] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerConfigs](x: Self) {
       
-      @scala.inline
-      def setConfigUrl(value: String): Self = StObject.set(x, "configUrl", value.asInstanceOf[js.Any])
+      inline def setConfigUrl(value: String): Self = StObject.set(x, "configUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUrlUndefined: Self = StObject.set(x, "configUrl", js.undefined)
+      inline def setConfigUrlUndefined: Self = StObject.set(x, "configUrl", js.undefined)
       
-      @scala.inline
-      def setDeepLinking(value: Boolean): Self = StObject.set(x, "deepLinking", value.asInstanceOf[js.Any])
+      inline def setDeepLinking(value: Boolean): Self = StObject.set(x, "deepLinking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepLinkingUndefined: Self = StObject.set(x, "deepLinking", js.undefined)
+      inline def setDeepLinkingUndefined: Self = StObject.set(x, "deepLinking", js.undefined)
       
-      @scala.inline
-      def setDocExpansion(value: list | full | none): Self = StObject.set(x, "docExpansion", value.asInstanceOf[js.Any])
+      inline def setDocExpansion(value: list | full | none): Self = StObject.set(x, "docExpansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocExpansionUndefined: Self = StObject.set(x, "docExpansion", js.undefined)
+      inline def setDocExpansionUndefined: Self = StObject.set(x, "docExpansion", js.undefined)
       
-      @scala.inline
-      def setDomNode(value: String | HTMLElement): Self = StObject.set(x, "domNode", value.asInstanceOf[js.Any])
+      inline def setDomNode(value: String | HTMLElement): Self = StObject.set(x, "domNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomNodeNull: Self = StObject.set(x, "domNode", null)
+      inline def setDomNodeNull: Self = StObject.set(x, "domNode", null)
       
-      @scala.inline
-      def setDomNodeUndefined: Self = StObject.set(x, "domNode", js.undefined)
+      inline def setDomNodeUndefined: Self = StObject.set(x, "domNode", js.undefined)
       
-      @scala.inline
-      def setDom_id(value: String): Self = StObject.set(x, "dom_id", value.asInstanceOf[js.Any])
+      inline def setDom_id(value: String): Self = StObject.set(x, "dom_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDom_idNull: Self = StObject.set(x, "dom_id", null)
+      inline def setDom_idNull: Self = StObject.set(x, "dom_id", null)
       
-      @scala.inline
-      def setDom_idUndefined: Self = StObject.set(x, "dom_id", js.undefined)
+      inline def setDom_idUndefined: Self = StObject.set(x, "dom_id", js.undefined)
       
-      @scala.inline
-      def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMaxDisplayedTags(value: Double): Self = StObject.set(x, "maxDisplayedTags", value.asInstanceOf[js.Any])
+      inline def setMaxDisplayedTags(value: Double): Self = StObject.set(x, "maxDisplayedTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDisplayedTagsUndefined: Self = StObject.set(x, "maxDisplayedTags", js.undefined)
+      inline def setMaxDisplayedTagsUndefined: Self = StObject.set(x, "maxDisplayedTags", js.undefined)
       
-      @scala.inline
-      def setOperationsSorter(value: () => Unit): Self = StObject.set(x, "operationsSorter", js.Any.fromFunction0(value))
+      inline def setOperationsSorter(value: () => Unit): Self = StObject.set(x, "operationsSorter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOperationsSorterUndefined: Self = StObject.set(x, "operationsSorter", js.undefined)
+      inline def setOperationsSorterUndefined: Self = StObject.set(x, "operationsSorter", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPresets(value: js.Array[js.Any]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      inline def setPresets(value: js.Array[js.Any]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
       
-      @scala.inline
-      def setPresetsVarargs(value: js.Any*): Self = StObject.set(x, "presets", js.Array(value :_*))
+      inline def setPresetsVarargs(value: js.Any*): Self = StObject.set(x, "presets", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestInterceptor(value: /* request */ SwaggerRequest => SwaggerRequest): Self = StObject.set(x, "requestInterceptor", js.Any.fromFunction1(value))
+      inline def setRequestInterceptor(value: /* request */ SwaggerRequest => SwaggerRequest): Self = StObject.set(x, "requestInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestInterceptorUndefined: Self = StObject.set(x, "requestInterceptor", js.undefined)
+      inline def setRequestInterceptorUndefined: Self = StObject.set(x, "requestInterceptor", js.undefined)
       
-      @scala.inline
-      def setResponseInterceptor(value: /* response */ SwaggerResponse => SwaggerResponse): Self = StObject.set(x, "responseInterceptor", js.Any.fromFunction1(value))
+      inline def setResponseInterceptor(value: /* response */ SwaggerResponse => SwaggerResponse): Self = StObject.set(x, "responseInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseInterceptorUndefined: Self = StObject.set(x, "responseInterceptor", js.undefined)
+      inline def setResponseInterceptorUndefined: Self = StObject.set(x, "responseInterceptor", js.undefined)
       
-      @scala.inline
-      def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+      inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUrls(value: js.Array[Url]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: js.Array[Url]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+      inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      @scala.inline
-      def setUrlsVarargs(value: Url*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "urls", js.Array(value :_*))
     }
   }
   
@@ -249,20 +213,16 @@ object mod {
   }
   object SwaggerRequest {
     
-    @scala.inline
-    def apply(credentials: String, url: String): SwaggerRequest = {
+    inline def apply(credentials: String, url: String): SwaggerRequest = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwaggerRequest]
     }
     
-    @scala.inline
-    implicit class SwaggerRequestMutableBuilder[Self <: SwaggerRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerRequest](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,20 +236,16 @@ object mod {
   }
   object Url {
     
-    @scala.inline
-    def apply(name: String, url: String): Url = {
+    inline def apply(name: String, url: String): Url = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Url]
     }
     
-    @scala.inline
-    implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+    extension [Self <: Url](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "IsoChronology")
 @js.native
-abstract class IsoChronology protected () extends StObject {
+/* private */ abstract class IsoChronology () extends StObject {
   
   def equals(other: js.Any): Boolean = js.native
   
@@ -19,6 +19,5 @@ object IsoChronology {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def isLeapYear(prolepticYear: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(prolepticYear.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLeapYear(prolepticYear: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(prolepticYear.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -14,27 +14,22 @@ trait BoxShadowProps extends StObject {
 }
 object BoxShadowProps {
   
-  @scala.inline
-  def apply(): BoxShadowProps = {
+  inline def apply(): BoxShadowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoxShadowProps]
   }
   
-  @scala.inline
-  implicit class BoxShadowPropsMutableBuilder[Self <: BoxShadowProps] (val x: Self) extends AnyVal {
+  extension [Self <: BoxShadowProps](x: Self) {
     
-    @scala.inline
-    def setBoxShadow(
+    inline def setBoxShadow(
       value: ResponsiveValue[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
         ]
     ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+    inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
-    @scala.inline
-    def setBoxShadowVarargs(
+    inline def setBoxShadowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double)*
     ): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
   }

@@ -16,28 +16,21 @@ trait WebApp
 }
 object WebApp {
   
-  @scala.inline
-  def apply(): WebApp = {
+  inline def apply(): WebApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebApp]
   }
   
-  @scala.inline
-  implicit class WebAppMutableBuilder[Self <: WebApp] (val x: Self) extends AnyVal {
+  extension [Self <: WebApp](x: Self) {
     
-    @scala.inline
-    def setAppUrl(value: NullableOption[String]): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
+    inline def setAppUrl(value: NullableOption[String]): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUrlNull: Self = StObject.set(x, "appUrl", null)
+    inline def setAppUrlNull: Self = StObject.set(x, "appUrl", null)
     
-    @scala.inline
-    def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
+    inline def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
-    @scala.inline
-    def setUseManagedBrowser(value: Boolean): Self = StObject.set(x, "useManagedBrowser", value.asInstanceOf[js.Any])
+    inline def setUseManagedBrowser(value: Boolean): Self = StObject.set(x, "useManagedBrowser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseManagedBrowserUndefined: Self = StObject.set(x, "useManagedBrowser", js.undefined)
+    inline def setUseManagedBrowserUndefined: Self = StObject.set(x, "useManagedBrowser", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteRolePermissionsBoundaryRequest extends StObject {
 }
 object DeleteRolePermissionsBoundaryRequest {
   
-  @scala.inline
-  def apply(RoleName: roleNameType): DeleteRolePermissionsBoundaryRequest = {
+  inline def apply(RoleName: roleNameType): DeleteRolePermissionsBoundaryRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRolePermissionsBoundaryRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRolePermissionsBoundaryRequestMutableBuilder[Self <: DeleteRolePermissionsBoundaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRolePermissionsBoundaryRequest](x: Self) {
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

@@ -9,6 +9,5 @@ object global {
   @JSGlobal("calq")
   @js.native
   def calq: Calq = js.native
-  @scala.inline
-  def calq_=(x: Calq): Unit = js.Dynamic.global.updateDynamic("calq")(x.asInstanceOf[js.Any])
+  inline def calq_=(x: Calq): Unit = js.Dynamic.global.updateDynamic("calq")(x.asInstanceOf[js.Any])
 }

@@ -26,8 +26,7 @@ trait UserData
 }
 object UserData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationDate: Double,
     Email: String,
     Id: String,
@@ -39,16 +38,12 @@ object UserData {
     __obj.asInstanceOf[UserData]
   }
   
-  @scala.inline
-  implicit class UserDataMutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
+  extension [Self <: UserData](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKYCLevel(value: KYCLevel): Self = StObject.set(x, "KYCLevel", value.asInstanceOf[js.Any])
+    inline def setKYCLevel(value: KYCLevel): Self = StObject.set(x, "KYCLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonType(value: PersonType): Self = StObject.set(x, "PersonType", value.asInstanceOf[js.Any])
+    inline def setPersonType(value: PersonType): Self = StObject.set(x, "PersonType", value.asInstanceOf[js.Any])
   }
 }

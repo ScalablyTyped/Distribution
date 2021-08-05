@@ -17,34 +17,25 @@ trait FunctionMock extends StObject {
 }
 object FunctionMock {
   
-  @scala.inline
-  def apply(): FunctionMock = {
+  inline def apply(): FunctionMock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionMock]
   }
   
-  @scala.inline
-  implicit class FunctionMockMutableBuilder[Self <: FunctionMock] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionMock](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[Arg]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Arg]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: Arg*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Arg*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setResult(value: Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

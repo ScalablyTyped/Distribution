@@ -10,14 +10,10 @@ object issuePositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compareIssuePositions(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")().asInstanceOf[Double]
-  @scala.inline
-  def compareIssuePositions(positionA: Unit, positionB: IssuePosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any], positionB.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def compareIssuePositions(positionA: IssuePosition): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def compareIssuePositions(positionA: IssuePosition, positionB: IssuePosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any], positionB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareIssuePositions(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")().asInstanceOf[Double]
+  inline def compareIssuePositions(positionA: Unit, positionB: IssuePosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any], positionB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareIssuePositions(positionA: IssuePosition): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def compareIssuePositions(positionA: IssuePosition, positionB: IssuePosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssuePositions")(positionA.asInstanceOf[js.Any], positionB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait IssuePosition extends StObject {
     
@@ -27,20 +23,16 @@ object issuePositionMod {
   }
   object IssuePosition {
     
-    @scala.inline
-    def apply(column: Double, line: Double): IssuePosition = {
+    inline def apply(column: Double, line: Double): IssuePosition = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssuePosition]
     }
     
-    @scala.inline
-    implicit class IssuePositionMutableBuilder[Self <: IssuePosition] (val x: Self) extends AnyVal {
+    extension [Self <: IssuePosition](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
 }

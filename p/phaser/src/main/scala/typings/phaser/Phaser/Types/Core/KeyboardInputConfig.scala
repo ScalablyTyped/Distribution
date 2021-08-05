@@ -19,28 +19,21 @@ trait KeyboardInputConfig extends StObject {
 }
 object KeyboardInputConfig {
   
-  @scala.inline
-  def apply(): KeyboardInputConfig = {
+  inline def apply(): KeyboardInputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardInputConfig]
   }
   
-  @scala.inline
-  implicit class KeyboardInputConfigMutableBuilder[Self <: KeyboardInputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardInputConfig](x: Self) {
     
-    @scala.inline
-    def setCapture(value: js.Array[integer]): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: js.Array[integer]): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    @scala.inline
-    def setCaptureVarargs(value: integer*): Self = StObject.set(x, "capture", js.Array(value :_*))
+    inline def setCaptureVarargs(value: integer*): Self = StObject.set(x, "capture", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

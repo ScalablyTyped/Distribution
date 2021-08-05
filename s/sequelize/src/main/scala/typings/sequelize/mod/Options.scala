@@ -202,187 +202,127 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setBenchmark(value: Boolean): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
+    inline def setBenchmark(value: Boolean): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenchmarkUndefined: Self = StObject.set(x, "benchmark", js.undefined)
+    inline def setBenchmarkUndefined: Self = StObject.set(x, "benchmark", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setDatabaseVersion(value: Double): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
+    inline def setDatabaseVersion(value: Double): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseVersionUndefined: Self = StObject.set(x, "databaseVersion", js.undefined)
+    inline def setDatabaseVersionUndefined: Self = StObject.set(x, "databaseVersion", js.undefined)
     
-    @scala.inline
-    def setDefine(value: DefineOptions[js.Any]): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
+    inline def setDefine(value: DefineOptions[js.Any]): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefineUndefined: Self = StObject.set(x, "define", js.undefined)
+    inline def setDefineUndefined: Self = StObject.set(x, "define", js.undefined)
     
-    @scala.inline
-    def setDialect(value: String): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
+    inline def setDialect(value: String): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialectModulePath(value: String): Self = StObject.set(x, "dialectModulePath", value.asInstanceOf[js.Any])
+    inline def setDialectModulePath(value: String): Self = StObject.set(x, "dialectModulePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialectModulePathUndefined: Self = StObject.set(x, "dialectModulePath", js.undefined)
+    inline def setDialectModulePathUndefined: Self = StObject.set(x, "dialectModulePath", js.undefined)
     
-    @scala.inline
-    def setDialectOptions(value: js.Object): Self = StObject.set(x, "dialectOptions", value.asInstanceOf[js.Any])
+    inline def setDialectOptions(value: js.Object): Self = StObject.set(x, "dialectOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialectOptionsUndefined: Self = StObject.set(x, "dialectOptions", js.undefined)
+    inline def setDialectOptionsUndefined: Self = StObject.set(x, "dialectOptions", js.undefined)
     
-    @scala.inline
-    def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
+    inline def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setIsolationLevel(value: TransactionIsolationLevel): Self = StObject.set(x, "isolationLevel", value.asInstanceOf[js.Any])
+    inline def setIsolationLevel(value: TransactionIsolationLevel): Self = StObject.set(x, "isolationLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolationLevelUndefined: Self = StObject.set(x, "isolationLevel", js.undefined)
+    inline def setIsolationLevelUndefined: Self = StObject.set(x, "isolationLevel", js.undefined)
     
-    @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
+    inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
     
-    @scala.inline
-    def setOmitNull(value: Boolean): Self = StObject.set(x, "omitNull", value.asInstanceOf[js.Any])
+    inline def setOmitNull(value: Boolean): Self = StObject.set(x, "omitNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmitNullUndefined: Self = StObject.set(x, "omitNull", js.undefined)
+    inline def setOmitNullUndefined: Self = StObject.set(x, "omitNull", js.undefined)
     
-    @scala.inline
-    def setOperatorsAliases(value: Boolean | OperatorsAliases): Self = StObject.set(x, "operatorsAliases", value.asInstanceOf[js.Any])
+    inline def setOperatorsAliases(value: Boolean | OperatorsAliases): Self = StObject.set(x, "operatorsAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorsAliasesUndefined: Self = StObject.set(x, "operatorsAliases", js.undefined)
+    inline def setOperatorsAliasesUndefined: Self = StObject.set(x, "operatorsAliases", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPool(value: PoolOptions): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: PoolOptions): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+    inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setQuery(value: QueryOptions): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: QueryOptions): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setQuoteIdentifiers(value: Boolean): Self = StObject.set(x, "quoteIdentifiers", value.asInstanceOf[js.Any])
+    inline def setQuoteIdentifiers(value: Boolean): Self = StObject.set(x, "quoteIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteIdentifiersUndefined: Self = StObject.set(x, "quoteIdentifiers", js.undefined)
+    inline def setQuoteIdentifiersUndefined: Self = StObject.set(x, "quoteIdentifiers", js.undefined)
     
-    @scala.inline
-    def setReplication(value: ReplicationOptions): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
+    inline def setReplication(value: ReplicationOptions): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
+    inline def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
     
-    @scala.inline
-    def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
-    @scala.inline
-    def setSet(value: SetOptions): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: SetOptions): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
-    @scala.inline
-    def setSync(value: SyncOptions): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: SyncOptions): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    @scala.inline
-    def setTransactionType(value: TransactionType): Self = StObject.set(x, "transactionType", value.asInstanceOf[js.Any])
+    inline def setTransactionType(value: TransactionType): Self = StObject.set(x, "transactionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionTypeUndefined: Self = StObject.set(x, "transactionType", js.undefined)
+    inline def setTransactionTypeUndefined: Self = StObject.set(x, "transactionType", js.undefined)
     
-    @scala.inline
-    def setTypeValidation(value: Boolean): Self = StObject.set(x, "typeValidation", value.asInstanceOf[js.Any])
+    inline def setTypeValidation(value: Boolean): Self = StObject.set(x, "typeValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeValidationUndefined: Self = StObject.set(x, "typeValidation", js.undefined)
+    inline def setTypeValidationUndefined: Self = StObject.set(x, "typeValidation", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

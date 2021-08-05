@@ -48,8 +48,7 @@ trait CreateNetworkInput extends StObject {
 }
 object CreateNetworkInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientRequestToken: ClientRequestTokenString,
     Framework: Framework,
     FrameworkVersion: FrameworkVersionString,
@@ -61,37 +60,26 @@ object CreateNetworkInput {
     __obj.asInstanceOf[CreateNetworkInput]
   }
   
-  @scala.inline
-  implicit class CreateNetworkInputMutableBuilder[Self <: CreateNetworkInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNetworkInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFramework(value: Framework): Self = StObject.set(x, "Framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: Framework): Self = StObject.set(x, "Framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkConfiguration(value: NetworkFrameworkConfiguration): Self = StObject.set(x, "FrameworkConfiguration", value.asInstanceOf[js.Any])
+    inline def setFrameworkConfiguration(value: NetworkFrameworkConfiguration): Self = StObject.set(x, "FrameworkConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkConfigurationUndefined: Self = StObject.set(x, "FrameworkConfiguration", js.undefined)
+    inline def setFrameworkConfigurationUndefined: Self = StObject.set(x, "FrameworkConfiguration", js.undefined)
     
-    @scala.inline
-    def setFrameworkVersion(value: FrameworkVersionString): Self = StObject.set(x, "FrameworkVersion", value.asInstanceOf[js.Any])
+    inline def setFrameworkVersion(value: FrameworkVersionString): Self = StObject.set(x, "FrameworkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberConfiguration(value: MemberConfiguration): Self = StObject.set(x, "MemberConfiguration", value.asInstanceOf[js.Any])
+    inline def setMemberConfiguration(value: MemberConfiguration): Self = StObject.set(x, "MemberConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVotingPolicy(value: VotingPolicy): Self = StObject.set(x, "VotingPolicy", value.asInstanceOf[js.Any])
+    inline def setVotingPolicy(value: VotingPolicy): Self = StObject.set(x, "VotingPolicy", value.asInstanceOf[js.Any])
   }
 }

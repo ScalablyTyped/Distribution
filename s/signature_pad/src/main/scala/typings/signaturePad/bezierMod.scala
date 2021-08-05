@@ -31,7 +31,7 @@ object bezierMod {
     
     def length(): Double = js.native
     
-    var point: js.Any = js.native
+    /* private */ var point: js.Any = js.native
     
     var startPoint: Point = js.native
     
@@ -47,10 +47,8 @@ object bezierMod {
     @JSImport("signature_pad/dist/types/bezier", "Bezier.calculateControlPoints")
     @js.native
     def calculateControlPoints: js.Any = js.native
-    @scala.inline
-    def calculateControlPoints_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calculateControlPoints")(x.asInstanceOf[js.Any])
+    inline def calculateControlPoints_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calculateControlPoints")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def fromPoints(points: js.Array[Point], widths: End): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+    inline def fromPoints(points: js.Array[Point], widths: End): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Bezier]
   }
 }

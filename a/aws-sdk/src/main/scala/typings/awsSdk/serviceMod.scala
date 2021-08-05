@@ -131,26 +131,20 @@ object serviceMod {
   }
   object WaiterConfiguration {
     
-    @scala.inline
-    def apply(): WaiterConfiguration = {
+    inline def apply(): WaiterConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WaiterConfiguration]
     }
     
-    @scala.inline
-    implicit class WaiterConfigurationMutableBuilder[Self <: WaiterConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WaiterConfiguration](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
     }
   }
 }

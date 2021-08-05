@@ -26,25 +26,25 @@ object modelEventManagerMod {
       currentEventId: Double
     ) = this()
     
-    var currentEventId: js.Any = js.native
+    /* private */ var currentEventId: js.Any = js.native
     
-    var deltaProcessor: js.Any = js.native
+    /* private */ var deltaProcessor: js.Any = js.native
     
-    var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: js.Any = js.native
     
-    var eventQueue: js.Any = js.native
+    /* private */ var eventQueue: js.Any = js.native
     
     var eventReceiver: ModelEventReceiver = js.native
     
     /* CompleteClass */
     override def loadUnitCompleted(eventId: Double, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     
-    var loadUnitResults: js.Any = js.native
+    /* private */ var loadUnitResults: js.Any = js.native
     
     /* CompleteClass */
     override def loadUnitStarted(): Unit = js.native
     
-    var modelChanged: js.Any = js.native
+    /* private */ var modelChanged: js.Any = js.native
     
     /* CompleteClass */
     override def onEventProcessed(callback: IVoidCallback): Unit = js.native
@@ -52,13 +52,13 @@ object modelEventManagerMod {
     /* CompleteClass */
     override def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit = js.native
     
-    var onNewDelta: js.Any = js.native
+    /* private */ var onNewDelta: js.Any = js.native
     
-    var pendingUnits: js.Any = js.native
+    /* private */ var pendingUnits: js.Any = js.native
     
-    var processEventsQueue: js.Any = js.native
+    /* private */ var processEventsQueue: js.Any = js.native
     
-    var processLoadedUnits: js.Any = js.native
+    /* private */ var processLoadedUnits: js.Any = js.native
     
     def scheduleEvent(deltaEvent: IDeltaEvent): Unit = js.native
     
@@ -79,20 +79,16 @@ object modelEventManagerMod {
   }
   object ILoadUnitResult {
     
-    @scala.inline
-    def apply(callback: () => Unit, eventId: Double): ILoadUnitResult = {
+    inline def apply(callback: () => Unit, eventId: Double): ILoadUnitResult = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), eventId = eventId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILoadUnitResult]
     }
     
-    @scala.inline
-    implicit class ILoadUnitResultMutableBuilder[Self <: ILoadUnitResult] (val x: Self) extends AnyVal {
+    extension [Self <: ILoadUnitResult](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+      inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,8 +108,7 @@ object modelEventManagerMod {
   }
   object IModelEventManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loadUnitCompleted: (Double, IVoidCallback, IErrorCallback) => Unit,
       loadUnitStarted: () => Unit,
       onEventProcessed: IVoidCallback => Unit,
@@ -125,26 +120,19 @@ object modelEventManagerMod {
       __obj.asInstanceOf[IModelEventManager]
     }
     
-    @scala.inline
-    implicit class IModelEventManagerMutableBuilder[Self <: IModelEventManager] (val x: Self) extends AnyVal {
+    extension [Self <: IModelEventManager](x: Self) {
       
-      @scala.inline
-      def setLoadUnitCompleted(value: (Double, IVoidCallback, IErrorCallback) => Unit): Self = StObject.set(x, "loadUnitCompleted", js.Any.fromFunction3(value))
+      inline def setLoadUnitCompleted(value: (Double, IVoidCallback, IErrorCallback) => Unit): Self = StObject.set(x, "loadUnitCompleted", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLoadUnitStarted(value: () => Unit): Self = StObject.set(x, "loadUnitStarted", js.Any.fromFunction0(value))
+      inline def setLoadUnitStarted(value: () => Unit): Self = StObject.set(x, "loadUnitStarted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnEventProcessed(value: IVoidCallback => Unit): Self = StObject.set(x, "onEventProcessed", js.Any.fromFunction1(value))
+      inline def setOnEventProcessed(value: IVoidCallback => Unit): Self = StObject.set(x, "onEventProcessed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFileChangesReceived(value: js.Function1[/* files */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "onFileChangesReceived", js.Any.fromFunction1(value))
+      inline def setOnFileChangesReceived(value: js.Function1[/* files */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "onFileChangesReceived", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

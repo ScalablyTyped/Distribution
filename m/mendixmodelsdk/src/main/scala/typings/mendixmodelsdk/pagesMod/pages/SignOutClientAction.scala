@@ -41,8 +41,7 @@ object SignOutClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def create(model: IModel): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -53,8 +52,7 @@ object SignOutClientAction {
     *  7.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionButtonUnderAction(container: ActionButton): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInActionButtonUnderAction(container: ActionButton): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -65,8 +63,7 @@ object SignOutClientAction {
     *  7.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionItemUnderAction(container: ActionItem): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInActionItemUnderAction(container: ActionItem): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -77,8 +74,7 @@ object SignOutClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -89,8 +85,7 @@ object SignOutClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -101,8 +96,7 @@ object SignOutClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -113,8 +107,7 @@ object SignOutClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -125,8 +118,7 @@ object SignOutClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBottomBarItemUnderAction(container: BottomBarItem): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInBottomBarItemUnderAction(container: BottomBarItem): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -137,8 +129,7 @@ object SignOutClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderOnClickAction(container: DivContainer): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInDivContainerUnderOnClickAction(container: DivContainer): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -149,8 +140,7 @@ object SignOutClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -161,8 +151,7 @@ object SignOutClientAction {
     *  7.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGridActionButtonUnderAction(container: GridActionButton): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInGridActionButtonUnderAction(container: GridActionButton): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -173,8 +162,7 @@ object SignOutClientAction {
     *  7.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderClickAction(container: ListView): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInListViewUnderClickAction(container: ListView): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -185,8 +173,7 @@ object SignOutClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderPullDownAction(container: ListView): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInListViewUnderPullDownAction(container: ListView): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -197,8 +184,7 @@ object SignOutClientAction {
     *  7.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMenuItemUnderAction(container: MenuItem): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInMenuItemUnderAction(container: MenuItem): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -209,8 +195,7 @@ object SignOutClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -221,8 +206,7 @@ object SignOutClientAction {
     *  7.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -233,8 +217,7 @@ object SignOutClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
@@ -245,20 +228,17 @@ object SignOutClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderAction(container: WidgetValue): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
+  inline def createInWidgetValueUnderAction(container: WidgetValue): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SignOutClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SignOutClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

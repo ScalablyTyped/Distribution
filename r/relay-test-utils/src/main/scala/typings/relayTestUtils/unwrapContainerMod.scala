@@ -14,6 +14,5 @@ object unwrapContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapContainer")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
+  inline def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapContainer")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

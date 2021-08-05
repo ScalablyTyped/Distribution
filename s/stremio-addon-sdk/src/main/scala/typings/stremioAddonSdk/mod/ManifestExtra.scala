@@ -40,37 +40,27 @@ trait ManifestExtra extends StObject {
 }
 object ManifestExtra {
   
-  @scala.inline
-  def apply(name: Extra): ManifestExtra = {
+  inline def apply(name: Extra): ManifestExtra = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestExtra]
   }
   
-  @scala.inline
-  implicit class ManifestExtraMutableBuilder[Self <: ManifestExtra] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestExtra](x: Self) {
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
+    inline def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
-    @scala.inline
-    def setName(value: Extra): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Extra): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsLimit(value: Double): Self = StObject.set(x, "optionsLimit", value.asInstanceOf[js.Any])
+    inline def setOptionsLimit(value: Double): Self = StObject.set(x, "optionsLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsLimitUndefined: Self = StObject.set(x, "optionsLimit", js.undefined)
+    inline def setOptionsLimitUndefined: Self = StObject.set(x, "optionsLimit", js.undefined)
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

@@ -17,16 +17,13 @@ trait DebugAdapterTrackerFactory extends StObject {
 }
 object DebugAdapterTrackerFactory {
   
-  @scala.inline
-  def apply(createDebugAdapterTracker: DebugSession => ProviderResult[DebugAdapterTracker]): DebugAdapterTrackerFactory = {
+  inline def apply(createDebugAdapterTracker: DebugSession => ProviderResult[DebugAdapterTracker]): DebugAdapterTrackerFactory = {
     val __obj = js.Dynamic.literal(createDebugAdapterTracker = js.Any.fromFunction1(createDebugAdapterTracker))
     __obj.asInstanceOf[DebugAdapterTrackerFactory]
   }
   
-  @scala.inline
-  implicit class DebugAdapterTrackerFactoryMutableBuilder[Self <: DebugAdapterTrackerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: DebugAdapterTrackerFactory](x: Self) {
     
-    @scala.inline
-    def setCreateDebugAdapterTracker(value: DebugSession => ProviderResult[DebugAdapterTracker]): Self = StObject.set(x, "createDebugAdapterTracker", js.Any.fromFunction1(value))
+    inline def setCreateDebugAdapterTracker(value: DebugSession => ProviderResult[DebugAdapterTracker]): Self = StObject.set(x, "createDebugAdapterTracker", js.Any.fromFunction1(value))
   }
 }

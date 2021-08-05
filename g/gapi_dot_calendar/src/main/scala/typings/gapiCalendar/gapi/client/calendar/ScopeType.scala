@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScopeType extends StObject
 object ScopeType {
   
-  @scala.inline
-  def default: typings.gapiCalendar.gapiCalendarStrings.default = "default".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.default]
+  inline def default: typings.gapiCalendar.gapiCalendarStrings.default = "default".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.default]
   
-  @scala.inline
-  def domain: typings.gapiCalendar.gapiCalendarStrings.domain = "domain".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.domain]
+  inline def domain: typings.gapiCalendar.gapiCalendarStrings.domain = "domain".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.domain]
   
-  @scala.inline
-  def group: typings.gapiCalendar.gapiCalendarStrings.group = "group".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.group]
+  inline def group: typings.gapiCalendar.gapiCalendarStrings.group = "group".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.group]
   
-  @scala.inline
-  def user: typings.gapiCalendar.gapiCalendarStrings.user = "user".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.user]
+  inline def user: typings.gapiCalendar.gapiCalendarStrings.user = "user".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.user]
 }

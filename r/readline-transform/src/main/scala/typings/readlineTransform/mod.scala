@@ -32,32 +32,24 @@ object mod {
   }
   object ReadlineTransformOptions {
     
-    @scala.inline
-    def apply(): ReadlineTransformOptions = {
+    inline def apply(): ReadlineTransformOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadlineTransformOptions]
     }
     
-    @scala.inline
-    implicit class ReadlineTransformOptionsMutableBuilder[Self <: ReadlineTransformOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadlineTransformOptions](x: Self) {
       
-      @scala.inline
-      def setBreakMatcher(value: RegExp): Self = StObject.set(x, "breakMatcher", value.asInstanceOf[js.Any])
+      inline def setBreakMatcher(value: RegExp): Self = StObject.set(x, "breakMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakMatcherUndefined: Self = StObject.set(x, "breakMatcher", js.undefined)
+      inline def setBreakMatcherUndefined: Self = StObject.set(x, "breakMatcher", js.undefined)
       
-      @scala.inline
-      def setIgnoreEndOfBreak(value: Boolean): Self = StObject.set(x, "ignoreEndOfBreak", value.asInstanceOf[js.Any])
+      inline def setIgnoreEndOfBreak(value: Boolean): Self = StObject.set(x, "ignoreEndOfBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreEndOfBreakUndefined: Self = StObject.set(x, "ignoreEndOfBreak", js.undefined)
+      inline def setIgnoreEndOfBreakUndefined: Self = StObject.set(x, "ignoreEndOfBreak", js.undefined)
       
-      @scala.inline
-      def setSkipEmpty(value: Boolean): Self = StObject.set(x, "skipEmpty", value.asInstanceOf[js.Any])
+      inline def setSkipEmpty(value: Boolean): Self = StObject.set(x, "skipEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipEmptyUndefined: Self = StObject.set(x, "skipEmpty", js.undefined)
+      inline def setSkipEmptyUndefined: Self = StObject.set(x, "skipEmpty", js.undefined)
     }
   }
 }

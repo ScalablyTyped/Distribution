@@ -33,43 +33,31 @@ trait ValidateOptions[C] extends StObject {
 }
 object ValidateOptions {
   
-  @scala.inline
-  def apply[C](): ValidateOptions[C] = {
+  inline def apply[C](): ValidateOptions[C] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateOptions[C]]
   }
   
-  @scala.inline
-  implicit class ValidateOptionsMutableBuilder[Self <: ValidateOptions[?], C] (val x: Self & ValidateOptions[C]) extends AnyVal {
+  extension [Self <: ValidateOptions[?], C](x: Self & ValidateOptions[C]) {
     
-    @scala.inline
-    def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
+    inline def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
+    inline def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
     
-    @scala.inline
-    def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    @scala.inline
-    def setStripUnknown(value: Boolean): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
+    inline def setStripUnknown(value: Boolean): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
+    inline def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
   }
 }

@@ -22,19 +22,15 @@ trait ResourceQuotaStatus extends StObject {
 }
 object ResourceQuotaStatus {
   
-  @scala.inline
-  def apply(hard: StringDictionary[String], used: StringDictionary[String]): ResourceQuotaStatus = {
+  inline def apply(hard: StringDictionary[String], used: StringDictionary[String]): ResourceQuotaStatus = {
     val __obj = js.Dynamic.literal(hard = hard.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceQuotaStatus]
   }
   
-  @scala.inline
-  implicit class ResourceQuotaStatusMutableBuilder[Self <: ResourceQuotaStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceQuotaStatus](x: Self) {
     
-    @scala.inline
-    def setHard(value: StringDictionary[String]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+    inline def setHard(value: StringDictionary[String]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed(value: StringDictionary[String]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: StringDictionary[String]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

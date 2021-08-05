@@ -23,16 +23,13 @@ trait PlusNativeUINativeUIObj extends StObject {
 }
 object PlusNativeUINativeUIObj {
   
-  @scala.inline
-  def apply(close: () => Unit): PlusNativeUINativeUIObj = {
+  inline def apply(close: () => Unit): PlusNativeUINativeUIObj = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[PlusNativeUINativeUIObj]
   }
   
-  @scala.inline
-  implicit class PlusNativeUINativeUIObjMutableBuilder[Self <: PlusNativeUINativeUIObj] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUINativeUIObj](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

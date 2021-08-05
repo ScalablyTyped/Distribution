@@ -14,22 +14,17 @@ trait MergeCapacityCommitmentsRequest extends StObject {
 }
 object MergeCapacityCommitmentsRequest {
   
-  @scala.inline
-  def apply(): MergeCapacityCommitmentsRequest = {
+  inline def apply(): MergeCapacityCommitmentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeCapacityCommitmentsRequest]
   }
   
-  @scala.inline
-  implicit class MergeCapacityCommitmentsRequestMutableBuilder[Self <: MergeCapacityCommitmentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MergeCapacityCommitmentsRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityCommitmentIds(value: js.Array[String]): Self = StObject.set(x, "capacityCommitmentIds", value.asInstanceOf[js.Any])
+    inline def setCapacityCommitmentIds(value: js.Array[String]): Self = StObject.set(x, "capacityCommitmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityCommitmentIdsUndefined: Self = StObject.set(x, "capacityCommitmentIds", js.undefined)
+    inline def setCapacityCommitmentIdsUndefined: Self = StObject.set(x, "capacityCommitmentIds", js.undefined)
     
-    @scala.inline
-    def setCapacityCommitmentIdsVarargs(value: String*): Self = StObject.set(x, "capacityCommitmentIds", js.Array(value :_*))
+    inline def setCapacityCommitmentIdsVarargs(value: String*): Self = StObject.set(x, "capacityCommitmentIds", js.Array(value :_*))
   }
 }

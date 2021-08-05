@@ -38,43 +38,31 @@ trait MeasureGroupStratifier
 }
 object MeasureGroupStratifier {
   
-  @scala.inline
-  def apply(): MeasureGroupStratifier = {
+  inline def apply(): MeasureGroupStratifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeasureGroupStratifier]
   }
   
-  @scala.inline
-  implicit class MeasureGroupStratifierMutableBuilder[Self <: MeasureGroupStratifier] (val x: Self) extends AnyVal {
+  extension [Self <: MeasureGroupStratifier](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: String): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: String): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def set_criteria(value: Element): Self = StObject.set(x, "_criteria", value.asInstanceOf[js.Any])
+    inline def set_criteria(value: Element): Self = StObject.set(x, "_criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_criteriaUndefined: Self = StObject.set(x, "_criteria", js.undefined)
+    inline def set_criteriaUndefined: Self = StObject.set(x, "_criteria", js.undefined)
     
-    @scala.inline
-    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
+    inline def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
+    inline def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
   }
 }

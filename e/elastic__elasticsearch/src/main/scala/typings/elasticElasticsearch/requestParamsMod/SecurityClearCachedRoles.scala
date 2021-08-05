@@ -12,19 +12,15 @@ trait SecurityClearCachedRoles
 }
 object SecurityClearCachedRoles {
   
-  @scala.inline
-  def apply(name: String | js.Array[String]): SecurityClearCachedRoles = {
+  inline def apply(name: String | js.Array[String]): SecurityClearCachedRoles = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityClearCachedRoles]
   }
   
-  @scala.inline
-  implicit class SecurityClearCachedRolesMutableBuilder[Self <: SecurityClearCachedRoles] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityClearCachedRoles](x: Self) {
     
-    @scala.inline
-    def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

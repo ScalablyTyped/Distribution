@@ -46,55 +46,40 @@ trait CIMMarkerPlacementAlongLineVariableSize
 }
 object CIMMarkerPlacementAlongLineVariableSize {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementAlongLineVariableSize = {
+  inline def apply(): CIMMarkerPlacementAlongLineVariableSize = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementAlongLineVariableSize")
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineVariableSize]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementAlongLineVariableSizeMutableBuilder[Self <: CIMMarkerPlacementAlongLineVariableSize] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementAlongLineVariableSize](x: Self) {
     
-    @scala.inline
-    def setMaxRandomOffset(value: Double): Self = StObject.set(x, "maxRandomOffset", value.asInstanceOf[js.Any])
+    inline def setMaxRandomOffset(value: Double): Self = StObject.set(x, "maxRandomOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRandomOffsetUndefined: Self = StObject.set(x, "maxRandomOffset", js.undefined)
+    inline def setMaxRandomOffsetUndefined: Self = StObject.set(x, "maxRandomOffset", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
-    @scala.inline
-    def setNumberOfSizes(value: Double): Self = StObject.set(x, "numberOfSizes", value.asInstanceOf[js.Any])
+    inline def setNumberOfSizes(value: Double): Self = StObject.set(x, "numberOfSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfSizesUndefined: Self = StObject.set(x, "numberOfSizes", js.undefined)
+    inline def setNumberOfSizesUndefined: Self = StObject.set(x, "numberOfSizes", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariationMethod(
+    inline def setVariationMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SizeVariationMethod * / any */ String
     ): Self = StObject.set(x, "variationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariationMethodUndefined: Self = StObject.set(x, "variationMethod", js.undefined)
+    inline def setVariationMethodUndefined: Self = StObject.set(x, "variationMethod", js.undefined)
   }
 }

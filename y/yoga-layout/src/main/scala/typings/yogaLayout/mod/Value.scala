@@ -14,8 +14,7 @@ trait Value extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromJS: js.Function2[/* unit */ YogaUnit | Double, /* value */ Double, js.Any] => Unit,
     unit: YogaUnit | Double,
     value: Double
@@ -24,16 +23,12 @@ object Value {
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setFromJS(value: js.Function2[/* unit */ YogaUnit | Double, /* value */ Double, js.Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
+    inline def setFromJS(value: js.Function2[/* unit */ YogaUnit | Double, /* value */ Double, js.Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnit(value: YogaUnit | Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: YogaUnit | Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

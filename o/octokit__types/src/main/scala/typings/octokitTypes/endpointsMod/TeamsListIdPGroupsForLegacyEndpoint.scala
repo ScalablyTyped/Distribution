@@ -10,16 +10,13 @@ trait TeamsListIdPGroupsForLegacyEndpoint extends StObject {
 }
 object TeamsListIdPGroupsForLegacyEndpoint {
   
-  @scala.inline
-  def apply(team_id: Double): TeamsListIdPGroupsForLegacyEndpoint = {
+  inline def apply(team_id: Double): TeamsListIdPGroupsForLegacyEndpoint = {
     val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsListIdPGroupsForLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsListIdPGroupsForLegacyEndpointMutableBuilder[Self <: TeamsListIdPGroupsForLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsListIdPGroupsForLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

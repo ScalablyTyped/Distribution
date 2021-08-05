@@ -16,17 +16,14 @@ object typesMaximumOpenPullRequestsExceededExceptionMod {
   }
   object MaximumOpenPullRequestsExceededException {
     
-    @scala.inline
-    def apply(): MaximumOpenPullRequestsExceededException = {
+    inline def apply(): MaximumOpenPullRequestsExceededException = {
       val __obj = js.Dynamic.literal(name = "MaximumOpenPullRequestsExceededException")
       __obj.asInstanceOf[MaximumOpenPullRequestsExceededException]
     }
     
-    @scala.inline
-    implicit class MaximumOpenPullRequestsExceededExceptionMutableBuilder[Self <: MaximumOpenPullRequestsExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: MaximumOpenPullRequestsExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumOpenPullRequestsExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

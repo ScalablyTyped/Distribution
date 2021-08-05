@@ -90,133 +90,91 @@ trait INumber
 }
 object INumber {
   
-  @scala.inline
-  def apply(): INumber = {
+  inline def apply(): INumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INumber]
   }
   
-  @scala.inline
-  implicit class INumberMutableBuilder[Self <: INumber] (val x: Self) extends AnyVal {
+  extension [Self <: INumber](x: Self) {
     
-    @scala.inline
-    def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
+    inline def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
+    inline def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
     
-    @scala.inline
-    def setAllowExponential(value: Boolean): Self = StObject.set(x, "allowExponential", value.asInstanceOf[js.Any])
+    inline def setAllowExponential(value: Boolean): Self = StObject.set(x, "allowExponential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowExponentialUndefined: Self = StObject.set(x, "allowExponential", js.undefined)
+    inline def setAllowExponentialUndefined: Self = StObject.set(x, "allowExponential", js.undefined)
     
-    @scala.inline
-    def setAutoStripChars(value: Boolean): Self = StObject.set(x, "autoStripChars", value.asInstanceOf[js.Any])
+    inline def setAutoStripChars(value: Boolean): Self = StObject.set(x, "autoStripChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStripCharsUndefined: Self = StObject.set(x, "autoStripChars", js.undefined)
+    inline def setAutoStripCharsUndefined: Self = StObject.set(x, "autoStripChars", js.undefined)
     
-    @scala.inline
-    def setBaseChars(value: String): Self = StObject.set(x, "baseChars", value.asInstanceOf[js.Any])
+    inline def setBaseChars(value: String): Self = StObject.set(x, "baseChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseCharsUndefined: Self = StObject.set(x, "baseChars", js.undefined)
+    inline def setBaseCharsUndefined: Self = StObject.set(x, "baseChars", js.undefined)
     
-    @scala.inline
-    def setBeforeBlur(value: () => Unit): Self = StObject.set(x, "beforeBlur", js.Any.fromFunction0(value))
+    inline def setBeforeBlur(value: () => Unit): Self = StObject.set(x, "beforeBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
+    inline def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
     
-    @scala.inline
-    def setDecimalPrecision(value: Double): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
+    inline def setDecimalPrecision(value: Double): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalPrecisionUndefined: Self = StObject.set(x, "decimalPrecision", js.undefined)
+    inline def setDecimalPrecisionUndefined: Self = StObject.set(x, "decimalPrecision", js.undefined)
     
-    @scala.inline
-    def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+    inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+    inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
     
-    @scala.inline
-    def setGetSubmitValue(value: () => String): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
+    inline def setGetSubmitValue(value: () => String): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
+    inline def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
     
-    @scala.inline
-    def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
+    inline def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
+    inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
+    inline def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
+    inline def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setNanText(value: String): Self = StObject.set(x, "nanText", value.asInstanceOf[js.Any])
+    inline def setNanText(value: String): Self = StObject.set(x, "nanText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanTextUndefined: Self = StObject.set(x, "nanText", js.undefined)
+    inline def setNanTextUndefined: Self = StObject.set(x, "nanText", js.undefined)
     
-    @scala.inline
-    def setNegativeText(value: String): Self = StObject.set(x, "negativeText", value.asInstanceOf[js.Any])
+    inline def setNegativeText(value: String): Self = StObject.set(x, "negativeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeTextUndefined: Self = StObject.set(x, "negativeText", js.undefined)
+    inline def setNegativeTextUndefined: Self = StObject.set(x, "negativeText", js.undefined)
     
-    @scala.inline
-    def setSetMaxValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
+    inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
-    @scala.inline
-    def setSetMinValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
+    inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
-    @scala.inline
-    def setSetSpinDownEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinDownEnabled", js.Any.fromFunction2(value))
+    inline def setSetSpinDownEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinDownEnabled", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSpinDownEnabledUndefined: Self = StObject.set(x, "setSpinDownEnabled", js.undefined)
+    inline def setSetSpinDownEnabledUndefined: Self = StObject.set(x, "setSpinDownEnabled", js.undefined)
     
-    @scala.inline
-    def setSetSpinUpEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinUpEnabled", js.Any.fromFunction2(value))
+    inline def setSetSpinUpEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinUpEnabled", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSpinUpEnabledUndefined: Self = StObject.set(x, "setSpinUpEnabled", js.undefined)
+    inline def setSetSpinUpEnabledUndefined: Self = StObject.set(x, "setSpinUpEnabled", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setSubmitLocaleSeparator(value: Boolean): Self = StObject.set(x, "submitLocaleSeparator", value.asInstanceOf[js.Any])
+    inline def setSubmitLocaleSeparator(value: Boolean): Self = StObject.set(x, "submitLocaleSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitLocaleSeparatorUndefined: Self = StObject.set(x, "submitLocaleSeparator", js.undefined)
+    inline def setSubmitLocaleSeparatorUndefined: Self = StObject.set(x, "submitLocaleSeparator", js.undefined)
   }
 }

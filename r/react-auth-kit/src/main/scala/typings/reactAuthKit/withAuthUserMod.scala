@@ -12,8 +12,7 @@ object withAuthUserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P /* <: withAuthProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
+  inline def default[P /* <: withAuthProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   
   trait withAuthProps extends StObject {
     
@@ -21,20 +20,16 @@ object withAuthUserMod {
   }
   object withAuthProps {
     
-    @scala.inline
-    def apply(): withAuthProps = {
+    inline def apply(): withAuthProps = {
       val __obj = js.Dynamic.literal(authState = null)
       __obj.asInstanceOf[withAuthProps]
     }
     
-    @scala.inline
-    implicit class withAuthPropsMutableBuilder[Self <: withAuthProps] (val x: Self) extends AnyVal {
+    extension [Self <: withAuthProps](x: Self) {
       
-      @scala.inline
-      def setAuthState(value: js.Object): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
+      inline def setAuthState(value: js.Object): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthStateNull: Self = StObject.set(x, "authState", null)
+      inline def setAuthStateNull: Self = StObject.set(x, "authState", null)
     }
   }
 }

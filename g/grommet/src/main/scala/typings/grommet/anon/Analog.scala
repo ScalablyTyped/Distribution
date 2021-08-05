@@ -12,25 +12,19 @@ trait Analog extends StObject {
 }
 object Analog {
   
-  @scala.inline
-  def apply(): Analog = {
+  inline def apply(): Analog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Analog]
   }
   
-  @scala.inline
-  implicit class AnalogMutableBuilder[Self <: Analog] (val x: Self) extends AnyVal {
+  extension [Self <: Analog](x: Self) {
     
-    @scala.inline
-    def setAnalog(value: Hour): Self = StObject.set(x, "analog", value.asInstanceOf[js.Any])
+    inline def setAnalog(value: Hour): Self = StObject.set(x, "analog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalogUndefined: Self = StObject.set(x, "analog", js.undefined)
+    inline def setAnalogUndefined: Self = StObject.set(x, "analog", js.undefined)
     
-    @scala.inline
-    def setDigital(value: Text): Self = StObject.set(x, "digital", value.asInstanceOf[js.Any])
+    inline def setDigital(value: Text): Self = StObject.set(x, "digital", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitalUndefined: Self = StObject.set(x, "digital", js.undefined)
+    inline def setDigitalUndefined: Self = StObject.set(x, "digital", js.undefined)
   }
 }

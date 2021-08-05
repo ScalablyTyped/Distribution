@@ -13,25 +13,19 @@ trait PaymentIntentResponse extends StObject {
 }
 object PaymentIntentResponse {
   
-  @scala.inline
-  def apply(): PaymentIntentResponse = {
+  inline def apply(): PaymentIntentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentIntentResponse]
   }
   
-  @scala.inline
-  implicit class PaymentIntentResponseMutableBuilder[Self <: PaymentIntentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentIntentResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setPaymentIntent(value: PaymentIntent): Self = StObject.set(x, "paymentIntent", value.asInstanceOf[js.Any])
+    inline def setPaymentIntent(value: PaymentIntent): Self = StObject.set(x, "paymentIntent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentIntentUndefined: Self = StObject.set(x, "paymentIntent", js.undefined)
+    inline def setPaymentIntentUndefined: Self = StObject.set(x, "paymentIntent", js.undefined)
   }
 }

@@ -34,8 +34,7 @@ trait BaseLayerViewGL2DRenderRenderParameters
 }
 object BaseLayerViewGL2DRenderRenderParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     context: WebGLRenderingContext | js.Any,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,16 +46,12 @@ object BaseLayerViewGL2DRenderRenderParameters {
     __obj.asInstanceOf[BaseLayerViewGL2DRenderRenderParameters]
   }
   
-  @scala.inline
-  implicit class BaseLayerViewGL2DRenderRenderParametersMutableBuilder[Self <: BaseLayerViewGL2DRenderRenderParameters] (val x: Self) extends AnyVal {
+  extension [Self <: BaseLayerViewGL2DRenderRenderParameters](x: Self) {
     
-    @scala.inline
-    def setContext(value: WebGLRenderingContext | js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: WebGLRenderingContext | js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ViewState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ViewState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStationary(value: Boolean): Self = StObject.set(x, "stationary", value.asInstanceOf[js.Any])
+    inline def setStationary(value: Boolean): Self = StObject.set(x, "stationary", value.asInstanceOf[js.Any])
   }
 }

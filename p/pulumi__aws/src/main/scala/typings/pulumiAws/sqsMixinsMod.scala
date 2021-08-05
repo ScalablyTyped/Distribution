@@ -41,20 +41,16 @@ object sqsMixinsMod {
   }
   object QueueEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[QueueRecord]): QueueEvent = {
+    inline def apply(Records: js.Array[QueueRecord]): QueueEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueEvent]
     }
     
-    @scala.inline
-    implicit class QueueEventMutableBuilder[Self <: QueueEvent] (val x: Self) extends AnyVal {
+    extension [Self <: QueueEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[QueueRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[QueueRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: QueueRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: QueueRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -73,20 +69,16 @@ object sqsMixinsMod {
   }
   object QueueEventSubscriptionArgs {
     
-    @scala.inline
-    def apply(): QueueEventSubscriptionArgs = {
+    inline def apply(): QueueEventSubscriptionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueEventSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class QueueEventSubscriptionArgsMutableBuilder[Self <: QueueEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: QueueEventSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     }
   }
   
@@ -112,8 +104,7 @@ object sqsMixinsMod {
   }
   object QueueRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: ApproximateFirstReceiveTimestamp,
       awsRegion: String,
       body: String,
@@ -128,35 +119,25 @@ object sqsMixinsMod {
       __obj.asInstanceOf[QueueRecord]
     }
     
-    @scala.inline
-    implicit class QueueRecordMutableBuilder[Self <: QueueRecord] (val x: Self) extends AnyVal {
+    extension [Self <: QueueRecord](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: ApproximateFirstReceiveTimestamp): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: ApproximateFirstReceiveTimestamp): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
+      inline def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5OfBody(value: String): Self = StObject.set(x, "md5OfBody", value.asInstanceOf[js.Any])
+      inline def setMd5OfBody(value: String): Self = StObject.set(x, "md5OfBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributes(value: Record[String, js.Any]): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
+      inline def setMessageAttributes(value: Record[String, js.Any]): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptHandle(value: String): Self = StObject.set(x, "receiptHandle", value.asInstanceOf[js.Any])
+      inline def setReceiptHandle(value: String): Self = StObject.set(x, "receiptHandle", value.asInstanceOf[js.Any])
     }
   }
   

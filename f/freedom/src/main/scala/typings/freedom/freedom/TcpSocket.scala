@@ -20,23 +20,18 @@ object TcpSocket {
   }
   object ConnectInfo {
     
-    @scala.inline
-    def apply(host: String, port: Double, socket: Double): ConnectInfo = {
+    inline def apply(host: String, port: Double, socket: Double): ConnectInfo = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectInfo]
     }
     
-    @scala.inline
-    implicit class ConnectInfoMutableBuilder[Self <: ConnectInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectInfo](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,20 +43,16 @@ object TcpSocket {
   }
   object DisconnectInfo {
     
-    @scala.inline
-    def apply(errcode: String, message: String): DisconnectInfo = {
+    inline def apply(errcode: String, message: String): DisconnectInfo = {
       val __obj = js.Dynamic.literal(errcode = errcode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisconnectInfo]
     }
     
-    @scala.inline
-    implicit class DisconnectInfoMutableBuilder[Self <: DisconnectInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DisconnectInfo](x: Self) {
       
-      @scala.inline
-      def setErrcode(value: String): Self = StObject.set(x, "errcode", value.asInstanceOf[js.Any])
+      inline def setErrcode(value: String): Self = StObject.set(x, "errcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,17 +62,14 @@ object TcpSocket {
   }
   object ReadInfo {
     
-    @scala.inline
-    def apply(data: ArrayBuffer): ReadInfo = {
+    inline def apply(data: ArrayBuffer): ReadInfo = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadInfo]
     }
     
-    @scala.inline
-    implicit class ReadInfoMutableBuilder[Self <: ReadInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ReadInfo](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,41 +127,30 @@ object TcpSocket {
   }
   object SocketInfo {
     
-    @scala.inline
-    def apply(connected: Boolean): SocketInfo = {
+    inline def apply(connected: Boolean): SocketInfo = {
       val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketInfo]
     }
     
-    @scala.inline
-    implicit class SocketInfoMutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SocketInfo](x: Self) {
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      @scala.inline
-      def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
-      @scala.inline
-      def setPeerAddress(value: String): Self = StObject.set(x, "peerAddress", value.asInstanceOf[js.Any])
+      inline def setPeerAddress(value: String): Self = StObject.set(x, "peerAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerAddressUndefined: Self = StObject.set(x, "peerAddress", js.undefined)
+      inline def setPeerAddressUndefined: Self = StObject.set(x, "peerAddress", js.undefined)
       
-      @scala.inline
-      def setPeerPort(value: Double): Self = StObject.set(x, "peerPort", value.asInstanceOf[js.Any])
+      inline def setPeerPort(value: Double): Self = StObject.set(x, "peerPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerPortUndefined: Self = StObject.set(x, "peerPort", js.undefined)
+      inline def setPeerPortUndefined: Self = StObject.set(x, "peerPort", js.undefined)
     }
   }
   
@@ -183,17 +160,14 @@ object TcpSocket {
   }
   object WriteInfo {
     
-    @scala.inline
-    def apply(bytesWritten: Double): WriteInfo = {
+    inline def apply(bytesWritten: Double): WriteInfo = {
       val __obj = js.Dynamic.literal(bytesWritten = bytesWritten.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteInfo]
     }
     
-    @scala.inline
-    implicit class WriteInfoMutableBuilder[Self <: WriteInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WriteInfo](x: Self) {
       
-      @scala.inline
-      def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+      inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     }
   }
 }

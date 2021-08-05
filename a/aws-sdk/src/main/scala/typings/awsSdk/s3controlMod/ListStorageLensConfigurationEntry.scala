@@ -28,28 +28,21 @@ trait ListStorageLensConfigurationEntry extends StObject {
 }
 object ListStorageLensConfigurationEntry {
   
-  @scala.inline
-  def apply(HomeRegion: S3AWSRegion, Id: ConfigId, StorageLensArn: StorageLensArn): ListStorageLensConfigurationEntry = {
+  inline def apply(HomeRegion: S3AWSRegion, Id: ConfigId, StorageLensArn: StorageLensArn): ListStorageLensConfigurationEntry = {
     val __obj = js.Dynamic.literal(HomeRegion = HomeRegion.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], StorageLensArn = StorageLensArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStorageLensConfigurationEntry]
   }
   
-  @scala.inline
-  implicit class ListStorageLensConfigurationEntryMutableBuilder[Self <: ListStorageLensConfigurationEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ListStorageLensConfigurationEntry](x: Self) {
     
-    @scala.inline
-    def setHomeRegion(value: S3AWSRegion): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
+    inline def setHomeRegion(value: S3AWSRegion): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: ConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "IsEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "IsEnabled", js.undefined)
     
-    @scala.inline
-    def setStorageLensArn(value: StorageLensArn): Self = StObject.set(x, "StorageLensArn", value.asInstanceOf[js.Any])
+    inline def setStorageLensArn(value: StorageLensArn): Self = StObject.set(x, "StorageLensArn", value.asInstanceOf[js.Any])
   }
 }

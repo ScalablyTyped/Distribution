@@ -11,13 +11,9 @@ object topromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def firstToPromise[V](src: default[V]): js.Promise[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("firstToPromise")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[V]]
-  @scala.inline
-  def firstToPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("firstToPromise")(src.asInstanceOf[js.Any], PromiseCtr.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
+  inline def firstToPromise[V](src: default[V]): js.Promise[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("firstToPromise")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[V]]
+  inline def firstToPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("firstToPromise")(src.asInstanceOf[js.Any], PromiseCtr.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
   
-  @scala.inline
-  def toPromise[V](src: default[V]): js.Promise[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPromise")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[V]]
-  @scala.inline
-  def toPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPromise")(src.asInstanceOf[js.Any], PromiseCtr.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
+  inline def toPromise[V](src: default[V]): js.Promise[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPromise")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[V]]
+  inline def toPromise[V](src: default[V], PromiseCtr: js.Function): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPromise")(src.asInstanceOf[js.Any], PromiseCtr.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
 }

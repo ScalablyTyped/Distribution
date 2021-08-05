@@ -88,8 +88,7 @@ object bufferMod {
     /* 35040 */ val STREAM_DRAW: typings.ol.bufferMod.BufferUsage.STREAM_DRAW & Double = js.native
   }
   
-  @scala.inline
-  def getArrayClassForType(`type`: Double): Float32ArrayConstructor | Uint32ArrayConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrayClassForType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Float32ArrayConstructor | Uint32ArrayConstructor]
+  inline def getArrayClassForType(`type`: Double): Float32ArrayConstructor | Uint32ArrayConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrayClassForType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Float32ArrayConstructor | Uint32ArrayConstructor]
   
   trait WebGLArrayBuffer extends StObject {
     
@@ -124,8 +123,7 @@ object bufferMod {
   }
   object WebGLArrayBuffer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromArray: js.Array[Double] => Unit,
       fromArrayBuffer: ArrayBuffer => Unit,
       getArray: () => Float32Array | Uint32Array,
@@ -138,29 +136,21 @@ object bufferMod {
       __obj.asInstanceOf[WebGLArrayBuffer]
     }
     
-    @scala.inline
-    implicit class WebGLArrayBufferMutableBuilder[Self <: WebGLArrayBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLArrayBuffer](x: Self) {
       
-      @scala.inline
-      def setFromArray(value: js.Array[Double] => Unit): Self = StObject.set(x, "fromArray", js.Any.fromFunction1(value))
+      inline def setFromArray(value: js.Array[Double] => Unit): Self = StObject.set(x, "fromArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromArrayBuffer(value: ArrayBuffer => Unit): Self = StObject.set(x, "fromArrayBuffer", js.Any.fromFunction1(value))
+      inline def setFromArrayBuffer(value: ArrayBuffer => Unit): Self = StObject.set(x, "fromArrayBuffer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetArray(value: () => Float32Array | Uint32Array): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => Float32Array | Uint32Array): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUsage(value: () => Double): Self = StObject.set(x, "getUsage", js.Any.fromFunction0(value))
+      inline def setGetUsage(value: () => Double): Self = StObject.set(x, "getUsage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOfSize(value: Double => Unit): Self = StObject.set(x, "ofSize", js.Any.fromFunction1(value))
+      inline def setOfSize(value: Double => Unit): Self = StObject.set(x, "ofSize", js.Any.fromFunction1(value))
     }
   }
 }

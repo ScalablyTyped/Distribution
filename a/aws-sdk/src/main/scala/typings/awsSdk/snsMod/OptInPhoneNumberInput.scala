@@ -13,16 +13,13 @@ trait OptInPhoneNumberInput extends StObject {
 }
 object OptInPhoneNumberInput {
   
-  @scala.inline
-  def apply(phoneNumber: PhoneNumber): OptInPhoneNumberInput = {
+  inline def apply(phoneNumber: PhoneNumber): OptInPhoneNumberInput = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptInPhoneNumberInput]
   }
   
-  @scala.inline
-  implicit class OptInPhoneNumberInputMutableBuilder[Self <: OptInPhoneNumberInput] (val x: Self) extends AnyVal {
+  extension [Self <: OptInPhoneNumberInput](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

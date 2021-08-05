@@ -20,22 +20,17 @@ trait TappedEventArgs extends StObject {
 }
 object TappedEventArgs {
   
-  @scala.inline
-  def apply(pointerDeviceType: PointerDeviceType, position: Point, tapCount: Double): TappedEventArgs = {
+  inline def apply(pointerDeviceType: PointerDeviceType, position: Point, tapCount: Double): TappedEventArgs = {
     val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], tapCount = tapCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TappedEventArgs]
   }
   
-  @scala.inline
-  implicit class TappedEventArgsMutableBuilder[Self <: TappedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TappedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
+    inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapCount(value: Double): Self = StObject.set(x, "tapCount", value.asInstanceOf[js.Any])
+    inline def setTapCount(value: Double): Self = StObject.set(x, "tapCount", value.asInstanceOf[js.Any])
   }
 }

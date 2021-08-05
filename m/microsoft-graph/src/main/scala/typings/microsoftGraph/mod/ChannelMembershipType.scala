@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelMembershipType extends StObject
 object ChannelMembershipType {
   
-  @scala.inline
-  def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`private`]
+  inline def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`private`]
   
-  @scala.inline
-  def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
+  inline def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

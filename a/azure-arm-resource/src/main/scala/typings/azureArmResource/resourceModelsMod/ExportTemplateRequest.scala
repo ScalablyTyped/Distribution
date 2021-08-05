@@ -20,28 +20,21 @@ trait ExportTemplateRequest extends StObject {
 }
 object ExportTemplateRequest {
   
-  @scala.inline
-  def apply(): ExportTemplateRequest = {
+  inline def apply(): ExportTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTemplateRequest]
   }
   
-  @scala.inline
-  implicit class ExportTemplateRequestMutableBuilder[Self <: ExportTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

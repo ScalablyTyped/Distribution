@@ -29,7 +29,7 @@ object prinvokehistoryMod {
     /**
       * @hidden
       */
-    var first: js.Any = js.native
+    /* private */ var first: js.Any = js.native
     
     /**
       * Get initial piece's index.
@@ -54,6 +54,6 @@ object prinvokehistoryMod {
     /**
       * @hidden
       */
-    var last: js.Any = js.native
+    /* private */ var last: js.Any = js.native
   }
 }

@@ -100,17 +100,13 @@ object mod {
   @js.native
   val STATUS_OUT_OF_OFFICE: String = js.native
   
-  @scala.inline
-  def acceptConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("acceptConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
+  inline def acceptConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("acceptConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @scala.inline
-  def activateRoom(streamId: String): js.Promise[ActivateRoomResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("activateRoom")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ActivateRoomResponse]]
+  inline def activateRoom(streamId: String): js.Promise[ActivateRoomResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("activateRoom")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ActivateRoomResponse]]
   
-  @scala.inline
-  def addMemberToRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMemberToRoom")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
+  inline def addMemberToRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMemberToRoom")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @scala.inline
-  def adminListEnterpriseStreamsV2(
+  inline def adminListEnterpriseStreamsV2(
     streamTypes: js.Array[StreamType],
     scope: String,
     origin: String,
@@ -122,17 +118,13 @@ object mod {
     limit: Double
   ): js.Promise[AdminStreamListResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("adminListEnterpriseStreamsV2")(streamTypes.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], privacy.asInstanceOf[js.Any], status.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AdminStreamListResponse]]
   
-  @scala.inline
-  def authenticateBot(SymConfig: SymphonyConfiguration): js.Promise[AuthInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBot")(SymConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AuthInfo]]
+  inline def authenticateBot(SymConfig: SymphonyConfiguration): js.Promise[AuthInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBot")(SymConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AuthInfo]]
   
-  @scala.inline
-  def authenticateExtApp(): js.Promise[AppInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateExtApp")().asInstanceOf[js.Promise[AppInfo]]
+  inline def authenticateExtApp(): js.Promise[AppInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateExtApp")().asInstanceOf[js.Promise[AppInfo]]
   
-  @scala.inline
-  def authenticateOboApp(): js.Promise[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateOboApp")().asInstanceOf[js.Promise[Token]]
+  inline def authenticateOboApp(): js.Promise[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateOboApp")().asInstanceOf[js.Promise[Token]]
   
-  @scala.inline
-  def createRoom(
+  inline def createRoom(
     room: String,
     description: js.UndefOr[String],
     keywords: js.UndefOr[js.Array[Keyword]],
@@ -145,160 +137,107 @@ object mod {
     viewHistory: js.UndefOr[Boolean]
   ): js.Promise[RoomInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoom")(room.asInstanceOf[js.Any], description.asInstanceOf[js.Any], keywords.asInstanceOf[js.Any], membersCanInvite.asInstanceOf[js.Any], discoverable.asInstanceOf[js.Any], anyoneCanJoin.asInstanceOf[js.Any], readOnly.asInstanceOf[js.Any], copyProtected.asInstanceOf[js.Any], crossPod.asInstanceOf[js.Any], viewHistory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomInfo]]
   
-  @scala.inline
-  def createSignal(name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignal")(name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def createSignal(name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignal")(name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @scala.inline
-  def deactivateRoom(streamId: String): js.Promise[ActivateRoomResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateRoom")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ActivateRoomResponse]]
+  inline def deactivateRoom(streamId: String): js.Promise[ActivateRoomResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateRoom")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ActivateRoomResponse]]
   
-  @scala.inline
-  def deleteSignal(id: String, sessionToken: String): js.Promise[DeleteOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteOperationResult]]
+  inline def deleteSignal(id: String, sessionToken: String): js.Promise[DeleteOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteOperationResult]]
   
-  @scala.inline
-  def demoteUserFromOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("demoteUserFromOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
+  inline def demoteUserFromOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("demoteUserFromOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @scala.inline
-  def formBuilder(formId: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("formBuilder")(formId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def formBuilder(formId: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("formBuilder")(formId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def getAcceptedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
+  inline def getAcceptedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @scala.inline
-  def getAllConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
+  inline def getAllConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @scala.inline
-  def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttachment")(streamId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttachment")(streamId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getBotUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotUser")().asInstanceOf[Unit]
+  inline def getBotUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotUser")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getCashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getCashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getConnectionRequestStatus(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionRequestStatus")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
+  inline def getConnectionRequestStatus(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionRequestStatus")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @scala.inline
-  def getConnections(status: String, commaSeparatedUserIds: String, sessionToken: String): js.Promise[js.Array[Connection]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(status.asInstanceOf[js.Any], commaSeparatedUserIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Connection]]]
+  inline def getConnections(status: String, commaSeparatedUserIds: String, sessionToken: String): js.Promise[js.Array[Connection]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(status.asInstanceOf[js.Any], commaSeparatedUserIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @scala.inline
-  def getDatafeedEventsService(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatafeedEventsService")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getDatafeedEventsService(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatafeedEventsService")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getFirehoseEventsService(subscriberCallback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirehoseEventsService")(subscriberCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getFirehoseEventsService(subscriberCallback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirehoseEventsService")(subscriberCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getHashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getHashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getInboundPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInboundPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
+  inline def getInboundPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInboundPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @scala.inline
-  def getMentions(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMentions")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getMentions(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMentions")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getMessage(messageId: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def getMessage(messageId: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")(streamId.asInstanceOf[js.Any], since.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Message]]]
+  inline def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")(streamId.asInstanceOf[js.Any], since.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Message]]]
   
-  @scala.inline
-  def getPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
+  inline def getPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @scala.inline
-  def getRejectedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRejectedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
+  inline def getRejectedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRejectedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @scala.inline
-  def getRoomInfo(streamId: String): js.Promise[RoomInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoomInfo")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RoomInfo]]
+  inline def getRoomInfo(streamId: String): js.Promise[RoomInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoomInfo")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RoomInfo]]
   
-  @scala.inline
-  def getRoomMembers(streamId: String): js.Promise[js.Array[RoomMember]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoomMembers")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[RoomMember]]]
+  inline def getRoomMembers(streamId: String): js.Promise[js.Array[RoomMember]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoomMembers")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[RoomMember]]]
   
-  @scala.inline
-  def getSignal(id: String, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def getSignal(id: String, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @scala.inline
-  def getSignalSubscribers(id: String, skip: Double, limit: Double, sessionToken: String): js.Promise[SignalSubscribersResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignalSubscribers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscribersResponse]]
+  inline def getSignalSubscribers(id: String, skip: Double, limit: Double, sessionToken: String): js.Promise[SignalSubscribersResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignalSubscribers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscribersResponse]]
   
-  @scala.inline
-  def getUser(id: String): js.Promise[AdminUserInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdminUserInfo]]
+  inline def getUser(id: String): js.Promise[AdminUserInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdminUserInfo]]
   
-  @scala.inline
-  def getUserFromEmail(email: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
-  @scala.inline
-  def getUserFromEmail(email: String, local: Boolean): js.Promise[User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[User]]
+  inline def getUserFromEmail(email: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
+  inline def getUserFromEmail(email: String, local: Boolean): js.Promise[User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[User]]
   
-  @scala.inline
-  def getUserFromUsername(username: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
+  inline def getUserFromUsername(username: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
   
-  @scala.inline
-  def getUserIMStreamId(userIDs: js.Array[Double]): js.Promise[UserId] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserIMStreamId")(userIDs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserId]]
+  inline def getUserIMStreamId(userIDs: js.Array[Double]): js.Promise[UserId] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserIMStreamId")(userIDs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserId]]
   
-  @scala.inline
-  def getUserPresence(userId: Double, local: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPresence")(userId.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getUserPresence(userId: Double, local: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPresence")(userId.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getUserStreams(skip: Double, limit: Double, streamTypes: js.Array[StreamType], includeInactiveStreams: Boolean): js.Promise[UserStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserStreams")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], streamTypes.asInstanceOf[js.Any], includeInactiveStreams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserStream]]
+  inline def getUserStreams(skip: Double, limit: Double, streamTypes: js.Array[StreamType], includeInactiveStreams: Boolean): js.Promise[UserStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserStreams")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], streamTypes.asInstanceOf[js.Any], includeInactiveStreams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserStream]]
   
-  @scala.inline
-  def getUsersFromEmailList(commaSeparatedEmails: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
-  @scala.inline
-  def getUsersFromEmailList(commaSeparatedEmails: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
+  inline def getUsersFromEmailList(commaSeparatedEmails: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
+  inline def getUsersFromEmailList(commaSeparatedEmails: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
   
-  @scala.inline
-  def getUsersFromIdList(commaSeparatedIds: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
-  @scala.inline
-  def getUsersFromIdList(commaSeparatedIds: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
+  inline def getUsersFromIdList(commaSeparatedIds: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
+  inline def getUsersFromIdList(commaSeparatedIds: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
   
-  @scala.inline
-  def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importMessages")(messageList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ImportMessageResult]]]
+  inline def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importMessages")(messageList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ImportMessageResult]]]
   
-  @scala.inline
-  def initBot(pathToConfigFile: String): js.Promise[AuthInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("initBot")(pathToConfigFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AuthInfo]]
-  @scala.inline
-  def initBot(pathToConfigFile: String, pathToLoadBalancerConfigFile: String): js.Promise[AuthInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("initBot")(pathToConfigFile.asInstanceOf[js.Any], pathToLoadBalancerConfigFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthInfo]]
+  inline def initBot(pathToConfigFile: String): js.Promise[AuthInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("initBot")(pathToConfigFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AuthInfo]]
+  inline def initBot(pathToConfigFile: String, pathToLoadBalancerConfigFile: String): js.Promise[AuthInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("initBot")(pathToConfigFile.asInstanceOf[js.Any], pathToLoadBalancerConfigFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthInfo]]
   
-  @scala.inline
-  def listSignals(skip: Double, limit: Double, sessionToken: String): js.Promise[js.Array[Signal]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSignals")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Signal]]]
+  inline def listSignals(skip: Double, limit: Double, sessionToken: String): js.Promise[js.Array[Signal]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSignals")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Signal]]]
   
-  @scala.inline
-  def listUsers(skip: Double, limit: Double): js.Promise[js.Array[AdminUserInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listUsers")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AdminUserInfo]]]
+  inline def listUsers(skip: Double, limit: Double): js.Promise[js.Array[AdminUserInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listUsers")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AdminUserInfo]]]
   
-  @scala.inline
-  def oboAuthenticateByUserId(userId: Double): js.Promise[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboAuthenticateByUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token]]
+  inline def oboAuthenticateByUserId(userId: Double): js.Promise[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboAuthenticateByUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token]]
   
-  @scala.inline
-  def oboGetAllConnections(status: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetAllConnections")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
+  inline def oboGetAllConnections(status: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetAllConnections")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @scala.inline
-  def oboGetConnection(userId: String): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetConnection")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
+  inline def oboGetConnection(userId: String): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetConnection")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
   
-  @scala.inline
-  def oboGetUserIMStreamId(userToken: String, userIds: js.Array[Double]): js.Promise[UserId] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboGetUserIMStreamId")(userToken.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserId]]
+  inline def oboGetUserIMStreamId(userToken: String, userIds: js.Array[Double]): js.Promise[UserId] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboGetUserIMStreamId")(userToken.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserId]]
   
-  @scala.inline
-  def oboSendMessage(userToken: String, conversationId: String, message: String, data: js.Any, format: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboSendMessage")(userToken.asInstanceOf[js.Any], conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def oboSendMessage(userToken: String, conversationId: String, message: String, data: js.Any, format: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboSendMessage")(userToken.asInstanceOf[js.Any], conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def promoteUserToOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("promoteUserToOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
+  inline def promoteUserToOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("promoteUserToOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @scala.inline
-  def registerInterestExtUser(userIds: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInterestExtUser")(userIds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerInterestExtUser(userIds: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInterestExtUser")(userIds.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def rejectConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("rejectConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
+  inline def rejectConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("rejectConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @scala.inline
-  def removeConnection(userId: String, sessionToken: String): js.Promise[RemoveConnectionReponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeConnection")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RemoveConnectionReponse]]
+  inline def removeConnection(userId: String, sessionToken: String): js.Promise[RemoveConnectionReponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeConnection")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RemoveConnectionReponse]]
   
-  @scala.inline
-  def removeMemberFromRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeMemberFromRoom")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
+  inline def removeMemberFromRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeMemberFromRoom")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @scala.inline
-  def searchRooms(
+  inline def searchRooms(
     skip: js.UndefOr[Double],
     limit: js.UndefOr[Double],
     query: js.UndefOr[String],
@@ -311,47 +250,28 @@ object mod {
     sortOrder: js.UndefOr[BASIC | RELEVANCE]
   ): js.Promise[SearchRoomResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchRooms")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], query.asInstanceOf[js.Any], labels.asInstanceOf[js.Any], active.asInstanceOf[js.Any], includePrivateRooms.asInstanceOf[js.Any], creator.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], member.asInstanceOf[js.Any], sortOrder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchRoomResponse]]
   
-  @scala.inline
-  def searchUsers(query: String): js.Promise[SearchUserResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Unit, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Unit, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Unit, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Unit, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Unit, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Unit, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
-  @scala.inline
-  def searchUsers(query: String, local: Unit, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String): js.Promise[SearchUserResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Boolean, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Unit, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Unit, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Unit, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Unit, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Unit, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Unit, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  inline def searchUsers(query: String, local: Unit, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
   
-  @scala.inline
-  def sendConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
+  inline def sendConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @scala.inline
-  def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def sendMessageWithAttachment(
+  inline def sendMessageWithAttachment(
     conversationId: String,
     message: String,
     data: js.Any,
@@ -365,32 +285,23 @@ object mod {
   @js.native
   val sessionToken: String = js.native
   
-  @scala.inline
-  def setDebugMode(mode: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDebugMode(mode: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setPresence(status: String): js.Promise[UserPresenceResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPresence")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserPresenceResponse]]
+  inline def setPresence(status: String): js.Promise[UserPresenceResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPresence")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserPresenceResponse]]
   
-  @scala.inline
-  def stopDatafeedEventsService(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopDatafeedEventsService")().asInstanceOf[Unit]
+  inline def stopDatafeedEventsService(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopDatafeedEventsService")().asInstanceOf[Unit]
   
-  @scala.inline
-  def stopFirehoseEventsService(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopFirehoseEventsService")().asInstanceOf[Unit]
+  inline def stopFirehoseEventsService(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopFirehoseEventsService")().asInstanceOf[Unit]
   
-  @scala.inline
-  def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamMembers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StreamMembers_]]
+  inline def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamMembers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StreamMembers_]]
   
-  @scala.inline
-  def subscribeSignal(id: String, userIds: js.Array[Double], userCanUnsubscribe: Boolean, sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], userCanUnsubscribe.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
+  inline def subscribeSignal(id: String, userIds: js.Array[Double], userCanUnsubscribe: Boolean, sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], userCanUnsubscribe.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
   
-  @scala.inline
-  def suppressMessage(id: String): js.Promise[SuppressedMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressMessage")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuppressedMessage]]
+  inline def suppressMessage(id: String): js.Promise[SuppressedMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressMessage")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuppressedMessage]]
   
-  @scala.inline
-  def unsubscribeSignal(id: String, userIds: js.Array[Double], sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
+  inline def unsubscribeSignal(id: String, userIds: js.Array[Double], sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
   
-  @scala.inline
-  def updateRoom(
+  inline def updateRoom(
     streamId: String,
     room: String,
     description: js.UndefOr[String],
@@ -404,18 +315,12 @@ object mod {
     viewHistory: js.UndefOr[Boolean]
   ): js.Promise[RoomInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRoom")(streamId.asInstanceOf[js.Any], room.asInstanceOf[js.Any], description.asInstanceOf[js.Any], keywords.asInstanceOf[js.Any], membersCanInvite.asInstanceOf[js.Any], discoverable.asInstanceOf[js.Any], anyoneCanJoin.asInstanceOf[js.Any], readOnly.asInstanceOf[js.Any], copyProtected.asInstanceOf[js.Any], crossPod.asInstanceOf[js.Any], viewHistory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomInfo]]
   
-  @scala.inline
-  def updateSignal(id: String): js.Promise[Signal] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String): js.Promise[Signal] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: String, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: String,
     query: String,
@@ -423,8 +328,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: String,
     query: String,
@@ -432,10 +336,8 @@ object mod {
     companyWide: Unit,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String, name: String, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: String,
     query: String,
@@ -443,8 +345,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: String,
     query: String,
@@ -452,12 +353,9 @@ object mod {
     companyWide: Unit,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: String,
     query: Unit,
@@ -465,8 +363,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: String,
     query: Unit,
@@ -474,10 +371,8 @@ object mod {
     companyWide: Unit,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: String,
     query: Unit,
@@ -485,8 +380,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: String,
     query: Unit,
@@ -494,14 +388,10 @@ object mod {
     companyWide: Unit,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: Unit, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String, name: Unit, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: String,
@@ -509,8 +399,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: String,
@@ -518,10 +407,8 @@ object mod {
     companyWide: Unit,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: String,
@@ -529,8 +416,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: String,
@@ -538,12 +424,9 @@ object mod {
     companyWide: Unit,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: Unit,
@@ -551,8 +434,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: Unit,
@@ -560,10 +442,8 @@ object mod {
     companyWide: Unit,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: Unit,
@@ -571,8 +451,7 @@ object mod {
     companyWide: Boolean,
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
-  @scala.inline
-  def updateSignal(
+  inline def updateSignal(
     id: String,
     name: Unit,
     query: Unit,
@@ -581,8 +460,7 @@ object mod {
     sessionToken: String
   ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @scala.inline
-  def verifyJwt(jwt: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyJwt")(jwt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def verifyJwt(jwt: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyJwt")(jwt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   trait AppInfo extends StObject {
     
@@ -592,20 +470,16 @@ object mod {
   }
   object AppInfo {
     
-    @scala.inline
-    def apply(appId: String, appToken: String): AppInfo = {
+    inline def apply(appId: String, appToken: String): AppInfo = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], appToken = appToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppInfo]
     }
     
-    @scala.inline
-    implicit class AppInfoMutableBuilder[Self <: AppInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AppInfo](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppToken(value: String): Self = StObject.set(x, "appToken", value.asInstanceOf[js.Any])
+      inline def setAppToken(value: String): Self = StObject.set(x, "appToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -617,20 +491,16 @@ object mod {
   }
   object AuthInfo {
     
-    @scala.inline
-    def apply(kmAuthToken: String, sessionAuthToken: String): AuthInfo = {
+    inline def apply(kmAuthToken: String, sessionAuthToken: String): AuthInfo = {
       val __obj = js.Dynamic.literal(kmAuthToken = kmAuthToken.asInstanceOf[js.Any], sessionAuthToken = sessionAuthToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthInfo]
     }
     
-    @scala.inline
-    implicit class AuthInfoMutableBuilder[Self <: AuthInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AuthInfo](x: Self) {
       
-      @scala.inline
-      def setKmAuthToken(value: String): Self = StObject.set(x, "kmAuthToken", value.asInstanceOf[js.Any])
+      inline def setKmAuthToken(value: String): Self = StObject.set(x, "kmAuthToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionAuthToken(value: String): Self = StObject.set(x, "sessionAuthToken", value.asInstanceOf[js.Any])
+      inline def setSessionAuthToken(value: String): Self = StObject.set(x, "sessionAuthToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -712,236 +582,160 @@ object mod {
   }
   object SymphonyConfiguration {
     
-    @scala.inline
-    def apply(): SymphonyConfiguration = {
+    inline def apply(): SymphonyConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SymphonyConfiguration]
     }
     
-    @scala.inline
-    implicit class SymphonyConfigurationMutableBuilder[Self <: SymphonyConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: SymphonyConfiguration](x: Self) {
       
-      @scala.inline
-      def setAgentContextPath(value: String): Self = StObject.set(x, "agentContextPath", value.asInstanceOf[js.Any])
+      inline def setAgentContextPath(value: String): Self = StObject.set(x, "agentContextPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentContextPathUndefined: Self = StObject.set(x, "agentContextPath", js.undefined)
+      inline def setAgentContextPathUndefined: Self = StObject.set(x, "agentContextPath", js.undefined)
       
-      @scala.inline
-      def setAgentHost(value: String): Self = StObject.set(x, "agentHost", value.asInstanceOf[js.Any])
+      inline def setAgentHost(value: String): Self = StObject.set(x, "agentHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentHostUndefined: Self = StObject.set(x, "agentHost", js.undefined)
+      inline def setAgentHostUndefined: Self = StObject.set(x, "agentHost", js.undefined)
       
-      @scala.inline
-      def setAgentPort(value: Double): Self = StObject.set(x, "agentPort", value.asInstanceOf[js.Any])
+      inline def setAgentPort(value: Double): Self = StObject.set(x, "agentPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentPortUndefined: Self = StObject.set(x, "agentPort", js.undefined)
+      inline def setAgentPortUndefined: Self = StObject.set(x, "agentPort", js.undefined)
       
-      @scala.inline
-      def setAppCertName(value: String): Self = StObject.set(x, "appCertName", value.asInstanceOf[js.Any])
+      inline def setAppCertName(value: String): Self = StObject.set(x, "appCertName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppCertNameUndefined: Self = StObject.set(x, "appCertName", js.undefined)
+      inline def setAppCertNameUndefined: Self = StObject.set(x, "appCertName", js.undefined)
       
-      @scala.inline
-      def setAppCertPassword(value: String): Self = StObject.set(x, "appCertPassword", value.asInstanceOf[js.Any])
+      inline def setAppCertPassword(value: String): Self = StObject.set(x, "appCertPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppCertPasswordUndefined: Self = StObject.set(x, "appCertPassword", js.undefined)
+      inline def setAppCertPasswordUndefined: Self = StObject.set(x, "appCertPassword", js.undefined)
       
-      @scala.inline
-      def setAppCertPath(value: String): Self = StObject.set(x, "appCertPath", value.asInstanceOf[js.Any])
+      inline def setAppCertPath(value: String): Self = StObject.set(x, "appCertPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppCertPathUndefined: Self = StObject.set(x, "appCertPath", js.undefined)
+      inline def setAppCertPathUndefined: Self = StObject.set(x, "appCertPath", js.undefined)
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+      inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
       
-      @scala.inline
-      def setAppPrivateKeyName(value: String): Self = StObject.set(x, "appPrivateKeyName", value.asInstanceOf[js.Any])
+      inline def setAppPrivateKeyName(value: String): Self = StObject.set(x, "appPrivateKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppPrivateKeyNameUndefined: Self = StObject.set(x, "appPrivateKeyName", js.undefined)
+      inline def setAppPrivateKeyNameUndefined: Self = StObject.set(x, "appPrivateKeyName", js.undefined)
       
-      @scala.inline
-      def setAppPrivateKeyPath(value: String): Self = StObject.set(x, "appPrivateKeyPath", value.asInstanceOf[js.Any])
+      inline def setAppPrivateKeyPath(value: String): Self = StObject.set(x, "appPrivateKeyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppPrivateKeyPathUndefined: Self = StObject.set(x, "appPrivateKeyPath", js.undefined)
+      inline def setAppPrivateKeyPathUndefined: Self = StObject.set(x, "appPrivateKeyPath", js.undefined)
       
-      @scala.inline
-      def setBotCertName(value: String): Self = StObject.set(x, "botCertName", value.asInstanceOf[js.Any])
+      inline def setBotCertName(value: String): Self = StObject.set(x, "botCertName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotCertNameUndefined: Self = StObject.set(x, "botCertName", js.undefined)
+      inline def setBotCertNameUndefined: Self = StObject.set(x, "botCertName", js.undefined)
       
-      @scala.inline
-      def setBotCertPassword(value: String): Self = StObject.set(x, "botCertPassword", value.asInstanceOf[js.Any])
+      inline def setBotCertPassword(value: String): Self = StObject.set(x, "botCertPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotCertPasswordUndefined: Self = StObject.set(x, "botCertPassword", js.undefined)
+      inline def setBotCertPasswordUndefined: Self = StObject.set(x, "botCertPassword", js.undefined)
       
-      @scala.inline
-      def setBotCertPath(value: String): Self = StObject.set(x, "botCertPath", value.asInstanceOf[js.Any])
+      inline def setBotCertPath(value: String): Self = StObject.set(x, "botCertPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotCertPathUndefined: Self = StObject.set(x, "botCertPath", js.undefined)
+      inline def setBotCertPathUndefined: Self = StObject.set(x, "botCertPath", js.undefined)
       
-      @scala.inline
-      def setBotEmailAddress(value: String): Self = StObject.set(x, "botEmailAddress", value.asInstanceOf[js.Any])
+      inline def setBotEmailAddress(value: String): Self = StObject.set(x, "botEmailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotEmailAddressUndefined: Self = StObject.set(x, "botEmailAddress", js.undefined)
+      inline def setBotEmailAddressUndefined: Self = StObject.set(x, "botEmailAddress", js.undefined)
       
-      @scala.inline
-      def setBotPrivateKeyName(value: String): Self = StObject.set(x, "botPrivateKeyName", value.asInstanceOf[js.Any])
+      inline def setBotPrivateKeyName(value: String): Self = StObject.set(x, "botPrivateKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotPrivateKeyNameUndefined: Self = StObject.set(x, "botPrivateKeyName", js.undefined)
+      inline def setBotPrivateKeyNameUndefined: Self = StObject.set(x, "botPrivateKeyName", js.undefined)
       
-      @scala.inline
-      def setBotPrivateKeyPath(value: String): Self = StObject.set(x, "botPrivateKeyPath", value.asInstanceOf[js.Any])
+      inline def setBotPrivateKeyPath(value: String): Self = StObject.set(x, "botPrivateKeyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotPrivateKeyPathUndefined: Self = StObject.set(x, "botPrivateKeyPath", js.undefined)
+      inline def setBotPrivateKeyPathUndefined: Self = StObject.set(x, "botPrivateKeyPath", js.undefined)
       
-      @scala.inline
-      def setBotUsername(value: String): Self = StObject.set(x, "botUsername", value.asInstanceOf[js.Any])
+      inline def setBotUsername(value: String): Self = StObject.set(x, "botUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotUsernameUndefined: Self = StObject.set(x, "botUsername", js.undefined)
+      inline def setBotUsernameUndefined: Self = StObject.set(x, "botUsername", js.undefined)
       
-      @scala.inline
-      def setKeyAuthContextPath(value: String): Self = StObject.set(x, "keyAuthContextPath", value.asInstanceOf[js.Any])
+      inline def setKeyAuthContextPath(value: String): Self = StObject.set(x, "keyAuthContextPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyAuthContextPathUndefined: Self = StObject.set(x, "keyAuthContextPath", js.undefined)
+      inline def setKeyAuthContextPathUndefined: Self = StObject.set(x, "keyAuthContextPath", js.undefined)
       
-      @scala.inline
-      def setKeyAuthHost(value: String): Self = StObject.set(x, "keyAuthHost", value.asInstanceOf[js.Any])
+      inline def setKeyAuthHost(value: String): Self = StObject.set(x, "keyAuthHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyAuthHostUndefined: Self = StObject.set(x, "keyAuthHost", js.undefined)
+      inline def setKeyAuthHostUndefined: Self = StObject.set(x, "keyAuthHost", js.undefined)
       
-      @scala.inline
-      def setKeyAuthPort(value: Double): Self = StObject.set(x, "keyAuthPort", value.asInstanceOf[js.Any])
+      inline def setKeyAuthPort(value: Double): Self = StObject.set(x, "keyAuthPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyAuthPortUndefined: Self = StObject.set(x, "keyAuthPort", js.undefined)
+      inline def setKeyAuthPortUndefined: Self = StObject.set(x, "keyAuthPort", js.undefined)
       
-      @scala.inline
-      def setKeyManagerProxyPassword(value: String): Self = StObject.set(x, "keyManagerProxyPassword", value.asInstanceOf[js.Any])
+      inline def setKeyManagerProxyPassword(value: String): Self = StObject.set(x, "keyManagerProxyPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyManagerProxyPasswordUndefined: Self = StObject.set(x, "keyManagerProxyPassword", js.undefined)
+      inline def setKeyManagerProxyPasswordUndefined: Self = StObject.set(x, "keyManagerProxyPassword", js.undefined)
       
-      @scala.inline
-      def setKeyManagerProxyURL(value: String): Self = StObject.set(x, "keyManagerProxyURL", value.asInstanceOf[js.Any])
+      inline def setKeyManagerProxyURL(value: String): Self = StObject.set(x, "keyManagerProxyURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyManagerProxyURLUndefined: Self = StObject.set(x, "keyManagerProxyURL", js.undefined)
+      inline def setKeyManagerProxyURLUndefined: Self = StObject.set(x, "keyManagerProxyURL", js.undefined)
       
-      @scala.inline
-      def setKeyManagerProxyUsername(value: String): Self = StObject.set(x, "keyManagerProxyUsername", value.asInstanceOf[js.Any])
+      inline def setKeyManagerProxyUsername(value: String): Self = StObject.set(x, "keyManagerProxyUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyManagerProxyUsernameUndefined: Self = StObject.set(x, "keyManagerProxyUsername", js.undefined)
+      inline def setKeyManagerProxyUsernameUndefined: Self = StObject.set(x, "keyManagerProxyUsername", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setMaxWaitInterval(value: Double): Self = StObject.set(x, "maxWaitInterval", value.asInstanceOf[js.Any])
+      inline def setMaxWaitInterval(value: Double): Self = StObject.set(x, "maxWaitInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitIntervalUndefined: Self = StObject.set(x, "maxWaitInterval", js.undefined)
+      inline def setMaxWaitIntervalUndefined: Self = StObject.set(x, "maxWaitInterval", js.undefined)
       
-      @scala.inline
-      def setNodeTlsRejectUnauthorized(value: Double): Self = StObject.set(x, "nodeTlsRejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setNodeTlsRejectUnauthorized(value: Double): Self = StObject.set(x, "nodeTlsRejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeTlsRejectUnauthorizedUndefined: Self = StObject.set(x, "nodeTlsRejectUnauthorized", js.undefined)
+      inline def setNodeTlsRejectUnauthorizedUndefined: Self = StObject.set(x, "nodeTlsRejectUnauthorized", js.undefined)
       
-      @scala.inline
-      def setPodContextPath(value: String): Self = StObject.set(x, "podContextPath", value.asInstanceOf[js.Any])
+      inline def setPodContextPath(value: String): Self = StObject.set(x, "podContextPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodContextPathUndefined: Self = StObject.set(x, "podContextPath", js.undefined)
+      inline def setPodContextPathUndefined: Self = StObject.set(x, "podContextPath", js.undefined)
       
-      @scala.inline
-      def setPodHost(value: String): Self = StObject.set(x, "podHost", value.asInstanceOf[js.Any])
+      inline def setPodHost(value: String): Self = StObject.set(x, "podHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodHostUndefined: Self = StObject.set(x, "podHost", js.undefined)
+      inline def setPodHostUndefined: Self = StObject.set(x, "podHost", js.undefined)
       
-      @scala.inline
-      def setPodPort(value: Double): Self = StObject.set(x, "podPort", value.asInstanceOf[js.Any])
+      inline def setPodPort(value: Double): Self = StObject.set(x, "podPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodPortUndefined: Self = StObject.set(x, "podPort", js.undefined)
+      inline def setPodPortUndefined: Self = StObject.set(x, "podPort", js.undefined)
       
-      @scala.inline
-      def setPodProxyPassword(value: String): Self = StObject.set(x, "podProxyPassword", value.asInstanceOf[js.Any])
+      inline def setPodProxyPassword(value: String): Self = StObject.set(x, "podProxyPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodProxyPasswordUndefined: Self = StObject.set(x, "podProxyPassword", js.undefined)
+      inline def setPodProxyPasswordUndefined: Self = StObject.set(x, "podProxyPassword", js.undefined)
       
-      @scala.inline
-      def setPodProxyURL(value: String): Self = StObject.set(x, "podProxyURL", value.asInstanceOf[js.Any])
+      inline def setPodProxyURL(value: String): Self = StObject.set(x, "podProxyURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodProxyURLUndefined: Self = StObject.set(x, "podProxyURL", js.undefined)
+      inline def setPodProxyURLUndefined: Self = StObject.set(x, "podProxyURL", js.undefined)
       
-      @scala.inline
-      def setPodProxyUsername(value: String): Self = StObject.set(x, "podProxyUsername", value.asInstanceOf[js.Any])
+      inline def setPodProxyUsername(value: String): Self = StObject.set(x, "podProxyUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPodProxyUsernameUndefined: Self = StObject.set(x, "podProxyUsername", js.undefined)
+      inline def setPodProxyUsernameUndefined: Self = StObject.set(x, "podProxyUsername", js.undefined)
       
-      @scala.inline
-      def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
+      inline def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyPasswordUndefined: Self = StObject.set(x, "proxyPassword", js.undefined)
+      inline def setProxyPasswordUndefined: Self = StObject.set(x, "proxyPassword", js.undefined)
       
-      @scala.inline
-      def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
+      inline def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
+      inline def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
       
-      @scala.inline
-      def setProxyUsername(value: String): Self = StObject.set(x, "proxyUsername", value.asInstanceOf[js.Any])
+      inline def setProxyUsername(value: String): Self = StObject.set(x, "proxyUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUsernameUndefined: Self = StObject.set(x, "proxyUsername", js.undefined)
+      inline def setProxyUsernameUndefined: Self = StObject.set(x, "proxyUsername", js.undefined)
       
-      @scala.inline
-      def setSessionAuthContextPath(value: String): Self = StObject.set(x, "sessionAuthContextPath", value.asInstanceOf[js.Any])
+      inline def setSessionAuthContextPath(value: String): Self = StObject.set(x, "sessionAuthContextPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionAuthContextPathUndefined: Self = StObject.set(x, "sessionAuthContextPath", js.undefined)
+      inline def setSessionAuthContextPathUndefined: Self = StObject.set(x, "sessionAuthContextPath", js.undefined)
       
-      @scala.inline
-      def setSessionAuthHost(value: String): Self = StObject.set(x, "sessionAuthHost", value.asInstanceOf[js.Any])
+      inline def setSessionAuthHost(value: String): Self = StObject.set(x, "sessionAuthHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionAuthHostUndefined: Self = StObject.set(x, "sessionAuthHost", js.undefined)
+      inline def setSessionAuthHostUndefined: Self = StObject.set(x, "sessionAuthHost", js.undefined)
       
-      @scala.inline
-      def setSessionAuthPort(value: Double): Self = StObject.set(x, "sessionAuthPort", value.asInstanceOf[js.Any])
+      inline def setSessionAuthPort(value: Double): Self = StObject.set(x, "sessionAuthPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionAuthPortUndefined: Self = StObject.set(x, "sessionAuthPort", js.undefined)
+      inline def setSessionAuthPortUndefined: Self = StObject.set(x, "sessionAuthPort", js.undefined)
     }
   }
 }

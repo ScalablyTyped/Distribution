@@ -15,8 +15,7 @@ object attachtoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attachTo(target: Element, vnode: VNode_): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(target.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  inline def attachTo(target: Element, vnode: VNode_): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(target.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[VNode_]
   
   trait AttachData
     extends StObject
@@ -29,26 +28,20 @@ object attachtoMod {
   }
   object AttachData {
     
-    @scala.inline
-    def apply(): AttachData = {
+    inline def apply(): AttachData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttachData]
     }
     
-    @scala.inline
-    implicit class AttachDataMutableBuilder[Self <: AttachData] (val x: Self) extends AnyVal {
+    extension [Self <: AttachData](x: Self) {
       
-      @scala.inline
-      def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setReal(value: Node): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+      inline def setReal(value: Node): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
+      inline def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
     }
   }
 }

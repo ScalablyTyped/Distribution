@@ -12,8 +12,7 @@ trait TopicalExploreFeedResponseAdditionalCandidates extends StObject {
 }
 object TopicalExploreFeedResponseAdditionalCandidates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     first_frame: TopicalExploreFeedResponseFirstFrame,
     igtv_first_frame: TopicalExploreFeedResponseIgtvFirstFrame
   ): TopicalExploreFeedResponseAdditionalCandidates = {
@@ -21,13 +20,10 @@ object TopicalExploreFeedResponseAdditionalCandidates {
     __obj.asInstanceOf[TopicalExploreFeedResponseAdditionalCandidates]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseAdditionalCandidatesMutableBuilder[Self <: TopicalExploreFeedResponseAdditionalCandidates] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseAdditionalCandidates](x: Self) {
     
-    @scala.inline
-    def setFirst_frame(value: TopicalExploreFeedResponseFirstFrame): Self = StObject.set(x, "first_frame", value.asInstanceOf[js.Any])
+    inline def setFirst_frame(value: TopicalExploreFeedResponseFirstFrame): Self = StObject.set(x, "first_frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgtv_first_frame(value: TopicalExploreFeedResponseIgtvFirstFrame): Self = StObject.set(x, "igtv_first_frame", value.asInstanceOf[js.Any])
+    inline def setIgtv_first_frame(value: TopicalExploreFeedResponseIgtvFirstFrame): Self = StObject.set(x, "igtv_first_frame", value.asInstanceOf[js.Any])
   }
 }

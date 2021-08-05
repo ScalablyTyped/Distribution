@@ -26,37 +26,27 @@ trait DealTermsGuaranteedFixedPriceTermsBillingInfo extends StObject {
 }
 object DealTermsGuaranteedFixedPriceTermsBillingInfo {
   
-  @scala.inline
-  def apply(): DealTermsGuaranteedFixedPriceTermsBillingInfo = {
+  inline def apply(): DealTermsGuaranteedFixedPriceTermsBillingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DealTermsGuaranteedFixedPriceTermsBillingInfo]
   }
   
-  @scala.inline
-  implicit class DealTermsGuaranteedFixedPriceTermsBillingInfoMutableBuilder[Self <: DealTermsGuaranteedFixedPriceTermsBillingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DealTermsGuaranteedFixedPriceTermsBillingInfo](x: Self) {
     
-    @scala.inline
-    def setCurrencyConversionTimeMs(value: String): Self = StObject.set(x, "currencyConversionTimeMs", value.asInstanceOf[js.Any])
+    inline def setCurrencyConversionTimeMs(value: String): Self = StObject.set(x, "currencyConversionTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyConversionTimeMsUndefined: Self = StObject.set(x, "currencyConversionTimeMs", js.undefined)
+    inline def setCurrencyConversionTimeMsUndefined: Self = StObject.set(x, "currencyConversionTimeMs", js.undefined)
     
-    @scala.inline
-    def setDfpLineItemId(value: String): Self = StObject.set(x, "dfpLineItemId", value.asInstanceOf[js.Any])
+    inline def setDfpLineItemId(value: String): Self = StObject.set(x, "dfpLineItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDfpLineItemIdUndefined: Self = StObject.set(x, "dfpLineItemId", js.undefined)
+    inline def setDfpLineItemIdUndefined: Self = StObject.set(x, "dfpLineItemId", js.undefined)
     
-    @scala.inline
-    def setOriginalContractedQuantity(value: String): Self = StObject.set(x, "originalContractedQuantity", value.asInstanceOf[js.Any])
+    inline def setOriginalContractedQuantity(value: String): Self = StObject.set(x, "originalContractedQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalContractedQuantityUndefined: Self = StObject.set(x, "originalContractedQuantity", js.undefined)
+    inline def setOriginalContractedQuantityUndefined: Self = StObject.set(x, "originalContractedQuantity", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
   }
 }

@@ -16,37 +16,27 @@ trait SchemaPointProto extends StObject {
 }
 object SchemaPointProto {
   
-  @scala.inline
-  def apply(): SchemaPointProto = {
+  inline def apply(): SchemaPointProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPointProto]
   }
   
-  @scala.inline
-  implicit class SchemaPointProtoMutableBuilder[Self <: SchemaPointProto] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPointProto](x: Self) {
     
-    @scala.inline
-    def setLatE7(value: Double): Self = StObject.set(x, "latE7", value.asInstanceOf[js.Any])
+    inline def setLatE7(value: Double): Self = StObject.set(x, "latE7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatE7Undefined: Self = StObject.set(x, "latE7", js.undefined)
+    inline def setLatE7Undefined: Self = StObject.set(x, "latE7", js.undefined)
     
-    @scala.inline
-    def setLngE7(value: Double): Self = StObject.set(x, "lngE7", value.asInstanceOf[js.Any])
+    inline def setLngE7(value: Double): Self = StObject.set(x, "lngE7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLngE7Undefined: Self = StObject.set(x, "lngE7", js.undefined)
+    inline def setLngE7Undefined: Self = StObject.set(x, "lngE7", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaFieldMetadataProto): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaFieldMetadataProto): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setTemporaryData(value: SchemaMessageSet): Self = StObject.set(x, "temporaryData", value.asInstanceOf[js.Any])
+    inline def setTemporaryData(value: SchemaMessageSet): Self = StObject.set(x, "temporaryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporaryDataUndefined: Self = StObject.set(x, "temporaryData", js.undefined)
+    inline def setTemporaryDataUndefined: Self = StObject.set(x, "temporaryData", js.undefined)
   }
 }

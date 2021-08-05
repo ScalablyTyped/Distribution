@@ -17,9 +17,7 @@ object ariaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def aria(model: UnitModel): AriaRoleDescription | Description | Clip | AriaAriaRoleDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("aria")(model.asInstanceOf[js.Any]).asInstanceOf[AriaRoleDescription | Description | Clip | AriaAriaRoleDescription]
+  inline def aria(model: UnitModel): AriaRoleDescription | Description | Clip | AriaAriaRoleDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("aria")(model.asInstanceOf[js.Any]).asInstanceOf[AriaRoleDescription | Description | Clip | AriaAriaRoleDescription]
   
-  @scala.inline
-  def description(model: UnitModel): PartialRecordVgEncodeChan | `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("description")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordVgEncodeChan | `3`]
+  inline def description(model: UnitModel): PartialRecordVgEncodeChan | `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("description")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordVgEncodeChan | `3`]
 }

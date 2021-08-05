@@ -22,8 +22,7 @@ trait RangeElement extends StObject {
 }
 object RangeElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getElement: () => Element,
     getEndOffsetInclusive: () => Integer,
     getStartOffset: () => Integer,
@@ -33,19 +32,14 @@ object RangeElement {
     __obj.asInstanceOf[RangeElement]
   }
   
-  @scala.inline
-  implicit class RangeElementMutableBuilder[Self <: RangeElement] (val x: Self) extends AnyVal {
+  extension [Self <: RangeElement](x: Self) {
     
-    @scala.inline
-    def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEndOffsetInclusive(value: () => Integer): Self = StObject.set(x, "getEndOffsetInclusive", js.Any.fromFunction0(value))
+    inline def setGetEndOffsetInclusive(value: () => Integer): Self = StObject.set(x, "getEndOffsetInclusive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStartOffset(value: () => Integer): Self = StObject.set(x, "getStartOffset", js.Any.fromFunction0(value))
+    inline def setGetStartOffset(value: () => Integer): Self = StObject.set(x, "getStartOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPartial(value: () => Boolean): Self = StObject.set(x, "isPartial", js.Any.fromFunction0(value))
+    inline def setIsPartial(value: () => Boolean): Self = StObject.set(x, "isPartial", js.Any.fromFunction0(value))
   }
 }

@@ -15,28 +15,21 @@ trait VpnTunnelsScopedList extends StObject {
 }
 object VpnTunnelsScopedList {
   
-  @scala.inline
-  def apply(): VpnTunnelsScopedList = {
+  inline def apply(): VpnTunnelsScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnTunnelsScopedList]
   }
   
-  @scala.inline
-  implicit class VpnTunnelsScopedListMutableBuilder[Self <: VpnTunnelsScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: VpnTunnelsScopedList](x: Self) {
     
-    @scala.inline
-    def setVpnTunnels(value: js.Array[VpnTunnel]): Self = StObject.set(x, "vpnTunnels", value.asInstanceOf[js.Any])
+    inline def setVpnTunnels(value: js.Array[VpnTunnel]): Self = StObject.set(x, "vpnTunnels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnTunnelsUndefined: Self = StObject.set(x, "vpnTunnels", js.undefined)
+    inline def setVpnTunnelsUndefined: Self = StObject.set(x, "vpnTunnels", js.undefined)
     
-    @scala.inline
-    def setVpnTunnelsVarargs(value: VpnTunnel*): Self = StObject.set(x, "vpnTunnels", js.Array(value :_*))
+    inline def setVpnTunnelsVarargs(value: VpnTunnel*): Self = StObject.set(x, "vpnTunnels", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

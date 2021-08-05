@@ -35,8 +35,7 @@ trait WindowGroupChanged[Topic, Type]
 }
 object WindowGroupChanged {
   
-  @scala.inline
-  def apply[Topic, Type](
+  inline def apply[Topic, Type](
     memberOf: source | target | nothing,
     name: String,
     reason: leave | join | merge | disband,
@@ -55,37 +54,26 @@ object WindowGroupChanged {
     __obj.asInstanceOf[WindowGroupChanged[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WindowGroupChangedMutableBuilder[Self <: WindowGroupChanged[?, ?], Topic, Type] (val x: Self & (WindowGroupChanged[Topic, Type])) extends AnyVal {
+  extension [Self <: WindowGroupChanged[?, ?], Topic, Type](x: Self & (WindowGroupChanged[Topic, Type])) {
     
-    @scala.inline
-    def setMemberOf(value: source | target | nothing): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
+    inline def setMemberOf(value: source | target | nothing): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: leave | join | merge | disband): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: leave | join | merge | disband): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceGroup(value: js.Array[AppUuid]): Self = StObject.set(x, "sourceGroup", value.asInstanceOf[js.Any])
+    inline def setSourceGroup(value: js.Array[AppUuid]): Self = StObject.set(x, "sourceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceGroupVarargs(value: AppUuid*): Self = StObject.set(x, "sourceGroup", js.Array(value :_*))
+    inline def setSourceGroupVarargs(value: AppUuid*): Self = StObject.set(x, "sourceGroup", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceWindowAppUuid(value: String): Self = StObject.set(x, "sourceWindowAppUuid", value.asInstanceOf[js.Any])
+    inline def setSourceWindowAppUuid(value: String): Self = StObject.set(x, "sourceWindowAppUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceWindowName(value: String): Self = StObject.set(x, "sourceWindowName", value.asInstanceOf[js.Any])
+    inline def setSourceWindowName(value: String): Self = StObject.set(x, "sourceWindowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroup(value: js.Array[AppUuid]): Self = StObject.set(x, "targetGroup", value.asInstanceOf[js.Any])
+    inline def setTargetGroup(value: js.Array[AppUuid]): Self = StObject.set(x, "targetGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupVarargs(value: AppUuid*): Self = StObject.set(x, "targetGroup", js.Array(value :_*))
+    inline def setTargetGroupVarargs(value: AppUuid*): Self = StObject.set(x, "targetGroup", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetWindowAppUuid(value: String): Self = StObject.set(x, "targetWindowAppUuid", value.asInstanceOf[js.Any])
+    inline def setTargetWindowAppUuid(value: String): Self = StObject.set(x, "targetWindowAppUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetWindowName(value: String): Self = StObject.set(x, "targetWindowName", value.asInstanceOf[js.Any])
+    inline def setTargetWindowName(value: String): Self = StObject.set(x, "targetWindowName", value.asInstanceOf[js.Any])
   }
 }

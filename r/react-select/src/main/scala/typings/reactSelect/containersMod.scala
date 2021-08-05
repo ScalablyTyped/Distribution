@@ -37,14 +37,11 @@ object containersMod {
     def this(props: ValueContainerProps[js.Any], context: js.Any) = this()
   }
   
-  @scala.inline
-  def containerCSS(state: ContainerState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("containerCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def containerCSS(state: ContainerState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("containerCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def indicatorsContainerCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorsContainerCSS")().asInstanceOf[CSSProperties]
+  inline def indicatorsContainerCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorsContainerCSS")().asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def valueContainerCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("valueContainerCSS")().asInstanceOf[CSSProperties]
+  inline def valueContainerCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("valueContainerCSS")().asInstanceOf[CSSProperties]
   
   @js.native
   trait ContainerProps[OptionType /* <: OptionTypeBase */]
@@ -69,20 +66,16 @@ object containersMod {
   }
   object ContainerState {
     
-    @scala.inline
-    def apply(isDisabled: Boolean, isRtl: Boolean): ContainerState = {
+    inline def apply(isDisabled: Boolean, isRtl: Boolean): ContainerState = {
       val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], isRtl = isRtl.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerState]
     }
     
-    @scala.inline
-    implicit class ContainerStateMutableBuilder[Self <: ContainerState] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerState](x: Self) {
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
+      inline def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,20 +99,16 @@ object containersMod {
   }
   object IndicatorsState {
     
-    @scala.inline
-    def apply(isDisabled: Boolean, isRtl: Boolean): IndicatorsState = {
+    inline def apply(isDisabled: Boolean, isRtl: Boolean): IndicatorsState = {
       val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], isRtl = isRtl.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndicatorsState]
     }
     
-    @scala.inline
-    implicit class IndicatorsStateMutableBuilder[Self <: IndicatorsState] (val x: Self) extends AnyVal {
+    extension [Self <: IndicatorsState](x: Self) {
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
+      inline def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
     }
   }
   

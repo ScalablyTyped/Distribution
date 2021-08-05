@@ -13,19 +13,15 @@ trait StreamProcessorSettings extends StObject {
 }
 object StreamProcessorSettings {
   
-  @scala.inline
-  def apply(): StreamProcessorSettings = {
+  inline def apply(): StreamProcessorSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamProcessorSettings]
   }
   
-  @scala.inline
-  implicit class StreamProcessorSettingsMutableBuilder[Self <: StreamProcessorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: StreamProcessorSettings](x: Self) {
     
-    @scala.inline
-    def setFaceSearch(value: FaceSearchSettings): Self = StObject.set(x, "FaceSearch", value.asInstanceOf[js.Any])
+    inline def setFaceSearch(value: FaceSearchSettings): Self = StObject.set(x, "FaceSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceSearchUndefined: Self = StObject.set(x, "FaceSearch", js.undefined)
+    inline def setFaceSearchUndefined: Self = StObject.set(x, "FaceSearch", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ trait MessageQueue extends StObject {
 }
 object MessageQueue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCallableModule: String => js.Object,
     registerCallableModule: (String, js.Object) => Unit,
     registerLazyCallableModule: (String, js.Function0[js.Object]) => Unit
@@ -24,16 +23,12 @@ object MessageQueue {
     __obj.asInstanceOf[MessageQueue]
   }
   
-  @scala.inline
-  implicit class MessageQueueMutableBuilder[Self <: MessageQueue] (val x: Self) extends AnyVal {
+  extension [Self <: MessageQueue](x: Self) {
     
-    @scala.inline
-    def setGetCallableModule(value: String => js.Object): Self = StObject.set(x, "getCallableModule", js.Any.fromFunction1(value))
+    inline def setGetCallableModule(value: String => js.Object): Self = StObject.set(x, "getCallableModule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterCallableModule(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerCallableModule", js.Any.fromFunction2(value))
+    inline def setRegisterCallableModule(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerCallableModule", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterLazyCallableModule(value: (String, js.Function0[js.Object]) => Unit): Self = StObject.set(x, "registerLazyCallableModule", js.Any.fromFunction2(value))
+    inline def setRegisterLazyCallableModule(value: (String, js.Function0[js.Object]) => Unit): Self = StObject.set(x, "registerLazyCallableModule", js.Any.fromFunction2(value))
   }
 }

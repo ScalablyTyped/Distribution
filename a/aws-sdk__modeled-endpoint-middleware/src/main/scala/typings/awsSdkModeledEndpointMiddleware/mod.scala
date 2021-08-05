@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def modeledEndpointMiddleware[InputType /* <: js.Object */](urlParser: UrlParser, inputKey: /* keyof InputType */ String): BuildMiddleware[InputType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("modeledEndpointMiddleware")(urlParser.asInstanceOf[js.Any], inputKey.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[InputType, js.Any]]
+  inline def modeledEndpointMiddleware[InputType /* <: js.Object */](urlParser: UrlParser, inputKey: /* keyof InputType */ String): BuildMiddleware[InputType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("modeledEndpointMiddleware")(urlParser.asInstanceOf[js.Any], inputKey.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[InputType, js.Any]]
 }

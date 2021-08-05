@@ -14,15 +14,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def convertTokens(format: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTokens")(format.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def convertTokens(format: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTokens")(format.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def legacyParse(argument: js.Any): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyParse")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
-    @scala.inline
-    def legacyParse(argument: js.Any, options: LegacyParseOptions): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("legacyParse")(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def legacyParse(argument: js.Any): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyParse")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def legacyParse(argument: js.Any, options: LegacyParseOptions): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("legacyParse")(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
     
-    @scala.inline
-    def legacyParseMap(array: js.Array[js.Any]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyParseMap")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+    inline def legacyParseMap(array: js.Array[js.Any]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyParseMap")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
   }
 }

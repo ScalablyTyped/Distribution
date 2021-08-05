@@ -22,28 +22,21 @@ trait SchemaListCrawledUrlsResponse extends StObject {
 }
 object SchemaListCrawledUrlsResponse {
   
-  @scala.inline
-  def apply(): SchemaListCrawledUrlsResponse = {
+  inline def apply(): SchemaListCrawledUrlsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListCrawledUrlsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListCrawledUrlsResponseMutableBuilder[Self <: SchemaListCrawledUrlsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListCrawledUrlsResponse](x: Self) {
     
-    @scala.inline
-    def setCrawledUrls(value: js.Array[SchemaCrawledUrl]): Self = StObject.set(x, "crawledUrls", value.asInstanceOf[js.Any])
+    inline def setCrawledUrls(value: js.Array[SchemaCrawledUrl]): Self = StObject.set(x, "crawledUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawledUrlsUndefined: Self = StObject.set(x, "crawledUrls", js.undefined)
+    inline def setCrawledUrlsUndefined: Self = StObject.set(x, "crawledUrls", js.undefined)
     
-    @scala.inline
-    def setCrawledUrlsVarargs(value: SchemaCrawledUrl*): Self = StObject.set(x, "crawledUrls", js.Array(value :_*))
+    inline def setCrawledUrlsVarargs(value: SchemaCrawledUrl*): Self = StObject.set(x, "crawledUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

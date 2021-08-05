@@ -28,8 +28,7 @@ object ratingMod {
     @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingBase.defaultProps")
     @js.native
     def defaultProps: IRatingProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingSize")

@@ -31,8 +31,7 @@ trait DatabaseAccessConnection
      with XQueriesSupplier
 object DatabaseAccessConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoCommit: Boolean,
     Catalog: String,
     Groups: XNameAccess,

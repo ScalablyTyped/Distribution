@@ -14,28 +14,21 @@ trait PlacementsGenerateTagsResponse extends StObject {
 }
 object PlacementsGenerateTagsResponse {
   
-  @scala.inline
-  def apply(): PlacementsGenerateTagsResponse = {
+  inline def apply(): PlacementsGenerateTagsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementsGenerateTagsResponse]
   }
   
-  @scala.inline
-  implicit class PlacementsGenerateTagsResponseMutableBuilder[Self <: PlacementsGenerateTagsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementsGenerateTagsResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlacementTags(value: js.Array[PlacementTag]): Self = StObject.set(x, "placementTags", value.asInstanceOf[js.Any])
+    inline def setPlacementTags(value: js.Array[PlacementTag]): Self = StObject.set(x, "placementTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementTagsUndefined: Self = StObject.set(x, "placementTags", js.undefined)
+    inline def setPlacementTagsUndefined: Self = StObject.set(x, "placementTags", js.undefined)
     
-    @scala.inline
-    def setPlacementTagsVarargs(value: PlacementTag*): Self = StObject.set(x, "placementTags", js.Array(value :_*))
+    inline def setPlacementTagsVarargs(value: PlacementTag*): Self = StObject.set(x, "placementTags", js.Array(value :_*))
   }
 }

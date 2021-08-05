@@ -9,44 +9,37 @@ object wordpressNoticesStrings {
   
   @js.native
   sealed trait default extends StObject
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait coreSlashnotices extends StObject
-  @scala.inline
-  def coreSlashnotices: coreSlashnotices = "core/notices".asInstanceOf[coreSlashnotices]
+  inline def coreSlashnotices: coreSlashnotices = "core/notices".asInstanceOf[coreSlashnotices]
   
   @js.native
   sealed trait error
     extends StObject
        with Status
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait info
     extends StObject
        with Status
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait snackbar extends StObject
-  @scala.inline
-  def snackbar: snackbar = "snackbar".asInstanceOf[snackbar]
+  inline def snackbar: snackbar = "snackbar".asInstanceOf[snackbar]
   
   @js.native
   sealed trait success
     extends StObject
        with Status
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait warning
     extends StObject
        with Status
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

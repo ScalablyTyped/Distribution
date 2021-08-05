@@ -13,8 +13,7 @@ object createSpaceApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasHttpHttpUpload: HttpUpload): CreateApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttpHttpUpload.asInstanceOf[js.Any]).asInstanceOf[CreateApiKey]
+  inline def default(hasHttpHttpUpload: HttpUpload): CreateApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttpHttpUpload.asInstanceOf[js.Any]).asInstanceOf[CreateApiKey]
   
   type ContentfulSpaceAPI = ReturnType[js.Function1[/* hasHttpHttpUpload */ HttpUpload, CreateApiKey]]
 }

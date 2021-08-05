@@ -14,20 +14,16 @@ object Controls {
   }
   object ColumnPicker {
     
-    @scala.inline
-    def apply[T /* <: SlickData */](destroy: () => Unit, getAllColumns: () => js.Array[Column[T]]): ColumnPicker[T] = {
+    inline def apply[T /* <: SlickData */](destroy: () => Unit, getAllColumns: () => js.Array[Column[T]]): ColumnPicker[T] = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getAllColumns = js.Any.fromFunction0(getAllColumns))
       __obj.asInstanceOf[ColumnPicker[T]]
     }
     
-    @scala.inline
-    implicit class ColumnPickerMutableBuilder[Self <: ColumnPicker[?], T /* <: SlickData */] (val x: Self & ColumnPicker[T]) extends AnyVal {
+    extension [Self <: ColumnPicker[?], T /* <: SlickData */](x: Self & ColumnPicker[T]) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllColumns(value: () => js.Array[Column[T]]): Self = StObject.set(x, "getAllColumns", js.Any.fromFunction0(value))
+      inline def setGetAllColumns(value: () => js.Array[Column[T]]): Self = StObject.set(x, "getAllColumns", js.Any.fromFunction0(value))
     }
   }
   
@@ -37,20 +33,16 @@ object Controls {
   }
   object SlickColumnPickerOptions {
     
-    @scala.inline
-    def apply(): SlickColumnPickerOptions = {
+    inline def apply(): SlickColumnPickerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlickColumnPickerOptions]
     }
     
-    @scala.inline
-    implicit class SlickColumnPickerOptionsMutableBuilder[Self <: SlickColumnPickerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SlickColumnPickerOptions](x: Self) {
       
-      @scala.inline
-      def setFadeSpeed(value: Double): Self = StObject.set(x, "fadeSpeed", value.asInstanceOf[js.Any])
+      inline def setFadeSpeed(value: Double): Self = StObject.set(x, "fadeSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeSpeedUndefined: Self = StObject.set(x, "fadeSpeed", js.undefined)
+      inline def setFadeSpeedUndefined: Self = StObject.set(x, "fadeSpeed", js.undefined)
     }
   }
 }

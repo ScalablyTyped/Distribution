@@ -29,35 +29,26 @@ trait CIMGeometricEffectRegularPolygon
 }
 object CIMGeometricEffectRegularPolygon {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectRegularPolygon = {
+  inline def apply(): CIMGeometricEffectRegularPolygon = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectRegularPolygon")
     __obj.asInstanceOf[CIMGeometricEffectRegularPolygon]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectRegularPolygonMutableBuilder[Self <: CIMGeometricEffectRegularPolygon] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectRegularPolygon](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setEdges(value: Double): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: Double): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRegularPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRegularPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

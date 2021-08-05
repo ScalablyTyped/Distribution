@@ -18,28 +18,21 @@ trait ListGeoMatchSetsResponse extends StObject {
 }
 object ListGeoMatchSetsResponse {
   
-  @scala.inline
-  def apply(): ListGeoMatchSetsResponse = {
+  inline def apply(): ListGeoMatchSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGeoMatchSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListGeoMatchSetsResponseMutableBuilder[Self <: ListGeoMatchSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGeoMatchSetsResponse](x: Self) {
     
-    @scala.inline
-    def setGeoMatchSets(value: GeoMatchSetSummaries): Self = StObject.set(x, "GeoMatchSets", value.asInstanceOf[js.Any])
+    inline def setGeoMatchSets(value: GeoMatchSetSummaries): Self = StObject.set(x, "GeoMatchSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoMatchSetsUndefined: Self = StObject.set(x, "GeoMatchSets", js.undefined)
+    inline def setGeoMatchSetsUndefined: Self = StObject.set(x, "GeoMatchSets", js.undefined)
     
-    @scala.inline
-    def setGeoMatchSetsVarargs(value: GeoMatchSetSummary*): Self = StObject.set(x, "GeoMatchSets", js.Array(value :_*))
+    inline def setGeoMatchSetsVarargs(value: GeoMatchSetSummary*): Self = StObject.set(x, "GeoMatchSets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WelcomeScreenMeetingInformation extends StObject
 object WelcomeScreenMeetingInformation {
   
-  @scala.inline
-  def showOrganizerAndTimeAndSubject: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeAndSubject = "showOrganizerAndTimeAndSubject".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeAndSubject]
+  inline def showOrganizerAndTimeAndSubject: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeAndSubject = "showOrganizerAndTimeAndSubject".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeAndSubject]
   
-  @scala.inline
-  def showOrganizerAndTimeOnly: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeOnly = "showOrganizerAndTimeOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeOnly]
+  inline def showOrganizerAndTimeOnly: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeOnly = "showOrganizerAndTimeOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeOnly]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

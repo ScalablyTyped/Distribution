@@ -28,28 +28,21 @@ trait S3DestinationConfiguration extends StObject {
 }
 object S3DestinationConfiguration {
   
-  @scala.inline
-  def apply(bucket: BucketName, key: BucketKeyExpression, roleArn: RoleArn): S3DestinationConfiguration = {
+  inline def apply(bucket: BucketName, key: BucketKeyExpression, roleArn: RoleArn): S3DestinationConfiguration = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DestinationConfiguration]
   }
   
-  @scala.inline
-  implicit class S3DestinationConfigurationMutableBuilder[Self <: S3DestinationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: S3DestinationConfiguration](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlueConfiguration(value: GlueConfiguration): Self = StObject.set(x, "glueConfiguration", value.asInstanceOf[js.Any])
+    inline def setGlueConfiguration(value: GlueConfiguration): Self = StObject.set(x, "glueConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlueConfigurationUndefined: Self = StObject.set(x, "glueConfiguration", js.undefined)
+    inline def setGlueConfigurationUndefined: Self = StObject.set(x, "glueConfiguration", js.undefined)
     
-    @scala.inline
-    def setKey(value: BucketKeyExpression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: BucketKeyExpression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

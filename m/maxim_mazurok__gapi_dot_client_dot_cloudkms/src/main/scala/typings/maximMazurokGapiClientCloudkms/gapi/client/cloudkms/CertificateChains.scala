@@ -17,40 +17,29 @@ trait CertificateChains extends StObject {
 }
 object CertificateChains {
   
-  @scala.inline
-  def apply(): CertificateChains = {
+  inline def apply(): CertificateChains = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateChains]
   }
   
-  @scala.inline
-  implicit class CertificateChainsMutableBuilder[Self <: CertificateChains] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateChains](x: Self) {
     
-    @scala.inline
-    def setCaviumCerts(value: js.Array[String]): Self = StObject.set(x, "caviumCerts", value.asInstanceOf[js.Any])
+    inline def setCaviumCerts(value: js.Array[String]): Self = StObject.set(x, "caviumCerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaviumCertsUndefined: Self = StObject.set(x, "caviumCerts", js.undefined)
+    inline def setCaviumCertsUndefined: Self = StObject.set(x, "caviumCerts", js.undefined)
     
-    @scala.inline
-    def setCaviumCertsVarargs(value: String*): Self = StObject.set(x, "caviumCerts", js.Array(value :_*))
+    inline def setCaviumCertsVarargs(value: String*): Self = StObject.set(x, "caviumCerts", js.Array(value :_*))
     
-    @scala.inline
-    def setGoogleCardCerts(value: js.Array[String]): Self = StObject.set(x, "googleCardCerts", value.asInstanceOf[js.Any])
+    inline def setGoogleCardCerts(value: js.Array[String]): Self = StObject.set(x, "googleCardCerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleCardCertsUndefined: Self = StObject.set(x, "googleCardCerts", js.undefined)
+    inline def setGoogleCardCertsUndefined: Self = StObject.set(x, "googleCardCerts", js.undefined)
     
-    @scala.inline
-    def setGoogleCardCertsVarargs(value: String*): Self = StObject.set(x, "googleCardCerts", js.Array(value :_*))
+    inline def setGoogleCardCertsVarargs(value: String*): Self = StObject.set(x, "googleCardCerts", js.Array(value :_*))
     
-    @scala.inline
-    def setGooglePartitionCerts(value: js.Array[String]): Self = StObject.set(x, "googlePartitionCerts", value.asInstanceOf[js.Any])
+    inline def setGooglePartitionCerts(value: js.Array[String]): Self = StObject.set(x, "googlePartitionCerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGooglePartitionCertsUndefined: Self = StObject.set(x, "googlePartitionCerts", js.undefined)
+    inline def setGooglePartitionCertsUndefined: Self = StObject.set(x, "googlePartitionCerts", js.undefined)
     
-    @scala.inline
-    def setGooglePartitionCertsVarargs(value: String*): Self = StObject.set(x, "googlePartitionCerts", js.Array(value :_*))
+    inline def setGooglePartitionCertsVarargs(value: String*): Self = StObject.set(x, "googlePartitionCerts", js.Array(value :_*))
   }
 }

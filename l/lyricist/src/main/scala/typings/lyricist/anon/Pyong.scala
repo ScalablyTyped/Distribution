@@ -10,16 +10,13 @@ trait Pyong extends StObject {
 }
 object Pyong {
   
-  @scala.inline
-  def apply(pyong: Boolean): Pyong = {
+  inline def apply(pyong: Boolean): Pyong = {
     val __obj = js.Dynamic.literal(pyong = pyong.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pyong]
   }
   
-  @scala.inline
-  implicit class PyongMutableBuilder[Self <: Pyong] (val x: Self) extends AnyVal {
+  extension [Self <: Pyong](x: Self) {
     
-    @scala.inline
-    def setPyong(value: Boolean): Self = StObject.set(x, "pyong", value.asInstanceOf[js.Any])
+    inline def setPyong(value: Boolean): Self = StObject.set(x, "pyong", value.asInstanceOf[js.Any])
   }
 }

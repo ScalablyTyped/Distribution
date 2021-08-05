@@ -12,11 +12,8 @@ object scaleParseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseScaleCore(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScaleCore")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def parseScaleCore(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScaleCore")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def parseScales(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScales")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def parseScales(model: Model, hasIgnoreRange: IgnoreRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScales")(model.asInstanceOf[js.Any], hasIgnoreRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseScales(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScales")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def parseScales(model: Model, hasIgnoreRange: IgnoreRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScales")(model.asInstanceOf[js.Any], hasIgnoreRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

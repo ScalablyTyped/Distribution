@@ -18,8 +18,7 @@ trait SelectionChangedEvent extends StObject {
 }
 object SelectionChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newBufferRange: Range,
     newScreenRange: Range,
     oldBufferRange: Range,
@@ -30,22 +29,16 @@ object SelectionChangedEvent {
     __obj.asInstanceOf[SelectionChangedEvent]
   }
   
-  @scala.inline
-  implicit class SelectionChangedEventMutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionChangedEvent](x: Self) {
     
-    @scala.inline
-    def setNewBufferRange(value: Range): Self = StObject.set(x, "newBufferRange", value.asInstanceOf[js.Any])
+    inline def setNewBufferRange(value: Range): Self = StObject.set(x, "newBufferRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewScreenRange(value: Range): Self = StObject.set(x, "newScreenRange", value.asInstanceOf[js.Any])
+    inline def setNewScreenRange(value: Range): Self = StObject.set(x, "newScreenRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldBufferRange(value: Range): Self = StObject.set(x, "oldBufferRange", value.asInstanceOf[js.Any])
+    inline def setOldBufferRange(value: Range): Self = StObject.set(x, "oldBufferRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldScreenRange(value: Range): Self = StObject.set(x, "oldScreenRange", value.asInstanceOf[js.Any])
+    inline def setOldScreenRange(value: Range): Self = StObject.set(x, "oldScreenRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

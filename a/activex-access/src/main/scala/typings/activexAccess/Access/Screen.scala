@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Screen extends StObject {
   
-  @JSName("Access.Screen_typekey")
+  /* private */ @JSName("Access.Screen_typekey")
   var AccessDotScreen_typekey: Screen
   
   val ActiveControl: Control
@@ -31,8 +31,7 @@ trait Screen extends StObject {
 }
 object Screen {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotScreen_typekey: Screen,
     ActiveControl: Control,
     ActiveDataAccessPage: DataAccessPage,
@@ -50,40 +49,28 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  @scala.inline
-  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
+  extension [Self <: Screen](x: Self) {
     
-    @scala.inline
-    def setAccessDotScreen_typekey(value: Screen): Self = StObject.set(x, "Access.Screen_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotScreen_typekey(value: Screen): Self = StObject.set(x, "Access.Screen_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveControl(value: Control): Self = StObject.set(x, "ActiveControl", value.asInstanceOf[js.Any])
+    inline def setActiveControl(value: Control): Self = StObject.set(x, "ActiveControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDataAccessPage(value: DataAccessPage): Self = StObject.set(x, "ActiveDataAccessPage", value.asInstanceOf[js.Any])
+    inline def setActiveDataAccessPage(value: DataAccessPage): Self = StObject.set(x, "ActiveDataAccessPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDatasheet(value: Form): Self = StObject.set(x, "ActiveDatasheet", value.asInstanceOf[js.Any])
+    inline def setActiveDatasheet(value: Form): Self = StObject.set(x, "ActiveDatasheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveForm(value: Form): Self = StObject.set(x, "ActiveForm", value.asInstanceOf[js.Any])
+    inline def setActiveForm(value: Form): Self = StObject.set(x, "ActiveForm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveReport(value: Report): Self = StObject.set(x, "ActiveReport", value.asInstanceOf[js.Any])
+    inline def setActiveReport(value: Report): Self = StObject.set(x, "ActiveReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMousePointer(value: Double): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: Double): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousControl(value: Control): Self = StObject.set(x, "PreviousControl", value.asInstanceOf[js.Any])
+    inline def setPreviousControl(value: Control): Self = StObject.set(x, "PreviousControl", value.asInstanceOf[js.Any])
   }
 }

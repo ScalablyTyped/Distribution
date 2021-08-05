@@ -38,49 +38,35 @@ trait DeploymentOverview extends StObject {
 }
 object DeploymentOverview {
   
-  @scala.inline
-  def apply(): DeploymentOverview = {
+  inline def apply(): DeploymentOverview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentOverview]
   }
   
-  @scala.inline
-  implicit class DeploymentOverviewMutableBuilder[Self <: DeploymentOverview] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentOverview](x: Self) {
     
-    @scala.inline
-    def setFailed(value: InstanceCount): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: InstanceCount): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
     
-    @scala.inline
-    def setInProgress(value: InstanceCount): Self = StObject.set(x, "InProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: InstanceCount): Self = StObject.set(x, "InProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressUndefined: Self = StObject.set(x, "InProgress", js.undefined)
+    inline def setInProgressUndefined: Self = StObject.set(x, "InProgress", js.undefined)
     
-    @scala.inline
-    def setPending(value: InstanceCount): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: InstanceCount): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
     
-    @scala.inline
-    def setReady(value: InstanceCount): Self = StObject.set(x, "Ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: InstanceCount): Self = StObject.set(x, "Ready", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "Ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "Ready", js.undefined)
     
-    @scala.inline
-    def setSkipped(value: InstanceCount): Self = StObject.set(x, "Skipped", value.asInstanceOf[js.Any])
+    inline def setSkipped(value: InstanceCount): Self = StObject.set(x, "Skipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedUndefined: Self = StObject.set(x, "Skipped", js.undefined)
+    inline def setSkippedUndefined: Self = StObject.set(x, "Skipped", js.undefined)
     
-    @scala.inline
-    def setSucceeded(value: InstanceCount): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: InstanceCount): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
+    inline def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
   }
 }

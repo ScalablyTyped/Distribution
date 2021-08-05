@@ -18,25 +18,19 @@ trait ClassicLinkDnsSupport extends StObject {
 }
 object ClassicLinkDnsSupport {
   
-  @scala.inline
-  def apply(): ClassicLinkDnsSupport = {
+  inline def apply(): ClassicLinkDnsSupport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassicLinkDnsSupport]
   }
   
-  @scala.inline
-  implicit class ClassicLinkDnsSupportMutableBuilder[Self <: ClassicLinkDnsSupport] (val x: Self) extends AnyVal {
+  extension [Self <: ClassicLinkDnsSupport](x: Self) {
     
-    @scala.inline
-    def setClassicLinkDnsSupported(value: Boolean): Self = StObject.set(x, "ClassicLinkDnsSupported", value.asInstanceOf[js.Any])
+    inline def setClassicLinkDnsSupported(value: Boolean): Self = StObject.set(x, "ClassicLinkDnsSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassicLinkDnsSupportedUndefined: Self = StObject.set(x, "ClassicLinkDnsSupported", js.undefined)
+    inline def setClassicLinkDnsSupportedUndefined: Self = StObject.set(x, "ClassicLinkDnsSupported", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

@@ -10,74 +10,58 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseFullName(nameToParse: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any]).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(
+  inline def parseFullName(nameToParse: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(
     nameToParse: String,
     partToReturn: Unit,
     fixCase: Boolean,
     stopOnError: Boolean,
     useLongLists: Boolean
   ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(
+  inline def parseFullName(
     nameToParse: String,
     partToReturn: Unit,
     fixCase: Boolean,
     stopOnError: Unit,
     useLongLists: Boolean
   ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(
+  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(
     nameToParse: String,
     partToReturn: Unit,
     fixCase: Unit,
     stopOnError: Boolean,
     useLongLists: Boolean
   ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Unit, useLongLists: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: partToReturn): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(
+  inline def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Unit, useLongLists: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(nameToParse: String, partToReturn: partToReturn): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(
     nameToParse: String,
     partToReturn: partToReturn,
     fixCase: Boolean,
     stopOnError: Boolean,
     useLongLists: Boolean
   ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(
+  inline def parseFullName(
     nameToParse: String,
     partToReturn: partToReturn,
     fixCase: Boolean,
     stopOnError: Unit,
     useLongLists: Boolean
   ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(
+  inline def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def parseFullName(
     nameToParse: String,
     partToReturn: partToReturn,
     fixCase: Unit,
     stopOnError: Boolean,
     useLongLists: Boolean
   ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
-  @scala.inline
-  def parseFullName(
+  inline def parseFullName(
     nameToParse: String,
     partToReturn: partToReturn,
     fixCase: Unit,
@@ -103,59 +87,42 @@ object mod {
   }
   object Name {
     
-    @scala.inline
-    def apply(): Name = {
+    inline def apply(): Name = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Array[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Array[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setErrorVarargs(value: js.Any*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: js.Any*): Self = StObject.set(x, "error", js.Array(value :_*))
       
-      @scala.inline
-      def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
-      @scala.inline
-      def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+      inline def setMiddle(value: String): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
+      inline def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNickUndefined: Self = StObject.set(x, "nick", js.undefined)
+      inline def setNickUndefined: Self = StObject.set(x, "nick", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -172,28 +139,20 @@ object mod {
   trait partToReturn extends StObject
   object partToReturn {
     
-    @scala.inline
-    def all: typings.parseFullName.parseFullNameStrings.all = "all".asInstanceOf[typings.parseFullName.parseFullNameStrings.all]
+    inline def all: typings.parseFullName.parseFullNameStrings.all = "all".asInstanceOf[typings.parseFullName.parseFullNameStrings.all]
     
-    @scala.inline
-    def error: typings.parseFullName.parseFullNameStrings.error = "error".asInstanceOf[typings.parseFullName.parseFullNameStrings.error]
+    inline def error: typings.parseFullName.parseFullNameStrings.error = "error".asInstanceOf[typings.parseFullName.parseFullNameStrings.error]
     
-    @scala.inline
-    def first: typings.parseFullName.parseFullNameStrings.first = "first".asInstanceOf[typings.parseFullName.parseFullNameStrings.first]
+    inline def first: typings.parseFullName.parseFullNameStrings.first = "first".asInstanceOf[typings.parseFullName.parseFullNameStrings.first]
     
-    @scala.inline
-    def last: typings.parseFullName.parseFullNameStrings.last = "last".asInstanceOf[typings.parseFullName.parseFullNameStrings.last]
+    inline def last: typings.parseFullName.parseFullNameStrings.last = "last".asInstanceOf[typings.parseFullName.parseFullNameStrings.last]
     
-    @scala.inline
-    def middle: typings.parseFullName.parseFullNameStrings.middle = "middle".asInstanceOf[typings.parseFullName.parseFullNameStrings.middle]
+    inline def middle: typings.parseFullName.parseFullNameStrings.middle = "middle".asInstanceOf[typings.parseFullName.parseFullNameStrings.middle]
     
-    @scala.inline
-    def nick: typings.parseFullName.parseFullNameStrings.nick = "nick".asInstanceOf[typings.parseFullName.parseFullNameStrings.nick]
+    inline def nick: typings.parseFullName.parseFullNameStrings.nick = "nick".asInstanceOf[typings.parseFullName.parseFullNameStrings.nick]
     
-    @scala.inline
-    def suffix: typings.parseFullName.parseFullNameStrings.suffix = "suffix".asInstanceOf[typings.parseFullName.parseFullNameStrings.suffix]
+    inline def suffix: typings.parseFullName.parseFullNameStrings.suffix = "suffix".asInstanceOf[typings.parseFullName.parseFullNameStrings.suffix]
     
-    @scala.inline
-    def title: typings.parseFullName.parseFullNameStrings.title = "title".asInstanceOf[typings.parseFullName.parseFullNameStrings.title]
+    inline def title: typings.parseFullName.parseFullNameStrings.title = "title".asInstanceOf[typings.parseFullName.parseFullNameStrings.title]
   }
 }

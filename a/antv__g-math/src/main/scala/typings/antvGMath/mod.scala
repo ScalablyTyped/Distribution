@@ -26,8 +26,7 @@ object mod {
       * @param {number} endAngle   结束角度
       * @return {object} 包围盒对象
       */
-    @scala.inline
-    def box(
+    inline def box(
       cx: Double,
       cy: Double,
       rx: Double,
@@ -48,8 +47,7 @@ object mod {
       * @param {number} startAngle 起始角度
       * @param {number} endAngle   结束角度
       */
-    @scala.inline
-    def length(
+    inline def length(
       cx: Double,
       cy: Double,
       rx: Double,
@@ -72,8 +70,7 @@ object mod {
       * @param {number} y0         指定点的 y
       * @return {object} 到指定点最近距离的点
       */
-    @scala.inline
-    def nearestPoint(
+    inline def nearestPoint(
       cx: Double,
       cy: Double,
       rx: Double,
@@ -85,8 +82,7 @@ object mod {
       y0: Double
     ): X = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoint")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], xRotation.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[X]
     
-    @scala.inline
-    def pointAt(
+    inline def pointAt(
       cx: Double,
       cy: Double,
       rx: Double,
@@ -97,8 +93,7 @@ object mod {
       t: Double
     ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAt")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], xRotation.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point]
     
-    @scala.inline
-    def pointDistance(
+    inline def pointDistance(
       cx: Double,
       cy: Double,
       rx: Double,
@@ -110,8 +105,7 @@ object mod {
       y0: Double
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointDistance")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], xRotation.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def tangentAngle(
+    inline def tangentAngle(
       cx: Double,
       cy: Double,
       rx: Double,

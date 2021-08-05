@@ -21,7 +21,7 @@ object dialogMod {
       * @param core - User agent core.
       * @param dialogState - Initial dialog state.
       */
-    protected def this(core: UserAgentCore, dialogState: DialogState) = this()
+    /* protected */ def this(core: UserAgentCore, dialogState: DialogState) = this()
     
     /** Call identifier component of the dialog id. */
     def callId: String = js.native
@@ -29,7 +29,7 @@ object dialogMod {
     /** Confirm the dialog. Only matters if dialog is currently early. */
     def confirm(): Unit = js.native
     
-    var core: UserAgentCore = js.native
+    /* protected */ var core: UserAgentCore = js.native
     
     /**
       * A request within a dialog is constructed by using many of the
@@ -40,7 +40,7 @@ object dialogMod {
     def createOutgoingRequestMessage(method: String): OutgoingRequestMessage = js.native
     def createOutgoingRequestMessage(method: String, options: Cseq): OutgoingRequestMessage = js.native
     
-    var dialogState: DialogState = js.native
+    /* protected */ var dialogState: DialogState = js.native
     
     /** Destructor. */
     def dispose(): Unit = js.native
@@ -178,8 +178,7 @@ object dialogMod {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
-    @scala.inline
-    def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentClient")(outgoingRequestMessage.asInstanceOf[js.Any], incomingResponseMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
+    inline def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentClient")(outgoingRequestMessage.asInstanceOf[js.Any], incomingResponseMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
     
     /**
       * The UAS then constructs the state of the dialog.  This state MUST be
@@ -188,9 +187,7 @@ object dialogMod {
       * @param incomingRequestMessage - Incoming request message creating dialog.
       * @param toTag - Tag in the To field in the response to the incoming request.
       */
-    @scala.inline
-    def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any])).asInstanceOf[DialogState]
-    @scala.inline
-    def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any], early.asInstanceOf[js.Any])).asInstanceOf[DialogState]
+    inline def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any])).asInstanceOf[DialogState]
+    inline def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any], early.asInstanceOf[js.Any])).asInstanceOf[DialogState]
   }
 }

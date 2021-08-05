@@ -152,20 +152,16 @@ object mod {
   }
   object Coordinates {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Coordinates = {
+    inline def apply(x: Double, y: Double): Coordinates = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coordinates]
     }
     
-    @scala.inline
-    implicit class CoordinatesMutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
+    extension [Self <: Coordinates](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,32 +175,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setInitialPoint(value: Coordinates): Self = StObject.set(x, "initialPoint", value.asInstanceOf[js.Any])
+      inline def setInitialPoint(value: Coordinates): Self = StObject.set(x, "initialPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPointUndefined: Self = StObject.set(x, "initialPoint", js.undefined)
+      inline def setInitialPointUndefined: Self = StObject.set(x, "initialPoint", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
   
@@ -214,17 +202,14 @@ object mod {
   }
   object UpdateOptions {
     
-    @scala.inline
-    def apply(both: Boolean): UpdateOptions = {
+    inline def apply(both: Boolean): UpdateOptions = {
       val __obj = js.Dynamic.literal(both = both.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    @scala.inline
-    implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateOptions](x: Self) {
       
-      @scala.inline
-      def setBoth(value: Boolean): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
+      inline def setBoth(value: Boolean): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
     }
   }
 }

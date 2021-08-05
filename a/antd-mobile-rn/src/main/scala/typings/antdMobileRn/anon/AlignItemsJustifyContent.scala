@@ -12,19 +12,15 @@ trait AlignItemsJustifyContent extends StObject {
 }
 object AlignItemsJustifyContent {
   
-  @scala.inline
-  def apply(alignItems: String, justifyContent: String): AlignItemsJustifyContent = {
+  inline def apply(alignItems: String, justifyContent: String): AlignItemsJustifyContent = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignItemsJustifyContent]
   }
   
-  @scala.inline
-  implicit class AlignItemsJustifyContentMutableBuilder[Self <: AlignItemsJustifyContent] (val x: Self) extends AnyVal {
+  extension [Self <: AlignItemsJustifyContent](x: Self) {
     
-    @scala.inline
-    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
   }
 }

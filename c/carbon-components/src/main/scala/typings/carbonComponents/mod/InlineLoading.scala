@@ -21,8 +21,7 @@ object InlineLoading {
   @JSImport("carbon-components", "InlineLoading.components")
   @js.native
   def components: WeakMap[js.Object, js.Any] = js.native
-  @scala.inline
-  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   
   /* static member */
   object states {
@@ -34,25 +33,21 @@ object InlineLoading {
     @JSImport("carbon-components", "InlineLoading.states.ACTIVE")
     @js.native
     def ACTIVE: String = js.native
-    @scala.inline
-    def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+    inline def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
     
     @JSImport("carbon-components", "InlineLoading.states.ERROR")
     @js.native
     def ERROR: String = js.native
-    @scala.inline
-    def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+    inline def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("carbon-components", "InlineLoading.states.FINISHED")
     @js.native
     def FINISHED: String = js.native
-    @scala.inline
-    def FINISHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINISHED")(x.asInstanceOf[js.Any])
+    inline def FINISHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINISHED")(x.asInstanceOf[js.Any])
     
     @JSImport("carbon-components", "InlineLoading.states.INACTIVE")
     @js.native
     def INACTIVE: String = js.native
-    @scala.inline
-    def INACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INACTIVE")(x.asInstanceOf[js.Any])
+    inline def INACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INACTIVE")(x.asInstanceOf[js.Any])
   }
 }

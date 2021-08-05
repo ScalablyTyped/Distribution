@@ -22,34 +22,25 @@ trait PaymentsLiteDialogParams
 }
 object PaymentsLiteDialogParams {
   
-  @scala.inline
-  def apply(product_id: String): PaymentsLiteDialogParams = {
+  inline def apply(product_id: String): PaymentsLiteDialogParams = {
     val __obj = js.Dynamic.literal(action = "purchaseiap", method = "pay", product_id = product_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentsLiteDialogParams]
   }
   
-  @scala.inline
-  implicit class PaymentsLiteDialogParamsMutableBuilder[Self <: PaymentsLiteDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentsLiteDialogParams](x: Self) {
     
-    @scala.inline
-    def setAction(value: purchaseiap): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: purchaseiap): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloper_payload(value: String): Self = StObject.set(x, "developer_payload", value.asInstanceOf[js.Any])
+    inline def setDeveloper_payload(value: String): Self = StObject.set(x, "developer_payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloper_payloadUndefined: Self = StObject.set(x, "developer_payload", js.undefined)
+    inline def setDeveloper_payloadUndefined: Self = StObject.set(x, "developer_payload", js.undefined)
     
-    @scala.inline
-    def setMethod(value: pay): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: pay): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
+    inline def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

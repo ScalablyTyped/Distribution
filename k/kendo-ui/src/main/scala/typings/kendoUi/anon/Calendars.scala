@@ -16,37 +16,27 @@ trait Calendars extends StObject {
 }
 object Calendars {
   
-  @scala.inline
-  def apply(): Calendars = {
+  inline def apply(): Calendars = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Calendars]
   }
   
-  @scala.inline
-  implicit class CalendarsMutableBuilder[Self <: Calendars] (val x: Self) extends AnyVal {
+  extension [Self <: Calendars](x: Self) {
     
-    @scala.inline
-    def setCalendar(value: _empty): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: _empty): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+    inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
-    @scala.inline
-    def setCalendars(value: `0`): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+    inline def setCalendars(value: `0`): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
+    inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: Currency): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Currency): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ object renamePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(nameMap: NameMap): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nameMap.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def default(nameMap: NameMap): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nameMap.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
 }

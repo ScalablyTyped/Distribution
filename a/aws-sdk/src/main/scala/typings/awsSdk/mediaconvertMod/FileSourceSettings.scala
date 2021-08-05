@@ -30,39 +30,29 @@ trait FileSourceSettings extends StObject {
 }
 object FileSourceSettings {
   
-  @scala.inline
-  def apply(): FileSourceSettings = {
+  inline def apply(): FileSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSourceSettings]
   }
   
-  @scala.inline
-  implicit class FileSourceSettingsMutableBuilder[Self <: FileSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FileSourceSettings](x: Self) {
     
-    @scala.inline
-    def setConvert608To708(value: FileSourceConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
+    inline def setConvert608To708(value: FileSourceConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
+    inline def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
     
-    @scala.inline
-    def setFramerate(value: CaptionSourceFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
+    inline def setFramerate(value: CaptionSourceFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
+    inline def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
     
-    @scala.inline
-    def setSourceFile(
+    inline def setSourceFile(
       value: stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMIHttpsSccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI
     ): Self = StObject.set(x, "SourceFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFileUndefined: Self = StObject.set(x, "SourceFile", js.undefined)
+    inline def setSourceFileUndefined: Self = StObject.set(x, "SourceFile", js.undefined)
     
-    @scala.inline
-    def setTimeDelta(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "TimeDelta", value.asInstanceOf[js.Any])
+    inline def setTimeDelta(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "TimeDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeDeltaUndefined: Self = StObject.set(x, "TimeDelta", js.undefined)
+    inline def setTimeDeltaUndefined: Self = StObject.set(x, "TimeDelta", js.undefined)
   }
 }

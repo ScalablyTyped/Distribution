@@ -38,37 +38,27 @@ trait ParamsResourceAboutGet
 }
 object ParamsResourceAboutGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAboutGet = {
+  inline def apply(): ParamsResourceAboutGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAboutGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAboutGetMutableBuilder[Self <: ParamsResourceAboutGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAboutGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIncludeSubscribed(value: Boolean): Self = StObject.set(x, "includeSubscribed", value.asInstanceOf[js.Any])
+    inline def setIncludeSubscribed(value: Boolean): Self = StObject.set(x, "includeSubscribed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSubscribedUndefined: Self = StObject.set(x, "includeSubscribed", js.undefined)
+    inline def setIncludeSubscribedUndefined: Self = StObject.set(x, "includeSubscribed", js.undefined)
     
-    @scala.inline
-    def setMaxChangeIdCount(value: String): Self = StObject.set(x, "maxChangeIdCount", value.asInstanceOf[js.Any])
+    inline def setMaxChangeIdCount(value: String): Self = StObject.set(x, "maxChangeIdCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChangeIdCountUndefined: Self = StObject.set(x, "maxChangeIdCount", js.undefined)
+    inline def setMaxChangeIdCountUndefined: Self = StObject.set(x, "maxChangeIdCount", js.undefined)
     
-    @scala.inline
-    def setStartChangeId(value: String): Self = StObject.set(x, "startChangeId", value.asInstanceOf[js.Any])
+    inline def setStartChangeId(value: String): Self = StObject.set(x, "startChangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartChangeIdUndefined: Self = StObject.set(x, "startChangeId", js.undefined)
+    inline def setStartChangeIdUndefined: Self = StObject.set(x, "startChangeId", js.undefined)
   }
 }

@@ -14,16 +14,14 @@ object parseTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     tpl: PickSFCTemplateBlockconte,
     documentation: typings.vueDocgenApi.documentationMod.default,
     handlers: js.Array[Handler],
     opts: ParseOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tpl.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def traverse(
+  inline def traverse(
     templateAst: TemplateChildNode,
     documentation: default,
     handlers: js.Array[Handler],
@@ -45,17 +43,14 @@ object parseTemplateMod {
   }
   object TemplateParserOptions {
     
-    @scala.inline
-    def apply(functional: Boolean): TemplateParserOptions = {
+    inline def apply(functional: Boolean): TemplateParserOptions = {
       val __obj = js.Dynamic.literal(functional = functional.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateParserOptions]
     }
     
-    @scala.inline
-    implicit class TemplateParserOptionsMutableBuilder[Self <: TemplateParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateParserOptions](x: Self) {
       
-      @scala.inline
-      def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
+      inline def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
     }
   }
 }

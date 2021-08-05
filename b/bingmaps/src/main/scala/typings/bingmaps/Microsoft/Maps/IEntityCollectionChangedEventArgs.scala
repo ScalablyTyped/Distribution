@@ -14,19 +14,15 @@ trait IEntityCollectionChangedEventArgs extends StObject {
 }
 object IEntityCollectionChangedEventArgs {
   
-  @scala.inline
-  def apply(collection: EntityCollection, data: IPrimitive): IEntityCollectionChangedEventArgs = {
+  inline def apply(collection: EntityCollection, data: IPrimitive): IEntityCollectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityCollectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class IEntityCollectionChangedEventArgsMutableBuilder[Self <: IEntityCollectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityCollectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCollection(value: EntityCollection): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: EntityCollection): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: IPrimitive): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IPrimitive): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

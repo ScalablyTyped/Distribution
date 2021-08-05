@@ -13,16 +13,13 @@ trait DeleteAppRequest extends StObject {
 }
 object DeleteAppRequest {
   
-  @scala.inline
-  def apply(AppId: String): DeleteAppRequest = {
+  inline def apply(AppId: String): DeleteAppRequest = {
     val __obj = js.Dynamic.literal(AppId = AppId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAppRequestMutableBuilder[Self <: DeleteAppRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAppRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
   }
 }

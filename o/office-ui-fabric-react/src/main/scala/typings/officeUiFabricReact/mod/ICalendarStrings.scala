@@ -9,8 +9,7 @@ trait ICalendarStrings
      with typings.officeUiFabricReact.calendarTypesMod.ICalendarStrings
 object ICalendarStrings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     days: js.Array[String],
     goToToday: String,
     months: js.Array[String],

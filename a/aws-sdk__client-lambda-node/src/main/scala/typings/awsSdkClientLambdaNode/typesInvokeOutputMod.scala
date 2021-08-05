@@ -46,47 +46,34 @@ object typesInvokeOutputMod {
   }
   object InvokeOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): InvokeOutput = {
+    inline def apply($metadata: ResponseMetadata): InvokeOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeOutput]
     }
     
-    @scala.inline
-    implicit class InvokeOutputMutableBuilder[Self <: InvokeOutput] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutedVersion(value: String): Self = StObject.set(x, "ExecutedVersion", value.asInstanceOf[js.Any])
+      inline def setExecutedVersion(value: String): Self = StObject.set(x, "ExecutedVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutedVersionUndefined: Self = StObject.set(x, "ExecutedVersion", js.undefined)
+      inline def setExecutedVersionUndefined: Self = StObject.set(x, "ExecutedVersion", js.undefined)
       
-      @scala.inline
-      def setFunctionError(value: String): Self = StObject.set(x, "FunctionError", value.asInstanceOf[js.Any])
+      inline def setFunctionError(value: String): Self = StObject.set(x, "FunctionError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionErrorUndefined: Self = StObject.set(x, "FunctionError", js.undefined)
+      inline def setFunctionErrorUndefined: Self = StObject.set(x, "FunctionError", js.undefined)
       
-      @scala.inline
-      def setLogResult(value: String): Self = StObject.set(x, "LogResult", value.asInstanceOf[js.Any])
+      inline def setLogResult(value: String): Self = StObject.set(x, "LogResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogResultUndefined: Self = StObject.set(x, "LogResult", js.undefined)
+      inline def setLogResultUndefined: Self = StObject.set(x, "LogResult", js.undefined)
       
-      @scala.inline
-      def setPayload(value: Uint8Array): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Uint8Array): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
     }
   }
 }

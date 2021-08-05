@@ -16,19 +16,15 @@ trait RuleRaws
 }
 object RuleRaws {
   
-  @scala.inline
-  def apply(): RuleRaws = {
+  inline def apply(): RuleRaws = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleRaws]
   }
   
-  @scala.inline
-  implicit class RuleRawsMutableBuilder[Self <: RuleRaws] (val x: Self) extends AnyVal {
+  extension [Self <: RuleRaws](x: Self) {
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

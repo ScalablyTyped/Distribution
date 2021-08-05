@@ -27,31 +27,23 @@ trait AsymmetricDecryptResponse extends StObject {
 }
 object AsymmetricDecryptResponse {
   
-  @scala.inline
-  def apply(): AsymmetricDecryptResponse = {
+  inline def apply(): AsymmetricDecryptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsymmetricDecryptResponse]
   }
   
-  @scala.inline
-  implicit class AsymmetricDecryptResponseMutableBuilder[Self <: AsymmetricDecryptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AsymmetricDecryptResponse](x: Self) {
     
-    @scala.inline
-    def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+    inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextCrc32c(value: String): Self = StObject.set(x, "plaintextCrc32c", value.asInstanceOf[js.Any])
+    inline def setPlaintextCrc32c(value: String): Self = StObject.set(x, "plaintextCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextCrc32cUndefined: Self = StObject.set(x, "plaintextCrc32c", js.undefined)
+    inline def setPlaintextCrc32cUndefined: Self = StObject.set(x, "plaintextCrc32c", js.undefined)
     
-    @scala.inline
-    def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
+    inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
     
-    @scala.inline
-    def setVerifiedCiphertextCrc32c(value: Boolean): Self = StObject.set(x, "verifiedCiphertextCrc32c", value.asInstanceOf[js.Any])
+    inline def setVerifiedCiphertextCrc32c(value: Boolean): Self = StObject.set(x, "verifiedCiphertextCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedCiphertextCrc32cUndefined: Self = StObject.set(x, "verifiedCiphertextCrc32c", js.undefined)
+    inline def setVerifiedCiphertextCrc32cUndefined: Self = StObject.set(x, "verifiedCiphertextCrc32c", js.undefined)
   }
 }

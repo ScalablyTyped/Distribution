@@ -38,43 +38,31 @@ trait SourceControlResourceDecorations
 }
 object SourceControlResourceDecorations {
   
-  @scala.inline
-  def apply(): SourceControlResourceDecorations = {
+  inline def apply(): SourceControlResourceDecorations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceControlResourceDecorations]
   }
   
-  @scala.inline
-  implicit class SourceControlResourceDecorationsMutableBuilder[Self <: SourceControlResourceDecorations] (val x: Self) extends AnyVal {
+  extension [Self <: SourceControlResourceDecorations](x: Self) {
     
-    @scala.inline
-    def setDark(value: SourceControlResourceThemableDecorations): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: SourceControlResourceThemableDecorations): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
-    @scala.inline
-    def setFaded(value: Boolean): Self = StObject.set(x, "faded", value.asInstanceOf[js.Any])
+    inline def setFaded(value: Boolean): Self = StObject.set(x, "faded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadedUndefined: Self = StObject.set(x, "faded", js.undefined)
+    inline def setFadedUndefined: Self = StObject.set(x, "faded", js.undefined)
     
-    @scala.inline
-    def setLight(value: SourceControlResourceThemableDecorations): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: SourceControlResourceThemableDecorations): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
-    @scala.inline
-    def setStrikeThrough(value: Boolean): Self = StObject.set(x, "strikeThrough", value.asInstanceOf[js.Any])
+    inline def setStrikeThrough(value: Boolean): Self = StObject.set(x, "strikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeThroughUndefined: Self = StObject.set(x, "strikeThrough", js.undefined)
+    inline def setStrikeThroughUndefined: Self = StObject.set(x, "strikeThrough", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

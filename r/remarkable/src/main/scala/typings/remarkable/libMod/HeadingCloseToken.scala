@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object HeadingCloseToken {
   
-  @scala.inline
-  def apply(hLevel: HeadingValue, level: Double): HeadingCloseToken = {
+  inline def apply(hLevel: HeadingValue, level: Double): HeadingCloseToken = {
     val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("heading_close")
     __obj.asInstanceOf[HeadingCloseToken]
   }
   
-  @scala.inline
-  implicit class HeadingCloseTokenMutableBuilder[Self <: HeadingCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: HeadingCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: heading_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: heading_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

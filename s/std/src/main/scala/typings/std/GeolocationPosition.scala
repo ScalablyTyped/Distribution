@@ -12,19 +12,15 @@ trait GeolocationPosition extends StObject {
 }
 object GeolocationPosition {
   
-  @scala.inline
-  def apply(coords: GeolocationCoordinates, timestamp: Double): GeolocationPosition = {
+  inline def apply(coords: GeolocationCoordinates, timestamp: Double): GeolocationPosition = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationPosition]
   }
   
-  @scala.inline
-  implicit class GeolocationPositionMutableBuilder[Self <: GeolocationPosition] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationPosition](x: Self) {
     
-    @scala.inline
-    def setCoords(value: GeolocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: GeolocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

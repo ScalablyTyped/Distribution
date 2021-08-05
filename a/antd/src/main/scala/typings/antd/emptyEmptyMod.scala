@@ -11,6 +11,5 @@ object emptyEmptyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element]
+  inline def default(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element]
 }

@@ -16,25 +16,19 @@ trait ParseOpts
 }
 object ParseOpts {
   
-  @scala.inline
-  def apply(): ParseOpts = {
+  inline def apply(): ParseOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParseOpts]
   }
   
-  @scala.inline
-  implicit class ParseOptsMutableBuilder[Self <: ParseOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ParseOpts](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Boolean): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Boolean): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setTextOnlyMode(value: Boolean): Self = StObject.set(x, "textOnlyMode", value.asInstanceOf[js.Any])
+    inline def setTextOnlyMode(value: Boolean): Self = StObject.set(x, "textOnlyMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOnlyModeUndefined: Self = StObject.set(x, "textOnlyMode", js.undefined)
+    inline def setTextOnlyModeUndefined: Self = StObject.set(x, "textOnlyMode", js.undefined)
   }
 }

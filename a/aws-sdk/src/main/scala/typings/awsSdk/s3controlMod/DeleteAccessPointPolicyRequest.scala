@@ -18,19 +18,15 @@ trait DeleteAccessPointPolicyRequest extends StObject {
 }
 object DeleteAccessPointPolicyRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Name: AccessPointName): DeleteAccessPointPolicyRequest = {
+  inline def apply(AccountId: AccountId, Name: AccessPointName): DeleteAccessPointPolicyRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessPointPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccessPointPolicyRequestMutableBuilder[Self <: DeleteAccessPointPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccessPointPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

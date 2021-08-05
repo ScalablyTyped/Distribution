@@ -44,47 +44,34 @@ object mod {
   }
   object ReactImageFallbackProps {
     
-    @scala.inline
-    def apply(fallbackImage: String | ReactElement | (js.Array[ReactElement | String]), src: String): ReactImageFallbackProps = {
+    inline def apply(fallbackImage: String | ReactElement | (js.Array[ReactElement | String]), src: String): ReactImageFallbackProps = {
       val __obj = js.Dynamic.literal(fallbackImage = fallbackImage.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactImageFallbackProps]
     }
     
-    @scala.inline
-    implicit class ReactImageFallbackPropsMutableBuilder[Self <: ReactImageFallbackProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactImageFallbackProps](x: Self) {
       
-      @scala.inline
-      def setFallbackImage(value: String | ReactElement | (js.Array[ReactElement | String])): Self = StObject.set(x, "fallbackImage", value.asInstanceOf[js.Any])
+      inline def setFallbackImage(value: String | ReactElement | (js.Array[ReactElement | String])): Self = StObject.set(x, "fallbackImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackImageVarargs(value: (ReactElement | String)*): Self = StObject.set(x, "fallbackImage", js.Array(value :_*))
+      inline def setFallbackImageVarargs(value: (ReactElement | String)*): Self = StObject.set(x, "fallbackImage", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialImage(value: String | ReactElement): Self = StObject.set(x, "initialImage", value.asInstanceOf[js.Any])
+      inline def setInitialImage(value: String | ReactElement): Self = StObject.set(x, "initialImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialImageUndefined: Self = StObject.set(x, "initialImage", js.undefined)
+      inline def setInitialImageUndefined: Self = StObject.set(x, "initialImage", js.undefined)
       
-      @scala.inline
-      def setInitialTimeout(value: Double): Self = StObject.set(x, "initialTimeout", value.asInstanceOf[js.Any])
+      inline def setInitialTimeout(value: Double): Self = StObject.set(x, "initialTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTimeoutUndefined: Self = StObject.set(x, "initialTimeout", js.undefined)
+      inline def setInitialTimeoutUndefined: Self = StObject.set(x, "initialTimeout", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
 }

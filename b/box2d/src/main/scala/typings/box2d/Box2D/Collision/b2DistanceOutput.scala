@@ -29,25 +29,19 @@ trait b2DistanceOutput extends StObject {
 }
 object b2DistanceOutput {
   
-  @scala.inline
-  def apply(distance: Double, iterations: Double, pointA: b2Vec2, pointB: b2Vec2): b2DistanceOutput = {
+  inline def apply(distance: Double, iterations: Double, pointA: b2Vec2, pointB: b2Vec2): b2DistanceOutput = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], pointA = pointA.asInstanceOf[js.Any], pointB = pointB.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2DistanceOutput]
   }
   
-  @scala.inline
-  implicit class b2DistanceOutputMutableBuilder[Self <: b2DistanceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: b2DistanceOutput](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointA(value: b2Vec2): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
+    inline def setPointA(value: b2Vec2): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointB(value: b2Vec2): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
+    inline def setPointB(value: b2Vec2): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
   }
 }

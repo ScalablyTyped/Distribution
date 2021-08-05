@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SharedPCAllowedAccountType extends StObject
 object SharedPCAllowedAccountType {
   
-  @scala.inline
-  def domain: typings.microsoftGraph.microsoftGraphStrings.domain = "domain".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.domain]
+  inline def domain: typings.microsoftGraph.microsoftGraphStrings.domain = "domain".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.domain]
   
-  @scala.inline
-  def guest: typings.microsoftGraph.microsoftGraphStrings.guest = "guest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.guest]
+  inline def guest: typings.microsoftGraph.microsoftGraphStrings.guest = "guest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.guest]
 }

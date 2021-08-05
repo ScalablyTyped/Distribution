@@ -14,22 +14,17 @@ trait SchemaBuildBazelRemoteExecutionV2PriorityCapabilities extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2PriorityCapabilities {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2PriorityCapabilities = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2PriorityCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2PriorityCapabilities]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2PriorityCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2PriorityCapabilities](x: Self) {
     
-    @scala.inline
-    def setPriorities(value: js.Array[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]): Self = StObject.set(x, "priorities", value.asInstanceOf[js.Any])
+    inline def setPriorities(value: js.Array[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]): Self = StObject.set(x, "priorities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrioritiesUndefined: Self = StObject.set(x, "priorities", js.undefined)
+    inline def setPrioritiesUndefined: Self = StObject.set(x, "priorities", js.undefined)
     
-    @scala.inline
-    def setPrioritiesVarargs(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = StObject.set(x, "priorities", js.Array(value :_*))
+    inline def setPrioritiesVarargs(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = StObject.set(x, "priorities", js.Array(value :_*))
   }
 }

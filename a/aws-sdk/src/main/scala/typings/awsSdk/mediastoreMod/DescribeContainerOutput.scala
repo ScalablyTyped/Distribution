@@ -13,19 +13,15 @@ trait DescribeContainerOutput extends StObject {
 }
 object DescribeContainerOutput {
   
-  @scala.inline
-  def apply(): DescribeContainerOutput = {
+  inline def apply(): DescribeContainerOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeContainerOutput]
   }
   
-  @scala.inline
-  implicit class DescribeContainerOutputMutableBuilder[Self <: DescribeContainerOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContainerOutput](x: Self) {
     
-    @scala.inline
-    def setContainer(value: Container): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Container): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
   }
 }

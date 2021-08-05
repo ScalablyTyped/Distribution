@@ -98,8 +98,7 @@ object blocksMod {
   @js.native
   val IconItem: FunctionComponent[IconItemProps] = js.native
   
-  @scala.inline
-  def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
+  inline def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
   
   /**
     * A preview component for showing one or more component `Story`

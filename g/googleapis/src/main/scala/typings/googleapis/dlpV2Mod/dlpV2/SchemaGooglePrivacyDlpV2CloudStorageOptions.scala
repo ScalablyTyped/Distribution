@@ -49,52 +49,37 @@ trait SchemaGooglePrivacyDlpV2CloudStorageOptions extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CloudStorageOptions {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CloudStorageOptions = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CloudStorageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CloudStorageOptions]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CloudStorageOptionsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CloudStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CloudStorageOptions](x: Self) {
     
-    @scala.inline
-    def setBytesLimitPerFile(value: String): Self = StObject.set(x, "bytesLimitPerFile", value.asInstanceOf[js.Any])
+    inline def setBytesLimitPerFile(value: String): Self = StObject.set(x, "bytesLimitPerFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesLimitPerFilePercent(value: Double): Self = StObject.set(x, "bytesLimitPerFilePercent", value.asInstanceOf[js.Any])
+    inline def setBytesLimitPerFilePercent(value: Double): Self = StObject.set(x, "bytesLimitPerFilePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesLimitPerFilePercentUndefined: Self = StObject.set(x, "bytesLimitPerFilePercent", js.undefined)
+    inline def setBytesLimitPerFilePercentUndefined: Self = StObject.set(x, "bytesLimitPerFilePercent", js.undefined)
     
-    @scala.inline
-    def setBytesLimitPerFileUndefined: Self = StObject.set(x, "bytesLimitPerFile", js.undefined)
+    inline def setBytesLimitPerFileUndefined: Self = StObject.set(x, "bytesLimitPerFile", js.undefined)
     
-    @scala.inline
-    def setFileSet(value: SchemaGooglePrivacyDlpV2FileSet): Self = StObject.set(x, "fileSet", value.asInstanceOf[js.Any])
+    inline def setFileSet(value: SchemaGooglePrivacyDlpV2FileSet): Self = StObject.set(x, "fileSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSetUndefined: Self = StObject.set(x, "fileSet", js.undefined)
+    inline def setFileSetUndefined: Self = StObject.set(x, "fileSet", js.undefined)
     
-    @scala.inline
-    def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+    inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+    inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
-    @scala.inline
-    def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setFilesLimitPercent(value: Double): Self = StObject.set(x, "filesLimitPercent", value.asInstanceOf[js.Any])
+    inline def setFilesLimitPercent(value: Double): Self = StObject.set(x, "filesLimitPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesLimitPercentUndefined: Self = StObject.set(x, "filesLimitPercent", js.undefined)
+    inline def setFilesLimitPercentUndefined: Self = StObject.set(x, "filesLimitPercent", js.undefined)
     
-    @scala.inline
-    def setSampleMethod(value: String): Self = StObject.set(x, "sampleMethod", value.asInstanceOf[js.Any])
+    inline def setSampleMethod(value: String): Self = StObject.set(x, "sampleMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleMethodUndefined: Self = StObject.set(x, "sampleMethod", js.undefined)
+    inline def setSampleMethodUndefined: Self = StObject.set(x, "sampleMethod", js.undefined)
   }
 }

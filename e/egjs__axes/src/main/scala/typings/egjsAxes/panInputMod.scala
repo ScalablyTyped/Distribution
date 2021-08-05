@@ -20,7 +20,7 @@ object panInputMod {
     def this(el: String, options: PanInputOption) = this()
     def this(el: HTMLElement, options: PanInputOption) = this()
     
-    var _direction: js.Any = js.native
+    /* private */ var _direction: js.Any = js.native
     
     /* private */ def attachEvent(observer: js.Any): js.Any = js.native
     
@@ -55,7 +55,7 @@ object panInputMod {
     /* CompleteClass */
     override def mapAxes(axes: js.Array[String]): js.Any = js.native
     
-    var observer: js.Any = js.native
+    /* private */ var observer: js.Any = js.native
     
     /* private */ def onHammerInput(event: js.Any): js.Any = js.native
     
@@ -72,16 +72,12 @@ object panInputMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDirectionByAngle(angle: Double, thresholdAngle: Double): DIRECTION = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectionByAngle")(angle.asInstanceOf[js.Any], thresholdAngle.asInstanceOf[js.Any])).asInstanceOf[DIRECTION]
+    inline def getDirectionByAngle(angle: Double, thresholdAngle: Double): DIRECTION = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectionByAngle")(angle.asInstanceOf[js.Any], thresholdAngle.asInstanceOf[js.Any])).asInstanceOf[DIRECTION]
     
-    @scala.inline
-    def getNextOffset(speeds: js.Array[Double], deceleration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextOffset")(speeds.asInstanceOf[js.Any], deceleration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def getNextOffset(speeds: js.Array[Double], deceleration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextOffset")(speeds.asInstanceOf[js.Any], deceleration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @scala.inline
-    def useDirection(checkType: DIRECTION, direction: DIRECTION): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useDirection")(checkType.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def useDirection(checkType: DIRECTION, direction: DIRECTION, userDirection: DIRECTION): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useDirection")(checkType.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], userDirection.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def useDirection(checkType: DIRECTION, direction: DIRECTION): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useDirection")(checkType.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def useDirection(checkType: DIRECTION, direction: DIRECTION, userDirection: DIRECTION): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useDirection")(checkType.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], userDirection.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   trait PanInputOption extends StObject {
@@ -96,44 +92,32 @@ object panInputMod {
   }
   object PanInputOption {
     
-    @scala.inline
-    def apply(): PanInputOption = {
+    inline def apply(): PanInputOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PanInputOption]
     }
     
-    @scala.inline
-    implicit class PanInputOptionMutableBuilder[Self <: PanInputOption] (val x: Self) extends AnyVal {
+    extension [Self <: PanInputOption](x: Self) {
       
-      @scala.inline
-      def setInputType(value: js.Array[String]): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+      inline def setInputType(value: js.Array[String]): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+      inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
       
-      @scala.inline
-      def setInputTypeVarargs(value: String*): Self = StObject.set(x, "inputType", js.Array(value :_*))
+      inline def setInputTypeVarargs(value: String*): Self = StObject.set(x, "inputType", js.Array(value :_*))
       
-      @scala.inline
-      def setScale(value: js.Array[Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: js.Array[Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value :_*))
+      inline def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value :_*))
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdAngle(value: Double): Self = StObject.set(x, "thresholdAngle", value.asInstanceOf[js.Any])
+      inline def setThresholdAngle(value: Double): Self = StObject.set(x, "thresholdAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdAngleUndefined: Self = StObject.set(x, "thresholdAngle", js.undefined)
+      inline def setThresholdAngleUndefined: Self = StObject.set(x, "thresholdAngle", js.undefined)
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

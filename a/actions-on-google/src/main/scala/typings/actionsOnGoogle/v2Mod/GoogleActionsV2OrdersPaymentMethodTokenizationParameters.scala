@@ -51,25 +51,19 @@ trait GoogleActionsV2OrdersPaymentMethodTokenizationParameters extends StObject 
 }
 object GoogleActionsV2OrdersPaymentMethodTokenizationParameters {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersPaymentMethodTokenizationParameters = {
+  inline def apply(): GoogleActionsV2OrdersPaymentMethodTokenizationParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentMethodTokenizationParameters]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersPaymentMethodTokenizationParametersMutableBuilder[Self <: GoogleActionsV2OrdersPaymentMethodTokenizationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersPaymentMethodTokenizationParameters](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ApiClientObjectMap[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ApiClientObjectMap[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setTokenizationType(value: GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType): Self = StObject.set(x, "tokenizationType", value.asInstanceOf[js.Any])
+    inline def setTokenizationType(value: GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType): Self = StObject.set(x, "tokenizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenizationTypeUndefined: Self = StObject.set(x, "tokenizationType", js.undefined)
+    inline def setTokenizationTypeUndefined: Self = StObject.set(x, "tokenizationType", js.undefined)
   }
 }

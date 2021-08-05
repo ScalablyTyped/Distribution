@@ -12,19 +12,15 @@ trait TextAlignString extends StObject {
 }
 object TextAlignString {
   
-  @scala.inline
-  def apply(fontSize: Double, textAlign: String): TextAlignString = {
+  inline def apply(fontSize: Double, textAlign: String): TextAlignString = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAlignString]
   }
   
-  @scala.inline
-  implicit class TextAlignStringMutableBuilder[Self <: TextAlignString] (val x: Self) extends AnyVal {
+  extension [Self <: TextAlignString](x: Self) {
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }
 }

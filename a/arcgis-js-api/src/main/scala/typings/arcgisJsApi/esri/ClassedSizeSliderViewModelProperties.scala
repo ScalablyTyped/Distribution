@@ -17,22 +17,17 @@ trait ClassedSizeSliderViewModelProperties
 }
 object ClassedSizeSliderViewModelProperties {
   
-  @scala.inline
-  def apply(): ClassedSizeSliderViewModelProperties = {
+  inline def apply(): ClassedSizeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassedSizeSliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class ClassedSizeSliderViewModelPropertiesMutableBuilder[Self <: ClassedSizeSliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedSizeSliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setBreaks(value: js.Array[ClassedSizeSliderViewModelBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    inline def setBreaks(value: js.Array[ClassedSizeSliderViewModelBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+    inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    @scala.inline
-    def setBreaksVarargs(value: ClassedSizeSliderViewModelBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
+    inline def setBreaksVarargs(value: ClassedSizeSliderViewModelBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
   }
 }

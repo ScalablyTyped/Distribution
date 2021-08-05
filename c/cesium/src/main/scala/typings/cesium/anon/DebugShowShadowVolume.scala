@@ -29,76 +29,53 @@ trait DebugShowShadowVolume extends StObject {
 }
 object DebugShowShadowVolume {
   
-  @scala.inline
-  def apply(): DebugShowShadowVolume = {
+  inline def apply(): DebugShowShadowVolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugShowShadowVolume]
   }
   
-  @scala.inline
-  implicit class DebugShowShadowVolumeMutableBuilder[Self <: DebugShowShadowVolume] (val x: Self) extends AnyVal {
+  extension [Self <: DebugShowShadowVolume](x: Self) {
     
-    @scala.inline
-    def setAllowPicking(value: Boolean): Self = StObject.set(x, "allowPicking", value.asInstanceOf[js.Any])
+    inline def setAllowPicking(value: Boolean): Self = StObject.set(x, "allowPicking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPickingUndefined: Self = StObject.set(x, "allowPicking", js.undefined)
+    inline def setAllowPickingUndefined: Self = StObject.set(x, "allowPicking", js.undefined)
     
-    @scala.inline
-    def setAppearance(value: typings.cesium.mod.Appearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: typings.cesium.mod.Appearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+    inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
-    @scala.inline
-    def setAsynchronous(value: Boolean): Self = StObject.set(x, "asynchronous", value.asInstanceOf[js.Any])
+    inline def setAsynchronous(value: Boolean): Self = StObject.set(x, "asynchronous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsynchronousUndefined: Self = StObject.set(x, "asynchronous", js.undefined)
+    inline def setAsynchronousUndefined: Self = StObject.set(x, "asynchronous", js.undefined)
     
-    @scala.inline
-    def setClassificationType(value: typings.cesium.mod.ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
+    inline def setClassificationType(value: typings.cesium.mod.ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
+    inline def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
     
-    @scala.inline
-    def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
+    inline def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
+    inline def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
     
-    @scala.inline
-    def setDebugShowShadowVolume(value: Boolean): Self = StObject.set(x, "debugShowShadowVolume", value.asInstanceOf[js.Any])
+    inline def setDebugShowShadowVolume(value: Boolean): Self = StObject.set(x, "debugShowShadowVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugShowShadowVolumeUndefined: Self = StObject.set(x, "debugShowShadowVolume", js.undefined)
+    inline def setDebugShowShadowVolumeUndefined: Self = StObject.set(x, "debugShowShadowVolume", js.undefined)
     
-    @scala.inline
-    def setGeometryInstances(value: js.Array[GeometryInstance] | GeometryInstance): Self = StObject.set(x, "geometryInstances", value.asInstanceOf[js.Any])
+    inline def setGeometryInstances(value: js.Array[GeometryInstance] | GeometryInstance): Self = StObject.set(x, "geometryInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryInstancesUndefined: Self = StObject.set(x, "geometryInstances", js.undefined)
+    inline def setGeometryInstancesUndefined: Self = StObject.set(x, "geometryInstances", js.undefined)
     
-    @scala.inline
-    def setGeometryInstancesVarargs(value: GeometryInstance*): Self = StObject.set(x, "geometryInstances", js.Array(value :_*))
+    inline def setGeometryInstancesVarargs(value: GeometryInstance*): Self = StObject.set(x, "geometryInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setInterleave(value: Boolean): Self = StObject.set(x, "interleave", value.asInstanceOf[js.Any])
+    inline def setInterleave(value: Boolean): Self = StObject.set(x, "interleave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterleaveUndefined: Self = StObject.set(x, "interleave", js.undefined)
+    inline def setInterleaveUndefined: Self = StObject.set(x, "interleave", js.undefined)
     
-    @scala.inline
-    def setReleaseGeometryInstances(value: Boolean): Self = StObject.set(x, "releaseGeometryInstances", value.asInstanceOf[js.Any])
+    inline def setReleaseGeometryInstances(value: Boolean): Self = StObject.set(x, "releaseGeometryInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseGeometryInstancesUndefined: Self = StObject.set(x, "releaseGeometryInstances", js.undefined)
+    inline def setReleaseGeometryInstancesUndefined: Self = StObject.set(x, "releaseGeometryInstances", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

@@ -79,6 +79,5 @@ object Dot {
   val CATEGORY: String = js.native
   
   /* static member */
-  @scala.inline
-  def format(dots: Double, state: Leftshift): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dots.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def format(dots: Double, state: Leftshift): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dots.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

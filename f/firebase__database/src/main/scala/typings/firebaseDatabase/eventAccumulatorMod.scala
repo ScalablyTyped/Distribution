@@ -22,11 +22,11 @@ object eventAccumulatorMod {
     
     def onEvent(cb: js.Function): Unit = js.native
     
-    var onEventFxn: js.Any = js.native
+    /* private */ var onEventFxn: js.Any = js.native
     
     def onReset(cb: js.Function): Unit = js.native
     
-    var onResetFxn: js.Any = js.native
+    /* private */ var onResetFxn: js.Any = js.native
     
     var promise: js.Any = js.native
     
@@ -44,7 +44,6 @@ object eventAccumulatorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def waitsForCount(maxCount: js.Any): EventAccumulator = ^.asInstanceOf[js.Dynamic].applyDynamic("waitsForCount")(maxCount.asInstanceOf[js.Any]).asInstanceOf[EventAccumulator]
+    inline def waitsForCount(maxCount: js.Any): EventAccumulator = ^.asInstanceOf[js.Dynamic].applyDynamic("waitsForCount")(maxCount.asInstanceOf[js.Any]).asInstanceOf[EventAccumulator]
   }
 }

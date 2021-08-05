@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(logger: typings.bunyan.mod.^): Plugin = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[Plugin]
-  @scala.inline
-  def apply(logger: typings.bunyan.mod.^, requestId: String): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[Plugin]
-  @scala.inline
-  def apply(logger: typings.bunyan.mod.^, requestId: String, extra: js.Object): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Plugin]
-  @scala.inline
-  def apply(logger: typings.bunyan.mod.^, requestId: Unit, extra: js.Object): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Plugin]
+  inline def apply(logger: typings.bunyan.mod.^): Plugin = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(logger: typings.bunyan.mod.^, requestId: String): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[Plugin]
+  inline def apply(logger: typings.bunyan.mod.^, requestId: String, extra: js.Object): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Plugin]
+  inline def apply(logger: typings.bunyan.mod.^, requestId: Unit, extra: js.Object): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Plugin]
   
   @JSImport("superagent-bunyan", JSImport.Namespace)
   @js.native

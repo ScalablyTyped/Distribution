@@ -13,16 +13,13 @@ trait ResponsePartitionKey extends StObject {
 }
 object ResponsePartitionKey {
   
-  @scala.inline
-  def apply(Dimensions: DimensionMap): ResponsePartitionKey = {
+  inline def apply(Dimensions: DimensionMap): ResponsePartitionKey = {
     val __obj = js.Dynamic.literal(Dimensions = Dimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsePartitionKey]
   }
   
-  @scala.inline
-  implicit class ResponsePartitionKeyMutableBuilder[Self <: ResponsePartitionKey] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsePartitionKey](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
   }
 }

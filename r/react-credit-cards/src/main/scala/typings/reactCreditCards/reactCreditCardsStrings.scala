@@ -11,27 +11,23 @@ object reactCreditCardsStrings {
   sealed trait cvc
     extends StObject
        with Focused
-  @scala.inline
-  def cvc: cvc = "cvc".asInstanceOf[cvc]
+  inline def cvc: cvc = "cvc".asInstanceOf[cvc]
   
   @js.native
   sealed trait expiry
     extends StObject
        with Focused
-  @scala.inline
-  def expiry: expiry = "expiry".asInstanceOf[expiry]
+  inline def expiry: expiry = "expiry".asInstanceOf[expiry]
   
   @js.native
   sealed trait name
     extends StObject
        with Focused
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait number
     extends StObject
        with Focused
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
 }

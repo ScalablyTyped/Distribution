@@ -15,8 +15,7 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.addEventListener */ js.Any,
     document: Document,
     removeEventListener: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.removeEventListener */ js.Any
@@ -25,19 +24,15 @@ object Environment {
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(
+    inline def setAddEventListener(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.addEventListener */ js.Any
     ): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(
+    inline def setRemoveEventListener(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.removeEventListener */ js.Any
     ): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
   }

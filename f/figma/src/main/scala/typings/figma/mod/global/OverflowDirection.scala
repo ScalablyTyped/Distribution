@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OverflowDirection extends StObject
 object OverflowDirection {
   
-  @scala.inline
-  def BOTH: typings.figma.figmaStrings.BOTH = "BOTH".asInstanceOf[typings.figma.figmaStrings.BOTH]
+  inline def BOTH: typings.figma.figmaStrings.BOTH = "BOTH".asInstanceOf[typings.figma.figmaStrings.BOTH]
   
-  @scala.inline
-  def HORIZONTAL: typings.figma.figmaStrings.HORIZONTAL = "HORIZONTAL".asInstanceOf[typings.figma.figmaStrings.HORIZONTAL]
+  inline def HORIZONTAL: typings.figma.figmaStrings.HORIZONTAL = "HORIZONTAL".asInstanceOf[typings.figma.figmaStrings.HORIZONTAL]
   
-  @scala.inline
-  def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
+  inline def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
   
-  @scala.inline
-  def VERTICAL: typings.figma.figmaStrings.VERTICAL = "VERTICAL".asInstanceOf[typings.figma.figmaStrings.VERTICAL]
+  inline def VERTICAL: typings.figma.figmaStrings.VERTICAL = "VERTICAL".asInstanceOf[typings.figma.figmaStrings.VERTICAL]
 }

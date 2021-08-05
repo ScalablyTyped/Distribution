@@ -518,32 +518,24 @@ object mod extends Shortcut {
   }
   object CommandOptions {
     
-    @scala.inline
-    def apply(): CommandOptions = {
+    inline def apply(): CommandOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandOptions]
     }
     
-    @scala.inline
-    implicit class CommandOptionsMutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommandOptions](x: Self) {
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+      inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+      inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
       
-      @scala.inline
-      def setNoHelp(value: Boolean): Self = StObject.set(x, "noHelp", value.asInstanceOf[js.Any])
+      inline def setNoHelp(value: Boolean): Self = StObject.set(x, "noHelp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoHelpUndefined: Self = StObject.set(x, "noHelp", js.undefined)
+      inline def setNoHelpUndefined: Self = StObject.set(x, "noHelp", js.undefined)
     }
   }
   
@@ -559,26 +551,20 @@ object mod extends Shortcut {
   }
   object CommanderError {
     
-    @scala.inline
-    def apply(code: String, exitCode: Double, message: String, name: String): CommanderError = {
+    inline def apply(code: String, exitCode: Double, message: String, name: String): CommanderError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], exitCode = exitCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommanderError]
     }
     
-    @scala.inline
-    implicit class CommanderErrorMutableBuilder[Self <: CommanderError] (val x: Self) extends AnyVal {
+    extension [Self <: CommanderError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+      inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedError(value: String): Self = StObject.set(x, "nestedError", value.asInstanceOf[js.Any])
+      inline def setNestedError(value: String): Self = StObject.set(x, "nestedError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedErrorUndefined: Self = StObject.set(x, "nestedError", js.undefined)
+      inline def setNestedErrorUndefined: Self = StObject.set(x, "nestedError", js.undefined)
     }
   }
   
@@ -606,20 +592,16 @@ object mod extends Shortcut {
   }
   object ExecutableCommandOptions {
     
-    @scala.inline
-    def apply(): ExecutableCommandOptions = {
+    inline def apply(): ExecutableCommandOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecutableCommandOptions]
     }
     
-    @scala.inline
-    implicit class ExecutableCommandOptionsMutableBuilder[Self <: ExecutableCommandOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExecutableCommandOptions](x: Self) {
       
-      @scala.inline
-      def setExecutableFile(value: String): Self = StObject.set(x, "executableFile", value.asInstanceOf[js.Any])
+      inline def setExecutableFile(value: String): Self = StObject.set(x, "executableFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutableFileUndefined: Self = StObject.set(x, "executableFile", js.undefined)
+      inline def setExecutableFileUndefined: Self = StObject.set(x, "executableFile", js.undefined)
     }
   }
   
@@ -646,8 +628,7 @@ object mod extends Shortcut {
   }
   object Option {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bool: Boolean,
       description: String,
       flags: String,
@@ -660,35 +641,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+      inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+      inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     }
   }
   
@@ -700,17 +671,14 @@ object mod extends Shortcut {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(from: node | electron | user): ParseOptions = {
+    inline def apply(from: node | electron | user): ParseOptions = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setFrom(value: node | electron | user): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: node | electron | user): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
   }
   
@@ -722,26 +690,20 @@ object mod extends Shortcut {
   }
   object ParseOptionsResult {
     
-    @scala.inline
-    def apply(operands: js.Array[String], unknown: js.Array[String]): ParseOptionsResult = {
+    inline def apply(operands: js.Array[String], unknown: js.Array[String]): ParseOptionsResult = {
       val __obj = js.Dynamic.literal(operands = operands.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseOptionsResult]
     }
     
-    @scala.inline
-    implicit class ParseOptionsResultMutableBuilder[Self <: ParseOptionsResult] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptionsResult](x: Self) {
       
-      @scala.inline
-      def setOperands(value: js.Array[String]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+      inline def setOperands(value: js.Array[String]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperandsVarargs(value: String*): Self = StObject.set(x, "operands", js.Array(value :_*))
+      inline def setOperandsVarargs(value: String*): Self = StObject.set(x, "operands", js.Array(value :_*))
       
-      @scala.inline
-      def setUnknown(value: js.Array[String]): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+      inline def setUnknown(value: js.Array[String]): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownVarargs(value: String*): Self = StObject.set(x, "unknown", js.Array(value :_*))
+      inline def setUnknownVarargs(value: String*): Self = StObject.set(x, "unknown", js.Array(value :_*))
     }
   }
   

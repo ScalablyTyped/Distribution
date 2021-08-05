@@ -39,6 +39,5 @@ object ContainerResult {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(containerXml: js.Any): ContainerResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(containerXml.asInstanceOf[js.Any]).asInstanceOf[ContainerResult]
+  inline def parse(containerXml: js.Any): ContainerResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(containerXml.asInstanceOf[js.Any]).asInstanceOf[ContainerResult]
 }

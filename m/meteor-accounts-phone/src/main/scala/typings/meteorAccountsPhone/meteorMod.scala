@@ -12,13 +12,9 @@ object meteorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def loginWithPhoneAndPassword(selector: String, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def loginWithPhoneAndPassword(selector: String, password: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def loginWithPhoneAndPassword(selector: js.Object, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def loginWithPhoneAndPassword(selector: js.Object, password: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loginWithPhoneAndPassword(selector: String, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loginWithPhoneAndPassword(selector: String, password: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loginWithPhoneAndPassword(selector: js.Object, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loginWithPhoneAndPassword(selector: js.Object, password: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

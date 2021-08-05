@@ -55,8 +55,7 @@ object FloatType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[FloatType]
+  inline def create(model: IModel): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -67,8 +66,7 @@ object FloatType {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  @scala.inline
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
+  inline def createInBasicParameterTypeUnderType(container: BasicParameterType): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -79,8 +77,7 @@ object FloatType {
     *  6.6.0 to 6.6.0
     */
   /* static member */
-  @scala.inline
-  def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
+  inline def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -91,20 +88,17 @@ object FloatType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @scala.inline
-  def createInJavaActionUnderJavaReturnType(container: JavaAction): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
+  inline def createInJavaActionUnderJavaReturnType(container: JavaAction): FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[FloatType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.FloatType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.FloatType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -13,8 +13,7 @@ trait DownloadOperation
      with IDownloadOperation
 object DownloadOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachAsync: () => IAsyncOperationWithProgress[DownloadOperation, DownloadOperation],
     costPolicy: BackgroundTransferCostPolicy,
     getResponseInformation: () => ResponseInformation,

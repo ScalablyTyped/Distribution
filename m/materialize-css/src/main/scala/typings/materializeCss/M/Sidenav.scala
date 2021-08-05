@@ -35,28 +35,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Sidenav {
   
-  @scala.inline
-  def apply(close: () => Unit, isDragged: Boolean, isFixed: Boolean, isOpen: Boolean, open: () => Unit): Sidenav = {
+  inline def apply(close: () => Unit, isDragged: Boolean, isFixed: Boolean, isOpen: Boolean, open: () => Unit): Sidenav = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isDragged = isDragged.asInstanceOf[js.Any], isFixed = isFixed.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[Sidenav]
   }
   
-  @scala.inline
-  implicit class SidenavMutableBuilder[Self <: Sidenav] (val x: Self) extends AnyVal {
+  extension [Self <: Sidenav](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
+    inline def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

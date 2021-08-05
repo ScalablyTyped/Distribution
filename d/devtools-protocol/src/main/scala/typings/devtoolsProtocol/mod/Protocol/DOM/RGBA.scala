@@ -29,28 +29,21 @@ trait RGBA extends StObject {
 }
 object RGBA {
   
-  @scala.inline
-  def apply(b: integer, g: integer, r: integer): RGBA = {
+  inline def apply(b: integer, g: integer, r: integer): RGBA = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[RGBA]
   }
   
-  @scala.inline
-  implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
+  extension [Self <: RGBA](x: Self) {
     
-    @scala.inline
-    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
-    @scala.inline
-    def setB(value: integer): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: integer): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: integer): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: integer): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: integer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: integer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

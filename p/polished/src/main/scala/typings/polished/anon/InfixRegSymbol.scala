@@ -15,22 +15,17 @@ trait InfixRegSymbol extends StObject {
 }
 object InfixRegSymbol {
   
-  @scala.inline
-  def apply(infix: PrecedenceRightToLeft): InfixRegSymbol = {
+  inline def apply(infix: PrecedenceRightToLeft): InfixRegSymbol = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = ",", symbol = ",")
     __obj.asInstanceOf[InfixRegSymbol]
   }
   
-  @scala.inline
-  implicit class InfixRegSymbolMutableBuilder[Self <: InfixRegSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: InfixRegSymbol](x: Self) {
     
-    @scala.inline
-    def setInfix(value: PrecedenceRightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: PrecedenceRightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: Comma): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: Comma): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Comma): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Comma): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

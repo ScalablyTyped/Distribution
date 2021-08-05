@@ -15,7 +15,7 @@ class IonApp protected ()
      with typings.ionicCore.componentsMod.Components.IonApp {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

@@ -12,19 +12,15 @@ trait TestSummaryForWorkItem extends StObject {
 }
 object TestSummaryForWorkItem {
   
-  @scala.inline
-  def apply(summary: AggregatedDataForResultTrend, workItem: WorkItemReference): TestSummaryForWorkItem = {
+  inline def apply(summary: AggregatedDataForResultTrend, workItem: WorkItemReference): TestSummaryForWorkItem = {
     val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any], workItem = workItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSummaryForWorkItem]
   }
   
-  @scala.inline
-  implicit class TestSummaryForWorkItemMutableBuilder[Self <: TestSummaryForWorkItem] (val x: Self) extends AnyVal {
+  extension [Self <: TestSummaryForWorkItem](x: Self) {
     
-    @scala.inline
-    def setSummary(value: AggregatedDataForResultTrend): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: AggregatedDataForResultTrend): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItem(value: WorkItemReference): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
+    inline def setWorkItem(value: WorkItemReference): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
   }
 }

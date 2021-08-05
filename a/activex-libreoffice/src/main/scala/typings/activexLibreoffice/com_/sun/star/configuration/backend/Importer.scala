@@ -19,8 +19,7 @@ trait Importer
      with XInitialization
 object Importer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TargetBackend: XBackend,
     acquire: () => Unit,
     getTargetBackend: () => XBackend,

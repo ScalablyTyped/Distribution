@@ -23,31 +23,23 @@ trait SeverityUpdate extends StObject {
 }
 object SeverityUpdate {
   
-  @scala.inline
-  def apply(): SeverityUpdate = {
+  inline def apply(): SeverityUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeverityUpdate]
   }
   
-  @scala.inline
-  implicit class SeverityUpdateMutableBuilder[Self <: SeverityUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SeverityUpdate](x: Self) {
     
-    @scala.inline
-    def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setNormalized(value: RatioScale): Self = StObject.set(x, "Normalized", value.asInstanceOf[js.Any])
+    inline def setNormalized(value: RatioScale): Self = StObject.set(x, "Normalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedUndefined: Self = StObject.set(x, "Normalized", js.undefined)
+    inline def setNormalizedUndefined: Self = StObject.set(x, "Normalized", js.undefined)
     
-    @scala.inline
-    def setProduct(value: Double): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: Double): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait XUIConfigurationListener
 }
 object XUIConfigurationListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     elementInserted: ConfigurationEvent => Unit,
@@ -49,16 +48,12 @@ object XUIConfigurationListener {
     __obj.asInstanceOf[XUIConfigurationListener]
   }
   
-  @scala.inline
-  implicit class XUIConfigurationListenerMutableBuilder[Self <: XUIConfigurationListener] (val x: Self) extends AnyVal {
+  extension [Self <: XUIConfigurationListener](x: Self) {
     
-    @scala.inline
-    def setElementInserted(value: ConfigurationEvent => Unit): Self = StObject.set(x, "elementInserted", js.Any.fromFunction1(value))
+    inline def setElementInserted(value: ConfigurationEvent => Unit): Self = StObject.set(x, "elementInserted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementRemoved(value: ConfigurationEvent => Unit): Self = StObject.set(x, "elementRemoved", js.Any.fromFunction1(value))
+    inline def setElementRemoved(value: ConfigurationEvent => Unit): Self = StObject.set(x, "elementRemoved", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementReplaced(value: ConfigurationEvent => Unit): Self = StObject.set(x, "elementReplaced", js.Any.fromFunction1(value))
+    inline def setElementReplaced(value: ConfigurationEvent => Unit): Self = StObject.set(x, "elementReplaced", js.Any.fromFunction1(value))
   }
 }

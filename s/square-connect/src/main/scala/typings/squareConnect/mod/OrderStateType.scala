@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrderStateType extends StObject
 object OrderStateType {
   
-  @scala.inline
-  def CANCELED: typings.squareConnect.squareConnectStrings.CANCELED = "CANCELED".asInstanceOf[typings.squareConnect.squareConnectStrings.CANCELED]
+  inline def CANCELED: typings.squareConnect.squareConnectStrings.CANCELED = "CANCELED".asInstanceOf[typings.squareConnect.squareConnectStrings.CANCELED]
   
-  @scala.inline
-  def COMPLETED: typings.squareConnect.squareConnectStrings.COMPLETED = "COMPLETED".asInstanceOf[typings.squareConnect.squareConnectStrings.COMPLETED]
+  inline def COMPLETED: typings.squareConnect.squareConnectStrings.COMPLETED = "COMPLETED".asInstanceOf[typings.squareConnect.squareConnectStrings.COMPLETED]
   
-  @scala.inline
-  def OPEN: typings.squareConnect.squareConnectStrings.OPEN = "OPEN".asInstanceOf[typings.squareConnect.squareConnectStrings.OPEN]
+  inline def OPEN: typings.squareConnect.squareConnectStrings.OPEN = "OPEN".asInstanceOf[typings.squareConnect.squareConnectStrings.OPEN]
 }

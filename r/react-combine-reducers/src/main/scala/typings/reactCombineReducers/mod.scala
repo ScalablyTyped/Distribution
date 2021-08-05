@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[R /* <: Reducer[js.Any, js.Any] */](
+  inline def apply[R /* <: Reducer[js.Any, js.Any] */](
     reducers: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof react.react.ReducerState<R> ]: [react.react.Reducer<react.react.ReducerState<R>[K], any>, react.react.ReducerState<R>[K]]}
     */ typings.reactCombineReducers.reactCombineReducersStrings.^ & TopLevel[js.Any]

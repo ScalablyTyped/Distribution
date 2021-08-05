@@ -33,46 +33,32 @@ object internalActionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def activityTick(hasIdIncrement: Increment): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("activityTick")(hasIdIncrement.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
+  inline def activityTick(hasIdIncrement: Increment): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("activityTick")(hasIdIncrement.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
   
-  @scala.inline
-  def createLog(
+  inline def createLog(
     hasLevelTextStatusTextDurationGroupCodeTypeCategoryFilePathLocationDocsUrlContextActivity_currentActivity_totalActivity_typeActivity_uuidStackPluginName: Activitytotal
   ): ICreateLog = ^.asInstanceOf[js.Dynamic].applyDynamic("createLog")(hasLevelTextStatusTextDurationGroupCodeTypeCategoryFilePathLocationDocsUrlContextActivity_currentActivity_totalActivity_typeActivity_uuidStackPluginName.asInstanceOf[js.Any]).asInstanceOf[ICreateLog]
   
-  @scala.inline
-  def createPendingActivity(hasIdStatus: Id): ActionsToEmit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPendingActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[ActionsToEmit]
+  inline def createPendingActivity(hasIdStatus: Id): ActionsToEmit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPendingActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[ActionsToEmit]
   
-  @scala.inline
-  def endActivity(hasIdStatus: Status): QueuedEndActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("endActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[QueuedEndActivity | Null]
+  inline def endActivity(hasIdStatus: Status): QueuedEndActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("endActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[QueuedEndActivity | Null]
   
-  @scala.inline
-  def setActivityErrored(hasId: IdString): IActivityErrored | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityErrored")(hasId.asInstanceOf[js.Any]).asInstanceOf[IActivityErrored | Null]
+  inline def setActivityErrored(hasId: IdString): IActivityErrored | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityErrored")(hasId.asInstanceOf[js.Any]).asInstanceOf[IActivityErrored | Null]
   
-  @scala.inline
-  def setActivityStatusText(hasIdStatusText: IdStatusText): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityStatusText")(hasIdStatusText.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
+  inline def setActivityStatusText(hasIdStatusText: IdStatusText): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityStatusText")(hasIdStatusText.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
   
-  @scala.inline
-  def setActivityTotal(hasIdTotal: Total): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityTotal")(hasIdTotal.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
+  inline def setActivityTotal(hasIdTotal: Total): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityTotal")(hasIdTotal.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
   
-  @scala.inline
-  def setLogs(logs: IGatsbyCLIState): ISetLogs = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogs")(logs.asInstanceOf[js.Any]).asInstanceOf[ISetLogs]
+  inline def setLogs(logs: IGatsbyCLIState): ISetLogs = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogs")(logs.asInstanceOf[js.Any]).asInstanceOf[ISetLogs]
   
-  @scala.inline
-  def setStatus(status: ActivityStatuses): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
-  @scala.inline
-  def setStatus(status: ActivityStatuses, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
-  @scala.inline
-  def setStatus(status: _empty): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
-  @scala.inline
-  def setStatus(status: _empty, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
+  inline def setStatus(status: ActivityStatuses): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
+  inline def setStatus(status: ActivityStatuses, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
+  inline def setStatus(status: _empty): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
+  inline def setStatus(status: _empty, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
   
-  @scala.inline
-  def startActivity(hasIdTextTypeStatusCurrentTotal: Current): QueuedStartActivityActions = ^.asInstanceOf[js.Dynamic].applyDynamic("startActivity")(hasIdTextTypeStatusCurrentTotal.asInstanceOf[js.Any]).asInstanceOf[QueuedStartActivityActions]
+  inline def startActivity(hasIdTextTypeStatusCurrentTotal: Current): QueuedStartActivityActions = ^.asInstanceOf[js.Dynamic].applyDynamic("startActivity")(hasIdTextTypeStatusCurrentTotal.asInstanceOf[js.Any]).asInstanceOf[QueuedStartActivityActions]
   
-  @scala.inline
-  def updateActivity(hasIdRest: StatusText): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("updateActivity")(hasIdRest.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
+  inline def updateActivity(hasIdRest: StatusText): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("updateActivity")(hasIdRest.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
   
   type ActionsToEmit = js.Array[
     IPendingActivity | (ReturnType[

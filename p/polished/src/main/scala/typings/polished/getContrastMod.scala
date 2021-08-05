@@ -10,6 +10,5 @@ object getContrastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(color1: String, color2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(color1: String, color2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -23,31 +23,23 @@ trait FileModes extends StObject {
 }
 object FileModes {
   
-  @scala.inline
-  def apply(): FileModes = {
+  inline def apply(): FileModes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileModes]
   }
   
-  @scala.inline
-  implicit class FileModesMutableBuilder[Self <: FileModes] (val x: Self) extends AnyVal {
+  extension [Self <: FileModes](x: Self) {
     
-    @scala.inline
-    def setBase(value: FileModeTypeEnum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: FileModeTypeEnum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setDestination(value: FileModeTypeEnum): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: FileModeTypeEnum): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setSource(value: FileModeTypeEnum): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: FileModeTypeEnum): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

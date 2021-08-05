@@ -17,10 +17,8 @@ object controlledTypeScriptSystemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createControlledTypeScriptSystem(typescript: Typeofts): ControlledTypeScriptSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("createControlledTypeScriptSystem")(typescript.asInstanceOf[js.Any]).asInstanceOf[ControlledTypeScriptSystem]
-  @scala.inline
-  def createControlledTypeScriptSystem(typescript: Typeofts, mode: FileSystemMode): ControlledTypeScriptSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledTypeScriptSystem")(typescript.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[ControlledTypeScriptSystem]
+  inline def createControlledTypeScriptSystem(typescript: Typeofts): ControlledTypeScriptSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("createControlledTypeScriptSystem")(typescript.asInstanceOf[js.Any]).asInstanceOf[ControlledTypeScriptSystem]
+  inline def createControlledTypeScriptSystem(typescript: Typeofts, mode: FileSystemMode): ControlledTypeScriptSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledTypeScriptSystem")(typescript.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[ControlledTypeScriptSystem]
   
   @js.native
   trait ControlledTypeScriptSystem
@@ -82,13 +80,10 @@ object controlledTypeScriptSystemMod {
   trait FileSystemMode extends StObject
   object FileSystemMode {
     
-    @scala.inline
-    def readonly: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.readonly = "readonly".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.readonly]
+    inline def readonly: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.readonly = "readonly".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.readonly]
     
-    @scala.inline
-    def `write-references`: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-references` = "write-references".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-references`]
+    inline def `write-references`: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-references` = "write-references".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-references`]
     
-    @scala.inline
-    def `write-tsbuildinfo`: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-tsbuildinfo` = "write-tsbuildinfo".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-tsbuildinfo`]
+    inline def `write-tsbuildinfo`: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-tsbuildinfo` = "write-tsbuildinfo".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-tsbuildinfo`]
   }
 }

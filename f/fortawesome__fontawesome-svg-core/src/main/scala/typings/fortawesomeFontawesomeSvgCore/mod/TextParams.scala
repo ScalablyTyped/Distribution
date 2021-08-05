@@ -12,19 +12,15 @@ trait TextParams
 }
 object TextParams {
   
-  @scala.inline
-  def apply(): TextParams = {
+  inline def apply(): TextParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextParams]
   }
   
-  @scala.inline
-  implicit class TextParamsMutableBuilder[Self <: TextParams] (val x: Self) extends AnyVal {
+  extension [Self <: TextParams](x: Self) {
     
-    @scala.inline
-    def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

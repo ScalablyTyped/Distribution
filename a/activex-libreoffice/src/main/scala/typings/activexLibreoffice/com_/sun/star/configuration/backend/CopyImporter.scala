@@ -15,8 +15,7 @@ trait CopyImporter
      with Importer
 object CopyImporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TargetBackend: XBackend,
     acquire: () => Unit,
     getTargetBackend: () => XBackend,

@@ -26,8 +26,7 @@ trait AdGroupDevices extends StObject {
 }
 object AdGroupDevices {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearDesktopBidModifier: () => Unit,
     clearMobileBidModifier: () => Unit,
     clearTabletBidModifier: () => Unit,
@@ -42,34 +41,24 @@ object AdGroupDevices {
     __obj.asInstanceOf[AdGroupDevices]
   }
   
-  @scala.inline
-  implicit class AdGroupDevicesMutableBuilder[Self <: AdGroupDevices] (val x: Self) extends AnyVal {
+  extension [Self <: AdGroupDevices](x: Self) {
     
-    @scala.inline
-    def setClearDesktopBidModifier(value: () => Unit): Self = StObject.set(x, "clearDesktopBidModifier", js.Any.fromFunction0(value))
+    inline def setClearDesktopBidModifier(value: () => Unit): Self = StObject.set(x, "clearDesktopBidModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearMobileBidModifier(value: () => Unit): Self = StObject.set(x, "clearMobileBidModifier", js.Any.fromFunction0(value))
+    inline def setClearMobileBidModifier(value: () => Unit): Self = StObject.set(x, "clearMobileBidModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearTabletBidModifier(value: () => Unit): Self = StObject.set(x, "clearTabletBidModifier", js.Any.fromFunction0(value))
+    inline def setClearTabletBidModifier(value: () => Unit): Self = StObject.set(x, "clearTabletBidModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDesktopBidModifier(value: () => Double): Self = StObject.set(x, "getDesktopBidModifier", js.Any.fromFunction0(value))
+    inline def setGetDesktopBidModifier(value: () => Double): Self = StObject.set(x, "getDesktopBidModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMobileBidModifier(value: () => Double): Self = StObject.set(x, "getMobileBidModifier", js.Any.fromFunction0(value))
+    inline def setGetMobileBidModifier(value: () => Double): Self = StObject.set(x, "getMobileBidModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTabletBidModifier(value: () => Double): Self = StObject.set(x, "getTabletBidModifier", js.Any.fromFunction0(value))
+    inline def setGetTabletBidModifier(value: () => Double): Self = StObject.set(x, "getTabletBidModifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDesktopBidModifier(value: Double => Unit): Self = StObject.set(x, "setDesktopBidModifier", js.Any.fromFunction1(value))
+    inline def setSetDesktopBidModifier(value: Double => Unit): Self = StObject.set(x, "setDesktopBidModifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMobileBidModifier(value: Double => Unit): Self = StObject.set(x, "setMobileBidModifier", js.Any.fromFunction1(value))
+    inline def setSetMobileBidModifier(value: Double => Unit): Self = StObject.set(x, "setMobileBidModifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTabletBidModifier(value: Double => Unit): Self = StObject.set(x, "setTabletBidModifier", js.Any.fromFunction1(value))
+    inline def setSetTabletBidModifier(value: Double => Unit): Self = StObject.set(x, "setTabletBidModifier", js.Any.fromFunction1(value))
   }
 }

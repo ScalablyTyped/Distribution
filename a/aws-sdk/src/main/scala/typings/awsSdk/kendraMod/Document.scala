@@ -40,58 +40,41 @@ trait Document extends StObject {
 }
 object Document {
   
-  @scala.inline
-  def apply(Id: DocumentId): Document = {
+  inline def apply(Id: DocumentId): Document = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: PrincipalList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: PrincipalList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
+    inline def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
     
-    @scala.inline
-    def setAccessControlListVarargs(value: Principal*): Self = StObject.set(x, "AccessControlList", js.Array(value :_*))
+    inline def setAccessControlListVarargs(value: Principal*): Self = StObject.set(x, "AccessControlList", js.Array(value :_*))
     
-    @scala.inline
-    def setAttributes(value: DocumentAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: DocumentAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: DocumentAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: DocumentAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setBlob(value: _Blob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: _Blob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobUndefined: Self = StObject.set(x, "Blob", js.undefined)
+    inline def setBlobUndefined: Self = StObject.set(x, "Blob", js.undefined)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setId(value: DocumentId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: DocumentId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Path(value: S3Path): Self = StObject.set(x, "S3Path", value.asInstanceOf[js.Any])
+    inline def setS3Path(value: S3Path): Self = StObject.set(x, "S3Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PathUndefined: Self = StObject.set(x, "S3Path", js.undefined)
+    inline def setS3PathUndefined: Self = StObject.set(x, "S3Path", js.undefined)
     
-    @scala.inline
-    def setTitle(value: Title): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Title): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object useAuthHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function0[String]]
+  inline def default(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function0[String]]
 }

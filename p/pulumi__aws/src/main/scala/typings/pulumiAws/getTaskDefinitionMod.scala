@@ -11,10 +11,8 @@ object getTaskDefinitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
-  @scala.inline
-  def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
+  inline def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
+  inline def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
   
   trait GetTaskDefinitionArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getTaskDefinitionMod {
   }
   object GetTaskDefinitionArgs {
     
-    @scala.inline
-    def apply(taskDefinition: String): GetTaskDefinitionArgs = {
+    inline def apply(taskDefinition: String): GetTaskDefinitionArgs = {
       val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTaskDefinitionArgs]
     }
     
-    @scala.inline
-    implicit class GetTaskDefinitionArgsMutableBuilder[Self <: GetTaskDefinitionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetTaskDefinitionArgs](x: Self) {
       
-      @scala.inline
-      def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+      inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,8 +70,7 @@ object getTaskDefinitionMod {
   }
   object GetTaskDefinitionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       family: String,
       id: String,
       networkMode: String,
@@ -89,29 +83,21 @@ object getTaskDefinitionMod {
       __obj.asInstanceOf[GetTaskDefinitionResult]
     }
     
-    @scala.inline
-    implicit class GetTaskDefinitionResultMutableBuilder[Self <: GetTaskDefinitionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetTaskDefinitionResult](x: Self) {
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkMode(value: String): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
+      inline def setNetworkMode(value: String): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+      inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskRoleArn(value: String): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
+      inline def setTaskRoleArn(value: String): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
     }
   }
 }

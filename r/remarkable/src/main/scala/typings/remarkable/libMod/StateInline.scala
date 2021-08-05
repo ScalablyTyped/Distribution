@@ -49,8 +49,7 @@ trait StateInline extends StObject {
 }
 object StateInline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     env: Env,
     isInLabel: Boolean,
     labelUnmatchedScopes: Double,
@@ -71,55 +70,38 @@ object StateInline {
     __obj.asInstanceOf[StateInline]
   }
   
-  @scala.inline
-  implicit class StateInlineMutableBuilder[Self <: StateInline] (val x: Self) extends AnyVal {
+  extension [Self <: StateInline](x: Self) {
     
-    @scala.inline
-    def setEnv(value: Env): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Env): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInLabel(value: Boolean): Self = StObject.set(x, "isInLabel", value.asInstanceOf[js.Any])
+    inline def setIsInLabel(value: Boolean): Self = StObject.set(x, "isInLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUnmatchedScopes(value: Double): Self = StObject.set(x, "labelUnmatchedScopes", value.asInstanceOf[js.Any])
+    inline def setLabelUnmatchedScopes(value: Double): Self = StObject.set(x, "labelUnmatchedScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkContent(value: String): Self = StObject.set(x, "linkContent", value.asInstanceOf[js.Any])
+    inline def setLinkContent(value: String): Self = StObject.set(x, "linkContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkLevel(value: Double): Self = StObject.set(x, "linkLevel", value.asInstanceOf[js.Any])
+    inline def setLinkLevel(value: Double): Self = StObject.set(x, "linkLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParser(value: ParserInline): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    inline def setParser(value: ParserInline): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingLevel(value: Double): Self = StObject.set(x, "pendingLevel", value.asInstanceOf[js.Any])
+    inline def setPendingLevel(value: Double): Self = StObject.set(x, "pendingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosMax(value: Double): Self = StObject.set(x, "posMax", value.asInstanceOf[js.Any])
+    inline def setPosMax(value: Double): Self = StObject.set(x, "posMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: ContentToken => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: ContentToken => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPushPending(value: () => Unit): Self = StObject.set(x, "pushPending", js.Any.fromFunction0(value))
+    inline def setPushPending(value: () => Unit): Self = StObject.set(x, "pushPending", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokens(value: js.Array[ContentToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[ContentToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensVarargs(value: ContentToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: ContentToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

@@ -68,44 +68,32 @@ object outgoingRequestMod {
   }
   object OutgoingRequestDelegate {
     
-    @scala.inline
-    def apply(): OutgoingRequestDelegate = {
+    inline def apply(): OutgoingRequestDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutgoingRequestDelegate]
     }
     
-    @scala.inline
-    implicit class OutgoingRequestDelegateMutableBuilder[Self <: OutgoingRequestDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: OutgoingRequestDelegate](x: Self) {
       
-      @scala.inline
-      def setOnAccept(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
+      inline def setOnAccept(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAcceptUndefined: Self = StObject.set(x, "onAccept", js.undefined)
+      inline def setOnAcceptUndefined: Self = StObject.set(x, "onAccept", js.undefined)
       
-      @scala.inline
-      def setOnProgress(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setOnRedirect(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onRedirect", js.Any.fromFunction1(value))
+      inline def setOnRedirect(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onRedirect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRedirectUndefined: Self = StObject.set(x, "onRedirect", js.undefined)
+      inline def setOnRedirectUndefined: Self = StObject.set(x, "onRedirect", js.undefined)
       
-      @scala.inline
-      def setOnReject(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onReject", js.Any.fromFunction1(value))
+      inline def setOnReject(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onReject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRejectUndefined: Self = StObject.set(x, "onReject", js.undefined)
+      inline def setOnRejectUndefined: Self = StObject.set(x, "onReject", js.undefined)
       
-      @scala.inline
-      def setOnTrying(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onTrying", js.Any.fromFunction1(value))
+      inline def setOnTrying(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onTrying", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTryingUndefined: Self = StObject.set(x, "onTrying", js.undefined)
+      inline def setOnTryingUndefined: Self = StObject.set(x, "onTrying", js.undefined)
     }
   }
   
@@ -119,29 +107,22 @@ object outgoingRequestMod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(): RequestOptions = {
+    inline def apply(): RequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      @scala.inline
-      def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     }
   }
 }

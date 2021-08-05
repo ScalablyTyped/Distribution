@@ -13,23 +13,19 @@ trait SendMessageToExtension
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.SendMessageToExtension
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.SendMessageToExtension
 }
 object SendMessageToExtension {
   
-  @scala.inline
-  def apply(instanceType: String): SendMessageToExtension = {
+  inline def apply(instanceType: String): SendMessageToExtension = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "SendMessageToExtension")
     __obj.asInstanceOf[SendMessageToExtension]
   }
   
-  @scala.inline
-  implicit class SendMessageToExtensionMutableBuilder[Self <: SendMessageToExtension] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageToExtension](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.SendMessageToExtension): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.SendMessageToExtension): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

@@ -25,53 +25,38 @@ trait EmittedChunk
 }
 object EmittedChunk {
   
-  @scala.inline
-  def apply(id: String): EmittedChunk = {
+  inline def apply(id: String): EmittedChunk = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("chunk")
     __obj.asInstanceOf[EmittedChunk]
   }
   
-  @scala.inline
-  implicit class EmittedChunkMutableBuilder[Self <: EmittedChunk] (val x: Self) extends AnyVal {
+  extension [Self <: EmittedChunk](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitlyLoadedAfterOneOf(value: js.Array[String]): Self = StObject.set(x, "implicitlyLoadedAfterOneOf", value.asInstanceOf[js.Any])
+    inline def setImplicitlyLoadedAfterOneOf(value: js.Array[String]): Self = StObject.set(x, "implicitlyLoadedAfterOneOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitlyLoadedAfterOneOfUndefined: Self = StObject.set(x, "implicitlyLoadedAfterOneOf", js.undefined)
+    inline def setImplicitlyLoadedAfterOneOfUndefined: Self = StObject.set(x, "implicitlyLoadedAfterOneOf", js.undefined)
     
-    @scala.inline
-    def setImplicitlyLoadedAfterOneOfVarargs(value: String*): Self = StObject.set(x, "implicitlyLoadedAfterOneOf", js.Array(value :_*))
+    inline def setImplicitlyLoadedAfterOneOfVarargs(value: String*): Self = StObject.set(x, "implicitlyLoadedAfterOneOf", js.Array(value :_*))
     
-    @scala.inline
-    def setImporter(value: String): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
+    inline def setImporter(value: String): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
+    inline def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPreserveSignature(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveSignature", value.asInstanceOf[js.Any])
+    inline def setPreserveSignature(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveSignatureUndefined: Self = StObject.set(x, "preserveSignature", js.undefined)
+    inline def setPreserveSignatureUndefined: Self = StObject.set(x, "preserveSignature", js.undefined)
     
-    @scala.inline
-    def setType(value: chunk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: chunk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

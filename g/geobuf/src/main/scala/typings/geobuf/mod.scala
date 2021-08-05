@@ -12,9 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(pbf: typings.pbf.mod.^): GeoJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(pbf.asInstanceOf[js.Any]).asInstanceOf[GeoJSON]
+  inline def decode(pbf: typings.pbf.mod.^): GeoJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(pbf.asInstanceOf[js.Any]).asInstanceOf[GeoJSON]
   
-  @scala.inline
-  def encode(obj: GeoJSON, pbf: typings.pbf.mod.^): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any], pbf.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def encode(obj: GeoJSON, pbf: typings.pbf.mod.^): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any], pbf.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

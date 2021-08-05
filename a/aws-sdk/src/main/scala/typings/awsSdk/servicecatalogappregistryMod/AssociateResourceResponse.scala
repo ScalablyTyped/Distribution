@@ -18,25 +18,19 @@ trait AssociateResourceResponse extends StObject {
 }
 object AssociateResourceResponse {
   
-  @scala.inline
-  def apply(): AssociateResourceResponse = {
+  inline def apply(): AssociateResourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateResourceResponse]
   }
   
-  @scala.inline
-  implicit class AssociateResourceResponseMutableBuilder[Self <: AssociateResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateResourceResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
+    inline def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationArnUndefined: Self = StObject.set(x, "applicationArn", js.undefined)
+    inline def setApplicationArnUndefined: Self = StObject.set(x, "applicationArn", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
   }
 }

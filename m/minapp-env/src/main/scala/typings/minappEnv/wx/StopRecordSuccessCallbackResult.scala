@@ -14,19 +14,15 @@ trait StopRecordSuccessCallbackResult extends StObject {
 }
 object StopRecordSuccessCallbackResult {
   
-  @scala.inline
-  def apply(tempThumbPath: String, tempVideoPath: String): StopRecordSuccessCallbackResult = {
+  inline def apply(tempThumbPath: String, tempVideoPath: String): StopRecordSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(tempThumbPath = tempThumbPath.asInstanceOf[js.Any], tempVideoPath = tempVideoPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRecordSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class StopRecordSuccessCallbackResultMutableBuilder[Self <: StopRecordSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: StopRecordSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
+    inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempVideoPath(value: String): Self = StObject.set(x, "tempVideoPath", value.asInstanceOf[js.Any])
+    inline def setTempVideoPath(value: String): Self = StObject.set(x, "tempVideoPath", value.asInstanceOf[js.Any])
   }
 }

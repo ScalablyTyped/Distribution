@@ -17,8 +17,7 @@ trait XComponentRegistry
 }
 object XComponentRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createObject: (String, Uik) => XInterface,
     queryInterface: `type` => js.Any,
@@ -28,10 +27,8 @@ object XComponentRegistry {
     __obj.asInstanceOf[XComponentRegistry]
   }
   
-  @scala.inline
-  implicit class XComponentRegistryMutableBuilder[Self <: XComponentRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: XComponentRegistry](x: Self) {
     
-    @scala.inline
-    def setCreateObject(value: (String, Uik) => XInterface): Self = StObject.set(x, "createObject", js.Any.fromFunction2(value))
+    inline def setCreateObject(value: (String, Uik) => XInterface): Self = StObject.set(x, "createObject", js.Any.fromFunction2(value))
   }
 }

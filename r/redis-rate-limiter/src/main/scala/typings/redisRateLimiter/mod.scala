@@ -23,8 +23,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(options: Options): js.Function2[
+  inline def create(options: Options): js.Function2[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* callback */ js.Function2[/* err */ Error, /* res */ Response, Unit], 
     Unit
@@ -35,8 +34,7 @@ object mod {
   ]]
   
   /* static member */
-  @scala.inline
-  def middleware(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def middleware(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   trait Options extends StObject {
     
@@ -56,8 +54,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       key: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]),
       redis: RedisClient
     ): Options = {
@@ -65,47 +62,33 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDeleteImmediatelyIfRaceCondition(value: Boolean): Self = StObject.set(x, "deleteImmediatelyIfRaceCondition", value.asInstanceOf[js.Any])
+      inline def setDeleteImmediatelyIfRaceCondition(value: Boolean): Self = StObject.set(x, "deleteImmediatelyIfRaceCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteImmediatelyIfRaceConditionUndefined: Self = StObject.set(x, "deleteImmediatelyIfRaceCondition", js.undefined)
+      inline def setDeleteImmediatelyIfRaceConditionUndefined: Self = StObject.set(x, "deleteImmediatelyIfRaceCondition", js.undefined)
       
-      @scala.inline
-      def setKey(value: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKeyFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOnPossibleRaceCondition(value: /* key */ String => Unit): Self = StObject.set(x, "onPossibleRaceCondition", js.Any.fromFunction1(value))
+      inline def setOnPossibleRaceCondition(value: /* key */ String => Unit): Self = StObject.set(x, "onPossibleRaceCondition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPossibleRaceConditionUndefined: Self = StObject.set(x, "onPossibleRaceCondition", js.undefined)
+      inline def setOnPossibleRaceConditionUndefined: Self = StObject.set(x, "onPossibleRaceCondition", js.undefined)
       
-      @scala.inline
-      def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setRedis(value: RedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(value: RedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -125,29 +108,22 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(current: Double, key: String, limit: Double, over: Boolean, window: Double): Response = {
+    inline def apply(current: Double, key: String, limit: Double, over: Boolean, window: Double): Response = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], over = over.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOver(value: Boolean): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
+      inline def setOver(value: Boolean): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     }
   }
 }

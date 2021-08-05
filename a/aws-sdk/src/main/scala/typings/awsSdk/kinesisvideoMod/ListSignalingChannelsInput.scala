@@ -23,31 +23,23 @@ trait ListSignalingChannelsInput extends StObject {
 }
 object ListSignalingChannelsInput {
   
-  @scala.inline
-  def apply(): ListSignalingChannelsInput = {
+  inline def apply(): ListSignalingChannelsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSignalingChannelsInput]
   }
   
-  @scala.inline
-  implicit class ListSignalingChannelsInputMutableBuilder[Self <: ListSignalingChannelsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSignalingChannelsInput](x: Self) {
     
-    @scala.inline
-    def setChannelNameCondition(value: ChannelNameCondition): Self = StObject.set(x, "ChannelNameCondition", value.asInstanceOf[js.Any])
+    inline def setChannelNameCondition(value: ChannelNameCondition): Self = StObject.set(x, "ChannelNameCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelNameConditionUndefined: Self = StObject.set(x, "ChannelNameCondition", js.undefined)
+    inline def setChannelNameConditionUndefined: Self = StObject.set(x, "ChannelNameCondition", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: ListStreamsInputLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListStreamsInputLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

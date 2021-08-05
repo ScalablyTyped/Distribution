@@ -55,21 +55,18 @@ object global {
         * Performs a one time OAuth 2.0 authorization.
         * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2authorizeparams-callback
         */
-      @scala.inline
-      def authorize(params: AuthorizeConfig, callback: js.Function1[/* response */ AuthorizeResponse, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def authorize(params: AuthorizeConfig, callback: js.Function1[/* response */ AuthorizeResponse, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Returns the GoogleAuth object. You must initialize the GoogleAuth object with gapi.auth2.init() before calling this method.
         */
-      @scala.inline
-      def getAuthInstance(): typings.gapiAuth2.gapi.auth2.GoogleAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthInstance")().asInstanceOf[typings.gapiAuth2.gapi.auth2.GoogleAuth]
+      inline def getAuthInstance(): typings.gapiAuth2.gapi.auth2.GoogleAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthInstance")().asInstanceOf[typings.gapiAuth2.gapi.auth2.GoogleAuth]
       
       /**
         * Initializes the GoogleAuth object.
         * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2initparams
         */
-      @scala.inline
-      def init(params: ClientConfig): typings.gapiAuth2.gapi.auth2.GoogleAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(params.asInstanceOf[js.Any]).asInstanceOf[typings.gapiAuth2.gapi.auth2.GoogleAuth]
+      inline def init(params: ClientConfig): typings.gapiAuth2.gapi.auth2.GoogleAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(params.asInstanceOf[js.Any]).asInstanceOf[typings.gapiAuth2.gapi.auth2.GoogleAuth]
     }
     
     object signin2 {
@@ -78,8 +75,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def render(id: js.Any, options: Apppackagename): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def render(id: js.Any, options: Apppackagename): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

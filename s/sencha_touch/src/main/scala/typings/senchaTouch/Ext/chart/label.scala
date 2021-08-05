@@ -13,8 +13,7 @@ object label {
        with IModifier
   object ICallout {
     
-    @scala.inline
-    def apply(): ICallout = {
+    inline def apply(): ICallout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICallout]
     }
@@ -65,52 +64,38 @@ object label {
   }
   object ILabel {
     
-    @scala.inline
-    def apply(): ILabel = {
+    inline def apply(): ILabel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILabel]
     }
     
-    @scala.inline
-    implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
+    extension [Self <: ILabel](x: Self) {
       
-      @scala.inline
-      def setFx(value: js.Any): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+      inline def setFx(value: js.Any): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
+      inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
       
-      @scala.inline
-      def setGetField(value: () => js.Any): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+      inline def setGetField(value: () => js.Any): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
+      inline def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
       
-      @scala.inline
-      def setGetFx(value: () => js.Any): Self = StObject.set(x, "getFx", js.Any.fromFunction0(value))
+      inline def setGetFx(value: () => js.Any): Self = StObject.set(x, "getFx", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFxUndefined: Self = StObject.set(x, "getFx", js.undefined)
+      inline def setGetFxUndefined: Self = StObject.set(x, "getFx", js.undefined)
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSetField(value: /* field */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
+      inline def setSetField(value: /* field */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
+      inline def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
       
-      @scala.inline
-      def setSetFx(value: /* fx */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFx", js.Any.fromFunction1(value))
+      inline def setSetFx(value: /* fx */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFx", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFxUndefined: Self = StObject.set(x, "setFx", js.undefined)
+      inline def setSetFxUndefined: Self = StObject.set(x, "setFx", js.undefined)
     }
   }
 }

@@ -487,161 +487,110 @@ object Mixpanel {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
+      inline def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_hostUndefined: Self = StObject.set(x, "api_host", js.undefined)
+      inline def setApi_hostUndefined: Self = StObject.set(x, "api_host", js.undefined)
       
-      @scala.inline
-      def setApp_host(value: String): Self = StObject.set(x, "app_host", value.asInstanceOf[js.Any])
+      inline def setApp_host(value: String): Self = StObject.set(x, "app_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp_hostUndefined: Self = StObject.set(x, "app_host", js.undefined)
+      inline def setApp_hostUndefined: Self = StObject.set(x, "app_host", js.undefined)
       
-      @scala.inline
-      def setAutotrack(value: Boolean): Self = StObject.set(x, "autotrack", value.asInstanceOf[js.Any])
+      inline def setAutotrack(value: Boolean): Self = StObject.set(x, "autotrack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutotrackUndefined: Self = StObject.set(x, "autotrack", js.undefined)
+      inline def setAutotrackUndefined: Self = StObject.set(x, "autotrack", js.undefined)
       
-      @scala.inline
-      def setCdn(value: String): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
+      inline def setCdn(value: String): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCdnUndefined: Self = StObject.set(x, "cdn", js.undefined)
+      inline def setCdnUndefined: Self = StObject.set(x, "cdn", js.undefined)
       
-      @scala.inline
-      def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
+      inline def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookie_expirationUndefined: Self = StObject.set(x, "cookie_expiration", js.undefined)
+      inline def setCookie_expirationUndefined: Self = StObject.set(x, "cookie_expiration", js.undefined)
       
-      @scala.inline
-      def setCookie_name(value: String): Self = StObject.set(x, "cookie_name", value.asInstanceOf[js.Any])
+      inline def setCookie_name(value: String): Self = StObject.set(x, "cookie_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookie_nameUndefined: Self = StObject.set(x, "cookie_name", js.undefined)
+      inline def setCookie_nameUndefined: Self = StObject.set(x, "cookie_name", js.undefined)
       
-      @scala.inline
-      def setCross_subdomain_cookie(value: Boolean): Self = StObject.set(x, "cross_subdomain_cookie", value.asInstanceOf[js.Any])
+      inline def setCross_subdomain_cookie(value: Boolean): Self = StObject.set(x, "cross_subdomain_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCross_subdomain_cookieUndefined: Self = StObject.set(x, "cross_subdomain_cookie", js.undefined)
+      inline def setCross_subdomain_cookieUndefined: Self = StObject.set(x, "cross_subdomain_cookie", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDisable_cookie(value: Boolean): Self = StObject.set(x, "disable_cookie", value.asInstanceOf[js.Any])
+      inline def setDisable_cookie(value: Boolean): Self = StObject.set(x, "disable_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_cookieUndefined: Self = StObject.set(x, "disable_cookie", js.undefined)
+      inline def setDisable_cookieUndefined: Self = StObject.set(x, "disable_cookie", js.undefined)
       
-      @scala.inline
-      def setDisable_persistence(value: Boolean): Self = StObject.set(x, "disable_persistence", value.asInstanceOf[js.Any])
+      inline def setDisable_persistence(value: Boolean): Self = StObject.set(x, "disable_persistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_persistenceUndefined: Self = StObject.set(x, "disable_persistence", js.undefined)
+      inline def setDisable_persistenceUndefined: Self = StObject.set(x, "disable_persistence", js.undefined)
       
-      @scala.inline
-      def setImg(value: Boolean): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: Boolean): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+      inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
       
-      @scala.inline
-      def setIp(value: Boolean): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: Boolean): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      @scala.inline
-      def setLoaded(value: /* lib */ Mixpanel => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
+      inline def setLoaded(value: /* lib */ Mixpanel => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+      inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
       
-      @scala.inline
-      def setPersistence(value: localStorage | cookie): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
+      inline def setPersistence(value: localStorage | cookie): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
+      inline def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
       
-      @scala.inline
-      def setPersistence_name(value: String): Self = StObject.set(x, "persistence_name", value.asInstanceOf[js.Any])
+      inline def setPersistence_name(value: String): Self = StObject.set(x, "persistence_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistence_nameUndefined: Self = StObject.set(x, "persistence_name", js.undefined)
+      inline def setPersistence_nameUndefined: Self = StObject.set(x, "persistence_name", js.undefined)
       
-      @scala.inline
-      def setProperty_blacklist(value: js.Array[String]): Self = StObject.set(x, "property_blacklist", value.asInstanceOf[js.Any])
+      inline def setProperty_blacklist(value: js.Array[String]): Self = StObject.set(x, "property_blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty_blacklistUndefined: Self = StObject.set(x, "property_blacklist", js.undefined)
+      inline def setProperty_blacklistUndefined: Self = StObject.set(x, "property_blacklist", js.undefined)
       
-      @scala.inline
-      def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value :_*))
+      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setSave_referrer(value: Boolean): Self = StObject.set(x, "save_referrer", value.asInstanceOf[js.Any])
+      inline def setSave_referrer(value: Boolean): Self = StObject.set(x, "save_referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSave_referrerUndefined: Self = StObject.set(x, "save_referrer", js.undefined)
+      inline def setSave_referrerUndefined: Self = StObject.set(x, "save_referrer", js.undefined)
       
-      @scala.inline
-      def setSecure_cookie(value: Boolean): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
+      inline def setSecure_cookie(value: Boolean): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure_cookieUndefined: Self = StObject.set(x, "secure_cookie", js.undefined)
+      inline def setSecure_cookieUndefined: Self = StObject.set(x, "secure_cookie", js.undefined)
       
-      @scala.inline
-      def setStore_google(value: Boolean): Self = StObject.set(x, "store_google", value.asInstanceOf[js.Any])
+      inline def setStore_google(value: Boolean): Self = StObject.set(x, "store_google", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore_googleUndefined: Self = StObject.set(x, "store_google", js.undefined)
+      inline def setStore_googleUndefined: Self = StObject.set(x, "store_google", js.undefined)
       
-      @scala.inline
-      def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setTrack_links_timeout(value: Double): Self = StObject.set(x, "track_links_timeout", value.asInstanceOf[js.Any])
+      inline def setTrack_links_timeout(value: Double): Self = StObject.set(x, "track_links_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_links_timeoutUndefined: Self = StObject.set(x, "track_links_timeout", js.undefined)
+      inline def setTrack_links_timeoutUndefined: Self = StObject.set(x, "track_links_timeout", js.undefined)
       
-      @scala.inline
-      def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
+      inline def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_pageviewUndefined: Self = StObject.set(x, "track_pageview", js.undefined)
+      inline def setTrack_pageviewUndefined: Self = StObject.set(x, "track_pageview", js.undefined)
       
-      @scala.inline
-      def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
+      inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
+      inline def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

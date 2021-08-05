@@ -20,31 +20,23 @@ trait PhoneAuthSnapshot extends StObject {
 }
 object PhoneAuthSnapshot {
   
-  @scala.inline
-  def apply(state: sent | timeout | verified | error_, verificationId: String): PhoneAuthSnapshot = {
+  inline def apply(state: sent | timeout | verified | error_, verificationId: String): PhoneAuthSnapshot = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], verificationId = verificationId.asInstanceOf[js.Any], code = null, error = null)
     __obj.asInstanceOf[PhoneAuthSnapshot]
   }
   
-  @scala.inline
-  implicit class PhoneAuthSnapshotMutableBuilder[Self <: PhoneAuthSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneAuthSnapshot](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeNull: Self = StObject.set(x, "code", null)
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
-    @scala.inline
-    def setError(value: NativeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: NativeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setState(value: sent | timeout | verified | error_): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: sent | timeout | verified | error_): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
+    inline def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
   }
 }

@@ -57,8 +57,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def bitblt(
+    inline def bitblt(
       src: PNG,
       dst: PNG,
       srcX: Double,
@@ -75,14 +74,10 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def read(buffer: String): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[PNG]
-      @scala.inline
-      def read(buffer: String, options: PNGOptions): PNG = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PNG]
-      @scala.inline
-      def read(buffer: Buffer): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[PNG]
-      @scala.inline
-      def read(buffer: Buffer, options: PNGOptions): PNG = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PNG]
+      inline def read(buffer: String): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[PNG]
+      inline def read(buffer: String, options: PNGOptions): PNG = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PNG]
+      inline def read(buffer: Buffer): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[PNG]
+      inline def read(buffer: Buffer, options: PNGOptions): PNG = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PNG]
     }
   }
   
@@ -102,8 +97,7 @@ object mod {
   }
   object PNGMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Boolean,
       color: Boolean,
       height: Double,
@@ -115,26 +109,19 @@ object mod {
       __obj.asInstanceOf[PNGMetadata]
     }
     
-    @scala.inline
-    implicit class PNGMetadataMutableBuilder[Self <: PNGMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: PNGMetadata](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterlace(value: Boolean): Self = StObject.set(x, "interlace", value.asInstanceOf[js.Any])
+      inline def setInterlace(value: Boolean): Self = StObject.set(x, "interlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPalette(value: Boolean): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: Boolean): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,77 +149,54 @@ object mod {
   }
   object PNGOptions {
     
-    @scala.inline
-    def apply(): PNGOptions = {
+    inline def apply(): PNGOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PNGOptions]
     }
     
-    @scala.inline
-    implicit class PNGOptionsMutableBuilder[Self <: PNGOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PNGOptions](x: Self) {
       
-      @scala.inline
-      def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
+      inline def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckCRCUndefined: Self = StObject.set(x, "checkCRC", js.undefined)
+      inline def setCheckCRCUndefined: Self = StObject.set(x, "checkCRC", js.undefined)
       
-      @scala.inline
-      def setColorType(value: Double): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
+      inline def setColorType(value: Double): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorTypeUndefined: Self = StObject.set(x, "colorType", js.undefined)
+      inline def setColorTypeUndefined: Self = StObject.set(x, "colorType", js.undefined)
       
-      @scala.inline
-      def setDeflateChunkSize(value: Double): Self = StObject.set(x, "deflateChunkSize", value.asInstanceOf[js.Any])
+      inline def setDeflateChunkSize(value: Double): Self = StObject.set(x, "deflateChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateChunkSizeUndefined: Self = StObject.set(x, "deflateChunkSize", js.undefined)
+      inline def setDeflateChunkSizeUndefined: Self = StObject.set(x, "deflateChunkSize", js.undefined)
       
-      @scala.inline
-      def setDeflateFactory(value: js.Any): Self = StObject.set(x, "deflateFactory", value.asInstanceOf[js.Any])
+      inline def setDeflateFactory(value: js.Any): Self = StObject.set(x, "deflateFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateFactoryUndefined: Self = StObject.set(x, "deflateFactory", js.undefined)
+      inline def setDeflateFactoryUndefined: Self = StObject.set(x, "deflateFactory", js.undefined)
       
-      @scala.inline
-      def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
+      inline def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
+      inline def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
       
-      @scala.inline
-      def setDeflateStrategy(value: Double): Self = StObject.set(x, "deflateStrategy", value.asInstanceOf[js.Any])
+      inline def setDeflateStrategy(value: Double): Self = StObject.set(x, "deflateStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateStrategyUndefined: Self = StObject.set(x, "deflateStrategy", js.undefined)
+      inline def setDeflateStrategyUndefined: Self = StObject.set(x, "deflateStrategy", js.undefined)
       
-      @scala.inline
-      def setFilterType(value: Double | js.Array[Double]): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+      inline def setFilterType(value: Double | js.Array[Double]): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+      inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      @scala.inline
-      def setFilterTypeVarargs(value: Double*): Self = StObject.set(x, "filterType", js.Array(value :_*))
+      inline def setFilterTypeVarargs(value: Double*): Self = StObject.set(x, "filterType", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setInputHasAlpha(value: Boolean): Self = StObject.set(x, "inputHasAlpha", value.asInstanceOf[js.Any])
+      inline def setInputHasAlpha(value: Boolean): Self = StObject.set(x, "inputHasAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputHasAlphaUndefined: Self = StObject.set(x, "inputHasAlpha", js.undefined)
+      inline def setInputHasAlphaUndefined: Self = StObject.set(x, "inputHasAlpha", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

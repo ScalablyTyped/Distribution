@@ -17,31 +17,23 @@ trait ActivityContentDetailsRecommendation extends StObject {
 }
 object ActivityContentDetailsRecommendation {
   
-  @scala.inline
-  def apply(): ActivityContentDetailsRecommendation = {
+  inline def apply(): ActivityContentDetailsRecommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetailsRecommendation]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsRecommendationMutableBuilder[Self <: ActivityContentDetailsRecommendation] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetailsRecommendation](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
-    @scala.inline
-    def setSeedResourceId(value: ResourceId): Self = StObject.set(x, "seedResourceId", value.asInstanceOf[js.Any])
+    inline def setSeedResourceId(value: ResourceId): Self = StObject.set(x, "seedResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedResourceIdUndefined: Self = StObject.set(x, "seedResourceId", js.undefined)
+    inline def setSeedResourceIdUndefined: Self = StObject.set(x, "seedResourceId", js.undefined)
   }
 }

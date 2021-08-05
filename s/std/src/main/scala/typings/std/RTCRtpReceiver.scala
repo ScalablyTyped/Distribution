@@ -23,8 +23,7 @@ trait RTCRtpReceiver extends StObject {
 }
 object RTCRtpReceiver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContributingSources: () => js.Array[RTCRtpContributingSource],
     getParameters: () => RTCRtpReceiveParameters,
     getStats: () => js.Promise[RTCStatsReport],
@@ -35,34 +34,24 @@ object RTCRtpReceiver {
     __obj.asInstanceOf[RTCRtpReceiver]
   }
   
-  @scala.inline
-  implicit class RTCRtpReceiverMutableBuilder[Self <: RTCRtpReceiver] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpReceiver](x: Self) {
     
-    @scala.inline
-    def setGetContributingSources(value: () => js.Array[RTCRtpContributingSource]): Self = StObject.set(x, "getContributingSources", js.Any.fromFunction0(value))
+    inline def setGetContributingSources(value: () => js.Array[RTCRtpContributingSource]): Self = StObject.set(x, "getContributingSources", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => RTCRtpReceiveParameters): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => RTCRtpReceiveParameters): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStats(value: () => js.Promise[RTCStatsReport]): Self = StObject.set(x, "getStats", js.Any.fromFunction0(value))
+    inline def setGetStats(value: () => js.Promise[RTCStatsReport]): Self = StObject.set(x, "getStats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSynchronizationSources(value: () => js.Array[RTCRtpSynchronizationSource]): Self = StObject.set(x, "getSynchronizationSources", js.Any.fromFunction0(value))
+    inline def setGetSynchronizationSources(value: () => js.Array[RTCRtpSynchronizationSource]): Self = StObject.set(x, "getSynchronizationSources", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRtcpTransport(value: RTCDtlsTransport): Self = StObject.set(x, "rtcpTransport", value.asInstanceOf[js.Any])
+    inline def setRtcpTransport(value: RTCDtlsTransport): Self = StObject.set(x, "rtcpTransport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtcpTransportNull: Self = StObject.set(x, "rtcpTransport", null)
+    inline def setRtcpTransportNull: Self = StObject.set(x, "rtcpTransport", null)
     
-    @scala.inline
-    def setTrack(value: MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransport(value: RTCDtlsTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: RTCDtlsTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportNull: Self = StObject.set(x, "transport", null)
+    inline def setTransportNull: Self = StObject.set(x, "transport", null)
   }
 }

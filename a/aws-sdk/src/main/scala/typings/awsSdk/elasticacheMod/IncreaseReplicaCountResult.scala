@@ -10,19 +10,15 @@ trait IncreaseReplicaCountResult extends StObject {
 }
 object IncreaseReplicaCountResult {
   
-  @scala.inline
-  def apply(): IncreaseReplicaCountResult = {
+  inline def apply(): IncreaseReplicaCountResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncreaseReplicaCountResult]
   }
   
-  @scala.inline
-  implicit class IncreaseReplicaCountResultMutableBuilder[Self <: IncreaseReplicaCountResult] (val x: Self) extends AnyVal {
+  extension [Self <: IncreaseReplicaCountResult](x: Self) {
     
-    @scala.inline
-    def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+    inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
   }
 }

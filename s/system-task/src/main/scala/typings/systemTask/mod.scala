@@ -20,11 +20,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asyncProcess(items: js.Array[js.Any], executeAsyncCall: js.Any, task: SystemTask, errors: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncProcess")(items.asInstanceOf[js.Any], executeAsyncCall.asInstanceOf[js.Any], task.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def asyncProcess(items: js.Array[js.Any], executeAsyncCall: js.Any, task: SystemTask, errors: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncProcess")(items.asInstanceOf[js.Any], executeAsyncCall.asInstanceOf[js.Any], task.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def syncProcess(items: js.Array[js.Any], executeSyncCall: js.Any, task: SystemTask, errors: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncProcess")(items.asInstanceOf[js.Any], executeSyncCall.asInstanceOf[js.Any], task.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def syncProcess(items: js.Array[js.Any], executeSyncCall: js.Any, task: SystemTask, errors: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncProcess")(items.asInstanceOf[js.Any], executeSyncCall.asInstanceOf[js.Any], task.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @js.native
   trait SystemTask extends StObject {

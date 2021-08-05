@@ -18,22 +18,17 @@ trait ListInstanceGroupsInput extends StObject {
 }
 object ListInstanceGroupsInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId): ListInstanceGroupsInput = {
+  inline def apply(ClusterId: ClusterId): ListInstanceGroupsInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInstanceGroupsInput]
   }
   
-  @scala.inline
-  implicit class ListInstanceGroupsInputMutableBuilder[Self <: ListInstanceGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListInstanceGroupsInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

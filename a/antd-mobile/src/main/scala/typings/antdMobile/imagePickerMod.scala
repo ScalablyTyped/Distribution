@@ -22,8 +22,7 @@ object imagePickerMod {
     @JSImport("antd-mobile/lib/image-picker", "default.defaultProps")
     @js.native
     def defaultProps: Accept = js.native
-    @scala.inline
-    def defaultProps_=(x: Accept): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Accept): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -58,26 +57,20 @@ object imagePickerMod {
   }
   object ImagePickerPropTypes {
     
-    @scala.inline
-    def apply(): ImagePickerPropTypes = {
+    inline def apply(): ImagePickerPropTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImagePickerPropTypes]
     }
     
-    @scala.inline
-    implicit class ImagePickerPropTypesMutableBuilder[Self <: ImagePickerPropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: ImagePickerPropTypes](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
 }

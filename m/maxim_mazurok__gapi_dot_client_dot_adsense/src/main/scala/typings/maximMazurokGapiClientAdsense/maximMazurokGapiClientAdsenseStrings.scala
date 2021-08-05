@@ -8,11 +8,9 @@ object maximMazurokGapiClientAdsenseStrings {
   
   @js.native
   sealed trait adsense extends StObject
-  @scala.inline
-  def adsense: adsense = "adsense".asInstanceOf[adsense]
+  inline def adsense: adsense = "adsense".asInstanceOf[adsense]
   
   @js.native
   sealed trait v1Dot4 extends StObject
-  @scala.inline
-  def v1Dot4: v1Dot4 = "v1.4".asInstanceOf[v1Dot4]
+  inline def v1Dot4: v1Dot4 = "v1.4".asInstanceOf[v1Dot4]
 }

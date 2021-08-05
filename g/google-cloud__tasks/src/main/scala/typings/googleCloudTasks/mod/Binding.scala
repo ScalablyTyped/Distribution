@@ -14,25 +14,19 @@ trait Binding extends StObject {
 }
 object Binding {
   
-  @scala.inline
-  def apply(condition: Expr, members: js.Array[String], role: String): Binding = {
+  inline def apply(condition: Expr, members: js.Array[String], role: String): Binding = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Binding]
   }
   
-  @scala.inline
-  implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
+  extension [Self <: Binding](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

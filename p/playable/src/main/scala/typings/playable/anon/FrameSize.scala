@@ -14,22 +14,17 @@ trait FrameSize extends StObject {
 }
 object FrameSize {
   
-  @scala.inline
-  def apply(frameSize: Height, framesInSprite: Horz, spriteUrlMask: String): FrameSize = {
+  inline def apply(frameSize: Height, framesInSprite: Horz, spriteUrlMask: String): FrameSize = {
     val __obj = js.Dynamic.literal(frameSize = frameSize.asInstanceOf[js.Any], framesInSprite = framesInSprite.asInstanceOf[js.Any], spriteUrlMask = spriteUrlMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameSize]
   }
   
-  @scala.inline
-  implicit class FrameSizeMutableBuilder[Self <: FrameSize] (val x: Self) extends AnyVal {
+  extension [Self <: FrameSize](x: Self) {
     
-    @scala.inline
-    def setFrameSize(value: Height): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
+    inline def setFrameSize(value: Height): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesInSprite(value: Horz): Self = StObject.set(x, "framesInSprite", value.asInstanceOf[js.Any])
+    inline def setFramesInSprite(value: Horz): Self = StObject.set(x, "framesInSprite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteUrlMask(value: String): Self = StObject.set(x, "spriteUrlMask", value.asInstanceOf[js.Any])
+    inline def setSpriteUrlMask(value: String): Self = StObject.set(x, "spriteUrlMask", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait GetSelectedTextRangeSuccessCallbackResult extends StObject {
 }
 object GetSelectedTextRangeSuccessCallbackResult {
   
-  @scala.inline
-  def apply(end: Double, errMsg: String, start: Double): GetSelectedTextRangeSuccessCallbackResult = {
+  inline def apply(end: Double, errMsg: String, start: Double): GetSelectedTextRangeSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSelectedTextRangeSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetSelectedTextRangeSuccessCallbackResultMutableBuilder[Self <: GetSelectedTextRangeSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSelectedTextRangeSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

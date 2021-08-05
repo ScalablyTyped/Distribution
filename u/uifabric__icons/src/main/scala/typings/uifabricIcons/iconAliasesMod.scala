@@ -10,9 +10,7 @@ object iconAliasesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
   
-  @scala.inline
-  def registerIconAliases(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAliases")().asInstanceOf[Unit]
+  inline def registerIconAliases(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAliases")().asInstanceOf[Unit]
 }

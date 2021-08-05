@@ -8,16 +8,15 @@ trait ThisExpression
   extends StObject
      with IASTToken {
   
-  var _text: js.Any
+  /* private */ var _text: js.Any
   
-  var _valueText: js.Any
+  /* private */ var _valueText: js.Any
   
   def structuralEquals(ast: ParenthesizedExpression, includingPosition: Boolean): Boolean
 }
 object ThisExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -47,16 +46,12 @@ object ThisExpression {
     __obj.asInstanceOf[ThisExpression]
   }
   
-  @scala.inline
-  implicit class ThisExpressionMutableBuilder[Self <: ThisExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ThisExpression](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

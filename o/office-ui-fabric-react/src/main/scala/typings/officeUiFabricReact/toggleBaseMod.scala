@@ -19,13 +19,13 @@ object toggleBaseMod {
        with IToggle {
     def this(props: IToggleProps) = this()
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _noop: js.Any = js.native
+    /* private */ var _noop: js.Any = js.native
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _toggleButton: js.Any = js.native
+    /* private */ var _toggleButton: js.Any = js.native
     
     /**
       * Gets the current checked state of the toggle.
@@ -42,8 +42,7 @@ object toggleBaseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: ReadonlyIToggleProps, prevState: ReadonlyIToggleState): PartialIToggleState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialIToggleState | Null]
+    inline def getDerivedStateFromProps(nextProps: ReadonlyIToggleProps, prevState: ReadonlyIToggleState): PartialIToggleState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialIToggleState | Null]
   }
   
   trait IToggleState extends StObject {
@@ -52,17 +51,14 @@ object toggleBaseMod {
   }
   object IToggleState {
     
-    @scala.inline
-    def apply(checked: Boolean): IToggleState = {
+    inline def apply(checked: Boolean): IToggleState = {
       val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
       __obj.asInstanceOf[IToggleState]
     }
     
-    @scala.inline
-    implicit class IToggleStateMutableBuilder[Self <: IToggleState] (val x: Self) extends AnyVal {
+    extension [Self <: IToggleState](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }
   }
 }

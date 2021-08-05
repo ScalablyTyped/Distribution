@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HiLoLines")
 @js.native
-class HiLoLines protected ()
+/* private */ class HiLoLines ()
   extends StObject
      with typings.activexWord.Word.HiLoLines {
   
@@ -34,7 +34,7 @@ class HiLoLines protected ()
   /* CompleteClass */
   override def Select(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.HiLoLines_typekey")
   var WordDotHiLoLines_typekey: typings.activexWord.Word.HiLoLines = js.native
 }

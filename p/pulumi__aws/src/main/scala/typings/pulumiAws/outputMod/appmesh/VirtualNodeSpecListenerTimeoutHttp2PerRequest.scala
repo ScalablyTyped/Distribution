@@ -18,19 +18,15 @@ trait VirtualNodeSpecListenerTimeoutHttp2PerRequest extends StObject {
 }
 object VirtualNodeSpecListenerTimeoutHttp2PerRequest {
   
-  @scala.inline
-  def apply(unit: String, value: Double): VirtualNodeSpecListenerTimeoutHttp2PerRequest = {
+  inline def apply(unit: String, value: Double): VirtualNodeSpecListenerTimeoutHttp2PerRequest = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecListenerTimeoutHttp2PerRequest]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerTimeoutHttp2PerRequestMutableBuilder[Self <: VirtualNodeSpecListenerTimeoutHttp2PerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListenerTimeoutHttp2PerRequest](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

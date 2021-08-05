@@ -12,6 +12,5 @@ object makeGherkinOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: IGherkinOptions): DefaultDialect = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[DefaultDialect]
+  inline def default(options: IGherkinOptions): DefaultDialect = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[DefaultDialect]
 }

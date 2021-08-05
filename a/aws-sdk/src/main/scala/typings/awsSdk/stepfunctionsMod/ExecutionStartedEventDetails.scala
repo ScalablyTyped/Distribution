@@ -23,31 +23,23 @@ trait ExecutionStartedEventDetails extends StObject {
 }
 object ExecutionStartedEventDetails {
   
-  @scala.inline
-  def apply(): ExecutionStartedEventDetails = {
+  inline def apply(): ExecutionStartedEventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionStartedEventDetails]
   }
   
-  @scala.inline
-  implicit class ExecutionStartedEventDetailsMutableBuilder[Self <: ExecutionStartedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionStartedEventDetails](x: Self) {
     
-    @scala.inline
-    def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "inputDetails", value.asInstanceOf[js.Any])
+    inline def setInputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "inputDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
+    inline def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

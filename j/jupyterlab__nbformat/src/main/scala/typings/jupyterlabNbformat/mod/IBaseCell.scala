@@ -27,25 +27,19 @@ trait IBaseCell
 }
 object IBaseCell {
   
-  @scala.inline
-  def apply(cell_type: String, metadata: Partial[ICellMetadata], source: MultilineString): IBaseCell = {
+  inline def apply(cell_type: String, metadata: Partial[ICellMetadata], source: MultilineString): IBaseCell = {
     val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseCell]
   }
   
-  @scala.inline
-  implicit class IBaseCellMutableBuilder[Self <: IBaseCell] (val x: Self) extends AnyVal {
+  extension [Self <: IBaseCell](x: Self) {
     
-    @scala.inline
-    def setCell_type(value: String): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
+    inline def setCell_type(value: String): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: Partial[ICellMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Partial[ICellMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: MultilineString): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: MultilineString): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

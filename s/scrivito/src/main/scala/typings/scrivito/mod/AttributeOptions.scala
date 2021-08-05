@@ -12,31 +12,23 @@ trait AttributeOptions extends StObject {
 }
 object AttributeOptions {
   
-  @scala.inline
-  def apply(): AttributeOptions = {
+  inline def apply(): AttributeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeOptions]
   }
   
-  @scala.inline
-  implicit class AttributeOptionsMutableBuilder[Self <: AttributeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeOptions](x: Self) {
     
-    @scala.inline
-    def setOnly(value: String | js.Array[String]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+    inline def setOnly(value: String | js.Array[String]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    @scala.inline
-    def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
+    inline def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

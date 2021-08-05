@@ -18,25 +18,19 @@ trait AccessLevelFilter extends StObject {
 }
 object AccessLevelFilter {
   
-  @scala.inline
-  def apply(): AccessLevelFilter = {
+  inline def apply(): AccessLevelFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessLevelFilter]
   }
   
-  @scala.inline
-  implicit class AccessLevelFilterMutableBuilder[Self <: AccessLevelFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AccessLevelFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: AccessLevelFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: AccessLevelFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValue(value: AccessLevelFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AccessLevelFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

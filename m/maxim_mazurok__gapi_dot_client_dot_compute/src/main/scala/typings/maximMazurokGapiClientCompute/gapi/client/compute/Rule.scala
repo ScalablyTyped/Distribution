@@ -29,70 +29,49 @@ trait Rule extends StObject {
 }
 object Rule {
   
-  @scala.inline
-  def apply(): Rule = {
+  inline def apply(): Rule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rule]
   }
   
-  @scala.inline
-  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+  extension [Self <: Rule](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIns(value: js.Array[String]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
+    inline def setIns(value: js.Array[String]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsUndefined: Self = StObject.set(x, "ins", js.undefined)
+    inline def setInsUndefined: Self = StObject.set(x, "ins", js.undefined)
     
-    @scala.inline
-    def setInsVarargs(value: String*): Self = StObject.set(x, "ins", js.Array(value :_*))
+    inline def setInsVarargs(value: String*): Self = StObject.set(x, "ins", js.Array(value :_*))
     
-    @scala.inline
-    def setLogConfigs(value: js.Array[LogConfig]): Self = StObject.set(x, "logConfigs", value.asInstanceOf[js.Any])
+    inline def setLogConfigs(value: js.Array[LogConfig]): Self = StObject.set(x, "logConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogConfigsUndefined: Self = StObject.set(x, "logConfigs", js.undefined)
+    inline def setLogConfigsUndefined: Self = StObject.set(x, "logConfigs", js.undefined)
     
-    @scala.inline
-    def setLogConfigsVarargs(value: LogConfig*): Self = StObject.set(x, "logConfigs", js.Array(value :_*))
+    inline def setLogConfigsVarargs(value: LogConfig*): Self = StObject.set(x, "logConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setNotIns(value: js.Array[String]): Self = StObject.set(x, "notIns", value.asInstanceOf[js.Any])
+    inline def setNotIns(value: js.Array[String]): Self = StObject.set(x, "notIns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotInsUndefined: Self = StObject.set(x, "notIns", js.undefined)
+    inline def setNotInsUndefined: Self = StObject.set(x, "notIns", js.undefined)
     
-    @scala.inline
-    def setNotInsVarargs(value: String*): Self = StObject.set(x, "notIns", js.Array(value :_*))
+    inline def setNotInsVarargs(value: String*): Self = StObject.set(x, "notIns", js.Array(value :_*))
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

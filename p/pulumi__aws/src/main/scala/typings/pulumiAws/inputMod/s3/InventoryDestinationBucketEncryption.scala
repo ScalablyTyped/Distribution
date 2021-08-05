@@ -19,25 +19,19 @@ trait InventoryDestinationBucketEncryption extends StObject {
 }
 object InventoryDestinationBucketEncryption {
   
-  @scala.inline
-  def apply(): InventoryDestinationBucketEncryption = {
+  inline def apply(): InventoryDestinationBucketEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventoryDestinationBucketEncryption]
   }
   
-  @scala.inline
-  implicit class InventoryDestinationBucketEncryptionMutableBuilder[Self <: InventoryDestinationBucketEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryDestinationBucketEncryption](x: Self) {
     
-    @scala.inline
-    def setSseKms(value: Input[InventoryDestinationBucketEncryptionSseKms]): Self = StObject.set(x, "sseKms", value.asInstanceOf[js.Any])
+    inline def setSseKms(value: Input[InventoryDestinationBucketEncryptionSseKms]): Self = StObject.set(x, "sseKms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseKmsUndefined: Self = StObject.set(x, "sseKms", js.undefined)
+    inline def setSseKmsUndefined: Self = StObject.set(x, "sseKms", js.undefined)
     
-    @scala.inline
-    def setSseS3(value: Input[InventoryDestinationBucketEncryptionSseS3]): Self = StObject.set(x, "sseS3", value.asInstanceOf[js.Any])
+    inline def setSseS3(value: Input[InventoryDestinationBucketEncryptionSseS3]): Self = StObject.set(x, "sseS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseS3Undefined: Self = StObject.set(x, "sseS3", js.undefined)
+    inline def setSseS3Undefined: Self = StObject.set(x, "sseS3", js.undefined)
   }
 }

@@ -20,9 +20,9 @@ object tooltipBaseMod {
       */
     def this(props: ITooltipProps, context: js.Any) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _onRenderContent: js.Any = js.native
+    /* private */ var _onRenderContent: js.Any = js.native
   }
   /* static members */
   object TooltipBase {
@@ -34,7 +34,6 @@ object tooltipBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Tooltip/Tooltip.base", "TooltipBase.defaultProps")
     @js.native
     def defaultProps: PartialITooltipProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialITooltipProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialITooltipProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

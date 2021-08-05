@@ -76,21 +76,16 @@ object licenseConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LicenseConfigurationState): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LicenseConfigurationState, opts: CustomResourceOptions): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
+    inline def get(name: String, id: Input[ID]): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
+    inline def get(name: String, id: Input[ID], state: LicenseConfigurationState): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
+    inline def get(name: String, id: Input[ID], state: LicenseConfigurationState, opts: CustomResourceOptions): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
     
     /**
       * Returns true if the given object is an instance of LicenseConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/licenseConfiguration.LicenseConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/licensemanager/licenseConfiguration.LicenseConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/licenseConfiguration.LicenseConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/licensemanager/licenseConfiguration.LicenseConfiguration */ Boolean]
   }
   
   trait LicenseConfigurationArgs extends StObject {
@@ -132,56 +127,40 @@ object licenseConfigurationMod {
   }
   object LicenseConfigurationArgs {
     
-    @scala.inline
-    def apply(licenseCountingType: Input[String]): LicenseConfigurationArgs = {
+    inline def apply(licenseCountingType: Input[String]): LicenseConfigurationArgs = {
       val __obj = js.Dynamic.literal(licenseCountingType = licenseCountingType.asInstanceOf[js.Any])
       __obj.asInstanceOf[LicenseConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class LicenseConfigurationArgsMutableBuilder[Self <: LicenseConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LicenseConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLicenseCount(value: Input[Double]): Self = StObject.set(x, "licenseCount", value.asInstanceOf[js.Any])
+      inline def setLicenseCount(value: Input[Double]): Self = StObject.set(x, "licenseCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseCountHardLimit(value: Input[Boolean]): Self = StObject.set(x, "licenseCountHardLimit", value.asInstanceOf[js.Any])
+      inline def setLicenseCountHardLimit(value: Input[Boolean]): Self = StObject.set(x, "licenseCountHardLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseCountHardLimitUndefined: Self = StObject.set(x, "licenseCountHardLimit", js.undefined)
+      inline def setLicenseCountHardLimitUndefined: Self = StObject.set(x, "licenseCountHardLimit", js.undefined)
       
-      @scala.inline
-      def setLicenseCountUndefined: Self = StObject.set(x, "licenseCount", js.undefined)
+      inline def setLicenseCountUndefined: Self = StObject.set(x, "licenseCount", js.undefined)
       
-      @scala.inline
-      def setLicenseCountingType(value: Input[String]): Self = StObject.set(x, "licenseCountingType", value.asInstanceOf[js.Any])
+      inline def setLicenseCountingType(value: Input[String]): Self = StObject.set(x, "licenseCountingType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseRules(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "licenseRules", value.asInstanceOf[js.Any])
+      inline def setLicenseRules(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "licenseRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseRulesUndefined: Self = StObject.set(x, "licenseRules", js.undefined)
+      inline def setLicenseRulesUndefined: Self = StObject.set(x, "licenseRules", js.undefined)
       
-      @scala.inline
-      def setLicenseRulesVarargs(value: Input[String]*): Self = StObject.set(x, "licenseRules", js.Array(value :_*))
+      inline def setLicenseRulesVarargs(value: Input[String]*): Self = StObject.set(x, "licenseRules", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -224,59 +203,42 @@ object licenseConfigurationMod {
   }
   object LicenseConfigurationState {
     
-    @scala.inline
-    def apply(): LicenseConfigurationState = {
+    inline def apply(): LicenseConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LicenseConfigurationState]
     }
     
-    @scala.inline
-    implicit class LicenseConfigurationStateMutableBuilder[Self <: LicenseConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: LicenseConfigurationState](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLicenseCount(value: Input[Double]): Self = StObject.set(x, "licenseCount", value.asInstanceOf[js.Any])
+      inline def setLicenseCount(value: Input[Double]): Self = StObject.set(x, "licenseCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseCountHardLimit(value: Input[Boolean]): Self = StObject.set(x, "licenseCountHardLimit", value.asInstanceOf[js.Any])
+      inline def setLicenseCountHardLimit(value: Input[Boolean]): Self = StObject.set(x, "licenseCountHardLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseCountHardLimitUndefined: Self = StObject.set(x, "licenseCountHardLimit", js.undefined)
+      inline def setLicenseCountHardLimitUndefined: Self = StObject.set(x, "licenseCountHardLimit", js.undefined)
       
-      @scala.inline
-      def setLicenseCountUndefined: Self = StObject.set(x, "licenseCount", js.undefined)
+      inline def setLicenseCountUndefined: Self = StObject.set(x, "licenseCount", js.undefined)
       
-      @scala.inline
-      def setLicenseCountingType(value: Input[String]): Self = StObject.set(x, "licenseCountingType", value.asInstanceOf[js.Any])
+      inline def setLicenseCountingType(value: Input[String]): Self = StObject.set(x, "licenseCountingType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseCountingTypeUndefined: Self = StObject.set(x, "licenseCountingType", js.undefined)
+      inline def setLicenseCountingTypeUndefined: Self = StObject.set(x, "licenseCountingType", js.undefined)
       
-      @scala.inline
-      def setLicenseRules(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "licenseRules", value.asInstanceOf[js.Any])
+      inline def setLicenseRules(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "licenseRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseRulesUndefined: Self = StObject.set(x, "licenseRules", js.undefined)
+      inline def setLicenseRulesUndefined: Self = StObject.set(x, "licenseRules", js.undefined)
       
-      @scala.inline
-      def setLicenseRulesVarargs(value: Input[String]*): Self = StObject.set(x, "licenseRules", js.Array(value :_*))
+      inline def setLicenseRulesVarargs(value: Input[String]*): Self = StObject.set(x, "licenseRules", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

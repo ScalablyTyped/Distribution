@@ -12,22 +12,17 @@ trait SmartHomeV1SyncOtherDeviceIds extends StObject {
 }
 object SmartHomeV1SyncOtherDeviceIds {
   
-  @scala.inline
-  def apply(deviceId: String): SmartHomeV1SyncOtherDeviceIds = {
+  inline def apply(deviceId: String): SmartHomeV1SyncOtherDeviceIds = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1SyncOtherDeviceIds]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1SyncOtherDeviceIdsMutableBuilder[Self <: SmartHomeV1SyncOtherDeviceIds] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1SyncOtherDeviceIds](x: Self) {
     
-    @scala.inline
-    def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
+    inline def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
   }
 }

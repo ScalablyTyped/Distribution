@@ -28,8 +28,7 @@ trait Builder extends StObject {
 }
 object Builder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buildHtml: () => js.Array[js.Any],
     closeTag: String => Unit,
     document: js.Array[js.Any],
@@ -45,43 +44,30 @@ object Builder {
     __obj.asInstanceOf[Builder]
   }
   
-  @scala.inline
-  implicit class BuilderMutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
+  extension [Self <: Builder](x: Self) {
     
-    @scala.inline
-    def setBuildHtml(value: () => js.Array[js.Any]): Self = StObject.set(x, "buildHtml", js.Any.fromFunction0(value))
+    inline def setBuildHtml(value: () => js.Array[js.Any]): Self = StObject.set(x, "buildHtml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloseTag(value: String => Unit): Self = StObject.set(x, "closeTag", js.Any.fromFunction1(value))
+    inline def setCloseTag(value: String => Unit): Self = StObject.set(x, "closeTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDocument(value: js.Array[js.Any]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: js.Array[js.Any]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVarargs(value: js.Any*): Self = StObject.set(x, "document", js.Array(value :_*))
+    inline def setDocumentVarargs(value: js.Any*): Self = StObject.set(x, "document", js.Array(value :_*))
     
-    @scala.inline
-    def setExtractOptions(value: js.Any => js.Any): Self = StObject.set(x, "extractOptions", js.Any.fromFunction1(value))
+    inline def setExtractOptions(value: js.Any => js.Any): Self = StObject.set(x, "extractOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenTag(value: (String, js.Any) => Unit): Self = StObject.set(x, "openTag", js.Any.fromFunction2(value))
+    inline def setOpenTag(value: (String, js.Any) => Unit): Self = StObject.set(x, "openTag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPostProcessingSteps(value: js.Array[js.Any]): Self = StObject.set(x, "postProcessingSteps", value.asInstanceOf[js.Any])
+    inline def setPostProcessingSteps(value: js.Array[js.Any]): Self = StObject.set(x, "postProcessingSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostProcessingStepsVarargs(value: js.Any*): Self = StObject.set(x, "postProcessingSteps", js.Array(value :_*))
+    inline def setPostProcessingStepsVarargs(value: js.Any*): Self = StObject.set(x, "postProcessingSteps", js.Array(value :_*))
     
-    @scala.inline
-    def setRaw(value: String => Unit): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+    inline def setRaw(value: String => Unit): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubview(value: (js.Any, View) => Unit): Self = StObject.set(x, "subview", js.Any.fromFunction2(value))
+    inline def setSubview(value: (js.Any, View) => Unit): Self = StObject.set(x, "subview", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTag(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "tag", js.Any.fromFunction2(value))
+    inline def setTag(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "tag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setText(value: String => Unit): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: String => Unit): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

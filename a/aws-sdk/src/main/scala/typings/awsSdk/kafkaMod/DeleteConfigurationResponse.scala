@@ -22,25 +22,19 @@ trait DeleteConfigurationResponse extends StObject {
 }
 object DeleteConfigurationResponse {
   
-  @scala.inline
-  def apply(): DeleteConfigurationResponse = {
+  inline def apply(): DeleteConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DeleteConfigurationResponseMutableBuilder[Self <: DeleteConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setState(value: ConfigurationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ConfigurationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

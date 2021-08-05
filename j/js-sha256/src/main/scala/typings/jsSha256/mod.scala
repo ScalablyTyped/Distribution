@@ -15,14 +15,12 @@ object mod {
   @JSImport("js-sha256", "sha224")
   @js.native
   def sha224: Hash = js.native
-  @scala.inline
-  def sha224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
+  inline def sha224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha256", "sha256")
   @js.native
   def sha256: Hash = js.native
-  @scala.inline
-  def sha256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
+  inline def sha256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Hash extends StObject {
@@ -122,8 +120,7 @@ object mod {
   }
   object Hasher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       array: () => js.Array[Double],
       arrayBuffer: () => ArrayBuffer,
       digest: () => js.Array[Double],
@@ -134,23 +131,17 @@ object mod {
       __obj.asInstanceOf[Hasher]
     }
     
-    @scala.inline
-    implicit class HasherMutableBuilder[Self <: Hasher] (val x: Self) extends AnyVal {
+    extension [Self <: Hasher](x: Self) {
       
-      @scala.inline
-      def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
+      inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
+      inline def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
+      inline def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: Message => Hasher): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Message => Hasher): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   

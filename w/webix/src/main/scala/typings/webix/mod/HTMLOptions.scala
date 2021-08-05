@@ -40,6 +40,5 @@ trait HTMLOptions extends StObject {
 }
 object HTMLOptions {
   
-  @scala.inline
-  def apply: HTMLOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("HTMLOptions").asInstanceOf[HTMLOptions]
+  inline def apply: HTMLOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("HTMLOptions").asInstanceOf[HTMLOptions]
 }

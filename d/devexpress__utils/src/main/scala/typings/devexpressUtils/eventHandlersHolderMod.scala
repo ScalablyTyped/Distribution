@@ -44,7 +44,7 @@ object eventHandlersHolderMod {
     def addListenerToWindow(eventName: String, handler: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     def addListenerToWindow(eventName: String, handler: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
-    var handlers: js.Any = js.native
+    /* private */ var handlers: js.Any = js.native
     
     def removeAllListeners(): Unit = js.native
   }

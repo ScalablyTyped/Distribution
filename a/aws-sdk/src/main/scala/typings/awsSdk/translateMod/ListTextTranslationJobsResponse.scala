@@ -18,28 +18,21 @@ trait ListTextTranslationJobsResponse extends StObject {
 }
 object ListTextTranslationJobsResponse {
   
-  @scala.inline
-  def apply(): ListTextTranslationJobsResponse = {
+  inline def apply(): ListTextTranslationJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTextTranslationJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListTextTranslationJobsResponseMutableBuilder[Self <: ListTextTranslationJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTextTranslationJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTextTranslationJobPropertiesList(value: TextTranslationJobPropertiesList): Self = StObject.set(x, "TextTranslationJobPropertiesList", value.asInstanceOf[js.Any])
+    inline def setTextTranslationJobPropertiesList(value: TextTranslationJobPropertiesList): Self = StObject.set(x, "TextTranslationJobPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTranslationJobPropertiesListUndefined: Self = StObject.set(x, "TextTranslationJobPropertiesList", js.undefined)
+    inline def setTextTranslationJobPropertiesListUndefined: Self = StObject.set(x, "TextTranslationJobPropertiesList", js.undefined)
     
-    @scala.inline
-    def setTextTranslationJobPropertiesListVarargs(value: TextTranslationJobProperties*): Self = StObject.set(x, "TextTranslationJobPropertiesList", js.Array(value :_*))
+    inline def setTextTranslationJobPropertiesListVarargs(value: TextTranslationJobProperties*): Self = StObject.set(x, "TextTranslationJobPropertiesList", js.Array(value :_*))
   }
 }

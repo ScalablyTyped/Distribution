@@ -16,18 +16,15 @@ object Alignment {
   @JSImport("@blueprintjs/core", "Alignment.CENTER")
   @js.native
   def CENTER: center = js.native
-  @scala.inline
-  def CENTER_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
+  inline def CENTER_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "Alignment.LEFT")
   @js.native
   def LEFT: left = js.native
-  @scala.inline
-  def LEFT_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+  inline def LEFT_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "Alignment.RIGHT")
   @js.native
   def RIGHT: right = js.native
-  @scala.inline
-  def RIGHT_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+  inline def RIGHT_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
 }

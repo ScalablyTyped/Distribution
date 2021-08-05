@@ -23,37 +23,27 @@ trait MetricFilter extends StObject {
 }
 object MetricFilter {
   
-  @scala.inline
-  def apply(): MetricFilter = {
+  inline def apply(): MetricFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricFilter]
   }
   
-  @scala.inline
-  implicit class MetricFilterMutableBuilder[Self <: MetricFilter] (val x: Self) extends AnyVal {
+  extension [Self <: MetricFilter](x: Self) {
     
-    @scala.inline
-    def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
+    inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
+    inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
-    @scala.inline
-    def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+    inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
   }
 }

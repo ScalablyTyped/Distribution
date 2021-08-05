@@ -12,16 +12,13 @@ trait MlEstimateModelMemory[T]
 }
 object MlEstimateModelMemory {
   
-  @scala.inline
-  def apply[T](body: T): MlEstimateModelMemory[T] = {
+  inline def apply[T](body: T): MlEstimateModelMemory[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlEstimateModelMemory[T]]
   }
   
-  @scala.inline
-  implicit class MlEstimateModelMemoryMutableBuilder[Self <: MlEstimateModelMemory[?], T] (val x: Self & MlEstimateModelMemory[T]) extends AnyVal {
+  extension [Self <: MlEstimateModelMemory[?], T](x: Self & MlEstimateModelMemory[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

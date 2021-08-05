@@ -18,19 +18,15 @@ trait GetUserSettingsRequest extends StObject {
 }
 object GetUserSettingsRequest {
   
-  @scala.inline
-  def apply(AccountId: String, UserId: String): GetUserSettingsRequest = {
+  inline def apply(AccountId: String, UserId: String): GetUserSettingsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserSettingsRequest]
   }
   
-  @scala.inline
-  implicit class GetUserSettingsRequestMutableBuilder[Self <: GetUserSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

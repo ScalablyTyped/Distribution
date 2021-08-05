@@ -25,25 +25,19 @@ trait SchemaPullRequestFilter extends StObject {
 }
 object SchemaPullRequestFilter {
   
-  @scala.inline
-  def apply(): SchemaPullRequestFilter = {
+  inline def apply(): SchemaPullRequestFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPullRequestFilter]
   }
   
-  @scala.inline
-  implicit class SchemaPullRequestFilterMutableBuilder[Self <: SchemaPullRequestFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPullRequestFilter](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setCommentControl(value: String): Self = StObject.set(x, "commentControl", value.asInstanceOf[js.Any])
+    inline def setCommentControl(value: String): Self = StObject.set(x, "commentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentControlUndefined: Self = StObject.set(x, "commentControl", js.undefined)
+    inline def setCommentControlUndefined: Self = StObject.set(x, "commentControl", js.undefined)
   }
 }

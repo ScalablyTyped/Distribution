@@ -25,23 +25,18 @@ object typesCancelKeyDeletionOutputMod {
   }
   object CancelKeyDeletionOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CancelKeyDeletionOutput = {
+    inline def apply($metadata: ResponseMetadata): CancelKeyDeletionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CancelKeyDeletionOutput]
     }
     
-    @scala.inline
-    implicit class CancelKeyDeletionOutputMutableBuilder[Self <: CancelKeyDeletionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CancelKeyDeletionOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     }
   }
 }

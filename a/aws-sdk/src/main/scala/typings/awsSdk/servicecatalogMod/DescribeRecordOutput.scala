@@ -23,34 +23,25 @@ trait DescribeRecordOutput extends StObject {
 }
 object DescribeRecordOutput {
   
-  @scala.inline
-  def apply(): DescribeRecordOutput = {
+  inline def apply(): DescribeRecordOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRecordOutput]
   }
   
-  @scala.inline
-  implicit class DescribeRecordOutputMutableBuilder[Self <: DescribeRecordOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRecordOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
+    inline def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordDetailUndefined: Self = StObject.set(x, "RecordDetail", js.undefined)
+    inline def setRecordDetailUndefined: Self = StObject.set(x, "RecordDetail", js.undefined)
     
-    @scala.inline
-    def setRecordOutputs(value: RecordOutputs): Self = StObject.set(x, "RecordOutputs", value.asInstanceOf[js.Any])
+    inline def setRecordOutputs(value: RecordOutputs): Self = StObject.set(x, "RecordOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordOutputsUndefined: Self = StObject.set(x, "RecordOutputs", js.undefined)
+    inline def setRecordOutputsUndefined: Self = StObject.set(x, "RecordOutputs", js.undefined)
     
-    @scala.inline
-    def setRecordOutputsVarargs(value: RecordOutput*): Self = StObject.set(x, "RecordOutputs", js.Array(value :_*))
+    inline def setRecordOutputsVarargs(value: RecordOutput*): Self = StObject.set(x, "RecordOutputs", js.Array(value :_*))
   }
 }

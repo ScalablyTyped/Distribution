@@ -28,8 +28,7 @@ trait XApproveActionListener
 }
 object XApproveActionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveAction: EventObject => Boolean,
     disposing: EventObject => Unit,
@@ -40,10 +39,8 @@ object XApproveActionListener {
     __obj.asInstanceOf[XApproveActionListener]
   }
   
-  @scala.inline
-  implicit class XApproveActionListenerMutableBuilder[Self <: XApproveActionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XApproveActionListener](x: Self) {
     
-    @scala.inline
-    def setApproveAction(value: EventObject => Boolean): Self = StObject.set(x, "approveAction", js.Any.fromFunction1(value))
+    inline def setApproveAction(value: EventObject => Boolean): Self = StObject.set(x, "approveAction", js.Any.fromFunction1(value))
   }
 }

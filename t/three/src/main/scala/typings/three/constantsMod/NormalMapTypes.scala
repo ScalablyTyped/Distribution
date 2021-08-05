@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait NormalMapTypes extends StObject
 object NormalMapTypes {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[NormalMapTypes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalMapTypes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalMapTypes & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[NormalMapTypes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalMapTypes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalMapTypes & scala.Nothing]]
 }

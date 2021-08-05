@@ -15,25 +15,19 @@ trait Filters extends StObject {
 }
 object Filters {
   
-  @scala.inline
-  def apply(key: String, rangeBehavior: String): Filters = {
+  inline def apply(key: String, rangeBehavior: String): Filters = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], rangeBehavior = rangeBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filters]
   }
   
-  @scala.inline
-  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
+  extension [Self <: Filters](x: Self) {
     
-    @scala.inline
-    def setFilters(value: Variables): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Variables): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeBehavior(value: String): Self = StObject.set(x, "rangeBehavior", value.asInstanceOf[js.Any])
+    inline def setRangeBehavior(value: String): Self = StObject.set(x, "rangeBehavior", value.asInstanceOf[js.Any])
   }
 }

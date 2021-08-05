@@ -24,25 +24,19 @@ trait Behavior extends StObject {
 }
 object Behavior {
   
-  @scala.inline
-  def apply(category: String, name: String, percentage: Double, trait_id: String): Behavior = {
+  inline def apply(category: String, name: String, percentage: Double, trait_id: String): Behavior = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any], trait_id = trait_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Behavior]
   }
   
-  @scala.inline
-  implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
+  extension [Self <: Behavior](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrait_id(value: String): Self = StObject.set(x, "trait_id", value.asInstanceOf[js.Any])
+    inline def setTrait_id(value: String): Self = StObject.set(x, "trait_id", value.asInstanceOf[js.Any])
   }
 }

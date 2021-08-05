@@ -13,17 +13,14 @@ object installedAppsMod {
   }
   object InstallationInfo {
     
-    @scala.inline
-    def apply(cachedManifest: js.Any): InstallationInfo = {
+    inline def apply(cachedManifest: js.Any): InstallationInfo = {
       val __obj = js.Dynamic.literal(cachedManifest = cachedManifest.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallationInfo]
     }
     
-    @scala.inline
-    implicit class InstallationInfoMutableBuilder[Self <: InstallationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: InstallationInfo](x: Self) {
       
-      @scala.inline
-      def setCachedManifest(value: js.Any): Self = StObject.set(x, "cachedManifest", value.asInstanceOf[js.Any])
+      inline def setCachedManifest(value: js.Any): Self = StObject.set(x, "cachedManifest", value.asInstanceOf[js.Any])
     }
   }
   

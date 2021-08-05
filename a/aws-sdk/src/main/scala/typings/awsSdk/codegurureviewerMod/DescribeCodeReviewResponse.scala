@@ -13,19 +13,15 @@ trait DescribeCodeReviewResponse extends StObject {
 }
 object DescribeCodeReviewResponse {
   
-  @scala.inline
-  def apply(): DescribeCodeReviewResponse = {
+  inline def apply(): DescribeCodeReviewResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCodeReviewResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCodeReviewResponseMutableBuilder[Self <: DescribeCodeReviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCodeReviewResponse](x: Self) {
     
-    @scala.inline
-    def setCodeReview(value: CodeReview): Self = StObject.set(x, "CodeReview", value.asInstanceOf[js.Any])
+    inline def setCodeReview(value: CodeReview): Self = StObject.set(x, "CodeReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeReviewUndefined: Self = StObject.set(x, "CodeReview", js.undefined)
+    inline def setCodeReviewUndefined: Self = StObject.set(x, "CodeReview", js.undefined)
   }
 }

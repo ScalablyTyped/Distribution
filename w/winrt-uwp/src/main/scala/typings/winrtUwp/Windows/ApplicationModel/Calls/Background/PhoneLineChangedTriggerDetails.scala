@@ -22,8 +22,7 @@ trait PhoneLineChangedTriggerDetails extends StObject {
 }
 object PhoneLineChangedTriggerDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeType: PhoneLineChangeKind,
     hasLinePropertyChanged: PhoneLineProperties => Boolean,
     lineId: String
@@ -32,16 +31,12 @@ object PhoneLineChangedTriggerDetails {
     __obj.asInstanceOf[PhoneLineChangedTriggerDetails]
   }
   
-  @scala.inline
-  implicit class PhoneLineChangedTriggerDetailsMutableBuilder[Self <: PhoneLineChangedTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneLineChangedTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: PhoneLineChangeKind): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: PhoneLineChangeKind): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasLinePropertyChanged(value: PhoneLineProperties => Boolean): Self = StObject.set(x, "hasLinePropertyChanged", js.Any.fromFunction1(value))
+    inline def setHasLinePropertyChanged(value: PhoneLineProperties => Boolean): Self = StObject.set(x, "hasLinePropertyChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
+    inline def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
   }
 }

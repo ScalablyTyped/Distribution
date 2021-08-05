@@ -28,34 +28,25 @@ trait DeleteClusterMessage extends StObject {
 }
 object DeleteClusterMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): DeleteClusterMessage = {
+  inline def apply(ClusterIdentifier: String): DeleteClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterMessage]
   }
   
-  @scala.inline
-  implicit class DeleteClusterMessageMutableBuilder[Self <: DeleteClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClusterMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setFinalClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalClusterSnapshotIdentifier", js.undefined)
+    inline def setFinalClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalClusterSnapshotIdentifier", js.undefined)
     
-    @scala.inline
-    def setFinalClusterSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "FinalClusterSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    inline def setFinalClusterSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "FinalClusterSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalClusterSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "FinalClusterSnapshotRetentionPeriod", js.undefined)
+    inline def setFinalClusterSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "FinalClusterSnapshotRetentionPeriod", js.undefined)
     
-    @scala.inline
-    def setSkipFinalClusterSnapshot(value: Boolean): Self = StObject.set(x, "SkipFinalClusterSnapshot", value.asInstanceOf[js.Any])
+    inline def setSkipFinalClusterSnapshot(value: Boolean): Self = StObject.set(x, "SkipFinalClusterSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipFinalClusterSnapshotUndefined: Self = StObject.set(x, "SkipFinalClusterSnapshot", js.undefined)
+    inline def setSkipFinalClusterSnapshotUndefined: Self = StObject.set(x, "SkipFinalClusterSnapshot", js.undefined)
   }
 }

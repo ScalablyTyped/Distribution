@@ -17,22 +17,17 @@ trait OpaqueTagToken
 }
 object OpaqueTagToken {
   
-  @scala.inline
-  def apply(contents: String, location: LocationRange): OpaqueTagToken = {
+  inline def apply(contents: String, location: LocationRange): OpaqueTagToken = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "opaqueTag")
     __obj.asInstanceOf[OpaqueTagToken]
   }
   
-  @scala.inline
-  implicit class OpaqueTagTokenMutableBuilder[Self <: OpaqueTagToken] (val x: Self) extends AnyVal {
+  extension [Self <: OpaqueTagToken](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: opaqueTag): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: opaqueTag): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

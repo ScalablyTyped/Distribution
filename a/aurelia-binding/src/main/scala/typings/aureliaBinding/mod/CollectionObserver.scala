@@ -15,19 +15,16 @@ trait CollectionObserver extends StObject {
 }
 object CollectionObserver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     subscribe: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[js.Any, js.Any]], Unit] => Disposable
   ): CollectionObserver = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
     __obj.asInstanceOf[CollectionObserver]
   }
   
-  @scala.inline
-  implicit class CollectionObserverMutableBuilder[Self <: CollectionObserver] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionObserver](x: Self) {
     
-    @scala.inline
-    def setSubscribe(
+    inline def setSubscribe(
       value: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[js.Any, js.Any]], Unit] => Disposable
     ): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
   }

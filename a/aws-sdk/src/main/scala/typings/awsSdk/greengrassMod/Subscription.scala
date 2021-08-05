@@ -28,25 +28,19 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(Id: string, Source: string, Subject: string, Target: string): Subscription = {
+  inline def apply(Id: string, Source: string, Subject: string, Target: string): Subscription = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: string): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: string): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: string): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: string): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: string): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: string): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

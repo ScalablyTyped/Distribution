@@ -22,19 +22,15 @@ trait ClientObject extends StObject {
 }
 object ClientObject {
   
-  @scala.inline
-  def apply(context: ClientRequestContext, isNullObject: Boolean): ClientObject = {
+  inline def apply(context: ClientRequestContext, isNullObject: Boolean): ClientObject = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], isNullObject = isNullObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientObject]
   }
   
-  @scala.inline
-  implicit class ClientObjectMutableBuilder[Self <: ClientObject] (val x: Self) extends AnyVal {
+  extension [Self <: ClientObject](x: Self) {
     
-    @scala.inline
-    def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNullObject(value: Boolean): Self = StObject.set(x, "isNullObject", value.asInstanceOf[js.Any])
+    inline def setIsNullObject(value: Boolean): Self = StObject.set(x, "isNullObject", value.asInstanceOf[js.Any])
   }
 }

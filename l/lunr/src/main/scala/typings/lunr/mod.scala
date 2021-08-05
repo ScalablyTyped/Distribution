@@ -46,8 +46,7 @@ object mod {
     *   });
     * ```
     */
-  @scala.inline
-  def apply(config: ConfigFunction): Index = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Index]
+  inline def apply(config: ConfigFunction): Index = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Index]
   
   @JSImport("lunr", JSImport.Namespace)
   @js.native
@@ -312,8 +311,7 @@ object mod {
       * @param serializedIndex - A previously serialized lunr.Index
       */
     /* static member */
-    @scala.inline
-    def load(serializedIndex: js.Object): Index = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serializedIndex.asInstanceOf[js.Any]).asInstanceOf[Index]
+    inline def load(serializedIndex: js.Object): Index = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serializedIndex.asInstanceOf[js.Any]).asInstanceOf[Index]
     
     trait Attributes extends StObject {
       
@@ -344,8 +342,7 @@ object mod {
     }
     object Attributes {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         documentVectors: StringDictionary[Vector],
         fields: js.Array[String],
         invertedIndex: js.Object,
@@ -356,26 +353,19 @@ object mod {
         __obj.asInstanceOf[Attributes]
       }
       
-      @scala.inline
-      implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+      extension [Self <: Attributes](x: Self) {
         
-        @scala.inline
-        def setDocumentVectors(value: StringDictionary[Vector]): Self = StObject.set(x, "documentVectors", value.asInstanceOf[js.Any])
+        inline def setDocumentVectors(value: StringDictionary[Vector]): Self = StObject.set(x, "documentVectors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setInvertedIndex(value: js.Object): Self = StObject.set(x, "invertedIndex", value.asInstanceOf[js.Any])
+        inline def setInvertedIndex(value: js.Object): Self = StObject.set(x, "invertedIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPipeline(value: Pipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+        inline def setPipeline(value: Pipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTokenSet(value: TokenSet): Self = StObject.set(x, "tokenSet", value.asInstanceOf[js.Any])
+        inline def setTokenSet(value: TokenSet): Self = StObject.set(x, "tokenSet", value.asInstanceOf[js.Any])
       }
     }
     
@@ -451,23 +441,18 @@ object mod {
     }
     object Result {
       
-      @scala.inline
-      def apply(matchData: MatchData, ref: String, score: Double): Result = {
+      inline def apply(matchData: MatchData, ref: String, score: Double): Result = {
         val __obj = js.Dynamic.literal(matchData = matchData.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
         __obj.asInstanceOf[Result]
       }
       
-      @scala.inline
-      implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+      extension [Self <: Result](x: Self) {
         
-        @scala.inline
-        def setMatchData(value: MatchData): Self = StObject.set(x, "matchData", value.asInstanceOf[js.Any])
+        inline def setMatchData(value: MatchData): Self = StObject.set(x, "matchData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+        inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+        inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -620,8 +605,7 @@ object mod {
       * @param serialised - The serialised pipeline to load.
       */
     /* static member */
-    @scala.inline
-    def load(serialised: js.Object): Pipeline = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialised.asInstanceOf[js.Any]).asInstanceOf[Pipeline]
+    inline def load(serialised: js.Object): Pipeline = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialised.asInstanceOf[js.Any]).asInstanceOf[Pipeline]
     
     /**
       * Register a function with the pipeline.
@@ -636,8 +620,7 @@ object mod {
       * @param label - The label to register this function with
       */
     /* static member */
-    @scala.inline
-    def registerFunction(fn: PipelineFunction, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunction")(fn.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerFunction(fn: PipelineFunction, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunction")(fn.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -798,8 +781,7 @@ object mod {
     }
     object Clause {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         boost: Double,
         editDistance: Double,
         fields: js.Array[String],
@@ -811,29 +793,21 @@ object mod {
         __obj.asInstanceOf[Clause]
       }
       
-      @scala.inline
-      implicit class ClauseMutableBuilder[Self <: Clause] (val x: Self) extends AnyVal {
+      extension [Self <: Clause](x: Self) {
         
-        @scala.inline
-        def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
+        inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditDistance(value: Double): Self = StObject.set(x, "editDistance", value.asInstanceOf[js.Any])
+        inline def setEditDistance(value: Double): Self = StObject.set(x, "editDistance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+        inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsePipeline(value: Boolean): Self = StObject.set(x, "usePipeline", value.asInstanceOf[js.Any])
+        inline def setUsePipeline(value: Boolean): Self = StObject.set(x, "usePipeline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWildcard(value: Double): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
+        inline def setWildcard(value: Double): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -1077,8 +1051,7 @@ object mod {
     * @see lunr.Pipeline
     * @see lunr.stopWordFilter
     */
-  @scala.inline
-  def generateStopWordFilter(stopWords: js.Array[String]): PipelineFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStopWordFilter")(stopWords.asInstanceOf[js.Any]).asInstanceOf[PipelineFunction]
+  inline def generateStopWordFilter(stopWords: js.Array[String]): PipelineFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStopWordFilter")(stopWords.asInstanceOf[js.Any]).asInstanceOf[PipelineFunction]
   
   /**
     * lunr.stemmer is an english language stemmer, this is a JavaScript
@@ -1089,8 +1062,7 @@ object mod {
     * @param token - The string to stem
     * @see {@link lunr.Pipeline}
     */
-  @scala.inline
-  def stemmer(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("stemmer")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
+  inline def stemmer(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("stemmer")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
   
   /**
     * lunr.stopWordFilter is an English language stop word list filter, any words
@@ -1104,8 +1076,7 @@ object mod {
     * @param token - A token to check for being a stop word.
     * @see {@link lunr.Pipeline}
     */
-  @scala.inline
-  def stopWordFilter(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWordFilter")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
+  inline def stopWordFilter(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWordFilter")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
   
   object tokenizer {
     
@@ -1120,14 +1091,10 @@ object mod {
       *
       * @param obj - The object to convert into tokens
       */
-    @scala.inline
-    def apply(): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[Token]]
-    @scala.inline
-    def apply(obj: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-    @scala.inline
-    def apply(obj: js.Array[js.Object]): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-    @scala.inline
-    def apply(obj: js.Object): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    inline def apply(): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[Token]]
+    inline def apply(obj: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    inline def apply(obj: js.Array[js.Object]): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    inline def apply(obj: js.Object): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
     
     @JSImport("lunr", "tokenizer")
     @js.native
@@ -1142,8 +1109,7 @@ object mod {
     @JSImport("lunr", "tokenizer.separator")
     @js.native
     def separator: RegExp = js.native
-    @scala.inline
-    def separator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
+    inline def separator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -1160,8 +1126,7 @@ object mod {
     * @param token The token to pass through the filter
     * @see lunr.Pipeline
     */
-  @scala.inline
-  def trimmer(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("trimmer")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
+  inline def trimmer(token: Token): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("trimmer")(token.asInstanceOf[js.Any]).asInstanceOf[Token]
   
   /**
     * A namespace containing utils for the rest of the lunr library
@@ -1182,16 +1147,14 @@ object mod {
       * @param obj The object to convert to a string.
       * @return string representation of the passed object.
       */
-    @scala.inline
-    def asString(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def asString(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Print a warning message to the console.
       *
       * @param message The message to be printed.
       */
-    @scala.inline
-    def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("lunr", "version")

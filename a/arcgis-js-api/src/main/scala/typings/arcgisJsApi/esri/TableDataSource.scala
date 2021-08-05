@@ -40,8 +40,7 @@ trait TableDataSource
 }
 object TableDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     dataSourceName: String,
     gdbVersion: String,
@@ -55,19 +54,14 @@ object TableDataSource {
     __obj.asInstanceOf[TableDataSource]
   }
   
-  @scala.inline
-  implicit class TableDataSourceMutableBuilder[Self <: TableDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: TableDataSource](x: Self) {
     
-    @scala.inline
-    def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }
 }

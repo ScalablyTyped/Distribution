@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CustomView")
 @js.native
-class CustomView protected ()
+/* private */ class CustomView ()
   extends StObject
      with typings.activexExcel.Excel.CustomView {
   
@@ -20,7 +20,7 @@ class CustomView protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.CustomView_typekey")
   var ExcelDotCustomView_typekey: typings.activexExcel.Excel.CustomView = js.native
   

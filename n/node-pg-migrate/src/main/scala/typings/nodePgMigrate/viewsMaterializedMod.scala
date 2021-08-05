@@ -17,21 +17,15 @@ object viewsMaterializedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alterMaterializedView(mOptions: MigrationOptions): AlterMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("alterMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterMaterializedView]
+  inline def alterMaterializedView(mOptions: MigrationOptions): AlterMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("alterMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterMaterializedView]
   
-  @scala.inline
-  def createMaterializedView(mOptions: MigrationOptions): CreateMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateMaterializedView]
+  inline def createMaterializedView(mOptions: MigrationOptions): CreateMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateMaterializedView]
   
-  @scala.inline
-  def dropMaterializedView(mOptions: MigrationOptions): DropMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("dropMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropMaterializedView]
+  inline def dropMaterializedView(mOptions: MigrationOptions): DropMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("dropMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropMaterializedView]
   
-  @scala.inline
-  def refreshMaterializedView(mOptions: MigrationOptions): RefreshMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RefreshMaterializedView]
+  inline def refreshMaterializedView(mOptions: MigrationOptions): RefreshMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RefreshMaterializedView]
   
-  @scala.inline
-  def renameMaterializedView(mOptions: MigrationOptions): RenameMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("renameMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameMaterializedView]
+  inline def renameMaterializedView(mOptions: MigrationOptions): RenameMaterializedView = ^.asInstanceOf[js.Dynamic].applyDynamic("renameMaterializedView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameMaterializedView]
   
-  @scala.inline
-  def renameMaterializedViewColumn(mOptions: MigrationOptions): RenameMaterializedViewColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("renameMaterializedViewColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameMaterializedViewColumn]
+  inline def renameMaterializedViewColumn(mOptions: MigrationOptions): RenameMaterializedViewColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("renameMaterializedViewColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameMaterializedViewColumn]
 }

@@ -16,25 +16,19 @@ trait userIdnumberundefinedBase
 }
 object userIdnumberundefinedBase {
   
-  @scala.inline
-  def apply(): userIdnumberundefinedBase = {
+  inline def apply(): userIdnumberundefinedBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[userIdnumberundefinedBase]
   }
   
-  @scala.inline
-  implicit class userIdnumberundefinedBaseMutableBuilder[Self <: userIdnumberundefinedBase] (val x: Self) extends AnyVal {
+  extension [Self <: userIdnumberundefinedBase](x: Self) {
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
     
-    @scala.inline
-    def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

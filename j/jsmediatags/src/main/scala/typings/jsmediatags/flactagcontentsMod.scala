@@ -27,17 +27,13 @@ object flactagcontentsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createBlock(`type`: Double, data: ByteArray): MetadataBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[MetadataBlock]
+    inline def createBlock(`type`: Double, data: ByteArray): MetadataBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[MetadataBlock]
     
-    @scala.inline
-    def createCommentBlock(data: js.Array[String]*): MetadataBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommentBlock")(data.asInstanceOf[js.Any]).asInstanceOf[MetadataBlock]
+    inline def createCommentBlock(data: js.Array[String]*): MetadataBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommentBlock")(data.asInstanceOf[js.Any]).asInstanceOf[MetadataBlock]
     
-    @scala.inline
-    def createPictureBlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPictureBlock")().asInstanceOf[Unit]
+    inline def createPictureBlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPictureBlock")().asInstanceOf[Unit]
     
-    @scala.inline
-    def createStreamBlock(): MetadataBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createStreamBlock")().asInstanceOf[MetadataBlock]
+    inline def createStreamBlock(): MetadataBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createStreamBlock")().asInstanceOf[MetadataBlock]
   }
   
   @JSImport("jsmediatags/build2/FLACTagContents", "MetadataBlock")
@@ -64,23 +60,18 @@ object flactagcontentsMod {
   }
   object FLACTagContents {
     
-    @scala.inline
-    def apply(blocks: js.Array[MetadataBlock], toArray: () => ByteArray): FLACTagContents = {
+    inline def apply(blocks: js.Array[MetadataBlock], toArray: () => ByteArray): FLACTagContents = {
       val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], toArray = js.Any.fromFunction0(toArray))
       __obj.asInstanceOf[FLACTagContents]
     }
     
-    @scala.inline
-    implicit class FLACTagContentsMutableBuilder[Self <: FLACTagContents] (val x: Self) extends AnyVal {
+    extension [Self <: FLACTagContents](x: Self) {
       
-      @scala.inline
-      def setBlocks(value: js.Array[MetadataBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: js.Array[MetadataBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksVarargs(value: MetadataBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: MetadataBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
       
-      @scala.inline
-      def setToArray(value: () => ByteArray): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => ByteArray): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     }
   }
 }

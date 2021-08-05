@@ -72,8 +72,7 @@ object disputes {
   }
   object IIssuingDispute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       created: Double,
       currency: String,
@@ -90,38 +89,27 @@ object disputes {
       __obj.asInstanceOf[IIssuingDispute]
     }
     
-    @scala.inline
-    implicit class IIssuingDisputeMutableBuilder[Self <: IIssuingDispute] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingDispute](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisputed_transaction(value: String | ITransaction): Self = StObject.set(x, "disputed_transaction", value.asInstanceOf[js.Any])
+      inline def setDisputed_transaction(value: String | ITransaction): Self = StObject.set(x, "disputed_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvidence(value: IIssuingDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
+      inline def setEvidence(value: IIssuingDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: issuingDotdispute): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: issuingDotdispute): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: IssuingDisputeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: IssuingDisputeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: IssuingDisputeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: IssuingDisputeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,32 +139,24 @@ object disputes {
   }
   object IIssuingDisputeCreateOptions {
     
-    @scala.inline
-    def apply(disputed_transaction: String, reason: IssuingDisputeReason): IIssuingDisputeCreateOptions = {
+    inline def apply(disputed_transaction: String, reason: IssuingDisputeReason): IIssuingDisputeCreateOptions = {
       val __obj = js.Dynamic.literal(disputed_transaction = disputed_transaction.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIssuingDisputeCreateOptions]
     }
     
-    @scala.inline
-    implicit class IIssuingDisputeCreateOptionsMutableBuilder[Self <: IIssuingDisputeCreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingDisputeCreateOptions](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setDisputed_transaction(value: String): Self = StObject.set(x, "disputed_transaction", value.asInstanceOf[js.Any])
+      inline def setDisputed_transaction(value: String): Self = StObject.set(x, "disputed_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvidence(value: IIssuingDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
+      inline def setEvidence(value: IIssuingDisputeEvidence): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
+      inline def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
       
-      @scala.inline
-      def setReason(value: IssuingDisputeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: IssuingDisputeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,26 +171,20 @@ object disputes {
   }
   object IIssuingDisputeEvidence {
     
-    @scala.inline
-    def apply(): IIssuingDisputeEvidence = {
+    inline def apply(): IIssuingDisputeEvidence = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIssuingDisputeEvidence]
     }
     
-    @scala.inline
-    implicit class IIssuingDisputeEvidenceMutableBuilder[Self <: IIssuingDisputeEvidence] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingDisputeEvidence](x: Self) {
       
-      @scala.inline
-      def setFraudulent(value: Disputeexplanation): Self = StObject.set(x, "fraudulent", value.asInstanceOf[js.Any])
+      inline def setFraudulent(value: Disputeexplanation): Self = StObject.set(x, "fraudulent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFraudulentUndefined: Self = StObject.set(x, "fraudulent", js.undefined)
+      inline def setFraudulentUndefined: Self = StObject.set(x, "fraudulent", js.undefined)
       
-      @scala.inline
-      def setOther(value: Disputeexplanation): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: Disputeexplanation): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
     }
   }
   
@@ -243,44 +217,32 @@ object disputes {
   }
   object IIssuingDisputeListOptions {
     
-    @scala.inline
-    def apply(): IIssuingDisputeListOptions = {
+    inline def apply(): IIssuingDisputeListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIssuingDisputeListOptions]
     }
     
-    @scala.inline
-    implicit class IIssuingDisputeListOptionsMutableBuilder[Self <: IIssuingDisputeListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingDisputeListOptions](x: Self) {
       
-      @scala.inline
-      def setCreated(value: ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setDisputed_transaction(value: String): Self = StObject.set(x, "disputed_transaction", value.asInstanceOf[js.Any])
+      inline def setDisputed_transaction(value: String): Self = StObject.set(x, "disputed_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisputed_transactionUndefined: Self = StObject.set(x, "disputed_transaction", js.undefined)
+      inline def setDisputed_transactionUndefined: Self = StObject.set(x, "disputed_transaction", js.undefined)
       
-      @scala.inline
-      def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
+      inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
+      inline def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
+      inline def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
+      inline def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
     }
   }
   
@@ -290,20 +252,16 @@ object disputes {
   }
   object IIssuingDisputeUpdateOptions {
     
-    @scala.inline
-    def apply(): IIssuingDisputeUpdateOptions = {
+    inline def apply(): IIssuingDisputeUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIssuingDisputeUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IIssuingDisputeUpdateOptionsMutableBuilder[Self <: IIssuingDisputeUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingDisputeUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -314,11 +272,9 @@ object disputes {
   trait IssuingDisputeReason extends StObject
   object IssuingDisputeReason {
     
-    @scala.inline
-    def fraudlent: typings.stripe.stripeStrings.fraudlent = "fraudlent".asInstanceOf[typings.stripe.stripeStrings.fraudlent]
+    inline def fraudlent: typings.stripe.stripeStrings.fraudlent = "fraudlent".asInstanceOf[typings.stripe.stripeStrings.fraudlent]
     
-    @scala.inline
-    def other: typings.stripe.stripeStrings.other = "other".asInstanceOf[typings.stripe.stripeStrings.other]
+    inline def other: typings.stripe.stripeStrings.other = "other".asInstanceOf[typings.stripe.stripeStrings.other]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -330,16 +286,12 @@ object disputes {
   trait IssuingDisputeStatus extends StObject
   object IssuingDisputeStatus {
     
-    @scala.inline
-    def lost: typings.stripe.stripeStrings.lost = "lost".asInstanceOf[typings.stripe.stripeStrings.lost]
+    inline def lost: typings.stripe.stripeStrings.lost = "lost".asInstanceOf[typings.stripe.stripeStrings.lost]
     
-    @scala.inline
-    def under_review: typings.stripe.stripeStrings.under_review = "under_review".asInstanceOf[typings.stripe.stripeStrings.under_review]
+    inline def under_review: typings.stripe.stripeStrings.under_review = "under_review".asInstanceOf[typings.stripe.stripeStrings.under_review]
     
-    @scala.inline
-    def unsubmitted: typings.stripe.stripeStrings.unsubmitted = "unsubmitted".asInstanceOf[typings.stripe.stripeStrings.unsubmitted]
+    inline def unsubmitted: typings.stripe.stripeStrings.unsubmitted = "unsubmitted".asInstanceOf[typings.stripe.stripeStrings.unsubmitted]
     
-    @scala.inline
-    def won: typings.stripe.stripeStrings.won = "won".asInstanceOf[typings.stripe.stripeStrings.won]
+    inline def won: typings.stripe.stripeStrings.won = "won".asInstanceOf[typings.stripe.stripeStrings.won]
   }
 }

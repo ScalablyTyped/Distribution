@@ -15,8 +15,7 @@ object typesPutBucketVersioningOutputMod {
        with _OutputTypesUnion
   object PutBucketVersioningOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutBucketVersioningOutput = {
+    inline def apply($metadata: ResponseMetadata): PutBucketVersioningOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutBucketVersioningOutput]
     }

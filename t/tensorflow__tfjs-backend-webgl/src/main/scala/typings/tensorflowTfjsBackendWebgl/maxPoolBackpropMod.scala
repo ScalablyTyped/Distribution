@@ -13,8 +13,7 @@ object maxPoolBackpropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def maxPoolBackprop(args: AttrsMaxPoolBackpropAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolBackprop")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def maxPoolBackprop(args: AttrsMaxPoolBackpropAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolBackprop")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/MaxPoolBackprop", "maxPoolBackpropConfig")
   @js.native

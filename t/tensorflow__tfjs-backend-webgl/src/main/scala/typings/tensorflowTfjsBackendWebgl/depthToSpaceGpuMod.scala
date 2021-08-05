@@ -21,15 +21,15 @@ object depthToSpaceGpuMod {
     
     var dataFormat: String = js.native
     
-    var getDepthCoordString: js.Any = js.native
+    /* private */ var getDepthCoordString: js.Any = js.native
     
-    var getHeightCoordString: js.Any = js.native
+    /* private */ var getHeightCoordString: js.Any = js.native
     
-    var getInputSamplingString: js.Any = js.native
+    /* private */ var getInputSamplingString: js.Any = js.native
     
-    var getOutputDepthSize: js.Any = js.native
+    /* private */ var getOutputDepthSize: js.Any = js.native
     
-    var getWidthCoordString: js.Any = js.native
+    /* private */ var getWidthCoordString: js.Any = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

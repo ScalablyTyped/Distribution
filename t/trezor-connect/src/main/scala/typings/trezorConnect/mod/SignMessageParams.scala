@@ -16,28 +16,21 @@ trait SignMessageParams
 }
 object SignMessageParams {
   
-  @scala.inline
-  def apply(message: String, path: String | js.Array[Double]): SignMessageParams = {
+  inline def apply(message: String, path: String | js.Array[Double]): SignMessageParams = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignMessageParams]
   }
   
-  @scala.inline
-  implicit class SignMessageParamsMutableBuilder[Self <: SignMessageParams] (val x: Self) extends AnyVal {
+  extension [Self <: SignMessageParams](x: Self) {
     
-    @scala.inline
-    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
+    inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
+    inline def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

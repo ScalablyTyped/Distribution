@@ -18,28 +18,21 @@ trait DescribeMaintenanceWindowTasksResult extends StObject {
 }
 object DescribeMaintenanceWindowTasksResult {
   
-  @scala.inline
-  def apply(): DescribeMaintenanceWindowTasksResult = {
+  inline def apply(): DescribeMaintenanceWindowTasksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMaintenanceWindowTasksResult]
   }
   
-  @scala.inline
-  implicit class DescribeMaintenanceWindowTasksResultMutableBuilder[Self <: DescribeMaintenanceWindowTasksResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMaintenanceWindowTasksResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTasks(value: MaintenanceWindowTaskList): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: MaintenanceWindowTaskList): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
+    inline def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
     
-    @scala.inline
-    def setTasksVarargs(value: MaintenanceWindowTask*): Self = StObject.set(x, "Tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: MaintenanceWindowTask*): Self = StObject.set(x, "Tasks", js.Array(value :_*))
   }
 }

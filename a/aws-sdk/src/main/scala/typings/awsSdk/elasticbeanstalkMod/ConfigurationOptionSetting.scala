@@ -28,37 +28,27 @@ trait ConfigurationOptionSetting extends StObject {
 }
 object ConfigurationOptionSetting {
   
-  @scala.inline
-  def apply(): ConfigurationOptionSetting = {
+  inline def apply(): ConfigurationOptionSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationOptionSetting]
   }
   
-  @scala.inline
-  implicit class ConfigurationOptionSettingMutableBuilder[Self <: ConfigurationOptionSetting] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationOptionSetting](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
-    @scala.inline
-    def setOptionName(value: ConfigurationOptionName): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
+    inline def setOptionName(value: ConfigurationOptionName): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
+    inline def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
-    @scala.inline
-    def setValue(value: ConfigurationOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ConfigurationOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

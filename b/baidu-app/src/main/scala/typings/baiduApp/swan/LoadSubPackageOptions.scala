@@ -12,16 +12,13 @@ trait LoadSubPackageOptions
 }
 object LoadSubPackageOptions {
   
-  @scala.inline
-  def apply(root: String): LoadSubPackageOptions = {
+  inline def apply(root: String): LoadSubPackageOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadSubPackageOptions]
   }
   
-  @scala.inline
-  implicit class LoadSubPackageOptionsMutableBuilder[Self <: LoadSubPackageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadSubPackageOptions](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

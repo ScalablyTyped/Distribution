@@ -11,16 +11,13 @@ trait ReadonlyControlledComponeValue extends StObject {
 }
 object ReadonlyControlledComponeValue {
   
-  @scala.inline
-  def apply(value: String): ReadonlyControlledComponeValue = {
+  inline def apply(value: String): ReadonlyControlledComponeValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyControlledComponeValue]
   }
   
-  @scala.inline
-  implicit class ReadonlyControlledComponeValueMutableBuilder[Self <: ReadonlyControlledComponeValue] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyControlledComponeValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

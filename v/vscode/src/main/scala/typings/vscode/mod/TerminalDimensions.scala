@@ -18,19 +18,15 @@ trait TerminalDimensions extends StObject {
 }
 object TerminalDimensions {
   
-  @scala.inline
-  def apply(columns: Double, rows: Double): TerminalDimensions = {
+  inline def apply(columns: Double, rows: Double): TerminalDimensions = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalDimensions]
   }
   
-  @scala.inline
-  implicit class TerminalDimensionsMutableBuilder[Self <: TerminalDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: TerminalDimensions](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

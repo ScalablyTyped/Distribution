@@ -8,6 +8,5 @@ object apidevtoolsSwaggerParserStrings {
   
   @js.native
   sealed trait ignore extends StObject
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
 }

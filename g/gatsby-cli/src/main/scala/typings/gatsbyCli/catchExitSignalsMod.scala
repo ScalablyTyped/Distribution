@@ -10,9 +10,7 @@ object catchExitSignalsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def catchExitSignals(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("catchExitSignals")().asInstanceOf[Unit]
+  inline def catchExitSignals(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("catchExitSignals")().asInstanceOf[Unit]
   
-  @scala.inline
-  def prematureEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prematureEnd")().asInstanceOf[Unit]
+  inline def prematureEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prematureEnd")().asInstanceOf[Unit]
 }

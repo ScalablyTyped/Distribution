@@ -16,8 +16,7 @@ trait IConnectionCost extends StObject {
 }
 object IConnectionCost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approachingDataLimit: Boolean,
     networkCostType: NetworkCostType,
     overDataLimit: Boolean,
@@ -27,19 +26,14 @@ object IConnectionCost {
     __obj.asInstanceOf[IConnectionCost]
   }
   
-  @scala.inline
-  implicit class IConnectionCostMutableBuilder[Self <: IConnectionCost] (val x: Self) extends AnyVal {
+  extension [Self <: IConnectionCost](x: Self) {
     
-    @scala.inline
-    def setApproachingDataLimit(value: Boolean): Self = StObject.set(x, "approachingDataLimit", value.asInstanceOf[js.Any])
+    inline def setApproachingDataLimit(value: Boolean): Self = StObject.set(x, "approachingDataLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkCostType(value: NetworkCostType): Self = StObject.set(x, "networkCostType", value.asInstanceOf[js.Any])
+    inline def setNetworkCostType(value: NetworkCostType): Self = StObject.set(x, "networkCostType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverDataLimit(value: Boolean): Self = StObject.set(x, "overDataLimit", value.asInstanceOf[js.Any])
+    inline def setOverDataLimit(value: Boolean): Self = StObject.set(x, "overDataLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoaming(value: Boolean): Self = StObject.set(x, "roaming", value.asInstanceOf[js.Any])
+    inline def setRoaming(value: Boolean): Self = StObject.set(x, "roaming", value.asInstanceOf[js.Any])
   }
 }

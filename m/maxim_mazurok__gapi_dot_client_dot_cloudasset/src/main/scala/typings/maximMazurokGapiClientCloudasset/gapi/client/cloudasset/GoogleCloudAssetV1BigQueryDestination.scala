@@ -32,37 +32,27 @@ trait GoogleCloudAssetV1BigQueryDestination extends StObject {
 }
 object GoogleCloudAssetV1BigQueryDestination {
   
-  @scala.inline
-  def apply(): GoogleCloudAssetV1BigQueryDestination = {
+  inline def apply(): GoogleCloudAssetV1BigQueryDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssetV1BigQueryDestination]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssetV1BigQueryDestinationMutableBuilder[Self <: GoogleCloudAssetV1BigQueryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssetV1BigQueryDestination](x: Self) {
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+    inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
     
-    @scala.inline
-    def setTablePrefix(value: String): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
+    inline def setTablePrefix(value: String): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
+    inline def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
     
-    @scala.inline
-    def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
+    inline def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
+    inline def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

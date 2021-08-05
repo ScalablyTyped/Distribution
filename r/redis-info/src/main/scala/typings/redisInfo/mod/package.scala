@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def parse(info: java.lang.String): typings.redisInfo.mod.RedisInfo = typings.redisInfo.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(info.asInstanceOf[js.Any]).asInstanceOf[typings.redisInfo.mod.RedisInfo]
+inline def parse(info: java.lang.String): typings.redisInfo.mod.RedisInfo = typings.redisInfo.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(info.asInstanceOf[js.Any]).asInstanceOf[typings.redisInfo.mod.RedisInfo]
 
 type PersistenceInfo = typings.redisInfo.mod.BasePersistenceInfo & (typings.redisInfo.mod.PersistenceAOFOnInfo | typings.redisInfo.mod.PersistenceAOFOffInfo) & (typings.redisInfo.mod.PersistenceLoadingOnInfo | typings.redisInfo.mod.PersistenceLoadingOffInfo)
 

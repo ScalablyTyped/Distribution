@@ -12,25 +12,19 @@ trait IFilterOptions extends StObject {
 }
 object IFilterOptions {
   
-  @scala.inline
-  def apply(): IFilterOptions = {
+  inline def apply(): IFilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFilterOptions]
   }
   
-  @scala.inline
-  implicit class IFilterOptionsMutableBuilder[Self <: IFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFilterOptions](x: Self) {
     
-    @scala.inline
-    def setFilterText(value: String): Self = StObject.set(x, "filterText", value.asInstanceOf[js.Any])
+    inline def setFilterText(value: String): Self = StObject.set(x, "filterText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTextUndefined: Self = StObject.set(x, "filterText", js.undefined)
+    inline def setFilterTextUndefined: Self = StObject.set(x, "filterText", js.undefined)
     
-    @scala.inline
-    def setUseExternalFilter(value: Boolean): Self = StObject.set(x, "useExternalFilter", value.asInstanceOf[js.Any])
+    inline def setUseExternalFilter(value: Boolean): Self = StObject.set(x, "useExternalFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExternalFilterUndefined: Self = StObject.set(x, "useExternalFilter", js.undefined)
+    inline def setUseExternalFilterUndefined: Self = StObject.set(x, "useExternalFilter", js.undefined)
   }
 }

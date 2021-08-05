@@ -16,11 +16,8 @@ object isJWTMod {
   @js.native
   val IS_JWT: /* "isJwt" */ String = js.native
   
-  @scala.inline
-  def IsJWT_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJWT")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def IsJWT_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJWT")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsJWT_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJWT")().asInstanceOf[PropertyDecorator]
+  inline def IsJWT_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsJWT")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def isJWT(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJWT")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isJWT(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJWT")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

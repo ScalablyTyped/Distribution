@@ -20,8 +20,7 @@ trait GridsProps
      with GridAreaProps
 object GridsProps {
   
-  @scala.inline
-  def apply(): GridsProps = {
+  inline def apply(): GridsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridsProps]
   }

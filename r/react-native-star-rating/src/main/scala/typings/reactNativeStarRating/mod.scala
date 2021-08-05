@@ -162,137 +162,94 @@ object mod {
   }
   object StarRatingProps {
     
-    @scala.inline
-    def apply(): StarRatingProps = {
+    inline def apply(): StarRatingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StarRatingProps]
     }
     
-    @scala.inline
-    implicit class StarRatingPropsMutableBuilder[Self <: StarRatingProps] (val x: Self) extends AnyVal {
+    extension [Self <: StarRatingProps](x: Self) {
       
-      @scala.inline
-      def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+      inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+      inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: bounce | flash | jello | pulse | rotate | rubberBand | shake | swing | tada | wobble): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: bounce | flash | jello | pulse | rotate | rubberBand | shake | swing | tada | wobble): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+      inline def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
+      inline def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
       
-      @scala.inline
-      def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+      inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+      inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEmptyStar(value: String | ImageURISource): Self = StObject.set(x, "emptyStar", value.asInstanceOf[js.Any])
+      inline def setEmptyStar(value: String | ImageURISource): Self = StObject.set(x, "emptyStar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStarColor(value: String): Self = StObject.set(x, "emptyStarColor", value.asInstanceOf[js.Any])
+      inline def setEmptyStarColor(value: String): Self = StObject.set(x, "emptyStarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStarColorUndefined: Self = StObject.set(x, "emptyStarColor", js.undefined)
+      inline def setEmptyStarColorUndefined: Self = StObject.set(x, "emptyStarColor", js.undefined)
       
-      @scala.inline
-      def setEmptyStarUndefined: Self = StObject.set(x, "emptyStar", js.undefined)
+      inline def setEmptyStarUndefined: Self = StObject.set(x, "emptyStar", js.undefined)
       
-      @scala.inline
-      def setFullStar(value: String | ImageURISource): Self = StObject.set(x, "fullStar", value.asInstanceOf[js.Any])
+      inline def setFullStar(value: String | ImageURISource): Self = StObject.set(x, "fullStar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullStarColor(value: String): Self = StObject.set(x, "fullStarColor", value.asInstanceOf[js.Any])
+      inline def setFullStarColor(value: String): Self = StObject.set(x, "fullStarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullStarColorUndefined: Self = StObject.set(x, "fullStarColor", js.undefined)
+      inline def setFullStarColorUndefined: Self = StObject.set(x, "fullStarColor", js.undefined)
       
-      @scala.inline
-      def setFullStarUndefined: Self = StObject.set(x, "fullStar", js.undefined)
+      inline def setFullStarUndefined: Self = StObject.set(x, "fullStar", js.undefined)
       
-      @scala.inline
-      def setHalfStar(value: String | ImageURISource): Self = StObject.set(x, "halfStar", value.asInstanceOf[js.Any])
+      inline def setHalfStar(value: String | ImageURISource): Self = StObject.set(x, "halfStar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfStarColor(value: String): Self = StObject.set(x, "halfStarColor", value.asInstanceOf[js.Any])
+      inline def setHalfStarColor(value: String): Self = StObject.set(x, "halfStarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfStarColorUndefined: Self = StObject.set(x, "halfStarColor", js.undefined)
+      inline def setHalfStarColorUndefined: Self = StObject.set(x, "halfStarColor", js.undefined)
       
-      @scala.inline
-      def setHalfStarEnabled(value: Boolean): Self = StObject.set(x, "halfStarEnabled", value.asInstanceOf[js.Any])
+      inline def setHalfStarEnabled(value: Boolean): Self = StObject.set(x, "halfStarEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfStarEnabledUndefined: Self = StObject.set(x, "halfStarEnabled", js.undefined)
+      inline def setHalfStarEnabledUndefined: Self = StObject.set(x, "halfStarEnabled", js.undefined)
       
-      @scala.inline
-      def setHalfStarUndefined: Self = StObject.set(x, "halfStar", js.undefined)
+      inline def setHalfStarUndefined: Self = StObject.set(x, "halfStar", js.undefined)
       
-      @scala.inline
-      def setIconSet(value: String): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
+      inline def setIconSet(value: String): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
+      inline def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
       
-      @scala.inline
-      def setMaxStars(value: Double): Self = StObject.set(x, "maxStars", value.asInstanceOf[js.Any])
+      inline def setMaxStars(value: Double): Self = StObject.set(x, "maxStars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxStarsUndefined: Self = StObject.set(x, "maxStars", js.undefined)
+      inline def setMaxStarsUndefined: Self = StObject.set(x, "maxStars", js.undefined)
       
-      @scala.inline
-      def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+      inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      @scala.inline
-      def setSelectedStar(value: /* rating */ Double => Unit): Self = StObject.set(x, "selectedStar", js.Any.fromFunction1(value))
+      inline def setSelectedStar(value: /* rating */ Double => Unit): Self = StObject.set(x, "selectedStar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectedStarUndefined: Self = StObject.set(x, "selectedStar", js.undefined)
+      inline def setSelectedStarUndefined: Self = StObject.set(x, "selectedStar", js.undefined)
       
-      @scala.inline
-      def setStarSize(value: Double): Self = StObject.set(x, "starSize", value.asInstanceOf[js.Any])
+      inline def setStarSize(value: Double): Self = StObject.set(x, "starSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarSizeUndefined: Self = StObject.set(x, "starSize", js.undefined)
+      inline def setStarSizeUndefined: Self = StObject.set(x, "starSize", js.undefined)
       
-      @scala.inline
-      def setStarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "starStyle", value.asInstanceOf[js.Any])
+      inline def setStarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "starStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarStyleNull: Self = StObject.set(x, "starStyle", null)
+      inline def setStarStyleNull: Self = StObject.set(x, "starStyle", null)
       
-      @scala.inline
-      def setStarStyleUndefined: Self = StObject.set(x, "starStyle", js.undefined)
+      inline def setStarStyleUndefined: Self = StObject.set(x, "starStyle", js.undefined)
     }
   }
 }

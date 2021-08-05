@@ -12,19 +12,15 @@ trait Plan extends StObject {
 }
 object Plan {
   
-  @scala.inline
-  def apply(parentContext: Context, rootRequest: Request): Plan = {
+  inline def apply(parentContext: Context, rootRequest: Request): Plan = {
     val __obj = js.Dynamic.literal(parentContext = parentContext.asInstanceOf[js.Any], rootRequest = rootRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plan]
   }
   
-  @scala.inline
-  implicit class PlanMutableBuilder[Self <: Plan] (val x: Self) extends AnyVal {
+  extension [Self <: Plan](x: Self) {
     
-    @scala.inline
-    def setParentContext(value: Context): Self = StObject.set(x, "parentContext", value.asInstanceOf[js.Any])
+    inline def setParentContext(value: Context): Self = StObject.set(x, "parentContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootRequest(value: Request): Self = StObject.set(x, "rootRequest", value.asInstanceOf[js.Any])
+    inline def setRootRequest(value: Request): Self = StObject.set(x, "rootRequest", value.asInstanceOf[js.Any])
   }
 }

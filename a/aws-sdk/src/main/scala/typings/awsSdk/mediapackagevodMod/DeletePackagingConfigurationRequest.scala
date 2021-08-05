@@ -13,16 +13,13 @@ trait DeletePackagingConfigurationRequest extends StObject {
 }
 object DeletePackagingConfigurationRequest {
   
-  @scala.inline
-  def apply(Id: string): DeletePackagingConfigurationRequest = {
+  inline def apply(Id: string): DeletePackagingConfigurationRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePackagingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeletePackagingConfigurationRequestMutableBuilder[Self <: DeletePackagingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePackagingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

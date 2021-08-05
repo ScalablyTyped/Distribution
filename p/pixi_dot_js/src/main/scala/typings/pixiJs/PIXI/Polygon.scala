@@ -47,8 +47,7 @@ trait Polygon extends StObject {
 }
 object Polygon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeStroke: Boolean,
     contains: (Double, Double) => Boolean,
     points: js.Array[Double],
@@ -59,22 +58,16 @@ object Polygon {
     __obj.asInstanceOf[Polygon]
   }
   
-  @scala.inline
-  implicit class PolygonMutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
+  extension [Self <: Polygon](x: Self) {
     
-    @scala.inline
-    def setCloseStroke(value: Boolean): Self = StObject.set(x, "closeStroke", value.asInstanceOf[js.Any])
+    inline def setCloseStroke(value: Boolean): Self = StObject.set(x, "closeStroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+    inline def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

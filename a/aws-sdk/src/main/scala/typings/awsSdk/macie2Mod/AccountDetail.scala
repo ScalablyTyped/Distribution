@@ -18,19 +18,15 @@ trait AccountDetail extends StObject {
 }
 object AccountDetail {
   
-  @scala.inline
-  def apply(accountId: string, email: string): AccountDetail = {
+  inline def apply(accountId: string, email: string): AccountDetail = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountDetail]
   }
   
-  @scala.inline
-  implicit class AccountDetailMutableBuilder[Self <: AccountDetail] (val x: Self) extends AnyVal {
+  extension [Self <: AccountDetail](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: string): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: string): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

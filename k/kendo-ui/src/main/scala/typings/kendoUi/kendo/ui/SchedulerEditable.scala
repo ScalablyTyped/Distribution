@@ -26,67 +26,47 @@ trait SchedulerEditable extends StObject {
 }
 object SchedulerEditable {
   
-  @scala.inline
-  def apply(): SchedulerEditable = {
+  inline def apply(): SchedulerEditable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerEditable]
   }
   
-  @scala.inline
-  implicit class SchedulerEditableMutableBuilder[Self <: SchedulerEditable] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerEditable](x: Self) {
     
-    @scala.inline
-    def setConfirmation(value: Boolean | String): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
+    inline def setConfirmation(value: Boolean | String): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmationUndefined: Self = StObject.set(x, "confirmation", js.undefined)
+    inline def setConfirmationUndefined: Self = StObject.set(x, "confirmation", js.undefined)
     
-    @scala.inline
-    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setEditRecurringMode(value: String): Self = StObject.set(x, "editRecurringMode", value.asInstanceOf[js.Any])
+    inline def setEditRecurringMode(value: String): Self = StObject.set(x, "editRecurringMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditRecurringModeUndefined: Self = StObject.set(x, "editRecurringMode", js.undefined)
+    inline def setEditRecurringModeUndefined: Self = StObject.set(x, "editRecurringMode", js.undefined)
     
-    @scala.inline
-    def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
-    @scala.inline
-    def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

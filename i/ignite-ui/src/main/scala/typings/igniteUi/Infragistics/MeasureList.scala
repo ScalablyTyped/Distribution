@@ -22,19 +22,15 @@ trait MeasureList extends StObject {
 }
 object MeasureList {
   
-  @scala.inline
-  def apply(caption: js.Object => String, measures: js.Object => js.Array[js.Any]): MeasureList = {
+  inline def apply(caption: js.Object => String, measures: js.Object => js.Array[js.Any]): MeasureList = {
     val __obj = js.Dynamic.literal(caption = js.Any.fromFunction1(caption), measures = js.Any.fromFunction1(measures))
     __obj.asInstanceOf[MeasureList]
   }
   
-  @scala.inline
-  implicit class MeasureListMutableBuilder[Self <: MeasureList] (val x: Self) extends AnyVal {
+  extension [Self <: MeasureList](x: Self) {
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMeasures(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "measures", js.Any.fromFunction1(value))
+    inline def setMeasures(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "measures", js.Any.fromFunction1(value))
   }
 }

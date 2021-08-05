@@ -53,53 +53,38 @@ trait AnalyzerSummary extends StObject {
 }
 object AnalyzerSummary {
   
-  @scala.inline
-  def apply(arn: AnalyzerArn, createdAt: Timestamp, name: Name, status: AnalyzerStatus, `type`: Type): AnalyzerSummary = {
+  inline def apply(arn: AnalyzerArn, createdAt: Timestamp, name: Name, status: AnalyzerStatus, `type`: Type): AnalyzerSummary = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzerSummary]
   }
   
-  @scala.inline
-  implicit class AnalyzerSummaryMutableBuilder[Self <: AnalyzerSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzerSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: AnalyzerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AnalyzerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastResourceAnalyzed(value: String): Self = StObject.set(x, "lastResourceAnalyzed", value.asInstanceOf[js.Any])
+    inline def setLastResourceAnalyzed(value: String): Self = StObject.set(x, "lastResourceAnalyzed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastResourceAnalyzedAt(value: Timestamp): Self = StObject.set(x, "lastResourceAnalyzedAt", value.asInstanceOf[js.Any])
+    inline def setLastResourceAnalyzedAt(value: Timestamp): Self = StObject.set(x, "lastResourceAnalyzedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastResourceAnalyzedAtUndefined: Self = StObject.set(x, "lastResourceAnalyzedAt", js.undefined)
+    inline def setLastResourceAnalyzedAtUndefined: Self = StObject.set(x, "lastResourceAnalyzedAt", js.undefined)
     
-    @scala.inline
-    def setLastResourceAnalyzedUndefined: Self = StObject.set(x, "lastResourceAnalyzed", js.undefined)
+    inline def setLastResourceAnalyzedUndefined: Self = StObject.set(x, "lastResourceAnalyzed", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: AnalyzerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AnalyzerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

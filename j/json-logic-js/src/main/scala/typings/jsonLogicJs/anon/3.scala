@@ -14,17 +14,14 @@ trait `3`
 }
 object `3` {
   
-  @scala.inline
-  def apply(ExclamationmarkExclamationmark: js.Any): `3` = {
+  inline def apply(ExclamationmarkExclamationmark: js.Any): `3` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("!!")(ExclamationmarkExclamationmark.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
   
-  @scala.inline
-  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+  extension [Self <: `3`](x: Self) {
     
-    @scala.inline
-    def setExclamationmarkExclamationmark(value: js.Any): Self = StObject.set(x, "!!", value.asInstanceOf[js.Any])
+    inline def setExclamationmarkExclamationmark(value: js.Any): Self = StObject.set(x, "!!", value.asInstanceOf[js.Any])
   }
 }

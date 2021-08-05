@@ -37,41 +37,30 @@ object typesListBucketMetricsConfigurationsOutputMod {
   }
   object ListBucketMetricsConfigurationsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListBucketMetricsConfigurationsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListBucketMetricsConfigurationsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListBucketMetricsConfigurationsOutput]
     }
     
-    @scala.inline
-    implicit class ListBucketMetricsConfigurationsOutputMutableBuilder[Self <: ListBucketMetricsConfigurationsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBucketMetricsConfigurationsOutput](x: Self) {
       
-      @scala.inline
-      def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
+      inline def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
+      inline def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
       
-      @scala.inline
-      def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+      inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+      inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
       
-      @scala.inline
-      def setMetricsConfigurationList(value: js.Array[UnmarshalledMetricsConfiguration]): Self = StObject.set(x, "MetricsConfigurationList", value.asInstanceOf[js.Any])
+      inline def setMetricsConfigurationList(value: js.Array[UnmarshalledMetricsConfiguration]): Self = StObject.set(x, "MetricsConfigurationList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsConfigurationListUndefined: Self = StObject.set(x, "MetricsConfigurationList", js.undefined)
+      inline def setMetricsConfigurationListUndefined: Self = StObject.set(x, "MetricsConfigurationList", js.undefined)
       
-      @scala.inline
-      def setMetricsConfigurationListVarargs(value: UnmarshalledMetricsConfiguration*): Self = StObject.set(x, "MetricsConfigurationList", js.Array(value :_*))
+      inline def setMetricsConfigurationListVarargs(value: UnmarshalledMetricsConfiguration*): Self = StObject.set(x, "MetricsConfigurationList", js.Array(value :_*))
       
-      @scala.inline
-      def setNextContinuationToken(value: String): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
+      inline def setNextContinuationToken(value: String): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
+      inline def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
     }
   }
 }

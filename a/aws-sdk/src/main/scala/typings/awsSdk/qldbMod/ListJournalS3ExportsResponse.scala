@@ -18,28 +18,21 @@ trait ListJournalS3ExportsResponse extends StObject {
 }
 object ListJournalS3ExportsResponse {
   
-  @scala.inline
-  def apply(): ListJournalS3ExportsResponse = {
+  inline def apply(): ListJournalS3ExportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJournalS3ExportsResponse]
   }
   
-  @scala.inline
-  implicit class ListJournalS3ExportsResponseMutableBuilder[Self <: ListJournalS3ExportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListJournalS3ExportsResponse](x: Self) {
     
-    @scala.inline
-    def setJournalS3Exports(value: JournalS3ExportList): Self = StObject.set(x, "JournalS3Exports", value.asInstanceOf[js.Any])
+    inline def setJournalS3Exports(value: JournalS3ExportList): Self = StObject.set(x, "JournalS3Exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJournalS3ExportsUndefined: Self = StObject.set(x, "JournalS3Exports", js.undefined)
+    inline def setJournalS3ExportsUndefined: Self = StObject.set(x, "JournalS3Exports", js.undefined)
     
-    @scala.inline
-    def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = StObject.set(x, "JournalS3Exports", js.Array(value :_*))
+    inline def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = StObject.set(x, "JournalS3Exports", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

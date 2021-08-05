@@ -19,6 +19,5 @@ class SearchResult protected ()
 }
 object SearchResult {
   
-  @scala.inline
-  def apply: ComponentClass[SearchResultProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SearchResult").asInstanceOf[ComponentClass[SearchResultProps, ComponentState]]
+  inline def apply: ComponentClass[SearchResultProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SearchResult").asInstanceOf[ComponentClass[SearchResultProps, ComponentState]]
 }

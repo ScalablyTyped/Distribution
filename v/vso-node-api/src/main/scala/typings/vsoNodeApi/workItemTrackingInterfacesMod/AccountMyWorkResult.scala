@@ -18,22 +18,17 @@ trait AccountMyWorkResult extends StObject {
 }
 object AccountMyWorkResult {
   
-  @scala.inline
-  def apply(querySizeLimitExceeded: Boolean, workItemDetails: js.Array[AccountWorkWorkItemModel]): AccountMyWorkResult = {
+  inline def apply(querySizeLimitExceeded: Boolean, workItemDetails: js.Array[AccountWorkWorkItemModel]): AccountMyWorkResult = {
     val __obj = js.Dynamic.literal(querySizeLimitExceeded = querySizeLimitExceeded.asInstanceOf[js.Any], workItemDetails = workItemDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountMyWorkResult]
   }
   
-  @scala.inline
-  implicit class AccountMyWorkResultMutableBuilder[Self <: AccountMyWorkResult] (val x: Self) extends AnyVal {
+  extension [Self <: AccountMyWorkResult](x: Self) {
     
-    @scala.inline
-    def setQuerySizeLimitExceeded(value: Boolean): Self = StObject.set(x, "querySizeLimitExceeded", value.asInstanceOf[js.Any])
+    inline def setQuerySizeLimitExceeded(value: Boolean): Self = StObject.set(x, "querySizeLimitExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemDetails(value: js.Array[AccountWorkWorkItemModel]): Self = StObject.set(x, "workItemDetails", value.asInstanceOf[js.Any])
+    inline def setWorkItemDetails(value: js.Array[AccountWorkWorkItemModel]): Self = StObject.set(x, "workItemDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemDetailsVarargs(value: AccountWorkWorkItemModel*): Self = StObject.set(x, "workItemDetails", js.Array(value :_*))
+    inline def setWorkItemDetailsVarargs(value: AccountWorkWorkItemModel*): Self = StObject.set(x, "workItemDetails", js.Array(value :_*))
   }
 }

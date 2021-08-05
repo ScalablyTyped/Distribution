@@ -12,22 +12,17 @@ trait StackTraceId extends StObject {
 }
 object StackTraceId {
   
-  @scala.inline
-  def apply(id: String): StackTraceId = {
+  inline def apply(id: String): StackTraceId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTraceId]
   }
   
-  @scala.inline
-  implicit class StackTraceIdMutableBuilder[Self <: StackTraceId] (val x: Self) extends AnyVal {
+  extension [Self <: StackTraceId](x: Self) {
     
-    @scala.inline
-    def setDebuggerId(value: UniqueDebuggerId): Self = StObject.set(x, "debuggerId", value.asInstanceOf[js.Any])
+    inline def setDebuggerId(value: UniqueDebuggerId): Self = StObject.set(x, "debuggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggerIdUndefined: Self = StObject.set(x, "debuggerId", js.undefined)
+    inline def setDebuggerIdUndefined: Self = StObject.set(x, "debuggerId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

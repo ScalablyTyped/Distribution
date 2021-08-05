@@ -48,61 +48,43 @@ trait Statistics extends StObject {
 }
 object Statistics {
   
-  @scala.inline
-  def apply(): Statistics = {
+  inline def apply(): Statistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Statistics]
   }
   
-  @scala.inline
-  implicit class StatisticsMutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
+  extension [Self <: Statistics](x: Self) {
     
-    @scala.inline
-    def setAverage(value: Average): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: Average): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
-    @scala.inline
-    def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: Maximum): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Maximum): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: Minimum): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Minimum): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setStdDeviation(value: StdDeviation): Self = StObject.set(x, "stdDeviation", value.asInstanceOf[js.Any])
+    inline def setStdDeviation(value: StdDeviation): Self = StObject.set(x, "stdDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdDeviationUndefined: Self = StObject.set(x, "stdDeviation", js.undefined)
+    inline def setStdDeviationUndefined: Self = StObject.set(x, "stdDeviation", js.undefined)
     
-    @scala.inline
-    def setSum(value: Sum): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Sum): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquares(value: SumOfSquares): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
+    inline def setSumOfSquares(value: SumOfSquares): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
+    inline def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
-    @scala.inline
-    def setVariance(value: Variance): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: Variance): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

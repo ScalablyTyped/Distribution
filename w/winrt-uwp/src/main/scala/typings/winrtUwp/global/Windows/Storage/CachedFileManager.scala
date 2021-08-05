@@ -25,14 +25,12 @@ object CachedFileManager {
     * @return When this method completes, it returns a FileUpdateStatus enum value that describes the status of the updates to the file.
     */
   /* static member */
-  @scala.inline
-  def completeUpdatesAsync(file: IStorageFile): IPromiseWithIAsyncOperation[FileUpdateStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeUpdatesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[FileUpdateStatus]]
+  inline def completeUpdatesAsync(file: IStorageFile): IPromiseWithIAsyncOperation[FileUpdateStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeUpdatesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[FileUpdateStatus]]
   
   /**
     * Lets apps defer real-time updates for a specified file.
     * @param file The file to defer updates for.
     */
   /* static member */
-  @scala.inline
-  def deferUpdates(file: IStorageFile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deferUpdates")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deferUpdates(file: IStorageFile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deferUpdates")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

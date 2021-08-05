@@ -10,6 +10,5 @@ object sizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(o: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(o: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

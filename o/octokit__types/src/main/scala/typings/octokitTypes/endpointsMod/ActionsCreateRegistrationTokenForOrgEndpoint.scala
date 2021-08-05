@@ -11,17 +11,14 @@ trait ActionsCreateRegistrationTokenForOrgEndpoint extends StObject {
 }
 object ActionsCreateRegistrationTokenForOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): ActionsCreateRegistrationTokenForOrgEndpoint = {
+  inline def apply(org_ : String): ActionsCreateRegistrationTokenForOrgEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsCreateRegistrationTokenForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsCreateRegistrationTokenForOrgEndpointMutableBuilder[Self <: ActionsCreateRegistrationTokenForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateRegistrationTokenForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

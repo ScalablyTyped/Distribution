@@ -17,31 +17,23 @@ trait SdkVersion extends StObject {
 }
 object SdkVersion {
   
-  @scala.inline
-  def apply(): SdkVersion = {
+  inline def apply(): SdkVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SdkVersion]
   }
   
-  @scala.inline
-  implicit class SdkVersionMutableBuilder[Self <: SdkVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SdkVersion](x: Self) {
     
-    @scala.inline
-    def setSdkSupportStatus(value: String): Self = StObject.set(x, "sdkSupportStatus", value.asInstanceOf[js.Any])
+    inline def setSdkSupportStatus(value: String): Self = StObject.set(x, "sdkSupportStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkSupportStatusUndefined: Self = StObject.set(x, "sdkSupportStatus", js.undefined)
+    inline def setSdkSupportStatusUndefined: Self = StObject.set(x, "sdkSupportStatus", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionDisplayName(value: String): Self = StObject.set(x, "versionDisplayName", value.asInstanceOf[js.Any])
+    inline def setVersionDisplayName(value: String): Self = StObject.set(x, "versionDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionDisplayNameUndefined: Self = StObject.set(x, "versionDisplayName", js.undefined)
+    inline def setVersionDisplayNameUndefined: Self = StObject.set(x, "versionDisplayName", js.undefined)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

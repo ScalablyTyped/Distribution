@@ -13,22 +13,17 @@ trait HttpRequestMethodConditionConfig extends StObject {
 }
 object HttpRequestMethodConditionConfig {
   
-  @scala.inline
-  def apply(): HttpRequestMethodConditionConfig = {
+  inline def apply(): HttpRequestMethodConditionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpRequestMethodConditionConfig]
   }
   
-  @scala.inline
-  implicit class HttpRequestMethodConditionConfigMutableBuilder[Self <: HttpRequestMethodConditionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HttpRequestMethodConditionConfig](x: Self) {
     
-    @scala.inline
-    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

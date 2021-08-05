@@ -21,25 +21,19 @@ trait SchemaRunQueryResponse extends StObject {
 }
 object SchemaRunQueryResponse {
   
-  @scala.inline
-  def apply(): SchemaRunQueryResponse = {
+  inline def apply(): SchemaRunQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRunQueryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRunQueryResponseMutableBuilder[Self <: SchemaRunQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRunQueryResponse](x: Self) {
     
-    @scala.inline
-    def setBatch(value: SchemaQueryResultBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: SchemaQueryResultBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

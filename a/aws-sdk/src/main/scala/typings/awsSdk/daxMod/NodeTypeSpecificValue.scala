@@ -18,25 +18,19 @@ trait NodeTypeSpecificValue extends StObject {
 }
 object NodeTypeSpecificValue {
   
-  @scala.inline
-  def apply(): NodeTypeSpecificValue = {
+  inline def apply(): NodeTypeSpecificValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeTypeSpecificValue]
   }
   
-  @scala.inline
-  implicit class NodeTypeSpecificValueMutableBuilder[Self <: NodeTypeSpecificValue] (val x: Self) extends AnyVal {
+  extension [Self <: NodeTypeSpecificValue](x: Self) {
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

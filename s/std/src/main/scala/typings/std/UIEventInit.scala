@@ -14,28 +14,21 @@ trait UIEventInit
 }
 object UIEventInit {
   
-  @scala.inline
-  def apply(): UIEventInit = {
+  inline def apply(): UIEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIEventInit]
   }
   
-  @scala.inline
-  implicit class UIEventInitMutableBuilder[Self <: UIEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: UIEventInit](x: Self) {
     
-    @scala.inline
-    def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setView(value: Window): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: Window): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewNull: Self = StObject.set(x, "view", null)
+    inline def setViewNull: Self = StObject.set(x, "view", null)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

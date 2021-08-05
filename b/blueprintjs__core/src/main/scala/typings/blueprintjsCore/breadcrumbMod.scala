@@ -23,20 +23,16 @@ object breadcrumbMod {
   }
   object IBreadcrumbProps {
     
-    @scala.inline
-    def apply(): IBreadcrumbProps = {
+    inline def apply(): IBreadcrumbProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBreadcrumbProps]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbPropsMutableBuilder[Self <: IBreadcrumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumbProps](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     }
   }
 }

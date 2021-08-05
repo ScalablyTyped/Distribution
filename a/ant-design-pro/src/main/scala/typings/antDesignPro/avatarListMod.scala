@@ -26,8 +26,7 @@ object avatarListMod {
     @JSImport("ant-design-pro/lib/AvatarList", "default.Item")
     @js.native
     def Item: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default] = js.native
-    @scala.inline
-    def Item_=(x: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   }
   
   type AvatarList = Component[AvatarListProps, js.Any, js.Any]
@@ -48,50 +47,36 @@ object avatarListMod {
   }
   object AvatarListProps {
     
-    @scala.inline
-    def apply(children: ReactElement | js.Array[ReactElement]): AvatarListProps = {
+    inline def apply(children: ReactElement | js.Array[ReactElement]): AvatarListProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvatarListProps]
     }
     
-    @scala.inline
-    implicit class AvatarListPropsMutableBuilder[Self <: AvatarListProps] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarListProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setExcessItemsStyle(value: CSSProperties): Self = StObject.set(x, "excessItemsStyle", value.asInstanceOf[js.Any])
+      inline def setExcessItemsStyle(value: CSSProperties): Self = StObject.set(x, "excessItemsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcessItemsStyleUndefined: Self = StObject.set(x, "excessItemsStyle", js.undefined)
+      inline def setExcessItemsStyleUndefined: Self = StObject.set(x, "excessItemsStyle", js.undefined)
       
-      @scala.inline
-      def setItem(value: ReactElement): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: ReactElement): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

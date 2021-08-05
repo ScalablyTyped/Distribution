@@ -42,31 +42,23 @@ trait PlotLinearregressionangleParamsOptions extends StObject {
 }
 object PlotLinearregressionangleParamsOptions {
   
-  @scala.inline
-  def apply(): PlotLinearregressionangleParamsOptions = {
+  inline def apply(): PlotLinearregressionangleParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotLinearregressionangleParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotLinearregressionangleParamsOptionsMutableBuilder[Self <: PlotLinearregressionangleParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotLinearregressionangleParamsOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setXAxisUnit(value: Double): Self = StObject.set(x, "xAxisUnit", value.asInstanceOf[js.Any])
+    inline def setXAxisUnit(value: Double): Self = StObject.set(x, "xAxisUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUnitUndefined: Self = StObject.set(x, "xAxisUnit", js.undefined)
+    inline def setXAxisUnitUndefined: Self = StObject.set(x, "xAxisUnit", js.undefined)
   }
 }

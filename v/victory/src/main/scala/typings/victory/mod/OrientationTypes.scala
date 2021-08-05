@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrientationTypes extends StObject
 object OrientationTypes {
   
-  @scala.inline
-  def bottom: typings.victory.victoryStrings.bottom = "bottom".asInstanceOf[typings.victory.victoryStrings.bottom]
+  inline def bottom: typings.victory.victoryStrings.bottom = "bottom".asInstanceOf[typings.victory.victoryStrings.bottom]
   
-  @scala.inline
-  def left: typings.victory.victoryStrings.left = "left".asInstanceOf[typings.victory.victoryStrings.left]
+  inline def left: typings.victory.victoryStrings.left = "left".asInstanceOf[typings.victory.victoryStrings.left]
   
-  @scala.inline
-  def right: typings.victory.victoryStrings.right = "right".asInstanceOf[typings.victory.victoryStrings.right]
+  inline def right: typings.victory.victoryStrings.right = "right".asInstanceOf[typings.victory.victoryStrings.right]
   
-  @scala.inline
-  def top: typings.victory.victoryStrings.top = "top".asInstanceOf[typings.victory.victoryStrings.top]
+  inline def top: typings.victory.victoryStrings.top = "top".asInstanceOf[typings.victory.victoryStrings.top]
 }

@@ -18,8 +18,7 @@ trait IdentityBatchInfo extends StObject {
 }
 object IdentityBatchInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     descriptors: js.Array[IdentityDescriptor],
     identityIds: js.Array[String],
     includeRestrictedVisibility: Boolean,
@@ -30,31 +29,22 @@ object IdentityBatchInfo {
     __obj.asInstanceOf[IdentityBatchInfo]
   }
   
-  @scala.inline
-  implicit class IdentityBatchInfoMutableBuilder[Self <: IdentityBatchInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityBatchInfo](x: Self) {
     
-    @scala.inline
-    def setDescriptors(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    inline def setDescriptors(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptorsVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+    inline def setDescriptorsVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentityIds(value: js.Array[String]): Self = StObject.set(x, "identityIds", value.asInstanceOf[js.Any])
+    inline def setIdentityIds(value: js.Array[String]): Self = StObject.set(x, "identityIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value :_*))
+    inline def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeRestrictedVisibility(value: Boolean): Self = StObject.set(x, "includeRestrictedVisibility", value.asInstanceOf[js.Any])
+    inline def setIncludeRestrictedVisibility(value: Boolean): Self = StObject.set(x, "includeRestrictedVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNames(value: js.Array[String]): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
+    inline def setPropertyNames(value: js.Array[String]): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
+    inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryMembership(value: QueryMembership): Self = StObject.set(x, "queryMembership", value.asInstanceOf[js.Any])
+    inline def setQueryMembership(value: QueryMembership): Self = StObject.set(x, "queryMembership", value.asInstanceOf[js.Any])
   }
 }

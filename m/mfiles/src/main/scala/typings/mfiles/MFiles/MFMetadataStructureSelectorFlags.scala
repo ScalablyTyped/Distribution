@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFMetadataStructureSelectorFlags extends StObject
 object MFMetadataStructureSelectorFlags {
   
-  @scala.inline
-  def IncludeExistingDependencies: `8` = 8.asInstanceOf[`8`]
+  inline def IncludeExistingDependencies: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def IncludeNewDependencies: `4` = 4.asInstanceOf[`4`]
+  inline def IncludeNewDependencies: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SelectExisting: `2` = 2.asInstanceOf[`2`]
+  inline def SelectExisting: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SelectNew: `1` = 1.asInstanceOf[`1`]
+  inline def SelectNew: `1` = 1.asInstanceOf[`1`]
 }

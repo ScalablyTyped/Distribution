@@ -21,34 +21,29 @@ object ThemeConversionStatusEnum {
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ThemeConversionStatusEnum.AtlasNotFound")
   @js.native
   def AtlasNotFound: ThemeConversionStatusEnum = js.native
-  @scala.inline
-  def AtlasNotFound_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AtlasNotFound")(x.asInstanceOf[js.Any])
+  inline def AtlasNotFound_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AtlasNotFound")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ThemeConversionStatusEnum.ChangesInAtlas")
   @js.native
   def ChangesInAtlas: ThemeConversionStatusEnum = js.native
-  @scala.inline
-  def ChangesInAtlas_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangesInAtlas")(x.asInstanceOf[js.Any])
+  inline def ChangesInAtlas_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangesInAtlas")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ThemeConversionStatusEnum.ConvertedChangesInCustom")
   @js.native
   def ConvertedChangesInCustom: ThemeConversionStatusEnum = js.native
-  @scala.inline
-  def ConvertedChangesInCustom_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertedChangesInCustom")(x.asInstanceOf[js.Any])
+  inline def ConvertedChangesInCustom_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertedChangesInCustom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ThemeConversionStatusEnum.ConvertedChangesInVariables")
   @js.native
   def ConvertedChangesInVariables: ThemeConversionStatusEnum = js.native
-  @scala.inline
-  def ConvertedChangesInVariables_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertedChangesInVariables")(x.asInstanceOf[js.Any])
+  inline def ConvertedChangesInVariables_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertedChangesInVariables")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ThemeConversionStatusEnum.Done")
   @js.native
   def Done: ThemeConversionStatusEnum = js.native
-  @scala.inline
-  def Done_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Done")(x.asInstanceOf[js.Any])
+  inline def Done_=(x: ThemeConversionStatusEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Done")(x.asInstanceOf[js.Any])
 }

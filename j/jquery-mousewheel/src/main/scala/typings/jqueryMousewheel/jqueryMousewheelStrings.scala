@@ -8,6 +8,5 @@ object jqueryMousewheelStrings {
   
   @js.native
   sealed trait mousewheel extends StObject
-  @scala.inline
-  def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
+  inline def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
 }

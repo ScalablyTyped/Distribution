@@ -30,8 +30,7 @@ object notificationsMod {
   }
   object NotificationEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: RuntimeEvent[notification, click],
       close: RuntimeEvent[notification, close],
       error: RuntimeEvent[notification, error],
@@ -44,23 +43,17 @@ object notificationsMod {
       __obj.asInstanceOf[NotificationEvents]
     }
     
-    @scala.inline
-    implicit class NotificationEventsMutableBuilder[Self <: NotificationEvents] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationEvents](x: Self) {
       
-      @scala.inline
-      def setClick(value: RuntimeEvent[notification, click]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: RuntimeEvent[notification, click]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: RuntimeEvent[notification, close]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: RuntimeEvent[notification, close]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: RuntimeEvent[notification, error]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: RuntimeEvent[notification, error]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: RuntimeEvent[notification, message]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: RuntimeEvent[notification, message]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: RuntimeEvent[notification, show]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: RuntimeEvent[notification, show]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
 }

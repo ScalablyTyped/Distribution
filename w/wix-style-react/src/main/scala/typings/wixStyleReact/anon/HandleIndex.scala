@@ -10,16 +10,13 @@ trait HandleIndex extends StObject {
 }
 object HandleIndex {
   
-  @scala.inline
-  def apply(handleIndex: Double): HandleIndex = {
+  inline def apply(handleIndex: Double): HandleIndex = {
     val __obj = js.Dynamic.literal(handleIndex = handleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleIndex]
   }
   
-  @scala.inline
-  implicit class HandleIndexMutableBuilder[Self <: HandleIndex] (val x: Self) extends AnyVal {
+  extension [Self <: HandleIndex](x: Self) {
     
-    @scala.inline
-    def setHandleIndex(value: Double): Self = StObject.set(x, "handleIndex", value.asInstanceOf[js.Any])
+    inline def setHandleIndex(value: Double): Self = StObject.set(x, "handleIndex", value.asInstanceOf[js.Any])
   }
 }

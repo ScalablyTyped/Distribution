@@ -10,16 +10,13 @@ trait ActiveOpacity extends StObject {
 }
 object ActiveOpacity {
   
-  @scala.inline
-  def apply(activeOpacity: Double): ActiveOpacity = {
+  inline def apply(activeOpacity: Double): ActiveOpacity = {
     val __obj = js.Dynamic.literal(activeOpacity = activeOpacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveOpacity]
   }
   
-  @scala.inline
-  implicit class ActiveOpacityMutableBuilder[Self <: ActiveOpacity] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveOpacity](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
   }
 }

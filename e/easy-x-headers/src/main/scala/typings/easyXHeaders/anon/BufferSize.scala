@@ -18,43 +18,31 @@ trait BufferSize extends StObject {
 }
 object BufferSize {
   
-  @scala.inline
-  def apply(): BufferSize = {
+  inline def apply(): BufferSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BufferSize]
   }
   
-  @scala.inline
-  implicit class BufferSizeMutableBuilder[Self <: BufferSize] (val x: Self) extends AnyVal {
+  extension [Self <: BufferSize](x: Self) {
     
-    @scala.inline
-    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+    inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+    inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+    inline def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+    inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

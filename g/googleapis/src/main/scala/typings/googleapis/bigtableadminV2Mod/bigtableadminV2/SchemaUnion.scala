@@ -16,22 +16,17 @@ trait SchemaUnion extends StObject {
 }
 object SchemaUnion {
   
-  @scala.inline
-  def apply(): SchemaUnion = {
+  inline def apply(): SchemaUnion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUnion]
   }
   
-  @scala.inline
-  implicit class SchemaUnionMutableBuilder[Self <: SchemaUnion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUnion](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[SchemaGcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SchemaGcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SchemaGcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaGcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

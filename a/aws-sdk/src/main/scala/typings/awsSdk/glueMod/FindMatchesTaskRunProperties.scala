@@ -23,31 +23,23 @@ trait FindMatchesTaskRunProperties extends StObject {
 }
 object FindMatchesTaskRunProperties {
   
-  @scala.inline
-  def apply(): FindMatchesTaskRunProperties = {
+  inline def apply(): FindMatchesTaskRunProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindMatchesTaskRunProperties]
   }
   
-  @scala.inline
-  implicit class FindMatchesTaskRunPropertiesMutableBuilder[Self <: FindMatchesTaskRunProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FindMatchesTaskRunProperties](x: Self) {
     
-    @scala.inline
-    def setJobId(value: HashString): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: HashString): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setJobRunId(value: HashString): Self = StObject.set(x, "JobRunId", value.asInstanceOf[js.Any])
+    inline def setJobRunId(value: HashString): Self = StObject.set(x, "JobRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobRunIdUndefined: Self = StObject.set(x, "JobRunId", js.undefined)
+    inline def setJobRunIdUndefined: Self = StObject.set(x, "JobRunId", js.undefined)
   }
 }

@@ -33,37 +33,27 @@ trait SchemaUpdateInstanceMetadata extends StObject {
 }
 object SchemaUpdateInstanceMetadata {
   
-  @scala.inline
-  def apply(): SchemaUpdateInstanceMetadata = {
+  inline def apply(): SchemaUpdateInstanceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateInstanceMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateInstanceMetadataMutableBuilder[Self <: SchemaUpdateInstanceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateInstanceMetadata](x: Self) {
     
-    @scala.inline
-    def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
+    inline def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
+    inline def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setInstance(value: SchemaInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: SchemaInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

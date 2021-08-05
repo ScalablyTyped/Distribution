@@ -83,94 +83,65 @@ trait ValueSetExpansionParameter
 }
 object ValueSetExpansionParameter {
   
-  @scala.inline
-  def apply(name: String): ValueSetExpansionParameter = {
+  inline def apply(name: String): ValueSetExpansionParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSetExpansionParameter]
   }
   
-  @scala.inline
-  implicit class ValueSetExpansionParameterMutableBuilder[Self <: ValueSetExpansionParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSetExpansionParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
+    inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
+    inline def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
     
-    @scala.inline
-    def setValueCode(value: code): Self = StObject.set(x, "valueCode", value.asInstanceOf[js.Any])
+    inline def setValueCode(value: code): Self = StObject.set(x, "valueCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueCodeUndefined: Self = StObject.set(x, "valueCode", js.undefined)
+    inline def setValueCodeUndefined: Self = StObject.set(x, "valueCode", js.undefined)
     
-    @scala.inline
-    def setValueDecimal(value: decimal): Self = StObject.set(x, "valueDecimal", value.asInstanceOf[js.Any])
+    inline def setValueDecimal(value: decimal): Self = StObject.set(x, "valueDecimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDecimalUndefined: Self = StObject.set(x, "valueDecimal", js.undefined)
+    inline def setValueDecimalUndefined: Self = StObject.set(x, "valueDecimal", js.undefined)
     
-    @scala.inline
-    def setValueInteger(value: integer): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
+    inline def setValueInteger(value: integer): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
+    inline def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
-    @scala.inline
-    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
+    inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
+    inline def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
     
-    @scala.inline
-    def setValueUri(value: uri): Self = StObject.set(x, "valueUri", value.asInstanceOf[js.Any])
+    inline def setValueUri(value: uri): Self = StObject.set(x, "valueUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUriUndefined: Self = StObject.set(x, "valueUri", js.undefined)
+    inline def setValueUriUndefined: Self = StObject.set(x, "valueUri", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
+    inline def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
+    inline def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
     
-    @scala.inline
-    def set_valueCode(value: Element): Self = StObject.set(x, "_valueCode", value.asInstanceOf[js.Any])
+    inline def set_valueCode(value: Element): Self = StObject.set(x, "_valueCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueCodeUndefined: Self = StObject.set(x, "_valueCode", js.undefined)
+    inline def set_valueCodeUndefined: Self = StObject.set(x, "_valueCode", js.undefined)
     
-    @scala.inline
-    def set_valueDecimal(value: Element): Self = StObject.set(x, "_valueDecimal", value.asInstanceOf[js.Any])
+    inline def set_valueDecimal(value: Element): Self = StObject.set(x, "_valueDecimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueDecimalUndefined: Self = StObject.set(x, "_valueDecimal", js.undefined)
+    inline def set_valueDecimalUndefined: Self = StObject.set(x, "_valueDecimal", js.undefined)
     
-    @scala.inline
-    def set_valueInteger(value: Element): Self = StObject.set(x, "_valueInteger", value.asInstanceOf[js.Any])
+    inline def set_valueInteger(value: Element): Self = StObject.set(x, "_valueInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueIntegerUndefined: Self = StObject.set(x, "_valueInteger", js.undefined)
+    inline def set_valueIntegerUndefined: Self = StObject.set(x, "_valueInteger", js.undefined)
     
-    @scala.inline
-    def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
+    inline def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
+    inline def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
     
-    @scala.inline
-    def set_valueUri(value: Element): Self = StObject.set(x, "_valueUri", value.asInstanceOf[js.Any])
+    inline def set_valueUri(value: Element): Self = StObject.set(x, "_valueUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUriUndefined: Self = StObject.set(x, "_valueUri", js.undefined)
+    inline def set_valueUriUndefined: Self = StObject.set(x, "_valueUri", js.undefined)
   }
 }

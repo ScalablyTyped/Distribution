@@ -18,19 +18,15 @@ trait InvalidationBatch extends StObject {
 }
 object InvalidationBatch {
   
-  @scala.inline
-  def apply(CallerReference: String, Paths: Paths): InvalidationBatch = {
+  inline def apply(CallerReference: String, Paths: Paths): InvalidationBatch = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Paths = Paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidationBatch]
   }
   
-  @scala.inline
-  implicit class InvalidationBatchMutableBuilder[Self <: InvalidationBatch] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidationBatch](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: Paths): Self = StObject.set(x, "Paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: Paths): Self = StObject.set(x, "Paths", value.asInstanceOf[js.Any])
   }
 }

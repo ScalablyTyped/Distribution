@@ -20,22 +20,17 @@ trait UpdateJourneyStateRequest extends StObject {
 }
 object UpdateJourneyStateRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, JourneyId: string, JourneyStateRequest: JourneyStateRequest): UpdateJourneyStateRequest = {
+  inline def apply(ApplicationId: string, JourneyId: string, JourneyStateRequest: JourneyStateRequest): UpdateJourneyStateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], JourneyId = JourneyId.asInstanceOf[js.Any], JourneyStateRequest = JourneyStateRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJourneyStateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateJourneyStateRequestMutableBuilder[Self <: UpdateJourneyStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJourneyStateRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
+    inline def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJourneyStateRequest(value: JourneyStateRequest): Self = StObject.set(x, "JourneyStateRequest", value.asInstanceOf[js.Any])
+    inline def setJourneyStateRequest(value: JourneyStateRequest): Self = StObject.set(x, "JourneyStateRequest", value.asInstanceOf[js.Any])
   }
 }

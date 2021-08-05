@@ -43,64 +43,45 @@ trait VolumeStatusItem extends StObject {
 }
 object VolumeStatusItem {
   
-  @scala.inline
-  def apply(): VolumeStatusItem = {
+  inline def apply(): VolumeStatusItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeStatusItem]
   }
   
-  @scala.inline
-  implicit class VolumeStatusItemMutableBuilder[Self <: VolumeStatusItem] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeStatusItem](x: Self) {
     
-    @scala.inline
-    def setActions(value: VolumeStatusActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: VolumeStatusActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: VolumeStatusAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: VolumeStatusAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setAttachmentStatuses(value: VolumeStatusAttachmentStatusList): Self = StObject.set(x, "AttachmentStatuses", value.asInstanceOf[js.Any])
+    inline def setAttachmentStatuses(value: VolumeStatusAttachmentStatusList): Self = StObject.set(x, "AttachmentStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentStatusesUndefined: Self = StObject.set(x, "AttachmentStatuses", js.undefined)
+    inline def setAttachmentStatusesUndefined: Self = StObject.set(x, "AttachmentStatuses", js.undefined)
     
-    @scala.inline
-    def setAttachmentStatusesVarargs(value: VolumeStatusAttachmentStatus*): Self = StObject.set(x, "AttachmentStatuses", js.Array(value :_*))
+    inline def setAttachmentStatusesVarargs(value: VolumeStatusAttachmentStatus*): Self = StObject.set(x, "AttachmentStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setEvents(value: VolumeStatusEventsList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: VolumeStatusEventsList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: VolumeStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: VolumeStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
-    @scala.inline
-    def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
     
-    @scala.inline
-    def setVolumeStatus(value: VolumeStatusInfo): Self = StObject.set(x, "VolumeStatus", value.asInstanceOf[js.Any])
+    inline def setVolumeStatus(value: VolumeStatusInfo): Self = StObject.set(x, "VolumeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeStatusUndefined: Self = StObject.set(x, "VolumeStatus", js.undefined)
+    inline def setVolumeStatusUndefined: Self = StObject.set(x, "VolumeStatus", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait CreateOutboundCrossClusterSearchConnectionRequest extends StObject {
 }
 object CreateOutboundCrossClusterSearchConnectionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConnectionAlias: ConnectionAlias,
     DestinationDomainInfo: DomainInformation,
     SourceDomainInfo: DomainInformation
@@ -33,16 +32,12 @@ object CreateOutboundCrossClusterSearchConnectionRequest {
     __obj.asInstanceOf[CreateOutboundCrossClusterSearchConnectionRequest]
   }
   
-  @scala.inline
-  implicit class CreateOutboundCrossClusterSearchConnectionRequestMutableBuilder[Self <: CreateOutboundCrossClusterSearchConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOutboundCrossClusterSearchConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionAlias(value: ConnectionAlias): Self = StObject.set(x, "ConnectionAlias", value.asInstanceOf[js.Any])
+    inline def setConnectionAlias(value: ConnectionAlias): Self = StObject.set(x, "ConnectionAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDomainInfo(value: DomainInformation): Self = StObject.set(x, "DestinationDomainInfo", value.asInstanceOf[js.Any])
+    inline def setDestinationDomainInfo(value: DomainInformation): Self = StObject.set(x, "DestinationDomainInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDomainInfo(value: DomainInformation): Self = StObject.set(x, "SourceDomainInfo", value.asInstanceOf[js.Any])
+    inline def setSourceDomainInfo(value: DomainInformation): Self = StObject.set(x, "SourceDomainInfo", value.asInstanceOf[js.Any])
   }
 }

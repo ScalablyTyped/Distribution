@@ -12,11 +12,11 @@ object linkedListMod {
     
     def add(item: T): Unit = js.native
     
-    var first: js.Any = js.native
+    /* private */ var first: js.Any = js.native
     
     def isEmpty(): Boolean = js.native
     
-    var last: js.Any = js.native
+    /* private */ var last: js.Any = js.native
     
     def remove(): T = js.native
   }

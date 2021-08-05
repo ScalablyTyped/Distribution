@@ -16,19 +16,15 @@ trait WiFiDirectConnectionRequest extends StObject {
 }
 object WiFiDirectConnectionRequest {
   
-  @scala.inline
-  def apply(close: () => Unit, deviceInformation: DeviceInformation): WiFiDirectConnectionRequest = {
+  inline def apply(close: () => Unit, deviceInformation: DeviceInformation): WiFiDirectConnectionRequest = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), deviceInformation = deviceInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiDirectConnectionRequest]
   }
   
-  @scala.inline
-  implicit class WiFiDirectConnectionRequestMutableBuilder[Self <: WiFiDirectConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
+    inline def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
   }
 }

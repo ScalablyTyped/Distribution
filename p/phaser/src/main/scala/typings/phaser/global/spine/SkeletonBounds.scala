@@ -59,7 +59,7 @@ class SkeletonBounds ()
   /* CompleteClass */
   var minY: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var polygonPool: js.Any = js.native
   
   /* CompleteClass */

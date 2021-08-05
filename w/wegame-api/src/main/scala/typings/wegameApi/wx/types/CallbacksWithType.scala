@@ -14,31 +14,23 @@ trait CallbacksWithType[T] extends StObject {
 }
 object CallbacksWithType {
   
-  @scala.inline
-  def apply[T](): CallbacksWithType[T] = {
+  inline def apply[T](): CallbacksWithType[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallbacksWithType[T]]
   }
   
-  @scala.inline
-  implicit class CallbacksWithTypeMutableBuilder[Self <: CallbacksWithType[?], T] (val x: Self & CallbacksWithType[T]) extends AnyVal {
+  extension [Self <: CallbacksWithType[?], T](x: Self & CallbacksWithType[T]) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ T => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ T => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

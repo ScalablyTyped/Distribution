@@ -18,22 +18,17 @@ trait EmailIrmTemplate extends StObject {
 }
 object EmailIrmTemplate {
   
-  @scala.inline
-  def apply(description: String, id: String, name: String): EmailIrmTemplate = {
+  inline def apply(description: String, id: String, name: String): EmailIrmTemplate = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailIrmTemplate]
   }
   
-  @scala.inline
-  implicit class EmailIrmTemplateMutableBuilder[Self <: EmailIrmTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: EmailIrmTemplate](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

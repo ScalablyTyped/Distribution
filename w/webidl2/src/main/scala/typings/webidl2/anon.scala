@@ -27,8 +27,7 @@ object anon {
   }
   object BareMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bareMessage: String,
       context: String,
       input: String,
@@ -40,35 +39,25 @@ object anon {
       __obj.asInstanceOf[BareMessage]
     }
     
-    @scala.inline
-    implicit class BareMessageMutableBuilder[Self <: BareMessage] (val x: Self) extends AnyVal {
+    extension [Self <: BareMessage](x: Self) {
       
-      @scala.inline
-      def setBareMessage(value: String): Self = StObject.set(x, "bareMessage", value.asInstanceOf[js.Any])
+      inline def setBareMessage(value: String): Self = StObject.set(x, "bareMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+      inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
+      inline def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
       
-      @scala.inline
-      def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     }
   }
   
@@ -82,24 +71,19 @@ object anon {
   }
   object Parent {
     
-    @scala.inline
-    def apply(parent: EnumType, value: String): Parent = {
+    inline def apply(parent: EnumType, value: String): Parent = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("enum-value")
       __obj.asInstanceOf[Parent]
     }
     
-    @scala.inline
-    implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+    extension [Self <: Parent](x: Self) {
       
-      @scala.inline
-      def setParent(value: EnumType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: EnumType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `enum-value`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `enum-value`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

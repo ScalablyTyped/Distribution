@@ -18,9 +18,9 @@ object cacheNodeMod {
       */
     def this(node_ : Node, fullyInitialized_ : Boolean, filtered_ : Boolean) = this()
     
-    var filtered_ : js.Any = js.native
+    /* private */ var filtered_ : js.Any = js.native
     
-    var fullyInitialized_ : js.Any = js.native
+    /* private */ var fullyInitialized_ : js.Any = js.native
     
     /**
       * @return {!Node}
@@ -51,6 +51,6 @@ object cacheNodeMod {
       */
     def isFullyInitialized(): Boolean = js.native
     
-    var node_ : js.Any = js.native
+    /* private */ var node_ : js.Any = js.native
   }
 }

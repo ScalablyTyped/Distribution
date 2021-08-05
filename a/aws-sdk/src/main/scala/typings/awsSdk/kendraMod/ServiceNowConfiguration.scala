@@ -33,8 +33,7 @@ trait ServiceNowConfiguration extends StObject {
 }
 object ServiceNowConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HostUrl: ServiceNowHostUrl,
     SecretArn: SecretArn,
     ServiceNowBuildVersion: ServiceNowBuildVersionType
@@ -43,28 +42,20 @@ object ServiceNowConfiguration {
     __obj.asInstanceOf[ServiceNowConfiguration]
   }
   
-  @scala.inline
-  implicit class ServiceNowConfigurationMutableBuilder[Self <: ServiceNowConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceNowConfiguration](x: Self) {
     
-    @scala.inline
-    def setHostUrl(value: ServiceNowHostUrl): Self = StObject.set(x, "HostUrl", value.asInstanceOf[js.Any])
+    inline def setHostUrl(value: ServiceNowHostUrl): Self = StObject.set(x, "HostUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeArticleConfiguration(value: ServiceNowKnowledgeArticleConfiguration): Self = StObject.set(x, "KnowledgeArticleConfiguration", value.asInstanceOf[js.Any])
+    inline def setKnowledgeArticleConfiguration(value: ServiceNowKnowledgeArticleConfiguration): Self = StObject.set(x, "KnowledgeArticleConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeArticleConfigurationUndefined: Self = StObject.set(x, "KnowledgeArticleConfiguration", js.undefined)
+    inline def setKnowledgeArticleConfigurationUndefined: Self = StObject.set(x, "KnowledgeArticleConfiguration", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCatalogConfiguration(value: ServiceNowServiceCatalogConfiguration): Self = StObject.set(x, "ServiceCatalogConfiguration", value.asInstanceOf[js.Any])
+    inline def setServiceCatalogConfiguration(value: ServiceNowServiceCatalogConfiguration): Self = StObject.set(x, "ServiceCatalogConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCatalogConfigurationUndefined: Self = StObject.set(x, "ServiceCatalogConfiguration", js.undefined)
+    inline def setServiceCatalogConfigurationUndefined: Self = StObject.set(x, "ServiceCatalogConfiguration", js.undefined)
     
-    @scala.inline
-    def setServiceNowBuildVersion(value: ServiceNowBuildVersionType): Self = StObject.set(x, "ServiceNowBuildVersion", value.asInstanceOf[js.Any])
+    inline def setServiceNowBuildVersion(value: ServiceNowBuildVersionType): Self = StObject.set(x, "ServiceNowBuildVersion", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait GoogleActionsV2OrdersCustomerInfo extends StObject {
 }
 object GoogleActionsV2OrdersCustomerInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersCustomerInfo = {
+  inline def apply(): GoogleActionsV2OrdersCustomerInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersCustomerInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersCustomerInfoMutableBuilder[Self <: GoogleActionsV2OrdersCustomerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersCustomerInfo](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

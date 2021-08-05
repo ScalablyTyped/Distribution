@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcModuleType extends StObject
 object AcModuleType {
   
-  @scala.inline
-  def acClassModule: `1` = 1.asInstanceOf[`1`]
+  inline def acClassModule: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acStandardModule: `0` = 0.asInstanceOf[`0`]
+  inline def acStandardModule: `0` = 0.asInstanceOf[`0`]
 }

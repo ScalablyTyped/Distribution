@@ -34,11 +34,9 @@ object siderMod extends Shortcut {
   trait CollapseType extends StObject
   object CollapseType {
     
-    @scala.inline
-    def clickTrigger: typings.antd.antdStrings.clickTrigger = "clickTrigger".asInstanceOf[typings.antd.antdStrings.clickTrigger]
+    inline def clickTrigger: typings.antd.antdStrings.clickTrigger = "clickTrigger".asInstanceOf[typings.antd.antdStrings.clickTrigger]
     
-    @scala.inline
-    def responsive: typings.antd.antdStrings.responsive = "responsive".asInstanceOf[typings.antd.antdStrings.responsive]
+    inline def responsive: typings.antd.antdStrings.responsive = "responsive".asInstanceOf[typings.antd.antdStrings.responsive]
   }
   
   trait SiderContextProps extends StObject {
@@ -49,26 +47,20 @@ object siderMod extends Shortcut {
   }
   object SiderContextProps {
     
-    @scala.inline
-    def apply(): SiderContextProps = {
+    inline def apply(): SiderContextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SiderContextProps]
     }
     
-    @scala.inline
-    implicit class SiderContextPropsMutableBuilder[Self <: SiderContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: SiderContextProps](x: Self) {
       
-      @scala.inline
-      def setCollapsedWidth(value: Double | String): Self = StObject.set(x, "collapsedWidth", value.asInstanceOf[js.Any])
+      inline def setCollapsedWidth(value: Double | String): Self = StObject.set(x, "collapsedWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedWidthUndefined: Self = StObject.set(x, "collapsedWidth", js.undefined)
+      inline def setCollapsedWidthUndefined: Self = StObject.set(x, "collapsedWidth", js.undefined)
       
-      @scala.inline
-      def setSiderCollapsed(value: Boolean): Self = StObject.set(x, "siderCollapsed", value.asInstanceOf[js.Any])
+      inline def setSiderCollapsed(value: Boolean): Self = StObject.set(x, "siderCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiderCollapsedUndefined: Self = StObject.set(x, "siderCollapsed", js.undefined)
+      inline def setSiderCollapsedUndefined: Self = StObject.set(x, "siderCollapsed", js.undefined)
     }
   }
   
@@ -104,92 +96,64 @@ object siderMod extends Shortcut {
   }
   object SiderProps {
     
-    @scala.inline
-    def apply(): SiderProps = {
+    inline def apply(): SiderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SiderProps]
     }
     
-    @scala.inline
-    implicit class SiderPropsMutableBuilder[Self <: SiderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SiderProps](x: Self) {
       
-      @scala.inline
-      def setBreakpoint(value: xs | sm | md | lg | xl | xxl): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: xs | sm | md | lg | xl | xxl): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setCollapsedWidth(value: Double | String): Self = StObject.set(x, "collapsedWidth", value.asInstanceOf[js.Any])
+      inline def setCollapsedWidth(value: Double | String): Self = StObject.set(x, "collapsedWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedWidthUndefined: Self = StObject.set(x, "collapsedWidth", js.undefined)
+      inline def setCollapsedWidthUndefined: Self = StObject.set(x, "collapsedWidth", js.undefined)
       
-      @scala.inline
-      def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+      inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+      inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
       
-      @scala.inline
-      def setDefaultCollapsed(value: Boolean): Self = StObject.set(x, "defaultCollapsed", value.asInstanceOf[js.Any])
+      inline def setDefaultCollapsed(value: Boolean): Self = StObject.set(x, "defaultCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCollapsedUndefined: Self = StObject.set(x, "defaultCollapsed", js.undefined)
+      inline def setDefaultCollapsedUndefined: Self = StObject.set(x, "defaultCollapsed", js.undefined)
       
-      @scala.inline
-      def setOnBreakpoint(value: /* broken */ Boolean => Unit): Self = StObject.set(x, "onBreakpoint", js.Any.fromFunction1(value))
+      inline def setOnBreakpoint(value: /* broken */ Boolean => Unit): Self = StObject.set(x, "onBreakpoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBreakpointUndefined: Self = StObject.set(x, "onBreakpoint", js.undefined)
+      inline def setOnBreakpointUndefined: Self = StObject.set(x, "onBreakpoint", js.undefined)
       
-      @scala.inline
-      def setOnCollapse(value: (/* collapsed */ Boolean, /* type */ CollapseType) => Unit): Self = StObject.set(x, "onCollapse", js.Any.fromFunction2(value))
+      inline def setOnCollapse(value: (/* collapsed */ Boolean, /* type */ CollapseType) => Unit): Self = StObject.set(x, "onCollapse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCollapseUndefined: Self = StObject.set(x, "onCollapse", js.undefined)
+      inline def setOnCollapseUndefined: Self = StObject.set(x, "onCollapse", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setReverseArrow(value: Boolean): Self = StObject.set(x, "reverseArrow", value.asInstanceOf[js.Any])
+      inline def setReverseArrow(value: Boolean): Self = StObject.set(x, "reverseArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseArrowUndefined: Self = StObject.set(x, "reverseArrow", js.undefined)
+      inline def setReverseArrowUndefined: Self = StObject.set(x, "reverseArrow", js.undefined)
       
-      @scala.inline
-      def setTheme(value: SiderTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: SiderTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: ReactNode): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: ReactNode): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZeroWidthTriggerStyle(value: CSSProperties): Self = StObject.set(x, "zeroWidthTriggerStyle", value.asInstanceOf[js.Any])
+      inline def setZeroWidthTriggerStyle(value: CSSProperties): Self = StObject.set(x, "zeroWidthTriggerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroWidthTriggerStyleUndefined: Self = StObject.set(x, "zeroWidthTriggerStyle", js.undefined)
+      inline def setZeroWidthTriggerStyleUndefined: Self = StObject.set(x, "zeroWidthTriggerStyle", js.undefined)
     }
   }
   
@@ -201,23 +165,18 @@ object siderMod extends Shortcut {
   }
   object SiderState {
     
-    @scala.inline
-    def apply(below: Boolean): SiderState = {
+    inline def apply(below: Boolean): SiderState = {
       val __obj = js.Dynamic.literal(below = below.asInstanceOf[js.Any])
       __obj.asInstanceOf[SiderState]
     }
     
-    @scala.inline
-    implicit class SiderStateMutableBuilder[Self <: SiderState] (val x: Self) extends AnyVal {
+    extension [Self <: SiderState](x: Self) {
       
-      @scala.inline
-      def setBelow(value: Boolean): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
+      inline def setBelow(value: Boolean): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     }
   }
   
@@ -228,11 +187,9 @@ object siderMod extends Shortcut {
   trait SiderTheme extends StObject
   object SiderTheme {
     
-    @scala.inline
-    def dark: typings.antd.antdStrings.dark = "dark".asInstanceOf[typings.antd.antdStrings.dark]
+    inline def dark: typings.antd.antdStrings.dark = "dark".asInstanceOf[typings.antd.antdStrings.dark]
     
-    @scala.inline
-    def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
+    inline def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
   }
   
   type _To = FC[SiderProps]

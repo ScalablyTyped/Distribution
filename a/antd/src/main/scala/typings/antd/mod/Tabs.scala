@@ -9,16 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Tabs {
   
-  @scala.inline
-  def apply(hasTypeClassNameSizeOnEditHideAddCenteredAddIconProps: TabsProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasTypeClassNameSizeOnEditHideAddCenteredAddIconProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply(hasTypeClassNameSizeOnEditHideAddCenteredAddIconProps: TabsProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasTypeClassNameSizeOnEditHideAddCenteredAddIconProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("antd", "Tabs")
   @js.native
   val ^ : js.Any = js.native
   
   /* was `typeof imported_rc-tabs.TabPane` */
-  @scala.inline
-  def TabPane(
+  inline def TabPane(
     hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren: TabPaneProps
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TabPane")(hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

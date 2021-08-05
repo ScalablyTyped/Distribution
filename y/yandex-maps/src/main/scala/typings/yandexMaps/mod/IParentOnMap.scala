@@ -10,16 +10,13 @@ trait IParentOnMap extends StObject {
 }
 object IParentOnMap {
   
-  @scala.inline
-  def apply(getMap: () => Map_): IParentOnMap = {
+  inline def apply(getMap: () => Map_): IParentOnMap = {
     val __obj = js.Dynamic.literal(getMap = js.Any.fromFunction0(getMap))
     __obj.asInstanceOf[IParentOnMap]
   }
   
-  @scala.inline
-  implicit class IParentOnMapMutableBuilder[Self <: IParentOnMap] (val x: Self) extends AnyVal {
+  extension [Self <: IParentOnMap](x: Self) {
     
-    @scala.inline
-    def setGetMap(value: () => Map_): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
+    inline def setGetMap(value: () => Map_): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
   }
 }

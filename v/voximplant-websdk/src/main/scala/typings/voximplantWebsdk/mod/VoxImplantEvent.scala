@@ -19,38 +19,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxImplantEvent extends StObject
 object VoxImplantEvent {
   
-  @scala.inline
-  def AuthResult(result: Boolean): typings.voximplantWebsdk.mod.EventTypes.AuthResult = {
+  inline def AuthResult(result: Boolean): typings.voximplantWebsdk.mod.EventTypes.AuthResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.voximplantWebsdk.mod.EventTypes.AuthResult]
   }
   
-  @scala.inline
-  def ConnectionFailed(message: String): typings.voximplantWebsdk.mod.EventTypes.ConnectionFailed = {
+  inline def ConnectionFailed(message: String): typings.voximplantWebsdk.mod.EventTypes.ConnectionFailed = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.voximplantWebsdk.mod.EventTypes.ConnectionFailed]
   }
   
-  @scala.inline
-  def IncomingCall(call: Call): typings.voximplantWebsdk.mod.EventTypes.IncomingCall = {
+  inline def IncomingCall(call: Call): typings.voximplantWebsdk.mod.EventTypes.IncomingCall = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.voximplantWebsdk.mod.EventTypes.IncomingCall]
   }
   
-  @scala.inline
-  def MicAccessResult(result: Boolean): typings.voximplantWebsdk.mod.EventTypes.MicAccessResult = {
+  inline def MicAccessResult(result: Boolean): typings.voximplantWebsdk.mod.EventTypes.MicAccessResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.voximplantWebsdk.mod.EventTypes.MicAccessResult]
   }
   
-  @scala.inline
-  def NetStatsReceived(stats: NetworkInfo): typings.voximplantWebsdk.mod.EventTypes.NetStatsReceived = {
+  inline def NetStatsReceived(stats: NetworkInfo): typings.voximplantWebsdk.mod.EventTypes.NetStatsReceived = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.voximplantWebsdk.mod.EventTypes.NetStatsReceived]
   }
   
-  @scala.inline
-  def SDKReady(version: String): typings.voximplantWebsdk.mod.EventTypes.SDKReady = {
+  inline def SDKReady(version: String): typings.voximplantWebsdk.mod.EventTypes.SDKReady = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.voximplantWebsdk.mod.EventTypes.SDKReady]
   }

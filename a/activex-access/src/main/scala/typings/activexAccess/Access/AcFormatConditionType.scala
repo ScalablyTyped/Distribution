@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcFormatConditionType extends StObject
 object AcFormatConditionType {
   
-  @scala.inline
-  def acDataBar: `3` = 3.asInstanceOf[`3`]
+  inline def acDataBar: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acExpression: `1` = 1.asInstanceOf[`1`]
+  inline def acExpression: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acFieldHasFocus: `2` = 2.asInstanceOf[`2`]
+  inline def acFieldHasFocus: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acFieldValue: `0` = 0.asInstanceOf[`0`]
+  inline def acFieldValue: `0` = 0.asInstanceOf[`0`]
 }

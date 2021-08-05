@@ -10,16 +10,13 @@ trait `6` extends StObject {
 }
 object `6` {
   
-  @scala.inline
-  def apply(readPreference: typings.typeorm.mongodbTypingsMod.ReadPreference | String): `6` = {
+  inline def apply(readPreference: typings.typeorm.mongodbTypingsMod.ReadPreference | String): `6` = {
     val __obj = js.Dynamic.literal(readPreference = readPreference.asInstanceOf[js.Any])
     __obj.asInstanceOf[`6`]
   }
   
-  @scala.inline
-  implicit class `6MutableBuilder`[Self <: `6`] (val x: Self) extends AnyVal {
+  extension [Self <: `6`](x: Self) {
     
-    @scala.inline
-    def setReadPreference(value: typings.typeorm.mongodbTypingsMod.ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: typings.typeorm.mongodbTypingsMod.ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
   }
 }

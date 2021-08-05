@@ -10,16 +10,13 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(Image: Format): Image = {
+  inline def apply(Image: Format): Image = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setImage(value: Format): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Format): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
   }
 }

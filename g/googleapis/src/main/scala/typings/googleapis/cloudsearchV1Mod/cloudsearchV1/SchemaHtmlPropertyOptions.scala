@@ -22,25 +22,19 @@ trait SchemaHtmlPropertyOptions extends StObject {
 }
 object SchemaHtmlPropertyOptions {
   
-  @scala.inline
-  def apply(): SchemaHtmlPropertyOptions = {
+  inline def apply(): SchemaHtmlPropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHtmlPropertyOptions]
   }
   
-  @scala.inline
-  implicit class SchemaHtmlPropertyOptionsMutableBuilder[Self <: SchemaHtmlPropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHtmlPropertyOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorOptions(value: SchemaHtmlOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
+    inline def setOperatorOptions(value: SchemaHtmlOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
+    inline def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
     
-    @scala.inline
-    def setRetrievalImportance(value: SchemaRetrievalImportance): Self = StObject.set(x, "retrievalImportance", value.asInstanceOf[js.Any])
+    inline def setRetrievalImportance(value: SchemaRetrievalImportance): Self = StObject.set(x, "retrievalImportance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrievalImportanceUndefined: Self = StObject.set(x, "retrievalImportance", js.undefined)
+    inline def setRetrievalImportanceUndefined: Self = StObject.set(x, "retrievalImportance", js.undefined)
   }
 }

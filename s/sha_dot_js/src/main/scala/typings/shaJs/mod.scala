@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(algorithm: String): Hash = ^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  inline def apply(algorithm: String): Hash = ^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
   @JSImport("sha.js", JSImport.Namespace)
   @js.native
@@ -74,23 +73,17 @@ object mod {
   trait Algorithm extends StObject
   object Algorithm {
     
-    @scala.inline
-    def sha: typings.shaJs.shaJsStrings.sha = "sha".asInstanceOf[typings.shaJs.shaJsStrings.sha]
+    inline def sha: typings.shaJs.shaJsStrings.sha = "sha".asInstanceOf[typings.shaJs.shaJsStrings.sha]
     
-    @scala.inline
-    def sha1: typings.shaJs.shaJsStrings.sha1 = "sha1".asInstanceOf[typings.shaJs.shaJsStrings.sha1]
+    inline def sha1: typings.shaJs.shaJsStrings.sha1 = "sha1".asInstanceOf[typings.shaJs.shaJsStrings.sha1]
     
-    @scala.inline
-    def sha224: typings.shaJs.shaJsStrings.sha224 = "sha224".asInstanceOf[typings.shaJs.shaJsStrings.sha224]
+    inline def sha224: typings.shaJs.shaJsStrings.sha224 = "sha224".asInstanceOf[typings.shaJs.shaJsStrings.sha224]
     
-    @scala.inline
-    def sha256: typings.shaJs.shaJsStrings.sha256 = "sha256".asInstanceOf[typings.shaJs.shaJsStrings.sha256]
+    inline def sha256: typings.shaJs.shaJsStrings.sha256 = "sha256".asInstanceOf[typings.shaJs.shaJsStrings.sha256]
     
-    @scala.inline
-    def sha384: typings.shaJs.shaJsStrings.sha384 = "sha384".asInstanceOf[typings.shaJs.shaJsStrings.sha384]
+    inline def sha384: typings.shaJs.shaJsStrings.sha384 = "sha384".asInstanceOf[typings.shaJs.shaJsStrings.sha384]
     
-    @scala.inline
-    def sha512: typings.shaJs.shaJsStrings.sha512 = "sha512".asInstanceOf[typings.shaJs.shaJsStrings.sha512]
+    inline def sha512: typings.shaJs.shaJsStrings.sha512 = "sha512".asInstanceOf[typings.shaJs.shaJsStrings.sha512]
   }
   
   @js.native

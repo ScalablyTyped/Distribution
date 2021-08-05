@@ -13,19 +13,15 @@ trait GetBestEffortCoverageResponse extends StObject {
 }
 object GetBestEffortCoverageResponse {
   
-  @scala.inline
-  def apply(result: js.Array[ScriptCoverage]): GetBestEffortCoverageResponse = {
+  inline def apply(result: js.Array[ScriptCoverage]): GetBestEffortCoverageResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBestEffortCoverageResponse]
   }
   
-  @scala.inline
-  implicit class GetBestEffortCoverageResponseMutableBuilder[Self <: GetBestEffortCoverageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBestEffortCoverageResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

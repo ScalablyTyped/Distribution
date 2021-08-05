@@ -13,18 +13,12 @@ object contractsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateSourceContract(source: DragSource): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSourceContract")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateSourceContract(source: DragSource): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSourceContract")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateTargetContract(target: DropTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateTargetContract")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateTargetContract(target: DropTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateTargetContract")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateType(`type`: js.Array[Identifier]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def validateType(`type`: js.Array[Identifier], allowArray: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any], allowArray.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def validateType(`type`: Identifier): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def validateType(`type`: Identifier, allowArray: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any], allowArray.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateType(`type`: js.Array[Identifier]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateType(`type`: js.Array[Identifier], allowArray: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any], allowArray.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateType(`type`: Identifier): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateType(`type`: Identifier, allowArray: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateType")(`type`.asInstanceOf[js.Any], allowArray.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

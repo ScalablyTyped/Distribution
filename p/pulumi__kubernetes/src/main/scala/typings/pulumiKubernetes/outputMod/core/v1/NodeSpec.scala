@@ -46,8 +46,7 @@ trait NodeSpec extends StObject {
 }
 object NodeSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configSource: NodeConfigSource,
     externalID: String,
     podCIDR: String,
@@ -60,34 +59,24 @@ object NodeSpec {
     __obj.asInstanceOf[NodeSpec]
   }
   
-  @scala.inline
-  implicit class NodeSpecMutableBuilder[Self <: NodeSpec] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSpec](x: Self) {
     
-    @scala.inline
-    def setConfigSource(value: NodeConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
+    inline def setConfigSource(value: NodeConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalID(value: String): Self = StObject.set(x, "externalID", value.asInstanceOf[js.Any])
+    inline def setExternalID(value: String): Self = StObject.set(x, "externalID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodCIDR(value: String): Self = StObject.set(x, "podCIDR", value.asInstanceOf[js.Any])
+    inline def setPodCIDR(value: String): Self = StObject.set(x, "podCIDR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodCIDRs(value: js.Array[String]): Self = StObject.set(x, "podCIDRs", value.asInstanceOf[js.Any])
+    inline def setPodCIDRs(value: js.Array[String]): Self = StObject.set(x, "podCIDRs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodCIDRsVarargs(value: String*): Self = StObject.set(x, "podCIDRs", js.Array(value :_*))
+    inline def setPodCIDRsVarargs(value: String*): Self = StObject.set(x, "podCIDRs", js.Array(value :_*))
     
-    @scala.inline
-    def setProviderID(value: String): Self = StObject.set(x, "providerID", value.asInstanceOf[js.Any])
+    inline def setProviderID(value: String): Self = StObject.set(x, "providerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaints(value: js.Array[Taint]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
+    inline def setTaints(value: js.Array[Taint]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaintsVarargs(value: Taint*): Self = StObject.set(x, "taints", js.Array(value :_*))
+    inline def setTaintsVarargs(value: Taint*): Self = StObject.set(x, "taints", js.Array(value :_*))
     
-    @scala.inline
-    def setUnschedulable(value: Boolean): Self = StObject.set(x, "unschedulable", value.asInstanceOf[js.Any])
+    inline def setUnschedulable(value: Boolean): Self = StObject.set(x, "unschedulable", value.asInstanceOf[js.Any])
   }
 }

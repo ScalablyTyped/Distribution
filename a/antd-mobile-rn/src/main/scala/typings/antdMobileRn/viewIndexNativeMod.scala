@@ -33,7 +33,6 @@ object viewIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/view/index.native", "default.forceTouchAvailable")
     @js.native
     def forceTouchAvailable: Boolean = js.native
-    @scala.inline
-    def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
+    inline def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
   }
 }

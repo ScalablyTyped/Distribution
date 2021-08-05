@@ -27,31 +27,23 @@ trait SchemaWebEntity extends StObject {
 }
 object SchemaWebEntity {
   
-  @scala.inline
-  def apply(): SchemaWebEntity = {
+  inline def apply(): SchemaWebEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWebEntity]
   }
   
-  @scala.inline
-  implicit class SchemaWebEntityMutableBuilder[Self <: SchemaWebEntity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWebEntity](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

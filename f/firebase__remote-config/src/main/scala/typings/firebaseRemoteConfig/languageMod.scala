@@ -11,8 +11,6 @@ object languageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getUserLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserLanguage")().asInstanceOf[String]
-  @scala.inline
-  def getUserLanguage(navigatorLanguage: NavigatorLanguage): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserLanguage")(navigatorLanguage.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUserLanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserLanguage")().asInstanceOf[String]
+  inline def getUserLanguage(navigatorLanguage: NavigatorLanguage): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserLanguage")(navigatorLanguage.asInstanceOf[js.Any]).asInstanceOf[String]
 }

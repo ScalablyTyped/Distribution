@@ -10,19 +10,15 @@ trait Version extends StObject {
 }
 object Version {
   
-  @scala.inline
-  def apply(): Version = {
+  inline def apply(): Version = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Version]
   }
   
-  @scala.inline
-  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+  extension [Self <: Version](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
   }
 }

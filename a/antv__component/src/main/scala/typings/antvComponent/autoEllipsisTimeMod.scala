@@ -11,6 +11,5 @@ object autoEllipsisTimeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ellipsisTime(labelGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisTime")(labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ellipsisTime(labelGroup: IGroup, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisTime")(labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -17,31 +17,23 @@ trait ITemplateLinkingFunctionOptions extends StObject {
 }
 object ITemplateLinkingFunctionOptions {
   
-  @scala.inline
-  def apply(): ITemplateLinkingFunctionOptions = {
+  inline def apply(): ITemplateLinkingFunctionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITemplateLinkingFunctionOptions]
   }
   
-  @scala.inline
-  implicit class ITemplateLinkingFunctionOptionsMutableBuilder[Self <: ITemplateLinkingFunctionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITemplateLinkingFunctionOptions](x: Self) {
     
-    @scala.inline
-    def setFutureParentElement(value: JQuery): Self = StObject.set(x, "futureParentElement", value.asInstanceOf[js.Any])
+    inline def setFutureParentElement(value: JQuery): Self = StObject.set(x, "futureParentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFutureParentElementUndefined: Self = StObject.set(x, "futureParentElement", js.undefined)
+    inline def setFutureParentElementUndefined: Self = StObject.set(x, "futureParentElement", js.undefined)
     
-    @scala.inline
-    def setParentBoundTranscludeFn(value: ITranscludeFunction): Self = StObject.set(x, "parentBoundTranscludeFn", value.asInstanceOf[js.Any])
+    inline def setParentBoundTranscludeFn(value: ITranscludeFunction): Self = StObject.set(x, "parentBoundTranscludeFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentBoundTranscludeFnUndefined: Self = StObject.set(x, "parentBoundTranscludeFn", js.undefined)
+    inline def setParentBoundTranscludeFnUndefined: Self = StObject.set(x, "parentBoundTranscludeFn", js.undefined)
     
-    @scala.inline
-    def setTranscludeControllers(value: StringDictionary[Instance]): Self = StObject.set(x, "transcludeControllers", value.asInstanceOf[js.Any])
+    inline def setTranscludeControllers(value: StringDictionary[Instance]): Self = StObject.set(x, "transcludeControllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscludeControllersUndefined: Self = StObject.set(x, "transcludeControllers", js.undefined)
+    inline def setTranscludeControllersUndefined: Self = StObject.set(x, "transcludeControllers", js.undefined)
   }
 }

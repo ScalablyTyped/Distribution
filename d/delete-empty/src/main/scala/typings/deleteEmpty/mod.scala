@@ -8,21 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def apply(dir: String, cb: DeleteEmptyCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(dir: String, options: Options, cb: DeleteEmptyCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def apply(dir: String, cb: DeleteEmptyCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(dir: String, options: Options, cb: DeleteEmptyCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("delete-empty", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(dir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def sync(dir: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def sync(dir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def sync(dir: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   type DeleteEmptyCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* deleted */ js.Array[String], Unit]
   
@@ -42,32 +37,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
       
-      @scala.inline
-      def setFilter(value: (/* file */ String, /* regex */ RegExp) => String): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (/* file */ String, /* regex */ RegExp) => String): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setJunkRegex(value: RegExp): Self = StObject.set(x, "junkRegex", value.asInstanceOf[js.Any])
+      inline def setJunkRegex(value: RegExp): Self = StObject.set(x, "junkRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJunkRegexUndefined: Self = StObject.set(x, "junkRegex", js.undefined)
+      inline def setJunkRegexUndefined: Self = StObject.set(x, "junkRegex", js.undefined)
     }
   }
 }

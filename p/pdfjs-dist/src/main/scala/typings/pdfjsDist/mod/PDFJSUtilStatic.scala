@@ -18,16 +18,13 @@ trait PDFJSUtilStatic extends StObject {
 }
 object PDFJSUtilStatic {
   
-  @scala.inline
-  def apply(normalizeRect: js.Array[Double] => js.Array[Double]): PDFJSUtilStatic = {
+  inline def apply(normalizeRect: js.Array[Double] => js.Array[Double]): PDFJSUtilStatic = {
     val __obj = js.Dynamic.literal(normalizeRect = js.Any.fromFunction1(normalizeRect))
     __obj.asInstanceOf[PDFJSUtilStatic]
   }
   
-  @scala.inline
-  implicit class PDFJSUtilStaticMutableBuilder[Self <: PDFJSUtilStatic] (val x: Self) extends AnyVal {
+  extension [Self <: PDFJSUtilStatic](x: Self) {
     
-    @scala.inline
-    def setNormalizeRect(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "normalizeRect", js.Any.fromFunction1(value))
+    inline def setNormalizeRect(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "normalizeRect", js.Any.fromFunction1(value))
   }
 }

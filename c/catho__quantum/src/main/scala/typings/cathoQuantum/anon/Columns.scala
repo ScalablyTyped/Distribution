@@ -12,19 +12,15 @@ trait Columns extends StObject {
 }
 object Columns {
   
-  @scala.inline
-  def apply(columns: Double, width: Double): Columns = {
+  inline def apply(columns: Double, width: Double): Columns = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Columns]
   }
   
-  @scala.inline
-  implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+  extension [Self <: Columns](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

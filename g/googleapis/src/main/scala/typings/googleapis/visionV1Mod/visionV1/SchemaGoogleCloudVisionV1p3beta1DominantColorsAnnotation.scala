@@ -16,22 +16,17 @@ trait SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation extends StObject 
 }
 object SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation = {
+  inline def apply(): SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotationMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p3beta1DominantColorsAnnotation](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ColorInfo]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ColorInfo]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ColorInfo*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ColorInfo*): Self = StObject.set(x, "colors", js.Array(value :_*))
   }
 }

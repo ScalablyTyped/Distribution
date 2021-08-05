@@ -20,9 +20,9 @@ class NgForm protected ()
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
   ) = this()
   
-  var _directives: js.Any = js.native
+  /* private */ var _directives: js.Any = js.native
   
-  var _setUpdateStrategy: js.Any = js.native
+  /* private */ var _setUpdateStrategy: js.Any = js.native
   
   /**
     * @description

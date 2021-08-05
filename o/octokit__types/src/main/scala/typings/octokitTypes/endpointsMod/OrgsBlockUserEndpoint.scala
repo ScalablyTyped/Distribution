@@ -13,20 +13,16 @@ trait OrgsBlockUserEndpoint extends StObject {
 }
 object OrgsBlockUserEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, username: String): OrgsBlockUserEndpoint = {
+  inline def apply(org_ : String, username: String): OrgsBlockUserEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsBlockUserEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsBlockUserEndpointMutableBuilder[Self <: OrgsBlockUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsBlockUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

@@ -11,10 +11,8 @@ object getInvocationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInvocation(args: GetInvocationArgs): js.Promise[GetInvocationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInvocation")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInvocationResult]]
-  @scala.inline
-  def getInvocation(args: GetInvocationArgs, opts: InvokeOptions): js.Promise[GetInvocationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInvocation")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInvocationResult]]
+  inline def getInvocation(args: GetInvocationArgs): js.Promise[GetInvocationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInvocation")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInvocationResult]]
+  inline def getInvocation(args: GetInvocationArgs, opts: InvokeOptions): js.Promise[GetInvocationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInvocation")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInvocationResult]]
   
   trait GetInvocationArgs extends StObject {
     
@@ -36,26 +34,20 @@ object getInvocationMod {
   }
   object GetInvocationArgs {
     
-    @scala.inline
-    def apply(functionName: String, input: String): GetInvocationArgs = {
+    inline def apply(functionName: String, input: String): GetInvocationArgs = {
       val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetInvocationArgs]
     }
     
-    @scala.inline
-    implicit class GetInvocationArgsMutableBuilder[Self <: GetInvocationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetInvocationArgs](x: Self) {
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
     }
   }
   
@@ -79,32 +71,24 @@ object getInvocationMod {
   }
   object GetInvocationResult {
     
-    @scala.inline
-    def apply(functionName: String, id: String, input: String, result: String): GetInvocationResult = {
+    inline def apply(functionName: String, id: String, input: String, result: String): GetInvocationResult = {
       val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetInvocationResult]
     }
     
-    @scala.inline
-    implicit class GetInvocationResultMutableBuilder[Self <: GetInvocationResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetInvocationResult](x: Self) {
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
       
-      @scala.inline
-      def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
 }

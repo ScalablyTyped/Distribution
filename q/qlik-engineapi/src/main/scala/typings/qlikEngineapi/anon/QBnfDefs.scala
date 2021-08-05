@@ -13,19 +13,15 @@ trait QBnfDefs extends StObject {
 }
 object QBnfDefs {
   
-  @scala.inline
-  def apply(qBnfDefs: IBNFDef, qBnfHash: String): QBnfDefs = {
+  inline def apply(qBnfDefs: IBNFDef, qBnfHash: String): QBnfDefs = {
     val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs.asInstanceOf[js.Any], qBnfHash = qBnfHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[QBnfDefs]
   }
   
-  @scala.inline
-  implicit class QBnfDefsMutableBuilder[Self <: QBnfDefs] (val x: Self) extends AnyVal {
+  extension [Self <: QBnfDefs](x: Self) {
     
-    @scala.inline
-    def setQBnfDefs(value: IBNFDef): Self = StObject.set(x, "qBnfDefs", value.asInstanceOf[js.Any])
+    inline def setQBnfDefs(value: IBNFDef): Self = StObject.set(x, "qBnfDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBnfHash(value: String): Self = StObject.set(x, "qBnfHash", value.asInstanceOf[js.Any])
+    inline def setQBnfHash(value: String): Self = StObject.set(x, "qBnfHash", value.asInstanceOf[js.Any])
   }
 }

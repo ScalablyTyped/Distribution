@@ -10,16 +10,13 @@ trait IIdleDispatchedHandlerArgs extends StObject {
 }
 object IIdleDispatchedHandlerArgs {
   
-  @scala.inline
-  def apply(isDispatcherIdle: Boolean): IIdleDispatchedHandlerArgs = {
+  inline def apply(isDispatcherIdle: Boolean): IIdleDispatchedHandlerArgs = {
     val __obj = js.Dynamic.literal(isDispatcherIdle = isDispatcherIdle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIdleDispatchedHandlerArgs]
   }
   
-  @scala.inline
-  implicit class IIdleDispatchedHandlerArgsMutableBuilder[Self <: IIdleDispatchedHandlerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IIdleDispatchedHandlerArgs](x: Self) {
     
-    @scala.inline
-    def setIsDispatcherIdle(value: Boolean): Self = StObject.set(x, "isDispatcherIdle", value.asInstanceOf[js.Any])
+    inline def setIsDispatcherIdle(value: Boolean): Self = StObject.set(x, "isDispatcherIdle", value.asInstanceOf[js.Any])
   }
 }

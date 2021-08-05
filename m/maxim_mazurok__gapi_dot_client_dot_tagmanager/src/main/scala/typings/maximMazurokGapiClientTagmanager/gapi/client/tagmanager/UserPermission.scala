@@ -23,46 +23,33 @@ trait UserPermission extends StObject {
 }
 object UserPermission {
   
-  @scala.inline
-  def apply(): UserPermission = {
+  inline def apply(): UserPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPermission]
   }
   
-  @scala.inline
-  implicit class UserPermissionMutableBuilder[Self <: UserPermission] (val x: Self) extends AnyVal {
+  extension [Self <: UserPermission](x: Self) {
     
-    @scala.inline
-    def setAccountAccess(value: AccountAccess): Self = StObject.set(x, "accountAccess", value.asInstanceOf[js.Any])
+    inline def setAccountAccess(value: AccountAccess): Self = StObject.set(x, "accountAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountAccessUndefined: Self = StObject.set(x, "accountAccess", js.undefined)
+    inline def setAccountAccessUndefined: Self = StObject.set(x, "accountAccess", js.undefined)
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setContainerAccess(value: js.Array[ContainerAccess]): Self = StObject.set(x, "containerAccess", value.asInstanceOf[js.Any])
+    inline def setContainerAccess(value: js.Array[ContainerAccess]): Self = StObject.set(x, "containerAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
+    inline def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
     
-    @scala.inline
-    def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
+    inline def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait ResourceLoader extends StObject {
 }
 object ResourceLoader {
   
-  @scala.inline
-  def apply(get: String => js.Promise[String] | String): ResourceLoader = {
+  inline def apply(get: String => js.Promise[String] | String): ResourceLoader = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[ResourceLoader]
   }
   
-  @scala.inline
-  implicit class ResourceLoaderMutableBuilder[Self <: ResourceLoader] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceLoader](x: Self) {
     
-    @scala.inline
-    def setGet(value: String => js.Promise[String] | String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Promise[String] | String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

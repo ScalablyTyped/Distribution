@@ -17,31 +17,23 @@ trait AssignedInventorySource extends StObject {
 }
 object AssignedInventorySource {
   
-  @scala.inline
-  def apply(): AssignedInventorySource = {
+  inline def apply(): AssignedInventorySource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssignedInventorySource]
   }
   
-  @scala.inline
-  implicit class AssignedInventorySourceMutableBuilder[Self <: AssignedInventorySource] (val x: Self) extends AnyVal {
+  extension [Self <: AssignedInventorySource](x: Self) {
     
-    @scala.inline
-    def setAssignedInventorySourceId(value: String): Self = StObject.set(x, "assignedInventorySourceId", value.asInstanceOf[js.Any])
+    inline def setAssignedInventorySourceId(value: String): Self = StObject.set(x, "assignedInventorySourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedInventorySourceIdUndefined: Self = StObject.set(x, "assignedInventorySourceId", js.undefined)
+    inline def setAssignedInventorySourceIdUndefined: Self = StObject.set(x, "assignedInventorySourceId", js.undefined)
     
-    @scala.inline
-    def setInventorySourceId(value: String): Self = StObject.set(x, "inventorySourceId", value.asInstanceOf[js.Any])
+    inline def setInventorySourceId(value: String): Self = StObject.set(x, "inventorySourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceIdUndefined: Self = StObject.set(x, "inventorySourceId", js.undefined)
+    inline def setInventorySourceIdUndefined: Self = StObject.set(x, "inventorySourceId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

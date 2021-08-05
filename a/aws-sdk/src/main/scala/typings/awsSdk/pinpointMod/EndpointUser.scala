@@ -18,25 +18,19 @@ trait EndpointUser extends StObject {
 }
 object EndpointUser {
   
-  @scala.inline
-  def apply(): EndpointUser = {
+  inline def apply(): EndpointUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointUser]
   }
   
-  @scala.inline
-  implicit class EndpointUserMutableBuilder[Self <: EndpointUser] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointUser](x: Self) {
     
-    @scala.inline
-    def setUserAttributes(value: MapOfListOfString): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: MapOfListOfString): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
+    inline def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
     
-    @scala.inline
-    def setUserId(value: string): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: string): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

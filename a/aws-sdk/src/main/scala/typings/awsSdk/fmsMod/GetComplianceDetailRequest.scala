@@ -18,19 +18,15 @@ trait GetComplianceDetailRequest extends StObject {
 }
 object GetComplianceDetailRequest {
   
-  @scala.inline
-  def apply(MemberAccount: AWSAccountId, PolicyId: PolicyId): GetComplianceDetailRequest = {
+  inline def apply(MemberAccount: AWSAccountId, PolicyId: PolicyId): GetComplianceDetailRequest = {
     val __obj = js.Dynamic.literal(MemberAccount = MemberAccount.asInstanceOf[js.Any], PolicyId = PolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComplianceDetailRequest]
   }
   
-  @scala.inline
-  implicit class GetComplianceDetailRequestMutableBuilder[Self <: GetComplianceDetailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetComplianceDetailRequest](x: Self) {
     
-    @scala.inline
-    def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
+    inline def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
   }
 }

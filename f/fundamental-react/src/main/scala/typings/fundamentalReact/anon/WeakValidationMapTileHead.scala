@@ -14,25 +14,19 @@ trait WeakValidationMapTileHead extends StObject {
 }
 object WeakValidationMapTileHead {
   
-  @scala.inline
-  def apply(): WeakValidationMapTileHead = {
+  inline def apply(): WeakValidationMapTileHead = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapTileHead]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapTileHeadMutableBuilder[Self <: WeakValidationMapTileHead] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapTileHead](x: Self) {
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
   }
 }

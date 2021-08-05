@@ -16,37 +16,27 @@ trait CancelTime extends StObject {
 }
 object CancelTime {
   
-  @scala.inline
-  def apply(): CancelTime = {
+  inline def apply(): CancelTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelTime]
   }
   
-  @scala.inline
-  implicit class CancelTimeMutableBuilder[Self <: CancelTime] (val x: Self) extends AnyVal {
+  extension [Self <: CancelTime](x: Self) {
     
-    @scala.inline
-    def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
+    inline def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
+    inline def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
     
-    @scala.inline
-    def setCurrentReleaseInfo(value: AmountInMicros): Self = StObject.set(x, "currentReleaseInfo", value.asInstanceOf[js.Any])
+    inline def setCurrentReleaseInfo(value: AmountInMicros): Self = StObject.set(x, "currentReleaseInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentReleaseInfoUndefined: Self = StObject.set(x, "currentReleaseInfo", js.undefined)
+    inline def setCurrentReleaseInfoUndefined: Self = StObject.set(x, "currentReleaseInfo", js.undefined)
     
-    @scala.inline
-    def setNextReleaseInfo(value: AmountInMicros): Self = StObject.set(x, "nextReleaseInfo", value.asInstanceOf[js.Any])
+    inline def setNextReleaseInfo(value: AmountInMicros): Self = StObject.set(x, "nextReleaseInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextReleaseInfoUndefined: Self = StObject.set(x, "nextReleaseInfo", js.undefined)
+    inline def setNextReleaseInfoUndefined: Self = StObject.set(x, "nextReleaseInfo", js.undefined)
     
-    @scala.inline
-    def setSeriesSubscriptionType(value: String): Self = StObject.set(x, "seriesSubscriptionType", value.asInstanceOf[js.Any])
+    inline def setSeriesSubscriptionType(value: String): Self = StObject.set(x, "seriesSubscriptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSubscriptionTypeUndefined: Self = StObject.set(x, "seriesSubscriptionType", js.undefined)
+    inline def setSeriesSubscriptionTypeUndefined: Self = StObject.set(x, "seriesSubscriptionType", js.undefined)
   }
 }

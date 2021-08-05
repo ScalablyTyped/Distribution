@@ -12,8 +12,7 @@ object keycloakAuthzMod {
     * Creates a new Keycloak client instance.
     * @param config Path to a JSON config file or a plain config object.
     */
-  @scala.inline
-  def apply(keycloak: KeycloakInstance): KeycloakAuthorizationInstance = ^.asInstanceOf[js.Dynamic].apply(keycloak.asInstanceOf[js.Any]).asInstanceOf[KeycloakAuthorizationInstance]
+  inline def apply(keycloak: KeycloakInstance): KeycloakAuthorizationInstance = ^.asInstanceOf[js.Dynamic].apply(keycloak.asInstanceOf[js.Any]).asInstanceOf[KeycloakAuthorizationInstance]
   
   @JSImport("keycloak-js/dist/keycloak-authz", JSImport.Namespace)
   @js.native
@@ -53,47 +52,34 @@ object keycloakAuthzMod {
   }
   object AuthorizationRequest {
     
-    @scala.inline
-    def apply(): AuthorizationRequest = {
+    inline def apply(): AuthorizationRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthorizationRequest]
     }
     
-    @scala.inline
-    implicit class AuthorizationRequestMutableBuilder[Self <: AuthorizationRequest] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationRequest](x: Self) {
       
-      @scala.inline
-      def setIncrementalAuthorization(value: Boolean): Self = StObject.set(x, "incrementalAuthorization", value.asInstanceOf[js.Any])
+      inline def setIncrementalAuthorization(value: Boolean): Self = StObject.set(x, "incrementalAuthorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementalAuthorizationUndefined: Self = StObject.set(x, "incrementalAuthorization", js.undefined)
+      inline def setIncrementalAuthorizationUndefined: Self = StObject.set(x, "incrementalAuthorization", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: AuthorizationRequestMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: AuthorizationRequestMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPermissions(value: js.Array[ResourcePermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: js.Array[ResourcePermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+      inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      @scala.inline
-      def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
       
-      @scala.inline
-      def setSubmitRequest(value: Boolean): Self = StObject.set(x, "submitRequest", value.asInstanceOf[js.Any])
+      inline def setSubmitRequest(value: Boolean): Self = StObject.set(x, "submitRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitRequestUndefined: Self = StObject.set(x, "submitRequest", js.undefined)
+      inline def setSubmitRequestUndefined: Self = StObject.set(x, "submitRequest", js.undefined)
       
-      @scala.inline
-      def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+      inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicketUndefined: Self = StObject.set(x, "ticket", js.undefined)
+      inline def setTicketUndefined: Self = StObject.set(x, "ticket", js.undefined)
     }
   }
   
@@ -113,26 +99,20 @@ object keycloakAuthzMod {
   }
   object AuthorizationRequestMetadata {
     
-    @scala.inline
-    def apply(): AuthorizationRequestMetadata = {
+    inline def apply(): AuthorizationRequestMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthorizationRequestMetadata]
     }
     
-    @scala.inline
-    implicit class AuthorizationRequestMetadataMutableBuilder[Self <: AuthorizationRequestMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationRequestMetadata](x: Self) {
       
-      @scala.inline
-      def setResponseIncludeResourceName(value: js.Any): Self = StObject.set(x, "responseIncludeResourceName", value.asInstanceOf[js.Any])
+      inline def setResponseIncludeResourceName(value: js.Any): Self = StObject.set(x, "responseIncludeResourceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseIncludeResourceNameUndefined: Self = StObject.set(x, "responseIncludeResourceName", js.undefined)
+      inline def setResponseIncludeResourceNameUndefined: Self = StObject.set(x, "responseIncludeResourceName", js.undefined)
       
-      @scala.inline
-      def setResponse_permissions_limit(value: Double): Self = StObject.set(x, "response_permissions_limit", value.asInstanceOf[js.Any])
+      inline def setResponse_permissions_limit(value: Double): Self = StObject.set(x, "response_permissions_limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse_permissions_limitUndefined: Self = StObject.set(x, "response_permissions_limit", js.undefined)
+      inline def setResponse_permissions_limitUndefined: Self = StObject.set(x, "response_permissions_limit", js.undefined)
     }
   }
   
@@ -177,18 +157,15 @@ object keycloakAuthzMod {
   }
   object KeycloakAuthorizationPromise {
     
-    @scala.inline
-    def apply(`then`: (js.Function1[/* rpt */ String, Unit], js.Function0[Unit], js.Function0[Unit]) => Unit): KeycloakAuthorizationPromise = {
+    inline def apply(`then`: (js.Function1[/* rpt */ String, Unit], js.Function0[Unit], js.Function0[Unit]) => Unit): KeycloakAuthorizationPromise = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("then")(js.Any.fromFunction3(`then`))
       __obj.asInstanceOf[KeycloakAuthorizationPromise]
     }
     
-    @scala.inline
-    implicit class KeycloakAuthorizationPromiseMutableBuilder[Self <: KeycloakAuthorizationPromise] (val x: Self) extends AnyVal {
+    extension [Self <: KeycloakAuthorizationPromise](x: Self) {
       
-      @scala.inline
-      def setThen(value: (js.Function1[/* rpt */ String, Unit], js.Function0[Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "then", js.Any.fromFunction3(value))
+      inline def setThen(value: (js.Function1[/* rpt */ String, Unit], js.Function0[Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "then", js.Any.fromFunction3(value))
     }
   }
   
@@ -206,26 +183,20 @@ object keycloakAuthzMod {
   }
   object ResourcePermission {
     
-    @scala.inline
-    def apply(id: String): ResourcePermission = {
+    inline def apply(id: String): ResourcePermission = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourcePermission]
     }
     
-    @scala.inline
-    implicit class ResourcePermissionMutableBuilder[Self <: ResourcePermission] (val x: Self) extends AnyVal {
+    extension [Self <: ResourcePermission](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
 }

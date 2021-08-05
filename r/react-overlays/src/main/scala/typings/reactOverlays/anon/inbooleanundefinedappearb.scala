@@ -26,61 +26,43 @@ trait inbooleanundefinedappearb extends StObject {
 }
 object inbooleanundefinedappearb {
   
-  @scala.inline
-  def apply(): inbooleanundefinedappearb = {
+  inline def apply(): inbooleanundefinedappearb = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[inbooleanundefinedappearb]
   }
   
-  @scala.inline
-  implicit class inbooleanundefinedappearbMutableBuilder[Self <: inbooleanundefinedappearb] (val x: Self) extends AnyVal {
+  extension [Self <: inbooleanundefinedappearb](x: Self) {
     
-    @scala.inline
-    def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+    inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+    inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
     
-    @scala.inline
-    def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+    inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
-    @scala.inline
-    def setOnEnter(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+    inline def setOnEnter(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+    inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
-    @scala.inline
-    def setOnEntered(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
+    inline def setOnEntered(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
+    inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
-    @scala.inline
-    def setOnEntering(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
+    inline def setOnEntering(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
+    inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
     
-    @scala.inline
-    def setOnExit(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+    inline def setOnExit(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+    inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    @scala.inline
-    def setOnExited(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
+    inline def setOnExited(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
+    inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
-    @scala.inline
-    def setOnExiting(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
+    inline def setOnExiting(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
+    inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
   }
 }

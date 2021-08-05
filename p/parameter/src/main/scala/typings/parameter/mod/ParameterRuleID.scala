@@ -18,23 +18,18 @@ trait ParameterRuleID
 }
 object ParameterRuleID {
   
-  @scala.inline
-  def apply(`type`: id | idQuestionmark): ParameterRuleID = {
+  inline def apply(`type`: id | idQuestionmark): ParameterRuleID = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleID]
   }
   
-  @scala.inline
-  implicit class ParameterRuleIDMutableBuilder[Self <: ParameterRuleID] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleID](x: Self) {
     
-    @scala.inline
-    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+    inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+    inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
-    @scala.inline
-    def setType(value: id | idQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: id | idQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

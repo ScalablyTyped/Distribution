@@ -15,150 +15,126 @@ object mod {
   @JSImport("js-sha3", "cshake128")
   @js.native
   def cshake128: CshakeHash = js.native
-  @scala.inline
-  def cshake128_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake128")(x.asInstanceOf[js.Any])
+  inline def cshake128_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake128")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "cshake256")
   @js.native
   def cshake256: CshakeHash = js.native
-  @scala.inline
-  def cshake256_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake256")(x.asInstanceOf[js.Any])
+  inline def cshake256_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "cshake_128")
   @js.native
   def cshake_128: CshakeHash = js.native
-  @scala.inline
-  def cshake_128_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake_128")(x.asInstanceOf[js.Any])
+  inline def cshake_128_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake_128")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "cshake_256")
   @js.native
   def cshake_256: CshakeHash = js.native
-  @scala.inline
-  def cshake_256_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake_256")(x.asInstanceOf[js.Any])
+  inline def cshake_256_=(x: CshakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cshake_256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak224")
   @js.native
   def keccak224: Hash = js.native
-  @scala.inline
-  def keccak224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak224")(x.asInstanceOf[js.Any])
+  inline def keccak224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak224")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak256")
   @js.native
   def keccak256: Hash = js.native
-  @scala.inline
-  def keccak256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak256")(x.asInstanceOf[js.Any])
+  inline def keccak256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak384")
   @js.native
   def keccak384: Hash = js.native
-  @scala.inline
-  def keccak384_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak384")(x.asInstanceOf[js.Any])
+  inline def keccak384_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak384")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak512")
   @js.native
   def keccak512: Hash = js.native
-  @scala.inline
-  def keccak512_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak512")(x.asInstanceOf[js.Any])
+  inline def keccak512_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak512")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak_224")
   @js.native
   def keccak_224: Hash = js.native
-  @scala.inline
-  def keccak_224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_224")(x.asInstanceOf[js.Any])
+  inline def keccak_224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_224")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak_256")
   @js.native
   def keccak_256: Hash = js.native
-  @scala.inline
-  def keccak_256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_256")(x.asInstanceOf[js.Any])
+  inline def keccak_256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak_384")
   @js.native
   def keccak_384: Hash = js.native
-  @scala.inline
-  def keccak_384_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_384")(x.asInstanceOf[js.Any])
+  inline def keccak_384_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_384")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "keccak_512")
   @js.native
   def keccak_512: Hash = js.native
-  @scala.inline
-  def keccak_512_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_512")(x.asInstanceOf[js.Any])
+  inline def keccak_512_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keccak_512")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "kmac128")
   @js.native
   def kmac128: KmacHash = js.native
-  @scala.inline
-  def kmac128_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac128")(x.asInstanceOf[js.Any])
+  inline def kmac128_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac128")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "kmac256")
   @js.native
   def kmac256: KmacHash = js.native
-  @scala.inline
-  def kmac256_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac256")(x.asInstanceOf[js.Any])
+  inline def kmac256_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "kmac_128")
   @js.native
   def kmac_128: KmacHash = js.native
-  @scala.inline
-  def kmac_128_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac_128")(x.asInstanceOf[js.Any])
+  inline def kmac_128_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac_128")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "kmac_256")
   @js.native
   def kmac_256: KmacHash = js.native
-  @scala.inline
-  def kmac_256_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac_256")(x.asInstanceOf[js.Any])
+  inline def kmac_256_=(x: KmacHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kmac_256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "sha3_224")
   @js.native
   def sha3224: Hash = js.native
   
-  @scala.inline
-  def sha3224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_224")(x.asInstanceOf[js.Any])
+  inline def sha3224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_224")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "sha3_256")
   @js.native
   def sha3256: Hash = js.native
   
-  @scala.inline
-  def sha3256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_256")(x.asInstanceOf[js.Any])
+  inline def sha3256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "sha3_384")
   @js.native
   def sha3384: Hash = js.native
   
-  @scala.inline
-  def sha3384_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_384")(x.asInstanceOf[js.Any])
+  inline def sha3384_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_384")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "sha3_512")
   @js.native
   def sha3512: Hash = js.native
   
-  @scala.inline
-  def sha3512_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_512")(x.asInstanceOf[js.Any])
+  inline def sha3512_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha3_512")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "shake128")
   @js.native
   def shake128: ShakeHash = js.native
-  @scala.inline
-  def shake128_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake128")(x.asInstanceOf[js.Any])
+  inline def shake128_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake128")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "shake256")
   @js.native
   def shake256: ShakeHash = js.native
-  @scala.inline
-  def shake256_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake256")(x.asInstanceOf[js.Any])
+  inline def shake256_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake256")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "shake_128")
   @js.native
   def shake_128: ShakeHash = js.native
-  @scala.inline
-  def shake_128_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake_128")(x.asInstanceOf[js.Any])
+  inline def shake_128_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake_128")(x.asInstanceOf[js.Any])
   
   @JSImport("js-sha3", "shake_256")
   @js.native
   def shake_256: ShakeHash = js.native
-  @scala.inline
-  def shake_256_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake_256")(x.asInstanceOf[js.Any])
+  inline def shake_256_=(x: ShakeHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shake_256")(x.asInstanceOf[js.Any])
   
   @js.native
   trait CshakeHash extends StObject {
@@ -322,8 +298,7 @@ object mod {
   }
   object Hasher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       array: () => js.Array[Double],
       arrayBuffer: () => ArrayBuffer,
       digest: () => js.Array[Double],
@@ -334,23 +309,17 @@ object mod {
       __obj.asInstanceOf[Hasher]
     }
     
-    @scala.inline
-    implicit class HasherMutableBuilder[Self <: Hasher] (val x: Self) extends AnyVal {
+    extension [Self <: Hasher](x: Self) {
       
-      @scala.inline
-      def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
+      inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
+      inline def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
+      inline def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: Message => Hasher): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Message => Hasher): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   

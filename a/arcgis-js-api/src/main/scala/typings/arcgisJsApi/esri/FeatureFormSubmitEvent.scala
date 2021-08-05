@@ -14,28 +14,21 @@ trait FeatureFormSubmitEvent extends StObject {
 }
 object FeatureFormSubmitEvent {
   
-  @scala.inline
-  def apply(invalid: js.Array[String], valid: js.Array[String], values: js.Any): FeatureFormSubmitEvent = {
+  inline def apply(invalid: js.Array[String], valid: js.Array[String], values: js.Any): FeatureFormSubmitEvent = {
     val __obj = js.Dynamic.literal(invalid = invalid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureFormSubmitEvent]
   }
   
-  @scala.inline
-  implicit class FeatureFormSubmitEventMutableBuilder[Self <: FeatureFormSubmitEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureFormSubmitEvent](x: Self) {
     
-    @scala.inline
-    def setInvalid(value: js.Array[String]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: js.Array[String]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidVarargs(value: String*): Self = StObject.set(x, "invalid", js.Array(value :_*))
+    inline def setInvalidVarargs(value: String*): Self = StObject.set(x, "invalid", js.Array(value :_*))
     
-    @scala.inline
-    def setValid(value: js.Array[String]): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: js.Array[String]): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidVarargs(value: String*): Self = StObject.set(x, "valid", js.Array(value :_*))
+    inline def setValidVarargs(value: String*): Self = StObject.set(x, "valid", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ trait ActiveContext extends StObject {
 }
 object ActiveContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: ActiveContextName,
     parameters: ActiveContextParametersMap,
     timeToLive: ActiveContextTimeToLive
@@ -33,16 +32,12 @@ object ActiveContext {
     __obj.asInstanceOf[ActiveContext]
   }
   
-  @scala.inline
-  implicit class ActiveContextMutableBuilder[Self <: ActiveContext] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveContext](x: Self) {
     
-    @scala.inline
-    def setName(value: ActiveContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActiveContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: ActiveContextParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActiveContextParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLive(value: ActiveContextTimeToLive): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
+    inline def setTimeToLive(value: ActiveContextTimeToLive): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
   }
 }

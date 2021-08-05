@@ -22,55 +22,39 @@ trait Flat extends StObject {
 }
 object Flat {
   
-  @scala.inline
-  def apply(): Flat = {
+  inline def apply(): Flat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Flat]
   }
   
-  @scala.inline
-  implicit class FlatMutableBuilder[Self <: Flat] (val x: Self) extends AnyVal {
+  extension [Self <: Flat](x: Self) {
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+    inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
-    @scala.inline
-    def setFaceForward(value: Boolean): Self = StObject.set(x, "faceForward", value.asInstanceOf[js.Any])
+    inline def setFaceForward(value: Boolean): Self = StObject.set(x, "faceForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceForwardUndefined: Self = StObject.set(x, "faceForward", js.undefined)
+    inline def setFaceForwardUndefined: Self = StObject.set(x, "faceForward", js.undefined)
     
-    @scala.inline
-    def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+    inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
     
-    @scala.inline
-    def setFragmentShaderSource(value: String): Self = StObject.set(x, "fragmentShaderSource", value.asInstanceOf[js.Any])
+    inline def setFragmentShaderSource(value: String): Self = StObject.set(x, "fragmentShaderSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentShaderSourceUndefined: Self = StObject.set(x, "fragmentShaderSource", js.undefined)
+    inline def setFragmentShaderSourceUndefined: Self = StObject.set(x, "fragmentShaderSource", js.undefined)
     
-    @scala.inline
-    def setRenderState(value: typings.cesium.mod.RenderState): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
+    inline def setRenderState(value: typings.cesium.mod.RenderState): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderStateUndefined: Self = StObject.set(x, "renderState", js.undefined)
+    inline def setRenderStateUndefined: Self = StObject.set(x, "renderState", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
-    @scala.inline
-    def setVertexShaderSource(value: String): Self = StObject.set(x, "vertexShaderSource", value.asInstanceOf[js.Any])
+    inline def setVertexShaderSource(value: String): Self = StObject.set(x, "vertexShaderSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexShaderSourceUndefined: Self = StObject.set(x, "vertexShaderSource", js.undefined)
+    inline def setVertexShaderSourceUndefined: Self = StObject.set(x, "vertexShaderSource", js.undefined)
   }
 }

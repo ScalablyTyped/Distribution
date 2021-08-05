@@ -23,28 +23,21 @@ trait TestScriptMetadata
 }
 object TestScriptMetadata {
   
-  @scala.inline
-  def apply(capability: js.Array[TestScriptMetadataCapability]): TestScriptMetadata = {
+  inline def apply(capability: js.Array[TestScriptMetadataCapability]): TestScriptMetadata = {
     val __obj = js.Dynamic.literal(capability = capability.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptMetadata]
   }
   
-  @scala.inline
-  implicit class TestScriptMetadataMutableBuilder[Self <: TestScriptMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptMetadata](x: Self) {
     
-    @scala.inline
-    def setCapability(value: js.Array[TestScriptMetadataCapability]): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
+    inline def setCapability(value: js.Array[TestScriptMetadataCapability]): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilityVarargs(value: TestScriptMetadataCapability*): Self = StObject.set(x, "capability", js.Array(value :_*))
+    inline def setCapabilityVarargs(value: TestScriptMetadataCapability*): Self = StObject.set(x, "capability", js.Array(value :_*))
     
-    @scala.inline
-    def setLink(value: js.Array[TestScriptMetadataLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Array[TestScriptMetadataLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: TestScriptMetadataLink*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: TestScriptMetadataLink*): Self = StObject.set(x, "link", js.Array(value :_*))
   }
 }

@@ -76,23 +76,18 @@ object mod {
   }
   object FeedSubEvents {
     
-    @scala.inline
-    def apply(error: Error => Unit, item: FeedItem => Unit, items: js.Array[FeedItem] => Unit): FeedSubEvents = {
+    inline def apply(error: Error => Unit, item: FeedItem => Unit, items: js.Array[FeedItem] => Unit): FeedSubEvents = {
       val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), item = js.Any.fromFunction1(item), items = js.Any.fromFunction1(items))
       __obj.asInstanceOf[FeedSubEvents]
     }
     
-    @scala.inline
-    implicit class FeedSubEventsMutableBuilder[Self <: FeedSubEvents] (val x: Self) extends AnyVal {
+    extension [Self <: FeedSubEvents](x: Self) {
       
-      @scala.inline
-      def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItem(value: FeedItem => Unit): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: FeedItem => Unit): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItems(value: js.Array[FeedItem] => Unit): Self = StObject.set(x, "items", js.Any.fromFunction1(value))
+      inline def setItems(value: js.Array[FeedItem] => Unit): Self = StObject.set(x, "items", js.Any.fromFunction1(value))
     }
   }
   
@@ -138,86 +133,60 @@ object mod {
   }
   object FeedSubOptions {
     
-    @scala.inline
-    def apply(): FeedSubOptions = {
+    inline def apply(): FeedSubOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeedSubOptions]
     }
     
-    @scala.inline
-    implicit class FeedSubOptionsMutableBuilder[Self <: FeedSubOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FeedSubOptions](x: Self) {
       
-      @scala.inline
-      def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
       
-      @scala.inline
-      def setDaysToSkip(value: js.Array[String]): Self = StObject.set(x, "daysToSkip", value.asInstanceOf[js.Any])
+      inline def setDaysToSkip(value: js.Array[String]): Self = StObject.set(x, "daysToSkip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysToSkipUndefined: Self = StObject.set(x, "daysToSkip", js.undefined)
+      inline def setDaysToSkipUndefined: Self = StObject.set(x, "daysToSkip", js.undefined)
       
-      @scala.inline
-      def setDaysToSkipVarargs(value: String*): Self = StObject.set(x, "daysToSkip", js.Array(value :_*))
+      inline def setDaysToSkipVarargs(value: String*): Self = StObject.set(x, "daysToSkip", js.Array(value :_*))
       
-      @scala.inline
-      def setEmitOnStart(value: Boolean): Self = StObject.set(x, "emitOnStart", value.asInstanceOf[js.Any])
+      inline def setEmitOnStart(value: Boolean): Self = StObject.set(x, "emitOnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitOnStartUndefined: Self = StObject.set(x, "emitOnStart", js.undefined)
+      inline def setEmitOnStartUndefined: Self = StObject.set(x, "emitOnStart", js.undefined)
       
-      @scala.inline
-      def setForceInterval(value: Boolean): Self = StObject.set(x, "forceInterval", value.asInstanceOf[js.Any])
+      inline def setForceInterval(value: Boolean): Self = StObject.set(x, "forceInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceIntervalUndefined: Self = StObject.set(x, "forceInterval", js.undefined)
+      inline def setForceIntervalUndefined: Self = StObject.set(x, "forceInterval", js.undefined)
       
-      @scala.inline
-      def setHoursToSkip(value: js.Array[Double]): Self = StObject.set(x, "hoursToSkip", value.asInstanceOf[js.Any])
+      inline def setHoursToSkip(value: js.Array[Double]): Self = StObject.set(x, "hoursToSkip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursToSkipUndefined: Self = StObject.set(x, "hoursToSkip", js.undefined)
+      inline def setHoursToSkipUndefined: Self = StObject.set(x, "hoursToSkip", js.undefined)
       
-      @scala.inline
-      def setHoursToSkipVarargs(value: Double*): Self = StObject.set(x, "hoursToSkip", js.Array(value :_*))
+      inline def setHoursToSkipVarargs(value: Double*): Self = StObject.set(x, "hoursToSkip", js.Array(value :_*))
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setLastDate(value: Double): Self = StObject.set(x, "lastDate", value.asInstanceOf[js.Any])
+      inline def setLastDate(value: Double): Self = StObject.set(x, "lastDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDateUndefined: Self = StObject.set(x, "lastDate", js.undefined)
+      inline def setLastDateUndefined: Self = StObject.set(x, "lastDate", js.undefined)
       
-      @scala.inline
-      def setMaxHistory(value: Double): Self = StObject.set(x, "maxHistory", value.asInstanceOf[js.Any])
+      inline def setMaxHistory(value: Double): Self = StObject.set(x, "maxHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHistoryUndefined: Self = StObject.set(x, "maxHistory", js.undefined)
+      inline def setMaxHistoryUndefined: Self = StObject.set(x, "maxHistory", js.undefined)
       
-      @scala.inline
-      def setRequestOpts(value: RequestOptions): Self = StObject.set(x, "requestOpts", value.asInstanceOf[js.Any])
+      inline def setRequestOpts(value: RequestOptions): Self = StObject.set(x, "requestOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOptsUndefined: Self = StObject.set(x, "requestOpts", js.undefined)
+      inline def setRequestOptsUndefined: Self = StObject.set(x, "requestOpts", js.undefined)
       
-      @scala.inline
-      def setSkipDays(value: Boolean): Self = StObject.set(x, "skipDays", value.asInstanceOf[js.Any])
+      inline def setSkipDays(value: Boolean): Self = StObject.set(x, "skipDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipDaysUndefined: Self = StObject.set(x, "skipDays", js.undefined)
+      inline def setSkipDaysUndefined: Self = StObject.set(x, "skipDays", js.undefined)
       
-      @scala.inline
-      def setSkipHours(value: Boolean): Self = StObject.set(x, "skipHours", value.asInstanceOf[js.Any])
+      inline def setSkipHours(value: Boolean): Self = StObject.set(x, "skipHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipHoursUndefined: Self = StObject.set(x, "skipHours", js.undefined)
+      inline def setSkipHoursUndefined: Self = StObject.set(x, "skipHours", js.undefined)
     }
   }
   

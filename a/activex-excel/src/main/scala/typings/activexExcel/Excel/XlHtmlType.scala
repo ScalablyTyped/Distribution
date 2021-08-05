@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlHtmlType extends StObject
 object XlHtmlType {
   
-  @scala.inline
-  def xlHtmlCalc: `1` = 1.asInstanceOf[`1`]
+  inline def xlHtmlCalc: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlHtmlChart: `3` = 3.asInstanceOf[`3`]
+  inline def xlHtmlChart: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlHtmlList: `2` = 2.asInstanceOf[`2`]
+  inline def xlHtmlList: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlHtmlStatic: `0` = 0.asInstanceOf[`0`]
+  inline def xlHtmlStatic: `0` = 0.asInstanceOf[`0`]
 }

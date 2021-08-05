@@ -18,25 +18,19 @@ trait SalesforceConnectorProfileProperties extends StObject {
 }
 object SalesforceConnectorProfileProperties {
   
-  @scala.inline
-  def apply(): SalesforceConnectorProfileProperties = {
+  inline def apply(): SalesforceConnectorProfileProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SalesforceConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class SalesforceConnectorProfilePropertiesMutableBuilder[Self <: SalesforceConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SalesforceConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUrlUndefined: Self = StObject.set(x, "instanceUrl", js.undefined)
+    inline def setInstanceUrlUndefined: Self = StObject.set(x, "instanceUrl", js.undefined)
     
-    @scala.inline
-    def setIsSandboxEnvironment(value: Boolean): Self = StObject.set(x, "isSandboxEnvironment", value.asInstanceOf[js.Any])
+    inline def setIsSandboxEnvironment(value: Boolean): Self = StObject.set(x, "isSandboxEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSandboxEnvironmentUndefined: Self = StObject.set(x, "isSandboxEnvironment", js.undefined)
+    inline def setIsSandboxEnvironmentUndefined: Self = StObject.set(x, "isSandboxEnvironment", js.undefined)
   }
 }

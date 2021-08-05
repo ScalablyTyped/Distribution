@@ -45,111 +45,77 @@ trait RequestAuthDefinition
 }
 object RequestAuthDefinition {
   
-  @scala.inline
-  def apply(): RequestAuthDefinition = {
+  inline def apply(): RequestAuthDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestAuthDefinition]
   }
   
-  @scala.inline
-  implicit class RequestAuthDefinitionMutableBuilder[Self <: RequestAuthDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: RequestAuthDefinition](x: Self) {
     
-    @scala.inline
-    def setApikey(value: js.Array[VariableDefinition]): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
+    inline def setApikey(value: js.Array[VariableDefinition]): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
+    inline def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
     
-    @scala.inline
-    def setApikeyVarargs(value: VariableDefinition*): Self = StObject.set(x, "apikey", js.Array(value :_*))
+    inline def setApikeyVarargs(value: VariableDefinition*): Self = StObject.set(x, "apikey", js.Array(value :_*))
     
-    @scala.inline
-    def setAwsv4(value: js.Array[VariableDefinition]): Self = StObject.set(x, "awsv4", value.asInstanceOf[js.Any])
+    inline def setAwsv4(value: js.Array[VariableDefinition]): Self = StObject.set(x, "awsv4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsv4Undefined: Self = StObject.set(x, "awsv4", js.undefined)
+    inline def setAwsv4Undefined: Self = StObject.set(x, "awsv4", js.undefined)
     
-    @scala.inline
-    def setAwsv4Varargs(value: VariableDefinition*): Self = StObject.set(x, "awsv4", js.Array(value :_*))
+    inline def setAwsv4Varargs(value: VariableDefinition*): Self = StObject.set(x, "awsv4", js.Array(value :_*))
     
-    @scala.inline
-    def setBasic(value: js.Array[VariableDefinition]): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    inline def setBasic(value: js.Array[VariableDefinition]): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+    inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
     
-    @scala.inline
-    def setBasicVarargs(value: VariableDefinition*): Self = StObject.set(x, "basic", js.Array(value :_*))
+    inline def setBasicVarargs(value: VariableDefinition*): Self = StObject.set(x, "basic", js.Array(value :_*))
     
-    @scala.inline
-    def setBearer(value: js.Array[VariableDefinition]): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
+    inline def setBearer(value: js.Array[VariableDefinition]): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
+    inline def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
     
-    @scala.inline
-    def setBearerVarargs(value: VariableDefinition*): Self = StObject.set(x, "bearer", js.Array(value :_*))
+    inline def setBearerVarargs(value: VariableDefinition*): Self = StObject.set(x, "bearer", js.Array(value :_*))
     
-    @scala.inline
-    def setDigest(value: js.Array[VariableDefinition]): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: js.Array[VariableDefinition]): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setDigestVarargs(value: VariableDefinition*): Self = StObject.set(x, "digest", js.Array(value :_*))
+    inline def setDigestVarargs(value: VariableDefinition*): Self = StObject.set(x, "digest", js.Array(value :_*))
     
-    @scala.inline
-    def setEdgegrid(value: js.Array[VariableDefinition]): Self = StObject.set(x, "edgegrid", value.asInstanceOf[js.Any])
+    inline def setEdgegrid(value: js.Array[VariableDefinition]): Self = StObject.set(x, "edgegrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgegridUndefined: Self = StObject.set(x, "edgegrid", js.undefined)
+    inline def setEdgegridUndefined: Self = StObject.set(x, "edgegrid", js.undefined)
     
-    @scala.inline
-    def setEdgegridVarargs(value: VariableDefinition*): Self = StObject.set(x, "edgegrid", js.Array(value :_*))
+    inline def setEdgegridVarargs(value: VariableDefinition*): Self = StObject.set(x, "edgegrid", js.Array(value :_*))
     
-    @scala.inline
-    def setHawk(value: js.Array[VariableDefinition]): Self = StObject.set(x, "hawk", value.asInstanceOf[js.Any])
+    inline def setHawk(value: js.Array[VariableDefinition]): Self = StObject.set(x, "hawk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHawkUndefined: Self = StObject.set(x, "hawk", js.undefined)
+    inline def setHawkUndefined: Self = StObject.set(x, "hawk", js.undefined)
     
-    @scala.inline
-    def setHawkVarargs(value: VariableDefinition*): Self = StObject.set(x, "hawk", js.Array(value :_*))
+    inline def setHawkVarargs(value: VariableDefinition*): Self = StObject.set(x, "hawk", js.Array(value :_*))
     
-    @scala.inline
-    def setNtlm(value: js.Array[VariableDefinition]): Self = StObject.set(x, "ntlm", value.asInstanceOf[js.Any])
+    inline def setNtlm(value: js.Array[VariableDefinition]): Self = StObject.set(x, "ntlm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNtlmUndefined: Self = StObject.set(x, "ntlm", js.undefined)
+    inline def setNtlmUndefined: Self = StObject.set(x, "ntlm", js.undefined)
     
-    @scala.inline
-    def setNtlmVarargs(value: VariableDefinition*): Self = StObject.set(x, "ntlm", js.Array(value :_*))
+    inline def setNtlmVarargs(value: VariableDefinition*): Self = StObject.set(x, "ntlm", js.Array(value :_*))
     
-    @scala.inline
-    def setOauth1(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth1", value.asInstanceOf[js.Any])
+    inline def setOauth1(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth1Undefined: Self = StObject.set(x, "oauth1", js.undefined)
+    inline def setOauth1Undefined: Self = StObject.set(x, "oauth1", js.undefined)
     
-    @scala.inline
-    def setOauth1Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth1", js.Array(value :_*))
+    inline def setOauth1Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth1", js.Array(value :_*))
     
-    @scala.inline
-    def setOauth2(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
+    inline def setOauth2(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
+    inline def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
     
-    @scala.inline
-    def setOauth2Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth2", js.Array(value :_*))
+    inline def setOauth2Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth2", js.Array(value :_*))
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

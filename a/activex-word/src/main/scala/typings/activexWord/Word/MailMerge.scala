@@ -148,6 +148,6 @@ trait MailMerge extends StObject {
   
   var WizardState: Double = js.native
   
-  @JSName("Word.MailMerge_typekey")
+  /* private */ @JSName("Word.MailMerge_typekey")
   var WordDotMailMerge_typekey: MailMerge = js.native
 }

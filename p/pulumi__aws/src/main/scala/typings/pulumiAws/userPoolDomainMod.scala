@@ -75,21 +75,16 @@ object userPoolDomainMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPoolDomainState): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
+    inline def get(name: String, id: Input[ID]): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
+    inline def get(name: String, id: Input[ID], state: UserPoolDomainState): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
+    inline def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
     
     /**
       * Returns true if the given object is an instance of UserPoolDomain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean]
   }
   
   trait UserPoolDomainArgs extends StObject {
@@ -111,26 +106,20 @@ object userPoolDomainMod {
   }
   object UserPoolDomainArgs {
     
-    @scala.inline
-    def apply(domain: Input[String], userPoolId: Input[String]): UserPoolDomainArgs = {
+    inline def apply(domain: Input[String], userPoolId: Input[String]): UserPoolDomainArgs = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserPoolDomainArgs]
     }
     
-    @scala.inline
-    implicit class UserPoolDomainArgsMutableBuilder[Self <: UserPoolDomainArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserPoolDomainArgs](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,56 +162,40 @@ object userPoolDomainMod {
   }
   object UserPoolDomainState {
     
-    @scala.inline
-    def apply(): UserPoolDomainState = {
+    inline def apply(): UserPoolDomainState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserPoolDomainState]
     }
     
-    @scala.inline
-    implicit class UserPoolDomainStateMutableBuilder[Self <: UserPoolDomainState] (val x: Self) extends AnyVal {
+    extension [Self <: UserPoolDomainState](x: Self) {
       
-      @scala.inline
-      def setAwsAccountId(value: Input[String]): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
+      inline def setAwsAccountId(value: Input[String]): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
+      inline def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setCloudfrontDistributionArn(value: Input[String]): Self = StObject.set(x, "cloudfrontDistributionArn", value.asInstanceOf[js.Any])
+      inline def setCloudfrontDistributionArn(value: Input[String]): Self = StObject.set(x, "cloudfrontDistributionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudfrontDistributionArnUndefined: Self = StObject.set(x, "cloudfrontDistributionArn", js.undefined)
+      inline def setCloudfrontDistributionArnUndefined: Self = StObject.set(x, "cloudfrontDistributionArn", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+      inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
+      inline def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

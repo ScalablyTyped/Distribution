@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Conflicts extends StObject
 object Conflicts {
   
-  @scala.inline
-  def abort: typings.elasticsearch.elasticsearchStrings.abort = "abort".asInstanceOf[typings.elasticsearch.elasticsearchStrings.abort]
+  inline def abort: typings.elasticsearch.elasticsearchStrings.abort = "abort".asInstanceOf[typings.elasticsearch.elasticsearchStrings.abort]
   
-  @scala.inline
-  def proceed: typings.elasticsearch.elasticsearchStrings.proceed = "proceed".asInstanceOf[typings.elasticsearch.elasticsearchStrings.proceed]
+  inline def proceed: typings.elasticsearch.elasticsearchStrings.proceed = "proceed".asInstanceOf[typings.elasticsearch.elasticsearchStrings.proceed]
 }

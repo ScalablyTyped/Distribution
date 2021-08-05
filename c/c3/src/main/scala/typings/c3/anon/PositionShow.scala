@@ -14,31 +14,23 @@ trait PositionShow extends StObject {
 }
 object PositionShow {
   
-  @scala.inline
-  def apply(): PositionShow = {
+  inline def apply(): PositionShow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositionShow]
   }
   
-  @scala.inline
-  implicit class PositionShowMutableBuilder[Self <: PositionShow] (val x: Self) extends AnyVal {
+  extension [Self <: PositionShow](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Top): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Top): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

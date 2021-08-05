@@ -18,19 +18,15 @@ trait UsageForType extends StObject {
 }
 object UsageForType {
   
-  @scala.inline
-  def apply(storageType: StorageType, usage: Double): UsageForType = {
+  inline def apply(storageType: StorageType, usage: Double): UsageForType = {
     val __obj = js.Dynamic.literal(storageType = storageType.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageForType]
   }
   
-  @scala.inline
-  implicit class UsageForTypeMutableBuilder[Self <: UsageForType] (val x: Self) extends AnyVal {
+  extension [Self <: UsageForType](x: Self) {
     
-    @scala.inline
-    def setStorageType(value: StorageType): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
+    inline def setStorageType(value: StorageType): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
   }
 }

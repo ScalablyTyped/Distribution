@@ -10,19 +10,15 @@ trait TimelineFeedResponseClientGapEnforcerMatrixItem extends StObject {
 }
 object TimelineFeedResponseClientGapEnforcerMatrixItem {
   
-  @scala.inline
-  def apply(list: js.Array[Double]): TimelineFeedResponseClientGapEnforcerMatrixItem = {
+  inline def apply(list: js.Array[Double]): TimelineFeedResponseClientGapEnforcerMatrixItem = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseClientGapEnforcerMatrixItem]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseClientGapEnforcerMatrixItemMutableBuilder[Self <: TimelineFeedResponseClientGapEnforcerMatrixItem] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponseClientGapEnforcerMatrixItem](x: Self) {
     
-    @scala.inline
-    def setList(value: js.Array[Double]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: js.Array[Double]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListVarargs(value: Double*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: Double*): Self = StObject.set(x, "list", js.Array(value :_*))
   }
 }

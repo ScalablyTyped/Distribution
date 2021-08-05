@@ -37,20 +37,16 @@ object transportMod {
   }
   object AuthorizationPayload {
     
-    @scala.inline
-    def apply(file: String, token: String): AuthorizationPayload = {
+    inline def apply(file: String, token: String): AuthorizationPayload = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizationPayload]
     }
     
-    @scala.inline
-    implicit class AuthorizationPayloadMutableBuilder[Self <: AuthorizationPayload] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationPayload](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,17 +59,14 @@ object transportMod {
   }
   object EventMessage {
     
-    @scala.inline
-    def apply(payload: RuntimeEvent[String, String]): EventMessage = {
+    inline def apply(payload: RuntimeEvent[String, String]): EventMessage = {
       val __obj = js.Dynamic.literal(action = "process-desktop-event", payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMessage]
     }
     
-    @scala.inline
-    implicit class EventMessageMutableBuilder[Self <: EventMessage] (val x: Self) extends AnyVal {
+    extension [Self <: EventMessage](x: Self) {
       
-      @scala.inline
-      def setAction(value: `process-desktop-event`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: `process-desktop-event`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,26 +80,20 @@ object transportMod {
   }
   object Message {
     
-    @scala.inline
-    def apply[T](action: String, payload: T): Message[T] = {
+    inline def apply[T](action: String, payload: T): Message[T] = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message[T]]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message[?], T] (val x: Self & Message[T]) extends AnyVal {
+    extension [Self <: Message[?], T](x: Self & Message[T]) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorrelationId(value: Double): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+      inline def setCorrelationId(value: Double): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+      inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
       
-      @scala.inline
-      def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,21 +107,17 @@ object transportMod {
   }
   object NotificationEvent {
     
-    @scala.inline
-    def apply(payload: NotificationId, `type`: String | js.Symbol): NotificationEvent = {
+    inline def apply(payload: NotificationId, `type`: String | js.Symbol): NotificationEvent = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationEvent]
     }
     
-    @scala.inline
-    implicit class NotificationEventMutableBuilder[Self <: NotificationEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationEvent](x: Self) {
       
-      @scala.inline
-      def setPayload(value: NotificationId): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: NotificationId): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,17 +130,14 @@ object transportMod {
   }
   object NotificationEventMessage {
     
-    @scala.inline
-    def apply(payload: NotificationEvent): NotificationEventMessage = {
+    inline def apply(payload: NotificationEvent): NotificationEventMessage = {
       val __obj = js.Dynamic.literal(action = "process-notification-event", payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationEventMessage]
     }
     
-    @scala.inline
-    implicit class NotificationEventMessageMutableBuilder[Self <: NotificationEventMessage] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationEventMessage](x: Self) {
       
-      @scala.inline
-      def setAction(value: `process-notification-event`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: `process-notification-event`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,20 +149,16 @@ object transportMod {
   }
   object Payload {
     
-    @scala.inline
-    def apply(data: js.Any, success: Boolean): Payload = {
+    inline def apply(data: js.Any, success: Boolean): Payload = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,7 +187,7 @@ object transportMod {
     
     var me: Identity & EntityTypeHelpers = js.native
     
-    var messageHandlers: js.Array[MessageHandler] = js.native
+    /* protected */ var messageHandlers: js.Array[MessageHandler] = js.native
     
     /* protected */ def onmessage(data: Message[Payload]): Unit = js.native
     
@@ -228,8 +204,8 @@ object transportMod {
     
     var topicRefMap: Map[String, Double] = js.native
     
-    var uncorrelatedListener: js.Function = js.native
+    /* protected */ var uncorrelatedListener: js.Function = js.native
     
-    var wireListeners: Map[Double, Reject] = js.native
+    /* protected */ var wireListeners: Map[Double, Reject] = js.native
   }
 }

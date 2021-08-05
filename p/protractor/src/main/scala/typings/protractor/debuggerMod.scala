@@ -12,7 +12,7 @@ object debuggerMod {
   class DebugHelper protected () extends StObject {
     def this(browserUnderDebug_ : ProtractorBrowser) = this()
     
-    var browserUnderDebug_ : js.Any = js.native
+    /* private */ var browserUnderDebug_ : js.Any = js.native
     
     var dbgCodeExecutor: js.Any = js.native
     

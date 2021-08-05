@@ -33,43 +33,31 @@ trait ImportInstanceRequest extends StObject {
 }
 object ImportInstanceRequest {
   
-  @scala.inline
-  def apply(Platform: PlatformValues): ImportInstanceRequest = {
+  inline def apply(Platform: PlatformValues): ImportInstanceRequest = {
     val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportInstanceRequest]
   }
   
-  @scala.inline
-  implicit class ImportInstanceRequestMutableBuilder[Self <: ImportInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDiskImages(value: DiskImageList): Self = StObject.set(x, "DiskImages", value.asInstanceOf[js.Any])
+    inline def setDiskImages(value: DiskImageList): Self = StObject.set(x, "DiskImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskImagesUndefined: Self = StObject.set(x, "DiskImages", js.undefined)
+    inline def setDiskImagesUndefined: Self = StObject.set(x, "DiskImages", js.undefined)
     
-    @scala.inline
-    def setDiskImagesVarargs(value: DiskImage*): Self = StObject.set(x, "DiskImages", js.Array(value :_*))
+    inline def setDiskImagesVarargs(value: DiskImage*): Self = StObject.set(x, "DiskImages", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setLaunchSpecification(value: ImportInstanceLaunchSpecification): Self = StObject.set(x, "LaunchSpecification", value.asInstanceOf[js.Any])
+    inline def setLaunchSpecification(value: ImportInstanceLaunchSpecification): Self = StObject.set(x, "LaunchSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchSpecificationUndefined: Self = StObject.set(x, "LaunchSpecification", js.undefined)
+    inline def setLaunchSpecificationUndefined: Self = StObject.set(x, "LaunchSpecification", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
   }
 }

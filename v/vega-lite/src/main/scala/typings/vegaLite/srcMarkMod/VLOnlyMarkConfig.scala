@@ -60,61 +60,43 @@ trait VLOnlyMarkConfig[ES /* <: ExprRef | SignalRef */]
 }
 object VLOnlyMarkConfig {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): VLOnlyMarkConfig[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): VLOnlyMarkConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VLOnlyMarkConfig[ES]]
   }
   
-  @scala.inline
-  implicit class VLOnlyMarkConfigMutableBuilder[Self <: VLOnlyMarkConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & VLOnlyMarkConfig[ES]) extends AnyVal {
+  extension [Self <: VLOnlyMarkConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & VLOnlyMarkConfig[ES]) {
     
-    @scala.inline
-    def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+    inline def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
+    inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
-    @scala.inline
-    def setInvalid(value: filter | Hide): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: filter | Hide): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidNull: Self = StObject.set(x, "invalid", null)
+    inline def setInvalidNull: Self = StObject.set(x, "invalid", null)
     
-    @scala.inline
-    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+    inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Boolean): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Boolean): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderNull: Self = StObject.set(x, "order", null)
+    inline def setOrderNull: Self = StObject.set(x, "order", null)
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setRadius2(value: Double | ES): Self = StObject.set(x, "radius2", value.asInstanceOf[js.Any])
+    inline def setRadius2(value: Double | ES): Self = StObject.set(x, "radius2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius2Undefined: Self = StObject.set(x, "radius2", js.undefined)
+    inline def setRadius2Undefined: Self = StObject.set(x, "radius2", js.undefined)
     
-    @scala.inline
-    def setTheta2(value: Double | ES): Self = StObject.set(x, "theta2", value.asInstanceOf[js.Any])
+    inline def setTheta2(value: Double | ES): Self = StObject.set(x, "theta2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheta2Undefined: Self = StObject.set(x, "theta2", js.undefined)
+    inline def setTheta2Undefined: Self = StObject.set(x, "theta2", js.undefined)
     
-    @scala.inline
-    def setTimeUnitBand(value: Double): Self = StObject.set(x, "timeUnitBand", value.asInstanceOf[js.Any])
+    inline def setTimeUnitBand(value: Double): Self = StObject.set(x, "timeUnitBand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitBandPosition(value: Double): Self = StObject.set(x, "timeUnitBandPosition", value.asInstanceOf[js.Any])
+    inline def setTimeUnitBandPosition(value: Double): Self = StObject.set(x, "timeUnitBandPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitBandPositionUndefined: Self = StObject.set(x, "timeUnitBandPosition", js.undefined)
+    inline def setTimeUnitBandPositionUndefined: Self = StObject.set(x, "timeUnitBandPosition", js.undefined)
     
-    @scala.inline
-    def setTimeUnitBandUndefined: Self = StObject.set(x, "timeUnitBand", js.undefined)
+    inline def setTimeUnitBandUndefined: Self = StObject.set(x, "timeUnitBand", js.undefined)
   }
 }

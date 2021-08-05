@@ -399,286 +399,193 @@ trait IGridOptionsOf[TEntity]
 }
 object IGridOptionsOf {
   
-  @scala.inline
-  def apply[TEntity](): IGridOptionsOf[TEntity] = {
+  inline def apply[TEntity](): IGridOptionsOf[TEntity] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGridOptionsOf[TEntity]]
   }
   
-  @scala.inline
-  implicit class IGridOptionsOfMutableBuilder[Self <: IGridOptionsOf[?], TEntity] (val x: Self & IGridOptionsOf[TEntity]) extends AnyVal {
+  extension [Self <: IGridOptionsOf[?], TEntity](x: Self & IGridOptionsOf[TEntity]) {
     
-    @scala.inline
-    def setAggregationCalcThrottle(value: Double): Self = StObject.set(x, "aggregationCalcThrottle", value.asInstanceOf[js.Any])
+    inline def setAggregationCalcThrottle(value: Double): Self = StObject.set(x, "aggregationCalcThrottle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationCalcThrottleUndefined: Self = StObject.set(x, "aggregationCalcThrottle", js.undefined)
+    inline def setAggregationCalcThrottleUndefined: Self = StObject.set(x, "aggregationCalcThrottle", js.undefined)
     
-    @scala.inline
-    def setAppScopeProvider(value: IScope | js.Object): Self = StObject.set(x, "appScopeProvider", value.asInstanceOf[js.Any])
+    inline def setAppScopeProvider(value: IScope | js.Object): Self = StObject.set(x, "appScopeProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppScopeProviderUndefined: Self = StObject.set(x, "appScopeProvider", js.undefined)
+    inline def setAppScopeProviderUndefined: Self = StObject.set(x, "appScopeProvider", js.undefined)
     
-    @scala.inline
-    def setColumnDefs(value: js.Array[IColumnDefOf[TEntity]]): Self = StObject.set(x, "columnDefs", value.asInstanceOf[js.Any])
+    inline def setColumnDefs(value: js.Array[IColumnDefOf[TEntity]]): Self = StObject.set(x, "columnDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnDefsUndefined: Self = StObject.set(x, "columnDefs", js.undefined)
+    inline def setColumnDefsUndefined: Self = StObject.set(x, "columnDefs", js.undefined)
     
-    @scala.inline
-    def setColumnDefsVarargs(value: IColumnDefOf[TEntity]*): Self = StObject.set(x, "columnDefs", js.Array(value :_*))
+    inline def setColumnDefsVarargs(value: IColumnDefOf[TEntity]*): Self = StObject.set(x, "columnDefs", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnFooterHeight(value: Double): Self = StObject.set(x, "columnFooterHeight", value.asInstanceOf[js.Any])
+    inline def setColumnFooterHeight(value: Double): Self = StObject.set(x, "columnFooterHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnFooterHeightUndefined: Self = StObject.set(x, "columnFooterHeight", js.undefined)
+    inline def setColumnFooterHeightUndefined: Self = StObject.set(x, "columnFooterHeight", js.undefined)
     
-    @scala.inline
-    def setColumnVirtualizationThreshold(value: Double): Self = StObject.set(x, "columnVirtualizationThreshold", value.asInstanceOf[js.Any])
+    inline def setColumnVirtualizationThreshold(value: Double): Self = StObject.set(x, "columnVirtualizationThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnVirtualizationThresholdUndefined: Self = StObject.set(x, "columnVirtualizationThreshold", js.undefined)
+    inline def setColumnVirtualizationThresholdUndefined: Self = StObject.set(x, "columnVirtualizationThreshold", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[TEntity] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[TEntity] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: TEntity*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: TEntity*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableColumnMenus(value: Boolean): Self = StObject.set(x, "enableColumnMenus", value.asInstanceOf[js.Any])
+    inline def setEnableColumnMenus(value: Boolean): Self = StObject.set(x, "enableColumnMenus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableColumnMenusUndefined: Self = StObject.set(x, "enableColumnMenus", js.undefined)
+    inline def setEnableColumnMenusUndefined: Self = StObject.set(x, "enableColumnMenus", js.undefined)
     
-    @scala.inline
-    def setEnableFiltering(value: Boolean): Self = StObject.set(x, "enableFiltering", value.asInstanceOf[js.Any])
+    inline def setEnableFiltering(value: Boolean): Self = StObject.set(x, "enableFiltering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFilteringUndefined: Self = StObject.set(x, "enableFiltering", js.undefined)
+    inline def setEnableFilteringUndefined: Self = StObject.set(x, "enableFiltering", js.undefined)
     
-    @scala.inline
-    def setEnableGridMenu(value: Boolean): Self = StObject.set(x, "enableGridMenu", value.asInstanceOf[js.Any])
+    inline def setEnableGridMenu(value: Boolean): Self = StObject.set(x, "enableGridMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGridMenuUndefined: Self = StObject.set(x, "enableGridMenu", js.undefined)
+    inline def setEnableGridMenuUndefined: Self = StObject.set(x, "enableGridMenu", js.undefined)
     
-    @scala.inline
-    def setEnableHorizontalScrollbar(value: Boolean | Double): Self = StObject.set(x, "enableHorizontalScrollbar", value.asInstanceOf[js.Any])
+    inline def setEnableHorizontalScrollbar(value: Boolean | Double): Self = StObject.set(x, "enableHorizontalScrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHorizontalScrollbarUndefined: Self = StObject.set(x, "enableHorizontalScrollbar", js.undefined)
+    inline def setEnableHorizontalScrollbarUndefined: Self = StObject.set(x, "enableHorizontalScrollbar", js.undefined)
     
-    @scala.inline
-    def setEnableMinHeightCheck(value: Boolean): Self = StObject.set(x, "enableMinHeightCheck", value.asInstanceOf[js.Any])
+    inline def setEnableMinHeightCheck(value: Boolean): Self = StObject.set(x, "enableMinHeightCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMinHeightCheckUndefined: Self = StObject.set(x, "enableMinHeightCheck", js.undefined)
+    inline def setEnableMinHeightCheckUndefined: Self = StObject.set(x, "enableMinHeightCheck", js.undefined)
     
-    @scala.inline
-    def setEnableRowHashing(value: Boolean): Self = StObject.set(x, "enableRowHashing", value.asInstanceOf[js.Any])
+    inline def setEnableRowHashing(value: Boolean): Self = StObject.set(x, "enableRowHashing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRowHashingUndefined: Self = StObject.set(x, "enableRowHashing", js.undefined)
+    inline def setEnableRowHashingUndefined: Self = StObject.set(x, "enableRowHashing", js.undefined)
     
-    @scala.inline
-    def setEnableSorting(value: Boolean): Self = StObject.set(x, "enableSorting", value.asInstanceOf[js.Any])
+    inline def setEnableSorting(value: Boolean): Self = StObject.set(x, "enableSorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSortingUndefined: Self = StObject.set(x, "enableSorting", js.undefined)
+    inline def setEnableSortingUndefined: Self = StObject.set(x, "enableSorting", js.undefined)
     
-    @scala.inline
-    def setEnableVerticalScrollbar(value: Boolean | Double): Self = StObject.set(x, "enableVerticalScrollbar", value.asInstanceOf[js.Any])
+    inline def setEnableVerticalScrollbar(value: Boolean | Double): Self = StObject.set(x, "enableVerticalScrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableVerticalScrollbarUndefined: Self = StObject.set(x, "enableVerticalScrollbar", js.undefined)
+    inline def setEnableVerticalScrollbarUndefined: Self = StObject.set(x, "enableVerticalScrollbar", js.undefined)
     
-    @scala.inline
-    def setExcessColumns(value: Double): Self = StObject.set(x, "excessColumns", value.asInstanceOf[js.Any])
+    inline def setExcessColumns(value: Double): Self = StObject.set(x, "excessColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcessColumnsUndefined: Self = StObject.set(x, "excessColumns", js.undefined)
+    inline def setExcessColumnsUndefined: Self = StObject.set(x, "excessColumns", js.undefined)
     
-    @scala.inline
-    def setExcessRows(value: Double): Self = StObject.set(x, "excessRows", value.asInstanceOf[js.Any])
+    inline def setExcessRows(value: Double): Self = StObject.set(x, "excessRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcessRowsUndefined: Self = StObject.set(x, "excessRows", js.undefined)
+    inline def setExcessRowsUndefined: Self = StObject.set(x, "excessRows", js.undefined)
     
-    @scala.inline
-    def setExcludeProperties(value: js.Array[String]): Self = StObject.set(x, "excludeProperties", value.asInstanceOf[js.Any])
+    inline def setExcludeProperties(value: js.Array[String]): Self = StObject.set(x, "excludeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludePropertiesUndefined: Self = StObject.set(x, "excludeProperties", js.undefined)
+    inline def setExcludePropertiesUndefined: Self = StObject.set(x, "excludeProperties", js.undefined)
     
-    @scala.inline
-    def setExcludePropertiesVarargs(value: String*): Self = StObject.set(x, "excludeProperties", js.Array(value :_*))
+    inline def setExcludePropertiesVarargs(value: String*): Self = StObject.set(x, "excludeProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setFastWatch(value: Boolean): Self = StObject.set(x, "fastWatch", value.asInstanceOf[js.Any])
+    inline def setFastWatch(value: Boolean): Self = StObject.set(x, "fastWatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastWatchUndefined: Self = StObject.set(x, "fastWatch", js.undefined)
+    inline def setFastWatchUndefined: Self = StObject.set(x, "fastWatch", js.undefined)
     
-    @scala.inline
-    def setFlatEntityAccess(value: Boolean): Self = StObject.set(x, "flatEntityAccess", value.asInstanceOf[js.Any])
+    inline def setFlatEntityAccess(value: Boolean): Self = StObject.set(x, "flatEntityAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatEntityAccessUndefined: Self = StObject.set(x, "flatEntityAccess", js.undefined)
+    inline def setFlatEntityAccessUndefined: Self = StObject.set(x, "flatEntityAccess", js.undefined)
     
-    @scala.inline
-    def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+    inline def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
+    inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
     
-    @scala.inline
-    def setGetRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "getRowIdentity", js.Any.fromFunction1(value))
+    inline def setGetRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "getRowIdentity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRowIdentityUndefined: Self = StObject.set(x, "getRowIdentity", js.undefined)
+    inline def setGetRowIdentityUndefined: Self = StObject.set(x, "getRowIdentity", js.undefined)
     
-    @scala.inline
-    def setGridFooterTemplate(value: String): Self = StObject.set(x, "gridFooterTemplate", value.asInstanceOf[js.Any])
+    inline def setGridFooterTemplate(value: String): Self = StObject.set(x, "gridFooterTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridFooterTemplateUndefined: Self = StObject.set(x, "gridFooterTemplate", js.undefined)
+    inline def setGridFooterTemplateUndefined: Self = StObject.set(x, "gridFooterTemplate", js.undefined)
     
-    @scala.inline
-    def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+    inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
+    inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
     
-    @scala.inline
-    def setHorizontalScrollThreshold(value: Double): Self = StObject.set(x, "horizontalScrollThreshold", value.asInstanceOf[js.Any])
+    inline def setHorizontalScrollThreshold(value: Double): Self = StObject.set(x, "horizontalScrollThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalScrollThresholdUndefined: Self = StObject.set(x, "horizontalScrollThreshold", js.undefined)
+    inline def setHorizontalScrollThresholdUndefined: Self = StObject.set(x, "horizontalScrollThreshold", js.undefined)
     
-    @scala.inline
-    def setInfiniteScrollDown(value: Boolean): Self = StObject.set(x, "infiniteScrollDown", value.asInstanceOf[js.Any])
+    inline def setInfiniteScrollDown(value: Boolean): Self = StObject.set(x, "infiniteScrollDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfiniteScrollDownUndefined: Self = StObject.set(x, "infiniteScrollDown", js.undefined)
+    inline def setInfiniteScrollDownUndefined: Self = StObject.set(x, "infiniteScrollDown", js.undefined)
     
-    @scala.inline
-    def setInfiniteScrollRowsFromEnd(value: Double): Self = StObject.set(x, "infiniteScrollRowsFromEnd", value.asInstanceOf[js.Any])
+    inline def setInfiniteScrollRowsFromEnd(value: Double): Self = StObject.set(x, "infiniteScrollRowsFromEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfiniteScrollRowsFromEndUndefined: Self = StObject.set(x, "infiniteScrollRowsFromEnd", js.undefined)
+    inline def setInfiniteScrollRowsFromEndUndefined: Self = StObject.set(x, "infiniteScrollRowsFromEnd", js.undefined)
     
-    @scala.inline
-    def setInfiniteScrollUp(value: Boolean): Self = StObject.set(x, "infiniteScrollUp", value.asInstanceOf[js.Any])
+    inline def setInfiniteScrollUp(value: Boolean): Self = StObject.set(x, "infiniteScrollUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfiniteScrollUpUndefined: Self = StObject.set(x, "infiniteScrollUp", js.undefined)
+    inline def setInfiniteScrollUpUndefined: Self = StObject.set(x, "infiniteScrollUp", js.undefined)
     
-    @scala.inline
-    def setMaxVisibleColumnCount(value: Double): Self = StObject.set(x, "maxVisibleColumnCount", value.asInstanceOf[js.Any])
+    inline def setMaxVisibleColumnCount(value: Double): Self = StObject.set(x, "maxVisibleColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVisibleColumnCountUndefined: Self = StObject.set(x, "maxVisibleColumnCount", js.undefined)
+    inline def setMaxVisibleColumnCountUndefined: Self = StObject.set(x, "maxVisibleColumnCount", js.undefined)
     
-    @scala.inline
-    def setMinRowsToShow(value: Double): Self = StObject.set(x, "minRowsToShow", value.asInstanceOf[js.Any])
+    inline def setMinRowsToShow(value: Double): Self = StObject.set(x, "minRowsToShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRowsToShowUndefined: Self = StObject.set(x, "minRowsToShow", js.undefined)
+    inline def setMinRowsToShowUndefined: Self = StObject.set(x, "minRowsToShow", js.undefined)
     
-    @scala.inline
-    def setMinimumColumnSize(value: Double): Self = StObject.set(x, "minimumColumnSize", value.asInstanceOf[js.Any])
+    inline def setMinimumColumnSize(value: Double): Self = StObject.set(x, "minimumColumnSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumColumnSizeUndefined: Self = StObject.set(x, "minimumColumnSize", js.undefined)
+    inline def setMinimumColumnSizeUndefined: Self = StObject.set(x, "minimumColumnSize", js.undefined)
     
-    @scala.inline
-    def setOnRegisterApi(value: /* gridApi */ IGridApiOf[TEntity] => Unit): Self = StObject.set(x, "onRegisterApi", js.Any.fromFunction1(value))
+    inline def setOnRegisterApi(value: /* gridApi */ IGridApiOf[TEntity] => Unit): Self = StObject.set(x, "onRegisterApi", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRegisterApiUndefined: Self = StObject.set(x, "onRegisterApi", js.undefined)
+    inline def setOnRegisterApiUndefined: Self = StObject.set(x, "onRegisterApi", js.undefined)
     
-    @scala.inline
-    def setRowEquality(value: (/* entityA */ TEntity, /* entityB */ TEntity) => Boolean): Self = StObject.set(x, "rowEquality", js.Any.fromFunction2(value))
+    inline def setRowEquality(value: (/* entityA */ TEntity, /* entityB */ TEntity) => Boolean): Self = StObject.set(x, "rowEquality", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowEqualityUndefined: Self = StObject.set(x, "rowEquality", js.undefined)
+    inline def setRowEqualityUndefined: Self = StObject.set(x, "rowEquality", js.undefined)
     
-    @scala.inline
-    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
-    @scala.inline
-    def setRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "rowIdentity", js.Any.fromFunction1(value))
+    inline def setRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "rowIdentity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowIdentityUndefined: Self = StObject.set(x, "rowIdentity", js.undefined)
+    inline def setRowIdentityUndefined: Self = StObject.set(x, "rowIdentity", js.undefined)
     
-    @scala.inline
-    def setRowTemplate(value: String): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
+    inline def setRowTemplate(value: String): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
+    inline def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
     
-    @scala.inline
-    def setScrollDebounce(value: Double): Self = StObject.set(x, "scrollDebounce", value.asInstanceOf[js.Any])
+    inline def setScrollDebounce(value: Double): Self = StObject.set(x, "scrollDebounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollDebounceUndefined: Self = StObject.set(x, "scrollDebounce", js.undefined)
+    inline def setScrollDebounceUndefined: Self = StObject.set(x, "scrollDebounce", js.undefined)
     
-    @scala.inline
-    def setScrollThreshold(value: Double): Self = StObject.set(x, "scrollThreshold", value.asInstanceOf[js.Any])
+    inline def setScrollThreshold(value: Double): Self = StObject.set(x, "scrollThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollThresholdUndefined: Self = StObject.set(x, "scrollThreshold", js.undefined)
+    inline def setScrollThresholdUndefined: Self = StObject.set(x, "scrollThreshold", js.undefined)
     
-    @scala.inline
-    def setShowColumnFooter(value: Boolean): Self = StObject.set(x, "showColumnFooter", value.asInstanceOf[js.Any])
+    inline def setShowColumnFooter(value: Boolean): Self = StObject.set(x, "showColumnFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowColumnFooterUndefined: Self = StObject.set(x, "showColumnFooter", js.undefined)
+    inline def setShowColumnFooterUndefined: Self = StObject.set(x, "showColumnFooter", js.undefined)
     
-    @scala.inline
-    def setShowGridFooter(value: Boolean): Self = StObject.set(x, "showGridFooter", value.asInstanceOf[js.Any])
+    inline def setShowGridFooter(value: Boolean): Self = StObject.set(x, "showGridFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowGridFooterUndefined: Self = StObject.set(x, "showGridFooter", js.undefined)
+    inline def setShowGridFooterUndefined: Self = StObject.set(x, "showGridFooter", js.undefined)
     
-    @scala.inline
-    def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
+    inline def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
+    inline def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
     
-    @scala.inline
-    def setUseExternalFiltering(value: Boolean): Self = StObject.set(x, "useExternalFiltering", value.asInstanceOf[js.Any])
+    inline def setUseExternalFiltering(value: Boolean): Self = StObject.set(x, "useExternalFiltering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExternalFilteringUndefined: Self = StObject.set(x, "useExternalFiltering", js.undefined)
+    inline def setUseExternalFilteringUndefined: Self = StObject.set(x, "useExternalFiltering", js.undefined)
     
-    @scala.inline
-    def setUseExternalSorting(value: Boolean): Self = StObject.set(x, "useExternalSorting", value.asInstanceOf[js.Any])
+    inline def setUseExternalSorting(value: Boolean): Self = StObject.set(x, "useExternalSorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExternalSortingUndefined: Self = StObject.set(x, "useExternalSorting", js.undefined)
+    inline def setUseExternalSortingUndefined: Self = StObject.set(x, "useExternalSorting", js.undefined)
     
-    @scala.inline
-    def setVirtualizationThreshold(value: Double): Self = StObject.set(x, "virtualizationThreshold", value.asInstanceOf[js.Any])
+    inline def setVirtualizationThreshold(value: Double): Self = StObject.set(x, "virtualizationThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualizationThresholdUndefined: Self = StObject.set(x, "virtualizationThreshold", js.undefined)
+    inline def setVirtualizationThresholdUndefined: Self = StObject.set(x, "virtualizationThreshold", js.undefined)
     
-    @scala.inline
-    def setWheelScrollThrottle(value: Double): Self = StObject.set(x, "wheelScrollThrottle", value.asInstanceOf[js.Any])
+    inline def setWheelScrollThrottle(value: Double): Self = StObject.set(x, "wheelScrollThrottle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheelScrollThrottleUndefined: Self = StObject.set(x, "wheelScrollThrottle", js.undefined)
+    inline def setWheelScrollThrottleUndefined: Self = StObject.set(x, "wheelScrollThrottle", js.undefined)
   }
 }

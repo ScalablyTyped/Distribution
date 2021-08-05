@@ -23,8 +23,7 @@ trait UseDropdownToggleHelperspProps extends StObject {
 }
 object UseDropdownToggleHelperspProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     props: UseDropdownToggleProps,
     show: Boolean,
     toggle: (/* nextShow */ Boolean, /* event */ js.UndefOr[(SyntheticEvent[Element, Event]) | Event]) => Unit
@@ -33,17 +32,13 @@ object UseDropdownToggleHelperspProps {
     __obj.asInstanceOf[UseDropdownToggleHelperspProps]
   }
   
-  @scala.inline
-  implicit class UseDropdownToggleHelperspPropsMutableBuilder[Self <: UseDropdownToggleHelperspProps] (val x: Self) extends AnyVal {
+  extension [Self <: UseDropdownToggleHelperspProps](x: Self) {
     
-    @scala.inline
-    def setProps(value: UseDropdownToggleProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: UseDropdownToggleProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggle(
+    inline def setToggle(
       value: (/* nextShow */ Boolean, /* event */ js.UndefOr[(SyntheticEvent[Element, Event]) | Event]) => Unit
     ): Self = StObject.set(x, "toggle", js.Any.fromFunction2(value))
   }

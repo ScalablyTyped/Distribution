@@ -22,20 +22,16 @@ object undoSmallMod extends Shortcut {
   }
   object UndoSmallProps {
     
-    @scala.inline
-    def apply(): UndoSmallProps = {
+    inline def apply(): UndoSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UndoSmallProps]
     }
     
-    @scala.inline
-    implicit class UndoSmallPropsMutableBuilder[Self <: UndoSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: UndoSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

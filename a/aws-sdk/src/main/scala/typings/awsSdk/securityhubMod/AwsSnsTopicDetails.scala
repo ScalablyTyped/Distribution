@@ -28,40 +28,29 @@ trait AwsSnsTopicDetails extends StObject {
 }
 object AwsSnsTopicDetails {
   
-  @scala.inline
-  def apply(): AwsSnsTopicDetails = {
+  inline def apply(): AwsSnsTopicDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsSnsTopicDetails]
   }
   
-  @scala.inline
-  implicit class AwsSnsTopicDetailsMutableBuilder[Self <: AwsSnsTopicDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSnsTopicDetails](x: Self) {
     
-    @scala.inline
-    def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
+    inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
     
-    @scala.inline
-    def setOwner(value: NonEmptyString): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: NonEmptyString): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: AwsSnsTopicSubscriptionList): Self = StObject.set(x, "Subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: AwsSnsTopicSubscriptionList): Self = StObject.set(x, "Subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "Subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "Subscription", js.undefined)
     
-    @scala.inline
-    def setSubscriptionVarargs(value: AwsSnsTopicSubscription*): Self = StObject.set(x, "Subscription", js.Array(value :_*))
+    inline def setSubscriptionVarargs(value: AwsSnsTopicSubscription*): Self = StObject.set(x, "Subscription", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicName(value: NonEmptyString): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: NonEmptyString): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
   }
 }

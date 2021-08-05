@@ -27,8 +27,7 @@ trait FlexboxProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
      with OrderProps[ThemeType]
 object FlexboxProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexboxProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexboxProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexboxProps[ThemeType]]
   }

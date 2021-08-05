@@ -17,19 +17,15 @@ trait SchemaFileReference extends StObject {
 }
 object SchemaFileReference {
   
-  @scala.inline
-  def apply(): SchemaFileReference = {
+  inline def apply(): SchemaFileReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFileReference]
   }
   
-  @scala.inline
-  implicit class SchemaFileReferenceMutableBuilder[Self <: SchemaFileReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFileReference](x: Self) {
     
-    @scala.inline
-    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
+    inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }
 }

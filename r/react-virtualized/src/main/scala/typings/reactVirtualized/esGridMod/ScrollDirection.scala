@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollDirection extends StObject
 object ScrollDirection {
   
-  @scala.inline
-  def horizontal: typings.reactVirtualized.reactVirtualizedStrings.horizontal = "horizontal".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.horizontal]
+  inline def horizontal: typings.reactVirtualized.reactVirtualizedStrings.horizontal = "horizontal".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.reactVirtualized.reactVirtualizedStrings.vertical = "vertical".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.vertical]
+  inline def vertical: typings.reactVirtualized.reactVirtualizedStrings.vertical = "vertical".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.vertical]
 }

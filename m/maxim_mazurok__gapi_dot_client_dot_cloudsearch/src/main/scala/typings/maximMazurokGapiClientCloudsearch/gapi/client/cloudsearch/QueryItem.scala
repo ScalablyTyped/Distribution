@@ -11,19 +11,15 @@ trait QueryItem extends StObject {
 }
 object QueryItem {
   
-  @scala.inline
-  def apply(): QueryItem = {
+  inline def apply(): QueryItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryItem]
   }
   
-  @scala.inline
-  implicit class QueryItemMutableBuilder[Self <: QueryItem] (val x: Self) extends AnyVal {
+  extension [Self <: QueryItem](x: Self) {
     
-    @scala.inline
-    def setIsSynthetic(value: Boolean): Self = StObject.set(x, "isSynthetic", value.asInstanceOf[js.Any])
+    inline def setIsSynthetic(value: Boolean): Self = StObject.set(x, "isSynthetic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSyntheticUndefined: Self = StObject.set(x, "isSynthetic", js.undefined)
+    inline def setIsSyntheticUndefined: Self = StObject.set(x, "isSynthetic", js.undefined)
   }
 }

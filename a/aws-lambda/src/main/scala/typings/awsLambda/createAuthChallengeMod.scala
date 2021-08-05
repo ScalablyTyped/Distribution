@@ -22,8 +22,7 @@ object createAuthChallengeMod {
   }
   object CreateAuthChallengeTriggerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callerContext: AwsSdkVersion,
       region: String,
       request: ChallengeName,
@@ -36,14 +35,11 @@ object createAuthChallengeMod {
       __obj.asInstanceOf[CreateAuthChallengeTriggerEvent]
     }
     
-    @scala.inline
-    implicit class CreateAuthChallengeTriggerEventMutableBuilder[Self <: CreateAuthChallengeTriggerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CreateAuthChallengeTriggerEvent](x: Self) {
       
-      @scala.inline
-      def setRequest(value: ChallengeName): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ChallengeName): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: ChallengeMetadata): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: ChallengeMetadata): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

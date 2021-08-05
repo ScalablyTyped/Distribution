@@ -20,40 +20,29 @@ trait GoogleCloudDatalabelingV1beta1OperatorMetadata extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1OperatorMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1OperatorMetadata = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1OperatorMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1OperatorMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1OperatorMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1OperatorMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1OperatorMetadata](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelVotes(value: Double): Self = StObject.set(x, "labelVotes", value.asInstanceOf[js.Any])
+    inline def setLabelVotes(value: Double): Self = StObject.set(x, "labelVotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelVotesUndefined: Self = StObject.set(x, "labelVotes", js.undefined)
+    inline def setLabelVotesUndefined: Self = StObject.set(x, "labelVotes", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setTotalVotes(value: Double): Self = StObject.set(x, "totalVotes", value.asInstanceOf[js.Any])
+    inline def setTotalVotes(value: Double): Self = StObject.set(x, "totalVotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalVotesUndefined: Self = StObject.set(x, "totalVotes", js.undefined)
+    inline def setTotalVotesUndefined: Self = StObject.set(x, "totalVotes", js.undefined)
   }
 }

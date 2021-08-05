@@ -93,124 +93,85 @@ trait InstanceGroup extends StObject {
 }
 object InstanceGroup {
   
-  @scala.inline
-  def apply(): InstanceGroup = {
+  inline def apply(): InstanceGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroup]
   }
   
-  @scala.inline
-  implicit class InstanceGroupMutableBuilder[Self <: InstanceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroup](x: Self) {
     
-    @scala.inline
-    def setAutoScalingPolicy(value: AutoScalingPolicyDescription): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoScalingPolicy(value: AutoScalingPolicyDescription): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingPolicyUndefined: Self = StObject.set(x, "AutoScalingPolicy", js.undefined)
+    inline def setAutoScalingPolicyUndefined: Self = StObject.set(x, "AutoScalingPolicy", js.undefined)
     
-    @scala.inline
-    def setBidPrice(value: String): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
+    inline def setBidPrice(value: String): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
+    inline def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
     
-    @scala.inline
-    def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
     
-    @scala.inline
-    def setConfigurationsVersion(value: Long): Self = StObject.set(x, "ConfigurationsVersion", value.asInstanceOf[js.Any])
+    inline def setConfigurationsVersion(value: Long): Self = StObject.set(x, "ConfigurationsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsVersionUndefined: Self = StObject.set(x, "ConfigurationsVersion", js.undefined)
+    inline def setConfigurationsVersionUndefined: Self = StObject.set(x, "ConfigurationsVersion", js.undefined)
     
-    @scala.inline
-    def setEbsBlockDevices(value: EbsBlockDeviceList): Self = StObject.set(x, "EbsBlockDevices", value.asInstanceOf[js.Any])
+    inline def setEbsBlockDevices(value: EbsBlockDeviceList): Self = StObject.set(x, "EbsBlockDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsBlockDevicesUndefined: Self = StObject.set(x, "EbsBlockDevices", js.undefined)
+    inline def setEbsBlockDevicesUndefined: Self = StObject.set(x, "EbsBlockDevices", js.undefined)
     
-    @scala.inline
-    def setEbsBlockDevicesVarargs(value: EbsBlockDevice*): Self = StObject.set(x, "EbsBlockDevices", js.Array(value :_*))
+    inline def setEbsBlockDevicesVarargs(value: EbsBlockDevice*): Self = StObject.set(x, "EbsBlockDevices", js.Array(value :_*))
     
-    @scala.inline
-    def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
+    inline def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
+    inline def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
-    @scala.inline
-    def setId(value: InstanceGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: InstanceGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupType(value: InstanceGroupType): Self = StObject.set(x, "InstanceGroupType", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupType(value: InstanceGroupType): Self = StObject.set(x, "InstanceGroupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupTypeUndefined: Self = StObject.set(x, "InstanceGroupType", js.undefined)
+    inline def setInstanceGroupTypeUndefined: Self = StObject.set(x, "InstanceGroupType", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setLastSuccessfullyAppliedConfigurations(value: ConfigurationList): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfullyAppliedConfigurations(value: ConfigurationList): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSuccessfullyAppliedConfigurationsUndefined: Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", js.undefined)
+    inline def setLastSuccessfullyAppliedConfigurationsUndefined: Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", js.undefined)
     
-    @scala.inline
-    def setLastSuccessfullyAppliedConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", js.Array(value :_*))
+    inline def setLastSuccessfullyAppliedConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setLastSuccessfullyAppliedConfigurationsVersion(value: Long): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurationsVersion", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfullyAppliedConfigurationsVersion(value: Long): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurationsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSuccessfullyAppliedConfigurationsVersionUndefined: Self = StObject.set(x, "LastSuccessfullyAppliedConfigurationsVersion", js.undefined)
+    inline def setLastSuccessfullyAppliedConfigurationsVersionUndefined: Self = StObject.set(x, "LastSuccessfullyAppliedConfigurationsVersion", js.undefined)
     
-    @scala.inline
-    def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
+    inline def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketUndefined: Self = StObject.set(x, "Market", js.undefined)
+    inline def setMarketUndefined: Self = StObject.set(x, "Market", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRequestedInstanceCount(value: Integer): Self = StObject.set(x, "RequestedInstanceCount", value.asInstanceOf[js.Any])
+    inline def setRequestedInstanceCount(value: Integer): Self = StObject.set(x, "RequestedInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedInstanceCountUndefined: Self = StObject.set(x, "RequestedInstanceCount", js.undefined)
+    inline def setRequestedInstanceCountUndefined: Self = StObject.set(x, "RequestedInstanceCount", js.undefined)
     
-    @scala.inline
-    def setRunningInstanceCount(value: Integer): Self = StObject.set(x, "RunningInstanceCount", value.asInstanceOf[js.Any])
+    inline def setRunningInstanceCount(value: Integer): Self = StObject.set(x, "RunningInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningInstanceCountUndefined: Self = StObject.set(x, "RunningInstanceCount", js.undefined)
+    inline def setRunningInstanceCountUndefined: Self = StObject.set(x, "RunningInstanceCount", js.undefined)
     
-    @scala.inline
-    def setShrinkPolicy(value: ShrinkPolicy): Self = StObject.set(x, "ShrinkPolicy", value.asInstanceOf[js.Any])
+    inline def setShrinkPolicy(value: ShrinkPolicy): Self = StObject.set(x, "ShrinkPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkPolicyUndefined: Self = StObject.set(x, "ShrinkPolicy", js.undefined)
+    inline def setShrinkPolicyUndefined: Self = StObject.set(x, "ShrinkPolicy", js.undefined)
     
-    @scala.inline
-    def setStatus(value: InstanceGroupStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: InstanceGroupStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

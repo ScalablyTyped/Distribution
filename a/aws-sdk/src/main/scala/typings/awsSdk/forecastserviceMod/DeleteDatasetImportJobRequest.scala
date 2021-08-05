@@ -13,16 +13,13 @@ trait DeleteDatasetImportJobRequest extends StObject {
 }
 object DeleteDatasetImportJobRequest {
   
-  @scala.inline
-  def apply(DatasetImportJobArn: Arn): DeleteDatasetImportJobRequest = {
+  inline def apply(DatasetImportJobArn: Arn): DeleteDatasetImportJobRequest = {
     val __obj = js.Dynamic.literal(DatasetImportJobArn = DatasetImportJobArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDatasetImportJobRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDatasetImportJobRequestMutableBuilder[Self <: DeleteDatasetImportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDatasetImportJobRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
+    inline def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
   }
 }

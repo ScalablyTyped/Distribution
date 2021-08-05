@@ -23,28 +23,21 @@ trait EmergencyContact extends StObject {
 }
 object EmergencyContact {
   
-  @scala.inline
-  def apply(EmailAddress: EmailAddress): EmergencyContact = {
+  inline def apply(EmailAddress: EmailAddress): EmergencyContact = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmergencyContact]
   }
   
-  @scala.inline
-  implicit class EmergencyContactMutableBuilder[Self <: EmergencyContact] (val x: Self) extends AnyVal {
+  extension [Self <: EmergencyContact](x: Self) {
     
-    @scala.inline
-    def setContactNotes(value: ContactNotes): Self = StObject.set(x, "ContactNotes", value.asInstanceOf[js.Any])
+    inline def setContactNotes(value: ContactNotes): Self = StObject.set(x, "ContactNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactNotesUndefined: Self = StObject.set(x, "ContactNotes", js.undefined)
+    inline def setContactNotesUndefined: Self = StObject.set(x, "ContactNotes", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
   }
 }

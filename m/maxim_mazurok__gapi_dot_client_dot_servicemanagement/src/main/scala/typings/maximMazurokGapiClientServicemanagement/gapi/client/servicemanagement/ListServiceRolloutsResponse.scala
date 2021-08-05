@@ -14,28 +14,21 @@ trait ListServiceRolloutsResponse extends StObject {
 }
 object ListServiceRolloutsResponse {
   
-  @scala.inline
-  def apply(): ListServiceRolloutsResponse = {
+  inline def apply(): ListServiceRolloutsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServiceRolloutsResponse]
   }
   
-  @scala.inline
-  implicit class ListServiceRolloutsResponseMutableBuilder[Self <: ListServiceRolloutsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServiceRolloutsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRollouts(value: js.Array[Rollout]): Self = StObject.set(x, "rollouts", value.asInstanceOf[js.Any])
+    inline def setRollouts(value: js.Array[Rollout]): Self = StObject.set(x, "rollouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloutsUndefined: Self = StObject.set(x, "rollouts", js.undefined)
+    inline def setRolloutsUndefined: Self = StObject.set(x, "rollouts", js.undefined)
     
-    @scala.inline
-    def setRolloutsVarargs(value: Rollout*): Self = StObject.set(x, "rollouts", js.Array(value :_*))
+    inline def setRolloutsVarargs(value: Rollout*): Self = StObject.set(x, "rollouts", js.Array(value :_*))
   }
 }

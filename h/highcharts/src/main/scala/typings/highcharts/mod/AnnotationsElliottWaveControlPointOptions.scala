@@ -10,19 +10,15 @@ trait AnnotationsElliottWaveControlPointOptions extends StObject {
 }
 object AnnotationsElliottWaveControlPointOptions {
   
-  @scala.inline
-  def apply(): AnnotationsElliottWaveControlPointOptions = {
+  inline def apply(): AnnotationsElliottWaveControlPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsElliottWaveControlPointOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsElliottWaveControlPointOptionsMutableBuilder[Self <: AnnotationsElliottWaveControlPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsElliottWaveControlPointOptions](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

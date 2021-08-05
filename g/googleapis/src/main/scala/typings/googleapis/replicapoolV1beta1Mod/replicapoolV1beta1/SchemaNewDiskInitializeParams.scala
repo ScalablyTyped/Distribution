@@ -34,31 +34,23 @@ trait SchemaNewDiskInitializeParams extends StObject {
 }
 object SchemaNewDiskInitializeParams {
   
-  @scala.inline
-  def apply(): SchemaNewDiskInitializeParams = {
+  inline def apply(): SchemaNewDiskInitializeParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNewDiskInitializeParams]
   }
   
-  @scala.inline
-  implicit class SchemaNewDiskInitializeParamsMutableBuilder[Self <: SchemaNewDiskInitializeParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNewDiskInitializeParams](x: Self) {
     
-    @scala.inline
-    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
+    inline def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
+    inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
-    @scala.inline
-    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
+    inline def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
+    inline def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
   }
 }

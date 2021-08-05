@@ -25,32 +25,24 @@ object typesCognitoIdentityProviderMod {
   }
   object CognitoIdentityProvider {
     
-    @scala.inline
-    def apply(): CognitoIdentityProvider = {
+    inline def apply(): CognitoIdentityProvider = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CognitoIdentityProvider]
     }
     
-    @scala.inline
-    implicit class CognitoIdentityProviderMutableBuilder[Self <: CognitoIdentityProvider] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoIdentityProvider](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
       
-      @scala.inline
-      def setProviderName(value: String): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
+      inline def setProviderName(value: String): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
+      inline def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
       
-      @scala.inline
-      def setServerSideTokenCheck(value: Boolean): Self = StObject.set(x, "ServerSideTokenCheck", value.asInstanceOf[js.Any])
+      inline def setServerSideTokenCheck(value: Boolean): Self = StObject.set(x, "ServerSideTokenCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideTokenCheckUndefined: Self = StObject.set(x, "ServerSideTokenCheck", js.undefined)
+      inline def setServerSideTokenCheckUndefined: Self = StObject.set(x, "ServerSideTokenCheck", js.undefined)
     }
   }
   

@@ -16,17 +16,14 @@ object typesReplicaAlreadyExistsExceptionMod {
   }
   object ReplicaAlreadyExistsException {
     
-    @scala.inline
-    def apply(): ReplicaAlreadyExistsException = {
+    inline def apply(): ReplicaAlreadyExistsException = {
       val __obj = js.Dynamic.literal(name = "ReplicaAlreadyExistsException")
       __obj.asInstanceOf[ReplicaAlreadyExistsException]
     }
     
-    @scala.inline
-    implicit class ReplicaAlreadyExistsExceptionMutableBuilder[Self <: ReplicaAlreadyExistsException] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaAlreadyExistsException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ReplicaAlreadyExistsException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,20 +38,16 @@ object typesReplicaAlreadyExistsExceptionMod {
   }
   object ReplicaAlreadyExistsExceptionDetails {
     
-    @scala.inline
-    def apply(): ReplicaAlreadyExistsExceptionDetails = {
+    inline def apply(): ReplicaAlreadyExistsExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaAlreadyExistsExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ReplicaAlreadyExistsExceptionDetailsMutableBuilder[Self <: ReplicaAlreadyExistsExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaAlreadyExistsExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

@@ -23,34 +23,25 @@ trait EnvironmentImage extends StObject {
 }
 object EnvironmentImage {
   
-  @scala.inline
-  def apply(): EnvironmentImage = {
+  inline def apply(): EnvironmentImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentImage]
   }
   
-  @scala.inline
-  implicit class EnvironmentImageMutableBuilder[Self <: EnvironmentImage] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentImage](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVersions(value: ImageVersions): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: ImageVersions): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

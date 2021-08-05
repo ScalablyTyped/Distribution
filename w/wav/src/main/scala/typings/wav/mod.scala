@@ -93,8 +93,7 @@ object mod {
   }
   object Format {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audioFormat: Double,
       bitDepth: Double,
       blockAlign: Double,
@@ -108,32 +107,23 @@ object mod {
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setAudioFormat(value: Double): Self = StObject.set(x, "audioFormat", value.asInstanceOf[js.Any])
+      inline def setAudioFormat(value: Double): Self = StObject.set(x, "audioFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
+      inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockAlign(value: Double): Self = StObject.set(x, "blockAlign", value.asInstanceOf[js.Any])
+      inline def setBlockAlign(value: Double): Self = StObject.set(x, "blockAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByteRate(value: Double): Self = StObject.set(x, "byteRate", value.asInstanceOf[js.Any])
+      inline def setByteRate(value: Double): Self = StObject.set(x, "byteRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndianness(value: LE | BE): Self = StObject.set(x, "endianness", value.asInstanceOf[js.Any])
+      inline def setEndianness(value: LE | BE): Self = StObject.set(x, "endianness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,20 +135,16 @@ object mod {
   }
   object UnknownChunk {
     
-    @scala.inline
-    def apply(data: js.Any, id: String): UnknownChunk = {
+    inline def apply(data: js.Any, id: String): UnknownChunk = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnknownChunk]
     }
     
-    @scala.inline
-    implicit class UnknownChunkMutableBuilder[Self <: UnknownChunk] (val x: Self) extends AnyVal {
+    extension [Self <: UnknownChunk](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,38 +162,28 @@ object mod {
   }
   object WriterOptions {
     
-    @scala.inline
-    def apply(): WriterOptions = {
+    inline def apply(): WriterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriterOptions]
     }
     
-    @scala.inline
-    implicit class WriterOptionsMutableBuilder[Self <: WriterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriterOptions](x: Self) {
       
-      @scala.inline
-      def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
+      inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitDepthUndefined: Self = StObject.set(x, "bitDepth", js.undefined)
+      inline def setBitDepthUndefined: Self = StObject.set(x, "bitDepth", js.undefined)
       
-      @scala.inline
-      def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
 }

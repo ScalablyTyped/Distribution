@@ -13,19 +13,15 @@ trait SignedMessage extends StObject {
 }
 object SignedMessage {
   
-  @scala.inline
-  def apply(address: String, signature: String): SignedMessage = {
+  inline def apply(address: String, signature: String): SignedMessage = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedMessage]
   }
   
-  @scala.inline
-  implicit class SignedMessageMutableBuilder[Self <: SignedMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SignedMessage](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

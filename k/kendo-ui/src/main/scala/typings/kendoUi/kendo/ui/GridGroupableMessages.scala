@@ -10,19 +10,15 @@ trait GridGroupableMessages extends StObject {
 }
 object GridGroupableMessages {
   
-  @scala.inline
-  def apply(): GridGroupableMessages = {
+  inline def apply(): GridGroupableMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridGroupableMessages]
   }
   
-  @scala.inline
-  implicit class GridGroupableMessagesMutableBuilder[Self <: GridGroupableMessages] (val x: Self) extends AnyVal {
+  extension [Self <: GridGroupableMessages](x: Self) {
     
-    @scala.inline
-    def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+    inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
   }
 }

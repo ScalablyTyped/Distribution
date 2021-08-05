@@ -49,59 +49,42 @@ object mod {
   }
   object ImageLoaderProps {
     
-    @scala.inline
-    def apply(src: String): ImageLoaderProps = {
+    inline def apply(src: String): ImageLoaderProps = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageLoaderProps]
     }
     
-    @scala.inline
-    implicit class ImageLoaderPropsMutableBuilder[Self <: ImageLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageLoaderProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setImgProps(value: js.Any): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
+      inline def setImgProps(value: js.Any): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
+      inline def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setPreloader(value: /* params */ js.Any => ReactElement): Self = StObject.set(x, "preloader", js.Any.fromFunction1(value))
+      inline def setPreloader(value: /* params */ js.Any => ReactElement): Self = StObject.set(x, "preloader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreloaderUndefined: Self = StObject.set(x, "preloader", js.undefined)
+      inline def setPreloaderUndefined: Self = StObject.set(x, "preloader", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWrapper(value: /* props */ js.Any => ReactElement): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
+      inline def setWrapper(value: /* props */ js.Any => ReactElement): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
 }

@@ -22,23 +22,18 @@ object v1alpha1 {
   }
   object AggregationRule {
     
-    @scala.inline
-    def apply(): AggregationRule = {
+    inline def apply(): AggregationRule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AggregationRule]
     }
     
-    @scala.inline
-    implicit class AggregationRuleMutableBuilder[Self <: AggregationRule] (val x: Self) extends AnyVal {
+    extension [Self <: AggregationRule](x: Self) {
       
-      @scala.inline
-      def setClusterRoleSelectors(value: Input[js.Array[Input[LabelSelector]]]): Self = StObject.set(x, "clusterRoleSelectors", value.asInstanceOf[js.Any])
+      inline def setClusterRoleSelectors(value: Input[js.Array[Input[LabelSelector]]]): Self = StObject.set(x, "clusterRoleSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterRoleSelectorsUndefined: Self = StObject.set(x, "clusterRoleSelectors", js.undefined)
+      inline def setClusterRoleSelectorsUndefined: Self = StObject.set(x, "clusterRoleSelectors", js.undefined)
       
-      @scala.inline
-      def setClusterRoleSelectorsVarargs(value: Input[LabelSelector]*): Self = StObject.set(x, "clusterRoleSelectors", js.Array(value :_*))
+      inline def setClusterRoleSelectorsVarargs(value: Input[LabelSelector]*): Self = StObject.set(x, "clusterRoleSelectors", js.Array(value :_*))
     }
   }
   
@@ -74,47 +69,34 @@ object v1alpha1 {
   }
   object ClusterRole {
     
-    @scala.inline
-    def apply(): ClusterRole = {
+    inline def apply(): ClusterRole = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterRole]
     }
     
-    @scala.inline
-    implicit class ClusterRoleMutableBuilder[Self <: ClusterRole] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterRole](x: Self) {
       
-      @scala.inline
-      def setAggregationRule(value: Input[AggregationRule]): Self = StObject.set(x, "aggregationRule", value.asInstanceOf[js.Any])
+      inline def setAggregationRule(value: Input[AggregationRule]): Self = StObject.set(x, "aggregationRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregationRuleUndefined: Self = StObject.set(x, "aggregationRule", js.undefined)
+      inline def setAggregationRuleUndefined: Self = StObject.set(x, "aggregationRule", js.undefined)
       
-      @scala.inline
-      def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRole]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRole]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[PolicyRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[PolicyRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[PolicyRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[PolicyRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
   
@@ -150,44 +132,32 @@ object v1alpha1 {
   }
   object ClusterRoleBinding {
     
-    @scala.inline
-    def apply(roleRef: Input[RoleRef]): ClusterRoleBinding = {
+    inline def apply(roleRef: Input[RoleRef]): ClusterRoleBinding = {
       val __obj = js.Dynamic.literal(roleRef = roleRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterRoleBinding]
     }
     
-    @scala.inline
-    implicit class ClusterRoleBindingMutableBuilder[Self <: ClusterRoleBinding] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterRoleBinding](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRoleBinding]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRoleBinding]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setRoleRef(value: Input[RoleRef]): Self = StObject.set(x, "roleRef", value.asInstanceOf[js.Any])
+      inline def setRoleRef(value: Input[RoleRef]): Self = StObject.set(x, "roleRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjects(value: Input[js.Array[Input[Subject]]]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
+      inline def setSubjects(value: Input[js.Array[Input[Subject]]]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectsUndefined: Self = StObject.set(x, "subjects", js.undefined)
+      inline def setSubjectsUndefined: Self = StObject.set(x, "subjects", js.undefined)
       
-      @scala.inline
-      def setSubjectsVarargs(value: Input[Subject]*): Self = StObject.set(x, "subjects", js.Array(value :_*))
+      inline def setSubjectsVarargs(value: Input[Subject]*): Self = StObject.set(x, "subjects", js.Array(value :_*))
     }
   }
   
@@ -223,56 +193,40 @@ object v1alpha1 {
   }
   object PolicyRule {
     
-    @scala.inline
-    def apply(verbs: Input[js.Array[Input[String]]]): PolicyRule = {
+    inline def apply(verbs: Input[js.Array[Input[String]]]): PolicyRule = {
       val __obj = js.Dynamic.literal(verbs = verbs.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyRule]
     }
     
-    @scala.inline
-    implicit class PolicyRuleMutableBuilder[Self <: PolicyRule] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyRule](x: Self) {
       
-      @scala.inline
-      def setApiGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
+      inline def setApiGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiGroupsUndefined: Self = StObject.set(x, "apiGroups", js.undefined)
+      inline def setApiGroupsUndefined: Self = StObject.set(x, "apiGroups", js.undefined)
       
-      @scala.inline
-      def setApiGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
+      inline def setApiGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setNonResourceURLs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nonResourceURLs", value.asInstanceOf[js.Any])
+      inline def setNonResourceURLs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nonResourceURLs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonResourceURLsUndefined: Self = StObject.set(x, "nonResourceURLs", js.undefined)
+      inline def setNonResourceURLsUndefined: Self = StObject.set(x, "nonResourceURLs", js.undefined)
       
-      @scala.inline
-      def setNonResourceURLsVarargs(value: Input[String]*): Self = StObject.set(x, "nonResourceURLs", js.Array(value :_*))
+      inline def setNonResourceURLsVarargs(value: Input[String]*): Self = StObject.set(x, "nonResourceURLs", js.Array(value :_*))
       
-      @scala.inline
-      def setResourceNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+      inline def setResourceNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+      inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
       
-      @scala.inline
-      def setResourceNamesVarargs(value: Input[String]*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+      inline def setResourceNamesVarargs(value: Input[String]*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
       
-      @scala.inline
-      def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setVerbs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
+      inline def setVerbs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbsVarargs(value: Input[String]*): Self = StObject.set(x, "verbs", js.Array(value :_*))
+      inline def setVerbsVarargs(value: Input[String]*): Self = StObject.set(x, "verbs", js.Array(value :_*))
     }
   }
   
@@ -303,41 +257,30 @@ object v1alpha1 {
   }
   object Role {
     
-    @scala.inline
-    def apply(): Role = {
+    inline def apply(): Role = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Role]
     }
     
-    @scala.inline
-    implicit class RoleMutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
+    extension [Self <: Role](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Role]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Role]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[PolicyRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[PolicyRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[PolicyRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[PolicyRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
   
@@ -373,44 +316,32 @@ object v1alpha1 {
   }
   object RoleBinding {
     
-    @scala.inline
-    def apply(roleRef: Input[RoleRef]): RoleBinding = {
+    inline def apply(roleRef: Input[RoleRef]): RoleBinding = {
       val __obj = js.Dynamic.literal(roleRef = roleRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleBinding]
     }
     
-    @scala.inline
-    implicit class RoleBindingMutableBuilder[Self <: RoleBinding] (val x: Self) extends AnyVal {
+    extension [Self <: RoleBinding](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RoleBinding]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RoleBinding]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setRoleRef(value: Input[RoleRef]): Self = StObject.set(x, "roleRef", value.asInstanceOf[js.Any])
+      inline def setRoleRef(value: Input[RoleRef]): Self = StObject.set(x, "roleRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjects(value: Input[js.Array[Input[Subject]]]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
+      inline def setSubjects(value: Input[js.Array[Input[Subject]]]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectsUndefined: Self = StObject.set(x, "subjects", js.undefined)
+      inline def setSubjectsUndefined: Self = StObject.set(x, "subjects", js.undefined)
       
-      @scala.inline
-      def setSubjectsVarargs(value: Input[Subject]*): Self = StObject.set(x, "subjects", js.Array(value :_*))
+      inline def setSubjectsVarargs(value: Input[Subject]*): Self = StObject.set(x, "subjects", js.Array(value :_*))
     }
   }
   
@@ -436,23 +367,18 @@ object v1alpha1 {
   }
   object RoleRef {
     
-    @scala.inline
-    def apply(apiGroup: Input[String], kind: Input[String], name: Input[String]): RoleRef = {
+    inline def apply(apiGroup: Input[String], kind: Input[String], name: Input[String]): RoleRef = {
       val __obj = js.Dynamic.literal(apiGroup = apiGroup.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleRef]
     }
     
-    @scala.inline
-    implicit class RoleRefMutableBuilder[Self <: RoleRef] (val x: Self) extends AnyVal {
+    extension [Self <: RoleRef](x: Self) {
       
-      @scala.inline
-      def setApiGroup(value: Input[String]): Self = StObject.set(x, "apiGroup", value.asInstanceOf[js.Any])
+      inline def setApiGroup(value: Input[String]): Self = StObject.set(x, "apiGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -483,32 +409,24 @@ object v1alpha1 {
   }
   object Subject {
     
-    @scala.inline
-    def apply(kind: Input[String], name: Input[String]): Subject = {
+    inline def apply(kind: Input[String], name: Input[String]): Subject = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subject]
     }
     
-    @scala.inline
-    implicit class SubjectMutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
+    extension [Self <: Subject](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     }
   }
 }

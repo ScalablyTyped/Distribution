@@ -15,31 +15,23 @@ trait ILocation extends StObject {
 }
 object ILocation {
   
-  @scala.inline
-  def apply(): ILocation = {
+  inline def apply(): ILocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILocation]
   }
   
-  @scala.inline
-  implicit class ILocationMutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
+  extension [Self <: ILocation](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNull: Self = StObject.set(x, "column", null)
+    inline def setColumnNull: Self = StObject.set(x, "column", null)
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNull: Self = StObject.set(x, "line", null)
+    inline def setLineNull: Self = StObject.set(x, "line", null)
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

@@ -43,8 +43,7 @@ trait XSchema
 }
 object XSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     readComponent: XSchemaHandler => Unit,
@@ -56,16 +55,12 @@ object XSchema {
     __obj.asInstanceOf[XSchema]
   }
   
-  @scala.inline
-  implicit class XSchemaMutableBuilder[Self <: XSchema] (val x: Self) extends AnyVal {
+  extension [Self <: XSchema](x: Self) {
     
-    @scala.inline
-    def setReadComponent(value: XSchemaHandler => Unit): Self = StObject.set(x, "readComponent", js.Any.fromFunction1(value))
+    inline def setReadComponent(value: XSchemaHandler => Unit): Self = StObject.set(x, "readComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadSchema(value: XSchemaHandler => Unit): Self = StObject.set(x, "readSchema", js.Any.fromFunction1(value))
+    inline def setReadSchema(value: XSchemaHandler => Unit): Self = StObject.set(x, "readSchema", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadTemplates(value: XSchemaHandler => Unit): Self = StObject.set(x, "readTemplates", js.Any.fromFunction1(value))
+    inline def setReadTemplates(value: XSchemaHandler => Unit): Self = StObject.set(x, "readTemplates", js.Any.fromFunction1(value))
   }
 }

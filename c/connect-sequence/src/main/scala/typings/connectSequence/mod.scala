@@ -49,8 +49,7 @@ object mod {
   }
   object ConnectSequence {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: /* repeated */ RequestHandler[ParamsDictionary, js.Any, js.Any, Query] => ConnectSequence,
       appendIf: (Boolean, RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) => ConnectSequence,
       appendList: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] => ConnectSequence,
@@ -61,25 +60,19 @@ object mod {
       __obj.asInstanceOf[ConnectSequence]
     }
     
-    @scala.inline
-    implicit class ConnectSequenceMutableBuilder[Self <: ConnectSequence] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectSequence](x: Self) {
       
-      @scala.inline
-      def setAppend(value: /* repeated */ RequestHandler[ParamsDictionary, js.Any, js.Any, Query] => ConnectSequence): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+      inline def setAppend(value: /* repeated */ RequestHandler[ParamsDictionary, js.Any, js.Any, Query] => ConnectSequence): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendIf(value: (Boolean, RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) => ConnectSequence): Self = StObject.set(x, "appendIf", js.Any.fromFunction2(value))
+      inline def setAppendIf(value: (Boolean, RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) => ConnectSequence): Self = StObject.set(x, "appendIf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAppendList(value: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] => ConnectSequence): Self = StObject.set(x, "appendList", js.Any.fromFunction1(value))
+      inline def setAppendList(value: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] => ConnectSequence): Self = StObject.set(x, "appendList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendListIf(
+      inline def setAppendListIf(
         value: (Boolean, js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]) => ConnectSequence
       ): Self = StObject.set(x, "appendListIf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     }
   }
 }

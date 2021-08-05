@@ -26,26 +26,20 @@ object linkMod {
   }
   object LinkInnerProps {
     
-    @scala.inline
-    def apply(): LinkInnerProps = {
+    inline def apply(): LinkInnerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkInnerProps]
     }
     
-    @scala.inline
-    implicit class LinkInnerPropsMutableBuilder[Self <: LinkInnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkInnerProps](x: Self) {
       
-      @scala.inline
-      def setContainsIcon(value: Boolean): Self = StObject.set(x, "containsIcon", value.asInstanceOf[js.Any])
+      inline def setContainsIcon(value: Boolean): Self = StObject.set(x, "containsIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsIconUndefined: Self = StObject.set(x, "containsIcon", js.undefined)
+      inline def setContainsIconUndefined: Self = StObject.set(x, "containsIcon", js.undefined)
       
-      @scala.inline
-      def setWithArrow(value: Boolean): Self = StObject.set(x, "withArrow", value.asInstanceOf[js.Any])
+      inline def setWithArrow(value: Boolean): Self = StObject.set(x, "withArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithArrowUndefined: Self = StObject.set(x, "withArrow", js.undefined)
+      inline def setWithArrowUndefined: Self = StObject.set(x, "withArrow", js.undefined)
     }
   }
   
@@ -66,44 +60,32 @@ object linkMod {
   }
   object LinkProps {
     
-    @scala.inline
-    def apply(): LinkProps = {
+    inline def apply(): LinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkProps]
     }
     
-    @scala.inline
-    implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkProps](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -121,44 +103,32 @@ object linkMod {
   }
   object LinkStylesProps {
     
-    @scala.inline
-    def apply(): LinkStylesProps = {
+    inline def apply(): LinkStylesProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkStylesProps]
     }
     
-    @scala.inline
-    implicit class LinkStylesPropsMutableBuilder[Self <: LinkStylesProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkStylesProps](x: Self) {
       
-      @scala.inline
-      def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setIsButton(value: Boolean): Self = StObject.set(x, "isButton", value.asInstanceOf[js.Any])
+      inline def setIsButton(value: Boolean): Self = StObject.set(x, "isButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsButtonUndefined: Self = StObject.set(x, "isButton", js.undefined)
+      inline def setIsButtonUndefined: Self = StObject.set(x, "isButton", js.undefined)
       
-      @scala.inline
-      def setNochrome(value: Boolean): Self = StObject.set(x, "nochrome", value.asInstanceOf[js.Any])
+      inline def setNochrome(value: Boolean): Self = StObject.set(x, "nochrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNochromeUndefined: Self = StObject.set(x, "nochrome", js.undefined)
+      inline def setNochromeUndefined: Self = StObject.set(x, "nochrome", js.undefined)
       
-      @scala.inline
-      def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+      inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
       
-      @scala.inline
-      def setTertiary(value: Boolean): Self = StObject.set(x, "tertiary", value.asInstanceOf[js.Any])
+      inline def setTertiary(value: Boolean): Self = StObject.set(x, "tertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTertiaryUndefined: Self = StObject.set(x, "tertiary", js.undefined)
+      inline def setTertiaryUndefined: Self = StObject.set(x, "tertiary", js.undefined)
     }
   }
 }

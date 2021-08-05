@@ -120,8 +120,7 @@ object Engine {
     * @param {engine} engine
     */
   /* static member */
-  @scala.inline
-  def clear(engine: typings.phaser.MatterJS.Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(engine: typings.phaser.MatterJS.Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -143,18 +142,12 @@ object Engine {
     * @return {engine} engine
     * @deprecated
     */
-  @scala.inline
-  def create(): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def create(element: Unit, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def create(element: IEngineDefinition): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def create(element: IEngineDefinition, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def create(element: HTMLElement): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def create(element: HTMLElement, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def create(): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def create(element: Unit, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def create(element: IEngineDefinition): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def create(element: IEngineDefinition, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def create(element: HTMLElement): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def create(element: HTMLElement, options: IEngineDefinition): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
   
   /**
     * Merges two engines by keeping the configuration of `engineA` but replacing the world with the one from `engineB`.
@@ -163,8 +156,7 @@ object Engine {
     * @param {engine} engineB
     */
   /* static member */
-  @scala.inline
-  def merge(engineA: typings.phaser.MatterJS.Engine, engineB: typings.phaser.MatterJS.Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(engineA.asInstanceOf[js.Any], engineB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def merge(engineA: typings.phaser.MatterJS.Engine, engineB: typings.phaser.MatterJS.Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(engineA.asInstanceOf[js.Any], engineB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * An alias for `Runner.run`, see `Matter.Runner` for more information.
@@ -172,8 +164,7 @@ object Engine {
     * @param {engine} engine
     */
   /* static member */
-  @scala.inline
-  def run(engine: typings.phaser.MatterJS.Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def run(engine: typings.phaser.MatterJS.Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Moves the simulation forward in time by `delta` ms.
@@ -191,12 +182,8 @@ object Engine {
     * @param {number} [correction=1]
     */
   /* static member */
-  @scala.inline
-  def update(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def update(engine: typings.phaser.MatterJS.Engine, delta: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def update(engine: typings.phaser.MatterJS.Engine, delta: Double, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
-  @scala.inline
-  def update(engine: typings.phaser.MatterJS.Engine, delta: Unit, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def update(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def update(engine: typings.phaser.MatterJS.Engine, delta: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def update(engine: typings.phaser.MatterJS.Engine, delta: Double, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
+  inline def update(engine: typings.phaser.MatterJS.Engine, delta: Unit, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
 }

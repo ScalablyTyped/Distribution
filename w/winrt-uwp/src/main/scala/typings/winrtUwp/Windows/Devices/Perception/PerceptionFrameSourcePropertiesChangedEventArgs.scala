@@ -16,19 +16,15 @@ trait PerceptionFrameSourcePropertiesChangedEventArgs extends StObject {
 }
 object PerceptionFrameSourcePropertiesChangedEventArgs {
   
-  @scala.inline
-  def apply(collectionChange: CollectionChange, key: String): PerceptionFrameSourcePropertiesChangedEventArgs = {
+  inline def apply(collectionChange: CollectionChange, key: String): PerceptionFrameSourcePropertiesChangedEventArgs = {
     val __obj = js.Dynamic.literal(collectionChange = collectionChange.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerceptionFrameSourcePropertiesChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PerceptionFrameSourcePropertiesChangedEventArgsMutableBuilder[Self <: PerceptionFrameSourcePropertiesChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionFrameSourcePropertiesChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
+    inline def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

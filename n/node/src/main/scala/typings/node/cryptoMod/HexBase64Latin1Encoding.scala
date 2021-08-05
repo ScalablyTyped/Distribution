@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HexBase64Latin1Encoding extends StObject
 object HexBase64Latin1Encoding {
   
-  @scala.inline
-  def base64: typings.node.nodeStrings.base64 = "base64".asInstanceOf[typings.node.nodeStrings.base64]
+  inline def base64: typings.node.nodeStrings.base64 = "base64".asInstanceOf[typings.node.nodeStrings.base64]
   
-  @scala.inline
-  def hex: typings.node.nodeStrings.hex = "hex".asInstanceOf[typings.node.nodeStrings.hex]
+  inline def hex: typings.node.nodeStrings.hex = "hex".asInstanceOf[typings.node.nodeStrings.hex]
   
-  @scala.inline
-  def latin1: typings.node.nodeStrings.latin1 = "latin1".asInstanceOf[typings.node.nodeStrings.latin1]
+  inline def latin1: typings.node.nodeStrings.latin1 = "latin1".asInstanceOf[typings.node.nodeStrings.latin1]
 }

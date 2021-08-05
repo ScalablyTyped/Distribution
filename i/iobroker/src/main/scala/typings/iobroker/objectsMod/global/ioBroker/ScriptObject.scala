@@ -19,20 +19,16 @@ trait ScriptObject
 }
 object ScriptObject {
   
-  @scala.inline
-  def apply(_id: String, common: ScriptCommon, native: Record[String, js.Any]): ScriptObject = {
+  inline def apply(_id: String, common: ScriptCommon, native: Record[String, js.Any]): ScriptObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("script")
     __obj.asInstanceOf[ScriptObject]
   }
   
-  @scala.inline
-  implicit class ScriptObjectMutableBuilder[Self <: ScriptObject] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: ScriptCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: ScriptCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

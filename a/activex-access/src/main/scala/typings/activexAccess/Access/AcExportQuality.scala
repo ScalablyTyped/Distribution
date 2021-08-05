@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcExportQuality extends StObject
 object AcExportQuality {
   
-  @scala.inline
-  def acExportQualityPrint: `0` = 0.asInstanceOf[`0`]
+  inline def acExportQualityPrint: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acExportQualityScreen: `1` = 1.asInstanceOf[`1`]
+  inline def acExportQualityScreen: `1` = 1.asInstanceOf[`1`]
 }

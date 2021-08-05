@@ -198,8 +198,7 @@ object test {
           * @param sString the string to normalize
           * @returns the input string with all words after the first capitalized and all spaces removed
           */
-        @scala.inline
-        def camelCase(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def camelCase(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * e.g. "First Name" -> "first-name"
@@ -207,32 +206,28 @@ object test {
           * @returns the input string trimmed, changed to lower case and with space between words               
           *   replaced by a hyphen ('-')
           */
-        @scala.inline
-        def hyphenated(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenated")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def hyphenated(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenated")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * e.g. "First Name" -> "First Name"
           * @param sString the string to normalize
           * @returns the original unchanged input string
           */
-        @scala.inline
-        def none(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("none")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def none(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("none")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * e.g. "first name" -> "FirstName"
           * @param sString the string to normalize
           * @returns the input string with all words capitalized and all spaces removed
           */
-        @scala.inline
-        def pascalCase(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalCase")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def pascalCase(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalCase")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
         
         /**
           * e.g. "first name" -> "First Name"
           * @param sString the string to normalize
           * @returns the input string trimmed and with all words capitalized
           */
-        @scala.inline
-        def titleCase(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
+        inline def titleCase(sString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(sString.asInstanceOf[js.Any]).asInstanceOf[String]
       }
       
       /**
@@ -250,12 +245,9 @@ object test {
         *                       'camelCase', 'hyphenated' or 'none'.
         * @returns - an object equivalent to the input data, with property names normalized
         */
-      @scala.inline
-      def toObject(aData: js.Array[js.Array[String]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(aData.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      @scala.inline
-      def toObject(aData: js.Array[js.Array[String]], oNorm: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def toObject(aData: js.Array[js.Array[String]], oNorm: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def toObject(aData: js.Array[js.Array[String]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(aData.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def toObject(aData: js.Array[js.Array[String]], oNorm: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def toObject(aData: js.Array[js.Array[String]], oNorm: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Takes the inputed 2D list 'aData' and returns an equivalent list of objects. The data is expected
@@ -271,12 +263,9 @@ object test {
         *                       'camelCase', 'hyphenated' or 'none'.
         * @returns - a list of objects equivalent to the input data, with property names normalized
         */
-      @scala.inline
-      def toTable(aData: js.Array[js.Array[String]]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTable")(aData.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-      @scala.inline
-      def toTable(aData: js.Array[js.Array[String]], oNorm: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTable")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-      @scala.inline
-      def toTable(aData: js.Array[js.Array[String]], oNorm: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTable")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      inline def toTable(aData: js.Array[js.Array[String]]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTable")(aData.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+      inline def toTable(aData: js.Array[js.Array[String]], oNorm: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTable")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      inline def toTable(aData: js.Array[js.Array[String]], oNorm: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTable")(aData.asInstanceOf[js.Any], oNorm.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     }
     
     object opa5TestHarness {
@@ -295,8 +284,7 @@ object test {
         * "Then.iStartMyApp().and.iCloseMyApp()" is not possible at this time.
         * @param args the arguments to the function
         */
-      @scala.inline
-      def test(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def test(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     object qUnitTestHarness {
@@ -309,8 +297,7 @@ object test {
         * Dynamically generates and executes QUnit tests
         * @param args the arguments to the function
         */
-      @scala.inline
-      def test(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def test(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
   }
   

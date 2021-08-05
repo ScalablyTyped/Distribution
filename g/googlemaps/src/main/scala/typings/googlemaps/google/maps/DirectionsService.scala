@@ -13,19 +13,16 @@ trait DirectionsService extends StObject {
 }
 object DirectionsService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     route: (DirectionsRequest, js.Function2[/* result */ DirectionsResult, /* status */ DirectionsStatus, Unit]) => Unit
   ): DirectionsService = {
     val __obj = js.Dynamic.literal(route = js.Any.fromFunction2(route))
     __obj.asInstanceOf[DirectionsService]
   }
   
-  @scala.inline
-  implicit class DirectionsServiceMutableBuilder[Self <: DirectionsService] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsService](x: Self) {
     
-    @scala.inline
-    def setRoute(
+    inline def setRoute(
       value: (DirectionsRequest, js.Function2[/* result */ DirectionsResult, /* status */ DirectionsStatus, Unit]) => Unit
     ): Self = StObject.set(x, "route", js.Any.fromFunction2(value))
   }

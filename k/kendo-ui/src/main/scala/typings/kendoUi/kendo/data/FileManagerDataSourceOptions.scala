@@ -13,19 +13,15 @@ trait FileManagerDataSourceOptions
 }
 object FileManagerDataSourceOptions {
   
-  @scala.inline
-  def apply(): FileManagerDataSourceOptions = {
+  inline def apply(): FileManagerDataSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerDataSourceOptions]
   }
   
-  @scala.inline
-  implicit class FileManagerDataSourceOptionsMutableBuilder[Self <: FileManagerDataSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerDataSourceOptions](x: Self) {
     
-    @scala.inline
-    def setSchema(value: FileManagerDataSourceSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: FileManagerDataSourceSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

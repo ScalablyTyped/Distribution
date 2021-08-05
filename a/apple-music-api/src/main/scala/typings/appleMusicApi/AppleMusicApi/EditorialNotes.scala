@@ -13,19 +13,15 @@ trait EditorialNotes extends StObject {
 }
 object EditorialNotes {
   
-  @scala.inline
-  def apply(short: String, standard: String): EditorialNotes = {
+  inline def apply(short: String, standard: String): EditorialNotes = {
     val __obj = js.Dynamic.literal(short = short.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorialNotes]
   }
   
-  @scala.inline
-  implicit class EditorialNotesMutableBuilder[Self <: EditorialNotes] (val x: Self) extends AnyVal {
+  extension [Self <: EditorialNotes](x: Self) {
     
-    @scala.inline
-    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }
 }

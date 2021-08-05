@@ -10,19 +10,15 @@ trait ZIndicesCSSProperties extends StObject {
 }
 object ZIndicesCSSProperties {
   
-  @scala.inline
-  def apply(): ZIndicesCSSProperties = {
+  inline def apply(): ZIndicesCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZIndicesCSSProperties]
   }
   
-  @scala.inline
-  implicit class ZIndicesCSSPropertiesMutableBuilder[Self <: ZIndicesCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ZIndicesCSSProperties](x: Self) {
     
-    @scala.inline
-    def setZIndex(value: ZIndices): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: ZIndices): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -30,8 +30,7 @@ trait XForbiddenCharacters
 }
 object XForbiddenCharacters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getForbiddenCharacters: Locale => ForbiddenCharacters,
     hasForbiddenCharacters: Locale => Boolean,
@@ -44,19 +43,14 @@ object XForbiddenCharacters {
     __obj.asInstanceOf[XForbiddenCharacters]
   }
   
-  @scala.inline
-  implicit class XForbiddenCharactersMutableBuilder[Self <: XForbiddenCharacters] (val x: Self) extends AnyVal {
+  extension [Self <: XForbiddenCharacters](x: Self) {
     
-    @scala.inline
-    def setGetForbiddenCharacters(value: Locale => ForbiddenCharacters): Self = StObject.set(x, "getForbiddenCharacters", js.Any.fromFunction1(value))
+    inline def setGetForbiddenCharacters(value: Locale => ForbiddenCharacters): Self = StObject.set(x, "getForbiddenCharacters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasForbiddenCharacters(value: Locale => Boolean): Self = StObject.set(x, "hasForbiddenCharacters", js.Any.fromFunction1(value))
+    inline def setHasForbiddenCharacters(value: Locale => Boolean): Self = StObject.set(x, "hasForbiddenCharacters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveForbiddenCharacters(value: Locale => Unit): Self = StObject.set(x, "removeForbiddenCharacters", js.Any.fromFunction1(value))
+    inline def setRemoveForbiddenCharacters(value: Locale => Unit): Self = StObject.set(x, "removeForbiddenCharacters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetForbiddenCharacters(value: (Locale, ForbiddenCharacters) => Unit): Self = StObject.set(x, "setForbiddenCharacters", js.Any.fromFunction2(value))
+    inline def setSetForbiddenCharacters(value: (Locale, ForbiddenCharacters) => Unit): Self = StObject.set(x, "setForbiddenCharacters", js.Any.fromFunction2(value))
   }
 }

@@ -23,40 +23,29 @@ trait DSNOptions extends StObject {
 }
 object DSNOptions {
   
-  @scala.inline
-  def apply(): DSNOptions = {
+  inline def apply(): DSNOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DSNOptions]
   }
   
-  @scala.inline
-  implicit class DSNOptionsMutableBuilder[Self <: DSNOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DSNOptions](x: Self) {
     
-    @scala.inline
-    def setEnvid(value: String): Self = StObject.set(x, "envid", value.asInstanceOf[js.Any])
+    inline def setEnvid(value: String): Self = StObject.set(x, "envid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvidUndefined: Self = StObject.set(x, "envid", js.undefined)
+    inline def setEnvidUndefined: Self = StObject.set(x, "envid", js.undefined)
     
-    @scala.inline
-    def setNotify_(value: DSNOption | js.Array[DSNOption]): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: DSNOption | js.Array[DSNOption]): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
+    inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
     
-    @scala.inline
-    def setNotify_Varargs(value: DSNOption*): Self = StObject.set(x, "notify", js.Array(value :_*))
+    inline def setNotify_Varargs(value: DSNOption*): Self = StObject.set(x, "notify", js.Array(value :_*))
     
-    @scala.inline
-    def setOrcpt(value: String): Self = StObject.set(x, "orcpt", value.asInstanceOf[js.Any])
+    inline def setOrcpt(value: String): Self = StObject.set(x, "orcpt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrcptUndefined: Self = StObject.set(x, "orcpt", js.undefined)
+    inline def setOrcptUndefined: Self = StObject.set(x, "orcpt", js.undefined)
     
-    @scala.inline
-    def setRet(value: Full | HDRS): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
+    inline def setRet(value: Full | HDRS): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
+    inline def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
   }
 }

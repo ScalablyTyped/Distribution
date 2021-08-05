@@ -78,97 +78,67 @@ trait AuditEventEntity
 }
 object AuditEventEntity {
   
-  @scala.inline
-  def apply(): AuditEventEntity = {
+  inline def apply(): AuditEventEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditEventEntity]
   }
   
-  @scala.inline
-  implicit class AuditEventEntityMutableBuilder[Self <: AuditEventEntity] (val x: Self) extends AnyVal {
+  extension [Self <: AuditEventEntity](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetail(value: js.Array[AuditEventEntityDetail]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: js.Array[AuditEventEntityDetail]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setDetailVarargs(value: AuditEventEntityDetail*): Self = StObject.set(x, "detail", js.Array(value :_*))
+    inline def setDetailVarargs(value: AuditEventEntityDetail*): Self = StObject.set(x, "detail", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: Coding): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: Coding): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setQuery(value: base64Binary): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: base64Binary): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    @scala.inline
-    def setRole(value: Coding): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Coding): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
+    inline def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
+    inline def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
     
-    @scala.inline
-    def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
+    inline def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Coding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Coding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_query(value: Element): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
+    inline def set_query(value: Element): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_queryUndefined: Self = StObject.set(x, "_query", js.undefined)
+    inline def set_queryUndefined: Self = StObject.set(x, "_query", js.undefined)
   }
 }

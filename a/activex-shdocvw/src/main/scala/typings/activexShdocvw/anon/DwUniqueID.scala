@@ -10,16 +10,13 @@ trait DwUniqueID extends StObject {
 }
 object DwUniqueID {
   
-  @scala.inline
-  def apply(dwUniqueID: Double): DwUniqueID = {
+  inline def apply(dwUniqueID: Double): DwUniqueID = {
     val __obj = js.Dynamic.literal(dwUniqueID = dwUniqueID.asInstanceOf[js.Any])
     __obj.asInstanceOf[DwUniqueID]
   }
   
-  @scala.inline
-  implicit class DwUniqueIDMutableBuilder[Self <: DwUniqueID] (val x: Self) extends AnyVal {
+  extension [Self <: DwUniqueID](x: Self) {
     
-    @scala.inline
-    def setDwUniqueID(value: Double): Self = StObject.set(x, "dwUniqueID", value.asInstanceOf[js.Any])
+    inline def setDwUniqueID(value: Double): Self = StObject.set(x, "dwUniqueID", value.asInstanceOf[js.Any])
   }
 }

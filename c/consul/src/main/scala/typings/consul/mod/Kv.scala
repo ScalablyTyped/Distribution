@@ -116,29 +116,22 @@ object Kv {
   }
   object DelOptions {
     
-    @scala.inline
-    def apply(key: String): DelOptions = {
+    inline def apply(key: String): DelOptions = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DelOptions]
     }
     
-    @scala.inline
-    implicit class DelOptionsMutableBuilder[Self <: DelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DelOptions](x: Self) {
       
-      @scala.inline
-      def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
+      inline def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
+      inline def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
+      inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
+      inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
     }
   }
   
@@ -163,47 +156,34 @@ object Kv {
   }
   object GetOptions {
     
-    @scala.inline
-    def apply(key: String): GetOptions = {
+    inline def apply(key: String): GetOptions = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOptions]
     }
     
-    @scala.inline
-    implicit class GetOptionsMutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetOptions](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
+      inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
+      inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
       
-      @scala.inline
-      def setWait_(value: String): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: String): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
   
@@ -217,23 +197,18 @@ object Kv {
   }
   object KeysOptions {
     
-    @scala.inline
-    def apply(key: String): KeysOptions = {
+    inline def apply(key: String): KeysOptions = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeysOptions]
     }
     
-    @scala.inline
-    implicit class KeysOptionsMutableBuilder[Self <: KeysOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeysOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
   
@@ -255,44 +230,32 @@ object Kv {
   }
   object SetOptions {
     
-    @scala.inline
-    def apply(key: String, value: String | Buffer): SetOptions = {
+    inline def apply(key: String, value: String | Buffer): SetOptions = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetOptions]
     }
     
-    @scala.inline
-    implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetOptions](x: Self) {
       
-      @scala.inline
-      def setAcquire(value: String): Self = StObject.set(x, "acquire", value.asInstanceOf[js.Any])
+      inline def setAcquire(value: String): Self = StObject.set(x, "acquire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcquireUndefined: Self = StObject.set(x, "acquire", js.undefined)
+      inline def setAcquireUndefined: Self = StObject.set(x, "acquire", js.undefined)
       
-      @scala.inline
-      def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
+      inline def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
+      inline def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

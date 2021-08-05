@@ -18,25 +18,19 @@ trait RuleGroupRuleStatementGeoMatchStatement extends StObject {
 }
 object RuleGroupRuleStatementGeoMatchStatement {
   
-  @scala.inline
-  def apply(countryCodes: js.Array[String]): RuleGroupRuleStatementGeoMatchStatement = {
+  inline def apply(countryCodes: js.Array[String]): RuleGroupRuleStatementGeoMatchStatement = {
     val __obj = js.Dynamic.literal(countryCodes = countryCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementGeoMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementGeoMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementGeoMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementGeoMatchStatement](x: Self) {
     
-    @scala.inline
-    def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
+    inline def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardedIpConfig(value: RuleGroupRuleStatementGeoMatchStatementForwardedIpConfig): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
+    inline def setForwardedIpConfig(value: RuleGroupRuleStatementGeoMatchStatementForwardedIpConfig): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
+    inline def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
   }
 }

@@ -19,16 +19,13 @@ trait ImageAnnotationConstructorOptions
 }
 object ImageAnnotationConstructorOptions {
   
-  @scala.inline
-  def apply(url: `1`): ImageAnnotationConstructorOptions = {
+  inline def apply(url: `1`): ImageAnnotationConstructorOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageAnnotationConstructorOptions]
   }
   
-  @scala.inline
-  implicit class ImageAnnotationConstructorOptionsMutableBuilder[Self <: ImageAnnotationConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageAnnotationConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setUrl(value: `1`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `1`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

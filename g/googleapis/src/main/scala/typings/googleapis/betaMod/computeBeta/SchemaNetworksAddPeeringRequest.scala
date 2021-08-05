@@ -37,37 +37,27 @@ trait SchemaNetworksAddPeeringRequest extends StObject {
 }
 object SchemaNetworksAddPeeringRequest {
   
-  @scala.inline
-  def apply(): SchemaNetworksAddPeeringRequest = {
+  inline def apply(): SchemaNetworksAddPeeringRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworksAddPeeringRequest]
   }
   
-  @scala.inline
-  implicit class SchemaNetworksAddPeeringRequestMutableBuilder[Self <: SchemaNetworksAddPeeringRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetworksAddPeeringRequest](x: Self) {
     
-    @scala.inline
-    def setAutoCreateRoutes(value: Boolean): Self = StObject.set(x, "autoCreateRoutes", value.asInstanceOf[js.Any])
+    inline def setAutoCreateRoutes(value: Boolean): Self = StObject.set(x, "autoCreateRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCreateRoutesUndefined: Self = StObject.set(x, "autoCreateRoutes", js.undefined)
+    inline def setAutoCreateRoutesUndefined: Self = StObject.set(x, "autoCreateRoutes", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetworkPeering(value: SchemaNetworkPeering): Self = StObject.set(x, "networkPeering", value.asInstanceOf[js.Any])
+    inline def setNetworkPeering(value: SchemaNetworkPeering): Self = StObject.set(x, "networkPeering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPeeringUndefined: Self = StObject.set(x, "networkPeering", js.undefined)
+    inline def setNetworkPeeringUndefined: Self = StObject.set(x, "networkPeering", js.undefined)
     
-    @scala.inline
-    def setPeerNetwork(value: String): Self = StObject.set(x, "peerNetwork", value.asInstanceOf[js.Any])
+    inline def setPeerNetwork(value: String): Self = StObject.set(x, "peerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerNetworkUndefined: Self = StObject.set(x, "peerNetwork", js.undefined)
+    inline def setPeerNetworkUndefined: Self = StObject.set(x, "peerNetwork", js.undefined)
   }
 }

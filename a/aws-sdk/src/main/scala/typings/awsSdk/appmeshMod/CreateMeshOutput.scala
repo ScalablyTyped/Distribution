@@ -13,16 +13,13 @@ trait CreateMeshOutput extends StObject {
 }
 object CreateMeshOutput {
   
-  @scala.inline
-  def apply(mesh: MeshData): CreateMeshOutput = {
+  inline def apply(mesh: MeshData): CreateMeshOutput = {
     val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMeshOutput]
   }
   
-  @scala.inline
-  implicit class CreateMeshOutputMutableBuilder[Self <: CreateMeshOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMeshOutput](x: Self) {
     
-    @scala.inline
-    def setMesh(value: MeshData): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: MeshData): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
   }
 }

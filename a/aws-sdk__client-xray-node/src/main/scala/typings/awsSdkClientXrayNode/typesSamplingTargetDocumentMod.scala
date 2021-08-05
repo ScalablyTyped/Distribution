@@ -36,44 +36,32 @@ object typesSamplingTargetDocumentMod {
   }
   object SamplingTargetDocument {
     
-    @scala.inline
-    def apply(): SamplingTargetDocument = {
+    inline def apply(): SamplingTargetDocument = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SamplingTargetDocument]
     }
     
-    @scala.inline
-    implicit class SamplingTargetDocumentMutableBuilder[Self <: SamplingTargetDocument] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingTargetDocument](x: Self) {
       
-      @scala.inline
-      def setFixedRate(value: Double): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
+      inline def setFixedRate(value: Double): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedRateUndefined: Self = StObject.set(x, "FixedRate", js.undefined)
+      inline def setFixedRateUndefined: Self = StObject.set(x, "FixedRate", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
       
-      @scala.inline
-      def setReservoirQuota(value: Double): Self = StObject.set(x, "ReservoirQuota", value.asInstanceOf[js.Any])
+      inline def setReservoirQuota(value: Double): Self = StObject.set(x, "ReservoirQuota", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservoirQuotaTTL(value: Date | String | Double): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
+      inline def setReservoirQuotaTTL(value: Date | String | Double): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservoirQuotaTTLUndefined: Self = StObject.set(x, "ReservoirQuotaTTL", js.undefined)
+      inline def setReservoirQuotaTTLUndefined: Self = StObject.set(x, "ReservoirQuotaTTL", js.undefined)
       
-      @scala.inline
-      def setReservoirQuotaUndefined: Self = StObject.set(x, "ReservoirQuota", js.undefined)
+      inline def setReservoirQuotaUndefined: Self = StObject.set(x, "ReservoirQuota", js.undefined)
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
+      inline def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
     }
   }
   
@@ -89,20 +77,16 @@ object typesSamplingTargetDocumentMod {
   }
   object UnmarshalledSamplingTargetDocument {
     
-    @scala.inline
-    def apply(): UnmarshalledSamplingTargetDocument = {
+    inline def apply(): UnmarshalledSamplingTargetDocument = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSamplingTargetDocument]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSamplingTargetDocumentMutableBuilder[Self <: UnmarshalledSamplingTargetDocument] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSamplingTargetDocument](x: Self) {
       
-      @scala.inline
-      def setReservoirQuotaTTL(value: Date): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
+      inline def setReservoirQuotaTTL(value: Date): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservoirQuotaTTLUndefined: Self = StObject.set(x, "ReservoirQuotaTTL", js.undefined)
+      inline def setReservoirQuotaTTLUndefined: Self = StObject.set(x, "ReservoirQuotaTTL", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait NavigatorStorage extends StObject {
 }
 object NavigatorStorage {
   
-  @scala.inline
-  def apply(storage: StorageManager): NavigatorStorage = {
+  inline def apply(storage: StorageManager): NavigatorStorage = {
     val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorStorage]
   }
   
-  @scala.inline
-  implicit class NavigatorStorageMutableBuilder[Self <: NavigatorStorage] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorStorage](x: Self) {
     
-    @scala.inline
-    def setStorage(value: StorageManager): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: StorageManager): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

@@ -29,23 +29,20 @@ object PullSignatureSymbol {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getSignatureTypeMemberName(
+  inline def getSignatureTypeMemberName(
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol,
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
   ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureTypeMemberName")(candidateSignature.asInstanceOf[js.Any], signatures.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
   
   /* static member */
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
     brackets: Boolean
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignaturesTypeNameEx")(signatures.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], shortform.asInstanceOf[js.Any], brackets.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.MemberName]]
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
@@ -53,8 +50,7 @@ object PullSignatureSymbol {
     scopeSymbol: Unit,
     getPrettyTypeName: Boolean
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignaturesTypeNameEx")(signatures.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], shortform.asInstanceOf[js.Any], brackets.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getPrettyTypeName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.MemberName]]
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
@@ -63,8 +59,7 @@ object PullSignatureSymbol {
     getPrettyTypeName: Boolean,
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignaturesTypeNameEx")(signatures.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], shortform.asInstanceOf[js.Any], brackets.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getPrettyTypeName.asInstanceOf[js.Any], candidateSignature.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.MemberName]]
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
@@ -73,16 +68,14 @@ object PullSignatureSymbol {
     getPrettyTypeName: Unit,
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignaturesTypeNameEx")(signatures.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], shortform.asInstanceOf[js.Any], brackets.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getPrettyTypeName.asInstanceOf[js.Any], candidateSignature.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.MemberName]]
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
     brackets: Boolean,
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignaturesTypeNameEx")(signatures.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], shortform.asInstanceOf[js.Any], brackets.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.MemberName]]
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
@@ -90,8 +83,7 @@ object PullSignatureSymbol {
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
     getPrettyTypeName: Boolean
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignaturesTypeNameEx")(signatures.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], shortform.asInstanceOf[js.Any], brackets.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getPrettyTypeName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.MemberName]]
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
@@ -100,8 +92,7 @@ object PullSignatureSymbol {
     getPrettyTypeName: Boolean,
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignaturesTypeNameEx")(signatures.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], shortform.asInstanceOf[js.Any], brackets.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getPrettyTypeName.asInstanceOf[js.Any], candidateSignature.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.MemberName]]
-  @scala.inline
-  def getSignaturesTypeNameEx(
+  inline def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,

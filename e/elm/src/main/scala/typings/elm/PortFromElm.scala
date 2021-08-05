@@ -12,8 +12,7 @@ trait PortFromElm[V] extends StObject {
 }
 object PortFromElm {
   
-  @scala.inline
-  def apply[V](
+  inline def apply[V](
     subscribe: js.Function1[/* value */ V, Unit] => Unit,
     unsubscribe: js.Function1[/* value */ V, Unit] => Unit
   ): PortFromElm[V] = {
@@ -21,13 +20,10 @@ object PortFromElm {
     __obj.asInstanceOf[PortFromElm[V]]
   }
   
-  @scala.inline
-  implicit class PortFromElmMutableBuilder[Self <: PortFromElm[?], V] (val x: Self & PortFromElm[V]) extends AnyVal {
+  extension [Self <: PortFromElm[?], V](x: Self & PortFromElm[V]) {
     
-    @scala.inline
-    def setSubscribe(value: js.Function1[/* value */ V, Unit] => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+    inline def setSubscribe(value: js.Function1[/* value */ V, Unit] => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnsubscribe(value: js.Function1[/* value */ V, Unit] => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
+    inline def setUnsubscribe(value: js.Function1[/* value */ V, Unit] => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
   }
 }

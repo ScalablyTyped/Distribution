@@ -60,8 +60,7 @@ object anon {
   }
   object Amber {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Amber: String,
       Blue: String,
       BlueGrey: String,
@@ -92,83 +91,57 @@ object anon {
       __obj.asInstanceOf[Amber]
     }
     
-    @scala.inline
-    implicit class AmberMutableBuilder[Self <: Amber] (val x: Self) extends AnyVal {
+    extension [Self <: Amber](x: Self) {
       
-      @scala.inline
-      def setAmber(value: String): Self = StObject.set(x, "Amber", value.asInstanceOf[js.Any])
+      inline def setAmber(value: String): Self = StObject.set(x, "Amber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: String): Self = StObject.set(x, "Blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: String): Self = StObject.set(x, "Blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueGrey(value: String): Self = StObject.set(x, "BlueGrey", value.asInstanceOf[js.Any])
+      inline def setBlueGrey(value: String): Self = StObject.set(x, "BlueGrey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrown(value: String): Self = StObject.set(x, "Brown", value.asInstanceOf[js.Any])
+      inline def setBrown(value: String): Self = StObject.set(x, "Brown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyan(value: String): Self = StObject.set(x, "Cyan", value.asInstanceOf[js.Any])
+      inline def setCyan(value: String): Self = StObject.set(x, "Cyan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepOrange(value: String): Self = StObject.set(x, "DeepOrange", value.asInstanceOf[js.Any])
+      inline def setDeepOrange(value: String): Self = StObject.set(x, "DeepOrange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepPurple(value: String): Self = StObject.set(x, "DeepPurple", value.asInstanceOf[js.Any])
+      inline def setDeepPurple(value: String): Self = StObject.set(x, "DeepPurple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: String): Self = StObject.set(x, "Green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: String): Self = StObject.set(x, "Green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrey(value: String): Self = StObject.set(x, "Grey", value.asInstanceOf[js.Any])
+      inline def setGrey(value: String): Self = StObject.set(x, "Grey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndigo(value: String): Self = StObject.set(x, "Indigo", value.asInstanceOf[js.Any])
+      inline def setIndigo(value: String): Self = StObject.set(x, "Indigo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightBlue(value: String): Self = StObject.set(x, "LightBlue", value.asInstanceOf[js.Any])
+      inline def setLightBlue(value: String): Self = StObject.set(x, "LightBlue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightGreen(value: String): Self = StObject.set(x, "LightGreen", value.asInstanceOf[js.Any])
+      inline def setLightGreen(value: String): Self = StObject.set(x, "LightGreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLime(value: String): Self = StObject.set(x, "Lime", value.asInstanceOf[js.Any])
+      inline def setLime(value: String): Self = StObject.set(x, "Lime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrange(value: String): Self = StObject.set(x, "Orange", value.asInstanceOf[js.Any])
+      inline def setOrange(value: String): Self = StObject.set(x, "Orange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPink(value: String): Self = StObject.set(x, "Pink", value.asInstanceOf[js.Any])
+      inline def setPink(value: String): Self = StObject.set(x, "Pink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurple(value: String): Self = StObject.set(x, "Purple", value.asInstanceOf[js.Any])
+      inline def setPurple(value: String): Self = StObject.set(x, "Purple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRGBIndigo(value: String): Self = StObject.set(x, "RGBIndigo", value.asInstanceOf[js.Any])
+      inline def setRGBIndigo(value: String): Self = StObject.set(x, "RGBIndigo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRGBPink(value: String): Self = StObject.set(x, "RGBPink", value.asInstanceOf[js.Any])
+      inline def setRGBPink(value: String): Self = StObject.set(x, "RGBPink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRGBPurple(value: String): Self = StObject.set(x, "RGBPurple", value.asInstanceOf[js.Any])
+      inline def setRGBPurple(value: String): Self = StObject.set(x, "RGBPurple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRGBTeal(value: String): Self = StObject.set(x, "RGBTeal", value.asInstanceOf[js.Any])
+      inline def setRGBTeal(value: String): Self = StObject.set(x, "RGBTeal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: String): Self = StObject.set(x, "Red", value.asInstanceOf[js.Any])
+      inline def setRed(value: String): Self = StObject.set(x, "Red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilver(value: String): Self = StObject.set(x, "Silver", value.asInstanceOf[js.Any])
+      inline def setSilver(value: String): Self = StObject.set(x, "Silver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeal(value: String): Self = StObject.set(x, "Teal", value.asInstanceOf[js.Any])
+      inline def setTeal(value: String): Self = StObject.set(x, "Teal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparent(value: String): Self = StObject.set(x, "Transparent", value.asInstanceOf[js.Any])
+      inline def setTransparent(value: String): Self = StObject.set(x, "Transparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellow(value: String): Self = StObject.set(x, "Yellow", value.asInstanceOf[js.Any])
+      inline def setYellow(value: String): Self = StObject.set(x, "Yellow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,17 +151,14 @@ object anon {
   }
   object Checked {
     
-    @scala.inline
-    def apply(checked: Boolean): Checked = {
+    inline def apply(checked: Boolean): Checked = {
       val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
       __obj.asInstanceOf[Checked]
     }
     
-    @scala.inline
-    implicit class CheckedMutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
+    extension [Self <: Checked](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,38 +174,28 @@ object anon {
   }
   object Color {
     
-    @scala.inline
-    def apply(): Color = {
+    inline def apply(): Color = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+      inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      @scala.inline
-      def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+      inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     }
   }
   
@@ -247,20 +207,16 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Height = {
+    inline def apply(height: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,20 +228,16 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(max: Double, min: Double): Max = {
+    inline def apply(max: Double, min: Double): Max = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
 }

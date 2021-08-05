@@ -19,28 +19,21 @@ trait PlayBackgroundAudioOptions
 }
 object PlayBackgroundAudioOptions {
   
-  @scala.inline
-  def apply(dataUrl: String): PlayBackgroundAudioOptions = {
+  inline def apply(dataUrl: String): PlayBackgroundAudioOptions = {
     val __obj = js.Dynamic.literal(dataUrl = dataUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayBackgroundAudioOptions]
   }
   
-  @scala.inline
-  implicit class PlayBackgroundAudioOptionsMutableBuilder[Self <: PlayBackgroundAudioOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlayBackgroundAudioOptions](x: Self) {
     
-    @scala.inline
-    def setCoverImgUrl(value: String): Self = StObject.set(x, "coverImgUrl", value.asInstanceOf[js.Any])
+    inline def setCoverImgUrl(value: String): Self = StObject.set(x, "coverImgUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverImgUrlUndefined: Self = StObject.set(x, "coverImgUrl", js.undefined)
+    inline def setCoverImgUrlUndefined: Self = StObject.set(x, "coverImgUrl", js.undefined)
     
-    @scala.inline
-    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+    inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

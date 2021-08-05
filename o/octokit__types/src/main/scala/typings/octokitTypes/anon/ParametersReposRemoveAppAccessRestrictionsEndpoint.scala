@@ -18,8 +18,7 @@ trait ParametersReposRemoveAppAccessRestrictionsEndpoint extends StObject {
 }
 object ParametersReposRemoveAppAccessRestrictionsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposRemoveAppAccessRestrictionsEndpoint,
     request: ReposRemoveAppAccessRestrictionsRequestOptions,
     response: OctokitResponse[ReposRemoveAppAccessRestrictionsResponseData]
@@ -28,16 +27,12 @@ object ParametersReposRemoveAppAccessRestrictionsEndpoint {
     __obj.asInstanceOf[ParametersReposRemoveAppAccessRestrictionsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposRemoveAppAccessRestrictionsEndpointMutableBuilder[Self <: ParametersReposRemoveAppAccessRestrictionsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposRemoveAppAccessRestrictionsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposRemoveAppAccessRestrictionsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposRemoveAppAccessRestrictionsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposRemoveAppAccessRestrictionsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposRemoveAppAccessRestrictionsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposRemoveAppAccessRestrictionsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposRemoveAppAccessRestrictionsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

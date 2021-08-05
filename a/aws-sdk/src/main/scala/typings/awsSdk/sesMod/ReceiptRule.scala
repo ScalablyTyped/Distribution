@@ -38,52 +38,37 @@ trait ReceiptRule extends StObject {
 }
 object ReceiptRule {
   
-  @scala.inline
-  def apply(Name: ReceiptRuleName): ReceiptRule = {
+  inline def apply(Name: ReceiptRuleName): ReceiptRule = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptRule]
   }
   
-  @scala.inline
-  implicit class ReceiptRuleMutableBuilder[Self <: ReceiptRule] (val x: Self) extends AnyVal {
+  extension [Self <: ReceiptRule](x: Self) {
     
-    @scala.inline
-    def setActions(value: ReceiptActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ReceiptActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: ReceiptAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ReceiptAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setName(value: ReceiptRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ReceiptRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipients(value: RecipientsList): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: RecipientsList): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsUndefined: Self = StObject.set(x, "Recipients", js.undefined)
+    inline def setRecipientsUndefined: Self = StObject.set(x, "Recipients", js.undefined)
     
-    @scala.inline
-    def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "Recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "Recipients", js.Array(value :_*))
     
-    @scala.inline
-    def setScanEnabled(value: Enabled): Self = StObject.set(x, "ScanEnabled", value.asInstanceOf[js.Any])
+    inline def setScanEnabled(value: Enabled): Self = StObject.set(x, "ScanEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanEnabledUndefined: Self = StObject.set(x, "ScanEnabled", js.undefined)
+    inline def setScanEnabledUndefined: Self = StObject.set(x, "ScanEnabled", js.undefined)
     
-    @scala.inline
-    def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
+    inline def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
+    inline def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait InputDataConfig extends StObject {
 }
 object InputDataConfig {
   
-  @scala.inline
-  def apply(S3Bucket: S3Bucket): InputDataConfig = {
+  inline def apply(S3Bucket: S3Bucket): InputDataConfig = {
     val __obj = js.Dynamic.literal(S3Bucket = S3Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDataConfig]
   }
   
-  @scala.inline
-  implicit class InputDataConfigMutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InputDataConfig](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

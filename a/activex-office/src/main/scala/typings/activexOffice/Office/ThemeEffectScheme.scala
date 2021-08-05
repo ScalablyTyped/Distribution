@@ -12,15 +12,14 @@ trait ThemeEffectScheme extends StObject {
   
   def Load(FileName: String): Unit
   
-  @JSName("Office.ThemeEffectScheme_typekey")
+  /* private */ @JSName("Office.ThemeEffectScheme_typekey")
   var OfficeDotThemeEffectScheme_typekey: ThemeEffectScheme
   
   val Parent: js.Any
 }
 object ThemeEffectScheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Load: String => Unit,
@@ -32,22 +31,16 @@ object ThemeEffectScheme {
     __obj.asInstanceOf[ThemeEffectScheme]
   }
   
-  @scala.inline
-  implicit class ThemeEffectSchemeMutableBuilder[Self <: ThemeEffectScheme] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeEffectScheme](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
+    inline def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOfficeDotThemeEffectScheme_typekey(value: ThemeEffectScheme): Self = StObject.set(x, "Office.ThemeEffectScheme_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotThemeEffectScheme_typekey(value: ThemeEffectScheme): Self = StObject.set(x, "Office.ThemeEffectScheme_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

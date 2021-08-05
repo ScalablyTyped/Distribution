@@ -28,70 +28,49 @@ trait ConsolaOptions extends StObject {
 }
 object ConsolaOptions {
   
-  @scala.inline
-  def apply(): ConsolaOptions = {
+  inline def apply(): ConsolaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConsolaOptions]
   }
   
-  @scala.inline
-  implicit class ConsolaOptionsMutableBuilder[Self <: ConsolaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConsolaOptions](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setDefaults(value: ConsolaLogObject): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: ConsolaLogObject): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
-    @scala.inline
-    def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMockFn(value: (/* type */ logType, /* defaults */ ConsolaLogObject) => ConsolaMock): Self = StObject.set(x, "mockFn", js.Any.fromFunction2(value))
+    inline def setMockFn(value: (/* type */ logType, /* defaults */ ConsolaLogObject) => ConsolaMock): Self = StObject.set(x, "mockFn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMockFnUndefined: Self = StObject.set(x, "mockFn", js.undefined)
+    inline def setMockFnUndefined: Self = StObject.set(x, "mockFn", js.undefined)
     
-    @scala.inline
-    def setReporters(value: js.Array[ConsolaReporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+    inline def setReporters(value: js.Array[ConsolaReporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
+    inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
     
-    @scala.inline
-    def setReportersVarargs(value: ConsolaReporter*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+    inline def setReportersVarargs(value: ConsolaReporter*): Self = StObject.set(x, "reporters", js.Array(value :_*))
     
-    @scala.inline
-    def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+    inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
-    @scala.inline
-    def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+    inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     
-    @scala.inline
-    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+    inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     
-    @scala.inline
-    def setTypes(value: typeinlogTypeConsolaLogOb): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: typeinlogTypeConsolaLogOb): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }
 }

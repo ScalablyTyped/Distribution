@@ -10,19 +10,15 @@ trait DocumentId extends StObject {
 }
 object DocumentId {
   
-  @scala.inline
-  def apply(): DocumentId = {
+  inline def apply(): DocumentId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentId]
   }
   
-  @scala.inline
-  implicit class DocumentIdMutableBuilder[Self <: DocumentId] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentId](x: Self) {
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
   }
 }

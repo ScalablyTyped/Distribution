@@ -13,6 +13,5 @@ class XAdESTimeStamp ()
   extends typings.xadesjs.xmlMod.XAdESTimeStamp
 object XAdESTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.XAdESTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("XAdESTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.XAdESTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.XAdESTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("XAdESTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.XAdESTimeStamp]]
 }

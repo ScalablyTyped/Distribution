@@ -54,17 +54,14 @@ object Threading {
     }
     object IPreallocatedWorkItem {
       
-      @scala.inline
-      def apply(runAsync: () => IAsyncAction): IPreallocatedWorkItem = {
+      inline def apply(runAsync: () => IAsyncAction): IPreallocatedWorkItem = {
         val __obj = js.Dynamic.literal(runAsync = js.Any.fromFunction0(runAsync))
         __obj.asInstanceOf[IPreallocatedWorkItem]
       }
       
-      @scala.inline
-      implicit class IPreallocatedWorkItemMutableBuilder[Self <: IPreallocatedWorkItem] (val x: Self) extends AnyVal {
+      extension [Self <: IPreallocatedWorkItem](x: Self) {
         
-        @scala.inline
-        def setRunAsync(value: () => IAsyncAction): Self = StObject.set(x, "runAsync", js.Any.fromFunction0(value))
+        inline def setRunAsync(value: () => IAsyncAction): Self = StObject.set(x, "runAsync", js.Any.fromFunction0(value))
       }
     }
     
@@ -78,8 +75,7 @@ object Threading {
     }
     object IPreallocatedWorkItemFactory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createWorkItem: WorkItemHandler => PreallocatedWorkItem,
         createWorkItemWithPriority: (WorkItemHandler, WorkItemPriority) => PreallocatedWorkItem,
         createWorkItemWithPriorityAndOptions: (WorkItemHandler, WorkItemPriority, WorkItemOptions) => PreallocatedWorkItem
@@ -88,17 +84,13 @@ object Threading {
         __obj.asInstanceOf[IPreallocatedWorkItemFactory]
       }
       
-      @scala.inline
-      implicit class IPreallocatedWorkItemFactoryMutableBuilder[Self <: IPreallocatedWorkItemFactory] (val x: Self) extends AnyVal {
+      extension [Self <: IPreallocatedWorkItemFactory](x: Self) {
         
-        @scala.inline
-        def setCreateWorkItem(value: WorkItemHandler => PreallocatedWorkItem): Self = StObject.set(x, "createWorkItem", js.Any.fromFunction1(value))
+        inline def setCreateWorkItem(value: WorkItemHandler => PreallocatedWorkItem): Self = StObject.set(x, "createWorkItem", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateWorkItemWithPriority(value: (WorkItemHandler, WorkItemPriority) => PreallocatedWorkItem): Self = StObject.set(x, "createWorkItemWithPriority", js.Any.fromFunction2(value))
+        inline def setCreateWorkItemWithPriority(value: (WorkItemHandler, WorkItemPriority) => PreallocatedWorkItem): Self = StObject.set(x, "createWorkItemWithPriority", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateWorkItemWithPriorityAndOptions(value: (WorkItemHandler, WorkItemPriority, WorkItemOptions) => PreallocatedWorkItem): Self = StObject.set(x, "createWorkItemWithPriorityAndOptions", js.Any.fromFunction3(value))
+        inline def setCreateWorkItemWithPriorityAndOptions(value: (WorkItemHandler, WorkItemPriority, WorkItemOptions) => PreallocatedWorkItem): Self = StObject.set(x, "createWorkItemWithPriorityAndOptions", js.Any.fromFunction3(value))
       }
     }
     
@@ -110,20 +102,16 @@ object Threading {
     }
     object ISignalNotifier {
       
-      @scala.inline
-      def apply(enable: () => Unit, terminate: () => Unit): ISignalNotifier = {
+      inline def apply(enable: () => Unit, terminate: () => Unit): ISignalNotifier = {
         val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), terminate = js.Any.fromFunction0(terminate))
         __obj.asInstanceOf[ISignalNotifier]
       }
       
-      @scala.inline
-      implicit class ISignalNotifierMutableBuilder[Self <: ISignalNotifier] (val x: Self) extends AnyVal {
+      extension [Self <: ISignalNotifier](x: Self) {
         
-        @scala.inline
-        def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+        inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+        inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
       }
     }
     
@@ -142,8 +130,7 @@ object Threading {
          with IPreallocatedWorkItem
     object PreallocatedWorkItem {
       
-      @scala.inline
-      def apply(runAsync: () => IAsyncAction): PreallocatedWorkItem = {
+      inline def apply(runAsync: () => IAsyncAction): PreallocatedWorkItem = {
         val __obj = js.Dynamic.literal(runAsync = js.Any.fromFunction0(runAsync))
         __obj.asInstanceOf[PreallocatedWorkItem]
       }
@@ -156,8 +143,7 @@ object Threading {
          with ISignalNotifier
     object SignalNotifier {
       
-      @scala.inline
-      def apply(enable: () => Unit, terminate: () => Unit): SignalNotifier = {
+      inline def apply(enable: () => Unit, terminate: () => Unit): SignalNotifier = {
         val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), terminate = js.Any.fromFunction0(terminate))
         __obj.asInstanceOf[SignalNotifier]
       }
@@ -182,23 +168,18 @@ object Threading {
   }
   object IThreadPoolTimer {
     
-    @scala.inline
-    def apply(cancel: () => Unit, delay: Double, period: Double): IThreadPoolTimer = {
+    inline def apply(cancel: () => Unit, delay: Double, period: Double): IThreadPoolTimer = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), delay = delay.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
       __obj.asInstanceOf[IThreadPoolTimer]
     }
     
-    @scala.inline
-    implicit class IThreadPoolTimerMutableBuilder[Self <: IThreadPoolTimer] (val x: Self) extends AnyVal {
+    extension [Self <: IThreadPoolTimer](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,8 +200,7 @@ object Threading {
        with IThreadPoolTimer
   object ThreadPoolTimer {
     
-    @scala.inline
-    def apply(cancel: () => Unit, delay: Double, period: Double): ThreadPoolTimer = {
+    inline def apply(cancel: () => Unit, delay: Double, period: Double): ThreadPoolTimer = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), delay = delay.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThreadPoolTimer]
     }

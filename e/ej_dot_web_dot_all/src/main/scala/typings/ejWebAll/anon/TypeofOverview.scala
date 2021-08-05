@@ -15,19 +15,15 @@ trait TypeofOverview extends StObject {
 }
 object TypeofOverview {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Overview): TypeofOverview = {
+  inline def apply(Locale: js.Any, fn: Overview): TypeofOverview = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofOverview]
   }
   
-  @scala.inline
-  implicit class TypeofOverviewMutableBuilder[Self <: TypeofOverview] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofOverview](x: Self) {
     
-    @scala.inline
-    def setFn(value: Overview): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Overview): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

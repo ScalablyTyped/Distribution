@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def find(dir: String): Results = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(dir.asInstanceOf[js.Any]).asInstanceOf[Results]
-  @scala.inline
-  def find(dir: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
+  inline def find(dir: String): Results = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(dir.asInstanceOf[js.Any]).asInstanceOf[Results]
+  inline def find(dir: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
   
   trait Options extends StObject {
     
@@ -22,23 +20,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     }
   }
   
@@ -52,23 +45,18 @@ object mod {
   }
   object Results {
     
-    @scala.inline
-    def apply(total: Double, unused: js.Array[String]): Results = {
+    inline def apply(total: Double, unused: js.Array[String]): Results = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any], unused = unused.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
-    @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+    extension [Self <: Results](x: Self) {
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnused(value: js.Array[String]): Self = StObject.set(x, "unused", value.asInstanceOf[js.Any])
+      inline def setUnused(value: js.Array[String]): Self = StObject.set(x, "unused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnusedVarargs(value: String*): Self = StObject.set(x, "unused", js.Array(value :_*))
+      inline def setUnusedVarargs(value: String*): Self = StObject.set(x, "unused", js.Array(value :_*))
     }
   }
 }

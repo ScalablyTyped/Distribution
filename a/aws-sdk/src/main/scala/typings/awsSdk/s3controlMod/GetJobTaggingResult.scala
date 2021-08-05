@@ -13,22 +13,17 @@ trait GetJobTaggingResult extends StObject {
 }
 object GetJobTaggingResult {
   
-  @scala.inline
-  def apply(): GetJobTaggingResult = {
+  inline def apply(): GetJobTaggingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetJobTaggingResult]
   }
   
-  @scala.inline
-  implicit class GetJobTaggingResultMutableBuilder[Self <: GetJobTaggingResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobTaggingResult](x: Self) {
     
-    @scala.inline
-    def setTags(value: S3TagSet): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: S3TagSet): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: S3Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: S3Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

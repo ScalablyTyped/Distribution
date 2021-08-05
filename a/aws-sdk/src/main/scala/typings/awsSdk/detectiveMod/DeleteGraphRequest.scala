@@ -13,16 +13,13 @@ trait DeleteGraphRequest extends StObject {
 }
 object DeleteGraphRequest {
   
-  @scala.inline
-  def apply(GraphArn: GraphArn): DeleteGraphRequest = {
+  inline def apply(GraphArn: GraphArn): DeleteGraphRequest = {
     val __obj = js.Dynamic.literal(GraphArn = GraphArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGraphRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGraphRequestMutableBuilder[Self <: DeleteGraphRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGraphRequest](x: Self) {
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }
 }

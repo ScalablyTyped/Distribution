@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): LineStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LineStream]
-  @scala.inline
-  def apply(stream: ReadableStream): LineStream = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[LineStream]
-  @scala.inline
-  def apply(stream: ReadableStream, options: LineStreamOptions): LineStream = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineStream]
+  inline def apply(): LineStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LineStream]
+  inline def apply(stream: ReadableStream): LineStream = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[LineStream]
+  inline def apply(stream: ReadableStream, options: LineStreamOptions): LineStream = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineStream]
   
   @JSImport("byline", JSImport.Namespace)
   @js.native
@@ -32,15 +29,11 @@ object mod {
     def this(options: LineStreamOptions) = this()
   }
   
-  @scala.inline
-  def LineStream_=(x: LineStreamCreatable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LineStream")(x.asInstanceOf[js.Any])
+  inline def LineStream_=(x: LineStreamCreatable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LineStream")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def createStream(): LineStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[LineStream]
-  @scala.inline
-  def createStream(stream: ReadableStream): LineStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(stream.asInstanceOf[js.Any]).asInstanceOf[LineStream]
-  @scala.inline
-  def createStream(stream: ReadableStream, options: LineStreamOptions): LineStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineStream]
+  inline def createStream(): LineStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[LineStream]
+  inline def createStream(stream: ReadableStream): LineStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(stream.asInstanceOf[js.Any]).asInstanceOf[LineStream]
+  inline def createStream(stream: ReadableStream, options: LineStreamOptions): LineStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineStream]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - scala.Any because Inheritance from two classes. Inlined 
@@ -64,20 +57,16 @@ object mod {
   }
   object LineStreamOptions {
     
-    @scala.inline
-    def apply(): LineStreamOptions = {
+    inline def apply(): LineStreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineStreamOptions]
     }
     
-    @scala.inline
-    implicit class LineStreamOptionsMutableBuilder[Self <: LineStreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LineStreamOptions](x: Self) {
       
-      @scala.inline
-      def setKeepEmptyLines(value: Boolean): Self = StObject.set(x, "keepEmptyLines", value.asInstanceOf[js.Any])
+      inline def setKeepEmptyLines(value: Boolean): Self = StObject.set(x, "keepEmptyLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepEmptyLinesUndefined: Self = StObject.set(x, "keepEmptyLines", js.undefined)
+      inline def setKeepEmptyLinesUndefined: Self = StObject.set(x, "keepEmptyLines", js.undefined)
     }
   }
 }

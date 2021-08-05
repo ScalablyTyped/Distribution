@@ -15,25 +15,19 @@ trait ICustomSwitch extends StObject {
 }
 object ICustomSwitch {
   
-  @scala.inline
-  def apply(defaultValue: Boolean, options: valueOrfunc[ICustomControlOption]): ICustomSwitch = {
+  inline def apply(defaultValue: Boolean, options: valueOrfunc[ICustomControlOption]): ICustomSwitch = {
     val __obj = js.Dynamic.literal(component = "switch", defaultValue = defaultValue.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomSwitch]
   }
   
-  @scala.inline
-  implicit class ICustomSwitchMutableBuilder[Self <: ICustomSwitch] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomSwitch](x: Self) {
     
-    @scala.inline
-    def setComponent(value: switch): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: switch): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: valueOrfunc[ICustomControlOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: valueOrfunc[ICustomControlOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsFunction0(value: () => ICustomControlOption): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
+    inline def setOptionsFunction0(value: () => ICustomControlOption): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
   }
 }

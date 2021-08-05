@@ -23,40 +23,29 @@ trait ConflictResolution extends StObject {
 }
 object ConflictResolution {
   
-  @scala.inline
-  def apply(): ConflictResolution = {
+  inline def apply(): ConflictResolution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConflictResolution]
   }
   
-  @scala.inline
-  implicit class ConflictResolutionMutableBuilder[Self <: ConflictResolution] (val x: Self) extends AnyVal {
+  extension [Self <: ConflictResolution](x: Self) {
     
-    @scala.inline
-    def setDeleteFiles(value: DeleteFileEntries): Self = StObject.set(x, "deleteFiles", value.asInstanceOf[js.Any])
+    inline def setDeleteFiles(value: DeleteFileEntries): Self = StObject.set(x, "deleteFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteFilesUndefined: Self = StObject.set(x, "deleteFiles", js.undefined)
+    inline def setDeleteFilesUndefined: Self = StObject.set(x, "deleteFiles", js.undefined)
     
-    @scala.inline
-    def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = StObject.set(x, "deleteFiles", js.Array(value :_*))
+    inline def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = StObject.set(x, "deleteFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setReplaceContents(value: ReplaceContentEntries): Self = StObject.set(x, "replaceContents", value.asInstanceOf[js.Any])
+    inline def setReplaceContents(value: ReplaceContentEntries): Self = StObject.set(x, "replaceContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceContentsUndefined: Self = StObject.set(x, "replaceContents", js.undefined)
+    inline def setReplaceContentsUndefined: Self = StObject.set(x, "replaceContents", js.undefined)
     
-    @scala.inline
-    def setReplaceContentsVarargs(value: ReplaceContentEntry*): Self = StObject.set(x, "replaceContents", js.Array(value :_*))
+    inline def setReplaceContentsVarargs(value: ReplaceContentEntry*): Self = StObject.set(x, "replaceContents", js.Array(value :_*))
     
-    @scala.inline
-    def setSetFileModes(value: SetFileModeEntries): Self = StObject.set(x, "setFileModes", value.asInstanceOf[js.Any])
+    inline def setSetFileModes(value: SetFileModeEntries): Self = StObject.set(x, "setFileModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFileModesUndefined: Self = StObject.set(x, "setFileModes", js.undefined)
+    inline def setSetFileModesUndefined: Self = StObject.set(x, "setFileModes", js.undefined)
     
-    @scala.inline
-    def setSetFileModesVarargs(value: SetFileModeEntry*): Self = StObject.set(x, "setFileModes", js.Array(value :_*))
+    inline def setSetFileModesVarargs(value: SetFileModeEntry*): Self = StObject.set(x, "setFileModes", js.Array(value :_*))
   }
 }

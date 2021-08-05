@@ -51,8 +51,7 @@ trait colorGetMatchingSchemesParams
 }
 object colorGetMatchingSchemesParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colors: js.Array[Color_],
     constructor: js.Function,
     geometryType: String,
@@ -64,31 +63,22 @@ object colorGetMatchingSchemesParams {
     __obj.asInstanceOf[colorGetMatchingSchemesParams]
   }
   
-  @scala.inline
-  implicit class colorGetMatchingSchemesParamsMutableBuilder[Self <: colorGetMatchingSchemesParams] (val x: Self) extends AnyVal {
+  extension [Self <: colorGetMatchingSchemesParams](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setGeometryType(value: String): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: String): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
+    inline def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
+    inline def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
   }
 }

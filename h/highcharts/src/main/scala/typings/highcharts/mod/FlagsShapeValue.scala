@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlagsShapeValue extends StObject
 object FlagsShapeValue {
   
-  @scala.inline
-  def circlepin: typings.highcharts.highchartsStrings.circlepin = "circlepin".asInstanceOf[typings.highcharts.highchartsStrings.circlepin]
+  inline def circlepin: typings.highcharts.highchartsStrings.circlepin = "circlepin".asInstanceOf[typings.highcharts.highchartsStrings.circlepin]
   
-  @scala.inline
-  def flag: typings.highcharts.highchartsStrings.flag = "flag".asInstanceOf[typings.highcharts.highchartsStrings.flag]
+  inline def flag: typings.highcharts.highchartsStrings.flag = "flag".asInstanceOf[typings.highcharts.highchartsStrings.flag]
   
-  @scala.inline
-  def squarepin: typings.highcharts.highchartsStrings.squarepin = "squarepin".asInstanceOf[typings.highcharts.highchartsStrings.squarepin]
+  inline def squarepin: typings.highcharts.highchartsStrings.squarepin = "squarepin".asInstanceOf[typings.highcharts.highchartsStrings.squarepin]
 }

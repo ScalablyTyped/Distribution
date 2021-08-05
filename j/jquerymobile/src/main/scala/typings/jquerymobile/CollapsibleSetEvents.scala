@@ -11,19 +11,15 @@ trait CollapsibleSetEvents extends StObject {
 }
 object CollapsibleSetEvents {
   
-  @scala.inline
-  def apply(): CollapsibleSetEvents = {
+  inline def apply(): CollapsibleSetEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapsibleSetEvents]
   }
   
-  @scala.inline
-  implicit class CollapsibleSetEventsMutableBuilder[Self <: CollapsibleSetEvents] (val x: Self) extends AnyVal {
+  extension [Self <: CollapsibleSetEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

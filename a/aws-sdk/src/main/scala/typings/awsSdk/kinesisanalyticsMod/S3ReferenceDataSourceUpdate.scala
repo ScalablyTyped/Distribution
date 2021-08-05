@@ -23,31 +23,23 @@ trait S3ReferenceDataSourceUpdate extends StObject {
 }
 object S3ReferenceDataSourceUpdate {
   
-  @scala.inline
-  def apply(): S3ReferenceDataSourceUpdate = {
+  inline def apply(): S3ReferenceDataSourceUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3ReferenceDataSourceUpdate]
   }
   
-  @scala.inline
-  implicit class S3ReferenceDataSourceUpdateMutableBuilder[Self <: S3ReferenceDataSourceUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: S3ReferenceDataSourceUpdate](x: Self) {
     
-    @scala.inline
-    def setBucketARNUpdate(value: BucketARN): Self = StObject.set(x, "BucketARNUpdate", value.asInstanceOf[js.Any])
+    inline def setBucketARNUpdate(value: BucketARN): Self = StObject.set(x, "BucketARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketARNUpdateUndefined: Self = StObject.set(x, "BucketARNUpdate", js.undefined)
+    inline def setBucketARNUpdateUndefined: Self = StObject.set(x, "BucketARNUpdate", js.undefined)
     
-    @scala.inline
-    def setFileKeyUpdate(value: FileKey): Self = StObject.set(x, "FileKeyUpdate", value.asInstanceOf[js.Any])
+    inline def setFileKeyUpdate(value: FileKey): Self = StObject.set(x, "FileKeyUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileKeyUpdateUndefined: Self = StObject.set(x, "FileKeyUpdate", js.undefined)
+    inline def setFileKeyUpdateUndefined: Self = StObject.set(x, "FileKeyUpdate", js.undefined)
     
-    @scala.inline
-    def setReferenceRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "ReferenceRoleARNUpdate", value.asInstanceOf[js.Any])
+    inline def setReferenceRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "ReferenceRoleARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceRoleARNUpdateUndefined: Self = StObject.set(x, "ReferenceRoleARNUpdate", js.undefined)
+    inline def setReferenceRoleARNUpdateUndefined: Self = StObject.set(x, "ReferenceRoleARNUpdate", js.undefined)
   }
 }

@@ -48,61 +48,43 @@ trait DataSourceSyncJob extends StObject {
 }
 object DataSourceSyncJob {
   
-  @scala.inline
-  def apply(): DataSourceSyncJob = {
+  inline def apply(): DataSourceSyncJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSyncJob]
   }
   
-  @scala.inline
-  implicit class DataSourceSyncJobMutableBuilder[Self <: DataSourceSyncJob] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSyncJob](x: Self) {
     
-    @scala.inline
-    def setDataSourceErrorCode(value: String): Self = StObject.set(x, "DataSourceErrorCode", value.asInstanceOf[js.Any])
+    inline def setDataSourceErrorCode(value: String): Self = StObject.set(x, "DataSourceErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceErrorCodeUndefined: Self = StObject.set(x, "DataSourceErrorCode", js.undefined)
+    inline def setDataSourceErrorCodeUndefined: Self = StObject.set(x, "DataSourceErrorCode", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setExecutionId(value: String): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: String): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: DataSourceSyncJobMetrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: DataSourceSyncJobMetrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DataSourceSyncJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DataSourceSyncJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -11,14 +11,13 @@ object utilD3LinearMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(cfg: ScaleConfig): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def default(cfg: ScaleConfig): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   @JSImport("@antv/scale/lib/util/d3-linear", "D3Linear")
   @js.native
   class D3Linear () extends StObject {
     
-    var _domain: js.Any = js.native
+    /* private */ var _domain: js.Any = js.native
     
     def domain(): D3Linear | js.Array[Double] = js.native
     def domain(domain: js.Array[Double]): D3Linear | js.Array[Double] = js.native

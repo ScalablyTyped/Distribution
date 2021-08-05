@@ -16,31 +16,23 @@ trait ClusterPutSettingsParams
 }
 object ClusterPutSettingsParams {
   
-  @scala.inline
-  def apply(): ClusterPutSettingsParams = {
+  inline def apply(): ClusterPutSettingsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterPutSettingsParams]
   }
   
-  @scala.inline
-  implicit class ClusterPutSettingsParamsMutableBuilder[Self <: ClusterPutSettingsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterPutSettingsParams](x: Self) {
     
-    @scala.inline
-    def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
+    inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
+    inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
     
-    @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait FieldSchemaInFormGeolocation
 }
 object FieldSchemaInFormGeolocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     BingMapsKey: String,
     Description: String,
@@ -38,13 +37,10 @@ object FieldSchemaInFormGeolocation {
     __obj.asInstanceOf[FieldSchemaInFormGeolocation]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormGeolocationMutableBuilder[Self <: FieldSchemaInFormGeolocation] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormGeolocation](x: Self) {
     
-    @scala.inline
-    def setBingMapsKey(value: String): Self = StObject.set(x, "BingMapsKey", value.asInstanceOf[js.Any])
+    inline def setBingMapsKey(value: String): Self = StObject.set(x, "BingMapsKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBingMapBlockedInCurrentRegion(value: Boolean): Self = StObject.set(x, "IsBingMapBlockedInCurrentRegion", value.asInstanceOf[js.Any])
+    inline def setIsBingMapBlockedInCurrentRegion(value: Boolean): Self = StObject.set(x, "IsBingMapBlockedInCurrentRegion", value.asInstanceOf[js.Any])
   }
 }

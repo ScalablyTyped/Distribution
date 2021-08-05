@@ -18,31 +18,23 @@ trait JobMessages extends StObject {
 }
 object JobMessages {
   
-  @scala.inline
-  def apply(): JobMessages = {
+  inline def apply(): JobMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobMessages]
   }
   
-  @scala.inline
-  implicit class JobMessagesMutableBuilder[Self <: JobMessages] (val x: Self) extends AnyVal {
+  extension [Self <: JobMessages](x: Self) {
     
-    @scala.inline
-    def setInfo(value: listOfString): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: listOfString): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
     
-    @scala.inline
-    def setInfoVarargs(value: string*): Self = StObject.set(x, "Info", js.Array(value :_*))
+    inline def setInfoVarargs(value: string*): Self = StObject.set(x, "Info", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: listOfString): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: listOfString): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
     
-    @scala.inline
-    def setWarningVarargs(value: string*): Self = StObject.set(x, "Warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: string*): Self = StObject.set(x, "Warning", js.Array(value :_*))
   }
 }

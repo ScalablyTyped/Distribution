@@ -197,8 +197,7 @@ object mod {
   }
   object FlowChunk {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       chunkSize: Double,
       endByte: Double,
@@ -225,74 +224,51 @@ object mod {
       __obj.asInstanceOf[FlowChunk]
     }
     
-    @scala.inline
-    implicit class FlowChunkMutableBuilder[Self <: FlowChunk] (val x: Self) extends AnyVal {
+    extension [Self <: FlowChunk](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndByte(value: Double): Self = StObject.set(x, "endByte", value.asInstanceOf[js.Any])
+      inline def setEndByte(value: Double): Self = StObject.set(x, "endByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileObj(value: FlowFile): Self = StObject.set(x, "fileObj", value.asInstanceOf[js.Any])
+      inline def setFileObj(value: FlowFile): Self = StObject.set(x, "fileObj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowObj(value: Flow): Self = StObject.set(x, "flowObj", value.asInstanceOf[js.Any])
+      inline def setFlowObj(value: Flow): Self = StObject.set(x, "flowObj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetParams(value: () => FlowChunkParams): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+      inline def setGetParams(value: () => FlowChunkParams): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: () => Unit): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+      inline def setMessage(value: () => Unit): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingRetry(value: `false`): Self = StObject.set(x, "pendingRetry", value.asInstanceOf[js.Any])
+      inline def setPendingRetry(value: `false`): Self = StObject.set(x, "pendingRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreprocessState(value: `0` | `1` | `2`): Self = StObject.set(x, "preprocessState", value.asInstanceOf[js.Any])
+      inline def setPreprocessState(value: `0` | `1` | `2`): Self = StObject.set(x, "preprocessState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: () => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction0(value))
+      inline def setProgress(value: () => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadState(value: `0` | `1` | `2`): Self = StObject.set(x, "readState", value.asInstanceOf[js.Any])
+      inline def setReadState(value: `0` | `1` | `2`): Self = StObject.set(x, "readState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend(value: () => Unit): Self = StObject.set(x, "send", js.Any.fromFunction0(value))
+      inline def setSend(value: () => Unit): Self = StObject.set(x, "send", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSizeUploaded(value: () => Double): Self = StObject.set(x, "sizeUploaded", js.Any.fromFunction0(value))
+      inline def setSizeUploaded(value: () => Double): Self = StObject.set(x, "sizeUploaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartByte(value: Double): Self = StObject.set(x, "startByte", value.asInstanceOf[js.Any])
+      inline def setStartByte(value: Double): Self = StObject.set(x, "startByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: () => Unit): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
+      inline def setStatus(value: () => Unit): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTest(value: () => Unit): Self = StObject.set(x, "test", js.Any.fromFunction0(value))
+      inline def setTest(value: () => Unit): Self = StObject.set(x, "test", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTested(value: Boolean): Self = StObject.set(x, "tested", value.asInstanceOf[js.Any])
+      inline def setTested(value: Boolean): Self = StObject.set(x, "tested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -316,8 +292,7 @@ object mod {
   }
   object FlowChunkParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       flowChunkNumber: Double,
       flowChunkSize: Double,
       flowCurrentChunkSize: Double,
@@ -331,32 +306,23 @@ object mod {
       __obj.asInstanceOf[FlowChunkParams]
     }
     
-    @scala.inline
-    implicit class FlowChunkParamsMutableBuilder[Self <: FlowChunkParams] (val x: Self) extends AnyVal {
+    extension [Self <: FlowChunkParams](x: Self) {
       
-      @scala.inline
-      def setFlowChunkNumber(value: Double): Self = StObject.set(x, "flowChunkNumber", value.asInstanceOf[js.Any])
+      inline def setFlowChunkNumber(value: Double): Self = StObject.set(x, "flowChunkNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowChunkSize(value: Double): Self = StObject.set(x, "flowChunkSize", value.asInstanceOf[js.Any])
+      inline def setFlowChunkSize(value: Double): Self = StObject.set(x, "flowChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowCurrentChunkSize(value: Double): Self = StObject.set(x, "flowCurrentChunkSize", value.asInstanceOf[js.Any])
+      inline def setFlowCurrentChunkSize(value: Double): Self = StObject.set(x, "flowCurrentChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowFilename(value: String): Self = StObject.set(x, "flowFilename", value.asInstanceOf[js.Any])
+      inline def setFlowFilename(value: String): Self = StObject.set(x, "flowFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowIdentifier(value: js.Any): Self = StObject.set(x, "flowIdentifier", value.asInstanceOf[js.Any])
+      inline def setFlowIdentifier(value: js.Any): Self = StObject.set(x, "flowIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowRelativePath(value: String): Self = StObject.set(x, "flowRelativePath", value.asInstanceOf[js.Any])
+      inline def setFlowRelativePath(value: String): Self = StObject.set(x, "flowRelativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowTotalChunks(value: Double): Self = StObject.set(x, "flowTotalChunks", value.asInstanceOf[js.Any])
+      inline def setFlowTotalChunks(value: Double): Self = StObject.set(x, "flowTotalChunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowTotalSize(value: Double): Self = StObject.set(x, "flowTotalSize", value.asInstanceOf[js.Any])
+      inline def setFlowTotalSize(value: Double): Self = StObject.set(x, "flowTotalSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -394,8 +360,7 @@ object mod {
   }
   object FlowEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       catchAll: CatchAllCallbackArguments,
       complete: CompleteCallbackArguments,
       error: ErrorCallbackArguments,
@@ -414,62 +379,43 @@ object mod {
       __obj.asInstanceOf[FlowEventMap]
     }
     
-    @scala.inline
-    implicit class FlowEventMapMutableBuilder[Self <: FlowEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: FlowEventMap](x: Self) {
       
-      @scala.inline
-      def setCatchAll(value: CatchAllCallbackArguments): Self = StObject.set(x, "catchAll", value.asInstanceOf[js.Any])
+      inline def setCatchAll(value: CatchAllCallbackArguments): Self = StObject.set(x, "catchAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatchAllVarargs(value: Event*): Self = StObject.set(x, "catchAll", js.Array(value :_*))
+      inline def setCatchAllVarargs(value: Event*): Self = StObject.set(x, "catchAll", js.Array(value :_*))
       
-      @scala.inline
-      def setComplete(value: CompleteCallbackArguments): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: CompleteCallbackArguments): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteVarargs(value: js.Any*): Self = StObject.set(x, "complete", js.Array(value :_*))
+      inline def setCompleteVarargs(value: js.Any*): Self = StObject.set(x, "complete", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: ErrorCallbackArguments): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ErrorCallbackArguments): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileAdded(value: FileAddedCallbackArguments): Self = StObject.set(x, "fileAdded", value.asInstanceOf[js.Any])
+      inline def setFileAdded(value: FileAddedCallbackArguments): Self = StObject.set(x, "fileAdded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileError(value: FileErrorCallbackArguments): Self = StObject.set(x, "fileError", value.asInstanceOf[js.Any])
+      inline def setFileError(value: FileErrorCallbackArguments): Self = StObject.set(x, "fileError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileProgress(value: FileProgressCallbackArguments): Self = StObject.set(x, "fileProgress", value.asInstanceOf[js.Any])
+      inline def setFileProgress(value: FileProgressCallbackArguments): Self = StObject.set(x, "fileProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileRemoved(value: FileRemovedCallbackArguments): Self = StObject.set(x, "fileRemoved", value.asInstanceOf[js.Any])
+      inline def setFileRemoved(value: FileRemovedCallbackArguments): Self = StObject.set(x, "fileRemoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileRemovedVarargs(value: FlowFile*): Self = StObject.set(x, "fileRemoved", js.Array(value :_*))
+      inline def setFileRemovedVarargs(value: FlowFile*): Self = StObject.set(x, "fileRemoved", js.Array(value :_*))
       
-      @scala.inline
-      def setFileRetry(value: FileRetryCallbackArguments): Self = StObject.set(x, "fileRetry", value.asInstanceOf[js.Any])
+      inline def setFileRetry(value: FileRetryCallbackArguments): Self = StObject.set(x, "fileRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSuccess(value: FileSuccessCallbackArguments): Self = StObject.set(x, "fileSuccess", value.asInstanceOf[js.Any])
+      inline def setFileSuccess(value: FileSuccessCallbackArguments): Self = StObject.set(x, "fileSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesAdded(value: FilesAddedCallbackArguments): Self = StObject.set(x, "filesAdded", value.asInstanceOf[js.Any])
+      inline def setFilesAdded(value: FilesAddedCallbackArguments): Self = StObject.set(x, "filesAdded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesSubmitted(value: FilesSubmittedCallbackArguments): Self = StObject.set(x, "filesSubmitted", value.asInstanceOf[js.Any])
+      inline def setFilesSubmitted(value: FilesSubmittedCallbackArguments): Self = StObject.set(x, "filesSubmitted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: ProgressCallbackArguments): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: ProgressCallbackArguments): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressVarargs(value: js.Any*): Self = StObject.set(x, "progress", js.Array(value :_*))
+      inline def setProgressVarargs(value: js.Any*): Self = StObject.set(x, "progress", js.Array(value :_*))
       
-      @scala.inline
-      def setUploadStart(value: UploadStartCallbackArguments): Self = StObject.set(x, "uploadStart", value.asInstanceOf[js.Any])
+      inline def setUploadStart(value: UploadStartCallbackArguments): Self = StObject.set(x, "uploadStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadStartVarargs(value: js.Any*): Self = StObject.set(x, "uploadStart", js.Array(value :_*))
+      inline def setUploadStartVarargs(value: js.Any*): Self = StObject.set(x, "uploadStart", js.Array(value :_*))
     }
   }
   
@@ -525,8 +471,7 @@ object mod {
   }
   object FlowFile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       averageSpeed: Double,
       bootstrap: () => Unit,
       cancel: () => Unit,
@@ -555,80 +500,55 @@ object mod {
       __obj.asInstanceOf[FlowFile]
     }
     
-    @scala.inline
-    implicit class FlowFileMutableBuilder[Self <: FlowFile] (val x: Self) extends AnyVal {
+    extension [Self <: FlowFile](x: Self) {
       
-      @scala.inline
-      def setAverageSpeed(value: Double): Self = StObject.set(x, "averageSpeed", value.asInstanceOf[js.Any])
+      inline def setAverageSpeed(value: Double): Self = StObject.set(x, "averageSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrap(value: () => Unit): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
+      inline def setBootstrap(value: () => Unit): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setChunks(value: js.Array[FlowChunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      inline def setChunks(value: js.Array[FlowChunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunksVarargs(value: FlowChunk*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: FlowChunk*): Self = StObject.set(x, "chunks", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentSpeed(value: Double): Self = StObject.set(x, "currentSpeed", value.asInstanceOf[js.Any])
+      inline def setCurrentSpeed(value: Double): Self = StObject.set(x, "currentSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowObj(value: Flow): Self = StObject.set(x, "flowObj", value.asInstanceOf[js.Any])
+      inline def setFlowObj(value: Flow): Self = StObject.set(x, "flowObj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetExtension(value: () => String): Self = StObject.set(x, "getExtension", js.Any.fromFunction0(value))
+      inline def setGetExtension(value: () => String): Self = StObject.set(x, "getExtension", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsComplete(value: () => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction0(value))
+      inline def setIsComplete(value: () => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUploading(value: () => Boolean): Self = StObject.set(x, "isUploading", js.Any.fromFunction0(value))
+      inline def setIsUploading(value: () => Boolean): Self = StObject.set(x, "isUploading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: () => Double): Self = StObject.set(x, "progress", js.Any.fromFunction0(value))
+      inline def setProgress(value: () => Double): Self = StObject.set(x, "progress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUploaded(value: () => Double): Self = StObject.set(x, "sizeUploaded", js.Any.fromFunction0(value))
+      inline def setSizeUploaded(value: () => Double): Self = StObject.set(x, "sizeUploaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimeRemaining(value: () => Double): Self = StObject.set(x, "timeRemaining", js.Any.fromFunction0(value))
+      inline def setTimeRemaining(value: () => Double): Self = StObject.set(x, "timeRemaining", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUniqueIdentifier(value: String): Self = StObject.set(x, "uniqueIdentifier", value.asInstanceOf[js.Any])
+      inline def setUniqueIdentifier(value: String): Self = StObject.set(x, "uniqueIdentifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -695,172 +615,118 @@ object mod {
   }
   object FlowOptions {
     
-    @scala.inline
-    def apply(): FlowOptions = {
+    inline def apply(): FlowOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlowOptions]
     }
     
-    @scala.inline
-    implicit class FlowOptionsMutableBuilder[Self <: FlowOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FlowOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDuplicateUploads(value: Boolean): Self = StObject.set(x, "allowDuplicateUploads", value.asInstanceOf[js.Any])
+      inline def setAllowDuplicateUploads(value: Boolean): Self = StObject.set(x, "allowDuplicateUploads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDuplicateUploadsUndefined: Self = StObject.set(x, "allowDuplicateUploads", js.undefined)
+      inline def setAllowDuplicateUploadsUndefined: Self = StObject.set(x, "allowDuplicateUploads", js.undefined)
       
-      @scala.inline
-      def setChunkRetryInterval(value: Double): Self = StObject.set(x, "chunkRetryInterval", value.asInstanceOf[js.Any])
+      inline def setChunkRetryInterval(value: Double): Self = StObject.set(x, "chunkRetryInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkRetryIntervalUndefined: Self = StObject.set(x, "chunkRetryInterval", js.undefined)
+      inline def setChunkRetryIntervalUndefined: Self = StObject.set(x, "chunkRetryInterval", js.undefined)
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setFileParameterName(value: String): Self = StObject.set(x, "fileParameterName", value.asInstanceOf[js.Any])
+      inline def setFileParameterName(value: String): Self = StObject.set(x, "fileParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileParameterNameUndefined: Self = StObject.set(x, "fileParameterName", js.undefined)
+      inline def setFileParameterNameUndefined: Self = StObject.set(x, "fileParameterName", js.undefined)
       
-      @scala.inline
-      def setForceChunkSize(value: Boolean): Self = StObject.set(x, "forceChunkSize", value.asInstanceOf[js.Any])
+      inline def setForceChunkSize(value: Boolean): Self = StObject.set(x, "forceChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceChunkSizeUndefined: Self = StObject.set(x, "forceChunkSize", js.undefined)
+      inline def setForceChunkSizeUndefined: Self = StObject.set(x, "forceChunkSize", js.undefined)
       
-      @scala.inline
-      def setGenerateUniqueIdentifier(value: /* file */ FlowFile => js.Any): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction1(value))
+      inline def setGenerateUniqueIdentifier(value: /* file */ FlowFile => js.Any): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenerateUniqueIdentifierUndefined: Self = StObject.set(x, "generateUniqueIdentifier", js.undefined)
+      inline def setGenerateUniqueIdentifierUndefined: Self = StObject.set(x, "generateUniqueIdentifier", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setInitFileFn(value: (/* file */ FlowFile, /* chunk */ FlowChunk) => Unit): Self = StObject.set(x, "initFileFn", js.Any.fromFunction2(value))
+      inline def setInitFileFn(value: (/* file */ FlowFile, /* chunk */ FlowChunk) => Unit): Self = StObject.set(x, "initFileFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInitFileFnUndefined: Self = StObject.set(x, "initFileFn", js.undefined)
+      inline def setInitFileFnUndefined: Self = StObject.set(x, "initFileFn", js.undefined)
       
-      @scala.inline
-      def setMaxChunkRetries(value: Double): Self = StObject.set(x, "maxChunkRetries", value.asInstanceOf[js.Any])
+      inline def setMaxChunkRetries(value: Double): Self = StObject.set(x, "maxChunkRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxChunkRetriesUndefined: Self = StObject.set(x, "maxChunkRetries", js.undefined)
+      inline def setMaxChunkRetriesUndefined: Self = StObject.set(x, "maxChunkRetries", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPermanentErrors(value: js.Array[String]): Self = StObject.set(x, "permanentErrors", value.asInstanceOf[js.Any])
+      inline def setPermanentErrors(value: js.Array[String]): Self = StObject.set(x, "permanentErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermanentErrorsUndefined: Self = StObject.set(x, "permanentErrors", js.undefined)
+      inline def setPermanentErrorsUndefined: Self = StObject.set(x, "permanentErrors", js.undefined)
       
-      @scala.inline
-      def setPermanentErrorsVarargs(value: String*): Self = StObject.set(x, "permanentErrors", js.Array(value :_*))
+      inline def setPermanentErrorsVarargs(value: String*): Self = StObject.set(x, "permanentErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setPreprocess(value: /* chunk */ FlowChunk => Unit): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
+      inline def setPreprocess(value: /* chunk */ FlowChunk => Unit): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
+      inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
       
-      @scala.inline
-      def setPrioritizeFirstAndLastChunk(value: Boolean): Self = StObject.set(x, "prioritizeFirstAndLastChunk", value.asInstanceOf[js.Any])
+      inline def setPrioritizeFirstAndLastChunk(value: Boolean): Self = StObject.set(x, "prioritizeFirstAndLastChunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrioritizeFirstAndLastChunkUndefined: Self = StObject.set(x, "prioritizeFirstAndLastChunk", js.undefined)
+      inline def setPrioritizeFirstAndLastChunkUndefined: Self = StObject.set(x, "prioritizeFirstAndLastChunk", js.undefined)
       
-      @scala.inline
-      def setProgressCallbacksInterval(value: Double): Self = StObject.set(x, "progressCallbacksInterval", value.asInstanceOf[js.Any])
+      inline def setProgressCallbacksInterval(value: Double): Self = StObject.set(x, "progressCallbacksInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressCallbacksIntervalUndefined: Self = StObject.set(x, "progressCallbacksInterval", js.undefined)
+      inline def setProgressCallbacksIntervalUndefined: Self = StObject.set(x, "progressCallbacksInterval", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setReadFileFn(
+      inline def setReadFileFn(
         value: (/* file */ FlowFile, /* startByte */ Double, /* endByte */ Double, /* fileType */ String, /* chunk */ FlowChunk) => Unit
       ): Self = StObject.set(x, "readFileFn", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setReadFileFnUndefined: Self = StObject.set(x, "readFileFn", js.undefined)
+      inline def setReadFileFnUndefined: Self = StObject.set(x, "readFileFn", js.undefined)
       
-      @scala.inline
-      def setSimultaneousUploads(value: Double): Self = StObject.set(x, "simultaneousUploads", value.asInstanceOf[js.Any])
+      inline def setSimultaneousUploads(value: Double): Self = StObject.set(x, "simultaneousUploads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimultaneousUploadsUndefined: Self = StObject.set(x, "simultaneousUploads", js.undefined)
+      inline def setSimultaneousUploadsUndefined: Self = StObject.set(x, "simultaneousUploads", js.undefined)
       
-      @scala.inline
-      def setSingleFile(value: Boolean): Self = StObject.set(x, "singleFile", value.asInstanceOf[js.Any])
+      inline def setSingleFile(value: Boolean): Self = StObject.set(x, "singleFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleFileUndefined: Self = StObject.set(x, "singleFile", js.undefined)
+      inline def setSingleFileUndefined: Self = StObject.set(x, "singleFile", js.undefined)
       
-      @scala.inline
-      def setSpeedSmoothingFactor(value: Double): Self = StObject.set(x, "speedSmoothingFactor", value.asInstanceOf[js.Any])
+      inline def setSpeedSmoothingFactor(value: Double): Self = StObject.set(x, "speedSmoothingFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedSmoothingFactorUndefined: Self = StObject.set(x, "speedSmoothingFactor", js.undefined)
+      inline def setSpeedSmoothingFactorUndefined: Self = StObject.set(x, "speedSmoothingFactor", js.undefined)
       
-      @scala.inline
-      def setSuccessStatuses(value: js.Array[String]): Self = StObject.set(x, "successStatuses", value.asInstanceOf[js.Any])
+      inline def setSuccessStatuses(value: js.Array[String]): Self = StObject.set(x, "successStatuses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessStatusesUndefined: Self = StObject.set(x, "successStatuses", js.undefined)
+      inline def setSuccessStatusesUndefined: Self = StObject.set(x, "successStatuses", js.undefined)
       
-      @scala.inline
-      def setSuccessStatusesVarargs(value: String*): Self = StObject.set(x, "successStatuses", js.Array(value :_*))
+      inline def setSuccessStatusesVarargs(value: String*): Self = StObject.set(x, "successStatuses", js.Array(value :_*))
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTestChunks(value: Boolean): Self = StObject.set(x, "testChunks", value.asInstanceOf[js.Any])
+      inline def setTestChunks(value: Boolean): Self = StObject.set(x, "testChunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestChunksUndefined: Self = StObject.set(x, "testChunks", js.undefined)
+      inline def setTestChunksUndefined: Self = StObject.set(x, "testChunks", js.undefined)
       
-      @scala.inline
-      def setTestMethod(value: String): Self = StObject.set(x, "testMethod", value.asInstanceOf[js.Any])
+      inline def setTestMethod(value: String): Self = StObject.set(x, "testMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestMethodUndefined: Self = StObject.set(x, "testMethod", js.undefined)
+      inline def setTestMethodUndefined: Self = StObject.set(x, "testMethod", js.undefined)
       
-      @scala.inline
-      def setUploadMethod(value: String): Self = StObject.set(x, "uploadMethod", value.asInstanceOf[js.Any])
+      inline def setUploadMethod(value: String): Self = StObject.set(x, "uploadMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadMethodUndefined: Self = StObject.set(x, "uploadMethod", js.undefined)
+      inline def setUploadMethodUndefined: Self = StObject.set(x, "uploadMethod", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   

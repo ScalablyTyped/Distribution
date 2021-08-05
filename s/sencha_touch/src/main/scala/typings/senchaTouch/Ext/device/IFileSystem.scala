@@ -10,8 +10,7 @@ trait IFileSystem
      with ISencha
 object IFileSystem {
   
-  @scala.inline
-  def apply(): IFileSystem = {
+  inline def apply(): IFileSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileSystem]
   }

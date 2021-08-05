@@ -26,15 +26,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPortal(children: ReactNode, container: Element): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
-  @scala.inline
-  def createPortal(children: ReactNode, container: Element, key: String): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
+  inline def createPortal(children: ReactNode, container: Element): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
+  inline def createPortal(children: ReactNode, container: Element, key: String): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
   
-  @scala.inline
-  def findDOMNode(): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")().asInstanceOf[Element | Null | Text]
-  @scala.inline
-  def findDOMNode(instance: ReactInstance): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[Element | Null | Text]
+  inline def findDOMNode(): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")().asInstanceOf[Element | Null | Text]
+  inline def findDOMNode(instance: ReactInstance): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[Element | Null | Text]
   
   @JSImport("react-dom", "hydrate")
   @js.native
@@ -44,35 +40,26 @@ object mod {
   @js.native
   val render: Renderer = js.native
   
-  @scala.inline
-  def unmountComponentAtNode(container: DocumentFragment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def unmountComponentAtNode(container: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def unmountComponentAtNode(container: DocumentFragment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def unmountComponentAtNode(container: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def unstableBatchedUpdates(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unstableBatchedUpdates(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def unstableRenderSubtreeIntoContainer[T /* <: Element */](
+  inline def unstableRenderSubtreeIntoContainer[T /* <: Element */](
     parentComponent: Component[js.Any, js.Object, js.Any],
     element: DOMElement[DOMAttributes[T], T],
     container: Element
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def unstableRenderSubtreeIntoContainer[T /* <: Element */](
+  inline def unstableRenderSubtreeIntoContainer[T /* <: Element */](
     parentComponent: Component[js.Any, js.Object, js.Any],
     element: DOMElement[DOMAttributes[T], T],
     container: Element,
     callback: js.Function1[/* element */ T, js.Any]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def unstableRenderSubtreeIntoContainer[P](parentComponent: Component[js.Any, js.Object, js.Any], element: ReactElement, container: Element): (Component[P, ComponentState, js.Any]) | Element | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[(Component[P, ComponentState, js.Any]) | Element | Unit]
-  @scala.inline
-  def unstableRenderSubtreeIntoContainer[P](
+  inline def unstableRenderSubtreeIntoContainer[P](parentComponent: Component[js.Any, js.Object, js.Any], element: ReactElement, container: Element): (Component[P, ComponentState, js.Any]) | Element | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[(Component[P, ComponentState, js.Any]) | Element | Unit]
+  inline def unstableRenderSubtreeIntoContainer[P](
     parentComponent: Component[js.Any, js.Object, js.Any],
     element: ReactElement,
     container: Element,
@@ -81,10 +68,8 @@ object mod {
       js.Any
     ]
   ): (Component[P, ComponentState, js.Any]) | Element | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[(Component[P, ComponentState, js.Any]) | Element | Unit]
-  @scala.inline
-  def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](parentComponent: Component[js.Any, js.Object, js.Any], element: CElement[P, T], container: Element): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](
+  inline def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](parentComponent: Component[js.Any, js.Object, js.Any], element: CElement[P, T], container: Element): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](
     parentComponent: Component[js.Any, js.Object, js.Any],
     element: CElement[P, T],
     container: Element,
@@ -104,26 +89,20 @@ object mod {
   }
   object HydrationOptions {
     
-    @scala.inline
-    def apply(): HydrationOptions = {
+    inline def apply(): HydrationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HydrationOptions]
     }
     
-    @scala.inline
-    implicit class HydrationOptionsMutableBuilder[Self <: HydrationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HydrationOptions](x: Self) {
       
-      @scala.inline
-      def setOnDeleted(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onDeleted", js.Any.fromFunction1(value))
+      inline def setOnDeleted(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onDeleted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeletedUndefined: Self = StObject.set(x, "onDeleted", js.undefined)
+      inline def setOnDeletedUndefined: Self = StObject.set(x, "onDeleted", js.undefined)
       
-      @scala.inline
-      def setOnHydrated(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onHydrated", js.Any.fromFunction1(value))
+      inline def setOnHydrated(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onHydrated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHydratedUndefined: Self = StObject.set(x, "onHydrated", js.undefined)
+      inline def setOnHydratedUndefined: Self = StObject.set(x, "onHydrated", js.undefined)
     }
   }
   
@@ -204,26 +183,20 @@ object mod {
   }
   object RootOptions {
     
-    @scala.inline
-    def apply(): RootOptions = {
+    inline def apply(): RootOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RootOptions]
     }
     
-    @scala.inline
-    implicit class RootOptionsMutableBuilder[Self <: RootOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RootOptions](x: Self) {
       
-      @scala.inline
-      def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
+      inline def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
+      inline def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
       
-      @scala.inline
-      def setHydrationOptions(value: typings.reactDom.experimentalMod.reactDomAugmentingMod.HydrationOptions): Self = StObject.set(x, "hydrationOptions", value.asInstanceOf[js.Any])
+      inline def setHydrationOptions(value: typings.reactDom.experimentalMod.reactDomAugmentingMod.HydrationOptions): Self = StObject.set(x, "hydrationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHydrationOptionsUndefined: Self = StObject.set(x, "hydrationOptions", js.undefined)
+      inline def setHydrationOptionsUndefined: Self = StObject.set(x, "hydrationOptions", js.undefined)
     }
   }
 }

@@ -97,60 +97,44 @@ object sessionDelegateMod {
   }
   object SessionDelegate {
     
-    @scala.inline
-    def apply(): SessionDelegate = {
+    inline def apply(): SessionDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionDelegate]
     }
     
-    @scala.inline
-    implicit class SessionDelegateMutableBuilder[Self <: SessionDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: SessionDelegate](x: Self) {
       
-      @scala.inline
-      def setOnBye(value: /* bye */ Bye => Unit): Self = StObject.set(x, "onBye", js.Any.fromFunction1(value))
+      inline def setOnBye(value: /* bye */ Bye => Unit): Self = StObject.set(x, "onBye", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnByeUndefined: Self = StObject.set(x, "onBye", js.undefined)
+      inline def setOnByeUndefined: Self = StObject.set(x, "onBye", js.undefined)
       
-      @scala.inline
-      def setOnInfo(value: /* info */ Info => Unit): Self = StObject.set(x, "onInfo", js.Any.fromFunction1(value))
+      inline def setOnInfo(value: /* info */ Info => Unit): Self = StObject.set(x, "onInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInfoUndefined: Self = StObject.set(x, "onInfo", js.undefined)
+      inline def setOnInfoUndefined: Self = StObject.set(x, "onInfo", js.undefined)
       
-      @scala.inline
-      def setOnInvite(
+      inline def setOnInvite(
         value: (/* request */ IncomingRequestMessage, /* response */ String, /* statusCode */ Double) => Unit
       ): Self = StObject.set(x, "onInvite", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnInviteUndefined: Self = StObject.set(x, "onInvite", js.undefined)
+      inline def setOnInviteUndefined: Self = StObject.set(x, "onInvite", js.undefined)
       
-      @scala.inline
-      def setOnMessage(value: /* message */ Message => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: /* message */ Message => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+      inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
-      @scala.inline
-      def setOnNotify(value: /* notification */ Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
+      inline def setOnNotify(value: /* notification */ Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
+      inline def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
       
-      @scala.inline
-      def setOnRefer(value: /* referral */ Referral => Unit): Self = StObject.set(x, "onRefer", js.Any.fromFunction1(value))
+      inline def setOnRefer(value: /* referral */ Referral => Unit): Self = StObject.set(x, "onRefer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReferUndefined: Self = StObject.set(x, "onRefer", js.undefined)
+      inline def setOnReferUndefined: Self = StObject.set(x, "onRefer", js.undefined)
       
-      @scala.inline
-      def setOnSessionDescriptionHandler(
+      inline def setOnSessionDescriptionHandler(
         value: (/* sessionDescriptionHandler */ SessionDescriptionHandler, /* provisional */ Boolean) => Unit
       ): Self = StObject.set(x, "onSessionDescriptionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSessionDescriptionHandlerUndefined: Self = StObject.set(x, "onSessionDescriptionHandler", js.undefined)
+      inline def setOnSessionDescriptionHandlerUndefined: Self = StObject.set(x, "onSessionDescriptionHandler", js.undefined)
     }
   }
 }

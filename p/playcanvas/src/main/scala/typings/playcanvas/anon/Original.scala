@@ -12,19 +12,15 @@ trait Original extends StObject {
 }
 object Original {
   
-  @scala.inline
-  def apply(load: String, original: String): Original = {
+  inline def apply(load: String, original: String): Original = {
     val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any])
     __obj.asInstanceOf[Original]
   }
   
-  @scala.inline
-  implicit class OriginalMutableBuilder[Self <: Original] (val x: Self) extends AnyVal {
+  extension [Self <: Original](x: Self) {
     
-    @scala.inline
-    def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
   }
 }

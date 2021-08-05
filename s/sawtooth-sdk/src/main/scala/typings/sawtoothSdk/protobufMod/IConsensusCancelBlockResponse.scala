@@ -12,22 +12,17 @@ trait IConsensusCancelBlockResponse extends StObject {
 }
 object IConsensusCancelBlockResponse {
   
-  @scala.inline
-  def apply(): IConsensusCancelBlockResponse = {
+  inline def apply(): IConsensusCancelBlockResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusCancelBlockResponse]
   }
   
-  @scala.inline
-  implicit class IConsensusCancelBlockResponseMutableBuilder[Self <: IConsensusCancelBlockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusCancelBlockResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

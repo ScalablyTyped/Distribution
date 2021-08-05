@@ -12,25 +12,19 @@ trait CancelCallbacksHash extends StObject {
 }
 object CancelCallbacksHash {
   
-  @scala.inline
-  def apply(): CancelCallbacksHash = {
+  inline def apply(): CancelCallbacksHash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelCallbacksHash]
   }
   
-  @scala.inline
-  implicit class CancelCallbacksHashMutableBuilder[Self <: CancelCallbacksHash] (val x: Self) extends AnyVal {
+  extension [Self <: CancelCallbacksHash](x: Self) {
     
-    @scala.inline
-    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+    inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+    inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

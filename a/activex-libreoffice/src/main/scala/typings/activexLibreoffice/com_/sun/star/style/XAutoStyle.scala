@@ -28,8 +28,7 @@ trait XAutoStyle
 }
 object XAutoStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Properties: PropertyValues,
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
@@ -51,16 +50,12 @@ object XAutoStyle {
     __obj.asInstanceOf[XAutoStyle]
   }
   
-  @scala.inline
-  implicit class XAutoStyleMutableBuilder[Self <: XAutoStyle] (val x: Self) extends AnyVal {
+  extension [Self <: XAutoStyle](x: Self) {
     
-    @scala.inline
-    def setGetProperties(value: () => PropertyValues): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => PropertyValues): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProperties(value: PropertyValues): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyValues): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: PropertyValue*): Self = StObject.set(x, "Properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: PropertyValue*): Self = StObject.set(x, "Properties", js.Array(value :_*))
   }
 }

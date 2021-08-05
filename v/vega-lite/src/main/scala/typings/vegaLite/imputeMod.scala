@@ -20,9 +20,9 @@ object imputeMod {
         FormulaTransform | typings.vegaTypings.transformMod.ImputeTransform | WindowTransform
       ] = js.native
     
-    var processSequence: js.Any = js.native
+    /* private */ var processSequence: js.Any = js.native
     
-    val transform: js.Any = js.native
+    /* private */ val transform: js.Any = js.native
   }
   /* static members */
   object ImputeNode {
@@ -31,10 +31,8 @@ object imputeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): ImputeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[ImputeNode]
+    inline def makeFromEncoding(parent: DataFlowNode, model: UnitModel): ImputeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[ImputeNode]
     
-    @scala.inline
-    def makeFromTransform(parent: DataFlowNode, imputeTransform: ImputeTransform): ImputeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], imputeTransform.asInstanceOf[js.Any])).asInstanceOf[ImputeNode]
+    inline def makeFromTransform(parent: DataFlowNode, imputeTransform: ImputeTransform): ImputeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], imputeTransform.asInstanceOf[js.Any])).asInstanceOf[ImputeNode]
   }
 }

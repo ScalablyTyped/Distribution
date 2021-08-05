@@ -11,13 +11,10 @@ object fsutilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fileExists(filePath: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileExists")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fileExists(filePath: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fileExists")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def waitForFile(filePath: PathLike, checkInterval: Double, startTime: Double, maxWaitDuration: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForFile")(filePath.asInstanceOf[js.Any], checkInterval.asInstanceOf[js.Any], startTime.asInstanceOf[js.Any], maxWaitDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitForFile(
+  inline def waitForFile(filePath: PathLike, checkInterval: Double, startTime: Double, maxWaitDuration: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForFile")(filePath.asInstanceOf[js.Any], checkInterval.asInstanceOf[js.Any], startTime.asInstanceOf[js.Any], maxWaitDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitForFile(
     filePath: PathLike,
     checkInterval: Double,
     startTime: Double,

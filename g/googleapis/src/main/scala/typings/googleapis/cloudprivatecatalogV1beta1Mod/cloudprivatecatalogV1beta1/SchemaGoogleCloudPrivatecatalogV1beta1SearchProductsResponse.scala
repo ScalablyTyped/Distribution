@@ -22,28 +22,21 @@ trait SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse extends StObj
 }
 object SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse = {
+  inline def apply(): SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponseMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setProducts(value: js.Array[SchemaGoogleCloudPrivatecatalogV1beta1Product]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: js.Array[SchemaGoogleCloudPrivatecatalogV1beta1Product]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    @scala.inline
-    def setProductsVarargs(value: SchemaGoogleCloudPrivatecatalogV1beta1Product*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: SchemaGoogleCloudPrivatecatalogV1beta1Product*): Self = StObject.set(x, "products", js.Array(value :_*))
   }
 }

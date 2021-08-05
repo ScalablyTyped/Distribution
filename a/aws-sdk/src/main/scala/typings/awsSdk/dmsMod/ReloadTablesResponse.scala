@@ -13,19 +13,15 @@ trait ReloadTablesResponse extends StObject {
 }
 object ReloadTablesResponse {
   
-  @scala.inline
-  def apply(): ReloadTablesResponse = {
+  inline def apply(): ReloadTablesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReloadTablesResponse]
   }
   
-  @scala.inline
-  implicit class ReloadTablesResponseMutableBuilder[Self <: ReloadTablesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReloadTablesResponse](x: Self) {
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
+    inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
   }
 }

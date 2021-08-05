@@ -18,145 +18,145 @@ object progressMod {
        with ProgressControl {
     def this(hasEngineLiveStateEngineEventEmitterTextMapTooltipServiceThemePreviewThumbnailPreviewFullSize: LiveStateEngine) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _addTimeIndicator: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindCallbacks: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _changeCurrentTimeOfVideo: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _convertPlayedPercentToTime: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _desiredSeekPosition: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _destroyInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _hidePreview: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _hideTooltip: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initTimeIndicators: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _interceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isUserDragging: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _liveStateEngine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onChangePlayedPercent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onSyncWithLiveMouseEnter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onSyncWithLiveMouseLeave: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _pauseVideoOnDragStart: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _playVideoOnDragEnd: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _previewFullSize: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _previewThumbnail: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _processLiveStateChange: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _processStateChange: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _reset: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _setBuffered: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _setPlayed: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _shouldHidePreviewOnUpdate: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _shouldPlayAfterDragEnd: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _showFullScreenPreview: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _showTooltipAndPreview: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _startIntervalUpdates: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _startProcessingUserDrag: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _stopIntervalUpdates: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _stopProcessingUserDrag: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _syncWithLive: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _textMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _theme: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _timeIndicatorsToAdd: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _tooltipService: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateAllIndicators: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateBufferIndicator: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateControlInterval: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updatePlayedIndicator: js.Any = js.native
     
     /* CompleteClass */
@@ -210,22 +210,19 @@ object progressMod {
     @JSImport("playable/dist/src/modules/ui/controls/progress/progress", "default.View")
     @js.native
     def View: Instantiable1[/* config */ IProgressViewConfig, typings.playable.progressViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ IProgressViewConfig, typings.playable.progressViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ IProgressViewConfig, typings.playable.progressViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/controls/progress/progress", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/controls/progress/progress", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("playable/dist/src/modules/ui/controls/progress/progress", "UPDATE_PROGRESS_INTERVAL_DELAY")
@@ -236,99 +233,99 @@ object progressMod {
     extends StObject
        with IProgressControl {
     
-    var _addTimeIndicator: js.Any
+    /* private */ var _addTimeIndicator: js.Any
     
-    var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _changeCurrentTimeOfVideo: js.Any
+    /* private */ var _changeCurrentTimeOfVideo: js.Any
     
-    var _convertPlayedPercentToTime: js.Any
+    /* private */ var _convertPlayedPercentToTime: js.Any
     
-    var _desiredSeekPosition: js.Any
+    /* private */ var _desiredSeekPosition: js.Any
     
-    var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _hidePreview: js.Any
+    /* private */ var _hidePreview: js.Any
     
-    var _hideTooltip: js.Any
+    /* private */ var _hideTooltip: js.Any
     
-    var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: js.Any
     
-    var _initTimeIndicators: js.Any
+    /* private */ var _initTimeIndicators: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _interceptor: js.Any
+    /* private */ var _interceptor: js.Any
     
-    var _isUserDragging: js.Any
+    /* private */ var _isUserDragging: js.Any
     
-    var _liveStateEngine: js.Any
+    /* private */ var _liveStateEngine: js.Any
     
-    var _onChangePlayedPercent: js.Any
+    /* private */ var _onChangePlayedPercent: js.Any
     
-    var _onSyncWithLiveMouseEnter: js.Any
+    /* private */ var _onSyncWithLiveMouseEnter: js.Any
     
-    var _onSyncWithLiveMouseLeave: js.Any
+    /* private */ var _onSyncWithLiveMouseLeave: js.Any
     
-    var _pauseVideoOnDragStart: js.Any
+    /* private */ var _pauseVideoOnDragStart: js.Any
     
-    var _playVideoOnDragEnd: js.Any
+    /* private */ var _playVideoOnDragEnd: js.Any
     
-    var _previewFullSize: js.Any
+    /* private */ var _previewFullSize: js.Any
     
-    var _previewThumbnail: js.Any
+    /* private */ var _previewThumbnail: js.Any
     
-    var _processLiveStateChange: js.Any
+    /* private */ var _processLiveStateChange: js.Any
     
-    var _processStateChange: js.Any
+    /* private */ var _processStateChange: js.Any
     
-    var _reset: js.Any
+    /* private */ var _reset: js.Any
     
-    var _setBuffered: js.Any
+    /* private */ var _setBuffered: js.Any
     
-    var _setPlayed: js.Any
+    /* private */ var _setPlayed: js.Any
     
-    var _shouldHidePreviewOnUpdate: js.Any
+    /* private */ var _shouldHidePreviewOnUpdate: js.Any
     
-    var _shouldPlayAfterDragEnd: js.Any
+    /* private */ var _shouldPlayAfterDragEnd: js.Any
     
-    var _showFullScreenPreview: js.Any
+    /* private */ var _showFullScreenPreview: js.Any
     
-    var _showTooltipAndPreview: js.Any
+    /* private */ var _showTooltipAndPreview: js.Any
     
-    var _startIntervalUpdates: js.Any
+    /* private */ var _startIntervalUpdates: js.Any
     
-    var _startProcessingUserDrag: js.Any
+    /* private */ var _startProcessingUserDrag: js.Any
     
-    var _stopIntervalUpdates: js.Any
+    /* private */ var _stopIntervalUpdates: js.Any
     
-    var _stopProcessingUserDrag: js.Any
+    /* private */ var _stopProcessingUserDrag: js.Any
     
-    var _syncWithLive: js.Any
+    /* private */ var _syncWithLive: js.Any
     
-    var _textMap: js.Any
+    /* private */ var _textMap: js.Any
     
-    var _theme: js.Any
+    /* private */ var _theme: js.Any
     
-    var _timeIndicatorsToAdd: js.Any
+    /* private */ var _timeIndicatorsToAdd: js.Any
     
-    var _tooltipService: js.Any
+    /* private */ var _tooltipService: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
-    var _updateAllIndicators: js.Any
+    /* private */ var _updateAllIndicators: js.Any
     
-    var _updateBufferIndicator: js.Any
+    /* private */ var _updateBufferIndicator: js.Any
     
-    var _updateControlInterval: js.Any
+    /* private */ var _updateControlInterval: js.Any
     
-    var _updatePlayedIndicator: js.Any
+    /* private */ var _updatePlayedIndicator: js.Any
     
     var isHidden: Boolean
     
@@ -336,8 +333,7 @@ object progressMod {
   }
   object ProgressControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _addTimeIndicator: js.Any,
       _bindCallbacks: js.Any,
       _bindEvents: js.Any,
@@ -401,155 +397,105 @@ object progressMod {
       __obj.asInstanceOf[ProgressControl]
     }
     
-    @scala.inline
-    implicit class ProgressControlMutableBuilder[Self <: ProgressControl] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressControl](x: Self) {
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: typings.playable.progressViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.progressViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_addTimeIndicator(value: js.Any): Self = StObject.set(x, "_addTimeIndicator", value.asInstanceOf[js.Any])
+      inline def set_addTimeIndicator(value: js.Any): Self = StObject.set(x, "_addTimeIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_changeCurrentTimeOfVideo(value: js.Any): Self = StObject.set(x, "_changeCurrentTimeOfVideo", value.asInstanceOf[js.Any])
+      inline def set_changeCurrentTimeOfVideo(value: js.Any): Self = StObject.set(x, "_changeCurrentTimeOfVideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_convertPlayedPercentToTime(value: js.Any): Self = StObject.set(x, "_convertPlayedPercentToTime", value.asInstanceOf[js.Any])
+      inline def set_convertPlayedPercentToTime(value: js.Any): Self = StObject.set(x, "_convertPlayedPercentToTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_desiredSeekPosition(value: js.Any): Self = StObject.set(x, "_desiredSeekPosition", value.asInstanceOf[js.Any])
+      inline def set_desiredSeekPosition(value: js.Any): Self = StObject.set(x, "_desiredSeekPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hidePreview(value: js.Any): Self = StObject.set(x, "_hidePreview", value.asInstanceOf[js.Any])
+      inline def set_hidePreview(value: js.Any): Self = StObject.set(x, "_hidePreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hideTooltip(value: js.Any): Self = StObject.set(x, "_hideTooltip", value.asInstanceOf[js.Any])
+      inline def set_hideTooltip(value: js.Any): Self = StObject.set(x, "_hideTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initTimeIndicators(value: js.Any): Self = StObject.set(x, "_initTimeIndicators", value.asInstanceOf[js.Any])
+      inline def set_initTimeIndicators(value: js.Any): Self = StObject.set(x, "_initTimeIndicators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_interceptor(value: js.Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
+      inline def set_interceptor(value: js.Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isUserDragging(value: js.Any): Self = StObject.set(x, "_isUserDragging", value.asInstanceOf[js.Any])
+      inline def set_isUserDragging(value: js.Any): Self = StObject.set(x, "_isUserDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_liveStateEngine(value: js.Any): Self = StObject.set(x, "_liveStateEngine", value.asInstanceOf[js.Any])
+      inline def set_liveStateEngine(value: js.Any): Self = StObject.set(x, "_liveStateEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onChangePlayedPercent(value: js.Any): Self = StObject.set(x, "_onChangePlayedPercent", value.asInstanceOf[js.Any])
+      inline def set_onChangePlayedPercent(value: js.Any): Self = StObject.set(x, "_onChangePlayedPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onSyncWithLiveMouseEnter(value: js.Any): Self = StObject.set(x, "_onSyncWithLiveMouseEnter", value.asInstanceOf[js.Any])
+      inline def set_onSyncWithLiveMouseEnter(value: js.Any): Self = StObject.set(x, "_onSyncWithLiveMouseEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onSyncWithLiveMouseLeave(value: js.Any): Self = StObject.set(x, "_onSyncWithLiveMouseLeave", value.asInstanceOf[js.Any])
+      inline def set_onSyncWithLiveMouseLeave(value: js.Any): Self = StObject.set(x, "_onSyncWithLiveMouseLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_pauseVideoOnDragStart(value: js.Any): Self = StObject.set(x, "_pauseVideoOnDragStart", value.asInstanceOf[js.Any])
+      inline def set_pauseVideoOnDragStart(value: js.Any): Self = StObject.set(x, "_pauseVideoOnDragStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_playVideoOnDragEnd(value: js.Any): Self = StObject.set(x, "_playVideoOnDragEnd", value.asInstanceOf[js.Any])
+      inline def set_playVideoOnDragEnd(value: js.Any): Self = StObject.set(x, "_playVideoOnDragEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_previewFullSize(value: js.Any): Self = StObject.set(x, "_previewFullSize", value.asInstanceOf[js.Any])
+      inline def set_previewFullSize(value: js.Any): Self = StObject.set(x, "_previewFullSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_previewThumbnail(value: js.Any): Self = StObject.set(x, "_previewThumbnail", value.asInstanceOf[js.Any])
+      inline def set_previewThumbnail(value: js.Any): Self = StObject.set(x, "_previewThumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_processLiveStateChange(value: js.Any): Self = StObject.set(x, "_processLiveStateChange", value.asInstanceOf[js.Any])
+      inline def set_processLiveStateChange(value: js.Any): Self = StObject.set(x, "_processLiveStateChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_processStateChange(value: js.Any): Self = StObject.set(x, "_processStateChange", value.asInstanceOf[js.Any])
+      inline def set_processStateChange(value: js.Any): Self = StObject.set(x, "_processStateChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_reset(value: js.Any): Self = StObject.set(x, "_reset", value.asInstanceOf[js.Any])
+      inline def set_reset(value: js.Any): Self = StObject.set(x, "_reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_setBuffered(value: js.Any): Self = StObject.set(x, "_setBuffered", value.asInstanceOf[js.Any])
+      inline def set_setBuffered(value: js.Any): Self = StObject.set(x, "_setBuffered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_setPlayed(value: js.Any): Self = StObject.set(x, "_setPlayed", value.asInstanceOf[js.Any])
+      inline def set_setPlayed(value: js.Any): Self = StObject.set(x, "_setPlayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_shouldHidePreviewOnUpdate(value: js.Any): Self = StObject.set(x, "_shouldHidePreviewOnUpdate", value.asInstanceOf[js.Any])
+      inline def set_shouldHidePreviewOnUpdate(value: js.Any): Self = StObject.set(x, "_shouldHidePreviewOnUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_shouldPlayAfterDragEnd(value: js.Any): Self = StObject.set(x, "_shouldPlayAfterDragEnd", value.asInstanceOf[js.Any])
+      inline def set_shouldPlayAfterDragEnd(value: js.Any): Self = StObject.set(x, "_shouldPlayAfterDragEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_showFullScreenPreview(value: js.Any): Self = StObject.set(x, "_showFullScreenPreview", value.asInstanceOf[js.Any])
+      inline def set_showFullScreenPreview(value: js.Any): Self = StObject.set(x, "_showFullScreenPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_showTooltipAndPreview(value: js.Any): Self = StObject.set(x, "_showTooltipAndPreview", value.asInstanceOf[js.Any])
+      inline def set_showTooltipAndPreview(value: js.Any): Self = StObject.set(x, "_showTooltipAndPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_startIntervalUpdates(value: js.Any): Self = StObject.set(x, "_startIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_startIntervalUpdates(value: js.Any): Self = StObject.set(x, "_startIntervalUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_startProcessingUserDrag(value: js.Any): Self = StObject.set(x, "_startProcessingUserDrag", value.asInstanceOf[js.Any])
+      inline def set_startProcessingUserDrag(value: js.Any): Self = StObject.set(x, "_startProcessingUserDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stopIntervalUpdates(value: js.Any): Self = StObject.set(x, "_stopIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_stopIntervalUpdates(value: js.Any): Self = StObject.set(x, "_stopIntervalUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stopProcessingUserDrag(value: js.Any): Self = StObject.set(x, "_stopProcessingUserDrag", value.asInstanceOf[js.Any])
+      inline def set_stopProcessingUserDrag(value: js.Any): Self = StObject.set(x, "_stopProcessingUserDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_syncWithLive(value: js.Any): Self = StObject.set(x, "_syncWithLive", value.asInstanceOf[js.Any])
+      inline def set_syncWithLive(value: js.Any): Self = StObject.set(x, "_syncWithLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
+      inline def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_timeIndicatorsToAdd(value: js.Any): Self = StObject.set(x, "_timeIndicatorsToAdd", value.asInstanceOf[js.Any])
+      inline def set_timeIndicatorsToAdd(value: js.Any): Self = StObject.set(x, "_timeIndicatorsToAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_tooltipService(value: js.Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
+      inline def set_tooltipService(value: js.Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateAllIndicators(value: js.Any): Self = StObject.set(x, "_updateAllIndicators", value.asInstanceOf[js.Any])
+      inline def set_updateAllIndicators(value: js.Any): Self = StObject.set(x, "_updateAllIndicators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateBufferIndicator(value: js.Any): Self = StObject.set(x, "_updateBufferIndicator", value.asInstanceOf[js.Any])
+      inline def set_updateBufferIndicator(value: js.Any): Self = StObject.set(x, "_updateBufferIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateControlInterval(value: js.Any): Self = StObject.set(x, "_updateControlInterval", value.asInstanceOf[js.Any])
+      inline def set_updateControlInterval(value: js.Any): Self = StObject.set(x, "_updateControlInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updatePlayedIndicator(value: js.Any): Self = StObject.set(x, "_updatePlayedIndicator", value.asInstanceOf[js.Any])
+      inline def set_updatePlayedIndicator(value: js.Any): Self = StObject.set(x, "_updatePlayedIndicator", value.asInstanceOf[js.Any])
     }
   }
 }

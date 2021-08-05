@@ -49,33 +49,28 @@ object coreMod {
     @JSImport("app-builder-lib/out/core", "Platform.LINUX")
     @js.native
     def LINUX: Platform = js.native
-    @scala.inline
-    def LINUX_=(x: Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
+    inline def LINUX_=(x: Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib/out/core", "Platform.MAC")
     @js.native
     def MAC: Platform = js.native
-    @scala.inline
-    def MAC_=(x: Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
+    inline def MAC_=(x: Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib/out/core", "Platform.WINDOWS")
     @js.native
     def WINDOWS: Platform = js.native
-    @scala.inline
-    def WINDOWS_=(x: Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
+    inline def WINDOWS_=(x: Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def current(): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[Platform]
+    inline def current(): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[Platform]
     
-    @scala.inline
-    def fromString(name: String): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[Platform]
+    inline def fromString(name: String): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[Platform]
   }
   
   @JSImport("app-builder-lib/out/core", "Target")
   @js.native
   abstract class Target protected () extends StObject {
-    protected def this(name: String) = this()
-    protected def this(name: String, isAsyncSupported: Boolean) = this()
+    /* protected */ def this(name: String) = this()
+    /* protected */ def this(name: String, isAsyncSupported: Boolean) = this()
     
     def build(appOutDir: String, arch: Arch): js.Promise[js.Any] = js.native
     
@@ -104,26 +99,20 @@ object coreMod {
   }
   object BeforeBuildContext {
     
-    @scala.inline
-    def apply(appDir: String, arch: String, electronVersion: String, platform: Platform): BeforeBuildContext = {
+    inline def apply(appDir: String, arch: String, electronVersion: String, platform: Platform): BeforeBuildContext = {
       val __obj = js.Dynamic.literal(appDir = appDir.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any], electronVersion = electronVersion.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeBuildContext]
     }
     
-    @scala.inline
-    implicit class BeforeBuildContextMutableBuilder[Self <: BeforeBuildContext] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeBuildContext](x: Self) {
       
-      @scala.inline
-      def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
+      inline def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectronVersion(value: String): Self = StObject.set(x, "electronVersion", value.asInstanceOf[js.Any])
+      inline def setElectronVersion(value: String): Self = StObject.set(x, "electronVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,14 +124,11 @@ object coreMod {
   trait CompressionLevel extends StObject
   object CompressionLevel {
     
-    @scala.inline
-    def maximum: typings.appBuilderLib.appBuilderLibStrings.maximum = "maximum".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.maximum]
+    inline def maximum: typings.appBuilderLib.appBuilderLibStrings.maximum = "maximum".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.maximum]
     
-    @scala.inline
-    def normal: typings.appBuilderLib.appBuilderLibStrings.normal = "normal".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.normal]
+    inline def normal: typings.appBuilderLib.appBuilderLibStrings.normal = "normal".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.normal]
     
-    @scala.inline
-    def store: typings.appBuilderLib.appBuilderLibStrings.store = "store".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.store]
+    inline def store: typings.appBuilderLib.appBuilderLibStrings.store = "store".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.store]
   }
   
   type Publish = AllPublishOptions | SnapStoreOptions | (js.Array[AllPublishOptions | SnapStoreOptions]) | Null
@@ -159,32 +145,24 @@ object coreMod {
   }
   object SourceRepositoryInfo {
     
-    @scala.inline
-    def apply(project: String, user: String): SourceRepositoryInfo = {
+    inline def apply(project: String, user: String): SourceRepositoryInfo = {
       val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceRepositoryInfo]
     }
     
-    @scala.inline
-    implicit class SourceRepositoryInfoMutableBuilder[Self <: SourceRepositoryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SourceRepositoryInfo](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,26 +182,20 @@ object coreMod {
   }
   object TargetConfiguration {
     
-    @scala.inline
-    def apply(target: String): TargetConfiguration = {
+    inline def apply(target: String): TargetConfiguration = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[TargetConfiguration]
     }
     
-    @scala.inline
-    implicit class TargetConfigurationMutableBuilder[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TargetConfiguration](x: Self) {
       
-      @scala.inline
-      def setArch(value: js.Array[ArchType] | ArchType): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: js.Array[ArchType] | ArchType): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
+      inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
       
-      @scala.inline
-      def setArchVarargs(value: ArchType*): Self = StObject.set(x, "arch", js.Array(value :_*))
+      inline def setArchVarargs(value: ArchType*): Self = StObject.set(x, "arch", js.Array(value :_*))
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,35 +210,26 @@ object coreMod {
   }
   object TargetSpecificOptions {
     
-    @scala.inline
-    def apply(): TargetSpecificOptions = {
+    inline def apply(): TargetSpecificOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TargetSpecificOptions]
     }
     
-    @scala.inline
-    implicit class TargetSpecificOptionsMutableBuilder[Self <: TargetSpecificOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TargetSpecificOptions](x: Self) {
       
-      @scala.inline
-      def setArtifactName(value: String): Self = StObject.set(x, "artifactName", value.asInstanceOf[js.Any])
+      inline def setArtifactName(value: String): Self = StObject.set(x, "artifactName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtifactNameNull: Self = StObject.set(x, "artifactName", null)
+      inline def setArtifactNameNull: Self = StObject.set(x, "artifactName", null)
       
-      @scala.inline
-      def setArtifactNameUndefined: Self = StObject.set(x, "artifactName", js.undefined)
+      inline def setArtifactNameUndefined: Self = StObject.set(x, "artifactName", js.undefined)
       
-      @scala.inline
-      def setPublish(value: Publish): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+      inline def setPublish(value: Publish): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishNull: Self = StObject.set(x, "publish", null)
+      inline def setPublishNull: Self = StObject.set(x, "publish", null)
       
-      @scala.inline
-      def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
+      inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
       
-      @scala.inline
-      def setPublishVarargs(value: (AllPublishOptions | SnapStoreOptions)*): Self = StObject.set(x, "publish", js.Array(value :_*))
+      inline def setPublishVarargs(value: (AllPublishOptions | SnapStoreOptions)*): Self = StObject.set(x, "publish", js.Array(value :_*))
     }
   }
 }

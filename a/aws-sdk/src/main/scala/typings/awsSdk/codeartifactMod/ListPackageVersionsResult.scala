@@ -39,52 +39,37 @@ trait ListPackageVersionsResult extends StObject {
 }
 object ListPackageVersionsResult {
   
-  @scala.inline
-  def apply(): ListPackageVersionsResult = {
+  inline def apply(): ListPackageVersionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPackageVersionsResult]
   }
   
-  @scala.inline
-  implicit class ListPackageVersionsResultMutableBuilder[Self <: ListPackageVersionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListPackageVersionsResult](x: Self) {
     
-    @scala.inline
-    def setDefaultDisplayVersion(value: PackageVersion): Self = StObject.set(x, "defaultDisplayVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultDisplayVersion(value: PackageVersion): Self = StObject.set(x, "defaultDisplayVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDisplayVersionUndefined: Self = StObject.set(x, "defaultDisplayVersion", js.undefined)
+    inline def setDefaultDisplayVersionUndefined: Self = StObject.set(x, "defaultDisplayVersion", js.undefined)
     
-    @scala.inline
-    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVersions(value: PackageVersionSummaryList): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: PackageVersionSummaryList): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: PackageVersionSummary*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: PackageVersionSummary*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
-    @scala.inline
-    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

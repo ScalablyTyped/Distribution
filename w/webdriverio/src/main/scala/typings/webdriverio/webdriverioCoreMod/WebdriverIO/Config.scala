@@ -20,25 +20,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Config {
   
-  @scala.inline
-  def apply(): Config = {
+  inline def apply(): Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setRunnerEnv(value: Record[String, js.Any]): Self = StObject.set(x, "runnerEnv", value.asInstanceOf[js.Any])
+    inline def setRunnerEnv(value: Record[String, js.Any]): Self = StObject.set(x, "runnerEnv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunnerEnvUndefined: Self = StObject.set(x, "runnerEnv", js.undefined)
+    inline def setRunnerEnvUndefined: Self = StObject.set(x, "runnerEnv", js.undefined)
     
-    @scala.inline
-    def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

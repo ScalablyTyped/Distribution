@@ -16,23 +16,18 @@ trait ParenthesesPlain
 }
 object ParenthesesPlain {
   
-  @scala.inline
-  def apply(children: js.Array[CssNodePlain]): ParenthesesPlain = {
+  inline def apply(children: js.Array[CssNodePlain]): ParenthesesPlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Parentheses")
     __obj.asInstanceOf[ParenthesesPlain]
   }
   
-  @scala.inline
-  implicit class ParenthesesPlainMutableBuilder[Self <: ParenthesesPlain] (val x: Self) extends AnyVal {
+  extension [Self <: ParenthesesPlain](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Parentheses): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Parentheses): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

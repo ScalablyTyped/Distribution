@@ -75,6 +75,5 @@ object Timer {
     * @see https://docs.scriptable.app/timer/#schedule
     */
   /* static member */
-  @scala.inline
-  def schedule(timeInterval: Double, repeats: Boolean, callback: js.Function0[Unit]): typings.scriptableIos.Timer = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(timeInterval.asInstanceOf[js.Any], repeats.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.Timer]
+  inline def schedule(timeInterval: Double, repeats: Boolean, callback: js.Function0[Unit]): typings.scriptableIos.Timer = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(timeInterval.asInstanceOf[js.Any], repeats.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.scriptableIos.Timer]
 }

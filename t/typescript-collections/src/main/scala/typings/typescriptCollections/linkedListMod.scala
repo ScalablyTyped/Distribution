@@ -28,23 +28,18 @@ object linkedListMod {
   }
   object ILinkedListNode {
     
-    @scala.inline
-    def apply[T](element: T): ILinkedListNode[T] = {
+    inline def apply[T](element: T): ILinkedListNode[T] = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], next = null)
       __obj.asInstanceOf[ILinkedListNode[T]]
     }
     
-    @scala.inline
-    implicit class ILinkedListNodeMutableBuilder[Self <: ILinkedListNode[?], T] (val x: Self & ILinkedListNode[T]) extends AnyVal {
+    extension [Self <: ILinkedListNode[?], T](x: Self & ILinkedListNode[T]) {
       
-      @scala.inline
-      def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: ILinkedListNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: ILinkedListNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextNull: Self = StObject.set(x, "next", null)
+      inline def setNextNull: Self = StObject.set(x, "next", null)
     }
   }
   
@@ -182,14 +177,14 @@ object linkedListMod {
       * @type {Object}
       * @private
       */
-    var lastNode: js.Any = js.native
+    /* private */ var lastNode: js.Any = js.native
     
     /**
       * Number of elements in the list
       * @type {number}
       * @private
       */
-    var nElements: js.Any = js.native
+    /* private */ var nElements: js.Any = js.native
     
     /**
       * @private

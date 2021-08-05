@@ -24,8 +24,7 @@ trait SerialPinTypes extends StObject {
 }
 object SerialPinTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RES_RX0: SERIAL_PIN_TYPE,
     RES_RX1: SERIAL_PIN_TYPE,
     RES_RX2: SERIAL_PIN_TYPE,
@@ -39,31 +38,22 @@ object SerialPinTypes {
     __obj.asInstanceOf[SerialPinTypes]
   }
   
-  @scala.inline
-  implicit class SerialPinTypesMutableBuilder[Self <: SerialPinTypes] (val x: Self) extends AnyVal {
+  extension [Self <: SerialPinTypes](x: Self) {
     
-    @scala.inline
-    def setRES_RX0(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX0", value.asInstanceOf[js.Any])
+    inline def setRES_RX0(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRES_RX1(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX1", value.asInstanceOf[js.Any])
+    inline def setRES_RX1(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRES_RX2(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX2", value.asInstanceOf[js.Any])
+    inline def setRES_RX2(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRES_RX3(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX3", value.asInstanceOf[js.Any])
+    inline def setRES_RX3(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRES_TX0(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX0", value.asInstanceOf[js.Any])
+    inline def setRES_TX0(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRES_TX1(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX1", value.asInstanceOf[js.Any])
+    inline def setRES_TX1(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRES_TX2(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX2", value.asInstanceOf[js.Any])
+    inline def setRES_TX2(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRES_TX3(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX3", value.asInstanceOf[js.Any])
+    inline def setRES_TX3(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX3", value.asInstanceOf[js.Any])
   }
 }

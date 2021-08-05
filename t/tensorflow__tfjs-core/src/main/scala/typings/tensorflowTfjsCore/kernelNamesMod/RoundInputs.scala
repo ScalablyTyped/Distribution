@@ -11,19 +11,15 @@ trait RoundInputs extends StObject {
 }
 object RoundInputs {
   
-  @scala.inline
-  def apply(): RoundInputs = {
+  inline def apply(): RoundInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoundInputs]
   }
   
-  @scala.inline
-  implicit class RoundInputsMutableBuilder[Self <: RoundInputs] (val x: Self) extends AnyVal {
+  extension [Self <: RoundInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

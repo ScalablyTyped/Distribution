@@ -17,25 +17,19 @@ trait CustomPosition extends StObject {
 }
 object CustomPosition {
   
-  @scala.inline
-  def apply(bottom: Double | auto, left: Double | auto, right: Double | auto, top: Double | auto): CustomPosition = {
+  inline def apply(bottom: Double | auto, left: Double | auto, right: Double | auto, top: Double | auto): CustomPosition = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPosition]
   }
   
-  @scala.inline
-  implicit class CustomPositionMutableBuilder[Self <: CustomPosition] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPosition](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double | auto): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double | auto): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double | auto): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double | auto): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double | auto): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double | auto): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double | auto): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double | auto): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

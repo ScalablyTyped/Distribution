@@ -25,40 +25,29 @@ trait ClientPattern
 }
 object ClientPattern {
   
-  @scala.inline
-  def apply(topic: String): ClientPattern = {
+  inline def apply(topic: String): ClientPattern = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientPattern]
   }
   
-  @scala.inline
-  implicit class ClientPatternMutableBuilder[Self <: ClientPattern] (val x: Self) extends AnyVal {
+  extension [Self <: ClientPattern](x: Self) {
     
-    @scala.inline
-    def setExpectedMessages$(value: Double): Self = StObject.set(x, "expectedMessages$", value.asInstanceOf[js.Any])
+    inline def setExpectedMessages$(value: Double): Self = StObject.set(x, "expectedMessages$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedMessages$Undefined: Self = StObject.set(x, "expectedMessages$", js.undefined)
+    inline def setExpectedMessages$Undefined: Self = StObject.set(x, "expectedMessages$", js.undefined)
     
-    @scala.inline
-    def setMaxMessages$(value: Double): Self = StObject.set(x, "maxMessages$", value.asInstanceOf[js.Any])
+    inline def setMaxMessages$(value: Double): Self = StObject.set(x, "maxMessages$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessages$Undefined: Self = StObject.set(x, "maxMessages$", js.undefined)
+    inline def setMaxMessages$Undefined: Self = StObject.set(x, "maxMessages$", js.undefined)
     
-    @scala.inline
-    def setPubsub$(value: Boolean): Self = StObject.set(x, "pubsub$", value.asInstanceOf[js.Any])
+    inline def setPubsub$(value: Boolean): Self = StObject.set(x, "pubsub$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsub$Undefined: Self = StObject.set(x, "pubsub$", js.undefined)
+    inline def setPubsub$Undefined: Self = StObject.set(x, "pubsub$", js.undefined)
     
-    @scala.inline
-    def setTimeout$(value: Double): Self = StObject.set(x, "timeout$", value.asInstanceOf[js.Any])
+    inline def setTimeout$(value: Double): Self = StObject.set(x, "timeout$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout$Undefined: Self = StObject.set(x, "timeout$", js.undefined)
+    inline def setTimeout$Undefined: Self = StObject.set(x, "timeout$", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DashboardSourceEntity extends StObject {
 }
 object DashboardSourceEntity {
   
-  @scala.inline
-  def apply(): DashboardSourceEntity = {
+  inline def apply(): DashboardSourceEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashboardSourceEntity]
   }
   
-  @scala.inline
-  implicit class DashboardSourceEntityMutableBuilder[Self <: DashboardSourceEntity] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardSourceEntity](x: Self) {
     
-    @scala.inline
-    def setSourceTemplate(value: DashboardSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
+    inline def setSourceTemplate(value: DashboardSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
+    inline def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
   }
 }

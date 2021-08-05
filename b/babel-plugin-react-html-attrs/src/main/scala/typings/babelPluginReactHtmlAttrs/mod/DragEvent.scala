@@ -14,8 +14,7 @@ trait DragEvent[T]
 }
 object DragEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     altKey: Boolean,
     bubbles: Boolean,
     button: Double,
@@ -55,10 +54,8 @@ object DragEvent {
     __obj.asInstanceOf[DragEvent[T]]
   }
   
-  @scala.inline
-  implicit class DragEventMutableBuilder[Self <: DragEvent[?], T] (val x: Self & DragEvent[T]) extends AnyVal {
+  extension [Self <: DragEvent[?], T](x: Self & DragEvent[T]) {
     
-    @scala.inline
-    def setDataTransfer(value: DataTransfer): Self = StObject.set(x, "dataTransfer", value.asInstanceOf[js.Any])
+    inline def setDataTransfer(value: DataTransfer): Self = StObject.set(x, "dataTransfer", value.asInstanceOf[js.Any])
   }
 }

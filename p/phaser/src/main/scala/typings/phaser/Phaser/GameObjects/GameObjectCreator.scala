@@ -63,7 +63,7 @@ trait GameObjectCreator extends StObject {
   /**
     * A reference to the Scene Display List.
     */
-  var displayList: DisplayList = js.native
+  /* protected */ var displayList: DisplayList = js.native
   
   /**
     * Creates a new Dynamic Bitmap Text Game Object and returns it.
@@ -157,7 +157,7 @@ trait GameObjectCreator extends StObject {
   /**
     * The Scene to which this Game Object Creator belongs.
     */
-  var scene: Scene = js.native
+  /* protected */ var scene: Scene = js.native
   
   /**
     * Creates a new Shader Game Object and returns it.
@@ -185,7 +185,7 @@ trait GameObjectCreator extends StObject {
   /**
     * A reference to the Scene.Systems.
     */
-  var systems: Systems = js.native
+  /* protected */ var systems: Systems = js.native
   
   /**
     * Creates a new Text Game Object and returns it.
@@ -229,7 +229,7 @@ trait GameObjectCreator extends StObject {
   /**
     * A reference to the Scene Update List.
     */
-  var updateList: UpdateList = js.native
+  /* protected */ var updateList: UpdateList = js.native
   
   /**
     * Creates a new Video Game Object and returns it.

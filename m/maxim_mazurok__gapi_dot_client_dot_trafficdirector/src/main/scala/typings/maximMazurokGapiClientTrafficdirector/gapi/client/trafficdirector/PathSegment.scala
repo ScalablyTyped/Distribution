@@ -11,19 +11,15 @@ trait PathSegment extends StObject {
 }
 object PathSegment {
   
-  @scala.inline
-  def apply(): PathSegment = {
+  inline def apply(): PathSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathSegment]
   }
   
-  @scala.inline
-  implicit class PathSegmentMutableBuilder[Self <: PathSegment] (val x: Self) extends AnyVal {
+  extension [Self <: PathSegment](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

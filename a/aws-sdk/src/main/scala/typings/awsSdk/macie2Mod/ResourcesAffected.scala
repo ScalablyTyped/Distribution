@@ -18,25 +18,19 @@ trait ResourcesAffected extends StObject {
 }
 object ResourcesAffected {
   
-  @scala.inline
-  def apply(): ResourcesAffected = {
+  inline def apply(): ResourcesAffected = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcesAffected]
   }
   
-  @scala.inline
-  implicit class ResourcesAffectedMutableBuilder[Self <: ResourcesAffected] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcesAffected](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Object(value: S3Object): Self = StObject.set(x, "s3Object", value.asInstanceOf[js.Any])
+    inline def setS3Object(value: S3Object): Self = StObject.set(x, "s3Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ObjectUndefined: Self = StObject.set(x, "s3Object", js.undefined)
+    inline def setS3ObjectUndefined: Self = StObject.set(x, "s3Object", js.undefined)
   }
 }

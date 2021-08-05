@@ -20,12 +20,9 @@ object Plane {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromPointNormal(point: Cartesian3, normal: Cartesian3): Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPointNormal")(point.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Plane]
-  @scala.inline
-  def fromPointNormal(point: Cartesian3, normal: Cartesian3, result: Plane): Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPointNormal")(point.asInstanceOf[js.Any], normal.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  inline def fromPointNormal(point: Cartesian3, normal: Cartesian3): Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPointNormal")(point.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  inline def fromPointNormal(point: Cartesian3, normal: Cartesian3, result: Plane): Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPointNormal")(point.asInstanceOf[js.Any], normal.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Plane]
   
   /* static member */
-  @scala.inline
-  def getPointDistance(plane: Plane, point: Cartesian3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointDistance")(plane.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPointDistance(plane: Plane, point: Cartesian3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointDistance")(plane.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

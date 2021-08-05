@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuyTradeStatus extends StObject
 object BuyTradeStatus {
   
-  @scala.inline
-  def APPROVAL_PENDING: typings.invityApi.invityApiStrings.APPROVAL_PENDING = "APPROVAL_PENDING".asInstanceOf[typings.invityApi.invityApiStrings.APPROVAL_PENDING]
+  inline def APPROVAL_PENDING: typings.invityApi.invityApiStrings.APPROVAL_PENDING = "APPROVAL_PENDING".asInstanceOf[typings.invityApi.invityApiStrings.APPROVAL_PENDING]
   
-  @scala.inline
-  def BLOCKED: typings.invityApi.invityApiStrings.BLOCKED = "BLOCKED".asInstanceOf[typings.invityApi.invityApiStrings.BLOCKED]
+  inline def BLOCKED: typings.invityApi.invityApiStrings.BLOCKED = "BLOCKED".asInstanceOf[typings.invityApi.invityApiStrings.BLOCKED]
   
-  @scala.inline
-  def ERROR: typings.invityApi.invityApiStrings.ERROR = "ERROR".asInstanceOf[typings.invityApi.invityApiStrings.ERROR]
+  inline def ERROR: typings.invityApi.invityApiStrings.ERROR = "ERROR".asInstanceOf[typings.invityApi.invityApiStrings.ERROR]
   
-  @scala.inline
-  def LOGIN_REQUEST: typings.invityApi.invityApiStrings.LOGIN_REQUEST = "LOGIN_REQUEST".asInstanceOf[typings.invityApi.invityApiStrings.LOGIN_REQUEST]
+  inline def LOGIN_REQUEST: typings.invityApi.invityApiStrings.LOGIN_REQUEST = "LOGIN_REQUEST".asInstanceOf[typings.invityApi.invityApiStrings.LOGIN_REQUEST]
   
-  @scala.inline
-  def REQUESTING: typings.invityApi.invityApiStrings.REQUESTING = "REQUESTING".asInstanceOf[typings.invityApi.invityApiStrings.REQUESTING]
+  inline def REQUESTING: typings.invityApi.invityApiStrings.REQUESTING = "REQUESTING".asInstanceOf[typings.invityApi.invityApiStrings.REQUESTING]
   
-  @scala.inline
-  def SUBMITTED: typings.invityApi.invityApiStrings.SUBMITTED = "SUBMITTED".asInstanceOf[typings.invityApi.invityApiStrings.SUBMITTED]
+  inline def SUBMITTED: typings.invityApi.invityApiStrings.SUBMITTED = "SUBMITTED".asInstanceOf[typings.invityApi.invityApiStrings.SUBMITTED]
   
-  @scala.inline
-  def SUCCESS: typings.invityApi.invityApiStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.invityApi.invityApiStrings.SUCCESS]
+  inline def SUCCESS: typings.invityApi.invityApiStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.invityApi.invityApiStrings.SUCCESS]
 }

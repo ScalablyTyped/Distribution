@@ -13,16 +13,13 @@ trait StartMLEvaluationTaskRunRequest extends StObject {
 }
 object StartMLEvaluationTaskRunRequest {
   
-  @scala.inline
-  def apply(TransformId: HashString): StartMLEvaluationTaskRunRequest = {
+  inline def apply(TransformId: HashString): StartMLEvaluationTaskRunRequest = {
     val __obj = js.Dynamic.literal(TransformId = TransformId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMLEvaluationTaskRunRequest]
   }
   
-  @scala.inline
-  implicit class StartMLEvaluationTaskRunRequestMutableBuilder[Self <: StartMLEvaluationTaskRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartMLEvaluationTaskRunRequest](x: Self) {
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }
 }

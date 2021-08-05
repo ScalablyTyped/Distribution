@@ -16,8 +16,7 @@ trait ErrorElement
 }
 object ErrorElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     errorCode: String,
@@ -29,16 +28,12 @@ object ErrorElement {
     __obj.asInstanceOf[ErrorElement]
   }
   
-  @scala.inline
-  implicit class ErrorElementMutableBuilder[Self <: ErrorElement] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorElement](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureRef(value: ItemDefinition): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
+    inline def setStructureRef(value: ItemDefinition): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
   }
 }

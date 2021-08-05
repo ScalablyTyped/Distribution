@@ -18,20 +18,16 @@ object typesRulesConfigurationTypeMod {
   }
   object RulesConfigurationType {
     
-    @scala.inline
-    def apply(Rules: js.Array[MappingRule] | Iterable[MappingRule]): RulesConfigurationType = {
+    inline def apply(Rules: js.Array[MappingRule] | Iterable[MappingRule]): RulesConfigurationType = {
       val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[RulesConfigurationType]
     }
     
-    @scala.inline
-    implicit class RulesConfigurationTypeMutableBuilder[Self <: RulesConfigurationType] (val x: Self) extends AnyVal {
+    extension [Self <: RulesConfigurationType](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[MappingRule] | Iterable[MappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[MappingRule] | Iterable[MappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: MappingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: MappingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
   
@@ -47,20 +43,16 @@ object typesRulesConfigurationTypeMod {
   }
   object UnmarshalledRulesConfigurationType {
     
-    @scala.inline
-    def apply(Rules: js.Array[UnmarshalledMappingRule]): UnmarshalledRulesConfigurationType = {
+    inline def apply(Rules: js.Array[UnmarshalledMappingRule]): UnmarshalledRulesConfigurationType = {
       val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledRulesConfigurationType]
     }
     
-    @scala.inline
-    implicit class UnmarshalledRulesConfigurationTypeMutableBuilder[Self <: UnmarshalledRulesConfigurationType] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledRulesConfigurationType](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[UnmarshalledMappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[UnmarshalledMappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: UnmarshalledMappingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledMappingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
 }

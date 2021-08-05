@@ -35,19 +35,15 @@ trait SchemaGoogleCloudMlV1AutoScaling extends StObject {
 }
 object SchemaGoogleCloudMlV1AutoScaling {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1AutoScaling = {
+  inline def apply(): SchemaGoogleCloudMlV1AutoScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1AutoScaling]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1AutoScalingMutableBuilder[Self <: SchemaGoogleCloudMlV1AutoScaling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1AutoScaling](x: Self) {
     
-    @scala.inline
-    def setMinNodes(value: Double): Self = StObject.set(x, "minNodes", value.asInstanceOf[js.Any])
+    inline def setMinNodes(value: Double): Self = StObject.set(x, "minNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNodesUndefined: Self = StObject.set(x, "minNodes", js.undefined)
+    inline def setMinNodesUndefined: Self = StObject.set(x, "minNodes", js.undefined)
   }
 }

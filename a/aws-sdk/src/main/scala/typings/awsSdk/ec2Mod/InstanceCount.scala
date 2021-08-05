@@ -18,25 +18,19 @@ trait InstanceCount extends StObject {
 }
 object InstanceCount {
   
-  @scala.inline
-  def apply(): InstanceCount = {
+  inline def apply(): InstanceCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceCount]
   }
   
-  @scala.inline
-  implicit class InstanceCountMutableBuilder[Self <: InstanceCount] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceCount](x: Self) {
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setState(value: ListingState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ListingState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

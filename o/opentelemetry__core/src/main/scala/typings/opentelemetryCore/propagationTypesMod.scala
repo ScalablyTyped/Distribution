@@ -22,29 +22,22 @@ object propagationTypesMod {
   }
   object CompositePropagatorConfig {
     
-    @scala.inline
-    def apply(): CompositePropagatorConfig = {
+    inline def apply(): CompositePropagatorConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompositePropagatorConfig]
     }
     
-    @scala.inline
-    implicit class CompositePropagatorConfigMutableBuilder[Self <: CompositePropagatorConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CompositePropagatorConfig](x: Self) {
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setPropagators(value: js.Array[TextMapPropagator]): Self = StObject.set(x, "propagators", value.asInstanceOf[js.Any])
+      inline def setPropagators(value: js.Array[TextMapPropagator]): Self = StObject.set(x, "propagators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropagatorsUndefined: Self = StObject.set(x, "propagators", js.undefined)
+      inline def setPropagatorsUndefined: Self = StObject.set(x, "propagators", js.undefined)
       
-      @scala.inline
-      def setPropagatorsVarargs(value: TextMapPropagator*): Self = StObject.set(x, "propagators", js.Array(value :_*))
+      inline def setPropagatorsVarargs(value: TextMapPropagator*): Self = StObject.set(x, "propagators", js.Array(value :_*))
     }
   }
 }

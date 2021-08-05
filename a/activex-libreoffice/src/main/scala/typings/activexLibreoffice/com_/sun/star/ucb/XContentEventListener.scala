@@ -25,8 +25,7 @@ trait XContentEventListener
 }
 object XContentEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     contentEvent: ContentEvent => Unit,
     disposing: EventObject => Unit,
@@ -37,10 +36,8 @@ object XContentEventListener {
     __obj.asInstanceOf[XContentEventListener]
   }
   
-  @scala.inline
-  implicit class XContentEventListenerMutableBuilder[Self <: XContentEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XContentEventListener](x: Self) {
     
-    @scala.inline
-    def setContentEvent(value: ContentEvent => Unit): Self = StObject.set(x, "contentEvent", js.Any.fromFunction1(value))
+    inline def setContentEvent(value: ContentEvent => Unit): Self = StObject.set(x, "contentEvent", js.Any.fromFunction1(value))
   }
 }

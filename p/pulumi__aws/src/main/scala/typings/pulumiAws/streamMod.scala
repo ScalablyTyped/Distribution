@@ -103,21 +103,16 @@ object streamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StreamState): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stream]
+    inline def get(name: String, id: Input[ID]): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stream]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stream]
+    inline def get(name: String, id: Input[ID], state: StreamState): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stream]
+    inline def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stream]
     
     /**
       * Returns true if the given object is an instance of Stream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean]
   }
   
   trait StreamArgs extends StObject {
@@ -170,68 +165,48 @@ object streamMod {
   }
   object StreamArgs {
     
-    @scala.inline
-    def apply(shardCount: Input[Double]): StreamArgs = {
+    inline def apply(shardCount: Input[Double]): StreamArgs = {
       val __obj = js.Dynamic.literal(shardCount = shardCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamArgs]
     }
     
-    @scala.inline
-    implicit class StreamArgsMutableBuilder[Self <: StreamArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StreamArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEncryptionType(value: Input[String]): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
+      inline def setEncryptionType(value: Input[String]): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
+      inline def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
       
-      @scala.inline
-      def setEnforceConsumerDeletion(value: Input[Boolean]): Self = StObject.set(x, "enforceConsumerDeletion", value.asInstanceOf[js.Any])
+      inline def setEnforceConsumerDeletion(value: Input[Boolean]): Self = StObject.set(x, "enforceConsumerDeletion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceConsumerDeletionUndefined: Self = StObject.set(x, "enforceConsumerDeletion", js.undefined)
+      inline def setEnforceConsumerDeletionUndefined: Self = StObject.set(x, "enforceConsumerDeletion", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRetentionPeriod(value: Input[Double]): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+      inline def setRetentionPeriod(value: Input[Double]): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+      inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
       
-      @scala.inline
-      def setShardCount(value: Input[Double]): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
+      inline def setShardCount(value: Input[Double]): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetrics(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "shardLevelMetrics", value.asInstanceOf[js.Any])
+      inline def setShardLevelMetrics(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "shardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetricsUndefined: Self = StObject.set(x, "shardLevelMetrics", js.undefined)
+      inline def setShardLevelMetricsUndefined: Self = StObject.set(x, "shardLevelMetrics", js.undefined)
       
-      @scala.inline
-      def setShardLevelMetricsVarargs(value: Input[String]*): Self = StObject.set(x, "shardLevelMetrics", js.Array(value :_*))
+      inline def setShardLevelMetricsVarargs(value: Input[String]*): Self = StObject.set(x, "shardLevelMetrics", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -285,71 +260,50 @@ object streamMod {
   }
   object StreamState {
     
-    @scala.inline
-    def apply(): StreamState = {
+    inline def apply(): StreamState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StreamState]
     }
     
-    @scala.inline
-    implicit class StreamStateMutableBuilder[Self <: StreamState] (val x: Self) extends AnyVal {
+    extension [Self <: StreamState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEncryptionType(value: Input[String]): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
+      inline def setEncryptionType(value: Input[String]): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
+      inline def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
       
-      @scala.inline
-      def setEnforceConsumerDeletion(value: Input[Boolean]): Self = StObject.set(x, "enforceConsumerDeletion", value.asInstanceOf[js.Any])
+      inline def setEnforceConsumerDeletion(value: Input[Boolean]): Self = StObject.set(x, "enforceConsumerDeletion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceConsumerDeletionUndefined: Self = StObject.set(x, "enforceConsumerDeletion", js.undefined)
+      inline def setEnforceConsumerDeletionUndefined: Self = StObject.set(x, "enforceConsumerDeletion", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRetentionPeriod(value: Input[Double]): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+      inline def setRetentionPeriod(value: Input[Double]): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+      inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
       
-      @scala.inline
-      def setShardCount(value: Input[Double]): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
+      inline def setShardCount(value: Input[Double]): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardCountUndefined: Self = StObject.set(x, "shardCount", js.undefined)
+      inline def setShardCountUndefined: Self = StObject.set(x, "shardCount", js.undefined)
       
-      @scala.inline
-      def setShardLevelMetrics(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "shardLevelMetrics", value.asInstanceOf[js.Any])
+      inline def setShardLevelMetrics(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "shardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetricsUndefined: Self = StObject.set(x, "shardLevelMetrics", js.undefined)
+      inline def setShardLevelMetricsUndefined: Self = StObject.set(x, "shardLevelMetrics", js.undefined)
       
-      @scala.inline
-      def setShardLevelMetricsVarargs(value: Input[String]*): Self = StObject.set(x, "shardLevelMetrics", js.Array(value :_*))
+      inline def setShardLevelMetricsVarargs(value: Input[String]*): Self = StObject.set(x, "shardLevelMetrics", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

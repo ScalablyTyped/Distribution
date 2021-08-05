@@ -21,20 +21,16 @@ object mod {
   }
   object Types {
     
-    @scala.inline
-    def apply(Authentication: Authentication, StrategyOptions: Token): Types = {
+    inline def apply(Authentication: Authentication, StrategyOptions: Token): Types = {
       val __obj = js.Dynamic.literal(Authentication = Authentication.asInstanceOf[js.Any], StrategyOptions = StrategyOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Types]
     }
     
-    @scala.inline
-    implicit class TypesMutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
+    extension [Self <: Types](x: Self) {
       
-      @scala.inline
-      def setAuthentication(value: Authentication): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
+      inline def setAuthentication(value: Authentication): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyOptions(value: Token): Self = StObject.set(x, "StrategyOptions", value.asInstanceOf[js.Any])
+      inline def setStrategyOptions(value: Token): Self = StObject.set(x, "StrategyOptions", value.asInstanceOf[js.Any])
     }
   }
 }

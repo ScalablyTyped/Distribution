@@ -11,16 +11,13 @@ trait TargetHyperlink extends StObject {
 }
 object TargetHyperlink {
   
-  @scala.inline
-  def apply(Target: Hyperlink): TargetHyperlink = {
+  inline def apply(Target: Hyperlink): TargetHyperlink = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetHyperlink]
   }
   
-  @scala.inline
-  implicit class TargetHyperlinkMutableBuilder[Self <: TargetHyperlink] (val x: Self) extends AnyVal {
+  extension [Self <: TargetHyperlink](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Hyperlink): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Hyperlink): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

@@ -58,40 +58,29 @@ trait PaymentData extends StObject {
 }
 object PaymentData {
   
-  @scala.inline
-  def apply(apiVersion: Double, apiVersionMinor: Double, paymentMethodData: PaymentMethodData): PaymentData = {
+  inline def apply(apiVersion: Double, apiVersionMinor: Double, paymentMethodData: PaymentMethodData): PaymentData = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], apiVersionMinor = apiVersionMinor.asInstanceOf[js.Any], paymentMethodData = paymentMethodData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentData]
   }
   
-  @scala.inline
-  implicit class PaymentDataMutableBuilder[Self <: PaymentData] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentData](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
+    inline def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPaymentMethodData(value: PaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodData(value: PaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+    inline def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
+    inline def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
     
-    @scala.inline
-    def setShippingOptionData(value: SelectionOptionData): Self = StObject.set(x, "shippingOptionData", value.asInstanceOf[js.Any])
+    inline def setShippingOptionData(value: SelectionOptionData): Self = StObject.set(x, "shippingOptionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionDataUndefined: Self = StObject.set(x, "shippingOptionData", js.undefined)
+    inline def setShippingOptionDataUndefined: Self = StObject.set(x, "shippingOptionData", js.undefined)
   }
 }

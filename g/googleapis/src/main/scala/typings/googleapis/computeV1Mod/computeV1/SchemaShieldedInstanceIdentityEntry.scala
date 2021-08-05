@@ -21,25 +21,19 @@ trait SchemaShieldedInstanceIdentityEntry extends StObject {
 }
 object SchemaShieldedInstanceIdentityEntry {
   
-  @scala.inline
-  def apply(): SchemaShieldedInstanceIdentityEntry = {
+  inline def apply(): SchemaShieldedInstanceIdentityEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShieldedInstanceIdentityEntry]
   }
   
-  @scala.inline
-  implicit class SchemaShieldedInstanceIdentityEntryMutableBuilder[Self <: SchemaShieldedInstanceIdentityEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShieldedInstanceIdentityEntry](x: Self) {
     
-    @scala.inline
-    def setEkCert(value: String): Self = StObject.set(x, "ekCert", value.asInstanceOf[js.Any])
+    inline def setEkCert(value: String): Self = StObject.set(x, "ekCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEkCertUndefined: Self = StObject.set(x, "ekCert", js.undefined)
+    inline def setEkCertUndefined: Self = StObject.set(x, "ekCert", js.undefined)
     
-    @scala.inline
-    def setEkPub(value: String): Self = StObject.set(x, "ekPub", value.asInstanceOf[js.Any])
+    inline def setEkPub(value: String): Self = StObject.set(x, "ekPub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEkPubUndefined: Self = StObject.set(x, "ekPub", js.undefined)
+    inline def setEkPubUndefined: Self = StObject.set(x, "ekPub", js.undefined)
   }
 }

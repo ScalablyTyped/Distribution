@@ -15,19 +15,15 @@ trait SystemImageProperties extends StObject {
 }
 object SystemImageProperties {
   
-  @scala.inline
-  def apply(horizontalSize: String, verticalSize: String): SystemImageProperties = {
+  inline def apply(horizontalSize: String, verticalSize: String): SystemImageProperties = {
     val __obj = js.Dynamic.literal(horizontalSize = horizontalSize.asInstanceOf[js.Any], verticalSize = verticalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemImageProperties]
   }
   
-  @scala.inline
-  implicit class SystemImagePropertiesMutableBuilder[Self <: SystemImageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemImageProperties](x: Self) {
     
-    @scala.inline
-    def setHorizontalSize(value: String): Self = StObject.set(x, "horizontalSize", value.asInstanceOf[js.Any])
+    inline def setHorizontalSize(value: String): Self = StObject.set(x, "horizontalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalSize(value: String): Self = StObject.set(x, "verticalSize", value.asInstanceOf[js.Any])
+    inline def setVerticalSize(value: String): Self = StObject.set(x, "verticalSize", value.asInstanceOf[js.Any])
   }
 }

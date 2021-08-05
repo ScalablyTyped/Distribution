@@ -27,16 +27,14 @@ object mod {
     @JSImport("rc-select", "default.OptGroup")
     @js.native
     def OptGroup: OptionGroupFC = js.native
-    @scala.inline
-    def OptGroup_=(x: OptionGroupFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OptGroup")(x.asInstanceOf[js.Any])
+    inline def OptGroup_=(x: OptionGroupFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OptGroup")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* was `typeof Option` */
     @JSImport("rc-select", "default.Option")
     @js.native
     def Option: OptionFC = js.native
-    @scala.inline
-    def Option_=(x: OptionFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
+    inline def Option_=(x: OptionFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
   }
   
   /** This is a placeholder, not real render in dom */

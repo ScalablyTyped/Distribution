@@ -22,29 +22,22 @@ object anon {
   }
   object DisplayName {
     
-    @scala.inline
-    def apply(displayName: String, relative: Record[String, String], relativeTime: Future): DisplayName = {
+    inline def apply(displayName: String, relative: Record[String, String], relativeTime: Future): DisplayName = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], relativeTime = relativeTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayName]
     }
     
-    @scala.inline
-    implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayName](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelative(value: Record[String, String]): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Record[String, String]): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePeriod(value: String): Self = StObject.set(x, "relativePeriod", value.asInstanceOf[js.Any])
+      inline def setRelativePeriod(value: String): Self = StObject.set(x, "relativePeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePeriodUndefined: Self = StObject.set(x, "relativePeriod", js.undefined)
+      inline def setRelativePeriodUndefined: Self = StObject.set(x, "relativePeriod", js.undefined)
       
-      @scala.inline
-      def setRelativeTime(value: Future): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
+      inline def setRelativeTime(value: Future): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,20 +49,16 @@ object anon {
   }
   object Future {
     
-    @scala.inline
-    def apply(future: Record[String, String], past: Record[String, String]): Future = {
+    inline def apply(future: Record[String, String], past: Record[String, String]): Future = {
       val __obj = js.Dynamic.literal(future = future.asInstanceOf[js.Any], past = past.asInstanceOf[js.Any])
       __obj.asInstanceOf[Future]
     }
     
-    @scala.inline
-    implicit class FutureMutableBuilder[Self <: Future] (val x: Self) extends AnyVal {
+    extension [Self <: Future](x: Self) {
       
-      @scala.inline
-      def setFuture(value: Record[String, String]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      inline def setFuture(value: Record[String, String]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPast(value: Record[String, String]): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
+      inline def setPast(value: Record[String, String]): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,26 +72,20 @@ object anon {
   }
   object Locale {
     
-    @scala.inline
-    def apply(locale: String, style: STYLE): Locale = {
+    inline def apply(locale: String, style: STYLE): Locale = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: STYLE): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: STYLE): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnits(value: SUPPORTED_FIELD): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: SUPPORTED_FIELD): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     }
   }
   
@@ -112,23 +95,18 @@ object anon {
   }
   object Now {
     
-    @scala.inline
-    def apply(): Now = {
+    inline def apply(): Now = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Now]
     }
     
-    @scala.inline
-    implicit class NowMutableBuilder[Self <: Now] (val x: Self) extends AnyVal {
+    extension [Self <: Now](x: Self) {
       
-      @scala.inline
-      def setNow(value: Date | Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Date | Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowNull: Self = StObject.set(x, "now", null)
+      inline def setNowNull: Self = StObject.set(x, "now", null)
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
     }
   }
   
@@ -179,8 +157,7 @@ object anon {
   }
   object RecordSUPPORTEDFIELDnumbe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       day: Double,
       `day-narrow`: Double,
       `day-short`: Double,
@@ -221,71 +198,49 @@ object anon {
       __obj.asInstanceOf[RecordSUPPORTEDFIELDnumbe]
     }
     
-    @scala.inline
-    implicit class RecordSUPPORTEDFIELDnumbeMutableBuilder[Self <: RecordSUPPORTEDFIELDnumbe] (val x: Self) extends AnyVal {
+    extension [Self <: RecordSUPPORTEDFIELDnumbe](x: Self) {
       
-      @scala.inline
-      def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDay-narrow`(value: Double): Self = StObject.set(x, "day-narrow", value.asInstanceOf[js.Any])
+      inline def `setDay-narrow`(value: Double): Self = StObject.set(x, "day-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDay-short`(value: Double): Self = StObject.set(x, "day-short", value.asInstanceOf[js.Any])
+      inline def `setDay-short`(value: Double): Self = StObject.set(x, "day-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHour-narrow`(value: Double): Self = StObject.set(x, "hour-narrow", value.asInstanceOf[js.Any])
+      inline def `setHour-narrow`(value: Double): Self = StObject.set(x, "hour-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHour-short`(value: Double): Self = StObject.set(x, "hour-short", value.asInstanceOf[js.Any])
+      inline def `setHour-short`(value: Double): Self = StObject.set(x, "hour-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinute-narrow`(value: Double): Self = StObject.set(x, "minute-narrow", value.asInstanceOf[js.Any])
+      inline def `setMinute-narrow`(value: Double): Self = StObject.set(x, "minute-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinute-short`(value: Double): Self = StObject.set(x, "minute-short", value.asInstanceOf[js.Any])
+      inline def `setMinute-short`(value: Double): Self = StObject.set(x, "minute-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMonth-narrow`(value: Double): Self = StObject.set(x, "month-narrow", value.asInstanceOf[js.Any])
+      inline def `setMonth-narrow`(value: Double): Self = StObject.set(x, "month-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMonth-short`(value: Double): Self = StObject.set(x, "month-short", value.asInstanceOf[js.Any])
+      inline def `setMonth-short`(value: Double): Self = StObject.set(x, "month-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSecond-narrow`(value: Double): Self = StObject.set(x, "second-narrow", value.asInstanceOf[js.Any])
+      inline def `setSecond-narrow`(value: Double): Self = StObject.set(x, "second-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSecond-short`(value: Double): Self = StObject.set(x, "second-short", value.asInstanceOf[js.Any])
+      inline def `setSecond-short`(value: Double): Self = StObject.set(x, "second-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeek(value: Double): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+      inline def setWeek(value: Double): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeek-narrow`(value: Double): Self = StObject.set(x, "week-narrow", value.asInstanceOf[js.Any])
+      inline def `setWeek-narrow`(value: Double): Self = StObject.set(x, "week-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeek-short`(value: Double): Self = StObject.set(x, "week-short", value.asInstanceOf[js.Any])
+      inline def `setWeek-short`(value: Double): Self = StObject.set(x, "week-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setYear-narrow`(value: Double): Self = StObject.set(x, "year-narrow", value.asInstanceOf[js.Any])
+      inline def `setYear-narrow`(value: Double): Self = StObject.set(x, "year-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setYear-short`(value: Double): Self = StObject.set(x, "year-short", value.asInstanceOf[js.Any])
+      inline def `setYear-short`(value: Double): Self = StObject.set(x, "year-short", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,8 +297,7 @@ object anon {
   }
   object finDATAFIELDdisplayNamest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       day: DisplayName,
       `day-narrow`: DisplayName,
       `day-short`: DisplayName,
@@ -389,80 +343,55 @@ object anon {
       __obj.asInstanceOf[finDATAFIELDdisplayNamest]
     }
     
-    @scala.inline
-    implicit class finDATAFIELDdisplayNamestMutableBuilder[Self <: finDATAFIELDdisplayNamest] (val x: Self) extends AnyVal {
+    extension [Self <: finDATAFIELDdisplayNamest](x: Self) {
       
-      @scala.inline
-      def setDay(value: DisplayName): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: DisplayName): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDay-narrow`(value: DisplayName): Self = StObject.set(x, "day-narrow", value.asInstanceOf[js.Any])
+      inline def `setDay-narrow`(value: DisplayName): Self = StObject.set(x, "day-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDay-short`(value: DisplayName): Self = StObject.set(x, "day-short", value.asInstanceOf[js.Any])
+      inline def `setDay-short`(value: DisplayName): Self = StObject.set(x, "day-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour(value: DisplayName): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: DisplayName): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHour-narrow`(value: DisplayName): Self = StObject.set(x, "hour-narrow", value.asInstanceOf[js.Any])
+      inline def `setHour-narrow`(value: DisplayName): Self = StObject.set(x, "hour-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHour-short`(value: DisplayName): Self = StObject.set(x, "hour-short", value.asInstanceOf[js.Any])
+      inline def `setHour-short`(value: DisplayName): Self = StObject.set(x, "hour-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: DisplayName): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: DisplayName): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinute-narrow`(value: DisplayName): Self = StObject.set(x, "minute-narrow", value.asInstanceOf[js.Any])
+      inline def `setMinute-narrow`(value: DisplayName): Self = StObject.set(x, "minute-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMinute-short`(value: DisplayName): Self = StObject.set(x, "minute-short", value.asInstanceOf[js.Any])
+      inline def `setMinute-short`(value: DisplayName): Self = StObject.set(x, "minute-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: DisplayName): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: DisplayName): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMonth-narrow`(value: DisplayName): Self = StObject.set(x, "month-narrow", value.asInstanceOf[js.Any])
+      inline def `setMonth-narrow`(value: DisplayName): Self = StObject.set(x, "month-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMonth-short`(value: DisplayName): Self = StObject.set(x, "month-short", value.asInstanceOf[js.Any])
+      inline def `setMonth-short`(value: DisplayName): Self = StObject.set(x, "month-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarter(value: DisplayName): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
+      inline def setQuarter(value: DisplayName): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setQuarter-narrow`(value: DisplayName): Self = StObject.set(x, "quarter-narrow", value.asInstanceOf[js.Any])
+      inline def `setQuarter-narrow`(value: DisplayName): Self = StObject.set(x, "quarter-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setQuarter-short`(value: DisplayName): Self = StObject.set(x, "quarter-short", value.asInstanceOf[js.Any])
+      inline def `setQuarter-short`(value: DisplayName): Self = StObject.set(x, "quarter-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: DisplayName): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: DisplayName): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSecond-narrow`(value: DisplayName): Self = StObject.set(x, "second-narrow", value.asInstanceOf[js.Any])
+      inline def `setSecond-narrow`(value: DisplayName): Self = StObject.set(x, "second-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSecond-short`(value: DisplayName): Self = StObject.set(x, "second-short", value.asInstanceOf[js.Any])
+      inline def `setSecond-short`(value: DisplayName): Self = StObject.set(x, "second-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeek(value: DisplayName): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+      inline def setWeek(value: DisplayName): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeek-narrow`(value: DisplayName): Self = StObject.set(x, "week-narrow", value.asInstanceOf[js.Any])
+      inline def `setWeek-narrow`(value: DisplayName): Self = StObject.set(x, "week-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWeek-short`(value: DisplayName): Self = StObject.set(x, "week-short", value.asInstanceOf[js.Any])
+      inline def `setWeek-short`(value: DisplayName): Self = StObject.set(x, "week-short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: DisplayName): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: DisplayName): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setYear-narrow`(value: DisplayName): Self = StObject.set(x, "year-narrow", value.asInstanceOf[js.Any])
+      inline def `setYear-narrow`(value: DisplayName): Self = StObject.set(x, "year-narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setYear-short`(value: DisplayName): Self = StObject.set(x, "year-short", value.asInstanceOf[js.Any])
+      inline def `setYear-short`(value: DisplayName): Self = StObject.set(x, "year-short", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,16 +19,13 @@ trait OffscreenCanvas extends StObject {
 }
 object OffscreenCanvas {
   
-  @scala.inline
-  def apply(getContext: String => js.Any): OffscreenCanvas = {
+  inline def apply(getContext: String => js.Any): OffscreenCanvas = {
     val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction1(getContext))
     __obj.asInstanceOf[OffscreenCanvas]
   }
   
-  @scala.inline
-  implicit class OffscreenCanvasMutableBuilder[Self <: OffscreenCanvas] (val x: Self) extends AnyVal {
+  extension [Self <: OffscreenCanvas](x: Self) {
     
-    @scala.inline
-    def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+    inline def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
   }
 }

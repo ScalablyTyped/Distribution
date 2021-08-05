@@ -67,21 +67,16 @@ object channelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Channel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Channel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ChannelState): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Channel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ChannelState, opts: CustomResourceOptions): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Channel]
+    inline def get(name: String, id: Input[ID]): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Channel]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Channel]
+    inline def get(name: String, id: Input[ID], state: ChannelState): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Channel]
+    inline def get(name: String, id: Input[ID], state: ChannelState, opts: CustomResourceOptions): Channel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Channel]
     
     /**
       * Returns true if the given object is an instance of Channel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediapackage/channel.Channel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediapackage/channel.Channel */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediapackage/channel.Channel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediapackage/channel.Channel */ Boolean]
   }
   
   trait ChannelArgs extends StObject {
@@ -103,29 +98,22 @@ object channelMod {
   }
   object ChannelArgs {
     
-    @scala.inline
-    def apply(channelId: Input[String]): ChannelArgs = {
+    inline def apply(channelId: Input[String]): ChannelArgs = {
       val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelArgs]
     }
     
-    @scala.inline
-    implicit class ChannelArgsMutableBuilder[Self <: ChannelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelArgs](x: Self) {
       
-      @scala.inline
-      def setChannelId(value: Input[String]): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+      inline def setChannelId(value: Input[String]): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -158,47 +146,34 @@ object channelMod {
   }
   object ChannelState {
     
-    @scala.inline
-    def apply(): ChannelState = {
+    inline def apply(): ChannelState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChannelState]
     }
     
-    @scala.inline
-    implicit class ChannelStateMutableBuilder[Self <: ChannelState] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setChannelId(value: Input[String]): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+      inline def setChannelId(value: Input[String]): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+      inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setHlsIngests(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mediapackage.ChannelHlsIngest]]]): Self = StObject.set(x, "hlsIngests", value.asInstanceOf[js.Any])
+      inline def setHlsIngests(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mediapackage.ChannelHlsIngest]]]): Self = StObject.set(x, "hlsIngests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHlsIngestsUndefined: Self = StObject.set(x, "hlsIngests", js.undefined)
+      inline def setHlsIngestsUndefined: Self = StObject.set(x, "hlsIngests", js.undefined)
       
-      @scala.inline
-      def setHlsIngestsVarargs(value: Input[typings.pulumiAws.inputMod.mediapackage.ChannelHlsIngest]*): Self = StObject.set(x, "hlsIngests", js.Array(value :_*))
+      inline def setHlsIngestsVarargs(value: Input[typings.pulumiAws.inputMod.mediapackage.ChannelHlsIngest]*): Self = StObject.set(x, "hlsIngests", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

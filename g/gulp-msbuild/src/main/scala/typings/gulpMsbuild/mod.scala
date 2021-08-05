@@ -67,119 +67,82 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+      inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
       
-      @scala.inline
-      def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setConsoleLoggerParameters(value: String): Self = StObject.set(x, "consoleLoggerParameters", value.asInstanceOf[js.Any])
+      inline def setConsoleLoggerParameters(value: String): Self = StObject.set(x, "consoleLoggerParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleLoggerParametersUndefined: Self = StObject.set(x, "consoleLoggerParameters", js.undefined)
+      inline def setConsoleLoggerParametersUndefined: Self = StObject.set(x, "consoleLoggerParameters", js.undefined)
       
-      @scala.inline
-      def setEmitEndEvent(value: Boolean): Self = StObject.set(x, "emitEndEvent", value.asInstanceOf[js.Any])
+      inline def setEmitEndEvent(value: Boolean): Self = StObject.set(x, "emitEndEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitEndEventUndefined: Self = StObject.set(x, "emitEndEvent", js.undefined)
+      inline def setEmitEndEventUndefined: Self = StObject.set(x, "emitEndEvent", js.undefined)
       
-      @scala.inline
-      def setErrorOnFail(value: Boolean): Self = StObject.set(x, "errorOnFail", value.asInstanceOf[js.Any])
+      inline def setErrorOnFail(value: Boolean): Self = StObject.set(x, "errorOnFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOnFailUndefined: Self = StObject.set(x, "errorOnFail", js.undefined)
+      inline def setErrorOnFailUndefined: Self = StObject.set(x, "errorOnFail", js.undefined)
       
-      @scala.inline
-      def setFileLoggerParameters(value: String): Self = StObject.set(x, "fileLoggerParameters", value.asInstanceOf[js.Any])
+      inline def setFileLoggerParameters(value: String): Self = StObject.set(x, "fileLoggerParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileLoggerParametersUndefined: Self = StObject.set(x, "fileLoggerParameters", js.undefined)
+      inline def setFileLoggerParametersUndefined: Self = StObject.set(x, "fileLoggerParameters", js.undefined)
       
-      @scala.inline
-      def setLogCommand(value: Boolean): Self = StObject.set(x, "logCommand", value.asInstanceOf[js.Any])
+      inline def setLogCommand(value: Boolean): Self = StObject.set(x, "logCommand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogCommandUndefined: Self = StObject.set(x, "logCommand", js.undefined)
+      inline def setLogCommandUndefined: Self = StObject.set(x, "logCommand", js.undefined)
       
-      @scala.inline
-      def setLoggerParameters(value: String): Self = StObject.set(x, "loggerParameters", value.asInstanceOf[js.Any])
+      inline def setLoggerParameters(value: String): Self = StObject.set(x, "loggerParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerParametersUndefined: Self = StObject.set(x, "loggerParameters", js.undefined)
+      inline def setLoggerParametersUndefined: Self = StObject.set(x, "loggerParameters", js.undefined)
       
-      @scala.inline
-      def setMaxcpucount(value: Double): Self = StObject.set(x, "maxcpucount", value.asInstanceOf[js.Any])
+      inline def setMaxcpucount(value: Double): Self = StObject.set(x, "maxcpucount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxcpucountUndefined: Self = StObject.set(x, "maxcpucount", js.undefined)
+      inline def setMaxcpucountUndefined: Self = StObject.set(x, "maxcpucount", js.undefined)
       
-      @scala.inline
-      def setNodeReuse(value: Boolean): Self = StObject.set(x, "nodeReuse", value.asInstanceOf[js.Any])
+      inline def setNodeReuse(value: Boolean): Self = StObject.set(x, "nodeReuse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeReuseUndefined: Self = StObject.set(x, "nodeReuse", js.undefined)
+      inline def setNodeReuseUndefined: Self = StObject.set(x, "nodeReuse", js.undefined)
       
-      @scala.inline
-      def setNologo(value: Boolean): Self = StObject.set(x, "nologo", value.asInstanceOf[js.Any])
+      inline def setNologo(value: Boolean): Self = StObject.set(x, "nologo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNologoUndefined: Self = StObject.set(x, "nologo", js.undefined)
+      inline def setNologoUndefined: Self = StObject.set(x, "nologo", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
       
-      @scala.inline
-      def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
       
-      @scala.inline
-      def setToolsVersion(value: Double): Self = StObject.set(x, "toolsVersion", value.asInstanceOf[js.Any])
+      inline def setToolsVersion(value: Double): Self = StObject.set(x, "toolsVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolsVersionUndefined: Self = StObject.set(x, "toolsVersion", js.undefined)
+      inline def setToolsVersionUndefined: Self = StObject.set(x, "toolsVersion", js.undefined)
       
-      @scala.inline
-      def setVerbosity(value: String): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
+      inline def setVerbosity(value: String): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
+      inline def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
     }
   }
   

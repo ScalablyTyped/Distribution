@@ -52,49 +52,35 @@ trait SchemaGooglePrivacyDlpV2ContentLocation extends StObject {
 }
 object SchemaGooglePrivacyDlpV2ContentLocation {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2ContentLocation = {
+  inline def apply(): SchemaGooglePrivacyDlpV2ContentLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ContentLocation]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ContentLocationMutableBuilder[Self <: SchemaGooglePrivacyDlpV2ContentLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2ContentLocation](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setContainerTimestamp(value: String): Self = StObject.set(x, "containerTimestamp", value.asInstanceOf[js.Any])
+    inline def setContainerTimestamp(value: String): Self = StObject.set(x, "containerTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerTimestampUndefined: Self = StObject.set(x, "containerTimestamp", js.undefined)
+    inline def setContainerTimestampUndefined: Self = StObject.set(x, "containerTimestamp", js.undefined)
     
-    @scala.inline
-    def setContainerVersion(value: String): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
+    inline def setContainerVersion(value: String): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
+    inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
     
-    @scala.inline
-    def setDocumentLocation(value: SchemaGooglePrivacyDlpV2DocumentLocation): Self = StObject.set(x, "documentLocation", value.asInstanceOf[js.Any])
+    inline def setDocumentLocation(value: SchemaGooglePrivacyDlpV2DocumentLocation): Self = StObject.set(x, "documentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentLocationUndefined: Self = StObject.set(x, "documentLocation", js.undefined)
+    inline def setDocumentLocationUndefined: Self = StObject.set(x, "documentLocation", js.undefined)
     
-    @scala.inline
-    def setImageLocation(value: SchemaGooglePrivacyDlpV2ImageLocation): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
+    inline def setImageLocation(value: SchemaGooglePrivacyDlpV2ImageLocation): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageLocationUndefined: Self = StObject.set(x, "imageLocation", js.undefined)
+    inline def setImageLocationUndefined: Self = StObject.set(x, "imageLocation", js.undefined)
     
-    @scala.inline
-    def setRecordLocation(value: SchemaGooglePrivacyDlpV2RecordLocation): Self = StObject.set(x, "recordLocation", value.asInstanceOf[js.Any])
+    inline def setRecordLocation(value: SchemaGooglePrivacyDlpV2RecordLocation): Self = StObject.set(x, "recordLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordLocationUndefined: Self = StObject.set(x, "recordLocation", js.undefined)
+    inline def setRecordLocationUndefined: Self = StObject.set(x, "recordLocation", js.undefined)
   }
 }

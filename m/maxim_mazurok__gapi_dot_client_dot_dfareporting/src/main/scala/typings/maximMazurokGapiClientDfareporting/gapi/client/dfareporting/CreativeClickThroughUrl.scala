@@ -20,31 +20,23 @@ trait CreativeClickThroughUrl extends StObject {
 }
 object CreativeClickThroughUrl {
   
-  @scala.inline
-  def apply(): CreativeClickThroughUrl = {
+  inline def apply(): CreativeClickThroughUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeClickThroughUrl]
   }
   
-  @scala.inline
-  implicit class CreativeClickThroughUrlMutableBuilder[Self <: CreativeClickThroughUrl] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeClickThroughUrl](x: Self) {
     
-    @scala.inline
-    def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedClickThroughUrlUndefined: Self = StObject.set(x, "computedClickThroughUrl", js.undefined)
+    inline def setComputedClickThroughUrlUndefined: Self = StObject.set(x, "computedClickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setCustomClickThroughUrl(value: String): Self = StObject.set(x, "customClickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setCustomClickThroughUrl(value: String): Self = StObject.set(x, "customClickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomClickThroughUrlUndefined: Self = StObject.set(x, "customClickThroughUrl", js.undefined)
+    inline def setCustomClickThroughUrlUndefined: Self = StObject.set(x, "customClickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setLandingPageId(value: String): Self = StObject.set(x, "landingPageId", value.asInstanceOf[js.Any])
+    inline def setLandingPageId(value: String): Self = StObject.set(x, "landingPageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandingPageIdUndefined: Self = StObject.set(x, "landingPageId", js.undefined)
+    inline def setLandingPageIdUndefined: Self = StObject.set(x, "landingPageId", js.undefined)
   }
 }

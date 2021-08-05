@@ -45,8 +45,7 @@ trait XStarBasicAccess
 }
 object XStarBasicAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LibraryContainer: XNameContainer,
     acquire: () => Unit,
     addDialog: (String, String, SeqEquiv[Double]) => Unit,
@@ -60,22 +59,16 @@ object XStarBasicAccess {
     __obj.asInstanceOf[XStarBasicAccess]
   }
   
-  @scala.inline
-  implicit class XStarBasicAccessMutableBuilder[Self <: XStarBasicAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XStarBasicAccess](x: Self) {
     
-    @scala.inline
-    def setAddDialog(value: (String, String, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "addDialog", js.Any.fromFunction3(value))
+    inline def setAddDialog(value: (String, String, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "addDialog", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddModule(value: (String, String, String, String) => Unit): Self = StObject.set(x, "addModule", js.Any.fromFunction4(value))
+    inline def setAddModule(value: (String, String, String, String) => Unit): Self = StObject.set(x, "addModule", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateLibrary(value: (String, String, String, String) => Unit): Self = StObject.set(x, "createLibrary", js.Any.fromFunction4(value))
+    inline def setCreateLibrary(value: (String, String, String, String) => Unit): Self = StObject.set(x, "createLibrary", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetLibraryContainer(value: () => XNameContainer): Self = StObject.set(x, "getLibraryContainer", js.Any.fromFunction0(value))
+    inline def setGetLibraryContainer(value: () => XNameContainer): Self = StObject.set(x, "getLibraryContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLibraryContainer(value: XNameContainer): Self = StObject.set(x, "LibraryContainer", value.asInstanceOf[js.Any])
+    inline def setLibraryContainer(value: XNameContainer): Self = StObject.set(x, "LibraryContainer", value.asInstanceOf[js.Any])
   }
 }

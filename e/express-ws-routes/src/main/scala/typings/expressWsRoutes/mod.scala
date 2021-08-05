@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Express]
+  inline def apply(): Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Express]
   
   @JSImport("express-ws-routes", JSImport.Namespace)
   @js.native
@@ -30,23 +29,18 @@ object mod {
   }
   object ClientInfo {
     
-    @scala.inline
-    def apply(origin: String, req: Request_[ParamsDictionary, js.Any, js.Any, Query], secure: Boolean): ClientInfo = {
+    inline def apply(origin: String, req: Request_[ParamsDictionary, js.Any, js.Any, Query], secure: Boolean): ClientInfo = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientInfo]
     }
     
-    @scala.inline
-    implicit class ClientInfoMutableBuilder[Self <: ClientInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ClientInfo](x: Self) {
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLRenderStyle extends StObject {
   
-  @JSName("MSHTML.HTMLRenderStyle_typekey")
+  /* private */ @JSName("MSHTML.HTMLRenderStyle_typekey")
   var MSHTMLDotHTMLRenderStyle_typekey: HTMLRenderStyle
   
   var defaultTextSelection: String
@@ -29,8 +29,7 @@ trait HTMLRenderStyle extends StObject {
 }
 object HTMLRenderStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLRenderStyle_typekey: HTMLRenderStyle,
     defaultTextSelection: String,
     renderingPriority: Double,
@@ -47,37 +46,26 @@ object HTMLRenderStyle {
     __obj.asInstanceOf[HTMLRenderStyle]
   }
   
-  @scala.inline
-  implicit class HTMLRenderStyleMutableBuilder[Self <: HTMLRenderStyle] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLRenderStyle](x: Self) {
     
-    @scala.inline
-    def setDefaultTextSelection(value: String): Self = StObject.set(x, "defaultTextSelection", value.asInstanceOf[js.Any])
+    inline def setDefaultTextSelection(value: String): Self = StObject.set(x, "defaultTextSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLRenderStyle_typekey(value: HTMLRenderStyle): Self = StObject.set(x, "MSHTML.HTMLRenderStyle_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLRenderStyle_typekey(value: HTMLRenderStyle): Self = StObject.set(x, "MSHTML.HTMLRenderStyle_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingPriority(value: Double): Self = StObject.set(x, "renderingPriority", value.asInstanceOf[js.Any])
+    inline def setRenderingPriority(value: Double): Self = StObject.set(x, "renderingPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBackgroundColor(value: js.Any): Self = StObject.set(x, "textBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setTextBackgroundColor(value: js.Any): Self = StObject.set(x, "textBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecorationColor(value: js.Any): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
+    inline def setTextDecorationColor(value: js.Any): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextEffect(value: String): Self = StObject.set(x, "textEffect", value.asInstanceOf[js.Any])
+    inline def setTextEffect(value: String): Self = StObject.set(x, "textEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLineThroughStyle(value: String): Self = StObject.set(x, "textLineThroughStyle", value.asInstanceOf[js.Any])
+    inline def setTextLineThroughStyle(value: String): Self = StObject.set(x, "textLineThroughStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUnderlineStyle(value: String): Self = StObject.set(x, "textUnderlineStyle", value.asInstanceOf[js.Any])
+    inline def setTextUnderlineStyle(value: String): Self = StObject.set(x, "textUnderlineStyle", value.asInstanceOf[js.Any])
   }
 }

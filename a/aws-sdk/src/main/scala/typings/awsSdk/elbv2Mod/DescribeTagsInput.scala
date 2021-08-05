@@ -13,19 +13,15 @@ trait DescribeTagsInput extends StObject {
 }
 object DescribeTagsInput {
   
-  @scala.inline
-  def apply(ResourceArns: ResourceArns): DescribeTagsInput = {
+  inline def apply(ResourceArns: ResourceArns): DescribeTagsInput = {
     val __obj = js.Dynamic.literal(ResourceArns = ResourceArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsInput]
   }
   
-  @scala.inline
-  implicit class DescribeTagsInputMutableBuilder[Self <: DescribeTagsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTagsInput](x: Self) {
     
-    @scala.inline
-    def setResourceArns(value: ResourceArns): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
+    inline def setResourceArns(value: ResourceArns): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
   }
 }

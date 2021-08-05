@@ -49,32 +49,24 @@ object mod {
   }
   object Web3ProviderEngineOptions {
     
-    @scala.inline
-    def apply(): Web3ProviderEngineOptions = {
+    inline def apply(): Web3ProviderEngineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Web3ProviderEngineOptions]
     }
     
-    @scala.inline
-    implicit class Web3ProviderEngineOptionsMutableBuilder[Self <: Web3ProviderEngineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: Web3ProviderEngineOptions](x: Self) {
       
-      @scala.inline
-      def setBlockTracker(value: js.Any): Self = StObject.set(x, "blockTracker", value.asInstanceOf[js.Any])
+      inline def setBlockTracker(value: js.Any): Self = StObject.set(x, "blockTracker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockTrackerProvider(value: js.Any): Self = StObject.set(x, "blockTrackerProvider", value.asInstanceOf[js.Any])
+      inline def setBlockTrackerProvider(value: js.Any): Self = StObject.set(x, "blockTrackerProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockTrackerProviderUndefined: Self = StObject.set(x, "blockTrackerProvider", js.undefined)
+      inline def setBlockTrackerProviderUndefined: Self = StObject.set(x, "blockTrackerProvider", js.undefined)
       
-      @scala.inline
-      def setBlockTrackerUndefined: Self = StObject.set(x, "blockTracker", js.undefined)
+      inline def setBlockTrackerUndefined: Self = StObject.set(x, "blockTracker", js.undefined)
       
-      @scala.inline
-      def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
+      inline def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollingIntervalUndefined: Self = StObject.set(x, "pollingInterval", js.undefined)
+      inline def setPollingIntervalUndefined: Self = StObject.set(x, "pollingInterval", js.undefined)
     }
   }
 }

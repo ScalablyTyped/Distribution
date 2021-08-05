@@ -17,31 +17,23 @@ trait GooglePrivacyDlpV2RecordLocation extends StObject {
 }
 object GooglePrivacyDlpV2RecordLocation {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2RecordLocation = {
+  inline def apply(): GooglePrivacyDlpV2RecordLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2RecordLocation]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2RecordLocationMutableBuilder[Self <: GooglePrivacyDlpV2RecordLocation] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2RecordLocation](x: Self) {
     
-    @scala.inline
-    def setFieldId(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
+    inline def setFieldId(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
+    inline def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
     
-    @scala.inline
-    def setRecordKey(value: GooglePrivacyDlpV2RecordKey): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: GooglePrivacyDlpV2RecordKey): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKeyUndefined: Self = StObject.set(x, "recordKey", js.undefined)
+    inline def setRecordKeyUndefined: Self = StObject.set(x, "recordKey", js.undefined)
     
-    @scala.inline
-    def setTableLocation(value: GooglePrivacyDlpV2TableLocation): Self = StObject.set(x, "tableLocation", value.asInstanceOf[js.Any])
+    inline def setTableLocation(value: GooglePrivacyDlpV2TableLocation): Self = StObject.set(x, "tableLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableLocationUndefined: Self = StObject.set(x, "tableLocation", js.undefined)
+    inline def setTableLocationUndefined: Self = StObject.set(x, "tableLocation", js.undefined)
   }
 }

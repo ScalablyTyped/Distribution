@@ -23,31 +23,23 @@ trait RelationalDatabaseHardware extends StObject {
 }
 object RelationalDatabaseHardware {
   
-  @scala.inline
-  def apply(): RelationalDatabaseHardware = {
+  inline def apply(): RelationalDatabaseHardware = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationalDatabaseHardware]
   }
   
-  @scala.inline
-  implicit class RelationalDatabaseHardwareMutableBuilder[Self <: RelationalDatabaseHardware] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalDatabaseHardware](x: Self) {
     
-    @scala.inline
-    def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
+    inline def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
+    inline def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
     
-    @scala.inline
-    def setDiskSizeInGb(value: integer): Self = StObject.set(x, "diskSizeInGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeInGb(value: integer): Self = StObject.set(x, "diskSizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeInGbUndefined: Self = StObject.set(x, "diskSizeInGb", js.undefined)
+    inline def setDiskSizeInGbUndefined: Self = StObject.set(x, "diskSizeInGb", js.undefined)
     
-    @scala.inline
-    def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
+    inline def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
+    inline def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
   }
 }

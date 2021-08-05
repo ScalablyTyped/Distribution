@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGPathSegCurvetoCubicAbs extends StObject {
   
-  @JSName("MSHTML.SVGPathSegCurvetoCubicAbs_typekey")
+  /* private */ @JSName("MSHTML.SVGPathSegCurvetoCubicAbs_typekey")
   var MSHTMLDotSVGPathSegCurvetoCubicAbs_typekey: SVGPathSegCurvetoCubicAbs
   
   var pathSegType: Double
@@ -27,8 +27,7 @@ trait SVGPathSegCurvetoCubicAbs extends StObject {
 }
 object SVGPathSegCurvetoCubicAbs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGPathSegCurvetoCubicAbs_typekey: SVGPathSegCurvetoCubicAbs,
     pathSegType: Double,
     pathSegTypeAsLetter: String,
@@ -44,34 +43,24 @@ object SVGPathSegCurvetoCubicAbs {
     __obj.asInstanceOf[SVGPathSegCurvetoCubicAbs]
   }
   
-  @scala.inline
-  implicit class SVGPathSegCurvetoCubicAbsMutableBuilder[Self <: SVGPathSegCurvetoCubicAbs] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegCurvetoCubicAbs](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotSVGPathSegCurvetoCubicAbs_typekey(value: SVGPathSegCurvetoCubicAbs): Self = StObject.set(x, "MSHTML.SVGPathSegCurvetoCubicAbs_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGPathSegCurvetoCubicAbs_typekey(value: SVGPathSegCurvetoCubicAbs): Self = StObject.set(x, "MSHTML.SVGPathSegCurvetoCubicAbs_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
+    inline def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
+    inline def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

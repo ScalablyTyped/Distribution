@@ -18,22 +18,17 @@ trait SecurityServicePolicyData extends StObject {
 }
 object SecurityServicePolicyData {
   
-  @scala.inline
-  def apply(Type: SecurityServiceType): SecurityServicePolicyData = {
+  inline def apply(Type: SecurityServiceType): SecurityServicePolicyData = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityServicePolicyData]
   }
   
-  @scala.inline
-  implicit class SecurityServicePolicyDataMutableBuilder[Self <: SecurityServicePolicyData] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityServicePolicyData](x: Self) {
     
-    @scala.inline
-    def setManagedServiceData(value: ManagedServiceData): Self = StObject.set(x, "ManagedServiceData", value.asInstanceOf[js.Any])
+    inline def setManagedServiceData(value: ManagedServiceData): Self = StObject.set(x, "ManagedServiceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedServiceDataUndefined: Self = StObject.set(x, "ManagedServiceData", js.undefined)
+    inline def setManagedServiceDataUndefined: Self = StObject.set(x, "ManagedServiceData", js.undefined)
     
-    @scala.inline
-    def setType(value: SecurityServiceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SecurityServiceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -25,28 +25,21 @@ trait GetFunctionRequestwaiterW extends StObject {
 }
 object GetFunctionRequestwaiterW {
   
-  @scala.inline
-  def apply(FunctionName: NamespacedFunctionName): GetFunctionRequestwaiterW = {
+  inline def apply(FunctionName: NamespacedFunctionName): GetFunctionRequestwaiterW = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionRequestwaiterW]
   }
   
-  @scala.inline
-  implicit class GetFunctionRequestwaiterWMutableBuilder[Self <: GetFunctionRequestwaiterW] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionRequestwaiterW](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
   }
 }

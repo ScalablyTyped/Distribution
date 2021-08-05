@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IOmHistory extends StObject {
   
-  @JSName("MSHTML.IOmHistory_typekey")
+  /* private */ @JSName("MSHTML.IOmHistory_typekey")
   var MSHTMLDotIOmHistory_typekey: IOmHistory = js.native
   
   def back(): Unit = js.native

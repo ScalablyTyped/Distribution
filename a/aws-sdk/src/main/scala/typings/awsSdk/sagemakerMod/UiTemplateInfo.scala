@@ -18,25 +18,19 @@ trait UiTemplateInfo extends StObject {
 }
 object UiTemplateInfo {
   
-  @scala.inline
-  def apply(): UiTemplateInfo = {
+  inline def apply(): UiTemplateInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UiTemplateInfo]
   }
   
-  @scala.inline
-  implicit class UiTemplateInfoMutableBuilder[Self <: UiTemplateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UiTemplateInfo](x: Self) {
     
-    @scala.inline
-    def setContentSha256(value: TemplateContentSha256): Self = StObject.set(x, "ContentSha256", value.asInstanceOf[js.Any])
+    inline def setContentSha256(value: TemplateContentSha256): Self = StObject.set(x, "ContentSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentSha256Undefined: Self = StObject.set(x, "ContentSha256", js.undefined)
+    inline def setContentSha256Undefined: Self = StObject.set(x, "ContentSha256", js.undefined)
     
-    @scala.inline
-    def setUrl(value: TemplateUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: TemplateUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

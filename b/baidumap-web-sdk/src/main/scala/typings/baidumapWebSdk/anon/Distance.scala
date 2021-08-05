@@ -19,8 +19,7 @@ trait Distance extends StObject {
 }
 object Distance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Double,
     points: js.Array[typings.baidumapWebSdk.BMap.Point],
     polylines: js.Array[Polyline],
@@ -32,28 +31,20 @@ object Distance {
     __obj.asInstanceOf[Distance]
   }
   
-  @scala.inline
-  implicit class DistanceMutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
+  extension [Self <: Distance](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[typings.baidumapWebSdk.BMap.Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[typings.baidumapWebSdk.BMap.Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: typings.baidumapWebSdk.BMap.Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: typings.baidumapWebSdk.BMap.Point*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setPolylines(value: js.Array[Polyline]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
+    inline def setPolylines(value: js.Array[Polyline]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylinesVarargs(value: Polyline*): Self = StObject.set(x, "polylines", js.Array(value :_*))
+    inline def setPolylinesVarargs(value: Polyline*): Self = StObject.set(x, "polylines", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

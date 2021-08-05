@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CheckBox")
 @js.native
-class CheckBox protected ()
+/* private */ class CheckBox ()
   extends StObject
      with typings.activexWord.Word.CheckBox {
   
@@ -34,7 +34,7 @@ class CheckBox protected ()
   /* CompleteClass */
   var Value: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CheckBox_typekey")
   var WordDotCheckBox_typekey: typings.activexWord.Word.CheckBox = js.native
 }

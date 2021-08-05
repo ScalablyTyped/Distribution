@@ -43,55 +43,39 @@ trait SimulationJobBatchSummary extends StObject {
 }
 object SimulationJobBatchSummary {
   
-  @scala.inline
-  def apply(): SimulationJobBatchSummary = {
+  inline def apply(): SimulationJobBatchSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimulationJobBatchSummary]
   }
   
-  @scala.inline
-  implicit class SimulationJobBatchSummaryMutableBuilder[Self <: SimulationJobBatchSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SimulationJobBatchSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setCreatedRequestCount(value: Integer): Self = StObject.set(x, "createdRequestCount", value.asInstanceOf[js.Any])
+    inline def setCreatedRequestCount(value: Integer): Self = StObject.set(x, "createdRequestCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedRequestCountUndefined: Self = StObject.set(x, "createdRequestCount", js.undefined)
+    inline def setCreatedRequestCountUndefined: Self = StObject.set(x, "createdRequestCount", js.undefined)
     
-    @scala.inline
-    def setFailedRequestCount(value: Integer): Self = StObject.set(x, "failedRequestCount", value.asInstanceOf[js.Any])
+    inline def setFailedRequestCount(value: Integer): Self = StObject.set(x, "failedRequestCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedRequestCountUndefined: Self = StObject.set(x, "failedRequestCount", js.undefined)
+    inline def setFailedRequestCountUndefined: Self = StObject.set(x, "failedRequestCount", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setPendingRequestCount(value: Integer): Self = StObject.set(x, "pendingRequestCount", value.asInstanceOf[js.Any])
+    inline def setPendingRequestCount(value: Integer): Self = StObject.set(x, "pendingRequestCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingRequestCountUndefined: Self = StObject.set(x, "pendingRequestCount", js.undefined)
+    inline def setPendingRequestCountUndefined: Self = StObject.set(x, "pendingRequestCount", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SimulationJobBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SimulationJobBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

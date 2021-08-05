@@ -15,45 +15,37 @@ object frameworkDelegateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attachComponent(delegate: Unit, container: Element, component: ComponentRef): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
-  @scala.inline
-  def attachComponent(delegate: Unit, container: Element, component: ComponentRef, cssClasses: js.Array[String]): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
-  @scala.inline
-  def attachComponent(
+  inline def attachComponent(delegate: Unit, container: Element, component: ComponentRef): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  inline def attachComponent(delegate: Unit, container: Element, component: ComponentRef, cssClasses: js.Array[String]): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  inline def attachComponent(
     delegate: Unit,
     container: Element,
     component: ComponentRef,
     cssClasses: js.Array[String],
     componentProps: StringDictionary[js.Any]
   ): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
-  @scala.inline
-  def attachComponent(
+  inline def attachComponent(
     delegate: Unit,
     container: Element,
     component: ComponentRef,
     cssClasses: Unit,
     componentProps: StringDictionary[js.Any]
   ): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
-  @scala.inline
-  def attachComponent(delegate: FrameworkDelegate, container: Element, component: ComponentRef): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
-  @scala.inline
-  def attachComponent(
+  inline def attachComponent(delegate: FrameworkDelegate, container: Element, component: ComponentRef): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  inline def attachComponent(
     delegate: FrameworkDelegate,
     container: Element,
     component: ComponentRef,
     cssClasses: js.Array[String]
   ): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
-  @scala.inline
-  def attachComponent(
+  inline def attachComponent(
     delegate: FrameworkDelegate,
     container: Element,
     component: ComponentRef,
     cssClasses: js.Array[String],
     componentProps: StringDictionary[js.Any]
   ): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
-  @scala.inline
-  def attachComponent(
+  inline def attachComponent(
     delegate: FrameworkDelegate,
     container: Element,
     component: ComponentRef,
@@ -61,12 +53,8 @@ object frameworkDelegateMod {
     componentProps: StringDictionary[js.Any]
   ): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComponent")(delegate.asInstanceOf[js.Any], container.asInstanceOf[js.Any], component.asInstanceOf[js.Any], cssClasses.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
   
-  @scala.inline
-  def detachComponent(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def detachComponent(delegate: Unit, element: HTMLElement): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")(delegate.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def detachComponent(delegate: FrameworkDelegate): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")(delegate.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def detachComponent(delegate: FrameworkDelegate, element: HTMLElement): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")(delegate.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def detachComponent(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")().asInstanceOf[js.Promise[Unit]]
+  inline def detachComponent(delegate: Unit, element: HTMLElement): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")(delegate.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def detachComponent(delegate: FrameworkDelegate): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")(delegate.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def detachComponent(delegate: FrameworkDelegate, element: HTMLElement): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("detachComponent")(delegate.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

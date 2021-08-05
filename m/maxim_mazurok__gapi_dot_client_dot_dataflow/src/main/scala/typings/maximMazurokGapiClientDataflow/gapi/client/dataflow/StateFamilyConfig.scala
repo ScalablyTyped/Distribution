@@ -14,25 +14,19 @@ trait StateFamilyConfig extends StObject {
 }
 object StateFamilyConfig {
   
-  @scala.inline
-  def apply(): StateFamilyConfig = {
+  inline def apply(): StateFamilyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateFamilyConfig]
   }
   
-  @scala.inline
-  implicit class StateFamilyConfigMutableBuilder[Self <: StateFamilyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StateFamilyConfig](x: Self) {
     
-    @scala.inline
-    def setIsRead(value: Boolean): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
+    inline def setIsRead(value: Boolean): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadUndefined: Self = StObject.set(x, "isRead", js.undefined)
+    inline def setIsReadUndefined: Self = StObject.set(x, "isRead", js.undefined)
     
-    @scala.inline
-    def setStateFamily(value: String): Self = StObject.set(x, "stateFamily", value.asInstanceOf[js.Any])
+    inline def setStateFamily(value: String): Self = StObject.set(x, "stateFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateFamilyUndefined: Self = StObject.set(x, "stateFamily", js.undefined)
+    inline def setStateFamilyUndefined: Self = StObject.set(x, "stateFamily", js.undefined)
   }
 }

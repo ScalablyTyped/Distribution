@@ -48,8 +48,8 @@ object subjectDatabaseEntityLoaderMod {
     @JSName("load")
     def load_softremove(operationType: `soft-remove`): js.Promise[Unit] = js.native
     
-    var queryRunner: QueryRunner = js.native
+    /* protected */ var queryRunner: QueryRunner = js.native
     
-    var subjects: js.Array[Subject] = js.native
+    /* protected */ var subjects: js.Array[Subject] = js.native
   }
 }

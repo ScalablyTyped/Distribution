@@ -13,19 +13,15 @@ trait BillingGroupMetadata extends StObject {
 }
 object BillingGroupMetadata {
   
-  @scala.inline
-  def apply(): BillingGroupMetadata = {
+  inline def apply(): BillingGroupMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingGroupMetadata]
   }
   
-  @scala.inline
-  implicit class BillingGroupMetadataMutableBuilder[Self <: BillingGroupMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGroupMetadata](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait CompositeFilter extends StObject {
 }
 object CompositeFilter {
   
-  @scala.inline
-  def apply(): CompositeFilter = {
+  inline def apply(): CompositeFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompositeFilter]
   }
   
-  @scala.inline
-  implicit class CompositeFilterMutableBuilder[Self <: CompositeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: CompositeFilter](x: Self) {
     
-    @scala.inline
-    def setLogicOperator(value: String): Self = StObject.set(x, "logicOperator", value.asInstanceOf[js.Any])
+    inline def setLogicOperator(value: String): Self = StObject.set(x, "logicOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicOperatorUndefined: Self = StObject.set(x, "logicOperator", js.undefined)
+    inline def setLogicOperatorUndefined: Self = StObject.set(x, "logicOperator", js.undefined)
     
-    @scala.inline
-    def setSubFilters(value: js.Array[Filter]): Self = StObject.set(x, "subFilters", value.asInstanceOf[js.Any])
+    inline def setSubFilters(value: js.Array[Filter]): Self = StObject.set(x, "subFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubFiltersUndefined: Self = StObject.set(x, "subFilters", js.undefined)
+    inline def setSubFiltersUndefined: Self = StObject.set(x, "subFilters", js.undefined)
     
-    @scala.inline
-    def setSubFiltersVarargs(value: Filter*): Self = StObject.set(x, "subFilters", js.Array(value :_*))
+    inline def setSubFiltersVarargs(value: Filter*): Self = StObject.set(x, "subFilters", js.Array(value :_*))
   }
 }

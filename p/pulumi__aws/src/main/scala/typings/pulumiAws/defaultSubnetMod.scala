@@ -85,21 +85,16 @@ object defaultSubnetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DefaultSubnetState): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DefaultSubnetState, opts: CustomResourceOptions): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
+    inline def get(name: String, id: Input[ID]): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
+    inline def get(name: String, id: Input[ID], state: DefaultSubnetState): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
+    inline def get(name: String, id: Input[ID], state: DefaultSubnetState, opts: CustomResourceOptions): DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultSubnet]
     
     /**
       * Returns true if the given object is an instance of DefaultSubnet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean]
   }
   
   trait DefaultSubnetArgs extends StObject {
@@ -122,35 +117,26 @@ object defaultSubnetMod {
   }
   object DefaultSubnetArgs {
     
-    @scala.inline
-    def apply(availabilityZone: Input[String]): DefaultSubnetArgs = {
+    inline def apply(availabilityZone: Input[String]): DefaultSubnetArgs = {
       val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultSubnetArgs]
     }
     
-    @scala.inline
-    implicit class DefaultSubnetArgsMutableBuilder[Self <: DefaultSubnetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultSubnetArgs](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapPublicIpOnLaunch(value: Input[Boolean]): Self = StObject.set(x, "mapPublicIpOnLaunch", value.asInstanceOf[js.Any])
+      inline def setMapPublicIpOnLaunch(value: Input[Boolean]): Self = StObject.set(x, "mapPublicIpOnLaunch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapPublicIpOnLaunchUndefined: Self = StObject.set(x, "mapPublicIpOnLaunch", js.undefined)
+      inline def setMapPublicIpOnLaunchUndefined: Self = StObject.set(x, "mapPublicIpOnLaunch", js.undefined)
       
-      @scala.inline
-      def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
+      inline def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -202,86 +188,60 @@ object defaultSubnetMod {
   }
   object DefaultSubnetState {
     
-    @scala.inline
-    def apply(): DefaultSubnetState = {
+    inline def apply(): DefaultSubnetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultSubnetState]
     }
     
-    @scala.inline
-    implicit class DefaultSubnetStateMutableBuilder[Self <: DefaultSubnetState] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultSubnetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAssignIpv6AddressOnCreation(value: Input[Boolean]): Self = StObject.set(x, "assignIpv6AddressOnCreation", value.asInstanceOf[js.Any])
+      inline def setAssignIpv6AddressOnCreation(value: Input[Boolean]): Self = StObject.set(x, "assignIpv6AddressOnCreation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignIpv6AddressOnCreationUndefined: Self = StObject.set(x, "assignIpv6AddressOnCreation", js.undefined)
+      inline def setAssignIpv6AddressOnCreationUndefined: Self = StObject.set(x, "assignIpv6AddressOnCreation", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneId(value: Input[String]): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZoneId(value: Input[String]): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "availabilityZoneId", js.undefined)
+      inline def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "availabilityZoneId", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+      inline def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
+      inline def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
       
-      @scala.inline
-      def setIpv6CidrBlock(value: Input[String]): Self = StObject.set(x, "ipv6CidrBlock", value.asInstanceOf[js.Any])
+      inline def setIpv6CidrBlock(value: Input[String]): Self = StObject.set(x, "ipv6CidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6CidrBlockAssociationId(value: Input[String]): Self = StObject.set(x, "ipv6CidrBlockAssociationId", value.asInstanceOf[js.Any])
+      inline def setIpv6CidrBlockAssociationId(value: Input[String]): Self = StObject.set(x, "ipv6CidrBlockAssociationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6CidrBlockAssociationIdUndefined: Self = StObject.set(x, "ipv6CidrBlockAssociationId", js.undefined)
+      inline def setIpv6CidrBlockAssociationIdUndefined: Self = StObject.set(x, "ipv6CidrBlockAssociationId", js.undefined)
       
-      @scala.inline
-      def setIpv6CidrBlockUndefined: Self = StObject.set(x, "ipv6CidrBlock", js.undefined)
+      inline def setIpv6CidrBlockUndefined: Self = StObject.set(x, "ipv6CidrBlock", js.undefined)
       
-      @scala.inline
-      def setMapPublicIpOnLaunch(value: Input[Boolean]): Self = StObject.set(x, "mapPublicIpOnLaunch", value.asInstanceOf[js.Any])
+      inline def setMapPublicIpOnLaunch(value: Input[Boolean]): Self = StObject.set(x, "mapPublicIpOnLaunch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapPublicIpOnLaunchUndefined: Self = StObject.set(x, "mapPublicIpOnLaunch", js.undefined)
+      inline def setMapPublicIpOnLaunchUndefined: Self = StObject.set(x, "mapPublicIpOnLaunch", js.undefined)
       
-      @scala.inline
-      def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: Input[String]): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
+      inline def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
       
-      @scala.inline
-      def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

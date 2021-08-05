@@ -24,48 +24,36 @@ trait TypeParameterType
 }
 object TypeParameterType {
   
-  @scala.inline
-  def apply(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): TypeParameterType = {
+  inline def apply(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): TypeParameterType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeParameterType]
   }
   
-  @scala.inline
-  implicit class TypeParameterTypeMutableBuilder[Self <: TypeParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParameterType](x: Self) {
     
-    @scala.inline
-    def setConstraint(
+    inline def setConstraint(
       value: ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setConstraintVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "constraint", js.Array(value :_*))
+    inline def setConstraintVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "constraint", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(
+    inline def setDefault(
       value: ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setDefaultVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "default", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

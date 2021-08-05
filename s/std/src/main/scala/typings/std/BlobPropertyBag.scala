@@ -12,25 +12,19 @@ trait BlobPropertyBag extends StObject {
 }
 object BlobPropertyBag {
   
-  @scala.inline
-  def apply(): BlobPropertyBag = {
+  inline def apply(): BlobPropertyBag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlobPropertyBag]
   }
   
-  @scala.inline
-  implicit class BlobPropertyBagMutableBuilder[Self <: BlobPropertyBag] (val x: Self) extends AnyVal {
+  extension [Self <: BlobPropertyBag](x: Self) {
     
-    @scala.inline
-    def setEndings(value: EndingType): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
+    inline def setEndings(value: EndingType): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
+    inline def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -27,23 +27,18 @@ object blockExclusionMod {
   }
   object IBlockExclusionDescriptor {
     
-    @scala.inline
-    def apply(): IBlockExclusionDescriptor = {
+    inline def apply(): IBlockExclusionDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBlockExclusionDescriptor]
     }
     
-    @scala.inline
-    implicit class IBlockExclusionDescriptorMutableBuilder[Self <: IBlockExclusionDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: IBlockExclusionDescriptor](x: Self) {
       
-      @scala.inline
-      def setVisibilities(value: js.Array[Visibility]): Self = StObject.set(x, "visibilities", value.asInstanceOf[js.Any])
+      inline def setVisibilities(value: js.Array[Visibility]): Self = StObject.set(x, "visibilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilitiesUndefined: Self = StObject.set(x, "visibilities", js.undefined)
+      inline def setVisibilitiesUndefined: Self = StObject.set(x, "visibilities", js.undefined)
       
-      @scala.inline
-      def setVisibilitiesVarargs(value: Visibility*): Self = StObject.set(x, "visibilities", js.Array(value :_*))
+      inline def setVisibilitiesVarargs(value: Visibility*): Self = StObject.set(x, "visibilities", js.Array(value :_*))
     }
   }
 }

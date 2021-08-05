@@ -14,8 +14,7 @@ object tooltipProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TooltipProviderProps extends StObject {
     
@@ -23,17 +22,14 @@ object tooltipProviderMod {
   }
   object TooltipProviderProps {
     
-    @scala.inline
-    def apply(container: MutableRefObject[HTMLDivElement]): TooltipProviderProps = {
+    inline def apply(container: MutableRefObject[HTMLDivElement]): TooltipProviderProps = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProviderProps]
     }
     
-    @scala.inline
-    implicit class TooltipProviderPropsMutableBuilder[Self <: TooltipProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipProviderProps](x: Self) {
       
-      @scala.inline
-      def setContainer(value: MutableRefObject[HTMLDivElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: MutableRefObject[HTMLDivElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }
   }
 }

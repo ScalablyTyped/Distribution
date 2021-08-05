@@ -17,8 +17,7 @@ trait BIncomingQueueBlocked extends StObject {
 }
 object BIncomingQueueBlocked {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bIncomingQueueBlocked: Boolean,
     bOutgoingQueueBlocked: Boolean,
     bOutgoingQueuePaused: Boolean,
@@ -28,19 +27,14 @@ object BIncomingQueueBlocked {
     __obj.asInstanceOf[BIncomingQueueBlocked]
   }
   
-  @scala.inline
-  implicit class BIncomingQueueBlockedMutableBuilder[Self <: BIncomingQueueBlocked] (val x: Self) extends AnyVal {
+  extension [Self <: BIncomingQueueBlocked](x: Self) {
     
-    @scala.inline
-    def setBIncomingQueueBlocked(value: Boolean): Self = StObject.set(x, "bIncomingQueueBlocked", value.asInstanceOf[js.Any])
+    inline def setBIncomingQueueBlocked(value: Boolean): Self = StObject.set(x, "bIncomingQueueBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBOutgoingQueueBlocked(value: Boolean): Self = StObject.set(x, "bOutgoingQueueBlocked", value.asInstanceOf[js.Any])
+    inline def setBOutgoingQueueBlocked(value: Boolean): Self = StObject.set(x, "bOutgoingQueueBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBOutgoingQueuePaused(value: Boolean): Self = StObject.set(x, "bOutgoingQueuePaused", value.asInstanceOf[js.Any])
+    inline def setBOutgoingQueuePaused(value: Boolean): Self = StObject.set(x, "bOutgoingQueuePaused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
+    inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }
 }

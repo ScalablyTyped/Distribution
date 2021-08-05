@@ -23,8 +23,7 @@ trait BootstrapClientChart
 }
 object BootstrapClientChart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     ArgumentAxisClick: ASPxClientEvent[
       BootstrapClientCoordinateSystemChartArgumentAxisClickEventHandler[BootstrapClientChartBase]
@@ -83,13 +82,10 @@ object BootstrapClientChart {
     __obj.asInstanceOf[BootstrapClientChart]
   }
   
-  @scala.inline
-  implicit class BootstrapClientChartMutableBuilder[Self <: BootstrapClientChart] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientChart](x: Self) {
     
-    @scala.inline
-    def setZoomEnd(value: ASPxClientEvent[BootstrapClientChartZoomEndEventHandler[BootstrapClientChart]]): Self = StObject.set(x, "ZoomEnd", value.asInstanceOf[js.Any])
+    inline def setZoomEnd(value: ASPxClientEvent[BootstrapClientChartZoomEndEventHandler[BootstrapClientChart]]): Self = StObject.set(x, "ZoomEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomStart(value: ASPxClientEvent[BootstrapClientChartZoomStartEventHandler[BootstrapClientChart]]): Self = StObject.set(x, "ZoomStart", value.asInstanceOf[js.Any])
+    inline def setZoomStart(value: ASPxClientEvent[BootstrapClientChartZoomStartEventHandler[BootstrapClientChart]]): Self = StObject.set(x, "ZoomStart", value.asInstanceOf[js.Any])
   }
 }

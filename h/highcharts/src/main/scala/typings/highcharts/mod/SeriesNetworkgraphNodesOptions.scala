@@ -51,54 +51,39 @@ trait SeriesNetworkgraphNodesOptions extends StObject {
 }
 object SeriesNetworkgraphNodesOptions {
   
-  @scala.inline
-  def apply(): SeriesNetworkgraphNodesOptions = {
+  inline def apply(): SeriesNetworkgraphNodesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesNetworkgraphNodesOptions]
   }
   
-  @scala.inline
-  implicit class SeriesNetworkgraphNodesOptionsMutableBuilder[Self <: SeriesNetworkgraphNodesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesNetworkgraphNodesOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndexUndefined: Self = StObject.set(x, "colorIndex", js.undefined)
+    inline def setColorIndexUndefined: Self = StObject.set(x, "colorIndex", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDataLabels(
+    inline def setDataLabels(
       value: SeriesNetworkgraphDataLabelsOptionsObject | js.Array[SeriesNetworkgraphDataLabelsOptionsObject]
     ): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    @scala.inline
-    def setDataLabelsVarargs(value: SeriesNetworkgraphDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: SeriesNetworkgraphDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+    inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+    inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

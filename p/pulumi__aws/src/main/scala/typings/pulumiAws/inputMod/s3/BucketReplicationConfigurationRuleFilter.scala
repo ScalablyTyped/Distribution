@@ -21,25 +21,19 @@ trait BucketReplicationConfigurationRuleFilter extends StObject {
 }
 object BucketReplicationConfigurationRuleFilter {
   
-  @scala.inline
-  def apply(): BucketReplicationConfigurationRuleFilter = {
+  inline def apply(): BucketReplicationConfigurationRuleFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketReplicationConfigurationRuleFilter]
   }
   
-  @scala.inline
-  implicit class BucketReplicationConfigurationRuleFilterMutableBuilder[Self <: BucketReplicationConfigurationRuleFilter] (val x: Self) extends AnyVal {
+  extension [Self <: BucketReplicationConfigurationRuleFilter](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

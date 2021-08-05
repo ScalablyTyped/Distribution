@@ -19,22 +19,17 @@ trait RuleGroupRuleStatementIpSetReferenceStatement extends StObject {
 }
 object RuleGroupRuleStatementIpSetReferenceStatement {
   
-  @scala.inline
-  def apply(arn: Input[String]): RuleGroupRuleStatementIpSetReferenceStatement = {
+  inline def apply(arn: Input[String]): RuleGroupRuleStatementIpSetReferenceStatement = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementIpSetReferenceStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementIpSetReferenceStatementMutableBuilder[Self <: RuleGroupRuleStatementIpSetReferenceStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementIpSetReferenceStatement](x: Self) {
     
-    @scala.inline
-    def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSetForwardedIpConfig(value: Input[RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig]): Self = StObject.set(x, "ipSetForwardedIpConfig", value.asInstanceOf[js.Any])
+    inline def setIpSetForwardedIpConfig(value: Input[RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig]): Self = StObject.set(x, "ipSetForwardedIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSetForwardedIpConfigUndefined: Self = StObject.set(x, "ipSetForwardedIpConfig", js.undefined)
+    inline def setIpSetForwardedIpConfigUndefined: Self = StObject.set(x, "ipSetForwardedIpConfig", js.undefined)
   }
 }

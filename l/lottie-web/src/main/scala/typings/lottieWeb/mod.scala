@@ -36,59 +36,42 @@ object mod extends Shortcut {
   }
   object AnimationConfig {
     
-    @scala.inline
-    def apply(container: Element): AnimationConfig = {
+    inline def apply(container: Element): AnimationConfig = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationConfig]
     }
     
-    @scala.inline
-    implicit class AnimationConfigMutableBuilder[Self <: AnimationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationConfig](x: Self) {
       
-      @scala.inline
-      def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
+      inline def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
+      inline def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSegment(value: AnimationSegment): Self = StObject.set(x, "initialSegment", value.asInstanceOf[js.Any])
+      inline def setInitialSegment(value: AnimationSegment): Self = StObject.set(x, "initialSegment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSegmentUndefined: Self = StObject.set(x, "initialSegment", js.undefined)
+      inline def setInitialSegmentUndefined: Self = StObject.set(x, "initialSegment", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean | Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean | Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: svg | canvas | html): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: svg | canvas | html): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererSettings(value: SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
+      inline def setRendererSettings(value: SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererSettingsUndefined: Self = StObject.set(x, "rendererSettings", js.undefined)
+      inline def setRendererSettingsUndefined: Self = StObject.set(x, "rendererSettings", js.undefined)
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     }
   }
   
@@ -100,20 +83,16 @@ object mod extends Shortcut {
   }
   object AnimationConfigWithData {
     
-    @scala.inline
-    def apply(container: Element): AnimationConfigWithData = {
+    inline def apply(container: Element): AnimationConfigWithData = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationConfigWithData]
     }
     
-    @scala.inline
-    implicit class AnimationConfigWithDataMutableBuilder[Self <: AnimationConfigWithData] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationConfigWithData](x: Self) {
       
-      @scala.inline
-      def setAnimationData(value: js.Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
+      inline def setAnimationData(value: js.Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDataUndefined: Self = StObject.set(x, "animationData", js.undefined)
+      inline def setAnimationDataUndefined: Self = StObject.set(x, "animationData", js.undefined)
     }
   }
   
@@ -125,20 +104,16 @@ object mod extends Shortcut {
   }
   object AnimationConfigWithPath {
     
-    @scala.inline
-    def apply(container: Element): AnimationConfigWithPath = {
+    inline def apply(container: Element): AnimationConfigWithPath = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationConfigWithPath]
     }
     
-    @scala.inline
-    implicit class AnimationConfigWithPathMutableBuilder[Self <: AnimationConfigWithPath] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationConfigWithPath](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -149,11 +124,9 @@ object mod extends Shortcut {
   trait AnimationDirection extends StObject
   object AnimationDirection {
     
-    @scala.inline
-    def `-1`: typings.lottieWeb.lottieWebNumbers.`-1` = -1.asInstanceOf[typings.lottieWeb.lottieWebNumbers.`-1`]
+    inline def `-1`: typings.lottieWeb.lottieWebNumbers.`-1` = -1.asInstanceOf[typings.lottieWeb.lottieWebNumbers.`-1`]
     
-    @scala.inline
-    def `1`: typings.lottieWeb.lottieWebNumbers.`1` = 1.asInstanceOf[typings.lottieWeb.lottieWebNumbers.`1`]
+    inline def `1`: typings.lottieWeb.lottieWebNumbers.`1` = 1.asInstanceOf[typings.lottieWeb.lottieWebNumbers.`1`]
   }
   
   type AnimationEventCallback[T] = js.Function1[/* args */ T, Unit]
@@ -174,38 +147,27 @@ object mod extends Shortcut {
   trait AnimationEventName extends StObject
   object AnimationEventName {
     
-    @scala.inline
-    def DOMLoaded: typings.lottieWeb.lottieWebStrings.DOMLoaded = "DOMLoaded".asInstanceOf[typings.lottieWeb.lottieWebStrings.DOMLoaded]
+    inline def DOMLoaded: typings.lottieWeb.lottieWebStrings.DOMLoaded = "DOMLoaded".asInstanceOf[typings.lottieWeb.lottieWebStrings.DOMLoaded]
     
-    @scala.inline
-    def complete: typings.lottieWeb.lottieWebStrings.complete = "complete".asInstanceOf[typings.lottieWeb.lottieWebStrings.complete]
+    inline def complete: typings.lottieWeb.lottieWebStrings.complete = "complete".asInstanceOf[typings.lottieWeb.lottieWebStrings.complete]
     
-    @scala.inline
-    def config_ready: typings.lottieWeb.lottieWebStrings.config_ready = "config_ready".asInstanceOf[typings.lottieWeb.lottieWebStrings.config_ready]
+    inline def config_ready: typings.lottieWeb.lottieWebStrings.config_ready = "config_ready".asInstanceOf[typings.lottieWeb.lottieWebStrings.config_ready]
     
-    @scala.inline
-    def data_failed: typings.lottieWeb.lottieWebStrings.data_failed = "data_failed".asInstanceOf[typings.lottieWeb.lottieWebStrings.data_failed]
+    inline def data_failed: typings.lottieWeb.lottieWebStrings.data_failed = "data_failed".asInstanceOf[typings.lottieWeb.lottieWebStrings.data_failed]
     
-    @scala.inline
-    def data_ready: typings.lottieWeb.lottieWebStrings.data_ready = "data_ready".asInstanceOf[typings.lottieWeb.lottieWebStrings.data_ready]
+    inline def data_ready: typings.lottieWeb.lottieWebStrings.data_ready = "data_ready".asInstanceOf[typings.lottieWeb.lottieWebStrings.data_ready]
     
-    @scala.inline
-    def destroy: typings.lottieWeb.lottieWebStrings.destroy = "destroy".asInstanceOf[typings.lottieWeb.lottieWebStrings.destroy]
+    inline def destroy: typings.lottieWeb.lottieWebStrings.destroy = "destroy".asInstanceOf[typings.lottieWeb.lottieWebStrings.destroy]
     
-    @scala.inline
-    def enterFrame: typings.lottieWeb.lottieWebStrings.enterFrame = "enterFrame".asInstanceOf[typings.lottieWeb.lottieWebStrings.enterFrame]
+    inline def enterFrame: typings.lottieWeb.lottieWebStrings.enterFrame = "enterFrame".asInstanceOf[typings.lottieWeb.lottieWebStrings.enterFrame]
     
-    @scala.inline
-    def error: typings.lottieWeb.lottieWebStrings.error = "error".asInstanceOf[typings.lottieWeb.lottieWebStrings.error]
+    inline def error: typings.lottieWeb.lottieWebStrings.error = "error".asInstanceOf[typings.lottieWeb.lottieWebStrings.error]
     
-    @scala.inline
-    def loaded_images: typings.lottieWeb.lottieWebStrings.loaded_images = "loaded_images".asInstanceOf[typings.lottieWeb.lottieWebStrings.loaded_images]
+    inline def loaded_images: typings.lottieWeb.lottieWebStrings.loaded_images = "loaded_images".asInstanceOf[typings.lottieWeb.lottieWebStrings.loaded_images]
     
-    @scala.inline
-    def loopComplete: typings.lottieWeb.lottieWebStrings.loopComplete = "loopComplete".asInstanceOf[typings.lottieWeb.lottieWebStrings.loopComplete]
+    inline def loopComplete: typings.lottieWeb.lottieWebStrings.loopComplete = "loopComplete".asInstanceOf[typings.lottieWeb.lottieWebStrings.loopComplete]
     
-    @scala.inline
-    def segmentStart: typings.lottieWeb.lottieWebStrings.segmentStart = "segmentStart".asInstanceOf[typings.lottieWeb.lottieWebStrings.segmentStart]
+    inline def segmentStart: typings.lottieWeb.lottieWebStrings.segmentStart = "segmentStart".asInstanceOf[typings.lottieWeb.lottieWebStrings.segmentStart]
   }
   
   @js.native
@@ -322,26 +284,20 @@ object mod extends Shortcut {
   }
   object BaseRendererConfig {
     
-    @scala.inline
-    def apply(): BaseRendererConfig = {
+    inline def apply(): BaseRendererConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseRendererConfig]
     }
     
-    @scala.inline
-    implicit class BaseRendererConfigMutableBuilder[Self <: BaseRendererConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BaseRendererConfig](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setImagePreserveAspectRatio(value: String): Self = StObject.set(x, "imagePreserveAspectRatio", value.asInstanceOf[js.Any])
+      inline def setImagePreserveAspectRatio(value: String): Self = StObject.set(x, "imagePreserveAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagePreserveAspectRatioUndefined: Self = StObject.set(x, "imagePreserveAspectRatio", js.undefined)
+      inline def setImagePreserveAspectRatioUndefined: Self = StObject.set(x, "imagePreserveAspectRatio", js.undefined)
     }
   }
   
@@ -359,38 +315,28 @@ object mod extends Shortcut {
   }
   object CanvasRendererConfig {
     
-    @scala.inline
-    def apply(): CanvasRendererConfig = {
+    inline def apply(): CanvasRendererConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CanvasRendererConfig]
     }
     
-    @scala.inline
-    implicit class CanvasRendererConfigMutableBuilder[Self <: CanvasRendererConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasRendererConfig](x: Self) {
       
-      @scala.inline
-      def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
+      inline def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
+      inline def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
       
-      @scala.inline
-      def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+      inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+      inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
       
-      @scala.inline
-      def setProgressiveLoad(value: Boolean): Self = StObject.set(x, "progressiveLoad", value.asInstanceOf[js.Any])
+      inline def setProgressiveLoad(value: Boolean): Self = StObject.set(x, "progressiveLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressiveLoadUndefined: Self = StObject.set(x, "progressiveLoad", js.undefined)
+      inline def setProgressiveLoadUndefined: Self = StObject.set(x, "progressiveLoad", js.undefined)
     }
   }
   
@@ -406,26 +352,20 @@ object mod extends Shortcut {
   }
   object FilterSizeConfig {
     
-    @scala.inline
-    def apply(height: String, width: String, x: String, y: String): FilterSizeConfig = {
+    inline def apply(height: String, width: String, x: String, y: String): FilterSizeConfig = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterSizeConfig]
     }
     
-    @scala.inline
-    implicit class FilterSizeConfigMutableBuilder[Self <: FilterSizeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FilterSizeConfig](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -437,20 +377,16 @@ object mod extends Shortcut {
   }
   object HTMLRendererConfig {
     
-    @scala.inline
-    def apply(): HTMLRendererConfig = {
+    inline def apply(): HTMLRendererConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HTMLRendererConfig]
     }
     
-    @scala.inline
-    implicit class HTMLRendererConfigMutableBuilder[Self <: HTMLRendererConfig] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLRendererConfig](x: Self) {
       
-      @scala.inline
-      def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
+      inline def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
+      inline def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
     }
   }
   
@@ -520,68 +456,48 @@ object mod extends Shortcut {
   }
   object SVGRendererConfig {
     
-    @scala.inline
-    def apply(): SVGRendererConfig = {
+    inline def apply(): SVGRendererConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SVGRendererConfig]
     }
     
-    @scala.inline
-    implicit class SVGRendererConfigMutableBuilder[Self <: SVGRendererConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SVGRendererConfig](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFilterSize(value: FilterSizeConfig): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
+      inline def setFilterSize(value: FilterSizeConfig): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterSizeUndefined: Self = StObject.set(x, "filterSize", js.undefined)
+      inline def setFilterSizeUndefined: Self = StObject.set(x, "filterSize", js.undefined)
       
-      @scala.inline
-      def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+      inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
       
-      @scala.inline
-      def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
+      inline def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
+      inline def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
       
-      @scala.inline
-      def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+      inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+      inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
       
-      @scala.inline
-      def setProgressiveLoad(value: Boolean): Self = StObject.set(x, "progressiveLoad", value.asInstanceOf[js.Any])
+      inline def setProgressiveLoad(value: Boolean): Self = StObject.set(x, "progressiveLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressiveLoadUndefined: Self = StObject.set(x, "progressiveLoad", js.undefined)
+      inline def setProgressiveLoadUndefined: Self = StObject.set(x, "progressiveLoad", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setViewBoxOnly(value: Boolean): Self = StObject.set(x, "viewBoxOnly", value.asInstanceOf[js.Any])
+      inline def setViewBoxOnly(value: Boolean): Self = StObject.set(x, "viewBoxOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBoxOnlyUndefined: Self = StObject.set(x, "viewBoxOnly", js.undefined)
+      inline def setViewBoxOnlyUndefined: Self = StObject.set(x, "viewBoxOnly", js.undefined)
       
-      @scala.inline
-      def setViewBoxSize(value: String): Self = StObject.set(x, "viewBoxSize", value.asInstanceOf[js.Any])
+      inline def setViewBoxSize(value: String): Self = StObject.set(x, "viewBoxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBoxSizeUndefined: Self = StObject.set(x, "viewBoxSize", js.undefined)
+      inline def setViewBoxSizeUndefined: Self = StObject.set(x, "viewBoxSize", js.undefined)
     }
   }
   

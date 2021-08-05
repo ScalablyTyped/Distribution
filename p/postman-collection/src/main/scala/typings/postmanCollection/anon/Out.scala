@@ -12,19 +12,15 @@ trait Out extends StObject {
 }
 object Out {
   
-  @scala.inline
-  def apply(in: js.Any => js.Any, out: js.Any => js.Any): Out = {
+  inline def apply(in: js.Any => js.Any, out: js.Any => js.Any): Out = {
     val __obj = js.Dynamic.literal(in = js.Any.fromFunction1(in), out = js.Any.fromFunction1(out))
     __obj.asInstanceOf[Out]
   }
   
-  @scala.inline
-  implicit class OutMutableBuilder[Self <: Out] (val x: Self) extends AnyVal {
+  extension [Self <: Out](x: Self) {
     
-    @scala.inline
-    def setIn(value: js.Any => js.Any): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: js.Any => js.Any): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOut(value: js.Any => js.Any): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
+    inline def setOut(value: js.Any => js.Any): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
   }
 }

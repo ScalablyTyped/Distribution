@@ -22,8 +22,7 @@ trait SpeechSynthesisUtteranceEventMap extends StObject {
 }
 object SpeechSynthesisUtteranceEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundary: SpeechSynthesisEvent,
     end: SpeechSynthesisEvent,
     error: SpeechSynthesisErrorEvent,
@@ -36,28 +35,20 @@ object SpeechSynthesisUtteranceEventMap {
     __obj.asInstanceOf[SpeechSynthesisUtteranceEventMap]
   }
   
-  @scala.inline
-  implicit class SpeechSynthesisUtteranceEventMapMutableBuilder[Self <: SpeechSynthesisUtteranceEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechSynthesisUtteranceEventMap](x: Self) {
     
-    @scala.inline
-    def setBoundary(value: SpeechSynthesisEvent): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: SpeechSynthesisEvent): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: SpeechSynthesisEvent): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: SpeechSynthesisEvent): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: SpeechSynthesisErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SpeechSynthesisErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMark(value: SpeechSynthesisEvent): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setMark(value: SpeechSynthesisEvent): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: SpeechSynthesisEvent): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: SpeechSynthesisEvent): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResume(value: SpeechSynthesisEvent): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
+    inline def setResume(value: SpeechSynthesisEvent): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: SpeechSynthesisEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: SpeechSynthesisEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

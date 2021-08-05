@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrimmingType extends StObject
 object TrimmingType {
   
-  @scala.inline
-  def `draw-line`: typings.ipp.ippStrings.`draw-line` = "draw-line".asInstanceOf[typings.ipp.ippStrings.`draw-line`]
+  inline def `draw-line`: typings.ipp.ippStrings.`draw-line` = "draw-line".asInstanceOf[typings.ipp.ippStrings.`draw-line`]
   
-  @scala.inline
-  def full: typings.ipp.ippStrings.full = "full".asInstanceOf[typings.ipp.ippStrings.full]
+  inline def full: typings.ipp.ippStrings.full = "full".asInstanceOf[typings.ipp.ippStrings.full]
   
-  @scala.inline
-  def partial: typings.ipp.ippStrings.partial = "partial".asInstanceOf[typings.ipp.ippStrings.partial]
+  inline def partial: typings.ipp.ippStrings.partial = "partial".asInstanceOf[typings.ipp.ippStrings.partial]
   
-  @scala.inline
-  def perforate: typings.ipp.ippStrings.perforate = "perforate".asInstanceOf[typings.ipp.ippStrings.perforate]
+  inline def perforate: typings.ipp.ippStrings.perforate = "perforate".asInstanceOf[typings.ipp.ippStrings.perforate]
   
-  @scala.inline
-  def score: typings.ipp.ippStrings.score = "score".asInstanceOf[typings.ipp.ippStrings.score]
+  inline def score: typings.ipp.ippStrings.score = "score".asInstanceOf[typings.ipp.ippStrings.score]
   
-  @scala.inline
-  def tab: typings.ipp.ippStrings.tab = "tab".asInstanceOf[typings.ipp.ippStrings.tab]
+  inline def tab: typings.ipp.ippStrings.tab = "tab".asInstanceOf[typings.ipp.ippStrings.tab]
 }

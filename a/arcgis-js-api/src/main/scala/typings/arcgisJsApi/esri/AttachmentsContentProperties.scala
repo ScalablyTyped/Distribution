@@ -19,19 +19,15 @@ trait AttachmentsContentProperties
 }
 object AttachmentsContentProperties {
   
-  @scala.inline
-  def apply(): AttachmentsContentProperties = {
+  inline def apply(): AttachmentsContentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentsContentProperties]
   }
   
-  @scala.inline
-  implicit class AttachmentsContentPropertiesMutableBuilder[Self <: AttachmentsContentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentsContentProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayType(value: preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+    inline def setDisplayType(value: preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
+    inline def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
   }
 }

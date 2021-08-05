@@ -23,22 +23,17 @@ trait StopJobRequest extends StObject {
 }
 object StopJobRequest {
   
-  @scala.inline
-  def apply(appId: AppId, branchName: BranchName, jobId: JobId): StopJobRequest = {
+  inline def apply(appId: AppId, branchName: BranchName, jobId: JobId): StopJobRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopJobRequest]
   }
   
-  @scala.inline
-  implicit class StopJobRequestMutableBuilder[Self <: StopJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopJobRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
   }
 }

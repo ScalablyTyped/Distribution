@@ -12,19 +12,15 @@ trait Identifier extends StObject {
 }
 object Identifier {
   
-  @scala.inline
-  def apply(identifier: String, text: String): Identifier = {
+  inline def apply(identifier: String, text: String): Identifier = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identifier]
   }
   
-  @scala.inline
-  implicit class IdentifierMutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
+  extension [Self <: Identifier](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

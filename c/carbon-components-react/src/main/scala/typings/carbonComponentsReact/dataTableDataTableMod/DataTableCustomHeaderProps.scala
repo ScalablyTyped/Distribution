@@ -23,8 +23,7 @@ trait DataTableCustomHeaderProps[H /* <: Key */] extends StObject {
 }
 object DataTableCustomHeaderProps {
   
-  @scala.inline
-  def apply[H /* <: Key */](
+  inline def apply[H /* <: Key */](
     isSortHeader: Boolean,
     key: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
@@ -34,25 +33,18 @@ object DataTableCustomHeaderProps {
     __obj.asInstanceOf[DataTableCustomHeaderProps[H]]
   }
   
-  @scala.inline
-  implicit class DataTableCustomHeaderPropsMutableBuilder[Self <: DataTableCustomHeaderProps[?], H /* <: Key */] (val x: Self & DataTableCustomHeaderProps[H]) extends AnyVal {
+  extension [Self <: DataTableCustomHeaderProps[?], H /* <: Key */](x: Self & DataTableCustomHeaderProps[H]) {
     
-    @scala.inline
-    def setIsSortHeader(value: Boolean): Self = StObject.set(x, "isSortHeader", value.asInstanceOf[js.Any])
+    inline def setIsSortHeader(value: Boolean): Self = StObject.set(x, "isSortHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+    inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+    inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
-    @scala.inline
-    def setKey(value: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortDirection(value: DataTableSortState): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: DataTableSortState): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
   }
 }

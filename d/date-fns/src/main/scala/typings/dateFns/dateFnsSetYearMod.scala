@@ -9,10 +9,8 @@ object dateFnsSetYearMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double, year: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, year: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, year: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, year: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/setYear", JSImport.Default)
     @js.native

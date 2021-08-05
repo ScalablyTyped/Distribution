@@ -13,19 +13,15 @@ trait ReflectionPointer
 }
 object ReflectionPointer {
   
-  @scala.inline
-  def apply(id: ModelToObject[Double] | Double): ReflectionPointer = {
+  inline def apply(id: ModelToObject[Double] | Double): ReflectionPointer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReflectionPointer]
   }
   
-  @scala.inline
-  implicit class ReflectionPointerMutableBuilder[Self <: ReflectionPointer] (val x: Self) extends AnyVal {
+  extension [Self <: ReflectionPointer](x: Self) {
     
-    @scala.inline
-    def setId(value: ModelToObject[Double] | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ModelToObject[Double] | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "id", js.Array(value :_*))
   }
 }

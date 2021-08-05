@@ -24,8 +24,7 @@ trait DeferPlaceholder
 }
 object DeferPlaceholder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: PayloadData,
     label: String,
     path: js.Array[String],
@@ -36,28 +35,20 @@ object DeferPlaceholder {
     __obj.asInstanceOf[DeferPlaceholder]
   }
   
-  @scala.inline
-  implicit class DeferPlaceholderMutableBuilder[Self <: DeferPlaceholder] (val x: Self) extends AnyVal {
+  extension [Self <: DeferPlaceholder](x: Self) {
     
-    @scala.inline
-    def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: defer_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: defer_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setSelector(value: NormalizationSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: NormalizationSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

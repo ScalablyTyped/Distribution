@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOMathType extends StObject
 object WdOMathType {
   
-  @scala.inline
-  def wdOMathDisplay: `0` = 0.asInstanceOf[`0`]
+  inline def wdOMathDisplay: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdOMathInline: `1` = 1.asInstanceOf[`1`]
+  inline def wdOMathInline: `1` = 1.asInstanceOf[`1`]
 }

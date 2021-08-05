@@ -62,68 +62,48 @@ object mod extends Shortcut {
   }
   object HammerOptionsWithRecognizers {
     
-    @scala.inline
-    def apply(): HammerOptionsWithRecognizers = {
+    inline def apply(): HammerOptionsWithRecognizers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HammerOptionsWithRecognizers]
     }
     
-    @scala.inline
-    implicit class HammerOptionsWithRecognizersMutableBuilder[Self <: HammerOptionsWithRecognizers] (val x: Self) extends AnyVal {
+    extension [Self <: HammerOptionsWithRecognizers](x: Self) {
       
-      @scala.inline
-      def setCssProps(value: CssProps): Self = StObject.set(x, "cssProps", value.asInstanceOf[js.Any])
+      inline def setCssProps(value: CssProps): Self = StObject.set(x, "cssProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssPropsUndefined: Self = StObject.set(x, "cssProps", js.undefined)
+      inline def setCssPropsUndefined: Self = StObject.set(x, "cssProps", js.undefined)
       
-      @scala.inline
-      def setDomEvents(value: Boolean): Self = StObject.set(x, "domEvents", value.asInstanceOf[js.Any])
+      inline def setDomEvents(value: Boolean): Self = StObject.set(x, "domEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomEventsUndefined: Self = StObject.set(x, "domEvents", js.undefined)
+      inline def setDomEventsUndefined: Self = StObject.set(x, "domEvents", js.undefined)
       
-      @scala.inline
-      def setEnable(value: Boolean | (js.Function1[/* manager */ HammerManager, Boolean])): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean | (js.Function1[/* manager */ HammerManager, Boolean])): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableFunction1(value: /* manager */ HammerManager => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+      inline def setEnableFunction1(value: /* manager */ HammerManager => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setInputClass(value: HammerInput): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
+      inline def setInputClass(value: HammerInput): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputClassUndefined: Self = StObject.set(x, "inputClass", js.undefined)
+      inline def setInputClassUndefined: Self = StObject.set(x, "inputClass", js.undefined)
       
-      @scala.inline
-      def setInputTarget(value: EventTarget): Self = StObject.set(x, "inputTarget", value.asInstanceOf[js.Any])
+      inline def setInputTarget(value: EventTarget): Self = StObject.set(x, "inputTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTargetUndefined: Self = StObject.set(x, "inputTarget", js.undefined)
+      inline def setInputTargetUndefined: Self = StObject.set(x, "inputTarget", js.undefined)
       
-      @scala.inline
-      def setPreset(value: js.Array[RecognizerTuple]): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: js.Array[RecognizerTuple]): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value :_*))
+      inline def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value :_*))
       
-      @scala.inline
-      def setRecognizers(value: StringDictionary[RecognizerOptions]): Self = StObject.set(x, "recognizers", value.asInstanceOf[js.Any])
+      inline def setRecognizers(value: StringDictionary[RecognizerOptions]): Self = StObject.set(x, "recognizers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecognizersUndefined: Self = StObject.set(x, "recognizers", js.undefined)
+      inline def setRecognizersUndefined: Self = StObject.set(x, "recognizers", js.undefined)
       
-      @scala.inline
-      def setTouchAction(value: String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
+      inline def setTouchAction(value: String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
+      inline def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
     }
   }
   
@@ -185,166 +165,114 @@ object mod extends Shortcut {
   }
   object ReactHammerProps {
     
-    @scala.inline
-    def apply(): ReactHammerProps = {
+    inline def apply(): ReactHammerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactHammerProps]
     }
     
-    @scala.inline
-    implicit class ReactHammerPropsMutableBuilder[Self <: ReactHammerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactHammerProps](x: Self) {
       
-      @scala.inline
-      def setAction(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setDirection(
+      inline def setDirection(
         value: DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setOnDoubleTap(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onDoubleTap", js.Any.fromFunction1(value))
+      inline def setOnDoubleTap(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onDoubleTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleTapUndefined: Self = StObject.set(x, "onDoubleTap", js.undefined)
+      inline def setOnDoubleTapUndefined: Self = StObject.set(x, "onDoubleTap", js.undefined)
       
-      @scala.inline
-      def setOnPan(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
+      inline def setOnPan(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPanCancel(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPanCancel", js.Any.fromFunction1(value))
+      inline def setOnPanCancel(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPanCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPanCancelUndefined: Self = StObject.set(x, "onPanCancel", js.undefined)
+      inline def setOnPanCancelUndefined: Self = StObject.set(x, "onPanCancel", js.undefined)
       
-      @scala.inline
-      def setOnPanEnd(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPanEnd", js.Any.fromFunction1(value))
+      inline def setOnPanEnd(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPanEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPanEndUndefined: Self = StObject.set(x, "onPanEnd", js.undefined)
+      inline def setOnPanEndUndefined: Self = StObject.set(x, "onPanEnd", js.undefined)
       
-      @scala.inline
-      def setOnPanStart(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPanStart", js.Any.fromFunction1(value))
+      inline def setOnPanStart(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPanStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPanStartUndefined: Self = StObject.set(x, "onPanStart", js.undefined)
+      inline def setOnPanStartUndefined: Self = StObject.set(x, "onPanStart", js.undefined)
       
-      @scala.inline
-      def setOnPanUndefined: Self = StObject.set(x, "onPan", js.undefined)
+      inline def setOnPanUndefined: Self = StObject.set(x, "onPan", js.undefined)
       
-      @scala.inline
-      def setOnPinch(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinch", js.Any.fromFunction1(value))
+      inline def setOnPinch(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPinchCancel(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchCancel", js.Any.fromFunction1(value))
+      inline def setOnPinchCancel(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPinchCancelUndefined: Self = StObject.set(x, "onPinchCancel", js.undefined)
+      inline def setOnPinchCancelUndefined: Self = StObject.set(x, "onPinchCancel", js.undefined)
       
-      @scala.inline
-      def setOnPinchEnd(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchEnd", js.Any.fromFunction1(value))
+      inline def setOnPinchEnd(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPinchEndUndefined: Self = StObject.set(x, "onPinchEnd", js.undefined)
+      inline def setOnPinchEndUndefined: Self = StObject.set(x, "onPinchEnd", js.undefined)
       
-      @scala.inline
-      def setOnPinchIn(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchIn", js.Any.fromFunction1(value))
+      inline def setOnPinchIn(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPinchInUndefined: Self = StObject.set(x, "onPinchIn", js.undefined)
+      inline def setOnPinchInUndefined: Self = StObject.set(x, "onPinchIn", js.undefined)
       
-      @scala.inline
-      def setOnPinchOut(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchOut", js.Any.fromFunction1(value))
+      inline def setOnPinchOut(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPinchOutUndefined: Self = StObject.set(x, "onPinchOut", js.undefined)
+      inline def setOnPinchOutUndefined: Self = StObject.set(x, "onPinchOut", js.undefined)
       
-      @scala.inline
-      def setOnPinchStart(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchStart", js.Any.fromFunction1(value))
+      inline def setOnPinchStart(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPinchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPinchStartUndefined: Self = StObject.set(x, "onPinchStart", js.undefined)
+      inline def setOnPinchStartUndefined: Self = StObject.set(x, "onPinchStart", js.undefined)
       
-      @scala.inline
-      def setOnPinchUndefined: Self = StObject.set(x, "onPinch", js.undefined)
+      inline def setOnPinchUndefined: Self = StObject.set(x, "onPinch", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setOnPressUp(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPressUp", js.Any.fromFunction1(value))
+      inline def setOnPressUp(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onPressUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressUpUndefined: Self = StObject.set(x, "onPressUp", js.undefined)
+      inline def setOnPressUpUndefined: Self = StObject.set(x, "onPressUp", js.undefined)
       
-      @scala.inline
-      def setOnRotate(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotate", js.Any.fromFunction1(value))
+      inline def setOnRotate(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRotateCancel(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateCancel", js.Any.fromFunction1(value))
+      inline def setOnRotateCancel(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRotateCancelUndefined: Self = StObject.set(x, "onRotateCancel", js.undefined)
+      inline def setOnRotateCancelUndefined: Self = StObject.set(x, "onRotateCancel", js.undefined)
       
-      @scala.inline
-      def setOnRotateEnd(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateEnd", js.Any.fromFunction1(value))
+      inline def setOnRotateEnd(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRotateEndUndefined: Self = StObject.set(x, "onRotateEnd", js.undefined)
+      inline def setOnRotateEndUndefined: Self = StObject.set(x, "onRotateEnd", js.undefined)
       
-      @scala.inline
-      def setOnRotateMove(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateMove", js.Any.fromFunction1(value))
+      inline def setOnRotateMove(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRotateMoveUndefined: Self = StObject.set(x, "onRotateMove", js.undefined)
+      inline def setOnRotateMoveUndefined: Self = StObject.set(x, "onRotateMove", js.undefined)
       
-      @scala.inline
-      def setOnRotateStart(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateStart", js.Any.fromFunction1(value))
+      inline def setOnRotateStart(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onRotateStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRotateStartUndefined: Self = StObject.set(x, "onRotateStart", js.undefined)
+      inline def setOnRotateStartUndefined: Self = StObject.set(x, "onRotateStart", js.undefined)
       
-      @scala.inline
-      def setOnRotateUndefined: Self = StObject.set(x, "onRotate", js.undefined)
+      inline def setOnRotateUndefined: Self = StObject.set(x, "onRotate", js.undefined)
       
-      @scala.inline
-      def setOnSwipe(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onSwipe", js.Any.fromFunction1(value))
+      inline def setOnSwipe(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onSwipe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipeUndefined: Self = StObject.set(x, "onSwipe", js.undefined)
+      inline def setOnSwipeUndefined: Self = StObject.set(x, "onSwipe", js.undefined)
       
-      @scala.inline
-      def setOnTap(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
+      inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      @scala.inline
-      def setOptions(value: HammerOptionsWithRecognizers): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: HammerOptionsWithRecognizers): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRecognizeWith(value: StringDictionary[Recognizer | String]): Self = StObject.set(x, "recognizeWith", value.asInstanceOf[js.Any])
+      inline def setRecognizeWith(value: StringDictionary[Recognizer | String]): Self = StObject.set(x, "recognizeWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecognizeWithUndefined: Self = StObject.set(x, "recognizeWith", js.undefined)
+      inline def setRecognizeWithUndefined: Self = StObject.set(x, "recognizeWith", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   

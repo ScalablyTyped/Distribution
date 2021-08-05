@@ -36,6 +36,5 @@ class Flag protected ()
 }
 object Flag {
   
-  @scala.inline
-  def apply: FlagConstructor = js.Dynamic.global.selectDynamic("Flag").asInstanceOf[FlagConstructor]
+  inline def apply: FlagConstructor = js.Dynamic.global.selectDynamic("Flag").asInstanceOf[FlagConstructor]
 }

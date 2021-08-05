@@ -29,31 +29,23 @@ trait ParamsResourceDomainaliasesInsert
 }
 object ParamsResourceDomainaliasesInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceDomainaliasesInsert = {
+  inline def apply(): ParamsResourceDomainaliasesInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDomainaliasesInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDomainaliasesInsertMutableBuilder[Self <: ParamsResourceDomainaliasesInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDomainaliasesInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaDomainAlias): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaDomainAlias): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

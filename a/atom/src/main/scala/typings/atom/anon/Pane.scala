@@ -10,16 +10,13 @@ trait Pane extends StObject {
 }
 object Pane {
   
-  @scala.inline
-  def apply(pane: typings.atom.mod.Pane): Pane = {
+  inline def apply(pane: typings.atom.mod.Pane): Pane = {
     val __obj = js.Dynamic.literal(pane = pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pane]
   }
   
-  @scala.inline
-  implicit class PaneMutableBuilder[Self <: Pane] (val x: Self) extends AnyVal {
+  extension [Self <: Pane](x: Self) {
     
-    @scala.inline
-    def setPane(value: typings.atom.mod.Pane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: typings.atom.mod.Pane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
   }
 }

@@ -22,32 +22,25 @@ trait BatchWriteRequest extends StObject {
 }
 object BatchWriteRequest {
   
-  @scala.inline
-  def apply(): BatchWriteRequest = {
+  inline def apply(): BatchWriteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchWriteRequest]
   }
   
-  @scala.inline
-  implicit class BatchWriteRequestMutableBuilder[Self <: BatchWriteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchWriteRequest](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
+    inline def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
+    inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     
-    @scala.inline
-    def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
+    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
   }
 }

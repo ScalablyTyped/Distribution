@@ -23,55 +23,39 @@ trait CompanyStartDate extends StObject {
 }
 object CompanyStartDate {
   
-  @scala.inline
-  def apply(): CompanyStartDate = {
+  inline def apply(): CompanyStartDate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompanyStartDate]
   }
   
-  @scala.inline
-  implicit class CompanyStartDateMutableBuilder[Self <: CompanyStartDate] (val x: Self) extends AnyVal {
+  extension [Self <: CompanyStartDate](x: Self) {
     
-    @scala.inline
-    def setCompanyStartDate(value: Timestamp): Self = StObject.set(x, "companyStartDate", value.asInstanceOf[js.Any])
+    inline def setCompanyStartDate(value: Timestamp): Self = StObject.set(x, "companyStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyStartDateUndefined: Self = StObject.set(x, "companyStartDate", js.undefined)
+    inline def setCompanyStartDateUndefined: Self = StObject.set(x, "companyStartDate", js.undefined)
     
-    @scala.inline
-    def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
+    inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
+    inline def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
     
-    @scala.inline
-    def setLinkedInProfileUrl(value: String): Self = StObject.set(x, "linkedInProfileUrl", value.asInstanceOf[js.Any])
+    inline def setLinkedInProfileUrl(value: String): Self = StObject.set(x, "linkedInProfileUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedInProfileUrlUndefined: Self = StObject.set(x, "linkedInProfileUrl", js.undefined)
+    inline def setLinkedInProfileUrlUndefined: Self = StObject.set(x, "linkedInProfileUrl", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMobilePhone(value: String): Self = StObject.set(x, "mobilePhone", value.asInstanceOf[js.Any])
+    inline def setMobilePhone(value: String): Self = StObject.set(x, "mobilePhone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobilePhoneUndefined: Self = StObject.set(x, "mobilePhone", js.undefined)
+    inline def setMobilePhoneUndefined: Self = StObject.set(x, "mobilePhone", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setWorkPhone(value: String): Self = StObject.set(x, "workPhone", value.asInstanceOf[js.Any])
+    inline def setWorkPhone(value: String): Self = StObject.set(x, "workPhone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkPhoneUndefined: Self = StObject.set(x, "workPhone", js.undefined)
+    inline def setWorkPhoneUndefined: Self = StObject.set(x, "workPhone", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait StartBgpFailoverTestResponse extends StObject {
 }
 object StartBgpFailoverTestResponse {
   
-  @scala.inline
-  def apply(): StartBgpFailoverTestResponse = {
+  inline def apply(): StartBgpFailoverTestResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartBgpFailoverTestResponse]
   }
   
-  @scala.inline
-  implicit class StartBgpFailoverTestResponseMutableBuilder[Self <: StartBgpFailoverTestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartBgpFailoverTestResponse](x: Self) {
     
-    @scala.inline
-    def setVirtualInterfaceTest(value: VirtualInterfaceTestHistory): Self = StObject.set(x, "virtualInterfaceTest", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceTest(value: VirtualInterfaceTestHistory): Self = StObject.set(x, "virtualInterfaceTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceTestUndefined: Self = StObject.set(x, "virtualInterfaceTest", js.undefined)
+    inline def setVirtualInterfaceTestUndefined: Self = StObject.set(x, "virtualInterfaceTest", js.undefined)
   }
 }

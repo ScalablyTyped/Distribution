@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTwoLinesInOneType extends StObject
 object WdTwoLinesInOneType {
   
-  @scala.inline
-  def wdTwoLinesInOneAngleBrackets: `4` = 4.asInstanceOf[`4`]
+  inline def wdTwoLinesInOneAngleBrackets: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdTwoLinesInOneCurlyBrackets: `5` = 5.asInstanceOf[`5`]
+  inline def wdTwoLinesInOneCurlyBrackets: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdTwoLinesInOneNoBrackets: `1` = 1.asInstanceOf[`1`]
+  inline def wdTwoLinesInOneNoBrackets: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTwoLinesInOneNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdTwoLinesInOneNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdTwoLinesInOneParentheses: `2` = 2.asInstanceOf[`2`]
+  inline def wdTwoLinesInOneParentheses: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdTwoLinesInOneSquareBrackets: `3` = 3.asInstanceOf[`3`]
+  inline def wdTwoLinesInOneSquareBrackets: `3` = 3.asInstanceOf[`3`]
 }

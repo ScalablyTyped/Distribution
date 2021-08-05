@@ -16,22 +16,17 @@ trait SchemaMultipleChoiceQuestion extends StObject {
 }
 object SchemaMultipleChoiceQuestion {
   
-  @scala.inline
-  def apply(): SchemaMultipleChoiceQuestion = {
+  inline def apply(): SchemaMultipleChoiceQuestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMultipleChoiceQuestion]
   }
   
-  @scala.inline
-  implicit class SchemaMultipleChoiceQuestionMutableBuilder[Self <: SchemaMultipleChoiceQuestion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMultipleChoiceQuestion](x: Self) {
     
-    @scala.inline
-    def setChoices(value: js.Array[String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: js.Array[String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
+    inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
     
-    @scala.inline
-    def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
   }
 }

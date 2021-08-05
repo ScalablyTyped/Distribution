@@ -23,31 +23,23 @@ trait ImmunizationExplanation
 }
 object ImmunizationExplanation {
   
-  @scala.inline
-  def apply(): ImmunizationExplanation = {
+  inline def apply(): ImmunizationExplanation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImmunizationExplanation]
   }
   
-  @scala.inline
-  implicit class ImmunizationExplanationMutableBuilder[Self <: ImmunizationExplanation] (val x: Self) extends AnyVal {
+  extension [Self <: ImmunizationExplanation](x: Self) {
     
-    @scala.inline
-    def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonNotGiven(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reasonNotGiven", value.asInstanceOf[js.Any])
+    inline def setReasonNotGiven(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reasonNotGiven", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonNotGivenUndefined: Self = StObject.set(x, "reasonNotGiven", js.undefined)
+    inline def setReasonNotGivenUndefined: Self = StObject.set(x, "reasonNotGiven", js.undefined)
     
-    @scala.inline
-    def setReasonNotGivenVarargs(value: CodeableConcept*): Self = StObject.set(x, "reasonNotGiven", js.Array(value :_*))
+    inline def setReasonNotGivenVarargs(value: CodeableConcept*): Self = StObject.set(x, "reasonNotGiven", js.Array(value :_*))
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
+    inline def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
   }
 }

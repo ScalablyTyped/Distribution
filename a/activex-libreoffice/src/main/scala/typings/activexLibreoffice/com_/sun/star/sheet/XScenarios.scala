@@ -31,8 +31,7 @@ trait XScenarios
 }
 object XScenarios {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -50,13 +49,10 @@ object XScenarios {
     __obj.asInstanceOf[XScenarios]
   }
   
-  @scala.inline
-  implicit class XScenariosMutableBuilder[Self <: XScenarios] (val x: Self) extends AnyVal {
+  extension [Self <: XScenarios](x: Self) {
     
-    @scala.inline
-    def setAddNewByName(value: (String, SeqEquiv[CellRangeAddress], String) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction3(value))
+    inline def setAddNewByName(value: (String, SeqEquiv[CellRangeAddress], String) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
   }
 }

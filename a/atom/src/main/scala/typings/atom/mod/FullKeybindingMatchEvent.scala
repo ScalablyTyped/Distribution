@@ -18,22 +18,17 @@ trait FullKeybindingMatchEvent extends StObject {
 }
 object FullKeybindingMatchEvent {
   
-  @scala.inline
-  def apply(binding: KeyBinding, keyboardEventTarget: Element, keystrokes: String): FullKeybindingMatchEvent = {
+  inline def apply(binding: KeyBinding, keyboardEventTarget: Element, keystrokes: String): FullKeybindingMatchEvent = {
     val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], keystrokes = keystrokes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullKeybindingMatchEvent]
   }
   
-  @scala.inline
-  implicit class FullKeybindingMatchEventMutableBuilder[Self <: FullKeybindingMatchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FullKeybindingMatchEvent](x: Self) {
     
-    @scala.inline
-    def setBinding(value: KeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: KeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
+    inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+    inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
   }
 }

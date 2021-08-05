@@ -11,8 +11,7 @@ object routeRegexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRouteRegex(normalizedRoute: String): Groups = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteRegex")(normalizedRoute.asInstanceOf[js.Any]).asInstanceOf[Groups]
+  inline def getRouteRegex(normalizedRoute: String): Groups = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteRegex")(normalizedRoute.asInstanceOf[js.Any]).asInstanceOf[Groups]
   
   trait Group extends StObject {
     
@@ -24,23 +23,18 @@ object routeRegexMod {
   }
   object Group {
     
-    @scala.inline
-    def apply(optional: Boolean, pos: Double, repeat: Boolean): Group = {
+    inline def apply(optional: Boolean, pos: Double, repeat: Boolean): Group = {
       val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any])
       __obj.asInstanceOf[Group]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+    extension [Self <: Group](x: Self) {
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     }
   }
 }

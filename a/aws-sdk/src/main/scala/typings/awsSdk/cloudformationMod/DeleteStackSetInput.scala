@@ -13,16 +13,13 @@ trait DeleteStackSetInput extends StObject {
 }
 object DeleteStackSetInput {
   
-  @scala.inline
-  def apply(StackSetName: StackSetName): DeleteStackSetInput = {
+  inline def apply(StackSetName: StackSetName): DeleteStackSetInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStackSetInput]
   }
   
-  @scala.inline
-  implicit class DeleteStackSetInputMutableBuilder[Self <: DeleteStackSetInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStackSetInput](x: Self) {
     
-    @scala.inline
-    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
+    inline def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

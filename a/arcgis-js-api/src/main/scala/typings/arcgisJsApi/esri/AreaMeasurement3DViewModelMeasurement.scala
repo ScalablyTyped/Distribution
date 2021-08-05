@@ -35,8 +35,7 @@ trait AreaMeasurement3DViewModelMeasurement
 }
 object AreaMeasurement3DViewModelMeasurement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     area: MeasurementValue,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -48,16 +47,12 @@ object AreaMeasurement3DViewModelMeasurement {
     __obj.asInstanceOf[AreaMeasurement3DViewModelMeasurement]
   }
   
-  @scala.inline
-  implicit class AreaMeasurement3DViewModelMeasurementMutableBuilder[Self <: AreaMeasurement3DViewModelMeasurement] (val x: Self) extends AnyVal {
+  extension [Self <: AreaMeasurement3DViewModelMeasurement](x: Self) {
     
-    @scala.inline
-    def setArea(value: MeasurementValue): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: MeasurementValue): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementMode(value: euclidean | geodesic): Self = StObject.set(x, "measurementMode", value.asInstanceOf[js.Any])
+    inline def setMeasurementMode(value: euclidean | geodesic): Self = StObject.set(x, "measurementMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerimeterLength(value: MeasurementValue): Self = StObject.set(x, "perimeterLength", value.asInstanceOf[js.Any])
+    inline def setPerimeterLength(value: MeasurementValue): Self = StObject.set(x, "perimeterLength", value.asInstanceOf[js.Any])
   }
 }

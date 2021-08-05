@@ -10,8 +10,7 @@ trait SendMessagesInput
      with typings.awsSdkClientPinpointBrowser.typesSendMessagesInputMod.SendMessagesInput
 object SendMessagesInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, MessageRequest: MessageRequest): SendMessagesInput = {
+  inline def apply(ApplicationId: String, MessageRequest: MessageRequest): SendMessagesInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], MessageRequest = MessageRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessagesInput]
   }

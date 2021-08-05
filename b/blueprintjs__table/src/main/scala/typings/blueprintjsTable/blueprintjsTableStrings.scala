@@ -9,25 +9,21 @@ object blueprintjsTableStrings {
   
   @js.native
   sealed trait horizontal extends StObject
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait scrollLeft
     extends StObject
        with ScrollKey
-  @scala.inline
-  def scrollLeft: scrollLeft = "scrollLeft".asInstanceOf[scrollLeft]
+  inline def scrollLeft: scrollLeft = "scrollLeft".asInstanceOf[scrollLeft]
   
   @js.native
   sealed trait scrollTop
     extends StObject
        with ScrollKey
-  @scala.inline
-  def scrollTop: scrollTop = "scrollTop".asInstanceOf[scrollTop]
+  inline def scrollTop: scrollTop = "scrollTop".asInstanceOf[scrollTop]
   
   @js.native
   sealed trait vertical extends StObject
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

@@ -16,8 +16,7 @@ object anon {
   }
   object Compilation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any,
       module: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Module */ js.Any,
       paths: js.Array[String]
@@ -26,24 +25,19 @@ object anon {
       __obj.asInstanceOf[Compilation]
     }
     
-    @scala.inline
-    implicit class CompilationMutableBuilder[Self <: Compilation] (val x: Self) extends AnyVal {
+    extension [Self <: Compilation](x: Self) {
       
-      @scala.inline
-      def setCompilation(
+      inline def setCompilation(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
       ): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule(
+      inline def setModule(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Module */ js.Any
       ): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     }
   }
   
@@ -53,19 +47,16 @@ object anon {
   }
   object CompilationAny {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
     ): CompilationAny = {
       val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompilationAny]
     }
     
-    @scala.inline
-    implicit class CompilationAnyMutableBuilder[Self <: CompilationAny] (val x: Self) extends AnyVal {
+    extension [Self <: CompilationAny](x: Self) {
       
-      @scala.inline
-      def setCompilation(
+      inline def setCompilation(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
       ): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
     }

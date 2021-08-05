@@ -32,8 +32,7 @@ trait AccessibleCsvTable
      with XAccessibleSelection
 object AccessibleCsvTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleCaption: XAccessible,
     AccessibleChildCount: Double,
     AccessibleColumnCount: Double,

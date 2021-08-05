@@ -18,19 +18,15 @@ trait DeleteCampaignRequest extends StObject {
 }
 object DeleteCampaignRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, CampaignId: string): DeleteCampaignRequest = {
+  inline def apply(ApplicationId: string, CampaignId: string): DeleteCampaignRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCampaignRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCampaignRequestMutableBuilder[Self <: DeleteCampaignRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCampaignRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
   }
 }

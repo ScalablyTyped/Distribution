@@ -26,25 +26,19 @@ trait Hatch extends StObject {
 }
 object Hatch {
   
-  @scala.inline
-  def apply(Angle: Double, Color: Color, Distance: Double, Style: HatchStyle): Hatch = {
+  inline def apply(Angle: Double, Color: Color, Distance: Double, Style: HatchStyle): Hatch = {
     val __obj = js.Dynamic.literal(Angle = Angle.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], Distance = Distance.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hatch]
   }
   
-  @scala.inline
-  implicit class HatchMutableBuilder[Self <: Hatch] (val x: Self) extends AnyVal {
+  extension [Self <: Hatch](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: HatchStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: HatchStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

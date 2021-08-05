@@ -21,11 +21,11 @@ object destroyerOfModulesMod {
     
     def destroyModule(modulePath: String, moduleMap: ModuleMap): js.Promise[Unit] = js.native
     
-    var shouldKeepFn: js.Any = js.native
+    /* private */ var shouldKeepFn: js.Any = js.native
     
     /* private */ def shouldKeepModule(module: js.Any): js.Any = js.native
     
-    var walker: js.Any = js.native
+    /* private */ var walker: js.Any = js.native
   }
   
   type ModuleMap = Map[String, Module]

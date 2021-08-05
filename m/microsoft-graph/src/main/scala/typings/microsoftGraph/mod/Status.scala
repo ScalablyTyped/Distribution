@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Status extends StObject
 object Status {
   
-  @scala.inline
-  def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  inline def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
   
-  @scala.inline
-  def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
+  inline def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
   
-  @scala.inline
-  def ignored: typings.microsoftGraph.microsoftGraphStrings.ignored = "ignored".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ignored]
+  inline def ignored: typings.microsoftGraph.microsoftGraphStrings.ignored = "ignored".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ignored]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def updated: typings.microsoftGraph.microsoftGraphStrings.updated = "updated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.updated]
+  inline def updated: typings.microsoftGraph.microsoftGraphStrings.updated = "updated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.updated]
 }

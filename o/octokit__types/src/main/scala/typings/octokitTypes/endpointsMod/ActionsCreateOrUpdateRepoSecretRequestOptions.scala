@@ -20,25 +20,19 @@ trait ActionsCreateOrUpdateRepoSecretRequestOptions extends StObject {
 }
 object ActionsCreateOrUpdateRepoSecretRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsCreateOrUpdateRepoSecretRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsCreateOrUpdateRepoSecretRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/actions/secrets/:secret_name")
     __obj.asInstanceOf[ActionsCreateOrUpdateRepoSecretRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActionsCreateOrUpdateRepoSecretRequestOptionsMutableBuilder[Self <: ActionsCreateOrUpdateRepoSecretRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateOrUpdateRepoSecretRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -68,30 +68,18 @@ object mod {
     * @param adapter A `TerminalAdapter` instance for handling input/output.
     */
   /* static member */
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")().asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: String): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: String, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: String, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: js.Array[String]): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: Unit, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: Unit, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnv[TOptions /* <: Options */](args: Unit, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")().asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: String): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: String, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: String, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: js.Array[String]): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: Unit, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: Unit, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnv[TOptions /* <: Options */](args: Unit, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
   
   /**
     * Creates a new `Environment` instance with the specified `version`.
@@ -102,30 +90,18 @@ object mod {
     * @param adapter A `TerminalAdapter` instance for handling input/output.
     */
   /* static member */
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String]): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
-  @scala.inline
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String]): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  inline def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
   
   /**
     * Makes sure the Environment present expected methods if an old version is passed to a Generator.
@@ -134,8 +110,7 @@ object mod {
     * @returns The updated `env`.
     */
   /* static member */
-  @scala.inline
-  def enforceUpdate[TEnv /* <: Environment[Options] */](env: TEnv): TEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceUpdate")(env.asInstanceOf[js.Any]).asInstanceOf[TEnv]
+  inline def enforceUpdate[TEnv /* <: Environment[Options] */](env: TEnv): TEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceUpdate")(env.asInstanceOf[js.Any]).asInstanceOf[TEnv]
   
   /**
     * Invokes a lookup for a specific generator.
@@ -144,10 +119,8 @@ object mod {
     * @param options Options for searching the generator.
     */
   /* static member */
-  @scala.inline
-  def lookupGenerator(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def lookupGenerator(namespace: String, options: GeneratorLookupOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def lookupGenerator(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def lookupGenerator(namespace: String, options: GeneratorLookupOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Converts a generator namespace to its name.
@@ -155,8 +128,7 @@ object mod {
     * @param namespace The generator namespace.
     */
   /* static member */
-  @scala.inline
-  def namespaceToName(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespaceToName")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def namespaceToName(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespaceToName")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * The utilities of the module.
@@ -168,14 +140,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def duplicateEnv(initialEnv: typings.yeomanEnvironment.mod.^[Options]): typings.yeomanEnvironment.mod.^[Options] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicateEnv")(initialEnv.asInstanceOf[js.Any]).asInstanceOf[typings.yeomanEnvironment.mod.^[Options]]
+    inline def duplicateEnv(initialEnv: typings.yeomanEnvironment.mod.^[Options]): typings.yeomanEnvironment.mod.^[Options] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicateEnv")(initialEnv.asInstanceOf[js.Any]).asInstanceOf[typings.yeomanEnvironment.mod.^[Options]]
     
     @JSImport("yeoman-environment", "util.log")
     @js.native
     def log: /* import warning: importer.ImportType#apply Failed type conversion: typeof createLogger */ js.Any = js.native
-    @scala.inline
-    def log_=(
+    inline def log_=(
       x: /* import warning: importer.ImportType#apply Failed type conversion: typeof createLogger */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   }
@@ -202,21 +172,17 @@ object mod {
   }
   object Alias {
     
-    @scala.inline
-    def apply(`match`: RegExp, value: String): Alias = {
+    inline def apply(`match`: RegExp, value: String): Alias = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alias]
     }
     
-    @scala.inline
-    implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
+    extension [Self <: Alias](x: Self) {
       
-      @scala.inline
-      def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -617,26 +583,20 @@ object mod {
   }
   object GeneratorLookupOptions {
     
-    @scala.inline
-    def apply(): GeneratorLookupOptions = {
+    inline def apply(): GeneratorLookupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeneratorLookupOptions]
     }
     
-    @scala.inline
-    implicit class GeneratorLookupOptionsMutableBuilder[Self <: GeneratorLookupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorLookupOptions](x: Self) {
       
-      @scala.inline
-      def setPackagePath(value: Boolean): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
+      inline def setPackagePath(value: Boolean): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackagePathUndefined: Self = StObject.set(x, "packagePath", js.undefined)
+      inline def setPackagePathUndefined: Self = StObject.set(x, "packagePath", js.undefined)
       
-      @scala.inline
-      def setSingleResult(value: Boolean): Self = StObject.set(x, "singleResult", value.asInstanceOf[js.Any])
+      inline def setSingleResult(value: Boolean): Self = StObject.set(x, "singleResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleResultUndefined: Self = StObject.set(x, "singleResult", js.undefined)
+      inline def setSingleResultUndefined: Self = StObject.set(x, "singleResult", js.undefined)
     }
   }
   
@@ -662,23 +622,18 @@ object mod {
   }
   object GeneratorMeta {
     
-    @scala.inline
-    def apply(namespace: String, packagePath: String, resolved: String): GeneratorMeta = {
+    inline def apply(namespace: String, packagePath: String, resolved: String): GeneratorMeta = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], packagePath = packagePath.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeneratorMeta]
     }
     
-    @scala.inline
-    implicit class GeneratorMetaMutableBuilder[Self <: GeneratorMeta] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorMeta](x: Self) {
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackagePath(value: String): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
+      inline def setPackagePath(value: String): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolved(value: String): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: String): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     }
   }
   
@@ -694,23 +649,18 @@ object mod {
   }
   object GeneratorsInOptions {
     
-    @scala.inline
-    def apply(): GeneratorsInOptions = {
+    inline def apply(): GeneratorsInOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeneratorsInOptions]
     }
     
-    @scala.inline
-    implicit class GeneratorsInOptionsMutableBuilder[Self <: GeneratorsInOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorsInOptions](x: Self) {
       
-      @scala.inline
-      def setPackagePatterns(value: js.Array[String]): Self = StObject.set(x, "packagePatterns", value.asInstanceOf[js.Any])
+      inline def setPackagePatterns(value: js.Array[String]): Self = StObject.set(x, "packagePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackagePatternsUndefined: Self = StObject.set(x, "packagePatterns", js.undefined)
+      inline def setPackagePatternsUndefined: Self = StObject.set(x, "packagePatterns", js.undefined)
       
-      @scala.inline
-      def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value :_*))
+      inline def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value :_*))
     }
   }
   
@@ -731,29 +681,22 @@ object mod {
   }
   object InstantiateOptions {
     
-    @scala.inline
-    def apply[TOptions /* <: GeneratorOptions */](): InstantiateOptions[TOptions] = {
+    inline def apply[TOptions /* <: GeneratorOptions */](): InstantiateOptions[TOptions] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InstantiateOptions[TOptions]]
     }
     
-    @scala.inline
-    implicit class InstantiateOptionsMutableBuilder[Self <: InstantiateOptions[?], TOptions /* <: GeneratorOptions */] (val x: Self & InstantiateOptions[TOptions]) extends AnyVal {
+    extension [Self <: InstantiateOptions[?], TOptions /* <: GeneratorOptions */](x: Self & InstantiateOptions[TOptions]) {
       
-      @scala.inline
-      def setArguments(value: String | js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: String | js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+      inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      @scala.inline
-      def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: TOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: TOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -912,17 +855,14 @@ object mod {
   }
   object LookupGeneratorMeta {
     
-    @scala.inline
-    def apply(namespace: String, packagePath: String, registered: Boolean, resolved: String): LookupGeneratorMeta = {
+    inline def apply(namespace: String, packagePath: String, registered: Boolean, resolved: String): LookupGeneratorMeta = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], packagePath = packagePath.asInstanceOf[js.Any], registered = registered.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any])
       __obj.asInstanceOf[LookupGeneratorMeta]
     }
     
-    @scala.inline
-    implicit class LookupGeneratorMetaMutableBuilder[Self <: LookupGeneratorMeta] (val x: Self) extends AnyVal {
+    extension [Self <: LookupGeneratorMeta](x: Self) {
       
-      @scala.inline
-      def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
+      inline def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
     }
   }
   
@@ -938,20 +878,16 @@ object mod {
   }
   object LookupOptionBase {
     
-    @scala.inline
-    def apply(): LookupOptionBase = {
+    inline def apply(): LookupOptionBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LookupOptionBase]
     }
     
-    @scala.inline
-    implicit class LookupOptionBaseMutableBuilder[Self <: LookupOptionBase] (val x: Self) extends AnyVal {
+    extension [Self <: LookupOptionBase](x: Self) {
       
-      @scala.inline
-      def setLocalOnly(value: Boolean): Self = StObject.set(x, "localOnly", value.asInstanceOf[js.Any])
+      inline def setLocalOnly(value: Boolean): Self = StObject.set(x, "localOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalOnlyUndefined: Self = StObject.set(x, "localOnly", js.undefined)
+      inline def setLocalOnlyUndefined: Self = StObject.set(x, "localOnly", js.undefined)
     }
   }
   
@@ -994,62 +930,44 @@ object mod {
   }
   object LookupOptions {
     
-    @scala.inline
-    def apply(): LookupOptions = {
+    inline def apply(): LookupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LookupOptions]
     }
     
-    @scala.inline
-    implicit class LookupOptionsMutableBuilder[Self <: LookupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LookupOptions](x: Self) {
       
-      @scala.inline
-      def setFilePatterns(value: js.Array[String]): Self = StObject.set(x, "filePatterns", value.asInstanceOf[js.Any])
+      inline def setFilePatterns(value: js.Array[String]): Self = StObject.set(x, "filePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePatternsUndefined: Self = StObject.set(x, "filePatterns", js.undefined)
+      inline def setFilePatternsUndefined: Self = StObject.set(x, "filePatterns", js.undefined)
       
-      @scala.inline
-      def setFilePatternsVarargs(value: String*): Self = StObject.set(x, "filePatterns", js.Array(value :_*))
+      inline def setFilePatternsVarargs(value: String*): Self = StObject.set(x, "filePatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobbyDeep(value: Double): Self = StObject.set(x, "globbyDeep", value.asInstanceOf[js.Any])
+      inline def setGlobbyDeep(value: Double): Self = StObject.set(x, "globbyDeep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobbyDeepUndefined: Self = StObject.set(x, "globbyDeep", js.undefined)
+      inline def setGlobbyDeepUndefined: Self = StObject.set(x, "globbyDeep", js.undefined)
       
-      @scala.inline
-      def setNpmPaths(value: js.Array[String]): Self = StObject.set(x, "npmPaths", value.asInstanceOf[js.Any])
+      inline def setNpmPaths(value: js.Array[String]): Self = StObject.set(x, "npmPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNpmPathsUndefined: Self = StObject.set(x, "npmPaths", js.undefined)
+      inline def setNpmPathsUndefined: Self = StObject.set(x, "npmPaths", js.undefined)
       
-      @scala.inline
-      def setNpmPathsVarargs(value: String*): Self = StObject.set(x, "npmPaths", js.Array(value :_*))
+      inline def setNpmPathsVarargs(value: String*): Self = StObject.set(x, "npmPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setPackagePaths(value: js.Array[String]): Self = StObject.set(x, "packagePaths", value.asInstanceOf[js.Any])
+      inline def setPackagePaths(value: js.Array[String]): Self = StObject.set(x, "packagePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackagePathsUndefined: Self = StObject.set(x, "packagePaths", js.undefined)
+      inline def setPackagePathsUndefined: Self = StObject.set(x, "packagePaths", js.undefined)
       
-      @scala.inline
-      def setPackagePathsVarargs(value: String*): Self = StObject.set(x, "packagePaths", js.Array(value :_*))
+      inline def setPackagePathsVarargs(value: String*): Self = StObject.set(x, "packagePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setPackagePatterns(value: js.Array[String]): Self = StObject.set(x, "packagePatterns", value.asInstanceOf[js.Any])
+      inline def setPackagePatterns(value: js.Array[String]): Self = StObject.set(x, "packagePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackagePatternsUndefined: Self = StObject.set(x, "packagePatterns", js.undefined)
+      inline def setPackagePatternsUndefined: Self = StObject.set(x, "packagePatterns", js.undefined)
       
-      @scala.inline
-      def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value :_*))
+      inline def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setSingleResult(value: Boolean): Self = StObject.set(x, "singleResult", value.asInstanceOf[js.Any])
+      inline def setSingleResult(value: Boolean): Self = StObject.set(x, "singleResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleResultUndefined: Self = StObject.set(x, "singleResult", js.undefined)
+      inline def setSingleResultUndefined: Self = StObject.set(x, "singleResult", js.undefined)
     }
   }
   
@@ -1067,20 +985,16 @@ object mod {
   }
   object NpmPathsOptions {
     
-    @scala.inline
-    def apply(): NpmPathsOptions = {
+    inline def apply(): NpmPathsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NpmPathsOptions]
     }
     
-    @scala.inline
-    implicit class NpmPathsOptionsMutableBuilder[Self <: NpmPathsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NpmPathsOptions](x: Self) {
       
-      @scala.inline
-      def setFilterPaths(value: Boolean): Self = StObject.set(x, "filterPaths", value.asInstanceOf[js.Any])
+      inline def setFilterPaths(value: Boolean): Self = StObject.set(x, "filterPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPathsUndefined: Self = StObject.set(x, "filterPaths", js.undefined)
+      inline def setFilterPathsUndefined: Self = StObject.set(x, "filterPaths", js.undefined)
     }
   }
   
@@ -1101,20 +1015,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     }
   }
   

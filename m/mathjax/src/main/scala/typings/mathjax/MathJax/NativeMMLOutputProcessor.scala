@@ -31,37 +31,27 @@ trait NativeMMLOutputProcessor extends StObject {
 }
 object NativeMMLOutputProcessor {
   
-  @scala.inline
-  def apply(): NativeMMLOutputProcessor = {
+  inline def apply(): NativeMMLOutputProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeMMLOutputProcessor]
   }
   
-  @scala.inline
-  implicit class NativeMMLOutputProcessorMutableBuilder[Self <: NativeMMLOutputProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: NativeMMLOutputProcessor](x: Self) {
     
-    @scala.inline
-    def setMatchFontHeight(value: Boolean): Self = StObject.set(x, "matchFontHeight", value.asInstanceOf[js.Any])
+    inline def setMatchFontHeight(value: Boolean): Self = StObject.set(x, "matchFontHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchFontHeightUndefined: Self = StObject.set(x, "matchFontHeight", js.undefined)
+    inline def setMatchFontHeightUndefined: Self = StObject.set(x, "matchFontHeight", js.undefined)
     
-    @scala.inline
-    def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
+    inline def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
+    inline def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

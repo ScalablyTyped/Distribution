@@ -14,31 +14,23 @@ trait DoNotInheritAddOnsOrDiscounts extends StObject {
 }
 object DoNotInheritAddOnsOrDiscounts {
   
-  @scala.inline
-  def apply(): DoNotInheritAddOnsOrDiscounts = {
+  inline def apply(): DoNotInheritAddOnsOrDiscounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoNotInheritAddOnsOrDiscounts]
   }
   
-  @scala.inline
-  implicit class DoNotInheritAddOnsOrDiscountsMutableBuilder[Self <: DoNotInheritAddOnsOrDiscounts] (val x: Self) extends AnyVal {
+  extension [Self <: DoNotInheritAddOnsOrDiscounts](x: Self) {
     
-    @scala.inline
-    def setDoNotInheritAddOnsOrDiscounts(value: Boolean): Self = StObject.set(x, "doNotInheritAddOnsOrDiscounts", value.asInstanceOf[js.Any])
+    inline def setDoNotInheritAddOnsOrDiscounts(value: Boolean): Self = StObject.set(x, "doNotInheritAddOnsOrDiscounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoNotInheritAddOnsOrDiscountsUndefined: Self = StObject.set(x, "doNotInheritAddOnsOrDiscounts", js.undefined)
+    inline def setDoNotInheritAddOnsOrDiscountsUndefined: Self = StObject.set(x, "doNotInheritAddOnsOrDiscounts", js.undefined)
     
-    @scala.inline
-    def setPaypal(value: Description): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
+    inline def setPaypal(value: Description): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaypalUndefined: Self = StObject.set(x, "paypal", js.undefined)
+    inline def setPaypalUndefined: Self = StObject.set(x, "paypal", js.undefined)
     
-    @scala.inline
-    def setStartImmediately(value: Boolean): Self = StObject.set(x, "startImmediately", value.asInstanceOf[js.Any])
+    inline def setStartImmediately(value: Boolean): Self = StObject.set(x, "startImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartImmediatelyUndefined: Self = StObject.set(x, "startImmediately", js.undefined)
+    inline def setStartImmediatelyUndefined: Self = StObject.set(x, "startImmediately", js.undefined)
   }
 }

@@ -20,40 +20,29 @@ trait BaseButtonProperties
 }
 object BaseButtonProperties {
   
-  @scala.inline
-  def apply(): BaseButtonProperties = {
+  inline def apply(): BaseButtonProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseButtonProperties]
   }
   
-  @scala.inline
-  implicit class BaseButtonPropertiesMutableBuilder[Self <: BaseButtonProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BaseButtonProperties](x: Self) {
     
-    @scala.inline
-    def setOnActiveStateChange(value: /* active */ Boolean => Unit): Self = StObject.set(x, "onActiveStateChange", js.Any.fromFunction1(value))
+    inline def setOnActiveStateChange(value: /* active */ Boolean => Unit): Self = StObject.set(x, "onActiveStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnActiveStateChangeUndefined: Self = StObject.set(x, "onActiveStateChange", js.undefined)
+    inline def setOnActiveStateChangeUndefined: Self = StObject.set(x, "onActiveStateChange", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: /* pointerInside */ Boolean => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: /* pointerInside */ Boolean => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

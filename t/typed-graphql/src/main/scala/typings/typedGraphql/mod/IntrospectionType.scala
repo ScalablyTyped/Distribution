@@ -15,20 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IntrospectionType extends StObject
 object IntrospectionType {
   
-  @scala.inline
-  def IntrospectionEnumType(enumValues: js.Array[IntrospectionEnumValue], name: String): typings.typedGraphql.mod.IntrospectionEnumType = {
+  inline def IntrospectionEnumType(enumValues: js.Array[IntrospectionEnumValue], name: String): typings.typedGraphql.mod.IntrospectionEnumType = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any], kind = "ENUM", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionEnumType]
   }
   
-  @scala.inline
-  def IntrospectionInputObjectType(inputFields: js.Array[IntrospectionInputValue], name: String): typings.typedGraphql.mod.IntrospectionInputObjectType = {
+  inline def IntrospectionInputObjectType(inputFields: js.Array[IntrospectionInputValue], name: String): typings.typedGraphql.mod.IntrospectionInputObjectType = {
     val __obj = js.Dynamic.literal(inputFields = inputFields.asInstanceOf[js.Any], kind = "INPUT_OBJECT", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionInputObjectType]
   }
   
-  @scala.inline
-  def IntrospectionInterfaceType(
+  inline def IntrospectionInterfaceType(
     fields: js.Array[IntrospectionField],
     name: String,
     possibleTypes: js.Array[IntrospectionNamedTypeRef]
@@ -37,8 +34,7 @@ object IntrospectionType {
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionInterfaceType]
   }
   
-  @scala.inline
-  def IntrospectionObjectType(
+  inline def IntrospectionObjectType(
     fields: js.Array[IntrospectionField],
     interfaces: js.Array[IntrospectionNamedTypeRef],
     name: String
@@ -47,14 +43,12 @@ object IntrospectionType {
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionObjectType]
   }
   
-  @scala.inline
-  def IntrospectionScalarType(name: String): typings.typedGraphql.mod.IntrospectionScalarType = {
+  inline def IntrospectionScalarType(name: String): typings.typedGraphql.mod.IntrospectionScalarType = {
     val __obj = js.Dynamic.literal(kind = "SCALAR", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionScalarType]
   }
   
-  @scala.inline
-  def IntrospectionUnionType(name: String, possibleTypes: js.Array[IntrospectionNamedTypeRef]): typings.typedGraphql.mod.IntrospectionUnionType = {
+  inline def IntrospectionUnionType(name: String, possibleTypes: js.Array[IntrospectionNamedTypeRef]): typings.typedGraphql.mod.IntrospectionUnionType = {
     val __obj = js.Dynamic.literal(kind = "UNION", name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionUnionType]
   }

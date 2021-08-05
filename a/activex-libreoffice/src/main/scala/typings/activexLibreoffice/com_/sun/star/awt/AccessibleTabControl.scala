@@ -27,8 +27,7 @@ trait AccessibleTabControl
      with XAccessibleSelection
 object AccessibleTabControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

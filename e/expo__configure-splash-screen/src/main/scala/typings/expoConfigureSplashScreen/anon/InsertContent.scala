@@ -13,19 +13,15 @@ trait InsertContent extends StObject {
 }
 object InsertContent {
   
-  @scala.inline
-  def apply(insertContent: String, insertPattern: RegExp | String): InsertContent = {
+  inline def apply(insertContent: String, insertPattern: RegExp | String): InsertContent = {
     val __obj = js.Dynamic.literal(insertContent = insertContent.asInstanceOf[js.Any], insertPattern = insertPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertContent]
   }
   
-  @scala.inline
-  implicit class InsertContentMutableBuilder[Self <: InsertContent] (val x: Self) extends AnyVal {
+  extension [Self <: InsertContent](x: Self) {
     
-    @scala.inline
-    def setInsertContent(value: String): Self = StObject.set(x, "insertContent", value.asInstanceOf[js.Any])
+    inline def setInsertContent(value: String): Self = StObject.set(x, "insertContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertPattern(value: RegExp | String): Self = StObject.set(x, "insertPattern", value.asInstanceOf[js.Any])
+    inline def setInsertPattern(value: RegExp | String): Self = StObject.set(x, "insertPattern", value.asInstanceOf[js.Any])
   }
 }

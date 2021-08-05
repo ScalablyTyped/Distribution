@@ -19,25 +19,19 @@ trait OverlayOptions extends StObject {
 }
 object OverlayOptions {
   
-  @scala.inline
-  def apply(): OverlayOptions = {
+  inline def apply(): OverlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverlayOptions]
   }
   
-  @scala.inline
-  implicit class OverlayOptionsMutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayOptions](x: Self) {
     
-    @scala.inline
-    def setHandleKeyboardEvents(value: Boolean): Self = StObject.set(x, "handleKeyboardEvents", value.asInstanceOf[js.Any])
+    inline def setHandleKeyboardEvents(value: Boolean): Self = StObject.set(x, "handleKeyboardEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleKeyboardEventsUndefined: Self = StObject.set(x, "handleKeyboardEvents", js.undefined)
+    inline def setHandleKeyboardEventsUndefined: Self = StObject.set(x, "handleKeyboardEvents", js.undefined)
     
-    @scala.inline
-    def setInterceptTouchOutside(value: Boolean): Self = StObject.set(x, "interceptTouchOutside", value.asInstanceOf[js.Any])
+    inline def setInterceptTouchOutside(value: Boolean): Self = StObject.set(x, "interceptTouchOutside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptTouchOutsideUndefined: Self = StObject.set(x, "interceptTouchOutside", js.undefined)
+    inline def setInterceptTouchOutsideUndefined: Self = StObject.set(x, "interceptTouchOutside", js.undefined)
   }
 }

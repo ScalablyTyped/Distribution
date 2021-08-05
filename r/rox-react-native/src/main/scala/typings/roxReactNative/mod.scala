@@ -143,22 +143,17 @@ object mod {
     /**
       * Getting boolean value of a flag
       */
-    @scala.inline
-    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean, context: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean, context: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Getting string value of a Variant flag
       */
-    @scala.inline
-    def value(nameSpacedFlagName: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def value(nameSpacedFlagName: String, defaultValue: String, context: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def value(nameSpacedFlagName: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def value(nameSpacedFlagName: String, defaultValue: String, context: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @scala.inline
-  def fetch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[Unit]
+  inline def fetch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[Unit]
   
   @JSImport("rox-react-native", "flags")
   @js.native
@@ -175,19 +170,16 @@ object mod {
       *
       * https://support.rollout.io/docs/reactnative#section--rox-overrides-clearoverride-
       */
-    @scala.inline
-    def clearOverride(nameSpacedFlagName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearOverride(nameSpacedFlagName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getOriginalValue(nameSpacedFlagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalValue")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getOriginalValue(nameSpacedFlagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalValue")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * full flag name including namespace
       *
       * https://support.rollout.io/docs/reactnative#section--rox-overrides-hasoverride-
       */
-    @scala.inline
-    def hasOverride(nameSpacedFlagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasOverride(nameSpacedFlagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Sets an override value on a specific flag, this function accepts two parameters flag name (
@@ -199,46 +191,31 @@ object mod {
       *
       * Note that for boolean flag we still give the value as a string.
       */
-    @scala.inline
-    def setOverride(nameSpacedFlagName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setOverride(nameSpacedFlagName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setOverride_false(nameSpacedFlagName: String, value: `false`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setOverride_false(nameSpacedFlagName: String, value: `false`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setOverride_true(nameSpacedFlagName: String, value: `true`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setOverride_true(nameSpacedFlagName: String, value: `true`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def register(namespace: String, roxContainer: RoxContainer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(namespace.asInstanceOf[js.Any], roxContainer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(namespace: String, roxContainer: RoxContainer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(namespace.asInstanceOf[js.Any], roxContainer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setCustomBooleanProperty(name: String, value: js.Function0[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setCustomBooleanProperty(name: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCustomBooleanProperty(name: String, value: js.Function0[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCustomBooleanProperty(name: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setCustomNumberProperty(name: String, value: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setCustomNumberProperty(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCustomNumberProperty(name: String, value: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCustomNumberProperty(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setCustomStringProperty(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setCustomStringProperty(name: String, value: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCustomStringProperty(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCustomStringProperty(name: String, value: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDynamicCustomPropertyRule(handler: js.Function2[/* propName */ String, /* context */ js.Any, Double | String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDynamicCustomPropertyRule")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDynamicCustomPropertyRule(handler: js.Function2[/* propName */ String, /* context */ js.Any, Double | String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDynamicCustomPropertyRule")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setup(apiKey: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def setup(apiKey: String, options: RoxSetupOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def setup(apiKey: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def setup(apiKey: String, options: RoxSetupOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def unfreeze(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfreeze")().asInstanceOf[Unit]
-  @scala.inline
-  def unfreeze(namespace: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfreeze")(namespace.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unfreeze(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfreeze")().asInstanceOf[Unit]
+  inline def unfreeze(namespace: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfreeze")(namespace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type BasicType[T] = String | Double | Boolean
   
@@ -257,29 +234,22 @@ object mod {
   }
   object RoxExperiment {
     
-    @scala.inline
-    def apply(identifier: String, isArchived: Boolean, labels: js.Array[String], name: String): RoxExperiment = {
+    inline def apply(identifier: String, isArchived: Boolean, labels: js.Array[String], name: String): RoxExperiment = {
       val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], isArchived = isArchived.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoxExperiment]
     }
     
-    @scala.inline
-    implicit class RoxExperimentMutableBuilder[Self <: RoxExperiment] (val x: Self) extends AnyVal {
+    extension [Self <: RoxExperiment](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsArchived(value: Boolean): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
+      inline def setIsArchived(value: Boolean): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,29 +265,22 @@ object mod {
   }
   object RoxFetcherResult {
     
-    @scala.inline
-    def apply(creationDate: Date, fetcherStatus: RoxFetcherStatus, hasChanges: Boolean): RoxFetcherResult = {
+    inline def apply(creationDate: Date, fetcherStatus: RoxFetcherStatus, hasChanges: Boolean): RoxFetcherResult = {
       val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], fetcherStatus = fetcherStatus.asInstanceOf[js.Any], hasChanges = hasChanges.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoxFetcherResult]
     }
     
-    @scala.inline
-    implicit class RoxFetcherResultMutableBuilder[Self <: RoxFetcherResult] (val x: Self) extends AnyVal {
+    extension [Self <: RoxFetcherResult](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+      inline def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+      inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
       
-      @scala.inline
-      def setFetcherStatus(value: RoxFetcherStatus): Self = StObject.set(x, "fetcherStatus", value.asInstanceOf[js.Any])
+      inline def setFetcherStatus(value: RoxFetcherStatus): Self = StObject.set(x, "fetcherStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasChanges(value: Boolean): Self = StObject.set(x, "hasChanges", value.asInstanceOf[js.Any])
+      inline def setHasChanges(value: Boolean): Self = StObject.set(x, "hasChanges", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,20 +290,16 @@ object mod {
   }
   object RoxFlagOptions {
     
-    @scala.inline
-    def apply(): RoxFlagOptions = {
+    inline def apply(): RoxFlagOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoxFlagOptions]
     }
     
-    @scala.inline
-    implicit class RoxFlagOptionsMutableBuilder[Self <: RoxFlagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RoxFlagOptions](x: Self) {
       
-      @scala.inline
-      def setFreeze(value: FreezeOptions): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
+      inline def setFreeze(value: FreezeOptions): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
+      inline def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
     }
   }
   
@@ -352,20 +311,16 @@ object mod {
   }
   object RoxReporting {
     
-    @scala.inline
-    def apply(name: String, value: String): RoxReporting = {
+    inline def apply(name: String, value: String): RoxReporting = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoxReporting]
     }
     
-    @scala.inline
-    implicit class RoxReportingMutableBuilder[Self <: RoxReporting] (val x: Self) extends AnyVal {
+    extension [Self <: RoxReporting](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -408,76 +363,54 @@ object mod {
   }
   object RoxSetupOptions {
     
-    @scala.inline
-    def apply(): RoxSetupOptions = {
+    inline def apply(): RoxSetupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoxSetupOptions]
     }
     
-    @scala.inline
-    implicit class RoxSetupOptionsMutableBuilder[Self <: RoxSetupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RoxSetupOptions](x: Self) {
       
-      @scala.inline
-      def setAsyncStorage(value: js.Any): Self = StObject.set(x, "AsyncStorage", value.asInstanceOf[js.Any])
+      inline def setAsyncStorage(value: js.Any): Self = StObject.set(x, "AsyncStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncStorageUndefined: Self = StObject.set(x, "AsyncStorage", js.undefined)
+      inline def setAsyncStorageUndefined: Self = StObject.set(x, "AsyncStorage", js.undefined)
       
-      @scala.inline
-      def setConfigurationFetchedHandler(value: /* fetcherResult */ RoxFetcherResult => Unit): Self = StObject.set(x, "configurationFetchedHandler", js.Any.fromFunction1(value))
+      inline def setConfigurationFetchedHandler(value: /* fetcherResult */ RoxFetcherResult => Unit): Self = StObject.set(x, "configurationFetchedHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConfigurationFetchedHandlerUndefined: Self = StObject.set(x, "configurationFetchedHandler", js.undefined)
+      inline def setConfigurationFetchedHandlerUndefined: Self = StObject.set(x, "configurationFetchedHandler", js.undefined)
       
-      @scala.inline
-      def setDebugLevel(value: verbose): Self = StObject.set(x, "debugLevel", value.asInstanceOf[js.Any])
+      inline def setDebugLevel(value: verbose): Self = StObject.set(x, "debugLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugLevelUndefined: Self = StObject.set(x, "debugLevel", js.undefined)
+      inline def setDebugLevelUndefined: Self = StObject.set(x, "debugLevel", js.undefined)
       
-      @scala.inline
-      def setDevModeSecret(value: String): Self = StObject.set(x, "devModeSecret", value.asInstanceOf[js.Any])
+      inline def setDevModeSecret(value: String): Self = StObject.set(x, "devModeSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevModeSecretUndefined: Self = StObject.set(x, "devModeSecret", js.undefined)
+      inline def setDevModeSecretUndefined: Self = StObject.set(x, "devModeSecret", js.undefined)
       
-      @scala.inline
-      def setDisableNetworkFetch(value: Boolean): Self = StObject.set(x, "disableNetworkFetch", value.asInstanceOf[js.Any])
+      inline def setDisableNetworkFetch(value: Boolean): Self = StObject.set(x, "disableNetworkFetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableNetworkFetchUndefined: Self = StObject.set(x, "disableNetworkFetch", js.undefined)
+      inline def setDisableNetworkFetchUndefined: Self = StObject.set(x, "disableNetworkFetch", js.undefined)
       
-      @scala.inline
-      def setFreeze(value: FreezeOptions): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
+      inline def setFreeze(value: FreezeOptions): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
+      inline def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
       
-      @scala.inline
-      def setImpressionHandler(
+      inline def setImpressionHandler(
         value: (/* reporting */ RoxReporting, /* experiment */ RoxExperiment, /* context */ js.Any) => Unit
       ): Self = StObject.set(x, "impressionHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setImpressionHandlerUndefined: Self = StObject.set(x, "impressionHandler", js.undefined)
+      inline def setImpressionHandlerUndefined: Self = StObject.set(x, "impressionHandler", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setRoxy(value: String): Self = StObject.set(x, "roxy", value.asInstanceOf[js.Any])
+      inline def setRoxy(value: String): Self = StObject.set(x, "roxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoxyUndefined: Self = StObject.set(x, "roxy", js.undefined)
+      inline def setRoxyUndefined: Self = StObject.set(x, "roxy", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

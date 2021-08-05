@@ -13,16 +13,13 @@ trait DeleteProfilingGroupRequest extends StObject {
 }
 object DeleteProfilingGroupRequest {
   
-  @scala.inline
-  def apply(profilingGroupName: ProfilingGroupName): DeleteProfilingGroupRequest = {
+  inline def apply(profilingGroupName: ProfilingGroupName): DeleteProfilingGroupRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProfilingGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProfilingGroupRequestMutableBuilder[Self <: DeleteProfilingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProfilingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

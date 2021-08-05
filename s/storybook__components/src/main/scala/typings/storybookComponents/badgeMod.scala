@@ -22,17 +22,14 @@ object badgeMod {
   }
   object BadgeProps {
     
-    @scala.inline
-    def apply(status: positive | negative | neutral | warning | critical): BadgeProps = {
+    inline def apply(status: positive | negative | neutral | warning | critical): BadgeProps = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadgeProps]
     }
     
-    @scala.inline
-    implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeProps](x: Self) {
       
-      @scala.inline
-      def setStatus(value: positive | negative | neutral | warning | critical): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: positive | negative | neutral | warning | critical): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

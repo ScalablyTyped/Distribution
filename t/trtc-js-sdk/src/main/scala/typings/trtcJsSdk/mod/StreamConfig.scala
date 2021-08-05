@@ -44,61 +44,43 @@ trait StreamConfig extends StObject {
 }
 object StreamConfig {
   
-  @scala.inline
-  def apply(audio: Boolean, video: Boolean): StreamConfig = {
+  inline def apply(audio: Boolean, video: Boolean): StreamConfig = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamConfig]
   }
   
-  @scala.inline
-  implicit class StreamConfigMutableBuilder[Self <: StreamConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StreamConfig](x: Self) {
     
-    @scala.inline
-    def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSource(value: MediaStreamTrack): Self = StObject.set(x, "audioSource", value.asInstanceOf[js.Any])
+    inline def setAudioSource(value: MediaStreamTrack): Self = StObject.set(x, "audioSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSourceUndefined: Self = StObject.set(x, "audioSource", js.undefined)
+    inline def setAudioSourceUndefined: Self = StObject.set(x, "audioSource", js.undefined)
     
-    @scala.inline
-    def setCameraId(value: String): Self = StObject.set(x, "cameraId", value.asInstanceOf[js.Any])
+    inline def setCameraId(value: String): Self = StObject.set(x, "cameraId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraIdUndefined: Self = StObject.set(x, "cameraId", js.undefined)
+    inline def setCameraIdUndefined: Self = StObject.set(x, "cameraId", js.undefined)
     
-    @scala.inline
-    def setFacingMode(value: user | environment): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
+    inline def setFacingMode(value: user | environment): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
+    inline def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
-    @scala.inline
-    def setMicrophoneId(value: String): Self = StObject.set(x, "microphoneId", value.asInstanceOf[js.Any])
+    inline def setMicrophoneId(value: String): Self = StObject.set(x, "microphoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrophoneIdUndefined: Self = StObject.set(x, "microphoneId", js.undefined)
+    inline def setMicrophoneIdUndefined: Self = StObject.set(x, "microphoneId", js.undefined)
     
-    @scala.inline
-    def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+    inline def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+    inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
-    @scala.inline
-    def setScreen(value: Boolean): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Boolean): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+    inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     
-    @scala.inline
-    def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSource(value: MediaStreamTrack): Self = StObject.set(x, "videoSource", value.asInstanceOf[js.Any])
+    inline def setVideoSource(value: MediaStreamTrack): Self = StObject.set(x, "videoSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSourceUndefined: Self = StObject.set(x, "videoSource", js.undefined)
+    inline def setVideoSourceUndefined: Self = StObject.set(x, "videoSource", js.undefined)
   }
 }

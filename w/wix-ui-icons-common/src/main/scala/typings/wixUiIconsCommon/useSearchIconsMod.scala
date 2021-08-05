@@ -16,6 +16,5 @@ object useSearchIconsMod {
     * and sets the results to state
     * returns filtered and a debounced `searchCategoryIcons`
     */
-  @scala.inline
-  def default(iconsMetadata: js.Array[IconMetadata], keys: js.Array[String]): DebouncedSearch = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iconsMetadata.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[DebouncedSearch]
+  inline def default(iconsMetadata: js.Array[IconMetadata], keys: js.Array[String]): DebouncedSearch = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iconsMetadata.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[DebouncedSearch]
 }

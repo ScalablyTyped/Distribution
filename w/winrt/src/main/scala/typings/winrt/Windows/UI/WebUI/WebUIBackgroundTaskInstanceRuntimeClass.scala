@@ -13,8 +13,7 @@ trait WebUIBackgroundTaskInstanceRuntimeClass
      with IBackgroundTaskInstance
 object WebUIBackgroundTaskInstanceRuntimeClass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => BackgroundTaskDeferral,
     instanceId: String,
     oncanceled: js.Any,

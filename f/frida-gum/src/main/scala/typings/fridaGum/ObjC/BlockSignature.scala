@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlockSignature extends StObject
 object BlockSignature {
   
-  @scala.inline
-  def DetailedBlockSignature(types: String): typings.fridaGum.ObjC.DetailedBlockSignature = {
+  inline def DetailedBlockSignature(types: String): typings.fridaGum.ObjC.DetailedBlockSignature = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.ObjC.DetailedBlockSignature]
   }
   
-  @scala.inline
-  def SimpleBlockSignature(argTypes: js.Array[String], retType: String): typings.fridaGum.ObjC.SimpleBlockSignature = {
+  inline def SimpleBlockSignature(argTypes: js.Array[String], retType: String): typings.fridaGum.ObjC.SimpleBlockSignature = {
     val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], retType = retType.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.ObjC.SimpleBlockSignature]
   }

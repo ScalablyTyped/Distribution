@@ -14,10 +14,8 @@ object Destruction {
   @js.native
   val ^ : Destruction = js.native
   
-  @scala.inline
-  implicit class DestructionMutableBuilder[Self <: Destruction] (val x: Self) extends AnyVal {
+  extension [Self <: Destruction](x: Self) {
     
-    @scala.inline
-    def setDestructor(value: () => Unit): Self = StObject.set(x, "destructor", js.Any.fromFunction0(value))
+    inline def setDestructor(value: () => Unit): Self = StObject.set(x, "destructor", js.Any.fromFunction0(value))
   }
 }

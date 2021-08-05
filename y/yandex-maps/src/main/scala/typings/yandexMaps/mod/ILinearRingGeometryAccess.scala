@@ -36,8 +36,7 @@ trait ILinearRingGeometryAccess
 }
 object ILinearRingGeometryAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contain: Double => Boolean,
     events: IEventManager[js.Object],
     freeze: () => IFreezable,
@@ -60,46 +59,32 @@ object ILinearRingGeometryAccess {
     __obj.asInstanceOf[ILinearRingGeometryAccess]
   }
   
-  @scala.inline
-  implicit class ILinearRingGeometryAccessMutableBuilder[Self <: ILinearRingGeometryAccess] (val x: Self) extends AnyVal {
+  extension [Self <: ILinearRingGeometryAccess](x: Self) {
     
-    @scala.inline
-    def setContain(value: Double => Boolean): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
+    inline def setContain(value: Double => Boolean): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: Double => js.Array[Double]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => js.Array[Double]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChildGeometry(value: Double => IPointGeometryAccess): Self = StObject.set(x, "getChildGeometry", js.Any.fromFunction1(value))
+    inline def setGetChildGeometry(value: Double => IPointGeometryAccess): Self = StObject.set(x, "getChildGeometry", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
+    inline def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFillRule(value: () => String): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
+    inline def setGetFillRule(value: () => String): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsert(value: (Double, js.Array[Double]) => ILinearRingGeometryAccess): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Double, js.Array[Double]) => ILinearRingGeometryAccess): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: Double => js.Array[Double]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => js.Array[Double]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (Double, js.Array[Double]) => ILinearRingGeometryAccess): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (Double, js.Array[Double]) => ILinearRingGeometryAccess): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCoordinates(value: js.Array[js.Array[Double]] => ILinearRingGeometryAccess): Self = StObject.set(x, "setCoordinates", js.Any.fromFunction1(value))
+    inline def setSetCoordinates(value: js.Array[js.Array[Double]] => ILinearRingGeometryAccess): Self = StObject.set(x, "setCoordinates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFillRule(value: String => ILinearRingGeometryAccess): Self = StObject.set(x, "setFillRule", js.Any.fromFunction1(value))
+    inline def setSetFillRule(value: String => ILinearRingGeometryAccess): Self = StObject.set(x, "setFillRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSplice(value: (Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "splice", js.Any.fromFunction2(value))
+    inline def setSplice(value: (Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "splice", js.Any.fromFunction2(value))
   }
 }

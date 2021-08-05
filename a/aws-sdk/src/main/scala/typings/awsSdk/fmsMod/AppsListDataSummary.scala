@@ -28,40 +28,29 @@ trait AppsListDataSummary extends StObject {
 }
 object AppsListDataSummary {
   
-  @scala.inline
-  def apply(): AppsListDataSummary = {
+  inline def apply(): AppsListDataSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppsListDataSummary]
   }
   
-  @scala.inline
-  implicit class AppsListDataSummaryMutableBuilder[Self <: AppsListDataSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AppsListDataSummary](x: Self) {
     
-    @scala.inline
-    def setAppsList(value: AppsList): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
+    inline def setAppsList(value: AppsList): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsListUndefined: Self = StObject.set(x, "AppsList", js.undefined)
+    inline def setAppsListUndefined: Self = StObject.set(x, "AppsList", js.undefined)
     
-    @scala.inline
-    def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value :_*))
+    inline def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value :_*))
     
-    @scala.inline
-    def setListArn(value: ResourceArn): Self = StObject.set(x, "ListArn", value.asInstanceOf[js.Any])
+    inline def setListArn(value: ResourceArn): Self = StObject.set(x, "ListArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListArnUndefined: Self = StObject.set(x, "ListArn", js.undefined)
+    inline def setListArnUndefined: Self = StObject.set(x, "ListArn", js.undefined)
     
-    @scala.inline
-    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
+    inline def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
     
-    @scala.inline
-    def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
+    inline def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListNameUndefined: Self = StObject.set(x, "ListName", js.undefined)
+    inline def setListNameUndefined: Self = StObject.set(x, "ListName", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait ColorPickerTileSize extends StObject {
 }
 object ColorPickerTileSize {
   
-  @scala.inline
-  def apply(): ColorPickerTileSize = {
+  inline def apply(): ColorPickerTileSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorPickerTileSize]
   }
   
-  @scala.inline
-  implicit class ColorPickerTileSizeMutableBuilder[Self <: ColorPickerTileSize] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPickerTileSize](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

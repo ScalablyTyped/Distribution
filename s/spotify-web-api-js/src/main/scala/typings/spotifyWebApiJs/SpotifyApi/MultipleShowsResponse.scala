@@ -16,19 +16,15 @@ trait MultipleShowsResponse extends StObject {
 }
 object MultipleShowsResponse {
   
-  @scala.inline
-  def apply(shows: js.Array[ShowObjectFull]): MultipleShowsResponse = {
+  inline def apply(shows: js.Array[ShowObjectFull]): MultipleShowsResponse = {
     val __obj = js.Dynamic.literal(shows = shows.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleShowsResponse]
   }
   
-  @scala.inline
-  implicit class MultipleShowsResponseMutableBuilder[Self <: MultipleShowsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleShowsResponse](x: Self) {
     
-    @scala.inline
-    def setShows(value: js.Array[ShowObjectFull]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
+    inline def setShows(value: js.Array[ShowObjectFull]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowsVarargs(value: ShowObjectFull*): Self = StObject.set(x, "shows", js.Array(value :_*))
+    inline def setShowsVarargs(value: ShowObjectFull*): Self = StObject.set(x, "shows", js.Array(value :_*))
   }
 }

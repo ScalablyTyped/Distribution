@@ -21,20 +21,16 @@ object interfacesMod {
   }
   object IBasicCredentials {
     
-    @scala.inline
-    def apply(password: String, username: String): IBasicCredentials = {
+    inline def apply(password: String, username: String): IBasicCredentials = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBasicCredentials]
     }
     
-    @scala.inline
-    implicit class IBasicCredentialsMutableBuilder[Self <: IBasicCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: IBasicCredentials](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,38 +46,28 @@ object interfacesMod {
   }
   object ICertConfiguration {
     
-    @scala.inline
-    def apply(): ICertConfiguration = {
+    inline def apply(): ICertConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICertConfiguration]
     }
     
-    @scala.inline
-    implicit class ICertConfigurationMutableBuilder[Self <: ICertConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ICertConfiguration](x: Self) {
       
-      @scala.inline
-      def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
+      inline def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
+      inline def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
       
-      @scala.inline
-      def setCertFile(value: String): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
+      inline def setCertFile(value: String): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
+      inline def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
       
-      @scala.inline
-      def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
+      inline def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
+      inline def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+      inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     }
   }
   
@@ -137,20 +123,16 @@ object interfacesMod {
   }
   object IHttpClientResponse {
     
-    @scala.inline
-    def apply(message: IncomingMessage, readBody: () => js.Promise[String]): IHttpClientResponse = {
+    inline def apply(message: IncomingMessage, readBody: () => js.Promise[String]): IHttpClientResponse = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], readBody = js.Any.fromFunction0(readBody))
       __obj.asInstanceOf[IHttpClientResponse]
     }
     
-    @scala.inline
-    implicit class IHttpClientResponseMutableBuilder[Self <: IHttpClientResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IHttpClientResponse](x: Self) {
       
-      @scala.inline
-      def setMessage(value: IncomingMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: IncomingMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadBody(value: () => js.Promise[String]): Self = StObject.set(x, "readBody", js.Any.fromFunction0(value))
+      inline def setReadBody(value: () => js.Promise[String]): Self = StObject.set(x, "readBody", js.Any.fromFunction0(value))
     }
   }
   
@@ -166,38 +148,28 @@ object interfacesMod {
   }
   object IProxyConfiguration {
     
-    @scala.inline
-    def apply(proxyUrl: String): IProxyConfiguration = {
+    inline def apply(proxyUrl: String): IProxyConfiguration = {
       val __obj = js.Dynamic.literal(proxyUrl = proxyUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProxyConfiguration]
     }
     
-    @scala.inline
-    implicit class IProxyConfigurationMutableBuilder[Self <: IProxyConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: IProxyConfiguration](x: Self) {
       
-      @scala.inline
-      def setProxyBypassHosts(value: js.Array[String]): Self = StObject.set(x, "proxyBypassHosts", value.asInstanceOf[js.Any])
+      inline def setProxyBypassHosts(value: js.Array[String]): Self = StObject.set(x, "proxyBypassHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyBypassHostsUndefined: Self = StObject.set(x, "proxyBypassHosts", js.undefined)
+      inline def setProxyBypassHostsUndefined: Self = StObject.set(x, "proxyBypassHosts", js.undefined)
       
-      @scala.inline
-      def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value :_*))
+      inline def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value :_*))
       
-      @scala.inline
-      def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
+      inline def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyPasswordUndefined: Self = StObject.set(x, "proxyPassword", js.undefined)
+      inline def setProxyPasswordUndefined: Self = StObject.set(x, "proxyPassword", js.undefined)
       
-      @scala.inline
-      def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+      inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUsername(value: String): Self = StObject.set(x, "proxyUsername", value.asInstanceOf[js.Any])
+      inline def setProxyUsername(value: String): Self = StObject.set(x, "proxyUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUsernameUndefined: Self = StObject.set(x, "proxyUsername", js.undefined)
+      inline def setProxyUsernameUndefined: Self = StObject.set(x, "proxyUsername", js.undefined)
     }
   }
   
@@ -211,8 +183,7 @@ object interfacesMod {
   }
   object IRequestHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canHandleAuthentication: IHttpClientResponse => Boolean,
       handleAuthentication: (IHttpClient, IRequestInfo, js.Any) => js.Promise[IHttpClientResponse],
       prepareRequest: RequestOptions => Unit
@@ -221,17 +192,13 @@ object interfacesMod {
       __obj.asInstanceOf[IRequestHandler]
     }
     
-    @scala.inline
-    implicit class IRequestHandlerMutableBuilder[Self <: IRequestHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestHandler](x: Self) {
       
-      @scala.inline
-      def setCanHandleAuthentication(value: IHttpClientResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
+      inline def setCanHandleAuthentication(value: IHttpClientResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleAuthentication(value: (IHttpClient, IRequestInfo, js.Any) => js.Promise[IHttpClientResponse]): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction3(value))
+      inline def setHandleAuthentication(value: (IHttpClient, IRequestInfo, js.Any) => js.Promise[IHttpClientResponse]): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPrepareRequest(value: RequestOptions => Unit): Self = StObject.set(x, "prepareRequest", js.Any.fromFunction1(value))
+      inline def setPrepareRequest(value: RequestOptions => Unit): Self = StObject.set(x, "prepareRequest", js.Any.fromFunction1(value))
     }
   }
   
@@ -245,23 +212,18 @@ object interfacesMod {
   }
   object IRequestInfo {
     
-    @scala.inline
-    def apply(httpModule: js.Any, options: RequestOptions, parsedUrl: Url): IRequestInfo = {
+    inline def apply(httpModule: js.Any, options: RequestOptions, parsedUrl: Url): IRequestInfo = {
       val __obj = js.Dynamic.literal(httpModule = httpModule.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parsedUrl = parsedUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequestInfo]
     }
     
-    @scala.inline
-    implicit class IRequestInfoMutableBuilder[Self <: IRequestInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestInfo](x: Self) {
       
-      @scala.inline
-      def setHttpModule(value: js.Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
+      inline def setHttpModule(value: js.Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: RequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedUrl(value: Url): Self = StObject.set(x, "parsedUrl", value.asInstanceOf[js.Any])
+      inline def setParsedUrl(value: Url): Self = StObject.set(x, "parsedUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,95 +257,66 @@ object interfacesMod {
   }
   object IRequestOptions {
     
-    @scala.inline
-    def apply(): IRequestOptions = {
+    inline def apply(): IRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    @scala.inline
-    implicit class IRequestOptionsMutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAllowRedirectDowngrade(value: Boolean): Self = StObject.set(x, "allowRedirectDowngrade", value.asInstanceOf[js.Any])
+      inline def setAllowRedirectDowngrade(value: Boolean): Self = StObject.set(x, "allowRedirectDowngrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRedirectDowngradeUndefined: Self = StObject.set(x, "allowRedirectDowngrade", js.undefined)
+      inline def setAllowRedirectDowngradeUndefined: Self = StObject.set(x, "allowRedirectDowngrade", js.undefined)
       
-      @scala.inline
-      def setAllowRedirects(value: Boolean): Self = StObject.set(x, "allowRedirects", value.asInstanceOf[js.Any])
+      inline def setAllowRedirects(value: Boolean): Self = StObject.set(x, "allowRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRedirectsUndefined: Self = StObject.set(x, "allowRedirects", js.undefined)
+      inline def setAllowRedirectsUndefined: Self = StObject.set(x, "allowRedirects", js.undefined)
       
-      @scala.inline
-      def setAllowRetries(value: Boolean): Self = StObject.set(x, "allowRetries", value.asInstanceOf[js.Any])
+      inline def setAllowRetries(value: Boolean): Self = StObject.set(x, "allowRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRetriesUndefined: Self = StObject.set(x, "allowRetries", js.undefined)
+      inline def setAllowRetriesUndefined: Self = StObject.set(x, "allowRetries", js.undefined)
       
-      @scala.inline
-      def setCert(value: ICertConfiguration): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: ICertConfiguration): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: IHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIgnoreSslError(value: Boolean): Self = StObject.set(x, "ignoreSslError", value.asInstanceOf[js.Any])
+      inline def setIgnoreSslError(value: Boolean): Self = StObject.set(x, "ignoreSslError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSslErrorUndefined: Self = StObject.set(x, "ignoreSslError", js.undefined)
+      inline def setIgnoreSslErrorUndefined: Self = StObject.set(x, "ignoreSslError", js.undefined)
       
-      @scala.inline
-      def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+      inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+      inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
+      inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
+      inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
       
-      @scala.inline
-      def setPresignedUrlPatterns(value: js.Array[RegExp]): Self = StObject.set(x, "presignedUrlPatterns", value.asInstanceOf[js.Any])
+      inline def setPresignedUrlPatterns(value: js.Array[RegExp]): Self = StObject.set(x, "presignedUrlPatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresignedUrlPatternsUndefined: Self = StObject.set(x, "presignedUrlPatterns", js.undefined)
+      inline def setPresignedUrlPatternsUndefined: Self = StObject.set(x, "presignedUrlPatterns", js.undefined)
       
-      @scala.inline
-      def setPresignedUrlPatternsVarargs(value: RegExp*): Self = StObject.set(x, "presignedUrlPatterns", js.Array(value :_*))
+      inline def setPresignedUrlPatternsVarargs(value: RegExp*): Self = StObject.set(x, "presignedUrlPatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setProxy(value: IProxyConfiguration): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: IProxyConfiguration): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
+      inline def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
+      inline def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
     }
   }
   
@@ -395,23 +328,18 @@ object interfacesMod {
   }
   object IRequestQueryParams {
     
-    @scala.inline
-    def apply(params: StringDictionary[String | Double | (js.Array[String | Double])]): IRequestQueryParams = {
+    inline def apply(params: StringDictionary[String | Double | (js.Array[String | Double])]): IRequestQueryParams = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequestQueryParams]
     }
     
-    @scala.inline
-    implicit class IRequestQueryParamsMutableBuilder[Self <: IRequestQueryParams] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestQueryParams](x: Self) {
       
-      @scala.inline
-      def setOptions(value: ArrayFormat): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ArrayFormat): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setParams(value: StringDictionary[String | Double | (js.Array[String | Double])]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String | Double | (js.Array[String | Double])]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
 }

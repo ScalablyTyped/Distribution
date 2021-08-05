@@ -20,22 +20,17 @@ trait EqualizerEffectDefinition extends StObject {
 }
 object EqualizerEffectDefinition {
   
-  @scala.inline
-  def apply(activatableClassId: String, bands: IVectorView[EqualizerBand], properties: IPropertySet): EqualizerEffectDefinition = {
+  inline def apply(activatableClassId: String, bands: IVectorView[EqualizerBand], properties: IPropertySet): EqualizerEffectDefinition = {
     val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], bands = bands.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[EqualizerEffectDefinition]
   }
   
-  @scala.inline
-  implicit class EqualizerEffectDefinitionMutableBuilder[Self <: EqualizerEffectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EqualizerEffectDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBands(value: IVectorView[EqualizerBand]): Self = StObject.set(x, "bands", value.asInstanceOf[js.Any])
+    inline def setBands(value: IVectorView[EqualizerBand]): Self = StObject.set(x, "bands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

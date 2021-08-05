@@ -10,16 +10,13 @@ trait CustomFieldsBoolean extends StObject {
 }
 object CustomFieldsBoolean {
   
-  @scala.inline
-  def apply(customFields: Boolean): CustomFieldsBoolean = {
+  inline def apply(customFields: Boolean): CustomFieldsBoolean = {
     val __obj = js.Dynamic.literal(customFields = customFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFieldsBoolean]
   }
   
-  @scala.inline
-  implicit class CustomFieldsBooleanMutableBuilder[Self <: CustomFieldsBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: CustomFieldsBoolean](x: Self) {
     
-    @scala.inline
-    def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
   }
 }

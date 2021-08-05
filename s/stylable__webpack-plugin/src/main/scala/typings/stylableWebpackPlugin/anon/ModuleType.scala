@@ -10,16 +10,13 @@ trait ModuleType extends StObject {
 }
 object ModuleType {
   
-  @scala.inline
-  def apply(module: Type): ModuleType = {
+  inline def apply(module: Type): ModuleType = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleType]
   }
   
-  @scala.inline
-  implicit class ModuleTypeMutableBuilder[Self <: ModuleType] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleType](x: Self) {
     
-    @scala.inline
-    def setModule(value: Type): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: Type): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
   }
 }

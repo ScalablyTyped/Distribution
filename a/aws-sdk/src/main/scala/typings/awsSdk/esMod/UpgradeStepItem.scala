@@ -28,40 +28,29 @@ trait UpgradeStepItem extends StObject {
 }
 object UpgradeStepItem {
   
-  @scala.inline
-  def apply(): UpgradeStepItem = {
+  inline def apply(): UpgradeStepItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeStepItem]
   }
   
-  @scala.inline
-  implicit class UpgradeStepItemMutableBuilder[Self <: UpgradeStepItem] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeStepItem](x: Self) {
     
-    @scala.inline
-    def setIssues(value: Issues): Self = StObject.set(x, "Issues", value.asInstanceOf[js.Any])
+    inline def setIssues(value: Issues): Self = StObject.set(x, "Issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuesUndefined: Self = StObject.set(x, "Issues", js.undefined)
+    inline def setIssuesUndefined: Self = StObject.set(x, "Issues", js.undefined)
     
-    @scala.inline
-    def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "Issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "Issues", js.Array(value :_*))
     
-    @scala.inline
-    def setProgressPercent(value: Double): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: Double): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
-    @scala.inline
-    def setUpgradeStep(value: UpgradeStep): Self = StObject.set(x, "UpgradeStep", value.asInstanceOf[js.Any])
+    inline def setUpgradeStep(value: UpgradeStep): Self = StObject.set(x, "UpgradeStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeStepStatus(value: UpgradeStatus): Self = StObject.set(x, "UpgradeStepStatus", value.asInstanceOf[js.Any])
+    inline def setUpgradeStepStatus(value: UpgradeStatus): Self = StObject.set(x, "UpgradeStepStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeStepStatusUndefined: Self = StObject.set(x, "UpgradeStepStatus", js.undefined)
+    inline def setUpgradeStepStatusUndefined: Self = StObject.set(x, "UpgradeStepStatus", js.undefined)
     
-    @scala.inline
-    def setUpgradeStepUndefined: Self = StObject.set(x, "UpgradeStep", js.undefined)
+    inline def setUpgradeStepUndefined: Self = StObject.set(x, "UpgradeStep", js.undefined)
   }
 }

@@ -20,40 +20,29 @@ trait ListInfo extends StObject {
 }
 object ListInfo {
   
-  @scala.inline
-  def apply(): ListInfo = {
+  inline def apply(): ListInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListInfo]
   }
   
-  @scala.inline
-  implicit class ListInfoMutableBuilder[Self <: ListInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ListInfo](x: Self) {
     
-    @scala.inline
-    def setContentTypesEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "contentTypesEnabled", value.asInstanceOf[js.Any])
+    inline def setContentTypesEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "contentTypesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypesEnabledNull: Self = StObject.set(x, "contentTypesEnabled", null)
+    inline def setContentTypesEnabledNull: Self = StObject.set(x, "contentTypesEnabled", null)
     
-    @scala.inline
-    def setContentTypesEnabledUndefined: Self = StObject.set(x, "contentTypesEnabled", js.undefined)
+    inline def setContentTypesEnabledUndefined: Self = StObject.set(x, "contentTypesEnabled", js.undefined)
     
-    @scala.inline
-    def setHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenNull: Self = StObject.set(x, "hidden", null)
+    inline def setHiddenNull: Self = StObject.set(x, "hidden", null)
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: NullableOption[String]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: NullableOption[String]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNull: Self = StObject.set(x, "template", null)
+    inline def setTemplateNull: Self = StObject.set(x, "template", null)
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

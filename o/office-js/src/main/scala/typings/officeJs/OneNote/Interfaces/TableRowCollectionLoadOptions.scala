@@ -57,49 +57,35 @@ trait TableRowCollectionLoadOptions extends StObject {
 }
 object TableRowCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): TableRowCollectionLoadOptions = {
+  inline def apply(): TableRowCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRowCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class TableRowCollectionLoadOptionsMutableBuilder[Self <: TableRowCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TableRowCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCellCount(value: Boolean): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+    inline def setCellCount(value: Boolean): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
+    inline def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
     
-    @scala.inline
-    def setCells(value: TableCellCollectionLoadOptions): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: TableCellCollectionLoadOptions): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
+    inline def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
+    inline def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
     
-    @scala.inline
-    def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

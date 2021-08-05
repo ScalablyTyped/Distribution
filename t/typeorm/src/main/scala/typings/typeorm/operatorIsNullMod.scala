@@ -11,6 +11,5 @@ object operatorIsNullMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def IsNull(): FindOperator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNull")().asInstanceOf[FindOperator[js.Any]]
+  inline def IsNull(): FindOperator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNull")().asInstanceOf[FindOperator[js.Any]]
 }

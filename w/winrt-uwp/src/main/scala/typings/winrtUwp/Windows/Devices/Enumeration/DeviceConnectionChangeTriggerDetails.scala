@@ -12,16 +12,13 @@ trait DeviceConnectionChangeTriggerDetails extends StObject {
 }
 object DeviceConnectionChangeTriggerDetails {
   
-  @scala.inline
-  def apply(deviceId: String): DeviceConnectionChangeTriggerDetails = {
+  inline def apply(deviceId: String): DeviceConnectionChangeTriggerDetails = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceConnectionChangeTriggerDetails]
   }
   
-  @scala.inline
-  implicit class DeviceConnectionChangeTriggerDetailsMutableBuilder[Self <: DeviceConnectionChangeTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConnectionChangeTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
   }
 }

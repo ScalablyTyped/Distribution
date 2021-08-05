@@ -10,16 +10,13 @@ trait GeoFenceID extends StObject {
 }
 object GeoFenceID {
   
-  @scala.inline
-  def apply(geoFenceID: String): GeoFenceID = {
+  inline def apply(geoFenceID: String): GeoFenceID = {
     val __obj = js.Dynamic.literal(geoFenceID = geoFenceID.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoFenceID]
   }
   
-  @scala.inline
-  implicit class GeoFenceIDMutableBuilder[Self <: GeoFenceID] (val x: Self) extends AnyVal {
+  extension [Self <: GeoFenceID](x: Self) {
     
-    @scala.inline
-    def setGeoFenceID(value: String): Self = StObject.set(x, "geoFenceID", value.asInstanceOf[js.Any])
+    inline def setGeoFenceID(value: String): Self = StObject.set(x, "geoFenceID", value.asInstanceOf[js.Any])
   }
 }

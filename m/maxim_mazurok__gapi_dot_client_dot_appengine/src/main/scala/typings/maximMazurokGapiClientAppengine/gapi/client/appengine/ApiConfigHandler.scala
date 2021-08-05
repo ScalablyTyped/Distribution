@@ -23,43 +23,31 @@ trait ApiConfigHandler extends StObject {
 }
 object ApiConfigHandler {
   
-  @scala.inline
-  def apply(): ApiConfigHandler = {
+  inline def apply(): ApiConfigHandler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiConfigHandler]
   }
   
-  @scala.inline
-  implicit class ApiConfigHandlerMutableBuilder[Self <: ApiConfigHandler] (val x: Self) extends AnyVal {
+  extension [Self <: ApiConfigHandler](x: Self) {
     
-    @scala.inline
-    def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
+    inline def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthFailActionUndefined: Self = StObject.set(x, "authFailAction", js.undefined)
+    inline def setAuthFailActionUndefined: Self = StObject.set(x, "authFailAction", js.undefined)
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
+    inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
-    @scala.inline
-    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
-    @scala.inline
-    def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
+    inline def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
+    inline def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait EyeOpen extends StObject {
 }
 object EyeOpen {
   
-  @scala.inline
-  def apply(): EyeOpen = {
+  inline def apply(): EyeOpen = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EyeOpen]
   }
   
-  @scala.inline
-  implicit class EyeOpenMutableBuilder[Self <: EyeOpen] (val x: Self) extends AnyVal {
+  extension [Self <: EyeOpen](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait DescribeDatastoreResponse extends StObject {
 }
 object DescribeDatastoreResponse {
   
-  @scala.inline
-  def apply(): DescribeDatastoreResponse = {
+  inline def apply(): DescribeDatastoreResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDatastoreResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDatastoreResponseMutableBuilder[Self <: DescribeDatastoreResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDatastoreResponse](x: Self) {
     
-    @scala.inline
-    def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+    inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
+    inline def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
     
-    @scala.inline
-    def setStatistics(value: DatastoreStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: DatastoreStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
   }
 }

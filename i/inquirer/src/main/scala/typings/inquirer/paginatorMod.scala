@@ -25,7 +25,7 @@ object paginatorMod {
     /**
       * Gets or sets the index of the last focused line.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var lastIndex: Double = js.native
     
     /**
@@ -46,13 +46,13 @@ object paginatorMod {
     /**
       * Gets or sets the index of the currently focused line.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var pointer: Double = js.native
     
     /**
       * Gets or sets an object for drawing the paginated content.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var screen: typings.inquirer.screenManagerMod.^ = js.native
   }
   
@@ -64,7 +64,7 @@ object paginatorMod {
     /**
       * Gets or sets the index of the last focused line.
       */
-    var lastIndex: Double
+    /* protected */ var lastIndex: Double
     
     /**
       * Paginates the specified `content`.
@@ -83,17 +83,16 @@ object paginatorMod {
     /**
       * Gets or sets the index of the currently focused line.
       */
-    var pointer: Double
+    /* protected */ var pointer: Double
     
     /**
       * Gets or sets an object for drawing the paginated content.
       */
-    var screen: typings.inquirer.screenManagerMod.^
+    /* protected */ var screen: typings.inquirer.screenManagerMod.^
   }
   object Paginator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lastIndex: Double,
       paginate: (String, Double) => String,
       pointer: Double,
@@ -103,20 +102,15 @@ object paginatorMod {
       __obj.asInstanceOf[Paginator]
     }
     
-    @scala.inline
-    implicit class PaginatorMutableBuilder[Self <: Paginator] (val x: Self) extends AnyVal {
+    extension [Self <: Paginator](x: Self) {
       
-      @scala.inline
-      def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
+      inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginate(value: (String, Double) => String): Self = StObject.set(x, "paginate", js.Any.fromFunction2(value))
+      inline def setPaginate(value: (String, Double) => String): Self = StObject.set(x, "paginate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointer(value: Double): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      inline def setPointer(value: Double): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen(value: typings.inquirer.screenManagerMod.^): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: typings.inquirer.screenManagerMod.^): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     }
   }
 }

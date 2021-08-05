@@ -25,59 +25,42 @@ trait CompileInjectableMetadata extends StObject {
 }
 object CompileInjectableMetadata {
   
-  @scala.inline
-  def apply(symbol: StaticSymbol, `type`: CompileTypeMetadata): CompileInjectableMetadata = {
+  inline def apply(symbol: StaticSymbol, `type`: CompileTypeMetadata): CompileInjectableMetadata = {
     val __obj = js.Dynamic.literal(symbol = symbol.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileInjectableMetadata]
   }
   
-  @scala.inline
-  implicit class CompileInjectableMetadataMutableBuilder[Self <: CompileInjectableMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CompileInjectableMetadata](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setProvidedIn(value: StaticSymbol): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: StaticSymbol): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
+    inline def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: StaticSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: StaticSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseClass(value: StaticSymbol): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
+    inline def setUseClass(value: StaticSymbol): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
+    inline def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
     
-    @scala.inline
-    def setUseExisting(value: StaticSymbol): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+    inline def setUseExisting(value: StaticSymbol): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
+    inline def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
     
-    @scala.inline
-    def setUseFactory(value: StaticSymbol): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+    inline def setUseFactory(value: StaticSymbol): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
+    inline def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
     
-    @scala.inline
-    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+    inline def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
+    inline def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
   }
 }

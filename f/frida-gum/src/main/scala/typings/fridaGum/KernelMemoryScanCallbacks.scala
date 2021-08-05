@@ -28,25 +28,19 @@ trait KernelMemoryScanCallbacks extends StObject {
 }
 object KernelMemoryScanCallbacks {
   
-  @scala.inline
-  def apply(onComplete: () => Unit, onMatch: (UInt64, Double) => Unit | EnumerateAction): KernelMemoryScanCallbacks = {
+  inline def apply(onComplete: () => Unit, onMatch: (UInt64, Double) => Unit | EnumerateAction): KernelMemoryScanCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction2(onMatch))
     __obj.asInstanceOf[KernelMemoryScanCallbacks]
   }
   
-  @scala.inline
-  implicit class KernelMemoryScanCallbacksMutableBuilder[Self <: KernelMemoryScanCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: KernelMemoryScanCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+    inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnError(value: /* reason */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* reason */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnMatch(value: (UInt64, Double) => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction2(value))
+    inline def setOnMatch(value: (UInt64, Double) => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction2(value))
   }
 }

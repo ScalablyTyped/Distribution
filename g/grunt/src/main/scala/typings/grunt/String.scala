@@ -27,8 +27,7 @@ trait String extends StObject {
 }
 object String {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blue: java.lang.String,
     cyan: java.lang.String,
     green: java.lang.String,
@@ -42,31 +41,22 @@ object String {
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setBlue(value: java.lang.String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: java.lang.String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyan(value: java.lang.String): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
+    inline def setCyan(value: java.lang.String): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreen(value: java.lang.String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: java.lang.String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrey(value: java.lang.String): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+    inline def setGrey(value: java.lang.String): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagenta(value: java.lang.String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+    inline def setMagenta(value: java.lang.String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRed(value: java.lang.String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: java.lang.String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhite(value: java.lang.String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+    inline def setWhite(value: java.lang.String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellow(value: java.lang.String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+    inline def setYellow(value: java.lang.String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
   }
 }

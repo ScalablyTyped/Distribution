@@ -29,7 +29,7 @@ class BaseCollection[T] protected () extends StObject {
   var length: Double = js.native
   
   //T=result type of Table
-  var list: js.Array[T | (T & ObservableObject)] = js.native
+  /* private */ var list: js.Array[T | (T & ObservableObject)] = js.native
   
   var listeners: js.Array[js.Function1[/* eventArgs */ CollectionChangedEventArgs[T], Unit]] = js.native
   

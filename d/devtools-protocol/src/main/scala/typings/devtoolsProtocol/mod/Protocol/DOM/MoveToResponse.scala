@@ -13,16 +13,13 @@ trait MoveToResponse extends StObject {
 }
 object MoveToResponse {
   
-  @scala.inline
-  def apply(nodeId: NodeId): MoveToResponse = {
+  inline def apply(nodeId: NodeId): MoveToResponse = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveToResponse]
   }
   
-  @scala.inline
-  implicit class MoveToResponseMutableBuilder[Self <: MoveToResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MoveToResponse](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

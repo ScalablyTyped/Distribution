@@ -62,47 +62,34 @@ object transportMod {
   }
   object TransportOptions {
     
-    @scala.inline
-    def apply(dsn: DsnLike): TransportOptions = {
+    inline def apply(dsn: DsnLike): TransportOptions = {
       val __obj = js.Dynamic.literal(dsn = dsn.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransportOptions]
     }
     
-    @scala.inline
-    implicit class TransportOptionsMutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransportOptions](x: Self) {
       
-      @scala.inline
-      def setCaCerts(value: String): Self = StObject.set(x, "caCerts", value.asInstanceOf[js.Any])
+      inline def setCaCerts(value: String): Self = StObject.set(x, "caCerts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaCertsUndefined: Self = StObject.set(x, "caCerts", js.undefined)
+      inline def setCaCertsUndefined: Self = StObject.set(x, "caCerts", js.undefined)
       
-      @scala.inline
-      def setDsn(value: DsnLike): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
+      inline def setDsn(value: DsnLike): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchParameters(value: StringDictionary[String]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
+      inline def setFetchParameters(value: StringDictionary[String]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchParametersUndefined: Self = StObject.set(x, "fetchParameters", js.undefined)
+      inline def setFetchParametersUndefined: Self = StObject.set(x, "fetchParameters", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHttpProxy(value: String): Self = StObject.set(x, "httpProxy", value.asInstanceOf[js.Any])
+      inline def setHttpProxy(value: String): Self = StObject.set(x, "httpProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpProxyUndefined: Self = StObject.set(x, "httpProxy", js.undefined)
+      inline def setHttpProxyUndefined: Self = StObject.set(x, "httpProxy", js.undefined)
       
-      @scala.inline
-      def setHttpsProxy(value: String): Self = StObject.set(x, "httpsProxy", value.asInstanceOf[js.Any])
+      inline def setHttpsProxy(value: String): Self = StObject.set(x, "httpsProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsProxyUndefined: Self = StObject.set(x, "httpsProxy", js.undefined)
+      inline def setHttpsProxyUndefined: Self = StObject.set(x, "httpsProxy", js.undefined)
     }
   }
 }

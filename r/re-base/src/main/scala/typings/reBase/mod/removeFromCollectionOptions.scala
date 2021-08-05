@@ -15,19 +15,15 @@ trait removeFromCollectionOptions extends StObject {
 }
 object removeFromCollectionOptions {
   
-  @scala.inline
-  def apply(): removeFromCollectionOptions = {
+  inline def apply(): removeFromCollectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[removeFromCollectionOptions]
   }
   
-  @scala.inline
-  implicit class removeFromCollectionOptionsMutableBuilder[Self <: removeFromCollectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: removeFromCollectionOptions](x: Self) {
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

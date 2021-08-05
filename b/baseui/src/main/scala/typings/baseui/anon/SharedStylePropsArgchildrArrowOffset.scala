@@ -49,63 +49,45 @@ trait SharedStylePropsArgchildrArrowOffset extends StObject {
 }
 object SharedStylePropsArgchildrArrowOffset {
   
-  @scala.inline
-  def apply(): SharedStylePropsArgchildrArrowOffset = {
+  inline def apply(): SharedStylePropsArgchildrArrowOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedStylePropsArgchildrArrowOffset]
   }
   
-  @scala.inline
-  implicit class SharedStylePropsArgchildrArrowOffsetMutableBuilder[Self <: SharedStylePropsArgchildrArrowOffset] (val x: Self) extends AnyVal {
+  extension [Self <: SharedStylePropsArgchildrArrowOffset](x: Self) {
     
-    @scala.inline
-    def set$arrowOffset(value: Offset): Self = StObject.set(x, "$arrowOffset", value.asInstanceOf[js.Any])
+    inline def set$arrowOffset(value: Offset): Self = StObject.set(x, "$arrowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$arrowOffsetUndefined: Self = StObject.set(x, "$arrowOffset", js.undefined)
+    inline def set$arrowOffsetUndefined: Self = StObject.set(x, "$arrowOffset", js.undefined)
     
-    @scala.inline
-    def set$isAnimating(value: Boolean): Self = StObject.set(x, "$isAnimating", value.asInstanceOf[js.Any])
+    inline def set$isAnimating(value: Boolean): Self = StObject.set(x, "$isAnimating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isAnimatingUndefined: Self = StObject.set(x, "$isAnimating", js.undefined)
+    inline def set$isAnimatingUndefined: Self = StObject.set(x, "$isAnimating", js.undefined)
     
-    @scala.inline
-    def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
+    inline def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
+    inline def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
     
-    @scala.inline
-    def set$placement(
+    inline def set$placement(
       value: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
     ): Self = StObject.set(x, "$placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$placementUndefined: Self = StObject.set(x, "$placement", js.undefined)
+    inline def set$placementUndefined: Self = StObject.set(x, "$placement", js.undefined)
     
-    @scala.inline
-    def set$popoverMargin(value: Double): Self = StObject.set(x, "$popoverMargin", value.asInstanceOf[js.Any])
+    inline def set$popoverMargin(value: Double): Self = StObject.set(x, "$popoverMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$popoverMarginUndefined: Self = StObject.set(x, "$popoverMargin", js.undefined)
+    inline def set$popoverMarginUndefined: Self = StObject.set(x, "$popoverMargin", js.undefined)
     
-    @scala.inline
-    def set$popoverOffset(value: Offset): Self = StObject.set(x, "$popoverOffset", value.asInstanceOf[js.Any])
+    inline def set$popoverOffset(value: Offset): Self = StObject.set(x, "$popoverOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$popoverOffsetUndefined: Self = StObject.set(x, "$popoverOffset", js.undefined)
+    inline def set$popoverOffsetUndefined: Self = StObject.set(x, "$popoverOffset", js.undefined)
     
-    @scala.inline
-    def set$showArrow(value: Boolean): Self = StObject.set(x, "$showArrow", value.asInstanceOf[js.Any])
+    inline def set$showArrow(value: Boolean): Self = StObject.set(x, "$showArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$showArrowUndefined: Self = StObject.set(x, "$showArrow", js.undefined)
+    inline def set$showArrowUndefined: Self = StObject.set(x, "$showArrow", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

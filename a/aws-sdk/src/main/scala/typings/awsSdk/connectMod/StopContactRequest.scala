@@ -18,19 +18,15 @@ trait StopContactRequest extends StObject {
 }
 object StopContactRequest {
   
-  @scala.inline
-  def apply(ContactId: ContactId, InstanceId: InstanceId): StopContactRequest = {
+  inline def apply(ContactId: ContactId, InstanceId: InstanceId): StopContactRequest = {
     val __obj = js.Dynamic.literal(ContactId = ContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopContactRequest]
   }
   
-  @scala.inline
-  implicit class StopContactRequestMutableBuilder[Self <: StopContactRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopContactRequest](x: Self) {
     
-    @scala.inline
-    def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

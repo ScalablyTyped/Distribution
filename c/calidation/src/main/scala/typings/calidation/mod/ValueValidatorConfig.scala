@@ -12,16 +12,13 @@ trait ValueValidatorConfig[P, T /* <: js.Object */]
 }
 object ValueValidatorConfig {
   
-  @scala.inline
-  def apply[P, T /* <: js.Object */](message: String, value: P): ValueValidatorConfig[P, T] = {
+  inline def apply[P, T /* <: js.Object */](message: String, value: P): ValueValidatorConfig[P, T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueValidatorConfig[P, T]]
   }
   
-  @scala.inline
-  implicit class ValueValidatorConfigMutableBuilder[Self <: ValueValidatorConfig[?, ?], P, T /* <: js.Object */] (val x: Self & (ValueValidatorConfig[P, T])) extends AnyVal {
+  extension [Self <: ValueValidatorConfig[?, ?], P, T /* <: js.Object */](x: Self & (ValueValidatorConfig[P, T])) {
     
-    @scala.inline
-    def setValue(value: P): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: P): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

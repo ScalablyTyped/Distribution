@@ -65,79 +65,55 @@ trait SchemaConcurrentAccessRestriction extends StObject {
 }
 object SchemaConcurrentAccessRestriction {
   
-  @scala.inline
-  def apply(): SchemaConcurrentAccessRestriction = {
+  inline def apply(): SchemaConcurrentAccessRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConcurrentAccessRestriction]
   }
   
-  @scala.inline
-  implicit class SchemaConcurrentAccessRestrictionMutableBuilder[Self <: SchemaConcurrentAccessRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConcurrentAccessRestriction](x: Self) {
     
-    @scala.inline
-    def setDeviceAllowed(value: Boolean): Self = StObject.set(x, "deviceAllowed", value.asInstanceOf[js.Any])
+    inline def setDeviceAllowed(value: Boolean): Self = StObject.set(x, "deviceAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceAllowedUndefined: Self = StObject.set(x, "deviceAllowed", js.undefined)
+    inline def setDeviceAllowedUndefined: Self = StObject.set(x, "deviceAllowed", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentDevices(value: Double): Self = StObject.set(x, "maxConcurrentDevices", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentDevices(value: Double): Self = StObject.set(x, "maxConcurrentDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentDevicesUndefined: Self = StObject.set(x, "maxConcurrentDevices", js.undefined)
+    inline def setMaxConcurrentDevicesUndefined: Self = StObject.set(x, "maxConcurrentDevices", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setReasonCode(value: String): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    inline def setReasonCode(value: String): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
     
-    @scala.inline
-    def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+    inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
+    inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTimeWindowSeconds(value: Double): Self = StObject.set(x, "timeWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeWindowSeconds(value: Double): Self = StObject.set(x, "timeWindowSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeWindowSecondsUndefined: Self = StObject.set(x, "timeWindowSeconds", js.undefined)
+    inline def setTimeWindowSecondsUndefined: Self = StObject.set(x, "timeWindowSeconds", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

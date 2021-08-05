@@ -21,25 +21,19 @@ trait SchemaProrate extends StObject {
 }
 object SchemaProrate {
   
-  @scala.inline
-  def apply(): SchemaProrate = {
+  inline def apply(): SchemaProrate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProrate]
   }
   
-  @scala.inline
-  implicit class SchemaProrateMutableBuilder[Self <: SchemaProrate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProrate](x: Self) {
     
-    @scala.inline
-    def setDefaultPrice(value: SchemaPrice): Self = StObject.set(x, "defaultPrice", value.asInstanceOf[js.Any])
+    inline def setDefaultPrice(value: SchemaPrice): Self = StObject.set(x, "defaultPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPriceUndefined: Self = StObject.set(x, "defaultPrice", js.undefined)
+    inline def setDefaultPriceUndefined: Self = StObject.set(x, "defaultPrice", js.undefined)
     
-    @scala.inline
-    def setStart(value: SchemaMonthDay): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: SchemaMonthDay): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

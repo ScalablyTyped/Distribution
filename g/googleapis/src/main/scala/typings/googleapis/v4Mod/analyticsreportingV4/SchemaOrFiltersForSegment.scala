@@ -17,22 +17,17 @@ trait SchemaOrFiltersForSegment extends StObject {
 }
 object SchemaOrFiltersForSegment {
   
-  @scala.inline
-  def apply(): SchemaOrFiltersForSegment = {
+  inline def apply(): SchemaOrFiltersForSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrFiltersForSegment]
   }
   
-  @scala.inline
-  implicit class SchemaOrFiltersForSegmentMutableBuilder[Self <: SchemaOrFiltersForSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrFiltersForSegment](x: Self) {
     
-    @scala.inline
-    def setSegmentFilterClauses(value: js.Array[SchemaSegmentFilterClause]): Self = StObject.set(x, "segmentFilterClauses", value.asInstanceOf[js.Any])
+    inline def setSegmentFilterClauses(value: js.Array[SchemaSegmentFilterClause]): Self = StObject.set(x, "segmentFilterClauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentFilterClausesUndefined: Self = StObject.set(x, "segmentFilterClauses", js.undefined)
+    inline def setSegmentFilterClausesUndefined: Self = StObject.set(x, "segmentFilterClauses", js.undefined)
     
-    @scala.inline
-    def setSegmentFilterClausesVarargs(value: SchemaSegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value :_*))
+    inline def setSegmentFilterClausesVarargs(value: SchemaSegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value :_*))
   }
 }

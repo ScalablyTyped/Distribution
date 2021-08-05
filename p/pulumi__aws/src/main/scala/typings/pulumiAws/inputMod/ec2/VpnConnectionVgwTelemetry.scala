@@ -19,43 +19,31 @@ trait VpnConnectionVgwTelemetry extends StObject {
 }
 object VpnConnectionVgwTelemetry {
   
-  @scala.inline
-  def apply(): VpnConnectionVgwTelemetry = {
+  inline def apply(): VpnConnectionVgwTelemetry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnConnectionVgwTelemetry]
   }
   
-  @scala.inline
-  implicit class VpnConnectionVgwTelemetryMutableBuilder[Self <: VpnConnectionVgwTelemetry] (val x: Self) extends AnyVal {
+  extension [Self <: VpnConnectionVgwTelemetry](x: Self) {
     
-    @scala.inline
-    def setAcceptedRouteCount(value: Input[Double]): Self = StObject.set(x, "acceptedRouteCount", value.asInstanceOf[js.Any])
+    inline def setAcceptedRouteCount(value: Input[Double]): Self = StObject.set(x, "acceptedRouteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedRouteCountUndefined: Self = StObject.set(x, "acceptedRouteCount", js.undefined)
+    inline def setAcceptedRouteCountUndefined: Self = StObject.set(x, "acceptedRouteCount", js.undefined)
     
-    @scala.inline
-    def setLastStatusChange(value: Input[String]): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
+    inline def setLastStatusChange(value: Input[String]): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusChangeUndefined: Self = StObject.set(x, "lastStatusChange", js.undefined)
+    inline def setLastStatusChangeUndefined: Self = StObject.set(x, "lastStatusChange", js.undefined)
     
-    @scala.inline
-    def setOutsideIpAddress(value: Input[String]): Self = StObject.set(x, "outsideIpAddress", value.asInstanceOf[js.Any])
+    inline def setOutsideIpAddress(value: Input[String]): Self = StObject.set(x, "outsideIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutsideIpAddressUndefined: Self = StObject.set(x, "outsideIpAddress", js.undefined)
+    inline def setOutsideIpAddressUndefined: Self = StObject.set(x, "outsideIpAddress", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: Input[String]): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: Input[String]): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ImageQuality extends StObject {
 }
 object ImageQuality {
   
-  @scala.inline
-  def apply(): ImageQuality = {
+  inline def apply(): ImageQuality = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageQuality]
   }
   
-  @scala.inline
-  implicit class ImageQualityMutableBuilder[Self <: ImageQuality] (val x: Self) extends AnyVal {
+  extension [Self <: ImageQuality](x: Self) {
     
-    @scala.inline
-    def setBrightness(value: Float): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Float): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrightnessUndefined: Self = StObject.set(x, "Brightness", js.undefined)
+    inline def setBrightnessUndefined: Self = StObject.set(x, "Brightness", js.undefined)
     
-    @scala.inline
-    def setSharpness(value: Float): Self = StObject.set(x, "Sharpness", value.asInstanceOf[js.Any])
+    inline def setSharpness(value: Float): Self = StObject.set(x, "Sharpness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharpnessUndefined: Self = StObject.set(x, "Sharpness", js.undefined)
+    inline def setSharpnessUndefined: Self = StObject.set(x, "Sharpness", js.undefined)
   }
 }

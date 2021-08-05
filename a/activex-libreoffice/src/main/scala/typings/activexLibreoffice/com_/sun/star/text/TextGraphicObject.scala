@@ -98,8 +98,7 @@ trait TextGraphicObject
 }
 object TextGraphicObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActualSize: Size,
     AdjustBlue: Double,
     AdjustContrast: Double,
@@ -215,73 +214,50 @@ object TextGraphicObject {
     __obj.asInstanceOf[TextGraphicObject]
   }
   
-  @scala.inline
-  implicit class TextGraphicObjectMutableBuilder[Self <: TextGraphicObject] (val x: Self) extends AnyVal {
+  extension [Self <: TextGraphicObject](x: Self) {
     
-    @scala.inline
-    def setActualSize(value: Size): Self = StObject.set(x, "ActualSize", value.asInstanceOf[js.Any])
+    inline def setActualSize(value: Size): Self = StObject.set(x, "ActualSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustBlue(value: Double): Self = StObject.set(x, "AdjustBlue", value.asInstanceOf[js.Any])
+    inline def setAdjustBlue(value: Double): Self = StObject.set(x, "AdjustBlue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustContrast(value: Double): Self = StObject.set(x, "AdjustContrast", value.asInstanceOf[js.Any])
+    inline def setAdjustContrast(value: Double): Self = StObject.set(x, "AdjustContrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustGreen(value: Double): Self = StObject.set(x, "AdjustGreen", value.asInstanceOf[js.Any])
+    inline def setAdjustGreen(value: Double): Self = StObject.set(x, "AdjustGreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustLuminance(value: Double): Self = StObject.set(x, "AdjustLuminance", value.asInstanceOf[js.Any])
+    inline def setAdjustLuminance(value: Double): Self = StObject.set(x, "AdjustLuminance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustRed(value: Double): Self = StObject.set(x, "AdjustRed", value.asInstanceOf[js.Any])
+    inline def setAdjustRed(value: Double): Self = StObject.set(x, "AdjustRed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContourOutside(value: Boolean): Self = StObject.set(x, "ContourOutside", value.asInstanceOf[js.Any])
+    inline def setContourOutside(value: Boolean): Self = StObject.set(x, "ContourOutside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContourPolyPolygon(value: PointSequenceSequence): Self = StObject.set(x, "ContourPolyPolygon", value.asInstanceOf[js.Any])
+    inline def setContourPolyPolygon(value: PointSequenceSequence): Self = StObject.set(x, "ContourPolyPolygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContourPolyPolygonVarargs(value: PointSequence*): Self = StObject.set(x, "ContourPolyPolygon", js.Array(value :_*))
+    inline def setContourPolyPolygonVarargs(value: PointSequence*): Self = StObject.set(x, "ContourPolyPolygon", js.Array(value :_*))
     
-    @scala.inline
-    def setGamma(value: Double): Self = StObject.set(x, "Gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double): Self = StObject.set(x, "Gamma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicColorMode(value: ColorMode): Self = StObject.set(x, "GraphicColorMode", value.asInstanceOf[js.Any])
+    inline def setGraphicColorMode(value: ColorMode): Self = StObject.set(x, "GraphicColorMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicCrop(value: GraphicCrop): Self = StObject.set(x, "GraphicCrop", value.asInstanceOf[js.Any])
+    inline def setGraphicCrop(value: GraphicCrop): Self = StObject.set(x, "GraphicCrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicFilter(value: String): Self = StObject.set(x, "GraphicFilter", value.asInstanceOf[js.Any])
+    inline def setGraphicFilter(value: String): Self = StObject.set(x, "GraphicFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicIsInverted(value: Boolean): Self = StObject.set(x, "GraphicIsInverted", value.asInstanceOf[js.Any])
+    inline def setGraphicIsInverted(value: Boolean): Self = StObject.set(x, "GraphicIsInverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicURL(value: String): Self = StObject.set(x, "GraphicURL", value.asInstanceOf[js.Any])
+    inline def setGraphicURL(value: String): Self = StObject.set(x, "GraphicURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoriMirroredOnEvenPages(value: Boolean): Self = StObject.set(x, "HoriMirroredOnEvenPages", value.asInstanceOf[js.Any])
+    inline def setHoriMirroredOnEvenPages(value: Boolean): Self = StObject.set(x, "HoriMirroredOnEvenPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoriMirroredOnOddPages(value: Boolean): Self = StObject.set(x, "HoriMirroredOnOddPages", value.asInstanceOf[js.Any])
+    inline def setHoriMirroredOnOddPages(value: Boolean): Self = StObject.set(x, "HoriMirroredOnOddPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageMap(value: XIndexContainer): Self = StObject.set(x, "ImageMap", value.asInstanceOf[js.Any])
+    inline def setImageMap(value: XIndexContainer): Self = StObject.set(x, "ImageMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurroundContour(value: Boolean): Self = StObject.set(x, "SurroundContour", value.asInstanceOf[js.Any])
+    inline def setSurroundContour(value: Boolean): Self = StObject.set(x, "SurroundContour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertMirrored(value: Boolean): Self = StObject.set(x, "VertMirrored", value.asInstanceOf[js.Any])
+    inline def setVertMirrored(value: Boolean): Self = StObject.set(x, "VertMirrored", value.asInstanceOf[js.Any])
   }
 }

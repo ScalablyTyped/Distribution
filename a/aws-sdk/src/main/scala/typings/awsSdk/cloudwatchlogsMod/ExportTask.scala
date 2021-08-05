@@ -53,67 +53,47 @@ trait ExportTask extends StObject {
 }
 object ExportTask {
   
-  @scala.inline
-  def apply(): ExportTask = {
+  inline def apply(): ExportTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTask]
   }
   
-  @scala.inline
-  implicit class ExportTaskMutableBuilder[Self <: ExportTask] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTask](x: Self) {
     
-    @scala.inline
-    def setDestination(value: ExportDestinationBucket): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: ExportDestinationBucket): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPrefix(value: ExportDestinationPrefix): Self = StObject.set(x, "destinationPrefix", value.asInstanceOf[js.Any])
+    inline def setDestinationPrefix(value: ExportDestinationPrefix): Self = StObject.set(x, "destinationPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPrefixUndefined: Self = StObject.set(x, "destinationPrefix", js.undefined)
+    inline def setDestinationPrefixUndefined: Self = StObject.set(x, "destinationPrefix", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setExecutionInfo(value: ExportTaskExecutionInfo): Self = StObject.set(x, "executionInfo", value.asInstanceOf[js.Any])
+    inline def setExecutionInfo(value: ExportTaskExecutionInfo): Self = StObject.set(x, "executionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionInfoUndefined: Self = StObject.set(x, "executionInfo", js.undefined)
+    inline def setExecutionInfoUndefined: Self = StObject.set(x, "executionInfo", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Timestamp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Timestamp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ExportTaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExportTaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: ExportTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: ExportTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    @scala.inline
-    def setTaskName(value: ExportTaskName): Self = StObject.set(x, "taskName", value.asInstanceOf[js.Any])
+    inline def setTaskName(value: ExportTaskName): Self = StObject.set(x, "taskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskNameUndefined: Self = StObject.set(x, "taskName", js.undefined)
+    inline def setTaskNameUndefined: Self = StObject.set(x, "taskName", js.undefined)
     
-    @scala.inline
-    def setTo(value: Timestamp): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Timestamp): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

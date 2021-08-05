@@ -13,16 +13,13 @@ trait PutKMSEncryptionKeyRequest extends StObject {
 }
 object PutKMSEncryptionKeyRequest {
   
-  @scala.inline
-  def apply(kmsEncryptionKeyArn: KmsEncryptionKeyArn): PutKMSEncryptionKeyRequest = {
+  inline def apply(kmsEncryptionKeyArn: KmsEncryptionKeyArn): PutKMSEncryptionKeyRequest = {
     val __obj = js.Dynamic.literal(kmsEncryptionKeyArn = kmsEncryptionKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutKMSEncryptionKeyRequest]
   }
   
-  @scala.inline
-  implicit class PutKMSEncryptionKeyRequestMutableBuilder[Self <: PutKMSEncryptionKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutKMSEncryptionKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKmsEncryptionKeyArn(value: KmsEncryptionKeyArn): Self = StObject.set(x, "kmsEncryptionKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsEncryptionKeyArn(value: KmsEncryptionKeyArn): Self = StObject.set(x, "kmsEncryptionKeyArn", value.asInstanceOf[js.Any])
   }
 }

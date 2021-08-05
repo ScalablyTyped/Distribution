@@ -18,25 +18,19 @@ trait AwsDynamoDbTableKeySchema extends StObject {
 }
 object AwsDynamoDbTableKeySchema {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableKeySchema = {
+  inline def apply(): AwsDynamoDbTableKeySchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableKeySchema]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableKeySchemaMutableBuilder[Self <: AwsDynamoDbTableKeySchema] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableKeySchema](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: NonEmptyString): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: NonEmptyString): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: NonEmptyString): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: NonEmptyString): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "KeyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "KeyType", js.undefined)
   }
 }

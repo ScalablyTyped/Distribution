@@ -18,25 +18,19 @@ trait Serializer extends StObject {
 }
 object Serializer {
   
-  @scala.inline
-  def apply(): Serializer = {
+  inline def apply(): Serializer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Serializer]
   }
   
-  @scala.inline
-  implicit class SerializerMutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
+  extension [Self <: Serializer](x: Self) {
     
-    @scala.inline
-    def setOrcSerDe(value: OrcSerDe): Self = StObject.set(x, "OrcSerDe", value.asInstanceOf[js.Any])
+    inline def setOrcSerDe(value: OrcSerDe): Self = StObject.set(x, "OrcSerDe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrcSerDeUndefined: Self = StObject.set(x, "OrcSerDe", js.undefined)
+    inline def setOrcSerDeUndefined: Self = StObject.set(x, "OrcSerDe", js.undefined)
     
-    @scala.inline
-    def setParquetSerDe(value: ParquetSerDe): Self = StObject.set(x, "ParquetSerDe", value.asInstanceOf[js.Any])
+    inline def setParquetSerDe(value: ParquetSerDe): Self = StObject.set(x, "ParquetSerDe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParquetSerDeUndefined: Self = StObject.set(x, "ParquetSerDe", js.undefined)
+    inline def setParquetSerDeUndefined: Self = StObject.set(x, "ParquetSerDe", js.undefined)
   }
 }

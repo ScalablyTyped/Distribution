@@ -12,22 +12,17 @@ trait PostalRecord extends StObject {
 }
 object PostalRecord {
   
-  @scala.inline
-  def apply(code: String): PostalRecord = {
+  inline def apply(code: String): PostalRecord = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostalRecord]
   }
   
-  @scala.inline
-  implicit class PostalRecordMutableBuilder[Self <: PostalRecord] (val x: Self) extends AnyVal {
+  extension [Self <: PostalRecord](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
   }
 }

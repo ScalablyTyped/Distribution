@@ -50,21 +50,16 @@ object patchGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PatchGroupState): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PatchGroupState, opts: CustomResourceOptions): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
+    inline def get(name: String, id: Input[ID]): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
+    inline def get(name: String, id: Input[ID], state: PatchGroupState): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
+    inline def get(name: String, id: Input[ID], state: PatchGroupState, opts: CustomResourceOptions): PatchGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchGroup]
     
     /**
       * Returns true if the given object is an instance of PatchGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ Boolean]
   }
   
   trait PatchGroupArgs extends StObject {
@@ -81,20 +76,16 @@ object patchGroupMod {
   }
   object PatchGroupArgs {
     
-    @scala.inline
-    def apply(baselineId: Input[String], patchGroup: Input[String]): PatchGroupArgs = {
+    inline def apply(baselineId: Input[String], patchGroup: Input[String]): PatchGroupArgs = {
       val __obj = js.Dynamic.literal(baselineId = baselineId.asInstanceOf[js.Any], patchGroup = patchGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[PatchGroupArgs]
     }
     
-    @scala.inline
-    implicit class PatchGroupArgsMutableBuilder[Self <: PatchGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PatchGroupArgs](x: Self) {
       
-      @scala.inline
-      def setBaselineId(value: Input[String]): Self = StObject.set(x, "baselineId", value.asInstanceOf[js.Any])
+      inline def setBaselineId(value: Input[String]): Self = StObject.set(x, "baselineId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchGroup(value: Input[String]): Self = StObject.set(x, "patchGroup", value.asInstanceOf[js.Any])
+      inline def setPatchGroup(value: Input[String]): Self = StObject.set(x, "patchGroup", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object patchGroupMod {
   }
   object PatchGroupState {
     
-    @scala.inline
-    def apply(): PatchGroupState = {
+    inline def apply(): PatchGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatchGroupState]
     }
     
-    @scala.inline
-    implicit class PatchGroupStateMutableBuilder[Self <: PatchGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: PatchGroupState](x: Self) {
       
-      @scala.inline
-      def setBaselineId(value: Input[String]): Self = StObject.set(x, "baselineId", value.asInstanceOf[js.Any])
+      inline def setBaselineId(value: Input[String]): Self = StObject.set(x, "baselineId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaselineIdUndefined: Self = StObject.set(x, "baselineId", js.undefined)
+      inline def setBaselineIdUndefined: Self = StObject.set(x, "baselineId", js.undefined)
       
-      @scala.inline
-      def setPatchGroup(value: Input[String]): Self = StObject.set(x, "patchGroup", value.asInstanceOf[js.Any])
+      inline def setPatchGroup(value: Input[String]): Self = StObject.set(x, "patchGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchGroupUndefined: Self = StObject.set(x, "patchGroup", js.undefined)
+      inline def setPatchGroupUndefined: Self = StObject.set(x, "patchGroup", js.undefined)
     }
   }
 }

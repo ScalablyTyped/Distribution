@@ -62,85 +62,59 @@ trait IJsonWriter
 }
 object IJsonWriter {
   
-  @scala.inline
-  def apply(): IJsonWriter = {
+  inline def apply(): IJsonWriter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IJsonWriter]
   }
   
-  @scala.inline
-  implicit class IJsonWriterMutableBuilder[Self <: IJsonWriter] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonWriter](x: Self) {
     
-    @scala.inline
-    def setAllowSingle(value: Boolean): Self = StObject.set(x, "allowSingle", value.asInstanceOf[js.Any])
+    inline def setAllowSingle(value: Boolean): Self = StObject.set(x, "allowSingle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSingleUndefined: Self = StObject.set(x, "allowSingle", js.undefined)
+    inline def setAllowSingleUndefined: Self = StObject.set(x, "allowSingle", js.undefined)
     
-    @scala.inline
-    def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+    inline def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+    inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     
-    @scala.inline
-    def setGetAllowSingle(value: () => Boolean): Self = StObject.set(x, "getAllowSingle", js.Any.fromFunction0(value))
+    inline def setGetAllowSingle(value: () => Boolean): Self = StObject.set(x, "getAllowSingle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllowSingleUndefined: Self = StObject.set(x, "getAllowSingle", js.undefined)
+    inline def setGetAllowSingleUndefined: Self = StObject.set(x, "getAllowSingle", js.undefined)
     
-    @scala.inline
-    def setGetEncode(value: () => Boolean): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
+    inline def setGetEncode(value: () => Boolean): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEncodeRequest(value: () => Boolean): Self = StObject.set(x, "getEncodeRequest", js.Any.fromFunction0(value))
+    inline def setGetEncodeRequest(value: () => Boolean): Self = StObject.set(x, "getEncodeRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEncodeRequestUndefined: Self = StObject.set(x, "getEncodeRequest", js.undefined)
+    inline def setGetEncodeRequestUndefined: Self = StObject.set(x, "getEncodeRequest", js.undefined)
     
-    @scala.inline
-    def setGetEncodeUndefined: Self = StObject.set(x, "getEncode", js.undefined)
+    inline def setGetEncodeUndefined: Self = StObject.set(x, "getEncode", js.undefined)
     
-    @scala.inline
-    def setGetRootProperty(value: () => String): Self = StObject.set(x, "getRootProperty", js.Any.fromFunction0(value))
+    inline def setGetRootProperty(value: () => String): Self = StObject.set(x, "getRootProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRootPropertyUndefined: Self = StObject.set(x, "getRootProperty", js.undefined)
+    inline def setGetRootPropertyUndefined: Self = StObject.set(x, "getRootProperty", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootProperty(value: String): Self = StObject.set(x, "rootProperty", value.asInstanceOf[js.Any])
+    inline def setRootProperty(value: String): Self = StObject.set(x, "rootProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPropertyUndefined: Self = StObject.set(x, "rootProperty", js.undefined)
+    inline def setRootPropertyUndefined: Self = StObject.set(x, "rootProperty", js.undefined)
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSetAllowSingle(value: /* allowSingle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowSingle", js.Any.fromFunction1(value))
+    inline def setSetAllowSingle(value: /* allowSingle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowSingle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAllowSingleUndefined: Self = StObject.set(x, "setAllowSingle", js.undefined)
+    inline def setSetAllowSingleUndefined: Self = StObject.set(x, "setAllowSingle", js.undefined)
     
-    @scala.inline
-    def setSetEncode(value: /* encode */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEncode", js.Any.fromFunction1(value))
+    inline def setSetEncode(value: /* encode */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEncode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEncodeRequest(value: /* encodeRequest */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEncodeRequest", js.Any.fromFunction1(value))
+    inline def setSetEncodeRequest(value: /* encodeRequest */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEncodeRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEncodeRequestUndefined: Self = StObject.set(x, "setEncodeRequest", js.undefined)
+    inline def setSetEncodeRequestUndefined: Self = StObject.set(x, "setEncodeRequest", js.undefined)
     
-    @scala.inline
-    def setSetEncodeUndefined: Self = StObject.set(x, "setEncode", js.undefined)
+    inline def setSetEncodeUndefined: Self = StObject.set(x, "setEncode", js.undefined)
     
-    @scala.inline
-    def setSetRootProperty(value: /* rootProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRootProperty", js.Any.fromFunction1(value))
+    inline def setSetRootProperty(value: /* rootProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRootProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRootPropertyUndefined: Self = StObject.set(x, "setRootProperty", js.undefined)
+    inline def setSetRootPropertyUndefined: Self = StObject.set(x, "setRootProperty", js.undefined)
   }
 }

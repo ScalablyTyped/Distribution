@@ -23,34 +23,25 @@ trait RecommendedOptionProjectedMetric extends StObject {
 }
 object RecommendedOptionProjectedMetric {
   
-  @scala.inline
-  def apply(): RecommendedOptionProjectedMetric = {
+  inline def apply(): RecommendedOptionProjectedMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecommendedOptionProjectedMetric]
   }
   
-  @scala.inline
-  implicit class RecommendedOptionProjectedMetricMutableBuilder[Self <: RecommendedOptionProjectedMetric] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendedOptionProjectedMetric](x: Self) {
     
-    @scala.inline
-    def setProjectedMetrics(value: ProjectedMetrics): Self = StObject.set(x, "projectedMetrics", value.asInstanceOf[js.Any])
+    inline def setProjectedMetrics(value: ProjectedMetrics): Self = StObject.set(x, "projectedMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectedMetricsUndefined: Self = StObject.set(x, "projectedMetrics", js.undefined)
+    inline def setProjectedMetricsUndefined: Self = StObject.set(x, "projectedMetrics", js.undefined)
     
-    @scala.inline
-    def setProjectedMetricsVarargs(value: ProjectedMetric*): Self = StObject.set(x, "projectedMetrics", js.Array(value :_*))
+    inline def setProjectedMetricsVarargs(value: ProjectedMetric*): Self = StObject.set(x, "projectedMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
-    @scala.inline
-    def setRecommendedInstanceType(value: RecommendedInstanceType): Self = StObject.set(x, "recommendedInstanceType", value.asInstanceOf[js.Any])
+    inline def setRecommendedInstanceType(value: RecommendedInstanceType): Self = StObject.set(x, "recommendedInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendedInstanceTypeUndefined: Self = StObject.set(x, "recommendedInstanceType", js.undefined)
+    inline def setRecommendedInstanceTypeUndefined: Self = StObject.set(x, "recommendedInstanceType", js.undefined)
   }
 }

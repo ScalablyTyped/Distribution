@@ -13,22 +13,17 @@ trait ContactModRequest extends StObject {
 }
 object ContactModRequest {
   
-  @scala.inline
-  def apply(): ContactModRequest = {
+  inline def apply(): ContactModRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactModRequest]
   }
   
-  @scala.inline
-  implicit class ContactModRequestMutableBuilder[Self <: ContactModRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ContactModRequest](x: Self) {
     
-    @scala.inline
-    def setContactList(value: js.Array[Contact]): Self = StObject.set(x, "contactList", value.asInstanceOf[js.Any])
+    inline def setContactList(value: js.Array[Contact]): Self = StObject.set(x, "contactList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactListUndefined: Self = StObject.set(x, "contactList", js.undefined)
+    inline def setContactListUndefined: Self = StObject.set(x, "contactList", js.undefined)
     
-    @scala.inline
-    def setContactListVarargs(value: Contact*): Self = StObject.set(x, "contactList", js.Array(value :_*))
+    inline def setContactListVarargs(value: Contact*): Self = StObject.set(x, "contactList", js.Array(value :_*))
   }
 }

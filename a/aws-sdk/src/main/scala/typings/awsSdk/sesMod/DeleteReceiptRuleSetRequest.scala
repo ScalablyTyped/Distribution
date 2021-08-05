@@ -13,16 +13,13 @@ trait DeleteReceiptRuleSetRequest extends StObject {
 }
 object DeleteReceiptRuleSetRequest {
   
-  @scala.inline
-  def apply(RuleSetName: ReceiptRuleSetName): DeleteReceiptRuleSetRequest = {
+  inline def apply(RuleSetName: ReceiptRuleSetName): DeleteReceiptRuleSetRequest = {
     val __obj = js.Dynamic.literal(RuleSetName = RuleSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReceiptRuleSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteReceiptRuleSetRequestMutableBuilder[Self <: DeleteReceiptRuleSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReceiptRuleSetRequest](x: Self) {
     
-    @scala.inline
-    def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
+    inline def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
   }
 }

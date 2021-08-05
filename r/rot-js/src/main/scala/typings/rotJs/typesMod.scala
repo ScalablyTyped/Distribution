@@ -51,8 +51,7 @@ object typesMod {
   }
   object DisplayOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bg: String,
       border: Double,
       fg: String,
@@ -74,62 +73,43 @@ object typesMod {
       __obj.asInstanceOf[DisplayOptions]
     }
     
-    @scala.inline
-    implicit class DisplayOptionsMutableBuilder[Self <: DisplayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayOptions](x: Self) {
       
-      @scala.inline
-      def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+      inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceSquareRatio(value: Boolean): Self = StObject.set(x, "forceSquareRatio", value.asInstanceOf[js.Any])
+      inline def setForceSquareRatio(value: Boolean): Self = StObject.set(x, "forceSquareRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: LayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: LayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileColorize(value: Boolean): Self = StObject.set(x, "tileColorize", value.asInstanceOf[js.Any])
+      inline def setTileColorize(value: Boolean): Self = StObject.set(x, "tileColorize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+      inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileMap(value: StringDictionary[js.Tuple2[Double, Double]]): Self = StObject.set(x, "tileMap", value.asInstanceOf[js.Any])
+      inline def setTileMap(value: StringDictionary[js.Tuple2[Double, Double]]): Self = StObject.set(x, "tileMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSet(value: HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap): Self = StObject.set(x, "tileSet", value.asInstanceOf[js.Any])
+      inline def setTileSet(value: HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap): Self = StObject.set(x, "tileSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSetNull: Self = StObject.set(x, "tileSet", null)
+      inline def setTileSetNull: Self = StObject.set(x, "tileSet", null)
       
-      @scala.inline
-      def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+      inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranspose(value: Boolean): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
+      inline def setTranspose(value: Boolean): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,19 +123,14 @@ object typesMod {
   trait LayoutType extends StObject
   object LayoutType {
     
-    @scala.inline
-    def hex: typings.rotJs.rotJsStrings.hex = "hex".asInstanceOf[typings.rotJs.rotJsStrings.hex]
+    inline def hex: typings.rotJs.rotJsStrings.hex = "hex".asInstanceOf[typings.rotJs.rotJsStrings.hex]
     
-    @scala.inline
-    def rect: typings.rotJs.rotJsStrings.rect = "rect".asInstanceOf[typings.rotJs.rotJsStrings.rect]
+    inline def rect: typings.rotJs.rotJsStrings.rect = "rect".asInstanceOf[typings.rotJs.rotJsStrings.rect]
     
-    @scala.inline
-    def term: typings.rotJs.rotJsStrings.term = "term".asInstanceOf[typings.rotJs.rotJsStrings.term]
+    inline def term: typings.rotJs.rotJsStrings.term = "term".asInstanceOf[typings.rotJs.rotJsStrings.term]
     
-    @scala.inline
-    def tile: typings.rotJs.rotJsStrings.tile = "tile".asInstanceOf[typings.rotJs.rotJsStrings.tile]
+    inline def tile: typings.rotJs.rotJsStrings.tile = "tile".asInstanceOf[typings.rotJs.rotJsStrings.tile]
     
-    @scala.inline
-    def `tile-gl`: typings.rotJs.rotJsStrings.`tile-gl` = "tile-gl".asInstanceOf[typings.rotJs.rotJsStrings.`tile-gl`]
+    inline def `tile-gl`: typings.rotJs.rotJsStrings.`tile-gl` = "tile-gl".asInstanceOf[typings.rotJs.rotJsStrings.`tile-gl`]
   }
 }

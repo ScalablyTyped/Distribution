@@ -33,46 +33,33 @@ trait Output extends StObject {
 }
 object Output {
   
-  @scala.inline
-  def apply(OutputSettings: OutputSettings): Output = {
+  inline def apply(OutputSettings: OutputSettings): Output = {
     val __obj = js.Dynamic.literal(OutputSettings = OutputSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   
-  @scala.inline
-  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+  extension [Self <: Output](x: Self) {
     
-    @scala.inline
-    def setAudioDescriptionNames(value: listOfString): Self = StObject.set(x, "AudioDescriptionNames", value.asInstanceOf[js.Any])
+    inline def setAudioDescriptionNames(value: listOfString): Self = StObject.set(x, "AudioDescriptionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioDescriptionNamesUndefined: Self = StObject.set(x, "AudioDescriptionNames", js.undefined)
+    inline def setAudioDescriptionNamesUndefined: Self = StObject.set(x, "AudioDescriptionNames", js.undefined)
     
-    @scala.inline
-    def setAudioDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "AudioDescriptionNames", js.Array(value :_*))
+    inline def setAudioDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "AudioDescriptionNames", js.Array(value :_*))
     
-    @scala.inline
-    def setCaptionDescriptionNames(value: listOfString): Self = StObject.set(x, "CaptionDescriptionNames", value.asInstanceOf[js.Any])
+    inline def setCaptionDescriptionNames(value: listOfString): Self = StObject.set(x, "CaptionDescriptionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionDescriptionNamesUndefined: Self = StObject.set(x, "CaptionDescriptionNames", js.undefined)
+    inline def setCaptionDescriptionNamesUndefined: Self = StObject.set(x, "CaptionDescriptionNames", js.undefined)
     
-    @scala.inline
-    def setCaptionDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "CaptionDescriptionNames", js.Array(value :_*))
+    inline def setCaptionDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "CaptionDescriptionNames", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputName(value: stringMin1Max255): Self = StObject.set(x, "OutputName", value.asInstanceOf[js.Any])
+    inline def setOutputName(value: stringMin1Max255): Self = StObject.set(x, "OutputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputNameUndefined: Self = StObject.set(x, "OutputName", js.undefined)
+    inline def setOutputNameUndefined: Self = StObject.set(x, "OutputName", js.undefined)
     
-    @scala.inline
-    def setOutputSettings(value: OutputSettings): Self = StObject.set(x, "OutputSettings", value.asInstanceOf[js.Any])
+    inline def setOutputSettings(value: OutputSettings): Self = StObject.set(x, "OutputSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDescriptionName(value: string): Self = StObject.set(x, "VideoDescriptionName", value.asInstanceOf[js.Any])
+    inline def setVideoDescriptionName(value: string): Self = StObject.set(x, "VideoDescriptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDescriptionNameUndefined: Self = StObject.set(x, "VideoDescriptionName", js.undefined)
+    inline def setVideoDescriptionNameUndefined: Self = StObject.set(x, "VideoDescriptionName", js.undefined)
   }
 }

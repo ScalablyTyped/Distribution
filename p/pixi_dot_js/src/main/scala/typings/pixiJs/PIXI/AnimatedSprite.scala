@@ -196,20 +196,16 @@ object AnimatedSprite {
   }
   object FrameObject {
     
-    @scala.inline
-    def apply(texture: Texture, time: Double): FrameObject = {
+    inline def apply(texture: Texture, time: Double): FrameObject = {
       val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameObject]
     }
     
-    @scala.inline
-    implicit class FrameObjectMutableBuilder[Self <: FrameObject] (val x: Self) extends AnyVal {
+    extension [Self <: FrameObject](x: Self) {
       
-      @scala.inline
-      def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+      inline def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

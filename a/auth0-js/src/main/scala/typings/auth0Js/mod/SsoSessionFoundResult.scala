@@ -24,8 +24,7 @@ trait SsoSessionFoundResult
 }
 object SsoSessionFoundResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lastUsedClientID: String,
     lastUsedConnection: Name,
     lastUsedUserID: String,
@@ -36,28 +35,20 @@ object SsoSessionFoundResult {
     __obj.asInstanceOf[SsoSessionFoundResult]
   }
   
-  @scala.inline
-  implicit class SsoSessionFoundResultMutableBuilder[Self <: SsoSessionFoundResult] (val x: Self) extends AnyVal {
+  extension [Self <: SsoSessionFoundResult](x: Self) {
     
-    @scala.inline
-    def setLastUsedClientID(value: String): Self = StObject.set(x, "lastUsedClientID", value.asInstanceOf[js.Any])
+    inline def setLastUsedClientID(value: String): Self = StObject.set(x, "lastUsedClientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUsedConnection(value: Name): Self = StObject.set(x, "lastUsedConnection", value.asInstanceOf[js.Any])
+    inline def setLastUsedConnection(value: Name): Self = StObject.set(x, "lastUsedConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUsedUserID(value: String): Self = StObject.set(x, "lastUsedUserID", value.asInstanceOf[js.Any])
+    inline def setLastUsedUserID(value: String): Self = StObject.set(x, "lastUsedUserID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUsedUsername(value: String): Self = StObject.set(x, "lastUsedUsername", value.asInstanceOf[js.Any])
+    inline def setLastUsedUsername(value: String): Self = StObject.set(x, "lastUsedUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionClients(value: js.Array[String]): Self = StObject.set(x, "sessionClients", value.asInstanceOf[js.Any])
+    inline def setSessionClients(value: js.Array[String]): Self = StObject.set(x, "sessionClients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionClientsVarargs(value: String*): Self = StObject.set(x, "sessionClients", js.Array(value :_*))
+    inline def setSessionClientsVarargs(value: String*): Self = StObject.set(x, "sessionClients", js.Array(value :_*))
     
-    @scala.inline
-    def setSso(value: `true`): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
+    inline def setSso(value: `true`): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait AND extends StObject {
 }
 object AND {
   
-  @scala.inline
-  def apply(aND: scala.Double, nONE: scala.Double, oR: scala.Double): AND = {
+  inline def apply(aND: scala.Double, nONE: scala.Double, oR: scala.Double): AND = {
     val __obj = js.Dynamic.literal(aND = aND.asInstanceOf[js.Any], nONE = nONE.asInstanceOf[js.Any], oR = oR.asInstanceOf[js.Any])
     __obj.asInstanceOf[AND]
   }
   
-  @scala.inline
-  implicit class ANDMutableBuilder[Self <: AND] (val x: Self) extends AnyVal {
+  extension [Self <: AND](x: Self) {
     
-    @scala.inline
-    def setAND(value: scala.Double): Self = StObject.set(x, "aND", value.asInstanceOf[js.Any])
+    inline def setAND(value: scala.Double): Self = StObject.set(x, "aND", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNONE(value: scala.Double): Self = StObject.set(x, "nONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: scala.Double): Self = StObject.set(x, "nONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOR(value: scala.Double): Self = StObject.set(x, "oR", value.asInstanceOf[js.Any])
+    inline def setOR(value: scala.Double): Self = StObject.set(x, "oR", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait CommandEnvironment
 }
 object CommandEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InteractionHandler: XInteractionHandler,
     ProgressHandler: XProgressHandler,
     acquire: () => Unit,
@@ -34,10 +33,8 @@ object CommandEnvironment {
     __obj.asInstanceOf[CommandEnvironment]
   }
   
-  @scala.inline
-  implicit class CommandEnvironmentMutableBuilder[Self <: CommandEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: CommandEnvironment](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (XInteractionHandler, XProgressHandler) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (XInteractionHandler, XProgressHandler) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }
 }

@@ -23,28 +23,21 @@ trait SchemaFetchThreatListUpdatesRequest extends StObject {
 }
 object SchemaFetchThreatListUpdatesRequest {
   
-  @scala.inline
-  def apply(): SchemaFetchThreatListUpdatesRequest = {
+  inline def apply(): SchemaFetchThreatListUpdatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFetchThreatListUpdatesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaFetchThreatListUpdatesRequestMutableBuilder[Self <: SchemaFetchThreatListUpdatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFetchThreatListUpdatesRequest](x: Self) {
     
-    @scala.inline
-    def setClient(value: SchemaClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: SchemaClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setListUpdateRequests(value: js.Array[SchemaListUpdateRequest]): Self = StObject.set(x, "listUpdateRequests", value.asInstanceOf[js.Any])
+    inline def setListUpdateRequests(value: js.Array[SchemaListUpdateRequest]): Self = StObject.set(x, "listUpdateRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUpdateRequestsUndefined: Self = StObject.set(x, "listUpdateRequests", js.undefined)
+    inline def setListUpdateRequestsUndefined: Self = StObject.set(x, "listUpdateRequests", js.undefined)
     
-    @scala.inline
-    def setListUpdateRequestsVarargs(value: SchemaListUpdateRequest*): Self = StObject.set(x, "listUpdateRequests", js.Array(value :_*))
+    inline def setListUpdateRequestsVarargs(value: SchemaListUpdateRequest*): Self = StObject.set(x, "listUpdateRequests", js.Array(value :_*))
   }
 }

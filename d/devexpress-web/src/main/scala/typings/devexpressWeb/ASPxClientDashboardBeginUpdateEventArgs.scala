@@ -18,16 +18,13 @@ trait ASPxClientDashboardBeginUpdateEventArgs
 }
 object ASPxClientDashboardBeginUpdateEventArgs {
   
-  @scala.inline
-  def apply(DashboardId: String): ASPxClientDashboardBeginUpdateEventArgs = {
+  inline def apply(DashboardId: String): ASPxClientDashboardBeginUpdateEventArgs = {
     val __obj = js.Dynamic.literal(DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardBeginUpdateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardBeginUpdateEventArgsMutableBuilder[Self <: ASPxClientDashboardBeginUpdateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardBeginUpdateEventArgs](x: Self) {
     
-    @scala.inline
-    def setDashboardId(value: String): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: String): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait LayoutData extends StObject {
 }
 object LayoutData {
   
-  @scala.inline
-  def apply(): LayoutData = {
+  inline def apply(): LayoutData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutData]
   }
   
-  @scala.inline
-  implicit class LayoutDataMutableBuilder[Self <: LayoutData] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutData](x: Self) {
     
-    @scala.inline
-    def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
+    inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutDataUndefined: Self = StObject.set(x, "layoutData", js.undefined)
+    inline def setLayoutDataUndefined: Self = StObject.set(x, "layoutData", js.undefined)
   }
 }

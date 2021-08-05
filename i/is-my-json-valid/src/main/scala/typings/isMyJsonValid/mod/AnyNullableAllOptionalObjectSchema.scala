@@ -13,8 +13,7 @@ trait AnyNullableAllOptionalObjectSchema
      with _AnySchema
 object AnyNullableAllOptionalObjectSchema {
   
-  @scala.inline
-  def apply(properties: Record[String, AnySchema], `type`: js.Array[`object` | `null`]): AnyNullableAllOptionalObjectSchema = {
+  inline def apply(properties: Record[String, AnySchema], `type`: js.Array[`object` | `null`]): AnyNullableAllOptionalObjectSchema = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyNullableAllOptionalObjectSchema]

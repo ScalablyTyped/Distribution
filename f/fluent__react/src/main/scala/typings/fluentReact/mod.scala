@@ -70,11 +70,9 @@ object mod {
     def unsubscribe(component: ReactLocalizationNotification): Unit = js.native
   }
   
-  @scala.inline
-  def isReactLocalization(props: js.Object, propName: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactLocalization")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
+  inline def isReactLocalization(props: js.Object, propName: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactLocalization")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
   
-  @scala.inline
-  def withLocalization(component: ComponentClass[Matching[LocalizationProps, GetProps[js.Any]], ComponentState]): (ComponentType[
+  inline def withLocalization(component: ComponentClass[Matching[LocalizationProps, GetProps[js.Any]], ComponentState]): (ComponentType[
     Omit[
       GetProps[ComponentClass[Matching[LocalizationProps, GetProps[js.Any]], ComponentState]], 
       /* keyof @fluent/react.@fluent/react.Shared<@fluent/react.@fluent/react.LocalizationProps, @fluent/react.@fluent/react.GetProps<react.react.ComponentClass<@fluent/react.@fluent/react.Matching<@fluent/react.@fluent/react.LocalizationProps, @fluent/react.@fluent/react.GetProps<any>>, react.react.ComponentState>>> */ String
@@ -91,8 +89,7 @@ object mod {
     ComponentClass[Matching[LocalizationProps, GetProps[js.Any]], ComponentState], 
     js.Object
   ])]
-  @scala.inline
-  def withLocalization(component: FunctionComponent[Matching[LocalizationProps, GetProps[js.Any]]]): (ComponentType[
+  inline def withLocalization(component: FunctionComponent[Matching[LocalizationProps, GetProps[js.Any]]]): (ComponentType[
     Omit[
       GetProps[FunctionComponent[Matching[LocalizationProps, GetProps[js.Any]]]], 
       /* keyof @fluent/react.@fluent/react.Shared<@fluent/react.@fluent/react.LocalizationProps, @fluent/react.@fluent/react.GetProps<react.react.FunctionComponent<@fluent/react.@fluent/react.Matching<@fluent/react.@fluent/react.LocalizationProps, @fluent/react.@fluent/react.GetProps<any>>>>> */ String
@@ -112,20 +109,16 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(l10n: ReactLocalization, parseMarkup: /* str */ String => js.Array[Node]): Context = {
+    inline def apply(l10n: ReactLocalization, parseMarkup: /* str */ String => js.Array[Node]): Context = {
       val __obj = js.Dynamic.literal(l10n = l10n.asInstanceOf[js.Any], parseMarkup = js.Any.fromFunction1(parseMarkup))
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setL10n(value: ReactLocalization): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
+      inline def setL10n(value: ReactLocalization): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
+      inline def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
     }
   }
   
@@ -144,19 +137,16 @@ object mod {
   }
   object LocalizationProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getString: (/* id */ String, /* args */ js.UndefOr[js.Object], /* fallback */ js.UndefOr[String]) => String
     ): LocalizationProps = {
       val __obj = js.Dynamic.literal(getString = js.Any.fromFunction3(getString))
       __obj.asInstanceOf[LocalizationProps]
     }
     
-    @scala.inline
-    implicit class LocalizationPropsMutableBuilder[Self <: LocalizationProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizationProps](x: Self) {
       
-      @scala.inline
-      def setGetString(
+      inline def setGetString(
         value: (/* id */ String, /* args */ js.UndefOr[js.Object], /* fallback */ js.UndefOr[String]) => String
       ): Self = StObject.set(x, "getString", js.Any.fromFunction3(value))
     }
@@ -170,23 +160,18 @@ object mod {
   }
   object LocalizationProviderProps {
     
-    @scala.inline
-    def apply(bundles: Iterable[FluentBundle]): LocalizationProviderProps = {
+    inline def apply(bundles: Iterable[FluentBundle]): LocalizationProviderProps = {
       val __obj = js.Dynamic.literal(bundles = bundles.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalizationProviderProps]
     }
     
-    @scala.inline
-    implicit class LocalizationProviderPropsMutableBuilder[Self <: LocalizationProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizationProviderProps](x: Self) {
       
-      @scala.inline
-      def setBundles(value: Iterable[FluentBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+      inline def setBundles(value: Iterable[FluentBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
+      inline def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseMarkupUndefined: Self = StObject.set(x, "parseMarkup", js.undefined)
+      inline def setParseMarkupUndefined: Self = StObject.set(x, "parseMarkup", js.undefined)
     }
   }
   
@@ -200,23 +185,18 @@ object mod {
   }
   object LocalizedProps {
     
-    @scala.inline
-    def apply(id: String): LocalizedProps = {
+    inline def apply(id: String): LocalizedProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalizedProps]
     }
     
-    @scala.inline
-    implicit class LocalizedPropsMutableBuilder[Self <: LocalizedProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizedProps](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: js.Object): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: js.Object): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,17 +214,14 @@ object mod {
   }
   object ReactLocalizationNotification {
     
-    @scala.inline
-    def apply(relocalize: () => Unit): ReactLocalizationNotification = {
+    inline def apply(relocalize: () => Unit): ReactLocalizationNotification = {
       val __obj = js.Dynamic.literal(relocalize = js.Any.fromFunction0(relocalize))
       __obj.asInstanceOf[ReactLocalizationNotification]
     }
     
-    @scala.inline
-    implicit class ReactLocalizationNotificationMutableBuilder[Self <: ReactLocalizationNotification] (val x: Self) extends AnyVal {
+    extension [Self <: ReactLocalizationNotification](x: Self) {
       
-      @scala.inline
-      def setRelocalize(value: () => Unit): Self = StObject.set(x, "relocalize", js.Any.fromFunction0(value))
+      inline def setRelocalize(value: () => Unit): Self = StObject.set(x, "relocalize", js.Any.fromFunction0(value))
     }
   }
   

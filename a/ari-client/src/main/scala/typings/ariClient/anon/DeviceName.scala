@@ -10,16 +10,13 @@ trait DeviceName extends StObject {
 }
 object DeviceName {
   
-  @scala.inline
-  def apply(deviceName: String): DeviceName = {
+  inline def apply(deviceName: String): DeviceName = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceName]
   }
   
-  @scala.inline
-  implicit class DeviceNameMutableBuilder[Self <: DeviceName] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceName](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
   }
 }

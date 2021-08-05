@@ -43,61 +43,43 @@ trait PublicIpv4Pool extends StObject {
 }
 object PublicIpv4Pool {
   
-  @scala.inline
-  def apply(): PublicIpv4Pool = {
+  inline def apply(): PublicIpv4Pool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicIpv4Pool]
   }
   
-  @scala.inline
-  implicit class PublicIpv4PoolMutableBuilder[Self <: PublicIpv4Pool] (val x: Self) extends AnyVal {
+  extension [Self <: PublicIpv4Pool](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
+    inline def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
+    inline def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
     
-    @scala.inline
-    def setPoolAddressRanges(value: PublicIpv4PoolRangeSet): Self = StObject.set(x, "PoolAddressRanges", value.asInstanceOf[js.Any])
+    inline def setPoolAddressRanges(value: PublicIpv4PoolRangeSet): Self = StObject.set(x, "PoolAddressRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolAddressRangesUndefined: Self = StObject.set(x, "PoolAddressRanges", js.undefined)
+    inline def setPoolAddressRangesUndefined: Self = StObject.set(x, "PoolAddressRanges", js.undefined)
     
-    @scala.inline
-    def setPoolAddressRangesVarargs(value: PublicIpv4PoolRange*): Self = StObject.set(x, "PoolAddressRanges", js.Array(value :_*))
+    inline def setPoolAddressRangesVarargs(value: PublicIpv4PoolRange*): Self = StObject.set(x, "PoolAddressRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setPoolId(value: String): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: String): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
+    inline def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalAddressCount(value: Integer): Self = StObject.set(x, "TotalAddressCount", value.asInstanceOf[js.Any])
+    inline def setTotalAddressCount(value: Integer): Self = StObject.set(x, "TotalAddressCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAddressCountUndefined: Self = StObject.set(x, "TotalAddressCount", js.undefined)
+    inline def setTotalAddressCountUndefined: Self = StObject.set(x, "TotalAddressCount", js.undefined)
     
-    @scala.inline
-    def setTotalAvailableAddressCount(value: Integer): Self = StObject.set(x, "TotalAvailableAddressCount", value.asInstanceOf[js.Any])
+    inline def setTotalAvailableAddressCount(value: Integer): Self = StObject.set(x, "TotalAvailableAddressCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAvailableAddressCountUndefined: Self = StObject.set(x, "TotalAvailableAddressCount", js.undefined)
+    inline def setTotalAvailableAddressCountUndefined: Self = StObject.set(x, "TotalAvailableAddressCount", js.undefined)
   }
 }

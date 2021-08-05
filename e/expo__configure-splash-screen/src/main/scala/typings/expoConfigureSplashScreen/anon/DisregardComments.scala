@@ -10,19 +10,15 @@ trait DisregardComments extends StObject {
 }
 object DisregardComments {
   
-  @scala.inline
-  def apply(): DisregardComments = {
+  inline def apply(): DisregardComments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisregardComments]
   }
   
-  @scala.inline
-  implicit class DisregardCommentsMutableBuilder[Self <: DisregardComments] (val x: Self) extends AnyVal {
+  extension [Self <: DisregardComments](x: Self) {
     
-    @scala.inline
-    def setDisregardComments(value: Boolean): Self = StObject.set(x, "disregardComments", value.asInstanceOf[js.Any])
+    inline def setDisregardComments(value: Boolean): Self = StObject.set(x, "disregardComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisregardCommentsUndefined: Self = StObject.set(x, "disregardComments", js.undefined)
+    inline def setDisregardCommentsUndefined: Self = StObject.set(x, "disregardComments", js.undefined)
   }
 }

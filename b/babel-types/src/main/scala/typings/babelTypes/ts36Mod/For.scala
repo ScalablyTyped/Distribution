@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait For extends StObject
 object For {
   
-  @scala.inline
-  def ForInStatement_(
+  inline def ForInStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -26,8 +25,7 @@ object For {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForInStatement_]
   }
   
-  @scala.inline
-  def ForOfStatement_(
+  inline def ForOfStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -40,8 +38,7 @@ object For {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForOfStatement_]
   }
   
-  @scala.inline
-  def ForStatement_(
+  inline def ForStatement_(
     body: Statement,
     end: Double,
     init: VariableDeclaration_ | Expression,

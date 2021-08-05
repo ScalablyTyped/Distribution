@@ -9,8 +9,7 @@ trait UpdateTableInput
      with typings.awsSdkClientDynamodbNode.typesUpdateTableInputMod.UpdateTableInput
 object UpdateTableInput {
   
-  @scala.inline
-  def apply(TableName: String): UpdateTableInput = {
+  inline def apply(TableName: String): UpdateTableInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTableInput]
   }

@@ -23,7 +23,7 @@ trait PropertyAccessor extends StObject {
   
   def LocalTimeToUTC(Value: VarDate): VarDate
   
-  @JSName("Outlook.PropertyAccessor_typekey")
+  /* private */ @JSName("Outlook.PropertyAccessor_typekey")
   var OutlookDotPropertyAccessor_typekey: PropertyAccessor
   
   val Parent: js.Any
@@ -40,8 +40,7 @@ trait PropertyAccessor extends StObject {
 }
 object PropertyAccessor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BinaryToString: js.Any => String,
     Class: OlObjectClass,
@@ -63,52 +62,36 @@ object PropertyAccessor {
     __obj.asInstanceOf[PropertyAccessor]
   }
   
-  @scala.inline
-  implicit class PropertyAccessorMutableBuilder[Self <: PropertyAccessor] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyAccessor](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryToString(value: js.Any => String): Self = StObject.set(x, "BinaryToString", js.Any.fromFunction1(value))
+    inline def setBinaryToString(value: js.Any => String): Self = StObject.set(x, "BinaryToString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteProperties(value: js.Any => js.Any): Self = StObject.set(x, "DeleteProperties", js.Any.fromFunction1(value))
+    inline def setDeleteProperties(value: js.Any => js.Any): Self = StObject.set(x, "DeleteProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteProperty(value: String => Unit): Self = StObject.set(x, "DeleteProperty", js.Any.fromFunction1(value))
+    inline def setDeleteProperty(value: String => Unit): Self = StObject.set(x, "DeleteProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProperties(value: js.Any => js.Any): Self = StObject.set(x, "GetProperties", js.Any.fromFunction1(value))
+    inline def setGetProperties(value: js.Any => js.Any): Self = StObject.set(x, "GetProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProperty(value: String => js.Any): Self = StObject.set(x, "GetProperty", js.Any.fromFunction1(value))
+    inline def setGetProperty(value: String => js.Any): Self = StObject.set(x, "GetProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocalTimeToUTC(value: VarDate => VarDate): Self = StObject.set(x, "LocalTimeToUTC", js.Any.fromFunction1(value))
+    inline def setLocalTimeToUTC(value: VarDate => VarDate): Self = StObject.set(x, "LocalTimeToUTC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotPropertyAccessor_typekey(value: PropertyAccessor): Self = StObject.set(x, "Outlook.PropertyAccessor_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotPropertyAccessor_typekey(value: PropertyAccessor): Self = StObject.set(x, "Outlook.PropertyAccessor_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetProperties(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "SetProperties", js.Any.fromFunction2(value))
+    inline def setSetProperties(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "SetProperties", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetProperty", js.Any.fromFunction2(value))
+    inline def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStringToBinary(value: String => js.Any): Self = StObject.set(x, "StringToBinary", js.Any.fromFunction1(value))
+    inline def setStringToBinary(value: String => js.Any): Self = StObject.set(x, "StringToBinary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUTCToLocalTime(value: VarDate => VarDate): Self = StObject.set(x, "UTCToLocalTime", js.Any.fromFunction1(value))
+    inline def setUTCToLocalTime(value: VarDate => VarDate): Self = StObject.set(x, "UTCToLocalTime", js.Any.fromFunction1(value))
   }
 }

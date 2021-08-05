@@ -35,17 +35,14 @@ object loaderMod {
   }
   object LoaderProps {
     
-    @scala.inline
-    def apply(size: Double): LoaderProps = {
+    inline def apply(size: Double): LoaderProps = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoaderProps]
     }
     
-    @scala.inline
-    implicit class LoaderPropsMutableBuilder[Self <: LoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

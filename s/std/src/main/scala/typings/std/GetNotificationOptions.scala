@@ -10,19 +10,15 @@ trait GetNotificationOptions extends StObject {
 }
 object GetNotificationOptions {
   
-  @scala.inline
-  def apply(): GetNotificationOptions = {
+  inline def apply(): GetNotificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNotificationOptions]
   }
   
-  @scala.inline
-  implicit class GetNotificationOptionsMutableBuilder[Self <: GetNotificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetNotificationOptions](x: Self) {
     
-    @scala.inline
-    def setTag(value: java.lang.String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: java.lang.String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ trait IPrintItemListOptionDetails
 }
 object IPrintItemListOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     items: IVectorView[js.Any],
     optionId: String,
@@ -27,10 +26,8 @@ object IPrintItemListOptionDetails {
     __obj.asInstanceOf[IPrintItemListOptionDetails]
   }
   
-  @scala.inline
-  implicit class IPrintItemListOptionDetailsMutableBuilder[Self <: IPrintItemListOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintItemListOptionDetails](x: Self) {
     
-    @scala.inline
-    def setItems(value: IVectorView[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IVectorView[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

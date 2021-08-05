@@ -15,19 +15,15 @@ trait AdaptiveMediaSourceDownloadBitrateChangedEventArgs extends StObject {
 }
 object AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
   
-  @scala.inline
-  def apply(newValue: Double, oldValue: Double): AdaptiveMediaSourceDownloadBitrateChangedEventArgs = {
+  inline def apply(newValue: Double, oldValue: Double): AdaptiveMediaSourceDownloadBitrateChangedEventArgs = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadBitrateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourceDownloadBitrateChangedEventArgsMutableBuilder[Self <: AdaptiveMediaSourceDownloadBitrateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourceDownloadBitrateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

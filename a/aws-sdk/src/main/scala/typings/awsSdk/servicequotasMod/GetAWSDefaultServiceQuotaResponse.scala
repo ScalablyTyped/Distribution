@@ -13,19 +13,15 @@ trait GetAWSDefaultServiceQuotaResponse extends StObject {
 }
 object GetAWSDefaultServiceQuotaResponse {
   
-  @scala.inline
-  def apply(): GetAWSDefaultServiceQuotaResponse = {
+  inline def apply(): GetAWSDefaultServiceQuotaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAWSDefaultServiceQuotaResponse]
   }
   
-  @scala.inline
-  implicit class GetAWSDefaultServiceQuotaResponseMutableBuilder[Self <: GetAWSDefaultServiceQuotaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAWSDefaultServiceQuotaResponse](x: Self) {
     
-    @scala.inline
-    def setQuota(value: ServiceQuota): Self = StObject.set(x, "Quota", value.asInstanceOf[js.Any])
+    inline def setQuota(value: ServiceQuota): Self = StObject.set(x, "Quota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUndefined: Self = StObject.set(x, "Quota", js.undefined)
+    inline def setQuotaUndefined: Self = StObject.set(x, "Quota", js.undefined)
   }
 }

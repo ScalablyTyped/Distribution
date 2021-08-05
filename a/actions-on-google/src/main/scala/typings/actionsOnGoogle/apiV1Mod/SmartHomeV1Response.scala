@@ -13,20 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SmartHomeV1Response extends StObject
 object SmartHomeV1Response {
   
-  @scala.inline
-  def SmartHomeV1ExecuteResponse(payload: SmartHomeV1ExecutePayload, requestId: String): typings.actionsOnGoogle.apiV1Mod.SmartHomeV1ExecuteResponse = {
+  inline def SmartHomeV1ExecuteResponse(payload: SmartHomeV1ExecutePayload, requestId: String): typings.actionsOnGoogle.apiV1Mod.SmartHomeV1ExecuteResponse = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.actionsOnGoogle.apiV1Mod.SmartHomeV1ExecuteResponse]
   }
   
-  @scala.inline
-  def SmartHomeV1QueryResponse(payload: SmartHomeV1QueryPayload, requestId: String): typings.actionsOnGoogle.apiV1Mod.SmartHomeV1QueryResponse = {
+  inline def SmartHomeV1QueryResponse(payload: SmartHomeV1QueryPayload, requestId: String): typings.actionsOnGoogle.apiV1Mod.SmartHomeV1QueryResponse = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.actionsOnGoogle.apiV1Mod.SmartHomeV1QueryResponse]
   }
   
-  @scala.inline
-  def SmartHomeV1SyncResponse(payload: SmartHomeV1SyncPayload, requestId: String): typings.actionsOnGoogle.apiV1Mod.SmartHomeV1SyncResponse = {
+  inline def SmartHomeV1SyncResponse(payload: SmartHomeV1SyncPayload, requestId: String): typings.actionsOnGoogle.apiV1Mod.SmartHomeV1SyncResponse = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.actionsOnGoogle.apiV1Mod.SmartHomeV1SyncResponse]
   }

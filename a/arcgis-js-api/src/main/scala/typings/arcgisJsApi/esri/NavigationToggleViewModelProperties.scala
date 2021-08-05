@@ -24,25 +24,19 @@ trait NavigationToggleViewModelProperties extends StObject {
 }
 object NavigationToggleViewModelProperties {
   
-  @scala.inline
-  def apply(): NavigationToggleViewModelProperties = {
+  inline def apply(): NavigationToggleViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationToggleViewModelProperties]
   }
   
-  @scala.inline
-  implicit class NavigationToggleViewModelPropertiesMutableBuilder[Self <: NavigationToggleViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationToggleViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setNavigationMode(value: pan | rotate): Self = StObject.set(x, "navigationMode", value.asInstanceOf[js.Any])
+    inline def setNavigationMode(value: pan | rotate): Self = StObject.set(x, "navigationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationModeUndefined: Self = StObject.set(x, "navigationMode", js.undefined)
+    inline def setNavigationModeUndefined: Self = StObject.set(x, "navigationMode", js.undefined)
     
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

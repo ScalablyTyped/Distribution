@@ -72,8 +72,7 @@ object revWalkMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(repo: Repository): Revwalk = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[Revwalk]
+    inline def create(repo: Repository): Revwalk = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[Revwalk]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -84,17 +83,13 @@ object revWalkMod {
     trait SORT extends StObject
     object SORT {
       
-      @scala.inline
-      def NONE: `0` = 0.asInstanceOf[`0`]
+      inline def NONE: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def REVERSE: `4` = 4.asInstanceOf[`4`]
+      inline def REVERSE: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def TIME: `2` = 2.asInstanceOf[`2`]
+      inline def TIME: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def TOPOLOGICAL: `1` = 1.asInstanceOf[`1`]
+      inline def TOPOLOGICAL: `1` = 1.asInstanceOf[`1`]
     }
   }
 }

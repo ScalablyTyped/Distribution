@@ -25,31 +25,23 @@ trait GoogleActionsV2UiElementsOpenUrlAction extends StObject {
 }
 object GoogleActionsV2UiElementsOpenUrlAction {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UiElementsOpenUrlAction = {
+  inline def apply(): GoogleActionsV2UiElementsOpenUrlAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UiElementsOpenUrlAction]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UiElementsOpenUrlActionMutableBuilder[Self <: GoogleActionsV2UiElementsOpenUrlAction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UiElementsOpenUrlAction](x: Self) {
     
-    @scala.inline
-    def setAndroidApp(value: GoogleActionsV2DevicesAndroidApp): Self = StObject.set(x, "androidApp", value.asInstanceOf[js.Any])
+    inline def setAndroidApp(value: GoogleActionsV2DevicesAndroidApp): Self = StObject.set(x, "androidApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidAppUndefined: Self = StObject.set(x, "androidApp", js.undefined)
+    inline def setAndroidAppUndefined: Self = StObject.set(x, "androidApp", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlTypeHint(value: GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint): Self = StObject.set(x, "urlTypeHint", value.asInstanceOf[js.Any])
+    inline def setUrlTypeHint(value: GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint): Self = StObject.set(x, "urlTypeHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlTypeHintUndefined: Self = StObject.set(x, "urlTypeHint", js.undefined)
+    inline def setUrlTypeHintUndefined: Self = StObject.set(x, "urlTypeHint", js.undefined)
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

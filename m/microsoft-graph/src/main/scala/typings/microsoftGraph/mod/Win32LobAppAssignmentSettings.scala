@@ -19,37 +19,27 @@ trait Win32LobAppAssignmentSettings
 }
 object Win32LobAppAssignmentSettings {
   
-  @scala.inline
-  def apply(): Win32LobAppAssignmentSettings = {
+  inline def apply(): Win32LobAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Win32LobAppAssignmentSettings]
   }
   
-  @scala.inline
-  implicit class Win32LobAppAssignmentSettingsMutableBuilder[Self <: Win32LobAppAssignmentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Win32LobAppAssignmentSettings](x: Self) {
     
-    @scala.inline
-    def setInstallTimeSettings(value: NullableOption[MobileAppInstallTimeSettings]): Self = StObject.set(x, "installTimeSettings", value.asInstanceOf[js.Any])
+    inline def setInstallTimeSettings(value: NullableOption[MobileAppInstallTimeSettings]): Self = StObject.set(x, "installTimeSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallTimeSettingsNull: Self = StObject.set(x, "installTimeSettings", null)
+    inline def setInstallTimeSettingsNull: Self = StObject.set(x, "installTimeSettings", null)
     
-    @scala.inline
-    def setInstallTimeSettingsUndefined: Self = StObject.set(x, "installTimeSettings", js.undefined)
+    inline def setInstallTimeSettingsUndefined: Self = StObject.set(x, "installTimeSettings", js.undefined)
     
-    @scala.inline
-    def setNotifications(value: Win32LobAppNotification): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: Win32LobAppNotification): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    @scala.inline
-    def setRestartSettings(value: NullableOption[Win32LobAppRestartSettings]): Self = StObject.set(x, "restartSettings", value.asInstanceOf[js.Any])
+    inline def setRestartSettings(value: NullableOption[Win32LobAppRestartSettings]): Self = StObject.set(x, "restartSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartSettingsNull: Self = StObject.set(x, "restartSettings", null)
+    inline def setRestartSettingsNull: Self = StObject.set(x, "restartSettings", null)
     
-    @scala.inline
-    def setRestartSettingsUndefined: Self = StObject.set(x, "restartSettings", js.undefined)
+    inline def setRestartSettingsUndefined: Self = StObject.set(x, "restartSettings", js.undefined)
   }
 }

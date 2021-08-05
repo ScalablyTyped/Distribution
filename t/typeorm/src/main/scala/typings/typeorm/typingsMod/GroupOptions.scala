@@ -14,19 +14,15 @@ trait GroupOptions extends StObject {
 }
 object GroupOptions {
   
-  @scala.inline
-  def apply(): GroupOptions = {
+  inline def apply(): GroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupOptions]
   }
   
-  @scala.inline
-  implicit class GroupOptionsMutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GroupOptions](x: Self) {
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

@@ -166,8 +166,7 @@ trait INotificationsService extends StObject {
 }
 object INotificationsService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: INotificationItem => INotification,
     addView: (String, /* repeated */ js.Any) => Unit,
     current: js.Array[String],
@@ -185,46 +184,32 @@ object INotificationsService {
     __obj.asInstanceOf[INotificationsService]
   }
   
-  @scala.inline
-  implicit class INotificationsServiceMutableBuilder[Self <: INotificationsService] (val x: Self) extends AnyVal {
+  extension [Self <: INotificationsService](x: Self) {
     
-    @scala.inline
-    def setAdd(value: INotificationItem => INotification): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: INotificationItem => INotification): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddView(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "addView", js.Any.fromFunction2(value))
+    inline def setAddView(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "addView", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCurrent(value: js.Array[String]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: js.Array[String]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVarargs(value: String*): Self = StObject.set(x, "current", js.Array(value :_*))
+    inline def setCurrentVarargs(value: String*): Self = StObject.set(x, "current", js.Array(value :_*))
     
-    @scala.inline
-    def setError(value: (String, String) => INotification): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (String, String) => INotification): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCurrent(value: () => js.Array[INotification]): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
+    inline def setGetCurrent(value: () => js.Array[INotification]): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasView(value: String => Boolean): Self = StObject.set(x, "hasView", js.Any.fromFunction1(value))
+    inline def setHasView(value: String => Boolean): Self = StObject.set(x, "hasView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: (String, String) => INotification): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+    inline def setInfo(value: (String, String) => INotification): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
+    inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowNotification(value: INotificationArgs => INotification): Self = StObject.set(x, "showNotification", js.Any.fromFunction1(value))
+    inline def setShowNotification(value: INotificationArgs => INotification): Self = StObject.set(x, "showNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccess(value: (String, String) => INotification): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+    inline def setSuccess(value: (String, String) => INotification): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWarning(value: (String, String) => INotification): Self = StObject.set(x, "warning", js.Any.fromFunction2(value))
+    inline def setWarning(value: (String, String) => INotification): Self = StObject.set(x, "warning", js.Any.fromFunction2(value))
   }
 }

@@ -10,19 +10,15 @@ trait XAdsRegion extends StObject {
 }
 object XAdsRegion {
   
-  @scala.inline
-  def apply(): XAdsRegion = {
+  inline def apply(): XAdsRegion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XAdsRegion]
   }
   
-  @scala.inline
-  implicit class XAdsRegionMutableBuilder[Self <: XAdsRegion] (val x: Self) extends AnyVal {
+  extension [Self <: XAdsRegion](x: Self) {
     
-    @scala.inline
-    def setXAdsRegion(value: String): Self = StObject.set(x, "xAdsRegion", value.asInstanceOf[js.Any])
+    inline def setXAdsRegion(value: String): Self = StObject.set(x, "xAdsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAdsRegionUndefined: Self = StObject.set(x, "xAdsRegion", js.undefined)
+    inline def setXAdsRegionUndefined: Self = StObject.set(x, "xAdsRegion", js.undefined)
   }
 }

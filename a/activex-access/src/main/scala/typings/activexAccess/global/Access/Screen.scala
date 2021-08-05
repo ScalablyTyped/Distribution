@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Screen")
 @js.native
-class Screen protected ()
+/* private */ class Screen ()
   extends StObject
      with typings.activexAccess.Access.Screen {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.Screen_typekey")
   var AccessDotScreen_typekey: typings.activexAccess.Access.Screen = js.native
   

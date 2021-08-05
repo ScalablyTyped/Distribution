@@ -14,25 +14,19 @@ trait PropertyValue extends StObject {
 }
 object PropertyValue {
   
-  @scala.inline
-  def apply(): PropertyValue = {
+  inline def apply(): PropertyValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyValue]
   }
   
-  @scala.inline
-  implicit class PropertyValueMutableBuilder[Self <: PropertyValue] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyValue](x: Self) {
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

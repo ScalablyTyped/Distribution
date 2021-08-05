@@ -22,49 +22,35 @@ trait SuggestParams
 }
 object SuggestParams {
   
-  @scala.inline
-  def apply(index: NameList): SuggestParams = {
+  inline def apply(index: NameList): SuggestParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestParams]
   }
   
-  @scala.inline
-  implicit class SuggestParamsMutableBuilder[Self <: SuggestParams] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestParams](x: Self) {
     
-    @scala.inline
-    def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
+    inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
+    inline def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
     
-    @scala.inline
-    def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
+    inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
+    inline def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
     
-    @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
-    @scala.inline
-    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
-    @scala.inline
-    def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
-    @scala.inline
-    def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    inline def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+    inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
   }
 }

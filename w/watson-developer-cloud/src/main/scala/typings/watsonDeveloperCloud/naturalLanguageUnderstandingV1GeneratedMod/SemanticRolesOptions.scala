@@ -18,31 +18,23 @@ trait SemanticRolesOptions extends StObject {
 }
 object SemanticRolesOptions {
   
-  @scala.inline
-  def apply(): SemanticRolesOptions = {
+  inline def apply(): SemanticRolesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticRolesOptions]
   }
   
-  @scala.inline
-  implicit class SemanticRolesOptionsMutableBuilder[Self <: SemanticRolesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticRolesOptions](x: Self) {
     
-    @scala.inline
-    def setEntities(value: Boolean): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: Boolean): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setKeywords(value: Boolean): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: Boolean): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

@@ -26,7 +26,7 @@ object configurationMod {
     
     def sessionStorageEnabled: Boolean = js.native
     
-    var settings: js.Any = js.native
+    /* private */ var settings: js.Any = js.native
     
     def streamsUri: String = js.native
     

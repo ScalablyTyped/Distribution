@@ -24,8 +24,7 @@ trait AgentInfo extends StObject {
 }
 object AgentInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     creation_time: String,
     did: DID,
     expiration: Double,
@@ -38,34 +37,24 @@ object AgentInfo {
     __obj.asInstanceOf[AgentInfo]
   }
   
-  @scala.inline
-  implicit class AgentInfoMutableBuilder[Self <: AgentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AgentInfo](x: Self) {
     
-    @scala.inline
-    def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
+    inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
+    inline def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: js.Any): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Any): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNull: Self = StObject.set(x, "role", null)
+    inline def setRoleNull: Self = StObject.set(x, "role", null)
     
-    @scala.inline
-    def setUrl(value: AgentURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: AgentURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerkey(value: Verkey): Self = StObject.set(x, "verkey", value.asInstanceOf[js.Any])
+    inline def setVerkey(value: Verkey): Self = StObject.set(x, "verkey", value.asInstanceOf[js.Any])
   }
 }

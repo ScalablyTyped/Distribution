@@ -24,61 +24,43 @@ trait ICommandRunTestStep extends StObject {
 }
 object ICommandRunTestStep {
   
-  @scala.inline
-  def apply(): ICommandRunTestStep = {
+  inline def apply(): ICommandRunTestStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICommandRunTestStep]
   }
   
-  @scala.inline
-  implicit class ICommandRunTestStepMutableBuilder[Self <: ICommandRunTestStep] (val x: Self) extends AnyVal {
+  extension [Self <: ICommandRunTestStep](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdNull: Self = StObject.set(x, "actionId", null)
+    inline def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setPickleStepArgument(value: IPickleStepArgument): Self = StObject.set(x, "pickleStepArgument", value.asInstanceOf[js.Any])
+    inline def setPickleStepArgument(value: IPickleStepArgument): Self = StObject.set(x, "pickleStepArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleStepArgumentNull: Self = StObject.set(x, "pickleStepArgument", null)
+    inline def setPickleStepArgumentNull: Self = StObject.set(x, "pickleStepArgument", null)
     
-    @scala.inline
-    def setPickleStepArgumentUndefined: Self = StObject.set(x, "pickleStepArgument", js.undefined)
+    inline def setPickleStepArgumentUndefined: Self = StObject.set(x, "pickleStepArgument", js.undefined)
     
-    @scala.inline
-    def setStepDefinitionId(value: String): Self = StObject.set(x, "stepDefinitionId", value.asInstanceOf[js.Any])
+    inline def setStepDefinitionId(value: String): Self = StObject.set(x, "stepDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepDefinitionIdNull: Self = StObject.set(x, "stepDefinitionId", null)
+    inline def setStepDefinitionIdNull: Self = StObject.set(x, "stepDefinitionId", null)
     
-    @scala.inline
-    def setStepDefinitionIdUndefined: Self = StObject.set(x, "stepDefinitionId", js.undefined)
+    inline def setStepDefinitionIdUndefined: Self = StObject.set(x, "stepDefinitionId", js.undefined)
     
-    @scala.inline
-    def setStepMatchArguments(value: js.Array[IStepMatchArgument]): Self = StObject.set(x, "stepMatchArguments", value.asInstanceOf[js.Any])
+    inline def setStepMatchArguments(value: js.Array[IStepMatchArgument]): Self = StObject.set(x, "stepMatchArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepMatchArgumentsNull: Self = StObject.set(x, "stepMatchArguments", null)
+    inline def setStepMatchArgumentsNull: Self = StObject.set(x, "stepMatchArguments", null)
     
-    @scala.inline
-    def setStepMatchArgumentsUndefined: Self = StObject.set(x, "stepMatchArguments", js.undefined)
+    inline def setStepMatchArgumentsUndefined: Self = StObject.set(x, "stepMatchArguments", js.undefined)
     
-    @scala.inline
-    def setStepMatchArgumentsVarargs(value: IStepMatchArgument*): Self = StObject.set(x, "stepMatchArguments", js.Array(value :_*))
+    inline def setStepMatchArgumentsVarargs(value: IStepMatchArgument*): Self = StObject.set(x, "stepMatchArguments", js.Array(value :_*))
     
-    @scala.inline
-    def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
+    inline def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
+    inline def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
     
-    @scala.inline
-    def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
+    inline def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
   }
 }

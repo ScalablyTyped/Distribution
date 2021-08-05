@@ -109,8 +109,7 @@ trait Component extends StObject {
 }
 object Component {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add_disposing: js.Function => Unit,
     add_propertyChanged: js.Function => Unit,
     beginUpdate: () => Unit,
@@ -131,52 +130,36 @@ object Component {
     __obj.asInstanceOf[Component]
   }
   
-  @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+  extension [Self <: Component](x: Self) {
     
-    @scala.inline
-    def setAdd_disposing(value: js.Function => Unit): Self = StObject.set(x, "add_disposing", js.Any.fromFunction1(value))
+    inline def setAdd_disposing(value: js.Function => Unit): Self = StObject.set(x, "add_disposing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdd_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "add_propertyChanged", js.Any.fromFunction1(value))
+    inline def setAdd_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "add_propertyChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
+    inline def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
+    inline def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_events(value: () => js.Any): Self = StObject.set(x, "get_events", js.Any.fromFunction0(value))
+    inline def setGet_events(value: () => js.Any): Self = StObject.set(x, "get_events", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+    inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isInitialized(value: () => Boolean): Self = StObject.set(x, "get_isInitialized", js.Any.fromFunction0(value))
+    inline def setGet_isInitialized(value: () => Boolean): Self = StObject.set(x, "get_isInitialized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isUpdating(value: () => Boolean): Self = StObject.set(x, "get_isUpdating", js.Any.fromFunction0(value))
+    inline def setGet_isUpdating(value: () => Boolean): Self = StObject.set(x, "get_isUpdating", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+    inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRaisePropertyChanged(value: String => Unit): Self = StObject.set(x, "raisePropertyChanged", js.Any.fromFunction1(value))
+    inline def setRaisePropertyChanged(value: String => Unit): Self = StObject.set(x, "raisePropertyChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_disposing(value: js.Function => Unit): Self = StObject.set(x, "remove_disposing", js.Any.fromFunction1(value))
+    inline def setRemove_disposing(value: js.Function => Unit): Self = StObject.set(x, "remove_disposing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "remove_propertyChanged", js.Any.fromFunction1(value))
+    inline def setRemove_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "remove_propertyChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_id(value: String => Unit): Self = StObject.set(x, "set_id", js.Any.fromFunction1(value))
+    inline def setSet_id(value: String => Unit): Self = StObject.set(x, "set_id", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdated(value: () => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction0(value))
+    inline def setUpdated(value: () => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction0(value))
   }
 }

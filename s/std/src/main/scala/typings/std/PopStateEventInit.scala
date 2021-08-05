@@ -12,19 +12,15 @@ trait PopStateEventInit
 }
 object PopStateEventInit {
   
-  @scala.inline
-  def apply(): PopStateEventInit = {
+  inline def apply(): PopStateEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopStateEventInit]
   }
   
-  @scala.inline
-  implicit class PopStateEventInitMutableBuilder[Self <: PopStateEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: PopStateEventInit](x: Self) {
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -31,37 +31,27 @@ trait SchemaCounterMetadata extends StObject {
 }
 object SchemaCounterMetadata {
   
-  @scala.inline
-  def apply(): SchemaCounterMetadata = {
+  inline def apply(): SchemaCounterMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCounterMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaCounterMetadataMutableBuilder[Self <: SchemaCounterMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCounterMetadata](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOtherUnits(value: String): Self = StObject.set(x, "otherUnits", value.asInstanceOf[js.Any])
+    inline def setOtherUnits(value: String): Self = StObject.set(x, "otherUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherUnitsUndefined: Self = StObject.set(x, "otherUnits", js.undefined)
+    inline def setOtherUnitsUndefined: Self = StObject.set(x, "otherUnits", js.undefined)
     
-    @scala.inline
-    def setStandardUnits(value: String): Self = StObject.set(x, "standardUnits", value.asInstanceOf[js.Any])
+    inline def setStandardUnits(value: String): Self = StObject.set(x, "standardUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUnitsUndefined: Self = StObject.set(x, "standardUnits", js.undefined)
+    inline def setStandardUnitsUndefined: Self = StObject.set(x, "standardUnits", js.undefined)
   }
 }

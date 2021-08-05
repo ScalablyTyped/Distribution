@@ -62,6 +62,5 @@ object History_ {
   @JSImport("backbone", "History.started")
   @js.native
   def started: Boolean = js.native
-  @scala.inline
-  def started_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("started")(x.asInstanceOf[js.Any])
+  inline def started_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("started")(x.asInstanceOf[js.Any])
 }

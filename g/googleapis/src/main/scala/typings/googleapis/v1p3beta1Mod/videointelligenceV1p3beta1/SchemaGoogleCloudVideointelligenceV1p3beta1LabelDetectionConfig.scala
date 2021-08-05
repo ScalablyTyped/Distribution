@@ -52,43 +52,31 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig extends St
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfigMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig](x: Self) {
     
-    @scala.inline
-    def setFrameConfidenceThreshold(value: Double): Self = StObject.set(x, "frameConfidenceThreshold", value.asInstanceOf[js.Any])
+    inline def setFrameConfidenceThreshold(value: Double): Self = StObject.set(x, "frameConfidenceThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameConfidenceThresholdUndefined: Self = StObject.set(x, "frameConfidenceThreshold", js.undefined)
+    inline def setFrameConfidenceThresholdUndefined: Self = StObject.set(x, "frameConfidenceThreshold", js.undefined)
     
-    @scala.inline
-    def setLabelDetectionMode(value: String): Self = StObject.set(x, "labelDetectionMode", value.asInstanceOf[js.Any])
+    inline def setLabelDetectionMode(value: String): Self = StObject.set(x, "labelDetectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelDetectionModeUndefined: Self = StObject.set(x, "labelDetectionMode", js.undefined)
+    inline def setLabelDetectionModeUndefined: Self = StObject.set(x, "labelDetectionMode", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setStationaryCamera(value: Boolean): Self = StObject.set(x, "stationaryCamera", value.asInstanceOf[js.Any])
+    inline def setStationaryCamera(value: Boolean): Self = StObject.set(x, "stationaryCamera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStationaryCameraUndefined: Self = StObject.set(x, "stationaryCamera", js.undefined)
+    inline def setStationaryCameraUndefined: Self = StObject.set(x, "stationaryCamera", js.undefined)
     
-    @scala.inline
-    def setVideoConfidenceThreshold(value: Double): Self = StObject.set(x, "videoConfidenceThreshold", value.asInstanceOf[js.Any])
+    inline def setVideoConfidenceThreshold(value: Double): Self = StObject.set(x, "videoConfidenceThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoConfidenceThresholdUndefined: Self = StObject.set(x, "videoConfidenceThreshold", js.undefined)
+    inline def setVideoConfidenceThresholdUndefined: Self = StObject.set(x, "videoConfidenceThreshold", js.undefined)
   }
 }

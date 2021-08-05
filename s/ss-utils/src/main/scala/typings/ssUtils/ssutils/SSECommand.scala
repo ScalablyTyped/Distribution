@@ -16,25 +16,19 @@ trait SSECommand extends StObject {
 }
 object SSECommand {
   
-  @scala.inline
-  def apply(channels: String, displayName: String, profileUrl: String, userId: String): SSECommand = {
+  inline def apply(channels: String, displayName: String, profileUrl: String, userId: String): SSECommand = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], profileUrl = profileUrl.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSECommand]
   }
   
-  @scala.inline
-  implicit class SSECommandMutableBuilder[Self <: SSECommand] (val x: Self) extends AnyVal {
+  extension [Self <: SSECommand](x: Self) {
     
-    @scala.inline
-    def setChannels(value: String): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: String): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
+    inline def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait ReGeocodeResult extends StObject {
 }
 object ReGeocodeResult {
   
-  @scala.inline
-  def apply(info: String, regeocode: ReGeocode): ReGeocodeResult = {
+  inline def apply(info: String, regeocode: ReGeocode): ReGeocodeResult = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], regeocode = regeocode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReGeocodeResult]
   }
   
-  @scala.inline
-  implicit class ReGeocodeResultMutableBuilder[Self <: ReGeocodeResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReGeocodeResult](x: Self) {
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegeocode(value: ReGeocode): Self = StObject.set(x, "regeocode", value.asInstanceOf[js.Any])
+    inline def setRegeocode(value: ReGeocode): Self = StObject.set(x, "regeocode", value.asInstanceOf[js.Any])
   }
 }

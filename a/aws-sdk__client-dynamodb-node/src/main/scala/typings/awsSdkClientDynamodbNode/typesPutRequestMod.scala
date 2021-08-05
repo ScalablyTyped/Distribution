@@ -19,17 +19,14 @@ object typesPutRequestMod {
   }
   object PutRequest {
     
-    @scala.inline
-    def apply(Item: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): PutRequest = {
+    inline def apply(Item: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): PutRequest = {
       val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRequest]
     }
     
-    @scala.inline
-    implicit class PutRequestMutableBuilder[Self <: PutRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PutRequest](x: Self) {
       
-      @scala.inline
-      def setItem(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,17 +42,14 @@ object typesPutRequestMod {
   }
   object UnmarshalledPutRequest {
     
-    @scala.inline
-    def apply(Item: StringDictionary[UnmarshalledAttributeValue]): UnmarshalledPutRequest = {
+    inline def apply(Item: StringDictionary[UnmarshalledAttributeValue]): UnmarshalledPutRequest = {
       val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledPutRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledPutRequestMutableBuilder[Self <: UnmarshalledPutRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledPutRequest](x: Self) {
       
-      @scala.inline
-      def setItem(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,26 +28,20 @@ object mod {
   }
   object Match {
     
-    @scala.inline
-    def apply[P, D](params: P, paramsArray: js.Array[String], route: D): Match[P, D] = {
+    inline def apply[P, D](params: P, paramsArray: js.Array[String], route: D): Match[P, D] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], paramsArray = paramsArray.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match[P, D]]
     }
     
-    @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match[?, ?], P, D] (val x: Self & (Match[P, D])) extends AnyVal {
+    extension [Self <: Match[?, ?], P, D](x: Self & (Match[P, D])) {
       
-      @scala.inline
-      def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsArray(value: js.Array[String]): Self = StObject.set(x, "paramsArray", value.asInstanceOf[js.Any])
+      inline def setParamsArray(value: js.Array[String]): Self = StObject.set(x, "paramsArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsArrayVarargs(value: String*): Self = StObject.set(x, "paramsArray", js.Array(value :_*))
+      inline def setParamsArrayVarargs(value: String*): Self = StObject.set(x, "paramsArray", js.Array(value :_*))
       
-      @scala.inline
-      def setRoute(value: D): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: D): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +55,16 @@ object mod {
   }
   object RouteDefinition {
     
-    @scala.inline
-    def apply(method: String, path: String): RouteDefinition = {
+    inline def apply(method: String, path: String): RouteDefinition = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteDefinition]
     }
     
-    @scala.inline
-    implicit class RouteDefinitionMutableBuilder[Self <: RouteDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: RouteDefinition](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +74,14 @@ object mod {
   }
   object RouterOptions {
     
-    @scala.inline
-    def apply(isCaseSensitive: Boolean): RouterOptions = {
+    inline def apply(isCaseSensitive: Boolean): RouterOptions = {
       val __obj = js.Dynamic.literal(isCaseSensitive = isCaseSensitive.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterOptions]
     }
     
-    @scala.inline
-    implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouterOptions](x: Self) {
       
-      @scala.inline
-      def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "isCaseSensitive", value.asInstanceOf[js.Any])
+      inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "isCaseSensitive", value.asInstanceOf[js.Any])
     }
   }
 }

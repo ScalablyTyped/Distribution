@@ -13,19 +13,15 @@ trait ResultSucceeded extends StObject {
 }
 object ResultSucceeded {
   
-  @scala.inline
-  def apply(result: JsonArray, succeeded: Boolean): ResultSucceeded = {
+  inline def apply(result: JsonArray, succeeded: Boolean): ResultSucceeded = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSucceeded]
   }
   
-  @scala.inline
-  implicit class ResultSucceededMutableBuilder[Self <: ResultSucceeded] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSucceeded](x: Self) {
     
-    @scala.inline
-    def setResult(value: JsonArray): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: JsonArray): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

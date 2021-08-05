@@ -10,16 +10,13 @@ trait GlobalResource extends StObject {
 }
 object GlobalResource {
   
-  @scala.inline
-  def apply(networks: NetworksResource): GlobalResource = {
+  inline def apply(networks: NetworksResource): GlobalResource = {
     val __obj = js.Dynamic.literal(networks = networks.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalResource]
   }
   
-  @scala.inline
-  implicit class GlobalResourceMutableBuilder[Self <: GlobalResource] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalResource](x: Self) {
     
-    @scala.inline
-    def setNetworks(value: NetworksResource): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: NetworksResource): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
   }
 }

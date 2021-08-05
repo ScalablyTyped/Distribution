@@ -29,31 +29,23 @@ trait SpatialReferenceProperties extends StObject {
 }
 object SpatialReferenceProperties {
   
-  @scala.inline
-  def apply(): SpatialReferenceProperties = {
+  inline def apply(): SpatialReferenceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpatialReferenceProperties]
   }
   
-  @scala.inline
-  implicit class SpatialReferencePropertiesMutableBuilder[Self <: SpatialReferenceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialReferenceProperties](x: Self) {
     
-    @scala.inline
-    def setImageCoordinateSystem(value: js.Any): Self = StObject.set(x, "imageCoordinateSystem", value.asInstanceOf[js.Any])
+    inline def setImageCoordinateSystem(value: js.Any): Self = StObject.set(x, "imageCoordinateSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageCoordinateSystemUndefined: Self = StObject.set(x, "imageCoordinateSystem", js.undefined)
+    inline def setImageCoordinateSystemUndefined: Self = StObject.set(x, "imageCoordinateSystem", js.undefined)
     
-    @scala.inline
-    def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
+    inline def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
+    inline def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
     
-    @scala.inline
-    def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
+    inline def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
+    inline def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
   }
 }

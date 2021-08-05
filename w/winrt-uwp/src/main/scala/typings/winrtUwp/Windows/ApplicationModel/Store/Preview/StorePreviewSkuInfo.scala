@@ -36,8 +36,7 @@ trait StorePreviewSkuInfo extends StObject {
 }
 object StorePreviewSkuInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currencyCode: String,
     customDeveloperData: String,
     description: String,
@@ -52,34 +51,24 @@ object StorePreviewSkuInfo {
     __obj.asInstanceOf[StorePreviewSkuInfo]
   }
   
-  @scala.inline
-  implicit class StorePreviewSkuInfoMutableBuilder[Self <: StorePreviewSkuInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StorePreviewSkuInfo](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDeveloperData(value: String): Self = StObject.set(x, "customDeveloperData", value.asInstanceOf[js.Any])
+    inline def setCustomDeveloperData(value: String): Self = StObject.set(x, "customDeveloperData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedData(value: String): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
+    inline def setExtendedData(value: String): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedListPrice(value: String): Self = StObject.set(x, "formattedListPrice", value.asInstanceOf[js.Any])
+    inline def setFormattedListPrice(value: String): Self = StObject.set(x, "formattedListPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+    inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuType(value: String): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
+    inline def setSkuType(value: String): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

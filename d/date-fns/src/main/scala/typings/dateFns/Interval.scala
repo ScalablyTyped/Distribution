@@ -14,19 +14,15 @@ trait Interval extends StObject {
 }
 object Interval {
   
-  @scala.inline
-  def apply(end: Date | Double, start: Date | Double): Interval = {
+  inline def apply(end: Date | Double, start: Date | Double): Interval = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Interval]
   }
   
-  @scala.inline
-  implicit class IntervalMutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
+  extension [Self <: Interval](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Date | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Date | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Date | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -24,16 +24,16 @@ object mod {
     /* CompleteClass */
     override def coerce(request: Request): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var coerceFormData: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var coerceHeaders: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var coerceParams: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var coerceQuery: js.Any = js.native
   }
   
@@ -47,32 +47,24 @@ object mod {
   }
   object CoercionStrategy {
     
-    @scala.inline
-    def apply(): CoercionStrategy = {
+    inline def apply(): CoercionStrategy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoercionStrategy]
     }
     
-    @scala.inline
-    implicit class CoercionStrategyMutableBuilder[Self <: CoercionStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: CoercionStrategy](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
+      inline def setBoolean(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      @scala.inline
-      def setInteger(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "integer", js.Any.fromFunction1(value))
+      inline def setInteger(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "integer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
+      inline def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
       
-      @scala.inline
-      def setNumber(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
+      inline def setNumber(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     }
   }
   
@@ -82,17 +74,14 @@ object mod {
   }
   object IOpenAPIRequestCoercer {
     
-    @scala.inline
-    def apply(coerce: Request => Unit): IOpenAPIRequestCoercer = {
+    inline def apply(coerce: Request => Unit): IOpenAPIRequestCoercer = {
       val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce))
       __obj.asInstanceOf[IOpenAPIRequestCoercer]
     }
     
-    @scala.inline
-    implicit class IOpenAPIRequestCoercerMutableBuilder[Self <: IOpenAPIRequestCoercer] (val x: Self) extends AnyVal {
+    extension [Self <: IOpenAPIRequestCoercer](x: Self) {
       
-      @scala.inline
-      def setCoerce(value: Request => Unit): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+      inline def setCoerce(value: Request => Unit): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
     }
   }
   
@@ -102,18 +91,17 @@ object mod {
     
     def coerce(request: js.Any): Unit
     
-    var coerceFormData: js.Any
+    /* private */ var coerceFormData: js.Any
     
-    var coerceHeaders: js.Any
+    /* private */ var coerceHeaders: js.Any
     
-    var coerceParams: js.Any
+    /* private */ var coerceParams: js.Any
     
-    var coerceQuery: js.Any
+    /* private */ var coerceQuery: js.Any
   }
   object OpenAPIRequestCoercer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coerce: js.Any => Unit,
       coerceFormData: js.Any,
       coerceHeaders: js.Any,
@@ -124,23 +112,17 @@ object mod {
       __obj.asInstanceOf[OpenAPIRequestCoercer]
     }
     
-    @scala.inline
-    implicit class OpenAPIRequestCoercerMutableBuilder[Self <: OpenAPIRequestCoercer] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIRequestCoercer](x: Self) {
       
-      @scala.inline
-      def setCoerce(value: js.Any => Unit): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+      inline def setCoerce(value: js.Any => Unit): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCoerceFormData(value: js.Any): Self = StObject.set(x, "coerceFormData", value.asInstanceOf[js.Any])
+      inline def setCoerceFormData(value: js.Any): Self = StObject.set(x, "coerceFormData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceHeaders(value: js.Any): Self = StObject.set(x, "coerceHeaders", value.asInstanceOf[js.Any])
+      inline def setCoerceHeaders(value: js.Any): Self = StObject.set(x, "coerceHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceParams(value: js.Any): Self = StObject.set(x, "coerceParams", value.asInstanceOf[js.Any])
+      inline def setCoerceParams(value: js.Any): Self = StObject.set(x, "coerceParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceQuery(value: js.Any): Self = StObject.set(x, "coerceQuery", value.asInstanceOf[js.Any])
+      inline def setCoerceQuery(value: js.Any): Self = StObject.set(x, "coerceQuery", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,50 +142,36 @@ object mod {
   }
   object OpenAPIRequestCoercerArgs {
     
-    @scala.inline
-    def apply(parameters: Parameters): OpenAPIRequestCoercerArgs = {
+    inline def apply(parameters: Parameters): OpenAPIRequestCoercerArgs = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIRequestCoercerArgs]
     }
     
-    @scala.inline
-    implicit class OpenAPIRequestCoercerArgsMutableBuilder[Self <: OpenAPIRequestCoercerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIRequestCoercerArgs](x: Self) {
       
-      @scala.inline
-      def setCoercionStrategy(value: CoercionStrategy): Self = StObject.set(x, "coercionStrategy", value.asInstanceOf[js.Any])
+      inline def setCoercionStrategy(value: CoercionStrategy): Self = StObject.set(x, "coercionStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoercionStrategyUndefined: Self = StObject.set(x, "coercionStrategy", js.undefined)
+      inline def setCoercionStrategyUndefined: Self = StObject.set(x, "coercionStrategy", js.undefined)
       
-      @scala.inline
-      def setEnableObjectCoercion(value: Boolean): Self = StObject.set(x, "enableObjectCoercion", value.asInstanceOf[js.Any])
+      inline def setEnableObjectCoercion(value: Boolean): Self = StObject.set(x, "enableObjectCoercion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableObjectCoercionUndefined: Self = StObject.set(x, "enableObjectCoercion", js.undefined)
+      inline def setEnableObjectCoercionUndefined: Self = StObject.set(x, "enableObjectCoercion", js.undefined)
       
-      @scala.inline
-      def setExtensionBase(value: String): Self = StObject.set(x, "extensionBase", value.asInstanceOf[js.Any])
+      inline def setExtensionBase(value: String): Self = StObject.set(x, "extensionBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionBaseUndefined: Self = StObject.set(x, "extensionBase", js.undefined)
+      inline def setExtensionBaseUndefined: Self = StObject.set(x, "extensionBase", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
+      inline def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingKeyUndefined: Self = StObject.set(x, "loggingKey", js.undefined)
+      inline def setLoggingKeyUndefined: Self = StObject.set(x, "loggingKey", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersVarargs(
+      inline def setParametersVarargs(
         value: (Parameter | ParameterObject | ReferenceObject | typings.openapiTypes.mod.OpenAPIV2.ReferenceObject)*
       ): Self = StObject.set(x, "parameters", js.Array(value :_*))
     }

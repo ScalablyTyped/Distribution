@@ -64,56 +64,40 @@ object typesReplicationRuleMod {
   }
   object ReplicationRule {
     
-    @scala.inline
-    def apply(Destination: Destination, Status: Enabled | Disabled | String): ReplicationRule = {
+    inline def apply(Destination: Destination, Status: Enabled | Disabled | String): ReplicationRule = {
       val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicationRule]
     }
     
-    @scala.inline
-    implicit class ReplicationRuleMutableBuilder[Self <: ReplicationRule] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationRule](x: Self) {
       
-      @scala.inline
-      def setDeleteMarkerReplication(value: DeleteMarkerReplication): Self = StObject.set(x, "DeleteMarkerReplication", value.asInstanceOf[js.Any])
+      inline def setDeleteMarkerReplication(value: DeleteMarkerReplication): Self = StObject.set(x, "DeleteMarkerReplication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteMarkerReplicationUndefined: Self = StObject.set(x, "DeleteMarkerReplication", js.undefined)
+      inline def setDeleteMarkerReplicationUndefined: Self = StObject.set(x, "DeleteMarkerReplication", js.undefined)
       
-      @scala.inline
-      def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: ReplicationRuleFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: ReplicationRuleFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
       
-      @scala.inline
-      def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
       
-      @scala.inline
-      def setSourceSelectionCriteria(value: SourceSelectionCriteria): Self = StObject.set(x, "SourceSelectionCriteria", value.asInstanceOf[js.Any])
+      inline def setSourceSelectionCriteria(value: SourceSelectionCriteria): Self = StObject.set(x, "SourceSelectionCriteria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "SourceSelectionCriteria", js.undefined)
+      inline def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "SourceSelectionCriteria", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,35 +131,26 @@ object typesReplicationRuleMod {
   }
   object UnmarshalledReplicationRule {
     
-    @scala.inline
-    def apply(Destination: UnmarshalledDestination, Status: Enabled | Disabled | String): UnmarshalledReplicationRule = {
+    inline def apply(Destination: UnmarshalledDestination, Status: Enabled | Disabled | String): UnmarshalledReplicationRule = {
       val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledReplicationRule]
     }
     
-    @scala.inline
-    implicit class UnmarshalledReplicationRuleMutableBuilder[Self <: UnmarshalledReplicationRule] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledReplicationRule](x: Self) {
       
-      @scala.inline
-      def setDeleteMarkerReplication(value: UnmarshalledDeleteMarkerReplication): Self = StObject.set(x, "DeleteMarkerReplication", value.asInstanceOf[js.Any])
+      inline def setDeleteMarkerReplication(value: UnmarshalledDeleteMarkerReplication): Self = StObject.set(x, "DeleteMarkerReplication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteMarkerReplicationUndefined: Self = StObject.set(x, "DeleteMarkerReplication", js.undefined)
+      inline def setDeleteMarkerReplicationUndefined: Self = StObject.set(x, "DeleteMarkerReplication", js.undefined)
       
-      @scala.inline
-      def setDestination(value: UnmarshalledDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: UnmarshalledDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: UnmarshalledReplicationRuleFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: UnmarshalledReplicationRuleFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
       
-      @scala.inline
-      def setSourceSelectionCriteria(value: UnmarshalledSourceSelectionCriteria): Self = StObject.set(x, "SourceSelectionCriteria", value.asInstanceOf[js.Any])
+      inline def setSourceSelectionCriteria(value: UnmarshalledSourceSelectionCriteria): Self = StObject.set(x, "SourceSelectionCriteria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "SourceSelectionCriteria", js.undefined)
+      inline def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "SourceSelectionCriteria", js.undefined)
     }
   }
 }

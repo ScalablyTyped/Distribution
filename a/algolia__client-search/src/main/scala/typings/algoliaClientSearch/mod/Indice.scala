@@ -53,8 +53,7 @@ trait Indice extends StObject {
 }
 object Indice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdAt: Double,
     dataSize: Double,
     entries: Double,
@@ -69,34 +68,24 @@ object Indice {
     __obj.asInstanceOf[Indice]
   }
   
-  @scala.inline
-  implicit class IndiceMutableBuilder[Self <: Indice] (val x: Self) extends AnyVal {
+  extension [Self <: Indice](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntries(value: Double): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: Double): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastBuildTimes(value: Double): Self = StObject.set(x, "lastBuildTimes", value.asInstanceOf[js.Any])
+    inline def setLastBuildTimes(value: Double): Self = StObject.set(x, "lastBuildTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfPendingTasks(value: Double): Self = StObject.set(x, "numberOfPendingTasks", value.asInstanceOf[js.Any])
+    inline def setNumberOfPendingTasks(value: Double): Self = StObject.set(x, "numberOfPendingTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingTask(value: Boolean): Self = StObject.set(x, "pendingTask", value.asInstanceOf[js.Any])
+    inline def setPendingTask(value: Boolean): Self = StObject.set(x, "pendingTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SemanticTokensClientCapabilities extends StObject {
 }
 object SemanticTokensClientCapabilities {
   
-  @scala.inline
-  def apply(): SemanticTokensClientCapabilities = {
+  inline def apply(): SemanticTokensClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticTokensClientCapabilities]
   }
   
-  @scala.inline
-  implicit class SemanticTokensClientCapabilitiesMutableBuilder[Self <: SemanticTokensClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setTextDocument(value: typings.vscodeLanguageserverProtocol.anon.SemanticTokens): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: typings.vscodeLanguageserverProtocol.anon.SemanticTokens): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocumentUndefined: Self = StObject.set(x, "textDocument", js.undefined)
+    inline def setTextDocumentUndefined: Self = StObject.set(x, "textDocument", js.undefined)
   }
 }

@@ -22,7 +22,7 @@ object queueActionMod {
     /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: Unit, delay: Double): js.Any = js.native
     
-    @JSName("scheduler")
+    /* protected */ @JSName("scheduler")
     var scheduler_QueueAction: QueueScheduler = js.native
   }
 }

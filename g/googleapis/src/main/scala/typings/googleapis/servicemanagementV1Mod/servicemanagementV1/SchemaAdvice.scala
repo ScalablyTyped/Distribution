@@ -18,19 +18,15 @@ trait SchemaAdvice extends StObject {
 }
 object SchemaAdvice {
   
-  @scala.inline
-  def apply(): SchemaAdvice = {
+  inline def apply(): SchemaAdvice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAdvice]
   }
   
-  @scala.inline
-  implicit class SchemaAdviceMutableBuilder[Self <: SchemaAdvice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAdvice](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

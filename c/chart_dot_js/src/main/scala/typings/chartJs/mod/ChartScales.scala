@@ -24,67 +24,47 @@ trait ChartScales extends StObject {
 }
 object ChartScales {
   
-  @scala.inline
-  def apply(): ChartScales = {
+  inline def apply(): ChartScales = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartScales]
   }
   
-  @scala.inline
-  implicit class ChartScalesMutableBuilder[Self <: ChartScales] (val x: Self) extends AnyVal {
+  extension [Self <: ChartScales](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setGridLines(value: GridLineOptions): Self = StObject.set(x, "gridLines", value.asInstanceOf[js.Any])
+    inline def setGridLines(value: GridLineOptions): Self = StObject.set(x, "gridLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridLinesUndefined: Self = StObject.set(x, "gridLines", js.undefined)
+    inline def setGridLinesUndefined: Self = StObject.set(x, "gridLines", js.undefined)
     
-    @scala.inline
-    def setPosition(value: PositionType | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PositionType | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setScaleLabel(value: ScaleTitleOptions): Self = StObject.set(x, "scaleLabel", value.asInstanceOf[js.Any])
+    inline def setScaleLabel(value: ScaleTitleOptions): Self = StObject.set(x, "scaleLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleLabelUndefined: Self = StObject.set(x, "scaleLabel", js.undefined)
+    inline def setScaleLabelUndefined: Self = StObject.set(x, "scaleLabel", js.undefined)
     
-    @scala.inline
-    def setTicks(value: TickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: TickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    @scala.inline
-    def setType(value: ScaleType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ScaleType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setXAxes(value: js.Array[ChartXAxe]): Self = StObject.set(x, "xAxes", value.asInstanceOf[js.Any])
+    inline def setXAxes(value: js.Array[ChartXAxe]): Self = StObject.set(x, "xAxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxesUndefined: Self = StObject.set(x, "xAxes", js.undefined)
+    inline def setXAxesUndefined: Self = StObject.set(x, "xAxes", js.undefined)
     
-    @scala.inline
-    def setXAxesVarargs(value: ChartXAxe*): Self = StObject.set(x, "xAxes", js.Array(value :_*))
+    inline def setXAxesVarargs(value: ChartXAxe*): Self = StObject.set(x, "xAxes", js.Array(value :_*))
     
-    @scala.inline
-    def setYAxes(value: js.Array[ChartYAxe]): Self = StObject.set(x, "yAxes", value.asInstanceOf[js.Any])
+    inline def setYAxes(value: js.Array[ChartYAxe]): Self = StObject.set(x, "yAxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxesUndefined: Self = StObject.set(x, "yAxes", js.undefined)
+    inline def setYAxesUndefined: Self = StObject.set(x, "yAxes", js.undefined)
     
-    @scala.inline
-    def setYAxesVarargs(value: ChartYAxe*): Self = StObject.set(x, "yAxes", js.Array(value :_*))
+    inline def setYAxesVarargs(value: ChartYAxe*): Self = StObject.set(x, "yAxes", js.Array(value :_*))
   }
 }

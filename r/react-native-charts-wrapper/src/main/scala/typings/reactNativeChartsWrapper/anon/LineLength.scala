@@ -14,31 +14,23 @@ trait LineLength extends StObject {
 }
 object LineLength {
   
-  @scala.inline
-  def apply(): LineLength = {
+  inline def apply(): LineLength = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineLength]
   }
   
-  @scala.inline
-  implicit class LineLengthMutableBuilder[Self <: LineLength] (val x: Self) extends AnyVal {
+  extension [Self <: LineLength](x: Self) {
     
-    @scala.inline
-    def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
+    inline def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineLengthUndefined: Self = StObject.set(x, "lineLength", js.undefined)
+    inline def setLineLengthUndefined: Self = StObject.set(x, "lineLength", js.undefined)
     
-    @scala.inline
-    def setPhase(value: Double): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: Double): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
-    @scala.inline
-    def setSpaceLength(value: Double): Self = StObject.set(x, "spaceLength", value.asInstanceOf[js.Any])
+    inline def setSpaceLength(value: Double): Self = StObject.set(x, "spaceLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceLengthUndefined: Self = StObject.set(x, "spaceLength", js.undefined)
+    inline def setSpaceLengthUndefined: Self = StObject.set(x, "spaceLength", js.undefined)
   }
 }

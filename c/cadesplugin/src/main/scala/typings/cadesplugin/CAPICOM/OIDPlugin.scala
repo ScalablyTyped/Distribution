@@ -14,19 +14,15 @@ trait OIDPlugin extends StObject {
 }
 object OIDPlugin {
   
-  @scala.inline
-  def apply(): OIDPlugin = {
+  inline def apply(): OIDPlugin = {
     val __obj = js.Dynamic.literal(CAPICOM_OID_KEY_USAGE_EXTENSION = 10, CAPICOM_OID_OTHER = 0)
     __obj.asInstanceOf[OIDPlugin]
   }
   
-  @scala.inline
-  implicit class OIDPluginMutableBuilder[Self <: OIDPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: OIDPlugin](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_OID_KEY_USAGE_EXTENSION(value: `10`): Self = StObject.set(x, "CAPICOM_OID_KEY_USAGE_EXTENSION", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_OID_KEY_USAGE_EXTENSION(value: `10`): Self = StObject.set(x, "CAPICOM_OID_KEY_USAGE_EXTENSION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_OID_OTHER(value: `0`): Self = StObject.set(x, "CAPICOM_OID_OTHER", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_OID_OTHER(value: `0`): Self = StObject.set(x, "CAPICOM_OID_OTHER", value.asInstanceOf[js.Any])
   }
 }

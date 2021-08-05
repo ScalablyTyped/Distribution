@@ -89,26 +89,20 @@ object venues {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.heremaps.H.service.venues.Service.Options = {
+      inline def apply(): typings.heremaps.H.service.venues.Service.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.heremaps.H.service.venues.Service.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.heremaps.H.service.venues.Service.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.heremaps.H.service.venues.Service.Options](x: Self) {
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setSubDomain(value: String): Self = StObject.set(x, "subDomain", value.asInstanceOf[js.Any])
+        inline def setSubDomain(value: String): Self = StObject.set(x, "subDomain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubDomainUndefined: Self = StObject.set(x, "subDomain", js.undefined)
+        inline def setSubDomainUndefined: Self = StObject.set(x, "subDomain", js.undefined)
       }
     }
   }
@@ -261,32 +255,24 @@ object venues {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setOnSpaceCreated(value: /* space */ Space => Unit): Self = StObject.set(x, "onSpaceCreated", js.Any.fromFunction1(value))
+        inline def setOnSpaceCreated(value: /* space */ Space => Unit): Self = StObject.set(x, "onSpaceCreated", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnSpaceCreatedUndefined: Self = StObject.set(x, "onSpaceCreated", js.undefined)
+        inline def setOnSpaceCreatedUndefined: Self = StObject.set(x, "onSpaceCreated", js.undefined)
         
-        @scala.inline
-        def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+        inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+        inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
         
-        @scala.inline
-        def setTileCacheSize(value: Double): Self = StObject.set(x, "tileCacheSize", value.asInstanceOf[js.Any])
+        inline def setTileCacheSize(value: Double): Self = StObject.set(x, "tileCacheSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileCacheSizeUndefined: Self = StObject.set(x, "tileCacheSize", js.undefined)
+        inline def setTileCacheSizeUndefined: Self = StObject.set(x, "tileCacheSize", js.undefined)
       }
     }
   }

@@ -18,25 +18,19 @@ trait ListAssociatedAssetsResponse extends StObject {
 }
 object ListAssociatedAssetsResponse {
   
-  @scala.inline
-  def apply(assetSummaries: AssociatedAssetsSummaries): ListAssociatedAssetsResponse = {
+  inline def apply(assetSummaries: AssociatedAssetsSummaries): ListAssociatedAssetsResponse = {
     val __obj = js.Dynamic.literal(assetSummaries = assetSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociatedAssetsResponse]
   }
   
-  @scala.inline
-  implicit class ListAssociatedAssetsResponseMutableBuilder[Self <: ListAssociatedAssetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssociatedAssetsResponse](x: Self) {
     
-    @scala.inline
-    def setAssetSummaries(value: AssociatedAssetsSummaries): Self = StObject.set(x, "assetSummaries", value.asInstanceOf[js.Any])
+    inline def setAssetSummaries(value: AssociatedAssetsSummaries): Self = StObject.set(x, "assetSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetSummariesVarargs(value: AssociatedAssetsSummary*): Self = StObject.set(x, "assetSummaries", js.Array(value :_*))
+    inline def setAssetSummariesVarargs(value: AssociatedAssetsSummary*): Self = StObject.set(x, "assetSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

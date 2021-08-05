@@ -9,8 +9,7 @@ object NumberFormatIndex {
   
   object Constants {
     
-    @scala.inline
-    def NUMBER_START: `0` = 0.asInstanceOf[`0`]
+    inline def NUMBER_START: `0` = 0.asInstanceOf[`0`]
   }
   type Constants = `0`
 }

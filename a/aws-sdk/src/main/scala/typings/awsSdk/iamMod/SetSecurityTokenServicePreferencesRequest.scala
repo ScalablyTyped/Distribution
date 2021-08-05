@@ -13,16 +13,13 @@ trait SetSecurityTokenServicePreferencesRequest extends StObject {
 }
 object SetSecurityTokenServicePreferencesRequest {
   
-  @scala.inline
-  def apply(GlobalEndpointTokenVersion: globalEndpointTokenVersion): SetSecurityTokenServicePreferencesRequest = {
+  inline def apply(GlobalEndpointTokenVersion: globalEndpointTokenVersion): SetSecurityTokenServicePreferencesRequest = {
     val __obj = js.Dynamic.literal(GlobalEndpointTokenVersion = GlobalEndpointTokenVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSecurityTokenServicePreferencesRequest]
   }
   
-  @scala.inline
-  implicit class SetSecurityTokenServicePreferencesRequestMutableBuilder[Self <: SetSecurityTokenServicePreferencesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetSecurityTokenServicePreferencesRequest](x: Self) {
     
-    @scala.inline
-    def setGlobalEndpointTokenVersion(value: globalEndpointTokenVersion): Self = StObject.set(x, "GlobalEndpointTokenVersion", value.asInstanceOf[js.Any])
+    inline def setGlobalEndpointTokenVersion(value: globalEndpointTokenVersion): Self = StObject.set(x, "GlobalEndpointTokenVersion", value.asInstanceOf[js.Any])
   }
 }

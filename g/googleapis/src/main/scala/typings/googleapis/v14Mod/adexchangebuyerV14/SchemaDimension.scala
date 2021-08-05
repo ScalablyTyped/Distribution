@@ -17,28 +17,21 @@ trait SchemaDimension extends StObject {
 }
 object SchemaDimension {
   
-  @scala.inline
-  def apply(): SchemaDimension = {
+  inline def apply(): SchemaDimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDimension]
   }
   
-  @scala.inline
-  implicit class SchemaDimensionMutableBuilder[Self <: SchemaDimension] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDimension](x: Self) {
     
-    @scala.inline
-    def setDimensionType(value: String): Self = StObject.set(x, "dimensionType", value.asInstanceOf[js.Any])
+    inline def setDimensionType(value: String): Self = StObject.set(x, "dimensionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionTypeUndefined: Self = StObject.set(x, "dimensionType", js.undefined)
+    inline def setDimensionTypeUndefined: Self = StObject.set(x, "dimensionType", js.undefined)
     
-    @scala.inline
-    def setDimensionValues(value: js.Array[SchemaDimensionDimensionValue]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
+    inline def setDimensionValues(value: js.Array[SchemaDimensionDimensionValue]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
+    inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    @scala.inline
-    def setDimensionValuesVarargs(value: SchemaDimensionDimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: SchemaDimensionDimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
   }
 }

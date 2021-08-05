@@ -12,19 +12,15 @@ trait PackageJson extends StObject {
 }
 object PackageJson {
   
-  @scala.inline
-  def apply(name: String, version: String): PackageJson = {
+  inline def apply(name: String, version: String): PackageJson = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageJson]
   }
   
-  @scala.inline
-  implicit class PackageJsonMutableBuilder[Self <: PackageJson] (val x: Self) extends AnyVal {
+  extension [Self <: PackageJson](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

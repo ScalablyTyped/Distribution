@@ -38,46 +38,33 @@ trait StrategyOptions[TClient /* <: Client */] extends StObject {
 }
 object StrategyOptions {
   
-  @scala.inline
-  def apply[TClient /* <: Client */](client: TClient): StrategyOptions[TClient] = {
+  inline def apply[TClient /* <: Client */](client: TClient): StrategyOptions[TClient] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions[TClient]]
   }
   
-  @scala.inline
-  implicit class StrategyOptionsMutableBuilder[Self <: StrategyOptions[?], TClient /* <: Client */] (val x: Self & StrategyOptions[TClient]) extends AnyVal {
+  extension [Self <: StrategyOptions[?], TClient /* <: Client */](x: Self & StrategyOptions[TClient]) {
     
-    @scala.inline
-    def setClient(value: TClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: TClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtras(value: CallbackExtras): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: CallbackExtras): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
+    inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     
-    @scala.inline
-    def setParams(value: AuthorizationParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: AuthorizationParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+    inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+    inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
     
-    @scala.inline
-    def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+    inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
+    inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
     
-    @scala.inline
-    def setUsePKCE(value: Boolean | String): Self = StObject.set(x, "usePKCE", value.asInstanceOf[js.Any])
+    inline def setUsePKCE(value: Boolean | String): Self = StObject.set(x, "usePKCE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePKCEUndefined: Self = StObject.set(x, "usePKCE", js.undefined)
+    inline def setUsePKCEUndefined: Self = StObject.set(x, "usePKCE", js.undefined)
   }
 }

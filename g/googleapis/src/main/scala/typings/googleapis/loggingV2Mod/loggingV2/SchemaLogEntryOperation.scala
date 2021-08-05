@@ -38,37 +38,27 @@ trait SchemaLogEntryOperation extends StObject {
 }
 object SchemaLogEntryOperation {
   
-  @scala.inline
-  def apply(): SchemaLogEntryOperation = {
+  inline def apply(): SchemaLogEntryOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogEntryOperation]
   }
   
-  @scala.inline
-  implicit class SchemaLogEntryOperationMutableBuilder[Self <: SchemaLogEntryOperation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLogEntryOperation](x: Self) {
     
-    @scala.inline
-    def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
+    inline def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
+    inline def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
   }
 }

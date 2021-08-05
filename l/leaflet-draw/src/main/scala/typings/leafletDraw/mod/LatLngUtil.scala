@@ -14,12 +14,10 @@ object LatLngUtil {
   /**
     * Clone the latLng and return a new LatLng object.
     */
-  @scala.inline
-  def cloneLatLng(latlng: LatLng_): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneLatLng")(latlng.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
+  inline def cloneLatLng(latlng: LatLng_): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneLatLng")(latlng.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
   
   /**
     * Clone the latLng point or points or nested points and return an array with those points
     */
-  @scala.inline
-  def cloneLatLngs(latlngs: js.Array[LatLng_]): js.Array[js.Array[LatLng_]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneLatLngs")(latlngs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[LatLng_]]]
+  inline def cloneLatLngs(latlngs: js.Array[LatLng_]): js.Array[js.Array[LatLng_]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneLatLngs")(latlngs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[LatLng_]]]
 }

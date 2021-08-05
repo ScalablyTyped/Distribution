@@ -14,19 +14,15 @@ trait EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint ex
 }
 object EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint {
   
-  @scala.inline
-  def apply(): EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint = {
+  inline def apply(): EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpointMutableBuilder[Self <: EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise_id(value: String): Self = StObject.set(x, "enterprise_id", value.asInstanceOf[js.Any])
+    inline def setEnterprise_id(value: String): Self = StObject.set(x, "enterprise_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterprise_idUndefined: Self = StObject.set(x, "enterprise_id", js.undefined)
+    inline def setEnterprise_idUndefined: Self = StObject.set(x, "enterprise_id", js.undefined)
   }
 }

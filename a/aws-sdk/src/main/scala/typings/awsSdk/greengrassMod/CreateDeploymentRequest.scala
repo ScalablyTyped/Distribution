@@ -33,37 +33,27 @@ trait CreateDeploymentRequest extends StObject {
 }
 object CreateDeploymentRequest {
   
-  @scala.inline
-  def apply(DeploymentType: DeploymentType, GroupId: string): CreateDeploymentRequest = {
+  inline def apply(DeploymentType: DeploymentType, GroupId: string): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(DeploymentType = DeploymentType.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentRequestMutableBuilder[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
-    @scala.inline
-    def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
+    inline def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupVersionId(value: string): Self = StObject.set(x, "GroupVersionId", value.asInstanceOf[js.Any])
+    inline def setGroupVersionId(value: string): Self = StObject.set(x, "GroupVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupVersionIdUndefined: Self = StObject.set(x, "GroupVersionId", js.undefined)
+    inline def setGroupVersionIdUndefined: Self = StObject.set(x, "GroupVersionId", js.undefined)
   }
 }

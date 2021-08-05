@@ -21,25 +21,19 @@ trait TeamsAddOrUpdateMembershipForUserLegacyEndpoint extends StObject {
 }
 object TeamsAddOrUpdateMembershipForUserLegacyEndpoint {
   
-  @scala.inline
-  def apply(team_id: Double, username: String): TeamsAddOrUpdateMembershipForUserLegacyEndpoint = {
+  inline def apply(team_id: Double, username: String): TeamsAddOrUpdateMembershipForUserLegacyEndpoint = {
     val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateMembershipForUserLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsAddOrUpdateMembershipForUserLegacyEndpointMutableBuilder[Self <: TeamsAddOrUpdateMembershipForUserLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAddOrUpdateMembershipForUserLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setRole(value: member | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: member | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

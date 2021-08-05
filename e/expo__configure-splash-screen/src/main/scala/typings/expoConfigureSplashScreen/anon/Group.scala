@@ -12,8 +12,7 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     group: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UUID */ js.Any,
     target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UUID */ js.Any
   ): Group = {
@@ -21,16 +20,13 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setGroup(
+    inline def setGroup(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UUID */ js.Any
     ): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(
+    inline def setTarget(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UUID */ js.Any
     ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

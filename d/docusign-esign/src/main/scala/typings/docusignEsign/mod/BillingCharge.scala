@@ -81,97 +81,67 @@ trait BillingCharge extends StObject {
 }
 object BillingCharge {
   
-  @scala.inline
-  def apply(): BillingCharge = {
+  inline def apply(): BillingCharge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingCharge]
   }
   
-  @scala.inline
-  implicit class BillingChargeMutableBuilder[Self <: BillingCharge] (val x: Self) extends AnyVal {
+  extension [Self <: BillingCharge](x: Self) {
     
-    @scala.inline
-    def setAllowedQuantity(value: String): Self = StObject.set(x, "allowedQuantity", value.asInstanceOf[js.Any])
+    inline def setAllowedQuantity(value: String): Self = StObject.set(x, "allowedQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedQuantityUndefined: Self = StObject.set(x, "allowedQuantity", js.undefined)
+    inline def setAllowedQuantityUndefined: Self = StObject.set(x, "allowedQuantity", js.undefined)
     
-    @scala.inline
-    def setBlocked(value: String): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: String): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
+    inline def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
-    @scala.inline
-    def setChargeName(value: String): Self = StObject.set(x, "chargeName", value.asInstanceOf[js.Any])
+    inline def setChargeName(value: String): Self = StObject.set(x, "chargeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargeNameUndefined: Self = StObject.set(x, "chargeName", js.undefined)
+    inline def setChargeNameUndefined: Self = StObject.set(x, "chargeName", js.undefined)
     
-    @scala.inline
-    def setChargeType(value: String): Self = StObject.set(x, "chargeType", value.asInstanceOf[js.Any])
+    inline def setChargeType(value: String): Self = StObject.set(x, "chargeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargeTypeUndefined: Self = StObject.set(x, "chargeType", js.undefined)
+    inline def setChargeTypeUndefined: Self = StObject.set(x, "chargeType", js.undefined)
     
-    @scala.inline
-    def setChargeUnitOfMeasure(value: String): Self = StObject.set(x, "chargeUnitOfMeasure", value.asInstanceOf[js.Any])
+    inline def setChargeUnitOfMeasure(value: String): Self = StObject.set(x, "chargeUnitOfMeasure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargeUnitOfMeasureUndefined: Self = StObject.set(x, "chargeUnitOfMeasure", js.undefined)
+    inline def setChargeUnitOfMeasureUndefined: Self = StObject.set(x, "chargeUnitOfMeasure", js.undefined)
     
-    @scala.inline
-    def setDiscounts(value: js.Array[BillingDiscount]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
+    inline def setDiscounts(value: js.Array[BillingDiscount]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
+    inline def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
     
-    @scala.inline
-    def setDiscountsVarargs(value: BillingDiscount*): Self = StObject.set(x, "discounts", js.Array(value :_*))
+    inline def setDiscountsVarargs(value: BillingDiscount*): Self = StObject.set(x, "discounts", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstEffectiveDate(value: String): Self = StObject.set(x, "firstEffectiveDate", value.asInstanceOf[js.Any])
+    inline def setFirstEffectiveDate(value: String): Self = StObject.set(x, "firstEffectiveDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstEffectiveDateUndefined: Self = StObject.set(x, "firstEffectiveDate", js.undefined)
+    inline def setFirstEffectiveDateUndefined: Self = StObject.set(x, "firstEffectiveDate", js.undefined)
     
-    @scala.inline
-    def setIncludedQuantity(value: String): Self = StObject.set(x, "includedQuantity", value.asInstanceOf[js.Any])
+    inline def setIncludedQuantity(value: String): Self = StObject.set(x, "includedQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedQuantityUndefined: Self = StObject.set(x, "includedQuantity", js.undefined)
+    inline def setIncludedQuantityUndefined: Self = StObject.set(x, "includedQuantity", js.undefined)
     
-    @scala.inline
-    def setIncrementalQuantity(value: String): Self = StObject.set(x, "incrementalQuantity", value.asInstanceOf[js.Any])
+    inline def setIncrementalQuantity(value: String): Self = StObject.set(x, "incrementalQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementalQuantityUndefined: Self = StObject.set(x, "incrementalQuantity", js.undefined)
+    inline def setIncrementalQuantityUndefined: Self = StObject.set(x, "incrementalQuantity", js.undefined)
     
-    @scala.inline
-    def setLastEffectiveDate(value: String): Self = StObject.set(x, "lastEffectiveDate", value.asInstanceOf[js.Any])
+    inline def setLastEffectiveDate(value: String): Self = StObject.set(x, "lastEffectiveDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEffectiveDateUndefined: Self = StObject.set(x, "lastEffectiveDate", js.undefined)
+    inline def setLastEffectiveDateUndefined: Self = StObject.set(x, "lastEffectiveDate", js.undefined)
     
-    @scala.inline
-    def setPrices(value: js.Array[BillingPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    inline def setPrices(value: js.Array[BillingPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
+    inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
     
-    @scala.inline
-    def setPricesVarargs(value: BillingPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: BillingPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
     
-    @scala.inline
-    def setUnitPrice(value: String): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
+    inline def setUnitPrice(value: String): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
+    inline def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
     
-    @scala.inline
-    def setUsedQuantity(value: String): Self = StObject.set(x, "usedQuantity", value.asInstanceOf[js.Any])
+    inline def setUsedQuantity(value: String): Self = StObject.set(x, "usedQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedQuantityUndefined: Self = StObject.set(x, "usedQuantity", js.undefined)
+    inline def setUsedQuantityUndefined: Self = StObject.set(x, "usedQuantity", js.undefined)
   }
 }

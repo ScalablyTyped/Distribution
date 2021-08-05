@@ -14,25 +14,19 @@ trait LicensePostStartTrial
 }
 object LicensePostStartTrial {
   
-  @scala.inline
-  def apply(): LicensePostStartTrial = {
+  inline def apply(): LicensePostStartTrial = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicensePostStartTrial]
   }
   
-  @scala.inline
-  implicit class LicensePostStartTrialMutableBuilder[Self <: LicensePostStartTrial] (val x: Self) extends AnyVal {
+  extension [Self <: LicensePostStartTrial](x: Self) {
     
-    @scala.inline
-    def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
+    inline def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
+    inline def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

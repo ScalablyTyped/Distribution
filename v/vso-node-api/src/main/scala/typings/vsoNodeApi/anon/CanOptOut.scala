@@ -18,8 +18,7 @@ trait CanOptOut extends StObject {
 }
 object CanOptOut {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canOptOut: scala.Double,
     contributedSubscription: scala.Double,
     groupSubscription: scala.Double,
@@ -30,22 +29,16 @@ object CanOptOut {
     __obj.asInstanceOf[CanOptOut]
   }
   
-  @scala.inline
-  implicit class CanOptOutMutableBuilder[Self <: CanOptOut] (val x: Self) extends AnyVal {
+  extension [Self <: CanOptOut](x: Self) {
     
-    @scala.inline
-    def setCanOptOut(value: scala.Double): Self = StObject.set(x, "canOptOut", value.asInstanceOf[js.Any])
+    inline def setCanOptOut(value: scala.Double): Self = StObject.set(x, "canOptOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributedSubscription(value: scala.Double): Self = StObject.set(x, "contributedSubscription", value.asInstanceOf[js.Any])
+    inline def setContributedSubscription(value: scala.Double): Self = StObject.set(x, "contributedSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSubscription(value: scala.Double): Self = StObject.set(x, "groupSubscription", value.asInstanceOf[js.Any])
+    inline def setGroupSubscription(value: scala.Double): Self = StObject.set(x, "groupSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamSubscription(value: scala.Double): Self = StObject.set(x, "teamSubscription", value.asInstanceOf[js.Any])
+    inline def setTeamSubscription(value: scala.Double): Self = StObject.set(x, "teamSubscription", value.asInstanceOf[js.Any])
   }
 }

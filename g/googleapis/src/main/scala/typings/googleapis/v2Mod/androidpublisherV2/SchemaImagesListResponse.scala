@@ -10,22 +10,17 @@ trait SchemaImagesListResponse extends StObject {
 }
 object SchemaImagesListResponse {
   
-  @scala.inline
-  def apply(): SchemaImagesListResponse = {
+  inline def apply(): SchemaImagesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImagesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaImagesListResponseMutableBuilder[Self <: SchemaImagesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImagesListResponse](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Array[SchemaImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[SchemaImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: SchemaImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: SchemaImage*): Self = StObject.set(x, "images", js.Array(value :_*))
   }
 }

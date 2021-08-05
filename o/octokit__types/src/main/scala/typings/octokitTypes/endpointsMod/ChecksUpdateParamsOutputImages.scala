@@ -14,25 +14,19 @@ trait ChecksUpdateParamsOutputImages extends StObject {
 }
 object ChecksUpdateParamsOutputImages {
   
-  @scala.inline
-  def apply(alt: String, image_url: String): ChecksUpdateParamsOutputImages = {
+  inline def apply(alt: String, image_url: String): ChecksUpdateParamsOutputImages = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], image_url = image_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksUpdateParamsOutputImages]
   }
   
-  @scala.inline
-  implicit class ChecksUpdateParamsOutputImagesMutableBuilder[Self <: ChecksUpdateParamsOutputImages] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksUpdateParamsOutputImages](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
+    inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
   }
 }

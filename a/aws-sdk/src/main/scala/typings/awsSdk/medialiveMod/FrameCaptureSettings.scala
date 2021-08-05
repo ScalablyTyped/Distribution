@@ -18,22 +18,17 @@ trait FrameCaptureSettings extends StObject {
 }
 object FrameCaptureSettings {
   
-  @scala.inline
-  def apply(CaptureInterval: integerMin1Max3600000): FrameCaptureSettings = {
+  inline def apply(CaptureInterval: integerMin1Max3600000): FrameCaptureSettings = {
     val __obj = js.Dynamic.literal(CaptureInterval = CaptureInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameCaptureSettings]
   }
   
-  @scala.inline
-  implicit class FrameCaptureSettingsMutableBuilder[Self <: FrameCaptureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FrameCaptureSettings](x: Self) {
     
-    @scala.inline
-    def setCaptureInterval(value: integerMin1Max3600000): Self = StObject.set(x, "CaptureInterval", value.asInstanceOf[js.Any])
+    inline def setCaptureInterval(value: integerMin1Max3600000): Self = StObject.set(x, "CaptureInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureIntervalUnits(value: FrameCaptureIntervalUnit): Self = StObject.set(x, "CaptureIntervalUnits", value.asInstanceOf[js.Any])
+    inline def setCaptureIntervalUnits(value: FrameCaptureIntervalUnit): Self = StObject.set(x, "CaptureIntervalUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureIntervalUnitsUndefined: Self = StObject.set(x, "CaptureIntervalUnits", js.undefined)
+    inline def setCaptureIntervalUnitsUndefined: Self = StObject.set(x, "CaptureIntervalUnits", js.undefined)
   }
 }

@@ -38,31 +38,23 @@ trait PlusWebviewWebviewFavoriteOptions extends StObject {
 }
 object PlusWebviewWebviewFavoriteOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewFavoriteOptions = {
+  inline def apply(): PlusWebviewWebviewFavoriteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewFavoriteOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewFavoriteOptionsMutableBuilder[Self <: PlusWebviewWebviewFavoriteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewFavoriteOptions](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -23,17 +23,14 @@ trait ConfirmQuestion[T /* <: Answers */]
 }
 object ConfirmQuestion {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): ConfirmQuestion[T] = {
+  inline def apply[T /* <: Answers */](): ConfirmQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("confirm")
     __obj.asInstanceOf[ConfirmQuestion[T]]
   }
   
-  @scala.inline
-  implicit class ConfirmQuestionMutableBuilder[Self <: ConfirmQuestion[?], T /* <: Answers */] (val x: Self & ConfirmQuestion[T]) extends AnyVal {
+  extension [Self <: ConfirmQuestion[?], T /* <: Answers */](x: Self & ConfirmQuestion[T]) {
     
-    @scala.inline
-    def setType(value: confirm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: confirm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

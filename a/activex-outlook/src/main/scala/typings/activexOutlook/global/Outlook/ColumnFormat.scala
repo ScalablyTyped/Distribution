@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ColumnFormat")
 @js.native
-class ColumnFormat protected ()
+/* private */ class ColumnFormat ()
   extends StObject
      with typings.activexOutlook.Outlook.ColumnFormat {
   
@@ -31,7 +31,7 @@ class ColumnFormat protected ()
   /* CompleteClass */
   var Label: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.ColumnFormat_typekey")
   var OutlookDotColumnFormat_typekey: typings.activexOutlook.Outlook.ColumnFormat = js.native
   

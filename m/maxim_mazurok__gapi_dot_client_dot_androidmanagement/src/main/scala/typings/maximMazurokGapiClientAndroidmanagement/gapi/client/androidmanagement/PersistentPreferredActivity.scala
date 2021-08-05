@@ -26,37 +26,27 @@ trait PersistentPreferredActivity extends StObject {
 }
 object PersistentPreferredActivity {
   
-  @scala.inline
-  def apply(): PersistentPreferredActivity = {
+  inline def apply(): PersistentPreferredActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistentPreferredActivity]
   }
   
-  @scala.inline
-  implicit class PersistentPreferredActivityMutableBuilder[Self <: PersistentPreferredActivity] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentPreferredActivity](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setReceiverActivity(value: String): Self = StObject.set(x, "receiverActivity", value.asInstanceOf[js.Any])
+    inline def setReceiverActivity(value: String): Self = StObject.set(x, "receiverActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiverActivityUndefined: Self = StObject.set(x, "receiverActivity", js.undefined)
+    inline def setReceiverActivityUndefined: Self = StObject.set(x, "receiverActivity", js.undefined)
   }
 }

@@ -37,55 +37,39 @@ trait AlertMetadata extends StObject {
 }
 object AlertMetadata {
   
-  @scala.inline
-  def apply(): AlertMetadata = {
+  inline def apply(): AlertMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlertMetadata]
   }
   
-  @scala.inline
-  implicit class AlertMetadataMutableBuilder[Self <: AlertMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AlertMetadata](x: Self) {
     
-    @scala.inline
-    def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
+    inline def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
+    inline def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
     
-    @scala.inline
-    def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+    inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+    inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

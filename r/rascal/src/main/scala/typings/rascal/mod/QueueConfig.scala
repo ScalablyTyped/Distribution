@@ -15,31 +15,23 @@ trait QueueConfig extends StObject {
 }
 object QueueConfig {
   
-  @scala.inline
-  def apply(): QueueConfig = {
+  inline def apply(): QueueConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueueConfig]
   }
   
-  @scala.inline
-  implicit class QueueConfigMutableBuilder[Self <: QueueConfig] (val x: Self) extends AnyVal {
+  extension [Self <: QueueConfig](x: Self) {
     
-    @scala.inline
-    def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
+    inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
-    @scala.inline
-    def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+    inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+    inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
-    @scala.inline
-    def setOptions(value: AssertQueue): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AssertQueue): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

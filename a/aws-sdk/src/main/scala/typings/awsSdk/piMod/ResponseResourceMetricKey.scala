@@ -18,22 +18,17 @@ trait ResponseResourceMetricKey extends StObject {
 }
 object ResponseResourceMetricKey {
   
-  @scala.inline
-  def apply(Metric: String): ResponseResourceMetricKey = {
+  inline def apply(Metric: String): ResponseResourceMetricKey = {
     val __obj = js.Dynamic.literal(Metric = Metric.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseResourceMetricKey]
   }
   
-  @scala.inline
-  implicit class ResponseResourceMetricKeyMutableBuilder[Self <: ResponseResourceMetricKey] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseResourceMetricKey](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
   }
 }

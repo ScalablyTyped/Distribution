@@ -12,19 +12,15 @@ trait ClientGrantPage
 }
 object ClientGrantPage {
   
-  @scala.inline
-  def apply(client_grants: js.Array[ClientGrant], length: Double, limit: Double, start: Double, total: Double): ClientGrantPage = {
+  inline def apply(client_grants: js.Array[ClientGrant], length: Double, limit: Double, start: Double, total: Double): ClientGrantPage = {
     val __obj = js.Dynamic.literal(client_grants = client_grants.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientGrantPage]
   }
   
-  @scala.inline
-  implicit class ClientGrantPageMutableBuilder[Self <: ClientGrantPage] (val x: Self) extends AnyVal {
+  extension [Self <: ClientGrantPage](x: Self) {
     
-    @scala.inline
-    def setClient_grants(value: js.Array[ClientGrant]): Self = StObject.set(x, "client_grants", value.asInstanceOf[js.Any])
+    inline def setClient_grants(value: js.Array[ClientGrant]): Self = StObject.set(x, "client_grants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_grantsVarargs(value: ClientGrant*): Self = StObject.set(x, "client_grants", js.Array(value :_*))
+    inline def setClient_grantsVarargs(value: ClientGrant*): Self = StObject.set(x, "client_grants", js.Array(value :_*))
   }
 }

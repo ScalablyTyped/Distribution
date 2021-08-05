@@ -26,8 +26,7 @@ object gridIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/grid/index.native", "default.defaultProps")
     @js.native
     def defaultProps: CarouselMaxRow = js.native
-    @scala.inline
-    def defaultProps_=(x: CarouselMaxRow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CarouselMaxRow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -49,35 +48,26 @@ object gridIndexNativeMod {
   }
   object GridProps {
     
-    @scala.inline
-    def apply(): GridProps = {
+    inline def apply(): GridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridProps]
     }
     
-    @scala.inline
-    implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridProps](x: Self) {
       
-      @scala.inline
-      def setCarouselProps(value: CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
+      inline def setCarouselProps(value: CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselPropsUndefined: Self = StObject.set(x, "carouselProps", js.undefined)
+      inline def setCarouselPropsUndefined: Self = StObject.set(x, "carouselProps", js.undefined)
       
-      @scala.inline
-      def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
+      inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
       
-      @scala.inline
-      def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

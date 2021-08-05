@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataAlignType extends StObject
 object DataAlignType {
   
-  @scala.inline
-  def center: typings.reactBootstrapTable.reactBootstrapTableStrings.center = "center".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.center]
+  inline def center: typings.reactBootstrapTable.reactBootstrapTableStrings.center = "center".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.center]
   
-  @scala.inline
-  def end: typings.reactBootstrapTable.reactBootstrapTableStrings.end = "end".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.end]
+  inline def end: typings.reactBootstrapTable.reactBootstrapTableStrings.end = "end".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.end]
   
-  @scala.inline
-  def left: typings.reactBootstrapTable.reactBootstrapTableStrings.left = "left".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.left]
+  inline def left: typings.reactBootstrapTable.reactBootstrapTableStrings.left = "left".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.left]
   
-  @scala.inline
-  def right: typings.reactBootstrapTable.reactBootstrapTableStrings.right = "right".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.right]
+  inline def right: typings.reactBootstrapTable.reactBootstrapTableStrings.right = "right".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.right]
   
-  @scala.inline
-  def start: typings.reactBootstrapTable.reactBootstrapTableStrings.start = "start".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.start]
+  inline def start: typings.reactBootstrapTable.reactBootstrapTableStrings.start = "start".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.start]
 }

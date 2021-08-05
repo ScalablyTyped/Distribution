@@ -18,8 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Function extends StObject
 object Function {
   
-  @scala.inline
-  def ArrowFunctionExpression_(
+  inline def ArrowFunctionExpression_(
     async: Boolean,
     body: BlockStatement_ | Expression,
     end: Double,
@@ -35,8 +34,7 @@ object Function {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ArrowFunctionExpression_]
   }
   
-  @scala.inline
-  def ClassMethod_(
+  inline def ClassMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -56,8 +54,7 @@ object Function {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassMethod_]
   }
   
-  @scala.inline
-  def FunctionDeclaration_(
+  inline def FunctionDeclaration_(
     async: Boolean,
     body: BlockStatement_,
     end: Double,
@@ -72,8 +69,7 @@ object Function {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionDeclaration_]
   }
   
-  @scala.inline
-  def FunctionExpression_(
+  inline def FunctionExpression_(
     async: Boolean,
     body: BlockStatement_,
     end: Double,
@@ -88,8 +84,7 @@ object Function {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionExpression_]
   }
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,

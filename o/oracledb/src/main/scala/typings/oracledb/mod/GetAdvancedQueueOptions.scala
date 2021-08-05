@@ -17,19 +17,15 @@ trait GetAdvancedQueueOptions extends StObject {
 }
 object GetAdvancedQueueOptions {
   
-  @scala.inline
-  def apply(): GetAdvancedQueueOptions = {
+  inline def apply(): GetAdvancedQueueOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAdvancedQueueOptions]
   }
   
-  @scala.inline
-  implicit class GetAdvancedQueueOptionsMutableBuilder[Self <: GetAdvancedQueueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetAdvancedQueueOptions](x: Self) {
     
-    @scala.inline
-    def setPayloadType(value: String): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
+    inline def setPayloadType(value: String): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadTypeUndefined: Self = StObject.set(x, "payloadType", js.undefined)
+    inline def setPayloadTypeUndefined: Self = StObject.set(x, "payloadType", js.undefined)
   }
 }

@@ -86,8 +86,7 @@ object ScriptType {
     * @param methods - Object with methods, where key - is name of method, and value - is function.
     */
   /* static member */
-  @scala.inline
-  def extend(methods: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(methods.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def extend(methods: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(methods.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Name of a Script Type

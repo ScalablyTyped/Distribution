@@ -33,8 +33,7 @@ trait GeoprocessorWaitForJobCompletionOptions
 }
 object GeoprocessorWaitForJobCompletionOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object GeoprocessorWaitForJobCompletionOptions {
     __obj.asInstanceOf[GeoprocessorWaitForJobCompletionOptions]
   }
   
-  @scala.inline
-  implicit class GeoprocessorWaitForJobCompletionOptionsMutableBuilder[Self <: GeoprocessorWaitForJobCompletionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoprocessorWaitForJobCompletionOptions](x: Self) {
     
-    @scala.inline
-    def setInterval(value: js.Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: js.Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setSignal(value: js.Any): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: js.Any): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setStatusCallback(value: js.Any): Self = StObject.set(x, "statusCallback", value.asInstanceOf[js.Any])
+    inline def setStatusCallback(value: js.Any): Self = StObject.set(x, "statusCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCallbackUndefined: Self = StObject.set(x, "statusCallback", js.undefined)
+    inline def setStatusCallbackUndefined: Self = StObject.set(x, "statusCallback", js.undefined)
   }
 }

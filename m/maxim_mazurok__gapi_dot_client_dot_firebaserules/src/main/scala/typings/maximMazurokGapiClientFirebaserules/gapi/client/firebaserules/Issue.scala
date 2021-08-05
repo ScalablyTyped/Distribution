@@ -17,31 +17,23 @@ trait Issue extends StObject {
 }
 object Issue {
   
-  @scala.inline
-  def apply(): Issue = {
+  inline def apply(): Issue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Issue]
   }
   
-  @scala.inline
-  implicit class IssueMutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
+  extension [Self <: Issue](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
+    inline def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
+    inline def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
   }
 }

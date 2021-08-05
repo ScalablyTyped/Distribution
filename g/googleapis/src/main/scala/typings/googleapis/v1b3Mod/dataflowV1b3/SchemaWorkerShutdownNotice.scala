@@ -21,19 +21,15 @@ trait SchemaWorkerShutdownNotice extends StObject {
 }
 object SchemaWorkerShutdownNotice {
   
-  @scala.inline
-  def apply(): SchemaWorkerShutdownNotice = {
+  inline def apply(): SchemaWorkerShutdownNotice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerShutdownNotice]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerShutdownNoticeMutableBuilder[Self <: SchemaWorkerShutdownNotice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerShutdownNotice](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

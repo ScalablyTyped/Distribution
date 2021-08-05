@@ -13,11 +13,11 @@ object loggerMod {
     
     def isLogging(): Boolean = js.native
     
-    var isLoggingFunc: js.Any = js.native
+    /* private */ var isLoggingFunc: js.Any = js.native
     
     def log(message: String): Unit = js.native
     
-    var name: js.Any = js.native
+    /* private */ var name: js.Any = js.native
   }
   
   @JSImport("ag-grid/dist/lib/logger", "LoggerFactory")
@@ -28,7 +28,7 @@ object loggerMod {
     
     def isLogging(): Boolean = js.native
     
-    var logging: js.Any = js.native
+    /* private */ var logging: js.Any = js.native
     
     /* private */ def setBeans(gridOptionsWrapper: js.Any): js.Any = js.native
   }

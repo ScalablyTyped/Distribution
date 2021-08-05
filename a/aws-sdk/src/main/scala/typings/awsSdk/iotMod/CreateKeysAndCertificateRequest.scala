@@ -13,19 +13,15 @@ trait CreateKeysAndCertificateRequest extends StObject {
 }
 object CreateKeysAndCertificateRequest {
   
-  @scala.inline
-  def apply(): CreateKeysAndCertificateRequest = {
+  inline def apply(): CreateKeysAndCertificateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateKeysAndCertificateRequest]
   }
   
-  @scala.inline
-  implicit class CreateKeysAndCertificateRequestMutableBuilder[Self <: CreateKeysAndCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateKeysAndCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setSetAsActive(value: SetAsActive): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
+    inline def setSetAsActive(value: SetAsActive): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
+    inline def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
   }
 }

@@ -13,21 +13,15 @@ object reduxUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def delayedCall(fn: js.Function0[Unit], timeout: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delayedCall")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def delayedCall(fn: js.Function0[Unit], timeout: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delayedCall")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @scala.inline
-  def getActivity(id: String): IActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(id.asInstanceOf[js.Any]).asInstanceOf[IActivity | Null]
+  inline def getActivity(id: String): IActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(id.asInstanceOf[js.Any]).asInstanceOf[IActivity | Null]
   
-  @scala.inline
-  def getElapsedTimeMS(activity: IActivity): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getElapsedTimeMS")(activity.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getElapsedTimeMS(activity: IActivity): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getElapsedTimeMS")(activity.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getGlobalStatus(id: String, status: ActivityStatuses): ActivityStatuses = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalStatus")(id.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[ActivityStatuses]
+  inline def getGlobalStatus(id: String, status: ActivityStatuses): ActivityStatuses = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalStatus")(id.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[ActivityStatuses]
   
-  @scala.inline
-  def isActivityInProgress(activityStatus: ActivityStatuses): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivityInProgress")(activityStatus.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isActivityInProgress(activityStatus: ActivityStatuses): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivityInProgress")(activityStatus.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isInternalAction(action: ActionsUnion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalAction")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInternalAction(action: ActionsUnion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalAction")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -73,8 +73,7 @@ trait ASPxClientGantt
 }
 object ASPxClientGantt {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGantt]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientGantt]],
@@ -106,40 +105,28 @@ object ASPxClientGantt {
     __obj.asInstanceOf[ASPxClientGantt]
   }
   
-  @scala.inline
-  implicit class ASPxClientGanttMutableBuilder[Self <: ASPxClientGantt] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGantt](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseAll(value: () => Unit): Self = StObject.set(x, "CollapseAll", js.Any.fromFunction0(value))
+    inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "CollapseAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapseTask(value: js.Any => Unit): Self = StObject.set(x, "CollapseTask", js.Any.fromFunction1(value))
+    inline def setCollapseTask(value: js.Any => Unit): Self = StObject.set(x, "CollapseTask", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomCommand(value: ASPxClientEvent[ASPxClientGanttCustomCommandEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "CustomCommand", value.asInstanceOf[js.Any])
+    inline def setCustomCommand(value: ASPxClientEvent[ASPxClientGanttCustomCommandEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "CustomCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandAll(value: () => Unit): Self = StObject.set(x, "ExpandAll", js.Any.fromFunction0(value))
+    inline def setExpandAll(value: () => Unit): Self = StObject.set(x, "ExpandAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandTask(value: js.Any => Unit): Self = StObject.set(x, "ExpandTask", js.Any.fromFunction1(value))
+    inline def setExpandTask(value: js.Any => Unit): Self = StObject.set(x, "ExpandTask", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTaskTitlePosition(value: ASPxClientGanttTaskTitlePosition => Unit): Self = StObject.set(x, "SetTaskTitlePosition", js.Any.fromFunction1(value))
+    inline def setSetTaskTitlePosition(value: ASPxClientGanttTaskTitlePosition => Unit): Self = StObject.set(x, "SetTaskTitlePosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetViewType(value: ASPxClientGanttViewType => Unit): Self = StObject.set(x, "SetViewType", js.Any.fromFunction1(value))
+    inline def setSetViewType(value: ASPxClientGanttViewType => Unit): Self = StObject.set(x, "SetViewType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowResources(value: Boolean => Unit): Self = StObject.set(x, "ShowResources", js.Any.fromFunction1(value))
+    inline def setShowResources(value: Boolean => Unit): Self = StObject.set(x, "ShowResources", js.Any.fromFunction1(value))
   }
 }

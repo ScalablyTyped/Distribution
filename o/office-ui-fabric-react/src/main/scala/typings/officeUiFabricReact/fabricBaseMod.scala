@@ -19,13 +19,13 @@ object fabricBaseMod {
       */
     def this(props: IFabricProps, context: js.Any) = this()
     
-    var _addClassNameToBody: js.Any = js.native
+    /* private */ var _addClassNameToBody: js.Any = js.native
     
-    var _getClassNames: js.Any = js.native
+    /* private */ var _getClassNames: js.Any = js.native
     
-    var _removeClassNameFromBody: js.Any = js.native
+    /* private */ var _removeClassNameFromBody: js.Any = js.native
     
-    var _rootElement: js.Any = js.native
+    /* private */ var _rootElement: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MFabricBase(): Unit = js.native

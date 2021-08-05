@@ -41,52 +41,37 @@ trait WindowTransform
 }
 object WindowTransform {
   
-  @scala.inline
-  def apply(window: js.Array[WindowFieldDef]): WindowTransform = {
+  inline def apply(window: js.Array[WindowFieldDef]): WindowTransform = {
     val __obj = js.Dynamic.literal(window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowTransform]
   }
   
-  @scala.inline
-  implicit class WindowTransformMutableBuilder[Self <: WindowTransform] (val x: Self) extends AnyVal {
+  extension [Self <: WindowTransform](x: Self) {
     
-    @scala.inline
-    def setFrame(value: js.Array[Null | Double]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: js.Array[Null | Double]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
-    @scala.inline
-    def setFrameVarargs(value: (Null | Double)*): Self = StObject.set(x, "frame", js.Array(value :_*))
+    inline def setFrameVarargs(value: (Null | Double)*): Self = StObject.set(x, "frame", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setIgnorePeers(value: Boolean): Self = StObject.set(x, "ignorePeers", value.asInstanceOf[js.Any])
+    inline def setIgnorePeers(value: Boolean): Self = StObject.set(x, "ignorePeers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePeersUndefined: Self = StObject.set(x, "ignorePeers", js.undefined)
+    inline def setIgnorePeersUndefined: Self = StObject.set(x, "ignorePeers", js.undefined)
     
-    @scala.inline
-    def setSort(value: js.Array[SortField]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Array[SortField]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
-    @scala.inline
-    def setWindow(value: js.Array[WindowFieldDef]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: js.Array[WindowFieldDef]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowVarargs(value: WindowFieldDef*): Self = StObject.set(x, "window", js.Array(value :_*))
+    inline def setWindowVarargs(value: WindowFieldDef*): Self = StObject.set(x, "window", js.Array(value :_*))
   }
 }

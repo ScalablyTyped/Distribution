@@ -96,8 +96,7 @@ trait MultiFile extends StObject {
 }
 object MultiFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToMultiFile: File => MultiFile,
     baseURL: String,
     complete: Boolean,
@@ -119,55 +118,38 @@ object MultiFile {
     __obj.asInstanceOf[MultiFile]
   }
   
-  @scala.inline
-  implicit class MultiFileMutableBuilder[Self <: MultiFile] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFile](x: Self) {
     
-    @scala.inline
-    def setAddToMultiFile(value: File => MultiFile): Self = StObject.set(x, "addToMultiFile", js.Any.fromFunction1(value))
+    inline def setAddToMultiFile(value: File => MultiFile): Self = StObject.set(x, "addToMultiFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+    inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: integer): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: integer): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setIsReadyToProcess(value: () => Boolean): Self = StObject.set(x, "isReadyToProcess", js.Any.fromFunction0(value))
+    inline def setIsReadyToProcess(value: () => Boolean): Self = StObject.set(x, "isReadyToProcess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoader(value: LoaderPlugin): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: LoaderPlugin): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFileComplete(value: File => Unit): Self = StObject.set(x, "onFileComplete", js.Any.fromFunction1(value))
+    inline def setOnFileComplete(value: File => Unit): Self = StObject.set(x, "onFileComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFileFailed(value: File => Unit): Self = StObject.set(x, "onFileFailed", js.Any.fromFunction1(value))
+    inline def setOnFileFailed(value: File => Unit): Self = StObject.set(x, "onFileFailed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: integer): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: integer): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

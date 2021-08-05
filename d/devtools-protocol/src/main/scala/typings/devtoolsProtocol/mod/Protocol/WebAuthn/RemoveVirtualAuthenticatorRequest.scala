@@ -10,16 +10,13 @@ trait RemoveVirtualAuthenticatorRequest extends StObject {
 }
 object RemoveVirtualAuthenticatorRequest {
   
-  @scala.inline
-  def apply(authenticatorId: AuthenticatorId): RemoveVirtualAuthenticatorRequest = {
+  inline def apply(authenticatorId: AuthenticatorId): RemoveVirtualAuthenticatorRequest = {
     val __obj = js.Dynamic.literal(authenticatorId = authenticatorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveVirtualAuthenticatorRequest]
   }
   
-  @scala.inline
-  implicit class RemoveVirtualAuthenticatorRequestMutableBuilder[Self <: RemoveVirtualAuthenticatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveVirtualAuthenticatorRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
+    inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
   }
 }

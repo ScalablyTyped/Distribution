@@ -13,16 +13,13 @@ trait FileIconOptions extends StObject {
 }
 object FileIconOptions {
   
-  @scala.inline
-  def apply(size: small | normal | large): FileIconOptions = {
+  inline def apply(size: small | normal | large): FileIconOptions = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileIconOptions]
   }
   
-  @scala.inline
-  implicit class FileIconOptionsMutableBuilder[Self <: FileIconOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileIconOptions](x: Self) {
     
-    @scala.inline
-    def setSize(value: small | normal | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: small | normal | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

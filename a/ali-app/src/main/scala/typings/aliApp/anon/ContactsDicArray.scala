@@ -11,19 +11,15 @@ trait ContactsDicArray extends StObject {
 }
 object ContactsDicArray {
   
-  @scala.inline
-  def apply(contactsDicArray: js.Array[ContactsDic]): ContactsDicArray = {
+  inline def apply(contactsDicArray: js.Array[ContactsDic]): ContactsDicArray = {
     val __obj = js.Dynamic.literal(contactsDicArray = contactsDicArray.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactsDicArray]
   }
   
-  @scala.inline
-  implicit class ContactsDicArrayMutableBuilder[Self <: ContactsDicArray] (val x: Self) extends AnyVal {
+  extension [Self <: ContactsDicArray](x: Self) {
     
-    @scala.inline
-    def setContactsDicArray(value: js.Array[ContactsDic]): Self = StObject.set(x, "contactsDicArray", value.asInstanceOf[js.Any])
+    inline def setContactsDicArray(value: js.Array[ContactsDic]): Self = StObject.set(x, "contactsDicArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactsDicArrayVarargs(value: ContactsDic*): Self = StObject.set(x, "contactsDicArray", js.Array(value :_*))
+    inline def setContactsDicArrayVarargs(value: ContactsDic*): Self = StObject.set(x, "contactsDicArray", js.Array(value :_*))
   }
 }

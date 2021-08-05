@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bestFacebookLocaleFor(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bestFacebookLocaleFor")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bestFacebookLocaleFor(locale: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bestFacebookLocaleFor")(locale.asInstanceOf[js.Any]).asInstanceOf[String]
 }

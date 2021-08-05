@@ -10,16 +10,13 @@ trait FieldListIndex extends StObject {
 }
 object FieldListIndex {
   
-  @scala.inline
-  def apply(FieldListIndex: Double): FieldListIndex = {
+  inline def apply(FieldListIndex: Double): FieldListIndex = {
     val __obj = js.Dynamic.literal(FieldListIndex = FieldListIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldListIndex]
   }
   
-  @scala.inline
-  implicit class FieldListIndexMutableBuilder[Self <: FieldListIndex] (val x: Self) extends AnyVal {
+  extension [Self <: FieldListIndex](x: Self) {
     
-    @scala.inline
-    def setFieldListIndex(value: Double): Self = StObject.set(x, "FieldListIndex", value.asInstanceOf[js.Any])
+    inline def setFieldListIndex(value: Double): Self = StObject.set(x, "FieldListIndex", value.asInstanceOf[js.Any])
   }
 }

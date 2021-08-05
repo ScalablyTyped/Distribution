@@ -21,25 +21,19 @@ trait GetDocumentRequest extends StObject {
 }
 object GetDocumentRequest {
   
-  @scala.inline
-  def apply(): GetDocumentRequest = {
+  inline def apply(): GetDocumentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDocumentRequest]
   }
   
-  @scala.inline
-  implicit class GetDocumentRequestMutableBuilder[Self <: GetDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
+    inline def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
+    inline def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
   }
 }

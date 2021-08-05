@@ -20,34 +20,25 @@ trait Format extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply(Format: String, Overlap: String, Size: Width, TileSize: String, Url: String): Format = {
+  inline def apply(Format: String, Overlap: String, Size: Width, TileSize: String, Url: String): Format = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], Overlap = Overlap.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], TileSize = TileSize.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+  extension [Self <: Format](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlap(value: String): Self = StObject.set(x, "Overlap", value.asInstanceOf[js.Any])
+    inline def setOverlap(value: String): Self = StObject.set(x, "Overlap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Width): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Width): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSize(value: String): Self = StObject.set(x, "TileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: String): Self = StObject.set(x, "TileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+    inline def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
+    inline def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
   }
 }

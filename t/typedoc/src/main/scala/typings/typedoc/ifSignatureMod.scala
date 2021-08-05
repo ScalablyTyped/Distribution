@@ -10,6 +10,5 @@ object ifSignatureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ifSignature(obj: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ifSignature")(obj.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def ifSignature(obj: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ifSignature")(obj.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

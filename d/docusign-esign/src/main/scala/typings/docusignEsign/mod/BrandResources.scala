@@ -58,67 +58,47 @@ trait BrandResources extends StObject {
 }
 object BrandResources {
   
-  @scala.inline
-  def apply(): BrandResources = {
+  inline def apply(): BrandResources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrandResources]
   }
   
-  @scala.inline
-  implicit class BrandResourcesMutableBuilder[Self <: BrandResources] (val x: Self) extends AnyVal {
+  extension [Self <: BrandResources](x: Self) {
     
-    @scala.inline
-    def setCreatedByUserInfo(value: UserInfo): Self = StObject.set(x, "createdByUserInfo", value.asInstanceOf[js.Any])
+    inline def setCreatedByUserInfo(value: UserInfo): Self = StObject.set(x, "createdByUserInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUserInfoUndefined: Self = StObject.set(x, "createdByUserInfo", js.undefined)
+    inline def setCreatedByUserInfoUndefined: Self = StObject.set(x, "createdByUserInfo", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setDataNotSavedNotInMaster(value: js.Array[String]): Self = StObject.set(x, "dataNotSavedNotInMaster", value.asInstanceOf[js.Any])
+    inline def setDataNotSavedNotInMaster(value: js.Array[String]): Self = StObject.set(x, "dataNotSavedNotInMaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNotSavedNotInMasterUndefined: Self = StObject.set(x, "dataNotSavedNotInMaster", js.undefined)
+    inline def setDataNotSavedNotInMasterUndefined: Self = StObject.set(x, "dataNotSavedNotInMaster", js.undefined)
     
-    @scala.inline
-    def setDataNotSavedNotInMasterVarargs(value: String*): Self = StObject.set(x, "dataNotSavedNotInMaster", js.Array(value :_*))
+    inline def setDataNotSavedNotInMasterVarargs(value: String*): Self = StObject.set(x, "dataNotSavedNotInMaster", js.Array(value :_*))
     
-    @scala.inline
-    def setModifiedByUserInfo(value: UserInfo): Self = StObject.set(x, "modifiedByUserInfo", value.asInstanceOf[js.Any])
+    inline def setModifiedByUserInfo(value: UserInfo): Self = StObject.set(x, "modifiedByUserInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedByUserInfoUndefined: Self = StObject.set(x, "modifiedByUserInfo", js.undefined)
+    inline def setModifiedByUserInfoUndefined: Self = StObject.set(x, "modifiedByUserInfo", js.undefined)
     
-    @scala.inline
-    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
+    inline def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
     
-    @scala.inline
-    def setModifiedTemplates(value: js.Array[String]): Self = StObject.set(x, "modifiedTemplates", value.asInstanceOf[js.Any])
+    inline def setModifiedTemplates(value: js.Array[String]): Self = StObject.set(x, "modifiedTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedTemplatesUndefined: Self = StObject.set(x, "modifiedTemplates", js.undefined)
+    inline def setModifiedTemplatesUndefined: Self = StObject.set(x, "modifiedTemplates", js.undefined)
     
-    @scala.inline
-    def setModifiedTemplatesVarargs(value: String*): Self = StObject.set(x, "modifiedTemplates", js.Array(value :_*))
+    inline def setModifiedTemplatesVarargs(value: String*): Self = StObject.set(x, "modifiedTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setResourcesContentType(value: String): Self = StObject.set(x, "resourcesContentType", value.asInstanceOf[js.Any])
+    inline def setResourcesContentType(value: String): Self = StObject.set(x, "resourcesContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesContentTypeUndefined: Self = StObject.set(x, "resourcesContentType", js.undefined)
+    inline def setResourcesContentTypeUndefined: Self = StObject.set(x, "resourcesContentType", js.undefined)
     
-    @scala.inline
-    def setResourcesContentUri(value: String): Self = StObject.set(x, "resourcesContentUri", value.asInstanceOf[js.Any])
+    inline def setResourcesContentUri(value: String): Self = StObject.set(x, "resourcesContentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesContentUriUndefined: Self = StObject.set(x, "resourcesContentUri", js.undefined)
+    inline def setResourcesContentUriUndefined: Self = StObject.set(x, "resourcesContentUri", js.undefined)
   }
 }

@@ -29,31 +29,23 @@ trait ParamsResourceCatalogsAssociationsCreate
 }
 object ParamsResourceCatalogsAssociationsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceCatalogsAssociationsCreate = {
+  inline def apply(): ParamsResourceCatalogsAssociationsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCatalogsAssociationsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCatalogsAssociationsCreateMutableBuilder[Self <: ParamsResourceCatalogsAssociationsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCatalogsAssociationsCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

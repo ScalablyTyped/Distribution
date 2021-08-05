@@ -94,8 +94,7 @@ trait Errors extends StObject {
 }
 object Errors {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDeniedError: AccessDeniedError,
     ConnectionError: ConnectionError,
     ConnectionRefusedError: ConnectionRefusedError,
@@ -117,55 +116,38 @@ object Errors {
     __obj.asInstanceOf[Errors]
   }
   
-  @scala.inline
-  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+  extension [Self <: Errors](x: Self) {
     
-    @scala.inline
-    def setAccessDeniedError(value: AccessDeniedError): Self = StObject.set(x, "AccessDeniedError", value.asInstanceOf[js.Any])
+    inline def setAccessDeniedError(value: AccessDeniedError): Self = StObject.set(x, "AccessDeniedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionError(value: ConnectionError): Self = StObject.set(x, "ConnectionError", value.asInstanceOf[js.Any])
+    inline def setConnectionError(value: ConnectionError): Self = StObject.set(x, "ConnectionError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionRefusedError(value: ConnectionRefusedError): Self = StObject.set(x, "ConnectionRefusedError", value.asInstanceOf[js.Any])
+    inline def setConnectionRefusedError(value: ConnectionRefusedError): Self = StObject.set(x, "ConnectionRefusedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTimedOutError(value: ConnectionTimedOutError): Self = StObject.set(x, "ConnectionTimedOutError", value.asInstanceOf[js.Any])
+    inline def setConnectionTimedOutError(value: ConnectionTimedOutError): Self = StObject.set(x, "ConnectionTimedOutError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseError(value: DatabaseError): Self = StObject.set(x, "DatabaseError", value.asInstanceOf[js.Any])
+    inline def setDatabaseError(value: DatabaseError): Self = StObject.set(x, "DatabaseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyResultError(value: EmptyResultError): Self = StObject.set(x, "EmptyResultError", value.asInstanceOf[js.Any])
+    inline def setEmptyResultError(value: EmptyResultError): Self = StObject.set(x, "EmptyResultError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: BaseError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: BaseError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionConstraintError(value: ExclusionConstraintError): Self = StObject.set(x, "ExclusionConstraintError", value.asInstanceOf[js.Any])
+    inline def setExclusionConstraintError(value: ExclusionConstraintError): Self = StObject.set(x, "ExclusionConstraintError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyConstraintError(value: ForeignKeyConstraintError): Self = StObject.set(x, "ForeignKeyConstraintError", value.asInstanceOf[js.Any])
+    inline def setForeignKeyConstraintError(value: ForeignKeyConstraintError): Self = StObject.set(x, "ForeignKeyConstraintError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostNotFoundError(value: HostNotFoundError): Self = StObject.set(x, "HostNotFoundError", value.asInstanceOf[js.Any])
+    inline def setHostNotFoundError(value: HostNotFoundError): Self = StObject.set(x, "HostNotFoundError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostNotReachableError(value: HostNotReachableError): Self = StObject.set(x, "HostNotReachableError", value.asInstanceOf[js.Any])
+    inline def setHostNotReachableError(value: HostNotReachableError): Self = StObject.set(x, "HostNotReachableError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidConnectionError(value: InvalidConnectionError): Self = StObject.set(x, "InvalidConnectionError", value.asInstanceOf[js.Any])
+    inline def setInvalidConnectionError(value: InvalidConnectionError): Self = StObject.set(x, "InvalidConnectionError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutError(value: TimeoutError): Self = StObject.set(x, "TimeoutError", value.asInstanceOf[js.Any])
+    inline def setTimeoutError(value: TimeoutError): Self = StObject.set(x, "TimeoutError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueConstraintError(value: UniqueConstraintError): Self = StObject.set(x, "UniqueConstraintError", value.asInstanceOf[js.Any])
+    inline def setUniqueConstraintError(value: UniqueConstraintError): Self = StObject.set(x, "UniqueConstraintError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationError(value: ValidationError): Self = StObject.set(x, "ValidationError", value.asInstanceOf[js.Any])
+    inline def setValidationError(value: ValidationError): Self = StObject.set(x, "ValidationError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationErrorItem(value: ValidationErrorItem): Self = StObject.set(x, "ValidationErrorItem", value.asInstanceOf[js.Any])
+    inline def setValidationErrorItem(value: ValidationErrorItem): Self = StObject.set(x, "ValidationErrorItem", value.asInstanceOf[js.Any])
   }
 }

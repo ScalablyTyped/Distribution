@@ -29,8 +29,7 @@ trait XProtectable
 }
 object XProtectable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     isProtected: () => Boolean,
     protect: String => Unit,
@@ -42,16 +41,12 @@ object XProtectable {
     __obj.asInstanceOf[XProtectable]
   }
   
-  @scala.inline
-  implicit class XProtectableMutableBuilder[Self <: XProtectable] (val x: Self) extends AnyVal {
+  extension [Self <: XProtectable](x: Self) {
     
-    @scala.inline
-    def setIsProtected(value: () => Boolean): Self = StObject.set(x, "isProtected", js.Any.fromFunction0(value))
+    inline def setIsProtected(value: () => Boolean): Self = StObject.set(x, "isProtected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProtect(value: String => Unit): Self = StObject.set(x, "protect", js.Any.fromFunction1(value))
+    inline def setProtect(value: String => Unit): Self = StObject.set(x, "protect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnprotect(value: String => Unit): Self = StObject.set(x, "unprotect", js.Any.fromFunction1(value))
+    inline def setUnprotect(value: String => Unit): Self = StObject.set(x, "unprotect", js.Any.fromFunction1(value))
   }
 }

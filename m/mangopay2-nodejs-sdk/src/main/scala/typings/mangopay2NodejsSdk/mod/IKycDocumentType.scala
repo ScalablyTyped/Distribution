@@ -23,28 +23,21 @@ trait IKycDocumentType extends StObject {
 }
 object IKycDocumentType {
   
-  @scala.inline
-  def apply(): IKycDocumentType = {
+  inline def apply(): IKycDocumentType = {
     val __obj = js.Dynamic.literal(AddressProof = "ADDRESS_PROOF", ArticlesOfAssociation = "ARTICLES_OF_ASSOCIATION", IdentityProof = "IDENTITY_PROOF", RegistrationProof = "REGISTRATION_PROOF", ShareholderDeclaration = "SHAREHOLDER_DECLARATION")
     __obj.asInstanceOf[IKycDocumentType]
   }
   
-  @scala.inline
-  implicit class IKycDocumentTypeMutableBuilder[Self <: IKycDocumentType] (val x: Self) extends AnyVal {
+  extension [Self <: IKycDocumentType](x: Self) {
     
-    @scala.inline
-    def setAddressProof(value: ADDRESS_PROOF): Self = StObject.set(x, "AddressProof", value.asInstanceOf[js.Any])
+    inline def setAddressProof(value: ADDRESS_PROOF): Self = StObject.set(x, "AddressProof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArticlesOfAssociation(value: ARTICLES_OF_ASSOCIATION): Self = StObject.set(x, "ArticlesOfAssociation", value.asInstanceOf[js.Any])
+    inline def setArticlesOfAssociation(value: ARTICLES_OF_ASSOCIATION): Self = StObject.set(x, "ArticlesOfAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityProof(value: IDENTITY_PROOF): Self = StObject.set(x, "IdentityProof", value.asInstanceOf[js.Any])
+    inline def setIdentityProof(value: IDENTITY_PROOF): Self = StObject.set(x, "IdentityProof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationProof(value: REGISTRATION_PROOF): Self = StObject.set(x, "RegistrationProof", value.asInstanceOf[js.Any])
+    inline def setRegistrationProof(value: REGISTRATION_PROOF): Self = StObject.set(x, "RegistrationProof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareholderDeclaration(value: SHAREHOLDER_DECLARATION): Self = StObject.set(x, "ShareholderDeclaration", value.asInstanceOf[js.Any])
+    inline def setShareholderDeclaration(value: SHAREHOLDER_DECLARATION): Self = StObject.set(x, "ShareholderDeclaration", value.asInstanceOf[js.Any])
   }
 }

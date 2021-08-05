@@ -18,22 +18,17 @@ trait DeprecateThingTypeRequest extends StObject {
 }
 object DeprecateThingTypeRequest {
   
-  @scala.inline
-  def apply(thingTypeName: ThingTypeName): DeprecateThingTypeRequest = {
+  inline def apply(thingTypeName: ThingTypeName): DeprecateThingTypeRequest = {
     val __obj = js.Dynamic.literal(thingTypeName = thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecateThingTypeRequest]
   }
   
-  @scala.inline
-  implicit class DeprecateThingTypeRequestMutableBuilder[Self <: DeprecateThingTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeprecateThingTypeRequest](x: Self) {
     
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
+    inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoDeprecate(value: UndoDeprecate): Self = StObject.set(x, "undoDeprecate", value.asInstanceOf[js.Any])
+    inline def setUndoDeprecate(value: UndoDeprecate): Self = StObject.set(x, "undoDeprecate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoDeprecateUndefined: Self = StObject.set(x, "undoDeprecate", js.undefined)
+    inline def setUndoDeprecateUndefined: Self = StObject.set(x, "undoDeprecate", js.undefined)
   }
 }

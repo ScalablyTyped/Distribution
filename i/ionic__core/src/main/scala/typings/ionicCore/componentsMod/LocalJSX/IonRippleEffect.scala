@@ -15,19 +15,15 @@ trait IonRippleEffect extends StObject {
 }
 object IonRippleEffect {
   
-  @scala.inline
-  def apply(): IonRippleEffect = {
+  inline def apply(): IonRippleEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonRippleEffect]
   }
   
-  @scala.inline
-  implicit class IonRippleEffectMutableBuilder[Self <: IonRippleEffect] (val x: Self) extends AnyVal {
+  extension [Self <: IonRippleEffect](x: Self) {
     
-    @scala.inline
-    def setType(value: bounded | unbounded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bounded | unbounded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

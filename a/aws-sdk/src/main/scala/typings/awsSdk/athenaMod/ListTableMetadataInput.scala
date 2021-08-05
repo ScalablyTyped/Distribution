@@ -33,37 +33,27 @@ trait ListTableMetadataInput extends StObject {
 }
 object ListTableMetadataInput {
   
-  @scala.inline
-  def apply(CatalogName: CatalogNameString, DatabaseName: NameString): ListTableMetadataInput = {
+  inline def apply(CatalogName: CatalogNameString, DatabaseName: NameString): ListTableMetadataInput = {
     val __obj = js.Dynamic.literal(CatalogName = CatalogName.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTableMetadataInput]
   }
   
-  @scala.inline
-  implicit class ListTableMetadataInputMutableBuilder[Self <: ListTableMetadataInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTableMetadataInput](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: ExpressionString): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: ExpressionString): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxTableMetadataCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxTableMetadataCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

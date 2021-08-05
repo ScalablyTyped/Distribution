@@ -21,16 +21,13 @@ trait XAlterView extends StObject {
 }
 object XAlterView {
   
-  @scala.inline
-  def apply(alterCommand: String => Unit): XAlterView = {
+  inline def apply(alterCommand: String => Unit): XAlterView = {
     val __obj = js.Dynamic.literal(alterCommand = js.Any.fromFunction1(alterCommand))
     __obj.asInstanceOf[XAlterView]
   }
   
-  @scala.inline
-  implicit class XAlterViewMutableBuilder[Self <: XAlterView] (val x: Self) extends AnyVal {
+  extension [Self <: XAlterView](x: Self) {
     
-    @scala.inline
-    def setAlterCommand(value: String => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction1(value))
+    inline def setAlterCommand(value: String => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction1(value))
   }
 }

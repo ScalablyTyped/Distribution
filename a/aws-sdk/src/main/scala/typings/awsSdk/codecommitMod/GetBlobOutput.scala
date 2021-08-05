@@ -13,16 +13,13 @@ trait GetBlobOutput extends StObject {
 }
 object GetBlobOutput {
   
-  @scala.inline
-  def apply(content: blob): GetBlobOutput = {
+  inline def apply(content: blob): GetBlobOutput = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBlobOutput]
   }
   
-  @scala.inline
-  implicit class GetBlobOutputMutableBuilder[Self <: GetBlobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlobOutput](x: Self) {
     
-    @scala.inline
-    def setContent(value: blob): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: blob): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

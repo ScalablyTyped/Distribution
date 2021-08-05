@@ -8,6 +8,5 @@ object reactMediaStrings {
   
   @js.native
   sealed trait QueryResults extends StObject
-  @scala.inline
-  def QueryResults: QueryResults = "QueryResults".asInstanceOf[QueryResults]
+  inline def QueryResults: QueryResults = "QueryResults".asInstanceOf[QueryResults]
 }

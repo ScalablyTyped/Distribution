@@ -35,16 +35,13 @@ trait DistributionPoint extends StObject {
 }
 object DistributionPoint {
   
-  @scala.inline
-  def apply(getEncodedHex: () => String): DistributionPoint = {
+  inline def apply(getEncodedHex: () => String): DistributionPoint = {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex))
     __obj.asInstanceOf[DistributionPoint]
   }
   
-  @scala.inline
-  implicit class DistributionPointMutableBuilder[Self <: DistributionPoint] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionPoint](x: Self) {
     
-    @scala.inline
-    def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
+    inline def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
   }
 }

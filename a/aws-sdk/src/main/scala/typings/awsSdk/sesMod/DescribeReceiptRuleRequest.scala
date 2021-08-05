@@ -18,19 +18,15 @@ trait DescribeReceiptRuleRequest extends StObject {
 }
 object DescribeReceiptRuleRequest {
   
-  @scala.inline
-  def apply(RuleName: ReceiptRuleName, RuleSetName: ReceiptRuleSetName): DescribeReceiptRuleRequest = {
+  inline def apply(RuleName: ReceiptRuleName, RuleSetName: ReceiptRuleSetName): DescribeReceiptRuleRequest = {
     val __obj = js.Dynamic.literal(RuleName = RuleName.asInstanceOf[js.Any], RuleSetName = RuleSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReceiptRuleRequest]
   }
   
-  @scala.inline
-  implicit class DescribeReceiptRuleRequestMutableBuilder[Self <: DescribeReceiptRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReceiptRuleRequest](x: Self) {
     
-    @scala.inline
-    def setRuleName(value: ReceiptRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: ReceiptRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
+    inline def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
   }
 }

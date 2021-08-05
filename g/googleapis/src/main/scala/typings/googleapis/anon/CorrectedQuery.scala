@@ -12,25 +12,19 @@ trait CorrectedQuery extends StObject {
 }
 object CorrectedQuery {
   
-  @scala.inline
-  def apply(): CorrectedQuery = {
+  inline def apply(): CorrectedQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CorrectedQuery]
   }
   
-  @scala.inline
-  implicit class CorrectedQueryMutableBuilder[Self <: CorrectedQuery] (val x: Self) extends AnyVal {
+  extension [Self <: CorrectedQuery](x: Self) {
     
-    @scala.inline
-    def setCorrectedQuery(value: String): Self = StObject.set(x, "correctedQuery", value.asInstanceOf[js.Any])
+    inline def setCorrectedQuery(value: String): Self = StObject.set(x, "correctedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectedQueryUndefined: Self = StObject.set(x, "correctedQuery", js.undefined)
+    inline def setCorrectedQueryUndefined: Self = StObject.set(x, "correctedQuery", js.undefined)
     
-    @scala.inline
-    def setHtmlCorrectedQuery(value: String): Self = StObject.set(x, "htmlCorrectedQuery", value.asInstanceOf[js.Any])
+    inline def setHtmlCorrectedQuery(value: String): Self = StObject.set(x, "htmlCorrectedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlCorrectedQueryUndefined: Self = StObject.set(x, "htmlCorrectedQuery", js.undefined)
+    inline def setHtmlCorrectedQueryUndefined: Self = StObject.set(x, "htmlCorrectedQuery", js.undefined)
   }
 }

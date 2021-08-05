@@ -22,28 +22,21 @@ trait SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse extends StObj
 }
 object SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse = {
+  inline def apply(): SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponseMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudPrivatecatalogV1beta1SearchVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setVersions(value: js.Array[SchemaGoogleCloudPrivatecatalogV1beta1Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[SchemaGoogleCloudPrivatecatalogV1beta1Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: SchemaGoogleCloudPrivatecatalogV1beta1Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SchemaGoogleCloudPrivatecatalogV1beta1Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

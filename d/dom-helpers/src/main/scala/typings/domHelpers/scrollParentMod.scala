@@ -12,8 +12,6 @@ object scrollParentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: HTMLElement): Document | HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Document | HTMLElement]
-  @scala.inline
-  def default(element: HTMLElement, firstPossible: Boolean): Document | HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], firstPossible.asInstanceOf[js.Any])).asInstanceOf[Document | HTMLElement]
+  inline def default(element: HTMLElement): Document | HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Document | HTMLElement]
+  inline def default(element: HTMLElement, firstPossible: Boolean): Document | HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], firstPossible.asInstanceOf[js.Any])).asInstanceOf[Document | HTMLElement]
 }

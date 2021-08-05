@@ -44,36 +44,31 @@ object DateTimeUtil {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def dateEquals(
+    inline def dateEquals(
       date1: typings.sharepoint.SP.DateTimeUtil.SimpleDate,
       date2: typings.sharepoint.SP.DateTimeUtil.SimpleDate
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dateEquals")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def dateGreater(
+    inline def dateGreater(
       date1: typings.sharepoint.SP.DateTimeUtil.SimpleDate,
       date2: typings.sharepoint.SP.DateTimeUtil.SimpleDate
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dateGreater")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def dateGreaterEqual(
+    inline def dateGreaterEqual(
       date1: typings.sharepoint.SP.DateTimeUtil.SimpleDate,
       date2: typings.sharepoint.SP.DateTimeUtil.SimpleDate
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dateGreaterEqual")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def dateLess(
+    inline def dateLess(
       date1: typings.sharepoint.SP.DateTimeUtil.SimpleDate,
       date2: typings.sharepoint.SP.DateTimeUtil.SimpleDate
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dateLess")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def dateLessEqual(
+    inline def dateLessEqual(
       date1: typings.sharepoint.SP.DateTimeUtil.SimpleDate,
       date2: typings.sharepoint.SP.DateTimeUtil.SimpleDate
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dateLessEqual")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]

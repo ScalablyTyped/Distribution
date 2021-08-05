@@ -27,8 +27,7 @@ trait RealmDto extends StObject {
 }
 object RealmDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cdn: String,
     css: String,
     dd: String,
@@ -43,37 +42,26 @@ object RealmDto {
     __obj.asInstanceOf[RealmDto]
   }
   
-  @scala.inline
-  implicit class RealmDtoMutableBuilder[Self <: RealmDto] (val x: Self) extends AnyVal {
+  extension [Self <: RealmDto](x: Self) {
     
-    @scala.inline
-    def setCdn(value: String): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
+    inline def setCdn(value: String): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDd(value: String): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+    inline def setDd(value: String): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+    inline def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "n", js.Array(value :_*))
+    inline def setNVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "n", js.Array(value :_*))
     
-    @scala.inline
-    def setProfileiconmax(value: Double): Self = StObject.set(x, "profileiconmax", value.asInstanceOf[js.Any])
+    inline def setProfileiconmax(value: Double): Self = StObject.set(x, "profileiconmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

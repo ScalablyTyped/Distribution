@@ -19,19 +19,15 @@ trait PermuteLayerArgs
 }
 object PermuteLayerArgs {
   
-  @scala.inline
-  def apply(dims: js.Array[Double]): PermuteLayerArgs = {
+  inline def apply(dims: js.Array[Double]): PermuteLayerArgs = {
     val __obj = js.Dynamic.literal(dims = dims.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermuteLayerArgs]
   }
   
-  @scala.inline
-  implicit class PermuteLayerArgsMutableBuilder[Self <: PermuteLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PermuteLayerArgs](x: Self) {
     
-    @scala.inline
-    def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
+    inline def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
+    inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
   }
 }

@@ -19,16 +19,12 @@ object ReportPrintOption {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL_PAGES: `0` = 0.asInstanceOf[`0`]
+    inline def ALL_PAGES: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NOT_WITH_REPORT_FOOTER: `2` = 2.asInstanceOf[`2`]
+    inline def NOT_WITH_REPORT_FOOTER: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NOT_WITH_REPORT_HEADER: `1` = 1.asInstanceOf[`1`]
+    inline def NOT_WITH_REPORT_HEADER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NOT_WITH_REPORT_HEADER_FOOTER: `3` = 3.asInstanceOf[`3`]
+    inline def NOT_WITH_REPORT_HEADER_FOOTER: `3` = 3.asInstanceOf[`3`]
   }
 }

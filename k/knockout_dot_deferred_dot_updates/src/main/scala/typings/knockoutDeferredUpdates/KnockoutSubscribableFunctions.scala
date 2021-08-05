@@ -11,16 +11,13 @@ trait KnockoutSubscribableFunctions[T] extends StObject {
 }
 object KnockoutSubscribableFunctions {
   
-  @scala.inline
-  def apply[T](deferUpdates: Boolean): KnockoutSubscribableFunctions[T] = {
+  inline def apply[T](deferUpdates: Boolean): KnockoutSubscribableFunctions[T] = {
     val __obj = js.Dynamic.literal(deferUpdates = deferUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutSubscribableFunctions[T]]
   }
   
-  @scala.inline
-  implicit class KnockoutSubscribableFunctionsMutableBuilder[Self <: KnockoutSubscribableFunctions[?], T] (val x: Self & KnockoutSubscribableFunctions[T]) extends AnyVal {
+  extension [Self <: KnockoutSubscribableFunctions[?], T](x: Self & KnockoutSubscribableFunctions[T]) {
     
-    @scala.inline
-    def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
+    inline def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
   }
 }

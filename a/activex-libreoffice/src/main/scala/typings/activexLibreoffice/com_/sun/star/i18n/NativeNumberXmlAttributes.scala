@@ -22,22 +22,17 @@ trait NativeNumberXmlAttributes extends StObject {
 }
 object NativeNumberXmlAttributes {
   
-  @scala.inline
-  def apply(Format: String, Locale: Locale, Style: String): NativeNumberXmlAttributes = {
+  inline def apply(Format: String, Locale: Locale, Style: String): NativeNumberXmlAttributes = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], Locale = Locale.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeNumberXmlAttributes]
   }
   
-  @scala.inline
-  implicit class NativeNumberXmlAttributesMutableBuilder[Self <: NativeNumberXmlAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: NativeNumberXmlAttributes](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

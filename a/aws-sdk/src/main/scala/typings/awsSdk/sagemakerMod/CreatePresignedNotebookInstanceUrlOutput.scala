@@ -13,19 +13,15 @@ trait CreatePresignedNotebookInstanceUrlOutput extends StObject {
 }
 object CreatePresignedNotebookInstanceUrlOutput {
   
-  @scala.inline
-  def apply(): CreatePresignedNotebookInstanceUrlOutput = {
+  inline def apply(): CreatePresignedNotebookInstanceUrlOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePresignedNotebookInstanceUrlOutput]
   }
   
-  @scala.inline
-  implicit class CreatePresignedNotebookInstanceUrlOutputMutableBuilder[Self <: CreatePresignedNotebookInstanceUrlOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePresignedNotebookInstanceUrlOutput](x: Self) {
     
-    @scala.inline
-    def setAuthorizedUrl(value: NotebookInstanceUrl): Self = StObject.set(x, "AuthorizedUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizedUrl(value: NotebookInstanceUrl): Self = StObject.set(x, "AuthorizedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedUrlUndefined: Self = StObject.set(x, "AuthorizedUrl", js.undefined)
+    inline def setAuthorizedUrlUndefined: Self = StObject.set(x, "AuthorizedUrl", js.undefined)
   }
 }

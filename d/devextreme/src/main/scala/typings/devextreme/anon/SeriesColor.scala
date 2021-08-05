@@ -14,31 +14,23 @@ trait SeriesColor extends StObject {
 }
 object SeriesColor {
   
-  @scala.inline
-  def apply(): SeriesColor = {
+  inline def apply(): SeriesColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesColor]
   }
   
-  @scala.inline
-  implicit class SeriesColorMutableBuilder[Self <: SeriesColor] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesColor](x: Self) {
     
-    @scala.inline
-    def setSeriesColor(value: String): Self = StObject.set(x, "seriesColor", value.asInstanceOf[js.Any])
+    inline def setSeriesColor(value: String): Self = StObject.set(x, "seriesColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesColorUndefined: Self = StObject.set(x, "seriesColor", js.undefined)
+    inline def setSeriesColorUndefined: Self = StObject.set(x, "seriesColor", js.undefined)
     
-    @scala.inline
-    def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
+    inline def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
+    inline def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
     
-    @scala.inline
-    def setSeriesName(value: js.Any): Self = StObject.set(x, "seriesName", value.asInstanceOf[js.Any])
+    inline def setSeriesName(value: js.Any): Self = StObject.set(x, "seriesName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesNameUndefined: Self = StObject.set(x, "seriesName", js.undefined)
+    inline def setSeriesNameUndefined: Self = StObject.set(x, "seriesName", js.undefined)
   }
 }

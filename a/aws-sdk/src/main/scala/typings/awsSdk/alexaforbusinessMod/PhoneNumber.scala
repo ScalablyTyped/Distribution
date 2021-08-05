@@ -18,19 +18,15 @@ trait PhoneNumber extends StObject {
 }
 object PhoneNumber {
   
-  @scala.inline
-  def apply(Number: RawPhoneNumber, Type: PhoneNumberType): PhoneNumber = {
+  inline def apply(Number: RawPhoneNumber, Type: PhoneNumberType): PhoneNumber = {
     val __obj = js.Dynamic.literal(Number = Number.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumber]
   }
   
-  @scala.inline
-  implicit class PhoneNumberMutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneNumber](x: Self) {
     
-    @scala.inline
-    def setNumber(value: RawPhoneNumber): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: RawPhoneNumber): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PhoneNumberType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PhoneNumberType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

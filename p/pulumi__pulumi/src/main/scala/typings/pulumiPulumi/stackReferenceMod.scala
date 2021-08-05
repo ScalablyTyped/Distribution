@@ -55,7 +55,7 @@ object stackReferenceMod {
       */
     val outputs: Output_[StringDictionary[js.Any]] = js.native
     
-    var readOutputValue: js.Any = js.native
+    /* private */ var readOutputValue: js.Any = js.native
     
     /**
       * Fetches the value of the named stack output, or throws an error if the output was not found.
@@ -89,20 +89,16 @@ object stackReferenceMod {
   }
   object StackReferenceArgs {
     
-    @scala.inline
-    def apply(): StackReferenceArgs = {
+    inline def apply(): StackReferenceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackReferenceArgs]
     }
     
-    @scala.inline
-    implicit class StackReferenceArgsMutableBuilder[Self <: StackReferenceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StackReferenceArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

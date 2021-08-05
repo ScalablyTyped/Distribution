@@ -16,19 +16,15 @@ trait Hotel extends StObject {
 }
 object Hotel {
   
-  @scala.inline
-  def apply(hotel: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel): Hotel = {
+  inline def apply(hotel: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel): Hotel = {
     val __obj = js.Dynamic.literal(deep_type = "HOTEL", hotel = hotel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hotel]
   }
   
-  @scala.inline
-  implicit class HotelMutableBuilder[Self <: Hotel] (val x: Self) extends AnyVal {
+  extension [Self <: Hotel](x: Self) {
     
-    @scala.inline
-    def setDeep_type(value: HOTEL): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
+    inline def setDeep_type(value: HOTEL): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotel(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel): Self = StObject.set(x, "hotel", value.asInstanceOf[js.Any])
+    inline def setHotel(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel): Self = StObject.set(x, "hotel", value.asInstanceOf[js.Any])
   }
 }

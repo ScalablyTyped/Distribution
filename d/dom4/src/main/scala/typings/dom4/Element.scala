@@ -22,8 +22,7 @@ trait Element
 }
 object Element {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     append: /* repeated */ Node | String => Unit,
     children: HTMLCollection,
     closest: String => Element | Null,
@@ -34,13 +33,10 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setClosest(value: String => Element | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
+    inline def setClosest(value: String => Element | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatches(value: String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+    inline def setMatches(value: String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
   }
 }

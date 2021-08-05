@@ -17,25 +17,19 @@ trait VolumeAnnotationsVersion extends StObject {
 }
 object VolumeAnnotationsVersion {
   
-  @scala.inline
-  def apply(): VolumeAnnotationsVersion = {
+  inline def apply(): VolumeAnnotationsVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeAnnotationsVersion]
   }
   
-  @scala.inline
-  implicit class VolumeAnnotationsVersionMutableBuilder[Self <: VolumeAnnotationsVersion] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeAnnotationsVersion](x: Self) {
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setVolumeAnnotationsVersion(value: String): Self = StObject.set(x, "volumeAnnotationsVersion", value.asInstanceOf[js.Any])
+    inline def setVolumeAnnotationsVersion(value: String): Self = StObject.set(x, "volumeAnnotationsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeAnnotationsVersionUndefined: Self = StObject.set(x, "volumeAnnotationsVersion", js.undefined)
+    inline def setVolumeAnnotationsVersionUndefined: Self = StObject.set(x, "volumeAnnotationsVersion", js.undefined)
   }
 }

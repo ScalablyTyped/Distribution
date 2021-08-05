@@ -13,16 +13,13 @@ trait PropertyNameQuery extends StObject {
 }
 object PropertyNameQuery {
   
-  @scala.inline
-  def apply(PropertyNameHint: PropertyNameHint): PropertyNameQuery = {
+  inline def apply(PropertyNameHint: PropertyNameHint): PropertyNameQuery = {
     val __obj = js.Dynamic.literal(PropertyNameHint = PropertyNameHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyNameQuery]
   }
   
-  @scala.inline
-  implicit class PropertyNameQueryMutableBuilder[Self <: PropertyNameQuery] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyNameQuery](x: Self) {
     
-    @scala.inline
-    def setPropertyNameHint(value: PropertyNameHint): Self = StObject.set(x, "PropertyNameHint", value.asInstanceOf[js.Any])
+    inline def setPropertyNameHint(value: PropertyNameHint): Self = StObject.set(x, "PropertyNameHint", value.asInstanceOf[js.Any])
   }
 }

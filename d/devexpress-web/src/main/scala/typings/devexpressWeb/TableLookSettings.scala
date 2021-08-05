@@ -41,8 +41,7 @@ trait TableLookSettings extends StObject {
 }
 object TableLookSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyFirstColumn: Boolean,
     applyFirstRow: Boolean,
     applyLastColumn: Boolean,
@@ -54,25 +53,18 @@ object TableLookSettings {
     __obj.asInstanceOf[TableLookSettings]
   }
   
-  @scala.inline
-  implicit class TableLookSettingsMutableBuilder[Self <: TableLookSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TableLookSettings](x: Self) {
     
-    @scala.inline
-    def setApplyFirstColumn(value: Boolean): Self = StObject.set(x, "applyFirstColumn", value.asInstanceOf[js.Any])
+    inline def setApplyFirstColumn(value: Boolean): Self = StObject.set(x, "applyFirstColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyFirstRow(value: Boolean): Self = StObject.set(x, "applyFirstRow", value.asInstanceOf[js.Any])
+    inline def setApplyFirstRow(value: Boolean): Self = StObject.set(x, "applyFirstRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyLastColumn(value: Boolean): Self = StObject.set(x, "applyLastColumn", value.asInstanceOf[js.Any])
+    inline def setApplyLastColumn(value: Boolean): Self = StObject.set(x, "applyLastColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyLastRow(value: Boolean): Self = StObject.set(x, "applyLastRow", value.asInstanceOf[js.Any])
+    inline def setApplyLastRow(value: Boolean): Self = StObject.set(x, "applyLastRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoNotApplyColumnBanding(value: Boolean): Self = StObject.set(x, "doNotApplyColumnBanding", value.asInstanceOf[js.Any])
+    inline def setDoNotApplyColumnBanding(value: Boolean): Self = StObject.set(x, "doNotApplyColumnBanding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoNotApplyRowBanding(value: Boolean): Self = StObject.set(x, "doNotApplyRowBanding", value.asInstanceOf[js.Any])
+    inline def setDoNotApplyRowBanding(value: Boolean): Self = StObject.set(x, "doNotApplyRowBanding", value.asInstanceOf[js.Any])
   }
 }

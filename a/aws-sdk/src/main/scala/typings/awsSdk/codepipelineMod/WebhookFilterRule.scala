@@ -18,22 +18,17 @@ trait WebhookFilterRule extends StObject {
 }
 object WebhookFilterRule {
   
-  @scala.inline
-  def apply(jsonPath: JsonPath): WebhookFilterRule = {
+  inline def apply(jsonPath: JsonPath): WebhookFilterRule = {
     val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookFilterRule]
   }
   
-  @scala.inline
-  implicit class WebhookFilterRuleMutableBuilder[Self <: WebhookFilterRule] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookFilterRule](x: Self) {
     
-    @scala.inline
-    def setJsonPath(value: JsonPath): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: JsonPath): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchEquals(value: MatchEquals): Self = StObject.set(x, "matchEquals", value.asInstanceOf[js.Any])
+    inline def setMatchEquals(value: MatchEquals): Self = StObject.set(x, "matchEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchEqualsUndefined: Self = StObject.set(x, "matchEquals", js.undefined)
+    inline def setMatchEqualsUndefined: Self = StObject.set(x, "matchEquals", js.undefined)
   }
 }

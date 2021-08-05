@@ -38,46 +38,33 @@ trait SchemaPage extends StObject {
 }
 object SchemaPage {
   
-  @scala.inline
-  def apply(): SchemaPage = {
+  inline def apply(): SchemaPage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPage]
   }
   
-  @scala.inline
-  implicit class SchemaPageMutableBuilder[Self <: SchemaPage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPage](x: Self) {
     
-    @scala.inline
-    def setBlocks(value: js.Array[SchemaBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: js.Array[SchemaBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
+    inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
-    @scala.inline
-    def setBlocksVarargs(value: SchemaBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: SchemaBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setProperty(value: SchemaTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: SchemaTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

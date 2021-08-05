@@ -13,16 +13,13 @@ trait ArrayBufferTypes extends StObject {
 }
 object ArrayBufferTypes {
   
-  @scala.inline
-  def apply(ArrayBuffer: ArrayBuffer): ArrayBufferTypes = {
+  inline def apply(ArrayBuffer: ArrayBuffer): ArrayBufferTypes = {
     val __obj = js.Dynamic.literal(ArrayBuffer = ArrayBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayBufferTypes]
   }
   
-  @scala.inline
-  implicit class ArrayBufferTypesMutableBuilder[Self <: ArrayBufferTypes] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayBufferTypes](x: Self) {
     
-    @scala.inline
-    def setArrayBuffer(value: ArrayBuffer): Self = StObject.set(x, "ArrayBuffer", value.asInstanceOf[js.Any])
+    inline def setArrayBuffer(value: ArrayBuffer): Self = StObject.set(x, "ArrayBuffer", value.asInstanceOf[js.Any])
   }
 }

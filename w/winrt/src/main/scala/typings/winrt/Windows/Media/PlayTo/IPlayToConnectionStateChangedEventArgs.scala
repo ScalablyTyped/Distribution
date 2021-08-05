@@ -12,19 +12,15 @@ trait IPlayToConnectionStateChangedEventArgs extends StObject {
 }
 object IPlayToConnectionStateChangedEventArgs {
   
-  @scala.inline
-  def apply(currentState: PlayToConnectionState, previousState: PlayToConnectionState): IPlayToConnectionStateChangedEventArgs = {
+  inline def apply(currentState: PlayToConnectionState, previousState: PlayToConnectionState): IPlayToConnectionStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(currentState = currentState.asInstanceOf[js.Any], previousState = previousState.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlayToConnectionStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class IPlayToConnectionStateChangedEventArgsMutableBuilder[Self <: IPlayToConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayToConnectionStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCurrentState(value: PlayToConnectionState): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: PlayToConnectionState): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousState(value: PlayToConnectionState): Self = StObject.set(x, "previousState", value.asInstanceOf[js.Any])
+    inline def setPreviousState(value: PlayToConnectionState): Self = StObject.set(x, "previousState", value.asInstanceOf[js.Any])
   }
 }

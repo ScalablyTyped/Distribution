@@ -14,8 +14,7 @@ trait Hooks extends StObject {
 }
 object Hooks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (js.Any, Double) => CallbackObject,
     Execute: () => CallbackObject,
     Remove: CallbackObject => Unit
@@ -24,16 +23,12 @@ object Hooks {
     __obj.asInstanceOf[Hooks]
   }
   
-  @scala.inline
-  implicit class HooksMutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
+  extension [Self <: Hooks](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (js.Any, Double) => CallbackObject): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (js.Any, Double) => CallbackObject): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExecute(value: () => CallbackObject): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => CallbackObject): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: CallbackObject => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: CallbackObject => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

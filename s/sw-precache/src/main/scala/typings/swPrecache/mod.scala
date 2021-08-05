@@ -44,20 +44,15 @@ object mod {
   trait Method extends StObject
   object Method {
     
-    @scala.inline
-    def delete: typings.swPrecache.swPrecacheStrings.delete = "delete".asInstanceOf[typings.swPrecache.swPrecacheStrings.delete]
+    inline def delete: typings.swPrecache.swPrecacheStrings.delete = "delete".asInstanceOf[typings.swPrecache.swPrecacheStrings.delete]
     
-    @scala.inline
-    def get: typings.swPrecache.swPrecacheStrings.get = "get".asInstanceOf[typings.swPrecache.swPrecacheStrings.get]
+    inline def get: typings.swPrecache.swPrecacheStrings.get = "get".asInstanceOf[typings.swPrecache.swPrecacheStrings.get]
     
-    @scala.inline
-    def head: typings.swPrecache.swPrecacheStrings.head = "head".asInstanceOf[typings.swPrecache.swPrecacheStrings.head]
+    inline def head: typings.swPrecache.swPrecacheStrings.head = "head".asInstanceOf[typings.swPrecache.swPrecacheStrings.head]
     
-    @scala.inline
-    def post: typings.swPrecache.swPrecacheStrings.post = "post".asInstanceOf[typings.swPrecache.swPrecacheStrings.post]
+    inline def post: typings.swPrecache.swPrecacheStrings.post = "post".asInstanceOf[typings.swPrecache.swPrecacheStrings.post]
     
-    @scala.inline
-    def put: typings.swPrecache.swPrecacheStrings.put = "put".asInstanceOf[typings.swPrecache.swPrecacheStrings.put]
+    inline def put: typings.swPrecache.swPrecacheStrings.put = "put".asInstanceOf[typings.swPrecache.swPrecacheStrings.put]
   }
   
   trait Options extends StObject {
@@ -104,149 +99,102 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+      inline def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheIdUndefined: Self = StObject.set(x, "cacheId", js.undefined)
+      inline def setCacheIdUndefined: Self = StObject.set(x, "cacheId", js.undefined)
       
-      @scala.inline
-      def setClientsClaim(value: Boolean): Self = StObject.set(x, "clientsClaim", value.asInstanceOf[js.Any])
+      inline def setClientsClaim(value: Boolean): Self = StObject.set(x, "clientsClaim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientsClaimUndefined: Self = StObject.set(x, "clientsClaim", js.undefined)
+      inline def setClientsClaimUndefined: Self = StObject.set(x, "clientsClaim", js.undefined)
       
-      @scala.inline
-      def setDirectoryIndex(value: String): Self = StObject.set(x, "directoryIndex", value.asInstanceOf[js.Any])
+      inline def setDirectoryIndex(value: String): Self = StObject.set(x, "directoryIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryIndexUndefined: Self = StObject.set(x, "directoryIndex", js.undefined)
+      inline def setDirectoryIndexUndefined: Self = StObject.set(x, "directoryIndex", js.undefined)
       
-      @scala.inline
-      def setDontCacheBustUrlsMatching(value: RegExp): Self = StObject.set(x, "dontCacheBustUrlsMatching", value.asInstanceOf[js.Any])
+      inline def setDontCacheBustUrlsMatching(value: RegExp): Self = StObject.set(x, "dontCacheBustUrlsMatching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontCacheBustUrlsMatchingUndefined: Self = StObject.set(x, "dontCacheBustUrlsMatching", js.undefined)
+      inline def setDontCacheBustUrlsMatchingUndefined: Self = StObject.set(x, "dontCacheBustUrlsMatching", js.undefined)
       
-      @scala.inline
-      def setDynamicUrlToDependencies(value: StringDictionary[String | Buffer | js.Array[String]]): Self = StObject.set(x, "dynamicUrlToDependencies", value.asInstanceOf[js.Any])
+      inline def setDynamicUrlToDependencies(value: StringDictionary[String | Buffer | js.Array[String]]): Self = StObject.set(x, "dynamicUrlToDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicUrlToDependenciesUndefined: Self = StObject.set(x, "dynamicUrlToDependencies", js.undefined)
+      inline def setDynamicUrlToDependenciesUndefined: Self = StObject.set(x, "dynamicUrlToDependencies", js.undefined)
       
-      @scala.inline
-      def setHandleFetch(value: Boolean): Self = StObject.set(x, "handleFetch", value.asInstanceOf[js.Any])
+      inline def setHandleFetch(value: Boolean): Self = StObject.set(x, "handleFetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleFetchUndefined: Self = StObject.set(x, "handleFetch", js.undefined)
+      inline def setHandleFetchUndefined: Self = StObject.set(x, "handleFetch", js.undefined)
       
-      @scala.inline
-      def setIgnoreUrlParametersMatching(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreUrlParametersMatching", value.asInstanceOf[js.Any])
+      inline def setIgnoreUrlParametersMatching(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreUrlParametersMatching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUrlParametersMatchingUndefined: Self = StObject.set(x, "ignoreUrlParametersMatching", js.undefined)
+      inline def setIgnoreUrlParametersMatchingUndefined: Self = StObject.set(x, "ignoreUrlParametersMatching", js.undefined)
       
-      @scala.inline
-      def setIgnoreUrlParametersMatchingVarargs(value: RegExp*): Self = StObject.set(x, "ignoreUrlParametersMatching", js.Array(value :_*))
+      inline def setIgnoreUrlParametersMatchingVarargs(value: RegExp*): Self = StObject.set(x, "ignoreUrlParametersMatching", js.Array(value :_*))
       
-      @scala.inline
-      def setImportScripts(value: js.Array[String]): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
+      inline def setImportScripts(value: js.Array[String]): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
+      inline def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
       
-      @scala.inline
-      def setImportScriptsVarargs(value: String*): Self = StObject.set(x, "importScripts", js.Array(value :_*))
+      inline def setImportScriptsVarargs(value: String*): Self = StObject.set(x, "importScripts", js.Array(value :_*))
       
-      @scala.inline
-      def setLogger(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+      inline def setLogger(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setMaximumFileSizeToCacheInBytes(value: Double): Self = StObject.set(x, "maximumFileSizeToCacheInBytes", value.asInstanceOf[js.Any])
+      inline def setMaximumFileSizeToCacheInBytes(value: Double): Self = StObject.set(x, "maximumFileSizeToCacheInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumFileSizeToCacheInBytesUndefined: Self = StObject.set(x, "maximumFileSizeToCacheInBytes", js.undefined)
+      inline def setMaximumFileSizeToCacheInBytesUndefined: Self = StObject.set(x, "maximumFileSizeToCacheInBytes", js.undefined)
       
-      @scala.inline
-      def setNavigateFallback(value: String): Self = StObject.set(x, "navigateFallback", value.asInstanceOf[js.Any])
+      inline def setNavigateFallback(value: String): Self = StObject.set(x, "navigateFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigateFallbackUndefined: Self = StObject.set(x, "navigateFallback", js.undefined)
+      inline def setNavigateFallbackUndefined: Self = StObject.set(x, "navigateFallback", js.undefined)
       
-      @scala.inline
-      def setNavigateFallbackWhitelist(value: js.Array[RegExp]): Self = StObject.set(x, "navigateFallbackWhitelist", value.asInstanceOf[js.Any])
+      inline def setNavigateFallbackWhitelist(value: js.Array[RegExp]): Self = StObject.set(x, "navigateFallbackWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigateFallbackWhitelistUndefined: Self = StObject.set(x, "navigateFallbackWhitelist", js.undefined)
+      inline def setNavigateFallbackWhitelistUndefined: Self = StObject.set(x, "navigateFallbackWhitelist", js.undefined)
       
-      @scala.inline
-      def setNavigateFallbackWhitelistVarargs(value: RegExp*): Self = StObject.set(x, "navigateFallbackWhitelist", js.Array(value :_*))
+      inline def setNavigateFallbackWhitelistVarargs(value: RegExp*): Self = StObject.set(x, "navigateFallbackWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setReplacePrefix(value: String): Self = StObject.set(x, "replacePrefix", value.asInstanceOf[js.Any])
+      inline def setReplacePrefix(value: String): Self = StObject.set(x, "replacePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacePrefixUndefined: Self = StObject.set(x, "replacePrefix", js.undefined)
+      inline def setReplacePrefixUndefined: Self = StObject.set(x, "replacePrefix", js.undefined)
       
-      @scala.inline
-      def setRuntimeCaching(value: js.Array[typings.swPrecache.anon.Handler]): Self = StObject.set(x, "runtimeCaching", value.asInstanceOf[js.Any])
+      inline def setRuntimeCaching(value: js.Array[typings.swPrecache.anon.Handler]): Self = StObject.set(x, "runtimeCaching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeCachingUndefined: Self = StObject.set(x, "runtimeCaching", js.undefined)
+      inline def setRuntimeCachingUndefined: Self = StObject.set(x, "runtimeCaching", js.undefined)
       
-      @scala.inline
-      def setRuntimeCachingVarargs(value: typings.swPrecache.anon.Handler*): Self = StObject.set(x, "runtimeCaching", js.Array(value :_*))
+      inline def setRuntimeCachingVarargs(value: typings.swPrecache.anon.Handler*): Self = StObject.set(x, "runtimeCaching", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipWaiting(value: Boolean): Self = StObject.set(x, "skipWaiting", value.asInstanceOf[js.Any])
+      inline def setSkipWaiting(value: Boolean): Self = StObject.set(x, "skipWaiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipWaitingUndefined: Self = StObject.set(x, "skipWaiting", js.undefined)
+      inline def setSkipWaitingUndefined: Self = StObject.set(x, "skipWaiting", js.undefined)
       
-      @scala.inline
-      def setStaticFileGlobs(value: js.Array[String]): Self = StObject.set(x, "staticFileGlobs", value.asInstanceOf[js.Any])
+      inline def setStaticFileGlobs(value: js.Array[String]): Self = StObject.set(x, "staticFileGlobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticFileGlobsUndefined: Self = StObject.set(x, "staticFileGlobs", js.undefined)
+      inline def setStaticFileGlobsUndefined: Self = StObject.set(x, "staticFileGlobs", js.undefined)
       
-      @scala.inline
-      def setStaticFileGlobsVarargs(value: String*): Self = StObject.set(x, "staticFileGlobs", js.Array(value :_*))
+      inline def setStaticFileGlobsVarargs(value: String*): Self = StObject.set(x, "staticFileGlobs", js.Array(value :_*))
       
-      @scala.inline
-      def setStripPrefix(value: String): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
+      inline def setStripPrefix(value: String): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripPrefixMulti(value: StringDictionary[String]): Self = StObject.set(x, "stripPrefixMulti", value.asInstanceOf[js.Any])
+      inline def setStripPrefixMulti(value: StringDictionary[String]): Self = StObject.set(x, "stripPrefixMulti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripPrefixMultiUndefined: Self = StObject.set(x, "stripPrefixMulti", js.undefined)
+      inline def setStripPrefixMultiUndefined: Self = StObject.set(x, "stripPrefixMulti", js.undefined)
       
-      @scala.inline
-      def setStripPrefixUndefined: Self = StObject.set(x, "stripPrefix", js.undefined)
+      inline def setStripPrefixUndefined: Self = StObject.set(x, "stripPrefix", js.undefined)
       
-      @scala.inline
-      def setTemplateFilePath(value: String): Self = StObject.set(x, "templateFilePath", value.asInstanceOf[js.Any])
+      inline def setTemplateFilePath(value: String): Self = StObject.set(x, "templateFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateFilePathUndefined: Self = StObject.set(x, "templateFilePath", js.undefined)
+      inline def setTemplateFilePathUndefined: Self = StObject.set(x, "templateFilePath", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

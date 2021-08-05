@@ -26,9 +26,9 @@ object takeMod {
       */
     def this(source: IIterator[T], count: Double) = this()
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -63,6 +63,5 @@ object takeMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  @scala.inline
-  def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(`object`.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(`object`.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
 }

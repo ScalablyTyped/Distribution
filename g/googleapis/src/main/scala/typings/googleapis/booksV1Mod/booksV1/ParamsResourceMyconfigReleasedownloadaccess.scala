@@ -39,46 +39,33 @@ trait ParamsResourceMyconfigReleasedownloadaccess
 }
 object ParamsResourceMyconfigReleasedownloadaccess {
   
-  @scala.inline
-  def apply(): ParamsResourceMyconfigReleasedownloadaccess = {
+  inline def apply(): ParamsResourceMyconfigReleasedownloadaccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMyconfigReleasedownloadaccess]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMyconfigReleasedownloadaccessMutableBuilder[Self <: ParamsResourceMyconfigReleasedownloadaccess] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMyconfigReleasedownloadaccess](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCpksver(value: String): Self = StObject.set(x, "cpksver", value.asInstanceOf[js.Any])
+    inline def setCpksver(value: String): Self = StObject.set(x, "cpksver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpksverUndefined: Self = StObject.set(x, "cpksver", js.undefined)
+    inline def setCpksverUndefined: Self = StObject.set(x, "cpksver", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVolumeIds(value: js.Array[String]): Self = StObject.set(x, "volumeIds", value.asInstanceOf[js.Any])
+    inline def setVolumeIds(value: js.Array[String]): Self = StObject.set(x, "volumeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdsUndefined: Self = StObject.set(x, "volumeIds", js.undefined)
+    inline def setVolumeIdsUndefined: Self = StObject.set(x, "volumeIds", js.undefined)
     
-    @scala.inline
-    def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "volumeIds", js.Array(value :_*))
+    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "volumeIds", js.Array(value :_*))
   }
 }

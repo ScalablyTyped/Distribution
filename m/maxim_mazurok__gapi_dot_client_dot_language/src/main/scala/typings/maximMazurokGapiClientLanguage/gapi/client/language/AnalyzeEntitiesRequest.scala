@@ -14,25 +14,19 @@ trait AnalyzeEntitiesRequest extends StObject {
 }
 object AnalyzeEntitiesRequest {
   
-  @scala.inline
-  def apply(): AnalyzeEntitiesRequest = {
+  inline def apply(): AnalyzeEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyzeEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class AnalyzeEntitiesRequestMutableBuilder[Self <: AnalyzeEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzeEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    inline def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
+    inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
   }
 }

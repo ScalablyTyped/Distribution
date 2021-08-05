@@ -35,37 +35,27 @@ trait AnchorOptions extends StObject {
 }
 object AnchorOptions {
   
-  @scala.inline
-  def apply(): AnchorOptions = {
+  inline def apply(): AnchorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnchorOptions]
   }
   
-  @scala.inline
-  implicit class AnchorOptionsMutableBuilder[Self <: AnchorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnchorOptions](x: Self) {
     
-    @scala.inline
-    def setAddTo(value: Anchor): Self = StObject.set(x, "addTo", value.asInstanceOf[js.Any])
+    inline def setAddTo(value: Anchor): Self = StObject.set(x, "addTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddToUndefined: Self = StObject.set(x, "addTo", js.undefined)
+    inline def setAddToUndefined: Self = StObject.set(x, "addTo", js.undefined)
     
-    @scala.inline
-    def setRotate(value: VectorOptions): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: VectorOptions): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setScale(value: VectorOptions | Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: VectorOptions | Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setTranslate(value: VectorOptions): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: VectorOptions): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

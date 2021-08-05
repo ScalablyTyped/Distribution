@@ -127,23 +127,18 @@ object mod {
   }
   object AssetData {
     
-    @scala.inline
-    def apply(dependencies: js.Array[String], version: String): AssetData = {
+    inline def apply(dependencies: js.Array[String], version: String): AssetData = {
       val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssetData]
     }
     
-    @scala.inline
-    implicit class AssetDataMutableBuilder[Self <: AssetData] (val x: Self) extends AnyVal {
+    extension [Self <: AssetData](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,8 +231,7 @@ object mod {
   }
   object DependencyExtractionWebpackPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any => Unit,
       externalizeWpDeps: (js.Any, js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsFunctionCallback */ js.Any) => Unit,
       externalizedDeps: Set[String],
@@ -250,35 +244,27 @@ object mod {
       __obj.asInstanceOf[DependencyExtractionWebpackPlugin]
     }
     
-    @scala.inline
-    implicit class DependencyExtractionWebpackPluginMutableBuilder[Self <: DependencyExtractionWebpackPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: DependencyExtractionWebpackPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExternalizeWpDeps(
+      inline def setExternalizeWpDeps(
         value: (js.Any, js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsFunctionCallback */ js.Any) => Unit
       ): Self = StObject.set(x, "externalizeWpDeps", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setExternalizedDeps(value: Set[String]): Self = StObject.set(x, "externalizedDeps", value.asInstanceOf[js.Any])
+      inline def setExternalizedDeps(value: Set[String]): Self = StObject.set(x, "externalizedDeps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalsPlugin(
+      inline def setExternalsPlugin(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsPlugin */ js.Any
       ): Self = StObject.set(x, "externalsPlugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapRequestToDependency(value: String => String): Self = StObject.set(x, "mapRequestToDependency", js.Any.fromFunction1(value))
+      inline def setMapRequestToDependency(value: String => String): Self = StObject.set(x, "mapRequestToDependency", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringify(value: js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }
   }
   
@@ -321,47 +307,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(injectPolyfill: Boolean, outputFormat: json | php, useDefaults: Boolean): Options = {
+    inline def apply(injectPolyfill: Boolean, outputFormat: json | php, useDefaults: Boolean): Options = {
       val __obj = js.Dynamic.literal(injectPolyfill = injectPolyfill.asInstanceOf[js.Any], outputFormat = outputFormat.asInstanceOf[js.Any], useDefaults = useDefaults.asInstanceOf[js.Any], combinedOutputFile = null)
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCombineAssets(value: Boolean): Self = StObject.set(x, "combineAssets", value.asInstanceOf[js.Any])
+      inline def setCombineAssets(value: Boolean): Self = StObject.set(x, "combineAssets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombineAssetsUndefined: Self = StObject.set(x, "combineAssets", js.undefined)
+      inline def setCombineAssetsUndefined: Self = StObject.set(x, "combineAssets", js.undefined)
       
-      @scala.inline
-      def setCombinedOutputFile(value: String): Self = StObject.set(x, "combinedOutputFile", value.asInstanceOf[js.Any])
+      inline def setCombinedOutputFile(value: String): Self = StObject.set(x, "combinedOutputFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombinedOutputFileNull: Self = StObject.set(x, "combinedOutputFile", null)
+      inline def setCombinedOutputFileNull: Self = StObject.set(x, "combinedOutputFile", null)
       
-      @scala.inline
-      def setInjectPolyfill(value: Boolean): Self = StObject.set(x, "injectPolyfill", value.asInstanceOf[js.Any])
+      inline def setInjectPolyfill(value: Boolean): Self = StObject.set(x, "injectPolyfill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormat(value: json | php): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: json | php): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestToExternal(value: /* request */ String => String | Unit | js.Array[String]): Self = StObject.set(x, "requestToExternal", js.Any.fromFunction1(value))
+      inline def setRequestToExternal(value: /* request */ String => String | Unit | js.Array[String]): Self = StObject.set(x, "requestToExternal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestToExternalUndefined: Self = StObject.set(x, "requestToExternal", js.undefined)
+      inline def setRequestToExternalUndefined: Self = StObject.set(x, "requestToExternal", js.undefined)
       
-      @scala.inline
-      def setRequestToHandle(value: /* request */ String => String | Unit): Self = StObject.set(x, "requestToHandle", js.Any.fromFunction1(value))
+      inline def setRequestToHandle(value: /* request */ String => String | Unit): Self = StObject.set(x, "requestToHandle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestToHandleUndefined: Self = StObject.set(x, "requestToHandle", js.undefined)
+      inline def setRequestToHandleUndefined: Self = StObject.set(x, "requestToHandle", js.undefined)
       
-      @scala.inline
-      def setUseDefaults(value: Boolean): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
+      inline def setUseDefaults(value: Boolean): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
     }
   }
   

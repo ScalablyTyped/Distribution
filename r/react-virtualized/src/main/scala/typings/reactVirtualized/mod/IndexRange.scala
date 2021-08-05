@@ -12,19 +12,15 @@ trait IndexRange extends StObject {
 }
 object IndexRange {
   
-  @scala.inline
-  def apply(startIndex: Double, stopIndex: Double): IndexRange = {
+  inline def apply(startIndex: Double, stopIndex: Double): IndexRange = {
     val __obj = js.Dynamic.literal(startIndex = startIndex.asInstanceOf[js.Any], stopIndex = stopIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexRange]
   }
   
-  @scala.inline
-  implicit class IndexRangeMutableBuilder[Self <: IndexRange] (val x: Self) extends AnyVal {
+  extension [Self <: IndexRange](x: Self) {
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopIndex(value: Double): Self = StObject.set(x, "stopIndex", value.asInstanceOf[js.Any])
+    inline def setStopIndex(value: Double): Self = StObject.set(x, "stopIndex", value.asInstanceOf[js.Any])
   }
 }

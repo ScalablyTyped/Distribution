@@ -12,25 +12,19 @@ trait CapacityPatch extends StObject {
 }
 object CapacityPatch {
   
-  @scala.inline
-  def apply(activities: js.Array[Activity], daysOff: js.Array[DateRange]): CapacityPatch = {
+  inline def apply(activities: js.Array[Activity], daysOff: js.Array[DateRange]): CapacityPatch = {
     val __obj = js.Dynamic.literal(activities = activities.asInstanceOf[js.Any], daysOff = daysOff.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityPatch]
   }
   
-  @scala.inline
-  implicit class CapacityPatchMutableBuilder[Self <: CapacityPatch] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityPatch](x: Self) {
     
-    @scala.inline
-    def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
-    @scala.inline
-    def setDaysOff(value: js.Array[DateRange]): Self = StObject.set(x, "daysOff", value.asInstanceOf[js.Any])
+    inline def setDaysOff(value: js.Array[DateRange]): Self = StObject.set(x, "daysOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOffVarargs(value: DateRange*): Self = StObject.set(x, "daysOff", js.Array(value :_*))
+    inline def setDaysOffVarargs(value: DateRange*): Self = StObject.set(x, "daysOff", js.Array(value :_*))
   }
 }

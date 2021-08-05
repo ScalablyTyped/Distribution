@@ -10,16 +10,13 @@ trait ContextWillBeDestroyedEvent extends StObject {
 }
 object ContextWillBeDestroyedEvent {
   
-  @scala.inline
-  def apply(contextId: GraphObjectId): ContextWillBeDestroyedEvent = {
+  inline def apply(contextId: GraphObjectId): ContextWillBeDestroyedEvent = {
     val __obj = js.Dynamic.literal(contextId = contextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextWillBeDestroyedEvent]
   }
   
-  @scala.inline
-  implicit class ContextWillBeDestroyedEventMutableBuilder[Self <: ContextWillBeDestroyedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContextWillBeDestroyedEvent](x: Self) {
     
-    @scala.inline
-    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
   }
 }

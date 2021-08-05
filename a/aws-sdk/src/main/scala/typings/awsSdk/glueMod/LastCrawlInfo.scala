@@ -38,49 +38,35 @@ trait LastCrawlInfo extends StObject {
 }
 object LastCrawlInfo {
   
-  @scala.inline
-  def apply(): LastCrawlInfo = {
+  inline def apply(): LastCrawlInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LastCrawlInfo]
   }
   
-  @scala.inline
-  implicit class LastCrawlInfoMutableBuilder[Self <: LastCrawlInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LastCrawlInfo](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: DescriptionString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: DescriptionString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLogGroup(value: LogGroup): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
+    inline def setLogGroup(value: LogGroup): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
+    inline def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
     
-    @scala.inline
-    def setLogStream(value: LogStream): Self = StObject.set(x, "LogStream", value.asInstanceOf[js.Any])
+    inline def setLogStream(value: LogStream): Self = StObject.set(x, "LogStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamUndefined: Self = StObject.set(x, "LogStream", js.undefined)
+    inline def setLogStreamUndefined: Self = StObject.set(x, "LogStream", js.undefined)
     
-    @scala.inline
-    def setMessagePrefix(value: MessagePrefix): Self = StObject.set(x, "MessagePrefix", value.asInstanceOf[js.Any])
+    inline def setMessagePrefix(value: MessagePrefix): Self = StObject.set(x, "MessagePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagePrefixUndefined: Self = StObject.set(x, "MessagePrefix", js.undefined)
+    inline def setMessagePrefixUndefined: Self = StObject.set(x, "MessagePrefix", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: LastCrawlStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LastCrawlStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

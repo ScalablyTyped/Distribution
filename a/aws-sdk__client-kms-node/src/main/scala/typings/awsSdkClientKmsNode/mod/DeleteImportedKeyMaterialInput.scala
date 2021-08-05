@@ -9,8 +9,7 @@ trait DeleteImportedKeyMaterialInput
      with typings.awsSdkClientKmsNode.typesDeleteImportedKeyMaterialInputMod.DeleteImportedKeyMaterialInput
 object DeleteImportedKeyMaterialInput {
   
-  @scala.inline
-  def apply(KeyId: String): DeleteImportedKeyMaterialInput = {
+  inline def apply(KeyId: String): DeleteImportedKeyMaterialInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteImportedKeyMaterialInput]
   }

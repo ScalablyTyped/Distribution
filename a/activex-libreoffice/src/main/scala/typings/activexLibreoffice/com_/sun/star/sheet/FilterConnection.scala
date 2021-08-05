@@ -15,10 +15,8 @@ trait FilterConnection extends StObject
 object FilterConnection {
   
   /** both conditions have to be fulfilled. */
-  @scala.inline
-  def AND: `0` = 0.asInstanceOf[`0`]
+  inline def AND: `0` = 0.asInstanceOf[`0`]
   
   /** at least one of the conditions has to be fulfilled. */
-  @scala.inline
-  def OR: `1` = 1.asInstanceOf[`1`]
+  inline def OR: `1` = 1.asInstanceOf[`1`]
 }

@@ -15,12 +15,10 @@ object MarkedString {
     *
     * @param plainText The plain text.
     */
-  @scala.inline
-  def fromPlainText(plainText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlainText")(plainText.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromPlainText(plainText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlainText")(plainText.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Checks whether the given value conforms to the [MarkedString](#MarkedString) type.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean]
 }

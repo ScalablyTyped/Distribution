@@ -57,8 +57,7 @@ trait AccountProvider extends StObject {
 }
 object AccountProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoOAuthCancelled: () => Thenable[Unit],
     clear: AccountKey => Thenable[Unit],
     clearTokenCache: () => Thenable[Unit],
@@ -71,28 +70,20 @@ object AccountProvider {
     __obj.asInstanceOf[AccountProvider]
   }
   
-  @scala.inline
-  implicit class AccountProviderMutableBuilder[Self <: AccountProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AccountProvider](x: Self) {
     
-    @scala.inline
-    def setAutoOAuthCancelled(value: () => Thenable[Unit]): Self = StObject.set(x, "autoOAuthCancelled", js.Any.fromFunction0(value))
+    inline def setAutoOAuthCancelled(value: () => Thenable[Unit]): Self = StObject.set(x, "autoOAuthCancelled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClear(value: AccountKey => Thenable[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: AccountKey => Thenable[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearTokenCache(value: () => Thenable[Unit]): Self = StObject.set(x, "clearTokenCache", js.Any.fromFunction0(value))
+    inline def setClearTokenCache(value: () => Thenable[Unit]): Self = StObject.set(x, "clearTokenCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSecurityToken(value: (Account, AzureResource) => Thenable[js.UndefOr[js.Object]]): Self = StObject.set(x, "getSecurityToken", js.Any.fromFunction2(value))
+    inline def setGetSecurityToken(value: (Account, AzureResource) => Thenable[js.UndefOr[js.Object]]): Self = StObject.set(x, "getSecurityToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInitialize(value: js.Array[Account] => Thenable[js.Array[Account]]): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: js.Array[Account] => Thenable[js.Array[Account]]): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrompt(value: () => Thenable[Account | PromptFailedResult]): Self = StObject.set(x, "prompt", js.Any.fromFunction0(value))
+    inline def setPrompt(value: () => Thenable[Account | PromptFailedResult]): Self = StObject.set(x, "prompt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefresh(value: Account => Thenable[Account | PromptFailedResult]): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+    inline def setRefresh(value: Account => Thenable[Account | PromptFailedResult]): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
   }
 }

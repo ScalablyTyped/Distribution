@@ -14,31 +14,23 @@ trait PlaylistResponse extends StObject {
 }
 object PlaylistResponse {
   
-  @scala.inline
-  def apply(): PlaylistResponse = {
+  inline def apply(): PlaylistResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaylistResponse]
   }
   
-  @scala.inline
-  implicit class PlaylistResponseMutableBuilder[Self <: PlaylistResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: PlaylistData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PlaylistData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

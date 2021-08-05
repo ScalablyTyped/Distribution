@@ -45,17 +45,14 @@ object Topology {
   }
   object OClusterConfig {
     
-    @scala.inline
-    def apply(selectionStrategy: typings.orientjs.mod.Topology.OCluster => OServerNode): OClusterConfig = {
+    inline def apply(selectionStrategy: typings.orientjs.mod.Topology.OCluster => OServerNode): OClusterConfig = {
       val __obj = js.Dynamic.literal(selectionStrategy = js.Any.fromFunction1(selectionStrategy))
       __obj.asInstanceOf[OClusterConfig]
     }
     
-    @scala.inline
-    implicit class OClusterConfigMutableBuilder[Self <: OClusterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OClusterConfig](x: Self) {
       
-      @scala.inline
-      def setSelectionStrategy(value: typings.orientjs.mod.Topology.OCluster => OServerNode): Self = StObject.set(x, "selectionStrategy", js.Any.fromFunction1(value))
+      inline def setSelectionStrategy(value: typings.orientjs.mod.Topology.OCluster => OServerNode): Self = StObject.set(x, "selectionStrategy", js.Any.fromFunction1(value))
     }
   }
 }

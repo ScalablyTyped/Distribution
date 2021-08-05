@@ -18,25 +18,19 @@ trait OverrideAction extends StObject {
 }
 object OverrideAction {
   
-  @scala.inline
-  def apply(): OverrideAction = {
+  inline def apply(): OverrideAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverrideAction]
   }
   
-  @scala.inline
-  implicit class OverrideActionMutableBuilder[Self <: OverrideAction] (val x: Self) extends AnyVal {
+  extension [Self <: OverrideAction](x: Self) {
     
-    @scala.inline
-    def setCount(value: CountAction): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: CountAction): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setNone(value: NoneAction): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+    inline def setNone(value: NoneAction): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoneUndefined: Self = StObject.set(x, "None", js.undefined)
+    inline def setNoneUndefined: Self = StObject.set(x, "None", js.undefined)
   }
 }

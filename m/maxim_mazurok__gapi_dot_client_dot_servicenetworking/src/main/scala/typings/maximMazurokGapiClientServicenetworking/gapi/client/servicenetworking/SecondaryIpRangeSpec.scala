@@ -23,31 +23,23 @@ trait SecondaryIpRangeSpec extends StObject {
 }
 object SecondaryIpRangeSpec {
   
-  @scala.inline
-  def apply(): SecondaryIpRangeSpec = {
+  inline def apply(): SecondaryIpRangeSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecondaryIpRangeSpec]
   }
   
-  @scala.inline
-  implicit class SecondaryIpRangeSpecMutableBuilder[Self <: SecondaryIpRangeSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SecondaryIpRangeSpec](x: Self) {
     
-    @scala.inline
-    def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
+    inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
+    inline def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
     
-    @scala.inline
-    def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
+    inline def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeNameUndefined: Self = StObject.set(x, "rangeName", js.undefined)
+    inline def setRangeNameUndefined: Self = StObject.set(x, "rangeName", js.undefined)
     
-    @scala.inline
-    def setRequestedAddress(value: String): Self = StObject.set(x, "requestedAddress", value.asInstanceOf[js.Any])
+    inline def setRequestedAddress(value: String): Self = StObject.set(x, "requestedAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedAddressUndefined: Self = StObject.set(x, "requestedAddress", js.undefined)
+    inline def setRequestedAddressUndefined: Self = StObject.set(x, "requestedAddress", js.undefined)
   }
 }

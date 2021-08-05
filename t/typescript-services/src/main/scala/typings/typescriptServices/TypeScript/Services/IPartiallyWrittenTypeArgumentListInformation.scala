@@ -15,22 +15,17 @@ trait IPartiallyWrittenTypeArgumentListInformation extends StObject {
 }
 object IPartiallyWrittenTypeArgumentListInformation {
   
-  @scala.inline
-  def apply(argumentIndex: Double, genericIdentifer: PositionedToken, lessThanToken: PositionedToken): IPartiallyWrittenTypeArgumentListInformation = {
+  inline def apply(argumentIndex: Double, genericIdentifer: PositionedToken, lessThanToken: PositionedToken): IPartiallyWrittenTypeArgumentListInformation = {
     val __obj = js.Dynamic.literal(argumentIndex = argumentIndex.asInstanceOf[js.Any], genericIdentifer = genericIdentifer.asInstanceOf[js.Any], lessThanToken = lessThanToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPartiallyWrittenTypeArgumentListInformation]
   }
   
-  @scala.inline
-  implicit class IPartiallyWrittenTypeArgumentListInformationMutableBuilder[Self <: IPartiallyWrittenTypeArgumentListInformation] (val x: Self) extends AnyVal {
+  extension [Self <: IPartiallyWrittenTypeArgumentListInformation](x: Self) {
     
-    @scala.inline
-    def setArgumentIndex(value: Double): Self = StObject.set(x, "argumentIndex", value.asInstanceOf[js.Any])
+    inline def setArgumentIndex(value: Double): Self = StObject.set(x, "argumentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericIdentifer(value: PositionedToken): Self = StObject.set(x, "genericIdentifer", value.asInstanceOf[js.Any])
+    inline def setGenericIdentifer(value: PositionedToken): Self = StObject.set(x, "genericIdentifer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanToken(value: PositionedToken): Self = StObject.set(x, "lessThanToken", value.asInstanceOf[js.Any])
+    inline def setLessThanToken(value: PositionedToken): Self = StObject.set(x, "lessThanToken", value.asInstanceOf[js.Any])
   }
 }

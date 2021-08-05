@@ -20,28 +20,21 @@ trait GistsUpdateEndpoint extends StObject {
 }
 object GistsUpdateEndpoint {
   
-  @scala.inline
-  def apply(gist_id: String): GistsUpdateEndpoint = {
+  inline def apply(gist_id: String): GistsUpdateEndpoint = {
     val __obj = js.Dynamic.literal(gist_id = gist_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsUpdateEndpoint]
   }
   
-  @scala.inline
-  implicit class GistsUpdateEndpointMutableBuilder[Self <: GistsUpdateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GistsUpdateEndpoint](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFiles(value: GistsUpdateParamsFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: GistsUpdateParamsFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
+    inline def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }
 }

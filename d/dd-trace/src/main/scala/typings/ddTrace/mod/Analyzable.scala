@@ -17,19 +17,15 @@ trait Analyzable extends StObject {
 }
 object Analyzable {
   
-  @scala.inline
-  def apply(): Analyzable = {
+  inline def apply(): Analyzable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Analyzable]
   }
   
-  @scala.inline
-  implicit class AnalyzableMutableBuilder[Self <: Analyzable] (val x: Self) extends AnyVal {
+  extension [Self <: Analyzable](x: Self) {
     
-    @scala.inline
-    def setAnalytics(value: Boolean | Double | (StringDictionary[Boolean | Double])): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+    inline def setAnalytics(value: Boolean | Double | (StringDictionary[Boolean | Double])): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
+    inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
   }
 }

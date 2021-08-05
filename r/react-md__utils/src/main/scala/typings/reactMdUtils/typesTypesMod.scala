@@ -23,26 +23,20 @@ object typesTypesMod {
   }
   object LabelA11y {
     
-    @scala.inline
-    def apply(): LabelA11y = {
+    inline def apply(): LabelA11y = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelA11y]
     }
     
-    @scala.inline
-    implicit class LabelA11yMutableBuilder[Self <: LabelA11y] (val x: Self) extends AnyVal {
+    extension [Self <: LabelA11y](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
     }
   }
   

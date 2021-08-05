@@ -23,25 +23,19 @@ trait RobotApplicationConfig extends StObject {
 }
 object RobotApplicationConfig {
   
-  @scala.inline
-  def apply(application: Arn, launchConfig: LaunchConfig): RobotApplicationConfig = {
+  inline def apply(application: Arn, launchConfig: LaunchConfig): RobotApplicationConfig = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], launchConfig = launchConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[RobotApplicationConfig]
   }
   
-  @scala.inline
-  implicit class RobotApplicationConfigMutableBuilder[Self <: RobotApplicationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RobotApplicationConfig](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersion(value: Version): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: Version): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
+    inline def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
-    @scala.inline
-    def setLaunchConfig(value: LaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
+    inline def setLaunchConfig(value: LaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait GetServersRequest extends StObject {
 }
 object GetServersRequest {
   
-  @scala.inline
-  def apply(): GetServersRequest = {
+  inline def apply(): GetServersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetServersRequest]
   }
   
-  @scala.inline
-  implicit class GetServersRequestMutableBuilder[Self <: GetServersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetServersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVmServerAddressList(value: VmServerAddressList): Self = StObject.set(x, "vmServerAddressList", value.asInstanceOf[js.Any])
+    inline def setVmServerAddressList(value: VmServerAddressList): Self = StObject.set(x, "vmServerAddressList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmServerAddressListUndefined: Self = StObject.set(x, "vmServerAddressList", js.undefined)
+    inline def setVmServerAddressListUndefined: Self = StObject.set(x, "vmServerAddressList", js.undefined)
     
-    @scala.inline
-    def setVmServerAddressListVarargs(value: VmServerAddress*): Self = StObject.set(x, "vmServerAddressList", js.Array(value :_*))
+    inline def setVmServerAddressListVarargs(value: VmServerAddress*): Self = StObject.set(x, "vmServerAddressList", js.Array(value :_*))
   }
 }

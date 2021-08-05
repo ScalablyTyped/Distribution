@@ -652,8 +652,7 @@ object mod {
   }
   object UITreeBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appendNode: /* repeated */ js.Any => UITreeNode,
       foldNode: String => Unit,
       foldNodeAll: String => Unit,
@@ -673,50 +672,35 @@ object mod {
       __obj.asInstanceOf[UITreeBase]
     }
     
-    @scala.inline
-    implicit class UITreeBaseMutableBuilder[Self <: UITreeBase] (val x: Self) extends AnyVal {
+    extension [Self <: UITreeBase](x: Self) {
       
-      @scala.inline
-      def setAppendNode(value: /* repeated */ js.Any => UITreeNode): Self = StObject.set(x, "appendNode", js.Any.fromFunction1(value))
+      inline def setAppendNode(value: /* repeated */ js.Any => UITreeNode): Self = StObject.set(x, "appendNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFoldNode(value: String => Unit): Self = StObject.set(x, "foldNode", js.Any.fromFunction1(value))
+      inline def setFoldNode(value: String => Unit): Self = StObject.set(x, "foldNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFoldNodeAll(value: String => Unit): Self = StObject.set(x, "foldNodeAll", js.Any.fromFunction1(value))
+      inline def setFoldNodeAll(value: String => Unit): Self = StObject.set(x, "foldNodeAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNode(value: String => UITreeNode): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
+      inline def setGetNode(value: String => UITreeNode): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNodeAll(value: String => js.Array[UITreeNode]): Self = StObject.set(x, "getNodeAll", js.Any.fromFunction1(value))
+      inline def setGetNodeAll(value: String => js.Array[UITreeNode]): Self = StObject.set(x, "getNodeAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNodeParent(value: String => UITreeNode): Self = StObject.set(x, "getNodeParent", js.Any.fromFunction1(value))
+      inline def setGetNodeParent(value: String => UITreeNode): Self = StObject.set(x, "getNodeParent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRoot(value: () => UITreeNode): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+      inline def setGetRoot(value: () => UITreeNode): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInsertNode(value: (String, js.Any) => UITreeNode): Self = StObject.set(x, "insertNode", js.Any.fromFunction2(value))
+      inline def setInsertNode(value: (String, js.Any) => UITreeNode): Self = StObject.set(x, "insertNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMoveNode(value: (String, Double) => Unit): Self = StObject.set(x, "moveNode", js.Any.fromFunction2(value))
+      inline def setMoveNode(value: (String, Double) => Unit): Self = StObject.set(x, "moveNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpenNode(value: String => Unit): Self = StObject.set(x, "openNode", js.Any.fromFunction1(value))
+      inline def setOpenNode(value: String => Unit): Self = StObject.set(x, "openNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenNodeAll(value: String => Unit): Self = StObject.set(x, "openNodeAll", js.Any.fromFunction1(value))
+      inline def setOpenNodeAll(value: String => Unit): Self = StObject.set(x, "openNodeAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveNode(value: String => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
+      inline def setRemoveNode(value: String => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveNodes(value: () => Unit): Self = StObject.set(x, "removeNodes", js.Any.fromFunction0(value))
+      inline def setRemoveNodes(value: () => Unit): Self = StObject.set(x, "removeNodes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateNode(value: (String, js.Any) => UITreeNode): Self = StObject.set(x, "updateNode", js.Any.fromFunction2(value))
+      inline def setUpdateNode(value: (String, js.Any) => UITreeNode): Self = StObject.set(x, "updateNode", js.Any.fromFunction2(value))
     }
   }
   
@@ -748,68 +732,48 @@ object mod {
   }
   object UITreeNode {
     
-    @scala.inline
-    def apply(): UITreeNode = {
+    inline def apply(): UITreeNode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UITreeNode]
     }
     
-    @scala.inline
-    implicit class UITreeNodeMutableBuilder[Self <: UITreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: UITreeNode](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[UITreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[UITreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: UITreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: UITreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setNodenum(value: Double): Self = StObject.set(x, "nodenum", value.asInstanceOf[js.Any])
+      inline def setNodenum(value: Double): Self = StObject.set(x, "nodenum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodenumUndefined: Self = StObject.set(x, "nodenum", js.undefined)
+      inline def setNodenumUndefined: Self = StObject.set(x, "nodenum", js.undefined)
       
-      @scala.inline
-      def setParent(value: UITreeNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: UITreeNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

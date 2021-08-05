@@ -10,19 +10,15 @@ trait NearestResults extends StObject {
 }
 object NearestResults {
   
-  @scala.inline
-  def apply(waypoints: js.Array[Waypoint]): NearestResults = {
+  inline def apply(waypoints: js.Array[Waypoint]): NearestResults = {
     val __obj = js.Dynamic.literal(waypoints = waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestResults]
   }
   
-  @scala.inline
-  implicit class NearestResultsMutableBuilder[Self <: NearestResults] (val x: Self) extends AnyVal {
+  extension [Self <: NearestResults](x: Self) {
     
-    @scala.inline
-    def setWaypoints(value: js.Array[Waypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[Waypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsVarargs(value: Waypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: Waypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DropOffBoardType extends StObject
 object DropOffBoardType {
   
-  @scala.inline
-  def snapback: typings.chessboardjs.chessboardjsStrings.snapback = "snapback".asInstanceOf[typings.chessboardjs.chessboardjsStrings.snapback]
+  inline def snapback: typings.chessboardjs.chessboardjsStrings.snapback = "snapback".asInstanceOf[typings.chessboardjs.chessboardjsStrings.snapback]
   
-  @scala.inline
-  def trash: typings.chessboardjs.chessboardjsStrings.trash = "trash".asInstanceOf[typings.chessboardjs.chessboardjsStrings.trash]
+  inline def trash: typings.chessboardjs.chessboardjsStrings.trash = "trash".asInstanceOf[typings.chessboardjs.chessboardjsStrings.trash]
 }

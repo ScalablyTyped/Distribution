@@ -43,29 +43,22 @@ object v1beta1 {
   }
   object HTTPIngressPath {
     
-    @scala.inline
-    def apply(backend: Input[IngressBackend]): HTTPIngressPath = {
+    inline def apply(backend: Input[IngressBackend]): HTTPIngressPath = {
       val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTTPIngressPath]
     }
     
-    @scala.inline
-    implicit class HTTPIngressPathMutableBuilder[Self <: HTTPIngressPath] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPIngressPath](x: Self) {
       
-      @scala.inline
-      def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathType(value: Input[String]): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
+      inline def setPathType(value: Input[String]): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathTypeUndefined: Self = StObject.set(x, "pathType", js.undefined)
+      inline def setPathTypeUndefined: Self = StObject.set(x, "pathType", js.undefined)
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -81,20 +74,16 @@ object v1beta1 {
   }
   object HTTPIngressRuleValue {
     
-    @scala.inline
-    def apply(paths: Input[js.Array[Input[HTTPIngressPath]]]): HTTPIngressRuleValue = {
+    inline def apply(paths: Input[js.Array[Input[HTTPIngressPath]]]): HTTPIngressRuleValue = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTTPIngressRuleValue]
     }
     
-    @scala.inline
-    implicit class HTTPIngressRuleValueMutableBuilder[Self <: HTTPIngressRuleValue] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPIngressRuleValue](x: Self) {
       
-      @scala.inline
-      def setPaths(value: Input[js.Array[Input[HTTPIngressPath]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: Input[js.Array[Input[HTTPIngressPath]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: Input[HTTPIngressPath]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: Input[HTTPIngressPath]*): Self = StObject.set(x, "paths", js.Array(value :_*))
     }
   }
   
@@ -144,44 +133,32 @@ object v1beta1 {
   }
   object Ingress {
     
-    @scala.inline
-    def apply(): Ingress = {
+    inline def apply(): Ingress = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ingress]
     }
     
-    @scala.inline
-    implicit class IngressMutableBuilder[Self <: Ingress] (val x: Self) extends AnyVal {
+    extension [Self <: Ingress](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[networkingDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[networkingDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Ingress]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Ingress]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSpec(value: Input[IngressSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Input[IngressSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+      inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[IngressStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[IngressStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -207,26 +184,20 @@ object v1beta1 {
   }
   object IngressBackend {
     
-    @scala.inline
-    def apply(serviceName: Input[String], servicePort: Input[Double | String]): IngressBackend = {
+    inline def apply(serviceName: Input[String], servicePort: Input[Double | String]): IngressBackend = {
       val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], servicePort = servicePort.asInstanceOf[js.Any])
       __obj.asInstanceOf[IngressBackend]
     }
     
-    @scala.inline
-    implicit class IngressBackendMutableBuilder[Self <: IngressBackend] (val x: Self) extends AnyVal {
+    extension [Self <: IngressBackend](x: Self) {
       
-      @scala.inline
-      def setResource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicePort(value: Input[Double | String]): Self = StObject.set(x, "servicePort", value.asInstanceOf[js.Any])
+      inline def setServicePort(value: Input[Double | String]): Self = StObject.set(x, "servicePort", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,38 +228,28 @@ object v1beta1 {
   }
   object IngressClass {
     
-    @scala.inline
-    def apply(): IngressClass = {
+    inline def apply(): IngressClass = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IngressClass]
     }
     
-    @scala.inline
-    implicit class IngressClassMutableBuilder[Self <: IngressClass] (val x: Self) extends AnyVal {
+    extension [Self <: IngressClass](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[networkingDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[networkingDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.IngressClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.IngressClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSpec(value: Input[IngressClassSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Input[IngressClassSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+      inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
     }
   }
   
@@ -309,26 +270,20 @@ object v1beta1 {
   }
   object IngressClassSpec {
     
-    @scala.inline
-    def apply(): IngressClassSpec = {
+    inline def apply(): IngressClassSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IngressClassSpec]
     }
     
-    @scala.inline
-    implicit class IngressClassSpecMutableBuilder[Self <: IngressClassSpec] (val x: Self) extends AnyVal {
+    extension [Self <: IngressClassSpec](x: Self) {
       
-      @scala.inline
-      def setController(value: Input[String]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: Input[String]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+      inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     }
   }
   
@@ -353,26 +308,20 @@ object v1beta1 {
   }
   object IngressRule {
     
-    @scala.inline
-    def apply(): IngressRule = {
+    inline def apply(): IngressRule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IngressRule]
     }
     
-    @scala.inline
-    implicit class IngressRuleMutableBuilder[Self <: IngressRule] (val x: Self) extends AnyVal {
+    extension [Self <: IngressRule](x: Self) {
       
-      @scala.inline
-      def setHost(value: Input[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: Input[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setHttp(value: Input[HTTPIngressRuleValue]): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Input[HTTPIngressRuleValue]): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     }
   }
   
@@ -403,44 +352,32 @@ object v1beta1 {
   }
   object IngressSpec {
     
-    @scala.inline
-    def apply(): IngressSpec = {
+    inline def apply(): IngressSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IngressSpec]
     }
     
-    @scala.inline
-    implicit class IngressSpecMutableBuilder[Self <: IngressSpec] (val x: Self) extends AnyVal {
+    extension [Self <: IngressSpec](x: Self) {
       
-      @scala.inline
-      def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+      inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       
-      @scala.inline
-      def setIngressClassName(value: Input[String]): Self = StObject.set(x, "ingressClassName", value.asInstanceOf[js.Any])
+      inline def setIngressClassName(value: Input[String]): Self = StObject.set(x, "ingressClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIngressClassNameUndefined: Self = StObject.set(x, "ingressClassName", js.undefined)
+      inline def setIngressClassNameUndefined: Self = StObject.set(x, "ingressClassName", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[IngressRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[IngressRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[IngressRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[IngressRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setTls(value: Input[js.Array[Input[IngressTLS]]]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Input[js.Array[Input[IngressTLS]]]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setTlsVarargs(value: Input[IngressTLS]*): Self = StObject.set(x, "tls", js.Array(value :_*))
+      inline def setTlsVarargs(value: Input[IngressTLS]*): Self = StObject.set(x, "tls", js.Array(value :_*))
     }
   }
   
@@ -456,20 +393,16 @@ object v1beta1 {
   }
   object IngressStatus {
     
-    @scala.inline
-    def apply(): IngressStatus = {
+    inline def apply(): IngressStatus = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IngressStatus]
     }
     
-    @scala.inline
-    implicit class IngressStatusMutableBuilder[Self <: IngressStatus] (val x: Self) extends AnyVal {
+    extension [Self <: IngressStatus](x: Self) {
       
-      @scala.inline
-      def setLoadBalancer(value: Input[LoadBalancerStatus]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+      inline def setLoadBalancer(value: Input[LoadBalancerStatus]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
+      inline def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
     }
   }
   
@@ -490,29 +423,22 @@ object v1beta1 {
   }
   object IngressTLS {
     
-    @scala.inline
-    def apply(): IngressTLS = {
+    inline def apply(): IngressTLS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IngressTLS]
     }
     
-    @scala.inline
-    implicit class IngressTLSMutableBuilder[Self <: IngressTLS] (val x: Self) extends AnyVal {
+    extension [Self <: IngressTLS](x: Self) {
       
-      @scala.inline
-      def setHosts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+      inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      @scala.inline
-      def setHostsVarargs(value: Input[String]*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: Input[String]*): Self = StObject.set(x, "hosts", js.Array(value :_*))
       
-      @scala.inline
-      def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
+      inline def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretNameUndefined: Self = StObject.set(x, "secretName", js.undefined)
+      inline def setSecretNameUndefined: Self = StObject.set(x, "secretName", js.undefined)
     }
   }
 }

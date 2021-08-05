@@ -25,65 +25,46 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+      inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
       
-      @scala.inline
-      def setErrorTolerance(value: Double): Self = StObject.set(x, "errorTolerance", value.asInstanceOf[js.Any])
+      inline def setErrorTolerance(value: Double): Self = StObject.set(x, "errorTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorToleranceUndefined: Self = StObject.set(x, "errorTolerance", js.undefined)
+      inline def setErrorToleranceUndefined: Self = StObject.set(x, "errorTolerance", js.undefined)
       
-      @scala.inline
-      def setGradientDifference(value: Double): Self = StObject.set(x, "gradientDifference", value.asInstanceOf[js.Any])
+      inline def setGradientDifference(value: Double): Self = StObject.set(x, "gradientDifference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientDifferenceUndefined: Self = StObject.set(x, "gradientDifference", js.undefined)
+      inline def setGradientDifferenceUndefined: Self = StObject.set(x, "gradientDifference", js.undefined)
       
-      @scala.inline
-      def setInitialValues(value: js.Array[Double]): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+      inline def setInitialValues(value: js.Array[Double]): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
+      inline def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
       
-      @scala.inline
-      def setInitialValuesVarargs(value: Double*): Self = StObject.set(x, "initialValues", js.Array(value :_*))
+      inline def setInitialValuesVarargs(value: Double*): Self = StObject.set(x, "initialValues", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
+      inline def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
+      inline def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
       
-      @scala.inline
-      def setMaxValue(value: js.Array[Double]): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: js.Array[Double]): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+      inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
       
-      @scala.inline
-      def setMaxValueVarargs(value: Double*): Self = StObject.set(x, "maxValue", js.Array(value :_*))
+      inline def setMaxValueVarargs(value: Double*): Self = StObject.set(x, "maxValue", js.Array(value :_*))
       
-      @scala.inline
-      def setMinValue(value: js.Array[Double]): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: js.Array[Double]): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+      inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
       
-      @scala.inline
-      def setMinValueVarargs(value: Double*): Self = StObject.set(x, "minValue", js.Array(value :_*))
+      inline def setMinValueVarargs(value: Double*): Self = StObject.set(x, "minValue", js.Array(value :_*))
     }
   }
 }

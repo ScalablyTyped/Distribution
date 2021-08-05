@@ -99,8 +99,7 @@ object ViewManagement {
     /**
       * Gets the window (app view) for the current app.
       **/
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.UI.ViewManagement.ApplicationView = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.ViewManagement.ApplicationView]
+    inline def getForCurrentView(): typings.winrt.Windows.UI.ViewManagement.ApplicationView = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.ViewManagement.ApplicationView]
     
     /**
       * Indicates whether the app terminates when the last window is closed.
@@ -108,14 +107,12 @@ object ViewManagement {
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.terminateAppOnFinalViewClose")
     @js.native
     def terminateAppOnFinalViewClose: Boolean = js.native
-    @scala.inline
-    def terminateAppOnFinalViewClose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("terminateAppOnFinalViewClose")(x.asInstanceOf[js.Any])
+    inline def terminateAppOnFinalViewClose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("terminateAppOnFinalViewClose")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to unsnap a previously snapped app. This call will only succeed when the app is running in the foreground.
       **/
-    @scala.inline
-    def tryUnsnap(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryUnsnap")().asInstanceOf[Boolean]
+    inline def tryUnsnap(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryUnsnap")().asInstanceOf[Boolean]
     
     /**
       * Gets the state of the current app view.
@@ -123,8 +120,7 @@ object ViewManagement {
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.value")
     @js.native
     def value: ApplicationViewState = js.native
-    @scala.inline
-    def value_=(x: ApplicationViewState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    inline def value_=(x: ApplicationViewState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.ViewManagement.ApplicationViewOrientation")
@@ -268,8 +264,7 @@ object ViewManagement {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.UI.ViewManagement.InputPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.ViewManagement.InputPane]
+    inline def getForCurrentView(): typings.winrt.Windows.UI.ViewManagement.InputPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.ViewManagement.InputPane]
   }
   
   @JSGlobal("Windows.UI.ViewManagement.InputPaneVisibilityEventArgs")

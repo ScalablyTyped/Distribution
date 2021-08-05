@@ -34,8 +34,7 @@ trait XToolkitExperimental
 }
 object XToolkitExperimental {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveTopWindow: XTopWindow,
     DesktopWindow: XWindowPeer,
     OpenGLBufferSwapCounter: Double,
@@ -77,22 +76,16 @@ object XToolkitExperimental {
     __obj.asInstanceOf[XToolkitExperimental]
   }
   
-  @scala.inline
-  implicit class XToolkitExperimentalMutableBuilder[Self <: XToolkitExperimental] (val x: Self) extends AnyVal {
+  extension [Self <: XToolkitExperimental](x: Self) {
     
-    @scala.inline
-    def setGetOpenGLBufferSwapCounter(value: () => Double): Self = StObject.set(x, "getOpenGLBufferSwapCounter", js.Any.fromFunction0(value))
+    inline def setGetOpenGLBufferSwapCounter(value: () => Double): Self = StObject.set(x, "getOpenGLBufferSwapCounter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenGLBufferSwapCounter(value: Double): Self = StObject.set(x, "OpenGLBufferSwapCounter", value.asInstanceOf[js.Any])
+    inline def setOpenGLBufferSwapCounter(value: Double): Self = StObject.set(x, "OpenGLBufferSwapCounter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: Double => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
+    inline def setPause(value: Double => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessEventsToIdle(value: () => Unit): Self = StObject.set(x, "processEventsToIdle", js.Any.fromFunction0(value))
+    inline def setProcessEventsToIdle(value: () => Unit): Self = StObject.set(x, "processEventsToIdle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDeterministicScheduling(value: Boolean => Unit): Self = StObject.set(x, "setDeterministicScheduling", js.Any.fromFunction1(value))
+    inline def setSetDeterministicScheduling(value: Boolean => Unit): Self = StObject.set(x, "setDeterministicScheduling", js.Any.fromFunction1(value))
   }
 }

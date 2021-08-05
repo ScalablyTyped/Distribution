@@ -11,16 +11,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def get(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Null]
-  @scala.inline
-  def get(domain: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(domain.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def get(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Null]
+  inline def get(domain: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(domain.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def isValid(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parse(domain: String): ParsedDomain | ParseError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(domain.asInstanceOf[js.Any]).asInstanceOf[ParsedDomain | ParseError]
+  inline def parse(domain: String): ParsedDomain | ParseError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(domain.asInstanceOf[js.Any]).asInstanceOf[ParsedDomain | ParseError]
   
   trait ParseError extends StObject {
     
@@ -30,20 +26,16 @@ object mod {
   }
   object ParseError {
     
-    @scala.inline
-    def apply(error: Code, input: String): ParseError = {
+    inline def apply(error: Code, input: String): ParseError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseError]
     }
     
-    @scala.inline
-    implicit class ParseErrorMutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
+    extension [Self <: ParseError](x: Self) {
       
-      @scala.inline
-      def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,47 +57,34 @@ object mod {
   }
   object ParsedDomain {
     
-    @scala.inline
-    def apply(error: Unit, input: String, listed: Boolean): ParsedDomain = {
+    inline def apply(error: Unit, input: String, listed: Boolean): ParsedDomain = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], listed = listed.asInstanceOf[js.Any], domain = null, sld = null, subdomain = null, tld = null)
       __obj.asInstanceOf[ParsedDomain]
     }
     
-    @scala.inline
-    implicit class ParsedDomainMutableBuilder[Self <: ParsedDomain] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedDomain](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNull: Self = StObject.set(x, "domain", null)
+      inline def setDomainNull: Self = StObject.set(x, "domain", null)
       
-      @scala.inline
-      def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListed(value: Boolean): Self = StObject.set(x, "listed", value.asInstanceOf[js.Any])
+      inline def setListed(value: Boolean): Self = StObject.set(x, "listed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSld(value: String): Self = StObject.set(x, "sld", value.asInstanceOf[js.Any])
+      inline def setSld(value: String): Self = StObject.set(x, "sld", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSldNull: Self = StObject.set(x, "sld", null)
+      inline def setSldNull: Self = StObject.set(x, "sld", null)
       
-      @scala.inline
-      def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
+      inline def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdomainNull: Self = StObject.set(x, "subdomain", null)
+      inline def setSubdomainNull: Self = StObject.set(x, "subdomain", null)
       
-      @scala.inline
-      def setTld(value: String): Self = StObject.set(x, "tld", value.asInstanceOf[js.Any])
+      inline def setTld(value: String): Self = StObject.set(x, "tld", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTldNull: Self = StObject.set(x, "tld", null)
+      inline def setTldNull: Self = StObject.set(x, "tld", null)
     }
   }
 }

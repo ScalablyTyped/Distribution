@@ -17,13 +17,10 @@ trait SnapObjectType extends StObject
 object SnapObjectType {
   
   /** mirror to the horizontal axis */
-  @scala.inline
-  def HORIZONTAL: `2` = 2.asInstanceOf[`2`]
+  inline def HORIZONTAL: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def POINT: `0` = 0.asInstanceOf[`0`]
+  inline def POINT: `0` = 0.asInstanceOf[`0`]
   
   /** mirror to the vertical axis */
-  @scala.inline
-  def VERTICAL: `1` = 1.asInstanceOf[`1`]
+  inline def VERTICAL: `1` = 1.asInstanceOf[`1`]
 }

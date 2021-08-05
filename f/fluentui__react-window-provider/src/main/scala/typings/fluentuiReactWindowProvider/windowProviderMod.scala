@@ -22,11 +22,9 @@ object windowProviderMod {
   @js.native
   val WindowProvider: FunctionComponent[WindowProviderProps] = js.native
   
-  @scala.inline
-  def useDocument(): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDocument")().asInstanceOf[js.UndefOr[Document]]
+  inline def useDocument(): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDocument")().asInstanceOf[js.UndefOr[Document]]
   
-  @scala.inline
-  def useWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindow")().asInstanceOf[js.UndefOr[Window]]
+  inline def useWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindow")().asInstanceOf[js.UndefOr[Window]]
   
   trait WindowProviderProps extends StObject {
     
@@ -37,20 +35,16 @@ object windowProviderMod {
   }
   object WindowProviderProps {
     
-    @scala.inline
-    def apply(): WindowProviderProps = {
+    inline def apply(): WindowProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WindowProviderProps]
     }
     
-    @scala.inline
-    implicit class WindowProviderPropsMutableBuilder[Self <: WindowProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: WindowProviderProps](x: Self) {
       
-      @scala.inline
-      def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
 }

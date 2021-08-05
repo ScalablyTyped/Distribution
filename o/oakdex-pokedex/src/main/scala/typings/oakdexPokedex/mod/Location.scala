@@ -12,22 +12,17 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(names: Translations, pokemon: js.Array[LocationPokemon]): Location = {
+  inline def apply(names: Translations, pokemon: js.Array[LocationPokemon]): Location = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], pokemon = pokemon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPokemon(value: js.Array[LocationPokemon]): Self = StObject.set(x, "pokemon", value.asInstanceOf[js.Any])
+    inline def setPokemon(value: js.Array[LocationPokemon]): Self = StObject.set(x, "pokemon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPokemonVarargs(value: LocationPokemon*): Self = StObject.set(x, "pokemon", js.Array(value :_*))
+    inline def setPokemonVarargs(value: LocationPokemon*): Self = StObject.set(x, "pokemon", js.Array(value :_*))
   }
 }

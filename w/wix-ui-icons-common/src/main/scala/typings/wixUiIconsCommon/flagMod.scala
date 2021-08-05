@@ -22,20 +22,16 @@ object flagMod extends Shortcut {
   }
   object FlagProps {
     
-    @scala.inline
-    def apply(): FlagProps = {
+    inline def apply(): FlagProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlagProps]
     }
     
-    @scala.inline
-    implicit class FlagPropsMutableBuilder[Self <: FlagProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlagProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

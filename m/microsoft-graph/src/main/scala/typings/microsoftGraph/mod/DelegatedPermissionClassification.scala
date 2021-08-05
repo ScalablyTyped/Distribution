@@ -16,40 +16,29 @@ trait DelegatedPermissionClassification
 }
 object DelegatedPermissionClassification {
   
-  @scala.inline
-  def apply(): DelegatedPermissionClassification = {
+  inline def apply(): DelegatedPermissionClassification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DelegatedPermissionClassification]
   }
   
-  @scala.inline
-  implicit class DelegatedPermissionClassificationMutableBuilder[Self <: DelegatedPermissionClassification] (val x: Self) extends AnyVal {
+  extension [Self <: DelegatedPermissionClassification](x: Self) {
     
-    @scala.inline
-    def setClassification(value: NullableOption[PermissionClassificationType]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: NullableOption[PermissionClassificationType]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationNull: Self = StObject.set(x, "classification", null)
+    inline def setClassificationNull: Self = StObject.set(x, "classification", null)
     
-    @scala.inline
-    def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
+    inline def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
     
-    @scala.inline
-    def setPermissionId(value: NullableOption[String]): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+    inline def setPermissionId(value: NullableOption[String]): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionIdNull: Self = StObject.set(x, "permissionId", null)
+    inline def setPermissionIdNull: Self = StObject.set(x, "permissionId", null)
     
-    @scala.inline
-    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+    inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
-    @scala.inline
-    def setPermissionName(value: NullableOption[String]): Self = StObject.set(x, "permissionName", value.asInstanceOf[js.Any])
+    inline def setPermissionName(value: NullableOption[String]): Self = StObject.set(x, "permissionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionNameNull: Self = StObject.set(x, "permissionName", null)
+    inline def setPermissionNameNull: Self = StObject.set(x, "permissionName", null)
     
-    @scala.inline
-    def setPermissionNameUndefined: Self = StObject.set(x, "permissionName", js.undefined)
+    inline def setPermissionNameUndefined: Self = StObject.set(x, "permissionName", js.undefined)
   }
 }

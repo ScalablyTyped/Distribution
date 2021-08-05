@@ -10,16 +10,13 @@ trait TimeoutNumber extends StObject {
 }
 object TimeoutNumber {
   
-  @scala.inline
-  def apply(timeout: Double): TimeoutNumber = {
+  inline def apply(timeout: Double): TimeoutNumber = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeoutNumber]
   }
   
-  @scala.inline
-  implicit class TimeoutNumberMutableBuilder[Self <: TimeoutNumber] (val x: Self) extends AnyVal {
+  extension [Self <: TimeoutNumber](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

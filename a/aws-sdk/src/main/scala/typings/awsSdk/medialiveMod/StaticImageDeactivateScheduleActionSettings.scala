@@ -18,25 +18,19 @@ trait StaticImageDeactivateScheduleActionSettings extends StObject {
 }
 object StaticImageDeactivateScheduleActionSettings {
   
-  @scala.inline
-  def apply(): StaticImageDeactivateScheduleActionSettings = {
+  inline def apply(): StaticImageDeactivateScheduleActionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StaticImageDeactivateScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class StaticImageDeactivateScheduleActionSettingsMutableBuilder[Self <: StaticImageDeactivateScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: StaticImageDeactivateScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setFadeOut(value: integerMin0): Self = StObject.set(x, "FadeOut", value.asInstanceOf[js.Any])
+    inline def setFadeOut(value: integerMin0): Self = StObject.set(x, "FadeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeOutUndefined: Self = StObject.set(x, "FadeOut", js.undefined)
+    inline def setFadeOutUndefined: Self = StObject.set(x, "FadeOut", js.undefined)
     
-    @scala.inline
-    def setLayer(value: integerMin0Max7): Self = StObject.set(x, "Layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: integerMin0Max7): Self = StObject.set(x, "Layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "Layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "Layer", js.undefined)
   }
 }

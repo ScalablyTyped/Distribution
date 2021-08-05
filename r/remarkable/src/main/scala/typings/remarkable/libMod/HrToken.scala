@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object HrToken {
   
-  @scala.inline
-  def apply(level: Double): HrToken = {
+  inline def apply(level: Double): HrToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("hr")
     __obj.asInstanceOf[HrToken]
   }
   
-  @scala.inline
-  implicit class HrTokenMutableBuilder[Self <: HrToken] (val x: Self) extends AnyVal {
+  extension [Self <: HrToken](x: Self) {
     
-    @scala.inline
-    def setType(value: hr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: hr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

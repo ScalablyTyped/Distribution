@@ -39,48 +39,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMousePointer extends StObject
 object OlMousePointer {
   
-  @scala.inline
-  def olMousePointerAppStarting: `13` = 13.asInstanceOf[`13`]
+  inline def olMousePointerAppStarting: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def olMousePointerArrow: `1` = 1.asInstanceOf[`1`]
+  inline def olMousePointerArrow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olMousePointerCross: `2` = 2.asInstanceOf[`2`]
+  inline def olMousePointerCross: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olMousePointerCustom: `99` = 99.asInstanceOf[`99`]
+  inline def olMousePointerCustom: `99` = 99.asInstanceOf[`99`]
   
-  @scala.inline
-  def olMousePointerDefault: `0` = 0.asInstanceOf[`0`]
+  inline def olMousePointerDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olMousePointerHelp: `14` = 14.asInstanceOf[`14`]
+  inline def olMousePointerHelp: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def olMousePointerHourGlass: `11` = 11.asInstanceOf[`11`]
+  inline def olMousePointerHourGlass: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def olMousePointerIBeam: `3` = 3.asInstanceOf[`3`]
+  inline def olMousePointerIBeam: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olMousePointerNoDrop: `12` = 12.asInstanceOf[`12`]
+  inline def olMousePointerNoDrop: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def olMousePointerSizeAll: `15` = 15.asInstanceOf[`15`]
+  inline def olMousePointerSizeAll: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def olMousePointerSizeNESW: `6` = 6.asInstanceOf[`6`]
+  inline def olMousePointerSizeNESW: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def olMousePointerSizeNS: `7` = 7.asInstanceOf[`7`]
+  inline def olMousePointerSizeNS: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def olMousePointerSizeNWSE: `8` = 8.asInstanceOf[`8`]
+  inline def olMousePointerSizeNWSE: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def olMousePointerSizeWE: `9` = 9.asInstanceOf[`9`]
+  inline def olMousePointerSizeWE: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def olMousePointerUpArrow: `10` = 10.asInstanceOf[`10`]
+  inline def olMousePointerUpArrow: `10` = 10.asInstanceOf[`10`]
 }

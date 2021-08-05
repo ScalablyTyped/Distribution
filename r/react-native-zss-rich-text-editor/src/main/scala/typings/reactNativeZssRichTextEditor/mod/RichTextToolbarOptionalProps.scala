@@ -29,8 +29,7 @@ trait RichTextToolbarOptionalProps extends StObject {
 }
 object RichTextToolbarOptionalProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: js.Array[ACTIONS],
     iconMap: IconsMap,
     iconTint: String,
@@ -43,49 +42,34 @@ object RichTextToolbarOptionalProps {
     __obj.asInstanceOf[RichTextToolbarOptionalProps]
   }
   
-  @scala.inline
-  implicit class RichTextToolbarOptionalPropsMutableBuilder[Self <: RichTextToolbarOptionalProps] (val x: Self) extends AnyVal {
+  extension [Self <: RichTextToolbarOptionalProps](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[ACTIONS]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ACTIONS]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: ACTIONS*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ACTIONS*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setIconMap(value: IconsMap): Self = StObject.set(x, "iconMap", value.asInstanceOf[js.Any])
+    inline def setIconMap(value: IconsMap): Self = StObject.set(x, "iconMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconTint(value: String): Self = StObject.set(x, "iconTint", value.asInstanceOf[js.Any])
+    inline def setIconTint(value: String): Self = StObject.set(x, "iconTint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPressAddImage(value: () => Unit): Self = StObject.set(x, "onPressAddImage", js.Any.fromFunction0(value))
+    inline def setOnPressAddImage(value: () => Unit): Self = StObject.set(x, "onPressAddImage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressAddLink(value: () => Unit): Self = StObject.set(x, "onPressAddLink", js.Any.fromFunction0(value))
+    inline def setOnPressAddLink(value: () => Unit): Self = StObject.set(x, "onPressAddLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderAction(value: () => ReactNode): Self = StObject.set(x, "renderAction", js.Any.fromFunction0(value))
+    inline def setRenderAction(value: () => ReactNode): Self = StObject.set(x, "renderAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedButtonStyle(value: ElementStyles): Self = StObject.set(x, "selectedButtonStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedButtonStyle(value: ElementStyles): Self = StObject.set(x, "selectedButtonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedButtonStyleNull: Self = StObject.set(x, "selectedButtonStyle", null)
+    inline def setSelectedButtonStyleNull: Self = StObject.set(x, "selectedButtonStyle", null)
     
-    @scala.inline
-    def setSelectedButtonStyleUndefined: Self = StObject.set(x, "selectedButtonStyle", js.undefined)
+    inline def setSelectedButtonStyleUndefined: Self = StObject.set(x, "selectedButtonStyle", js.undefined)
     
-    @scala.inline
-    def setSelectedIconTint(value: String): Self = StObject.set(x, "selectedIconTint", value.asInstanceOf[js.Any])
+    inline def setSelectedIconTint(value: String): Self = StObject.set(x, "selectedIconTint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectedButtonStyle(value: ElementStyles): Self = StObject.set(x, "unselectedButtonStyle", value.asInstanceOf[js.Any])
+    inline def setUnselectedButtonStyle(value: ElementStyles): Self = StObject.set(x, "unselectedButtonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectedButtonStyleNull: Self = StObject.set(x, "unselectedButtonStyle", null)
+    inline def setUnselectedButtonStyleNull: Self = StObject.set(x, "unselectedButtonStyle", null)
     
-    @scala.inline
-    def setUnselectedButtonStyleUndefined: Self = StObject.set(x, "unselectedButtonStyle", js.undefined)
+    inline def setUnselectedButtonStyleUndefined: Self = StObject.set(x, "unselectedButtonStyle", js.undefined)
   }
 }

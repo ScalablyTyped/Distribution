@@ -31,8 +31,7 @@ object VisionResponses {
   }
   object Analyze {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adult: AdultScore,
       categories: js.Array[Name],
       color: AccentColor,
@@ -45,35 +44,25 @@ object VisionResponses {
       __obj.asInstanceOf[Analyze]
     }
     
-    @scala.inline
-    implicit class AnalyzeMutableBuilder[Self <: Analyze] (val x: Self) extends AnyVal {
+    extension [Self <: Analyze](x: Self) {
       
-      @scala.inline
-      def setAdult(value: AdultScore): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
+      inline def setAdult(value: AdultScore): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategories(value: js.Array[Name]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[Name]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesVarargs(value: Name*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Name*): Self = StObject.set(x, "categories", js.Array(value :_*))
       
-      @scala.inline
-      def setColor(value: AccentColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: AccentColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaces(value: js.Array[Age]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
+      inline def setFaces(value: js.Array[Age]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacesVarargs(value: Age*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Age*): Self = StObject.set(x, "faces", js.Array(value :_*))
       
-      @scala.inline
-      def setImageType(value: ClipArtType): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+      inline def setImageType(value: ClipArtType): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: Format): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Format): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,29 +78,22 @@ object VisionResponses {
   }
   object Ocr {
     
-    @scala.inline
-    def apply(language: String, orientation: String, regions: js.Array[Lines], textAngle: Double): Ocr = {
+    inline def apply(language: String, orientation: String, regions: js.Array[Lines], textAngle: Double): Ocr = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], regions = regions.asInstanceOf[js.Any], textAngle = textAngle.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ocr]
     }
     
-    @scala.inline
-    implicit class OcrMutableBuilder[Self <: Ocr] (val x: Self) extends AnyVal {
+    extension [Self <: Ocr](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegions(value: js.Array[Lines]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[Lines]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsVarargs(value: Lines*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: Lines*): Self = StObject.set(x, "regions", js.Array(value :_*))
       
-      @scala.inline
-      def setTextAngle(value: Double): Self = StObject.set(x, "textAngle", value.asInstanceOf[js.Any])
+      inline def setTextAngle(value: Double): Self = StObject.set(x, "textAngle", value.asInstanceOf[js.Any])
     }
   }
 }

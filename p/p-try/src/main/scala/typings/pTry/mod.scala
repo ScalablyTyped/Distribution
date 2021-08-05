@@ -27,8 +27,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType, ArgumentsType /* <: js.Array[js.Any] */](
+  inline def apply[ValueType, ArgumentsType /* <: js.Array[js.Any] */](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
   ): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
@@ -72,11 +71,9 @@ object mod {
   //	...arguments: ArgumentsType
   // ): Promise<ValueType>;
   // export = pTry;
-  @scala.inline
-  def default[ValueType, ArgumentsType /* <: js.Array[js.Any] */](
+  inline def default[ValueType, ArgumentsType /* <: js.Array[js.Any] */](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
   ): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

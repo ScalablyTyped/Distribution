@@ -145,7 +145,7 @@ object sortedMapMod {
       * @private
       * @return {boolean} True if all is well.
       */
-    var checkMaxDepth_ : js.Any = js.native
+    /* private */ var checkMaxDepth_ : js.Any = js.native
     
     /**
       * @private
@@ -159,7 +159,7 @@ object sortedMapMod {
       * @private
       * @return {!LLRBNode} New tree, after colorFlip.
       */
-    var colorFlip_ : js.Any = js.native
+    /* private */ var colorFlip_ : js.Any = js.native
     
     /**
       * Returns a copy of the current node, optionally replacing pieces of it.
@@ -188,7 +188,7 @@ object sortedMapMod {
       * @private
       * @return {!LLRBNode} New tree after performing any needed rotations.
       */
-    var fixUp_ : js.Any = js.native
+    /* private */ var fixUp_ : js.Any = js.native
     
     /**
       * Traverses the tree in key order and calls the specified action function
@@ -239,19 +239,19 @@ object sortedMapMod {
       * @return {!Object} The minimum node in the tree.
       * @private
       */
-    var min_ : js.Any = js.native
+    /* private */ var min_ : js.Any = js.native
     
     /**
       * @private
       * @return {!LLRBNode} New tree, after moveRedLeft.
       */
-    var moveRedLeft_ : js.Any = js.native
+    /* private */ var moveRedLeft_ : js.Any = js.native
     
     /**
       * @private
       * @return {!LLRBNode} New tree, after moveRedRight.
       */
-    var moveRedRight_ : js.Any = js.native
+    /* private */ var moveRedRight_ : js.Any = js.native
     
     /**
       * @param {!Object} key The key of the item to remove.
@@ -264,7 +264,7 @@ object sortedMapMod {
       * @private
       * @return {!LLRBNode|LLRBEmptyNode} New tree, with the minimum key removed.
       */
-    var removeMin_ : js.Any = js.native
+    /* private */ var removeMin_ : js.Any = js.native
     
     /**
       * Traverses the tree in reverse key order and calls the specified action function
@@ -282,13 +282,13 @@ object sortedMapMod {
       * @private
       * @return {!LLRBNode} New tree, after rotateLeft.
       */
-    var rotateLeft_ : js.Any = js.native
+    /* private */ var rotateLeft_ : js.Any = js.native
     
     /**
       * @private
       * @return {!LLRBNode} New tree, after rotateRight.
       */
-    var rotateRight_ : js.Any = js.native
+    /* private */ var rotateRight_ : js.Any = js.native
     
     var value: V = js.native
   }
@@ -302,14 +302,12 @@ object sortedMapMod {
     @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode.BLACK")
     @js.native
     def BLACK: Boolean = js.native
-    @scala.inline
-    def BLACK_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
+    inline def BLACK_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
     
     @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode.RED")
     @js.native
     def RED: Boolean = js.native
-    @scala.inline
-    def RED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
+    inline def RED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap")
@@ -324,7 +322,7 @@ object sortedMapMod {
     def this(comparator_ : Comparator[K], root_ : LLRBEmptyNode[K, V]) = this()
     def this(comparator_ : Comparator[K], root_ : LLRBNode[K, V]) = this()
     
-    var comparator_ : js.Any = js.native
+    /* private */ var comparator_ : js.Any = js.native
     
     /**
       * @return {number} The total number of nodes in the map.
@@ -419,7 +417,7 @@ object sortedMapMod {
       */
     def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, Unit]): Boolean = js.native
     
-    var root_ : js.Any = js.native
+    /* private */ var root_ : js.Any = js.native
   }
   /* static members */
   object SortedMap {
@@ -435,8 +433,7 @@ object sortedMapMod {
     @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap.EMPTY_NODE")
     @js.native
     def EMPTY_NODE: LLRBEmptyNode[js.Any, js.Any] = js.native
-    @scala.inline
-    def EMPTY_NODE_=(x: LLRBEmptyNode[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_NODE")(x.asInstanceOf[js.Any])
+    inline def EMPTY_NODE_=(x: LLRBEmptyNode[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_NODE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMapIterator")
@@ -487,16 +484,16 @@ object sortedMapMod {
     
     def hasNext(): Boolean = js.native
     
-    var isReverse_ : js.Any = js.native
+    /* private */ var isReverse_ : js.Any = js.native
     
     /** @private
       * @type {Array.<!LLRBNode>}
       */
-    var nodeStack_ : js.Any = js.native
+    /* private */ var nodeStack_ : js.Any = js.native
     
     def peek(): T = js.native
     
-    var resultGenerator_ : js.Any = js.native
+    /* private */ var resultGenerator_ : js.Any = js.native
   }
   
   type Comparator[K] = js.Function2[/* key1 */ K, /* key2 */ K, Double]

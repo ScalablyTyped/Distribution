@@ -15,19 +15,15 @@ trait ConnectionOptions extends StObject {
 }
 object ConnectionOptions {
   
-  @scala.inline
-  def apply(token: String, uuid: String): ConnectionOptions = {
+  inline def apply(token: String, uuid: String): ConnectionOptions = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
   
-  @scala.inline
-  implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionOptions](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

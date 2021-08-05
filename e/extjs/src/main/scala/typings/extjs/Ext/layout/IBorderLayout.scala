@@ -36,49 +36,35 @@ trait IBorderLayout
 }
 object IBorderLayout {
   
-  @scala.inline
-  def apply(): IBorderLayout = {
+  inline def apply(): IBorderLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBorderLayout]
   }
   
-  @scala.inline
-  implicit class IBorderLayoutMutableBuilder[Self <: IBorderLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IBorderLayout](x: Self) {
     
-    @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
+    inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    @scala.inline
-    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
+    inline def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
+    inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
-    @scala.inline
-    def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRegionWeights(value: js.Any): Self = StObject.set(x, "regionWeights", value.asInstanceOf[js.Any])
+    inline def setRegionWeights(value: js.Any): Self = StObject.set(x, "regionWeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionWeightsUndefined: Self = StObject.set(x, "regionWeights", js.undefined)
+    inline def setRegionWeightsUndefined: Self = StObject.set(x, "regionWeights", js.undefined)
     
-    @scala.inline
-    def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
-    @scala.inline
-    def setSplitterResize(value: Boolean): Self = StObject.set(x, "splitterResize", value.asInstanceOf[js.Any])
+    inline def setSplitterResize(value: Boolean): Self = StObject.set(x, "splitterResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitterResizeUndefined: Self = StObject.set(x, "splitterResize", js.undefined)
+    inline def setSplitterResizeUndefined: Self = StObject.set(x, "splitterResize", js.undefined)
   }
 }

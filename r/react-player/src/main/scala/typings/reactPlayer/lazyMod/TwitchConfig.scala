@@ -12,25 +12,19 @@ trait TwitchConfig extends StObject {
 }
 object TwitchConfig {
   
-  @scala.inline
-  def apply(): TwitchConfig = {
+  inline def apply(): TwitchConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TwitchConfig]
   }
   
-  @scala.inline
-  implicit class TwitchConfigMutableBuilder[Self <: TwitchConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TwitchConfig](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
   }
 }

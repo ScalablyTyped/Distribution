@@ -8,16 +8,13 @@ object prettierLinterHelpersStrings {
   
   @js.native
   sealed trait delete extends StObject
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait insert extends StObject
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
   sealed trait replace extends StObject
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }

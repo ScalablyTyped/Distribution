@@ -20,8 +20,7 @@ trait NodesAndEdges[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object NodesAndEdges {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     edges: js.Array[
       Edge[
         TContext, 
@@ -35,11 +34,9 @@ object NodesAndEdges {
     __obj.asInstanceOf[NodesAndEdges[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class NodesAndEdgesMutableBuilder[Self <: NodesAndEdges[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (NodesAndEdges[TContext, TEvent])) extends AnyVal {
+  extension [Self <: NodesAndEdges[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (NodesAndEdges[TContext, TEvent])) {
     
-    @scala.inline
-    def setEdges(
+    inline def setEdges(
       value: js.Array[
           Edge[
             TContext, 
@@ -49,8 +46,7 @@ object NodesAndEdges {
         ]
     ): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesVarargs(
+    inline def setEdgesVarargs(
       value: (Edge[
           TContext, 
           TEvent, 
@@ -58,10 +54,8 @@ object NodesAndEdges {
         ])*
     ): Self = StObject.set(x, "edges", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[StateNode[js.Any, js.Any, EventObject, ContextAny]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[StateNode[js.Any, js.Any, EventObject, ContextAny]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: (StateNode[js.Any, js.Any, EventObject, ContextAny])*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: (StateNode[js.Any, js.Any, EventObject, ContextAny])*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

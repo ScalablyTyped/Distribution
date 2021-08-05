@@ -11,6 +11,5 @@ object isTableElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

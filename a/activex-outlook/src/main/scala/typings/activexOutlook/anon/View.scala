@@ -12,8 +12,7 @@ trait View extends StObject {
 }
 object View {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     View: typings.activexOutlook.Outlook.View
   ): View = {
@@ -21,15 +20,12 @@ object View {
     __obj.asInstanceOf[View]
   }
   
-  @scala.inline
-  implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+  extension [Self <: View](x: Self) {
     
-    @scala.inline
-    def setCommandBar(
+    inline def setCommandBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
     ): Self = StObject.set(x, "CommandBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: typings.activexOutlook.Outlook.View): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: typings.activexOutlook.Outlook.View): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
   }
 }

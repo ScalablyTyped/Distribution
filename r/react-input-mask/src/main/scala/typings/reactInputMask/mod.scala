@@ -44,23 +44,18 @@ object mod {
   }
   object InputState {
     
-    @scala.inline
-    def apply(value: String): InputState = {
+    inline def apply(value: String): InputState = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], selection = null)
       __obj.asInstanceOf[InputState]
     }
     
-    @scala.inline
-    implicit class InputStateMutableBuilder[Self <: InputState] (val x: Self) extends AnyVal {
+    extension [Self <: InputState](x: Self) {
       
-      @scala.inline
-      def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionNull: Self = StObject.set(x, "selection", null)
+      inline def setSelectionNull: Self = StObject.set(x, "selection", null)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,8 +73,7 @@ object mod {
   }
   object MaskOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alwaysShowMask: Boolean,
       formatChars: Record[String, String],
       mask: String | (js.Array[String | RegExp]),
@@ -90,29 +84,21 @@ object mod {
       __obj.asInstanceOf[MaskOptions]
     }
     
-    @scala.inline
-    implicit class MaskOptionsMutableBuilder[Self <: MaskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MaskOptions](x: Self) {
       
-      @scala.inline
-      def setAlwaysShowMask(value: Boolean): Self = StObject.set(x, "alwaysShowMask", value.asInstanceOf[js.Any])
+      inline def setAlwaysShowMask(value: Boolean): Self = StObject.set(x, "alwaysShowMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatChars(value: Record[String, String]): Self = StObject.set(x, "formatChars", value.asInstanceOf[js.Any])
+      inline def setFormatChars(value: Record[String, String]): Self = StObject.set(x, "formatChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMask(value: String | (js.Array[String | RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String | (js.Array[String | RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
+      inline def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
+      inline def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
       
-      @scala.inline
-      def setPermanents(value: js.Array[Double]): Self = StObject.set(x, "permanents", value.asInstanceOf[js.Any])
+      inline def setPermanents(value: js.Array[Double]): Self = StObject.set(x, "permanents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermanentsVarargs(value: Double*): Self = StObject.set(x, "permanents", js.Array(value :_*))
+      inline def setPermanentsVarargs(value: Double*): Self = StObject.set(x, "permanents", js.Array(value :_*))
     }
   }
   
@@ -174,61 +160,44 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(mask: String | (js.Array[String | RegExp])): Props = {
+    inline def apply(mask: String | (js.Array[String | RegExp])): Props = {
       val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setAlwaysShowMask(value: Boolean): Self = StObject.set(x, "alwaysShowMask", value.asInstanceOf[js.Any])
+      inline def setAlwaysShowMask(value: Boolean): Self = StObject.set(x, "alwaysShowMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysShowMaskUndefined: Self = StObject.set(x, "alwaysShowMask", js.undefined)
+      inline def setAlwaysShowMaskUndefined: Self = StObject.set(x, "alwaysShowMask", js.undefined)
       
-      @scala.inline
-      def setBeforeMaskedValueChange(
+      inline def setBeforeMaskedValueChange(
         value: (/* newState */ InputState, /* oldState */ InputState, /* userInput */ String, /* maskOptions */ MaskOptions) => InputState
       ): Self = StObject.set(x, "beforeMaskedValueChange", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setBeforeMaskedValueChangeUndefined: Self = StObject.set(x, "beforeMaskedValueChange", js.undefined)
+      inline def setBeforeMaskedValueChangeUndefined: Self = StObject.set(x, "beforeMaskedValueChange", js.undefined)
       
-      @scala.inline
-      def setFormatChars(value: StringDictionary[String]): Self = StObject.set(x, "formatChars", value.asInstanceOf[js.Any])
+      inline def setFormatChars(value: StringDictionary[String]): Self = StObject.set(x, "formatChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatCharsUndefined: Self = StObject.set(x, "formatChars", js.undefined)
+      inline def setFormatCharsUndefined: Self = StObject.set(x, "formatChars", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setMask(value: String | (js.Array[String | RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String | (js.Array[String | RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
+      inline def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskCharNull: Self = StObject.set(x, "maskChar", null)
+      inline def setMaskCharNull: Self = StObject.set(x, "maskChar", null)
       
-      @scala.inline
-      def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
+      inline def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
       
-      @scala.inline
-      def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
+      inline def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
     }
   }
   
@@ -240,20 +209,16 @@ object mod {
   }
   object Selection {
     
-    @scala.inline
-    def apply(end: Double, start: Double): Selection = {
+    inline def apply(end: Double, start: Double): Selection = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Selection]
     }
     
-    @scala.inline
-    implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+    extension [Self <: Selection](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

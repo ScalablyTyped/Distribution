@@ -14,22 +14,17 @@ trait DataIndex extends StObject {
 }
 object DataIndex {
   
-  @scala.inline
-  def apply(data: js.Any, index: Double, originalEvent: typings.std.Event): DataIndex = {
+  inline def apply(data: js.Any, index: Double, originalEvent: typings.std.Event): DataIndex = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataIndex]
   }
   
-  @scala.inline
-  implicit class DataIndexMutableBuilder[Self <: DataIndex] (val x: Self) extends AnyVal {
+  extension [Self <: DataIndex](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

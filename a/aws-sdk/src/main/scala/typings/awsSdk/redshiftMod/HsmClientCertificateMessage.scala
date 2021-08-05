@@ -18,28 +18,21 @@ trait HsmClientCertificateMessage extends StObject {
 }
 object HsmClientCertificateMessage {
   
-  @scala.inline
-  def apply(): HsmClientCertificateMessage = {
+  inline def apply(): HsmClientCertificateMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HsmClientCertificateMessage]
   }
   
-  @scala.inline
-  implicit class HsmClientCertificateMessageMutableBuilder[Self <: HsmClientCertificateMessage] (val x: Self) extends AnyVal {
+  extension [Self <: HsmClientCertificateMessage](x: Self) {
     
-    @scala.inline
-    def setHsmClientCertificates(value: HsmClientCertificateList): Self = StObject.set(x, "HsmClientCertificates", value.asInstanceOf[js.Any])
+    inline def setHsmClientCertificates(value: HsmClientCertificateList): Self = StObject.set(x, "HsmClientCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmClientCertificatesUndefined: Self = StObject.set(x, "HsmClientCertificates", js.undefined)
+    inline def setHsmClientCertificatesUndefined: Self = StObject.set(x, "HsmClientCertificates", js.undefined)
     
-    @scala.inline
-    def setHsmClientCertificatesVarargs(value: HsmClientCertificate*): Self = StObject.set(x, "HsmClientCertificates", js.Array(value :_*))
+    inline def setHsmClientCertificatesVarargs(value: HsmClientCertificate*): Self = StObject.set(x, "HsmClientCertificates", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

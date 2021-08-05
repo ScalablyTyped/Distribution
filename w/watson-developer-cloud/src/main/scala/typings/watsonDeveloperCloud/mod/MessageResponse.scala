@@ -30,8 +30,7 @@ trait MessageResponse extends StObject {
 }
 object MessageResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: Context,
     entities: js.Array[RuntimeEntity],
     input: MessageInput,
@@ -42,43 +41,30 @@ object MessageResponse {
     __obj.asInstanceOf[MessageResponse]
   }
   
-  @scala.inline
-  implicit class MessageResponseMutableBuilder[Self <: MessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessageResponse](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: DialogNodeAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: DialogNodeAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
+    inline def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternate_intentsUndefined: Self = StObject.set(x, "alternate_intents", js.undefined)
+    inline def setAlternate_intentsUndefined: Self = StObject.set(x, "alternate_intents", js.undefined)
     
-    @scala.inline
-    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntities(value: js.Array[RuntimeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[RuntimeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: RuntimeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: RuntimeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntents(value: js.Array[RuntimeIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: js.Array[RuntimeIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsVarargs(value: RuntimeIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: RuntimeIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
-    @scala.inline
-    def setOutput(value: OutputData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: OutputData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

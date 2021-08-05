@@ -20,37 +20,27 @@ trait GoogleAudience extends StObject {
 }
 object GoogleAudience {
   
-  @scala.inline
-  def apply(): GoogleAudience = {
+  inline def apply(): GoogleAudience = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAudience]
   }
   
-  @scala.inline
-  implicit class GoogleAudienceMutableBuilder[Self <: GoogleAudience] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAudience](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setGoogleAudienceId(value: String): Self = StObject.set(x, "googleAudienceId", value.asInstanceOf[js.Any])
+    inline def setGoogleAudienceId(value: String): Self = StObject.set(x, "googleAudienceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAudienceIdUndefined: Self = StObject.set(x, "googleAudienceId", js.undefined)
+    inline def setGoogleAudienceIdUndefined: Self = StObject.set(x, "googleAudienceId", js.undefined)
     
-    @scala.inline
-    def setGoogleAudienceType(value: String): Self = StObject.set(x, "googleAudienceType", value.asInstanceOf[js.Any])
+    inline def setGoogleAudienceType(value: String): Self = StObject.set(x, "googleAudienceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAudienceTypeUndefined: Self = StObject.set(x, "googleAudienceType", js.undefined)
+    inline def setGoogleAudienceTypeUndefined: Self = StObject.set(x, "googleAudienceType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

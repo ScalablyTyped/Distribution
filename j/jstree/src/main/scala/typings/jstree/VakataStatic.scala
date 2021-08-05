@@ -43,8 +43,7 @@ trait VakataStatic extends StObject {
 }
 object VakataStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     array_filter: (js.Any, js.Any, js.Any, js.Array[js.Any], js.Any) => js.Array[js.Any],
     array_remove: (js.Array[js.Any], Double) => js.Array[js.Any],
     array_remove_item: (js.Array[js.Any], js.Any) => js.Array[js.Any],
@@ -60,37 +59,26 @@ object VakataStatic {
     __obj.asInstanceOf[VakataStatic]
   }
   
-  @scala.inline
-  implicit class VakataStaticMutableBuilder[Self <: VakataStatic] (val x: Self) extends AnyVal {
+  extension [Self <: VakataStatic](x: Self) {
     
-    @scala.inline
-    def setArray_filter(value: (js.Any, js.Any, js.Any, js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "array_filter", js.Any.fromFunction5(value))
+    inline def setArray_filter(value: (js.Any, js.Any, js.Any, js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "array_filter", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setArray_remove(value: (js.Array[js.Any], Double) => js.Array[js.Any]): Self = StObject.set(x, "array_remove", js.Any.fromFunction2(value))
+    inline def setArray_remove(value: (js.Array[js.Any], Double) => js.Array[js.Any]): Self = StObject.set(x, "array_remove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setArray_remove_item(value: (js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "array_remove_item", js.Any.fromFunction2(value))
+    inline def setArray_remove_item(value: (js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "array_remove_item", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setArray_unique(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "array_unique", js.Any.fromFunction1(value))
+    inline def setArray_unique(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "array_unique", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttributes(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "attributes", js.Any.fromFunction2(value))
+    inline def setAttributes(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "attributes", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnd(value: js.Any): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+    inline def setDnd(value: js.Any): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

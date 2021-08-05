@@ -10,6 +10,5 @@ object isValidProtocolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

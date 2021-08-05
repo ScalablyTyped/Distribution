@@ -18,28 +18,21 @@ trait DescribeLoadBalancersResponse extends StObject {
 }
 object DescribeLoadBalancersResponse {
   
-  @scala.inline
-  def apply(): DescribeLoadBalancersResponse = {
+  inline def apply(): DescribeLoadBalancersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLoadBalancersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLoadBalancersResponseMutableBuilder[Self <: DescribeLoadBalancersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoadBalancersResponse](x: Self) {
     
-    @scala.inline
-    def setLoadBalancers(value: LoadBalancerStates): Self = StObject.set(x, "LoadBalancers", value.asInstanceOf[js.Any])
+    inline def setLoadBalancers(value: LoadBalancerStates): Self = StObject.set(x, "LoadBalancers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancersUndefined: Self = StObject.set(x, "LoadBalancers", js.undefined)
+    inline def setLoadBalancersUndefined: Self = StObject.set(x, "LoadBalancers", js.undefined)
     
-    @scala.inline
-    def setLoadBalancersVarargs(value: LoadBalancerState*): Self = StObject.set(x, "LoadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancerState*): Self = StObject.set(x, "LoadBalancers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

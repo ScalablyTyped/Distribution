@@ -13,16 +13,13 @@ trait QueryObjectsResponse extends StObject {
 }
 object QueryObjectsResponse {
   
-  @scala.inline
-  def apply(objects: RemoteObject): QueryObjectsResponse = {
+  inline def apply(objects: RemoteObject): QueryObjectsResponse = {
     val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryObjectsResponse]
   }
   
-  @scala.inline
-  implicit class QueryObjectsResponseMutableBuilder[Self <: QueryObjectsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryObjectsResponse](x: Self) {
     
-    @scala.inline
-    def setObjects(value: RemoteObject): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: RemoteObject): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
   }
 }

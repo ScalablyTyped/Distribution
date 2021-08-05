@@ -49,20 +49,16 @@ object typesMod {
   }
   object InstrumentationLibrary {
     
-    @scala.inline
-    def apply(name: String, version: String): InstrumentationLibrary = {
+    inline def apply(name: String, version: String): InstrumentationLibrary = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstrumentationLibrary]
     }
     
-    @scala.inline
-    implicit class InstrumentationLibraryMutableBuilder[Self <: InstrumentationLibrary] (val x: Self) extends AnyVal {
+    extension [Self <: InstrumentationLibrary](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,23 +74,18 @@ object typesMod {
   }
   object ShimWrapped {
     
-    @scala.inline
-    def apply(__original: js.Function, __unwrap: js.Function, __wrapped: Boolean): ShimWrapped = {
+    inline def apply(__original: js.Function, __unwrap: js.Function, __wrapped: Boolean): ShimWrapped = {
       val __obj = js.Dynamic.literal(__original = __original.asInstanceOf[js.Any], __unwrap = __unwrap.asInstanceOf[js.Any], __wrapped = __wrapped.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShimWrapped]
     }
     
-    @scala.inline
-    implicit class ShimWrappedMutableBuilder[Self <: ShimWrapped] (val x: Self) extends AnyVal {
+    extension [Self <: ShimWrapped](x: Self) {
       
-      @scala.inline
-      def set__original(value: js.Function): Self = StObject.set(x, "__original", value.asInstanceOf[js.Any])
+      inline def set__original(value: js.Function): Self = StObject.set(x, "__original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__unwrap(value: js.Function): Self = StObject.set(x, "__unwrap", value.asInstanceOf[js.Any])
+      inline def set__unwrap(value: js.Function): Self = StObject.set(x, "__unwrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__wrapped(value: Boolean): Self = StObject.set(x, "__wrapped", value.asInstanceOf[js.Any])
+      inline def set__wrapped(value: Boolean): Self = StObject.set(x, "__wrapped", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,17 +95,14 @@ object typesMod {
   }
   object TimeOriginLegacy {
     
-    @scala.inline
-    def apply(timing: FetchStart): TimeOriginLegacy = {
+    inline def apply(timing: FetchStart): TimeOriginLegacy = {
       val __obj = js.Dynamic.literal(timing = timing.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeOriginLegacy]
     }
     
-    @scala.inline
-    implicit class TimeOriginLegacyMutableBuilder[Self <: TimeOriginLegacy] (val x: Self) extends AnyVal {
+    extension [Self <: TimeOriginLegacy](x: Self) {
       
-      @scala.inline
-      def setTiming(value: FetchStart): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+      inline def setTiming(value: FetchStart): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     }
   }
 }

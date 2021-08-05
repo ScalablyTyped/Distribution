@@ -65,55 +65,39 @@ trait TableLoadOptions extends StObject {
 }
 object TableLoadOptions {
   
-  @scala.inline
-  def apply(): TableLoadOptions = {
+  inline def apply(): TableLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableLoadOptions]
   }
   
-  @scala.inline
-  implicit class TableLoadOptionsMutableBuilder[Self <: TableLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TableLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
+    inline def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
+    inline def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
     
-    @scala.inline
-    def setColumnCount(value: Boolean): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Boolean): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Boolean): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Boolean): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setRows(value: TableRowCollectionLoadOptions): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: TableRowCollectionLoadOptions): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

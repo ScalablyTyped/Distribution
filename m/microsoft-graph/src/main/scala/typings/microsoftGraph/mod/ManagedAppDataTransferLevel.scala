@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedAppDataTransferLevel extends StObject
 object ManagedAppDataTransferLevel {
   
-  @scala.inline
-  def allApps: typings.microsoftGraph.microsoftGraphStrings.allApps = "allApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allApps]
+  inline def allApps: typings.microsoftGraph.microsoftGraphStrings.allApps = "allApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allApps]
   
-  @scala.inline
-  def managedApps: typings.microsoftGraph.microsoftGraphStrings.managedApps = "managedApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.managedApps]
+  inline def managedApps: typings.microsoftGraph.microsoftGraphStrings.managedApps = "managedApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.managedApps]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
 }

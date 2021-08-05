@@ -14,8 +14,7 @@ object partitionRelativeTimePatternMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def PartitionRelativeTimePattern(
+  inline def PartitionRelativeTimePattern(
     rtf: RelativeTimeFormat,
     value: Double,
     unit: RelativeTimeFormattableUnit,

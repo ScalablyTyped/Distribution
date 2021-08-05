@@ -21,10 +21,8 @@ object mod {
   //=> {unicorn: 'cake'}
   ```
   */
-  @scala.inline
-  def apply(jsonString: String): String = ^.asInstanceOf[js.Dynamic].apply(jsonString.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(jsonString: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(jsonString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(jsonString: String): String = ^.asInstanceOf[js.Dynamic].apply(jsonString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(jsonString: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(jsonString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("strip-json-comments", JSImport.Namespace)
   @js.native
@@ -40,20 +38,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+      inline def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
+      inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
     }
   }
 }

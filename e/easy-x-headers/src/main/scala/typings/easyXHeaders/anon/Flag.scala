@@ -12,22 +12,17 @@ trait Flag extends StObject {
 }
 object Flag {
   
-  @scala.inline
-  def apply(encoding: String): Flag = {
+  inline def apply(encoding: String): Flag = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flag]
   }
   
-  @scala.inline
-  implicit class FlagMutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
+  extension [Self <: Flag](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
   }
 }

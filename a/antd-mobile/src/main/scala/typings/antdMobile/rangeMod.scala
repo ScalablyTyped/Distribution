@@ -23,8 +23,7 @@ object rangeMod {
     @JSImport("antd-mobile/lib/range", "default.defaultProps")
     @js.native
     def defaultProps: PrefixCls = js.native
-    @scala.inline
-    def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -45,44 +44,32 @@ object rangeMod {
   }
   object RangeProps {
     
-    @scala.inline
-    def apply(): RangeProps = {
+    inline def apply(): RangeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeProps]
     }
     
-    @scala.inline
-    implicit class RangePropsMutableBuilder[Self <: RangeProps] (val x: Self) extends AnyVal {
+    extension [Self <: RangeProps](x: Self) {
       
-      @scala.inline
-      def setHandleStyle(value: js.Array[CSSProperties]): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
+      inline def setHandleStyle(value: js.Array[CSSProperties]): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
+      inline def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
       
-      @scala.inline
-      def setHandleStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "handleStyle", js.Array(value :_*))
+      inline def setHandleStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "handleStyle", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRailStyle(value: CSSProperties): Self = StObject.set(x, "railStyle", value.asInstanceOf[js.Any])
+      inline def setRailStyle(value: CSSProperties): Self = StObject.set(x, "railStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRailStyleUndefined: Self = StObject.set(x, "railStyle", js.undefined)
+      inline def setRailStyleUndefined: Self = StObject.set(x, "railStyle", js.undefined)
       
-      @scala.inline
-      def setTrackStyle(value: js.Array[CSSProperties]): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
+      inline def setTrackStyle(value: js.Array[CSSProperties]): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
+      inline def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
       
-      @scala.inline
-      def setTrackStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "trackStyle", js.Array(value :_*))
+      inline def setTrackStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "trackStyle", js.Array(value :_*))
     }
   }
 }

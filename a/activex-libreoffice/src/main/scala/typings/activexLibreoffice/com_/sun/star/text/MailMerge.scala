@@ -201,8 +201,7 @@ trait MailMerge
 }
 object MailMerge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveConnection: XConnection,
     AddressFromColumn: String,
     AttachmentFilter: String,
@@ -261,70 +260,48 @@ object MailMerge {
     __obj.asInstanceOf[MailMerge]
   }
   
-  @scala.inline
-  implicit class MailMergeMutableBuilder[Self <: MailMerge] (val x: Self) extends AnyVal {
+  extension [Self <: MailMerge](x: Self) {
     
-    @scala.inline
-    def setAddressFromColumn(value: String): Self = StObject.set(x, "AddressFromColumn", value.asInstanceOf[js.Any])
+    inline def setAddressFromColumn(value: String): Self = StObject.set(x, "AddressFromColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentFilter(value: String): Self = StObject.set(x, "AttachmentFilter", value.asInstanceOf[js.Any])
+    inline def setAttachmentFilter(value: String): Self = StObject.set(x, "AttachmentFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentName(value: String): Self = StObject.set(x, "AttachmentName", value.asInstanceOf[js.Any])
+    inline def setAttachmentName(value: String): Self = StObject.set(x, "AttachmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlindCopiesTo(value: SafeArray[String]): Self = StObject.set(x, "BlindCopiesTo", value.asInstanceOf[js.Any])
+    inline def setBlindCopiesTo(value: SafeArray[String]): Self = StObject.set(x, "BlindCopiesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopiesTo(value: SafeArray[String]): Self = StObject.set(x, "CopiesTo", value.asInstanceOf[js.Any])
+    inline def setCopiesTo(value: SafeArray[String]): Self = StObject.set(x, "CopiesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameFromColumn(value: Boolean): Self = StObject.set(x, "FileNameFromColumn", value.asInstanceOf[js.Any])
+    inline def setFileNameFromColumn(value: Boolean): Self = StObject.set(x, "FileNameFromColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNamePrefix(value: String): Self = StObject.set(x, "FileNamePrefix", value.asInstanceOf[js.Any])
+    inline def setFileNamePrefix(value: String): Self = StObject.set(x, "FileNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInServerPassword(value: String): Self = StObject.set(x, "InServerPassword", value.asInstanceOf[js.Any])
+    inline def setInServerPassword(value: String): Self = StObject.set(x, "InServerPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailBody(value: String): Self = StObject.set(x, "MailBody", value.asInstanceOf[js.Any])
+    inline def setMailBody(value: String): Self = StObject.set(x, "MailBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutServerPassword(value: String): Self = StObject.set(x, "OutServerPassword", value.asInstanceOf[js.Any])
+    inline def setOutServerPassword(value: String): Self = StObject.set(x, "OutServerPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputType(value: Double): Self = StObject.set(x, "OutputType", value.asInstanceOf[js.Any])
+    inline def setOutputType(value: Double): Self = StObject.set(x, "OutputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputURL(value: String): Self = StObject.set(x, "OutputURL", value.asInstanceOf[js.Any])
+    inline def setOutputURL(value: String): Self = StObject.set(x, "OutputURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PrintOptions", value.asInstanceOf[js.Any])
+    inline def setPrintOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PrintOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveAsSingleFile(value: Boolean): Self = StObject.set(x, "SaveAsSingleFile", value.asInstanceOf[js.Any])
+    inline def setSaveAsSingleFile(value: Boolean): Self = StObject.set(x, "SaveAsSingleFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveFilter(value: String): Self = StObject.set(x, "SaveFilter", value.asInstanceOf[js.Any])
+    inline def setSaveFilter(value: String): Self = StObject.set(x, "SaveFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendAsAttachment(value: Boolean): Self = StObject.set(x, "SendAsAttachment", value.asInstanceOf[js.Any])
+    inline def setSendAsAttachment(value: Boolean): Self = StObject.set(x, "SendAsAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendAsHTML(value: Boolean): Self = StObject.set(x, "SendAsHTML", value.asInstanceOf[js.Any])
+    inline def setSendAsHTML(value: Boolean): Self = StObject.set(x, "SendAsHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinglePrintJobs(value: Boolean): Self = StObject.set(x, "SinglePrintJobs", value.asInstanceOf[js.Any])
+    inline def setSinglePrintJobs(value: Boolean): Self = StObject.set(x, "SinglePrintJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
   }
 }

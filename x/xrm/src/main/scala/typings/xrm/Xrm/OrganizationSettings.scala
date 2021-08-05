@@ -52,8 +52,7 @@ trait OrganizationSettings extends StObject {
 }
 object OrganizationSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseCurrency: LookupValue,
     baseCurrencyId: String,
     defaultCountryCode: String,
@@ -67,31 +66,22 @@ object OrganizationSettings {
     __obj.asInstanceOf[OrganizationSettings]
   }
   
-  @scala.inline
-  implicit class OrganizationSettingsMutableBuilder[Self <: OrganizationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationSettings](x: Self) {
     
-    @scala.inline
-    def setBaseCurrency(value: LookupValue): Self = StObject.set(x, "baseCurrency", value.asInstanceOf[js.Any])
+    inline def setBaseCurrency(value: LookupValue): Self = StObject.set(x, "baseCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseCurrencyId(value: String): Self = StObject.set(x, "baseCurrencyId", value.asInstanceOf[js.Any])
+    inline def setBaseCurrencyId(value: String): Self = StObject.set(x, "baseCurrencyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCountryCode(value: String): Self = StObject.set(x, "defaultCountryCode", value.asInstanceOf[js.Any])
+    inline def setDefaultCountryCode(value: String): Self = StObject.set(x, "defaultCountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoSaveEnabled(value: Boolean): Self = StObject.set(x, "isAutoSaveEnabled", value.asInstanceOf[js.Any])
+    inline def setIsAutoSaveEnabled(value: Boolean): Self = StObject.set(x, "isAutoSaveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageId(value: Double): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    inline def setLanguageId(value: Double): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: String): Self = StObject.set(x, "organizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: String): Self = StObject.set(x, "organizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSkypeProtocol(value: Boolean): Self = StObject.set(x, "useSkypeProtocol", value.asInstanceOf[js.Any])
+    inline def setUseSkypeProtocol(value: Boolean): Self = StObject.set(x, "useSkypeProtocol", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait StockChartLegendItem extends StObject {
 }
 object StockChartLegendItem {
   
-  @scala.inline
-  def apply(): StockChartLegendItem = {
+  inline def apply(): StockChartLegendItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartLegendItem]
   }
   
-  @scala.inline
-  implicit class StockChartLegendItemMutableBuilder[Self <: StockChartLegendItem] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartLegendItem](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
+    inline def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
+    inline def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
   }
 }

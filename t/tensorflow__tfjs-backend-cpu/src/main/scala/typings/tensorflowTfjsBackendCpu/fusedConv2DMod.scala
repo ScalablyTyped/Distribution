@@ -13,8 +13,7 @@ object fusedConv2DMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fusedConv2D(args: AttrsFusedConv2DAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fusedConv2D")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def fusedConv2D(args: AttrsFusedConv2DAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fusedConv2D")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/FusedConv2D", "fusedConv2DConfig")
   @js.native

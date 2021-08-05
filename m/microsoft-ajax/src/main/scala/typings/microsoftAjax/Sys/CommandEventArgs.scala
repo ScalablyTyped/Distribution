@@ -32,8 +32,7 @@ trait CommandEventArgs
 }
 object CommandEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Empty: EventArgs,
     get_commandArgument: () => js.Any,
     get_commandName: () => String,
@@ -43,16 +42,12 @@ object CommandEventArgs {
     __obj.asInstanceOf[CommandEventArgs]
   }
   
-  @scala.inline
-  implicit class CommandEventArgsMutableBuilder[Self <: CommandEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CommandEventArgs](x: Self) {
     
-    @scala.inline
-    def setGet_commandArgument(value: () => js.Any): Self = StObject.set(x, "get_commandArgument", js.Any.fromFunction0(value))
+    inline def setGet_commandArgument(value: () => js.Any): Self = StObject.set(x, "get_commandArgument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_commandName(value: () => String): Self = StObject.set(x, "get_commandName", js.Any.fromFunction0(value))
+    inline def setGet_commandName(value: () => String): Self = StObject.set(x, "get_commandName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_commandSource(value: () => js.Any): Self = StObject.set(x, "get_commandSource", js.Any.fromFunction0(value))
+    inline def setGet_commandSource(value: () => js.Any): Self = StObject.set(x, "get_commandSource", js.Any.fromFunction0(value))
   }
 }

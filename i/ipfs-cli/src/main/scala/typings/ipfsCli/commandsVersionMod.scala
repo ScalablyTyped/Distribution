@@ -99,6 +99,5 @@ object commandsVersionMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasPrintIpfsAllCommitRepoNumberTimeout: Commit): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasPrintIpfsAllCommitRepoNumberTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasPrintIpfsAllCommitRepoNumberTimeout: Commit): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasPrintIpfsAllCommitRepoNumberTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

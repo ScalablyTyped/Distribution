@@ -38,17 +38,14 @@ object mod {
     }
     object JQueryStatic {
       
-      @scala.inline
-      def apply(livestamp: LivestampGlobal): JQueryStatic = {
+      inline def apply(livestamp: LivestampGlobal): JQueryStatic = {
         val __obj = js.Dynamic.literal(livestamp = livestamp.asInstanceOf[js.Any])
         __obj.asInstanceOf[JQueryStatic]
       }
       
-      @scala.inline
-      implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+      extension [Self <: JQueryStatic](x: Self) {
         
-        @scala.inline
-        def setLivestamp(value: LivestampGlobal): Self = StObject.set(x, "livestamp", value.asInstanceOf[js.Any])
+        inline def setLivestamp(value: LivestampGlobal): Self = StObject.set(x, "livestamp", value.asInstanceOf[js.Any])
       }
     }
   }

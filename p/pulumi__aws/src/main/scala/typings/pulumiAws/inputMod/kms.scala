@@ -20,35 +20,26 @@ object kms {
   }
   object GetSecretSecret {
     
-    @scala.inline
-    def apply(name: String, payload: String): GetSecretSecret = {
+    inline def apply(name: String, payload: String): GetSecretSecret = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSecretSecret]
     }
     
-    @scala.inline
-    implicit class GetSecretSecretMutableBuilder[Self <: GetSecretSecret] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecretSecret](x: Self) {
       
-      @scala.inline
-      def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
+      inline def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
+      inline def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
       
-      @scala.inline
-      def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
+      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,35 +67,26 @@ object kms {
   }
   object GetSecretsSecret {
     
-    @scala.inline
-    def apply(name: String, payload: String): GetSecretsSecret = {
+    inline def apply(name: String, payload: String): GetSecretsSecret = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSecretsSecret]
     }
     
-    @scala.inline
-    implicit class GetSecretsSecretMutableBuilder[Self <: GetSecretsSecret] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecretsSecret](x: Self) {
       
-      @scala.inline
-      def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
+      inline def setGrantTokens(value: js.Array[String]): Self = StObject.set(x, "grantTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
+      inline def setGrantTokensUndefined: Self = StObject.set(x, "grantTokens", js.undefined)
       
-      @scala.inline
-      def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
+      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "grantTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,26 +104,20 @@ object kms {
   }
   object GrantConstraint {
     
-    @scala.inline
-    def apply(): GrantConstraint = {
+    inline def apply(): GrantConstraint = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GrantConstraint]
     }
     
-    @scala.inline
-    implicit class GrantConstraintMutableBuilder[Self <: GrantConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: GrantConstraint](x: Self) {
       
-      @scala.inline
-      def setEncryptionContextEquals(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "encryptionContextEquals", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextEquals(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "encryptionContextEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "encryptionContextEquals", js.undefined)
+      inline def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "encryptionContextEquals", js.undefined)
       
-      @scala.inline
-      def setEncryptionContextSubset(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "encryptionContextSubset", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextSubset(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "encryptionContextSubset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "encryptionContextSubset", js.undefined)
+      inline def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "encryptionContextSubset", js.undefined)
     }
   }
 }

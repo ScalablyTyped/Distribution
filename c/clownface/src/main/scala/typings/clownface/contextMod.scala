@@ -37,26 +37,20 @@ object contextMod {
   }
   object Context {
     
-    @scala.inline
-    def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */](dataset: D, term: T): Context[D, T] = {
+    inline def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */](dataset: D, term: T): Context[D, T] = {
       val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context[D, T]]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[?, ?], D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] (val x: Self & (Context[D, T])) extends AnyVal {
+    extension [Self <: Context[?, ?], D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */](x: Self & (Context[D, T])) {
       
-      @scala.inline
-      def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+      inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
       
-      @scala.inline
-      def setTerm(value: T): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      inline def setTerm(value: T): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -55,103 +55,71 @@ trait MarkConfigMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
 }
 object MarkConfigMixins {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): MarkConfigMixins[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): MarkConfigMixins[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkConfigMixins[ES]]
   }
   
-  @scala.inline
-  implicit class MarkConfigMixinsMutableBuilder[Self <: MarkConfigMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & MarkConfigMixins[ES]) extends AnyVal {
+  extension [Self <: MarkConfigMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & MarkConfigMixins[ES]) {
     
-    @scala.inline
-    def setArc(value: RectConfig[ES]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: RectConfig[ES]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
+    inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
-    @scala.inline
-    def setArea(value: AreaConfig[ES]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: AreaConfig[ES]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setBar(value: BarConfig[ES]): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: BarConfig[ES]): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
+    inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
-    @scala.inline
-    def setCircle(value: MarkConfig[ES]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: MarkConfig[ES]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    @scala.inline
-    def setGeoshape(value: MarkConfig[ES]): Self = StObject.set(x, "geoshape", value.asInstanceOf[js.Any])
+    inline def setGeoshape(value: MarkConfig[ES]): Self = StObject.set(x, "geoshape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoshapeUndefined: Self = StObject.set(x, "geoshape", js.undefined)
+    inline def setGeoshapeUndefined: Self = StObject.set(x, "geoshape", js.undefined)
     
-    @scala.inline
-    def setImage(value: RectConfig[ES]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: RectConfig[ES]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLine(value: LineConfig[ES]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: LineConfig[ES]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setMark(value: MarkConfig[ES]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setMark(value: MarkConfig[ES]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+    inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
-    @scala.inline
-    def setPoint(value: MarkConfig[ES]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: MarkConfig[ES]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    @scala.inline
-    def setRect(value: RectConfig[ES]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: RectConfig[ES]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+    inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
-    @scala.inline
-    def setRule(value: MarkConfig[ES]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: MarkConfig[ES]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setSquare(value: MarkConfig[ES]): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+    inline def setSquare(value: MarkConfig[ES]): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+    inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
     
-    @scala.inline
-    def setText(value: MarkConfig[ES]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: MarkConfig[ES]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTick(value: TickConfig[ES]): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: TickConfig[ES]): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
-    @scala.inline
-    def setTrail(value: LineConfig[ES]): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
+    inline def setTrail(value: LineConfig[ES]): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailUndefined: Self = StObject.set(x, "trail", js.undefined)
+    inline def setTrailUndefined: Self = StObject.set(x, "trail", js.undefined)
   }
 }

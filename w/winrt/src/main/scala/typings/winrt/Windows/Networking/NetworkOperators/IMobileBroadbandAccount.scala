@@ -18,8 +18,7 @@ trait IMobileBroadbandAccount extends StObject {
 }
 object IMobileBroadbandAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentDeviceInformation: MobileBroadbandDeviceInformation,
     currentNetwork: MobileBroadbandNetwork,
     networkAccountId: String,
@@ -30,22 +29,16 @@ object IMobileBroadbandAccount {
     __obj.asInstanceOf[IMobileBroadbandAccount]
   }
   
-  @scala.inline
-  implicit class IMobileBroadbandAccountMutableBuilder[Self <: IMobileBroadbandAccount] (val x: Self) extends AnyVal {
+  extension [Self <: IMobileBroadbandAccount](x: Self) {
     
-    @scala.inline
-    def setCurrentDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "currentDeviceInformation", value.asInstanceOf[js.Any])
+    inline def setCurrentDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "currentDeviceInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
+    inline def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
+    inline def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
+    inline def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
   }
 }

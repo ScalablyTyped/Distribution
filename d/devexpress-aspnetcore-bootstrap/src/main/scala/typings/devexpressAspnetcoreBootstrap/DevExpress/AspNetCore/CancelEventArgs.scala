@@ -12,16 +12,13 @@ trait CancelEventArgs
 }
 object CancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, sender: Control): CancelEventArgs = {
+  inline def apply(cancel: Boolean, sender: Control): CancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelEventArgs]
   }
   
-  @scala.inline
-  implicit class CancelEventArgsMutableBuilder[Self <: CancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

@@ -55,56 +55,40 @@ object mod {
     }
     object TransitionProps {
       
-      @scala.inline
-      def apply(): TransitionProps = {
+      inline def apply(): TransitionProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TransitionProps]
       }
       
-      @scala.inline
-      implicit class TransitionPropsMutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
+      extension [Self <: TransitionProps](x: Self) {
         
-        @scala.inline
-        def setAppear(value: Style): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+        inline def setAppear(value: Style): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+        inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
         
-        @scala.inline
-        def setComponent(value: String | Boolean | ReactElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+        inline def setComponent(value: String | Boolean | ReactElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+        inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
         
-        @scala.inline
-        def setEnter(value: Style): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+        inline def setEnter(value: Style): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+        inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
         
-        @scala.inline
-        def setLeave(value: Style): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+        inline def setLeave(value: Style): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+        inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
         
-        @scala.inline
-        def setOnEnter(value: /* style */ PlainStyle => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+        inline def setOnEnter(value: /* style */ PlainStyle => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+        inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
         
-        @scala.inline
-        def setOnLeave(value: /* style */ Style => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
+        inline def setOnLeave(value: /* style */ Style => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
+        inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
         
-        @scala.inline
-        def setRunOnMount(value: Boolean): Self = StObject.set(x, "runOnMount", value.asInstanceOf[js.Any])
+        inline def setRunOnMount(value: Boolean): Self = StObject.set(x, "runOnMount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRunOnMountUndefined: Self = StObject.set(x, "runOnMount", js.undefined)
+        inline def setRunOnMountUndefined: Self = StObject.set(x, "runOnMount", js.undefined)
       }
     }
   }

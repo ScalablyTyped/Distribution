@@ -778,8 +778,7 @@ trait AddRepoToInstallation extends StObject {
 }
 object AddRepoToInstallation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRepoToInstallation: `67`,
     checkToken: `68`,
     createContentAttachment: `69`,
@@ -816,100 +815,68 @@ object AddRepoToInstallation {
     __obj.asInstanceOf[AddRepoToInstallation]
   }
   
-  @scala.inline
-  implicit class AddRepoToInstallationMutableBuilder[Self <: AddRepoToInstallation] (val x: Self) extends AnyVal {
+  extension [Self <: AddRepoToInstallation](x: Self) {
     
-    @scala.inline
-    def setAddRepoToInstallation(value: `67`): Self = StObject.set(x, "addRepoToInstallation", value.asInstanceOf[js.Any])
+    inline def setAddRepoToInstallation(value: `67`): Self = StObject.set(x, "addRepoToInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckToken(value: `68`): Self = StObject.set(x, "checkToken", value.asInstanceOf[js.Any])
+    inline def setCheckToken(value: `68`): Self = StObject.set(x, "checkToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateContentAttachment(value: `69`): Self = StObject.set(x, "createContentAttachment", value.asInstanceOf[js.Any])
+    inline def setCreateContentAttachment(value: `69`): Self = StObject.set(x, "createContentAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromManifest(value: `70`): Self = StObject.set(x, "createFromManifest", value.asInstanceOf[js.Any])
+    inline def setCreateFromManifest(value: `70`): Self = StObject.set(x, "createFromManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateInstallationAccessToken(value: `71`): Self = StObject.set(x, "createInstallationAccessToken", value.asInstanceOf[js.Any])
+    inline def setCreateInstallationAccessToken(value: `71`): Self = StObject.set(x, "createInstallationAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAuthorization(value: `72`): Self = StObject.set(x, "deleteAuthorization", value.asInstanceOf[js.Any])
+    inline def setDeleteAuthorization(value: `72`): Self = StObject.set(x, "deleteAuthorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteInstallation(value: `73`): Self = StObject.set(x, "deleteInstallation", value.asInstanceOf[js.Any])
+    inline def setDeleteInstallation(value: `73`): Self = StObject.set(x, "deleteInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteToken(value: `74`): Self = StObject.set(x, "deleteToken", value.asInstanceOf[js.Any])
+    inline def setDeleteToken(value: `74`): Self = StObject.set(x, "deleteToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAuthenticated(value: `75`): Self = StObject.set(x, "getAuthenticated", value.asInstanceOf[js.Any])
+    inline def setGetAuthenticated(value: `75`): Self = StObject.set(x, "getAuthenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBySlug(value: `76`): Self = StObject.set(x, "getBySlug", value.asInstanceOf[js.Any])
+    inline def setGetBySlug(value: `76`): Self = StObject.set(x, "getBySlug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetInstallation(value: `77`): Self = StObject.set(x, "getInstallation", value.asInstanceOf[js.Any])
+    inline def setGetInstallation(value: `77`): Self = StObject.set(x, "getInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOrgInstallation(value: `78`): Self = StObject.set(x, "getOrgInstallation", value.asInstanceOf[js.Any])
+    inline def setGetOrgInstallation(value: `78`): Self = StObject.set(x, "getOrgInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRepoInstallation(value: `79`): Self = StObject.set(x, "getRepoInstallation", value.asInstanceOf[js.Any])
+    inline def setGetRepoInstallation(value: `79`): Self = StObject.set(x, "getRepoInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSubscriptionPlanForAccount(value: `80`): Self = StObject.set(x, "getSubscriptionPlanForAccount", value.asInstanceOf[js.Any])
+    inline def setGetSubscriptionPlanForAccount(value: `80`): Self = StObject.set(x, "getSubscriptionPlanForAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSubscriptionPlanForAccountStubbed(value: `81`): Self = StObject.set(x, "getSubscriptionPlanForAccountStubbed", value.asInstanceOf[js.Any])
+    inline def setGetSubscriptionPlanForAccountStubbed(value: `81`): Self = StObject.set(x, "getSubscriptionPlanForAccountStubbed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUserInstallation(value: `82`): Self = StObject.set(x, "getUserInstallation", value.asInstanceOf[js.Any])
+    inline def setGetUserInstallation(value: `82`): Self = StObject.set(x, "getUserInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListAccountsForPlan(value: `83`): Self = StObject.set(x, "listAccountsForPlan", value.asInstanceOf[js.Any])
+    inline def setListAccountsForPlan(value: `83`): Self = StObject.set(x, "listAccountsForPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListAccountsForPlanStubbed(value: `84`): Self = StObject.set(x, "listAccountsForPlanStubbed", value.asInstanceOf[js.Any])
+    inline def setListAccountsForPlanStubbed(value: `84`): Self = StObject.set(x, "listAccountsForPlanStubbed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListInstallationReposForAuthenticatedUser(value: `85`): Self = StObject.set(x, "listInstallationReposForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListInstallationReposForAuthenticatedUser(value: `85`): Self = StObject.set(x, "listInstallationReposForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListInstallations(value: `86`): Self = StObject.set(x, "listInstallations", value.asInstanceOf[js.Any])
+    inline def setListInstallations(value: `86`): Self = StObject.set(x, "listInstallations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListInstallationsForAuthenticatedUser(value: `87`): Self = StObject.set(x, "listInstallationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListInstallationsForAuthenticatedUser(value: `87`): Self = StObject.set(x, "listInstallationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPlans(value: `88`): Self = StObject.set(x, "listPlans", value.asInstanceOf[js.Any])
+    inline def setListPlans(value: `88`): Self = StObject.set(x, "listPlans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPlansStubbed(value: `89`): Self = StObject.set(x, "listPlansStubbed", value.asInstanceOf[js.Any])
+    inline def setListPlansStubbed(value: `89`): Self = StObject.set(x, "listPlansStubbed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListReposAccessibleToInstallation(value: `90`): Self = StObject.set(x, "listReposAccessibleToInstallation", value.asInstanceOf[js.Any])
+    inline def setListReposAccessibleToInstallation(value: `90`): Self = StObject.set(x, "listReposAccessibleToInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSubscriptionsForAuthenticatedUser(value: `91`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListSubscriptionsForAuthenticatedUser(value: `91`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSubscriptionsForAuthenticatedUserStubbed(value: `92`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUserStubbed", value.asInstanceOf[js.Any])
+    inline def setListSubscriptionsForAuthenticatedUserStubbed(value: `92`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUserStubbed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRepoFromInstallation(value: `93`): Self = StObject.set(x, "removeRepoFromInstallation", value.asInstanceOf[js.Any])
+    inline def setRemoveRepoFromInstallation(value: `93`): Self = StObject.set(x, "removeRepoFromInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetToken(value: `94`): Self = StObject.set(x, "resetToken", value.asInstanceOf[js.Any])
+    inline def setResetToken(value: `94`): Self = StObject.set(x, "resetToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokeInstallationAccessToken(value: `95`): Self = StObject.set(x, "revokeInstallationAccessToken", value.asInstanceOf[js.Any])
+    inline def setRevokeInstallationAccessToken(value: `95`): Self = StObject.set(x, "revokeInstallationAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendInstallation(value: `96`): Self = StObject.set(x, "suspendInstallation", value.asInstanceOf[js.Any])
+    inline def setSuspendInstallation(value: `96`): Self = StObject.set(x, "suspendInstallation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuspendInstallation(value: `97`): Self = StObject.set(x, "unsuspendInstallation", value.asInstanceOf[js.Any])
+    inline def setUnsuspendInstallation(value: `97`): Self = StObject.set(x, "unsuspendInstallation", value.asInstanceOf[js.Any])
   }
 }

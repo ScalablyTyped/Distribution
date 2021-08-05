@@ -27,31 +27,23 @@ trait SchemaEnvFromSource extends StObject {
 }
 object SchemaEnvFromSource {
   
-  @scala.inline
-  def apply(): SchemaEnvFromSource = {
+  inline def apply(): SchemaEnvFromSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnvFromSource]
   }
   
-  @scala.inline
-  implicit class SchemaEnvFromSourceMutableBuilder[Self <: SchemaEnvFromSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnvFromSource](x: Self) {
     
-    @scala.inline
-    def setConfigMapRef(value: SchemaConfigMapEnvSource): Self = StObject.set(x, "configMapRef", value.asInstanceOf[js.Any])
+    inline def setConfigMapRef(value: SchemaConfigMapEnvSource): Self = StObject.set(x, "configMapRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigMapRefUndefined: Self = StObject.set(x, "configMapRef", js.undefined)
+    inline def setConfigMapRefUndefined: Self = StObject.set(x, "configMapRef", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSecretRef(value: SchemaSecretEnvSource): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: SchemaSecretEnvSource): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
+    inline def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
   }
 }

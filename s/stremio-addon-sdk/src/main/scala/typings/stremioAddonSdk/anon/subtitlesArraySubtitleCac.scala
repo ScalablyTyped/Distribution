@@ -28,37 +28,27 @@ trait subtitlesArraySubtitleCac extends StObject {
 }
 object subtitlesArraySubtitleCac {
   
-  @scala.inline
-  def apply(subtitles: js.Array[Subtitle]): subtitlesArraySubtitleCac = {
+  inline def apply(subtitles: js.Array[Subtitle]): subtitlesArraySubtitleCac = {
     val __obj = js.Dynamic.literal(subtitles = subtitles.asInstanceOf[js.Any])
     __obj.asInstanceOf[subtitlesArraySubtitleCac]
   }
   
-  @scala.inline
-  implicit class subtitlesArraySubtitleCacMutableBuilder[Self <: subtitlesArraySubtitleCac] (val x: Self) extends AnyVal {
+  extension [Self <: subtitlesArraySubtitleCac](x: Self) {
     
-    @scala.inline
-    def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
+    inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
+    inline def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
     
-    @scala.inline
-    def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
+    inline def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
+    inline def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
     
-    @scala.inline
-    def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
+    inline def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
+    inline def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
     
-    @scala.inline
-    def setSubtitles(value: js.Array[Subtitle]): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
+    inline def setSubtitles(value: js.Array[Subtitle]): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
+    inline def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
   }
 }

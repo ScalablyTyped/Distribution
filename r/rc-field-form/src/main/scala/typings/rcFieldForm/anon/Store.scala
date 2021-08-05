@@ -10,16 +10,13 @@ trait Store extends StObject {
 }
 object Store {
   
-  @scala.inline
-  def apply(store: typings.rcFieldForm.interfaceMod.Store): Store = {
+  inline def apply(store: typings.rcFieldForm.interfaceMod.Store): Store = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
     __obj.asInstanceOf[Store]
   }
   
-  @scala.inline
-  implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+  extension [Self <: Store](x: Self) {
     
-    @scala.inline
-    def setStore(value: typings.rcFieldForm.interfaceMod.Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: typings.rcFieldForm.interfaceMod.Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

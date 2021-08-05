@@ -13,16 +13,13 @@ trait CheckAuthMode extends StObject {
 }
 object CheckAuthMode {
   
-  @scala.inline
-  def apply(checkAuthMode: fingerPrint | facial | speech): CheckAuthMode = {
+  inline def apply(checkAuthMode: fingerPrint | facial | speech): CheckAuthMode = {
     val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckAuthMode]
   }
   
-  @scala.inline
-  implicit class CheckAuthModeMutableBuilder[Self <: CheckAuthMode] (val x: Self) extends AnyVal {
+  extension [Self <: CheckAuthMode](x: Self) {
     
-    @scala.inline
-    def setCheckAuthMode(value: fingerPrint | facial | speech): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
+    inline def setCheckAuthMode(value: fingerPrint | facial | speech): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
   }
 }

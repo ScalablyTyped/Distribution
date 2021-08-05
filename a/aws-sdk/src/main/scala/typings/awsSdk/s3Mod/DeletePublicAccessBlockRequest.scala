@@ -18,22 +18,17 @@ trait DeletePublicAccessBlockRequest extends StObject {
 }
 object DeletePublicAccessBlockRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): DeletePublicAccessBlockRequest = {
+  inline def apply(Bucket: BucketName): DeletePublicAccessBlockRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePublicAccessBlockRequest]
   }
   
-  @scala.inline
-  implicit class DeletePublicAccessBlockRequestMutableBuilder[Self <: DeletePublicAccessBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePublicAccessBlockRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
   }
 }

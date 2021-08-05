@@ -16,8 +16,7 @@ trait TranslateTimeline
 }
 object TranslateTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     boneIndex: Double,
     curves: js.Any,
@@ -35,16 +34,12 @@ object TranslateTimeline {
     __obj.asInstanceOf[TranslateTimeline]
   }
   
-  @scala.inline
-  implicit class TranslateTimelineMutableBuilder[Self <: TranslateTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateTimeline](x: Self) {
     
-    @scala.inline
-    def setBoneIndex(value: Double): Self = StObject.set(x, "boneIndex", value.asInstanceOf[js.Any])
+    inline def setBoneIndex(value: Double): Self = StObject.set(x, "boneIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFrame(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction4(value))
+    inline def setSetFrame(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction4(value))
   }
 }

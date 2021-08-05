@@ -39,8 +39,7 @@ trait XSheetPastable
 }
 object XSheetPastable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     paste: CellAddress => Unit,
     pasteCellRange: (CellRangeAddress, PasteOperation, Double, Boolean, Boolean, Boolean, CellInsertMode) => Unit,
@@ -52,18 +51,14 @@ object XSheetPastable {
     __obj.asInstanceOf[XSheetPastable]
   }
   
-  @scala.inline
-  implicit class XSheetPastableMutableBuilder[Self <: XSheetPastable] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetPastable](x: Self) {
     
-    @scala.inline
-    def setPaste(value: CellAddress => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+    inline def setPaste(value: CellAddress => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPasteCellRange(
+    inline def setPasteCellRange(
       value: (CellRangeAddress, PasteOperation, Double, Boolean, Boolean, Boolean, CellInsertMode) => Unit
     ): Self = StObject.set(x, "pasteCellRange", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setPasteFormat(value: (CellAddress, String) => Unit): Self = StObject.set(x, "pasteFormat", js.Any.fromFunction2(value))
+    inline def setPasteFormat(value: (CellAddress, String) => Unit): Self = StObject.set(x, "pasteFormat", js.Any.fromFunction2(value))
   }
 }

@@ -11,16 +11,13 @@ trait GetStateResponse extends StObject {
 }
 object GetStateResponse {
   
-  @scala.inline
-  def apply(channels: StringDictionary[js.Any]): GetStateResponse = {
+  inline def apply(channels: StringDictionary[js.Any]): GetStateResponse = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStateResponse]
   }
   
-  @scala.inline
-  implicit class GetStateResponseMutableBuilder[Self <: GetStateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetStateResponse](x: Self) {
     
-    @scala.inline
-    def setChannels(value: StringDictionary[js.Any]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: StringDictionary[js.Any]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
   }
 }

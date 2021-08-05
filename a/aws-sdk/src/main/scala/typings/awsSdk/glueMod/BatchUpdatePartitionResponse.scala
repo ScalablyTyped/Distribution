@@ -13,22 +13,17 @@ trait BatchUpdatePartitionResponse extends StObject {
 }
 object BatchUpdatePartitionResponse {
   
-  @scala.inline
-  def apply(): BatchUpdatePartitionResponse = {
+  inline def apply(): BatchUpdatePartitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdatePartitionResponse]
   }
   
-  @scala.inline
-  implicit class BatchUpdatePartitionResponseMutableBuilder[Self <: BatchUpdatePartitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdatePartitionResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: BatchUpdatePartitionFailureList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchUpdatePartitionFailureList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: BatchUpdatePartitionFailureEntry*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchUpdatePartitionFailureEntry*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

@@ -16,8 +16,7 @@ object mod {
   @JSImport("react-localization", JSImport.Default)
   @js.native
   def default: LocalizedStringsFactory = js.native
-  @scala.inline
-  def default_=(x: LocalizedStringsFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: LocalizedStringsFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type FormatObject[U /* <: Formatted */] = StringDictionary[U]
   

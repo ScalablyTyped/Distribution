@@ -16,10 +16,8 @@ object fromSharedConfigFilesMod {
   @js.native
   val ENV_PROFILE: /* "AWS_PROFILE" */ String = js.native
   
-  @scala.inline
-  def fromSharedConfigFiles(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")().asInstanceOf[Provider[String]]
-  @scala.inline
-  def fromSharedConfigFiles(init: SharedConfigInit): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
+  inline def fromSharedConfigFiles(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")().asInstanceOf[Provider[String]]
+  inline def fromSharedConfigFiles(init: SharedConfigInit): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
   trait SharedConfigInit
     extends StObject
@@ -38,26 +36,20 @@ object fromSharedConfigFilesMod {
   }
   object SharedConfigInit {
     
-    @scala.inline
-    def apply(): SharedConfigInit = {
+    inline def apply(): SharedConfigInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SharedConfigInit]
     }
     
-    @scala.inline
-    implicit class SharedConfigInitMutableBuilder[Self <: SharedConfigInit] (val x: Self) extends AnyVal {
+    extension [Self <: SharedConfigInit](x: Self) {
       
-      @scala.inline
-      def setLoadedConfig(value: js.Promise[SharedConfigFiles]): Self = StObject.set(x, "loadedConfig", value.asInstanceOf[js.Any])
+      inline def setLoadedConfig(value: js.Promise[SharedConfigFiles]): Self = StObject.set(x, "loadedConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedConfigUndefined: Self = StObject.set(x, "loadedConfig", js.undefined)
+      inline def setLoadedConfigUndefined: Self = StObject.set(x, "loadedConfig", js.undefined)
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     }
   }
 }

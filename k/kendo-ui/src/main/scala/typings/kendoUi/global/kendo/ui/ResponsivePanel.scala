@@ -21,13 +21,11 @@ object ResponsivePanel {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ResponsivePanel = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ResponsivePanel]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.ResponsivePanel = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ResponsivePanel]
   
   /* static member */
   @JSGlobal("kendo.ui.ResponsivePanel.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.ResponsivePanel = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.ResponsivePanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.ResponsivePanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

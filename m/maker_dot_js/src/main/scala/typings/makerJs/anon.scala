@@ -17,20 +17,16 @@ object anon {
   }
   object Offset {
     
-    @scala.inline
-    def apply(offset: IPoint, path: IPath | IModel): Offset = {
+    inline def apply(offset: IPoint, path: IPath | IModel): Offset = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Offset]
     }
     
-    @scala.inline
-    implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+    extension [Self <: Offset](x: Self) {
       
-      @scala.inline
-      def setOffset(value: IPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: IPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: IPath | IModel): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: IPath | IModel): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +38,16 @@ object anon {
   }
   object ScaleConversion {
     
-    @scala.inline
-    def apply(scaleConversion: Double, svgUnitType: String): ScaleConversion = {
+    inline def apply(scaleConversion: Double, svgUnitType: String): ScaleConversion = {
       val __obj = js.Dynamic.literal(scaleConversion = scaleConversion.asInstanceOf[js.Any], svgUnitType = svgUnitType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScaleConversion]
     }
     
-    @scala.inline
-    implicit class ScaleConversionMutableBuilder[Self <: ScaleConversion] (val x: Self) extends AnyVal {
+    extension [Self <: ScaleConversion](x: Self) {
       
-      @scala.inline
-      def setScaleConversion(value: Double): Self = StObject.set(x, "scaleConversion", value.asInstanceOf[js.Any])
+      inline def setScaleConversion(value: Double): Self = StObject.set(x, "scaleConversion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgUnitType(value: String): Self = StObject.set(x, "svgUnitType", value.asInstanceOf[js.Any])
+      inline def setSvgUnitType(value: String): Self = StObject.set(x, "svgUnitType", value.asInstanceOf[js.Any])
     }
   }
 }

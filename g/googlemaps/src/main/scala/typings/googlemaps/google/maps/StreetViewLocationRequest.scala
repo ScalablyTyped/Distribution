@@ -16,34 +16,25 @@ trait StreetViewLocationRequest extends StObject {
 }
 object StreetViewLocationRequest {
   
-  @scala.inline
-  def apply(location: LatLng | LatLngLiteral): StreetViewLocationRequest = {
+  inline def apply(location: LatLng | LatLngLiteral): StreetViewLocationRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewLocationRequest]
   }
   
-  @scala.inline
-  implicit class StreetViewLocationRequestMutableBuilder[Self <: StreetViewLocationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StreetViewLocationRequest](x: Self) {
     
-    @scala.inline
-    def setLocation(value: LatLng | LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng | LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreference(value: StreetViewPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: StreetViewPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSource(value: StreetViewSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: StreetViewSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

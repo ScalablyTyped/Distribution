@@ -27,20 +27,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -54,17 +50,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal(verbose = true)
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +71,16 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply(): `2` = {
+    inline def apply(): `2` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`2`]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+    extension [Self <: `2`](x: Self) {
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -120,35 +109,26 @@ object anon {
   }
   object BIGPAWN {
     
-    @scala.inline
-    def apply(): BIGPAWN = {
+    inline def apply(): BIGPAWN = {
       val __obj = js.Dynamic.literal(BIG_PAWN = "b", CAPTURE = "c", EP_CAPTURE = "e", KSIDE_CASTLE = "k", NORMAL = "n", PROMOTION = "p", QSIDE_CASTLE = "q")
       __obj.asInstanceOf[BIGPAWN]
     }
     
-    @scala.inline
-    implicit class BIGPAWNMutableBuilder[Self <: BIGPAWN] (val x: Self) extends AnyVal {
+    extension [Self <: BIGPAWN](x: Self) {
       
-      @scala.inline
-      def setBIG_PAWN(value: b): Self = StObject.set(x, "BIG_PAWN", value.asInstanceOf[js.Any])
+      inline def setBIG_PAWN(value: b): Self = StObject.set(x, "BIG_PAWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAPTURE(value: c): Self = StObject.set(x, "CAPTURE", value.asInstanceOf[js.Any])
+      inline def setCAPTURE(value: c): Self = StObject.set(x, "CAPTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEP_CAPTURE(value: e): Self = StObject.set(x, "EP_CAPTURE", value.asInstanceOf[js.Any])
+      inline def setEP_CAPTURE(value: e): Self = StObject.set(x, "EP_CAPTURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKSIDE_CASTLE(value: k): Self = StObject.set(x, "KSIDE_CASTLE", value.asInstanceOf[js.Any])
+      inline def setKSIDE_CASTLE(value: k): Self = StObject.set(x, "KSIDE_CASTLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNORMAL(value: n): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
+      inline def setNORMAL(value: n): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROMOTION(value: p): Self = StObject.set(x, "PROMOTION", value.asInstanceOf[js.Any])
+      inline def setPROMOTION(value: p): Self = StObject.set(x, "PROMOTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQSIDE_CASTLE(value: q): Self = StObject.set(x, "QSIDE_CASTLE", value.asInstanceOf[js.Any])
+      inline def setQSIDE_CASTLE(value: q): Self = StObject.set(x, "QSIDE_CASTLE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,21 +140,17 @@ object anon {
   }
   object Color {
     
-    @scala.inline
-    def apply(color: w | b, `type`: PieceType): Color = {
+    inline def apply(color: w | b, `type`: PieceType): Color = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: w | b): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: w | b): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PieceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PieceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,23 +173,18 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: String, error_number: Double, valid: Boolean): Error = {
+    inline def apply(error: String, error_number: Double, valid: Boolean): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], error_number = error_number.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError_number(value: Double): Self = StObject.set(x, "error_number", value.asInstanceOf[js.Any])
+      inline def setError_number(value: Double): Self = StObject.set(x, "error_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,26 +198,20 @@ object anon {
   }
   object Maxwidth {
     
-    @scala.inline
-    def apply(): Maxwidth = {
+    inline def apply(): Maxwidth = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Maxwidth]
     }
     
-    @scala.inline
-    implicit class MaxwidthMutableBuilder[Self <: Maxwidth] (val x: Self) extends AnyVal {
+    extension [Self <: Maxwidth](x: Self) {
       
-      @scala.inline
-      def setMax_width(value: Double): Self = StObject.set(x, "max_width", value.asInstanceOf[js.Any])
+      inline def setMax_width(value: Double): Self = StObject.set(x, "max_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_widthUndefined: Self = StObject.set(x, "max_width", js.undefined)
+      inline def setMax_widthUndefined: Self = StObject.set(x, "max_width", js.undefined)
       
-      @scala.inline
-      def setNewline_char(value: String): Self = StObject.set(x, "newline_char", value.asInstanceOf[js.Any])
+      inline def setNewline_char(value: String): Self = StObject.set(x, "newline_char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewline_charUndefined: Self = StObject.set(x, "newline_char", js.undefined)
+      inline def setNewline_charUndefined: Self = StObject.set(x, "newline_char", js.undefined)
     }
   }
   
@@ -275,26 +240,20 @@ object anon {
   }
   object Newlinechar {
     
-    @scala.inline
-    def apply(): Newlinechar = {
+    inline def apply(): Newlinechar = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Newlinechar]
     }
     
-    @scala.inline
-    implicit class NewlinecharMutableBuilder[Self <: Newlinechar] (val x: Self) extends AnyVal {
+    extension [Self <: Newlinechar](x: Self) {
       
-      @scala.inline
-      def setNewline_char(value: String): Self = StObject.set(x, "newline_char", value.asInstanceOf[js.Any])
+      inline def setNewline_char(value: String): Self = StObject.set(x, "newline_char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewline_charUndefined: Self = StObject.set(x, "newline_char", js.undefined)
+      inline def setNewline_charUndefined: Self = StObject.set(x, "newline_char", js.undefined)
       
-      @scala.inline
-      def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
+      inline def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSloppyUndefined: Self = StObject.set(x, "sloppy", js.undefined)
+      inline def setSloppyUndefined: Self = StObject.set(x, "sloppy", js.undefined)
     }
   }
   
@@ -308,20 +267,16 @@ object anon {
   }
   object Sloppy {
     
-    @scala.inline
-    def apply(): Sloppy = {
+    inline def apply(): Sloppy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Sloppy]
     }
     
-    @scala.inline
-    implicit class SloppyMutableBuilder[Self <: Sloppy] (val x: Self) extends AnyVal {
+    extension [Self <: Sloppy](x: Self) {
       
-      @scala.inline
-      def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
+      inline def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSloppyUndefined: Self = StObject.set(x, "sloppy", js.undefined)
+      inline def setSloppyUndefined: Self = StObject.set(x, "sloppy", js.undefined)
     }
   }
   
@@ -338,23 +293,18 @@ object anon {
   }
   object Square {
     
-    @scala.inline
-    def apply(): Square = {
+    inline def apply(): Square = {
       val __obj = js.Dynamic.literal(verbose = true)
       __obj.asInstanceOf[Square]
     }
     
-    @scala.inline
-    implicit class SquareMutableBuilder[Self <: Square] (val x: Self) extends AnyVal {
+    extension [Self <: Square](x: Self) {
       
-      @scala.inline
-      def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      inline def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,26 +321,20 @@ object anon {
   }
   object SquareVerbose {
     
-    @scala.inline
-    def apply(): SquareVerbose = {
+    inline def apply(): SquareVerbose = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SquareVerbose]
     }
     
-    @scala.inline
-    implicit class SquareVerboseMutableBuilder[Self <: SquareVerbose] (val x: Self) extends AnyVal {
+    extension [Self <: SquareVerbose](x: Self) {
       
-      @scala.inline
-      def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      inline def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -407,26 +351,20 @@ object anon {
   }
   object Verbose {
     
-    @scala.inline
-    def apply(): Verbose = {
+    inline def apply(): Verbose = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Verbose]
     }
     
-    @scala.inline
-    implicit class VerboseMutableBuilder[Self <: Verbose] (val x: Self) extends AnyVal {
+    extension [Self <: Verbose](x: Self) {
       
-      @scala.inline
-      def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      inline def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

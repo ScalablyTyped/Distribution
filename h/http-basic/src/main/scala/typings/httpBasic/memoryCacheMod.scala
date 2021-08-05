@@ -16,7 +16,7 @@ object memoryCacheMod {
     extends StObject
        with MemoryCache {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _cache: js.Any = js.native
     
     /* CompleteClass */
@@ -37,7 +37,7 @@ object memoryCacheMod {
   
   trait MemoryCache extends StObject {
     
-    val _cache: js.Any
+    /* private */ val _cache: js.Any
     
     def getResponse(
       url: String,
@@ -52,8 +52,7 @@ object memoryCacheMod {
   }
   object MemoryCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _cache: js.Any,
       getResponse: (String, js.Function2[/* err */ Null | Error, /* response */ Null | CachedResponse, Unit]) => Unit,
       invalidateResponse: (String, js.Function1[/* err */ ErrnoException | Null, Unit]) => Unit,
@@ -64,25 +63,19 @@ object memoryCacheMod {
       __obj.asInstanceOf[MemoryCache]
     }
     
-    @scala.inline
-    implicit class MemoryCacheMutableBuilder[Self <: MemoryCache] (val x: Self) extends AnyVal {
+    extension [Self <: MemoryCache](x: Self) {
       
-      @scala.inline
-      def setGetResponse(
+      inline def setGetResponse(
         value: (String, js.Function2[/* err */ Null | Error, /* response */ Null | CachedResponse, Unit]) => Unit
       ): Self = StObject.set(x, "getResponse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalidateResponse(value: (String, js.Function1[/* err */ ErrnoException | Null, Unit]) => Unit): Self = StObject.set(x, "invalidateResponse", js.Any.fromFunction2(value))
+      inline def setInvalidateResponse(value: (String, js.Function1[/* err */ ErrnoException | Null, Unit]) => Unit): Self = StObject.set(x, "invalidateResponse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetResponse(value: (String, CachedResponse) => Unit): Self = StObject.set(x, "setResponse", js.Any.fromFunction2(value))
+      inline def setSetResponse(value: (String, CachedResponse) => Unit): Self = StObject.set(x, "setResponse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateResponseHeaders(value: (String, PickCachedResponseheaders) => Unit): Self = StObject.set(x, "updateResponseHeaders", js.Any.fromFunction2(value))
+      inline def setUpdateResponseHeaders(value: (String, PickCachedResponseheaders) => Unit): Self = StObject.set(x, "updateResponseHeaders", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_cache(value: js.Any): Self = StObject.set(x, "_cache", value.asInstanceOf[js.Any])
+      inline def set_cache(value: js.Any): Self = StObject.set(x, "_cache", value.asInstanceOf[js.Any])
     }
   }
 }

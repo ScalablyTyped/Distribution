@@ -12,8 +12,7 @@ object videoDriverPrivateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def videoPrivateDriverFactory(base: UniDriver[js.Any]): IVideoPrivateDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("videoPrivateDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[IVideoPrivateDriver]
+  inline def videoPrivateDriverFactory(base: UniDriver[js.Any]): IVideoPrivateDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("videoPrivateDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[IVideoPrivateDriver]
   
   trait IVideoPrivateDriver
     extends StObject
@@ -37,8 +36,7 @@ object videoDriverPrivateMod {
   }
   object IVideoPrivateDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -56,32 +54,23 @@ object videoDriverPrivateMod {
       __obj.asInstanceOf[IVideoPrivateDriver]
     }
     
-    @scala.inline
-    implicit class IVideoPrivateDriverMutableBuilder[Self <: IVideoPrivateDriver] (val x: Self) extends AnyVal {
+    extension [Self <: IVideoPrivateDriver](x: Self) {
       
-      @scala.inline
-      def setGetHeightDataAttr(value: () => js.Promise[String]): Self = StObject.set(x, "getHeightDataAttr", js.Any.fromFunction0(value))
+      inline def setGetHeightDataAttr(value: () => js.Promise[String]): Self = StObject.set(x, "getHeightDataAttr", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLogoSrc(value: () => js.Promise[String]): Self = StObject.set(x, "getLogoSrc", js.Any.fromFunction0(value))
+      inline def setGetLogoSrc(value: () => js.Promise[String]): Self = StObject.set(x, "getLogoSrc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNative(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getNative", js.Any.fromFunction0(value))
+      inline def setGetNative(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getNative", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidthDataAttr(value: () => js.Promise[String]): Self = StObject.set(x, "getWidthDataAttr", js.Any.fromFunction0(value))
+      inline def setGetWidthDataAttr(value: () => js.Promise[String]): Self = StObject.set(x, "getWidthDataAttr", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCover(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasCover", js.Any.fromFunction0(value))
+      inline def setHasCover(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasCover", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasPlayButton(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasPlayButton", js.Any.fromFunction0(value))
+      inline def setHasPlayButton(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasPlayButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
+      inline def setHasTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
     }
   }
 }

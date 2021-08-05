@@ -15,20 +15,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, suite: SnapshotSuite): Name = {
+    inline def apply(name: String, suite: SnapshotSuite): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuite(value: SnapshotSuite): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      inline def setSuite(value: SnapshotSuite): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     }
   }
 }

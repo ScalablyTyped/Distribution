@@ -14,13 +14,13 @@ object listMod {
   class LinkedList[T] () extends StObject {
     def this(iterable: Iterable[T]) = this()
     
-    var _deleteNode: js.Any = js.native
+    /* private */ var _deleteNode: js.Any = js.native
     
-    var _head: js.Any = js.native
+    /* private */ var _head: js.Any = js.native
     
-    var _insertNode: js.Any = js.native
+    /* private */ var _insertNode: js.Any = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
     def clear(): Unit = js.native
     

@@ -22,20 +22,16 @@ object indoorLightMod extends Shortcut {
   }
   object IndoorLightProps {
     
-    @scala.inline
-    def apply(): IndoorLightProps = {
+    inline def apply(): IndoorLightProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IndoorLightProps]
     }
     
-    @scala.inline
-    implicit class IndoorLightPropsMutableBuilder[Self <: IndoorLightProps] (val x: Self) extends AnyVal {
+    extension [Self <: IndoorLightProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

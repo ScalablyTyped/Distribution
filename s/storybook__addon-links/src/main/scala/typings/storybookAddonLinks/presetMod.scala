@@ -10,19 +10,13 @@ object presetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def config(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def config(entry: js.Array[js.Any], hasAddDecorator: LinkOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def config(entry: Unit, hasAddDecorator: LinkOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def config(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Array[js.Any]]
+  inline def config(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def config(entry: js.Array[js.Any], hasAddDecorator: LinkOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def config(entry: Unit, hasAddDecorator: LinkOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(entry.asInstanceOf[js.Any], hasAddDecorator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def managerEntries(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")().asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def managerEntries(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def managerEntries(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")().asInstanceOf[js.Array[js.Any]]
+  inline def managerEntries(entry: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   trait LinkOptions extends StObject {
     
@@ -30,20 +24,16 @@ object presetMod {
   }
   object LinkOptions {
     
-    @scala.inline
-    def apply(): LinkOptions = {
+    inline def apply(): LinkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkOptions]
     }
     
-    @scala.inline
-    implicit class LinkOptionsMutableBuilder[Self <: LinkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LinkOptions](x: Self) {
       
-      @scala.inline
-      def setAddDecorator(value: Boolean): Self = StObject.set(x, "addDecorator", value.asInstanceOf[js.Any])
+      inline def setAddDecorator(value: Boolean): Self = StObject.set(x, "addDecorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddDecoratorUndefined: Self = StObject.set(x, "addDecorator", js.undefined)
+      inline def setAddDecoratorUndefined: Self = StObject.set(x, "addDecorator", js.undefined)
     }
   }
 }

@@ -11,6 +11,5 @@ object redirectToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerRedirectToHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRedirectToHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerRedirectToHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRedirectToHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

@@ -32,28 +32,21 @@ trait Waypoint extends StObject {
 }
 object Waypoint {
   
-  @scala.inline
-  def apply(distance: Double, hint: String, location: Coordinate, name: String): Waypoint = {
+  inline def apply(distance: Double, hint: String, location: Coordinate, name: String): Waypoint = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waypoint]
   }
   
-  @scala.inline
-  implicit class WaypointMutableBuilder[Self <: Waypoint] (val x: Self) extends AnyVal {
+  extension [Self <: Waypoint](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

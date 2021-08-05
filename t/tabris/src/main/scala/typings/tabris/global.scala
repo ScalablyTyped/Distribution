@@ -148,7 +148,7 @@ object global {
     */
   @JSGlobal("Console")
   @js.native
-  class Console_ protected ()
+  /* private */ class Console_ ()
     extends StObject
        with Console
   
@@ -441,13 +441,10 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createElement(`type`: String, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ElementClass]
-    @scala.inline
-    def createElement(`type`: js.Function, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ElementClass]
+    inline def createElement(`type`: String, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ElementClass]
+    inline def createElement(`type`: js.Function, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ElementClass]
     
-    @scala.inline
-    def install(jsxProcessor: JsxProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(jsxProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def install(jsxProcessor: JsxProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(jsxProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("JSX.jsxFactory")
     @js.native
@@ -662,12 +659,10 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def error(): typings.tabris.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.tabris.Response]
+    inline def error(): typings.tabris.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.tabris.Response]
     
     /* static member */
-    @scala.inline
-    def redirect(url: String, status: Double): typings.tabris.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.Response]
+    inline def redirect(url: String, status: Double): typings.tabris.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.Response]
   }
   
   // Storage
@@ -683,7 +678,7 @@ object global {
     */
   @JSGlobal("Storage")
   @js.native
-  class Storage protected ()
+  /* private */ class Storage ()
     extends StObject
        with typings.tabris.Storage {
     
@@ -817,36 +812,26 @@ object global {
     override def addEventListener(`type`: String, listener: EventListener, useCapture: Boolean): Unit = js.native
   }
   
-  @scala.inline
-  def _empty(attributes: Null, children: String): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def _empty(attributes: Null, children: js.Array[Null | String | Double | Boolean]): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def _empty(attributes: Null, children: Boolean): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def _empty(attributes: Null, children: Double): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def _empty(attributes: Null, children: JSXChildren[Widget]): WidgetCollection[Widget] = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget]]
+  inline def _empty(attributes: Null, children: String): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: Null, children: js.Array[Null | String | Double | Boolean]): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: Null, children: Boolean): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: Null, children: Double): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: Null, children: JSXChildren[Widget]): WidgetCollection[Widget] = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget]]
   /**
     * A JSX stateless functional component that groups all given widgets in a WidgetCollection
     * @param attributes This parameter needs to be null since <$> does not support any attributes
     * @param children The widgets to be included in the resulting WidgetCollection instance.
     */
-  @scala.inline
-  def _empty(attributes: Children, children: JSXChildren[Widget]): WidgetCollection[Widget] = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget]]
+  inline def _empty(attributes: Children, children: JSXChildren[Widget]): WidgetCollection[Widget] = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget]]
   /**
     * A JSX stateless functional component that joins any given content in to a single string.
     * @param attributes This parameter needs to be null since <$> does not support any attributes.
     * @param children The content of the resulting string.
     */
-  @scala.inline
-  def _empty(attributes: `0`, children: String): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def _empty(attributes: `0`, children: js.Array[Null | String | Double | Boolean]): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def _empty(attributes: `0`, children: Boolean): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def _empty(attributes: `0`, children: Double): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: `0`, children: String): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: `0`, children: js.Array[Null | String | Double | Boolean]): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: `0`, children: Boolean): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _empty(attributes: `0`, children: Double): String = (js.Dynamic.global.applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Returns the non-disposed `NativeObject` instance (e.g. a widget) associated with the given cid
     * number. The number can be obtained via the [cid](./NativeObject.md#cid) property. Example: If the cid
@@ -859,8 +844,7 @@ object global {
     * `cid` of a NativeObject is not stable, meaning it can change each time the code is executed.
     * @param cidNumber The cid number is the trailing part of the [cid](./NativeObject.md#cid) property string.
     */
-  @scala.inline
-  def _empty(cidNumber: Double): NativeObject = js.Dynamic.global.applyDynamic("$")(cidNumber.asInstanceOf[js.Any]).asInstanceOf[NativeObject]
+  inline def _empty(cidNumber: Double): NativeObject = js.Dynamic.global.applyDynamic("$")(cidNumber.asInstanceOf[js.Any]).asInstanceOf[NativeObject]
   // $
   /**
     * A shortcut to [`tabris.contentView.find()`](./Composite.md#findselector). Returns a collection
@@ -869,129 +853,106 @@ object global {
     * encapsulated if it overrides the `children()` method or uses the `@component` decorator.
     * @param selector A selector expression or a predicate function to filter the results.
     */
-  @scala.inline
-  def _empty[Result /* <: Widget */](): WidgetCollection[Result] = js.Dynamic.global.applyDynamic("$")().asInstanceOf[WidgetCollection[Result]]
-  @scala.inline
-  def _empty[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result] = js.Dynamic.global.applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[WidgetCollection[Result]]
+  inline def _empty[Result /* <: Widget */](): WidgetCollection[Result] = js.Dynamic.global.applyDynamic("$")().asInstanceOf[WidgetCollection[Result]]
+  inline def _empty[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result] = js.Dynamic.global.applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[WidgetCollection[Result]]
   
   // Timer
   /**
     * Cancels the running interval associated with the given ID. When given an invalid ID, nothing happens.
     * @param id The ID that was returned by `setInterval`.
     */
-  @scala.inline
-  def clearInterval(id: js.Any): Unit = js.Dynamic.global.applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(id: js.Any): Unit = js.Dynamic.global.applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Cancels the running timeout associated with the given ID. When given an invalid ID, nothing happens.
     * @param id The ID that was returned by `setTimeout`.
     */
-  @scala.inline
-  def clearTimeout(id: js.Any): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearTimeout(id: js.Any): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("console")
   @js.native
   def console: Console = js.native
-  @scala.inline
-  def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
+  inline def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
   
   @JSGlobal("cordova")
   @js.native
   def cordova: Cordova = js.native
-  @scala.inline
-  def cordova_=(x: Cordova): Unit = js.Dynamic.global.updateDynamic("cordova")(x.asInstanceOf[js.Any])
+  inline def cordova_=(x: Cordova): Unit = js.Dynamic.global.updateDynamic("cordova")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createImageBitmap")
   @js.native
   def createImageBitmap: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof tabris.ImageBitmap.createImageBitmap */ js.Any = js.native
-  @scala.inline
-  def createImageBitmap_=(
+  inline def createImageBitmap_=(
     x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof tabris.ImageBitmap.createImageBitmap */ js.Any
   ): Unit = js.Dynamic.global.updateDynamic("createImageBitmap")(x.asInstanceOf[js.Any])
   
   @JSGlobal("crypto")
   @js.native
   def crypto: Crypto = js.native
-  @scala.inline
-  def crypto_=(x: Crypto): Unit = js.Dynamic.global.updateDynamic("crypto")(x.asInstanceOf[js.Any])
+  inline def crypto_=(x: Crypto): Unit = js.Dynamic.global.updateDynamic("crypto")(x.asInstanceOf[js.Any])
   
   @JSGlobal("device")
   @js.native
   def device: Device_ = js.native
-  @scala.inline
-  def device_=(x: Device_): Unit = js.Dynamic.global.updateDynamic("device")(x.asInstanceOf[js.Any])
+  inline def device_=(x: Device_): Unit = js.Dynamic.global.updateDynamic("device")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__dirname")
   @js.native
   def dirname: String = js.native
   
-  @scala.inline
-  def dirname_=(x: String): Unit = js.Dynamic.global.updateDynamic("__dirname")(x.asInstanceOf[js.Any])
+  inline def dirname_=(x: String): Unit = js.Dynamic.global.updateDynamic("__dirname")(x.asInstanceOf[js.Any])
   
   @JSGlobal("document")
   @js.native
   def document: Document = js.native
-  @scala.inline
-  def document_=(x: Document): Unit = js.Dynamic.global.updateDynamic("document")(x.asInstanceOf[js.Any])
+  inline def document_=(x: Document): Unit = js.Dynamic.global.updateDynamic("document")(x.asInstanceOf[js.Any])
   
   @JSGlobal("exports")
   @js.native
   def exports: js.Object = js.native
-  @scala.inline
-  def exports_=(x: js.Object): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
+  inline def exports_=(x: js.Object): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   // fetch
-  @scala.inline
-  def fetch(url: String): js.Promise[typings.tabris.Response] = js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
-  @scala.inline
-  def fetch(url: String, init: RequestInit): js.Promise[typings.tabris.Response] = (js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
-  @scala.inline
-  def fetch(url: typings.tabris.Request): js.Promise[typings.tabris.Response] = js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
-  @scala.inline
-  def fetch(url: typings.tabris.Request, init: RequestInit): js.Promise[typings.tabris.Response] = (js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
+  inline def fetch(url: String): js.Promise[typings.tabris.Response] = js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
+  inline def fetch(url: String, init: RequestInit): js.Promise[typings.tabris.Response] = (js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
+  inline def fetch(url: typings.tabris.Request): js.Promise[typings.tabris.Response] = js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tabris.Response]]
+  inline def fetch(url: typings.tabris.Request, init: RequestInit): js.Promise[typings.tabris.Response] = (js.Dynamic.global.applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
   
   @JSGlobal("__filename")
   @js.native
   def filename: String = js.native
   
-  @scala.inline
-  def filename_=(x: String): Unit = js.Dynamic.global.updateDynamic("__filename")(x.asInstanceOf[js.Any])
+  inline def filename_=(x: String): Unit = js.Dynamic.global.updateDynamic("__filename")(x.asInstanceOf[js.Any])
   
   @JSGlobal("localStorage")
   @js.native
   def localStorage: typings.tabris.Storage = js.native
-  @scala.inline
-  def localStorage_=(x: typings.tabris.Storage): Unit = js.Dynamic.global.updateDynamic("localStorage")(x.asInstanceOf[js.Any])
+  inline def localStorage_=(x: typings.tabris.Storage): Unit = js.Dynamic.global.updateDynamic("localStorage")(x.asInstanceOf[js.Any])
   
   @JSGlobal("module")
   @js.native
   def module: Module = js.native
-  @scala.inline
-  def module_=(x: Module): Unit = js.Dynamic.global.updateDynamic("module")(x.asInstanceOf[js.Any])
+  inline def module_=(x: Module): Unit = js.Dynamic.global.updateDynamic("module")(x.asInstanceOf[js.Any])
   
   @JSGlobal("navigator")
   @js.native
   def navigator: Navigator = js.native
-  @scala.inline
-  def navigator_=(x: Navigator): Unit = js.Dynamic.global.updateDynamic("navigator")(x.asInstanceOf[js.Any])
+  inline def navigator_=(x: Navigator): Unit = js.Dynamic.global.updateDynamic("navigator")(x.asInstanceOf[js.Any])
   
   @JSGlobal("plugins")
   @js.native
   def plugins: CordovaPlugins = js.native
-  @scala.inline
-  def plugins_=(x: CordovaPlugins): Unit = js.Dynamic.global.updateDynamic("plugins")(x.asInstanceOf[js.Any])
+  inline def plugins_=(x: CordovaPlugins): Unit = js.Dynamic.global.updateDynamic("plugins")(x.asInstanceOf[js.Any])
   
   @JSGlobal("require")
   @js.native
   def require: js.Function1[/* request */ String, js.Object] = js.native
-  @scala.inline
-  def require_=(x: js.Function1[/* request */ String, js.Object]): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
+  inline def require_=(x: js.Function1[/* request */ String, js.Object]): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
   
   @JSGlobal("secureStorage")
   @js.native
   def secureStorage: typings.tabris.Storage = js.native
-  @scala.inline
-  def secureStorage_=(x: typings.tabris.Storage): Unit = js.Dynamic.global.updateDynamic("secureStorage")(x.asInstanceOf[js.Any])
+  inline def secureStorage_=(x: typings.tabris.Storage): Unit = js.Dynamic.global.updateDynamic("secureStorage")(x.asInstanceOf[js.Any])
   
   /**
     * Calls the given function repeatedly, each times waiting the given delay. The actual delay may be
@@ -1000,10 +961,8 @@ object global {
     * @param delay The delay in milliseconds.
     * @param params One or more values passed on to the callback.
     */
-  @scala.inline
-  def setInterval(callback: js.Function, delay: Double, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def setInterval(callback: js.Function, delay: Unit, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setInterval(callback: js.Function, delay: Double, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setInterval(callback: js.Function, delay: Unit, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Calls the given function with `param` (and all following parameters) after the specified delay. The
@@ -1012,14 +971,11 @@ object global {
     * @param delay The delay in milliseconds.
     * @param params One or more values passed on to the callback.
     */
-  @scala.inline
-  def setTimeout(callback: js.Function, delay: Double, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def setTimeout(callback: js.Function, delay: Unit, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setTimeout(callback: js.Function, delay: Double, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setTimeout(callback: js.Function, delay: Unit, params: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSGlobal("window")
   @js.native
   def window: Window = js.native
-  @scala.inline
-  def window_=(x: Window): Unit = js.Dynamic.global.updateDynamic("window")(x.asInstanceOf[js.Any])
+  inline def window_=(x: Window): Unit = js.Dynamic.global.updateDynamic("window")(x.asInstanceOf[js.Any])
 }

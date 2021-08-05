@@ -23,25 +23,19 @@ trait DescribeVolumeAttributeRequest extends StObject {
 }
 object DescribeVolumeAttributeRequest {
   
-  @scala.inline
-  def apply(Attribute: VolumeAttributeName, VolumeId: VolumeId): DescribeVolumeAttributeRequest = {
+  inline def apply(Attribute: VolumeAttributeName, VolumeId: VolumeId): DescribeVolumeAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], VolumeId = VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVolumeAttributeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeVolumeAttributeRequestMutableBuilder[Self <: DescribeVolumeAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVolumeAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: VolumeAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: VolumeAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }
 }

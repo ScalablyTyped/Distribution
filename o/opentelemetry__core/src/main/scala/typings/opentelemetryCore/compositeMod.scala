@@ -24,9 +24,9 @@ object compositeMod {
        with TextMapPropagator {
     def this(config: CompositePropagatorConfig) = this()
     
-    val _logger: js.Any = js.native
+    /* private */ val _logger: js.Any = js.native
     
-    val _propagators: js.Any = js.native
+    /* private */ val _propagators: js.Any = js.native
     
     /**
       * Run each of the configured propagators with the given context and carrier.

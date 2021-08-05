@@ -14,25 +14,19 @@ trait ReadOptions extends StObject {
 }
 object ReadOptions {
   
-  @scala.inline
-  def apply(): ReadOptions = {
+  inline def apply(): ReadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadOptions]
   }
   
-  @scala.inline
-  implicit class ReadOptionsMutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadOptions](x: Self) {
     
-    @scala.inline
-    def setReadConsistency(value: String): Self = StObject.set(x, "readConsistency", value.asInstanceOf[js.Any])
+    inline def setReadConsistency(value: String): Self = StObject.set(x, "readConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadConsistencyUndefined: Self = StObject.set(x, "readConsistency", js.undefined)
+    inline def setReadConsistencyUndefined: Self = StObject.set(x, "readConsistency", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

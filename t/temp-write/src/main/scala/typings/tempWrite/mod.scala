@@ -30,18 +30,12 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(fileContent: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(fileContent: String, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(fileContent: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(fileContent: Buffer, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(fileContent: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(fileContent: ReadableStream, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(fileContent: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(fileContent: String, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(fileContent: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(fileContent: Buffer, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(fileContent: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(fileContent: ReadableStream, filePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("temp-write", JSImport.Namespace)
   @js.native
@@ -66,12 +60,8 @@ object mod {
   	//=> '/var/folders/_1/tk89k8215ts0rg0kmb096nj80000gn/T/4049f192-43e7-43b2-98d9-094e6760861b/rainbow/cake/pony.png'
   	```
   	*/
-  @scala.inline
-  def sync(fileContent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def sync(fileContent: String, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sync(fileContent: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def sync(fileContent: Buffer, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sync(fileContent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sync(fileContent: String, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sync(fileContent: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sync(fileContent: Buffer, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(fileContent.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
 }

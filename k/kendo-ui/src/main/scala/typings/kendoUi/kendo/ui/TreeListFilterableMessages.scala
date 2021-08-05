@@ -24,61 +24,43 @@ trait TreeListFilterableMessages extends StObject {
 }
 object TreeListFilterableMessages {
   
-  @scala.inline
-  def apply(): TreeListFilterableMessages = {
+  inline def apply(): TreeListFilterableMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeListFilterableMessages]
   }
   
-  @scala.inline
-  implicit class TreeListFilterableMessagesMutableBuilder[Self <: TreeListFilterableMessages] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListFilterableMessages](x: Self) {
     
-    @scala.inline
-    def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
+    inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
-    @scala.inline
-    def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setIsFalse(value: String): Self = StObject.set(x, "isFalse", value.asInstanceOf[js.Any])
+    inline def setIsFalse(value: String): Self = StObject.set(x, "isFalse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFalseUndefined: Self = StObject.set(x, "isFalse", js.undefined)
+    inline def setIsFalseUndefined: Self = StObject.set(x, "isFalse", js.undefined)
     
-    @scala.inline
-    def setIsTrue(value: String): Self = StObject.set(x, "isTrue", value.asInstanceOf[js.Any])
+    inline def setIsTrue(value: String): Self = StObject.set(x, "isTrue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrueUndefined: Self = StObject.set(x, "isTrue", js.undefined)
+    inline def setIsTrueUndefined: Self = StObject.set(x, "isTrue", js.undefined)
     
-    @scala.inline
-    def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+    inline def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
+    inline def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

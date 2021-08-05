@@ -23,16 +23,13 @@ trait IPostLink extends StObject {
 }
 object IPostLink {
   
-  @scala.inline
-  def apply($postLink: () => Unit): IPostLink = {
+  inline def apply($postLink: () => Unit): IPostLink = {
     val __obj = js.Dynamic.literal($postLink = js.Any.fromFunction0($postLink))
     __obj.asInstanceOf[IPostLink]
   }
   
-  @scala.inline
-  implicit class IPostLinkMutableBuilder[Self <: IPostLink] (val x: Self) extends AnyVal {
+  extension [Self <: IPostLink](x: Self) {
     
-    @scala.inline
-    def set$postLink(value: () => Unit): Self = StObject.set(x, "$postLink", js.Any.fromFunction0(value))
+    inline def set$postLink(value: () => Unit): Self = StObject.set(x, "$postLink", js.Any.fromFunction0(value))
   }
 }

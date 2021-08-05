@@ -21,8 +21,7 @@ trait StorySlider
 }
 object StorySlider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background_color: String,
     emoji: String,
     height: Double,
@@ -37,22 +36,16 @@ object StorySlider {
     __obj.asInstanceOf[StorySlider]
   }
   
-  @scala.inline
-  implicit class StorySliderMutableBuilder[Self <: StorySlider] (val x: Self) extends AnyVal {
+  extension [Self <: StorySlider](x: Self) {
     
-    @scala.inline
-    def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
+    inline def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+    inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
+    inline def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
   }
 }

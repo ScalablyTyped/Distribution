@@ -40,31 +40,23 @@ trait SchemaGoogleDatastoreAdminV1ImportEntitiesRequest extends StObject {
 }
 object SchemaGoogleDatastoreAdminV1ImportEntitiesRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleDatastoreAdminV1ImportEntitiesRequest = {
+  inline def apply(): SchemaGoogleDatastoreAdminV1ImportEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1ImportEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1ImportEntitiesRequestMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1ImportEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDatastoreAdminV1ImportEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEntityFilter(value: SchemaGoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
+    inline def setEntityFilter(value: SchemaGoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
+    inline def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
-    @scala.inline
-    def setInputUrl(value: String): Self = StObject.set(x, "inputUrl", value.asInstanceOf[js.Any])
+    inline def setInputUrl(value: String): Self = StObject.set(x, "inputUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUrlUndefined: Self = StObject.set(x, "inputUrl", js.undefined)
+    inline def setInputUrlUndefined: Self = StObject.set(x, "inputUrl", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

@@ -31,34 +31,25 @@ trait SchemaHostRule extends StObject {
 }
 object SchemaHostRule {
   
-  @scala.inline
-  def apply(): SchemaHostRule = {
+  inline def apply(): SchemaHostRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHostRule]
   }
   
-  @scala.inline
-  implicit class SchemaHostRuleMutableBuilder[Self <: SchemaHostRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHostRule](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    inline def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+    inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
-    @scala.inline
-    def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
     
-    @scala.inline
-    def setPathMatcher(value: String): Self = StObject.set(x, "pathMatcher", value.asInstanceOf[js.Any])
+    inline def setPathMatcher(value: String): Self = StObject.set(x, "pathMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathMatcherUndefined: Self = StObject.set(x, "pathMatcher", js.undefined)
+    inline def setPathMatcherUndefined: Self = StObject.set(x, "pathMatcher", js.undefined)
   }
 }

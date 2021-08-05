@@ -12,6 +12,5 @@ object mergeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeAll[V](streams: (default[V] | js.Array[default[V]])*): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(streams.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def mergeAll[V](streams: (default[V] | js.Array[default[V]])*): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(streams.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
 }

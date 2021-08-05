@@ -28,7 +28,7 @@ trait Ruler2 extends StObject {
   @JSName("Levels")
   val Levels_Original: RulerLevels2
   
-  @JSName("Office.Ruler2_typekey")
+  /* private */ @JSName("Office.Ruler2_typekey")
   var OfficeDotRuler2_typekey: Ruler2
   
   val Parent: js.Any
@@ -39,8 +39,7 @@ trait Ruler2 extends StObject {
 }
 object Ruler2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Levels: RulerLevels2,
@@ -53,25 +52,18 @@ object Ruler2 {
     __obj.asInstanceOf[Ruler2]
   }
   
-  @scala.inline
-  implicit class Ruler2MutableBuilder[Self <: Ruler2] (val x: Self) extends AnyVal {
+  extension [Self <: Ruler2](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevels(value: RulerLevels2): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: RulerLevels2): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotRuler2_typekey(value: Ruler2): Self = StObject.set(x, "Office.Ruler2_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotRuler2_typekey(value: Ruler2): Self = StObject.set(x, "Office.Ruler2_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabStops(value: TabStops2): Self = StObject.set(x, "TabStops", value.asInstanceOf[js.Any])
+    inline def setTabStops(value: TabStops2): Self = StObject.set(x, "TabStops", value.asInstanceOf[js.Any])
   }
 }

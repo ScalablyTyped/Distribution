@@ -24,43 +24,31 @@ trait ContentType extends StObject {
 }
 object ContentType {
   
-  @scala.inline
-  def apply(contentType: String, fileName: String): ContentType = {
+  inline def apply(contentType: String, fileName: String): ContentType = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentType]
   }
   
-  @scala.inline
-  implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+  extension [Self <: ContentType](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Record[String, js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Record[String, js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadFrom(value: Record[String, js.Any]): Self = StObject.set(x, "uploadFrom", value.asInstanceOf[js.Any])
+    inline def setUploadFrom(value: Record[String, js.Any]): Self = StObject.set(x, "uploadFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadFromUndefined: Self = StObject.set(x, "uploadFrom", js.undefined)
+    inline def setUploadFromUndefined: Self = StObject.set(x, "uploadFrom", js.undefined)
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

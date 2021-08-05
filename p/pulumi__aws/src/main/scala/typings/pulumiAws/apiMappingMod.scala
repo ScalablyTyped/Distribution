@@ -60,21 +60,16 @@ object apiMappingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApiMappingState): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApiMappingState, opts: CustomResourceOptions): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
+    inline def get(name: String, id: Input[ID]): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
+    inline def get(name: String, id: Input[ID], state: ApiMappingState): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
+    inline def get(name: String, id: Input[ID], state: ApiMappingState, opts: CustomResourceOptions): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
     
     /**
       * Returns true if the given object is an instance of ApiMapping.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean]
   }
   
   trait ApiMappingArgs extends StObject {
@@ -101,29 +96,22 @@ object apiMappingMod {
   }
   object ApiMappingArgs {
     
-    @scala.inline
-    def apply(apiId: Input[String], domainName: Input[String], stage: Input[String]): ApiMappingArgs = {
+    inline def apply(apiId: Input[String], domainName: Input[String], stage: Input[String]): ApiMappingArgs = {
       val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiMappingArgs]
     }
     
-    @scala.inline
-    implicit class ApiMappingArgsMutableBuilder[Self <: ApiMappingArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ApiMappingArgs](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiMappingKey(value: Input[String]): Self = StObject.set(x, "apiMappingKey", value.asInstanceOf[js.Any])
+      inline def setApiMappingKey(value: Input[String]): Self = StObject.set(x, "apiMappingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiMappingKeyUndefined: Self = StObject.set(x, "apiMappingKey", js.undefined)
+      inline def setApiMappingKeyUndefined: Self = StObject.set(x, "apiMappingKey", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStage(value: Input[String]): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: Input[String]): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,38 +139,28 @@ object apiMappingMod {
   }
   object ApiMappingState {
     
-    @scala.inline
-    def apply(): ApiMappingState = {
+    inline def apply(): ApiMappingState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApiMappingState]
     }
     
-    @scala.inline
-    implicit class ApiMappingStateMutableBuilder[Self <: ApiMappingState] (val x: Self) extends AnyVal {
+    extension [Self <: ApiMappingState](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setApiMappingKey(value: Input[String]): Self = StObject.set(x, "apiMappingKey", value.asInstanceOf[js.Any])
+      inline def setApiMappingKey(value: Input[String]): Self = StObject.set(x, "apiMappingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiMappingKeyUndefined: Self = StObject.set(x, "apiMappingKey", js.undefined)
+      inline def setApiMappingKeyUndefined: Self = StObject.set(x, "apiMappingKey", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setStage(value: Input[String]): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: Input[String]): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     }
   }
 }

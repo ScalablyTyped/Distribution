@@ -13,19 +13,15 @@ trait CreateParameterGroupResponse extends StObject {
 }
 object CreateParameterGroupResponse {
   
-  @scala.inline
-  def apply(): CreateParameterGroupResponse = {
+  inline def apply(): CreateParameterGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateParameterGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateParameterGroupResponseMutableBuilder[Self <: CreateParameterGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateParameterGroupResponse](x: Self) {
     
-    @scala.inline
-    def setParameterGroup(value: ParameterGroup): Self = StObject.set(x, "ParameterGroup", value.asInstanceOf[js.Any])
+    inline def setParameterGroup(value: ParameterGroup): Self = StObject.set(x, "ParameterGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupUndefined: Self = StObject.set(x, "ParameterGroup", js.undefined)
+    inline def setParameterGroupUndefined: Self = StObject.set(x, "ParameterGroup", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait SnapshotPoint extends StObject {
 }
 object SnapshotPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: Double => SnapshotPoint,
     getContainingLine: () => ITextSnapshotLine,
     position: Double,
@@ -27,19 +26,14 @@ object SnapshotPoint {
     __obj.asInstanceOf[SnapshotPoint]
   }
   
-  @scala.inline
-  implicit class SnapshotPointMutableBuilder[Self <: SnapshotPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotPoint](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Double => SnapshotPoint): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Double => SnapshotPoint): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContainingLine(value: () => ITextSnapshotLine): Self = StObject.set(x, "getContainingLine", js.Any.fromFunction0(value))
+    inline def setGetContainingLine(value: () => ITextSnapshotLine): Self = StObject.set(x, "getContainingLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot(value: ITextSnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: ITextSnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
   }
 }

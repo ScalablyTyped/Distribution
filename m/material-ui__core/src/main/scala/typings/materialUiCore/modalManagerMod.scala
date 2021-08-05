@@ -34,23 +34,18 @@ object modalManagerMod {
   }
   object ModalManager {
     
-    @scala.inline
-    def apply(add: (js.Any, js.Any) => Double, isTopModal: js.Any => Boolean, remove: js.Any => Unit): ModalManager = {
+    inline def apply(add: (js.Any, js.Any) => Double, isTopModal: js.Any => Boolean, remove: js.Any => Unit): ModalManager = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), isTopModal = js.Any.fromFunction1(isTopModal), remove = js.Any.fromFunction1(remove))
       __obj.asInstanceOf[ModalManager]
     }
     
-    @scala.inline
-    implicit class ModalManagerMutableBuilder[Self <: ModalManager] (val x: Self) extends AnyVal {
+    extension [Self <: ModalManager](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsTopModal(value: js.Any => Boolean): Self = StObject.set(x, "isTopModal", js.Any.fromFunction1(value))
+      inline def setIsTopModal(value: js.Any => Boolean): Self = StObject.set(x, "isTopModal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: js.Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
 }

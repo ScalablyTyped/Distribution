@@ -26,8 +26,7 @@ trait XInsertListener
 }
 object XInsertListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     inserted: EventObject => Unit,
@@ -39,13 +38,10 @@ object XInsertListener {
     __obj.asInstanceOf[XInsertListener]
   }
   
-  @scala.inline
-  implicit class XInsertListenerMutableBuilder[Self <: XInsertListener] (val x: Self) extends AnyVal {
+  extension [Self <: XInsertListener](x: Self) {
     
-    @scala.inline
-    def setInserted(value: EventObject => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction1(value))
+    inline def setInserted(value: EventObject => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInserting(value: EventObject => Unit): Self = StObject.set(x, "inserting", js.Any.fromFunction1(value))
+    inline def setInserting(value: EventObject => Unit): Self = StObject.set(x, "inserting", js.Any.fromFunction1(value))
   }
 }

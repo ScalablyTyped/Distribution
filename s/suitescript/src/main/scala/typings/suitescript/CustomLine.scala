@@ -26,8 +26,7 @@ trait CustomLine extends StObject {
 }
 object CustomLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isBookSpecific: () => Boolean,
     setAccountId: Double => Unit,
     setBookSpecific: Boolean => Unit,
@@ -42,34 +41,24 @@ object CustomLine {
     __obj.asInstanceOf[CustomLine]
   }
   
-  @scala.inline
-  implicit class CustomLineMutableBuilder[Self <: CustomLine] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLine](x: Self) {
     
-    @scala.inline
-    def setIsBookSpecific(value: () => Boolean): Self = StObject.set(x, "isBookSpecific", js.Any.fromFunction0(value))
+    inline def setIsBookSpecific(value: () => Boolean): Self = StObject.set(x, "isBookSpecific", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAccountId(value: Double => Unit): Self = StObject.set(x, "setAccountId", js.Any.fromFunction1(value))
+    inline def setSetAccountId(value: Double => Unit): Self = StObject.set(x, "setAccountId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBookSpecific(value: Boolean => Unit): Self = StObject.set(x, "setBookSpecific", js.Any.fromFunction1(value))
+    inline def setSetBookSpecific(value: Boolean => Unit): Self = StObject.set(x, "setBookSpecific", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClassId(value: Double => Unit): Self = StObject.set(x, "setClassId", js.Any.fromFunction1(value))
+    inline def setSetClassId(value: Double => Unit): Self = StObject.set(x, "setClassId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCreditAmount(value: String => Unit): Self = StObject.set(x, "setCreditAmount", js.Any.fromFunction1(value))
+    inline def setSetCreditAmount(value: String => Unit): Self = StObject.set(x, "setCreditAmount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDebitAmount(value: String => Unit): Self = StObject.set(x, "setDebitAmount", js.Any.fromFunction1(value))
+    inline def setSetDebitAmount(value: String => Unit): Self = StObject.set(x, "setDebitAmount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDepartmentId(value: Double => Unit): Self = StObject.set(x, "setDepartmentId", js.Any.fromFunction1(value))
+    inline def setSetDepartmentId(value: Double => Unit): Self = StObject.set(x, "setDepartmentId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocationId(value: Double => Unit): Self = StObject.set(x, "setLocationId", js.Any.fromFunction1(value))
+    inline def setSetLocationId(value: Double => Unit): Self = StObject.set(x, "setLocationId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMemo(value: String => Unit): Self = StObject.set(x, "setMemo", js.Any.fromFunction1(value))
+    inline def setSetMemo(value: String => Unit): Self = StObject.set(x, "setMemo", js.Any.fromFunction1(value))
   }
 }

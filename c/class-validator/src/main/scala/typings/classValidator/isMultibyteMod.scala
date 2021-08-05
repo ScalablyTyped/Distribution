@@ -16,11 +16,8 @@ object isMultibyteMod {
   @js.native
   val IS_MULTIBYTE: /* "isMultibyte" */ String = js.native
   
-  @scala.inline
-  def IsMultibyte_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultibyte")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def IsMultibyte_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultibyte")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsMultibyte_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultibyte")().asInstanceOf[PropertyDecorator]
+  inline def IsMultibyte_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultibyte")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def isMultibyte(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultibyte")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMultibyte(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultibyte")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -32,40 +32,29 @@ trait SchemaListContactGroupsResponse extends StObject {
 }
 object SchemaListContactGroupsResponse {
   
-  @scala.inline
-  def apply(): SchemaListContactGroupsResponse = {
+  inline def apply(): SchemaListContactGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListContactGroupsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListContactGroupsResponseMutableBuilder[Self <: SchemaListContactGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListContactGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setContactGroups(value: js.Array[SchemaContactGroup]): Self = StObject.set(x, "contactGroups", value.asInstanceOf[js.Any])
+    inline def setContactGroups(value: js.Array[SchemaContactGroup]): Self = StObject.set(x, "contactGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactGroupsUndefined: Self = StObject.set(x, "contactGroups", js.undefined)
+    inline def setContactGroupsUndefined: Self = StObject.set(x, "contactGroups", js.undefined)
     
-    @scala.inline
-    def setContactGroupsVarargs(value: SchemaContactGroup*): Self = StObject.set(x, "contactGroups", js.Array(value :_*))
+    inline def setContactGroupsVarargs(value: SchemaContactGroup*): Self = StObject.set(x, "contactGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
+    inline def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
+    inline def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
     
-    @scala.inline
-    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+    inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

@@ -20,34 +20,25 @@ trait LabelOverlayOptions
 }
 object LabelOverlayOptions {
   
-  @scala.inline
-  def apply(label: String): LabelOverlayOptions = {
+  inline def apply(label: String): LabelOverlayOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOverlayOptions]
   }
   
-  @scala.inline
-  implicit class LabelOverlayOptionsMutableBuilder[Self <: LabelOverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LabelOverlayOptions](x: Self) {
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyle(value: BorderStyle): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: BorderStyle): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

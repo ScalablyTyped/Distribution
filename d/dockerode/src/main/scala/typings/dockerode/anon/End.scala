@@ -16,25 +16,19 @@ trait End extends StObject {
 }
 object End {
   
-  @scala.inline
-  def apply(End: String, ExitCode: Double, Output: String, Start: String): End = {
+  inline def apply(End: String, ExitCode: Double, Output: String, Start: String): End = {
     val __obj = js.Dynamic.literal(End = End.asInstanceOf[js.Any], ExitCode = ExitCode.asInstanceOf[js.Any], Output = Output.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[End]
   }
   
-  @scala.inline
-  implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+  extension [Self <: End](x: Self) {
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: String): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: String): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

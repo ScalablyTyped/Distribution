@@ -10,12 +10,8 @@ object argsertMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def argsert(callerArguments: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(callerArguments.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def argsert(callerArguments: js.Array[js.Any], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(callerArguments.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def argsert(expected: String, callerArguments: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(expected.asInstanceOf[js.Any], callerArguments.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def argsert(expected: String, callerArguments: js.Array[js.Any], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(expected.asInstanceOf[js.Any], callerArguments.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def argsert(callerArguments: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(callerArguments.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def argsert(callerArguments: js.Array[js.Any], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(callerArguments.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def argsert(expected: String, callerArguments: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(expected.asInstanceOf[js.Any], callerArguments.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def argsert(expected: String, callerArguments: js.Array[js.Any], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("argsert")(expected.asInstanceOf[js.Any], callerArguments.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -13,19 +13,15 @@ trait EditorChangeLinkedList
 }
 object EditorChangeLinkedList {
   
-  @scala.inline
-  def apply(from: Position, text: js.Array[String], to: Position): EditorChangeLinkedList = {
+  inline def apply(from: Position, text: js.Array[String], to: Position): EditorChangeLinkedList = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorChangeLinkedList]
   }
   
-  @scala.inline
-  implicit class EditorChangeLinkedListMutableBuilder[Self <: EditorChangeLinkedList] (val x: Self) extends AnyVal {
+  extension [Self <: EditorChangeLinkedList](x: Self) {
     
-    @scala.inline
-    def setNext(value: EditorChangeLinkedList): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: EditorChangeLinkedList): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

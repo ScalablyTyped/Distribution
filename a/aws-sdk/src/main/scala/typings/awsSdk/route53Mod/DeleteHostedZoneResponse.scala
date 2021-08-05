@@ -13,16 +13,13 @@ trait DeleteHostedZoneResponse extends StObject {
 }
 object DeleteHostedZoneResponse {
   
-  @scala.inline
-  def apply(ChangeInfo: ChangeInfo): DeleteHostedZoneResponse = {
+  inline def apply(ChangeInfo: ChangeInfo): DeleteHostedZoneResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHostedZoneResponse]
   }
   
-  @scala.inline
-  implicit class DeleteHostedZoneResponseMutableBuilder[Self <: DeleteHostedZoneResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHostedZoneResponse](x: Self) {
     
-    @scala.inline
-    def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
+    inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }
 }

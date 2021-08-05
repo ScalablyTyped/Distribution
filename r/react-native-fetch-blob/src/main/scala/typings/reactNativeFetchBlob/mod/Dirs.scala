@@ -26,8 +26,7 @@ trait Dirs extends StObject {
 }
 object Dirs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CacheDir: String,
     DCIMDir: String,
     DocumentDir: String,
@@ -42,34 +41,24 @@ object Dirs {
     __obj.asInstanceOf[Dirs]
   }
   
-  @scala.inline
-  implicit class DirsMutableBuilder[Self <: Dirs] (val x: Self) extends AnyVal {
+  extension [Self <: Dirs](x: Self) {
     
-    @scala.inline
-    def setCacheDir(value: String): Self = StObject.set(x, "CacheDir", value.asInstanceOf[js.Any])
+    inline def setCacheDir(value: String): Self = StObject.set(x, "CacheDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDCIMDir(value: String): Self = StObject.set(x, "DCIMDir", value.asInstanceOf[js.Any])
+    inline def setDCIMDir(value: String): Self = StObject.set(x, "DCIMDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentDir(value: String): Self = StObject.set(x, "DocumentDir", value.asInstanceOf[js.Any])
+    inline def setDocumentDir(value: String): Self = StObject.set(x, "DocumentDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadDir(value: String): Self = StObject.set(x, "DownloadDir", value.asInstanceOf[js.Any])
+    inline def setDownloadDir(value: String): Self = StObject.set(x, "DownloadDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainBundleDir(value: String): Self = StObject.set(x, "MainBundleDir", value.asInstanceOf[js.Any])
+    inline def setMainBundleDir(value: String): Self = StObject.set(x, "MainBundleDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovieDir(value: String): Self = StObject.set(x, "MovieDir", value.asInstanceOf[js.Any])
+    inline def setMovieDir(value: String): Self = StObject.set(x, "MovieDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMusicDir(value: String): Self = StObject.set(x, "MusicDir", value.asInstanceOf[js.Any])
+    inline def setMusicDir(value: String): Self = StObject.set(x, "MusicDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureDir(value: String): Self = StObject.set(x, "PictureDir", value.asInstanceOf[js.Any])
+    inline def setPictureDir(value: String): Self = StObject.set(x, "PictureDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSDCardDir(value: String): Self = StObject.set(x, "SDCardDir", value.asInstanceOf[js.Any])
+    inline def setSDCardDir(value: String): Self = StObject.set(x, "SDCardDir", value.asInstanceOf[js.Any])
   }
 }

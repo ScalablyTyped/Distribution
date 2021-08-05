@@ -32,37 +32,27 @@ trait SchemaShippingsettingsCustomBatchResponseEntry extends StObject {
 }
 object SchemaShippingsettingsCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): SchemaShippingsettingsCustomBatchResponseEntry = {
+  inline def apply(): SchemaShippingsettingsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShippingsettingsCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class SchemaShippingsettingsCustomBatchResponseEntryMutableBuilder[Self <: SchemaShippingsettingsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShippingsettingsCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setShippingSettings(value: SchemaShippingSettings): Self = StObject.set(x, "shippingSettings", value.asInstanceOf[js.Any])
+    inline def setShippingSettings(value: SchemaShippingSettings): Self = StObject.set(x, "shippingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingSettingsUndefined: Self = StObject.set(x, "shippingSettings", js.undefined)
+    inline def setShippingSettingsUndefined: Self = StObject.set(x, "shippingSettings", js.undefined)
   }
 }

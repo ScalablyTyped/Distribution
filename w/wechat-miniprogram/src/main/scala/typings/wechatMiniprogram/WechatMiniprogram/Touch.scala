@@ -17,8 +17,7 @@ trait Touch[Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail 
 }
 object Touch {
   
-  @scala.inline
-  def apply[Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
+  inline def apply[Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
     changedTouches: js.Array[T],
     currentTarget: Target[CurrentTargetDataset],
     detail: Detail,
@@ -32,19 +31,14 @@ object Touch {
     __obj.asInstanceOf[Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset]]
   }
   
-  @scala.inline
-  implicit class TouchMutableBuilder[Self <: Touch[?, ?, ?, ?, ?], Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
+  extension [Self <: Touch[?, ?, ?, ?, ?], Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](x: Self & (Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset])) {
     
-    @scala.inline
-    def setChangedTouches(value: js.Array[T]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    inline def setChangedTouches(value: js.Array[T]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedTouchesVarargs(value: T*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+    inline def setChangedTouchesVarargs(value: T*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
     
-    @scala.inline
-    def setTouches(value: js.Array[T]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    inline def setTouches(value: js.Array[T]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchesVarargs(value: T*): Self = StObject.set(x, "touches", js.Array(value :_*))
+    inline def setTouchesVarargs(value: T*): Self = StObject.set(x, "touches", js.Array(value :_*))
   }
 }

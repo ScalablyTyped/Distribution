@@ -25,26 +25,20 @@ object Interfaces {
   }
   object CollectionLoadOptions {
     
-    @scala.inline
-    def apply(): CollectionLoadOptions = {
+    inline def apply(): CollectionLoadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollectionLoadOptions]
     }
     
-    @scala.inline
-    implicit class CollectionLoadOptionsMutableBuilder[Self <: CollectionLoadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionLoadOptions](x: Self) {
       
-      @scala.inline
-      def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
+      inline def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$skipUndefined: Self = StObject.set(x, "$skip", js.undefined)
+      inline def set$skipUndefined: Self = StObject.set(x, "$skip", js.undefined)
       
-      @scala.inline
-      def set$top(value: Double): Self = StObject.set(x, "$top", value.asInstanceOf[js.Any])
+      inline def set$top(value: Double): Self = StObject.set(x, "$top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$topUndefined: Self = StObject.set(x, "$top", js.undefined)
+      inline def set$topUndefined: Self = StObject.set(x, "$top", js.undefined)
     }
   }
   
@@ -55,20 +49,16 @@ object Interfaces {
   }
   object PresentationData {
     
-    @scala.inline
-    def apply(): PresentationData = {
+    inline def apply(): PresentationData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresentationData]
     }
     
-    @scala.inline
-    implicit class PresentationDataMutableBuilder[Self <: PresentationData] (val x: Self) extends AnyVal {
+    extension [Self <: PresentationData](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -87,26 +77,20 @@ object Interfaces {
   }
   object PresentationLoadOptions {
     
-    @scala.inline
-    def apply(): PresentationLoadOptions = {
+    inline def apply(): PresentationLoadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresentationLoadOptions]
     }
     
-    @scala.inline
-    implicit class PresentationLoadOptionsMutableBuilder[Self <: PresentationLoadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PresentationLoadOptions](x: Self) {
       
-      @scala.inline
-      def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+      inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+      inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
       
-      @scala.inline
-      def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -117,23 +101,18 @@ object Interfaces {
   }
   object SlideCollectionData {
     
-    @scala.inline
-    def apply(): SlideCollectionData = {
+    inline def apply(): SlideCollectionData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlideCollectionData]
     }
     
-    @scala.inline
-    implicit class SlideCollectionDataMutableBuilder[Self <: SlideCollectionData] (val x: Self) extends AnyVal {
+    extension [Self <: SlideCollectionData](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[SlideData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[SlideData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: SlideData*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SlideData*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
@@ -163,26 +142,20 @@ object Interfaces {
   }
   object SlideCollectionLoadOptions {
     
-    @scala.inline
-    def apply(): SlideCollectionLoadOptions = {
+    inline def apply(): SlideCollectionLoadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlideCollectionLoadOptions]
     }
     
-    @scala.inline
-    implicit class SlideCollectionLoadOptionsMutableBuilder[Self <: SlideCollectionLoadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SlideCollectionLoadOptions](x: Self) {
       
-      @scala.inline
-      def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+      inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+      inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
       
-      @scala.inline
-      def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -193,23 +166,18 @@ object Interfaces {
   }
   object SlideCollectionUpdateData {
     
-    @scala.inline
-    def apply(): SlideCollectionUpdateData = {
+    inline def apply(): SlideCollectionUpdateData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlideCollectionUpdateData]
     }
     
-    @scala.inline
-    implicit class SlideCollectionUpdateDataMutableBuilder[Self <: SlideCollectionUpdateData] (val x: Self) extends AnyVal {
+    extension [Self <: SlideCollectionUpdateData](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[SlideData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[SlideData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: SlideData*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SlideData*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
@@ -227,20 +195,16 @@ object Interfaces {
   }
   object SlideData {
     
-    @scala.inline
-    def apply(): SlideData = {
+    inline def apply(): SlideData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlideData]
     }
     
-    @scala.inline
-    implicit class SlideDataMutableBuilder[Self <: SlideData] (val x: Self) extends AnyVal {
+    extension [Self <: SlideData](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -270,26 +234,20 @@ object Interfaces {
   }
   object SlideLoadOptions {
     
-    @scala.inline
-    def apply(): SlideLoadOptions = {
+    inline def apply(): SlideLoadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlideLoadOptions]
     }
     
-    @scala.inline
-    implicit class SlideLoadOptionsMutableBuilder[Self <: SlideLoadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SlideLoadOptions](x: Self) {
       
-      @scala.inline
-      def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+      inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+      inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
       
-      @scala.inline
-      def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
 }

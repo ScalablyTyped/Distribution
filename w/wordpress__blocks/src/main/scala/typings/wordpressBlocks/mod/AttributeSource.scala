@@ -34,27 +34,21 @@ object AttributeSource {
   }
   object Children {
     
-    @scala.inline
-    def apply(): Children = {
+    inline def apply(): Children = {
       val __obj = js.Dynamic.literal(source = "children")
       __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setSource(value: typings.wordpressBlocks.wordpressBlocksStrings.children): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: typings.wordpressBlocks.wordpressBlocksStrings.children): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,39 +68,29 @@ object AttributeSource {
   }
   object HTML {
     
-    @scala.inline
-    def apply(): HTML = {
+    inline def apply(): HTML = {
       val __obj = js.Dynamic.literal(source = "html")
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[HTML]
     }
     
-    @scala.inline
-    implicit class HTMLMutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
+    extension [Self <: HTML](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setMultiline(value: li | p): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: li | p): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setSource(value: html): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: html): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,30 +108,23 @@ object AttributeSource {
   }
   object Meta {
     
-    @scala.inline
-    def apply(meta: String): Meta = {
+    inline def apply(meta: String): Meta = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], source = "meta")
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[Meta]
     }
     
-    @scala.inline
-    implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+    extension [Self <: Meta](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: meta): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: meta): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,8 +148,7 @@ object AttributeSource {
   }
   object Query {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       query: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
       */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any],
@@ -183,33 +159,25 @@ object AttributeSource {
       __obj.asInstanceOf[Query[T]]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query[?], T] (val x: Self & Query[T]) extends AnyVal {
+    extension [Self <: Query[?], T](x: Self & Query[T]) {
       
-      @scala.inline
-      def setDefault(value: js.Array[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Array[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(value: js.Any*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: js.Any*): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setQuery(
+      inline def setQuery(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
         */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any]
       ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: query_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: query_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,33 +195,25 @@ object AttributeSource {
   }
   object Text {
     
-    @scala.inline
-    def apply(): Text = {
+    inline def apply(): Text = {
       val __obj = js.Dynamic.literal(source = "text")
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setSource(value: text): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: text): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

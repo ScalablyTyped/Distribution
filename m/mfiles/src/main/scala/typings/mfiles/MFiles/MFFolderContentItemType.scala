@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFolderContentItemType extends StObject
 object MFFolderContentItemType {
   
-  @scala.inline
-  def ObjectVersion: `4` = 4.asInstanceOf[`4`]
+  inline def ObjectVersion: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def PropertyFolder: `2` = 2.asInstanceOf[`2`]
+  inline def PropertyFolder: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def TraditionalFolder: `3` = 3.asInstanceOf[`3`]
+  inline def TraditionalFolder: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Unknown: `0` = 0.asInstanceOf[`0`]
+  inline def Unknown: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ViewFolder: `1` = 1.asInstanceOf[`1`]
+  inline def ViewFolder: `1` = 1.asInstanceOf[`1`]
 }

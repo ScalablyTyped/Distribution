@@ -13,16 +13,13 @@ trait ChangeResourceRecordSetsResponse extends StObject {
 }
 object ChangeResourceRecordSetsResponse {
   
-  @scala.inline
-  def apply(ChangeInfo: ChangeInfo): ChangeResourceRecordSetsResponse = {
+  inline def apply(ChangeInfo: ChangeInfo): ChangeResourceRecordSetsResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeResourceRecordSetsResponse]
   }
   
-  @scala.inline
-  implicit class ChangeResourceRecordSetsResponseMutableBuilder[Self <: ChangeResourceRecordSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeResourceRecordSetsResponse](x: Self) {
     
-    @scala.inline
-    def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
+    inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }
 }

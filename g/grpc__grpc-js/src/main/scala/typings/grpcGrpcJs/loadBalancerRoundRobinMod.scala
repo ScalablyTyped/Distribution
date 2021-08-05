@@ -22,13 +22,13 @@ object loadBalancerRoundRobinMod {
        with LoadBalancer {
     def this(channelControlHelper: ChannelControlHelper) = this()
     
-    var calculateAndUpdateState: js.Any = js.native
+    /* private */ var calculateAndUpdateState: js.Any = js.native
     
-    val channelControlHelper: js.Any = js.native
+    /* private */ val channelControlHelper: js.Any = js.native
     
-    var currentReadyPicker: js.Any = js.native
+    /* private */ var currentReadyPicker: js.Any = js.native
     
-    var currentState: js.Any = js.native
+    /* private */ var currentState: js.Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -59,13 +59,13 @@ object loadBalancerRoundRobinMod {
     /* CompleteClass */
     override def resetBackoff(): Unit = js.native
     
-    var resetSubchannelList: js.Any = js.native
+    /* private */ var resetSubchannelList: js.Any = js.native
     
-    var subchannelStateCounts: js.Any = js.native
+    /* private */ var subchannelStateCounts: js.Any = js.native
     
-    var subchannelStateListener: js.Any = js.native
+    /* private */ var subchannelStateListener: js.Any = js.native
     
-    var subchannels: js.Any = js.native
+    /* private */ var subchannels: js.Any = js.native
     
     def updateAddressList(addressList: js.Array[SubchannelAddress], lbConfig: LoadBalancingConfig): Unit = js.native
     /**
@@ -84,9 +84,8 @@ object loadBalancerRoundRobinMod {
       attributes: StringDictionary[js.Any]
     ): Unit = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
   }
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
 }

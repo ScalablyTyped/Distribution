@@ -36,40 +36,29 @@ trait DimensionalDefinitionProperties extends StObject {
 }
 object DimensionalDefinitionProperties {
   
-  @scala.inline
-  def apply(): DimensionalDefinitionProperties = {
+  inline def apply(): DimensionalDefinitionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionalDefinitionProperties]
   }
   
-  @scala.inline
-  implicit class DimensionalDefinitionPropertiesMutableBuilder[Self <: DimensionalDefinitionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionalDefinitionProperties](x: Self) {
     
-    @scala.inline
-    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+    inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+    inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
-    @scala.inline
-    def setIsSlice(value: Boolean): Self = StObject.set(x, "isSlice", value.asInstanceOf[js.Any])
+    inline def setIsSlice(value: Boolean): Self = StObject.set(x, "isSlice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSliceUndefined: Self = StObject.set(x, "isSlice", js.undefined)
+    inline def setIsSliceUndefined: Self = StObject.set(x, "isSlice", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "values", js.Array(value :_*))
     
-    @scala.inline
-    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
+    inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
+    inline def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
   }
 }

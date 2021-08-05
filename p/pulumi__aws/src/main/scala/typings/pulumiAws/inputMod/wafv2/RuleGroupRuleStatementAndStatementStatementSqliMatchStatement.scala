@@ -23,8 +23,7 @@ trait RuleGroupRuleStatementAndStatementStatementSqliMatchStatement extends StOb
 }
 object RuleGroupRuleStatementAndStatementStatementSqliMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: Input[
       js.Array[
         Input[RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation]
@@ -35,17 +34,13 @@ object RuleGroupRuleStatementAndStatementStatementSqliMatchStatement {
     __obj.asInstanceOf[RuleGroupRuleStatementAndStatementStatementSqliMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementAndStatementStatementSqliMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementAndStatementStatementSqliMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementAndStatementStatementSqliMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: Input[RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: Input[RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: Input[
           js.Array[
             Input[RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation]
@@ -53,7 +48,6 @@ object RuleGroupRuleStatementAndStatementStatementSqliMatchStatement {
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

@@ -18,19 +18,15 @@ trait CommentPosition extends StObject {
 }
 object CommentPosition {
   
-  @scala.inline
-  def apply(line: Double, offset: Double): CommentPosition = {
+  inline def apply(line: Double, offset: Double): CommentPosition = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentPosition]
   }
   
-  @scala.inline
-  implicit class CommentPositionMutableBuilder[Self <: CommentPosition] (val x: Self) extends AnyVal {
+  extension [Self <: CommentPosition](x: Self) {
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

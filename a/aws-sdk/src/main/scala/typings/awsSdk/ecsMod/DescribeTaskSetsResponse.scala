@@ -18,31 +18,23 @@ trait DescribeTaskSetsResponse extends StObject {
 }
 object DescribeTaskSetsResponse {
   
-  @scala.inline
-  def apply(): DescribeTaskSetsResponse = {
+  inline def apply(): DescribeTaskSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTaskSetsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTaskSetsResponseMutableBuilder[Self <: DescribeTaskSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTaskSetsResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskSets(value: TaskSets): Self = StObject.set(x, "taskSets", value.asInstanceOf[js.Any])
+    inline def setTaskSets(value: TaskSets): Self = StObject.set(x, "taskSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
+    inline def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
     
-    @scala.inline
-    def setTaskSetsVarargs(value: TaskSet*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
+    inline def setTaskSetsVarargs(value: TaskSet*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
   }
 }

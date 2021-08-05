@@ -17,22 +17,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compare(addr1: String, addr2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(addr1.asInstanceOf[js.Any], addr2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(addr1: String, addr2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(addr1.asInstanceOf[js.Any], addr2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def compareCIDR(cidr1: String, cidr2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareCIDR")(cidr1.asInstanceOf[js.Any], cidr2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareCIDR(cidr1: String, cidr2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareCIDR")(cidr1.asInstanceOf[js.Any], cidr2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def createAddrRange(begin: String, end: String): AddrRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddrRange")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[AddrRange]
+  inline def createAddrRange(begin: String, end: String): AddrRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddrRange")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[AddrRange]
   
-  @scala.inline
-  def createCIDR(addr: String): CIDR = ^.asInstanceOf[js.Dynamic].applyDynamic("createCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[CIDR]
-  @scala.inline
-  def createCIDR(addr: String, len: Double): CIDR = (^.asInstanceOf[js.Dynamic].applyDynamic("createCIDR")(addr.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[CIDR]
+  inline def createCIDR(addr: String): CIDR = ^.asInstanceOf[js.Dynamic].applyDynamic("createCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[CIDR]
+  inline def createCIDR(addr: String, len: Double): CIDR = (^.asInstanceOf[js.Dynamic].applyDynamic("createCIDR")(addr.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[CIDR]
   
-  @scala.inline
-  def parse(input: String): Addr = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Addr]
+  inline def parse(input: String): Addr = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Addr]
   
   @js.native
   trait Addr extends StObject {
@@ -61,23 +55,18 @@ object mod {
   }
   object AddrRange {
     
-    @scala.inline
-    def apply(contains: String => Boolean, first: () => Addr, last: () => Addr): AddrRange = {
+    inline def apply(contains: String => Boolean, first: () => Addr, last: () => Addr): AddrRange = {
       val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), first = js.Any.fromFunction0(first), last = js.Any.fromFunction0(last))
       __obj.asInstanceOf[AddrRange]
     }
     
-    @scala.inline
-    implicit class AddrRangeMutableBuilder[Self <: AddrRange] (val x: Self) extends AnyVal {
+    extension [Self <: AddrRange](x: Self) {
       
-      @scala.inline
-      def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirst(value: () => Addr): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => Addr): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLast(value: () => Addr): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      inline def setLast(value: () => Addr): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     }
   }
   
@@ -111,32 +100,24 @@ object mod {
   }
   object ToStringOpts {
     
-    @scala.inline
-    def apply(): ToStringOpts = {
+    inline def apply(): ToStringOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToStringOpts]
     }
     
-    @scala.inline
-    implicit class ToStringOptsMutableBuilder[Self <: ToStringOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ToStringOpts](x: Self) {
       
-      @scala.inline
-      def setFormat(value: auto | v4 | `v4-mapped` | v6): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: auto | v4 | `v4-mapped` | v6): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setZeroElide(value: Boolean): Self = StObject.set(x, "zeroElide", value.asInstanceOf[js.Any])
+      inline def setZeroElide(value: Boolean): Self = StObject.set(x, "zeroElide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroElideUndefined: Self = StObject.set(x, "zeroElide", js.undefined)
+      inline def setZeroElideUndefined: Self = StObject.set(x, "zeroElide", js.undefined)
       
-      @scala.inline
-      def setZeroPad(value: Boolean): Self = StObject.set(x, "zeroPad", value.asInstanceOf[js.Any])
+      inline def setZeroPad(value: Boolean): Self = StObject.set(x, "zeroPad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroPadUndefined: Self = StObject.set(x, "zeroPad", js.undefined)
+      inline def setZeroPadUndefined: Self = StObject.set(x, "zeroPad", js.undefined)
     }
   }
 }

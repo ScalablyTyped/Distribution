@@ -13,16 +13,13 @@ trait EntityTypesListItem extends StObject {
 }
 object EntityTypesListItem {
   
-  @scala.inline
-  def apply(Type: EntityTypeName): EntityTypesListItem = {
+  inline def apply(Type: EntityTypeName): EntityTypesListItem = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityTypesListItem]
   }
   
-  @scala.inline
-  implicit class EntityTypesListItemMutableBuilder[Self <: EntityTypesListItem] (val x: Self) extends AnyVal {
+  extension [Self <: EntityTypesListItem](x: Self) {
     
-    @scala.inline
-    def setType(value: EntityTypeName): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: EntityTypeName): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait Typeoftag extends StObject {
 }
 object Typeoftag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createDeleteTag: AxiosInstance => js.Function0[js.Promise[Unit]],
     createUpdateTag: AxiosInstance => js.Function0[js.Promise[Tag]],
     default: AxiosInstance => TagApi,
@@ -36,22 +35,16 @@ object Typeoftag {
     __obj.asInstanceOf[Typeoftag]
   }
   
-  @scala.inline
-  implicit class TypeoftagMutableBuilder[Self <: Typeoftag] (val x: Self) extends AnyVal {
+  extension [Self <: Typeoftag](x: Self) {
     
-    @scala.inline
-    def setCreateDeleteTag(value: AxiosInstance => js.Function0[js.Promise[Unit]]): Self = StObject.set(x, "createDeleteTag", js.Any.fromFunction1(value))
+    inline def setCreateDeleteTag(value: AxiosInstance => js.Function0[js.Promise[Unit]]): Self = StObject.set(x, "createDeleteTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUpdateTag(value: AxiosInstance => js.Function0[js.Promise[Tag]]): Self = StObject.set(x, "createUpdateTag", js.Any.fromFunction1(value))
+    inline def setCreateUpdateTag(value: AxiosInstance => js.Function0[js.Promise[Tag]]): Self = StObject.set(x, "createUpdateTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefault(value: AxiosInstance => TagApi): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+    inline def setDefault(value: AxiosInstance => TagApi): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrapTag(value: (AxiosInstance, TagProps) => Tag): Self = StObject.set(x, "wrapTag", js.Any.fromFunction2(value))
+    inline def setWrapTag(value: (AxiosInstance, TagProps) => Tag): Self = StObject.set(x, "wrapTag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapTagCollection(value: (AxiosInstance, CollectionProp[TagProps]) => Collection[Tag, TagProps]): Self = StObject.set(x, "wrapTagCollection", js.Any.fromFunction2(value))
+    inline def setWrapTagCollection(value: (AxiosInstance, CollectionProp[TagProps]) => Collection[Tag, TagProps]): Self = StObject.set(x, "wrapTagCollection", js.Any.fromFunction2(value))
   }
 }

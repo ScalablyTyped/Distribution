@@ -13,16 +13,13 @@ trait CreateHumanTaskUiResponse extends StObject {
 }
 object CreateHumanTaskUiResponse {
   
-  @scala.inline
-  def apply(HumanTaskUiArn: HumanTaskUiArn): CreateHumanTaskUiResponse = {
+  inline def apply(HumanTaskUiArn: HumanTaskUiArn): CreateHumanTaskUiResponse = {
     val __obj = js.Dynamic.literal(HumanTaskUiArn = HumanTaskUiArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHumanTaskUiResponse]
   }
   
-  @scala.inline
-  implicit class CreateHumanTaskUiResponseMutableBuilder[Self <: CreateHumanTaskUiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHumanTaskUiResponse](x: Self) {
     
-    @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
   }
 }

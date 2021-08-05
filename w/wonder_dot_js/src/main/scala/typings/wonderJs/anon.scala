@@ -26,8 +26,7 @@ object anon {
   }
   object Alpha {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Boolean,
       antialias: Boolean,
       depth: Boolean,
@@ -39,26 +38,19 @@ object anon {
       __obj.asInstanceOf[Alpha]
     }
     
-    @scala.inline
-    implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+    extension [Self <: Alpha](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+      inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+      inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+      inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+      inline def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,38 +68,28 @@ object anon {
   }
   object CanvasId {
     
-    @scala.inline
-    def apply(): CanvasId = {
+    inline def apply(): CanvasId = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CanvasId]
     }
     
-    @scala.inline
-    implicit class CanvasIdMutableBuilder[Self <: CanvasId] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasId](x: Self) {
       
-      @scala.inline
-      def setContextConfig(value: Options): Self = StObject.set(x, "contextConfig", value.asInstanceOf[js.Any])
+      inline def setContextConfig(value: Options): Self = StObject.set(x, "contextConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextConfigUndefined: Self = StObject.set(x, "contextConfig", js.undefined)
+      inline def setContextConfigUndefined: Self = StObject.set(x, "contextConfig", js.undefined)
       
-      @scala.inline
-      def setIsTest(value: Boolean): Self = StObject.set(x, "isTest", value.asInstanceOf[js.Any])
+      inline def setIsTest(value: Boolean): Self = StObject.set(x, "isTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTestUndefined: Self = StObject.set(x, "isTest", js.undefined)
+      inline def setIsTestUndefined: Self = StObject.set(x, "isTest", js.undefined)
       
-      @scala.inline
-      def setScreenSize(value: EScreenSize): Self = StObject.set(x, "screenSize", value.asInstanceOf[js.Any])
+      inline def setScreenSize(value: EScreenSize): Self = StObject.set(x, "screenSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenSizeUndefined: Self = StObject.set(x, "screenSize", js.undefined)
+      inline def setScreenSizeUndefined: Self = StObject.set(x, "screenSize", js.undefined)
       
-      @scala.inline
-      def setUseDevicePixelRatio(value: Boolean): Self = StObject.set(x, "useDevicePixelRatio", value.asInstanceOf[js.Any])
+      inline def setUseDevicePixelRatio(value: Boolean): Self = StObject.set(x, "useDevicePixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDevicePixelRatioUndefined: Self = StObject.set(x, "useDevicePixelRatio", js.undefined)
+      inline def setUseDevicePixelRatioUndefined: Self = StObject.set(x, "useDevicePixelRatio", js.undefined)
     }
   }
   
@@ -119,26 +101,20 @@ object anon {
   }
   object Faces {
     
-    @scala.inline
-    def apply(faces: js.Array[Face3], vertices: js.Array[js.Any]): Faces = {
+    inline def apply(faces: js.Array[Face3], vertices: js.Array[js.Any]): Faces = {
       val __obj = js.Dynamic.literal(faces = faces.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[Faces]
     }
     
-    @scala.inline
-    implicit class FacesMutableBuilder[Self <: Faces] (val x: Self) extends AnyVal {
+    extension [Self <: Faces](x: Self) {
       
-      @scala.inline
-      def setFaces(value: js.Array[Face3]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
+      inline def setFaces(value: js.Array[Face3]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value :_*))
       
-      @scala.inline
-      def setVertices(value: js.Array[js.Any]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: js.Array[js.Any]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticesVarargs(value: js.Any*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: js.Any*): Self = StObject.set(x, "vertices", js.Array(value :_*))
     }
   }
   
@@ -148,17 +124,14 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(options: Alpha): Options = {
+    inline def apply(options: Alpha): Options = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Alpha): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Alpha): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,20 +153,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: js.Any, y: js.Any): X = {
+    inline def apply(x: js.Any, y: js.Any): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,20 +174,16 @@ object anon {
   }
   object Y {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Y = {
+    inline def apply(x: Double, y: Double): Y = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Y]
     }
     
-    @scala.inline
-    implicit class YMutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
+    extension [Self <: Y](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

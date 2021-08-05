@@ -75,164 +75,112 @@ object mod {
   }
   object ReactTagsInputProps {
     
-    @scala.inline
-    def apply[Tag](onChange: (js.Array[Tag], js.Array[Tag], js.Array[Double]) => Unit, value: js.Array[Tag]): ReactTagsInputProps[Tag] = {
+    inline def apply[Tag](onChange: (js.Array[Tag], js.Array[Tag], js.Array[Double]) => Unit, value: js.Array[Tag]): ReactTagsInputProps[Tag] = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction3(onChange), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTagsInputProps[Tag]]
     }
     
-    @scala.inline
-    implicit class ReactTagsInputPropsMutableBuilder[Self <: ReactTagsInputProps[?], Tag] (val x: Self & ReactTagsInputProps[Tag]) extends AnyVal {
+    extension [Self <: ReactTagsInputProps[?], Tag](x: Self & ReactTagsInputProps[Tag]) {
       
-      @scala.inline
-      def setAddKeys(value: js.Array[Double | String]): Self = StObject.set(x, "addKeys", value.asInstanceOf[js.Any])
+      inline def setAddKeys(value: js.Array[Double | String]): Self = StObject.set(x, "addKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddKeysUndefined: Self = StObject.set(x, "addKeys", js.undefined)
+      inline def setAddKeysUndefined: Self = StObject.set(x, "addKeys", js.undefined)
       
-      @scala.inline
-      def setAddKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "addKeys", js.Array(value :_*))
+      inline def setAddKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "addKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
+      inline def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddOnBlurUndefined: Self = StObject.set(x, "addOnBlur", js.undefined)
+      inline def setAddOnBlurUndefined: Self = StObject.set(x, "addOnBlur", js.undefined)
       
-      @scala.inline
-      def setAddOnPaste(value: Boolean): Self = StObject.set(x, "addOnPaste", value.asInstanceOf[js.Any])
+      inline def setAddOnPaste(value: Boolean): Self = StObject.set(x, "addOnPaste", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
+      inline def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCurrentValue(value: String): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+      inline def setCurrentValue(value: String): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentValueUndefined: Self = StObject.set(x, "currentValue", js.undefined)
+      inline def setCurrentValueUndefined: Self = StObject.set(x, "currentValue", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFocusedClassName(value: String): Self = StObject.set(x, "focusedClassName", value.asInstanceOf[js.Any])
+      inline def setFocusedClassName(value: String): Self = StObject.set(x, "focusedClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedClassNameUndefined: Self = StObject.set(x, "focusedClassName", js.undefined)
+      inline def setFocusedClassNameUndefined: Self = StObject.set(x, "focusedClassName", js.undefined)
       
-      @scala.inline
-      def setInputProps(value: InputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: InputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
+      inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
       
-      @scala.inline
-      def setMaxTags(value: Double): Self = StObject.set(x, "maxTags", value.asInstanceOf[js.Any])
+      inline def setMaxTags(value: Double): Self = StObject.set(x, "maxTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTagsUndefined: Self = StObject.set(x, "maxTags", js.undefined)
+      inline def setMaxTagsUndefined: Self = StObject.set(x, "maxTags", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (js.Array[Tag], js.Array[Tag], js.Array[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+      inline def setOnChange(value: (js.Array[Tag], js.Array[Tag], js.Array[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeInput(value: /* value */ String => Unit): Self = StObject.set(x, "onChangeInput", js.Any.fromFunction1(value))
+      inline def setOnChangeInput(value: /* value */ String => Unit): Self = StObject.set(x, "onChangeInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeInputUndefined: Self = StObject.set(x, "onChangeInput", js.undefined)
+      inline def setOnChangeInputUndefined: Self = StObject.set(x, "onChangeInput", js.undefined)
       
-      @scala.inline
-      def setOnValidationReject(value: /* tags */ js.Array[String] => Unit): Self = StObject.set(x, "onValidationReject", js.Any.fromFunction1(value))
+      inline def setOnValidationReject(value: /* tags */ js.Array[String] => Unit): Self = StObject.set(x, "onValidationReject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValidationRejectUndefined: Self = StObject.set(x, "onValidationReject", js.undefined)
+      inline def setOnValidationRejectUndefined: Self = StObject.set(x, "onValidationReject", js.undefined)
       
-      @scala.inline
-      def setOnlyUnique(value: Boolean): Self = StObject.set(x, "onlyUnique", value.asInstanceOf[js.Any])
+      inline def setOnlyUnique(value: Boolean): Self = StObject.set(x, "onlyUnique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyUniqueUndefined: Self = StObject.set(x, "onlyUnique", js.undefined)
+      inline def setOnlyUniqueUndefined: Self = StObject.set(x, "onlyUnique", js.undefined)
       
-      @scala.inline
-      def setPasteSplit(value: /* data */ String => js.Array[String]): Self = StObject.set(x, "pasteSplit", js.Any.fromFunction1(value))
+      inline def setPasteSplit(value: /* data */ String => js.Array[String]): Self = StObject.set(x, "pasteSplit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPasteSplitUndefined: Self = StObject.set(x, "pasteSplit", js.undefined)
+      inline def setPasteSplitUndefined: Self = StObject.set(x, "pasteSplit", js.undefined)
       
-      @scala.inline
-      def setPreventSubmit(value: Boolean): Self = StObject.set(x, "preventSubmit", value.asInstanceOf[js.Any])
+      inline def setPreventSubmit(value: Boolean): Self = StObject.set(x, "preventSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventSubmitUndefined: Self = StObject.set(x, "preventSubmit", js.undefined)
+      inline def setPreventSubmitUndefined: Self = StObject.set(x, "preventSubmit", js.undefined)
       
-      @scala.inline
-      def setRemoveKeys(value: js.Array[Double]): Self = StObject.set(x, "removeKeys", value.asInstanceOf[js.Any])
+      inline def setRemoveKeys(value: js.Array[Double]): Self = StObject.set(x, "removeKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveKeysUndefined: Self = StObject.set(x, "removeKeys", js.undefined)
+      inline def setRemoveKeysUndefined: Self = StObject.set(x, "removeKeys", js.undefined)
       
-      @scala.inline
-      def setRemoveKeysVarargs(value: Double*): Self = StObject.set(x, "removeKeys", js.Array(value :_*))
+      inline def setRemoveKeysVarargs(value: Double*): Self = StObject.set(x, "removeKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setRenderInput(value: /* props */ RenderInputProps[Tag] => ReactNode): Self = StObject.set(x, "renderInput", js.Any.fromFunction1(value))
+      inline def setRenderInput(value: /* props */ RenderInputProps[Tag] => ReactNode): Self = StObject.set(x, "renderInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderInputUndefined: Self = StObject.set(x, "renderInput", js.undefined)
+      inline def setRenderInputUndefined: Self = StObject.set(x, "renderInput", js.undefined)
       
-      @scala.inline
-      def setRenderLayout(value: (/* tagElements */ js.Array[ReactElement], /* inputElement */ ReactElement) => ReactChild): Self = StObject.set(x, "renderLayout", js.Any.fromFunction2(value))
+      inline def setRenderLayout(value: (/* tagElements */ js.Array[ReactElement], /* inputElement */ ReactElement) => ReactChild): Self = StObject.set(x, "renderLayout", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderLayoutUndefined: Self = StObject.set(x, "renderLayout", js.undefined)
+      inline def setRenderLayoutUndefined: Self = StObject.set(x, "renderLayout", js.undefined)
       
-      @scala.inline
-      def setRenderTag(value: /* props */ RenderTagProps[Tag] => ReactNode): Self = StObject.set(x, "renderTag", js.Any.fromFunction1(value))
+      inline def setRenderTag(value: /* props */ RenderTagProps[Tag] => ReactNode): Self = StObject.set(x, "renderTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTagUndefined: Self = StObject.set(x, "renderTag", js.undefined)
+      inline def setRenderTagUndefined: Self = StObject.set(x, "renderTag", js.undefined)
       
-      @scala.inline
-      def setTagDisplayProp(value: /* keyof Tag */ String): Self = StObject.set(x, "tagDisplayProp", value.asInstanceOf[js.Any])
+      inline def setTagDisplayProp(value: /* keyof Tag */ String): Self = StObject.set(x, "tagDisplayProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagDisplayPropNull: Self = StObject.set(x, "tagDisplayProp", null)
+      inline def setTagDisplayPropNull: Self = StObject.set(x, "tagDisplayProp", null)
       
-      @scala.inline
-      def setTagDisplayPropUndefined: Self = StObject.set(x, "tagDisplayProp", js.undefined)
+      inline def setTagDisplayPropUndefined: Self = StObject.set(x, "tagDisplayProp", js.undefined)
       
-      @scala.inline
-      def setTagProps(value: TagProps): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
+      inline def setTagProps(value: TagProps): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
+      inline def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
       
-      @scala.inline
-      def setValidationRegex(value: RegExp): Self = StObject.set(x, "validationRegex", value.asInstanceOf[js.Any])
+      inline def setValidationRegex(value: RegExp): Self = StObject.set(x, "validationRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationRegexUndefined: Self = StObject.set(x, "validationRegex", js.undefined)
+      inline def setValidationRegexUndefined: Self = StObject.set(x, "validationRegex", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Array[Tag]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Tag]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: Tag*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Tag*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -251,26 +199,20 @@ object mod {
   }
   object RenderInputProps {
     
-    @scala.inline
-    def apply[Tag](addTag: Tag => Unit, onChange: ChangeEvent[Value] => Unit, ref: js.Any => Unit, value: Tag): RenderInputProps[Tag] = {
+    inline def apply[Tag](addTag: Tag => Unit, onChange: ChangeEvent[Value] => Unit, ref: js.Any => Unit, value: Tag): RenderInputProps[Tag] = {
       val __obj = js.Dynamic.literal(addTag = js.Any.fromFunction1(addTag), onChange = js.Any.fromFunction1(onChange), ref = js.Any.fromFunction1(ref), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderInputProps[Tag]]
     }
     
-    @scala.inline
-    implicit class RenderInputPropsMutableBuilder[Self <: RenderInputProps[?], Tag] (val x: Self & RenderInputProps[Tag]) extends AnyVal {
+    extension [Self <: RenderInputProps[?], Tag](x: Self & RenderInputProps[Tag]) {
       
-      @scala.inline
-      def setAddTag(value: Tag => Unit): Self = StObject.set(x, "addTag", js.Any.fromFunction1(value))
+      inline def setAddTag(value: Tag => Unit): Self = StObject.set(x, "addTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChange(value: ChangeEvent[Value] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: ChangeEvent[Value] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRef(value: js.Any => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: js.Any => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: Tag): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Tag): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,26 +236,20 @@ object mod {
   }
   object RenderTagProps {
     
-    @scala.inline
-    def apply[Tag](disabled: Boolean, getTagDisplayValue: Tag => String, onRemove: Double => Unit, tag: Tag): RenderTagProps[Tag] = {
+    inline def apply[Tag](disabled: Boolean, getTagDisplayValue: Tag => String, onRemove: Double => Unit, tag: Tag): RenderTagProps[Tag] = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], getTagDisplayValue = js.Any.fromFunction1(getTagDisplayValue), onRemove = js.Any.fromFunction1(onRemove), tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderTagProps[Tag]]
     }
     
-    @scala.inline
-    implicit class RenderTagPropsMutableBuilder[Self <: RenderTagProps[?], Tag] (val x: Self & RenderTagProps[Tag]) extends AnyVal {
+    extension [Self <: RenderTagProps[?], Tag](x: Self & RenderTagProps[Tag]) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetTagDisplayValue(value: Tag => String): Self = StObject.set(x, "getTagDisplayValue", js.Any.fromFunction1(value))
+      inline def setGetTagDisplayValue(value: Tag => String): Self = StObject.set(x, "getTagDisplayValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRemove(value: Double => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+      inline def setOnRemove(value: Double => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   

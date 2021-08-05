@@ -16,16 +16,13 @@ trait GroupSubject extends StObject {
 }
 object GroupSubject {
   
-  @scala.inline
-  def apply(name: String): GroupSubject = {
+  inline def apply(name: String): GroupSubject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupSubject]
   }
   
-  @scala.inline
-  implicit class GroupSubjectMutableBuilder[Self <: GroupSubject] (val x: Self) extends AnyVal {
+  extension [Self <: GroupSubject](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

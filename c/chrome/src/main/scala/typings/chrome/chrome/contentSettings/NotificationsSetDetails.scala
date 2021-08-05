@@ -16,16 +16,13 @@ trait NotificationsSetDetails
 }
 object NotificationsSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | ask): NotificationsSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | ask): NotificationsSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationsSetDetails]
   }
   
-  @scala.inline
-  implicit class NotificationsSetDetailsMutableBuilder[Self <: NotificationsSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationsSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

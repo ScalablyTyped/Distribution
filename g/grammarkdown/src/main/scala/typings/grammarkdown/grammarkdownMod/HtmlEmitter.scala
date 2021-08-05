@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class HtmlEmitter protected () extends Emitter {
   def this(options: CompilerOptions) = this()
   
-  var emitLinkAnchor: js.Any = js.native
+  /* private */ var emitLinkAnchor: js.Any = js.native
   
-  var emitNodeWithLink: js.Any = js.native
+  /* private */ var emitNodeWithLink: js.Any = js.native
   
   /* protected */ def emitPlaceholder(node: LexicalSymbol): Unit = js.native
 }

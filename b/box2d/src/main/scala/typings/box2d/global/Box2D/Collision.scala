@@ -488,10 +488,8 @@ object Collision {
         * @param vertexCount Number of vertices in the shape, default value is 0 and in the box2dweb.js code it is ignored.
         * @return Convex polygon shape.
         **/
-      @scala.inline
-      def AsArray(vertices: js.Array[b2Vec2]): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = ^.asInstanceOf[js.Dynamic].applyDynamic("AsArray")(vertices.asInstanceOf[js.Any]).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
-      @scala.inline
-      def AsArray(vertices: js.Array[b2Vec2], vertexCount: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsArray")(vertices.asInstanceOf[js.Any], vertexCount.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsArray(vertices: js.Array[b2Vec2]): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = ^.asInstanceOf[js.Dynamic].applyDynamic("AsArray")(vertices.asInstanceOf[js.Any]).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsArray(vertices: js.Array[b2Vec2], vertexCount: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsArray")(vertices.asInstanceOf[js.Any], vertexCount.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
       
       /**
         * Build vertices to represent an axis-aligned box.
@@ -499,8 +497,7 @@ object Collision {
         * @param hy The half-height.
         * @return Box polygon shape.
         **/
-      @scala.inline
-      def AsBox(hx: Double, hy: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsBox(hx: Double, hy: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
       
       /**
         * Creates a single edge from two vertices.
@@ -508,8 +505,7 @@ object Collision {
         * @param v2 Second vertex.
         * @return Edge polygon shape.
         **/
-      @scala.inline
-      def AsEdge(v1: b2Vec2, b2: b2Vec2): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsEdge")(v1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsEdge(v1: b2Vec2, b2: b2Vec2): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsEdge")(v1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
       
       /**
         * Build vertices to represent an oriented box.
@@ -519,14 +515,10 @@ object Collision {
         * @param angle The rotation of the box in local coordinates, default is 0.0.
         * @return Oriented box shape.
         **/
-      @scala.inline
-      def AsOrientedBox(hx: Double, hy: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
-      @scala.inline
-      def AsOrientedBox(hx: Double, hy: Double, center: Unit, angle: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any], center.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
-      @scala.inline
-      def AsOrientedBox(hx: Double, hy: Double, center: b2Vec2): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
-      @scala.inline
-      def AsOrientedBox(hx: Double, hy: Double, center: b2Vec2, angle: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any], center.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsOrientedBox(hx: Double, hy: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsOrientedBox(hx: Double, hy: Double, center: Unit, angle: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any], center.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsOrientedBox(hx: Double, hy: Double, center: b2Vec2): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsOrientedBox(hx: Double, hy: Double, center: b2Vec2, angle: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsOrientedBox")(hx.asInstanceOf[js.Any], hy.asInstanceOf[js.Any], center.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
       
       /**
         * This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.
@@ -534,10 +526,8 @@ object Collision {
         * @param vertexCount The number of vertices, default is 0 and in the box2dweb.js code it is ignored.
         * @return Convex polygon shape.
         **/
-      @scala.inline
-      def AsVector(vertices: js.Array[b2Vec2]): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = ^.asInstanceOf[js.Dynamic].applyDynamic("AsVector")(vertices.asInstanceOf[js.Any]).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
-      @scala.inline
-      def AsVector(vertices: js.Array[b2Vec2], vertexCount: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsVector")(vertices.asInstanceOf[js.Any], vertexCount.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsVector(vertices: js.Array[b2Vec2]): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = ^.asInstanceOf[js.Dynamic].applyDynamic("AsVector")(vertices.asInstanceOf[js.Any]).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
+      inline def AsVector(vertices: js.Array[b2Vec2], vertexCount: Double): typings.box2d.Box2D.Collision.Shapes.b2PolygonShape = (^.asInstanceOf[js.Dynamic].applyDynamic("AsVector")(vertices.asInstanceOf[js.Any], vertexCount.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.Shapes.b2PolygonShape]
     }
     
     @JSGlobal("Box2D.Collision.Shapes.b2Shape")
@@ -632,8 +622,7 @@ object Collision {
         * @param transform2 shape2 transform to apply.
         * @return True if shape1 and shape2 overlap, otherwise false.
         **/
-      @scala.inline
-      def TestOverlap(
+      inline def TestOverlap(
         shape1: typings.box2d.Box2D.Collision.Shapes.b2Shape,
         transform1: b2Transform,
         shape2: typings.box2d.Box2D.Collision.Shapes.b2Shape,
@@ -643,14 +632,12 @@ object Collision {
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.e_circleShape")
       @js.native
       def e_circleShape: Double = js.native
-      @scala.inline
-      def e_circleShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_circleShape")(x.asInstanceOf[js.Any])
+      inline def e_circleShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_circleShape")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.e_edgeShape")
       @js.native
       def e_edgeShape: Double = js.native
-      @scala.inline
-      def e_edgeShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_edgeShape")(x.asInstanceOf[js.Any])
+      inline def e_edgeShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_edgeShape")(x.asInstanceOf[js.Any])
       
       /**
         * Return value for TestSegment indicating a hit.
@@ -658,8 +645,7 @@ object Collision {
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.e_hitCollide")
       @js.native
       def e_hitCollide: Double = js.native
-      @scala.inline
-      def e_hitCollide_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_hitCollide")(x.asInstanceOf[js.Any])
+      inline def e_hitCollide_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_hitCollide")(x.asInstanceOf[js.Any])
       
       /**
         * Return value for TestSegment indicating a miss.
@@ -667,27 +653,23 @@ object Collision {
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.e_missCollide")
       @js.native
       def e_missCollide: Double = js.native
-      @scala.inline
-      def e_missCollide_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_missCollide")(x.asInstanceOf[js.Any])
+      inline def e_missCollide_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_missCollide")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.e_polygonShape")
       @js.native
       def e_polygonShape: Double = js.native
-      @scala.inline
-      def e_polygonShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_polygonShape")(x.asInstanceOf[js.Any])
+      inline def e_polygonShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_polygonShape")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.e_shapeTypeCount")
       @js.native
       def e_shapeTypeCount: Double = js.native
-      @scala.inline
-      def e_shapeTypeCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_shapeTypeCount")(x.asInstanceOf[js.Any])
+      inline def e_shapeTypeCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_shapeTypeCount")(x.asInstanceOf[js.Any])
       
       // Note: these enums are public in the source but no referenced by the documentation
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.e_unknownShape")
       @js.native
       def e_unknownShape: Double = js.native
-      @scala.inline
-      def e_unknownShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_unknownShape")(x.asInstanceOf[js.Any])
+      inline def e_unknownShape_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_unknownShape")(x.asInstanceOf[js.Any])
       
       /**
         * Return value for TestSegment indicating that the segment starting point, p1, is already inside the shape.
@@ -695,8 +677,7 @@ object Collision {
       @JSGlobal("Box2D.Collision.Shapes.b2Shape.startsInsideCollide")
       @js.native
       def startsInsideCollide: Double = js.native
-      @scala.inline
-      def startsInsideCollide_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startsInsideCollide")(x.asInstanceOf[js.Any])
+      inline def startsInsideCollide_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startsInsideCollide")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -788,8 +769,7 @@ object Collision {
       * @param aabb2 Second AABB to combine.
       * @return New AABB with max values from aabb1 and aabb2.
       **/
-    @scala.inline
-    def Combine(aabb1: typings.box2d.Box2D.Collision.b2AABB, aabb2: typings.box2d.Box2D.Collision.b2AABB): typings.box2d.Box2D.Collision.b2AABB = (^.asInstanceOf[js.Dynamic].applyDynamic("Combine")(aabb1.asInstanceOf[js.Any], aabb2.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.b2AABB]
+    inline def Combine(aabb1: typings.box2d.Box2D.Collision.b2AABB, aabb2: typings.box2d.Box2D.Collision.b2AABB): typings.box2d.Box2D.Collision.b2AABB = (^.asInstanceOf[js.Dynamic].applyDynamic("Combine")(aabb1.asInstanceOf[js.Any], aabb2.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Collision.b2AABB]
   }
   
   @JSGlobal("Box2D.Collision.b2ContactID")
@@ -1317,8 +1297,7 @@ object Collision {
     @JSGlobal("Box2D.Collision.b2Manifold.e_circles")
     @js.native
     def e_circles: Double = js.native
-    @scala.inline
-    def e_circles_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_circles")(x.asInstanceOf[js.Any])
+    inline def e_circles_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_circles")(x.asInstanceOf[js.Any])
     
     /**
       * Face A
@@ -1326,8 +1305,7 @@ object Collision {
     @JSGlobal("Box2D.Collision.b2Manifold.e_faceA")
     @js.native
     def e_faceA: Double = js.native
-    @scala.inline
-    def e_faceA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_faceA")(x.asInstanceOf[js.Any])
+    inline def e_faceA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_faceA")(x.asInstanceOf[js.Any])
     
     /**
       * Face B
@@ -1335,8 +1313,7 @@ object Collision {
     @JSGlobal("Box2D.Collision.b2Manifold.e_faceB")
     @js.native
     def e_faceB: Double = js.native
-    @scala.inline
-    def e_faceB_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_faceB")(x.asInstanceOf[js.Any])
+    inline def e_faceB_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_faceB")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Box2D.Collision.b2ManifoldPoint")

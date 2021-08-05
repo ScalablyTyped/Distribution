@@ -25,30 +25,23 @@ object anon {
   }
   object CaptureIndexmatchstring {
     
-    @scala.inline
-    def apply(end: Double, index: Double, length: Double, `match`: String, start: Double): CaptureIndexmatchstring = {
+    inline def apply(end: Double, index: Double, length: Double, `match`: String, start: Double): CaptureIndexmatchstring = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CaptureIndexmatchstring]
     }
     
-    @scala.inline
-    implicit class CaptureIndexmatchstringMutableBuilder[Self <: CaptureIndexmatchstring] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureIndexmatchstring](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

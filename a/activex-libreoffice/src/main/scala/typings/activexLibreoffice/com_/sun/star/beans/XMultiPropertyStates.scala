@@ -52,8 +52,7 @@ trait XMultiPropertyStates
 }
 object XMultiPropertyStates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
@@ -66,19 +65,14 @@ object XMultiPropertyStates {
     __obj.asInstanceOf[XMultiPropertyStates]
   }
   
-  @scala.inline
-  implicit class XMultiPropertyStatesMutableBuilder[Self <: XMultiPropertyStates] (val x: Self) extends AnyVal {
+  extension [Self <: XMultiPropertyStates](x: Self) {
     
-    @scala.inline
-    def setGetPropertyDefaults(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPropertyDefaults", js.Any.fromFunction1(value))
+    inline def setGetPropertyDefaults(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPropertyDefaults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAllPropertiesToDefault(value: () => Unit): Self = StObject.set(x, "setAllPropertiesToDefault", js.Any.fromFunction0(value))
+    inline def setSetAllPropertiesToDefault(value: () => Unit): Self = StObject.set(x, "setAllPropertiesToDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPropertiesToDefault(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setPropertiesToDefault", js.Any.fromFunction1(value))
+    inline def setSetPropertiesToDefault(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setPropertiesToDefault", js.Any.fromFunction1(value))
   }
 }

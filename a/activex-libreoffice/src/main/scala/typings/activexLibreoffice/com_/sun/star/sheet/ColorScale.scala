@@ -14,8 +14,7 @@ trait ColorScale
 }
 object ColorScale {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColorScaleEntries: SafeArray[XColorScaleEntry],
     Type: Double,
     acquire: () => Unit,
@@ -27,10 +26,8 @@ object ColorScale {
     __obj.asInstanceOf[ColorScale]
   }
   
-  @scala.inline
-  implicit class ColorScaleMutableBuilder[Self <: ColorScale] (val x: Self) extends AnyVal {
+  extension [Self <: ColorScale](x: Self) {
     
-    @scala.inline
-    def setColorScaleEntries(value: SafeArray[XColorScaleEntry]): Self = StObject.set(x, "ColorScaleEntries", value.asInstanceOf[js.Any])
+    inline def setColorScaleEntries(value: SafeArray[XColorScaleEntry]): Self = StObject.set(x, "ColorScaleEntries", value.asInstanceOf[js.Any])
   }
 }

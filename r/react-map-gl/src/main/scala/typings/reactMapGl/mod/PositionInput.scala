@@ -10,16 +10,13 @@ trait PositionInput extends StObject {
 }
 object PositionInput {
   
-  @scala.inline
-  def apply(pos: js.Tuple2[Double, Double]): PositionInput = {
+  inline def apply(pos: js.Tuple2[Double, Double]): PositionInput = {
     val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionInput]
   }
   
-  @scala.inline
-  implicit class PositionInputMutableBuilder[Self <: PositionInput] (val x: Self) extends AnyVal {
+  extension [Self <: PositionInput](x: Self) {
     
-    @scala.inline
-    def setPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }
 }

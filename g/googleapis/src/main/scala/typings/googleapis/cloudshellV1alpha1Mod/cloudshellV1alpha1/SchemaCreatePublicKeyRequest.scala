@@ -16,19 +16,15 @@ trait SchemaCreatePublicKeyRequest extends StObject {
 }
 object SchemaCreatePublicKeyRequest {
   
-  @scala.inline
-  def apply(): SchemaCreatePublicKeyRequest = {
+  inline def apply(): SchemaCreatePublicKeyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreatePublicKeyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreatePublicKeyRequestMutableBuilder[Self <: SchemaCreatePublicKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreatePublicKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKey(value: SchemaPublicKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: SchemaPublicKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

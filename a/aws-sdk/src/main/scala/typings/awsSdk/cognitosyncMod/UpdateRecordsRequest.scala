@@ -43,8 +43,7 @@ trait UpdateRecordsRequest extends StObject {
 }
 object UpdateRecordsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DatasetName: DatasetName,
     IdentityId: IdentityId,
     IdentityPoolId: IdentityPoolId,
@@ -54,40 +53,28 @@ object UpdateRecordsRequest {
     __obj.asInstanceOf[UpdateRecordsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRecordsRequestMutableBuilder[Self <: UpdateRecordsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRecordsRequest](x: Self) {
     
-    @scala.inline
-    def setClientContext(value: ClientContext): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
+    inline def setClientContext(value: ClientContext): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
+    inline def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordPatches(value: RecordPatchList): Self = StObject.set(x, "RecordPatches", value.asInstanceOf[js.Any])
+    inline def setRecordPatches(value: RecordPatchList): Self = StObject.set(x, "RecordPatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordPatchesUndefined: Self = StObject.set(x, "RecordPatches", js.undefined)
+    inline def setRecordPatchesUndefined: Self = StObject.set(x, "RecordPatches", js.undefined)
     
-    @scala.inline
-    def setRecordPatchesVarargs(value: RecordPatch*): Self = StObject.set(x, "RecordPatches", js.Array(value :_*))
+    inline def setRecordPatchesVarargs(value: RecordPatch*): Self = StObject.set(x, "RecordPatches", js.Array(value :_*))
     
-    @scala.inline
-    def setSyncSessionToken(value: SyncSessionToken): Self = StObject.set(x, "SyncSessionToken", value.asInstanceOf[js.Any])
+    inline def setSyncSessionToken(value: SyncSessionToken): Self = StObject.set(x, "SyncSessionToken", value.asInstanceOf[js.Any])
   }
 }

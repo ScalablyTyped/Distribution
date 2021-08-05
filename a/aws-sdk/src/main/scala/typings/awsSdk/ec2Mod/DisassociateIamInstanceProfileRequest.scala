@@ -13,16 +13,13 @@ trait DisassociateIamInstanceProfileRequest extends StObject {
 }
 object DisassociateIamInstanceProfileRequest {
   
-  @scala.inline
-  def apply(AssociationId: IamInstanceProfileAssociationId): DisassociateIamInstanceProfileRequest = {
+  inline def apply(AssociationId: IamInstanceProfileAssociationId): DisassociateIamInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateIamInstanceProfileRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateIamInstanceProfileRequestMutableBuilder[Self <: DisassociateIamInstanceProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateIamInstanceProfileRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: IamInstanceProfileAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: IamInstanceProfileAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
   }
 }

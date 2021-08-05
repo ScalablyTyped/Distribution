@@ -17,13 +17,10 @@ object repeaterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def replaceRepeaterInEncoding[E /* <: Encoding[Field] */](encoding: E, repeater: RepeaterValue): Encoding[FieldName] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInEncoding")(encoding.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[Encoding[FieldName]]
+  inline def replaceRepeaterInEncoding[E /* <: Encoding[Field] */](encoding: E, repeater: RepeaterValue): Encoding[FieldName] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInEncoding")(encoding.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[Encoding[FieldName]]
   
-  @scala.inline
-  def replaceRepeaterInFacet(facet: FacetFieldDef[Field, ExprRef | SignalRef], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInFacet")(facet.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[(FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]])]
-  @scala.inline
-  def replaceRepeaterInFacet(facet: FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInFacet")(facet.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[(FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]])]
+  inline def replaceRepeaterInFacet(facet: FacetFieldDef[Field, ExprRef | SignalRef], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInFacet")(facet.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[(FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]])]
+  inline def replaceRepeaterInFacet(facet: FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInFacet")(facet.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[(FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]])]
   
   trait RepeaterValue extends StObject {
     
@@ -37,38 +34,28 @@ object repeaterMod {
   }
   object RepeaterValue {
     
-    @scala.inline
-    def apply(): RepeaterValue = {
+    inline def apply(): RepeaterValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepeaterValue]
     }
     
-    @scala.inline
-    implicit class RepeaterValueMutableBuilder[Self <: RepeaterValue] (val x: Self) extends AnyVal {
+    extension [Self <: RepeaterValue](x: Self) {
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+      inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     }
   }
 }

@@ -20,11 +20,11 @@ object baseRequestOptionsMod {
   class RequestOptions () extends StObject {
     def this(opts: RequestOptionsArgs) = this()
     
-    var _appendParam: js.Any = js.native
+    /* private */ var _appendParam: js.Any = js.native
     
-    var _mergeSearchParams: js.Any = js.native
+    /* private */ var _mergeSearchParams: js.Any = js.native
     
-    var _parseParams: js.Any = js.native
+    /* private */ var _parseParams: js.Any = js.native
     
     /**
       * Body to be used when creating a {@link Request}.

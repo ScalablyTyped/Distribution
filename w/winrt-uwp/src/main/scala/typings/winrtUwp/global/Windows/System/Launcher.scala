@@ -30,8 +30,7 @@ object Launcher {
     * @return A list of AppInfo s for each application that handles the specified file extension.
     */
   /* static member */
-  @scala.inline
-  def findFileHandlersAsync(`extension`: String): IPromiseWithIAsyncOperation[IVectorView[AppInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFileHandlersAsync")(`extension`.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[AppInfo]]]
+  inline def findFileHandlersAsync(`extension`: String): IPromiseWithIAsyncOperation[IVectorView[AppInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFileHandlersAsync")(`extension`.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[AppInfo]]]
   
   /**
     * Enumerates the
@@ -39,8 +38,7 @@ object Launcher {
     * @return A list of AppInfo s for each application that handles the specified scheme.
     */
   /* static member */
-  @scala.inline
-  def findUriSchemeHandlersAsync(scheme: String): IPromiseWithIAsyncOperation[IVectorView[AppInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUriSchemeHandlersAsync")(scheme.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[AppInfo]]]
+  inline def findUriSchemeHandlersAsync(scheme: String): IPromiseWithIAsyncOperation[IVectorView[AppInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUriSchemeHandlersAsync")(scheme.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[AppInfo]]]
   /**
     * Enumerate the scheme handlers on the device.
     * @param scheme The scheme name that you find to find handlers for. For example, "ms-lens".
@@ -48,8 +46,7 @@ object Launcher {
     * @return A list of AppInfo s for each application that handles the specified scheme.
     */
   /* static member */
-  @scala.inline
-  def findUriSchemeHandlersAsync(scheme: String, launchQuerySupportType: typings.winrtUwp.Windows.System.LaunchQuerySupportType): IPromiseWithIAsyncOperation[IVectorView[AppInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUriSchemeHandlersAsync")(scheme.asInstanceOf[js.Any], launchQuerySupportType.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[AppInfo]]]
+  inline def findUriSchemeHandlersAsync(scheme: String, launchQuerySupportType: typings.winrtUwp.Windows.System.LaunchQuerySupportType): IPromiseWithIAsyncOperation[IVectorView[AppInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUriSchemeHandlersAsync")(scheme.asInstanceOf[js.Any], launchQuerySupportType.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[AppInfo]]]
   
   /**
     * Starts the default app associated with the specified file.
@@ -57,8 +54,7 @@ object Launcher {
     * @return The launch operation.
     */
   /* static member */
-  @scala.inline
-  def launchFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def launchFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   /**
     * Starts the default app associated with the specified file, using the specified options.
     * @param file The file.
@@ -66,8 +62,7 @@ object Launcher {
     * @return The launch operation.
     */
   /* static member */
-  @scala.inline
-  def launchFileAsync(file: IStorageFile, options: typings.winrtUwp.Windows.System.LauncherOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def launchFileAsync(file: IStorageFile, options: typings.winrtUwp.Windows.System.LauncherOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchFileAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   
   /**
     * Launches File Explorer and displays the contents of the specified folder.
@@ -75,8 +70,7 @@ object Launcher {
     * @return The result of the operation.
     */
   /* static member */
-  @scala.inline
-  def launchFolderAsync(folder: IStorageFolder): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchFolderAsync")(folder.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def launchFolderAsync(folder: IStorageFolder): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchFolderAsync")(folder.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   /**
     * Launches File Explorer with the specified options and displays the contents of the specified folder.
     * @param folder The folder to display in File Explorer.
@@ -84,8 +78,7 @@ object Launcher {
     * @return The result of the operation.
     */
   /* static member */
-  @scala.inline
-  def launchFolderAsync(folder: IStorageFolder, options: typings.winrtUwp.Windows.System.FolderLauncherOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchFolderAsync")(folder.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def launchFolderAsync(folder: IStorageFolder, options: typings.winrtUwp.Windows.System.FolderLauncherOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchFolderAsync")(folder.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   
   /**
     * Starts the default app associated with the URI scheme name for the specified URI.
@@ -93,8 +86,7 @@ object Launcher {
     * @return The launch operation.
     */
   /* static member */
-  @scala.inline
-  def launchUriAsync(uri: Uri): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def launchUriAsync(uri: Uri): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   /**
     * Starts the default app associated with the URI scheme name or the one specified by the ContentType for the specified URI, using the specified options.
     * @param uri The URI.
@@ -102,8 +94,7 @@ object Launcher {
     * @return The launch operation.
     */
   /* static member */
-  @scala.inline
-  def launchUriAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def launchUriAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   /**
     * Starts the default app associated with the URI scheme name for the specified URI, using the specified options and input data.
     * @param uri The URI.
@@ -112,8 +103,7 @@ object Launcher {
     * @return The launch operation.
     */
   /* static member */
-  @scala.inline
-  def launchUriAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions, inputData: ValueSet): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], inputData.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def launchUriAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions, inputData: ValueSet): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], inputData.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   
   /**
     * Asynchronously starts the default app associated with the URI scheme name for the specified URI, using the specified options.
@@ -122,8 +112,7 @@ object Launcher {
     * @return When this method completes, it returns the results of the launch.
     */
   /* static member */
-  @scala.inline
-  def launchUriForResultsAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriForResultsAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult]]
+  inline def launchUriForResultsAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriForResultsAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult]]
   /**
     * Asynchronously starts the default app associated with the URI scheme name for the specified URI, using the specified options and input data.
     * @param uri The Uri to launch.
@@ -132,8 +121,7 @@ object Launcher {
     * @return When this method completes, it returns the results of the launch.
     */
   /* static member */
-  @scala.inline
-  def launchUriForResultsAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions, inputData: ValueSet): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriForResultsAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], inputData.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult]]
+  inline def launchUriForResultsAsync(uri: Uri, options: typings.winrtUwp.Windows.System.LauncherOptions, inputData: ValueSet): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("launchUriForResultsAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], inputData.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchUriResult]]
   
   /**
     * Asynchronously query whether an app can be activated for the specified file.
@@ -141,8 +129,7 @@ object Launcher {
     * @return A value that indicates whether an application can be activated for the file.
     */
   /* static member */
-  @scala.inline
-  def queryFileSupportAsync(file: StorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryFileSupportAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus]]
+  inline def queryFileSupportAsync(file: StorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryFileSupportAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus]]
   /**
     * Asynchronously query whether an app with the specified package name can be activated for the specified file.
     * @param file The file for which to query support.
@@ -150,8 +137,7 @@ object Launcher {
     * @return A value that indicates whether an application can be activated for the file.
     */
   /* static member */
-  @scala.inline
-  def queryFileSupportAsync(file: StorageFile, packageFamilyName: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("queryFileSupportAsync")(file.asInstanceOf[js.Any], packageFamilyName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus]]
+  inline def queryFileSupportAsync(file: StorageFile, packageFamilyName: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("queryFileSupportAsync")(file.asInstanceOf[js.Any], packageFamilyName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus]]
   
   /**
     * Asynchronously query whether an app can be activated for the specified URI and launch type.
@@ -160,8 +146,7 @@ object Launcher {
     * @return A value that indicates whether an application is available to launch the URI.
     */
   /* static member */
-  @scala.inline
-  def queryUriSupportAsync(uri: Uri, launchQuerySupportType: typings.winrtUwp.Windows.System.LaunchQuerySupportType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("queryUriSupportAsync")(uri.asInstanceOf[js.Any], launchQuerySupportType.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus]]
+  inline def queryUriSupportAsync(uri: Uri, launchQuerySupportType: typings.winrtUwp.Windows.System.LaunchQuerySupportType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("queryUriSupportAsync")(uri.asInstanceOf[js.Any], launchQuerySupportType.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.LaunchQuerySupportStatus]]
   /**
     * Asynchronously query whether an app can be activated for the specified URI, launch type, and package name.
     * @param uri The URI for which to query support.
@@ -170,8 +155,7 @@ object Launcher {
     * @return A value that indicates whether the application is available to launch the URI.
     */
   /* static member */
-  @scala.inline
-  def queryUriSupportAsync(
+  inline def queryUriSupportAsync(
     uri: Uri,
     launchQuerySupportType: typings.winrtUwp.Windows.System.LaunchQuerySupportType,
     packageFamilyName: String

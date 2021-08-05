@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLBorderStyle extends StObject
 object HTMLBorderStyle {
   
-  @scala.inline
-  def HTMLBorderStyleNormal: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLBorderStyleNormal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLBorderStyleRaised: `256` = 256.asInstanceOf[`256`]
+  inline def HTMLBorderStyleRaised: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def HTMLBorderStyleStatic: `131072` = 131072.asInstanceOf[`131072`]
+  inline def HTMLBorderStyleStatic: `131072` = 131072.asInstanceOf[`131072`]
   
-  @scala.inline
-  def HTMLBorderStyleSunken: `512` = 512.asInstanceOf[`512`]
+  inline def HTMLBorderStyleSunken: `512` = 512.asInstanceOf[`512`]
   
-  @scala.inline
-  def HTMLBorderStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLBorderStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def HTMLBorderStylecombined: `768` = 768.asInstanceOf[`768`]
+  inline def HTMLBorderStylecombined: `768` = 768.asInstanceOf[`768`]
 }

@@ -23,40 +23,29 @@ trait GoogleCloudAssetV1AccessControlList extends StObject {
 }
 object GoogleCloudAssetV1AccessControlList {
   
-  @scala.inline
-  def apply(): GoogleCloudAssetV1AccessControlList = {
+  inline def apply(): GoogleCloudAssetV1AccessControlList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssetV1AccessControlList]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssetV1AccessControlListMutableBuilder[Self <: GoogleCloudAssetV1AccessControlList] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssetV1AccessControlList](x: Self) {
     
-    @scala.inline
-    def setAccesses(value: js.Array[GoogleCloudAssetV1Access]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
+    inline def setAccesses(value: js.Array[GoogleCloudAssetV1Access]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
+    inline def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
     
-    @scala.inline
-    def setAccessesVarargs(value: GoogleCloudAssetV1Access*): Self = StObject.set(x, "accesses", js.Array(value :_*))
+    inline def setAccessesVarargs(value: GoogleCloudAssetV1Access*): Self = StObject.set(x, "accesses", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "resourceEdges", value.asInstanceOf[js.Any])
+    inline def setResourceEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "resourceEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceEdgesUndefined: Self = StObject.set(x, "resourceEdges", js.undefined)
+    inline def setResourceEdgesUndefined: Self = StObject.set(x, "resourceEdges", js.undefined)
     
-    @scala.inline
-    def setResourceEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "resourceEdges", js.Array(value :_*))
+    inline def setResourceEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "resourceEdges", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: js.Array[GoogleCloudAssetV1Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[GoogleCloudAssetV1Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: GoogleCloudAssetV1Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: GoogleCloudAssetV1Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

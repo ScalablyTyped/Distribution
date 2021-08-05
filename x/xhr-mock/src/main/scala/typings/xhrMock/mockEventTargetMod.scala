@@ -23,7 +23,7 @@ object mockEventTargetMod {
     def addEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
     def addEventListener(`type`: String, listener: Unit, options: AddEventListenerOptions): Unit = js.native
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
     def removeEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
     def removeEventListener(`type`: String, listener: Unit, options: EventListenerOptions): Unit = js.native

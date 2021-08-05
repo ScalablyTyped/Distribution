@@ -43,55 +43,39 @@ trait ViewerCertificate extends StObject {
 }
 object ViewerCertificate {
   
-  @scala.inline
-  def apply(): ViewerCertificate = {
+  inline def apply(): ViewerCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewerCertificate]
   }
   
-  @scala.inline
-  implicit class ViewerCertificateMutableBuilder[Self <: ViewerCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: ViewerCertificate](x: Self) {
     
-    @scala.inline
-    def setACMCertificateArn(value: String): Self = StObject.set(x, "ACMCertificateArn", value.asInstanceOf[js.Any])
+    inline def setACMCertificateArn(value: String): Self = StObject.set(x, "ACMCertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setACMCertificateArnUndefined: Self = StObject.set(x, "ACMCertificateArn", js.undefined)
+    inline def setACMCertificateArnUndefined: Self = StObject.set(x, "ACMCertificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificate(value: String): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: String): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateSource(value: CertificateSource): Self = StObject.set(x, "CertificateSource", value.asInstanceOf[js.Any])
+    inline def setCertificateSource(value: CertificateSource): Self = StObject.set(x, "CertificateSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateSourceUndefined: Self = StObject.set(x, "CertificateSource", js.undefined)
+    inline def setCertificateSourceUndefined: Self = StObject.set(x, "CertificateSource", js.undefined)
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
-    @scala.inline
-    def setCloudFrontDefaultCertificate(value: Boolean): Self = StObject.set(x, "CloudFrontDefaultCertificate", value.asInstanceOf[js.Any])
+    inline def setCloudFrontDefaultCertificate(value: Boolean): Self = StObject.set(x, "CloudFrontDefaultCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFrontDefaultCertificateUndefined: Self = StObject.set(x, "CloudFrontDefaultCertificate", js.undefined)
+    inline def setCloudFrontDefaultCertificateUndefined: Self = StObject.set(x, "CloudFrontDefaultCertificate", js.undefined)
     
-    @scala.inline
-    def setIAMCertificateId(value: String): Self = StObject.set(x, "IAMCertificateId", value.asInstanceOf[js.Any])
+    inline def setIAMCertificateId(value: String): Self = StObject.set(x, "IAMCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIAMCertificateIdUndefined: Self = StObject.set(x, "IAMCertificateId", js.undefined)
+    inline def setIAMCertificateIdUndefined: Self = StObject.set(x, "IAMCertificateId", js.undefined)
     
-    @scala.inline
-    def setMinimumProtocolVersion(value: MinimumProtocolVersion): Self = StObject.set(x, "MinimumProtocolVersion", value.asInstanceOf[js.Any])
+    inline def setMinimumProtocolVersion(value: MinimumProtocolVersion): Self = StObject.set(x, "MinimumProtocolVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumProtocolVersionUndefined: Self = StObject.set(x, "MinimumProtocolVersion", js.undefined)
+    inline def setMinimumProtocolVersionUndefined: Self = StObject.set(x, "MinimumProtocolVersion", js.undefined)
     
-    @scala.inline
-    def setSSLSupportMethod(value: SSLSupportMethod): Self = StObject.set(x, "SSLSupportMethod", value.asInstanceOf[js.Any])
+    inline def setSSLSupportMethod(value: SSLSupportMethod): Self = StObject.set(x, "SSLSupportMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSLSupportMethodUndefined: Self = StObject.set(x, "SSLSupportMethod", js.undefined)
+    inline def setSSLSupportMethodUndefined: Self = StObject.set(x, "SSLSupportMethod", js.undefined)
   }
 }

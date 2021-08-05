@@ -10,16 +10,13 @@ trait PreventScroll extends StObject {
 }
 object PreventScroll {
   
-  @scala.inline
-  def apply(preventScroll: Boolean): PreventScroll = {
+  inline def apply(preventScroll: Boolean): PreventScroll = {
     val __obj = js.Dynamic.literal(preventScroll = preventScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreventScroll]
   }
   
-  @scala.inline
-  implicit class PreventScrollMutableBuilder[Self <: PreventScroll] (val x: Self) extends AnyVal {
+  extension [Self <: PreventScroll](x: Self) {
     
-    @scala.inline
-    def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+    inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
   }
 }

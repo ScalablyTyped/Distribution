@@ -72,17 +72,13 @@ object interfaceMod {
   trait MotionStatus extends StObject
   object MotionStatus {
     
-    @scala.inline
-    def appear: typings.rcMotion.rcMotionStrings.appear = "appear".asInstanceOf[typings.rcMotion.rcMotionStrings.appear]
+    inline def appear: typings.rcMotion.rcMotionStrings.appear = "appear".asInstanceOf[typings.rcMotion.rcMotionStrings.appear]
     
-    @scala.inline
-    def enter: typings.rcMotion.rcMotionStrings.enter = "enter".asInstanceOf[typings.rcMotion.rcMotionStrings.enter]
+    inline def enter: typings.rcMotion.rcMotionStrings.enter = "enter".asInstanceOf[typings.rcMotion.rcMotionStrings.enter]
     
-    @scala.inline
-    def leave: typings.rcMotion.rcMotionStrings.leave = "leave".asInstanceOf[typings.rcMotion.rcMotionStrings.leave]
+    inline def leave: typings.rcMotion.rcMotionStrings.leave = "leave".asInstanceOf[typings.rcMotion.rcMotionStrings.leave]
     
-    @scala.inline
-    def none: typings.rcMotion.rcMotionStrings.none = "none".asInstanceOf[typings.rcMotion.rcMotionStrings.none]
+    inline def none: typings.rcMotion.rcMotionStrings.none = "none".asInstanceOf[typings.rcMotion.rcMotionStrings.none]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -95,19 +91,14 @@ object interfaceMod {
   trait StepStatus extends StObject
   object StepStatus {
     
-    @scala.inline
-    def active: typings.rcMotion.rcMotionStrings.active = "active".asInstanceOf[typings.rcMotion.rcMotionStrings.active]
+    inline def active: typings.rcMotion.rcMotionStrings.active = "active".asInstanceOf[typings.rcMotion.rcMotionStrings.active]
     
-    @scala.inline
-    def end: typings.rcMotion.rcMotionStrings.end = "end".asInstanceOf[typings.rcMotion.rcMotionStrings.end]
+    inline def end: typings.rcMotion.rcMotionStrings.end = "end".asInstanceOf[typings.rcMotion.rcMotionStrings.end]
     
-    @scala.inline
-    def none: typings.rcMotion.rcMotionStrings.none = "none".asInstanceOf[typings.rcMotion.rcMotionStrings.none]
+    inline def none: typings.rcMotion.rcMotionStrings.none = "none".asInstanceOf[typings.rcMotion.rcMotionStrings.none]
     
-    @scala.inline
-    def prepare: typings.rcMotion.rcMotionStrings.prepare = "prepare".asInstanceOf[typings.rcMotion.rcMotionStrings.prepare]
+    inline def prepare: typings.rcMotion.rcMotionStrings.prepare = "prepare".asInstanceOf[typings.rcMotion.rcMotionStrings.prepare]
     
-    @scala.inline
-    def start: typings.rcMotion.rcMotionStrings.start = "start".asInstanceOf[typings.rcMotion.rcMotionStrings.start]
+    inline def start: typings.rcMotion.rcMotionStrings.start = "start".asInstanceOf[typings.rcMotion.rcMotionStrings.start]
   }
 }

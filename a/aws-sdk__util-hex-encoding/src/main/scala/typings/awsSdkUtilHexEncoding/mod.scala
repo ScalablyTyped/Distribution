@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromHex(encoded: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(encoded.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def fromHex(encoded: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(encoded.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @scala.inline
-  def toHex(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHex(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -91,17 +91,14 @@ object Health {
   }
   object ChecksOptions {
     
-    @scala.inline
-    def apply(service: String): ChecksOptions = {
+    inline def apply(service: String): ChecksOptions = {
       val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChecksOptions]
     }
     
-    @scala.inline
-    implicit class ChecksOptionsMutableBuilder[Self <: ChecksOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChecksOptions](x: Self) {
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,17 +110,14 @@ object Health {
   }
   object NodeOptions {
     
-    @scala.inline
-    def apply(node: String): NodeOptions = {
+    inline def apply(node: String): NodeOptions = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeOptions]
     }
     
-    @scala.inline
-    implicit class NodeOptionsMutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NodeOptions](x: Self) {
       
-      @scala.inline
-      def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,35 +135,26 @@ object Health {
   }
   object ServiceOptions {
     
-    @scala.inline
-    def apply(service: String): ServiceOptions = {
+    inline def apply(service: String): ServiceOptions = {
       val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    @scala.inline
-    implicit class ServiceOptionsMutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceOptions](x: Self) {
       
-      @scala.inline
-      def setNear(value: String): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
+      inline def setNear(value: String): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
+      inline def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
       
-      @scala.inline
-      def setPassing(value: Boolean): Self = StObject.set(x, "passing", value.asInstanceOf[js.Any])
+      inline def setPassing(value: Boolean): Self = StObject.set(x, "passing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassingUndefined: Self = StObject.set(x, "passing", js.undefined)
+      inline def setPassingUndefined: Self = StObject.set(x, "passing", js.undefined)
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
@@ -181,17 +166,14 @@ object Health {
   }
   object StateOptions {
     
-    @scala.inline
-    def apply(state: String): StateOptions = {
+    inline def apply(state: String): StateOptions = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateOptions]
     }
     
-    @scala.inline
-    implicit class StateOptionsMutableBuilder[Self <: StateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StateOptions](x: Self) {
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

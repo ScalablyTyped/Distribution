@@ -29,22 +29,17 @@ trait BackgroundTransferContentPart extends StObject {
 }
 object BackgroundTransferContentPart {
   
-  @scala.inline
-  def apply(setFile: IStorageFile => Unit, setHeader: (String, String) => Unit, setText: String => Unit): BackgroundTransferContentPart = {
+  inline def apply(setFile: IStorageFile => Unit, setHeader: (String, String) => Unit, setText: String => Unit): BackgroundTransferContentPart = {
     val __obj = js.Dynamic.literal(setFile = js.Any.fromFunction1(setFile), setHeader = js.Any.fromFunction2(setHeader), setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[BackgroundTransferContentPart]
   }
   
-  @scala.inline
-  implicit class BackgroundTransferContentPartMutableBuilder[Self <: BackgroundTransferContentPart] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundTransferContentPart](x: Self) {
     
-    @scala.inline
-    def setSetFile(value: IStorageFile => Unit): Self = StObject.set(x, "setFile", js.Any.fromFunction1(value))
+    inline def setSetFile(value: IStorageFile => Unit): Self = StObject.set(x, "setFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
+    inline def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

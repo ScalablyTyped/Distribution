@@ -12,19 +12,15 @@ trait NluEnrichmentConcepts extends StObject {
 }
 object NluEnrichmentConcepts {
   
-  @scala.inline
-  def apply(): NluEnrichmentConcepts = {
+  inline def apply(): NluEnrichmentConcepts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NluEnrichmentConcepts]
   }
   
-  @scala.inline
-  implicit class NluEnrichmentConceptsMutableBuilder[Self <: NluEnrichmentConcepts] (val x: Self) extends AnyVal {
+  extension [Self <: NluEnrichmentConcepts](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

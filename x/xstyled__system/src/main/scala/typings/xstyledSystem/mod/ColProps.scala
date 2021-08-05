@@ -10,22 +10,17 @@ trait ColProps extends StObject {
 }
 object ColProps {
   
-  @scala.inline
-  def apply(): ColProps = {
+  inline def apply(): ColProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColProps]
   }
   
-  @scala.inline
-  implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
+  extension [Self <: ColProps](x: Self) {
     
-    @scala.inline
-    def setCol(value: ResponsiveValue[String | Double | Boolean]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: ResponsiveValue[String | Double | Boolean]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+    inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
     
-    @scala.inline
-    def setColVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "col", js.Array(value :_*))
+    inline def setColVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "col", js.Array(value :_*))
   }
 }

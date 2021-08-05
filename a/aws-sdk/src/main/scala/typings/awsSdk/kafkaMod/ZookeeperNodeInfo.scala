@@ -43,46 +43,33 @@ trait ZookeeperNodeInfo extends StObject {
 }
 object ZookeeperNodeInfo {
   
-  @scala.inline
-  def apply(): ZookeeperNodeInfo = {
+  inline def apply(): ZookeeperNodeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZookeeperNodeInfo]
   }
   
-  @scala.inline
-  implicit class ZookeeperNodeInfoMutableBuilder[Self <: ZookeeperNodeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ZookeeperNodeInfo](x: Self) {
     
-    @scala.inline
-    def setAttachedENIId(value: string): Self = StObject.set(x, "AttachedENIId", value.asInstanceOf[js.Any])
+    inline def setAttachedENIId(value: string): Self = StObject.set(x, "AttachedENIId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedENIIdUndefined: Self = StObject.set(x, "AttachedENIId", js.undefined)
+    inline def setAttachedENIIdUndefined: Self = StObject.set(x, "AttachedENIId", js.undefined)
     
-    @scala.inline
-    def setClientVpcIpAddress(value: string): Self = StObject.set(x, "ClientVpcIpAddress", value.asInstanceOf[js.Any])
+    inline def setClientVpcIpAddress(value: string): Self = StObject.set(x, "ClientVpcIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVpcIpAddressUndefined: Self = StObject.set(x, "ClientVpcIpAddress", js.undefined)
+    inline def setClientVpcIpAddressUndefined: Self = StObject.set(x, "ClientVpcIpAddress", js.undefined)
     
-    @scala.inline
-    def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    @scala.inline
-    def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setZookeeperId(value: double): Self = StObject.set(x, "ZookeeperId", value.asInstanceOf[js.Any])
+    inline def setZookeeperId(value: double): Self = StObject.set(x, "ZookeeperId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZookeeperIdUndefined: Self = StObject.set(x, "ZookeeperId", js.undefined)
+    inline def setZookeeperIdUndefined: Self = StObject.set(x, "ZookeeperId", js.undefined)
     
-    @scala.inline
-    def setZookeeperVersion(value: string): Self = StObject.set(x, "ZookeeperVersion", value.asInstanceOf[js.Any])
+    inline def setZookeeperVersion(value: string): Self = StObject.set(x, "ZookeeperVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZookeeperVersionUndefined: Self = StObject.set(x, "ZookeeperVersion", js.undefined)
+    inline def setZookeeperVersionUndefined: Self = StObject.set(x, "ZookeeperVersion", js.undefined)
   }
 }

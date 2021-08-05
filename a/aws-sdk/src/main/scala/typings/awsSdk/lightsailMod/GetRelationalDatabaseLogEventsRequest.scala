@@ -38,43 +38,31 @@ trait GetRelationalDatabaseLogEventsRequest extends StObject {
 }
 object GetRelationalDatabaseLogEventsRequest {
   
-  @scala.inline
-  def apply(logStreamName: String, relationalDatabaseName: ResourceName): GetRelationalDatabaseLogEventsRequest = {
+  inline def apply(logStreamName: String, relationalDatabaseName: ResourceName): GetRelationalDatabaseLogEventsRequest = {
     val __obj = js.Dynamic.literal(logStreamName = logStreamName.asInstanceOf[js.Any], relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseLogEventsRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseLogEventsRequestMutableBuilder[Self <: GetRelationalDatabaseLogEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseLogEventsRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setLogStreamName(value: String): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
+    inline def setLogStreamName(value: String): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFromHead(value: Boolean): Self = StObject.set(x, "startFromHead", value.asInstanceOf[js.Any])
+    inline def setStartFromHead(value: Boolean): Self = StObject.set(x, "startFromHead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFromHeadUndefined: Self = StObject.set(x, "startFromHead", js.undefined)
+    inline def setStartFromHeadUndefined: Self = StObject.set(x, "startFromHead", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

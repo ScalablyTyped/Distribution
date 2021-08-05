@@ -51,7 +51,7 @@ object shaderMod {
     
     var libDirty: Boolean = js.native
     
-    var libs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<ShaderLib> */ js.Any = js.native
+    /* protected */ var libs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<ShaderLib> */ js.Any = js.native
     
     val program: Program = js.native
     
@@ -62,7 +62,7 @@ object shaderMod {
     
     def sortLib(func: js.Function2[/* a */ ShaderLib, /* b */ ShaderLib, js.Any]): Unit = js.native
     
-    var sourceBuilder: ShaderSourceBuilder = js.native
+    /* protected */ var sourceBuilder: ShaderSourceBuilder = js.native
     
     var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
     
@@ -81,30 +81,23 @@ object shaderMod {
   }
   object ShaderData {
     
-    @scala.inline
-    def apply(`type`: EVariableType): ShaderData = {
+    inline def apply(`type`: EVariableType): ShaderData = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShaderData]
     }
     
-    @scala.inline
-    implicit class ShaderDataMutableBuilder[Self <: ShaderData] (val x: Self) extends AnyVal {
+    extension [Self <: ShaderData](x: Self) {
       
-      @scala.inline
-      def setTextureId(value: String): Self = StObject.set(x, "textureId", value.asInstanceOf[js.Any])
+      inline def setTextureId(value: String): Self = StObject.set(x, "textureId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureIdUndefined: Self = StObject.set(x, "textureId", js.undefined)
+      inline def setTextureIdUndefined: Self = StObject.set(x, "textureId", js.undefined)
       
-      @scala.inline
-      def setType(value: EVariableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: EVariableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

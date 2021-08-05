@@ -20,8 +20,7 @@ trait FlashVideoItem extends StObject {
 }
 object FlashVideoItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exportToFLV: String => Boolean,
     fileLastModifiedDate: String,
     sourceFileExists: Boolean,
@@ -33,25 +32,18 @@ object FlashVideoItem {
     __obj.asInstanceOf[FlashVideoItem]
   }
   
-  @scala.inline
-  implicit class FlashVideoItemMutableBuilder[Self <: FlashVideoItem] (val x: Self) extends AnyVal {
+  extension [Self <: FlashVideoItem](x: Self) {
     
-    @scala.inline
-    def setExportToFLV(value: String => Boolean): Self = StObject.set(x, "exportToFLV", js.Any.fromFunction1(value))
+    inline def setExportToFLV(value: String => Boolean): Self = StObject.set(x, "exportToFLV", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFileLastModifiedDate(value: String): Self = StObject.set(x, "fileLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setFileLastModifiedDate(value: String): Self = StObject.set(x, "fileLastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFileExists(value: Boolean): Self = StObject.set(x, "sourceFileExists", value.asInstanceOf[js.Any])
+    inline def setSourceFileExists(value: Boolean): Self = StObject.set(x, "sourceFileExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFileIsCurrent(value: Boolean): Self = StObject.set(x, "sourceFileIsCurrent", value.asInstanceOf[js.Any])
+    inline def setSourceFileIsCurrent(value: Boolean): Self = StObject.set(x, "sourceFileIsCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
+    inline def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoType(value: String): Self = StObject.set(x, "videoType", value.asInstanceOf[js.Any])
+    inline def setVideoType(value: String): Self = StObject.set(x, "videoType", value.asInstanceOf[js.Any])
   }
 }

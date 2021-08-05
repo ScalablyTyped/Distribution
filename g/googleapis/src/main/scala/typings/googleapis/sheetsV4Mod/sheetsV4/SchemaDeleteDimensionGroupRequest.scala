@@ -19,19 +19,15 @@ trait SchemaDeleteDimensionGroupRequest extends StObject {
 }
 object SchemaDeleteDimensionGroupRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteDimensionGroupRequest = {
+  inline def apply(): SchemaDeleteDimensionGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteDimensionGroupRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteDimensionGroupRequestMutableBuilder[Self <: SchemaDeleteDimensionGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteDimensionGroupRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

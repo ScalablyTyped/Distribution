@@ -13,22 +13,17 @@ trait FlowLabel
 }
 object FlowLabel {
   
-  @scala.inline
-  def apply(flags: FlowFlags): FlowLabel = {
+  inline def apply(flags: FlowFlags): FlowLabel = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLabel]
   }
   
-  @scala.inline
-  implicit class FlowLabelMutableBuilder[Self <: FlowLabel] (val x: Self) extends AnyVal {
+  extension [Self <: FlowLabel](x: Self) {
     
-    @scala.inline
-    def setAntecedents(value: js.Array[FlowNode]): Self = StObject.set(x, "antecedents", value.asInstanceOf[js.Any])
+    inline def setAntecedents(value: js.Array[FlowNode]): Self = StObject.set(x, "antecedents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntecedentsUndefined: Self = StObject.set(x, "antecedents", js.undefined)
+    inline def setAntecedentsUndefined: Self = StObject.set(x, "antecedents", js.undefined)
     
-    @scala.inline
-    def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value :_*))
+    inline def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value :_*))
   }
 }

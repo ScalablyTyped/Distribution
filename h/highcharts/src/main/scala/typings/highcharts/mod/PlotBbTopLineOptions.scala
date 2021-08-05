@@ -13,19 +13,15 @@ trait PlotBbTopLineOptions extends StObject {
 }
 object PlotBbTopLineOptions {
   
-  @scala.inline
-  def apply(): PlotBbTopLineOptions = {
+  inline def apply(): PlotBbTopLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotBbTopLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotBbTopLineOptionsMutableBuilder[Self <: PlotBbTopLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotBbTopLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotBbTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotBbTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

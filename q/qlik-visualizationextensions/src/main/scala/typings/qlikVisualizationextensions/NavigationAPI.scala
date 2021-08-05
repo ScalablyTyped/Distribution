@@ -95,8 +95,7 @@ object NavigationAPI {
   }
   object INavigation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCurrentSheetId: () => NavigationResult,
       getMode: () => String,
       gotoSheet: String => NavigationResult,
@@ -111,41 +110,29 @@ object NavigationAPI {
       __obj.asInstanceOf[INavigation]
     }
     
-    @scala.inline
-    implicit class INavigationMutableBuilder[Self <: INavigation] (val x: Self) extends AnyVal {
+    extension [Self <: INavigation](x: Self) {
       
-      @scala.inline
-      def setAnalysis(value: analysis_): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
+      inline def setAnalysis(value: analysis_): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdit(value: edit_): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: edit_): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCurrentSheetId(value: () => NavigationResult): Self = StObject.set(x, "getCurrentSheetId", js.Any.fromFunction0(value))
+      inline def setGetCurrentSheetId(value: () => NavigationResult): Self = StObject.set(x, "getCurrentSheetId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMode(value: () => String): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
+      inline def setGetMode(value: () => String): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGotoSheet(value: String => NavigationResult): Self = StObject.set(x, "gotoSheet", js.Any.fromFunction1(value))
+      inline def setGotoSheet(value: String => NavigationResult): Self = StObject.set(x, "gotoSheet", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGotoStory(value: String => NavigationResult): Self = StObject.set(x, "gotoStory", js.Any.fromFunction1(value))
+      inline def setGotoStory(value: String => NavigationResult): Self = StObject.set(x, "gotoStory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsModeAllowed(value: NavigationModeType => Boolean): Self = StObject.set(x, "isModeAllowed", js.Any.fromFunction1(value))
+      inline def setIsModeAllowed(value: NavigationModeType => Boolean): Self = StObject.set(x, "isModeAllowed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextSheet(value: () => NavigationResult): Self = StObject.set(x, "nextSheet", js.Any.fromFunction0(value))
+      inline def setNextSheet(value: () => NavigationResult): Self = StObject.set(x, "nextSheet", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrevSheet(value: () => NavigationResult): Self = StObject.set(x, "prevSheet", js.Any.fromFunction0(value))
+      inline def setPrevSheet(value: () => NavigationResult): Self = StObject.set(x, "prevSheet", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetMode(value: String => NavigationResult): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
+      inline def setSetMode(value: String => NavigationResult): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwitchMode(value: NavigationModeType => NavigationResult): Self = StObject.set(x, "switchMode", js.Any.fromFunction1(value))
+      inline def setSwitchMode(value: NavigationModeType => NavigationResult): Self = StObject.set(x, "switchMode", js.Any.fromFunction1(value))
     }
   }
   
@@ -157,14 +144,11 @@ object NavigationAPI {
   trait NavigationErrorType extends StObject
   object NavigationErrorType {
     
-    @scala.inline
-    def NOCURRENTSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET = "NOCURRENTSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET]
+    inline def NOCURRENTSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET = "NOCURRENTSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET]
     
-    @scala.inline
-    def NOSUCHSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET = "NOSUCHSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET]
+    inline def NOSUCHSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET = "NOSUCHSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET]
     
-    @scala.inline
-    def NOSUCHSTORY: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY = "NOSUCHSTORY".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY]
+    inline def NOSUCHSTORY: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY = "NOSUCHSTORY".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -174,11 +158,9 @@ object NavigationAPI {
   trait NavigationModeType extends StObject
   object NavigationModeType {
     
-    @scala.inline
-    def ANALYSIS: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.ANALYSIS = "ANALYSIS".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.ANALYSIS]
+    inline def ANALYSIS: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.ANALYSIS = "ANALYSIS".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.ANALYSIS]
     
-    @scala.inline
-    def EDIT: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.EDIT = "EDIT".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.EDIT]
+    inline def EDIT: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.EDIT = "EDIT".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.EDIT]
   }
   
   /**
@@ -218,8 +200,7 @@ object NavigationAPI {
   }
   object NavigationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       error: NavigationErrorType,
       errorMsg: String,
       mode: String,
@@ -231,26 +212,19 @@ object NavigationAPI {
       __obj.asInstanceOf[NavigationResult]
     }
     
-    @scala.inline
-    implicit class NavigationResultMutableBuilder[Self <: NavigationResult] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationResult](x: Self) {
       
-      @scala.inline
-      def setError(value: NavigationErrorType): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: NavigationErrorType): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
+      inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetId(value: String): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+      inline def setSheetId(value: String): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
 }

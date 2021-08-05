@@ -17,8 +17,7 @@ trait AddDisposeCallback extends StObject {
 }
 object AddDisposeCallback {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addDisposeCallback: (typings.std.Element, js.Function) => Unit,
     cleanNode: Node => typings.std.Element,
     removeDisposeCallback: (typings.std.Element, js.Function) => Unit,
@@ -28,19 +27,14 @@ object AddDisposeCallback {
     __obj.asInstanceOf[AddDisposeCallback]
   }
   
-  @scala.inline
-  implicit class AddDisposeCallbackMutableBuilder[Self <: AddDisposeCallback] (val x: Self) extends AnyVal {
+  extension [Self <: AddDisposeCallback](x: Self) {
     
-    @scala.inline
-    def setAddDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "addDisposeCallback", js.Any.fromFunction2(value))
+    inline def setAddDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "addDisposeCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCleanNode(value: Node => typings.std.Element): Self = StObject.set(x, "cleanNode", js.Any.fromFunction1(value))
+    inline def setCleanNode(value: Node => typings.std.Element): Self = StObject.set(x, "cleanNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "removeDisposeCallback", js.Any.fromFunction2(value))
+    inline def setRemoveDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "removeDisposeCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveNode(value: Node => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
+    inline def setRemoveNode(value: Node => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
   }
 }

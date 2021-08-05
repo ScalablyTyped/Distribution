@@ -18,40 +18,29 @@ trait IndicesGetTemplateParams
 }
 object IndicesGetTemplateParams {
   
-  @scala.inline
-  def apply(): IndicesGetTemplateParams = {
+  inline def apply(): IndicesGetTemplateParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndicesGetTemplateParams]
   }
   
-  @scala.inline
-  implicit class IndicesGetTemplateParamsMutableBuilder[Self <: IndicesGetTemplateParams] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesGetTemplateParams](x: Self) {
     
-    @scala.inline
-    def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
+    inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
+    inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
-    @scala.inline
-    def setName(value: NameList): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameList): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

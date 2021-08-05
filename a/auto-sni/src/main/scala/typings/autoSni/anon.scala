@@ -14,26 +14,20 @@ object anon {
   }
   object Http {
     
-    @scala.inline
-    def apply(): Http = {
+    inline def apply(): Http = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Http]
     }
     
-    @scala.inline
-    implicit class HttpMutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
+    extension [Self <: Http](x: Self) {
       
-      @scala.inline
-      def setHttp(value: Double): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Double): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
       
-      @scala.inline
-      def setHttps(value: Double): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: Double): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     }
   }
 }

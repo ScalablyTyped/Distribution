@@ -12,19 +12,15 @@ trait Breakpoint extends StObject {
 }
 object Breakpoint {
   
-  @scala.inline
-  def apply(src: String, width: Double): Breakpoint = {
+  inline def apply(src: String, width: Double): Breakpoint = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Breakpoint]
   }
   
-  @scala.inline
-  implicit class BreakpointMutableBuilder[Self <: Breakpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Breakpoint](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -76,17 +76,14 @@ object typesEncryptionKeyNotFoundExceptionMod {
   }
   object EncryptionKeyNotFoundException {
     
-    @scala.inline
-    def apply(): EncryptionKeyNotFoundException = {
+    inline def apply(): EncryptionKeyNotFoundException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyNotFoundException")
       __obj.asInstanceOf[EncryptionKeyNotFoundException]
     }
     
-    @scala.inline
-    implicit class EncryptionKeyNotFoundExceptionMutableBuilder[Self <: EncryptionKeyNotFoundException] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionKeyNotFoundException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

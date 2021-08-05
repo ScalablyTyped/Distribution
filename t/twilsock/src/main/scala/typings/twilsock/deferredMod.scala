@@ -10,11 +10,11 @@ object deferredMod {
   @js.native
   class Deferred[T] () extends StObject {
     
-    var _promise: js.Any = js.native
+    /* private */ var _promise: js.Any = js.native
     
-    var _reject: js.Any = js.native
+    /* private */ var _reject: js.Any = js.native
     
-    var _resolve: js.Any = js.native
+    /* private */ var _resolve: js.Any = js.native
     
     var current: T = js.native
     

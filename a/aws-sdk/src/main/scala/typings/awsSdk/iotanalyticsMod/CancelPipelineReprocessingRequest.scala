@@ -18,19 +18,15 @@ trait CancelPipelineReprocessingRequest extends StObject {
 }
 object CancelPipelineReprocessingRequest {
   
-  @scala.inline
-  def apply(pipelineName: PipelineName, reprocessingId: ReprocessingId): CancelPipelineReprocessingRequest = {
+  inline def apply(pipelineName: PipelineName, reprocessingId: ReprocessingId): CancelPipelineReprocessingRequest = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName.asInstanceOf[js.Any], reprocessingId = reprocessingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelPipelineReprocessingRequest]
   }
   
-  @scala.inline
-  implicit class CancelPipelineReprocessingRequestMutableBuilder[Self <: CancelPipelineReprocessingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelPipelineReprocessingRequest](x: Self) {
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReprocessingId(value: ReprocessingId): Self = StObject.set(x, "reprocessingId", value.asInstanceOf[js.Any])
+    inline def setReprocessingId(value: ReprocessingId): Self = StObject.set(x, "reprocessingId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait Propagation extends StObject {
 }
 object Propagation {
   
-  @scala.inline
-  def apply(Propagation: MountPropagation): Propagation = {
+  inline def apply(Propagation: MountPropagation): Propagation = {
     val __obj = js.Dynamic.literal(Propagation = Propagation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Propagation]
   }
   
-  @scala.inline
-  implicit class PropagationMutableBuilder[Self <: Propagation] (val x: Self) extends AnyVal {
+  extension [Self <: Propagation](x: Self) {
     
-    @scala.inline
-    def setPropagation(value: MountPropagation): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
+    inline def setPropagation(value: MountPropagation): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
   }
 }

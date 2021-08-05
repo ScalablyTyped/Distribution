@@ -43,8 +43,7 @@ trait CpuData extends StObject {
 }
 object CpuData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brand: String,
     cache: CpuCacheData,
     cores: Double,
@@ -67,58 +66,40 @@ object CpuData {
     __obj.asInstanceOf[CpuData]
   }
   
-  @scala.inline
-  implicit class CpuDataMutableBuilder[Self <: CpuData] (val x: Self) extends AnyVal {
+  extension [Self <: CpuData](x: Self) {
     
-    @scala.inline
-    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache(value: CpuCacheData): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: CpuCacheData): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCores(value: Double): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
+    inline def setCores(value: Double): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGovernor(value: String): Self = StObject.set(x, "governor", value.asInstanceOf[js.Any])
+    inline def setGovernor(value: String): Self = StObject.set(x, "governor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalCores(value: Double): Self = StObject.set(x, "physicalCores", value.asInstanceOf[js.Any])
+    inline def setPhysicalCores(value: Double): Self = StObject.set(x, "physicalCores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessors(value: Double): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
+    inline def setProcessors(value: Double): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: String): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: String): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedmax(value: String): Self = StObject.set(x, "speedmax", value.asInstanceOf[js.Any])
+    inline def setSpeedmax(value: String): Self = StObject.set(x, "speedmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedmin(value: String): Self = StObject.set(x, "speedmin", value.asInstanceOf[js.Any])
+    inline def setSpeedmin(value: String): Self = StObject.set(x, "speedmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepping(value: String): Self = StObject.set(x, "stepping", value.asInstanceOf[js.Any])
+    inline def setStepping(value: String): Self = StObject.set(x, "stepping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoltage(value: String): Self = StObject.set(x, "voltage", value.asInstanceOf[js.Any])
+    inline def setVoltage(value: String): Self = StObject.set(x, "voltage", value.asInstanceOf[js.Any])
   }
 }

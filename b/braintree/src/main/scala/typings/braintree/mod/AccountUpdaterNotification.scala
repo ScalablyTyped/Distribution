@@ -17,8 +17,7 @@ trait AccountUpdaterNotification
 }
 object AccountUpdaterNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accountUpdaterDailyReport: AccountUpdaterDailyReport,
     kind: AccountUpdaterNotificationKind,
     timestamp: Date
@@ -27,13 +26,10 @@ object AccountUpdaterNotification {
     __obj.asInstanceOf[AccountUpdaterNotification]
   }
   
-  @scala.inline
-  implicit class AccountUpdaterNotificationMutableBuilder[Self <: AccountUpdaterNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AccountUpdaterNotification](x: Self) {
     
-    @scala.inline
-    def setAccountUpdaterDailyReport(value: AccountUpdaterDailyReport): Self = StObject.set(x, "accountUpdaterDailyReport", value.asInstanceOf[js.Any])
+    inline def setAccountUpdaterDailyReport(value: AccountUpdaterDailyReport): Self = StObject.set(x, "accountUpdaterDailyReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: AccountUpdaterNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: AccountUpdaterNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

@@ -28,43 +28,31 @@ trait MakeRequestConfig extends StObject {
 }
 object MakeRequestConfig {
   
-  @scala.inline
-  def apply(): MakeRequestConfig = {
+  inline def apply(): MakeRequestConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MakeRequestConfig]
   }
   
-  @scala.inline
-  implicit class MakeRequestConfigMutableBuilder[Self <: MakeRequestConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MakeRequestConfig](x: Self) {
     
-    @scala.inline
-    def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
+    inline def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
+    inline def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+    inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
-    @scala.inline
-    def setShouldRetryFn(value: /* response */ js.UndefOr[Response[js.Any]] => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
+    inline def setShouldRetryFn(value: /* response */ js.UndefOr[Response[js.Any]] => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)
+    inline def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)
     
-    @scala.inline
-    def setStream(value: Duplexify): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Duplexify): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

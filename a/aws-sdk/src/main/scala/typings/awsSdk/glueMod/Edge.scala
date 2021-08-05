@@ -18,25 +18,19 @@ trait Edge extends StObject {
 }
 object Edge {
   
-  @scala.inline
-  def apply(): Edge = {
+  inline def apply(): Edge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Edge]
   }
   
-  @scala.inline
-  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+  extension [Self <: Edge](x: Self) {
     
-    @scala.inline
-    def setDestinationId(value: NameString): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
+    inline def setDestinationId(value: NameString): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationIdUndefined: Self = StObject.set(x, "DestinationId", js.undefined)
+    inline def setDestinationIdUndefined: Self = StObject.set(x, "DestinationId", js.undefined)
     
-    @scala.inline
-    def setSourceId(value: NameString): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: NameString): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
+    inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
   }
 }

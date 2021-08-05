@@ -15,8 +15,7 @@ trait ColumnMovedEvent
 }
 object ColumnMovedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     column: Column,
     columnApi: ColumnApi,
@@ -30,10 +29,8 @@ object ColumnMovedEvent {
     __obj.asInstanceOf[ColumnMovedEvent]
   }
   
-  @scala.inline
-  implicit class ColumnMovedEventMutableBuilder[Self <: ColumnMovedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnMovedEvent](x: Self) {
     
-    @scala.inline
-    def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
   }
 }

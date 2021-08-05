@@ -21,37 +21,27 @@ trait SemanticRolesResult extends StObject {
 }
 object SemanticRolesResult {
   
-  @scala.inline
-  def apply(): SemanticRolesResult = {
+  inline def apply(): SemanticRolesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticRolesResult]
   }
   
-  @scala.inline
-  implicit class SemanticRolesResultMutableBuilder[Self <: SemanticRolesResult] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticRolesResult](x: Self) {
     
-    @scala.inline
-    def setAction(value: SemanticRolesResultAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: SemanticRolesResultAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setObject(value: SemanticRolesResultObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: SemanticRolesResultObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
-    @scala.inline
-    def setSentence(value: String): Self = StObject.set(x, "sentence", value.asInstanceOf[js.Any])
+    inline def setSentence(value: String): Self = StObject.set(x, "sentence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentenceUndefined: Self = StObject.set(x, "sentence", js.undefined)
+    inline def setSentenceUndefined: Self = StObject.set(x, "sentence", js.undefined)
     
-    @scala.inline
-    def setSubject(value: SemanticRolesResultSubject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: SemanticRolesResultSubject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

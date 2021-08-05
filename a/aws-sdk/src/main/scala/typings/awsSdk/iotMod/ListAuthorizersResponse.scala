@@ -18,28 +18,21 @@ trait ListAuthorizersResponse extends StObject {
 }
 object ListAuthorizersResponse {
   
-  @scala.inline
-  def apply(): ListAuthorizersResponse = {
+  inline def apply(): ListAuthorizersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAuthorizersResponse]
   }
   
-  @scala.inline
-  implicit class ListAuthorizersResponseMutableBuilder[Self <: ListAuthorizersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAuthorizersResponse](x: Self) {
     
-    @scala.inline
-    def setAuthorizers(value: Authorizers): Self = StObject.set(x, "authorizers", value.asInstanceOf[js.Any])
+    inline def setAuthorizers(value: Authorizers): Self = StObject.set(x, "authorizers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizersUndefined: Self = StObject.set(x, "authorizers", js.undefined)
+    inline def setAuthorizersUndefined: Self = StObject.set(x, "authorizers", js.undefined)
     
-    @scala.inline
-    def setAuthorizersVarargs(value: AuthorizerSummary*): Self = StObject.set(x, "authorizers", js.Array(value :_*))
+    inline def setAuthorizersVarargs(value: AuthorizerSummary*): Self = StObject.set(x, "authorizers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
-  @scala.inline
-  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-assets", JSImport.Namespace)
   @js.native
@@ -28,38 +26,28 @@ object mod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(): Configuration = {
+    inline def apply(): Configuration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setAllowedFiles(value: String): Self = StObject.set(x, "allowedFiles", value.asInstanceOf[js.Any])
+      inline def setAllowedFiles(value: String): Self = StObject.set(x, "allowedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedFilesUndefined: Self = StObject.set(x, "allowedFiles", js.undefined)
+      inline def setAllowedFilesUndefined: Self = StObject.set(x, "allowedFiles", js.undefined)
       
-      @scala.inline
-      def setPublicAccessEnabled(value: Boolean): Self = StObject.set(x, "publicAccessEnabled", value.asInstanceOf[js.Any])
+      inline def setPublicAccessEnabled(value: Boolean): Self = StObject.set(x, "publicAccessEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicAccessEnabledUndefined: Self = StObject.set(x, "publicAccessEnabled", js.undefined)
+      inline def setPublicAccessEnabledUndefined: Self = StObject.set(x, "publicAccessEnabled", js.undefined)
       
-      @scala.inline
-      def setRootUrlForLinks(value: String): Self = StObject.set(x, "rootUrlForLinks", value.asInstanceOf[js.Any])
+      inline def setRootUrlForLinks(value: String): Self = StObject.set(x, "rootUrlForLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUrlForLinksUndefined: Self = StObject.set(x, "rootUrlForLinks", js.undefined)
+      inline def setRootUrlForLinksUndefined: Self = StObject.set(x, "rootUrlForLinks", js.undefined)
       
-      @scala.inline
-      def setSearchOnDiskIfNotFoundInStore(value: Boolean): Self = StObject.set(x, "searchOnDiskIfNotFoundInStore", value.asInstanceOf[js.Any])
+      inline def setSearchOnDiskIfNotFoundInStore(value: Boolean): Self = StObject.set(x, "searchOnDiskIfNotFoundInStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchOnDiskIfNotFoundInStoreUndefined: Self = StObject.set(x, "searchOnDiskIfNotFoundInStore", js.undefined)
+      inline def setSearchOnDiskIfNotFoundInStoreUndefined: Self = StObject.set(x, "searchOnDiskIfNotFoundInStore", js.undefined)
     }
   }
 }

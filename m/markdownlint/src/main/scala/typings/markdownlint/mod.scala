@@ -17,8 +17,7 @@ object mod {
     * @param {LintCallback} callback Callback (err, result) function.
     * @returns {void}
     */
-  @scala.inline
-  def apply(options: Options, callback: LintCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(options: Options, callback: LintCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("markdownlint", JSImport.Namespace)
   @js.native
@@ -29,8 +28,7 @@ object mod {
     *
     * @returns {string} SemVer string.
     */
-  @scala.inline
-  def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
+  inline def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
   
   /**
     * Read specified configuration file.
@@ -41,14 +39,10 @@ object mod {
     * @param {ReadConfigCallback} [callback] Callback (err, result) function.
     * @returns {void}
     */
-  @scala.inline
-  def readConfig(file: String, parsers: js.Array[ConfigurationParser]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def readConfig(file: String, parsers: js.Array[ConfigurationParser], callback: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def readConfig(file: String, parsers: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def readConfig(file: String, parsers: ReadConfigCallback, callback: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readConfig(file: String, parsers: js.Array[ConfigurationParser]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readConfig(file: String, parsers: js.Array[ConfigurationParser], callback: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readConfig(file: String, parsers: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readConfig(file: String, parsers: ReadConfigCallback, callback: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Read specified configuration file synchronously.
@@ -57,10 +51,8 @@ object mod {
     * @param {ConfigurationParser[]} [parsers] Parsing function(s).
     * @returns {Configuration} Configuration object.
     */
-  @scala.inline
-  def readConfigSync(file: String): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("readConfigSync")(file.asInstanceOf[js.Any]).asInstanceOf[Configuration]
-  @scala.inline
-  def readConfigSync(file: String, parsers: js.Array[ConfigurationParser]): Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfigSync")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Configuration]
+  inline def readConfigSync(file: String): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("readConfigSync")(file.asInstanceOf[js.Any]).asInstanceOf[Configuration]
+  inline def readConfigSync(file: String, parsers: js.Array[ConfigurationParser]): Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfigSync")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Configuration]
   
   /**
     * Lint specified Markdown files synchronously.
@@ -68,8 +60,7 @@ object mod {
     * @param {Options} options Configuration options.
     * @returns {LintResults} Results object.
     */
-  @scala.inline
-  def sync(options: Options): LintResults = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[LintResults]
+  inline def sync(options: Options): LintResults = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[LintResults]
   
   /**
     * Configuration object for linting rules. For a detailed schema, see
@@ -104,32 +95,24 @@ object mod {
   }
   object FixInfo {
     
-    @scala.inline
-    def apply(): FixInfo = {
+    inline def apply(): FixInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FixInfo]
     }
     
-    @scala.inline
-    implicit class FixInfoMutableBuilder[Self <: FixInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FixInfo](x: Self) {
       
-      @scala.inline
-      def setDeleteCount(value: Double): Self = StObject.set(x, "deleteCount", value.asInstanceOf[js.Any])
+      inline def setDeleteCount(value: Double): Self = StObject.set(x, "deleteCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteCountUndefined: Self = StObject.set(x, "deleteCount", js.undefined)
+      inline def setDeleteCountUndefined: Self = StObject.set(x, "deleteCount", js.undefined)
       
-      @scala.inline
-      def setEditColumn(value: Double): Self = StObject.set(x, "editColumn", value.asInstanceOf[js.Any])
+      inline def setEditColumn(value: Double): Self = StObject.set(x, "editColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditColumnUndefined: Self = StObject.set(x, "editColumn", js.undefined)
+      inline def setEditColumnUndefined: Self = StObject.set(x, "editColumn", js.undefined)
       
-      @scala.inline
-      def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+      inline def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+      inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     }
   }
   
@@ -185,8 +168,7 @@ object mod {
   }
   object LintError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errorContext: String,
       errorDetail: String,
       errorRange: js.Array[Double],
@@ -200,38 +182,27 @@ object mod {
       __obj.asInstanceOf[LintError]
     }
     
-    @scala.inline
-    implicit class LintErrorMutableBuilder[Self <: LintError] (val x: Self) extends AnyVal {
+    extension [Self <: LintError](x: Self) {
       
-      @scala.inline
-      def setErrorContext(value: String): Self = StObject.set(x, "errorContext", value.asInstanceOf[js.Any])
+      inline def setErrorContext(value: String): Self = StObject.set(x, "errorContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDetail(value: String): Self = StObject.set(x, "errorDetail", value.asInstanceOf[js.Any])
+      inline def setErrorDetail(value: String): Self = StObject.set(x, "errorDetail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorRange(value: js.Array[Double]): Self = StObject.set(x, "errorRange", value.asInstanceOf[js.Any])
+      inline def setErrorRange(value: js.Array[Double]): Self = StObject.set(x, "errorRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorRangeVarargs(value: Double*): Self = StObject.set(x, "errorRange", js.Array(value :_*))
+      inline def setErrorRangeVarargs(value: Double*): Self = StObject.set(x, "errorRange", js.Array(value :_*))
       
-      @scala.inline
-      def setFixInfo(value: FixInfo): Self = StObject.set(x, "fixInfo", value.asInstanceOf[js.Any])
+      inline def setFixInfo(value: FixInfo): Self = StObject.set(x, "fixInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleDescription(value: String): Self = StObject.set(x, "ruleDescription", value.asInstanceOf[js.Any])
+      inline def setRuleDescription(value: String): Self = StObject.set(x, "ruleDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleInformation(value: String): Self = StObject.set(x, "ruleInformation", value.asInstanceOf[js.Any])
+      inline def setRuleInformation(value: String): Self = StObject.set(x, "ruleInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleNames(value: js.Array[String]): Self = StObject.set(x, "ruleNames", value.asInstanceOf[js.Any])
+      inline def setRuleNames(value: js.Array[String]): Self = StObject.set(x, "ruleNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleNamesVarargs(value: String*): Self = StObject.set(x, "ruleNames", js.Array(value :_*))
+      inline def setRuleNamesVarargs(value: String*): Self = StObject.set(x, "ruleNames", js.Array(value :_*))
     }
   }
   
@@ -322,8 +293,7 @@ object mod {
   }
   object MarkdownItToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attrs: js.Array[js.Array[String]],
       block: Boolean,
       children: js.Array[MarkdownItToken],
@@ -345,62 +315,43 @@ object mod {
       __obj.asInstanceOf[MarkdownItToken]
     }
     
-    @scala.inline
-    implicit class MarkdownItTokenMutableBuilder[Self <: MarkdownItToken] (val x: Self) extends AnyVal {
+    extension [Self <: MarkdownItToken](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: js.Array[js.Array[String]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: js.Array[js.Array[String]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsVarargs(value: js.Array[String]*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+      inline def setAttrsVarargs(value: js.Array[String]*): Self = StObject.set(x, "attrs", js.Array(value :_*))
       
-      @scala.inline
-      def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[MarkdownItToken]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[MarkdownItToken]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: MarkdownItToken*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: MarkdownItToken*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Array[Double]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Array[Double]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapVarargs(value: Double*): Self = StObject.set(x, "map", js.Array(value :_*))
+      inline def setMapVarargs(value: Double*): Self = StObject.set(x, "map", js.Array(value :_*))
       
-      @scala.inline
-      def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNesting(value: Double): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
+      inline def setNesting(value: Double): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -456,77 +407,54 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setCustomRules(value: js.Array[Rule] | Rule): Self = StObject.set(x, "customRules", value.asInstanceOf[js.Any])
+      inline def setCustomRules(value: js.Array[Rule] | Rule): Self = StObject.set(x, "customRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRulesUndefined: Self = StObject.set(x, "customRules", js.undefined)
+      inline def setCustomRulesUndefined: Self = StObject.set(x, "customRules", js.undefined)
       
-      @scala.inline
-      def setCustomRulesVarargs(value: Rule*): Self = StObject.set(x, "customRules", js.Array(value :_*))
+      inline def setCustomRulesVarargs(value: Rule*): Self = StObject.set(x, "customRules", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: js.Array[String] | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String] | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setFrontMatter(value: RegExp): Self = StObject.set(x, "frontMatter", value.asInstanceOf[js.Any])
+      inline def setFrontMatter(value: RegExp): Self = StObject.set(x, "frontMatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrontMatterUndefined: Self = StObject.set(x, "frontMatter", js.undefined)
+      inline def setFrontMatterUndefined: Self = StObject.set(x, "frontMatter", js.undefined)
       
-      @scala.inline
-      def setHandleRuleFailures(value: Boolean): Self = StObject.set(x, "handleRuleFailures", value.asInstanceOf[js.Any])
+      inline def setHandleRuleFailures(value: Boolean): Self = StObject.set(x, "handleRuleFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleRuleFailuresUndefined: Self = StObject.set(x, "handleRuleFailures", js.undefined)
+      inline def setHandleRuleFailuresUndefined: Self = StObject.set(x, "handleRuleFailures", js.undefined)
       
-      @scala.inline
-      def setMarkdownItPlugins(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "markdownItPlugins", value.asInstanceOf[js.Any])
+      inline def setMarkdownItPlugins(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "markdownItPlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkdownItPluginsUndefined: Self = StObject.set(x, "markdownItPlugins", js.undefined)
+      inline def setMarkdownItPluginsUndefined: Self = StObject.set(x, "markdownItPlugins", js.undefined)
       
-      @scala.inline
-      def setMarkdownItPluginsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "markdownItPlugins", js.Array(value :_*))
+      inline def setMarkdownItPluginsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "markdownItPlugins", js.Array(value :_*))
       
-      @scala.inline
-      def setNoInlineConfig(value: Boolean): Self = StObject.set(x, "noInlineConfig", value.asInstanceOf[js.Any])
+      inline def setNoInlineConfig(value: Boolean): Self = StObject.set(x, "noInlineConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoInlineConfigUndefined: Self = StObject.set(x, "noInlineConfig", js.undefined)
+      inline def setNoInlineConfigUndefined: Self = StObject.set(x, "noInlineConfig", js.undefined)
       
-      @scala.inline
-      def setResultVersion(value: Double): Self = StObject.set(x, "resultVersion", value.asInstanceOf[js.Any])
+      inline def setResultVersion(value: Double): Self = StObject.set(x, "resultVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultVersionUndefined: Self = StObject.set(x, "resultVersion", js.undefined)
+      inline def setResultVersionUndefined: Self = StObject.set(x, "resultVersion", js.undefined)
       
-      @scala.inline
-      def setStrings(value: StringDictionary[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: StringDictionary[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+      inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     }
   }
   
@@ -577,8 +505,7 @@ object mod {
   }
   object Rule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       function: (/* params */ RuleParams, /* onError */ RuleOnError) => Unit,
       names: js.Array[String],
@@ -588,32 +515,23 @@ object mod {
       __obj.asInstanceOf[Rule]
     }
     
-    @scala.inline
-    implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+    extension [Self <: Rule](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction(value: (/* params */ RuleParams, /* onError */ RuleOnError) => Unit): Self = StObject.set(x, "function", js.Any.fromFunction2(value))
+      inline def setFunction(value: (/* params */ RuleParams, /* onError */ RuleOnError) => Unit): Self = StObject.set(x, "function", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInformation(value: URL): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
+      inline def setInformation(value: URL): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInformationUndefined: Self = StObject.set(x, "information", js.undefined)
+      inline def setInformationUndefined: Self = StObject.set(x, "information", js.undefined)
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -659,38 +577,28 @@ object mod {
   }
   object RuleOnErrorFixInfo {
     
-    @scala.inline
-    def apply(): RuleOnErrorFixInfo = {
+    inline def apply(): RuleOnErrorFixInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleOnErrorFixInfo]
     }
     
-    @scala.inline
-    implicit class RuleOnErrorFixInfoMutableBuilder[Self <: RuleOnErrorFixInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RuleOnErrorFixInfo](x: Self) {
       
-      @scala.inline
-      def setDeleteCount(value: Double): Self = StObject.set(x, "deleteCount", value.asInstanceOf[js.Any])
+      inline def setDeleteCount(value: Double): Self = StObject.set(x, "deleteCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteCountUndefined: Self = StObject.set(x, "deleteCount", js.undefined)
+      inline def setDeleteCountUndefined: Self = StObject.set(x, "deleteCount", js.undefined)
       
-      @scala.inline
-      def setEditColumn(value: Double): Self = StObject.set(x, "editColumn", value.asInstanceOf[js.Any])
+      inline def setEditColumn(value: Double): Self = StObject.set(x, "editColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditColumnUndefined: Self = StObject.set(x, "editColumn", js.undefined)
+      inline def setEditColumnUndefined: Self = StObject.set(x, "editColumn", js.undefined)
       
-      @scala.inline
-      def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+      inline def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+      inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     }
   }
   
@@ -726,44 +634,32 @@ object mod {
   }
   object RuleOnErrorInfo {
     
-    @scala.inline
-    def apply(lineNumber: Double): RuleOnErrorInfo = {
+    inline def apply(lineNumber: Double): RuleOnErrorInfo = {
       val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleOnErrorInfo]
     }
     
-    @scala.inline
-    implicit class RuleOnErrorInfoMutableBuilder[Self <: RuleOnErrorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RuleOnErrorInfo](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setFixInfo(value: RuleOnErrorFixInfo): Self = StObject.set(x, "fixInfo", value.asInstanceOf[js.Any])
+      inline def setFixInfo(value: RuleOnErrorFixInfo): Self = StObject.set(x, "fixInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixInfoUndefined: Self = StObject.set(x, "fixInfo", js.undefined)
+      inline def setFixInfoUndefined: Self = StObject.set(x, "fixInfo", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     }
   }
   
@@ -799,8 +695,7 @@ object mod {
   }
   object RuleParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: RuleConfiguration,
       frontMatterLines: js.Array[String],
       lines: js.Array[String],
@@ -811,32 +706,23 @@ object mod {
       __obj.asInstanceOf[RuleParams]
     }
     
-    @scala.inline
-    implicit class RuleParamsMutableBuilder[Self <: RuleParams] (val x: Self) extends AnyVal {
+    extension [Self <: RuleParams](x: Self) {
       
-      @scala.inline
-      def setConfig(value: RuleConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: RuleConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrontMatterLines(value: js.Array[String]): Self = StObject.set(x, "frontMatterLines", value.asInstanceOf[js.Any])
+      inline def setFrontMatterLines(value: js.Array[String]): Self = StObject.set(x, "frontMatterLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrontMatterLinesVarargs(value: String*): Self = StObject.set(x, "frontMatterLines", js.Array(value :_*))
+      inline def setFrontMatterLinesVarargs(value: String*): Self = StObject.set(x, "frontMatterLines", js.Array(value :_*))
       
-      @scala.inline
-      def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: js.Array[MarkdownItToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Array[MarkdownItToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensVarargs(value: MarkdownItToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: MarkdownItToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     }
   }
   

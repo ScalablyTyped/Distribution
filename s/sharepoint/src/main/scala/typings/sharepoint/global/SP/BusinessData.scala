@@ -58,8 +58,7 @@ object BusinessData {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.BusinessData.Infrastructure.ExternalSubscriptionStore = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Infrastructure.ExternalSubscriptionStore]
+      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.BusinessData.Infrastructure.ExternalSubscriptionStore = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Infrastructure.ExternalSubscriptionStore]
     }
   }
   
@@ -119,8 +118,7 @@ object BusinessData {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, identifierValues: js.Array[js.Any]): typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], identifierValues.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity]
+      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, identifierValues: js.Array[js.Any]): typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], identifierValues.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity]
     }
     
     @JSGlobal("SP.BusinessData.Runtime.EntityInstance")
@@ -143,8 +141,7 @@ object BusinessData {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, notificationEndpoint: String): typings.sharepoint.SP.BusinessData.Runtime.NotificationCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], notificationEndpoint.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.NotificationCallback]
+      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, notificationEndpoint: String): typings.sharepoint.SP.BusinessData.Runtime.NotificationCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], notificationEndpoint.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.NotificationCallback]
     }
     
     @JSGlobal("SP.BusinessData.Runtime.Subscription")
@@ -161,8 +158,7 @@ object BusinessData {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, id: js.Any, hash: String): typings.sharepoint.SP.BusinessData.Runtime.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], id.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.Subscription]
+      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, id: js.Any, hash: String): typings.sharepoint.SP.BusinessData.Runtime.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], id.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.Subscription]
     }
   }
   

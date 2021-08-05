@@ -11,10 +11,8 @@ object refCountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reduce(state: Double, action: Action[js.Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
-  @scala.inline
-  def reduce(state: Unit, action: Action[js.Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def reduce(state: Double, action: Action[js.Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def reduce(state: Unit, action: Action[js.Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
   
   type State = Double
 }

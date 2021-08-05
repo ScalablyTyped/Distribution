@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait bodyScroll extends StObject
 object bodyScroll {
   
-  @scala.inline
-  def bodyScroll_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def bodyScroll_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def bodyScrollauto: `4` = 4.asInstanceOf[`4`]
+  inline def bodyScrollauto: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def bodyScrolldefault: `3` = 3.asInstanceOf[`3`]
+  inline def bodyScrolldefault: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def bodyScrollno: `2` = 2.asInstanceOf[`2`]
+  inline def bodyScrollno: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def bodyScrollyes: `1` = 1.asInstanceOf[`1`]
+  inline def bodyScrollyes: `1` = 1.asInstanceOf[`1`]
 }

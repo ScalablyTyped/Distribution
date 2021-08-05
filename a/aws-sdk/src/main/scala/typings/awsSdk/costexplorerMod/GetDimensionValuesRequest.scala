@@ -33,37 +33,27 @@ trait GetDimensionValuesRequest extends StObject {
 }
 object GetDimensionValuesRequest {
   
-  @scala.inline
-  def apply(Dimension: Dimension, TimePeriod: DateInterval): GetDimensionValuesRequest = {
+  inline def apply(Dimension: Dimension, TimePeriod: DateInterval): GetDimensionValuesRequest = {
     val __obj = js.Dynamic.literal(Dimension = Dimension.asInstanceOf[js.Any], TimePeriod = TimePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDimensionValuesRequest]
   }
   
-  @scala.inline
-  implicit class GetDimensionValuesRequestMutableBuilder[Self <: GetDimensionValuesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDimensionValuesRequest](x: Self) {
     
-    @scala.inline
-    def setContext(value: Context): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
     
-    @scala.inline
-    def setDimension(value: Dimension): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: Dimension): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setSearchString(value: SearchString): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: SearchString): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchStringUndefined: Self = StObject.set(x, "SearchString", js.undefined)
+    inline def setSearchStringUndefined: Self = StObject.set(x, "SearchString", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

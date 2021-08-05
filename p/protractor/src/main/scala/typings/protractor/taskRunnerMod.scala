@@ -14,9 +14,9 @@ object taskRunnerMod {
   class TaskRunner protected () extends EventEmitter {
     def this(configFile: String, additionalConfig: Config, task: js.Any, runInFork: Boolean) = this()
     
-    var additionalConfig: js.Any = js.native
+    /* private */ var additionalConfig: js.Any = js.native
     
-    var configFile: js.Any = js.native
+    /* private */ var configFile: js.Any = js.native
     
     /**
       * Sends the run command.
@@ -27,9 +27,9 @@ object taskRunnerMod {
       */
     def run(): Promise[js.Any] = js.native
     
-    var runInFork: js.Any = js.native
+    /* private */ var runInFork: js.Any = js.native
     
-    var task: js.Any = js.native
+    /* private */ var task: js.Any = js.native
   }
   
   trait RunResults extends StObject {
@@ -48,8 +48,7 @@ object taskRunnerMod {
   }
   object RunResults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capabilities: js.Any,
       exitCode: Double,
       failedCount: Double,
@@ -61,32 +60,23 @@ object taskRunnerMod {
       __obj.asInstanceOf[RunResults]
     }
     
-    @scala.inline
-    implicit class RunResultsMutableBuilder[Self <: RunResults] (val x: Self) extends AnyVal {
+    extension [Self <: RunResults](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+      inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
+      inline def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecResults(value: js.Array[js.Any]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
+      inline def setSpecResults(value: js.Array[js.Any]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecResultsVarargs(value: js.Any*): Self = StObject.set(x, "specResults", js.Array(value :_*))
+      inline def setSpecResultsVarargs(value: js.Any*): Self = StObject.set(x, "specResults", js.Array(value :_*))
       
-      @scala.inline
-      def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+      inline def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
+      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
       
-      @scala.inline
-      def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+      inline def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     }
   }
 }

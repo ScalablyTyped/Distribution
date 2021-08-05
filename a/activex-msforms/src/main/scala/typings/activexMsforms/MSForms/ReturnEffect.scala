@@ -6,27 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReturnEffect extends StObject {
   
-  @JSName("MSForms.ReturnEffect_typekey")
+  /* private */ @JSName("MSForms.ReturnEffect_typekey")
   var MSFormsDotReturnEffect_typekey: ReturnEffect
   
   var Value: fmDropEffect
 }
 object ReturnEffect {
   
-  @scala.inline
-  def apply(MSFormsDotReturnEffect_typekey: ReturnEffect, Value: fmDropEffect): ReturnEffect = {
+  inline def apply(MSFormsDotReturnEffect_typekey: ReturnEffect, Value: fmDropEffect): ReturnEffect = {
     val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("MSForms.ReturnEffect_typekey")(MSFormsDotReturnEffect_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnEffect]
   }
   
-  @scala.inline
-  implicit class ReturnEffectMutableBuilder[Self <: ReturnEffect] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnEffect](x: Self) {
     
-    @scala.inline
-    def setMSFormsDotReturnEffect_typekey(value: ReturnEffect): Self = StObject.set(x, "MSForms.ReturnEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotReturnEffect_typekey(value: ReturnEffect): Self = StObject.set(x, "MSForms.ReturnEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: fmDropEffect): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: fmDropEffect): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -124,8 +124,7 @@ object mod {
   }
   object AxeAnalysis {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inapplicable: js.Array[Result],
       incomplete: js.Array[Result],
       passes: js.Array[Result],
@@ -137,38 +136,27 @@ object mod {
       __obj.asInstanceOf[AxeAnalysis]
     }
     
-    @scala.inline
-    implicit class AxeAnalysisMutableBuilder[Self <: AxeAnalysis] (val x: Self) extends AnyVal {
+    extension [Self <: AxeAnalysis](x: Self) {
       
-      @scala.inline
-      def setInapplicable(value: js.Array[Result]): Self = StObject.set(x, "inapplicable", value.asInstanceOf[js.Any])
+      inline def setInapplicable(value: js.Array[Result]): Self = StObject.set(x, "inapplicable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInapplicableVarargs(value: Result*): Self = StObject.set(x, "inapplicable", js.Array(value :_*))
+      inline def setInapplicableVarargs(value: Result*): Self = StObject.set(x, "inapplicable", js.Array(value :_*))
       
-      @scala.inline
-      def setIncomplete(value: js.Array[Result]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
+      inline def setIncomplete(value: js.Array[Result]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value :_*))
+      inline def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value :_*))
       
-      @scala.inline
-      def setPasses(value: js.Array[Result]): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
+      inline def setPasses(value: js.Array[Result]): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value :_*))
+      inline def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value :_*))
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViolations(value: js.Array[Result]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
+      inline def setViolations(value: js.Array[Result]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value :_*))
+      inline def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value :_*))
     }
   }
   
@@ -182,20 +170,16 @@ object mod {
   }
   object BuilderOptions {
     
-    @scala.inline
-    def apply(): BuilderOptions = {
+    inline def apply(): BuilderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BuilderOptions]
     }
     
-    @scala.inline
-    implicit class BuilderOptionsMutableBuilder[Self <: BuilderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BuilderOptions](x: Self) {
       
-      @scala.inline
-      def setLogIframeErrors(value: Boolean): Self = StObject.set(x, "logIframeErrors", value.asInstanceOf[js.Any])
+      inline def setLogIframeErrors(value: Boolean): Self = StObject.set(x, "logIframeErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogIframeErrorsUndefined: Self = StObject.set(x, "logIframeErrors", js.undefined)
+      inline def setLogIframeErrorsUndefined: Self = StObject.set(x, "logIframeErrors", js.undefined)
     }
   }
   

@@ -24,8 +24,7 @@ trait ImagePickerIOSStatic extends StObject {
 }
 object ImagePickerIOSStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRecordVideos: js.Function1[/* value */ Boolean, Unit] => Unit,
     canUseCamera: js.Function1[/* value */ Boolean, Unit] => Unit,
     openCameraDialog: (OpenCameraDialogOptions, js.Function1[/* args */ ImagePickerResult, Unit], js.Function1[/* args */ js.Array[js.Any], Unit]) => Unit,
@@ -35,22 +34,17 @@ object ImagePickerIOSStatic {
     __obj.asInstanceOf[ImagePickerIOSStatic]
   }
   
-  @scala.inline
-  implicit class ImagePickerIOSStaticMutableBuilder[Self <: ImagePickerIOSStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePickerIOSStatic](x: Self) {
     
-    @scala.inline
-    def setCanRecordVideos(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = StObject.set(x, "canRecordVideos", js.Any.fromFunction1(value))
+    inline def setCanRecordVideos(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = StObject.set(x, "canRecordVideos", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanUseCamera(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = StObject.set(x, "canUseCamera", js.Any.fromFunction1(value))
+    inline def setCanUseCamera(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = StObject.set(x, "canUseCamera", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenCameraDialog(
+    inline def setOpenCameraDialog(
       value: (OpenCameraDialogOptions, js.Function1[/* args */ ImagePickerResult, Unit], js.Function1[/* args */ js.Array[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "openCameraDialog", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOpenSelectDialog(
+    inline def setOpenSelectDialog(
       value: (OpenSelectDialogOptions, js.Function1[/* args */ ImagePickerResult, Unit], js.Function1[/* args */ js.Array[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "openSelectDialog", js.Any.fromFunction3(value))
   }

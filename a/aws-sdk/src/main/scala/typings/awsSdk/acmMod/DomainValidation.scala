@@ -38,49 +38,35 @@ trait DomainValidation extends StObject {
 }
 object DomainValidation {
   
-  @scala.inline
-  def apply(DomainName: DomainNameString): DomainValidation = {
+  inline def apply(DomainName: DomainNameString): DomainValidation = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainValidation]
   }
   
-  @scala.inline
-  implicit class DomainValidationMutableBuilder[Self <: DomainValidation] (val x: Self) extends AnyVal {
+  extension [Self <: DomainValidation](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecord(value: ResourceRecord): Self = StObject.set(x, "ResourceRecord", value.asInstanceOf[js.Any])
+    inline def setResourceRecord(value: ResourceRecord): Self = StObject.set(x, "ResourceRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordUndefined: Self = StObject.set(x, "ResourceRecord", js.undefined)
+    inline def setResourceRecordUndefined: Self = StObject.set(x, "ResourceRecord", js.undefined)
     
-    @scala.inline
-    def setValidationDomain(value: DomainNameString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
+    inline def setValidationDomain(value: DomainNameString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDomainUndefined: Self = StObject.set(x, "ValidationDomain", js.undefined)
+    inline def setValidationDomainUndefined: Self = StObject.set(x, "ValidationDomain", js.undefined)
     
-    @scala.inline
-    def setValidationEmails(value: ValidationEmailList): Self = StObject.set(x, "ValidationEmails", value.asInstanceOf[js.Any])
+    inline def setValidationEmails(value: ValidationEmailList): Self = StObject.set(x, "ValidationEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
+    inline def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
     
-    @scala.inline
-    def setValidationEmailsVarargs(value: String*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
+    inline def setValidationEmailsVarargs(value: String*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationMethod(value: ValidationMethod): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
+    inline def setValidationMethod(value: ValidationMethod): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationMethodUndefined: Self = StObject.set(x, "ValidationMethod", js.undefined)
+    inline def setValidationMethodUndefined: Self = StObject.set(x, "ValidationMethod", js.undefined)
     
-    @scala.inline
-    def setValidationStatus(value: DomainStatus): Self = StObject.set(x, "ValidationStatus", value.asInstanceOf[js.Any])
+    inline def setValidationStatus(value: DomainStatus): Self = StObject.set(x, "ValidationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationStatusUndefined: Self = StObject.set(x, "ValidationStatus", js.undefined)
+    inline def setValidationStatusUndefined: Self = StObject.set(x, "ValidationStatus", js.undefined)
   }
 }

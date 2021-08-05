@@ -11,12 +11,8 @@ object betweenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Between[T](from: T, to: T): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def Between[T](from: T, to: FindOperator[T]): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def Between[T](from: FindOperator[T], to: T): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def Between[T](from: FindOperator[T], to: FindOperator[T]): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
+  inline def Between[T](from: T, to: T): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
+  inline def Between[T](from: T, to: FindOperator[T]): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
+  inline def Between[T](from: FindOperator[T], to: T): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
+  inline def Between[T](from: FindOperator[T], to: FindOperator[T]): FindOperator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FindOperator[T]]
 }

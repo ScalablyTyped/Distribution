@@ -10,8 +10,6 @@ object path2CurveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def default(path: js.Any, path2: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def default(path: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def default(path: js.Any, path2: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

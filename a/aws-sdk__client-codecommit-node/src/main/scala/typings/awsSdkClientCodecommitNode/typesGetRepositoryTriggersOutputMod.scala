@@ -31,32 +31,24 @@ object typesGetRepositoryTriggersOutputMod {
   }
   object GetRepositoryTriggersOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetRepositoryTriggersOutput = {
+    inline def apply($metadata: ResponseMetadata): GetRepositoryTriggersOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRepositoryTriggersOutput]
     }
     
-    @scala.inline
-    implicit class GetRepositoryTriggersOutputMutableBuilder[Self <: GetRepositoryTriggersOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetRepositoryTriggersOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+      inline def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
+      inline def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
       
-      @scala.inline
-      def setTriggers(value: js.Array[UnmarshalledRepositoryTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: js.Array[UnmarshalledRepositoryTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
+      inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
       
-      @scala.inline
-      def setTriggersVarargs(value: UnmarshalledRepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+      inline def setTriggersVarargs(value: UnmarshalledRepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
     }
   }
 }

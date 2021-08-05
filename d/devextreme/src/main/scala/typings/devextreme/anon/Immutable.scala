@@ -12,28 +12,21 @@ trait Immutable extends StObject {
 }
 object Immutable {
   
-  @scala.inline
-  def apply(): Immutable = {
+  inline def apply(): Immutable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Immutable]
   }
   
-  @scala.inline
-  implicit class ImmutableMutableBuilder[Self <: Immutable] (val x: Self) extends AnyVal {
+  extension [Self <: Immutable](x: Self) {
     
-    @scala.inline
-    def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+    inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+    inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
     
-    @scala.inline
-    def setKeyExpr(value: String | js.Array[String]): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
+    inline def setKeyExpr(value: String | js.Array[String]): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
+    inline def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
     
-    @scala.inline
-    def setKeyExprVarargs(value: String*): Self = StObject.set(x, "keyExpr", js.Array(value :_*))
+    inline def setKeyExprVarargs(value: String*): Self = StObject.set(x, "keyExpr", js.Array(value :_*))
   }
 }

@@ -16,17 +16,14 @@ object typesInvalidImportTokenExceptionMod {
   }
   object InvalidImportTokenException {
     
-    @scala.inline
-    def apply(): InvalidImportTokenException = {
+    inline def apply(): InvalidImportTokenException = {
       val __obj = js.Dynamic.literal(name = "InvalidImportTokenException")
       __obj.asInstanceOf[InvalidImportTokenException]
     }
     
-    @scala.inline
-    implicit class InvalidImportTokenExceptionMutableBuilder[Self <: InvalidImportTokenException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidImportTokenException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidImportTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidImportTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +36,16 @@ object typesInvalidImportTokenExceptionMod {
   }
   object InvalidImportTokenExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidImportTokenExceptionDetails = {
+    inline def apply(): InvalidImportTokenExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidImportTokenExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidImportTokenExceptionDetailsMutableBuilder[Self <: InvalidImportTokenExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidImportTokenExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

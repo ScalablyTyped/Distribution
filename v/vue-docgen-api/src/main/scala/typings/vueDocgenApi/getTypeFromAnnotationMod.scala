@@ -14,12 +14,8 @@ object getTypeFromAnnotationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[ParamType]]
-  @scala.inline
-  def default(typeNode: Noop_): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(typeNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ParamType]]
-  @scala.inline
-  def default(typeNode: TSTypeAnnotation_): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(typeNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ParamType]]
-  @scala.inline
-  def default(typeNode: TypeAnnotation_): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(typeNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ParamType]]
+  inline def default(): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[ParamType]]
+  inline def default(typeNode: Noop_): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(typeNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ParamType]]
+  inline def default(typeNode: TSTypeAnnotation_): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(typeNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ParamType]]
+  inline def default(typeNode: TypeAnnotation_): js.UndefOr[ParamType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(typeNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ParamType]]
 }

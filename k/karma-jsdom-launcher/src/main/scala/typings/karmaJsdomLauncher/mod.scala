@@ -16,20 +16,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setJsdomLauncher(value: JsdomLauncherOptions): Self = StObject.set(x, "jsdomLauncher", value.asInstanceOf[js.Any])
+      inline def setJsdomLauncher(value: JsdomLauncherOptions): Self = StObject.set(x, "jsdomLauncher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsdomLauncherUndefined: Self = StObject.set(x, "jsdomLauncher", js.undefined)
+      inline def setJsdomLauncherUndefined: Self = StObject.set(x, "jsdomLauncher", js.undefined)
     }
   }
   
@@ -43,19 +39,16 @@ object mod {
   }
   object JsdomLauncherOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       jsdom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jsdom.ConstructorOptions */ js.Any
     ): JsdomLauncherOptions = {
       val __obj = js.Dynamic.literal(jsdom = jsdom.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsdomLauncherOptions]
     }
     
-    @scala.inline
-    implicit class JsdomLauncherOptionsMutableBuilder[Self <: JsdomLauncherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsdomLauncherOptions](x: Self) {
       
-      @scala.inline
-      def setJsdom(
+      inline def setJsdom(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jsdom.ConstructorOptions */ js.Any
       ): Self = StObject.set(x, "jsdom", value.asInstanceOf[js.Any])
     }

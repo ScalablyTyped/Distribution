@@ -18,8 +18,7 @@ trait GetMemberDetectorsResponse extends StObject {
 }
 object GetMemberDetectorsResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemberDataSourceConfigurations: MemberDataSourceConfigurations,
     UnprocessedAccounts: UnprocessedAccounts
   ): GetMemberDetectorsResponse = {
@@ -27,19 +26,14 @@ object GetMemberDetectorsResponse {
     __obj.asInstanceOf[GetMemberDetectorsResponse]
   }
   
-  @scala.inline
-  implicit class GetMemberDetectorsResponseMutableBuilder[Self <: GetMemberDetectorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMemberDetectorsResponse](x: Self) {
     
-    @scala.inline
-    def setMemberDataSourceConfigurations(value: MemberDataSourceConfigurations): Self = StObject.set(x, "MemberDataSourceConfigurations", value.asInstanceOf[js.Any])
+    inline def setMemberDataSourceConfigurations(value: MemberDataSourceConfigurations): Self = StObject.set(x, "MemberDataSourceConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberDataSourceConfigurationsVarargs(value: MemberDataSourceConfiguration*): Self = StObject.set(x, "MemberDataSourceConfigurations", js.Array(value :_*))
+    inline def setMemberDataSourceConfigurationsVarargs(value: MemberDataSourceConfiguration*): Self = StObject.set(x, "MemberDataSourceConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
+    inline def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
   }
 }

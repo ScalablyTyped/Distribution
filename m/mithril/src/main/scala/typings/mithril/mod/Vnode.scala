@@ -31,43 +31,31 @@ trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends StObject {
 }
 object Vnode {
   
-  @scala.inline
-  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](attrs: Attrs, state: State, tag: String | (ComponentTypes[Attrs, State])): Vnode[Attrs, State] = {
+  inline def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](attrs: Attrs, state: State, tag: String | (ComponentTypes[Attrs, State])): Vnode[Attrs, State] = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vnode[Attrs, State]]
   }
   
-  @scala.inline
-  implicit class VnodeMutableBuilder[Self <: Vnode[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self & (Vnode[Attrs, State])) extends AnyVal {
+  extension [Self <: Vnode[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */](x: Self & (Vnode[Attrs, State])) {
     
-    @scala.inline
-    def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: ChildArrayOrPrimitive): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ChildArrayOrPrimitive): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String | (ComponentTypes[Attrs, State])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String | (ComponentTypes[Attrs, State])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFunction1(value: /* vnode */ Vnode[Attrs, js.Object] => Component[Attrs, js.Object]): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
+    inline def setTagFunction1(value: /* vnode */ Vnode[Attrs, js.Object] => Component[Attrs, js.Object]): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setText(value: String | Double | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | Double | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

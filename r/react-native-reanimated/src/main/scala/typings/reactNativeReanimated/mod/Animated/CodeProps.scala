@@ -14,34 +14,25 @@ trait CodeProps extends StObject {
 }
 object CodeProps {
   
-  @scala.inline
-  def apply(): CodeProps = {
+  inline def apply(): CodeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeProps]
   }
   
-  @scala.inline
-  implicit class CodePropsMutableBuilder[Self <: CodeProps] (val x: Self) extends AnyVal {
+  extension [Self <: CodeProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: () => AnimatedNode[Double]): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
+    inline def setChildren(value: () => AnimatedNode[Double]): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDependencies(value: js.Array[js.Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: js.Array[js.Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    @scala.inline
-    def setDependenciesVarargs(value: js.Any*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: js.Any*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
-    @scala.inline
-    def setExec(value: AnimatedNode[Double]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    inline def setExec(value: AnimatedNode[Double]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
   }
 }

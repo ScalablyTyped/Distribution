@@ -13,19 +13,15 @@ trait BannerClickEventUIParam extends StObject {
 }
 object BannerClickEventUIParam {
   
-  @scala.inline
-  def apply(): BannerClickEventUIParam = {
+  inline def apply(): BannerClickEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BannerClickEventUIParam]
   }
   
-  @scala.inline
-  implicit class BannerClickEventUIParamMutableBuilder[Self <: BannerClickEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: BannerClickEventUIParam](x: Self) {
     
-    @scala.inline
-    def setBannerElement(value: js.Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
+    inline def setBannerElement(value: js.Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerElementUndefined: Self = StObject.set(x, "bannerElement", js.undefined)
+    inline def setBannerElementUndefined: Self = StObject.set(x, "bannerElement", js.undefined)
   }
 }

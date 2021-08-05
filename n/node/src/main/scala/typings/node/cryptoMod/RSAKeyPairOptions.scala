@@ -24,8 +24,7 @@ trait RSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
 }
 object RSAKeyPairOptions {
   
-  @scala.inline
-  def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
+  inline def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
     modulusLength: Double,
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & Type,
     publicKeyEncoding: Format[PubF]
@@ -34,22 +33,16 @@ object RSAKeyPairOptions {
     __obj.asInstanceOf[RSAKeyPairOptions[PubF, PrivF]]
   }
   
-  @scala.inline
-  implicit class RSAKeyPairOptionsMutableBuilder[Self <: RSAKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (RSAKeyPairOptions[PubF, PrivF])) extends AnyVal {
+  extension [Self <: RSAKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (RSAKeyPairOptions[PubF, PrivF])) {
     
-    @scala.inline
-    def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
+    inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & Type): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & Type): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
+    inline def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
+    inline def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
     
-    @scala.inline
-    def setPublicKeyEncoding(value: Format[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPublicKeyEncoding(value: Format[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
   }
 }

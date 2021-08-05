@@ -16,22 +16,17 @@ trait CreateRewardedVideoAdOption extends StObject {
 }
 object CreateRewardedVideoAdOption {
   
-  @scala.inline
-  def apply(adUnitId: String): CreateRewardedVideoAdOption = {
+  inline def apply(adUnitId: String): CreateRewardedVideoAdOption = {
     val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRewardedVideoAdOption]
   }
   
-  @scala.inline
-  implicit class CreateRewardedVideoAdOptionMutableBuilder[Self <: CreateRewardedVideoAdOption] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRewardedVideoAdOption](x: Self) {
     
-    @scala.inline
-    def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
+    inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiton(value: Boolean): Self = StObject.set(x, "multiton", value.asInstanceOf[js.Any])
+    inline def setMultiton(value: Boolean): Self = StObject.set(x, "multiton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultitonUndefined: Self = StObject.set(x, "multiton", js.undefined)
+    inline def setMultitonUndefined: Self = StObject.set(x, "multiton", js.undefined)
   }
 }

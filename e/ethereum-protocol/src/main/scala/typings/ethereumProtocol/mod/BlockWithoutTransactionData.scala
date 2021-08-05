@@ -13,8 +13,7 @@ trait BlockWithoutTransactionData
 }
 object BlockWithoutTransactionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     difficulty: default,
     extraData: String,
     gasLimit: Double,
@@ -34,13 +33,10 @@ object BlockWithoutTransactionData {
     __obj.asInstanceOf[BlockWithoutTransactionData]
   }
   
-  @scala.inline
-  implicit class BlockWithoutTransactionDataMutableBuilder[Self <: BlockWithoutTransactionData] (val x: Self) extends AnyVal {
+  extension [Self <: BlockWithoutTransactionData](x: Self) {
     
-    @scala.inline
-    def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+    inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value :_*))
   }
 }

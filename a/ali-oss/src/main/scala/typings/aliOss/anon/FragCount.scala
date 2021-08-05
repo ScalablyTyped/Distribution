@@ -16,25 +16,19 @@ trait FragCount extends StObject {
 }
 object FragCount {
   
-  @scala.inline
-  def apply(FragCount: Double, FragDuration: Double, PlaylistName: String, Type: String): FragCount = {
+  inline def apply(FragCount: Double, FragDuration: Double, PlaylistName: String, Type: String): FragCount = {
     val __obj = js.Dynamic.literal(FragCount = FragCount.asInstanceOf[js.Any], FragDuration = FragDuration.asInstanceOf[js.Any], PlaylistName = PlaylistName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragCount]
   }
   
-  @scala.inline
-  implicit class FragCountMutableBuilder[Self <: FragCount] (val x: Self) extends AnyVal {
+  extension [Self <: FragCount](x: Self) {
     
-    @scala.inline
-    def setFragCount(value: Double): Self = StObject.set(x, "FragCount", value.asInstanceOf[js.Any])
+    inline def setFragCount(value: Double): Self = StObject.set(x, "FragCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragDuration(value: Double): Self = StObject.set(x, "FragDuration", value.asInstanceOf[js.Any])
+    inline def setFragDuration(value: Double): Self = StObject.set(x, "FragDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistName(value: String): Self = StObject.set(x, "PlaylistName", value.asInstanceOf[js.Any])
+    inline def setPlaylistName(value: String): Self = StObject.set(x, "PlaylistName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

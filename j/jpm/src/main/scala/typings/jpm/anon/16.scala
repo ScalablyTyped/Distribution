@@ -14,31 +14,23 @@ trait `16` extends StObject {
 }
 object `16` {
   
-  @scala.inline
-  def apply(): `16` = {
+  inline def apply(): `16` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`16`]
   }
   
-  @scala.inline
-  implicit class `16MutableBuilder`[Self <: `16`] (val x: Self) extends AnyVal {
+  extension [Self <: `16`](x: Self) {
     
-    @scala.inline
-    def set16(value: String): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
+    inline def set16(value: String): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set16Undefined: Self = StObject.set(x, "16", js.undefined)
+    inline def set16Undefined: Self = StObject.set(x, "16", js.undefined)
     
-    @scala.inline
-    def set32(value: String): Self = StObject.set(x, "32", value.asInstanceOf[js.Any])
+    inline def set32(value: String): Self = StObject.set(x, "32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set32Undefined: Self = StObject.set(x, "32", js.undefined)
+    inline def set32Undefined: Self = StObject.set(x, "32", js.undefined)
     
-    @scala.inline
-    def set64(value: String): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
+    inline def set64(value: String): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set64Undefined: Self = StObject.set(x, "64", js.undefined)
+    inline def set64Undefined: Self = StObject.set(x, "64", js.undefined)
   }
 }

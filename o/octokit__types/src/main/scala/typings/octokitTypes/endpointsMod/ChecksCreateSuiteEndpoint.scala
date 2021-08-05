@@ -21,22 +21,17 @@ trait ChecksCreateSuiteEndpoint
 }
 object ChecksCreateSuiteEndpoint {
   
-  @scala.inline
-  def apply(head_sha: String, mediaType: `0`[antiope], owner: String, repo: String): ChecksCreateSuiteEndpoint = {
+  inline def apply(head_sha: String, mediaType: `0`[antiope], owner: String, repo: String): ChecksCreateSuiteEndpoint = {
     val __obj = js.Dynamic.literal(head_sha = head_sha.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksCreateSuiteEndpoint]
   }
   
-  @scala.inline
-  implicit class ChecksCreateSuiteEndpointMutableBuilder[Self <: ChecksCreateSuiteEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksCreateSuiteEndpoint](x: Self) {
     
-    @scala.inline
-    def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
+    inline def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

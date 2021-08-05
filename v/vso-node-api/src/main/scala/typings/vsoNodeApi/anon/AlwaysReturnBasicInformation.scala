@@ -18,8 +18,7 @@ trait AlwaysReturnBasicInformation extends StObject {
 }
 object AlwaysReturnBasicInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alwaysReturnBasicInformation: scala.Double,
     includeDeletedSubscriptions: scala.Double,
     includeFilterDetails: scala.Double,
@@ -30,22 +29,16 @@ object AlwaysReturnBasicInformation {
     __obj.asInstanceOf[AlwaysReturnBasicInformation]
   }
   
-  @scala.inline
-  implicit class AlwaysReturnBasicInformationMutableBuilder[Self <: AlwaysReturnBasicInformation] (val x: Self) extends AnyVal {
+  extension [Self <: AlwaysReturnBasicInformation](x: Self) {
     
-    @scala.inline
-    def setAlwaysReturnBasicInformation(value: scala.Double): Self = StObject.set(x, "alwaysReturnBasicInformation", value.asInstanceOf[js.Any])
+    inline def setAlwaysReturnBasicInformation(value: scala.Double): Self = StObject.set(x, "alwaysReturnBasicInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeletedSubscriptions(value: scala.Double): Self = StObject.set(x, "includeDeletedSubscriptions", value.asInstanceOf[js.Any])
+    inline def setIncludeDeletedSubscriptions(value: scala.Double): Self = StObject.set(x, "includeDeletedSubscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFilterDetails(value: scala.Double): Self = StObject.set(x, "includeFilterDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeFilterDetails(value: scala.Double): Self = StObject.set(x, "includeFilterDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInvalidSubscriptions(value: scala.Double): Self = StObject.set(x, "includeInvalidSubscriptions", value.asInstanceOf[js.Any])
+    inline def setIncludeInvalidSubscriptions(value: scala.Double): Self = StObject.set(x, "includeInvalidSubscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

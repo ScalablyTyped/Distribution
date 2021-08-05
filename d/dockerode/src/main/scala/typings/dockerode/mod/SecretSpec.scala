@@ -16,31 +16,23 @@ trait SecretSpec
 }
 object SecretSpec {
   
-  @scala.inline
-  def apply(): SecretSpec = {
+  inline def apply(): SecretSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecretSpec]
   }
   
-  @scala.inline
-  implicit class SecretSpecMutableBuilder[Self <: SecretSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SecretSpec](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
-    @scala.inline
-    def setDriver(value: Driver): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: Driver): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverUndefined: Self = StObject.set(x, "Driver", js.undefined)
+    inline def setDriverUndefined: Self = StObject.set(x, "Driver", js.undefined)
     
-    @scala.inline
-    def setTemplating(value: Driver): Self = StObject.set(x, "Templating", value.asInstanceOf[js.Any])
+    inline def setTemplating(value: Driver): Self = StObject.set(x, "Templating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatingUndefined: Self = StObject.set(x, "Templating", js.undefined)
+    inline def setTemplatingUndefined: Self = StObject.set(x, "Templating", js.undefined)
   }
 }

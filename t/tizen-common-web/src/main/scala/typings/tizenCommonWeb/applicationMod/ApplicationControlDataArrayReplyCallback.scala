@@ -22,25 +22,19 @@ trait ApplicationControlDataArrayReplyCallback extends StObject {
 }
 object ApplicationControlDataArrayReplyCallback {
   
-  @scala.inline
-  def apply(): ApplicationControlDataArrayReplyCallback = {
+  inline def apply(): ApplicationControlDataArrayReplyCallback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationControlDataArrayReplyCallback]
   }
   
-  @scala.inline
-  implicit class ApplicationControlDataArrayReplyCallbackMutableBuilder[Self <: ApplicationControlDataArrayReplyCallback] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationControlDataArrayReplyCallback](x: Self) {
     
-    @scala.inline
-    def setOnfailure(value: () => Unit): Self = StObject.set(x, "onfailure", js.Any.fromFunction0(value))
+    inline def setOnfailure(value: () => Unit): Self = StObject.set(x, "onfailure", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnfailureUndefined: Self = StObject.set(x, "onfailure", js.undefined)
+    inline def setOnfailureUndefined: Self = StObject.set(x, "onfailure", js.undefined)
     
-    @scala.inline
-    def setOnsuccess(value: /* data */ js.UndefOr[js.Array[ApplicationControlData]] => Unit): Self = StObject.set(x, "onsuccess", js.Any.fromFunction1(value))
+    inline def setOnsuccess(value: /* data */ js.UndefOr[js.Array[ApplicationControlData]] => Unit): Self = StObject.set(x, "onsuccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnsuccessUndefined: Self = StObject.set(x, "onsuccess", js.undefined)
+    inline def setOnsuccessUndefined: Self = StObject.set(x, "onsuccess", js.undefined)
   }
 }

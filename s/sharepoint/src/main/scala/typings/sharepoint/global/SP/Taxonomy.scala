@@ -221,8 +221,7 @@ object Taxonomy {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def normalizeName(context: typings.sharepoint.SP.ClientContext, name: String): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeName")(context.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
+    inline def normalizeName(context: typings.sharepoint.SP.ClientContext, name: String): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeName")(context.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
   }
   
   @JSGlobal("SP.Taxonomy.TaxonomySession")
@@ -237,8 +236,7 @@ object Taxonomy {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getTaxonomySession(context: typings.sharepoint.SP.ClientContext): typings.sharepoint.SP.Taxonomy.TaxonomySession = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaxonomySession")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.Taxonomy.TaxonomySession]
+    inline def getTaxonomySession(context: typings.sharepoint.SP.ClientContext): typings.sharepoint.SP.Taxonomy.TaxonomySession = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaxonomySession")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.Taxonomy.TaxonomySession]
   }
   
   @JSGlobal("SP.Taxonomy.Term")

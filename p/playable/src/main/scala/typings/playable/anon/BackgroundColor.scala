@@ -11,16 +11,13 @@ trait BackgroundColor extends StObject {
 }
 object BackgroundColor {
   
-  @scala.inline
-  def apply(backgroundColor: IThemeConfig => String): BackgroundColor = {
+  inline def apply(backgroundColor: IThemeConfig => String): BackgroundColor = {
     val __obj = js.Dynamic.literal(backgroundColor = js.Any.fromFunction1(backgroundColor))
     __obj.asInstanceOf[BackgroundColor]
   }
   
-  @scala.inline
-  implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: IThemeConfig => String): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
+    inline def setBackgroundColor(value: IThemeConfig => String): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChangeEvent extends StObject
 object ChangeEvent {
   
-  @scala.inline
-  def create: typings.rollup.rollupStrings.create = "create".asInstanceOf[typings.rollup.rollupStrings.create]
+  inline def create: typings.rollup.rollupStrings.create = "create".asInstanceOf[typings.rollup.rollupStrings.create]
   
-  @scala.inline
-  def delete: typings.rollup.rollupStrings.delete = "delete".asInstanceOf[typings.rollup.rollupStrings.delete]
+  inline def delete: typings.rollup.rollupStrings.delete = "delete".asInstanceOf[typings.rollup.rollupStrings.delete]
   
-  @scala.inline
-  def update: typings.rollup.rollupStrings.update = "update".asInstanceOf[typings.rollup.rollupStrings.update]
+  inline def update: typings.rollup.rollupStrings.update = "update".asInstanceOf[typings.rollup.rollupStrings.update]
 }

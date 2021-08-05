@@ -18,8 +18,7 @@ object anon {
   }
   object Connector {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connector: String,
       deletedCodeConnectorLinkContent: String,
       diff: String,
@@ -29,20 +28,15 @@ object anon {
       __obj.asInstanceOf[Connector]
     }
     
-    @scala.inline
-    implicit class ConnectorMutableBuilder[Self <: Connector] (val x: Self) extends AnyVal {
+    extension [Self <: Connector](x: Self) {
       
-      @scala.inline
-      def setConnector(value: String): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      inline def setConnector(value: String): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedCodeConnectorLinkContent(value: String): Self = StObject.set(x, "deletedCodeConnectorLinkContent", value.asInstanceOf[js.Any])
+      inline def setDeletedCodeConnectorLinkContent(value: String): Self = StObject.set(x, "deletedCodeConnectorLinkContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiff(value: String): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+      inline def setDiff(value: String): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewCodeConnectorLinkContent(value: String): Self = StObject.set(x, "newCodeConnectorLinkContent", value.asInstanceOf[js.Any])
+      inline def setNewCodeConnectorLinkContent(value: String): Self = StObject.set(x, "newCodeConnectorLinkContent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,20 +48,16 @@ object anon {
   }
   object Left {
     
-    @scala.inline
-    def apply(left: js.Any, right: js.Any): Left = {
+    inline def apply(left: js.Any, right: js.Any): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
-    @scala.inline
-    implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    extension [Self <: Left](x: Self) {
       
-      @scala.inline
-      def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
 }

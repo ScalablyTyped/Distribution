@@ -15,25 +15,19 @@ trait RTCPeerConnectionConfiguration extends StObject {
 }
 object RTCPeerConnectionConfiguration {
   
-  @scala.inline
-  def apply(iceServers: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls]): RTCPeerConnectionConfiguration = {
+  inline def apply(iceServers: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls]): RTCPeerConnectionConfiguration = {
     val __obj = js.Dynamic.literal(iceServers = iceServers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCPeerConnectionConfiguration]
   }
   
-  @scala.inline
-  implicit class RTCPeerConnectionConfigurationMutableBuilder[Self <: RTCPeerConnectionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RTCPeerConnectionConfiguration](x: Self) {
     
-    @scala.inline
-    def setIceServers(value: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
+    inline def setIceServers(value: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIceServersVarargs(value: (ConfigurationParamWithUrl | ConfigurationParamWithUrls)*): Self = StObject.set(x, "iceServers", js.Array(value :_*))
+    inline def setIceServersVarargs(value: (ConfigurationParamWithUrl | ConfigurationParamWithUrls)*): Self = StObject.set(x, "iceServers", js.Array(value :_*))
     
-    @scala.inline
-    def setIceTransportPolicy(value: all | public | relay): Self = StObject.set(x, "iceTransportPolicy", value.asInstanceOf[js.Any])
+    inline def setIceTransportPolicy(value: all | public | relay): Self = StObject.set(x, "iceTransportPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIceTransportPolicyUndefined: Self = StObject.set(x, "iceTransportPolicy", js.undefined)
+    inline def setIceTransportPolicyUndefined: Self = StObject.set(x, "iceTransportPolicy", js.undefined)
   }
 }

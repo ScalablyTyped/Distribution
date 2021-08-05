@@ -18,19 +18,15 @@ trait SignOutUserRequest extends StObject {
 }
 object SignOutUserRequest {
   
-  @scala.inline
-  def apply(FleetArn: FleetArn, Username: Username): SignOutUserRequest = {
+  inline def apply(FleetArn: FleetArn, Username: Username): SignOutUserRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOutUserRequest]
   }
   
-  @scala.inline
-  implicit class SignOutUserRequestMutableBuilder[Self <: SignOutUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SignOutUserRequest](x: Self) {
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

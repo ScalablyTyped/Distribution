@@ -16,8 +16,7 @@ trait XImplicitIDReplace
 }
 object XImplicitIDReplace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -27,10 +26,8 @@ object XImplicitIDReplace {
     __obj.asInstanceOf[XImplicitIDReplace]
   }
   
-  @scala.inline
-  implicit class XImplicitIDReplaceMutableBuilder[Self <: XImplicitIDReplace] (val x: Self) extends AnyVal {
+  extension [Self <: XImplicitIDReplace](x: Self) {
     
-    @scala.inline
-    def setReplaceByUniqueID(value: (String, js.Any) => Unit): Self = StObject.set(x, "replaceByUniqueID", js.Any.fromFunction2(value))
+    inline def setReplaceByUniqueID(value: (String, js.Any) => Unit): Self = StObject.set(x, "replaceByUniqueID", js.Any.fromFunction2(value))
   }
 }

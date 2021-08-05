@@ -13,25 +13,20 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def newSession(): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")().asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")().asInstanceOf[js.Promise[Client]]
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any
     ): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
       modifier: js.Function1[/* repeated */ js.Any, js.Any]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
       modifier: js.Function1[/* repeated */ js.Any, js.Any],
       proto: js.Object
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
       modifier: js.Function1[/* repeated */ js.Any, js.Any],
       proto: js.Object,
@@ -41,8 +36,7 @@ object global {
           js.Any
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
       modifier: js.Function1[/* repeated */ js.Any, js.Any],
       proto: Unit,
@@ -52,14 +46,12 @@ object global {
           js.Any
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
       modifier: Unit,
       proto: js.Object
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
       modifier: Unit,
       proto: js.Object,
@@ -69,8 +61,7 @@ object global {
           js.Any
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
       modifier: Unit,
       proto: Unit,
@@ -80,12 +71,9 @@ object global {
           js.Any
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any], proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any], proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(
       options: Unit,
       modifier: js.Function1[/* repeated */ js.Any, js.Any],
       proto: js.Object,
@@ -95,8 +83,7 @@ object global {
           js.Any
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: Unit,
       modifier: js.Function1[/* repeated */ js.Any, js.Any],
       proto: Unit,
@@ -106,10 +93,8 @@ object global {
           js.Any
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(options: Unit, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(options: Unit, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(
       options: Unit,
       modifier: Unit,
       proto: js.Object,
@@ -119,8 +104,7 @@ object global {
           js.Any
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def newSession(
+    inline def newSession(
       options: Unit,
       modifier: Unit,
       proto: Unit,
@@ -131,7 +115,6 @@ object global {
         ]
     ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     
-    @scala.inline
-    def reloadSession(instance: Client): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    inline def reloadSession(instance: Client): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
   }
 }

@@ -20,19 +20,16 @@ object CharacterCounter {
     * Get Instance
     */
   /* static member */
-  @scala.inline
-  def getInstance(elem: Element): typings.materializeCss.M.CharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.CharacterCounter]
+  inline def getInstance(elem: Element): typings.materializeCss.M.CharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.CharacterCounter]
   
   /**
     * Init CharacterCounters
     */
   /* static member */
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
   ): js.Array[typings.materializeCss.M.CharacterCounter] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.CharacterCounter]]
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: Partial[Unit]
   ): js.Array[typings.materializeCss.M.CharacterCounter] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.CharacterCounter]]
@@ -40,8 +37,6 @@ object CharacterCounter {
     * Init CharacterCounter
     */
   /* static member */
-  @scala.inline
-  def init(els: Element): typings.materializeCss.M.CharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.CharacterCounter]
-  @scala.inline
-  def init(els: Element, options: Partial[Unit]): typings.materializeCss.M.CharacterCounter = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.CharacterCounter]
+  inline def init(els: Element): typings.materializeCss.M.CharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.CharacterCounter]
+  inline def init(els: Element, options: Partial[Unit]): typings.materializeCss.M.CharacterCounter = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.CharacterCounter]
 }

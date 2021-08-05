@@ -20,8 +20,7 @@ trait LinkedWorkItemsQuery extends StObject {
 }
 object LinkedWorkItemsQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automatedTestNames: js.Array[String],
     planId: Double,
     pointIds: js.Array[Double],
@@ -33,37 +32,26 @@ object LinkedWorkItemsQuery {
     __obj.asInstanceOf[LinkedWorkItemsQuery]
   }
   
-  @scala.inline
-  implicit class LinkedWorkItemsQueryMutableBuilder[Self <: LinkedWorkItemsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedWorkItemsQuery](x: Self) {
     
-    @scala.inline
-    def setAutomatedTestNames(value: js.Array[String]): Self = StObject.set(x, "automatedTestNames", value.asInstanceOf[js.Any])
+    inline def setAutomatedTestNames(value: js.Array[String]): Self = StObject.set(x, "automatedTestNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedTestNamesVarargs(value: String*): Self = StObject.set(x, "automatedTestNames", js.Array(value :_*))
+    inline def setAutomatedTestNamesVarargs(value: String*): Self = StObject.set(x, "automatedTestNames", js.Array(value :_*))
     
-    @scala.inline
-    def setPlanId(value: Double): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: Double): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointIds(value: js.Array[Double]): Self = StObject.set(x, "pointIds", value.asInstanceOf[js.Any])
+    inline def setPointIds(value: js.Array[Double]): Self = StObject.set(x, "pointIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointIdsVarargs(value: Double*): Self = StObject.set(x, "pointIds", js.Array(value :_*))
+    inline def setPointIdsVarargs(value: Double*): Self = StObject.set(x, "pointIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSuiteIds(value: js.Array[Double]): Self = StObject.set(x, "suiteIds", value.asInstanceOf[js.Any])
+    inline def setSuiteIds(value: js.Array[Double]): Self = StObject.set(x, "suiteIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value :_*))
+    inline def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTestCaseIds(value: js.Array[Double]): Self = StObject.set(x, "testCaseIds", value.asInstanceOf[js.Any])
+    inline def setTestCaseIds(value: js.Array[Double]): Self = StObject.set(x, "testCaseIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseIds", js.Array(value :_*))
+    inline def setTestCaseIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseIds", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkItemCategory(value: String): Self = StObject.set(x, "workItemCategory", value.asInstanceOf[js.Any])
+    inline def setWorkItemCategory(value: String): Self = StObject.set(x, "workItemCategory", value.asInstanceOf[js.Any])
   }
 }

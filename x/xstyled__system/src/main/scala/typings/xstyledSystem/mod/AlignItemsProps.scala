@@ -14,27 +14,22 @@ trait AlignItemsProps extends StObject {
 }
 object AlignItemsProps {
   
-  @scala.inline
-  def apply(): AlignItemsProps = {
+  inline def apply(): AlignItemsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlignItemsProps]
   }
   
-  @scala.inline
-  implicit class AlignItemsPropsMutableBuilder[Self <: AlignItemsProps] (val x: Self) extends AnyVal {
+  extension [Self <: AlignItemsProps](x: Self) {
     
-    @scala.inline
-    def setAlignItems(
+    inline def setAlignItems(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any
         ]
     ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+    inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    @scala.inline
-    def setAlignItemsVarargs(
+    inline def setAlignItemsVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any)*
     ): Self = StObject.set(x, "alignItems", js.Array(value :_*))
   }

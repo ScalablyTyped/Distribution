@@ -12,16 +12,13 @@ trait RenderSearchTemplateParams
 }
 object RenderSearchTemplateParams {
   
-  @scala.inline
-  def apply(id: String): RenderSearchTemplateParams = {
+  inline def apply(id: String): RenderSearchTemplateParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderSearchTemplateParams]
   }
   
-  @scala.inline
-  implicit class RenderSearchTemplateParamsMutableBuilder[Self <: RenderSearchTemplateParams] (val x: Self) extends AnyVal {
+  extension [Self <: RenderSearchTemplateParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

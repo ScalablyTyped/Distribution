@@ -33,38 +33,28 @@ object TileSprite {
   }
   object TileSpriteConfig {
     
-    @scala.inline
-    def apply(): TileSpriteConfig = {
+    inline def apply(): TileSpriteConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TileSpriteConfig]
     }
     
-    @scala.inline
-    implicit class TileSpriteConfigMutableBuilder[Self <: TileSpriteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TileSpriteConfig](x: Self) {
       
-      @scala.inline
-      def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

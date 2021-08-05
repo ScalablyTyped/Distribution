@@ -25,25 +25,18 @@ object FormulaLanguage {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def API: `6` = 6.asInstanceOf[`6`]
+    inline def API: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def ENGLISH: `2` = 2.asInstanceOf[`2`]
+    inline def ENGLISH: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NATIVE: `3` = 3.asInstanceOf[`3`]
+    inline def NATIVE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def ODFF: `0` = 0.asInstanceOf[`0`]
+    inline def ODFF: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def ODF_11: `1` = 1.asInstanceOf[`1`]
+    inline def ODF_11: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def OOXML: `5` = 5.asInstanceOf[`5`]
+    inline def OOXML: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def XL_ENGLISH: `4` = 4.asInstanceOf[`4`]
+    inline def XL_ENGLISH: `4` = 4.asInstanceOf[`4`]
   }
 }

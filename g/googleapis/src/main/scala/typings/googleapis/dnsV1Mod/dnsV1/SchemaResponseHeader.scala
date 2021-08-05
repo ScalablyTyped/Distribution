@@ -10,19 +10,15 @@ trait SchemaResponseHeader extends StObject {
 }
 object SchemaResponseHeader {
   
-  @scala.inline
-  def apply(): SchemaResponseHeader = {
+  inline def apply(): SchemaResponseHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResponseHeader]
   }
   
-  @scala.inline
-  implicit class SchemaResponseHeaderMutableBuilder[Self <: SchemaResponseHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResponseHeader](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }
 }

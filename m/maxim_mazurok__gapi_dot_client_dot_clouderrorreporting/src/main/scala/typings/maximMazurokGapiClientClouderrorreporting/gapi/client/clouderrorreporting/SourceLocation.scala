@@ -17,31 +17,23 @@ trait SourceLocation extends StObject {
 }
 object SourceLocation {
   
-  @scala.inline
-  def apply(): SourceLocation = {
+  inline def apply(): SourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceLocation]
   }
   
-  @scala.inline
-  implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SourceLocation](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
   }
 }

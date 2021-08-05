@@ -13,19 +13,15 @@ trait ItemsHttpMethod extends StObject {
 }
 object ItemsHttpMethod {
   
-  @scala.inline
-  def apply(items: HttpMethod, returnValue: Double): ItemsHttpMethod = {
+  inline def apply(items: HttpMethod, returnValue: Double): ItemsHttpMethod = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsHttpMethod]
   }
   
-  @scala.inline
-  implicit class ItemsHttpMethodMutableBuilder[Self <: ItemsHttpMethod] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsHttpMethod](x: Self) {
     
-    @scala.inline
-    def setItems(value: HttpMethod): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: HttpMethod): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -75,22 +75,17 @@ trait Diagnostics extends StObject {
 }
 object Diagnostics {
   
-  @scala.inline
-  def apply(OWAView: OWAView | OneColumn | TwoColumns | ThreeColumns, hostName: String, hostVersion: String): Diagnostics = {
+  inline def apply(OWAView: OWAView | OneColumn | TwoColumns | ThreeColumns, hostName: String, hostVersion: String): Diagnostics = {
     val __obj = js.Dynamic.literal(OWAView = OWAView.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], hostVersion = hostVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostics]
   }
   
-  @scala.inline
-  implicit class DiagnosticsMutableBuilder[Self <: Diagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: Diagnostics](x: Self) {
     
-    @scala.inline
-    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
+    inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostVersion(value: String): Self = StObject.set(x, "hostVersion", value.asInstanceOf[js.Any])
+    inline def setHostVersion(value: String): Self = StObject.set(x, "hostVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOWAView(value: OWAView | OneColumn | TwoColumns | ThreeColumns): Self = StObject.set(x, "OWAView", value.asInstanceOf[js.Any])
+    inline def setOWAView(value: OWAView | OneColumn | TwoColumns | ThreeColumns): Self = StObject.set(x, "OWAView", value.asInstanceOf[js.Any])
   }
 }

@@ -16,7 +16,7 @@ trait Actions extends StObject {
   
   def Item(Index: js.Any): Action
   
-  @JSName("Outlook.Actions_typekey")
+  /* private */ @JSName("Outlook.Actions_typekey")
   var OutlookDotActions_typekey: Actions
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait Actions extends StObject {
 }
 object Actions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: () => Action,
     Application: Application,
     Class: OlObjectClass,
@@ -44,34 +43,24 @@ object Actions {
     __obj.asInstanceOf[Actions]
   }
   
-  @scala.inline
-  implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+  extension [Self <: Actions](x: Self) {
     
-    @scala.inline
-    def setAdd(value: () => Action): Self = StObject.set(x, "Add", js.Any.fromFunction0(value))
+    inline def setAdd(value: () => Action): Self = StObject.set(x, "Add", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Action): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Action): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotActions_typekey(value: Actions): Self = StObject.set(x, "Outlook.Actions_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotActions_typekey(value: Actions): Self = StObject.set(x, "Outlook.Actions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

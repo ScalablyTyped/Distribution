@@ -9,17 +9,13 @@ object redeemingMod {
   
   object global {
     
-    @scala.inline
-    def formatPasscodeLong(data: ResultData): Unit = js.Dynamic.global.applyDynamic("formatPasscodeLong")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def formatPasscodeLong(data: ResultData): Unit = js.Dynamic.global.applyDynamic("formatPasscodeLong")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def formatPasscodeShort(data: ResultData): Unit = js.Dynamic.global.applyDynamic("formatPasscodeShort")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def formatPasscodeShort(data: ResultData): Unit = js.Dynamic.global.applyDynamic("formatPasscodeShort")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def handleRedeemResponse(data: ResultData, textStatus: js.Any, jqXHR: jqXHR[js.Any]): Unit = (js.Dynamic.global.applyDynamic("handleRedeemResponse")(data.asInstanceOf[js.Any], textStatus.asInstanceOf[js.Any], jqXHR.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def handleRedeemResponse(data: ResultData, textStatus: js.Any, jqXHR: jqXHR[js.Any]): Unit = (js.Dynamic.global.applyDynamic("handleRedeemResponse")(data.asInstanceOf[js.Any], textStatus.asInstanceOf[js.Any], jqXHR.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setupRedeem(): Unit = js.Dynamic.global.applyDynamic("setupRedeem")().asInstanceOf[Unit]
+    inline def setupRedeem(): Unit = js.Dynamic.global.applyDynamic("setupRedeem")().asInstanceOf[Unit]
     
     /** These are HTTP status codes returned by the redemption API. */
     object REDEEM_STATUSES
@@ -36,29 +32,22 @@ object redeemingMod {
     }
     object ResultData {
       
-      @scala.inline
-      def apply(ap: String, inventory: js.Any, other: js.Array[String], xm: String): ResultData = {
+      inline def apply(ap: String, inventory: js.Any, other: js.Array[String], xm: String): ResultData = {
         val __obj = js.Dynamic.literal(ap = ap.asInstanceOf[js.Any], inventory = inventory.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], xm = xm.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResultData]
       }
       
-      @scala.inline
-      implicit class ResultDataMutableBuilder[Self <: ResultData] (val x: Self) extends AnyVal {
+      extension [Self <: ResultData](x: Self) {
         
-        @scala.inline
-        def setAp(value: String): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
+        inline def setAp(value: String): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInventory(value: js.Any): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+        inline def setInventory(value: js.Any): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOther(value: js.Array[String]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+        inline def setOther(value: js.Array[String]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value :_*))
+        inline def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value :_*))
         
-        @scala.inline
-        def setXm(value: String): Self = StObject.set(x, "xm", value.asInstanceOf[js.Any])
+        inline def setXm(value: String): Self = StObject.set(x, "xm", value.asInstanceOf[js.Any])
       }
     }
   }

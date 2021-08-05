@@ -21,20 +21,16 @@ trait DeploymentStrategy extends StObject {
 }
 object DeploymentStrategy {
   
-  @scala.inline
-  def apply(rollingUpdate: RollingUpdateDeployment, `type`: String): DeploymentStrategy = {
+  inline def apply(rollingUpdate: RollingUpdateDeployment, `type`: String): DeploymentStrategy = {
     val __obj = js.Dynamic.literal(rollingUpdate = rollingUpdate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentStrategy]
   }
   
-  @scala.inline
-  implicit class DeploymentStrategyMutableBuilder[Self <: DeploymentStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentStrategy](x: Self) {
     
-    @scala.inline
-    def setRollingUpdate(value: RollingUpdateDeployment): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
+    inline def setRollingUpdate(value: RollingUpdateDeployment): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

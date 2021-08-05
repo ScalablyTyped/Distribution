@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlScrollBars extends StObject
 object OlScrollBars {
   
-  @scala.inline
-  def olScrollBarsBoth: `3` = 3.asInstanceOf[`3`]
+  inline def olScrollBarsBoth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olScrollBarsHorizontal: `1` = 1.asInstanceOf[`1`]
+  inline def olScrollBarsHorizontal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olScrollBarsNone: `0` = 0.asInstanceOf[`0`]
+  inline def olScrollBarsNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olScrollBarsVertical: `2` = 2.asInstanceOf[`2`]
+  inline def olScrollBarsVertical: `2` = 2.asInstanceOf[`2`]
 }

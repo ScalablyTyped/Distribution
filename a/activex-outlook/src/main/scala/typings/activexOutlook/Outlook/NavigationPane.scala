@@ -18,7 +18,7 @@ trait NavigationPane extends StObject {
   
   val Modules: NavigationModules
   
-  @JSName("Outlook.NavigationPane_typekey")
+  /* private */ @JSName("Outlook.NavigationPane_typekey")
   var OutlookDotNavigationPane_typekey: NavigationPane
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait NavigationPane extends StObject {
 }
 object NavigationPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     CurrentModule: NavigationModule,
@@ -44,34 +43,24 @@ object NavigationPane {
     __obj.asInstanceOf[NavigationPane]
   }
   
-  @scala.inline
-  implicit class NavigationPaneMutableBuilder[Self <: NavigationPane] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationPane](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentModule(value: NavigationModule): Self = StObject.set(x, "CurrentModule", value.asInstanceOf[js.Any])
+    inline def setCurrentModule(value: NavigationModule): Self = StObject.set(x, "CurrentModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedModuleCount(value: Double): Self = StObject.set(x, "DisplayedModuleCount", value.asInstanceOf[js.Any])
+    inline def setDisplayedModuleCount(value: Double): Self = StObject.set(x, "DisplayedModuleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCollapsed(value: Boolean): Self = StObject.set(x, "IsCollapsed", value.asInstanceOf[js.Any])
+    inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "IsCollapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModules(value: NavigationModules): Self = StObject.set(x, "Modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: NavigationModules): Self = StObject.set(x, "Modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotNavigationPane_typekey(value: NavigationPane): Self = StObject.set(x, "Outlook.NavigationPane_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotNavigationPane_typekey(value: NavigationPane): Self = StObject.set(x, "Outlook.NavigationPane_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

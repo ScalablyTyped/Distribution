@@ -12,6 +12,5 @@ object createMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(bits: js.Array[Bit]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def default(bits: js.Array[Bit]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

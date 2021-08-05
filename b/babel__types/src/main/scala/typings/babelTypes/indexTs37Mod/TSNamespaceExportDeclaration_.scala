@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSNamespaceExportDeclaration_ {
   
-  @scala.inline
-  def apply(id: Identifier_): TSNamespaceExportDeclaration_ = {
+  inline def apply(id: Identifier_): TSNamespaceExportDeclaration_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSNamespaceExportDeclaration")
     __obj.asInstanceOf[TSNamespaceExportDeclaration_]
   }
   
-  @scala.inline
-  implicit class TSNamespaceExportDeclaration_MutableBuilder[Self <: TSNamespaceExportDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: TSNamespaceExportDeclaration_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSNamespaceExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSNamespaceExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

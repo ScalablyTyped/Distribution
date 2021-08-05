@@ -18,19 +18,15 @@ trait Validity extends StObject {
 }
 object Validity {
   
-  @scala.inline
-  def apply(Type: ValidityPeriodType, Value: PositiveLong): Validity = {
+  inline def apply(Type: ValidityPeriodType, Value: PositiveLong): Validity = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Validity]
   }
   
-  @scala.inline
-  implicit class ValidityMutableBuilder[Self <: Validity] (val x: Self) extends AnyVal {
+  extension [Self <: Validity](x: Self) {
     
-    @scala.inline
-    def setType(value: ValidityPeriodType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ValidityPeriodType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: PositiveLong): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: PositiveLong): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

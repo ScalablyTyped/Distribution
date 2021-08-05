@@ -13,16 +13,13 @@ trait OnRowEscape
 }
 object OnRowEscape {
   
-  @scala.inline
-  def apply(recordKey: Double): OnRowEscape = {
+  inline def apply(recordKey: Double): OnRowEscape = {
     val __obj = js.Dynamic.literal(recordKey = recordKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnRowEscape]
   }
   
-  @scala.inline
-  implicit class OnRowEscapeMutableBuilder[Self <: OnRowEscape] (val x: Self) extends AnyVal {
+  extension [Self <: OnRowEscape](x: Self) {
     
-    @scala.inline
-    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

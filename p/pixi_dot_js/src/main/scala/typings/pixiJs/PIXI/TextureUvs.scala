@@ -90,8 +90,7 @@ trait TextureUvs extends StObject {
 }
 object TextureUvs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     set: (Rectangle, Rectangle, Double) => Unit,
     x0: Double,
     x1: Double,
@@ -106,34 +105,24 @@ object TextureUvs {
     __obj.asInstanceOf[TextureUvs]
   }
   
-  @scala.inline
-  implicit class TextureUvsMutableBuilder[Self <: TextureUvs] (val x: Self) extends AnyVal {
+  extension [Self <: TextureUvs](x: Self) {
     
-    @scala.inline
-    def setSet(value: (Rectangle, Rectangle, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (Rectangle, Rectangle, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+    inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX3(value: Double): Self = StObject.set(x, "x3", value.asInstanceOf[js.Any])
+    inline def setX3(value: Double): Self = StObject.set(x, "x3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+    inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY3(value: Double): Self = StObject.set(x, "y3", value.asInstanceOf[js.Any])
+    inline def setY3(value: Double): Self = StObject.set(x, "y3", value.asInstanceOf[js.Any])
   }
 }

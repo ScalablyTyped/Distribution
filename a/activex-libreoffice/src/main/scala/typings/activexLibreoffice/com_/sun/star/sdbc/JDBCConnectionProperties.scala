@@ -63,8 +63,7 @@ trait JDBCConnectionProperties
 }
 object JDBCConnectionProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoRetrievingStatement: String,
     IsAutoRetrievingEnabled: Boolean,
     JavaDriverClass: String,
@@ -78,25 +77,18 @@ object JDBCConnectionProperties {
     __obj.asInstanceOf[JDBCConnectionProperties]
   }
   
-  @scala.inline
-  implicit class JDBCConnectionPropertiesMutableBuilder[Self <: JDBCConnectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: JDBCConnectionProperties](x: Self) {
     
-    @scala.inline
-    def setAutoRetrievingStatement(value: String): Self = StObject.set(x, "AutoRetrievingStatement", value.asInstanceOf[js.Any])
+    inline def setAutoRetrievingStatement(value: String): Self = StObject.set(x, "AutoRetrievingStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoRetrievingEnabled(value: Boolean): Self = StObject.set(x, "IsAutoRetrievingEnabled", value.asInstanceOf[js.Any])
+    inline def setIsAutoRetrievingEnabled(value: Boolean): Self = StObject.set(x, "IsAutoRetrievingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaDriverClass(value: String): Self = StObject.set(x, "JavaDriverClass", value.asInstanceOf[js.Any])
+    inline def setJavaDriverClass(value: String): Self = StObject.set(x, "JavaDriverClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaDriverClassPath(value: String): Self = StObject.set(x, "JavaDriverClassPath", value.asInstanceOf[js.Any])
+    inline def setJavaDriverClassPath(value: String): Self = StObject.set(x, "JavaDriverClassPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "SystemProperties", value.asInstanceOf[js.Any])
+    inline def setSystemProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "SystemProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeInfoSettings(value: SafeArray[js.Any]): Self = StObject.set(x, "TypeInfoSettings", value.asInstanceOf[js.Any])
+    inline def setTypeInfoSettings(value: SafeArray[js.Any]): Self = StObject.set(x, "TypeInfoSettings", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait TlsConfig extends StObject {
 }
 object TlsConfig {
   
-  @scala.inline
-  def apply(): TlsConfig = {
+  inline def apply(): TlsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TlsConfig]
   }
   
-  @scala.inline
-  implicit class TlsConfigMutableBuilder[Self <: TlsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TlsConfig](x: Self) {
     
-    @scala.inline
-    def setServerNameToVerify(value: StringWithLengthBetween1And512): Self = StObject.set(x, "ServerNameToVerify", value.asInstanceOf[js.Any])
+    inline def setServerNameToVerify(value: StringWithLengthBetween1And512): Self = StObject.set(x, "ServerNameToVerify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameToVerifyUndefined: Self = StObject.set(x, "ServerNameToVerify", js.undefined)
+    inline def setServerNameToVerifyUndefined: Self = StObject.set(x, "ServerNameToVerify", js.undefined)
   }
 }

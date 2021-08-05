@@ -81,67 +81,47 @@ trait PageContentLoadOptions extends StObject {
 }
 object PageContentLoadOptions {
   
-  @scala.inline
-  def apply(): PageContentLoadOptions = {
+  inline def apply(): PageContentLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageContentLoadOptions]
   }
   
-  @scala.inline
-  implicit class PageContentLoadOptionsMutableBuilder[Self <: PageContentLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageContentLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImage(value: ImageLoadOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageLoadOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setInk(value: FloatingInkLoadOptions): Self = StObject.set(x, "ink", value.asInstanceOf[js.Any])
+    inline def setInk(value: FloatingInkLoadOptions): Self = StObject.set(x, "ink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkUndefined: Self = StObject.set(x, "ink", js.undefined)
+    inline def setInkUndefined: Self = StObject.set(x, "ink", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setOutline(value: OutlineLoadOptions): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: OutlineLoadOptions): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setParentPage(value: PageLoadOptions): Self = StObject.set(x, "parentPage", value.asInstanceOf[js.Any])
+    inline def setParentPage(value: PageLoadOptions): Self = StObject.set(x, "parentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentPageUndefined: Self = StObject.set(x, "parentPage", js.undefined)
+    inline def setParentPageUndefined: Self = StObject.set(x, "parentPage", js.undefined)
     
-    @scala.inline
-    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

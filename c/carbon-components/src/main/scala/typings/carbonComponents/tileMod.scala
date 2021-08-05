@@ -36,8 +36,7 @@ object tileMod {
     @JSImport("carbon-components/components/tile/tile", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -53,8 +52,7 @@ object tileMod {
   }
   object Tile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _getClass: js.Any => js.Any,
       _hookActions: js.Any => Unit,
       _setTileHeight: () => Unit,
@@ -64,20 +62,15 @@ object tileMod {
       __obj.asInstanceOf[Tile]
     }
     
-    @scala.inline
-    implicit class TileMutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
+    extension [Self <: Tile](x: Self) {
       
-      @scala.inline
-      def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_getClass(value: js.Any => js.Any): Self = StObject.set(x, "_getClass", js.Any.fromFunction1(value))
+      inline def set_getClass(value: js.Any => js.Any): Self = StObject.set(x, "_getClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_hookActions(value: js.Any => Unit): Self = StObject.set(x, "_hookActions", js.Any.fromFunction1(value))
+      inline def set_hookActions(value: js.Any => Unit): Self = StObject.set(x, "_hookActions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_setTileHeight(value: () => Unit): Self = StObject.set(x, "_setTileHeight", js.Any.fromFunction0(value))
+      inline def set_setTileHeight(value: () => Unit): Self = StObject.set(x, "_setTileHeight", js.Any.fromFunction0(value))
     }
   }
 }

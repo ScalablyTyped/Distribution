@@ -53,37 +53,27 @@ trait PlusNativeUIPreviewImageOptions extends StObject {
 }
 object PlusNativeUIPreviewImageOptions {
   
-  @scala.inline
-  def apply(): PlusNativeUIPreviewImageOptions = {
+  inline def apply(): PlusNativeUIPreviewImageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIPreviewImageOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIPreviewImageOptionsMutableBuilder[Self <: PlusNativeUIPreviewImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIPreviewImageOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    @scala.inline
-    def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
   }
 }

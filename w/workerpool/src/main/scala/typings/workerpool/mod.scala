@@ -81,8 +81,7 @@ object mod {
       var name_TimeoutError: typings.workerpool.workerpoolStrings.TimeoutError = js.native
     }
     
-    @scala.inline
-    def all(promises: js.Array[Promise[js.Any, js.Any]]): Promise[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[js.Any], js.Any]]
+    inline def all(promises: js.Array[Promise[js.Any, js.Any]]): Promise[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[js.Any], js.Any]]
   }
   
   @JSImport("workerpool", "cpus")
@@ -97,21 +96,14 @@ object mod {
   @js.native
   val platform: node | browser = js.native
   
-  @scala.inline
-  def pool(): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")().asInstanceOf[WorkerPool]
-  @scala.inline
-  def pool(options: WorkerPoolOptions): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")(options.asInstanceOf[js.Any]).asInstanceOf[WorkerPool]
-  @scala.inline
-  def pool(pathToScript: String): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any]).asInstanceOf[WorkerPool]
-  @scala.inline
-  def pool(pathToScript: String, options: WorkerPoolOptions): WorkerPool = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WorkerPool]
-  @scala.inline
-  def pool(pathToScript: Unit, options: WorkerPoolOptions): WorkerPool = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WorkerPool]
+  inline def pool(): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")().asInstanceOf[WorkerPool]
+  inline def pool(options: WorkerPoolOptions): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")(options.asInstanceOf[js.Any]).asInstanceOf[WorkerPool]
+  inline def pool(pathToScript: String): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any]).asInstanceOf[WorkerPool]
+  inline def pool(pathToScript: String, options: WorkerPoolOptions): WorkerPool = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WorkerPool]
+  inline def pool(pathToScript: Unit, options: WorkerPoolOptions): WorkerPool = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WorkerPool]
   
-  @scala.inline
-  def worker(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")().asInstanceOf[js.Any]
-  @scala.inline
-  def worker(methods: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def worker(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")().asInstanceOf[js.Any]
+  inline def worker(methods: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type Proxy[T /* <: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ M in keyof T ]: (args : std.Parameters<T[M]>): workerpool.workerpool.Promise<std.ReturnType<T[M]>, std.Error>}
@@ -188,47 +180,34 @@ object mod {
   }
   object WorkerPoolOptions {
     
-    @scala.inline
-    def apply(): WorkerPoolOptions = {
+    inline def apply(): WorkerPoolOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkerPoolOptions]
     }
     
-    @scala.inline
-    implicit class WorkerPoolOptionsMutableBuilder[Self <: WorkerPoolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerPoolOptions](x: Self) {
       
-      @scala.inline
-      def setForkArgs(value: js.Array[String]): Self = StObject.set(x, "forkArgs", value.asInstanceOf[js.Any])
+      inline def setForkArgs(value: js.Array[String]): Self = StObject.set(x, "forkArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForkArgsUndefined: Self = StObject.set(x, "forkArgs", js.undefined)
+      inline def setForkArgsUndefined: Self = StObject.set(x, "forkArgs", js.undefined)
       
-      @scala.inline
-      def setForkArgsVarargs(value: String*): Self = StObject.set(x, "forkArgs", js.Array(value :_*))
+      inline def setForkArgsVarargs(value: String*): Self = StObject.set(x, "forkArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setForkOpts(value: ForkOptions): Self = StObject.set(x, "forkOpts", value.asInstanceOf[js.Any])
+      inline def setForkOpts(value: ForkOptions): Self = StObject.set(x, "forkOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForkOptsUndefined: Self = StObject.set(x, "forkOpts", js.undefined)
+      inline def setForkOptsUndefined: Self = StObject.set(x, "forkOpts", js.undefined)
       
-      @scala.inline
-      def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
+      inline def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
+      inline def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
       
-      @scala.inline
-      def setMinWorkers(value: Double | max): Self = StObject.set(x, "minWorkers", value.asInstanceOf[js.Any])
+      inline def setMinWorkers(value: Double | max): Self = StObject.set(x, "minWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWorkersUndefined: Self = StObject.set(x, "minWorkers", js.undefined)
+      inline def setMinWorkersUndefined: Self = StObject.set(x, "minWorkers", js.undefined)
       
-      @scala.inline
-      def setWorkerType(value: auto | web | process | thread): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
+      inline def setWorkerType(value: auto | web | process | thread): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
+      inline def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
     }
   }
   
@@ -246,8 +225,7 @@ object mod {
   }
   object WorkerPoolStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeTasks: Double,
       busyWorkers: Double,
       idleWorkers: Double,
@@ -258,23 +236,17 @@ object mod {
       __obj.asInstanceOf[WorkerPoolStats]
     }
     
-    @scala.inline
-    implicit class WorkerPoolStatsMutableBuilder[Self <: WorkerPoolStats] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerPoolStats](x: Self) {
       
-      @scala.inline
-      def setActiveTasks(value: Double): Self = StObject.set(x, "activeTasks", value.asInstanceOf[js.Any])
+      inline def setActiveTasks(value: Double): Self = StObject.set(x, "activeTasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusyWorkers(value: Double): Self = StObject.set(x, "busyWorkers", value.asInstanceOf[js.Any])
+      inline def setBusyWorkers(value: Double): Self = StObject.set(x, "busyWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleWorkers(value: Double): Self = StObject.set(x, "idleWorkers", value.asInstanceOf[js.Any])
+      inline def setIdleWorkers(value: Double): Self = StObject.set(x, "idleWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingTasks(value: Double): Self = StObject.set(x, "pendingTasks", value.asInstanceOf[js.Any])
+      inline def setPendingTasks(value: Double): Self = StObject.set(x, "pendingTasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalWorkers(value: Double): Self = StObject.set(x, "totalWorkers", value.asInstanceOf[js.Any])
+      inline def setTotalWorkers(value: Double): Self = StObject.set(x, "totalWorkers", value.asInstanceOf[js.Any])
     }
   }
 }

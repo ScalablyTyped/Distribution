@@ -32,24 +32,24 @@ object clientInterceptorsMod {
     def this(nextCall: InterceptingCallInterface) = this()
     def this(nextCall: InterceptingCallInterface, requester: Requester) = this()
     
-    var nextCall: js.Any = js.native
+    /* private */ var nextCall: js.Any = js.native
     
     /**
       * Indicates that a status was received but could not be propagated because
       * a message was still being processed.
       */
-    var pendingHalfClose: js.Any = js.native
+    /* private */ var pendingHalfClose: js.Any = js.native
     
     /**
       * Indicates that a message has been passed to the listener's onReceiveMessage
       * method it has not been passed to the corresponding next callback
       */
-    var processingMessage: js.Any = js.native
+    /* private */ var processingMessage: js.Any = js.native
     
     /**
       * The requester that this InterceptingCall uses to modify outgoing operations
       */
-    var requester: js.Any = js.native
+    /* private */ var requester: js.Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "InterceptorConfigurationError")
@@ -72,11 +72,11 @@ object clientInterceptorsMod {
     
     def build(): Listener = js.native
     
-    var message: js.Any = js.native
+    /* private */ var message: js.Any = js.native
     
-    var metadata: js.Any = js.native
+    /* private */ var metadata: js.Any = js.native
     
-    var status: js.Any = js.native
+    /* private */ var status: js.Any = js.native
     
     def withOnReceiveMessage(onReceiveMessage: MessageListener): this.type = js.native
     
@@ -91,13 +91,13 @@ object clientInterceptorsMod {
     
     def build(): Requester = js.native
     
-    var cancel: js.Any = js.native
+    /* private */ var cancel: js.Any = js.native
     
-    var halfClose: js.Any = js.native
+    /* private */ var halfClose: js.Any = js.native
     
-    var message: js.Any = js.native
+    /* private */ var message: js.Any = js.native
     
-    var start: js.Any = js.native
+    /* private */ var start: js.Any = js.native
     
     def withCancel(cancel: CancelRequester): this.type = js.native
     
@@ -108,8 +108,7 @@ object clientInterceptorsMod {
     def withStart(start: MetadataRequester): this.type = js.native
   }
   
-  @scala.inline
-  def getInterceptingCall(
+  inline def getInterceptingCall(
     interceptorArgs: InterceptorArguments,
     methodDefinition: ClientMethodDefinition[js.Any, js.Any],
     options: CallOptions,
@@ -144,8 +143,7 @@ object clientInterceptorsMod {
   }
   object FullRequester {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: /* next */ js.Function0[Unit] => Unit,
       halfClose: /* next */ js.Function0[Unit] => Unit,
       sendMessage: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit,
@@ -155,20 +153,15 @@ object clientInterceptorsMod {
       __obj.asInstanceOf[FullRequester]
     }
     
-    @scala.inline
-    implicit class FullRequesterMutableBuilder[Self <: FullRequester] (val x: Self) extends AnyVal {
+    extension [Self <: FullRequester](x: Self) {
       
-      @scala.inline
-      def setCancel(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHalfClose(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
+      inline def setHalfClose(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+      inline def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStart(
+      inline def setStart(
         value: (/* metadata */ Metadata, /* listener */ InterceptingListener, /* next */ js.Function2[/* metadata */ Metadata, /* listener */ InterceptingListener | Listener, Unit]) => Unit
       ): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
     }
@@ -209,8 +202,7 @@ object clientInterceptorsMod {
   }
   object InterceptorArguments {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callInterceptorProviders: js.Array[InterceptorProvider],
       callInterceptors: js.Array[Interceptor],
       clientInterceptorProviders: js.Array[InterceptorProvider],
@@ -220,32 +212,23 @@ object clientInterceptorsMod {
       __obj.asInstanceOf[InterceptorArguments]
     }
     
-    @scala.inline
-    implicit class InterceptorArgumentsMutableBuilder[Self <: InterceptorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: InterceptorArguments](x: Self) {
       
-      @scala.inline
-      def setCallInterceptorProviders(value: js.Array[InterceptorProvider]): Self = StObject.set(x, "callInterceptorProviders", value.asInstanceOf[js.Any])
+      inline def setCallInterceptorProviders(value: js.Array[InterceptorProvider]): Self = StObject.set(x, "callInterceptorProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "callInterceptorProviders", js.Array(value :_*))
+      inline def setCallInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "callInterceptorProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setCallInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "callInterceptors", value.asInstanceOf[js.Any])
+      inline def setCallInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "callInterceptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "callInterceptors", js.Array(value :_*))
+      inline def setCallInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "callInterceptors", js.Array(value :_*))
       
-      @scala.inline
-      def setClientInterceptorProviders(value: js.Array[InterceptorProvider]): Self = StObject.set(x, "clientInterceptorProviders", value.asInstanceOf[js.Any])
+      inline def setClientInterceptorProviders(value: js.Array[InterceptorProvider]): Self = StObject.set(x, "clientInterceptorProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "clientInterceptorProviders", js.Array(value :_*))
+      inline def setClientInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "clientInterceptorProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setClientInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "clientInterceptors", value.asInstanceOf[js.Any])
+      inline def setClientInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "clientInterceptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "clientInterceptors", js.Array(value :_*))
+      inline def setClientInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "clientInterceptors", js.Array(value :_*))
     }
   }
   
@@ -257,17 +240,14 @@ object clientInterceptorsMod {
   }
   object InterceptorOptions {
     
-    @scala.inline
-    def apply(method_definition: ClientMethodDefinition[js.Any, js.Any]): InterceptorOptions = {
+    inline def apply(method_definition: ClientMethodDefinition[js.Any, js.Any]): InterceptorOptions = {
       val __obj = js.Dynamic.literal(method_definition = method_definition.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterceptorOptions]
     }
     
-    @scala.inline
-    implicit class InterceptorOptionsMutableBuilder[Self <: InterceptorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InterceptorOptions](x: Self) {
       
-      @scala.inline
-      def setMethod_definition(value: ClientMethodDefinition[js.Any, js.Any]): Self = StObject.set(x, "method_definition", value.asInstanceOf[js.Any])
+      inline def setMethod_definition(value: ClientMethodDefinition[js.Any, js.Any]): Self = StObject.set(x, "method_definition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,40 +277,30 @@ object clientInterceptorsMod {
   }
   object Requester {
     
-    @scala.inline
-    def apply(): Requester = {
+    inline def apply(): Requester = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Requester]
     }
     
-    @scala.inline
-    implicit class RequesterMutableBuilder[Self <: Requester] (val x: Self) extends AnyVal {
+    extension [Self <: Requester](x: Self) {
       
-      @scala.inline
-      def setCancel(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setHalfClose(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
+      inline def setHalfClose(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHalfCloseUndefined: Self = StObject.set(x, "halfClose", js.undefined)
+      inline def setHalfCloseUndefined: Self = StObject.set(x, "halfClose", js.undefined)
       
-      @scala.inline
-      def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+      inline def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
+      inline def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
       
-      @scala.inline
-      def setStart(
+      inline def setStart(
         value: (/* metadata */ Metadata, /* listener */ InterceptingListener, /* next */ js.Function2[/* metadata */ Metadata, /* listener */ InterceptingListener | Listener, Unit]) => Unit
       ): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
 }

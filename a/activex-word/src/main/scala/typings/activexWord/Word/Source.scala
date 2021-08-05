@@ -20,15 +20,14 @@ trait Source extends StObject {
   
   val Tag: String
   
-  @JSName("Word.Source_typekey")
+  /* private */ @JSName("Word.Source_typekey")
   var WordDotSource_typekey: Source
   
   val XML: String
 }
 object Source {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Cited: Boolean,
     Creator: Double,
@@ -44,34 +43,24 @@ object Source {
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCited(value: Boolean): Self = StObject.set(x, "Cited", value.asInstanceOf[js.Any])
+    inline def setCited(value: Boolean): Self = StObject.set(x, "Cited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setField(value: String => String): Self = StObject.set(x, "Field", js.Any.fromFunction1(value))
+    inline def setField(value: String => String): Self = StObject.set(x, "Field", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSource_typekey(value: Source): Self = StObject.set(x, "Word.Source_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSource_typekey(value: Source): Self = StObject.set(x, "Word.Source_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
+    inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
   }
 }

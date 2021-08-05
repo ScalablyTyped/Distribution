@@ -26,49 +26,35 @@ trait SourceMandateAcceptance extends StObject {
 }
 object SourceMandateAcceptance {
   
-  @scala.inline
-  def apply(date: Double, status: accepted | refused): SourceMandateAcceptance = {
+  inline def apply(date: Double, status: accepted | refused): SourceMandateAcceptance = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMandateAcceptance]
   }
   
-  @scala.inline
-  implicit class SourceMandateAcceptanceMutableBuilder[Self <: SourceMandateAcceptance] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMandateAcceptance](x: Self) {
     
-    @scala.inline
-    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
-    @scala.inline
-    def setOffline(value: OfflineAcceptanceMandate): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
+    inline def setOffline(value: OfflineAcceptanceMandate): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfflineUndefined: Self = StObject.set(x, "offline", js.undefined)
+    inline def setOfflineUndefined: Self = StObject.set(x, "offline", js.undefined)
     
-    @scala.inline
-    def setOnline(value: OnlineAcceptanceMandate): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
+    inline def setOnline(value: OnlineAcceptanceMandate): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlineUndefined: Self = StObject.set(x, "online", js.undefined)
+    inline def setOnlineUndefined: Self = StObject.set(x, "online", js.undefined)
     
-    @scala.inline
-    def setStatus(value: accepted | refused): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: accepted | refused): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: online | offline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: online | offline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
+    inline def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
+    inline def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait GetDomainStatisticsReportResponse extends StObject {
 }
 object GetDomainStatisticsReportResponse {
   
-  @scala.inline
-  def apply(DailyVolumes: DailyVolumes, OverallVolume: OverallVolume): GetDomainStatisticsReportResponse = {
+  inline def apply(DailyVolumes: DailyVolumes, OverallVolume: OverallVolume): GetDomainStatisticsReportResponse = {
     val __obj = js.Dynamic.literal(DailyVolumes = DailyVolumes.asInstanceOf[js.Any], OverallVolume = OverallVolume.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainStatisticsReportResponse]
   }
   
-  @scala.inline
-  implicit class GetDomainStatisticsReportResponseMutableBuilder[Self <: GetDomainStatisticsReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainStatisticsReportResponse](x: Self) {
     
-    @scala.inline
-    def setDailyVolumes(value: DailyVolumes): Self = StObject.set(x, "DailyVolumes", value.asInstanceOf[js.Any])
+    inline def setDailyVolumes(value: DailyVolumes): Self = StObject.set(x, "DailyVolumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyVolumesVarargs(value: DailyVolume*): Self = StObject.set(x, "DailyVolumes", js.Array(value :_*))
+    inline def setDailyVolumesVarargs(value: DailyVolume*): Self = StObject.set(x, "DailyVolumes", js.Array(value :_*))
     
-    @scala.inline
-    def setOverallVolume(value: OverallVolume): Self = StObject.set(x, "OverallVolume", value.asInstanceOf[js.Any])
+    inline def setOverallVolume(value: OverallVolume): Self = StObject.set(x, "OverallVolume", value.asInstanceOf[js.Any])
   }
 }

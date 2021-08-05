@@ -125,8 +125,7 @@ trait IMemberResource extends StObject {
 }
 object IMemberResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteByKey: String => IPromise[IResourcePromise],
     getByKey: String => IPromise[IResourcePromise],
     getListNode: String => js.Any,
@@ -138,25 +137,18 @@ object IMemberResource {
     __obj.asInstanceOf[IMemberResource]
   }
   
-  @scala.inline
-  implicit class IMemberResourceMutableBuilder[Self <: IMemberResource] (val x: Self) extends AnyVal {
+  extension [Self <: IMemberResource](x: Self) {
     
-    @scala.inline
-    def setDeleteByKey(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteByKey", js.Any.fromFunction1(value))
+    inline def setDeleteByKey(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteByKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetByKey(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
+    inline def setGetByKey(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetListNode(value: String => js.Any): Self = StObject.set(x, "getListNode", js.Any.fromFunction1(value))
+    inline def setGetListNode(value: String => js.Any): Self = StObject.set(x, "getListNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPagedResults(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getPagedResults", js.Any.fromFunction2(value))
+    inline def setGetPagedResults(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getPagedResults", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetScaffold(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getScaffold", js.Any.fromFunction1(value))
+    inline def setGetScaffold(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getScaffold", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSave(value: (js.Object, Boolean, js.Array[js.Any]) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
+    inline def setSave(value: (js.Object, Boolean, js.Array[js.Any]) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
   }
 }

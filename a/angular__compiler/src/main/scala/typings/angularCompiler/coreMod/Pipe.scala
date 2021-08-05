@@ -12,22 +12,17 @@ trait Pipe extends StObject {
 }
 object Pipe {
   
-  @scala.inline
-  def apply(name: String): Pipe = {
+  inline def apply(name: String): Pipe = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pipe]
   }
   
-  @scala.inline
-  implicit class PipeMutableBuilder[Self <: Pipe] (val x: Self) extends AnyVal {
+  extension [Self <: Pipe](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+    inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+    inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
   }
 }

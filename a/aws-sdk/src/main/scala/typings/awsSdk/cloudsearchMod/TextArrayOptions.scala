@@ -33,43 +33,31 @@ trait TextArrayOptions extends StObject {
 }
 object TextArrayOptions {
   
-  @scala.inline
-  def apply(): TextArrayOptions = {
+  inline def apply(): TextArrayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextArrayOptions]
   }
   
-  @scala.inline
-  implicit class TextArrayOptionsMutableBuilder[Self <: TextArrayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextArrayOptions](x: Self) {
     
-    @scala.inline
-    def setAnalysisScheme(value: Word): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
+    inline def setAnalysisScheme(value: Word): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisSchemeUndefined: Self = StObject.set(x, "AnalysisScheme", js.undefined)
+    inline def setAnalysisSchemeUndefined: Self = StObject.set(x, "AnalysisScheme", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: FieldValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: FieldValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "HighlightEnabled", value.asInstanceOf[js.Any])
+    inline def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "HighlightEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightEnabledUndefined: Self = StObject.set(x, "HighlightEnabled", js.undefined)
+    inline def setHighlightEnabledUndefined: Self = StObject.set(x, "HighlightEnabled", js.undefined)
     
-    @scala.inline
-    def setReturnEnabled(value: Boolean): Self = StObject.set(x, "ReturnEnabled", value.asInstanceOf[js.Any])
+    inline def setReturnEnabled(value: Boolean): Self = StObject.set(x, "ReturnEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnEnabledUndefined: Self = StObject.set(x, "ReturnEnabled", js.undefined)
+    inline def setReturnEnabledUndefined: Self = StObject.set(x, "ReturnEnabled", js.undefined)
     
-    @scala.inline
-    def setSourceFields(value: FieldNameCommaList): Self = StObject.set(x, "SourceFields", value.asInstanceOf[js.Any])
+    inline def setSourceFields(value: FieldNameCommaList): Self = StObject.set(x, "SourceFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFieldsUndefined: Self = StObject.set(x, "SourceFields", js.undefined)
+    inline def setSourceFieldsUndefined: Self = StObject.set(x, "SourceFields", js.undefined)
   }
 }

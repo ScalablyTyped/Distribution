@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ZoneOffsetTransition")
 @js.native
-class ZoneOffsetTransition protected () extends StObject {
+/* private */ class ZoneOffsetTransition () extends StObject {
   
   def compareTo(transition: ZoneOffsetTransition): Double = js.native
   
@@ -43,6 +43,5 @@ object ZoneOffsetTransition {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def of(transition: LocalDateTime, offsetBefore: ZoneOffset, offsetAfter: ZoneOffset): ZoneOffsetTransition = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(transition.asInstanceOf[js.Any], offsetBefore.asInstanceOf[js.Any], offsetAfter.asInstanceOf[js.Any])).asInstanceOf[ZoneOffsetTransition]
+  inline def of(transition: LocalDateTime, offsetBefore: ZoneOffset, offsetAfter: ZoneOffset): ZoneOffsetTransition = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(transition.asInstanceOf[js.Any], offsetBefore.asInstanceOf[js.Any], offsetAfter.asInstanceOf[js.Any])).asInstanceOf[ZoneOffsetTransition]
 }

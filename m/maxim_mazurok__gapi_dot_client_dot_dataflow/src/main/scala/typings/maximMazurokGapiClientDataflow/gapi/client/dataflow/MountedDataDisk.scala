@@ -14,19 +14,15 @@ trait MountedDataDisk extends StObject {
 }
 object MountedDataDisk {
   
-  @scala.inline
-  def apply(): MountedDataDisk = {
+  inline def apply(): MountedDataDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MountedDataDisk]
   }
   
-  @scala.inline
-  implicit class MountedDataDiskMutableBuilder[Self <: MountedDataDisk] (val x: Self) extends AnyVal {
+  extension [Self <: MountedDataDisk](x: Self) {
     
-    @scala.inline
-    def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
+    inline def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskUndefined: Self = StObject.set(x, "dataDisk", js.undefined)
+    inline def setDataDiskUndefined: Self = StObject.set(x, "dataDisk", js.undefined)
   }
 }

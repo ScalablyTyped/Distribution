@@ -27,8 +27,7 @@ object Portable {
       * @return The AQS string.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(serviceType: ServiceDeviceType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(serviceType.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(serviceType: ServiceDeviceType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(serviceType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * An Advanced Query Syntax (AQS) string for identifying a device service by its GUIDs. This string is passed to the FindAllAsync or CreateWatcher method.
@@ -36,8 +35,7 @@ object Portable {
       * @return The AQS string.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelectorFromServiceId(serviceId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromServiceId")(serviceId.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelectorFromServiceId(serviceId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromServiceId")(serviceId.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Indicates the type of a portable device service. */
@@ -81,15 +79,13 @@ object Portable {
       * @return The storage folder object that represents the removable storage device and provides access to content on the device.
       */
     /* static member */
-    @scala.inline
-    def fromId(DeviceId: String): StorageFolder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(DeviceId.asInstanceOf[js.Any]).asInstanceOf[StorageFolder]
+    inline def fromId(DeviceId: String): StorageFolder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(DeviceId.asInstanceOf[js.Any]).asInstanceOf[StorageFolder]
     
     /**
       * An Advanced Query Syntax (AQS) string for identifying removable storage devices. This string is passed to the FindAllAsync or CreateWatcher method.
       * @return An AQS string for identifying storage devices.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
 }

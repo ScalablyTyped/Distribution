@@ -14,31 +14,23 @@ trait GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse extends StOb
 }
 object GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse = {
+  inline def apply(): GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponseMutableBuilder[Self <: GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsArtifactregistryV1alpha1ImportArtifactsResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setPackages(value: js.Array[GoogleDevtoolsArtifactregistryV1alpha1Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    inline def setPackages(value: js.Array[GoogleDevtoolsArtifactregistryV1alpha1Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    @scala.inline
-    def setPackagesVarargs(value: GoogleDevtoolsArtifactregistryV1alpha1Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: GoogleDevtoolsArtifactregistryV1alpha1Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
   }
 }

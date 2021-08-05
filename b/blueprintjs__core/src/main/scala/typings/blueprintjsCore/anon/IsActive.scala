@@ -10,16 +10,13 @@ trait IsActive extends StObject {
 }
 object IsActive {
   
-  @scala.inline
-  def apply(isActive: Boolean): IsActive = {
+  inline def apply(isActive: Boolean): IsActive = {
     val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsActive]
   }
   
-  @scala.inline
-  implicit class IsActiveMutableBuilder[Self <: IsActive] (val x: Self) extends AnyVal {
+  extension [Self <: IsActive](x: Self) {
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ trait ReportingWorkItemLink extends StObject {
 }
 object ReportingWorkItemLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changedBy: IdentityRef,
     changedDate: Date,
     changedOperation: LinkChangeType,
@@ -44,34 +43,24 @@ object ReportingWorkItemLink {
     __obj.asInstanceOf[ReportingWorkItemLink]
   }
   
-  @scala.inline
-  implicit class ReportingWorkItemLinkMutableBuilder[Self <: ReportingWorkItemLink] (val x: Self) extends AnyVal {
+  extension [Self <: ReportingWorkItemLink](x: Self) {
     
-    @scala.inline
-    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
+    inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedOperation(value: LinkChangeType): Self = StObject.set(x, "changedOperation", value.asInstanceOf[js.Any])
+    inline def setChangedOperation(value: LinkChangeType): Self = StObject.set(x, "changedOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+    inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: Double): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: Double): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

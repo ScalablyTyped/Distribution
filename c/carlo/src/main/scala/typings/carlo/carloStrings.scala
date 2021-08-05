@@ -9,20 +9,17 @@ object carloStrings {
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait exit
     extends StObject
        with AppEvent
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
+  inline def exit: exit = "exit".asInstanceOf[exit]
   
   @js.native
   sealed trait window
     extends StObject
        with AppEvent
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  inline def window: window = "window".asInstanceOf[window]
 }

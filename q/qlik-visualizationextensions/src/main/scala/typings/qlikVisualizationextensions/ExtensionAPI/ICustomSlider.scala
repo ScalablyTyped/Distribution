@@ -21,8 +21,7 @@ trait ICustomSlider
 }
 object ICustomSlider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: Double,
     label: String,
     max: Double,
@@ -36,22 +35,16 @@ object ICustomSlider {
     __obj.asInstanceOf[ICustomSlider]
   }
   
-  @scala.inline
-  implicit class ICustomSliderMutableBuilder[Self <: ICustomSlider] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomSlider](x: Self) {
     
-    @scala.inline
-    def setComponent(value: slider): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: slider): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

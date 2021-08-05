@@ -13,19 +13,15 @@ trait GetRuleGroupResponse extends StObject {
 }
 object GetRuleGroupResponse {
   
-  @scala.inline
-  def apply(): GetRuleGroupResponse = {
+  inline def apply(): GetRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRuleGroupResponse]
   }
   
-  @scala.inline
-  implicit class GetRuleGroupResponseMutableBuilder[Self <: GetRuleGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRuleGroupResponse](x: Self) {
     
-    @scala.inline
-    def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
+    inline def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupUndefined: Self = StObject.set(x, "RuleGroup", js.undefined)
+    inline def setRuleGroupUndefined: Self = StObject.set(x, "RuleGroup", js.undefined)
   }
 }

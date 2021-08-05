@@ -17,16 +17,13 @@ trait CodeLensParams
 }
 object CodeLensParams {
   
-  @scala.inline
-  def apply(textDocument: TextDocumentIdentifier): CodeLensParams = {
+  inline def apply(textDocument: TextDocumentIdentifier): CodeLensParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeLensParams]
   }
   
-  @scala.inline
-  implicit class CodeLensParamsMutableBuilder[Self <: CodeLensParams] (val x: Self) extends AnyVal {
+  extension [Self <: CodeLensParams](x: Self) {
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

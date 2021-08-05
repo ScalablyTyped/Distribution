@@ -29,31 +29,23 @@ trait SchemaResourcePolicyDailyCycle extends StObject {
 }
 object SchemaResourcePolicyDailyCycle {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicyDailyCycle = {
+  inline def apply(): SchemaResourcePolicyDailyCycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicyDailyCycle]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicyDailyCycleMutableBuilder[Self <: SchemaResourcePolicyDailyCycle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicyDailyCycle](x: Self) {
     
-    @scala.inline
-    def setDaysInCycle(value: Double): Self = StObject.set(x, "daysInCycle", value.asInstanceOf[js.Any])
+    inline def setDaysInCycle(value: Double): Self = StObject.set(x, "daysInCycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysInCycleUndefined: Self = StObject.set(x, "daysInCycle", js.undefined)
+    inline def setDaysInCycleUndefined: Self = StObject.set(x, "daysInCycle", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

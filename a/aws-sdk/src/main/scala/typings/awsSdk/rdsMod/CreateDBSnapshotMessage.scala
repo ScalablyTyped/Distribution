@@ -20,28 +20,21 @@ trait CreateDBSnapshotMessage extends StObject {
 }
 object CreateDBSnapshotMessage {
   
-  @scala.inline
-  def apply(DBInstanceIdentifier: String, DBSnapshotIdentifier: String): CreateDBSnapshotMessage = {
+  inline def apply(DBInstanceIdentifier: String, DBSnapshotIdentifier: String): CreateDBSnapshotMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any], DBSnapshotIdentifier = DBSnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDBSnapshotMessage]
   }
   
-  @scala.inline
-  implicit class CreateDBSnapshotMessageMutableBuilder[Self <: CreateDBSnapshotMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDBSnapshotMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

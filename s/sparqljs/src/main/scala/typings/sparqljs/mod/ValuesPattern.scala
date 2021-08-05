@@ -15,23 +15,18 @@ trait ValuesPattern
 }
 object ValuesPattern {
   
-  @scala.inline
-  def apply(values: js.Array[ValuePatternRow]): ValuesPattern = {
+  inline def apply(values: js.Array[ValuePatternRow]): ValuesPattern = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("values")
     __obj.asInstanceOf[ValuesPattern]
   }
   
-  @scala.inline
-  implicit class ValuesPatternMutableBuilder[Self <: ValuesPattern] (val x: Self) extends AnyVal {
+  extension [Self <: ValuesPattern](x: Self) {
     
-    @scala.inline
-    def setType(value: values): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: values): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[ValuePatternRow]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[ValuePatternRow]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: ValuePatternRow*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValuePatternRow*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

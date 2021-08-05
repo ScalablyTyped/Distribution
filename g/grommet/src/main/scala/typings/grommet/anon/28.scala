@@ -12,31 +12,23 @@ trait `28` extends StObject {
 }
 object `28` {
   
-  @scala.inline
-  def apply(): `28` = {
+  inline def apply(): `28` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`28`]
   }
   
-  @scala.inline
-  implicit class `28MutableBuilder`[Self <: `28`] (val x: Self) extends AnyVal {
+  extension [Self <: `28`](x: Self) {
     
-    @scala.inline
-    def setDark(value: js.Array[String]): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: js.Array[String]): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
-    @scala.inline
-    def setDarkVarargs(value: String*): Self = StObject.set(x, "dark", js.Array(value :_*))
+    inline def setDarkVarargs(value: String*): Self = StObject.set(x, "dark", js.Array(value :_*))
     
-    @scala.inline
-    def setLight(value: js.Array[String]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: js.Array[String]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
-    @scala.inline
-    def setLightVarargs(value: String*): Self = StObject.set(x, "light", js.Array(value :_*))
+    inline def setLightVarargs(value: String*): Self = StObject.set(x, "light", js.Array(value :_*))
   }
 }

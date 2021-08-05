@@ -82,8 +82,7 @@ trait AlbumObjectSimplified
 }
 object AlbumObjectSimplified {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     album_type: album | single | compilation,
     artists: js.Array[ArtistObjectSimplified],
     external_urls: ExternalUrlObject,
@@ -100,58 +99,40 @@ object AlbumObjectSimplified {
     __obj.asInstanceOf[AlbumObjectSimplified]
   }
   
-  @scala.inline
-  implicit class AlbumObjectSimplifiedMutableBuilder[Self <: AlbumObjectSimplified] (val x: Self) extends AnyVal {
+  extension [Self <: AlbumObjectSimplified](x: Self) {
     
-    @scala.inline
-    def setAlbum_group(value: album | single | compilation | appears_on): Self = StObject.set(x, "album_group", value.asInstanceOf[js.Any])
+    inline def setAlbum_group(value: album | single | compilation | appears_on): Self = StObject.set(x, "album_group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbum_groupUndefined: Self = StObject.set(x, "album_group", js.undefined)
+    inline def setAlbum_groupUndefined: Self = StObject.set(x, "album_group", js.undefined)
     
-    @scala.inline
-    def setAlbum_type(value: album | single | compilation): Self = StObject.set(x, "album_type", value.asInstanceOf[js.Any])
+    inline def setAlbum_type(value: album | single | compilation): Self = StObject.set(x, "album_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+    inline def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtistsVarargs(value: ArtistObjectSimplified*): Self = StObject.set(x, "artists", js.Array(value :_*))
+    inline def setArtistsVarargs(value: ArtistObjectSimplified*): Self = StObject.set(x, "artists", js.Array(value :_*))
     
-    @scala.inline
-    def setAvailable_markets(value: js.Array[String]): Self = StObject.set(x, "available_markets", value.asInstanceOf[js.Any])
+    inline def setAvailable_markets(value: js.Array[String]): Self = StObject.set(x, "available_markets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailable_marketsUndefined: Self = StObject.set(x, "available_markets", js.undefined)
+    inline def setAvailable_marketsUndefined: Self = StObject.set(x, "available_markets", js.undefined)
     
-    @scala.inline
-    def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value :_*))
+    inline def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease_date(value: String): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+    inline def setRelease_date(value: String): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease_date_precision(value: year | month | day): Self = StObject.set(x, "release_date_precision", value.asInstanceOf[js.Any])
+    inline def setRelease_date_precision(value: year | month | day): Self = StObject.set(x, "release_date_precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictions(value: RestrictionsObject): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: RestrictionsObject): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+    inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
-    @scala.inline
-    def setType(value: album): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: album): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

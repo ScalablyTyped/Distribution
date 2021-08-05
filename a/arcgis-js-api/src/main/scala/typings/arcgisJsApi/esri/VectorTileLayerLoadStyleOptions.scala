@@ -20,8 +20,7 @@ trait VectorTileLayerLoadStyleOptions
 }
 object VectorTileLayerLoadStyleOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -30,13 +29,10 @@ object VectorTileLayerLoadStyleOptions {
     __obj.asInstanceOf[VectorTileLayerLoadStyleOptions]
   }
   
-  @scala.inline
-  implicit class VectorTileLayerLoadStyleOptionsMutableBuilder[Self <: VectorTileLayerLoadStyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VectorTileLayerLoadStyleOptions](x: Self) {
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

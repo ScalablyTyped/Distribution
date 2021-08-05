@@ -28,37 +28,27 @@ trait PiiEntity extends StObject {
 }
 object PiiEntity {
   
-  @scala.inline
-  def apply(): PiiEntity = {
+  inline def apply(): PiiEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PiiEntity]
   }
   
-  @scala.inline
-  implicit class PiiEntityMutableBuilder[Self <: PiiEntity] (val x: Self) extends AnyVal {
+  extension [Self <: PiiEntity](x: Self) {
     
-    @scala.inline
-    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
+    inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
+    inline def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
     
-    @scala.inline
-    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
     
-    @scala.inline
-    def setType(value: PiiEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PiiEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

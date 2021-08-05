@@ -12,25 +12,19 @@ trait AutoscrollToTopThreshold extends StObject {
 }
 object AutoscrollToTopThreshold {
   
-  @scala.inline
-  def apply(minIndexForVisible: Double): AutoscrollToTopThreshold = {
+  inline def apply(minIndexForVisible: Double): AutoscrollToTopThreshold = {
     val __obj = js.Dynamic.literal(minIndexForVisible = minIndexForVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscrollToTopThreshold]
   }
   
-  @scala.inline
-  implicit class AutoscrollToTopThresholdMutableBuilder[Self <: AutoscrollToTopThreshold] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscrollToTopThreshold](x: Self) {
     
-    @scala.inline
-    def setAutoscrollToTopThreshold(value: Double): Self = StObject.set(x, "autoscrollToTopThreshold", value.asInstanceOf[js.Any])
+    inline def setAutoscrollToTopThreshold(value: Double): Self = StObject.set(x, "autoscrollToTopThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscrollToTopThresholdNull: Self = StObject.set(x, "autoscrollToTopThreshold", null)
+    inline def setAutoscrollToTopThresholdNull: Self = StObject.set(x, "autoscrollToTopThreshold", null)
     
-    @scala.inline
-    def setAutoscrollToTopThresholdUndefined: Self = StObject.set(x, "autoscrollToTopThreshold", js.undefined)
+    inline def setAutoscrollToTopThresholdUndefined: Self = StObject.set(x, "autoscrollToTopThreshold", js.undefined)
     
-    @scala.inline
-    def setMinIndexForVisible(value: Double): Self = StObject.set(x, "minIndexForVisible", value.asInstanceOf[js.Any])
+    inline def setMinIndexForVisible(value: Double): Self = StObject.set(x, "minIndexForVisible", value.asInstanceOf[js.Any])
   }
 }

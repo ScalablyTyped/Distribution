@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object createStoreMod {
   
-  @scala.inline
-  def apply[T /* <: StoreOptions */](options: T & ThisType[StoreThis[T]]): StoreClass = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StoreClass]
+  inline def apply[T /* <: StoreOptions */](options: T & ThisType[StoreThis[T]]): StoreClass = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StoreClass]
   
   @JSImport("dispatchr/addons/createStore", JSImport.Namespace)
   @js.native
@@ -45,53 +44,38 @@ object createStoreMod {
   }
   object StoreOptions {
     
-    @scala.inline
-    def apply(handlers: StringDictionary[String], storeName: String): StoreOptions = {
+    inline def apply(handlers: StringDictionary[String], storeName: String): StoreOptions = {
       val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], storeName = storeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoreOptions]
     }
     
-    @scala.inline
-    implicit class StoreOptionsMutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StoreOptions](x: Self) {
       
-      @scala.inline
-      def setDehydrate(value: () => js.Any): Self = StObject.set(x, "dehydrate", js.Any.fromFunction0(value))
+      inline def setDehydrate(value: () => js.Any): Self = StObject.set(x, "dehydrate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDehydrateUndefined: Self = StObject.set(x, "dehydrate", js.undefined)
+      inline def setDehydrateUndefined: Self = StObject.set(x, "dehydrate", js.undefined)
       
-      @scala.inline
-      def setHandlers(value: StringDictionary[String]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: StringDictionary[String]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+      inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+      inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
       
-      @scala.inline
-      def setMixins(value: js.Array[js.Object]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      inline def setMixins(value: js.Array[js.Object]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+      inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      @scala.inline
-      def setMixinsVarargs(value: js.Object*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: js.Object*): Self = StObject.set(x, "mixins", js.Array(value :_*))
       
-      @scala.inline
-      def setRehydrate(value: /* state */ js.Any => Unit): Self = StObject.set(x, "rehydrate", js.Any.fromFunction1(value))
+      inline def setRehydrate(value: /* state */ js.Any => Unit): Self = StObject.set(x, "rehydrate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRehydrateUndefined: Self = StObject.set(x, "rehydrate", js.undefined)
+      inline def setRehydrateUndefined: Self = StObject.set(x, "rehydrate", js.undefined)
       
-      @scala.inline
-      def setStatics(value: StringDictionary[js.Any]): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
+      inline def setStatics(value: StringDictionary[js.Any]): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticsUndefined: Self = StObject.set(x, "statics", js.undefined)
+      inline def setStaticsUndefined: Self = StObject.set(x, "statics", js.undefined)
       
-      @scala.inline
-      def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+      inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     }
   }
   

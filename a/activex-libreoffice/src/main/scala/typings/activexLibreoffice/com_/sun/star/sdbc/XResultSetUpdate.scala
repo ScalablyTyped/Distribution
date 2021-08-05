@@ -59,8 +59,7 @@ trait XResultSetUpdate
 }
 object XResultSetUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancelRowUpdates: () => Unit,
     deleteRow: () => Unit,
@@ -75,25 +74,18 @@ object XResultSetUpdate {
     __obj.asInstanceOf[XResultSetUpdate]
   }
   
-  @scala.inline
-  implicit class XResultSetUpdateMutableBuilder[Self <: XResultSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: XResultSetUpdate](x: Self) {
     
-    @scala.inline
-    def setCancelRowUpdates(value: () => Unit): Self = StObject.set(x, "cancelRowUpdates", js.Any.fromFunction0(value))
+    inline def setCancelRowUpdates(value: () => Unit): Self = StObject.set(x, "cancelRowUpdates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteRow(value: () => Unit): Self = StObject.set(x, "deleteRow", js.Any.fromFunction0(value))
+    inline def setDeleteRow(value: () => Unit): Self = StObject.set(x, "deleteRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertRow(value: () => Unit): Self = StObject.set(x, "insertRow", js.Any.fromFunction0(value))
+    inline def setInsertRow(value: () => Unit): Self = StObject.set(x, "insertRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveToCurrentRow(value: () => Unit): Self = StObject.set(x, "moveToCurrentRow", js.Any.fromFunction0(value))
+    inline def setMoveToCurrentRow(value: () => Unit): Self = StObject.set(x, "moveToCurrentRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveToInsertRow(value: () => Unit): Self = StObject.set(x, "moveToInsertRow", js.Any.fromFunction0(value))
+    inline def setMoveToInsertRow(value: () => Unit): Self = StObject.set(x, "moveToInsertRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateRow(value: () => Unit): Self = StObject.set(x, "updateRow", js.Any.fromFunction0(value))
+    inline def setUpdateRow(value: () => Unit): Self = StObject.set(x, "updateRow", js.Any.fromFunction0(value))
   }
 }

@@ -33,37 +33,27 @@ trait ButtonProperties
 }
 object ButtonProperties {
   
-  @scala.inline
-  def apply(): ButtonProperties = {
+  inline def apply(): ButtonProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonProperties]
   }
   
-  @scala.inline
-  implicit class ButtonPropertiesMutableBuilder[Self <: ButtonProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonProperties](x: Self) {
     
-    @scala.inline
-    def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+    inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
+    inline def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
     
-    @scala.inline
-    def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
+    inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
+    inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

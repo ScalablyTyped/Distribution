@@ -13,16 +13,13 @@ trait SnsDestination extends StObject {
 }
 object SnsDestination {
   
-  @scala.inline
-  def apply(TopicArn: AmazonResourceName): SnsDestination = {
+  inline def apply(TopicArn: AmazonResourceName): SnsDestination = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnsDestination]
   }
   
-  @scala.inline
-  implicit class SnsDestinationMutableBuilder[Self <: SnsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SnsDestination](x: Self) {
     
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

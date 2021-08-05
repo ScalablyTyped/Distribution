@@ -14,25 +14,19 @@ trait DelayName extends StObject {
 }
 object DelayName {
   
-  @scala.inline
-  def apply(): DelayName = {
+  inline def apply(): DelayName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DelayName]
   }
   
-  @scala.inline
-  implicit class DelayNameMutableBuilder[Self <: DelayName] (val x: Self) extends AnyVal {
+  extension [Self <: DelayName](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Show | Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Show | Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setName(value: onClick | onHover): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: onClick | onHover): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

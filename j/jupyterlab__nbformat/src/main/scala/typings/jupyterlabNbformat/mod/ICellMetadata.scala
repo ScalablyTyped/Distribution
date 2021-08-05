@@ -15,14 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ICellMetadata extends StObject
 object ICellMetadata {
   
-  @scala.inline
-  def IBaseCellMetadata(jupyter: PartialIBaseCellJupyterMe, name: String, tags: js.Array[String], trusted: Boolean): typings.jupyterlabNbformat.mod.IBaseCellMetadata = {
+  inline def IBaseCellMetadata(jupyter: PartialIBaseCellJupyterMe, name: String, tags: js.Array[String], trusted: Boolean): typings.jupyterlabNbformat.mod.IBaseCellMetadata = {
     val __obj = js.Dynamic.literal(jupyter = jupyter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.jupyterlabNbformat.mod.IBaseCellMetadata]
   }
   
-  @scala.inline
-  def ICodeCellMetadata(
+  inline def ICodeCellMetadata(
     collapsed: Boolean,
     jupyter: PartialICodeCellJupyterMe,
     name: String,
@@ -34,8 +32,7 @@ object ICellMetadata {
     __obj.asInstanceOf[typings.jupyterlabNbformat.mod.ICodeCellMetadata]
   }
   
-  @scala.inline
-  def IRawCellMetadata(
+  inline def IRawCellMetadata(
     format: String,
     jupyter: PartialIBaseCellJupyterMe,
     name: String,

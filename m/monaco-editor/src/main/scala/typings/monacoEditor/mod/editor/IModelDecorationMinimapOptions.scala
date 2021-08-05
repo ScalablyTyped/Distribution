@@ -15,16 +15,13 @@ trait IModelDecorationMinimapOptions
 }
 object IModelDecorationMinimapOptions {
   
-  @scala.inline
-  def apply(position: MinimapPosition): IModelDecorationMinimapOptions = {
+  inline def apply(position: MinimapPosition): IModelDecorationMinimapOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelDecorationMinimapOptions]
   }
   
-  @scala.inline
-  implicit class IModelDecorationMinimapOptionsMutableBuilder[Self <: IModelDecorationMinimapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IModelDecorationMinimapOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: MinimapPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: MinimapPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

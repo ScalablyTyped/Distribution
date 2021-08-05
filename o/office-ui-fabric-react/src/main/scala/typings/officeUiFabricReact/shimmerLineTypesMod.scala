@@ -51,50 +51,36 @@ object shimmerLineTypesMod {
   }
   object IShimmerLineProps {
     
-    @scala.inline
-    def apply(): IShimmerLineProps = {
+    inline def apply(): IShimmerLineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerLineProps]
     }
     
-    @scala.inline
-    implicit class IShimmerLinePropsMutableBuilder[Self <: IShimmerLineProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerLineProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IShimmerLine]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IShimmerLine]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IShimmerLine | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IShimmerLine | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IShimmerLineStyleProps, IShimmerLineStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IShimmerLineStyleProps, IShimmerLineStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IShimmerLineStyleProps => DeepPartial[IShimmerLineStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IShimmerLineStyleProps => DeepPartial[IShimmerLineStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -118,29 +104,22 @@ object shimmerLineTypesMod {
   }
   object IShimmerLineStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IShimmerLineStyleProps = {
+    inline def apply(theme: ITheme): IShimmerLineStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShimmerLineStyleProps]
     }
     
-    @scala.inline
-    implicit class IShimmerLineStylePropsMutableBuilder[Self <: IShimmerLineStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerLineStyleProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,59 +152,42 @@ object shimmerLineTypesMod {
   }
   object IShimmerLineStyles {
     
-    @scala.inline
-    def apply(): IShimmerLineStyles = {
+    inline def apply(): IShimmerLineStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerLineStyles]
     }
     
-    @scala.inline
-    implicit class IShimmerLineStylesMutableBuilder[Self <: IShimmerLineStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerLineStyles](x: Self) {
       
-      @scala.inline
-      def setBottomLeftCorner(value: IStyle): Self = StObject.set(x, "bottomLeftCorner", value.asInstanceOf[js.Any])
+      inline def setBottomLeftCorner(value: IStyle): Self = StObject.set(x, "bottomLeftCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomLeftCornerNull: Self = StObject.set(x, "bottomLeftCorner", null)
+      inline def setBottomLeftCornerNull: Self = StObject.set(x, "bottomLeftCorner", null)
       
-      @scala.inline
-      def setBottomLeftCornerUndefined: Self = StObject.set(x, "bottomLeftCorner", js.undefined)
+      inline def setBottomLeftCornerUndefined: Self = StObject.set(x, "bottomLeftCorner", js.undefined)
       
-      @scala.inline
-      def setBottomRightCorner(value: IStyle): Self = StObject.set(x, "bottomRightCorner", value.asInstanceOf[js.Any])
+      inline def setBottomRightCorner(value: IStyle): Self = StObject.set(x, "bottomRightCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomRightCornerNull: Self = StObject.set(x, "bottomRightCorner", null)
+      inline def setBottomRightCornerNull: Self = StObject.set(x, "bottomRightCorner", null)
       
-      @scala.inline
-      def setBottomRightCornerUndefined: Self = StObject.set(x, "bottomRightCorner", js.undefined)
+      inline def setBottomRightCornerUndefined: Self = StObject.set(x, "bottomRightCorner", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTopLeftCorner(value: IStyle): Self = StObject.set(x, "topLeftCorner", value.asInstanceOf[js.Any])
+      inline def setTopLeftCorner(value: IStyle): Self = StObject.set(x, "topLeftCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLeftCornerNull: Self = StObject.set(x, "topLeftCorner", null)
+      inline def setTopLeftCornerNull: Self = StObject.set(x, "topLeftCorner", null)
       
-      @scala.inline
-      def setTopLeftCornerUndefined: Self = StObject.set(x, "topLeftCorner", js.undefined)
+      inline def setTopLeftCornerUndefined: Self = StObject.set(x, "topLeftCorner", js.undefined)
       
-      @scala.inline
-      def setTopRightCorner(value: IStyle): Self = StObject.set(x, "topRightCorner", value.asInstanceOf[js.Any])
+      inline def setTopRightCorner(value: IStyle): Self = StObject.set(x, "topRightCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopRightCornerNull: Self = StObject.set(x, "topRightCorner", null)
+      inline def setTopRightCornerNull: Self = StObject.set(x, "topRightCorner", null)
       
-      @scala.inline
-      def setTopRightCornerUndefined: Self = StObject.set(x, "topRightCorner", js.undefined)
+      inline def setTopRightCornerUndefined: Self = StObject.set(x, "topRightCorner", js.undefined)
     }
   }
 }

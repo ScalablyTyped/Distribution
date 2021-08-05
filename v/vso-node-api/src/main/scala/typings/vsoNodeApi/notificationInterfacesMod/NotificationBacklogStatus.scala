@@ -18,8 +18,7 @@ trait NotificationBacklogStatus extends StObject {
 }
 object NotificationBacklogStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: String,
     maxUnprocessedNotificationAgeMs: Double,
     publisher: String,
@@ -30,22 +29,16 @@ object NotificationBacklogStatus {
     __obj.asInstanceOf[NotificationBacklogStatus]
   }
   
-  @scala.inline
-  implicit class NotificationBacklogStatusMutableBuilder[Self <: NotificationBacklogStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationBacklogStatus](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUnprocessedNotificationAgeMs(value: Double): Self = StObject.set(x, "maxUnprocessedNotificationAgeMs", value.asInstanceOf[js.Any])
+    inline def setMaxUnprocessedNotificationAgeMs(value: Double): Self = StObject.set(x, "maxUnprocessedNotificationAgeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSinceLastProcessedNotificationMs(value: Double): Self = StObject.set(x, "timeSinceLastProcessedNotificationMs", value.asInstanceOf[js.Any])
+    inline def setTimeSinceLastProcessedNotificationMs(value: Double): Self = StObject.set(x, "timeSinceLastProcessedNotificationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedNotifications(value: Double): Self = StObject.set(x, "unprocessedNotifications", value.asInstanceOf[js.Any])
+    inline def setUnprocessedNotifications(value: Double): Self = StObject.set(x, "unprocessedNotifications", value.asInstanceOf[js.Any])
   }
 }

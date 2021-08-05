@@ -13,16 +13,13 @@ trait CancelAuditMitigationActionsTaskRequest extends StObject {
 }
 object CancelAuditMitigationActionsTaskRequest {
   
-  @scala.inline
-  def apply(taskId: AuditMitigationActionsTaskId): CancelAuditMitigationActionsTaskRequest = {
+  inline def apply(taskId: AuditMitigationActionsTaskId): CancelAuditMitigationActionsTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelAuditMitigationActionsTaskRequest]
   }
   
-  @scala.inline
-  implicit class CancelAuditMitigationActionsTaskRequestMutableBuilder[Self <: CancelAuditMitigationActionsTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelAuditMitigationActionsTaskRequest](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

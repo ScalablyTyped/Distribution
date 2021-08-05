@@ -17,13 +17,13 @@ object previewFullSizeMod {
        with PreviewFullsize {
     def this(hasPreviewServiceRootContainer: PreviewService) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _currentFrame: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _previewService: js.Any = js.native
     
     /* CompleteClass */
@@ -51,38 +51,34 @@ object previewFullSizeMod {
     @JSImport("playable/dist/src/modules/ui/preview-full-size/preview-full-size", "default.View")
     @js.native
     def View: Instantiable0[typings.playable.previewFullSizeViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable0[typings.playable.previewFullSizeViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable0[typings.playable.previewFullSizeViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/preview-full-size/preview-full-size", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/preview-full-size/preview-full-size", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait PreviewFullsize
     extends StObject
        with IPreviewFullSize {
     
-    var _currentFrame: js.Any
+    /* private */ var _currentFrame: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _previewService: js.Any
+    /* private */ var _previewService: js.Any
     
     var view: typings.playable.previewFullSizeViewMod.default
   }
   object PreviewFullsize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _currentFrame: js.Any,
       _initUI: js.Any,
       _previewService: js.Any,
@@ -96,20 +92,15 @@ object previewFullSizeMod {
       __obj.asInstanceOf[PreviewFullsize]
     }
     
-    @scala.inline
-    implicit class PreviewFullsizeMutableBuilder[Self <: PreviewFullsize] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewFullsize](x: Self) {
       
-      @scala.inline
-      def setView(value: typings.playable.previewFullSizeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.previewFullSizeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentFrame(value: js.Any): Self = StObject.set(x, "_currentFrame", value.asInstanceOf[js.Any])
+      inline def set_currentFrame(value: js.Any): Self = StObject.set(x, "_currentFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_previewService(value: js.Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
+      inline def set_previewService(value: js.Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
     }
   }
 }

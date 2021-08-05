@@ -13,22 +13,17 @@ trait DescribeTerminationPolicyTypesAnswer extends StObject {
 }
 object DescribeTerminationPolicyTypesAnswer {
   
-  @scala.inline
-  def apply(): DescribeTerminationPolicyTypesAnswer = {
+  inline def apply(): DescribeTerminationPolicyTypesAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTerminationPolicyTypesAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeTerminationPolicyTypesAnswerMutableBuilder[Self <: DescribeTerminationPolicyTypesAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTerminationPolicyTypesAnswer](x: Self) {
     
-    @scala.inline
-    def setTerminationPolicyTypes(value: TerminationPolicies): Self = StObject.set(x, "TerminationPolicyTypes", value.asInstanceOf[js.Any])
+    inline def setTerminationPolicyTypes(value: TerminationPolicies): Self = StObject.set(x, "TerminationPolicyTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationPolicyTypesUndefined: Self = StObject.set(x, "TerminationPolicyTypes", js.undefined)
+    inline def setTerminationPolicyTypesUndefined: Self = StObject.set(x, "TerminationPolicyTypes", js.undefined)
     
-    @scala.inline
-    def setTerminationPolicyTypesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicyTypes", js.Array(value :_*))
+    inline def setTerminationPolicyTypesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicyTypes", js.Array(value :_*))
   }
 }

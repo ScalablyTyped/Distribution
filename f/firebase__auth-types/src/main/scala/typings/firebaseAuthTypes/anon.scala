@@ -37,17 +37,14 @@ object anon {
   }
   object BundleId {
     
-    @scala.inline
-    def apply(bundleId: String): BundleId = {
+    inline def apply(bundleId: String): BundleId = {
       val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BundleId]
     }
     
-    @scala.inline
-    implicit class BundleIdMutableBuilder[Self <: BundleId] (val x: Self) extends AnyVal {
+    extension [Self <: BundleId](x: Self) {
       
-      @scala.inline
-      def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,32 +104,24 @@ object anon {
   }
   object DisplayName {
     
-    @scala.inline
-    def apply(): DisplayName = {
+    inline def apply(): DisplayName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisplayName]
     }
     
-    @scala.inline
-    implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayName](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+      inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setPhotoURL(value: String): Self = StObject.set(x, "photoURL", value.asInstanceOf[js.Any])
+      inline def setPhotoURL(value: String): Self = StObject.set(x, "photoURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotoURLNull: Self = StObject.set(x, "photoURL", null)
+      inline def setPhotoURLNull: Self = StObject.set(x, "photoURL", null)
       
-      @scala.inline
-      def setPhotoURLUndefined: Self = StObject.set(x, "photoURL", js.undefined)
+      inline def setPhotoURLUndefined: Self = StObject.set(x, "photoURL", js.undefined)
     }
   }
   
@@ -152,8 +141,7 @@ object anon {
   }
   object EMAILSIGNIN {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EMAIL_SIGNIN: Operation,
       PASSWORD_RESET: Operation,
       RECOVER_EMAIL: Operation,
@@ -165,26 +153,19 @@ object anon {
       __obj.asInstanceOf[EMAILSIGNIN]
     }
     
-    @scala.inline
-    implicit class EMAILSIGNINMutableBuilder[Self <: EMAILSIGNIN] (val x: Self) extends AnyVal {
+    extension [Self <: EMAILSIGNIN](x: Self) {
       
-      @scala.inline
-      def setEMAIL_SIGNIN(value: Operation): Self = StObject.set(x, "EMAIL_SIGNIN", value.asInstanceOf[js.Any])
+      inline def setEMAIL_SIGNIN(value: Operation): Self = StObject.set(x, "EMAIL_SIGNIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPASSWORD_RESET(value: Operation): Self = StObject.set(x, "PASSWORD_RESET", value.asInstanceOf[js.Any])
+      inline def setPASSWORD_RESET(value: Operation): Self = StObject.set(x, "PASSWORD_RESET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECOVER_EMAIL(value: Operation): Self = StObject.set(x, "RECOVER_EMAIL", value.asInstanceOf[js.Any])
+      inline def setRECOVER_EMAIL(value: Operation): Self = StObject.set(x, "RECOVER_EMAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREVERT_SECOND_FACTOR_ADDITION(value: Operation): Self = StObject.set(x, "REVERT_SECOND_FACTOR_ADDITION", value.asInstanceOf[js.Any])
+      inline def setREVERT_SECOND_FACTOR_ADDITION(value: Operation): Self = StObject.set(x, "REVERT_SECOND_FACTOR_ADDITION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVERIFY_AND_CHANGE_EMAIL(value: Operation): Self = StObject.set(x, "VERIFY_AND_CHANGE_EMAIL", value.asInstanceOf[js.Any])
+      inline def setVERIFY_AND_CHANGE_EMAIL(value: Operation): Self = StObject.set(x, "VERIFY_AND_CHANGE_EMAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVERIFY_EMAIL(value: Operation): Self = StObject.set(x, "VERIFY_EMAIL", value.asInstanceOf[js.Any])
+      inline def setVERIFY_EMAIL(value: Operation): Self = StObject.set(x, "VERIFY_EMAIL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,50 +181,36 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(): Email = {
+    inline def apply(): Email = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailNull: Self = StObject.set(x, "email", null)
+      inline def setEmailNull: Self = StObject.set(x, "email", null)
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFromEmail(value: String): Self = StObject.set(x, "fromEmail", value.asInstanceOf[js.Any])
+      inline def setFromEmail(value: String): Self = StObject.set(x, "fromEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromEmailNull: Self = StObject.set(x, "fromEmail", null)
+      inline def setFromEmailNull: Self = StObject.set(x, "fromEmail", null)
       
-      @scala.inline
-      def setFromEmailUndefined: Self = StObject.set(x, "fromEmail", js.undefined)
+      inline def setFromEmailUndefined: Self = StObject.set(x, "fromEmail", js.undefined)
       
-      @scala.inline
-      def setMultiFactorInfo(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorInfo", value.asInstanceOf[js.Any])
+      inline def setMultiFactorInfo(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiFactorInfoNull: Self = StObject.set(x, "multiFactorInfo", null)
+      inline def setMultiFactorInfoNull: Self = StObject.set(x, "multiFactorInfo", null)
       
-      @scala.inline
-      def setMultiFactorInfoUndefined: Self = StObject.set(x, "multiFactorInfo", js.undefined)
+      inline def setMultiFactorInfoUndefined: Self = StObject.set(x, "multiFactorInfo", js.undefined)
       
-      @scala.inline
-      def setPreviousEmail(value: String): Self = StObject.set(x, "previousEmail", value.asInstanceOf[js.Any])
+      inline def setPreviousEmail(value: String): Self = StObject.set(x, "previousEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousEmailNull: Self = StObject.set(x, "previousEmail", null)
+      inline def setPreviousEmailNull: Self = StObject.set(x, "previousEmail", null)
       
-      @scala.inline
-      def setPreviousEmailUndefined: Self = StObject.set(x, "previousEmail", js.undefined)
+      inline def setPreviousEmailUndefined: Self = StObject.set(x, "previousEmail", js.undefined)
     }
   }
   
@@ -257,29 +224,22 @@ object anon {
   }
   object InstallApp {
     
-    @scala.inline
-    def apply(packageName: String): InstallApp = {
+    inline def apply(packageName: String): InstallApp = {
       val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallApp]
     }
     
-    @scala.inline
-    implicit class InstallAppMutableBuilder[Self <: InstallApp] (val x: Self) extends AnyVal {
+    extension [Self <: InstallApp](x: Self) {
       
-      @scala.inline
-      def setInstallApp(value: Boolean): Self = StObject.set(x, "installApp", value.asInstanceOf[js.Any])
+      inline def setInstallApp(value: Boolean): Self = StObject.set(x, "installApp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallAppUndefined: Self = StObject.set(x, "installApp", js.undefined)
+      inline def setInstallAppUndefined: Self = StObject.set(x, "installApp", js.undefined)
       
-      @scala.inline
-      def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
+      inline def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
+      inline def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,23 +253,18 @@ object anon {
   }
   object LOCAL {
     
-    @scala.inline
-    def apply(LOCAL: Persistence, NONE: Persistence, SESSION: Persistence): LOCAL = {
+    inline def apply(LOCAL: Persistence, NONE: Persistence, SESSION: Persistence): LOCAL = {
       val __obj = js.Dynamic.literal(LOCAL = LOCAL.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], SESSION = SESSION.asInstanceOf[js.Any])
       __obj.asInstanceOf[LOCAL]
     }
     
-    @scala.inline
-    implicit class LOCALMutableBuilder[Self <: LOCAL] (val x: Self) extends AnyVal {
+    extension [Self <: LOCAL](x: Self) {
       
-      @scala.inline
-      def setLOCAL(value: Persistence): Self = StObject.set(x, "LOCAL", value.asInstanceOf[js.Any])
+      inline def setLOCAL(value: Persistence): Self = StObject.set(x, "LOCAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONE(value: Persistence): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: Persistence): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSESSION(value: Persistence): Self = StObject.set(x, "SESSION", value.asInstanceOf[js.Any])
+      inline def setSESSION(value: Persistence): Self = StObject.set(x, "SESSION", value.asInstanceOf[js.Any])
     }
   }
   

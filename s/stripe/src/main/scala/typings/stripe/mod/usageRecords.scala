@@ -26,33 +26,25 @@ object usageRecords {
   }
   object IUsageRecord {
     
-    @scala.inline
-    def apply(id: String, livemode: Boolean, quantity: Double, subscription_item: String, timestamp: Double): IUsageRecord = {
+    inline def apply(id: String, livemode: Boolean, quantity: Double, subscription_item: String, timestamp: Double): IUsageRecord = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], subscription_item = subscription_item.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.updateDynamic("object")("usage_record")
       __obj.asInstanceOf[IUsageRecord]
     }
     
-    @scala.inline
-    implicit class IUsageRecordMutableBuilder[Self <: IUsageRecord] (val x: Self) extends AnyVal {
+    extension [Self <: IUsageRecord](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: usage_record): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: usage_record): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscription_item(value: String): Self = StObject.set(x, "subscription_item", value.asInstanceOf[js.Any])
+      inline def setSubscription_item(value: String): Self = StObject.set(x, "subscription_item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,11 +55,9 @@ object usageRecords {
   trait IUsageRecordAction extends StObject
   object IUsageRecordAction {
     
-    @scala.inline
-    def increment: typings.stripe.stripeStrings.increment = "increment".asInstanceOf[typings.stripe.stripeStrings.increment]
+    inline def increment: typings.stripe.stripeStrings.increment = "increment".asInstanceOf[typings.stripe.stripeStrings.increment]
     
-    @scala.inline
-    def set: typings.stripe.stripeStrings.set = "set".asInstanceOf[typings.stripe.stripeStrings.set]
+    inline def set: typings.stripe.stripeStrings.set = "set".asInstanceOf[typings.stripe.stripeStrings.set]
   }
   
   trait IUsageRecordCreationOptions extends StObject {
@@ -90,26 +80,20 @@ object usageRecords {
   }
   object IUsageRecordCreationOptions {
     
-    @scala.inline
-    def apply(quantity: Double, timestamp: Double): IUsageRecordCreationOptions = {
+    inline def apply(quantity: Double, timestamp: Double): IUsageRecordCreationOptions = {
       val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUsageRecordCreationOptions]
     }
     
-    @scala.inline
-    implicit class IUsageRecordCreationOptionsMutableBuilder[Self <: IUsageRecordCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IUsageRecordCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAction(value: IUsageRecordAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: IUsageRecordAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

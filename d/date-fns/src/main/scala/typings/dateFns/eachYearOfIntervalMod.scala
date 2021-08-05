@@ -9,8 +9,7 @@ object eachYearOfIntervalMod {
   
   object default {
     
-    @scala.inline
-    def apply(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+    inline def apply(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
     
     @JSImport("date-fns/eachYearOfInterval", JSImport.Default)
     @js.native

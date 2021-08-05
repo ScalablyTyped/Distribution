@@ -16,11 +16,8 @@ object isNegativeMod {
   @js.native
   val IS_NEGATIVE: /* "isNegative" */ String = js.native
   
-  @scala.inline
-  def IsNegative_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNegative")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def IsNegative_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNegative")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsNegative_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNegative")().asInstanceOf[PropertyDecorator]
+  inline def IsNegative_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNegative")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def isNegative(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNegative")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNegative(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNegative")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

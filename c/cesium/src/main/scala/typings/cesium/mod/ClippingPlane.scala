@@ -20,14 +20,10 @@ object ClippingPlane {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(clippingPlane: ClippingPlane): ClippingPlane = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(clippingPlane.asInstanceOf[js.Any]).asInstanceOf[ClippingPlane]
-  @scala.inline
-  def clone_(clippingPlane: ClippingPlane, result: ClippingPlane): ClippingPlane = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(clippingPlane.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ClippingPlane]
+  inline def clone_(clippingPlane: ClippingPlane): ClippingPlane = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(clippingPlane.asInstanceOf[js.Any]).asInstanceOf[ClippingPlane]
+  inline def clone_(clippingPlane: ClippingPlane, result: ClippingPlane): ClippingPlane = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(clippingPlane.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ClippingPlane]
   
   /* static member */
-  @scala.inline
-  def fromPlane(plane: Plane): ClippingPlane = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlane")(plane.asInstanceOf[js.Any]).asInstanceOf[ClippingPlane]
-  @scala.inline
-  def fromPlane(plane: Plane, result: ClippingPlane): ClippingPlane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPlane")(plane.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ClippingPlane]
+  inline def fromPlane(plane: Plane): ClippingPlane = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlane")(plane.asInstanceOf[js.Any]).asInstanceOf[ClippingPlane]
+  inline def fromPlane(plane: Plane, result: ClippingPlane): ClippingPlane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPlane")(plane.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ClippingPlane]
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object allOffMod {
   
-  @scala.inline
-  def apply(emitter: Emitter): Unit = ^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(emitter: Emitter): Unit = ^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("event-emitter/all-off", JSImport.Namespace)
   @js.native

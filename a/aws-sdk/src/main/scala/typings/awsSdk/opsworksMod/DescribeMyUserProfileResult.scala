@@ -13,19 +13,15 @@ trait DescribeMyUserProfileResult extends StObject {
 }
 object DescribeMyUserProfileResult {
   
-  @scala.inline
-  def apply(): DescribeMyUserProfileResult = {
+  inline def apply(): DescribeMyUserProfileResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMyUserProfileResult]
   }
   
-  @scala.inline
-  implicit class DescribeMyUserProfileResultMutableBuilder[Self <: DescribeMyUserProfileResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMyUserProfileResult](x: Self) {
     
-    @scala.inline
-    def setUserProfile(value: SelfUserProfile): Self = StObject.set(x, "UserProfile", value.asInstanceOf[js.Any])
+    inline def setUserProfile(value: SelfUserProfile): Self = StObject.set(x, "UserProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfileUndefined: Self = StObject.set(x, "UserProfile", js.undefined)
+    inline def setUserProfileUndefined: Self = StObject.set(x, "UserProfile", js.undefined)
   }
 }

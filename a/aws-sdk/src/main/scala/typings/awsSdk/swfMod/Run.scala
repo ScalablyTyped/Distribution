@@ -13,19 +13,15 @@ trait Run extends StObject {
 }
 object Run {
   
-  @scala.inline
-  def apply(): Run = {
+  inline def apply(): Run = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Run]
   }
   
-  @scala.inline
-  implicit class RunMutableBuilder[Self <: Run] (val x: Self) extends AnyVal {
+  extension [Self <: Run](x: Self) {
     
-    @scala.inline
-    def setRunId(value: WorkflowRunId): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: WorkflowRunId): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
   }
 }

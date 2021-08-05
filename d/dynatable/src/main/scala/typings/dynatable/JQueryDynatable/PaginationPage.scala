@@ -25,22 +25,17 @@ trait PaginationPage extends StObject {
 }
 object PaginationPage {
   
-  @scala.inline
-  def apply(init: () => Unit, initOnLoad: () => Boolean, set: Double => Unit): PaginationPage = {
+  inline def apply(init: () => Unit, initOnLoad: () => Boolean, set: Double => Unit): PaginationPage = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[PaginationPage]
   }
   
-  @scala.inline
-  implicit class PaginationPageMutableBuilder[Self <: PaginationPage] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationPage](x: Self) {
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
+    inline def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

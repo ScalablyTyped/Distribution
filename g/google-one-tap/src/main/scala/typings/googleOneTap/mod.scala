@@ -35,11 +35,9 @@ object mod {
     @js.native
     val ^ : accounts = js.native
     
-    @scala.inline
-    implicit class accountsMutableBuilder[Self <: accounts] (val x: Self) extends AnyVal {
+    extension [Self <: accounts](x: Self) {
       
-      @scala.inline
-      def setId(value: Cancel): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Cancel): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,23 +51,18 @@ object mod {
   }
   object CredentialResponse {
     
-    @scala.inline
-    def apply(client_id: String, credential: String, select_by: String): CredentialResponse = {
+    inline def apply(client_id: String, credential: String, select_by: String): CredentialResponse = {
       val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], credential = credential.asInstanceOf[js.Any], select_by = select_by.asInstanceOf[js.Any])
       __obj.asInstanceOf[CredentialResponse]
     }
     
-    @scala.inline
-    implicit class CredentialResponseMutableBuilder[Self <: CredentialResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CredentialResponse](x: Self) {
       
-      @scala.inline
-      def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+      inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+      inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelect_by(value: String): Self = StObject.set(x, "select_by", value.asInstanceOf[js.Any])
+      inline def setSelect_by(value: String): Self = StObject.set(x, "select_by", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,68 +88,48 @@ object mod {
   }
   object IdConfiguration {
     
-    @scala.inline
-    def apply(): IdConfiguration = {
+    inline def apply(): IdConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdConfiguration]
     }
     
-    @scala.inline
-    implicit class IdConfigurationMutableBuilder[Self <: IdConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: IdConfiguration](x: Self) {
       
-      @scala.inline
-      def setAuto_select(value: Boolean): Self = StObject.set(x, "auto_select", value.asInstanceOf[js.Any])
+      inline def setAuto_select(value: Boolean): Self = StObject.set(x, "auto_select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_selectUndefined: Self = StObject.set(x, "auto_select", js.undefined)
+      inline def setAuto_selectUndefined: Self = StObject.set(x, "auto_select", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* credentialResponse */ CredentialResponse => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* credentialResponse */ CredentialResponse => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCancel_on_tap_outside(value: Boolean): Self = StObject.set(x, "cancel_on_tap_outside", value.asInstanceOf[js.Any])
+      inline def setCancel_on_tap_outside(value: Boolean): Self = StObject.set(x, "cancel_on_tap_outside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel_on_tap_outsideUndefined: Self = StObject.set(x, "cancel_on_tap_outside", js.undefined)
+      inline def setCancel_on_tap_outsideUndefined: Self = StObject.set(x, "cancel_on_tap_outside", js.undefined)
       
-      @scala.inline
-      def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+      inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+      inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setNative_callback(value: () => Unit): Self = StObject.set(x, "native_callback", js.Any.fromFunction0(value))
+      inline def setNative_callback(value: () => Unit): Self = StObject.set(x, "native_callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNative_callbackUndefined: Self = StObject.set(x, "native_callback", js.undefined)
+      inline def setNative_callbackUndefined: Self = StObject.set(x, "native_callback", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setPrompt_parent_id(value: String): Self = StObject.set(x, "prompt_parent_id", value.asInstanceOf[js.Any])
+      inline def setPrompt_parent_id(value: String): Self = StObject.set(x, "prompt_parent_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt_parent_idUndefined: Self = StObject.set(x, "prompt_parent_id", js.undefined)
+      inline def setPrompt_parent_idUndefined: Self = StObject.set(x, "prompt_parent_id", js.undefined)
       
-      @scala.inline
-      def setState_cookie_domain(value: String): Self = StObject.set(x, "state_cookie_domain", value.asInstanceOf[js.Any])
+      inline def setState_cookie_domain(value: String): Self = StObject.set(x, "state_cookie_domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState_cookie_domainUndefined: Self = StObject.set(x, "state_cookie_domain", js.undefined)
+      inline def setState_cookie_domainUndefined: Self = StObject.set(x, "state_cookie_domain", js.undefined)
     }
   }
   
@@ -182,8 +155,7 @@ object mod {
   }
   object PromptMomentNotification {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDismissedReason: () => credential_returned | cancel_called | flow_restarted,
       getMomentType: () => display | skipped | dismissed,
       getNotDisplayedReason: () => browser_not_supported | invalid_client | missing_client_id | opt_out_or_no_session | secure_http_required | suppressed_by_user | unregistered_origin | unknown_reason,
@@ -198,37 +170,27 @@ object mod {
       __obj.asInstanceOf[PromptMomentNotification]
     }
     
-    @scala.inline
-    implicit class PromptMomentNotificationMutableBuilder[Self <: PromptMomentNotification] (val x: Self) extends AnyVal {
+    extension [Self <: PromptMomentNotification](x: Self) {
       
-      @scala.inline
-      def setGetDismissedReason(value: () => credential_returned | cancel_called | flow_restarted): Self = StObject.set(x, "getDismissedReason", js.Any.fromFunction0(value))
+      inline def setGetDismissedReason(value: () => credential_returned | cancel_called | flow_restarted): Self = StObject.set(x, "getDismissedReason", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMomentType(value: () => display | skipped | dismissed): Self = StObject.set(x, "getMomentType", js.Any.fromFunction0(value))
+      inline def setGetMomentType(value: () => display | skipped | dismissed): Self = StObject.set(x, "getMomentType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNotDisplayedReason(
+      inline def setGetNotDisplayedReason(
         value: () => browser_not_supported | invalid_client | missing_client_id | opt_out_or_no_session | secure_http_required | suppressed_by_user | unregistered_origin | unknown_reason
       ): Self = StObject.set(x, "getNotDisplayedReason", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkippedReason(value: () => auto_cancel | user_cancel | tap_outside | issuing_failed): Self = StObject.set(x, "getSkippedReason", js.Any.fromFunction0(value))
+      inline def setGetSkippedReason(value: () => auto_cancel | user_cancel | tap_outside | issuing_failed): Self = StObject.set(x, "getSkippedReason", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDismissedMoment(value: () => Boolean): Self = StObject.set(x, "isDismissedMoment", js.Any.fromFunction0(value))
+      inline def setIsDismissedMoment(value: () => Boolean): Self = StObject.set(x, "isDismissedMoment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisplayMoment(value: () => Boolean): Self = StObject.set(x, "isDisplayMoment", js.Any.fromFunction0(value))
+      inline def setIsDisplayMoment(value: () => Boolean): Self = StObject.set(x, "isDisplayMoment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisplayed(value: () => Boolean): Self = StObject.set(x, "isDisplayed", js.Any.fromFunction0(value))
+      inline def setIsDisplayed(value: () => Boolean): Self = StObject.set(x, "isDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsNotDisplayed(value: () => Boolean): Self = StObject.set(x, "isNotDisplayed", js.Any.fromFunction0(value))
+      inline def setIsNotDisplayed(value: () => Boolean): Self = StObject.set(x, "isNotDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSkippedMoment(value: () => Boolean): Self = StObject.set(x, "isSkippedMoment", js.Any.fromFunction0(value))
+      inline def setIsSkippedMoment(value: () => Boolean): Self = StObject.set(x, "isSkippedMoment", js.Any.fromFunction0(value))
     }
   }
 }

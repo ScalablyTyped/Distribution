@@ -20,25 +20,19 @@ trait CircleOptions
 }
 object CircleOptions {
   
-  @scala.inline
-  def apply(): CircleOptions = {
+  inline def apply(): CircleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CircleOptions]
   }
   
-  @scala.inline
-  implicit class CircleOptionsMutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CircleOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setNumVertices(value: Double): Self = StObject.set(x, "numVertices", value.asInstanceOf[js.Any])
+    inline def setNumVertices(value: Double): Self = StObject.set(x, "numVertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumVerticesUndefined: Self = StObject.set(x, "numVertices", js.undefined)
+    inline def setNumVerticesUndefined: Self = StObject.set(x, "numVertices", js.undefined)
   }
 }

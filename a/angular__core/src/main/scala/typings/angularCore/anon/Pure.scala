@@ -18,26 +18,20 @@ trait Pure[T] extends StObject {
 }
 object Pure {
   
-  @scala.inline
-  def apply[T](name: String, `type`: Type[T]): Pure[T] = {
+  inline def apply[T](name: String, `type`: Type[T]): Pure[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pure[T]]
   }
   
-  @scala.inline
-  implicit class PureMutableBuilder[Self <: Pure[?], T] (val x: Self & Pure[T]) extends AnyVal {
+  extension [Self <: Pure[?], T](x: Self & Pure[T]) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+    inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+    inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
     
-    @scala.inline
-    def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

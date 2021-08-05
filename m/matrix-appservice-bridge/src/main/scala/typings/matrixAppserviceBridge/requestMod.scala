@@ -18,9 +18,9 @@ object requestMod {
       */
     def this(opts: RequestOpts[T]) = this()
     
-    var data: js.Any = js.native
+    /* private */ var data: js.Any = js.native
     
-    var defer: js.Any = js.native
+    /* private */ var defer: js.Any = js.native
     
     /**
       * Get any optional data set on this request.
@@ -47,7 +47,7 @@ object requestMod {
       */
     def getPromise(): js.Promise[js.Any] = js.native
     
-    var id: js.Any = js.native
+    /* private */ var id: js.Any = js.native
     
     def isPending: Boolean = js.native
     
@@ -58,7 +58,7 @@ object requestMod {
       */
     def outcomeFrom(promise: js.Promise[js.Any]): js.Promise[Unit] = js.native
     
-    var pending: js.Any = js.native
+    /* private */ var pending: js.Any = js.native
     
     /**
       * Reject a request. This should be invoked for requests which <i>failed to be
@@ -75,7 +75,7 @@ object requestMod {
       */
     def resolve(msg: js.Any): Unit = js.native
     
-    var startTs: js.Any = js.native
+    /* private */ var startTs: js.Any = js.native
   }
   
   trait RequestOpts[T] extends StObject {
@@ -86,23 +86,18 @@ object requestMod {
   }
   object RequestOpts {
     
-    @scala.inline
-    def apply[T](data: T): RequestOpts[T] = {
+    inline def apply[T](data: T): RequestOpts[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestOpts[T]]
     }
     
-    @scala.inline
-    implicit class RequestOptsMutableBuilder[Self <: RequestOpts[?], T] (val x: Self & RequestOpts[T]) extends AnyVal {
+    extension [Self <: RequestOpts[?], T](x: Self & RequestOpts[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
 }

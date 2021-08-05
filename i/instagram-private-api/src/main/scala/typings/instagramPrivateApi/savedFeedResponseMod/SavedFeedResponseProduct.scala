@@ -44,8 +44,7 @@ trait SavedFeedResponseProduct extends StObject {
 }
 object SavedFeedResponseProduct {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     can_share_to_story: Boolean,
     checkout_style: String,
     current_price: String,
@@ -68,67 +67,46 @@ object SavedFeedResponseProduct {
     __obj.asInstanceOf[SavedFeedResponseProduct]
   }
   
-  @scala.inline
-  implicit class SavedFeedResponseProductMutableBuilder[Self <: SavedFeedResponseProduct] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFeedResponseProduct](x: Self) {
     
-    @scala.inline
-    def setCan_share_to_story(value: Boolean): Self = StObject.set(x, "can_share_to_story", value.asInstanceOf[js.Any])
+    inline def setCan_share_to_story(value: Boolean): Self = StObject.set(x, "can_share_to_story", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckout_style(value: String): Self = StObject.set(x, "checkout_style", value.asInstanceOf[js.Any])
+    inline def setCheckout_style(value: String): Self = StObject.set(x, "checkout_style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent_price(value: String): Self = StObject.set(x, "current_price", value.asInstanceOf[js.Any])
+    inline def setCurrent_price(value: String): Self = StObject.set(x, "current_price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent_price_stripped(value: String): Self = StObject.set(x, "current_price_stripped", value.asInstanceOf[js.Any])
+    inline def setCurrent_price_stripped(value: String): Self = StObject.set(x, "current_price_stripped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
+    inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_price(value: String): Self = StObject.set(x, "full_price", value.asInstanceOf[js.Any])
+    inline def setFull_price(value: String): Self = StObject.set(x, "full_price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_price_stripped(value: String): Self = StObject.set(x, "full_price_stripped", value.asInstanceOf[js.Any])
+    inline def setFull_price_stripped(value: String): Self = StObject.set(x, "full_price_stripped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_viewer_saved(value: Boolean): Self = StObject.set(x, "has_viewer_saved", value.asInstanceOf[js.Any])
+    inline def setHas_viewer_saved(value: Boolean): Self = StObject.set(x, "has_viewer_saved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain_image(value: SavedFeedResponseMainImage): Self = StObject.set(x, "main_image", value.asInstanceOf[js.Any])
+    inline def setMain_image(value: SavedFeedResponseMainImage): Self = StObject.set(x, "main_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchant(value: SavedFeedResponseMerchant): Self = StObject.set(x, "merchant", value.asInstanceOf[js.Any])
+    inline def setMerchant(value: SavedFeedResponseMerchant): Self = StObject.set(x, "merchant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
+    inline def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetailer_id(value: String): Self = StObject.set(x, "retailer_id", value.asInstanceOf[js.Any])
+    inline def setRetailer_id(value: String): Self = StObject.set(x, "retailer_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReview_status(value: String): Self = StObject.set(x, "review_status", value.asInstanceOf[js.Any])
+    inline def setReview_status(value: String): Self = StObject.set(x, "review_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail_image(value: SavedFeedResponseThumbnailImage): Self = StObject.set(x, "thumbnail_image", value.asInstanceOf[js.Any])
+    inline def setThumbnail_image(value: SavedFeedResponseThumbnailImage): Self = StObject.set(x, "thumbnail_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariant_values(value: js.Array[SavedFeedResponseVariantValuesItem]): Self = StObject.set(x, "variant_values", value.asInstanceOf[js.Any])
+    inline def setVariant_values(value: js.Array[SavedFeedResponseVariantValuesItem]): Self = StObject.set(x, "variant_values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariant_valuesUndefined: Self = StObject.set(x, "variant_values", js.undefined)
+    inline def setVariant_valuesUndefined: Self = StObject.set(x, "variant_values", js.undefined)
     
-    @scala.inline
-    def setVariant_valuesVarargs(value: SavedFeedResponseVariantValuesItem*): Self = StObject.set(x, "variant_values", js.Array(value :_*))
+    inline def setVariant_valuesVarargs(value: SavedFeedResponseVariantValuesItem*): Self = StObject.set(x, "variant_values", js.Array(value :_*))
   }
 }

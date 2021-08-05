@@ -13,16 +13,13 @@ trait DetectEntitiesV2Request extends StObject {
 }
 object DetectEntitiesV2Request {
   
-  @scala.inline
-  def apply(Text: BoundedLengthString): DetectEntitiesV2Request = {
+  inline def apply(Text: BoundedLengthString): DetectEntitiesV2Request = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectEntitiesV2Request]
   }
   
-  @scala.inline
-  implicit class DetectEntitiesV2RequestMutableBuilder[Self <: DetectEntitiesV2Request] (val x: Self) extends AnyVal {
+  extension [Self <: DetectEntitiesV2Request](x: Self) {
     
-    @scala.inline
-    def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

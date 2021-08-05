@@ -11,19 +11,15 @@ trait ApprovalUrlInfo extends StObject {
 }
 object ApprovalUrlInfo {
   
-  @scala.inline
-  def apply(): ApprovalUrlInfo = {
+  inline def apply(): ApprovalUrlInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApprovalUrlInfo]
   }
   
-  @scala.inline
-  implicit class ApprovalUrlInfoMutableBuilder[Self <: ApprovalUrlInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ApprovalUrlInfo](x: Self) {
     
-    @scala.inline
-    def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
+    inline def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalUrlUndefined: Self = StObject.set(x, "approvalUrl", js.undefined)
+    inline def setApprovalUrlUndefined: Self = StObject.set(x, "approvalUrl", js.undefined)
   }
 }

@@ -20,22 +20,17 @@ trait GeneralIdentifyOptions
 }
 object GeneralIdentifyOptions {
   
-  @scala.inline
-  def apply(image: String): GeneralIdentifyOptions = {
+  inline def apply(image: String): GeneralIdentifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralIdentifyOptions]
   }
   
-  @scala.inline
-  implicit class GeneralIdentifyOptionsMutableBuilder[Self <: GeneralIdentifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeneralIdentifyOptions](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ GeneralIdentifyResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ GeneralIdentifyResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

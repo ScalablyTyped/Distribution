@@ -13,22 +13,17 @@ trait LabelingJobDataAttributes extends StObject {
 }
 object LabelingJobDataAttributes {
   
-  @scala.inline
-  def apply(): LabelingJobDataAttributes = {
+  inline def apply(): LabelingJobDataAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelingJobDataAttributes]
   }
   
-  @scala.inline
-  implicit class LabelingJobDataAttributesMutableBuilder[Self <: LabelingJobDataAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobDataAttributes](x: Self) {
     
-    @scala.inline
-    def setContentClassifiers(value: ContentClassifiers): Self = StObject.set(x, "ContentClassifiers", value.asInstanceOf[js.Any])
+    inline def setContentClassifiers(value: ContentClassifiers): Self = StObject.set(x, "ContentClassifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentClassifiersUndefined: Self = StObject.set(x, "ContentClassifiers", js.undefined)
+    inline def setContentClassifiersUndefined: Self = StObject.set(x, "ContentClassifiers", js.undefined)
     
-    @scala.inline
-    def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value :_*))
+    inline def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value :_*))
   }
 }

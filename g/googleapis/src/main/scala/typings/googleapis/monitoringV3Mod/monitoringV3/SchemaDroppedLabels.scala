@@ -28,19 +28,15 @@ trait SchemaDroppedLabels extends StObject {
 }
 object SchemaDroppedLabels {
   
-  @scala.inline
-  def apply(): SchemaDroppedLabels = {
+  inline def apply(): SchemaDroppedLabels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDroppedLabels]
   }
   
-  @scala.inline
-  implicit class SchemaDroppedLabelsMutableBuilder[Self <: SchemaDroppedLabels] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDroppedLabels](x: Self) {
     
-    @scala.inline
-    def setLabel(value: StringDictionary[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: StringDictionary[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

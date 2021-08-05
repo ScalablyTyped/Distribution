@@ -74,8 +74,7 @@ object signingMod {
     def sign(message: Buffer): String = js.native
   }
   
-  @scala.inline
-  def createContext(algorithmName: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(algorithmName.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def createContext(algorithmName: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(algorithmName.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   type message = String | Buffer | TypedArray | DataView
 }

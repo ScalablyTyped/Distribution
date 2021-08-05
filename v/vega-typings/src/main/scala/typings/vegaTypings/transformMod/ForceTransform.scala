@@ -32,74 +32,52 @@ trait ForceTransform
 }
 object ForceTransform {
   
-  @scala.inline
-  def apply(): ForceTransform = {
+  inline def apply(): ForceTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("force")
     __obj.asInstanceOf[ForceTransform]
   }
   
-  @scala.inline
-  implicit class ForceTransformMutableBuilder[Self <: ForceTransform] (val x: Self) extends AnyVal {
+  extension [Self <: ForceTransform](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double | SignalRef): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double | SignalRef): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaMin(value: Double | SignalRef): Self = StObject.set(x, "alphaMin", value.asInstanceOf[js.Any])
+    inline def setAlphaMin(value: Double | SignalRef): Self = StObject.set(x, "alphaMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaMinUndefined: Self = StObject.set(x, "alphaMin", js.undefined)
+    inline def setAlphaMinUndefined: Self = StObject.set(x, "alphaMin", js.undefined)
     
-    @scala.inline
-    def setAlphaTarget(value: Double | SignalRef): Self = StObject.set(x, "alphaTarget", value.asInstanceOf[js.Any])
+    inline def setAlphaTarget(value: Double | SignalRef): Self = StObject.set(x, "alphaTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaTargetUndefined: Self = StObject.set(x, "alphaTarget", js.undefined)
+    inline def setAlphaTargetUndefined: Self = StObject.set(x, "alphaTarget", js.undefined)
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setForces(value: (js.Array[Force | SignalRef]) | SignalRef): Self = StObject.set(x, "forces", value.asInstanceOf[js.Any])
+    inline def setForces(value: (js.Array[Force | SignalRef]) | SignalRef): Self = StObject.set(x, "forces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForcesUndefined: Self = StObject.set(x, "forces", js.undefined)
+    inline def setForcesUndefined: Self = StObject.set(x, "forces", js.undefined)
     
-    @scala.inline
-    def setForcesVarargs(value: (Force | SignalRef)*): Self = StObject.set(x, "forces", js.Array(value :_*))
+    inline def setForcesVarargs(value: (Force | SignalRef)*): Self = StObject.set(x, "forces", js.Array(value :_*))
     
-    @scala.inline
-    def setIterations(value: Double | SignalRef): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double | SignalRef): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setRestart(value: Boolean | SignalRef): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
+    inline def setRestart(value: Boolean | SignalRef): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartUndefined: Self = StObject.set(x, "restart", js.undefined)
+    inline def setRestartUndefined: Self = StObject.set(x, "restart", js.undefined)
     
-    @scala.inline
-    def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setStatic(value: Boolean | SignalRef): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: Boolean | SignalRef): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
-    @scala.inline
-    def setType(value: force): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: force): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityDecay(value: Double | SignalRef): Self = StObject.set(x, "velocityDecay", value.asInstanceOf[js.Any])
+    inline def setVelocityDecay(value: Double | SignalRef): Self = StObject.set(x, "velocityDecay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityDecayUndefined: Self = StObject.set(x, "velocityDecay", js.undefined)
+    inline def setVelocityDecayUndefined: Self = StObject.set(x, "velocityDecay", js.undefined)
   }
 }

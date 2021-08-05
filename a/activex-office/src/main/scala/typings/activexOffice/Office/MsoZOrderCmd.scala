@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoZOrderCmd extends StObject
 object MsoZOrderCmd {
   
-  @scala.inline
-  def msoBringForward: `2` = 2.asInstanceOf[`2`]
+  inline def msoBringForward: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoBringInFrontOfText: `4` = 4.asInstanceOf[`4`]
+  inline def msoBringInFrontOfText: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoBringToFront: `0` = 0.asInstanceOf[`0`]
+  inline def msoBringToFront: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoSendBackward: `3` = 3.asInstanceOf[`3`]
+  inline def msoSendBackward: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoSendBehindText: `5` = 5.asInstanceOf[`5`]
+  inline def msoSendBehindText: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoSendToBack: `1` = 1.asInstanceOf[`1`]
+  inline def msoSendToBack: `1` = 1.asInstanceOf[`1`]
 }

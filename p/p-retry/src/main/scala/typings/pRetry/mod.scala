@@ -42,10 +42,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T], options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T], options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("p-retry", JSImport.Namespace)
   @js.native
@@ -87,11 +85,9 @@ object mod {
     override val originalError: Error = js.native
   }
   
-  @scala.inline
-  def AbortError_=(x: Instantiable1[/* message */ String | Error, AbortErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortError")(x.asInstanceOf[js.Any])
+  inline def AbortError_=(x: Instantiable1[/* message */ String | Error, AbortErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortError")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pRetry */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pRetry */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait AbortErrorClass
     extends StObject
@@ -104,20 +100,16 @@ object mod {
   }
   object AbortErrorClass {
     
-    @scala.inline
-    def apply(message: String, originalError: Error): AbortErrorClass = {
+    inline def apply(message: String, originalError: Error): AbortErrorClass = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "AbortError", originalError = originalError.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbortErrorClass]
     }
     
-    @scala.inline
-    implicit class AbortErrorClassMutableBuilder[Self <: AbortErrorClass] (val x: Self) extends AnyVal {
+    extension [Self <: AbortErrorClass](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.pRetry.pRetryStrings.AbortError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.pRetry.pRetryStrings.AbortError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+      inline def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,20 +123,16 @@ object mod {
   }
   object FailedAttemptError {
     
-    @scala.inline
-    def apply(attemptNumber: Double, message: String, name: String, retriesLeft: Double): FailedAttemptError = {
+    inline def apply(attemptNumber: Double, message: String, name: String, retriesLeft: Double): FailedAttemptError = {
       val __obj = js.Dynamic.literal(attemptNumber = attemptNumber.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], retriesLeft = retriesLeft.asInstanceOf[js.Any])
       __obj.asInstanceOf[FailedAttemptError]
     }
     
-    @scala.inline
-    implicit class FailedAttemptErrorMutableBuilder[Self <: FailedAttemptError] (val x: Self) extends AnyVal {
+    extension [Self <: FailedAttemptError](x: Self) {
       
-      @scala.inline
-      def setAttemptNumber(value: Double): Self = StObject.set(x, "attemptNumber", value.asInstanceOf[js.Any])
+      inline def setAttemptNumber(value: Double): Self = StObject.set(x, "attemptNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesLeft(value: Double): Self = StObject.set(x, "retriesLeft", value.asInstanceOf[js.Any])
+      inline def setRetriesLeft(value: Double): Self = StObject.set(x, "retriesLeft", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,20 +162,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnFailedAttempt(value: /* error */ FailedAttemptError => Unit | js.Promise[Unit]): Self = StObject.set(x, "onFailedAttempt", js.Any.fromFunction1(value))
+      inline def setOnFailedAttempt(value: /* error */ FailedAttemptError => Unit | js.Promise[Unit]): Self = StObject.set(x, "onFailedAttempt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFailedAttemptUndefined: Self = StObject.set(x, "onFailedAttempt", js.undefined)
+      inline def setOnFailedAttemptUndefined: Self = StObject.set(x, "onFailedAttempt", js.undefined)
     }
   }
 }

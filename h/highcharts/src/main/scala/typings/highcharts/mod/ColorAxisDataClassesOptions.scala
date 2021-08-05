@@ -43,37 +43,27 @@ trait ColorAxisDataClassesOptions extends StObject {
 }
 object ColorAxisDataClassesOptions {
   
-  @scala.inline
-  def apply(): ColorAxisDataClassesOptions = {
+  inline def apply(): ColorAxisDataClassesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorAxisDataClassesOptions]
   }
   
-  @scala.inline
-  implicit class ColorAxisDataClassesOptionsMutableBuilder[Self <: ColorAxisDataClassesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ColorAxisDataClassesOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

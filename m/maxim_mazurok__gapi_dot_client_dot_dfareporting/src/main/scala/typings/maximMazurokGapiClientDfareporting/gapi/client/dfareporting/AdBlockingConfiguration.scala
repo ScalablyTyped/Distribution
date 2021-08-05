@@ -26,37 +26,27 @@ trait AdBlockingConfiguration extends StObject {
 }
 object AdBlockingConfiguration {
   
-  @scala.inline
-  def apply(): AdBlockingConfiguration = {
+  inline def apply(): AdBlockingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdBlockingConfiguration]
   }
   
-  @scala.inline
-  implicit class AdBlockingConfigurationMutableBuilder[Self <: AdBlockingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AdBlockingConfiguration](x: Self) {
     
-    @scala.inline
-    def setClickThroughUrl(value: String): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setClickThroughUrl(value: String): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
+    inline def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setCreativeBundleId(value: String): Self = StObject.set(x, "creativeBundleId", value.asInstanceOf[js.Any])
+    inline def setCreativeBundleId(value: String): Self = StObject.set(x, "creativeBundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeBundleIdUndefined: Self = StObject.set(x, "creativeBundleId", js.undefined)
+    inline def setCreativeBundleIdUndefined: Self = StObject.set(x, "creativeBundleId", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setOverrideClickThroughUrl(value: Boolean): Self = StObject.set(x, "overrideClickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setOverrideClickThroughUrl(value: Boolean): Self = StObject.set(x, "overrideClickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideClickThroughUrlUndefined: Self = StObject.set(x, "overrideClickThroughUrl", js.undefined)
+    inline def setOverrideClickThroughUrlUndefined: Self = StObject.set(x, "overrideClickThroughUrl", js.undefined)
   }
 }

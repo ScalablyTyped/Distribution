@@ -13,19 +13,15 @@ trait BatchGetResourceConfigRequest extends StObject {
 }
 object BatchGetResourceConfigRequest {
   
-  @scala.inline
-  def apply(resourceKeys: ResourceKeys): BatchGetResourceConfigRequest = {
+  inline def apply(resourceKeys: ResourceKeys): BatchGetResourceConfigRequest = {
     val __obj = js.Dynamic.literal(resourceKeys = resourceKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetResourceConfigRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetResourceConfigRequestMutableBuilder[Self <: BatchGetResourceConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetResourceConfigRequest](x: Self) {
     
-    @scala.inline
-    def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "resourceKeys", value.asInstanceOf[js.Any])
+    inline def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "resourceKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "resourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "resourceKeys", js.Array(value :_*))
   }
 }

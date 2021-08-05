@@ -13,19 +13,16 @@ trait FunctorComposition22[F /* <: /* import warning: transforms.QualifyReferenc
 }
 object FunctorComposition22 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
   ): FunctorComposition22[F, G] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
     __obj.asInstanceOf[FunctorComposition22[F, G]]
   }
   
-  @scala.inline
-  implicit class FunctorComposition22MutableBuilder[Self <: FunctorComposition22[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & (FunctorComposition22[F, G])) extends AnyVal {
+  extension [Self <: FunctorComposition22[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & (FunctorComposition22[F, G])) {
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
   }

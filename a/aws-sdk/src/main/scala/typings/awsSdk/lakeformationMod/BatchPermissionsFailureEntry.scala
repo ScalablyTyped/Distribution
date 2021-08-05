@@ -18,25 +18,19 @@ trait BatchPermissionsFailureEntry extends StObject {
 }
 object BatchPermissionsFailureEntry {
   
-  @scala.inline
-  def apply(): BatchPermissionsFailureEntry = {
+  inline def apply(): BatchPermissionsFailureEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchPermissionsFailureEntry]
   }
   
-  @scala.inline
-  implicit class BatchPermissionsFailureEntryMutableBuilder[Self <: BatchPermissionsFailureEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPermissionsFailureEntry](x: Self) {
     
-    @scala.inline
-    def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setRequestEntry(value: BatchPermissionsRequestEntry): Self = StObject.set(x, "RequestEntry", value.asInstanceOf[js.Any])
+    inline def setRequestEntry(value: BatchPermissionsRequestEntry): Self = StObject.set(x, "RequestEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestEntryUndefined: Self = StObject.set(x, "RequestEntry", js.undefined)
+    inline def setRequestEntryUndefined: Self = StObject.set(x, "RequestEntry", js.undefined)
   }
 }

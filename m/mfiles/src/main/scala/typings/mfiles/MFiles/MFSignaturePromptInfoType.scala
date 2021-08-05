@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFSignaturePromptInfoType extends StObject
 object MFSignaturePromptInfoType {
   
-  @scala.inline
-  def Fixed: `0` = 0.asInstanceOf[`0`]
+  inline def Fixed: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def MetadataBased: `2` = 2.asInstanceOf[`2`]
+  inline def MetadataBased: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Selectable: `1` = 1.asInstanceOf[`1`]
+  inline def Selectable: `1` = 1.asInstanceOf[`1`]
 }

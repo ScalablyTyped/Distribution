@@ -28,37 +28,27 @@ trait GoogleActionsV2OptionValueSpec extends StObject {
 }
 object GoogleActionsV2OptionValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OptionValueSpec = {
+  inline def apply(): GoogleActionsV2OptionValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OptionValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OptionValueSpecMutableBuilder[Self <: GoogleActionsV2OptionValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OptionValueSpec](x: Self) {
     
-    @scala.inline
-    def setCarouselSelect(value: GoogleActionsV2UiElementsCarouselSelect): Self = StObject.set(x, "carouselSelect", value.asInstanceOf[js.Any])
+    inline def setCarouselSelect(value: GoogleActionsV2UiElementsCarouselSelect): Self = StObject.set(x, "carouselSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarouselSelectUndefined: Self = StObject.set(x, "carouselSelect", js.undefined)
+    inline def setCarouselSelectUndefined: Self = StObject.set(x, "carouselSelect", js.undefined)
     
-    @scala.inline
-    def setCollectionSelect(value: GoogleActionsV2UiElementsCollectionSelect): Self = StObject.set(x, "collectionSelect", value.asInstanceOf[js.Any])
+    inline def setCollectionSelect(value: GoogleActionsV2UiElementsCollectionSelect): Self = StObject.set(x, "collectionSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionSelectUndefined: Self = StObject.set(x, "collectionSelect", js.undefined)
+    inline def setCollectionSelectUndefined: Self = StObject.set(x, "collectionSelect", js.undefined)
     
-    @scala.inline
-    def setListSelect(value: GoogleActionsV2UiElementsListSelect): Self = StObject.set(x, "listSelect", value.asInstanceOf[js.Any])
+    inline def setListSelect(value: GoogleActionsV2UiElementsListSelect): Self = StObject.set(x, "listSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
+    inline def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
     
-    @scala.inline
-    def setSimpleSelect(value: GoogleActionsV2SimpleSelect): Self = StObject.set(x, "simpleSelect", value.asInstanceOf[js.Any])
+    inline def setSimpleSelect(value: GoogleActionsV2SimpleSelect): Self = StObject.set(x, "simpleSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleSelectUndefined: Self = StObject.set(x, "simpleSelect", js.undefined)
+    inline def setSimpleSelectUndefined: Self = StObject.set(x, "simpleSelect", js.undefined)
   }
 }

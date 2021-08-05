@@ -39,43 +39,31 @@ trait SchemaExtendedValue extends StObject {
 }
 object SchemaExtendedValue {
   
-  @scala.inline
-  def apply(): SchemaExtendedValue = {
+  inline def apply(): SchemaExtendedValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExtendedValue]
   }
   
-  @scala.inline
-  implicit class SchemaExtendedValueMutableBuilder[Self <: SchemaExtendedValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExtendedValue](x: Self) {
     
-    @scala.inline
-    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
-    @scala.inline
-    def setErrorValue(value: SchemaErrorValue): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
+    inline def setErrorValue(value: SchemaErrorValue): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorValueUndefined: Self = StObject.set(x, "errorValue", js.undefined)
+    inline def setErrorValueUndefined: Self = StObject.set(x, "errorValue", js.undefined)
     
-    @scala.inline
-    def setFormulaValue(value: String): Self = StObject.set(x, "formulaValue", value.asInstanceOf[js.Any])
+    inline def setFormulaValue(value: String): Self = StObject.set(x, "formulaValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaValueUndefined: Self = StObject.set(x, "formulaValue", js.undefined)
+    inline def setFormulaValueUndefined: Self = StObject.set(x, "formulaValue", js.undefined)
     
-    @scala.inline
-    def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
+    inline def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
+    inline def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AvailConfiguration extends StObject {
 }
 object AvailConfiguration {
   
-  @scala.inline
-  def apply(): AvailConfiguration = {
+  inline def apply(): AvailConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvailConfiguration]
   }
   
-  @scala.inline
-  implicit class AvailConfigurationMutableBuilder[Self <: AvailConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AvailConfiguration](x: Self) {
     
-    @scala.inline
-    def setAvailSettings(value: AvailSettings): Self = StObject.set(x, "AvailSettings", value.asInstanceOf[js.Any])
+    inline def setAvailSettings(value: AvailSettings): Self = StObject.set(x, "AvailSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailSettingsUndefined: Self = StObject.set(x, "AvailSettings", js.undefined)
+    inline def setAvailSettingsUndefined: Self = StObject.set(x, "AvailSettings", js.undefined)
   }
 }

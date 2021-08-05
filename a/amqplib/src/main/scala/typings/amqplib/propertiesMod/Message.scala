@@ -15,22 +15,17 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(content: Buffer, fields: MessageFields, properties: MessageProperties): Message = {
+  inline def apply(content: Buffer, fields: MessageFields, properties: MessageProperties): Message = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: MessageFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: MessageFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

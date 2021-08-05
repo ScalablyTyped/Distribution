@@ -13,18 +13,13 @@ object reactNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cloneElement(element: ReactNode): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-  @scala.inline
-  def cloneElement(element: ReactNode, props: RenderProps): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def cloneElement(element: ReactNode): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def cloneElement(element: ReactNode, props: RenderProps): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def isValidElement[P](): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")().asInstanceOf[/* is react.react.ReactElement */ Boolean]
-  @scala.inline
-  def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isValidElement[P](): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")().asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def replaceElement(element: ReactNode, replacement: ReactNode, props: RenderProps): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceElement")(element.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def replaceElement(element: ReactNode, replacement: ReactNode, props: RenderProps): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceElement")(element.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   type AnyObject = Record[js.Any, js.Any]
   

@@ -18,8 +18,7 @@ trait ParametersReposReplaceAllTopicsEndpoint extends StObject {
 }
 object ParametersReposReplaceAllTopicsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposReplaceAllTopicsEndpoint,
     request: ReposReplaceAllTopicsRequestOptions,
     response: OctokitResponse[ReposReplaceAllTopicsResponseData]
@@ -28,16 +27,12 @@ object ParametersReposReplaceAllTopicsEndpoint {
     __obj.asInstanceOf[ParametersReposReplaceAllTopicsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposReplaceAllTopicsEndpointMutableBuilder[Self <: ParametersReposReplaceAllTopicsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposReplaceAllTopicsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposReplaceAllTopicsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposReplaceAllTopicsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposReplaceAllTopicsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposReplaceAllTopicsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposReplaceAllTopicsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposReplaceAllTopicsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

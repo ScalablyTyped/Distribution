@@ -20,8 +20,7 @@ trait Trie extends StObject {
 }
 object Trie {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addString: String => Boolean,
     addStrings: js.Array[String] => Unit,
     contains: String => Boolean,
@@ -33,25 +32,18 @@ object Trie {
     __obj.asInstanceOf[Trie]
   }
   
-  @scala.inline
-  implicit class TrieMutableBuilder[Self <: Trie] (val x: Self) extends AnyVal {
+  extension [Self <: Trie](x: Self) {
     
-    @scala.inline
-    def setAddString(value: String => Boolean): Self = StObject.set(x, "addString", js.Any.fromFunction1(value))
+    inline def setAddString(value: String => Boolean): Self = StObject.set(x, "addString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddStrings(value: js.Array[String] => Unit): Self = StObject.set(x, "addStrings", js.Any.fromFunction1(value))
+    inline def setAddStrings(value: js.Array[String] => Unit): Self = StObject.set(x, "addStrings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindMatchesOnPath(value: String => js.Array[String]): Self = StObject.set(x, "findMatchesOnPath", js.Any.fromFunction1(value))
+    inline def setFindMatchesOnPath(value: String => js.Array[String]): Self = StObject.set(x, "findMatchesOnPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindPrefix(value: String => js.Array[String]): Self = StObject.set(x, "findPrefix", js.Any.fromFunction1(value))
+    inline def setFindPrefix(value: String => js.Array[String]): Self = StObject.set(x, "findPrefix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeysWithPrefix(value: String => js.Array[String]): Self = StObject.set(x, "keysWithPrefix", js.Any.fromFunction1(value))
+    inline def setKeysWithPrefix(value: String => js.Array[String]): Self = StObject.set(x, "keysWithPrefix", js.Any.fromFunction1(value))
   }
 }

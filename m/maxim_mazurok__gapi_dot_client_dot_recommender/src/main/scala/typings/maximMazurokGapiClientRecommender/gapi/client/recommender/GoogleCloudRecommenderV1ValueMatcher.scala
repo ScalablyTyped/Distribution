@@ -11,19 +11,15 @@ trait GoogleCloudRecommenderV1ValueMatcher extends StObject {
 }
 object GoogleCloudRecommenderV1ValueMatcher {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1ValueMatcher = {
+  inline def apply(): GoogleCloudRecommenderV1ValueMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1ValueMatcher]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1ValueMatcherMutableBuilder[Self <: GoogleCloudRecommenderV1ValueMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1ValueMatcher](x: Self) {
     
-    @scala.inline
-    def setMatchesPattern(value: String): Self = StObject.set(x, "matchesPattern", value.asInstanceOf[js.Any])
+    inline def setMatchesPattern(value: String): Self = StObject.set(x, "matchesPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesPatternUndefined: Self = StObject.set(x, "matchesPattern", js.undefined)
+    inline def setMatchesPatternUndefined: Self = StObject.set(x, "matchesPattern", js.undefined)
   }
 }

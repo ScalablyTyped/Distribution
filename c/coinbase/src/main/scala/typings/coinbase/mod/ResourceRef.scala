@@ -14,22 +14,17 @@ trait ResourceRef extends StObject {
 }
 object ResourceRef {
   
-  @scala.inline
-  def apply(id: String, resource: ResourceType, resource_path: String): ResourceRef = {
+  inline def apply(id: String, resource: ResourceType, resource_path: String): ResourceRef = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resource_path = resource_path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRef]
   }
   
-  @scala.inline
-  implicit class ResourceRefMutableBuilder[Self <: ResourceRef] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceRef](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: ResourceType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ResourceType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_path(value: String): Self = StObject.set(x, "resource_path", value.asInstanceOf[js.Any])
+    inline def setResource_path(value: String): Self = StObject.set(x, "resource_path", value.asInstanceOf[js.Any])
   }
 }

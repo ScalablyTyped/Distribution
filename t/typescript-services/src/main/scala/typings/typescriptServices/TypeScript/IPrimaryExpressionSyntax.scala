@@ -12,8 +12,7 @@ trait IPrimaryExpressionSyntax
 }
 object IPrimaryExpressionSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -46,10 +45,8 @@ object IPrimaryExpressionSyntax {
     __obj.asInstanceOf[IPrimaryExpressionSyntax]
   }
   
-  @scala.inline
-  implicit class IPrimaryExpressionSyntaxMutableBuilder[Self <: IPrimaryExpressionSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IPrimaryExpressionSyntax](x: Self) {
     
-    @scala.inline
-    def setIsPrimaryExpression(value: () => Boolean): Self = StObject.set(x, "isPrimaryExpression", js.Any.fromFunction0(value))
+    inline def setIsPrimaryExpression(value: () => Boolean): Self = StObject.set(x, "isPrimaryExpression", js.Any.fromFunction0(value))
   }
 }

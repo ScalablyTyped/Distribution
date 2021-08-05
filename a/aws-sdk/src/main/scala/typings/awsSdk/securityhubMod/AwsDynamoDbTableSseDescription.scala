@@ -28,37 +28,27 @@ trait AwsDynamoDbTableSseDescription extends StObject {
 }
 object AwsDynamoDbTableSseDescription {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableSseDescription = {
+  inline def apply(): AwsDynamoDbTableSseDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableSseDescription]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableSseDescriptionMutableBuilder[Self <: AwsDynamoDbTableSseDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableSseDescription](x: Self) {
     
-    @scala.inline
-    def setInaccessibleEncryptionDateTime(value: NonEmptyString): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
+    inline def setInaccessibleEncryptionDateTime(value: NonEmptyString): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInaccessibleEncryptionDateTimeUndefined: Self = StObject.set(x, "InaccessibleEncryptionDateTime", js.undefined)
+    inline def setInaccessibleEncryptionDateTimeUndefined: Self = StObject.set(x, "InaccessibleEncryptionDateTime", js.undefined)
     
-    @scala.inline
-    def setKmsMasterKeyArn(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsMasterKeyArn(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsMasterKeyArnUndefined: Self = StObject.set(x, "KmsMasterKeyArn", js.undefined)
+    inline def setKmsMasterKeyArnUndefined: Self = StObject.set(x, "KmsMasterKeyArn", js.undefined)
     
-    @scala.inline
-    def setSseType(value: NonEmptyString): Self = StObject.set(x, "SseType", value.asInstanceOf[js.Any])
+    inline def setSseType(value: NonEmptyString): Self = StObject.set(x, "SseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseTypeUndefined: Self = StObject.set(x, "SseType", js.undefined)
+    inline def setSseTypeUndefined: Self = StObject.set(x, "SseType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

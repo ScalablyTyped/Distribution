@@ -28,28 +28,21 @@ trait ObjectStore extends StObject {
 }
 object ObjectStore {
   
-  @scala.inline
-  def apply(autoIncrement: Boolean, indexes: js.Array[ObjectStoreIndex], keyPath: KeyPath, name: String): ObjectStore = {
+  inline def apply(autoIncrement: Boolean, indexes: js.Array[ObjectStoreIndex], keyPath: KeyPath, name: String): ObjectStore = {
     val __obj = js.Dynamic.literal(autoIncrement = autoIncrement.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectStore]
   }
   
-  @scala.inline
-  implicit class ObjectStoreMutableBuilder[Self <: ObjectStore] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectStore](x: Self) {
     
-    @scala.inline
-    def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
+    inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexes(value: js.Array[ObjectStoreIndex]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[ObjectStoreIndex]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexesVarargs(value: ObjectStoreIndex*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: ObjectStoreIndex*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+    inline def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

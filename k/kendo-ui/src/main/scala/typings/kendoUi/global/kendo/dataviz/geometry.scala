@@ -39,20 +39,16 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def rotate(angle: Double, x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(angle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
+    inline def rotate(angle: Double, x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(angle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
     
     /* static member */
-    @scala.inline
-    def scale(scaleX: Double, scaleY: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
+    inline def scale(scaleX: Double, scaleY: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
     
     /* static member */
-    @scala.inline
-    def translate(x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
+    inline def translate(x: Double, y: Double): typings.kendoUi.kendo.geometry.Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
     
     /* static member */
-    @scala.inline
-    def unit(): typings.kendoUi.kendo.geometry.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
+    inline def unit(): typings.kendoUi.kendo.geometry.Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")().asInstanceOf[typings.kendoUi.kendo.geometry.Matrix]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Point")
@@ -69,30 +65,23 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(x: js.Any, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def create(x: js.Any, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     /* static member */
-    @scala.inline
-    def create(x: Double, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def create(x: Double, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     /* static member */
-    @scala.inline
-    def create(x: typings.kendoUi.kendo.geometry.Point, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def create(x: typings.kendoUi.kendo.geometry.Point, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     
     /* static member */
-    @scala.inline
-    def max(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def max(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     
     /* static member */
-    @scala.inline
-    def maxPoint(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPoint")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def maxPoint(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPoint")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     
     /* static member */
-    @scala.inline
-    def min(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def min(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     
     /* static member */
-    @scala.inline
-    def minPoint(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("minPoint")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def minPoint(): typings.kendoUi.kendo.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("minPoint")().asInstanceOf[typings.kendoUi.kendo.geometry.Point]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Rect")
@@ -112,12 +101,10 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromPoints(pointA: typings.kendoUi.kendo.geometry.Point, pointB: typings.kendoUi.kendo.geometry.Point): typings.kendoUi.kendo.geometry.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Rect]
+    inline def fromPoints(pointA: typings.kendoUi.kendo.geometry.Point, pointB: typings.kendoUi.kendo.geometry.Point): typings.kendoUi.kendo.geometry.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Rect]
     
     /* static member */
-    @scala.inline
-    def union(rectA: typings.kendoUi.kendo.geometry.Rect, rectB: typings.kendoUi.kendo.geometry.Rect): typings.kendoUi.kendo.geometry.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Rect]
+    inline def union(rectA: typings.kendoUi.kendo.geometry.Rect, rectB: typings.kendoUi.kendo.geometry.Rect): typings.kendoUi.kendo.geometry.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Rect]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Size")
@@ -132,14 +119,11 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(width: js.Any, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
+    inline def create(width: js.Any, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
     /* static member */
-    @scala.inline
-    def create(width: Double, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
+    inline def create(width: Double, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
     /* static member */
-    @scala.inline
-    def create(width: typings.kendoUi.kendo.geometry.Size, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
+    inline def create(width: typings.kendoUi.kendo.geometry.Size, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
   }
   
   @JSGlobal("kendo.dataviz.geometry.Transformation")

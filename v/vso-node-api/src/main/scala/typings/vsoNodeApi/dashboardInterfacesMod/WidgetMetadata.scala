@@ -113,8 +113,7 @@ trait WidgetMetadata extends StObject {
 }
 object WidgetMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedSizes: js.Array[WidgetSize],
     analyticsServiceRequired: Boolean,
     catalogIconUrl: String,
@@ -141,79 +140,54 @@ object WidgetMetadata {
     __obj.asInstanceOf[WidgetMetadata]
   }
   
-  @scala.inline
-  implicit class WidgetMetadataMutableBuilder[Self <: WidgetMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetMetadata](x: Self) {
     
-    @scala.inline
-    def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
+    inline def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value :_*))
+    inline def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setAnalyticsServiceRequired(value: Boolean): Self = StObject.set(x, "analyticsServiceRequired", value.asInstanceOf[js.Any])
+    inline def setAnalyticsServiceRequired(value: Boolean): Self = StObject.set(x, "analyticsServiceRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIconUrl(value: String): Self = StObject.set(x, "catalogIconUrl", value.asInstanceOf[js.Any])
+    inline def setCatalogIconUrl(value: String): Self = StObject.set(x, "catalogIconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogInfoUrl(value: String): Self = StObject.set(x, "catalogInfoUrl", value.asInstanceOf[js.Any])
+    inline def setCatalogInfoUrl(value: String): Self = StObject.set(x, "catalogInfoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationContributionId(value: String): Self = StObject.set(x, "configurationContributionId", value.asInstanceOf[js.Any])
+    inline def setConfigurationContributionId(value: String): Self = StObject.set(x, "configurationContributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationContributionRelativeId(value: String): Self = StObject.set(x, "configurationContributionRelativeId", value.asInstanceOf[js.Any])
+    inline def setConfigurationContributionRelativeId(value: String): Self = StObject.set(x, "configurationContributionRelativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationRequired(value: Boolean): Self = StObject.set(x, "configurationRequired", value.asInstanceOf[js.Any])
+    inline def setConfigurationRequired(value: Boolean): Self = StObject.set(x, "configurationRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
+    inline def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
+    inline def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSettings(value: String): Self = StObject.set(x, "defaultSettings", value.asInstanceOf[js.Any])
+    inline def setDefaultSettings(value: String): Self = StObject.set(x, "defaultSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNameConfigurable(value: Boolean): Self = StObject.set(x, "isNameConfigurable", value.asInstanceOf[js.Any])
+    inline def setIsNameConfigurable(value: Boolean): Self = StObject.set(x, "isNameConfigurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisibleFromCatalog(value: Boolean): Self = StObject.set(x, "isVisibleFromCatalog", value.asInstanceOf[js.Any])
+    inline def setIsVisibleFromCatalog(value: Boolean): Self = StObject.set(x, "isVisibleFromCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightboxOptions(value: LightboxOptions): Self = StObject.set(x, "lightboxOptions", value.asInstanceOf[js.Any])
+    inline def setLightboxOptions(value: LightboxOptions): Self = StObject.set(x, "lightboxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingImageUrl(value: String): Self = StObject.set(x, "loadingImageUrl", value.asInstanceOf[js.Any])
+    inline def setLoadingImageUrl(value: String): Self = StObject.set(x, "loadingImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedScopes(value: js.Array[WidgetScope]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
+    inline def setSupportedScopes(value: js.Array[WidgetScope]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedScopesVarargs(value: WidgetScope*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
+    inline def setSupportedScopesVarargs(value: WidgetScope*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
     
-    @scala.inline
-    def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
-    @scala.inline
-    def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
+    inline def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
   }
 }

@@ -31,8 +31,7 @@ object configProviderContextMod {
   @js.native
   val ConfigContext: Context[ConfigConsumerProps] = js.native
   
-  @scala.inline
-  def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfigConsumer")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any]]
+  inline def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfigConsumer")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ IReactComponent[js.Any], FC[ExportProps] & js.Any]]
   
   trait BasicExportProps extends StObject {
     
@@ -40,20 +39,16 @@ object configProviderContextMod {
   }
   object BasicExportProps {
     
-    @scala.inline
-    def apply(): BasicExportProps = {
+    inline def apply(): BasicExportProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasicExportProps]
     }
     
-    @scala.inline
-    implicit class BasicExportPropsMutableBuilder[Self <: BasicExportProps] (val x: Self) extends AnyVal {
+    extension [Self <: BasicExportProps](x: Self) {
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
   
@@ -63,20 +58,16 @@ object configProviderContextMod {
   }
   object CSPConfig {
     
-    @scala.inline
-    def apply(): CSPConfig = {
+    inline def apply(): CSPConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSPConfig]
     }
     
-    @scala.inline
-    implicit class CSPConfigMutableBuilder[Self <: CSPConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CSPConfig](x: Self) {
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     }
   }
   
@@ -123,17 +114,14 @@ object configProviderContextMod {
   }
   object ConsumerConfig {
     
-    @scala.inline
-    def apply(prefixCls: String): ConsumerConfig = {
+    inline def apply(prefixCls: String): ConsumerConfig = {
       val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConsumerConfig]
     }
     
-    @scala.inline
-    implicit class ConsumerConfigMutableBuilder[Self <: ConsumerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ConsumerConfig](x: Self) {
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
   }
   

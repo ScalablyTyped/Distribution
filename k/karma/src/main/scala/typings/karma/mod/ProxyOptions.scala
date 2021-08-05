@@ -17,22 +17,17 @@ trait ProxyOptions extends StObject {
 }
 object ProxyOptions {
   
-  @scala.inline
-  def apply(target: String): ProxyOptions = {
+  inline def apply(target: String): ProxyOptions = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyOptions]
   }
   
-  @scala.inline
-  implicit class ProxyOptionsMutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyOptions](x: Self) {
     
-    @scala.inline
-    def setChangeOrigin(value: Boolean): Self = StObject.set(x, "changeOrigin", value.asInstanceOf[js.Any])
+    inline def setChangeOrigin(value: Boolean): Self = StObject.set(x, "changeOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeOriginUndefined: Self = StObject.set(x, "changeOrigin", js.undefined)
+    inline def setChangeOriginUndefined: Self = StObject.set(x, "changeOrigin", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -19,37 +19,27 @@ trait ConcurrencyValues
 }
 object ConcurrencyValues {
   
-  @scala.inline
-  def apply(): ConcurrencyValues = {
+  inline def apply(): ConcurrencyValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConcurrencyValues]
   }
   
-  @scala.inline
-  implicit class ConcurrencyValuesMutableBuilder[Self <: ConcurrencyValues] (val x: Self) extends AnyVal {
+  extension [Self <: ConcurrencyValues](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMac_vms(value: Double): Self = StObject.set(x, "mac_vms", value.asInstanceOf[js.Any])
+    inline def setMac_vms(value: Double): Self = StObject.set(x, "mac_vms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMac_vmsUndefined: Self = StObject.set(x, "mac_vms", js.undefined)
+    inline def setMac_vmsUndefined: Self = StObject.set(x, "mac_vms", js.undefined)
     
-    @scala.inline
-    def setRds(value: Double): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
+    inline def setRds(value: Double): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
+    inline def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
     
-    @scala.inline
-    def setVms(value: Double): Self = StObject.set(x, "vms", value.asInstanceOf[js.Any])
+    inline def setVms(value: Double): Self = StObject.set(x, "vms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmsUndefined: Self = StObject.set(x, "vms", js.undefined)
+    inline def setVmsUndefined: Self = StObject.set(x, "vms", js.undefined)
   }
 }

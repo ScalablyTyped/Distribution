@@ -22,7 +22,7 @@ object priorityQueueMod {
     extends StObject
        with Queue[RunFunction, PriorityQueueOptions] {
     
-    val _queue: js.Any = js.native
+    /* private */ val _queue: js.Any = js.native
     
     def enqueue(run: RunFunction, options: PartialPriorityQueueOptio): Unit = js.native
     
@@ -40,20 +40,16 @@ object priorityQueueMod {
   }
   object PriorityQueueOptions {
     
-    @scala.inline
-    def apply(): PriorityQueueOptions = {
+    inline def apply(): PriorityQueueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PriorityQueueOptions]
     }
     
-    @scala.inline
-    implicit class PriorityQueueOptionsMutableBuilder[Self <: PriorityQueueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PriorityQueueOptions](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
 }

@@ -22,8 +22,7 @@ trait AccessibleContext
      with XAccessibleEventBroadcaster
 object AccessibleContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

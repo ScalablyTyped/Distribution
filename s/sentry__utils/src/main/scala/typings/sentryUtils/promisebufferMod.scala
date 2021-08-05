@@ -12,9 +12,9 @@ object promisebufferMod {
     def this(_limit: Double) = this()
     
     /** Internal set of queued Promises */
-    val _buffer: js.Any = js.native
+    /* private */ val _buffer: js.Any = js.native
     
-    var _limit: js.UndefOr[Double] = js.native
+    /* protected */ var _limit: js.UndefOr[Double] = js.native
     
     /**
       * Add a promise to the queue.

@@ -95,21 +95,16 @@ object keyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Key]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Key]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: KeyState): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Key]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: KeyState, opts: CustomResourceOptions): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Key]
+    inline def get(name: String, id: Input[ID]): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Key]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Key]
+    inline def get(name: String, id: Input[ID], state: KeyState): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Key]
+    inline def get(name: String, id: Input[ID], state: KeyState, opts: CustomResourceOptions): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Key]
     
     /**
       * Returns true if the given object is an instance of Key.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/key.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/key.Key */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/key.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/key.Key */ Boolean]
   }
   
   trait KeyArgs extends StObject {
@@ -158,62 +153,44 @@ object keyMod {
   }
   object KeyArgs {
     
-    @scala.inline
-    def apply(): KeyArgs = {
+    inline def apply(): KeyArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyArgs]
     }
     
-    @scala.inline
-    implicit class KeyArgsMutableBuilder[Self <: KeyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: KeyArgs](x: Self) {
       
-      @scala.inline
-      def setCustomerMasterKeySpec(value: Input[String]): Self = StObject.set(x, "customerMasterKeySpec", value.asInstanceOf[js.Any])
+      inline def setCustomerMasterKeySpec(value: Input[String]): Self = StObject.set(x, "customerMasterKeySpec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerMasterKeySpecUndefined: Self = StObject.set(x, "customerMasterKeySpec", js.undefined)
+      inline def setCustomerMasterKeySpecUndefined: Self = StObject.set(x, "customerMasterKeySpec", js.undefined)
       
-      @scala.inline
-      def setDeletionWindowInDays(value: Input[Double]): Self = StObject.set(x, "deletionWindowInDays", value.asInstanceOf[js.Any])
+      inline def setDeletionWindowInDays(value: Input[Double]): Self = StObject.set(x, "deletionWindowInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionWindowInDaysUndefined: Self = StObject.set(x, "deletionWindowInDays", js.undefined)
+      inline def setDeletionWindowInDaysUndefined: Self = StObject.set(x, "deletionWindowInDays", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnableKeyRotation(value: Input[Boolean]): Self = StObject.set(x, "enableKeyRotation", value.asInstanceOf[js.Any])
+      inline def setEnableKeyRotation(value: Input[Boolean]): Self = StObject.set(x, "enableKeyRotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableKeyRotationUndefined: Self = StObject.set(x, "enableKeyRotation", js.undefined)
+      inline def setEnableKeyRotationUndefined: Self = StObject.set(x, "enableKeyRotation", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setKeyUsage(value: Input[String]): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
+      inline def setKeyUsage(value: Input[String]): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
+      inline def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -273,74 +250,52 @@ object keyMod {
   }
   object KeyState {
     
-    @scala.inline
-    def apply(): KeyState = {
+    inline def apply(): KeyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyState]
     }
     
-    @scala.inline
-    implicit class KeyStateMutableBuilder[Self <: KeyState] (val x: Self) extends AnyVal {
+    extension [Self <: KeyState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCustomerMasterKeySpec(value: Input[String]): Self = StObject.set(x, "customerMasterKeySpec", value.asInstanceOf[js.Any])
+      inline def setCustomerMasterKeySpec(value: Input[String]): Self = StObject.set(x, "customerMasterKeySpec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerMasterKeySpecUndefined: Self = StObject.set(x, "customerMasterKeySpec", js.undefined)
+      inline def setCustomerMasterKeySpecUndefined: Self = StObject.set(x, "customerMasterKeySpec", js.undefined)
       
-      @scala.inline
-      def setDeletionWindowInDays(value: Input[Double]): Self = StObject.set(x, "deletionWindowInDays", value.asInstanceOf[js.Any])
+      inline def setDeletionWindowInDays(value: Input[Double]): Self = StObject.set(x, "deletionWindowInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionWindowInDaysUndefined: Self = StObject.set(x, "deletionWindowInDays", js.undefined)
+      inline def setDeletionWindowInDaysUndefined: Self = StObject.set(x, "deletionWindowInDays", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnableKeyRotation(value: Input[Boolean]): Self = StObject.set(x, "enableKeyRotation", value.asInstanceOf[js.Any])
+      inline def setEnableKeyRotation(value: Input[Boolean]): Self = StObject.set(x, "enableKeyRotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableKeyRotationUndefined: Self = StObject.set(x, "enableKeyRotation", js.undefined)
+      inline def setEnableKeyRotationUndefined: Self = StObject.set(x, "enableKeyRotation", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
       
-      @scala.inline
-      def setKeyUsage(value: Input[String]): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
+      inline def setKeyUsage(value: Input[String]): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
+      inline def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

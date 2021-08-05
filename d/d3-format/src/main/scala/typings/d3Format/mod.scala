@@ -135,29 +135,21 @@ object mod {
     var zero: Boolean = js.native
   }
   
-  @scala.inline
-  def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
+  inline def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
   
-  @scala.inline
-  def formatDefaultLocale(defaultLocale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDefaultLocale")(defaultLocale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
+  inline def formatDefaultLocale(defaultLocale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDefaultLocale")(defaultLocale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
   
-  @scala.inline
-  def formatLocale(locale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
+  inline def formatLocale(locale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
   
-  @scala.inline
-  def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPrefix")(specifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
+  inline def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPrefix")(specifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
   
-  @scala.inline
-  def formatSpecifier(specifier: String): FormatSpecifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSpecifier")(specifier.asInstanceOf[js.Any]).asInstanceOf[FormatSpecifier_]
+  inline def formatSpecifier(specifier: String): FormatSpecifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSpecifier")(specifier.asInstanceOf[js.Any]).asInstanceOf[FormatSpecifier_]
   
-  @scala.inline
-  def precisionFixed(step: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("precisionFixed")(step.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def precisionFixed(step: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("precisionFixed")(step.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def precisionPrefix(step: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionPrefix")(step.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def precisionPrefix(step: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionPrefix")(step.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def precisionRound(step: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(step.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def precisionRound(step: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(step.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait FormatLocaleDefinition extends StObject {
     
@@ -204,8 +196,7 @@ object mod {
   }
   object FormatLocaleDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currency: js.Tuple2[String, String],
       decimal: String,
       grouping: js.Array[Double],
@@ -215,50 +206,35 @@ object mod {
       __obj.asInstanceOf[FormatLocaleDefinition]
     }
     
-    @scala.inline
-    implicit class FormatLocaleDefinitionMutableBuilder[Self <: FormatLocaleDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: FormatLocaleDefinition](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: js.Tuple2[String, String]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: js.Tuple2[String, String]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+      inline def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+      inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
       
-      @scala.inline
-      def setMinus(value: String): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
+      inline def setMinus(value: String): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinusUndefined: Self = StObject.set(x, "minus", js.undefined)
+      inline def setMinusUndefined: Self = StObject.set(x, "minus", js.undefined)
       
-      @scala.inline
-      def setNan(value: String): Self = StObject.set(x, "nan", value.asInstanceOf[js.Any])
+      inline def setNan(value: String): Self = StObject.set(x, "nan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanUndefined: Self = StObject.set(x, "nan", js.undefined)
+      inline def setNanUndefined: Self = StObject.set(x, "nan", js.undefined)
       
-      @scala.inline
-      def setNumerals(value: js.Array[String]): Self = StObject.set(x, "numerals", value.asInstanceOf[js.Any])
+      inline def setNumerals(value: js.Array[String]): Self = StObject.set(x, "numerals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
+      inline def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
       
-      @scala.inline
-      def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value :_*))
+      inline def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value :_*))
       
-      @scala.inline
-      def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      @scala.inline
-      def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
+      inline def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,8 +263,7 @@ object mod {
   }
   object FormatLocaleObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       format: String => js.Function1[/* n */ Double | ValueOf, String],
       formatPrefix: (String, Double) => js.Function1[/* n */ Double | ValueOf, String]
     ): FormatLocaleObject = {
@@ -296,14 +271,11 @@ object mod {
       __obj.asInstanceOf[FormatLocaleObject]
     }
     
-    @scala.inline
-    implicit class FormatLocaleObjectMutableBuilder[Self <: FormatLocaleObject] (val x: Self) extends AnyVal {
+    extension [Self <: FormatLocaleObject](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String => js.Function1[/* n */ Double | ValueOf, String]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: String => js.Function1[/* n */ Double | ValueOf, String]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatPrefix(value: (String, Double) => js.Function1[/* n */ Double | ValueOf, String]): Self = StObject.set(x, "formatPrefix", js.Any.fromFunction2(value))
+      inline def setFormatPrefix(value: (String, Double) => js.Function1[/* n */ Double | ValueOf, String]): Self = StObject.set(x, "formatPrefix", js.Any.fromFunction2(value))
     }
   }
   
@@ -401,74 +373,52 @@ object mod {
   }
   object FormatSpecifierObject {
     
-    @scala.inline
-    def apply(): FormatSpecifierObject = {
+    inline def apply(): FormatSpecifierObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatSpecifierObject]
     }
     
-    @scala.inline
-    implicit class FormatSpecifierObjectMutableBuilder[Self <: FormatSpecifierObject] (val x: Self) extends AnyVal {
+    extension [Self <: FormatSpecifierObject](x: Self) {
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setComma(value: String): Self = StObject.set(x, "comma", value.asInstanceOf[js.Any])
+      inline def setComma(value: String): Self = StObject.set(x, "comma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommaUndefined: Self = StObject.set(x, "comma", js.undefined)
+      inline def setCommaUndefined: Self = StObject.set(x, "comma", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setSign(value: String): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+      inline def setSign(value: String): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
+      inline def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setTrim(value: String): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: String): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZero(value: String): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: String): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+      inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
 }

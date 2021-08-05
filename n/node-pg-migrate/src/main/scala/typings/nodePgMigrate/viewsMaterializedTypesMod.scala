@@ -27,35 +27,26 @@ object viewsMaterializedTypesMod {
   }
   object AlterMaterializedViewOptions {
     
-    @scala.inline
-    def apply(): AlterMaterializedViewOptions = {
+    inline def apply(): AlterMaterializedViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlterMaterializedViewOptions]
     }
     
-    @scala.inline
-    implicit class AlterMaterializedViewOptionsMutableBuilder[Self <: AlterMaterializedViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlterMaterializedViewOptions](x: Self) {
       
-      @scala.inline
-      def setCluster(value: `false` | String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      inline def setCluster(value: `false` | String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterNull: Self = StObject.set(x, "cluster", null)
+      inline def setClusterNull: Self = StObject.set(x, "cluster", null)
       
-      @scala.inline
-      def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+      inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setStorageParameters(value: js.Object): Self = StObject.set(x, "storageParameters", value.asInstanceOf[js.Any])
+      inline def setStorageParameters(value: js.Object): Self = StObject.set(x, "storageParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageParametersUndefined: Self = StObject.set(x, "storageParameters", js.undefined)
+      inline def setStorageParametersUndefined: Self = StObject.set(x, "storageParameters", js.undefined)
     }
   }
   
@@ -88,41 +79,30 @@ object viewsMaterializedTypesMod {
   }
   object CreateMaterializedViewOptions {
     
-    @scala.inline
-    def apply(): CreateMaterializedViewOptions = {
+    inline def apply(): CreateMaterializedViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateMaterializedViewOptions]
     }
     
-    @scala.inline
-    implicit class CreateMaterializedViewOptionsMutableBuilder[Self <: CreateMaterializedViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateMaterializedViewOptions](x: Self) {
       
-      @scala.inline
-      def setColumns(value: String | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: String | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setStorageParameters(value: StorageParameters): Self = StObject.set(x, "storageParameters", value.asInstanceOf[js.Any])
+      inline def setStorageParameters(value: StorageParameters): Self = StObject.set(x, "storageParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageParametersUndefined: Self = StObject.set(x, "storageParameters", js.undefined)
+      inline def setStorageParametersUndefined: Self = StObject.set(x, "storageParameters", js.undefined)
       
-      @scala.inline
-      def setTablespace(value: String): Self = StObject.set(x, "tablespace", value.asInstanceOf[js.Any])
+      inline def setTablespace(value: String): Self = StObject.set(x, "tablespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablespaceUndefined: Self = StObject.set(x, "tablespace", js.undefined)
+      inline def setTablespaceUndefined: Self = StObject.set(x, "tablespace", js.undefined)
     }
   }
   
@@ -155,26 +135,20 @@ object viewsMaterializedTypesMod {
   }
   object RefreshMaterializedViewOptions {
     
-    @scala.inline
-    def apply(): RefreshMaterializedViewOptions = {
+    inline def apply(): RefreshMaterializedViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshMaterializedViewOptions]
     }
     
-    @scala.inline
-    implicit class RefreshMaterializedViewOptionsMutableBuilder[Self <: RefreshMaterializedViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshMaterializedViewOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
+      inline def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentlyUndefined: Self = StObject.set(x, "concurrently", js.undefined)
+      inline def setConcurrentlyUndefined: Self = StObject.set(x, "concurrently", js.undefined)
       
-      @scala.inline
-      def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
   }
   

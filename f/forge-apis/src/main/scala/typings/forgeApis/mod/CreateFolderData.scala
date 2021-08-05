@@ -14,29 +14,22 @@ trait CreateFolderData extends StObject {
 }
 object CreateFolderData {
   
-  @scala.inline
-  def apply(`type`: String): CreateFolderData = {
+  inline def apply(`type`: String): CreateFolderData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFolderData]
   }
   
-  @scala.inline
-  implicit class CreateFolderDataMutableBuilder[Self <: CreateFolderData] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFolderData](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: CreateFolderDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: CreateFolderDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setRelationships(value: CreateFolderDataRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: CreateFolderDataRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
+    inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

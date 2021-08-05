@@ -28,8 +28,7 @@ trait LoggingConfigurationLoggingConfigurationLogDestinationConfig extends StObj
 }
 object LoggingConfigurationLoggingConfigurationLogDestinationConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     logDestination: Input[StringDictionary[Input[String]]],
     logDestinationType: Input[String],
     logType: Input[String]
@@ -38,16 +37,12 @@ object LoggingConfigurationLoggingConfigurationLogDestinationConfig {
     __obj.asInstanceOf[LoggingConfigurationLoggingConfigurationLogDestinationConfig]
   }
   
-  @scala.inline
-  implicit class LoggingConfigurationLoggingConfigurationLogDestinationConfigMutableBuilder[Self <: LoggingConfigurationLoggingConfigurationLogDestinationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingConfigurationLoggingConfigurationLogDestinationConfig](x: Self) {
     
-    @scala.inline
-    def setLogDestination(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
+    inline def setLogDestination(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDestinationType(value: Input[String]): Self = StObject.set(x, "logDestinationType", value.asInstanceOf[js.Any])
+    inline def setLogDestinationType(value: Input[String]): Self = StObject.set(x, "logDestinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
+    inline def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait RollupOptions
 }
 object RollupOptions {
   
-  @scala.inline
-  def apply(): RollupOptions = {
+  inline def apply(): RollupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RollupOptions]
   }
   
-  @scala.inline
-  implicit class RollupOptionsMutableBuilder[Self <: RollupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RollupOptions](x: Self) {
     
-    @scala.inline
-    def setOutput(value: OutputOptions | js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: OutputOptions | js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value :_*))
   }
 }

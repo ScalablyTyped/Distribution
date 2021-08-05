@@ -17,34 +17,25 @@ trait GetReportsResponse extends StObject {
 }
 object GetReportsResponse {
   
-  @scala.inline
-  def apply(): GetReportsResponse = {
+  inline def apply(): GetReportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReportsResponse]
   }
   
-  @scala.inline
-  implicit class GetReportsResponseMutableBuilder[Self <: GetReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetReportsResponse](x: Self) {
     
-    @scala.inline
-    def setQueryCost(value: Double): Self = StObject.set(x, "queryCost", value.asInstanceOf[js.Any])
+    inline def setQueryCost(value: Double): Self = StObject.set(x, "queryCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryCostUndefined: Self = StObject.set(x, "queryCost", js.undefined)
+    inline def setQueryCostUndefined: Self = StObject.set(x, "queryCost", js.undefined)
     
-    @scala.inline
-    def setReports(value: js.Array[Report]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+    inline def setReports(value: js.Array[Report]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
+    inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    @scala.inline
-    def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceQuotasRemaining(value: ResourceQuotasRemaining): Self = StObject.set(x, "resourceQuotasRemaining", value.asInstanceOf[js.Any])
+    inline def setResourceQuotasRemaining(value: ResourceQuotasRemaining): Self = StObject.set(x, "resourceQuotasRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceQuotasRemainingUndefined: Self = StObject.set(x, "resourceQuotasRemaining", js.undefined)
+    inline def setResourceQuotasRemainingUndefined: Self = StObject.set(x, "resourceQuotasRemaining", js.undefined)
   }
 }

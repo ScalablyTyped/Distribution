@@ -18,19 +18,15 @@ trait VirtualNodeSpecListenerTimeoutGrpcPerRequest extends StObject {
 }
 object VirtualNodeSpecListenerTimeoutGrpcPerRequest {
   
-  @scala.inline
-  def apply(unit: String, value: Double): VirtualNodeSpecListenerTimeoutGrpcPerRequest = {
+  inline def apply(unit: String, value: Double): VirtualNodeSpecListenerTimeoutGrpcPerRequest = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecListenerTimeoutGrpcPerRequest]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerTimeoutGrpcPerRequestMutableBuilder[Self <: VirtualNodeSpecListenerTimeoutGrpcPerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListenerTimeoutGrpcPerRequest](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

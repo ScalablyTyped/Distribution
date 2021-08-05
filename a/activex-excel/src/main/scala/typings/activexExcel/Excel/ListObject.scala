@@ -32,7 +32,7 @@ trait ListObject extends StObject {
   
   val DisplayRightToLeft: Boolean = js.native
   
-  @JSName("Excel.ListObject_typekey")
+  /* private */ @JSName("Excel.ListObject_typekey")
   var ExcelDotListObject_typekey: ListObject = js.native
   
   def ExportToVisio(): Unit = js.native

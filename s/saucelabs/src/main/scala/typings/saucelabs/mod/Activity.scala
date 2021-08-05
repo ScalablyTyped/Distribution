@@ -19,8 +19,7 @@ trait Activity
 }
 object Activity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ccy_exec_peak: js.Array[Double],
     datestamp: js.Array[String],
     jobs: js.Array[Double],
@@ -30,31 +29,22 @@ object Activity {
     __obj.asInstanceOf[Activity]
   }
   
-  @scala.inline
-  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+  extension [Self <: Activity](x: Self) {
     
-    @scala.inline
-    def setCcy_exec_peak(value: js.Array[Double]): Self = StObject.set(x, "ccy_exec_peak", value.asInstanceOf[js.Any])
+    inline def setCcy_exec_peak(value: js.Array[Double]): Self = StObject.set(x, "ccy_exec_peak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcy_exec_peakVarargs(value: Double*): Self = StObject.set(x, "ccy_exec_peak", js.Array(value :_*))
+    inline def setCcy_exec_peakVarargs(value: Double*): Self = StObject.set(x, "ccy_exec_peak", js.Array(value :_*))
     
-    @scala.inline
-    def setDatestamp(value: js.Array[String]): Self = StObject.set(x, "datestamp", value.asInstanceOf[js.Any])
+    inline def setDatestamp(value: js.Array[String]): Self = StObject.set(x, "datestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatestampVarargs(value: String*): Self = StObject.set(x, "datestamp", js.Array(value :_*))
+    inline def setDatestampVarargs(value: String*): Self = StObject.set(x, "datestamp", js.Array(value :_*))
     
-    @scala.inline
-    def setJobs(value: js.Array[Double]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: js.Array[Double]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsVarargs(value: Double*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Double*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
-    @scala.inline
-    def setMinutes(value: js.Array[Double]): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: js.Array[Double]): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutesVarargs(value: Double*): Self = StObject.set(x, "minutes", js.Array(value :_*))
+    inline def setMinutesVarargs(value: Double*): Self = StObject.set(x, "minutes", js.Array(value :_*))
   }
 }

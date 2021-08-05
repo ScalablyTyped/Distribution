@@ -34,8 +34,7 @@ trait ContinuousIntegrationTrigger
 }
 object ContinuousIntegrationTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batchChanges: Boolean,
     branchFilters: js.Array[String],
     maxConcurrentBuildsPerBranch: Double,
@@ -48,31 +47,22 @@ object ContinuousIntegrationTrigger {
     __obj.asInstanceOf[ContinuousIntegrationTrigger]
   }
   
-  @scala.inline
-  implicit class ContinuousIntegrationTriggerMutableBuilder[Self <: ContinuousIntegrationTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousIntegrationTrigger](x: Self) {
     
-    @scala.inline
-    def setBatchChanges(value: Boolean): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
+    inline def setBatchChanges(value: Boolean): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
+    inline def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
+    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxConcurrentBuildsPerBranch(value: Double): Self = StObject.set(x, "maxConcurrentBuildsPerBranch", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentBuildsPerBranch(value: Double): Self = StObject.set(x, "maxConcurrentBuildsPerBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
+    inline def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
+    inline def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingJobId(value: String): Self = StObject.set(x, "pollingJobId", value.asInstanceOf[js.Any])
+    inline def setPollingJobId(value: String): Self = StObject.set(x, "pollingJobId", value.asInstanceOf[js.Any])
   }
 }

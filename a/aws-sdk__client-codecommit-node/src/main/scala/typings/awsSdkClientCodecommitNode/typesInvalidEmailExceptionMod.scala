@@ -18,17 +18,14 @@ object typesInvalidEmailExceptionMod {
   }
   object InvalidEmailException {
     
-    @scala.inline
-    def apply(): InvalidEmailException = {
+    inline def apply(): InvalidEmailException = {
       val __obj = js.Dynamic.literal(name = "InvalidEmailException")
       __obj.asInstanceOf[InvalidEmailException]
     }
     
-    @scala.inline
-    implicit class InvalidEmailExceptionMutableBuilder[Self <: InvalidEmailException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidEmailException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidEmailException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidEmailException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

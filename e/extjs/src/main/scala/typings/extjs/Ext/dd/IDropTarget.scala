@@ -82,69 +82,51 @@ trait IDropTarget
 }
 object IDropTarget {
   
-  @scala.inline
-  def apply(): IDropTarget = {
+  inline def apply(): IDropTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDropTarget]
   }
   
-  @scala.inline
-  implicit class IDropTargetMutableBuilder[Self <: IDropTarget] (val x: Self) extends AnyVal {
+  extension [Self <: IDropTarget](x: Self) {
     
-    @scala.inline
-    def setDdGroup(value: String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
+    inline def setDdGroup(value: String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
+    inline def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
     
-    @scala.inline
-    def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
+    inline def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropAllowedUndefined: Self = StObject.set(x, "dropAllowed", js.undefined)
+    inline def setDropAllowedUndefined: Self = StObject.set(x, "dropAllowed", js.undefined)
     
-    @scala.inline
-    def setDropNotAllowed(value: String): Self = StObject.set(x, "dropNotAllowed", value.asInstanceOf[js.Any])
+    inline def setDropNotAllowed(value: String): Self = StObject.set(x, "dropNotAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
+    inline def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
     
-    @scala.inline
-    def setNotifyDrop(
+    inline def setNotifyDrop(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
     ): Self = StObject.set(x, "notifyDrop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNotifyDropUndefined: Self = StObject.set(x, "notifyDrop", js.undefined)
+    inline def setNotifyDropUndefined: Self = StObject.set(x, "notifyDrop", js.undefined)
     
-    @scala.inline
-    def setNotifyEnter(
+    inline def setNotifyEnter(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
     ): Self = StObject.set(x, "notifyEnter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNotifyEnterUndefined: Self = StObject.set(x, "notifyEnter", js.undefined)
+    inline def setNotifyEnterUndefined: Self = StObject.set(x, "notifyEnter", js.undefined)
     
-    @scala.inline
-    def setNotifyOut(
+    inline def setNotifyOut(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "notifyOut", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNotifyOutUndefined: Self = StObject.set(x, "notifyOut", js.undefined)
+    inline def setNotifyOutUndefined: Self = StObject.set(x, "notifyOut", js.undefined)
     
-    @scala.inline
-    def setNotifyOver(
+    inline def setNotifyOver(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
     ): Self = StObject.set(x, "notifyOver", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNotifyOverUndefined: Self = StObject.set(x, "notifyOver", js.undefined)
+    inline def setNotifyOverUndefined: Self = StObject.set(x, "notifyOver", js.undefined)
     
-    @scala.inline
-    def setOverClass(value: String): Self = StObject.set(x, "overClass", value.asInstanceOf[js.Any])
+    inline def setOverClass(value: String): Self = StObject.set(x, "overClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverClassUndefined: Self = StObject.set(x, "overClass", js.undefined)
+    inline def setOverClassUndefined: Self = StObject.set(x, "overClass", js.undefined)
   }
 }

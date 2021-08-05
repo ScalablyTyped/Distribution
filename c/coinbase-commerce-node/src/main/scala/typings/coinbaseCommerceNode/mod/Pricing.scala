@@ -15,16 +15,13 @@ trait Pricing
 }
 object Pricing {
   
-  @scala.inline
-  def apply(local: Price[FiatCurrency]): Pricing = {
+  inline def apply(local: Price[FiatCurrency]): Pricing = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pricing]
   }
   
-  @scala.inline
-  implicit class PricingMutableBuilder[Self <: Pricing] (val x: Self) extends AnyVal {
+  extension [Self <: Pricing](x: Self) {
     
-    @scala.inline
-    def setLocal(value: Price[FiatCurrency]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Price[FiatCurrency]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
   }
 }

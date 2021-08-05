@@ -37,8 +37,7 @@ trait workersOpenOptions
 }
 object workersOpenOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -47,25 +46,18 @@ object workersOpenOptions {
     __obj.asInstanceOf[workersOpenOptions]
   }
   
-  @scala.inline
-  implicit class workersOpenOptionsMutableBuilder[Self <: workersOpenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: workersOpenOptions](x: Self) {
     
-    @scala.inline
-    def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setStrategy(value: distributed | dedicated | local): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: distributed | dedicated | local): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait CreateScopeInfo extends StObject {
 }
 object CreateScopeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adminGroupDescription: String,
     adminGroupName: String,
     creatorId: String,
@@ -33,25 +32,18 @@ object CreateScopeInfo {
     __obj.asInstanceOf[CreateScopeInfo]
   }
   
-  @scala.inline
-  implicit class CreateScopeInfoMutableBuilder[Self <: CreateScopeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScopeInfo](x: Self) {
     
-    @scala.inline
-    def setAdminGroupDescription(value: String): Self = StObject.set(x, "adminGroupDescription", value.asInstanceOf[js.Any])
+    inline def setAdminGroupDescription(value: String): Self = StObject.set(x, "adminGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminGroupName(value: String): Self = StObject.set(x, "adminGroupName", value.asInstanceOf[js.Any])
+    inline def setAdminGroupName(value: String): Self = StObject.set(x, "adminGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorId(value: String): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
+    inline def setCreatorId(value: String): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentScopeId(value: String): Self = StObject.set(x, "parentScopeId", value.asInstanceOf[js.Any])
+    inline def setParentScopeId(value: String): Self = StObject.set(x, "parentScopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
+    inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeType(value: GroupScopeType): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
+    inline def setScopeType(value: GroupScopeType): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
   }
 }

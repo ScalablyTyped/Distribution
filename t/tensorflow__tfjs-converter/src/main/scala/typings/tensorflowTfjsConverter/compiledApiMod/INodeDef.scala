@@ -24,61 +24,43 @@ trait INodeDef extends StObject {
 }
 object INodeDef {
   
-  @scala.inline
-  def apply(): INodeDef = {
+  inline def apply(): INodeDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INodeDef]
   }
   
-  @scala.inline
-  implicit class INodeDefMutableBuilder[Self <: INodeDef] (val x: Self) extends AnyVal {
+  extension [Self <: INodeDef](x: Self) {
     
-    @scala.inline
-    def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrNull: Self = StObject.set(x, "attr", null)
+    inline def setAttrNull: Self = StObject.set(x, "attr", null)
     
-    @scala.inline
-    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNull: Self = StObject.set(x, "device", null)
+    inline def setDeviceNull: Self = StObject.set(x, "device", null)
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setInput(value: js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputNull: Self = StObject.set(x, "input", null)
+    inline def setInputNull: Self = StObject.set(x, "input", null)
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpNull: Self = StObject.set(x, "op", null)
+    inline def setOpNull: Self = StObject.set(x, "op", null)
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }
 }

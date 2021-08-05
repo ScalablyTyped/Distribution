@@ -28,7 +28,7 @@ object cameraMod {
     
     var pMatrix: Matrix4 = js.native
     
-    var pMatrixDirty: Boolean = js.native
+    /* protected */ var pMatrixDirty: Boolean = js.native
     
     def update(elapsed: Double): Unit = js.native
     

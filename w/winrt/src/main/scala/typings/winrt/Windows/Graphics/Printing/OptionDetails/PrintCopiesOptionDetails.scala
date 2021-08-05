@@ -9,8 +9,7 @@ trait PrintCopiesOptionDetails
      with IPrintNumberOptionDetails
 object PrintCopiesOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     maxValue: Double,
     minValue: Double,

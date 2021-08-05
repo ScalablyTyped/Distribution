@@ -12,20 +12,16 @@ trait ExcelProtection extends StObject {
 }
 object ExcelProtection {
   
-  @scala.inline
-  def apply(hideFormula: Boolean, `protected`: Boolean): ExcelProtection = {
+  inline def apply(hideFormula: Boolean, `protected`: Boolean): ExcelProtection = {
     val __obj = js.Dynamic.literal(hideFormula = hideFormula.asInstanceOf[js.Any])
     __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelProtection]
   }
   
-  @scala.inline
-  implicit class ExcelProtectionMutableBuilder[Self <: ExcelProtection] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelProtection](x: Self) {
     
-    @scala.inline
-    def setHideFormula(value: Boolean): Self = StObject.set(x, "hideFormula", value.asInstanceOf[js.Any])
+    inline def setHideFormula(value: Boolean): Self = StObject.set(x, "hideFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
   }
 }

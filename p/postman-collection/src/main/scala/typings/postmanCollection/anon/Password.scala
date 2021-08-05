@@ -12,19 +12,15 @@ trait Password extends StObject {
 }
 object Password {
   
-  @scala.inline
-  def apply(password: String, user: String): Password = {
+  inline def apply(password: String, user: String): Password = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Password]
   }
   
-  @scala.inline
-  implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+  extension [Self <: Password](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -24,31 +24,23 @@ trait SchemaTestRulesetResponse extends StObject {
 }
 object SchemaTestRulesetResponse {
   
-  @scala.inline
-  def apply(): SchemaTestRulesetResponse = {
+  inline def apply(): SchemaTestRulesetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestRulesetResponse]
   }
   
-  @scala.inline
-  implicit class SchemaTestRulesetResponseMutableBuilder[Self <: SchemaTestRulesetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestRulesetResponse](x: Self) {
     
-    @scala.inline
-    def setIssues(value: js.Array[SchemaIssue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+    inline def setIssues(value: js.Array[SchemaIssue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
+    inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
-    @scala.inline
-    def setIssuesVarargs(value: SchemaIssue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: SchemaIssue*): Self = StObject.set(x, "issues", js.Array(value :_*))
     
-    @scala.inline
-    def setTestResults(value: js.Array[SchemaTestResult]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
+    inline def setTestResults(value: js.Array[SchemaTestResult]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResultsUndefined: Self = StObject.set(x, "testResults", js.undefined)
+    inline def setTestResultsUndefined: Self = StObject.set(x, "testResults", js.undefined)
     
-    @scala.inline
-    def setTestResultsVarargs(value: SchemaTestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
+    inline def setTestResultsVarargs(value: SchemaTestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait ProvidedIn extends StObject {
 }
 object ProvidedIn {
   
-  @scala.inline
-  def apply(): ProvidedIn = {
+  inline def apply(): ProvidedIn = {
     val __obj = js.Dynamic.literal(providedIn = null)
     __obj.asInstanceOf[ProvidedIn]
   }
   
-  @scala.inline
-  implicit class ProvidedInMutableBuilder[Self <: ProvidedIn] (val x: Self) extends AnyVal {
+  extension [Self <: ProvidedIn](x: Self) {
     
-    @scala.inline
-    def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
+    inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
   }
 }

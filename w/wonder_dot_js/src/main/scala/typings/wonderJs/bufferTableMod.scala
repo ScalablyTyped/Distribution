@@ -18,41 +18,31 @@ object bufferTableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addBuffer(key: String, buffer: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBuffer")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addBuffer(key: String, buffer: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBuffer")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def bindIndexBuffer(indexBuffer: ElementBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindIndexBuffer")(indexBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def bindIndexBuffer(indexBuffer: ElementBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindIndexBuffer")(indexBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
+    inline def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
     
-    @scala.inline
-    def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
+    inline def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
     
-    @scala.inline
-    def getBuffer[T](key: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuffer")(key.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def getBuffer[T](key: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuffer")(key.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @scala.inline
-    def hasBuffer(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBuffer")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasBuffer(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBuffer")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTable.lastBindedArrayBufferListUidStr")
     @js.native
     def lastBindedArrayBufferListUidStr: String = js.native
-    @scala.inline
-    def lastBindedArrayBufferListUidStr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastBindedArrayBufferListUidStr")(x.asInstanceOf[js.Any])
+    inline def lastBindedArrayBufferListUidStr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastBindedArrayBufferListUidStr")(x.asInstanceOf[js.Any])
     
     @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTable.lastBindedElementBuffer")
     @js.native
     def lastBindedElementBuffer: ElementBuffer = js.native
-    @scala.inline
-    def lastBindedElementBuffer_=(x: ElementBuffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastBindedElementBuffer")(x.asInstanceOf[js.Any])
+    inline def lastBindedElementBuffer_=(x: ElementBuffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastBindedElementBuffer")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def resetBindedArrayBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBindedArrayBuffer")().asInstanceOf[Unit]
+    inline def resetBindedArrayBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBindedArrayBuffer")().asInstanceOf[Unit]
     
-    @scala.inline
-    def resetBindedElementBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBindedElementBuffer")().asInstanceOf[Unit]
+    inline def resetBindedElementBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBindedElementBuffer")().asInstanceOf[Unit]
   }
   
   @js.native

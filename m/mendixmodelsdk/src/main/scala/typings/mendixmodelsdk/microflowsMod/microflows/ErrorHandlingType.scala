@@ -21,15 +21,13 @@ object ErrorHandlingType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorHandlingType.Abort")
   @js.native
   def Abort: ErrorHandlingType = js.native
-  @scala.inline
-  def Abort_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Abort")(x.asInstanceOf[js.Any])
+  inline def Abort_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Abort")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorHandlingType.Continue")
   @js.native
   def Continue: ErrorHandlingType = js.native
-  @scala.inline
-  def Continue_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Continue")(x.asInstanceOf[js.Any])
+  inline def Continue_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Continue")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorHandlingType.Custom")
@@ -40,16 +38,13 @@ object ErrorHandlingType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorHandlingType.CustomWithoutRollBack")
   @js.native
   def CustomWithoutRollBack: ErrorHandlingType = js.native
-  @scala.inline
-  def CustomWithoutRollBack_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomWithoutRollBack")(x.asInstanceOf[js.Any])
+  inline def CustomWithoutRollBack_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomWithoutRollBack")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Custom_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
+  inline def Custom_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorHandlingType.Rollback")
   @js.native
   def Rollback: ErrorHandlingType = js.native
-  @scala.inline
-  def Rollback_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rollback")(x.asInstanceOf[js.Any])
+  inline def Rollback_=(x: ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rollback")(x.asInstanceOf[js.Any])
 }

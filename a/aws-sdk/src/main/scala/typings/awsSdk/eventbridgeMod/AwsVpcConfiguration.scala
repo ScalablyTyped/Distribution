@@ -23,34 +23,25 @@ trait AwsVpcConfiguration extends StObject {
 }
 object AwsVpcConfiguration {
   
-  @scala.inline
-  def apply(Subnets: StringList): AwsVpcConfiguration = {
+  inline def apply(Subnets: StringList): AwsVpcConfiguration = {
     val __obj = js.Dynamic.literal(Subnets = Subnets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsVpcConfiguration]
   }
   
-  @scala.inline
-  implicit class AwsVpcConfigurationMutableBuilder[Self <: AwsVpcConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AwsVpcConfiguration](x: Self) {
     
-    @scala.inline
-    def setAssignPublicIp(value: AssignPublicIp): Self = StObject.set(x, "AssignPublicIp", value.asInstanceOf[js.Any])
+    inline def setAssignPublicIp(value: AssignPublicIp): Self = StObject.set(x, "AssignPublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignPublicIpUndefined: Self = StObject.set(x, "AssignPublicIp", js.undefined)
+    inline def setAssignPublicIpUndefined: Self = StObject.set(x, "AssignPublicIp", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: StringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: StringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnets(value: StringList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: StringList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsVarargs(value: String*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
   }
 }

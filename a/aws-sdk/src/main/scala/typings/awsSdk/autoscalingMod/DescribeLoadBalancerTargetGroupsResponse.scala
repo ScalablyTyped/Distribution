@@ -18,28 +18,21 @@ trait DescribeLoadBalancerTargetGroupsResponse extends StObject {
 }
 object DescribeLoadBalancerTargetGroupsResponse {
   
-  @scala.inline
-  def apply(): DescribeLoadBalancerTargetGroupsResponse = {
+  inline def apply(): DescribeLoadBalancerTargetGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLoadBalancerTargetGroupsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLoadBalancerTargetGroupsResponseMutableBuilder[Self <: DescribeLoadBalancerTargetGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoadBalancerTargetGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerTargetGroups(value: LoadBalancerTargetGroupStates): Self = StObject.set(x, "LoadBalancerTargetGroups", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerTargetGroups(value: LoadBalancerTargetGroupStates): Self = StObject.set(x, "LoadBalancerTargetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerTargetGroupsUndefined: Self = StObject.set(x, "LoadBalancerTargetGroups", js.undefined)
+    inline def setLoadBalancerTargetGroupsUndefined: Self = StObject.set(x, "LoadBalancerTargetGroups", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerTargetGroupsVarargs(value: LoadBalancerTargetGroupState*): Self = StObject.set(x, "LoadBalancerTargetGroups", js.Array(value :_*))
+    inline def setLoadBalancerTargetGroupsVarargs(value: LoadBalancerTargetGroupState*): Self = StObject.set(x, "LoadBalancerTargetGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -33,34 +33,26 @@ object anon {
   }
   object Manual {
     
-    @scala.inline
-    def apply(): Manual = {
+    inline def apply(): Manual = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Manual]
     }
     
-    @scala.inline
-    implicit class ManualMutableBuilder[Self <: Manual] (val x: Self) extends AnyVal {
+    extension [Self <: Manual](x: Self) {
       
-      @scala.inline
-      def setManual(value: Boolean): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+      inline def setManual(value: Boolean): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
+      inline def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
       
-      @scala.inline
-      def setShouldUpdateScroll(
+      inline def setShouldUpdateScroll(
         value: (/* prev */ LocationState[js.Object, js.Any], /* locationState */ LocationState[js.Object, js.Any]) => Boolean | `profile-box` | (js.Tuple2[Double, Double])
       ): Self = StObject.set(x, "shouldUpdateScroll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldUpdateScrollUndefined: Self = StObject.set(x, "shouldUpdateScroll", js.undefined)
+      inline def setShouldUpdateScrollUndefined: Self = StObject.set(x, "shouldUpdateScroll", js.undefined)
       
-      @scala.inline
-      def setStateStorage(value: Read): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
+      inline def setStateStorage(value: Read): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateStorageUndefined: Self = StObject.set(x, "stateStorage", js.undefined)
+      inline def setStateStorageUndefined: Self = StObject.set(x, "stateStorage", js.undefined)
     }
   }
   

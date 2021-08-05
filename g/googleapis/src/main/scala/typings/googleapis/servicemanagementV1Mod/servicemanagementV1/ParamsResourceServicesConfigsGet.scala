@@ -38,37 +38,27 @@ trait ParamsResourceServicesConfigsGet
 }
 object ParamsResourceServicesConfigsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceServicesConfigsGet = {
+  inline def apply(): ParamsResourceServicesConfigsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceServicesConfigsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceServicesConfigsGetMutableBuilder[Self <: ParamsResourceServicesConfigsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceServicesConfigsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
+    inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

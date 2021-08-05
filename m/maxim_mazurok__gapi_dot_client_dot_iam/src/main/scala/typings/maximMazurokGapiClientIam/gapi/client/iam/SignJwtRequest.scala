@@ -16,19 +16,15 @@ trait SignJwtRequest extends StObject {
 }
 object SignJwtRequest {
   
-  @scala.inline
-  def apply(): SignJwtRequest = {
+  inline def apply(): SignJwtRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignJwtRequest]
   }
   
-  @scala.inline
-  implicit class SignJwtRequestMutableBuilder[Self <: SignJwtRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SignJwtRequest](x: Self) {
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

@@ -66,8 +66,7 @@ object Controllers {
   }
   object b2BuoyancyController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AddBody: b2Body => Unit,
       Clear: () => Unit,
       Draw: b2DebugDraw => Unit,
@@ -92,35 +91,25 @@ object Controllers {
       __obj.asInstanceOf[b2BuoyancyController]
     }
     
-    @scala.inline
-    implicit class b2BuoyancyControllerMutableBuilder[Self <: b2BuoyancyController] (val x: Self) extends AnyVal {
+    extension [Self <: b2BuoyancyController](x: Self) {
       
-      @scala.inline
-      def setAngularDrag(value: Double): Self = StObject.set(x, "angularDrag", value.asInstanceOf[js.Any])
+      inline def setAngularDrag(value: Double): Self = StObject.set(x, "angularDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravity(value: b2Vec2): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: b2Vec2): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinearDrag(value: Double): Self = StObject.set(x, "linearDrag", value.asInstanceOf[js.Any])
+      inline def setLinearDrag(value: Double): Self = StObject.set(x, "linearDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+      inline def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDensity(value: Boolean): Self = StObject.set(x, "useDensity", value.asInstanceOf[js.Any])
+      inline def setUseDensity(value: Boolean): Self = StObject.set(x, "useDensity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWorldGravity(value: Boolean): Self = StObject.set(x, "useWorldGravity", value.asInstanceOf[js.Any])
+      inline def setUseWorldGravity(value: Boolean): Self = StObject.set(x, "useWorldGravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocity(value: b2Vec2): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+      inline def setVelocity(value: b2Vec2): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +124,7 @@ object Controllers {
   }
   object b2ConstantAccelController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       A: b2Vec2,
       AddBody: b2Body => Unit,
       Clear: () => Unit,
@@ -153,11 +141,9 @@ object Controllers {
       __obj.asInstanceOf[b2ConstantAccelController]
     }
     
-    @scala.inline
-    implicit class b2ConstantAccelControllerMutableBuilder[Self <: b2ConstantAccelController] (val x: Self) extends AnyVal {
+    extension [Self <: b2ConstantAccelController](x: Self) {
       
-      @scala.inline
-      def setA(value: b2Vec2): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+      inline def setA(value: b2Vec2): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,8 +158,7 @@ object Controllers {
   }
   object b2ConstantForceController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       A: b2Vec2,
       AddBody: b2Body => Unit,
       Clear: () => Unit,
@@ -190,11 +175,9 @@ object Controllers {
       __obj.asInstanceOf[b2ConstantForceController]
     }
     
-    @scala.inline
-    implicit class b2ConstantForceControllerMutableBuilder[Self <: b2ConstantForceController] (val x: Self) extends AnyVal {
+    extension [Self <: b2ConstantForceController](x: Self) {
       
-      @scala.inline
-      def setA(value: b2Vec2): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+      inline def setA(value: b2Vec2): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,8 +242,7 @@ object Controllers {
   }
   object b2Controller {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AddBody: b2Body => Unit,
       Clear: () => Unit,
       Draw: b2DebugDraw => Unit,
@@ -276,38 +258,27 @@ object Controllers {
       __obj.asInstanceOf[b2Controller]
     }
     
-    @scala.inline
-    implicit class b2ControllerMutableBuilder[Self <: b2Controller] (val x: Self) extends AnyVal {
+    extension [Self <: b2Controller](x: Self) {
       
-      @scala.inline
-      def setAddBody(value: b2Body => Unit): Self = StObject.set(x, "AddBody", js.Any.fromFunction1(value))
+      inline def setAddBody(value: b2Body => Unit): Self = StObject.set(x, "AddBody", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDraw(value: b2DebugDraw => Unit): Self = StObject.set(x, "Draw", js.Any.fromFunction1(value))
+      inline def setDraw(value: b2DebugDraw => Unit): Self = StObject.set(x, "Draw", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBodyList(value: () => b2ControllerEdge): Self = StObject.set(x, "GetBodyList", js.Any.fromFunction0(value))
+      inline def setGetBodyList(value: () => b2ControllerEdge): Self = StObject.set(x, "GetBodyList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNext(value: () => b2Controller): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
+      inline def setGetNext(value: () => b2Controller): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWorld(value: () => b2World): Self = StObject.set(x, "GetWorld", js.Any.fromFunction0(value))
+      inline def setGetWorld(value: () => b2World): Self = StObject.set(x, "GetWorld", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setM_bodyCount(value: Double): Self = StObject.set(x, "m_bodyCount", value.asInstanceOf[js.Any])
+      inline def setM_bodyCount(value: Double): Self = StObject.set(x, "m_bodyCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM_bodyList(value: b2ControllerEdge): Self = StObject.set(x, "m_bodyList", value.asInstanceOf[js.Any])
+      inline def setM_bodyList(value: b2ControllerEdge): Self = StObject.set(x, "m_bodyList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveBody(value: b2Body => Unit): Self = StObject.set(x, "RemoveBody", js.Any.fromFunction1(value))
+      inline def setRemoveBody(value: b2Body => Unit): Self = StObject.set(x, "RemoveBody", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStep(value: js.Any => Unit): Self = StObject.set(x, "Step", js.Any.fromFunction1(value))
+      inline def setStep(value: js.Any => Unit): Self = StObject.set(x, "Step", js.Any.fromFunction1(value))
     }
   }
   
@@ -345,8 +316,7 @@ object Controllers {
   }
   object b2ControllerEdge {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: b2Body,
       controller: b2Controller,
       nextBody: b2ControllerEdge,
@@ -358,26 +328,19 @@ object Controllers {
       __obj.asInstanceOf[b2ControllerEdge]
     }
     
-    @scala.inline
-    implicit class b2ControllerEdgeMutableBuilder[Self <: b2ControllerEdge] (val x: Self) extends AnyVal {
+    extension [Self <: b2ControllerEdge](x: Self) {
       
-      @scala.inline
-      def setBody(value: b2Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: b2Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setController(value: b2Controller): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: b2Controller): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextBody(value: b2ControllerEdge): Self = StObject.set(x, "nextBody", value.asInstanceOf[js.Any])
+      inline def setNextBody(value: b2ControllerEdge): Self = StObject.set(x, "nextBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextController(value: b2ControllerEdge): Self = StObject.set(x, "nextController", value.asInstanceOf[js.Any])
+      inline def setNextController(value: b2ControllerEdge): Self = StObject.set(x, "nextController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevBody(value: b2ControllerEdge): Self = StObject.set(x, "prevBody", value.asInstanceOf[js.Any])
+      inline def setPrevBody(value: b2ControllerEdge): Self = StObject.set(x, "prevBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevController(value: b2ControllerEdge): Self = StObject.set(x, "prevController", value.asInstanceOf[js.Any])
+      inline def setPrevController(value: b2ControllerEdge): Self = StObject.set(x, "prevController", value.asInstanceOf[js.Any])
     }
   }
   
@@ -398,8 +361,7 @@ object Controllers {
   }
   object b2GravityController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AddBody: b2Body => Unit,
       Clear: () => Unit,
       Draw: b2DebugDraw => Unit,
@@ -417,14 +379,11 @@ object Controllers {
       __obj.asInstanceOf[b2GravityController]
     }
     
-    @scala.inline
-    implicit class b2GravityControllerMutableBuilder[Self <: b2GravityController] (val x: Self) extends AnyVal {
+    extension [Self <: b2GravityController](x: Self) {
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvSqr(value: Boolean): Self = StObject.set(x, "invSqr", value.asInstanceOf[js.Any])
+      inline def setInvSqr(value: Boolean): Self = StObject.set(x, "invSqr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -452,8 +411,7 @@ object Controllers {
   }
   object b2TensorDampingController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AddBody: b2Body => Unit,
       Clear: () => Unit,
       Draw: b2DebugDraw => Unit,
@@ -472,17 +430,13 @@ object Controllers {
       __obj.asInstanceOf[b2TensorDampingController]
     }
     
-    @scala.inline
-    implicit class b2TensorDampingControllerMutableBuilder[Self <: b2TensorDampingController] (val x: Self) extends AnyVal {
+    extension [Self <: b2TensorDampingController](x: Self) {
       
-      @scala.inline
-      def setMaxTimeStep(value: Double): Self = StObject.set(x, "maxTimeStep", value.asInstanceOf[js.Any])
+      inline def setMaxTimeStep(value: Double): Self = StObject.set(x, "maxTimeStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAxisAligned(value: (Double, Double) => Unit): Self = StObject.set(x, "SetAxisAligned", js.Any.fromFunction2(value))
+      inline def setSetAxisAligned(value: (Double, Double) => Unit): Self = StObject.set(x, "SetAxisAligned", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setT(value: b2Mat22): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
+      inline def setT(value: b2Mat22): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
     }
   }
 }

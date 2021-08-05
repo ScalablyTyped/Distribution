@@ -40,31 +40,23 @@ trait IRendererFactory extends StObject {
 }
 object IRendererFactory {
   
-  @scala.inline
-  def apply(createRenderer: IRendererOptions => IRenderer, mimeTypes: js.Array[String], safe: Boolean): IRendererFactory = {
+  inline def apply(createRenderer: IRendererOptions => IRenderer, mimeTypes: js.Array[String], safe: Boolean): IRendererFactory = {
     val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer), mimeTypes = mimeTypes.asInstanceOf[js.Any], safe = safe.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRendererFactory]
   }
   
-  @scala.inline
-  implicit class IRendererFactoryMutableBuilder[Self <: IRendererFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IRendererFactory](x: Self) {
     
-    @scala.inline
-    def setCreateRenderer(value: IRendererOptions => IRenderer): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: IRendererOptions => IRenderer): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultRank(value: Double): Self = StObject.set(x, "defaultRank", value.asInstanceOf[js.Any])
+    inline def setDefaultRank(value: Double): Self = StObject.set(x, "defaultRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRankUndefined: Self = StObject.set(x, "defaultRank", js.undefined)
+    inline def setDefaultRankUndefined: Self = StObject.set(x, "defaultRank", js.undefined)
     
-    @scala.inline
-    def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+    inline def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+    inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+    inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
   }
 }

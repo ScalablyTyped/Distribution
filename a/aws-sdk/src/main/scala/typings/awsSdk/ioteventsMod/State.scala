@@ -28,34 +28,25 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(stateName: StateName): State = {
+  inline def apply(stateName: StateName): State = {
     val __obj = js.Dynamic.literal(stateName = stateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setOnEnter(value: OnEnterLifecycle): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+    inline def setOnEnter(value: OnEnterLifecycle): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+    inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
-    @scala.inline
-    def setOnExit(value: OnExitLifecycle): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+    inline def setOnExit(value: OnExitLifecycle): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+    inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    @scala.inline
-    def setOnInput(value: OnInputLifecycle): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
+    inline def setOnInput(value: OnInputLifecycle): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+    inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
-    @scala.inline
-    def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
+    inline def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
   }
 }

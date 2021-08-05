@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object StringFormatEnum {
   
-  @scala.inline
-  def adClipString: `2` = 2.asInstanceOf[`2`]
+  inline def adClipString: `2` = 2.asInstanceOf[`2`]
 }

@@ -150,20 +150,16 @@ object Application {
   }
   object Plugin {
     
-    @scala.inline
-    def apply(destroy: /* repeated */ js.Any => js.Any, init: /* repeated */ js.Any => js.Any): Plugin = {
+    inline def apply(destroy: /* repeated */ js.Any => js.Any, init: /* repeated */ js.Any => js.Any): Plugin = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction1(destroy), init = js.Any.fromFunction1(init))
       __obj.asInstanceOf[Plugin]
     }
     
-    @scala.inline
-    implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+    extension [Self <: Plugin](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
 }

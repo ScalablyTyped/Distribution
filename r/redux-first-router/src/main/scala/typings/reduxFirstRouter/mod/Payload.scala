@@ -13,19 +13,15 @@ trait Payload
 }
 object Payload {
   
-  @scala.inline
-  def apply(): Payload = {
+  inline def apply(): Payload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Payload]
   }
   
-  @scala.inline
-  implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+  extension [Self <: Payload](x: Self) {
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

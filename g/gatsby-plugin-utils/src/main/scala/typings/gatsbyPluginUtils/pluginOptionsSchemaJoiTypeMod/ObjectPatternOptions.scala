@@ -12,25 +12,19 @@ trait ObjectPatternOptions extends StObject {
 }
 object ObjectPatternOptions {
   
-  @scala.inline
-  def apply(): ObjectPatternOptions = {
+  inline def apply(): ObjectPatternOptions = {
     val __obj = js.Dynamic.literal(matches = null)
     __obj.asInstanceOf[ObjectPatternOptions]
   }
   
-  @scala.inline
-  implicit class ObjectPatternOptionsMutableBuilder[Self <: ObjectPatternOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectPatternOptions](x: Self) {
     
-    @scala.inline
-    def setFallthrough(value: Boolean): Self = StObject.set(x, "fallthrough", value.asInstanceOf[js.Any])
+    inline def setFallthrough(value: Boolean): Self = StObject.set(x, "fallthrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallthroughUndefined: Self = StObject.set(x, "fallthrough", js.undefined)
+    inline def setFallthroughUndefined: Self = StObject.set(x, "fallthrough", js.undefined)
     
-    @scala.inline
-    def setMatches(value: SchemaLike | Reference): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: SchemaLike | Reference): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesNull: Self = StObject.set(x, "matches", null)
+    inline def setMatchesNull: Self = StObject.set(x, "matches", null)
   }
 }

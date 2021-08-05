@@ -37,91 +37,63 @@ trait PartialExpandButtonRender extends StObject {
 }
 object PartialExpandButtonRender {
   
-  @scala.inline
-  def apply(): PartialExpandButtonRender = {
+  inline def apply(): PartialExpandButtonRender = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialExpandButtonRender]
   }
   
-  @scala.inline
-  implicit class PartialExpandButtonRenderMutableBuilder[Self <: PartialExpandButtonRender] (val x: Self) extends AnyVal {
+  extension [Self <: PartialExpandButtonRender](x: Self) {
     
-    @scala.inline
-    def setExpandButton(value: RenderCustomComponent[MUIDataTableExpandButton] | ReactNode): Self = StObject.set(x, "ExpandButton", value.asInstanceOf[js.Any])
+    inline def setExpandButton(value: RenderCustomComponent[MUIDataTableExpandButton] | ReactNode): Self = StObject.set(x, "ExpandButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandButtonFunction1(value: MUIDataTableExpandButton => ReactNode): Self = StObject.set(x, "ExpandButton", js.Any.fromFunction1(value))
+    inline def setExpandButtonFunction1(value: MUIDataTableExpandButton => ReactNode): Self = StObject.set(x, "ExpandButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandButtonUndefined: Self = StObject.set(x, "ExpandButton", js.undefined)
+    inline def setExpandButtonUndefined: Self = StObject.set(x, "ExpandButton", js.undefined)
     
-    @scala.inline
-    def setTableBody(value: RenderCustomComponent[MUIDataTableBody] | ReactNode): Self = StObject.set(x, "TableBody", value.asInstanceOf[js.Any])
+    inline def setTableBody(value: RenderCustomComponent[MUIDataTableBody] | ReactNode): Self = StObject.set(x, "TableBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableBodyFunction1(value: MUIDataTableBody => ReactNode): Self = StObject.set(x, "TableBody", js.Any.fromFunction1(value))
+    inline def setTableBodyFunction1(value: MUIDataTableBody => ReactNode): Self = StObject.set(x, "TableBody", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
+    inline def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
     
-    @scala.inline
-    def setTableFilterList(value: RenderCustomComponent[MUIDataTableFilterList] | ReactNode): Self = StObject.set(x, "TableFilterList", value.asInstanceOf[js.Any])
+    inline def setTableFilterList(value: RenderCustomComponent[MUIDataTableFilterList] | ReactNode): Self = StObject.set(x, "TableFilterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableFilterListFunction1(value: MUIDataTableFilterList => ReactNode): Self = StObject.set(x, "TableFilterList", js.Any.fromFunction1(value))
+    inline def setTableFilterListFunction1(value: MUIDataTableFilterList => ReactNode): Self = StObject.set(x, "TableFilterList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTableFilterListUndefined: Self = StObject.set(x, "TableFilterList", js.undefined)
+    inline def setTableFilterListUndefined: Self = StObject.set(x, "TableFilterList", js.undefined)
     
-    @scala.inline
-    def setTableFooter(value: RenderCustomComponent[MUIDataTableFooter] | ReactNode): Self = StObject.set(x, "TableFooter", value.asInstanceOf[js.Any])
+    inline def setTableFooter(value: RenderCustomComponent[MUIDataTableFooter] | ReactNode): Self = StObject.set(x, "TableFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableFooterFunction1(value: MUIDataTableFooter => ReactNode): Self = StObject.set(x, "TableFooter", js.Any.fromFunction1(value))
+    inline def setTableFooterFunction1(value: MUIDataTableFooter => ReactNode): Self = StObject.set(x, "TableFooter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTableFooterUndefined: Self = StObject.set(x, "TableFooter", js.undefined)
+    inline def setTableFooterUndefined: Self = StObject.set(x, "TableFooter", js.undefined)
     
-    @scala.inline
-    def setTableHead(value: RenderCustomComponent[MUIDataTableHead] | ReactNode): Self = StObject.set(x, "TableHead", value.asInstanceOf[js.Any])
+    inline def setTableHead(value: RenderCustomComponent[MUIDataTableHead] | ReactNode): Self = StObject.set(x, "TableHead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableHeadFunction1(value: MUIDataTableHead => ReactNode): Self = StObject.set(x, "TableHead", js.Any.fromFunction1(value))
+    inline def setTableHeadFunction1(value: MUIDataTableHead => ReactNode): Self = StObject.set(x, "TableHead", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTableHeadUndefined: Self = StObject.set(x, "TableHead", js.undefined)
+    inline def setTableHeadUndefined: Self = StObject.set(x, "TableHead", js.undefined)
     
-    @scala.inline
-    def setTableResize(value: RenderCustomComponent[MUIDataTableResize] | ReactNode): Self = StObject.set(x, "TableResize", value.asInstanceOf[js.Any])
+    inline def setTableResize(value: RenderCustomComponent[MUIDataTableResize] | ReactNode): Self = StObject.set(x, "TableResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableResizeFunction1(value: MUIDataTableResize => ReactNode): Self = StObject.set(x, "TableResize", js.Any.fromFunction1(value))
+    inline def setTableResizeFunction1(value: MUIDataTableResize => ReactNode): Self = StObject.set(x, "TableResize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTableResizeUndefined: Self = StObject.set(x, "TableResize", js.undefined)
+    inline def setTableResizeUndefined: Self = StObject.set(x, "TableResize", js.undefined)
     
-    @scala.inline
-    def setTableToolbar(value: RenderCustomComponent[MUIDataTableToolbar] | ReactNode): Self = StObject.set(x, "TableToolbar", value.asInstanceOf[js.Any])
+    inline def setTableToolbar(value: RenderCustomComponent[MUIDataTableToolbar] | ReactNode): Self = StObject.set(x, "TableToolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableToolbarFunction1(value: MUIDataTableToolbar => ReactNode): Self = StObject.set(x, "TableToolbar", js.Any.fromFunction1(value))
+    inline def setTableToolbarFunction1(value: MUIDataTableToolbar => ReactNode): Self = StObject.set(x, "TableToolbar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTableToolbarSelect(value: RenderCustomComponent[MUIDataTableToolbarSelect] | ReactNode): Self = StObject.set(x, "TableToolbarSelect", value.asInstanceOf[js.Any])
+    inline def setTableToolbarSelect(value: RenderCustomComponent[MUIDataTableToolbarSelect] | ReactNode): Self = StObject.set(x, "TableToolbarSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableToolbarSelectFunction1(value: MUIDataTableToolbarSelect => ReactNode): Self = StObject.set(x, "TableToolbarSelect", js.Any.fromFunction1(value))
+    inline def setTableToolbarSelectFunction1(value: MUIDataTableToolbarSelect => ReactNode): Self = StObject.set(x, "TableToolbarSelect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTableToolbarSelectUndefined: Self = StObject.set(x, "TableToolbarSelect", js.undefined)
+    inline def setTableToolbarSelectUndefined: Self = StObject.set(x, "TableToolbarSelect", js.undefined)
     
-    @scala.inline
-    def setTableToolbarUndefined: Self = StObject.set(x, "TableToolbar", js.undefined)
+    inline def setTableToolbarUndefined: Self = StObject.set(x, "TableToolbar", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: ReactNode): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: ReactNode): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "Tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "Tooltip", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait PickFormSelectgetSelected extends StObject {
 }
 object PickFormSelectgetSelected {
   
-  @scala.inline
-  def apply(): PickFormSelectgetSelected = {
+  inline def apply(): PickFormSelectgetSelected = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickFormSelectgetSelected]
   }
   
-  @scala.inline
-  implicit class PickFormSelectgetSelectedMutableBuilder[Self <: PickFormSelectgetSelected] (val x: Self) extends AnyVal {
+  extension [Self <: PickFormSelectgetSelected](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setGetSelectedValues(value: js.Any): Self = StObject.set(x, "getSelectedValues", value.asInstanceOf[js.Any])
+    inline def setGetSelectedValues(value: js.Any): Self = StObject.set(x, "getSelectedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSelectedValuesUndefined: Self = StObject.set(x, "getSelectedValues", js.undefined)
+    inline def setGetSelectedValuesUndefined: Self = StObject.set(x, "getSelectedValues", js.undefined)
   }
 }

@@ -26,47 +26,34 @@ trait InlineQueryResultAudio
 }
 object InlineQueryResultAudio {
   
-  @scala.inline
-  def apply(audio_url: String, id: String, title: String): InlineQueryResultAudio = {
+  inline def apply(audio_url: String, id: String, title: String): InlineQueryResultAudio = {
     val __obj = js.Dynamic.literal(audio_url = audio_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("audio")
     __obj.asInstanceOf[InlineQueryResultAudio]
   }
   
-  @scala.inline
-  implicit class InlineQueryResultAudioMutableBuilder[Self <: InlineQueryResultAudio] (val x: Self) extends AnyVal {
+  extension [Self <: InlineQueryResultAudio](x: Self) {
     
-    @scala.inline
-    def setAudio_duration(value: Double): Self = StObject.set(x, "audio_duration", value.asInstanceOf[js.Any])
+    inline def setAudio_duration(value: Double): Self = StObject.set(x, "audio_duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudio_durationUndefined: Self = StObject.set(x, "audio_duration", js.undefined)
+    inline def setAudio_durationUndefined: Self = StObject.set(x, "audio_duration", js.undefined)
     
-    @scala.inline
-    def setAudio_url(value: String): Self = StObject.set(x, "audio_url", value.asInstanceOf[js.Any])
+    inline def setAudio_url(value: String): Self = StObject.set(x, "audio_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
+    inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
+    inline def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
-    @scala.inline
-    def setPerformer(value: String): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
+    inline def setPerformer(value: String): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
+    inline def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: audio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: audio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

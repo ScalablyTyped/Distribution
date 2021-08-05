@@ -10,8 +10,7 @@ trait ICompass
      with IAbstract
 object ICompass {
   
-  @scala.inline
-  def apply(): ICompass = {
+  inline def apply(): ICompass = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICompass]
   }

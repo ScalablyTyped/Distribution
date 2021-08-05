@@ -60,8 +60,7 @@ object navigationBuilderContextMod extends Shortcut {
   }
   object KeyedListenerMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beforeRemove: /* action */ NavigationAction => Boolean,
       getState: () => NavigationState[ParamListBase]
     ): KeyedListenerMap = {
@@ -69,14 +68,11 @@ object navigationBuilderContextMod extends Shortcut {
       __obj.asInstanceOf[KeyedListenerMap]
     }
     
-    @scala.inline
-    implicit class KeyedListenerMapMutableBuilder[Self <: KeyedListenerMap] (val x: Self) extends AnyVal {
+    extension [Self <: KeyedListenerMap](x: Self) {
       
-      @scala.inline
-      def setBeforeRemove(value: /* action */ NavigationAction => Boolean): Self = StObject.set(x, "beforeRemove", js.Any.fromFunction1(value))
+      inline def setBeforeRemove(value: /* action */ NavigationAction => Boolean): Self = StObject.set(x, "beforeRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     }
   }
   
@@ -88,8 +84,7 @@ object navigationBuilderContextMod extends Shortcut {
   }
   object ListenerMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: (/* action */ NavigationAction, /* visitedNavigators */ js.UndefOr[Set[String]]) => Boolean,
       focus: /* callback */ FocusedNavigationCallback[js.Any] => Handled[js.Any]
     ): ListenerMap = {
@@ -97,14 +92,11 @@ object navigationBuilderContextMod extends Shortcut {
       __obj.asInstanceOf[ListenerMap]
     }
     
-    @scala.inline
-    implicit class ListenerMapMutableBuilder[Self <: ListenerMap] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerMap](x: Self) {
       
-      @scala.inline
-      def setAction(value: (/* action */ NavigationAction, /* visitedNavigators */ js.UndefOr[Set[String]]) => Boolean): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+      inline def setAction(value: (/* action */ NavigationAction, /* visitedNavigators */ js.UndefOr[Set[String]]) => Boolean): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocus(value: /* callback */ FocusedNavigationCallback[js.Any] => Handled[js.Any]): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+      inline def setFocus(value: /* callback */ FocusedNavigationCallback[js.Any] => Handled[js.Any]): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
     }
   }
   

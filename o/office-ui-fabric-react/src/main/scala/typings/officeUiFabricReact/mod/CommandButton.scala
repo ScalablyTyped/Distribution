@@ -13,6 +13,5 @@ class CommandButton ()
   extends typings.officeUiFabricReact.actionButtonMod.ActionButton
 object CommandButton {
   
-  @scala.inline
-  def apply: Instantiable0[typings.officeUiFabricReact.actionButtonMod.ActionButton] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommandButton").asInstanceOf[Instantiable0[typings.officeUiFabricReact.actionButtonMod.ActionButton]]
+  inline def apply: Instantiable0[typings.officeUiFabricReact.actionButtonMod.ActionButton] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommandButton").asInstanceOf[Instantiable0[typings.officeUiFabricReact.actionButtonMod.ActionButton]]
 }

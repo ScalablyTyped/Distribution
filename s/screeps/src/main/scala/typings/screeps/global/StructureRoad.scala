@@ -87,6 +87,5 @@ class StructureRoad protected ()
 }
 object StructureRoad {
   
-  @scala.inline
-  def apply: StructureRoadConstructor = js.Dynamic.global.selectDynamic("StructureRoad").asInstanceOf[StructureRoadConstructor]
+  inline def apply: StructureRoadConstructor = js.Dynamic.global.selectDynamic("StructureRoad").asInstanceOf[StructureRoadConstructor]
 }

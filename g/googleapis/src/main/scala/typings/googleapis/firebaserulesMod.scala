@@ -40,8 +40,7 @@ object firebaserulesMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Firebaserules
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object firebaserulesMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object firebaserulesMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def firebaserules(options: Options): Firebaserules = ^.asInstanceOf[js.Dynamic].applyDynamic("firebaserules")(options.asInstanceOf[js.Any]).asInstanceOf[Firebaserules]
+  inline def firebaserules(options: Options): Firebaserules = ^.asInstanceOf[js.Dynamic].applyDynamic("firebaserules")(options.asInstanceOf[js.Any]).asInstanceOf[Firebaserules]
   
-  @scala.inline
-  def firebaserules_v1(version: v1): Firebaserules = ^.asInstanceOf[js.Dynamic].applyDynamic("firebaserules")(version.asInstanceOf[js.Any]).asInstanceOf[Firebaserules]
+  inline def firebaserules_v1(version: v1): Firebaserules = ^.asInstanceOf[js.Dynamic].applyDynamic("firebaserules")(version.asInstanceOf[js.Any]).asInstanceOf[Firebaserules]
 }

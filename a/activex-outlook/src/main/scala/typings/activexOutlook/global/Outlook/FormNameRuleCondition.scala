@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.FormNameRuleCondition")
 @js.native
-class FormNameRuleCondition protected ()
+/* private */ class FormNameRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.FormNameRuleCondition {
   
@@ -27,7 +27,7 @@ class FormNameRuleCondition protected ()
   /* CompleteClass */
   var FormName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.FormNameRuleCondition_typekey")
   var OutlookDotFormNameRuleCondition_typekey: typings.activexOutlook.Outlook.FormNameRuleCondition = js.native
   

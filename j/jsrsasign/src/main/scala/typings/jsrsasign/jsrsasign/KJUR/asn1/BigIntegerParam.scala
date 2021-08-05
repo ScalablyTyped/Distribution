@@ -11,16 +11,13 @@ trait BigIntegerParam extends StObject {
 }
 object BigIntegerParam {
   
-  @scala.inline
-  def apply(bigint: BigInteger): BigIntegerParam = {
+  inline def apply(bigint: BigInteger): BigIntegerParam = {
     val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigIntegerParam]
   }
   
-  @scala.inline
-  implicit class BigIntegerParamMutableBuilder[Self <: BigIntegerParam] (val x: Self) extends AnyVal {
+  extension [Self <: BigIntegerParam](x: Self) {
     
-    @scala.inline
-    def setBigint(value: BigInteger): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+    inline def setBigint(value: BigInteger): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
   }
 }

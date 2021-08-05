@@ -11,16 +11,13 @@ trait UseRowSelectState[D /* <: js.Object */] extends StObject {
 }
 object UseRowSelectState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](selectedRowIds: Record[IdType[D], Boolean]): UseRowSelectState[D] = {
+  inline def apply[D /* <: js.Object */](selectedRowIds: Record[IdType[D], Boolean]): UseRowSelectState[D] = {
     val __obj = js.Dynamic.literal(selectedRowIds = selectedRowIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseRowSelectState[D]]
   }
   
-  @scala.inline
-  implicit class UseRowSelectStateMutableBuilder[Self <: UseRowSelectState[?], D /* <: js.Object */] (val x: Self & UseRowSelectState[D]) extends AnyVal {
+  extension [Self <: UseRowSelectState[?], D /* <: js.Object */](x: Self & UseRowSelectState[D]) {
     
-    @scala.inline
-    def setSelectedRowIds(value: Record[IdType[D], Boolean]): Self = StObject.set(x, "selectedRowIds", value.asInstanceOf[js.Any])
+    inline def setSelectedRowIds(value: Record[IdType[D], Boolean]): Self = StObject.set(x, "selectedRowIds", value.asInstanceOf[js.Any])
   }
 }

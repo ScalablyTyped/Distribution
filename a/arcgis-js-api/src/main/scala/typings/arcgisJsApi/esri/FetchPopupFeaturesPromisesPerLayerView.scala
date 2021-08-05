@@ -26,8 +26,7 @@ trait FetchPopupFeaturesPromisesPerLayerView
 }
 object FetchPopupFeaturesPromisesPerLayerView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layerView: LayerView,
@@ -38,13 +37,10 @@ object FetchPopupFeaturesPromisesPerLayerView {
     __obj.asInstanceOf[FetchPopupFeaturesPromisesPerLayerView]
   }
   
-  @scala.inline
-  implicit class FetchPopupFeaturesPromisesPerLayerViewMutableBuilder[Self <: FetchPopupFeaturesPromisesPerLayerView] (val x: Self) extends AnyVal {
+  extension [Self <: FetchPopupFeaturesPromisesPerLayerView](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromise(value: js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

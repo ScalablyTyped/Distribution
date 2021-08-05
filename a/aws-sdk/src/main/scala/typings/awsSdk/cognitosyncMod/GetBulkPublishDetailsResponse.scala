@@ -33,43 +33,31 @@ trait GetBulkPublishDetailsResponse extends StObject {
 }
 object GetBulkPublishDetailsResponse {
   
-  @scala.inline
-  def apply(): GetBulkPublishDetailsResponse = {
+  inline def apply(): GetBulkPublishDetailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBulkPublishDetailsResponse]
   }
   
-  @scala.inline
-  implicit class GetBulkPublishDetailsResponseMutableBuilder[Self <: GetBulkPublishDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBulkPublishDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setBulkPublishCompleteTime(value: Date): Self = StObject.set(x, "BulkPublishCompleteTime", value.asInstanceOf[js.Any])
+    inline def setBulkPublishCompleteTime(value: Date): Self = StObject.set(x, "BulkPublishCompleteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkPublishCompleteTimeUndefined: Self = StObject.set(x, "BulkPublishCompleteTime", js.undefined)
+    inline def setBulkPublishCompleteTimeUndefined: Self = StObject.set(x, "BulkPublishCompleteTime", js.undefined)
     
-    @scala.inline
-    def setBulkPublishStartTime(value: Date): Self = StObject.set(x, "BulkPublishStartTime", value.asInstanceOf[js.Any])
+    inline def setBulkPublishStartTime(value: Date): Self = StObject.set(x, "BulkPublishStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkPublishStartTimeUndefined: Self = StObject.set(x, "BulkPublishStartTime", js.undefined)
+    inline def setBulkPublishStartTimeUndefined: Self = StObject.set(x, "BulkPublishStartTime", js.undefined)
     
-    @scala.inline
-    def setBulkPublishStatus(value: BulkPublishStatus): Self = StObject.set(x, "BulkPublishStatus", value.asInstanceOf[js.Any])
+    inline def setBulkPublishStatus(value: BulkPublishStatus): Self = StObject.set(x, "BulkPublishStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkPublishStatusUndefined: Self = StObject.set(x, "BulkPublishStatus", js.undefined)
+    inline def setBulkPublishStatusUndefined: Self = StObject.set(x, "BulkPublishStatus", js.undefined)
     
-    @scala.inline
-    def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
+    inline def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
+    inline def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
   }
 }

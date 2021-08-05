@@ -27,8 +27,7 @@ trait TypeofpowerSource extends StObject {
 }
 object TypeofpowerSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPowerSourceInfo: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit] => Unit,
     onPowerChanged: Event[js.Function1[/* powerSourceInfo */ js.Array[PowerSourceInfo], Unit]],
     requestStatusUpdate: () => Unit
@@ -37,16 +36,12 @@ object TypeofpowerSource {
     __obj.asInstanceOf[TypeofpowerSource]
   }
   
-  @scala.inline
-  implicit class TypeofpowerSourceMutableBuilder[Self <: TypeofpowerSource] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpowerSource](x: Self) {
     
-    @scala.inline
-    def setGetPowerSourceInfo(value: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit] => Unit): Self = StObject.set(x, "getPowerSourceInfo", js.Any.fromFunction1(value))
+    inline def setGetPowerSourceInfo(value: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit] => Unit): Self = StObject.set(x, "getPowerSourceInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPowerChanged(value: Event[js.Function1[/* powerSourceInfo */ js.Array[PowerSourceInfo], Unit]]): Self = StObject.set(x, "onPowerChanged", value.asInstanceOf[js.Any])
+    inline def setOnPowerChanged(value: Event[js.Function1[/* powerSourceInfo */ js.Array[PowerSourceInfo], Unit]]): Self = StObject.set(x, "onPowerChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestStatusUpdate(value: () => Unit): Self = StObject.set(x, "requestStatusUpdate", js.Any.fromFunction0(value))
+    inline def setRequestStatusUpdate(value: () => Unit): Self = StObject.set(x, "requestStatusUpdate", js.Any.fromFunction0(value))
   }
 }

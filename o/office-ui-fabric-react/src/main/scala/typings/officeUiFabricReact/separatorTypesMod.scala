@@ -44,41 +44,30 @@ object separatorTypesMod {
   }
   object ISeparatorProps {
     
-    @scala.inline
-    def apply(): ISeparatorProps = {
+    inline def apply(): ISeparatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISeparatorProps]
     }
     
-    @scala.inline
-    implicit class ISeparatorPropsMutableBuilder[Self <: ISeparatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISeparatorProps](x: Self) {
       
-      @scala.inline
-      def setAlignContent(value: start | center | end): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+      inline def setAlignContent(value: start | center | end): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+      inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ISeparatorStyleProps, ISeparatorStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ISeparatorStyleProps, ISeparatorStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ISeparatorStyleProps => DeepPartial[ISeparatorStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ISeparatorStyleProps => DeepPartial[ISeparatorStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -95,35 +84,26 @@ object separatorTypesMod {
   }
   object ISeparatorStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ISeparatorStyleProps = {
+    inline def apply(theme: ITheme): ISeparatorStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISeparatorStyleProps]
     }
     
-    @scala.inline
-    implicit class ISeparatorStylePropsMutableBuilder[Self <: ISeparatorStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISeparatorStyleProps](x: Self) {
       
-      @scala.inline
-      def setAlignContent(value: start | center | end): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+      inline def setAlignContent(value: start | center | end): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+      inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -141,32 +121,24 @@ object separatorTypesMod {
   }
   object ISeparatorStyles {
     
-    @scala.inline
-    def apply(): ISeparatorStyles = {
+    inline def apply(): ISeparatorStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISeparatorStyles]
     }
     
-    @scala.inline
-    implicit class ISeparatorStylesMutableBuilder[Self <: ISeparatorStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISeparatorStyles](x: Self) {
       
-      @scala.inline
-      def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

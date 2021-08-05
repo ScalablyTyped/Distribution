@@ -24,8 +24,7 @@ trait XTextField
 }
 object XTextField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -41,10 +40,8 @@ object XTextField {
     __obj.asInstanceOf[XTextField]
   }
   
-  @scala.inline
-  implicit class XTextFieldMutableBuilder[Self <: XTextField] (val x: Self) extends AnyVal {
+  extension [Self <: XTextField](x: Self) {
     
-    @scala.inline
-    def setGetPresentation(value: Boolean => String): Self = StObject.set(x, "getPresentation", js.Any.fromFunction1(value))
+    inline def setGetPresentation(value: Boolean => String): Self = StObject.set(x, "getPresentation", js.Any.fromFunction1(value))
   }
 }

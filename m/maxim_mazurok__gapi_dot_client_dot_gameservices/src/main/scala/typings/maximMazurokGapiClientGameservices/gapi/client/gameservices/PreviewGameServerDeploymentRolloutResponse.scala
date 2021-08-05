@@ -17,34 +17,25 @@ trait PreviewGameServerDeploymentRolloutResponse extends StObject {
 }
 object PreviewGameServerDeploymentRolloutResponse {
   
-  @scala.inline
-  def apply(): PreviewGameServerDeploymentRolloutResponse = {
+  inline def apply(): PreviewGameServerDeploymentRolloutResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreviewGameServerDeploymentRolloutResponse]
   }
   
-  @scala.inline
-  implicit class PreviewGameServerDeploymentRolloutResponseMutableBuilder[Self <: PreviewGameServerDeploymentRolloutResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewGameServerDeploymentRolloutResponse](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setTargetState(value: TargetState): Self = StObject.set(x, "targetState", value.asInstanceOf[js.Any])
+    inline def setTargetState(value: TargetState): Self = StObject.set(x, "targetState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetStateUndefined: Self = StObject.set(x, "targetState", js.undefined)
+    inline def setTargetStateUndefined: Self = StObject.set(x, "targetState", js.undefined)
     
-    @scala.inline
-    def setUnavailable(value: js.Array[String]): Self = StObject.set(x, "unavailable", value.asInstanceOf[js.Any])
+    inline def setUnavailable(value: js.Array[String]): Self = StObject.set(x, "unavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnavailableUndefined: Self = StObject.set(x, "unavailable", js.undefined)
+    inline def setUnavailableUndefined: Self = StObject.set(x, "unavailable", js.undefined)
     
-    @scala.inline
-    def setUnavailableVarargs(value: String*): Self = StObject.set(x, "unavailable", js.Array(value :_*))
+    inline def setUnavailableVarargs(value: String*): Self = StObject.set(x, "unavailable", js.Array(value :_*))
   }
 }

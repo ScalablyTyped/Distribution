@@ -12,19 +12,15 @@ trait ViewAfterShowEvent
 }
 object ViewAfterShowEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: View): ViewAfterShowEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: View): ViewAfterShowEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewAfterShowEvent]
   }
   
-  @scala.inline
-  implicit class ViewAfterShowEventMutableBuilder[Self <: ViewAfterShowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ViewAfterShowEvent](x: Self) {
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

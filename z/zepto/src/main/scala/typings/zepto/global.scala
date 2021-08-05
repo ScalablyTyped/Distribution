@@ -9,13 +9,11 @@ object global {
   @JSGlobal("Zepto")
   @js.native
   def Zepto: js.Function1[/* fn */ js.Function1[/* $ */ ZeptoStatic, Unit], Unit] = js.native
-  @scala.inline
-  def Zepto_=(x: js.Function1[/* fn */ js.Function1[/* $ */ ZeptoStatic, Unit], Unit]): Unit = js.Dynamic.global.updateDynamic("Zepto")(x.asInstanceOf[js.Any])
+  inline def Zepto_=(x: js.Function1[/* fn */ js.Function1[/* $ */ ZeptoStatic, Unit], Unit]): Unit = js.Dynamic.global.updateDynamic("Zepto")(x.asInstanceOf[js.Any])
   
   @JSGlobal("$")
   @js.native
   def _empty: ZeptoStatic = js.native
   
-  @scala.inline
-  def _empty_=(x: ZeptoStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
+  inline def _empty_=(x: ZeptoStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
 }

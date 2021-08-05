@@ -26,18 +26,15 @@ object mod {
   }
   object Cdata {
     
-    @scala.inline
-    def apply(value: js.Any): Cdata = {
+    inline def apply(value: js.Any): Cdata = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("cdata")
       __obj.asInstanceOf[Cdata]
     }
     
-    @scala.inline
-    implicit class CdataMutableBuilder[Self <: Cdata] (val x: Self) extends AnyVal {
+    extension [Self <: Cdata](x: Self) {
       
-      @scala.inline
-      def setType(value: cdata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: cdata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,18 +47,15 @@ object mod {
   }
   object Comment {
     
-    @scala.inline
-    def apply(value: js.Any): Comment = {
+    inline def apply(value: js.Any): Comment = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[Comment]
     }
     
-    @scala.inline
-    implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+    extension [Self <: Comment](x: Self) {
       
-      @scala.inline
-      def setType(value: comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,33 +80,25 @@ object mod {
   }
   object Doctype {
     
-    @scala.inline
-    def apply(name: String): Doctype = {
+    inline def apply(name: String): Doctype = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("doctype")
       __obj.asInstanceOf[Doctype]
     }
     
-    @scala.inline
-    implicit class DoctypeMutableBuilder[Self <: Doctype] (val x: Self) extends AnyVal {
+    extension [Self <: Doctype](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+      inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
       
-      @scala.inline
-      def setType(value: doctype): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: doctype): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,33 +124,25 @@ object mod {
   }
   object Element {
     
-    @scala.inline
-    def apply(children: js.Array[Element | Text | Comment | Instruction | Cdata], name: String): Element = {
+    inline def apply(children: js.Array[Element | Text | Comment | Instruction | Cdata], name: String): Element = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[Element | Text | Comment | Instruction | Cdata]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Element | Text | Comment | Instruction | Cdata]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: (Element | Text | Comment | Instruction | Cdata)*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (Element | Text | Comment | Instruction | Cdata)*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,21 +157,17 @@ object mod {
   }
   object Instruction {
     
-    @scala.inline
-    def apply(name: String, value: js.Any): Instruction = {
+    inline def apply(name: String, value: js.Any): Instruction = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("instruction")
       __obj.asInstanceOf[Instruction]
     }
     
-    @scala.inline
-    implicit class InstructionMutableBuilder[Self <: Instruction] (val x: Self) extends AnyVal {
+    extension [Self <: Instruction](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: instruction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: instruction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,8 +176,7 @@ object mod {
        with typings.unist.mod.Literal
   object Literal {
     
-    @scala.inline
-    def apply(`type`: String, value: js.Any): Literal = {
+    inline def apply(`type`: String, value: js.Any): Literal = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Literal]
@@ -215,8 +188,7 @@ object mod {
        with typings.unist.mod.Parent
   object Parent {
     
-    @scala.inline
-    def apply(children: js.Array[Node], `type`: String): Parent = {
+    inline def apply(children: js.Array[Node], `type`: String): Parent = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parent]
@@ -232,18 +204,15 @@ object mod {
   }
   object Root {
     
-    @scala.inline
-    def apply(children: js.Array[Node]): Root = {
+    inline def apply(children: js.Array[Node]): Root = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[Root]
     }
     
-    @scala.inline
-    implicit class RootMutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
+    extension [Self <: Root](x: Self) {
       
-      @scala.inline
-      def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,18 +225,15 @@ object mod {
   }
   object Text {
     
-    @scala.inline
-    def apply(value: js.Any): Text = {
+    inline def apply(value: js.Any): Text = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

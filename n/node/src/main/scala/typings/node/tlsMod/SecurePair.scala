@@ -12,19 +12,15 @@ trait SecurePair extends StObject {
 }
 object SecurePair {
   
-  @scala.inline
-  def apply(cleartext: TLSSocket, encrypted: TLSSocket): SecurePair = {
+  inline def apply(cleartext: TLSSocket, encrypted: TLSSocket): SecurePair = {
     val __obj = js.Dynamic.literal(cleartext = cleartext.asInstanceOf[js.Any], encrypted = encrypted.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurePair]
   }
   
-  @scala.inline
-  implicit class SecurePairMutableBuilder[Self <: SecurePair] (val x: Self) extends AnyVal {
+  extension [Self <: SecurePair](x: Self) {
     
-    @scala.inline
-    def setCleartext(value: TLSSocket): Self = StObject.set(x, "cleartext", value.asInstanceOf[js.Any])
+    inline def setCleartext(value: TLSSocket): Self = StObject.set(x, "cleartext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncrypted(value: TLSSocket): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: TLSSocket): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
   }
 }

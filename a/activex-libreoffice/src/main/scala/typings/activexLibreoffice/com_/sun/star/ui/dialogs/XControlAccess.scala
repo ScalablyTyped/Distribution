@@ -39,8 +39,7 @@ trait XControlAccess
 }
 object XControlAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getControlProperty: (String, String) => js.Any,
     queryInterface: `type` => js.Any,
@@ -51,13 +50,10 @@ object XControlAccess {
     __obj.asInstanceOf[XControlAccess]
   }
   
-  @scala.inline
-  implicit class XControlAccessMutableBuilder[Self <: XControlAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XControlAccess](x: Self) {
     
-    @scala.inline
-    def setGetControlProperty(value: (String, String) => js.Any): Self = StObject.set(x, "getControlProperty", js.Any.fromFunction2(value))
+    inline def setGetControlProperty(value: (String, String) => js.Any): Self = StObject.set(x, "getControlProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetControlProperty(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "setControlProperty", js.Any.fromFunction3(value))
+    inline def setSetControlProperty(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "setControlProperty", js.Any.fromFunction3(value))
   }
 }

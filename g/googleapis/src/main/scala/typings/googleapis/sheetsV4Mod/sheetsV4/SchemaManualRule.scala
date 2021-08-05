@@ -30,22 +30,17 @@ trait SchemaManualRule extends StObject {
 }
 object SchemaManualRule {
   
-  @scala.inline
-  def apply(): SchemaManualRule = {
+  inline def apply(): SchemaManualRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManualRule]
   }
   
-  @scala.inline
-  implicit class SchemaManualRuleMutableBuilder[Self <: SchemaManualRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManualRule](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[SchemaManualRuleGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[SchemaManualRuleGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: SchemaManualRuleGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SchemaManualRuleGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
   }
 }

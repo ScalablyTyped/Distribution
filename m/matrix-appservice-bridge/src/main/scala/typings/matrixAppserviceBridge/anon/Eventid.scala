@@ -10,16 +10,13 @@ trait Eventid extends StObject {
 }
 object Eventid {
   
-  @scala.inline
-  def apply(event_id: String): Eventid = {
+  inline def apply(event_id: String): Eventid = {
     val __obj = js.Dynamic.literal(event_id = event_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Eventid]
   }
   
-  @scala.inline
-  implicit class EventidMutableBuilder[Self <: Eventid] (val x: Self) extends AnyVal {
+  extension [Self <: Eventid](x: Self) {
     
-    @scala.inline
-    def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
+    inline def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
   }
 }

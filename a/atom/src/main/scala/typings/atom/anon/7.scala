@@ -15,22 +15,17 @@ trait `7` extends StObject {
 }
 object `7` {
   
-  @scala.inline
-  def apply(newValue: auto | soft | hard): `7` = {
+  inline def apply(newValue: auto | soft | hard): `7` = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`7`]
   }
   
-  @scala.inline
-  implicit class `7MutableBuilder`[Self <: `7`] (val x: Self) extends AnyVal {
+  extension [Self <: `7`](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: auto | soft | hard): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: auto | soft | hard): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: auto | soft | hard): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: auto | soft | hard): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

@@ -35,29 +35,22 @@ object anon {
   }
   object Basename {
     
-    @scala.inline
-    def apply(basename: String, dirname: String, ext: String, extname: String, filename: String): Basename = {
+    inline def apply(basename: String, dirname: String, ext: String, extname: String, filename: String): Basename = {
       val __obj = js.Dynamic.literal(basename = basename.asInstanceOf[js.Any], dirname = dirname.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], extname = extname.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[Basename]
     }
     
-    @scala.inline
-    implicit class BasenameMutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
+    extension [Self <: Basename](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
+      inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +98,7 @@ object anon {
   }
   object Braces {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       braces: Boolean,
       brackets: Boolean,
       dotdir: Boolean,
@@ -120,32 +112,23 @@ object anon {
       __obj.asInstanceOf[Braces]
     }
     
-    @scala.inline
-    implicit class BracesMutableBuilder[Self <: Braces] (val x: Self) extends AnyVal {
+    extension [Self <: Braces](x: Self) {
       
-      @scala.inline
-      def setBraces(value: Boolean): Self = StObject.set(x, "braces", value.asInstanceOf[js.Any])
+      inline def setBraces(value: Boolean): Self = StObject.set(x, "braces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrackets(value: Boolean): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
+      inline def setBrackets(value: Boolean): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotdir(value: Boolean): Self = StObject.set(x, "dotdir", value.asInstanceOf[js.Any])
+      inline def setDotdir(value: Boolean): Self = StObject.set(x, "dotdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotfile(value: Boolean): Self = StObject.set(x, "dotfile", value.asInstanceOf[js.Any])
+      inline def setDotfile(value: Boolean): Self = StObject.set(x, "dotfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
+      inline def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlob(value: Boolean): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: Boolean): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
+      inline def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegated(value: Boolean): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
+      inline def setNegated(value: Boolean): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
     }
   }
 }

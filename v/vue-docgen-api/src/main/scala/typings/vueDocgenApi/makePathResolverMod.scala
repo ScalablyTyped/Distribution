@@ -11,8 +11,7 @@ object makePathResolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(refDirName: String): js.Function2[
+  inline def default(refDirName: String): js.Function2[
     /* filePath */ String, 
     /* originalDirNameOverride */ js.UndefOr[String], 
     String | Null
@@ -21,8 +20,7 @@ object makePathResolverMod {
     /* originalDirNameOverride */ js.UndefOr[String], 
     String | Null
   ]]
-  @scala.inline
-  def default(refDirName: String, aliases: StringDictionary[String]): js.Function2[
+  inline def default(refDirName: String, aliases: StringDictionary[String]): js.Function2[
     /* filePath */ String, 
     /* originalDirNameOverride */ js.UndefOr[String], 
     String | Null
@@ -31,8 +29,7 @@ object makePathResolverMod {
     /* originalDirNameOverride */ js.UndefOr[String], 
     String | Null
   ]]
-  @scala.inline
-  def default(refDirName: String, aliases: StringDictionary[String], modules: js.Array[String]): js.Function2[
+  inline def default(refDirName: String, aliases: StringDictionary[String], modules: js.Array[String]): js.Function2[
     /* filePath */ String, 
     /* originalDirNameOverride */ js.UndefOr[String], 
     String | Null
@@ -41,8 +38,7 @@ object makePathResolverMod {
     /* originalDirNameOverride */ js.UndefOr[String], 
     String | Null
   ]]
-  @scala.inline
-  def default(refDirName: String, aliases: Unit, modules: js.Array[String]): js.Function2[
+  inline def default(refDirName: String, aliases: Unit, modules: js.Array[String]): js.Function2[
     /* filePath */ String, 
     /* originalDirNameOverride */ js.UndefOr[String], 
     String | Null

@@ -10,16 +10,13 @@ trait SjclOCB2ProgressiveProcessor extends StObject {
 }
 object SjclOCB2ProgressiveProcessor {
   
-  @scala.inline
-  def apply(process: BitArray_ => BitArray_): SjclOCB2ProgressiveProcessor = {
+  inline def apply(process: BitArray_ => BitArray_): SjclOCB2ProgressiveProcessor = {
     val __obj = js.Dynamic.literal(process = js.Any.fromFunction1(process))
     __obj.asInstanceOf[SjclOCB2ProgressiveProcessor]
   }
   
-  @scala.inline
-  implicit class SjclOCB2ProgressiveProcessorMutableBuilder[Self <: SjclOCB2ProgressiveProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: SjclOCB2ProgressiveProcessor](x: Self) {
     
-    @scala.inline
-    def setProcess(value: BitArray_ => BitArray_): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+    inline def setProcess(value: BitArray_ => BitArray_): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
   }
 }

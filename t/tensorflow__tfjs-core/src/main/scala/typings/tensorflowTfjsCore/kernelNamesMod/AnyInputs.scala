@@ -11,19 +11,15 @@ trait AnyInputs extends StObject {
 }
 object AnyInputs {
   
-  @scala.inline
-  def apply(): AnyInputs = {
+  inline def apply(): AnyInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnyInputs]
   }
   
-  @scala.inline
-  implicit class AnyInputsMutableBuilder[Self <: AnyInputs] (val x: Self) extends AnyVal {
+  extension [Self <: AnyInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

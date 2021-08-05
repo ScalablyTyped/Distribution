@@ -10,8 +10,7 @@ object monadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def eq_(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def eq_(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait Eq[T] extends StObject
   
@@ -25,8 +24,7 @@ object monadMod {
   }
   object Functor {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       fmap: js.Function1[/* t */ T, js.Any] => Functor[js.Any],
       lift: js.Function1[/* t */ T, js.Any] => Functor[js.Any],
       map: js.Function1[/* t */ T, js.Any] => Functor[js.Any]
@@ -35,17 +33,13 @@ object monadMod {
       __obj.asInstanceOf[Functor[T]]
     }
     
-    @scala.inline
-    implicit class FunctorMutableBuilder[Self <: Functor[?], T] (val x: Self & Functor[T]) extends AnyVal {
+    extension [Self <: Functor[?], T](x: Self & Functor[T]) {
       
-      @scala.inline
-      def setFmap(value: js.Function1[/* t */ T, js.Any] => Functor[js.Any]): Self = StObject.set(x, "fmap", js.Any.fromFunction1(value))
+      inline def setFmap(value: js.Function1[/* t */ T, js.Any] => Functor[js.Any]): Self = StObject.set(x, "fmap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLift(value: js.Function1[/* t */ T, js.Any] => Functor[js.Any]): Self = StObject.set(x, "lift", js.Any.fromFunction1(value))
+      inline def setLift(value: js.Function1[/* t */ T, js.Any] => Functor[js.Any]): Self = StObject.set(x, "lift", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: js.Function1[/* t */ T, js.Any] => Functor[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* t */ T, js.Any] => Functor[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     }
   }
   
@@ -61,8 +55,7 @@ object monadMod {
   }
   object Monad {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       bind: js.Function1[/* t */ T, Monad[js.Any]] => Monad[js.Any],
       chain: js.Function1[/* t */ T, Monad[js.Any]] => Monad[js.Any],
       of: js.Any => Monad[js.Any],
@@ -72,20 +65,15 @@ object monadMod {
       __obj.asInstanceOf[Monad[T]]
     }
     
-    @scala.inline
-    implicit class MonadMutableBuilder[Self <: Monad[?], T] (val x: Self & Monad[T]) extends AnyVal {
+    extension [Self <: Monad[?], T](x: Self & Monad[T]) {
       
-      @scala.inline
-      def setBind(value: js.Function1[/* t */ T, Monad[js.Any]] => Monad[js.Any]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+      inline def setBind(value: js.Function1[/* t */ T, Monad[js.Any]] => Monad[js.Any]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChain(value: js.Function1[/* t */ T, Monad[js.Any]] => Monad[js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
+      inline def setChain(value: js.Function1[/* t */ T, Monad[js.Any]] => Monad[js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOf(value: js.Any => Monad[js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => Monad[js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnit(value: js.Any => Monad[js.Any]): Self = StObject.set(x, "unit", js.Any.fromFunction1(value))
+      inline def setUnit(value: js.Any => Monad[js.Any]): Self = StObject.set(x, "unit", js.Any.fromFunction1(value))
     }
   }
 }

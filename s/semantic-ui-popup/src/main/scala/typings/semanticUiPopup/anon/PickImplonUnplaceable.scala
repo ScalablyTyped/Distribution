@@ -14,16 +14,13 @@ trait PickImplonUnplaceable extends StObject {
 }
 object PickImplonUnplaceable {
   
-  @scala.inline
-  def apply(onUnplaceable: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): PickImplonUnplaceable = {
+  inline def apply(onUnplaceable: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): PickImplonUnplaceable = {
     val __obj = js.Dynamic.literal(onUnplaceable = onUnplaceable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUnplaceable]
   }
   
-  @scala.inline
-  implicit class PickImplonUnplaceableMutableBuilder[Self <: PickImplonUnplaceable] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonUnplaceable](x: Self) {
     
-    @scala.inline
-    def setOnUnplaceable(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = StObject.set(x, "onUnplaceable", value.asInstanceOf[js.Any])
+    inline def setOnUnplaceable(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = StObject.set(x, "onUnplaceable", value.asInstanceOf[js.Any])
   }
 }

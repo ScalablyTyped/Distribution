@@ -10,16 +10,13 @@ trait OriginProtocolPolicy extends StObject {
 }
 object OriginProtocolPolicy {
   
-  @scala.inline
-  def apply(OriginProtocolPolicy: String): OriginProtocolPolicy = {
+  inline def apply(OriginProtocolPolicy: String): OriginProtocolPolicy = {
     val __obj = js.Dynamic.literal(OriginProtocolPolicy = OriginProtocolPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginProtocolPolicy]
   }
   
-  @scala.inline
-  implicit class OriginProtocolPolicyMutableBuilder[Self <: OriginProtocolPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: OriginProtocolPolicy](x: Self) {
     
-    @scala.inline
-    def setOriginProtocolPolicy(value: String): Self = StObject.set(x, "OriginProtocolPolicy", value.asInstanceOf[js.Any])
+    inline def setOriginProtocolPolicy(value: String): Self = StObject.set(x, "OriginProtocolPolicy", value.asInstanceOf[js.Any])
   }
 }

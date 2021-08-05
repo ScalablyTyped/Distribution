@@ -37,57 +37,41 @@ trait CloseIcon extends StObject {
 }
 object CloseIcon {
   
-  @scala.inline
-  def apply(): CloseIcon = {
+  inline def apply(): CloseIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloseIcon]
   }
   
-  @scala.inline
-  implicit class CloseIconMutableBuilder[Self <: CloseIcon] (val x: Self) extends AnyVal {
+  extension [Self <: CloseIcon](x: Self) {
     
-    @scala.inline
-    def setCloseIcon(value: String): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+    inline def setCloseIcon(value: String): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+    inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
     
-    @scala.inline
-    def setDirection(value: auto | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: auto | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMaxSpeedDialActionCount(value: Double): Self = StObject.set(x, "maxSpeedDialActionCount", value.asInstanceOf[js.Any])
+    inline def setMaxSpeedDialActionCount(value: Double): Self = StObject.set(x, "maxSpeedDialActionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeedDialActionCountUndefined: Self = StObject.set(x, "maxSpeedDialActionCount", js.undefined)
+    inline def setMaxSpeedDialActionCountUndefined: Self = StObject.set(x, "maxSpeedDialActionCount", js.undefined)
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
+    inline def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
+    inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait ILightSensorReadingChangedEventArgs extends StObject {
 }
 object ILightSensorReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: LightSensorReading): ILightSensorReadingChangedEventArgs = {
+  inline def apply(reading: LightSensorReading): ILightSensorReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILightSensorReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ILightSensorReadingChangedEventArgsMutableBuilder[Self <: ILightSensorReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ILightSensorReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: LightSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: LightSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

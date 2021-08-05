@@ -19,6 +19,5 @@ object global {
   @JSGlobal("Favico")
   @js.native
   def Favico: FavicoJsStatic = js.native
-  @scala.inline
-  def Favico_=(x: FavicoJsStatic): Unit = js.Dynamic.global.updateDynamic("Favico")(x.asInstanceOf[js.Any])
+  inline def Favico_=(x: FavicoJsStatic): Unit = js.Dynamic.global.updateDynamic("Favico")(x.asInstanceOf[js.Any])
 }

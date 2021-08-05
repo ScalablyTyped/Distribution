@@ -13,16 +13,13 @@ trait CreateAutoMLJobResponse extends StObject {
 }
 object CreateAutoMLJobResponse {
   
-  @scala.inline
-  def apply(AutoMLJobArn: AutoMLJobArn): CreateAutoMLJobResponse = {
+  inline def apply(AutoMLJobArn: AutoMLJobArn): CreateAutoMLJobResponse = {
     val __obj = js.Dynamic.literal(AutoMLJobArn = AutoMLJobArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAutoMLJobResponse]
   }
   
-  @scala.inline
-  implicit class CreateAutoMLJobResponseMutableBuilder[Self <: CreateAutoMLJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAutoMLJobResponse](x: Self) {
     
-    @scala.inline
-    def setAutoMLJobArn(value: AutoMLJobArn): Self = StObject.set(x, "AutoMLJobArn", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobArn(value: AutoMLJobArn): Self = StObject.set(x, "AutoMLJobArn", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait IEditActorGridContext extends StObject {
 }
 object IEditActorGridContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OnKeyDown: DomEvent => Unit,
     RTL: js.Any,
     bLightFocus: Boolean,
@@ -38,28 +37,20 @@ object IEditActorGridContext {
     __obj.asInstanceOf[IEditActorGridContext]
   }
   
-  @scala.inline
-  implicit class IEditActorGridContextMutableBuilder[Self <: IEditActorGridContext] (val x: Self) extends AnyVal {
+  extension [Self <: IEditActorGridContext](x: Self) {
     
-    @scala.inline
-    def setBLightFocus(value: Boolean): Self = StObject.set(x, "bLightFocus", value.asInstanceOf[js.Any])
+    inline def setBLightFocus(value: Boolean): Self = StObject.set(x, "bLightFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyValue(value: js.Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
+    inline def setEmptyValue(value: js.Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsGridObj(value: JsGridControl): Self = StObject.set(x, "jsGridObj", value.asInstanceOf[js.Any])
+    inline def setJsGridObj(value: JsGridControl): Self = StObject.set(x, "jsGridObj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnKeyDown(value: DomEvent => Unit): Self = StObject.set(x, "OnKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: DomEvent => Unit): Self = StObject.set(x, "OnKeyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParentNode(value: HTMLElement): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: HTMLElement): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRTL(value: js.Any): Self = StObject.set(x, "RTL", value.asInstanceOf[js.Any])
+    inline def setRTL(value: js.Any): Self = StObject.set(x, "RTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleManager(value: IStyleManager): Self = StObject.set(x, "styleManager", value.asInstanceOf[js.Any])
+    inline def setStyleManager(value: IStyleManager): Self = StObject.set(x, "styleManager", value.asInstanceOf[js.Any])
   }
 }

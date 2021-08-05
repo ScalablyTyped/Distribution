@@ -10,9 +10,7 @@ object formattersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def floatFormatter(size: Double, fractionDigits: Double): js.Function1[/* float */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("floatFormatter")(size.asInstanceOf[js.Any], fractionDigits.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* float */ Double, String]]
+  inline def floatFormatter(size: Double, fractionDigits: Double): js.Function1[/* float */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("floatFormatter")(size.asInstanceOf[js.Any], fractionDigits.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* float */ Double, String]]
   
-  @scala.inline
-  def integerFormatter(size: Double): js.Function1[/* integer */ Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("integerFormatter")(size.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* integer */ Double, String]]
+  inline def integerFormatter(size: Double): js.Function1[/* integer */ Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("integerFormatter")(size.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* integer */ Double, String]]
 }

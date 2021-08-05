@@ -14,31 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(query: String): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
-  @scala.inline
-  def apply(query: String, opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DetailedResult]]]
-  @scala.inline
-  def apply(query: String, opts: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
-  @scala.inline
-  def apply(query: js.Array[String]): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
-  @scala.inline
-  def apply(query: js.Array[String], opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DetailedResult]]]
-  @scala.inline
-  def apply(query: js.Array[String], opts: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
+  inline def apply(query: String): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
+  inline def apply(query: String, opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DetailedResult]]]
+  inline def apply(query: String, opts: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
+  inline def apply(query: js.Array[String]): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
+  inline def apply(query: js.Array[String], opts: Optionsdetailedtrue): js.Promise[js.Array[DetailedResult]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DetailedResult]]]
+  inline def apply(query: js.Array[String], opts: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
   
   @JSImport("libnpmsearch", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stream(query: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def stream(query: String, opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def stream(query: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def stream(query: js.Array[String], opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def stream(query: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def stream(query: String, opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def stream(query: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def stream(query: js.Array[String], opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   trait DetailedResult extends StObject {
     
@@ -51,24 +41,19 @@ object mod {
   }
   object DetailedResult {
     
-    @scala.inline
-    def apply(_package: Result, score: Score, searchScore: Double): DetailedResult = {
+    inline def apply(_package: Result, score: Score, searchScore: Double): DetailedResult = {
       val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any], searchScore = searchScore.asInstanceOf[js.Any])
       __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetailedResult]
     }
     
-    @scala.inline
-    implicit class DetailedResultMutableBuilder[Self <: DetailedResult] (val x: Self) extends AnyVal {
+    extension [Self <: DetailedResult](x: Self) {
       
-      @scala.inline
-      def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchScore(value: Double): Self = StObject.set(x, "searchScore", value.asInstanceOf[js.Any])
+      inline def setSearchScore(value: Double): Self = StObject.set(x, "searchScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_package(value: Result): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: Result): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,20 +65,16 @@ object mod {
   }
   object Maintainer {
     
-    @scala.inline
-    def apply(email: String, username: String): Maintainer = {
+    inline def apply(email: String, username: String): Maintainer = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Maintainer]
     }
     
-    @scala.inline
-    implicit class MaintainerMutableBuilder[Self <: Maintainer] (val x: Self) extends AnyVal {
+    extension [Self <: Maintainer](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,8 +84,7 @@ object mod {
        with typings.npmRegistryFetch.mod.Options
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
@@ -126,50 +106,36 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(name: String, version: String): Result = {
+    inline def apply(name: String, version: String): Result = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+      inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      @scala.inline
-      def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
       
-      @scala.inline
-      def setMaintainers(value: js.Array[Maintainer]): Self = StObject.set(x, "maintainers", value.asInstanceOf[js.Any])
+      inline def setMaintainers(value: js.Array[Maintainer]): Self = StObject.set(x, "maintainers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintainersUndefined: Self = StObject.set(x, "maintainers", js.undefined)
+      inline def setMaintainersUndefined: Self = StObject.set(x, "maintainers", js.undefined)
       
-      @scala.inline
-      def setMaintainersVarargs(value: Maintainer*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
+      inline def setMaintainersVarargs(value: Maintainer*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,21 +147,17 @@ object mod {
   }
   object Score {
     
-    @scala.inline
-    def apply(detail: Maintenance, `final`: Double): Score = {
+    inline def apply(detail: Maintenance, `final`: Double): Score = {
       val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any])
       __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Score]
     }
     
-    @scala.inline
-    implicit class ScoreMutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
+    extension [Self <: Score](x: Self) {
       
-      @scala.inline
-      def setDetail(value: Maintenance): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Maintenance): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinal(value: Double): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
+      inline def setFinal(value: Double): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,56 +211,40 @@ object mod {
   }
   object SearchOptions {
     
-    @scala.inline
-    def apply(): SearchOptions = {
+    inline def apply(): SearchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchOptions]
     }
     
-    @scala.inline
-    implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SearchOptions](x: Self) {
       
-      @scala.inline
-      def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+      inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMaintenance(value: Double): Self = StObject.set(x, "maintenance", value.asInstanceOf[js.Any])
+      inline def setMaintenance(value: Double): Self = StObject.set(x, "maintenance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintenanceUndefined: Self = StObject.set(x, "maintenance", js.undefined)
+      inline def setMaintenanceUndefined: Self = StObject.set(x, "maintenance", js.undefined)
       
-      @scala.inline
-      def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
+      inline def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopularityUndefined: Self = StObject.set(x, "popularity", js.undefined)
+      inline def setPopularityUndefined: Self = StObject.set(x, "popularity", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSortBy(value: optimal | quality | maintenance | popularity): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+      inline def setSortBy(value: optimal | quality | maintenance | popularity): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+      inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     }
   }
 }

@@ -18,25 +18,19 @@ trait PutComponentPolicyResponse extends StObject {
 }
 object PutComponentPolicyResponse {
   
-  @scala.inline
-  def apply(): PutComponentPolicyResponse = {
+  inline def apply(): PutComponentPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutComponentPolicyResponse]
   }
   
-  @scala.inline
-  implicit class PutComponentPolicyResponseMutableBuilder[Self <: PutComponentPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutComponentPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setComponentArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
+    inline def setComponentArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentArnUndefined: Self = StObject.set(x, "componentArn", js.undefined)
+    inline def setComponentArnUndefined: Self = StObject.set(x, "componentArn", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

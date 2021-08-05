@@ -33,37 +33,27 @@ trait GetAllFramesReturnDetails extends StObject {
 }
 object GetAllFramesReturnDetails {
   
-  @scala.inline
-  def apply(frameId: Double, parentFrameId: Double, tabId: Double, url: String): GetAllFramesReturnDetails = {
+  inline def apply(frameId: Double, parentFrameId: Double, tabId: Double, url: String): GetAllFramesReturnDetails = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllFramesReturnDetails]
   }
   
-  @scala.inline
-  implicit class GetAllFramesReturnDetailsMutableBuilder[Self <: GetAllFramesReturnDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GetAllFramesReturnDetails](x: Self) {
     
-    @scala.inline
-    def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
+    inline def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorOccurredUndefined: Self = StObject.set(x, "errorOccurred", js.undefined)
+    inline def setErrorOccurredUndefined: Self = StObject.set(x, "errorOccurred", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+    inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+    inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

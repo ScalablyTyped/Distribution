@@ -32,32 +32,24 @@ object carouselCaptionMod {
   }
   object CarouselCaptionProps {
     
-    @scala.inline
-    def apply(): CarouselCaptionProps = {
+    inline def apply(): CarouselCaptionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselCaptionProps]
     }
     
-    @scala.inline
-    implicit class CarouselCaptionPropsMutableBuilder[Self <: CarouselCaptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselCaptionProps](x: Self) {
       
-      @scala.inline
-      def setCaptionHeader(value: ReactNode): Self = StObject.set(x, "captionHeader", value.asInstanceOf[js.Any])
+      inline def setCaptionHeader(value: ReactNode): Self = StObject.set(x, "captionHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionHeaderUndefined: Self = StObject.set(x, "captionHeader", js.undefined)
+      inline def setCaptionHeaderUndefined: Self = StObject.set(x, "captionHeader", js.undefined)
       
-      @scala.inline
-      def setCaptionText(value: ReactNode): Self = StObject.set(x, "captionText", value.asInstanceOf[js.Any])
+      inline def setCaptionText(value: ReactNode): Self = StObject.set(x, "captionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionTextUndefined: Self = StObject.set(x, "captionText", js.undefined)
+      inline def setCaptionTextUndefined: Self = StObject.set(x, "captionText", js.undefined)
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
     }
   }
 }

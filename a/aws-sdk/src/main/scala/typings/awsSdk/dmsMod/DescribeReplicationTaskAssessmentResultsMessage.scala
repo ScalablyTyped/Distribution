@@ -23,31 +23,23 @@ trait DescribeReplicationTaskAssessmentResultsMessage extends StObject {
 }
 object DescribeReplicationTaskAssessmentResultsMessage {
   
-  @scala.inline
-  def apply(): DescribeReplicationTaskAssessmentResultsMessage = {
+  inline def apply(): DescribeReplicationTaskAssessmentResultsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReplicationTaskAssessmentResultsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationTaskAssessmentResultsMessageMutableBuilder[Self <: DescribeReplicationTaskAssessmentResultsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationTaskAssessmentResultsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
+    inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
   }
 }

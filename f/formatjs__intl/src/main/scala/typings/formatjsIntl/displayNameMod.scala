@@ -14,8 +14,7 @@ object displayNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatDisplayName(
+  inline def formatDisplayName(
     hasLocaleOnError: LocaleOnError,
     getDisplayNames: js.Function1[/* args */ ConstructorParameters[TypeofDisplayNames], DisplayNames],
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNames['of']>[0], opts : @formatjs/intl.@formatjs/intl/lib/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any,

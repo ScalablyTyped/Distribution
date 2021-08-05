@@ -13,8 +13,7 @@ trait ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata extends StObject {
 }
 object ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: RelationIdMetadataArgs,
     entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata
   ): ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata = {
@@ -22,13 +21,10 @@ object ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata {
     __obj.asInstanceOf[ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata]
   }
   
-  @scala.inline
-  implicit class ArgsRelationIdMetadataArgsEntityMetadataEntityMetadataMutableBuilder[Self <: ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata](x: Self) {
     
-    @scala.inline
-    def setArgs(value: RelationIdMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: RelationIdMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
+    inline def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

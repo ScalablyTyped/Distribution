@@ -25,20 +25,16 @@ object mod {
     }
     object INotify {
       
-      @scala.inline
-      def apply(close: () => Unit, message: String): INotify = {
+      inline def apply(close: () => Unit, message: String): INotify = {
         val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), message = message.asInstanceOf[js.Any])
         __obj.asInstanceOf[INotify]
       }
       
-      @scala.inline
-      implicit class INotifyMutableBuilder[Self <: INotify] (val x: Self) extends AnyVal {
+      extension [Self <: INotify](x: Self) {
         
-        @scala.inline
-        def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+        inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       }
     }
     

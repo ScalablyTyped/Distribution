@@ -23,25 +23,19 @@ trait UserCommon
 }
 object UserCommon {
   
-  @scala.inline
-  def apply(custom: Unit, enabled: Boolean, name: String, password: String): UserCommon = {
+  inline def apply(custom: Unit, enabled: Boolean, name: String, password: String): UserCommon = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserCommon]
   }
   
-  @scala.inline
-  implicit class UserCommonMutableBuilder[Self <: UserCommon] (val x: Self) extends AnyVal {
+  extension [Self <: UserCommon](x: Self) {
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

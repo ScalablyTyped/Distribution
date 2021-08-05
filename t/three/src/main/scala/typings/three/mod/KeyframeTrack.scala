@@ -29,6 +29,5 @@ object KeyframeTrack {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

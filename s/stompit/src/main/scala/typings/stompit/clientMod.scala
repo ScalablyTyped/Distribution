@@ -27,14 +27,11 @@ object clientMod {
   trait Ack extends StObject
   object Ack {
     
-    @scala.inline
-    def auto: typings.stompit.stompitStrings.auto = "auto".asInstanceOf[typings.stompit.stompitStrings.auto]
+    inline def auto: typings.stompit.stompitStrings.auto = "auto".asInstanceOf[typings.stompit.stompitStrings.auto]
     
-    @scala.inline
-    def client: typings.stompit.stompitStrings.client = "client".asInstanceOf[typings.stompit.stompitStrings.client]
+    inline def client: typings.stompit.stompitStrings.client = "client".asInstanceOf[typings.stompit.stompitStrings.client]
     
-    @scala.inline
-    def `client-individual`: typings.stompit.stompitStrings.`client-individual` = "client-individual".asInstanceOf[typings.stompit.stompitStrings.`client-individual`]
+    inline def `client-individual`: typings.stompit.stompitStrings.`client-individual` = "client-individual".asInstanceOf[typings.stompit.stompitStrings.`client-individual`]
   }
   
   @js.native
@@ -216,20 +213,16 @@ object clientMod {
   }
   object SendOptions {
     
-    @scala.inline
-    def apply(onError: Error => Unit, onReceipt: () => Unit): SendOptions = {
+    inline def apply(onError: Error => Unit, onReceipt: () => Unit): SendOptions = {
       val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onReceipt = js.Any.fromFunction0(onReceipt))
       __obj.asInstanceOf[SendOptions]
     }
     
-    @scala.inline
-    implicit class SendOptionsMutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SendOptions](x: Self) {
       
-      @scala.inline
-      def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReceipt(value: () => Unit): Self = StObject.set(x, "onReceipt", js.Any.fromFunction0(value))
+      inline def setOnReceipt(value: () => Unit): Self = StObject.set(x, "onReceipt", js.Any.fromFunction0(value))
     }
   }
 }

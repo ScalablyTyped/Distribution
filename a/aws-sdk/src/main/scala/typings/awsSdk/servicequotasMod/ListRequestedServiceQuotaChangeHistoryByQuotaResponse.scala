@@ -18,28 +18,21 @@ trait ListRequestedServiceQuotaChangeHistoryByQuotaResponse extends StObject {
 }
 object ListRequestedServiceQuotaChangeHistoryByQuotaResponse {
   
-  @scala.inline
-  def apply(): ListRequestedServiceQuotaChangeHistoryByQuotaResponse = {
+  inline def apply(): ListRequestedServiceQuotaChangeHistoryByQuotaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRequestedServiceQuotaChangeHistoryByQuotaResponse]
   }
   
-  @scala.inline
-  implicit class ListRequestedServiceQuotaChangeHistoryByQuotaResponseMutableBuilder[Self <: ListRequestedServiceQuotaChangeHistoryByQuotaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRequestedServiceQuotaChangeHistoryByQuotaResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRequestedQuotas(value: RequestedServiceQuotaChangeHistoryListDefinition): Self = StObject.set(x, "RequestedQuotas", value.asInstanceOf[js.Any])
+    inline def setRequestedQuotas(value: RequestedServiceQuotaChangeHistoryListDefinition): Self = StObject.set(x, "RequestedQuotas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedQuotasUndefined: Self = StObject.set(x, "RequestedQuotas", js.undefined)
+    inline def setRequestedQuotasUndefined: Self = StObject.set(x, "RequestedQuotas", js.undefined)
     
-    @scala.inline
-    def setRequestedQuotasVarargs(value: RequestedServiceQuotaChange*): Self = StObject.set(x, "RequestedQuotas", js.Array(value :_*))
+    inline def setRequestedQuotasVarargs(value: RequestedServiceQuotaChange*): Self = StObject.set(x, "RequestedQuotas", js.Array(value :_*))
   }
 }

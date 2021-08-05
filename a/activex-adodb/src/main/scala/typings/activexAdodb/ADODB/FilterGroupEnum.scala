@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterGroupEnum extends StObject
 object FilterGroupEnum {
   
-  @scala.inline
-  def adFilterAffectedRecords: `2` = 2.asInstanceOf[`2`]
+  inline def adFilterAffectedRecords: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adFilterConflictingRecords: `5` = 5.asInstanceOf[`5`]
+  inline def adFilterConflictingRecords: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def adFilterFetchedRecords: `3` = 3.asInstanceOf[`3`]
+  inline def adFilterFetchedRecords: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def adFilterNone: `0` = 0.asInstanceOf[`0`]
+  inline def adFilterNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adFilterPendingRecords: `1` = 1.asInstanceOf[`1`]
+  inline def adFilterPendingRecords: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adFilterPredicate: `4` = 4.asInstanceOf[`4`]
+  inline def adFilterPredicate: `4` = 4.asInstanceOf[`4`]
 }

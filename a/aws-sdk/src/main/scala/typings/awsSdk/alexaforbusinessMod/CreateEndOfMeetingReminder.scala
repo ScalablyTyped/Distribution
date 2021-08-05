@@ -23,8 +23,7 @@ trait CreateEndOfMeetingReminder extends StObject {
 }
 object CreateEndOfMeetingReminder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Enabled: Boolean,
     ReminderAtMinutes: EndOfMeetingReminderMinutesList,
     ReminderType: EndOfMeetingReminderType
@@ -33,19 +32,14 @@ object CreateEndOfMeetingReminder {
     __obj.asInstanceOf[CreateEndOfMeetingReminder]
   }
   
-  @scala.inline
-  implicit class CreateEndOfMeetingReminderMutableBuilder[Self <: CreateEndOfMeetingReminder] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEndOfMeetingReminder](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = StObject.set(x, "ReminderAtMinutes", value.asInstanceOf[js.Any])
+    inline def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = StObject.set(x, "ReminderAtMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminderAtMinutesVarargs(value: Minutes*): Self = StObject.set(x, "ReminderAtMinutes", js.Array(value :_*))
+    inline def setReminderAtMinutesVarargs(value: Minutes*): Self = StObject.set(x, "ReminderAtMinutes", js.Array(value :_*))
     
-    @scala.inline
-    def setReminderType(value: EndOfMeetingReminderType): Self = StObject.set(x, "ReminderType", value.asInstanceOf[js.Any])
+    inline def setReminderType(value: EndOfMeetingReminderType): Self = StObject.set(x, "ReminderType", value.asInstanceOf[js.Any])
   }
 }

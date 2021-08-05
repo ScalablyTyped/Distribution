@@ -14,25 +14,19 @@ trait WebImage extends StObject {
 }
 object WebImage {
   
-  @scala.inline
-  def apply(): WebImage = {
+  inline def apply(): WebImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebImage]
   }
   
-  @scala.inline
-  implicit class WebImageMutableBuilder[Self <: WebImage] (val x: Self) extends AnyVal {
+  extension [Self <: WebImage](x: Self) {
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

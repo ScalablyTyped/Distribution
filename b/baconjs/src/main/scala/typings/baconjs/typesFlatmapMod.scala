@@ -13,29 +13,21 @@ object typesFlatmapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[In, Out](spawner: EventSpawner[In, Out], src: typings.baconjs.observableMod.default[In]): typings.baconjs.observableMod.default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[Out]]
-  @scala.inline
-  def default[In, Out](
+  inline def default[In, Out](spawner: EventSpawner[In, Out], src: typings.baconjs.observableMod.default[In]): typings.baconjs.observableMod.default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[Out]]
+  inline def default[In, Out](
     spawner: EventSpawner[In, Out],
     src: typings.baconjs.observableMod.default[In],
     params: FlatMapParams
   ): typings.baconjs.observableMod.default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[Out]]
   
-  @scala.inline
-  def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In]): default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap_")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[default[Out]]
-  @scala.inline
-  def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In], params: FlatMapParams): default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap_")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[default[Out]]
+  inline def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In]): default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap_")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[default[Out]]
+  inline def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In], params: FlatMapParams): default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap_")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[default[Out]]
   
-  @scala.inline
-  def handleEventValueWith[In, Out](f: SpawnerOrObservable[In, Out]): EventSpawner[In, Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventValueWith")(f.asInstanceOf[js.Any]).asInstanceOf[EventSpawner[In, Out]]
+  inline def handleEventValueWith[In, Out](f: SpawnerOrObservable[In, Out]): EventSpawner[In, Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventValueWith")(f.asInstanceOf[js.Any]).asInstanceOf[EventSpawner[In, Out]]
   
-  @scala.inline
-  def makeObservable[V](x: V): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
-  @scala.inline
-  def makeObservable[V](x: Event[V]): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
-  @scala.inline
-  def makeObservable[V](x: default[V]): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
+  inline def makeObservable[V](x: V): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
+  inline def makeObservable[V](x: Event[V]): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
+  inline def makeObservable[V](x: default[V]): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
   
   type EventOrValue[V] = Event[V] | V
   
@@ -53,38 +45,28 @@ object typesFlatmapMod {
   }
   object FlatMapParams {
     
-    @scala.inline
-    def apply(): FlatMapParams = {
+    inline def apply(): FlatMapParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlatMapParams]
     }
     
-    @scala.inline
-    implicit class FlatMapParamsMutableBuilder[Self <: FlatMapParams] (val x: Self) extends AnyVal {
+    extension [Self <: FlatMapParams](x: Self) {
       
-      @scala.inline
-      def setDesc(value: Desc): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      inline def setDesc(value: Desc): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
       
-      @scala.inline
-      def setFirstOnly(value: Boolean): Self = StObject.set(x, "firstOnly", value.asInstanceOf[js.Any])
+      inline def setFirstOnly(value: Boolean): Self = StObject.set(x, "firstOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstOnlyUndefined: Self = StObject.set(x, "firstOnly", js.undefined)
+      inline def setFirstOnlyUndefined: Self = StObject.set(x, "firstOnly", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMapError(value: Boolean): Self = StObject.set(x, "mapError", value.asInstanceOf[js.Any])
+      inline def setMapError(value: Boolean): Self = StObject.set(x, "mapError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapErrorUndefined: Self = StObject.set(x, "mapError", js.undefined)
+      inline def setMapErrorUndefined: Self = StObject.set(x, "mapError", js.undefined)
     }
   }
   

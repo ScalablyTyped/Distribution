@@ -80,70 +80,49 @@ trait BlockSupports extends StObject {
 }
 object BlockSupports {
   
-  @scala.inline
-  def apply(): BlockSupports = {
+  inline def apply(): BlockSupports = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlockSupports]
   }
   
-  @scala.inline
-  implicit class BlockSupportsMutableBuilder[Self <: BlockSupports] (val x: Self) extends AnyVal {
+  extension [Self <: BlockSupports](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Boolean | js.Array[BlockAlignment]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Boolean | js.Array[BlockAlignment]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setAlignVarargs(value: BlockAlignment*): Self = StObject.set(x, "align", js.Array(value :_*))
+    inline def setAlignVarargs(value: BlockAlignment*): Self = StObject.set(x, "align", js.Array(value :_*))
     
-    @scala.inline
-    def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
+    inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignWideUndefined: Self = StObject.set(x, "alignWide", js.undefined)
+    inline def setAlignWideUndefined: Self = StObject.set(x, "alignWide", js.undefined)
     
-    @scala.inline
-    def setAnchor(value: Boolean): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Boolean): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setClassName(value: Boolean): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Boolean): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCustomClassName(value: Boolean): Self = StObject.set(x, "customClassName", value.asInstanceOf[js.Any])
+    inline def setCustomClassName(value: Boolean): Self = StObject.set(x, "customClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomClassNameUndefined: Self = StObject.set(x, "customClassName", js.undefined)
+    inline def setCustomClassNameUndefined: Self = StObject.set(x, "customClassName", js.undefined)
     
-    @scala.inline
-    def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setInserter(value: Boolean): Self = StObject.set(x, "inserter", value.asInstanceOf[js.Any])
+    inline def setInserter(value: Boolean): Self = StObject.set(x, "inserter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInserterUndefined: Self = StObject.set(x, "inserter", js.undefined)
+    inline def setInserterUndefined: Self = StObject.set(x, "inserter", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setReusable(value: Boolean): Self = StObject.set(x, "reusable", value.asInstanceOf[js.Any])
+    inline def setReusable(value: Boolean): Self = StObject.set(x, "reusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReusableUndefined: Self = StObject.set(x, "reusable", js.undefined)
+    inline def setReusableUndefined: Self = StObject.set(x, "reusable", js.undefined)
   }
 }

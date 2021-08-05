@@ -42,8 +42,7 @@ trait DockerContainerData extends StObject {
 }
 object DockerContainerData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     command: String,
     created: Double,
     createdAt: String,
@@ -66,64 +65,44 @@ object DockerContainerData {
     __obj.asInstanceOf[DockerContainerData]
   }
   
-  @scala.inline
-  implicit class DockerContainerDataMutableBuilder[Self <: DockerContainerData] (val x: Self) extends AnyVal {
+  extension [Self <: DockerContainerData](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinished(value: Double): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: Double): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedAt(value: String): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: String): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageID(value: String): Self = StObject.set(x, "imageID", value.asInstanceOf[js.Any])
+    inline def setImageID(value: String): Self = StObject.set(x, "imageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMounts(value: js.Array[DockerContainerMountData]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
+    inline def setMounts(value: js.Array[DockerContainerMountData]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountsVarargs(value: DockerContainerMountData*): Self = StObject.set(x, "mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: DockerContainerMountData*): Self = StObject.set(x, "mounts", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPorts(value: js.Array[Double]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[Double]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
-    @scala.inline
-    def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
+    inline def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -19,22 +19,17 @@ trait DescribeTypeRegistrationI extends StObject {
 }
 object DescribeTypeRegistrationI {
   
-  @scala.inline
-  def apply(RegistrationToken: RegistrationToken): DescribeTypeRegistrationI = {
+  inline def apply(RegistrationToken: RegistrationToken): DescribeTypeRegistrationI = {
     val __obj = js.Dynamic.literal(RegistrationToken = RegistrationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTypeRegistrationI]
   }
   
-  @scala.inline
-  implicit class DescribeTypeRegistrationIMutableBuilder[Self <: DescribeTypeRegistrationI] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTypeRegistrationI](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setRegistrationToken(value: RegistrationToken): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
+    inline def setRegistrationToken(value: RegistrationToken): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
   }
 }

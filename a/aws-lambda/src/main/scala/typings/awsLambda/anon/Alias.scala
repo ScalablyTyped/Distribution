@@ -14,22 +14,17 @@ trait Alias extends StObject {
 }
 object Alias {
   
-  @scala.inline
-  def apply(alias: String, name: String, version: String): Alias = {
+  inline def apply(alias: String, name: String, version: String): Alias = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
   
-  @scala.inline
-  implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
+  extension [Self <: Alias](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

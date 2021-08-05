@@ -53,8 +53,7 @@ trait ParagraphInfo extends StObject {
 }
 object ParagraphInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bulletType: String,
     index: Double,
     listType: ListType | None | Number | Bullet,
@@ -64,19 +63,14 @@ object ParagraphInfo {
     __obj.asInstanceOf[ParagraphInfo]
   }
   
-  @scala.inline
-  implicit class ParagraphInfoMutableBuilder[Self <: ParagraphInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphInfo](x: Self) {
     
-    @scala.inline
-    def setBulletType(value: String): Self = StObject.set(x, "bulletType", value.asInstanceOf[js.Any])
+    inline def setBulletType(value: String): Self = StObject.set(x, "bulletType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListType(value: ListType | None | Number | Bullet): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
+    inline def setListType(value: ListType | None | Number | Bullet): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any): Self = StObject.set(x, "numberType", value.asInstanceOf[js.Any])
+    inline def setNumberType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any): Self = StObject.set(x, "numberType", value.asInstanceOf[js.Any])
   }
 }

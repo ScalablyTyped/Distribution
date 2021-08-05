@@ -29,8 +29,7 @@ trait CooldownDurationLevel extends StObject {
 }
 object CooldownDurationLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`0`, 
       typings.screeps.screepsNumbers.`2`, 
@@ -43,20 +42,15 @@ object CooldownDurationLevel {
     __obj.asInstanceOf[CooldownDurationLevel]
   }
   
-  @scala.inline
-  implicit class CooldownDurationLevelMutableBuilder[Self <: CooldownDurationLevel] (val x: Self) extends AnyVal {
+  extension [Self <: CooldownDurationLevel](x: Self) {
     
-    @scala.inline
-    def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldown(value: `1000`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: `1000`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: `1000`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: `1000`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(
+    inline def setLevel(
       value: js.Tuple5[
           typings.screeps.screepsNumbers.`0`, 
           typings.screeps.screepsNumbers.`2`, 
@@ -66,10 +60,8 @@ object CooldownDurationLevel {
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOps(value: `100`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: `100`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

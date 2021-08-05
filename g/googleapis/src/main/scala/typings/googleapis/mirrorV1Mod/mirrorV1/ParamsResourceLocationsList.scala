@@ -19,19 +19,15 @@ trait ParamsResourceLocationsList
 }
 object ParamsResourceLocationsList {
   
-  @scala.inline
-  def apply(): ParamsResourceLocationsList = {
+  inline def apply(): ParamsResourceLocationsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceLocationsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceLocationsListMutableBuilder[Self <: ParamsResourceLocationsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceLocationsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

@@ -17,34 +17,25 @@ trait InstanceConfig extends StObject {
 }
 object InstanceConfig {
   
-  @scala.inline
-  def apply(): InstanceConfig = {
+  inline def apply(): InstanceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceConfig]
   }
   
-  @scala.inline
-  implicit class InstanceConfigMutableBuilder[Self <: InstanceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceConfig](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReplicas(value: js.Array[ReplicaInfo]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: js.Array[ReplicaInfo]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    @scala.inline
-    def setReplicasVarargs(value: ReplicaInfo*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: ReplicaInfo*): Self = StObject.set(x, "replicas", js.Array(value :_*))
   }
 }

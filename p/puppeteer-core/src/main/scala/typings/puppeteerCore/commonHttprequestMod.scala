@@ -28,36 +28,36 @@ object commonHttprequestMod {
       redirectChain: js.Array[HTTPRequest]
     ) = this()
     
-    var _allowInterception: js.Any = js.native
+    /* private */ var _allowInterception: js.Any = js.native
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
     /**
       * @internal
       */
     var _failureText: js.Any = js.native
     
-    var _frame: js.Any = js.native
+    /* private */ var _frame: js.Any = js.native
     
     /**
       * @internal
       */
     var _fromMemoryCache: Boolean = js.native
     
-    var _headers: js.Any = js.native
+    /* private */ var _headers: js.Any = js.native
     
-    var _interceptionHandled: js.Any = js.native
+    /* private */ var _interceptionHandled: js.Any = js.native
     
     /**
       * @internal
       */
     var _interceptionId: String = js.native
     
-    var _isNavigationRequest: js.Any = js.native
+    /* private */ var _isNavigationRequest: js.Any = js.native
     
-    var _method: js.Any = js.native
+    /* private */ var _method: js.Any = js.native
     
-    var _postData: js.Any = js.native
+    /* private */ var _postData: js.Any = js.native
     
     /**
       * @internal
@@ -69,14 +69,14 @@ object commonHttprequestMod {
       */
     var _requestId: String = js.native
     
-    var _resourceType: js.Any = js.native
+    /* private */ var _resourceType: js.Any = js.native
     
     /**
       * @internal
       */
     var _response: HTTPResponse | Null = js.native
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
     /**
       * Aborts a request.
@@ -261,38 +261,28 @@ object commonHttprequestMod {
   }
   object ContinueRequestOverrides {
     
-    @scala.inline
-    def apply(): ContinueRequestOverrides = {
+    inline def apply(): ContinueRequestOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContinueRequestOverrides]
     }
     
-    @scala.inline
-    implicit class ContinueRequestOverridesMutableBuilder[Self <: ContinueRequestOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ContinueRequestOverrides](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
+      inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -315,47 +305,33 @@ object commonHttprequestMod {
   trait ErrorCode extends StObject
   object ErrorCode {
     
-    @scala.inline
-    def aborted: typings.puppeteerCore.puppeteerCoreStrings.aborted = "aborted".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.aborted]
+    inline def aborted: typings.puppeteerCore.puppeteerCoreStrings.aborted = "aborted".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.aborted]
     
-    @scala.inline
-    def accessdenied: typings.puppeteerCore.puppeteerCoreStrings.accessdenied = "accessdenied".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.accessdenied]
+    inline def accessdenied: typings.puppeteerCore.puppeteerCoreStrings.accessdenied = "accessdenied".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.accessdenied]
     
-    @scala.inline
-    def addressunreachable: typings.puppeteerCore.puppeteerCoreStrings.addressunreachable = "addressunreachable".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.addressunreachable]
+    inline def addressunreachable: typings.puppeteerCore.puppeteerCoreStrings.addressunreachable = "addressunreachable".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.addressunreachable]
     
-    @scala.inline
-    def blockedbyclient: typings.puppeteerCore.puppeteerCoreStrings.blockedbyclient = "blockedbyclient".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.blockedbyclient]
+    inline def blockedbyclient: typings.puppeteerCore.puppeteerCoreStrings.blockedbyclient = "blockedbyclient".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.blockedbyclient]
     
-    @scala.inline
-    def blockedbyresponse: typings.puppeteerCore.puppeteerCoreStrings.blockedbyresponse = "blockedbyresponse".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.blockedbyresponse]
+    inline def blockedbyresponse: typings.puppeteerCore.puppeteerCoreStrings.blockedbyresponse = "blockedbyresponse".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.blockedbyresponse]
     
-    @scala.inline
-    def connectionaborted: typings.puppeteerCore.puppeteerCoreStrings.connectionaborted = "connectionaborted".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionaborted]
+    inline def connectionaborted: typings.puppeteerCore.puppeteerCoreStrings.connectionaborted = "connectionaborted".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionaborted]
     
-    @scala.inline
-    def connectionclosed: typings.puppeteerCore.puppeteerCoreStrings.connectionclosed = "connectionclosed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionclosed]
+    inline def connectionclosed: typings.puppeteerCore.puppeteerCoreStrings.connectionclosed = "connectionclosed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionclosed]
     
-    @scala.inline
-    def connectionfailed: typings.puppeteerCore.puppeteerCoreStrings.connectionfailed = "connectionfailed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionfailed]
+    inline def connectionfailed: typings.puppeteerCore.puppeteerCoreStrings.connectionfailed = "connectionfailed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionfailed]
     
-    @scala.inline
-    def connectionrefused: typings.puppeteerCore.puppeteerCoreStrings.connectionrefused = "connectionrefused".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionrefused]
+    inline def connectionrefused: typings.puppeteerCore.puppeteerCoreStrings.connectionrefused = "connectionrefused".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionrefused]
     
-    @scala.inline
-    def connectionreset: typings.puppeteerCore.puppeteerCoreStrings.connectionreset = "connectionreset".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionreset]
+    inline def connectionreset: typings.puppeteerCore.puppeteerCoreStrings.connectionreset = "connectionreset".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.connectionreset]
     
-    @scala.inline
-    def failed: typings.puppeteerCore.puppeteerCoreStrings.failed = "failed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.failed]
+    inline def failed: typings.puppeteerCore.puppeteerCoreStrings.failed = "failed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.failed]
     
-    @scala.inline
-    def internetdisconnected: typings.puppeteerCore.puppeteerCoreStrings.internetdisconnected = "internetdisconnected".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.internetdisconnected]
+    inline def internetdisconnected: typings.puppeteerCore.puppeteerCoreStrings.internetdisconnected = "internetdisconnected".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.internetdisconnected]
     
-    @scala.inline
-    def namenotresolved: typings.puppeteerCore.puppeteerCoreStrings.namenotresolved = "namenotresolved".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.namenotresolved]
+    inline def namenotresolved: typings.puppeteerCore.puppeteerCoreStrings.namenotresolved = "namenotresolved".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.namenotresolved]
     
-    @scala.inline
-    def timedout: typings.puppeteerCore.puppeteerCoreStrings.timedout = "timedout".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.timedout]
+    inline def timedout: typings.puppeteerCore.puppeteerCoreStrings.timedout = "timedout".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.timedout]
   }
   
   trait ResponseForRequest extends StObject {
@@ -370,26 +346,20 @@ object commonHttprequestMod {
   }
   object ResponseForRequest {
     
-    @scala.inline
-    def apply(body: String | Buffer, contentType: String, headers: Record[String, String], status: Double): ResponseForRequest = {
+    inline def apply(body: String | Buffer, contentType: String, headers: Record[String, String], status: Double): ResponseForRequest = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseForRequest]
     }
     
-    @scala.inline
-    implicit class ResponseForRequestMutableBuilder[Self <: ResponseForRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseForRequest](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

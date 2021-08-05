@@ -18,19 +18,15 @@ trait GetMaintenanceWindowExecutionTaskRequest extends StObject {
 }
 object GetMaintenanceWindowExecutionTaskRequest {
   
-  @scala.inline
-  def apply(TaskId: MaintenanceWindowExecutionTaskId, WindowExecutionId: MaintenanceWindowExecutionId): GetMaintenanceWindowExecutionTaskRequest = {
+  inline def apply(TaskId: MaintenanceWindowExecutionTaskId, WindowExecutionId: MaintenanceWindowExecutionId): GetMaintenanceWindowExecutionTaskRequest = {
     val __obj = js.Dynamic.literal(TaskId = TaskId.asInstanceOf[js.Any], WindowExecutionId = WindowExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMaintenanceWindowExecutionTaskRequest]
   }
   
-  @scala.inline
-  implicit class GetMaintenanceWindowExecutionTaskRequestMutableBuilder[Self <: GetMaintenanceWindowExecutionTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMaintenanceWindowExecutionTaskRequest](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: MaintenanceWindowExecutionTaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: MaintenanceWindowExecutionTaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
+    inline def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
   }
 }

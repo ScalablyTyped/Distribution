@@ -15,177 +15,177 @@ object parserMod {
   @js.native
   class Parser () extends StObject {
     
-    var canBeIdentifier: js.Any = js.native
+    /* private */ var canBeIdentifier: js.Any = js.native
     
-    var cancelToken: js.Any = js.native
+    /* private */ var cancelToken: js.Any = js.native
     
-    var diagnostics: js.Any = js.native
+    /* private */ var diagnostics: js.Any = js.native
     
-    var finishNode: js.Any = js.native
+    /* private */ var finishNode: js.Any = js.native
     
-    var imports: js.Any = js.native
+    /* private */ var imports: js.Any = js.native
     
-    var isEOF: js.Any = js.native
+    /* private */ var isEOF: js.Any = js.native
     
-    var isStartOfArgument: js.Any = js.native
+    /* private */ var isStartOfArgument: js.Any = js.native
     
-    var isStartOfArgumentList: js.Any = js.native
+    /* private */ var isStartOfArgumentList: js.Any = js.native
     
-    var isStartOfListElement: js.Any = js.native
+    /* private */ var isStartOfListElement: js.Any = js.native
     
-    var isStartOfParameter: js.Any = js.native
+    /* private */ var isStartOfParameter: js.Any = js.native
     
-    var isStartOfRightHandSide: js.Any = js.native
+    /* private */ var isStartOfRightHandSide: js.Any = js.native
     
-    var isStartOfSourceElement: js.Any = js.native
+    /* private */ var isStartOfSourceElement: js.Any = js.native
     
-    var isStartOfSymbolSpan: js.Any = js.native
+    /* private */ var isStartOfSymbolSpan: js.Any = js.native
     
-    var isStartOfSymbolSpanOnSameLine: js.Any = js.native
+    /* private */ var isStartOfSymbolSpanOnSameLine: js.Any = js.native
     
-    var lookahead: js.Any = js.native
+    /* private */ var lookahead: js.Any = js.native
     
-    var nextToken: js.Any = js.native
+    /* private */ var nextToken: js.Any = js.native
     
-    var nextTokenIsArgument: js.Any = js.native
+    /* private */ var nextTokenIsArgument: js.Any = js.native
     
-    var nextTokenIsParameterOperatorToken: js.Any = js.native
+    /* private */ var nextTokenIsParameterOperatorToken: js.Any = js.native
     
-    var parse: js.Any = js.native
+    /* private */ var parse: js.Any = js.native
     
-    var parseAnyToken: js.Any = js.native
+    /* private */ var parseAnyToken: js.Any = js.native
     
-    var parseArgument: js.Any = js.native
+    /* private */ var parseArgument: js.Any = js.native
     
-    var parseArgumentListTail: js.Any = js.native
+    /* private */ var parseArgumentListTail: js.Any = js.native
     
-    var parseAssertion: js.Any = js.native
+    /* private */ var parseAssertion: js.Any = js.native
     
-    var parseBody: js.Any = js.native
+    /* private */ var parseBody: js.Any = js.native
     
-    var parseButNotSymbolTail: js.Any = js.native
+    /* private */ var parseButNotSymbolTail: js.Any = js.native
     
-    var parseDefine: js.Any = js.native
+    /* private */ var parseDefine: js.Any = js.native
     
-    var parseElement: js.Any = js.native
+    /* private */ var parseElement: js.Any = js.native
     
-    var parseEmptyAssertionTail: js.Any = js.native
+    /* private */ var parseEmptyAssertionTail: js.Any = js.native
     
-    var parseIdentifier: js.Any = js.native
+    /* private */ var parseIdentifier: js.Any = js.native
     
-    var parseImport: js.Any = js.native
+    /* private */ var parseImport: js.Any = js.native
     
-    var parseInvalidAssertionTail: js.Any = js.native
+    /* private */ var parseInvalidAssertionTail: js.Any = js.native
     
-    var parseInvalidSymbol: js.Any = js.native
+    /* private */ var parseInvalidSymbol: js.Any = js.native
     
-    var parseLexicalGoalAssertionTail: js.Any = js.native
+    /* private */ var parseLexicalGoalAssertionTail: js.Any = js.native
     
-    var parseLine: js.Any = js.native
+    /* private */ var parseLine: js.Any = js.native
     
-    var parseLinkReference: js.Any = js.native
+    /* private */ var parseLinkReference: js.Any = js.native
     
-    var parseList: js.Any = js.native
+    /* private */ var parseList: js.Any = js.native
     
-    var parseLookaheadAssertionTail: js.Any = js.native
+    /* private */ var parseLookaheadAssertionTail: js.Any = js.native
     
-    var parseMetaElement: js.Any = js.native
+    /* private */ var parseMetaElement: js.Any = js.native
     
-    var parseNoSymbolHereAssertionTail: js.Any = js.native
+    /* private */ var parseNoSymbolHereAssertionTail: js.Any = js.native
     
-    var parseNonterminal: js.Any = js.native
+    /* private */ var parseNonterminal: js.Any = js.native
     
-    var parseNumberLiteral: js.Any = js.native
+    /* private */ var parseNumberLiteral: js.Any = js.native
     
-    var parseOneOfList: js.Any = js.native
+    /* private */ var parseOneOfList: js.Any = js.native
     
-    var parseOneOfSymbol: js.Any = js.native
+    /* private */ var parseOneOfSymbol: js.Any = js.native
     
-    var parseOptional: js.Any = js.native
+    /* private */ var parseOptional: js.Any = js.native
     
-    var parseParameter: js.Any = js.native
+    /* private */ var parseParameter: js.Any = js.native
     
-    var parseParameterListTail: js.Any = js.native
+    /* private */ var parseParameterListTail: js.Any = js.native
     
-    var parsePlaceholderSymbol: js.Any = js.native
+    /* private */ var parsePlaceholderSymbol: js.Any = js.native
     
-    var parsePrimarySymbol: js.Any = js.native
+    /* private */ var parsePrimarySymbol: js.Any = js.native
     
-    var parseProduction: js.Any = js.native
+    /* private */ var parseProduction: js.Any = js.native
     
-    var parseProse: js.Any = js.native
+    /* private */ var parseProse: js.Any = js.native
     
-    var parseProseAssertion: js.Any = js.native
+    /* private */ var parseProseAssertion: js.Any = js.native
     
-    var parseProseFragmentLiteral: js.Any = js.native
+    /* private */ var parseProseFragmentLiteral: js.Any = js.native
     
-    var parseProseFragments: js.Any = js.native
+    /* private */ var parseProseFragments: js.Any = js.native
     
-    var parseRightHandSide: js.Any = js.native
+    /* private */ var parseRightHandSide: js.Any = js.native
     
-    var parseRightHandSideList: js.Any = js.native
+    /* private */ var parseRightHandSideList: js.Any = js.native
     
-    var parseSourceElement: js.Any = js.native
+    /* private */ var parseSourceElement: js.Any = js.native
     
-    var parseSourceElementList: js.Any = js.native
+    /* private */ var parseSourceElementList: js.Any = js.native
     
     def parseSourceFile(filename: String, text: String): SourceFile = js.native
     def parseSourceFile(filename: String, text: String, cancelable: Cancelable): SourceFile = js.native
     def parseSourceFile(filename: String, text: String, cancelable: CancellationToken): SourceFile = js.native
     
-    var parseStringLiteral: js.Any = js.native
+    /* private */ var parseStringLiteral: js.Any = js.native
     
-    var parseSymbol: js.Any = js.native
+    /* private */ var parseSymbol: js.Any = js.native
     
-    var parseSymbolSetTail: js.Any = js.native
+    /* private */ var parseSymbolSetTail: js.Any = js.native
     
-    var parseSymbolSpan: js.Any = js.native
+    /* private */ var parseSymbolSpan: js.Any = js.native
     
-    var parseSymbolSpanRest: js.Any = js.native
+    /* private */ var parseSymbolSpanRest: js.Any = js.native
     
-    var parseSymbolSpanRestOrSymbolSet: js.Any = js.native
+    /* private */ var parseSymbolSpanRestOrSymbolSet: js.Any = js.native
     
-    var parseTerminal: js.Any = js.native
+    /* private */ var parseTerminal: js.Any = js.native
     
-    var parseToken: js.Any = js.native
+    /* private */ var parseToken: js.Any = js.native
     
-    var parseUnarySymbol: js.Any = js.native
+    /* private */ var parseUnarySymbol: js.Any = js.native
     
-    var parseUnicodeCharacterLiteral: js.Any = js.native
+    /* private */ var parseUnicodeCharacterLiteral: js.Any = js.native
     
-    var parseUnicodeCharacterRangeOrHigher: js.Any = js.native
+    /* private */ var parseUnicodeCharacterRangeOrHigher: js.Any = js.native
     
-    var parseUnicodeCharacterRangeTail: js.Any = js.native
+    /* private */ var parseUnicodeCharacterRangeTail: js.Any = js.native
     
-    var parsingContext: js.Any = js.native
+    /* private */ var parsingContext: js.Any = js.native
     
-    var readTokenText: js.Any = js.native
+    /* private */ var readTokenText: js.Any = js.native
     
-    var readTokenValue: js.Any = js.native
+    /* private */ var readTokenValue: js.Any = js.native
     
-    var recover: js.Any = js.native
+    /* private */ var recover: js.Any = js.native
     
-    var reportDiagnostics: js.Any = js.native
+    /* private */ var reportDiagnostics: js.Any = js.native
     
-    var scanner: js.Any = js.native
+    /* private */ var scanner: js.Any = js.native
     
-    var skipUntil: js.Any = js.native
+    /* private */ var skipUntil: js.Any = js.native
     
-    var speculate: js.Any = js.native
+    /* private */ var speculate: js.Any = js.native
     
-    var tags: js.Any = js.native
+    /* private */ var tags: js.Any = js.native
     
-    var tryMoveToNextElement: js.Any = js.native
+    /* private */ var tryMoveToNextElement: js.Any = js.native
     
-    var tryParseArgumentList: js.Any = js.native
+    /* private */ var tryParseArgumentList: js.Any = js.native
     
-    var tryParseConstraints: js.Any = js.native
+    /* private */ var tryParseConstraints: js.Any = js.native
     
-    var tryParseParameterList: js.Any = js.native
+    /* private */ var tryParseParameterList: js.Any = js.native
     
-    var tryParseSymbolSpan: js.Any = js.native
+    /* private */ var tryParseSymbolSpan: js.Any = js.native
     
-    var tryStopParsingList: js.Any = js.native
+    /* private */ var tryStopParsingList: js.Any = js.native
   }
   
   trait TextChange extends StObject {
@@ -196,8 +196,7 @@ object parserMod {
   }
   object TextChange {
     
-    @scala.inline
-    def apply(range: Range, text: String): TextChange = {
+    inline def apply(range: Range, text: String): TextChange = {
       val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextChange]
     }
@@ -206,26 +205,19 @@ object parserMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def applyChange(originalText: String, change: TextChange): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(originalText.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def applyChange(originalText: String, change: TextChange): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(originalText.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def clone_(change: TextChange): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(change.asInstanceOf[js.Any]).asInstanceOf[Text]
+    inline def clone_(change: TextChange): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(change.asInstanceOf[js.Any]).asInstanceOf[Text]
     
-    @scala.inline
-    def create(text: String, range: Range): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Text]
+    inline def create(text: String, range: Range): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Text]
     
-    @scala.inline
-    def isUnchanged(change: TextChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnchanged")(change.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isUnchanged(change: TextChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnchanged")(change.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    implicit class TextChangeMutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {
+    extension [Self <: TextChange](x: Self) {
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

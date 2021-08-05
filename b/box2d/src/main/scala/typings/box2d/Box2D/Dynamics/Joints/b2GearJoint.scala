@@ -24,8 +24,7 @@ trait b2GearJoint
 }
 object b2GearJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAnchorA: () => b2Vec2,
     GetAnchorB: () => b2Vec2,
     GetBodyA: () => b2Body,
@@ -44,13 +43,10 @@ object b2GearJoint {
     __obj.asInstanceOf[b2GearJoint]
   }
   
-  @scala.inline
-  implicit class b2GearJointMutableBuilder[Self <: b2GearJoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2GearJoint](x: Self) {
     
-    @scala.inline
-    def setGetRatio(value: () => Double): Self = StObject.set(x, "GetRatio", js.Any.fromFunction0(value))
+    inline def setGetRatio(value: () => Double): Self = StObject.set(x, "GetRatio", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetRatio(value: Double => Unit): Self = StObject.set(x, "SetRatio", js.Any.fromFunction1(value))
+    inline def setSetRatio(value: Double => Unit): Self = StObject.set(x, "SetRatio", js.Any.fromFunction1(value))
   }
 }

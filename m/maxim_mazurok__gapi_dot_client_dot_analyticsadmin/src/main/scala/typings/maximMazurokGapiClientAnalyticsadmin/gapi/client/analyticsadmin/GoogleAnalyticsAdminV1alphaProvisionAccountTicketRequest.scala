@@ -14,25 +14,19 @@ trait GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest extends StObject 
 }
 object GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequestMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest](x: Self) {
     
-    @scala.inline
-    def setAccount(value: GoogleAnalyticsAdminV1alphaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: GoogleAnalyticsAdminV1alphaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait Country extends StObject {
 }
 object Country {
   
-  @scala.inline
-  def apply(code: String, name: String): Country = {
+  inline def apply(code: String, name: String): Country = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Country]
   }
   
-  @scala.inline
-  implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+  extension [Self <: Country](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

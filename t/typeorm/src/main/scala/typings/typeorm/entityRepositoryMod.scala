@@ -12,10 +12,7 @@ object entityRepositoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def EntityRepository(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EntityRepository")().asInstanceOf[ClassDecorator]
-  @scala.inline
-  def EntityRepository(entity: js.Function): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EntityRepository")(entity.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
-  @scala.inline
-  def EntityRepository(entity: EntitySchema[js.Any]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EntityRepository")(entity.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def EntityRepository(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EntityRepository")().asInstanceOf[ClassDecorator]
+  inline def EntityRepository(entity: js.Function): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EntityRepository")(entity.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def EntityRepository(entity: EntitySchema[js.Any]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EntityRepository")(entity.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

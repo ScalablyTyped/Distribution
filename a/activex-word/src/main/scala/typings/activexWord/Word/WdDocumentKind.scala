@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdDocumentKind extends StObject
 object WdDocumentKind {
   
-  @scala.inline
-  def wdDocumentEmail: `2` = 2.asInstanceOf[`2`]
+  inline def wdDocumentEmail: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdDocumentLetter: `1` = 1.asInstanceOf[`1`]
+  inline def wdDocumentLetter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdDocumentNotSpecified: `0` = 0.asInstanceOf[`0`]
+  inline def wdDocumentNotSpecified: `0` = 0.asInstanceOf[`0`]
 }

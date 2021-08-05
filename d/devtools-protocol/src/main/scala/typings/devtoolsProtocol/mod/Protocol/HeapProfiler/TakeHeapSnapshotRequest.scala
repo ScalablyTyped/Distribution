@@ -18,25 +18,19 @@ trait TakeHeapSnapshotRequest extends StObject {
 }
 object TakeHeapSnapshotRequest {
   
-  @scala.inline
-  def apply(): TakeHeapSnapshotRequest = {
+  inline def apply(): TakeHeapSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TakeHeapSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class TakeHeapSnapshotRequestMutableBuilder[Self <: TakeHeapSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TakeHeapSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
+    inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
+    inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
-    @scala.inline
-    def setTreatGlobalObjectsAsRoots(value: Boolean): Self = StObject.set(x, "treatGlobalObjectsAsRoots", value.asInstanceOf[js.Any])
+    inline def setTreatGlobalObjectsAsRoots(value: Boolean): Self = StObject.set(x, "treatGlobalObjectsAsRoots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatGlobalObjectsAsRootsUndefined: Self = StObject.set(x, "treatGlobalObjectsAsRoots", js.undefined)
+    inline def setTreatGlobalObjectsAsRootsUndefined: Self = StObject.set(x, "treatGlobalObjectsAsRoots", js.undefined)
   }
 }

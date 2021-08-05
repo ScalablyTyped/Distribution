@@ -18,20 +18,16 @@ trait TextNode
 }
 object TextNode {
   
-  @scala.inline
-  def apply(content: String, loc: SourceLocation): TextNode = {
+  inline def apply(content: String, loc: SourceLocation): TextNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(2)
     __obj.asInstanceOf[TextNode]
   }
   
-  @scala.inline
-  implicit class TextNodeMutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
+  extension [Self <: TextNode](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `2`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `2`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

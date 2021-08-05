@@ -15,22 +15,17 @@ trait ConvertorResult extends StObject {
 }
 object ConvertorResult {
   
-  @scala.inline
-  def apply(info: String, locations: js.Array[LngLat]): ConvertorResult = {
+  inline def apply(info: String, locations: js.Array[LngLat]): ConvertorResult = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertorResult]
   }
   
-  @scala.inline
-  implicit class ConvertorResultMutableBuilder[Self <: ConvertorResult] (val x: Self) extends AnyVal {
+  extension [Self <: ConvertorResult](x: Self) {
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: js.Array[LngLat]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[LngLat]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: LngLat*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: LngLat*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

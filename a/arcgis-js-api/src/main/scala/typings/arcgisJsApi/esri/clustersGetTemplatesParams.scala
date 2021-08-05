@@ -26,8 +26,7 @@ trait clustersGetTemplatesParams
 }
 object clustersGetTemplatesParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | CSVLayer | GeoJSONLayer,
@@ -37,16 +36,12 @@ object clustersGetTemplatesParams {
     __obj.asInstanceOf[clustersGetTemplatesParams]
   }
   
-  @scala.inline
-  implicit class clustersGetTemplatesParamsMutableBuilder[Self <: clustersGetTemplatesParams] (val x: Self) extends AnyVal {
+  extension [Self <: clustersGetTemplatesParams](x: Self) {
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait CreateTapeWithBarcodeOutput extends StObject {
 }
 object CreateTapeWithBarcodeOutput {
   
-  @scala.inline
-  def apply(): CreateTapeWithBarcodeOutput = {
+  inline def apply(): CreateTapeWithBarcodeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTapeWithBarcodeOutput]
   }
   
-  @scala.inline
-  implicit class CreateTapeWithBarcodeOutputMutableBuilder[Self <: CreateTapeWithBarcodeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTapeWithBarcodeOutput](x: Self) {
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
+    inline def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
   }
 }

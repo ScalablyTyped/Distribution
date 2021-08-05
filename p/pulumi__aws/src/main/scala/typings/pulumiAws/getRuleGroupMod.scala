@@ -11,10 +11,8 @@ object getRuleGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRuleGroup(args: GetRuleGroupArgs): js.Promise[GetRuleGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRuleGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRuleGroupResult]]
-  @scala.inline
-  def getRuleGroup(args: GetRuleGroupArgs, opts: InvokeOptions): js.Promise[GetRuleGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRuleGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRuleGroupResult]]
+  inline def getRuleGroup(args: GetRuleGroupArgs): js.Promise[GetRuleGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRuleGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRuleGroupResult]]
+  inline def getRuleGroup(args: GetRuleGroupArgs, opts: InvokeOptions): js.Promise[GetRuleGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRuleGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRuleGroupResult]]
   
   trait GetRuleGroupArgs extends StObject {
     
@@ -30,20 +28,16 @@ object getRuleGroupMod {
   }
   object GetRuleGroupArgs {
     
-    @scala.inline
-    def apply(name: String, scope: String): GetRuleGroupArgs = {
+    inline def apply(name: String, scope: String): GetRuleGroupArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRuleGroupArgs]
     }
     
-    @scala.inline
-    implicit class GetRuleGroupArgsMutableBuilder[Self <: GetRuleGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRuleGroupArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,29 +64,22 @@ object getRuleGroupMod {
   }
   object GetRuleGroupResult {
     
-    @scala.inline
-    def apply(arn: String, description: String, id: String, name: String, scope: String): GetRuleGroupResult = {
+    inline def apply(arn: String, description: String, id: String, name: String, scope: String): GetRuleGroupResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRuleGroupResult]
     }
     
-    @scala.inline
-    implicit class GetRuleGroupResultMutableBuilder[Self <: GetRuleGroupResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRuleGroupResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
 }

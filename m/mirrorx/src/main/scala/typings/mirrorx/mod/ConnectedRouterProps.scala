@@ -14,25 +14,19 @@ trait ConnectedRouterProps[State] extends StObject {
 }
 object ConnectedRouterProps {
   
-  @scala.inline
-  def apply[State](): ConnectedRouterProps[State] = {
+  inline def apply[State](): ConnectedRouterProps[State] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectedRouterProps[State]]
   }
   
-  @scala.inline
-  implicit class ConnectedRouterPropsMutableBuilder[Self <: ConnectedRouterProps[?], State] (val x: Self & ConnectedRouterProps[State]) extends AnyVal {
+  extension [Self <: ConnectedRouterProps[?], State](x: Self & ConnectedRouterProps[State]) {
     
-    @scala.inline
-    def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
   }
 }

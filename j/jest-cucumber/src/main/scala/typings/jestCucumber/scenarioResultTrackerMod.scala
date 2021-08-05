@@ -17,7 +17,7 @@ object scenarioResultTrackerMod {
     
     def endStep(): Unit = js.native
     
-    var scenarioResult: js.Any = js.native
+    /* private */ var scenarioResult: js.Any = js.native
     
     def startStep(stepText: String, stepArguments: js.Array[String], lineNumber: Double): Unit = js.native
     
@@ -38,8 +38,7 @@ object scenarioResultTrackerMod {
   }
   object IScenarioResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       featureFilePath: String,
       featureTitle: String,
       lineNumber: Double,
@@ -50,26 +49,19 @@ object scenarioResultTrackerMod {
       __obj.asInstanceOf[IScenarioResult]
     }
     
-    @scala.inline
-    implicit class IScenarioResultMutableBuilder[Self <: IScenarioResult] (val x: Self) extends AnyVal {
+    extension [Self <: IScenarioResult](x: Self) {
       
-      @scala.inline
-      def setFeatureFilePath(value: String): Self = StObject.set(x, "featureFilePath", value.asInstanceOf[js.Any])
+      inline def setFeatureFilePath(value: String): Self = StObject.set(x, "featureFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureTitle(value: String): Self = StObject.set(x, "featureTitle", value.asInstanceOf[js.Any])
+      inline def setFeatureTitle(value: String): Self = StObject.set(x, "featureTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioTitle(value: String): Self = StObject.set(x, "scenarioTitle", value.asInstanceOf[js.Any])
+      inline def setScenarioTitle(value: String): Self = StObject.set(x, "scenarioTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepResults(value: js.Array[IStepResult]): Self = StObject.set(x, "stepResults", value.asInstanceOf[js.Any])
+      inline def setStepResults(value: js.Array[IStepResult]): Self = StObject.set(x, "stepResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepResultsVarargs(value: IStepResult*): Self = StObject.set(x, "stepResults", js.Array(value :_*))
+      inline def setStepResultsVarargs(value: IStepResult*): Self = StObject.set(x, "stepResults", js.Array(value :_*))
     }
   }
   
@@ -89,8 +81,7 @@ object scenarioResultTrackerMod {
   }
   object IStepResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endTime: Double,
       lineNumber: Double,
       startTime: Double,
@@ -101,32 +92,23 @@ object scenarioResultTrackerMod {
       __obj.asInstanceOf[IStepResult]
     }
     
-    @scala.inline
-    implicit class IStepResultMutableBuilder[Self <: IStepResult] (val x: Self) extends AnyVal {
+    extension [Self <: IStepResult](x: Self) {
       
-      @scala.inline
-      def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepArguments(value: js.Array[String]): Self = StObject.set(x, "stepArguments", value.asInstanceOf[js.Any])
+      inline def setStepArguments(value: js.Array[String]): Self = StObject.set(x, "stepArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepArgumentsVarargs(value: String*): Self = StObject.set(x, "stepArguments", js.Array(value :_*))
+      inline def setStepArgumentsVarargs(value: String*): Self = StObject.set(x, "stepArguments", js.Array(value :_*))
       
-      @scala.inline
-      def setStepText(value: String): Self = StObject.set(x, "stepText", value.asInstanceOf[js.Any])
+      inline def setStepText(value: String): Self = StObject.set(x, "stepText", value.asInstanceOf[js.Any])
     }
   }
 }

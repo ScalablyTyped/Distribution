@@ -18,25 +18,19 @@ trait ReplayDestination extends StObject {
 }
 object ReplayDestination {
   
-  @scala.inline
-  def apply(Arn: Arn): ReplayDestination = {
+  inline def apply(Arn: Arn): ReplayDestination = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplayDestination]
   }
   
-  @scala.inline
-  implicit class ReplayDestinationMutableBuilder[Self <: ReplayDestination] (val x: Self) extends AnyVal {
+  extension [Self <: ReplayDestination](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterArns(value: ReplayDestinationFilters): Self = StObject.set(x, "FilterArns", value.asInstanceOf[js.Any])
+    inline def setFilterArns(value: ReplayDestinationFilters): Self = StObject.set(x, "FilterArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterArnsUndefined: Self = StObject.set(x, "FilterArns", js.undefined)
+    inline def setFilterArnsUndefined: Self = StObject.set(x, "FilterArns", js.undefined)
     
-    @scala.inline
-    def setFilterArnsVarargs(value: Arn*): Self = StObject.set(x, "FilterArns", js.Array(value :_*))
+    inline def setFilterArnsVarargs(value: Arn*): Self = StObject.set(x, "FilterArns", js.Array(value :_*))
   }
 }

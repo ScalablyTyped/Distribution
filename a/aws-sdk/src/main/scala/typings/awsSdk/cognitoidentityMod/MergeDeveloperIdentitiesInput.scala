@@ -28,8 +28,7 @@ trait MergeDeveloperIdentitiesInput extends StObject {
 }
 object MergeDeveloperIdentitiesInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestinationUserIdentifier: DeveloperUserIdentifier,
     DeveloperProviderName: DeveloperProviderName,
     IdentityPoolId: IdentityPoolId,
@@ -39,19 +38,14 @@ object MergeDeveloperIdentitiesInput {
     __obj.asInstanceOf[MergeDeveloperIdentitiesInput]
   }
   
-  @scala.inline
-  implicit class MergeDeveloperIdentitiesInputMutableBuilder[Self <: MergeDeveloperIdentitiesInput] (val x: Self) extends AnyVal {
+  extension [Self <: MergeDeveloperIdentitiesInput](x: Self) {
     
-    @scala.inline
-    def setDestinationUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])
+    inline def setDestinationUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
+    inline def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "SourceUserIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "SourceUserIdentifier", value.asInstanceOf[js.Any])
   }
 }

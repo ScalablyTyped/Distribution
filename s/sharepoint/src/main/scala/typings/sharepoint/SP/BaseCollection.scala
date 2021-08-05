@@ -16,19 +16,15 @@ trait BaseCollection[T]
 }
 object BaseCollection {
   
-  @scala.inline
-  def apply[T](getEnumerator: () => IEnumerator[T], get_count: () => Double, itemAtIndex: Double => T): BaseCollection[T] = {
+  inline def apply[T](getEnumerator: () => IEnumerator[T], get_count: () => Double, itemAtIndex: Double => T): BaseCollection[T] = {
     val __obj = js.Dynamic.literal(getEnumerator = js.Any.fromFunction0(getEnumerator), get_count = js.Any.fromFunction0(get_count), itemAtIndex = js.Any.fromFunction1(itemAtIndex))
     __obj.asInstanceOf[BaseCollection[T]]
   }
   
-  @scala.inline
-  implicit class BaseCollectionMutableBuilder[Self <: BaseCollection[?], T] (val x: Self & BaseCollection[T]) extends AnyVal {
+  extension [Self <: BaseCollection[?], T](x: Self & BaseCollection[T]) {
     
-    @scala.inline
-    def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
+    inline def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemAtIndex(value: Double => T): Self = StObject.set(x, "itemAtIndex", js.Any.fromFunction1(value))
+    inline def setItemAtIndex(value: Double => T): Self = StObject.set(x, "itemAtIndex", js.Any.fromFunction1(value))
   }
 }

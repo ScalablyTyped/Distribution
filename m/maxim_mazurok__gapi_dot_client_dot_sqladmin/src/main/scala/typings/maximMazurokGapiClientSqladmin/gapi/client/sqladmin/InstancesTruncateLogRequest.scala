@@ -11,19 +11,15 @@ trait InstancesTruncateLogRequest extends StObject {
 }
 object InstancesTruncateLogRequest {
   
-  @scala.inline
-  def apply(): InstancesTruncateLogRequest = {
+  inline def apply(): InstancesTruncateLogRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancesTruncateLogRequest]
   }
   
-  @scala.inline
-  implicit class InstancesTruncateLogRequestMutableBuilder[Self <: InstancesTruncateLogRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstancesTruncateLogRequest](x: Self) {
     
-    @scala.inline
-    def setTruncateLogContext(value: TruncateLogContext): Self = StObject.set(x, "truncateLogContext", value.asInstanceOf[js.Any])
+    inline def setTruncateLogContext(value: TruncateLogContext): Self = StObject.set(x, "truncateLogContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncateLogContextUndefined: Self = StObject.set(x, "truncateLogContext", js.undefined)
+    inline def setTruncateLogContextUndefined: Self = StObject.set(x, "truncateLogContext", js.undefined)
   }
 }

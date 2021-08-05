@@ -18,13 +18,13 @@ class BloomFilter protected ()
   /* CompleteClass */
   override def addKeys(keys: IIndexable[js.Any]): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var bitArray: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def computeHash(key: js.Any, seed: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def computeHash(key: js.Any, seed: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var hashFunctionCount: js.Any = js.native
   
   /* CompleteClass */
@@ -40,21 +40,17 @@ object BloomFilter {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def computeK(expectedCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeK")(expectedCount.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computeK(expectedCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeK")(expectedCount.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def computeM(expectedCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeM")(expectedCount.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computeM(expectedCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeM")(expectedCount.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
   @JSImport("typescript-services", "BloomFilter.falsePositiveProbability")
   @js.native
   def falsePositiveProbability: Double = js.native
-  @scala.inline
-  def falsePositiveProbability_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("falsePositiveProbability")(x.asInstanceOf[js.Any])
+  inline def falsePositiveProbability_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("falsePositiveProbability")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def isEquivalent(array1: js.Array[Boolean], array2: js.Array[Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEquivalent")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEquivalent(array1: js.Array[Boolean], array2: js.Array[Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEquivalent")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

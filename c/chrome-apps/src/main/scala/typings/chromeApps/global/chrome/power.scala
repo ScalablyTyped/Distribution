@@ -40,19 +40,16 @@ object power {
     @JSGlobal("chrome.power.Level.DISPLAY")
     @js.native
     def DISPLAY: display_ = js.native
-    @scala.inline
-    def DISPLAY_=(x: display_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISPLAY")(x.asInstanceOf[js.Any])
+    inline def DISPLAY_=(x: display_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISPLAY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.power.Level.SYSTEM")
     @js.native
     def SYSTEM: system_ = js.native
-    @scala.inline
-    def SYSTEM_=(x: system_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYSTEM")(x.asInstanceOf[js.Any])
+    inline def SYSTEM_=(x: system_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYSTEM")(x.asInstanceOf[js.Any])
   }
   
   /** Releases a request previously made via requestKeepAwake(). */
-  @scala.inline
-  def releaseKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseKeepAwake")().asInstanceOf[Unit]
+  inline def releaseKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseKeepAwake")().asInstanceOf[Unit]
   
   /**
     * Requests that power management be temporarily disabled.
@@ -60,8 +57,7 @@ object power {
     *              If a request previously made by the same app is still active, it will be replaced by the new request.
     * @see Enum: chrome.power.Level
     */
-  @scala.inline
-  def requestKeepAwake(
+  inline def requestKeepAwake(
     level: ToStringLiteral[
       DISPLAY, 
       /* keyof chrome-apps.anon.DISPLAY */ SYSTEM | typings.chromeApps.chromeAppsStrings.DISPLAY, 

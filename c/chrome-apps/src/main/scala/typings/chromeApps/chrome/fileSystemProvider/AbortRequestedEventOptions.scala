@@ -15,16 +15,13 @@ trait AbortRequestedEventOptions
 }
 object AbortRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, operationRequestId: integer, requestId: integer): AbortRequestedEventOptions = {
+  inline def apply(fileSystemId: String, operationRequestId: integer, requestId: integer): AbortRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], operationRequestId = operationRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class AbortRequestedEventOptionsMutableBuilder[Self <: AbortRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AbortRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setOperationRequestId(value: integer): Self = StObject.set(x, "operationRequestId", value.asInstanceOf[js.Any])
+    inline def setOperationRequestId(value: integer): Self = StObject.set(x, "operationRequestId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ object useScrollListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useScrollListener[E /* <: HTMLElement */](hasEnabledOnScrollElementOptions: Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollListener")(hasEnabledOnScrollElementOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useScrollListener[E /* <: HTMLElement */](hasEnabledOnScrollElementOptions: Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollListener")(hasEnabledOnScrollElementOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options[E /* <: HTMLElement */] extends StObject {
     
@@ -44,38 +43,28 @@ object useScrollListenerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](onScroll: /* evt */ Event => Unit): Options[E] = {
+    inline def apply[E /* <: HTMLElement */](onScroll: /* evt */ Event => Unit): Options[E] = {
       val __obj = js.Dynamic.literal(onScroll = js.Any.fromFunction1(onScroll))
       __obj.asInstanceOf[Options[E]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], E /* <: HTMLElement */] (val x: Self & Options[E]) extends AnyVal {
+    extension [Self <: Options[?], E /* <: HTMLElement */](x: Self & Options[E]) {
       
-      @scala.inline
-      def setElement(value: E): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: E): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNull: Self = StObject.set(x, "element", null)
+      inline def setElementNull: Self = StObject.set(x, "element", null)
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: /* evt */ Event => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* evt */ Event => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: AddEventListenerOptions | Boolean): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: AddEventListenerOptions | Boolean): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

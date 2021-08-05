@@ -14,12 +14,9 @@ trait DefaultTransportType
      with TransportType
 object DefaultTransportType {
   
-  @scala.inline
-  def longpoll: typings.autobahn.autobahnStrings.longpoll = "longpoll".asInstanceOf[typings.autobahn.autobahnStrings.longpoll]
+  inline def longpoll: typings.autobahn.autobahnStrings.longpoll = "longpoll".asInstanceOf[typings.autobahn.autobahnStrings.longpoll]
   
-  @scala.inline
-  def rawsocket: typings.autobahn.autobahnStrings.rawsocket = "rawsocket".asInstanceOf[typings.autobahn.autobahnStrings.rawsocket]
+  inline def rawsocket: typings.autobahn.autobahnStrings.rawsocket = "rawsocket".asInstanceOf[typings.autobahn.autobahnStrings.rawsocket]
   
-  @scala.inline
-  def websocket: typings.autobahn.autobahnStrings.websocket = "websocket".asInstanceOf[typings.autobahn.autobahnStrings.websocket]
+  inline def websocket: typings.autobahn.autobahnStrings.websocket = "websocket".asInstanceOf[typings.autobahn.autobahnStrings.websocket]
 }

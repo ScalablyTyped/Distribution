@@ -11,16 +11,13 @@ trait PickImplclose extends StObject {
 }
 object PickImplclose {
   
-  @scala.inline
-  def apply(close: String): PickImplclose = {
+  inline def apply(close: String): PickImplclose = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclose]
   }
   
-  @scala.inline
-  implicit class PickImplcloseMutableBuilder[Self <: PickImplclose] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplclose](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
   }
 }

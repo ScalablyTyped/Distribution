@@ -20,8 +20,7 @@ object URLScheme {
     * Gets the URL for opening the current script. When making a request to the returned URL from another app, e.g. Safari, the script will be opened.
     * @see https://docs.scriptable.app/urlscheme/#foropeningscript
     */
-  @scala.inline
-  def forOpeningScript(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forOpeningScript")().asInstanceOf[String]
+  inline def forOpeningScript(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forOpeningScript")().asInstanceOf[String]
   
   /**
     * _URL for opening script settings._
@@ -30,8 +29,7 @@ object URLScheme {
     * opened.
     * @see https://docs.scriptable.app/urlscheme/#foropeningscriptsettings
     */
-  @scala.inline
-  def forOpeningScriptSettings(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forOpeningScriptSettings")().asInstanceOf[String]
+  inline def forOpeningScriptSettings(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forOpeningScriptSettings")().asInstanceOf[String]
   
   /**
     * _URL for running script._
@@ -41,6 +39,5 @@ object URLScheme {
     * Get the query parameters using `args.queryParameters`.
     * @see https://docs.scriptable.app/urlscheme/#forrunningscript
     */
-  @scala.inline
-  def forRunningScript(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forRunningScript")().asInstanceOf[String]
+  inline def forRunningScript(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forRunningScript")().asInstanceOf[String]
 }

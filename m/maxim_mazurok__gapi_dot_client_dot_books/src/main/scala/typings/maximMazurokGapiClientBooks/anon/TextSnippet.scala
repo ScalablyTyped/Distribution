@@ -11,19 +11,15 @@ trait TextSnippet extends StObject {
 }
 object TextSnippet {
   
-  @scala.inline
-  def apply(): TextSnippet = {
+  inline def apply(): TextSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextSnippet]
   }
   
-  @scala.inline
-  implicit class TextSnippetMutableBuilder[Self <: TextSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: TextSnippet](x: Self) {
     
-    @scala.inline
-    def setTextSnippet(value: String): Self = StObject.set(x, "textSnippet", value.asInstanceOf[js.Any])
+    inline def setTextSnippet(value: String): Self = StObject.set(x, "textSnippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSnippetUndefined: Self = StObject.set(x, "textSnippet", js.undefined)
+    inline def setTextSnippetUndefined: Self = StObject.set(x, "textSnippet", js.undefined)
   }
 }

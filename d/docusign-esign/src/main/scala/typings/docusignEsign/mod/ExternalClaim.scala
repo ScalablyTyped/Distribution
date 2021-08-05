@@ -28,37 +28,27 @@ trait ExternalClaim extends StObject {
 }
 object ExternalClaim {
   
-  @scala.inline
-  def apply(): ExternalClaim = {
+  inline def apply(): ExternalClaim = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalClaim]
   }
   
-  @scala.inline
-  implicit class ExternalClaimMutableBuilder[Self <: ExternalClaim] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalClaim](x: Self) {
     
-    @scala.inline
-    def setAcquiredTime(value: String): Self = StObject.set(x, "acquiredTime", value.asInstanceOf[js.Any])
+    inline def setAcquiredTime(value: String): Self = StObject.set(x, "acquiredTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquiredTimeUndefined: Self = StObject.set(x, "acquiredTime", js.undefined)
+    inline def setAcquiredTimeUndefined: Self = StObject.set(x, "acquiredTime", js.undefined)
     
-    @scala.inline
-    def setClaimName(value: String): Self = StObject.set(x, "claimName", value.asInstanceOf[js.Any])
+    inline def setClaimName(value: String): Self = StObject.set(x, "claimName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimNameUndefined: Self = StObject.set(x, "claimName", js.undefined)
+    inline def setClaimNameUndefined: Self = StObject.set(x, "claimName", js.undefined)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

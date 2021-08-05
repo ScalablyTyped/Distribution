@@ -23,31 +23,23 @@ trait ParameterInlinePolicy extends StObject {
 }
 object ParameterInlinePolicy {
   
-  @scala.inline
-  def apply(): ParameterInlinePolicy = {
+  inline def apply(): ParameterInlinePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterInlinePolicy]
   }
   
-  @scala.inline
-  implicit class ParameterInlinePolicyMutableBuilder[Self <: ParameterInlinePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterInlinePolicy](x: Self) {
     
-    @scala.inline
-    def setPolicyStatus(value: String): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
+    inline def setPolicyStatus(value: String): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
+    inline def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
     
-    @scala.inline
-    def setPolicyText(value: String): Self = StObject.set(x, "PolicyText", value.asInstanceOf[js.Any])
+    inline def setPolicyText(value: String): Self = StObject.set(x, "PolicyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTextUndefined: Self = StObject.set(x, "PolicyText", js.undefined)
+    inline def setPolicyTextUndefined: Self = StObject.set(x, "PolicyText", js.undefined)
     
-    @scala.inline
-    def setPolicyType(value: String): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
+    inline def setPolicyType(value: String): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
+    inline def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
   }
 }

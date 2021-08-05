@@ -26,8 +26,7 @@ trait StopsByCount
 }
 object StopsByCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     count: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -37,16 +36,12 @@ object StopsByCount {
     __obj.asInstanceOf[StopsByCount]
   }
   
-  @scala.inline
-  implicit class StopsByCountMutableBuilder[Self <: StopsByCount] (val x: Self) extends AnyVal {
+  extension [Self <: StopsByCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }
 }

@@ -105,6 +105,5 @@ object SharedClass {
     * Normalize HTTP path.
     */
   /* static member */
-  @scala.inline
-  def normalizeHttpPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHttpPath")().asInstanceOf[Unit]
+  inline def normalizeHttpPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHttpPath")().asInstanceOf[Unit]
 }

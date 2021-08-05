@@ -41,8 +41,7 @@ trait XCellRangeData
 }
 object XCellRangeData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataArray: SafeArray[SafeArray[js.Any]],
     acquire: () => Unit,
     getDataArray: () => SafeArray[SafeArray[js.Any]],
@@ -54,16 +53,12 @@ object XCellRangeData {
     __obj.asInstanceOf[XCellRangeData]
   }
   
-  @scala.inline
-  implicit class XCellRangeDataMutableBuilder[Self <: XCellRangeData] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRangeData](x: Self) {
     
-    @scala.inline
-    def setDataArray(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "DataArray", value.asInstanceOf[js.Any])
+    inline def setDataArray(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "DataArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataArray(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDataArray", js.Any.fromFunction0(value))
+    inline def setGetDataArray(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDataArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDataArray(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setDataArray", js.Any.fromFunction1(value))
+    inline def setSetDataArray(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setDataArray", js.Any.fromFunction1(value))
   }
 }

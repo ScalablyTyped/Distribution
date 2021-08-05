@@ -15,8 +15,7 @@ trait UpdateDraftActionResponseBuilder extends StObject {
 }
 object UpdateDraftActionResponseBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => UpdateDraftActionResponse,
     setUpdateDraftBodyAction: UpdateDraftBodyAction => UpdateDraftActionResponseBuilder
   ): UpdateDraftActionResponseBuilder = {
@@ -24,13 +23,10 @@ object UpdateDraftActionResponseBuilder {
     __obj.asInstanceOf[UpdateDraftActionResponseBuilder]
   }
   
-  @scala.inline
-  implicit class UpdateDraftActionResponseBuilderMutableBuilder[Self <: UpdateDraftActionResponseBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDraftActionResponseBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => UpdateDraftActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => UpdateDraftActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetUpdateDraftBodyAction(value: UpdateDraftBodyAction => UpdateDraftActionResponseBuilder): Self = StObject.set(x, "setUpdateDraftBodyAction", js.Any.fromFunction1(value))
+    inline def setSetUpdateDraftBodyAction(value: UpdateDraftBodyAction => UpdateDraftActionResponseBuilder): Self = StObject.set(x, "setUpdateDraftBodyAction", js.Any.fromFunction1(value))
   }
 }

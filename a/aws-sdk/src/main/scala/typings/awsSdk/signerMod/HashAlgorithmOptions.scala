@@ -18,22 +18,17 @@ trait HashAlgorithmOptions extends StObject {
 }
 object HashAlgorithmOptions {
   
-  @scala.inline
-  def apply(allowedValues: HashAlgorithms, defaultValue: HashAlgorithm): HashAlgorithmOptions = {
+  inline def apply(allowedValues: HashAlgorithms, defaultValue: HashAlgorithm): HashAlgorithmOptions = {
     val __obj = js.Dynamic.literal(allowedValues = allowedValues.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashAlgorithmOptions]
   }
   
-  @scala.inline
-  implicit class HashAlgorithmOptionsMutableBuilder[Self <: HashAlgorithmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HashAlgorithmOptions](x: Self) {
     
-    @scala.inline
-    def setAllowedValues(value: HashAlgorithms): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: HashAlgorithms): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesVarargs(value: HashAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: HashAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultValue(value: HashAlgorithm): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: HashAlgorithm): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }
 }

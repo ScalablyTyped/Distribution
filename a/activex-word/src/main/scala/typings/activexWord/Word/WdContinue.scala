@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdContinue extends StObject
 object WdContinue {
   
-  @scala.inline
-  def wdContinueDisabled: `0` = 0.asInstanceOf[`0`]
+  inline def wdContinueDisabled: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdContinueList: `2` = 2.asInstanceOf[`2`]
+  inline def wdContinueList: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdResetList: `1` = 1.asInstanceOf[`1`]
+  inline def wdResetList: `1` = 1.asInstanceOf[`1`]
 }

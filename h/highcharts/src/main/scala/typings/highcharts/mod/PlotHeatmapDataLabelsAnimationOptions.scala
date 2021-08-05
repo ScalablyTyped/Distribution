@@ -15,19 +15,15 @@ trait PlotHeatmapDataLabelsAnimationOptions extends StObject {
 }
 object PlotHeatmapDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotHeatmapDataLabelsAnimationOptions = {
+  inline def apply(): PlotHeatmapDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotHeatmapDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotHeatmapDataLabelsAnimationOptionsMutableBuilder[Self <: PlotHeatmapDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotHeatmapDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

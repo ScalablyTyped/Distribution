@@ -14,31 +14,23 @@ trait BindingChildContextOptions[T] extends StObject {
 }
 object BindingChildContextOptions {
   
-  @scala.inline
-  def apply[T](): BindingChildContextOptions[T] = {
+  inline def apply[T](): BindingChildContextOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindingChildContextOptions[T]]
   }
   
-  @scala.inline
-  implicit class BindingChildContextOptionsMutableBuilder[Self <: BindingChildContextOptions[?], T] (val x: Self & BindingChildContextOptions[T]) extends AnyVal {
+  extension [Self <: BindingChildContextOptions[?], T](x: Self & BindingChildContextOptions[T]) {
     
-    @scala.inline
-    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setExtend(value: (/* self */ BindingContext[T], /* parentContext */ BindingContext[T] | Null, T) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction3(value))
+    inline def setExtend(value: (/* self */ BindingContext[T], /* parentContext */ BindingContext[T] | Null, T) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setNoChildContext(value: Boolean): Self = StObject.set(x, "noChildContext", value.asInstanceOf[js.Any])
+    inline def setNoChildContext(value: Boolean): Self = StObject.set(x, "noChildContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoChildContextUndefined: Self = StObject.set(x, "noChildContext", js.undefined)
+    inline def setNoChildContextUndefined: Self = StObject.set(x, "noChildContext", js.undefined)
   }
 }

@@ -29,15 +29,11 @@ object popoverMenuMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Divider(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")().asInstanceOf[ReactElement]
-    @scala.inline
-    def Divider(props: PopoverMenuDividerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def Divider(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")().asInstanceOf[ReactElement]
+    inline def Divider(props: PopoverMenuDividerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
-    @scala.inline
-    def MenuItem(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")().asInstanceOf[ReactElement]
-    @scala.inline
-    def MenuItem(props: PopoverMenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def MenuItem(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")().asInstanceOf[ReactElement]
+    inline def MenuItem(props: PopoverMenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   }
   
   type PopoverMenu = PureComponent[PopoverMenuProps, js.Object, js.Any]
@@ -48,20 +44,16 @@ object popoverMenuMod {
   }
   object PopoverMenuDividerProps {
     
-    @scala.inline
-    def apply(): PopoverMenuDividerProps = {
+    inline def apply(): PopoverMenuDividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopoverMenuDividerProps]
     }
     
-    @scala.inline
-    implicit class PopoverMenuDividerPropsMutableBuilder[Self <: PopoverMenuDividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverMenuDividerProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     }
   }
   
@@ -83,56 +75,40 @@ object popoverMenuMod {
   }
   object PopoverMenuItemProps {
     
-    @scala.inline
-    def apply(): PopoverMenuItemProps = {
+    inline def apply(): PopoverMenuItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopoverMenuItemProps]
     }
     
-    @scala.inline
-    implicit class PopoverMenuItemPropsMutableBuilder[Self <: PopoverMenuItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverMenuItemProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPrefixIcon(value: ReactNode): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
+      inline def setPrefixIcon(value: ReactNode): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
+      inline def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
       
-      @scala.inline
-      def setSkin(value: dark | destructive): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: dark | destructive): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -180,118 +156,84 @@ object popoverMenuMod {
   }
   object PopoverMenuProps {
     
-    @scala.inline
-    def apply(): PopoverMenuProps = {
+    inline def apply(): PopoverMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopoverMenuProps]
     }
     
-    @scala.inline
-    implicit class PopoverMenuPropsMutableBuilder[Self <: PopoverMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverMenuProps](x: Self) {
       
-      @scala.inline
-      def setAppendTo(
+      inline def setAppendTo(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AppendTo */ js.Any
       ): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double | String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double | String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(
+      inline def setMaxWidth(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.CSSProperties['maxWidth'] */ js.Any
       ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(
+      inline def setMinWidth(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.CSSProperties['minWidth'] */ js.Any
       ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setMoveBy(value: MoveByOffset): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
+      inline def setMoveBy(value: MoveByOffset): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
+      inline def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
       
-      @scala.inline
-      def setPlacement(
+      inline def setPlacement(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Placement */ js.Any
       ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
+      inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
+      inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
       
-      @scala.inline
-      def setTextSize(value: small | medium): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+      inline def setTextSize(value: small | medium): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+      inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
       
-      @scala.inline
-      def setTriggerElement(value: ReactNode | FC[PopoverTriggerElementProps]): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
+      inline def setTriggerElement(value: ReactNode | FC[PopoverTriggerElementProps]): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
+      inline def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -307,8 +249,7 @@ object popoverMenuMod {
   }
   object PopoverTriggerElementProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: SyntheticEvent[Element, Event] => Unit,
       onClick: () => Unit,
       open: () => Unit,
@@ -318,20 +259,15 @@ object popoverMenuMod {
       __obj.asInstanceOf[PopoverTriggerElementProps]
     }
     
-    @scala.inline
-    implicit class PopoverTriggerElementPropsMutableBuilder[Self <: PopoverTriggerElementProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverTriggerElementProps](x: Self) {
       
-      @scala.inline
-      def setClose(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
 }

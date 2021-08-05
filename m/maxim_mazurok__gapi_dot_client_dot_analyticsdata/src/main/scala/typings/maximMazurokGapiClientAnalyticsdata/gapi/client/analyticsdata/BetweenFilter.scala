@@ -14,25 +14,19 @@ trait BetweenFilter extends StObject {
 }
 object BetweenFilter {
   
-  @scala.inline
-  def apply(): BetweenFilter = {
+  inline def apply(): BetweenFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BetweenFilter]
   }
   
-  @scala.inline
-  implicit class BetweenFilterMutableBuilder[Self <: BetweenFilter] (val x: Self) extends AnyVal {
+  extension [Self <: BetweenFilter](x: Self) {
     
-    @scala.inline
-    def setFromValue(value: NumericValue): Self = StObject.set(x, "fromValue", value.asInstanceOf[js.Any])
+    inline def setFromValue(value: NumericValue): Self = StObject.set(x, "fromValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromValueUndefined: Self = StObject.set(x, "fromValue", js.undefined)
+    inline def setFromValueUndefined: Self = StObject.set(x, "fromValue", js.undefined)
     
-    @scala.inline
-    def setToValue(value: NumericValue): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+    inline def setToValue(value: NumericValue): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
+    inline def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
   }
 }

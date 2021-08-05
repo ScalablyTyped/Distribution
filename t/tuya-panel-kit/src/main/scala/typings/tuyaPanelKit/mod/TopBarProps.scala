@@ -26,58 +26,41 @@ trait TopBarProps
 }
 object TopBarProps {
   
-  @scala.inline
-  def apply(): TopBarProps = {
+  inline def apply(): TopBarProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopBarProps]
   }
   
-  @scala.inline
-  implicit class TopBarPropsMutableBuilder[Self <: TopBarProps] (val x: Self) extends AnyVal {
+  extension [Self <: TopBarProps](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[TopBarActionProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[TopBarActionProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: TopBarActionProps*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: TopBarActionProps*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    inline def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
+    inline def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
     
-    @scala.inline
-    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+    inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    @scala.inline
-    def setLeftActions(value: js.Array[TopBarActionProps]): Self = StObject.set(x, "leftActions", value.asInstanceOf[js.Any])
+    inline def setLeftActions(value: js.Array[TopBarActionProps]): Self = StObject.set(x, "leftActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftActionsUndefined: Self = StObject.set(x, "leftActions", js.undefined)
+    inline def setLeftActionsUndefined: Self = StObject.set(x, "leftActions", js.undefined)
     
-    @scala.inline
-    def setLeftActionsVarargs(value: TopBarActionProps*): Self = StObject.set(x, "leftActions", js.Array(value :_*))
+    inline def setLeftActionsVarargs(value: TopBarActionProps*): Self = StObject.set(x, "leftActions", js.Array(value :_*))
     
-    @scala.inline
-    def setOnBack(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
+    inline def setOnBack(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
+    inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
     
-    @scala.inline
-    def setTheme(value: Color): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Color): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

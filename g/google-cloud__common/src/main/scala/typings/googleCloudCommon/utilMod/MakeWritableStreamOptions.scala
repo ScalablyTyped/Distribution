@@ -30,34 +30,25 @@ trait MakeWritableStreamOptions extends StObject {
 }
 object MakeWritableStreamOptions {
   
-  @scala.inline
-  def apply(makeAuthenticatedRequest: (OptionsWithUri, OnAuthenticated) => Unit): MakeWritableStreamOptions = {
+  inline def apply(makeAuthenticatedRequest: (OptionsWithUri, OnAuthenticated) => Unit): MakeWritableStreamOptions = {
     val __obj = js.Dynamic.literal(makeAuthenticatedRequest = js.Any.fromFunction2(makeAuthenticatedRequest))
     __obj.asInstanceOf[MakeWritableStreamOptions]
   }
   
-  @scala.inline
-  implicit class MakeWritableStreamOptionsMutableBuilder[Self <: MakeWritableStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MakeWritableStreamOptions](x: Self) {
     
-    @scala.inline
-    def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setMakeAuthenticatedRequest(value: (OptionsWithUri, OnAuthenticated) => Unit): Self = StObject.set(x, "makeAuthenticatedRequest", js.Any.fromFunction2(value))
+    inline def setMakeAuthenticatedRequest(value: (OptionsWithUri, OnAuthenticated) => Unit): Self = StObject.set(x, "makeAuthenticatedRequest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMetadata(value: ContentType): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ContentType): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

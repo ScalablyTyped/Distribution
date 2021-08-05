@@ -23,34 +23,25 @@ trait CompensationInfo extends StObject {
 }
 object CompensationInfo {
   
-  @scala.inline
-  def apply(): CompensationInfo = {
+  inline def apply(): CompensationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompensationInfo]
   }
   
-  @scala.inline
-  implicit class CompensationInfoMutableBuilder[Self <: CompensationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CompensationInfo](x: Self) {
     
-    @scala.inline
-    def setAnnualizedBaseCompensationRange(value: CompensationRange): Self = StObject.set(x, "annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
+    inline def setAnnualizedBaseCompensationRange(value: CompensationRange): Self = StObject.set(x, "annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnualizedBaseCompensationRangeUndefined: Self = StObject.set(x, "annualizedBaseCompensationRange", js.undefined)
+    inline def setAnnualizedBaseCompensationRangeUndefined: Self = StObject.set(x, "annualizedBaseCompensationRange", js.undefined)
     
-    @scala.inline
-    def setAnnualizedTotalCompensationRange(value: CompensationRange): Self = StObject.set(x, "annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
+    inline def setAnnualizedTotalCompensationRange(value: CompensationRange): Self = StObject.set(x, "annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnualizedTotalCompensationRangeUndefined: Self = StObject.set(x, "annualizedTotalCompensationRange", js.undefined)
+    inline def setAnnualizedTotalCompensationRangeUndefined: Self = StObject.set(x, "annualizedTotalCompensationRange", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[CompensationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[CompensationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: CompensationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: CompensationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

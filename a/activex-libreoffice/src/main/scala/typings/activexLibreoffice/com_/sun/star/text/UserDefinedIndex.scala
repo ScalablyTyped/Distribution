@@ -48,8 +48,7 @@ trait UserDefinedIndex
 }
 object UserDefinedIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     BackColor: Color,
     BackGraphicFilter: String,
@@ -102,31 +101,22 @@ object UserDefinedIndex {
     __obj.asInstanceOf[UserDefinedIndex]
   }
   
-  @scala.inline
-  implicit class UserDefinedIndexMutableBuilder[Self <: UserDefinedIndex] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedIndex](x: Self) {
     
-    @scala.inline
-    def setCreateFromEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromEmbeddedObjects", value.asInstanceOf[js.Any])
+    inline def setCreateFromEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromEmbeddedObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromGraphicObjects(value: Boolean): Self = StObject.set(x, "CreateFromGraphicObjects", value.asInstanceOf[js.Any])
+    inline def setCreateFromGraphicObjects(value: Boolean): Self = StObject.set(x, "CreateFromGraphicObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromMarks(value: Boolean): Self = StObject.set(x, "CreateFromMarks", value.asInstanceOf[js.Any])
+    inline def setCreateFromMarks(value: Boolean): Self = StObject.set(x, "CreateFromMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromTables(value: Boolean): Self = StObject.set(x, "CreateFromTables", value.asInstanceOf[js.Any])
+    inline def setCreateFromTables(value: Boolean): Self = StObject.set(x, "CreateFromTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromTextFrames(value: Boolean): Self = StObject.set(x, "CreateFromTextFrames", value.asInstanceOf[js.Any])
+    inline def setCreateFromTextFrames(value: Boolean): Self = StObject.set(x, "CreateFromTextFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIndexMarks(value: SafeArray[XDocumentIndexMark]): Self = StObject.set(x, "DocumentIndexMarks", value.asInstanceOf[js.Any])
+    inline def setDocumentIndexMarks(value: SafeArray[XDocumentIndexMark]): Self = StObject.set(x, "DocumentIndexMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelParagraphStyles(value: XIndexReplace): Self = StObject.set(x, "LevelParagraphStyles", value.asInstanceOf[js.Any])
+    inline def setLevelParagraphStyles(value: XIndexReplace): Self = StObject.set(x, "LevelParagraphStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLevelFromSource(value: Boolean): Self = StObject.set(x, "UseLevelFromSource", value.asInstanceOf[js.Any])
+    inline def setUseLevelFromSource(value: Boolean): Self = StObject.set(x, "UseLevelFromSource", value.asInstanceOf[js.Any])
   }
 }

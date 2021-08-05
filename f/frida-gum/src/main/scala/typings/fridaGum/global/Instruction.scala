@@ -64,6 +64,5 @@ object Instruction {
     * @param target Memory location containing instruction to parse.
     */
   /* static member */
-  @scala.inline
-  def parse(target: NativePointerValue): typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(target.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction]
+  inline def parse(target: NativePointerValue): typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(target.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction]
 }

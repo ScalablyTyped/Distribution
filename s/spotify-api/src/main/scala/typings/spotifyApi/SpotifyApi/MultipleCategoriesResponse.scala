@@ -16,16 +16,13 @@ trait MultipleCategoriesResponse extends StObject {
 }
 object MultipleCategoriesResponse {
   
-  @scala.inline
-  def apply(categories: PagingObject[CategoryObject]): MultipleCategoriesResponse = {
+  inline def apply(categories: PagingObject[CategoryObject]): MultipleCategoriesResponse = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleCategoriesResponse]
   }
   
-  @scala.inline
-  implicit class MultipleCategoriesResponseMutableBuilder[Self <: MultipleCategoriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleCategoriesResponse](x: Self) {
     
-    @scala.inline
-    def setCategories(value: PagingObject[CategoryObject]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: PagingObject[CategoryObject]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
   }
 }

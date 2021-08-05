@@ -58,70 +58,49 @@ trait CreateHITWithHITTypeRequest extends StObject {
 }
 object CreateHITWithHITTypeRequest {
   
-  @scala.inline
-  def apply(HITTypeId: EntityId, LifetimeInSeconds: Long): CreateHITWithHITTypeRequest = {
+  inline def apply(HITTypeId: EntityId, LifetimeInSeconds: Long): CreateHITWithHITTypeRequest = {
     val __obj = js.Dynamic.literal(HITTypeId = HITTypeId.asInstanceOf[js.Any], LifetimeInSeconds = LifetimeInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHITWithHITTypeRequest]
   }
   
-  @scala.inline
-  implicit class CreateHITWithHITTypeRequestMutableBuilder[Self <: CreateHITWithHITTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHITWithHITTypeRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
+    inline def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentReviewPolicyUndefined: Self = StObject.set(x, "AssignmentReviewPolicy", js.undefined)
+    inline def setAssignmentReviewPolicyUndefined: Self = StObject.set(x, "AssignmentReviewPolicy", js.undefined)
     
-    @scala.inline
-    def setHITLayoutId(value: EntityId): Self = StObject.set(x, "HITLayoutId", value.asInstanceOf[js.Any])
+    inline def setHITLayoutId(value: EntityId): Self = StObject.set(x, "HITLayoutId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITLayoutIdUndefined: Self = StObject.set(x, "HITLayoutId", js.undefined)
+    inline def setHITLayoutIdUndefined: Self = StObject.set(x, "HITLayoutId", js.undefined)
     
-    @scala.inline
-    def setHITLayoutParameters(value: HITLayoutParameterList): Self = StObject.set(x, "HITLayoutParameters", value.asInstanceOf[js.Any])
+    inline def setHITLayoutParameters(value: HITLayoutParameterList): Self = StObject.set(x, "HITLayoutParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITLayoutParametersUndefined: Self = StObject.set(x, "HITLayoutParameters", js.undefined)
+    inline def setHITLayoutParametersUndefined: Self = StObject.set(x, "HITLayoutParameters", js.undefined)
     
-    @scala.inline
-    def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = StObject.set(x, "HITLayoutParameters", js.Array(value :_*))
+    inline def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = StObject.set(x, "HITLayoutParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setHITReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "HITReviewPolicy", value.asInstanceOf[js.Any])
+    inline def setHITReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "HITReviewPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITReviewPolicyUndefined: Self = StObject.set(x, "HITReviewPolicy", js.undefined)
+    inline def setHITReviewPolicyUndefined: Self = StObject.set(x, "HITReviewPolicy", js.undefined)
     
-    @scala.inline
-    def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
+    inline def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifetimeInSeconds(value: Long): Self = StObject.set(x, "LifetimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setLifetimeInSeconds(value: Long): Self = StObject.set(x, "LifetimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAssignments(value: Integer): Self = StObject.set(x, "MaxAssignments", value.asInstanceOf[js.Any])
+    inline def setMaxAssignments(value: Integer): Self = StObject.set(x, "MaxAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAssignmentsUndefined: Self = StObject.set(x, "MaxAssignments", js.undefined)
+    inline def setMaxAssignmentsUndefined: Self = StObject.set(x, "MaxAssignments", js.undefined)
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "Question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "Question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestionUndefined: Self = StObject.set(x, "Question", js.undefined)
+    inline def setQuestionUndefined: Self = StObject.set(x, "Question", js.undefined)
     
-    @scala.inline
-    def setRequesterAnnotation(value: String): Self = StObject.set(x, "RequesterAnnotation", value.asInstanceOf[js.Any])
+    inline def setRequesterAnnotation(value: String): Self = StObject.set(x, "RequesterAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterAnnotationUndefined: Self = StObject.set(x, "RequesterAnnotation", js.undefined)
+    inline def setRequesterAnnotationUndefined: Self = StObject.set(x, "RequesterAnnotation", js.undefined)
     
-    @scala.inline
-    def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
+    inline def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
+    inline def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
   }
 }

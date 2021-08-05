@@ -26,17 +26,14 @@ object mod {
   }
   object StrategyOptionsWithRequestInterface {
     
-    @scala.inline
-    def apply(passReqToCallback: Boolean): StrategyOptionsWithRequestInterface = {
+    inline def apply(passReqToCallback: Boolean): StrategyOptionsWithRequestInterface = {
       val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrategyOptionsWithRequestInterface]
     }
     
-    @scala.inline
-    implicit class StrategyOptionsWithRequestInterfaceMutableBuilder[Self <: StrategyOptionsWithRequestInterface] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptionsWithRequestInterface](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
   }
   

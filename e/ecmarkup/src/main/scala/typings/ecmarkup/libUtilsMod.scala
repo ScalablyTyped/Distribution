@@ -14,35 +14,29 @@ object libUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attrValueLocation(
+  inline def attrValueLocation(
     source: String,
     loc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any,
     attr: String
   ): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("attrValueLocation")(source.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[Line]
-  @scala.inline
-  def attrValueLocation(
+  inline def attrValueLocation(
     source: Unit,
     loc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any,
     attr: String
   ): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("attrValueLocation")(source.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[Line]
   
-  @scala.inline
-  def offsetToLineAndColumn(string: String, offset: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("offsetToLineAndColumn")(string.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Line]
+  inline def offsetToLineAndColumn(string: String, offset: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("offsetToLineAndColumn")(string.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Line]
   
-  @scala.inline
-  def warnEmdFailure_warn(
+  inline def warnEmdFailure_warn(
     report: /* import warning: importer.ImportType#apply Failed type conversion: ecmarkup.ecmarkup/lib/Spec.Spec['warn'] */ js.Any,
     node: Element,
     e: SyntaxErrorlinenumberunde
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnEmdFailure")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def warnEmdFailure_warn(
+  inline def warnEmdFailure_warn(
     report: /* import warning: importer.ImportType#apply Failed type conversion: ecmarkup.ecmarkup/lib/Spec.Spec['warn'] */ js.Any,
     node: Text,
     e: SyntaxErrorlinenumberunde
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnEmdFailure")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def wrapEmdFailure(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapEmdFailure")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def wrapEmdFailure(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapEmdFailure")(src.asInstanceOf[js.Any]).asInstanceOf[String]
 }

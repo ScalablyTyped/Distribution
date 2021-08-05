@@ -23,31 +23,23 @@ trait BatchUpdateDetectorErrorEntry extends StObject {
 }
 object BatchUpdateDetectorErrorEntry {
   
-  @scala.inline
-  def apply(): BatchUpdateDetectorErrorEntry = {
+  inline def apply(): BatchUpdateDetectorErrorEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdateDetectorErrorEntry]
   }
   
-  @scala.inline
-  implicit class BatchUpdateDetectorErrorEntryMutableBuilder[Self <: BatchUpdateDetectorErrorEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateDetectorErrorEntry](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait MatcherTrackParams
 }
 object MatcherTrackParams {
   
-  @scala.inline
-  def apply(): MatcherTrackParams = {
+  inline def apply(): MatcherTrackParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatcherTrackParams]
   }
   
-  @scala.inline
-  implicit class MatcherTrackParamsMutableBuilder[Self <: MatcherTrackParams] (val x: Self) extends AnyVal {
+  extension [Self <: MatcherTrackParams](x: Self) {
     
-    @scala.inline
-    def setF_has_lyrics(value: TBoolean): Self = StObject.set(x, "f_has_lyrics", value.asInstanceOf[js.Any])
+    inline def setF_has_lyrics(value: TBoolean): Self = StObject.set(x, "f_has_lyrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_has_lyricsUndefined: Self = StObject.set(x, "f_has_lyrics", js.undefined)
+    inline def setF_has_lyricsUndefined: Self = StObject.set(x, "f_has_lyrics", js.undefined)
     
-    @scala.inline
-    def setF_has_subtitle(value: TBoolean): Self = StObject.set(x, "f_has_subtitle", value.asInstanceOf[js.Any])
+    inline def setF_has_subtitle(value: TBoolean): Self = StObject.set(x, "f_has_subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_has_subtitleUndefined: Self = StObject.set(x, "f_has_subtitle", js.undefined)
+    inline def setF_has_subtitleUndefined: Self = StObject.set(x, "f_has_subtitle", js.undefined)
   }
 }

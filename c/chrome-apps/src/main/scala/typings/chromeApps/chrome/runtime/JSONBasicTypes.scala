@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSONBasicTypes extends StObject
 object JSONBasicTypes {
   
-  @scala.inline
-  def integer: typings.chromeApps.chromeAppsStrings.integer = "integer".asInstanceOf[typings.chromeApps.chromeAppsStrings.integer]
+  inline def integer: typings.chromeApps.chromeAppsStrings.integer = "integer".asInstanceOf[typings.chromeApps.chromeAppsStrings.integer]
   
-  @scala.inline
-  def number: typings.chromeApps.chromeAppsStrings.number = "number".asInstanceOf[typings.chromeApps.chromeAppsStrings.number]
+  inline def number: typings.chromeApps.chromeAppsStrings.number = "number".asInstanceOf[typings.chromeApps.chromeAppsStrings.number]
   
-  @scala.inline
-  def string: typings.chromeApps.chromeAppsStrings.string = "string".asInstanceOf[typings.chromeApps.chromeAppsStrings.string]
+  inline def string: typings.chromeApps.chromeAppsStrings.string = "string".asInstanceOf[typings.chromeApps.chromeAppsStrings.string]
 }

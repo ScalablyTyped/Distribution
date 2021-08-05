@@ -24,37 +24,27 @@ trait ITimeAxis
 }
 object ITimeAxis {
   
-  @scala.inline
-  def apply(): ITimeAxis = {
+  inline def apply(): ITimeAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITimeAxis]
   }
   
-  @scala.inline
-  implicit class ITimeAxisMutableBuilder[Self <: ITimeAxis] (val x: Self) extends AnyVal {
+  extension [Self <: ITimeAxis](x: Self) {
     
-    @scala.inline
-    def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+    inline def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
+    inline def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
     
-    @scala.inline
-    def setStep(value: Array): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Array): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+    inline def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
+    inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
   }
 }

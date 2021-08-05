@@ -39,17 +39,14 @@ object mod extends Shortcut {
   }
   object VueDateTimeData {
     
-    @scala.inline
-    def apply(value: String): VueDateTimeData = {
+    inline def apply(value: String): VueDateTimeData = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueDateTimeData]
     }
     
-    @scala.inline
-    implicit class VueDateTimeDataMutableBuilder[Self <: VueDateTimeData] (val x: Self) extends AnyVal {
+    extension [Self <: VueDateTimeData](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +58,16 @@ object mod extends Shortcut {
   }
   object VueDateTimeProps {
     
-    @scala.inline
-    def apply(inputClass: js.Any, inputStyle: js.Any): VueDateTimeProps = {
+    inline def apply(inputClass: js.Any, inputStyle: js.Any): VueDateTimeProps = {
       val __obj = js.Dynamic.literal(inputClass = inputClass.asInstanceOf[js.Any], inputStyle = inputStyle.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueDateTimeProps]
     }
     
-    @scala.inline
-    implicit class VueDateTimePropsMutableBuilder[Self <: VueDateTimeProps] (val x: Self) extends AnyVal {
+    extension [Self <: VueDateTimeProps](x: Self) {
       
-      @scala.inline
-      def setInputClass(value: js.Any): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
+      inline def setInputClass(value: js.Any): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputStyle(value: js.Any): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      inline def setInputStyle(value: js.Any): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     }
   }
   

@@ -12,20 +12,16 @@ trait ScopedCredentialParameters extends StObject {
 }
 object ScopedCredentialParameters {
   
-  @scala.inline
-  def apply(algorithm: java.lang.String | Algorithm, `type`: ScopedCredentialType): ScopedCredentialParameters = {
+  inline def apply(algorithm: java.lang.String | Algorithm, `type`: ScopedCredentialType): ScopedCredentialParameters = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialParameters]
   }
   
-  @scala.inline
-  implicit class ScopedCredentialParametersMutableBuilder[Self <: ScopedCredentialParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ScopedCredentialParameters](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: java.lang.String | Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: java.lang.String | Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ScopedCredentialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ScopedCredentialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesDeliveryTimelineView extends StObject {
 }
 object EnumValuesDeliveryTimelineView {
   
-  @scala.inline
-  def apply(enumValues: DeliveryTimelineView): EnumValuesDeliveryTimelineView = {
+  inline def apply(enumValues: DeliveryTimelineView): EnumValuesDeliveryTimelineView = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDeliveryTimelineView]
   }
   
-  @scala.inline
-  implicit class EnumValuesDeliveryTimelineViewMutableBuilder[Self <: EnumValuesDeliveryTimelineView] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDeliveryTimelineView](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: DeliveryTimelineView): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: DeliveryTimelineView): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

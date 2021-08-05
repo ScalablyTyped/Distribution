@@ -18,17 +18,14 @@ object anon {
   }
   object Dicts {
     
-    @scala.inline
-    def apply(deprecationEntries: DeprecatedOptions): Dicts = {
+    inline def apply(deprecationEntries: DeprecatedOptions): Dicts = {
       val __obj = js.Dynamic.literal(deprecationEntries = deprecationEntries.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dicts]
     }
     
-    @scala.inline
-    implicit class DictsMutableBuilder[Self <: Dicts] (val x: Self) extends AnyVal {
+    extension [Self <: Dicts](x: Self) {
       
-      @scala.inline
-      def setDeprecationEntries(value: DeprecatedOptions): Self = StObject.set(x, "deprecationEntries", value.asInstanceOf[js.Any])
+      inline def setDeprecationEntries(value: DeprecatedOptions): Self = StObject.set(x, "deprecationEntries", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,20 +37,16 @@ object anon {
   }
   object HasDeprecationWarnings {
     
-    @scala.inline
-    def apply(hasDeprecationWarnings: Boolean, isValid: Boolean): HasDeprecationWarnings = {
+    inline def apply(hasDeprecationWarnings: Boolean, isValid: Boolean): HasDeprecationWarnings = {
       val __obj = js.Dynamic.literal(hasDeprecationWarnings = hasDeprecationWarnings.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasDeprecationWarnings]
     }
     
-    @scala.inline
-    implicit class HasDeprecationWarningsMutableBuilder[Self <: HasDeprecationWarnings] (val x: Self) extends AnyVal {
+    extension [Self <: HasDeprecationWarnings](x: Self) {
       
-      @scala.inline
-      def setHasDeprecationWarnings(value: Boolean): Self = StObject.set(x, "hasDeprecationWarnings", value.asInstanceOf[js.Any])
+      inline def setHasDeprecationWarnings(value: Boolean): Self = StObject.set(x, "hasDeprecationWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
 }

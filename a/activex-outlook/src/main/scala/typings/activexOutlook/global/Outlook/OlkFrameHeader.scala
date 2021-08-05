@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkFrameHeader")
 @js.native
-class OlkFrameHeader protected ()
+/* private */ class OlkFrameHeader ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkFrameHeader {
   
@@ -36,7 +36,7 @@ class OlkFrameHeader protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkFrameHeader_typekey")
   var OutlookDotOlkFrameHeader_typekey: typings.activexOutlook.Outlook.OlkFrameHeader = js.native
 }

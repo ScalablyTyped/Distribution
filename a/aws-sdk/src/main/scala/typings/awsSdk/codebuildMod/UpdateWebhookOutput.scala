@@ -13,19 +13,15 @@ trait UpdateWebhookOutput extends StObject {
 }
 object UpdateWebhookOutput {
   
-  @scala.inline
-  def apply(): UpdateWebhookOutput = {
+  inline def apply(): UpdateWebhookOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateWebhookOutput]
   }
   
-  @scala.inline
-  implicit class UpdateWebhookOutputMutableBuilder[Self <: UpdateWebhookOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWebhookOutput](x: Self) {
     
-    @scala.inline
-    def setWebhook(value: Webhook): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+    inline def setWebhook(value: Webhook): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
+    inline def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
   }
 }

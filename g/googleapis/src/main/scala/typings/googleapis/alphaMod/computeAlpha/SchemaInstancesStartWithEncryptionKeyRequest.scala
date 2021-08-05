@@ -25,28 +25,21 @@ trait SchemaInstancesStartWithEncryptionKeyRequest extends StObject {
 }
 object SchemaInstancesStartWithEncryptionKeyRequest {
   
-  @scala.inline
-  def apply(): SchemaInstancesStartWithEncryptionKeyRequest = {
+  inline def apply(): SchemaInstancesStartWithEncryptionKeyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstancesStartWithEncryptionKeyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstancesStartWithEncryptionKeyRequestMutableBuilder[Self <: SchemaInstancesStartWithEncryptionKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstancesStartWithEncryptionKeyRequest](x: Self) {
     
-    @scala.inline
-    def setDisks(value: js.Array[SchemaCustomerEncryptionKeyProtectedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: js.Array[SchemaCustomerEncryptionKeyProtectedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: SchemaCustomerEncryptionKeyProtectedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: SchemaCustomerEncryptionKeyProtectedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "instanceEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setInstanceEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "instanceEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceEncryptionKeyUndefined: Self = StObject.set(x, "instanceEncryptionKey", js.undefined)
+    inline def setInstanceEncryptionKeyUndefined: Self = StObject.set(x, "instanceEncryptionKey", js.undefined)
   }
 }

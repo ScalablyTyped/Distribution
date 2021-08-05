@@ -16,10 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(options: MiddlewareOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(options: MiddlewareOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-ratelimit", JSImport.Namespace)
   @js.native
@@ -44,23 +42,18 @@ object mod {
   }
   object HeaderNameOptions {
     
-    @scala.inline
-    def apply(remaining: String, reset: String, total: String): HeaderNameOptions = {
+    inline def apply(remaining: String, reset: String, total: String): HeaderNameOptions = {
       val __obj = js.Dynamic.literal(remaining = remaining.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeaderNameOptions]
     }
     
-    @scala.inline
-    implicit class HeaderNameOptionsMutableBuilder[Self <: HeaderNameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderNameOptions](x: Self) {
       
-      @scala.inline
-      def setRemaining(value: String): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+      inline def setRemaining(value: String): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,74 +122,52 @@ object mod {
   }
   object MiddlewareOptions {
     
-    @scala.inline
-    def apply(db: Redis | RedisClient | (Map[js.Any, js.Any]), driver: redis | memory): MiddlewareOptions = {
+    inline def apply(db: Redis | RedisClient | (Map[js.Any, js.Any]), driver: redis | memory): MiddlewareOptions = {
       val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class MiddlewareOptionsMutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: /* context */ Context => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "blacklist", js.Any.fromFunction1(value))
+      inline def setBlacklist(value: /* context */ Context => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "blacklist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setDb(value: Redis | RedisClient | (Map[js.Any, js.Any])): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: Redis | RedisClient | (Map[js.Any, js.Any])): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
+      inline def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeaderUndefined: Self = StObject.set(x, "disableHeader", js.undefined)
+      inline def setDisableHeaderUndefined: Self = StObject.set(x, "disableHeader", js.undefined)
       
-      @scala.inline
-      def setDriver(value: redis | memory): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: redis | memory): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: HeaderNameOptions): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeaderNameOptions): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setId(value: /* context */ Context => String | `false`): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
+      inline def setId(value: /* context */ Context => String | `false`): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setThrow(value: Boolean): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
+      inline def setThrow(value: Boolean): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowUndefined: Self = StObject.set(x, "throw", js.undefined)
+      inline def setThrowUndefined: Self = StObject.set(x, "throw", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: /* context */ Context => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
+      inline def setWhitelist(value: /* context */ Context => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     }
   }
 }

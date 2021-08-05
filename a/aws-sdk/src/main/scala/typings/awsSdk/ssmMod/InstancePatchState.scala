@@ -103,8 +103,7 @@ trait InstancePatchState extends StObject {
 }
 object InstancePatchState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaselineId: BaselineId,
     InstanceId: InstanceId,
     Operation: PatchOperationType,
@@ -116,103 +115,70 @@ object InstancePatchState {
     __obj.asInstanceOf[InstancePatchState]
   }
   
-  @scala.inline
-  implicit class InstancePatchStateMutableBuilder[Self <: InstancePatchState] (val x: Self) extends AnyVal {
+  extension [Self <: InstancePatchState](x: Self) {
     
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
+    inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedCount(value: PatchFailedCount): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
+    inline def setFailedCount(value: PatchFailedCount): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedCountUndefined: Self = StObject.set(x, "FailedCount", js.undefined)
+    inline def setFailedCountUndefined: Self = StObject.set(x, "FailedCount", js.undefined)
     
-    @scala.inline
-    def setInstallOverrideList(value: InstallOverrideList): Self = StObject.set(x, "InstallOverrideList", value.asInstanceOf[js.Any])
+    inline def setInstallOverrideList(value: InstallOverrideList): Self = StObject.set(x, "InstallOverrideList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallOverrideListUndefined: Self = StObject.set(x, "InstallOverrideList", js.undefined)
+    inline def setInstallOverrideListUndefined: Self = StObject.set(x, "InstallOverrideList", js.undefined)
     
-    @scala.inline
-    def setInstalledCount(value: PatchInstalledCount): Self = StObject.set(x, "InstalledCount", value.asInstanceOf[js.Any])
+    inline def setInstalledCount(value: PatchInstalledCount): Self = StObject.set(x, "InstalledCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledCountUndefined: Self = StObject.set(x, "InstalledCount", js.undefined)
+    inline def setInstalledCountUndefined: Self = StObject.set(x, "InstalledCount", js.undefined)
     
-    @scala.inline
-    def setInstalledOtherCount(value: PatchInstalledOtherCount): Self = StObject.set(x, "InstalledOtherCount", value.asInstanceOf[js.Any])
+    inline def setInstalledOtherCount(value: PatchInstalledOtherCount): Self = StObject.set(x, "InstalledOtherCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledOtherCountUndefined: Self = StObject.set(x, "InstalledOtherCount", js.undefined)
+    inline def setInstalledOtherCountUndefined: Self = StObject.set(x, "InstalledOtherCount", js.undefined)
     
-    @scala.inline
-    def setInstalledPendingRebootCount(value: PatchInstalledPendingRebootCount): Self = StObject.set(x, "InstalledPendingRebootCount", value.asInstanceOf[js.Any])
+    inline def setInstalledPendingRebootCount(value: PatchInstalledPendingRebootCount): Self = StObject.set(x, "InstalledPendingRebootCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledPendingRebootCountUndefined: Self = StObject.set(x, "InstalledPendingRebootCount", js.undefined)
+    inline def setInstalledPendingRebootCountUndefined: Self = StObject.set(x, "InstalledPendingRebootCount", js.undefined)
     
-    @scala.inline
-    def setInstalledRejectedCount(value: PatchInstalledRejectedCount): Self = StObject.set(x, "InstalledRejectedCount", value.asInstanceOf[js.Any])
+    inline def setInstalledRejectedCount(value: PatchInstalledRejectedCount): Self = StObject.set(x, "InstalledRejectedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledRejectedCountUndefined: Self = StObject.set(x, "InstalledRejectedCount", js.undefined)
+    inline def setInstalledRejectedCountUndefined: Self = StObject.set(x, "InstalledRejectedCount", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNoRebootInstallOperationTime(value: DateTime): Self = StObject.set(x, "LastNoRebootInstallOperationTime", value.asInstanceOf[js.Any])
+    inline def setLastNoRebootInstallOperationTime(value: DateTime): Self = StObject.set(x, "LastNoRebootInstallOperationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNoRebootInstallOperationTimeUndefined: Self = StObject.set(x, "LastNoRebootInstallOperationTime", js.undefined)
+    inline def setLastNoRebootInstallOperationTimeUndefined: Self = StObject.set(x, "LastNoRebootInstallOperationTime", js.undefined)
     
-    @scala.inline
-    def setMissingCount(value: PatchMissingCount): Self = StObject.set(x, "MissingCount", value.asInstanceOf[js.Any])
+    inline def setMissingCount(value: PatchMissingCount): Self = StObject.set(x, "MissingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingCountUndefined: Self = StObject.set(x, "MissingCount", js.undefined)
+    inline def setMissingCountUndefined: Self = StObject.set(x, "MissingCount", js.undefined)
     
-    @scala.inline
-    def setNotApplicableCount(value: PatchNotApplicableCount): Self = StObject.set(x, "NotApplicableCount", value.asInstanceOf[js.Any])
+    inline def setNotApplicableCount(value: PatchNotApplicableCount): Self = StObject.set(x, "NotApplicableCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotApplicableCountUndefined: Self = StObject.set(x, "NotApplicableCount", js.undefined)
+    inline def setNotApplicableCountUndefined: Self = StObject.set(x, "NotApplicableCount", js.undefined)
     
-    @scala.inline
-    def setOperation(value: PatchOperationType): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: PatchOperationType): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationEndTime(value: DateTime): Self = StObject.set(x, "OperationEndTime", value.asInstanceOf[js.Any])
+    inline def setOperationEndTime(value: DateTime): Self = StObject.set(x, "OperationEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationStartTime(value: DateTime): Self = StObject.set(x, "OperationStartTime", value.asInstanceOf[js.Any])
+    inline def setOperationStartTime(value: DateTime): Self = StObject.set(x, "OperationStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerInformation(value: OwnerInformation): Self = StObject.set(x, "OwnerInformation", value.asInstanceOf[js.Any])
+    inline def setOwnerInformation(value: OwnerInformation): Self = StObject.set(x, "OwnerInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerInformationUndefined: Self = StObject.set(x, "OwnerInformation", js.undefined)
+    inline def setOwnerInformationUndefined: Self = StObject.set(x, "OwnerInformation", js.undefined)
     
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
+    inline def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebootOption(value: RebootOption): Self = StObject.set(x, "RebootOption", value.asInstanceOf[js.Any])
+    inline def setRebootOption(value: RebootOption): Self = StObject.set(x, "RebootOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebootOptionUndefined: Self = StObject.set(x, "RebootOption", js.undefined)
+    inline def setRebootOptionUndefined: Self = StObject.set(x, "RebootOption", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    @scala.inline
-    def setUnreportedNotApplicableCount(value: PatchUnreportedNotApplicableCount): Self = StObject.set(x, "UnreportedNotApplicableCount", value.asInstanceOf[js.Any])
+    inline def setUnreportedNotApplicableCount(value: PatchUnreportedNotApplicableCount): Self = StObject.set(x, "UnreportedNotApplicableCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreportedNotApplicableCountUndefined: Self = StObject.set(x, "UnreportedNotApplicableCount", js.undefined)
+    inline def setUnreportedNotApplicableCountUndefined: Self = StObject.set(x, "UnreportedNotApplicableCount", js.undefined)
   }
 }

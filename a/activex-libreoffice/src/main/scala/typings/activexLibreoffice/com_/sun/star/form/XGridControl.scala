@@ -23,8 +23,7 @@ trait XGridControl
 }
 object XGridControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentColumnPosition: Double,
     acquire: () => Unit,
     addGridControlListener: XGridControlListener => Unit,
@@ -40,13 +39,10 @@ object XGridControl {
     __obj.asInstanceOf[XGridControl]
   }
   
-  @scala.inline
-  implicit class XGridControlMutableBuilder[Self <: XGridControl] (val x: Self) extends AnyVal {
+  extension [Self <: XGridControl](x: Self) {
     
-    @scala.inline
-    def setAddGridControlListener(value: XGridControlListener => Unit): Self = StObject.set(x, "addGridControlListener", js.Any.fromFunction1(value))
+    inline def setAddGridControlListener(value: XGridControlListener => Unit): Self = StObject.set(x, "addGridControlListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveGridControlListener(value: XGridControlListener => Unit): Self = StObject.set(x, "removeGridControlListener", js.Any.fromFunction1(value))
+    inline def setRemoveGridControlListener(value: XGridControlListener => Unit): Self = StObject.set(x, "removeGridControlListener", js.Any.fromFunction1(value))
   }
 }

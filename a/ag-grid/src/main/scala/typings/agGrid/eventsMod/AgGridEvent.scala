@@ -16,20 +16,16 @@ trait AgGridEvent
 }
 object AgGridEvent {
   
-  @scala.inline
-  def apply(api: GridApi, columnApi: ColumnApi, `type`: String): AgGridEvent = {
+  inline def apply(api: GridApi, columnApi: ColumnApi, `type`: String): AgGridEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgGridEvent]
   }
   
-  @scala.inline
-  implicit class AgGridEventMutableBuilder[Self <: AgGridEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AgGridEvent](x: Self) {
     
-    @scala.inline
-    def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
+    inline def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
   }
 }

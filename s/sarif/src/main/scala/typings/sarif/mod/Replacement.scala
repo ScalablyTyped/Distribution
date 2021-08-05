@@ -23,28 +23,21 @@ trait Replacement extends StObject {
 }
 object Replacement {
   
-  @scala.inline
-  def apply(deletedRegion: Region): Replacement = {
+  inline def apply(deletedRegion: Region): Replacement = {
     val __obj = js.Dynamic.literal(deletedRegion = deletedRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Replacement]
   }
   
-  @scala.inline
-  implicit class ReplacementMutableBuilder[Self <: Replacement] (val x: Self) extends AnyVal {
+  extension [Self <: Replacement](x: Self) {
     
-    @scala.inline
-    def setDeletedRegion(value: Region): Self = StObject.set(x, "deletedRegion", value.asInstanceOf[js.Any])
+    inline def setDeletedRegion(value: Region): Self = StObject.set(x, "deletedRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedContent(value: ArtifactContent): Self = StObject.set(x, "insertedContent", value.asInstanceOf[js.Any])
+    inline def setInsertedContent(value: ArtifactContent): Self = StObject.set(x, "insertedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedContentUndefined: Self = StObject.set(x, "insertedContent", js.undefined)
+    inline def setInsertedContentUndefined: Self = StObject.set(x, "insertedContent", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

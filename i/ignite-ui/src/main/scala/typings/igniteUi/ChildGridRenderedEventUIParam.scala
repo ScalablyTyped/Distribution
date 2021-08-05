@@ -23,31 +23,23 @@ trait ChildGridRenderedEventUIParam extends StObject {
 }
 object ChildGridRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): ChildGridRenderedEventUIParam = {
+  inline def apply(): ChildGridRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChildGridRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ChildGridRenderedEventUIParamMutableBuilder[Self <: ChildGridRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ChildGridRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setChildgrid(value: js.Any): Self = StObject.set(x, "childgrid", value.asInstanceOf[js.Any])
+    inline def setChildgrid(value: js.Any): Self = StObject.set(x, "childgrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildgridUndefined: Self = StObject.set(x, "childgrid", js.undefined)
+    inline def setChildgridUndefined: Self = StObject.set(x, "childgrid", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setParentrow(value: String): Self = StObject.set(x, "parentrow", value.asInstanceOf[js.Any])
+    inline def setParentrow(value: String): Self = StObject.set(x, "parentrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentrowUndefined: Self = StObject.set(x, "parentrow", js.undefined)
+    inline def setParentrowUndefined: Self = StObject.set(x, "parentrow", js.undefined)
   }
 }

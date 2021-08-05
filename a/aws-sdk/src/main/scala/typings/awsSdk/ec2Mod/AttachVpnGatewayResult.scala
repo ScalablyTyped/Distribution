@@ -13,19 +13,15 @@ trait AttachVpnGatewayResult extends StObject {
 }
 object AttachVpnGatewayResult {
   
-  @scala.inline
-  def apply(): AttachVpnGatewayResult = {
+  inline def apply(): AttachVpnGatewayResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachVpnGatewayResult]
   }
   
-  @scala.inline
-  implicit class AttachVpnGatewayResultMutableBuilder[Self <: AttachVpnGatewayResult] (val x: Self) extends AnyVal {
+  extension [Self <: AttachVpnGatewayResult](x: Self) {
     
-    @scala.inline
-    def setVpcAttachment(value: VpcAttachment): Self = StObject.set(x, "VpcAttachment", value.asInstanceOf[js.Any])
+    inline def setVpcAttachment(value: VpcAttachment): Self = StObject.set(x, "VpcAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcAttachmentUndefined: Self = StObject.set(x, "VpcAttachment", js.undefined)
+    inline def setVpcAttachmentUndefined: Self = StObject.set(x, "VpcAttachment", js.undefined)
   }
 }

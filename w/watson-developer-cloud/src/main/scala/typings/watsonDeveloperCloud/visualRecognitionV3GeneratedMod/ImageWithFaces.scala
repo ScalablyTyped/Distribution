@@ -24,43 +24,31 @@ trait ImageWithFaces extends StObject {
 }
 object ImageWithFaces {
   
-  @scala.inline
-  def apply(faces: js.Array[Face]): ImageWithFaces = {
+  inline def apply(faces: js.Array[Face]): ImageWithFaces = {
     val __obj = js.Dynamic.literal(faces = faces.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageWithFaces]
   }
   
-  @scala.inline
-  implicit class ImageWithFacesMutableBuilder[Self <: ImageWithFaces] (val x: Self) extends AnyVal {
+  extension [Self <: ImageWithFaces](x: Self) {
     
-    @scala.inline
-    def setError(value: ErrorInfo): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorInfo): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFaces(value: js.Array[Face]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
+    inline def setFaces(value: js.Array[Face]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacesVarargs(value: Face*): Self = StObject.set(x, "faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "faces", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setResolved_url(value: String): Self = StObject.set(x, "resolved_url", value.asInstanceOf[js.Any])
+    inline def setResolved_url(value: String): Self = StObject.set(x, "resolved_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolved_urlUndefined: Self = StObject.set(x, "resolved_url", js.undefined)
+    inline def setResolved_urlUndefined: Self = StObject.set(x, "resolved_url", js.undefined)
     
-    @scala.inline
-    def setSource_url(value: String): Self = StObject.set(x, "source_url", value.asInstanceOf[js.Any])
+    inline def setSource_url(value: String): Self = StObject.set(x, "source_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_urlUndefined: Self = StObject.set(x, "source_url", js.undefined)
+    inline def setSource_urlUndefined: Self = StObject.set(x, "source_url", js.undefined)
   }
 }

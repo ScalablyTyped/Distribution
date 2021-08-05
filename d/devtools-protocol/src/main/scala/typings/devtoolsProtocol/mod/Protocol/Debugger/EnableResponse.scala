@@ -14,16 +14,13 @@ trait EnableResponse extends StObject {
 }
 object EnableResponse {
   
-  @scala.inline
-  def apply(debuggerId: UniqueDebuggerId): EnableResponse = {
+  inline def apply(debuggerId: UniqueDebuggerId): EnableResponse = {
     val __obj = js.Dynamic.literal(debuggerId = debuggerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableResponse]
   }
   
-  @scala.inline
-  implicit class EnableResponseMutableBuilder[Self <: EnableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EnableResponse](x: Self) {
     
-    @scala.inline
-    def setDebuggerId(value: UniqueDebuggerId): Self = StObject.set(x, "debuggerId", value.asInstanceOf[js.Any])
+    inline def setDebuggerId(value: UniqueDebuggerId): Self = StObject.set(x, "debuggerId", value.asInstanceOf[js.Any])
   }
 }

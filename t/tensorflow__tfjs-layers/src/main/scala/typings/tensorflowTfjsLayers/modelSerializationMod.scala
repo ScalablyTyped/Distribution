@@ -20,8 +20,7 @@ object modelSerializationMod {
   }
   object KerasFileSerialization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       model_config: ModelSerialization | SequentialSerialization | LegacySequentialSerialization,
       training_config: TrainingConfig
     ): KerasFileSerialization = {
@@ -29,14 +28,11 @@ object modelSerializationMod {
       __obj.asInstanceOf[KerasFileSerialization]
     }
     
-    @scala.inline
-    implicit class KerasFileSerializationMutableBuilder[Self <: KerasFileSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: KerasFileSerialization](x: Self) {
       
-      @scala.inline
-      def setModel_config(value: ModelSerialization | SequentialSerialization | LegacySequentialSerialization): Self = StObject.set(x, "model_config", value.asInstanceOf[js.Any])
+      inline def setModel_config(value: ModelSerialization | SequentialSerialization | LegacySequentialSerialization): Self = StObject.set(x, "model_config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraining_config(value: TrainingConfig): Self = StObject.set(x, "training_config", value.asInstanceOf[js.Any])
+      inline def setTraining_config(value: TrainingConfig): Self = StObject.set(x, "training_config", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,35 +48,26 @@ object modelSerializationMod {
   }
   object LegacySequentialSerialization {
     
-    @scala.inline
-    def apply(config: js.Array[LayerSerialization]): LegacySequentialSerialization = {
+    inline def apply(config: js.Array[LayerSerialization]): LegacySequentialSerialization = {
       val __obj = js.Dynamic.literal(class_name = "Sequential", config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegacySequentialSerialization]
     }
     
-    @scala.inline
-    implicit class LegacySequentialSerializationMutableBuilder[Self <: LegacySequentialSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: LegacySequentialSerialization](x: Self) {
       
-      @scala.inline
-      def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+      inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       
-      @scala.inline
-      def setClass_name(value: Sequential): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
+      inline def setClass_name(value: Sequential): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: js.Array[LayerSerialization]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Array[LayerSerialization]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigVarargs(value: LayerSerialization*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: LayerSerialization*): Self = StObject.set(x, "config", js.Array(value :_*))
       
-      @scala.inline
-      def setKeras_version(value: String): Self = StObject.set(x, "keras_version", value.asInstanceOf[js.Any])
+      inline def setKeras_version(value: String): Self = StObject.set(x, "keras_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeras_versionUndefined: Self = StObject.set(x, "keras_version", js.undefined)
+      inline def setKeras_versionUndefined: Self = StObject.set(x, "keras_version", js.undefined)
     }
   }
   
@@ -96,8 +83,7 @@ object modelSerializationMod {
   }
   object ModelConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       input_layers: js.Array[TensorKeyArray],
       layers: js.Array[LayerSerialization],
       name: String,
@@ -107,29 +93,21 @@ object modelSerializationMod {
       __obj.asInstanceOf[ModelConfig]
     }
     
-    @scala.inline
-    implicit class ModelConfigMutableBuilder[Self <: ModelConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ModelConfig](x: Self) {
       
-      @scala.inline
-      def setInput_layers(value: js.Array[TensorKeyArray]): Self = StObject.set(x, "input_layers", value.asInstanceOf[js.Any])
+      inline def setInput_layers(value: js.Array[TensorKeyArray]): Self = StObject.set(x, "input_layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "input_layers", js.Array(value :_*))
+      inline def setInput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "input_layers", js.Array(value :_*))
       
-      @scala.inline
-      def setLayers(value: js.Array[LayerSerialization]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[LayerSerialization]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput_layers(value: js.Array[TensorKeyArray]): Self = StObject.set(x, "output_layers", value.asInstanceOf[js.Any])
+      inline def setOutput_layers(value: js.Array[TensorKeyArray]): Self = StObject.set(x, "output_layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "output_layers", js.Array(value :_*))
+      inline def setOutput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "output_layers", js.Array(value :_*))
     }
   }
   
@@ -143,26 +121,20 @@ object modelSerializationMod {
   }
   object ModelSerialization {
     
-    @scala.inline
-    def apply(config: ModelConfig): ModelSerialization = {
+    inline def apply(config: ModelConfig): ModelSerialization = {
       val __obj = js.Dynamic.literal(class_name = "Model", config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelSerialization]
     }
     
-    @scala.inline
-    implicit class ModelSerializationMutableBuilder[Self <: ModelSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: ModelSerialization](x: Self) {
       
-      @scala.inline
-      def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+      inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       
-      @scala.inline
-      def setKeras_version(value: String): Self = StObject.set(x, "keras_version", value.asInstanceOf[js.Any])
+      inline def setKeras_version(value: String): Self = StObject.set(x, "keras_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeras_versionUndefined: Self = StObject.set(x, "keras_version", js.undefined)
+      inline def setKeras_versionUndefined: Self = StObject.set(x, "keras_version", js.undefined)
     }
   }
   
@@ -172,20 +144,16 @@ object modelSerializationMod {
   }
   object SequentialConfig {
     
-    @scala.inline
-    def apply(layers: js.Array[LayerSerialization]): SequentialConfig = {
+    inline def apply(layers: js.Array[LayerSerialization]): SequentialConfig = {
       val __obj = js.Dynamic.literal(layers = layers.asInstanceOf[js.Any])
       __obj.asInstanceOf[SequentialConfig]
     }
     
-    @scala.inline
-    implicit class SequentialConfigMutableBuilder[Self <: SequentialConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SequentialConfig](x: Self) {
       
-      @scala.inline
-      def setLayers(value: js.Array[LayerSerialization]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[LayerSerialization]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value :_*))
     }
   }
   
@@ -199,26 +167,20 @@ object modelSerializationMod {
   }
   object SequentialSerialization {
     
-    @scala.inline
-    def apply(config: SequentialConfig): SequentialSerialization = {
+    inline def apply(config: SequentialConfig): SequentialSerialization = {
       val __obj = js.Dynamic.literal(class_name = "Sequential", config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[SequentialSerialization]
     }
     
-    @scala.inline
-    implicit class SequentialSerializationMutableBuilder[Self <: SequentialSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: SequentialSerialization](x: Self) {
       
-      @scala.inline
-      def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+      inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       
-      @scala.inline
-      def setKeras_version(value: String): Self = StObject.set(x, "keras_version", value.asInstanceOf[js.Any])
+      inline def setKeras_version(value: String): Self = StObject.set(x, "keras_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeras_versionUndefined: Self = StObject.set(x, "keras_version", js.undefined)
+      inline def setKeras_versionUndefined: Self = StObject.set(x, "keras_version", js.undefined)
     }
   }
 }

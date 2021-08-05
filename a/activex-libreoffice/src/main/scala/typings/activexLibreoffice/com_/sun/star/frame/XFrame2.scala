@@ -57,8 +57,7 @@ trait XFrame2
 }
 object XFrame2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveFrame: XFrame,
     ComponentWindow: XWindow,
     ContainerWindow: XWindow,
@@ -109,19 +108,14 @@ object XFrame2 {
     __obj.asInstanceOf[XFrame2]
   }
   
-  @scala.inline
-  implicit class XFrame2MutableBuilder[Self <: XFrame2] (val x: Self) extends AnyVal {
+  extension [Self <: XFrame2](x: Self) {
     
-    @scala.inline
-    def setDispatchRecorderSupplier(value: XDispatchRecorderSupplier): Self = StObject.set(x, "DispatchRecorderSupplier", value.asInstanceOf[js.Any])
+    inline def setDispatchRecorderSupplier(value: XDispatchRecorderSupplier): Self = StObject.set(x, "DispatchRecorderSupplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutManager(value: XInterface): Self = StObject.set(x, "LayoutManager", value.asInstanceOf[js.Any])
+    inline def setLayoutManager(value: XInterface): Self = StObject.set(x, "LayoutManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
+    inline def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
   }
 }

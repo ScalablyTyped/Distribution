@@ -12,17 +12,14 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(file: String): File = {
+    inline def apply(file: String): File = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,26 +33,20 @@ object anon {
   }
   object Messages {
     
-    @scala.inline
-    def apply(messages: js.Array[String], result: String, valid: Boolean): Messages = {
+    inline def apply(messages: js.Array[String], result: String, valid: Boolean): Messages = {
       val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Messages]
     }
     
-    @scala.inline
-    implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
+    extension [Self <: Messages](x: Self) {
       
-      @scala.inline
-      def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
       
-      @scala.inline
-      def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -47,21 +47,17 @@ object mod {
   }
   object AsyncIterator {
     
-    @scala.inline
-    def apply[T](next: () => js.Promise[IteratorResult[T, js.Any]], `return`: () => Unit): AsyncIterator[T] = {
+    inline def apply[T](next: () => js.Promise[IteratorResult[T, js.Any]], `return`: () => Unit): AsyncIterator[T] = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.updateDynamic("return")(js.Any.fromFunction0(`return`))
       __obj.asInstanceOf[AsyncIterator[T]]
     }
     
-    @scala.inline
-    implicit class AsyncIteratorMutableBuilder[Self <: AsyncIterator[?], T] (val x: Self & AsyncIterator[T]) extends AnyVal {
+    extension [Self <: AsyncIterator[?], T](x: Self & AsyncIterator[T]) {
       
-      @scala.inline
-      def setNext(value: () => js.Promise[IteratorResult[T, js.Any]]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => js.Promise[IteratorResult[T, js.Any]]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReturn(value: () => Unit): Self = StObject.set(x, "return", js.Any.fromFunction0(value))
+      inline def setReturn(value: () => Unit): Self = StObject.set(x, "return", js.Any.fromFunction0(value))
     }
   }
 }

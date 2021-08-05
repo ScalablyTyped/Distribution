@@ -17,27 +17,21 @@ trait Media extends StObject {
 }
 object Media {
   
-  @scala.inline
-  def apply(buffer: Buffer, `extension`: String, name: String, `type`: String): Media = {
+  inline def apply(buffer: Buffer, `extension`: String, name: String, `type`: String): Media = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
   
-  @scala.inline
-  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
+  extension [Self <: Media](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

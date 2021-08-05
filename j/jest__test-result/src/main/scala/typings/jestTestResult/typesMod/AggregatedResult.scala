@@ -14,8 +14,7 @@ trait AggregatedResult
 }
 object AggregatedResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     numFailedTestSuites: Double,
     numFailedTests: Double,
     numPassedTestSuites: Double,
@@ -37,16 +36,12 @@ object AggregatedResult {
     __obj.asInstanceOf[AggregatedResult]
   }
   
-  @scala.inline
-  implicit class AggregatedResultMutableBuilder[Self <: AggregatedResult] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedResult](x: Self) {
     
-    @scala.inline
-    def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
+    inline def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageMapNull: Self = StObject.set(x, "coverageMap", null)
+    inline def setCoverageMapNull: Self = StObject.set(x, "coverageMap", null)
     
-    @scala.inline
-    def setCoverageMapUndefined: Self = StObject.set(x, "coverageMap", js.undefined)
+    inline def setCoverageMapUndefined: Self = StObject.set(x, "coverageMap", js.undefined)
   }
 }

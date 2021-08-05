@@ -23,25 +23,19 @@ trait CreateWebhookRequest extends StObject {
 }
 object CreateWebhookRequest {
   
-  @scala.inline
-  def apply(appId: AppId, branchName: BranchName): CreateWebhookRequest = {
+  inline def apply(appId: AppId, branchName: BranchName): CreateWebhookRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWebhookRequest]
   }
   
-  @scala.inline
-  implicit class CreateWebhookRequestMutableBuilder[Self <: CreateWebhookRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWebhookRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

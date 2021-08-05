@@ -95,21 +95,16 @@ object presetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Preset]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Preset]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PresetState): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Preset]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Preset]
+    inline def get(name: String, id: Input[ID]): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Preset]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Preset]
+    inline def get(name: String, id: Input[ID], state: PresetState): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Preset]
+    inline def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Preset]
     
     /**
       * Returns true if the given object is an instance of Preset.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean]
   }
   
   trait PresetArgs extends StObject {
@@ -167,78 +162,56 @@ object presetMod {
   }
   object PresetArgs {
     
-    @scala.inline
-    def apply(container: Input[String]): PresetArgs = {
+    inline def apply(container: Input[String]): PresetArgs = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[PresetArgs]
     }
     
-    @scala.inline
-    implicit class PresetArgsMutableBuilder[Self <: PresetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PresetArgs](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioCodecOptions(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]): Self = StObject.set(x, "audioCodecOptions", value.asInstanceOf[js.Any])
+      inline def setAudioCodecOptions(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]): Self = StObject.set(x, "audioCodecOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioCodecOptionsUndefined: Self = StObject.set(x, "audioCodecOptions", js.undefined)
+      inline def setAudioCodecOptionsUndefined: Self = StObject.set(x, "audioCodecOptions", js.undefined)
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setContainer(value: Input[String]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Input[String]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setThumbnails(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+      inline def setThumbnails(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+      inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoCodecOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "videoCodecOptions", value.asInstanceOf[js.Any])
+      inline def setVideoCodecOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "videoCodecOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoCodecOptionsUndefined: Self = StObject.set(x, "videoCodecOptions", js.undefined)
+      inline def setVideoCodecOptionsUndefined: Self = StObject.set(x, "videoCodecOptions", js.undefined)
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
       
-      @scala.inline
-      def setVideoWatermarks(
+      inline def setVideoWatermarks(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]]
             ]
       ): Self = StObject.set(x, "videoWatermarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoWatermarksUndefined: Self = StObject.set(x, "videoWatermarks", js.undefined)
+      inline def setVideoWatermarksUndefined: Self = StObject.set(x, "videoWatermarks", js.undefined)
       
-      @scala.inline
-      def setVideoWatermarksVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]*): Self = StObject.set(x, "videoWatermarks", js.Array(value :_*))
+      inline def setVideoWatermarksVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]*): Self = StObject.set(x, "videoWatermarks", js.Array(value :_*))
     }
   }
   
@@ -299,87 +272,62 @@ object presetMod {
   }
   object PresetState {
     
-    @scala.inline
-    def apply(): PresetState = {
+    inline def apply(): PresetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresetState]
     }
     
-    @scala.inline
-    implicit class PresetStateMutableBuilder[Self <: PresetState] (val x: Self) extends AnyVal {
+    extension [Self <: PresetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAudio(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioCodecOptions(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]): Self = StObject.set(x, "audioCodecOptions", value.asInstanceOf[js.Any])
+      inline def setAudioCodecOptions(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]): Self = StObject.set(x, "audioCodecOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioCodecOptionsUndefined: Self = StObject.set(x, "audioCodecOptions", js.undefined)
+      inline def setAudioCodecOptionsUndefined: Self = StObject.set(x, "audioCodecOptions", js.undefined)
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setContainer(value: Input[String]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Input[String]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setThumbnails(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+      inline def setThumbnails(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+      inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoCodecOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "videoCodecOptions", value.asInstanceOf[js.Any])
+      inline def setVideoCodecOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "videoCodecOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoCodecOptionsUndefined: Self = StObject.set(x, "videoCodecOptions", js.undefined)
+      inline def setVideoCodecOptionsUndefined: Self = StObject.set(x, "videoCodecOptions", js.undefined)
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
       
-      @scala.inline
-      def setVideoWatermarks(
+      inline def setVideoWatermarks(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]]
             ]
       ): Self = StObject.set(x, "videoWatermarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoWatermarksUndefined: Self = StObject.set(x, "videoWatermarks", js.undefined)
+      inline def setVideoWatermarksUndefined: Self = StObject.set(x, "videoWatermarks", js.undefined)
       
-      @scala.inline
-      def setVideoWatermarksVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]*): Self = StObject.set(x, "videoWatermarks", js.Array(value :_*))
+      inline def setVideoWatermarksVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]*): Self = StObject.set(x, "videoWatermarks", js.Array(value :_*))
     }
   }
 }

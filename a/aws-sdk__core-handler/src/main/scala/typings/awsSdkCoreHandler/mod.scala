@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def coreHandler[OutputConstraint /* <: MetadataBearer */, Stream](
+  inline def coreHandler[OutputConstraint /* <: MetadataBearer */, Stream](
     httpHandler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpHandler<Stream> */ js.Any,
     responseParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseParser<Stream> */ js.Any
   ): Terminalware = (^.asInstanceOf[js.Dynamic].applyDynamic("coreHandler")(httpHandler.asInstanceOf[js.Any], responseParser.asInstanceOf[js.Any])).asInstanceOf[Terminalware]

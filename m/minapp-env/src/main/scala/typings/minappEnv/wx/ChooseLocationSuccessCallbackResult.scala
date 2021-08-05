@@ -20,25 +20,19 @@ trait ChooseLocationSuccessCallbackResult extends StObject {
 }
 object ChooseLocationSuccessCallbackResult {
   
-  @scala.inline
-  def apply(address: String, latitude: String, longitude: String, name: String): ChooseLocationSuccessCallbackResult = {
+  inline def apply(address: String, latitude: String, longitude: String, name: String): ChooseLocationSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseLocationSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ChooseLocationSuccessCallbackResultMutableBuilder[Self <: ChooseLocationSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseLocationSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: String): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: String): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: String): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: String): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

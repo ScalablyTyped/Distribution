@@ -14,22 +14,17 @@ trait I18nNodesByMsgId extends StObject {
 }
 object I18nNodesByMsgId {
   
-  @scala.inline
-  def apply(i18nNodesByMsgId: StringDictionary[js.Array[Node]]): I18nNodesByMsgId = {
+  inline def apply(i18nNodesByMsgId: StringDictionary[js.Array[Node]]): I18nNodesByMsgId = {
     val __obj = js.Dynamic.literal(i18nNodesByMsgId = i18nNodesByMsgId.asInstanceOf[js.Any], locale = null)
     __obj.asInstanceOf[I18nNodesByMsgId]
   }
   
-  @scala.inline
-  implicit class I18nNodesByMsgIdMutableBuilder[Self <: I18nNodesByMsgId] (val x: Self) extends AnyVal {
+  extension [Self <: I18nNodesByMsgId](x: Self) {
     
-    @scala.inline
-    def setI18nNodesByMsgId(value: StringDictionary[js.Array[Node]]): Self = StObject.set(x, "i18nNodesByMsgId", value.asInstanceOf[js.Any])
+    inline def setI18nNodesByMsgId(value: StringDictionary[js.Array[Node]]): Self = StObject.set(x, "i18nNodesByMsgId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleNull: Self = StObject.set(x, "locale", null)
+    inline def setLocaleNull: Self = StObject.set(x, "locale", null)
   }
 }

@@ -28,25 +28,19 @@ trait EventLoopDelay extends StObject {
 }
 object EventLoopDelay {
   
-  @scala.inline
-  def apply(concurrent: Double, eventLoopDelay: Double, heapUsed: Double, rss: Double): EventLoopDelay = {
+  inline def apply(concurrent: Double, eventLoopDelay: Double, heapUsed: Double, rss: Double): EventLoopDelay = {
     val __obj = js.Dynamic.literal(concurrent = concurrent.asInstanceOf[js.Any], eventLoopDelay = eventLoopDelay.asInstanceOf[js.Any], heapUsed = heapUsed.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventLoopDelay]
   }
   
-  @scala.inline
-  implicit class EventLoopDelayMutableBuilder[Self <: EventLoopDelay] (val x: Self) extends AnyVal {
+  extension [Self <: EventLoopDelay](x: Self) {
     
-    @scala.inline
-    def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
+    inline def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLoopDelay(value: Double): Self = StObject.set(x, "eventLoopDelay", value.asInstanceOf[js.Any])
+    inline def setEventLoopDelay(value: Double): Self = StObject.set(x, "eventLoopDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
+    inline def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+    inline def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
   }
 }

@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Node extends StObject
 object Node {
   
-  @scala.inline
-  def NonTextNode(_attrs: Dictkey, _children: js.Array[Node], _tag: String): typings.docxTemplates.typesMod.NonTextNode = {
+  inline def NonTextNode(_attrs: Dictkey, _children: js.Array[Node], _tag: String): typings.docxTemplates.typesMod.NonTextNode = {
     val __obj = js.Dynamic.literal(_attrs = _attrs.asInstanceOf[js.Any], _children = _children.asInstanceOf[js.Any], _fTextNode = false, _tag = _tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.docxTemplates.typesMod.NonTextNode]
   }
   
-  @scala.inline
-  def TextNode(_children: js.Array[Node], _text: String): typings.docxTemplates.typesMod.TextNode = {
+  inline def TextNode(_children: js.Array[Node], _text: String): typings.docxTemplates.typesMod.TextNode = {
     val __obj = js.Dynamic.literal(_children = _children.asInstanceOf[js.Any], _fTextNode = true, _text = _text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.docxTemplates.typesMod.TextNode]
   }

@@ -15,16 +15,13 @@ trait RemoveMembershipEvent
 }
 object RemoveMembershipEvent {
   
-  @scala.inline
-  def apply(channel: String, message: DataUuid, timetoken: Double): RemoveMembershipEvent = {
+  inline def apply(channel: String, message: DataUuid, timetoken: Double): RemoveMembershipEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any], subscription = null)
     __obj.asInstanceOf[RemoveMembershipEvent]
   }
   
-  @scala.inline
-  implicit class RemoveMembershipEventMutableBuilder[Self <: RemoveMembershipEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveMembershipEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: DataUuid): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: DataUuid): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

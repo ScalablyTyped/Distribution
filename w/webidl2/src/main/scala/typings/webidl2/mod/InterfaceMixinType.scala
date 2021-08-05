@@ -23,8 +23,7 @@ trait InterfaceMixinType
 }
 object InterfaceMixinType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     inheritance: Null,
     members: js.Array[IDLInterfaceMixinMemberType],
@@ -37,22 +36,16 @@ object InterfaceMixinType {
     __obj.asInstanceOf[InterfaceMixinType]
   }
   
-  @scala.inline
-  implicit class InterfaceMixinTypeMutableBuilder[Self <: InterfaceMixinType] (val x: Self) extends AnyVal {
+  extension [Self <: InterfaceMixinType](x: Self) {
     
-    @scala.inline
-    def setInheritance(value: Null): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
+    inline def setInheritance(value: Null): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[IDLInterfaceMixinMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[IDLInterfaceMixinMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: IDLInterfaceMixinMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: IDLInterfaceMixinMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `interface mixin`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `interface mixin`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

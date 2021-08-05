@@ -35,46 +35,33 @@ trait StartSegmentDetectionRequest extends StObject {
 }
 object StartSegmentDetectionRequest {
   
-  @scala.inline
-  def apply(SegmentTypes: SegmentTypes, Video: Video): StartSegmentDetectionRequest = {
+  inline def apply(SegmentTypes: SegmentTypes, Video: Video): StartSegmentDetectionRequest = {
     val __obj = js.Dynamic.literal(SegmentTypes = SegmentTypes.asInstanceOf[js.Any], Video = Video.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSegmentDetectionRequest]
   }
   
-  @scala.inline
-  implicit class StartSegmentDetectionRequestMutableBuilder[Self <: StartSegmentDetectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSegmentDetectionRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setFilters(value: StartSegmentDetectionFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: StartSegmentDetectionFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
+    inline def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
+    inline def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
     
-    @scala.inline
-    def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
+    inline def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
+    inline def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
     
-    @scala.inline
-    def setSegmentTypes(value: SegmentTypes): Self = StObject.set(x, "SegmentTypes", value.asInstanceOf[js.Any])
+    inline def setSegmentTypes(value: SegmentTypes): Self = StObject.set(x, "SegmentTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentTypesVarargs(value: SegmentType*): Self = StObject.set(x, "SegmentTypes", js.Array(value :_*))
+    inline def setSegmentTypesVarargs(value: SegmentType*): Self = StObject.set(x, "SegmentTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
   }
 }

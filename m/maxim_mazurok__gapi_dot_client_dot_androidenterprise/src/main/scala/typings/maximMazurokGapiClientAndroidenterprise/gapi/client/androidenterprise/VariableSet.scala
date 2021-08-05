@@ -14,25 +14,19 @@ trait VariableSet extends StObject {
 }
 object VariableSet {
   
-  @scala.inline
-  def apply(): VariableSet = {
+  inline def apply(): VariableSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VariableSet]
   }
   
-  @scala.inline
-  implicit class VariableSetMutableBuilder[Self <: VariableSet] (val x: Self) extends AnyVal {
+  extension [Self <: VariableSet](x: Self) {
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setUserValue(value: String): Self = StObject.set(x, "userValue", value.asInstanceOf[js.Any])
+    inline def setUserValue(value: String): Self = StObject.set(x, "userValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserValueUndefined: Self = StObject.set(x, "userValue", js.undefined)
+    inline def setUserValueUndefined: Self = StObject.set(x, "userValue", js.undefined)
   }
 }

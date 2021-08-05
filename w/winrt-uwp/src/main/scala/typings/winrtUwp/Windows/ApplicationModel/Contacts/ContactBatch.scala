@@ -16,19 +16,15 @@ trait ContactBatch extends StObject {
 }
 object ContactBatch {
   
-  @scala.inline
-  def apply(contacts: IVectorView[Contact], status: ContactBatchStatus): ContactBatch = {
+  inline def apply(contacts: IVectorView[Contact], status: ContactBatchStatus): ContactBatch = {
     val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactBatch]
   }
   
-  @scala.inline
-  implicit class ContactBatchMutableBuilder[Self <: ContactBatch] (val x: Self) extends AnyVal {
+  extension [Self <: ContactBatch](x: Self) {
     
-    @scala.inline
-    def setContacts(value: IVectorView[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: IVectorView[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ContactBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ContactBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

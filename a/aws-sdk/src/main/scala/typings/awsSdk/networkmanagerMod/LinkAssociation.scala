@@ -28,37 +28,27 @@ trait LinkAssociation extends StObject {
 }
 object LinkAssociation {
   
-  @scala.inline
-  def apply(): LinkAssociation = {
+  inline def apply(): LinkAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkAssociation]
   }
   
-  @scala.inline
-  implicit class LinkAssociationMutableBuilder[Self <: LinkAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: LinkAssociation](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
+    inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
-    @scala.inline
-    def setLinkAssociationState(value: LinkAssociationState): Self = StObject.set(x, "LinkAssociationState", value.asInstanceOf[js.Any])
+    inline def setLinkAssociationState(value: LinkAssociationState): Self = StObject.set(x, "LinkAssociationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkAssociationStateUndefined: Self = StObject.set(x, "LinkAssociationState", js.undefined)
+    inline def setLinkAssociationStateUndefined: Self = StObject.set(x, "LinkAssociationState", js.undefined)
     
-    @scala.inline
-    def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
+    inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
   }
 }

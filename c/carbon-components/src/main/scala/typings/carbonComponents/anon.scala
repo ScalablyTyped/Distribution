@@ -28,8 +28,7 @@ object anon {
   }
   object AttribLabelCollapse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attribLabelCollapse: String,
       attribLabelExpand: String,
       classNavigationMenuPanelHeaderActionActive: String,
@@ -44,38 +43,27 @@ object anon {
       __obj.asInstanceOf[AttribLabelCollapse]
     }
     
-    @scala.inline
-    implicit class AttribLabelCollapseMutableBuilder[Self <: AttribLabelCollapse] (val x: Self) extends AnyVal {
+    extension [Self <: AttribLabelCollapse](x: Self) {
       
-      @scala.inline
-      def setAttribLabelCollapse(value: String): Self = StObject.set(x, "attribLabelCollapse", value.asInstanceOf[js.Any])
+      inline def setAttribLabelCollapse(value: String): Self = StObject.set(x, "attribLabelCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttribLabelExpand(value: String): Self = StObject.set(x, "attribLabelExpand", value.asInstanceOf[js.Any])
+      inline def setAttribLabelExpand(value: String): Self = StObject.set(x, "attribLabelExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNavigationMenuPanelHeaderActionActive(value: String): Self = StObject.set(x, "classNavigationMenuPanelHeaderActionActive", value.asInstanceOf[js.Any])
+      inline def setClassNavigationMenuPanelHeaderActionActive(value: String): Self = StObject.set(x, "classNavigationMenuPanelHeaderActionActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventAfterCollapsed(value: String): Self = StObject.set(x, "eventAfterCollapsed", value.asInstanceOf[js.Any])
+      inline def setEventAfterCollapsed(value: String): Self = StObject.set(x, "eventAfterCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventAfterExpanded(value: String): Self = StObject.set(x, "eventAfterExpanded", value.asInstanceOf[js.Any])
+      inline def setEventAfterExpanded(value: String): Self = StObject.set(x, "eventAfterExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBeforeCollapsed(value: String): Self = StObject.set(x, "eventBeforeCollapsed", value.asInstanceOf[js.Any])
+      inline def setEventBeforeCollapsed(value: String): Self = StObject.set(x, "eventBeforeCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBeforeExpanded(value: String): Self = StObject.set(x, "eventBeforeExpanded", value.asInstanceOf[js.Any])
+      inline def setEventBeforeExpanded(value: String): Self = StObject.set(x, "eventBeforeExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitEventNames(value: js.Array[String]): Self = StObject.set(x, "initEventNames", value.asInstanceOf[js.Any])
+      inline def setInitEventNames(value: js.Array[String]): Self = StObject.set(x, "initEventNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitEventNamesVarargs(value: String*): Self = StObject.set(x, "initEventNames", js.Array(value :_*))
+      inline def setInitEventNamesVarargs(value: String*): Self = StObject.set(x, "initEventNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectorFocusableMenuItem(value: String): Self = StObject.set(x, "selectorFocusableMenuItem", value.asInstanceOf[js.Any])
+      inline def setSelectorFocusableMenuItem(value: String): Self = StObject.set(x, "selectorFocusableMenuItem", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,20 +75,16 @@ object anon {
   }
   object BACKWARD {
     
-    @scala.inline
-    def apply(BACKWARD: Double, FORWARD: Double): BACKWARD = {
+    inline def apply(BACKWARD: Double, FORWARD: Double): BACKWARD = {
       val __obj = js.Dynamic.literal(BACKWARD = BACKWARD.asInstanceOf[js.Any], FORWARD = FORWARD.asInstanceOf[js.Any])
       __obj.asInstanceOf[BACKWARD]
     }
     
-    @scala.inline
-    implicit class BACKWARDMutableBuilder[Self <: BACKWARD] (val x: Self) extends AnyVal {
+    extension [Self <: BACKWARD](x: Self) {
       
-      @scala.inline
-      def setBACKWARD(value: Double): Self = StObject.set(x, "BACKWARD", value.asInstanceOf[js.Any])
+      inline def setBACKWARD(value: Double): Self = StObject.set(x, "BACKWARD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFORWARD(value: Double): Self = StObject.set(x, "FORWARD", value.asInstanceOf[js.Any])
+      inline def setFORWARD(value: Double): Self = StObject.set(x, "FORWARD", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,8 +100,7 @@ object anon {
   }
   object ClassTooltipHidden {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       classTooltipHidden: String,
       classTooltipVisible: String,
       selectorInit: String,
@@ -127,20 +110,15 @@ object anon {
       __obj.asInstanceOf[ClassTooltipHidden]
     }
     
-    @scala.inline
-    implicit class ClassTooltipHiddenMutableBuilder[Self <: ClassTooltipHidden] (val x: Self) extends AnyVal {
+    extension [Self <: ClassTooltipHidden](x: Self) {
       
-      @scala.inline
-      def setClassTooltipHidden(value: String): Self = StObject.set(x, "classTooltipHidden", value.asInstanceOf[js.Any])
+      inline def setClassTooltipHidden(value: String): Self = StObject.set(x, "classTooltipHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassTooltipVisible(value: String): Self = StObject.set(x, "classTooltipVisible", value.asInstanceOf[js.Any])
+      inline def setClassTooltipVisible(value: String): Self = StObject.set(x, "classTooltipVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorTriggerButton(value: String): Self = StObject.set(x, "selectorTriggerButton", value.asInstanceOf[js.Any])
+      inline def setSelectorTriggerButton(value: String): Self = StObject.set(x, "selectorTriggerButton", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,20 +130,16 @@ object anon {
   }
   object Element {
     
-    @scala.inline
-    def apply(element: js.Any, index: Double): Element = {
+    inline def apply(element: js.Any, index: Double): Element = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,20 +151,16 @@ object anon {
   }
   object Left {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Left = {
+    inline def apply(left: Double, top: Double): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
-    @scala.inline
-    implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    extension [Self <: Left](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,26 +176,20 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(max: Double, min: Double, step: Double, value: Double): Max = {
+    inline def apply(max: Double, min: Double, step: Double, value: Double): Max = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,20 +201,16 @@ object anon {
   }
   object NewValue {
     
-    @scala.inline
-    def apply(left: Double, newValue: Double): NewValue = {
+    inline def apply(left: Double, newValue: Double): NewValue = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewValue]
     }
     
-    @scala.inline
-    implicit class NewValueMutableBuilder[Self <: NewValue] (val x: Self) extends AnyVal {
+    extension [Self <: NewValue](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,8 +232,7 @@ object anon {
   }
   object PasswordIsVisible {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       passwordIsVisible: String,
       selectorInit: String,
       selectorPasswordField: String,
@@ -286,29 +245,21 @@ object anon {
       __obj.asInstanceOf[PasswordIsVisible]
     }
     
-    @scala.inline
-    implicit class PasswordIsVisibleMutableBuilder[Self <: PasswordIsVisible] (val x: Self) extends AnyVal {
+    extension [Self <: PasswordIsVisible](x: Self) {
       
-      @scala.inline
-      def setPasswordIsVisible(value: String): Self = StObject.set(x, "passwordIsVisible", value.asInstanceOf[js.Any])
+      inline def setPasswordIsVisible(value: String): Self = StObject.set(x, "passwordIsVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorPasswordField(value: String): Self = StObject.set(x, "selectorPasswordField", value.asInstanceOf[js.Any])
+      inline def setSelectorPasswordField(value: String): Self = StObject.set(x, "selectorPasswordField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorPasswordVisibilityButton(value: String): Self = StObject.set(x, "selectorPasswordVisibilityButton", value.asInstanceOf[js.Any])
+      inline def setSelectorPasswordVisibilityButton(value: String): Self = StObject.set(x, "selectorPasswordVisibilityButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorPasswordVisibilityTooltip(value: String): Self = StObject.set(x, "selectorPasswordVisibilityTooltip", value.asInstanceOf[js.Any])
+      inline def setSelectorPasswordVisibilityTooltip(value: String): Self = StObject.set(x, "selectorPasswordVisibilityTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgIconVisibilityOff(value: String): Self = StObject.set(x, "svgIconVisibilityOff", value.asInstanceOf[js.Any])
+      inline def setSvgIconVisibilityOff(value: String): Self = StObject.set(x, "svgIconVisibilityOff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgIconVisibilityOn(value: String): Self = StObject.set(x, "svgIconVisibilityOn", value.asInstanceOf[js.Any])
+      inline def setSvgIconVisibilityOn(value: String): Self = StObject.set(x, "svgIconVisibilityOn", value.asInstanceOf[js.Any])
     }
   }
 }

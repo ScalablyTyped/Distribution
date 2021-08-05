@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppStateStatus extends StObject
 object AppStateStatus {
   
-  @scala.inline
-  def active: typings.reactNative.reactNativeStrings.active = "active".asInstanceOf[typings.reactNative.reactNativeStrings.active]
+  inline def active: typings.reactNative.reactNativeStrings.active = "active".asInstanceOf[typings.reactNative.reactNativeStrings.active]
   
-  @scala.inline
-  def background: typings.reactNative.reactNativeStrings.background = "background".asInstanceOf[typings.reactNative.reactNativeStrings.background]
+  inline def background: typings.reactNative.reactNativeStrings.background = "background".asInstanceOf[typings.reactNative.reactNativeStrings.background]
   
-  @scala.inline
-  def `extension`: typings.reactNative.reactNativeStrings.`extension` = "extension".asInstanceOf[typings.reactNative.reactNativeStrings.`extension`]
+  inline def `extension`: typings.reactNative.reactNativeStrings.`extension` = "extension".asInstanceOf[typings.reactNative.reactNativeStrings.`extension`]
   
-  @scala.inline
-  def inactive: typings.reactNative.reactNativeStrings.inactive = "inactive".asInstanceOf[typings.reactNative.reactNativeStrings.inactive]
+  inline def inactive: typings.reactNative.reactNativeStrings.inactive = "inactive".asInstanceOf[typings.reactNative.reactNativeStrings.inactive]
   
-  @scala.inline
-  def unknown: typings.reactNative.reactNativeStrings.unknown = "unknown".asInstanceOf[typings.reactNative.reactNativeStrings.unknown]
+  inline def unknown: typings.reactNative.reactNativeStrings.unknown = "unknown".asInstanceOf[typings.reactNative.reactNativeStrings.unknown]
 }

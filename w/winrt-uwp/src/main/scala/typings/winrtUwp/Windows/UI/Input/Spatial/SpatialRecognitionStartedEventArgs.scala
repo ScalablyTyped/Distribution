@@ -16,22 +16,17 @@ trait SpatialRecognitionStartedEventArgs extends StObject {
 }
 object SpatialRecognitionStartedEventArgs {
   
-  @scala.inline
-  def apply(interactionSourceKind: js.Any, isGesturePossible: js.Any, tryGetPointerPose: js.Any): SpatialRecognitionStartedEventArgs = {
+  inline def apply(interactionSourceKind: js.Any, isGesturePossible: js.Any, tryGetPointerPose: js.Any): SpatialRecognitionStartedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any], isGesturePossible = isGesturePossible.asInstanceOf[js.Any], tryGetPointerPose = tryGetPointerPose.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialRecognitionStartedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialRecognitionStartedEventArgsMutableBuilder[Self <: SpatialRecognitionStartedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialRecognitionStartedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGesturePossible(value: js.Any): Self = StObject.set(x, "isGesturePossible", value.asInstanceOf[js.Any])
+    inline def setIsGesturePossible(value: js.Any): Self = StObject.set(x, "isGesturePossible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
+    inline def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
   }
 }

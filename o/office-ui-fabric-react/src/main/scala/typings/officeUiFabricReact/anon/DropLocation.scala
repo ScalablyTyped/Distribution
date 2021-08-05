@@ -11,19 +11,15 @@ trait DropLocation extends StObject {
 }
 object DropLocation {
   
-  @scala.inline
-  def apply(): DropLocation = {
+  inline def apply(): DropLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropLocation]
   }
   
-  @scala.inline
-  implicit class DropLocationMutableBuilder[Self <: DropLocation] (val x: Self) extends AnyVal {
+  extension [Self <: DropLocation](x: Self) {
     
-    @scala.inline
-    def setDropLocation(value: ColumnDragEndLocation): Self = StObject.set(x, "dropLocation", value.asInstanceOf[js.Any])
+    inline def setDropLocation(value: ColumnDragEndLocation): Self = StObject.set(x, "dropLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropLocationUndefined: Self = StObject.set(x, "dropLocation", js.undefined)
+    inline def setDropLocationUndefined: Self = StObject.set(x, "dropLocation", js.undefined)
   }
 }

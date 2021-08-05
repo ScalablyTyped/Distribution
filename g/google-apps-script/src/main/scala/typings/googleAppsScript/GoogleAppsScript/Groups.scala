@@ -103,8 +103,7 @@ object Groups {
   }
   object GroupsApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any,
       getGroupByEmail: String => Group,
       getGroups: () => js.Array[Group]
@@ -113,17 +112,13 @@ object Groups {
       __obj.asInstanceOf[GroupsApp]
     }
     
-    @scala.inline
-    implicit class GroupsAppMutableBuilder[Self <: GroupsApp] (val x: Self) extends AnyVal {
+    extension [Self <: GroupsApp](x: Self) {
       
-      @scala.inline
-      def setGetGroupByEmail(value: String => Group): Self = StObject.set(x, "getGroupByEmail", js.Any.fromFunction1(value))
+      inline def setGetGroupByEmail(value: String => Group): Self = StObject.set(x, "getGroupByEmail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetGroups(value: () => js.Array[Group]): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
+      inline def setGetGroups(value: () => js.Array[Group]): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRole(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+      inline def setRole(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     }
   }
 }

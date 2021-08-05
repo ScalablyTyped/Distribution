@@ -18,19 +18,15 @@ trait StopWorkflowRunRequest extends StObject {
 }
 object StopWorkflowRunRequest {
   
-  @scala.inline
-  def apply(Name: NameString, RunId: IdString): StopWorkflowRunRequest = {
+  inline def apply(Name: NameString, RunId: IdString): StopWorkflowRunRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopWorkflowRunRequest]
   }
   
-  @scala.inline
-  implicit class StopWorkflowRunRequestMutableBuilder[Self <: StopWorkflowRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopWorkflowRunRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

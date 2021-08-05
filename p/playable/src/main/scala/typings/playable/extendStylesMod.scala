@@ -12,6 +12,5 @@ object extendStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(sourceStyles: IStyles, partialStyles: IStyles): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceStyles.asInstanceOf[js.Any], partialStyles.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def default(sourceStyles: IStyles, partialStyles: IStyles): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceStyles.asInstanceOf[js.Any], partialStyles.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
 }

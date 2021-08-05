@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(data: IData, nextData: IData): ITreeChanges = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], nextData.asInstanceOf[js.Any])).asInstanceOf[ITreeChanges]
+  inline def default(data: IData, nextData: IData): ITreeChanges = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], nextData.asInstanceOf[js.Any])).asInstanceOf[ITreeChanges]
   
   type IData = IPlainObject | js.Array[IPlainObject]
   

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleTextEffect extends StObject
 object styleTextEffect {
   
-  @scala.inline
-  def styleTextEffectEmboss: `1` = 1.asInstanceOf[`1`]
+  inline def styleTextEffectEmboss: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleTextEffectEngrave: `2` = 2.asInstanceOf[`2`]
+  inline def styleTextEffectEngrave: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleTextEffectNone: `0` = 0.asInstanceOf[`0`]
+  inline def styleTextEffectNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleTextEffectOutline: `3` = 3.asInstanceOf[`3`]
+  inline def styleTextEffectOutline: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleTextEffect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleTextEffect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -23,34 +23,25 @@ trait RunConfiguration extends StObject {
 }
 object RunConfiguration {
   
-  @scala.inline
-  def apply(): RunConfiguration = {
+  inline def apply(): RunConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunConfiguration]
   }
   
-  @scala.inline
-  implicit class RunConfigurationMutableBuilder[Self <: RunConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RunConfiguration](x: Self) {
     
-    @scala.inline
-    def setApplicationRestoreConfiguration(value: ApplicationRestoreConfiguration): Self = StObject.set(x, "ApplicationRestoreConfiguration", value.asInstanceOf[js.Any])
+    inline def setApplicationRestoreConfiguration(value: ApplicationRestoreConfiguration): Self = StObject.set(x, "ApplicationRestoreConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationRestoreConfigurationUndefined: Self = StObject.set(x, "ApplicationRestoreConfiguration", js.undefined)
+    inline def setApplicationRestoreConfigurationUndefined: Self = StObject.set(x, "ApplicationRestoreConfiguration", js.undefined)
     
-    @scala.inline
-    def setFlinkRunConfiguration(value: FlinkRunConfiguration): Self = StObject.set(x, "FlinkRunConfiguration", value.asInstanceOf[js.Any])
+    inline def setFlinkRunConfiguration(value: FlinkRunConfiguration): Self = StObject.set(x, "FlinkRunConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlinkRunConfigurationUndefined: Self = StObject.set(x, "FlinkRunConfiguration", js.undefined)
+    inline def setFlinkRunConfigurationUndefined: Self = StObject.set(x, "FlinkRunConfiguration", js.undefined)
     
-    @scala.inline
-    def setSqlRunConfigurations(value: SqlRunConfigurations): Self = StObject.set(x, "SqlRunConfigurations", value.asInstanceOf[js.Any])
+    inline def setSqlRunConfigurations(value: SqlRunConfigurations): Self = StObject.set(x, "SqlRunConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlRunConfigurationsUndefined: Self = StObject.set(x, "SqlRunConfigurations", js.undefined)
+    inline def setSqlRunConfigurationsUndefined: Self = StObject.set(x, "SqlRunConfigurations", js.undefined)
     
-    @scala.inline
-    def setSqlRunConfigurationsVarargs(value: SqlRunConfiguration*): Self = StObject.set(x, "SqlRunConfigurations", js.Array(value :_*))
+    inline def setSqlRunConfigurationsVarargs(value: SqlRunConfiguration*): Self = StObject.set(x, "SqlRunConfigurations", js.Array(value :_*))
   }
 }

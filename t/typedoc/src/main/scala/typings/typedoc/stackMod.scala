@@ -14,13 +14,13 @@ object stackMod {
   abstract class Resource protected () extends StObject {
     def this(origin: ResourceOrigin[js.Any], name: String, fileName: String) = this()
     
-    var fileName: String = js.native
+    /* protected */ var fileName: String = js.native
     
     def getName(): String = js.native
     
-    var name: String = js.native
+    /* protected */ var name: String = js.native
     
-    var origin: ResourceOrigin[js.Any] = js.native
+    /* protected */ var origin: ResourceOrigin[js.Any] = js.native
   }
   
   @JSImport("typedoc/dist/lib/output/utils/resources/stack", "ResourceOrigin")
@@ -28,7 +28,7 @@ object stackMod {
   class ResourceOrigin[T /* <: Resource */] protected () extends StObject {
     def this(stack: ResourceStack[T], name: String, path: String) = this()
     
-    var findResources: js.Any = js.native
+    /* private */ var findResources: js.Any = js.native
     
     def getName(): String = js.native
     
@@ -38,13 +38,13 @@ object stackMod {
     
     def mergeResources(target: ResourceMap[T]): Unit = js.native
     
-    var name: js.Any = js.native
+    /* private */ var name: js.Any = js.native
     
-    var path: js.Any = js.native
+    /* private */ var path: js.Any = js.native
     
-    var resources: js.Any = js.native
+    /* private */ var resources: js.Any = js.native
     
-    var stack: js.Any = js.native
+    /* private */ var stack: js.Any = js.native
   }
   
   @JSImport("typedoc/dist/lib/output/utils/resources/stack", "ResourceStack")
@@ -72,17 +72,17 @@ object stackMod {
     
     def hasOrigin(name: String): Boolean = js.native
     
-    var isActive: js.Any = js.native
+    /* private */ var isActive: js.Any = js.native
     
-    var origins: js.Any = js.native
+    /* private */ var origins: js.Any = js.native
     
     def removeAllOrigins(): Unit = js.native
     
     def removeOrigin(name: String): Unit = js.native
     
-    var resourceClass: js.Any = js.native
+    /* private */ var resourceClass: js.Any = js.native
     
-    var resourceRegExp: js.Any = js.native
+    /* private */ var resourceRegExp: js.Any = js.native
   }
   
   @js.native

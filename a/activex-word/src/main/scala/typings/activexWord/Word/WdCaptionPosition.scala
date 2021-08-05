@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCaptionPosition extends StObject
 object WdCaptionPosition {
   
-  @scala.inline
-  def wdCaptionPositionAbove: `0` = 0.asInstanceOf[`0`]
+  inline def wdCaptionPositionAbove: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdCaptionPositionBelow: `1` = 1.asInstanceOf[`1`]
+  inline def wdCaptionPositionBelow: `1` = 1.asInstanceOf[`1`]
 }

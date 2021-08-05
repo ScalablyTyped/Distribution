@@ -34,35 +34,26 @@ object mod {
   }
   object Country {
     
-    @scala.inline
-    def apply(dialCode: String, format: String, iso2: String, name: String, priority: Double): Country = {
+    inline def apply(dialCode: String, format: String, iso2: String, name: String, priority: Double): Country = {
       val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], iso2 = iso2.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
       __obj.asInstanceOf[Country]
     }
     
-    @scala.inline
-    implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+    extension [Self <: Country](x: Self) {
       
-      @scala.inline
-      def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+      inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasAreaCodes(value: `true`): Self = StObject.set(x, "hasAreaCodes", value.asInstanceOf[js.Any])
+      inline def setHasAreaCodes(value: `true`): Self = StObject.set(x, "hasAreaCodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasAreaCodesUndefined: Self = StObject.set(x, "hasAreaCodes", js.undefined)
+      inline def setHasAreaCodesUndefined: Self = StObject.set(x, "hasAreaCodes", js.undefined)
       
-      @scala.inline
-      def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
+      inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait DeleteVpcEndpointConnectionNotificationsRequest extends StObject {
 }
 object DeleteVpcEndpointConnectionNotificationsRequest {
   
-  @scala.inline
-  def apply(ConnectionNotificationIds: ConnectionNotificationIdsList): DeleteVpcEndpointConnectionNotificationsRequest = {
+  inline def apply(ConnectionNotificationIds: ConnectionNotificationIdsList): DeleteVpcEndpointConnectionNotificationsRequest = {
     val __obj = js.Dynamic.literal(ConnectionNotificationIds = ConnectionNotificationIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcEndpointConnectionNotificationsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVpcEndpointConnectionNotificationsRequestMutableBuilder[Self <: DeleteVpcEndpointConnectionNotificationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpcEndpointConnectionNotificationsRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionNotificationIds(value: ConnectionNotificationIdsList): Self = StObject.set(x, "ConnectionNotificationIds", value.asInstanceOf[js.Any])
+    inline def setConnectionNotificationIds(value: ConnectionNotificationIdsList): Self = StObject.set(x, "ConnectionNotificationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionNotificationIdsVarargs(value: ConnectionNotificationId*): Self = StObject.set(x, "ConnectionNotificationIds", js.Array(value :_*))
+    inline def setConnectionNotificationIdsVarargs(value: ConnectionNotificationId*): Self = StObject.set(x, "ConnectionNotificationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

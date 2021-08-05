@@ -21,8 +21,7 @@ trait ICustomTextArea
 }
 object ICustomTextArea {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: String,
     label: String,
     maxlength: Double,
@@ -36,25 +35,18 @@ object ICustomTextArea {
     __obj.asInstanceOf[ICustomTextArea]
   }
   
-  @scala.inline
-  implicit class ICustomTextAreaMutableBuilder[Self <: ICustomTextArea] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomTextArea](x: Self) {
     
-    @scala.inline
-    def setComponent(value: textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+    inline def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: valueOrfunc[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: valueOrfunc[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFunction0(value: () => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShowFunction0(value: () => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

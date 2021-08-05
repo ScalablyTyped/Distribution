@@ -10,16 +10,13 @@ trait IEnumerable[T] extends StObject {
 }
 object IEnumerable {
   
-  @scala.inline
-  def apply[T](getEnumerator: () => IEnumerator[T]): IEnumerable[T] = {
+  inline def apply[T](getEnumerator: () => IEnumerator[T]): IEnumerable[T] = {
     val __obj = js.Dynamic.literal(getEnumerator = js.Any.fromFunction0(getEnumerator))
     __obj.asInstanceOf[IEnumerable[T]]
   }
   
-  @scala.inline
-  implicit class IEnumerableMutableBuilder[Self <: IEnumerable[?], T] (val x: Self & IEnumerable[T]) extends AnyVal {
+  extension [Self <: IEnumerable[?], T](x: Self & IEnumerable[T]) {
     
-    @scala.inline
-    def setGetEnumerator(value: () => IEnumerator[T]): Self = StObject.set(x, "getEnumerator", js.Any.fromFunction0(value))
+    inline def setGetEnumerator(value: () => IEnumerator[T]): Self = StObject.set(x, "getEnumerator", js.Any.fromFunction0(value))
   }
 }

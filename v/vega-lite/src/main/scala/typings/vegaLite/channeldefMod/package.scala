@@ -5,14 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def binRequiresRange(
+inline def binRequiresRange(
   fieldDef: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any],
   channel: typings.vegaLite.channelMod.Channel
 ): scala.Boolean = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("binRequiresRange")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def channelCompatibility_binned(
+inline def channelCompatibility_binned(
   fieldDef: typings.vegaLite.channeldefMod.TypedFieldDef[
   typings.vegaLite.channeldefMod.Field, 
   js.Any, 
@@ -21,52 +19,42 @@ def channelCompatibility_binned(
   channel: typings.vegaLite.channelMod.ExtendedChannel
 ): typings.vegaLite.anon.Compatible = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("channelCompatibility")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.anon.Compatible]
 
-@scala.inline
-def channelDefType[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): js.UndefOr[typings.vegaLite.srcTypeMod.Type] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("channelDefType")(channelDef.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.vegaLite.srcTypeMod.Type]]
+inline def channelDefType[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): js.UndefOr[typings.vegaLite.srcTypeMod.Type] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("channelDefType")(channelDef.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.vegaLite.srcTypeMod.Type]]
 
-@scala.inline
-def defaultTitle(
+inline def defaultTitle(
   fieldDef: typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin],
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef]
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultTitle")(fieldDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def defaultTitleFormatter: typings.vegaLite.channeldefMod.FieldTitleFormatter = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTitleFormatter").asInstanceOf[typings.vegaLite.channeldefMod.FieldTitleFormatter]
+inline def defaultTitleFormatter: typings.vegaLite.channeldefMod.FieldTitleFormatter = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTitleFormatter").asInstanceOf[typings.vegaLite.channeldefMod.FieldTitleFormatter]
 
-@scala.inline
-def defaultType[T /* <: typings.vegaLite.channeldefMod.TypedFieldDef[
+inline def defaultType[T /* <: typings.vegaLite.channeldefMod.TypedFieldDef[
 typings.vegaLite.channeldefMod.Field, 
 js.Any, 
 scala.Boolean | typings.vegaLite.binMod.BinParams | typings.vegaLite.vegaLiteStrings.binned | scala.Null] */](fieldDef: T, channel: typings.vegaLite.channelMod.ExtendedChannel): typings.vegaLite.srcTypeMod.Type = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultType")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.srcTypeMod.Type]
 
-@scala.inline
-def functionalTitleFormatter(
+inline def functionalTitleFormatter(
   fieldDef: typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin]
 ): java.lang.String = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("functionalTitleFormatter")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
-@scala.inline
-def getBand(hasChannelFieldDefFieldDef2MarkStackConfigIsMidPoint: typings.vegaLite.anon.Channel): scala.Double = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getBand")(hasChannelFieldDefFieldDef2MarkStackConfigIsMidPoint.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def getBand(hasChannelFieldDefFieldDef2MarkStackConfigIsMidPoint: typings.vegaLite.anon.Channel): scala.Double = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getBand")(hasChannelFieldDefFieldDef2MarkStackConfigIsMidPoint.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
 
-@scala.inline
-def getFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): typings.vegaLite.channeldefMod.FieldDef[F, js.Any] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.channeldefMod.FieldDef[F, js.Any]]
+inline def getFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): typings.vegaLite.channeldefMod.FieldDef[F, js.Any] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.channeldefMod.FieldDef[F, js.Any]]
 
-@scala.inline
-def getFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */, CD /* <: typings.vegaLite.channeldefMod.ChannelDef[F] */](channelDef: CD): (typings.vegaLite.channeldefMod.FieldDef[F, js.Any]) | (typings.vegaLite.channeldefMod.DatumDef[
+inline def getFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */, CD /* <: typings.vegaLite.channeldefMod.ChannelDef[F] */](channelDef: CD): (typings.vegaLite.channeldefMod.FieldDef[F, js.Any]) | (typings.vegaLite.channeldefMod.DatumDef[
 F, 
 typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef]) = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[(typings.vegaLite.channeldefMod.FieldDef[F, js.Any]) | (typings.vegaLite.channeldefMod.DatumDef[
 F, 
 typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef])]
 
-@scala.inline
-def getFormatMixins(
+inline def getFormatMixins(
   fieldDef: typings.vegaLite.channeldefMod.DatumDef[
   java.lang.String, 
   typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef
 ]
 ): typings.vegaLite.anon.Format = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getFormatMixins")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.anon.Format]
 
-@scala.inline
-def getFormatMixins_binned(
+inline def getFormatMixins_binned(
   fieldDef: typings.vegaLite.channeldefMod.TypedFieldDef[
   java.lang.String, 
   js.Any, 
@@ -74,18 +62,15 @@ def getFormatMixins_binned(
 ]
 ): typings.vegaLite.anon.Format = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getFormatMixins")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.anon.Format]
 
-@scala.inline
-def getGuide(
+inline def getGuide(
   fieldDef: typings.vegaLite.channeldefMod.DatumDef[
   java.lang.String, 
   typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef
 ]
 ): typings.vegaLite.srcGuideMod.Guide = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getGuide")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.srcGuideMod.Guide]
-@scala.inline
-def getGuide(fieldDef: typings.vegaLite.channeldefMod.SecondaryFieldDef[java.lang.String]): typings.vegaLite.srcGuideMod.Guide = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getGuide")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.srcGuideMod.Guide]
+inline def getGuide(fieldDef: typings.vegaLite.channeldefMod.SecondaryFieldDef[java.lang.String]): typings.vegaLite.srcGuideMod.Guide = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getGuide")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.srcGuideMod.Guide]
 
-@scala.inline
-def getGuide_binned(
+inline def getGuide_binned(
   fieldDef: typings.vegaLite.channeldefMod.TypedFieldDef[
   java.lang.String, 
   js.Any, 
@@ -93,8 +78,7 @@ def getGuide_binned(
 ]
 ): typings.vegaLite.srcGuideMod.Guide = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("getGuide")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.srcGuideMod.Guide]
 
-@scala.inline
-def hasBand(
+inline def hasBand(
   channel: typings.vegaLite.channelMod.Channel,
   fieldDef: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any],
   fieldDef2: typings.vegaLite.channeldefMod.SecondaryChannelDef[java.lang.String],
@@ -103,43 +87,35 @@ def hasBand(
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaTypings.signalMod.SignalRef]
 ): scala.Boolean = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBand")(channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], fieldDef2.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def hasConditionalFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): /* is vega-lite.anon.0<F> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.0<F> */ scala.Boolean]
+inline def hasConditionalFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): /* is vega-lite.anon.0<F> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.0<F> */ scala.Boolean]
 
-@scala.inline
-def hasConditionalFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.anon.0<F> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.0<F> */ scala.Boolean]
+inline def hasConditionalFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.anon.0<F> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.0<F> */ scala.Boolean]
 
-@scala.inline
-def hasConditionalValueDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.anon.ValueDefanyconditionCondi */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalValueDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.ValueDefanyconditionCondi */ scala.Boolean]
+inline def hasConditionalValueDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.anon.ValueDefanyconditionCondi */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalValueDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.ValueDefanyconditionCondi */ scala.Boolean]
 
-@scala.inline
-def initChannelDef(
+inline def initChannelDef(
   channelDef: typings.vegaLite.channeldefMod.ChannelDef[java.lang.String],
   channel: typings.vegaLite.channelMod.ExtendedChannel,
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef]
 ): typings.vegaLite.channeldefMod.ChannelDef[java.lang.String] = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("initChannelDef")(channelDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.channeldefMod.ChannelDef[java.lang.String]]
-@scala.inline
-def initChannelDef(
+inline def initChannelDef(
   channelDef: typings.vegaLite.channeldefMod.ChannelDef[java.lang.String],
   channel: typings.vegaLite.channelMod.ExtendedChannel,
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef],
   opt: typings.vegaLite.anon.CompositeMark
 ): typings.vegaLite.channeldefMod.ChannelDef[java.lang.String] = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("initChannelDef")(channelDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.channeldefMod.ChannelDef[java.lang.String]]
 
-@scala.inline
-def initFieldDef(
+inline def initFieldDef(
   fd: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any],
   channel: typings.vegaLite.channelMod.ExtendedChannel
 ): typings.vegaLite.anon.Aggregate | typings.vegaLite.anon.Band | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | typings.vegaLite.anon.Header = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("initFieldDef")(fd.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.anon.Aggregate | typings.vegaLite.anon.Band | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | typings.vegaLite.anon.Header]
-@scala.inline
-def initFieldDef(
+inline def initFieldDef(
   fd: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any],
   channel: typings.vegaLite.channelMod.ExtendedChannel,
   hasCompositeMark: typings.vegaLite.anon.CompositeMark
 ): typings.vegaLite.anon.Aggregate | typings.vegaLite.anon.Band | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | typings.vegaLite.anon.Header = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("initFieldDef")(fd.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], hasCompositeMark.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.anon.Aggregate | typings.vegaLite.anon.Band | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | typings.vegaLite.anon.Header]
 
-@scala.inline
-def initFieldOrDatumDef(
+inline def initFieldOrDatumDef(
   fd: typings.vegaLite.channeldefMod.DatumDef[
   java.lang.String, 
   typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef
@@ -152,8 +128,7 @@ java.lang.String,
 typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef]) = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("initFieldOrDatumDef")(fd.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[(typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any]) | (typings.vegaLite.channeldefMod.DatumDef[
 java.lang.String, 
 typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef])]
-@scala.inline
-def initFieldOrDatumDef(
+inline def initFieldOrDatumDef(
   fd: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any],
   channel: typings.vegaLite.channelMod.ExtendedChannel,
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef],
@@ -164,26 +139,19 @@ typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.Dat
 java.lang.String, 
 typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef])]
 
-@scala.inline
-def isConditionalDef(channelDef: typings.vegaLite.exprMod.ExprRef): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isConditionalDef(channelDef: typings.vegaLite.srcGuideMod.GuideEncodingConditionalValueDef): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isConditionalDef(channelDef: typings.vegaTypings.signalMod.SignalRef): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isConditionalDef[CD /* <: js.UndefOr[
+inline def isConditionalDef(channelDef: typings.vegaLite.exprMod.ExprRef): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isConditionalDef(channelDef: typings.vegaLite.srcGuideMod.GuideEncodingConditionalValueDef): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isConditionalDef(channelDef: typings.vegaTypings.signalMod.SignalRef): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isConditionalDef[CD /* <: js.UndefOr[
 typings.vegaLite.channeldefMod.Position2Def[js.Any] | typings.vegaLite.channeldefMod.TextDef[js.Any] | typings.vegaLite.channeldefMod.ColorDef[js.Any] | typings.vegaLite.channeldefMod.PositionDef[js.Any] | typings.vegaLite.channeldefMod.OrderFieldDef[js.Any] | (js.Array[
   (typings.vegaLite.channeldefMod.FieldDefWithoutScale[js.Any, typings.vegaLite.srcTypeMod.StandardType]) | typings.vegaLite.channeldefMod.OrderFieldDef[js.Any] | typings.vegaLite.channeldefMod.StringFieldDef[js.Any]
 ]) | typings.vegaLite.channeldefMod.OrderValueDef | typings.vegaLite.channeldefMod.NumericArrayMarkPropDef[js.Any] | typings.vegaLite.channeldefMod.LatLongDef[js.Any] | (typings.vegaLite.channeldefMod.FieldDefWithoutScale[js.Any, typings.vegaLite.srcTypeMod.StandardType]) | typings.vegaLite.channeldefMod.ShapeDef[js.Any] | typings.vegaLite.channeldefMod.StringFieldDefWithCondition[js.Any] | (typings.vegaLite.channeldefMod.StringValueDefWithCondition[js.Any, typings.vegaLite.srcTypeMod.StandardType]) | typings.vegaLite.channeldefMod.NumericMarkPropDef[js.Any] | typings.vegaLite.channeldefMod.PolarDef[js.Any] | scala.Null] */](channelDef: CD): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isConditionalSelection[T](c: typings.vegaLite.channeldefMod.Conditional[T]): /* is vega-lite.vega-lite/build/src/channeldef.ConditionalSelection<T> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalSelection")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ConditionalSelection<T> */ scala.Boolean]
+inline def isConditionalSelection[T](c: typings.vegaLite.channeldefMod.Conditional[T]): /* is vega-lite.vega-lite/build/src/channeldef.ConditionalSelection<T> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalSelection")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ConditionalSelection<T> */ scala.Boolean]
 
-@scala.inline
-def isContinuousFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](cd: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousFieldOrDatumDef")(cd.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isContinuousFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](cd: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousFieldOrDatumDef")(cd.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isContinuous_binned(
+inline def isContinuous_binned(
   fieldDef: typings.vegaLite.channeldefMod.TypedFieldDef[
   typings.vegaLite.channeldefMod.Field, 
   js.Any, 
@@ -191,23 +159,17 @@ def isContinuous_binned(
 ]
 ): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isContinuous")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isCount(
+inline def isCount(
   fieldDef: typings.vegaLite.channeldefMod.FieldDefBase[typings.vegaLite.channeldefMod.Field, typings.vegaLite.binMod.Bin]
 ): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isCount")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean]
-@scala.inline
-def isDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.DatumDef[F, js.Any]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean]
-@scala.inline
-def isDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.FieldDefBase[F, typings.vegaLite.binMod.Bin]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean]
+inline def isDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean]
+inline def isDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.DatumDef[F, js.Any]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean]
+inline def isDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.FieldDefBase[F, typings.vegaLite.binMod.Bin]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, any> */ scala.Boolean]
 
-@scala.inline
-def isDiscrete(`def`: typings.vegaLite.channeldefMod.DatumDef[js.Any, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDiscrete")(`def`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isDiscrete(`def`: typings.vegaLite.channeldefMod.DatumDef[js.Any, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDiscrete")(`def`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isDiscrete_binned(
+inline def isDiscrete_binned(
   `def`: typings.vegaLite.channeldefMod.TypedFieldDef[
   typings.vegaLite.channeldefMod.Field, 
   js.Any, 
@@ -215,90 +177,62 @@ def isDiscrete_binned(
 ]
 ): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isDiscrete")(`def`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.DatumDef[F, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.FieldDefBase[F, typings.vegaLite.binMod.Bin]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.DatumDef[F, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.FieldDefBase[F, typings.vegaLite.binMod.Bin]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isFieldOrDatumDefForTimeFormat(
+inline def isFieldOrDatumDefForTimeFormat(
   fieldOrDatumDef: typings.vegaLite.channeldefMod.DatumDef[
   java.lang.String, 
   typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef
 ]
 ): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOrDatumDefForTimeFormat")(fieldOrDatumDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isFieldOrDatumDefForTimeFormat(fieldOrDatumDef: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOrDatumDefForTimeFormat")(fieldOrDatumDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isFieldOrDatumDefForTimeFormat(fieldOrDatumDef: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOrDatumDefForTimeFormat")(fieldOrDatumDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isMarkPropFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isMarkPropFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isMarkPropFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isMarkPropFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isNumericDataDef[F /* <: typings.vegaLite.channeldefMod.Field */](cd: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, number> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isNumericDataDef")(cd.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, number> */ scala.Boolean]
+inline def isNumericDataDef[F /* <: typings.vegaLite.channeldefMod.Field */](cd: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, number> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isNumericDataDef")(cd.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.DatumDef<F, number> */ scala.Boolean]
 
-@scala.inline
-def isPositionFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isPositionFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isPositionFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isPositionFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isQuantitativeFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](cd: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitativeFieldOrDatumDef")(cd.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isQuantitativeFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](cd: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitativeFieldOrDatumDef")(cd.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isRepeatRef(field: js.Any): /* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatRef")(field.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean]
-@scala.inline
-def isRepeatRef(field: typings.vegaLite.channeldefMod.Field): /* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatRef")(field.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean]
+inline def isRepeatRef(field: js.Any): /* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatRef")(field.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean]
+inline def isRepeatRef(field: typings.vegaLite.channeldefMod.Field): /* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatRef")(field.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ scala.Boolean]
 
-@scala.inline
-def isScaleFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.ScaleFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isScaleFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ScaleFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean]
+inline def isScaleFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.ScaleFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isScaleFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ScaleFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean]
 
-@scala.inline
-def isSortableFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](fieldDef: typings.vegaLite.channeldefMod.FieldDef[F, js.Any]): /* is vega-lite.vega-lite/build/src/channeldef.SortableFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isSortableFieldDef")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.SortableFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean]
+inline def isSortableFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](fieldDef: typings.vegaLite.channeldefMod.FieldDef[F, js.Any]): /* is vega-lite.vega-lite/build/src/channeldef.SortableFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isSortableFieldDef")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.SortableFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ scala.Boolean]
 
-@scala.inline
-def isStringFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isStringFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isStringFieldOrDatumDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isStringFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isTimeFieldDef(
+inline def isTimeFieldDef(
   `def`: typings.vegaLite.channeldefMod.DatumDef[
   java.lang.String, 
   typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef
 ]
 ): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isTimeFieldDef")(`def`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isTimeFieldDef(`def`: typings.vegaLite.channeldefMod.FieldDef[js.Any, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isTimeFieldDef")(`def`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isTimeFieldDef(`def`: typings.vegaLite.channeldefMod.FieldDef[js.Any, js.Any]): scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isTimeFieldDef")(`def`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isTypedFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.TypedFieldDef<F, any, boolean | vega-lite.vega-lite/build/src/bin.BinParams | 'binned' | null> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isTypedFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.TypedFieldDef<F, any, boolean | vega-lite.vega-lite/build/src/bin.BinParams | 'binned' | null> */ scala.Boolean]
+inline def isTypedFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.vegaLite.channeldefMod.ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.TypedFieldDef<F, any, boolean | vega-lite.vega-lite/build/src/bin.BinParams | 'binned' | null> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isTypedFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.TypedFieldDef<F, any, boolean | vega-lite.vega-lite/build/src/bin.BinParams | 'binned' | null> */ scala.Boolean]
 
-@scala.inline
-def isValueDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): /* is vega-lite.vega-lite/build/src/channeldef.ValueDef<any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isValueDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ValueDef<any> */ scala.Boolean]
+inline def isValueDef[F /* <: typings.vegaLite.channeldefMod.Field */](channelDef: typings.std.Partial[typings.vegaLite.channeldefMod.ChannelDef[F]]): /* is vega-lite.vega-lite/build/src/channeldef.ValueDef<any> */ scala.Boolean = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("isValueDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ValueDef<any> */ scala.Boolean]
 
-@scala.inline
-def normalizeBin(bin: scala.Boolean): typings.vegaLite.binMod.BinParams = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.binMod.BinParams]
-@scala.inline
-def normalizeBin(bin: scala.Boolean, channel: typings.vegaLite.channelMod.ExtendedChannel): typings.vegaLite.binMod.BinParams = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.binMod.BinParams]
-@scala.inline
-def normalizeBin(bin: typings.vegaLite.binMod.BinParams): typings.vegaLite.binMod.BinParams = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.binMod.BinParams]
-@scala.inline
-def normalizeBin(bin: typings.vegaLite.binMod.BinParams, channel: typings.vegaLite.channelMod.ExtendedChannel): typings.vegaLite.binMod.BinParams = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.binMod.BinParams]
+inline def normalizeBin(bin: scala.Boolean): typings.vegaLite.binMod.BinParams = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.binMod.BinParams]
+inline def normalizeBin(bin: scala.Boolean, channel: typings.vegaLite.channelMod.ExtendedChannel): typings.vegaLite.binMod.BinParams = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.binMod.BinParams]
+inline def normalizeBin(bin: typings.vegaLite.binMod.BinParams): typings.vegaLite.binMod.BinParams = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.binMod.BinParams]
+inline def normalizeBin(bin: typings.vegaLite.binMod.BinParams, channel: typings.vegaLite.channelMod.ExtendedChannel): typings.vegaLite.binMod.BinParams = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.binMod.BinParams]
 
-@scala.inline
-def normalizeBin_binned(bin: typings.vegaLite.vegaLiteStrings.binned): typings.vegaLite.binMod.BinParams = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.binMod.BinParams]
-@scala.inline
-def normalizeBin_binned(bin: typings.vegaLite.vegaLiteStrings.binned, channel: typings.vegaLite.channelMod.ExtendedChannel): typings.vegaLite.binMod.BinParams = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.binMod.BinParams]
+inline def normalizeBin_binned(bin: typings.vegaLite.vegaLiteStrings.binned): typings.vegaLite.binMod.BinParams = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.binMod.BinParams]
+inline def normalizeBin_binned(bin: typings.vegaLite.vegaLiteStrings.binned, channel: typings.vegaLite.channelMod.ExtendedChannel): typings.vegaLite.binMod.BinParams = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBin")(bin.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.binMod.BinParams]
 
-@scala.inline
-def resetTitleFormatter(): scala.Unit = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("resetTitleFormatter")().asInstanceOf[scala.Unit]
+inline def resetTitleFormatter(): scala.Unit = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("resetTitleFormatter")().asInstanceOf[scala.Unit]
 
-@scala.inline
-def setTitleFormatter(formatter: typings.vegaLite.channeldefMod.FieldTitleFormatter): scala.Unit = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("setTitleFormatter")(formatter.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setTitleFormatter(formatter: typings.vegaLite.channeldefMod.FieldTitleFormatter): scala.Unit = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("setTitleFormatter")(formatter.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def title(
+inline def title(
   fieldOrDatumDef: typings.vegaLite.channeldefMod.DatumDef[
   java.lang.String, 
   typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef
@@ -306,15 +240,13 @@ def title(
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef],
   hasAllowDisablingIncludeDefault: typings.vegaLite.anon.AllowDisabling
 ): java.lang.String | js.Array[java.lang.String] | typings.vegaTypings.signalMod.SignalRef = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasAllowDisablingIncludeDefault.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | js.Array[java.lang.String] | typings.vegaTypings.signalMod.SignalRef]
-@scala.inline
-def title(
+inline def title(
   fieldOrDatumDef: typings.vegaLite.channeldefMod.SecondaryFieldDef[java.lang.String],
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef],
   hasAllowDisablingIncludeDefault: typings.vegaLite.anon.AllowDisabling
 ): java.lang.String | js.Array[java.lang.String] | typings.vegaTypings.signalMod.SignalRef = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasAllowDisablingIncludeDefault.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | js.Array[java.lang.String] | typings.vegaTypings.signalMod.SignalRef]
 
-@scala.inline
-def title_binned(
+inline def title_binned(
   fieldOrDatumDef: typings.vegaLite.channeldefMod.TypedFieldDef[
   java.lang.String, 
   js.Any, 
@@ -324,14 +256,11 @@ def title_binned(
   hasAllowDisablingIncludeDefault: typings.vegaLite.anon.AllowDisabling
 ): java.lang.String | js.Array[java.lang.String] | typings.vegaTypings.signalMod.SignalRef = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasAllowDisablingIncludeDefault.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | js.Array[java.lang.String] | typings.vegaTypings.signalMod.SignalRef]
 
-@scala.inline
-def toFieldDefBase(fieldDef: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any]): typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("toFieldDefBase")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin]]
+inline def toFieldDefBase(fieldDef: typings.vegaLite.channeldefMod.FieldDef[java.lang.String, js.Any]): typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("toFieldDefBase")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin]]
 
-@scala.inline
-def toStringFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](fieldDef: typings.vegaLite.channeldefMod.FieldDef[F, js.Any]): typings.vegaLite.channeldefMod.StringFieldDef[F] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("toStringFieldDef")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.channeldefMod.StringFieldDef[F]]
+inline def toStringFieldDef[F /* <: typings.vegaLite.channeldefMod.Field */](fieldDef: typings.vegaLite.channeldefMod.FieldDef[F, js.Any]): typings.vegaLite.channeldefMod.StringFieldDef[F] = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("toStringFieldDef")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.channeldefMod.StringFieldDef[F]]
 
-@scala.inline
-def valueArray(
+inline def valueArray(
   fieldOrDatumDef: typings.vegaLite.channeldefMod.DatumDef[
   java.lang.String, 
   typings.vegaLite.channeldefMod.PrimitiveValue | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef
@@ -343,8 +272,7 @@ def valueArray(
 java.lang.String | scala.Double | scala.Boolean | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.anon.Signal] = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueArray")(fieldOrDatumDef.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[
 java.lang.String | scala.Double | scala.Boolean | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.anon.Signal]]
 
-@scala.inline
-def valueArray_binned(
+inline def valueArray_binned(
   fieldOrDatumDef: typings.vegaLite.channeldefMod.TypedFieldDef[
   java.lang.String, 
   js.Any, 
@@ -357,65 +285,51 @@ def valueArray_binned(
 java.lang.String | scala.Double | scala.Boolean | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.anon.Signal] = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueArray")(fieldOrDatumDef.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[
 java.lang.String | scala.Double | scala.Boolean | typings.vegaLite.datetimeMod.DateTime | typings.vegaLite.anon.Signal]]
 
-@scala.inline
-def valueExpr(
+inline def valueExpr(
   v: java.lang.String,
   hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def valueExpr(
+inline def valueExpr(
   v: js.Array[scala.Double],
   hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def valueExpr(
+inline def valueExpr(
   v: scala.Boolean,
   hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def valueExpr(v: scala.Double, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def valueExpr(
+inline def valueExpr(v: scala.Double, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def valueExpr(
   v: typings.vegaLite.datetimeMod.DateTime,
   hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def valueExpr(
+inline def valueExpr(
   v: typings.vegaLite.exprMod.ExprRef,
   hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def valueExpr(
+inline def valueExpr(
   v: typings.vegaTypings.signalMod.SignalRef,
   hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: typings.vegaLite.anon.TimeUnit
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def verbalTitleFormatter(
+inline def verbalTitleFormatter(
   fieldDef: typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin],
   config: typings.vegaLite.srcConfigMod.Config[typings.vegaLite.exprMod.ExprRef | typings.vegaTypings.signalMod.SignalRef]
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("verbalTitleFormatter")(fieldDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def vgField(
+inline def vgField(
   fieldDef: typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin]
 ): java.lang.String = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def vgField(
+inline def vgField(
   fieldDef: typings.vegaLite.channeldefMod.FieldDefBase[java.lang.String, typings.vegaLite.binMod.Bin],
   opt: typings.vegaLite.channeldefMod.FieldRefOption
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def vgField(fieldDef: typings.vegaLite.transformMod.AggregatedFieldDef): java.lang.String = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def vgField(
+inline def vgField(fieldDef: typings.vegaLite.transformMod.AggregatedFieldDef): java.lang.String = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def vgField(
   fieldDef: typings.vegaLite.transformMod.AggregatedFieldDef,
   opt: typings.vegaLite.channeldefMod.FieldRefOption
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def vgField(fieldDef: typings.vegaLite.transformMod.WindowFieldDef): java.lang.String = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def vgField(
+inline def vgField(fieldDef: typings.vegaLite.transformMod.WindowFieldDef): java.lang.String = typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def vgField(
   fieldDef: typings.vegaLite.transformMod.WindowFieldDef,
   opt: typings.vegaLite.channeldefMod.FieldRefOption
 ): java.lang.String = (typings.vegaLite.channeldefMod.^.asInstanceOf[js.Dynamic].applyDynamic("vgField")(fieldDef.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]

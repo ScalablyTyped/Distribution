@@ -10,16 +10,13 @@ trait bufferCreatedData extends StObject {
 }
 object bufferCreatedData {
   
-  @scala.inline
-  def apply(tracks: Tracks): bufferCreatedData = {
+  inline def apply(tracks: Tracks): bufferCreatedData = {
     val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[bufferCreatedData]
   }
   
-  @scala.inline
-  implicit class bufferCreatedDataMutableBuilder[Self <: bufferCreatedData] (val x: Self) extends AnyVal {
+  extension [Self <: bufferCreatedData](x: Self) {
     
-    @scala.inline
-    def setTracks(value: Tracks): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: Tracks): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }

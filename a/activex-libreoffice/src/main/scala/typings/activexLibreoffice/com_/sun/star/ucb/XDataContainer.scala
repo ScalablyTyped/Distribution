@@ -76,8 +76,7 @@ trait XDataContainer
 }
 object XDataContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Count: Double,
     Data: SafeArray[Double],
@@ -104,34 +103,24 @@ object XDataContainer {
     __obj.asInstanceOf[XDataContainer]
   }
   
-  @scala.inline
-  implicit class XDataContainerMutableBuilder[Self <: XDataContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XDataContainer](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: SafeArray[Double]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: SafeArray[Double]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataURL(value: String): Self = StObject.set(x, "DataURL", value.asInstanceOf[js.Any])
+    inline def setDataURL(value: String): Self = StObject.set(x, "DataURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
+    inline def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetData(value: () => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataURL(value: () => String): Self = StObject.set(x, "getDataURL", js.Any.fromFunction0(value))
+    inline def setGetDataURL(value: () => String): Self = StObject.set(x, "getDataURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
+    inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetData(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataURL(value: String => Unit): Self = StObject.set(x, "setDataURL", js.Any.fromFunction1(value))
+    inline def setSetDataURL(value: String => Unit): Self = StObject.set(x, "setDataURL", js.Any.fromFunction1(value))
   }
 }

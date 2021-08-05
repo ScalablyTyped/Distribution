@@ -22,6 +22,5 @@ object HoverCardBase {
   @JSImport("office-ui-fabric-react", "HoverCardBase.defaultProps")
   @js.native
   def defaultProps: CardDismissDelay = js.native
-  @scala.inline
-  def defaultProps_=(x: CardDismissDelay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: CardDismissDelay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

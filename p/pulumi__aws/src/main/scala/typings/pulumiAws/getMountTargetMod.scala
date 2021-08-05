@@ -11,10 +11,8 @@ object getMountTargetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetMountTargetResult]]
-  @scala.inline
-  def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetMountTargetResult]]
+  inline def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetMountTargetResult]]
+  inline def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetMountTargetResult]]
   
   trait GetMountTargetArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getMountTargetMod {
   }
   object GetMountTargetArgs {
     
-    @scala.inline
-    def apply(mountTargetId: String): GetMountTargetArgs = {
+    inline def apply(mountTargetId: String): GetMountTargetArgs = {
       val __obj = js.Dynamic.literal(mountTargetId = mountTargetId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetMountTargetArgs]
     }
     
-    @scala.inline
-    implicit class GetMountTargetArgsMutableBuilder[Self <: GetMountTargetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetMountTargetArgs](x: Self) {
       
-      @scala.inline
-      def setMountTargetId(value: String): Self = StObject.set(x, "mountTargetId", value.asInstanceOf[js.Any])
+      inline def setMountTargetId(value: String): Self = StObject.set(x, "mountTargetId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +100,7 @@ object getMountTargetMod {
   }
   object GetMountTargetResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       availabilityZoneId: String,
       availabilityZoneName: String,
       dnsName: String,
@@ -125,50 +119,35 @@ object getMountTargetMod {
       __obj.asInstanceOf[GetMountTargetResult]
     }
     
-    @scala.inline
-    implicit class GetMountTargetResultMutableBuilder[Self <: GetMountTargetResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetMountTargetResult](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZoneId(value: String): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZoneId(value: String): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneName(value: String): Self = StObject.set(x, "availabilityZoneName", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZoneName(value: String): Self = StObject.set(x, "availabilityZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemArn(value: String): Self = StObject.set(x, "fileSystemArn", value.asInstanceOf[js.Any])
+      inline def setFileSystemArn(value: String): Self = StObject.set(x, "fileSystemArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountTargetDnsName(value: String): Self = StObject.set(x, "mountTargetDnsName", value.asInstanceOf[js.Any])
+      inline def setMountTargetDnsName(value: String): Self = StObject.set(x, "mountTargetDnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountTargetId(value: String): Self = StObject.set(x, "mountTargetId", value.asInstanceOf[js.Any])
+      inline def setMountTargetId(value: String): Self = StObject.set(x, "mountTargetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -50,55 +50,39 @@ trait RefreshJourneyOptions extends StObject {
 }
 object RefreshJourneyOptions {
   
-  @scala.inline
-  def apply(): RefreshJourneyOptions = {
+  inline def apply(): RefreshJourneyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshJourneyOptions]
   }
   
-  @scala.inline
-  implicit class RefreshJourneyOptionsMutableBuilder[Self <: RefreshJourneyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshJourneyOptions](x: Self) {
     
-    @scala.inline
-    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
+    inline def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
+    inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
+    inline def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
+    inline def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
-    @scala.inline
-    def setRemarks(value: Boolean): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
+    inline def setRemarks(value: Boolean): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
+    inline def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
-    @scala.inline
-    def setStopovers(value: Boolean): Self = StObject.set(x, "stopovers", value.asInstanceOf[js.Any])
+    inline def setStopovers(value: Boolean): Self = StObject.set(x, "stopovers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopoversUndefined: Self = StObject.set(x, "stopovers", js.undefined)
+    inline def setStopoversUndefined: Self = StObject.set(x, "stopovers", js.undefined)
     
-    @scala.inline
-    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
+    inline def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
+    inline def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
-    @scala.inline
-    def setTickets(value: Boolean): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
+    inline def setTickets(value: Boolean): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketsUndefined: Self = StObject.set(x, "tickets", js.undefined)
+    inline def setTicketsUndefined: Self = StObject.set(x, "tickets", js.undefined)
   }
 }

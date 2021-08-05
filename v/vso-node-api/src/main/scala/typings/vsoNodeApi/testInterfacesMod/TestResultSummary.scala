@@ -17,8 +17,7 @@ trait TestResultSummary extends StObject {
 }
 object TestResultSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aggregatedResultsAnalysis: AggregatedResultsAnalysis,
     teamProject: TeamProjectReference,
     testFailures: TestFailuresAnalysis,
@@ -28,19 +27,14 @@ object TestResultSummary {
     __obj.asInstanceOf[TestResultSummary]
   }
   
-  @scala.inline
-  implicit class TestResultSummaryMutableBuilder[Self <: TestResultSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultSummary](x: Self) {
     
-    @scala.inline
-    def setAggregatedResultsAnalysis(value: AggregatedResultsAnalysis): Self = StObject.set(x, "aggregatedResultsAnalysis", value.asInstanceOf[js.Any])
+    inline def setAggregatedResultsAnalysis(value: AggregatedResultsAnalysis): Self = StObject.set(x, "aggregatedResultsAnalysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamProject(value: TeamProjectReference): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
+    inline def setTeamProject(value: TeamProjectReference): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestFailures(value: TestFailuresAnalysis): Self = StObject.set(x, "testFailures", value.asInstanceOf[js.Any])
+    inline def setTestFailures(value: TestFailuresAnalysis): Self = StObject.set(x, "testFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResultsContext(value: TestResultsContext): Self = StObject.set(x, "testResultsContext", value.asInstanceOf[js.Any])
+    inline def setTestResultsContext(value: TestResultsContext): Self = StObject.set(x, "testResultsContext", value.asInstanceOf[js.Any])
   }
 }

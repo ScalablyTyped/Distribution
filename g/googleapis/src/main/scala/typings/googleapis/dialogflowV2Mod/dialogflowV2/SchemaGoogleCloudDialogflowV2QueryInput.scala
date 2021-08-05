@@ -29,31 +29,23 @@ trait SchemaGoogleCloudDialogflowV2QueryInput extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2QueryInput {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2QueryInput = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2QueryInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2QueryInput]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2QueryInputMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2QueryInput] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2QueryInput](x: Self) {
     
-    @scala.inline
-    def setAudioConfig(value: SchemaGoogleCloudDialogflowV2InputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
+    inline def setAudioConfig(value: SchemaGoogleCloudDialogflowV2InputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
+    inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     
-    @scala.inline
-    def setEvent(value: SchemaGoogleCloudDialogflowV2EventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: SchemaGoogleCloudDialogflowV2EventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setText(value: SchemaGoogleCloudDialogflowV2TextInput): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SchemaGoogleCloudDialogflowV2TextInput): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

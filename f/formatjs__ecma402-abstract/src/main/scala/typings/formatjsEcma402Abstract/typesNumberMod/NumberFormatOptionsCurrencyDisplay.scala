@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatOptionsCurrencyDisplay extends StObject
 object NumberFormatOptionsCurrencyDisplay {
   
-  @scala.inline
-  def code: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.code = "code".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.code]
+  inline def code: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.code = "code".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.code]
   
-  @scala.inline
-  def name: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.name = "name".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.name]
+  inline def name: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.name = "name".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.name]
   
-  @scala.inline
-  def narrowSymbol: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrowSymbol = "narrowSymbol".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrowSymbol]
+  inline def narrowSymbol: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrowSymbol = "narrowSymbol".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrowSymbol]
   
-  @scala.inline
-  def symbol: symbol_ = "symbol".asInstanceOf[symbol_]
+  inline def symbol: symbol_ = "symbol".asInstanceOf[symbol_]
 }

@@ -18,8 +18,7 @@ trait SVGFilterPrimitiveStandardAttributes extends StObject {
 }
 object SVGFilterPrimitiveStandardAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: SVGAnimatedLength,
     result: SVGAnimatedString,
     width: SVGAnimatedLength,
@@ -30,22 +29,16 @@ object SVGFilterPrimitiveStandardAttributes {
     __obj.asInstanceOf[SVGFilterPrimitiveStandardAttributes]
   }
   
-  @scala.inline
-  implicit class SVGFilterPrimitiveStandardAttributesMutableBuilder[Self <: SVGFilterPrimitiveStandardAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGFilterPrimitiveStandardAttributes](x: Self) {
     
-    @scala.inline
-    def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: SVGAnimatedString): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SVGAnimatedString): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: SVGAnimatedLength): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: SVGAnimatedLength): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: SVGAnimatedLength): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: SVGAnimatedLength): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: SVGAnimatedLength): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: SVGAnimatedLength): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

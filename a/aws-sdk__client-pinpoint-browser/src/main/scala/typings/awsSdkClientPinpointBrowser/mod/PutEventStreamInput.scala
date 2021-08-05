@@ -10,8 +10,7 @@ trait PutEventStreamInput
      with typings.awsSdkClientPinpointBrowser.typesPutEventStreamInputMod.PutEventStreamInput
 object PutEventStreamInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, WriteEventStream: WriteEventStream): PutEventStreamInput = {
+  inline def apply(ApplicationId: String, WriteEventStream: WriteEventStream): PutEventStreamInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteEventStream = WriteEventStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventStreamInput]
   }

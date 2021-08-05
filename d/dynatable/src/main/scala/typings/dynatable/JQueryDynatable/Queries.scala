@@ -51,8 +51,7 @@ trait Queries extends StObject {
 }
 object Queries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, js.Any) => Dynatable,
     functions: QueriesFunctions,
     init: () => Unit,
@@ -66,31 +65,22 @@ object Queries {
     __obj.asInstanceOf[Queries]
   }
   
-  @scala.inline
-  implicit class QueriesMutableBuilder[Self <: Queries] (val x: Self) extends AnyVal {
+  extension [Self <: Queries](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, js.Any) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, js.Any) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFunctions(value: QueriesFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: QueriesFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
+    inline def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: String => Dynatable): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Dynatable): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRunSearch(value: js.Any => Unit): Self = StObject.set(x, "runSearch", js.Any.fromFunction1(value))
+    inline def setRunSearch(value: js.Any => Unit): Self = StObject.set(x, "runSearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetupInputs(value: () => Unit): Self = StObject.set(x, "setupInputs", js.Any.fromFunction0(value))
+    inline def setSetupInputs(value: () => Unit): Self = StObject.set(x, "setupInputs", js.Any.fromFunction0(value))
   }
 }

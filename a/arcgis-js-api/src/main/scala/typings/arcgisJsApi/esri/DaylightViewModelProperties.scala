@@ -68,61 +68,43 @@ trait DaylightViewModelProperties extends StObject {
 }
 object DaylightViewModelProperties {
   
-  @scala.inline
-  def apply(): DaylightViewModelProperties = {
+  inline def apply(): DaylightViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DaylightViewModelProperties]
   }
   
-  @scala.inline
-  implicit class DaylightViewModelPropertiesMutableBuilder[Self <: DaylightViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DaylightViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setCurrentSeason(value: spring | summer | fall | winter): Self = StObject.set(x, "currentSeason", value.asInstanceOf[js.Any])
+    inline def setCurrentSeason(value: spring | summer | fall | winter): Self = StObject.set(x, "currentSeason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSeasonUndefined: Self = StObject.set(x, "currentSeason", js.undefined)
+    inline def setCurrentSeasonUndefined: Self = StObject.set(x, "currentSeason", js.undefined)
     
-    @scala.inline
-    def setDayPlaying(value: Boolean): Self = StObject.set(x, "dayPlaying", value.asInstanceOf[js.Any])
+    inline def setDayPlaying(value: Boolean): Self = StObject.set(x, "dayPlaying", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayPlayingUndefined: Self = StObject.set(x, "dayPlaying", js.undefined)
+    inline def setDayPlayingUndefined: Self = StObject.set(x, "dayPlaying", js.undefined)
     
-    @scala.inline
-    def setLocalDate(value: DateProperties): Self = StObject.set(x, "localDate", value.asInstanceOf[js.Any])
+    inline def setLocalDate(value: DateProperties): Self = StObject.set(x, "localDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalDateUndefined: Self = StObject.set(x, "localDate", js.undefined)
+    inline def setLocalDateUndefined: Self = StObject.set(x, "localDate", js.undefined)
     
-    @scala.inline
-    def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
+    inline def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
+    inline def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
     
-    @scala.inline
-    def setTimeSliderPosition(value: Double): Self = StObject.set(x, "timeSliderPosition", value.asInstanceOf[js.Any])
+    inline def setTimeSliderPosition(value: Double): Self = StObject.set(x, "timeSliderPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSliderPositionUndefined: Self = StObject.set(x, "timeSliderPosition", js.undefined)
+    inline def setTimeSliderPositionUndefined: Self = StObject.set(x, "timeSliderPosition", js.undefined)
     
-    @scala.inline
-    def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
+    inline def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcOffsetUndefined: Self = StObject.set(x, "utcOffset", js.undefined)
+    inline def setUtcOffsetUndefined: Self = StObject.set(x, "utcOffset", js.undefined)
     
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setYearPlaying(value: Boolean): Self = StObject.set(x, "yearPlaying", value.asInstanceOf[js.Any])
+    inline def setYearPlaying(value: Boolean): Self = StObject.set(x, "yearPlaying", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearPlayingUndefined: Self = StObject.set(x, "yearPlaying", js.undefined)
+    inline def setYearPlayingUndefined: Self = StObject.set(x, "yearPlaying", js.undefined)
   }
 }

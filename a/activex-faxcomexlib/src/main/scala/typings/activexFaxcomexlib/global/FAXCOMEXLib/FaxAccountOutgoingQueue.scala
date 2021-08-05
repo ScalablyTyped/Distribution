@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxAccountOutgoingQueue Class */
 @JSGlobal("FAXCOMEXLib.FaxAccountOutgoingQueue")
 @js.native
-class FaxAccountOutgoingQueue protected ()
+/* private */ class FaxAccountOutgoingQueue ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccountOutgoingQueue {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxAccountOutgoingQueue_typekey")
   var FAXCOMEXLibDotFaxAccountOutgoingQueue_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccountOutgoingQueue = js.native
   

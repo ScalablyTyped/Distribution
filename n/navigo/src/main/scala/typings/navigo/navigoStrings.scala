@@ -8,6 +8,5 @@ object navigoStrings {
   
   @js.native
   sealed trait State extends StObject
-  @scala.inline
-  def State: State = "State".asInstanceOf[State]
+  inline def State: State = "State".asInstanceOf[State]
 }

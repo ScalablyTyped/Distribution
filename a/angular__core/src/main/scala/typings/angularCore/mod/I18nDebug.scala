@@ -17,22 +17,17 @@ trait I18nDebug extends StObject {
 }
 object I18nDebug {
   
-  @scala.inline
-  def apply(): I18nDebug = {
+  inline def apply(): I18nDebug = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[I18nDebug]
   }
   
-  @scala.inline
-  implicit class I18nDebugMutableBuilder[Self <: I18nDebug] (val x: Self) extends AnyVal {
+  extension [Self <: I18nDebug](x: Self) {
     
-    @scala.inline
-    def setDebug(value: js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+    inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
   }
 }

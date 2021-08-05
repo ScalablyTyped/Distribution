@@ -14,6 +14,6 @@ object deepCommentPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var onBeginResolve: js.Any = js.native
+    /* private */ var onBeginResolve: js.Any = js.native
   }
 }

@@ -14,25 +14,19 @@ trait WeekDayOfMonth extends StObject {
 }
 object WeekDayOfMonth {
   
-  @scala.inline
-  def apply(): WeekDayOfMonth = {
+  inline def apply(): WeekDayOfMonth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeekDayOfMonth]
   }
   
-  @scala.inline
-  implicit class WeekDayOfMonthMutableBuilder[Self <: WeekDayOfMonth] (val x: Self) extends AnyVal {
+  extension [Self <: WeekDayOfMonth](x: Self) {
     
-    @scala.inline
-    def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
     
-    @scala.inline
-    def setWeekOrdinal(value: Double): Self = StObject.set(x, "weekOrdinal", value.asInstanceOf[js.Any])
+    inline def setWeekOrdinal(value: Double): Self = StObject.set(x, "weekOrdinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekOrdinalUndefined: Self = StObject.set(x, "weekOrdinal", js.undefined)
+    inline def setWeekOrdinalUndefined: Self = StObject.set(x, "weekOrdinal", js.undefined)
   }
 }

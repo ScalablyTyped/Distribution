@@ -19,16 +19,13 @@ trait Serializable[T] extends StObject {
 }
 object Serializable {
   
-  @scala.inline
-  def apply[T](serialize: () => T | js.Promise[T]): Serializable[T] = {
+  inline def apply[T](serialize: () => T | js.Promise[T]): Serializable[T] = {
     val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction0(serialize))
     __obj.asInstanceOf[Serializable[T]]
   }
   
-  @scala.inline
-  implicit class SerializableMutableBuilder[Self <: Serializable[?], T] (val x: Self & Serializable[T]) extends AnyVal {
+  extension [Self <: Serializable[?], T](x: Self & Serializable[T]) {
     
-    @scala.inline
-    def setSerialize(value: () => T | js.Promise[T]): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => T | js.Promise[T]): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
   }
 }

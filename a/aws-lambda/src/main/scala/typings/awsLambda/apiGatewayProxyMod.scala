@@ -32,17 +32,14 @@ object apiGatewayProxyMod {
   }
   object APIGatewayProxyCognitoAuthorizer {
     
-    @scala.inline
-    def apply(claims: StringDictionary[String]): APIGatewayProxyCognitoAuthorizer = {
+    inline def apply(claims: StringDictionary[String]): APIGatewayProxyCognitoAuthorizer = {
       val __obj = js.Dynamic.literal(claims = claims.asInstanceOf[js.Any])
       __obj.asInstanceOf[APIGatewayProxyCognitoAuthorizer]
     }
     
-    @scala.inline
-    implicit class APIGatewayProxyCognitoAuthorizerMutableBuilder[Self <: APIGatewayProxyCognitoAuthorizer] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayProxyCognitoAuthorizer](x: Self) {
       
-      @scala.inline
-      def setClaims(value: StringDictionary[String]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
+      inline def setClaims(value: StringDictionary[String]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,8 +73,7 @@ object apiGatewayProxyMod {
   }
   object APIGatewayProxyEventBase {
     
-    @scala.inline
-    def apply[TAuthorizerContext](
+    inline def apply[TAuthorizerContext](
       headers: StringDictionary[String],
       httpMethod: String,
       isBase64Encoded: Boolean,
@@ -90,59 +86,41 @@ object apiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyEventBase[TAuthorizerContext]]
     }
     
-    @scala.inline
-    implicit class APIGatewayProxyEventBaseMutableBuilder[Self <: APIGatewayProxyEventBase[?], TAuthorizerContext] (val x: Self & APIGatewayProxyEventBase[TAuthorizerContext]) extends AnyVal {
+    extension [Self <: APIGatewayProxyEventBase[?], TAuthorizerContext](x: Self & APIGatewayProxyEventBase[TAuthorizerContext]) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
+      inline def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+      inline def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
+      inline def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueQueryStringParametersNull: Self = StObject.set(x, "multiValueQueryStringParameters", null)
+      inline def setMultiValueQueryStringParametersNull: Self = StObject.set(x, "multiValueQueryStringParameters", null)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+      inline def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
+      inline def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
       
-      @scala.inline
-      def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
+      inline def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
+      inline def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
       
-      @scala.inline
-      def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
+      inline def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+      inline def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariablesNull: Self = StObject.set(x, "stageVariables", null)
+      inline def setStageVariablesNull: Self = StObject.set(x, "stageVariables", null)
     }
   }
   
@@ -174,8 +152,7 @@ object apiGatewayProxyMod {
   }
   object APIGatewayProxyEventV2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       headers: StringDictionary[String],
       isBase64Encoded: Boolean,
       rawPath: String,
@@ -188,62 +165,43 @@ object apiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyEventV2]
     }
     
-    @scala.inline
-    implicit class APIGatewayProxyEventV2MutableBuilder[Self <: APIGatewayProxyEventV2] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayProxyEventV2](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+      inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
+      inline def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+      inline def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
+      inline def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
       
-      @scala.inline
-      def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
+      inline def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringParametersUndefined: Self = StObject.set(x, "queryStringParameters", js.undefined)
+      inline def setQueryStringParametersUndefined: Self = StObject.set(x, "queryStringParameters", js.undefined)
       
-      @scala.inline
-      def setRawPath(value: String): Self = StObject.set(x, "rawPath", value.asInstanceOf[js.Any])
+      inline def setRawPath(value: String): Self = StObject.set(x, "rawPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawQueryString(value: String): Self = StObject.set(x, "rawQueryString", value.asInstanceOf[js.Any])
+      inline def setRawQueryString(value: String): Self = StObject.set(x, "rawQueryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestContext(value: AccountId): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
+      inline def setRequestContext(value: AccountId): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
+      inline def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+      inline def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
+      inline def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,38 +223,28 @@ object apiGatewayProxyMod {
   }
   object APIGatewayProxyResult {
     
-    @scala.inline
-    def apply(body: String, statusCode: Double): APIGatewayProxyResult = {
+    inline def apply(body: String, statusCode: Double): APIGatewayProxyResult = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[APIGatewayProxyResult]
     }
     
-    @scala.inline
-    implicit class APIGatewayProxyResultMutableBuilder[Self <: APIGatewayProxyResult] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayProxyResult](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[Boolean | Double | String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Boolean | Double | String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
+      inline def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64EncodedUndefined: Self = StObject.set(x, "isBase64Encoded", js.undefined)
+      inline def setIsBase64EncodedUndefined: Self = StObject.set(x, "isBase64Encoded", js.undefined)
       
-      @scala.inline
-      def setMultiValueHeaders(value: StringDictionary[js.Array[Boolean | Double | String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+      inline def setMultiValueHeaders(value: StringDictionary[js.Array[Boolean | Double | String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
+      inline def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -316,47 +264,34 @@ object apiGatewayProxyMod {
   }
   object APIGatewayProxyStructuredResultV2 {
     
-    @scala.inline
-    def apply(): APIGatewayProxyStructuredResultV2 = {
+    inline def apply(): APIGatewayProxyStructuredResultV2 = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[APIGatewayProxyStructuredResultV2]
     }
     
-    @scala.inline
-    implicit class APIGatewayProxyStructuredResultV2MutableBuilder[Self <: APIGatewayProxyStructuredResultV2] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayProxyStructuredResultV2](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+      inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[Boolean | Double | String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Boolean | Double | String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
+      inline def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64EncodedUndefined: Self = StObject.set(x, "isBase64Encoded", js.undefined)
+      inline def setIsBase64EncodedUndefined: Self = StObject.set(x, "isBase64Encoded", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
   

@@ -13,19 +13,15 @@ trait CustomAmount extends StObject {
 }
 object CustomAmount {
   
-  @scala.inline
-  def apply(amount: Currency, label: String): CustomAmount = {
+  inline def apply(amount: Currency, label: String): CustomAmount = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomAmount]
   }
   
-  @scala.inline
-  implicit class CustomAmountMutableBuilder[Self <: CustomAmount] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAmount](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

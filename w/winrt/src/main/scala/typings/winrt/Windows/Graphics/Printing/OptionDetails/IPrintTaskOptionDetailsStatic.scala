@@ -11,16 +11,13 @@ trait IPrintTaskOptionDetailsStatic extends StObject {
 }
 object IPrintTaskOptionDetailsStatic {
   
-  @scala.inline
-  def apply(getFromPrintTaskOptions: PrintTaskOptions => PrintTaskOptionDetails): IPrintTaskOptionDetailsStatic = {
+  inline def apply(getFromPrintTaskOptions: PrintTaskOptions => PrintTaskOptionDetails): IPrintTaskOptionDetailsStatic = {
     val __obj = js.Dynamic.literal(getFromPrintTaskOptions = js.Any.fromFunction1(getFromPrintTaskOptions))
     __obj.asInstanceOf[IPrintTaskOptionDetailsStatic]
   }
   
-  @scala.inline
-  implicit class IPrintTaskOptionDetailsStaticMutableBuilder[Self <: IPrintTaskOptionDetailsStatic] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskOptionDetailsStatic](x: Self) {
     
-    @scala.inline
-    def setGetFromPrintTaskOptions(value: PrintTaskOptions => PrintTaskOptionDetails): Self = StObject.set(x, "getFromPrintTaskOptions", js.Any.fromFunction1(value))
+    inline def setGetFromPrintTaskOptions(value: PrintTaskOptions => PrintTaskOptionDetails): Self = StObject.set(x, "getFromPrintTaskOptions", js.Any.fromFunction1(value))
   }
 }

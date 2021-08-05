@@ -28,8 +28,7 @@ trait UnlinkDeveloperIdentityInput extends StObject {
 }
 object UnlinkDeveloperIdentityInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DeveloperProviderName: DeveloperProviderName,
     DeveloperUserIdentifier: DeveloperUserIdentifier,
     IdentityId: IdentityId,
@@ -39,19 +38,14 @@ object UnlinkDeveloperIdentityInput {
     __obj.asInstanceOf[UnlinkDeveloperIdentityInput]
   }
   
-  @scala.inline
-  implicit class UnlinkDeveloperIdentityInputMutableBuilder[Self <: UnlinkDeveloperIdentityInput] (val x: Self) extends AnyVal {
+  extension [Self <: UnlinkDeveloperIdentityInput](x: Self) {
     
-    @scala.inline
-    def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
+    inline def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DeveloperUserIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeveloperUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DeveloperUserIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }
 }

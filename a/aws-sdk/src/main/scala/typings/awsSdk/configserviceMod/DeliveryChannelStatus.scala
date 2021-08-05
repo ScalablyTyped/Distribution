@@ -28,37 +28,27 @@ trait DeliveryChannelStatus extends StObject {
 }
 object DeliveryChannelStatus {
   
-  @scala.inline
-  def apply(): DeliveryChannelStatus = {
+  inline def apply(): DeliveryChannelStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliveryChannelStatus]
   }
   
-  @scala.inline
-  implicit class DeliveryChannelStatusMutableBuilder[Self <: DeliveryChannelStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryChannelStatus](x: Self) {
     
-    @scala.inline
-    def setConfigHistoryDeliveryInfo(value: ConfigExportDeliveryInfo): Self = StObject.set(x, "configHistoryDeliveryInfo", value.asInstanceOf[js.Any])
+    inline def setConfigHistoryDeliveryInfo(value: ConfigExportDeliveryInfo): Self = StObject.set(x, "configHistoryDeliveryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigHistoryDeliveryInfoUndefined: Self = StObject.set(x, "configHistoryDeliveryInfo", js.undefined)
+    inline def setConfigHistoryDeliveryInfoUndefined: Self = StObject.set(x, "configHistoryDeliveryInfo", js.undefined)
     
-    @scala.inline
-    def setConfigSnapshotDeliveryInfo(value: ConfigExportDeliveryInfo): Self = StObject.set(x, "configSnapshotDeliveryInfo", value.asInstanceOf[js.Any])
+    inline def setConfigSnapshotDeliveryInfo(value: ConfigExportDeliveryInfo): Self = StObject.set(x, "configSnapshotDeliveryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigSnapshotDeliveryInfoUndefined: Self = StObject.set(x, "configSnapshotDeliveryInfo", js.undefined)
+    inline def setConfigSnapshotDeliveryInfoUndefined: Self = StObject.set(x, "configSnapshotDeliveryInfo", js.undefined)
     
-    @scala.inline
-    def setConfigStreamDeliveryInfo(value: ConfigStreamDeliveryInfo): Self = StObject.set(x, "configStreamDeliveryInfo", value.asInstanceOf[js.Any])
+    inline def setConfigStreamDeliveryInfo(value: ConfigStreamDeliveryInfo): Self = StObject.set(x, "configStreamDeliveryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigStreamDeliveryInfoUndefined: Self = StObject.set(x, "configStreamDeliveryInfo", js.undefined)
+    inline def setConfigStreamDeliveryInfoUndefined: Self = StObject.set(x, "configStreamDeliveryInfo", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

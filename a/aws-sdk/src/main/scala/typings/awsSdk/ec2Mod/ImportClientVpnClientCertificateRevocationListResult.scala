@@ -13,19 +13,15 @@ trait ImportClientVpnClientCertificateRevocationListResult extends StObject {
 }
 object ImportClientVpnClientCertificateRevocationListResult {
   
-  @scala.inline
-  def apply(): ImportClientVpnClientCertificateRevocationListResult = {
+  inline def apply(): ImportClientVpnClientCertificateRevocationListResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportClientVpnClientCertificateRevocationListResult]
   }
   
-  @scala.inline
-  implicit class ImportClientVpnClientCertificateRevocationListResultMutableBuilder[Self <: ImportClientVpnClientCertificateRevocationListResult] (val x: Self) extends AnyVal {
+  extension [Self <: ImportClientVpnClientCertificateRevocationListResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

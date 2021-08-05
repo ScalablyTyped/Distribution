@@ -64,61 +64,43 @@ trait SchemaCondition extends StObject {
 }
 object SchemaCondition {
   
-  @scala.inline
-  def apply(): SchemaCondition = {
+  inline def apply(): SchemaCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCondition]
   }
   
-  @scala.inline
-  implicit class SchemaConditionMutableBuilder[Self <: SchemaCondition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCondition](x: Self) {
     
-    @scala.inline
-    def setDevicePolicy(value: SchemaDevicePolicy): Self = StObject.set(x, "devicePolicy", value.asInstanceOf[js.Any])
+    inline def setDevicePolicy(value: SchemaDevicePolicy): Self = StObject.set(x, "devicePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePolicyUndefined: Self = StObject.set(x, "devicePolicy", js.undefined)
+    inline def setDevicePolicyUndefined: Self = StObject.set(x, "devicePolicy", js.undefined)
     
-    @scala.inline
-    def setIpSubnetworks(value: js.Array[String]): Self = StObject.set(x, "ipSubnetworks", value.asInstanceOf[js.Any])
+    inline def setIpSubnetworks(value: js.Array[String]): Self = StObject.set(x, "ipSubnetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSubnetworksUndefined: Self = StObject.set(x, "ipSubnetworks", js.undefined)
+    inline def setIpSubnetworksUndefined: Self = StObject.set(x, "ipSubnetworks", js.undefined)
     
-    @scala.inline
-    def setIpSubnetworksVarargs(value: String*): Self = StObject.set(x, "ipSubnetworks", js.Array(value :_*))
+    inline def setIpSubnetworksVarargs(value: String*): Self = StObject.set(x, "ipSubnetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
+    inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegateUndefined: Self = StObject.set(x, "negate", js.undefined)
+    inline def setNegateUndefined: Self = StObject.set(x, "negate", js.undefined)
     
-    @scala.inline
-    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredAccessLevels(value: js.Array[String]): Self = StObject.set(x, "requiredAccessLevels", value.asInstanceOf[js.Any])
+    inline def setRequiredAccessLevels(value: js.Array[String]): Self = StObject.set(x, "requiredAccessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredAccessLevelsUndefined: Self = StObject.set(x, "requiredAccessLevels", js.undefined)
+    inline def setRequiredAccessLevelsUndefined: Self = StObject.set(x, "requiredAccessLevels", js.undefined)
     
-    @scala.inline
-    def setRequiredAccessLevelsVarargs(value: String*): Self = StObject.set(x, "requiredAccessLevels", js.Array(value :_*))
+    inline def setRequiredAccessLevelsVarargs(value: String*): Self = StObject.set(x, "requiredAccessLevels", js.Array(value :_*))
   }
 }

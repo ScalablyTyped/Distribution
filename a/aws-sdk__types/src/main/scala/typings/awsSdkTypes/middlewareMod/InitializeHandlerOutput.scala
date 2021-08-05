@@ -13,16 +13,13 @@ trait InitializeHandlerOutput[Output /* <: js.Object */]
 }
 object InitializeHandlerOutput {
   
-  @scala.inline
-  def apply[Output /* <: js.Object */](output: Output, response: js.Any): InitializeHandlerOutput[Output] = {
+  inline def apply[Output /* <: js.Object */](output: Output, response: js.Any): InitializeHandlerOutput[Output] = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeHandlerOutput[Output]]
   }
   
-  @scala.inline
-  implicit class InitializeHandlerOutputMutableBuilder[Self <: InitializeHandlerOutput[?], Output /* <: js.Object */] (val x: Self & InitializeHandlerOutput[Output]) extends AnyVal {
+  extension [Self <: InitializeHandlerOutput[?], Output /* <: js.Object */](x: Self & InitializeHandlerOutput[Output]) {
     
-    @scala.inline
-    def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait DescribeBudgetActionResponse extends StObject {
 }
 object DescribeBudgetActionResponse {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Action: Action, BudgetName: BudgetName): DescribeBudgetActionResponse = {
+  inline def apply(AccountId: AccountId, Action: Action, BudgetName: BudgetName): DescribeBudgetActionResponse = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Action = Action.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBudgetActionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBudgetActionResponseMutableBuilder[Self <: DescribeBudgetActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBudgetActionResponse](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
   }
 }

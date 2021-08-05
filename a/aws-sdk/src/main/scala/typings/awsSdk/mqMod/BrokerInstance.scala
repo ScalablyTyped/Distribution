@@ -23,34 +23,25 @@ trait BrokerInstance extends StObject {
 }
 object BrokerInstance {
   
-  @scala.inline
-  def apply(): BrokerInstance = {
+  inline def apply(): BrokerInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrokerInstance]
   }
   
-  @scala.inline
-  implicit class BrokerInstanceMutableBuilder[Self <: BrokerInstance] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerInstance](x: Self) {
     
-    @scala.inline
-    def setConsoleURL(value: string): Self = StObject.set(x, "ConsoleURL", value.asInstanceOf[js.Any])
+    inline def setConsoleURL(value: string): Self = StObject.set(x, "ConsoleURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsoleURLUndefined: Self = StObject.set(x, "ConsoleURL", js.undefined)
+    inline def setConsoleURLUndefined: Self = StObject.set(x, "ConsoleURL", js.undefined)
     
-    @scala.inline
-    def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    @scala.inline
-    def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setIpAddress(value: string): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: string): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
   }
 }

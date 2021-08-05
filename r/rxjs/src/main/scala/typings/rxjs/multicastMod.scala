@@ -33,20 +33,16 @@ object multicastMod {
     /* CompleteClass */
     override def call(subscriber: Subscriber[R], source: js.Any): TeardownLogic = js.native
     
-    var selector: js.Any = js.native
+    /* private */ var selector: js.Any = js.native
     
-    var subjectFactory: js.Any = js.native
+    /* private */ var subjectFactory: js.Any = js.native
   }
   
-  @scala.inline
-  def multicast[T](subjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): UnaryFunction[Observable[T], ConnectableObservable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicast")(subjectFactory.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[Observable[T], ConnectableObservable[T]]]
-  @scala.inline
-  def multicast[T](subject: Subject[T]): UnaryFunction[Observable[T], ConnectableObservable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicast")(subject.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[Observable[T], ConnectableObservable[T]]]
-  @scala.inline
-  def multicast[T, O /* <: ObservableInput[js.Any] */](
+  inline def multicast[T](subjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): UnaryFunction[Observable[T], ConnectableObservable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicast")(subjectFactory.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[Observable[T], ConnectableObservable[T]]]
+  inline def multicast[T](subject: Subject[T]): UnaryFunction[Observable[T], ConnectableObservable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicast")(subject.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[Observable[T], ConnectableObservable[T]]]
+  inline def multicast[T, O /* <: ObservableInput[js.Any] */](
     SubjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]],
     selector: js.Function1[/* shared */ Observable[T], O]
   ): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multicast")(SubjectFactory.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
-  @scala.inline
-  def multicast[T, O /* <: ObservableInput[js.Any] */](subject: Subject[T], selector: js.Function1[/* shared */ Observable[T], O]): UnaryFunction[Observable[T], ConnectableObservable[ObservedValueOf[O]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multicast")(subject.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[Observable[T], ConnectableObservable[ObservedValueOf[O]]]]
+  inline def multicast[T, O /* <: ObservableInput[js.Any] */](subject: Subject[T], selector: js.Function1[/* shared */ Observable[T], O]): UnaryFunction[Observable[T], ConnectableObservable[ObservedValueOf[O]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multicast")(subject.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[Observable[T], ConnectableObservable[ObservedValueOf[O]]]]
 }

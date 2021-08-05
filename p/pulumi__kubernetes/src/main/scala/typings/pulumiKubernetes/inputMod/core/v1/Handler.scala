@@ -27,31 +27,23 @@ trait Handler extends StObject {
 }
 object Handler {
   
-  @scala.inline
-  def apply(): Handler = {
+  inline def apply(): Handler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Handler]
   }
   
-  @scala.inline
-  implicit class HandlerMutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
+  extension [Self <: Handler](x: Self) {
     
-    @scala.inline
-    def setExec(value: Input[ExecAction]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    inline def setExec(value: Input[ExecAction]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
-    @scala.inline
-    def setHttpGet(value: Input[HTTPGetAction]): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
+    inline def setHttpGet(value: Input[HTTPGetAction]): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpGetUndefined: Self = StObject.set(x, "httpGet", js.undefined)
+    inline def setHttpGetUndefined: Self = StObject.set(x, "httpGet", js.undefined)
     
-    @scala.inline
-    def setTcpSocket(value: Input[TCPSocketAction]): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
+    inline def setTcpSocket(value: Input[TCPSocketAction]): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpSocketUndefined: Self = StObject.set(x, "tcpSocket", js.undefined)
+    inline def setTcpSocketUndefined: Self = StObject.set(x, "tcpSocket", js.undefined)
   }
 }

@@ -12,8 +12,6 @@ object babelParserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Parse]
-  @scala.inline
-  def default(options: ParserOptions): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Parse]
+  inline def default(): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Parse]
+  inline def default(options: ParserOptions): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Parse]
 }

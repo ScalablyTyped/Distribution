@@ -19,40 +19,29 @@ trait TimeOff
 }
 object TimeOff {
   
-  @scala.inline
-  def apply(): TimeOff = {
+  inline def apply(): TimeOff = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeOff]
   }
   
-  @scala.inline
-  implicit class TimeOffMutableBuilder[Self <: TimeOff] (val x: Self) extends AnyVal {
+  extension [Self <: TimeOff](x: Self) {
     
-    @scala.inline
-    def setDraftTimeOff(value: NullableOption[TimeOffItem]): Self = StObject.set(x, "draftTimeOff", value.asInstanceOf[js.Any])
+    inline def setDraftTimeOff(value: NullableOption[TimeOffItem]): Self = StObject.set(x, "draftTimeOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftTimeOffNull: Self = StObject.set(x, "draftTimeOff", null)
+    inline def setDraftTimeOffNull: Self = StObject.set(x, "draftTimeOff", null)
     
-    @scala.inline
-    def setDraftTimeOffUndefined: Self = StObject.set(x, "draftTimeOff", js.undefined)
+    inline def setDraftTimeOffUndefined: Self = StObject.set(x, "draftTimeOff", js.undefined)
     
-    @scala.inline
-    def setSharedTimeOff(value: NullableOption[TimeOffItem]): Self = StObject.set(x, "sharedTimeOff", value.asInstanceOf[js.Any])
+    inline def setSharedTimeOff(value: NullableOption[TimeOffItem]): Self = StObject.set(x, "sharedTimeOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedTimeOffNull: Self = StObject.set(x, "sharedTimeOff", null)
+    inline def setSharedTimeOffNull: Self = StObject.set(x, "sharedTimeOff", null)
     
-    @scala.inline
-    def setSharedTimeOffUndefined: Self = StObject.set(x, "sharedTimeOff", js.undefined)
+    inline def setSharedTimeOffUndefined: Self = StObject.set(x, "sharedTimeOff", js.undefined)
     
-    @scala.inline
-    def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdNull: Self = StObject.set(x, "userId", null)
+    inline def setUserIdNull: Self = StObject.set(x, "userId", null)
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

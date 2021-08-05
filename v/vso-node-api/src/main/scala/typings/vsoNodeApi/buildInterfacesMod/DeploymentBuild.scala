@@ -12,17 +12,14 @@ trait DeploymentBuild
 }
 object DeploymentBuild {
   
-  @scala.inline
-  def apply(buildId: Double, `type`: String): DeploymentBuild = {
+  inline def apply(buildId: Double, `type`: String): DeploymentBuild = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentBuild]
   }
   
-  @scala.inline
-  implicit class DeploymentBuildMutableBuilder[Self <: DeploymentBuild] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentBuild](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
   }
 }

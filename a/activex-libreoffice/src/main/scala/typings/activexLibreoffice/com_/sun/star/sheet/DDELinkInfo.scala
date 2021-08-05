@@ -29,22 +29,17 @@ trait DDELinkInfo extends StObject {
 }
 object DDELinkInfo {
   
-  @scala.inline
-  def apply(Items: SafeArray[DDEItemInfo], Service: String, Topic: String): DDELinkInfo = {
+  inline def apply(Items: SafeArray[DDEItemInfo], Service: String, Topic: String): DDELinkInfo = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Service = Service.asInstanceOf[js.Any], Topic = Topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[DDELinkInfo]
   }
   
-  @scala.inline
-  implicit class DDELinkInfoMutableBuilder[Self <: DDELinkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DDELinkInfo](x: Self) {
     
-    @scala.inline
-    def setItems(value: SafeArray[DDEItemInfo]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: SafeArray[DDEItemInfo]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
   }
 }

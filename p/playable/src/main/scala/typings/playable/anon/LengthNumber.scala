@@ -10,16 +10,13 @@ trait LengthNumber extends StObject {
 }
 object LengthNumber {
   
-  @scala.inline
-  def apply(length: Double): LengthNumber = {
+  inline def apply(length: Double): LengthNumber = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[LengthNumber]
   }
   
-  @scala.inline
-  implicit class LengthNumberMutableBuilder[Self <: LengthNumber] (val x: Self) extends AnyVal {
+  extension [Self <: LengthNumber](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

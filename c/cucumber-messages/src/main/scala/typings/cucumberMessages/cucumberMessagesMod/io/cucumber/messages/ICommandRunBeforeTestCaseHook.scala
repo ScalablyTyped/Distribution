@@ -18,40 +18,29 @@ trait ICommandRunBeforeTestCaseHook extends StObject {
 }
 object ICommandRunBeforeTestCaseHook {
   
-  @scala.inline
-  def apply(): ICommandRunBeforeTestCaseHook = {
+  inline def apply(): ICommandRunBeforeTestCaseHook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICommandRunBeforeTestCaseHook]
   }
   
-  @scala.inline
-  implicit class ICommandRunBeforeTestCaseHookMutableBuilder[Self <: ICommandRunBeforeTestCaseHook] (val x: Self) extends AnyVal {
+  extension [Self <: ICommandRunBeforeTestCaseHook](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdNull: Self = StObject.set(x, "actionId", null)
+    inline def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setHookId(value: String): Self = StObject.set(x, "hookId", value.asInstanceOf[js.Any])
+    inline def setHookId(value: String): Self = StObject.set(x, "hookId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHookIdNull: Self = StObject.set(x, "hookId", null)
+    inline def setHookIdNull: Self = StObject.set(x, "hookId", null)
     
-    @scala.inline
-    def setHookIdUndefined: Self = StObject.set(x, "hookId", js.undefined)
+    inline def setHookIdUndefined: Self = StObject.set(x, "hookId", js.undefined)
     
-    @scala.inline
-    def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
+    inline def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
+    inline def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
     
-    @scala.inline
-    def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
+    inline def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
   }
 }

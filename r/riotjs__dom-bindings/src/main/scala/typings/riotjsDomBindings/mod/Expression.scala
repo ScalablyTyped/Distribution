@@ -21,8 +21,7 @@ trait Expression[Scope] extends StObject {
 }
 object Expression {
   
-  @scala.inline
-  def apply[Scope](
+  inline def apply[Scope](
     mount: Scope => Expression[js.Any],
     node: HTMLElement,
     `type`: ExpressionType,
@@ -35,25 +34,18 @@ object Expression {
     __obj.asInstanceOf[Expression[Scope]]
   }
   
-  @scala.inline
-  implicit class ExpressionMutableBuilder[Self <: Expression[?], Scope] (val x: Self & Expression[Scope]) extends AnyVal {
+  extension [Self <: Expression[?], Scope](x: Self & Expression[Scope]) {
     
-    @scala.inline
-    def setMount(value: Scope => Expression[js.Any]): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
+    inline def setMount(value: Scope => Expression[js.Any]): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExpressionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExpressionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmount(value: Scope => Expression[js.Any]): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
+    inline def setUnmount(value: Scope => Expression[js.Any]): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: Scope => Expression[js.Any]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: Scope => Expression[js.Any]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

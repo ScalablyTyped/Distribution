@@ -14,25 +14,19 @@ trait LocalConstructedValueBlockParams
 }
 object LocalConstructedValueBlockParams {
   
-  @scala.inline
-  def apply(): LocalConstructedValueBlockParams = {
+  inline def apply(): LocalConstructedValueBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalConstructedValueBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalConstructedValueBlockParamsMutableBuilder[Self <: LocalConstructedValueBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalConstructedValueBlockParams](x: Self) {
     
-    @scala.inline
-    def setIsIndefiniteForm(value: scala.Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
+    inline def setIsIndefiniteForm(value: scala.Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIndefiniteFormUndefined: Self = StObject.set(x, "isIndefiniteForm", js.undefined)
+    inline def setIsIndefiniteFormUndefined: Self = StObject.set(x, "isIndefiniteForm", js.undefined)
     
-    @scala.inline
-    def setValue(value: LocalValueBlock): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: LocalValueBlock): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

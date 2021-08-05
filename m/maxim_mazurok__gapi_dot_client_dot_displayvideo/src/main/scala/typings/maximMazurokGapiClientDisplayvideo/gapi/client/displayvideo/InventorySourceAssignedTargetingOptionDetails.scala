@@ -11,19 +11,15 @@ trait InventorySourceAssignedTargetingOptionDetails extends StObject {
 }
 object InventorySourceAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): InventorySourceAssignedTargetingOptionDetails = {
+  inline def apply(): InventorySourceAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventorySourceAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class InventorySourceAssignedTargetingOptionDetailsMutableBuilder[Self <: InventorySourceAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InventorySourceAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setInventorySourceId(value: String): Self = StObject.set(x, "inventorySourceId", value.asInstanceOf[js.Any])
+    inline def setInventorySourceId(value: String): Self = StObject.set(x, "inventorySourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceIdUndefined: Self = StObject.set(x, "inventorySourceId", js.undefined)
+    inline def setInventorySourceIdUndefined: Self = StObject.set(x, "inventorySourceId", js.undefined)
   }
 }

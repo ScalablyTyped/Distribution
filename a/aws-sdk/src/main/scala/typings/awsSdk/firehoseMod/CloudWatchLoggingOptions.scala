@@ -23,31 +23,23 @@ trait CloudWatchLoggingOptions extends StObject {
 }
 object CloudWatchLoggingOptions {
   
-  @scala.inline
-  def apply(): CloudWatchLoggingOptions = {
+  inline def apply(): CloudWatchLoggingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudWatchLoggingOptions]
   }
   
-  @scala.inline
-  implicit class CloudWatchLoggingOptionsMutableBuilder[Self <: CloudWatchLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
-    @scala.inline
-    def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "LogStreamName", value.asInstanceOf[js.Any])
+    inline def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "LogStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNameUndefined: Self = StObject.set(x, "LogStreamName", js.undefined)
+    inline def setLogStreamNameUndefined: Self = StObject.set(x, "LogStreamName", js.undefined)
   }
 }

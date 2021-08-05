@@ -20,8 +20,7 @@ trait StoryPointSwitchEvent
 }
 object StoryPointSwitchEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEventName: () => TableauEventName,
     getNewStoryPoint: () => StoryPoint,
     getOldStoryPointInfo: () => StoryPointInfo,
@@ -31,13 +30,10 @@ object StoryPointSwitchEvent {
     __obj.asInstanceOf[StoryPointSwitchEvent]
   }
   
-  @scala.inline
-  implicit class StoryPointSwitchEventMutableBuilder[Self <: StoryPointSwitchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StoryPointSwitchEvent](x: Self) {
     
-    @scala.inline
-    def setGetNewStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getNewStoryPoint", js.Any.fromFunction0(value))
+    inline def setGetNewStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getNewStoryPoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOldStoryPointInfo(value: () => StoryPointInfo): Self = StObject.set(x, "getOldStoryPointInfo", js.Any.fromFunction0(value))
+    inline def setGetOldStoryPointInfo(value: () => StoryPointInfo): Self = StObject.set(x, "getOldStoryPointInfo", js.Any.fromFunction0(value))
   }
 }

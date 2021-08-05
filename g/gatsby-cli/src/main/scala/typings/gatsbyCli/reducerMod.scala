@@ -13,12 +13,8 @@ object reducerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reducer(state: Unit, action: ActionsUnion): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
-  @scala.inline
-  def reducer(state: Unit, action: ISetLogs): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
-  @scala.inline
-  def reducer(state: IGatsbyCLIState, action: ActionsUnion): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
-  @scala.inline
-  def reducer(state: IGatsbyCLIState, action: ISetLogs): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
+  inline def reducer(state: Unit, action: ActionsUnion): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
+  inline def reducer(state: Unit, action: ISetLogs): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
+  inline def reducer(state: IGatsbyCLIState, action: ActionsUnion): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
+  inline def reducer(state: IGatsbyCLIState, action: ISetLogs): IGatsbyCLIState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IGatsbyCLIState]
 }

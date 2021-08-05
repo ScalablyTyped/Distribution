@@ -22,20 +22,16 @@ object helpCircleMod extends Shortcut {
   }
   object HelpCircleProps {
     
-    @scala.inline
-    def apply(): HelpCircleProps = {
+    inline def apply(): HelpCircleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelpCircleProps]
     }
     
-    @scala.inline
-    implicit class HelpCirclePropsMutableBuilder[Self <: HelpCircleProps] (val x: Self) extends AnyVal {
+    extension [Self <: HelpCircleProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

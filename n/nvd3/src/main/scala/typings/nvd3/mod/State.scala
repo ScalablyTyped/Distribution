@@ -11,16 +11,13 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(dispatch: Dispatch_[js.Object]): State = {
+  inline def apply(dispatch: Dispatch_[js.Object]): State = {
     val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setDispatch(value: Dispatch_[js.Object]): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+    inline def setDispatch(value: Dispatch_[js.Object]): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
   }
 }

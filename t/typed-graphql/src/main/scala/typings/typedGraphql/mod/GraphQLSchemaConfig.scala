@@ -18,46 +18,33 @@ trait GraphQLSchemaConfig extends StObject {
 }
 object GraphQLSchemaConfig {
   
-  @scala.inline
-  def apply(query: GraphQLObjectType): GraphQLSchemaConfig = {
+  inline def apply(query: GraphQLObjectType): GraphQLSchemaConfig = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSchemaConfig]
   }
   
-  @scala.inline
-  implicit class GraphQLSchemaConfigMutableBuilder[Self <: GraphQLSchemaConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLSchemaConfig](x: Self) {
     
-    @scala.inline
-    def setDirectives(value: js.Array[GraphQLDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[GraphQLDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    @scala.inline
-    def setDirectivesVarargs(value: GraphQLDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: GraphQLDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setMutation(value: GraphQLObjectType): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
+    inline def setMutation(value: GraphQLObjectType): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutationUndefined: Self = StObject.set(x, "mutation", js.undefined)
+    inline def setMutationUndefined: Self = StObject.set(x, "mutation", js.undefined)
     
-    @scala.inline
-    def setQuery(value: GraphQLObjectType): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: GraphQLObjectType): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription(value: GraphQLObjectType): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: GraphQLObjectType): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[GraphQLNamedType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[GraphQLNamedType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: GraphQLNamedType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: GraphQLNamedType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

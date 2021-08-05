@@ -123,6 +123,5 @@ trait SourceMapConsumer extends StObject {
 }
 object SourceMapConsumer {
   
-  @scala.inline
-  def apply: SourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("SourceMapConsumer").asInstanceOf[SourceMapConsumerConstructor]
+  inline def apply: SourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("SourceMapConsumer").asInstanceOf[SourceMapConsumerConstructor]
 }

@@ -11,19 +11,15 @@ trait SasPortalSignDeviceRequest extends StObject {
 }
 object SasPortalSignDeviceRequest {
   
-  @scala.inline
-  def apply(): SasPortalSignDeviceRequest = {
+  inline def apply(): SasPortalSignDeviceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalSignDeviceRequest]
   }
   
-  @scala.inline
-  implicit class SasPortalSignDeviceRequestMutableBuilder[Self <: SasPortalSignDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalSignDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setDevice(value: SasPortalDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: SasPortalDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }
 }

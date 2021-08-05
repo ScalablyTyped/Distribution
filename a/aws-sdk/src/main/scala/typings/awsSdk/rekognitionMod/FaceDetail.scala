@@ -83,109 +83,75 @@ trait FaceDetail extends StObject {
 }
 object FaceDetail {
   
-  @scala.inline
-  def apply(): FaceDetail = {
+  inline def apply(): FaceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FaceDetail]
   }
   
-  @scala.inline
-  implicit class FaceDetailMutableBuilder[Self <: FaceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: FaceDetail](x: Self) {
     
-    @scala.inline
-    def setAgeRange(value: AgeRange): Self = StObject.set(x, "AgeRange", value.asInstanceOf[js.Any])
+    inline def setAgeRange(value: AgeRange): Self = StObject.set(x, "AgeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeRangeUndefined: Self = StObject.set(x, "AgeRange", js.undefined)
+    inline def setAgeRangeUndefined: Self = StObject.set(x, "AgeRange", js.undefined)
     
-    @scala.inline
-    def setBeard(value: Beard): Self = StObject.set(x, "Beard", value.asInstanceOf[js.Any])
+    inline def setBeard(value: Beard): Self = StObject.set(x, "Beard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeardUndefined: Self = StObject.set(x, "Beard", js.undefined)
+    inline def setBeardUndefined: Self = StObject.set(x, "Beard", js.undefined)
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setEmotions(value: Emotions): Self = StObject.set(x, "Emotions", value.asInstanceOf[js.Any])
+    inline def setEmotions(value: Emotions): Self = StObject.set(x, "Emotions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmotionsUndefined: Self = StObject.set(x, "Emotions", js.undefined)
+    inline def setEmotionsUndefined: Self = StObject.set(x, "Emotions", js.undefined)
     
-    @scala.inline
-    def setEmotionsVarargs(value: Emotion*): Self = StObject.set(x, "Emotions", js.Array(value :_*))
+    inline def setEmotionsVarargs(value: Emotion*): Self = StObject.set(x, "Emotions", js.Array(value :_*))
     
-    @scala.inline
-    def setEyeglasses(value: Eyeglasses): Self = StObject.set(x, "Eyeglasses", value.asInstanceOf[js.Any])
+    inline def setEyeglasses(value: Eyeglasses): Self = StObject.set(x, "Eyeglasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEyeglassesUndefined: Self = StObject.set(x, "Eyeglasses", js.undefined)
+    inline def setEyeglassesUndefined: Self = StObject.set(x, "Eyeglasses", js.undefined)
     
-    @scala.inline
-    def setEyesOpen(value: EyeOpen): Self = StObject.set(x, "EyesOpen", value.asInstanceOf[js.Any])
+    inline def setEyesOpen(value: EyeOpen): Self = StObject.set(x, "EyesOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEyesOpenUndefined: Self = StObject.set(x, "EyesOpen", js.undefined)
+    inline def setEyesOpenUndefined: Self = StObject.set(x, "EyesOpen", js.undefined)
     
-    @scala.inline
-    def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "Gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "Gender", js.undefined)
     
-    @scala.inline
-    def setLandmarks(value: Landmarks): Self = StObject.set(x, "Landmarks", value.asInstanceOf[js.Any])
+    inline def setLandmarks(value: Landmarks): Self = StObject.set(x, "Landmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
+    inline def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
     
-    @scala.inline
-    def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
+    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
     
-    @scala.inline
-    def setMouthOpen(value: MouthOpen): Self = StObject.set(x, "MouthOpen", value.asInstanceOf[js.Any])
+    inline def setMouthOpen(value: MouthOpen): Self = StObject.set(x, "MouthOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouthOpenUndefined: Self = StObject.set(x, "MouthOpen", js.undefined)
+    inline def setMouthOpenUndefined: Self = StObject.set(x, "MouthOpen", js.undefined)
     
-    @scala.inline
-    def setMustache(value: Mustache): Self = StObject.set(x, "Mustache", value.asInstanceOf[js.Any])
+    inline def setMustache(value: Mustache): Self = StObject.set(x, "Mustache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustacheUndefined: Self = StObject.set(x, "Mustache", js.undefined)
+    inline def setMustacheUndefined: Self = StObject.set(x, "Mustache", js.undefined)
     
-    @scala.inline
-    def setPose(value: Pose): Self = StObject.set(x, "Pose", value.asInstanceOf[js.Any])
+    inline def setPose(value: Pose): Self = StObject.set(x, "Pose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoseUndefined: Self = StObject.set(x, "Pose", js.undefined)
+    inline def setPoseUndefined: Self = StObject.set(x, "Pose", js.undefined)
     
-    @scala.inline
-    def setQuality(value: ImageQuality): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: ImageQuality): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "Quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "Quality", js.undefined)
     
-    @scala.inline
-    def setSmile(value: Smile): Self = StObject.set(x, "Smile", value.asInstanceOf[js.Any])
+    inline def setSmile(value: Smile): Self = StObject.set(x, "Smile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmileUndefined: Self = StObject.set(x, "Smile", js.undefined)
+    inline def setSmileUndefined: Self = StObject.set(x, "Smile", js.undefined)
     
-    @scala.inline
-    def setSunglasses(value: Sunglasses): Self = StObject.set(x, "Sunglasses", value.asInstanceOf[js.Any])
+    inline def setSunglasses(value: Sunglasses): Self = StObject.set(x, "Sunglasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSunglassesUndefined: Self = StObject.set(x, "Sunglasses", js.undefined)
+    inline def setSunglassesUndefined: Self = StObject.set(x, "Sunglasses", js.undefined)
   }
 }

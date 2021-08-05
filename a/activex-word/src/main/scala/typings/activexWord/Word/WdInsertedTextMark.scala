@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdInsertedTextMark extends StObject
 object WdInsertedTextMark {
   
-  @scala.inline
-  def wdInsertedTextMarkBold: `1` = 1.asInstanceOf[`1`]
+  inline def wdInsertedTextMarkBold: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdInsertedTextMarkColorOnly: `5` = 5.asInstanceOf[`5`]
+  inline def wdInsertedTextMarkColorOnly: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdInsertedTextMarkDoubleStrikeThrough: `7` = 7.asInstanceOf[`7`]
+  inline def wdInsertedTextMarkDoubleStrikeThrough: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdInsertedTextMarkDoubleUnderline: `4` = 4.asInstanceOf[`4`]
+  inline def wdInsertedTextMarkDoubleUnderline: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdInsertedTextMarkItalic: `2` = 2.asInstanceOf[`2`]
+  inline def wdInsertedTextMarkItalic: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdInsertedTextMarkNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdInsertedTextMarkNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdInsertedTextMarkStrikeThrough: `6` = 6.asInstanceOf[`6`]
+  inline def wdInsertedTextMarkStrikeThrough: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdInsertedTextMarkUnderline: `3` = 3.asInstanceOf[`3`]
+  inline def wdInsertedTextMarkUnderline: `3` = 3.asInstanceOf[`3`]
 }

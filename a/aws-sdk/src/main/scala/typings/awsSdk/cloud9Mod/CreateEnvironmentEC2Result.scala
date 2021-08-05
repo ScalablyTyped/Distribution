@@ -13,19 +13,15 @@ trait CreateEnvironmentEC2Result extends StObject {
 }
 object CreateEnvironmentEC2Result {
   
-  @scala.inline
-  def apply(): CreateEnvironmentEC2Result = {
+  inline def apply(): CreateEnvironmentEC2Result = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEnvironmentEC2Result]
   }
   
-  @scala.inline
-  implicit class CreateEnvironmentEC2ResultMutableBuilder[Self <: CreateEnvironmentEC2Result] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEnvironmentEC2Result](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
   }
 }

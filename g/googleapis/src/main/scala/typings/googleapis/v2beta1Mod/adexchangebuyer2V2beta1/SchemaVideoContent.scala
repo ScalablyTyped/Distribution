@@ -22,25 +22,19 @@ trait SchemaVideoContent extends StObject {
 }
 object SchemaVideoContent {
   
-  @scala.inline
-  def apply(): SchemaVideoContent = {
+  inline def apply(): SchemaVideoContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoContent]
   }
   
-  @scala.inline
-  implicit class SchemaVideoContentMutableBuilder[Self <: SchemaVideoContent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoContent](x: Self) {
     
-    @scala.inline
-    def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
+    inline def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
+    inline def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
     
-    @scala.inline
-    def setVideoVastXml(value: String): Self = StObject.set(x, "videoVastXml", value.asInstanceOf[js.Any])
+    inline def setVideoVastXml(value: String): Self = StObject.set(x, "videoVastXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoVastXmlUndefined: Self = StObject.set(x, "videoVastXml", js.undefined)
+    inline def setVideoVastXmlUndefined: Self = StObject.set(x, "videoVastXml", js.undefined)
   }
 }

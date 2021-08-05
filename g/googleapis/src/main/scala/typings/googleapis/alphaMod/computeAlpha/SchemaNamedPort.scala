@@ -22,25 +22,19 @@ trait SchemaNamedPort extends StObject {
 }
 object SchemaNamedPort {
   
-  @scala.inline
-  def apply(): SchemaNamedPort = {
+  inline def apply(): SchemaNamedPort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNamedPort]
   }
   
-  @scala.inline
-  implicit class SchemaNamedPortMutableBuilder[Self <: SchemaNamedPort] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNamedPort](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

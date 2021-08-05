@@ -8,11 +8,9 @@ object maximMazurokGapiClientManufacturersStrings {
   
   @js.native
   sealed trait manufacturers extends StObject
-  @scala.inline
-  def manufacturers: manufacturers = "manufacturers".asInstanceOf[manufacturers]
+  inline def manufacturers: manufacturers = "manufacturers".asInstanceOf[manufacturers]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

@@ -14,7 +14,7 @@ trait AnimationPoint extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.AnimationPoint_typekey")
+  /* private */ @JSName("PowerPoint.AnimationPoint_typekey")
   var PowerPointDotAnimationPoint_typekey: AnimationPoint
   
   var Time: Double
@@ -23,8 +23,7 @@ trait AnimationPoint extends StObject {
 }
 object AnimationPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Delete: () => Unit,
     Formula: String,
@@ -38,28 +37,20 @@ object AnimationPoint {
     __obj.asInstanceOf[AnimationPoint]
   }
   
-  @scala.inline
-  implicit class AnimationPointMutableBuilder[Self <: AnimationPoint] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationPoint](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotAnimationPoint_typekey(value: AnimationPoint): Self = StObject.set(x, "PowerPoint.AnimationPoint_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotAnimationPoint_typekey(value: AnimationPoint): Self = StObject.set(x, "PowerPoint.AnimationPoint_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

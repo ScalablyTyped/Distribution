@@ -13,16 +13,13 @@ trait DeleteTrialRequest extends StObject {
 }
 object DeleteTrialRequest {
   
-  @scala.inline
-  def apply(TrialName: ExperimentEntityName): DeleteTrialRequest = {
+  inline def apply(TrialName: ExperimentEntityName): DeleteTrialRequest = {
     val __obj = js.Dynamic.literal(TrialName = TrialName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrialRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTrialRequestMutableBuilder[Self <: DeleteTrialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTrialRequest](x: Self) {
     
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
+    inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
   }
 }

@@ -28,28 +28,21 @@ trait SendResponse extends StObject {
 }
 object SendResponse {
   
-  @scala.inline
-  def apply(success: Boolean): SendResponse = {
+  inline def apply(success: Boolean): SendResponse = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendResponse]
   }
   
-  @scala.inline
-  implicit class SendResponseMutableBuilder[Self <: SendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: FirebaseError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: FirebaseError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

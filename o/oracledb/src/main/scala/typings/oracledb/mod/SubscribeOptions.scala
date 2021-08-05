@@ -80,88 +80,61 @@ trait SubscribeOptions extends StObject {
 }
 object SubscribeOptions {
   
-  @scala.inline
-  def apply(callback: SubscriptionMessage => Unit, sql: String): SubscribeOptions = {
+  inline def apply(callback: SubscriptionMessage => Unit, sql: String): SubscribeOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), sql = sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
   
-  @scala.inline
-  implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeOptions](x: Self) {
     
-    @scala.inline
-    def setBinds(value: BindParameters): Self = StObject.set(x, "binds", value.asInstanceOf[js.Any])
+    inline def setBinds(value: BindParameters): Self = StObject.set(x, "binds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindsUndefined: Self = StObject.set(x, "binds", js.undefined)
+    inline def setBindsUndefined: Self = StObject.set(x, "binds", js.undefined)
     
-    @scala.inline
-    def setBindsVarargs(value: (js.Any | BindParameter)*): Self = StObject.set(x, "binds", js.Array(value :_*))
+    inline def setBindsVarargs(value: (js.Any | BindParameter)*): Self = StObject.set(x, "binds", js.Array(value :_*))
     
-    @scala.inline
-    def setCallback(value: SubscriptionMessage => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: SubscriptionMessage => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClientInitiated(value: Boolean): Self = StObject.set(x, "clientInitiated", value.asInstanceOf[js.Any])
+    inline def setClientInitiated(value: Boolean): Self = StObject.set(x, "clientInitiated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientInitiatedUndefined: Self = StObject.set(x, "clientInitiated", js.undefined)
+    inline def setClientInitiatedUndefined: Self = StObject.set(x, "clientInitiated", js.undefined)
     
-    @scala.inline
-    def setGroupingClass(value: Double): Self = StObject.set(x, "groupingClass", value.asInstanceOf[js.Any])
+    inline def setGroupingClass(value: Double): Self = StObject.set(x, "groupingClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingClassUndefined: Self = StObject.set(x, "groupingClass", js.undefined)
+    inline def setGroupingClassUndefined: Self = StObject.set(x, "groupingClass", js.undefined)
     
-    @scala.inline
-    def setGroupingType(value: Double): Self = StObject.set(x, "groupingType", value.asInstanceOf[js.Any])
+    inline def setGroupingType(value: Double): Self = StObject.set(x, "groupingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingTypeUndefined: Self = StObject.set(x, "groupingType", js.undefined)
+    inline def setGroupingTypeUndefined: Self = StObject.set(x, "groupingType", js.undefined)
     
-    @scala.inline
-    def setGroupingValue(value: Double): Self = StObject.set(x, "groupingValue", value.asInstanceOf[js.Any])
+    inline def setGroupingValue(value: Double): Self = StObject.set(x, "groupingValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingValueUndefined: Self = StObject.set(x, "groupingValue", js.undefined)
+    inline def setGroupingValueUndefined: Self = StObject.set(x, "groupingValue", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: Double): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Double): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setOperations(value: Double): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: Double): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setQos(value: Double): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
+    inline def setQos(value: Double): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
+    inline def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -21,25 +21,19 @@ trait XrangePointPartialFillOptionsObject extends StObject {
 }
 object XrangePointPartialFillOptionsObject {
   
-  @scala.inline
-  def apply(): XrangePointPartialFillOptionsObject = {
+  inline def apply(): XrangePointPartialFillOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XrangePointPartialFillOptionsObject]
   }
   
-  @scala.inline
-  implicit class XrangePointPartialFillOptionsObjectMutableBuilder[Self <: XrangePointPartialFillOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: XrangePointPartialFillOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

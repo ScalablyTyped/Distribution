@@ -47,8 +47,7 @@ trait XMasterPasswordHandling
 }
 object XMasterPasswordHandling {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     allowPersistentStoring: Boolean => Boolean,
     authorizateWithMasterPassword: XInteractionHandler => Boolean,
@@ -63,25 +62,18 @@ object XMasterPasswordHandling {
     __obj.asInstanceOf[XMasterPasswordHandling]
   }
   
-  @scala.inline
-  implicit class XMasterPasswordHandlingMutableBuilder[Self <: XMasterPasswordHandling] (val x: Self) extends AnyVal {
+  extension [Self <: XMasterPasswordHandling](x: Self) {
     
-    @scala.inline
-    def setAllowPersistentStoring(value: Boolean => Boolean): Self = StObject.set(x, "allowPersistentStoring", js.Any.fromFunction1(value))
+    inline def setAllowPersistentStoring(value: Boolean => Boolean): Self = StObject.set(x, "allowPersistentStoring", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAuthorizateWithMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "authorizateWithMasterPassword", js.Any.fromFunction1(value))
+    inline def setAuthorizateWithMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "authorizateWithMasterPassword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "changeMasterPassword", js.Any.fromFunction1(value))
+    inline def setChangeMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "changeMasterPassword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasMasterPassword(value: () => Boolean): Self = StObject.set(x, "hasMasterPassword", js.Any.fromFunction0(value))
+    inline def setHasMasterPassword(value: () => Boolean): Self = StObject.set(x, "hasMasterPassword", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPersistentStoringAllowed(value: () => Boolean): Self = StObject.set(x, "isPersistentStoringAllowed", js.Any.fromFunction0(value))
+    inline def setIsPersistentStoringAllowed(value: () => Boolean): Self = StObject.set(x, "isPersistentStoringAllowed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveMasterPassword(value: () => Unit): Self = StObject.set(x, "removeMasterPassword", js.Any.fromFunction0(value))
+    inline def setRemoveMasterPassword(value: () => Unit): Self = StObject.set(x, "removeMasterPassword", js.Any.fromFunction0(value))
   }
 }

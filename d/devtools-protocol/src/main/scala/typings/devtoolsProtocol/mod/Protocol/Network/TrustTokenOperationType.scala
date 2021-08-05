@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrustTokenOperationType extends StObject
 object TrustTokenOperationType {
   
-  @scala.inline
-  def Issuance: typings.devtoolsProtocol.devtoolsProtocolStrings.Issuance = "Issuance".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Issuance]
+  inline def Issuance: typings.devtoolsProtocol.devtoolsProtocolStrings.Issuance = "Issuance".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Issuance]
   
-  @scala.inline
-  def Redemption: typings.devtoolsProtocol.devtoolsProtocolStrings.Redemption = "Redemption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Redemption]
+  inline def Redemption: typings.devtoolsProtocol.devtoolsProtocolStrings.Redemption = "Redemption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Redemption]
   
-  @scala.inline
-  def Signing: typings.devtoolsProtocol.devtoolsProtocolStrings.Signing = "Signing".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Signing]
+  inline def Signing: typings.devtoolsProtocol.devtoolsProtocolStrings.Signing = "Signing".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Signing]
 }

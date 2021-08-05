@@ -13,16 +13,13 @@ trait LineRange
 }
 object LineRange {
   
-  @scala.inline
-  def apply(contentLength: Double, end: Double, pos: Double): LineRange = {
+  inline def apply(contentLength: Double, end: Double, pos: Double): LineRange = {
     val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineRange]
   }
   
-  @scala.inline
-  implicit class LineRangeMutableBuilder[Self <: LineRange] (val x: Self) extends AnyVal {
+  extension [Self <: LineRange](x: Self) {
     
-    @scala.inline
-    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+    inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(originalEvent: typings.std.Event, progress: js.Any): Progress = {
+  inline def apply(originalEvent: typings.std.Event, progress: js.Any): Progress = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: js.Any): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: js.Any): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

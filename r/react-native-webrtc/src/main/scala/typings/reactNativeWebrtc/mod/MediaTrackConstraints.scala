@@ -16,25 +16,19 @@ trait MediaTrackConstraints extends StObject {
 }
 object MediaTrackConstraints {
   
-  @scala.inline
-  def apply(facingMode: user | environment, mandatory: MandatoryMedia, optional: js.Array[MediaSources]): MediaTrackConstraints = {
+  inline def apply(facingMode: user | environment, mandatory: MandatoryMedia, optional: js.Array[MediaSources]): MediaTrackConstraints = {
     val __obj = js.Dynamic.literal(facingMode = facingMode.asInstanceOf[js.Any], mandatory = mandatory.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackConstraints]
   }
   
-  @scala.inline
-  implicit class MediaTrackConstraintsMutableBuilder[Self <: MediaTrackConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: MediaTrackConstraints](x: Self) {
     
-    @scala.inline
-    def setFacingMode(value: user | environment): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
+    inline def setFacingMode(value: user | environment): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatory(value: MandatoryMedia): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+    inline def setMandatory(value: MandatoryMedia): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: js.Array[MediaSources]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: js.Array[MediaSources]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalVarargs(value: MediaSources*): Self = StObject.set(x, "optional", js.Array(value :_*))
+    inline def setOptionalVarargs(value: MediaSources*): Self = StObject.set(x, "optional", js.Array(value :_*))
   }
 }

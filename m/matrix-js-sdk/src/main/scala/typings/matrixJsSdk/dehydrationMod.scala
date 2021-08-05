@@ -17,25 +17,25 @@ object dehydrationMod {
   class DehydrationManager protected () extends StObject {
     def this(crypto: js.Any) = this()
     
-    var crypto: js.Any = js.native
+    /* private */ var crypto: js.Any = js.native
     
-    var dehydrateDevice: js.Any = js.native
+    /* private */ var dehydrateDevice: js.Any = js.native
     
-    var deviceDisplayName: js.Any = js.native
+    /* private */ var deviceDisplayName: js.Any = js.native
     
     def getDehydrationKeyFromCache(): js.Promise[Unit] = js.native
     
-    var inProgress: js.Any = js.native
+    /* private */ var inProgress: js.Any = js.native
     
-    var key: js.Any = js.native
+    /* private */ var key: js.Any = js.native
     
-    var keyInfo: js.Any = js.native
+    /* private */ var keyInfo: js.Any = js.native
     
     def setDehydrationKey(key: Uint8Array): js.Promise[Unit] = js.native
     def setDehydrationKey(key: Uint8Array, keyInfo: StringDictionary[js.Any]): js.Promise[Unit] = js.native
     def setDehydrationKey(key: Uint8Array, keyInfo: StringDictionary[js.Any], deviceDisplayName: String): js.Promise[Unit] = js.native
     def setDehydrationKey(key: Uint8Array, keyInfo: Unit, deviceDisplayName: String): js.Promise[Unit] = js.native
     
-    var timeoutId: js.Any = js.native
+    /* private */ var timeoutId: js.Any = js.native
   }
 }

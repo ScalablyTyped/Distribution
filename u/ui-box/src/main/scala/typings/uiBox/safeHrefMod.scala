@@ -11,17 +11,13 @@ object safeHrefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def configureSafeHref(configObject: SafeHrefConfigObj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSafeHref")(configObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configureSafeHref(configObject: SafeHrefConfigObj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSafeHref")(configObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def extractAnchorProps(href: String, rel: String): SafeHref = (^.asInstanceOf[js.Dynamic].applyDynamic("extractAnchorProps")(href.asInstanceOf[js.Any], rel.asInstanceOf[js.Any])).asInstanceOf[SafeHref]
+  inline def extractAnchorProps(href: String, rel: String): SafeHref = (^.asInstanceOf[js.Dynamic].applyDynamic("extractAnchorProps")(href.asInstanceOf[js.Any], rel.asInstanceOf[js.Any])).asInstanceOf[SafeHref]
   
-  @scala.inline
-  def getURLInfo(url: String): URLInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getURLInfo")(url.asInstanceOf[js.Any]).asInstanceOf[URLInfo]
+  inline def getURLInfo(url: String): URLInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getURLInfo")(url.asInstanceOf[js.Any]).asInstanceOf[URLInfo]
   
-  @scala.inline
-  def getUseSafeHref(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUseSafeHref")().asInstanceOf[Boolean]
+  inline def getUseSafeHref(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUseSafeHref")().asInstanceOf[Boolean]
   
   trait SafeHrefConfigObj extends StObject {
     
@@ -31,26 +27,20 @@ object safeHrefMod {
   }
   object SafeHrefConfigObj {
     
-    @scala.inline
-    def apply(): SafeHrefConfigObj = {
+    inline def apply(): SafeHrefConfigObj = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SafeHrefConfigObj]
     }
     
-    @scala.inline
-    implicit class SafeHrefConfigObjMutableBuilder[Self <: SafeHrefConfigObj] (val x: Self) extends AnyVal {
+    extension [Self <: SafeHrefConfigObj](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     }
   }
   
@@ -62,23 +52,18 @@ object safeHrefMod {
   }
   object URLInfo {
     
-    @scala.inline
-    def apply(sameOrigin: Boolean): URLInfo = {
+    inline def apply(sameOrigin: Boolean): URLInfo = {
       val __obj = js.Dynamic.literal(sameOrigin = sameOrigin.asInstanceOf[js.Any])
       __obj.asInstanceOf[URLInfo]
     }
     
-    @scala.inline
-    implicit class URLInfoMutableBuilder[Self <: URLInfo] (val x: Self) extends AnyVal {
+    extension [Self <: URLInfo](x: Self) {
       
-      @scala.inline
-      def setSameOrigin(value: Boolean): Self = StObject.set(x, "sameOrigin", value.asInstanceOf[js.Any])
+      inline def setSameOrigin(value: Boolean): Self = StObject.set(x, "sameOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

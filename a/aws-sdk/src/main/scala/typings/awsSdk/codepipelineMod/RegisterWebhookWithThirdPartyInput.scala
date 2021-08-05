@@ -13,19 +13,15 @@ trait RegisterWebhookWithThirdPartyInput extends StObject {
 }
 object RegisterWebhookWithThirdPartyInput {
   
-  @scala.inline
-  def apply(): RegisterWebhookWithThirdPartyInput = {
+  inline def apply(): RegisterWebhookWithThirdPartyInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterWebhookWithThirdPartyInput]
   }
   
-  @scala.inline
-  implicit class RegisterWebhookWithThirdPartyInputMutableBuilder[Self <: RegisterWebhookWithThirdPartyInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterWebhookWithThirdPartyInput](x: Self) {
     
-    @scala.inline
-    def setWebhookName(value: WebhookName): Self = StObject.set(x, "webhookName", value.asInstanceOf[js.Any])
+    inline def setWebhookName(value: WebhookName): Self = StObject.set(x, "webhookName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookNameUndefined: Self = StObject.set(x, "webhookName", js.undefined)
+    inline def setWebhookNameUndefined: Self = StObject.set(x, "webhookName", js.undefined)
   }
 }

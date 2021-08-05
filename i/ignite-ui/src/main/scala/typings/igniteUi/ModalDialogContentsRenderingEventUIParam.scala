@@ -18,25 +18,19 @@ trait ModalDialogContentsRenderingEventUIParam extends StObject {
 }
 object ModalDialogContentsRenderingEventUIParam {
   
-  @scala.inline
-  def apply(): ModalDialogContentsRenderingEventUIParam = {
+  inline def apply(): ModalDialogContentsRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalDialogContentsRenderingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ModalDialogContentsRenderingEventUIParamMutableBuilder[Self <: ModalDialogContentsRenderingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ModalDialogContentsRenderingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
+    inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
+    inline def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

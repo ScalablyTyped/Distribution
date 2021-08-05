@@ -47,8 +47,7 @@ trait LineNumberingProperties extends StObject {
 }
 object LineNumberingProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharStyleName: String,
     CountEmptyLines: Boolean,
     CountLinesInFrames: Boolean,
@@ -65,40 +64,28 @@ object LineNumberingProperties {
     __obj.asInstanceOf[LineNumberingProperties]
   }
   
-  @scala.inline
-  implicit class LineNumberingPropertiesMutableBuilder[Self <: LineNumberingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LineNumberingProperties](x: Self) {
     
-    @scala.inline
-    def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
+    inline def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountEmptyLines(value: Boolean): Self = StObject.set(x, "CountEmptyLines", value.asInstanceOf[js.Any])
+    inline def setCountEmptyLines(value: Boolean): Self = StObject.set(x, "CountEmptyLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountLinesInFrames(value: Boolean): Self = StObject.set(x, "CountLinesInFrames", value.asInstanceOf[js.Any])
+    inline def setCountLinesInFrames(value: Boolean): Self = StObject.set(x, "CountLinesInFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOn(value: Boolean): Self = StObject.set(x, "IsOn", value.asInstanceOf[js.Any])
+    inline def setIsOn(value: Boolean): Self = StObject.set(x, "IsOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberPosition(value: Double): Self = StObject.set(x, "NumberPosition", value.asInstanceOf[js.Any])
+    inline def setNumberPosition(value: Double): Self = StObject.set(x, "NumberPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartAtEachPage(value: Boolean): Self = StObject.set(x, "RestartAtEachPage", value.asInstanceOf[js.Any])
+    inline def setRestartAtEachPage(value: Boolean): Self = StObject.set(x, "RestartAtEachPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorInterval(value: Double): Self = StObject.set(x, "SeparatorInterval", value.asInstanceOf[js.Any])
+    inline def setSeparatorInterval(value: Double): Self = StObject.set(x, "SeparatorInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorText(value: String): Self = StObject.set(x, "SeparatorText", value.asInstanceOf[js.Any])
+    inline def setSeparatorText(value: String): Self = StObject.set(x, "SeparatorText", value.asInstanceOf[js.Any])
   }
 }

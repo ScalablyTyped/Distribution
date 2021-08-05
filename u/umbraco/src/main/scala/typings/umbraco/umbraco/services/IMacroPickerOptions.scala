@@ -14,16 +14,13 @@ trait IMacroPickerOptions extends StObject {
 }
 object IMacroPickerOptions {
   
-  @scala.inline
-  def apply(callback: js.Function): IMacroPickerOptions = {
+  inline def apply(callback: js.Function): IMacroPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMacroPickerOptions]
   }
   
-  @scala.inline
-  implicit class IMacroPickerOptionsMutableBuilder[Self <: IMacroPickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMacroPickerOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
   }
 }

@@ -26,17 +26,14 @@ object mod {
   }
   object Destroyable {
     
-    @scala.inline
-    def apply(destroy: () => ReadonlyPromisevoid): Destroyable = {
+    inline def apply(destroy: () => ReadonlyPromisevoid): Destroyable = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[Destroyable]
     }
     
-    @scala.inline
-    implicit class DestroyableMutableBuilder[Self <: Destroyable] (val x: Self) extends AnyVal {
+    extension [Self <: Destroyable](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => ReadonlyPromisevoid): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => ReadonlyPromisevoid): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
   
@@ -49,17 +46,13 @@ object mod {
   trait MethodType extends StObject
   object MethodType {
     
-    @scala.inline
-    def DELETE: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.DELETE = "DELETE".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.DELETE]
+    inline def DELETE: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.DELETE = "DELETE".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.GET = "GET".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.GET]
+    inline def GET: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.GET = "GET".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.GET]
     
-    @scala.inline
-    def POST: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.POST = "POST".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.POST]
+    inline def POST: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.POST = "POST".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.POST]
     
-    @scala.inline
-    def PUT: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT = "PUT".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT]
+    inline def PUT: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT = "PUT".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT]
   }
   
   trait Request extends StObject {
@@ -96,8 +89,7 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connectTimeout: Double,
       headers: Record[String, String],
       method: MethodType,
@@ -108,29 +100,21 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: MethodType): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: MethodType): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTimeout(value: Double): Self = StObject.set(x, "responseTimeout", value.asInstanceOf[js.Any])
+      inline def setResponseTimeout(value: Double): Self = StObject.set(x, "responseTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,17 +127,14 @@ object mod {
   }
   object Requester {
     
-    @scala.inline
-    def apply(send: Request => ReadonlyPromiseResponse): Requester = {
+    inline def apply(send: Request => ReadonlyPromiseResponse): Requester = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[Requester]
     }
     
-    @scala.inline
-    implicit class RequesterMutableBuilder[Self <: Requester] (val x: Self) extends AnyVal {
+    extension [Self <: Requester](x: Self) {
       
-      @scala.inline
-      def setSend(value: Request => ReadonlyPromiseResponse): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: Request => ReadonlyPromiseResponse): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
@@ -176,23 +157,18 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(content: String, isTimedOut: Boolean, status: Double): Response = {
+    inline def apply(content: String, isTimedOut: Boolean, status: Double): Response = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isTimedOut = isTimedOut.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTimedOut(value: Boolean): Self = StObject.set(x, "isTimedOut", value.asInstanceOf[js.Any])
+      inline def setIsTimedOut(value: Boolean): Self = StObject.set(x, "isTimedOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

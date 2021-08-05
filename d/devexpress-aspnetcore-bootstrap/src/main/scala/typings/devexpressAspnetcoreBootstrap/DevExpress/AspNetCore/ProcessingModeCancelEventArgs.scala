@@ -12,16 +12,13 @@ trait ProcessingModeCancelEventArgs
 }
 object ProcessingModeCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, processOnServer: Boolean, sender: Control): ProcessingModeCancelEventArgs = {
+  inline def apply(cancel: Boolean, processOnServer: Boolean, sender: Control): ProcessingModeCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingModeCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ProcessingModeCancelEventArgsMutableBuilder[Self <: ProcessingModeCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingModeCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

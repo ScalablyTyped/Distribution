@@ -10,16 +10,13 @@ trait IndexNumber extends StObject {
 }
 object IndexNumber {
   
-  @scala.inline
-  def apply(index: Double): IndexNumber = {
+  inline def apply(index: Double): IndexNumber = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexNumber]
   }
   
-  @scala.inline
-  implicit class IndexNumberMutableBuilder[Self <: IndexNumber] (val x: Self) extends AnyVal {
+  extension [Self <: IndexNumber](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotificationLevel extends StObject
 object NotificationLevel {
   
-  @scala.inline
-  def ERROR: typings.xrm.xrmStrings.ERROR = "ERROR".asInstanceOf[typings.xrm.xrmStrings.ERROR]
+  inline def ERROR: typings.xrm.xrmStrings.ERROR = "ERROR".asInstanceOf[typings.xrm.xrmStrings.ERROR]
   
-  @scala.inline
-  def RECOMMENDATION: typings.xrm.xrmStrings.RECOMMENDATION = "RECOMMENDATION".asInstanceOf[typings.xrm.xrmStrings.RECOMMENDATION]
+  inline def RECOMMENDATION: typings.xrm.xrmStrings.RECOMMENDATION = "RECOMMENDATION".asInstanceOf[typings.xrm.xrmStrings.RECOMMENDATION]
 }

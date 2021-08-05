@@ -93,79 +93,55 @@ trait SchemaApplicationPolicy extends StObject {
 }
 object SchemaApplicationPolicy {
   
-  @scala.inline
-  def apply(): SchemaApplicationPolicy = {
+  inline def apply(): SchemaApplicationPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApplicationPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaApplicationPolicyMutableBuilder[Self <: SchemaApplicationPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApplicationPolicy](x: Self) {
     
-    @scala.inline
-    def setDefaultPermissionPolicy(value: String): Self = StObject.set(x, "defaultPermissionPolicy", value.asInstanceOf[js.Any])
+    inline def setDefaultPermissionPolicy(value: String): Self = StObject.set(x, "defaultPermissionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPermissionPolicyUndefined: Self = StObject.set(x, "defaultPermissionPolicy", js.undefined)
+    inline def setDefaultPermissionPolicyUndefined: Self = StObject.set(x, "defaultPermissionPolicy", js.undefined)
     
-    @scala.inline
-    def setDelegatedScopes(value: js.Array[String]): Self = StObject.set(x, "delegatedScopes", value.asInstanceOf[js.Any])
+    inline def setDelegatedScopes(value: js.Array[String]): Self = StObject.set(x, "delegatedScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedScopesUndefined: Self = StObject.set(x, "delegatedScopes", js.undefined)
+    inline def setDelegatedScopesUndefined: Self = StObject.set(x, "delegatedScopes", js.undefined)
     
-    @scala.inline
-    def setDelegatedScopesVarargs(value: String*): Self = StObject.set(x, "delegatedScopes", js.Array(value :_*))
+    inline def setDelegatedScopesVarargs(value: String*): Self = StObject.set(x, "delegatedScopes", js.Array(value :_*))
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setInstallType(value: String): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
+    inline def setInstallType(value: String): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallTypeUndefined: Self = StObject.set(x, "installType", js.undefined)
+    inline def setInstallTypeUndefined: Self = StObject.set(x, "installType", js.undefined)
     
-    @scala.inline
-    def setLockTaskAllowed(value: Boolean): Self = StObject.set(x, "lockTaskAllowed", value.asInstanceOf[js.Any])
+    inline def setLockTaskAllowed(value: Boolean): Self = StObject.set(x, "lockTaskAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockTaskAllowedUndefined: Self = StObject.set(x, "lockTaskAllowed", js.undefined)
+    inline def setLockTaskAllowedUndefined: Self = StObject.set(x, "lockTaskAllowed", js.undefined)
     
-    @scala.inline
-    def setManagedConfiguration(value: StringDictionary[js.Any]): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
+    inline def setManagedConfiguration(value: StringDictionary[js.Any]): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationTemplate(value: SchemaManagedConfigurationTemplate): Self = StObject.set(x, "managedConfigurationTemplate", value.asInstanceOf[js.Any])
+    inline def setManagedConfigurationTemplate(value: SchemaManagedConfigurationTemplate): Self = StObject.set(x, "managedConfigurationTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationTemplateUndefined: Self = StObject.set(x, "managedConfigurationTemplate", js.undefined)
+    inline def setManagedConfigurationTemplateUndefined: Self = StObject.set(x, "managedConfigurationTemplate", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurationUndefined: Self = StObject.set(x, "managedConfiguration", js.undefined)
+    inline def setManagedConfigurationUndefined: Self = StObject.set(x, "managedConfiguration", js.undefined)
     
-    @scala.inline
-    def setMinimumVersionCode(value: Double): Self = StObject.set(x, "minimumVersionCode", value.asInstanceOf[js.Any])
+    inline def setMinimumVersionCode(value: Double): Self = StObject.set(x, "minimumVersionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumVersionCodeUndefined: Self = StObject.set(x, "minimumVersionCode", js.undefined)
+    inline def setMinimumVersionCodeUndefined: Self = StObject.set(x, "minimumVersionCode", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setPermissionGrants(value: js.Array[SchemaPermissionGrant]): Self = StObject.set(x, "permissionGrants", value.asInstanceOf[js.Any])
+    inline def setPermissionGrants(value: js.Array[SchemaPermissionGrant]): Self = StObject.set(x, "permissionGrants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
+    inline def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
     
-    @scala.inline
-    def setPermissionGrantsVarargs(value: SchemaPermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
+    inline def setPermissionGrantsVarargs(value: SchemaPermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
   }
 }

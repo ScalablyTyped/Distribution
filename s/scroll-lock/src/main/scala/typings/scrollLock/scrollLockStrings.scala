@@ -11,34 +11,29 @@ object scrollLockStrings {
   sealed trait margin
     extends StObject
        with FillGapMethod
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
+  inline def margin: margin = "margin".asInstanceOf[margin]
   
   @js.native
   sealed trait `max-width`
     extends StObject
        with FillGapMethod
-  @scala.inline
-  def `max-width`: `max-width` = "max-width".asInstanceOf[`max-width`]
+  inline def `max-width`: `max-width` = "max-width".asInstanceOf[`max-width`]
   
   @js.native
   sealed trait none
     extends StObject
        with FillGapMethod
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait padding
     extends StObject
        with FillGapMethod
-  @scala.inline
-  def padding: padding = "padding".asInstanceOf[padding]
+  inline def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
   sealed trait width
     extends StObject
        with FillGapMethod
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
+  inline def width: width = "width".asInstanceOf[width]
 }

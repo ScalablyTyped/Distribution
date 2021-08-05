@@ -23,28 +23,21 @@ trait ListGroupPoliciesRequest extends StObject {
 }
 object ListGroupPoliciesRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType): ListGroupPoliciesRequest = {
+  inline def apply(GroupName: groupNameType): ListGroupPoliciesRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupPoliciesRequest]
   }
   
-  @scala.inline
-  implicit class ListGroupPoliciesRequestMutableBuilder[Self <: ListGroupPoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroupPoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

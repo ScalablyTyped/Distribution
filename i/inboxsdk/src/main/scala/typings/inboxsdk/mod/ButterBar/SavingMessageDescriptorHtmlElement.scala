@@ -14,16 +14,13 @@ trait SavingMessageDescriptorHtmlElement
 }
 object SavingMessageDescriptorHtmlElement {
   
-  @scala.inline
-  def apply(el: HTMLElement): SavingMessageDescriptorHtmlElement = {
+  inline def apply(el: HTMLElement): SavingMessageDescriptorHtmlElement = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingMessageDescriptorHtmlElement]
   }
   
-  @scala.inline
-  implicit class SavingMessageDescriptorHtmlElementMutableBuilder[Self <: SavingMessageDescriptorHtmlElement] (val x: Self) extends AnyVal {
+  extension [Self <: SavingMessageDescriptorHtmlElement](x: Self) {
     
-    @scala.inline
-    def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
   }
 }

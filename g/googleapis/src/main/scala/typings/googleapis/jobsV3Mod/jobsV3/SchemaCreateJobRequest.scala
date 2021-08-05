@@ -16,19 +16,15 @@ trait SchemaCreateJobRequest extends StObject {
 }
 object SchemaCreateJobRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateJobRequest = {
+  inline def apply(): SchemaCreateJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateJobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateJobRequestMutableBuilder[Self <: SchemaCreateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateJobRequest](x: Self) {
     
-    @scala.inline
-    def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
   }
 }

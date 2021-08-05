@@ -29,8 +29,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def appendLinesAsync(absolutePath: String, lines: IIterable[String]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def appendLinesAsync(absolutePath: String, lines: IIterable[String]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   /**
     * Appends lines of text to the file at the specified path or URI using the specified character encoding.
     * @param absolutePath The path of the file that the lines are appended to.
@@ -39,8 +38,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def appendLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def appendLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   
   /**
     * Appends text to the file at the specified path or URI.
@@ -49,8 +47,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def appendTextAsync(absolutePath: String, contents: String): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def appendTextAsync(absolutePath: String, contents: String): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   /**
     * Appends text to the file at the specified path or URI using the specified character encoding.
     * @param absolutePath The path of the file that the text is appended to.
@@ -59,8 +56,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def appendTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def appendTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   
   /**
     * Reads the contents of the file at the specified path or URI and returns a buffer.
@@ -68,8 +64,7 @@ object PathIO {
     * @return When this method completes, it returns an object (type IBuffer ) that represents the contents of the file.
     */
   /* static member */
-  @scala.inline
-  def readBufferAsync(absolutePath: String): IPromiseWithIAsyncOperation[IBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readBufferAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IBuffer]]
+  inline def readBufferAsync(absolutePath: String): IPromiseWithIAsyncOperation[IBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readBufferAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IBuffer]]
   
   /**
     * Reads the contents of the file at the specified path or URI and returns lines of text.
@@ -77,8 +72,7 @@ object PathIO {
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
   /* static member */
-  @scala.inline
-  def readLinesAsync(absolutePath: String): IPromiseWithIAsyncOperation[IVector[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
+  inline def readLinesAsync(absolutePath: String): IPromiseWithIAsyncOperation[IVector[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
   /**
     * Reads the contents of the file at the specified path or URI using the specified character encoding and returns lines of text.
     * @param absolutePath The path of the file to read.
@@ -86,8 +80,7 @@ object PathIO {
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
   /* static member */
-  @scala.inline
-  def readLinesAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
+  inline def readLinesAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
   
   /**
     * Reads the contents of the file at the specified path or URI and returns text.
@@ -95,8 +88,7 @@ object PathIO {
     * @return When this method completes successfully, it returns the contents of the file as a text string.
     */
   /* static member */
-  @scala.inline
-  def readTextAsync(absolutePath: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readTextAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+  inline def readTextAsync(absolutePath: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readTextAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
   /**
     * Reads the contents of the file at the specified path or URI using the specified character encoding and returns text.
     * @param absolutePath The path of the file to read.
@@ -104,8 +96,7 @@ object PathIO {
     * @return When this method completes successfully, it returns the contents of the file as a text string.
     */
   /* static member */
-  @scala.inline
-  def readTextAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readTextAsync")(absolutePath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+  inline def readTextAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readTextAsync")(absolutePath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
   
   /**
     * Writes data from a buffer to the file at the specified path or URI.
@@ -114,8 +105,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def writeBufferAsync(absolutePath: String, buffer: IBuffer): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferAsync")(absolutePath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def writeBufferAsync(absolutePath: String, buffer: IBuffer): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBufferAsync")(absolutePath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   
   /**
     * Writes a single byte of data to the file at the specified path or URI.
@@ -124,8 +114,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def writeBytesAsync(absolutePath: String, buffer: js.Array[Double]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBytesAsync")(absolutePath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def writeBytesAsync(absolutePath: String, buffer: js.Array[Double]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeBytesAsync")(absolutePath.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   
   /**
     * Writes lines of text to the file at the specified path or URI.
@@ -134,8 +123,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def writeLinesAsync(absolutePath: String, lines: IIterable[String]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def writeLinesAsync(absolutePath: String, lines: IIterable[String]): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   /**
     * Writes lines of text to the file at the specified path or URI using the specified character encoding.
     * @param absolutePath The path of the file that the lines are appended to.
@@ -144,8 +132,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def writeLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def writeLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLinesAsync")(absolutePath.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   
   /**
     * Writes text to the file at the specified path or URI.
@@ -154,8 +141,7 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def writeTextAsync(absolutePath: String, contents: String): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def writeTextAsync(absolutePath: String, contents: String): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   /**
     * Writes text to the file at the specified path or URI using the specified character encoding.
     * @param absolutePath The path of the file that the text is written to.
@@ -164,6 +150,5 @@ object PathIO {
     * @return No object or value is returned when this method completes.
     */
   /* static member */
-  @scala.inline
-  def writeTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def writeTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("writeTextAsync")(absolutePath.asInstanceOf[js.Any], contents.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
 }

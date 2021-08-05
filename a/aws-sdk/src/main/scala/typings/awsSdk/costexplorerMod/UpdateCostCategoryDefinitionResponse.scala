@@ -18,25 +18,19 @@ trait UpdateCostCategoryDefinitionResponse extends StObject {
 }
 object UpdateCostCategoryDefinitionResponse {
   
-  @scala.inline
-  def apply(): UpdateCostCategoryDefinitionResponse = {
+  inline def apply(): UpdateCostCategoryDefinitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateCostCategoryDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class UpdateCostCategoryDefinitionResponseMutableBuilder[Self <: UpdateCostCategoryDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCostCategoryDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
+    inline def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostCategoryArnUndefined: Self = StObject.set(x, "CostCategoryArn", js.undefined)
+    inline def setCostCategoryArnUndefined: Self = StObject.set(x, "CostCategoryArn", js.undefined)
     
-    @scala.inline
-    def setEffectiveStart(value: ZonedDateTime): Self = StObject.set(x, "EffectiveStart", value.asInstanceOf[js.Any])
+    inline def setEffectiveStart(value: ZonedDateTime): Self = StObject.set(x, "EffectiveStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveStartUndefined: Self = StObject.set(x, "EffectiveStart", js.undefined)
+    inline def setEffectiveStartUndefined: Self = StObject.set(x, "EffectiveStart", js.undefined)
   }
 }

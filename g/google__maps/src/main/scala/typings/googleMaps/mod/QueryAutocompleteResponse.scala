@@ -20,8 +20,7 @@ trait QueryAutocompleteResponse extends StObject {
 }
 object QueryAutocompleteResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error_message: String,
     predictions: js.Array[QueryAutocompleteResult],
     status: QueryAutocompleteResponseStatus
@@ -30,19 +29,14 @@ object QueryAutocompleteResponse {
     __obj.asInstanceOf[QueryAutocompleteResponse]
   }
   
-  @scala.inline
-  implicit class QueryAutocompleteResponseMutableBuilder[Self <: QueryAutocompleteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryAutocompleteResponse](x: Self) {
     
-    @scala.inline
-    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictions(value: js.Array[QueryAutocompleteResult]): Self = StObject.set(x, "predictions", value.asInstanceOf[js.Any])
+    inline def setPredictions(value: js.Array[QueryAutocompleteResult]): Self = StObject.set(x, "predictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionsVarargs(value: QueryAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value :_*))
+    inline def setPredictionsVarargs(value: QueryAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: QueryAutocompleteResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: QueryAutocompleteResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

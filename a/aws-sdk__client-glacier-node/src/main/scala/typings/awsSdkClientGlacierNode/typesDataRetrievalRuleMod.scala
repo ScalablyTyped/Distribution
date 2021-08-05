@@ -20,26 +20,20 @@ object typesDataRetrievalRuleMod {
   }
   object DataRetrievalRule {
     
-    @scala.inline
-    def apply(): DataRetrievalRule = {
+    inline def apply(): DataRetrievalRule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataRetrievalRule]
     }
     
-    @scala.inline
-    implicit class DataRetrievalRuleMutableBuilder[Self <: DataRetrievalRule] (val x: Self) extends AnyVal {
+    extension [Self <: DataRetrievalRule](x: Self) {
       
-      @scala.inline
-      def setBytesPerHour(value: Double): Self = StObject.set(x, "BytesPerHour", value.asInstanceOf[js.Any])
+      inline def setBytesPerHour(value: Double): Self = StObject.set(x, "BytesPerHour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesPerHourUndefined: Self = StObject.set(x, "BytesPerHour", js.undefined)
+      inline def setBytesPerHourUndefined: Self = StObject.set(x, "BytesPerHour", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: String): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: String): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "Strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "Strategy", js.undefined)
     }
   }
   

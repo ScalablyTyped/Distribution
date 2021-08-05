@@ -18,34 +18,25 @@ trait Geometry extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply(geometry: typings.cesium.mod.Geometry | PolygonGeometry): Geometry = {
+  inline def apply(geometry: typings.cesium.mod.Geometry | PolygonGeometry): Geometry = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setGeometry(value: typings.cesium.mod.Geometry | PolygonGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: typings.cesium.mod.Geometry | PolygonGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
+    inline def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
+    inline def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
   }
 }

@@ -80,103 +80,71 @@ trait StorediSCSIVolume extends StObject {
 }
 object StorediSCSIVolume {
   
-  @scala.inline
-  def apply(): StorediSCSIVolume = {
+  inline def apply(): StorediSCSIVolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorediSCSIVolume]
   }
   
-  @scala.inline
-  implicit class StorediSCSIVolumeMutableBuilder[Self <: StorediSCSIVolume] (val x: Self) extends AnyVal {
+  extension [Self <: StorediSCSIVolume](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: CreatedDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: CreatedDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
+    inline def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
+    inline def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
-    @scala.inline
-    def setPreservedExistingData(value: scala.Boolean): Self = StObject.set(x, "PreservedExistingData", value.asInstanceOf[js.Any])
+    inline def setPreservedExistingData(value: scala.Boolean): Self = StObject.set(x, "PreservedExistingData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedExistingDataUndefined: Self = StObject.set(x, "PreservedExistingData", js.undefined)
+    inline def setPreservedExistingDataUndefined: Self = StObject.set(x, "PreservedExistingData", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotId(value: SnapshotId): Self = StObject.set(x, "SourceSnapshotId", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotId(value: SnapshotId): Self = StObject.set(x, "SourceSnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotIdUndefined: Self = StObject.set(x, "SourceSnapshotId", js.undefined)
+    inline def setSourceSnapshotIdUndefined: Self = StObject.set(x, "SourceSnapshotId", js.undefined)
     
-    @scala.inline
-    def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
+    inline def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNameUndefined: Self = StObject.set(x, "TargetName", js.undefined)
+    inline def setTargetNameUndefined: Self = StObject.set(x, "TargetName", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
     
-    @scala.inline
-    def setVolumeAttachmentStatus(value: VolumeAttachmentStatus): Self = StObject.set(x, "VolumeAttachmentStatus", value.asInstanceOf[js.Any])
+    inline def setVolumeAttachmentStatus(value: VolumeAttachmentStatus): Self = StObject.set(x, "VolumeAttachmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeAttachmentStatusUndefined: Self = StObject.set(x, "VolumeAttachmentStatus", js.undefined)
+    inline def setVolumeAttachmentStatusUndefined: Self = StObject.set(x, "VolumeAttachmentStatus", js.undefined)
     
-    @scala.inline
-    def setVolumeDiskId(value: DiskId): Self = StObject.set(x, "VolumeDiskId", value.asInstanceOf[js.Any])
+    inline def setVolumeDiskId(value: DiskId): Self = StObject.set(x, "VolumeDiskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeDiskIdUndefined: Self = StObject.set(x, "VolumeDiskId", js.undefined)
+    inline def setVolumeDiskIdUndefined: Self = StObject.set(x, "VolumeDiskId", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
     
-    @scala.inline
-    def setVolumeProgress(value: DoubleObject): Self = StObject.set(x, "VolumeProgress", value.asInstanceOf[js.Any])
+    inline def setVolumeProgress(value: DoubleObject): Self = StObject.set(x, "VolumeProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeProgressUndefined: Self = StObject.set(x, "VolumeProgress", js.undefined)
+    inline def setVolumeProgressUndefined: Self = StObject.set(x, "VolumeProgress", js.undefined)
     
-    @scala.inline
-    def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
+    inline def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setVolumeStatus(value: VolumeStatus): Self = StObject.set(x, "VolumeStatus", value.asInstanceOf[js.Any])
+    inline def setVolumeStatus(value: VolumeStatus): Self = StObject.set(x, "VolumeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeStatusUndefined: Self = StObject.set(x, "VolumeStatus", js.undefined)
+    inline def setVolumeStatusUndefined: Self = StObject.set(x, "VolumeStatus", js.undefined)
     
-    @scala.inline
-    def setVolumeType(value: VolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: VolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
+    inline def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
     
-    @scala.inline
-    def setVolumeUsedInBytes(value: VolumeUsedInBytes): Self = StObject.set(x, "VolumeUsedInBytes", value.asInstanceOf[js.Any])
+    inline def setVolumeUsedInBytes(value: VolumeUsedInBytes): Self = StObject.set(x, "VolumeUsedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUsedInBytesUndefined: Self = StObject.set(x, "VolumeUsedInBytes", js.undefined)
+    inline def setVolumeUsedInBytesUndefined: Self = StObject.set(x, "VolumeUsedInBytes", js.undefined)
     
-    @scala.inline
-    def setVolumeiSCSIAttributes(value: VolumeiSCSIAttributes): Self = StObject.set(x, "VolumeiSCSIAttributes", value.asInstanceOf[js.Any])
+    inline def setVolumeiSCSIAttributes(value: VolumeiSCSIAttributes): Self = StObject.set(x, "VolumeiSCSIAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeiSCSIAttributesUndefined: Self = StObject.set(x, "VolumeiSCSIAttributes", js.undefined)
+    inline def setVolumeiSCSIAttributesUndefined: Self = StObject.set(x, "VolumeiSCSIAttributes", js.undefined)
   }
 }

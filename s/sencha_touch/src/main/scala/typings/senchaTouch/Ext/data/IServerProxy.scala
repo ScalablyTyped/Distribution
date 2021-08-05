@@ -287,347 +287,235 @@ trait IServerProxy
 }
 object IServerProxy {
   
-  @scala.inline
-  def apply(): IServerProxy = {
+  inline def apply(): IServerProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IServerProxy]
   }
   
-  @scala.inline
-  implicit class IServerProxyMutableBuilder[Self <: IServerProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IServerProxy](x: Self) {
     
-    @scala.inline
-    def setAfterRequest(value: (/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "afterRequest", js.Any.fromFunction2(value))
+    inline def setAfterRequest(value: (/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "afterRequest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
+    inline def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
     
-    @scala.inline
-    def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+    inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    @scala.inline
-    def setBuildRequest(value: /* operation */ js.UndefOr[IOperation] => IRequest): Self = StObject.set(x, "buildRequest", js.Any.fromFunction1(value))
+    inline def setBuildRequest(value: /* operation */ js.UndefOr[IOperation] => IRequest): Self = StObject.set(x, "buildRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuildRequestUndefined: Self = StObject.set(x, "buildRequest", js.undefined)
+    inline def setBuildRequestUndefined: Self = StObject.set(x, "buildRequest", js.undefined)
     
-    @scala.inline
-    def setBuildUrl(value: /* request */ js.UndefOr[IRequest] => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction1(value))
+    inline def setBuildUrl(value: /* request */ js.UndefOr[IRequest] => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
+    inline def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
     
-    @scala.inline
-    def setCacheString(value: String): Self = StObject.set(x, "cacheString", value.asInstanceOf[js.Any])
+    inline def setCacheString(value: String): Self = StObject.set(x, "cacheString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheStringUndefined: Self = StObject.set(x, "cacheString", js.undefined)
+    inline def setCacheStringUndefined: Self = StObject.set(x, "cacheString", js.undefined)
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDirectionParam(value: String): Self = StObject.set(x, "directionParam", value.asInstanceOf[js.Any])
+    inline def setDirectionParam(value: String): Self = StObject.set(x, "directionParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionParamUndefined: Self = StObject.set(x, "directionParam", js.undefined)
+    inline def setDirectionParamUndefined: Self = StObject.set(x, "directionParam", js.undefined)
     
-    @scala.inline
-    def setDoRequest(
+    inline def setDoRequest(
       value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
+    inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
     
-    @scala.inline
-    def setEnablePagingParams(value: Boolean): Self = StObject.set(x, "enablePagingParams", value.asInstanceOf[js.Any])
+    inline def setEnablePagingParams(value: Boolean): Self = StObject.set(x, "enablePagingParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePagingParamsUndefined: Self = StObject.set(x, "enablePagingParams", js.undefined)
+    inline def setEnablePagingParamsUndefined: Self = StObject.set(x, "enablePagingParams", js.undefined)
     
-    @scala.inline
-    def setEncodeFilters(value: /* filters */ js.UndefOr[Array] => String): Self = StObject.set(x, "encodeFilters", js.Any.fromFunction1(value))
+    inline def setEncodeFilters(value: /* filters */ js.UndefOr[Array] => String): Self = StObject.set(x, "encodeFilters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodeFiltersUndefined: Self = StObject.set(x, "encodeFilters", js.undefined)
+    inline def setEncodeFiltersUndefined: Self = StObject.set(x, "encodeFilters", js.undefined)
     
-    @scala.inline
-    def setEncodeSorters(value: /* sorters */ js.UndefOr[Array] => String): Self = StObject.set(x, "encodeSorters", js.Any.fromFunction1(value))
+    inline def setEncodeSorters(value: /* sorters */ js.UndefOr[Array] => String): Self = StObject.set(x, "encodeSorters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodeSortersUndefined: Self = StObject.set(x, "encodeSorters", js.undefined)
+    inline def setEncodeSortersUndefined: Self = StObject.set(x, "encodeSorters", js.undefined)
     
-    @scala.inline
-    def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
+    inline def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
+    inline def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
     
-    @scala.inline
-    def setFilterParam(value: String): Self = StObject.set(x, "filterParam", value.asInstanceOf[js.Any])
+    inline def setFilterParam(value: String): Self = StObject.set(x, "filterParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterParamUndefined: Self = StObject.set(x, "filterParam", js.undefined)
+    inline def setFilterParamUndefined: Self = StObject.set(x, "filterParam", js.undefined)
     
-    @scala.inline
-    def setGetApi(value: () => js.Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
+    inline def setGetApi(value: () => js.Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
+    inline def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
     
-    @scala.inline
-    def setGetCacheString(value: () => String): Self = StObject.set(x, "getCacheString", js.Any.fromFunction0(value))
+    inline def setGetCacheString(value: () => String): Self = StObject.set(x, "getCacheString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCacheStringUndefined: Self = StObject.set(x, "getCacheString", js.undefined)
+    inline def setGetCacheStringUndefined: Self = StObject.set(x, "getCacheString", js.undefined)
     
-    @scala.inline
-    def setGetDirectionParam(value: () => String): Self = StObject.set(x, "getDirectionParam", js.Any.fromFunction0(value))
+    inline def setGetDirectionParam(value: () => String): Self = StObject.set(x, "getDirectionParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDirectionParamUndefined: Self = StObject.set(x, "getDirectionParam", js.undefined)
+    inline def setGetDirectionParamUndefined: Self = StObject.set(x, "getDirectionParam", js.undefined)
     
-    @scala.inline
-    def setGetEnablePagingParams(value: () => Boolean): Self = StObject.set(x, "getEnablePagingParams", js.Any.fromFunction0(value))
+    inline def setGetEnablePagingParams(value: () => Boolean): Self = StObject.set(x, "getEnablePagingParams", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnablePagingParamsUndefined: Self = StObject.set(x, "getEnablePagingParams", js.undefined)
+    inline def setGetEnablePagingParamsUndefined: Self = StObject.set(x, "getEnablePagingParams", js.undefined)
     
-    @scala.inline
-    def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
+    inline def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
+    inline def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
     
-    @scala.inline
-    def setGetFilterParam(value: () => String): Self = StObject.set(x, "getFilterParam", js.Any.fromFunction0(value))
+    inline def setGetFilterParam(value: () => String): Self = StObject.set(x, "getFilterParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilterParamUndefined: Self = StObject.set(x, "getFilterParam", js.undefined)
+    inline def setGetFilterParamUndefined: Self = StObject.set(x, "getFilterParam", js.undefined)
     
-    @scala.inline
-    def setGetGroupParam(value: () => String): Self = StObject.set(x, "getGroupParam", js.Any.fromFunction0(value))
+    inline def setGetGroupParam(value: () => String): Self = StObject.set(x, "getGroupParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupParamUndefined: Self = StObject.set(x, "getGroupParam", js.undefined)
+    inline def setGetGroupParamUndefined: Self = StObject.set(x, "getGroupParam", js.undefined)
     
-    @scala.inline
-    def setGetLimitParam(value: () => String): Self = StObject.set(x, "getLimitParam", js.Any.fromFunction0(value))
+    inline def setGetLimitParam(value: () => String): Self = StObject.set(x, "getLimitParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLimitParamUndefined: Self = StObject.set(x, "getLimitParam", js.undefined)
+    inline def setGetLimitParamUndefined: Self = StObject.set(x, "getLimitParam", js.undefined)
     
-    @scala.inline
-    def setGetNoCache(value: () => Boolean): Self = StObject.set(x, "getNoCache", js.Any.fromFunction0(value))
+    inline def setGetNoCache(value: () => Boolean): Self = StObject.set(x, "getNoCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNoCacheUndefined: Self = StObject.set(x, "getNoCache", js.undefined)
+    inline def setGetNoCacheUndefined: Self = StObject.set(x, "getNoCache", js.undefined)
     
-    @scala.inline
-    def setGetPageParam(value: () => String): Self = StObject.set(x, "getPageParam", js.Any.fromFunction0(value))
+    inline def setGetPageParam(value: () => String): Self = StObject.set(x, "getPageParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPageParamUndefined: Self = StObject.set(x, "getPageParam", js.undefined)
+    inline def setGetPageParamUndefined: Self = StObject.set(x, "getPageParam", js.undefined)
     
-    @scala.inline
-    def setGetSimpleSortMode(value: () => Boolean): Self = StObject.set(x, "getSimpleSortMode", js.Any.fromFunction0(value))
+    inline def setGetSimpleSortMode(value: () => Boolean): Self = StObject.set(x, "getSimpleSortMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSimpleSortModeUndefined: Self = StObject.set(x, "getSimpleSortMode", js.undefined)
+    inline def setGetSimpleSortModeUndefined: Self = StObject.set(x, "getSimpleSortMode", js.undefined)
     
-    @scala.inline
-    def setGetSortParam(value: () => String): Self = StObject.set(x, "getSortParam", js.Any.fromFunction0(value))
+    inline def setGetSortParam(value: () => String): Self = StObject.set(x, "getSortParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSortParamUndefined: Self = StObject.set(x, "getSortParam", js.undefined)
+    inline def setGetSortParamUndefined: Self = StObject.set(x, "getSortParam", js.undefined)
     
-    @scala.inline
-    def setGetStartParam(value: () => String): Self = StObject.set(x, "getStartParam", js.Any.fromFunction0(value))
+    inline def setGetStartParam(value: () => String): Self = StObject.set(x, "getStartParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStartParamUndefined: Self = StObject.set(x, "getStartParam", js.undefined)
+    inline def setGetStartParamUndefined: Self = StObject.set(x, "getStartParam", js.undefined)
     
-    @scala.inline
-    def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
+    inline def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
+    inline def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
     
-    @scala.inline
-    def setGroupParam(value: String): Self = StObject.set(x, "groupParam", value.asInstanceOf[js.Any])
+    inline def setGroupParam(value: String): Self = StObject.set(x, "groupParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupParamUndefined: Self = StObject.set(x, "groupParam", js.undefined)
+    inline def setGroupParamUndefined: Self = StObject.set(x, "groupParam", js.undefined)
     
-    @scala.inline
-    def setLimitParam(value: String): Self = StObject.set(x, "limitParam", value.asInstanceOf[js.Any])
+    inline def setLimitParam(value: String): Self = StObject.set(x, "limitParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitParamUndefined: Self = StObject.set(x, "limitParam", js.undefined)
+    inline def setLimitParamUndefined: Self = StObject.set(x, "limitParam", js.undefined)
     
-    @scala.inline
-    def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
+    inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCacheUndefined: Self = StObject.set(x, "noCache", js.undefined)
+    inline def setNoCacheUndefined: Self = StObject.set(x, "noCache", js.undefined)
     
-    @scala.inline
-    def setPageParam(value: String): Self = StObject.set(x, "pageParam", value.asInstanceOf[js.Any])
+    inline def setPageParam(value: String): Self = StObject.set(x, "pageParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageParamUndefined: Self = StObject.set(x, "pageParam", js.undefined)
+    inline def setPageParamUndefined: Self = StObject.set(x, "pageParam", js.undefined)
     
-    @scala.inline
-    def setProcessResponse(
+    inline def setProcessResponse(
       value: (/* success */ js.UndefOr[Boolean], /* operation */ js.UndefOr[IOperation], /* request */ js.UndefOr[IRequest], /* response */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "processResponse", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setProcessResponseUndefined: Self = StObject.set(x, "processResponse", js.undefined)
+    inline def setProcessResponseUndefined: Self = StObject.set(x, "processResponse", js.undefined)
     
-    @scala.inline
-    def setRead(value: () => Unit): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => Unit): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setSetApi(value: /* api */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
+    inline def setSetApi(value: /* api */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetApiUndefined: Self = StObject.set(x, "setApi", js.undefined)
+    inline def setSetApiUndefined: Self = StObject.set(x, "setApi", js.undefined)
     
-    @scala.inline
-    def setSetCacheString(value: /* cacheString */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCacheString", js.Any.fromFunction1(value))
+    inline def setSetCacheString(value: /* cacheString */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCacheString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCacheStringUndefined: Self = StObject.set(x, "setCacheString", js.undefined)
+    inline def setSetCacheStringUndefined: Self = StObject.set(x, "setCacheString", js.undefined)
     
-    @scala.inline
-    def setSetDirectionParam(value: /* directionParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDirectionParam", js.Any.fromFunction1(value))
+    inline def setSetDirectionParam(value: /* directionParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDirectionParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDirectionParamUndefined: Self = StObject.set(x, "setDirectionParam", js.undefined)
+    inline def setSetDirectionParamUndefined: Self = StObject.set(x, "setDirectionParam", js.undefined)
     
-    @scala.inline
-    def setSetEnablePagingParams(value: /* enablePagingParams */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEnablePagingParams", js.Any.fromFunction1(value))
+    inline def setSetEnablePagingParams(value: /* enablePagingParams */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEnablePagingParams", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnablePagingParamsUndefined: Self = StObject.set(x, "setEnablePagingParams", js.undefined)
+    inline def setSetEnablePagingParamsUndefined: Self = StObject.set(x, "setEnablePagingParams", js.undefined)
     
-    @scala.inline
-    def setSetExtraParam(value: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setExtraParam", js.Any.fromFunction2(value))
+    inline def setSetExtraParam(value: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setExtraParam", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetExtraParamUndefined: Self = StObject.set(x, "setExtraParam", js.undefined)
+    inline def setSetExtraParamUndefined: Self = StObject.set(x, "setExtraParam", js.undefined)
     
-    @scala.inline
-    def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
+    inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExtraParamsUndefined: Self = StObject.set(x, "setExtraParams", js.undefined)
+    inline def setSetExtraParamsUndefined: Self = StObject.set(x, "setExtraParams", js.undefined)
     
-    @scala.inline
-    def setSetFilterParam(value: /* filterParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFilterParam", js.Any.fromFunction1(value))
+    inline def setSetFilterParam(value: /* filterParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFilterParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilterParamUndefined: Self = StObject.set(x, "setFilterParam", js.undefined)
+    inline def setSetFilterParamUndefined: Self = StObject.set(x, "setFilterParam", js.undefined)
     
-    @scala.inline
-    def setSetGroupParam(value: /* groupParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setGroupParam", js.Any.fromFunction1(value))
+    inline def setSetGroupParam(value: /* groupParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setGroupParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroupParamUndefined: Self = StObject.set(x, "setGroupParam", js.undefined)
+    inline def setSetGroupParamUndefined: Self = StObject.set(x, "setGroupParam", js.undefined)
     
-    @scala.inline
-    def setSetLimitParam(value: /* limitParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLimitParam", js.Any.fromFunction1(value))
+    inline def setSetLimitParam(value: /* limitParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLimitParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLimitParamUndefined: Self = StObject.set(x, "setLimitParam", js.undefined)
+    inline def setSetLimitParamUndefined: Self = StObject.set(x, "setLimitParam", js.undefined)
     
-    @scala.inline
-    def setSetNoCache(value: /* noCache */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setNoCache", js.Any.fromFunction1(value))
+    inline def setSetNoCache(value: /* noCache */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setNoCache", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNoCacheUndefined: Self = StObject.set(x, "setNoCache", js.undefined)
+    inline def setSetNoCacheUndefined: Self = StObject.set(x, "setNoCache", js.undefined)
     
-    @scala.inline
-    def setSetPageParam(value: /* pageParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPageParam", js.Any.fromFunction1(value))
+    inline def setSetPageParam(value: /* pageParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPageParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPageParamUndefined: Self = StObject.set(x, "setPageParam", js.undefined)
+    inline def setSetPageParamUndefined: Self = StObject.set(x, "setPageParam", js.undefined)
     
-    @scala.inline
-    def setSetSimpleSortMode(value: /* simpleSortMode */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSimpleSortMode", js.Any.fromFunction1(value))
+    inline def setSetSimpleSortMode(value: /* simpleSortMode */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSimpleSortMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSimpleSortModeUndefined: Self = StObject.set(x, "setSimpleSortMode", js.undefined)
+    inline def setSetSimpleSortModeUndefined: Self = StObject.set(x, "setSimpleSortMode", js.undefined)
     
-    @scala.inline
-    def setSetSortParam(value: /* sortParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSortParam", js.Any.fromFunction1(value))
+    inline def setSetSortParam(value: /* sortParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSortParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSortParamUndefined: Self = StObject.set(x, "setSortParam", js.undefined)
+    inline def setSetSortParamUndefined: Self = StObject.set(x, "setSortParam", js.undefined)
     
-    @scala.inline
-    def setSetStartParam(value: /* startParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStartParam", js.Any.fromFunction1(value))
+    inline def setSetStartParam(value: /* startParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStartParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStartParamUndefined: Self = StObject.set(x, "setStartParam", js.undefined)
+    inline def setSetStartParamUndefined: Self = StObject.set(x, "setStartParam", js.undefined)
     
-    @scala.inline
-    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+    inline def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+    inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
     
-    @scala.inline
-    def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
+    inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
-    @scala.inline
-    def setSimpleSortMode(value: Boolean): Self = StObject.set(x, "simpleSortMode", value.asInstanceOf[js.Any])
+    inline def setSimpleSortMode(value: Boolean): Self = StObject.set(x, "simpleSortMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleSortModeUndefined: Self = StObject.set(x, "simpleSortMode", js.undefined)
+    inline def setSimpleSortModeUndefined: Self = StObject.set(x, "simpleSortMode", js.undefined)
     
-    @scala.inline
-    def setSortParam(value: String): Self = StObject.set(x, "sortParam", value.asInstanceOf[js.Any])
+    inline def setSortParam(value: String): Self = StObject.set(x, "sortParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortParamUndefined: Self = StObject.set(x, "sortParam", js.undefined)
+    inline def setSortParamUndefined: Self = StObject.set(x, "sortParam", js.undefined)
     
-    @scala.inline
-    def setStartParam(value: String): Self = StObject.set(x, "startParam", value.asInstanceOf[js.Any])
+    inline def setStartParam(value: String): Self = StObject.set(x, "startParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartParamUndefined: Self = StObject.set(x, "startParam", js.undefined)
+    inline def setStartParamUndefined: Self = StObject.set(x, "startParam", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

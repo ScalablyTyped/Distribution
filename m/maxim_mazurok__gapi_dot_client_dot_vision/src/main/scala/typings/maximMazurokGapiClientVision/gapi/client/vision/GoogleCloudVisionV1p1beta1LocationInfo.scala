@@ -11,19 +11,15 @@ trait GoogleCloudVisionV1p1beta1LocationInfo extends StObject {
 }
 object GoogleCloudVisionV1p1beta1LocationInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p1beta1LocationInfo = {
+  inline def apply(): GoogleCloudVisionV1p1beta1LocationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1LocationInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p1beta1LocationInfoMutableBuilder[Self <: GoogleCloudVisionV1p1beta1LocationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p1beta1LocationInfo](x: Self) {
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
   }
 }

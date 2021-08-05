@@ -11,13 +11,11 @@ object webpackErrorNotificationStrings {
   sealed trait darwin
     extends StObject
        with _Strategy
-  @scala.inline
-  def darwin: darwin = "darwin".asInstanceOf[darwin]
+  inline def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
   sealed trait linux
     extends StObject
        with _Strategy
-  @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
+  inline def linux: linux = "linux".asInstanceOf[linux]
 }

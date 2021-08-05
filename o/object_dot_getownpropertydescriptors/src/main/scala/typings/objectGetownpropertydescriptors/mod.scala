@@ -14,15 +14,13 @@ object mod {
     * Returns an object containing all own property descriptors of an object
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
-  @scala.inline
-  def apply[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor]]
+  inline def apply[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor]]
   
   @JSImport("object.getownpropertydescriptors", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPolyfill(): ReturnType[
+  inline def getPolyfill(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof getOwnPropertyDescriptors */ js.Any
     ]
@@ -32,11 +30,9 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def implementation[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[PropertyDescriptor]]
+  inline def implementation[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.apply & TopLevel[T] & StringDictionary[PropertyDescriptor]]
   
-  @scala.inline
-  def shim(): ReturnType[
+  inline def shim(): ReturnType[
     js.Function0[
       ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof getPolyfill */ js.Any

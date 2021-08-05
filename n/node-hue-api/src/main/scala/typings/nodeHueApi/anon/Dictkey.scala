@@ -13,16 +13,13 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(lastupdated: String): Dictkey = {
+  inline def apply(lastupdated: String): Dictkey = {
     val __obj = js.Dynamic.literal(lastupdated = lastupdated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setLastupdated(value: String): Self = StObject.set(x, "lastupdated", value.asInstanceOf[js.Any])
+    inline def setLastupdated(value: String): Self = StObject.set(x, "lastupdated", value.asInstanceOf[js.Any])
   }
 }

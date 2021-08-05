@@ -12,19 +12,15 @@ trait LoadNetworkResourceOptions extends StObject {
 }
 object LoadNetworkResourceOptions {
   
-  @scala.inline
-  def apply(disableCache: Boolean, includeCredentials: Boolean): LoadNetworkResourceOptions = {
+  inline def apply(disableCache: Boolean, includeCredentials: Boolean): LoadNetworkResourceOptions = {
     val __obj = js.Dynamic.literal(disableCache = disableCache.asInstanceOf[js.Any], includeCredentials = includeCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadNetworkResourceOptions]
   }
   
-  @scala.inline
-  implicit class LoadNetworkResourceOptionsMutableBuilder[Self <: LoadNetworkResourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadNetworkResourceOptions](x: Self) {
     
-    @scala.inline
-    def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
+    inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCredentials(value: Boolean): Self = StObject.set(x, "includeCredentials", value.asInstanceOf[js.Any])
+    inline def setIncludeCredentials(value: Boolean): Self = StObject.set(x, "includeCredentials", value.asInstanceOf[js.Any])
   }
 }

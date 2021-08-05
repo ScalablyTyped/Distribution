@@ -14,25 +14,19 @@ trait RotateServerCaContext extends StObject {
 }
 object RotateServerCaContext {
   
-  @scala.inline
-  def apply(): RotateServerCaContext = {
+  inline def apply(): RotateServerCaContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotateServerCaContext]
   }
   
-  @scala.inline
-  implicit class RotateServerCaContextMutableBuilder[Self <: RotateServerCaContext] (val x: Self) extends AnyVal {
+  extension [Self <: RotateServerCaContext](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextVersion(value: String): Self = StObject.set(x, "nextVersion", value.asInstanceOf[js.Any])
+    inline def setNextVersion(value: String): Self = StObject.set(x, "nextVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextVersionUndefined: Self = StObject.set(x, "nextVersion", js.undefined)
+    inline def setNextVersionUndefined: Self = StObject.set(x, "nextVersion", js.undefined)
   }
 }

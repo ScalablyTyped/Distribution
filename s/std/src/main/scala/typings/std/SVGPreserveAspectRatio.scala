@@ -41,8 +41,7 @@ trait SVGPreserveAspectRatio extends StObject {
 }
 object SVGPreserveAspectRatio {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SVG_MEETORSLICE_MEET: Double,
     SVG_MEETORSLICE_SLICE: Double,
     SVG_MEETORSLICE_UNKNOWN: Double,
@@ -64,55 +63,38 @@ object SVGPreserveAspectRatio {
     __obj.asInstanceOf[SVGPreserveAspectRatio]
   }
   
-  @scala.inline
-  implicit class SVGPreserveAspectRatioMutableBuilder[Self <: SVGPreserveAspectRatio] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPreserveAspectRatio](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetOrSlice(value: Double): Self = StObject.set(x, "meetOrSlice", value.asInstanceOf[js.Any])
+    inline def setMeetOrSlice(value: Double): Self = StObject.set(x, "meetOrSlice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_MEETORSLICE_MEET(value: Double): Self = StObject.set(x, "SVG_MEETORSLICE_MEET", value.asInstanceOf[js.Any])
+    inline def setSVG_MEETORSLICE_MEET(value: Double): Self = StObject.set(x, "SVG_MEETORSLICE_MEET", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_MEETORSLICE_SLICE(value: Double): Self = StObject.set(x, "SVG_MEETORSLICE_SLICE", value.asInstanceOf[js.Any])
+    inline def setSVG_MEETORSLICE_SLICE(value: Double): Self = StObject.set(x, "SVG_MEETORSLICE_SLICE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_MEETORSLICE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_MEETORSLICE_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setSVG_MEETORSLICE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_MEETORSLICE_UNKNOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_NONE(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_NONE", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_NONE(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_NONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_UNKNOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMAXYMAX(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMAXYMAX", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMAXYMAX(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMAXYMAX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMAXYMID(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMAXYMID", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMAXYMID(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMAXYMID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMAXYMIN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMAXYMIN", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMAXYMIN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMAXYMIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMIDYMAX(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMIDYMAX", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMIDYMAX(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMIDYMAX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMIDYMID(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMIDYMID", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMIDYMID(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMIDYMID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMIDYMIN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMIDYMIN", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMIDYMIN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMIDYMIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMINYMAX(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMINYMAX", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMINYMAX(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMINYMAX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMINYMID(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMINYMID", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMINYMID(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMINYMID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_PRESERVEASPECTRATIO_XMINYMIN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMINYMIN", value.asInstanceOf[js.Any])
+    inline def setSVG_PRESERVEASPECTRATIO_XMINYMIN(value: Double): Self = StObject.set(x, "SVG_PRESERVEASPECTRATIO_XMINYMIN", value.asInstanceOf[js.Any])
   }
 }

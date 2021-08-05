@@ -29,20 +29,16 @@ object roadMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(Response: ResponseConstructor, request: js.Function): Context = {
+    inline def apply(Response: ResponseConstructor, request: js.Function): Context = {
       val __obj = js.Dynamic.literal(Response = Response.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setRequest(value: js.Function): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Function): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: ResponseConstructor): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: ResponseConstructor): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,7 +99,7 @@ object roadMod {
       */
     /* protected */ def _executeRoute(route: ResponseMiddleware): js.Promise[typings.roads.responseMod.default] = js.native
     
-    var _request_chain: js.Array[Middleware] = js.native
+    /* protected */ var _request_chain: js.Array[Middleware] = js.native
     
     /**
       *

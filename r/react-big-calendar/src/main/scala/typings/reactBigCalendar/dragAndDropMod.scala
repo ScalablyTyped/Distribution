@@ -26,8 +26,7 @@ object dragAndDropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TEvent /* <: js.Object */, TResource /* <: js.Object */](calendar: ComponentType[CalendarProps[TEvent, TResource]]): ComponentType[DragAndDropCalendarProps[TEvent, TResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(calendar.asInstanceOf[js.Any]).asInstanceOf[ComponentType[DragAndDropCalendarProps[TEvent, TResource]]]
+  inline def default[TEvent /* <: js.Object */, TResource /* <: js.Object */](calendar: ComponentType[CalendarProps[TEvent, TResource]]): ComponentType[DragAndDropCalendarProps[TEvent, TResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(calendar.asInstanceOf[js.Any]).asInstanceOf[ComponentType[DragAndDropCalendarProps[TEvent, TResource]]]
   
   type DragAndDropCalendar[TEvent /* <: js.Object */, TResource /* <: js.Object */] = Component[DragAndDropCalendarProps[TEvent, TResource], js.Object, js.Any]
   
@@ -56,74 +55,52 @@ object dragAndDropMod {
   }
   object DragAndDropCalendarProps {
     
-    @scala.inline
-    def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](localizer: DateLocalizer): DragAndDropCalendarProps[TEvent, TResource] = {
+    inline def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](localizer: DateLocalizer): DragAndDropCalendarProps[TEvent, TResource] = {
       val __obj = js.Dynamic.literal(localizer = localizer.asInstanceOf[js.Any])
       __obj.asInstanceOf[DragAndDropCalendarProps[TEvent, TResource]]
     }
     
-    @scala.inline
-    implicit class DragAndDropCalendarPropsMutableBuilder[Self <: DragAndDropCalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (DragAndDropCalendarProps[TEvent, TResource])) extends AnyVal {
+    extension [Self <: DragAndDropCalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (DragAndDropCalendarProps[TEvent, TResource])) {
       
-      @scala.inline
-      def setDragFromOutsideItem(value: () => (/* keyof TEvent */ String) | (js.Function1[TEvent, Date])): Self = StObject.set(x, "dragFromOutsideItem", js.Any.fromFunction0(value))
+      inline def setDragFromOutsideItem(value: () => (/* keyof TEvent */ String) | (js.Function1[TEvent, Date])): Self = StObject.set(x, "dragFromOutsideItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDragFromOutsideItemUndefined: Self = StObject.set(x, "dragFromOutsideItem", js.undefined)
+      inline def setDragFromOutsideItemUndefined: Self = StObject.set(x, "dragFromOutsideItem", js.undefined)
       
-      @scala.inline
-      def setDraggableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])): Self = StObject.set(x, "draggableAccessor", value.asInstanceOf[js.Any])
+      inline def setDraggableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])): Self = StObject.set(x, "draggableAccessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableAccessorFunction1(value: TEvent => Boolean): Self = StObject.set(x, "draggableAccessor", js.Any.fromFunction1(value))
+      inline def setDraggableAccessorFunction1(value: TEvent => Boolean): Self = StObject.set(x, "draggableAccessor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDraggableAccessorUndefined: Self = StObject.set(x, "draggableAccessor", js.undefined)
+      inline def setDraggableAccessorUndefined: Self = StObject.set(x, "draggableAccessor", js.undefined)
       
-      @scala.inline
-      def setOnDragOver(value: /* event */ DragEvent[Element] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: /* event */ DragEvent[Element] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+      inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: /* args */ Direction[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* args */ Direction[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDropFromOutside(value: /* args */ AllDayEnd => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
+      inline def setOnDropFromOutside(value: /* args */ AllDayEnd => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDropFromOutsideUndefined: Self = StObject.set(x, "onDropFromOutside", js.undefined)
+      inline def setOnDropFromOutsideUndefined: Self = StObject.set(x, "onDropFromOutside", js.undefined)
       
-      @scala.inline
-      def setOnEventDrop(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
+      inline def setOnEventDrop(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEventDropUndefined: Self = StObject.set(x, "onEventDrop", js.undefined)
+      inline def setOnEventDropUndefined: Self = StObject.set(x, "onEventDrop", js.undefined)
       
-      @scala.inline
-      def setOnEventResize(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
+      inline def setOnEventResize(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEventResizeUndefined: Self = StObject.set(x, "onEventResize", js.undefined)
+      inline def setOnEventResizeUndefined: Self = StObject.set(x, "onEventResize", js.undefined)
       
-      @scala.inline
-      def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])): Self = StObject.set(x, "resizableAccessor", value.asInstanceOf[js.Any])
+      inline def setResizableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])): Self = StObject.set(x, "resizableAccessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableAccessorFunction1(value: TEvent => Boolean): Self = StObject.set(x, "resizableAccessor", js.Any.fromFunction1(value))
+      inline def setResizableAccessorFunction1(value: TEvent => Boolean): Self = StObject.set(x, "resizableAccessor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResizableAccessorUndefined: Self = StObject.set(x, "resizableAccessor", js.undefined)
+      inline def setResizableAccessorUndefined: Self = StObject.set(x, "resizableAccessor", js.undefined)
       
-      @scala.inline
-      def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+      inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     }
   }
   
@@ -159,98 +136,68 @@ object dragAndDropMod {
   }
   object withDragAndDropProps {
     
-    @scala.inline
-    def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](): withDragAndDropProps[TEvent, TResource] = {
+    inline def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](): withDragAndDropProps[TEvent, TResource] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[withDragAndDropProps[TEvent, TResource]]
     }
     
-    @scala.inline
-    implicit class withDragAndDropPropsMutableBuilder[Self <: withDragAndDropProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (withDragAndDropProps[TEvent, TResource])) extends AnyVal {
+    extension [Self <: withDragAndDropProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (withDragAndDropProps[TEvent, TResource])) {
       
-      @scala.inline
-      def setComponents(value: Components_[TEvent, TResource]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Components_[TEvent, TResource]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setDragFromOutsideItem(value: () => (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])): Self = StObject.set(x, "dragFromOutsideItem", js.Any.fromFunction0(value))
+      inline def setDragFromOutsideItem(value: () => (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])): Self = StObject.set(x, "dragFromOutsideItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDragFromOutsideItemUndefined: Self = StObject.set(x, "dragFromOutsideItem", js.undefined)
+      inline def setDragFromOutsideItemUndefined: Self = StObject.set(x, "dragFromOutsideItem", js.undefined)
       
-      @scala.inline
-      def setDraggableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])): Self = StObject.set(x, "draggableAccessor", value.asInstanceOf[js.Any])
+      inline def setDraggableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])): Self = StObject.set(x, "draggableAccessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableAccessorFunction1(value: /* event */ TEvent => Boolean): Self = StObject.set(x, "draggableAccessor", js.Any.fromFunction1(value))
+      inline def setDraggableAccessorFunction1(value: /* event */ TEvent => Boolean): Self = StObject.set(x, "draggableAccessor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDraggableAccessorUndefined: Self = StObject.set(x, "draggableAccessor", js.undefined)
+      inline def setDraggableAccessorUndefined: Self = StObject.set(x, "draggableAccessor", js.undefined)
       
-      @scala.inline
-      def setElementProps(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "elementProps", value.asInstanceOf[js.Any])
+      inline def setElementProps(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "elementProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementPropsUndefined: Self = StObject.set(x, "elementProps", js.undefined)
+      inline def setElementPropsUndefined: Self = StObject.set(x, "elementProps", js.undefined)
       
-      @scala.inline
-      def setOnDragOver(value: /* event */ DragEvent[Element] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: /* event */ DragEvent[Element] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+      inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: /* args */ Direction[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* args */ Direction[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDropFromOutside(value: /* args */ AllDayEnd => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
+      inline def setOnDropFromOutside(value: /* args */ AllDayEnd => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDropFromOutsideUndefined: Self = StObject.set(x, "onDropFromOutside", js.undefined)
+      inline def setOnDropFromOutsideUndefined: Self = StObject.set(x, "onDropFromOutside", js.undefined)
       
-      @scala.inline
-      def setOnEventDrop(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
+      inline def setOnEventDrop(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEventDropUndefined: Self = StObject.set(x, "onEventDrop", js.undefined)
+      inline def setOnEventDropUndefined: Self = StObject.set(x, "onEventDrop", js.undefined)
       
-      @scala.inline
-      def setOnEventResize(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
+      inline def setOnEventResize(value: /* args */ AllDay[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEventResizeUndefined: Self = StObject.set(x, "onEventResize", js.undefined)
+      inline def setOnEventResizeUndefined: Self = StObject.set(x, "onEventResize", js.undefined)
       
-      @scala.inline
-      def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])): Self = StObject.set(x, "resizableAccessor", value.asInstanceOf[js.Any])
+      inline def setResizableAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])): Self = StObject.set(x, "resizableAccessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableAccessorFunction1(value: /* event */ TEvent => Boolean): Self = StObject.set(x, "resizableAccessor", js.Any.fromFunction1(value))
+      inline def setResizableAccessorFunction1(value: /* event */ TEvent => Boolean): Self = StObject.set(x, "resizableAccessor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResizableAccessorUndefined: Self = StObject.set(x, "resizableAccessor", js.undefined)
+      inline def setResizableAccessorUndefined: Self = StObject.set(x, "resizableAccessor", js.undefined)
       
-      @scala.inline
-      def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+      inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      @scala.inline
-      def setSelectable(value: `true` | `false` | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: `true` | `false` | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
 }

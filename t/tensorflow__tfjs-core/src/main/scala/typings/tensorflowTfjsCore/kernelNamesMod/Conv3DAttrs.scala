@@ -20,8 +20,7 @@ trait Conv3DAttrs extends StObject {
 }
 object Conv3DAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataFormat: NDHWC | NCDHW,
     dilations: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid_ | same_,
@@ -31,19 +30,14 @@ object Conv3DAttrs {
     __obj.asInstanceOf[Conv3DAttrs]
   }
   
-  @scala.inline
-  implicit class Conv3DAttrsMutableBuilder[Self <: Conv3DAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: Conv3DAttrs](x: Self) {
     
-    @scala.inline
-    def setDataFormat(value: NDHWC | NCDHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: NDHWC | NCDHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
+    inline def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

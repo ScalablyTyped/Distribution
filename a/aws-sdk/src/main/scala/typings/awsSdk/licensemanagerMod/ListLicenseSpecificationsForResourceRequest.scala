@@ -23,28 +23,21 @@ trait ListLicenseSpecificationsForResourceRequest extends StObject {
 }
 object ListLicenseSpecificationsForResourceRequest {
   
-  @scala.inline
-  def apply(ResourceArn: String): ListLicenseSpecificationsForResourceRequest = {
+  inline def apply(ResourceArn: String): ListLicenseSpecificationsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLicenseSpecificationsForResourceRequest]
   }
   
-  @scala.inline
-  implicit class ListLicenseSpecificationsForResourceRequestMutableBuilder[Self <: ListLicenseSpecificationsForResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLicenseSpecificationsForResourceRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

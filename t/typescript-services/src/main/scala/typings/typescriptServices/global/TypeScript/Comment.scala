@@ -18,7 +18,7 @@ class Comment protected ()
   /* CompleteClass */
   var _start: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _trivia: js.Any = js.native
   
   /* CompleteClass */

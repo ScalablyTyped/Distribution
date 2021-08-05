@@ -52,8 +52,7 @@ trait ButtonGroupPropssearchPan extends StObject {
 }
 object ButtonGroupPropssearchPan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     btnGroup: ReactElement,
     clearBtn: ReactElement,
     deleteBtn: ReactElement,
@@ -67,31 +66,22 @@ object ButtonGroupPropssearchPan {
     __obj.asInstanceOf[ButtonGroupPropssearchPan]
   }
   
-  @scala.inline
-  implicit class ButtonGroupPropssearchPanMutableBuilder[Self <: ButtonGroupPropssearchPan] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonGroupPropssearchPan](x: Self) {
     
-    @scala.inline
-    def setBtnGroup(value: ReactElement): Self = StObject.set(x, "btnGroup", value.asInstanceOf[js.Any])
+    inline def setBtnGroup(value: ReactElement): Self = StObject.set(x, "btnGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearBtn(value: ReactElement): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
+    inline def setClearBtn(value: ReactElement): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteBtn(value: ReactElement): Self = StObject.set(x, "deleteBtn", value.asInstanceOf[js.Any])
+    inline def setDeleteBtn(value: ReactElement): Self = StObject.set(x, "deleteBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportCSVBtn(value: ReactElement): Self = StObject.set(x, "exportCSVBtn", value.asInstanceOf[js.Any])
+    inline def setExportCSVBtn(value: ReactElement): Self = StObject.set(x, "exportCSVBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBtn(value: ReactElement): Self = StObject.set(x, "insertBtn", value.asInstanceOf[js.Any])
+    inline def setInsertBtn(value: ReactElement): Self = StObject.set(x, "insertBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchField(value: ReactElement): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
+    inline def setSearchField(value: ReactElement): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPanel(value: ReactElement): Self = StObject.set(x, "searchPanel", value.asInstanceOf[js.Any])
+    inline def setSearchPanel(value: ReactElement): Self = StObject.set(x, "searchPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSelectedOnlyBtn(value: ReactElement): Self = StObject.set(x, "showSelectedOnlyBtn", value.asInstanceOf[js.Any])
+    inline def setShowSelectedOnlyBtn(value: ReactElement): Self = StObject.set(x, "showSelectedOnlyBtn", value.asInstanceOf[js.Any])
   }
 }

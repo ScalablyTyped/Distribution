@@ -19,50 +19,42 @@ object createGrantExceptionsUnionMod {
   trait CreateGrantExceptionsUnion extends StObject
   object CreateGrantExceptionsUnion {
     
-    @scala.inline
-    def DependencyTimeoutException(): typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
+    inline def DependencyTimeoutException(): typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
       val __obj = js.Dynamic.literal(name = "DependencyTimeoutException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException]
     }
     
-    @scala.inline
-    def DisabledException(): typings.awsSdkClientKmsNode.typesDisabledExceptionMod.DisabledException = {
+    inline def DisabledException(): typings.awsSdkClientKmsNode.typesDisabledExceptionMod.DisabledException = {
       val __obj = js.Dynamic.literal(name = "DisabledException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesDisabledExceptionMod.DisabledException]
     }
     
-    @scala.inline
-    def InvalidArnException(): typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException = {
+    inline def InvalidArnException(): typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException = {
       val __obj = js.Dynamic.literal(name = "InvalidArnException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException]
     }
     
-    @scala.inline
-    def InvalidGrantTokenException(): typings.awsSdkClientKmsNode.typesInvalidGrantTokenExceptionMod.InvalidGrantTokenException = {
+    inline def InvalidGrantTokenException(): typings.awsSdkClientKmsNode.typesInvalidGrantTokenExceptionMod.InvalidGrantTokenException = {
       val __obj = js.Dynamic.literal(name = "InvalidGrantTokenException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesInvalidGrantTokenExceptionMod.InvalidGrantTokenException]
     }
     
-    @scala.inline
-    def KMSInternalException(): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
+    inline def KMSInternalException(): typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
       val __obj = js.Dynamic.literal(name = "KMSInternalException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException]
     }
     
-    @scala.inline
-    def KMSInvalidStateException(): typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException = {
+    inline def KMSInvalidStateException(): typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException = {
       val __obj = js.Dynamic.literal(name = "KMSInvalidStateException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException]
     }
     
-    @scala.inline
-    def LimitExceededException(): typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException = {
+    inline def LimitExceededException(): typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException = {
       val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesLimitExceededExceptionMod.LimitExceededException]
     }
     
-    @scala.inline
-    def NotFoundException(): typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException = {
+    inline def NotFoundException(): typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException = {
       val __obj = js.Dynamic.literal(name = "NotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException]
     }

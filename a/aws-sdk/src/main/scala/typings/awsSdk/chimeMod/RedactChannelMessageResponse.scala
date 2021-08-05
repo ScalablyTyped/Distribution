@@ -18,25 +18,19 @@ trait RedactChannelMessageResponse extends StObject {
 }
 object RedactChannelMessageResponse {
   
-  @scala.inline
-  def apply(): RedactChannelMessageResponse = {
+  inline def apply(): RedactChannelMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RedactChannelMessageResponse]
   }
   
-  @scala.inline
-  implicit class RedactChannelMessageResponseMutableBuilder[Self <: RedactChannelMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RedactChannelMessageResponse](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
   }
 }

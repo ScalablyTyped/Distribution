@@ -68,85 +68,59 @@ trait ReplicationTaskAssessmentRun extends StObject {
 }
 object ReplicationTaskAssessmentRun {
   
-  @scala.inline
-  def apply(): ReplicationTaskAssessmentRun = {
+  inline def apply(): ReplicationTaskAssessmentRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationTaskAssessmentRun]
   }
   
-  @scala.inline
-  implicit class ReplicationTaskAssessmentRunMutableBuilder[Self <: ReplicationTaskAssessmentRun] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationTaskAssessmentRun](x: Self) {
     
-    @scala.inline
-    def setAssessmentProgress(value: ReplicationTaskAssessmentRunProgress): Self = StObject.set(x, "AssessmentProgress", value.asInstanceOf[js.Any])
+    inline def setAssessmentProgress(value: ReplicationTaskAssessmentRunProgress): Self = StObject.set(x, "AssessmentProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentProgressUndefined: Self = StObject.set(x, "AssessmentProgress", js.undefined)
+    inline def setAssessmentProgressUndefined: Self = StObject.set(x, "AssessmentProgress", js.undefined)
     
-    @scala.inline
-    def setAssessmentRunName(value: String): Self = StObject.set(x, "AssessmentRunName", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunName(value: String): Self = StObject.set(x, "AssessmentRunName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunNameUndefined: Self = StObject.set(x, "AssessmentRunName", js.undefined)
+    inline def setAssessmentRunNameUndefined: Self = StObject.set(x, "AssessmentRunName", js.undefined)
     
-    @scala.inline
-    def setLastFailureMessage(value: String): Self = StObject.set(x, "LastFailureMessage", value.asInstanceOf[js.Any])
+    inline def setLastFailureMessage(value: String): Self = StObject.set(x, "LastFailureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
+    inline def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
+    inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskAssessmentRunArn(value: String): Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskAssessmentRunArn(value: String): Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskAssessmentRunArnUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", js.undefined)
+    inline def setReplicationTaskAssessmentRunArnUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskAssessmentRunCreationDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskAssessmentRunCreationDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskAssessmentRunCreationDateUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", js.undefined)
+    inline def setReplicationTaskAssessmentRunCreationDateUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", js.undefined)
     
-    @scala.inline
-    def setResultEncryptionMode(value: String): Self = StObject.set(x, "ResultEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setResultEncryptionMode(value: String): Self = StObject.set(x, "ResultEncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultEncryptionModeUndefined: Self = StObject.set(x, "ResultEncryptionMode", js.undefined)
+    inline def setResultEncryptionModeUndefined: Self = StObject.set(x, "ResultEncryptionMode", js.undefined)
     
-    @scala.inline
-    def setResultKmsKeyArn(value: String): Self = StObject.set(x, "ResultKmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setResultKmsKeyArn(value: String): Self = StObject.set(x, "ResultKmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultKmsKeyArnUndefined: Self = StObject.set(x, "ResultKmsKeyArn", js.undefined)
+    inline def setResultKmsKeyArnUndefined: Self = StObject.set(x, "ResultKmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setResultLocationBucket(value: String): Self = StObject.set(x, "ResultLocationBucket", value.asInstanceOf[js.Any])
+    inline def setResultLocationBucket(value: String): Self = StObject.set(x, "ResultLocationBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultLocationBucketUndefined: Self = StObject.set(x, "ResultLocationBucket", js.undefined)
+    inline def setResultLocationBucketUndefined: Self = StObject.set(x, "ResultLocationBucket", js.undefined)
     
-    @scala.inline
-    def setResultLocationFolder(value: String): Self = StObject.set(x, "ResultLocationFolder", value.asInstanceOf[js.Any])
+    inline def setResultLocationFolder(value: String): Self = StObject.set(x, "ResultLocationFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultLocationFolderUndefined: Self = StObject.set(x, "ResultLocationFolder", js.undefined)
+    inline def setResultLocationFolderUndefined: Self = StObject.set(x, "ResultLocationFolder", js.undefined)
     
-    @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
+    inline def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

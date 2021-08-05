@@ -24,22 +24,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Toast {
   
-  @scala.inline
-  def apply(dismiss: () => Unit, panning: Boolean, timeRemaining: Double): Toast = {
+  inline def apply(dismiss: () => Unit, panning: Boolean, timeRemaining: Double): Toast = {
     val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), panning = panning.asInstanceOf[js.Any], timeRemaining = timeRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[Toast]
   }
   
-  @scala.inline
-  implicit class ToastMutableBuilder[Self <: Toast] (val x: Self) extends AnyVal {
+  extension [Self <: Toast](x: Self) {
     
-    @scala.inline
-    def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
+    inline def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPanning(value: Boolean): Self = StObject.set(x, "panning", value.asInstanceOf[js.Any])
+    inline def setPanning(value: Boolean): Self = StObject.set(x, "panning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRemaining(value: Double): Self = StObject.set(x, "timeRemaining", value.asInstanceOf[js.Any])
+    inline def setTimeRemaining(value: Double): Self = StObject.set(x, "timeRemaining", value.asInstanceOf[js.Any])
   }
 }

@@ -57,17 +57,14 @@ object argsTableArgsTableMod {
   }
   object ArgsTableErrorProps {
     
-    @scala.inline
-    def apply(error: ArgsTableError): ArgsTableErrorProps = {
+    inline def apply(error: ArgsTableError): ArgsTableErrorProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgsTableErrorProps]
     }
     
-    @scala.inline
-    implicit class ArgsTableErrorPropsMutableBuilder[Self <: ArgsTableErrorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArgsTableErrorProps](x: Self) {
       
-      @scala.inline
-      def setError(value: ArgsTableError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ArgsTableError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,14 +75,12 @@ object argsTableArgsTableMod {
   trait ArgsTableProps extends StObject
   object ArgsTableProps {
     
-    @scala.inline
-    def ArgsTableErrorProps(error: ArgsTableError): typings.storybookComponents.argsTableArgsTableMod.ArgsTableErrorProps = {
+    inline def ArgsTableErrorProps(error: ArgsTableError): typings.storybookComponents.argsTableArgsTableMod.ArgsTableErrorProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookComponents.argsTableArgsTableMod.ArgsTableErrorProps]
     }
     
-    @scala.inline
-    def ArgsTableRowProps(rows: ArgTypes): typings.storybookComponents.argsTableArgsTableMod.ArgsTableRowProps = {
+    inline def ArgsTableRowProps(rows: ArgTypes): typings.storybookComponents.argsTableArgsTableMod.ArgsTableRowProps = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookComponents.argsTableArgsTableMod.ArgsTableRowProps]
     }
@@ -111,53 +106,38 @@ object argsTableArgsTableMod {
   }
   object ArgsTableRowProps {
     
-    @scala.inline
-    def apply(rows: ArgTypes): ArgsTableRowProps = {
+    inline def apply(rows: ArgTypes): ArgsTableRowProps = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgsTableRowProps]
     }
     
-    @scala.inline
-    implicit class ArgsTableRowPropsMutableBuilder[Self <: ArgsTableRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArgsTableRowProps](x: Self) {
       
-      @scala.inline
-      def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setInAddonPanel(value: Boolean): Self = StObject.set(x, "inAddonPanel", value.asInstanceOf[js.Any])
+      inline def setInAddonPanel(value: Boolean): Self = StObject.set(x, "inAddonPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInAddonPanelUndefined: Self = StObject.set(x, "inAddonPanel", js.undefined)
+      inline def setInAddonPanelUndefined: Self = StObject.set(x, "inAddonPanel", js.undefined)
       
-      @scala.inline
-      def setInitialExpandedArgs(value: Boolean): Self = StObject.set(x, "initialExpandedArgs", value.asInstanceOf[js.Any])
+      inline def setInitialExpandedArgs(value: Boolean): Self = StObject.set(x, "initialExpandedArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialExpandedArgsUndefined: Self = StObject.set(x, "initialExpandedArgs", js.undefined)
+      inline def setInitialExpandedArgsUndefined: Self = StObject.set(x, "initialExpandedArgs", js.undefined)
       
-      @scala.inline
-      def setResetArgs(value: /* argNames */ js.UndefOr[js.Array[String]] => Unit): Self = StObject.set(x, "resetArgs", js.Any.fromFunction1(value))
+      inline def setResetArgs(value: /* argNames */ js.UndefOr[js.Array[String]] => Unit): Self = StObject.set(x, "resetArgs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResetArgsUndefined: Self = StObject.set(x, "resetArgs", js.undefined)
+      inline def setResetArgsUndefined: Self = StObject.set(x, "resetArgs", js.undefined)
       
-      @scala.inline
-      def setRows(value: ArgTypes): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: ArgTypes): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateArgs(value: /* args */ Args => Unit): Self = StObject.set(x, "updateArgs", js.Any.fromFunction1(value))
+      inline def setUpdateArgs(value: /* args */ Args => Unit): Self = StObject.set(x, "updateArgs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateArgsUndefined: Self = StObject.set(x, "updateArgs", js.undefined)
+      inline def setUpdateArgsUndefined: Self = StObject.set(x, "updateArgs", js.undefined)
     }
   }
 }

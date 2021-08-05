@@ -28,43 +28,31 @@ trait UpdateThingGroupsForThingRequest extends StObject {
 }
 object UpdateThingGroupsForThingRequest {
   
-  @scala.inline
-  def apply(): UpdateThingGroupsForThingRequest = {
+  inline def apply(): UpdateThingGroupsForThingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateThingGroupsForThingRequest]
   }
   
-  @scala.inline
-  implicit class UpdateThingGroupsForThingRequestMutableBuilder[Self <: UpdateThingGroupsForThingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateThingGroupsForThingRequest](x: Self) {
     
-    @scala.inline
-    def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = StObject.set(x, "overrideDynamicGroups", value.asInstanceOf[js.Any])
+    inline def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = StObject.set(x, "overrideDynamicGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideDynamicGroupsUndefined: Self = StObject.set(x, "overrideDynamicGroups", js.undefined)
+    inline def setOverrideDynamicGroupsUndefined: Self = StObject.set(x, "overrideDynamicGroups", js.undefined)
     
-    @scala.inline
-    def setThingGroupsToAdd(value: ThingGroupList): Self = StObject.set(x, "thingGroupsToAdd", value.asInstanceOf[js.Any])
+    inline def setThingGroupsToAdd(value: ThingGroupList): Self = StObject.set(x, "thingGroupsToAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupsToAddUndefined: Self = StObject.set(x, "thingGroupsToAdd", js.undefined)
+    inline def setThingGroupsToAddUndefined: Self = StObject.set(x, "thingGroupsToAdd", js.undefined)
     
-    @scala.inline
-    def setThingGroupsToAddVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToAdd", js.Array(value :_*))
+    inline def setThingGroupsToAddVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToAdd", js.Array(value :_*))
     
-    @scala.inline
-    def setThingGroupsToRemove(value: ThingGroupList): Self = StObject.set(x, "thingGroupsToRemove", value.asInstanceOf[js.Any])
+    inline def setThingGroupsToRemove(value: ThingGroupList): Self = StObject.set(x, "thingGroupsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupsToRemoveUndefined: Self = StObject.set(x, "thingGroupsToRemove", js.undefined)
+    inline def setThingGroupsToRemoveUndefined: Self = StObject.set(x, "thingGroupsToRemove", js.undefined)
     
-    @scala.inline
-    def setThingGroupsToRemoveVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToRemove", js.Array(value :_*))
+    inline def setThingGroupsToRemoveVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToRemove", js.Array(value :_*))
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

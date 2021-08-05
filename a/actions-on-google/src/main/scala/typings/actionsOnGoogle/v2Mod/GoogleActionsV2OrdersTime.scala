@@ -19,25 +19,19 @@ trait GoogleActionsV2OrdersTime extends StObject {
 }
 object GoogleActionsV2OrdersTime {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersTime = {
+  inline def apply(): GoogleActionsV2OrdersTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersTime]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersTimeMutableBuilder[Self <: GoogleActionsV2OrdersTime] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersTime](x: Self) {
     
-    @scala.inline
-    def setTimeIso8601(value: String): Self = StObject.set(x, "timeIso8601", value.asInstanceOf[js.Any])
+    inline def setTimeIso8601(value: String): Self = StObject.set(x, "timeIso8601", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeIso8601Undefined: Self = StObject.set(x, "timeIso8601", js.undefined)
+    inline def setTimeIso8601Undefined: Self = StObject.set(x, "timeIso8601", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsV2OrdersTimeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsV2OrdersTimeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

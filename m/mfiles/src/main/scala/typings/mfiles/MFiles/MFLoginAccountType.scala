@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFLoginAccountType extends StObject
 object MFLoginAccountType {
   
-  @scala.inline
-  def MFiles: `1` = 1.asInstanceOf[`1`]
+  inline def MFiles: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Windows: `2` = 2.asInstanceOf[`2`]
+  inline def Windows: `2` = 2.asInstanceOf[`2`]
 }

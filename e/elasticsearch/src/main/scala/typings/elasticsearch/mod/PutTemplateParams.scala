@@ -12,16 +12,13 @@ trait PutTemplateParams
 }
 object PutTemplateParams {
   
-  @scala.inline
-  def apply(id: String): PutTemplateParams = {
+  inline def apply(id: String): PutTemplateParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutTemplateParams]
   }
   
-  @scala.inline
-  implicit class PutTemplateParamsMutableBuilder[Self <: PutTemplateParams] (val x: Self) extends AnyVal {
+  extension [Self <: PutTemplateParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

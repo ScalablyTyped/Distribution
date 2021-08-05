@@ -18,32 +18,25 @@ trait IStaticViewConfig extends StObject {
 }
 object IStaticViewConfig {
   
-  @scala.inline
-  def apply(template: String | HTMLTemplateElement): IStaticViewConfig = {
+  inline def apply(template: String | HTMLTemplateElement): IStaticViewConfig = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStaticViewConfig]
   }
   
-  @scala.inline
-  implicit class IStaticViewConfigMutableBuilder[Self <: IStaticViewConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IStaticViewConfig](x: Self) {
     
-    @scala.inline
-    def setDependencies(
+    inline def setDependencies(
       value: js.Array[js.Function] | (js.Function0[
           js.Array[js.Function | (js.Promise[js.Function | (Record[String, js.Function])])]
         ])
     ): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependenciesFunction0(value: () => js.Array[js.Function | (js.Promise[js.Function | (Record[String, js.Function])])]): Self = StObject.set(x, "dependencies", js.Any.fromFunction0(value))
+    inline def setDependenciesFunction0(value: () => js.Array[js.Function | (js.Promise[js.Function | (Record[String, js.Function])])]): Self = StObject.set(x, "dependencies", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    @scala.inline
-    def setDependenciesVarargs(value: js.Function*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: js.Function*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: String | HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

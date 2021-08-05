@@ -169,15 +169,11 @@ object mod {
     def this(props: Multiple, context: js.Any) = this()
   }
   
-  @scala.inline
-  def dataTransferItemsHaveFiles(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")().asInstanceOf[Boolean]
-  @scala.inline
-  def dataTransferItemsHaveFiles(items: js.Array[DataTransferItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def dataTransferItemsHaveFiles(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")().asInstanceOf[Boolean]
+  inline def dataTransferItemsHaveFiles(items: js.Array[DataTransferItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def dataTransferItemsToFiles(): js.Promise[js.Array[FileLike]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsToFiles")().asInstanceOf[js.Promise[js.Array[FileLike]]]
-  @scala.inline
-  def dataTransferItemsToFiles(items: js.Array[DataTransferItem]): js.Promise[js.Array[FileLike]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsToFiles")(items.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileLike]]]
+  inline def dataTransferItemsToFiles(): js.Promise[js.Array[FileLike]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsToFiles")().asInstanceOf[js.Promise[js.Array[FileLike]]]
+  inline def dataTransferItemsToFiles(items: js.Array[DataTransferItem]): js.Promise[js.Array[FileLike]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsToFiles")(items.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileLike]]]
   
   type FileLike = Blob | File
   
@@ -189,17 +185,14 @@ object mod {
   }
   object FileUpload {
     
-    @scala.inline
-    def apply(file: File, id: String, state: UploadState): FileUpload = {
+    inline def apply(file: File, id: String, state: UploadState): FileUpload = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileUpload]
     }
     
-    @scala.inline
-    implicit class FileUploadMutableBuilder[Self <: FileUpload] (val x: Self) extends AnyVal {
+    extension [Self <: FileUpload](x: Self) {
       
-      @scala.inline
-      def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,23 +206,18 @@ object mod {
   }
   object ImageUpload {
     
-    @scala.inline
-    def apply(file: Blob | File, id: String, state: UploadState): ImageUpload = {
+    inline def apply(file: Blob | File, id: String, state: UploadState): ImageUpload = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageUpload]
     }
     
-    @scala.inline
-    implicit class ImageUploadMutableBuilder[Self <: ImageUpload] (val x: Self) extends AnyVal {
+    extension [Self <: ImageUpload](x: Self) {
       
-      @scala.inline
-      def setFile(value: Blob | File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Blob | File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUri(value: String): Self = StObject.set(x, "previewUri", value.asInstanceOf[js.Any])
+      inline def setPreviewUri(value: String): Self = StObject.set(x, "previewUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUriUndefined: Self = StObject.set(x, "previewUri", js.undefined)
+      inline def setPreviewUriUndefined: Self = StObject.set(x, "previewUri", js.undefined)
     }
   }
   
@@ -243,26 +231,20 @@ object mod {
   }
   object UploadInfo {
     
-    @scala.inline
-    def apply(id: String, state: UploadState): UploadInfo = {
+    inline def apply(id: String, state: UploadState): UploadInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadInfo]
     }
     
-    @scala.inline
-    implicit class UploadInfoMutableBuilder[Self <: UploadInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UploadInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: UploadState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: UploadState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -274,13 +256,10 @@ object mod {
   trait UploadState extends StObject
   object UploadState {
     
-    @scala.inline
-    def failed: typings.reactFileUtils.reactFileUtilsStrings.failed = "failed".asInstanceOf[typings.reactFileUtils.reactFileUtilsStrings.failed]
+    inline def failed: typings.reactFileUtils.reactFileUtilsStrings.failed = "failed".asInstanceOf[typings.reactFileUtils.reactFileUtilsStrings.failed]
     
-    @scala.inline
-    def finished: typings.reactFileUtils.reactFileUtilsStrings.finished = "finished".asInstanceOf[typings.reactFileUtils.reactFileUtilsStrings.finished]
+    inline def finished: typings.reactFileUtils.reactFileUtilsStrings.finished = "finished".asInstanceOf[typings.reactFileUtils.reactFileUtilsStrings.finished]
     
-    @scala.inline
-    def uploading: typings.reactFileUtils.reactFileUtilsStrings.uploading = "uploading".asInstanceOf[typings.reactFileUtils.reactFileUtilsStrings.uploading]
+    inline def uploading: typings.reactFileUtils.reactFileUtilsStrings.uploading = "uploading".asInstanceOf[typings.reactFileUtils.reactFileUtilsStrings.uploading]
   }
 }

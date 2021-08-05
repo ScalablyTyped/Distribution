@@ -18,19 +18,15 @@ trait AssociateLexBotRequest extends StObject {
 }
 object AssociateLexBotRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, LexBot: LexBot): AssociateLexBotRequest = {
+  inline def apply(InstanceId: InstanceId, LexBot: LexBot): AssociateLexBotRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], LexBot = LexBot.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateLexBotRequest]
   }
   
-  @scala.inline
-  implicit class AssociateLexBotRequestMutableBuilder[Self <: AssociateLexBotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateLexBotRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexBot(value: LexBot): Self = StObject.set(x, "LexBot", value.asInstanceOf[js.Any])
+    inline def setLexBot(value: LexBot): Self = StObject.set(x, "LexBot", value.asInstanceOf[js.Any])
   }
 }

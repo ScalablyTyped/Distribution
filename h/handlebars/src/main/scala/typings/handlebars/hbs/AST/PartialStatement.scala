@@ -23,8 +23,7 @@ trait PartialStatement
 }
 object PartialStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hash: Hash,
     indent: String,
     loc: SourceLocation,
@@ -37,28 +36,20 @@ object PartialStatement {
     __obj.asInstanceOf[PartialStatement]
   }
   
-  @scala.inline
-  implicit class PartialStatementMutableBuilder[Self <: PartialStatement] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStatement](x: Self) {
     
-    @scala.inline
-    def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: PathExpression | SubExpression): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: PathExpression | SubExpression): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+    inline def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.PartialStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.PartialStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

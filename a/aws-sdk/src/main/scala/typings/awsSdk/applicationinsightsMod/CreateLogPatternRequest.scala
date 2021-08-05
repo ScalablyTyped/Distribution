@@ -33,8 +33,7 @@ trait CreateLogPatternRequest extends StObject {
 }
 object CreateLogPatternRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Pattern: LogPatternRegex,
     PatternName: LogPatternName,
     PatternSetName: LogPatternSetName,
@@ -45,22 +44,16 @@ object CreateLogPatternRequest {
     __obj.asInstanceOf[CreateLogPatternRequest]
   }
   
-  @scala.inline
-  implicit class CreateLogPatternRequestMutableBuilder[Self <: CreateLogPatternRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLogPatternRequest](x: Self) {
     
-    @scala.inline
-    def setPattern(value: LogPatternRegex): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: LogPatternRegex): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
+    inline def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
+    inline def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: LogPatternRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: LogPatternRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

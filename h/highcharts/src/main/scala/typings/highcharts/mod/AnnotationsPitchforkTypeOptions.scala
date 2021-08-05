@@ -37,52 +37,37 @@ trait AnnotationsPitchforkTypeOptions extends StObject {
 }
 object AnnotationsPitchforkTypeOptions {
   
-  @scala.inline
-  def apply(): AnnotationsPitchforkTypeOptions = {
+  inline def apply(): AnnotationsPitchforkTypeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsPitchforkTypeOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsPitchforkTypeOptionsMutableBuilder[Self <: AnnotationsPitchforkTypeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsPitchforkTypeOptions](x: Self) {
     
-    @scala.inline
-    def setInnerBackground(value: AnnotationsPitchforkTypeInnerBackgroundOptions): Self = StObject.set(x, "innerBackground", value.asInstanceOf[js.Any])
+    inline def setInnerBackground(value: AnnotationsPitchforkTypeInnerBackgroundOptions): Self = StObject.set(x, "innerBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerBackgroundUndefined: Self = StObject.set(x, "innerBackground", js.undefined)
+    inline def setInnerBackgroundUndefined: Self = StObject.set(x, "innerBackground", js.undefined)
     
-    @scala.inline
-    def setLine(value: AnnotationsPitchforkTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: AnnotationsPitchforkTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setOuterBackground(value: AnnotationsPitchforkTypeOuterBackgroundOptions): Self = StObject.set(x, "outerBackground", value.asInstanceOf[js.Any])
+    inline def setOuterBackground(value: AnnotationsPitchforkTypeOuterBackgroundOptions): Self = StObject.set(x, "outerBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterBackgroundUndefined: Self = StObject.set(x, "outerBackground", js.undefined)
+    inline def setOuterBackgroundUndefined: Self = StObject.set(x, "outerBackground", js.undefined)
     
-    @scala.inline
-    def setPoints(value: js.Array[AnnotationsPitchforkTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[AnnotationsPitchforkTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: AnnotationsPitchforkTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: AnnotationsPitchforkTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    @scala.inline
-    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

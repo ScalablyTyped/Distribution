@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CameraRollAssetType extends StObject
 object CameraRollAssetType {
   
-  @scala.inline
-  def All: typings.reactNative.reactNativeStrings.All = "All".asInstanceOf[typings.reactNative.reactNativeStrings.All]
+  inline def All: typings.reactNative.reactNativeStrings.All = "All".asInstanceOf[typings.reactNative.reactNativeStrings.All]
   
-  @scala.inline
-  def Photos: typings.reactNative.reactNativeStrings.Photos = "Photos".asInstanceOf[typings.reactNative.reactNativeStrings.Photos]
+  inline def Photos: typings.reactNative.reactNativeStrings.Photos = "Photos".asInstanceOf[typings.reactNative.reactNativeStrings.Photos]
   
-  @scala.inline
-  def Videos: typings.reactNative.reactNativeStrings.Videos = "Videos".asInstanceOf[typings.reactNative.reactNativeStrings.Videos]
+  inline def Videos: typings.reactNative.reactNativeStrings.Videos = "Videos".asInstanceOf[typings.reactNative.reactNativeStrings.Videos]
 }

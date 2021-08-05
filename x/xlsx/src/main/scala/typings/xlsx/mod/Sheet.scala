@@ -27,31 +27,23 @@ trait Sheet
 }
 object Sheet {
   
-  @scala.inline
-  def apply(): Sheet = {
+  inline def apply(): Sheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sheet]
   }
   
-  @scala.inline
-  implicit class SheetMutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
+  extension [Self <: Sheet](x: Self) {
     
-    @scala.inline
-    def setExclamationmarkmargins(value: MarginInfo): Self = StObject.set(x, "!margins", value.asInstanceOf[js.Any])
+    inline def setExclamationmarkmargins(value: MarginInfo): Self = StObject.set(x, "!margins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclamationmarkmarginsUndefined: Self = StObject.set(x, "!margins", js.undefined)
+    inline def setExclamationmarkmarginsUndefined: Self = StObject.set(x, "!margins", js.undefined)
     
-    @scala.inline
-    def setExclamationmarkref(value: String): Self = StObject.set(x, "!ref", value.asInstanceOf[js.Any])
+    inline def setExclamationmarkref(value: String): Self = StObject.set(x, "!ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclamationmarkrefUndefined: Self = StObject.set(x, "!ref", js.undefined)
+    inline def setExclamationmarkrefUndefined: Self = StObject.set(x, "!ref", js.undefined)
     
-    @scala.inline
-    def setExclamationmarktype(value: SheetType): Self = StObject.set(x, "!type", value.asInstanceOf[js.Any])
+    inline def setExclamationmarktype(value: SheetType): Self = StObject.set(x, "!type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclamationmarktypeUndefined: Self = StObject.set(x, "!type", js.undefined)
+    inline def setExclamationmarktypeUndefined: Self = StObject.set(x, "!type", js.undefined)
   }
 }

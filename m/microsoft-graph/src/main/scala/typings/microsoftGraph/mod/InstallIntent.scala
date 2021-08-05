@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstallIntent extends StObject
 object InstallIntent {
   
-  @scala.inline
-  def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
+  inline def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
   
-  @scala.inline
-  def availableWithoutEnrollment: typings.microsoftGraph.microsoftGraphStrings.availableWithoutEnrollment = "availableWithoutEnrollment".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.availableWithoutEnrollment]
+  inline def availableWithoutEnrollment: typings.microsoftGraph.microsoftGraphStrings.availableWithoutEnrollment = "availableWithoutEnrollment".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.availableWithoutEnrollment]
   
-  @scala.inline
-  def required: typings.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.required]
+  inline def required: typings.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.required]
   
-  @scala.inline
-  def uninstall: typings.microsoftGraph.microsoftGraphStrings.uninstall = "uninstall".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.uninstall]
+  inline def uninstall: typings.microsoftGraph.microsoftGraphStrings.uninstall = "uninstall".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.uninstall]
 }

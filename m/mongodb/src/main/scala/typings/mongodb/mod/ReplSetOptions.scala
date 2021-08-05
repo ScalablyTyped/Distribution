@@ -30,43 +30,31 @@ trait ReplSetOptions
 }
 object ReplSetOptions {
   
-  @scala.inline
-  def apply(): ReplSetOptions = {
+  inline def apply(): ReplSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplSetOptions]
   }
   
-  @scala.inline
-  implicit class ReplSetOptionsMutableBuilder[Self <: ReplSetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReplSetOptions](x: Self) {
     
-    @scala.inline
-    def setConnectWithNoPrimary(value: Boolean): Self = StObject.set(x, "connectWithNoPrimary", value.asInstanceOf[js.Any])
+    inline def setConnectWithNoPrimary(value: Boolean): Self = StObject.set(x, "connectWithNoPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectWithNoPrimaryUndefined: Self = StObject.set(x, "connectWithNoPrimary", js.undefined)
+    inline def setConnectWithNoPrimaryUndefined: Self = StObject.set(x, "connectWithNoPrimary", js.undefined)
     
-    @scala.inline
-    def setMaxStalenessSeconds(value: scala.Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxStalenessSeconds(value: scala.Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
+    inline def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
     
-    @scala.inline
-    def setReplicaSet(value: String): Self = StObject.set(x, "replicaSet", value.asInstanceOf[js.Any])
+    inline def setReplicaSet(value: String): Self = StObject.set(x, "replicaSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaSetUndefined: Self = StObject.set(x, "replicaSet", js.undefined)
+    inline def setReplicaSetUndefined: Self = StObject.set(x, "replicaSet", js.undefined)
     
-    @scala.inline
-    def setSecondaryAcceptableLatencyMS(value: scala.Double): Self = StObject.set(x, "secondaryAcceptableLatencyMS", value.asInstanceOf[js.Any])
+    inline def setSecondaryAcceptableLatencyMS(value: scala.Double): Self = StObject.set(x, "secondaryAcceptableLatencyMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryAcceptableLatencyMSUndefined: Self = StObject.set(x, "secondaryAcceptableLatencyMS", js.undefined)
+    inline def setSecondaryAcceptableLatencyMSUndefined: Self = StObject.set(x, "secondaryAcceptableLatencyMS", js.undefined)
     
-    @scala.inline
-    def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
+    inline def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
+    inline def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
   }
 }

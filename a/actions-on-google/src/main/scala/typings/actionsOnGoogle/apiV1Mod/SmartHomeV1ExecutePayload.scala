@@ -14,31 +14,23 @@ trait SmartHomeV1ExecutePayload extends StObject {
 }
 object SmartHomeV1ExecutePayload {
   
-  @scala.inline
-  def apply(commands: js.Array[SmartHomeV1ExecuteResponseCommands]): SmartHomeV1ExecutePayload = {
+  inline def apply(commands: js.Array[SmartHomeV1ExecuteResponseCommands]): SmartHomeV1ExecutePayload = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ExecutePayload]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1ExecutePayloadMutableBuilder[Self <: SmartHomeV1ExecutePayload] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1ExecutePayload](x: Self) {
     
-    @scala.inline
-    def setCommands(value: js.Array[SmartHomeV1ExecuteResponseCommands]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[SmartHomeV1ExecuteResponseCommands]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsVarargs(value: SmartHomeV1ExecuteResponseCommands*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: SmartHomeV1ExecuteResponseCommands*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
-    @scala.inline
-    def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
+    inline def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
+    inline def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: SmartHomeV1ExecuteErrors): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: SmartHomeV1ExecuteErrors): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
   }
 }

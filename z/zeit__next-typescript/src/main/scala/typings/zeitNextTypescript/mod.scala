@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(/** @default {} */
+  inline def apply(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringDictionary[js.Any]]
+  inline def apply(/** @default {} */
   nextConfig: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(nextConfig.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
   @JSImport("@zeit/next-typescript", JSImport.Namespace)

@@ -10,16 +10,13 @@ trait StrokeString extends StObject {
 }
 object StrokeString {
   
-  @scala.inline
-  def apply(stroke: String): StrokeString = {
+  inline def apply(stroke: String): StrokeString = {
     val __obj = js.Dynamic.literal(stroke = stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrokeString]
   }
   
-  @scala.inline
-  implicit class StrokeStringMutableBuilder[Self <: StrokeString] (val x: Self) extends AnyVal {
+  extension [Self <: StrokeString](x: Self) {
     
-    @scala.inline
-    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
   }
 }

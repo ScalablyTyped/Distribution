@@ -20,8 +20,7 @@ trait Corner extends StObject {
 }
 object Corner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     corner: Boolean,
     dot: Boolean,
     overflowCount: Double,
@@ -32,22 +31,16 @@ object Corner {
     __obj.asInstanceOf[Corner]
   }
   
-  @scala.inline
-  implicit class CornerMutableBuilder[Self <: Corner] (val x: Self) extends AnyVal {
+  extension [Self <: Corner](x: Self) {
     
-    @scala.inline
-    def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
+    inline def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+    inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowCount(value: Double): Self = StObject.set(x, "overflowCount", value.asInstanceOf[js.Any])
+    inline def setOverflowCount(value: Double): Self = StObject.set(x, "overflowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

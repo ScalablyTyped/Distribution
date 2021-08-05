@@ -42,8 +42,7 @@ object optionsMod {
   }
   object IDateFormatterOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abbrDayNames: js.Array[String],
       abbrMonthNames: js.Array[String],
       am: String,
@@ -65,71 +64,49 @@ object optionsMod {
       __obj.asInstanceOf[IDateFormatterOptions]
     }
     
-    @scala.inline
-    implicit class IDateFormatterOptionsMutableBuilder[Self <: IDateFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDateFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setAbbrDayNames(value: js.Array[String]): Self = StObject.set(x, "abbrDayNames", value.asInstanceOf[js.Any])
+      inline def setAbbrDayNames(value: js.Array[String]): Self = StObject.set(x, "abbrDayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbbrDayNamesVarargs(value: String*): Self = StObject.set(x, "abbrDayNames", js.Array(value :_*))
+      inline def setAbbrDayNamesVarargs(value: String*): Self = StObject.set(x, "abbrDayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setAbbrMonthNames(value: js.Array[String]): Self = StObject.set(x, "abbrMonthNames", value.asInstanceOf[js.Any])
+      inline def setAbbrMonthNames(value: js.Array[String]): Self = StObject.set(x, "abbrMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbbrMonthNamesVarargs(value: String*): Self = StObject.set(x, "abbrMonthNames", js.Array(value :_*))
+      inline def setAbbrMonthNamesVarargs(value: String*): Self = StObject.set(x, "abbrMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
+      inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
+      inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setDs(value: String): Self = StObject.set(x, "ds", value.asInstanceOf[js.Any])
+      inline def setDs(value: String): Self = StObject.set(x, "ds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenMonthNames(value: js.Array[String]): Self = StObject.set(x, "genMonthNames", value.asInstanceOf[js.Any])
+      inline def setGenMonthNames(value: js.Array[String]): Self = StObject.set(x, "genMonthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenMonthNamesVarargs(value: String*): Self = StObject.set(x, "genMonthNames", js.Array(value :_*))
+      inline def setGenMonthNamesVarargs(value: String*): Self = StObject.set(x, "genMonthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setLongDate(value: String): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
+      inline def setLongDate(value: String): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongTime(value: String): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
+      inline def setLongTime(value: String): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthDay(value: String): Self = StObject.set(x, "monthDay", value.asInstanceOf[js.Any])
+      inline def setMonthDay(value: String): Self = StObject.set(x, "monthDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
+      inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
+      inline def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDate(value: String): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
+      inline def setShortDate(value: String): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortTime(value: String): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
+      inline def setShortTime(value: String): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTs(value: String): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+      inline def setTs(value: String): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "twoDigitYearMax", value.asInstanceOf[js.Any])
+      inline def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "twoDigitYearMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearMonth(value: String): Self = StObject.set(x, "yearMonth", value.asInstanceOf[js.Any])
+      inline def setYearMonth(value: String): Self = StObject.set(x, "yearMonth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,8 +116,7 @@ object optionsMod {
        with INumberFormatterOptions
   object IFormattersOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abbrDayNames: js.Array[String],
       abbrMonthNames: js.Array[String],
       am: String,
@@ -215,8 +191,7 @@ object optionsMod {
   }
   object INumberFormatterOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currDecimalPoint: String,
       currGroupSeparator: String,
       currGroups: js.Array[Double],
@@ -238,62 +213,43 @@ object optionsMod {
       __obj.asInstanceOf[INumberFormatterOptions]
     }
     
-    @scala.inline
-    implicit class INumberFormatterOptionsMutableBuilder[Self <: INumberFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: INumberFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setCurrDecimalPoint(value: String): Self = StObject.set(x, "currDecimalPoint", value.asInstanceOf[js.Any])
+      inline def setCurrDecimalPoint(value: String): Self = StObject.set(x, "currDecimalPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrGroupSeparator(value: String): Self = StObject.set(x, "currGroupSeparator", value.asInstanceOf[js.Any])
+      inline def setCurrGroupSeparator(value: String): Self = StObject.set(x, "currGroupSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrGroups(value: js.Array[Double]): Self = StObject.set(x, "currGroups", value.asInstanceOf[js.Any])
+      inline def setCurrGroups(value: js.Array[Double]): Self = StObject.set(x, "currGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrGroupsVarargs(value: Double*): Self = StObject.set(x, "currGroups", js.Array(value :_*))
+      inline def setCurrGroupsVarargs(value: Double*): Self = StObject.set(x, "currGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrNegPattern(value: Double): Self = StObject.set(x, "currNegPattern", value.asInstanceOf[js.Any])
+      inline def setCurrNegPattern(value: Double): Self = StObject.set(x, "currNegPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrPosPattern(value: Double): Self = StObject.set(x, "currPosPattern", value.asInstanceOf[js.Any])
+      inline def setCurrPosPattern(value: Double): Self = StObject.set(x, "currPosPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrPrec(value: Double): Self = StObject.set(x, "currPrec", value.asInstanceOf[js.Any])
+      inline def setCurrPrec(value: Double): Self = StObject.set(x, "currPrec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumDecimalPoint(value: String): Self = StObject.set(x, "numDecimalPoint", value.asInstanceOf[js.Any])
+      inline def setNumDecimalPoint(value: String): Self = StObject.set(x, "numDecimalPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumGroupSeparator(value: String): Self = StObject.set(x, "numGroupSeparator", value.asInstanceOf[js.Any])
+      inline def setNumGroupSeparator(value: String): Self = StObject.set(x, "numGroupSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumGroups(value: js.Array[Double]): Self = StObject.set(x, "numGroups", value.asInstanceOf[js.Any])
+      inline def setNumGroups(value: js.Array[Double]): Self = StObject.set(x, "numGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumGroupsVarargs(value: Double*): Self = StObject.set(x, "numGroups", js.Array(value :_*))
+      inline def setNumGroupsVarargs(value: Double*): Self = StObject.set(x, "numGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setNumNan(value: String): Self = StObject.set(x, "numNan", value.asInstanceOf[js.Any])
+      inline def setNumNan(value: String): Self = StObject.set(x, "numNan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumNegInf(value: String): Self = StObject.set(x, "numNegInf", value.asInstanceOf[js.Any])
+      inline def setNumNegInf(value: String): Self = StObject.set(x, "numNegInf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumNegPattern(value: Double): Self = StObject.set(x, "numNegPattern", value.asInstanceOf[js.Any])
+      inline def setNumNegPattern(value: Double): Self = StObject.set(x, "numNegPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumPosInf(value: String): Self = StObject.set(x, "numPosInf", value.asInstanceOf[js.Any])
+      inline def setNumPosInf(value: String): Self = StObject.set(x, "numPosInf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumPrec(value: Double): Self = StObject.set(x, "numPrec", value.asInstanceOf[js.Any])
+      inline def setNumPrec(value: Double): Self = StObject.set(x, "numPrec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentPattern(value: Double): Self = StObject.set(x, "percentPattern", value.asInstanceOf[js.Any])
+      inline def setPercentPattern(value: Double): Self = StObject.set(x, "percentPattern", value.asInstanceOf[js.Any])
     }
   }
 }

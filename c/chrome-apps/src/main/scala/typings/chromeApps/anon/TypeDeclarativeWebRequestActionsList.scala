@@ -12,17 +12,14 @@ trait TypeDeclarativeWebRequestActionsList extends StObject {
 }
 object TypeDeclarativeWebRequestActionsList {
   
-  @scala.inline
-  def apply(`type`: DeclarativeWebRequestActionsList): TypeDeclarativeWebRequestActionsList = {
+  inline def apply(`type`: DeclarativeWebRequestActionsList): TypeDeclarativeWebRequestActionsList = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDeclarativeWebRequestActionsList]
   }
   
-  @scala.inline
-  implicit class TypeDeclarativeWebRequestActionsListMutableBuilder[Self <: TypeDeclarativeWebRequestActionsList] (val x: Self) extends AnyVal {
+  extension [Self <: TypeDeclarativeWebRequestActionsList](x: Self) {
     
-    @scala.inline
-    def setType(value: DeclarativeWebRequestActionsList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclarativeWebRequestActionsList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait ComplexType
 }
 object ComplexType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addProperty: DataProperty => ComplexType,
     complexProperties: js.Array[DataProperty],
     dataProperties: js.Array[DataProperty],
@@ -30,13 +29,10 @@ object ComplexType {
     __obj.asInstanceOf[ComplexType]
   }
   
-  @scala.inline
-  implicit class ComplexTypeMutableBuilder[Self <: ComplexType] (val x: Self) extends AnyVal {
+  extension [Self <: ComplexType](x: Self) {
     
-    @scala.inline
-    def setAddProperty(value: DataProperty => ComplexType): Self = StObject.set(x, "addProperty", js.Any.fromFunction1(value))
+    inline def setAddProperty(value: DataProperty => ComplexType): Self = StObject.set(x, "addProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProperties(value: () => js.Array[DataProperty]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => js.Array[DataProperty]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
   }
 }

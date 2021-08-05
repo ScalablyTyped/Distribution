@@ -27,10 +27,8 @@ object mod {
       * @param options - Some options to configure the sorter
       * @return the new sorted array
       */
-    @scala.inline
-    def apply[T](items: js.Array[T], value: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-    @scala.inline
-    def apply[T](items: js.Array[T], value: String, options: Options[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def apply[T](items: js.Array[T], value: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def apply[T](items: js.Array[T], value: String, options: Options[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
     @JSImport("match-sorter", "matchSorter")
     @js.native
@@ -86,35 +84,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](): Options[T] = {
+    inline def apply[T](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setKeepDiacritics(value: Boolean): Self = StObject.set(x, "keepDiacritics", value.asInstanceOf[js.Any])
+      inline def setKeepDiacritics(value: Boolean): Self = StObject.set(x, "keepDiacritics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepDiacriticsUndefined: Self = StObject.set(x, "keepDiacritics", js.undefined)
+      inline def setKeepDiacriticsUndefined: Self = StObject.set(x, "keepDiacritics", js.undefined)
       
-      @scala.inline
-      def setKeys(value: js.Array[KeyOptions[T] | ExtendedKeyOptions[T]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[KeyOptions[T] | ExtendedKeyOptions[T]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setKeysVarargs(value: (KeyOptions[T] | ExtendedKeyOptions[T])*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: (KeyOptions[T] | ExtendedKeyOptions[T])*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

@@ -18,43 +18,31 @@ trait FinskyOfferType extends StObject {
 }
 object FinskyOfferType {
   
-  @scala.inline
-  def apply(): FinskyOfferType = {
+  inline def apply(): FinskyOfferType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinskyOfferType]
   }
   
-  @scala.inline
-  implicit class FinskyOfferTypeMutableBuilder[Self <: FinskyOfferType] (val x: Self) extends AnyVal {
+  extension [Self <: FinskyOfferType](x: Self) {
     
-    @scala.inline
-    def setFinskyOfferType(value: Double): Self = StObject.set(x, "finskyOfferType", value.asInstanceOf[js.Any])
+    inline def setFinskyOfferType(value: Double): Self = StObject.set(x, "finskyOfferType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinskyOfferTypeUndefined: Self = StObject.set(x, "finskyOfferType", js.undefined)
+    inline def setFinskyOfferTypeUndefined: Self = StObject.set(x, "finskyOfferType", js.undefined)
     
-    @scala.inline
-    def setGiftable(value: Boolean): Self = StObject.set(x, "giftable", value.asInstanceOf[js.Any])
+    inline def setGiftable(value: Boolean): Self = StObject.set(x, "giftable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGiftableUndefined: Self = StObject.set(x, "giftable", js.undefined)
+    inline def setGiftableUndefined: Self = StObject.set(x, "giftable", js.undefined)
     
-    @scala.inline
-    def setListPrice(value: AmountInMicros): Self = StObject.set(x, "listPrice", value.asInstanceOf[js.Any])
+    inline def setListPrice(value: AmountInMicros): Self = StObject.set(x, "listPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPriceUndefined: Self = StObject.set(x, "listPrice", js.undefined)
+    inline def setListPriceUndefined: Self = StObject.set(x, "listPrice", js.undefined)
     
-    @scala.inline
-    def setRentalDuration(value: Unit): Self = StObject.set(x, "rentalDuration", value.asInstanceOf[js.Any])
+    inline def setRentalDuration(value: Unit): Self = StObject.set(x, "rentalDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRentalDurationUndefined: Self = StObject.set(x, "rentalDuration", js.undefined)
+    inline def setRentalDurationUndefined: Self = StObject.set(x, "rentalDuration", js.undefined)
     
-    @scala.inline
-    def setRetailPrice(value: AmountInMicros): Self = StObject.set(x, "retailPrice", value.asInstanceOf[js.Any])
+    inline def setRetailPrice(value: AmountInMicros): Self = StObject.set(x, "retailPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetailPriceUndefined: Self = StObject.set(x, "retailPrice", js.undefined)
+    inline def setRetailPriceUndefined: Self = StObject.set(x, "retailPrice", js.undefined)
   }
 }

@@ -11,8 +11,7 @@ trait AngularGenerateOptions
      with /* key */ StringDictionary[js.Any]
 object AngularGenerateOptions {
   
-  @scala.inline
-  def apply(name: String, `type`: String): AngularGenerateOptions = {
+  inline def apply(name: String, `type`: String): AngularGenerateOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularGenerateOptions]

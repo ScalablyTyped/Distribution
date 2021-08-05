@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uPartsPer extends StObject
 object uPartsPer {
   
-  @scala.inline
-  def ppb: typings.convertUnits.convertUnitsStrings.ppb = "ppb".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppb]
+  inline def ppb: typings.convertUnits.convertUnitsStrings.ppb = "ppb".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppb]
   
-  @scala.inline
-  def ppm: typings.convertUnits.convertUnitsStrings.ppm = "ppm".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppm]
+  inline def ppm: typings.convertUnits.convertUnitsStrings.ppm = "ppm".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppm]
   
-  @scala.inline
-  def ppq: typings.convertUnits.convertUnitsStrings.ppq = "ppq".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppq]
+  inline def ppq: typings.convertUnits.convertUnitsStrings.ppq = "ppq".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppq]
   
-  @scala.inline
-  def ppt: typings.convertUnits.convertUnitsStrings.ppt = "ppt".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppt]
+  inline def ppt: typings.convertUnits.convertUnitsStrings.ppt = "ppt".asInstanceOf[typings.convertUnits.convertUnitsStrings.ppt]
 }

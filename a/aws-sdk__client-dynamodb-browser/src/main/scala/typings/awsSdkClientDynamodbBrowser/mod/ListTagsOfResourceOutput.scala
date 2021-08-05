@@ -10,8 +10,7 @@ trait ListTagsOfResourceOutput
      with typings.awsSdkClientDynamodbBrowser.typesListTagsOfResourceOutputMod.ListTagsOfResourceOutput
 object ListTagsOfResourceOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListTagsOfResourceOutput = {
+  inline def apply($metadata: ResponseMetadata): ListTagsOfResourceOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsOfResourceOutput]
   }

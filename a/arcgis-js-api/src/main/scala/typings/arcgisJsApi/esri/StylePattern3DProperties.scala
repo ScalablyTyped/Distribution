@@ -33,27 +33,21 @@ trait StylePattern3DProperties extends StObject {
 }
 object StylePattern3DProperties {
   
-  @scala.inline
-  def apply(): StylePattern3DProperties = {
+  inline def apply(): StylePattern3DProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StylePattern3DProperties]
   }
   
-  @scala.inline
-  implicit class StylePattern3DPropertiesMutableBuilder[Self <: StylePattern3DProperties] (val x: Self) extends AnyVal {
+  extension [Self <: StylePattern3DProperties](x: Self) {
     
-    @scala.inline
-    def setStyle(
+    inline def setStyle(
       value: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: style): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: style): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

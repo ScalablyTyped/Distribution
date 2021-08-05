@@ -13,19 +13,15 @@ trait EnableTransitGatewayRouteTablePropagationResult extends StObject {
 }
 object EnableTransitGatewayRouteTablePropagationResult {
   
-  @scala.inline
-  def apply(): EnableTransitGatewayRouteTablePropagationResult = {
+  inline def apply(): EnableTransitGatewayRouteTablePropagationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableTransitGatewayRouteTablePropagationResult]
   }
   
-  @scala.inline
-  implicit class EnableTransitGatewayRouteTablePropagationResultMutableBuilder[Self <: EnableTransitGatewayRouteTablePropagationResult] (val x: Self) extends AnyVal {
+  extension [Self <: EnableTransitGatewayRouteTablePropagationResult](x: Self) {
     
-    @scala.inline
-    def setPropagation(value: TransitGatewayPropagation): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
+    inline def setPropagation(value: TransitGatewayPropagation): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropagationUndefined: Self = StObject.set(x, "Propagation", js.undefined)
+    inline def setPropagationUndefined: Self = StObject.set(x, "Propagation", js.undefined)
   }
 }

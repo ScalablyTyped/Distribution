@@ -13,22 +13,17 @@ trait TerminateInstancesResult extends StObject {
 }
 object TerminateInstancesResult {
   
-  @scala.inline
-  def apply(): TerminateInstancesResult = {
+  inline def apply(): TerminateInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminateInstancesResult]
   }
   
-  @scala.inline
-  implicit class TerminateInstancesResultMutableBuilder[Self <: TerminateInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateInstancesResult](x: Self) {
     
-    @scala.inline
-    def setTerminatingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "TerminatingInstances", value.asInstanceOf[js.Any])
+    inline def setTerminatingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "TerminatingInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminatingInstancesUndefined: Self = StObject.set(x, "TerminatingInstances", js.undefined)
+    inline def setTerminatingInstancesUndefined: Self = StObject.set(x, "TerminatingInstances", js.undefined)
     
-    @scala.inline
-    def setTerminatingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "TerminatingInstances", js.Array(value :_*))
+    inline def setTerminatingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "TerminatingInstances", js.Array(value :_*))
   }
 }

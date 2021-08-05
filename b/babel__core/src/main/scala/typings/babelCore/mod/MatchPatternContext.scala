@@ -14,25 +14,19 @@ trait MatchPatternContext extends StObject {
 }
 object MatchPatternContext {
   
-  @scala.inline
-  def apply(dirname: String, envName: String): MatchPatternContext = {
+  inline def apply(dirname: String, envName: String): MatchPatternContext = {
     val __obj = js.Dynamic.literal(dirname = dirname.asInstanceOf[js.Any], envName = envName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchPatternContext]
   }
   
-  @scala.inline
-  implicit class MatchPatternContextMutableBuilder[Self <: MatchPatternContext] (val x: Self) extends AnyVal {
+  extension [Self <: MatchPatternContext](x: Self) {
     
-    @scala.inline
-    def setCaller(value: TransformCaller): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+    inline def setCaller(value: TransformCaller): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+    inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
-    @scala.inline
-    def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+    inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvName(value: String): Self = StObject.set(x, "envName", value.asInstanceOf[js.Any])
+    inline def setEnvName(value: String): Self = StObject.set(x, "envName", value.asInstanceOf[js.Any])
   }
 }

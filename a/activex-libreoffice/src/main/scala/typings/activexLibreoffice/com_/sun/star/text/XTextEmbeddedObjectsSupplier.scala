@@ -20,8 +20,7 @@ trait XTextEmbeddedObjectsSupplier
 }
 object XTextEmbeddedObjectsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EmbeddedObjects: XNameAccess,
     acquire: () => Unit,
     getEmbeddedObjects: () => XNameAccess,
@@ -32,13 +31,10 @@ object XTextEmbeddedObjectsSupplier {
     __obj.asInstanceOf[XTextEmbeddedObjectsSupplier]
   }
   
-  @scala.inline
-  implicit class XTextEmbeddedObjectsSupplierMutableBuilder[Self <: XTextEmbeddedObjectsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextEmbeddedObjectsSupplier](x: Self) {
     
-    @scala.inline
-    def setEmbeddedObjects(value: XNameAccess): Self = StObject.set(x, "EmbeddedObjects", value.asInstanceOf[js.Any])
+    inline def setEmbeddedObjects(value: XNameAccess): Self = StObject.set(x, "EmbeddedObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEmbeddedObjects(value: () => XNameAccess): Self = StObject.set(x, "getEmbeddedObjects", js.Any.fromFunction0(value))
+    inline def setGetEmbeddedObjects(value: () => XNameAccess): Self = StObject.set(x, "getEmbeddedObjects", js.Any.fromFunction0(value))
   }
 }

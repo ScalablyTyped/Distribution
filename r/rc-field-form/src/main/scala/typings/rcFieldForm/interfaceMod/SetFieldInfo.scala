@@ -15,20 +15,16 @@ trait SetFieldInfo
 }
 object SetFieldInfo {
   
-  @scala.inline
-  def apply(data: FieldData): SetFieldInfo = {
+  inline def apply(data: FieldData): SetFieldInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("setField")
     __obj.asInstanceOf[SetFieldInfo]
   }
   
-  @scala.inline
-  implicit class SetFieldInfoMutableBuilder[Self <: SetFieldInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SetFieldInfo](x: Self) {
     
-    @scala.inline
-    def setData(value: FieldData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: FieldData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: setField): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: setField): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

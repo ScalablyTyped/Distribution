@@ -20,28 +20,21 @@ trait UsersListFollowingForUserEndpoint extends StObject {
 }
 object UsersListFollowingForUserEndpoint {
   
-  @scala.inline
-  def apply(username: String): UsersListFollowingForUserEndpoint = {
+  inline def apply(username: String): UsersListFollowingForUserEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersListFollowingForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersListFollowingForUserEndpointMutableBuilder[Self <: UsersListFollowingForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersListFollowingForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

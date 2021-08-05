@@ -25,8 +25,7 @@ object mod {
   @js.native
   val default: RefForm = js.native
   
-  @scala.inline
-  def Field[Values](hasNameRestProps: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(hasNameRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Field[Values](hasNameRestProps: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(hasNameRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-field-form", "FormProvider")
   @js.native
@@ -36,10 +35,8 @@ object mod {
   @js.native
   val List: FunctionComponent[ListProps] = js.native
   
-  @scala.inline
-  def useForm[Values](): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")().asInstanceOf[js.Array[FormInstance[Values]]]
-  @scala.inline
-  def useForm[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")(form.asInstanceOf[js.Any]).asInstanceOf[js.Array[FormInstance[Values]]]
+  inline def useForm[Values](): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")().asInstanceOf[js.Array[FormInstance[Values]]]
+  inline def useForm[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")(form.asInstanceOf[js.Any]).asInstanceOf[js.Array[FormInstance[Values]]]
   
   @js.native
   trait InternalForm extends StObject {

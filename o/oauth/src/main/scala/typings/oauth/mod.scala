@@ -104,17 +104,17 @@ object mod {
     
     var NONCE_CHARS: js.Array[String] = js.native
     
-    var _accessUrl: String = js.native
+    /* protected */ var _accessUrl: String = js.native
     
-    var _authorize_callback: String = js.native
+    /* protected */ var _authorize_callback: String = js.native
     
     /* protected */ def _buildAuthorizationHeaders(orderedParameters: js.Array[js.Array[String]]): String = js.native
     
-    var _clientOptions: AccessTokenHttpMethod = js.native
+    /* protected */ var _clientOptions: AccessTokenHttpMethod = js.native
     
-    var _consumerKey: String = js.native
+    /* protected */ var _consumerKey: String = js.native
     
-    var _consumerSecret: String = js.native
+    /* protected */ var _consumerSecret: String = js.native
     
     /* protected */ def _createClient(
       port: js.UndefOr[Double | String],
@@ -139,21 +139,21 @@ object mod {
     
     /* protected */ def _getTimestamp(): Double | String = js.native
     
-    var _headers: OutgoingHttpHeaders = js.native
+    /* protected */ var _headers: OutgoingHttpHeaders = js.native
     
-    var _isEcho: Boolean = js.native
+    /* protected */ var _isEcho: Boolean = js.native
     
     /* protected */ def _isParameterNameAnOAuthParameter(parameter: String): Boolean = js.native
     
     /* protected */ def _makeArrayOfArgumentsHash(argumentHash: StringDictionary[String | js.Array[String]]): js.Array[js.Array[String]] = js.native
     
-    var _nonceSize: Double = js.native
+    /* protected */ var _nonceSize: Double = js.native
     
     /* protected */ def _normaliseRequestParams(args: js.Array[js.Array[String]]): String = js.native
     
     /* protected */ def _normalizeUrl(url: String): String = js.native
     
-    var _oauthParameterSeperator: String = js.native
+    /* protected */ var _oauthParameterSeperator: String = js.native
     
     /* protected */ def _performSecureRequest(oauth_token: String, oauth_token_secret: String, method: String, url: String): ClientRequest = js.native
     /* protected */ def _performSecureRequest(oauth_token: String, oauth_token_secret: String, method: String, url: String, extra_params: js.Any): ClientRequest = js.native
@@ -295,7 +295,7 @@ object mod {
     /* protected */ def _prepareParameters(oauth_token: String, oauth_token_secret: String, method: String, url: String): js.Array[js.Array[String]] = js.native
     /* protected */ def _prepareParameters(oauth_token: String, oauth_token_secret: String, method: String, url: String, extra_params: js.Any): js.Array[js.Array[String]] = js.native
     
-    var _protectedKey: String = js.native
+    /* protected */ var _protectedKey: String = js.native
     
     /* protected */ def _putOrPost(method: String, url: String, oauth_token: String, oauth_token_secret: String): ClientRequest = js.native
     /* protected */ def _putOrPost(method: String, url: String, oauth_token: String, oauth_token_secret: String, post_body: js.Any): ClientRequest = js.native
@@ -352,17 +352,17 @@ object mod {
       callback: dataCallback
     ): ClientRequest = js.native
     
-    var _realm: String = js.native
+    /* protected */ var _realm: String = js.native
     
-    var _requestUrl: String = js.native
+    /* protected */ var _requestUrl: String = js.native
     
-    var _signatureMethod: String = js.native
+    /* protected */ var _signatureMethod: String = js.native
     
     /* protected */ def _sortRequestParams(argument_pairs: js.Array[js.Array[String]]): js.Array[js.Array[String]] = js.native
     
-    var _verifyCredentials: String = js.native
+    /* protected */ var _verifyCredentials: String = js.native
     
-    var _version: String = js.native
+    /* protected */ var _version: String = js.native
     
     def authHeader(url: String, oauth_token: String, oauth_token_secret: String): String = js.native
     def authHeader(url: String, oauth_token: String, oauth_token_secret: String, method: String): String = js.native
@@ -546,25 +546,25 @@ object mod {
       customHeaders: OutgoingHttpHeaders
     ) = this()
     
-    var _accessTokenName: String = js.native
+    /* protected */ var _accessTokenName: String = js.native
     
-    var _accessTokenUrl: String = js.native
+    /* protected */ var _accessTokenUrl: String = js.native
     
-    var _agent: Agent | Boolean = js.native
+    /* protected */ var _agent: Agent | Boolean = js.native
     
-    var _authMethod: String = js.native
+    /* protected */ var _authMethod: String = js.native
     
-    var _authorizeUrl: String = js.native
+    /* protected */ var _authorizeUrl: String = js.native
     
-    var _baseSite: String = js.native
+    /* protected */ var _baseSite: String = js.native
     
     /* protected */ def _chooseHttpLibrary(parsedUrl: UrlWithStringQuery): String = js.native
     
-    var _clientId: String = js.native
+    /* protected */ var _clientId: String = js.native
     
-    var _clientSecret: String = js.native
+    /* protected */ var _clientSecret: String = js.native
     
-    var _customHeaders: OutgoingHttpHeaders = js.native
+    /* protected */ var _customHeaders: OutgoingHttpHeaders = js.native
     
     /* protected */ def _executeRequest(http_library: String, options: RequestOptions, callback: dataCallback): Unit = js.native
     /* protected */ def _executeRequest(http_library: String, options: RequestOptions, post_body: js.Any, callback: dataCallback): Unit = js.native
@@ -604,7 +604,7 @@ object mod {
       callback: dataCallback
     ): Unit = js.native
     
-    var _useAuthorizationHeaderForGET: Boolean = js.native
+    /* protected */ var _useAuthorizationHeaderForGET: Boolean = js.native
     
     def buildAuthHeader(token: String): String = js.native
     

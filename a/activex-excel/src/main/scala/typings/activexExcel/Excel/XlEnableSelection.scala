@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlEnableSelection extends StObject
 object XlEnableSelection {
   
-  @scala.inline
-  def xlNoRestrictions: `0` = 0.asInstanceOf[`0`]
+  inline def xlNoRestrictions: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlNoSelection: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlNoSelection: `-4142` = -4142.asInstanceOf[`-4142`]
   
-  @scala.inline
-  def xlUnlockedCells: `1` = 1.asInstanceOf[`1`]
+  inline def xlUnlockedCells: `1` = 1.asInstanceOf[`1`]
 }

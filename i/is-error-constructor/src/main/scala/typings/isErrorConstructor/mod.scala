@@ -24,8 +24,7 @@ object mod {
   	//=> true
   	```
   	*/
-  @scala.inline
-  def apply(value: js.Any): /* is std.ErrorConstructor */ Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.ErrorConstructor */ Boolean]
+  inline def apply(value: js.Any): /* is std.ErrorConstructor */ Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.ErrorConstructor */ Boolean]
   
   @JSImport("is-error-constructor", JSImport.Namespace)
   @js.native
@@ -57,8 +56,6 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function isErrorConstructor(value: unknown): value is ErrorConstructor;
   // export = isErrorConstructor;
-  @scala.inline
-  def default(value: js.Any): /* is std.ErrorConstructor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.ErrorConstructor */ Boolean]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(value: js.Any): /* is std.ErrorConstructor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.ErrorConstructor */ Boolean]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

@@ -27,8 +27,7 @@ trait MeshCreateFromGLTFParams
 }
 object MeshCreateFromGLTFParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -37,19 +36,14 @@ object MeshCreateFromGLTFParams {
     __obj.asInstanceOf[MeshCreateFromGLTFParams]
   }
   
-  @scala.inline
-  implicit class MeshCreateFromGLTFParamsMutableBuilder[Self <: MeshCreateFromGLTFParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshCreateFromGLTFParams](x: Self) {
     
-    @scala.inline
-    def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

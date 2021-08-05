@@ -23,25 +23,19 @@ trait NutritionOrderOralDietTexture
 }
 object NutritionOrderOralDietTexture {
   
-  @scala.inline
-  def apply(): NutritionOrderOralDietTexture = {
+  inline def apply(): NutritionOrderOralDietTexture = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NutritionOrderOralDietTexture]
   }
   
-  @scala.inline
-  implicit class NutritionOrderOralDietTextureMutableBuilder[Self <: NutritionOrderOralDietTexture] (val x: Self) extends AnyVal {
+  extension [Self <: NutritionOrderOralDietTexture](x: Self) {
     
-    @scala.inline
-    def setFoodType(value: CodeableConcept): Self = StObject.set(x, "foodType", value.asInstanceOf[js.Any])
+    inline def setFoodType(value: CodeableConcept): Self = StObject.set(x, "foodType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoodTypeUndefined: Self = StObject.set(x, "foodType", js.undefined)
+    inline def setFoodTypeUndefined: Self = StObject.set(x, "foodType", js.undefined)
     
-    @scala.inline
-    def setModifier(value: CodeableConcept): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: CodeableConcept): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
   }
 }

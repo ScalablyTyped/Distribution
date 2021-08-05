@@ -17,26 +17,20 @@ object anon {
   }
   object Page {
     
-    @scala.inline
-    def apply(page: js.Any, parent: Element): Page = {
+    inline def apply(page: js.Any, parent: Element): Page = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Page]
     }
     
-    @scala.inline
-    implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+    extension [Self <: Page](x: Self) {
       
-      @scala.inline
-      def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParent(value: Element): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Element): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
   }
 }

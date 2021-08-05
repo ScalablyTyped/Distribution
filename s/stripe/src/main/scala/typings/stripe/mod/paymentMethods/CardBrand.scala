@@ -22,27 +22,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CardBrand extends StObject
 object CardBrand {
   
-  @scala.inline
-  def amex: typings.stripe.stripeStrings.amex = "amex".asInstanceOf[typings.stripe.stripeStrings.amex]
+  inline def amex: typings.stripe.stripeStrings.amex = "amex".asInstanceOf[typings.stripe.stripeStrings.amex]
   
-  @scala.inline
-  def diners: typings.stripe.stripeStrings.diners = "diners".asInstanceOf[typings.stripe.stripeStrings.diners]
+  inline def diners: typings.stripe.stripeStrings.diners = "diners".asInstanceOf[typings.stripe.stripeStrings.diners]
   
-  @scala.inline
-  def discover: discover_ = "discover".asInstanceOf[discover_]
+  inline def discover: discover_ = "discover".asInstanceOf[discover_]
   
-  @scala.inline
-  def jcb: jcb_ = "jcb".asInstanceOf[jcb_]
+  inline def jcb: jcb_ = "jcb".asInstanceOf[jcb_]
   
-  @scala.inline
-  def mastercard: mastercard_ = "mastercard".asInstanceOf[mastercard_]
+  inline def mastercard: mastercard_ = "mastercard".asInstanceOf[mastercard_]
   
-  @scala.inline
-  def unionpay: typings.stripe.stripeStrings.unionpay = "unionpay".asInstanceOf[typings.stripe.stripeStrings.unionpay]
+  inline def unionpay: typings.stripe.stripeStrings.unionpay = "unionpay".asInstanceOf[typings.stripe.stripeStrings.unionpay]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def visa: visa_ = "visa".asInstanceOf[visa_]
+  inline def visa: visa_ = "visa".asInstanceOf[visa_]
 }

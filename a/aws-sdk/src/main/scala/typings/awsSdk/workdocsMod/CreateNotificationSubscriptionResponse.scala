@@ -13,19 +13,15 @@ trait CreateNotificationSubscriptionResponse extends StObject {
 }
 object CreateNotificationSubscriptionResponse {
   
-  @scala.inline
-  def apply(): CreateNotificationSubscriptionResponse = {
+  inline def apply(): CreateNotificationSubscriptionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNotificationSubscriptionResponse]
   }
   
-  @scala.inline
-  implicit class CreateNotificationSubscriptionResponseMutableBuilder[Self <: CreateNotificationSubscriptionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotificationSubscriptionResponse](x: Self) {
     
-    @scala.inline
-    def setSubscription(value: Subscription): Self = StObject.set(x, "Subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: Subscription): Self = StObject.set(x, "Subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "Subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "Subscription", js.undefined)
   }
 }

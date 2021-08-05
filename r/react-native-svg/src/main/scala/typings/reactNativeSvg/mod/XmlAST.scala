@@ -18,8 +18,7 @@ trait XmlAST
 }
 object XmlAST {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Tag: ComponentType[js.Object],
     children: js.Array[XmlAST | String],
     props: StringDictionary[js.UndefOr[Styles | String]],
@@ -29,19 +28,14 @@ object XmlAST {
     __obj.asInstanceOf[XmlAST]
   }
   
-  @scala.inline
-  implicit class XmlASTMutableBuilder[Self <: XmlAST] (val x: Self) extends AnyVal {
+  extension [Self <: XmlAST](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[XmlAST | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[XmlAST | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (XmlAST | String)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (XmlAST | String)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: XmlAST): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: XmlAST): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
   }
 }

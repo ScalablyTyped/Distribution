@@ -17,31 +17,23 @@ trait DocumentationQueryResult extends StObject {
 }
 object DocumentationQueryResult {
   
-  @scala.inline
-  def apply(): DocumentationQueryResult = {
+  inline def apply(): DocumentationQueryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentationQueryResult]
   }
   
-  @scala.inline
-  implicit class DocumentationQueryResultMutableBuilder[Self <: DocumentationQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentationQueryResult](x: Self) {
     
-    @scala.inline
-    def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+    inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

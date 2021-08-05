@@ -28,34 +28,25 @@ trait JvmArgs extends StObject {
 }
 object JvmArgs {
   
-  @scala.inline
-  def apply(): JvmArgs = {
+  inline def apply(): JvmArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JvmArgs]
   }
   
-  @scala.inline
-  implicit class JvmArgsMutableBuilder[Self <: JvmArgs] (val x: Self) extends AnyVal {
+  extension [Self <: JvmArgs](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setJvmArgs(value: js.Array[String]): Self = StObject.set(x, "jvmArgs", value.asInstanceOf[js.Any])
+    inline def setJvmArgs(value: js.Array[String]): Self = StObject.set(x, "jvmArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
+    inline def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
     
-    @scala.inline
-    def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
+    inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

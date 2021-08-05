@@ -28,28 +28,21 @@ trait TestRoleRequest extends StObject {
 }
 object TestRoleRequest {
   
-  @scala.inline
-  def apply(InputBucket: BucketName, OutputBucket: BucketName, Role: Role, Topics: SnsTopics): TestRoleRequest = {
+  inline def apply(InputBucket: BucketName, OutputBucket: BucketName, Role: Role, Topics: SnsTopics): TestRoleRequest = {
     val __obj = js.Dynamic.literal(InputBucket = InputBucket.asInstanceOf[js.Any], OutputBucket = OutputBucket.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any], Topics = Topics.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRoleRequest]
   }
   
-  @scala.inline
-  implicit class TestRoleRequestMutableBuilder[Self <: TestRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestRoleRequest](x: Self) {
     
-    @scala.inline
-    def setInputBucket(value: BucketName): Self = StObject.set(x, "InputBucket", value.asInstanceOf[js.Any])
+    inline def setInputBucket(value: BucketName): Self = StObject.set(x, "InputBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputBucket(value: BucketName): Self = StObject.set(x, "OutputBucket", value.asInstanceOf[js.Any])
+    inline def setOutputBucket(value: BucketName): Self = StObject.set(x, "OutputBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopics(value: SnsTopics): Self = StObject.set(x, "Topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: SnsTopics): Self = StObject.set(x, "Topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicsVarargs(value: SnsTopic*): Self = StObject.set(x, "Topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: SnsTopic*): Self = StObject.set(x, "Topics", js.Array(value :_*))
   }
 }

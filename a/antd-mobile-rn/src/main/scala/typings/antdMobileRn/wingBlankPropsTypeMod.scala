@@ -15,20 +15,16 @@ object wingBlankPropsTypeMod {
   }
   object WingBlankPropsType {
     
-    @scala.inline
-    def apply(): WingBlankPropsType = {
+    inline def apply(): WingBlankPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WingBlankPropsType]
     }
     
-    @scala.inline
-    implicit class WingBlankPropsTypeMutableBuilder[Self <: WingBlankPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: WingBlankPropsType](x: Self) {
       
-      @scala.inline
-      def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

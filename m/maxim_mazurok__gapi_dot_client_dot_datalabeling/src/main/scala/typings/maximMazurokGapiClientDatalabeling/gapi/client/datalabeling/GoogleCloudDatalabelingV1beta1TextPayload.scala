@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1TextPayload extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1TextPayload {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1TextPayload = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1TextPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1TextPayload]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1TextPayloadMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TextPayload] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1TextPayload](x: Self) {
     
-    @scala.inline
-    def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+    inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
+    inline def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
   }
 }

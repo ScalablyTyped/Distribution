@@ -14,31 +14,23 @@ trait HeightUrl extends StObject {
 }
 object HeightUrl {
   
-  @scala.inline
-  def apply(): HeightUrl = {
+  inline def apply(): HeightUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeightUrl]
   }
   
-  @scala.inline
-  implicit class HeightUrlMutableBuilder[Self <: HeightUrl] (val x: Self) extends AnyVal {
+  extension [Self <: HeightUrl](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | RangeMaxPoint): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | RangeMaxPoint): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String | RangeMinPoint): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | RangeMinPoint): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | RangeMaxPoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | RangeMaxPoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

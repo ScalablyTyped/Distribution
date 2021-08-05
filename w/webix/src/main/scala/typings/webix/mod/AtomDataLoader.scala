@@ -17,6 +17,5 @@ trait AtomDataLoader extends StObject {
 }
 object AtomDataLoader {
   
-  @scala.inline
-  def apply: AtomDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomDataLoader").asInstanceOf[AtomDataLoader]
+  inline def apply: AtomDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomDataLoader").asInstanceOf[AtomDataLoader]
 }

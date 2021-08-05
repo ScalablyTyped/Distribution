@@ -23,25 +23,19 @@ trait SchemaSheetsChartReferenceSuggestionState extends StObject {
 }
 object SchemaSheetsChartReferenceSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaSheetsChartReferenceSuggestionState = {
+  inline def apply(): SchemaSheetsChartReferenceSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSheetsChartReferenceSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaSheetsChartReferenceSuggestionStateMutableBuilder[Self <: SchemaSheetsChartReferenceSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSheetsChartReferenceSuggestionState](x: Self) {
     
-    @scala.inline
-    def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
+    inline def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartIdSuggestedUndefined: Self = StObject.set(x, "chartIdSuggested", js.undefined)
+    inline def setChartIdSuggestedUndefined: Self = StObject.set(x, "chartIdSuggested", js.undefined)
     
-    @scala.inline
-    def setSpreadsheetIdSuggested(value: Boolean): Self = StObject.set(x, "spreadsheetIdSuggested", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetIdSuggested(value: Boolean): Self = StObject.set(x, "spreadsheetIdSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdSuggestedUndefined: Self = StObject.set(x, "spreadsheetIdSuggested", js.undefined)
+    inline def setSpreadsheetIdSuggestedUndefined: Self = StObject.set(x, "spreadsheetIdSuggested", js.undefined)
   }
 }

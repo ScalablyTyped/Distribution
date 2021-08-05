@@ -14,19 +14,15 @@ trait TableauEvent extends StObject {
 }
 object TableauEvent {
   
-  @scala.inline
-  def apply(getEventName: () => TableauEventName, getViz: () => Viz): TableauEvent = {
+  inline def apply(getEventName: () => TableauEventName, getViz: () => Viz): TableauEvent = {
     val __obj = js.Dynamic.literal(getEventName = js.Any.fromFunction0(getEventName), getViz = js.Any.fromFunction0(getViz))
     __obj.asInstanceOf[TableauEvent]
   }
   
-  @scala.inline
-  implicit class TableauEventMutableBuilder[Self <: TableauEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TableauEvent](x: Self) {
     
-    @scala.inline
-    def setGetEventName(value: () => TableauEventName): Self = StObject.set(x, "getEventName", js.Any.fromFunction0(value))
+    inline def setGetEventName(value: () => TableauEventName): Self = StObject.set(x, "getEventName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViz(value: () => Viz): Self = StObject.set(x, "getViz", js.Any.fromFunction0(value))
+    inline def setGetViz(value: () => Viz): Self = StObject.set(x, "getViz", js.Any.fromFunction0(value))
   }
 }

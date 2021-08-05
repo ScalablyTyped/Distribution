@@ -14,19 +14,15 @@ trait Full extends StObject {
 }
 object Full {
   
-  @scala.inline
-  def apply(full: Boolean, styles: StringDictionary[RegisteredStyle[js.Any]]): Full = {
+  inline def apply(full: Boolean, styles: StringDictionary[RegisteredStyle[js.Any]]): Full = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Full]
   }
   
-  @scala.inline
-  implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
+  extension [Self <: Full](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

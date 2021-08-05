@@ -38,8 +38,7 @@ trait PriorityLevelConfiguration extends StObject {
 }
 object PriorityLevelConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     metadata: ObjectMeta,
     spec: PriorityLevelConfigurationSpec,
     status: PriorityLevelConfigurationStatus
@@ -48,22 +47,16 @@ object PriorityLevelConfiguration {
     __obj.asInstanceOf[PriorityLevelConfiguration]
   }
   
-  @scala.inline
-  implicit class PriorityLevelConfigurationMutableBuilder[Self <: PriorityLevelConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: PriorityLevelConfiguration](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PriorityLevelConfiguration): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PriorityLevelConfiguration): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: PriorityLevelConfigurationSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: PriorityLevelConfigurationSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PriorityLevelConfigurationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PriorityLevelConfigurationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

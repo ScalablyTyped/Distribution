@@ -18,22 +18,17 @@ trait GetBlockResponse extends StObject {
 }
 object GetBlockResponse {
   
-  @scala.inline
-  def apply(Block: ValueHolder): GetBlockResponse = {
+  inline def apply(Block: ValueHolder): GetBlockResponse = {
     val __obj = js.Dynamic.literal(Block = Block.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBlockResponse]
   }
   
-  @scala.inline
-  implicit class GetBlockResponseMutableBuilder[Self <: GetBlockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlockResponse](x: Self) {
     
-    @scala.inline
-    def setBlock(value: ValueHolder): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: ValueHolder): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProof(value: ValueHolder): Self = StObject.set(x, "Proof", value.asInstanceOf[js.Any])
+    inline def setProof(value: ValueHolder): Self = StObject.set(x, "Proof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProofUndefined: Self = StObject.set(x, "Proof", js.undefined)
+    inline def setProofUndefined: Self = StObject.set(x, "Proof", js.undefined)
   }
 }

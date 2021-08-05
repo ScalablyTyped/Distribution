@@ -10,16 +10,13 @@ trait Maps extends StObject {
 }
 object Maps {
   
-  @scala.inline
-  def apply(maps: Geocoder): Maps = {
+  inline def apply(maps: Geocoder): Maps = {
     val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Maps]
   }
   
-  @scala.inline
-  implicit class MapsMutableBuilder[Self <: Maps] (val x: Self) extends AnyVal {
+  extension [Self <: Maps](x: Self) {
     
-    @scala.inline
-    def setMaps(value: Geocoder): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+    inline def setMaps(value: Geocoder): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
   }
 }

@@ -35,49 +35,35 @@ trait Qualification extends StObject {
 }
 object Qualification {
   
-  @scala.inline
-  def apply(): Qualification = {
+  inline def apply(): Qualification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Qualification]
   }
   
-  @scala.inline
-  implicit class QualificationMutableBuilder[Self <: Qualification] (val x: Self) extends AnyVal {
+  extension [Self <: Qualification](x: Self) {
     
-    @scala.inline
-    def setGrantTime(value: Timestamp): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
+    inline def setGrantTime(value: Timestamp): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantTimeUndefined: Self = StObject.set(x, "GrantTime", js.undefined)
+    inline def setGrantTimeUndefined: Self = StObject.set(x, "GrantTime", js.undefined)
     
-    @scala.inline
-    def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "IntegerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "IntegerValue", js.undefined)
     
-    @scala.inline
-    def setLocaleValue(value: Locale): Self = StObject.set(x, "LocaleValue", value.asInstanceOf[js.Any])
+    inline def setLocaleValue(value: Locale): Self = StObject.set(x, "LocaleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleValueUndefined: Self = StObject.set(x, "LocaleValue", js.undefined)
+    inline def setLocaleValueUndefined: Self = StObject.set(x, "LocaleValue", js.undefined)
     
-    @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationTypeIdUndefined: Self = StObject.set(x, "QualificationTypeId", js.undefined)
+    inline def setQualificationTypeIdUndefined: Self = StObject.set(x, "QualificationTypeId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: QualificationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: QualificationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
   }
 }

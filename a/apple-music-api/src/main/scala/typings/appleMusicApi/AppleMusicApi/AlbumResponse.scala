@@ -11,19 +11,15 @@ trait AlbumResponse extends StObject {
 }
 object AlbumResponse {
   
-  @scala.inline
-  def apply(data: js.Array[Album]): AlbumResponse = {
+  inline def apply(data: js.Array[Album]): AlbumResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumResponse]
   }
   
-  @scala.inline
-  implicit class AlbumResponseMutableBuilder[Self <: AlbumResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AlbumResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Album]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Album]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Album*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Album*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

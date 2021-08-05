@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatMessagePolicyViolationVerdictDetailsTypes extends StObject
 object ChatMessagePolicyViolationVerdictDetailsTypes {
   
-  @scala.inline
-  def allowFalsePositiveOverride: typings.microsoftGraph.microsoftGraphStrings.allowFalsePositiveOverride = "allowFalsePositiveOverride".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowFalsePositiveOverride]
+  inline def allowFalsePositiveOverride: typings.microsoftGraph.microsoftGraphStrings.allowFalsePositiveOverride = "allowFalsePositiveOverride".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowFalsePositiveOverride]
   
-  @scala.inline
-  def allowOverrideWithJustification: typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithJustification = "allowOverrideWithJustification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithJustification]
+  inline def allowOverrideWithJustification: typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithJustification = "allowOverrideWithJustification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithJustification]
   
-  @scala.inline
-  def allowOverrideWithoutJustification: typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithoutJustification = "allowOverrideWithoutJustification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithoutJustification]
+  inline def allowOverrideWithoutJustification: typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithoutJustification = "allowOverrideWithoutJustification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowOverrideWithoutJustification]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
 }

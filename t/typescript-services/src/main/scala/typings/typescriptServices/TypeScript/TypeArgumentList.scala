@@ -12,8 +12,7 @@ trait TypeArgumentList
 }
 object TypeArgumentList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -40,10 +39,8 @@ object TypeArgumentList {
     __obj.asInstanceOf[TypeArgumentList]
   }
   
-  @scala.inline
-  implicit class TypeArgumentListMutableBuilder[Self <: TypeArgumentList] (val x: Self) extends AnyVal {
+  extension [Self <: TypeArgumentList](x: Self) {
     
-    @scala.inline
-    def setTypeArguments(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
+    inline def setTypeArguments(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
   }
 }

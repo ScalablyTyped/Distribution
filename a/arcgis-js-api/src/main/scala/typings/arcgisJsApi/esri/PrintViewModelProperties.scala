@@ -50,55 +50,39 @@ trait PrintViewModelProperties extends StObject {
 }
 object PrintViewModelProperties {
   
-  @scala.inline
-  def apply(): PrintViewModelProperties = {
+  inline def apply(): PrintViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintViewModelProperties]
   }
   
-  @scala.inline
-  implicit class PrintViewModelPropertiesMutableBuilder[Self <: PrintViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PrintViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setAllowedFormats(value: String | js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
+    inline def setAllowedFormats(value: String | js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
+    inline def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
     
-    @scala.inline
-    def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
+    inline def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedLayouts(value: String | js.Array[String]): Self = StObject.set(x, "allowedLayouts", value.asInstanceOf[js.Any])
+    inline def setAllowedLayouts(value: String | js.Array[String]): Self = StObject.set(x, "allowedLayouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedLayoutsUndefined: Self = StObject.set(x, "allowedLayouts", js.undefined)
+    inline def setAllowedLayoutsUndefined: Self = StObject.set(x, "allowedLayouts", js.undefined)
     
-    @scala.inline
-    def setAllowedLayoutsVarargs(value: String*): Self = StObject.set(x, "allowedLayouts", js.Array(value :_*))
+    inline def setAllowedLayoutsVarargs(value: String*): Self = StObject.set(x, "allowedLayouts", js.Array(value :_*))
     
-    @scala.inline
-    def setPrintServiceUrl(value: String): Self = StObject.set(x, "printServiceUrl", value.asInstanceOf[js.Any])
+    inline def setPrintServiceUrl(value: String): Self = StObject.set(x, "printServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintServiceUrlUndefined: Self = StObject.set(x, "printServiceUrl", js.undefined)
+    inline def setPrintServiceUrlUndefined: Self = StObject.set(x, "printServiceUrl", js.undefined)
     
-    @scala.inline
-    def setScaleEnabled(value: Boolean): Self = StObject.set(x, "scaleEnabled", value.asInstanceOf[js.Any])
+    inline def setScaleEnabled(value: Boolean): Self = StObject.set(x, "scaleEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleEnabledUndefined: Self = StObject.set(x, "scaleEnabled", js.undefined)
+    inline def setScaleEnabledUndefined: Self = StObject.set(x, "scaleEnabled", js.undefined)
     
-    @scala.inline
-    def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
+    inline def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
+    inline def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

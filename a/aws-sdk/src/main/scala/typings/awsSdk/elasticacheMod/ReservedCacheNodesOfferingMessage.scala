@@ -18,28 +18,21 @@ trait ReservedCacheNodesOfferingMessage extends StObject {
 }
 object ReservedCacheNodesOfferingMessage {
   
-  @scala.inline
-  def apply(): ReservedCacheNodesOfferingMessage = {
+  inline def apply(): ReservedCacheNodesOfferingMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedCacheNodesOfferingMessage]
   }
   
-  @scala.inline
-  implicit class ReservedCacheNodesOfferingMessageMutableBuilder[Self <: ReservedCacheNodesOfferingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedCacheNodesOfferingMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReservedCacheNodesOfferings(value: ReservedCacheNodesOfferingList): Self = StObject.set(x, "ReservedCacheNodesOfferings", value.asInstanceOf[js.Any])
+    inline def setReservedCacheNodesOfferings(value: ReservedCacheNodesOfferingList): Self = StObject.set(x, "ReservedCacheNodesOfferings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedCacheNodesOfferingsUndefined: Self = StObject.set(x, "ReservedCacheNodesOfferings", js.undefined)
+    inline def setReservedCacheNodesOfferingsUndefined: Self = StObject.set(x, "ReservedCacheNodesOfferings", js.undefined)
     
-    @scala.inline
-    def setReservedCacheNodesOfferingsVarargs(value: ReservedCacheNodesOffering*): Self = StObject.set(x, "ReservedCacheNodesOfferings", js.Array(value :_*))
+    inline def setReservedCacheNodesOfferingsVarargs(value: ReservedCacheNodesOffering*): Self = StObject.set(x, "ReservedCacheNodesOfferings", js.Array(value :_*))
   }
 }

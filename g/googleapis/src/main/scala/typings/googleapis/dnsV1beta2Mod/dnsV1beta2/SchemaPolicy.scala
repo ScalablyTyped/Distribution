@@ -28,64 +28,45 @@ trait SchemaPolicy extends StObject {
 }
 object SchemaPolicy {
   
-  @scala.inline
-  def apply(): SchemaPolicy = {
+  inline def apply(): SchemaPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaPolicyMutableBuilder[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPolicy](x: Self) {
     
-    @scala.inline
-    def setAlternativeNameServerConfig(value: SchemaPolicyAlternativeNameServerConfig): Self = StObject.set(x, "alternativeNameServerConfig", value.asInstanceOf[js.Any])
+    inline def setAlternativeNameServerConfig(value: SchemaPolicyAlternativeNameServerConfig): Self = StObject.set(x, "alternativeNameServerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativeNameServerConfigUndefined: Self = StObject.set(x, "alternativeNameServerConfig", js.undefined)
+    inline def setAlternativeNameServerConfigUndefined: Self = StObject.set(x, "alternativeNameServerConfig", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnableInboundForwarding(value: Boolean): Self = StObject.set(x, "enableInboundForwarding", value.asInstanceOf[js.Any])
+    inline def setEnableInboundForwarding(value: Boolean): Self = StObject.set(x, "enableInboundForwarding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableInboundForwardingUndefined: Self = StObject.set(x, "enableInboundForwarding", js.undefined)
+    inline def setEnableInboundForwardingUndefined: Self = StObject.set(x, "enableInboundForwarding", js.undefined)
     
-    @scala.inline
-    def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+    inline def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
+    inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetworks(value: js.Array[SchemaPolicyNetwork]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: js.Array[SchemaPolicyNetwork]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
+    inline def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
-    @scala.inline
-    def setNetworksVarargs(value: SchemaPolicyNetwork*): Self = StObject.set(x, "networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: SchemaPolicyNetwork*): Self = StObject.set(x, "networks", js.Array(value :_*))
   }
 }

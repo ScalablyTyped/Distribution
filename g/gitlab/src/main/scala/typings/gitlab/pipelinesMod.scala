@@ -78,8 +78,7 @@ object pipelinesMod {
   }
   object PipelineSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created_at: Date,
       id: Double,
       ref: String,
@@ -92,29 +91,21 @@ object pipelinesMod {
       __obj.asInstanceOf[PipelineSchema]
     }
     
-    @scala.inline
-    implicit class PipelineSchemaMutableBuilder[Self <: PipelineSchema] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineSchema](x: Self) {
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+      inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
+      inline def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
     }
   }
 }

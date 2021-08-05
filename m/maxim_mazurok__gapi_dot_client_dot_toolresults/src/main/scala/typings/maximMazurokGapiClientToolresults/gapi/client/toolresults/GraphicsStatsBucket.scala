@@ -14,25 +14,19 @@ trait GraphicsStatsBucket extends StObject {
 }
 object GraphicsStatsBucket {
   
-  @scala.inline
-  def apply(): GraphicsStatsBucket = {
+  inline def apply(): GraphicsStatsBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphicsStatsBucket]
   }
   
-  @scala.inline
-  implicit class GraphicsStatsBucketMutableBuilder[Self <: GraphicsStatsBucket] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicsStatsBucket](x: Self) {
     
-    @scala.inline
-    def setFrameCount(value: String): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
+    inline def setFrameCount(value: String): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCountUndefined: Self = StObject.set(x, "frameCount", js.undefined)
+    inline def setFrameCountUndefined: Self = StObject.set(x, "frameCount", js.undefined)
     
-    @scala.inline
-    def setRenderMillis(value: String): Self = StObject.set(x, "renderMillis", value.asInstanceOf[js.Any])
+    inline def setRenderMillis(value: String): Self = StObject.set(x, "renderMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderMillisUndefined: Self = StObject.set(x, "renderMillis", js.undefined)
+    inline def setRenderMillisUndefined: Self = StObject.set(x, "renderMillis", js.undefined)
   }
 }

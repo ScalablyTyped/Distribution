@@ -41,20 +41,16 @@ object mod extends Shortcut {
       }
       object ICurrentRoute {
         
-        @scala.inline
-        def apply(locals: Dictindex, params: js.Any): ICurrentRoute = {
+        inline def apply(locals: Dictindex, params: js.Any): ICurrentRoute = {
           val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
           __obj.asInstanceOf[ICurrentRoute]
         }
         
-        @scala.inline
-        implicit class ICurrentRouteMutableBuilder[Self <: ICurrentRoute] (val x: Self) extends AnyVal {
+        extension [Self <: ICurrentRoute](x: Self) {
           
-          @scala.inline
-          def setLocals(value: Dictindex): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+          inline def setLocals(value: Dictindex): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+          inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         }
       }
       
@@ -219,38 +215,28 @@ object mod extends Shortcut {
       }
       object IRoute {
         
-        @scala.inline
-        def apply(): IRoute = {
+        inline def apply(): IRoute = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IRoute]
         }
         
-        @scala.inline
-        implicit class IRouteMutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
+        extension [Self <: IRoute](x: Self) {
           
-          @scala.inline
-          def setCaseInsensitiveMatch(value: Boolean): Self = StObject.set(x, "caseInsensitiveMatch", value.asInstanceOf[js.Any])
+          inline def setCaseInsensitiveMatch(value: Boolean): Self = StObject.set(x, "caseInsensitiveMatch", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCaseInsensitiveMatchUndefined: Self = StObject.set(x, "caseInsensitiveMatch", js.undefined)
+          inline def setCaseInsensitiveMatchUndefined: Self = StObject.set(x, "caseInsensitiveMatch", js.undefined)
           
-          @scala.inline
-          def setController(value: String | InlineAnnotatedFunction): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+          inline def setController(value: String | InlineAnnotatedFunction): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+          inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+          inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
           
-          @scala.inline
-          def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+          inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
           
-          @scala.inline
-          def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+          inline def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value :_*))
           
-          @scala.inline
-          def setRedirectTo(
+          inline def setRedirectTo(
             value: String | (js.Function3[
                       /* $routeParams */ js.UndefOr[IRouteParamsService], 
                       /* $locationPath */ js.UndefOr[String], 
@@ -259,73 +245,53 @@ object mod extends Shortcut {
                     ])
           ): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRedirectToFunction3(
+          inline def setRedirectToFunction3(
             value: (/* $routeParams */ js.UndefOr[IRouteParamsService], /* $locationPath */ js.UndefOr[String], /* $locationSearch */ js.UndefOr[js.Any]) => String
           ): Self = StObject.set(x, "redirectTo", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+          inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
           
-          @scala.inline
-          def setReloadOnSearch(value: Boolean): Self = StObject.set(x, "reloadOnSearch", value.asInstanceOf[js.Any])
+          inline def setReloadOnSearch(value: Boolean): Self = StObject.set(x, "reloadOnSearch", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReloadOnSearchUndefined: Self = StObject.set(x, "reloadOnSearch", js.undefined)
+          inline def setReloadOnSearchUndefined: Self = StObject.set(x, "reloadOnSearch", js.undefined)
           
-          @scala.inline
-          def setReloadOnUrl(value: Boolean): Self = StObject.set(x, "reloadOnUrl", value.asInstanceOf[js.Any])
+          inline def setReloadOnUrl(value: Boolean): Self = StObject.set(x, "reloadOnUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReloadOnUrlUndefined: Self = StObject.set(x, "reloadOnUrl", js.undefined)
+          inline def setReloadOnUrlUndefined: Self = StObject.set(x, "reloadOnUrl", js.undefined)
           
-          @scala.inline
-          def setResolve(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+          inline def setResolve(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResolveAs(value: String): Self = StObject.set(x, "resolveAs", value.asInstanceOf[js.Any])
+          inline def setResolveAs(value: String): Self = StObject.set(x, "resolveAs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResolveAsUndefined: Self = StObject.set(x, "resolveAs", js.undefined)
+          inline def setResolveAsUndefined: Self = StObject.set(x, "resolveAs", js.undefined)
           
-          @scala.inline
-          def setResolveRedirectTo(
+          inline def setResolveRedirectTo(
             value: Injectable[
                       js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
                     ]
           ): Self = StObject.set(x, "resolveRedirectTo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResolveRedirectToFunction1(value: /* repeated */ js.Any => js.UndefOr[IPromise[js.UndefOr[String]] | String]): Self = StObject.set(x, "resolveRedirectTo", js.Any.fromFunction1(value))
+          inline def setResolveRedirectToFunction1(value: /* repeated */ js.Any => js.UndefOr[IPromise[js.UndefOr[String]] | String]): Self = StObject.set(x, "resolveRedirectTo", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setResolveRedirectToUndefined: Self = StObject.set(x, "resolveRedirectTo", js.undefined)
+          inline def setResolveRedirectToUndefined: Self = StObject.set(x, "resolveRedirectTo", js.undefined)
           
-          @scala.inline
-          def setResolveRedirectToVarargs(
+          inline def setResolveRedirectToVarargs(
             value: (String | (js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]))*
           ): Self = StObject.set(x, "resolveRedirectTo", js.Array(value :_*))
           
-          @scala.inline
-          def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+          inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
           
-          @scala.inline
-          def setTemplate(value: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+          inline def setTemplate(value: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplateFunction1(value: /* $routeParams */ js.UndefOr[IRouteParamsService] => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+          inline def setTemplateFunction1(value: /* $routeParams */ js.UndefOr[IRouteParamsService] => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+          inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
           
-          @scala.inline
-          def setTemplateUrl(value: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+          inline def setTemplateUrl(value: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplateUrlFunction1(value: /* $routeParams */ js.UndefOr[IRouteParamsService] => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
+          inline def setTemplateUrlFunction1(value: /* $routeParams */ js.UndefOr[IRouteParamsService] => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+          inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
         }
       }
       
@@ -412,29 +378,22 @@ object mod extends Shortcut {
       }
       object IRouteService {
         
-        @scala.inline
-        def apply(reload: () => Unit, routes: js.Any, updateParams: StringDictionary[String] => Unit): IRouteService = {
+        inline def apply(reload: () => Unit, routes: js.Any, updateParams: StringDictionary[String] => Unit): IRouteService = {
           val __obj = js.Dynamic.literal(reload = js.Any.fromFunction0(reload), routes = routes.asInstanceOf[js.Any], updateParams = js.Any.fromFunction1(updateParams))
           __obj.asInstanceOf[IRouteService]
         }
         
-        @scala.inline
-        implicit class IRouteServiceMutableBuilder[Self <: IRouteService] (val x: Self) extends AnyVal {
+        extension [Self <: IRouteService](x: Self) {
           
-          @scala.inline
-          def setCurrent(value: ICurrentRoute): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+          inline def setCurrent(value: ICurrentRoute): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+          inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
           
-          @scala.inline
-          def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+          inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+          inline def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpdateParams(value: StringDictionary[String] => Unit): Self = StObject.set(x, "updateParams", js.Any.fromFunction1(value))
+          inline def setUpdateParams(value: StringDictionary[String] => Unit): Self = StObject.set(x, "updateParams", js.Any.fromFunction1(value))
         }
       }
       

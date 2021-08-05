@@ -19,28 +19,21 @@ trait ListDeviceEventsResponse extends StObject {
 }
 object ListDeviceEventsResponse {
   
-  @scala.inline
-  def apply(): ListDeviceEventsResponse = {
+  inline def apply(): ListDeviceEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeviceEventsResponse]
   }
   
-  @scala.inline
-  implicit class ListDeviceEventsResponseMutableBuilder[Self <: ListDeviceEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeviceEventsResponse](x: Self) {
     
-    @scala.inline
-    def setEvents(value: listOfDeviceEvent): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: listOfDeviceEvent): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: DeviceEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: DeviceEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

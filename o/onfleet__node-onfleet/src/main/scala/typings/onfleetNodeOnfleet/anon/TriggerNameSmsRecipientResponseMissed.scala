@@ -17,19 +17,15 @@ trait TriggerNameSmsRecipientResponseMissed
 }
 object TriggerNameSmsRecipientResponseMissed {
   
-  @scala.inline
-  def apply(triggerName: SmsRecipientResponseMissed): TriggerNameSmsRecipientResponseMissed = {
+  inline def apply(triggerName: SmsRecipientResponseMissed): TriggerNameSmsRecipientResponseMissed = {
     val __obj = js.Dynamic.literal(triggerId = 14, triggerName = triggerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerNameSmsRecipientResponseMissed]
   }
   
-  @scala.inline
-  implicit class TriggerNameSmsRecipientResponseMissedMutableBuilder[Self <: TriggerNameSmsRecipientResponseMissed] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerNameSmsRecipientResponseMissed](x: Self) {
     
-    @scala.inline
-    def setTriggerId(value: `14`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: `14`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerName(value: SmsRecipientResponseMissed): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: SmsRecipientResponseMissed): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
   }
 }

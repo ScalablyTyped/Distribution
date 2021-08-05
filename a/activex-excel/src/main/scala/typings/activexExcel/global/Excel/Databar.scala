@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Databar")
 @js.native
-class Databar protected ()
+/* private */ class Databar ()
   extends StObject
      with typings.activexExcel.Excel.Databar {
   
@@ -52,7 +52,7 @@ class Databar protected ()
   /* CompleteClass */
   var Direction: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Databar_typekey")
   var ExcelDotDatabar_typekey: typings.activexExcel.Excel.Databar = js.native
   

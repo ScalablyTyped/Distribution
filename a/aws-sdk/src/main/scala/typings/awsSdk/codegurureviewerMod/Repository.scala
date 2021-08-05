@@ -23,31 +23,23 @@ trait Repository extends StObject {
 }
 object Repository {
   
-  @scala.inline
-  def apply(): Repository = {
+  inline def apply(): Repository = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Repository]
   }
   
-  @scala.inline
-  implicit class RepositoryMutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
+  extension [Self <: Repository](x: Self) {
     
-    @scala.inline
-    def setBitbucket(value: ThirdPartySourceRepository): Self = StObject.set(x, "Bitbucket", value.asInstanceOf[js.Any])
+    inline def setBitbucket(value: ThirdPartySourceRepository): Self = StObject.set(x, "Bitbucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitbucketUndefined: Self = StObject.set(x, "Bitbucket", js.undefined)
+    inline def setBitbucketUndefined: Self = StObject.set(x, "Bitbucket", js.undefined)
     
-    @scala.inline
-    def setCodeCommit(value: CodeCommitRepository): Self = StObject.set(x, "CodeCommit", value.asInstanceOf[js.Any])
+    inline def setCodeCommit(value: CodeCommitRepository): Self = StObject.set(x, "CodeCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeCommitUndefined: Self = StObject.set(x, "CodeCommit", js.undefined)
+    inline def setCodeCommitUndefined: Self = StObject.set(x, "CodeCommit", js.undefined)
     
-    @scala.inline
-    def setGitHubEnterpriseServer(value: ThirdPartySourceRepository): Self = StObject.set(x, "GitHubEnterpriseServer", value.asInstanceOf[js.Any])
+    inline def setGitHubEnterpriseServer(value: ThirdPartySourceRepository): Self = StObject.set(x, "GitHubEnterpriseServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitHubEnterpriseServerUndefined: Self = StObject.set(x, "GitHubEnterpriseServer", js.undefined)
+    inline def setGitHubEnterpriseServerUndefined: Self = StObject.set(x, "GitHubEnterpriseServer", js.undefined)
   }
 }

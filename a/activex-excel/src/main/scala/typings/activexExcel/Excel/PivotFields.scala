@@ -13,7 +13,7 @@ trait PivotFields extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.PivotFields_typekey")
+  /* private */ @JSName("Excel.PivotFields_typekey")
   var ExcelDotPivotFields_typekey: PivotFields = js.native
   
   def Item(Index: String): PivotField = js.native

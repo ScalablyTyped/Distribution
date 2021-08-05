@@ -30,46 +30,33 @@ trait MetricFilter extends StObject {
 }
 object MetricFilter {
   
-  @scala.inline
-  def apply(): MetricFilter = {
+  inline def apply(): MetricFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricFilter]
   }
   
-  @scala.inline
-  implicit class MetricFilterMutableBuilder[Self <: MetricFilter] (val x: Self) extends AnyVal {
+  extension [Self <: MetricFilter](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterNameUndefined: Self = StObject.set(x, "filterName", js.undefined)
+    inline def setFilterNameUndefined: Self = StObject.set(x, "filterName", js.undefined)
     
-    @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+    inline def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
+    inline def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
-    @scala.inline
-    def setMetricTransformations(value: MetricTransformations): Self = StObject.set(x, "metricTransformations", value.asInstanceOf[js.Any])
+    inline def setMetricTransformations(value: MetricTransformations): Self = StObject.set(x, "metricTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTransformationsUndefined: Self = StObject.set(x, "metricTransformations", js.undefined)
+    inline def setMetricTransformationsUndefined: Self = StObject.set(x, "metricTransformations", js.undefined)
     
-    @scala.inline
-    def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value :_*))
+    inline def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value :_*))
   }
 }

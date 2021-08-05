@@ -20,49 +20,35 @@ trait ChartAnimationObject extends StObject {
 }
 object ChartAnimationObject {
   
-  @scala.inline
-  def apply(): ChartAnimationObject = {
+  inline def apply(): ChartAnimationObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAnimationObject]
   }
   
-  @scala.inline
-  implicit class ChartAnimationObjectMutableBuilder[Self <: ChartAnimationObject] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAnimationObject](x: Self) {
     
-    @scala.inline
-    def setCurrentStep(value: Double): Self = StObject.set(x, "currentStep", value.asInstanceOf[js.Any])
+    inline def setCurrentStep(value: Double): Self = StObject.set(x, "currentStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStepUndefined: Self = StObject.set(x, "currentStep", js.undefined)
+    inline def setCurrentStepUndefined: Self = StObject.set(x, "currentStep", js.undefined)
     
-    @scala.inline
-    def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setNumSteps(value: Double): Self = StObject.set(x, "numSteps", value.asInstanceOf[js.Any])
+    inline def setNumSteps(value: Double): Self = StObject.set(x, "numSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumStepsUndefined: Self = StObject.set(x, "numSteps", js.undefined)
+    inline def setNumStepsUndefined: Self = StObject.set(x, "numSteps", js.undefined)
     
-    @scala.inline
-    def setOnAnimationComplete(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "onAnimationComplete", js.Any.fromFunction1(value))
+    inline def setOnAnimationComplete(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "onAnimationComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAnimationCompleteUndefined: Self = StObject.set(x, "onAnimationComplete", js.undefined)
+    inline def setOnAnimationCompleteUndefined: Self = StObject.set(x, "onAnimationComplete", js.undefined)
     
-    @scala.inline
-    def setOnAnimationProgress(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "onAnimationProgress", js.Any.fromFunction1(value))
+    inline def setOnAnimationProgress(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "onAnimationProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAnimationProgressUndefined: Self = StObject.set(x, "onAnimationProgress", js.undefined)
+    inline def setOnAnimationProgressUndefined: Self = StObject.set(x, "onAnimationProgress", js.undefined)
     
-    @scala.inline
-    def setRender(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

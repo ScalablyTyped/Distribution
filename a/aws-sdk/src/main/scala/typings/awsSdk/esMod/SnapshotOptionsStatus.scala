@@ -18,19 +18,15 @@ trait SnapshotOptionsStatus extends StObject {
 }
 object SnapshotOptionsStatus {
   
-  @scala.inline
-  def apply(Options: SnapshotOptions, Status: OptionStatus): SnapshotOptionsStatus = {
+  inline def apply(Options: SnapshotOptions, Status: OptionStatus): SnapshotOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotOptionsStatus]
   }
   
-  @scala.inline
-  implicit class SnapshotOptionsStatusMutableBuilder[Self <: SnapshotOptionsStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotOptionsStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: SnapshotOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SnapshotOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

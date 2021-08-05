@@ -21,8 +21,7 @@ trait CompositeDisposable
 }
 object CompositeDisposable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: IDisposable => Unit,
     dispose: () => Unit,
     isDisposed: Boolean,
@@ -34,22 +33,16 @@ object CompositeDisposable {
     __obj.asInstanceOf[CompositeDisposable]
   }
   
-  @scala.inline
-  implicit class CompositeDisposableMutableBuilder[Self <: CompositeDisposable] (val x: Self) extends AnyVal {
+  extension [Self <: CompositeDisposable](x: Self) {
     
-    @scala.inline
-    def setAdd(value: IDisposable => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: IDisposable => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+    inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: IDisposable => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: IDisposable => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Array[IDisposable]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[IDisposable]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

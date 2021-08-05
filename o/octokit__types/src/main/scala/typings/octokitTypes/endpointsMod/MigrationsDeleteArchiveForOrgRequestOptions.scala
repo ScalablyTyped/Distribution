@@ -20,25 +20,19 @@ trait MigrationsDeleteArchiveForOrgRequestOptions extends StObject {
 }
 object MigrationsDeleteArchiveForOrgRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsDeleteArchiveForOrgRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsDeleteArchiveForOrgRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/orgs/:org/migrations/:migration_id/archive")
     __obj.asInstanceOf[MigrationsDeleteArchiveForOrgRequestOptions]
   }
   
-  @scala.inline
-  implicit class MigrationsDeleteArchiveForOrgRequestOptionsMutableBuilder[Self <: MigrationsDeleteArchiveForOrgRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsDeleteArchiveForOrgRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

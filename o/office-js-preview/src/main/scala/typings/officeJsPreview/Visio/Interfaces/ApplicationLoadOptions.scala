@@ -33,31 +33,23 @@ trait ApplicationLoadOptions extends StObject {
 }
 object ApplicationLoadOptions {
   
-  @scala.inline
-  def apply(): ApplicationLoadOptions = {
+  inline def apply(): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
   
-  @scala.inline
-  implicit class ApplicationLoadOptionsMutableBuilder[Self <: ApplicationLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
+    inline def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBordersUndefined: Self = StObject.set(x, "showBorders", js.undefined)
+    inline def setShowBordersUndefined: Self = StObject.set(x, "showBorders", js.undefined)
     
-    @scala.inline
-    def setShowToolbars(value: Boolean): Self = StObject.set(x, "showToolbars", value.asInstanceOf[js.Any])
+    inline def setShowToolbars(value: Boolean): Self = StObject.set(x, "showToolbars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowToolbarsUndefined: Self = StObject.set(x, "showToolbars", js.undefined)
+    inline def setShowToolbarsUndefined: Self = StObject.set(x, "showToolbars", js.undefined)
   }
 }

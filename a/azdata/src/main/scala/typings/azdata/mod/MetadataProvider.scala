@@ -19,8 +19,7 @@ trait MetadataProvider
 }
 object MetadataProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDatabases: String => Thenable[js.Array[DatabaseInfo | String]],
     getMetadata: String => Thenable[ProviderMetadata],
     getTableInfo: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]],
@@ -31,19 +30,14 @@ object MetadataProvider {
     __obj.asInstanceOf[MetadataProvider]
   }
   
-  @scala.inline
-  implicit class MetadataProviderMutableBuilder[Self <: MetadataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataProvider](x: Self) {
     
-    @scala.inline
-    def setGetDatabases(value: String => Thenable[js.Array[DatabaseInfo | String]]): Self = StObject.set(x, "getDatabases", js.Any.fromFunction1(value))
+    inline def setGetDatabases(value: String => Thenable[js.Array[DatabaseInfo | String]]): Self = StObject.set(x, "getDatabases", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMetadata(value: String => Thenable[ProviderMetadata]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
+    inline def setGetMetadata(value: String => Thenable[ProviderMetadata]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTableInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = StObject.set(x, "getTableInfo", js.Any.fromFunction2(value))
+    inline def setGetTableInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = StObject.set(x, "getTableInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetViewInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = StObject.set(x, "getViewInfo", js.Any.fromFunction2(value))
+    inline def setGetViewInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = StObject.set(x, "getViewInfo", js.Any.fromFunction2(value))
   }
 }

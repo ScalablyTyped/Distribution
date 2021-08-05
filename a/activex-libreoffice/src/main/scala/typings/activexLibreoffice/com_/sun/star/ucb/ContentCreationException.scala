@@ -20,16 +20,13 @@ trait ContentCreationException
 }
 object ContentCreationException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, eError: ContentCreationError): ContentCreationException = {
+  inline def apply(Context: XInterface, Message: String, eError: ContentCreationError): ContentCreationException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], eError = eError.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentCreationException]
   }
   
-  @scala.inline
-  implicit class ContentCreationExceptionMutableBuilder[Self <: ContentCreationException] (val x: Self) extends AnyVal {
+  extension [Self <: ContentCreationException](x: Self) {
     
-    @scala.inline
-    def setEError(value: ContentCreationError): Self = StObject.set(x, "eError", value.asInstanceOf[js.Any])
+    inline def setEError(value: ContentCreationError): Self = StObject.set(x, "eError", value.asInstanceOf[js.Any])
   }
 }

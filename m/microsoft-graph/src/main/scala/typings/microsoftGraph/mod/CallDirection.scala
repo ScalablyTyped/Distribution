@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CallDirection extends StObject
 object CallDirection {
   
-  @scala.inline
-  def incoming: typings.microsoftGraph.microsoftGraphStrings.incoming = "incoming".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.incoming]
+  inline def incoming: typings.microsoftGraph.microsoftGraphStrings.incoming = "incoming".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.incoming]
   
-  @scala.inline
-  def outgoing: typings.microsoftGraph.microsoftGraphStrings.outgoing = "outgoing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.outgoing]
+  inline def outgoing: typings.microsoftGraph.microsoftGraphStrings.outgoing = "outgoing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.outgoing]
 }

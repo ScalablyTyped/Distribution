@@ -44,8 +44,7 @@ trait XScenario
 }
 object XScenario {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsScenario: Boolean,
     ScenarioComment: String,
     acquire: () => Unit,
@@ -61,28 +60,20 @@ object XScenario {
     __obj.asInstanceOf[XScenario]
   }
   
-  @scala.inline
-  implicit class XScenarioMutableBuilder[Self <: XScenario] (val x: Self) extends AnyVal {
+  extension [Self <: XScenario](x: Self) {
     
-    @scala.inline
-    def setAddRanges(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "addRanges", js.Any.fromFunction1(value))
+    inline def setAddRanges(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "addRanges", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsScenario(value: () => Boolean): Self = StObject.set(x, "getIsScenario", js.Any.fromFunction0(value))
+    inline def setGetIsScenario(value: () => Boolean): Self = StObject.set(x, "getIsScenario", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScenarioComment(value: () => String): Self = StObject.set(x, "getScenarioComment", js.Any.fromFunction0(value))
+    inline def setGetScenarioComment(value: () => String): Self = StObject.set(x, "getScenarioComment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsScenario(value: Boolean): Self = StObject.set(x, "IsScenario", value.asInstanceOf[js.Any])
+    inline def setIsScenario(value: Boolean): Self = StObject.set(x, "IsScenario", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenarioComment(value: String): Self = StObject.set(x, "ScenarioComment", value.asInstanceOf[js.Any])
+    inline def setScenarioComment(value: String): Self = StObject.set(x, "ScenarioComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetScenarioComment(value: String => Unit): Self = StObject.set(x, "setScenarioComment", js.Any.fromFunction1(value))
+    inline def setSetScenarioComment(value: String => Unit): Self = StObject.set(x, "setScenarioComment", js.Any.fromFunction1(value))
   }
 }

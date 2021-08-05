@@ -14,16 +14,13 @@ trait VirtualNodeSpecBackend extends StObject {
 }
 object VirtualNodeSpecBackend {
   
-  @scala.inline
-  def apply(virtualService: Input[VirtualNodeSpecBackendVirtualService]): VirtualNodeSpecBackend = {
+  inline def apply(virtualService: Input[VirtualNodeSpecBackendVirtualService]): VirtualNodeSpecBackend = {
     val __obj = js.Dynamic.literal(virtualService = virtualService.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecBackend]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecBackendMutableBuilder[Self <: VirtualNodeSpecBackend] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecBackend](x: Self) {
     
-    @scala.inline
-    def setVirtualService(value: Input[VirtualNodeSpecBackendVirtualService]): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
+    inline def setVirtualService(value: Input[VirtualNodeSpecBackendVirtualService]): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
   }
 }

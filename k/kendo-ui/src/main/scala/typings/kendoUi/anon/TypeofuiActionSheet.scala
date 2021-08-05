@@ -182,8 +182,7 @@ trait TypeofuiActionSheet extends StObject {
 }
 object TypeofuiActionSheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionSheet: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) & TypeofActionSheet,
     BackButton: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BackButtonOptions], BackButton]) & TypeofBackButton,
     Badge: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BadgeOptions], Badge]) & TypeofBadge,
@@ -211,115 +210,92 @@ object TypeofuiActionSheet {
     __obj.asInstanceOf[TypeofuiActionSheet]
   }
   
-  @scala.inline
-  implicit class TypeofuiActionSheetMutableBuilder[Self <: TypeofuiActionSheet] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofuiActionSheet](x: Self) {
     
-    @scala.inline
-    def setActionSheet(
+    inline def setActionSheet(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) & TypeofActionSheet
     ): Self = StObject.set(x, "ActionSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackButton(
+    inline def setBackButton(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BackButtonOptions], BackButton]) & TypeofBackButton
     ): Self = StObject.set(x, "BackButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadge(
+    inline def setBadge(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BadgeOptions], Badge]) & TypeofBadge
     ): Self = StObject.set(x, "Badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(
+    inline def setButton(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonOptions], Button]) & TypeofButtonExtend
     ): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonGroup(
+    inline def setButtonGroup(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonGroupOptions], ButtonGroup]) & TypeofButtonGroupExtend
     ): Self = StObject.set(x, "ButtonGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsible(
+    inline def setCollapsible(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[CollapsibleOptions], Collapsible]) & TypeofCollapsible
     ): Self = StObject.set(x, "Collapsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailButton(
+    inline def setDetailButton(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[DetailButtonOptions], DetailButton]) & TypeofDetailButton
     ): Self = StObject.set(x, "DetailButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawer(
+    inline def setDrawer(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[DrawerOptions], Drawer]) & TypeofDrawerExtend
     ): Self = StObject.set(x, "Drawer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(
+    inline def setLayout(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[LayoutOptions], Layout]) & TypeofLayout
     ): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListView(
+    inline def setListView(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ListViewOptions], ListView]) & TypeofListViewExtend
     ): Self = StObject.set(x, "ListView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoader(
+    inline def setLoader(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[LoaderOptions], Loader]) & TypeofLoaderExtend
     ): Self = StObject.set(x, "Loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalView(
+    inline def setModalView(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ModalViewOptions], ModalView]) & TypeofModalView
     ): Self = StObject.set(x, "ModalView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavBar(
+    inline def setNavBar(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[NavBarOptions], NavBar]) & TypeofNavBar
     ): Self = StObject.set(x, "NavBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPane(
+    inline def setPane(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PaneOptions], Pane]) & TypeofPane
     ): Self = StObject.set(x, "Pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopOver(
+    inline def setPopOver(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PopOverOptions], PopOver]) & TypeofPopOver
     ): Self = StObject.set(x, "PopOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollView(
+    inline def setScrollView(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollViewOptions], ScrollView]) & TypeofScrollViewExtend
     ): Self = StObject.set(x, "ScrollView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroller(
+    inline def setScroller(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollerOptions], Scroller]) & TypeofScroller
     ): Self = StObject.set(x, "Scroller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitView(
+    inline def setSplitView(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[SplitViewOptions], SplitView]) & TypeofSplitView
     ): Self = StObject.set(x, "SplitView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitch(
+    inline def setSwitch(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[SwitchOptions], Switch]) & TypeofSwitchExtend
     ): Self = StObject.set(x, "Switch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabStrip(
+    inline def setTabStrip(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[TabStripOptions], TabStrip]) & TypeofTabStripExtend
     ): Self = StObject.set(x, "TabStrip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(
+    inline def setView(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ViewOptions], View]) & TypeofView
     ): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidget(value: Instantiable0[Widget]): Self = StObject.set(x, "Widget", value.asInstanceOf[js.Any])
+    inline def setWidget(value: Instantiable0[Widget]): Self = StObject.set(x, "Widget", value.asInstanceOf[js.Any])
   }
 }

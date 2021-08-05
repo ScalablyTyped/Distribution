@@ -22,8 +22,7 @@ object FilterWithStateObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     prevObserver: IObserver,
     predicate: js.Function3[
       /* value */ js.Any, 

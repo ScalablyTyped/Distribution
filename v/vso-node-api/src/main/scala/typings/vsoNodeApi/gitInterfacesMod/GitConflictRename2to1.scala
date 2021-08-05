@@ -26,8 +26,7 @@ trait GitConflictRename2to1
 }
 object GitConflictRename2to1 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     conflictId: Double,
     conflictPath: String,
@@ -53,28 +52,20 @@ object GitConflictRename2to1 {
     __obj.asInstanceOf[GitConflictRename2to1]
   }
   
-  @scala.inline
-  implicit class GitConflictRename2to1MutableBuilder[Self <: GitConflictRename2to1] (val x: Self) extends AnyVal {
+  extension [Self <: GitConflictRename2to1](x: Self) {
     
-    @scala.inline
-    def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNewBlob(value: GitBlobRef): Self = StObject.set(x, "sourceNewBlob", value.asInstanceOf[js.Any])
+    inline def setSourceNewBlob(value: GitBlobRef): Self = StObject.set(x, "sourceNewBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceOriginalBlob(value: GitBlobRef): Self = StObject.set(x, "sourceOriginalBlob", value.asInstanceOf[js.Any])
+    inline def setSourceOriginalBlob(value: GitBlobRef): Self = StObject.set(x, "sourceOriginalBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceOriginalPath(value: String): Self = StObject.set(x, "sourceOriginalPath", value.asInstanceOf[js.Any])
+    inline def setSourceOriginalPath(value: String): Self = StObject.set(x, "sourceOriginalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNewBlob(value: GitBlobRef): Self = StObject.set(x, "targetNewBlob", value.asInstanceOf[js.Any])
+    inline def setTargetNewBlob(value: GitBlobRef): Self = StObject.set(x, "targetNewBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOriginalBlob(value: GitBlobRef): Self = StObject.set(x, "targetOriginalBlob", value.asInstanceOf[js.Any])
+    inline def setTargetOriginalBlob(value: GitBlobRef): Self = StObject.set(x, "targetOriginalBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOriginalPath(value: String): Self = StObject.set(x, "targetOriginalPath", value.asInstanceOf[js.Any])
+    inline def setTargetOriginalPath(value: String): Self = StObject.set(x, "targetOriginalPath", value.asInstanceOf[js.Any])
   }
 }

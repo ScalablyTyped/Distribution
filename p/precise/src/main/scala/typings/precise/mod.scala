@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Precise = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Precise]
+  inline def apply(): Precise = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Precise]
   
   @JSImport("precise", JSImport.Namespace)
   @js.native

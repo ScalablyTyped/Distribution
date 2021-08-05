@@ -22,25 +22,19 @@ trait SchemaFailedEvent extends StObject {
 }
 object SchemaFailedEvent {
   
-  @scala.inline
-  def apply(): SchemaFailedEvent = {
+  inline def apply(): SchemaFailedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFailedEvent]
   }
   
-  @scala.inline
-  implicit class SchemaFailedEventMutableBuilder[Self <: SchemaFailedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFailedEvent](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

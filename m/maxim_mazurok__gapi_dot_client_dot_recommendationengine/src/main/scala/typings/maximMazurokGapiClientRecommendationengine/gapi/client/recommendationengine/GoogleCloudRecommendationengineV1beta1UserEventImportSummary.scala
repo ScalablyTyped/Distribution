@@ -14,25 +14,19 @@ trait GoogleCloudRecommendationengineV1beta1UserEventImportSummary extends StObj
 }
 object GoogleCloudRecommendationengineV1beta1UserEventImportSummary {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1UserEventImportSummary = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1UserEventImportSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1UserEventImportSummary]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1UserEventImportSummaryMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserEventImportSummary] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1UserEventImportSummary](x: Self) {
     
-    @scala.inline
-    def setJoinedEventsCount(value: String): Self = StObject.set(x, "joinedEventsCount", value.asInstanceOf[js.Any])
+    inline def setJoinedEventsCount(value: String): Self = StObject.set(x, "joinedEventsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinedEventsCountUndefined: Self = StObject.set(x, "joinedEventsCount", js.undefined)
+    inline def setJoinedEventsCountUndefined: Self = StObject.set(x, "joinedEventsCount", js.undefined)
     
-    @scala.inline
-    def setUnjoinedEventsCount(value: String): Self = StObject.set(x, "unjoinedEventsCount", value.asInstanceOf[js.Any])
+    inline def setUnjoinedEventsCount(value: String): Self = StObject.set(x, "unjoinedEventsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnjoinedEventsCountUndefined: Self = StObject.set(x, "unjoinedEventsCount", js.undefined)
+    inline def setUnjoinedEventsCountUndefined: Self = StObject.set(x, "unjoinedEventsCount", js.undefined)
   }
 }

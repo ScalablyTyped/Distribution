@@ -38,49 +38,35 @@ trait StackSummary extends StObject {
 }
 object StackSummary {
   
-  @scala.inline
-  def apply(): StackSummary = {
+  inline def apply(): StackSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackSummary]
   }
   
-  @scala.inline
-  implicit class StackSummaryMutableBuilder[Self <: StackSummary] (val x: Self) extends AnyVal {
+  extension [Self <: StackSummary](x: Self) {
     
-    @scala.inline
-    def setAppsCount(value: Integer): Self = StObject.set(x, "AppsCount", value.asInstanceOf[js.Any])
+    inline def setAppsCount(value: Integer): Self = StObject.set(x, "AppsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsCountUndefined: Self = StObject.set(x, "AppsCount", js.undefined)
+    inline def setAppsCountUndefined: Self = StObject.set(x, "AppsCount", js.undefined)
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setInstancesCount(value: InstancesCount): Self = StObject.set(x, "InstancesCount", value.asInstanceOf[js.Any])
+    inline def setInstancesCount(value: InstancesCount): Self = StObject.set(x, "InstancesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesCountUndefined: Self = StObject.set(x, "InstancesCount", js.undefined)
+    inline def setInstancesCountUndefined: Self = StObject.set(x, "InstancesCount", js.undefined)
     
-    @scala.inline
-    def setLayersCount(value: Integer): Self = StObject.set(x, "LayersCount", value.asInstanceOf[js.Any])
+    inline def setLayersCount(value: Integer): Self = StObject.set(x, "LayersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersCountUndefined: Self = StObject.set(x, "LayersCount", js.undefined)
+    inline def setLayersCountUndefined: Self = StObject.set(x, "LayersCount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

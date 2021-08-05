@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CalloutFormat")
 @js.native
-class CalloutFormat protected ()
+/* private */ class CalloutFormat ()
   extends StObject
      with typings.activexOffice.Office.CalloutFormat {
   
@@ -56,7 +56,7 @@ class CalloutFormat protected ()
   /* CompleteClass */
   override val Length: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.CalloutFormat_typekey")
   var OfficeDotCalloutFormat_typekey: typings.activexOffice.Office.CalloutFormat = js.native
   

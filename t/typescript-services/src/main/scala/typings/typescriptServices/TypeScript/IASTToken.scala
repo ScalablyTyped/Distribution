@@ -14,8 +14,7 @@ trait IASTToken
 }
 object IASTToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,13 +42,10 @@ object IASTToken {
     __obj.asInstanceOf[IASTToken]
   }
   
-  @scala.inline
-  implicit class IASTTokenMutableBuilder[Self <: IASTToken] (val x: Self) extends AnyVal {
+  extension [Self <: IASTToken](x: Self) {
     
-    @scala.inline
-    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueText(value: () => String): Self = StObject.set(x, "valueText", js.Any.fromFunction0(value))
+    inline def setValueText(value: () => String): Self = StObject.set(x, "valueText", js.Any.fromFunction0(value))
   }
 }

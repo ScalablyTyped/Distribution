@@ -11,19 +11,15 @@ trait LocalLengthBlockParams extends StObject {
 }
 object LocalLengthBlockParams {
   
-  @scala.inline
-  def apply(): LocalLengthBlockParams = {
+  inline def apply(): LocalLengthBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalLengthBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalLengthBlockParamsMutableBuilder[Self <: LocalLengthBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalLengthBlockParams](x: Self) {
     
-    @scala.inline
-    def setLenBlock(value: IsIndefiniteForm): Self = StObject.set(x, "lenBlock", value.asInstanceOf[js.Any])
+    inline def setLenBlock(value: IsIndefiniteForm): Self = StObject.set(x, "lenBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLenBlockUndefined: Self = StObject.set(x, "lenBlock", js.undefined)
+    inline def setLenBlockUndefined: Self = StObject.set(x, "lenBlock", js.undefined)
   }
 }

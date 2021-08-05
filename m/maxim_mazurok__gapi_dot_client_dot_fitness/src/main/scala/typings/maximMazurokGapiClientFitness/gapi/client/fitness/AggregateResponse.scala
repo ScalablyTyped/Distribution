@@ -11,22 +11,17 @@ trait AggregateResponse extends StObject {
 }
 object AggregateResponse {
   
-  @scala.inline
-  def apply(): AggregateResponse = {
+  inline def apply(): AggregateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregateResponse]
   }
   
-  @scala.inline
-  implicit class AggregateResponseMutableBuilder[Self <: AggregateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateResponse](x: Self) {
     
-    @scala.inline
-    def setBucket(value: js.Array[AggregateBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: js.Array[AggregateBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setBucketVarargs(value: AggregateBucket*): Self = StObject.set(x, "bucket", js.Array(value :_*))
+    inline def setBucketVarargs(value: AggregateBucket*): Self = StObject.set(x, "bucket", js.Array(value :_*))
   }
 }

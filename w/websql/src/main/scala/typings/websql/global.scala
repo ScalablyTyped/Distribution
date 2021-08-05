@@ -32,63 +32,55 @@ object global {
     @JSGlobal("SQLError.CONSTRAINT_ERR")
     @js.native
     def CONSTRAINT_ERR: Double = js.native
-    @scala.inline
-    def CONSTRAINT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONSTRAINT_ERR")(x.asInstanceOf[js.Any])
+    inline def CONSTRAINT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONSTRAINT_ERR")(x.asInstanceOf[js.Any])
     
     // = 0;
     /* static member */
     @JSGlobal("SQLError.DATABASE_ERR")
     @js.native
     def DATABASE_ERR: Double = js.native
-    @scala.inline
-    def DATABASE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATABASE_ERR")(x.asInstanceOf[js.Any])
+    inline def DATABASE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATABASE_ERR")(x.asInstanceOf[js.Any])
     
     // = 3;
     /* static member */
     @JSGlobal("SQLError.QUOTA_ERR")
     @js.native
     def QUOTA_ERR: Double = js.native
-    @scala.inline
-    def QUOTA_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTA_ERR")(x.asInstanceOf[js.Any])
+    inline def QUOTA_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTA_ERR")(x.asInstanceOf[js.Any])
     
     // = 4;
     /* static member */
     @JSGlobal("SQLError.SYNTAX_ERR")
     @js.native
     def SYNTAX_ERR: Double = js.native
-    @scala.inline
-    def SYNTAX_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNTAX_ERR")(x.asInstanceOf[js.Any])
+    inline def SYNTAX_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNTAX_ERR")(x.asInstanceOf[js.Any])
     
     // = 6;
     /* static member */
     @JSGlobal("SQLError.TIMEOUT_ERR")
     @js.native
     def TIMEOUT_ERR: Double = js.native
-    @scala.inline
-    def TIMEOUT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERR")(x.asInstanceOf[js.Any])
+    inline def TIMEOUT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERR")(x.asInstanceOf[js.Any])
     
     // = 2;
     /* static member */
     @JSGlobal("SQLError.TOO_LARGE_ERR")
     @js.native
     def TOO_LARGE_ERR: Double = js.native
-    @scala.inline
-    def TOO_LARGE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOO_LARGE_ERR")(x.asInstanceOf[js.Any])
+    inline def TOO_LARGE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOO_LARGE_ERR")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("SQLError.UNKNOWN_ERR")
     @js.native
     def UNKNOWN_ERR: Double = js.native
-    @scala.inline
-    def UNKNOWN_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERR")(x.asInstanceOf[js.Any])
+    inline def UNKNOWN_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERR")(x.asInstanceOf[js.Any])
     
     // = 1;
     /* static member */
     @JSGlobal("SQLError.VERSION_ERR")
     @js.native
     def VERSION_ERR: Double = js.native
-    @scala.inline
-    def VERSION_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION_ERR")(x.asInstanceOf[js.Any])
+    inline def VERSION_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION_ERR")(x.asInstanceOf[js.Any])
   }
   
   // synchronous database API error
@@ -119,8 +111,7 @@ object global {
     @JSGlobal("SQLException.CONSTRAINT_ERR")
     @js.native
     def CONSTRAINT_ERR: Double = js.native
-    @scala.inline
-    def CONSTRAINT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONSTRAINT_ERR")(x.asInstanceOf[js.Any])
+    inline def CONSTRAINT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONSTRAINT_ERR")(x.asInstanceOf[js.Any])
     
     // = 0;
     /** Code 1 - The statement failed for database reasons not covered by any other error code. */
@@ -128,8 +119,7 @@ object global {
     @JSGlobal("SQLException.DATABASE_ERR")
     @js.native
     def DATABASE_ERR: Double = js.native
-    @scala.inline
-    def DATABASE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATABASE_ERR")(x.asInstanceOf[js.Any])
+    inline def DATABASE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATABASE_ERR")(x.asInstanceOf[js.Any])
     
     // = 3;
     /** Code 4 - The statement failed because there was not enough remaining storage space,
@@ -139,8 +129,7 @@ object global {
     @JSGlobal("SQLException.QUOTA_ERR")
     @js.native
     def QUOTA_ERR: Double = js.native
-    @scala.inline
-    def QUOTA_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTA_ERR")(x.asInstanceOf[js.Any])
+    inline def QUOTA_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTA_ERR")(x.asInstanceOf[js.Any])
     
     // = 4;
     /** Code 5 - The statement failed because of a syntax error, or the number of arguments did
@@ -151,8 +140,7 @@ object global {
     @JSGlobal("SQLException.SYNTAX_ERR")
     @js.native
     def SYNTAX_ERR: Double = js.native
-    @scala.inline
-    def SYNTAX_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNTAX_ERR")(x.asInstanceOf[js.Any])
+    inline def SYNTAX_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNTAX_ERR")(x.asInstanceOf[js.Any])
     
     // = 6;
     /** Code 7 - A lock for the transaction could not be obtained in a reasonable time. */
@@ -160,8 +148,7 @@ object global {
     @JSGlobal("SQLException.TIMEOUT_ERR")
     @js.native
     def TIMEOUT_ERR: Double = js.native
-    @scala.inline
-    def TIMEOUT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERR")(x.asInstanceOf[js.Any])
+    inline def TIMEOUT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERR")(x.asInstanceOf[js.Any])
     
     // = 2;
     /** Code 3 - The statement failed because the data returned from the database was too large.
@@ -171,8 +158,7 @@ object global {
     @JSGlobal("SQLException.TOO_LARGE_ERR")
     @js.native
     def TOO_LARGE_ERR: Double = js.native
-    @scala.inline
-    def TOO_LARGE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOO_LARGE_ERR")(x.asInstanceOf[js.Any])
+    inline def TOO_LARGE_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOO_LARGE_ERR")(x.asInstanceOf[js.Any])
     
     /** Code 0 - The transaction failed for reasons unrelated to the database itself
       * and not covered by any other error code.
@@ -181,8 +167,7 @@ object global {
     @JSGlobal("SQLException.UNKNOWN_ERR")
     @js.native
     def UNKNOWN_ERR: Double = js.native
-    @scala.inline
-    def UNKNOWN_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERR")(x.asInstanceOf[js.Any])
+    inline def UNKNOWN_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERR")(x.asInstanceOf[js.Any])
     
     // = 1;
     /** Code 2 - The operation failed because the actual database version was not what it should be.
@@ -194,7 +179,6 @@ object global {
     @JSGlobal("SQLException.VERSION_ERR")
     @js.native
     def VERSION_ERR: Double = js.native
-    @scala.inline
-    def VERSION_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION_ERR")(x.asInstanceOf[js.Any])
+    inline def VERSION_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION_ERR")(x.asInstanceOf[js.Any])
   }
 }

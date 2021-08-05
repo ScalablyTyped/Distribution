@@ -29,23 +29,18 @@ object DataTransfer {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
-    @scala.inline
-    def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+    inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
-    @scala.inline
-    def getContent(): typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageView = ^.asInstanceOf[js.Dynamic].applyDynamic("getContent")().asInstanceOf[typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageView]
+    inline def getContent(): typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageView = ^.asInstanceOf[js.Dynamic].applyDynamic("getContent")().asInstanceOf[typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackageView]
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard.oncontentchanged")
     @js.native
     def oncontentchanged: js.Any = js.native
-    @scala.inline
-    def oncontentchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
+    inline def oncontentchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(content: typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContent")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setContent(content: typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContent")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackage")
@@ -254,11 +249,9 @@ object DataTransfer {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.ApplicationModel.DataTransfer.DataTransferManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.ApplicationModel.DataTransfer.DataTransferManager]
+    inline def getForCurrentView(): typings.winrt.Windows.ApplicationModel.DataTransfer.DataTransferManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.ApplicationModel.DataTransfer.DataTransferManager]
     
-    @scala.inline
-    def showShareUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareUI")().asInstanceOf[Unit]
+    inline def showShareUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareUI")().asInstanceOf[Unit]
   }
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.HtmlFormatHelper")
@@ -273,11 +266,9 @@ object DataTransfer {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createHtmlFormat(htmlFragment: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlFormat")(htmlFragment.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createHtmlFormat(htmlFragment: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlFormat")(htmlFragment.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getStaticFragment(htmlFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStaticFragment")(htmlFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getStaticFragment(htmlFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStaticFragment")(htmlFormat.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs")
@@ -336,38 +327,32 @@ object DataTransfer {
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.bitmap")
     @js.native
     def bitmap: String = js.native
-    @scala.inline
-    def bitmap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmap")(x.asInstanceOf[js.Any])
+    inline def bitmap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitmap")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.html")
     @js.native
     def html: String = js.native
-    @scala.inline
-    def html_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
+    inline def html_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.rtf")
     @js.native
     def rtf: String = js.native
-    @scala.inline
-    def rtf_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtf")(x.asInstanceOf[js.Any])
+    inline def rtf_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtf")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.storageItems")
     @js.native
     def storageItems: String = js.native
-    @scala.inline
-    def storageItems_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageItems")(x.asInstanceOf[js.Any])
+    inline def storageItems_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageItems")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.text")
     @js.native
     def text: String = js.native
-    @scala.inline
-    def text_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+    inline def text_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats.uri")
     @js.native
     def uri: String = js.native
-    @scala.inline
-    def uri_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uri")(x.asInstanceOf[js.Any])
+    inline def uri_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uri")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs")

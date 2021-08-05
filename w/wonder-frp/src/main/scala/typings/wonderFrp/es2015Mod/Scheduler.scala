@@ -15,6 +15,5 @@ object Scheduler {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(args: js.Any*): typings.wonderFrp.coreSchedulerMod.Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.coreSchedulerMod.Scheduler]
+  inline def create(args: js.Any*): typings.wonderFrp.coreSchedulerMod.Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.coreSchedulerMod.Scheduler]
 }

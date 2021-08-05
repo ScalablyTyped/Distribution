@@ -38,9 +38,9 @@ object cardMod {
     /* CompleteClass */
     var disabled: Boolean = js.native
     
-    var isClickable: js.Any = js.native
+    /* private */ var isClickable: js.Any = js.native
     
-    var renderCard: js.Any = js.native
+    /* private */ var renderCard: js.Any = js.native
     
     @JSName("render")
     def render_MCard(): js.Any = js.native

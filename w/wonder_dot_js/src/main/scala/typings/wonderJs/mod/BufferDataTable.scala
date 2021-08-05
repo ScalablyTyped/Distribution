@@ -15,6 +15,5 @@ object BufferDataTable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getGeometryDataName(`type`: typings.wonderJs.ebufferdatatypeMod.EBufferDataType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryDataName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getGeometryDataName(`type`: typings.wonderJs.ebufferdatatypeMod.EBufferDataType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryDataName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

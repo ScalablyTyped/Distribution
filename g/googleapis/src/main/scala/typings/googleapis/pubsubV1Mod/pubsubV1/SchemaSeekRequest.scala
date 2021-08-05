@@ -32,25 +32,19 @@ trait SchemaSeekRequest extends StObject {
 }
 object SchemaSeekRequest {
   
-  @scala.inline
-  def apply(): SchemaSeekRequest = {
+  inline def apply(): SchemaSeekRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSeekRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSeekRequestMutableBuilder[Self <: SchemaSeekRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSeekRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

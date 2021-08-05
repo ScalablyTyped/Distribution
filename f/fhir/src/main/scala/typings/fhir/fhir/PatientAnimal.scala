@@ -28,28 +28,21 @@ trait PatientAnimal
 }
 object PatientAnimal {
   
-  @scala.inline
-  def apply(species: CodeableConcept): PatientAnimal = {
+  inline def apply(species: CodeableConcept): PatientAnimal = {
     val __obj = js.Dynamic.literal(species = species.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatientAnimal]
   }
   
-  @scala.inline
-  implicit class PatientAnimalMutableBuilder[Self <: PatientAnimal] (val x: Self) extends AnyVal {
+  extension [Self <: PatientAnimal](x: Self) {
     
-    @scala.inline
-    def setBreed(value: CodeableConcept): Self = StObject.set(x, "breed", value.asInstanceOf[js.Any])
+    inline def setBreed(value: CodeableConcept): Self = StObject.set(x, "breed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreedUndefined: Self = StObject.set(x, "breed", js.undefined)
+    inline def setBreedUndefined: Self = StObject.set(x, "breed", js.undefined)
     
-    @scala.inline
-    def setGenderStatus(value: CodeableConcept): Self = StObject.set(x, "genderStatus", value.asInstanceOf[js.Any])
+    inline def setGenderStatus(value: CodeableConcept): Self = StObject.set(x, "genderStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderStatusUndefined: Self = StObject.set(x, "genderStatus", js.undefined)
+    inline def setGenderStatusUndefined: Self = StObject.set(x, "genderStatus", js.undefined)
     
-    @scala.inline
-    def setSpecies(value: CodeableConcept): Self = StObject.set(x, "species", value.asInstanceOf[js.Any])
+    inline def setSpecies(value: CodeableConcept): Self = StObject.set(x, "species", value.asInstanceOf[js.Any])
   }
 }

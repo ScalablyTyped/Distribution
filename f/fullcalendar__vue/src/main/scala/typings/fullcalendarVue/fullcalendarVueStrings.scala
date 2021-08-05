@@ -9,60 +9,49 @@ object fullcalendarVueStrings {
   
   @js.native
   sealed trait ISO extends StObject
-  @scala.inline
-  def ISO: ISO = "ISO".asInstanceOf[ISO]
+  inline def ISO: ISO = "ISO".asInstanceOf[ISO]
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait day extends StObject
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait local extends StObject
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait ltr
     extends StObject
        with direction
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait parent extends StObject
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
   sealed trait popover extends StObject
-  @scala.inline
-  def popover: popover = "popover".asInstanceOf[popover]
+  inline def popover: popover = "popover".asInstanceOf[popover]
   
   @js.native
   sealed trait rtl
     extends StObject
        with direction
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait timeGridDay extends StObject
-  @scala.inline
-  def timeGridDay: timeGridDay = "timeGridDay".asInstanceOf[timeGridDay]
+  inline def timeGridDay: timeGridDay = "timeGridDay".asInstanceOf[timeGridDay]
   
   @js.native
   sealed trait timeGridWeek extends StObject
-  @scala.inline
-  def timeGridWeek: timeGridWeek = "timeGridWeek".asInstanceOf[timeGridWeek]
+  inline def timeGridWeek: timeGridWeek = "timeGridWeek".asInstanceOf[timeGridWeek]
   
   @js.native
   sealed trait week extends StObject
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
+  inline def week: week = "week".asInstanceOf[week]
 }

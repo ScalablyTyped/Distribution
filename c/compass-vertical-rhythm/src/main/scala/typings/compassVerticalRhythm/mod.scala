@@ -26,8 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): VerticalRhythm = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[VerticalRhythm]
+  inline def apply(options: Options): VerticalRhythm = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[VerticalRhythm]
   
   @JSImport("compass-vertical-rhythm", JSImport.Namespace)
   @js.native
@@ -53,56 +52,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+      inline def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
+      inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
       
-      @scala.inline
-      def setBaseLineHeight(value: Double | String): Self = StObject.set(x, "baseLineHeight", value.asInstanceOf[js.Any])
+      inline def setBaseLineHeight(value: Double | String): Self = StObject.set(x, "baseLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseLineHeightUndefined: Self = StObject.set(x, "baseLineHeight", js.undefined)
+      inline def setBaseLineHeightUndefined: Self = StObject.set(x, "baseLineHeight", js.undefined)
       
-      @scala.inline
-      def setDefaultRhythmBorderStyle(value: solid | none | hidden | dashed | dotted | double | groove | ridge | inset | outset): Self = StObject.set(x, "defaultRhythmBorderStyle", value.asInstanceOf[js.Any])
+      inline def setDefaultRhythmBorderStyle(value: solid | none | hidden | dashed | dotted | double | groove | ridge | inset | outset): Self = StObject.set(x, "defaultRhythmBorderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRhythmBorderStyleUndefined: Self = StObject.set(x, "defaultRhythmBorderStyle", js.undefined)
+      inline def setDefaultRhythmBorderStyleUndefined: Self = StObject.set(x, "defaultRhythmBorderStyle", js.undefined)
       
-      @scala.inline
-      def setDefaultRhythmBorderWidth(value: String): Self = StObject.set(x, "defaultRhythmBorderWidth", value.asInstanceOf[js.Any])
+      inline def setDefaultRhythmBorderWidth(value: String): Self = StObject.set(x, "defaultRhythmBorderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRhythmBorderWidthUndefined: Self = StObject.set(x, "defaultRhythmBorderWidth", js.undefined)
+      inline def setDefaultRhythmBorderWidthUndefined: Self = StObject.set(x, "defaultRhythmBorderWidth", js.undefined)
       
-      @scala.inline
-      def setMinLinePadding(value: String): Self = StObject.set(x, "minLinePadding", value.asInstanceOf[js.Any])
+      inline def setMinLinePadding(value: String): Self = StObject.set(x, "minLinePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLinePaddingUndefined: Self = StObject.set(x, "minLinePadding", js.undefined)
+      inline def setMinLinePaddingUndefined: Self = StObject.set(x, "minLinePadding", js.undefined)
       
-      @scala.inline
-      def setRhythmUnit(value: Percentsign | em | ex | ch | px | rem | vw | vh | vmin): Self = StObject.set(x, "rhythmUnit", value.asInstanceOf[js.Any])
+      inline def setRhythmUnit(value: Percentsign | em | ex | ch | px | rem | vw | vh | vmin): Self = StObject.set(x, "rhythmUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRhythmUnitUndefined: Self = StObject.set(x, "rhythmUnit", js.undefined)
+      inline def setRhythmUnitUndefined: Self = StObject.set(x, "rhythmUnit", js.undefined)
       
-      @scala.inline
-      def setRoundToNearestHalfLine(value: Boolean): Self = StObject.set(x, "roundToNearestHalfLine", value.asInstanceOf[js.Any])
+      inline def setRoundToNearestHalfLine(value: Boolean): Self = StObject.set(x, "roundToNearestHalfLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundToNearestHalfLineUndefined: Self = StObject.set(x, "roundToNearestHalfLine", js.undefined)
+      inline def setRoundToNearestHalfLineUndefined: Self = StObject.set(x, "roundToNearestHalfLine", js.undefined)
     }
   }
   
@@ -141,20 +124,16 @@ object mod {
   }
   object VerticalRhythmStyles {
     
-    @scala.inline
-    def apply(fontSize: String, lineHeight: String): VerticalRhythmStyles = {
+    inline def apply(fontSize: String, lineHeight: String): VerticalRhythmStyles = {
       val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerticalRhythmStyles]
     }
     
-    @scala.inline
-    implicit class VerticalRhythmStylesMutableBuilder[Self <: VerticalRhythmStyles] (val x: Self) extends AnyVal {
+    extension [Self <: VerticalRhythmStyles](x: Self) {
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     }
   }
 }

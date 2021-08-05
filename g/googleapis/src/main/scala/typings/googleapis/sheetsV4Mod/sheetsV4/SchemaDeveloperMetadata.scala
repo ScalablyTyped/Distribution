@@ -47,43 +47,31 @@ trait SchemaDeveloperMetadata extends StObject {
 }
 object SchemaDeveloperMetadata {
   
-  @scala.inline
-  def apply(): SchemaDeveloperMetadata = {
+  inline def apply(): SchemaDeveloperMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeveloperMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaDeveloperMetadataMutableBuilder[Self <: SchemaDeveloperMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeveloperMetadata](x: Self) {
     
-    @scala.inline
-    def setLocation(value: SchemaDeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SchemaDeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMetadataId(value: Double): Self = StObject.set(x, "metadataId", value.asInstanceOf[js.Any])
+    inline def setMetadataId(value: Double): Self = StObject.set(x, "metadataId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataIdUndefined: Self = StObject.set(x, "metadataId", js.undefined)
+    inline def setMetadataIdUndefined: Self = StObject.set(x, "metadataId", js.undefined)
     
-    @scala.inline
-    def setMetadataKey(value: String): Self = StObject.set(x, "metadataKey", value.asInstanceOf[js.Any])
+    inline def setMetadataKey(value: String): Self = StObject.set(x, "metadataKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataKeyUndefined: Self = StObject.set(x, "metadataKey", js.undefined)
+    inline def setMetadataKeyUndefined: Self = StObject.set(x, "metadataKey", js.undefined)
     
-    @scala.inline
-    def setMetadataValue(value: String): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
+    inline def setMetadataValue(value: String): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataValueUndefined: Self = StObject.set(x, "metadataValue", js.undefined)
+    inline def setMetadataValueUndefined: Self = StObject.set(x, "metadataValue", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

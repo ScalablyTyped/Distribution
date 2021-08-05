@@ -10,19 +10,15 @@ trait Events extends StObject {
 }
 object Events {
   
-  @scala.inline
-  def apply(): Events = {
+  inline def apply(): Events = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Events]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+  extension [Self <: Events](x: Self) {
     
-    @scala.inline
-    def setEvents(value: String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

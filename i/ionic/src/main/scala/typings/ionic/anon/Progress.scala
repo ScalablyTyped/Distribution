@@ -10,19 +10,15 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(): Progress = {
+  inline def apply(): Progress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setProgress(value: (/* loaded */ Double, /* total */ Double) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* loaded */ Double, /* total */ Double) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

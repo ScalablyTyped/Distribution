@@ -19,8 +19,7 @@ trait TransactionStatusHistory extends StObject {
 }
 object TransactionStatusHistory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: String,
     status: TransactionStatus,
     timestamp: Date,
@@ -31,22 +30,16 @@ object TransactionStatusHistory {
     __obj.asInstanceOf[TransactionStatusHistory]
   }
   
-  @scala.inline
-  implicit class TransactionStatusHistoryMutableBuilder[Self <: TransactionStatusHistory] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionStatusHistory](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TransactionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TransactionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionsource(value: TransactionSource): Self = StObject.set(x, "transactionsource", value.asInstanceOf[js.Any])
+    inline def setTransactionsource(value: TransactionSource): Self = StObject.set(x, "transactionsource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

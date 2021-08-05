@@ -89,49 +89,35 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Product extends StObject {
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1Product {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1Product = {
+  inline def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1Product = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudPrivatecatalogproducerV1beta1Product]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogproducerV1beta1ProductMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1Product] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1Product](x: Self) {
     
-    @scala.inline
-    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+    inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDisplayMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "displayMetadata", value.asInstanceOf[js.Any])
+    inline def setDisplayMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "displayMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayMetadataUndefined: Self = StObject.set(x, "displayMetadata", js.undefined)
+    inline def setDisplayMetadataUndefined: Self = StObject.set(x, "displayMetadata", js.undefined)
     
-    @scala.inline
-    def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
+    inline def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUriUndefined: Self = StObject.set(x, "iconUri", js.undefined)
+    inline def setIconUriUndefined: Self = StObject.set(x, "iconUri", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -90,185 +90,126 @@ object galleriaMod {
   }
   object GalleriaProps {
     
-    @scala.inline
-    def apply(): GalleriaProps = {
+    inline def apply(): GalleriaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GalleriaProps]
     }
     
-    @scala.inline
-    implicit class GalleriaPropsMutableBuilder[Self <: GalleriaProps] (val x: Self) extends AnyVal {
+    extension [Self <: GalleriaProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+      inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      @scala.inline
-      def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+      inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+      inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
       
-      @scala.inline
-      def setBaseZIndex(value: Double): Self = StObject.set(x, "baseZIndex", value.asInstanceOf[js.Any])
+      inline def setBaseZIndex(value: Double): Self = StObject.set(x, "baseZIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseZIndexUndefined: Self = StObject.set(x, "baseZIndex", js.undefined)
+      inline def setBaseZIndexUndefined: Self = StObject.set(x, "baseZIndex", js.undefined)
       
-      @scala.inline
-      def setCaption(value: js.Any): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: js.Any): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setChangeItemOnIndicatorHover(value: Boolean): Self = StObject.set(x, "changeItemOnIndicatorHover", value.asInstanceOf[js.Any])
+      inline def setChangeItemOnIndicatorHover(value: Boolean): Self = StObject.set(x, "changeItemOnIndicatorHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeItemOnIndicatorHoverUndefined: Self = StObject.set(x, "changeItemOnIndicatorHover", js.undefined)
+      inline def setChangeItemOnIndicatorHoverUndefined: Self = StObject.set(x, "changeItemOnIndicatorHover", js.undefined)
       
-      @scala.inline
-      def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+      inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+      inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+      inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+      inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
       
-      @scala.inline
-      def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIndicator(value: js.Any): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+      inline def setIndicator(value: js.Any): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+      inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
       
-      @scala.inline
-      def setIndicatorsPosition(value: String): Self = StObject.set(x, "indicatorsPosition", value.asInstanceOf[js.Any])
+      inline def setIndicatorsPosition(value: String): Self = StObject.set(x, "indicatorsPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorsPositionUndefined: Self = StObject.set(x, "indicatorsPosition", js.undefined)
+      inline def setIndicatorsPositionUndefined: Self = StObject.set(x, "indicatorsPosition", js.undefined)
       
-      @scala.inline
-      def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setNumVisible(value: Double): Self = StObject.set(x, "numVisible", value.asInstanceOf[js.Any])
+      inline def setNumVisible(value: Double): Self = StObject.set(x, "numVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumVisibleUndefined: Self = StObject.set(x, "numVisible", js.undefined)
+      inline def setNumVisibleUndefined: Self = StObject.set(x, "numVisible", js.undefined)
       
-      @scala.inline
-      def setOnItemChange(value: /* e */ IndexNumber => Unit): Self = StObject.set(x, "onItemChange", js.Any.fromFunction1(value))
+      inline def setOnItemChange(value: /* e */ IndexNumber => Unit): Self = StObject.set(x, "onItemChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemChangeUndefined: Self = StObject.set(x, "onItemChange", js.undefined)
+      inline def setOnItemChangeUndefined: Self = StObject.set(x, "onItemChange", js.undefined)
       
-      @scala.inline
-      def setResponsiveOptions(value: js.Any): Self = StObject.set(x, "responsiveOptions", value.asInstanceOf[js.Any])
+      inline def setResponsiveOptions(value: js.Any): Self = StObject.set(x, "responsiveOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveOptionsUndefined: Self = StObject.set(x, "responsiveOptions", js.undefined)
+      inline def setResponsiveOptionsUndefined: Self = StObject.set(x, "responsiveOptions", js.undefined)
       
-      @scala.inline
-      def setShowIndicators(value: Boolean): Self = StObject.set(x, "showIndicators", value.asInstanceOf[js.Any])
+      inline def setShowIndicators(value: Boolean): Self = StObject.set(x, "showIndicators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowIndicatorsOnItem(value: Boolean): Self = StObject.set(x, "showIndicatorsOnItem", value.asInstanceOf[js.Any])
+      inline def setShowIndicatorsOnItem(value: Boolean): Self = StObject.set(x, "showIndicatorsOnItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowIndicatorsOnItemUndefined: Self = StObject.set(x, "showIndicatorsOnItem", js.undefined)
+      inline def setShowIndicatorsOnItemUndefined: Self = StObject.set(x, "showIndicatorsOnItem", js.undefined)
       
-      @scala.inline
-      def setShowIndicatorsUndefined: Self = StObject.set(x, "showIndicators", js.undefined)
+      inline def setShowIndicatorsUndefined: Self = StObject.set(x, "showIndicators", js.undefined)
       
-      @scala.inline
-      def setShowItemNavigators(value: Boolean): Self = StObject.set(x, "showItemNavigators", value.asInstanceOf[js.Any])
+      inline def setShowItemNavigators(value: Boolean): Self = StObject.set(x, "showItemNavigators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowItemNavigatorsOnHover(value: Boolean): Self = StObject.set(x, "showItemNavigatorsOnHover", value.asInstanceOf[js.Any])
+      inline def setShowItemNavigatorsOnHover(value: Boolean): Self = StObject.set(x, "showItemNavigatorsOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowItemNavigatorsOnHoverUndefined: Self = StObject.set(x, "showItemNavigatorsOnHover", js.undefined)
+      inline def setShowItemNavigatorsOnHoverUndefined: Self = StObject.set(x, "showItemNavigatorsOnHover", js.undefined)
       
-      @scala.inline
-      def setShowItemNavigatorsUndefined: Self = StObject.set(x, "showItemNavigators", js.undefined)
+      inline def setShowItemNavigatorsUndefined: Self = StObject.set(x, "showItemNavigators", js.undefined)
       
-      @scala.inline
-      def setShowThumbnailNavigators(value: Boolean): Self = StObject.set(x, "showThumbnailNavigators", value.asInstanceOf[js.Any])
+      inline def setShowThumbnailNavigators(value: Boolean): Self = StObject.set(x, "showThumbnailNavigators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowThumbnailNavigatorsUndefined: Self = StObject.set(x, "showThumbnailNavigators", js.undefined)
+      inline def setShowThumbnailNavigatorsUndefined: Self = StObject.set(x, "showThumbnailNavigators", js.undefined)
       
-      @scala.inline
-      def setShowThumbnails(value: Boolean): Self = StObject.set(x, "showThumbnails", value.asInstanceOf[js.Any])
+      inline def setShowThumbnails(value: Boolean): Self = StObject.set(x, "showThumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowThumbnailsUndefined: Self = StObject.set(x, "showThumbnails", js.undefined)
+      inline def setShowThumbnailsUndefined: Self = StObject.set(x, "showThumbnails", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
       
-      @scala.inline
-      def setThumbnailsPosition(value: String): Self = StObject.set(x, "thumbnailsPosition", value.asInstanceOf[js.Any])
+      inline def setThumbnailsPosition(value: String): Self = StObject.set(x, "thumbnailsPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailsPositionUndefined: Self = StObject.set(x, "thumbnailsPosition", js.undefined)
+      inline def setThumbnailsPositionUndefined: Self = StObject.set(x, "thumbnailsPosition", js.undefined)
       
-      @scala.inline
-      def setTransitionInterval(value: Double): Self = StObject.set(x, "transitionInterval", value.asInstanceOf[js.Any])
+      inline def setTransitionInterval(value: Double): Self = StObject.set(x, "transitionInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionIntervalUndefined: Self = StObject.set(x, "transitionInterval", js.undefined)
+      inline def setTransitionIntervalUndefined: Self = StObject.set(x, "transitionInterval", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
 }

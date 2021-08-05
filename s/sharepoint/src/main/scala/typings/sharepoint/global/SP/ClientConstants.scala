@@ -19,141 +19,121 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.Actions")
   @js.native
   def Actions: String = js.native
-  @scala.inline
-  def Actions_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actions")(x.asInstanceOf[js.Any])
+  inline def Actions_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actions")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.AddExpandoFieldTypeSuffix")
   @js.native
   def AddExpandoFieldTypeSuffix: String = js.native
-  @scala.inline
-  def AddExpandoFieldTypeSuffix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddExpandoFieldTypeSuffix")(x.asInstanceOf[js.Any])
+  inline def AddExpandoFieldTypeSuffix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddExpandoFieldTypeSuffix")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ApplicationName")
   @js.native
   def ApplicationName: String = js.native
-  @scala.inline
-  def ApplicationName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplicationName")(x.asInstanceOf[js.Any])
+  inline def ApplicationName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplicationName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Body")
   @js.native
   def Body: String = js.native
-  @scala.inline
-  def Body_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  inline def Body_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.CatchScope")
   @js.native
   def CatchScope: String = js.native
-  @scala.inline
-  def CatchScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CatchScope")(x.asInstanceOf[js.Any])
+  inline def CatchScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CatchScope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ChildItemQuery")
   @js.native
   def ChildItemQuery: String = js.native
-  @scala.inline
-  def ChildItemQuery_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChildItemQuery")(x.asInstanceOf[js.Any])
+  inline def ChildItemQuery_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChildItemQuery")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ChildItems")
   @js.native
   def ChildItems: String = js.native
-  @scala.inline
-  def ChildItems_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChildItems")(x.asInstanceOf[js.Any])
+  inline def ChildItems_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChildItems")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ClientTagHeader")
   @js.native
   def ClientTagHeader: String = js.native
-  @scala.inline
-  def ClientTagHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClientTagHeader")(x.asInstanceOf[js.Any])
+  inline def ClientTagHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClientTagHeader")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ConditionalScope")
   @js.native
   def ConditionalScope: String = js.native
-  @scala.inline
-  def ConditionalScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConditionalScope")(x.asInstanceOf[js.Any])
+  inline def ConditionalScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConditionalScope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Constructor")
   @js.native
   def Constructor: String = js.native
-  @scala.inline
-  def Constructor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constructor")(x.asInstanceOf[js.Any])
+  inline def Constructor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constructor")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Context")
   @js.native
   def Context: String = js.native
-  @scala.inline
-  def Context_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Context")(x.asInstanceOf[js.Any])
+  inline def Context_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Context")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Count")
   @js.native
   def Count: String = js.native
-  @scala.inline
-  def Count_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
+  inline def Count_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorCode")
   @js.native
   def ErrorCode: String = js.native
-  @scala.inline
-  def ErrorCode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorCode")(x.asInstanceOf[js.Any])
+  inline def ErrorCode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorCode")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorDetails")
   @js.native
   def ErrorDetails: String = js.native
-  @scala.inline
-  def ErrorDetails_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorDetails")(x.asInstanceOf[js.Any])
+  inline def ErrorDetails_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorDetails")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorInfo")
   @js.native
   def ErrorInfo: String = js.native
-  @scala.inline
-  def ErrorInfo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorInfo")(x.asInstanceOf[js.Any])
+  inline def ErrorInfo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorInfo")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorMessage")
   @js.native
   def ErrorMessage: String = js.native
-  @scala.inline
-  def ErrorMessage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorMessage")(x.asInstanceOf[js.Any])
+  inline def ErrorMessage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorMessage")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorStackTrace")
   @js.native
   def ErrorStackTrace: String = js.native
-  @scala.inline
-  def ErrorStackTrace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorStackTrace")(x.asInstanceOf[js.Any])
+  inline def ErrorStackTrace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorStackTrace")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorTraceCorrelationId")
   @js.native
   def ErrorTraceCorrelationId: String = js.native
-  @scala.inline
-  def ErrorTraceCorrelationId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorTraceCorrelationId")(x.asInstanceOf[js.Any])
+  inline def ErrorTraceCorrelationId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorTraceCorrelationId")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorTypeName")
   @js.native
   def ErrorTypeName: String = js.native
-  @scala.inline
-  def ErrorTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorTypeName")(x.asInstanceOf[js.Any])
+  inline def ErrorTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ErrorValue")
   @js.native
   def ErrorValue: String = js.native
-  @scala.inline
-  def ErrorValue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorValue")(x.asInstanceOf[js.Any])
+  inline def ErrorValue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorValue")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ExceptionHandlingScope")
@@ -164,102 +144,87 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.ExceptionHandlingScopeSimple")
   @js.native
   def ExceptionHandlingScopeSimple: String = js.native
-  @scala.inline
-  def ExceptionHandlingScopeSimple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExceptionHandlingScopeSimple")(x.asInstanceOf[js.Any])
+  inline def ExceptionHandlingScopeSimple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExceptionHandlingScopeSimple")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ExceptionHandlingScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExceptionHandlingScope")(x.asInstanceOf[js.Any])
+  inline def ExceptionHandlingScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExceptionHandlingScope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.FieldValuesMethodName")
   @js.native
   def FieldValuesMethodName: String = js.native
-  @scala.inline
-  def FieldValuesMethodName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldValuesMethodName")(x.asInstanceOf[js.Any])
+  inline def FieldValuesMethodName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldValuesMethodName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.FinallyScope")
   @js.native
   def FinallyScope: String = js.native
-  @scala.inline
-  def FinallyScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FinallyScope")(x.asInstanceOf[js.Any])
+  inline def FinallyScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FinallyScope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.FormDigestHeader")
   @js.native
   def FormDigestHeader: String = js.native
-  @scala.inline
-  def FormDigestHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormDigestHeader")(x.asInstanceOf[js.Any])
+  inline def FormDigestHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormDigestHeader")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.HasException")
   @js.native
   def HasException: String = js.native
-  @scala.inline
-  def HasException_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HasException")(x.asInstanceOf[js.Any])
+  inline def HasException_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HasException")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Id")
   @js.native
   def Id: String = js.native
-  @scala.inline
-  def Id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Id")(x.asInstanceOf[js.Any])
+  inline def Id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Id")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Identity")
   @js.native
   def Identity: String = js.native
-  @scala.inline
-  def Identity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Identity")(x.asInstanceOf[js.Any])
+  inline def Identity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Identity")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.IfFalseScope")
   @js.native
   def IfFalseScope: String = js.native
-  @scala.inline
-  def IfFalseScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IfFalseScope")(x.asInstanceOf[js.Any])
+  inline def IfFalseScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IfFalseScope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.IfTrueScope")
   @js.native
   def IfTrueScope: String = js.native
-  @scala.inline
-  def IfTrueScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IfTrueScope")(x.asInstanceOf[js.Any])
+  inline def IfTrueScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IfTrueScope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.IsNull")
   @js.native
   def IsNull: String = js.native
-  @scala.inline
-  def IsNull_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsNull")(x.asInstanceOf[js.Any])
+  inline def IsNull_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsNull")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.LibraryVersion")
   @js.native
   def LibraryVersion: String = js.native
-  @scala.inline
-  def LibraryVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LibraryVersion")(x.asInstanceOf[js.Any])
+  inline def LibraryVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LibraryVersion")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Method")
   @js.native
   def Method: String = js.native
-  @scala.inline
-  def Method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Method")(x.asInstanceOf[js.Any])
+  inline def Method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Method")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Methods")
   @js.native
   def Methods: String = js.native
-  @scala.inline
-  def Methods_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Methods")(x.asInstanceOf[js.Any])
+  inline def Methods_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Methods")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Name")
   @js.native
   def Name: String = js.native
-  @scala.inline
-  def Name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Name")(x.asInstanceOf[js.Any])
+  inline def Name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Name")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Object")
@@ -275,11 +240,9 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.ObjectIdentityQuery")
   @js.native
   def ObjectIdentityQuery: String = js.native
-  @scala.inline
-  def ObjectIdentityQuery_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectIdentityQuery")(x.asInstanceOf[js.Any])
+  inline def ObjectIdentityQuery_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectIdentityQuery")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ObjectIdentity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectIdentity")(x.asInstanceOf[js.Any])
+  inline def ObjectIdentity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectIdentity")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ObjectPath")
@@ -290,77 +253,65 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.ObjectPathId")
   @js.native
   def ObjectPathId: String = js.native
-  @scala.inline
-  def ObjectPathId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPathId")(x.asInstanceOf[js.Any])
+  inline def ObjectPathId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPathId")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ObjectPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPath")(x.asInstanceOf[js.Any])
+  inline def ObjectPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPath")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ObjectPaths")
   @js.native
   def ObjectPaths: String = js.native
-  @scala.inline
-  def ObjectPaths_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPaths")(x.asInstanceOf[js.Any])
+  inline def ObjectPaths_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPaths")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ObjectType")
   @js.native
   def ObjectType: String = js.native
-  @scala.inline
-  def ObjectType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectType")(x.asInstanceOf[js.Any])
+  inline def ObjectType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectType")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ObjectVersion")
   @js.native
   def ObjectVersion: String = js.native
-  @scala.inline
-  def ObjectVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectVersion")(x.asInstanceOf[js.Any])
+  inline def ObjectVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectVersion")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Object_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+  inline def Object_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Parameter")
   @js.native
   def Parameter: String = js.native
-  @scala.inline
-  def Parameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parameter")(x.asInstanceOf[js.Any])
+  inline def Parameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parameter")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Parameters")
   @js.native
   def Parameters: String = js.native
-  @scala.inline
-  def Parameters_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parameters")(x.asInstanceOf[js.Any])
+  inline def Parameters_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parameters")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ParentId")
   @js.native
   def ParentId: String = js.native
-  @scala.inline
-  def ParentId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParentId")(x.asInstanceOf[js.Any])
+  inline def ParentId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParentId")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Processed")
   @js.native
   def Processed: String = js.native
-  @scala.inline
-  def Processed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Processed")(x.asInstanceOf[js.Any])
+  inline def Processed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Processed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Properties")
   @js.native
   def Properties: String = js.native
-  @scala.inline
-  def Properties_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Properties")(x.asInstanceOf[js.Any])
+  inline def Properties_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Properties")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Property")
   @js.native
   def Property: String = js.native
-  @scala.inline
-  def Property_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
+  inline def Property_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Query")
@@ -371,18 +322,15 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.QueryResult")
   @js.native
   def QueryResult: String = js.native
-  @scala.inline
-  def QueryResult_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryResult")(x.asInstanceOf[js.Any])
+  inline def QueryResult_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryResult")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Query_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Query")(x.asInstanceOf[js.Any])
+  inline def Query_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Query")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.QueryableExpression")
   @js.native
   def QueryableExpression: String = js.native
-  @scala.inline
-  def QueryableExpression_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryableExpression")(x.asInstanceOf[js.Any])
+  inline def QueryableExpression_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryableExpression")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Request")
@@ -393,39 +341,33 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.RequestTokenHeader")
   @js.native
   def RequestTokenHeader: String = js.native
-  @scala.inline
-  def RequestTokenHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RequestTokenHeader")(x.asInstanceOf[js.Any])
+  inline def RequestTokenHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RequestTokenHeader")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Request_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Request")(x.asInstanceOf[js.Any])
+  inline def Request_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Request")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Results")
   @js.native
   def Results: String = js.native
-  @scala.inline
-  def Results_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Results")(x.asInstanceOf[js.Any])
+  inline def Results_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Results")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ScalarProperty")
   @js.native
   def ScalarProperty: String = js.native
-  @scala.inline
-  def ScalarProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScalarProperty")(x.asInstanceOf[js.Any])
+  inline def ScalarProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScalarProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SchemaVersion")
   @js.native
   def SchemaVersion: String = js.native
-  @scala.inline
-  def SchemaVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SchemaVersion")(x.asInstanceOf[js.Any])
+  inline def SchemaVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SchemaVersion")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ScopeId")
   @js.native
   def ScopeId: String = js.native
-  @scala.inline
-  def ScopeId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScopeId")(x.asInstanceOf[js.Any])
+  inline def ScopeId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScopeId")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SelectAll")
@@ -436,151 +378,129 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.SelectAllProperties")
   @js.native
   def SelectAllProperties: String = js.native
-  @scala.inline
-  def SelectAllProperties_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectAllProperties")(x.asInstanceOf[js.Any])
+  inline def SelectAllProperties_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectAllProperties")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def SelectAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectAll")(x.asInstanceOf[js.Any])
+  inline def SelectAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectAll")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ServiceFileName")
   @js.native
   def ServiceFileName: String = js.native
-  @scala.inline
-  def ServiceFileName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceFileName")(x.asInstanceOf[js.Any])
+  inline def ServiceFileName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceFileName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ServiceMethodName")
   @js.native
   def ServiceMethodName: String = js.native
-  @scala.inline
-  def ServiceMethodName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceMethodName")(x.asInstanceOf[js.Any])
+  inline def ServiceMethodName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceMethodName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SetProperty")
   @js.native
   def SetProperty: String = js.native
-  @scala.inline
-  def SetProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetProperty")(x.asInstanceOf[js.Any])
+  inline def SetProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SetStaticProperty")
   @js.native
   def SetStaticProperty: String = js.native
-  @scala.inline
-  def SetStaticProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetStaticProperty")(x.asInstanceOf[js.Any])
+  inline def SetStaticProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetStaticProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.StaticMethod")
   @js.native
   def StaticMethod: String = js.native
-  @scala.inline
-  def StaticMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StaticMethod")(x.asInstanceOf[js.Any])
+  inline def StaticMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StaticMethod")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.StaticProperty")
   @js.native
   def StaticProperty: String = js.native
-  @scala.inline
-  def StaticProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StaticProperty")(x.asInstanceOf[js.Any])
+  inline def StaticProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StaticProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixArray")
   @js.native
   def SuffixArray: String = js.native
-  @scala.inline
-  def SuffixArray_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixArray")(x.asInstanceOf[js.Any])
+  inline def SuffixArray_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixArray")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixByte")
   @js.native
   def SuffixByte: String = js.native
-  @scala.inline
-  def SuffixByte_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixByte")(x.asInstanceOf[js.Any])
+  inline def SuffixByte_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixByte")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixChar")
   @js.native
   def SuffixChar: String = js.native
-  @scala.inline
-  def SuffixChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixChar")(x.asInstanceOf[js.Any])
+  inline def SuffixChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixChar")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixDecimal")
   @js.native
   def SuffixDecimal: String = js.native
-  @scala.inline
-  def SuffixDecimal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixDecimal")(x.asInstanceOf[js.Any])
+  inline def SuffixDecimal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixDecimal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixDouble")
   @js.native
   def SuffixDouble: String = js.native
-  @scala.inline
-  def SuffixDouble_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixDouble")(x.asInstanceOf[js.Any])
+  inline def SuffixDouble_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixDouble")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixInt16")
   @js.native
   def SuffixInt16: String = js.native
-  @scala.inline
-  def SuffixInt16_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixInt16")(x.asInstanceOf[js.Any])
+  inline def SuffixInt16_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixInt16")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixInt32")
   @js.native
   def SuffixInt32: String = js.native
-  @scala.inline
-  def SuffixInt32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixInt32")(x.asInstanceOf[js.Any])
+  inline def SuffixInt32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixInt32")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixInt64")
   @js.native
   def SuffixInt64: String = js.native
-  @scala.inline
-  def SuffixInt64_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixInt64")(x.asInstanceOf[js.Any])
+  inline def SuffixInt64_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixInt64")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixSingle")
   @js.native
   def SuffixSingle: String = js.native
-  @scala.inline
-  def SuffixSingle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixSingle")(x.asInstanceOf[js.Any])
+  inline def SuffixSingle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixSingle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixTimeSpan")
   @js.native
   def SuffixTimeSpan: String = js.native
-  @scala.inline
-  def SuffixTimeSpan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixTimeSpan")(x.asInstanceOf[js.Any])
+  inline def SuffixTimeSpan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixTimeSpan")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixUInt16")
   @js.native
   def SuffixUInt16: String = js.native
-  @scala.inline
-  def SuffixUInt16_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixUInt16")(x.asInstanceOf[js.Any])
+  inline def SuffixUInt16_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixUInt16")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixUInt32")
   @js.native
   def SuffixUInt32: String = js.native
-  @scala.inline
-  def SuffixUInt32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixUInt32")(x.asInstanceOf[js.Any])
+  inline def SuffixUInt32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixUInt32")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.SuffixUInt64")
   @js.native
   def SuffixUInt64: String = js.native
-  @scala.inline
-  def SuffixUInt64_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixUInt64")(x.asInstanceOf[js.Any])
+  inline def SuffixUInt64_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuffixUInt64")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Test")
   @js.native
   def Test: String = js.native
-  @scala.inline
-  def Test_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Test")(x.asInstanceOf[js.Any])
+  inline def Test_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Test")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.TraceCorrelationId")
@@ -591,25 +511,21 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.TraceCorrelationIdRequestHeader")
   @js.native
   def TraceCorrelationIdRequestHeader: String = js.native
-  @scala.inline
-  def TraceCorrelationIdRequestHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TraceCorrelationIdRequestHeader")(x.asInstanceOf[js.Any])
+  inline def TraceCorrelationIdRequestHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TraceCorrelationIdRequestHeader")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.TraceCorrelationIdResponseHeader")
   @js.native
   def TraceCorrelationIdResponseHeader: String = js.native
-  @scala.inline
-  def TraceCorrelationIdResponseHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TraceCorrelationIdResponseHeader")(x.asInstanceOf[js.Any])
+  inline def TraceCorrelationIdResponseHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TraceCorrelationIdResponseHeader")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def TraceCorrelationId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TraceCorrelationId")(x.asInstanceOf[js.Any])
+  inline def TraceCorrelationId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TraceCorrelationId")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.TryScope")
   @js.native
   def TryScope: String = js.native
-  @scala.inline
-  def TryScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TryScope")(x.asInstanceOf[js.Any])
+  inline def TryScope_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TryScope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Type")
@@ -620,123 +536,105 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.TypeId")
   @js.native
   def TypeId: String = js.native
-  @scala.inline
-  def TypeId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TypeId")(x.asInstanceOf[js.Any])
+  inline def TypeId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TypeId")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Type_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Type")(x.asInstanceOf[js.Any])
+  inline def Type_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Type")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Update")
   @js.native
   def Update: String = js.native
-  @scala.inline
-  def Update_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Update")(x.asInstanceOf[js.Any])
+  inline def Update_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Update")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.Version")
   @js.native
   def Version: String = js.native
-  @scala.inline
-  def Version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Version")(x.asInstanceOf[js.Any])
+  inline def Version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Version")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.XmlElementAttributes")
   @js.native
   def XmlElementAttributes: String = js.native
-  @scala.inline
-  def XmlElementAttributes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlElementAttributes")(x.asInstanceOf[js.Any])
+  inline def XmlElementAttributes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlElementAttributes")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.XmlElementChildren")
   @js.native
   def XmlElementChildren: String = js.native
-  @scala.inline
-  def XmlElementChildren_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlElementChildren")(x.asInstanceOf[js.Any])
+  inline def XmlElementChildren_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlElementChildren")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.XmlElementName")
   @js.native
   def XmlElementName: String = js.native
-  @scala.inline
-  def XmlElementName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlElementName")(x.asInstanceOf[js.Any])
+  inline def XmlElementName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlElementName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.XmlNamespace")
   @js.native
   def XmlNamespace: String = js.native
-  @scala.inline
-  def XmlNamespace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlNamespace")(x.asInstanceOf[js.Any])
+  inline def XmlNamespace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlNamespace")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.andAlso")
   @js.native
   def andAlso: String = js.native
-  @scala.inline
-  def andAlso_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("andAlso")(x.asInstanceOf[js.Any])
+  inline def andAlso_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("andAlso")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.equal")
   @js.native
   def equal: String = js.native
-  @scala.inline
-  def equal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("equal")(x.asInstanceOf[js.Any])
+  inline def equal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("equal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionConstant")
   @js.native
   def expressionConstant: String = js.native
-  @scala.inline
-  def expressionConstant_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionConstant")(x.asInstanceOf[js.Any])
+  inline def expressionConstant_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionConstant")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionConvert")
   @js.native
   def expressionConvert: String = js.native
-  @scala.inline
-  def expressionConvert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionConvert")(x.asInstanceOf[js.Any])
+  inline def expressionConvert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionConvert")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionMethod")
   @js.native
   def expressionMethod: String = js.native
-  @scala.inline
-  def expressionMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionMethod")(x.asInstanceOf[js.Any])
+  inline def expressionMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionMethod")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionParameter")
   @js.native
   def expressionParameter: String = js.native
-  @scala.inline
-  def expressionParameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionParameter")(x.asInstanceOf[js.Any])
+  inline def expressionParameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionParameter")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionProperty")
   @js.native
   def expressionProperty: String = js.native
-  @scala.inline
-  def expressionProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionProperty")(x.asInstanceOf[js.Any])
+  inline def expressionProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionStaticMethod")
   @js.native
   def expressionStaticMethod: String = js.native
-  @scala.inline
-  def expressionStaticMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionStaticMethod")(x.asInstanceOf[js.Any])
+  inline def expressionStaticMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionStaticMethod")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionStaticProperty")
   @js.native
   def expressionStaticProperty: String = js.native
-  @scala.inline
-  def expressionStaticProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionStaticProperty")(x.asInstanceOf[js.Any])
+  inline def expressionStaticProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionStaticProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.expressionTypeIs")
   @js.native
   def expressionTypeIs: String = js.native
-  @scala.inline
-  def expressionTypeIs_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionTypeIs")(x.asInstanceOf[js.Any])
+  inline def expressionTypeIs_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionTypeIs")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.fluidApplicationInitParamFormDigest")
@@ -747,32 +645,27 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.fluidApplicationInitParamFormDigestTimeoutSeconds")
   @js.native
   def fluidApplicationInitParamFormDigestTimeoutSeconds: String = js.native
-  @scala.inline
-  def fluidApplicationInitParamFormDigestTimeoutSeconds_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamFormDigestTimeoutSeconds")(x.asInstanceOf[js.Any])
+  inline def fluidApplicationInitParamFormDigestTimeoutSeconds_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamFormDigestTimeoutSeconds")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def fluidApplicationInitParamFormDigest_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamFormDigest")(x.asInstanceOf[js.Any])
+  inline def fluidApplicationInitParamFormDigest_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamFormDigest")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.fluidApplicationInitParamRequestToken")
   @js.native
   def fluidApplicationInitParamRequestToken: String = js.native
-  @scala.inline
-  def fluidApplicationInitParamRequestToken_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamRequestToken")(x.asInstanceOf[js.Any])
+  inline def fluidApplicationInitParamRequestToken_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamRequestToken")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.fluidApplicationInitParamUrl")
   @js.native
   def fluidApplicationInitParamUrl: String = js.native
-  @scala.inline
-  def fluidApplicationInitParamUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamUrl")(x.asInstanceOf[js.Any])
+  inline def fluidApplicationInitParamUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamUrl")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.fluidApplicationInitParamViaUrl")
   @js.native
   def fluidApplicationInitParamViaUrl: String = js.native
-  @scala.inline
-  def fluidApplicationInitParamViaUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamViaUrl")(x.asInstanceOf[js.Any])
+  inline def fluidApplicationInitParamViaUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluidApplicationInitParamViaUrl")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.greaterThan")
@@ -783,11 +676,9 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.greaterThanOrEqual")
   @js.native
   def greaterThanOrEqual: String = js.native
-  @scala.inline
-  def greaterThanOrEqual_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("greaterThanOrEqual")(x.asInstanceOf[js.Any])
+  inline def greaterThanOrEqual_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("greaterThanOrEqual")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def greaterThan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("greaterThan")(x.asInstanceOf[js.Any])
+  inline def greaterThan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("greaterThan")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.lessThan")
@@ -798,11 +689,9 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.lessThanOrEqual")
   @js.native
   def lessThanOrEqual: String = js.native
-  @scala.inline
-  def lessThanOrEqual_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lessThanOrEqual")(x.asInstanceOf[js.Any])
+  inline def lessThanOrEqual_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lessThanOrEqual")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def lessThan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lessThan")(x.asInstanceOf[js.Any])
+  inline def lessThan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lessThan")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.not")
@@ -813,25 +702,21 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.notEqual")
   @js.native
   def notEqual: String = js.native
-  @scala.inline
-  def notEqual_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notEqual")(x.asInstanceOf[js.Any])
+  inline def notEqual_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notEqual")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def not_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("not")(x.asInstanceOf[js.Any])
+  inline def not_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("not")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.ofType")
   @js.native
   def ofType: String = js.native
-  @scala.inline
-  def ofType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ofType")(x.asInstanceOf[js.Any])
+  inline def ofType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ofType")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.orElse")
   @js.native
   def orElse: String = js.native
-  @scala.inline
-  def orElse_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orElse")(x.asInstanceOf[js.Any])
+  inline def orElse_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orElse")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.orderBy")
@@ -842,25 +727,21 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.orderByDescending")
   @js.native
   def orderByDescending: String = js.native
-  @scala.inline
-  def orderByDescending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderByDescending")(x.asInstanceOf[js.Any])
+  inline def orderByDescending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderByDescending")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def orderBy_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderBy")(x.asInstanceOf[js.Any])
+  inline def orderBy_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderBy")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.queryableObject")
   @js.native
   def queryableObject: String = js.native
-  @scala.inline
-  def queryableObject_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryableObject")(x.asInstanceOf[js.Any])
+  inline def queryableObject_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryableObject")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.take")
   @js.native
   def take: String = js.native
-  @scala.inline
-  def take_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("take")(x.asInstanceOf[js.Any])
+  inline def take_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("take")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.thenBy")
@@ -871,11 +752,9 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.thenByDescending")
   @js.native
   def thenByDescending: String = js.native
-  @scala.inline
-  def thenByDescending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thenByDescending")(x.asInstanceOf[js.Any])
+  inline def thenByDescending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thenByDescending")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def thenBy_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thenBy")(x.asInstanceOf[js.Any])
+  inline def thenBy_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thenBy")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.useWebLanguageHeader")
@@ -886,16 +765,13 @@ object ClientConstants {
   @JSGlobal("SP.ClientConstants.useWebLanguageHeaderValue")
   @js.native
   def useWebLanguageHeaderValue: String = js.native
-  @scala.inline
-  def useWebLanguageHeaderValue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useWebLanguageHeaderValue")(x.asInstanceOf[js.Any])
+  inline def useWebLanguageHeaderValue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useWebLanguageHeaderValue")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def useWebLanguageHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useWebLanguageHeader")(x.asInstanceOf[js.Any])
+  inline def useWebLanguageHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useWebLanguageHeader")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.ClientConstants.where")
   @js.native
   def where: String = js.native
-  @scala.inline
-  def where_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("where")(x.asInstanceOf[js.Any])
+  inline def where_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("where")(x.asInstanceOf[js.Any])
 }

@@ -13,16 +13,13 @@ trait DictKey
 }
 object DictKey {
   
-  @scala.inline
-  def apply(ServiceToken: String): DictKey = {
+  inline def apply(ServiceToken: String): DictKey = {
     val __obj = js.Dynamic.literal(ServiceToken = ServiceToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictKey]
   }
   
-  @scala.inline
-  implicit class DictKeyMutableBuilder[Self <: DictKey] (val x: Self) extends AnyVal {
+  extension [Self <: DictKey](x: Self) {
     
-    @scala.inline
-    def setServiceToken(value: String): Self = StObject.set(x, "ServiceToken", value.asInstanceOf[js.Any])
+    inline def setServiceToken(value: String): Self = StObject.set(x, "ServiceToken", value.asInstanceOf[js.Any])
   }
 }

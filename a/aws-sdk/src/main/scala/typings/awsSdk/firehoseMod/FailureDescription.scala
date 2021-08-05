@@ -18,19 +18,15 @@ trait FailureDescription extends StObject {
 }
 object FailureDescription {
   
-  @scala.inline
-  def apply(Details: NonEmptyString, Type: DeliveryStreamFailureType): FailureDescription = {
+  inline def apply(Details: NonEmptyString, Type: DeliveryStreamFailureType): FailureDescription = {
     val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailureDescription]
   }
   
-  @scala.inline
-  implicit class FailureDescriptionMutableBuilder[Self <: FailureDescription] (val x: Self) extends AnyVal {
+  extension [Self <: FailureDescription](x: Self) {
     
-    @scala.inline
-    def setDetails(value: NonEmptyString): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: NonEmptyString): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DeliveryStreamFailureType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeliveryStreamFailureType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

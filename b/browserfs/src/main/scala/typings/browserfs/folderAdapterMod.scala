@@ -38,8 +38,7 @@ object folderAdapterMod {
     /**
       * Creates a FolderAdapter instance with the given options.
       */
-    @scala.inline
-    def Create(opts: FolderAdapterOptions, cb: BFSCallback[FolderAdapter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: FolderAdapterOptions, cb: BFSCallback[FolderAdapter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/FolderAdapter", "default.Name")
     @js.native
@@ -49,8 +48,7 @@ object folderAdapterMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -195,20 +193,16 @@ object folderAdapterMod {
   }
   object FolderAdapterOptions {
     
-    @scala.inline
-    def apply(folder: String, wrapped: FileSystem): FolderAdapterOptions = {
+    inline def apply(folder: String, wrapped: FileSystem): FolderAdapterOptions = {
       val __obj = js.Dynamic.literal(folder = folder.asInstanceOf[js.Any], wrapped = wrapped.asInstanceOf[js.Any])
       __obj.asInstanceOf[FolderAdapterOptions]
     }
     
-    @scala.inline
-    implicit class FolderAdapterOptionsMutableBuilder[Self <: FolderAdapterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FolderAdapterOptions](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapped(value: FileSystem): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
+      inline def setWrapped(value: FileSystem): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
     }
   }
 }

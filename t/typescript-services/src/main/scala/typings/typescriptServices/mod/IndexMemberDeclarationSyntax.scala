@@ -95,13 +95,11 @@ object IndexMemberDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     indexSignature: typings.typescriptServices.TypeScript.IndexSignatureSyntax,
     semicolonToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(indexSignature.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(indexSignature: typings.typescriptServices.TypeScript.IndexSignatureSyntax): typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(indexSignature.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax]
+  inline def create1(indexSignature: typings.typescriptServices.TypeScript.IndexSignatureSyntax): typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(indexSignature.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax]
 }

@@ -29,8 +29,7 @@ object WeakRef {
     * @param target Heap-allocated JavaScript value to monitor lifetime of.
     * @param callback Function to call when `target` gets GCed.
     */
-  @scala.inline
-  def bind(target: js.Any, callback: WeakRefCallback): WeakRefId = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WeakRefId]
+  inline def bind(target: js.Any, callback: WeakRefCallback): WeakRefId = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WeakRefId]
   
   /**
     * Stops monitoring the value passed to `WeakRef.bind()` and calls the
@@ -38,6 +37,5 @@ object WeakRef {
     *
     * @param id ID returned by a previous call to `WeakRef.bind()`.
     */
-  @scala.inline
-  def unbind(id: WeakRefId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unbind(id: WeakRefId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

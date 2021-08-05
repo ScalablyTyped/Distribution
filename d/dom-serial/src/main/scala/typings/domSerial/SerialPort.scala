@@ -21,8 +21,7 @@ trait SerialPort extends StObject {
 }
 object SerialPort {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getInfo: () => PartialSerialPortInfo,
     open: SerialOptions => js.Promise[Unit],
     readable: ReadableStream[js.Any],
@@ -32,19 +31,14 @@ object SerialPort {
     __obj.asInstanceOf[SerialPort]
   }
   
-  @scala.inline
-  implicit class SerialPortMutableBuilder[Self <: SerialPort] (val x: Self) extends AnyVal {
+  extension [Self <: SerialPort](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: () => PartialSerialPortInfo): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => PartialSerialPortInfo): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: SerialOptions => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: SerialOptions => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    inline def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

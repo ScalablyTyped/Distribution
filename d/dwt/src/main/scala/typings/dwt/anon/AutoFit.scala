@@ -94,187 +94,127 @@ trait AutoFit extends StObject {
 }
 object AutoFit {
   
-  @scala.inline
-  def apply(): AutoFit = {
+  inline def apply(): AutoFit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoFit]
   }
   
-  @scala.inline
-  implicit class AutoFitMutableBuilder[Self <: AutoFit] (val x: Self) extends AnyVal {
+  extension [Self <: AutoFit](x: Self) {
     
-    @scala.inline
-    def setAutoFit(value: IconClass): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
+    inline def setAutoFit(value: IconClass): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
+    inline def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
     
-    @scala.inline
-    def setBlank1(value: Location): Self = StObject.set(x, "blank1", value.asInstanceOf[js.Any])
+    inline def setBlank1(value: Location): Self = StObject.set(x, "blank1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlank1Undefined: Self = StObject.set(x, "blank1", js.undefined)
+    inline def setBlank1Undefined: Self = StObject.set(x, "blank1", js.undefined)
     
-    @scala.inline
-    def setCrop(value: OnButtonClick): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: OnButtonClick): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    @scala.inline
-    def setCurrentTab(value: Location): Self = StObject.set(x, "currentTab", value.asInstanceOf[js.Any])
+    inline def setCurrentTab(value: Location): Self = StObject.set(x, "currentTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTabUndefined: Self = StObject.set(x, "currentTab", js.undefined)
+    inline def setCurrentTabUndefined: Self = StObject.set(x, "currentTab", js.undefined)
     
-    @scala.inline
-    def setFirstPage(value: IconClass): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
+    inline def setFirstPage(value: IconClass): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
+    inline def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
     
-    @scala.inline
-    def setFitHeight(value: IconClass): Self = StObject.set(x, "fitHeight", value.asInstanceOf[js.Any])
+    inline def setFitHeight(value: IconClass): Self = StObject.set(x, "fitHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitHeightUndefined: Self = StObject.set(x, "fitHeight", js.undefined)
+    inline def setFitHeightUndefined: Self = StObject.set(x, "fitHeight", js.undefined)
     
-    @scala.inline
-    def setFitWidth(value: IconClass): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
+    inline def setFitWidth(value: IconClass): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
+    inline def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
     
-    @scala.inline
-    def setFlip(value: IconClass): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    inline def setFlip(value: IconClass): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+    inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
     
-    @scala.inline
-    def setFullPage(value: IconClass): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
+    inline def setFullPage(value: IconClass): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullPageUndefined: Self = StObject.set(x, "fullPage", js.undefined)
+    inline def setFullPageUndefined: Self = StObject.set(x, "fullPage", js.undefined)
     
-    @scala.inline
-    def setFullScreen(value: IconClass): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: IconClass): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
-    @scala.inline
-    def setLastPage(value: OnButtonClick): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
+    inline def setLastPage(value: OnButtonClick): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
+    inline def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
     
-    @scala.inline
-    def setLoadImage(value: IconClass): Self = StObject.set(x, "loadImage", value.asInstanceOf[js.Any])
+    inline def setLoadImage(value: IconClass): Self = StObject.set(x, "loadImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadImageUndefined: Self = StObject.set(x, "loadImage", js.undefined)
+    inline def setLoadImageUndefined: Self = StObject.set(x, "loadImage", js.undefined)
     
-    @scala.inline
-    def setMirror(value: IconClass): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+    inline def setMirror(value: IconClass): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+    inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
-    @scala.inline
-    def setNextPage(value: IconClass): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
+    inline def setNextPage(value: IconClass): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
+    inline def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
     
-    @scala.inline
-    def setPagination(value: LocationVisibility): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: LocationVisibility): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
-    @scala.inline
-    def setPanelChange(value: IconClass): Self = StObject.set(x, "panelChange", value.asInstanceOf[js.Any])
+    inline def setPanelChange(value: IconClass): Self = StObject.set(x, "panelChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelChangeUndefined: Self = StObject.set(x, "panelChange", js.undefined)
+    inline def setPanelChangeUndefined: Self = StObject.set(x, "panelChange", js.undefined)
     
-    @scala.inline
-    def setPreviousPage(value: IconClass): Self = StObject.set(x, "previousPage", value.asInstanceOf[js.Any])
+    inline def setPreviousPage(value: IconClass): Self = StObject.set(x, "previousPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousPageUndefined: Self = StObject.set(x, "previousPage", js.undefined)
+    inline def setPreviousPageUndefined: Self = StObject.set(x, "previousPage", js.undefined)
     
-    @scala.inline
-    def setPrint(value: IconClass): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    inline def setPrint(value: IconClass): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+    inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
-    @scala.inline
-    def setReadDirection(value: IconClass): Self = StObject.set(x, "readDirection", value.asInstanceOf[js.Any])
+    inline def setReadDirection(value: IconClass): Self = StObject.set(x, "readDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadDirectionUndefined: Self = StObject.set(x, "readDirection", js.undefined)
+    inline def setReadDirectionUndefined: Self = StObject.set(x, "readDirection", js.undefined)
     
-    @scala.inline
-    def setRedo(value: IconClassLocation): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+    inline def setRedo(value: IconClassLocation): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
+    inline def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
     
-    @scala.inline
-    def setRemove(value: IconClass): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: IconClass): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setReset(value: SequenceVisibility): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: SequenceVisibility): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setRotate(value: IconClass): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: IconClass): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateAll(value: IconClass): Self = StObject.set(x, "rotateAll", value.asInstanceOf[js.Any])
+    inline def setRotateAll(value: IconClass): Self = StObject.set(x, "rotateAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateAllUndefined: Self = StObject.set(x, "rotateAll", js.undefined)
+    inline def setRotateAllUndefined: Self = StObject.set(x, "rotateAll", js.undefined)
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setSave(value: IconClass): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: IconClass): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setUndo(value: Visibility): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    inline def setUndo(value: Visibility): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
+    inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
-    @scala.inline
-    def setWipe(value: Sequence): Self = StObject.set(x, "wipe", value.asInstanceOf[js.Any])
+    inline def setWipe(value: Sequence): Self = StObject.set(x, "wipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWipeUndefined: Self = StObject.set(x, "wipe", js.undefined)
+    inline def setWipeUndefined: Self = StObject.set(x, "wipe", js.undefined)
     
-    @scala.inline
-    def setZoomIn(value: LocationOnButtonClick): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+    inline def setZoomIn(value: LocationOnButtonClick): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
+    inline def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
     
-    @scala.inline
-    def setZoomOut(value: OnButtonClickSequence): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+    inline def setZoomOut(value: OnButtonClickSequence): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
+    inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
   }
 }

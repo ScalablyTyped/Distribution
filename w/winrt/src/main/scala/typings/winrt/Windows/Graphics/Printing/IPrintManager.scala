@@ -10,16 +10,13 @@ trait IPrintManager extends StObject {
 }
 object IPrintManager {
   
-  @scala.inline
-  def apply(onprinttaskrequested: js.Any): IPrintManager = {
+  inline def apply(onprinttaskrequested: js.Any): IPrintManager = {
     val __obj = js.Dynamic.literal(onprinttaskrequested = onprinttaskrequested.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrintManager]
   }
   
-  @scala.inline
-  implicit class IPrintManagerMutableBuilder[Self <: IPrintManager] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintManager](x: Self) {
     
-    @scala.inline
-    def setOnprinttaskrequested(value: js.Any): Self = StObject.set(x, "onprinttaskrequested", value.asInstanceOf[js.Any])
+    inline def setOnprinttaskrequested(value: js.Any): Self = StObject.set(x, "onprinttaskrequested", value.asInstanceOf[js.Any])
   }
 }

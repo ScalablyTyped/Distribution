@@ -16,40 +16,26 @@ object arangodbGeneralGraphMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def _graph(name: String): GraphkeystringCollectiona = ^.asInstanceOf[js.Dynamic].applyDynamic("_graph")(name.asInstanceOf[js.Any]).asInstanceOf[GraphkeystringCollectiona]
+  inline def _graph(name: String): GraphkeystringCollectiona = ^.asInstanceOf[js.Dynamic].applyDynamic("_graph")(name.asInstanceOf[js.Any]).asInstanceOf[GraphkeystringCollectiona]
   
-  @scala.inline
-  def create(name: String): GraphkeystringCollectiona = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any]).asInstanceOf[GraphkeystringCollectiona]
-  @scala.inline
-  def create(name: String, edgeDefinitions: js.Array[EdgeDefinition]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
-  @scala.inline
-  def create(name: String, edgeDefinitions: js.Array[EdgeDefinition], orphanCollections: js.Array[String]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any], orphanCollections.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
-  @scala.inline
-  def create(name: String, edgeDefinitions: Unit, orphanCollections: js.Array[String]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any], orphanCollections.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
+  inline def create(name: String): GraphkeystringCollectiona = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any]).asInstanceOf[GraphkeystringCollectiona]
+  inline def create(name: String, edgeDefinitions: js.Array[EdgeDefinition]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
+  inline def create(name: String, edgeDefinitions: js.Array[EdgeDefinition], orphanCollections: js.Array[String]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any], orphanCollections.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
+  inline def create(name: String, edgeDefinitions: Unit, orphanCollections: js.Array[String]): GraphkeystringCollectiona = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], edgeDefinitions.asInstanceOf[js.Any], orphanCollections.asInstanceOf[js.Any])).asInstanceOf[GraphkeystringCollectiona]
   
-  @scala.inline
-  def drop(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def drop(name: String, dropCollections: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any], dropCollections.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def drop(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def drop(name: String, dropCollections: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any], dropCollections.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def edgeDefinitions(relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_edgeDefinitions")(relations.asInstanceOf[js.Any]).asInstanceOf[js.Array[EdgeDefinition]]
+  inline def edgeDefinitions(relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_edgeDefinitions")(relations.asInstanceOf[js.Any]).asInstanceOf[js.Array[EdgeDefinition]]
   
-  @scala.inline
-  def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("_extendEdgeDefinitions")(edgeDefinitions.asInstanceOf[js.Any], relations.asInstanceOf[js.Any])).asInstanceOf[js.Array[EdgeDefinition]]
+  inline def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("_extendEdgeDefinitions")(edgeDefinitions.asInstanceOf[js.Any], relations.asInstanceOf[js.Any])).asInstanceOf[js.Array[EdgeDefinition]]
   
-  @scala.inline
-  def list(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_list")().asInstanceOf[js.Array[String]]
+  inline def list(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_list")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def relation(name: String, fromVertexCollections: String, toVertexCollections: String): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
-  @scala.inline
-  def relation(name: String, fromVertexCollections: String, toVertexCollections: js.Array[String]): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
-  @scala.inline
-  def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: String): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
-  @scala.inline
-  def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: js.Array[String]): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
+  inline def relation(name: String, fromVertexCollections: String, toVertexCollections: String): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
+  inline def relation(name: String, fromVertexCollections: String, toVertexCollections: js.Array[String]): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
+  inline def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: String): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
+  inline def relation(name: String, fromVertexCollections: js.Array[String], toVertexCollections: js.Array[String]): EdgeDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("_relation")(name.asInstanceOf[js.Any], fromVertexCollections.asInstanceOf[js.Any], toVertexCollections.asInstanceOf[js.Any])).asInstanceOf[EdgeDefinition]
   
   type Betweenness = Eccentricity
   
@@ -63,32 +49,24 @@ object arangodbGeneralGraphMod {
   }
   object BetweennessOptions {
     
-    @scala.inline
-    def apply(): BetweennessOptions = {
+    inline def apply(): BetweennessOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BetweennessOptions]
     }
     
-    @scala.inline
-    implicit class BetweennessOptionsMutableBuilder[Self <: BetweennessOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BetweennessOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
+      inline def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultWeightUndefined: Self = StObject.set(x, "defaultWeight", js.undefined)
+      inline def setDefaultWeightUndefined: Self = StObject.set(x, "defaultWeight", js.undefined)
       
-      @scala.inline
-      def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
   
@@ -106,26 +84,20 @@ object arangodbGeneralGraphMod {
   }
   object CommonNeighbors {
     
-    @scala.inline
-    def apply(left: String, neighbors: js.Array[String], right: String): CommonNeighbors = {
+    inline def apply(left: String, neighbors: js.Array[String], right: String): CommonNeighbors = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], neighbors = neighbors.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonNeighbors]
     }
     
-    @scala.inline
-    implicit class CommonNeighborsMutableBuilder[Self <: CommonNeighbors] (val x: Self) extends AnyVal {
+    extension [Self <: CommonNeighbors](x: Self) {
       
-      @scala.inline
-      def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeighbors(value: js.Array[String]): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
+      inline def setNeighbors(value: js.Array[String]): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeighborsVarargs(value: String*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
+      inline def setNeighborsVarargs(value: String*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
       
-      @scala.inline
-      def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,41 +113,30 @@ object arangodbGeneralGraphMod {
   }
   object CommonPropertiesOptions {
     
-    @scala.inline
-    def apply(): CommonPropertiesOptions = {
+    inline def apply(): CommonPropertiesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonPropertiesOptions]
     }
     
-    @scala.inline
-    implicit class CommonPropertiesOptionsMutableBuilder[Self <: CommonPropertiesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonPropertiesOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoredProperties(value: js.Array[String] | String): Self = StObject.set(x, "ignoredProperties", value.asInstanceOf[js.Any])
+      inline def setIgnoredProperties(value: js.Array[String] | String): Self = StObject.set(x, "ignoredProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredPropertiesUndefined: Self = StObject.set(x, "ignoredProperties", js.undefined)
+      inline def setIgnoredPropertiesUndefined: Self = StObject.set(x, "ignoredProperties", js.undefined)
       
-      @scala.inline
-      def setIgnoredPropertiesVarargs(value: String*): Self = StObject.set(x, "ignoredProperties", js.Array(value :_*))
+      inline def setIgnoredPropertiesVarargs(value: String*): Self = StObject.set(x, "ignoredProperties", js.Array(value :_*))
       
-      @scala.inline
-      def setVertex1CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex1CollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setVertex1CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex1CollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertex1CollectionRestrictionUndefined: Self = StObject.set(x, "vertex1CollectionRestriction", js.undefined)
+      inline def setVertex1CollectionRestrictionUndefined: Self = StObject.set(x, "vertex1CollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value :_*))
+      inline def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value :_*))
       
-      @scala.inline
-      def setVertex2CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex2CollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setVertex2CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex2CollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertex2CollectionRestrictionUndefined: Self = StObject.set(x, "vertex2CollectionRestriction", js.undefined)
+      inline def setVertex2CollectionRestrictionUndefined: Self = StObject.set(x, "vertex2CollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value :_*))
+      inline def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value :_*))
     }
   }
   
@@ -191,53 +152,38 @@ object arangodbGeneralGraphMod {
   }
   object ConnectingEdgesOptions {
     
-    @scala.inline
-    def apply(): ConnectingEdgesOptions = {
+    inline def apply(): ConnectingEdgesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectingEdgesOptions]
     }
     
-    @scala.inline
-    implicit class ConnectingEdgesOptionsMutableBuilder[Self <: ConnectingEdgesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectingEdgesOptions](x: Self) {
       
-      @scala.inline
-      def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "edgeCollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "edgeCollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
+      inline def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
+      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
       
-      @scala.inline
-      def setEdgeExamples(value: Example): Self = StObject.set(x, "edgeExamples", value.asInstanceOf[js.Any])
+      inline def setEdgeExamples(value: Example): Self = StObject.set(x, "edgeExamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeExamplesNull: Self = StObject.set(x, "edgeExamples", null)
+      inline def setEdgeExamplesNull: Self = StObject.set(x, "edgeExamples", null)
       
-      @scala.inline
-      def setEdgeExamplesUndefined: Self = StObject.set(x, "edgeExamples", js.undefined)
+      inline def setEdgeExamplesUndefined: Self = StObject.set(x, "edgeExamples", js.undefined)
       
-      @scala.inline
-      def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value :_*))
+      inline def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value :_*))
       
-      @scala.inline
-      def setVertex1CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex1CollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setVertex1CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex1CollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertex1CollectionRestrictionUndefined: Self = StObject.set(x, "vertex1CollectionRestriction", js.undefined)
+      inline def setVertex1CollectionRestrictionUndefined: Self = StObject.set(x, "vertex1CollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value :_*))
+      inline def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value :_*))
       
-      @scala.inline
-      def setVertex2CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex2CollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setVertex2CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex2CollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertex2CollectionRestrictionUndefined: Self = StObject.set(x, "vertex2CollectionRestriction", js.undefined)
+      inline def setVertex2CollectionRestrictionUndefined: Self = StObject.set(x, "vertex2CollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value :_*))
+      inline def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value :_*))
     }
   }
   
@@ -257,23 +203,18 @@ object arangodbGeneralGraphMod {
   }
   object Distance {
     
-    @scala.inline
-    def apply(distance: Double, startVertex: String, vertex: String): Distance = {
+    inline def apply(distance: Double, startVertex: String, vertex: String): Distance = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], startVertex = startVertex.asInstanceOf[js.Any], vertex = vertex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Distance]
     }
     
-    @scala.inline
-    implicit class DistanceMutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
+    extension [Self <: Distance](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVertex(value: String): Self = StObject.set(x, "startVertex", value.asInstanceOf[js.Any])
+      inline def setStartVertex(value: String): Self = StObject.set(x, "startVertex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertex(value: String): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
+      inline def setVertex(value: String): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -291,29 +232,22 @@ object arangodbGeneralGraphMod {
   }
   object EdgeDefinition {
     
-    @scala.inline
-    def apply(collection: String, from: js.Array[String], to: js.Array[String]): EdgeDefinition = {
+    inline def apply(collection: String, from: js.Array[String], to: js.Array[String]): EdgeDefinition = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeDefinition]
     }
     
-    @scala.inline
-    implicit class EdgeDefinitionMutableBuilder[Self <: EdgeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: EdgeDefinition](x: Self) {
       
-      @scala.inline
-      def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
       
-      @scala.inline
-      def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
     }
   }
   
@@ -434,74 +368,52 @@ object arangodbGeneralGraphMod {
   }
   object NeighborsOptions {
     
-    @scala.inline
-    def apply(): NeighborsOptions = {
+    inline def apply(): NeighborsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NeighborsOptions]
     }
     
-    @scala.inline
-    implicit class NeighborsOptionsMutableBuilder[Self <: NeighborsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NeighborsOptions](x: Self) {
       
-      @scala.inline
-      def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "edgeCollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "edgeCollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
+      inline def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
+      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
       
-      @scala.inline
-      def setEdgeExamples(value: Example): Self = StObject.set(x, "edgeExamples", value.asInstanceOf[js.Any])
+      inline def setEdgeExamples(value: Example): Self = StObject.set(x, "edgeExamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeExamplesNull: Self = StObject.set(x, "edgeExamples", null)
+      inline def setEdgeExamplesNull: Self = StObject.set(x, "edgeExamples", null)
       
-      @scala.inline
-      def setEdgeExamplesUndefined: Self = StObject.set(x, "edgeExamples", js.undefined)
+      inline def setEdgeExamplesUndefined: Self = StObject.set(x, "edgeExamples", js.undefined)
       
-      @scala.inline
-      def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value :_*))
+      inline def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+      inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
       
-      @scala.inline
-      def setMinDepth(value: Double): Self = StObject.set(x, "minDepth", value.asInstanceOf[js.Any])
+      inline def setMinDepth(value: Double): Self = StObject.set(x, "minDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDepthUndefined: Self = StObject.set(x, "minDepth", js.undefined)
+      inline def setMinDepthUndefined: Self = StObject.set(x, "minDepth", js.undefined)
       
-      @scala.inline
-      def setNeighborExamples(value: Example): Self = StObject.set(x, "neighborExamples", value.asInstanceOf[js.Any])
+      inline def setNeighborExamples(value: Example): Self = StObject.set(x, "neighborExamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeighborExamplesNull: Self = StObject.set(x, "neighborExamples", null)
+      inline def setNeighborExamplesNull: Self = StObject.set(x, "neighborExamples", null)
       
-      @scala.inline
-      def setNeighborExamplesUndefined: Self = StObject.set(x, "neighborExamples", js.undefined)
+      inline def setNeighborExamplesUndefined: Self = StObject.set(x, "neighborExamples", js.undefined)
       
-      @scala.inline
-      def setNeighborExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "neighborExamples", js.Array(value :_*))
+      inline def setNeighborExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "neighborExamples", js.Array(value :_*))
       
-      @scala.inline
-      def setVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertexCollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertexCollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexCollectionRestrictionUndefined: Self = StObject.set(x, "vertexCollectionRestriction", js.undefined)
+      inline def setVertexCollectionRestrictionUndefined: Self = StObject.set(x, "vertexCollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertexCollectionRestriction", js.Array(value :_*))
+      inline def setVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertexCollectionRestriction", js.Array(value :_*))
     }
   }
   
@@ -517,8 +429,7 @@ object arangodbGeneralGraphMod {
   }
   object Path {
     
-    @scala.inline
-    def apply[A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */](
+    inline def apply[A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */](
       destination: Document[B],
       edges: js.Array[Edge[E]],
       source: Document[A],
@@ -528,26 +439,19 @@ object arangodbGeneralGraphMod {
       __obj.asInstanceOf[Path[A, B, E, V]]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path[?, ?, ?, ?], A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */] (val x: Self & (Path[A, B, E, V])) extends AnyVal {
+    extension [Self <: Path[?, ?, ?, ?], A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */](x: Self & (Path[A, B, E, V])) {
       
-      @scala.inline
-      def setDestination(value: Document[B]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Document[B]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdges(value: js.Array[Edge[E]]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Edge[E]]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesVarargs(value: Edge[E]*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge[E]*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: Document[A]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Document[A]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertice(value: js.Array[Document[A | B | V]]): Self = StObject.set(x, "vertice", value.asInstanceOf[js.Any])
+      inline def setVertice(value: js.Array[Document[A | B | V]]): Self = StObject.set(x, "vertice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticeVarargs(value: (Document[A | B | V])*): Self = StObject.set(x, "vertice", js.Array(value :_*))
+      inline def setVerticeVarargs(value: (Document[A | B | V])*): Self = StObject.set(x, "vertice", js.Array(value :_*))
     }
   }
   
@@ -563,38 +467,28 @@ object arangodbGeneralGraphMod {
   }
   object PathsOptions {
     
-    @scala.inline
-    def apply(): PathsOptions = {
+    inline def apply(): PathsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathsOptions]
     }
     
-    @scala.inline
-    implicit class PathsOptionsMutableBuilder[Self <: PathsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PathsOptions](x: Self) {
       
-      @scala.inline
-      def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setFollowCycles(value: Boolean): Self = StObject.set(x, "followCycles", value.asInstanceOf[js.Any])
+      inline def setFollowCycles(value: Boolean): Self = StObject.set(x, "followCycles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowCyclesUndefined: Self = StObject.set(x, "followCycles", js.undefined)
+      inline def setFollowCyclesUndefined: Self = StObject.set(x, "followCycles", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     }
   }
   
@@ -610,29 +504,22 @@ object arangodbGeneralGraphMod {
   }
   object ShortestPath {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](distance: Double, edges: js.Array[Edge[T]], vertices: js.Array[String]): ShortestPath[T] = {
+    inline def apply[T /* <: js.Object */](distance: Double, edges: js.Array[Edge[T]], vertices: js.Array[String]): ShortestPath[T] = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShortestPath[T]]
     }
     
-    @scala.inline
-    implicit class ShortestPathMutableBuilder[Self <: ShortestPath[?], T /* <: js.Object */] (val x: Self & ShortestPath[T]) extends AnyVal {
+    extension [Self <: ShortestPath[?], T /* <: js.Object */](x: Self & ShortestPath[T]) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdges(value: js.Array[Edge[T]]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Edge[T]]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesVarargs(value: Edge[T]*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge[T]*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
-      @scala.inline
-      def setVertices(value: js.Array[String]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: js.Array[String]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticesVarargs(value: String*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: String*): Self = StObject.set(x, "vertices", js.Array(value :_*))
     }
   }
   
@@ -652,59 +539,42 @@ object arangodbGeneralGraphMod {
   }
   object ShortestPathOptions {
     
-    @scala.inline
-    def apply(): ShortestPathOptions = {
+    inline def apply(): ShortestPathOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShortestPathOptions]
     }
     
-    @scala.inline
-    implicit class ShortestPathOptionsMutableBuilder[Self <: ShortestPathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShortestPathOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
+      inline def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultWeightUndefined: Self = StObject.set(x, "defaultWeight", js.undefined)
+      inline def setDefaultWeightUndefined: Self = StObject.set(x, "defaultWeight", js.undefined)
       
-      @scala.inline
-      def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "edgeCollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "edgeCollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
+      inline def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
+      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
       
-      @scala.inline
-      def setEndVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "endVertexCollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setEndVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "endVertexCollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndVertexCollectionRestrictionUndefined: Self = StObject.set(x, "endVertexCollectionRestriction", js.undefined)
+      inline def setEndVertexCollectionRestrictionUndefined: Self = StObject.set(x, "endVertexCollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setEndVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "endVertexCollectionRestriction", js.Array(value :_*))
+      inline def setEndVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "endVertexCollectionRestriction", js.Array(value :_*))
       
-      @scala.inline
-      def setStartVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "startVertexCollectionRestriction", value.asInstanceOf[js.Any])
+      inline def setStartVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "startVertexCollectionRestriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVertexCollectionRestrictionUndefined: Self = StObject.set(x, "startVertexCollectionRestriction", js.undefined)
+      inline def setStartVertexCollectionRestrictionUndefined: Self = StObject.set(x, "startVertexCollectionRestriction", js.undefined)
       
-      @scala.inline
-      def setStartVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "startVertexCollectionRestriction", js.Array(value :_*))
+      inline def setStartVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "startVertexCollectionRestriction", js.Array(value :_*))
       
-      @scala.inline
-      def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
 }

@@ -14,25 +14,19 @@ trait CategoryCount extends StObject {
 }
 object CategoryCount {
   
-  @scala.inline
-  def apply(): CategoryCount = {
+  inline def apply(): CategoryCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CategoryCount]
   }
   
-  @scala.inline
-  implicit class CategoryCountMutableBuilder[Self <: CategoryCount] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryCount](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

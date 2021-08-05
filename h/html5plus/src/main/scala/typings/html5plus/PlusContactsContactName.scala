@@ -56,49 +56,35 @@ trait PlusContactsContactName extends StObject {
 }
 object PlusContactsContactName {
   
-  @scala.inline
-  def apply(): PlusContactsContactName = {
+  inline def apply(): PlusContactsContactName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusContactsContactName]
   }
   
-  @scala.inline
-  implicit class PlusContactsContactNameMutableBuilder[Self <: PlusContactsContactName] (val x: Self) extends AnyVal {
+  extension [Self <: PlusContactsContactName](x: Self) {
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
+    inline def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
-    @scala.inline
-    def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+    inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
+    inline def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
     
-    @scala.inline
-    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
+    inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
     
-    @scala.inline
-    def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
+    inline def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorificPrefixUndefined: Self = StObject.set(x, "honorificPrefix", js.undefined)
+    inline def setHonorificPrefixUndefined: Self = StObject.set(x, "honorificPrefix", js.undefined)
     
-    @scala.inline
-    def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
+    inline def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHonorificSuffixUndefined: Self = StObject.set(x, "honorificSuffix", js.undefined)
+    inline def setHonorificSuffixUndefined: Self = StObject.set(x, "honorificSuffix", js.undefined)
     
-    @scala.inline
-    def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
+    inline def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleNameUndefined: Self = StObject.set(x, "middleName", js.undefined)
+    inline def setMiddleNameUndefined: Self = StObject.set(x, "middleName", js.undefined)
   }
 }

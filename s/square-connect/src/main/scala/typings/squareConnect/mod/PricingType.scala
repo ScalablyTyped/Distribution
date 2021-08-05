@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PricingType extends StObject
 object PricingType {
   
-  @scala.inline
-  def FIXED_PRICING: typings.squareConnect.squareConnectStrings.FIXED_PRICING = "FIXED_PRICING".asInstanceOf[typings.squareConnect.squareConnectStrings.FIXED_PRICING]
+  inline def FIXED_PRICING: typings.squareConnect.squareConnectStrings.FIXED_PRICING = "FIXED_PRICING".asInstanceOf[typings.squareConnect.squareConnectStrings.FIXED_PRICING]
   
-  @scala.inline
-  def VARIABLE_PRICING: typings.squareConnect.squareConnectStrings.VARIABLE_PRICING = "VARIABLE_PRICING".asInstanceOf[typings.squareConnect.squareConnectStrings.VARIABLE_PRICING]
+  inline def VARIABLE_PRICING: typings.squareConnect.squareConnectStrings.VARIABLE_PRICING = "VARIABLE_PRICING".asInstanceOf[typings.squareConnect.squareConnectStrings.VARIABLE_PRICING]
 }

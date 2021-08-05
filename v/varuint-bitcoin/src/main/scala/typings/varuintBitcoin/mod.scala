@@ -19,8 +19,7 @@ object mod {
   @js.native
   val encode: Encode_ = js.native
   
-  @scala.inline
-  def encodingLength(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingLength")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def encodingLength(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingLength")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @js.native
   trait Decode_ extends StObject {

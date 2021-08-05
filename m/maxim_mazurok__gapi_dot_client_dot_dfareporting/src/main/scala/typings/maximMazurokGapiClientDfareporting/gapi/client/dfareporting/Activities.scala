@@ -17,37 +17,27 @@ trait Activities extends StObject {
 }
 object Activities {
   
-  @scala.inline
-  def apply(): Activities = {
+  inline def apply(): Activities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Activities]
   }
   
-  @scala.inline
-  implicit class ActivitiesMutableBuilder[Self <: Activities] (val x: Self) extends AnyVal {
+  extension [Self <: Activities](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[DimensionValue]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[DimensionValue]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
+    inline def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
+    inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
   }
 }

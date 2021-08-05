@@ -18,28 +18,21 @@ trait DescribeConnectionAliasesResult extends StObject {
 }
 object DescribeConnectionAliasesResult {
   
-  @scala.inline
-  def apply(): DescribeConnectionAliasesResult = {
+  inline def apply(): DescribeConnectionAliasesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConnectionAliasesResult]
   }
   
-  @scala.inline
-  implicit class DescribeConnectionAliasesResultMutableBuilder[Self <: DescribeConnectionAliasesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectionAliasesResult](x: Self) {
     
-    @scala.inline
-    def setConnectionAliases(value: ConnectionAliasList): Self = StObject.set(x, "ConnectionAliases", value.asInstanceOf[js.Any])
+    inline def setConnectionAliases(value: ConnectionAliasList): Self = StObject.set(x, "ConnectionAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionAliasesUndefined: Self = StObject.set(x, "ConnectionAliases", js.undefined)
+    inline def setConnectionAliasesUndefined: Self = StObject.set(x, "ConnectionAliases", js.undefined)
     
-    @scala.inline
-    def setConnectionAliasesVarargs(value: ConnectionAlias*): Self = StObject.set(x, "ConnectionAliases", js.Array(value :_*))
+    inline def setConnectionAliasesVarargs(value: ConnectionAlias*): Self = StObject.set(x, "ConnectionAliases", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

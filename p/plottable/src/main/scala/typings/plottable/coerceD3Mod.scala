@@ -11,6 +11,5 @@ object coerceD3Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def coerceExternalD3[S /* <: Selection_[js.Any, js.Any, js.Any, js.Any] */](externalD3Selection: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceExternalD3")(externalD3Selection.asInstanceOf[js.Any]).asInstanceOf[S]
+  inline def coerceExternalD3[S /* <: Selection_[js.Any, js.Any, js.Any, js.Any] */](externalD3Selection: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceExternalD3")(externalD3Selection.asInstanceOf[js.Any]).asInstanceOf[S]
 }

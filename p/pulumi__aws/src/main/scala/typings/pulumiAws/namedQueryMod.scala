@@ -65,21 +65,16 @@ object namedQueryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NamedQueryState): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NamedQueryState, opts: CustomResourceOptions): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
+    inline def get(name: String, id: Input[ID]): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
+    inline def get(name: String, id: Input[ID], state: NamedQueryState): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
+    inline def get(name: String, id: Input[ID], state: NamedQueryState, opts: CustomResourceOptions): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
     
     /**
       * Returns true if the given object is an instance of NamedQuery.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean]
   }
   
   trait NamedQueryArgs extends StObject {
@@ -111,38 +106,28 @@ object namedQueryMod {
   }
   object NamedQueryArgs {
     
-    @scala.inline
-    def apply(database: Input[String], query: Input[String]): NamedQueryArgs = {
+    inline def apply(database: Input[String], query: Input[String]): NamedQueryArgs = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamedQueryArgs]
     }
     
-    @scala.inline
-    implicit class NamedQueryArgsMutableBuilder[Self <: NamedQueryArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NamedQueryArgs](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: Input[String]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Input[String]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Input[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Input[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkgroup(value: Input[String]): Self = StObject.set(x, "workgroup", value.asInstanceOf[js.Any])
+      inline def setWorkgroup(value: Input[String]): Self = StObject.set(x, "workgroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkgroupUndefined: Self = StObject.set(x, "workgroup", js.undefined)
+      inline def setWorkgroupUndefined: Self = StObject.set(x, "workgroup", js.undefined)
     }
   }
   
@@ -175,44 +160,32 @@ object namedQueryMod {
   }
   object NamedQueryState {
     
-    @scala.inline
-    def apply(): NamedQueryState = {
+    inline def apply(): NamedQueryState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NamedQueryState]
     }
     
-    @scala.inline
-    implicit class NamedQueryStateMutableBuilder[Self <: NamedQueryState] (val x: Self) extends AnyVal {
+    extension [Self <: NamedQueryState](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: Input[String]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Input[String]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Input[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Input[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setWorkgroup(value: Input[String]): Self = StObject.set(x, "workgroup", value.asInstanceOf[js.Any])
+      inline def setWorkgroup(value: Input[String]): Self = StObject.set(x, "workgroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkgroupUndefined: Self = StObject.set(x, "workgroup", js.undefined)
+      inline def setWorkgroupUndefined: Self = StObject.set(x, "workgroup", js.undefined)
     }
   }
 }

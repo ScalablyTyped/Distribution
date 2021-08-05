@@ -10,8 +10,7 @@ trait NavigationExtras
      with NavigationBehaviorOptions
 object NavigationExtras {
   
-  @scala.inline
-  def apply(): NavigationExtras = {
+  inline def apply(): NavigationExtras = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationExtras]
   }

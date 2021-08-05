@@ -20,6 +20,5 @@ object InetAddress {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getLocalAddress(): InetAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAddress")().asInstanceOf[InetAddress]
+  inline def getLocalAddress(): InetAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAddress")().asInstanceOf[InetAddress]
 }

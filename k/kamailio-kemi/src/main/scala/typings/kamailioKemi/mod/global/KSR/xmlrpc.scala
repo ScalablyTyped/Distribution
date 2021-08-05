@@ -10,9 +10,7 @@ object xmlrpc {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dispatchRpc(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch_rpc")().asInstanceOf[Double]
+  inline def dispatchRpc(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch_rpc")().asInstanceOf[Double]
   
-  @scala.inline
-  def xmlrpcReply(rcode: Double, reason: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlrpc_reply")(rcode.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def xmlrpcReply(rcode: Double, reason: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlrpc_reply")(rcode.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -346,8 +346,7 @@ object global {
         * @param phoneNumber The E.164 endpoint phone number.
         */
       /* static member */
-      @scala.inline
-      def byPhoneNumber(phoneNumber: String): typings.amazonConnectStreams.connect.Endpoint = ^.asInstanceOf[js.Dynamic].applyDynamic("byPhoneNumber")(phoneNumber.asInstanceOf[js.Any]).asInstanceOf[typings.amazonConnectStreams.connect.Endpoint]
+      inline def byPhoneNumber(phoneNumber: String): typings.amazonConnectStreams.connect.Endpoint = ^.asInstanceOf[js.Dynamic].applyDynamic("byPhoneNumber")(phoneNumber.asInstanceOf[js.Any]).asInstanceOf[typings.amazonConnectStreams.connect.Endpoint]
     }
     
     /** This enumeration lists the different types of endpoints. */
@@ -465,8 +464,7 @@ object global {
       *
       * @param callback A callback that will receive an `Agent` API object instance.
       */
-    @scala.inline
-    def agent(callback: AgentCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def agent(callback: AgentCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Subscribe a method to be called for each newly detected agent contact.
@@ -475,16 +473,14 @@ object global {
       *
       * @param callback A callback that will receive an `Contact` API object instance.
       */
-    @scala.inline
-    def contact(callback: ContactCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("contact")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def contact(callback: ContactCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("contact")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("connect.core")
     @js.native
     val core: Core = js.native
     
     /** Gets the global logger instance. */
-    @scala.inline
-    def getLog(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLog")().asInstanceOf[Logger]
+    inline def getLog(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLog")().asInstanceOf[Logger]
     
     /**
       * A useful utility function for creating callback closures that bind a function to an object instance.
@@ -492,7 +488,6 @@ object global {
       * @param scope The instance object to be set as the scope of the function.
       * @param method The method to be encapsulated.
       */
-    @scala.inline
-    def hitch[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](scope: js.Object, method: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hitch")(scope.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def hitch[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](scope: js.Object, method: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hitch")(scope.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

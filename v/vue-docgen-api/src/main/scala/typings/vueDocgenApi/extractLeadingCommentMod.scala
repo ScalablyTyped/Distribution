@@ -12,6 +12,5 @@ object extractLeadingCommentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(siblings: js.Array[TemplateChildNode], templateAst: Node2): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(siblings.asInstanceOf[js.Any], templateAst.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(siblings: js.Array[TemplateChildNode], templateAst: Node2): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(siblings.asInstanceOf[js.Any], templateAst.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

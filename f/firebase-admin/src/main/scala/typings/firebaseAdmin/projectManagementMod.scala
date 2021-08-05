@@ -13,10 +13,8 @@ object projectManagementMod {
   
   object projectManagement {
     
-    @scala.inline
-    def apply(): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProjectManagement]
-    @scala.inline
-    def apply(app: App): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[ProjectManagement]
+    inline def apply(): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProjectManagement]
+    inline def apply(app: App): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[ProjectManagement]
     
     @JSImport("firebase-admin/lib/project-management", "projectManagement")
     @js.native
@@ -128,8 +126,7 @@ object projectManagementMod {
     }
     object AndroidApp {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addShaCertificate: ShaCertificate => js.Promise[Unit],
         appId: String,
         deleteShaCertificate: ShaCertificate => js.Promise[Unit],
@@ -142,29 +139,21 @@ object projectManagementMod {
         __obj.asInstanceOf[AndroidApp]
       }
       
-      @scala.inline
-      implicit class AndroidAppMutableBuilder[Self <: AndroidApp] (val x: Self) extends AnyVal {
+      extension [Self <: AndroidApp](x: Self) {
         
-        @scala.inline
-        def setAddShaCertificate(value: ShaCertificate => js.Promise[Unit]): Self = StObject.set(x, "addShaCertificate", js.Any.fromFunction1(value))
+        inline def setAddShaCertificate(value: ShaCertificate => js.Promise[Unit]): Self = StObject.set(x, "addShaCertificate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+        inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteShaCertificate(value: ShaCertificate => js.Promise[Unit]): Self = StObject.set(x, "deleteShaCertificate", js.Any.fromFunction1(value))
+        inline def setDeleteShaCertificate(value: ShaCertificate => js.Promise[Unit]): Self = StObject.set(x, "deleteShaCertificate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetConfig(value: () => js.Promise[String]): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
+        inline def setGetConfig(value: () => js.Promise[String]): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMetadata(value: () => js.Promise[AndroidAppMetadata]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
+        inline def setGetMetadata(value: () => js.Promise[AndroidAppMetadata]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetShaCertificates(value: () => js.Promise[js.Array[ShaCertificate]]): Self = StObject.set(x, "getShaCertificates", js.Any.fromFunction0(value))
+        inline def setGetShaCertificates(value: () => js.Promise[js.Array[ShaCertificate]]): Self = StObject.set(x, "getShaCertificates", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetDisplayName(value: String => js.Promise[Unit]): Self = StObject.set(x, "setDisplayName", js.Any.fromFunction1(value))
+        inline def setSetDisplayName(value: String => js.Promise[Unit]): Self = StObject.set(x, "setDisplayName", js.Any.fromFunction1(value))
       }
     }
     
@@ -191,20 +180,16 @@ object projectManagementMod {
     }
     object AndroidAppMetadata {
       
-      @scala.inline
-      def apply(appId: String, packageName: String, platform: ANDROID, projectId: String, resourceName: String): AndroidAppMetadata = {
+      inline def apply(appId: String, packageName: String, platform: ANDROID, projectId: String, resourceName: String): AndroidAppMetadata = {
         val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
         __obj.asInstanceOf[AndroidAppMetadata]
       }
       
-      @scala.inline
-      implicit class AndroidAppMetadataMutableBuilder[Self <: AndroidAppMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: AndroidAppMetadata](x: Self) {
         
-        @scala.inline
-        def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+        inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlatform(value: ANDROID): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+        inline def setPlatform(value: ANDROID): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       }
     }
     
@@ -267,32 +252,24 @@ object projectManagementMod {
     }
     object AppMetadata {
       
-      @scala.inline
-      def apply(appId: String, platform: AppPlatform, projectId: String, resourceName: String): AppMetadata = {
+      inline def apply(appId: String, platform: AppPlatform, projectId: String, resourceName: String): AppMetadata = {
         val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
         __obj.asInstanceOf[AppMetadata]
       }
       
-      @scala.inline
-      implicit class AppMetadataMutableBuilder[Self <: AppMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: AppMetadata](x: Self) {
         
-        @scala.inline
-        def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+        inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+        inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
         
-        @scala.inline
-        def setPlatform(value: AppPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+        inline def setPlatform(value: AppPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+        inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+        inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
       }
     }
     
@@ -335,8 +312,7 @@ object projectManagementMod {
     }
     object IosApp {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         appId: String,
         getConfig: () => js.Promise[String],
         getMetadata: () => js.Promise[IosAppMetadata],
@@ -346,20 +322,15 @@ object projectManagementMod {
         __obj.asInstanceOf[IosApp]
       }
       
-      @scala.inline
-      implicit class IosAppMutableBuilder[Self <: IosApp] (val x: Self) extends AnyVal {
+      extension [Self <: IosApp](x: Self) {
         
-        @scala.inline
-        def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+        inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetConfig(value: () => js.Promise[String]): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
+        inline def setGetConfig(value: () => js.Promise[String]): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMetadata(value: () => js.Promise[IosAppMetadata]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
+        inline def setGetMetadata(value: () => js.Promise[IosAppMetadata]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetDisplayName(value: String => js.Promise[Unit]): Self = StObject.set(x, "setDisplayName", js.Any.fromFunction1(value))
+        inline def setSetDisplayName(value: String => js.Promise[Unit]): Self = StObject.set(x, "setDisplayName", js.Any.fromFunction1(value))
       }
     }
     
@@ -385,20 +356,16 @@ object projectManagementMod {
     }
     object IosAppMetadata {
       
-      @scala.inline
-      def apply(appId: String, bundleId: String, platform: IOS, projectId: String, resourceName: String): IosAppMetadata = {
+      inline def apply(appId: String, bundleId: String, platform: IOS, projectId: String, resourceName: String): IosAppMetadata = {
         val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
         __obj.asInstanceOf[IosAppMetadata]
       }
       
-      @scala.inline
-      implicit class IosAppMetadataMutableBuilder[Self <: IosAppMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: IosAppMetadata](x: Self) {
         
-        @scala.inline
-        def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+        inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlatform(value: IOS): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+        inline def setPlatform(value: IOS): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       }
     }
     
@@ -546,26 +513,20 @@ object projectManagementMod {
     }
     object ShaCertificate {
       
-      @scala.inline
-      def apply(certType: sha1_ | sha256_, shaHash: String): ShaCertificate = {
+      inline def apply(certType: sha1_ | sha256_, shaHash: String): ShaCertificate = {
         val __obj = js.Dynamic.literal(certType = certType.asInstanceOf[js.Any], shaHash = shaHash.asInstanceOf[js.Any])
         __obj.asInstanceOf[ShaCertificate]
       }
       
-      @scala.inline
-      implicit class ShaCertificateMutableBuilder[Self <: ShaCertificate] (val x: Self) extends AnyVal {
+      extension [Self <: ShaCertificate](x: Self) {
         
-        @scala.inline
-        def setCertType(value: sha1_ | sha256_): Self = StObject.set(x, "certType", value.asInstanceOf[js.Any])
+        inline def setCertType(value: sha1_ | sha256_): Self = StObject.set(x, "certType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+        inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+        inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
         
-        @scala.inline
-        def setShaHash(value: String): Self = StObject.set(x, "shaHash", value.asInstanceOf[js.Any])
+        inline def setShaHash(value: String): Self = StObject.set(x, "shaHash", value.asInstanceOf[js.Any])
       }
     }
   }

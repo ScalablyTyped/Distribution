@@ -20,20 +20,16 @@ object Common {
   }
   object Contact {
     
-    @scala.inline
-    def apply(emailAddress: String, name: String): Contact = {
+    inline def apply(emailAddress: String, name: String): Contact = {
       val __obj = js.Dynamic.literal(emailAddress = emailAddress.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Contact]
     }
     
-    @scala.inline
-    implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
+    extension [Self <: Contact](x: Self) {
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,80 +78,56 @@ object Common {
   }
   object PositionOptions {
     
-    @scala.inline
-    def apply(): PositionOptions = {
+    inline def apply(): PositionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PositionOptions]
     }
     
-    @scala.inline
-    implicit class PositionOptionsMutableBuilder[Self <: PositionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PositionOptions](x: Self) {
       
-      @scala.inline
-      def setBottomBuffer(value: Double): Self = StObject.set(x, "bottomBuffer", value.asInstanceOf[js.Any])
+      inline def setBottomBuffer(value: Double): Self = StObject.set(x, "bottomBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomBufferUndefined: Self = StObject.set(x, "bottomBuffer", js.undefined)
+      inline def setBottomBufferUndefined: Self = StObject.set(x, "bottomBuffer", js.undefined)
       
-      @scala.inline
-      def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setForceHAlign(value: Boolean): Self = StObject.set(x, "forceHAlign", value.asInstanceOf[js.Any])
+      inline def setForceHAlign(value: Boolean): Self = StObject.set(x, "forceHAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceHAlignUndefined: Self = StObject.set(x, "forceHAlign", js.undefined)
+      inline def setForceHAlignUndefined: Self = StObject.set(x, "forceHAlign", js.undefined)
       
-      @scala.inline
-      def setForcePosition(value: Boolean): Self = StObject.set(x, "forcePosition", value.asInstanceOf[js.Any])
+      inline def setForcePosition(value: Boolean): Self = StObject.set(x, "forcePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForcePositionUndefined: Self = StObject.set(x, "forcePosition", js.undefined)
+      inline def setForcePositionUndefined: Self = StObject.set(x, "forcePosition", js.undefined)
       
-      @scala.inline
-      def setForceVAlign(value: Boolean): Self = StObject.set(x, "forceVAlign", value.asInstanceOf[js.Any])
+      inline def setForceVAlign(value: Boolean): Self = StObject.set(x, "forceVAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceVAlignUndefined: Self = StObject.set(x, "forceVAlign", js.undefined)
+      inline def setForceVAlignUndefined: Self = StObject.set(x, "forceVAlign", js.undefined)
       
-      @scala.inline
-      def setHAlign(value: String): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: String): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
-      @scala.inline
-      def setLeftBuffer(value: Double): Self = StObject.set(x, "leftBuffer", value.asInstanceOf[js.Any])
+      inline def setLeftBuffer(value: Double): Self = StObject.set(x, "leftBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftBufferUndefined: Self = StObject.set(x, "leftBuffer", js.undefined)
+      inline def setLeftBufferUndefined: Self = StObject.set(x, "leftBuffer", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRightBuffer(value: Double): Self = StObject.set(x, "rightBuffer", value.asInstanceOf[js.Any])
+      inline def setRightBuffer(value: Double): Self = StObject.set(x, "rightBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightBufferUndefined: Self = StObject.set(x, "rightBuffer", js.undefined)
+      inline def setRightBufferUndefined: Self = StObject.set(x, "rightBuffer", js.undefined)
       
-      @scala.inline
-      def setTopBuffer(value: Double): Self = StObject.set(x, "topBuffer", value.asInstanceOf[js.Any])
+      inline def setTopBuffer(value: Double): Self = StObject.set(x, "topBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopBufferUndefined: Self = StObject.set(x, "topBuffer", js.undefined)
+      inline def setTopBufferUndefined: Self = StObject.set(x, "topBuffer", js.undefined)
       
-      @scala.inline
-      def setVAlign(value: String): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: String): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
+      inline def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
     }
   }
   
@@ -169,24 +141,19 @@ object Common {
   }
   object PreAutoCloseEvent {
     
-    @scala.inline
-    def apply(cancel: () => Unit, cause: Event, `type`: outsideInteraction | escape): PreAutoCloseEvent = {
+    inline def apply(cancel: () => Unit, cause: Event, `type`: outsideInteraction | escape): PreAutoCloseEvent = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), cause = cause.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreAutoCloseEvent]
     }
     
-    @scala.inline
-    implicit class PreAutoCloseEventMutableBuilder[Self <: PreAutoCloseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PreAutoCloseEvent](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCause(value: Event): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setCause(value: Event): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: outsideInteraction | escape): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: outsideInteraction | escape): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,8 +170,7 @@ object Common {
   }
   object SimpleElementView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       destroyed: Boolean,
       el: HTMLElement,
@@ -214,20 +180,15 @@ object Common {
       __obj.asInstanceOf[SimpleElementView]
     }
     
-    @scala.inline
-    implicit class SimpleElementViewMutableBuilder[Self <: SimpleElementView] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleElementView](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
 }

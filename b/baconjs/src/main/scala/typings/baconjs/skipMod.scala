@@ -10,6 +10,5 @@ object skipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](src: typings.baconjs.observableMod.default[T], count: Double): typings.baconjs.observableMod.default[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[T]]
+  inline def default[T](src: typings.baconjs.observableMod.default[T], count: Double): typings.baconjs.observableMod.default[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[T]]
 }

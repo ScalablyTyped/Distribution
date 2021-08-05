@@ -13,10 +13,8 @@ object mod {
   /**
     * Error handler for pure Koa 2.0.0+ JSON apps
     */
-  @scala.inline
-  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(options: JSONErrorOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(options: JSONErrorOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-json-error", JSImport.Namespace)
   @js.native
@@ -41,32 +39,24 @@ object mod {
   }
   object JSONErrorOptions {
     
-    @scala.inline
-    def apply(): JSONErrorOptions = {
+    inline def apply(): JSONErrorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JSONErrorOptions]
     }
     
-    @scala.inline
-    implicit class JSONErrorOptionsMutableBuilder[Self <: JSONErrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JSONErrorOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(value: (/* err */ Error, /* obj */ js.Any) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (/* err */ Error, /* obj */ js.Any) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setPostFormat(value: (/* err */ Error, /* obj */ js.Any) => js.Any): Self = StObject.set(x, "postFormat", js.Any.fromFunction2(value))
+      inline def setPostFormat(value: (/* err */ Error, /* obj */ js.Any) => js.Any): Self = StObject.set(x, "postFormat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostFormatUndefined: Self = StObject.set(x, "postFormat", js.undefined)
+      inline def setPostFormatUndefined: Self = StObject.set(x, "postFormat", js.undefined)
       
-      @scala.inline
-      def setPreFormat(value: /* err */ Error => js.Any): Self = StObject.set(x, "preFormat", js.Any.fromFunction1(value))
+      inline def setPreFormat(value: /* err */ Error => js.Any): Self = StObject.set(x, "preFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreFormatUndefined: Self = StObject.set(x, "preFormat", js.undefined)
+      inline def setPreFormatUndefined: Self = StObject.set(x, "preFormat", js.undefined)
     }
   }
 }

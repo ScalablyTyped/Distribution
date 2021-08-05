@@ -10,8 +10,7 @@ object useMemoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Value, Condition](
+  inline def default[Value, Condition](
     getValue: js.Function0[Value],
     condition: Condition,
     shouldUpdate: js.Function2[/* prev */ Condition, /* next */ Condition, Boolean]

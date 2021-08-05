@@ -13,22 +13,17 @@ trait ListCuratedEnvironmentImagesOutput extends StObject {
 }
 object ListCuratedEnvironmentImagesOutput {
   
-  @scala.inline
-  def apply(): ListCuratedEnvironmentImagesOutput = {
+  inline def apply(): ListCuratedEnvironmentImagesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCuratedEnvironmentImagesOutput]
   }
   
-  @scala.inline
-  implicit class ListCuratedEnvironmentImagesOutputMutableBuilder[Self <: ListCuratedEnvironmentImagesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListCuratedEnvironmentImagesOutput](x: Self) {
     
-    @scala.inline
-    def setPlatforms(value: EnvironmentPlatforms): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+    inline def setPlatforms(value: EnvironmentPlatforms): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
+    inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    @scala.inline
-    def setPlatformsVarargs(value: EnvironmentPlatform*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: EnvironmentPlatform*): Self = StObject.set(x, "platforms", js.Array(value :_*))
   }
 }

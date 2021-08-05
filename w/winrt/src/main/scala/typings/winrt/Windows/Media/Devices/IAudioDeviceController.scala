@@ -18,8 +18,7 @@ trait IAudioDeviceController
 }
 object IAudioDeviceController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
     getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
     muted: Boolean,
@@ -30,13 +29,10 @@ object IAudioDeviceController {
     __obj.asInstanceOf[IAudioDeviceController]
   }
   
-  @scala.inline
-  implicit class IAudioDeviceControllerMutableBuilder[Self <: IAudioDeviceController] (val x: Self) extends AnyVal {
+  extension [Self <: IAudioDeviceController](x: Self) {
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumePercent(value: Double): Self = StObject.set(x, "volumePercent", value.asInstanceOf[js.Any])
+    inline def setVolumePercent(value: Double): Self = StObject.set(x, "volumePercent", value.asInstanceOf[js.Any])
   }
 }

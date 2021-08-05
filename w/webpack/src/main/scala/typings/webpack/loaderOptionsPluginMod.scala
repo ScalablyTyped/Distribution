@@ -29,32 +29,24 @@ object loaderOptionsPluginMod {
   }
   object LoaderOptionsPluginOptions {
     
-    @scala.inline
-    def apply(): LoaderOptionsPluginOptions = {
+    inline def apply(): LoaderOptionsPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderOptionsPluginOptions]
     }
     
-    @scala.inline
-    implicit class LoaderOptionsPluginOptionsMutableBuilder[Self <: LoaderOptionsPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderOptionsPluginOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
+      inline def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimizeUndefined: Self = StObject.set(x, "minimize", js.undefined)
+      inline def setMinimizeUndefined: Self = StObject.set(x, "minimize", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Dictk): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Dictk): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

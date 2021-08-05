@@ -14,19 +14,15 @@ trait FileRenameEvent extends StObject {
 }
 object FileRenameEvent {
   
-  @scala.inline
-  def apply(files: js.Array[NewUri]): FileRenameEvent = {
+  inline def apply(files: js.Array[NewUri]): FileRenameEvent = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileRenameEvent]
   }
   
-  @scala.inline
-  implicit class FileRenameEventMutableBuilder[Self <: FileRenameEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FileRenameEvent](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[NewUri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[NewUri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: NewUri*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: NewUri*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

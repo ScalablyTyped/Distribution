@@ -16,25 +16,19 @@ trait GoogleActionsTransactionsV3PaymentMethodStatus extends StObject {
 }
 object GoogleActionsTransactionsV3PaymentMethodStatus {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3PaymentMethodStatus = {
+  inline def apply(): GoogleActionsTransactionsV3PaymentMethodStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3PaymentMethodStatus]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3PaymentMethodStatusMutableBuilder[Self <: GoogleActionsTransactionsV3PaymentMethodStatus] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3PaymentMethodStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GoogleActionsTransactionsV3PaymentMethodStatusStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleActionsTransactionsV3PaymentMethodStatusStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -24,61 +24,43 @@ trait UnlinkAccountsResponseProfile extends StObject {
 }
 object UnlinkAccountsResponseProfile {
   
-  @scala.inline
-  def apply(): UnlinkAccountsResponseProfile = {
+  inline def apply(): UnlinkAccountsResponseProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnlinkAccountsResponseProfile]
   }
   
-  @scala.inline
-  implicit class UnlinkAccountsResponseProfileMutableBuilder[Self <: UnlinkAccountsResponseProfile] (val x: Self) extends AnyVal {
+  extension [Self <: UnlinkAccountsResponseProfile](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
+    inline def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
+    inline def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
     
-    @scala.inline
-    def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
+    inline def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamily_nameUndefined: Self = StObject.set(x, "family_name", js.undefined)
+    inline def setFamily_nameUndefined: Self = StObject.set(x, "family_name", js.undefined)
     
-    @scala.inline
-    def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
+    inline def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGiven_nameUndefined: Self = StObject.set(x, "given_name", js.undefined)
+    inline def setGiven_nameUndefined: Self = StObject.set(x, "given_name", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+    inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
+    inline def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
     
-    @scala.inline
-    def setPhone_verified(value: Boolean): Self = StObject.set(x, "phone_verified", value.asInstanceOf[js.Any])
+    inline def setPhone_verified(value: Boolean): Self = StObject.set(x, "phone_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_verifiedUndefined: Self = StObject.set(x, "phone_verified", js.undefined)
+    inline def setPhone_verifiedUndefined: Self = StObject.set(x, "phone_verified", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

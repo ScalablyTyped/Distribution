@@ -14,12 +14,12 @@ object documentCardActivityBaseMod {
     extends Component[IDocumentCardActivityProps, js.Any, js.Any] {
     def this(props: IDocumentCardActivityProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _getNameString: js.Any = js.native
+    /* private */ var _getNameString: js.Any = js.native
     
-    var _renderAvatar: js.Any = js.native
+    /* private */ var _renderAvatar: js.Any = js.native
     
-    var _renderAvatars: js.Any = js.native
+    /* private */ var _renderAvatars: js.Any = js.native
   }
 }

@@ -30,8 +30,7 @@ trait XIndexAccess
 }
 object XIndexAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -46,16 +45,12 @@ object XIndexAccess {
     __obj.asInstanceOf[XIndexAccess]
   }
   
-  @scala.inline
-  implicit class XIndexAccessMutableBuilder[Self <: XIndexAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XIndexAccess](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetByIndex(value: Double => js.Any): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
+    inline def setGetByIndex(value: Double => js.Any): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
   }
 }

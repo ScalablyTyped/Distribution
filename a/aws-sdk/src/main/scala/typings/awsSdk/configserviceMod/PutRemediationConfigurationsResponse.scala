@@ -13,22 +13,17 @@ trait PutRemediationConfigurationsResponse extends StObject {
 }
 object PutRemediationConfigurationsResponse {
   
-  @scala.inline
-  def apply(): PutRemediationConfigurationsResponse = {
+  inline def apply(): PutRemediationConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutRemediationConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class PutRemediationConfigurationsResponseMutableBuilder[Self <: PutRemediationConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutRemediationConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setFailedBatches(value: FailedRemediationBatches): Self = StObject.set(x, "FailedBatches", value.asInstanceOf[js.Any])
+    inline def setFailedBatches(value: FailedRemediationBatches): Self = StObject.set(x, "FailedBatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedBatchesUndefined: Self = StObject.set(x, "FailedBatches", js.undefined)
+    inline def setFailedBatchesUndefined: Self = StObject.set(x, "FailedBatches", js.undefined)
     
-    @scala.inline
-    def setFailedBatchesVarargs(value: FailedRemediationBatch*): Self = StObject.set(x, "FailedBatches", js.Array(value :_*))
+    inline def setFailedBatchesVarargs(value: FailedRemediationBatch*): Self = StObject.set(x, "FailedBatches", js.Array(value :_*))
   }
 }

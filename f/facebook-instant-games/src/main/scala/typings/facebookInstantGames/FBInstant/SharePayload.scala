@@ -31,28 +31,21 @@ trait SharePayload extends StObject {
 }
 object SharePayload {
   
-  @scala.inline
-  def apply(image: String, intent: Intent, text: String): SharePayload = {
+  inline def apply(image: String, intent: Intent, text: String): SharePayload = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePayload]
   }
   
-  @scala.inline
-  implicit class SharePayloadMutableBuilder[Self <: SharePayload] (val x: Self) extends AnyVal {
+  extension [Self <: SharePayload](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

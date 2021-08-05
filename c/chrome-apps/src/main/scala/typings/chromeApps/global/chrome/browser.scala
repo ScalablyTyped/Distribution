@@ -29,8 +29,7 @@ object browser {
     * a new one is opened prior to creating the new tab. Since Chrome 42 only.
     * @param options Configures how the tab should be opened.
     */
-  @scala.inline
-  def openTab(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openTab")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openTab(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openTab")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Opens a new tab in a browser window associated with the current application
     * and Chrome profile. If no browser window for the Chrome profile is opened,
@@ -39,6 +38,5 @@ object browser {
     * @param callback Called when the tab was successfully
     * created, or failed to be created. If failed, runtime.lastError will be set.
     */
-  @scala.inline
-  def openTab(options: Options, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openTab")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def openTab(options: Options, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openTab")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

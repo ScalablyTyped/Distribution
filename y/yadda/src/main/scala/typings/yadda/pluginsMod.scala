@@ -12,8 +12,7 @@ object pluginsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def casper(yadda: typings.yadda.yaddaMod.^, casper: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def casper(yadda: typings.yadda.yaddaMod.^, casper: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("yadda/lib/plugins", "jasmine")
   @js.native
@@ -31,20 +30,16 @@ object pluginsMod {
   }
   object MochaPlugin {
     
-    @scala.inline
-    def apply(ScenarioLevelPlugin: TypeofScenarioLevelPlugin, StepLevelPlugin: TypeofStepLevelPlugin): MochaPlugin = {
+    inline def apply(ScenarioLevelPlugin: TypeofScenarioLevelPlugin, StepLevelPlugin: TypeofStepLevelPlugin): MochaPlugin = {
       val __obj = js.Dynamic.literal(ScenarioLevelPlugin = ScenarioLevelPlugin.asInstanceOf[js.Any], StepLevelPlugin = StepLevelPlugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[MochaPlugin]
     }
     
-    @scala.inline
-    implicit class MochaPluginMutableBuilder[Self <: MochaPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: MochaPlugin](x: Self) {
       
-      @scala.inline
-      def setScenarioLevelPlugin(value: TypeofScenarioLevelPlugin): Self = StObject.set(x, "ScenarioLevelPlugin", value.asInstanceOf[js.Any])
+      inline def setScenarioLevelPlugin(value: TypeofScenarioLevelPlugin): Self = StObject.set(x, "ScenarioLevelPlugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepLevelPlugin(value: TypeofStepLevelPlugin): Self = StObject.set(x, "StepLevelPlugin", value.asInstanceOf[js.Any])
+      inline def setStepLevelPlugin(value: TypeofStepLevelPlugin): Self = StObject.set(x, "StepLevelPlugin", value.asInstanceOf[js.Any])
     }
   }
 }

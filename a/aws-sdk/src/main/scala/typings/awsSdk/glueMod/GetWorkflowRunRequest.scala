@@ -23,25 +23,19 @@ trait GetWorkflowRunRequest extends StObject {
 }
 object GetWorkflowRunRequest {
   
-  @scala.inline
-  def apply(Name: NameString, RunId: IdString): GetWorkflowRunRequest = {
+  inline def apply(Name: NameString, RunId: IdString): GetWorkflowRunRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkflowRunRequest]
   }
   
-  @scala.inline
-  implicit class GetWorkflowRunRequestMutableBuilder[Self <: GetWorkflowRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorkflowRunRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeGraph(value: NullableBoolean): Self = StObject.set(x, "IncludeGraph", value.asInstanceOf[js.Any])
+    inline def setIncludeGraph(value: NullableBoolean): Self = StObject.set(x, "IncludeGraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGraphUndefined: Self = StObject.set(x, "IncludeGraph", js.undefined)
+    inline def setIncludeGraphUndefined: Self = StObject.set(x, "IncludeGraph", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

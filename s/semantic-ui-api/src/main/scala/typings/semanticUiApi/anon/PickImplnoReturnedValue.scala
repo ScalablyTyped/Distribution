@@ -11,16 +11,13 @@ trait PickImplnoReturnedValue extends StObject {
 }
 object PickImplnoReturnedValue {
   
-  @scala.inline
-  def apply(noReturnedValue: String): PickImplnoReturnedValue = {
+  inline def apply(noReturnedValue: String): PickImplnoReturnedValue = {
     val __obj = js.Dynamic.literal(noReturnedValue = noReturnedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoReturnedValue]
   }
   
-  @scala.inline
-  implicit class PickImplnoReturnedValueMutableBuilder[Self <: PickImplnoReturnedValue] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnoReturnedValue](x: Self) {
     
-    @scala.inline
-    def setNoReturnedValue(value: String): Self = StObject.set(x, "noReturnedValue", value.asInstanceOf[js.Any])
+    inline def setNoReturnedValue(value: String): Self = StObject.set(x, "noReturnedValue", value.asInstanceOf[js.Any])
   }
 }

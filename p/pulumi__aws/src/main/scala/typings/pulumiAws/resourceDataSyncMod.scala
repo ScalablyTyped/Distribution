@@ -51,21 +51,16 @@ object resourceDataSyncMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceDataSyncState): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceDataSyncState, opts: CustomResourceOptions): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
+    inline def get(name: String, id: Input[ID]): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
+    inline def get(name: String, id: Input[ID], state: ResourceDataSyncState): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
+    inline def get(name: String, id: Input[ID], state: ResourceDataSyncState, opts: CustomResourceOptions): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
     
     /**
       * Returns true if the given object is an instance of ResourceDataSync.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ Boolean]
   }
   
   trait ResourceDataSyncArgs extends StObject {
@@ -82,23 +77,18 @@ object resourceDataSyncMod {
   }
   object ResourceDataSyncArgs {
     
-    @scala.inline
-    def apply(s3Destination: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]): ResourceDataSyncArgs = {
+    inline def apply(s3Destination: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]): ResourceDataSyncArgs = {
       val __obj = js.Dynamic.literal(s3Destination = s3Destination.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceDataSyncArgs]
     }
     
-    @scala.inline
-    implicit class ResourceDataSyncArgsMutableBuilder[Self <: ResourceDataSyncArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceDataSyncArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setS3Destination(value: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
+      inline def setS3Destination(value: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,26 +106,20 @@ object resourceDataSyncMod {
   }
   object ResourceDataSyncState {
     
-    @scala.inline
-    def apply(): ResourceDataSyncState = {
+    inline def apply(): ResourceDataSyncState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceDataSyncState]
     }
     
-    @scala.inline
-    implicit class ResourceDataSyncStateMutableBuilder[Self <: ResourceDataSyncState] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceDataSyncState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setS3Destination(value: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
+      inline def setS3Destination(value: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
+      inline def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
     }
   }
 }

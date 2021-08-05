@@ -20,8 +20,7 @@ trait IJsonArray
 }
 object IJsonArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getArray: () => JsonArray,
     getArrayAt: Double => JsonArray,
     getBoolean: () => Boolean,
@@ -39,22 +38,16 @@ object IJsonArray {
     __obj.asInstanceOf[IJsonArray]
   }
   
-  @scala.inline
-  implicit class IJsonArrayMutableBuilder[Self <: IJsonArray] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonArray](x: Self) {
     
-    @scala.inline
-    def setGetArrayAt(value: Double => JsonArray): Self = StObject.set(x, "getArrayAt", js.Any.fromFunction1(value))
+    inline def setGetArrayAt(value: Double => JsonArray): Self = StObject.set(x, "getArrayAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBooleanAt(value: Double => Boolean): Self = StObject.set(x, "getBooleanAt", js.Any.fromFunction1(value))
+    inline def setGetBooleanAt(value: Double => Boolean): Self = StObject.set(x, "getBooleanAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumberAt(value: Double => Double): Self = StObject.set(x, "getNumberAt", js.Any.fromFunction1(value))
+    inline def setGetNumberAt(value: Double => Double): Self = StObject.set(x, "getNumberAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetObjectAt(value: Double => JsonObject): Self = StObject.set(x, "getObjectAt", js.Any.fromFunction1(value))
+    inline def setGetObjectAt(value: Double => JsonObject): Self = StObject.set(x, "getObjectAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStringAt(value: Double => String): Self = StObject.set(x, "getStringAt", js.Any.fromFunction1(value))
+    inline def setGetStringAt(value: Double => String): Self = StObject.set(x, "getStringAt", js.Any.fromFunction1(value))
   }
 }

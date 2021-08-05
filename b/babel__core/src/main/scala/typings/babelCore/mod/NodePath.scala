@@ -19,8 +19,7 @@ object NodePath {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def get[C /* <: typings.babelTypes.mod.Node */, K /* <: /* keyof C */ String */](opts: Container[C, K]): typings.babelTraverse.mod.NodePath[
+  inline def get[C /* <: typings.babelTypes.mod.Node */, K /* <: /* keyof C */ String */](opts: Container[C, K]): typings.babelTraverse.mod.NodePath[
     /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.babelTraverse.mod.NodePath[
     /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any

@@ -16,22 +16,17 @@ trait SketchMSPageReference extends StObject {
 }
 object SketchMSPageReference {
   
-  @scala.inline
-  def apply(_ref: String): SketchMSPageReference = {
+  inline def apply(_ref: String): SketchMSPageReference = {
     val __obj = js.Dynamic.literal(_class = "MSJSONFileReference", _ref = _ref.asInstanceOf[js.Any], _ref_class = "MSImmutablePage")
     __obj.asInstanceOf[SketchMSPageReference]
   }
   
-  @scala.inline
-  implicit class SketchMSPageReferenceMutableBuilder[Self <: SketchMSPageReference] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSPageReference](x: Self) {
     
-    @scala.inline
-    def set_class(value: MSJSONFileReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: MSJSONFileReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ref(value: String): Self = StObject.set(x, "_ref", value.asInstanceOf[js.Any])
+    inline def set_ref(value: String): Self = StObject.set(x, "_ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ref_class(value: MSImmutablePage): Self = StObject.set(x, "_ref_class", value.asInstanceOf[js.Any])
+    inline def set_ref_class(value: MSImmutablePage): Self = StObject.set(x, "_ref_class", value.asInstanceOf[js.Any])
   }
 }

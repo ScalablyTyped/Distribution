@@ -17,8 +17,7 @@ trait FieldSchemaInFormMultiChoice
 }
 object FieldSchemaInFormMultiChoice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     Description: String,
     Direction: String,
@@ -40,16 +39,12 @@ object FieldSchemaInFormMultiChoice {
     __obj.asInstanceOf[FieldSchemaInFormMultiChoice]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormMultiChoiceMutableBuilder[Self <: FieldSchemaInFormMultiChoice] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormMultiChoice](x: Self) {
     
-    @scala.inline
-    def setFillInChoice(value: Boolean): Self = StObject.set(x, "FillInChoice", value.asInstanceOf[js.Any])
+    inline def setFillInChoice(value: Boolean): Self = StObject.set(x, "FillInChoice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiChoices(value: js.Array[String]): Self = StObject.set(x, "MultiChoices", value.asInstanceOf[js.Any])
+    inline def setMultiChoices(value: js.Array[String]): Self = StObject.set(x, "MultiChoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiChoicesVarargs(value: String*): Self = StObject.set(x, "MultiChoices", js.Array(value :_*))
+    inline def setMultiChoicesVarargs(value: String*): Self = StObject.set(x, "MultiChoices", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait PickImplhistoryType extends StObject {
 }
 object PickImplhistoryType {
   
-  @scala.inline
-  def apply(historyType: hash | state): PickImplhistoryType = {
+  inline def apply(historyType: hash | state): PickImplhistoryType = {
     val __obj = js.Dynamic.literal(historyType = historyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhistoryType]
   }
   
-  @scala.inline
-  implicit class PickImplhistoryTypeMutableBuilder[Self <: PickImplhistoryType] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplhistoryType](x: Self) {
     
-    @scala.inline
-    def setHistoryType(value: hash | state): Self = StObject.set(x, "historyType", value.asInstanceOf[js.Any])
+    inline def setHistoryType(value: hash | state): Self = StObject.set(x, "historyType", value.asInstanceOf[js.Any])
   }
 }

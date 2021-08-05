@@ -18,25 +18,19 @@ trait ListActivitiesOutput extends StObject {
 }
 object ListActivitiesOutput {
   
-  @scala.inline
-  def apply(activities: ActivityList): ListActivitiesOutput = {
+  inline def apply(activities: ActivityList): ListActivitiesOutput = {
     val __obj = js.Dynamic.literal(activities = activities.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActivitiesOutput]
   }
   
-  @scala.inline
-  implicit class ListActivitiesOutputMutableBuilder[Self <: ListActivitiesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListActivitiesOutput](x: Self) {
     
-    @scala.inline
-    def setActivities(value: ActivityList): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: ActivityList): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesVarargs(value: ActivityListItem*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: ActivityListItem*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

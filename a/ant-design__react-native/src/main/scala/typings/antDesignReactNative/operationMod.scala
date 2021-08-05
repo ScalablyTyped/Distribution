@@ -11,8 +11,6 @@ object operationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(actions: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(actions.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default(actions: js.Array[js.Any], onBackHandler: CallbackOnBackHandler): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(actions.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(actions: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(actions.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(actions: js.Array[js.Any], onBackHandler: CallbackOnBackHandler): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(actions.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

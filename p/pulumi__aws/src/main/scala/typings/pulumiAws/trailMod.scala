@@ -136,21 +136,16 @@ object trailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trail]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trail]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TrailState): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trail]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TrailState, opts: CustomResourceOptions): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trail]
+    inline def get(name: String, id: Input[ID]): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trail]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trail]
+    inline def get(name: String, id: Input[ID], state: TrailState): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trail]
+    inline def get(name: String, id: Input[ID], state: TrailState, opts: CustomResourceOptions): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trail]
     
     /**
       * Returns true if the given object is an instance of Trail.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean]
   }
   
   trait TrailArgs extends StObject {
@@ -242,107 +237,74 @@ object trailMod {
   }
   object TrailArgs {
     
-    @scala.inline
-    def apply(s3BucketName: Input[String]): TrailArgs = {
+    inline def apply(s3BucketName: Input[String]): TrailArgs = {
       val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrailArgs]
     }
     
-    @scala.inline
-    implicit class TrailArgsMutableBuilder[Self <: TrailArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TrailArgs](x: Self) {
       
-      @scala.inline
-      def setCloudWatchLogsGroupArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudWatchLogsGroupArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudWatchLogsGroupArnUndefined: Self = StObject.set(x, "cloudWatchLogsGroupArn", js.undefined)
+      inline def setCloudWatchLogsGroupArnUndefined: Self = StObject.set(x, "cloudWatchLogsGroupArn", js.undefined)
       
-      @scala.inline
-      def setCloudWatchLogsRoleArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
+      inline def setCloudWatchLogsRoleArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudWatchLogsRoleArnUndefined: Self = StObject.set(x, "cloudWatchLogsRoleArn", js.undefined)
+      inline def setCloudWatchLogsRoleArnUndefined: Self = StObject.set(x, "cloudWatchLogsRoleArn", js.undefined)
       
-      @scala.inline
-      def setEnableLogFileValidation(value: Input[Boolean]): Self = StObject.set(x, "enableLogFileValidation", value.asInstanceOf[js.Any])
+      inline def setEnableLogFileValidation(value: Input[Boolean]): Self = StObject.set(x, "enableLogFileValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLogFileValidationUndefined: Self = StObject.set(x, "enableLogFileValidation", js.undefined)
+      inline def setEnableLogFileValidationUndefined: Self = StObject.set(x, "enableLogFileValidation", js.undefined)
       
-      @scala.inline
-      def setEnableLogging(value: Input[Boolean]): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+      inline def setEnableLogging(value: Input[Boolean]): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
+      inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
       
-      @scala.inline
-      def setEventSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]): Self = StObject.set(x, "eventSelectors", value.asInstanceOf[js.Any])
+      inline def setEventSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]): Self = StObject.set(x, "eventSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSelectorsUndefined: Self = StObject.set(x, "eventSelectors", js.undefined)
+      inline def setEventSelectorsUndefined: Self = StObject.set(x, "eventSelectors", js.undefined)
       
-      @scala.inline
-      def setEventSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]*): Self = StObject.set(x, "eventSelectors", js.Array(value :_*))
+      inline def setEventSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]*): Self = StObject.set(x, "eventSelectors", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludeGlobalServiceEvents(value: Input[Boolean]): Self = StObject.set(x, "includeGlobalServiceEvents", value.asInstanceOf[js.Any])
+      inline def setIncludeGlobalServiceEvents(value: Input[Boolean]): Self = StObject.set(x, "includeGlobalServiceEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeGlobalServiceEventsUndefined: Self = StObject.set(x, "includeGlobalServiceEvents", js.undefined)
+      inline def setIncludeGlobalServiceEventsUndefined: Self = StObject.set(x, "includeGlobalServiceEvents", js.undefined)
       
-      @scala.inline
-      def setInsightSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]]]): Self = StObject.set(x, "insightSelectors", value.asInstanceOf[js.Any])
+      inline def setInsightSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]]]): Self = StObject.set(x, "insightSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsightSelectorsUndefined: Self = StObject.set(x, "insightSelectors", js.undefined)
+      inline def setInsightSelectorsUndefined: Self = StObject.set(x, "insightSelectors", js.undefined)
       
-      @scala.inline
-      def setInsightSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]*): Self = StObject.set(x, "insightSelectors", js.Array(value :_*))
+      inline def setInsightSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]*): Self = StObject.set(x, "insightSelectors", js.Array(value :_*))
       
-      @scala.inline
-      def setIsMultiRegionTrail(value: Input[Boolean]): Self = StObject.set(x, "isMultiRegionTrail", value.asInstanceOf[js.Any])
+      inline def setIsMultiRegionTrail(value: Input[Boolean]): Self = StObject.set(x, "isMultiRegionTrail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultiRegionTrailUndefined: Self = StObject.set(x, "isMultiRegionTrail", js.undefined)
+      inline def setIsMultiRegionTrailUndefined: Self = StObject.set(x, "isMultiRegionTrail", js.undefined)
       
-      @scala.inline
-      def setIsOrganizationTrail(value: Input[Boolean]): Self = StObject.set(x, "isOrganizationTrail", value.asInstanceOf[js.Any])
+      inline def setIsOrganizationTrail(value: Input[Boolean]): Self = StObject.set(x, "isOrganizationTrail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOrganizationTrailUndefined: Self = StObject.set(x, "isOrganizationTrail", js.undefined)
+      inline def setIsOrganizationTrailUndefined: Self = StObject.set(x, "isOrganizationTrail", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+      inline def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+      inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
       
-      @scala.inline
-      def setSnsTopicName(value: Input[String]): Self = StObject.set(x, "snsTopicName", value.asInstanceOf[js.Any])
+      inline def setSnsTopicName(value: Input[String]): Self = StObject.set(x, "snsTopicName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicNameUndefined: Self = StObject.set(x, "snsTopicName", js.undefined)
+      inline def setSnsTopicNameUndefined: Self = StObject.set(x, "snsTopicName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -445,122 +407,84 @@ object trailMod {
   }
   object TrailState {
     
-    @scala.inline
-    def apply(): TrailState = {
+    inline def apply(): TrailState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrailState]
     }
     
-    @scala.inline
-    implicit class TrailStateMutableBuilder[Self <: TrailState] (val x: Self) extends AnyVal {
+    extension [Self <: TrailState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCloudWatchLogsGroupArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsGroupArn", value.asInstanceOf[js.Any])
+      inline def setCloudWatchLogsGroupArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsGroupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudWatchLogsGroupArnUndefined: Self = StObject.set(x, "cloudWatchLogsGroupArn", js.undefined)
+      inline def setCloudWatchLogsGroupArnUndefined: Self = StObject.set(x, "cloudWatchLogsGroupArn", js.undefined)
       
-      @scala.inline
-      def setCloudWatchLogsRoleArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
+      inline def setCloudWatchLogsRoleArn(value: Input[String]): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudWatchLogsRoleArnUndefined: Self = StObject.set(x, "cloudWatchLogsRoleArn", js.undefined)
+      inline def setCloudWatchLogsRoleArnUndefined: Self = StObject.set(x, "cloudWatchLogsRoleArn", js.undefined)
       
-      @scala.inline
-      def setEnableLogFileValidation(value: Input[Boolean]): Self = StObject.set(x, "enableLogFileValidation", value.asInstanceOf[js.Any])
+      inline def setEnableLogFileValidation(value: Input[Boolean]): Self = StObject.set(x, "enableLogFileValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLogFileValidationUndefined: Self = StObject.set(x, "enableLogFileValidation", js.undefined)
+      inline def setEnableLogFileValidationUndefined: Self = StObject.set(x, "enableLogFileValidation", js.undefined)
       
-      @scala.inline
-      def setEnableLogging(value: Input[Boolean]): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+      inline def setEnableLogging(value: Input[Boolean]): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
+      inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
       
-      @scala.inline
-      def setEventSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]): Self = StObject.set(x, "eventSelectors", value.asInstanceOf[js.Any])
+      inline def setEventSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]): Self = StObject.set(x, "eventSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSelectorsUndefined: Self = StObject.set(x, "eventSelectors", js.undefined)
+      inline def setEventSelectorsUndefined: Self = StObject.set(x, "eventSelectors", js.undefined)
       
-      @scala.inline
-      def setEventSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]*): Self = StObject.set(x, "eventSelectors", js.Array(value :_*))
+      inline def setEventSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]*): Self = StObject.set(x, "eventSelectors", js.Array(value :_*))
       
-      @scala.inline
-      def setHomeRegion(value: Input[String]): Self = StObject.set(x, "homeRegion", value.asInstanceOf[js.Any])
+      inline def setHomeRegion(value: Input[String]): Self = StObject.set(x, "homeRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeRegionUndefined: Self = StObject.set(x, "homeRegion", js.undefined)
+      inline def setHomeRegionUndefined: Self = StObject.set(x, "homeRegion", js.undefined)
       
-      @scala.inline
-      def setIncludeGlobalServiceEvents(value: Input[Boolean]): Self = StObject.set(x, "includeGlobalServiceEvents", value.asInstanceOf[js.Any])
+      inline def setIncludeGlobalServiceEvents(value: Input[Boolean]): Self = StObject.set(x, "includeGlobalServiceEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeGlobalServiceEventsUndefined: Self = StObject.set(x, "includeGlobalServiceEvents", js.undefined)
+      inline def setIncludeGlobalServiceEventsUndefined: Self = StObject.set(x, "includeGlobalServiceEvents", js.undefined)
       
-      @scala.inline
-      def setInsightSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]]]): Self = StObject.set(x, "insightSelectors", value.asInstanceOf[js.Any])
+      inline def setInsightSelectors(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]]]): Self = StObject.set(x, "insightSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsightSelectorsUndefined: Self = StObject.set(x, "insightSelectors", js.undefined)
+      inline def setInsightSelectorsUndefined: Self = StObject.set(x, "insightSelectors", js.undefined)
       
-      @scala.inline
-      def setInsightSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]*): Self = StObject.set(x, "insightSelectors", js.Array(value :_*))
+      inline def setInsightSelectorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]*): Self = StObject.set(x, "insightSelectors", js.Array(value :_*))
       
-      @scala.inline
-      def setIsMultiRegionTrail(value: Input[Boolean]): Self = StObject.set(x, "isMultiRegionTrail", value.asInstanceOf[js.Any])
+      inline def setIsMultiRegionTrail(value: Input[Boolean]): Self = StObject.set(x, "isMultiRegionTrail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultiRegionTrailUndefined: Self = StObject.set(x, "isMultiRegionTrail", js.undefined)
+      inline def setIsMultiRegionTrailUndefined: Self = StObject.set(x, "isMultiRegionTrail", js.undefined)
       
-      @scala.inline
-      def setIsOrganizationTrail(value: Input[Boolean]): Self = StObject.set(x, "isOrganizationTrail", value.asInstanceOf[js.Any])
+      inline def setIsOrganizationTrail(value: Input[Boolean]): Self = StObject.set(x, "isOrganizationTrail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOrganizationTrailUndefined: Self = StObject.set(x, "isOrganizationTrail", js.undefined)
+      inline def setIsOrganizationTrailUndefined: Self = StObject.set(x, "isOrganizationTrail", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+      inline def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
+      inline def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
       
-      @scala.inline
-      def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+      inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
       
-      @scala.inline
-      def setSnsTopicName(value: Input[String]): Self = StObject.set(x, "snsTopicName", value.asInstanceOf[js.Any])
+      inline def setSnsTopicName(value: Input[String]): Self = StObject.set(x, "snsTopicName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicNameUndefined: Self = StObject.set(x, "snsTopicName", js.undefined)
+      inline def setSnsTopicNameUndefined: Self = StObject.set(x, "snsTopicName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

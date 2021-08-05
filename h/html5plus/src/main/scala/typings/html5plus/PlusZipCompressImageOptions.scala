@@ -127,67 +127,47 @@ trait PlusZipCompressImageOptions extends StObject {
 }
 object PlusZipCompressImageOptions {
   
-  @scala.inline
-  def apply(): PlusZipCompressImageOptions = {
+  inline def apply(): PlusZipCompressImageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusZipCompressImageOptions]
   }
   
-  @scala.inline
-  implicit class PlusZipCompressImageOptionsMutableBuilder[Self <: PlusZipCompressImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusZipCompressImageOptions](x: Self) {
     
-    @scala.inline
-    def setClip(value: PlusZipClipImageOptions): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: PlusZipClipImageOptions): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    @scala.inline
-    def setDst(value: _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
+    inline def setDst(value: _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDstUndefined: Self = StObject.set(x, "dst", js.undefined)
+    inline def setDstUndefined: Self = StObject.set(x, "dst", js.undefined)
     
-    @scala.inline
-    def setFormat(value: jpg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: jpg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setRotate(value: `90` | `180` | `270`): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: `90` | `180` | `270`): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setSrc(value: _wwwSlash | _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: _wwwSlash | _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

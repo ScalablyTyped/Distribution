@@ -24,31 +24,23 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe = {
+  inline def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe](x: Self) {
     
-    @scala.inline
-    def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+    inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
+    inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
     
-    @scala.inline
-    def setColumnToJsonKeyMappings(value: StringDictionary[String]): Self = StObject.set(x, "columnToJsonKeyMappings", value.asInstanceOf[js.Any])
+    inline def setColumnToJsonKeyMappings(value: StringDictionary[String]): Self = StObject.set(x, "columnToJsonKeyMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnToJsonKeyMappingsUndefined: Self = StObject.set(x, "columnToJsonKeyMappings", js.undefined)
+    inline def setColumnToJsonKeyMappingsUndefined: Self = StObject.set(x, "columnToJsonKeyMappings", js.undefined)
     
-    @scala.inline
-    def setConvertDotsInJsonKeysToUnderscores(value: Boolean): Self = StObject.set(x, "convertDotsInJsonKeysToUnderscores", value.asInstanceOf[js.Any])
+    inline def setConvertDotsInJsonKeysToUnderscores(value: Boolean): Self = StObject.set(x, "convertDotsInJsonKeysToUnderscores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertDotsInJsonKeysToUnderscoresUndefined: Self = StObject.set(x, "convertDotsInJsonKeysToUnderscores", js.undefined)
+    inline def setConvertDotsInJsonKeysToUnderscoresUndefined: Self = StObject.set(x, "convertDotsInJsonKeysToUnderscores", js.undefined)
   }
 }

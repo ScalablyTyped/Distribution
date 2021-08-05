@@ -11,19 +11,15 @@ trait GenerateDownloadUrlRequest extends StObject {
 }
 object GenerateDownloadUrlRequest {
   
-  @scala.inline
-  def apply(): GenerateDownloadUrlRequest = {
+  inline def apply(): GenerateDownloadUrlRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateDownloadUrlRequest]
   }
   
-  @scala.inline
-  implicit class GenerateDownloadUrlRequestMutableBuilder[Self <: GenerateDownloadUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateDownloadUrlRequest](x: Self) {
     
-    @scala.inline
-    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

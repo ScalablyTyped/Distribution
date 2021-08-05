@@ -14,8 +14,7 @@ trait CallConversation
 }
 object CallConversation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     calledCollaborationRef: Collaboration,
@@ -32,16 +31,12 @@ object CallConversation {
     __obj.asInstanceOf[CallConversation]
   }
   
-  @scala.inline
-  implicit class CallConversationMutableBuilder[Self <: CallConversation] (val x: Self) extends AnyVal {
+  extension [Self <: CallConversation](x: Self) {
     
-    @scala.inline
-    def setCalledCollaborationRef(value: Collaboration): Self = StObject.set(x, "calledCollaborationRef", value.asInstanceOf[js.Any])
+    inline def setCalledCollaborationRef(value: Collaboration): Self = StObject.set(x, "calledCollaborationRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantAssociations(value: js.Array[ParticipantAssociation]): Self = StObject.set(x, "participantAssociations", value.asInstanceOf[js.Any])
+    inline def setParticipantAssociations(value: js.Array[ParticipantAssociation]): Self = StObject.set(x, "participantAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantAssociationsVarargs(value: ParticipantAssociation*): Self = StObject.set(x, "participantAssociations", js.Array(value :_*))
+    inline def setParticipantAssociationsVarargs(value: ParticipantAssociation*): Self = StObject.set(x, "participantAssociations", js.Array(value :_*))
   }
 }

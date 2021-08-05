@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parent-module"
-version := "2.0.0-e0c3a6"
+version := "2.0.0-e24ef9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

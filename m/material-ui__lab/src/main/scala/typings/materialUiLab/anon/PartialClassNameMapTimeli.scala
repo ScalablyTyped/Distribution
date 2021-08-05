@@ -17,37 +17,27 @@ trait PartialClassNameMapTimeli extends StObject {
 }
 object PartialClassNameMapTimeli {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTimeli = {
+  inline def apply(): PartialClassNameMapTimeli = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTimeli]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTimeliMutableBuilder[Self <: PartialClassNameMapTimeli] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTimeli](x: Self) {
     
-    @scala.inline
-    def setAlignAlternate(value: String): Self = StObject.set(x, "alignAlternate", value.asInstanceOf[js.Any])
+    inline def setAlignAlternate(value: String): Self = StObject.set(x, "alignAlternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignAlternateUndefined: Self = StObject.set(x, "alignAlternate", js.undefined)
+    inline def setAlignAlternateUndefined: Self = StObject.set(x, "alignAlternate", js.undefined)
     
-    @scala.inline
-    def setAlignLeft(value: String): Self = StObject.set(x, "alignLeft", value.asInstanceOf[js.Any])
+    inline def setAlignLeft(value: String): Self = StObject.set(x, "alignLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignLeftUndefined: Self = StObject.set(x, "alignLeft", js.undefined)
+    inline def setAlignLeftUndefined: Self = StObject.set(x, "alignLeft", js.undefined)
     
-    @scala.inline
-    def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
+    inline def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
+    inline def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

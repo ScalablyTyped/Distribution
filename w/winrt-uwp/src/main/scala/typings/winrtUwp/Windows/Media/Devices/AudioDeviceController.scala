@@ -41,8 +41,7 @@ trait AudioDeviceController extends StObject {
 }
 object AudioDeviceController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
     getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
     muted: Boolean,
@@ -53,22 +52,16 @@ object AudioDeviceController {
     __obj.asInstanceOf[AudioDeviceController]
   }
   
-  @scala.inline
-  implicit class AudioDeviceControllerMutableBuilder[Self <: AudioDeviceController] (val x: Self) extends AnyVal {
+  extension [Self <: AudioDeviceController](x: Self) {
     
-    @scala.inline
-    def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
+    inline def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
+    inline def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
+    inline def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVolumePercent(value: Double): Self = StObject.set(x, "volumePercent", value.asInstanceOf[js.Any])
+    inline def setVolumePercent(value: Double): Self = StObject.set(x, "volumePercent", value.asInstanceOf[js.Any])
   }
 }

@@ -13,18 +13,15 @@ object integrationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIntegrationsToSetup(options: Options): js.Array[Integration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntegrationsToSetup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Integration]]
+  inline def getIntegrationsToSetup(options: Options): js.Array[Integration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntegrationsToSetup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Integration]]
   
   @JSImport("@sentry/core/dist/integration", "installedIntegrations")
   @js.native
   val installedIntegrations: js.Array[String] = js.native
   
-  @scala.inline
-  def setupIntegration(integration: Integration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupIntegration")(integration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setupIntegration(integration: Integration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupIntegration")(integration.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setupIntegrations[O /* <: Options */](options: O): IntegrationIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("setupIntegrations")(options.asInstanceOf[js.Any]).asInstanceOf[IntegrationIndex]
+  inline def setupIntegrations[O /* <: Options */](options: O): IntegrationIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("setupIntegrations")(options.asInstanceOf[js.Any]).asInstanceOf[IntegrationIndex]
   
   type IntegrationIndex = StringDictionary[Integration]
 }

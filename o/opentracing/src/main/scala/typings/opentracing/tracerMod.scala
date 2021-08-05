@@ -137,41 +137,30 @@ object tracerMod {
   }
   object SpanOptions {
     
-    @scala.inline
-    def apply(): SpanOptions = {
+    inline def apply(): SpanOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpanOptions]
     }
     
-    @scala.inline
-    implicit class SpanOptionsMutableBuilder[Self <: SpanOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpanOptions](x: Self) {
       
-      @scala.inline
-      def setChildOf(value: typings.opentracing.spanMod.default | typings.opentracing.spanContextMod.default): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
+      inline def setChildOf(value: typings.opentracing.spanMod.default | typings.opentracing.spanContextMod.default): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildOfUndefined: Self = StObject.set(x, "childOf", js.undefined)
+      inline def setChildOfUndefined: Self = StObject.set(x, "childOf", js.undefined)
       
-      @scala.inline
-      def setReferences(value: js.Array[typings.opentracing.referenceMod.default]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[typings.opentracing.referenceMod.default]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+      inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      @scala.inline
-      def setReferencesVarargs(value: typings.opentracing.referenceMod.default*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: typings.opentracing.referenceMod.default*): Self = StObject.set(x, "references", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

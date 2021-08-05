@@ -77,145 +77,99 @@ trait Metadata
 }
 object Metadata {
   
-  @scala.inline
-  def apply(chromaSubsampling: String): Metadata = {
+  inline def apply(chromaSubsampling: String): Metadata = {
     val __obj = js.Dynamic.literal(chromaSubsampling = chromaSubsampling.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChromaSubsampling(value: String): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
+    inline def setChromaSubsampling(value: String): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: js.Array[Double]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: js.Array[Double]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
+    inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
-    @scala.inline
-    def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setExif(value: Buffer): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+    inline def setExif(value: Buffer): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
+    inline def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHasAlpha(value: Boolean): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
+    inline def setHasAlpha(value: Boolean): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAlphaUndefined: Self = StObject.set(x, "hasAlpha", js.undefined)
+    inline def setHasAlphaUndefined: Self = StObject.set(x, "hasAlpha", js.undefined)
     
-    @scala.inline
-    def setHasProfile(value: Boolean): Self = StObject.set(x, "hasProfile", value.asInstanceOf[js.Any])
+    inline def setHasProfile(value: Boolean): Self = StObject.set(x, "hasProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasProfileUndefined: Self = StObject.set(x, "hasProfile", js.undefined)
+    inline def setHasProfileUndefined: Self = StObject.set(x, "hasProfile", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIcc(value: Buffer): Self = StObject.set(x, "icc", value.asInstanceOf[js.Any])
+    inline def setIcc(value: Buffer): Self = StObject.set(x, "icc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIccUndefined: Self = StObject.set(x, "icc", js.undefined)
+    inline def setIccUndefined: Self = StObject.set(x, "icc", js.undefined)
     
-    @scala.inline
-    def setIptc(value: Buffer): Self = StObject.set(x, "iptc", value.asInstanceOf[js.Any])
+    inline def setIptc(value: Buffer): Self = StObject.set(x, "iptc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIptcUndefined: Self = StObject.set(x, "iptc", js.undefined)
+    inline def setIptcUndefined: Self = StObject.set(x, "iptc", js.undefined)
     
-    @scala.inline
-    def setIsProgressive(value: Boolean): Self = StObject.set(x, "isProgressive", value.asInstanceOf[js.Any])
+    inline def setIsProgressive(value: Boolean): Self = StObject.set(x, "isProgressive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsProgressiveUndefined: Self = StObject.set(x, "isProgressive", js.undefined)
+    inline def setIsProgressiveUndefined: Self = StObject.set(x, "isProgressive", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setPageHeight(value: Double): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
+    inline def setPageHeight(value: Double): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeightUndefined: Self = StObject.set(x, "pageHeight", js.undefined)
+    inline def setPageHeightUndefined: Self = StObject.set(x, "pageHeight", js.undefined)
     
-    @scala.inline
-    def setPagePrimary(value: Double): Self = StObject.set(x, "pagePrimary", value.asInstanceOf[js.Any])
+    inline def setPagePrimary(value: Double): Self = StObject.set(x, "pagePrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagePrimaryUndefined: Self = StObject.set(x, "pagePrimary", js.undefined)
+    inline def setPagePrimaryUndefined: Self = StObject.set(x, "pagePrimary", js.undefined)
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
-    @scala.inline
-    def setTifftagPhotoshop(value: Buffer): Self = StObject.set(x, "tifftagPhotoshop", value.asInstanceOf[js.Any])
+    inline def setTifftagPhotoshop(value: Buffer): Self = StObject.set(x, "tifftagPhotoshop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTifftagPhotoshopUndefined: Self = StObject.set(x, "tifftagPhotoshop", js.undefined)
+    inline def setTifftagPhotoshopUndefined: Self = StObject.set(x, "tifftagPhotoshop", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setXmp(value: Buffer): Self = StObject.set(x, "xmp", value.asInstanceOf[js.Any])
+    inline def setXmp(value: Buffer): Self = StObject.set(x, "xmp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmpUndefined: Self = StObject.set(x, "xmp", js.undefined)
+    inline def setXmpUndefined: Self = StObject.set(x, "xmp", js.undefined)
   }
 }

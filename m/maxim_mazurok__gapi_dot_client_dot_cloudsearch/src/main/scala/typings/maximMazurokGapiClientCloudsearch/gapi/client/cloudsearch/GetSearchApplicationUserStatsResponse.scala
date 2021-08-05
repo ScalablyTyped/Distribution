@@ -10,22 +10,17 @@ trait GetSearchApplicationUserStatsResponse extends StObject {
 }
 object GetSearchApplicationUserStatsResponse {
   
-  @scala.inline
-  def apply(): GetSearchApplicationUserStatsResponse = {
+  inline def apply(): GetSearchApplicationUserStatsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSearchApplicationUserStatsResponse]
   }
   
-  @scala.inline
-  implicit class GetSearchApplicationUserStatsResponseMutableBuilder[Self <: GetSearchApplicationUserStatsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSearchApplicationUserStatsResponse](x: Self) {
     
-    @scala.inline
-    def setStats(value: js.Array[SearchApplicationUserStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: js.Array[SearchApplicationUserStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    @scala.inline
-    def setStatsVarargs(value: SearchApplicationUserStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
+    inline def setStatsVarargs(value: SearchApplicationUserStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
   }
 }

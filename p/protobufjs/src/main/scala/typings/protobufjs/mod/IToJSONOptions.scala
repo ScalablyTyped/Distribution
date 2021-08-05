@@ -11,19 +11,15 @@ trait IToJSONOptions extends StObject {
 }
 object IToJSONOptions {
   
-  @scala.inline
-  def apply(): IToJSONOptions = {
+  inline def apply(): IToJSONOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IToJSONOptions]
   }
   
-  @scala.inline
-  implicit class IToJSONOptionsMutableBuilder[Self <: IToJSONOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IToJSONOptions](x: Self) {
     
-    @scala.inline
-    def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
+    inline def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
+    inline def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
   }
 }

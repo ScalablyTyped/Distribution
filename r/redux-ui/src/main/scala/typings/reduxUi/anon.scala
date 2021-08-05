@@ -14,26 +14,20 @@ object anon {
   }
   object Pure {
     
-    @scala.inline
-    def apply(): Pure = {
+    inline def apply(): Pure = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Pure]
     }
     
-    @scala.inline
-    implicit class PureMutableBuilder[Self <: Pure] (val x: Self) extends AnyVal {
+    extension [Self <: Pure](x: Self) {
       
-      @scala.inline
-      def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+      inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+      inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
       
-      @scala.inline
-      def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
+      inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
+      inline def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
     }
   }
 }

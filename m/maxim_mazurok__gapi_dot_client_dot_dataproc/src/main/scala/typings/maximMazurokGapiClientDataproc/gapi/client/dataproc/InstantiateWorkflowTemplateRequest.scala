@@ -29,35 +29,27 @@ trait InstantiateWorkflowTemplateRequest extends StObject {
 }
 object InstantiateWorkflowTemplateRequest {
   
-  @scala.inline
-  def apply(): InstantiateWorkflowTemplateRequest = {
+  inline def apply(): InstantiateWorkflowTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstantiateWorkflowTemplateRequest]
   }
   
-  @scala.inline
-  implicit class InstantiateWorkflowTemplateRequestMutableBuilder[Self <: InstantiateWorkflowTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstantiateWorkflowTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.InstantiateWorkflowTemplateRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

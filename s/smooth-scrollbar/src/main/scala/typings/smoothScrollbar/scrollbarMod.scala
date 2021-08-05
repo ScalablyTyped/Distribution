@@ -24,20 +24,16 @@ object scrollbarMod {
   }
   object Metrics {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Metrics = {
+    inline def apply(height: Double, width: Double): Metrics = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metrics]
     }
     
-    @scala.inline
-    implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+    extension [Self <: Metrics](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,8 +51,7 @@ object scrollbarMod {
   }
   object ScrollIntoViewOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alignToTop: Boolean,
       offsetBottom: Double,
       offsetLeft: Double,
@@ -67,23 +62,17 @@ object scrollbarMod {
       __obj.asInstanceOf[ScrollIntoViewOptions]
     }
     
-    @scala.inline
-    implicit class ScrollIntoViewOptionsMutableBuilder[Self <: ScrollIntoViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollIntoViewOptions](x: Self) {
       
-      @scala.inline
-      def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
+      inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
+      inline def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
+      inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+      inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyScrollIfNeeded(value: Boolean): Self = StObject.set(x, "onlyScrollIfNeeded", value.asInstanceOf[js.Any])
+      inline def setOnlyScrollIfNeeded(value: Boolean): Self = StObject.set(x, "onlyScrollIfNeeded", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,20 +86,16 @@ object scrollbarMod {
   }
   object ScrollStatus {
     
-    @scala.inline
-    def apply(limit: Data2d, offset: Data2d): ScrollStatus = {
+    inline def apply(limit: Data2d, offset: Data2d): ScrollStatus = {
       val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollStatus]
     }
     
-    @scala.inline
-    implicit class ScrollStatusMutableBuilder[Self <: ScrollStatus] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollStatus](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Data2d): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Data2d): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Data2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Data2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,20 +107,16 @@ object scrollbarMod {
   }
   object ScrollToOptions {
     
-    @scala.inline
-    def apply(callback: () => Unit, easing: Double => Double): ScrollToOptions = {
+    inline def apply(callback: () => Unit, easing: Double => Double): ScrollToOptions = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), easing = js.Any.fromFunction1(easing))
       __obj.asInstanceOf[ScrollToOptions]
     }
     
-    @scala.inline
-    implicit class ScrollToOptionsMutableBuilder[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollToOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEasing(value: Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasing(value: Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     }
   }
   
@@ -228,26 +209,20 @@ object scrollbarMod {
   }
   object ScrollbarBounding {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): ScrollbarBounding = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): ScrollbarBounding = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollbarBounding]
     }
     
-    @scala.inline
-    implicit class ScrollbarBoundingMutableBuilder[Self <: ScrollbarBounding] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarBounding](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,8 +246,7 @@ object scrollbarMod {
   }
   object ScrollbarOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alwaysShowTracks: Boolean,
       continuousScrolling: Boolean,
       damping: Double,
@@ -284,38 +258,27 @@ object scrollbarMod {
       __obj.asInstanceOf[ScrollbarOptions]
     }
     
-    @scala.inline
-    implicit class ScrollbarOptionsMutableBuilder[Self <: ScrollbarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarOptions](x: Self) {
       
-      @scala.inline
-      def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
+      inline def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousScrolling(value: Boolean): Self = StObject.set(x, "continuousScrolling", value.asInstanceOf[js.Any])
+      inline def setContinuousScrolling(value: Boolean): Self = StObject.set(x, "continuousScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateTo(value: EventTarget): Self = StObject.set(x, "delegateTo", value.asInstanceOf[js.Any])
+      inline def setDelegateTo(value: EventTarget): Self = StObject.set(x, "delegateTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateToNull: Self = StObject.set(x, "delegateTo", null)
+      inline def setDelegateToNull: Self = StObject.set(x, "delegateTo", null)
       
-      @scala.inline
-      def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderByPixels(value: Boolean): Self = StObject.set(x, "renderByPixels", value.asInstanceOf[js.Any])
+      inline def setRenderByPixels(value: Boolean): Self = StObject.set(x, "renderByPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbMinSize(value: Double): Self = StObject.set(x, "thumbMinSize", value.asInstanceOf[js.Any])
+      inline def setThumbMinSize(value: Double): Self = StObject.set(x, "thumbMinSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelEventTarget(value: EventTarget): Self = StObject.set(x, "wheelEventTarget", value.asInstanceOf[js.Any])
+      inline def setWheelEventTarget(value: EventTarget): Self = StObject.set(x, "wheelEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelEventTargetNull: Self = StObject.set(x, "wheelEventTarget", null)
+      inline def setWheelEventTargetNull: Self = StObject.set(x, "wheelEventTarget", null)
     }
   }
   
@@ -327,20 +290,16 @@ object scrollbarMod {
   }
   object ScrollbarSize {
     
-    @scala.inline
-    def apply(container: Metrics, content: Metrics): ScrollbarSize = {
+    inline def apply(container: Metrics, content: Metrics): ScrollbarSize = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollbarSize]
     }
     
-    @scala.inline
-    implicit class ScrollbarSizeMutableBuilder[Self <: ScrollbarSize] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarSize](x: Self) {
       
-      @scala.inline
-      def setContainer(value: Metrics): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Metrics): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: Metrics): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Metrics): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,17 +309,14 @@ object scrollbarMod {
   }
   object SetPositionOptions {
     
-    @scala.inline
-    def apply(withoutCallbacks: Boolean): SetPositionOptions = {
+    inline def apply(withoutCallbacks: Boolean): SetPositionOptions = {
       val __obj = js.Dynamic.literal(withoutCallbacks = withoutCallbacks.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetPositionOptions]
     }
     
-    @scala.inline
-    implicit class SetPositionOptionsMutableBuilder[Self <: SetPositionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetPositionOptions](x: Self) {
       
-      @scala.inline
-      def setWithoutCallbacks(value: Boolean): Self = StObject.set(x, "withoutCallbacks", value.asInstanceOf[js.Any])
+      inline def setWithoutCallbacks(value: Boolean): Self = StObject.set(x, "withoutCallbacks", value.asInstanceOf[js.Any])
     }
   }
 }

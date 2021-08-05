@@ -13,19 +13,15 @@ trait AssignedPrivateIpAddress extends StObject {
 }
 object AssignedPrivateIpAddress {
   
-  @scala.inline
-  def apply(): AssignedPrivateIpAddress = {
+  inline def apply(): AssignedPrivateIpAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssignedPrivateIpAddress]
   }
   
-  @scala.inline
-  implicit class AssignedPrivateIpAddressMutableBuilder[Self <: AssignedPrivateIpAddress] (val x: Self) extends AnyVal {
+  extension [Self <: AssignedPrivateIpAddress](x: Self) {
     
-    @scala.inline
-    def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
   }
 }

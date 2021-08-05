@@ -19,31 +19,23 @@ trait GetGrammarParams extends StObject {
 }
 object GetGrammarParams {
   
-  @scala.inline
-  def apply(customization_id: String, grammar_name: String): GetGrammarParams = {
+  inline def apply(customization_id: String, grammar_name: String): GetGrammarParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any], grammar_name = grammar_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGrammarParams]
   }
   
-  @scala.inline
-  implicit class GetGrammarParamsMutableBuilder[Self <: GetGrammarParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetGrammarParams](x: Self) {
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrammar_name(value: String): Self = StObject.set(x, "grammar_name", value.asInstanceOf[js.Any])
+    inline def setGrammar_name(value: String): Self = StObject.set(x, "grammar_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

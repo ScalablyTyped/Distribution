@@ -23,8 +23,7 @@ trait IntersectionObserverObserveCallbackResult extends StObject {
 }
 object IntersectionObserverObserveCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingClientRect: BoundingClientRectResult,
     intersectionRatio: Double,
     intersectionRect: IntersectionRectResult,
@@ -35,22 +34,16 @@ object IntersectionObserverObserveCallbackResult {
     __obj.asInstanceOf[IntersectionObserverObserveCallbackResult]
   }
   
-  @scala.inline
-  implicit class IntersectionObserverObserveCallbackResultMutableBuilder[Self <: IntersectionObserverObserveCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: IntersectionObserverObserveCallbackResult](x: Self) {
     
-    @scala.inline
-    def setBoundingClientRect(value: BoundingClientRectResult): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
+    inline def setBoundingClientRect(value: BoundingClientRectResult): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
+    inline def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRect(value: IntersectionRectResult): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
+    inline def setIntersectionRect(value: IntersectionRectResult): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeRect(value: RelativeRectResult): Self = StObject.set(x, "relativeRect", value.asInstanceOf[js.Any])
+    inline def setRelativeRect(value: RelativeRectResult): Self = StObject.set(x, "relativeRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

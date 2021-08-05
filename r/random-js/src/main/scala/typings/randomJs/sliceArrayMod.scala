@@ -10,12 +10,8 @@ object sliceArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sliceArray(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")().asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def sliceArray(start: Double): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")(start.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def sliceArray(start: Double, end: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def sliceArray(start: Unit, end: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def sliceArray(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")().asInstanceOf[js.Array[js.Any]]
+  inline def sliceArray(start: Double): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")(start.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def sliceArray(start: Double, end: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def sliceArray(start: Unit, end: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArray")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

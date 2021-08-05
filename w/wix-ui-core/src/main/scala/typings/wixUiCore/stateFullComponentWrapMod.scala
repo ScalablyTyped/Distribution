@@ -28,20 +28,16 @@ object stateFullComponentWrapMod {
   }
   object StateFullComponentWrapProps {
     
-    @scala.inline
-    def apply(): StateFullComponentWrapProps = {
+    inline def apply(): StateFullComponentWrapProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StateFullComponentWrapProps]
     }
     
-    @scala.inline
-    implicit class StateFullComponentWrapPropsMutableBuilder[Self <: StateFullComponentWrapProps] (val x: Self) extends AnyVal {
+    extension [Self <: StateFullComponentWrapProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

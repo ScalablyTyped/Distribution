@@ -13,16 +13,13 @@ trait SingleHeader extends StObject {
 }
 object SingleHeader {
   
-  @scala.inline
-  def apply(Name: FieldToMatchData): SingleHeader = {
+  inline def apply(Name: FieldToMatchData): SingleHeader = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleHeader]
   }
   
-  @scala.inline
-  implicit class SingleHeaderMutableBuilder[Self <: SingleHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SingleHeader](x: Self) {
     
-    @scala.inline
-    def setName(value: FieldToMatchData): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FieldToMatchData): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

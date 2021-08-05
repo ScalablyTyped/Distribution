@@ -12,19 +12,15 @@ trait SendFileResponse extends StObject {
 }
 object SendFileResponse {
   
-  @scala.inline
-  def apply(id: String, name: String): SendFileResponse = {
+  inline def apply(id: String, name: String): SendFileResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendFileResponse]
   }
   
-  @scala.inline
-  implicit class SendFileResponseMutableBuilder[Self <: SendFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendFileResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

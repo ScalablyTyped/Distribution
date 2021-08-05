@@ -18,10 +18,8 @@ object useFocusMod {
     * This hook returns an object with `isFocused` boolean property, which
     * determines if this component is focused or not.
     */
-  @scala.inline
-  def default(): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Output]
-  @scala.inline
-  def default(hasIsActiveAutoFocus: Input): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIsActiveAutoFocus.asInstanceOf[js.Any]).asInstanceOf[Output]
+  inline def default(): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Output]
+  inline def default(hasIsActiveAutoFocus: Input): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIsActiveAutoFocus.asInstanceOf[js.Any]).asInstanceOf[Output]
   
   trait Input extends StObject {
     
@@ -37,26 +35,20 @@ object useFocusMod {
   }
   object Input {
     
-    @scala.inline
-    def apply(): Input = {
+    inline def apply(): Input = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Input]
     }
     
-    @scala.inline
-    implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+    extension [Self <: Input](x: Self) {
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     }
   }
   
@@ -69,17 +61,14 @@ object useFocusMod {
   }
   object Output {
     
-    @scala.inline
-    def apply(isFocused: Boolean): Output = {
+    inline def apply(isFocused: Boolean): Output = {
       val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     }
   }
 }

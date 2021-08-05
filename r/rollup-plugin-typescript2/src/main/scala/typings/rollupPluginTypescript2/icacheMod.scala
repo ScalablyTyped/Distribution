@@ -24,8 +24,7 @@ object icacheMod {
   }
   object ICache {
     
-    @scala.inline
-    def apply[DataType](
+    inline def apply[DataType](
       exists: String => Boolean,
       `match`: js.Array[String] => Boolean,
       path: String => String,
@@ -39,29 +38,21 @@ object icacheMod {
       __obj.asInstanceOf[ICache[DataType]]
     }
     
-    @scala.inline
-    implicit class ICacheMutableBuilder[Self <: ICache[?], DataType] (val x: Self & ICache[DataType]) extends AnyVal {
+    extension [Self <: ICache[?], DataType](x: Self & ICache[DataType]) {
       
-      @scala.inline
-      def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
+      inline def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatch(value: js.Array[String] => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: js.Array[String] => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: String => String): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPath(value: String => String): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRead(value: String => js.UndefOr[DataType | Null]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: String => js.UndefOr[DataType | Null]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoll(value: () => Unit): Self = StObject.set(x, "roll", js.Any.fromFunction0(value))
+      inline def setRoll(value: () => Unit): Self = StObject.set(x, "roll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTouch(value: String => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction1(value))
+      inline def setTouch(value: String => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: (String, DataType) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+      inline def setWrite(value: (String, DataType) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
     }
   }
 }

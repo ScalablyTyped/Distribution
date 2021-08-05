@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparklineGroup")
 @js.native
-class SparklineGroup protected ()
+/* private */ class SparklineGroup ()
   extends StObject
      with typings.activexExcel.Excel.SparklineGroup {
   
@@ -39,7 +39,7 @@ class SparklineGroup protected ()
   /* CompleteClass */
   var DisplayHidden: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SparklineGroup_typekey")
   var ExcelDotSparklineGroup_typekey: typings.activexExcel.Excel.SparklineGroup = js.native
   

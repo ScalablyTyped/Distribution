@@ -19,10 +19,8 @@ object mod {
   	promiseFunction();
   	```
   	*/
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(log: js.Function1[/* stack */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(log: js.Function1[/* stack */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("loud-rejection", JSImport.Namespace)
   @js.native
@@ -43,10 +41,8 @@ object mod {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function loudRejection(log?: (stack: string) => void): void;
   // export = loudRejection;
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
-  @scala.inline
-  def default(log: js.Function1[/* stack */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(log: js.Function1[/* stack */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function loudRejection(log?: (stack: string) => void): void;
   // export = loudRejection;
@@ -54,6 +50,5 @@ object mod {
   @js.native
   def default_Fmod: Call = js.native
   
-  @scala.inline
-  def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

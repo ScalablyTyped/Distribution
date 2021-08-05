@@ -14,11 +14,8 @@ object commonUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def VersionHeader(): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("VersionHeader")().asInstanceOf[Headers]
-  @scala.inline
-  def VersionHeader(version: Double): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("VersionHeader")(version.asInstanceOf[js.Any]).asInstanceOf[Headers]
+  inline def VersionHeader(): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("VersionHeader")().asInstanceOf[Headers]
+  inline def VersionHeader(version: Double): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("VersionHeader")(version.asInstanceOf[js.Any]).asInstanceOf[Headers]
   
-  @scala.inline
-  def wrapCollection[R, T](fn: js.Function2[/* http */ AxiosInstance, /* entity */ T, R]): js.Function2[/* http */ AxiosInstance, /* data */ CollectionProp[T], Collection[R, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapCollection")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* http */ AxiosInstance, /* data */ CollectionProp[T], Collection[R, T]]]
+  inline def wrapCollection[R, T](fn: js.Function2[/* http */ AxiosInstance, /* entity */ T, R]): js.Function2[/* http */ AxiosInstance, /* data */ CollectionProp[T], Collection[R, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapCollection")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* http */ AxiosInstance, /* data */ CollectionProp[T], Collection[R, T]]]
 }

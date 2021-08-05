@@ -33,46 +33,33 @@ trait PlatformBranchSummary extends StObject {
 }
 object PlatformBranchSummary {
   
-  @scala.inline
-  def apply(): PlatformBranchSummary = {
+  inline def apply(): PlatformBranchSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlatformBranchSummary]
   }
   
-  @scala.inline
-  implicit class PlatformBranchSummaryMutableBuilder[Self <: PlatformBranchSummary] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformBranchSummary](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "BranchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "BranchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchNameUndefined: Self = StObject.set(x, "BranchName", js.undefined)
+    inline def setBranchNameUndefined: Self = StObject.set(x, "BranchName", js.undefined)
     
-    @scala.inline
-    def setBranchOrder(value: BranchOrder): Self = StObject.set(x, "BranchOrder", value.asInstanceOf[js.Any])
+    inline def setBranchOrder(value: BranchOrder): Self = StObject.set(x, "BranchOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchOrderUndefined: Self = StObject.set(x, "BranchOrder", js.undefined)
+    inline def setBranchOrderUndefined: Self = StObject.set(x, "BranchOrder", js.undefined)
     
-    @scala.inline
-    def setLifecycleState(value: PlatformBranchLifecycleState): Self = StObject.set(x, "LifecycleState", value.asInstanceOf[js.Any])
+    inline def setLifecycleState(value: PlatformBranchLifecycleState): Self = StObject.set(x, "LifecycleState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleStateUndefined: Self = StObject.set(x, "LifecycleState", js.undefined)
+    inline def setLifecycleStateUndefined: Self = StObject.set(x, "LifecycleState", js.undefined)
     
-    @scala.inline
-    def setPlatformName(value: PlatformName): Self = StObject.set(x, "PlatformName", value.asInstanceOf[js.Any])
+    inline def setPlatformName(value: PlatformName): Self = StObject.set(x, "PlatformName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformNameUndefined: Self = StObject.set(x, "PlatformName", js.undefined)
+    inline def setPlatformNameUndefined: Self = StObject.set(x, "PlatformName", js.undefined)
     
-    @scala.inline
-    def setSupportedTierList(value: SupportedTierList): Self = StObject.set(x, "SupportedTierList", value.asInstanceOf[js.Any])
+    inline def setSupportedTierList(value: SupportedTierList): Self = StObject.set(x, "SupportedTierList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTierListUndefined: Self = StObject.set(x, "SupportedTierList", js.undefined)
+    inline def setSupportedTierListUndefined: Self = StObject.set(x, "SupportedTierList", js.undefined)
     
-    @scala.inline
-    def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value :_*))
+    inline def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value :_*))
   }
 }

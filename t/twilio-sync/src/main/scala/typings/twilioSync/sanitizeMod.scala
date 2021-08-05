@@ -10,18 +10,13 @@ object sanitizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deepClone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def deepClone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def validateId(id: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateId")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateId(id: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateId")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateMandatoryTtl(ttl: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateMandatoryTtl")(ttl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateMandatoryTtl(ttl: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateMandatoryTtl")(ttl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateOptionalTtl(ttl: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptionalTtl")(ttl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateOptionalTtl(ttl: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptionalTtl")(ttl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validatePageSize(pageSize: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePageSize")(pageSize.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validatePageSize(pageSize: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePageSize")(pageSize.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

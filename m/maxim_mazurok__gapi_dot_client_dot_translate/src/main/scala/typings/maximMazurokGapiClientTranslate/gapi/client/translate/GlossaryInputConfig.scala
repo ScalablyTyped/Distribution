@@ -17,19 +17,15 @@ trait GlossaryInputConfig extends StObject {
 }
 object GlossaryInputConfig {
   
-  @scala.inline
-  def apply(): GlossaryInputConfig = {
+  inline def apply(): GlossaryInputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlossaryInputConfig]
   }
   
-  @scala.inline
-  implicit class GlossaryInputConfigMutableBuilder[Self <: GlossaryInputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GlossaryInputConfig](x: Self) {
     
-    @scala.inline
-    def setGcsSource(value: GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

@@ -17,9 +17,9 @@ object styleInjectorMod {
     /* CompleteClass */
     override def addRule(cssText: String): Double = js.native
     
-    var freeIndexes: js.Any = js.native
+    /* private */ var freeIndexes: js.Any = js.native
     
-    var nodes: js.Any = js.native
+    /* private */ var nodes: js.Any = js.native
     
     /* CompleteClass */
     override def nullifyRule(index: Double): Unit = js.native
@@ -29,7 +29,7 @@ object styleInjectorMod {
     /* CompleteClass */
     var ruleManager: RuleManager = js.native
     
-    var styleEl: js.Any = js.native
+    /* private */ var styleEl: js.Any = js.native
   }
   
   @JSImport("glaze/dist-types/StyleInjector", "NullStyleInjector")
@@ -59,19 +59,19 @@ object styleInjectorMod {
     /* CompleteClass */
     override def addRule(cssText: String): Double = js.native
     
-    var freeIndexes: js.Any = js.native
+    /* private */ var freeIndexes: js.Any = js.native
     
     /* CompleteClass */
     override def nullifyRule(index: Double): Unit = js.native
     
     def replaceRule(index: Double, cssText: String): Double = js.native
     
-    var ruleCount: js.Any = js.native
+    /* private */ var ruleCount: js.Any = js.native
     
     /* CompleteClass */
     var ruleManager: RuleManager = js.native
     
-    var sheet: js.Any = js.native
+    /* private */ var sheet: js.Any = js.native
   }
   
   @JSImport("glaze/dist-types/StyleInjector", "VirtualStyleInjector")
@@ -83,7 +83,7 @@ object styleInjectorMod {
     /* CompleteClass */
     override def addRule(cssText: String): Double = js.native
     
-    var cssTexts: js.Any = js.native
+    /* private */ var cssTexts: js.Any = js.native
     
     def getStyleElement(): Element = js.native
     
@@ -105,23 +105,18 @@ object styleInjectorMod {
   }
   object StyleInjector {
     
-    @scala.inline
-    def apply(addRule: String => Double, nullifyRule: Double => Unit, ruleManager: RuleManager): StyleInjector = {
+    inline def apply(addRule: String => Double, nullifyRule: Double => Unit, ruleManager: RuleManager): StyleInjector = {
       val __obj = js.Dynamic.literal(addRule = js.Any.fromFunction1(addRule), nullifyRule = js.Any.fromFunction1(nullifyRule), ruleManager = ruleManager.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyleInjector]
     }
     
-    @scala.inline
-    implicit class StyleInjectorMutableBuilder[Self <: StyleInjector] (val x: Self) extends AnyVal {
+    extension [Self <: StyleInjector](x: Self) {
       
-      @scala.inline
-      def setAddRule(value: String => Double): Self = StObject.set(x, "addRule", js.Any.fromFunction1(value))
+      inline def setAddRule(value: String => Double): Self = StObject.set(x, "addRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNullifyRule(value: Double => Unit): Self = StObject.set(x, "nullifyRule", js.Any.fromFunction1(value))
+      inline def setNullifyRule(value: Double => Unit): Self = StObject.set(x, "nullifyRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRuleManager(value: RuleManager): Self = StObject.set(x, "ruleManager", value.asInstanceOf[js.Any])
+      inline def setRuleManager(value: RuleManager): Self = StObject.set(x, "ruleManager", value.asInstanceOf[js.Any])
     }
   }
 }

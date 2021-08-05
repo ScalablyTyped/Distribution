@@ -48,73 +48,51 @@ trait ContainerOverride extends StObject {
 }
 object ContainerOverride {
   
-  @scala.inline
-  def apply(): ContainerOverride = {
+  inline def apply(): ContainerOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerOverride]
   }
   
-  @scala.inline
-  implicit class ContainerOverrideMutableBuilder[Self <: ContainerOverride] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerOverride](x: Self) {
     
-    @scala.inline
-    def setCommand(value: StringList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: StringList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
     
-    @scala.inline
-    def setCpu(value: BoxedInteger): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: BoxedInteger): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+    inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: EnvironmentVariables): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: EnvironmentVariables): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentFiles(value: EnvironmentFiles): Self = StObject.set(x, "environmentFiles", value.asInstanceOf[js.Any])
+    inline def setEnvironmentFiles(value: EnvironmentFiles): Self = StObject.set(x, "environmentFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentFilesUndefined: Self = StObject.set(x, "environmentFiles", js.undefined)
+    inline def setEnvironmentFilesUndefined: Self = StObject.set(x, "environmentFiles", js.undefined)
     
-    @scala.inline
-    def setEnvironmentFilesVarargs(value: EnvironmentFile*): Self = StObject.set(x, "environmentFiles", js.Array(value :_*))
+    inline def setEnvironmentFilesVarargs(value: EnvironmentFile*): Self = StObject.set(x, "environmentFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVarargs(value: KeyValuePair*): Self = StObject.set(x, "environment", js.Array(value :_*))
+    inline def setEnvironmentVarargs(value: KeyValuePair*): Self = StObject.set(x, "environment", js.Array(value :_*))
     
-    @scala.inline
-    def setMemory(value: BoxedInteger): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: BoxedInteger): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryReservation(value: BoxedInteger): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
+    inline def setMemoryReservation(value: BoxedInteger): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryReservationUndefined: Self = StObject.set(x, "memoryReservation", js.undefined)
+    inline def setMemoryReservationUndefined: Self = StObject.set(x, "memoryReservation", js.undefined)
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceRequirements(value: ResourceRequirements): Self = StObject.set(x, "resourceRequirements", value.asInstanceOf[js.Any])
+    inline def setResourceRequirements(value: ResourceRequirements): Self = StObject.set(x, "resourceRequirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRequirementsUndefined: Self = StObject.set(x, "resourceRequirements", js.undefined)
+    inline def setResourceRequirementsUndefined: Self = StObject.set(x, "resourceRequirements", js.undefined)
     
-    @scala.inline
-    def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = StObject.set(x, "resourceRequirements", js.Array(value :_*))
+    inline def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = StObject.set(x, "resourceRequirements", js.Array(value :_*))
   }
 }

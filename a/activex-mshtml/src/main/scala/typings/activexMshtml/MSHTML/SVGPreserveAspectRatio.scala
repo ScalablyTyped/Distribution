@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGPreserveAspectRatio extends StObject {
   
-  @JSName("MSHTML.SVGPreserveAspectRatio_typekey")
+  /* private */ @JSName("MSHTML.SVGPreserveAspectRatio_typekey")
   var MSHTMLDotSVGPreserveAspectRatio_typekey: SVGPreserveAspectRatio
   
   var align: Double
@@ -15,8 +15,7 @@ trait SVGPreserveAspectRatio extends StObject {
 }
 object SVGPreserveAspectRatio {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGPreserveAspectRatio_typekey: SVGPreserveAspectRatio,
     align: Double,
     meetOrSlice: Double
@@ -26,16 +25,12 @@ object SVGPreserveAspectRatio {
     __obj.asInstanceOf[SVGPreserveAspectRatio]
   }
   
-  @scala.inline
-  implicit class SVGPreserveAspectRatioMutableBuilder[Self <: SVGPreserveAspectRatio] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPreserveAspectRatio](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGPreserveAspectRatio_typekey(value: SVGPreserveAspectRatio): Self = StObject.set(x, "MSHTML.SVGPreserveAspectRatio_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGPreserveAspectRatio_typekey(value: SVGPreserveAspectRatio): Self = StObject.set(x, "MSHTML.SVGPreserveAspectRatio_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetOrSlice(value: Double): Self = StObject.set(x, "meetOrSlice", value.asInstanceOf[js.Any])
+    inline def setMeetOrSlice(value: Double): Self = StObject.set(x, "meetOrSlice", value.asInstanceOf[js.Any])
   }
 }

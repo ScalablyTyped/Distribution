@@ -22,49 +22,35 @@ trait DirectoryObjectPartnerReference
 }
 object DirectoryObjectPartnerReference {
   
-  @scala.inline
-  def apply(): DirectoryObjectPartnerReference = {
+  inline def apply(): DirectoryObjectPartnerReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectoryObjectPartnerReference]
   }
   
-  @scala.inline
-  implicit class DirectoryObjectPartnerReferenceMutableBuilder[Self <: DirectoryObjectPartnerReference] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryObjectPartnerReference](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setExternalPartnerTenantId(value: NullableOption[String]): Self = StObject.set(x, "externalPartnerTenantId", value.asInstanceOf[js.Any])
+    inline def setExternalPartnerTenantId(value: NullableOption[String]): Self = StObject.set(x, "externalPartnerTenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalPartnerTenantIdNull: Self = StObject.set(x, "externalPartnerTenantId", null)
+    inline def setExternalPartnerTenantIdNull: Self = StObject.set(x, "externalPartnerTenantId", null)
     
-    @scala.inline
-    def setExternalPartnerTenantIdUndefined: Self = StObject.set(x, "externalPartnerTenantId", js.undefined)
+    inline def setExternalPartnerTenantIdUndefined: Self = StObject.set(x, "externalPartnerTenantId", js.undefined)
     
-    @scala.inline
-    def setObjectType(value: NullableOption[String]): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: NullableOption[String]): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeNull: Self = StObject.set(x, "objectType", null)
+    inline def setObjectTypeNull: Self = StObject.set(x, "objectType", null)
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
   }
 }

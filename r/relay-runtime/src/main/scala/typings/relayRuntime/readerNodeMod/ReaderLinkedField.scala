@@ -27,8 +27,7 @@ trait ReaderLinkedField
 }
 object ReaderLinkedField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[ReaderArgument],
     kind: String,
     name: String,
@@ -39,55 +38,38 @@ object ReaderLinkedField {
     __obj.asInstanceOf[ReaderLinkedField]
   }
   
-  @scala.inline
-  implicit class ReaderLinkedFieldMutableBuilder[Self <: ReaderLinkedField] (val x: Self) extends AnyVal {
+  extension [Self <: ReaderLinkedField](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNull: Self = StObject.set(x, "alias", null)
+    inline def setAliasNull: Self = StObject.set(x, "alias", null)
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setArgs(value: js.Array[ReaderArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[ReaderArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: ReaderArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: ReaderArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setConcreteType(value: String): Self = StObject.set(x, "concreteType", value.asInstanceOf[js.Any])
+    inline def setConcreteType(value: String): Self = StObject.set(x, "concreteType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcreteTypeNull: Self = StObject.set(x, "concreteType", null)
+    inline def setConcreteTypeNull: Self = StObject.set(x, "concreteType", null)
     
-    @scala.inline
-    def setConcreteTypeUndefined: Self = StObject.set(x, "concreteType", js.undefined)
+    inline def setConcreteTypeUndefined: Self = StObject.set(x, "concreteType", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlural(value: Boolean): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+    inline def setPlural(value: Boolean): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelections(value: js.Array[ReaderSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+    inline def setSelections(value: js.Array[ReaderSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionsVarargs(value: ReaderSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: ReaderSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
     
-    @scala.inline
-    def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageKeyNull: Self = StObject.set(x, "storageKey", null)
+    inline def setStorageKeyNull: Self = StObject.set(x, "storageKey", null)
     
-    @scala.inline
-    def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
+    inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
   }
 }

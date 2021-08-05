@@ -20,8 +20,7 @@ trait RequestTask extends StObject {
 }
 object RequestTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: () => Unit,
     offHeadersReceived: DataResponseCallback => Unit,
     onHeadersReceived: DataResponseCallback => Unit
@@ -30,16 +29,12 @@ object RequestTask {
     __obj.asInstanceOf[RequestTask]
   }
   
-  @scala.inline
-  implicit class RequestTaskMutableBuilder[Self <: RequestTask] (val x: Self) extends AnyVal {
+  extension [Self <: RequestTask](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOffHeadersReceived(value: DataResponseCallback => Unit): Self = StObject.set(x, "offHeadersReceived", js.Any.fromFunction1(value))
+    inline def setOffHeadersReceived(value: DataResponseCallback => Unit): Self = StObject.set(x, "offHeadersReceived", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHeadersReceived(value: DataResponseCallback => Unit): Self = StObject.set(x, "onHeadersReceived", js.Any.fromFunction1(value))
+    inline def setOnHeadersReceived(value: DataResponseCallback => Unit): Self = StObject.set(x, "onHeadersReceived", js.Any.fromFunction1(value))
   }
 }

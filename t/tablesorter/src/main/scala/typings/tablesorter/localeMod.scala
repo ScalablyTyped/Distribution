@@ -45,8 +45,7 @@ object localeMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       nextAsc: String,
       nextDesc: String,
       nextNone: String,
@@ -59,29 +58,21 @@ object localeMod {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setNextAsc(value: String): Self = StObject.set(x, "nextAsc", value.asInstanceOf[js.Any])
+      inline def setNextAsc(value: String): Self = StObject.set(x, "nextAsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextDesc(value: String): Self = StObject.set(x, "nextDesc", value.asInstanceOf[js.Any])
+      inline def setNextDesc(value: String): Self = StObject.set(x, "nextDesc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextNone(value: String): Self = StObject.set(x, "nextNone", value.asInstanceOf[js.Any])
+      inline def setNextNone(value: String): Self = StObject.set(x, "nextNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAsc(value: String): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
+      inline def setSortAsc(value: String): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortDesc(value: String): Self = StObject.set(x, "sortDesc", value.asInstanceOf[js.Any])
+      inline def setSortDesc(value: String): Self = StObject.set(x, "sortDesc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortDisabled(value: String): Self = StObject.set(x, "sortDisabled", value.asInstanceOf[js.Any])
+      inline def setSortDisabled(value: String): Self = StObject.set(x, "sortDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortNone(value: String): Self = StObject.set(x, "sortNone", value.asInstanceOf[js.Any])
+      inline def setSortNone(value: String): Self = StObject.set(x, "sortNone", value.asInstanceOf[js.Any])
     }
   }
 }

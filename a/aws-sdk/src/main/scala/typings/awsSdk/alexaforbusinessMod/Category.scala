@@ -18,25 +18,19 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(): Category = {
+  inline def apply(): Category = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setCategoryId(value: CategoryId): Self = StObject.set(x, "CategoryId", value.asInstanceOf[js.Any])
+    inline def setCategoryId(value: CategoryId): Self = StObject.set(x, "CategoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryIdUndefined: Self = StObject.set(x, "CategoryId", js.undefined)
+    inline def setCategoryIdUndefined: Self = StObject.set(x, "CategoryId", js.undefined)
     
-    @scala.inline
-    def setCategoryName(value: CategoryName): Self = StObject.set(x, "CategoryName", value.asInstanceOf[js.Any])
+    inline def setCategoryName(value: CategoryName): Self = StObject.set(x, "CategoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryNameUndefined: Self = StObject.set(x, "CategoryName", js.undefined)
+    inline def setCategoryNameUndefined: Self = StObject.set(x, "CategoryName", js.undefined)
   }
 }

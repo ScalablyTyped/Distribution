@@ -18,25 +18,19 @@ trait ListProfileTimesResponse extends StObject {
 }
 object ListProfileTimesResponse {
   
-  @scala.inline
-  def apply(profileTimes: ProfileTimes): ListProfileTimesResponse = {
+  inline def apply(profileTimes: ProfileTimes): ListProfileTimesResponse = {
     val __obj = js.Dynamic.literal(profileTimes = profileTimes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProfileTimesResponse]
   }
   
-  @scala.inline
-  implicit class ListProfileTimesResponseMutableBuilder[Self <: ListProfileTimesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProfileTimesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setProfileTimes(value: ProfileTimes): Self = StObject.set(x, "profileTimes", value.asInstanceOf[js.Any])
+    inline def setProfileTimes(value: ProfileTimes): Self = StObject.set(x, "profileTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileTimesVarargs(value: ProfileTime*): Self = StObject.set(x, "profileTimes", js.Array(value :_*))
+    inline def setProfileTimesVarargs(value: ProfileTime*): Self = StObject.set(x, "profileTimes", js.Array(value :_*))
   }
 }

@@ -15,31 +15,23 @@ trait IRouteEditorParameters extends StObject {
 }
 object IRouteEditorParameters {
   
-  @scala.inline
-  def apply(): IRouteEditorParameters = {
+  inline def apply(): IRouteEditorParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRouteEditorParameters]
   }
   
-  @scala.inline
-  implicit class IRouteEditorParametersMutableBuilder[Self <: IRouteEditorParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IRouteEditorParameters](x: Self) {
     
-    @scala.inline
-    def setData(value: Image): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Image): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOptions(value: IBaseButtonParametersOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IBaseButtonParametersOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setState(value: js.Object): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Object): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

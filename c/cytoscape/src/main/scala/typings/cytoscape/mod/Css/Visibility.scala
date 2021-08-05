@@ -42,8 +42,7 @@ trait Visibility[SingularType /* <: NodeSingular | EdgeSingular */] extends StOb
 }
 object Visibility {
   
-  @scala.inline
-  def apply[SingularType /* <: NodeSingular | EdgeSingular */](
+  inline def apply[SingularType /* <: NodeSingular | EdgeSingular */](
     display: PropertyValue[SingularType, none | displayed],
     opacity: PropertyValue[SingularType, Double],
     visibility: PropertyValue[SingularType, hidden | visible],
@@ -54,31 +53,22 @@ object Visibility {
     __obj.asInstanceOf[Visibility[SingularType]]
   }
   
-  @scala.inline
-  implicit class VisibilityMutableBuilder[Self <: Visibility[?], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self & Visibility[SingularType]) extends AnyVal {
+  extension [Self <: Visibility[?], SingularType /* <: NodeSingular | EdgeSingular */](x: Self & Visibility[SingularType]) {
     
-    @scala.inline
-    def setDisplay(value: PropertyValue[SingularType, none | displayed]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: PropertyValue[SingularType, none | displayed]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFunction1(value: SingularType => none | displayed): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
+    inline def setDisplayFunction1(value: SingularType => none | displayed): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpacity(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityFunction1(value: SingularType => Double): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
+    inline def setOpacityFunction1(value: SingularType => Double): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisibility(value: PropertyValue[SingularType, hidden | visible]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: PropertyValue[SingularType, hidden | visible]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityFunction1(value: SingularType => hidden | visible): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
+    inline def setVisibilityFunction1(value: SingularType => hidden | visible): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setZ-index`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "z-index", value.asInstanceOf[js.Any])
+    inline def `setZ-index`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "z-index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZ-indexFunction1`(value: SingularType => Double): Self = StObject.set(x, "z-index", js.Any.fromFunction1(value))
+    inline def `setZ-indexFunction1`(value: SingularType => Double): Self = StObject.set(x, "z-index", js.Any.fromFunction1(value))
   }
 }

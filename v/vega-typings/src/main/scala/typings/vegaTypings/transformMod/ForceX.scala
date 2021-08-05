@@ -18,28 +18,21 @@ trait ForceX
 }
 object ForceX {
   
-  @scala.inline
-  def apply(): ForceX = {
+  inline def apply(): ForceX = {
     val __obj = js.Dynamic.literal(force = "x")
     __obj.asInstanceOf[ForceX]
   }
   
-  @scala.inline
-  implicit class ForceXMutableBuilder[Self <: ForceX] (val x: Self) extends AnyVal {
+  extension [Self <: ForceX](x: Self) {
     
-    @scala.inline
-    def setForce(value: typings.vegaTypings.vegaTypingsStrings.x): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: typings.vegaTypings.vegaTypingsStrings.x): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrength(value: Double | SignalRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double | SignalRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     
-    @scala.inline
-    def setX(value: FieldRef): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: FieldRef): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

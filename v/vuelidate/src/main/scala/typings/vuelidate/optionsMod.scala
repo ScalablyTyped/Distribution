@@ -21,23 +21,18 @@ object optionsMod {
   }
   object ComponentOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): ComponentOptions[V] = {
+    inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    @scala.inline
-    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
+    extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
       
-      @scala.inline
-      def setValidations(value: RuleDecl | DynamicDecl): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
+      inline def setValidations(value: RuleDecl | DynamicDecl): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationsFunction0(value: () => RuleDecl): Self = StObject.set(x, "validations", js.Any.fromFunction0(value))
+      inline def setValidationsFunction0(value: () => RuleDecl): Self = StObject.set(x, "validations", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
+      inline def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
     }
   }
   
@@ -52,8 +47,7 @@ object optionsMod {
        with /* rule */ StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
   object RuleDecl {
     
-    @scala.inline
-    def apply(): RuleDecl = {
+    inline def apply(): RuleDecl = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleDecl]
     }

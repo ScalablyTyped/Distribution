@@ -30,8 +30,7 @@ trait ExtensionVersion extends StObject {
 }
 object ExtensionVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assetUri: String,
     badges: js.Array[ExtensionBadge],
     fallbackAssetUri: String,
@@ -47,46 +46,32 @@ object ExtensionVersion {
     __obj.asInstanceOf[ExtensionVersion]
   }
   
-  @scala.inline
-  implicit class ExtensionVersionMutableBuilder[Self <: ExtensionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionVersion](x: Self) {
     
-    @scala.inline
-    def setAssetUri(value: String): Self = StObject.set(x, "assetUri", value.asInstanceOf[js.Any])
+    inline def setAssetUri(value: String): Self = StObject.set(x, "assetUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadges(value: js.Array[ExtensionBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+    inline def setBadges(value: js.Array[ExtensionBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgesVarargs(value: ExtensionBadge*): Self = StObject.set(x, "badges", js.Array(value :_*))
+    inline def setBadgesVarargs(value: ExtensionBadge*): Self = StObject.set(x, "badges", js.Array(value :_*))
     
-    @scala.inline
-    def setFallbackAssetUri(value: String): Self = StObject.set(x, "fallbackAssetUri", value.asInstanceOf[js.Any])
+    inline def setFallbackAssetUri(value: String): Self = StObject.set(x, "fallbackAssetUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: js.Array[ExtensionFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[ExtensionFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setFlags(value: ExtensionVersionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: ExtensionVersionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Array[KeyValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[KeyValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationResultMessage(value: String): Self = StObject.set(x, "validationResultMessage", value.asInstanceOf[js.Any])
+    inline def setValidationResultMessage(value: String): Self = StObject.set(x, "validationResultMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionDescription(value: String): Self = StObject.set(x, "versionDescription", value.asInstanceOf[js.Any])
+    inline def setVersionDescription(value: String): Self = StObject.set(x, "versionDescription", value.asInstanceOf[js.Any])
   }
 }

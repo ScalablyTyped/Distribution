@@ -192,194 +192,132 @@ object mod {
   }
   object DrawerProperties {
     
-    @scala.inline
-    def apply(): DrawerProperties = {
+    inline def apply(): DrawerProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawerProperties]
     }
     
-    @scala.inline
-    implicit class DrawerPropertiesMutableBuilder[Self <: DrawerProperties] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerProperties](x: Self) {
       
-      @scala.inline
-      def setAcceptDoubleTap(value: Boolean): Self = StObject.set(x, "acceptDoubleTap", value.asInstanceOf[js.Any])
+      inline def setAcceptDoubleTap(value: Boolean): Self = StObject.set(x, "acceptDoubleTap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptDoubleTapUndefined: Self = StObject.set(x, "acceptDoubleTap", js.undefined)
+      inline def setAcceptDoubleTapUndefined: Self = StObject.set(x, "acceptDoubleTap", js.undefined)
       
-      @scala.inline
-      def setAcceptPan(value: Boolean): Self = StObject.set(x, "acceptPan", value.asInstanceOf[js.Any])
+      inline def setAcceptPan(value: Boolean): Self = StObject.set(x, "acceptPan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptPanOnDrawer(value: Boolean): Self = StObject.set(x, "acceptPanOnDrawer", value.asInstanceOf[js.Any])
+      inline def setAcceptPanOnDrawer(value: Boolean): Self = StObject.set(x, "acceptPanOnDrawer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptPanOnDrawerUndefined: Self = StObject.set(x, "acceptPanOnDrawer", js.undefined)
+      inline def setAcceptPanOnDrawerUndefined: Self = StObject.set(x, "acceptPanOnDrawer", js.undefined)
       
-      @scala.inline
-      def setAcceptPanUndefined: Self = StObject.set(x, "acceptPan", js.undefined)
+      inline def setAcceptPanUndefined: Self = StObject.set(x, "acceptPan", js.undefined)
       
-      @scala.inline
-      def setAcceptTap(value: Boolean): Self = StObject.set(x, "acceptTap", value.asInstanceOf[js.Any])
+      inline def setAcceptTap(value: Boolean): Self = StObject.set(x, "acceptTap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptTapUndefined: Self = StObject.set(x, "acceptTap", js.undefined)
+      inline def setAcceptTapUndefined: Self = StObject.set(x, "acceptTap", js.undefined)
       
-      @scala.inline
-      def setCaptureGestures(value: Boolean | open | closed): Self = StObject.set(x, "captureGestures", value.asInstanceOf[js.Any])
+      inline def setCaptureGestures(value: Boolean | open | closed): Self = StObject.set(x, "captureGestures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureGesturesUndefined: Self = StObject.set(x, "captureGestures", js.undefined)
+      inline def setCaptureGesturesUndefined: Self = StObject.set(x, "captureGestures", js.undefined)
       
-      @scala.inline
-      def setClosedDrawerOffset(value: js.Function0[Double] | Double): Self = StObject.set(x, "closedDrawerOffset", value.asInstanceOf[js.Any])
+      inline def setClosedDrawerOffset(value: js.Function0[Double] | Double): Self = StObject.set(x, "closedDrawerOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedDrawerOffsetFunction0(value: () => Double): Self = StObject.set(x, "closedDrawerOffset", js.Any.fromFunction0(value))
+      inline def setClosedDrawerOffsetFunction0(value: () => Double): Self = StObject.set(x, "closedDrawerOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClosedDrawerOffsetUndefined: Self = StObject.set(x, "closedDrawerOffset", js.undefined)
+      inline def setClosedDrawerOffsetUndefined: Self = StObject.set(x, "closedDrawerOffset", js.undefined)
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+      inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+      inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
       
-      @scala.inline
-      def setInitializeOpen(value: Double): Self = StObject.set(x, "initializeOpen", value.asInstanceOf[js.Any])
+      inline def setInitializeOpen(value: Double): Self = StObject.set(x, "initializeOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitializeOpenUndefined: Self = StObject.set(x, "initializeOpen", js.undefined)
+      inline def setInitializeOpenUndefined: Self = StObject.set(x, "initializeOpen", js.undefined)
       
-      @scala.inline
-      def setNegotiatePan(value: Boolean): Self = StObject.set(x, "negotiatePan", value.asInstanceOf[js.Any])
+      inline def setNegotiatePan(value: Boolean): Self = StObject.set(x, "negotiatePan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegotiatePanUndefined: Self = StObject.set(x, "negotiatePan", js.undefined)
+      inline def setNegotiatePanUndefined: Self = StObject.set(x, "negotiatePan", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseStart(value: () => Unit): Self = StObject.set(x, "onCloseStart", js.Any.fromFunction0(value))
+      inline def setOnCloseStart(value: () => Unit): Self = StObject.set(x, "onCloseStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseStartUndefined: Self = StObject.set(x, "onCloseStart", js.undefined)
+      inline def setOnCloseStartUndefined: Self = StObject.set(x, "onCloseStart", js.undefined)
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
+      inline def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenStart(value: () => Unit): Self = StObject.set(x, "onOpenStart", js.Any.fromFunction0(value))
+      inline def setOnOpenStart(value: () => Unit): Self = StObject.set(x, "onOpenStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenStartUndefined: Self = StObject.set(x, "onOpenStart", js.undefined)
+      inline def setOnOpenStartUndefined: Self = StObject.set(x, "onOpenStart", js.undefined)
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDrawerOffset(value: (js.Function1[/* viewport */ ScaledSize, Double]) | Double): Self = StObject.set(x, "openDrawerOffset", value.asInstanceOf[js.Any])
+      inline def setOpenDrawerOffset(value: (js.Function1[/* viewport */ ScaledSize, Double]) | Double): Self = StObject.set(x, "openDrawerOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDrawerOffsetFunction1(value: /* viewport */ ScaledSize => Double): Self = StObject.set(x, "openDrawerOffset", js.Any.fromFunction1(value))
+      inline def setOpenDrawerOffsetFunction1(value: /* viewport */ ScaledSize => Double): Self = StObject.set(x, "openDrawerOffset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenDrawerOffsetUndefined: Self = StObject.set(x, "openDrawerOffset", js.undefined)
+      inline def setOpenDrawerOffsetUndefined: Self = StObject.set(x, "openDrawerOffset", js.undefined)
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setPanCloseMask(value: Double): Self = StObject.set(x, "panCloseMask", value.asInstanceOf[js.Any])
+      inline def setPanCloseMask(value: Double): Self = StObject.set(x, "panCloseMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanCloseMaskUndefined: Self = StObject.set(x, "panCloseMask", js.undefined)
+      inline def setPanCloseMaskUndefined: Self = StObject.set(x, "panCloseMask", js.undefined)
       
-      @scala.inline
-      def setPanOpenMask(value: Double): Self = StObject.set(x, "panOpenMask", value.asInstanceOf[js.Any])
+      inline def setPanOpenMask(value: Double): Self = StObject.set(x, "panOpenMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanOpenMaskUndefined: Self = StObject.set(x, "panOpenMask", js.undefined)
+      inline def setPanOpenMaskUndefined: Self = StObject.set(x, "panOpenMask", js.undefined)
       
-      @scala.inline
-      def setPanThreshold(value: Double): Self = StObject.set(x, "panThreshold", value.asInstanceOf[js.Any])
+      inline def setPanThreshold(value: Double): Self = StObject.set(x, "panThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanThresholdUndefined: Self = StObject.set(x, "panThreshold", js.undefined)
+      inline def setPanThresholdUndefined: Self = StObject.set(x, "panThreshold", js.undefined)
       
-      @scala.inline
-      def setSide(value: left | right | top | bottom): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: left | right | top | bottom): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+      inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      @scala.inline
-      def setStyles(value: DrawerStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: DrawerStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTapToClose(value: Boolean): Self = StObject.set(x, "tapToClose", value.asInstanceOf[js.Any])
+      inline def setTapToClose(value: Boolean): Self = StObject.set(x, "tapToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapToCloseUndefined: Self = StObject.set(x, "tapToClose", js.undefined)
+      inline def setTapToCloseUndefined: Self = StObject.set(x, "tapToClose", js.undefined)
       
-      @scala.inline
-      def setTweenDuration(value: Double): Self = StObject.set(x, "tweenDuration", value.asInstanceOf[js.Any])
+      inline def setTweenDuration(value: Double): Self = StObject.set(x, "tweenDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTweenDurationUndefined: Self = StObject.set(x, "tweenDuration", js.undefined)
+      inline def setTweenDurationUndefined: Self = StObject.set(x, "tweenDuration", js.undefined)
       
-      @scala.inline
-      def setTweenEasing(value: TweenFunctions): Self = StObject.set(x, "tweenEasing", value.asInstanceOf[js.Any])
+      inline def setTweenEasing(value: TweenFunctions): Self = StObject.set(x, "tweenEasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTweenEasingUndefined: Self = StObject.set(x, "tweenEasing", js.undefined)
+      inline def setTweenEasingUndefined: Self = StObject.set(x, "tweenEasing", js.undefined)
       
-      @scala.inline
-      def setTweenHandler(value: /* ratio */ Double => NestedViewStyles): Self = StObject.set(x, "tweenHandler", js.Any.fromFunction1(value))
+      inline def setTweenHandler(value: /* ratio */ Double => NestedViewStyles): Self = StObject.set(x, "tweenHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTweenHandlerUndefined: Self = StObject.set(x, "tweenHandler", js.undefined)
+      inline def setTweenHandlerUndefined: Self = StObject.set(x, "tweenHandler", js.undefined)
       
-      @scala.inline
-      def setType(value: displace | overlay | static): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: displace | overlay | static): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUseInteractionManager(value: Boolean): Self = StObject.set(x, "useInteractionManager", value.asInstanceOf[js.Any])
+      inline def setUseInteractionManager(value: Boolean): Self = StObject.set(x, "useInteractionManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseInteractionManagerUndefined: Self = StObject.set(x, "useInteractionManager", js.undefined)
+      inline def setUseInteractionManagerUndefined: Self = StObject.set(x, "useInteractionManager", js.undefined)
     }
   }
   
@@ -391,20 +329,16 @@ object mod {
   }
   object DrawerStyles {
     
-    @scala.inline
-    def apply(): DrawerStyles = {
+    inline def apply(): DrawerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawerStyles]
     }
     
-    @scala.inline
-    implicit class DrawerStylesMutableBuilder[Self <: DrawerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerStyles](x: Self) {
       
-      @scala.inline
-      def setDrawer(value: ViewStyle): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
+      inline def setDrawer(value: ViewStyle): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerUndefined: Self = StObject.set(x, "drawer", js.undefined)
+      inline def setDrawerUndefined: Self = StObject.set(x, "drawer", js.undefined)
     }
   }
   
@@ -418,32 +352,24 @@ object mod {
   }
   object NestedViewStyles {
     
-    @scala.inline
-    def apply(): NestedViewStyles = {
+    inline def apply(): NestedViewStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NestedViewStyles]
     }
     
-    @scala.inline
-    implicit class NestedViewStylesMutableBuilder[Self <: NestedViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: NestedViewStyles](x: Self) {
       
-      @scala.inline
-      def setDrawerOverlay(value: ViewStyle): Self = StObject.set(x, "drawerOverlay", value.asInstanceOf[js.Any])
+      inline def setDrawerOverlay(value: ViewStyle): Self = StObject.set(x, "drawerOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerOverlayUndefined: Self = StObject.set(x, "drawerOverlay", js.undefined)
+      inline def setDrawerOverlayUndefined: Self = StObject.set(x, "drawerOverlay", js.undefined)
       
-      @scala.inline
-      def setMain(value: ViewStyle): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: ViewStyle): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainOverlay(value: ViewStyle): Self = StObject.set(x, "mainOverlay", value.asInstanceOf[js.Any])
+      inline def setMainOverlay(value: ViewStyle): Self = StObject.set(x, "mainOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainOverlayUndefined: Self = StObject.set(x, "mainOverlay", js.undefined)
+      inline def setMainOverlayUndefined: Self = StObject.set(x, "mainOverlay", js.undefined)
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
     }
   }
   
@@ -483,97 +409,66 @@ object mod {
   trait TweenFunctions extends StObject
   object TweenFunctions {
     
-    @scala.inline
-    def easeInBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBack = "easeInBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBack]
+    inline def easeInBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBack = "easeInBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBack]
     
-    @scala.inline
-    def easeInBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBounce]
+    inline def easeInBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBounce]
     
-    @scala.inline
-    def easeInCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCirc]
+    inline def easeInCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCirc]
     
-    @scala.inline
-    def easeInCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCubic]
+    inline def easeInCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCubic]
     
-    @scala.inline
-    def easeInElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInElastic]
+    inline def easeInElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInElastic]
     
-    @scala.inline
-    def easeInExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInExpo]
+    inline def easeInExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInExpo]
     
-    @scala.inline
-    def easeInOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBack]
+    inline def easeInOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBack]
     
-    @scala.inline
-    def easeInOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBounce]
+    inline def easeInOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBounce]
     
-    @scala.inline
-    def easeInOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCirc]
+    inline def easeInOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCirc]
     
-    @scala.inline
-    def easeInOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCubic]
+    inline def easeInOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCubic]
     
-    @scala.inline
-    def easeInOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutElastic]
+    inline def easeInOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutElastic]
     
-    @scala.inline
-    def easeInOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutExpo]
+    inline def easeInOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutExpo]
     
-    @scala.inline
-    def easeInOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuad]
+    inline def easeInOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuad]
     
-    @scala.inline
-    def easeInOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuart]
+    inline def easeInOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuart]
     
-    @scala.inline
-    def easeInOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuint]
+    inline def easeInOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuint]
     
-    @scala.inline
-    def easeInOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutSine]
+    inline def easeInOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutSine]
     
-    @scala.inline
-    def easeInQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuad]
+    inline def easeInQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuad]
     
-    @scala.inline
-    def easeInQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuart]
+    inline def easeInQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuart]
     
-    @scala.inline
-    def easeInQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuint]
+    inline def easeInQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuint]
     
-    @scala.inline
-    def easeInSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInSine = "easeInSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInSine]
+    inline def easeInSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInSine = "easeInSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInSine]
     
-    @scala.inline
-    def easeOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBack]
+    inline def easeOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBack]
     
-    @scala.inline
-    def easeOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBounce]
+    inline def easeOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBounce]
     
-    @scala.inline
-    def easeOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCirc]
+    inline def easeOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCirc]
     
-    @scala.inline
-    def easeOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCubic]
+    inline def easeOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCubic]
     
-    @scala.inline
-    def easeOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutElastic]
+    inline def easeOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutElastic]
     
-    @scala.inline
-    def easeOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutExpo]
+    inline def easeOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutExpo]
     
-    @scala.inline
-    def easeOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuad]
+    inline def easeOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuad]
     
-    @scala.inline
-    def easeOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuart]
+    inline def easeOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuart]
     
-    @scala.inline
-    def easeOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuint]
+    inline def easeOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuint]
     
-    @scala.inline
-    def easeOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutSine]
+    inline def easeOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutSine]
     
-    @scala.inline
-    def linear: typings.reactNativeDrawer.reactNativeDrawerStrings.linear = "linear".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.linear]
+    inline def linear: typings.reactNativeDrawer.reactNativeDrawerStrings.linear = "linear".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.linear]
   }
 }

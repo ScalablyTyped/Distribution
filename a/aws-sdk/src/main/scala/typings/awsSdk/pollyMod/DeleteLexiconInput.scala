@@ -13,16 +13,13 @@ trait DeleteLexiconInput extends StObject {
 }
 object DeleteLexiconInput {
   
-  @scala.inline
-  def apply(Name: LexiconName): DeleteLexiconInput = {
+  inline def apply(Name: LexiconName): DeleteLexiconInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLexiconInput]
   }
   
-  @scala.inline
-  implicit class DeleteLexiconInputMutableBuilder[Self <: DeleteLexiconInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLexiconInput](x: Self) {
     
-    @scala.inline
-    def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

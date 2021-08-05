@@ -88,115 +88,79 @@ trait DescribeFlowResponse extends StObject {
 }
 object DescribeFlowResponse {
   
-  @scala.inline
-  def apply(): DescribeFlowResponse = {
+  inline def apply(): DescribeFlowResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFlowResponse]
   }
   
-  @scala.inline
-  implicit class DescribeFlowResponseMutableBuilder[Self <: DescribeFlowResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFlowResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setDescription(value: FlowDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: FlowDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDestinationFlowConfigList(value: DestinationFlowConfigList): Self = StObject.set(x, "destinationFlowConfigList", value.asInstanceOf[js.Any])
+    inline def setDestinationFlowConfigList(value: DestinationFlowConfigList): Self = StObject.set(x, "destinationFlowConfigList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationFlowConfigListUndefined: Self = StObject.set(x, "destinationFlowConfigList", js.undefined)
+    inline def setDestinationFlowConfigListUndefined: Self = StObject.set(x, "destinationFlowConfigList", js.undefined)
     
-    @scala.inline
-    def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value :_*))
+    inline def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value :_*))
     
-    @scala.inline
-    def setFlowArn(value: FlowArn): Self = StObject.set(x, "flowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: FlowArn): Self = StObject.set(x, "flowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "flowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "flowArn", js.undefined)
     
-    @scala.inline
-    def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
+    inline def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowNameUndefined: Self = StObject.set(x, "flowName", js.undefined)
+    inline def setFlowNameUndefined: Self = StObject.set(x, "flowName", js.undefined)
     
-    @scala.inline
-    def setFlowStatus(value: FlowStatus): Self = StObject.set(x, "flowStatus", value.asInstanceOf[js.Any])
+    inline def setFlowStatus(value: FlowStatus): Self = StObject.set(x, "flowStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowStatusMessage(value: FlowStatusMessage): Self = StObject.set(x, "flowStatusMessage", value.asInstanceOf[js.Any])
+    inline def setFlowStatusMessage(value: FlowStatusMessage): Self = StObject.set(x, "flowStatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowStatusMessageUndefined: Self = StObject.set(x, "flowStatusMessage", js.undefined)
+    inline def setFlowStatusMessageUndefined: Self = StObject.set(x, "flowStatusMessage", js.undefined)
     
-    @scala.inline
-    def setFlowStatusUndefined: Self = StObject.set(x, "flowStatus", js.undefined)
+    inline def setFlowStatusUndefined: Self = StObject.set(x, "flowStatus", js.undefined)
     
-    @scala.inline
-    def setKmsArn(value: KMSArn): Self = StObject.set(x, "kmsArn", value.asInstanceOf[js.Any])
+    inline def setKmsArn(value: KMSArn): Self = StObject.set(x, "kmsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsArnUndefined: Self = StObject.set(x, "kmsArn", js.undefined)
+    inline def setKmsArnUndefined: Self = StObject.set(x, "kmsArn", js.undefined)
     
-    @scala.inline
-    def setLastRunExecutionDetails(value: ExecutionDetails): Self = StObject.set(x, "lastRunExecutionDetails", value.asInstanceOf[js.Any])
+    inline def setLastRunExecutionDetails(value: ExecutionDetails): Self = StObject.set(x, "lastRunExecutionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRunExecutionDetailsUndefined: Self = StObject.set(x, "lastRunExecutionDetails", js.undefined)
+    inline def setLastRunExecutionDetailsUndefined: Self = StObject.set(x, "lastRunExecutionDetails", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedBy(value: UpdatedBy): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedBy(value: UpdatedBy): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedByUndefined: Self = StObject.set(x, "lastUpdatedBy", js.undefined)
+    inline def setLastUpdatedByUndefined: Self = StObject.set(x, "lastUpdatedBy", js.undefined)
     
-    @scala.inline
-    def setSourceFlowConfig(value: SourceFlowConfig): Self = StObject.set(x, "sourceFlowConfig", value.asInstanceOf[js.Any])
+    inline def setSourceFlowConfig(value: SourceFlowConfig): Self = StObject.set(x, "sourceFlowConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFlowConfigUndefined: Self = StObject.set(x, "sourceFlowConfig", js.undefined)
+    inline def setSourceFlowConfigUndefined: Self = StObject.set(x, "sourceFlowConfig", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTasks(value: Tasks): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: Tasks): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
+    inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    @scala.inline
-    def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggerConfig(value: TriggerConfig): Self = StObject.set(x, "triggerConfig", value.asInstanceOf[js.Any])
+    inline def setTriggerConfig(value: TriggerConfig): Self = StObject.set(x, "triggerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerConfigUndefined: Self = StObject.set(x, "triggerConfig", js.undefined)
+    inline def setTriggerConfigUndefined: Self = StObject.set(x, "triggerConfig", js.undefined)
   }
 }

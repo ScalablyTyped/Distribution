@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindingRule extends StObject
 object WindingRule {
   
-  @scala.inline
-  def EVENODD: typings.figma.figmaStrings.EVENODD = "EVENODD".asInstanceOf[typings.figma.figmaStrings.EVENODD]
+  inline def EVENODD: typings.figma.figmaStrings.EVENODD = "EVENODD".asInstanceOf[typings.figma.figmaStrings.EVENODD]
   
-  @scala.inline
-  def NONZERO: typings.figma.figmaStrings.NONZERO = "NONZERO".asInstanceOf[typings.figma.figmaStrings.NONZERO]
+  inline def NONZERO: typings.figma.figmaStrings.NONZERO = "NONZERO".asInstanceOf[typings.figma.figmaStrings.NONZERO]
 }

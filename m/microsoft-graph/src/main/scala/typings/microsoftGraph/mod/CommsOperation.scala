@@ -19,37 +19,27 @@ trait CommsOperation
 }
 object CommsOperation {
   
-  @scala.inline
-  def apply(): CommsOperation = {
+  inline def apply(): CommsOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommsOperation]
   }
   
-  @scala.inline
-  implicit class CommsOperationMutableBuilder[Self <: CommsOperation] (val x: Self) extends AnyVal {
+  extension [Self <: CommsOperation](x: Self) {
     
-    @scala.inline
-    def setClientContext(value: NullableOption[String]): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
+    inline def setClientContext(value: NullableOption[String]): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientContextNull: Self = StObject.set(x, "clientContext", null)
+    inline def setClientContextNull: Self = StObject.set(x, "clientContext", null)
     
-    @scala.inline
-    def setClientContextUndefined: Self = StObject.set(x, "clientContext", js.undefined)
+    inline def setClientContextUndefined: Self = StObject.set(x, "clientContext", js.undefined)
     
-    @scala.inline
-    def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
+    inline def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultInfoNull: Self = StObject.set(x, "resultInfo", null)
+    inline def setResultInfoNull: Self = StObject.set(x, "resultInfo", null)
     
-    @scala.inline
-    def setResultInfoUndefined: Self = StObject.set(x, "resultInfo", js.undefined)
+    inline def setResultInfoUndefined: Self = StObject.set(x, "resultInfo", js.undefined)
     
-    @scala.inline
-    def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

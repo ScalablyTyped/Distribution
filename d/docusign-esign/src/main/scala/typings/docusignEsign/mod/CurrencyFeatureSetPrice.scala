@@ -33,43 +33,31 @@ trait CurrencyFeatureSetPrice extends StObject {
 }
 object CurrencyFeatureSetPrice {
   
-  @scala.inline
-  def apply(): CurrencyFeatureSetPrice = {
+  inline def apply(): CurrencyFeatureSetPrice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrencyFeatureSetPrice]
   }
   
-  @scala.inline
-  implicit class CurrencyFeatureSetPriceMutableBuilder[Self <: CurrencyFeatureSetPrice] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencyFeatureSetPrice](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
+    inline def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
+    inline def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
     
-    @scala.inline
-    def setEnvelopeFee(value: String): Self = StObject.set(x, "envelopeFee", value.asInstanceOf[js.Any])
+    inline def setEnvelopeFee(value: String): Self = StObject.set(x, "envelopeFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeFeeUndefined: Self = StObject.set(x, "envelopeFee", js.undefined)
+    inline def setEnvelopeFeeUndefined: Self = StObject.set(x, "envelopeFee", js.undefined)
     
-    @scala.inline
-    def setFixedFee(value: String): Self = StObject.set(x, "fixedFee", value.asInstanceOf[js.Any])
+    inline def setFixedFee(value: String): Self = StObject.set(x, "fixedFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedFeeUndefined: Self = StObject.set(x, "fixedFee", js.undefined)
+    inline def setFixedFeeUndefined: Self = StObject.set(x, "fixedFee", js.undefined)
     
-    @scala.inline
-    def setSeatFee(value: String): Self = StObject.set(x, "seatFee", value.asInstanceOf[js.Any])
+    inline def setSeatFee(value: String): Self = StObject.set(x, "seatFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeatFeeUndefined: Self = StObject.set(x, "seatFee", js.undefined)
+    inline def setSeatFeeUndefined: Self = StObject.set(x, "seatFee", js.undefined)
   }
 }

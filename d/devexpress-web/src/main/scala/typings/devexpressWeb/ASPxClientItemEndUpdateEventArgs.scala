@@ -18,16 +18,13 @@ trait ASPxClientItemEndUpdateEventArgs
 }
 object ASPxClientItemEndUpdateEventArgs {
   
-  @scala.inline
-  def apply(ItemName: String): ASPxClientItemEndUpdateEventArgs = {
+  inline def apply(ItemName: String): ASPxClientItemEndUpdateEventArgs = {
     val __obj = js.Dynamic.literal(ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientItemEndUpdateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientItemEndUpdateEventArgsMutableBuilder[Self <: ASPxClientItemEndUpdateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientItemEndUpdateEventArgs](x: Self) {
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

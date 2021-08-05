@@ -27,10 +27,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, CacheKeyType](fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, CacheKeyType](
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, CacheKeyType](fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, CacheKeyType](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]],
     options: Options[ArgumentsType, CacheKeyType, ReturnType]
   ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
@@ -43,8 +41,7 @@ object mod {
   	Clear all cached data of a memoized function.
   	@param memoized - A function that was previously memoized. Will throw if passed a non-memoized function.
   	*/
-  @scala.inline
-  def clear(memoized: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(memoized.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(memoized: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(memoized.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options[ArgumentsType /* <: js.Array[js.Any] */, CacheKeyType, ReturnType]
     extends StObject
@@ -58,20 +55,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[ArgumentsType /* <: js.Array[js.Any] */, CacheKeyType, ReturnType](): Options[ArgumentsType, CacheKeyType, ReturnType] = {
+    inline def apply[ArgumentsType /* <: js.Array[js.Any] */, CacheKeyType, ReturnType](): Options[ArgumentsType, CacheKeyType, ReturnType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[ArgumentsType, CacheKeyType, ReturnType]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?, ?], ArgumentsType /* <: js.Array[js.Any] */, CacheKeyType, ReturnType] (val x: Self & (Options[ArgumentsType, CacheKeyType, ReturnType])) extends AnyVal {
+    extension [Self <: Options[?, ?, ?], ArgumentsType /* <: js.Array[js.Any] */, CacheKeyType, ReturnType](x: Self & (Options[ArgumentsType, CacheKeyType, ReturnType])) {
       
-      @scala.inline
-      def setCachePromiseRejection(value: Boolean): Self = StObject.set(x, "cachePromiseRejection", value.asInstanceOf[js.Any])
+      inline def setCachePromiseRejection(value: Boolean): Self = StObject.set(x, "cachePromiseRejection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachePromiseRejectionUndefined: Self = StObject.set(x, "cachePromiseRejection", js.undefined)
+      inline def setCachePromiseRejectionUndefined: Self = StObject.set(x, "cachePromiseRejection", js.undefined)
     }
   }
 }

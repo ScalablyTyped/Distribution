@@ -17,25 +17,19 @@ trait RestoreTableRequest extends StObject {
 }
 object RestoreTableRequest {
   
-  @scala.inline
-  def apply(): RestoreTableRequest = {
+  inline def apply(): RestoreTableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreTableRequest]
   }
   
-  @scala.inline
-  implicit class RestoreTableRequestMutableBuilder[Self <: RestoreTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreTableRequest](x: Self) {
     
-    @scala.inline
-    def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
+    inline def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

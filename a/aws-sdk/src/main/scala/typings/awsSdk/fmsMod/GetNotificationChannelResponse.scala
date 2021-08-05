@@ -18,25 +18,19 @@ trait GetNotificationChannelResponse extends StObject {
 }
 object GetNotificationChannelResponse {
   
-  @scala.inline
-  def apply(): GetNotificationChannelResponse = {
+  inline def apply(): GetNotificationChannelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNotificationChannelResponse]
   }
   
-  @scala.inline
-  implicit class GetNotificationChannelResponseMutableBuilder[Self <: GetNotificationChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNotificationChannelResponse](x: Self) {
     
-    @scala.inline
-    def setSnsRoleName(value: ResourceArn): Self = StObject.set(x, "SnsRoleName", value.asInstanceOf[js.Any])
+    inline def setSnsRoleName(value: ResourceArn): Self = StObject.set(x, "SnsRoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsRoleNameUndefined: Self = StObject.set(x, "SnsRoleName", js.undefined)
+    inline def setSnsRoleNameUndefined: Self = StObject.set(x, "SnsRoleName", js.undefined)
     
-    @scala.inline
-    def setSnsTopicArn(value: ResourceArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: ResourceArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
+    inline def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
   }
 }

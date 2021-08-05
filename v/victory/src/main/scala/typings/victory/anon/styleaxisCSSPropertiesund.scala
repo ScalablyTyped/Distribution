@@ -19,37 +19,27 @@ trait styleaxisCSSPropertiesund extends StObject {
 }
 object styleaxisCSSPropertiesund {
   
-  @scala.inline
-  def apply(colorScale: js.Array[String], height: Double, width: Double): styleaxisCSSPropertiesund = {
+  inline def apply(colorScale: js.Array[String], height: Double, width: Double): styleaxisCSSPropertiesund = {
     val __obj = js.Dynamic.literal(colorScale = colorScale.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[styleaxisCSSPropertiesund]
   }
   
-  @scala.inline
-  implicit class styleaxisCSSPropertiesundMutableBuilder[Self <: styleaxisCSSPropertiesund] (val x: Self) extends AnyVal {
+  extension [Self <: styleaxisCSSPropertiesund](x: Self) {
     
-    @scala.inline
-    def setColorScale(value: js.Array[String]): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
+    inline def setColorScale(value: js.Array[String]): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
+    inline def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Axis): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Axis): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

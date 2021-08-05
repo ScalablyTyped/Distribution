@@ -20,8 +20,7 @@ trait ICompletionContent extends StObject {
 }
 object ICompletionContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cursor_end: Double,
     cursor_start: Double,
     matches: js.Array[String],
@@ -32,25 +31,18 @@ object ICompletionContent {
     __obj.asInstanceOf[ICompletionContent]
   }
   
-  @scala.inline
-  implicit class ICompletionContentMutableBuilder[Self <: ICompletionContent] (val x: Self) extends AnyVal {
+  extension [Self <: ICompletionContent](x: Self) {
     
-    @scala.inline
-    def setCursor_end(value: Double): Self = StObject.set(x, "cursor_end", value.asInstanceOf[js.Any])
+    inline def setCursor_end(value: Double): Self = StObject.set(x, "cursor_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursor_start(value: Double): Self = StObject.set(x, "cursor_start", value.asInstanceOf[js.Any])
+    inline def setCursor_start(value: Double): Self = StObject.set(x, "cursor_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ok | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ok | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

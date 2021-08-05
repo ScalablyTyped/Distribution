@@ -22,20 +22,16 @@ object tableChartMod extends Shortcut {
   }
   object TableChartProps {
     
-    @scala.inline
-    def apply(): TableChartProps = {
+    inline def apply(): TableChartProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableChartProps]
     }
     
-    @scala.inline
-    implicit class TableChartPropsMutableBuilder[Self <: TableChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableChartProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -8,9 +8,9 @@ trait DeclarationEmitter extends StObject {
   
   /* private */ def canEmitDeclarations(declAST: js.Any): js.Any
   
-  var compiler: js.Any
+  /* private */ var compiler: js.Any
   
-  var declFile: js.Any
+  /* private */ var declFile: js.Any
   
   var document: Document
   
@@ -84,7 +84,7 @@ trait DeclarationEmitter extends StObject {
   
   /* private */ def emitMethodSignature(funcDecl: js.Any): js.Any
   
-  var emitOptions: js.Any
+  /* private */ var emitOptions: js.Any
   
   /* private */ def emitParameterList(isPrivate: js.Any, parameterList: js.Any): js.Any
   
@@ -106,9 +106,9 @@ trait DeclarationEmitter extends StObject {
   
   /* private */ def emitVariableDeclarator(varDecl: js.Any, isFirstVarInList: js.Any, isLastVarInList: js.Any): js.Any
   
-  var emittedReferencePaths: js.Any
+  /* private */ var emittedReferencePaths: js.Any
   
-  var emittingFileName: js.Any
+  /* private */ var emittingFileName: js.Any
   
   /* private */ def getDeclFlagsString(pullDecl: js.Any, typeString: js.Any): js.Any
   
@@ -116,20 +116,19 @@ trait DeclarationEmitter extends StObject {
   
   def getOutputFile(): OutputFile
   
-  var indenter: js.Any
+  /* private */ var indenter: js.Any
   
   /* private */ def isOverloadedCallSignature(funcDecl: js.Any): js.Any
   
   /* private */ def resolveScriptReference(document: js.Any, reference: js.Any): js.Any
   
-  var semanticInfoChain: js.Any
+  /* private */ var semanticInfoChain: js.Any
   
   /* private */ def writeDeclarationComments(declComments: js.Any, endLine: js.Any): js.Any
 }
 object DeclarationEmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canEmitDeclarations: js.Any => js.Any,
     compiler: js.Any,
     declFile: js.Any,
@@ -195,187 +194,126 @@ object DeclarationEmitter {
     __obj.asInstanceOf[DeclarationEmitter]
   }
   
-  @scala.inline
-  implicit class DeclarationEmitterMutableBuilder[Self <: DeclarationEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: DeclarationEmitter](x: Self) {
     
-    @scala.inline
-    def setCanEmitDeclarations(value: js.Any => js.Any): Self = StObject.set(x, "canEmitDeclarations", js.Any.fromFunction1(value))
+    inline def setCanEmitDeclarations(value: js.Any => js.Any): Self = StObject.set(x, "canEmitDeclarations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompiler(value: js.Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+    inline def setCompiler(value: js.Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclFile(value: js.Any): Self = StObject.set(x, "declFile", value.asInstanceOf[js.Any])
+    inline def setDeclFile(value: js.Any): Self = StObject.set(x, "declFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmitAccessorDeclarationComments(value: js.Any => js.Any): Self = StObject.set(x, "emitAccessorDeclarationComments", js.Any.fromFunction1(value))
+    inline def setEmitAccessorDeclarationComments(value: js.Any => js.Any): Self = StObject.set(x, "emitAccessorDeclarationComments", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitArgDecl(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitArgDecl", js.Any.fromFunction4(value))
+    inline def setEmitArgDecl(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitArgDecl", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEmitBaseList(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitBaseList", js.Any.fromFunction2(value))
+    inline def setEmitBaseList(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitBaseList", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitCallSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitCallSignature", js.Any.fromFunction1(value))
+    inline def setEmitCallSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitCallSignature", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitClassElementModifiers(value: js.Any => js.Any): Self = StObject.set(x, "emitClassElementModifiers", js.Any.fromFunction1(value))
+    inline def setEmitClassElementModifiers(value: js.Any => js.Any): Self = StObject.set(x, "emitClassElementModifiers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitClassMembersFromConstructorDefinition(value: js.Any => js.Any): Self = StObject.set(x, "emitClassMembersFromConstructorDefinition", js.Any.fromFunction1(value))
+    inline def setEmitClassMembersFromConstructorDefinition(value: js.Any => js.Any): Self = StObject.set(x, "emitClassMembersFromConstructorDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitComment(value: js.Any => js.Any): Self = StObject.set(x, "emitComment", js.Any.fromFunction1(value))
+    inline def setEmitComment(value: js.Any => js.Any): Self = StObject.set(x, "emitComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitConstructSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitConstructSignature", js.Any.fromFunction1(value))
+    inline def setEmitConstructSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitConstructSignature", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclFlags(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitDeclFlags", js.Any.fromFunction2(value))
+    inline def setEmitDeclFlags(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitDeclFlags", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitDeclarationComments(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitDeclarationComments", js.Any.fromFunction2(value))
+    inline def setEmitDeclarationComments(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitDeclarationComments", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitDeclarations(value: SourceUnit => Unit): Self = StObject.set(x, "emitDeclarations", js.Any.fromFunction1(value))
+    inline def setEmitDeclarations(value: SourceUnit => Unit): Self = StObject.set(x, "emitDeclarations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForAST(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForAST", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForAST(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForAST", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForClassDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForClassDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForClassDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForClassDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForConstructorDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForConstructorDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForConstructorDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForConstructorDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForEnumDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForEnumDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForEnumDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForEnumDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForExportAssignment(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForExportAssignment", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForExportAssignment(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForExportAssignment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForFunctionDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForFunctionDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForFunctionDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForFunctionDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForGetAccessor(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForGetAccessor", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForGetAccessor(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForGetAccessor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForImportDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForImportDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForImportDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForImportDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForInterfaceDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForInterfaceDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForInterfaceDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForInterfaceDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForList(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForList", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForList(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForMemberVariableDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForMemberVariableDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForMemberVariableDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForMemberVariableDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForModuleDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForModuleDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForModuleDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForModuleDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForSetAccessor(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForSetAccessor", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForSetAccessor(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForSetAccessor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForSourceUnit(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForSourceUnit", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForSourceUnit(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForSourceUnit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForVariableDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForVariableDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForVariableDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForVariableDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitDeclarationsForVariableStatement(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForVariableStatement", js.Any.fromFunction1(value))
+    inline def setEmitDeclarationsForVariableStatement(value: js.Any => js.Any): Self = StObject.set(x, "emitDeclarationsForVariableStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitHeritageClause(value: js.Any => js.Any): Self = StObject.set(x, "emitHeritageClause", js.Any.fromFunction1(value))
+    inline def setEmitHeritageClause(value: js.Any => js.Any): Self = StObject.set(x, "emitHeritageClause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitHeritageClauses(value: js.Any => js.Any): Self = StObject.set(x, "emitHeritageClauses", js.Any.fromFunction1(value))
+    inline def setEmitHeritageClauses(value: js.Any => js.Any): Self = StObject.set(x, "emitHeritageClauses", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitIndent(value: () => js.Any): Self = StObject.set(x, "emitIndent", js.Any.fromFunction0(value))
+    inline def setEmitIndent(value: () => js.Any): Self = StObject.set(x, "emitIndent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmitIndexMemberDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitIndexMemberDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitIndexMemberDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitIndexMemberDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitIndexSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitIndexSignature", js.Any.fromFunction1(value))
+    inline def setEmitIndexSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitIndexSignature", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitMemberAccessorDeclaration(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitMemberAccessorDeclaration", js.Any.fromFunction3(value))
+    inline def setEmitMemberAccessorDeclaration(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitMemberAccessorDeclaration", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEmitMemberFunctionDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitMemberFunctionDeclaration", js.Any.fromFunction1(value))
+    inline def setEmitMemberFunctionDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "emitMemberFunctionDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitMethodSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitMethodSignature", js.Any.fromFunction1(value))
+    inline def setEmitMethodSignature(value: js.Any => js.Any): Self = StObject.set(x, "emitMethodSignature", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitOptions(value: js.Any): Self = StObject.set(x, "emitOptions", value.asInstanceOf[js.Any])
+    inline def setEmitOptions(value: js.Any): Self = StObject.set(x, "emitOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmitParameterList(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitParameterList", js.Any.fromFunction2(value))
+    inline def setEmitParameterList(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitParameterList", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitParameters(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitParameters", js.Any.fromFunction2(value))
+    inline def setEmitParameters(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitParameters", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitPropertySignature(value: js.Any => js.Any): Self = StObject.set(x, "emitPropertySignature", js.Any.fromFunction1(value))
+    inline def setEmitPropertySignature(value: js.Any => js.Any): Self = StObject.set(x, "emitPropertySignature", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitReferencePaths(value: js.Any => js.Any): Self = StObject.set(x, "emitReferencePaths", js.Any.fromFunction1(value))
+    inline def setEmitReferencePaths(value: js.Any => js.Any): Self = StObject.set(x, "emitReferencePaths", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitSeparatedList(value: js.Any => js.Any): Self = StObject.set(x, "emitSeparatedList", js.Any.fromFunction1(value))
+    inline def setEmitSeparatedList(value: js.Any => js.Any): Self = StObject.set(x, "emitSeparatedList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitTypeNamesMember(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitTypeNamesMember", js.Any.fromFunction2(value))
+    inline def setEmitTypeNamesMember(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitTypeNamesMember", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitTypeOfVariableDeclaratorOrParameter(value: js.Any => js.Any): Self = StObject.set(x, "emitTypeOfVariableDeclaratorOrParameter", js.Any.fromFunction1(value))
+    inline def setEmitTypeOfVariableDeclaratorOrParameter(value: js.Any => js.Any): Self = StObject.set(x, "emitTypeOfVariableDeclaratorOrParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitTypeParameters(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitTypeParameters", js.Any.fromFunction2(value))
+    inline def setEmitTypeParameters(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitTypeParameters", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitTypeSignature(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitTypeSignature", js.Any.fromFunction2(value))
+    inline def setEmitTypeSignature(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitTypeSignature", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitVariableDeclarator(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitVariableDeclarator", js.Any.fromFunction3(value))
+    inline def setEmitVariableDeclarator(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "emitVariableDeclarator", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEmittedReferencePaths(value: js.Any): Self = StObject.set(x, "emittedReferencePaths", value.asInstanceOf[js.Any])
+    inline def setEmittedReferencePaths(value: js.Any): Self = StObject.set(x, "emittedReferencePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmittingFileName(value: js.Any): Self = StObject.set(x, "emittingFileName", value.asInstanceOf[js.Any])
+    inline def setEmittingFileName(value: js.Any): Self = StObject.set(x, "emittingFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeclFlagsString(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getDeclFlagsString", js.Any.fromFunction2(value))
+    inline def setGetDeclFlagsString(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getDeclFlagsString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetIndentString(value: js.Any => js.Any): Self = StObject.set(x, "getIndentString", js.Any.fromFunction1(value))
+    inline def setGetIndentString(value: js.Any => js.Any): Self = StObject.set(x, "getIndentString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOutputFile(value: () => OutputFile): Self = StObject.set(x, "getOutputFile", js.Any.fromFunction0(value))
+    inline def setGetOutputFile(value: () => OutputFile): Self = StObject.set(x, "getOutputFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndenter(value: js.Any): Self = StObject.set(x, "indenter", value.asInstanceOf[js.Any])
+    inline def setIndenter(value: js.Any): Self = StObject.set(x, "indenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOverloadedCallSignature(value: js.Any => js.Any): Self = StObject.set(x, "isOverloadedCallSignature", js.Any.fromFunction1(value))
+    inline def setIsOverloadedCallSignature(value: js.Any => js.Any): Self = StObject.set(x, "isOverloadedCallSignature", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveScriptReference(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveScriptReference", js.Any.fromFunction2(value))
+    inline def setResolveScriptReference(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveScriptReference", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSemanticInfoChain(value: js.Any): Self = StObject.set(x, "semanticInfoChain", value.asInstanceOf[js.Any])
+    inline def setSemanticInfoChain(value: js.Any): Self = StObject.set(x, "semanticInfoChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteDeclarationComments(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "writeDeclarationComments", js.Any.fromFunction2(value))
+    inline def setWriteDeclarationComments(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "writeDeclarationComments", js.Any.fromFunction2(value))
   }
 }

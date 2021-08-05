@@ -24,38 +24,28 @@ trait List
 }
 object List {
   
-  @scala.inline
-  def apply(member: Member): List = {
+  inline def apply(member: Member): List = {
     val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("list")
     __obj.asInstanceOf[List]
   }
   
-  @scala.inline
-  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+  extension [Self <: List](x: Self) {
     
-    @scala.inline
-    def setFlattened(value: scala.Boolean): Self = StObject.set(x, "flattened", value.asInstanceOf[js.Any])
+    inline def setFlattened(value: scala.Boolean): Self = StObject.set(x, "flattened", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlattenedUndefined: Self = StObject.set(x, "flattened", js.undefined)
+    inline def setFlattenedUndefined: Self = StObject.set(x, "flattened", js.undefined)
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMember(value: Member): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
+    inline def setMember(value: Member): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

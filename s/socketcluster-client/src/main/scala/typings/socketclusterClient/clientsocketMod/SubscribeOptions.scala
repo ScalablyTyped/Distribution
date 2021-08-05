@@ -14,31 +14,23 @@ trait SubscribeOptions extends StObject {
 }
 object SubscribeOptions {
   
-  @scala.inline
-  def apply(): SubscribeOptions = {
+  inline def apply(): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscribeOptions]
   }
   
-  @scala.inline
-  implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setWaitForAuth(value: Boolean): Self = StObject.set(x, "waitForAuth", value.asInstanceOf[js.Any])
+    inline def setWaitForAuth(value: Boolean): Self = StObject.set(x, "waitForAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForAuthUndefined: Self = StObject.set(x, "waitForAuth", js.undefined)
+    inline def setWaitForAuthUndefined: Self = StObject.set(x, "waitForAuth", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteWebhookInput extends StObject {
 }
 object DeleteWebhookInput {
   
-  @scala.inline
-  def apply(projectName: ProjectName): DeleteWebhookInput = {
+  inline def apply(projectName: ProjectName): DeleteWebhookInput = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWebhookInput]
   }
   
-  @scala.inline
-  implicit class DeleteWebhookInputMutableBuilder[Self <: DeleteWebhookInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWebhookInput](x: Self) {
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

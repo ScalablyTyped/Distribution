@@ -82,8 +82,7 @@ object sugarcubeMod {
   }
   object SugarCubeObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Browser: IeVersion,
       Config: ConfigAPI,
       Dialog: DialogAPI,
@@ -110,71 +109,49 @@ object sugarcubeMod {
       __obj.asInstanceOf[SugarCubeObject]
     }
     
-    @scala.inline
-    implicit class SugarCubeObjectMutableBuilder[Self <: SugarCubeObject] (val x: Self) extends AnyVal {
+    extension [Self <: SugarCubeObject](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: IeVersion): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: IeVersion): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: ConfigAPI): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ConfigAPI): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialog(value: DialogAPI): Self = StObject.set(x, "Dialog", value.asInstanceOf[js.Any])
+      inline def setDialog(value: DialogAPI): Self = StObject.set(x, "Dialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngine(value: EngineAPI): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: EngineAPI): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreen(value: FullscreenAPI): Self = StObject.set(x, "Fullscreen", value.asInstanceOf[js.Any])
+      inline def setFullscreen(value: FullscreenAPI): Self = StObject.set(x, "Fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas(value: Audio): Self = StObject.set(x, "Has", value.asInstanceOf[js.Any])
+      inline def setHas(value: Audio): Self = StObject.set(x, "Has", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacro(value: MacroAPI): Self = StObject.set(x, "Macro", value.asInstanceOf[js.Any])
+      inline def setMacro(value: MacroAPI): Self = StObject.set(x, "Macro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSave(value: SaveAPI): Self = StObject.set(x, "Save", value.asInstanceOf[js.Any])
+      inline def setSave(value: SaveAPI): Self = StObject.set(x, "Save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScripting(value: ScriptingAPI): Self = StObject.set(x, "Scripting", value.asInstanceOf[js.Any])
+      inline def setScripting(value: ScriptingAPI): Self = StObject.set(x, "Scripting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: js.Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: js.Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetting(value: SettingsAPI): Self = StObject.set(x, "Setting", value.asInstanceOf[js.Any])
+      inline def setSetting(value: SettingsAPI): Self = StObject.set(x, "Setting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: SugarCubeSettingVariables): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: SugarCubeSettingVariables): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetup(value: SugarCubeSetupObject): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      inline def setSetup(value: SugarCubeSetupObject): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpleAudio(value: SimpleAudioAPI): Self = StObject.set(x, "SimpleAudio", value.asInstanceOf[js.Any])
+      inline def setSimpleAudio(value: SimpleAudioAPI): Self = StObject.set(x, "SimpleAudio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: StateAPI): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: StateAPI): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory(value: StoryAPI): Self = StObject.set(x, "Story", value.asInstanceOf[js.Any])
+      inline def setStory(value: StoryAPI): Self = StObject.set(x, "Story", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUI(value: UIAPI): Self = StObject.set(x, "UI", value.asInstanceOf[js.Any])
+      inline def setUI(value: UIAPI): Self = StObject.set(x, "UI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUIBar(value: UIBarAPI): Self = StObject.set(x, "UIBar", value.asInstanceOf[js.Any])
+      inline def setUIBar(value: UIBarAPI): Self = StObject.set(x, "UIBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Build): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Build): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWikifier(value: WikifierAPI): Self = StObject.set(x, "Wikifier", value.asInstanceOf[js.Any])
+      inline def setWikifier(value: WikifierAPI): Self = StObject.set(x, "Wikifier", value.asInstanceOf[js.Any])
     }
   }
 }

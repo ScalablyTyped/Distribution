@@ -12,16 +12,16 @@ object pathParamModelMod {
     extends StObject
        with PathParamModel {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _defaultValue: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _index: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _methodName: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _name: js.Any = js.native
     
     /* CompleteClass */
@@ -39,13 +39,13 @@ object pathParamModelMod {
   
   trait PathParamModel extends StObject {
     
-    var _defaultValue: js.Any
+    /* private */ var _defaultValue: js.Any
     
-    var _index: js.Any
+    /* private */ var _index: js.Any
     
-    var _methodName: js.Any
+    /* private */ var _methodName: js.Any
     
-    var _name: js.Any
+    /* private */ var _name: js.Any
     
     var defaultValue: js.Any
     
@@ -57,8 +57,7 @@ object pathParamModelMod {
   }
   object PathParamModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _defaultValue: js.Any,
       _index: js.Any,
       _methodName: js.Any,
@@ -72,32 +71,23 @@ object pathParamModelMod {
       __obj.asInstanceOf[PathParamModel]
     }
     
-    @scala.inline
-    implicit class PathParamModelMutableBuilder[Self <: PathParamModel] (val x: Self) extends AnyVal {
+    extension [Self <: PathParamModel](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_defaultValue(value: js.Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
+      inline def set_defaultValue(value: js.Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_index(value: js.Any): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+      inline def set_index(value: js.Any): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_methodName(value: js.Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
+      inline def set_methodName(value: js.Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_name(value: js.Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+      inline def set_name(value: js.Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }
   }
 }

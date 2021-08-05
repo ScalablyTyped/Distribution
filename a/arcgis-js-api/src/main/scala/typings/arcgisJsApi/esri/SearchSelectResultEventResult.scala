@@ -18,8 +18,7 @@ trait SearchSelectResultEventResult
 }
 object SearchSelectResultEventResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     extent: Extent,
     feature: Graphic,
@@ -31,16 +30,12 @@ object SearchSelectResultEventResult {
     __obj.asInstanceOf[SearchSelectResultEventResult]
   }
   
-  @scala.inline
-  implicit class SearchSelectResultEventResultMutableBuilder[Self <: SearchSelectResultEventResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSelectResultEventResult](x: Self) {
     
-    @scala.inline
-    def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

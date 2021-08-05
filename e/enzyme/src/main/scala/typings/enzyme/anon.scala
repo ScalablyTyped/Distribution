@@ -23,23 +23,18 @@ object anon {
   }
   object Adapter {
     
-    @scala.inline
-    def apply(adapter: EnzymeAdapter): Adapter = {
+    inline def apply(adapter: EnzymeAdapter): Adapter = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
       __obj.asInstanceOf[Adapter]
     }
     
-    @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
+    extension [Self <: Adapter](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: EnzymeAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: EnzymeAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableLifecycleMethods(value: Boolean): Self = StObject.set(x, "disableLifecycleMethods", value.asInstanceOf[js.Any])
+      inline def setDisableLifecycleMethods(value: Boolean): Self = StObject.set(x, "disableLifecycleMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableLifecycleMethodsUndefined: Self = StObject.set(x, "disableLifecycleMethods", js.undefined)
+      inline def setDisableLifecycleMethodsUndefined: Self = StObject.set(x, "disableLifecycleMethods", js.undefined)
     }
   }
   
@@ -52,17 +47,14 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(calledByRenderer: Boolean): Dictkey = {
+    inline def apply(calledByRenderer: Boolean): Dictkey = {
       val __obj = js.Dynamic.literal(calledByRenderer = calledByRenderer.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setCalledByRenderer(value: Boolean): Self = StObject.set(x, "calledByRenderer", value.asInstanceOf[js.Any])
+      inline def setCalledByRenderer(value: Boolean): Self = StObject.set(x, "calledByRenderer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,17 +64,14 @@ object anon {
   }
   object HasShouldComponentUpdateBug {
     
-    @scala.inline
-    def apply(hasShouldComponentUpdateBug: Boolean): HasShouldComponentUpdateBug = {
+    inline def apply(hasShouldComponentUpdateBug: Boolean): HasShouldComponentUpdateBug = {
       val __obj = js.Dynamic.literal(hasShouldComponentUpdateBug = hasShouldComponentUpdateBug.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasShouldComponentUpdateBug]
     }
     
-    @scala.inline
-    implicit class HasShouldComponentUpdateBugMutableBuilder[Self <: HasShouldComponentUpdateBug] (val x: Self) extends AnyVal {
+    extension [Self <: HasShouldComponentUpdateBug](x: Self) {
       
-      @scala.inline
-      def setHasShouldComponentUpdateBug(value: Boolean): Self = StObject.set(x, "hasShouldComponentUpdateBug", value.asInstanceOf[js.Any])
+      inline def setHasShouldComponentUpdateBug(value: Boolean): Self = StObject.set(x, "hasShouldComponentUpdateBug", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,26 +85,20 @@ object anon {
   }
   object IgnoreProps {
     
-    @scala.inline
-    def apply(): IgnoreProps = {
+    inline def apply(): IgnoreProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IgnoreProps]
     }
     
-    @scala.inline
-    implicit class IgnorePropsMutableBuilder[Self <: IgnoreProps] (val x: Self) extends AnyVal {
+    extension [Self <: IgnoreProps](x: Self) {
       
-      @scala.inline
-      def setIgnoreProps(value: Boolean): Self = StObject.set(x, "ignoreProps", value.asInstanceOf[js.Any])
+      inline def setIgnoreProps(value: Boolean): Self = StObject.set(x, "ignoreProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorePropsUndefined: Self = StObject.set(x, "ignoreProps", js.undefined)
+      inline def setIgnorePropsUndefined: Self = StObject.set(x, "ignoreProps", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -127,20 +110,16 @@ object anon {
   }
   object OnSetState {
     
-    @scala.inline
-    def apply(onSetState: Boolean, prevContext: Boolean): OnSetState = {
+    inline def apply(onSetState: Boolean, prevContext: Boolean): OnSetState = {
       val __obj = js.Dynamic.literal(onSetState = onSetState.asInstanceOf[js.Any], prevContext = prevContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnSetState]
     }
     
-    @scala.inline
-    implicit class OnSetStateMutableBuilder[Self <: OnSetState] (val x: Self) extends AnyVal {
+    extension [Self <: OnSetState](x: Self) {
       
-      @scala.inline
-      def setOnSetState(value: Boolean): Self = StObject.set(x, "onSetState", value.asInstanceOf[js.Any])
+      inline def setOnSetState(value: Boolean): Self = StObject.set(x, "onSetState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevContext(value: Boolean): Self = StObject.set(x, "prevContext", value.asInstanceOf[js.Any])
+      inline def setPrevContext(value: Boolean): Self = StObject.set(x, "prevContext", value.asInstanceOf[js.Any])
     }
   }
 }

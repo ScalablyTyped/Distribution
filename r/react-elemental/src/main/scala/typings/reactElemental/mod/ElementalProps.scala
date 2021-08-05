@@ -17,31 +17,23 @@ trait ElementalProps extends StObject {
 }
 object ElementalProps {
   
-  @scala.inline
-  def apply(): ElementalProps = {
+  inline def apply(): ElementalProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElementalProps]
   }
   
-  @scala.inline
-  implicit class ElementalPropsMutableBuilder[Self <: ElementalProps] (val x: Self) extends AnyVal {
+  extension [Self <: ElementalProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setColorOpts(value: PrimaryDark): Self = StObject.set(x, "colorOpts", value.asInstanceOf[js.Any])
+    inline def setColorOpts(value: PrimaryDark): Self = StObject.set(x, "colorOpts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorOptsUndefined: Self = StObject.set(x, "colorOpts", js.undefined)
+    inline def setColorOptsUndefined: Self = StObject.set(x, "colorOpts", js.undefined)
     
-    @scala.inline
-    def setFontOpts(value: Primary): Self = StObject.set(x, "fontOpts", value.asInstanceOf[js.Any])
+    inline def setFontOpts(value: Primary): Self = StObject.set(x, "fontOpts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontOptsUndefined: Self = StObject.set(x, "fontOpts", js.undefined)
+    inline def setFontOptsUndefined: Self = StObject.set(x, "fontOpts", js.undefined)
   }
 }

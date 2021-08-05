@@ -19,7 +19,7 @@ object platformNodeMod {
     extends StObject
        with Platform {
     
-    var textEncoder: js.Any = js.native
+    /* private */ var textEncoder: js.Any = js.native
     
     var util: js.Any = js.native
   }
@@ -30,18 +30,14 @@ object platformNodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def importFetch(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("importFetch")().asInstanceOf[js.Any]
+    inline def importFetch(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("importFetch")().asInstanceOf[js.Any]
   }
   
-  @scala.inline
-  def getSystemFetch(): FetchFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemFetch")().asInstanceOf[FetchFn]
+  inline def getSystemFetch(): FetchFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemFetch")().asInstanceOf[FetchFn]
   
-  @scala.inline
-  def resetSystemFetch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetSystemFetch")().asInstanceOf[Unit]
+  inline def resetSystemFetch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetSystemFetch")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setSystemFetch(fetchFn: FetchFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSystemFetch")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSystemFetch(fetchFn: FetchFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSystemFetch")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type FetchFn = js.Function2[/* url */ String, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
 }

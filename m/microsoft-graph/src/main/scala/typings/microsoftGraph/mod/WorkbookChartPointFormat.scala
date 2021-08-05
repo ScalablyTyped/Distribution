@@ -13,22 +13,17 @@ trait WorkbookChartPointFormat
 }
 object WorkbookChartPointFormat {
   
-  @scala.inline
-  def apply(): WorkbookChartPointFormat = {
+  inline def apply(): WorkbookChartPointFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartPointFormat]
   }
   
-  @scala.inline
-  implicit class WorkbookChartPointFormatMutableBuilder[Self <: WorkbookChartPointFormat] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartPointFormat](x: Self) {
     
-    @scala.inline
-    def setFill(value: NullableOption[WorkbookChartFill]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: NullableOption[WorkbookChartFill]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillNull: Self = StObject.set(x, "fill", null)
+    inline def setFillNull: Self = StObject.set(x, "fill", null)
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

@@ -27,67 +27,47 @@ trait SchedulerResource extends StObject {
 }
 object SchedulerResource {
   
-  @scala.inline
-  def apply(): SchedulerResource = {
+  inline def apply(): SchedulerResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerResource]
   }
   
-  @scala.inline
-  implicit class SchedulerResourceMutableBuilder[Self <: SchedulerResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerResource](x: Self) {
     
-    @scala.inline
-    def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
+    inline def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataColorFieldUndefined: Self = StObject.set(x, "dataColorField", js.undefined)
+    inline def setDataColorFieldUndefined: Self = StObject.set(x, "dataColorField", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
-    @scala.inline
-    def setDataValueField(value: String): Self = StObject.set(x, "dataValueField", value.asInstanceOf[js.Any])
+    inline def setDataValueField(value: String): Self = StObject.set(x, "dataValueField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataValueFieldUndefined: Self = StObject.set(x, "dataValueField", js.undefined)
+    inline def setDataValueFieldUndefined: Self = StObject.set(x, "dataValueField", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setValuePrimitive(value: Boolean): Self = StObject.set(x, "valuePrimitive", value.asInstanceOf[js.Any])
+    inline def setValuePrimitive(value: Boolean): Self = StObject.set(x, "valuePrimitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuePrimitiveUndefined: Self = StObject.set(x, "valuePrimitive", js.undefined)
+    inline def setValuePrimitiveUndefined: Self = StObject.set(x, "valuePrimitive", js.undefined)
   }
 }

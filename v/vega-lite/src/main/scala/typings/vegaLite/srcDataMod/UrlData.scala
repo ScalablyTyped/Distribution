@@ -17,16 +17,13 @@ trait UrlData
 }
 object UrlData {
   
-  @scala.inline
-  def apply(url: String): UrlData = {
+  inline def apply(url: String): UrlData = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlData]
   }
   
-  @scala.inline
-  implicit class UrlDataMutableBuilder[Self <: UrlData] (val x: Self) extends AnyVal {
+  extension [Self <: UrlData](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

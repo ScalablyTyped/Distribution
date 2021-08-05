@@ -15,25 +15,19 @@ trait Description
 }
 object Description {
   
-  @scala.inline
-  def apply(): Description = {
+  inline def apply(): Description = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Description]
   }
   
-  @scala.inline
-  implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+  extension [Self <: Description](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+    inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+    inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait ParametersResponse extends StObject {
 }
 object ParametersResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OauthAuthorizationsListAuthorizationsEndpoint,
     response: OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]
   ): ParametersResponse = {
@@ -24,13 +23,10 @@ object ParametersResponse {
     __obj.asInstanceOf[ParametersResponse]
   }
   
-  @scala.inline
-  implicit class ParametersResponseMutableBuilder[Self <: ParametersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersResponse](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OauthAuthorizationsListAuthorizationsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OauthAuthorizationsListAuthorizationsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

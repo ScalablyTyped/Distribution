@@ -19,25 +19,19 @@ trait CommandOptions extends StObject {
 }
 object CommandOptions {
   
-  @scala.inline
-  def apply(): CommandOptions = {
+  inline def apply(): CommandOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommandOptions]
   }
   
-  @scala.inline
-  implicit class CommandOptionsMutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommandOptions](x: Self) {
     
-    @scala.inline
-    def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
+    inline def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListReceiptRuleSetsResponse extends StObject {
 }
 object ListReceiptRuleSetsResponse {
   
-  @scala.inline
-  def apply(): ListReceiptRuleSetsResponse = {
+  inline def apply(): ListReceiptRuleSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReceiptRuleSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListReceiptRuleSetsResponseMutableBuilder[Self <: ListReceiptRuleSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReceiptRuleSetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRuleSets(value: ReceiptRuleSetsLists): Self = StObject.set(x, "RuleSets", value.asInstanceOf[js.Any])
+    inline def setRuleSets(value: ReceiptRuleSetsLists): Self = StObject.set(x, "RuleSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetsUndefined: Self = StObject.set(x, "RuleSets", js.undefined)
+    inline def setRuleSetsUndefined: Self = StObject.set(x, "RuleSets", js.undefined)
     
-    @scala.inline
-    def setRuleSetsVarargs(value: ReceiptRuleSetMetadata*): Self = StObject.set(x, "RuleSets", js.Array(value :_*))
+    inline def setRuleSetsVarargs(value: ReceiptRuleSetMetadata*): Self = StObject.set(x, "RuleSets", js.Array(value :_*))
   }
 }

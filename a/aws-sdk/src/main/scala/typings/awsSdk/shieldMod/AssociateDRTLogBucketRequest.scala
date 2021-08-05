@@ -13,16 +13,13 @@ trait AssociateDRTLogBucketRequest extends StObject {
 }
 object AssociateDRTLogBucketRequest {
   
-  @scala.inline
-  def apply(LogBucket: LogBucket): AssociateDRTLogBucketRequest = {
+  inline def apply(LogBucket: LogBucket): AssociateDRTLogBucketRequest = {
     val __obj = js.Dynamic.literal(LogBucket = LogBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateDRTLogBucketRequest]
   }
   
-  @scala.inline
-  implicit class AssociateDRTLogBucketRequestMutableBuilder[Self <: AssociateDRTLogBucketRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateDRTLogBucketRequest](x: Self) {
     
-    @scala.inline
-    def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
+    inline def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
   }
 }

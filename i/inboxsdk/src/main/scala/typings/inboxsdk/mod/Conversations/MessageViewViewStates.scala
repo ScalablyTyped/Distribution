@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageViewViewStates extends StObject
 object MessageViewViewStates {
   
-  @scala.inline
-  def COLLAPSED: typings.inboxsdk.inboxsdkStrings.COLLAPSED = "COLLAPSED".asInstanceOf[typings.inboxsdk.inboxsdkStrings.COLLAPSED]
+  inline def COLLAPSED: typings.inboxsdk.inboxsdkStrings.COLLAPSED = "COLLAPSED".asInstanceOf[typings.inboxsdk.inboxsdkStrings.COLLAPSED]
   
-  @scala.inline
-  def EXPANDED: typings.inboxsdk.inboxsdkStrings.EXPANDED = "EXPANDED".asInstanceOf[typings.inboxsdk.inboxsdkStrings.EXPANDED]
+  inline def EXPANDED: typings.inboxsdk.inboxsdkStrings.EXPANDED = "EXPANDED".asInstanceOf[typings.inboxsdk.inboxsdkStrings.EXPANDED]
   
-  @scala.inline
-  def HIDDEN: typings.inboxsdk.inboxsdkStrings.HIDDEN = "HIDDEN".asInstanceOf[typings.inboxsdk.inboxsdkStrings.HIDDEN]
+  inline def HIDDEN: typings.inboxsdk.inboxsdkStrings.HIDDEN = "HIDDEN".asInstanceOf[typings.inboxsdk.inboxsdkStrings.HIDDEN]
 }

@@ -55,8 +55,7 @@ trait DocumentIndex
 }
 object DocumentIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     BackColor: Color,
     BackGraphicFilter: String,
@@ -112,40 +111,28 @@ object DocumentIndex {
     __obj.asInstanceOf[DocumentIndex]
   }
   
-  @scala.inline
-  implicit class DocumentIndexMutableBuilder[Self <: DocumentIndex] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentIndex](x: Self) {
     
-    @scala.inline
-    def setDocumentIndexMarks(value: SafeArray[XDocumentIndexMark]): Self = StObject.set(x, "DocumentIndexMarks", value.asInstanceOf[js.Any])
+    inline def setDocumentIndexMarks(value: SafeArray[XDocumentIndexMark]): Self = StObject.set(x, "DocumentIndexMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainEntryCharacterStyleName(value: String): Self = StObject.set(x, "MainEntryCharacterStyleName", value.asInstanceOf[js.Any])
+    inline def setMainEntryCharacterStyleName(value: String): Self = StObject.set(x, "MainEntryCharacterStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAlgorithm(value: String): Self = StObject.set(x, "SortAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSortAlgorithm(value: String): Self = StObject.set(x, "SortAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAlphabeticalSeparators(value: Boolean): Self = StObject.set(x, "UseAlphabeticalSeparators", value.asInstanceOf[js.Any])
+    inline def setUseAlphabeticalSeparators(value: Boolean): Self = StObject.set(x, "UseAlphabeticalSeparators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCombinedEntries(value: Boolean): Self = StObject.set(x, "UseCombinedEntries", value.asInstanceOf[js.Any])
+    inline def setUseCombinedEntries(value: Boolean): Self = StObject.set(x, "UseCombinedEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDash(value: Boolean): Self = StObject.set(x, "UseDash", value.asInstanceOf[js.Any])
+    inline def setUseDash(value: Boolean): Self = StObject.set(x, "UseDash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseKeyAsEntry(value: Boolean): Self = StObject.set(x, "UseKeyAsEntry", value.asInstanceOf[js.Any])
+    inline def setUseKeyAsEntry(value: Boolean): Self = StObject.set(x, "UseKeyAsEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePP(value: Boolean): Self = StObject.set(x, "UsePP", value.asInstanceOf[js.Any])
+    inline def setUsePP(value: Boolean): Self = StObject.set(x, "UsePP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUpperCase(value: Boolean): Self = StObject.set(x, "UseUpperCase", value.asInstanceOf[js.Any])
+    inline def setUseUpperCase(value: Boolean): Self = StObject.set(x, "UseUpperCase", value.asInstanceOf[js.Any])
   }
 }

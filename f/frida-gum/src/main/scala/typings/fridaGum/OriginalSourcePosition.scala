@@ -28,28 +28,21 @@ trait OriginalSourcePosition extends StObject {
 }
 object OriginalSourcePosition {
   
-  @scala.inline
-  def apply(column: Double, line: Double, source: String): OriginalSourcePosition = {
+  inline def apply(column: Double, line: Double, source: String): OriginalSourcePosition = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], name = null)
     __obj.asInstanceOf[OriginalSourcePosition]
   }
   
-  @scala.inline
-  implicit class OriginalSourcePositionMutableBuilder[Self <: OriginalSourcePosition] (val x: Self) extends AnyVal {
+  extension [Self <: OriginalSourcePosition](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

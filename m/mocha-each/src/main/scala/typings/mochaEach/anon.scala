@@ -25,20 +25,16 @@ object anon {
   }
   object Describe {
     
-    @scala.inline
-    def apply(describe: ForEachDescribeDefinition, it: ForEachTestFunction): Describe = {
+    inline def apply(describe: ForEachDescribeDefinition, it: ForEachTestFunction): Describe = {
       val __obj = js.Dynamic.literal(describe = describe.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any])
       __obj.asInstanceOf[Describe]
     }
     
-    @scala.inline
-    implicit class DescribeMutableBuilder[Self <: Describe] (val x: Self) extends AnyVal {
+    extension [Self <: Describe](x: Self) {
       
-      @scala.inline
-      def setDescribe(value: ForEachDescribeDefinition): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: ForEachDescribeDefinition): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIt(value: ForEachTestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      inline def setIt(value: ForEachTestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     }
   }
 }

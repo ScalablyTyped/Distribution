@@ -22,20 +22,16 @@ object gitHubSmallMod extends Shortcut {
   }
   object GitHubSmallProps {
     
-    @scala.inline
-    def apply(): GitHubSmallProps = {
+    inline def apply(): GitHubSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GitHubSmallProps]
     }
     
-    @scala.inline
-    implicit class GitHubSmallPropsMutableBuilder[Self <: GitHubSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: GitHubSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

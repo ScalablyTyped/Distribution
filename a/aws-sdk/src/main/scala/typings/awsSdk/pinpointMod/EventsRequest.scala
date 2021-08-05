@@ -13,16 +13,13 @@ trait EventsRequest extends StObject {
 }
 object EventsRequest {
   
-  @scala.inline
-  def apply(BatchItem: MapOfEventsBatch): EventsRequest = {
+  inline def apply(BatchItem: MapOfEventsBatch): EventsRequest = {
     val __obj = js.Dynamic.literal(BatchItem = BatchItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventsRequest]
   }
   
-  @scala.inline
-  implicit class EventsRequestMutableBuilder[Self <: EventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EventsRequest](x: Self) {
     
-    @scala.inline
-    def setBatchItem(value: MapOfEventsBatch): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
+    inline def setBatchItem(value: MapOfEventsBatch): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
   }
 }

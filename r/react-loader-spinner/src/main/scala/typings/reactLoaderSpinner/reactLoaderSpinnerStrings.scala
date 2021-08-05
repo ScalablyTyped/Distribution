@@ -11,125 +11,107 @@ object reactLoaderSpinnerStrings {
   sealed trait Audio
     extends StObject
        with Types
-  @scala.inline
-  def Audio: Audio = "Audio".asInstanceOf[Audio]
+  inline def Audio: Audio = "Audio".asInstanceOf[Audio]
   
   @js.native
   sealed trait BallTriangle
     extends StObject
        with Types
-  @scala.inline
-  def BallTriangle: BallTriangle = "BallTriangle".asInstanceOf[BallTriangle]
+  inline def BallTriangle: BallTriangle = "BallTriangle".asInstanceOf[BallTriangle]
   
   @js.native
   sealed trait Bars
     extends StObject
        with Types
-  @scala.inline
-  def Bars: Bars = "Bars".asInstanceOf[Bars]
+  inline def Bars: Bars = "Bars".asInstanceOf[Bars]
   
   @js.native
   sealed trait Circles
     extends StObject
        with Types
-  @scala.inline
-  def Circles: Circles = "Circles".asInstanceOf[Circles]
+  inline def Circles: Circles = "Circles".asInstanceOf[Circles]
   
   @js.native
   sealed trait Grid
     extends StObject
        with Types
-  @scala.inline
-  def Grid: Grid = "Grid".asInstanceOf[Grid]
+  inline def Grid: Grid = "Grid".asInstanceOf[Grid]
   
   @js.native
   sealed trait Hearts
     extends StObject
        with Types
-  @scala.inline
-  def Hearts: Hearts = "Hearts".asInstanceOf[Hearts]
+  inline def Hearts: Hearts = "Hearts".asInstanceOf[Hearts]
   
   @js.native
   sealed trait MutatingDots
     extends StObject
        with Types
-  @scala.inline
-  def MutatingDots: MutatingDots = "MutatingDots".asInstanceOf[MutatingDots]
+  inline def MutatingDots: MutatingDots = "MutatingDots".asInstanceOf[MutatingDots]
   
   @js.native
   sealed trait None
     extends StObject
        with Types
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
+  inline def None: None = "None".asInstanceOf[None]
   
   @js.native
   sealed trait NotSpecified
     extends StObject
        with Types
-  @scala.inline
-  def NotSpecified: NotSpecified = "NotSpecified".asInstanceOf[NotSpecified]
+  inline def NotSpecified: NotSpecified = "NotSpecified".asInstanceOf[NotSpecified]
   
   @js.native
   sealed trait Oval
     extends StObject
        with Types
-  @scala.inline
-  def Oval: Oval = "Oval".asInstanceOf[Oval]
+  inline def Oval: Oval = "Oval".asInstanceOf[Oval]
   
   @js.native
   sealed trait Plane
     extends StObject
        with Types
-  @scala.inline
-  def Plane: Plane = "Plane".asInstanceOf[Plane]
+  inline def Plane: Plane = "Plane".asInstanceOf[Plane]
   
   @js.native
   sealed trait Puff
     extends StObject
        with Types
-  @scala.inline
-  def Puff: Puff = "Puff".asInstanceOf[Puff]
+  inline def Puff: Puff = "Puff".asInstanceOf[Puff]
   
   @js.native
   sealed trait RevolvingDot
     extends StObject
        with Types
-  @scala.inline
-  def RevolvingDot: RevolvingDot = "RevolvingDot".asInstanceOf[RevolvingDot]
+  inline def RevolvingDot: RevolvingDot = "RevolvingDot".asInstanceOf[RevolvingDot]
   
   @js.native
   sealed trait Rings
     extends StObject
        with Types
-  @scala.inline
-  def Rings: Rings = "Rings".asInstanceOf[Rings]
+  inline def Rings: Rings = "Rings".asInstanceOf[Rings]
   
   @js.native
   sealed trait TailSpin
     extends StObject
        with Types
-  @scala.inline
-  def TailSpin: TailSpin = "TailSpin".asInstanceOf[TailSpin]
+  inline def TailSpin: TailSpin = "TailSpin".asInstanceOf[TailSpin]
   
   @js.native
   sealed trait ThreeDots
     extends StObject
        with Types
-  @scala.inline
-  def ThreeDots: ThreeDots = "ThreeDots".asInstanceOf[ThreeDots]
+  inline def ThreeDots: ThreeDots = "ThreeDots".asInstanceOf[ThreeDots]
   
   @js.native
   sealed trait Triangle
     extends StObject
        with Types
-  @scala.inline
-  def Triangle: Triangle = "Triangle".asInstanceOf[Triangle]
+  inline def Triangle: Triangle = "Triangle".asInstanceOf[Triangle]
   
   @js.native
   sealed trait Watch
     extends StObject
        with Types
-  @scala.inline
-  def Watch: Watch = "Watch".asInstanceOf[Watch]
+  inline def Watch: Watch = "Watch".asInstanceOf[Watch]
 }

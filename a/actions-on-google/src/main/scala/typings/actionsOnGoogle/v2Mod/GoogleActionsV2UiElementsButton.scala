@@ -20,25 +20,19 @@ trait GoogleActionsV2UiElementsButton extends StObject {
 }
 object GoogleActionsV2UiElementsButton {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UiElementsButton = {
+  inline def apply(): GoogleActionsV2UiElementsButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UiElementsButton]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UiElementsButtonMutableBuilder[Self <: GoogleActionsV2UiElementsButton] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UiElementsButton](x: Self) {
     
-    @scala.inline
-    def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
+    inline def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
+    inline def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

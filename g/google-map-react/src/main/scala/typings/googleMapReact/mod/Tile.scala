@@ -12,16 +12,13 @@ trait Tile
 }
 object Tile {
   
-  @scala.inline
-  def apply(x: Double, y: Double, zoom: Double): Tile = {
+  inline def apply(x: Double, y: Double, zoom: Double): Tile = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tile]
   }
   
-  @scala.inline
-  implicit class TileMutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
+  extension [Self <: Tile](x: Self) {
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

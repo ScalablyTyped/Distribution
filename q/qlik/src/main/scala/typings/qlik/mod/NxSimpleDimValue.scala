@@ -12,19 +12,15 @@ trait NxSimpleDimValue extends StObject {
 }
 object NxSimpleDimValue {
   
-  @scala.inline
-  def apply(qElemNo: Double, qText: String): NxSimpleDimValue = {
+  inline def apply(qElemNo: Double, qText: String): NxSimpleDimValue = {
     val __obj = js.Dynamic.literal(qElemNo = qElemNo.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxSimpleDimValue]
   }
   
-  @scala.inline
-  implicit class NxSimpleDimValueMutableBuilder[Self <: NxSimpleDimValue] (val x: Self) extends AnyVal {
+  extension [Self <: NxSimpleDimValue](x: Self) {
     
-    @scala.inline
-    def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
+    inline def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }
 }

@@ -14,34 +14,25 @@ trait SchemaReviewsListResponse extends StObject {
 }
 object SchemaReviewsListResponse {
   
-  @scala.inline
-  def apply(): SchemaReviewsListResponse = {
+  inline def apply(): SchemaReviewsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReviewsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaReviewsListResponseMutableBuilder[Self <: SchemaReviewsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReviewsListResponse](x: Self) {
     
-    @scala.inline
-    def setPageInfo(value: SchemaPageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: SchemaPageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setReviews(value: js.Array[SchemaReview]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
+    inline def setReviews(value: js.Array[SchemaReview]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewsUndefined: Self = StObject.set(x, "reviews", js.undefined)
+    inline def setReviewsUndefined: Self = StObject.set(x, "reviews", js.undefined)
     
-    @scala.inline
-    def setReviewsVarargs(value: SchemaReview*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: SchemaReview*): Self = StObject.set(x, "reviews", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
+    inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
   }
 }

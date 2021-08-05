@@ -12,9 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def geometry(geo: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geometry")(geo.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def geometry(geo: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geometry")(geo.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def ring(coordinates: js.Array[Position]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ring")(coordinates.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def ring(coordinates: js.Array[Position]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ring")(coordinates.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

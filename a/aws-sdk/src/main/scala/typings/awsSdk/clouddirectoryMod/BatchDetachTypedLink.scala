@@ -13,16 +13,13 @@ trait BatchDetachTypedLink extends StObject {
 }
 object BatchDetachTypedLink {
   
-  @scala.inline
-  def apply(TypedLinkSpecifier: TypedLinkSpecifier): BatchDetachTypedLink = {
+  inline def apply(TypedLinkSpecifier: TypedLinkSpecifier): BatchDetachTypedLink = {
     val __obj = js.Dynamic.literal(TypedLinkSpecifier = TypedLinkSpecifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetachTypedLink]
   }
   
-  @scala.inline
-  implicit class BatchDetachTypedLinkMutableBuilder[Self <: BatchDetachTypedLink] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetachTypedLink](x: Self) {
     
-    @scala.inline
-    def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = StObject.set(x, "TypedLinkSpecifier", value.asInstanceOf[js.Any])
+    inline def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = StObject.set(x, "TypedLinkSpecifier", value.asInstanceOf[js.Any])
   }
 }

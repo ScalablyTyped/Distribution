@@ -10,16 +10,13 @@ trait SuccessObj extends StObject {
 }
 object SuccessObj {
   
-  @scala.inline
-  def apply(httpResponseCode: Double): SuccessObj = {
+  inline def apply(httpResponseCode: Double): SuccessObj = {
     val __obj = js.Dynamic.literal(httpResponseCode = httpResponseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessObj]
   }
   
-  @scala.inline
-  implicit class SuccessObjMutableBuilder[Self <: SuccessObj] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessObj](x: Self) {
     
-    @scala.inline
-    def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
+    inline def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
   }
 }

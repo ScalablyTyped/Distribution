@@ -10,22 +10,17 @@ trait CandleStickData extends StObject {
 }
 object CandleStickData {
   
-  @scala.inline
-  def apply(): CandleStickData = {
+  inline def apply(): CandleStickData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CandleStickData]
   }
   
-  @scala.inline
-  implicit class CandleStickDataMutableBuilder[Self <: CandleStickData] (val x: Self) extends AnyVal {
+  extension [Self <: CandleStickData](x: Self) {
     
-    @scala.inline
-    def setDataSets(value: js.Array[CandleStickDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+    inline def setDataSets(value: js.Array[CandleStickDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
+    inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    @scala.inline
-    def setDataSetsVarargs(value: CandleStickDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: CandleStickDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

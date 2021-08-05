@@ -10,19 +10,15 @@ trait ServerValidationOutput extends StObject {
 }
 object ServerValidationOutput {
   
-  @scala.inline
-  def apply(): ServerValidationOutput = {
+  inline def apply(): ServerValidationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerValidationOutput]
   }
   
-  @scala.inline
-  implicit class ServerValidationOutputMutableBuilder[Self <: ServerValidationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ServerValidationOutput](x: Self) {
     
-    @scala.inline
-    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

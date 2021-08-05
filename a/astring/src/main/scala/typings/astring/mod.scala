@@ -88,12 +88,9 @@ object mod {
   @js.native
   val baseGenerator: Generator = js.native
   
-  @scala.inline
-  def generate(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def generate(node: Node, options: OptionsoutputStream): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stream]
-  @scala.inline
-  def generate(node: Node, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generate(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generate(node: Node, options: OptionsoutputStream): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stream]
+  inline def generate(node: Node, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object global {
     
@@ -114,14 +111,11 @@ object mod {
       @js.native
       val ^ : typings.astring.mod.global.astring = js.native
       
-      @scala.inline
-      implicit class astringMutableBuilder[Self <: typings.astring.mod.global.astring] (val x: Self) extends AnyVal {
+      extension [Self <: typings.astring.mod.global.astring](x: Self) {
         
-        @scala.inline
-        def setBaseGenerator(value: Generator): Self = StObject.set(x, "baseGenerator", value.asInstanceOf[js.Any])
+        inline def setBaseGenerator(value: Generator): Self = StObject.set(x, "baseGenerator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGenerate(value: FnCall): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
+        inline def setGenerate(value: FnCall): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -403,212 +397,143 @@ object mod {
   }
   object Generator {
     
-    @scala.inline
-    implicit class GeneratorMutableBuilder[Self <: Generator] (val x: Self) extends AnyVal {
+    extension [Self <: Generator](x: Self) {
       
-      @scala.inline
-      def setArrayExpression(value: (/* node */ Extract[Node, `17`], /* state */ Write) => Unit): Self = StObject.set(x, "ArrayExpression", js.Any.fromFunction2(value))
+      inline def setArrayExpression(value: (/* node */ Extract[Node, `17`], /* state */ Write) => Unit): Self = StObject.set(x, "ArrayExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setArrayPattern(value: (/* node */ Extract[Node, `37`], /* state */ Write) => Unit): Self = StObject.set(x, "ArrayPattern", js.Any.fromFunction2(value))
+      inline def setArrayPattern(value: (/* node */ Extract[Node, `37`], /* state */ Write) => Unit): Self = StObject.set(x, "ArrayPattern", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setArrowFunctionExpression(value: (/* node */ Extract[Node, `46`], /* state */ Write) => Unit): Self = StObject.set(x, "ArrowFunctionExpression", js.Any.fromFunction2(value))
+      inline def setArrowFunctionExpression(value: (/* node */ Extract[Node, `46`], /* state */ Write) => Unit): Self = StObject.set(x, "ArrowFunctionExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAssignmentExpression(value: (/* node */ Extract[Node, `41`], /* state */ Write) => Unit): Self = StObject.set(x, "AssignmentExpression", js.Any.fromFunction2(value))
+      inline def setAssignmentExpression(value: (/* node */ Extract[Node, `41`], /* state */ Write) => Unit): Self = StObject.set(x, "AssignmentExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAssignmentPattern(value: (/* node */ Extract[Node, `21`], /* state */ Write) => Unit): Self = StObject.set(x, "AssignmentPattern", js.Any.fromFunction2(value))
+      inline def setAssignmentPattern(value: (/* node */ Extract[Node, `21`], /* state */ Write) => Unit): Self = StObject.set(x, "AssignmentPattern", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAwaitExpression(value: (/* node */ Extract[Node, `35`], /* state */ Write) => Unit): Self = StObject.set(x, "AwaitExpression", js.Any.fromFunction2(value))
+      inline def setAwaitExpression(value: (/* node */ Extract[Node, `35`], /* state */ Write) => Unit): Self = StObject.set(x, "AwaitExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBinaryExpression(value: (/* node */ Extract[Node, `29`], /* state */ Write) => Unit): Self = StObject.set(x, "BinaryExpression", js.Any.fromFunction2(value))
+      inline def setBinaryExpression(value: (/* node */ Extract[Node, `29`], /* state */ Write) => Unit): Self = StObject.set(x, "BinaryExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlockStatement(value: (/* node */ Extract[Node, `7`], /* state */ Write) => Unit): Self = StObject.set(x, "BlockStatement", js.Any.fromFunction2(value))
+      inline def setBlockStatement(value: (/* node */ Extract[Node, `7`], /* state */ Write) => Unit): Self = StObject.set(x, "BlockStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBreakStatement(value: (/* node */ Extract[Node, `0`], /* state */ Write) => Unit): Self = StObject.set(x, "BreakStatement", js.Any.fromFunction2(value))
+      inline def setBreakStatement(value: (/* node */ Extract[Node, `0`], /* state */ Write) => Unit): Self = StObject.set(x, "BreakStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallExpression(value: (/* node */ Extract[Node, `15`], /* state */ Write) => Unit): Self = StObject.set(x, "CallExpression", js.Any.fromFunction2(value))
+      inline def setCallExpression(value: (/* node */ Extract[Node, `15`], /* state */ Write) => Unit): Self = StObject.set(x, "CallExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCatchClause(value: (/* node */ Extract[Node, `54`], /* state */ Write) => Unit): Self = StObject.set(x, "CatchClause", js.Any.fromFunction2(value))
+      inline def setCatchClause(value: (/* node */ Extract[Node, `54`], /* state */ Write) => Unit): Self = StObject.set(x, "CatchClause", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChainExpression(value: (/* node */ Extract[Node, `60`], /* state */ Write) => Unit): Self = StObject.set(x, "ChainExpression", js.Any.fromFunction2(value))
+      inline def setChainExpression(value: (/* node */ Extract[Node, `60`], /* state */ Write) => Unit): Self = StObject.set(x, "ChainExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClassBody(value: (/* node */ Extract[Node, `63`], /* state */ Write) => Unit): Self = StObject.set(x, "ClassBody", js.Any.fromFunction2(value))
+      inline def setClassBody(value: (/* node */ Extract[Node, `63`], /* state */ Write) => Unit): Self = StObject.set(x, "ClassBody", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClassDeclaration(value: (/* node */ Extract[Node, `34`], /* state */ Write) => Unit): Self = StObject.set(x, "ClassDeclaration", js.Any.fromFunction2(value))
+      inline def setClassDeclaration(value: (/* node */ Extract[Node, `34`], /* state */ Write) => Unit): Self = StObject.set(x, "ClassDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClassExpression(value: (/* node */ Extract[Node, Type], /* state */ Write) => Unit): Self = StObject.set(x, "ClassExpression", js.Any.fromFunction2(value))
+      inline def setClassExpression(value: (/* node */ Extract[Node, Type], /* state */ Write) => Unit): Self = StObject.set(x, "ClassExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConditionalExpression(value: (/* node */ Extract[Node, `52`], /* state */ Write) => Unit): Self = StObject.set(x, "ConditionalExpression", js.Any.fromFunction2(value))
+      inline def setConditionalExpression(value: (/* node */ Extract[Node, `52`], /* state */ Write) => Unit): Self = StObject.set(x, "ConditionalExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContinueStatement(value: (/* node */ Extract[Node, `12`], /* state */ Write) => Unit): Self = StObject.set(x, "ContinueStatement", js.Any.fromFunction2(value))
+      inline def setContinueStatement(value: (/* node */ Extract[Node, `12`], /* state */ Write) => Unit): Self = StObject.set(x, "ContinueStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDebuggerStatement(value: (/* node */ Extract[Node, `43`], /* state */ Write) => Unit): Self = StObject.set(x, "DebuggerStatement", js.Any.fromFunction2(value))
+      inline def setDebuggerStatement(value: (/* node */ Extract[Node, `43`], /* state */ Write) => Unit): Self = StObject.set(x, "DebuggerStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDoWhileStatement(value: (/* node */ Extract[Node, `59`], /* state */ Write) => Unit): Self = StObject.set(x, "DoWhileStatement", js.Any.fromFunction2(value))
+      inline def setDoWhileStatement(value: (/* node */ Extract[Node, `59`], /* state */ Write) => Unit): Self = StObject.set(x, "DoWhileStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmptyStatement(value: (/* node */ Extract[Node, `33`], /* state */ Write) => Unit): Self = StObject.set(x, "EmptyStatement", js.Any.fromFunction2(value))
+      inline def setEmptyStatement(value: (/* node */ Extract[Node, `33`], /* state */ Write) => Unit): Self = StObject.set(x, "EmptyStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExportAllDeclaration(value: (/* node */ Extract[Node, `10`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportAllDeclaration", js.Any.fromFunction2(value))
+      inline def setExportAllDeclaration(value: (/* node */ Extract[Node, `10`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportAllDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExportDefaultDeclaration(value: (/* node */ Extract[Node, `26`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportDefaultDeclaration", js.Any.fromFunction2(value))
+      inline def setExportDefaultDeclaration(value: (/* node */ Extract[Node, `26`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportDefaultDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExportNamedDeclaration(value: (/* node */ Extract[Node, `14`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportNamedDeclaration", js.Any.fromFunction2(value))
+      inline def setExportNamedDeclaration(value: (/* node */ Extract[Node, `14`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportNamedDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExportSpecifier(value: (/* node */ Extract[Node, `38`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportSpecifier", js.Any.fromFunction2(value))
+      inline def setExportSpecifier(value: (/* node */ Extract[Node, `38`], /* state */ Write) => Unit): Self = StObject.set(x, "ExportSpecifier", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpressionStatement(value: (/* node */ Extract[Node, `20`], /* state */ Write) => Unit): Self = StObject.set(x, "ExpressionStatement", js.Any.fromFunction2(value))
+      inline def setExpressionStatement(value: (/* node */ Extract[Node, `20`], /* state */ Write) => Unit): Self = StObject.set(x, "ExpressionStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForInStatement(value: (/* node */ Extract[Node, `3`], /* state */ Write) => Unit): Self = StObject.set(x, "ForInStatement", js.Any.fromFunction2(value))
+      inline def setForInStatement(value: (/* node */ Extract[Node, `3`], /* state */ Write) => Unit): Self = StObject.set(x, "ForInStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForOfStatement(value: (/* node */ Extract[Node, `51`], /* state */ Write) => Unit): Self = StObject.set(x, "ForOfStatement", js.Any.fromFunction2(value))
+      inline def setForOfStatement(value: (/* node */ Extract[Node, `51`], /* state */ Write) => Unit): Self = StObject.set(x, "ForOfStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForStatement(value: (/* node */ Extract[Node, `56`], /* state */ Write) => Unit): Self = StObject.set(x, "ForStatement", js.Any.fromFunction2(value))
+      inline def setForStatement(value: (/* node */ Extract[Node, `56`], /* state */ Write) => Unit): Self = StObject.set(x, "ForStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFunctionDeclaration(value: (/* node */ Extract[Node, `42`], /* state */ Write) => Unit): Self = StObject.set(x, "FunctionDeclaration", js.Any.fromFunction2(value))
+      inline def setFunctionDeclaration(value: (/* node */ Extract[Node, `42`], /* state */ Write) => Unit): Self = StObject.set(x, "FunctionDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFunctionExpression(value: (/* node */ Extract[Node, `57`], /* state */ Write) => Unit): Self = StObject.set(x, "FunctionExpression", js.Any.fromFunction2(value))
+      inline def setFunctionExpression(value: (/* node */ Extract[Node, `57`], /* state */ Write) => Unit): Self = StObject.set(x, "FunctionExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIdentifier(value: (/* node */ Extract[Node, `31`], /* state */ Write) => Unit): Self = StObject.set(x, "Identifier", js.Any.fromFunction2(value))
+      inline def setIdentifier(value: (/* node */ Extract[Node, `31`], /* state */ Write) => Unit): Self = StObject.set(x, "Identifier", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIfStatement(value: (/* node */ Extract[Node, `28`], /* state */ Write) => Unit): Self = StObject.set(x, "IfStatement", js.Any.fromFunction2(value))
+      inline def setIfStatement(value: (/* node */ Extract[Node, `28`], /* state */ Write) => Unit): Self = StObject.set(x, "IfStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImportDeclaration(value: (/* node */ Extract[Node, `66`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportDeclaration", js.Any.fromFunction2(value))
+      inline def setImportDeclaration(value: (/* node */ Extract[Node, `66`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImportDefaultSpecifier(value: (/* node */ Extract[Node, `4`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportDefaultSpecifier", js.Any.fromFunction2(value))
+      inline def setImportDefaultSpecifier(value: (/* node */ Extract[Node, `4`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportDefaultSpecifier", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImportExpression(value: (/* node */ Extract[Node, `64`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportExpression", js.Any.fromFunction2(value))
+      inline def setImportExpression(value: (/* node */ Extract[Node, `64`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImportNamespaceSpecifier(value: (/* node */ Extract[Node, `61`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportNamespaceSpecifier", js.Any.fromFunction2(value))
+      inline def setImportNamespaceSpecifier(value: (/* node */ Extract[Node, `61`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportNamespaceSpecifier", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImportSpecifier(value: (/* node */ Extract[Node, `36`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportSpecifier", js.Any.fromFunction2(value))
+      inline def setImportSpecifier(value: (/* node */ Extract[Node, `36`], /* state */ Write) => Unit): Self = StObject.set(x, "ImportSpecifier", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLabeledStatement(value: (/* node */ Extract[Node, `9`], /* state */ Write) => Unit): Self = StObject.set(x, "LabeledStatement", js.Any.fromFunction2(value))
+      inline def setLabeledStatement(value: (/* node */ Extract[Node, `9`], /* state */ Write) => Unit): Self = StObject.set(x, "LabeledStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLiteral(value: (/* node */ Extract[Node, `48`], /* state */ Write) => Unit): Self = StObject.set(x, "Literal", js.Any.fromFunction2(value))
+      inline def setLiteral(value: (/* node */ Extract[Node, `48`], /* state */ Write) => Unit): Self = StObject.set(x, "Literal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLogicalExpression(value: (/* node */ Extract[Node, `23`], /* state */ Write) => Unit): Self = StObject.set(x, "LogicalExpression", js.Any.fromFunction2(value))
+      inline def setLogicalExpression(value: (/* node */ Extract[Node, `23`], /* state */ Write) => Unit): Self = StObject.set(x, "LogicalExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMemberExpression(value: (/* node */ Extract[Node, `19`], /* state */ Write) => Unit): Self = StObject.set(x, "MemberExpression", js.Any.fromFunction2(value))
+      inline def setMemberExpression(value: (/* node */ Extract[Node, `19`], /* state */ Write) => Unit): Self = StObject.set(x, "MemberExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMetaProperty(value: (/* node */ Extract[Node, `27`], /* state */ Write) => Unit): Self = StObject.set(x, "MetaProperty", js.Any.fromFunction2(value))
+      inline def setMetaProperty(value: (/* node */ Extract[Node, `27`], /* state */ Write) => Unit): Self = StObject.set(x, "MetaProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMethodDefinition(value: (/* node */ Extract[Node, `47`], /* state */ Write) => Unit): Self = StObject.set(x, "MethodDefinition", js.Any.fromFunction2(value))
+      inline def setMethodDefinition(value: (/* node */ Extract[Node, `47`], /* state */ Write) => Unit): Self = StObject.set(x, "MethodDefinition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNewExpression(value: (/* node */ Extract[Node, `18`], /* state */ Write) => Unit): Self = StObject.set(x, "NewExpression", js.Any.fromFunction2(value))
+      inline def setNewExpression(value: (/* node */ Extract[Node, `18`], /* state */ Write) => Unit): Self = StObject.set(x, "NewExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setObjectExpression(value: (/* node */ Extract[Node, `39`], /* state */ Write) => Unit): Self = StObject.set(x, "ObjectExpression", js.Any.fromFunction2(value))
+      inline def setObjectExpression(value: (/* node */ Extract[Node, `39`], /* state */ Write) => Unit): Self = StObject.set(x, "ObjectExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setObjectPattern(value: (/* node */ Extract[Node, `62`], /* state */ Write) => Unit): Self = StObject.set(x, "ObjectPattern", js.Any.fromFunction2(value))
+      inline def setObjectPattern(value: (/* node */ Extract[Node, `62`], /* state */ Write) => Unit): Self = StObject.set(x, "ObjectPattern", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgram(value: (/* node */ Extract[Node, `49`], /* state */ Write) => Unit): Self = StObject.set(x, "Program", js.Any.fromFunction2(value))
+      inline def setProgram(value: (/* node */ Extract[Node, `49`], /* state */ Write) => Unit): Self = StObject.set(x, "Program", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProperty(value: (/* node */ Extract[Node, `45`], /* state */ Write) => Unit): Self = StObject.set(x, "Property", js.Any.fromFunction2(value))
+      inline def setProperty(value: (/* node */ Extract[Node, `45`], /* state */ Write) => Unit): Self = StObject.set(x, "Property", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRestElement(value: (/* node */ Extract[Node, `8`], /* state */ Write) => Unit): Self = StObject.set(x, "RestElement", js.Any.fromFunction2(value))
+      inline def setRestElement(value: (/* node */ Extract[Node, `8`], /* state */ Write) => Unit): Self = StObject.set(x, "RestElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReturnStatement(value: (/* node */ Extract[Node, `1`], /* state */ Write) => Unit): Self = StObject.set(x, "ReturnStatement", js.Any.fromFunction2(value))
+      inline def setReturnStatement(value: (/* node */ Extract[Node, `1`], /* state */ Write) => Unit): Self = StObject.set(x, "ReturnStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSequenceExpression(value: (/* node */ Extract[Node, `53`], /* state */ Write) => Unit): Self = StObject.set(x, "SequenceExpression", js.Any.fromFunction2(value))
+      inline def setSequenceExpression(value: (/* node */ Extract[Node, `53`], /* state */ Write) => Unit): Self = StObject.set(x, "SequenceExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSpreadElement(value: (/* node */ Extract[Node, `5`], /* state */ Write) => Unit): Self = StObject.set(x, "SpreadElement", js.Any.fromFunction2(value))
+      inline def setSpreadElement(value: (/* node */ Extract[Node, `5`], /* state */ Write) => Unit): Self = StObject.set(x, "SpreadElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuper(value: (/* node */ Extract[Node, `50`], /* state */ Write) => Unit): Self = StObject.set(x, "Super", js.Any.fromFunction2(value))
+      inline def setSuper(value: (/* node */ Extract[Node, `50`], /* state */ Write) => Unit): Self = StObject.set(x, "Super", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSwitchCase(value: (/* node */ Extract[Node, `16`], /* state */ Write) => Unit): Self = StObject.set(x, "SwitchCase", js.Any.fromFunction2(value))
+      inline def setSwitchCase(value: (/* node */ Extract[Node, `16`], /* state */ Write) => Unit): Self = StObject.set(x, "SwitchCase", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSwitchStatement(value: (/* node */ Extract[Node, `13`], /* state */ Write) => Unit): Self = StObject.set(x, "SwitchStatement", js.Any.fromFunction2(value))
+      inline def setSwitchStatement(value: (/* node */ Extract[Node, `13`], /* state */ Write) => Unit): Self = StObject.set(x, "SwitchStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTaggedTemplateExpression(value: (/* node */ Extract[Node, `24`], /* state */ Write) => Unit): Self = StObject.set(x, "TaggedTemplateExpression", js.Any.fromFunction2(value))
+      inline def setTaggedTemplateExpression(value: (/* node */ Extract[Node, `24`], /* state */ Write) => Unit): Self = StObject.set(x, "TaggedTemplateExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTemplateElement(value: (/* node */ Extract[Node, `58`], /* state */ Write) => Unit): Self = StObject.set(x, "TemplateElement", js.Any.fromFunction2(value))
+      inline def setTemplateElement(value: (/* node */ Extract[Node, `58`], /* state */ Write) => Unit): Self = StObject.set(x, "TemplateElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTemplateLiteral(value: (/* node */ Extract[Node, `25`], /* state */ Write) => Unit): Self = StObject.set(x, "TemplateLiteral", js.Any.fromFunction2(value))
+      inline def setTemplateLiteral(value: (/* node */ Extract[Node, `25`], /* state */ Write) => Unit): Self = StObject.set(x, "TemplateLiteral", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setThisExpression(value: (/* node */ Extract[Node, `65`], /* state */ Write) => Unit): Self = StObject.set(x, "ThisExpression", js.Any.fromFunction2(value))
+      inline def setThisExpression(value: (/* node */ Extract[Node, `65`], /* state */ Write) => Unit): Self = StObject.set(x, "ThisExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setThrowStatement(value: (/* node */ Extract[Node, `44`], /* state */ Write) => Unit): Self = StObject.set(x, "ThrowStatement", js.Any.fromFunction2(value))
+      inline def setThrowStatement(value: (/* node */ Extract[Node, `44`], /* state */ Write) => Unit): Self = StObject.set(x, "ThrowStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTryStatement(value: (/* node */ Extract[Node, `6`], /* state */ Write) => Unit): Self = StObject.set(x, "TryStatement", js.Any.fromFunction2(value))
+      inline def setTryStatement(value: (/* node */ Extract[Node, `6`], /* state */ Write) => Unit): Self = StObject.set(x, "TryStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnaryExpression(value: (/* node */ Extract[Node, `55`], /* state */ Write) => Unit): Self = StObject.set(x, "UnaryExpression", js.Any.fromFunction2(value))
+      inline def setUnaryExpression(value: (/* node */ Extract[Node, `55`], /* state */ Write) => Unit): Self = StObject.set(x, "UnaryExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateExpression(value: (/* node */ Extract[Node, `32`], /* state */ Write) => Unit): Self = StObject.set(x, "UpdateExpression", js.Any.fromFunction2(value))
+      inline def setUpdateExpression(value: (/* node */ Extract[Node, `32`], /* state */ Write) => Unit): Self = StObject.set(x, "UpdateExpression", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVariableDeclaration(value: (/* node */ Extract[Node, `22`], /* state */ Write) => Unit): Self = StObject.set(x, "VariableDeclaration", js.Any.fromFunction2(value))
+      inline def setVariableDeclaration(value: (/* node */ Extract[Node, `22`], /* state */ Write) => Unit): Self = StObject.set(x, "VariableDeclaration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVariableDeclarator(value: (/* node */ Extract[Node, `40`], /* state */ Write) => Unit): Self = StObject.set(x, "VariableDeclarator", js.Any.fromFunction2(value))
+      inline def setVariableDeclarator(value: (/* node */ Extract[Node, `40`], /* state */ Write) => Unit): Self = StObject.set(x, "VariableDeclarator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWhileStatement(value: (/* node */ Extract[Node, `11`], /* state */ Write) => Unit): Self = StObject.set(x, "WhileStatement", js.Any.fromFunction2(value))
+      inline def setWhileStatement(value: (/* node */ Extract[Node, `11`], /* state */ Write) => Unit): Self = StObject.set(x, "WhileStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWithStatement(value: (/* node */ Extract[Node, `30`], /* state */ Write) => Unit): Self = StObject.set(x, "WithStatement", js.Any.fromFunction2(value))
+      inline def setWithStatement(value: (/* node */ Extract[Node, `30`], /* state */ Write) => Unit): Self = StObject.set(x, "WithStatement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setYieldExpression(value: (/* node */ Extract[Node, `2`], /* state */ Write) => Unit): Self = StObject.set(x, "YieldExpression", js.Any.fromFunction2(value))
+      inline def setYieldExpression(value: (/* node */ Extract[Node, `2`], /* state */ Write) => Unit): Self = StObject.set(x, "YieldExpression", js.Any.fromFunction2(value))
     }
   }
   
@@ -634,50 +559,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setGenerator(value: js.Object): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+      inline def setGenerator(value: js.Object): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
+      inline def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setLineEnd(value: String): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
+      inline def setLineEnd(value: String): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
+      inline def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: js.Any): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: js.Any): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setStartingIndentLevel(value: Double): Self = StObject.set(x, "startingIndentLevel", value.asInstanceOf[js.Any])
+      inline def setStartingIndentLevel(value: Double): Self = StObject.set(x, "startingIndentLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingIndentLevelUndefined: Self = StObject.set(x, "startingIndentLevel", js.undefined)
+      inline def setStartingIndentLevelUndefined: Self = StObject.set(x, "startingIndentLevel", js.undefined)
     }
   }
 }

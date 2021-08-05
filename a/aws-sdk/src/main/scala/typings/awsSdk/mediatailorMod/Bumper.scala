@@ -18,25 +18,19 @@ trait Bumper extends StObject {
 }
 object Bumper {
   
-  @scala.inline
-  def apply(): Bumper = {
+  inline def apply(): Bumper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bumper]
   }
   
-  @scala.inline
-  implicit class BumperMutableBuilder[Self <: Bumper] (val x: Self) extends AnyVal {
+  extension [Self <: Bumper](x: Self) {
     
-    @scala.inline
-    def setEndUrl(value: string): Self = StObject.set(x, "EndUrl", value.asInstanceOf[js.Any])
+    inline def setEndUrl(value: string): Self = StObject.set(x, "EndUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUrlUndefined: Self = StObject.set(x, "EndUrl", js.undefined)
+    inline def setEndUrlUndefined: Self = StObject.set(x, "EndUrl", js.undefined)
     
-    @scala.inline
-    def setStartUrl(value: string): Self = StObject.set(x, "StartUrl", value.asInstanceOf[js.Any])
+    inline def setStartUrl(value: string): Self = StObject.set(x, "StartUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUrlUndefined: Self = StObject.set(x, "StartUrl", js.undefined)
+    inline def setStartUrlUndefined: Self = StObject.set(x, "StartUrl", js.undefined)
   }
 }

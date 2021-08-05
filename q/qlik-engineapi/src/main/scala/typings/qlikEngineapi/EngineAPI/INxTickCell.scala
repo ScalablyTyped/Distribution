@@ -26,22 +26,17 @@ trait INxTickCell extends StObject {
 }
 object INxTickCell {
   
-  @scala.inline
-  def apply(qEnd: Double, qStart: Double, qText: String): INxTickCell = {
+  inline def apply(qEnd: Double, qStart: Double, qText: String): INxTickCell = {
     val __obj = js.Dynamic.literal(qEnd = qEnd.asInstanceOf[js.Any], qStart = qStart.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxTickCell]
   }
   
-  @scala.inline
-  implicit class INxTickCellMutableBuilder[Self <: INxTickCell] (val x: Self) extends AnyVal {
+  extension [Self <: INxTickCell](x: Self) {
     
-    @scala.inline
-    def setQEnd(value: Double): Self = StObject.set(x, "qEnd", value.asInstanceOf[js.Any])
+    inline def setQEnd(value: Double): Self = StObject.set(x, "qEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStart(value: Double): Self = StObject.set(x, "qStart", value.asInstanceOf[js.Any])
+    inline def setQStart(value: Double): Self = StObject.set(x, "qStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }
 }

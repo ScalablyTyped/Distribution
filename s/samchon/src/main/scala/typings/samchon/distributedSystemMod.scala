@@ -29,7 +29,7 @@ object distributedSystemMod {
     /**
       * @hidden
       */
-    var _Compute_average_elapsed_time: js.Any = js.native
+    /* private */ var _Compute_average_elapsed_time: js.Any = js.native
     
     /**
       * Get manager of this object.

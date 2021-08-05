@@ -16,8 +16,7 @@ object versionUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isGreaterOrEqual(version: String, targetVersion: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isGreaterOrEqual")(version.asInstanceOf[js.Any], targetVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isGreaterOrEqual(version: String, targetVersion: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isGreaterOrEqual")(version.asInstanceOf[js.Any], targetVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   type Version = js.Tuple3[Double, Double, Double]

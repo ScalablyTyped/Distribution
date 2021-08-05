@@ -29,32 +29,24 @@ object tabContainerMod {
   }
   object TabContainerProps {
     
-    @scala.inline
-    def apply(): TabContainerProps = {
+    inline def apply(): TabContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabContainerProps]
     }
     
-    @scala.inline
-    implicit class TabContainerPropsMutableBuilder[Self <: TabContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabContainerProps](x: Self) {
       
-      @scala.inline
-      def setActiveKey(value: js.Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: js.Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
+      inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveKey(value: js.Any): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveKey(value: js.Any): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
+      inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
-      @scala.inline
-      def setGenerateChildId(value: (/* eventKey */ js.Any, /* type */ js.Any) => String): Self = StObject.set(x, "generateChildId", js.Any.fromFunction2(value))
+      inline def setGenerateChildId(value: (/* eventKey */ js.Any, /* type */ js.Any) => String): Self = StObject.set(x, "generateChildId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateChildIdUndefined: Self = StObject.set(x, "generateChildId", js.undefined)
+      inline def setGenerateChildIdUndefined: Self = StObject.set(x, "generateChildId", js.undefined)
     }
   }
 }

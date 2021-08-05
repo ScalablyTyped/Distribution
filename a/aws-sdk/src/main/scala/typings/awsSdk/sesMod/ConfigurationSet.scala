@@ -13,16 +13,13 @@ trait ConfigurationSet extends StObject {
 }
 object ConfigurationSet {
   
-  @scala.inline
-  def apply(Name: ConfigurationSetName): ConfigurationSet = {
+  inline def apply(Name: ConfigurationSetName): ConfigurationSet = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationSet]
   }
   
-  @scala.inline
-  implicit class ConfigurationSetMutableBuilder[Self <: ConfigurationSet] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationSet](x: Self) {
     
-    @scala.inline
-    def setName(value: ConfigurationSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ConfigurationSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

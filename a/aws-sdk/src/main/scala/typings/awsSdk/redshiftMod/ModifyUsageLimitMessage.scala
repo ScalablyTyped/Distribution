@@ -23,28 +23,21 @@ trait ModifyUsageLimitMessage extends StObject {
 }
 object ModifyUsageLimitMessage {
   
-  @scala.inline
-  def apply(UsageLimitId: String): ModifyUsageLimitMessage = {
+  inline def apply(UsageLimitId: String): ModifyUsageLimitMessage = {
     val __obj = js.Dynamic.literal(UsageLimitId = UsageLimitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyUsageLimitMessage]
   }
   
-  @scala.inline
-  implicit class ModifyUsageLimitMessageMutableBuilder[Self <: ModifyUsageLimitMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyUsageLimitMessage](x: Self) {
     
-    @scala.inline
-    def setAmount(value: LongOptional): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: LongOptional): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
     
-    @scala.inline
-    def setBreachAction(value: UsageLimitBreachAction): Self = StObject.set(x, "BreachAction", value.asInstanceOf[js.Any])
+    inline def setBreachAction(value: UsageLimitBreachAction): Self = StObject.set(x, "BreachAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreachActionUndefined: Self = StObject.set(x, "BreachAction", js.undefined)
+    inline def setBreachActionUndefined: Self = StObject.set(x, "BreachAction", js.undefined)
     
-    @scala.inline
-    def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
+    inline def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
   }
 }

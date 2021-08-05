@@ -27,25 +27,19 @@ trait SchemaGoogleCloudDialogflowV2VoiceSelectionParams extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2VoiceSelectionParams {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2VoiceSelectionParams = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2VoiceSelectionParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2VoiceSelectionParams]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2VoiceSelectionParamsMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2VoiceSelectionParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2VoiceSelectionParams](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSsmlGender(value: String): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
+    inline def setSsmlGender(value: String): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
+    inline def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
   }
 }

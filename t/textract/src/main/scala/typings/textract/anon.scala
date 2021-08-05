@@ -31,17 +31,14 @@ object anon {
   }
   object Cmd {
     
-    @scala.inline
-    def apply(cmd: String): Cmd = {
+    inline def apply(cmd: String): Cmd = {
       val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cmd]
     }
     
-    @scala.inline
-    implicit class CmdMutableBuilder[Self <: Cmd] (val x: Self) extends AnyVal {
+    extension [Self <: Cmd](x: Self) {
       
-      @scala.inline
-      def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+      inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,74 +76,52 @@ object anon {
   }
   object Crop {
     
-    @scala.inline
-    def apply(): Crop = {
+    inline def apply(): Crop = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Crop]
     }
     
-    @scala.inline
-    implicit class CropMutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
+    extension [Self <: Crop](x: Self) {
       
-      @scala.inline
-      def setCrop(value: H): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: H): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: `UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: `UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setEol(value: unix | dos | mac): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: unix | dos | mac): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setFirstPage(value: Double): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
+      inline def setFirstPage(value: Double): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
+      inline def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
       
-      @scala.inline
-      def setLastPage(value: Double): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
+      inline def setLastPage(value: Double): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
+      inline def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
       
-      @scala.inline
-      def setLayout(value: layout | raw | htmlmeta): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: layout | raw | htmlmeta): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
+      inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
+      inline def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
       
-      @scala.inline
-      def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
       
-      @scala.inline
-      def setSplitPages(value: Boolean): Self = StObject.set(x, "splitPages", value.asInstanceOf[js.Any])
+      inline def setSplitPages(value: Boolean): Self = StObject.set(x, "splitPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitPagesUndefined: Self = StObject.set(x, "splitPages", js.undefined)
+      inline def setSplitPagesUndefined: Self = StObject.set(x, "splitPages", js.undefined)
       
-      @scala.inline
-      def setUserPassword(value: String): Self = StObject.set(x, "userPassword", value.asInstanceOf[js.Any])
+      inline def setUserPassword(value: String): Self = StObject.set(x, "userPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPasswordUndefined: Self = StObject.set(x, "userPassword", js.undefined)
+      inline def setUserPasswordUndefined: Self = StObject.set(x, "userPassword", js.undefined)
     }
   }
   
@@ -162,26 +137,20 @@ object anon {
   }
   object H {
     
-    @scala.inline
-    def apply(h: Double, w: Double, x: Double, y: Double): H = {
+    inline def apply(h: Double, w: Double, x: Double, y: Double): H = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[H]
     }
     
-    @scala.inline
-    implicit class HMutableBuilder[Self <: H] (val x: Self) extends AnyVal {
+    extension [Self <: H](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,17 +163,14 @@ object anon {
   }
   object Lang {
     
-    @scala.inline
-    def apply(lang: String): Lang = {
+    inline def apply(lang: String): Lang = {
       val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lang]
     }
     
-    @scala.inline
-    implicit class LangMutableBuilder[Self <: Lang] (val x: Self) extends AnyVal {
+    extension [Self <: Lang](x: Self) {
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlGenerateTableRefs extends StObject
 object XlGenerateTableRefs {
   
-  @scala.inline
-  def xlGenerateTableRefA1: `0` = 0.asInstanceOf[`0`]
+  inline def xlGenerateTableRefA1: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlGenerateTableRefStruct: `1` = 1.asInstanceOf[`1`]
+  inline def xlGenerateTableRefStruct: `1` = 1.asInstanceOf[`1`]
 }

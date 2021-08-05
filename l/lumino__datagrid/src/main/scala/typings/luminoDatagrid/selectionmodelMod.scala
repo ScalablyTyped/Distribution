@@ -25,9 +25,9 @@ object selectionmodelMod {
       */
     def this(options: IOptions) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _selectionMode: js.Any = js.native
+    /* private */ var _selectionMode: js.Any = js.native
     
     /**
       * A signal emitted when the selection model has changed.
@@ -185,14 +185,11 @@ object selectionmodelMod {
     trait ClearMode extends StObject
     object ClearMode {
       
-      @scala.inline
-      def all: typings.luminoDatagrid.luminoDatagridStrings.all = "all".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.all]
+      inline def all: typings.luminoDatagrid.luminoDatagridStrings.all = "all".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.all]
       
-      @scala.inline
-      def current: typings.luminoDatagrid.luminoDatagridStrings.current = "current".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.current]
+      inline def current: typings.luminoDatagrid.luminoDatagridStrings.current = "current".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.current]
       
-      @scala.inline
-      def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
+      inline def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
     }
     
     /**
@@ -208,20 +205,15 @@ object selectionmodelMod {
     trait CursorMoveDirection extends StObject
     object CursorMoveDirection {
       
-      @scala.inline
-      def down: typings.luminoDatagrid.luminoDatagridStrings.down = "down".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.down]
+      inline def down: typings.luminoDatagrid.luminoDatagridStrings.down = "down".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.down]
       
-      @scala.inline
-      def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
+      inline def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
       
-      @scala.inline
-      def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
+      inline def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
       
-      @scala.inline
-      def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
+      inline def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
       
-      @scala.inline
-      def up: typings.luminoDatagrid.luminoDatagridStrings.up = "up".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.up]
+      inline def up: typings.luminoDatagrid.luminoDatagridStrings.up = "up".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.up]
     }
     
     /**
@@ -243,23 +235,18 @@ object selectionmodelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(dataModel: DataModel): IOptions = {
+      inline def apply(dataModel: DataModel): IOptions = {
         val __obj = js.Dynamic.literal(dataModel = dataModel.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setDataModel(value: DataModel): Self = StObject.set(x, "dataModel", value.asInstanceOf[js.Any])
+        inline def setDataModel(value: DataModel): Self = StObject.set(x, "dataModel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+        inline def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+        inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       }
     }
     
@@ -317,8 +304,7 @@ object selectionmodelMod {
     }
     object SelectArgs {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         c1: Double,
         c2: Double,
         clear: ClearMode,
@@ -331,29 +317,21 @@ object selectionmodelMod {
         __obj.asInstanceOf[SelectArgs]
       }
       
-      @scala.inline
-      implicit class SelectArgsMutableBuilder[Self <: SelectArgs] (val x: Self) extends AnyVal {
+      extension [Self <: SelectArgs](x: Self) {
         
-        @scala.inline
-        def setC1(value: Double): Self = StObject.set(x, "c1", value.asInstanceOf[js.Any])
+        inline def setC1(value: Double): Self = StObject.set(x, "c1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setC2(value: Double): Self = StObject.set(x, "c2", value.asInstanceOf[js.Any])
+        inline def setC2(value: Double): Self = StObject.set(x, "c2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClear(value: ClearMode): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+        inline def setClear(value: ClearMode): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorColumn(value: Double): Self = StObject.set(x, "cursorColumn", value.asInstanceOf[js.Any])
+        inline def setCursorColumn(value: Double): Self = StObject.set(x, "cursorColumn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorRow(value: Double): Self = StObject.set(x, "cursorRow", value.asInstanceOf[js.Any])
+        inline def setCursorRow(value: Double): Self = StObject.set(x, "cursorRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+        inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+        inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
       }
     }
     
@@ -392,26 +370,20 @@ object selectionmodelMod {
     }
     object Selection {
       
-      @scala.inline
-      def apply(c1: Double, c2: Double, r1: Double, r2: Double): Selection = {
+      inline def apply(c1: Double, c2: Double, r1: Double, r2: Double): Selection = {
         val __obj = js.Dynamic.literal(c1 = c1.asInstanceOf[js.Any], c2 = c2.asInstanceOf[js.Any], r1 = r1.asInstanceOf[js.Any], r2 = r2.asInstanceOf[js.Any])
         __obj.asInstanceOf[Selection]
       }
       
-      @scala.inline
-      implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+      extension [Self <: Selection](x: Self) {
         
-        @scala.inline
-        def setC1(value: Double): Self = StObject.set(x, "c1", value.asInstanceOf[js.Any])
+        inline def setC1(value: Double): Self = StObject.set(x, "c1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setC2(value: Double): Self = StObject.set(x, "c2", value.asInstanceOf[js.Any])
+        inline def setC2(value: Double): Self = StObject.set(x, "c2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+        inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+        inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
       }
     }
     
@@ -426,14 +398,11 @@ object selectionmodelMod {
     trait SelectionMode extends StObject
     object SelectionMode {
       
-      @scala.inline
-      def cell: typings.luminoDatagrid.luminoDatagridStrings.cell = "cell".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.cell]
+      inline def cell: typings.luminoDatagrid.luminoDatagridStrings.cell = "cell".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.cell]
       
-      @scala.inline
-      def column: typings.luminoDatagrid.luminoDatagridStrings.column = "column".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.column]
+      inline def column: typings.luminoDatagrid.luminoDatagridStrings.column = "column".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.column]
       
-      @scala.inline
-      def row: typings.luminoDatagrid.luminoDatagridStrings.row = "row".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.row]
+      inline def row: typings.luminoDatagrid.luminoDatagridStrings.row = "row".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.row]
     }
   }
 }

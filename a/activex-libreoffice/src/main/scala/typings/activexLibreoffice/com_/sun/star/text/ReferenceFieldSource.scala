@@ -21,19 +21,14 @@ object ReferenceFieldSource {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BOOKMARK: `2` = 2.asInstanceOf[`2`]
+    inline def BOOKMARK: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def ENDNOTE: `4` = 4.asInstanceOf[`4`]
+    inline def ENDNOTE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def FOOTNOTE: `3` = 3.asInstanceOf[`3`]
+    inline def FOOTNOTE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def REFERENCE_MARK: `0` = 0.asInstanceOf[`0`]
+    inline def REFERENCE_MARK: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SEQUENCE_FIELD: `1` = 1.asInstanceOf[`1`]
+    inline def SEQUENCE_FIELD: `1` = 1.asInstanceOf[`1`]
   }
 }

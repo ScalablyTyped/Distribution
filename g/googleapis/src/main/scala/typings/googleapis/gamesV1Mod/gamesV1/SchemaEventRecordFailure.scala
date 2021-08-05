@@ -30,31 +30,23 @@ trait SchemaEventRecordFailure extends StObject {
 }
 object SchemaEventRecordFailure {
   
-  @scala.inline
-  def apply(): SchemaEventRecordFailure = {
+  inline def apply(): SchemaEventRecordFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventRecordFailure]
   }
   
-  @scala.inline
-  implicit class SchemaEventRecordFailureMutableBuilder[Self <: SchemaEventRecordFailure] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventRecordFailure](x: Self) {
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setFailureCause(value: String): Self = StObject.set(x, "failureCause", value.asInstanceOf[js.Any])
+    inline def setFailureCause(value: String): Self = StObject.set(x, "failureCause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCauseUndefined: Self = StObject.set(x, "failureCause", js.undefined)
+    inline def setFailureCauseUndefined: Self = StObject.set(x, "failureCause", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ trait Targeting
 }
 object Targeting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adSchedules: () => AdWordsSelector[AdSchedule],
     audiences: () => AdWordsSelector[SearchCampaignAudience],
     excludedAudiences: () => AdWordsSelector[SearchCampaignExcludedAudience],
@@ -30,13 +29,10 @@ object Targeting {
     __obj.asInstanceOf[Targeting]
   }
   
-  @scala.inline
-  implicit class TargetingMutableBuilder[Self <: Targeting] (val x: Self) extends AnyVal {
+  extension [Self <: Targeting](x: Self) {
     
-    @scala.inline
-    def setAudiences(value: () => AdWordsSelector[SearchCampaignAudience]): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
+    inline def setAudiences(value: () => AdWordsSelector[SearchCampaignAudience]): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludedAudiences(value: () => AdWordsSelector[SearchCampaignExcludedAudience]): Self = StObject.set(x, "excludedAudiences", js.Any.fromFunction0(value))
+    inline def setExcludedAudiences(value: () => AdWordsSelector[SearchCampaignExcludedAudience]): Self = StObject.set(x, "excludedAudiences", js.Any.fromFunction0(value))
   }
 }

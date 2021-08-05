@@ -12,16 +12,13 @@ trait Print3DDevice extends StObject {
 }
 object Print3DDevice {
   
-  @scala.inline
-  def apply(printSchema: PrintSchema): Print3DDevice = {
+  inline def apply(printSchema: PrintSchema): Print3DDevice = {
     val __obj = js.Dynamic.literal(printSchema = printSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[Print3DDevice]
   }
   
-  @scala.inline
-  implicit class Print3DDeviceMutableBuilder[Self <: Print3DDevice] (val x: Self) extends AnyVal {
+  extension [Self <: Print3DDevice](x: Self) {
     
-    @scala.inline
-    def setPrintSchema(value: PrintSchema): Self = StObject.set(x, "printSchema", value.asInstanceOf[js.Any])
+    inline def setPrintSchema(value: PrintSchema): Self = StObject.set(x, "printSchema", value.asInstanceOf[js.Any])
   }
 }

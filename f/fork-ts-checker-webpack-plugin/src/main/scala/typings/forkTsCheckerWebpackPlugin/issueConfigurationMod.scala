@@ -13,12 +13,10 @@ object issueConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createIssueConfiguration(
+  inline def createIssueConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): IssueConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIssueConfiguration")(compiler.asInstanceOf[js.Any]).asInstanceOf[IssueConfiguration]
-  @scala.inline
-  def createIssueConfiguration(
+  inline def createIssueConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     options: IssueOptions
   ): IssueConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("createIssueConfiguration")(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IssueConfiguration]
@@ -31,17 +29,14 @@ object issueConfigurationMod {
   }
   object IssueConfiguration {
     
-    @scala.inline
-    def apply(predicate: /* issue */ Issue => Boolean): IssueConfiguration = {
+    inline def apply(predicate: /* issue */ Issue => Boolean): IssueConfiguration = {
       val __obj = js.Dynamic.literal(predicate = js.Any.fromFunction1(predicate))
       __obj.asInstanceOf[IssueConfiguration]
     }
     
-    @scala.inline
-    implicit class IssueConfigurationMutableBuilder[Self <: IssueConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: IssueConfiguration](x: Self) {
       
-      @scala.inline
-      def setPredicate(value: /* issue */ Issue => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: /* issue */ Issue => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
     }
   }
 }

@@ -10,6 +10,5 @@ object cssMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escape(ident: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(ident.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(ident: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(ident.asInstanceOf[js.Any]).asInstanceOf[String]
 }

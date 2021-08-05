@@ -51,44 +51,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAsset(value: String): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+      inline def setAsset(value: String): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+      inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
       
-      @scala.inline
-      def setDeleteOriginalAssets(value: Boolean): Self = StObject.set(x, "deleteOriginalAssets", value.asInstanceOf[js.Any])
+      inline def setDeleteOriginalAssets(value: Boolean): Self = StObject.set(x, "deleteOriginalAssets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteOriginalAssetsUndefined: Self = StObject.set(x, "deleteOriginalAssets", js.undefined)
+      inline def setDeleteOriginalAssetsUndefined: Self = StObject.set(x, "deleteOriginalAssets", js.undefined)
       
-      @scala.inline
-      def setMinRatio(value: Double): Self = StObject.set(x, "minRatio", value.asInstanceOf[js.Any])
+      inline def setMinRatio(value: Double): Self = StObject.set(x, "minRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinRatioUndefined: Self = StObject.set(x, "minRatio", js.undefined)
+      inline def setMinRatioUndefined: Self = StObject.set(x, "minRatio", js.undefined)
       
-      @scala.inline
-      def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

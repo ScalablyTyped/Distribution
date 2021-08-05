@@ -10,16 +10,13 @@ trait DeviceStateString extends StObject {
 }
 object DeviceStateString {
   
-  @scala.inline
-  def apply(deviceState: String): DeviceStateString = {
+  inline def apply(deviceState: String): DeviceStateString = {
     val __obj = js.Dynamic.literal(deviceState = deviceState.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceStateString]
   }
   
-  @scala.inline
-  implicit class DeviceStateStringMutableBuilder[Self <: DeviceStateString] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceStateString](x: Self) {
     
-    @scala.inline
-    def setDeviceState(value: String): Self = StObject.set(x, "deviceState", value.asInstanceOf[js.Any])
+    inline def setDeviceState(value: String): Self = StObject.set(x, "deviceState", value.asInstanceOf[js.Any])
   }
 }

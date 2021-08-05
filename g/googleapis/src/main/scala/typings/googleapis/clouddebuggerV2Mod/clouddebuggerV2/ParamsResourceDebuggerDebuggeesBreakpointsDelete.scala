@@ -35,37 +35,27 @@ trait ParamsResourceDebuggerDebuggeesBreakpointsDelete
 }
 object ParamsResourceDebuggerDebuggeesBreakpointsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceDebuggerDebuggeesBreakpointsDelete = {
+  inline def apply(): ParamsResourceDebuggerDebuggeesBreakpointsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDebuggerDebuggeesBreakpointsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDebuggerDebuggeesBreakpointsDeleteMutableBuilder[Self <: ParamsResourceDebuggerDebuggeesBreakpointsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDebuggerDebuggeesBreakpointsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBreakpointId(value: String): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
+    inline def setBreakpointId(value: String): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointIdUndefined: Self = StObject.set(x, "breakpointId", js.undefined)
+    inline def setBreakpointIdUndefined: Self = StObject.set(x, "breakpointId", js.undefined)
     
-    @scala.inline
-    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
+    inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
+    inline def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
     
-    @scala.inline
-    def setDebuggeeId(value: String): Self = StObject.set(x, "debuggeeId", value.asInstanceOf[js.Any])
+    inline def setDebuggeeId(value: String): Self = StObject.set(x, "debuggeeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggeeIdUndefined: Self = StObject.set(x, "debuggeeId", js.undefined)
+    inline def setDebuggeeIdUndefined: Self = StObject.set(x, "debuggeeId", js.undefined)
   }
 }

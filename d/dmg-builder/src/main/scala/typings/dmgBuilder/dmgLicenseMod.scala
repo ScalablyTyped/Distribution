@@ -11,6 +11,5 @@ object dmgLicenseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addLicenseToDmg(packager: PlatformPackager[js.Any], dmgPath: String): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("addLicenseToDmg")(packager.asInstanceOf[js.Any], dmgPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def addLicenseToDmg(packager: PlatformPackager[js.Any], dmgPath: String): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("addLicenseToDmg")(packager.asInstanceOf[js.Any], dmgPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
 }

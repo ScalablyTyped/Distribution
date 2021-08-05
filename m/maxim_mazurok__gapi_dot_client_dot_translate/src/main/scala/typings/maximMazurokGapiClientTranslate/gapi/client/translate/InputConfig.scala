@@ -24,25 +24,19 @@ trait InputConfig extends StObject {
 }
 object InputConfig {
   
-  @scala.inline
-  def apply(): InputConfig = {
+  inline def apply(): InputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputConfig]
   }
   
-  @scala.inline
-  implicit class InputConfigMutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InputConfig](x: Self) {
     
-    @scala.inline
-    def setGcsSource(value: GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

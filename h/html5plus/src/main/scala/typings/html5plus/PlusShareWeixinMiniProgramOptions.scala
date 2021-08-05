@@ -49,37 +49,27 @@ trait PlusShareWeixinMiniProgramOptions extends StObject {
 }
 object PlusShareWeixinMiniProgramOptions {
   
-  @scala.inline
-  def apply(): PlusShareWeixinMiniProgramOptions = {
+  inline def apply(): PlusShareWeixinMiniProgramOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusShareWeixinMiniProgramOptions]
   }
   
-  @scala.inline
-  implicit class PlusShareWeixinMiniProgramOptionsMutableBuilder[Self <: PlusShareWeixinMiniProgramOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusShareWeixinMiniProgramOptions](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+    inline def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+    inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

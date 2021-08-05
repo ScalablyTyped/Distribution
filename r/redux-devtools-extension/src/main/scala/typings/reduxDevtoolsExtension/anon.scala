@@ -31,62 +31,44 @@ object anon {
   }
   object Date {
     
-    @scala.inline
-    def apply(): Date = {
+    inline def apply(): Date = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFunction(value: Boolean | js.Function): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Boolean | js.Function): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setMap(value: Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setRegex(value: Boolean): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: Boolean): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: Boolean): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Boolean): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setUndefined(value: Boolean): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+      inline def setUndefined(value: Boolean): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndefinedUndefined: Self = StObject.set(x, "undefined", js.undefined)
+      inline def setUndefinedUndefined: Self = StObject.set(x, "undefined", js.undefined)
     }
   }
   
@@ -144,74 +126,52 @@ object anon {
   }
   object Dispatch {
     
-    @scala.inline
-    def apply(): Dispatch = {
+    inline def apply(): Dispatch = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dispatch]
     }
     
-    @scala.inline
-    implicit class DispatchMutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
+    extension [Self <: Dispatch](x: Self) {
       
-      @scala.inline
-      def setDispatch(value: Boolean): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Boolean): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
+      inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      @scala.inline
-      def setExport(value: Boolean | custom): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+      inline def setExport(value: Boolean | custom): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
+      inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
       
-      @scala.inline
-      def setImport(value: Boolean | custom): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+      inline def setImport(value: Boolean | custom): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
+      inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
       
-      @scala.inline
-      def setJump(value: Boolean): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
+      inline def setJump(value: Boolean): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
+      inline def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
       
-      @scala.inline
-      def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+      inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+      inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
       
-      @scala.inline
-      def setPause(value: Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
       
-      @scala.inline
-      def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+      inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+      inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
       
-      @scala.inline
-      def setReorder(value: Boolean): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
+      inline def setReorder(value: Boolean): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
+      inline def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     }
   }
   

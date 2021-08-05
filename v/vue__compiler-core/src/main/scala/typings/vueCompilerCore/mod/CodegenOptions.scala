@@ -64,76 +64,53 @@ trait CodegenOptions extends StObject {
 }
 object CodegenOptions {
   
-  @scala.inline
-  def apply(): CodegenOptions = {
+  inline def apply(): CodegenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodegenOptions]
   }
   
-  @scala.inline
-  implicit class CodegenOptionsMutableBuilder[Self <: CodegenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CodegenOptions](x: Self) {
     
-    @scala.inline
-    def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
+    inline def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingMetadataUndefined: Self = StObject.set(x, "bindingMetadata", js.undefined)
+    inline def setBindingMetadataUndefined: Self = StObject.set(x, "bindingMetadata", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOptimizeImports(value: Boolean): Self = StObject.set(x, "optimizeImports", value.asInstanceOf[js.Any])
+    inline def setOptimizeImports(value: Boolean): Self = StObject.set(x, "optimizeImports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizeImportsUndefined: Self = StObject.set(x, "optimizeImports", js.undefined)
+    inline def setOptimizeImportsUndefined: Self = StObject.set(x, "optimizeImports", js.undefined)
     
-    @scala.inline
-    def setPrefixIdentifiers(value: Boolean): Self = StObject.set(x, "prefixIdentifiers", value.asInstanceOf[js.Any])
+    inline def setPrefixIdentifiers(value: Boolean): Self = StObject.set(x, "prefixIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixIdentifiersUndefined: Self = StObject.set(x, "prefixIdentifiers", js.undefined)
+    inline def setPrefixIdentifiersUndefined: Self = StObject.set(x, "prefixIdentifiers", js.undefined)
     
-    @scala.inline
-    def setRuntimeGlobalName(value: String): Self = StObject.set(x, "runtimeGlobalName", value.asInstanceOf[js.Any])
+    inline def setRuntimeGlobalName(value: String): Self = StObject.set(x, "runtimeGlobalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeGlobalNameUndefined: Self = StObject.set(x, "runtimeGlobalName", js.undefined)
+    inline def setRuntimeGlobalNameUndefined: Self = StObject.set(x, "runtimeGlobalName", js.undefined)
     
-    @scala.inline
-    def setRuntimeModuleName(value: String): Self = StObject.set(x, "runtimeModuleName", value.asInstanceOf[js.Any])
+    inline def setRuntimeModuleName(value: String): Self = StObject.set(x, "runtimeModuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeModuleNameUndefined: Self = StObject.set(x, "runtimeModuleName", js.undefined)
+    inline def setRuntimeModuleNameUndefined: Self = StObject.set(x, "runtimeModuleName", js.undefined)
     
-    @scala.inline
-    def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
+    inline def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeIdNull: Self = StObject.set(x, "scopeId", null)
+    inline def setScopeIdNull: Self = StObject.set(x, "scopeId", null)
     
-    @scala.inline
-    def setScopeIdUndefined: Self = StObject.set(x, "scopeId", js.undefined)
+    inline def setScopeIdUndefined: Self = StObject.set(x, "scopeId", js.undefined)
     
-    @scala.inline
-    def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+    inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+    inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     
-    @scala.inline
-    def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+    inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
+    inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
   }
 }

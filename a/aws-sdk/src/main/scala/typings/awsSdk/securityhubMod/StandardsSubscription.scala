@@ -28,8 +28,7 @@ trait StandardsSubscription extends StObject {
 }
 object StandardsSubscription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     StandardsArn: NonEmptyString,
     StandardsInput: StandardsInputParameterMap,
     StandardsStatus: StandardsStatus,
@@ -39,19 +38,14 @@ object StandardsSubscription {
     __obj.asInstanceOf[StandardsSubscription]
   }
   
-  @scala.inline
-  implicit class StandardsSubscriptionMutableBuilder[Self <: StandardsSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: StandardsSubscription](x: Self) {
     
-    @scala.inline
-    def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
+    inline def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsInput(value: StandardsInputParameterMap): Self = StObject.set(x, "StandardsInput", value.asInstanceOf[js.Any])
+    inline def setStandardsInput(value: StandardsInputParameterMap): Self = StObject.set(x, "StandardsInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsStatus(value: StandardsStatus): Self = StObject.set(x, "StandardsStatus", value.asInstanceOf[js.Any])
+    inline def setStandardsStatus(value: StandardsStatus): Self = StObject.set(x, "StandardsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "StandardsSubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setStandardsSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "StandardsSubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ trait DeleteScheduledActionRequest extends StObject {
 }
 object DeleteScheduledActionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
     ScheduledActionName: ResourceIdMaxLen1600,
@@ -39,19 +38,14 @@ object DeleteScheduledActionRequest {
     __obj.asInstanceOf[DeleteScheduledActionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteScheduledActionRequestMutableBuilder[Self <: DeleteScheduledActionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScheduledActionRequest](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionName(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
+    inline def setScheduledActionName(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
   }
 }

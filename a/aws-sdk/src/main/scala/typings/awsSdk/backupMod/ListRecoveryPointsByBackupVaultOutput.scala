@@ -18,28 +18,21 @@ trait ListRecoveryPointsByBackupVaultOutput extends StObject {
 }
 object ListRecoveryPointsByBackupVaultOutput {
   
-  @scala.inline
-  def apply(): ListRecoveryPointsByBackupVaultOutput = {
+  inline def apply(): ListRecoveryPointsByBackupVaultOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRecoveryPointsByBackupVaultOutput]
   }
   
-  @scala.inline
-  implicit class ListRecoveryPointsByBackupVaultOutputMutableBuilder[Self <: ListRecoveryPointsByBackupVaultOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecoveryPointsByBackupVaultOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRecoveryPoints(value: RecoveryPointByBackupVaultList): Self = StObject.set(x, "RecoveryPoints", value.asInstanceOf[js.Any])
+    inline def setRecoveryPoints(value: RecoveryPointByBackupVaultList): Self = StObject.set(x, "RecoveryPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryPointsUndefined: Self = StObject.set(x, "RecoveryPoints", js.undefined)
+    inline def setRecoveryPointsUndefined: Self = StObject.set(x, "RecoveryPoints", js.undefined)
     
-    @scala.inline
-    def setRecoveryPointsVarargs(value: RecoveryPointByBackupVault*): Self = StObject.set(x, "RecoveryPoints", js.Array(value :_*))
+    inline def setRecoveryPointsVarargs(value: RecoveryPointByBackupVault*): Self = StObject.set(x, "RecoveryPoints", js.Array(value :_*))
   }
 }

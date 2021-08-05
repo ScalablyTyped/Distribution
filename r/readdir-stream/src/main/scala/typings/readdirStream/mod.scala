@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(dir: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def apply(dir: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
   @JSImport("readdir-stream", JSImport.Namespace)
   @js.native

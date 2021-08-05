@@ -87,6 +87,5 @@ class StructureLink protected ()
 }
 object StructureLink {
   
-  @scala.inline
-  def apply: StructureLinkConstructor = js.Dynamic.global.selectDynamic("StructureLink").asInstanceOf[StructureLinkConstructor]
+  inline def apply: StructureLinkConstructor = js.Dynamic.global.selectDynamic("StructureLink").asInstanceOf[StructureLinkConstructor]
 }

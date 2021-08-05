@@ -22,8 +22,7 @@ object mod {
   @JSImport("rosie", "Factory")
   @js.native
   def Factory: IFactoryStatic = js.native
-  @scala.inline
-  def Factory_=(x: IFactoryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Factory")(x.asInstanceOf[js.Any])
+  inline def Factory_=(x: IFactoryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Factory")(x.asInstanceOf[js.Any])
   
   @js.native
   trait IFactory[T] extends StObject {

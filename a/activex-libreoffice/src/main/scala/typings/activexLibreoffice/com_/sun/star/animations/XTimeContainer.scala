@@ -30,8 +30,7 @@ trait XTimeContainer
 }
 object XTimeContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
     Begin: js.Any,
@@ -63,22 +62,16 @@ object XTimeContainer {
     __obj.asInstanceOf[XTimeContainer]
   }
   
-  @scala.inline
-  implicit class XTimeContainerMutableBuilder[Self <: XTimeContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XTimeContainer](x: Self) {
     
-    @scala.inline
-    def setAppendChild(value: XAnimationNode => XAnimationNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: XAnimationNode => XAnimationNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertAfter(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "insertAfter", js.Any.fromFunction2(value))
+    inline def setInsertAfter(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "insertAfter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertBefore(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+    inline def setInsertBefore(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveChild(value: XAnimationNode => XAnimationNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: XAnimationNode => XAnimationNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceChild(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
+    inline def setReplaceChild(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
   }
 }

@@ -96,20 +96,16 @@ object KeyManagementServiceClient {
   }
   object AsymmetricSignRequest {
     
-    @scala.inline
-    def apply(digest: Digest, name: String): AsymmetricSignRequest = {
+    inline def apply(digest: Digest, name: String): AsymmetricSignRequest = {
       val __obj = js.Dynamic.literal(digest = digest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsymmetricSignRequest]
     }
     
-    @scala.inline
-    implicit class AsymmetricSignRequestMutableBuilder[Self <: AsymmetricSignRequest] (val x: Self) extends AnyVal {
+    extension [Self <: AsymmetricSignRequest](x: Self) {
       
-      @scala.inline
-      def setDigest(value: Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,17 +115,14 @@ object KeyManagementServiceClient {
   }
   object AsymmetricSignResponse {
     
-    @scala.inline
-    def apply(signature: Buffer): AsymmetricSignResponse = {
+    inline def apply(signature: Buffer): AsymmetricSignResponse = {
       val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsymmetricSignResponse]
     }
     
-    @scala.inline
-    implicit class AsymmetricSignResponseMutableBuilder[Self <: AsymmetricSignResponse] (val x: Self) extends AnyVal {
+    extension [Self <: AsymmetricSignResponse](x: Self) {
       
-      @scala.inline
-      def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,56 +144,40 @@ object KeyManagementServiceClient {
   }
   object ConfigurationObject {
     
-    @scala.inline
-    def apply(): ConfigurationObject = {
+    inline def apply(): ConfigurationObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationObject]
     }
     
-    @scala.inline
-    implicit class ConfigurationObjectMutableBuilder[Self <: ConfigurationObject] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationObject](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: Clientemail): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Clientemail): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
+      inline def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
+      inline def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      @scala.inline
-      def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      @scala.inline
-      def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+      inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
+      inline def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
     }
   }
   
@@ -218,29 +195,22 @@ object KeyManagementServiceClient {
   }
   object CreateCryptoKeyRequest {
     
-    @scala.inline
-    def apply(cryptoKey: PartialOmitCryptoKeypurpo, cryptoKeyId: String, parent: String): CreateCryptoKeyRequest = {
+    inline def apply(cryptoKey: PartialOmitCryptoKeypurpo, cryptoKeyId: String, parent: String): CreateCryptoKeyRequest = {
       val __obj = js.Dynamic.literal(cryptoKey = cryptoKey.asInstanceOf[js.Any], cryptoKeyId = cryptoKeyId.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateCryptoKeyRequest]
     }
     
-    @scala.inline
-    implicit class CreateCryptoKeyRequestMutableBuilder[Self <: CreateCryptoKeyRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CreateCryptoKeyRequest](x: Self) {
       
-      @scala.inline
-      def setCryptoKey(value: PartialOmitCryptoKeypurpo): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
+      inline def setCryptoKey(value: PartialOmitCryptoKeypurpo): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCryptoKeyId(value: String): Self = StObject.set(x, "cryptoKeyId", value.asInstanceOf[js.Any])
+      inline def setCryptoKeyId(value: String): Self = StObject.set(x, "cryptoKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipInitialVersionCreation(value: Boolean): Self = StObject.set(x, "skipInitialVersionCreation", value.asInstanceOf[js.Any])
+      inline def setSkipInitialVersionCreation(value: Boolean): Self = StObject.set(x, "skipInitialVersionCreation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipInitialVersionCreationUndefined: Self = StObject.set(x, "skipInitialVersionCreation", js.undefined)
+      inline def setSkipInitialVersionCreationUndefined: Self = StObject.set(x, "skipInitialVersionCreation", js.undefined)
     }
   }
   
@@ -256,26 +226,20 @@ object KeyManagementServiceClient {
   }
   object CreateKeyRingRequest {
     
-    @scala.inline
-    def apply(keyRingId: String, parent: String): CreateKeyRingRequest = {
+    inline def apply(keyRingId: String, parent: String): CreateKeyRingRequest = {
       val __obj = js.Dynamic.literal(keyRingId = keyRingId.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateKeyRingRequest]
     }
     
-    @scala.inline
-    implicit class CreateKeyRingRequestMutableBuilder[Self <: CreateKeyRingRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CreateKeyRingRequest](x: Self) {
       
-      @scala.inline
-      def setKeyRing(value: PartialKeyRing): Self = StObject.set(x, "keyRing", value.asInstanceOf[js.Any])
+      inline def setKeyRing(value: PartialKeyRing): Self = StObject.set(x, "keyRing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyRingId(value: String): Self = StObject.set(x, "keyRingId", value.asInstanceOf[js.Any])
+      inline def setKeyRingId(value: String): Self = StObject.set(x, "keyRingId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyRingUndefined: Self = StObject.set(x, "keyRing", js.undefined)
+      inline def setKeyRingUndefined: Self = StObject.set(x, "keyRing", js.undefined)
       
-      @scala.inline
-      def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,26 +259,20 @@ object KeyManagementServiceClient {
   }
   object DecryptRequest {
     
-    @scala.inline
-    def apply(ciphertext: Buffer, name: String): DecryptRequest = {
+    inline def apply(ciphertext: Buffer, name: String): DecryptRequest = {
       val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecryptRequest]
     }
     
-    @scala.inline
-    implicit class DecryptRequestMutableBuilder[Self <: DecryptRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DecryptRequest](x: Self) {
       
-      @scala.inline
-      def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
+      inline def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
+      inline def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
       
-      @scala.inline
-      def setCiphertext(value: Buffer): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+      inline def setCiphertext(value: Buffer): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,17 +282,14 @@ object KeyManagementServiceClient {
   }
   object DecryptResponse {
     
-    @scala.inline
-    def apply(plaintext: Buffer): DecryptResponse = {
+    inline def apply(plaintext: Buffer): DecryptResponse = {
       val __obj = js.Dynamic.literal(plaintext = plaintext.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecryptResponse]
     }
     
-    @scala.inline
-    implicit class DecryptResponseMutableBuilder[Self <: DecryptResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DecryptResponse](x: Self) {
       
-      @scala.inline
-      def setPlaintext(value: Buffer): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: Buffer): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -354,26 +309,20 @@ object KeyManagementServiceClient {
   }
   object EncryptRequest {
     
-    @scala.inline
-    def apply(name: String, plaintext: Buffer): EncryptRequest = {
+    inline def apply(name: String, plaintext: Buffer): EncryptRequest = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncryptRequest]
     }
     
-    @scala.inline
-    implicit class EncryptRequestMutableBuilder[Self <: EncryptRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptRequest](x: Self) {
       
-      @scala.inline
-      def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
+      inline def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
+      inline def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintext(value: Buffer): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: Buffer): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -385,20 +334,16 @@ object KeyManagementServiceClient {
   }
   object EncryptResponse {
     
-    @scala.inline
-    def apply(ciphertext: Buffer, name: String): EncryptResponse = {
+    inline def apply(ciphertext: Buffer, name: String): EncryptResponse = {
       val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncryptResponse]
     }
     
-    @scala.inline
-    implicit class EncryptResponseMutableBuilder[Self <: EncryptResponse] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptResponse](x: Self) {
       
-      @scala.inline
-      def setCiphertext(value: Buffer): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+      inline def setCiphertext(value: Buffer): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -418,29 +363,22 @@ object KeyManagementServiceClient {
   }
   object ListCryptoKeysRequest {
     
-    @scala.inline
-    def apply(parent: String): ListCryptoKeysRequest = {
+    inline def apply(parent: String): ListCryptoKeysRequest = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListCryptoKeysRequest]
     }
     
-    @scala.inline
-    implicit class ListCryptoKeysRequestMutableBuilder[Self <: ListCryptoKeysRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ListCryptoKeysRequest](x: Self) {
       
-      @scala.inline
-      def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+      inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+      inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
       
-      @scala.inline
-      def setPage_token(value: String): Self = StObject.set(x, "page_token", value.asInstanceOf[js.Any])
+      inline def setPage_token(value: String): Self = StObject.set(x, "page_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage_tokenUndefined: Self = StObject.set(x, "page_token", js.undefined)
+      inline def setPage_tokenUndefined: Self = StObject.set(x, "page_token", js.undefined)
       
-      @scala.inline
-      def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -460,29 +398,22 @@ object KeyManagementServiceClient {
   }
   object ListKeyRingsRequest {
     
-    @scala.inline
-    def apply(parent: String): ListKeyRingsRequest = {
+    inline def apply(parent: String): ListKeyRingsRequest = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListKeyRingsRequest]
     }
     
-    @scala.inline
-    implicit class ListKeyRingsRequestMutableBuilder[Self <: ListKeyRingsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ListKeyRingsRequest](x: Self) {
       
-      @scala.inline
-      def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+      inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+      inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
       
-      @scala.inline
-      def setPage_token(value: String): Self = StObject.set(x, "page_token", value.asInstanceOf[js.Any])
+      inline def setPage_token(value: String): Self = StObject.set(x, "page_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage_tokenUndefined: Self = StObject.set(x, "page_token", js.undefined)
+      inline def setPage_tokenUndefined: Self = StObject.set(x, "page_token", js.undefined)
       
-      @scala.inline
-      def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
   }
 }

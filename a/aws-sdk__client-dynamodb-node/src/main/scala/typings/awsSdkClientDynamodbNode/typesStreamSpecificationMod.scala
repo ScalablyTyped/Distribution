@@ -24,26 +24,20 @@ object typesStreamSpecificationMod {
   }
   object StreamSpecification {
     
-    @scala.inline
-    def apply(): StreamSpecification = {
+    inline def apply(): StreamSpecification = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StreamSpecification]
     }
     
-    @scala.inline
-    implicit class StreamSpecificationMutableBuilder[Self <: StreamSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: StreamSpecification](x: Self) {
       
-      @scala.inline
-      def setStreamEnabled(value: Boolean): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
+      inline def setStreamEnabled(value: Boolean): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamEnabledUndefined: Self = StObject.set(x, "StreamEnabled", js.undefined)
+      inline def setStreamEnabledUndefined: Self = StObject.set(x, "StreamEnabled", js.undefined)
       
-      @scala.inline
-      def setStreamViewType(value: NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES | KEYS_ONLY | String): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
+      inline def setStreamViewType(value: NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES | KEYS_ONLY | String): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
+      inline def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
     }
   }
   

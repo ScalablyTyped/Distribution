@@ -32,7 +32,7 @@ object panZoomInteractionMod {
     
     /* private */ def _constrainedZoom(scale: js.Any, zoomAmount: js.Any, centerPoint: js.Any): js.Any = js.native
     
-    var _dragInteraction: js.Any = js.native
+    /* private */ var _dragInteraction: js.Any = js.native
     
     /* private */ def _handlePinch(ids: js.Any, idToPoint: js.Any, e: js.Any): js.Any = js.native
     
@@ -42,45 +42,45 @@ object panZoomInteractionMod {
     
     /* private */ def _handleWheelEvent(p: js.Any, e: js.Any): js.Any = js.native
     
-    var _maxDomainExtents: js.Any = js.native
+    /* private */ var _maxDomainExtents: js.Any = js.native
     
-    var _maxDomainValues: js.Any = js.native
+    /* private */ var _maxDomainValues: js.Any = js.native
     
-    var _minDomainExtents: js.Any = js.native
+    /* private */ var _minDomainExtents: js.Any = js.native
     
-    var _minDomainValues: js.Any = js.native
+    /* private */ var _minDomainValues: js.Any = js.native
     
-    var _mouseDispatcher: js.Any = js.native
+    /* private */ var _mouseDispatcher: js.Any = js.native
     
     /* private */ def _nonLinearScaleWithExtents(scale: js.Any): js.Any = js.native
     
-    var _panEndCallbacks: js.Any = js.native
+    /* private */ var _panEndCallbacks: js.Any = js.native
     
-    var _panZoomUpdateCallbacks: js.Any = js.native
+    /* private */ var _panZoomUpdateCallbacks: js.Any = js.native
     
     /* private */ def _setupDragInteraction(): js.Any = js.native
     
-    var _touchCancelCallback: js.Any = js.native
+    /* private */ var _touchCancelCallback: js.Any = js.native
     
-    var _touchDispatcher: js.Any = js.native
+    /* private */ var _touchDispatcher: js.Any = js.native
     
-    var _touchEndCallback: js.Any = js.native
+    /* private */ var _touchEndCallback: js.Any = js.native
     
-    var _touchIds: js.Any = js.native
+    /* private */ var _touchIds: js.Any = js.native
     
-    var _touchMoveCallback: js.Any = js.native
+    /* private */ var _touchMoveCallback: js.Any = js.native
     
-    var _touchStartCallback: js.Any = js.native
+    /* private */ var _touchStartCallback: js.Any = js.native
     
-    var _wheelCallback: js.Any = js.native
+    /* private */ var _wheelCallback: js.Any = js.native
     
-    var _wheelFilter: js.Any = js.native
+    /* private */ var _wheelFilter: js.Any = js.native
     
-    var _xScales: js.Any = js.native
+    /* private */ var _xScales: js.Any = js.native
     
-    var _yScales: js.Any = js.native
+    /* private */ var _yScales: js.Any = js.native
     
-    var _zoomEndCallbacks: js.Any = js.native
+    /* private */ var _zoomEndCallbacks: js.Any = js.native
     
     /**
       * Adds an x scale to this PanZoom Interaction
@@ -365,14 +365,11 @@ object panZoomInteractionMod {
     @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom._PIXELS_PER_LINE")
     @js.native
     def _PIXELS_PER_LINE: js.Any = js.native
-    @scala.inline
-    def _PIXELS_PER_LINE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
+    inline def _PIXELS_PER_LINE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def _pointDistance(point1: js.Any, point2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointDistance")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _pointDistance(point1: js.Any, point2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointDistance")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def centerPoint(point1: Point, point2: Point): X = (^.asInstanceOf[js.Dynamic].applyDynamic("centerPoint")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[X]
+    inline def centerPoint(point1: Point, point2: Point): X = (^.asInstanceOf[js.Dynamic].applyDynamic("centerPoint")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[X]
   }
   
   type PanCallback = js.Function0[Unit]

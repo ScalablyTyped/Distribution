@@ -36,43 +36,31 @@ trait GoogleCloudVideointelligenceV1WordInfo extends StObject {
 }
 object GoogleCloudVideointelligenceV1WordInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1WordInfo = {
+  inline def apply(): GoogleCloudVideointelligenceV1WordInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1WordInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1WordInfoMutableBuilder[Self <: GoogleCloudVideointelligenceV1WordInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1WordInfo](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setSpeakerTag(value: Double): Self = StObject.set(x, "speakerTag", value.asInstanceOf[js.Any])
+    inline def setSpeakerTag(value: Double): Self = StObject.set(x, "speakerTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeakerTagUndefined: Self = StObject.set(x, "speakerTag", js.undefined)
+    inline def setSpeakerTagUndefined: Self = StObject.set(x, "speakerTag", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+    inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

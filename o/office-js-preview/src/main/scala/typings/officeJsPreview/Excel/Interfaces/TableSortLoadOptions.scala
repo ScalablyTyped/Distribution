@@ -44,37 +44,27 @@ trait TableSortLoadOptions extends StObject {
 }
 object TableSortLoadOptions {
   
-  @scala.inline
-  def apply(): TableSortLoadOptions = {
+  inline def apply(): TableSortLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableSortLoadOptions]
   }
   
-  @scala.inline
-  implicit class TableSortLoadOptionsMutableBuilder[Self <: TableSortLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TableSortLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFields(value: Boolean): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Boolean): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
-    @scala.inline
-    def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

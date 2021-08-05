@@ -48,8 +48,7 @@ trait Measure extends StObject {
 }
 object Measure {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFormattedValueProperty: () => js.Any,
     getLabelText: () => String,
     getName: () => String,
@@ -61,25 +60,18 @@ object Measure {
     __obj.asInstanceOf[Measure]
   }
   
-  @scala.inline
-  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
+  extension [Self <: Measure](x: Self) {
     
-    @scala.inline
-    def setGetFormattedValueProperty(value: () => js.Any): Self = StObject.set(x, "getFormattedValueProperty", js.Any.fromFunction0(value))
+    inline def setGetFormattedValueProperty(value: () => js.Any): Self = StObject.set(x, "getFormattedValueProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+    inline def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRawValueProperty(value: () => js.Any): Self = StObject.set(x, "getRawValueProperty", js.Any.fromFunction0(value))
+    inline def setGetRawValueProperty(value: () => js.Any): Self = StObject.set(x, "getRawValueProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUnitProperty(value: () => js.Any): Self = StObject.set(x, "getUnitProperty", js.Any.fromFunction0(value))
+    inline def setGetUnitProperty(value: () => js.Any): Self = StObject.set(x, "getUnitProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUpdatable(value: () => Boolean): Self = StObject.set(x, "isUpdatable", js.Any.fromFunction0(value))
+    inline def setIsUpdatable(value: () => Boolean): Self = StObject.set(x, "isUpdatable", js.Any.fromFunction0(value))
   }
 }

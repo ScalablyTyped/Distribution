@@ -28,37 +28,27 @@ trait PublicAccessBlockConfiguration extends StObject {
 }
 object PublicAccessBlockConfiguration {
   
-  @scala.inline
-  def apply(): PublicAccessBlockConfiguration = {
+  inline def apply(): PublicAccessBlockConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicAccessBlockConfiguration]
   }
   
-  @scala.inline
-  implicit class PublicAccessBlockConfigurationMutableBuilder[Self <: PublicAccessBlockConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: PublicAccessBlockConfiguration](x: Self) {
     
-    @scala.inline
-    def setBlockPublicAcls(value: Setting): Self = StObject.set(x, "BlockPublicAcls", value.asInstanceOf[js.Any])
+    inline def setBlockPublicAcls(value: Setting): Self = StObject.set(x, "BlockPublicAcls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPublicAclsUndefined: Self = StObject.set(x, "BlockPublicAcls", js.undefined)
+    inline def setBlockPublicAclsUndefined: Self = StObject.set(x, "BlockPublicAcls", js.undefined)
     
-    @scala.inline
-    def setBlockPublicPolicy(value: Setting): Self = StObject.set(x, "BlockPublicPolicy", value.asInstanceOf[js.Any])
+    inline def setBlockPublicPolicy(value: Setting): Self = StObject.set(x, "BlockPublicPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPublicPolicyUndefined: Self = StObject.set(x, "BlockPublicPolicy", js.undefined)
+    inline def setBlockPublicPolicyUndefined: Self = StObject.set(x, "BlockPublicPolicy", js.undefined)
     
-    @scala.inline
-    def setIgnorePublicAcls(value: Setting): Self = StObject.set(x, "IgnorePublicAcls", value.asInstanceOf[js.Any])
+    inline def setIgnorePublicAcls(value: Setting): Self = StObject.set(x, "IgnorePublicAcls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePublicAclsUndefined: Self = StObject.set(x, "IgnorePublicAcls", js.undefined)
+    inline def setIgnorePublicAclsUndefined: Self = StObject.set(x, "IgnorePublicAcls", js.undefined)
     
-    @scala.inline
-    def setRestrictPublicBuckets(value: Setting): Self = StObject.set(x, "RestrictPublicBuckets", value.asInstanceOf[js.Any])
+    inline def setRestrictPublicBuckets(value: Setting): Self = StObject.set(x, "RestrictPublicBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictPublicBucketsUndefined: Self = StObject.set(x, "RestrictPublicBuckets", js.undefined)
+    inline def setRestrictPublicBucketsUndefined: Self = StObject.set(x, "RestrictPublicBuckets", js.undefined)
   }
 }

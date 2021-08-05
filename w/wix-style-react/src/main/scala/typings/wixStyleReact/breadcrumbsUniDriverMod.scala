@@ -35,8 +35,7 @@ object breadcrumbsUniDriverMod {
   }
   object BreadcrumbsUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       breadcrumbContentAt: Double => js.Promise[String | Null],
       breadcrumbsLength: () => js.Promise[Double],
       click: () => js.Promise[Unit],
@@ -56,41 +55,29 @@ object breadcrumbsUniDriverMod {
       __obj.asInstanceOf[BreadcrumbsUniDriver]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsUniDriverMutableBuilder[Self <: BreadcrumbsUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsUniDriver](x: Self) {
       
-      @scala.inline
-      def setBreadcrumbContentAt(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "breadcrumbContentAt", js.Any.fromFunction1(value))
+      inline def setBreadcrumbContentAt(value: Double => js.Promise[String | Null]): Self = StObject.set(x, "breadcrumbContentAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBreadcrumbsLength(value: () => js.Promise[Double]): Self = StObject.set(x, "breadcrumbsLength", js.Any.fromFunction0(value))
+      inline def setBreadcrumbsLength(value: () => js.Promise[Double]): Self = StObject.set(x, "breadcrumbsLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickBreadcrumbAt(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickBreadcrumbAt", js.Any.fromFunction1(value))
+      inline def setClickBreadcrumbAt(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "clickBreadcrumbAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetActiveItemId(value: () => js.Promise[Double | Null]): Self = StObject.set(x, "getActiveItemId", js.Any.fromFunction0(value))
+      inline def setGetActiveItemId(value: () => js.Promise[Double | Null]): Self = StObject.set(x, "getActiveItemId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelClassList(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelClassList", js.Any.fromFunction1(value))
+      inline def setGetLabelClassList(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelClassList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsActiveLinkAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isActiveLinkAt", js.Any.fromFunction1(value))
+      inline def setIsActiveLinkAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isActiveLinkAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
+      inline def setIsLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMedium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
+      inline def setIsMedium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOnDarkBackground(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOnDarkBackground", js.Any.fromFunction0(value))
+      inline def setIsOnDarkBackground(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOnDarkBackground", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOnGrayBackground(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOnGrayBackground", js.Any.fromFunction0(value))
+      inline def setIsOnGrayBackground(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOnGrayBackground", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOnWhiteBackground(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOnWhiteBackground", js.Any.fromFunction0(value))
+      inline def setIsOnWhiteBackground(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOnWhiteBackground", js.Any.fromFunction0(value))
     }
   }
 }

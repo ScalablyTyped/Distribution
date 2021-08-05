@@ -16,8 +16,7 @@ trait AgentBasedDeployment extends StObject {
 }
 object AgentBasedDeployment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agentBasedDeployment: scala.Double,
     machineGroupBasedDeployment: scala.Double,
     runOnServer: scala.Double,
@@ -27,19 +26,14 @@ object AgentBasedDeployment {
     __obj.asInstanceOf[AgentBasedDeployment]
   }
   
-  @scala.inline
-  implicit class AgentBasedDeploymentMutableBuilder[Self <: AgentBasedDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: AgentBasedDeployment](x: Self) {
     
-    @scala.inline
-    def setAgentBasedDeployment(value: scala.Double): Self = StObject.set(x, "agentBasedDeployment", value.asInstanceOf[js.Any])
+    inline def setAgentBasedDeployment(value: scala.Double): Self = StObject.set(x, "agentBasedDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineGroupBasedDeployment(value: scala.Double): Self = StObject.set(x, "machineGroupBasedDeployment", value.asInstanceOf[js.Any])
+    inline def setMachineGroupBasedDeployment(value: scala.Double): Self = StObject.set(x, "machineGroupBasedDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunOnServer(value: scala.Double): Self = StObject.set(x, "runOnServer", value.asInstanceOf[js.Any])
+    inline def setRunOnServer(value: scala.Double): Self = StObject.set(x, "runOnServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

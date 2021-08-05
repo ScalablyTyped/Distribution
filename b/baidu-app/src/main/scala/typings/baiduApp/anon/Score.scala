@@ -14,19 +14,15 @@ trait Score extends StObject {
 }
 object Score {
   
-  @scala.inline
-  def apply(name: Double, score: Double): Score = {
+  inline def apply(name: Double, score: Double): Score = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
     __obj.asInstanceOf[Score]
   }
   
-  @scala.inline
-  implicit class ScoreMutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
+  extension [Self <: Score](x: Self) {
     
-    @scala.inline
-    def setName(value: Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

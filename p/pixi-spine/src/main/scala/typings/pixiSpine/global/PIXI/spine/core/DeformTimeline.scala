@@ -27,7 +27,7 @@ class DeformTimeline protected ()
   /* CompleteClass */
   var attachment: typings.pixiSpine.PIXI.spine.core.VertexAttachment = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var curves: js.Any = js.native
   
   /* CompleteClass */

@@ -26,8 +26,7 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: HTMLElement): MDCFormField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCFormField]
+    inline def attachTo(root: HTMLElement): MDCFormField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCFormField]
   }
   
   trait MDCFormFieldInput extends StObject {
@@ -36,20 +35,16 @@ object componentMod {
   }
   object MDCFormFieldInput {
     
-    @scala.inline
-    def apply(): MDCFormFieldInput = {
+    inline def apply(): MDCFormFieldInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MDCFormFieldInput]
     }
     
-    @scala.inline
-    implicit class MDCFormFieldInputMutableBuilder[Self <: MDCFormFieldInput] (val x: Self) extends AnyVal {
+    extension [Self <: MDCFormFieldInput](x: Self) {
       
-      @scala.inline
-      def setRipple(value: MDCRipple): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
+      inline def setRipple(value: MDCRipple): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleUndefined: Self = StObject.set(x, "ripple", js.undefined)
+      inline def setRippleUndefined: Self = StObject.set(x, "ripple", js.undefined)
     }
   }
 }

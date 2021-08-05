@@ -13,22 +13,17 @@ trait DescribeTargetGroupAttributesOutput extends StObject {
 }
 object DescribeTargetGroupAttributesOutput {
   
-  @scala.inline
-  def apply(): DescribeTargetGroupAttributesOutput = {
+  inline def apply(): DescribeTargetGroupAttributesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTargetGroupAttributesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTargetGroupAttributesOutputMutableBuilder[Self <: DescribeTargetGroupAttributesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTargetGroupAttributesOutput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: TargetGroupAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: TargetGroupAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: TargetGroupAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: TargetGroupAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
   }
 }

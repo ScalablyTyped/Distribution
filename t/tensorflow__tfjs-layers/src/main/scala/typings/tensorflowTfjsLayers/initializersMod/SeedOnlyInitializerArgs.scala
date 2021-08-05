@@ -11,19 +11,15 @@ trait SeedOnlyInitializerArgs extends StObject {
 }
 object SeedOnlyInitializerArgs {
   
-  @scala.inline
-  def apply(): SeedOnlyInitializerArgs = {
+  inline def apply(): SeedOnlyInitializerArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeedOnlyInitializerArgs]
   }
   
-  @scala.inline
-  implicit class SeedOnlyInitializerArgsMutableBuilder[Self <: SeedOnlyInitializerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SeedOnlyInitializerArgs](x: Self) {
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

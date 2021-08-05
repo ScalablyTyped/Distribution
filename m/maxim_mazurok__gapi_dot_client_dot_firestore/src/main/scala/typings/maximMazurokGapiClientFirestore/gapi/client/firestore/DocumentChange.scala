@@ -17,37 +17,27 @@ trait DocumentChange extends StObject {
 }
 object DocumentChange {
   
-  @scala.inline
-  def apply(): DocumentChange = {
+  inline def apply(): DocumentChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentChange]
   }
   
-  @scala.inline
-  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentChange](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setRemovedTargetIds(value: js.Array[Double]): Self = StObject.set(x, "removedTargetIds", value.asInstanceOf[js.Any])
+    inline def setRemovedTargetIds(value: js.Array[Double]): Self = StObject.set(x, "removedTargetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedTargetIdsUndefined: Self = StObject.set(x, "removedTargetIds", js.undefined)
+    inline def setRemovedTargetIdsUndefined: Self = StObject.set(x, "removedTargetIds", js.undefined)
     
-    @scala.inline
-    def setRemovedTargetIdsVarargs(value: Double*): Self = StObject.set(x, "removedTargetIds", js.Array(value :_*))
+    inline def setRemovedTargetIdsVarargs(value: Double*): Self = StObject.set(x, "removedTargetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetIds(value: js.Array[Double]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
+    inline def setTargetIds(value: js.Array[Double]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
+    inline def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
-    @scala.inline
-    def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
   }
 }

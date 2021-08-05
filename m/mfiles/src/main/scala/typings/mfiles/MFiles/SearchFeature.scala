@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchFeature extends StObject
 object SearchFeature {
   
-  @scala.inline
-  def FacetSearch: `1` = 1.asInstanceOf[`1`]
+  inline def FacetSearch: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def MultiVaultSearch: `2` = 2.asInstanceOf[`2`]
+  inline def MultiVaultSearch: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Undefined: `0` = 0.asInstanceOf[`0`]
+  inline def Undefined: `0` = 0.asInstanceOf[`0`]
 }

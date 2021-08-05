@@ -11,8 +11,7 @@ object mod {
   
   object createWorker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canvas: HTMLCanvasElement,
       workerUrl: String,
       listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]
@@ -25,8 +24,7 @@ object mod {
   
   object insideWorker {
     
-    @scala.inline
-    def apply(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): typings.offscreenCanvas.insideWorkerMod.WorkerInterface = ^.asInstanceOf[js.Dynamic].apply(listener.asInstanceOf[js.Any]).asInstanceOf[typings.offscreenCanvas.insideWorkerMod.WorkerInterface]
+    inline def apply(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): typings.offscreenCanvas.insideWorkerMod.WorkerInterface = ^.asInstanceOf[js.Dynamic].apply(listener.asInstanceOf[js.Any]).asInstanceOf[typings.offscreenCanvas.insideWorkerMod.WorkerInterface]
     
     @JSImport("offscreen-canvas", "insideWorker")
     @js.native

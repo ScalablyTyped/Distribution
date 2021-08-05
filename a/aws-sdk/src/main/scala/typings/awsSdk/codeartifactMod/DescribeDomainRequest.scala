@@ -18,22 +18,17 @@ trait DescribeDomainRequest extends StObject {
 }
 object DescribeDomainRequest {
   
-  @scala.inline
-  def apply(domain: DomainName): DescribeDomainRequest = {
+  inline def apply(domain: DomainName): DescribeDomainRequest = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDomainRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDomainRequestMutableBuilder[Self <: DescribeDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+    inline def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+    inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
   }
 }

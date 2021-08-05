@@ -38,43 +38,31 @@ trait Input extends StObject {
 }
 object Input {
   
-  @scala.inline
-  def apply(InputSchema: SourceSchema, NamePrefix: InAppStreamName): Input = {
+  inline def apply(InputSchema: SourceSchema, NamePrefix: InAppStreamName): Input = {
     val __obj = js.Dynamic.literal(InputSchema = InputSchema.asInstanceOf[js.Any], NamePrefix = NamePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
   
-  @scala.inline
-  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+  extension [Self <: Input](x: Self) {
     
-    @scala.inline
-    def setInputParallelism(value: InputParallelism): Self = StObject.set(x, "InputParallelism", value.asInstanceOf[js.Any])
+    inline def setInputParallelism(value: InputParallelism): Self = StObject.set(x, "InputParallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputParallelismUndefined: Self = StObject.set(x, "InputParallelism", js.undefined)
+    inline def setInputParallelismUndefined: Self = StObject.set(x, "InputParallelism", js.undefined)
     
-    @scala.inline
-    def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "InputProcessingConfiguration", js.undefined)
+    inline def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "InputProcessingConfiguration", js.undefined)
     
-    @scala.inline
-    def setInputSchema(value: SourceSchema): Self = StObject.set(x, "InputSchema", value.asInstanceOf[js.Any])
+    inline def setInputSchema(value: SourceSchema): Self = StObject.set(x, "InputSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisFirehoseInput(value: KinesisFirehoseInput): Self = StObject.set(x, "KinesisFirehoseInput", value.asInstanceOf[js.Any])
+    inline def setKinesisFirehoseInput(value: KinesisFirehoseInput): Self = StObject.set(x, "KinesisFirehoseInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisFirehoseInputUndefined: Self = StObject.set(x, "KinesisFirehoseInput", js.undefined)
+    inline def setKinesisFirehoseInputUndefined: Self = StObject.set(x, "KinesisFirehoseInput", js.undefined)
     
-    @scala.inline
-    def setKinesisStreamsInput(value: KinesisStreamsInput): Self = StObject.set(x, "KinesisStreamsInput", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamsInput(value: KinesisStreamsInput): Self = StObject.set(x, "KinesisStreamsInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamsInputUndefined: Self = StObject.set(x, "KinesisStreamsInput", js.undefined)
+    inline def setKinesisStreamsInputUndefined: Self = StObject.set(x, "KinesisStreamsInput", js.undefined)
     
-    @scala.inline
-    def setNamePrefix(value: InAppStreamName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: InAppStreamName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
   }
 }

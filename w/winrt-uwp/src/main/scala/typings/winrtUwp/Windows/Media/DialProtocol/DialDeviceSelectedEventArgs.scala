@@ -12,16 +12,13 @@ trait DialDeviceSelectedEventArgs extends StObject {
 }
 object DialDeviceSelectedEventArgs {
   
-  @scala.inline
-  def apply(selectedDialDevice: DialDevice): DialDeviceSelectedEventArgs = {
+  inline def apply(selectedDialDevice: DialDevice): DialDeviceSelectedEventArgs = {
     val __obj = js.Dynamic.literal(selectedDialDevice = selectedDialDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialDeviceSelectedEventArgs]
   }
   
-  @scala.inline
-  implicit class DialDeviceSelectedEventArgsMutableBuilder[Self <: DialDeviceSelectedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DialDeviceSelectedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSelectedDialDevice(value: DialDevice): Self = StObject.set(x, "selectedDialDevice", value.asInstanceOf[js.Any])
+    inline def setSelectedDialDevice(value: DialDevice): Self = StObject.set(x, "selectedDialDevice", value.asInstanceOf[js.Any])
   }
 }

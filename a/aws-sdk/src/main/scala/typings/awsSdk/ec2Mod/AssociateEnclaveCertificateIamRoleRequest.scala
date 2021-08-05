@@ -23,31 +23,23 @@ trait AssociateEnclaveCertificateIamRoleRequest extends StObject {
 }
 object AssociateEnclaveCertificateIamRoleRequest {
   
-  @scala.inline
-  def apply(): AssociateEnclaveCertificateIamRoleRequest = {
+  inline def apply(): AssociateEnclaveCertificateIamRoleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateEnclaveCertificateIamRoleRequest]
   }
   
-  @scala.inline
-  implicit class AssociateEnclaveCertificateIamRoleRequestMutableBuilder[Self <: AssociateEnclaveCertificateIamRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateEnclaveCertificateIamRoleRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: ResourceArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: ResourceArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: ResourceArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: ResourceArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

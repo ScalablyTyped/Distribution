@@ -19,28 +19,21 @@ trait SchemaTrack extends StObject {
 }
 object SchemaTrack {
   
-  @scala.inline
-  def apply(): SchemaTrack = {
+  inline def apply(): SchemaTrack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrack]
   }
   
-  @scala.inline
-  implicit class SchemaTrackMutableBuilder[Self <: SchemaTrack] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrack](x: Self) {
     
-    @scala.inline
-    def setReleases(value: js.Array[SchemaTrackRelease]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
+    inline def setReleases(value: js.Array[SchemaTrackRelease]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
+    inline def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
-    @scala.inline
-    def setReleasesVarargs(value: SchemaTrackRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: SchemaTrackRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
     
-    @scala.inline
-    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

@@ -17,25 +17,19 @@ trait IRegisteredUser extends StObject {
 }
 object IRegisteredUser {
   
-  @scala.inline
-  def apply(accessed: Date, created: Date, name: String, username: String): IRegisteredUser = {
+  inline def apply(accessed: Date, created: Date, name: String, username: String): IRegisteredUser = {
     val __obj = js.Dynamic.literal(accessed = accessed.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRegisteredUser]
   }
   
-  @scala.inline
-  implicit class IRegisteredUserMutableBuilder[Self <: IRegisteredUser] (val x: Self) extends AnyVal {
+  extension [Self <: IRegisteredUser](x: Self) {
     
-    @scala.inline
-    def setAccessed(value: Date): Self = StObject.set(x, "accessed", value.asInstanceOf[js.Any])
+    inline def setAccessed(value: Date): Self = StObject.set(x, "accessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

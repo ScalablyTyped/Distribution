@@ -14,25 +14,19 @@ trait CardAction extends StObject {
 }
 object CardAction {
   
-  @scala.inline
-  def apply(): CardAction = {
+  inline def apply(): CardAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardAction]
   }
   
-  @scala.inline
-  implicit class CardActionMutableBuilder[Self <: CardAction] (val x: Self) extends AnyVal {
+  extension [Self <: CardAction](x: Self) {
     
-    @scala.inline
-    def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
+    inline def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionLabelUndefined: Self = StObject.set(x, "actionLabel", js.undefined)
+    inline def setActionLabelUndefined: Self = StObject.set(x, "actionLabel", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: OnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: OnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

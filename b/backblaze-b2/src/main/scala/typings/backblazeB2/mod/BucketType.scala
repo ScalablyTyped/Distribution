@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BucketType extends StObject
 object BucketType {
   
-  @scala.inline
-  def allPrivate: typings.backblazeB2.backblazeB2Strings.allPrivate = "allPrivate".asInstanceOf[typings.backblazeB2.backblazeB2Strings.allPrivate]
+  inline def allPrivate: typings.backblazeB2.backblazeB2Strings.allPrivate = "allPrivate".asInstanceOf[typings.backblazeB2.backblazeB2Strings.allPrivate]
   
-  @scala.inline
-  def allPublic: typings.backblazeB2.backblazeB2Strings.allPublic = "allPublic".asInstanceOf[typings.backblazeB2.backblazeB2Strings.allPublic]
+  inline def allPublic: typings.backblazeB2.backblazeB2Strings.allPublic = "allPublic".asInstanceOf[typings.backblazeB2.backblazeB2Strings.allPublic]
 }

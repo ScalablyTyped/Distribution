@@ -23,7 +23,7 @@ object ionTabsMod {
     
     var ionTabsWillChange: EventEmitter[Tab] = js.native
     
-    var navCtrl: js.Any = js.native
+    /* private */ var navCtrl: js.Any = js.native
     
     /**
       * @internal

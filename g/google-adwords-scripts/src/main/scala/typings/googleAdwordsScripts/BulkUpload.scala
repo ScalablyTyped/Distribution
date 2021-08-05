@@ -16,8 +16,7 @@ trait BulkUpload[T] extends StObject {
 }
 object BulkUpload {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     forCampaignManagement: () => T,
     forOfflineConversions: () => T,
     preview: () => Unit,
@@ -27,19 +26,14 @@ object BulkUpload {
     __obj.asInstanceOf[BulkUpload[T]]
   }
   
-  @scala.inline
-  implicit class BulkUploadMutableBuilder[Self <: BulkUpload[?], T] (val x: Self & BulkUpload[T]) extends AnyVal {
+  extension [Self <: BulkUpload[?], T](x: Self & BulkUpload[T]) {
     
-    @scala.inline
-    def setForCampaignManagement(value: () => T): Self = StObject.set(x, "forCampaignManagement", js.Any.fromFunction0(value))
+    inline def setForCampaignManagement(value: () => T): Self = StObject.set(x, "forCampaignManagement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForOfflineConversions(value: () => T): Self = StObject.set(x, "forOfflineConversions", js.Any.fromFunction0(value))
+    inline def setForOfflineConversions(value: () => T): Self = StObject.set(x, "forOfflineConversions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreview(value: () => Unit): Self = StObject.set(x, "preview", js.Any.fromFunction0(value))
+    inline def setPreview(value: () => Unit): Self = StObject.set(x, "preview", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFileName(value: String => T): Self = StObject.set(x, "setFileName", js.Any.fromFunction1(value))
+    inline def setSetFileName(value: String => T): Self = StObject.set(x, "setFileName", js.Any.fromFunction1(value))
   }
 }

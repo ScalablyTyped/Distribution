@@ -22,8 +22,7 @@ object operationalMod {
       * Push each event onto a new transaction guaranteed to come before the next externally
       * initiated transaction. Same as {@link split(Stream)} but it works on a single value.
       */
-    @scala.inline
-    def defer[A](s: Stream[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(s.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
+    inline def defer[A](s: Stream[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(s.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
     
     /**
       * Push each event in the list onto a newly created transaction guaranteed
@@ -32,8 +31,7 @@ object operationalMod {
       * new transaction, so the resulting stream's events could be simultaneous with
       * events output by split() or {@link defer(Stream)} invoked elsewhere in the code.
       */
-    @scala.inline
-    def split[A](s: Stream[js.Array[A]]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(s.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
+    inline def split[A](s: Stream[js.Array[A]]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(s.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
     
     /**
       * A stream that gives the updates/steps for a {@link Cell}.
@@ -43,8 +41,7 @@ object operationalMod {
       * The rule with this primitive is that you should only use it in functions
       * that do not allow the caller to detect the cell updates.
       */
-    @scala.inline
-    def updates[A](c: Cell[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("updates")(c.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
+    inline def updates[A](c: Cell[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("updates")(c.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
     
     /**
       * A stream that is guaranteed to fire once in the transaction where value() is invoked, giving
@@ -56,7 +53,6 @@ object operationalMod {
       * The rule with this primitive is that you should only use it in functions
       * that do not allow the caller to detect the cell updates.
       */
-    @scala.inline
-    def value[A](c: Cell[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(c.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
+    inline def value[A](c: Cell[A]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(c.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
   }
 }

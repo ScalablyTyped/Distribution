@@ -18,28 +18,21 @@ trait ListDataflowEndpointGroupsResponse extends StObject {
 }
 object ListDataflowEndpointGroupsResponse {
   
-  @scala.inline
-  def apply(): ListDataflowEndpointGroupsResponse = {
+  inline def apply(): ListDataflowEndpointGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDataflowEndpointGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListDataflowEndpointGroupsResponseMutableBuilder[Self <: ListDataflowEndpointGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataflowEndpointGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setDataflowEndpointGroupList(value: DataflowEndpointGroupList): Self = StObject.set(x, "dataflowEndpointGroupList", value.asInstanceOf[js.Any])
+    inline def setDataflowEndpointGroupList(value: DataflowEndpointGroupList): Self = StObject.set(x, "dataflowEndpointGroupList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataflowEndpointGroupListUndefined: Self = StObject.set(x, "dataflowEndpointGroupList", js.undefined)
+    inline def setDataflowEndpointGroupListUndefined: Self = StObject.set(x, "dataflowEndpointGroupList", js.undefined)
     
-    @scala.inline
-    def setDataflowEndpointGroupListVarargs(value: DataflowEndpointListItem*): Self = StObject.set(x, "dataflowEndpointGroupList", js.Array(value :_*))
+    inline def setDataflowEndpointGroupListVarargs(value: DataflowEndpointListItem*): Self = StObject.set(x, "dataflowEndpointGroupList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

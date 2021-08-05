@@ -19,19 +19,15 @@ trait RouteSpecHttp2RouteRetryPolicyPerRetryTimeout extends StObject {
 }
 object RouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
   
-  @scala.inline
-  def apply(unit: Input[String], value: Input[Double]): RouteSpecHttp2RouteRetryPolicyPerRetryTimeout = {
+  inline def apply(unit: Input[String], value: Input[Double]): RouteSpecHttp2RouteRetryPolicyPerRetryTimeout = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttp2RouteRetryPolicyPerRetryTimeout]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttp2RouteRetryPolicyPerRetryTimeoutMutableBuilder[Self <: RouteSpecHttp2RouteRetryPolicyPerRetryTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttp2RouteRetryPolicyPerRetryTimeout](x: Self) {
     
-    @scala.inline
-    def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Input[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

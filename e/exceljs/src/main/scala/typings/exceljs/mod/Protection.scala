@@ -10,16 +10,13 @@ trait Protection extends StObject {
 }
 object Protection {
   
-  @scala.inline
-  def apply(locked: Boolean): Protection = {
+  inline def apply(locked: Boolean): Protection = {
     val __obj = js.Dynamic.literal(locked = locked.asInstanceOf[js.Any])
     __obj.asInstanceOf[Protection]
   }
   
-  @scala.inline
-  implicit class ProtectionMutableBuilder[Self <: Protection] (val x: Self) extends AnyVal {
+  extension [Self <: Protection](x: Self) {
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
   }
 }

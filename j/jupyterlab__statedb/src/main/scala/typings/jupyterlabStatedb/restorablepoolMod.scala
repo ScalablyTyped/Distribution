@@ -24,28 +24,28 @@ object restorablepoolMod {
       */
     def this(options: IOptions) = this()
     
-    var _added: js.Any = js.native
+    /* private */ var _added: js.Any = js.native
     
-    var _current: js.Any = js.native
+    /* private */ var _current: js.Any = js.native
     
-    var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: js.Any = js.native
     
-    var _hasRestored: js.Any = js.native
+    /* private */ var _hasRestored: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _objects: js.Any = js.native
+    /* private */ var _objects: js.Any = js.native
     
     /**
       * Clean up after disposed objects.
       */
-    var _onInstanceDisposed: js.Any = js.native
+    /* private */ var _onInstanceDisposed: js.Any = js.native
     
-    var _restore: js.Any = js.native
+    /* private */ var _restore: js.Any = js.native
     
-    var _restored: js.Any = js.native
+    /* private */ var _restored: js.Any = js.native
     
-    var _updated: js.Any = js.native
+    /* private */ var _updated: js.Any = js.native
     
     /**
       * Add a new object to the pool.
@@ -252,17 +252,14 @@ object restorablepoolMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(namespace: String): IOptions = {
+      inline def apply(namespace: String): IOptions = {
         val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       }
     }
   }

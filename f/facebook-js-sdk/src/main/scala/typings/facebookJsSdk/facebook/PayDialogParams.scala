@@ -30,58 +30,41 @@ trait PayDialogParams
 }
 object PayDialogParams {
   
-  @scala.inline
-  def apply(product: String): PayDialogParams = {
+  inline def apply(product: String): PayDialogParams = {
     val __obj = js.Dynamic.literal(action = "purchaseitem", method = "pay", product = product.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayDialogParams]
   }
   
-  @scala.inline
-  implicit class PayDialogParamsMutableBuilder[Self <: PayDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: PayDialogParams](x: Self) {
     
-    @scala.inline
-    def setAction(value: purchaseitem): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: purchaseitem): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: pay): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: pay): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricepoint_id(value: String): Self = StObject.set(x, "pricepoint_id", value.asInstanceOf[js.Any])
+    inline def setPricepoint_id(value: String): Self = StObject.set(x, "pricepoint_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricepoint_idUndefined: Self = StObject.set(x, "pricepoint_id", js.undefined)
+    inline def setPricepoint_idUndefined: Self = StObject.set(x, "pricepoint_id", js.undefined)
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setQuantity_max(value: Double): Self = StObject.set(x, "quantity_max", value.asInstanceOf[js.Any])
+    inline def setQuantity_max(value: Double): Self = StObject.set(x, "quantity_max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity_maxUndefined: Self = StObject.set(x, "quantity_max", js.undefined)
+    inline def setQuantity_maxUndefined: Self = StObject.set(x, "quantity_max", js.undefined)
     
-    @scala.inline
-    def setQuantity_min(value: Double): Self = StObject.set(x, "quantity_min", value.asInstanceOf[js.Any])
+    inline def setQuantity_min(value: Double): Self = StObject.set(x, "quantity_min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity_minUndefined: Self = StObject.set(x, "quantity_min", js.undefined)
+    inline def setQuantity_minUndefined: Self = StObject.set(x, "quantity_min", js.undefined)
     
-    @scala.inline
-    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+    inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
+    inline def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
     
-    @scala.inline
-    def setTest_currency(value: String): Self = StObject.set(x, "test_currency", value.asInstanceOf[js.Any])
+    inline def setTest_currency(value: String): Self = StObject.set(x, "test_currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest_currencyUndefined: Self = StObject.set(x, "test_currency", js.undefined)
+    inline def setTest_currencyUndefined: Self = StObject.set(x, "test_currency", js.undefined)
   }
 }

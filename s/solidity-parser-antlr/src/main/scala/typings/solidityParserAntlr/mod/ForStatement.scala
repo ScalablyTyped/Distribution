@@ -23,38 +23,28 @@ trait ForStatement
 }
 object ForStatement {
   
-  @scala.inline
-  def apply(body: Statement): ForStatement = {
+  inline def apply(body: Statement): ForStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ForStatement")
     __obj.asInstanceOf[ForStatement]
   }
   
-  @scala.inline
-  implicit class ForStatementMutableBuilder[Self <: ForStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ForStatement](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionExpression(value: Expression): Self = StObject.set(x, "conditionExpression", value.asInstanceOf[js.Any])
+    inline def setConditionExpression(value: Expression): Self = StObject.set(x, "conditionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionExpressionUndefined: Self = StObject.set(x, "conditionExpression", js.undefined)
+    inline def setConditionExpressionUndefined: Self = StObject.set(x, "conditionExpression", js.undefined)
     
-    @scala.inline
-    def setInitExpression(value: SimpleStatement): Self = StObject.set(x, "initExpression", value.asInstanceOf[js.Any])
+    inline def setInitExpression(value: SimpleStatement): Self = StObject.set(x, "initExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitExpressionUndefined: Self = StObject.set(x, "initExpression", js.undefined)
+    inline def setInitExpressionUndefined: Self = StObject.set(x, "initExpression", js.undefined)
     
-    @scala.inline
-    def setLoopExpression(value: ExpressionStatement): Self = StObject.set(x, "loopExpression", value.asInstanceOf[js.Any])
+    inline def setLoopExpression(value: ExpressionStatement): Self = StObject.set(x, "loopExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopExpressionUndefined: Self = StObject.set(x, "loopExpression", js.undefined)
+    inline def setLoopExpressionUndefined: Self = StObject.set(x, "loopExpression", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

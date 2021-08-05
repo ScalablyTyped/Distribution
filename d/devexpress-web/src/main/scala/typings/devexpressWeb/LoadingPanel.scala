@@ -31,28 +31,21 @@ trait LoadingPanel extends StObject {
 }
 object LoadingPanel {
   
-  @scala.inline
-  def apply(enabled: Boolean, hide: () => Unit, show: () => Unit): LoadingPanel = {
+  inline def apply(enabled: Boolean, hide: () => Unit, show: () => Unit): LoadingPanel = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[LoadingPanel]
   }
   
-  @scala.inline
-  implicit class LoadingPanelMutableBuilder[Self <: LoadingPanel] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingPanel](x: Self) {
     
-    @scala.inline
-    def setCustomPanel(value: ICustomLoadingPanel): Self = StObject.set(x, "customPanel", value.asInstanceOf[js.Any])
+    inline def setCustomPanel(value: ICustomLoadingPanel): Self = StObject.set(x, "customPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPanelUndefined: Self = StObject.set(x, "customPanel", js.undefined)
+    inline def setCustomPanelUndefined: Self = StObject.set(x, "customPanel", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

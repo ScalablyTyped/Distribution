@@ -18,8 +18,7 @@ object notificationMod {
   @js.native
   val default: NotificationApi = js.native
   
-  @scala.inline
-  def getInstance(cacheKey: String): js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(cacheKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null]]
+  inline def getInstance(cacheKey: String): js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(cacheKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null]]
   
   trait ArgsProps extends StObject {
     
@@ -59,119 +58,82 @@ object notificationMod {
   }
   object ArgsProps {
     
-    @scala.inline
-    def apply(): ArgsProps = {
+    inline def apply(): ArgsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArgsProps]
     }
     
-    @scala.inline
-    implicit class ArgsPropsMutableBuilder[Self <: ArgsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArgsProps](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setBtn(value: ReactNode): Self = StObject.set(x, "btn", value.asInstanceOf[js.Any])
+      inline def setBtn(value: ReactNode): Self = StObject.set(x, "btn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBtnUndefined: Self = StObject.set(x, "btn", js.undefined)
+      inline def setBtnUndefined: Self = StObject.set(x, "btn", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationNull: Self = StObject.set(x, "duration", null)
+      inline def setDurationNull: Self = StObject.set(x, "duration", null)
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: NotificationPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: NotificationPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setType(value: IconType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IconType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -195,62 +157,44 @@ object notificationMod {
   }
   object ConfigProps {
     
-    @scala.inline
-    def apply(): ConfigProps = {
+    inline def apply(): ConfigProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigProps]
     }
     
-    @scala.inline
-    implicit class ConfigPropsMutableBuilder[Self <: ConfigProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigProps](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: NotificationPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: NotificationPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -263,17 +207,13 @@ object notificationMod {
   trait IconType extends StObject
   object IconType {
     
-    @scala.inline
-    def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
+    inline def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
     
-    @scala.inline
-    def info: typings.antd.antdStrings.info = "info".asInstanceOf[typings.antd.antdStrings.info]
+    inline def info: typings.antd.antdStrings.info = "info".asInstanceOf[typings.antd.antdStrings.info]
     
-    @scala.inline
-    def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
+    inline def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
     
-    @scala.inline
-    def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
+    inline def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
   }
   
   trait NotificationApi
@@ -292,8 +232,7 @@ object notificationMod {
   }
   object NotificationApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: String => Unit,
       config: ConfigProps => Unit,
       destroy: () => Unit,
@@ -309,23 +248,17 @@ object notificationMod {
       __obj.asInstanceOf[NotificationApi]
     }
     
-    @scala.inline
-    implicit class NotificationApiMutableBuilder[Self <: NotificationApi] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationApi](x: Self) {
       
-      @scala.inline
-      def setClose(value: String => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: String => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConfig(value: ConfigProps => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+      inline def setConfig(value: ConfigProps => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUseNotification(value: () => js.Tuple2[NotificationInstance, ReactElement]): Self = StObject.set(x, "useNotification", js.Any.fromFunction0(value))
+      inline def setUseNotification(value: () => js.Tuple2[NotificationInstance, ReactElement]): Self = StObject.set(x, "useNotification", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWarn(value: ArgsProps => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: ArgsProps => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -343,8 +276,7 @@ object notificationMod {
   }
   object NotificationInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       error: ArgsProps => Unit,
       info: ArgsProps => Unit,
       open: ArgsProps => Unit,
@@ -355,23 +287,17 @@ object notificationMod {
       __obj.asInstanceOf[NotificationInstance]
     }
     
-    @scala.inline
-    implicit class NotificationInstanceMutableBuilder[Self <: NotificationInstance] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationInstance](x: Self) {
       
-      @scala.inline
-      def setError(value: ArgsProps => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: ArgsProps => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: ArgsProps => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: ArgsProps => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpen(value: ArgsProps => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: ArgsProps => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccess(value: ArgsProps => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: ArgsProps => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarning(value: ArgsProps => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: ArgsProps => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
     }
   }
   
@@ -384,16 +310,12 @@ object notificationMod {
   trait NotificationPlacement extends StObject
   object NotificationPlacement {
     
-    @scala.inline
-    def bottomLeft: typings.antd.antdStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antd.antdStrings.bottomLeft]
+    inline def bottomLeft: typings.antd.antdStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antd.antdStrings.bottomLeft]
     
-    @scala.inline
-    def bottomRight: typings.antd.antdStrings.bottomRight = "bottomRight".asInstanceOf[typings.antd.antdStrings.bottomRight]
+    inline def bottomRight: typings.antd.antdStrings.bottomRight = "bottomRight".asInstanceOf[typings.antd.antdStrings.bottomRight]
     
-    @scala.inline
-    def topLeft: typings.antd.antdStrings.topLeft = "topLeft".asInstanceOf[typings.antd.antdStrings.topLeft]
+    inline def topLeft: typings.antd.antdStrings.topLeft = "topLeft".asInstanceOf[typings.antd.antdStrings.topLeft]
     
-    @scala.inline
-    def topRight: typings.antd.antdStrings.topRight = "topRight".asInstanceOf[typings.antd.antdStrings.topRight]
+    inline def topRight: typings.antd.antdStrings.topRight = "topRight".asInstanceOf[typings.antd.antdStrings.topRight]
   }
 }

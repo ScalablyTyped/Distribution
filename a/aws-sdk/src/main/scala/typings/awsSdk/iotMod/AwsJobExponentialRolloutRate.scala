@@ -23,8 +23,7 @@ trait AwsJobExponentialRolloutRate extends StObject {
 }
 object AwsJobExponentialRolloutRate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseRatePerMinute: AwsJobRolloutRatePerMinute,
     incrementFactor: AwsJobRolloutIncrementFactor,
     rateIncreaseCriteria: AwsJobRateIncreaseCriteria
@@ -33,16 +32,12 @@ object AwsJobExponentialRolloutRate {
     __obj.asInstanceOf[AwsJobExponentialRolloutRate]
   }
   
-  @scala.inline
-  implicit class AwsJobExponentialRolloutRateMutableBuilder[Self <: AwsJobExponentialRolloutRate] (val x: Self) extends AnyVal {
+  extension [Self <: AwsJobExponentialRolloutRate](x: Self) {
     
-    @scala.inline
-    def setBaseRatePerMinute(value: AwsJobRolloutRatePerMinute): Self = StObject.set(x, "baseRatePerMinute", value.asInstanceOf[js.Any])
+    inline def setBaseRatePerMinute(value: AwsJobRolloutRatePerMinute): Self = StObject.set(x, "baseRatePerMinute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementFactor(value: AwsJobRolloutIncrementFactor): Self = StObject.set(x, "incrementFactor", value.asInstanceOf[js.Any])
+    inline def setIncrementFactor(value: AwsJobRolloutIncrementFactor): Self = StObject.set(x, "incrementFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateIncreaseCriteria(value: AwsJobRateIncreaseCriteria): Self = StObject.set(x, "rateIncreaseCriteria", value.asInstanceOf[js.Any])
+    inline def setRateIncreaseCriteria(value: AwsJobRateIncreaseCriteria): Self = StObject.set(x, "rateIncreaseCriteria", value.asInstanceOf[js.Any])
   }
 }

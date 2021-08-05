@@ -10,16 +10,13 @@ trait KeyOperationAttestation extends StObject {
 }
 object KeyOperationAttestation {
   
-  @scala.inline
-  def apply(format: AttestationFormat): KeyOperationAttestation = {
+  inline def apply(format: AttestationFormat): KeyOperationAttestation = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOperationAttestation]
   }
   
-  @scala.inline
-  implicit class KeyOperationAttestationMutableBuilder[Self <: KeyOperationAttestation] (val x: Self) extends AnyVal {
+  extension [Self <: KeyOperationAttestation](x: Self) {
     
-    @scala.inline
-    def setFormat(value: AttestationFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: AttestationFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGAnimatedPreserveAspectRatio")
 @js.native
-class SVGAnimatedPreserveAspectRatio protected ()
+/* private */ class SVGAnimatedPreserveAspectRatio ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGAnimatedPreserveAspectRatio {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGAnimatedPreserveAspectRatio_typekey")
   var MSHTMLDotSVGAnimatedPreserveAspectRatio_typekey: typings.activexMshtml.MSHTML.SVGAnimatedPreserveAspectRatio = js.native
   

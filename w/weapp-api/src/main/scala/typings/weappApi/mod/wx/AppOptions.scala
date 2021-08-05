@@ -40,43 +40,31 @@ trait AppOptions
 }
 object AppOptions {
   
-  @scala.inline
-  def apply(): AppOptions = {
+  inline def apply(): AppOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppOptions]
   }
   
-  @scala.inline
-  implicit class AppOptionsMutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppOptions](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnLaunch(value: /* options */ onLaunchOptions => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
+    inline def setOnLaunch(value: /* options */ onLaunchOptions => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
+    inline def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
     
-    @scala.inline
-    def setOnPageNotFound(value: () => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction0(value))
+    inline def setOnPageNotFound(value: () => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
+    inline def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: /* options */ onShowOptions => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: /* options */ onShowOptions => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
   }
 }

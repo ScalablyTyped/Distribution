@@ -20,25 +20,19 @@ trait ActionsCreateRegistrationTokenForRepoRequestOptions extends StObject {
 }
 object ActionsCreateRegistrationTokenForRepoRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsCreateRegistrationTokenForRepoRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsCreateRegistrationTokenForRepoRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/actions/runners/registration-token")
     __obj.asInstanceOf[ActionsCreateRegistrationTokenForRepoRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActionsCreateRegistrationTokenForRepoRequestOptionsMutableBuilder[Self <: ActionsCreateRegistrationTokenForRepoRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateRegistrationTokenForRepoRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashregistration-token`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashregistration-token`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

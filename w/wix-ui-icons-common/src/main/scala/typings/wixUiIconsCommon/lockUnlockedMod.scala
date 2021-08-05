@@ -22,20 +22,16 @@ object lockUnlockedMod extends Shortcut {
   }
   object LockUnlockedProps {
     
-    @scala.inline
-    def apply(): LockUnlockedProps = {
+    inline def apply(): LockUnlockedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LockUnlockedProps]
     }
     
-    @scala.inline
-    implicit class LockUnlockedPropsMutableBuilder[Self <: LockUnlockedProps] (val x: Self) extends AnyVal {
+    extension [Self <: LockUnlockedProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

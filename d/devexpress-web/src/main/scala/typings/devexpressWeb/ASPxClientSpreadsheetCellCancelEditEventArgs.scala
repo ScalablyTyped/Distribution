@@ -43,8 +43,7 @@ trait ASPxClientSpreadsheetCellCancelEditEventArgs
 }
 object ASPxClientSpreadsheetCellCancelEditEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columnIndex: Double,
     displayText: String,
     formula: String,
@@ -56,25 +55,18 @@ object ASPxClientSpreadsheetCellCancelEditEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetCellCancelEditEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetCellCancelEditEventArgsMutableBuilder[Self <: ASPxClientSpreadsheetCellCancelEditEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetCellCancelEditEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

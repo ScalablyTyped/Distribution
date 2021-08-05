@@ -33,8 +33,7 @@ trait IWorkingCopy extends StObject {
 }
 object IWorkingCopy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changed: Boolean,
     id: String,
     isCollaboration: Boolean,
@@ -48,40 +47,28 @@ object IWorkingCopy {
     __obj.asInstanceOf[IWorkingCopy]
   }
   
-  @scala.inline
-  implicit class IWorkingCopyMutableBuilder[Self <: IWorkingCopy] (val x: Self) extends AnyVal {
+  extension [Self <: IWorkingCopy](x: Self) {
     
-    @scala.inline
-    def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+    inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCollaboration(value: Boolean): Self = StObject.set(x, "isCollaboration", value.asInstanceOf[js.Any])
+    inline def setIsCollaboration(value: Boolean): Self = StObject.set(x, "isCollaboration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setMergeData(value: ILockData): Self = StObject.set(x, "mergeData", value.asInstanceOf[js.Any])
+    inline def setMergeData(value: ILockData): Self = StObject.set(x, "mergeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeDataNull: Self = StObject.set(x, "mergeData", null)
+    inline def setMergeDataNull: Self = StObject.set(x, "mergeData", null)
     
-    @scala.inline
-    def setMetaData(value: IWorkingCopyMetaData): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: IWorkingCopyMetaData): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMprFileName(value: String): Self = StObject.set(x, "mprFileName", value.asInstanceOf[js.Any])
+    inline def setMprFileName(value: String): Self = StObject.set(x, "mprFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMprMetaData(value: IMprMetaData): Self = StObject.set(x, "mprMetaData", value.asInstanceOf[js.Any])
+    inline def setMprMetaData(value: IMprMetaData): Self = StObject.set(x, "mprMetaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDateTime(value: Double): Self = StObject.set(x, "uploadDateTime", value.asInstanceOf[js.Any])
+    inline def setUploadDateTime(value: Double): Self = StObject.set(x, "uploadDateTime", value.asInstanceOf[js.Any])
   }
 }

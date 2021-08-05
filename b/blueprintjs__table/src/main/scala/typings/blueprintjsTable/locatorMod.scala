@@ -17,29 +17,29 @@ object locatorMod {
        with ILocator {
     def this(tableElement: HTMLElement, scrollContainerElement: HTMLElement, cellContainerElement: HTMLElement) = this()
     
-    var cellContainerElement: js.Any = js.native
+    /* private */ var cellContainerElement: js.Any = js.native
     
-    var convertCellIndexToClientX: js.Any = js.native
+    /* private */ var convertCellIndexToClientX: js.Any = js.native
     
-    var convertCellIndexToClientY: js.Any = js.native
+    /* private */ var convertCellIndexToClientY: js.Any = js.native
     
-    var convertCellMidpointToClientX: js.Any = js.native
+    /* private */ var convertCellMidpointToClientX: js.Any = js.native
     
-    var convertCellMidpointToClientY: js.Any = js.native
+    /* private */ var convertCellMidpointToClientY: js.Any = js.native
     
-    var getColumnCellSelector: js.Any = js.native
+    /* private */ var getColumnCellSelector: js.Any = js.native
     
-    var getTableRect: js.Any = js.native
+    /* private */ var getTableRect: js.Any = js.native
     
     def getViewportRect(): Rect = js.native
     
-    var grid: js.Any = js.native
+    /* private */ var grid: js.Any = js.native
     
-    var numFrozenColumns: js.Any = js.native
+    /* private */ var numFrozenColumns: js.Any = js.native
     
-    var numFrozenRows: js.Any = js.native
+    /* private */ var numFrozenRows: js.Any = js.native
     
-    var scrollContainerElement: js.Any = js.native
+    /* private */ var scrollContainerElement: js.Any = js.native
     
     def setGrid(grid: Grid): this.type = js.native
     
@@ -47,11 +47,11 @@ object locatorMod {
     
     def setNumFrozenRows(numFrozenRows: Double): this.type = js.native
     
-    var tableElement: js.Any = js.native
+    /* private */ var tableElement: js.Any = js.native
     
-    var toGridX: js.Any = js.native
+    /* private */ var toGridX: js.Any = js.native
     
-    var toGridY: js.Any = js.native
+    /* private */ var toGridY: js.Any = js.native
   }
   /* static members */
   object Locator {
@@ -63,8 +63,7 @@ object locatorMod {
     @JSImport("@blueprintjs/table/lib/esm/locator", "Locator.CELL_HORIZONTAL_PADDING")
     @js.native
     def CELL_HORIZONTAL_PADDING: Double = js.native
-    @scala.inline
-    def CELL_HORIZONTAL_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CELL_HORIZONTAL_PADDING")(x.asInstanceOf[js.Any])
+    inline def CELL_HORIZONTAL_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CELL_HORIZONTAL_PADDING")(x.asInstanceOf[js.Any])
   }
   
   @js.native

@@ -12,16 +12,13 @@ trait RandomOptions
 }
 object RandomOptions {
   
-  @scala.inline
-  def apply(rating: Rating, tag: String): RandomOptions = {
+  inline def apply(rating: Rating, tag: String): RandomOptions = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[RandomOptions]
   }
   
-  @scala.inline
-  implicit class RandomOptionsMutableBuilder[Self <: RandomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RandomOptions](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

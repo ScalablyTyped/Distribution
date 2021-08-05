@@ -14,19 +14,15 @@ trait GoogleCloudRecommendationengineV1alphaTuningMetadata extends StObject {
 }
 object GoogleCloudRecommendationengineV1alphaTuningMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1alphaTuningMetadata = {
+  inline def apply(): GoogleCloudRecommendationengineV1alphaTuningMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1alphaTuningMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1alphaTuningMetadataMutableBuilder[Self <: GoogleCloudRecommendationengineV1alphaTuningMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1alphaTuningMetadata](x: Self) {
     
-    @scala.inline
-    def setRecommendationModel(value: String): Self = StObject.set(x, "recommendationModel", value.asInstanceOf[js.Any])
+    inline def setRecommendationModel(value: String): Self = StObject.set(x, "recommendationModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationModelUndefined: Self = StObject.set(x, "recommendationModel", js.undefined)
+    inline def setRecommendationModelUndefined: Self = StObject.set(x, "recommendationModel", js.undefined)
   }
 }

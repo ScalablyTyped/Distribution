@@ -26,52 +26,37 @@ trait SMTPDelivery extends StObject {
 }
 object SMTPDelivery {
   
-  @scala.inline
-  def apply(): SMTPDelivery = {
+  inline def apply(): SMTPDelivery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SMTPDelivery]
   }
   
-  @scala.inline
-  implicit class SMTPDeliveryMutableBuilder[Self <: SMTPDelivery] (val x: Self) extends AnyVal {
+  extension [Self <: SMTPDelivery](x: Self) {
     
-    @scala.inline
-    def setFromAddress(value: String): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
+    inline def setFromAddress(value: String): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAddressUndefined: Self = StObject.set(x, "fromAddress", js.undefined)
+    inline def setFromAddressUndefined: Self = StObject.set(x, "fromAddress", js.undefined)
     
-    @scala.inline
-    def setPassword(value: NotifierSecretRef): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: NotifierSecretRef): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setRecipientAddresses(value: js.Array[String]): Self = StObject.set(x, "recipientAddresses", value.asInstanceOf[js.Any])
+    inline def setRecipientAddresses(value: js.Array[String]): Self = StObject.set(x, "recipientAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientAddressesUndefined: Self = StObject.set(x, "recipientAddresses", js.undefined)
+    inline def setRecipientAddressesUndefined: Self = StObject.set(x, "recipientAddresses", js.undefined)
     
-    @scala.inline
-    def setRecipientAddressesVarargs(value: String*): Self = StObject.set(x, "recipientAddresses", js.Array(value :_*))
+    inline def setRecipientAddressesVarargs(value: String*): Self = StObject.set(x, "recipientAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setSenderAddress(value: String): Self = StObject.set(x, "senderAddress", value.asInstanceOf[js.Any])
+    inline def setSenderAddress(value: String): Self = StObject.set(x, "senderAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderAddressUndefined: Self = StObject.set(x, "senderAddress", js.undefined)
+    inline def setSenderAddressUndefined: Self = StObject.set(x, "senderAddress", js.undefined)
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

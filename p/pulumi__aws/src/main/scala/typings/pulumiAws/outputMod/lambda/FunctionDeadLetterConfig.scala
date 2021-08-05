@@ -16,16 +16,13 @@ trait FunctionDeadLetterConfig extends StObject {
 }
 object FunctionDeadLetterConfig {
   
-  @scala.inline
-  def apply(targetArn: String): FunctionDeadLetterConfig = {
+  inline def apply(targetArn: String): FunctionDeadLetterConfig = {
     val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionDeadLetterConfig]
   }
   
-  @scala.inline
-  implicit class FunctionDeadLetterConfigMutableBuilder[Self <: FunctionDeadLetterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionDeadLetterConfig](x: Self) {
     
-    @scala.inline
-    def setTargetArn(value: String): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: String): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesNotDeployed extends StObject {
 }
 object EnumValuesNotDeployed {
   
-  @scala.inline
-  def apply(enumValues: NotDeployed): EnumValuesNotDeployed = {
+  inline def apply(enumValues: NotDeployed): EnumValuesNotDeployed = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesNotDeployed]
   }
   
-  @scala.inline
-  implicit class EnumValuesNotDeployedMutableBuilder[Self <: EnumValuesNotDeployed] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesNotDeployed](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: NotDeployed): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: NotDeployed): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

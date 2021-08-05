@@ -76,7 +76,7 @@ object treeMapCollectionMod {
     /**
       * @hidden
       */
-    var dispatcher_ : js.Any = js.native
+    /* private */ var dispatcher_ : js.Any = js.native
     
     /* CompleteClass */
     override def hasEventListener(`type`: Type): Boolean = js.native

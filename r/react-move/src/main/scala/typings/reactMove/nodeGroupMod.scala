@@ -53,8 +53,7 @@ object nodeGroupMod {
   }
   object INodeGroupProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: js.Array[js.Any] => ReactElement,
       data: js.Array[js.Any],
       keyAccessor: (js.Any, Double) => String | Double,
@@ -64,49 +63,35 @@ object nodeGroupMod {
       __obj.asInstanceOf[INodeGroupProps]
     }
     
-    @scala.inline
-    implicit class INodeGroupPropsMutableBuilder[Self <: INodeGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: INodeGroupProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[js.Any] => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: js.Array[js.Any] => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEnter(value: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap]): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
+      inline def setEnter(value: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap]): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setInterpolation(
+      inline def setInterpolation(
         value: (/* begValue */ js.UndefOr[js.Any], /* endValue */ js.UndefOr[js.Any], /* attr */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => js.Function1[/* t */ Double, js.Any]
       ): Self = StObject.set(x, "interpolation", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+      inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
       
-      @scala.inline
-      def setKeyAccessor(value: (js.Any, Double) => String | Double): Self = StObject.set(x, "keyAccessor", js.Any.fromFunction2(value))
+      inline def setKeyAccessor(value: (js.Any, Double) => String | Double): Self = StObject.set(x, "keyAccessor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeave(value: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap]): Self = StObject.set(x, "leave", js.Any.fromFunction2(value))
+      inline def setLeave(value: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap]): Self = StObject.set(x, "leave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+      inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
       
-      @scala.inline
-      def setStart(value: (js.Any, Double) => HashMap): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      inline def setStart(value: (js.Any, Double) => HashMap): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdate(value: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
 }

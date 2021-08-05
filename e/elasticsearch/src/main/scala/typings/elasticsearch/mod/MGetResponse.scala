@@ -10,22 +10,17 @@ trait MGetResponse[T] extends StObject {
 }
 object MGetResponse {
   
-  @scala.inline
-  def apply[T](): MGetResponse[T] = {
+  inline def apply[T](): MGetResponse[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MGetResponse[T]]
   }
   
-  @scala.inline
-  implicit class MGetResponseMutableBuilder[Self <: MGetResponse[?], T] (val x: Self & MGetResponse[T]) extends AnyVal {
+  extension [Self <: MGetResponse[?], T](x: Self & MGetResponse[T]) {
     
-    @scala.inline
-    def setDocs(value: js.Array[GetResponse[T]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: js.Array[GetResponse[T]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
+    inline def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
     
-    @scala.inline
-    def setDocsVarargs(value: GetResponse[T]*): Self = StObject.set(x, "docs", js.Array(value :_*))
+    inline def setDocsVarargs(value: GetResponse[T]*): Self = StObject.set(x, "docs", js.Array(value :_*))
   }
 }

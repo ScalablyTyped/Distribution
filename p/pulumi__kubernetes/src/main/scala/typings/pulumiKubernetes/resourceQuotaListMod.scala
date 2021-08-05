@@ -64,17 +64,14 @@ object resourceQuotaListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResourceQuotaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceQuotaList]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ResourceQuotaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceQuotaList]
+    inline def get(name: String, id: Input[ID]): ResourceQuotaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceQuotaList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): ResourceQuotaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceQuotaList]
     
     /**
       * Returns true if the given object is an instance of ResourceQuotaList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/resourceQuotaList.ResourceQuotaList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/resourceQuotaList.ResourceQuotaList */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/resourceQuotaList.ResourceQuotaList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/resourceQuotaList.ResourceQuotaList */ Boolean]
   }
   
   trait ResourceQuotaListArgs extends StObject {
@@ -101,38 +98,28 @@ object resourceQuotaListMod {
   }
   object ResourceQuotaListArgs {
     
-    @scala.inline
-    def apply(items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.ResourceQuota]]]): ResourceQuotaListArgs = {
+    inline def apply(items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.ResourceQuota]]]): ResourceQuotaListArgs = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceQuotaListArgs]
     }
     
-    @scala.inline
-    implicit class ResourceQuotaListArgsMutableBuilder[Self <: ResourceQuotaListArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceQuotaListArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setItems(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.ResourceQuota]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.ResourceQuota]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.ResourceQuota]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.ResourceQuota]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ResourceQuotaList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ResourceQuotaList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
 }

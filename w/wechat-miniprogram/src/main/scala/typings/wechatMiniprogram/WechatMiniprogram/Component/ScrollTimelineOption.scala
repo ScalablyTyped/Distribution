@@ -23,31 +23,23 @@ trait ScrollTimelineOption extends StObject {
 }
 object ScrollTimelineOption {
   
-  @scala.inline
-  def apply(endScrollOffset: Double, scrollSource: String, startScrollOffset: Double, timeRange: Double): ScrollTimelineOption = {
+  inline def apply(endScrollOffset: Double, scrollSource: String, startScrollOffset: Double, timeRange: Double): ScrollTimelineOption = {
     val __obj = js.Dynamic.literal(endScrollOffset = endScrollOffset.asInstanceOf[js.Any], scrollSource = scrollSource.asInstanceOf[js.Any], startScrollOffset = startScrollOffset.asInstanceOf[js.Any], timeRange = timeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollTimelineOption]
   }
   
-  @scala.inline
-  implicit class ScrollTimelineOptionMutableBuilder[Self <: ScrollTimelineOption] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollTimelineOption](x: Self) {
     
-    @scala.inline
-    def setEndScrollOffset(value: Double): Self = StObject.set(x, "endScrollOffset", value.asInstanceOf[js.Any])
+    inline def setEndScrollOffset(value: Double): Self = StObject.set(x, "endScrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setScrollSource(value: String): Self = StObject.set(x, "scrollSource", value.asInstanceOf[js.Any])
+    inline def setScrollSource(value: String): Self = StObject.set(x, "scrollSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartScrollOffset(value: Double): Self = StObject.set(x, "startScrollOffset", value.asInstanceOf[js.Any])
+    inline def setStartScrollOffset(value: Double): Self = StObject.set(x, "startScrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRange(value: Double): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
+    inline def setTimeRange(value: Double): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
   }
 }

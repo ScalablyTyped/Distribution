@@ -47,6 +47,5 @@ class Nuke protected ()
 }
 object Nuke {
   
-  @scala.inline
-  def apply: NukeConstructor = js.Dynamic.global.selectDynamic("Nuke").asInstanceOf[NukeConstructor]
+  inline def apply: NukeConstructor = js.Dynamic.global.selectDynamic("Nuke").asInstanceOf[NukeConstructor]
 }

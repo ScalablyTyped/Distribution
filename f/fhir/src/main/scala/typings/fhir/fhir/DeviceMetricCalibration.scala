@@ -43,49 +43,35 @@ trait DeviceMetricCalibration
 }
 object DeviceMetricCalibration {
   
-  @scala.inline
-  def apply(): DeviceMetricCalibration = {
+  inline def apply(): DeviceMetricCalibration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceMetricCalibration]
   }
   
-  @scala.inline
-  implicit class DeviceMetricCalibrationMutableBuilder[Self <: DeviceMetricCalibration] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceMetricCalibration](x: Self) {
     
-    @scala.inline
-    def setState(value: code): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: code): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTime(value: instant): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: instant): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_state(value: Element): Self = StObject.set(x, "_state", value.asInstanceOf[js.Any])
+    inline def set_state(value: Element): Self = StObject.set(x, "_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_stateUndefined: Self = StObject.set(x, "_state", js.undefined)
+    inline def set_stateUndefined: Self = StObject.set(x, "_state", js.undefined)
     
-    @scala.inline
-    def set_time(value: Element): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
+    inline def set_time(value: Element): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_timeUndefined: Self = StObject.set(x, "_time", js.undefined)
+    inline def set_timeUndefined: Self = StObject.set(x, "_time", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

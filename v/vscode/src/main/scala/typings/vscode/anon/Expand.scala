@@ -14,31 +14,23 @@ trait Expand extends StObject {
 }
 object Expand {
   
-  @scala.inline
-  def apply(): Expand = {
+  inline def apply(): Expand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Expand]
   }
   
-  @scala.inline
-  implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
+  extension [Self <: Expand](x: Self) {
     
-    @scala.inline
-    def setExpand(value: Boolean | Double): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Boolean | Double): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

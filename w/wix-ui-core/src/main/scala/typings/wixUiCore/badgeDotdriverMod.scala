@@ -12,8 +12,7 @@ object badgeDotdriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def badgeDriverFactory(hasElement: ComponentFactory): BadgeDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("badgeDriverFactory")(hasElement.asInstanceOf[js.Any]).asInstanceOf[BadgeDriver]
+  inline def badgeDriverFactory(hasElement: ComponentFactory): BadgeDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("badgeDriverFactory")(hasElement.asInstanceOf[js.Any]).asInstanceOf[BadgeDriver]
   
   trait BadgeDriver
     extends StObject
@@ -27,20 +26,16 @@ object badgeDotdriverMod {
   }
   object BadgeDriver {
     
-    @scala.inline
-    def apply(exists: () => Boolean, getContent: () => String, text: () => String): BadgeDriver = {
+    inline def apply(exists: () => Boolean, getContent: () => String, text: () => String): BadgeDriver = {
       val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), getContent = js.Any.fromFunction0(getContent), text = js.Any.fromFunction0(text))
       __obj.asInstanceOf[BadgeDriver]
     }
     
-    @scala.inline
-    implicit class BadgeDriverMutableBuilder[Self <: BadgeDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeDriver](x: Self) {
       
-      @scala.inline
-      def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
 }

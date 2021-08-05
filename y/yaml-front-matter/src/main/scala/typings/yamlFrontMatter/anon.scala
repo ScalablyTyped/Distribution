@@ -13,17 +13,14 @@ object anon {
   }
   object ContentKeyName {
     
-    @scala.inline
-    def apply[contentKeyName /* <: String */](contentKeyName: contentKeyName): ContentKeyName[contentKeyName] = {
+    inline def apply[contentKeyName /* <: String */](contentKeyName: contentKeyName): ContentKeyName[contentKeyName] = {
       val __obj = js.Dynamic.literal(contentKeyName = contentKeyName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentKeyName[contentKeyName]]
     }
     
-    @scala.inline
-    implicit class ContentKeyNameMutableBuilder[Self <: ContentKeyName[?], contentKeyName /* <: String */] (val x: Self & ContentKeyName[contentKeyName]) extends AnyVal {
+    extension [Self <: ContentKeyName[?], contentKeyName /* <: String */](x: Self & ContentKeyName[contentKeyName]) {
       
-      @scala.inline
-      def setContentKeyName(value: contentKeyName): Self = StObject.set(x, "contentKeyName", value.asInstanceOf[js.Any])
+      inline def setContentKeyName(value: contentKeyName): Self = StObject.set(x, "contentKeyName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -35,17 +32,14 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(__content: String): Dictkey = {
+    inline def apply(__content: String): Dictkey = {
       val __obj = js.Dynamic.literal(__content = __content.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def set__content(value: String): Self = StObject.set(x, "__content", value.asInstanceOf[js.Any])
+      inline def set__content(value: String): Self = StObject.set(x, "__content", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,6 +11,5 @@ object baseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def baseAnimation(isIos: Boolean): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("baseAnimation")(isIos.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def baseAnimation(isIos: Boolean): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("baseAnimation")(isIos.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

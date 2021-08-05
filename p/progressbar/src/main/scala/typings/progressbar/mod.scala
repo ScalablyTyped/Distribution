@@ -43,6 +43,5 @@ object mod {
     def total(total: Double): this.type = js.native
   }
   
-  @scala.inline
-  def create(): Progressbar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Progressbar]
+  inline def create(): Progressbar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Progressbar]
 }

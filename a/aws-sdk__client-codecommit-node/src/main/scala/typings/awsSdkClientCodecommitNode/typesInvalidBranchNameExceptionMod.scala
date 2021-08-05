@@ -26,17 +26,14 @@ object typesInvalidBranchNameExceptionMod {
   }
   object InvalidBranchNameException {
     
-    @scala.inline
-    def apply(): InvalidBranchNameException = {
+    inline def apply(): InvalidBranchNameException = {
       val __obj = js.Dynamic.literal(name = "InvalidBranchNameException")
       __obj.asInstanceOf[InvalidBranchNameException]
     }
     
-    @scala.inline
-    implicit class InvalidBranchNameExceptionMutableBuilder[Self <: InvalidBranchNameException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidBranchNameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBranchNameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

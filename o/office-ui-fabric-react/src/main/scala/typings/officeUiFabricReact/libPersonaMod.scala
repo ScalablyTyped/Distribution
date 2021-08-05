@@ -38,8 +38,7 @@ object libPersonaMod {
     @JSImport("office-ui-fabric-react/lib/Persona", "PersonaBase.defaultProps")
     @js.native
     def defaultProps: IPersonaProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPersonaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPersonaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Persona", "PersonaCoin")
@@ -62,8 +61,7 @@ object libPersonaMod {
     @JSImport("office-ui-fabric-react/lib/Persona", "PersonaCoinBase.defaultProps")
     @js.native
     def defaultProps: IPersonaCoinProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Persona", "PersonaInitialsColor")
@@ -192,8 +190,7 @@ object libPersonaMod {
     /* 0 */ val tiny: typings.officeUiFabricReact.personaTypesMod.PersonaSize.tiny & Double = js.native
   }
   
-  @scala.inline
-  def getPersonaInitialsColor(props: PickIPersonaPropsprimaryT): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonaInitialsColor")(props.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPersonaInitialsColor(props: PickIPersonaPropsprimaryT): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonaInitialsColor")(props.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object personaPresenceSize {
     
@@ -284,9 +281,7 @@ object libPersonaMod {
     val size8: /* "20px" */ String = js.native
   }
   
-  @scala.inline
-  def presenceBoolean(presence: PersonaPresence): IsAvailable = ^.asInstanceOf[js.Dynamic].applyDynamic("presenceBoolean")(presence.asInstanceOf[js.Any]).asInstanceOf[IsAvailable]
+  inline def presenceBoolean(presence: PersonaPresence): IsAvailable = ^.asInstanceOf[js.Dynamic].applyDynamic("presenceBoolean")(presence.asInstanceOf[js.Any]).asInstanceOf[IsAvailable]
   
-  @scala.inline
-  def sizeBoolean(size: PersonaSize): IsSize10 = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeBoolean")(size.asInstanceOf[js.Any]).asInstanceOf[IsSize10]
+  inline def sizeBoolean(size: PersonaSize): IsSize10 = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeBoolean")(size.asInstanceOf[js.Any]).asInstanceOf[IsSize10]
 }

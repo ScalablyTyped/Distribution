@@ -20,44 +20,32 @@ object anon {
   }
   object Accuracy {
     
-    @scala.inline
-    def apply(): Accuracy = {
+    inline def apply(): Accuracy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Accuracy]
     }
     
-    @scala.inline
-    implicit class AccuracyMutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
+    extension [Self <: Accuracy](x: Self) {
       
-      @scala.inline
-      def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+      inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+      inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+      inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+      inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
 }

@@ -37,8 +37,7 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply[ValueType /* <: js.Array[js.Any] */](array: ValueType): js.Promise[
+  inline def apply[ValueType /* <: js.Array[js.Any] */](array: ValueType): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
     */ typings.pSettle.pSettleStrings.^ & TopLevel[ValueType]
@@ -47,8 +46,7 @@ object mod {
   {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
     */ typings.pSettle.pSettleStrings.^ & TopLevel[ValueType]
   ]]
-  @scala.inline
-  def apply[ValueType /* <: js.Array[js.Any] */](array: ValueType, options: Options): js.Promise[
+  inline def apply[ValueType /* <: js.Array[js.Any] */](array: ValueType, options: Options): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
     */ typings.pSettle.pSettleStrings.^ & TopLevel[ValueType]
@@ -77,20 +75,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
     }
   }
   

@@ -23,31 +23,23 @@ trait FailureDetails extends StObject {
 }
 object FailureDetails {
   
-  @scala.inline
-  def apply(): FailureDetails = {
+  inline def apply(): FailureDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailureDetails]
   }
   
-  @scala.inline
-  implicit class FailureDetailsMutableBuilder[Self <: FailureDetails] (val x: Self) extends AnyVal {
+  extension [Self <: FailureDetails](x: Self) {
     
-    @scala.inline
-    def setLogFile(value: String): Self = StObject.set(x, "LogFile", value.asInstanceOf[js.Any])
+    inline def setLogFile(value: String): Self = StObject.set(x, "LogFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogFileUndefined: Self = StObject.set(x, "LogFile", js.undefined)
+    inline def setLogFileUndefined: Self = StObject.set(x, "LogFile", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
   }
 }

@@ -13,7 +13,7 @@ object takeUntilObserverMod {
   class TakeUntilObserver protected () extends Observer {
     def this(prevObserver: IObserver) = this()
     
-    var _prevObserver: js.Any = js.native
+    /* private */ var _prevObserver: js.Any = js.native
   }
   /* static members */
   object TakeUntilObserver {
@@ -22,7 +22,6 @@ object takeUntilObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(prevObserver: IObserver): TakeUntilObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any]).asInstanceOf[TakeUntilObserver]
+    inline def create(prevObserver: IObserver): TakeUntilObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any]).asInstanceOf[TakeUntilObserver]
   }
 }

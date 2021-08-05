@@ -13,15 +13,13 @@ trait While
      with _Node
 object While {
   
-  @scala.inline
-  def DoWhileStatement_(body: Statement, test: Expression): typings.babelTypes.indexTs37Mod.DoWhileStatement_ = {
+  inline def DoWhileStatement_(body: Statement, test: Expression): typings.babelTypes.indexTs37Mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.DoWhileStatement_]
   }
   
-  @scala.inline
-  def WhileStatement_(body: Statement, test: Expression): typings.babelTypes.indexTs37Mod.WhileStatement_ = {
+  inline def WhileStatement_(body: Statement, test: Expression): typings.babelTypes.indexTs37Mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.WhileStatement_]

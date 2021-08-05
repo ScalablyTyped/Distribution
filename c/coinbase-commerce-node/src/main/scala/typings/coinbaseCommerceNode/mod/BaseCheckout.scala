@@ -35,31 +35,23 @@ trait BaseCheckout extends StObject {
 }
 object BaseCheckout {
   
-  @scala.inline
-  def apply(description: String, name: String, pricing_type: PricingType): BaseCheckout = {
+  inline def apply(description: String, name: String, pricing_type: PricingType): BaseCheckout = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseCheckout]
   }
   
-  @scala.inline
-  implicit class BaseCheckoutMutableBuilder[Self <: BaseCheckout] (val x: Self) extends AnyVal {
+  extension [Self <: BaseCheckout](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricing_type(value: PricingType): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
+    inline def setPricing_type(value: PricingType): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequested_info(value: js.Array[email | name]): Self = StObject.set(x, "requested_info", value.asInstanceOf[js.Any])
+    inline def setRequested_info(value: js.Array[email | name]): Self = StObject.set(x, "requested_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequested_infoUndefined: Self = StObject.set(x, "requested_info", js.undefined)
+    inline def setRequested_infoUndefined: Self = StObject.set(x, "requested_info", js.undefined)
     
-    @scala.inline
-    def setRequested_infoVarargs(value: (email | name)*): Self = StObject.set(x, "requested_info", js.Array(value :_*))
+    inline def setRequested_infoVarargs(value: (email | name)*): Self = StObject.set(x, "requested_info", js.Array(value :_*))
   }
 }

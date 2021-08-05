@@ -17,17 +17,14 @@ trait StringLiteral
 }
 object StringLiteral {
   
-  @scala.inline
-  def apply(value: String): StringLiteral = {
+  inline def apply(value: String): StringLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("literal")
     __obj.asInstanceOf[StringLiteral]
   }
   
-  @scala.inline
-  implicit class StringLiteralMutableBuilder[Self <: StringLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: StringLiteral](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

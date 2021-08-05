@@ -23,31 +23,23 @@ trait S3Object extends StObject {
 }
 object S3Object {
   
-  @scala.inline
-  def apply(): S3Object = {
+  inline def apply(): S3Object = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Object]
   }
   
-  @scala.inline
-  implicit class S3ObjectMutableBuilder[Self <: S3Object] (val x: Self) extends AnyVal {
+  extension [Self <: S3Object](x: Self) {
     
-    @scala.inline
-    def setBucket(value: S3Bucket): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: S3Bucket): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setName(value: S3ObjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: S3ObjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: S3ObjectVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: S3ObjectVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

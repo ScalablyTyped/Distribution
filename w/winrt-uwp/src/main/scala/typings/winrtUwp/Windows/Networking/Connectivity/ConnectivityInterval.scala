@@ -16,19 +16,15 @@ trait ConnectivityInterval extends StObject {
 }
 object ConnectivityInterval {
   
-  @scala.inline
-  def apply(connectionDuration: Double, startTime: Date): ConnectivityInterval = {
+  inline def apply(connectionDuration: Double, startTime: Date): ConnectivityInterval = {
     val __obj = js.Dynamic.literal(connectionDuration = connectionDuration.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectivityInterval]
   }
   
-  @scala.inline
-  implicit class ConnectivityIntervalMutableBuilder[Self <: ConnectivityInterval] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectivityInterval](x: Self) {
     
-    @scala.inline
-    def setConnectionDuration(value: Double): Self = StObject.set(x, "connectionDuration", value.asInstanceOf[js.Any])
+    inline def setConnectionDuration(value: Double): Self = StObject.set(x, "connectionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

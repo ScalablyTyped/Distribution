@@ -28,8 +28,7 @@ trait AnimationStateAdapter
 }
 object AnimationStateAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     complete: TrackEntry => Unit,
     dispose: TrackEntry => Unit,
     end: TrackEntry => Unit,
@@ -41,25 +40,18 @@ object AnimationStateAdapter {
     __obj.asInstanceOf[AnimationStateAdapter]
   }
   
-  @scala.inline
-  implicit class AnimationStateAdapterMutableBuilder[Self <: AnimationStateAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStateAdapter](x: Self) {
     
-    @scala.inline
-    def setComplete(value: TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDispose(value: TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+    inline def setDispose(value: TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnd(value: TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvent(value: (TrackEntry, Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
+    inline def setEvent(value: (TrackEntry, Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInterrupt(value: TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
+    inline def setInterrupt(value: TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }
 }

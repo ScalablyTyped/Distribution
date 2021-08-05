@@ -18,8 +18,7 @@ object mod {
   class default ()
     extends Component[Props, js.Object, js.Any]
   
-  @scala.inline
-  def addStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addStyles")().asInstanceOf[Unit]
+  inline def addStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addStyles")().asInstanceOf[Unit]
   
   type MathQuill = Component[Props, js.Object, js.Any]
   
@@ -36,38 +35,28 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setLatex(value: String): Self = StObject.set(x, "latex", value.asInstanceOf[js.Any])
+      inline def setLatex(value: String): Self = StObject.set(x, "latex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatexUndefined: Self = StObject.set(x, "latex", js.undefined)
+      inline def setLatexUndefined: Self = StObject.set(x, "latex", js.undefined)
       
-      @scala.inline
-      def setMathquillDidMount(value: /* mathField */ MQ => Unit): Self = StObject.set(x, "mathquillDidMount", js.Any.fromFunction1(value))
+      inline def setMathquillDidMount(value: /* mathField */ MQ => Unit): Self = StObject.set(x, "mathquillDidMount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMathquillDidMountUndefined: Self = StObject.set(x, "mathquillDidMount", js.undefined)
+      inline def setMathquillDidMountUndefined: Self = StObject.set(x, "mathquillDidMount", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* mathField */ MQ => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* mathField */ MQ => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
 }

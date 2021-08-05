@@ -31,8 +31,7 @@ trait Range extends StObject {
 }
 object Range {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compare: Range => Double,
     containsIndex: Double => Boolean,
     containsRange: Range => Boolean,
@@ -49,40 +48,28 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setCompare(value: Range => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
+    inline def setCompare(value: Range => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsIndex(value: Double => Boolean): Self = StObject.set(x, "containsIndex", js.Any.fromFunction1(value))
+    inline def setContainsIndex(value: Double => Boolean): Self = StObject.set(x, "containsIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsRange(value: Range => Boolean): Self = StObject.set(x, "containsRange", js.Any.fromFunction1(value))
+    inline def setContainsRange(value: Range => Boolean): Self = StObject.set(x, "containsRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersection(value: Range => Range): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+    inline def setIntersection(value: Range => Range): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersectsRange(value: Range => Boolean): Self = StObject.set(x, "intersectsRange", js.Any.fromFunction1(value))
+    inline def setIntersectsRange(value: Range => Boolean): Self = StObject.set(x, "intersectsRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEqual(value: Range => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: Range => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnion(value: Range => Range): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
+    inline def setUnion(value: Range => Range): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
   }
 }

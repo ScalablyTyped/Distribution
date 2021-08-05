@@ -18,64 +18,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalFormattingRule extends StObject
 object ConditionalFormattingRule {
   
-  @scala.inline
-  def AboveAverageRuleType(aboveAverage: Boolean, priority: Double): typings.exceljs.mod.AboveAverageRuleType = {
+  inline def AboveAverageRuleType(aboveAverage: Boolean, priority: Double): typings.exceljs.mod.AboveAverageRuleType = {
     val __obj = js.Dynamic.literal(aboveAverage = aboveAverage.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("aboveAverage")
     __obj.asInstanceOf[typings.exceljs.mod.AboveAverageRuleType]
   }
   
-  @scala.inline
-  def CellIsRuleType(priority: Double): typings.exceljs.mod.CellIsRuleType = {
+  inline def CellIsRuleType(priority: Double): typings.exceljs.mod.CellIsRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("cellIs")
     __obj.asInstanceOf[typings.exceljs.mod.CellIsRuleType]
   }
   
-  @scala.inline
-  def ColorScaleRuleType(priority: Double): typings.exceljs.mod.ColorScaleRuleType = {
+  inline def ColorScaleRuleType(priority: Double): typings.exceljs.mod.ColorScaleRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("colorScale")
     __obj.asInstanceOf[typings.exceljs.mod.ColorScaleRuleType]
   }
   
-  @scala.inline
-  def ContainsTextRuleType(priority: Double): typings.exceljs.mod.ContainsTextRuleType = {
+  inline def ContainsTextRuleType(priority: Double): typings.exceljs.mod.ContainsTextRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("containsText")
     __obj.asInstanceOf[typings.exceljs.mod.ContainsTextRuleType]
   }
   
-  @scala.inline
-  def DataBarRuleType(priority: Double): typings.exceljs.mod.DataBarRuleType = {
+  inline def DataBarRuleType(priority: Double): typings.exceljs.mod.DataBarRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("dataBar")
     __obj.asInstanceOf[typings.exceljs.mod.DataBarRuleType]
   }
   
-  @scala.inline
-  def ExpressionRuleType(priority: Double): typings.exceljs.mod.ExpressionRuleType = {
+  inline def ExpressionRuleType(priority: Double): typings.exceljs.mod.ExpressionRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("expression")
     __obj.asInstanceOf[typings.exceljs.mod.ExpressionRuleType]
   }
   
-  @scala.inline
-  def IconSetRuleType(priority: Double): typings.exceljs.mod.IconSetRuleType = {
+  inline def IconSetRuleType(priority: Double): typings.exceljs.mod.IconSetRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("iconSet")
     __obj.asInstanceOf[typings.exceljs.mod.IconSetRuleType]
   }
   
-  @scala.inline
-  def TimePeriodRuleType(priority: Double): typings.exceljs.mod.TimePeriodRuleType = {
+  inline def TimePeriodRuleType(priority: Double): typings.exceljs.mod.TimePeriodRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("timePeriod")
     __obj.asInstanceOf[typings.exceljs.mod.TimePeriodRuleType]
   }
   
-  @scala.inline
-  def Top10RuleType(bottom: Boolean, percent: Boolean, priority: Double, rank: Double): typings.exceljs.mod.Top10RuleType = {
+  inline def Top10RuleType(bottom: Boolean, percent: Boolean, priority: Double, rank: Double): typings.exceljs.mod.Top10RuleType = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("top10")
     __obj.asInstanceOf[typings.exceljs.mod.Top10RuleType]

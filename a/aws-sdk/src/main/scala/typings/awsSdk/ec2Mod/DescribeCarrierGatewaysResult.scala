@@ -18,28 +18,21 @@ trait DescribeCarrierGatewaysResult extends StObject {
 }
 object DescribeCarrierGatewaysResult {
   
-  @scala.inline
-  def apply(): DescribeCarrierGatewaysResult = {
+  inline def apply(): DescribeCarrierGatewaysResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCarrierGatewaysResult]
   }
   
-  @scala.inline
-  implicit class DescribeCarrierGatewaysResultMutableBuilder[Self <: DescribeCarrierGatewaysResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCarrierGatewaysResult](x: Self) {
     
-    @scala.inline
-    def setCarrierGateways(value: CarrierGatewaySet): Self = StObject.set(x, "CarrierGateways", value.asInstanceOf[js.Any])
+    inline def setCarrierGateways(value: CarrierGatewaySet): Self = StObject.set(x, "CarrierGateways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierGatewaysUndefined: Self = StObject.set(x, "CarrierGateways", js.undefined)
+    inline def setCarrierGatewaysUndefined: Self = StObject.set(x, "CarrierGateways", js.undefined)
     
-    @scala.inline
-    def setCarrierGatewaysVarargs(value: CarrierGateway*): Self = StObject.set(x, "CarrierGateways", js.Array(value :_*))
+    inline def setCarrierGatewaysVarargs(value: CarrierGateway*): Self = StObject.set(x, "CarrierGateways", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

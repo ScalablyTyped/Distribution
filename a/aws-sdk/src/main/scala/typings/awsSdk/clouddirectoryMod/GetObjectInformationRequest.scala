@@ -23,25 +23,19 @@ trait GetObjectInformationRequest extends StObject {
 }
 object GetObjectInformationRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn, ObjectReference: ObjectReference): GetObjectInformationRequest = {
+  inline def apply(DirectoryArn: Arn, ObjectReference: ObjectReference): GetObjectInformationRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectInformationRequest]
   }
   
-  @scala.inline
-  implicit class GetObjectInformationRequestMutableBuilder[Self <: GetObjectInformationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectInformationRequest](x: Self) {
     
-    @scala.inline
-    def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
+    inline def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistencyLevelUndefined: Self = StObject.set(x, "ConsistencyLevel", js.undefined)
+    inline def setConsistencyLevelUndefined: Self = StObject.set(x, "ConsistencyLevel", js.undefined)
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }
 }

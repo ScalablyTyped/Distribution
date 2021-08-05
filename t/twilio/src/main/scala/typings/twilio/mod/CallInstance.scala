@@ -16,8 +16,7 @@ trait CallInstance
 }
 object CallInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     feedback: CallFeedbackResource,
     get: RestMethod,
@@ -30,16 +29,12 @@ object CallInstance {
     __obj.asInstanceOf[CallInstance]
   }
   
-  @scala.inline
-  implicit class CallInstanceMutableBuilder[Self <: CallInstance] (val x: Self) extends AnyVal {
+  extension [Self <: CallInstance](x: Self) {
     
-    @scala.inline
-    def setFeedback(value: CallFeedbackResource): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: CallFeedbackResource): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: CallNotificationResource): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: CallNotificationResource): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordings(value: CallRecordingResource): Self = StObject.set(x, "recordings", value.asInstanceOf[js.Any])
+    inline def setRecordings(value: CallRecordingResource): Self = StObject.set(x, "recordings", value.asInstanceOf[js.Any])
   }
 }

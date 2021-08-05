@@ -24,8 +24,7 @@ trait XRangeXMLConversion
 }
 object XRangeXMLConversion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertRangeFromXML: String => String,
     convertRangeToXML: String => String,
@@ -36,13 +35,10 @@ object XRangeXMLConversion {
     __obj.asInstanceOf[XRangeXMLConversion]
   }
   
-  @scala.inline
-  implicit class XRangeXMLConversionMutableBuilder[Self <: XRangeXMLConversion] (val x: Self) extends AnyVal {
+  extension [Self <: XRangeXMLConversion](x: Self) {
     
-    @scala.inline
-    def setConvertRangeFromXML(value: String => String): Self = StObject.set(x, "convertRangeFromXML", js.Any.fromFunction1(value))
+    inline def setConvertRangeFromXML(value: String => String): Self = StObject.set(x, "convertRangeFromXML", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertRangeToXML(value: String => String): Self = StObject.set(x, "convertRangeToXML", js.Any.fromFunction1(value))
+    inline def setConvertRangeToXML(value: String => String): Self = StObject.set(x, "convertRangeToXML", js.Any.fromFunction1(value))
   }
 }

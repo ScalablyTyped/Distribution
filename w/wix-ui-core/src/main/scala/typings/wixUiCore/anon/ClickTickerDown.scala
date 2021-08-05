@@ -37,8 +37,7 @@ trait ClickTickerDown extends StObject {
 }
 object ClickTickerDown {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => js.Any,
     clickTickerDown: () => js.Any,
     clickTickerUp: () => js.Any,
@@ -58,49 +57,34 @@ object ClickTickerDown {
     __obj.asInstanceOf[ClickTickerDown]
   }
   
-  @scala.inline
-  implicit class ClickTickerDownMutableBuilder[Self <: ClickTickerDown] (val x: Self) extends AnyVal {
+  extension [Self <: ClickTickerDown](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClickTickerDown(value: () => js.Any): Self = StObject.set(x, "clickTickerDown", js.Any.fromFunction0(value))
+    inline def setClickTickerDown(value: () => js.Any): Self = StObject.set(x, "clickTickerDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClickTickerUp(value: () => js.Any): Self = StObject.set(x, "clickTickerUp", js.Any.fromFunction0(value))
+    inline def setClickTickerUp(value: () => js.Any): Self = StObject.set(x, "clickTickerUp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: () => js.Any): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Any): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInlineStyle(value: () => CSSStyleDeclaration): Self = StObject.set(x, "getInlineStyle", js.Any.fromFunction0(value))
+    inline def setGetInlineStyle(value: () => CSSStyleDeclaration): Self = StObject.set(x, "getInlineStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInputElement(value: () => js.Any): Self = StObject.set(x, "getInputElement", js.Any.fromFunction0(value))
+    inline def setGetInputElement(value: () => js.Any): Self = StObject.set(x, "getInputElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInputType(value: () => js.Any): Self = StObject.set(x, "getInputType", js.Any.fromFunction0(value))
+    inline def setGetInputType(value: () => js.Any): Self = StObject.set(x, "getInputType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTickers(value: () => js.Any): Self = StObject.set(x, "getTickers", js.Any.fromFunction0(value))
+    inline def setGetTickers(value: () => js.Any): Self = StObject.set(x, "getTickers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => js.Any): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => js.Any): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+    inline def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

@@ -19,8 +19,7 @@ trait BootstrapClientTabControl
 }
 object BootstrapClientTabControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveTabChanged: ASPxClientEvent[ASPxClientTabControlTabEventHandler[ASPxClientTabControlBase]],
     ActiveTabChanging: ASPxClientEvent[ASPxClientTabControlTabCancelEventHandler[ASPxClientTabControlBase]],
     AdjustControl: () => Unit,
@@ -55,10 +54,8 @@ object BootstrapClientTabControl {
     __obj.asInstanceOf[BootstrapClientTabControl]
   }
   
-  @scala.inline
-  implicit class BootstrapClientTabControlMutableBuilder[Self <: BootstrapClientTabControl] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientTabControl](x: Self) {
     
-    @scala.inline
-    def setSetActiveTab(value: BootstrapClientTab => Unit): Self = StObject.set(x, "SetActiveTab", js.Any.fromFunction1(value))
+    inline def setSetActiveTab(value: BootstrapClientTab => Unit): Self = StObject.set(x, "SetActiveTab", js.Any.fromFunction1(value))
   }
 }

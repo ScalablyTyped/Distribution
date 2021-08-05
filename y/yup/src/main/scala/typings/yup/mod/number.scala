@@ -14,6 +14,5 @@ class number[T /* <: js.UndefOr[Double | Null] */, C] ()
      with NumberSchema[T, C]
 object number {
   
-  @scala.inline
-  def apply: NumberSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("number").asInstanceOf[NumberSchemaConstructor]
+  inline def apply: NumberSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("number").asInstanceOf[NumberSchemaConstructor]
 }

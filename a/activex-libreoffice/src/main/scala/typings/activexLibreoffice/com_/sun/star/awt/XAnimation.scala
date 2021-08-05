@@ -21,22 +21,17 @@ trait XAnimation extends StObject {
 }
 object XAnimation {
   
-  @scala.inline
-  def apply(isAnimationRunning: () => Boolean, startAnimation: () => Unit, stopAnimation: () => Unit): XAnimation = {
+  inline def apply(isAnimationRunning: () => Boolean, startAnimation: () => Unit, stopAnimation: () => Unit): XAnimation = {
     val __obj = js.Dynamic.literal(isAnimationRunning = js.Any.fromFunction0(isAnimationRunning), startAnimation = js.Any.fromFunction0(startAnimation), stopAnimation = js.Any.fromFunction0(stopAnimation))
     __obj.asInstanceOf[XAnimation]
   }
   
-  @scala.inline
-  implicit class XAnimationMutableBuilder[Self <: XAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimation](x: Self) {
     
-    @scala.inline
-    def setIsAnimationRunning(value: () => Boolean): Self = StObject.set(x, "isAnimationRunning", js.Any.fromFunction0(value))
+    inline def setIsAnimationRunning(value: () => Boolean): Self = StObject.set(x, "isAnimationRunning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartAnimation(value: () => Unit): Self = StObject.set(x, "startAnimation", js.Any.fromFunction0(value))
+    inline def setStartAnimation(value: () => Unit): Self = StObject.set(x, "startAnimation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopAnimation(value: () => Unit): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
+    inline def setStopAnimation(value: () => Unit): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
   }
 }

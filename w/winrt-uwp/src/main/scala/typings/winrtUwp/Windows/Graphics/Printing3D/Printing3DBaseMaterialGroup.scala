@@ -16,19 +16,15 @@ trait Printing3DBaseMaterialGroup extends StObject {
 }
 object Printing3DBaseMaterialGroup {
   
-  @scala.inline
-  def apply(bases: IVector[Printing3DBaseMaterial], materialGroupId: Double): Printing3DBaseMaterialGroup = {
+  inline def apply(bases: IVector[Printing3DBaseMaterial], materialGroupId: Double): Printing3DBaseMaterialGroup = {
     val __obj = js.Dynamic.literal(bases = bases.asInstanceOf[js.Any], materialGroupId = materialGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DBaseMaterialGroup]
   }
   
-  @scala.inline
-  implicit class Printing3DBaseMaterialGroupMutableBuilder[Self <: Printing3DBaseMaterialGroup] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DBaseMaterialGroup](x: Self) {
     
-    @scala.inline
-    def setBases(value: IVector[Printing3DBaseMaterial]): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
+    inline def setBases(value: IVector[Printing3DBaseMaterial]): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
+    inline def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,11 +14,8 @@ object ColorGeom {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyBrightness(color: Double, brightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBrightness")(color.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def applyBrightness(color: Double, brightness: Double, highlight: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBrightness")(color.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any], highlight.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def applyBrightness(color: Double, brightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBrightness")(color.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def applyBrightness(color: Double, brightness: Double, highlight: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBrightness")(color.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any], highlight.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def get32(color: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get32")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def get32(color: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get32")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -12,19 +12,15 @@ trait AreaChartProps[T]
 }
 object AreaChartProps {
   
-  @scala.inline
-  def apply[T](data: js.Array[T]): AreaChartProps[T] = {
+  inline def apply[T](data: js.Array[T]): AreaChartProps[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaChartProps[T]]
   }
   
-  @scala.inline
-  implicit class AreaChartPropsMutableBuilder[Self <: AreaChartProps[?], T] (val x: Self & AreaChartProps[T]) extends AnyVal {
+  extension [Self <: AreaChartProps[?], T](x: Self & AreaChartProps[T]) {
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

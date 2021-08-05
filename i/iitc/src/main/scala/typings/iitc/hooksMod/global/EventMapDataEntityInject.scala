@@ -10,16 +10,13 @@ trait EventMapDataEntityInject extends StObject {
 }
 object EventMapDataEntityInject {
   
-  @scala.inline
-  def apply(callback: js.Any => Unit): EventMapDataEntityInject = {
+  inline def apply(callback: js.Any => Unit): EventMapDataEntityInject = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback))
     __obj.asInstanceOf[EventMapDataEntityInject]
   }
   
-  @scala.inline
-  implicit class EventMapDataEntityInjectMutableBuilder[Self <: EventMapDataEntityInject] (val x: Self) extends AnyVal {
+  extension [Self <: EventMapDataEntityInject](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
   }
 }

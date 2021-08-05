@@ -63,14 +63,11 @@ object mod extends Shortcut {
   trait Casing extends StObject
   object Casing {
     
-    @scala.inline
-    def lower: typings.inputmask.inputmaskStrings.lower = "lower".asInstanceOf[typings.inputmask.inputmaskStrings.lower]
+    inline def lower: typings.inputmask.inputmaskStrings.lower = "lower".asInstanceOf[typings.inputmask.inputmaskStrings.lower]
     
-    @scala.inline
-    def title: typings.inputmask.inputmaskStrings.title = "title".asInstanceOf[typings.inputmask.inputmaskStrings.title]
+    inline def title: typings.inputmask.inputmaskStrings.title = "title".asInstanceOf[typings.inputmask.inputmaskStrings.title]
     
-    @scala.inline
-    def upper: typings.inputmask.inputmaskStrings.upper = "upper".asInstanceOf[typings.inputmask.inputmaskStrings.upper]
+    inline def upper: typings.inputmask.inputmaskStrings.upper = "upper".asInstanceOf[typings.inputmask.inputmaskStrings.upper]
   }
   
   trait CommandObject extends StObject {
@@ -108,56 +105,40 @@ object mod extends Shortcut {
   }
   object CommandObject {
     
-    @scala.inline
-    def apply(): CommandObject = {
+    inline def apply(): CommandObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandObject]
     }
     
-    @scala.inline
-    implicit class CommandObjectMutableBuilder[Self <: CommandObject] (val x: Self) extends AnyVal {
+    extension [Self <: CommandObject](x: Self) {
       
-      @scala.inline
-      def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+      inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+      inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
       
-      @scala.inline
-      def setCaret(value: Double): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+      inline def setCaret(value: Double): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
+      inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
       
-      @scala.inline
-      def setInsert(value: InsertPosition | js.Array[InsertPosition]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: InsertPosition | js.Array[InsertPosition]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      @scala.inline
-      def setInsertVarargs(value: InsertPosition*): Self = StObject.set(x, "insert", js.Array(value :_*))
+      inline def setInsertVarargs(value: InsertPosition*): Self = StObject.set(x, "insert", js.Array(value :_*))
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
+      inline def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
       
-      @scala.inline
-      def setRefreshFromBuffer(value: `true` | Start): Self = StObject.set(x, "refreshFromBuffer", value.asInstanceOf[js.Any])
+      inline def setRefreshFromBuffer(value: `true` | Start): Self = StObject.set(x, "refreshFromBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshFromBufferUndefined: Self = StObject.set(x, "refreshFromBuffer", js.undefined)
+      inline def setRefreshFromBufferUndefined: Self = StObject.set(x, "refreshFromBuffer", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Double | js.Array[Double]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Double | js.Array[Double]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setRemoveVarargs(value: Double*): Self = StObject.set(x, "remove", js.Array(value :_*))
+      inline def setRemoveVarargs(value: Double*): Self = StObject.set(x, "remove", js.Array(value :_*))
     }
   }
   
@@ -175,44 +156,32 @@ object mod extends Shortcut {
   }
   object Definition {
     
-    @scala.inline
-    def apply(validator: String | DefinitionValidator): Definition = {
+    inline def apply(validator: String | DefinitionValidator): Definition = {
       val __obj = js.Dynamic.literal(validator = validator.asInstanceOf[js.Any])
       __obj.asInstanceOf[Definition]
     }
     
-    @scala.inline
-    implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
+    extension [Self <: Definition](x: Self) {
       
-      @scala.inline
-      def setCardinality(value: Double): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
+      inline def setCardinality(value: Double): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
+      inline def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
       
-      @scala.inline
-      def setCasing(value: Casing): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
+      inline def setCasing(value: Casing): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
+      inline def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
       
-      @scala.inline
-      def setDefinitionSymbol(value: String): Self = StObject.set(x, "definitionSymbol", value.asInstanceOf[js.Any])
+      inline def setDefinitionSymbol(value: String): Self = StObject.set(x, "definitionSymbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinitionSymbolUndefined: Self = StObject.set(x, "definitionSymbol", js.undefined)
+      inline def setDefinitionSymbolUndefined: Self = StObject.set(x, "definitionSymbol", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setValidator(value: String | DefinitionValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: String | DefinitionValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatorFunction5(
+      inline def setValidatorFunction5(
         value: (/* chrs */ String, /* buffer */ js.Array[String], /* pos */ Double, /* strict */ Boolean, /* opts */ Options) => Boolean | C
       ): Self = StObject.set(x, "validator", js.Any.fromFunction5(value))
     }
@@ -241,32 +210,23 @@ object mod extends Shortcut {
   trait InputMode extends StObject
   object InputMode {
     
-    @scala.inline
-    def decimal: typings.inputmask.inputmaskStrings.decimal = "decimal".asInstanceOf[typings.inputmask.inputmaskStrings.decimal]
+    inline def decimal: typings.inputmask.inputmaskStrings.decimal = "decimal".asInstanceOf[typings.inputmask.inputmaskStrings.decimal]
     
-    @scala.inline
-    def email: typings.inputmask.inputmaskStrings.email = "email".asInstanceOf[typings.inputmask.inputmaskStrings.email]
+    inline def email: typings.inputmask.inputmaskStrings.email = "email".asInstanceOf[typings.inputmask.inputmaskStrings.email]
     
-    @scala.inline
-    def none: typings.inputmask.inputmaskStrings.none = "none".asInstanceOf[typings.inputmask.inputmaskStrings.none]
+    inline def none: typings.inputmask.inputmaskStrings.none = "none".asInstanceOf[typings.inputmask.inputmaskStrings.none]
     
-    @scala.inline
-    def numeric: typings.inputmask.inputmaskStrings.numeric = "numeric".asInstanceOf[typings.inputmask.inputmaskStrings.numeric]
+    inline def numeric: typings.inputmask.inputmaskStrings.numeric = "numeric".asInstanceOf[typings.inputmask.inputmaskStrings.numeric]
     
-    @scala.inline
-    def search: typings.inputmask.inputmaskStrings.search = "search".asInstanceOf[typings.inputmask.inputmaskStrings.search]
+    inline def search: typings.inputmask.inputmaskStrings.search = "search".asInstanceOf[typings.inputmask.inputmaskStrings.search]
     
-    @scala.inline
-    def tel: typings.inputmask.inputmaskStrings.tel = "tel".asInstanceOf[typings.inputmask.inputmaskStrings.tel]
+    inline def tel: typings.inputmask.inputmaskStrings.tel = "tel".asInstanceOf[typings.inputmask.inputmaskStrings.tel]
     
-    @scala.inline
-    def text: typings.inputmask.inputmaskStrings.text = "text".asInstanceOf[typings.inputmask.inputmaskStrings.text]
+    inline def text: typings.inputmask.inputmaskStrings.text = "text".asInstanceOf[typings.inputmask.inputmaskStrings.text]
     
-    @scala.inline
-    def url: typings.inputmask.inputmaskStrings.url = "url".asInstanceOf[typings.inputmask.inputmaskStrings.url]
+    inline def url: typings.inputmask.inputmaskStrings.url = "url".asInstanceOf[typings.inputmask.inputmaskStrings.url]
     
-    @scala.inline
-    def verbatim: typings.inputmask.inputmaskStrings.verbatim = "verbatim".asInstanceOf[typings.inputmask.inputmaskStrings.verbatim]
+    inline def verbatim: typings.inputmask.inputmaskStrings.verbatim = "verbatim".asInstanceOf[typings.inputmask.inputmaskStrings.verbatim]
   }
   
   trait InsertPosition extends StObject {
@@ -283,20 +243,16 @@ object mod extends Shortcut {
   }
   object InsertPosition {
     
-    @scala.inline
-    def apply(c: String, pos: Double): InsertPosition = {
+    inline def apply(c: String, pos: Double): InsertPosition = {
       val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[InsertPosition]
     }
     
-    @scala.inline
-    implicit class InsertPositionMutableBuilder[Self <: InsertPosition] (val x: Self) extends AnyVal {
+    extension [Self <: InsertPosition](x: Self) {
       
-      @scala.inline
-      def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+      inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -980,469 +936,318 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAllowMinus(value: Boolean): Self = StObject.set(x, "allowMinus", value.asInstanceOf[js.Any])
+      inline def setAllowMinus(value: Boolean): Self = StObject.set(x, "allowMinus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMinusUndefined: Self = StObject.set(x, "allowMinus", js.undefined)
+      inline def setAllowMinusUndefined: Self = StObject.set(x, "allowMinus", js.undefined)
       
-      @scala.inline
-      def setAlternatormarker(value: String): Self = StObject.set(x, "alternatormarker", value.asInstanceOf[js.Any])
+      inline def setAlternatormarker(value: String): Self = StObject.set(x, "alternatormarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternatormarkerUndefined: Self = StObject.set(x, "alternatormarker", js.undefined)
+      inline def setAlternatormarkerUndefined: Self = StObject.set(x, "alternatormarker", js.undefined)
       
-      @scala.inline
-      def setAutoGroup(value: Boolean): Self = StObject.set(x, "autoGroup", value.asInstanceOf[js.Any])
+      inline def setAutoGroup(value: Boolean): Self = StObject.set(x, "autoGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoGroupUndefined: Self = StObject.set(x, "autoGroup", js.undefined)
+      inline def setAutoGroupUndefined: Self = StObject.set(x, "autoGroup", js.undefined)
       
-      @scala.inline
-      def setAutoUnmask(value: Boolean): Self = StObject.set(x, "autoUnmask", value.asInstanceOf[js.Any])
+      inline def setAutoUnmask(value: Boolean): Self = StObject.set(x, "autoUnmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUnmaskUndefined: Self = StObject.set(x, "autoUnmask", js.undefined)
+      inline def setAutoUnmaskUndefined: Self = StObject.set(x, "autoUnmask", js.undefined)
       
-      @scala.inline
-      def setCasing(value: Casing): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
+      inline def setCasing(value: Casing): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
+      inline def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
       
-      @scala.inline
-      def setClearIncomplete(value: Boolean): Self = StObject.set(x, "clearIncomplete", value.asInstanceOf[js.Any])
+      inline def setClearIncomplete(value: Boolean): Self = StObject.set(x, "clearIncomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearIncompleteUndefined: Self = StObject.set(x, "clearIncomplete", js.undefined)
+      inline def setClearIncompleteUndefined: Self = StObject.set(x, "clearIncomplete", js.undefined)
       
-      @scala.inline
-      def setClearMaskOnLostFocus(value: Boolean): Self = StObject.set(x, "clearMaskOnLostFocus", value.asInstanceOf[js.Any])
+      inline def setClearMaskOnLostFocus(value: Boolean): Self = StObject.set(x, "clearMaskOnLostFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearMaskOnLostFocusUndefined: Self = StObject.set(x, "clearMaskOnLostFocus", js.undefined)
+      inline def setClearMaskOnLostFocusUndefined: Self = StObject.set(x, "clearMaskOnLostFocus", js.undefined)
       
-      @scala.inline
-      def setColorMask(value: Boolean): Self = StObject.set(x, "colorMask", value.asInstanceOf[js.Any])
+      inline def setColorMask(value: Boolean): Self = StObject.set(x, "colorMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorMaskUndefined: Self = StObject.set(x, "colorMask", js.undefined)
+      inline def setColorMaskUndefined: Self = StObject.set(x, "colorMask", js.undefined)
       
-      @scala.inline
-      def setDecimalProtect(value: Boolean): Self = StObject.set(x, "decimalProtect", value.asInstanceOf[js.Any])
+      inline def setDecimalProtect(value: Boolean): Self = StObject.set(x, "decimalProtect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalProtectUndefined: Self = StObject.set(x, "decimalProtect", js.undefined)
+      inline def setDecimalProtectUndefined: Self = StObject.set(x, "decimalProtect", js.undefined)
       
-      @scala.inline
-      def setDefinitions(value: StringDictionary[Definition]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+      inline def setDefinitions(value: StringDictionary[Definition]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
+      inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
       
-      @scala.inline
-      def setDigits(value: String): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+      inline def setDigits(value: String): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigitsOptional(value: Boolean): Self = StObject.set(x, "digitsOptional", value.asInstanceOf[js.Any])
+      inline def setDigitsOptional(value: Boolean): Self = StObject.set(x, "digitsOptional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigitsOptionalUndefined: Self = StObject.set(x, "digitsOptional", js.undefined)
+      inline def setDigitsOptionalUndefined: Self = StObject.set(x, "digitsOptional", js.undefined)
       
-      @scala.inline
-      def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+      inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
       
-      @scala.inline
-      def setDisablePredictiveText(value: Boolean): Self = StObject.set(x, "disablePredictiveText", value.asInstanceOf[js.Any])
+      inline def setDisablePredictiveText(value: Boolean): Self = StObject.set(x, "disablePredictiveText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePredictiveTextUndefined: Self = StObject.set(x, "disablePredictiveText", js.undefined)
+      inline def setDisablePredictiveTextUndefined: Self = StObject.set(x, "disablePredictiveText", js.undefined)
       
-      @scala.inline
-      def setEnforceDigitsOnBlur(value: Boolean): Self = StObject.set(x, "enforceDigitsOnBlur", value.asInstanceOf[js.Any])
+      inline def setEnforceDigitsOnBlur(value: Boolean): Self = StObject.set(x, "enforceDigitsOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceDigitsOnBlurUndefined: Self = StObject.set(x, "enforceDigitsOnBlur", js.undefined)
+      inline def setEnforceDigitsOnBlurUndefined: Self = StObject.set(x, "enforceDigitsOnBlur", js.undefined)
       
-      @scala.inline
-      def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
+      inline def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
+      inline def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
       
-      @scala.inline
-      def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
+      inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
+      inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
       
-      @scala.inline
-      def setGroupSeparator(value: String): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
+      inline def setGroupSeparator(value: String): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupSeparatorUndefined: Self = StObject.set(x, "groupSeparator", js.undefined)
+      inline def setGroupSeparatorUndefined: Self = StObject.set(x, "groupSeparator", js.undefined)
       
-      @scala.inline
-      def setGroupSize(value: Double): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
+      inline def setGroupSize(value: Double): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupSizeUndefined: Self = StObject.set(x, "groupSize", js.undefined)
+      inline def setGroupSizeUndefined: Self = StObject.set(x, "groupSize", js.undefined)
       
-      @scala.inline
-      def setGroupmarker(value: Range): Self = StObject.set(x, "groupmarker", value.asInstanceOf[js.Any])
+      inline def setGroupmarker(value: Range): Self = StObject.set(x, "groupmarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupmarkerUndefined: Self = StObject.set(x, "groupmarker", js.undefined)
+      inline def setGroupmarkerUndefined: Self = StObject.set(x, "groupmarker", js.undefined)
       
-      @scala.inline
-      def setIgnorables(value: js.Array[Double]): Self = StObject.set(x, "ignorables", value.asInstanceOf[js.Any])
+      inline def setIgnorables(value: js.Array[Double]): Self = StObject.set(x, "ignorables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorablesUndefined: Self = StObject.set(x, "ignorables", js.undefined)
+      inline def setIgnorablesUndefined: Self = StObject.set(x, "ignorables", js.undefined)
       
-      @scala.inline
-      def setIgnorablesVarargs(value: Double*): Self = StObject.set(x, "ignorables", js.Array(value :_*))
+      inline def setIgnorablesVarargs(value: Double*): Self = StObject.set(x, "ignorables", js.Array(value :_*))
       
-      @scala.inline
-      def setImportDataAttributes(value: Boolean): Self = StObject.set(x, "importDataAttributes", value.asInstanceOf[js.Any])
+      inline def setImportDataAttributes(value: Boolean): Self = StObject.set(x, "importDataAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDataAttributesUndefined: Self = StObject.set(x, "importDataAttributes", js.undefined)
+      inline def setImportDataAttributesUndefined: Self = StObject.set(x, "importDataAttributes", js.undefined)
       
-      @scala.inline
-      def setInputFormat(value: String): Self = StObject.set(x, "inputFormat", value.asInstanceOf[js.Any])
+      inline def setInputFormat(value: String): Self = StObject.set(x, "inputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFormatUndefined: Self = StObject.set(x, "inputFormat", js.undefined)
+      inline def setInputFormatUndefined: Self = StObject.set(x, "inputFormat", js.undefined)
       
-      @scala.inline
-      def setInputType(value: text | number): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+      inline def setInputType(value: text | number): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+      inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
       
-      @scala.inline
-      def setInputmode(value: InputMode): Self = StObject.set(x, "inputmode", value.asInstanceOf[js.Any])
+      inline def setInputmode(value: InputMode): Self = StObject.set(x, "inputmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputmodeUndefined: Self = StObject.set(x, "inputmode", js.undefined)
+      inline def setInputmodeUndefined: Self = StObject.set(x, "inputmode", js.undefined)
       
-      @scala.inline
-      def setInsertMode(value: Boolean): Self = StObject.set(x, "insertMode", value.asInstanceOf[js.Any])
+      inline def setInsertMode(value: Boolean): Self = StObject.set(x, "insertMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertModeUndefined: Self = StObject.set(x, "insertMode", js.undefined)
+      inline def setInsertModeUndefined: Self = StObject.set(x, "insertMode", js.undefined)
       
-      @scala.inline
-      def setIntegerDigits(value: String): Self = StObject.set(x, "integerDigits", value.asInstanceOf[js.Any])
+      inline def setIntegerDigits(value: String): Self = StObject.set(x, "integerDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerDigitsUndefined: Self = StObject.set(x, "integerDigits", js.undefined)
+      inline def setIntegerDigitsUndefined: Self = StObject.set(x, "integerDigits", js.undefined)
       
-      @scala.inline
-      def setIntegerOptional(value: Boolean): Self = StObject.set(x, "integerOptional", value.asInstanceOf[js.Any])
+      inline def setIntegerOptional(value: Boolean): Self = StObject.set(x, "integerOptional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerOptionalUndefined: Self = StObject.set(x, "integerOptional", js.undefined)
+      inline def setIntegerOptionalUndefined: Self = StObject.set(x, "integerOptional", js.undefined)
       
-      @scala.inline
-      def setIsComplete(value: (/* buffer */ js.Array[String], Options) => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction2(value))
+      inline def setIsComplete(value: (/* buffer */ js.Array[String], Options) => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsCompleteUndefined: Self = StObject.set(x, "isComplete", js.undefined)
+      inline def setIsCompleteUndefined: Self = StObject.set(x, "isComplete", js.undefined)
       
-      @scala.inline
-      def setJitMasking(value: Boolean): Self = StObject.set(x, "jitMasking", value.asInstanceOf[js.Any])
+      inline def setJitMasking(value: Boolean): Self = StObject.set(x, "jitMasking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJitMaskingUndefined: Self = StObject.set(x, "jitMasking", js.undefined)
+      inline def setJitMaskingUndefined: Self = StObject.set(x, "jitMasking", js.undefined)
       
-      @scala.inline
-      def setKeepStatic(value: Boolean): Self = StObject.set(x, "keepStatic", value.asInstanceOf[js.Any])
+      inline def setKeepStatic(value: Boolean): Self = StObject.set(x, "keepStatic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepStaticNull: Self = StObject.set(x, "keepStatic", null)
+      inline def setKeepStaticNull: Self = StObject.set(x, "keepStatic", null)
       
-      @scala.inline
-      def setKeepStaticUndefined: Self = StObject.set(x, "keepStatic", js.undefined)
+      inline def setKeepStaticUndefined: Self = StObject.set(x, "keepStatic", js.undefined)
       
-      @scala.inline
-      def setMask(value: String | js.Array[String] | (js.Function1[Options, String | js.Array[String]])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String | js.Array[String] | (js.Function1[Options, String | js.Array[String]])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskFunction1(value: Options => String | js.Array[String]): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
+      inline def setMaskFunction1(value: Options => String | js.Array[String]): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setMaskVarargs(value: String*): Self = StObject.set(x, "mask", js.Array(value :_*))
+      inline def setMaskVarargs(value: String*): Self = StObject.set(x, "mask", js.Array(value :_*))
       
-      @scala.inline
-      def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setNegationSymbol(value: Back): Self = StObject.set(x, "negationSymbol", value.asInstanceOf[js.Any])
+      inline def setNegationSymbol(value: Back): Self = StObject.set(x, "negationSymbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegationSymbolUndefined: Self = StObject.set(x, "negationSymbol", js.undefined)
+      inline def setNegationSymbolUndefined: Self = StObject.set(x, "negationSymbol", js.undefined)
       
-      @scala.inline
-      def setNoValuePatching(value: Boolean): Self = StObject.set(x, "noValuePatching", value.asInstanceOf[js.Any])
+      inline def setNoValuePatching(value: Boolean): Self = StObject.set(x, "noValuePatching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoValuePatchingUndefined: Self = StObject.set(x, "noValuePatching", js.undefined)
+      inline def setNoValuePatchingUndefined: Self = StObject.set(x, "noValuePatching", js.undefined)
       
-      @scala.inline
-      def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+      inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+      inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
       
-      @scala.inline
-      def setNumericInput(value: Boolean): Self = StObject.set(x, "numericInput", value.asInstanceOf[js.Any])
+      inline def setNumericInput(value: Boolean): Self = StObject.set(x, "numericInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericInputUndefined: Self = StObject.set(x, "numericInput", js.undefined)
+      inline def setNumericInputUndefined: Self = StObject.set(x, "numericInput", js.undefined)
       
-      @scala.inline
-      def setOnBeforeMask(value: (/* initialValue */ String, Options) => String): Self = StObject.set(x, "onBeforeMask", js.Any.fromFunction2(value))
+      inline def setOnBeforeMask(value: (/* initialValue */ String, Options) => String): Self = StObject.set(x, "onBeforeMask", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBeforeMaskUndefined: Self = StObject.set(x, "onBeforeMask", js.undefined)
+      inline def setOnBeforeMaskUndefined: Self = StObject.set(x, "onBeforeMask", js.undefined)
       
-      @scala.inline
-      def setOnBeforePaste(value: (/* pastedValue */ String, Options) => String): Self = StObject.set(x, "onBeforePaste", js.Any.fromFunction2(value))
+      inline def setOnBeforePaste(value: (/* pastedValue */ String, Options) => String): Self = StObject.set(x, "onBeforePaste", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBeforePasteUndefined: Self = StObject.set(x, "onBeforePaste", js.undefined)
+      inline def setOnBeforePasteUndefined: Self = StObject.set(x, "onBeforePaste", js.undefined)
       
-      @scala.inline
-      def setOnBeforeWrite(
+      inline def setOnBeforeWrite(
         value: (/* event */ KeyboardEvent, /* buffer */ js.Array[String], /* caretPos */ Double, Options) => CommandObject
       ): Self = StObject.set(x, "onBeforeWrite", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnBeforeWriteUndefined: Self = StObject.set(x, "onBeforeWrite", js.undefined)
+      inline def setOnBeforeWriteUndefined: Self = StObject.set(x, "onBeforeWrite", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(
+      inline def setOnKeyDown(
         value: (/* event */ KeyboardEvent, /* buffer */ js.Array[String], /* caretPos */ Double, Options) => Unit
       ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyValidation(value: (/* key */ Double, /* result */ Boolean) => Unit): Self = StObject.set(x, "onKeyValidation", js.Any.fromFunction2(value))
+      inline def setOnKeyValidation(value: (/* key */ Double, /* result */ Boolean) => Unit): Self = StObject.set(x, "onKeyValidation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnKeyValidationUndefined: Self = StObject.set(x, "onKeyValidation", js.undefined)
+      inline def setOnKeyValidationUndefined: Self = StObject.set(x, "onKeyValidation", js.undefined)
       
-      @scala.inline
-      def setOnUnMask(value: (/* maskedValue */ String, /* unmaskedValue */ String) => String): Self = StObject.set(x, "onUnMask", js.Any.fromFunction2(value))
+      inline def setOnUnMask(value: (/* maskedValue */ String, /* unmaskedValue */ String) => String): Self = StObject.set(x, "onUnMask", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUnMaskUndefined: Self = StObject.set(x, "onUnMask", js.undefined)
+      inline def setOnUnMaskUndefined: Self = StObject.set(x, "onUnMask", js.undefined)
       
-      @scala.inline
-      def setOncleared(value: () => Unit): Self = StObject.set(x, "oncleared", js.Any.fromFunction0(value))
+      inline def setOncleared(value: () => Unit): Self = StObject.set(x, "oncleared", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnclearedUndefined: Self = StObject.set(x, "oncleared", js.undefined)
+      inline def setOnclearedUndefined: Self = StObject.set(x, "oncleared", js.undefined)
       
-      @scala.inline
-      def setOncomplete(value: () => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction0(value))
+      inline def setOncomplete(value: () => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
+      inline def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
       
-      @scala.inline
-      def setOnincomplete(value: () => Unit): Self = StObject.set(x, "onincomplete", js.Any.fromFunction0(value))
+      inline def setOnincomplete(value: () => Unit): Self = StObject.set(x, "onincomplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnincompleteUndefined: Self = StObject.set(x, "onincomplete", js.undefined)
+      inline def setOnincompleteUndefined: Self = StObject.set(x, "onincomplete", js.undefined)
       
-      @scala.inline
-      def setOptionalmarker(value: Range): Self = StObject.set(x, "optionalmarker", value.asInstanceOf[js.Any])
+      inline def setOptionalmarker(value: Range): Self = StObject.set(x, "optionalmarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalmarkerUndefined: Self = StObject.set(x, "optionalmarker", js.undefined)
+      inline def setOptionalmarkerUndefined: Self = StObject.set(x, "optionalmarker", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+      inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPositionCaretOnClick(value: PositionCaretOnClick): Self = StObject.set(x, "positionCaretOnClick", value.asInstanceOf[js.Any])
+      inline def setPositionCaretOnClick(value: PositionCaretOnClick): Self = StObject.set(x, "positionCaretOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionCaretOnClickUndefined: Self = StObject.set(x, "positionCaretOnClick", js.undefined)
+      inline def setPositionCaretOnClickUndefined: Self = StObject.set(x, "positionCaretOnClick", js.undefined)
       
-      @scala.inline
-      def setPositionCaretOnTab(value: Boolean): Self = StObject.set(x, "positionCaretOnTab", value.asInstanceOf[js.Any])
+      inline def setPositionCaretOnTab(value: Boolean): Self = StObject.set(x, "positionCaretOnTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionCaretOnTabUndefined: Self = StObject.set(x, "positionCaretOnTab", js.undefined)
+      inline def setPositionCaretOnTabUndefined: Self = StObject.set(x, "positionCaretOnTab", js.undefined)
       
-      @scala.inline
-      def setPostValidation(
+      inline def setPostValidation(
         value: (/* buffer */ js.Array[String], /* pos */ Double, /* currentResult */ CommandObject, Options) => Boolean | CommandObject
       ): Self = StObject.set(x, "postValidation", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPostValidationUndefined: Self = StObject.set(x, "postValidation", js.undefined)
+      inline def setPostValidationUndefined: Self = StObject.set(x, "postValidation", js.undefined)
       
-      @scala.inline
-      def setPreValidation(
+      inline def setPreValidation(
         value: (/* buffer */ js.Array[String], /* pos */ Double, /* char */ String, /* isSelection */ Boolean, Options) => Boolean | CommandObject
       ): Self = StObject.set(x, "preValidation", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setPreValidationUndefined: Self = StObject.set(x, "preValidation", js.undefined)
+      inline def setPreValidationUndefined: Self = StObject.set(x, "preValidation", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setQuantifiermarker(value: Range): Self = StObject.set(x, "quantifiermarker", value.asInstanceOf[js.Any])
+      inline def setQuantifiermarker(value: Range): Self = StObject.set(x, "quantifiermarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantifiermarkerUndefined: Self = StObject.set(x, "quantifiermarker", js.undefined)
+      inline def setQuantifiermarkerUndefined: Self = StObject.set(x, "quantifiermarker", js.undefined)
       
-      @scala.inline
-      def setRadixPoint(value: String): Self = StObject.set(x, "radixPoint", value.asInstanceOf[js.Any])
+      inline def setRadixPoint(value: String): Self = StObject.set(x, "radixPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadixPointUndefined: Self = StObject.set(x, "radixPoint", js.undefined)
+      inline def setRadixPointUndefined: Self = StObject.set(x, "radixPoint", js.undefined)
       
-      @scala.inline
-      def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setRemoveMaskOnSubmit(value: Boolean): Self = StObject.set(x, "removeMaskOnSubmit", value.asInstanceOf[js.Any])
+      inline def setRemoveMaskOnSubmit(value: Boolean): Self = StObject.set(x, "removeMaskOnSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveMaskOnSubmitUndefined: Self = StObject.set(x, "removeMaskOnSubmit", js.undefined)
+      inline def setRemoveMaskOnSubmitUndefined: Self = StObject.set(x, "removeMaskOnSubmit", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double | String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double | String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setRightAlign(value: Boolean): Self = StObject.set(x, "rightAlign", value.asInstanceOf[js.Any])
+      inline def setRightAlign(value: Boolean): Self = StObject.set(x, "rightAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightAlignUndefined: Self = StObject.set(x, "rightAlign", js.undefined)
+      inline def setRightAlignUndefined: Self = StObject.set(x, "rightAlign", js.undefined)
       
-      @scala.inline
-      def setShiftPositions(value: Boolean): Self = StObject.set(x, "shiftPositions", value.asInstanceOf[js.Any])
+      inline def setShiftPositions(value: Boolean): Self = StObject.set(x, "shiftPositions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftPositionsUndefined: Self = StObject.set(x, "shiftPositions", js.undefined)
+      inline def setShiftPositionsUndefined: Self = StObject.set(x, "shiftPositions", js.undefined)
       
-      @scala.inline
-      def setShowMaskOnFocus(value: Boolean): Self = StObject.set(x, "showMaskOnFocus", value.asInstanceOf[js.Any])
+      inline def setShowMaskOnFocus(value: Boolean): Self = StObject.set(x, "showMaskOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMaskOnFocusUndefined: Self = StObject.set(x, "showMaskOnFocus", js.undefined)
+      inline def setShowMaskOnFocusUndefined: Self = StObject.set(x, "showMaskOnFocus", js.undefined)
       
-      @scala.inline
-      def setShowMaskOnHover(value: Boolean): Self = StObject.set(x, "showMaskOnHover", value.asInstanceOf[js.Any])
+      inline def setShowMaskOnHover(value: Boolean): Self = StObject.set(x, "showMaskOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMaskOnHoverUndefined: Self = StObject.set(x, "showMaskOnHover", js.undefined)
+      inline def setShowMaskOnHoverUndefined: Self = StObject.set(x, "showMaskOnHover", js.undefined)
       
-      @scala.inline
-      def setSkipOptionalPartCharacter(value: String): Self = StObject.set(x, "skipOptionalPartCharacter", value.asInstanceOf[js.Any])
+      inline def setSkipOptionalPartCharacter(value: String): Self = StObject.set(x, "skipOptionalPartCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipOptionalPartCharacterUndefined: Self = StObject.set(x, "skipOptionalPartCharacter", js.undefined)
+      inline def setSkipOptionalPartCharacterUndefined: Self = StObject.set(x, "skipOptionalPartCharacter", js.undefined)
       
-      @scala.inline
-      def setStaticDefinitionSymbol(value: String): Self = StObject.set(x, "staticDefinitionSymbol", value.asInstanceOf[js.Any])
+      inline def setStaticDefinitionSymbol(value: String): Self = StObject.set(x, "staticDefinitionSymbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticDefinitionSymbolUndefined: Self = StObject.set(x, "staticDefinitionSymbol", js.undefined)
+      inline def setStaticDefinitionSymbolUndefined: Self = StObject.set(x, "staticDefinitionSymbol", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setSupportsInputType(value: js.Array[String]): Self = StObject.set(x, "supportsInputType", value.asInstanceOf[js.Any])
+      inline def setSupportsInputType(value: js.Array[String]): Self = StObject.set(x, "supportsInputType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsInputTypeUndefined: Self = StObject.set(x, "supportsInputType", js.undefined)
+      inline def setSupportsInputTypeUndefined: Self = StObject.set(x, "supportsInputType", js.undefined)
       
-      @scala.inline
-      def setSupportsInputTypeVarargs(value: String*): Self = StObject.set(x, "supportsInputType", js.Array(value :_*))
+      inline def setSupportsInputTypeVarargs(value: String*): Self = StObject.set(x, "supportsInputType", js.Array(value :_*))
       
-      @scala.inline
-      def setTabThrough(value: Boolean): Self = StObject.set(x, "tabThrough", value.asInstanceOf[js.Any])
+      inline def setTabThrough(value: Boolean): Self = StObject.set(x, "tabThrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabThroughUndefined: Self = StObject.set(x, "tabThrough", js.undefined)
+      inline def setTabThroughUndefined: Self = StObject.set(x, "tabThrough", js.undefined)
       
-      @scala.inline
-      def setUndoOnEscape(value: Boolean): Self = StObject.set(x, "undoOnEscape", value.asInstanceOf[js.Any])
+      inline def setUndoOnEscape(value: Boolean): Self = StObject.set(x, "undoOnEscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndoOnEscapeUndefined: Self = StObject.set(x, "undoOnEscape", js.undefined)
+      inline def setUndoOnEscapeUndefined: Self = StObject.set(x, "undoOnEscape", js.undefined)
       
-      @scala.inline
-      def setUnmaskAsNumber(value: Boolean): Self = StObject.set(x, "unmaskAsNumber", value.asInstanceOf[js.Any])
+      inline def setUnmaskAsNumber(value: Boolean): Self = StObject.set(x, "unmaskAsNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskAsNumberUndefined: Self = StObject.set(x, "unmaskAsNumber", js.undefined)
+      inline def setUnmaskAsNumberUndefined: Self = StObject.set(x, "unmaskAsNumber", js.undefined)
     }
   }
   
@@ -1456,20 +1261,15 @@ object mod extends Shortcut {
   trait PositionCaretOnClick extends StObject
   object PositionCaretOnClick {
     
-    @scala.inline
-    def ignore: typings.inputmask.inputmaskStrings.ignore = "ignore".asInstanceOf[typings.inputmask.inputmaskStrings.ignore]
+    inline def ignore: typings.inputmask.inputmaskStrings.ignore = "ignore".asInstanceOf[typings.inputmask.inputmaskStrings.ignore]
     
-    @scala.inline
-    def lvp: typings.inputmask.inputmaskStrings.lvp = "lvp".asInstanceOf[typings.inputmask.inputmaskStrings.lvp]
+    inline def lvp: typings.inputmask.inputmaskStrings.lvp = "lvp".asInstanceOf[typings.inputmask.inputmaskStrings.lvp]
     
-    @scala.inline
-    def none: typings.inputmask.inputmaskStrings.none = "none".asInstanceOf[typings.inputmask.inputmaskStrings.none]
+    inline def none: typings.inputmask.inputmaskStrings.none = "none".asInstanceOf[typings.inputmask.inputmaskStrings.none]
     
-    @scala.inline
-    def radixFocus: typings.inputmask.inputmaskStrings.radixFocus = "radixFocus".asInstanceOf[typings.inputmask.inputmaskStrings.radixFocus]
+    inline def radixFocus: typings.inputmask.inputmaskStrings.radixFocus = "radixFocus".asInstanceOf[typings.inputmask.inputmaskStrings.radixFocus]
     
-    @scala.inline
-    def select: typings.inputmask.inputmaskStrings.select = "select".asInstanceOf[typings.inputmask.inputmaskStrings.select]
+    inline def select: typings.inputmask.inputmaskStrings.select = "select".asInstanceOf[typings.inputmask.inputmaskStrings.select]
   }
   
   type Range = End | (js.Tuple2[String, String])
@@ -1581,20 +1381,16 @@ object mod extends Shortcut {
     }
     object HTMLElement {
       
-      @scala.inline
-      def apply(): HTMLElement = {
+      inline def apply(): HTMLElement = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HTMLElement]
       }
       
-      @scala.inline
-      implicit class HTMLElementMutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
+      extension [Self <: HTMLElement](x: Self) {
         
-        @scala.inline
-        def setInputmask(value: Instance): Self = StObject.set(x, "inputmask", value.asInstanceOf[js.Any])
+        inline def setInputmask(value: Instance): Self = StObject.set(x, "inputmask", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputmaskUndefined: Self = StObject.set(x, "inputmask", js.undefined)
+        inline def setInputmaskUndefined: Self = StObject.set(x, "inputmask", js.undefined)
       }
     }
     

@@ -428,254 +428,172 @@ object materialMod {
   }
   object MaterialParameters {
     
-    @scala.inline
-    def apply(): MaterialParameters = {
+    inline def apply(): MaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaterialParameters]
     }
     
-    @scala.inline
-    implicit class MaterialParametersMutableBuilder[Self <: MaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MaterialParameters](x: Self) {
       
-      @scala.inline
-      def setAlphaTest(value: Double): Self = StObject.set(x, "alphaTest", value.asInstanceOf[js.Any])
+      inline def setAlphaTest(value: Double): Self = StObject.set(x, "alphaTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaTestUndefined: Self = StObject.set(x, "alphaTest", js.undefined)
+      inline def setAlphaTestUndefined: Self = StObject.set(x, "alphaTest", js.undefined)
       
-      @scala.inline
-      def setBlendDst(value: BlendingDstFactor): Self = StObject.set(x, "blendDst", value.asInstanceOf[js.Any])
+      inline def setBlendDst(value: BlendingDstFactor): Self = StObject.set(x, "blendDst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendDstAlpha(value: Double): Self = StObject.set(x, "blendDstAlpha", value.asInstanceOf[js.Any])
+      inline def setBlendDstAlpha(value: Double): Self = StObject.set(x, "blendDstAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendDstAlphaUndefined: Self = StObject.set(x, "blendDstAlpha", js.undefined)
+      inline def setBlendDstAlphaUndefined: Self = StObject.set(x, "blendDstAlpha", js.undefined)
       
-      @scala.inline
-      def setBlendDstUndefined: Self = StObject.set(x, "blendDst", js.undefined)
+      inline def setBlendDstUndefined: Self = StObject.set(x, "blendDst", js.undefined)
       
-      @scala.inline
-      def setBlendEquation(value: BlendingEquation): Self = StObject.set(x, "blendEquation", value.asInstanceOf[js.Any])
+      inline def setBlendEquation(value: BlendingEquation): Self = StObject.set(x, "blendEquation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendEquationAlpha(value: Double): Self = StObject.set(x, "blendEquationAlpha", value.asInstanceOf[js.Any])
+      inline def setBlendEquationAlpha(value: Double): Self = StObject.set(x, "blendEquationAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendEquationAlphaUndefined: Self = StObject.set(x, "blendEquationAlpha", js.undefined)
+      inline def setBlendEquationAlphaUndefined: Self = StObject.set(x, "blendEquationAlpha", js.undefined)
       
-      @scala.inline
-      def setBlendEquationUndefined: Self = StObject.set(x, "blendEquation", js.undefined)
+      inline def setBlendEquationUndefined: Self = StObject.set(x, "blendEquation", js.undefined)
       
-      @scala.inline
-      def setBlendSrc(value: BlendingSrcFactor | BlendingDstFactor): Self = StObject.set(x, "blendSrc", value.asInstanceOf[js.Any])
+      inline def setBlendSrc(value: BlendingSrcFactor | BlendingDstFactor): Self = StObject.set(x, "blendSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendSrcAlpha(value: Double): Self = StObject.set(x, "blendSrcAlpha", value.asInstanceOf[js.Any])
+      inline def setBlendSrcAlpha(value: Double): Self = StObject.set(x, "blendSrcAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendSrcAlphaUndefined: Self = StObject.set(x, "blendSrcAlpha", js.undefined)
+      inline def setBlendSrcAlphaUndefined: Self = StObject.set(x, "blendSrcAlpha", js.undefined)
       
-      @scala.inline
-      def setBlendSrcUndefined: Self = StObject.set(x, "blendSrc", js.undefined)
+      inline def setBlendSrcUndefined: Self = StObject.set(x, "blendSrc", js.undefined)
       
-      @scala.inline
-      def setBlending(value: Blending): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
+      inline def setBlending(value: Blending): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendingUndefined: Self = StObject.set(x, "blending", js.undefined)
+      inline def setBlendingUndefined: Self = StObject.set(x, "blending", js.undefined)
       
-      @scala.inline
-      def setClipIntersection(value: Boolean): Self = StObject.set(x, "clipIntersection", value.asInstanceOf[js.Any])
+      inline def setClipIntersection(value: Boolean): Self = StObject.set(x, "clipIntersection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipIntersectionUndefined: Self = StObject.set(x, "clipIntersection", js.undefined)
+      inline def setClipIntersectionUndefined: Self = StObject.set(x, "clipIntersection", js.undefined)
       
-      @scala.inline
-      def setClipShadows(value: Boolean): Self = StObject.set(x, "clipShadows", value.asInstanceOf[js.Any])
+      inline def setClipShadows(value: Boolean): Self = StObject.set(x, "clipShadows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipShadowsUndefined: Self = StObject.set(x, "clipShadows", js.undefined)
+      inline def setClipShadowsUndefined: Self = StObject.set(x, "clipShadows", js.undefined)
       
-      @scala.inline
-      def setClippingPlanes(value: js.Array[Plane]): Self = StObject.set(x, "clippingPlanes", value.asInstanceOf[js.Any])
+      inline def setClippingPlanes(value: js.Array[Plane]): Self = StObject.set(x, "clippingPlanes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClippingPlanesUndefined: Self = StObject.set(x, "clippingPlanes", js.undefined)
+      inline def setClippingPlanesUndefined: Self = StObject.set(x, "clippingPlanes", js.undefined)
       
-      @scala.inline
-      def setClippingPlanesVarargs(value: Plane*): Self = StObject.set(x, "clippingPlanes", js.Array(value :_*))
+      inline def setClippingPlanesVarargs(value: Plane*): Self = StObject.set(x, "clippingPlanes", js.Array(value :_*))
       
-      @scala.inline
-      def setColorWrite(value: Boolean): Self = StObject.set(x, "colorWrite", value.asInstanceOf[js.Any])
+      inline def setColorWrite(value: Boolean): Self = StObject.set(x, "colorWrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorWriteUndefined: Self = StObject.set(x, "colorWrite", js.undefined)
+      inline def setColorWriteUndefined: Self = StObject.set(x, "colorWrite", js.undefined)
       
-      @scala.inline
-      def setDefines(value: js.Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
+      inline def setDefines(value: js.Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
+      inline def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
       
-      @scala.inline
-      def setDepthFunc(value: DepthModes): Self = StObject.set(x, "depthFunc", value.asInstanceOf[js.Any])
+      inline def setDepthFunc(value: DepthModes): Self = StObject.set(x, "depthFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthFuncUndefined: Self = StObject.set(x, "depthFunc", js.undefined)
+      inline def setDepthFuncUndefined: Self = StObject.set(x, "depthFunc", js.undefined)
       
-      @scala.inline
-      def setDepthTest(value: Boolean): Self = StObject.set(x, "depthTest", value.asInstanceOf[js.Any])
+      inline def setDepthTest(value: Boolean): Self = StObject.set(x, "depthTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthTestUndefined: Self = StObject.set(x, "depthTest", js.undefined)
+      inline def setDepthTestUndefined: Self = StObject.set(x, "depthTest", js.undefined)
       
-      @scala.inline
-      def setDepthWrite(value: Boolean): Self = StObject.set(x, "depthWrite", value.asInstanceOf[js.Any])
+      inline def setDepthWrite(value: Boolean): Self = StObject.set(x, "depthWrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthWriteUndefined: Self = StObject.set(x, "depthWrite", js.undefined)
+      inline def setDepthWriteUndefined: Self = StObject.set(x, "depthWrite", js.undefined)
       
-      @scala.inline
-      def setDithering(value: Boolean): Self = StObject.set(x, "dithering", value.asInstanceOf[js.Any])
+      inline def setDithering(value: Boolean): Self = StObject.set(x, "dithering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDitheringUndefined: Self = StObject.set(x, "dithering", js.undefined)
+      inline def setDitheringUndefined: Self = StObject.set(x, "dithering", js.undefined)
       
-      @scala.inline
-      def setFlatShading(value: Boolean): Self = StObject.set(x, "flatShading", value.asInstanceOf[js.Any])
+      inline def setFlatShading(value: Boolean): Self = StObject.set(x, "flatShading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatShadingUndefined: Self = StObject.set(x, "flatShading", js.undefined)
+      inline def setFlatShadingUndefined: Self = StObject.set(x, "flatShading", js.undefined)
       
-      @scala.inline
-      def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPolygonOffset(value: Boolean): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
+      inline def setPolygonOffset(value: Boolean): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonOffsetFactor(value: Double): Self = StObject.set(x, "polygonOffsetFactor", value.asInstanceOf[js.Any])
+      inline def setPolygonOffsetFactor(value: Double): Self = StObject.set(x, "polygonOffsetFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonOffsetFactorUndefined: Self = StObject.set(x, "polygonOffsetFactor", js.undefined)
+      inline def setPolygonOffsetFactorUndefined: Self = StObject.set(x, "polygonOffsetFactor", js.undefined)
       
-      @scala.inline
-      def setPolygonOffsetUndefined: Self = StObject.set(x, "polygonOffset", js.undefined)
+      inline def setPolygonOffsetUndefined: Self = StObject.set(x, "polygonOffset", js.undefined)
       
-      @scala.inline
-      def setPolygonOffsetUnits(value: Double): Self = StObject.set(x, "polygonOffsetUnits", value.asInstanceOf[js.Any])
+      inline def setPolygonOffsetUnits(value: Double): Self = StObject.set(x, "polygonOffsetUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonOffsetUnitsUndefined: Self = StObject.set(x, "polygonOffsetUnits", js.undefined)
+      inline def setPolygonOffsetUnitsUndefined: Self = StObject.set(x, "polygonOffsetUnits", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: highp | mediump | lowp): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: highp | mediump | lowp): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionNull: Self = StObject.set(x, "precision", null)
+      inline def setPrecisionNull: Self = StObject.set(x, "precision", null)
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+      inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
+      inline def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
       
-      @scala.inline
-      def setShadowSide(value: Side): Self = StObject.set(x, "shadowSide", value.asInstanceOf[js.Any])
+      inline def setShadowSide(value: Side): Self = StObject.set(x, "shadowSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowSideUndefined: Self = StObject.set(x, "shadowSide", js.undefined)
+      inline def setShadowSideUndefined: Self = StObject.set(x, "shadowSide", js.undefined)
       
-      @scala.inline
-      def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+      inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      @scala.inline
-      def setStencilFail(value: StencilOp): Self = StObject.set(x, "stencilFail", value.asInstanceOf[js.Any])
+      inline def setStencilFail(value: StencilOp): Self = StObject.set(x, "stencilFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilFailUndefined: Self = StObject.set(x, "stencilFail", js.undefined)
+      inline def setStencilFailUndefined: Self = StObject.set(x, "stencilFail", js.undefined)
       
-      @scala.inline
-      def setStencilFunc(value: StencilFunc): Self = StObject.set(x, "stencilFunc", value.asInstanceOf[js.Any])
+      inline def setStencilFunc(value: StencilFunc): Self = StObject.set(x, "stencilFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilFuncUndefined: Self = StObject.set(x, "stencilFunc", js.undefined)
+      inline def setStencilFuncUndefined: Self = StObject.set(x, "stencilFunc", js.undefined)
       
-      @scala.inline
-      def setStencilMask(value: Double): Self = StObject.set(x, "stencilMask", value.asInstanceOf[js.Any])
+      inline def setStencilMask(value: Double): Self = StObject.set(x, "stencilMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilMaskUndefined: Self = StObject.set(x, "stencilMask", js.undefined)
+      inline def setStencilMaskUndefined: Self = StObject.set(x, "stencilMask", js.undefined)
       
-      @scala.inline
-      def setStencilRef(value: Double): Self = StObject.set(x, "stencilRef", value.asInstanceOf[js.Any])
+      inline def setStencilRef(value: Double): Self = StObject.set(x, "stencilRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilRefUndefined: Self = StObject.set(x, "stencilRef", js.undefined)
+      inline def setStencilRefUndefined: Self = StObject.set(x, "stencilRef", js.undefined)
       
-      @scala.inline
-      def setStencilWrite(value: Boolean): Self = StObject.set(x, "stencilWrite", value.asInstanceOf[js.Any])
+      inline def setStencilWrite(value: Boolean): Self = StObject.set(x, "stencilWrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilWriteUndefined: Self = StObject.set(x, "stencilWrite", js.undefined)
+      inline def setStencilWriteUndefined: Self = StObject.set(x, "stencilWrite", js.undefined)
       
-      @scala.inline
-      def setStencilZFail(value: StencilOp): Self = StObject.set(x, "stencilZFail", value.asInstanceOf[js.Any])
+      inline def setStencilZFail(value: StencilOp): Self = StObject.set(x, "stencilZFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilZFailUndefined: Self = StObject.set(x, "stencilZFail", js.undefined)
+      inline def setStencilZFailUndefined: Self = StObject.set(x, "stencilZFail", js.undefined)
       
-      @scala.inline
-      def setStencilZPass(value: StencilOp): Self = StObject.set(x, "stencilZPass", value.asInstanceOf[js.Any])
+      inline def setStencilZPass(value: StencilOp): Self = StObject.set(x, "stencilZPass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilZPassUndefined: Self = StObject.set(x, "stencilZPass", js.undefined)
+      inline def setStencilZPassUndefined: Self = StObject.set(x, "stencilZPass", js.undefined)
       
-      @scala.inline
-      def setToneMapped(value: Boolean): Self = StObject.set(x, "toneMapped", value.asInstanceOf[js.Any])
+      inline def setToneMapped(value: Boolean): Self = StObject.set(x, "toneMapped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToneMappedUndefined: Self = StObject.set(x, "toneMapped", js.undefined)
+      inline def setToneMappedUndefined: Self = StObject.set(x, "toneMapped", js.undefined)
       
-      @scala.inline
-      def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+      inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+      inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
       
-      @scala.inline
-      def setVertexColors(value: Boolean): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
+      inline def setVertexColors(value: Boolean): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexColorsUndefined: Self = StObject.set(x, "vertexColors", js.undefined)
+      inline def setVertexColorsUndefined: Self = StObject.set(x, "vertexColors", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
 }

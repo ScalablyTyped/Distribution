@@ -13,25 +13,19 @@ trait Avatar extends StObject {
 }
 object Avatar {
   
-  @scala.inline
-  def apply(): Avatar = {
+  inline def apply(): Avatar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Avatar]
   }
   
-  @scala.inline
-  implicit class AvatarMutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
+  extension [Self <: Avatar](x: Self) {
     
-    @scala.inline
-    def setAvatar(value: Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+    inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
   }
 }

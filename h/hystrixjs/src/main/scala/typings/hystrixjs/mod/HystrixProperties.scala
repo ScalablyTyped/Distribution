@@ -51,97 +51,67 @@ trait HystrixProperties extends StObject {
 }
 object HystrixProperties {
   
-  @scala.inline
-  def apply(): HystrixProperties = {
+  inline def apply(): HystrixProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HystrixProperties]
   }
   
-  @scala.inline
-  implicit class HystrixPropertiesMutableBuilder[Self <: HystrixProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HystrixProperties](x: Self) {
     
-    @scala.inline
-    def setHystrixDotcircuitDoterrorThresholdPercentage(value: Double): Self = StObject.set(x, "hystrix.circuit.errorThresholdPercentage", value.asInstanceOf[js.Any])
+    inline def setHystrixDotcircuitDoterrorThresholdPercentage(value: Double): Self = StObject.set(x, "hystrix.circuit.errorThresholdPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotcircuitDoterrorThresholdPercentageUndefined: Self = StObject.set(x, "hystrix.circuit.errorThresholdPercentage", js.undefined)
+    inline def setHystrixDotcircuitDoterrorThresholdPercentageUndefined: Self = StObject.set(x, "hystrix.circuit.errorThresholdPercentage", js.undefined)
     
-    @scala.inline
-    def setHystrixDotcircuitDotsleepWindowInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.circuit.sleepWindowInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setHystrixDotcircuitDotsleepWindowInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.circuit.sleepWindowInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotcircuitDotsleepWindowInMillisecondsUndefined: Self = StObject.set(x, "hystrix.circuit.sleepWindowInMilliseconds", js.undefined)
+    inline def setHystrixDotcircuitDotsleepWindowInMillisecondsUndefined: Self = StObject.set(x, "hystrix.circuit.sleepWindowInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setHystrixDotcircuitDotvolumeThreshold(value: Double): Self = StObject.set(x, "hystrix.circuit.volumeThreshold", value.asInstanceOf[js.Any])
+    inline def setHystrixDotcircuitDotvolumeThreshold(value: Double): Self = StObject.set(x, "hystrix.circuit.volumeThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotcircuitDotvolumeThresholdDotforceOverride(value: Boolean): Self = StObject.set(x, "hystrix.circuit.volumeThreshold.forceOverride", value.asInstanceOf[js.Any])
+    inline def setHystrixDotcircuitDotvolumeThresholdDotforceOverride(value: Boolean): Self = StObject.set(x, "hystrix.circuit.volumeThreshold.forceOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotcircuitDotvolumeThresholdDotforceOverrideUndefined: Self = StObject.set(x, "hystrix.circuit.volumeThreshold.forceOverride", js.undefined)
+    inline def setHystrixDotcircuitDotvolumeThresholdDotforceOverrideUndefined: Self = StObject.set(x, "hystrix.circuit.volumeThreshold.forceOverride", js.undefined)
     
-    @scala.inline
-    def setHystrixDotcircuitDotvolumeThresholdDotoverride(value: Double): Self = StObject.set(x, "hystrix.circuit.volumeThreshold.override", value.asInstanceOf[js.Any])
+    inline def setHystrixDotcircuitDotvolumeThresholdDotoverride(value: Double): Self = StObject.set(x, "hystrix.circuit.volumeThreshold.override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotcircuitDotvolumeThresholdDotoverrideUndefined: Self = StObject.set(x, "hystrix.circuit.volumeThreshold.override", js.undefined)
+    inline def setHystrixDotcircuitDotvolumeThresholdDotoverrideUndefined: Self = StObject.set(x, "hystrix.circuit.volumeThreshold.override", js.undefined)
     
-    @scala.inline
-    def setHystrixDotcircuitDotvolumeThresholdUndefined: Self = StObject.set(x, "hystrix.circuit.volumeThreshold", js.undefined)
+    inline def setHystrixDotcircuitDotvolumeThresholdUndefined: Self = StObject.set(x, "hystrix.circuit.volumeThreshold", js.undefined)
     
-    @scala.inline
-    def setHystrixDotexecutionDottimeoutInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.execution.timeoutInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setHystrixDotexecutionDottimeoutInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.execution.timeoutInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotexecutionDottimeoutInMillisecondsUndefined: Self = StObject.set(x, "hystrix.execution.timeoutInMilliseconds", js.undefined)
+    inline def setHystrixDotexecutionDottimeoutInMillisecondsUndefined: Self = StObject.set(x, "hystrix.execution.timeoutInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setHystrixDotforceDotcircuitDotclosed(value: Boolean): Self = StObject.set(x, "hystrix.force.circuit.closed", value.asInstanceOf[js.Any])
+    inline def setHystrixDotforceDotcircuitDotclosed(value: Boolean): Self = StObject.set(x, "hystrix.force.circuit.closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotforceDotcircuitDotclosedUndefined: Self = StObject.set(x, "hystrix.force.circuit.closed", js.undefined)
+    inline def setHystrixDotforceDotcircuitDotclosedUndefined: Self = StObject.set(x, "hystrix.force.circuit.closed", js.undefined)
     
-    @scala.inline
-    def setHystrixDotforceDotcircuitDotopen(value: Boolean): Self = StObject.set(x, "hystrix.force.circuit.open", value.asInstanceOf[js.Any])
+    inline def setHystrixDotforceDotcircuitDotopen(value: Boolean): Self = StObject.set(x, "hystrix.force.circuit.open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotforceDotcircuitDotopenUndefined: Self = StObject.set(x, "hystrix.force.circuit.open", js.undefined)
+    inline def setHystrixDotforceDotcircuitDotopenUndefined: Self = StObject.set(x, "hystrix.force.circuit.open", js.undefined)
     
-    @scala.inline
-    def setHystrixDotmetricsDotpercentileDotwindowDotbucketsNumber(value: Double): Self = StObject.set(x, "hystrix.metrics.percentile.window.bucketsNumber", value.asInstanceOf[js.Any])
+    inline def setHystrixDotmetricsDotpercentileDotwindowDotbucketsNumber(value: Double): Self = StObject.set(x, "hystrix.metrics.percentile.window.bucketsNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotmetricsDotpercentileDotwindowDotbucketsNumberUndefined: Self = StObject.set(x, "hystrix.metrics.percentile.window.bucketsNumber", js.undefined)
+    inline def setHystrixDotmetricsDotpercentileDotwindowDotbucketsNumberUndefined: Self = StObject.set(x, "hystrix.metrics.percentile.window.bucketsNumber", js.undefined)
     
-    @scala.inline
-    def setHystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.metrics.percentile.window.timeInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setHystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.metrics.percentile.window.timeInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotmetricsDotpercentileDotwindowDottimeInMillisecondsUndefined: Self = StObject.set(x, "hystrix.metrics.percentile.window.timeInMilliseconds", js.undefined)
+    inline def setHystrixDotmetricsDotpercentileDotwindowDottimeInMillisecondsUndefined: Self = StObject.set(x, "hystrix.metrics.percentile.window.timeInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setHystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber(value: Double): Self = StObject.set(x, "hystrix.metrics.statistical.window.bucketsNumber", value.asInstanceOf[js.Any])
+    inline def setHystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber(value: Double): Self = StObject.set(x, "hystrix.metrics.statistical.window.bucketsNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotmetricsDotstatisticalDotwindowDotbucketsNumberUndefined: Self = StObject.set(x, "hystrix.metrics.statistical.window.bucketsNumber", js.undefined)
+    inline def setHystrixDotmetricsDotstatisticalDotwindowDotbucketsNumberUndefined: Self = StObject.set(x, "hystrix.metrics.statistical.window.bucketsNumber", js.undefined)
     
-    @scala.inline
-    def setHystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.metrics.statistical.window.timeInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setHystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds(value: Double): Self = StObject.set(x, "hystrix.metrics.statistical.window.timeInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotmetricsDotstatisticalDotwindowDottimeInMillisecondsUndefined: Self = StObject.set(x, "hystrix.metrics.statistical.window.timeInMilliseconds", js.undefined)
+    inline def setHystrixDotmetricsDotstatisticalDotwindowDottimeInMillisecondsUndefined: Self = StObject.set(x, "hystrix.metrics.statistical.window.timeInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setHystrixDotpromiseDotimplementation(value: PromiseConstructorLike): Self = StObject.set(x, "hystrix.promise.implementation", value.asInstanceOf[js.Any])
+    inline def setHystrixDotpromiseDotimplementation(value: PromiseConstructorLike): Self = StObject.set(x, "hystrix.promise.implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotpromiseDotimplementationUndefined: Self = StObject.set(x, "hystrix.promise.implementation", js.undefined)
+    inline def setHystrixDotpromiseDotimplementationUndefined: Self = StObject.set(x, "hystrix.promise.implementation", js.undefined)
     
-    @scala.inline
-    def setHystrixDotrequestDotvolumeDotrejectionThreshold(value: Double): Self = StObject.set(x, "hystrix.request.volume.rejectionThreshold", value.asInstanceOf[js.Any])
+    inline def setHystrixDotrequestDotvolumeDotrejectionThreshold(value: Double): Self = StObject.set(x, "hystrix.request.volume.rejectionThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHystrixDotrequestDotvolumeDotrejectionThresholdUndefined: Self = StObject.set(x, "hystrix.request.volume.rejectionThreshold", js.undefined)
+    inline def setHystrixDotrequestDotvolumeDotrejectionThresholdUndefined: Self = StObject.set(x, "hystrix.request.volume.rejectionThreshold", js.undefined)
   }
 }

@@ -21,24 +21,17 @@ object mod {
     def this(weakness: Boolean, makeData: js.Function1[/* array */ js.Array[js.Any], K]) = this()
   }
   
-  @scala.inline
-  def asyncFromGen[TArgs /* <: js.Array[js.Any] */](genFn: js.Function1[/* args */ TArgs, js.Any]): js.Function1[/* args */ TArgs, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncFromGen")(genFn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ TArgs, js.Promise[js.Any]]]
+  inline def asyncFromGen[TArgs /* <: js.Array[js.Any] */](genFn: js.Function1[/* args */ TArgs, js.Any]): js.Function1[/* args */ TArgs, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncFromGen")(genFn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ TArgs, js.Promise[js.Any]]]
   
-  @scala.inline
-  def defaultMakeCacheKey(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMakeCacheKey")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def defaultMakeCacheKey(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMakeCacheKey")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def dep[TKey](): OptimisticDependencyFunction[TKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("dep")().asInstanceOf[OptimisticDependencyFunction[TKey]]
-  @scala.inline
-  def dep[TKey](options: Subscribe[TKey]): OptimisticDependencyFunction[TKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("dep")(options.asInstanceOf[js.Any]).asInstanceOf[OptimisticDependencyFunction[TKey]]
+  inline def dep[TKey](): OptimisticDependencyFunction[TKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("dep")().asInstanceOf[OptimisticDependencyFunction[TKey]]
+  inline def dep[TKey](options: Subscribe[TKey]): OptimisticDependencyFunction[TKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("dep")(options.asInstanceOf[js.Any]).asInstanceOf[OptimisticDependencyFunction[TKey]]
   
-  @scala.inline
-  def setTimeout(callback: js.Function0[js.Any], delay: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setTimeout(callback: js.Function0[js.Any], delay: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def wrap[TArgs /* <: js.Array[js.Any] */, TResult, TKeyArgs /* <: js.Array[js.Any] */](originalFunction: js.Function1[/* args */ TArgs, TResult]): OptimisticWrapperFunction[TArgs, TResult, TKeyArgs] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(originalFunction.asInstanceOf[js.Any]).asInstanceOf[OptimisticWrapperFunction[TArgs, TResult, TKeyArgs]]
-  @scala.inline
-  def wrap[TArgs /* <: js.Array[js.Any] */, TResult, TKeyArgs /* <: js.Array[js.Any] */](
+  inline def wrap[TArgs /* <: js.Array[js.Any] */, TResult, TKeyArgs /* <: js.Array[js.Any] */](originalFunction: js.Function1[/* args */ TArgs, TResult]): OptimisticWrapperFunction[TArgs, TResult, TKeyArgs] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(originalFunction.asInstanceOf[js.Any]).asInstanceOf[OptimisticWrapperFunction[TArgs, TResult, TKeyArgs]]
+  inline def wrap[TArgs /* <: js.Array[js.Any] */, TResult, TKeyArgs /* <: js.Array[js.Any] */](
     originalFunction: js.Function1[/* args */ TArgs, TResult],
     options: OptimisticWrapOptions[TArgs, TKeyArgs]
   ): OptimisticWrapperFunction[TArgs, TResult, TKeyArgs] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(originalFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OptimisticWrapperFunction[TArgs, TResult, TKeyArgs]]
@@ -55,38 +48,28 @@ object mod {
   }
   object OptimisticWrapOptions {
     
-    @scala.inline
-    def apply[TArgs /* <: js.Array[js.Any] */, TKeyArgs /* <: js.Array[js.Any] */](): OptimisticWrapOptions[TArgs, TKeyArgs] = {
+    inline def apply[TArgs /* <: js.Array[js.Any] */, TKeyArgs /* <: js.Array[js.Any] */](): OptimisticWrapOptions[TArgs, TKeyArgs] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptimisticWrapOptions[TArgs, TKeyArgs]]
     }
     
-    @scala.inline
-    implicit class OptimisticWrapOptionsMutableBuilder[Self <: OptimisticWrapOptions[?, ?], TArgs /* <: js.Array[js.Any] */, TKeyArgs /* <: js.Array[js.Any] */] (val x: Self & (OptimisticWrapOptions[TArgs, TKeyArgs])) extends AnyVal {
+    extension [Self <: OptimisticWrapOptions[?, ?], TArgs /* <: js.Array[js.Any] */, TKeyArgs /* <: js.Array[js.Any] */](x: Self & (OptimisticWrapOptions[TArgs, TKeyArgs])) {
       
-      @scala.inline
-      def setKeyArgs(value: /* args */ TArgs => TKeyArgs): Self = StObject.set(x, "keyArgs", js.Any.fromFunction1(value))
+      inline def setKeyArgs(value: /* args */ TArgs => TKeyArgs): Self = StObject.set(x, "keyArgs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyArgsUndefined: Self = StObject.set(x, "keyArgs", js.undefined)
+      inline def setKeyArgsUndefined: Self = StObject.set(x, "keyArgs", js.undefined)
       
-      @scala.inline
-      def setMakeCacheKey(value: /* args */ TKeyArgs => TCacheKey): Self = StObject.set(x, "makeCacheKey", js.Any.fromFunction1(value))
+      inline def setMakeCacheKey(value: /* args */ TKeyArgs => TCacheKey): Self = StObject.set(x, "makeCacheKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMakeCacheKeyUndefined: Self = StObject.set(x, "makeCacheKey", js.undefined)
+      inline def setMakeCacheKeyUndefined: Self = StObject.set(x, "makeCacheKey", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setSubscribe(value: /* args */ TArgs => Unit | js.Function0[js.Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: /* args */ TArgs => Unit | js.Function0[js.Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscribeUndefined: Self = StObject.set(x, "subscribe", js.undefined)
+      inline def setSubscribeUndefined: Self = StObject.set(x, "subscribe", js.undefined)
     }
   }
   

@@ -23,31 +23,23 @@ trait ErrorMetric extends StObject {
 }
 object ErrorMetric {
   
-  @scala.inline
-  def apply(): ErrorMetric = {
+  inline def apply(): ErrorMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorMetric]
   }
   
-  @scala.inline
-  implicit class ErrorMetricMutableBuilder[Self <: ErrorMetric] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorMetric](x: Self) {
     
-    @scala.inline
-    def setForecastType(value: ForecastType): Self = StObject.set(x, "ForecastType", value.asInstanceOf[js.Any])
+    inline def setForecastType(value: ForecastType): Self = StObject.set(x, "ForecastType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastTypeUndefined: Self = StObject.set(x, "ForecastType", js.undefined)
+    inline def setForecastTypeUndefined: Self = StObject.set(x, "ForecastType", js.undefined)
     
-    @scala.inline
-    def setRMSE(value: Double): Self = StObject.set(x, "RMSE", value.asInstanceOf[js.Any])
+    inline def setRMSE(value: Double): Self = StObject.set(x, "RMSE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRMSEUndefined: Self = StObject.set(x, "RMSE", js.undefined)
+    inline def setRMSEUndefined: Self = StObject.set(x, "RMSE", js.undefined)
     
-    @scala.inline
-    def setWAPE(value: Double): Self = StObject.set(x, "WAPE", value.asInstanceOf[js.Any])
+    inline def setWAPE(value: Double): Self = StObject.set(x, "WAPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWAPEUndefined: Self = StObject.set(x, "WAPE", js.undefined)
+    inline def setWAPEUndefined: Self = StObject.set(x, "WAPE", js.undefined)
   }
 }

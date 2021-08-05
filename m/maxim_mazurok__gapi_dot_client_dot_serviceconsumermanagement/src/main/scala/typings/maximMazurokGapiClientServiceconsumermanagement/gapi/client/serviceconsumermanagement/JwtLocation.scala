@@ -21,31 +21,23 @@ trait JwtLocation extends StObject {
 }
 object JwtLocation {
   
-  @scala.inline
-  def apply(): JwtLocation = {
+  inline def apply(): JwtLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JwtLocation]
   }
   
-  @scala.inline
-  implicit class JwtLocationMutableBuilder[Self <: JwtLocation] (val x: Self) extends AnyVal {
+  extension [Self <: JwtLocation](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
+    inline def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
+    inline def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
   }
 }

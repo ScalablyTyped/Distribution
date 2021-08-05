@@ -38,49 +38,35 @@ trait RepositorySummary extends StObject {
 }
 object RepositorySummary {
   
-  @scala.inline
-  def apply(): RepositorySummary = {
+  inline def apply(): RepositorySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepositorySummary]
   }
   
-  @scala.inline
-  implicit class RepositorySummaryMutableBuilder[Self <: RepositorySummary] (val x: Self) extends AnyVal {
+  extension [Self <: RepositorySummary](x: Self) {
     
-    @scala.inline
-    def setAdministratorAccount(value: AccountId): Self = StObject.set(x, "administratorAccount", value.asInstanceOf[js.Any])
+    inline def setAdministratorAccount(value: AccountId): Self = StObject.set(x, "administratorAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministratorAccountUndefined: Self = StObject.set(x, "administratorAccount", js.undefined)
+    inline def setAdministratorAccountUndefined: Self = StObject.set(x, "administratorAccount", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+    inline def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+    inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
-    @scala.inline
-    def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

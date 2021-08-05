@@ -26,8 +26,7 @@ trait XFrameActionListener
 }
 object XFrameActionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     frameAction: FrameActionEvent => Unit,
@@ -38,10 +37,8 @@ object XFrameActionListener {
     __obj.asInstanceOf[XFrameActionListener]
   }
   
-  @scala.inline
-  implicit class XFrameActionListenerMutableBuilder[Self <: XFrameActionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XFrameActionListener](x: Self) {
     
-    @scala.inline
-    def setFrameAction(value: FrameActionEvent => Unit): Self = StObject.set(x, "frameAction", js.Any.fromFunction1(value))
+    inline def setFrameAction(value: FrameActionEvent => Unit): Self = StObject.set(x, "frameAction", js.Any.fromFunction1(value))
   }
 }

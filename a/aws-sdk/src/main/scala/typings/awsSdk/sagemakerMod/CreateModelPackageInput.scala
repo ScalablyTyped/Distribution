@@ -38,49 +38,35 @@ trait CreateModelPackageInput extends StObject {
 }
 object CreateModelPackageInput {
   
-  @scala.inline
-  def apply(): CreateModelPackageInput = {
+  inline def apply(): CreateModelPackageInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateModelPackageInput]
   }
   
-  @scala.inline
-  implicit class CreateModelPackageInputMutableBuilder[Self <: CreateModelPackageInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateModelPackageInput](x: Self) {
     
-    @scala.inline
-    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = StObject.set(x, "CertifyForMarketplace", value.asInstanceOf[js.Any])
+    inline def setCertifyForMarketplace(value: CertifyForMarketplace): Self = StObject.set(x, "CertifyForMarketplace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertifyForMarketplaceUndefined: Self = StObject.set(x, "CertifyForMarketplace", js.undefined)
+    inline def setCertifyForMarketplaceUndefined: Self = StObject.set(x, "CertifyForMarketplace", js.undefined)
     
-    @scala.inline
-    def setInferenceSpecification(value: InferenceSpecification): Self = StObject.set(x, "InferenceSpecification", value.asInstanceOf[js.Any])
+    inline def setInferenceSpecification(value: InferenceSpecification): Self = StObject.set(x, "InferenceSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferenceSpecificationUndefined: Self = StObject.set(x, "InferenceSpecification", js.undefined)
+    inline def setInferenceSpecificationUndefined: Self = StObject.set(x, "InferenceSpecification", js.undefined)
     
-    @scala.inline
-    def setModelPackageDescription(value: EntityDescription): Self = StObject.set(x, "ModelPackageDescription", value.asInstanceOf[js.Any])
+    inline def setModelPackageDescription(value: EntityDescription): Self = StObject.set(x, "ModelPackageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageDescriptionUndefined: Self = StObject.set(x, "ModelPackageDescription", js.undefined)
+    inline def setModelPackageDescriptionUndefined: Self = StObject.set(x, "ModelPackageDescription", js.undefined)
     
-    @scala.inline
-    def setModelPackageName(value: EntityName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
+    inline def setModelPackageName(value: EntityName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageNameUndefined: Self = StObject.set(x, "ModelPackageName", js.undefined)
+    inline def setModelPackageNameUndefined: Self = StObject.set(x, "ModelPackageName", js.undefined)
     
-    @scala.inline
-    def setSourceAlgorithmSpecification(value: SourceAlgorithmSpecification): Self = StObject.set(x, "SourceAlgorithmSpecification", value.asInstanceOf[js.Any])
+    inline def setSourceAlgorithmSpecification(value: SourceAlgorithmSpecification): Self = StObject.set(x, "SourceAlgorithmSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAlgorithmSpecificationUndefined: Self = StObject.set(x, "SourceAlgorithmSpecification", js.undefined)
+    inline def setSourceAlgorithmSpecificationUndefined: Self = StObject.set(x, "SourceAlgorithmSpecification", js.undefined)
     
-    @scala.inline
-    def setValidationSpecification(value: ModelPackageValidationSpecification): Self = StObject.set(x, "ValidationSpecification", value.asInstanceOf[js.Any])
+    inline def setValidationSpecification(value: ModelPackageValidationSpecification): Self = StObject.set(x, "ValidationSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationSpecificationUndefined: Self = StObject.set(x, "ValidationSpecification", js.undefined)
+    inline def setValidationSpecificationUndefined: Self = StObject.set(x, "ValidationSpecification", js.undefined)
   }
 }

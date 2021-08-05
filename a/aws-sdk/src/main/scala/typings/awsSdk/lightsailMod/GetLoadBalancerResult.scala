@@ -13,19 +13,15 @@ trait GetLoadBalancerResult extends StObject {
 }
 object GetLoadBalancerResult {
   
-  @scala.inline
-  def apply(): GetLoadBalancerResult = {
+  inline def apply(): GetLoadBalancerResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLoadBalancerResult]
   }
   
-  @scala.inline
-  implicit class GetLoadBalancerResultMutableBuilder[Self <: GetLoadBalancerResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoadBalancerResult](x: Self) {
     
-    @scala.inline
-    def setLoadBalancer(value: LoadBalancer): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+    inline def setLoadBalancer(value: LoadBalancer): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
+    inline def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
   }
 }

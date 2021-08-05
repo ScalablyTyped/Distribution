@@ -18,25 +18,19 @@ trait RobotSoftwareSuite extends StObject {
 }
 object RobotSoftwareSuite {
   
-  @scala.inline
-  def apply(): RobotSoftwareSuite = {
+  inline def apply(): RobotSoftwareSuite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RobotSoftwareSuite]
   }
   
-  @scala.inline
-  implicit class RobotSoftwareSuiteMutableBuilder[Self <: RobotSoftwareSuite] (val x: Self) extends AnyVal {
+  extension [Self <: RobotSoftwareSuite](x: Self) {
     
-    @scala.inline
-    def setName(value: RobotSoftwareSuiteType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RobotSoftwareSuiteType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: RobotSoftwareSuiteVersionType): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: RobotSoftwareSuiteVersionType): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

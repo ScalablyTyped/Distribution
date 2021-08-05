@@ -17,19 +17,15 @@ trait SchemaAddProductToProductSetRequest extends StObject {
 }
 object SchemaAddProductToProductSetRequest {
   
-  @scala.inline
-  def apply(): SchemaAddProductToProductSetRequest = {
+  inline def apply(): SchemaAddProductToProductSetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddProductToProductSetRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAddProductToProductSetRequestMutableBuilder[Self <: SchemaAddProductToProductSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddProductToProductSetRequest](x: Self) {
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
   }
 }

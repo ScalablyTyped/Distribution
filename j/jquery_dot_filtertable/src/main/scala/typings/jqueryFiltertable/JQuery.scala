@@ -36,16 +36,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(filterTable: FilterTableStatic): JQuery = {
+  inline def apply(filterTable: FilterTableStatic): JQuery = {
     val __obj = js.Dynamic.literal(filterTable = filterTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setFilterTable(value: FilterTableStatic): Self = StObject.set(x, "filterTable", value.asInstanceOf[js.Any])
+    inline def setFilterTable(value: FilterTableStatic): Self = StObject.set(x, "filterTable", value.asInstanceOf[js.Any])
   }
 }

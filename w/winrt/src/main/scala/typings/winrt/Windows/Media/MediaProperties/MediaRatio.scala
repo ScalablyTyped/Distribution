@@ -9,8 +9,7 @@ trait MediaRatio
      with IMediaRatio
 object MediaRatio {
   
-  @scala.inline
-  def apply(denominator: Double, numerator: Double): MediaRatio = {
+  inline def apply(denominator: Double, numerator: Double): MediaRatio = {
     val __obj = js.Dynamic.literal(denominator = denominator.asInstanceOf[js.Any], numerator = numerator.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRatio]
   }

@@ -14,19 +14,15 @@ trait BaseOptions extends StObject {
 }
 object BaseOptions {
   
-  @scala.inline
-  def apply(): BaseOptions = {
+  inline def apply(): BaseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseOptions]
   }
   
-  @scala.inline
-  implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
   }
 }

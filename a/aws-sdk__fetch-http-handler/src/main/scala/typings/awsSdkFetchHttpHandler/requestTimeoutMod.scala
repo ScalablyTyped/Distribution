@@ -10,8 +10,6 @@ object requestTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def requestTimeout(): js.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")().asInstanceOf[js.Promise[scala.Nothing]]
-  @scala.inline
-  def requestTimeout(timeoutInMs: Double): js.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")(timeoutInMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Nothing]]
+  inline def requestTimeout(): js.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")().asInstanceOf[js.Promise[scala.Nothing]]
+  inline def requestTimeout(timeoutInMs: Double): js.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")(timeoutInMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Nothing]]
 }

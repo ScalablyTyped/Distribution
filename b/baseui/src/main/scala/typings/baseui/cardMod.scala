@@ -81,70 +81,54 @@ object cardMod {
   }
   object CardOverrides {
     
-    @scala.inline
-    def apply(): CardOverrides = {
+    inline def apply(): CardOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardOverrides]
     }
     
-    @scala.inline
-    implicit class CardOverridesMutableBuilder[Self <: CardOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: CardOverrides](x: Self) {
       
-      @scala.inline
-      def setAction(
+      inline def setAction(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
       
-      @scala.inline
-      def setBody(
+      inline def setBody(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setContents(
+      inline def setContents(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsUndefined: Self = StObject.set(x, "Contents", js.undefined)
+      inline def setContentsUndefined: Self = StObject.set(x, "Contents", js.undefined)
       
-      @scala.inline
-      def setHeaderImage(
+      inline def setHeaderImage(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "HeaderImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderImageUndefined: Self = StObject.set(x, "HeaderImage", js.undefined)
+      inline def setHeaderImageUndefined: Self = StObject.set(x, "HeaderImage", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setThumbnail(
+      inline def setThumbnail(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "Thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "Thumbnail", js.undefined)
       
-      @scala.inline
-      def setTitle(
+      inline def setTitle(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     }
   }
   
@@ -168,56 +152,40 @@ object cardMod {
   }
   object CardProps {
     
-    @scala.inline
-    def apply(): CardProps = {
+    inline def apply(): CardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardProps]
     }
     
-    @scala.inline
-    implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardProps](x: Self) {
       
-      @scala.inline
-      def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHasThumbnail(value: /* props */ Thumbnail => Boolean): Self = StObject.set(x, "hasThumbnail", js.Any.fromFunction1(value))
+      inline def setHasThumbnail(value: /* props */ Thumbnail => Boolean): Self = StObject.set(x, "hasThumbnail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasThumbnailUndefined: Self = StObject.set(x, "hasThumbnail", js.undefined)
+      inline def setHasThumbnailUndefined: Self = StObject.set(x, "hasThumbnail", js.undefined)
       
-      @scala.inline
-      def setHeaderImage(value: String | (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])): Self = StObject.set(x, "headerImage", value.asInstanceOf[js.Any])
+      inline def setHeaderImage(value: String | (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])): Self = StObject.set(x, "headerImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderImageUndefined: Self = StObject.set(x, "headerImage", js.undefined)
+      inline def setHeaderImageUndefined: Self = StObject.set(x, "headerImage", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: CardOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: CardOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

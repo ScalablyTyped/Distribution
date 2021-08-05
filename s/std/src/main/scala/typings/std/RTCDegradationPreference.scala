@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCDegradationPreference extends StObject
 object RTCDegradationPreference {
   
-  @scala.inline
-  def balanced: typings.std.stdStrings.balanced = "balanced".asInstanceOf[typings.std.stdStrings.balanced]
+  inline def balanced: typings.std.stdStrings.balanced = "balanced".asInstanceOf[typings.std.stdStrings.balanced]
   
-  @scala.inline
-  def `maintain-framerate`: typings.std.stdStrings.`maintain-framerate` = "maintain-framerate".asInstanceOf[typings.std.stdStrings.`maintain-framerate`]
+  inline def `maintain-framerate`: typings.std.stdStrings.`maintain-framerate` = "maintain-framerate".asInstanceOf[typings.std.stdStrings.`maintain-framerate`]
   
-  @scala.inline
-  def `maintain-resolution`: typings.std.stdStrings.`maintain-resolution` = "maintain-resolution".asInstanceOf[typings.std.stdStrings.`maintain-resolution`]
+  inline def `maintain-resolution`: typings.std.stdStrings.`maintain-resolution` = "maintain-resolution".asInstanceOf[typings.std.stdStrings.`maintain-resolution`]
 }

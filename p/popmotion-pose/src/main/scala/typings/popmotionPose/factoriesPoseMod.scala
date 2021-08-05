@@ -15,8 +15,7 @@ object factoriesPoseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P](
+  inline def default[P](
     hasTransformPoseAddListenerToValueExtendAPIReadValueFromSourcePosePrioritySetValueNative: PopmotionPoserFactoryConfig[P, TransitionDefinition]
   ): js.Function1[
     /* config */ PoserConfig[Value], 

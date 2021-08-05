@@ -23,20 +23,16 @@ object typesGetBucketAccelerateConfigurationOutputMod {
   }
   object GetBucketAccelerateConfigurationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketAccelerateConfigurationOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketAccelerateConfigurationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketAccelerateConfigurationOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketAccelerateConfigurationOutputMutableBuilder[Self <: GetBucketAccelerateConfigurationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketAccelerateConfigurationOutput](x: Self) {
       
-      @scala.inline
-      def setStatus(value: Enabled | Suspended | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Enabled | Suspended | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     }
   }
 }

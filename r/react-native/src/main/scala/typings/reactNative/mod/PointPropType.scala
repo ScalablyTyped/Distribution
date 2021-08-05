@@ -17,13 +17,10 @@ object PointPropType {
   @js.native
   val ^ : Validator[PointPropType] = js.native
   
-  @scala.inline
-  implicit class PointPropTypeMutableBuilder[Self <: PointPropType] (val x: Self) extends AnyVal {
+  extension [Self <: PointPropType](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

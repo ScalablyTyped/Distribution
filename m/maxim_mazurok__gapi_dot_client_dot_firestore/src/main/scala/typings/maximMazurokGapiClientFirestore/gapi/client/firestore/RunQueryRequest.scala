@@ -20,37 +20,27 @@ trait RunQueryRequest extends StObject {
 }
 object RunQueryRequest {
   
-  @scala.inline
-  def apply(): RunQueryRequest = {
+  inline def apply(): RunQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunQueryRequest]
   }
   
-  @scala.inline
-  implicit class RunQueryRequestMutableBuilder[Self <: RunQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunQueryRequest](x: Self) {
     
-    @scala.inline
-    def setNewTransaction(value: TransactionOptions): Self = StObject.set(x, "newTransaction", value.asInstanceOf[js.Any])
+    inline def setNewTransaction(value: TransactionOptions): Self = StObject.set(x, "newTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTransactionUndefined: Self = StObject.set(x, "newTransaction", js.undefined)
+    inline def setNewTransactionUndefined: Self = StObject.set(x, "newTransaction", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setStructuredQuery(value: StructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
+    inline def setStructuredQuery(value: StructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
+    inline def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

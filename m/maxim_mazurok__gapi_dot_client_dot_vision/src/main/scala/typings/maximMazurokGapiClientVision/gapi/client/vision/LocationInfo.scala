@@ -11,19 +11,15 @@ trait LocationInfo extends StObject {
 }
 object LocationInfo {
   
-  @scala.inline
-  def apply(): LocationInfo = {
+  inline def apply(): LocationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationInfo]
   }
   
-  @scala.inline
-  implicit class LocationInfoMutableBuilder[Self <: LocationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LocationInfo](x: Self) {
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
   }
 }

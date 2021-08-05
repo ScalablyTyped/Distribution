@@ -15,19 +15,15 @@ trait UpdateEndpointsBatchRequest extends StObject {
 }
 object UpdateEndpointsBatchRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, EndpointBatchRequest: EndpointBatchRequest): UpdateEndpointsBatchRequest = {
+  inline def apply(ApplicationId: string, EndpointBatchRequest: EndpointBatchRequest): UpdateEndpointsBatchRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointBatchRequest = EndpointBatchRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointsBatchRequest]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointsBatchRequestMutableBuilder[Self <: UpdateEndpointsBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointsBatchRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointBatchRequest(value: EndpointBatchRequest): Self = StObject.set(x, "EndpointBatchRequest", value.asInstanceOf[js.Any])
+    inline def setEndpointBatchRequest(value: EndpointBatchRequest): Self = StObject.set(x, "EndpointBatchRequest", value.asInstanceOf[js.Any])
   }
 }

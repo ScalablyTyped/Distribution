@@ -16,17 +16,14 @@ object timedEventMod {
   }
   object TimedEvent {
     
-    @scala.inline
-    def apply(name: String, time: HrTime): TimedEvent = {
+    inline def apply(name: String, time: HrTime): TimedEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimedEvent]
     }
     
-    @scala.inline
-    implicit class TimedEventMutableBuilder[Self <: TimedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TimedEvent](x: Self) {
       
-      @scala.inline
-      def setTime(value: HrTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: HrTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

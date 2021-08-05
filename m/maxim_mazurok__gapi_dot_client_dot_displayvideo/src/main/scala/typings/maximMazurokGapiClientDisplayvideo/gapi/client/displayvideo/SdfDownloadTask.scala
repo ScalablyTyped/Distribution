@@ -14,19 +14,15 @@ trait SdfDownloadTask extends StObject {
 }
 object SdfDownloadTask {
   
-  @scala.inline
-  def apply(): SdfDownloadTask = {
+  inline def apply(): SdfDownloadTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SdfDownloadTask]
   }
   
-  @scala.inline
-  implicit class SdfDownloadTaskMutableBuilder[Self <: SdfDownloadTask] (val x: Self) extends AnyVal {
+  extension [Self <: SdfDownloadTask](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

@@ -39,98 +39,68 @@ object anon {
   }
   object PartialMediaValues {
     
-    @scala.inline
-    def apply(): PartialMediaValues = {
+    inline def apply(): PartialMediaValues = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMediaValues]
     }
     
-    @scala.inline
-    implicit class PartialMediaValuesMutableBuilder[Self <: PartialMediaValues] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMediaValues](x: Self) {
       
-      @scala.inline
-      def `setAspect-ratio`(value: js.Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
+      inline def `setAspect-ratio`(value: js.Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAspect-ratioUndefined`: Self = StObject.set(x, "aspect-ratio", js.undefined)
+      inline def `setAspect-ratioUndefined`: Self = StObject.set(x, "aspect-ratio", js.undefined)
       
-      @scala.inline
-      def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColor-index`(value: js.Any): Self = StObject.set(x, "color-index", value.asInstanceOf[js.Any])
+      inline def `setColor-index`(value: js.Any): Self = StObject.set(x, "color-index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColor-indexUndefined`: Self = StObject.set(x, "color-index", js.undefined)
+      inline def `setColor-indexUndefined`: Self = StObject.set(x, "color-index", js.undefined)
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def `setDevice-aspect-ratio`(value: js.Any): Self = StObject.set(x, "device-aspect-ratio", value.asInstanceOf[js.Any])
+      inline def `setDevice-aspect-ratio`(value: js.Any): Self = StObject.set(x, "device-aspect-ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDevice-aspect-ratioUndefined`: Self = StObject.set(x, "device-aspect-ratio", js.undefined)
+      inline def `setDevice-aspect-ratioUndefined`: Self = StObject.set(x, "device-aspect-ratio", js.undefined)
       
-      @scala.inline
-      def `setDevice-height`(value: js.Any): Self = StObject.set(x, "device-height", value.asInstanceOf[js.Any])
+      inline def `setDevice-height`(value: js.Any): Self = StObject.set(x, "device-height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDevice-heightUndefined`: Self = StObject.set(x, "device-height", js.undefined)
+      inline def `setDevice-heightUndefined`: Self = StObject.set(x, "device-height", js.undefined)
       
-      @scala.inline
-      def `setDevice-width`(value: js.Any): Self = StObject.set(x, "device-width", value.asInstanceOf[js.Any])
+      inline def `setDevice-width`(value: js.Any): Self = StObject.set(x, "device-width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDevice-widthUndefined`: Self = StObject.set(x, "device-width", js.undefined)
+      inline def `setDevice-widthUndefined`: Self = StObject.set(x, "device-width", js.undefined)
       
-      @scala.inline
-      def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMonochrome(value: js.Any): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
+      inline def setMonochrome(value: js.Any): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
+      inline def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setResolution(value: js.Any): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: js.Any): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
       
-      @scala.inline
-      def setScan(value: js.Any): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
+      inline def setScan(value: js.Any): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanUndefined: Self = StObject.set(x, "scan", js.undefined)
+      inline def setScanUndefined: Self = StObject.set(x, "scan", js.undefined)
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

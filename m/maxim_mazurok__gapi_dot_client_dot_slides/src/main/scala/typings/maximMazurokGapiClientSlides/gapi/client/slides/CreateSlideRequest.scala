@@ -31,40 +31,29 @@ trait CreateSlideRequest extends StObject {
 }
 object CreateSlideRequest {
   
-  @scala.inline
-  def apply(): CreateSlideRequest = {
+  inline def apply(): CreateSlideRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSlideRequest]
   }
   
-  @scala.inline
-  implicit class CreateSlideRequestMutableBuilder[Self <: CreateSlideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSlideRequest](x: Self) {
     
-    @scala.inline
-    def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
+    inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
+    inline def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setPlaceholderIdMappings(value: js.Array[LayoutPlaceholderIdMapping]): Self = StObject.set(x, "placeholderIdMappings", value.asInstanceOf[js.Any])
+    inline def setPlaceholderIdMappings(value: js.Array[LayoutPlaceholderIdMapping]): Self = StObject.set(x, "placeholderIdMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderIdMappingsUndefined: Self = StObject.set(x, "placeholderIdMappings", js.undefined)
+    inline def setPlaceholderIdMappingsUndefined: Self = StObject.set(x, "placeholderIdMappings", js.undefined)
     
-    @scala.inline
-    def setPlaceholderIdMappingsVarargs(value: LayoutPlaceholderIdMapping*): Self = StObject.set(x, "placeholderIdMappings", js.Array(value :_*))
+    inline def setPlaceholderIdMappingsVarargs(value: LayoutPlaceholderIdMapping*): Self = StObject.set(x, "placeholderIdMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setSlideLayoutReference(value: LayoutReference): Self = StObject.set(x, "slideLayoutReference", value.asInstanceOf[js.Any])
+    inline def setSlideLayoutReference(value: LayoutReference): Self = StObject.set(x, "slideLayoutReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideLayoutReferenceUndefined: Self = StObject.set(x, "slideLayoutReference", js.undefined)
+    inline def setSlideLayoutReferenceUndefined: Self = StObject.set(x, "slideLayoutReference", js.undefined)
   }
 }

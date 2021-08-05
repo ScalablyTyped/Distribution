@@ -23,35 +23,27 @@ trait StringValueDefWithCondition[F /* <: Field */, T /* <: Type */] extends StO
 }
 object StringValueDefWithCondition {
   
-  @scala.inline
-  def apply[F /* <: Field */, T /* <: Type */](): StringValueDefWithCondition[F, T] = {
+  inline def apply[F /* <: Field */, T /* <: Type */](): StringValueDefWithCondition[F, T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringValueDefWithCondition[F, T]]
   }
   
-  @scala.inline
-  implicit class StringValueDefWithConditionMutableBuilder[Self <: StringValueDefWithCondition[?, ?], F /* <: Field */, T /* <: Type */] (val x: Self & (StringValueDefWithCondition[F, T])) extends AnyVal {
+  extension [Self <: StringValueDefWithCondition[?, ?], F /* <: Field */, T /* <: Type */](x: Self & (StringValueDefWithCondition[F, T])) {
     
-    @scala.inline
-    def setCondition(
+    inline def setCondition(
       value: (Conditional[
           (MarkPropFieldOrDatumDef[F, T]) | (ValueDef[String | Null | ExprRef | SignalRef])
         ]) | (js.Array[Conditional[ValueDef[String | Null | ExprRef | SignalRef]]])
     ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setConditionVarargs(value: (Conditional[ValueDef[String | Null | ExprRef | SignalRef]])*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: (Conditional[ValueDef[String | Null | ExprRef | SignalRef]])*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String | ExprRef | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | ExprRef | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

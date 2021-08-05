@@ -12,6 +12,5 @@ object transformTagsIntoObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(tags: js.Array[BlockTag]): StringDictionary[js.Array[BlockTag]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tags.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[BlockTag]]]
+  inline def default(tags: js.Array[BlockTag]): StringDictionary[js.Array[BlockTag]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tags.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[BlockTag]]]
 }

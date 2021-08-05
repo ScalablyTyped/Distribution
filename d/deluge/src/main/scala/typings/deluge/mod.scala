@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(deluge_url: String, password: String): Deluge = (^.asInstanceOf[js.Dynamic].apply(deluge_url.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Deluge]
+  inline def apply(deluge_url: String, password: String): Deluge = (^.asInstanceOf[js.Dynamic].apply(deluge_url.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Deluge]
   
   @JSImport("deluge", JSImport.Namespace)
   @js.native
@@ -107,8 +106,7 @@ object mod {
   }
   object DelugeStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dht_nodes: Double,
       download_protocol_rate: Double,
       download_rate: Double,
@@ -125,41 +123,29 @@ object mod {
       __obj.asInstanceOf[DelugeStats]
     }
     
-    @scala.inline
-    implicit class DelugeStatsMutableBuilder[Self <: DelugeStats] (val x: Self) extends AnyVal {
+    extension [Self <: DelugeStats](x: Self) {
       
-      @scala.inline
-      def setDht_nodes(value: Double): Self = StObject.set(x, "dht_nodes", value.asInstanceOf[js.Any])
+      inline def setDht_nodes(value: Double): Self = StObject.set(x, "dht_nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload_protocol_rate(value: Double): Self = StObject.set(x, "download_protocol_rate", value.asInstanceOf[js.Any])
+      inline def setDownload_protocol_rate(value: Double): Self = StObject.set(x, "download_protocol_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload_rate(value: Double): Self = StObject.set(x, "download_rate", value.asInstanceOf[js.Any])
+      inline def setDownload_rate(value: Double): Self = StObject.set(x, "download_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFree_space(value: Double): Self = StObject.set(x, "free_space", value.asInstanceOf[js.Any])
+      inline def setFree_space(value: Double): Self = StObject.set(x, "free_space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_incoming_connections(value: Boolean): Self = StObject.set(x, "has_incoming_connections", value.asInstanceOf[js.Any])
+      inline def setHas_incoming_connections(value: Boolean): Self = StObject.set(x, "has_incoming_connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_download(value: Double): Self = StObject.set(x, "max_download", value.asInstanceOf[js.Any])
+      inline def setMax_download(value: Double): Self = StObject.set(x, "max_download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_num_connections(value: Double): Self = StObject.set(x, "max_num_connections", value.asInstanceOf[js.Any])
+      inline def setMax_num_connections(value: Double): Self = StObject.set(x, "max_num_connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_upload(value: Double): Self = StObject.set(x, "max_upload", value.asInstanceOf[js.Any])
+      inline def setMax_upload(value: Double): Self = StObject.set(x, "max_upload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_connections(value: Double): Self = StObject.set(x, "num_connections", value.asInstanceOf[js.Any])
+      inline def setNum_connections(value: Double): Self = StObject.set(x, "num_connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload_protocol_rate(value: Double): Self = StObject.set(x, "upload_protocol_rate", value.asInstanceOf[js.Any])
+      inline def setUpload_protocol_rate(value: Double): Self = StObject.set(x, "upload_protocol_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload_rate(value: Double): Self = StObject.set(x, "upload_rate", value.asInstanceOf[js.Any])
+      inline def setUpload_rate(value: Double): Self = StObject.set(x, "upload_rate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,8 +171,7 @@ object mod {
   }
   object DownloadOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add_paused: Boolean,
       compact_allocation: Boolean,
       download_location: String,
@@ -201,38 +186,27 @@ object mod {
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    @scala.inline
-    implicit class DownloadOptionsMutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadOptions](x: Self) {
       
-      @scala.inline
-      def setAdd_paused(value: Boolean): Self = StObject.set(x, "add_paused", value.asInstanceOf[js.Any])
+      inline def setAdd_paused(value: Boolean): Self = StObject.set(x, "add_paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompact_allocation(value: Boolean): Self = StObject.set(x, "compact_allocation", value.asInstanceOf[js.Any])
+      inline def setCompact_allocation(value: Boolean): Self = StObject.set(x, "compact_allocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload_location(value: String): Self = StObject.set(x, "download_location", value.asInstanceOf[js.Any])
+      inline def setDownload_location(value: String): Self = StObject.set(x, "download_location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile_priorities(value: js.Array[js.Any]): Self = StObject.set(x, "file_priorities", value.asInstanceOf[js.Any])
+      inline def setFile_priorities(value: js.Array[js.Any]): Self = StObject.set(x, "file_priorities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile_prioritiesVarargs(value: js.Any*): Self = StObject.set(x, "file_priorities", js.Array(value :_*))
+      inline def setFile_prioritiesVarargs(value: js.Any*): Self = StObject.set(x, "file_priorities", js.Array(value :_*))
       
-      @scala.inline
-      def setMax_connections(value: Double): Self = StObject.set(x, "max_connections", value.asInstanceOf[js.Any])
+      inline def setMax_connections(value: Double): Self = StObject.set(x, "max_connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_download_speed(value: Double): Self = StObject.set(x, "max_download_speed", value.asInstanceOf[js.Any])
+      inline def setMax_download_speed(value: Double): Self = StObject.set(x, "max_download_speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_upload_slots(value: Double): Self = StObject.set(x, "max_upload_slots", value.asInstanceOf[js.Any])
+      inline def setMax_upload_slots(value: Double): Self = StObject.set(x, "max_upload_slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_upload_speed(value: Double): Self = StObject.set(x, "max_upload_speed", value.asInstanceOf[js.Any])
+      inline def setMax_upload_speed(value: Double): Self = StObject.set(x, "max_upload_speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrioritize_first_last_pieces(value: Boolean): Self = StObject.set(x, "prioritize_first_last_pieces", value.asInstanceOf[js.Any])
+      inline def setPrioritize_first_last_pieces(value: Boolean): Self = StObject.set(x, "prioritize_first_last_pieces", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,26 +222,20 @@ object mod {
   }
   object Host {
     
-    @scala.inline
-    def apply(id: String, ip: String, port: Double, status: String): Host = {
+    inline def apply(id: String, ip: String, port: Double, status: String): Host = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,8 +289,7 @@ object mod {
   }
   object Torrent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       distributed_copies: Double,
       download_payload_rate: Double,
       eta: Double,
@@ -351,77 +318,53 @@ object mod {
       __obj.asInstanceOf[Torrent]
     }
     
-    @scala.inline
-    implicit class TorrentMutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
+    extension [Self <: Torrent](x: Self) {
       
-      @scala.inline
-      def setDistributed_copies(value: Double): Self = StObject.set(x, "distributed_copies", value.asInstanceOf[js.Any])
+      inline def setDistributed_copies(value: Double): Self = StObject.set(x, "distributed_copies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload_payload_rate(value: Double): Self = StObject.set(x, "download_payload_rate", value.asInstanceOf[js.Any])
+      inline def setDownload_payload_rate(value: Double): Self = StObject.set(x, "download_payload_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
+      inline def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_auto_managed(value: Boolean): Self = StObject.set(x, "is_auto_managed", value.asInstanceOf[js.Any])
+      inline def setIs_auto_managed(value: Boolean): Self = StObject.set(x, "is_auto_managed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_download_speed(value: Double): Self = StObject.set(x, "max_download_speed", value.asInstanceOf[js.Any])
+      inline def setMax_download_speed(value: Double): Self = StObject.set(x, "max_download_speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_upload_speed(value: Double): Self = StObject.set(x, "max_upload_speed", value.asInstanceOf[js.Any])
+      inline def setMax_upload_speed(value: Double): Self = StObject.set(x, "max_upload_speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_peers(value: Double): Self = StObject.set(x, "num_peers", value.asInstanceOf[js.Any])
+      inline def setNum_peers(value: Double): Self = StObject.set(x, "num_peers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_seeds(value: Double): Self = StObject.set(x, "num_seeds", value.asInstanceOf[js.Any])
+      inline def setNum_seeds(value: Double): Self = StObject.set(x, "num_seeds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSave_path(value: String): Self = StObject.set(x, "save_path", value.asInstanceOf[js.Any])
+      inline def setSave_path(value: String): Self = StObject.set(x, "save_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeeds_peers_ratio(value: Double): Self = StObject.set(x, "seeds_peers_ratio", value.asInstanceOf[js.Any])
+      inline def setSeeds_peers_ratio(value: Double): Self = StObject.set(x, "seeds_peers_ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime_added(value: Double): Self = StObject.set(x, "time_added", value.asInstanceOf[js.Any])
+      inline def setTime_added(value: Double): Self = StObject.set(x, "time_added", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_done(value: Double): Self = StObject.set(x, "total_done", value.asInstanceOf[js.Any])
+      inline def setTotal_done(value: Double): Self = StObject.set(x, "total_done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_peers(value: Double): Self = StObject.set(x, "total_peers", value.asInstanceOf[js.Any])
+      inline def setTotal_peers(value: Double): Self = StObject.set(x, "total_peers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_seeds(value: Double): Self = StObject.set(x, "total_seeds", value.asInstanceOf[js.Any])
+      inline def setTotal_seeds(value: Double): Self = StObject.set(x, "total_seeds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_uploaded(value: Double): Self = StObject.set(x, "total_uploaded", value.asInstanceOf[js.Any])
+      inline def setTotal_uploaded(value: Double): Self = StObject.set(x, "total_uploaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_wanted(value: Double): Self = StObject.set(x, "total_wanted", value.asInstanceOf[js.Any])
+      inline def setTotal_wanted(value: Double): Self = StObject.set(x, "total_wanted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracker_host(value: String): Self = StObject.set(x, "tracker_host", value.asInstanceOf[js.Any])
+      inline def setTracker_host(value: String): Self = StObject.set(x, "tracker_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload_payload_rate(value: Double): Self = StObject.set(x, "upload_payload_rate", value.asInstanceOf[js.Any])
+      inline def setUpload_payload_rate(value: Double): Self = StObject.set(x, "upload_payload_rate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -437,26 +380,20 @@ object mod {
   }
   object TorrentRecord {
     
-    @scala.inline
-    def apply(connected: Boolean, filters: State, stats: DelugeStats, torrents: StringDictionary[Torrent]): TorrentRecord = {
+    inline def apply(connected: Boolean, filters: State, stats: DelugeStats, torrents: StringDictionary[Torrent]): TorrentRecord = {
       val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], torrents = torrents.asInstanceOf[js.Any])
       __obj.asInstanceOf[TorrentRecord]
     }
     
-    @scala.inline
-    implicit class TorrentRecordMutableBuilder[Self <: TorrentRecord] (val x: Self) extends AnyVal {
+    extension [Self <: TorrentRecord](x: Self) {
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: State): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: State): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: DelugeStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: DelugeStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTorrents(value: StringDictionary[Torrent]): Self = StObject.set(x, "torrents", value.asInstanceOf[js.Any])
+      inline def setTorrents(value: StringDictionary[Torrent]): Self = StObject.set(x, "torrents", value.asInstanceOf[js.Any])
     }
   }
 }

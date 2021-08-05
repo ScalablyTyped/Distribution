@@ -18,22 +18,17 @@ trait AccessEndpoint extends StObject {
 }
 object AccessEndpoint {
   
-  @scala.inline
-  def apply(EndpointType: AccessEndpointType): AccessEndpoint = {
+  inline def apply(EndpointType: AccessEndpointType): AccessEndpoint = {
     val __obj = js.Dynamic.literal(EndpointType = EndpointType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessEndpoint]
   }
   
-  @scala.inline
-  implicit class AccessEndpointMutableBuilder[Self <: AccessEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AccessEndpoint](x: Self) {
     
-    @scala.inline
-    def setEndpointType(value: AccessEndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: AccessEndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceId(value: String): Self = StObject.set(x, "VpceId", value.asInstanceOf[js.Any])
+    inline def setVpceId(value: String): Self = StObject.set(x, "VpceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceIdUndefined: Self = StObject.set(x, "VpceId", js.undefined)
+    inline def setVpceIdUndefined: Self = StObject.set(x, "VpceId", js.undefined)
   }
 }

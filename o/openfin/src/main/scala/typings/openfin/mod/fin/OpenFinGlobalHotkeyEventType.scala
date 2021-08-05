@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenFinGlobalHotkeyEventType extends StObject
 object OpenFinGlobalHotkeyEventType {
   
-  @scala.inline
-  def registered: typings.openfin.openfinStrings.registered = "registered".asInstanceOf[typings.openfin.openfinStrings.registered]
+  inline def registered: typings.openfin.openfinStrings.registered = "registered".asInstanceOf[typings.openfin.openfinStrings.registered]
   
-  @scala.inline
-  def unregistered: typings.openfin.openfinStrings.unregistered = "unregistered".asInstanceOf[typings.openfin.openfinStrings.unregistered]
+  inline def unregistered: typings.openfin.openfinStrings.unregistered = "unregistered".asInstanceOf[typings.openfin.openfinStrings.unregistered]
 }

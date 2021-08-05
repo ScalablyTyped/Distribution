@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestDeviceOptions extends StObject
 object RequestDeviceOptions {
   
-  @scala.inline
-  def AcceptAllDevices(acceptAllDevices: Boolean): typings.webBluetooth.anon.AcceptAllDevices = {
+  inline def AcceptAllDevices(acceptAllDevices: Boolean): typings.webBluetooth.anon.AcceptAllDevices = {
     val __obj = js.Dynamic.literal(acceptAllDevices = acceptAllDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.webBluetooth.anon.AcceptAllDevices]
   }
   
-  @scala.inline
-  def Filters(filters: js.Array[BluetoothRequestDeviceFilter]): typings.webBluetooth.anon.Filters = {
+  inline def Filters(filters: js.Array[BluetoothRequestDeviceFilter]): typings.webBluetooth.anon.Filters = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.webBluetooth.anon.Filters]
   }

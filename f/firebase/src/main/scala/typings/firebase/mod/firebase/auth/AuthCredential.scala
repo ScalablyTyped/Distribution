@@ -33,22 +33,17 @@ trait AuthCredential extends StObject {
 }
 object AuthCredential {
   
-  @scala.inline
-  def apply(providerId: String, signInMethod: String, toJSON: () => js.Object): AuthCredential = {
+  inline def apply(providerId: String, signInMethod: String, toJSON: () => js.Object): AuthCredential = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any], signInMethod = signInMethod.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[AuthCredential]
   }
   
-  @scala.inline
-  implicit class AuthCredentialMutableBuilder[Self <: AuthCredential] (val x: Self) extends AnyVal {
+  extension [Self <: AuthCredential](x: Self) {
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignInMethod(value: String): Self = StObject.set(x, "signInMethod", value.asInstanceOf[js.Any])
+    inline def setSignInMethod(value: String): Self = StObject.set(x, "signInMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

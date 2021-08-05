@@ -28,8 +28,7 @@ trait MonitoringClusterConfig extends StObject {
 }
 object MonitoringClusterConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InstanceCount: ProcessingInstanceCount,
     InstanceType: ProcessingInstanceType,
     VolumeSizeInGB: ProcessingVolumeSizeInGB
@@ -38,22 +37,16 @@ object MonitoringClusterConfig {
     __obj.asInstanceOf[MonitoringClusterConfig]
   }
   
-  @scala.inline
-  implicit class MonitoringClusterConfigMutableBuilder[Self <: MonitoringClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringClusterConfig](x: Self) {
     
-    @scala.inline
-    def setInstanceCount(value: ProcessingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: ProcessingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: ProcessingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: ProcessingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
+    inline def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
     
-    @scala.inline
-    def setVolumeSizeInGB(value: ProcessingVolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeInGB(value: ProcessingVolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
   }
 }

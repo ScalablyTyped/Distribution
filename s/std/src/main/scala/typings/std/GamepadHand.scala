@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GamepadHand extends StObject
 object GamepadHand {
   
-  @scala.inline
-  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
+  inline def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   
-  @scala.inline
-  def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
+  inline def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
   
-  @scala.inline
-  def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
+  inline def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
 }

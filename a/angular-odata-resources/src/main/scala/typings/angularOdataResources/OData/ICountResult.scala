@@ -13,8 +13,7 @@ trait ICountResult extends StObject {
 }
 object ICountResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ js.Any,
     result: Double
   ): ICountResult = {
@@ -22,15 +21,12 @@ object ICountResult {
     __obj.asInstanceOf[ICountResult]
   }
   
-  @scala.inline
-  implicit class ICountResultMutableBuilder[Self <: ICountResult] (val x: Self) extends AnyVal {
+  extension [Self <: ICountResult](x: Self) {
     
-    @scala.inline
-    def set$promise(
+    inline def set$promise(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ js.Any
     ): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Double): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

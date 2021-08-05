@@ -14,22 +14,17 @@ trait CtxKey extends StObject {
 }
 object CtxKey {
   
-  @scala.inline
-  def apply(ctx: Print, key: js.Any, timeout: js.Any): CtxKey = {
+  inline def apply(ctx: Print, key: js.Any, timeout: js.Any): CtxKey = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtxKey]
   }
   
-  @scala.inline
-  implicit class CtxKeyMutableBuilder[Self <: CtxKey] (val x: Self) extends AnyVal {
+  extension [Self <: CtxKey](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -28,31 +28,23 @@ trait RequestCancelExternalWorkflowExecutionInitiatedEventAttributes extends StO
 }
 object RequestCancelExternalWorkflowExecutionInitiatedEventAttributes {
   
-  @scala.inline
-  def apply(decisionTaskCompletedEventId: EventId, workflowId: WorkflowId): RequestCancelExternalWorkflowExecutionInitiatedEventAttributes = {
+  inline def apply(decisionTaskCompletedEventId: EventId, workflowId: WorkflowId): RequestCancelExternalWorkflowExecutionInitiatedEventAttributes = {
     val __obj = js.Dynamic.literal(decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], workflowId = workflowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestCancelExternalWorkflowExecutionInitiatedEventAttributes]
   }
   
-  @scala.inline
-  implicit class RequestCancelExternalWorkflowExecutionInitiatedEventAttributesMutableBuilder[Self <: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: WorkflowRunIdOptional): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: WorkflowRunIdOptional): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
     
-    @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
   }
 }

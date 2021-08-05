@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFOCRDimensionUnit extends StObject
 object MFOCRDimensionUnit {
   
-  @scala.inline
-  def InchX100: `2` = 2.asInstanceOf[`2`]
+  inline def InchX100: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def MillimeterX10: `1` = 1.asInstanceOf[`1`]
+  inline def MillimeterX10: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Pixel: `0` = 0.asInstanceOf[`0`]
+  inline def Pixel: `0` = 0.asInstanceOf[`0`]
 }

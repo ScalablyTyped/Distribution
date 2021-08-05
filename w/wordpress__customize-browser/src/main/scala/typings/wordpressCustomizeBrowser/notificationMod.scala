@@ -49,53 +49,38 @@ object notificationMod {
   }
   object NotificationParams {
     
-    @scala.inline
-    def apply(message: String): NotificationParams = {
+    inline def apply(message: String): NotificationParams = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationParams]
     }
     
-    @scala.inline
-    implicit class NotificationParamsMutableBuilder[Self <: NotificationParams] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationParams](x: Self) {
       
-      @scala.inline
-      def setContainerClasses(value: String): Self = StObject.set(x, "containerClasses", value.asInstanceOf[js.Any])
+      inline def setContainerClasses(value: String): Self = StObject.set(x, "containerClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassesUndefined: Self = StObject.set(x, "containerClasses", js.undefined)
+      inline def setContainerClassesUndefined: Self = StObject.set(x, "containerClasses", js.undefined)
       
-      @scala.inline
-      def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
+      inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissibleUndefined: Self = StObject.set(x, "dismissible", js.undefined)
+      inline def setDismissibleUndefined: Self = StObject.set(x, "dismissible", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetting(value: String): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+      inline def setSetting(value: String): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
+      inline def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: /* data */ Notification => Unit): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+      inline def setTemplate(value: /* data */ Notification => Unit): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+      inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+      inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

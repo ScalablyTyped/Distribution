@@ -18,22 +18,17 @@ trait ResourceFilter extends StObject {
 }
 object ResourceFilter {
   
-  @scala.inline
-  def apply(Name: ResourceFilterName, Values: ResourceFilterValues): ResourceFilter = {
+  inline def apply(Name: ResourceFilterName, Values: ResourceFilterValues): ResourceFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceFilter]
   }
   
-  @scala.inline
-  implicit class ResourceFilterMutableBuilder[Self <: ResourceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: ResourceFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ResourceFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: ResourceFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ResourceFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

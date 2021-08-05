@@ -31,8 +31,7 @@ trait NodeConfigStatus extends StObject {
 }
 object NodeConfigStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: NodeConfigSource,
     assigned: NodeConfigSource,
     error: String,
@@ -42,19 +41,14 @@ object NodeConfigStatus {
     __obj.asInstanceOf[NodeConfigStatus]
   }
   
-  @scala.inline
-  implicit class NodeConfigStatusMutableBuilder[Self <: NodeConfigStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NodeConfigStatus](x: Self) {
     
-    @scala.inline
-    def setActive(value: NodeConfigSource): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: NodeConfigSource): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigned(value: NodeConfigSource): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
+    inline def setAssigned(value: NodeConfigSource): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastKnownGood(value: NodeConfigSource): Self = StObject.set(x, "lastKnownGood", value.asInstanceOf[js.Any])
+    inline def setLastKnownGood(value: NodeConfigSource): Self = StObject.set(x, "lastKnownGood", value.asInstanceOf[js.Any])
   }
 }

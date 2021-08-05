@@ -20,25 +20,19 @@ trait FindObjectOptions extends StObject {
 }
 object FindObjectOptions {
   
-  @scala.inline
-  def apply(): FindObjectOptions = {
+  inline def apply(): FindObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindObjectOptions]
   }
   
-  @scala.inline
-  implicit class FindObjectOptionsMutableBuilder[Self <: FindObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FindObjectOptions](x: Self) {
     
-    @scala.inline
-    def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    inline def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+    inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

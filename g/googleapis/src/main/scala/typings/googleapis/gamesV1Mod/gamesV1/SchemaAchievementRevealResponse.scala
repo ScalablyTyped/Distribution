@@ -25,25 +25,19 @@ trait SchemaAchievementRevealResponse extends StObject {
 }
 object SchemaAchievementRevealResponse {
   
-  @scala.inline
-  def apply(): SchemaAchievementRevealResponse = {
+  inline def apply(): SchemaAchievementRevealResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAchievementRevealResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAchievementRevealResponseMutableBuilder[Self <: SchemaAchievementRevealResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAchievementRevealResponse](x: Self) {
     
-    @scala.inline
-    def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
+    inline def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

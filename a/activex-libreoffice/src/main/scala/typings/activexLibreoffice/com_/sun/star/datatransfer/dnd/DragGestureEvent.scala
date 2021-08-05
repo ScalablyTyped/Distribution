@@ -45,8 +45,7 @@ trait DragGestureEvent
 }
 object DragGestureEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DragAction: Double,
     DragOriginX: Double,
     DragOriginY: Double,
@@ -58,22 +57,16 @@ object DragGestureEvent {
     __obj.asInstanceOf[DragGestureEvent]
   }
   
-  @scala.inline
-  implicit class DragGestureEventMutableBuilder[Self <: DragGestureEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DragGestureEvent](x: Self) {
     
-    @scala.inline
-    def setDragAction(value: Double): Self = StObject.set(x, "DragAction", value.asInstanceOf[js.Any])
+    inline def setDragAction(value: Double): Self = StObject.set(x, "DragAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragOriginX(value: Double): Self = StObject.set(x, "DragOriginX", value.asInstanceOf[js.Any])
+    inline def setDragOriginX(value: Double): Self = StObject.set(x, "DragOriginX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragOriginY(value: Double): Self = StObject.set(x, "DragOriginY", value.asInstanceOf[js.Any])
+    inline def setDragOriginY(value: Double): Self = StObject.set(x, "DragOriginY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragSource(value: XDragSource): Self = StObject.set(x, "DragSource", value.asInstanceOf[js.Any])
+    inline def setDragSource(value: XDragSource): Self = StObject.set(x, "DragSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
   }
 }

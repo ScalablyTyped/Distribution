@@ -14,31 +14,23 @@ trait Candlestick extends StObject {
 }
 object Candlestick {
   
-  @scala.inline
-  def apply(): Candlestick = {
+  inline def apply(): Candlestick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Candlestick]
   }
   
-  @scala.inline
-  implicit class CandlestickMutableBuilder[Self <: Candlestick] (val x: Self) extends AnyVal {
+  extension [Self <: Candlestick](x: Self) {
     
-    @scala.inline
-    def setFallingColor(value: ChartStrokeFill): Self = StObject.set(x, "fallingColor", value.asInstanceOf[js.Any])
+    inline def setFallingColor(value: ChartStrokeFill): Self = StObject.set(x, "fallingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallingColorUndefined: Self = StObject.set(x, "fallingColor", js.undefined)
+    inline def setFallingColorUndefined: Self = StObject.set(x, "fallingColor", js.undefined)
     
-    @scala.inline
-    def setHollowIsRising(value: Boolean): Self = StObject.set(x, "hollowIsRising", value.asInstanceOf[js.Any])
+    inline def setHollowIsRising(value: Boolean): Self = StObject.set(x, "hollowIsRising", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHollowIsRisingUndefined: Self = StObject.set(x, "hollowIsRising", js.undefined)
+    inline def setHollowIsRisingUndefined: Self = StObject.set(x, "hollowIsRising", js.undefined)
     
-    @scala.inline
-    def setRisingColor(value: ChartStrokeFill): Self = StObject.set(x, "risingColor", value.asInstanceOf[js.Any])
+    inline def setRisingColor(value: ChartStrokeFill): Self = StObject.set(x, "risingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRisingColorUndefined: Self = StObject.set(x, "risingColor", js.undefined)
+    inline def setRisingColorUndefined: Self = StObject.set(x, "risingColor", js.undefined)
   }
 }

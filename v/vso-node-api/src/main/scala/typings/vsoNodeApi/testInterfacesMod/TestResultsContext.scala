@@ -14,22 +14,17 @@ trait TestResultsContext extends StObject {
 }
 object TestResultsContext {
   
-  @scala.inline
-  def apply(build: BuildReference, contextType: TestResultsContextType, release: ReleaseReference): TestResultsContext = {
+  inline def apply(build: BuildReference, contextType: TestResultsContextType, release: ReleaseReference): TestResultsContext = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], contextType = contextType.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResultsContext]
   }
   
-  @scala.inline
-  implicit class TestResultsContextMutableBuilder[Self <: TestResultsContext] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultsContext](x: Self) {
     
-    @scala.inline
-    def setBuild(value: BuildReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: BuildReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextType(value: TestResultsContextType): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+    inline def setContextType(value: TestResultsContextType): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: ReleaseReference): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: ReleaseReference): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

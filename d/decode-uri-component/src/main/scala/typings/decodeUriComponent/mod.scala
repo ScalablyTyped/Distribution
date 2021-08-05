@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(encodedURI: String): String = ^.asInstanceOf[js.Dynamic].apply(encodedURI.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(encodedURI: String): String = ^.asInstanceOf[js.Dynamic].apply(encodedURI.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("decode-uri-component", JSImport.Namespace)
   @js.native

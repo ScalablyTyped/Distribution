@@ -12,16 +12,13 @@ trait AllJoynWatcherStoppedEventArgs extends StObject {
 }
 object AllJoynWatcherStoppedEventArgs {
   
-  @scala.inline
-  def apply(status: Double): AllJoynWatcherStoppedEventArgs = {
+  inline def apply(status: Double): AllJoynWatcherStoppedEventArgs = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynWatcherStoppedEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynWatcherStoppedEventArgsMutableBuilder[Self <: AllJoynWatcherStoppedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynWatcherStoppedEventArgs](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -36,8 +36,7 @@ trait PolyPolygonBezierShape
      with RotationDescriptor
 object PolyPolygonBezierShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FillBackground: Boolean,
     FillBitmap: XBitmap,
     FillBitmapLogicalSize: Boolean,

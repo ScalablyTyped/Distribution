@@ -28,37 +28,27 @@ trait TemplateParameter extends StObject {
 }
 object TemplateParameter {
   
-  @scala.inline
-  def apply(): TemplateParameter = {
+  inline def apply(): TemplateParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateParameter]
   }
   
-  @scala.inline
-  implicit class TemplateParameterMutableBuilder[Self <: TemplateParameter] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateParameter](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: ParameterValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: ParameterValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setNoEcho(value: NoEcho): Self = StObject.set(x, "NoEcho", value.asInstanceOf[js.Any])
+    inline def setNoEcho(value: NoEcho): Self = StObject.set(x, "NoEcho", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoEchoUndefined: Self = StObject.set(x, "NoEcho", js.undefined)
+    inline def setNoEchoUndefined: Self = StObject.set(x, "NoEcho", js.undefined)
     
-    @scala.inline
-    def setParameterKey(value: ParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
+    inline def setParameterKey(value: ParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterKeyUndefined: Self = StObject.set(x, "ParameterKey", js.undefined)
+    inline def setParameterKeyUndefined: Self = StObject.set(x, "ParameterKey", js.undefined)
   }
 }

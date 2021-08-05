@@ -16,8 +16,7 @@ object typesMod {
   
   object BIP32Path {
     
-    @scala.inline
-    def apply(value: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+    inline def apply(value: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
     
     @JSImport("bitcoinjs-lib/types/types", "BIP32Path")
     @js.native
@@ -26,8 +25,7 @@ object typesMod {
     @JSImport("bitcoinjs-lib/types/types", "BIP32Path.toJSON")
     @js.native
     def toJSON: js.Function0[java.lang.String] = js.native
-    @scala.inline
-    def toJSON_=(x: js.Function0[java.lang.String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
+    inline def toJSON_=(x: js.Function0[java.lang.String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("bitcoinjs-lib/types/types", "Boolean")
@@ -78,18 +76,15 @@ object typesMod {
   @js.native
   val Number: js.Any = js.native
   
-  @scala.inline
-  def Satoshi(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Satoshi")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  inline def Satoshi(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Satoshi")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  @scala.inline
-  def Signer(obj: js.Any): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Signer")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  inline def Signer(obj: js.Any): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Signer")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   @JSImport("bitcoinjs-lib/types/types", "String")
   @js.native
   val String: js.Any = js.native
   
-  @scala.inline
-  def UInt31(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UInt31")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  inline def UInt31(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UInt31")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   @JSImport("bitcoinjs-lib/types/types", "UInt32")
   @js.native

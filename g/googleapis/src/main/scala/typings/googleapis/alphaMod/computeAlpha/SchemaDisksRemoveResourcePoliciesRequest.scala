@@ -13,22 +13,17 @@ trait SchemaDisksRemoveResourcePoliciesRequest extends StObject {
 }
 object SchemaDisksRemoveResourcePoliciesRequest {
   
-  @scala.inline
-  def apply(): SchemaDisksRemoveResourcePoliciesRequest = {
+  inline def apply(): SchemaDisksRemoveResourcePoliciesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisksRemoveResourcePoliciesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDisksRemoveResourcePoliciesRequestMutableBuilder[Self <: SchemaDisksRemoveResourcePoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDisksRemoveResourcePoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
+    inline def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
+    inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    @scala.inline
-    def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
   }
 }

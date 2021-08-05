@@ -23,50 +23,36 @@ trait From extends StObject {
 }
 object From {
   
-  @scala.inline
-  def apply(name: String, role: String, `type`: String): From = {
+  inline def apply(name: String, role: String, `type`: String): From = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[From]
   }
   
-  @scala.inline
-  implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+  extension [Self <: From](x: Self) {
     
-    @scala.inline
-    def setAxes(value: js.Array[Axis]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: js.Array[Axis]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    @scala.inline
-    def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value :_*))
     
-    @scala.inline
-    def setEncode(value: Update): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+    inline def setEncode(value: Update): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+    inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Data): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Data): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Dx | Encode | Font | FontStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Dx | Encode | Font | FontStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

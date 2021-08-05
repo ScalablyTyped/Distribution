@@ -12,22 +12,17 @@ trait MUIDataTableDraggableColumns extends StObject {
 }
 object MUIDataTableDraggableColumns {
   
-  @scala.inline
-  def apply(enabled: Boolean): MUIDataTableDraggableColumns = {
+  inline def apply(enabled: Boolean): MUIDataTableDraggableColumns = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableDraggableColumns]
   }
   
-  @scala.inline
-  implicit class MUIDataTableDraggableColumnsMutableBuilder[Self <: MUIDataTableDraggableColumns] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableDraggableColumns](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionTime(value: Double): Self = StObject.set(x, "transitionTime", value.asInstanceOf[js.Any])
+    inline def setTransitionTime(value: Double): Self = StObject.set(x, "transitionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionTimeUndefined: Self = StObject.set(x, "transitionTime", js.undefined)
+    inline def setTransitionTimeUndefined: Self = StObject.set(x, "transitionTime", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait PerceptionColorFrameSourceAddedEventArgs extends StObject {
 }
 object PerceptionColorFrameSourceAddedEventArgs {
   
-  @scala.inline
-  def apply(frameSource: PerceptionColorFrameSource): PerceptionColorFrameSourceAddedEventArgs = {
+  inline def apply(frameSource: PerceptionColorFrameSource): PerceptionColorFrameSourceAddedEventArgs = {
     val __obj = js.Dynamic.literal(frameSource = frameSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerceptionColorFrameSourceAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class PerceptionColorFrameSourceAddedEventArgsMutableBuilder[Self <: PerceptionColorFrameSourceAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionColorFrameSourceAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFrameSource(value: PerceptionColorFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
+    inline def setFrameSource(value: PerceptionColorFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait SearchAllIamPoliciesResponse extends StObject {
 }
 object SearchAllIamPoliciesResponse {
   
-  @scala.inline
-  def apply(): SearchAllIamPoliciesResponse = {
+  inline def apply(): SearchAllIamPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchAllIamPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class SearchAllIamPoliciesResponseMutableBuilder[Self <: SearchAllIamPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchAllIamPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[IamPolicySearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[IamPolicySearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: IamPolicySearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: IamPolicySearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

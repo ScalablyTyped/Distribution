@@ -16,23 +16,19 @@ trait BatchCreateNotesRequest extends StObject {
 }
 object BatchCreateNotesRequest {
   
-  @scala.inline
-  def apply(): BatchCreateNotesRequest = {
+  inline def apply(): BatchCreateNotesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreateNotesRequest]
   }
   
-  @scala.inline
-  implicit class BatchCreateNotesRequestMutableBuilder[Self <: BatchCreateNotesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateNotesRequest](x: Self) {
     
-    @scala.inline
-    def setNotes(
+    inline def setNotes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.Note}
       */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BatchCreateNotesRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
   }
 }

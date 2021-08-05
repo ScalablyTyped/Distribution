@@ -12,19 +12,15 @@ trait Mandatory extends StObject {
 }
 object Mandatory {
   
-  @scala.inline
-  def apply(mandatory: Boolean, persistent: Boolean): Mandatory = {
+  inline def apply(mandatory: Boolean, persistent: Boolean): Mandatory = {
     val __obj = js.Dynamic.literal(mandatory = mandatory.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mandatory]
   }
   
-  @scala.inline
-  implicit class MandatoryMutableBuilder[Self <: Mandatory] (val x: Self) extends AnyVal {
+  extension [Self <: Mandatory](x: Self) {
     
-    @scala.inline
-    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+    inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
   }
 }

@@ -52,7 +52,7 @@ trait ExchangeDistributionList extends StObject {
   
   var Name: String = js.native
   
-  @JSName("Outlook.ExchangeDistributionList_typekey")
+  /* private */ @JSName("Outlook.ExchangeDistributionList_typekey")
   var OutlookDotExchangeDistributionList_typekey: ExchangeDistributionList = js.native
   
   val Parent: js.Any = js.native

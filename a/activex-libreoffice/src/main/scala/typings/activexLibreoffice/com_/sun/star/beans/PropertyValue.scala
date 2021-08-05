@@ -29,25 +29,19 @@ trait PropertyValue extends StObject {
 }
 object PropertyValue {
   
-  @scala.inline
-  def apply(Handle: Double, Name: String, State: PropertyState, Value: js.Any): PropertyValue = {
+  inline def apply(Handle: Double, Name: String, State: PropertyState, Value: js.Any): PropertyValue = {
     val __obj = js.Dynamic.literal(Handle = Handle.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyValue]
   }
   
-  @scala.inline
-  implicit class PropertyValueMutableBuilder[Self <: PropertyValue] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyValue](x: Self) {
     
-    @scala.inline
-    def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: PropertyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: PropertyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

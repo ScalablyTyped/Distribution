@@ -11,6 +11,5 @@ object isEmptyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isEmpty(children: ReactNode, disableNullOnZero: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(children.asInstanceOf[js.Any], disableNullOnZero.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEmpty(children: ReactNode, disableNullOnZero: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(children.asInstanceOf[js.Any], disableNullOnZero.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -17,23 +17,18 @@ object anon {
   }
   object Ctx {
     
-    @scala.inline
-    def apply(ctx: Context, key: String, vals: js.Any): Ctx = {
+    inline def apply(ctx: Context, key: String, vals: js.Any): Ctx = {
       val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], vals = vals.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ctx]
     }
     
-    @scala.inline
-    implicit class CtxMutableBuilder[Self <: Ctx] (val x: Self) extends AnyVal {
+    extension [Self <: Ctx](x: Self) {
       
-      @scala.inline
-      def setCtx(value: Context): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: Context): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVals(value: js.Any): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
+      inline def setVals(value: js.Any): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +40,16 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String, message: String): Key = {
+    inline def apply(key: String, message: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

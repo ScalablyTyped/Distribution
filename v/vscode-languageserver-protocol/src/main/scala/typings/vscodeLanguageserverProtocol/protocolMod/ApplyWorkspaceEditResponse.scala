@@ -27,28 +27,21 @@ trait ApplyWorkspaceEditResponse extends StObject {
 }
 object ApplyWorkspaceEditResponse {
   
-  @scala.inline
-  def apply(applied: Boolean): ApplyWorkspaceEditResponse = {
+  inline def apply(applied: Boolean): ApplyWorkspaceEditResponse = {
     val __obj = js.Dynamic.literal(applied = applied.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyWorkspaceEditResponse]
   }
   
-  @scala.inline
-  implicit class ApplyWorkspaceEditResponseMutableBuilder[Self <: ApplyWorkspaceEditResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyWorkspaceEditResponse](x: Self) {
     
-    @scala.inline
-    def setApplied(value: Boolean): Self = StObject.set(x, "applied", value.asInstanceOf[js.Any])
+    inline def setApplied(value: Boolean): Self = StObject.set(x, "applied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedChange(value: Double): Self = StObject.set(x, "failedChange", value.asInstanceOf[js.Any])
+    inline def setFailedChange(value: Double): Self = StObject.set(x, "failedChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedChangeUndefined: Self = StObject.set(x, "failedChange", js.undefined)
+    inline def setFailedChangeUndefined: Self = StObject.set(x, "failedChange", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
   }
 }

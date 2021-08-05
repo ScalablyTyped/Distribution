@@ -103,8 +103,7 @@ trait ASPxClientNavBar
 }
 object ASPxClientNavBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientNavBar]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]],
@@ -142,58 +141,40 @@ object ASPxClientNavBar {
     __obj.asInstanceOf[ASPxClientNavBar]
   }
   
-  @scala.inline
-  implicit class ASPxClientNavBarMutableBuilder[Self <: ASPxClientNavBar] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientNavBar](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseAll(value: () => Unit): Self = StObject.set(x, "CollapseAll", js.Any.fromFunction0(value))
+    inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "CollapseAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandAll(value: () => Unit): Self = StObject.set(x, "ExpandAll", js.Any.fromFunction0(value))
+    inline def setExpandAll(value: () => Unit): Self = StObject.set(x, "ExpandAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandedChanged(value: ASPxClientEvent[ASPxClientNavBarGroupEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ExpandedChanged", value.asInstanceOf[js.Any])
+    inline def setExpandedChanged(value: ASPxClientEvent[ASPxClientNavBarGroupEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ExpandedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedChanging(value: ASPxClientEvent[ASPxClientNavBarGroupCancelEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ExpandedChanging", value.asInstanceOf[js.Any])
+    inline def setExpandedChanging(value: ASPxClientEvent[ASPxClientNavBarGroupCancelEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ExpandedChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveGroup(value: () => ASPxClientNavBarGroup): Self = StObject.set(x, "GetActiveGroup", js.Any.fromFunction0(value))
+    inline def setGetActiveGroup(value: () => ASPxClientNavBarGroup): Self = StObject.set(x, "GetActiveGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroup(value: Double => ASPxClientNavBarGroup): Self = StObject.set(x, "GetGroup", js.Any.fromFunction1(value))
+    inline def setGetGroup(value: Double => ASPxClientNavBarGroup): Self = StObject.set(x, "GetGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetGroupByName(value: String => ASPxClientNavBarGroup): Self = StObject.set(x, "GetGroupByName", js.Any.fromFunction1(value))
+    inline def setGetGroupByName(value: String => ASPxClientNavBarGroup): Self = StObject.set(x, "GetGroupByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetGroupCount(value: () => Double): Self = StObject.set(x, "GetGroupCount", js.Any.fromFunction0(value))
+    inline def setGetGroupCount(value: () => Double): Self = StObject.set(x, "GetGroupCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemByName(value: String => ASPxClientNavBarItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
+    inline def setGetItemByName(value: String => ASPxClientNavBarItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelectedItem(value: () => ASPxClientNavBarItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
+    inline def setGetSelectedItem(value: () => ASPxClientNavBarItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeaderClick(value: ASPxClientEvent[ASPxClientNavBarGroupClickEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "HeaderClick", value.asInstanceOf[js.Any])
+    inline def setHeaderClick(value: ASPxClientEvent[ASPxClientNavBarGroupClickEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "HeaderClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientNavBarItemEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
+    inline def setItemClick(value: ASPxClientEvent[ASPxClientNavBarItemEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetActiveGroup(value: ASPxClientNavBarGroup => Unit): Self = StObject.set(x, "SetActiveGroup", js.Any.fromFunction1(value))
+    inline def setSetActiveGroup(value: ASPxClientNavBarGroup => Unit): Self = StObject.set(x, "SetActiveGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelectedItem(value: ASPxClientNavBarItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
+    inline def setSetSelectedItem(value: ASPxClientNavBarItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

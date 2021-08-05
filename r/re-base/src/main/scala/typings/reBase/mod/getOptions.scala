@@ -27,31 +27,23 @@ trait getOptions extends StObject {
 }
 object getOptions {
   
-  @scala.inline
-  def apply(): getOptions = {
+  inline def apply(): getOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[getOptions]
   }
   
-  @scala.inline
-  implicit class getOptionsMutableBuilder[Self <: getOptions] (val x: Self) extends AnyVal {
+  extension [Self <: getOptions](x: Self) {
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setWithIds(value: Boolean): Self = StObject.set(x, "withIds", value.asInstanceOf[js.Any])
+    inline def setWithIds(value: Boolean): Self = StObject.set(x, "withIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithIdsUndefined: Self = StObject.set(x, "withIds", js.undefined)
+    inline def setWithIdsUndefined: Self = StObject.set(x, "withIds", js.undefined)
     
-    @scala.inline
-    def setWithRefs(value: Boolean): Self = StObject.set(x, "withRefs", value.asInstanceOf[js.Any])
+    inline def setWithRefs(value: Boolean): Self = StObject.set(x, "withRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithRefsUndefined: Self = StObject.set(x, "withRefs", js.undefined)
+    inline def setWithRefsUndefined: Self = StObject.set(x, "withRefs", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait TypeofNavBar extends StObject {
 }
 object TypeofNavBar {
   
-  @scala.inline
-  def apply(extend: js.Object => NavBar, fn: NavBar): TypeofNavBar = {
+  inline def apply(extend: js.Object => NavBar, fn: NavBar): TypeofNavBar = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofNavBar]
   }
   
-  @scala.inline
-  implicit class TypeofNavBarMutableBuilder[Self <: TypeofNavBar] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofNavBar](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => NavBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => NavBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: NavBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: NavBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

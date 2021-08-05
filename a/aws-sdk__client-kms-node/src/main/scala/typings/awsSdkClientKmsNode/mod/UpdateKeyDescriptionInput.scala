@@ -9,8 +9,7 @@ trait UpdateKeyDescriptionInput
      with typings.awsSdkClientKmsNode.typesUpdateKeyDescriptionInputMod.UpdateKeyDescriptionInput
 object UpdateKeyDescriptionInput {
   
-  @scala.inline
-  def apply(Description: String, KeyId: String): UpdateKeyDescriptionInput = {
+  inline def apply(Description: String, KeyId: String): UpdateKeyDescriptionInput = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateKeyDescriptionInput]
   }

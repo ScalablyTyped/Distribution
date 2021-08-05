@@ -8,11 +8,11 @@ trait LiteralExpression
   extends StObject
      with AST {
   
-  var _nodeType: js.Any
+  /* private */ var _nodeType: js.Any
   
-  var _text: js.Any
+  /* private */ var _text: js.Any
   
-  var _valueText: js.Any
+  /* private */ var _valueText: js.Any
   
   def structuralEquals(ast: ParenthesizedExpression, includingPosition: Boolean): Boolean
   
@@ -22,8 +22,7 @@ trait LiteralExpression
 }
 object LiteralExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _nodeType: js.Any,
@@ -54,25 +53,18 @@ object LiteralExpression {
     __obj.asInstanceOf[LiteralExpression]
   }
   
-  @scala.inline
-  implicit class LiteralExpressionMutableBuilder[Self <: LiteralExpression] (val x: Self) extends AnyVal {
+  extension [Self <: LiteralExpression](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueText(value: () => String): Self = StObject.set(x, "valueText", js.Any.fromFunction0(value))
+    inline def setValueText(value: () => String): Self = StObject.set(x, "valueText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
+    inline def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

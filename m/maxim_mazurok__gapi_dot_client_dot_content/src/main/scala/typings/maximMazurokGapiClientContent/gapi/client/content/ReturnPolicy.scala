@@ -32,67 +32,47 @@ trait ReturnPolicy extends StObject {
 }
 object ReturnPolicy {
   
-  @scala.inline
-  def apply(): ReturnPolicy = {
+  inline def apply(): ReturnPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnPolicy]
   }
   
-  @scala.inline
-  implicit class ReturnPolicyMutableBuilder[Self <: ReturnPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnPolicy](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNonFreeReturnReasons(value: js.Array[String]): Self = StObject.set(x, "nonFreeReturnReasons", value.asInstanceOf[js.Any])
+    inline def setNonFreeReturnReasons(value: js.Array[String]): Self = StObject.set(x, "nonFreeReturnReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonFreeReturnReasonsUndefined: Self = StObject.set(x, "nonFreeReturnReasons", js.undefined)
+    inline def setNonFreeReturnReasonsUndefined: Self = StObject.set(x, "nonFreeReturnReasons", js.undefined)
     
-    @scala.inline
-    def setNonFreeReturnReasonsVarargs(value: String*): Self = StObject.set(x, "nonFreeReturnReasons", js.Array(value :_*))
+    inline def setNonFreeReturnReasonsVarargs(value: String*): Self = StObject.set(x, "nonFreeReturnReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicy(value: ReturnPolicyPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ReturnPolicyPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setReturnPolicyId(value: String): Self = StObject.set(x, "returnPolicyId", value.asInstanceOf[js.Any])
+    inline def setReturnPolicyId(value: String): Self = StObject.set(x, "returnPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPolicyIdUndefined: Self = StObject.set(x, "returnPolicyId", js.undefined)
+    inline def setReturnPolicyIdUndefined: Self = StObject.set(x, "returnPolicyId", js.undefined)
     
-    @scala.inline
-    def setSeasonalOverrides(value: js.Array[ReturnPolicySeasonalOverride]): Self = StObject.set(x, "seasonalOverrides", value.asInstanceOf[js.Any])
+    inline def setSeasonalOverrides(value: js.Array[ReturnPolicySeasonalOverride]): Self = StObject.set(x, "seasonalOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeasonalOverridesUndefined: Self = StObject.set(x, "seasonalOverrides", js.undefined)
+    inline def setSeasonalOverridesUndefined: Self = StObject.set(x, "seasonalOverrides", js.undefined)
     
-    @scala.inline
-    def setSeasonalOverridesVarargs(value: ReturnPolicySeasonalOverride*): Self = StObject.set(x, "seasonalOverrides", js.Array(value :_*))
+    inline def setSeasonalOverridesVarargs(value: ReturnPolicySeasonalOverride*): Self = StObject.set(x, "seasonalOverrides", js.Array(value :_*))
   }
 }

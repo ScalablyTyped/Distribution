@@ -23,43 +23,31 @@ trait GooglePrivacyDlpV2StoredInfoTypeConfig extends StObject {
 }
 object GooglePrivacyDlpV2StoredInfoTypeConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2StoredInfoTypeConfig = {
+  inline def apply(): GooglePrivacyDlpV2StoredInfoTypeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2StoredInfoTypeConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2StoredInfoTypeConfigMutableBuilder[Self <: GooglePrivacyDlpV2StoredInfoTypeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2StoredInfoTypeConfig](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDictionary(value: GooglePrivacyDlpV2Dictionary): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+    inline def setDictionary(value: GooglePrivacyDlpV2Dictionary): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
+    inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLargeCustomDictionary(value: GooglePrivacyDlpV2LargeCustomDictionaryConfig): Self = StObject.set(x, "largeCustomDictionary", value.asInstanceOf[js.Any])
+    inline def setLargeCustomDictionary(value: GooglePrivacyDlpV2LargeCustomDictionaryConfig): Self = StObject.set(x, "largeCustomDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeCustomDictionaryUndefined: Self = StObject.set(x, "largeCustomDictionary", js.undefined)
+    inline def setLargeCustomDictionaryUndefined: Self = StObject.set(x, "largeCustomDictionary", js.undefined)
     
-    @scala.inline
-    def setRegex(value: GooglePrivacyDlpV2Regex): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: GooglePrivacyDlpV2Regex): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }
 }

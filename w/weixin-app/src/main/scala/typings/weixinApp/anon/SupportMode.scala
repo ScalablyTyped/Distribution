@@ -14,22 +14,17 @@ trait SupportMode extends StObject {
 }
 object SupportMode {
   
-  @scala.inline
-  def apply(errMsg: String, supportMode: js.Array[AuthModes]): SupportMode = {
+  inline def apply(errMsg: String, supportMode: js.Array[AuthModes]): SupportMode = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], supportMode = supportMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportMode]
   }
   
-  @scala.inline
-  implicit class SupportModeMutableBuilder[Self <: SupportMode] (val x: Self) extends AnyVal {
+  extension [Self <: SupportMode](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportMode(value: js.Array[AuthModes]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    inline def setSupportMode(value: js.Array[AuthModes]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportModeVarargs(value: AuthModes*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
+    inline def setSupportModeVarargs(value: AuthModes*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
   }
 }

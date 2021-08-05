@@ -16,26 +16,20 @@ object addressBookRepositoryLinkResponseMod {
   }
   object AddressBookRepositoryLinkResponseRootObject {
     
-    @scala.inline
-    def apply(status: String, users: js.Array[AddressBookRepositoryLinkResponseUsersItem], warning: String): AddressBookRepositoryLinkResponseRootObject = {
+    inline def apply(status: String, users: js.Array[AddressBookRepositoryLinkResponseUsersItem], warning: String): AddressBookRepositoryLinkResponseRootObject = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddressBookRepositoryLinkResponseRootObject]
     }
     
-    @scala.inline
-    implicit class AddressBookRepositoryLinkResponseRootObjectMutableBuilder[Self <: AddressBookRepositoryLinkResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: AddressBookRepositoryLinkResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[AddressBookRepositoryLinkResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[AddressBookRepositoryLinkResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: AddressBookRepositoryLinkResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: AddressBookRepositoryLinkResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
       
-      @scala.inline
-      def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,8 +55,7 @@ object addressBookRepositoryLinkResponseMod {
   }
   object AddressBookRepositoryLinkResponseUsersItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addressbook_name: String,
       full_name: String,
       has_anonymous_profile_picture: Boolean,
@@ -77,35 +70,25 @@ object addressBookRepositoryLinkResponseMod {
       __obj.asInstanceOf[AddressBookRepositoryLinkResponseUsersItem]
     }
     
-    @scala.inline
-    implicit class AddressBookRepositoryLinkResponseUsersItemMutableBuilder[Self <: AddressBookRepositoryLinkResponseUsersItem] (val x: Self) extends AnyVal {
+    extension [Self <: AddressBookRepositoryLinkResponseUsersItem](x: Self) {
       
-      @scala.inline
-      def setAddressbook_name(value: String): Self = StObject.set(x, "addressbook_name", value.asInstanceOf[js.Any])
+      inline def setAddressbook_name(value: String): Self = StObject.set(x, "addressbook_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,31 +23,23 @@ trait CreateEmailIdentityResponse extends StObject {
 }
 object CreateEmailIdentityResponse {
   
-  @scala.inline
-  def apply(): CreateEmailIdentityResponse = {
+  inline def apply(): CreateEmailIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEmailIdentityResponse]
   }
   
-  @scala.inline
-  implicit class CreateEmailIdentityResponseMutableBuilder[Self <: CreateEmailIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEmailIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
+    inline def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimAttributesUndefined: Self = StObject.set(x, "DkimAttributes", js.undefined)
+    inline def setDkimAttributesUndefined: Self = StObject.set(x, "DkimAttributes", js.undefined)
     
-    @scala.inline
-    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
+    inline def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
-    @scala.inline
-    def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
+    inline def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedForSendingStatusUndefined: Self = StObject.set(x, "VerifiedForSendingStatus", js.undefined)
+    inline def setVerifiedForSendingStatusUndefined: Self = StObject.set(x, "VerifiedForSendingStatus", js.undefined)
   }
 }

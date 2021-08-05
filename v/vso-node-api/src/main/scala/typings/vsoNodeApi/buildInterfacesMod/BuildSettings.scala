@@ -23,8 +23,7 @@ trait BuildSettings extends StObject {
 }
 object BuildSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     daysToKeepDeletedBuildsBeforeDestroy: Double,
     defaultRetentionPolicy: RetentionPolicy,
     maximumRetentionPolicy: RetentionPolicy
@@ -33,16 +32,12 @@ object BuildSettings {
     __obj.asInstanceOf[BuildSettings]
   }
   
-  @scala.inline
-  implicit class BuildSettingsMutableBuilder[Self <: BuildSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BuildSettings](x: Self) {
     
-    @scala.inline
-    def setDaysToKeepDeletedBuildsBeforeDestroy(value: Double): Self = StObject.set(x, "daysToKeepDeletedBuildsBeforeDestroy", value.asInstanceOf[js.Any])
+    inline def setDaysToKeepDeletedBuildsBeforeDestroy(value: Double): Self = StObject.set(x, "daysToKeepDeletedBuildsBeforeDestroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "defaultRetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setDefaultRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "defaultRetentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "maximumRetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setMaximumRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "maximumRetentionPolicy", value.asInstanceOf[js.Any])
   }
 }

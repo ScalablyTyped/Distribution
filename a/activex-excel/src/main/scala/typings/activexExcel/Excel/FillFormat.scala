@@ -27,7 +27,7 @@ trait FillFormat extends StObject {
   
   val Creator: Double
   
-  @JSName("Excel.FillFormat_typekey")
+  /* private */ @JSName("Excel.FillFormat_typekey")
   var ExcelDotFillFormat_typekey: FillFormat
   
   var ForeColor: ColorFormat
@@ -100,8 +100,7 @@ trait FillFormat extends StObject {
 }
 object FillFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     BackColor: ColorFormat,
     Background: () => Unit,
@@ -145,118 +144,80 @@ object FillFormat {
     __obj.asInstanceOf[FillFormat]
   }
   
-  @scala.inline
-  implicit class FillFormatMutableBuilder[Self <: FillFormat] (val x: Self) extends AnyVal {
+  extension [Self <: FillFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackColor(value: ColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: ColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground(value: () => Unit): Self = StObject.set(x, "Background", js.Any.fromFunction0(value))
+    inline def setBackground(value: () => Unit): Self = StObject.set(x, "Background", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotFillFormat_typekey(value: FillFormat): Self = StObject.set(x, "Excel.FillFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotFillFormat_typekey(value: FillFormat): Self = StObject.set(x, "Excel.FillFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: ColorFormat): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: ColorFormat): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientAngle(value: Double): Self = StObject.set(x, "GradientAngle", value.asInstanceOf[js.Any])
+    inline def setGradientAngle(value: Double): Self = StObject.set(x, "GradientAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientColorType(value: MsoGradientColorType): Self = StObject.set(x, "GradientColorType", value.asInstanceOf[js.Any])
+    inline def setGradientColorType(value: MsoGradientColorType): Self = StObject.set(x, "GradientColorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientDegree(value: Double): Self = StObject.set(x, "GradientDegree", value.asInstanceOf[js.Any])
+    inline def setGradientDegree(value: Double): Self = StObject.set(x, "GradientDegree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientStops(value: GradientStops): Self = StObject.set(x, "GradientStops", value.asInstanceOf[js.Any])
+    inline def setGradientStops(value: GradientStops): Self = StObject.set(x, "GradientStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientStyle(value: MsoGradientStyle): Self = StObject.set(x, "GradientStyle", value.asInstanceOf[js.Any])
+    inline def setGradientStyle(value: MsoGradientStyle): Self = StObject.set(x, "GradientStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientVariant(value: Double): Self = StObject.set(x, "GradientVariant", value.asInstanceOf[js.Any])
+    inline def setGradientVariant(value: Double): Self = StObject.set(x, "GradientVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneColorGradient(value: (MsoGradientStyle, Double, Double) => Unit): Self = StObject.set(x, "OneColorGradient", js.Any.fromFunction3(value))
+    inline def setOneColorGradient(value: (MsoGradientStyle, Double, Double) => Unit): Self = StObject.set(x, "OneColorGradient", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: MsoPatternType): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: MsoPatternType): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatterned(value: MsoPatternType => Unit): Self = StObject.set(x, "Patterned", js.Any.fromFunction1(value))
+    inline def setPatterned(value: MsoPatternType => Unit): Self = StObject.set(x, "Patterned", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPictureEffects(value: PictureEffects): Self = StObject.set(x, "PictureEffects", value.asInstanceOf[js.Any])
+    inline def setPictureEffects(value: PictureEffects): Self = StObject.set(x, "PictureEffects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetGradient(value: (MsoGradientStyle, Double, MsoPresetGradientType) => Unit): Self = StObject.set(x, "PresetGradient", js.Any.fromFunction3(value))
+    inline def setPresetGradient(value: (MsoGradientStyle, Double, MsoPresetGradientType) => Unit): Self = StObject.set(x, "PresetGradient", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPresetGradientType(value: MsoPresetGradientType): Self = StObject.set(x, "PresetGradientType", value.asInstanceOf[js.Any])
+    inline def setPresetGradientType(value: MsoPresetGradientType): Self = StObject.set(x, "PresetGradientType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetTexture(value: MsoPresetTexture): Self = StObject.set(x, "PresetTexture", value.asInstanceOf[js.Any])
+    inline def setPresetTexture(value: MsoPresetTexture): Self = StObject.set(x, "PresetTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetTextured(value: MsoPresetTexture => Unit): Self = StObject.set(x, "PresetTextured", js.Any.fromFunction1(value))
+    inline def setPresetTextured(value: MsoPresetTexture => Unit): Self = StObject.set(x, "PresetTextured", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotateWithObject(value: MsoTriState): Self = StObject.set(x, "RotateWithObject", value.asInstanceOf[js.Any])
+    inline def setRotateWithObject(value: MsoTriState): Self = StObject.set(x, "RotateWithObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolid(value: () => Unit): Self = StObject.set(x, "Solid", js.Any.fromFunction0(value))
+    inline def setSolid(value: () => Unit): Self = StObject.set(x, "Solid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextureAlignment(value: MsoTextureAlignment): Self = StObject.set(x, "TextureAlignment", value.asInstanceOf[js.Any])
+    inline def setTextureAlignment(value: MsoTextureAlignment): Self = StObject.set(x, "TextureAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureHorizontalScale(value: Double): Self = StObject.set(x, "TextureHorizontalScale", value.asInstanceOf[js.Any])
+    inline def setTextureHorizontalScale(value: Double): Self = StObject.set(x, "TextureHorizontalScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureName(value: String): Self = StObject.set(x, "TextureName", value.asInstanceOf[js.Any])
+    inline def setTextureName(value: String): Self = StObject.set(x, "TextureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureOffsetX(value: Double): Self = StObject.set(x, "TextureOffsetX", value.asInstanceOf[js.Any])
+    inline def setTextureOffsetX(value: Double): Self = StObject.set(x, "TextureOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureOffsetY(value: Double): Self = StObject.set(x, "TextureOffsetY", value.asInstanceOf[js.Any])
+    inline def setTextureOffsetY(value: Double): Self = StObject.set(x, "TextureOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureTile(value: MsoTriState): Self = StObject.set(x, "TextureTile", value.asInstanceOf[js.Any])
+    inline def setTextureTile(value: MsoTriState): Self = StObject.set(x, "TextureTile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureType(value: MsoTextureType): Self = StObject.set(x, "TextureType", value.asInstanceOf[js.Any])
+    inline def setTextureType(value: MsoTextureType): Self = StObject.set(x, "TextureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureVerticalScale(value: Double): Self = StObject.set(x, "TextureVerticalScale", value.asInstanceOf[js.Any])
+    inline def setTextureVerticalScale(value: Double): Self = StObject.set(x, "TextureVerticalScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoColorGradient(value: (MsoGradientStyle, Double) => Unit): Self = StObject.set(x, "TwoColorGradient", js.Any.fromFunction2(value))
+    inline def setTwoColorGradient(value: (MsoGradientStyle, Double) => Unit): Self = StObject.set(x, "TwoColorGradient", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: MsoFillType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoFillType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPicture(value: String => Unit): Self = StObject.set(x, "UserPicture", js.Any.fromFunction1(value))
+    inline def setUserPicture(value: String => Unit): Self = StObject.set(x, "UserPicture", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUserTextured(value: String => Unit): Self = StObject.set(x, "UserTextured", js.Any.fromFunction1(value))
+    inline def setUserTextured(value: String => Unit): Self = StObject.set(x, "UserTextured", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

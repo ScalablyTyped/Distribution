@@ -12,17 +12,14 @@ object anon {
   }
   object Fd {
     
-    @scala.inline
-    def apply(_fd: Double): Fd = {
+    inline def apply(_fd: Double): Fd = {
       val __obj = js.Dynamic.literal(_fd = _fd.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fd]
     }
     
-    @scala.inline
-    implicit class FdMutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
+    extension [Self <: Fd](x: Self) {
       
-      @scala.inline
-      def set_fd(value: Double): Self = StObject.set(x, "_fd", value.asInstanceOf[js.Any])
+      inline def set_fd(value: Double): Self = StObject.set(x, "_fd", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object Handle {
     
-    @scala.inline
-    def apply(_handle: Fd): Handle = {
+    inline def apply(_handle: Fd): Handle = {
       val __obj = js.Dynamic.literal(_handle = _handle.asInstanceOf[js.Any])
       __obj.asInstanceOf[Handle]
     }
     
-    @scala.inline
-    implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+    extension [Self <: Handle](x: Self) {
       
-      @scala.inline
-      def set_handle(value: Fd): Self = StObject.set(x, "_handle", value.asInstanceOf[js.Any])
+      inline def set_handle(value: Fd): Self = StObject.set(x, "_handle", value.asInstanceOf[js.Any])
     }
   }
 }

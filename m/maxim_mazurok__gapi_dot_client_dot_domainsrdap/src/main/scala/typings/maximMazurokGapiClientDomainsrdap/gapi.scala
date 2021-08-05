@@ -61,29 +61,22 @@ object gapi {
       }
       object HttpBody {
         
-        @scala.inline
-        def apply(): HttpBody = {
+        inline def apply(): HttpBody = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[HttpBody]
         }
         
-        @scala.inline
-        implicit class HttpBodyMutableBuilder[Self <: HttpBody] (val x: Self) extends AnyVal {
+        extension [Self <: HttpBody](x: Self) {
           
-          @scala.inline
-          def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+          inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+          inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
           
-          @scala.inline
-          def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+          inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
           
-          @scala.inline
-          def setExtensions(
+          inline def setExtensions(
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
@@ -91,11 +84,9 @@ object gapi {
                     ]
           ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+          inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
           
-          @scala.inline
-          def setExtensionsVarargs(
+          inline def setExtensionsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientDomainsrdap.maximMazurokGapiClientDomainsrdapStrings.HttpBody & TopLevel[js.Any])*
@@ -136,56 +127,40 @@ object gapi {
       }
       object Link {
         
-        @scala.inline
-        def apply(): Link = {
+        inline def apply(): Link = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Link]
         }
         
-        @scala.inline
-        implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+        extension [Self <: Link](x: Self) {
           
-          @scala.inline
-          def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+          inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+          inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
           
-          @scala.inline
-          def setHreflang(value: String): Self = StObject.set(x, "hreflang", value.asInstanceOf[js.Any])
+          inline def setHreflang(value: String): Self = StObject.set(x, "hreflang", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHreflangUndefined: Self = StObject.set(x, "hreflang", js.undefined)
+          inline def setHreflangUndefined: Self = StObject.set(x, "hreflang", js.undefined)
           
-          @scala.inline
-          def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+          inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+          inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
           
-          @scala.inline
-          def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+          inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+          inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
           
-          @scala.inline
-          def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+          inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         }
       }
       
@@ -216,44 +191,32 @@ object gapi {
       }
       object Notice {
         
-        @scala.inline
-        def apply(): Notice = {
+        inline def apply(): Notice = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Notice]
         }
         
-        @scala.inline
-        implicit class NoticeMutableBuilder[Self <: Notice] (val x: Self) extends AnyVal {
+        extension [Self <: Notice](x: Self) {
           
-          @scala.inline
-          def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+          inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
           
-          @scala.inline
-          def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+          inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+          inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
           
-          @scala.inline
-          def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+          inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         }
       }
       
@@ -282,65 +245,46 @@ object gapi {
       }
       object RdapResponse {
         
-        @scala.inline
-        def apply(): RdapResponse = {
+        inline def apply(): RdapResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[RdapResponse]
         }
         
-        @scala.inline
-        implicit class RdapResponseMutableBuilder[Self <: RdapResponse] (val x: Self) extends AnyVal {
+        extension [Self <: RdapResponse](x: Self) {
           
-          @scala.inline
-          def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+          inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
           
-          @scala.inline
-          def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+          inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+          inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
           
-          @scala.inline
-          def setJsonResponse(value: HttpBody): Self = StObject.set(x, "jsonResponse", value.asInstanceOf[js.Any])
+          inline def setJsonResponse(value: HttpBody): Self = StObject.set(x, "jsonResponse", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setJsonResponseUndefined: Self = StObject.set(x, "jsonResponse", js.undefined)
+          inline def setJsonResponseUndefined: Self = StObject.set(x, "jsonResponse", js.undefined)
           
-          @scala.inline
-          def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+          inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+          inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
           
-          @scala.inline
-          def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+          inline def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
+          inline def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
           
-          @scala.inline
-          def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
+          inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
           
-          @scala.inline
-          def setRdapConformance(value: js.Array[String]): Self = StObject.set(x, "rdapConformance", value.asInstanceOf[js.Any])
+          inline def setRdapConformance(value: js.Array[String]): Self = StObject.set(x, "rdapConformance", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRdapConformanceUndefined: Self = StObject.set(x, "rdapConformance", js.undefined)
+          inline def setRdapConformanceUndefined: Self = StObject.set(x, "rdapConformance", js.undefined)
           
-          @scala.inline
-          def setRdapConformanceVarargs(value: String*): Self = StObject.set(x, "rdapConformance", js.Array(value :_*))
+          inline def setRdapConformanceVarargs(value: String*): Self = StObject.set(x, "rdapConformance", js.Array(value :_*))
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
       

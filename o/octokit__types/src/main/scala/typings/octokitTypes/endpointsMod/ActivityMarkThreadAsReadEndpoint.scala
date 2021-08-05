@@ -10,16 +10,13 @@ trait ActivityMarkThreadAsReadEndpoint extends StObject {
 }
 object ActivityMarkThreadAsReadEndpoint {
   
-  @scala.inline
-  def apply(thread_id: Double): ActivityMarkThreadAsReadEndpoint = {
+  inline def apply(thread_id: Double): ActivityMarkThreadAsReadEndpoint = {
     val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityMarkThreadAsReadEndpoint]
   }
   
-  @scala.inline
-  implicit class ActivityMarkThreadAsReadEndpointMutableBuilder[Self <: ActivityMarkThreadAsReadEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityMarkThreadAsReadEndpoint](x: Self) {
     
-    @scala.inline
-    def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+    inline def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

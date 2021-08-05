@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoordsMode extends StObject
 object CoordsMode {
   
-  @scala.inline
-  def div: typings.codemirror.codemirrorStrings.div = "div".asInstanceOf[typings.codemirror.codemirrorStrings.div]
+  inline def div: typings.codemirror.codemirrorStrings.div = "div".asInstanceOf[typings.codemirror.codemirrorStrings.div]
   
-  @scala.inline
-  def local: typings.codemirror.codemirrorStrings.local = "local".asInstanceOf[typings.codemirror.codemirrorStrings.local]
+  inline def local: typings.codemirror.codemirrorStrings.local = "local".asInstanceOf[typings.codemirror.codemirrorStrings.local]
   
-  @scala.inline
-  def page: typings.codemirror.codemirrorStrings.page = "page".asInstanceOf[typings.codemirror.codemirrorStrings.page]
+  inline def page: typings.codemirror.codemirrorStrings.page = "page".asInstanceOf[typings.codemirror.codemirrorStrings.page]
   
-  @scala.inline
-  def window: typings.codemirror.codemirrorStrings.window = "window".asInstanceOf[typings.codemirror.codemirrorStrings.window]
+  inline def window: typings.codemirror.codemirrorStrings.window = "window".asInstanceOf[typings.codemirror.codemirrorStrings.window]
 }

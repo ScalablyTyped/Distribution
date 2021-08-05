@@ -45,25 +45,19 @@ trait SchemaWorkerMessageCode extends StObject {
 }
 object SchemaWorkerMessageCode {
   
-  @scala.inline
-  def apply(): SchemaWorkerMessageCode = {
+  inline def apply(): SchemaWorkerMessageCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerMessageCode]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerMessageCodeMutableBuilder[Self <: SchemaWorkerMessageCode] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerMessageCode](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

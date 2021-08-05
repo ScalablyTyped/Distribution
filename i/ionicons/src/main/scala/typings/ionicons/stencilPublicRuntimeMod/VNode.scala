@@ -32,8 +32,7 @@ trait VNode extends StObject {
 }
 object VNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DollarchildrenDollar: js.Array[VNode],
     DollarelmDollar: js.Any,
     DollarflagsDollar: Double,
@@ -49,43 +48,30 @@ object VNode {
     __obj.asInstanceOf[VNode]
   }
   
-  @scala.inline
-  implicit class VNodeMutableBuilder[Self <: VNode] (val x: Self) extends AnyVal {
+  extension [Self <: VNode](x: Self) {
     
-    @scala.inline
-    def setDollarattrsDollar(value: js.Any): Self = StObject.set(x, "$attrs$", value.asInstanceOf[js.Any])
+    inline def setDollarattrsDollar(value: js.Any): Self = StObject.set(x, "$attrs$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarattrsDollarUndefined: Self = StObject.set(x, "$attrs$", js.undefined)
+    inline def setDollarattrsDollarUndefined: Self = StObject.set(x, "$attrs$", js.undefined)
     
-    @scala.inline
-    def setDollarchildrenDollar(value: js.Array[VNode]): Self = StObject.set(x, "$children$", value.asInstanceOf[js.Any])
+    inline def setDollarchildrenDollar(value: js.Array[VNode]): Self = StObject.set(x, "$children$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarchildrenDollarVarargs(value: VNode*): Self = StObject.set(x, "$children$", js.Array(value :_*))
+    inline def setDollarchildrenDollarVarargs(value: VNode*): Self = StObject.set(x, "$children$", js.Array(value :_*))
     
-    @scala.inline
-    def setDollarelmDollar(value: js.Any): Self = StObject.set(x, "$elm$", value.asInstanceOf[js.Any])
+    inline def setDollarelmDollar(value: js.Any): Self = StObject.set(x, "$elm$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarflagsDollar(value: Double): Self = StObject.set(x, "$flags$", value.asInstanceOf[js.Any])
+    inline def setDollarflagsDollar(value: Double): Self = StObject.set(x, "$flags$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarkeyDollar(value: String | Double): Self = StObject.set(x, "$key$", value.asInstanceOf[js.Any])
+    inline def setDollarkeyDollar(value: String | Double): Self = StObject.set(x, "$key$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarkeyDollarUndefined: Self = StObject.set(x, "$key$", js.undefined)
+    inline def setDollarkeyDollarUndefined: Self = StObject.set(x, "$key$", js.undefined)
     
-    @scala.inline
-    def setDollarnameDollar(value: String): Self = StObject.set(x, "$name$", value.asInstanceOf[js.Any])
+    inline def setDollarnameDollar(value: String): Self = StObject.set(x, "$name$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarnameDollarUndefined: Self = StObject.set(x, "$name$", js.undefined)
+    inline def setDollarnameDollarUndefined: Self = StObject.set(x, "$name$", js.undefined)
     
-    @scala.inline
-    def setDollartagDollar(value: String | Double | js.Function): Self = StObject.set(x, "$tag$", value.asInstanceOf[js.Any])
+    inline def setDollartagDollar(value: String | Double | js.Function): Self = StObject.set(x, "$tag$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollartextDollar(value: String): Self = StObject.set(x, "$text$", value.asInstanceOf[js.Any])
+    inline def setDollartextDollar(value: String): Self = StObject.set(x, "$text$", value.asInstanceOf[js.Any])
   }
 }

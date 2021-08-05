@@ -23,31 +23,23 @@ trait AwsRedshiftClusterClusterNode extends StObject {
 }
 object AwsRedshiftClusterClusterNode {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterClusterNode = {
+  inline def apply(): AwsRedshiftClusterClusterNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterClusterNode]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterClusterNodeMutableBuilder[Self <: AwsRedshiftClusterClusterNode] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterClusterNode](x: Self) {
     
-    @scala.inline
-    def setNodeRole(value: NonEmptyString): Self = StObject.set(x, "NodeRole", value.asInstanceOf[js.Any])
+    inline def setNodeRole(value: NonEmptyString): Self = StObject.set(x, "NodeRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRoleUndefined: Self = StObject.set(x, "NodeRole", js.undefined)
+    inline def setNodeRoleUndefined: Self = StObject.set(x, "NodeRole", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddress(value: NonEmptyString): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddress(value: NonEmptyString): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
     
-    @scala.inline
-    def setPublicIpAddress(value: NonEmptyString): Self = StObject.set(x, "PublicIpAddress", value.asInstanceOf[js.Any])
+    inline def setPublicIpAddress(value: NonEmptyString): Self = StObject.set(x, "PublicIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpAddressUndefined: Self = StObject.set(x, "PublicIpAddress", js.undefined)
+    inline def setPublicIpAddressUndefined: Self = StObject.set(x, "PublicIpAddress", js.undefined)
   }
 }

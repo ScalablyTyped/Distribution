@@ -13,16 +13,13 @@ trait SetAttachDebugHeaderRequest extends StObject {
 }
 object SetAttachDebugHeaderRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetAttachDebugHeaderRequest = {
+  inline def apply(enabled: Boolean): SetAttachDebugHeaderRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAttachDebugHeaderRequest]
   }
   
-  @scala.inline
-  implicit class SetAttachDebugHeaderRequestMutableBuilder[Self <: SetAttachDebugHeaderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetAttachDebugHeaderRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

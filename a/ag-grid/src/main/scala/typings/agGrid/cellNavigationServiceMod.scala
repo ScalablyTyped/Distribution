@@ -12,7 +12,7 @@ object cellNavigationServiceMod {
   @js.native
   class CellNavigationService () extends StObject {
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
     /* private */ def getCellAbove(lastCell: js.Any): js.Any = js.native
     
@@ -38,14 +38,14 @@ object cellNavigationServiceMod {
     
     def getRowBelow(lastRow: GridRow): GridRow = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def isCellGoodToFocusOn(gridCell: js.Any): js.Any = js.native
     
     /* private */ def isLastRowInContainer(gridRow: js.Any): js.Any = js.native
     
-    var pinnedRowModel: js.Any = js.native
+    /* private */ var pinnedRowModel: js.Any = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
   }
 }

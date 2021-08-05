@@ -18,19 +18,15 @@ trait UploadSSHPublicKeyRequest extends StObject {
 }
 object UploadSSHPublicKeyRequest {
   
-  @scala.inline
-  def apply(SSHPublicKeyBody: publicKeyMaterialType, UserName: userNameType): UploadSSHPublicKeyRequest = {
+  inline def apply(SSHPublicKeyBody: publicKeyMaterialType, UserName: userNameType): UploadSSHPublicKeyRequest = {
     val __obj = js.Dynamic.literal(SSHPublicKeyBody = SSHPublicKeyBody.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadSSHPublicKeyRequest]
   }
   
-  @scala.inline
-  implicit class UploadSSHPublicKeyRequestMutableBuilder[Self <: UploadSSHPublicKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UploadSSHPublicKeyRequest](x: Self) {
     
-    @scala.inline
-    def setSSHPublicKeyBody(value: publicKeyMaterialType): Self = StObject.set(x, "SSHPublicKeyBody", value.asInstanceOf[js.Any])
+    inline def setSSHPublicKeyBody(value: publicKeyMaterialType): Self = StObject.set(x, "SSHPublicKeyBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

@@ -33,43 +33,31 @@ trait TopicRuleListItem extends StObject {
 }
 object TopicRuleListItem {
   
-  @scala.inline
-  def apply(): TopicRuleListItem = {
+  inline def apply(): TopicRuleListItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicRuleListItem]
   }
   
-  @scala.inline
-  implicit class TopicRuleListItemMutableBuilder[Self <: TopicRuleListItem] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleListItem](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAtDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAtDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = StObject.set(x, "ruleArn", value.asInstanceOf[js.Any])
+    inline def setRuleArn(value: RuleArn): Self = StObject.set(x, "ruleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleArnUndefined: Self = StObject.set(x, "ruleArn", js.undefined)
+    inline def setRuleArnUndefined: Self = StObject.set(x, "ruleArn", js.undefined)
     
-    @scala.inline
-    def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
+    inline def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
+    inline def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
     
-    @scala.inline
-    def setTopicPattern(value: TopicPattern): Self = StObject.set(x, "topicPattern", value.asInstanceOf[js.Any])
+    inline def setTopicPattern(value: TopicPattern): Self = StObject.set(x, "topicPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicPatternUndefined: Self = StObject.set(x, "topicPattern", js.undefined)
+    inline def setTopicPatternUndefined: Self = StObject.set(x, "topicPattern", js.undefined)
   }
 }

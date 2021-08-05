@@ -14,30 +14,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearAndSetValue(input: ElementFinder, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearAndSetValue")(input.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def clearAndSetValue(input: ElementFinder, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearAndSetValue")(input.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createMessage(actual: String, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createMessage(actual: ElementArrayFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createMessage(actual: ElementFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createMessage(actual: String, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createMessage(actual: ElementArrayFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createMessage(actual: ElementFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def displayHover(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayHover")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def displayHover(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayHover")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getFilteredConsoleErrors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredConsoleErrors")().asInstanceOf[js.Any]
+  inline def getFilteredConsoleErrors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredConsoleErrors")().asInstanceOf[js.Any]
   
   object global {
     
-    @scala.inline
-    def $data(hook: String): ElementArrayFinder = js.Dynamic.global.applyDynamic("$$data")(hook.asInstanceOf[js.Any]).asInstanceOf[ElementArrayFinder]
+    inline def $data(hook: String): ElementArrayFinder = js.Dynamic.global.applyDynamic("$$data")(hook.asInstanceOf[js.Any]).asInstanceOf[ElementArrayFinder]
     
     // Globals
-    @scala.inline
-    def data(hook: String): ElementFinder = js.Dynamic.global.applyDynamic("$data")(hook.asInstanceOf[js.Any]).asInstanceOf[ElementFinder]
+    inline def data(hook: String): ElementFinder = js.Dynamic.global.applyDynamic("$data")(hook.asInstanceOf[js.Any]).asInstanceOf[ElementFinder]
     
     // Matchers
     // TODO - Use `T` to improve types
@@ -105,21 +97,17 @@ object mod {
       }
       object ElementArrayFinder {
         
-        @scala.inline
-        def apply(DollarDollardata: String => ElementArrayFinder, getByText: String => ElementFinder): ElementArrayFinder = {
+        inline def apply(DollarDollardata: String => ElementArrayFinder, getByText: String => ElementFinder): ElementArrayFinder = {
           val __obj = js.Dynamic.literal(getByText = js.Any.fromFunction1(getByText))
           __obj.updateDynamic("$$data")(js.Any.fromFunction1(DollarDollardata))
           __obj.asInstanceOf[ElementArrayFinder]
         }
         
-        @scala.inline
-        implicit class ElementArrayFinderMutableBuilder[Self <: ElementArrayFinder] (val x: Self) extends AnyVal {
+        extension [Self <: ElementArrayFinder](x: Self) {
           
-          @scala.inline
-          def setDollarDollardata(value: String => ElementArrayFinder): Self = StObject.set(x, "$$data", js.Any.fromFunction1(value))
+          inline def setDollarDollardata(value: String => ElementArrayFinder): Self = StObject.set(x, "$$data", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setGetByText(value: String => ElementFinder): Self = StObject.set(x, "getByText", js.Any.fromFunction1(value))
+          inline def setGetByText(value: String => ElementFinder): Self = StObject.set(x, "getByText", js.Any.fromFunction1(value))
         }
       }
       
@@ -130,17 +118,14 @@ object mod {
       }
       object ElementFinder {
         
-        @scala.inline
-        def apply($data: String => ElementFinder): ElementFinder = {
+        inline def apply($data: String => ElementFinder): ElementFinder = {
           val __obj = js.Dynamic.literal($data = js.Any.fromFunction1($data))
           __obj.asInstanceOf[ElementFinder]
         }
         
-        @scala.inline
-        implicit class ElementFinderMutableBuilder[Self <: ElementFinder] (val x: Self) extends AnyVal {
+        extension [Self <: ElementFinder](x: Self) {
           
-          @scala.inline
-          def set$data(value: String => ElementFinder): Self = StObject.set(x, "$data", js.Any.fromFunction1(value))
+          inline def set$data(value: String => ElementFinder): Self = StObject.set(x, "$data", js.Any.fromFunction1(value))
         }
       }
       
@@ -160,77 +145,50 @@ object mod {
     }
   }
   
-  @scala.inline
-  def hasClass(element: ElementFinder, className: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasClass(element: ElementFinder, className: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hasLink(element: ElementFinder, url: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLink")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasLink(element: ElementFinder, url: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLink")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hasValue(element: ElementFinder, expectedValue: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def hasValue(element: ElementFinder, expectedValue: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasValue(element: ElementFinder, expectedValue: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasValue(element: ElementFinder, expectedValue: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isChecked(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isChecked")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isChecked(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isChecked")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isDisabled(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isDisabled(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirefox")().asInstanceOf[Boolean]
+  inline def isFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirefox")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE")().asInstanceOf[Boolean]
+  inline def isIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def maximizeWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")().asInstanceOf[Unit]
-  @scala.inline
-  def maximizeWindow(width: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def maximizeWindow(width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def maximizeWindow(width: Unit, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def maximizeWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")().asInstanceOf[Unit]
+  inline def maximizeWindow(width: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def maximizeWindow(width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def maximizeWindow(width: Unit, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("maximizeWindow")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def moveToElement(hook: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveToElement")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def moveToElement(hook: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveToElement")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def not(
+  inline def not(
     arg: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.promise.IThenable<any> */ js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def resetPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPosition")().asInstanceOf[Unit]
+  inline def resetPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPosition")().asInstanceOf[Unit]
   
-  @scala.inline
-  def safeGet(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("safeGet")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def safeGet(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("safeGet")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def selectOption(option: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectOption")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def selectOption(option: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectOption")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def selectOptionByIndex(select: ElementFinder, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptionByIndex")(select.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def selectOptionByIndex(select: ElementFinder, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptionByIndex")(select.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def selectOptionByText(select: ElementFinder, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptionByText")(select.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def selectOptionByText(select: ElementFinder, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptionByText")(select.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def translate(translationId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def translate(translationId: String, interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def translate(translationId: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def translate(translationId: js.Array[String], interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def translate(translationId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def translate(translationId: String, interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def translate(translationId: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def translate(translationId: js.Array[String], interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def waitForElement(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def waitForElement(element: ElementFinder, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def waitForElement(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def waitForElement(element: ElementFinder, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def waitForElementToDisappear(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToDisappear")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def waitForElementToDisappear(element: ElementFinder, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToDisappear")(element.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def waitForElementToDisappear(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToDisappear")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def waitForElementToDisappear(element: ElementFinder, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToDisappear")(element.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

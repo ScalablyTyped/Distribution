@@ -32,9 +32,9 @@ object fileLoggerMod {
     def this(options: Unit, fileLoggerOptions: FileLoggerOptions) = this()
     def this(options: all, fileLoggerOptions: FileLoggerOptions) = this()
     
-    var fileLoggerOptions: js.Any = js.native
+    /* private */ var fileLoggerOptions: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Converts parameters to a string.

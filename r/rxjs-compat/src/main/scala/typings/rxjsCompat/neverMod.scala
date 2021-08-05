@@ -2000,8 +2000,7 @@ object neverMod {
     }
     object Observable {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         _catch: FnCallThisSelector,
         _do: FnCallThisNextErrorComplete,
         _finally: FnCallThisCallback,
@@ -2128,64 +2127,56 @@ object neverMod {
       @JSImport("rxjs/internal/Observable", "Observable.ajax")
       @js.native
       def ajax: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ js.Any = js.native
-      @scala.inline
-      def ajax_=(
+      inline def ajax_=(
         x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ajax")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.bindCallback")
       @js.native
       def bindCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ js.Any = js.native
-      @scala.inline
-      def bindCallback_=(
+      inline def bindCallback_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindCallback")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.bindNodeCallback")
       @js.native
       def bindNodeCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ js.Any = js.native
-      @scala.inline
-      def bindNodeCallback_=(
+      inline def bindNodeCallback_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindNodeCallback")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.combineLatest")
       @js.native
       def combineLatest: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ js.Any = js.native
-      @scala.inline
-      def combineLatest_=(
+      inline def combineLatest_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combineLatest")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.concat")
       @js.native
       def concat: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ js.Any = js.native
-      @scala.inline
-      def concat_=(
+      inline def concat_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("concat")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.defer")
       @js.native
       def defer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ js.Any = js.native
-      @scala.inline
-      def defer_=(
+      inline def defer_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defer")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.empty")
       @js.native
       def empty: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ js.Any = js.native
-      @scala.inline
-      def empty_=(
+      inline def empty_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.forkJoin")
       @js.native
       def forkJoin: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ js.Any = js.native
-      @scala.inline
-      def forkJoin_=(
+      inline def forkJoin_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forkJoin")(x.asInstanceOf[js.Any])
       
@@ -2200,106 +2191,92 @@ object neverMod {
       @JSImport("rxjs/internal/Observable", "Observable.fromEventPattern")
       @js.native
       def fromEventPattern: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ js.Any = js.native
-      @scala.inline
-      def fromEventPattern_=(
+      inline def fromEventPattern_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEventPattern")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def fromEvent_=(
+      inline def fromEvent_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEvent */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEvent")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.fromPromise")
       @js.native
       def fromPromise: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ js.Any = js.native
-      @scala.inline
-      def fromPromise_=(
+      inline def fromPromise_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromPromise")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def from_=(
+      inline def from_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFrom */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("from")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.generate")
       @js.native
       def generate: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ js.Any = js.native
-      @scala.inline
-      def generate_=(
+      inline def generate_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generate")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.interval")
       @js.native
       def interval: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ js.Any = js.native
-      @scala.inline
-      def interval_=(
+      inline def interval_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interval")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.merge")
       @js.native
       def merge: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ js.Any = js.native
-      @scala.inline
-      def merge_=(
+      inline def merge_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.of")
       @js.native
       def of: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ js.Any = js.native
-      @scala.inline
-      def of_=(
+      inline def of_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("of")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.onErrorResumeNext")
       @js.native
       def onErrorResumeNext: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ js.Any = js.native
-      @scala.inline
-      def onErrorResumeNext_=(
+      inline def onErrorResumeNext_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onErrorResumeNext")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.pairs")
       @js.native
       def pairs: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ js.Any = js.native
-      @scala.inline
-      def pairs_=(
+      inline def pairs_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pairs")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.race")
       @js.native
       def race: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ js.Any = js.native
-      @scala.inline
-      def race_=(
+      inline def race_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("race")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.range")
       @js.native
       def range: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ js.Any = js.native
-      @scala.inline
-      def range_=(
+      inline def range_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("range")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.throwError")
       @js.native
       def throwError: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ js.Any = js.native
-      @scala.inline
-      def throwError_=(
+      inline def throwError_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("throwError")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.timer")
       @js.native
       def timer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ js.Any = js.native
-      @scala.inline
-      def timer_=(
+      inline def timer_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timer")(x.asInstanceOf[js.Any])
       
@@ -2310,354 +2287,242 @@ object neverMod {
       @JSImport("rxjs/internal/Observable", "Observable.webSocket")
       @js.native
       def webSocket: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ js.Any = js.native
-      @scala.inline
-      def webSocket_=(
+      inline def webSocket_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("webSocket")(x.asInstanceOf[js.Any])
       
       @JSImport("rxjs/internal/Observable", "Observable.zip")
       @js.native
       def zip: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ js.Any = js.native
-      @scala.inline
-      def zip_=(
+      inline def zip_=(
         x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zip")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      implicit class ObservableMutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
+      extension [Self <: Observable[?], T](x: Self & Observable[T]) {
         
-        @scala.inline
-        def setAudit(value: FnCall): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+        inline def setAudit(value: FnCall): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuditTime(value: FnCallThisDurationScheduler): Self = StObject.set(x, "auditTime", value.asInstanceOf[js.Any])
+        inline def setAuditTime(value: FnCallThisDurationScheduler): Self = StObject.set(x, "auditTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBuffer(value: FnCallThisClosingNotifier): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+        inline def setBuffer(value: FnCallThisClosingNotifier): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferCount(value: FnCallThisBufferSizeStartBufferEvery): Self = StObject.set(x, "bufferCount", value.asInstanceOf[js.Any])
+        inline def setBufferCount(value: FnCallThisBufferSizeStartBufferEvery): Self = StObject.set(x, "bufferCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferTime(value: FnCallThisBufferTimeSpanBufferCreationIntervalMaxBufferSizeScheduler): Self = StObject.set(x, "bufferTime", value.asInstanceOf[js.Any])
+        inline def setBufferTime(value: FnCallThisBufferTimeSpanBufferCreationIntervalMaxBufferSizeScheduler): Self = StObject.set(x, "bufferTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferToggle(value: FnCallThisOpeningsClosingSelector): Self = StObject.set(x, "bufferToggle", value.asInstanceOf[js.Any])
+        inline def setBufferToggle(value: FnCallThisOpeningsClosingSelector): Self = StObject.set(x, "bufferToggle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferWhen(value: FnCallThisClosingSelector): Self = StObject.set(x, "bufferWhen", value.asInstanceOf[js.Any])
+        inline def setBufferWhen(value: FnCallThisClosingSelector): Self = StObject.set(x, "bufferWhen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCatch(value: FnCallThisSelector): Self = StObject.set(x, "catch", value.asInstanceOf[js.Any])
+        inline def setCatch(value: FnCallThisSelector): Self = StObject.set(x, "catch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCombineAll(value: FnCallThisProject): Self = StObject.set(x, "combineAll", value.asInstanceOf[js.Any])
+        inline def setCombineAll(value: FnCallThisProject): Self = StObject.set(x, "combineAll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCombineLatest(value: FnCallThisV2V3V4V5V6Project): Self = StObject.set(x, "combineLatest", value.asInstanceOf[js.Any])
+        inline def setCombineLatest(value: FnCallThisV2V3V4V5V6Project): Self = StObject.set(x, "combineLatest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConcat(value: FnCallThisV2V3V4V5V6Scheduler): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
+        inline def setConcat(value: FnCallThisV2V3V4V5V6Scheduler): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConcatAll(value: FnCallThis): Self = StObject.set(x, "concatAll", value.asInstanceOf[js.Any])
+        inline def setConcatAll(value: FnCallThis): Self = StObject.set(x, "concatAll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConcatMap(value: Fn0): Self = StObject.set(x, "concatMap", value.asInstanceOf[js.Any])
+        inline def setConcatMap(value: Fn0): Self = StObject.set(x, "concatMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConcatMapTo(value: FnCallThisInnerObservable): Self = StObject.set(x, "concatMapTo", value.asInstanceOf[js.Any])
+        inline def setConcatMapTo(value: FnCallThisInnerObservable): Self = StObject.set(x, "concatMapTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCount(value: FnCallThisPredicate): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: FnCallThisPredicate): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebounce(value: FnCall): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+        inline def setDebounce(value: FnCall): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebounceTime(value: FnCallThisDueTimeScheduler): Self = StObject.set(x, "debounceTime", value.asInstanceOf[js.Any])
+        inline def setDebounceTime(value: FnCallThisDueTimeScheduler): Self = StObject.set(x, "debounceTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultIfEmpty(value: FnCallThisDefaultValue): Self = StObject.set(x, "defaultIfEmpty", value.asInstanceOf[js.Any])
+        inline def setDefaultIfEmpty(value: FnCallThisDefaultValue): Self = StObject.set(x, "defaultIfEmpty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelay(value: FnCallThisDelayScheduler): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+        inline def setDelay(value: FnCallThisDelayScheduler): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelayWhen(value: FnCallThisDelayDurationSelectorSubscriptionDelay): Self = StObject.set(x, "delayWhen", value.asInstanceOf[js.Any])
+        inline def setDelayWhen(value: FnCallThisDelayDurationSelectorSubscriptionDelay): Self = StObject.set(x, "delayWhen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDematerialize(value: Fn1): Self = StObject.set(x, "dematerialize", value.asInstanceOf[js.Any])
+        inline def setDematerialize(value: Fn1): Self = StObject.set(x, "dematerialize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistinct(value: FnCallThisKeySelectorFlushes): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
+        inline def setDistinct(value: FnCallThisKeySelectorFlushes): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistinctUntilChanged(value: FnCallThisCompareKeySelector): Self = StObject.set(x, "distinctUntilChanged", value.asInstanceOf[js.Any])
+        inline def setDistinctUntilChanged(value: FnCallThisCompareKeySelector): Self = StObject.set(x, "distinctUntilChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistinctUntilKeyChanged(value: FnCallThisKeyCompare): Self = StObject.set(x, "distinctUntilKeyChanged", value.asInstanceOf[js.Any])
+        inline def setDistinctUntilKeyChanged(value: FnCallThisKeyCompare): Self = StObject.set(x, "distinctUntilKeyChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDo(value: FnCallThisNextErrorComplete): Self = StObject.set(x, "do", value.asInstanceOf[js.Any])
+        inline def setDo(value: FnCallThisNextErrorComplete): Self = StObject.set(x, "do", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementAt(value: FnCallThisIndexDefaultValue): Self = StObject.set(x, "elementAt", value.asInstanceOf[js.Any])
+        inline def setElementAt(value: FnCallThisIndexDefaultValue): Self = StObject.set(x, "elementAt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvery(value: FnCallThisPredicateThisArg): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
+        inline def setEvery(value: FnCallThisPredicateThisArg): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExhaust(value: FnCallThis): Self = StObject.set(x, "exhaust", value.asInstanceOf[js.Any])
+        inline def setExhaust(value: FnCallThis): Self = StObject.set(x, "exhaust", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExhaustMap(value: Fn0): Self = StObject.set(x, "exhaustMap", value.asInstanceOf[js.Any])
+        inline def setExhaustMap(value: Fn0): Self = StObject.set(x, "exhaustMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpand(value: FnCallThisProjectConcurrentScheduler): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+        inline def setExpand(value: FnCallThisProjectConcurrentScheduler): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilter(value: Fn2): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: Fn2): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFinally(value: FnCallThisCallback): Self = StObject.set(x, "finally", value.asInstanceOf[js.Any])
+        inline def setFinally(value: FnCallThisCallback): Self = StObject.set(x, "finally", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFind(value: Fn2): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+        inline def setFind(value: Fn2): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFindIndex(value: FnCallThisPredicateThisArg): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
+        inline def setFindIndex(value: FnCallThisPredicateThisArg): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirst(value: FnCallThisPredicateDefaultValue): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+        inline def setFirst(value: FnCallThisPredicateDefaultValue): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlatMap(value: FnCallThisProjectConcurrent): Self = StObject.set(x, "flatMap", value.asInstanceOf[js.Any])
+        inline def setFlatMap(value: FnCallThisProjectConcurrent): Self = StObject.set(x, "flatMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlatMapTo(value: FnCallThisInnerObservableConcurrent): Self = StObject.set(x, "flatMapTo", value.asInstanceOf[js.Any])
+        inline def setFlatMapTo(value: FnCallThisInnerObservableConcurrent): Self = StObject.set(x, "flatMapTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupBy(value: FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+        inline def setGroupBy(value: FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreElements(
+        inline def setIgnoreElements(
           value: js.ThisFunction0[
                   /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ js.Any, 
                   /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ js.Any
                 ]
         ): Self = StObject.set(x, "ignoreElements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsEmpty(value: Fn1): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+        inline def setIsEmpty(value: Fn1): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLast(value: FnCallThisPredicateDefaultValue): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+        inline def setLast(value: FnCallThisPredicateDefaultValue): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLet(value: FnCallThisFunc): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
+        inline def setLet(value: FnCallThisFunc): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLetBind(value: FnCallThisFunc): Self = StObject.set(x, "letBind", value.asInstanceOf[js.Any])
+        inline def setLetBind(value: FnCallThisFunc): Self = StObject.set(x, "letBind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMap(value: FnCallThisProjectThisArg): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+        inline def setMap(value: FnCallThisProjectThisArg): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMapTo(value: FnCallThisValue): Self = StObject.set(x, "mapTo", value.asInstanceOf[js.Any])
+        inline def setMapTo(value: FnCallThisValue): Self = StObject.set(x, "mapTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaterialize(value: Fn1): Self = StObject.set(x, "materialize", value.asInstanceOf[js.Any])
+        inline def setMaterialize(value: Fn1): Self = StObject.set(x, "materialize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMax(value: FnCallThisComparer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: FnCallThisComparer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMerge(value: FnCallThisV2V3V4V5V6ConcurrentScheduler): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+        inline def setMerge(value: FnCallThisV2V3V4V5V6ConcurrentScheduler): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeAll(value: FnCallThisConcurrent): Self = StObject.set(x, "mergeAll", value.asInstanceOf[js.Any])
+        inline def setMergeAll(value: FnCallThisConcurrent): Self = StObject.set(x, "mergeAll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeMap(value: FnCallThisProjectConcurrent): Self = StObject.set(x, "mergeMap", value.asInstanceOf[js.Any])
+        inline def setMergeMap(value: FnCallThisProjectConcurrent): Self = StObject.set(x, "mergeMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeMapTo(value: FnCallThisInnerObservableConcurrent): Self = StObject.set(x, "mergeMapTo", value.asInstanceOf[js.Any])
+        inline def setMergeMapTo(value: FnCallThisInnerObservableConcurrent): Self = StObject.set(x, "mergeMapTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeScan(value: FnCallThisAccumulatorSeedConcurrent): Self = StObject.set(x, "mergeScan", value.asInstanceOf[js.Any])
+        inline def setMergeScan(value: FnCallThisAccumulatorSeedConcurrent): Self = StObject.set(x, "mergeScan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMin(value: FnCallThisComparer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: FnCallThisComparer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMulticast(value: FnCallSubjectFactorySelector): Self = StObject.set(x, "multicast", value.asInstanceOf[js.Any])
+        inline def setMulticast(value: FnCallSubjectFactorySelector): Self = StObject.set(x, "multicast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObserveOn(value: FnCallThisSchedulerDelay): Self = StObject.set(x, "observeOn", value.asInstanceOf[js.Any])
+        inline def setObserveOn(value: FnCallThisSchedulerDelay): Self = StObject.set(x, "observeOn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnErrorResumeNext(value: FnCallThisV2V3V4V5V6): Self = StObject.set(x, "onErrorResumeNext", value.asInstanceOf[js.Any])
+        inline def setOnErrorResumeNext(value: FnCallThisV2V3V4V5V6): Self = StObject.set(x, "onErrorResumeNext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPairwise(value: Fn1): Self = StObject.set(x, "pairwise", value.asInstanceOf[js.Any])
+        inline def setPairwise(value: Fn1): Self = StObject.set(x, "pairwise", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartition(value: Fn3): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+        inline def setPartition(value: Fn3): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluck(value: FnCallThisProperties): Self = StObject.set(x, "pluck", value.asInstanceOf[js.Any])
+        inline def setPluck(value: FnCallThisProperties): Self = StObject.set(x, "pluck", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublish(value: Fn4): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+        inline def setPublish(value: Fn4): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublishBehavior(value: Fn5): Self = StObject.set(x, "publishBehavior", value.asInstanceOf[js.Any])
+        inline def setPublishBehavior(value: Fn5): Self = StObject.set(x, "publishBehavior", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublishLast(value: Fn1): Self = StObject.set(x, "publishLast", value.asInstanceOf[js.Any])
+        inline def setPublishLast(value: Fn1): Self = StObject.set(x, "publishLast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublishReplay(value: FnCallThisBufferSizeWindowTimeSelectorScheduler): Self = StObject.set(x, "publishReplay", value.asInstanceOf[js.Any])
+        inline def setPublishReplay(value: FnCallThisBufferSizeWindowTimeSelectorScheduler): Self = StObject.set(x, "publishReplay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRace(value: FnCallThisObservables): Self = StObject.set(x, "race", value.asInstanceOf[js.Any])
+        inline def setRace(value: FnCallThisObservables): Self = StObject.set(x, "race", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReduce(value: FnCallThisAccumulatorSeed): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
+        inline def setReduce(value: FnCallThisAccumulatorSeed): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRepeat(value: FnCallThisCount): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+        inline def setRepeat(value: FnCallThisCount): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRepeatWhen(value: FnCallThisNotifier): Self = StObject.set(x, "repeatWhen", value.asInstanceOf[js.Any])
+        inline def setRepeatWhen(value: FnCallThisNotifier): Self = StObject.set(x, "repeatWhen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRetry(value: FnCallThisCount): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+        inline def setRetry(value: FnCallThisCount): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRetryWhen(value: FnCallThisNotifier): Self = StObject.set(x, "retryWhen", value.asInstanceOf[js.Any])
+        inline def setRetryWhen(value: FnCallThisNotifier): Self = StObject.set(x, "retryWhen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSample(value: Fn6): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+        inline def setSample(value: Fn6): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSampleTime(value: FnCallThisPeriodScheduler): Self = StObject.set(x, "sampleTime", value.asInstanceOf[js.Any])
+        inline def setSampleTime(value: FnCallThisPeriodScheduler): Self = StObject.set(x, "sampleTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScan(value: FnCallThisAccumulatorSeed): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
+        inline def setScan(value: FnCallThisAccumulatorSeed): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSequenceEqual(value: FnCallThisCompareToComparor): Self = StObject.set(x, "sequenceEqual", value.asInstanceOf[js.Any])
+        inline def setSequenceEqual(value: FnCallThisCompareToComparor): Self = StObject.set(x, "sequenceEqual", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShare(value: Fn1): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+        inline def setShare(value: Fn1): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShareReplay(value: FnCallThisBufferSizeWindowTimeScheduler): Self = StObject.set(x, "shareReplay", value.asInstanceOf[js.Any])
+        inline def setShareReplay(value: FnCallThisBufferSizeWindowTimeScheduler): Self = StObject.set(x, "shareReplay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSingle(value: FnCallThisPredicate): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+        inline def setSingle(value: FnCallThisPredicate): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkip(value: Fn7): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+        inline def setSkip(value: Fn7): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipLast(value: Fn7): Self = StObject.set(x, "skipLast", value.asInstanceOf[js.Any])
+        inline def setSkipLast(value: Fn7): Self = StObject.set(x, "skipLast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipUntil(value: Fn6): Self = StObject.set(x, "skipUntil", value.asInstanceOf[js.Any])
+        inline def setSkipUntil(value: Fn6): Self = StObject.set(x, "skipUntil", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipWhile(value: Fn8): Self = StObject.set(x, "skipWhile", value.asInstanceOf[js.Any])
+        inline def setSkipWhile(value: Fn8): Self = StObject.set(x, "skipWhile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartWith(value: FnCallThisV1V2V3V4V5V6Scheduler): Self = StObject.set(x, "startWith", value.asInstanceOf[js.Any])
+        inline def setStartWith(value: FnCallThisV1V2V3V4V5V6Scheduler): Self = StObject.set(x, "startWith", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscribeOn(value: FnCallThisSchedulerDelay): Self = StObject.set(x, "subscribeOn", value.asInstanceOf[js.Any])
+        inline def setSubscribeOn(value: FnCallThisSchedulerDelay): Self = StObject.set(x, "subscribeOn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSwitch(value: FnCallThis): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+        inline def setSwitch(value: FnCallThis): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSwitchMap(value: Fn0): Self = StObject.set(x, "switchMap", value.asInstanceOf[js.Any])
+        inline def setSwitchMap(value: Fn0): Self = StObject.set(x, "switchMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSwitchMapTo(value: FnCallThisObservableResultSelector): Self = StObject.set(x, "switchMapTo", value.asInstanceOf[js.Any])
+        inline def setSwitchMapTo(value: FnCallThisObservableResultSelector): Self = StObject.set(x, "switchMapTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTake(value: Fn7): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
+        inline def setTake(value: Fn7): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTakeLast(value: Fn7): Self = StObject.set(x, "takeLast", value.asInstanceOf[js.Any])
+        inline def setTakeLast(value: Fn7): Self = StObject.set(x, "takeLast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTakeUntil(value: Fn6): Self = StObject.set(x, "takeUntil", value.asInstanceOf[js.Any])
+        inline def setTakeUntil(value: Fn6): Self = StObject.set(x, "takeUntil", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTakeWhile(value: Fn8): Self = StObject.set(x, "takeWhile", value.asInstanceOf[js.Any])
+        inline def setTakeWhile(value: Fn8): Self = StObject.set(x, "takeWhile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrottle(value: FnCallThisDurationSelectorConfig): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+        inline def setThrottle(value: FnCallThisDurationSelectorConfig): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrottleTime(value: FnCallThisDurationSchedulerConfig): Self = StObject.set(x, "throttleTime", value.asInstanceOf[js.Any])
+        inline def setThrottleTime(value: FnCallThisDurationSchedulerConfig): Self = StObject.set(x, "throttleTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeInterval(value: FnCallThisScheduler): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
+        inline def setTimeInterval(value: FnCallThisScheduler): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeout(value: FnCallThisDueScheduler): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: FnCallThisDueScheduler): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutWith(value: FnCallThisDueWithObservableScheduler): Self = StObject.set(x, "timeoutWith", value.asInstanceOf[js.Any])
+        inline def setTimeoutWith(value: FnCallThisDueWithObservableScheduler): Self = StObject.set(x, "timeoutWith", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimestamp(value: FnCallThisScheduler): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+        inline def setTimestamp(value: FnCallThisScheduler): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToArray(value: Fn1): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
+        inline def setToArray(value: Fn1): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWindow(value: FnCallThisWindowBoundaries): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+        inline def setWindow(value: FnCallThisWindowBoundaries): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWindowCount(value: FnCallThisWindowSizeStartWindowEvery): Self = StObject.set(x, "windowCount", value.asInstanceOf[js.Any])
+        inline def setWindowCount(value: FnCallThisWindowSizeStartWindowEvery): Self = StObject.set(x, "windowCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWindowTime(value: FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler): Self = StObject.set(x, "windowTime", value.asInstanceOf[js.Any])
+        inline def setWindowTime(value: FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler): Self = StObject.set(x, "windowTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWindowToggle(value: FnCallThisOpeningsClosingSelector): Self = StObject.set(x, "windowToggle", value.asInstanceOf[js.Any])
+        inline def setWindowToggle(value: FnCallThisOpeningsClosingSelector): Self = StObject.set(x, "windowToggle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWindowWhen(value: FnCallThisClosingSelector): Self = StObject.set(x, "windowWhen", value.asInstanceOf[js.Any])
+        inline def setWindowWhen(value: FnCallThisClosingSelector): Self = StObject.set(x, "windowWhen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWithLatestFrom(value: Fn9): Self = StObject.set(x, "withLatestFrom", value.asInstanceOf[js.Any])
+        inline def setWithLatestFrom(value: Fn9): Self = StObject.set(x, "withLatestFrom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZip(value: Fn10): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+        inline def setZip(value: Fn10): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZipAll(value: FnCallThisProject): Self = StObject.set(x, "zipAll", value.asInstanceOf[js.Any])
+        inline def setZipAll(value: FnCallThisProject): Self = StObject.set(x, "zipAll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_catch(value: FnCallThisSelector): Self = StObject.set(x, "_catch", value.asInstanceOf[js.Any])
+        inline def set_catch(value: FnCallThisSelector): Self = StObject.set(x, "_catch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_do(value: FnCallThisNextErrorComplete): Self = StObject.set(x, "_do", value.asInstanceOf[js.Any])
+        inline def set_do(value: FnCallThisNextErrorComplete): Self = StObject.set(x, "_do", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_finally(value: FnCallThisCallback): Self = StObject.set(x, "_finally", value.asInstanceOf[js.Any])
+        inline def set_finally(value: FnCallThisCallback): Self = StObject.set(x, "_finally", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_switch(value: FnCallThis): Self = StObject.set(x, "_switch", value.asInstanceOf[js.Any])
+        inline def set_switch(value: FnCallThis): Self = StObject.set(x, "_switch", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @scala.inline
-  def staticNever(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("staticNever")().asInstanceOf[js.Any]
+  inline def staticNever(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("staticNever")().asInstanceOf[js.Any]
 }

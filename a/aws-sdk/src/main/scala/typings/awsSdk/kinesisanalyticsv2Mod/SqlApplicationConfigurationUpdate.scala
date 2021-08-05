@@ -23,40 +23,29 @@ trait SqlApplicationConfigurationUpdate extends StObject {
 }
 object SqlApplicationConfigurationUpdate {
   
-  @scala.inline
-  def apply(): SqlApplicationConfigurationUpdate = {
+  inline def apply(): SqlApplicationConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlApplicationConfigurationUpdate]
   }
   
-  @scala.inline
-  implicit class SqlApplicationConfigurationUpdateMutableBuilder[Self <: SqlApplicationConfigurationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SqlApplicationConfigurationUpdate](x: Self) {
     
-    @scala.inline
-    def setInputUpdates(value: InputUpdates): Self = StObject.set(x, "InputUpdates", value.asInstanceOf[js.Any])
+    inline def setInputUpdates(value: InputUpdates): Self = StObject.set(x, "InputUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUpdatesUndefined: Self = StObject.set(x, "InputUpdates", js.undefined)
+    inline def setInputUpdatesUndefined: Self = StObject.set(x, "InputUpdates", js.undefined)
     
-    @scala.inline
-    def setInputUpdatesVarargs(value: InputUpdate*): Self = StObject.set(x, "InputUpdates", js.Array(value :_*))
+    inline def setInputUpdatesVarargs(value: InputUpdate*): Self = StObject.set(x, "InputUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputUpdates(value: OutputUpdates): Self = StObject.set(x, "OutputUpdates", value.asInstanceOf[js.Any])
+    inline def setOutputUpdates(value: OutputUpdates): Self = StObject.set(x, "OutputUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUpdatesUndefined: Self = StObject.set(x, "OutputUpdates", js.undefined)
+    inline def setOutputUpdatesUndefined: Self = StObject.set(x, "OutputUpdates", js.undefined)
     
-    @scala.inline
-    def setOutputUpdatesVarargs(value: OutputUpdate*): Self = StObject.set(x, "OutputUpdates", js.Array(value :_*))
+    inline def setOutputUpdatesVarargs(value: OutputUpdate*): Self = StObject.set(x, "OutputUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setReferenceDataSourceUpdates(value: ReferenceDataSourceUpdates): Self = StObject.set(x, "ReferenceDataSourceUpdates", value.asInstanceOf[js.Any])
+    inline def setReferenceDataSourceUpdates(value: ReferenceDataSourceUpdates): Self = StObject.set(x, "ReferenceDataSourceUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceDataSourceUpdatesUndefined: Self = StObject.set(x, "ReferenceDataSourceUpdates", js.undefined)
+    inline def setReferenceDataSourceUpdatesUndefined: Self = StObject.set(x, "ReferenceDataSourceUpdates", js.undefined)
     
-    @scala.inline
-    def setReferenceDataSourceUpdatesVarargs(value: ReferenceDataSourceUpdate*): Self = StObject.set(x, "ReferenceDataSourceUpdates", js.Array(value :_*))
+    inline def setReferenceDataSourceUpdatesVarargs(value: ReferenceDataSourceUpdate*): Self = StObject.set(x, "ReferenceDataSourceUpdates", js.Array(value :_*))
   }
 }

@@ -34,8 +34,7 @@ trait MapLayerEventType extends StObject {
 }
 object MapLayerEventType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: MapLayerMouseEvent,
     contextmenu: MapLayerMouseEvent,
     dblclick: MapLayerMouseEvent,
@@ -54,46 +53,32 @@ object MapLayerEventType {
     __obj.asInstanceOf[MapLayerEventType]
   }
   
-  @scala.inline
-  implicit class MapLayerEventTypeMutableBuilder[Self <: MapLayerEventType] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerEventType](x: Self) {
     
-    @scala.inline
-    def setClick(value: MapLayerMouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: MapLayerMouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextmenu(value: MapLayerMouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+    inline def setContextmenu(value: MapLayerMouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDblclick(value: MapLayerMouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
+    inline def setDblclick(value: MapLayerMouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousedown(value: MapLayerMouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
+    inline def setMousedown(value: MapLayerMouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseenter(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
+    inline def setMouseenter(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseleave(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
+    inline def setMouseleave(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousemove(value: MapLayerMouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
+    inline def setMousemove(value: MapLayerMouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseout(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+    inline def setMouseout(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseover(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+    inline def setMouseover(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseup(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
+    inline def setMouseup(value: MapLayerMouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchcancel(value: MapLayerTouchEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
+    inline def setTouchcancel(value: MapLayerTouchEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchend(value: MapLayerTouchEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
+    inline def setTouchend(value: MapLayerTouchEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchstart(value: MapLayerTouchEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+    inline def setTouchstart(value: MapLayerTouchEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
   }
 }

@@ -13,34 +13,25 @@ trait TimeConstraint extends StObject {
 }
 object TimeConstraint {
   
-  @scala.inline
-  def apply(): TimeConstraint = {
+  inline def apply(): TimeConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeConstraint]
   }
   
-  @scala.inline
-  implicit class TimeConstraintMutableBuilder[Self <: TimeConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: TimeConstraint](x: Self) {
     
-    @scala.inline
-    def setActivityDomain(value: NullableOption[ActivityDomain]): Self = StObject.set(x, "activityDomain", value.asInstanceOf[js.Any])
+    inline def setActivityDomain(value: NullableOption[ActivityDomain]): Self = StObject.set(x, "activityDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityDomainNull: Self = StObject.set(x, "activityDomain", null)
+    inline def setActivityDomainNull: Self = StObject.set(x, "activityDomain", null)
     
-    @scala.inline
-    def setActivityDomainUndefined: Self = StObject.set(x, "activityDomain", js.undefined)
+    inline def setActivityDomainUndefined: Self = StObject.set(x, "activityDomain", js.undefined)
     
-    @scala.inline
-    def setTimeSlots(value: NullableOption[js.Array[TimeSlot]]): Self = StObject.set(x, "timeSlots", value.asInstanceOf[js.Any])
+    inline def setTimeSlots(value: NullableOption[js.Array[TimeSlot]]): Self = StObject.set(x, "timeSlots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSlotsNull: Self = StObject.set(x, "timeSlots", null)
+    inline def setTimeSlotsNull: Self = StObject.set(x, "timeSlots", null)
     
-    @scala.inline
-    def setTimeSlotsUndefined: Self = StObject.set(x, "timeSlots", js.undefined)
+    inline def setTimeSlotsUndefined: Self = StObject.set(x, "timeSlots", js.undefined)
     
-    @scala.inline
-    def setTimeSlotsVarargs(value: TimeSlot*): Self = StObject.set(x, "timeSlots", js.Array(value :_*))
+    inline def setTimeSlotsVarargs(value: TimeSlot*): Self = StObject.set(x, "timeSlots", js.Array(value :_*))
   }
 }

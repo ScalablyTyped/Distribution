@@ -34,44 +34,32 @@ object codeFrameDTsMod {
   }
   object BabelCodeFrameOptions {
     
-    @scala.inline
-    def apply(): BabelCodeFrameOptions = {
+    inline def apply(): BabelCodeFrameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BabelCodeFrameOptions]
     }
     
-    @scala.inline
-    implicit class BabelCodeFrameOptionsMutableBuilder[Self <: BabelCodeFrameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BabelCodeFrameOptions](x: Self) {
       
-      @scala.inline
-      def setForceColor(value: Boolean): Self = StObject.set(x, "forceColor", value.asInstanceOf[js.Any])
+      inline def setForceColor(value: Boolean): Self = StObject.set(x, "forceColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceColorUndefined: Self = StObject.set(x, "forceColor", js.undefined)
+      inline def setForceColorUndefined: Self = StObject.set(x, "forceColor", js.undefined)
       
-      @scala.inline
-      def setHighlightCode(value: Boolean): Self = StObject.set(x, "highlightCode", value.asInstanceOf[js.Any])
+      inline def setHighlightCode(value: Boolean): Self = StObject.set(x, "highlightCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightCodeUndefined: Self = StObject.set(x, "highlightCode", js.undefined)
+      inline def setHighlightCodeUndefined: Self = StObject.set(x, "highlightCode", js.undefined)
       
-      @scala.inline
-      def setLinesAbove(value: Double): Self = StObject.set(x, "linesAbove", value.asInstanceOf[js.Any])
+      inline def setLinesAbove(value: Double): Self = StObject.set(x, "linesAbove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesAboveUndefined: Self = StObject.set(x, "linesAbove", js.undefined)
+      inline def setLinesAboveUndefined: Self = StObject.set(x, "linesAbove", js.undefined)
       
-      @scala.inline
-      def setLinesBelow(value: Double): Self = StObject.set(x, "linesBelow", value.asInstanceOf[js.Any])
+      inline def setLinesBelow(value: Double): Self = StObject.set(x, "linesBelow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesBelowUndefined: Self = StObject.set(x, "linesBelow", js.undefined)
+      inline def setLinesBelowUndefined: Self = StObject.set(x, "linesBelow", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

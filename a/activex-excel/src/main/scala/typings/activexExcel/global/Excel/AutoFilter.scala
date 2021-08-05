@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AutoFilter")
 @js.native
-class AutoFilter protected ()
+/* private */ class AutoFilter ()
   extends StObject
      with typings.activexExcel.Excel.AutoFilter {
   
@@ -22,7 +22,7 @@ class AutoFilter protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.AutoFilter_typekey")
   var ExcelDotAutoFilter_typekey: typings.activexExcel.Excel.AutoFilter = js.native
   

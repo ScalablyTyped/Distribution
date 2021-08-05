@@ -10,19 +10,15 @@ trait Granttype extends StObject {
 }
 object Granttype {
   
-  @scala.inline
-  def apply(): Granttype = {
+  inline def apply(): Granttype = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Granttype]
   }
   
-  @scala.inline
-  implicit class GranttypeMutableBuilder[Self <: Granttype] (val x: Self) extends AnyVal {
+  extension [Self <: Granttype](x: Self) {
     
-    @scala.inline
-    def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
+    inline def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrant_typeUndefined: Self = StObject.set(x, "grant_type", js.undefined)
+    inline def setGrant_typeUndefined: Self = StObject.set(x, "grant_type", js.undefined)
   }
 }

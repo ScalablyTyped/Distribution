@@ -18,25 +18,19 @@ trait SchemaApkListing extends StObject {
 }
 object SchemaApkListing {
   
-  @scala.inline
-  def apply(): SchemaApkListing = {
+  inline def apply(): SchemaApkListing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApkListing]
   }
   
-  @scala.inline
-  implicit class SchemaApkListingMutableBuilder[Self <: SchemaApkListing] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApkListing](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setRecentChanges(value: String): Self = StObject.set(x, "recentChanges", value.asInstanceOf[js.Any])
+    inline def setRecentChanges(value: String): Self = StObject.set(x, "recentChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecentChangesUndefined: Self = StObject.set(x, "recentChanges", js.undefined)
+    inline def setRecentChangesUndefined: Self = StObject.set(x, "recentChanges", js.undefined)
   }
 }

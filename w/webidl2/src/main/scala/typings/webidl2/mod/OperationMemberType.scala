@@ -38,8 +38,7 @@ trait OperationMemberType
 }
 object OperationMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
@@ -49,37 +48,26 @@ object OperationMemberType {
     __obj.asInstanceOf[OperationMemberType]
   }
   
-  @scala.inline
-  implicit class OperationMemberTypeMutableBuilder[Self <: OperationMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: OperationMemberType](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlTypeNull: Self = StObject.set(x, "idlType", null)
+    inline def setIdlTypeNull: Self = StObject.set(x, "idlType", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setParent(value: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecial(value: getter | setter | deleter | static | stringifier): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+    inline def setSpecial(value: getter | setter | deleter | static | stringifier): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialNull: Self = StObject.set(x, "special", null)
+    inline def setSpecialNull: Self = StObject.set(x, "special", null)
     
-    @scala.inline
-    def setType(value: operation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: operation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

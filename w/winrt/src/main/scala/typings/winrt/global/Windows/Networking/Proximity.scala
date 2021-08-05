@@ -52,64 +52,51 @@ object Proximity {
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.allowBluetooth")
     @js.native
     def allowBluetooth: Boolean = js.native
-    @scala.inline
-    def allowBluetooth_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowBluetooth")(x.asInstanceOf[js.Any])
+    inline def allowBluetooth_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowBluetooth")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.allowInfrastructure")
     @js.native
     def allowInfrastructure: Boolean = js.native
-    @scala.inline
-    def allowInfrastructure_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowInfrastructure")(x.asInstanceOf[js.Any])
+    inline def allowInfrastructure_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowInfrastructure")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.allowWiFiDirect")
     @js.native
     def allowWiFiDirect: Boolean = js.native
-    @scala.inline
-    def allowWiFiDirect_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowWiFiDirect")(x.asInstanceOf[js.Any])
+    inline def allowWiFiDirect_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowWiFiDirect")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.alternateIdentities")
     @js.native
     def alternateIdentities: IMap[String, String] = js.native
-    @scala.inline
-    def alternateIdentities_=(x: IMap[String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alternateIdentities")(x.asInstanceOf[js.Any])
+    inline def alternateIdentities_=(x: IMap[String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alternateIdentities")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def connectAsync(peerInformation: typings.winrt.Windows.Networking.Proximity.PeerInformation): IAsyncOperation[StreamSocket] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAsync")(peerInformation.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[StreamSocket]]
+    inline def connectAsync(peerInformation: typings.winrt.Windows.Networking.Proximity.PeerInformation): IAsyncOperation[StreamSocket] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAsync")(peerInformation.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[StreamSocket]]
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def findAllPeersAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.Proximity.PeerInformation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllPeersAsync")().asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.Proximity.PeerInformation]]]
+    inline def findAllPeersAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.Proximity.PeerInformation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllPeersAsync")().asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.Proximity.PeerInformation]]]
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.onconnectionrequested")
     @js.native
     def onconnectionrequested: js.Any = js.native
-    @scala.inline
-    def onconnectionrequested_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onconnectionrequested")(x.asInstanceOf[js.Any])
+    inline def onconnectionrequested_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onconnectionrequested")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.ontriggeredconnectionstatechanged")
     @js.native
     def ontriggeredconnectionstatechanged: js.Any = js.native
-    @scala.inline
-    def ontriggeredconnectionstatechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontriggeredconnectionstatechanged")(x.asInstanceOf[js.Any])
+    inline def ontriggeredconnectionstatechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontriggeredconnectionstatechanged")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
-    @scala.inline
-    def start(peerMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(peerMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
+    inline def start(peerMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(peerMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+    inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
     
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.supportedDiscoveryTypes")
     @js.native
     def supportedDiscoveryTypes: PeerDiscoveryTypes = js.native
-    @scala.inline
-    def supportedDiscoveryTypes_=(x: PeerDiscoveryTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedDiscoveryTypes")(x.asInstanceOf[js.Any])
+    inline def supportedDiscoveryTypes_=(x: PeerDiscoveryTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedDiscoveryTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Networking.Proximity.PeerInformation")
@@ -134,14 +121,11 @@ object Proximity {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromId(deviceInterfaceId: String): typings.winrt.Windows.Networking.Proximity.ProximityDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceInterfaceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Networking.Proximity.ProximityDevice]
+    inline def fromId(deviceInterfaceId: String): typings.winrt.Windows.Networking.Proximity.ProximityDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceInterfaceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Networking.Proximity.ProximityDevice]
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Networking.Proximity.ProximityDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Networking.Proximity.ProximityDevice]
+    inline def getDefault(): typings.winrt.Windows.Networking.Proximity.ProximityDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Networking.Proximity.ProximityDevice]
     
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   @JSGlobal("Windows.Networking.Proximity.ProximityMessage")

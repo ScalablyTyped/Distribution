@@ -63,26 +63,20 @@ object anon {
   }
   object Component {
     
-    @scala.inline
-    def apply(): Component = {
+    inline def apply(): Component = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Component]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+    extension [Self <: Component](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -97,17 +91,14 @@ object anon {
   }
   object Resolve {
     
-    @scala.inline
-    def apply(resolve: () => js.Any): Resolve = {
+    inline def apply(resolve: () => js.Any): Resolve = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction0(resolve))
       __obj.asInstanceOf[Resolve]
     }
     
-    @scala.inline
-    implicit class ResolveMutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
+    extension [Self <: Resolve](x: Self) {
       
-      @scala.inline
-      def setResolve(value: () => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
+      inline def setResolve(value: () => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
     }
   }
 }

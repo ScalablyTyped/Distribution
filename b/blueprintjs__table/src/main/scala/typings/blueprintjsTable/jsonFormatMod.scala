@@ -29,14 +29,12 @@ object jsonFormatMod {
     @JSImport("@blueprintjs/table/lib/esm/cell/formats/jsonFormat", "JSONFormat.defaultProps")
     @js.native
     def defaultProps: IJSONFormatProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IJSONFormatProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IJSONFormatProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/cell/formats/jsonFormat", "JSONFormat.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IJSONFormatProps
@@ -62,32 +60,24 @@ object jsonFormatMod {
   }
   object IJSONFormatProps {
     
-    @scala.inline
-    def apply(): IJSONFormatProps = {
+    inline def apply(): IJSONFormatProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IJSONFormatProps]
     }
     
-    @scala.inline
-    implicit class IJSONFormatPropsMutableBuilder[Self <: IJSONFormatProps] (val x: Self) extends AnyVal {
+    extension [Self <: IJSONFormatProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOmitQuotesOnStrings(value: Boolean): Self = StObject.set(x, "omitQuotesOnStrings", value.asInstanceOf[js.Any])
+      inline def setOmitQuotesOnStrings(value: Boolean): Self = StObject.set(x, "omitQuotesOnStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitQuotesOnStringsUndefined: Self = StObject.set(x, "omitQuotesOnStrings", js.undefined)
+      inline def setOmitQuotesOnStringsUndefined: Self = StObject.set(x, "omitQuotesOnStrings", js.undefined)
       
-      @scala.inline
-      def setStringify(value: /* obj */ js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: /* obj */ js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+      inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     }
   }
 }

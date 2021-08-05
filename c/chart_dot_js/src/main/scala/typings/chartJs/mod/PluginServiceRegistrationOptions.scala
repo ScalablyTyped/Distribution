@@ -106,169 +106,117 @@ trait PluginServiceRegistrationOptions extends StObject {
 }
 object PluginServiceRegistrationOptions {
   
-  @scala.inline
-  def apply(): PluginServiceRegistrationOptions = {
+  inline def apply(): PluginServiceRegistrationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PluginServiceRegistrationOptions]
   }
   
-  @scala.inline
-  implicit class PluginServiceRegistrationOptionsMutableBuilder[Self <: PluginServiceRegistrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PluginServiceRegistrationOptions](x: Self) {
     
-    @scala.inline
-    def setAfterDatasetDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetDraw", js.Any.fromFunction3(value))
+    inline def setAfterDatasetDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDatasetDrawUndefined: Self = StObject.set(x, "afterDatasetDraw", js.undefined)
+    inline def setAfterDatasetDrawUndefined: Self = StObject.set(x, "afterDatasetDraw", js.undefined)
     
-    @scala.inline
-    def setAfterDatasetUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetUpdate", js.Any.fromFunction2(value))
+    inline def setAfterDatasetUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterDatasetUpdateUndefined: Self = StObject.set(x, "afterDatasetUpdate", js.undefined)
+    inline def setAfterDatasetUpdateUndefined: Self = StObject.set(x, "afterDatasetUpdate", js.undefined)
     
-    @scala.inline
-    def setAfterDatasetsDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetsDraw", js.Any.fromFunction3(value))
+    inline def setAfterDatasetsDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetsDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDatasetsDrawUndefined: Self = StObject.set(x, "afterDatasetsDraw", js.undefined)
+    inline def setAfterDatasetsDrawUndefined: Self = StObject.set(x, "afterDatasetsDraw", js.undefined)
     
-    @scala.inline
-    def setAfterDatasetsUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetsUpdate", js.Any.fromFunction2(value))
+    inline def setAfterDatasetsUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDatasetsUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterDatasetsUpdateUndefined: Self = StObject.set(x, "afterDatasetsUpdate", js.undefined)
+    inline def setAfterDatasetsUpdateUndefined: Self = StObject.set(x, "afterDatasetsUpdate", js.undefined)
     
-    @scala.inline
-    def setAfterDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDraw", js.Any.fromFunction3(value))
+    inline def setAfterDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDrawUndefined: Self = StObject.set(x, "afterDraw", js.undefined)
+    inline def setAfterDrawUndefined: Self = StObject.set(x, "afterDraw", js.undefined)
     
-    @scala.inline
-    def setAfterEvent(value: (/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterEvent", js.Any.fromFunction3(value))
+    inline def setAfterEvent(value: (/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterEvent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterEventUndefined: Self = StObject.set(x, "afterEvent", js.undefined)
+    inline def setAfterEventUndefined: Self = StObject.set(x, "afterEvent", js.undefined)
     
-    @scala.inline
-    def setAfterInit(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction2(value))
+    inline def setAfterInit(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
+    inline def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
     
-    @scala.inline
-    def setAfterLayout(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterLayout", js.Any.fromFunction2(value))
+    inline def setAfterLayout(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterLayout", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterLayoutUndefined: Self = StObject.set(x, "afterLayout", js.undefined)
+    inline def setAfterLayoutUndefined: Self = StObject.set(x, "afterLayout", js.undefined)
     
-    @scala.inline
-    def setAfterRender(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
+    inline def setAfterRender(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
+    inline def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
     
-    @scala.inline
-    def setAfterScaleUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterScaleUpdate", js.Any.fromFunction2(value))
+    inline def setAfterScaleUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterScaleUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterScaleUpdateUndefined: Self = StObject.set(x, "afterScaleUpdate", js.undefined)
+    inline def setAfterScaleUpdateUndefined: Self = StObject.set(x, "afterScaleUpdate", js.undefined)
     
-    @scala.inline
-    def setAfterTooltipDraw(
+    inline def setAfterTooltipDraw(
       value: (/* chartInstance */ Chart, /* tooltipData */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "afterTooltipDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterTooltipDrawUndefined: Self = StObject.set(x, "afterTooltipDraw", js.undefined)
+    inline def setAfterTooltipDrawUndefined: Self = StObject.set(x, "afterTooltipDraw", js.undefined)
     
-    @scala.inline
-    def setAfterUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction2(value))
+    inline def setAfterUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
+    inline def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
     
-    @scala.inline
-    def setBeforeDatasetDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetDraw", js.Any.fromFunction3(value))
+    inline def setBeforeDatasetDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDatasetDrawUndefined: Self = StObject.set(x, "beforeDatasetDraw", js.undefined)
+    inline def setBeforeDatasetDrawUndefined: Self = StObject.set(x, "beforeDatasetDraw", js.undefined)
     
-    @scala.inline
-    def setBeforeDatasetUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetUpdate", js.Any.fromFunction2(value))
+    inline def setBeforeDatasetUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeDatasetUpdateUndefined: Self = StObject.set(x, "beforeDatasetUpdate", js.undefined)
+    inline def setBeforeDatasetUpdateUndefined: Self = StObject.set(x, "beforeDatasetUpdate", js.undefined)
     
-    @scala.inline
-    def setBeforeDatasetsDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetsDraw", js.Any.fromFunction3(value))
+    inline def setBeforeDatasetsDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetsDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDatasetsDrawUndefined: Self = StObject.set(x, "beforeDatasetsDraw", js.undefined)
+    inline def setBeforeDatasetsDrawUndefined: Self = StObject.set(x, "beforeDatasetsDraw", js.undefined)
     
-    @scala.inline
-    def setBeforeDatasetsUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetsUpdate", js.Any.fromFunction2(value))
+    inline def setBeforeDatasetsUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDatasetsUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeDatasetsUpdateUndefined: Self = StObject.set(x, "beforeDatasetsUpdate", js.undefined)
+    inline def setBeforeDatasetsUpdateUndefined: Self = StObject.set(x, "beforeDatasetsUpdate", js.undefined)
     
-    @scala.inline
-    def setBeforeDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDraw", js.Any.fromFunction3(value))
+    inline def setBeforeDraw(value: (/* chartInstance */ Chart, /* easing */ Easing, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDrawUndefined: Self = StObject.set(x, "beforeDraw", js.undefined)
+    inline def setBeforeDrawUndefined: Self = StObject.set(x, "beforeDraw", js.undefined)
     
-    @scala.inline
-    def setBeforeEvent(value: (/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeEvent", js.Any.fromFunction3(value))
+    inline def setBeforeEvent(value: (/* chartInstance */ Chart, /* event */ Event, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeEvent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeEventUndefined: Self = StObject.set(x, "beforeEvent", js.undefined)
+    inline def setBeforeEventUndefined: Self = StObject.set(x, "beforeEvent", js.undefined)
     
-    @scala.inline
-    def setBeforeInit(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeInit", js.Any.fromFunction2(value))
+    inline def setBeforeInit(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeInit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeInitUndefined: Self = StObject.set(x, "beforeInit", js.undefined)
+    inline def setBeforeInitUndefined: Self = StObject.set(x, "beforeInit", js.undefined)
     
-    @scala.inline
-    def setBeforeLayout(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeLayout", js.Any.fromFunction2(value))
+    inline def setBeforeLayout(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeLayout", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeLayoutUndefined: Self = StObject.set(x, "beforeLayout", js.undefined)
+    inline def setBeforeLayoutUndefined: Self = StObject.set(x, "beforeLayout", js.undefined)
     
-    @scala.inline
-    def setBeforeRender(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeRender", js.Any.fromFunction2(value))
+    inline def setBeforeRender(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeRender", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeRenderUndefined: Self = StObject.set(x, "beforeRender", js.undefined)
+    inline def setBeforeRenderUndefined: Self = StObject.set(x, "beforeRender", js.undefined)
     
-    @scala.inline
-    def setBeforeTooltipDraw(
+    inline def setBeforeTooltipDraw(
       value: (/* chartInstance */ Chart, /* tooltipData */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "beforeTooltipDraw", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeTooltipDrawUndefined: Self = StObject.set(x, "beforeTooltipDraw", js.undefined)
+    inline def setBeforeTooltipDrawUndefined: Self = StObject.set(x, "beforeTooltipDraw", js.undefined)
     
-    @scala.inline
-    def setBeforeUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction2(value))
+    inline def setBeforeUpdate(value: (/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
+    inline def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: /* chartInstance */ Chart => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: /* chartInstance */ Chart => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setResize(
+    inline def setResize(
       value: (/* chartInstance */ Chart, /* newChartSize */ ChartSize, /* options */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
   }
 }

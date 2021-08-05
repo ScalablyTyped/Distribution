@@ -32,8 +32,7 @@ trait SmartCard extends StObject {
 }
 object SmartCard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectAsync: () => IPromiseWithIAsyncOperation[SmartCardConnection],
     getAnswerToResetAsync: () => IPromiseWithIAsyncOperation[IBuffer],
     getStatusAsync: () => IPromiseWithIAsyncOperation[SmartCardStatus],
@@ -43,19 +42,14 @@ object SmartCard {
     __obj.asInstanceOf[SmartCard]
   }
   
-  @scala.inline
-  implicit class SmartCardMutableBuilder[Self <: SmartCard] (val x: Self) extends AnyVal {
+  extension [Self <: SmartCard](x: Self) {
     
-    @scala.inline
-    def setConnectAsync(value: () => IPromiseWithIAsyncOperation[SmartCardConnection]): Self = StObject.set(x, "connectAsync", js.Any.fromFunction0(value))
+    inline def setConnectAsync(value: () => IPromiseWithIAsyncOperation[SmartCardConnection]): Self = StObject.set(x, "connectAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnswerToResetAsync(value: () => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "getAnswerToResetAsync", js.Any.fromFunction0(value))
+    inline def setGetAnswerToResetAsync(value: () => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "getAnswerToResetAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatusAsync(value: () => IPromiseWithIAsyncOperation[SmartCardStatus]): Self = StObject.set(x, "getStatusAsync", js.Any.fromFunction0(value))
+    inline def setGetStatusAsync(value: () => IPromiseWithIAsyncOperation[SmartCardStatus]): Self = StObject.set(x, "getStatusAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReader(value: SmartCardReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    inline def setReader(value: SmartCardReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
   }
 }

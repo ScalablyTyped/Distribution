@@ -14,8 +14,7 @@ trait AlterableQueryBuilder[T] extends StObject {
 }
 object AlterableQueryBuilder {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     alter: (js.Any, String) => AlterableQueryBuilder[T],
     drop: /* repeated */ js.Any => AlterableQueryBuilder[T],
     rename: (js.Any, js.Any) => AlterableQueryBuilder[T]
@@ -24,16 +23,12 @@ object AlterableQueryBuilder {
     __obj.asInstanceOf[AlterableQueryBuilder[T]]
   }
   
-  @scala.inline
-  implicit class AlterableQueryBuilderMutableBuilder[Self <: AlterableQueryBuilder[?], T] (val x: Self & AlterableQueryBuilder[T]) extends AnyVal {
+  extension [Self <: AlterableQueryBuilder[?], T](x: Self & AlterableQueryBuilder[T]) {
     
-    @scala.inline
-    def setAlter(value: (js.Any, String) => AlterableQueryBuilder[T]): Self = StObject.set(x, "alter", js.Any.fromFunction2(value))
+    inline def setAlter(value: (js.Any, String) => AlterableQueryBuilder[T]): Self = StObject.set(x, "alter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrop(value: /* repeated */ js.Any => AlterableQueryBuilder[T]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+    inline def setDrop(value: /* repeated */ js.Any => AlterableQueryBuilder[T]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRename(value: (js.Any, js.Any) => AlterableQueryBuilder[T]): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
+    inline def setRename(value: (js.Any, js.Any) => AlterableQueryBuilder[T]): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
   }
 }

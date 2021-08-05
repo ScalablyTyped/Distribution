@@ -23,29 +23,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object BlockStatement_ {
   
-  @scala.inline
-  def apply(body: js.Array[Statement], directives: js.Array[Directive_]): BlockStatement_ = {
+  inline def apply(body: js.Array[Statement], directives: js.Array[Directive_]): BlockStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[BlockStatement_]
   }
   
-  @scala.inline
-  implicit class BlockStatement_MutableBuilder[Self <: BlockStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: BlockStatement_](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectives(value: js.Array[Directive_]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[Directive_]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesVarargs(value: Directive_ *): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: Directive_ *): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: BlockStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BlockStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

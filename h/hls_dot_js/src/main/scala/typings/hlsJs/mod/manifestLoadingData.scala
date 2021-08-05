@@ -10,16 +10,13 @@ trait manifestLoadingData extends StObject {
 }
 object manifestLoadingData {
   
-  @scala.inline
-  def apply(url: String): manifestLoadingData = {
+  inline def apply(url: String): manifestLoadingData = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[manifestLoadingData]
   }
   
-  @scala.inline
-  implicit class manifestLoadingDataMutableBuilder[Self <: manifestLoadingData] (val x: Self) extends AnyVal {
+  extension [Self <: manifestLoadingData](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

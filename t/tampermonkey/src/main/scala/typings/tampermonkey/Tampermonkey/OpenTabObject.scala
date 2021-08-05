@@ -16,25 +16,19 @@ trait OpenTabObject extends StObject {
 }
 object OpenTabObject {
   
-  @scala.inline
-  def apply(close: () => Unit, closed: Boolean): OpenTabObject = {
+  inline def apply(close: () => Unit, closed: Boolean): OpenTabObject = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), closed = closed.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenTabObject]
   }
   
-  @scala.inline
-  implicit class OpenTabObjectMutableBuilder[Self <: OpenTabObject] (val x: Self) extends AnyVal {
+  extension [Self <: OpenTabObject](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnclosed(value: () => Unit): Self = StObject.set(x, "onclosed", js.Any.fromFunction0(value))
+    inline def setOnclosed(value: () => Unit): Self = StObject.set(x, "onclosed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnclosedUndefined: Self = StObject.set(x, "onclosed", js.undefined)
+    inline def setOnclosedUndefined: Self = StObject.set(x, "onclosed", js.undefined)
   }
 }

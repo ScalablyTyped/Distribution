@@ -13,16 +13,13 @@ trait DeleteAppInstanceStreamingConfigurationsRequest extends StObject {
 }
 object DeleteAppInstanceStreamingConfigurationsRequest {
   
-  @scala.inline
-  def apply(AppInstanceArn: ChimeArn): DeleteAppInstanceStreamingConfigurationsRequest = {
+  inline def apply(AppInstanceArn: ChimeArn): DeleteAppInstanceStreamingConfigurationsRequest = {
     val __obj = js.Dynamic.literal(AppInstanceArn = AppInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppInstanceStreamingConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAppInstanceStreamingConfigurationsRequestMutableBuilder[Self <: DeleteAppInstanceStreamingConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAppInstanceStreamingConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
   }
 }

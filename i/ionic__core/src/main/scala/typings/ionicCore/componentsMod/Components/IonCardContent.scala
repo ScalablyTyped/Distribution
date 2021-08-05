@@ -15,19 +15,15 @@ trait IonCardContent extends StObject {
 }
 object IonCardContent {
   
-  @scala.inline
-  def apply(): IonCardContent = {
+  inline def apply(): IonCardContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonCardContent]
   }
   
-  @scala.inline
-  implicit class IonCardContentMutableBuilder[Self <: IonCardContent] (val x: Self) extends AnyVal {
+  extension [Self <: IonCardContent](x: Self) {
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

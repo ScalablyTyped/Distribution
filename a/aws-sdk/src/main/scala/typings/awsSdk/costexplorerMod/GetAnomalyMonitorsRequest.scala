@@ -23,34 +23,25 @@ trait GetAnomalyMonitorsRequest extends StObject {
 }
 object GetAnomalyMonitorsRequest {
   
-  @scala.inline
-  def apply(): GetAnomalyMonitorsRequest = {
+  inline def apply(): GetAnomalyMonitorsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAnomalyMonitorsRequest]
   }
   
-  @scala.inline
-  implicit class GetAnomalyMonitorsRequestMutableBuilder[Self <: GetAnomalyMonitorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAnomalyMonitorsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMonitorArnList(value: Values): Self = StObject.set(x, "MonitorArnList", value.asInstanceOf[js.Any])
+    inline def setMonitorArnList(value: Values): Self = StObject.set(x, "MonitorArnList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorArnListUndefined: Self = StObject.set(x, "MonitorArnList", js.undefined)
+    inline def setMonitorArnListUndefined: Self = StObject.set(x, "MonitorArnList", js.undefined)
     
-    @scala.inline
-    def setMonitorArnListVarargs(value: Value*): Self = StObject.set(x, "MonitorArnList", js.Array(value :_*))
+    inline def setMonitorArnListVarargs(value: Value*): Self = StObject.set(x, "MonitorArnList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

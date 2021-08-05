@@ -24,8 +24,7 @@ trait ExecutionTime extends StObject {
 }
 object ExecutionTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     executionTime: Double,
     filtered: Double,
     fullCount: Double,
@@ -39,31 +38,22 @@ object ExecutionTime {
     __obj.asInstanceOf[ExecutionTime]
   }
   
-  @scala.inline
-  implicit class ExecutionTimeMutableBuilder[Self <: ExecutionTime] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionTime](x: Self) {
     
-    @scala.inline
-    def setExecutionTime(value: Double): Self = StObject.set(x, "executionTime", value.asInstanceOf[js.Any])
+    inline def setExecutionTime(value: Double): Self = StObject.set(x, "executionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltered(value: Double): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
+    inline def setFiltered(value: Double): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullCount(value: Double): Self = StObject.set(x, "fullCount", value.asInstanceOf[js.Any])
+    inline def setFullCount(value: Double): Self = StObject.set(x, "fullCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRequests(value: Double): Self = StObject.set(x, "httpRequests", value.asInstanceOf[js.Any])
+    inline def setHttpRequests(value: Double): Self = StObject.set(x, "httpRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScannedFull(value: Double): Self = StObject.set(x, "scannedFull", value.asInstanceOf[js.Any])
+    inline def setScannedFull(value: Double): Self = StObject.set(x, "scannedFull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScannedIndex(value: Double): Self = StObject.set(x, "scannedIndex", value.asInstanceOf[js.Any])
+    inline def setScannedIndex(value: Double): Self = StObject.set(x, "scannedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritesExecuted(value: Double): Self = StObject.set(x, "writesExecuted", value.asInstanceOf[js.Any])
+    inline def setWritesExecuted(value: Double): Self = StObject.set(x, "writesExecuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritesIgnored(value: Double): Self = StObject.set(x, "writesIgnored", value.asInstanceOf[js.Any])
+    inline def setWritesIgnored(value: Double): Self = StObject.set(x, "writesIgnored", value.asInstanceOf[js.Any])
   }
 }

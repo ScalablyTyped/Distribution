@@ -25,11 +25,11 @@ object requestMod {
   @js.native
   trait Request extends StObject {
     
-    var _host: String = js.native
+    /* protected */ var _host: String = js.native
     
-    var _port: Double = js.native
+    /* protected */ var _port: Double = js.native
     
-    var _secure: Boolean = js.native
+    /* protected */ var _secure: Boolean = js.native
     
     /**
       * Perform the HTTP request

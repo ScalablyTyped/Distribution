@@ -23,19 +23,16 @@ object PathUtils {
     *
     * On each [[PathNode]], creates ViewConfig objects from the views: property of the node's state
     */
-  @scala.inline
-  def applyViewConfigs(
+  inline def applyViewConfigs(
     $view: typings.uirouterCore.viewViewMod.ViewService,
     path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     states: js.Array[typings.uirouterCore.stateObjectMod.StateObject]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyViewConfigs")($view.asInstanceOf[js.Any], path.asInstanceOf[js.Any], states.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def buildPath(targetState: typings.uirouterCore.targetStateMod.TargetState): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(targetState.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
+  inline def buildPath(targetState: typings.uirouterCore.targetStateMod.TargetState): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(targetState.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
   
   /** Given a fromPath: PathNode[] and a TargetState, builds a toPath: PathNode[] */
-  @scala.inline
-  def buildToPath(
+  inline def buildToPath(
     fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     targetState: typings.uirouterCore.targetStateMod.TargetState
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToPath")(fromPath.asInstanceOf[js.Any], targetState.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
@@ -48,13 +45,11 @@ object PathUtils {
     * @param paramsFn a function which returns the parameters to consider when comparing
     * @returns true if the the states and parameter values for both paths are identical
     */
-  @scala.inline
-  def equals(
+  inline def equals(
     pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(pathA.asInstanceOf[js.Any], pathB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals(
+  inline def equals(
     pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     paramsFn: GetParamsFn
@@ -71,21 +66,18 @@ object PathUtils {
     * caller, for instance, $state.transitionTo(..., toParams).  If a key was found in toParams,
     * it is not inherited from the fromPath.
     */
-  @scala.inline
-  def inheritParams(
+  inline def inheritParams(
     fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritParams")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
-  @scala.inline
-  def inheritParams(
+  inline def inheritParams(
     fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     toKeys: js.Array[String]
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritParams")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any], toKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
   
   /** Given a PathNode[], create an TargetState */
-  @scala.inline
-  def makeTargetState(
+  inline def makeTargetState(
     registry: typings.uirouterCore.stateMod.StateRegistry,
     path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
   ): typings.uirouterCore.targetStateMod.TargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTargetState")(registry.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.targetStateMod.TargetState]
@@ -105,24 +97,20 @@ object PathUtils {
     *
     * @returns an array of PathNodes from the first path which match the nodes in the second path
     */
-  @scala.inline
-  def matching(
+  inline def matching(
     pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("matching")(pathA.asInstanceOf[js.Any], pathB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
-  @scala.inline
-  def matching(
+  inline def matching(
     pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     paramsFn: GetParamsFn
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("matching")(pathA.asInstanceOf[js.Any], pathB.asInstanceOf[js.Any], paramsFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
   
-  @scala.inline
-  def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonDynamicParams")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+  inline def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonDynamicParams")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
   
   /** Gets the raw parameter values from a path */
-  @scala.inline
-  def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Return a subpath of a path, which stops at the first matching node
@@ -134,8 +122,7 @@ object PathUtils {
     * @param predicate a [[Predicate]] fn that matches [[PathNode]]s
     * @returns a subpath up to the matching node, or undefined if no match is found
     */
-  @scala.inline
-  def subPath(
+  inline def subPath(
     path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     predicate: Predicate[typings.uirouterCore.pathNodeMod.PathNode]
   ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("subPath")(path.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.pathNodeMod.PathNode]]
@@ -143,8 +130,7 @@ object PathUtils {
   /**
     * Computes the tree changes (entering, exiting) between a fromPath and toPath.
     */
-  @scala.inline
-  def treeChanges(
+  inline def treeChanges(
     fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
     reloadState: typings.uirouterCore.stateObjectMod.StateObject

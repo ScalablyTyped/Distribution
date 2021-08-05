@@ -13,16 +13,13 @@ trait DescribePortalRequest extends StObject {
 }
 object DescribePortalRequest {
   
-  @scala.inline
-  def apply(portalId: ID): DescribePortalRequest = {
+  inline def apply(portalId: ID): DescribePortalRequest = {
     val __obj = js.Dynamic.literal(portalId = portalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePortalRequest]
   }
   
-  @scala.inline
-  implicit class DescribePortalRequestMutableBuilder[Self <: DescribePortalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePortalRequest](x: Self) {
     
-    @scala.inline
-    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
+    inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
   }
 }

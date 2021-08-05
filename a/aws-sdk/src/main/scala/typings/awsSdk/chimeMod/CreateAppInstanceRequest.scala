@@ -23,25 +23,19 @@ trait CreateAppInstanceRequest extends StObject {
 }
 object CreateAppInstanceRequest {
   
-  @scala.inline
-  def apply(ClientRequestToken: ClientRequestToken, Name: NonEmptyResourceName): CreateAppInstanceRequest = {
+  inline def apply(ClientRequestToken: ClientRequestToken, Name: NonEmptyResourceName): CreateAppInstanceRequest = {
     val __obj = js.Dynamic.literal(ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAppInstanceRequest]
   }
   
-  @scala.inline
-  implicit class CreateAppInstanceRequestMutableBuilder[Self <: CreateAppInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAppInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

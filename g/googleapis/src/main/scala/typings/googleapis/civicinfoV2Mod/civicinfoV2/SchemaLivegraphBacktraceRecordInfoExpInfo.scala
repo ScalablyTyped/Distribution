@@ -10,22 +10,17 @@ trait SchemaLivegraphBacktraceRecordInfoExpInfo extends StObject {
 }
 object SchemaLivegraphBacktraceRecordInfoExpInfo {
   
-  @scala.inline
-  def apply(): SchemaLivegraphBacktraceRecordInfoExpInfo = {
+  inline def apply(): SchemaLivegraphBacktraceRecordInfoExpInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLivegraphBacktraceRecordInfoExpInfo]
   }
   
-  @scala.inline
-  implicit class SchemaLivegraphBacktraceRecordInfoExpInfoMutableBuilder[Self <: SchemaLivegraphBacktraceRecordInfoExpInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLivegraphBacktraceRecordInfoExpInfo](x: Self) {
     
-    @scala.inline
-    def setDeletedIns(value: js.Array[String]): Self = StObject.set(x, "deletedIns", value.asInstanceOf[js.Any])
+    inline def setDeletedIns(value: js.Array[String]): Self = StObject.set(x, "deletedIns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedInsUndefined: Self = StObject.set(x, "deletedIns", js.undefined)
+    inline def setDeletedInsUndefined: Self = StObject.set(x, "deletedIns", js.undefined)
     
-    @scala.inline
-    def setDeletedInsVarargs(value: String*): Self = StObject.set(x, "deletedIns", js.Array(value :_*))
+    inline def setDeletedInsVarargs(value: String*): Self = StObject.set(x, "deletedIns", js.Array(value :_*))
   }
 }

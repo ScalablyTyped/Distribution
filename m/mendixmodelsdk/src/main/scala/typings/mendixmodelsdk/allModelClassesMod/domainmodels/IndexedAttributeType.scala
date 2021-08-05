@@ -21,20 +21,17 @@ object IndexedAttributeType {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IndexedAttributeType.ChangedDate")
   @js.native
   def ChangedDate: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType = js.native
-  @scala.inline
-  def ChangedDate_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangedDate")(x.asInstanceOf[js.Any])
+  inline def ChangedDate_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChangedDate")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IndexedAttributeType.CreatedDate")
   @js.native
   def CreatedDate: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType = js.native
-  @scala.inline
-  def CreatedDate_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatedDate")(x.asInstanceOf[js.Any])
+  inline def CreatedDate_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatedDate")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IndexedAttributeType.Normal")
   @js.native
   def Normal: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType = js.native
-  @scala.inline
-  def Normal_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
+  inline def Normal_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndexedAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
 }

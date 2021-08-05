@@ -46,8 +46,7 @@ trait DropTargetDropEvent
 }
 object DropTargetDropEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XDropTargetDropContext,
     DropAction: Double,
     Dummy: Double,
@@ -61,25 +60,18 @@ object DropTargetDropEvent {
     __obj.asInstanceOf[DropTargetDropEvent]
   }
   
-  @scala.inline
-  implicit class DropTargetDropEventMutableBuilder[Self <: DropTargetDropEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DropTargetDropEvent](x: Self) {
     
-    @scala.inline
-    def setContext(value: XDropTargetDropContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    inline def setContext(value: XDropTargetDropContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropAction(value: Double): Self = StObject.set(x, "DropAction", value.asInstanceOf[js.Any])
+    inline def setDropAction(value: Double): Self = StObject.set(x, "DropAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationX(value: Double): Self = StObject.set(x, "LocationX", value.asInstanceOf[js.Any])
+    inline def setLocationX(value: Double): Self = StObject.set(x, "LocationX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationY(value: Double): Self = StObject.set(x, "LocationY", value.asInstanceOf[js.Any])
+    inline def setLocationY(value: Double): Self = StObject.set(x, "LocationY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceActions(value: Double): Self = StObject.set(x, "SourceActions", value.asInstanceOf[js.Any])
+    inline def setSourceActions(value: Double): Self = StObject.set(x, "SourceActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferable(value: XTransferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
+    inline def setTransferable(value: XTransferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
   }
 }

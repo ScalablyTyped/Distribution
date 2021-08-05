@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TravelRestriction extends StObject
 object TravelRestriction {
   
-  @scala.inline
-  def ferries: typings.googleMaps.googleMapsStrings.ferries = "ferries".asInstanceOf[typings.googleMaps.googleMapsStrings.ferries]
+  inline def ferries: typings.googleMaps.googleMapsStrings.ferries = "ferries".asInstanceOf[typings.googleMaps.googleMapsStrings.ferries]
   
-  @scala.inline
-  def highways: typings.googleMaps.googleMapsStrings.highways = "highways".asInstanceOf[typings.googleMaps.googleMapsStrings.highways]
+  inline def highways: typings.googleMaps.googleMapsStrings.highways = "highways".asInstanceOf[typings.googleMaps.googleMapsStrings.highways]
   
-  @scala.inline
-  def indoor: typings.googleMaps.googleMapsStrings.indoor = "indoor".asInstanceOf[typings.googleMaps.googleMapsStrings.indoor]
+  inline def indoor: typings.googleMaps.googleMapsStrings.indoor = "indoor".asInstanceOf[typings.googleMaps.googleMapsStrings.indoor]
   
-  @scala.inline
-  def tolls: typings.googleMaps.googleMapsStrings.tolls = "tolls".asInstanceOf[typings.googleMaps.googleMapsStrings.tolls]
+  inline def tolls: typings.googleMaps.googleMapsStrings.tolls = "tolls".asInstanceOf[typings.googleMaps.googleMapsStrings.tolls]
 }

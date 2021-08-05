@@ -15,29 +15,25 @@ trait EnumMember
      with _Node
 object EnumMember {
   
-  @scala.inline
-  def EnumBooleanMember_(id: Identifier_, init: BooleanLiteral_): typings.babelTypes.indexTs37Mod.EnumBooleanMember_ = {
+  inline def EnumBooleanMember_(id: Identifier_, init: BooleanLiteral_): typings.babelTypes.indexTs37Mod.EnumBooleanMember_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumBooleanMember")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.EnumBooleanMember_]
   }
   
-  @scala.inline
-  def EnumDefaultedMember_(id: Identifier_): typings.babelTypes.indexTs37Mod.EnumDefaultedMember_ = {
+  inline def EnumDefaultedMember_(id: Identifier_): typings.babelTypes.indexTs37Mod.EnumDefaultedMember_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumDefaultedMember")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.EnumDefaultedMember_]
   }
   
-  @scala.inline
-  def EnumNumberMember_(id: Identifier_, init: NumericLiteral_): typings.babelTypes.indexTs37Mod.EnumNumberMember_ = {
+  inline def EnumNumberMember_(id: Identifier_, init: NumericLiteral_): typings.babelTypes.indexTs37Mod.EnumNumberMember_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumNumberMember")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.EnumNumberMember_]
   }
   
-  @scala.inline
-  def EnumStringMember_(id: Identifier_, init: StringLiteral_): typings.babelTypes.indexTs37Mod.EnumStringMember_ = {
+  inline def EnumStringMember_(id: Identifier_, init: StringLiteral_): typings.babelTypes.indexTs37Mod.EnumStringMember_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumStringMember")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.EnumStringMember_]

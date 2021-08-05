@@ -91,79 +91,55 @@ trait ImageParametersProperties extends StObject {
 }
 object ImageParametersProperties {
   
-  @scala.inline
-  def apply(): ImageParametersProperties = {
+  inline def apply(): ImageParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageParametersProperties]
   }
   
-  @scala.inline
-  implicit class ImageParametersPropertiesMutableBuilder[Self <: ImageParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageParametersProperties](x: Self) {
     
-    @scala.inline
-    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+    inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
+    inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    @scala.inline
-    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setImageSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "imageSpatialReference", value.asInstanceOf[js.Any])
+    inline def setImageSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "imageSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSpatialReferenceUndefined: Self = StObject.set(x, "imageSpatialReference", js.undefined)
+    inline def setImageSpatialReferenceUndefined: Self = StObject.set(x, "imageSpatialReference", js.undefined)
     
-    @scala.inline
-    def setLayerDefinitions(value: js.Array[String]): Self = StObject.set(x, "layerDefinitions", value.asInstanceOf[js.Any])
+    inline def setLayerDefinitions(value: js.Array[String]): Self = StObject.set(x, "layerDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerDefinitionsUndefined: Self = StObject.set(x, "layerDefinitions", js.undefined)
+    inline def setLayerDefinitionsUndefined: Self = StObject.set(x, "layerDefinitions", js.undefined)
     
-    @scala.inline
-    def setLayerDefinitionsVarargs(value: String*): Self = StObject.set(x, "layerDefinitions", js.Array(value :_*))
+    inline def setLayerDefinitionsVarargs(value: String*): Self = StObject.set(x, "layerDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setLayerIds(value: js.Array[Double]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
+    inline def setLayerIds(value: js.Array[Double]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
+    inline def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
-    @scala.inline
-    def setLayerIdsVarargs(value: Double*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: Double*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setLayerOption(value: show | hide | include | exclude): Self = StObject.set(x, "layerOption", value.asInstanceOf[js.Any])
+    inline def setLayerOption(value: show | hide | include | exclude): Self = StObject.set(x, "layerOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerOptionUndefined: Self = StObject.set(x, "layerOption", js.undefined)
+    inline def setLayerOptionUndefined: Self = StObject.set(x, "layerOption", js.undefined)
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

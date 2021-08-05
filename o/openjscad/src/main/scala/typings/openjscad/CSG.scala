@@ -142,8 +142,7 @@ object CSG {
   }
   object ConnectorList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appendConnector: Connector => Unit,
       closed: Boolean,
       connectors_ : js.Array[Connector],
@@ -155,29 +154,21 @@ object CSG {
       __obj.asInstanceOf[ConnectorList]
     }
     
-    @scala.inline
-    implicit class ConnectorListMutableBuilder[Self <: ConnectorList] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectorList](x: Self) {
       
-      @scala.inline
-      def setAppendConnector(value: Connector => Unit): Self = StObject.set(x, "appendConnector", js.Any.fromFunction1(value))
+      inline def setAppendConnector(value: Connector => Unit): Self = StObject.set(x, "appendConnector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectors_(value: js.Array[Connector]): Self = StObject.set(x, "connectors_", value.asInstanceOf[js.Any])
+      inline def setConnectors_(value: js.Array[Connector]): Self = StObject.set(x, "connectors_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectors_Varargs(value: Connector*): Self = StObject.set(x, "connectors_", js.Array(value :_*))
+      inline def setConnectors_Varargs(value: Connector*): Self = StObject.set(x, "connectors_", js.Array(value :_*))
       
-      @scala.inline
-      def setFollowWith(value: js.Any => CSG): Self = StObject.set(x, "followWith", js.Any.fromFunction1(value))
+      inline def setFollowWith(value: js.Any => CSG): Self = StObject.set(x, "followWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetClosed(value: Boolean => Unit): Self = StObject.set(x, "setClosed", js.Any.fromFunction1(value))
+      inline def setSetClosed(value: Boolean => Unit): Self = StObject.set(x, "setClosed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
+      inline def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
     }
   }
   
@@ -193,32 +184,24 @@ object CSG {
   }
   object IArcOptions {
     
-    @scala.inline
-    def apply(): IArcOptions = {
+    inline def apply(): IArcOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IArcOptions]
     }
     
-    @scala.inline
-    implicit class IArcOptionsMutableBuilder[Self <: IArcOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IArcOptions](x: Self) {
       
-      @scala.inline
-      def setEndangle(value: Double): Self = StObject.set(x, "endangle", value.asInstanceOf[js.Any])
+      inline def setEndangle(value: Double): Self = StObject.set(x, "endangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndangleUndefined: Self = StObject.set(x, "endangle", js.undefined)
+      inline def setEndangleUndefined: Self = StObject.set(x, "endangle", js.undefined)
       
-      @scala.inline
-      def setMaketangent(value: Boolean): Self = StObject.set(x, "maketangent", value.asInstanceOf[js.Any])
+      inline def setMaketangent(value: Boolean): Self = StObject.set(x, "maketangent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaketangentUndefined: Self = StObject.set(x, "maketangent", js.undefined)
+      inline def setMaketangentUndefined: Self = StObject.set(x, "maketangent", js.undefined)
       
-      @scala.inline
-      def setStartangle(value: Double): Self = StObject.set(x, "startangle", value.asInstanceOf[js.Any])
+      inline def setStartangle(value: Double): Self = StObject.set(x, "startangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartangleUndefined: Self = StObject.set(x, "startangle", js.undefined)
+      inline def setStartangleUndefined: Self = StObject.set(x, "startangle", js.undefined)
     }
   }
   
@@ -230,23 +213,18 @@ object CSG {
   }
   object ICircleOptions {
     
-    @scala.inline
-    def apply(): ICircleOptions = {
+    inline def apply(): ICircleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICircleOptions]
     }
     
-    @scala.inline
-    implicit class ICircleOptionsMutableBuilder[Self <: ICircleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICircleOptions](x: Self) {
       
-      @scala.inline
-      def setCenter(value: Vector2D | js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Vector2D | js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
     }
   }
   
@@ -266,44 +244,32 @@ object CSG {
   }
   object IEllpiticalArcOptions {
     
-    @scala.inline
-    def apply(): IEllpiticalArcOptions = {
+    inline def apply(): IEllpiticalArcOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEllpiticalArcOptions]
     }
     
-    @scala.inline
-    implicit class IEllpiticalArcOptionsMutableBuilder[Self <: IEllpiticalArcOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IEllpiticalArcOptions](x: Self) {
       
-      @scala.inline
-      def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+      inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
+      inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setXaxisrotation(value: Double): Self = StObject.set(x, "xaxisrotation", value.asInstanceOf[js.Any])
+      inline def setXaxisrotation(value: Double): Self = StObject.set(x, "xaxisrotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXaxisrotationUndefined: Self = StObject.set(x, "xaxisrotation", js.undefined)
+      inline def setXaxisrotationUndefined: Self = StObject.set(x, "xaxisrotation", js.undefined)
       
-      @scala.inline
-      def setXradius(value: Double): Self = StObject.set(x, "xradius", value.asInstanceOf[js.Any])
+      inline def setXradius(value: Double): Self = StObject.set(x, "xradius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXradiusUndefined: Self = StObject.set(x, "xradius", js.undefined)
+      inline def setXradiusUndefined: Self = StObject.set(x, "xradius", js.undefined)
       
-      @scala.inline
-      def setYradius(value: Double): Self = StObject.set(x, "yradius", value.asInstanceOf[js.Any])
+      inline def setYradius(value: Double): Self = StObject.set(x, "yradius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYradiusUndefined: Self = StObject.set(x, "yradius", js.undefined)
+      inline def setYradiusUndefined: Self = StObject.set(x, "yradius", js.undefined)
     }
   }
   
@@ -315,26 +281,20 @@ object CSG {
   }
   object IRadiusOptions {
     
-    @scala.inline
-    def apply(): IRadiusOptions = {
+    inline def apply(): IRadiusOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRadiusOptions]
     }
     
-    @scala.inline
-    implicit class IRadiusOptionsMutableBuilder[Self <: IRadiusOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRadiusOptions](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     }
   }
   
@@ -350,38 +310,28 @@ object CSG {
   }
   object IRectangleOptions {
     
-    @scala.inline
-    def apply(): IRectangleOptions = {
+    inline def apply(): IRectangleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRectangleOptions]
     }
     
-    @scala.inline
-    implicit class IRectangleOptionsMutableBuilder[Self <: IRectangleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRectangleOptions](x: Self) {
       
-      @scala.inline
-      def setCenter(value: Vector2D): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Vector2D): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setCorner1(value: Vector2D): Self = StObject.set(x, "corner1", value.asInstanceOf[js.Any])
+      inline def setCorner1(value: Vector2D): Self = StObject.set(x, "corner1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorner1Undefined: Self = StObject.set(x, "corner1", js.undefined)
+      inline def setCorner1Undefined: Self = StObject.set(x, "corner1", js.undefined)
       
-      @scala.inline
-      def setCorner2(value: Vector2D): Self = StObject.set(x, "corner2", value.asInstanceOf[js.Any])
+      inline def setCorner2(value: Vector2D): Self = StObject.set(x, "corner2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorner2Undefined: Self = StObject.set(x, "corner2", js.undefined)
+      inline def setCorner2Undefined: Self = StObject.set(x, "corner2", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Vector2D): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Vector2D): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
   
@@ -393,23 +343,18 @@ object CSG {
   }
   object IRoundRectangleOptions {
     
-    @scala.inline
-    def apply(roundradius: Double): IRoundRectangleOptions = {
+    inline def apply(roundradius: Double): IRoundRectangleOptions = {
       val __obj = js.Dynamic.literal(roundradius = roundradius.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRoundRectangleOptions]
     }
     
-    @scala.inline
-    implicit class IRoundRectangleOptionsMutableBuilder[Self <: IRoundRectangleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRoundRectangleOptions](x: Self) {
       
-      @scala.inline
-      def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
       
-      @scala.inline
-      def setRoundradius(value: Double): Self = StObject.set(x, "roundradius", value.asInstanceOf[js.Any])
+      inline def setRoundradius(value: Double): Self = StObject.set(x, "roundradius", value.asInstanceOf[js.Any])
     }
   }
   
@@ -479,8 +424,7 @@ object CSG {
   }
   object Matrix4x4 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       elements: js.Array[Double],
       isMirroring: () => Boolean,
       leftMultiply1x2Vector: Vector2D => Vector2D,
@@ -495,38 +439,27 @@ object CSG {
       __obj.asInstanceOf[Matrix4x4]
     }
     
-    @scala.inline
-    implicit class Matrix4x4MutableBuilder[Self <: Matrix4x4] (val x: Self) extends AnyVal {
+    extension [Self <: Matrix4x4](x: Self) {
       
-      @scala.inline
-      def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setIsMirroring(value: () => Boolean): Self = StObject.set(x, "isMirroring", js.Any.fromFunction0(value))
+      inline def setIsMirroring(value: () => Boolean): Self = StObject.set(x, "isMirroring", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLeftMultiply1x2Vector(value: Vector2D => Vector2D): Self = StObject.set(x, "leftMultiply1x2Vector", js.Any.fromFunction1(value))
+      inline def setLeftMultiply1x2Vector(value: Vector2D => Vector2D): Self = StObject.set(x, "leftMultiply1x2Vector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftMultiply1x3Vector(value: Vector3D => Vector3D): Self = StObject.set(x, "leftMultiply1x3Vector", js.Any.fromFunction1(value))
+      inline def setLeftMultiply1x3Vector(value: Vector3D => Vector3D): Self = StObject.set(x, "leftMultiply1x3Vector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMinus(value: Matrix4x4 => Matrix4x4): Self = StObject.set(x, "minus", js.Any.fromFunction1(value))
+      inline def setMinus(value: Matrix4x4 => Matrix4x4): Self = StObject.set(x, "minus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiply(value: Matrix4x4 => Matrix4x4): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
+      inline def setMultiply(value: Matrix4x4 => Matrix4x4): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlus(value: Matrix4x4 => Matrix4x4): Self = StObject.set(x, "plus", js.Any.fromFunction1(value))
+      inline def setPlus(value: Matrix4x4 => Matrix4x4): Self = StObject.set(x, "plus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRightMultiply1x2Vector(value: Vector2D => Vector2D): Self = StObject.set(x, "rightMultiply1x2Vector", js.Any.fromFunction1(value))
+      inline def setRightMultiply1x2Vector(value: Vector2D => Vector2D): Self = StObject.set(x, "rightMultiply1x2Vector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRightMultiply1x3Vector(value: Vector3D => Vector3D): Self = StObject.set(x, "rightMultiply1x3Vector", js.Any.fromFunction1(value))
+      inline def setRightMultiply1x3Vector(value: Vector3D => Vector3D): Self = StObject.set(x, "rightMultiply1x3Vector", js.Any.fromFunction1(value))
     }
   }
   
@@ -554,8 +487,7 @@ object CSG {
   }
   object Node {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addPolygonTreeNodes: js.Array[PolygonTreeNode] => Unit,
       back: js.Any,
       clipPolygons: (js.Array[PolygonTreeNode], Boolean) => Unit,
@@ -571,41 +503,29 @@ object CSG {
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setAddPolygonTreeNodes(value: js.Array[PolygonTreeNode] => Unit): Self = StObject.set(x, "addPolygonTreeNodes", js.Any.fromFunction1(value))
+      inline def setAddPolygonTreeNodes(value: js.Array[PolygonTreeNode] => Unit): Self = StObject.set(x, "addPolygonTreeNodes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBack(value: js.Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+      inline def setBack(value: js.Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipPolygons(value: (js.Array[PolygonTreeNode], Boolean) => Unit): Self = StObject.set(x, "clipPolygons", js.Any.fromFunction2(value))
+      inline def setClipPolygons(value: (js.Array[PolygonTreeNode], Boolean) => Unit): Self = StObject.set(x, "clipPolygons", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClipTo(value: (Tree, Boolean) => Unit): Self = StObject.set(x, "clipTo", js.Any.fromFunction2(value))
+      inline def setClipTo(value: (Tree, Boolean) => Unit): Self = StObject.set(x, "clipTo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFront(value: js.Any): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+      inline def setFront(value: js.Any): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetParentPlaneNormals(value: (js.Array[Vector3D], Double) => Unit): Self = StObject.set(x, "getParentPlaneNormals", js.Any.fromFunction2(value))
+      inline def setGetParentPlaneNormals(value: (js.Array[Vector3D], Double) => Unit): Self = StObject.set(x, "getParentPlaneNormals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvert(value: () => Unit): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
+      inline def setInvert(value: () => Unit): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParent(value: Node): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Node): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlane(value: Plane): Self = StObject.set(x, "plane", value.asInstanceOf[js.Any])
+      inline def setPlane(value: Plane): Self = StObject.set(x, "plane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygontreenodes(value: js.Array[PolygonTreeNode]): Self = StObject.set(x, "polygontreenodes", value.asInstanceOf[js.Any])
+      inline def setPolygontreenodes(value: js.Array[PolygonTreeNode]): Self = StObject.set(x, "polygontreenodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygontreenodesVarargs(value: PolygonTreeNode*): Self = StObject.set(x, "polygontreenodes", js.Array(value :_*))
+      inline def setPolygontreenodesVarargs(value: PolygonTreeNode*): Self = StObject.set(x, "polygontreenodes", js.Array(value :_*))
     }
   }
   
@@ -763,26 +683,20 @@ object CSG {
     }
     object Shared {
       
-      @scala.inline
-      def apply(color: js.Any, getHash: () => js.Any, getTag: () => js.Any, tag: js.Any): Shared = {
+      inline def apply(color: js.Any, getHash: () => js.Any, getTag: () => js.Any, tag: js.Any): Shared = {
         val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], getHash = js.Any.fromFunction0(getHash), getTag = js.Any.fromFunction0(getTag), tag = tag.asInstanceOf[js.Any])
         __obj.asInstanceOf[Shared]
       }
       
-      @scala.inline
-      implicit class SharedMutableBuilder[Self <: Shared] (val x: Self) extends AnyVal {
+      extension [Self <: Shared](x: Self) {
         
-        @scala.inline
-        def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetHash(value: () => js.Any): Self = StObject.set(x, "getHash", js.Any.fromFunction0(value))
+        inline def setGetHash(value: () => js.Any): Self = StObject.set(x, "getHash", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetTag(value: () => js.Any): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
+        inline def setGetTag(value: () => js.Any): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -837,8 +751,7 @@ object CSG {
   }
   object PolygonTreeNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _splitByPlane: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit,
       addChild: Polygon => PolygonTreeNode,
       addPolygons: js.Any => Unit,
@@ -860,56 +773,39 @@ object CSG {
       __obj.asInstanceOf[PolygonTreeNode]
     }
     
-    @scala.inline
-    implicit class PolygonTreeNodeMutableBuilder[Self <: PolygonTreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: PolygonTreeNode](x: Self) {
       
-      @scala.inline
-      def setAddChild(value: Polygon => PolygonTreeNode): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
+      inline def setAddChild(value: Polygon => PolygonTreeNode): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddPolygons(value: js.Any => Unit): Self = StObject.set(x, "addPolygons", js.Any.fromFunction1(value))
+      inline def setAddPolygons(value: js.Any => Unit): Self = StObject.set(x, "addPolygons", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPolygon(value: () => Polygon): Self = StObject.set(x, "getPolygon", js.Any.fromFunction0(value))
+      inline def setGetPolygon(value: () => Polygon): Self = StObject.set(x, "getPolygon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPolygons(value: js.Array[Polygon] => Unit): Self = StObject.set(x, "getPolygons", js.Any.fromFunction1(value))
+      inline def setGetPolygons(value: js.Array[Polygon] => Unit): Self = StObject.set(x, "getPolygons", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvert(value: () => Unit): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
+      inline def setInvert(value: () => Unit): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvertSub(value: () => Unit): Self = StObject.set(x, "invertSub", js.Any.fromFunction0(value))
+      inline def setInvertSub(value: () => Unit): Self = StObject.set(x, "invertSub", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRemoved(value: () => Boolean): Self = StObject.set(x, "isRemoved", js.Any.fromFunction0(value))
+      inline def setIsRemoved(value: () => Boolean): Self = StObject.set(x, "isRemoved", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRootNode(value: () => Boolean): Self = StObject.set(x, "isRootNode", js.Any.fromFunction0(value))
+      inline def setIsRootNode(value: () => Boolean): Self = StObject.set(x, "isRootNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygon(value: Polygon): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+      inline def setPolygon(value: Polygon): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursivelyInvalidatePolygon(value: () => Unit): Self = StObject.set(x, "recursivelyInvalidatePolygon", js.Any.fromFunction0(value))
+      inline def setRecursivelyInvalidatePolygon(value: () => Unit): Self = StObject.set(x, "recursivelyInvalidatePolygon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitByPlane(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "splitByPlane", js.Any.fromFunction5(value))
+      inline def setSplitByPlane(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "splitByPlane", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def set_splitByPlane(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_splitByPlane", js.Any.fromFunction5(value))
+      inline def set_splitByPlane(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_splitByPlane", js.Any.fromFunction5(value))
     }
   }
   
@@ -945,8 +841,7 @@ object CSG {
   }
   object Properties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _merge: Properties => Properties,
       _transform: Matrix4x4 => Properties,
       center: js.Any,
@@ -966,53 +861,37 @@ object CSG {
       __obj.asInstanceOf[Properties]
     }
     
-    @scala.inline
-    implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+    extension [Self <: Properties](x: Self) {
       
-      @scala.inline
-      def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCube(value: Properties): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+      inline def setCube(value: Properties): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCylinder(value: Properties): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
+      inline def setCylinder(value: Properties): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacecenters(value: js.Array[js.Any]): Self = StObject.set(x, "facecenters", value.asInstanceOf[js.Any])
+      inline def setFacecenters(value: js.Array[js.Any]): Self = StObject.set(x, "facecenters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacecentersVarargs(value: js.Any*): Self = StObject.set(x, "facecenters", js.Array(value :_*))
+      inline def setFacecentersVarargs(value: js.Any*): Self = StObject.set(x, "facecenters", js.Array(value :_*))
       
-      @scala.inline
-      def setFacepoint(value: js.Any): Self = StObject.set(x, "facepoint", value.asInstanceOf[js.Any])
+      inline def setFacepoint(value: js.Any): Self = StObject.set(x, "facepoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacepointH(value: js.Any): Self = StObject.set(x, "facepointH", value.asInstanceOf[js.Any])
+      inline def setFacepointH(value: js.Any): Self = StObject.set(x, "facepointH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacepointH90(value: js.Any): Self = StObject.set(x, "facepointH90", value.asInstanceOf[js.Any])
+      inline def setFacepointH90(value: js.Any): Self = StObject.set(x, "facepointH90", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedCube(value: Properties): Self = StObject.set(x, "roundedCube", value.asInstanceOf[js.Any])
+      inline def setRoundedCube(value: Properties): Self = StObject.set(x, "roundedCube", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedCylinder(value: js.Any): Self = StObject.set(x, "roundedCylinder", value.asInstanceOf[js.Any])
+      inline def setRoundedCylinder(value: js.Any): Self = StObject.set(x, "roundedCylinder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSphere(value: Properties): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+      inline def setSphere(value: Properties): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_merge(value: Properties => Properties): Self = StObject.set(x, "_merge", js.Any.fromFunction1(value))
+      inline def set_merge(value: Properties => Properties): Self = StObject.set(x, "_merge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_transform(value: Matrix4x4 => Properties): Self = StObject.set(x, "_transform", js.Any.fromFunction1(value))
+      inline def set_transform(value: Matrix4x4 => Properties): Self = StObject.set(x, "_transform", js.Any.fromFunction1(value))
     }
   }
   
@@ -1175,8 +1054,7 @@ object CSG {
   }
   object fuzzyCSGFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCSG: CSG => CSG,
       getPlane: Plane => Plane,
       getPolygon: Polygon => Polygon,
@@ -1190,32 +1068,23 @@ object CSG {
       __obj.asInstanceOf[fuzzyCSGFactory]
     }
     
-    @scala.inline
-    implicit class fuzzyCSGFactoryMutableBuilder[Self <: fuzzyCSGFactory] (val x: Self) extends AnyVal {
+    extension [Self <: fuzzyCSGFactory](x: Self) {
       
-      @scala.inline
-      def setGetCSG(value: CSG => CSG): Self = StObject.set(x, "getCSG", js.Any.fromFunction1(value))
+      inline def setGetCSG(value: CSG => CSG): Self = StObject.set(x, "getCSG", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPlane(value: Plane => Plane): Self = StObject.set(x, "getPlane", js.Any.fromFunction1(value))
+      inline def setGetPlane(value: Plane => Plane): Self = StObject.set(x, "getPlane", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPolygon(value: Polygon => Polygon): Self = StObject.set(x, "getPolygon", js.Any.fromFunction1(value))
+      inline def setGetPolygon(value: Polygon => Polygon): Self = StObject.set(x, "getPolygon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPolygonShared(value: Shared => Shared): Self = StObject.set(x, "getPolygonShared", js.Any.fromFunction1(value))
+      inline def setGetPolygonShared(value: Shared => Shared): Self = StObject.set(x, "getPolygonShared", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVertex(value: Vertex => Vertex): Self = StObject.set(x, "getVertex", js.Any.fromFunction1(value))
+      inline def setGetVertex(value: Vertex => Vertex): Self = StObject.set(x, "getVertex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlanefactory(value: fuzzyFactory): Self = StObject.set(x, "planefactory", value.asInstanceOf[js.Any])
+      inline def setPlanefactory(value: fuzzyFactory): Self = StObject.set(x, "planefactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonsharedfactory(value: js.Any): Self = StObject.set(x, "polygonsharedfactory", value.asInstanceOf[js.Any])
+      inline def setPolygonsharedfactory(value: js.Any): Self = StObject.set(x, "polygonsharedfactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexfactory(value: fuzzyFactory): Self = StObject.set(x, "vertexfactory", value.asInstanceOf[js.Any])
+      inline def setVertexfactory(value: fuzzyFactory): Self = StObject.set(x, "vertexfactory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1229,23 +1098,18 @@ object CSG {
   }
   object fuzzyFactory {
     
-    @scala.inline
-    def apply(lookupOrCreate: (js.Any, js.Any) => js.Any, lookuptable: js.Any, multiplier: Double): fuzzyFactory = {
+    inline def apply(lookupOrCreate: (js.Any, js.Any) => js.Any, lookuptable: js.Any, multiplier: Double): fuzzyFactory = {
       val __obj = js.Dynamic.literal(lookupOrCreate = js.Any.fromFunction2(lookupOrCreate), lookuptable = lookuptable.asInstanceOf[js.Any], multiplier = multiplier.asInstanceOf[js.Any])
       __obj.asInstanceOf[fuzzyFactory]
     }
     
-    @scala.inline
-    implicit class fuzzyFactoryMutableBuilder[Self <: fuzzyFactory] (val x: Self) extends AnyVal {
+    extension [Self <: fuzzyFactory](x: Self) {
       
-      @scala.inline
-      def setLookupOrCreate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "lookupOrCreate", js.Any.fromFunction2(value))
+      inline def setLookupOrCreate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "lookupOrCreate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLookuptable(value: js.Any): Self = StObject.set(x, "lookuptable", value.asInstanceOf[js.Any])
+      inline def setLookuptable(value: js.Any): Self = StObject.set(x, "lookuptable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+      inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     }
   }
 }

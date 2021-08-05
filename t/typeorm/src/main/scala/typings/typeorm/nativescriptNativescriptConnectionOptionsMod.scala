@@ -64,60 +64,43 @@ object nativescriptNativescriptConnectionOptionsMod {
   }
   object NativescriptConnectionOptions {
     
-    @scala.inline
-    def apply(database: String, driver: js.Any): NativescriptConnectionOptions = {
+    inline def apply(database: String, driver: js.Any): NativescriptConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("nativescript")
       __obj.asInstanceOf[NativescriptConnectionOptions]
     }
     
-    @scala.inline
-    implicit class NativescriptConnectionOptionsMutableBuilder[Self <: NativescriptConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NativescriptConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setAndroidFlags(value: Double): Self = StObject.set(x, "androidFlags", value.asInstanceOf[js.Any])
+      inline def setAndroidFlags(value: Double): Self = StObject.set(x, "androidFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidFlagsUndefined: Self = StObject.set(x, "androidFlags", js.undefined)
+      inline def setAndroidFlagsUndefined: Self = StObject.set(x, "androidFlags", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosFlags(value: Double): Self = StObject.set(x, "iosFlags", value.asInstanceOf[js.Any])
+      inline def setIosFlags(value: Double): Self = StObject.set(x, "iosFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosFlagsUndefined: Self = StObject.set(x, "iosFlags", js.undefined)
+      inline def setIosFlagsUndefined: Self = StObject.set(x, "iosFlags", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMigrate(value: Boolean): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
+      inline def setMigrate(value: Boolean): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
+      inline def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
       
-      @scala.inline
-      def setMultithreading(value: Boolean): Self = StObject.set(x, "multithreading", value.asInstanceOf[js.Any])
+      inline def setMultithreading(value: Boolean): Self = StObject.set(x, "multithreading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultithreadingUndefined: Self = StObject.set(x, "multithreading", js.undefined)
+      inline def setMultithreadingUndefined: Self = StObject.set(x, "multithreading", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setType(value: nativescript): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: nativescript): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

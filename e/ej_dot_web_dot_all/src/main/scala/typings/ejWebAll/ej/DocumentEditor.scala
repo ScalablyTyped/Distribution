@@ -68,20 +68,16 @@ object DocumentEditor {
   }
   object ImportExportSettings {
     
-    @scala.inline
-    def apply(): ImportExportSettings = {
+    inline def apply(): ImportExportSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImportExportSettings]
     }
     
-    @scala.inline
-    implicit class ImportExportSettingsMutableBuilder[Self <: ImportExportSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ImportExportSettings](x: Self) {
       
-      @scala.inline
-      def setImportUrl(value: String): Self = StObject.set(x, "importUrl", value.asInstanceOf[js.Any])
+      inline def setImportUrl(value: String): Self = StObject.set(x, "importUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportUrlUndefined: Self = StObject.set(x, "importUrl", js.undefined)
+      inline def setImportUrlUndefined: Self = StObject.set(x, "importUrl", js.undefined)
     }
   }
   
@@ -109,44 +105,32 @@ object DocumentEditor {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.DocumentEditor.Model = {
+    inline def apply(): typings.ejWebAll.ej.DocumentEditor.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.DocumentEditor.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.DocumentEditor.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.DocumentEditor.Model](x: Self) {
       
-      @scala.inline
-      def setImportExportSettings(value: ImportExportSettings): Self = StObject.set(x, "importExportSettings", value.asInstanceOf[js.Any])
+      inline def setImportExportSettings(value: ImportExportSettings): Self = StObject.set(x, "importExportSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportExportSettingsUndefined: Self = StObject.set(x, "importExportSettings", js.undefined)
+      inline def setImportExportSettingsUndefined: Self = StObject.set(x, "importExportSettings", js.undefined)
       
-      @scala.inline
-      def setOnDocumentChange(value: /* e */ OnDocumentChangeEventArgs => Unit): Self = StObject.set(x, "onDocumentChange", js.Any.fromFunction1(value))
+      inline def setOnDocumentChange(value: /* e */ OnDocumentChangeEventArgs => Unit): Self = StObject.set(x, "onDocumentChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDocumentChangeUndefined: Self = StObject.set(x, "onDocumentChange", js.undefined)
+      inline def setOnDocumentChangeUndefined: Self = StObject.set(x, "onDocumentChange", js.undefined)
       
-      @scala.inline
-      def setOnRequestNavigate(value: /* e */ OnRequestNavigateEventArgs => Unit): Self = StObject.set(x, "onRequestNavigate", js.Any.fromFunction1(value))
+      inline def setOnRequestNavigate(value: /* e */ OnRequestNavigateEventArgs => Unit): Self = StObject.set(x, "onRequestNavigate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRequestNavigateUndefined: Self = StObject.set(x, "onRequestNavigate", js.undefined)
+      inline def setOnRequestNavigateUndefined: Self = StObject.set(x, "onRequestNavigate", js.undefined)
       
-      @scala.inline
-      def setOnSelectionChange(value: /* e */ OnSelectionChangeEventArgs => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
+      inline def setOnSelectionChange(value: /* e */ OnSelectionChangeEventArgs => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
+      inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
-      @scala.inline
-      def setOnZoomFactorChange(value: /* e */ OnZoomFactorChangeEventArgs => Unit): Self = StObject.set(x, "onZoomFactorChange", js.Any.fromFunction1(value))
+      inline def setOnZoomFactorChange(value: /* e */ OnZoomFactorChangeEventArgs => Unit): Self = StObject.set(x, "onZoomFactorChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnZoomFactorChangeUndefined: Self = StObject.set(x, "onZoomFactorChange", js.undefined)
+      inline def setOnZoomFactorChangeUndefined: Self = StObject.set(x, "onZoomFactorChange", js.undefined)
     }
   }
   
@@ -166,32 +150,24 @@ object DocumentEditor {
   }
   object OnDocumentChangeEventArgs {
     
-    @scala.inline
-    def apply(): OnDocumentChangeEventArgs = {
+    inline def apply(): OnDocumentChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnDocumentChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class OnDocumentChangeEventArgsMutableBuilder[Self <: OnDocumentChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OnDocumentChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -215,38 +191,28 @@ object DocumentEditor {
   }
   object OnRequestNavigateEventArgs {
     
-    @scala.inline
-    def apply(): OnRequestNavigateEventArgs = {
+    inline def apply(): OnRequestNavigateEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnRequestNavigateEventArgs]
     }
     
-    @scala.inline
-    implicit class OnRequestNavigateEventArgsMutableBuilder[Self <: OnRequestNavigateEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OnRequestNavigateEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setHyperlink(value: js.Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+      inline def setHyperlink(value: js.Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+      inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -266,32 +232,24 @@ object DocumentEditor {
   }
   object OnSelectionChangeEventArgs {
     
-    @scala.inline
-    def apply(): OnSelectionChangeEventArgs = {
+    inline def apply(): OnSelectionChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnSelectionChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class OnSelectionChangeEventArgsMutableBuilder[Self <: OnSelectionChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OnSelectionChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -311,32 +269,24 @@ object DocumentEditor {
   }
   object OnZoomFactorChangeEventArgs {
     
-    @scala.inline
-    def apply(): OnZoomFactorChangeEventArgs = {
+    inline def apply(): OnZoomFactorChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnZoomFactorChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class OnZoomFactorChangeEventArgsMutableBuilder[Self <: OnZoomFactorChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OnZoomFactorChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

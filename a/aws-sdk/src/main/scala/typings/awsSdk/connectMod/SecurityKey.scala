@@ -23,31 +23,23 @@ trait SecurityKey extends StObject {
 }
 object SecurityKey {
   
-  @scala.inline
-  def apply(): SecurityKey = {
+  inline def apply(): SecurityKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityKey]
   }
   
-  @scala.inline
-  implicit class SecurityKeyMutableBuilder[Self <: SecurityKey] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityKey](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setKey(value: PEM): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: PEM): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

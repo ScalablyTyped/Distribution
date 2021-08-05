@@ -41,8 +41,7 @@ trait GridProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
      with GridAreaProps[ThemeType]
 object GridProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridProps[ThemeType]]
   }

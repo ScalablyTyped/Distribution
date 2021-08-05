@@ -31,8 +31,7 @@ object Pair {
     * @return {IPair} A new pair
     */
   /* static member */
-  @scala.inline
-  def create(collision: ICollisionData, timestamp: Double): IPair = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(collision.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[IPair]
+  inline def create(collision: ICollisionData, timestamp: Double): IPair = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(collision.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[IPair]
   
   /**
     * Get the id for the given pair.
@@ -42,8 +41,7 @@ object Pair {
     * @return {string} Unique pairId
     */
   /* static member */
-  @scala.inline
-  def id(bodyA: BodyType, bodyB: BodyType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("id")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def id(bodyA: BodyType, bodyB: BodyType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("id")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Set a pair as active or inactive.
@@ -53,8 +51,7 @@ object Pair {
     * @param {number} timestamp
     */
   /* static member */
-  @scala.inline
-  def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setActive")(pair.asInstanceOf[js.Any], isActive.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setActive")(pair.asInstanceOf[js.Any], isActive.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Updates a pair given a collision.
@@ -64,6 +61,5 @@ object Pair {
     * @param {number} timestamp
     */
   /* static member */
-  @scala.inline
-  def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(pair.asInstanceOf[js.Any], collision.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(pair.asInstanceOf[js.Any], collision.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

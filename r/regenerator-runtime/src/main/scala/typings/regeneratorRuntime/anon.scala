@@ -33,21 +33,17 @@ object anon {
   }
   object ReadonlyCompletionRecord {
     
-    @scala.inline
-    def apply(arg: js.Any, `type`: CompletionType): ReadonlyCompletionRecord = {
+    inline def apply(arg: js.Any, `type`: CompletionType): ReadonlyCompletionRecord = {
       val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyCompletionRecord]
     }
     
-    @scala.inline
-    implicit class ReadonlyCompletionRecordMutableBuilder[Self <: ReadonlyCompletionRecord] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyCompletionRecord](x: Self) {
       
-      @scala.inline
-      def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: CompletionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CompletionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,41 +62,30 @@ object anon {
   }
   object readonlytryLocrootOmitTry {
     
-    @scala.inline
-    def apply(): readonlytryLocrootOmitTry = {
+    inline def apply(): readonlytryLocrootOmitTry = {
       val __obj = js.Dynamic.literal(tryLoc = "root")
       __obj.asInstanceOf[readonlytryLocrootOmitTry]
     }
     
-    @scala.inline
-    implicit class readonlytryLocrootOmitTryMutableBuilder[Self <: readonlytryLocrootOmitTry] (val x: Self) extends AnyVal {
+    extension [Self <: readonlytryLocrootOmitTry](x: Self) {
       
-      @scala.inline
-      def setAfterLoc(value: ContextLocation): Self = StObject.set(x, "afterLoc", value.asInstanceOf[js.Any])
+      inline def setAfterLoc(value: ContextLocation): Self = StObject.set(x, "afterLoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterLocUndefined: Self = StObject.set(x, "afterLoc", js.undefined)
+      inline def setAfterLocUndefined: Self = StObject.set(x, "afterLoc", js.undefined)
       
-      @scala.inline
-      def setCatchLoc(value: Double): Self = StObject.set(x, "catchLoc", value.asInstanceOf[js.Any])
+      inline def setCatchLoc(value: Double): Self = StObject.set(x, "catchLoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatchLocUndefined: Self = StObject.set(x, "catchLoc", js.undefined)
+      inline def setCatchLocUndefined: Self = StObject.set(x, "catchLoc", js.undefined)
       
-      @scala.inline
-      def setCompletion(value: CompletionRecord): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+      inline def setCompletion(value: CompletionRecord): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
+      inline def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
       
-      @scala.inline
-      def setFinallyLoc(value: Double): Self = StObject.set(x, "finallyLoc", value.asInstanceOf[js.Any])
+      inline def setFinallyLoc(value: Double): Self = StObject.set(x, "finallyLoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinallyLocUndefined: Self = StObject.set(x, "finallyLoc", js.undefined)
+      inline def setFinallyLocUndefined: Self = StObject.set(x, "finallyLoc", js.undefined)
       
-      @scala.inline
-      def setTryLoc(value: root): Self = StObject.set(x, "tryLoc", value.asInstanceOf[js.Any])
+      inline def setTryLoc(value: root): Self = StObject.set(x, "tryLoc", value.asInstanceOf[js.Any])
     }
   }
 }

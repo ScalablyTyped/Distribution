@@ -54,19 +54,14 @@ object splitMod {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def defaultTieBreaker[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTieBreaker")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
+  inline def defaultTieBreaker[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTieBreaker")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
   
-  @scala.inline
-  def makeExplicit[T](value: T): Explicit[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeExplicit")(value.asInstanceOf[js.Any]).asInstanceOf[Explicit[T]]
+  inline def makeExplicit[T](value: T): Explicit[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeExplicit")(value.asInstanceOf[js.Any]).asInstanceOf[Explicit[T]]
   
-  @scala.inline
-  def makeImplicit[T](value: T): Explicit[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeImplicit")(value.asInstanceOf[js.Any]).asInstanceOf[Explicit[T]]
+  inline def makeImplicit[T](value: T): Explicit[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeImplicit")(value.asInstanceOf[js.Any]).asInstanceOf[Explicit[T]]
   
-  @scala.inline
-  def mergeValuesWithExplicit[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeValuesWithExplicit")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
-  @scala.inline
-  def mergeValuesWithExplicit[S, T](
+  inline def mergeValuesWithExplicit[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeValuesWithExplicit")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
+  inline def mergeValuesWithExplicit[S, T](
     v1: Explicit[T],
     v2: Explicit[T],
     property: /* keyof S */ String,
@@ -80,8 +75,7 @@ object splitMod {
     ]
   ): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeValuesWithExplicit")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], tieBreaker.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
   
-  @scala.inline
-  def tieBreakByComparing[S, T](compare: js.Function2[/* v1 */ T, /* v2 */ T, Double]): js.Function4[
+  inline def tieBreakByComparing[S, T](compare: js.Function2[/* v1 */ T, /* v2 */ T, Double]): js.Function4[
     /* v1 */ Explicit[T], 
     /* v2 */ Explicit[T], 
     /* property */ (/* keyof S */ String) | scala.Nothing, 
@@ -103,20 +97,16 @@ object splitMod {
   }
   object Explicit {
     
-    @scala.inline
-    def apply[T](explicit: Boolean, value: T): Explicit[T] = {
+    inline def apply[T](explicit: Boolean, value: T): Explicit[T] = {
       val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Explicit[T]]
     }
     
-    @scala.inline
-    implicit class ExplicitMutableBuilder[Self <: Explicit[?], T] (val x: Self & Explicit[T]) extends AnyVal {
+    extension [Self <: Explicit[?], T](x: Self & Explicit[T]) {
       
-      @scala.inline
-      def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+      inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,16 +119,12 @@ object splitMod {
   trait SplitParentProperty extends StObject
   object SplitParentProperty {
     
-    @scala.inline
-    def _empty: typings.vegaLite.vegaLiteStrings._empty = "".asInstanceOf[typings.vegaLite.vegaLiteStrings._empty]
+    inline def _empty: typings.vegaLite.vegaLiteStrings._empty = "".asInstanceOf[typings.vegaLite.vegaLiteStrings._empty]
     
-    @scala.inline
-    def axis: typings.vegaLite.vegaLiteStrings.axis = "axis".asInstanceOf[typings.vegaLite.vegaLiteStrings.axis]
+    inline def axis: typings.vegaLite.vegaLiteStrings.axis = "axis".asInstanceOf[typings.vegaLite.vegaLiteStrings.axis]
     
-    @scala.inline
-    def legend: typings.vegaLite.vegaLiteStrings.legend = "legend".asInstanceOf[typings.vegaLite.vegaLiteStrings.legend]
+    inline def legend: typings.vegaLite.vegaLiteStrings.legend = "legend".asInstanceOf[typings.vegaLite.vegaLiteStrings.legend]
     
-    @scala.inline
-    def scale: typings.vegaLite.vegaLiteStrings.scale = "scale".asInstanceOf[typings.vegaLite.vegaLiteStrings.scale]
+    inline def scale: typings.vegaLite.vegaLiteStrings.scale = "scale".asInstanceOf[typings.vegaLite.vegaLiteStrings.scale]
   }
 }

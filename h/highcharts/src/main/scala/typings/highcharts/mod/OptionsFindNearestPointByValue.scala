@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsFindNearestPointByValue extends StObject
 object OptionsFindNearestPointByValue {
   
-  @scala.inline
-  def x: typings.highcharts.highchartsStrings.x = "x".asInstanceOf[typings.highcharts.highchartsStrings.x]
+  inline def x: typings.highcharts.highchartsStrings.x = "x".asInstanceOf[typings.highcharts.highchartsStrings.x]
   
-  @scala.inline
-  def xy: typings.highcharts.highchartsStrings.xy = "xy".asInstanceOf[typings.highcharts.highchartsStrings.xy]
+  inline def xy: typings.highcharts.highchartsStrings.xy = "xy".asInstanceOf[typings.highcharts.highchartsStrings.xy]
 }

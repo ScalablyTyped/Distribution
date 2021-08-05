@@ -13,22 +13,17 @@ trait DeleteVpcEndpointsResult extends StObject {
 }
 object DeleteVpcEndpointsResult {
   
-  @scala.inline
-  def apply(): DeleteVpcEndpointsResult = {
+  inline def apply(): DeleteVpcEndpointsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteVpcEndpointsResult]
   }
   
-  @scala.inline
-  implicit class DeleteVpcEndpointsResultMutableBuilder[Self <: DeleteVpcEndpointsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpcEndpointsResult](x: Self) {
     
-    @scala.inline
-    def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
+    inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
+    inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
   }
 }

@@ -14,26 +14,20 @@ object anon {
   }
   object Alphabet {
     
-    @scala.inline
-    def apply(): Alphabet = {
+    inline def apply(): Alphabet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Alphabet]
     }
     
-    @scala.inline
-    implicit class AlphabetMutableBuilder[Self <: Alphabet] (val x: Self) extends AnyVal {
+    extension [Self <: Alphabet](x: Self) {
       
-      @scala.inline
-      def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
+      inline def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphabetUndefined: Self = StObject.set(x, "alphabet", js.undefined)
+      inline def setAlphabetUndefined: Self = StObject.set(x, "alphabet", js.undefined)
       
-      @scala.inline
-      def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+      inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
+      inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
     }
   }
 }

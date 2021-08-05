@@ -10,12 +10,9 @@ object androidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAndroidSdkToolsVersion(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAndroidSdkToolsVersion")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def getAndroidSdkToolsVersion(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAndroidSdkToolsVersion")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  @scala.inline
-  def locateSDKHome(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("locateSDKHome")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def locateSDKHome(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("locateSDKHome")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  @scala.inline
-  def parseSDKVersion(contents: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSDKVersion")(contents.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def parseSDKVersion(contents: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSDKVersion")(contents.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
 }

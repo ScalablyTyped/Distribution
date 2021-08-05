@@ -13,16 +13,13 @@ trait ConfigureAgentResponse extends StObject {
 }
 object ConfigureAgentResponse {
   
-  @scala.inline
-  def apply(configuration: AgentConfiguration): ConfigureAgentResponse = {
+  inline def apply(configuration: AgentConfiguration): ConfigureAgentResponse = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureAgentResponse]
   }
   
-  @scala.inline
-  implicit class ConfigureAgentResponseMutableBuilder[Self <: ConfigureAgentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigureAgentResponse](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: AgentConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: AgentConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait Multihash extends StObject {
 }
 object Multihash {
   
-  @scala.inline
-  def apply(ctx: Print, multihash: js.Any, timeout: js.Any): Multihash = {
+  inline def apply(ctx: Print, multihash: js.Any, timeout: js.Any): Multihash = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], multihash = multihash.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Multihash]
   }
   
-  @scala.inline
-  implicit class MultihashMutableBuilder[Self <: Multihash] (val x: Self) extends AnyVal {
+  extension [Self <: Multihash](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultihash(value: js.Any): Self = StObject.set(x, "multihash", value.asInstanceOf[js.Any])
+    inline def setMultihash(value: js.Any): Self = StObject.set(x, "multihash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

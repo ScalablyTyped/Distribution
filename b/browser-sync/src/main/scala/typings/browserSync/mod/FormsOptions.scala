@@ -14,22 +14,17 @@ trait FormsOptions extends StObject {
 }
 object FormsOptions {
   
-  @scala.inline
-  def apply(inputs: Boolean, submit: Boolean, toggles: Boolean): FormsOptions = {
+  inline def apply(inputs: Boolean, submit: Boolean, toggles: Boolean): FormsOptions = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], toggles = toggles.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormsOptions]
   }
   
-  @scala.inline
-  implicit class FormsOptionsMutableBuilder[Self <: FormsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormsOptions](x: Self) {
     
-    @scala.inline
-    def setInputs(value: Boolean): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: Boolean): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: Boolean): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+    inline def setSubmit(value: Boolean): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggles(value: Boolean): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
+    inline def setToggles(value: Boolean): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
   }
 }

@@ -48,12 +48,12 @@ object syncTreeMod {
     /**
       * Recursive helper for applyOperationToSyncPoints_
       */
-    var applyOperationDescendantsHelper_ : js.Any = js.native
+    /* private */ var applyOperationDescendantsHelper_ : js.Any = js.native
     
     /**
       * Recursive helper for applyOperationToSyncPoints_
       */
-    var applyOperationHelper_ : js.Any = js.native
+    /* private */ var applyOperationHelper_ : js.Any = js.native
     
     /**
       * A helper method that visits all descendant and ancestor SyncPoints, applying the operation.
@@ -68,7 +68,7 @@ object syncTreeMod {
       *
       * - We concatenate all of the events returned by each SyncPoint and return the result.
       */
-    var applyOperationToSyncPoints_ : js.Any = js.native
+    /* private */ var applyOperationToSyncPoints_ : js.Any = js.native
     
     /**
       * Apply new server data to be merged in at the specified path.
@@ -94,7 +94,7 @@ object syncTreeMod {
     /**
       * A helper method to apply tagged operations
       */
-    var applyTaggedOperation_ : js.Any = js.native
+    /* private */ var applyTaggedOperation_ : js.Any = js.native
     
     /**
       * Apply server data to be merged in for the specified tagged query.
@@ -143,23 +143,23 @@ object syncTreeMod {
       * This collapses multiple unfiltered views into a single view, since we only need a single
       * listener for them.
       */
-    var collectDistinctViewsForSubTree_ : js.Any = js.native
+    /* private */ var collectDistinctViewsForSubTree_ : js.Any = js.native
     
-    var createListenerForView_ : js.Any = js.native
+    /* private */ var createListenerForView_ : js.Any = js.native
     
-    var listenProvider_ : js.Any = js.native
+    /* private */ var listenProvider_ : js.Any = js.native
     
     /**
       * A tree of all pending user writes (user-initiated set()'s, transaction()'s, update()'s, etc.).
       */
-    var pendingWriteTree_ : js.Any = js.native
+    /* private */ var pendingWriteTree_ : js.Any = js.native
     
     /**
       * Return the query associated with the given tag, if we have one
       */
-    var queryKeyForTag_ : js.Any = js.native
+    /* private */ var queryKeyForTag_ : js.Any = js.native
     
-    val queryToTagMap: js.Any = js.native
+    /* private */ val queryToTagMap: js.Any = js.native
     
     /**
       * Remove event callback(s).
@@ -176,26 +176,26 @@ object syncTreeMod {
     def removeEventRegistration(query: Query, eventRegistration: EventRegistration): js.Array[Event] = js.native
     def removeEventRegistration(query: Query, eventRegistration: EventRegistration, cancelError: Error): js.Array[Event] = js.native
     
-    var removeTags_ : js.Any = js.native
+    /* private */ var removeTags_ : js.Any = js.native
     
     /**
       * For a given new listen, manage the de-duplication of outstanding subscriptions.
       *
       * @return This method can return events to support synchronous data sources
       */
-    var setupListener_ : js.Any = js.native
+    /* private */ var setupListener_ : js.Any = js.native
     
     /**
       * Tree of SyncPoints.  There's a SyncPoint at any location that has 1 or more views.
       */
-    var syncPointTree_ : js.Any = js.native
+    /* private */ var syncPointTree_ : js.Any = js.native
     
     /**
       * Return the tag associated with the given query.
       */
-    var tagForQuery_ : js.Any = js.native
+    /* private */ var tagForQuery_ : js.Any = js.native
     
-    val tagToQueryMap: js.Any = js.native
+    /* private */ val tagToQueryMap: js.Any = js.native
   }
   /* static members */
   object SyncTree {
@@ -210,8 +210,7 @@ object syncTreeMod {
     @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.getNextQueryTag_")
     @js.native
     def getNextQueryTag_ : js.Any = js.native
-    @scala.inline
-    def getNextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getNextQueryTag_")(x.asInstanceOf[js.Any])
+    inline def getNextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getNextQueryTag_")(x.asInstanceOf[js.Any])
     
     /**
       * Given a query, computes a "queryKey" suitable for use in our queryToTagMap_.
@@ -219,8 +218,7 @@ object syncTreeMod {
     @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.makeQueryKey_")
     @js.native
     def makeQueryKey_ : js.Any = js.native
-    @scala.inline
-    def makeQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeQueryKey_")(x.asInstanceOf[js.Any])
+    inline def makeQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeQueryKey_")(x.asInstanceOf[js.Any])
     
     /**
       * Static tracker for next query tag.
@@ -228,8 +226,7 @@ object syncTreeMod {
     @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.nextQueryTag_")
     @js.native
     def nextQueryTag_ : js.Any = js.native
-    @scala.inline
-    def nextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextQueryTag_")(x.asInstanceOf[js.Any])
+    inline def nextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextQueryTag_")(x.asInstanceOf[js.Any])
     
     /**
       * Given a queryKey (created by makeQueryKey), parse it back into a path and queryId.
@@ -237,8 +234,7 @@ object syncTreeMod {
     @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.parseQueryKey_")
     @js.native
     def parseQueryKey_ : js.Any = js.native
-    @scala.inline
-    def parseQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseQueryKey_")(x.asInstanceOf[js.Any])
+    inline def parseQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseQueryKey_")(x.asInstanceOf[js.Any])
     
     /**
       * Normalizes a query to a query we send the server for listening
@@ -248,8 +244,7 @@ object syncTreeMod {
     @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.queryForListening_")
     @js.native
     def queryForListening_ : js.Any = js.native
-    @scala.inline
-    def queryForListening__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryForListening_")(x.asInstanceOf[js.Any])
+    inline def queryForListening__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryForListening_")(x.asInstanceOf[js.Any])
   }
   
   @js.native

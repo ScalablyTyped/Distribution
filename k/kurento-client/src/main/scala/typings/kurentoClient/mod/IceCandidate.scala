@@ -14,22 +14,17 @@ trait IceCandidate extends StObject {
 }
 object IceCandidate {
   
-  @scala.inline
-  def apply(candidate: String, sdpMLineIndex: Double, sdpMid: String): IceCandidate = {
+  inline def apply(candidate: String, sdpMLineIndex: Double, sdpMid: String): IceCandidate = {
     val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], sdpMLineIndex = sdpMLineIndex.asInstanceOf[js.Any], sdpMid = sdpMid.asInstanceOf[js.Any])
     __obj.asInstanceOf[IceCandidate]
   }
   
-  @scala.inline
-  implicit class IceCandidateMutableBuilder[Self <: IceCandidate] (val x: Self) extends AnyVal {
+  extension [Self <: IceCandidate](x: Self) {
     
-    @scala.inline
-    def setCandidate(value: String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
+    inline def setCandidate(value: String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdpMLineIndex(value: Double): Self = StObject.set(x, "sdpMLineIndex", value.asInstanceOf[js.Any])
+    inline def setSdpMLineIndex(value: Double): Self = StObject.set(x, "sdpMLineIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdpMid(value: String): Self = StObject.set(x, "sdpMid", value.asInstanceOf[js.Any])
+    inline def setSdpMid(value: String): Self = StObject.set(x, "sdpMid", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait GetTransitGatewayRouteTablePropagationsResult extends StObject {
 }
 object GetTransitGatewayRouteTablePropagationsResult {
   
-  @scala.inline
-  def apply(): GetTransitGatewayRouteTablePropagationsResult = {
+  inline def apply(): GetTransitGatewayRouteTablePropagationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTransitGatewayRouteTablePropagationsResult]
   }
   
-  @scala.inline
-  implicit class GetTransitGatewayRouteTablePropagationsResultMutableBuilder[Self <: GetTransitGatewayRouteTablePropagationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetTransitGatewayRouteTablePropagationsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRouteTablePropagations(value: TransitGatewayRouteTablePropagationList): Self = StObject.set(x, "TransitGatewayRouteTablePropagations", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTablePropagations(value: TransitGatewayRouteTablePropagationList): Self = StObject.set(x, "TransitGatewayRouteTablePropagations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTablePropagationsUndefined: Self = StObject.set(x, "TransitGatewayRouteTablePropagations", js.undefined)
+    inline def setTransitGatewayRouteTablePropagationsUndefined: Self = StObject.set(x, "TransitGatewayRouteTablePropagations", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRouteTablePropagationsVarargs(value: TransitGatewayRouteTablePropagation*): Self = StObject.set(x, "TransitGatewayRouteTablePropagations", js.Array(value :_*))
+    inline def setTransitGatewayRouteTablePropagationsVarargs(value: TransitGatewayRouteTablePropagation*): Self = StObject.set(x, "TransitGatewayRouteTablePropagations", js.Array(value :_*))
   }
 }

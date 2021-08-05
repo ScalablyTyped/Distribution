@@ -35,25 +35,19 @@ trait SchemaInstanceGroupManagersResizeAdvancedRequest extends StObject {
 }
 object SchemaInstanceGroupManagersResizeAdvancedRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersResizeAdvancedRequest = {
+  inline def apply(): SchemaInstanceGroupManagersResizeAdvancedRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersResizeAdvancedRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersResizeAdvancedRequestMutableBuilder[Self <: SchemaInstanceGroupManagersResizeAdvancedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersResizeAdvancedRequest](x: Self) {
     
-    @scala.inline
-    def setNoCreationRetries(value: Boolean): Self = StObject.set(x, "noCreationRetries", value.asInstanceOf[js.Any])
+    inline def setNoCreationRetries(value: Boolean): Self = StObject.set(x, "noCreationRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCreationRetriesUndefined: Self = StObject.set(x, "noCreationRetries", js.undefined)
+    inline def setNoCreationRetriesUndefined: Self = StObject.set(x, "noCreationRetries", js.undefined)
     
-    @scala.inline
-    def setTargetSize(value: Double): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
+    inline def setTargetSize(value: Double): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSizeUndefined: Self = StObject.set(x, "targetSize", js.undefined)
+    inline def setTargetSizeUndefined: Self = StObject.set(x, "targetSize", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait OnExternalPlaybackChangeData extends StObject {
 }
 object OnExternalPlaybackChangeData {
   
-  @scala.inline
-  def apply(isExternalPlaybackActive: Boolean): OnExternalPlaybackChangeData = {
+  inline def apply(isExternalPlaybackActive: Boolean): OnExternalPlaybackChangeData = {
     val __obj = js.Dynamic.literal(isExternalPlaybackActive = isExternalPlaybackActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnExternalPlaybackChangeData]
   }
   
-  @scala.inline
-  implicit class OnExternalPlaybackChangeDataMutableBuilder[Self <: OnExternalPlaybackChangeData] (val x: Self) extends AnyVal {
+  extension [Self <: OnExternalPlaybackChangeData](x: Self) {
     
-    @scala.inline
-    def setIsExternalPlaybackActive(value: Boolean): Self = StObject.set(x, "isExternalPlaybackActive", value.asInstanceOf[js.Any])
+    inline def setIsExternalPlaybackActive(value: Boolean): Self = StObject.set(x, "isExternalPlaybackActive", value.asInstanceOf[js.Any])
   }
 }

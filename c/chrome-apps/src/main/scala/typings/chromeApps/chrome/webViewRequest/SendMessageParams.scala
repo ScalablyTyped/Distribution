@@ -14,16 +14,13 @@ trait SendMessageParams extends StObject {
 }
 object SendMessageParams {
   
-  @scala.inline
-  def apply(message: String): SendMessageParams = {
+  inline def apply(message: String): SendMessageParams = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessageParams]
   }
   
-  @scala.inline
-  implicit class SendMessageParamsMutableBuilder[Self <: SendMessageParams] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageParams](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

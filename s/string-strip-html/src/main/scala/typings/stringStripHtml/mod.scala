@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String): Output = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Output]
-  @scala.inline
-  def apply(str: String, originalOpts: Options): Output = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], originalOpts.asInstanceOf[js.Any])).asInstanceOf[Output]
+  inline def apply(str: String): Output = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Output]
+  inline def apply(str: String, originalOpts: Options): Output = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], originalOpts.asInstanceOf[js.Any])).asInstanceOf[Output]
   
   @JSImport("string-strip-html", JSImport.Namespace)
   @js.native
@@ -43,8 +41,7 @@ object mod {
   }
   object CallbackInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deleteFrom: Double,
       deleteTo: Double,
       insert: String,
@@ -56,26 +53,19 @@ object mod {
       __obj.asInstanceOf[CallbackInput]
     }
     
-    @scala.inline
-    implicit class CallbackInputMutableBuilder[Self <: CallbackInput] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackInput](x: Self) {
       
-      @scala.inline
-      def setDeleteFrom(value: Double): Self = StObject.set(x, "deleteFrom", value.asInstanceOf[js.Any])
+      inline def setDeleteFrom(value: Double): Self = StObject.set(x, "deleteFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteTo(value: Double): Self = StObject.set(x, "deleteTo", value.asInstanceOf[js.Any])
+      inline def setDeleteTo(value: Double): Self = StObject.set(x, "deleteTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsert(value: String): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: String): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProposedReturn(value: js.Tuple3[Double, Double, js.UndefOr[String]]): Self = StObject.set(x, "proposedReturn", value.asInstanceOf[js.Any])
+      inline def setProposedReturn(value: js.Tuple3[Double, Double, js.UndefOr[String]]): Self = StObject.set(x, "proposedReturn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangesArr(value: Range): Self = StObject.set(x, "rangesArr", value.asInstanceOf[js.Any])
+      inline def setRangesArr(value: Range): Self = StObject.set(x, "rangesArr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,38 +100,28 @@ object mod {
   }
   object DumpLinkHrefsNearby {
     
-    @scala.inline
-    def apply(): DumpLinkHrefsNearby = {
+    inline def apply(): DumpLinkHrefsNearby = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DumpLinkHrefsNearby]
     }
     
-    @scala.inline
-    implicit class DumpLinkHrefsNearbyMutableBuilder[Self <: DumpLinkHrefsNearby] (val x: Self) extends AnyVal {
+    extension [Self <: DumpLinkHrefsNearby](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setPutOnNewLine(value: Boolean): Self = StObject.set(x, "putOnNewLine", value.asInstanceOf[js.Any])
+      inline def setPutOnNewLine(value: Boolean): Self = StObject.set(x, "putOnNewLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPutOnNewLineUndefined: Self = StObject.set(x, "putOnNewLine", js.undefined)
+      inline def setPutOnNewLineUndefined: Self = StObject.set(x, "putOnNewLine", js.undefined)
       
-      @scala.inline
-      def setWrapHeads(value: String): Self = StObject.set(x, "wrapHeads", value.asInstanceOf[js.Any])
+      inline def setWrapHeads(value: String): Self = StObject.set(x, "wrapHeads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapHeadsUndefined: Self = StObject.set(x, "wrapHeads", js.undefined)
+      inline def setWrapHeadsUndefined: Self = StObject.set(x, "wrapHeads", js.undefined)
       
-      @scala.inline
-      def setWrapTails(value: String): Self = StObject.set(x, "wrapTails", value.asInstanceOf[js.Any])
+      inline def setWrapTails(value: String): Self = StObject.set(x, "wrapTails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapTailsUndefined: Self = StObject.set(x, "wrapTails", js.undefined)
+      inline def setWrapTailsUndefined: Self = StObject.set(x, "wrapTails", js.undefined)
     }
   }
   
@@ -151,17 +131,14 @@ object mod {
   }
   object Log {
     
-    @scala.inline
-    def apply(timeTakenInMilliseconds: Double): Log = {
+    inline def apply(timeTakenInMilliseconds: Double): Log = {
       val __obj = js.Dynamic.literal(timeTakenInMilliseconds = timeTakenInMilliseconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[Log]
     }
     
-    @scala.inline
-    implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+    extension [Self <: Log](x: Self) {
       
-      @scala.inline
-      def setTimeTakenInMilliseconds(value: Double): Self = StObject.set(x, "timeTakenInMilliseconds", value.asInstanceOf[js.Any])
+      inline def setTimeTakenInMilliseconds(value: Double): Self = StObject.set(x, "timeTakenInMilliseconds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,65 +172,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCb(value: /* input */ CallbackInput => Unit | Null | `false`): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
+      inline def setCb(value: /* input */ CallbackInput => Unit | Null | `false`): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
+      inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
       
-      @scala.inline
-      def setDumpLinkHrefsNearby(value: DumpLinkHrefsNearby | `false`): Self = StObject.set(x, "dumpLinkHrefsNearby", value.asInstanceOf[js.Any])
+      inline def setDumpLinkHrefsNearby(value: DumpLinkHrefsNearby | `false`): Self = StObject.set(x, "dumpLinkHrefsNearby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDumpLinkHrefsNearbyUndefined: Self = StObject.set(x, "dumpLinkHrefsNearby", js.undefined)
+      inline def setDumpLinkHrefsNearbyUndefined: Self = StObject.set(x, "dumpLinkHrefsNearby", js.undefined)
       
-      @scala.inline
-      def setIgnoreTags(value: js.Array[String]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
+      inline def setIgnoreTags(value: js.Array[String]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTagsUndefined: Self = StObject.set(x, "ignoreTags", js.undefined)
+      inline def setIgnoreTagsUndefined: Self = StObject.set(x, "ignoreTags", js.undefined)
       
-      @scala.inline
-      def setIgnoreTagsVarargs(value: String*): Self = StObject.set(x, "ignoreTags", js.Array(value :_*))
+      inline def setIgnoreTagsVarargs(value: String*): Self = StObject.set(x, "ignoreTags", js.Array(value :_*))
       
-      @scala.inline
-      def setOnlyStripTags(value: js.Array[String]): Self = StObject.set(x, "onlyStripTags", value.asInstanceOf[js.Any])
+      inline def setOnlyStripTags(value: js.Array[String]): Self = StObject.set(x, "onlyStripTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyStripTagsUndefined: Self = StObject.set(x, "onlyStripTags", js.undefined)
+      inline def setOnlyStripTagsUndefined: Self = StObject.set(x, "onlyStripTags", js.undefined)
       
-      @scala.inline
-      def setOnlyStripTagsVarargs(value: String*): Self = StObject.set(x, "onlyStripTags", js.Array(value :_*))
+      inline def setOnlyStripTagsVarargs(value: String*): Self = StObject.set(x, "onlyStripTags", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipHtmlDecoding(value: Boolean): Self = StObject.set(x, "skipHtmlDecoding", value.asInstanceOf[js.Any])
+      inline def setSkipHtmlDecoding(value: Boolean): Self = StObject.set(x, "skipHtmlDecoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipHtmlDecodingUndefined: Self = StObject.set(x, "skipHtmlDecoding", js.undefined)
+      inline def setSkipHtmlDecodingUndefined: Self = StObject.set(x, "skipHtmlDecoding", js.undefined)
       
-      @scala.inline
-      def setStripTogetherWithTheirContents(value: js.Array[String] | `false`): Self = StObject.set(x, "stripTogetherWithTheirContents", value.asInstanceOf[js.Any])
+      inline def setStripTogetherWithTheirContents(value: js.Array[String] | `false`): Self = StObject.set(x, "stripTogetherWithTheirContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripTogetherWithTheirContentsUndefined: Self = StObject.set(x, "stripTogetherWithTheirContents", js.undefined)
+      inline def setStripTogetherWithTheirContentsUndefined: Self = StObject.set(x, "stripTogetherWithTheirContents", js.undefined)
       
-      @scala.inline
-      def setStripTogetherWithTheirContentsVarargs(value: String*): Self = StObject.set(x, "stripTogetherWithTheirContents", js.Array(value :_*))
+      inline def setStripTogetherWithTheirContentsVarargs(value: String*): Self = StObject.set(x, "stripTogetherWithTheirContents", js.Array(value :_*))
       
-      @scala.inline
-      def setTrimOnlySpaces(value: Boolean): Self = StObject.set(x, "trimOnlySpaces", value.asInstanceOf[js.Any])
+      inline def setTrimOnlySpaces(value: Boolean): Self = StObject.set(x, "trimOnlySpaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimOnlySpacesUndefined: Self = StObject.set(x, "trimOnlySpaces", js.undefined)
+      inline def setTrimOnlySpacesUndefined: Self = StObject.set(x, "trimOnlySpaces", js.undefined)
     }
   }
   
@@ -293,8 +251,7 @@ object mod {
   }
   object Output {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allTagLocations: js.Array[js.Tuple2[Double, Double]],
       filteredTagLocations: js.Array[js.Tuple2[Double, Double]],
       log: Log,
@@ -304,35 +261,25 @@ object mod {
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setAllTagLocations(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "allTagLocations", value.asInstanceOf[js.Any])
+      inline def setAllTagLocations(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "allTagLocations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllTagLocationsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "allTagLocations", js.Array(value :_*))
+      inline def setAllTagLocationsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "allTagLocations", js.Array(value :_*))
       
-      @scala.inline
-      def setFilteredTagLocations(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "filteredTagLocations", value.asInstanceOf[js.Any])
+      inline def setFilteredTagLocations(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "filteredTagLocations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredTagLocationsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "filteredTagLocations", js.Array(value :_*))
+      inline def setFilteredTagLocationsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "filteredTagLocations", js.Array(value :_*))
       
-      @scala.inline
-      def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRanges(value: js.Array[js.Tuple3[Double, Double, js.UndefOr[String]]]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+      inline def setRanges(value: js.Array[js.Tuple3[Double, Double, js.UndefOr[String]]]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangesNull: Self = StObject.set(x, "ranges", null)
+      inline def setRangesNull: Self = StObject.set(x, "ranges", null)
       
-      @scala.inline
-      def setRangesVarargs(value: (js.Tuple3[Double, Double, js.UndefOr[String]])*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: (js.Tuple3[Double, Double, js.UndefOr[String]])*): Self = StObject.set(x, "ranges", js.Array(value :_*))
       
-      @scala.inline
-      def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,17 +289,14 @@ object mod {
   }
   object Range {
     
-    @scala.inline
-    def apply(opts: LimitLinebreaksCount): Range = {
+    inline def apply(opts: LimitLinebreaksCount): Range = {
       val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setOpts(value: LimitLinebreaksCount): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: LimitLinebreaksCount): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -380,8 +324,7 @@ object mod {
   }
   object Tag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[TagAttribute],
       lastClosingBracketAt: Double,
       lastOpeningBracketAt: Double,
@@ -397,41 +340,29 @@ object mod {
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[TagAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[TagAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: TagAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: TagAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setLastClosingBracketAt(value: Double): Self = StObject.set(x, "lastClosingBracketAt", value.asInstanceOf[js.Any])
+      inline def setLastClosingBracketAt(value: Double): Self = StObject.set(x, "lastClosingBracketAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastOpeningBracketAt(value: Double): Self = StObject.set(x, "lastOpeningBracketAt", value.asInstanceOf[js.Any])
+      inline def setLastOpeningBracketAt(value: Double): Self = StObject.set(x, "lastOpeningBracketAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftOuterWhitespace(value: Double): Self = StObject.set(x, "leftOuterWhitespace", value.asInstanceOf[js.Any])
+      inline def setLeftOuterWhitespace(value: Double): Self = StObject.set(x, "leftOuterWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameContainsLetters(value: Boolean): Self = StObject.set(x, "nameContainsLetters", value.asInstanceOf[js.Any])
+      inline def setNameContainsLetters(value: Boolean): Self = StObject.set(x, "nameContainsLetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameEnds(value: Double): Self = StObject.set(x, "nameEnds", value.asInstanceOf[js.Any])
+      inline def setNameEnds(value: Double): Self = StObject.set(x, "nameEnds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameStarts(value: Double): Self = StObject.set(x, "nameStarts", value.asInstanceOf[js.Any])
+      inline def setNameStarts(value: Double): Self = StObject.set(x, "nameStarts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyPlausible(value: Boolean): Self = StObject.set(x, "onlyPlausible", value.asInstanceOf[js.Any])
+      inline def setOnlyPlausible(value: Boolean): Self = StObject.set(x, "onlyPlausible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashPresent(value: Boolean): Self = StObject.set(x, "slashPresent", value.asInstanceOf[js.Any])
+      inline def setSlashPresent(value: Boolean): Self = StObject.set(x, "slashPresent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -453,8 +384,7 @@ object mod {
   }
   object TagAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       equalsAt: Double,
       name: String,
       nameEnds: Double,
@@ -467,29 +397,21 @@ object mod {
       __obj.asInstanceOf[TagAttribute]
     }
     
-    @scala.inline
-    implicit class TagAttributeMutableBuilder[Self <: TagAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: TagAttribute](x: Self) {
       
-      @scala.inline
-      def setEqualsAt(value: Double): Self = StObject.set(x, "equalsAt", value.asInstanceOf[js.Any])
+      inline def setEqualsAt(value: Double): Self = StObject.set(x, "equalsAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameEnds(value: Double): Self = StObject.set(x, "nameEnds", value.asInstanceOf[js.Any])
+      inline def setNameEnds(value: Double): Self = StObject.set(x, "nameEnds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameStarts(value: Double): Self = StObject.set(x, "nameStarts", value.asInstanceOf[js.Any])
+      inline def setNameStarts(value: Double): Self = StObject.set(x, "nameStarts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueEnds(value: Double): Self = StObject.set(x, "valueEnds", value.asInstanceOf[js.Any])
+      inline def setValueEnds(value: Double): Self = StObject.set(x, "valueEnds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueStarts(value: Double): Self = StObject.set(x, "valueStarts", value.asInstanceOf[js.Any])
+      inline def setValueStarts(value: Double): Self = StObject.set(x, "valueStarts", value.asInstanceOf[js.Any])
     }
   }
 }

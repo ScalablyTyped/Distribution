@@ -32,24 +32,18 @@ object mod {
     * @param encodedPuml The encoded PlantUML code that should be decoded.
     * @returns The decoded PlantUML code.
     */
-  @scala.inline
-  def decode(encodedPuml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(encodedPuml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(encodedPuml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(encodedPuml.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Encodes PlantUML code.
     * @param puml The PlantUML code that should be encoded.
     * @returns The encoded PlantUML code.
     */
-  @scala.inline
-  def encode(puml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(puml: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(puml: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(puml: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(puml: DataView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(puml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(puml: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(puml: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(puml: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(puml: DataView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(puml.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Union type for possible typed arrays.

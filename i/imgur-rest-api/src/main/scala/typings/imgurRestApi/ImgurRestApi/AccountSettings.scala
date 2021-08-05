@@ -27,8 +27,7 @@ trait AccountSettings extends StObject {
 }
 object AccountSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accepted_gallery_terms: Boolean,
     active_emails: js.Array[String],
     album_privacy: String,
@@ -43,40 +42,28 @@ object AccountSettings {
     __obj.asInstanceOf[AccountSettings]
   }
   
-  @scala.inline
-  implicit class AccountSettingsMutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSettings](x: Self) {
     
-    @scala.inline
-    def setAccepted_gallery_terms(value: Boolean): Self = StObject.set(x, "accepted_gallery_terms", value.asInstanceOf[js.Any])
+    inline def setAccepted_gallery_terms(value: Boolean): Self = StObject.set(x, "accepted_gallery_terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActive_emails(value: js.Array[String]): Self = StObject.set(x, "active_emails", value.asInstanceOf[js.Any])
+    inline def setActive_emails(value: js.Array[String]): Self = StObject.set(x, "active_emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActive_emailsVarargs(value: String*): Self = StObject.set(x, "active_emails", js.Array(value :_*))
+    inline def setActive_emailsVarargs(value: String*): Self = StObject.set(x, "active_emails", js.Array(value :_*))
     
-    @scala.inline
-    def setAlbum_privacy(value: String): Self = StObject.set(x, "album_privacy", value.asInstanceOf[js.Any])
+    inline def setAlbum_privacy(value: String): Self = StObject.set(x, "album_privacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocked_users(value: js.Array[BlockedUser]): Self = StObject.set(x, "blocked_users", value.asInstanceOf[js.Any])
+    inline def setBlocked_users(value: js.Array[BlockedUser]): Self = StObject.set(x, "blocked_users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocked_usersVarargs(value: BlockedUser*): Self = StObject.set(x, "blocked_users", js.Array(value :_*))
+    inline def setBlocked_usersVarargs(value: BlockedUser*): Self = StObject.set(x, "blocked_users", js.Array(value :_*))
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHigh_quality(value: Boolean): Self = StObject.set(x, "high_quality", value.asInstanceOf[js.Any])
+    inline def setHigh_quality(value: Boolean): Self = StObject.set(x, "high_quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessaging_enabled(value: Boolean): Self = StObject.set(x, "messaging_enabled", value.asInstanceOf[js.Any])
+    inline def setMessaging_enabled(value: Boolean): Self = StObject.set(x, "messaging_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPro_expiration(value: js.Any): Self = StObject.set(x, "pro_expiration", value.asInstanceOf[js.Any])
+    inline def setPro_expiration(value: js.Any): Self = StObject.set(x, "pro_expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic_images(value: Boolean): Self = StObject.set(x, "public_images", value.asInstanceOf[js.Any])
+    inline def setPublic_images(value: Boolean): Self = StObject.set(x, "public_images", value.asInstanceOf[js.Any])
   }
 }

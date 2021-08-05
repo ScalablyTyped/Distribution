@@ -10,16 +10,13 @@ trait BaseProviderOptions extends StObject {
 }
 object BaseProviderOptions {
   
-  @scala.inline
-  def apply(provider: Providers): BaseProviderOptions = {
+  inline def apply(provider: Providers): BaseProviderOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProviderOptions]
   }
   
-  @scala.inline
-  implicit class BaseProviderOptionsMutableBuilder[Self <: BaseProviderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseProviderOptions](x: Self) {
     
-    @scala.inline
-    def setProvider(value: Providers): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Providers): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
   }
 }

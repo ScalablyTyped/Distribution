@@ -31,8 +31,7 @@ trait XWindowListener
 }
 object XWindowListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -46,19 +45,14 @@ object XWindowListener {
     __obj.asInstanceOf[XWindowListener]
   }
   
-  @scala.inline
-  implicit class XWindowListenerMutableBuilder[Self <: XWindowListener] (val x: Self) extends AnyVal {
+  extension [Self <: XWindowListener](x: Self) {
     
-    @scala.inline
-    def setWindowHidden(value: EventObject => Unit): Self = StObject.set(x, "windowHidden", js.Any.fromFunction1(value))
+    inline def setWindowHidden(value: EventObject => Unit): Self = StObject.set(x, "windowHidden", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowMoved(value: WindowEvent => Unit): Self = StObject.set(x, "windowMoved", js.Any.fromFunction1(value))
+    inline def setWindowMoved(value: WindowEvent => Unit): Self = StObject.set(x, "windowMoved", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowResized(value: WindowEvent => Unit): Self = StObject.set(x, "windowResized", js.Any.fromFunction1(value))
+    inline def setWindowResized(value: WindowEvent => Unit): Self = StObject.set(x, "windowResized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowShown(value: EventObject => Unit): Self = StObject.set(x, "windowShown", js.Any.fromFunction1(value))
+    inline def setWindowShown(value: EventObject => Unit): Self = StObject.set(x, "windowShown", js.Any.fromFunction1(value))
   }
 }

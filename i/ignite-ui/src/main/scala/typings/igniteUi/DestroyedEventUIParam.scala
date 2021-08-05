@@ -13,19 +13,15 @@ trait DestroyedEventUIParam extends StObject {
 }
 object DestroyedEventUIParam {
   
-  @scala.inline
-  def apply(): DestroyedEventUIParam = {
+  inline def apply(): DestroyedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestroyedEventUIParam]
   }
   
-  @scala.inline
-  implicit class DestroyedEventUIParamMutableBuilder[Self <: DestroyedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DestroyedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

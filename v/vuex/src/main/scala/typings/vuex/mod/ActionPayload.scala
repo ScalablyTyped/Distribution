@@ -12,17 +12,14 @@ trait ActionPayload
 }
 object ActionPayload {
   
-  @scala.inline
-  def apply(payload: js.Any, `type`: String): ActionPayload = {
+  inline def apply(payload: js.Any, `type`: String): ActionPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionPayload]
   }
   
-  @scala.inline
-  implicit class ActionPayloadMutableBuilder[Self <: ActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ActionPayload](x: Self) {
     
-    @scala.inline
-    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

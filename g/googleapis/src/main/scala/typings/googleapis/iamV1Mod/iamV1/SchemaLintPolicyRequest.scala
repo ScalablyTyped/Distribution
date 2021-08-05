@@ -51,43 +51,31 @@ trait SchemaLintPolicyRequest extends StObject {
 }
 object SchemaLintPolicyRequest {
   
-  @scala.inline
-  def apply(): SchemaLintPolicyRequest = {
+  inline def apply(): SchemaLintPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLintPolicyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaLintPolicyRequestMutableBuilder[Self <: SchemaLintPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLintPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setBinding(value: SchemaBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: SchemaBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+    inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
-    @scala.inline
-    def setCondition(value: SchemaExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: SchemaExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setContext(value: StringDictionary[js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: StringDictionary[js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+    inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+    inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: SchemaPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: SchemaPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

@@ -20,17 +20,14 @@ object typesUpdateRepositoryNameOutputMod {
   }
   object UpdateRepositoryNameOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateRepositoryNameOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateRepositoryNameOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateRepositoryNameOutput]
     }
     
-    @scala.inline
-    implicit class UpdateRepositoryNameOutputMutableBuilder[Self <: UpdateRepositoryNameOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateRepositoryNameOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

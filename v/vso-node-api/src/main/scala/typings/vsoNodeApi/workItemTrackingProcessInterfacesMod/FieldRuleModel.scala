@@ -20,8 +20,7 @@ trait FieldRuleModel extends StObject {
 }
 object FieldRuleModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: js.Array[RuleActionModel],
     conditions: js.Array[RuleConditionModel],
     friendlyName: String,
@@ -33,31 +32,22 @@ object FieldRuleModel {
     __obj.asInstanceOf[FieldRuleModel]
   }
   
-  @scala.inline
-  implicit class FieldRuleModelMutableBuilder[Self <: FieldRuleModel] (val x: Self) extends AnyVal {
+  extension [Self <: FieldRuleModel](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[RuleActionModel]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[RuleActionModel]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: RuleActionModel*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: RuleActionModel*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setConditions(value: js.Array[RuleConditionModel]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[RuleConditionModel]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: RuleConditionModel*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: RuleConditionModel*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
+    inline def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
   }
 }

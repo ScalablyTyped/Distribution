@@ -52,28 +52,21 @@ trait BitmapFont extends StObject {
 }
 object BitmapFont {
   
-  @scala.inline
-  def apply(chars: js.Any, destroy: () => Unit, font: String, lineHeight: Double, size: Double): BitmapFont = {
+  inline def apply(chars: js.Any, destroy: () => Unit, font: String, lineHeight: Double, size: Double): BitmapFont = {
     val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), font = font.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapFont]
   }
   
-  @scala.inline
-  implicit class BitmapFontMutableBuilder[Self <: BitmapFont] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapFont](x: Self) {
     
-    @scala.inline
-    def setChars(value: js.Any): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+    inline def setChars(value: js.Any): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

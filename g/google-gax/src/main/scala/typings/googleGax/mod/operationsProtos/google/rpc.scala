@@ -36,10 +36,8 @@ object rpc {
       * @returns Status instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    @scala.inline
-    def create(properties: IStatus): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def create(): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def create(properties: IStatus): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
     /**
       * Decodes a Status message from the specified reader or buffer.
@@ -50,14 +48,10 @@ object rpc {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.rpc.Status = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.rpc.Status = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def decode(reader: Reader): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.rpc.Status = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.rpc.Status = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
     /**
       * Decodes a Status message from the specified reader or buffer, length delimited.
@@ -67,10 +61,8 @@ object rpc {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
     /**
       * Encodes the specified Status message. Does not implicitly {@link google.rpc.Status.verify|verify} messages.
@@ -79,10 +71,8 @@ object rpc {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IStatus): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IStatus, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IStatus): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IStatus, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Status message, length delimited. Does not implicitly {@link google.rpc.Status.verify|verify} messages.
@@ -91,10 +81,8 @@ object rpc {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IStatus): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IStatus, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IStatus): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IStatus, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Status message from a plain object. Also converts values to their respective internal types.
@@ -102,8 +90,7 @@ object rpc {
       * @returns Status
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
     /**
       * Creates a plain object from a Status message. Also converts values to other types if specified.
@@ -112,10 +99,8 @@ object rpc {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleGax.operationsMod.google.rpc.Status): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: typings.googleGax.operationsMod.google.rpc.Status, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.rpc.Status): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.rpc.Status, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Status message.
@@ -123,7 +108,6 @@ object rpc {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
 }

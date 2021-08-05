@@ -20,23 +20,18 @@ object ram {
   }
   object GetResourceShareFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetResourceShareFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetResourceShareFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetResourceShareFilter]
     }
     
-    @scala.inline
-    implicit class GetResourceShareFilterMutableBuilder[Self <: GetResourceShareFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetResourceShareFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

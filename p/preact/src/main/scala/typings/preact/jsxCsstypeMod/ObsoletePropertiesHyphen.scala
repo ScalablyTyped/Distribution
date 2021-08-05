@@ -1050,589 +1050,395 @@ trait ObsoletePropertiesHyphen[TLength] extends StObject {
 }
 object ObsoletePropertiesHyphen {
   
-  @scala.inline
-  def apply[TLength](): ObsoletePropertiesHyphen[TLength] = {
+  inline def apply[TLength](): ObsoletePropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObsoletePropertiesHyphen[TLength]]
   }
   
-  @scala.inline
-  implicit class ObsoletePropertiesHyphenMutableBuilder[Self <: ObsoletePropertiesHyphen[?], TLength] (val x: Self & ObsoletePropertiesHyphen[TLength]) extends AnyVal {
+  extension [Self <: ObsoletePropertiesHyphen[?], TLength](x: Self & ObsoletePropertiesHyphen[TLength]) {
     
-    @scala.inline
-    def `set-khtml-box-align`(value: BoxAlignProperty): Self = StObject.set(x, "-khtml-box-align", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-align`(value: BoxAlignProperty): Self = StObject.set(x, "-khtml-box-align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-alignUndefined`: Self = StObject.set(x, "-khtml-box-align", js.undefined)
+    inline def `set-khtml-box-alignUndefined`: Self = StObject.set(x, "-khtml-box-align", js.undefined)
     
-    @scala.inline
-    def `set-khtml-box-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "-khtml-box-direction", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "-khtml-box-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-directionUndefined`: Self = StObject.set(x, "-khtml-box-direction", js.undefined)
+    inline def `set-khtml-box-directionUndefined`: Self = StObject.set(x, "-khtml-box-direction", js.undefined)
     
-    @scala.inline
-    def `set-khtml-box-flex`(value: GlobalsNumber): Self = StObject.set(x, "-khtml-box-flex", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-flex`(value: GlobalsNumber): Self = StObject.set(x, "-khtml-box-flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-flex-group`(value: GlobalsNumber): Self = StObject.set(x, "-khtml-box-flex-group", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-flex-group`(value: GlobalsNumber): Self = StObject.set(x, "-khtml-box-flex-group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-flex-groupUndefined`: Self = StObject.set(x, "-khtml-box-flex-group", js.undefined)
+    inline def `set-khtml-box-flex-groupUndefined`: Self = StObject.set(x, "-khtml-box-flex-group", js.undefined)
     
-    @scala.inline
-    def `set-khtml-box-flexUndefined`: Self = StObject.set(x, "-khtml-box-flex", js.undefined)
+    inline def `set-khtml-box-flexUndefined`: Self = StObject.set(x, "-khtml-box-flex", js.undefined)
     
-    @scala.inline
-    def `set-khtml-box-lines`(value: BoxLinesProperty): Self = StObject.set(x, "-khtml-box-lines", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-lines`(value: BoxLinesProperty): Self = StObject.set(x, "-khtml-box-lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-linesUndefined`: Self = StObject.set(x, "-khtml-box-lines", js.undefined)
+    inline def `set-khtml-box-linesUndefined`: Self = StObject.set(x, "-khtml-box-lines", js.undefined)
     
-    @scala.inline
-    def `set-khtml-box-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "-khtml-box-ordinal-group", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "-khtml-box-ordinal-group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-ordinal-groupUndefined`: Self = StObject.set(x, "-khtml-box-ordinal-group", js.undefined)
+    inline def `set-khtml-box-ordinal-groupUndefined`: Self = StObject.set(x, "-khtml-box-ordinal-group", js.undefined)
     
-    @scala.inline
-    def `set-khtml-box-orient`(value: BoxOrientProperty): Self = StObject.set(x, "-khtml-box-orient", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-orient`(value: BoxOrientProperty): Self = StObject.set(x, "-khtml-box-orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-orientUndefined`: Self = StObject.set(x, "-khtml-box-orient", js.undefined)
+    inline def `set-khtml-box-orientUndefined`: Self = StObject.set(x, "-khtml-box-orient", js.undefined)
     
-    @scala.inline
-    def `set-khtml-box-pack`(value: BoxPackProperty): Self = StObject.set(x, "-khtml-box-pack", value.asInstanceOf[js.Any])
+    inline def `set-khtml-box-pack`(value: BoxPackProperty): Self = StObject.set(x, "-khtml-box-pack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-box-packUndefined`: Self = StObject.set(x, "-khtml-box-pack", js.undefined)
+    inline def `set-khtml-box-packUndefined`: Self = StObject.set(x, "-khtml-box-pack", js.undefined)
     
-    @scala.inline
-    def `set-khtml-line-break`(value: LineBreakProperty): Self = StObject.set(x, "-khtml-line-break", value.asInstanceOf[js.Any])
+    inline def `set-khtml-line-break`(value: LineBreakProperty): Self = StObject.set(x, "-khtml-line-break", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-line-breakUndefined`: Self = StObject.set(x, "-khtml-line-break", js.undefined)
+    inline def `set-khtml-line-breakUndefined`: Self = StObject.set(x, "-khtml-line-break", js.undefined)
     
-    @scala.inline
-    def `set-khtml-opacity`(value: OpacityProperty): Self = StObject.set(x, "-khtml-opacity", value.asInstanceOf[js.Any])
+    inline def `set-khtml-opacity`(value: OpacityProperty): Self = StObject.set(x, "-khtml-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-opacityUndefined`: Self = StObject.set(x, "-khtml-opacity", js.undefined)
+    inline def `set-khtml-opacityUndefined`: Self = StObject.set(x, "-khtml-opacity", js.undefined)
     
-    @scala.inline
-    def `set-khtml-user-select`(value: UserSelectProperty): Self = StObject.set(x, "-khtml-user-select", value.asInstanceOf[js.Any])
+    inline def `set-khtml-user-select`(value: UserSelectProperty): Self = StObject.set(x, "-khtml-user-select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-khtml-user-selectUndefined`: Self = StObject.set(x, "-khtml-user-select", js.undefined)
+    inline def `set-khtml-user-selectUndefined`: Self = StObject.set(x, "-khtml-user-select", js.undefined)
     
-    @scala.inline
-    def `set-moz-background-clip`(value: BackgroundClipProperty): Self = StObject.set(x, "-moz-background-clip", value.asInstanceOf[js.Any])
+    inline def `set-moz-background-clip`(value: BackgroundClipProperty): Self = StObject.set(x, "-moz-background-clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-background-clipUndefined`: Self = StObject.set(x, "-moz-background-clip", js.undefined)
+    inline def `set-moz-background-clipUndefined`: Self = StObject.set(x, "-moz-background-clip", js.undefined)
     
-    @scala.inline
-    def `set-moz-background-inline-policy`(value: BoxDecorationBreakProperty): Self = StObject.set(x, "-moz-background-inline-policy", value.asInstanceOf[js.Any])
+    inline def `set-moz-background-inline-policy`(value: BoxDecorationBreakProperty): Self = StObject.set(x, "-moz-background-inline-policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-background-inline-policyUndefined`: Self = StObject.set(x, "-moz-background-inline-policy", js.undefined)
+    inline def `set-moz-background-inline-policyUndefined`: Self = StObject.set(x, "-moz-background-inline-policy", js.undefined)
     
-    @scala.inline
-    def `set-moz-background-origin`(value: BackgroundOriginProperty): Self = StObject.set(x, "-moz-background-origin", value.asInstanceOf[js.Any])
+    inline def `set-moz-background-origin`(value: BackgroundOriginProperty): Self = StObject.set(x, "-moz-background-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-background-originUndefined`: Self = StObject.set(x, "-moz-background-origin", js.undefined)
+    inline def `set-moz-background-originUndefined`: Self = StObject.set(x, "-moz-background-origin", js.undefined)
     
-    @scala.inline
-    def `set-moz-background-size`(value: BackgroundSizeProperty[TLength]): Self = StObject.set(x, "-moz-background-size", value.asInstanceOf[js.Any])
+    inline def `set-moz-background-size`(value: BackgroundSizeProperty[TLength]): Self = StObject.set(x, "-moz-background-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-background-sizeUndefined`: Self = StObject.set(x, "-moz-background-size", js.undefined)
+    inline def `set-moz-background-sizeUndefined`: Self = StObject.set(x, "-moz-background-size", js.undefined)
     
-    @scala.inline
-    def `set-moz-binding`(value: MozBindingProperty): Self = StObject.set(x, "-moz-binding", value.asInstanceOf[js.Any])
+    inline def `set-moz-binding`(value: MozBindingProperty): Self = StObject.set(x, "-moz-binding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-bindingUndefined`: Self = StObject.set(x, "-moz-binding", js.undefined)
+    inline def `set-moz-bindingUndefined`: Self = StObject.set(x, "-moz-binding", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-radius`(value: BorderRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-radius`(value: BorderRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-radius-bottomleft`(value: BorderBottomLeftRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-bottomleft", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-radius-bottomleft`(value: BorderBottomLeftRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-bottomleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-radius-bottomleftUndefined`: Self = StObject.set(x, "-moz-border-radius-bottomleft", js.undefined)
+    inline def `set-moz-border-radius-bottomleftUndefined`: Self = StObject.set(x, "-moz-border-radius-bottomleft", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-radius-bottomright`(value: BorderBottomRightRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-bottomright", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-radius-bottomright`(value: BorderBottomRightRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-bottomright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-radius-bottomrightUndefined`: Self = StObject.set(x, "-moz-border-radius-bottomright", js.undefined)
+    inline def `set-moz-border-radius-bottomrightUndefined`: Self = StObject.set(x, "-moz-border-radius-bottomright", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-radius-topleft`(value: BorderTopLeftRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-topleft", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-radius-topleft`(value: BorderTopLeftRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-topleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-radius-topleftUndefined`: Self = StObject.set(x, "-moz-border-radius-topleft", js.undefined)
+    inline def `set-moz-border-radius-topleftUndefined`: Self = StObject.set(x, "-moz-border-radius-topleft", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-radius-topright`(value: BorderTopRightRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-topright", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-radius-topright`(value: BorderTopRightRadiusProperty[TLength]): Self = StObject.set(x, "-moz-border-radius-topright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-radius-toprightUndefined`: Self = StObject.set(x, "-moz-border-radius-topright", js.undefined)
+    inline def `set-moz-border-radius-toprightUndefined`: Self = StObject.set(x, "-moz-border-radius-topright", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-radiusUndefined`: Self = StObject.set(x, "-moz-border-radius", js.undefined)
+    inline def `set-moz-border-radiusUndefined`: Self = StObject.set(x, "-moz-border-radius", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-align`(value: BoxAlignProperty): Self = StObject.set(x, "-moz-box-align", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-align`(value: BoxAlignProperty): Self = StObject.set(x, "-moz-box-align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-alignUndefined`: Self = StObject.set(x, "-moz-box-align", js.undefined)
+    inline def `set-moz-box-alignUndefined`: Self = StObject.set(x, "-moz-box-align", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "-moz-box-direction", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "-moz-box-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-directionUndefined`: Self = StObject.set(x, "-moz-box-direction", js.undefined)
+    inline def `set-moz-box-directionUndefined`: Self = StObject.set(x, "-moz-box-direction", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-flex`(value: GlobalsNumber): Self = StObject.set(x, "-moz-box-flex", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-flex`(value: GlobalsNumber): Self = StObject.set(x, "-moz-box-flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-flexUndefined`: Self = StObject.set(x, "-moz-box-flex", js.undefined)
+    inline def `set-moz-box-flexUndefined`: Self = StObject.set(x, "-moz-box-flex", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "-moz-box-ordinal-group", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "-moz-box-ordinal-group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-ordinal-groupUndefined`: Self = StObject.set(x, "-moz-box-ordinal-group", js.undefined)
+    inline def `set-moz-box-ordinal-groupUndefined`: Self = StObject.set(x, "-moz-box-ordinal-group", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-orient`(value: BoxOrientProperty): Self = StObject.set(x, "-moz-box-orient", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-orient`(value: BoxOrientProperty): Self = StObject.set(x, "-moz-box-orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-orientUndefined`: Self = StObject.set(x, "-moz-box-orient", js.undefined)
+    inline def `set-moz-box-orientUndefined`: Self = StObject.set(x, "-moz-box-orient", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-pack`(value: BoxPackProperty): Self = StObject.set(x, "-moz-box-pack", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-pack`(value: BoxPackProperty): Self = StObject.set(x, "-moz-box-pack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-packUndefined`: Self = StObject.set(x, "-moz-box-pack", js.undefined)
+    inline def `set-moz-box-packUndefined`: Self = StObject.set(x, "-moz-box-pack", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-shadow`(value: BoxShadowProperty): Self = StObject.set(x, "-moz-box-shadow", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-shadow`(value: BoxShadowProperty): Self = StObject.set(x, "-moz-box-shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-shadowUndefined`: Self = StObject.set(x, "-moz-box-shadow", js.undefined)
+    inline def `set-moz-box-shadowUndefined`: Self = StObject.set(x, "-moz-box-shadow", js.undefined)
     
-    @scala.inline
-    def `set-moz-opacity`(value: OpacityProperty): Self = StObject.set(x, "-moz-opacity", value.asInstanceOf[js.Any])
+    inline def `set-moz-opacity`(value: OpacityProperty): Self = StObject.set(x, "-moz-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-opacityUndefined`: Self = StObject.set(x, "-moz-opacity", js.undefined)
+    inline def `set-moz-opacityUndefined`: Self = StObject.set(x, "-moz-opacity", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline`(value: OutlineProperty[TLength]): Self = StObject.set(x, "-moz-outline", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline`(value: OutlineProperty[TLength]): Self = StObject.set(x, "-moz-outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-color`(value: OutlineColorProperty): Self = StObject.set(x, "-moz-outline-color", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-color`(value: OutlineColorProperty): Self = StObject.set(x, "-moz-outline-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-colorUndefined`: Self = StObject.set(x, "-moz-outline-color", js.undefined)
+    inline def `set-moz-outline-colorUndefined`: Self = StObject.set(x, "-moz-outline-color", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline-radius`(value: MozOutlineRadiusProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-radius`(value: MozOutlineRadiusProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-radiusUndefined`: Self = StObject.set(x, "-moz-outline-radius", js.undefined)
+    inline def `set-moz-outline-radiusUndefined`: Self = StObject.set(x, "-moz-outline-radius", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline-style`(value: OutlineStyleProperty): Self = StObject.set(x, "-moz-outline-style", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-style`(value: OutlineStyleProperty): Self = StObject.set(x, "-moz-outline-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-styleUndefined`: Self = StObject.set(x, "-moz-outline-style", js.undefined)
+    inline def `set-moz-outline-styleUndefined`: Self = StObject.set(x, "-moz-outline-style", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline-width`(value: OutlineWidthProperty[TLength]): Self = StObject.set(x, "-moz-outline-width", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-width`(value: OutlineWidthProperty[TLength]): Self = StObject.set(x, "-moz-outline-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-widthUndefined`: Self = StObject.set(x, "-moz-outline-width", js.undefined)
+    inline def `set-moz-outline-widthUndefined`: Self = StObject.set(x, "-moz-outline-width", js.undefined)
     
-    @scala.inline
-    def `set-moz-outlineUndefined`: Self = StObject.set(x, "-moz-outline", js.undefined)
+    inline def `set-moz-outlineUndefined`: Self = StObject.set(x, "-moz-outline", js.undefined)
     
-    @scala.inline
-    def `set-moz-text-align-last`(value: TextAlignLastProperty): Self = StObject.set(x, "-moz-text-align-last", value.asInstanceOf[js.Any])
+    inline def `set-moz-text-align-last`(value: TextAlignLastProperty): Self = StObject.set(x, "-moz-text-align-last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-text-align-lastUndefined`: Self = StObject.set(x, "-moz-text-align-last", js.undefined)
+    inline def `set-moz-text-align-lastUndefined`: Self = StObject.set(x, "-moz-text-align-last", js.undefined)
     
-    @scala.inline
-    def `set-moz-text-decoration-color`(value: TextDecorationColorProperty): Self = StObject.set(x, "-moz-text-decoration-color", value.asInstanceOf[js.Any])
+    inline def `set-moz-text-decoration-color`(value: TextDecorationColorProperty): Self = StObject.set(x, "-moz-text-decoration-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-text-decoration-colorUndefined`: Self = StObject.set(x, "-moz-text-decoration-color", js.undefined)
+    inline def `set-moz-text-decoration-colorUndefined`: Self = StObject.set(x, "-moz-text-decoration-color", js.undefined)
     
-    @scala.inline
-    def `set-moz-text-decoration-line`(value: TextDecorationLineProperty): Self = StObject.set(x, "-moz-text-decoration-line", value.asInstanceOf[js.Any])
+    inline def `set-moz-text-decoration-line`(value: TextDecorationLineProperty): Self = StObject.set(x, "-moz-text-decoration-line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-text-decoration-lineUndefined`: Self = StObject.set(x, "-moz-text-decoration-line", js.undefined)
+    inline def `set-moz-text-decoration-lineUndefined`: Self = StObject.set(x, "-moz-text-decoration-line", js.undefined)
     
-    @scala.inline
-    def `set-moz-text-decoration-style`(value: TextDecorationStyleProperty): Self = StObject.set(x, "-moz-text-decoration-style", value.asInstanceOf[js.Any])
+    inline def `set-moz-text-decoration-style`(value: TextDecorationStyleProperty): Self = StObject.set(x, "-moz-text-decoration-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-text-decoration-styleUndefined`: Self = StObject.set(x, "-moz-text-decoration-style", js.undefined)
+    inline def `set-moz-text-decoration-styleUndefined`: Self = StObject.set(x, "-moz-text-decoration-style", js.undefined)
     
-    @scala.inline
-    def `set-moz-user-input`(value: MozUserInputProperty): Self = StObject.set(x, "-moz-user-input", value.asInstanceOf[js.Any])
+    inline def `set-moz-user-input`(value: MozUserInputProperty): Self = StObject.set(x, "-moz-user-input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-user-inputUndefined`: Self = StObject.set(x, "-moz-user-input", js.undefined)
+    inline def `set-moz-user-inputUndefined`: Self = StObject.set(x, "-moz-user-input", js.undefined)
     
-    @scala.inline
-    def `set-ms-ime-mode`(value: ImeModeProperty): Self = StObject.set(x, "-ms-ime-mode", value.asInstanceOf[js.Any])
+    inline def `set-ms-ime-mode`(value: ImeModeProperty): Self = StObject.set(x, "-ms-ime-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-ime-modeUndefined`: Self = StObject.set(x, "-ms-ime-mode", js.undefined)
+    inline def `set-ms-ime-modeUndefined`: Self = StObject.set(x, "-ms-ime-mode", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-track-color`(value: MsScrollbarTrackColorProperty): Self = StObject.set(x, "-ms-scrollbar-track-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-track-color`(value: MsScrollbarTrackColorProperty): Self = StObject.set(x, "-ms-scrollbar-track-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-track-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-track-color", js.undefined)
+    inline def `set-ms-scrollbar-track-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-track-color", js.undefined)
     
-    @scala.inline
-    def `set-o-animation`(value: AnimationProperty): Self = StObject.set(x, "-o-animation", value.asInstanceOf[js.Any])
+    inline def `set-o-animation`(value: AnimationProperty): Self = StObject.set(x, "-o-animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-delay`(value: GlobalsString): Self = StObject.set(x, "-o-animation-delay", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-delay`(value: GlobalsString): Self = StObject.set(x, "-o-animation-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-delayUndefined`: Self = StObject.set(x, "-o-animation-delay", js.undefined)
+    inline def `set-o-animation-delayUndefined`: Self = StObject.set(x, "-o-animation-delay", js.undefined)
     
-    @scala.inline
-    def `set-o-animation-direction`(value: AnimationDirectionProperty): Self = StObject.set(x, "-o-animation-direction", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-direction`(value: AnimationDirectionProperty): Self = StObject.set(x, "-o-animation-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-directionUndefined`: Self = StObject.set(x, "-o-animation-direction", js.undefined)
+    inline def `set-o-animation-directionUndefined`: Self = StObject.set(x, "-o-animation-direction", js.undefined)
     
-    @scala.inline
-    def `set-o-animation-duration`(value: GlobalsString): Self = StObject.set(x, "-o-animation-duration", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-duration`(value: GlobalsString): Self = StObject.set(x, "-o-animation-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-durationUndefined`: Self = StObject.set(x, "-o-animation-duration", js.undefined)
+    inline def `set-o-animation-durationUndefined`: Self = StObject.set(x, "-o-animation-duration", js.undefined)
     
-    @scala.inline
-    def `set-o-animation-fill-mode`(value: AnimationFillModeProperty): Self = StObject.set(x, "-o-animation-fill-mode", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-fill-mode`(value: AnimationFillModeProperty): Self = StObject.set(x, "-o-animation-fill-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-fill-modeUndefined`: Self = StObject.set(x, "-o-animation-fill-mode", js.undefined)
+    inline def `set-o-animation-fill-modeUndefined`: Self = StObject.set(x, "-o-animation-fill-mode", js.undefined)
     
-    @scala.inline
-    def `set-o-animation-iteration-count`(value: AnimationIterationCountProperty): Self = StObject.set(x, "-o-animation-iteration-count", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-iteration-count`(value: AnimationIterationCountProperty): Self = StObject.set(x, "-o-animation-iteration-count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-iteration-countUndefined`: Self = StObject.set(x, "-o-animation-iteration-count", js.undefined)
+    inline def `set-o-animation-iteration-countUndefined`: Self = StObject.set(x, "-o-animation-iteration-count", js.undefined)
     
-    @scala.inline
-    def `set-o-animation-name`(value: AnimationNameProperty): Self = StObject.set(x, "-o-animation-name", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-name`(value: AnimationNameProperty): Self = StObject.set(x, "-o-animation-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-nameUndefined`: Self = StObject.set(x, "-o-animation-name", js.undefined)
+    inline def `set-o-animation-nameUndefined`: Self = StObject.set(x, "-o-animation-name", js.undefined)
     
-    @scala.inline
-    def `set-o-animation-play-state`(value: AnimationPlayStateProperty): Self = StObject.set(x, "-o-animation-play-state", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-play-state`(value: AnimationPlayStateProperty): Self = StObject.set(x, "-o-animation-play-state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-play-stateUndefined`: Self = StObject.set(x, "-o-animation-play-state", js.undefined)
+    inline def `set-o-animation-play-stateUndefined`: Self = StObject.set(x, "-o-animation-play-state", js.undefined)
     
-    @scala.inline
-    def `set-o-animation-timing-function`(value: AnimationTimingFunctionProperty): Self = StObject.set(x, "-o-animation-timing-function", value.asInstanceOf[js.Any])
+    inline def `set-o-animation-timing-function`(value: AnimationTimingFunctionProperty): Self = StObject.set(x, "-o-animation-timing-function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-animation-timing-functionUndefined`: Self = StObject.set(x, "-o-animation-timing-function", js.undefined)
+    inline def `set-o-animation-timing-functionUndefined`: Self = StObject.set(x, "-o-animation-timing-function", js.undefined)
     
-    @scala.inline
-    def `set-o-animationUndefined`: Self = StObject.set(x, "-o-animation", js.undefined)
+    inline def `set-o-animationUndefined`: Self = StObject.set(x, "-o-animation", js.undefined)
     
-    @scala.inline
-    def `set-o-background-size`(value: BackgroundSizeProperty[TLength]): Self = StObject.set(x, "-o-background-size", value.asInstanceOf[js.Any])
+    inline def `set-o-background-size`(value: BackgroundSizeProperty[TLength]): Self = StObject.set(x, "-o-background-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-background-sizeUndefined`: Self = StObject.set(x, "-o-background-size", js.undefined)
+    inline def `set-o-background-sizeUndefined`: Self = StObject.set(x, "-o-background-size", js.undefined)
     
-    @scala.inline
-    def `set-o-border-image`(value: BorderImageProperty): Self = StObject.set(x, "-o-border-image", value.asInstanceOf[js.Any])
+    inline def `set-o-border-image`(value: BorderImageProperty): Self = StObject.set(x, "-o-border-image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-border-imageUndefined`: Self = StObject.set(x, "-o-border-image", js.undefined)
+    inline def `set-o-border-imageUndefined`: Self = StObject.set(x, "-o-border-image", js.undefined)
     
-    @scala.inline
-    def `set-o-transform`(value: TransformProperty): Self = StObject.set(x, "-o-transform", value.asInstanceOf[js.Any])
+    inline def `set-o-transform`(value: TransformProperty): Self = StObject.set(x, "-o-transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-transformUndefined`: Self = StObject.set(x, "-o-transform", js.undefined)
+    inline def `set-o-transformUndefined`: Self = StObject.set(x, "-o-transform", js.undefined)
     
-    @scala.inline
-    def `set-o-transition`(value: TransitionProperty): Self = StObject.set(x, "-o-transition", value.asInstanceOf[js.Any])
+    inline def `set-o-transition`(value: TransitionProperty): Self = StObject.set(x, "-o-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-o-transition-delay", value.asInstanceOf[js.Any])
+    inline def `set-o-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-o-transition-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-transition-delayUndefined`: Self = StObject.set(x, "-o-transition-delay", js.undefined)
+    inline def `set-o-transition-delayUndefined`: Self = StObject.set(x, "-o-transition-delay", js.undefined)
     
-    @scala.inline
-    def `set-o-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-o-transition-duration", value.asInstanceOf[js.Any])
+    inline def `set-o-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-o-transition-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-transition-durationUndefined`: Self = StObject.set(x, "-o-transition-duration", js.undefined)
+    inline def `set-o-transition-durationUndefined`: Self = StObject.set(x, "-o-transition-duration", js.undefined)
     
-    @scala.inline
-    def `set-o-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-o-transition-property", value.asInstanceOf[js.Any])
+    inline def `set-o-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-o-transition-property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-transition-propertyUndefined`: Self = StObject.set(x, "-o-transition-property", js.undefined)
+    inline def `set-o-transition-propertyUndefined`: Self = StObject.set(x, "-o-transition-property", js.undefined)
     
-    @scala.inline
-    def `set-o-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-o-transition-timing-function", value.asInstanceOf[js.Any])
+    inline def `set-o-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-o-transition-timing-function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-transition-timing-functionUndefined`: Self = StObject.set(x, "-o-transition-timing-function", js.undefined)
+    inline def `set-o-transition-timing-functionUndefined`: Self = StObject.set(x, "-o-transition-timing-function", js.undefined)
     
-    @scala.inline
-    def `set-o-transitionUndefined`: Self = StObject.set(x, "-o-transition", js.undefined)
+    inline def `set-o-transitionUndefined`: Self = StObject.set(x, "-o-transition", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-align`(value: BoxAlignProperty): Self = StObject.set(x, "-webkit-box-align", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-align`(value: BoxAlignProperty): Self = StObject.set(x, "-webkit-box-align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-alignUndefined`: Self = StObject.set(x, "-webkit-box-align", js.undefined)
+    inline def `set-webkit-box-alignUndefined`: Self = StObject.set(x, "-webkit-box-align", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "-webkit-box-direction", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "-webkit-box-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-directionUndefined`: Self = StObject.set(x, "-webkit-box-direction", js.undefined)
+    inline def `set-webkit-box-directionUndefined`: Self = StObject.set(x, "-webkit-box-direction", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-flex`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-box-flex", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-flex`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-box-flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-flex-group`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-box-flex-group", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-flex-group`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-box-flex-group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-flex-groupUndefined`: Self = StObject.set(x, "-webkit-box-flex-group", js.undefined)
+    inline def `set-webkit-box-flex-groupUndefined`: Self = StObject.set(x, "-webkit-box-flex-group", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-flexUndefined`: Self = StObject.set(x, "-webkit-box-flex", js.undefined)
+    inline def `set-webkit-box-flexUndefined`: Self = StObject.set(x, "-webkit-box-flex", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-lines`(value: BoxLinesProperty): Self = StObject.set(x, "-webkit-box-lines", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-lines`(value: BoxLinesProperty): Self = StObject.set(x, "-webkit-box-lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-linesUndefined`: Self = StObject.set(x, "-webkit-box-lines", js.undefined)
+    inline def `set-webkit-box-linesUndefined`: Self = StObject.set(x, "-webkit-box-lines", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-box-ordinal-group", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-box-ordinal-group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-ordinal-groupUndefined`: Self = StObject.set(x, "-webkit-box-ordinal-group", js.undefined)
+    inline def `set-webkit-box-ordinal-groupUndefined`: Self = StObject.set(x, "-webkit-box-ordinal-group", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-orient`(value: BoxOrientProperty): Self = StObject.set(x, "-webkit-box-orient", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-orient`(value: BoxOrientProperty): Self = StObject.set(x, "-webkit-box-orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-orientUndefined`: Self = StObject.set(x, "-webkit-box-orient", js.undefined)
+    inline def `set-webkit-box-orientUndefined`: Self = StObject.set(x, "-webkit-box-orient", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-pack`(value: BoxPackProperty): Self = StObject.set(x, "-webkit-box-pack", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-pack`(value: BoxPackProperty): Self = StObject.set(x, "-webkit-box-pack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-packUndefined`: Self = StObject.set(x, "-webkit-box-pack", js.undefined)
+    inline def `set-webkit-box-packUndefined`: Self = StObject.set(x, "-webkit-box-pack", js.undefined)
     
-    @scala.inline
-    def `set-webkit-scroll-snap-points-x`(value: ScrollSnapPointsXProperty): Self = StObject.set(x, "-webkit-scroll-snap-points-x", value.asInstanceOf[js.Any])
+    inline def `set-webkit-scroll-snap-points-x`(value: ScrollSnapPointsXProperty): Self = StObject.set(x, "-webkit-scroll-snap-points-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-scroll-snap-points-xUndefined`: Self = StObject.set(x, "-webkit-scroll-snap-points-x", js.undefined)
+    inline def `set-webkit-scroll-snap-points-xUndefined`: Self = StObject.set(x, "-webkit-scroll-snap-points-x", js.undefined)
     
-    @scala.inline
-    def `set-webkit-scroll-snap-points-y`(value: ScrollSnapPointsYProperty): Self = StObject.set(x, "-webkit-scroll-snap-points-y", value.asInstanceOf[js.Any])
+    inline def `set-webkit-scroll-snap-points-y`(value: ScrollSnapPointsYProperty): Self = StObject.set(x, "-webkit-scroll-snap-points-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-scroll-snap-points-yUndefined`: Self = StObject.set(x, "-webkit-scroll-snap-points-y", js.undefined)
+    inline def `set-webkit-scroll-snap-points-yUndefined`: Self = StObject.set(x, "-webkit-scroll-snap-points-y", js.undefined)
     
-    @scala.inline
-    def `setBox-align`(value: BoxAlignProperty): Self = StObject.set(x, "box-align", value.asInstanceOf[js.Any])
+    inline def `setBox-align`(value: BoxAlignProperty): Self = StObject.set(x, "box-align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-alignUndefined`: Self = StObject.set(x, "box-align", js.undefined)
+    inline def `setBox-alignUndefined`: Self = StObject.set(x, "box-align", js.undefined)
     
-    @scala.inline
-    def `setBox-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "box-direction", value.asInstanceOf[js.Any])
+    inline def `setBox-direction`(value: BoxDirectionProperty): Self = StObject.set(x, "box-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-directionUndefined`: Self = StObject.set(x, "box-direction", js.undefined)
+    inline def `setBox-directionUndefined`: Self = StObject.set(x, "box-direction", js.undefined)
     
-    @scala.inline
-    def `setBox-flex`(value: GlobalsNumber): Self = StObject.set(x, "box-flex", value.asInstanceOf[js.Any])
+    inline def `setBox-flex`(value: GlobalsNumber): Self = StObject.set(x, "box-flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-flex-group`(value: GlobalsNumber): Self = StObject.set(x, "box-flex-group", value.asInstanceOf[js.Any])
+    inline def `setBox-flex-group`(value: GlobalsNumber): Self = StObject.set(x, "box-flex-group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-flex-groupUndefined`: Self = StObject.set(x, "box-flex-group", js.undefined)
+    inline def `setBox-flex-groupUndefined`: Self = StObject.set(x, "box-flex-group", js.undefined)
     
-    @scala.inline
-    def `setBox-flexUndefined`: Self = StObject.set(x, "box-flex", js.undefined)
+    inline def `setBox-flexUndefined`: Self = StObject.set(x, "box-flex", js.undefined)
     
-    @scala.inline
-    def `setBox-lines`(value: BoxLinesProperty): Self = StObject.set(x, "box-lines", value.asInstanceOf[js.Any])
+    inline def `setBox-lines`(value: BoxLinesProperty): Self = StObject.set(x, "box-lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-linesUndefined`: Self = StObject.set(x, "box-lines", js.undefined)
+    inline def `setBox-linesUndefined`: Self = StObject.set(x, "box-lines", js.undefined)
     
-    @scala.inline
-    def `setBox-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "box-ordinal-group", value.asInstanceOf[js.Any])
+    inline def `setBox-ordinal-group`(value: GlobalsNumber): Self = StObject.set(x, "box-ordinal-group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-ordinal-groupUndefined`: Self = StObject.set(x, "box-ordinal-group", js.undefined)
+    inline def `setBox-ordinal-groupUndefined`: Self = StObject.set(x, "box-ordinal-group", js.undefined)
     
-    @scala.inline
-    def `setBox-orient`(value: BoxOrientProperty): Self = StObject.set(x, "box-orient", value.asInstanceOf[js.Any])
+    inline def `setBox-orient`(value: BoxOrientProperty): Self = StObject.set(x, "box-orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-orientUndefined`: Self = StObject.set(x, "box-orient", js.undefined)
+    inline def `setBox-orientUndefined`: Self = StObject.set(x, "box-orient", js.undefined)
     
-    @scala.inline
-    def `setBox-pack`(value: BoxPackProperty): Self = StObject.set(x, "box-pack", value.asInstanceOf[js.Any])
+    inline def `setBox-pack`(value: BoxPackProperty): Self = StObject.set(x, "box-pack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBox-packUndefined`: Self = StObject.set(x, "box-pack", js.undefined)
+    inline def `setBox-packUndefined`: Self = StObject.set(x, "box-pack", js.undefined)
     
-    @scala.inline
-    def setClip(value: ClipProperty): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: ClipProperty): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    @scala.inline
-    def `setFont-variant-alternates`(value: FontVariantAlternatesProperty): Self = StObject.set(x, "font-variant-alternates", value.asInstanceOf[js.Any])
+    inline def `setFont-variant-alternates`(value: FontVariantAlternatesProperty): Self = StObject.set(x, "font-variant-alternates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFont-variant-alternatesUndefined`: Self = StObject.set(x, "font-variant-alternates", js.undefined)
+    inline def `setFont-variant-alternatesUndefined`: Self = StObject.set(x, "font-variant-alternates", js.undefined)
     
-    @scala.inline
-    def `setGrid-column-gap`(value: GridColumnGapProperty[TLength]): Self = StObject.set(x, "grid-column-gap", value.asInstanceOf[js.Any])
+    inline def `setGrid-column-gap`(value: GridColumnGapProperty[TLength]): Self = StObject.set(x, "grid-column-gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGrid-column-gapUndefined`: Self = StObject.set(x, "grid-column-gap", js.undefined)
+    inline def `setGrid-column-gapUndefined`: Self = StObject.set(x, "grid-column-gap", js.undefined)
     
-    @scala.inline
-    def `setGrid-gap`(value: GridGapProperty[TLength]): Self = StObject.set(x, "grid-gap", value.asInstanceOf[js.Any])
+    inline def `setGrid-gap`(value: GridGapProperty[TLength]): Self = StObject.set(x, "grid-gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGrid-gapUndefined`: Self = StObject.set(x, "grid-gap", js.undefined)
+    inline def `setGrid-gapUndefined`: Self = StObject.set(x, "grid-gap", js.undefined)
     
-    @scala.inline
-    def `setGrid-row-gap`(value: GridRowGapProperty[TLength]): Self = StObject.set(x, "grid-row-gap", value.asInstanceOf[js.Any])
+    inline def `setGrid-row-gap`(value: GridRowGapProperty[TLength]): Self = StObject.set(x, "grid-row-gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGrid-row-gapUndefined`: Self = StObject.set(x, "grid-row-gap", js.undefined)
+    inline def `setGrid-row-gapUndefined`: Self = StObject.set(x, "grid-row-gap", js.undefined)
     
-    @scala.inline
-    def `setIme-mode`(value: ImeModeProperty): Self = StObject.set(x, "ime-mode", value.asInstanceOf[js.Any])
+    inline def `setIme-mode`(value: ImeModeProperty): Self = StObject.set(x, "ime-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIme-modeUndefined`: Self = StObject.set(x, "ime-mode", js.undefined)
+    inline def `setIme-modeUndefined`: Self = StObject.set(x, "ime-mode", js.undefined)
     
-    @scala.inline
-    def `setOffset-block`(value: InsetBlockProperty[TLength]): Self = StObject.set(x, "offset-block", value.asInstanceOf[js.Any])
+    inline def `setOffset-block`(value: InsetBlockProperty[TLength]): Self = StObject.set(x, "offset-block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-block-end`(value: InsetBlockEndProperty[TLength]): Self = StObject.set(x, "offset-block-end", value.asInstanceOf[js.Any])
+    inline def `setOffset-block-end`(value: InsetBlockEndProperty[TLength]): Self = StObject.set(x, "offset-block-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-block-endUndefined`: Self = StObject.set(x, "offset-block-end", js.undefined)
+    inline def `setOffset-block-endUndefined`: Self = StObject.set(x, "offset-block-end", js.undefined)
     
-    @scala.inline
-    def `setOffset-block-start`(value: InsetBlockStartProperty[TLength]): Self = StObject.set(x, "offset-block-start", value.asInstanceOf[js.Any])
+    inline def `setOffset-block-start`(value: InsetBlockStartProperty[TLength]): Self = StObject.set(x, "offset-block-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-block-startUndefined`: Self = StObject.set(x, "offset-block-start", js.undefined)
+    inline def `setOffset-block-startUndefined`: Self = StObject.set(x, "offset-block-start", js.undefined)
     
-    @scala.inline
-    def `setOffset-blockUndefined`: Self = StObject.set(x, "offset-block", js.undefined)
+    inline def `setOffset-blockUndefined`: Self = StObject.set(x, "offset-block", js.undefined)
     
-    @scala.inline
-    def `setOffset-inline`(value: InsetInlineProperty[TLength]): Self = StObject.set(x, "offset-inline", value.asInstanceOf[js.Any])
+    inline def `setOffset-inline`(value: InsetInlineProperty[TLength]): Self = StObject.set(x, "offset-inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-inline-end`(value: InsetInlineEndProperty[TLength]): Self = StObject.set(x, "offset-inline-end", value.asInstanceOf[js.Any])
+    inline def `setOffset-inline-end`(value: InsetInlineEndProperty[TLength]): Self = StObject.set(x, "offset-inline-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-inline-endUndefined`: Self = StObject.set(x, "offset-inline-end", js.undefined)
+    inline def `setOffset-inline-endUndefined`: Self = StObject.set(x, "offset-inline-end", js.undefined)
     
-    @scala.inline
-    def `setOffset-inline-start`(value: InsetInlineStartProperty[TLength]): Self = StObject.set(x, "offset-inline-start", value.asInstanceOf[js.Any])
+    inline def `setOffset-inline-start`(value: InsetInlineStartProperty[TLength]): Self = StObject.set(x, "offset-inline-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-inline-startUndefined`: Self = StObject.set(x, "offset-inline-start", js.undefined)
+    inline def `setOffset-inline-startUndefined`: Self = StObject.set(x, "offset-inline-start", js.undefined)
     
-    @scala.inline
-    def `setOffset-inlineUndefined`: Self = StObject.set(x, "offset-inline", js.undefined)
+    inline def `setOffset-inlineUndefined`: Self = StObject.set(x, "offset-inline", js.undefined)
     
-    @scala.inline
-    def `setScroll-snap-coordinate`(value: ScrollSnapCoordinateProperty[TLength]): Self = StObject.set(x, "scroll-snap-coordinate", value.asInstanceOf[js.Any])
+    inline def `setScroll-snap-coordinate`(value: ScrollSnapCoordinateProperty[TLength]): Self = StObject.set(x, "scroll-snap-coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-snap-coordinateUndefined`: Self = StObject.set(x, "scroll-snap-coordinate", js.undefined)
+    inline def `setScroll-snap-coordinateUndefined`: Self = StObject.set(x, "scroll-snap-coordinate", js.undefined)
     
-    @scala.inline
-    def `setScroll-snap-destination`(value: ScrollSnapDestinationProperty[TLength]): Self = StObject.set(x, "scroll-snap-destination", value.asInstanceOf[js.Any])
+    inline def `setScroll-snap-destination`(value: ScrollSnapDestinationProperty[TLength]): Self = StObject.set(x, "scroll-snap-destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-snap-destinationUndefined`: Self = StObject.set(x, "scroll-snap-destination", js.undefined)
+    inline def `setScroll-snap-destinationUndefined`: Self = StObject.set(x, "scroll-snap-destination", js.undefined)
     
-    @scala.inline
-    def `setScroll-snap-points-x`(value: ScrollSnapPointsXProperty): Self = StObject.set(x, "scroll-snap-points-x", value.asInstanceOf[js.Any])
+    inline def `setScroll-snap-points-x`(value: ScrollSnapPointsXProperty): Self = StObject.set(x, "scroll-snap-points-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-snap-points-xUndefined`: Self = StObject.set(x, "scroll-snap-points-x", js.undefined)
+    inline def `setScroll-snap-points-xUndefined`: Self = StObject.set(x, "scroll-snap-points-x", js.undefined)
     
-    @scala.inline
-    def `setScroll-snap-points-y`(value: ScrollSnapPointsYProperty): Self = StObject.set(x, "scroll-snap-points-y", value.asInstanceOf[js.Any])
+    inline def `setScroll-snap-points-y`(value: ScrollSnapPointsYProperty): Self = StObject.set(x, "scroll-snap-points-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-snap-points-yUndefined`: Self = StObject.set(x, "scroll-snap-points-y", js.undefined)
+    inline def `setScroll-snap-points-yUndefined`: Self = StObject.set(x, "scroll-snap-points-y", js.undefined)
     
-    @scala.inline
-    def `setScroll-snap-type-x`(value: ScrollSnapTypeXProperty): Self = StObject.set(x, "scroll-snap-type-x", value.asInstanceOf[js.Any])
+    inline def `setScroll-snap-type-x`(value: ScrollSnapTypeXProperty): Self = StObject.set(x, "scroll-snap-type-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-snap-type-xUndefined`: Self = StObject.set(x, "scroll-snap-type-x", js.undefined)
+    inline def `setScroll-snap-type-xUndefined`: Self = StObject.set(x, "scroll-snap-type-x", js.undefined)
     
-    @scala.inline
-    def `setScroll-snap-type-y`(value: ScrollSnapTypeYProperty): Self = StObject.set(x, "scroll-snap-type-y", value.asInstanceOf[js.Any])
+    inline def `setScroll-snap-type-y`(value: ScrollSnapTypeYProperty): Self = StObject.set(x, "scroll-snap-type-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-snap-type-yUndefined`: Self = StObject.set(x, "scroll-snap-type-y", js.undefined)
+    inline def `setScroll-snap-type-yUndefined`: Self = StObject.set(x, "scroll-snap-type-y", js.undefined)
     
-    @scala.inline
-    def `setScrollbar-track-color`(value: MsScrollbarTrackColorProperty): Self = StObject.set(x, "scrollbar-track-color", value.asInstanceOf[js.Any])
+    inline def `setScrollbar-track-color`(value: MsScrollbarTrackColorProperty): Self = StObject.set(x, "scrollbar-track-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScrollbar-track-colorUndefined`: Self = StObject.set(x, "scrollbar-track-color", js.undefined)
+    inline def `setScrollbar-track-colorUndefined`: Self = StObject.set(x, "scrollbar-track-color", js.undefined)
     
-    @scala.inline
-    def `setText-combine-horizontal`(value: TextCombineUprightProperty): Self = StObject.set(x, "text-combine-horizontal", value.asInstanceOf[js.Any])
+    inline def `setText-combine-horizontal`(value: TextCombineUprightProperty): Self = StObject.set(x, "text-combine-horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setText-combine-horizontalUndefined`: Self = StObject.set(x, "text-combine-horizontal", js.undefined)
+    inline def `setText-combine-horizontalUndefined`: Self = StObject.set(x, "text-combine-horizontal", js.undefined)
   }
 }

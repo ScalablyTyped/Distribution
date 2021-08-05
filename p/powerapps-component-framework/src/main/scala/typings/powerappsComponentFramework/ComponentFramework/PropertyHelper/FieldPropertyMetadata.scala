@@ -22,8 +22,7 @@ object FieldPropertyMetadata {
   }
   object DateTimeMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Behavior: DateTimeFieldBehavior,
       Description: String,
       DisplayName: String,
@@ -38,17 +37,13 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[DateTimeMetadata]
     }
     
-    @scala.inline
-    implicit class DateTimeMetadataMutableBuilder[Self <: DateTimeMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeMetadata](x: Self) {
       
-      @scala.inline
-      def setBehavior(value: DateTimeFieldBehavior): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: DateTimeFieldBehavior): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImeMode(value: ImeMode): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
+      inline def setImeMode(value: ImeMode): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +55,7 @@ object FieldPropertyMetadata {
   }
   object DecimalNumberMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       DisplayName: String,
       ImeMode: ImeMode,
@@ -77,11 +71,9 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[DecimalNumberMetadata]
     }
     
-    @scala.inline
-    implicit class DecimalNumberMetadataMutableBuilder[Self <: DecimalNumberMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: DecimalNumberMetadata](x: Self) {
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,8 +85,7 @@ object FieldPropertyMetadata {
   }
   object FloatingNumberMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       DisplayName: String,
       ImeMode: ImeMode,
@@ -110,11 +101,9 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[FloatingNumberMetadata]
     }
     
-    @scala.inline
-    implicit class FloatingNumberMetadataMutableBuilder[Self <: FloatingNumberMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingNumberMetadata](x: Self) {
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,8 +115,7 @@ object FieldPropertyMetadata {
   }
   object LookupMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       DisplayName: String,
       IsSecured: Boolean,
@@ -140,14 +128,11 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[LookupMetadata]
     }
     
-    @scala.inline
-    implicit class LookupMetadataMutableBuilder[Self <: LookupMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: LookupMetadata](x: Self) {
       
-      @scala.inline
-      def setTargets(value: js.Array[String]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsVarargs(value: String*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "Targets", js.Array(value :_*))
     }
   }
   
@@ -167,8 +152,7 @@ object FieldPropertyMetadata {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       DisplayName: String,
       IsSecured: Boolean,
@@ -180,26 +164,19 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSecured(value: Boolean): Self = StObject.set(x, "IsSecured", value.asInstanceOf[js.Any])
+      inline def setIsSecured(value: Boolean): Self = StObject.set(x, "IsSecured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalName(value: String): Self = StObject.set(x, "LogicalName", value.asInstanceOf[js.Any])
+      inline def setLogicalName(value: String): Self = StObject.set(x, "LogicalName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredLevel(value: RequiredLevel): Self = StObject.set(x, "RequiredLevel", value.asInstanceOf[js.Any])
+      inline def setRequiredLevel(value: RequiredLevel): Self = StObject.set(x, "RequiredLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceType(value: Double): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: Double): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,8 +192,7 @@ object FieldPropertyMetadata {
   }
   object NumberMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       DisplayName: String,
       ImeMode: ImeMode,
@@ -231,17 +207,13 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[NumberMetadata]
     }
     
-    @scala.inline
-    implicit class NumberMetadataMutableBuilder[Self <: NumberMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: NumberMetadata](x: Self) {
       
-      @scala.inline
-      def setImeMode(value: ImeMode): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
+      inline def setImeMode(value: ImeMode): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,8 +227,7 @@ object FieldPropertyMetadata {
   }
   object OptionSetMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DefaultValue: Double,
       Description: String,
       DisplayName: String,
@@ -270,17 +241,13 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[OptionSetMetadata]
     }
     
-    @scala.inline
-    implicit class OptionSetMetadataMutableBuilder[Self <: OptionSetMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: OptionSetMetadata](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: Double): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Double): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: js.Array[OptionMetadata]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[OptionMetadata]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: OptionMetadata*): Self = StObject.set(x, "Options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: OptionMetadata*): Self = StObject.set(x, "Options", js.Array(value :_*))
     }
   }
   
@@ -296,8 +263,7 @@ object FieldPropertyMetadata {
   }
   object StringMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       DisplayName: String,
       Format: String,
@@ -312,17 +278,13 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[StringMetadata]
     }
     
-    @scala.inline
-    implicit class StringMetadataMutableBuilder[Self <: StringMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: StringMetadata](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImeMode(value: ImeMode): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
+      inline def setImeMode(value: ImeMode): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,8 +298,7 @@ object FieldPropertyMetadata {
   }
   object TwoOptionMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DefaultValue: Boolean,
       Description: String,
       DisplayName: String,
@@ -351,14 +312,11 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[TwoOptionMetadata]
     }
     
-    @scala.inline
-    implicit class TwoOptionMetadataMutableBuilder[Self <: TwoOptionMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: TwoOptionMetadata](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: Boolean): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: js.Tuple2[OptionMetadata, OptionMetadata]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Tuple2[OptionMetadata, OptionMetadata]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,8 +332,7 @@ object FieldPropertyMetadata {
   }
   object WholeNumberMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       DisplayName: String,
       Format: String,
@@ -391,23 +348,17 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[WholeNumberMetadata]
     }
     
-    @scala.inline
-    implicit class WholeNumberMetadataMutableBuilder[Self <: WholeNumberMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: WholeNumberMetadata](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageByCode(value: Dictionary): Self = StObject.set(x, "LanguageByCode", value.asInstanceOf[js.Any])
+      inline def setLanguageByCode(value: Dictionary): Self = StObject.set(x, "LanguageByCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageByCodeUndefined: Self = StObject.set(x, "LanguageByCode", js.undefined)
+      inline def setLanguageByCodeUndefined: Self = StObject.set(x, "LanguageByCode", js.undefined)
       
-      @scala.inline
-      def setTimeZoneByCode(value: Dictionary): Self = StObject.set(x, "TimeZoneByCode", value.asInstanceOf[js.Any])
+      inline def setTimeZoneByCode(value: Dictionary): Self = StObject.set(x, "TimeZoneByCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneByCodeUndefined: Self = StObject.set(x, "TimeZoneByCode", js.undefined)
+      inline def setTimeZoneByCodeUndefined: Self = StObject.set(x, "TimeZoneByCode", js.undefined)
     }
   }
 }

@@ -10,8 +10,6 @@ object retryDeciderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultRetryDecider(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")().asInstanceOf[js.Any]
-  @scala.inline
-  def defaultRetryDecider(retryClockSkewErrors: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")(retryClockSkewErrors.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def defaultRetryDecider(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")().asInstanceOf[js.Any]
+  inline def defaultRetryDecider(retryClockSkewErrors: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")(retryClockSkewErrors.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -10,19 +10,15 @@ trait FullscreenOptions extends StObject {
 }
 object FullscreenOptions {
   
-  @scala.inline
-  def apply(): FullscreenOptions = {
+  inline def apply(): FullscreenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FullscreenOptions]
   }
   
-  @scala.inline
-  implicit class FullscreenOptionsMutableBuilder[Self <: FullscreenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FullscreenOptions](x: Self) {
     
-    @scala.inline
-    def setNavigationUI(value: FullscreenNavigationUI): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
+    inline def setNavigationUI(value: FullscreenNavigationUI): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationUIUndefined: Self = StObject.set(x, "navigationUI", js.undefined)
+    inline def setNavigationUIUndefined: Self = StObject.set(x, "navigationUI", js.undefined)
   }
 }

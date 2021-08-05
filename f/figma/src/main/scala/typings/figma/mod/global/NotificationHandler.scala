@@ -10,16 +10,13 @@ trait NotificationHandler extends StObject {
 }
 object NotificationHandler {
   
-  @scala.inline
-  def apply(cancel: () => Unit): NotificationHandler = {
+  inline def apply(cancel: () => Unit): NotificationHandler = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
     __obj.asInstanceOf[NotificationHandler]
   }
   
-  @scala.inline
-  implicit class NotificationHandlerMutableBuilder[Self <: NotificationHandler] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationHandler](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }
 }

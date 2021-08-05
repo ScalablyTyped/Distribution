@@ -25,8 +25,7 @@ object tokens {
   }
   object IBankAccountToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client_ip: String,
       created: Double,
       id: String,
@@ -40,14 +39,11 @@ object tokens {
       __obj.asInstanceOf[IBankAccountToken]
     }
     
-    @scala.inline
-    implicit class IBankAccountTokenMutableBuilder[Self <: IBankAccountToken] (val x: Self) extends AnyVal {
+    extension [Self <: IBankAccountToken](x: Self) {
       
-      @scala.inline
-      def setBank_account(value: IBankAccountHash): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
+      inline def setBank_account(value: IBankAccountHash): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
+      inline def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
     }
   }
   
@@ -66,17 +62,14 @@ object tokens {
   }
   object IBankAccountTokenCreationOptions {
     
-    @scala.inline
-    def apply(bank_account: String | ISourceCreationOptions): IBankAccountTokenCreationOptions = {
+    inline def apply(bank_account: String | ISourceCreationOptions): IBankAccountTokenCreationOptions = {
       val __obj = js.Dynamic.literal(bank_account = bank_account.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBankAccountTokenCreationOptions]
     }
     
-    @scala.inline
-    implicit class IBankAccountTokenCreationOptionsMutableBuilder[Self <: IBankAccountTokenCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IBankAccountTokenCreationOptions](x: Self) {
       
-      @scala.inline
-      def setBank_account(value: String | ISourceCreationOptions): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
+      inline def setBank_account(value: String | ISourceCreationOptions): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,8 +84,7 @@ object tokens {
   }
   object ICardToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client_ip: String,
       created: Double,
       id: String,
@@ -106,14 +98,11 @@ object tokens {
       __obj.asInstanceOf[ICardToken]
     }
     
-    @scala.inline
-    implicit class ICardTokenMutableBuilder[Self <: ICardToken] (val x: Self) extends AnyVal {
+    extension [Self <: ICardToken](x: Self) {
       
-      @scala.inline
-      def setCard(value: ICardHash): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: ICardHash): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     }
   }
   
@@ -131,20 +120,16 @@ object tokens {
   }
   object ICardTokenCreationOptions {
     
-    @scala.inline
-    def apply(): ICardTokenCreationOptions = {
+    inline def apply(): ICardTokenCreationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICardTokenCreationOptions]
     }
     
-    @scala.inline
-    implicit class ICardTokenCreationOptionsMutableBuilder[Self <: ICardTokenCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICardTokenCreationOptions](x: Self) {
       
-      @scala.inline
-      def setCard(value: String | ICardSourceCreationOptions): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: String | ICardSourceCreationOptions): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     }
   }
   
@@ -156,17 +141,14 @@ object tokens {
   }
   object IPiiTokenCreationOptions {
     
-    @scala.inline
-    def apply(pii: Personalidnumber): IPiiTokenCreationOptions = {
+    inline def apply(pii: Personalidnumber): IPiiTokenCreationOptions = {
       val __obj = js.Dynamic.literal(pii = pii.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPiiTokenCreationOptions]
     }
     
-    @scala.inline
-    implicit class IPiiTokenCreationOptionsMutableBuilder[Self <: IPiiTokenCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IPiiTokenCreationOptions](x: Self) {
       
-      @scala.inline
-      def setPii(value: Personalidnumber): Self = StObject.set(x, "pii", value.asInstanceOf[js.Any])
+      inline def setPii(value: Personalidnumber): Self = StObject.set(x, "pii", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,8 +167,7 @@ object tokens {
   }
   object IToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client_ip: String,
       created: Double,
       id: String,
@@ -200,14 +181,11 @@ object tokens {
       __obj.asInstanceOf[IToken]
     }
     
-    @scala.inline
-    implicit class ITokenMutableBuilder[Self <: IToken] (val x: Self) extends AnyVal {
+    extension [Self <: IToken](x: Self) {
       
-      @scala.inline
-      def setBank_account(value: IBankAccountHash): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
+      inline def setBank_account(value: IBankAccountHash): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
+      inline def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
     }
   }
   
@@ -242,8 +220,7 @@ object tokens {
   }
   object ITokenBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client_ip: String,
       created: Double,
       id: String,
@@ -257,26 +234,19 @@ object tokens {
       __obj.asInstanceOf[ITokenBase]
     }
     
-    @scala.inline
-    implicit class ITokenBaseMutableBuilder[Self <: ITokenBase] (val x: Self) extends AnyVal {
+    extension [Self <: ITokenBase](x: Self) {
       
-      @scala.inline
-      def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
+      inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: token): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: token): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: card | bank_account): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: card | bank_account): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+      inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,20 +266,16 @@ object tokens {
   }
   object ITokenCreationOptionsBase {
     
-    @scala.inline
-    def apply(): ITokenCreationOptionsBase = {
+    inline def apply(): ITokenCreationOptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITokenCreationOptionsBase]
     }
     
-    @scala.inline
-    implicit class ITokenCreationOptionsBaseMutableBuilder[Self <: ITokenCreationOptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: ITokenCreationOptionsBase](x: Self) {
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     }
   }
 }

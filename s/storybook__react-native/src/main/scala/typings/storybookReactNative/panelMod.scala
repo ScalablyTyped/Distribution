@@ -21,20 +21,16 @@ object panelMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(style: js.Array[js.Any]): Props = {
+    inline def apply(style: js.Array[js.Any]): Props = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
     }
   }
 }

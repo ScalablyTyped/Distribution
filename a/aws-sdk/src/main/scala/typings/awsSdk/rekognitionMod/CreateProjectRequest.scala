@@ -13,16 +13,13 @@ trait CreateProjectRequest extends StObject {
 }
 object CreateProjectRequest {
   
-  @scala.inline
-  def apply(ProjectName: ProjectName): CreateProjectRequest = {
+  inline def apply(ProjectName: ProjectName): CreateProjectRequest = {
     val __obj = js.Dynamic.literal(ProjectName = ProjectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProjectRequest]
   }
   
-  @scala.inline
-  implicit class CreateProjectRequestMutableBuilder[Self <: CreateProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProjectRequest](x: Self) {
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
   }
 }

@@ -35,13 +35,13 @@ object findMod {
     /* CompleteClass */
     override def call(subscriber: Subscriber[js.UndefOr[T | Double]], source: js.Any): TeardownLogic = js.native
     
-    var predicate: js.Any = js.native
+    /* private */ var predicate: js.Any = js.native
     
-    var source: js.Any = js.native
+    /* private */ var source: js.Any = js.native
     
-    var thisArg: js.Any = js.native
+    /* private */ var thisArg: js.Any = js.native
     
-    var yieldIndex: js.Any = js.native
+    /* private */ var yieldIndex: js.Any = js.native
   }
   
   @JSImport("rxjs/internal/operators/find", "FindValueSubscriber")
@@ -61,33 +61,29 @@ object findMod {
       thisArg: js.Any
     ) = this()
     
-    var index: js.Any = js.native
+    /* private */ var index: js.Any = js.native
     
-    var notifyComplete: js.Any = js.native
+    /* private */ var notifyComplete: js.Any = js.native
     
-    var predicate: js.Any = js.native
+    /* private */ var predicate: js.Any = js.native
     
-    var source: js.Any = js.native
+    /* private */ var source: js.Any = js.native
     
-    var thisArg: js.Any = js.native
+    /* private */ var thisArg: js.Any = js.native
     
-    var yieldIndex: js.Any = js.native
+    /* private */ var yieldIndex: js.Any = js.native
   }
   
-  @scala.inline
-  def find[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.UndefOr[T]]]
-  @scala.inline
-  def find[T](
+  inline def find[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.UndefOr[T]]]
+  inline def find[T](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
     thisArg: js.Any
   ): OperatorFunction[T, js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.UndefOr[T]]]
   
-  @scala.inline
-  def find_TS_T[T, S /* <: T */](
+  inline def find_TS_T[T, S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
   ): OperatorFunction[T, js.UndefOr[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.UndefOr[S]]]
-  @scala.inline
-  def find_TS_T[T, S /* <: T */](
+  inline def find_TS_T[T, S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
     thisArg: js.Any
   ): OperatorFunction[T, js.UndefOr[S]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.UndefOr[S]]]

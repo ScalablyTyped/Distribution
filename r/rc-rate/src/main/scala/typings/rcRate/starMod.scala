@@ -66,82 +66,58 @@ object starMod {
   }
   object StarProps {
     
-    @scala.inline
-    def apply(): StarProps = {
+    inline def apply(): StarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StarProps]
     }
     
-    @scala.inline
-    implicit class StarPropsMutableBuilder[Self <: StarProps] (val x: Self) extends AnyVal {
+    extension [Self <: StarProps](x: Self) {
       
-      @scala.inline
-      def setAllowHalf(value: Boolean): Self = StObject.set(x, "allowHalf", value.asInstanceOf[js.Any])
+      inline def setAllowHalf(value: Boolean): Self = StObject.set(x, "allowHalf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHalfUndefined: Self = StObject.set(x, "allowHalf", js.undefined)
+      inline def setAllowHalfUndefined: Self = StObject.set(x, "allowHalf", js.undefined)
       
-      @scala.inline
-      def setCharacter(value: ReactNode): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: ReactNode): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacterRender(value: (/* origin */ ReactElement, StarProps) => ReactNode): Self = StObject.set(x, "characterRender", js.Any.fromFunction2(value))
+      inline def setCharacterRender(value: (/* origin */ ReactElement, StarProps) => ReactNode): Self = StObject.set(x, "characterRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCharacterRenderUndefined: Self = StObject.set(x, "characterRender", js.undefined)
+      inline def setCharacterRenderUndefined: Self = StObject.set(x, "characterRender", js.undefined)
       
-      @scala.inline
-      def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
+      inline def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+      inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setOnClick(
+      inline def setOnClick(
         value: (/* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement], /* index */ Double) => Unit
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnHover(value: (/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* index */ Double) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction2(value))
+      inline def setOnHover(value: (/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* index */ Double) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
+      inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

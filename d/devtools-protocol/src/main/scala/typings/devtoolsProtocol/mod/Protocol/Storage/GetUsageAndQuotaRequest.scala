@@ -13,16 +13,13 @@ trait GetUsageAndQuotaRequest extends StObject {
 }
 object GetUsageAndQuotaRequest {
   
-  @scala.inline
-  def apply(origin: String): GetUsageAndQuotaRequest = {
+  inline def apply(origin: String): GetUsageAndQuotaRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageAndQuotaRequest]
   }
   
-  @scala.inline
-  implicit class GetUsageAndQuotaRequestMutableBuilder[Self <: GetUsageAndQuotaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsageAndQuotaRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

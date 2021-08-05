@@ -154,7 +154,7 @@ object Cache {
     /**
       * A reference to the Phaser.Game instance that owns this CacheManager.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var game: typings.phaser.Phaser.Game = js.native
     
     /**

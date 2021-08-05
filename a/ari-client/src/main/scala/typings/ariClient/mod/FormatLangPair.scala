@@ -18,19 +18,15 @@ trait FormatLangPair extends StObject {
 }
 object FormatLangPair {
   
-  @scala.inline
-  def apply(format: String, language: String): FormatLangPair = {
+  inline def apply(format: String, language: String): FormatLangPair = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatLangPair]
   }
   
-  @scala.inline
-  implicit class FormatLangPairMutableBuilder[Self <: FormatLangPair] (val x: Self) extends AnyVal {
+  extension [Self <: FormatLangPair](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
   }
 }

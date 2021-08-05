@@ -29,31 +29,23 @@ trait ParamsResourceFloodlightactivitiesGeneratetag
 }
 object ParamsResourceFloodlightactivitiesGeneratetag {
   
-  @scala.inline
-  def apply(): ParamsResourceFloodlightactivitiesGeneratetag = {
+  inline def apply(): ParamsResourceFloodlightactivitiesGeneratetag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceFloodlightactivitiesGeneratetag]
   }
   
-  @scala.inline
-  implicit class ParamsResourceFloodlightactivitiesGeneratetagMutableBuilder[Self <: ParamsResourceFloodlightactivitiesGeneratetag] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceFloodlightactivitiesGeneratetag](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
+    inline def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
   }
 }

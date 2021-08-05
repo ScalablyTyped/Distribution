@@ -22,31 +22,23 @@ trait MigrationsUpdateImportEndpoint extends StObject {
 }
 object MigrationsUpdateImportEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): MigrationsUpdateImportEndpoint = {
+  inline def apply(owner: String, repo: String): MigrationsUpdateImportEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsUpdateImportEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsUpdateImportEndpointMutableBuilder[Self <: MigrationsUpdateImportEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsUpdateImportEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs_password(value: String): Self = StObject.set(x, "vcs_password", value.asInstanceOf[js.Any])
+    inline def setVcs_password(value: String): Self = StObject.set(x, "vcs_password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs_passwordUndefined: Self = StObject.set(x, "vcs_password", js.undefined)
+    inline def setVcs_passwordUndefined: Self = StObject.set(x, "vcs_password", js.undefined)
     
-    @scala.inline
-    def setVcs_username(value: String): Self = StObject.set(x, "vcs_username", value.asInstanceOf[js.Any])
+    inline def setVcs_username(value: String): Self = StObject.set(x, "vcs_username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs_usernameUndefined: Self = StObject.set(x, "vcs_username", js.undefined)
+    inline def setVcs_usernameUndefined: Self = StObject.set(x, "vcs_username", js.undefined)
   }
 }

@@ -62,22 +62,19 @@ object Image {
     * `null`, the method throws.
     * @param imageValue The value to create an Image instance from. See [ImageValue](../types.html#imagevalue)
     */
-  @scala.inline
-  def from(imageValue: ImageValue): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(imageValue.asInstanceOf[js.Any]).asInstanceOf[Image]
+  inline def from(imageValue: ImageValue): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(imageValue.asInstanceOf[js.Any]).asInstanceOf[Image]
   
   /**
     * Returns true if value is an ImageValue. This includes `null`. Use this to check if a value will be
     * accepted by an image property. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ImageValue */ Boolean]
+  inline def isImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ImageValue */ Boolean]
   
   /**
     * Returns true if value is a valid ImageValue. This excludes `null`. Use this to check if a value will
     * be accepted by Image.from. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isValidImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidImageValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ImageValue */ Boolean]
+  inline def isValidImageValue(value: js.Any): /* is tabris.tabris.ImageValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidImageValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ImageValue */ Boolean]
 }

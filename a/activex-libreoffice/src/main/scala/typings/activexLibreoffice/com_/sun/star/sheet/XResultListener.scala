@@ -20,8 +20,7 @@ trait XResultListener
 }
 object XResultListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     modified: ResultEvent => Unit,
@@ -32,10 +31,8 @@ object XResultListener {
     __obj.asInstanceOf[XResultListener]
   }
   
-  @scala.inline
-  implicit class XResultListenerMutableBuilder[Self <: XResultListener] (val x: Self) extends AnyVal {
+  extension [Self <: XResultListener](x: Self) {
     
-    @scala.inline
-    def setModified(value: ResultEvent => Unit): Self = StObject.set(x, "modified", js.Any.fromFunction1(value))
+    inline def setModified(value: ResultEvent => Unit): Self = StObject.set(x, "modified", js.Any.fromFunction1(value))
   }
 }

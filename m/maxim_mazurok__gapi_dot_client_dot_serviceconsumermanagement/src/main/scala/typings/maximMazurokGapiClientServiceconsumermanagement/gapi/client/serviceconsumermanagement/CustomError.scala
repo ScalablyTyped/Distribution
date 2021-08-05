@@ -14,31 +14,23 @@ trait CustomError extends StObject {
 }
 object CustomError {
   
-  @scala.inline
-  def apply(): CustomError = {
+  inline def apply(): CustomError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomError]
   }
   
-  @scala.inline
-  implicit class CustomErrorMutableBuilder[Self <: CustomError] (val x: Self) extends AnyVal {
+  extension [Self <: CustomError](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[CustomErrorRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[CustomErrorRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: CustomErrorRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: CustomErrorRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

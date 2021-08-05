@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]], config: Config[T]): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]], config: Config[T]): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("html-tableify", JSImport.Namespace)
   @js.native
@@ -24,14 +22,11 @@ object mod {
   trait Alignment extends StObject
   object Alignment {
     
-    @scala.inline
-    def center: typings.htmlTableify.htmlTableifyStrings.center = "center".asInstanceOf[typings.htmlTableify.htmlTableifyStrings.center]
+    inline def center: typings.htmlTableify.htmlTableifyStrings.center = "center".asInstanceOf[typings.htmlTableify.htmlTableifyStrings.center]
     
-    @scala.inline
-    def left: typings.htmlTableify.htmlTableifyStrings.left = "left".asInstanceOf[typings.htmlTableify.htmlTableifyStrings.left]
+    inline def left: typings.htmlTableify.htmlTableifyStrings.left = "left".asInstanceOf[typings.htmlTableify.htmlTableifyStrings.left]
     
-    @scala.inline
-    def right: typings.htmlTableify.htmlTableifyStrings.right = "right".asInstanceOf[typings.htmlTableify.htmlTableifyStrings.right]
+    inline def right: typings.htmlTableify.htmlTableifyStrings.right = "right".asInstanceOf[typings.htmlTableify.htmlTableifyStrings.right]
   }
   
   /** Table config object for data with keys `T`. */
@@ -44,29 +39,22 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply[T](): Config[T] = {
+    inline def apply[T](): Config[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config[T]]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[?], T] (val x: Self & Config[T]) extends AnyVal {
+    extension [Self <: Config[?], T](x: Self & Config[T]) {
       
-      @scala.inline
-      def setHeaders(value: js.Array[Header[T]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[Header[T]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: Header[T]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Header[T]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setTidy(value: Boolean): Self = StObject.set(x, "tidy", value.asInstanceOf[js.Any])
+      inline def setTidy(value: Boolean): Self = StObject.set(x, "tidy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTidyUndefined: Self = StObject.set(x, "tidy", js.undefined)
+      inline def setTidyUndefined: Self = StObject.set(x, "tidy", js.undefined)
     }
   }
   
@@ -89,29 +77,22 @@ object mod {
   }
   object Header {
     
-    @scala.inline
-    def apply[T](name: T): Header[T] = {
+    inline def apply[T](name: T): Header[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Header[T]]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header[?], T] (val x: Self & Header[T]) extends AnyVal {
+    extension [Self <: Header[?], T](x: Self & Header[T]) {
       
-      @scala.inline
-      def setAlign(value: Alignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Alignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

@@ -25,8 +25,7 @@ trait ChangeLastValidEndDate extends StObject {
 }
 object ChangeLastValidEndDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeLastValidEndDate: String => Unit,
     changeLastValidStartDate: String => Unit,
     handleClickDate: (typings.std.Date, String) => Unit,
@@ -40,31 +39,22 @@ object ChangeLastValidEndDate {
     __obj.asInstanceOf[ChangeLastValidEndDate]
   }
   
-  @scala.inline
-  implicit class ChangeLastValidEndDateMutableBuilder[Self <: ChangeLastValidEndDate] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeLastValidEndDate](x: Self) {
     
-    @scala.inline
-    def setChangeLastValidEndDate(value: String => Unit): Self = StObject.set(x, "changeLastValidEndDate", js.Any.fromFunction1(value))
+    inline def setChangeLastValidEndDate(value: String => Unit): Self = StObject.set(x, "changeLastValidEndDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeLastValidStartDate(value: String => Unit): Self = StObject.set(x, "changeLastValidStartDate", js.Any.fromFunction1(value))
+    inline def setChangeLastValidStartDate(value: String => Unit): Self = StObject.set(x, "changeLastValidStartDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
+    inline def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHandleFocusIn(value: MouseEvent => Unit): Self = StObject.set(x, "handleFocusIn", js.Any.fromFunction1(value))
+    inline def setHandleFocusIn(value: MouseEvent => Unit): Self = StObject.set(x, "handleFocusIn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleOutsideClick(value: MouseEvent => Unit): Self = StObject.set(x, "handleOutsideClick", js.Any.fromFunction1(value))
+    inline def setHandleOutsideClick(value: MouseEvent => Unit): Self = StObject.set(x, "handleOutsideClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTriggerFocusEvent(value: String => Unit): Self = StObject.set(x, "triggerFocusEvent", js.Any.fromFunction1(value))
+    inline def setTriggerFocusEvent(value: String => Unit): Self = StObject.set(x, "triggerFocusEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateReceivedEndDate(value: String => Unit): Self = StObject.set(x, "updateReceivedEndDate", js.Any.fromFunction1(value))
+    inline def setUpdateReceivedEndDate(value: String => Unit): Self = StObject.set(x, "updateReceivedEndDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateReceivedStartDate(value: String => Unit): Self = StObject.set(x, "updateReceivedStartDate", js.Any.fromFunction1(value))
+    inline def setUpdateReceivedStartDate(value: String => Unit): Self = StObject.set(x, "updateReceivedStartDate", js.Any.fromFunction1(value))
   }
 }

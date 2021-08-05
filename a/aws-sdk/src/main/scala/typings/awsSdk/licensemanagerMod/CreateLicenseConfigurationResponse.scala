@@ -13,19 +13,15 @@ trait CreateLicenseConfigurationResponse extends StObject {
 }
 object CreateLicenseConfigurationResponse {
   
-  @scala.inline
-  def apply(): CreateLicenseConfigurationResponse = {
+  inline def apply(): CreateLicenseConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLicenseConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class CreateLicenseConfigurationResponseMutableBuilder[Self <: CreateLicenseConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLicenseConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "LicenseConfigurationArn", js.undefined)
+    inline def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "LicenseConfigurationArn", js.undefined)
   }
 }

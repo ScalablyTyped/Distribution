@@ -23,49 +23,35 @@ trait PartialSearchBarStyle extends StObject {
 }
 object PartialSearchBarStyle {
   
-  @scala.inline
-  def apply(): PartialSearchBarStyle = {
+  inline def apply(): PartialSearchBarStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSearchBarStyle]
   }
   
-  @scala.inline
-  implicit class PartialSearchBarStyleMutableBuilder[Self <: PartialSearchBarStyle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSearchBarStyle](x: Self) {
     
-    @scala.inline
-    def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTextContainer(value: ViewStyle): Self = StObject.set(x, "cancelTextContainer", value.asInstanceOf[js.Any])
+    inline def setCancelTextContainer(value: ViewStyle): Self = StObject.set(x, "cancelTextContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTextContainerUndefined: Self = StObject.set(x, "cancelTextContainer", js.undefined)
+    inline def setCancelTextContainerUndefined: Self = StObject.set(x, "cancelTextContainer", js.undefined)
     
-    @scala.inline
-    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+    inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
-    @scala.inline
-    def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
+    inline def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputWrapperUndefined: Self = StObject.set(x, "inputWrapper", js.undefined)
+    inline def setInputWrapperUndefined: Self = StObject.set(x, "inputWrapper", js.undefined)
     
-    @scala.inline
-    def setSearch(value: TextStyle): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: TextStyle): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

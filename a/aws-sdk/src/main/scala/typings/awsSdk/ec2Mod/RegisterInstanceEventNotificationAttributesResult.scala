@@ -13,19 +13,15 @@ trait RegisterInstanceEventNotificationAttributesResult extends StObject {
 }
 object RegisterInstanceEventNotificationAttributesResult {
   
-  @scala.inline
-  def apply(): RegisterInstanceEventNotificationAttributesResult = {
+  inline def apply(): RegisterInstanceEventNotificationAttributesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterInstanceEventNotificationAttributesResult]
   }
   
-  @scala.inline
-  implicit class RegisterInstanceEventNotificationAttributesResultMutableBuilder[Self <: RegisterInstanceEventNotificationAttributesResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterInstanceEventNotificationAttributesResult](x: Self) {
     
-    @scala.inline
-    def setInstanceTagAttribute(value: InstanceTagNotificationAttribute): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
+    inline def setInstanceTagAttribute(value: InstanceTagNotificationAttribute): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTagAttributeUndefined: Self = StObject.set(x, "InstanceTagAttribute", js.undefined)
+    inline def setInstanceTagAttributeUndefined: Self = StObject.set(x, "InstanceTagAttribute", js.undefined)
   }
 }

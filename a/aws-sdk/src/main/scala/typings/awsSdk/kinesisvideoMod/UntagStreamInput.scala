@@ -23,31 +23,23 @@ trait UntagStreamInput extends StObject {
 }
 object UntagStreamInput {
   
-  @scala.inline
-  def apply(TagKeyList: TagKeyList): UntagStreamInput = {
+  inline def apply(TagKeyList: TagKeyList): UntagStreamInput = {
     val __obj = js.Dynamic.literal(TagKeyList = TagKeyList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagStreamInput]
   }
   
-  @scala.inline
-  implicit class UntagStreamInputMutableBuilder[Self <: UntagStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: UntagStreamInput](x: Self) {
     
-    @scala.inline
-    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
-    @scala.inline
-    def setTagKeyList(value: TagKeyList): Self = StObject.set(x, "TagKeyList", value.asInstanceOf[js.Any])
+    inline def setTagKeyList(value: TagKeyList): Self = StObject.set(x, "TagKeyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeyListVarargs(value: TagKey*): Self = StObject.set(x, "TagKeyList", js.Array(value :_*))
+    inline def setTagKeyListVarargs(value: TagKey*): Self = StObject.set(x, "TagKeyList", js.Array(value :_*))
   }
 }

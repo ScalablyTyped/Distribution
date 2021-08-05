@@ -15,13 +15,11 @@ object protractorProtractorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def protractorTestkitFactoryCreator[T](
+  inline def protractorTestkitFactoryCreator[T](
     driverFactory: js.Function3[/* wrapper */ ElementFinder, /* body */ ElementFinder, /* options */ DataHookString, T]
   ): js.Function1[/* obj */ Wrapper, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("protractorTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ Wrapper, T]]
   
-  @scala.inline
-  def protractorUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
+  inline def protractorUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
     driverFactory: js.Function3[
       /* base */ UniDriver[js.Any], 
       /* body */ UniDriver[js.Any], 

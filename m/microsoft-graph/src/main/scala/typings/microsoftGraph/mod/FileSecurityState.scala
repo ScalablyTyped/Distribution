@@ -23,49 +23,35 @@ trait FileSecurityState extends StObject {
 }
 object FileSecurityState {
   
-  @scala.inline
-  def apply(): FileSecurityState = {
+  inline def apply(): FileSecurityState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSecurityState]
   }
   
-  @scala.inline
-  implicit class FileSecurityStateMutableBuilder[Self <: FileSecurityState] (val x: Self) extends AnyVal {
+  extension [Self <: FileSecurityState](x: Self) {
     
-    @scala.inline
-    def setFileHash(value: NullableOption[FileHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
+    inline def setFileHash(value: NullableOption[FileHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashNull: Self = StObject.set(x, "fileHash", null)
+    inline def setFileHashNull: Self = StObject.set(x, "fileHash", null)
     
-    @scala.inline
-    def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
+    inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathNull: Self = StObject.set(x, "path", null)
+    inline def setPathNull: Self = StObject.set(x, "path", null)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
+    inline def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
+    inline def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
     
-    @scala.inline
-    def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
+    inline def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
   }
 }

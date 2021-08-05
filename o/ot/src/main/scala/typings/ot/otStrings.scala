@@ -11,20 +11,17 @@ object otStrings {
   sealed trait normal
     extends StObject
        with UndoState
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait redoing
     extends StObject
        with UndoState
-  @scala.inline
-  def redoing: redoing = "redoing".asInstanceOf[redoing]
+  inline def redoing: redoing = "redoing".asInstanceOf[redoing]
   
   @js.native
   sealed trait undoing
     extends StObject
        with UndoState
-  @scala.inline
-  def undoing: undoing = "undoing".asInstanceOf[undoing]
+  inline def undoing: undoing = "undoing".asInstanceOf[undoing]
 }

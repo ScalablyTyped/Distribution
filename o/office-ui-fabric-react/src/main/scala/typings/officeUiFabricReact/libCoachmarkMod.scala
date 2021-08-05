@@ -33,7 +33,6 @@ object libCoachmarkMod {
     @JSImport("office-ui-fabric-react/lib/Coachmark", "CoachmarkBase.defaultProps")
     @js.native
     def defaultProps: PartialICoachmarkProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialICoachmarkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialICoachmarkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

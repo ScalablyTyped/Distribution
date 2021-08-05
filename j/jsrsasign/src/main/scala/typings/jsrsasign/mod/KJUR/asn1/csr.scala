@@ -64,8 +64,7 @@ object csr {
       * o = KJUR.asn1.csr.CSRUtil.getInfo("-----BEGIN CERTIFICATE REQUEST...");
       * console.log(o.subject.name) → "/C=US/O=Test"
       */
-    @scala.inline
-    def getInfo(sPEM: String): PEMInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(sPEM.asInstanceOf[js.Any]).asInstanceOf[PEMInfo]
+    inline def getInfo(sPEM: String): PEMInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(sPEM.asInstanceOf[js.Any]).asInstanceOf[PEMInfo]
     
     /**
       * generate a PEM format of CSR/PKCS#10 certificate signing request
@@ -117,10 +116,8 @@ object csr {
       *   sbjprvkey: prvKeyPEM
       * });
       */
-    @scala.inline
-    def newCSRPEM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCSRPEM")().asInstanceOf[String]
-    @scala.inline
-    def newCSRPEM(param: Ext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCSRPEM")(param.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def newCSRPEM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCSRPEM")().asInstanceOf[String]
+    inline def newCSRPEM(param: Ext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCSRPEM")(param.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /**

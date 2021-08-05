@@ -18,19 +18,15 @@ trait AttachStaticIpRequest extends StObject {
 }
 object AttachStaticIpRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName, staticIpName: ResourceName): AttachStaticIpRequest = {
+  inline def apply(instanceName: ResourceName, staticIpName: ResourceName): AttachStaticIpRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], staticIpName = staticIpName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachStaticIpRequest]
   }
   
-  @scala.inline
-  implicit class AttachStaticIpRequestMutableBuilder[Self <: AttachStaticIpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachStaticIpRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticIpName(value: ResourceName): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
+    inline def setStaticIpName(value: ResourceName): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
   }
 }

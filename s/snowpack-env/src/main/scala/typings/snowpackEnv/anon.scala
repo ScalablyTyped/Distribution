@@ -17,23 +17,18 @@ object anon {
   }
   object Deps {
     
-    @scala.inline
-    def apply(deps: js.Array[js.Any], module: js.Any): Deps = {
+    inline def apply(deps: js.Array[js.Any], module: js.Any): Deps = {
       val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
       __obj.asInstanceOf[Deps]
     }
     
-    @scala.inline
-    implicit class DepsMutableBuilder[Self <: Deps] (val x: Self) extends AnyVal {
+    extension [Self <: Deps](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,29 +46,22 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(MODE: String, NODE_ENV: String, SNOWPACK_PUBLIC_API_URL: String): Dictkey = {
+    inline def apply(MODE: String, NODE_ENV: String, SNOWPACK_PUBLIC_API_URL: String): Dictkey = {
       val __obj = js.Dynamic.literal(MODE = MODE.asInstanceOf[js.Any], NODE_ENV = NODE_ENV.asInstanceOf[js.Any], SNOWPACK_PUBLIC_API_URL = SNOWPACK_PUBLIC_API_URL.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setMODE(value: String): Self = StObject.set(x, "MODE", value.asInstanceOf[js.Any])
+      inline def setMODE(value: String): Self = StObject.set(x, "MODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNODE_ENV(value: String): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
+      inline def setNODE_ENV(value: String): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSNOWPACK_PUBLIC_API_URL(value: String): Self = StObject.set(x, "SNOWPACK_PUBLIC_API_URL", value.asInstanceOf[js.Any])
+      inline def setSNOWPACK_PUBLIC_API_URL(value: String): Self = StObject.set(x, "SNOWPACK_PUBLIC_API_URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSR(value: Boolean): Self = StObject.set(x, "SSR", value.asInstanceOf[js.Any])
+      inline def setSSR(value: Boolean): Self = StObject.set(x, "SSR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSRUndefined: Self = StObject.set(x, "SSR", js.undefined)
+      inline def setSSRUndefined: Self = StObject.set(x, "SSR", js.undefined)
     }
   }
   
@@ -84,17 +72,14 @@ object anon {
   }
   object Module {
     
-    @scala.inline
-    def apply(module: js.Any): Module = {
+    inline def apply(module: js.Any): Module = {
       val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any])
       __obj.asInstanceOf[Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+    extension [Self <: Module](x: Self) {
       
-      @scala.inline
-      def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
   }
 }

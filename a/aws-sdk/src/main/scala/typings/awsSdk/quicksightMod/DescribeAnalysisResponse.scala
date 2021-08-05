@@ -23,31 +23,23 @@ trait DescribeAnalysisResponse extends StObject {
 }
 object DescribeAnalysisResponse {
   
-  @scala.inline
-  def apply(): DescribeAnalysisResponse = {
+  inline def apply(): DescribeAnalysisResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAnalysisResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAnalysisResponseMutableBuilder[Self <: DescribeAnalysisResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAnalysisResponse](x: Self) {
     
-    @scala.inline
-    def setAnalysis(value: Analysis): Self = StObject.set(x, "Analysis", value.asInstanceOf[js.Any])
+    inline def setAnalysis(value: Analysis): Self = StObject.set(x, "Analysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisUndefined: Self = StObject.set(x, "Analysis", js.undefined)
+    inline def setAnalysisUndefined: Self = StObject.set(x, "Analysis", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

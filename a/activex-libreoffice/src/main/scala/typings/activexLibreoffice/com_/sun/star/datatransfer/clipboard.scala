@@ -29,17 +29,14 @@ object clipboard {
   }
   object ClipboardEvent {
     
-    @scala.inline
-    def apply(Contents: XTransferable, Source: XInterface): ClipboardEvent = {
+    inline def apply(Contents: XTransferable, Source: XInterface): ClipboardEvent = {
       val __obj = js.Dynamic.literal(Contents = Contents.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClipboardEvent]
     }
     
-    @scala.inline
-    implicit class ClipboardEventMutableBuilder[Self <: ClipboardEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ClipboardEvent](x: Self) {
       
-      @scala.inline
-      def setContents(value: XTransferable): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: XTransferable): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,8 +50,7 @@ object clipboard {
        with XComponent
   object ClipboardManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addClipboard: XClipboard => Unit,
       addEventListener: XEventListener => Unit,
@@ -80,8 +76,7 @@ object clipboard {
        with XComponent
   object GenericClipboard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Contents: XTransferable,
       Name: String,
       RenderingCapabilities: Double,
@@ -113,11 +108,9 @@ object clipboard {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def Delayed: `1` = 1.asInstanceOf[`1`]
+      inline def Delayed: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def Persistant: `2` = 2.asInstanceOf[`2`]
+      inline def Persistant: `2` = 2.asInstanceOf[`2`]
     }
   }
   
@@ -166,8 +159,7 @@ object clipboard {
   }
   object XClipboard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Contents: XTransferable,
       Name: String,
       acquire: () => Unit,
@@ -181,23 +173,17 @@ object clipboard {
       __obj.asInstanceOf[XClipboard]
     }
     
-    @scala.inline
-    implicit class XClipboardMutableBuilder[Self <: XClipboard] (val x: Self) extends AnyVal {
+    extension [Self <: XClipboard](x: Self) {
       
-      @scala.inline
-      def setContents(value: XTransferable): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: XTransferable): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetContents(value: () => XTransferable): Self = StObject.set(x, "getContents", js.Any.fromFunction0(value))
+      inline def setGetContents(value: () => XTransferable): Self = StObject.set(x, "getContents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetContents(value: (XTransferable, XClipboardOwner) => Unit): Self = StObject.set(x, "setContents", js.Any.fromFunction2(value))
+      inline def setSetContents(value: (XTransferable, XClipboardOwner) => Unit): Self = StObject.set(x, "setContents", js.Any.fromFunction2(value))
     }
   }
   
@@ -225,8 +211,7 @@ object clipboard {
   }
   object XClipboardEx {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Contents: XTransferable,
       Name: String,
       RenderingCapabilities: Double,
@@ -242,14 +227,11 @@ object clipboard {
       __obj.asInstanceOf[XClipboardEx]
     }
     
-    @scala.inline
-    implicit class XClipboardExMutableBuilder[Self <: XClipboardEx] (val x: Self) extends AnyVal {
+    extension [Self <: XClipboardEx](x: Self) {
       
-      @scala.inline
-      def setGetRenderingCapabilities(value: () => Double): Self = StObject.set(x, "getRenderingCapabilities", js.Any.fromFunction0(value))
+      inline def setGetRenderingCapabilities(value: () => Double): Self = StObject.set(x, "getRenderingCapabilities", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderingCapabilities(value: Double): Self = StObject.set(x, "RenderingCapabilities", value.asInstanceOf[js.Any])
+      inline def setRenderingCapabilities(value: Double): Self = StObject.set(x, "RenderingCapabilities", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,8 +253,7 @@ object clipboard {
   }
   object XClipboardFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       createClipboard: String => XClipboard,
       queryInterface: `type` => js.Any,
@@ -282,11 +263,9 @@ object clipboard {
       __obj.asInstanceOf[XClipboardFactory]
     }
     
-    @scala.inline
-    implicit class XClipboardFactoryMutableBuilder[Self <: XClipboardFactory] (val x: Self) extends AnyVal {
+    extension [Self <: XClipboardFactory](x: Self) {
       
-      @scala.inline
-      def setCreateClipboard(value: String => XClipboard): Self = StObject.set(x, "createClipboard", js.Any.fromFunction1(value))
+      inline def setCreateClipboard(value: String => XClipboard): Self = StObject.set(x, "createClipboard", js.Any.fromFunction1(value))
     }
   }
   
@@ -304,8 +283,7 @@ object clipboard {
   }
   object XClipboardListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       changedContents: ClipboardEvent => Unit,
       disposing: EventObject => Unit,
@@ -316,11 +294,9 @@ object clipboard {
       __obj.asInstanceOf[XClipboardListener]
     }
     
-    @scala.inline
-    implicit class XClipboardListenerMutableBuilder[Self <: XClipboardListener] (val x: Self) extends AnyVal {
+    extension [Self <: XClipboardListener](x: Self) {
       
-      @scala.inline
-      def setChangedContents(value: ClipboardEvent => Unit): Self = StObject.set(x, "changedContents", js.Any.fromFunction1(value))
+      inline def setChangedContents(value: ClipboardEvent => Unit): Self = StObject.set(x, "changedContents", js.Any.fromFunction1(value))
     }
   }
   
@@ -362,8 +338,7 @@ object clipboard {
   }
   object XClipboardManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addClipboard: XClipboard => Unit,
       getClipboard: String => XClipboard,
@@ -376,20 +351,15 @@ object clipboard {
       __obj.asInstanceOf[XClipboardManager]
     }
     
-    @scala.inline
-    implicit class XClipboardManagerMutableBuilder[Self <: XClipboardManager] (val x: Self) extends AnyVal {
+    extension [Self <: XClipboardManager](x: Self) {
       
-      @scala.inline
-      def setAddClipboard(value: XClipboard => Unit): Self = StObject.set(x, "addClipboard", js.Any.fromFunction1(value))
+      inline def setAddClipboard(value: XClipboard => Unit): Self = StObject.set(x, "addClipboard", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetClipboard(value: String => XClipboard): Self = StObject.set(x, "getClipboard", js.Any.fromFunction1(value))
+      inline def setGetClipboard(value: String => XClipboard): Self = StObject.set(x, "getClipboard", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListClipboardNames(value: () => SafeArray[String]): Self = StObject.set(x, "listClipboardNames", js.Any.fromFunction0(value))
+      inline def setListClipboardNames(value: () => SafeArray[String]): Self = StObject.set(x, "listClipboardNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveClipboard(value: String => Unit): Self = StObject.set(x, "removeClipboard", js.Any.fromFunction1(value))
+      inline def setRemoveClipboard(value: String => Unit): Self = StObject.set(x, "removeClipboard", js.Any.fromFunction1(value))
     }
   }
   
@@ -411,8 +381,7 @@ object clipboard {
   }
   object XClipboardNotifier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addClipboardListener: XClipboardListener => Unit,
       queryInterface: `type` => js.Any,
@@ -423,14 +392,11 @@ object clipboard {
       __obj.asInstanceOf[XClipboardNotifier]
     }
     
-    @scala.inline
-    implicit class XClipboardNotifierMutableBuilder[Self <: XClipboardNotifier] (val x: Self) extends AnyVal {
+    extension [Self <: XClipboardNotifier](x: Self) {
       
-      @scala.inline
-      def setAddClipboardListener(value: XClipboardListener => Unit): Self = StObject.set(x, "addClipboardListener", js.Any.fromFunction1(value))
+      inline def setAddClipboardListener(value: XClipboardListener => Unit): Self = StObject.set(x, "addClipboardListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClipboardListener(value: XClipboardListener => Unit): Self = StObject.set(x, "removeClipboardListener", js.Any.fromFunction1(value))
+      inline def setRemoveClipboardListener(value: XClipboardListener => Unit): Self = StObject.set(x, "removeClipboardListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -453,8 +419,7 @@ object clipboard {
   }
   object XClipboardOwner {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       lostOwnership: (XClipboard, XTransferable) => Unit,
       queryInterface: `type` => js.Any,
@@ -464,11 +429,9 @@ object clipboard {
       __obj.asInstanceOf[XClipboardOwner]
     }
     
-    @scala.inline
-    implicit class XClipboardOwnerMutableBuilder[Self <: XClipboardOwner] (val x: Self) extends AnyVal {
+    extension [Self <: XClipboardOwner](x: Self) {
       
-      @scala.inline
-      def setLostOwnership(value: (XClipboard, XTransferable) => Unit): Self = StObject.set(x, "lostOwnership", js.Any.fromFunction2(value))
+      inline def setLostOwnership(value: (XClipboard, XTransferable) => Unit): Self = StObject.set(x, "lostOwnership", js.Any.fromFunction2(value))
     }
   }
   
@@ -485,8 +448,7 @@ object clipboard {
   }
   object XFlushableClipboard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       flushClipboard: () => Unit,
       queryInterface: `type` => js.Any,
@@ -496,11 +458,9 @@ object clipboard {
       __obj.asInstanceOf[XFlushableClipboard]
     }
     
-    @scala.inline
-    implicit class XFlushableClipboardMutableBuilder[Self <: XFlushableClipboard] (val x: Self) extends AnyVal {
+    extension [Self <: XFlushableClipboard](x: Self) {
       
-      @scala.inline
-      def setFlushClipboard(value: () => Unit): Self = StObject.set(x, "flushClipboard", js.Any.fromFunction0(value))
+      inline def setFlushClipboard(value: () => Unit): Self = StObject.set(x, "flushClipboard", js.Any.fromFunction0(value))
     }
   }
   
@@ -516,8 +476,7 @@ object clipboard {
        with XComponent
   object XSystemClipboard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Contents: XTransferable,
       Name: String,
       RenderingCapabilities: Double,

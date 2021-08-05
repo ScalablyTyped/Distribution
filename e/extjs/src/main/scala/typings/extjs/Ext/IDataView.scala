@@ -29,37 +29,27 @@ trait IDataView
 }
 object IDataView {
   
-  @scala.inline
-  def apply(): IDataView = {
+  inline def apply(): IDataView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDataView]
   }
   
-  @scala.inline
-  implicit class IDataViewMutableBuilder[Self <: IDataView] (val x: Self) extends AnyVal {
+  extension [Self <: IDataView](x: Self) {
     
-    @scala.inline
-    def setClearHighlight(value: () => Unit): Self = StObject.set(x, "clearHighlight", js.Any.fromFunction0(value))
+    inline def setClearHighlight(value: () => Unit): Self = StObject.set(x, "clearHighlight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearHighlightUndefined: Self = StObject.set(x, "clearHighlight", js.undefined)
+    inline def setClearHighlightUndefined: Self = StObject.set(x, "clearHighlight", js.undefined)
     
-    @scala.inline
-    def setFocusNode(value: /* rec */ js.UndefOr[IModel] => Unit): Self = StObject.set(x, "focusNode", js.Any.fromFunction1(value))
+    inline def setFocusNode(value: /* rec */ js.UndefOr[IModel] => Unit): Self = StObject.set(x, "focusNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFocusNodeUndefined: Self = StObject.set(x, "focusNode", js.undefined)
+    inline def setFocusNodeUndefined: Self = StObject.set(x, "focusNode", js.undefined)
     
-    @scala.inline
-    def setHighlightItem(value: /* item */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+    inline def setHighlightItem(value: /* item */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
+    inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
-    @scala.inline
-    def setMouseOverOutBuffer(value: Double): Self = StObject.set(x, "mouseOverOutBuffer", value.asInstanceOf[js.Any])
+    inline def setMouseOverOutBuffer(value: Double): Self = StObject.set(x, "mouseOverOutBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseOverOutBufferUndefined: Self = StObject.set(x, "mouseOverOutBuffer", js.undefined)
+    inline def setMouseOverOutBufferUndefined: Self = StObject.set(x, "mouseOverOutBuffer", js.undefined)
   }
 }

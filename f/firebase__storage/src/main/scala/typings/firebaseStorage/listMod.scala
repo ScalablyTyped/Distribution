@@ -17,9 +17,9 @@ object listMod {
        with ListResult {
     def this(_delegate: typings.firebaseStorage.srcListMod.ListResult, _service: StorageServiceCompat) = this()
     
-    val _delegate: js.Any = js.native
+    /* private */ val _delegate: js.Any = js.native
     
-    val _service: js.Any = js.native
+    /* private */ val _service: js.Any = js.native
     
     /* CompleteClass */
     var items: js.Array[Reference] = js.native

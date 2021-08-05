@@ -14,25 +14,19 @@ trait ContentInstreamPositionAssignedTargetingOptionDetails extends StObject {
 }
 object ContentInstreamPositionAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ContentInstreamPositionAssignedTargetingOptionDetails = {
+  inline def apply(): ContentInstreamPositionAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentInstreamPositionAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ContentInstreamPositionAssignedTargetingOptionDetailsMutableBuilder[Self <: ContentInstreamPositionAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ContentInstreamPositionAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setContentInstreamPosition(value: String): Self = StObject.set(x, "contentInstreamPosition", value.asInstanceOf[js.Any])
+    inline def setContentInstreamPosition(value: String): Self = StObject.set(x, "contentInstreamPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentInstreamPositionUndefined: Self = StObject.set(x, "contentInstreamPosition", js.undefined)
+    inline def setContentInstreamPositionUndefined: Self = StObject.set(x, "contentInstreamPosition", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

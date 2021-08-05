@@ -10,8 +10,7 @@ object filterNotMod {
   /**
     * Like `filter`, but remove items where the filter returns true.
     */
-  @scala.inline
-  def apply[InOut](test: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
+  inline def apply[InOut](test: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
   
   @JSImport("pull-stream/throughs/filter-not", JSImport.Namespace)
   @js.native

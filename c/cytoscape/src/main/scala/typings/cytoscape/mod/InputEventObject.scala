@@ -20,8 +20,7 @@ trait InputEventObject
 }
 object InputEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cy: Core,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -42,16 +41,12 @@ object InputEventObject {
     __obj.asInstanceOf[InputEventObject]
   }
   
-  @scala.inline
-  implicit class InputEventObjectMutableBuilder[Self <: InputEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: InputEventObject](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
+    inline def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
   }
 }

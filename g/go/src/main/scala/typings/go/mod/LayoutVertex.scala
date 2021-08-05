@@ -113,8 +113,7 @@ object LayoutVertex {
     * @param {LayoutVertex} n
     */
   /* static member */
-  @scala.inline
-  def smartComparer(m: LayoutVertex, n: LayoutVertex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smartComparer")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def smartComparer(m: LayoutVertex, n: LayoutVertex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smartComparer")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
@@ -122,6 +121,5 @@ object LayoutVertex {
     * @param {LayoutVertex} n
     */
   /* static member */
-  @scala.inline
-  def standardComparer(m: LayoutVertex, n: LayoutVertex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("standardComparer")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def standardComparer(m: LayoutVertex, n: LayoutVertex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("standardComparer")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

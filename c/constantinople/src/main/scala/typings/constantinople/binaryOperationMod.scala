@@ -11,8 +11,7 @@ object binaryOperationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(operator: Operator, left: js.Any, right: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(operator: Operator, left: js.Any, right: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.constantinople.constantinopleStrings.Plussign
@@ -41,70 +40,48 @@ object binaryOperationMod {
   trait Operator extends StObject
   object Operator {
     
-    @scala.inline
-    def ^ : typings.constantinople.constantinopleStrings.^ = "^".asInstanceOf[typings.constantinople.constantinopleStrings.^]
+    inline def ^ : typings.constantinople.constantinopleStrings.^ = "^".asInstanceOf[typings.constantinople.constantinopleStrings.^]
     
-    @scala.inline
-    def Ampersand: typings.constantinople.constantinopleStrings.Ampersand = "&".asInstanceOf[typings.constantinople.constantinopleStrings.Ampersand]
+    inline def Ampersand: typings.constantinople.constantinopleStrings.Ampersand = "&".asInstanceOf[typings.constantinople.constantinopleStrings.Ampersand]
     
-    @scala.inline
-    def Asterisk: typings.constantinople.constantinopleStrings.Asterisk = "*".asInstanceOf[typings.constantinople.constantinopleStrings.Asterisk]
+    inline def Asterisk: typings.constantinople.constantinopleStrings.Asterisk = "*".asInstanceOf[typings.constantinople.constantinopleStrings.Asterisk]
     
-    @scala.inline
-    def AsteriskAsterisk: typings.constantinople.constantinopleStrings.AsteriskAsterisk = "**".asInstanceOf[typings.constantinople.constantinopleStrings.AsteriskAsterisk]
+    inline def AsteriskAsterisk: typings.constantinople.constantinopleStrings.AsteriskAsterisk = "**".asInstanceOf[typings.constantinople.constantinopleStrings.AsteriskAsterisk]
     
-    @scala.inline
-    def EqualssignEqualssign: typings.constantinople.constantinopleStrings.EqualssignEqualssign = "==".asInstanceOf[typings.constantinople.constantinopleStrings.EqualssignEqualssign]
+    inline def EqualssignEqualssign: typings.constantinople.constantinopleStrings.EqualssignEqualssign = "==".asInstanceOf[typings.constantinople.constantinopleStrings.EqualssignEqualssign]
     
-    @scala.inline
-    def EqualssignEqualssignEqualssign: typings.constantinople.constantinopleStrings.EqualssignEqualssignEqualssign = "===".asInstanceOf[typings.constantinople.constantinopleStrings.EqualssignEqualssignEqualssign]
+    inline def EqualssignEqualssignEqualssign: typings.constantinople.constantinopleStrings.EqualssignEqualssignEqualssign = "===".asInstanceOf[typings.constantinople.constantinopleStrings.EqualssignEqualssignEqualssign]
     
-    @scala.inline
-    def ExclamationmarkEqualssign: typings.constantinople.constantinopleStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.constantinople.constantinopleStrings.ExclamationmarkEqualssign]
+    inline def ExclamationmarkEqualssign: typings.constantinople.constantinopleStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.constantinople.constantinopleStrings.ExclamationmarkEqualssign]
     
-    @scala.inline
-    def ExclamationmarkEqualssignEqualssign: typings.constantinople.constantinopleStrings.ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[typings.constantinople.constantinopleStrings.ExclamationmarkEqualssignEqualssign]
+    inline def ExclamationmarkEqualssignEqualssign: typings.constantinople.constantinopleStrings.ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[typings.constantinople.constantinopleStrings.ExclamationmarkEqualssignEqualssign]
     
-    @scala.inline
-    def Greaterthansign: typings.constantinople.constantinopleStrings.Greaterthansign = ">".asInstanceOf[typings.constantinople.constantinopleStrings.Greaterthansign]
+    inline def Greaterthansign: typings.constantinople.constantinopleStrings.Greaterthansign = ">".asInstanceOf[typings.constantinople.constantinopleStrings.Greaterthansign]
     
-    @scala.inline
-    def GreaterthansignEqualssign: typings.constantinople.constantinopleStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.constantinople.constantinopleStrings.GreaterthansignEqualssign]
+    inline def GreaterthansignEqualssign: typings.constantinople.constantinopleStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.constantinople.constantinopleStrings.GreaterthansignEqualssign]
     
-    @scala.inline
-    def GreaterthansignGreaterthansign: typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansign = ">>".asInstanceOf[typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansign]
+    inline def GreaterthansignGreaterthansign: typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansign = ">>".asInstanceOf[typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansign]
     
-    @scala.inline
-    def GreaterthansignGreaterthansignGreaterthansign: typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansignGreaterthansign]
+    inline def GreaterthansignGreaterthansignGreaterthansign: typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[typings.constantinople.constantinopleStrings.GreaterthansignGreaterthansignGreaterthansign]
     
-    @scala.inline
-    def Lessthansign: typings.constantinople.constantinopleStrings.Lessthansign = "<".asInstanceOf[typings.constantinople.constantinopleStrings.Lessthansign]
+    inline def Lessthansign: typings.constantinople.constantinopleStrings.Lessthansign = "<".asInstanceOf[typings.constantinople.constantinopleStrings.Lessthansign]
     
-    @scala.inline
-    def LessthansignEqualssign: typings.constantinople.constantinopleStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.constantinople.constantinopleStrings.LessthansignEqualssign]
+    inline def LessthansignEqualssign: typings.constantinople.constantinopleStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.constantinople.constantinopleStrings.LessthansignEqualssign]
     
-    @scala.inline
-    def LessthansignLessthansign: typings.constantinople.constantinopleStrings.LessthansignLessthansign = "<<".asInstanceOf[typings.constantinople.constantinopleStrings.LessthansignLessthansign]
+    inline def LessthansignLessthansign: typings.constantinople.constantinopleStrings.LessthansignLessthansign = "<<".asInstanceOf[typings.constantinople.constantinopleStrings.LessthansignLessthansign]
     
-    @scala.inline
-    def Percentsign: typings.constantinople.constantinopleStrings.Percentsign = "%".asInstanceOf[typings.constantinople.constantinopleStrings.Percentsign]
+    inline def Percentsign: typings.constantinople.constantinopleStrings.Percentsign = "%".asInstanceOf[typings.constantinople.constantinopleStrings.Percentsign]
     
-    @scala.inline
-    def Plussign: typings.constantinople.constantinopleStrings.Plussign = "+".asInstanceOf[typings.constantinople.constantinopleStrings.Plussign]
+    inline def Plussign: typings.constantinople.constantinopleStrings.Plussign = "+".asInstanceOf[typings.constantinople.constantinopleStrings.Plussign]
     
-    @scala.inline
-    def Slash: typings.constantinople.constantinopleStrings.Slash = "/".asInstanceOf[typings.constantinople.constantinopleStrings.Slash]
+    inline def Slash: typings.constantinople.constantinopleStrings.Slash = "/".asInstanceOf[typings.constantinople.constantinopleStrings.Slash]
     
-    @scala.inline
-    def Verticalline: typings.constantinople.constantinopleStrings.Verticalline = "|".asInstanceOf[typings.constantinople.constantinopleStrings.Verticalline]
+    inline def Verticalline: typings.constantinople.constantinopleStrings.Verticalline = "|".asInstanceOf[typings.constantinople.constantinopleStrings.Verticalline]
     
-    @scala.inline
-    def _dash: `-_` = "-".asInstanceOf[`-_`]
+    inline def _dash: `-_` = "-".asInstanceOf[`-_`]
     
-    @scala.inline
-    def in: typings.constantinople.constantinopleStrings.in = "in".asInstanceOf[typings.constantinople.constantinopleStrings.in]
+    inline def in: typings.constantinople.constantinopleStrings.in = "in".asInstanceOf[typings.constantinople.constantinopleStrings.in]
     
-    @scala.inline
-    def instanceof: typings.constantinople.constantinopleStrings.instanceof = "instanceof".asInstanceOf[typings.constantinople.constantinopleStrings.instanceof]
+    inline def instanceof: typings.constantinople.constantinopleStrings.instanceof = "instanceof".asInstanceOf[typings.constantinople.constantinopleStrings.instanceof]
   }
 }

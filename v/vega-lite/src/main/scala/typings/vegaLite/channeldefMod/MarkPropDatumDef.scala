@@ -53,52 +53,37 @@ trait MarkPropDatumDef[F /* <: Field */] extends StObject {
 }
 object MarkPropDatumDef {
   
-  @scala.inline
-  def apply[F /* <: Field */](): MarkPropDatumDef[F] = {
+  inline def apply[F /* <: Field */](): MarkPropDatumDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkPropDatumDef[F]]
   }
   
-  @scala.inline
-  implicit class MarkPropDatumDefMutableBuilder[Self <: MarkPropDatumDef[?], F /* <: Field */] (val x: Self & MarkPropDatumDef[F]) extends AnyVal {
+  extension [Self <: MarkPropDatumDef[?], F /* <: Field */](x: Self & MarkPropDatumDef[F]) {
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     
-    @scala.inline
-    def setDatum(value: PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumNull: Self = StObject.set(x, "datum", null)
+    inline def setDatumNull: Self = StObject.set(x, "datum", null)
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setLegend(value: Legend[ExprRef | SignalRef]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Legend[ExprRef | SignalRef]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendNull: Self = StObject.set(x, "legend", null)
+    inline def setLegendNull: Self = StObject.set(x, "legend", null)
     
-    @scala.inline
-    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    @scala.inline
-    def setScale(value: Scale[ExprRef | SignalRef]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Scale[ExprRef | SignalRef]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleNull: Self = StObject.set(x, "scale", null)
+    inline def setScaleNull: Self = StObject.set(x, "scale", null)
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

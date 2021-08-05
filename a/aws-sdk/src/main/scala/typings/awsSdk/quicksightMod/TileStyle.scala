@@ -13,19 +13,15 @@ trait TileStyle extends StObject {
 }
 object TileStyle {
   
-  @scala.inline
-  def apply(): TileStyle = {
+  inline def apply(): TileStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileStyle]
   }
   
-  @scala.inline
-  implicit class TileStyleMutableBuilder[Self <: TileStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TileStyle](x: Self) {
     
-    @scala.inline
-    def setBorder(value: BorderStyle): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: BorderStyle): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "Border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "Border", js.undefined)
   }
 }

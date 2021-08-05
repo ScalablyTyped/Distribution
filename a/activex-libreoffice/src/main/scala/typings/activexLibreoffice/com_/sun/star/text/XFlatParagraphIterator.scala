@@ -68,8 +68,7 @@ trait XFlatParagraphIterator
 }
 object XFlatParagraphIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FirstPara: XFlatParagraph,
     LastPara: XFlatParagraph,
     NextPara: XFlatParagraph,
@@ -86,31 +85,22 @@ object XFlatParagraphIterator {
     __obj.asInstanceOf[XFlatParagraphIterator]
   }
   
-  @scala.inline
-  implicit class XFlatParagraphIteratorMutableBuilder[Self <: XFlatParagraphIterator] (val x: Self) extends AnyVal {
+  extension [Self <: XFlatParagraphIterator](x: Self) {
     
-    @scala.inline
-    def setFirstPara(value: XFlatParagraph): Self = StObject.set(x, "FirstPara", value.asInstanceOf[js.Any])
+    inline def setFirstPara(value: XFlatParagraph): Self = StObject.set(x, "FirstPara", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFirstPara(value: () => XFlatParagraph): Self = StObject.set(x, "getFirstPara", js.Any.fromFunction0(value))
+    inline def setGetFirstPara(value: () => XFlatParagraph): Self = StObject.set(x, "getFirstPara", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastPara(value: () => XFlatParagraph): Self = StObject.set(x, "getLastPara", js.Any.fromFunction0(value))
+    inline def setGetLastPara(value: () => XFlatParagraph): Self = StObject.set(x, "getLastPara", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextPara(value: () => XFlatParagraph): Self = StObject.set(x, "getNextPara", js.Any.fromFunction0(value))
+    inline def setGetNextPara(value: () => XFlatParagraph): Self = StObject.set(x, "getNextPara", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParaAfter(value: XFlatParagraph => XFlatParagraph): Self = StObject.set(x, "getParaAfter", js.Any.fromFunction1(value))
+    inline def setGetParaAfter(value: XFlatParagraph => XFlatParagraph): Self = StObject.set(x, "getParaAfter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParaBefore(value: XFlatParagraph => XFlatParagraph): Self = StObject.set(x, "getParaBefore", js.Any.fromFunction1(value))
+    inline def setGetParaBefore(value: XFlatParagraph => XFlatParagraph): Self = StObject.set(x, "getParaBefore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLastPara(value: XFlatParagraph): Self = StObject.set(x, "LastPara", value.asInstanceOf[js.Any])
+    inline def setLastPara(value: XFlatParagraph): Self = StObject.set(x, "LastPara", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPara(value: XFlatParagraph): Self = StObject.set(x, "NextPara", value.asInstanceOf[js.Any])
+    inline def setNextPara(value: XFlatParagraph): Self = StObject.set(x, "NextPara", value.asInstanceOf[js.Any])
   }
 }

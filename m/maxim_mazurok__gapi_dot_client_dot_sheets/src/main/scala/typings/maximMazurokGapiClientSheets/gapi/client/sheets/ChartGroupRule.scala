@@ -14,25 +14,19 @@ trait ChartGroupRule extends StObject {
 }
 object ChartGroupRule {
   
-  @scala.inline
-  def apply(): ChartGroupRule = {
+  inline def apply(): ChartGroupRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartGroupRule]
   }
   
-  @scala.inline
-  implicit class ChartGroupRuleMutableBuilder[Self <: ChartGroupRule] (val x: Self) extends AnyVal {
+  extension [Self <: ChartGroupRule](x: Self) {
     
-    @scala.inline
-    def setDateTimeRule(value: ChartDateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
+    inline def setDateTimeRule(value: ChartDateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeRuleUndefined: Self = StObject.set(x, "dateTimeRule", js.undefined)
+    inline def setDateTimeRuleUndefined: Self = StObject.set(x, "dateTimeRule", js.undefined)
     
-    @scala.inline
-    def setHistogramRule(value: ChartHistogramRule): Self = StObject.set(x, "histogramRule", value.asInstanceOf[js.Any])
+    inline def setHistogramRule(value: ChartHistogramRule): Self = StObject.set(x, "histogramRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramRuleUndefined: Self = StObject.set(x, "histogramRule", js.undefined)
+    inline def setHistogramRuleUndefined: Self = StObject.set(x, "histogramRule", js.undefined)
   }
 }

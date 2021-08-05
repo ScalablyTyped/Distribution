@@ -10,6 +10,5 @@ object checkRequirementsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isWinSdkPresent(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isWinSdkPresent")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def isWinSdkPresent(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isWinSdkPresent")(target.asInstanceOf[js.Any]).asInstanceOf[String]
 }

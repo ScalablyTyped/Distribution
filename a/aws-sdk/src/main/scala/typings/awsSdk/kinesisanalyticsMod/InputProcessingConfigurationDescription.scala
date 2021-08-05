@@ -13,19 +13,15 @@ trait InputProcessingConfigurationDescription extends StObject {
 }
 object InputProcessingConfigurationDescription {
   
-  @scala.inline
-  def apply(): InputProcessingConfigurationDescription = {
+  inline def apply(): InputProcessingConfigurationDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputProcessingConfigurationDescription]
   }
   
-  @scala.inline
-  implicit class InputProcessingConfigurationDescriptionMutableBuilder[Self <: InputProcessingConfigurationDescription] (val x: Self) extends AnyVal {
+  extension [Self <: InputProcessingConfigurationDescription](x: Self) {
     
-    @scala.inline
-    def setInputLambdaProcessorDescription(value: InputLambdaProcessorDescription): Self = StObject.set(x, "InputLambdaProcessorDescription", value.asInstanceOf[js.Any])
+    inline def setInputLambdaProcessorDescription(value: InputLambdaProcessorDescription): Self = StObject.set(x, "InputLambdaProcessorDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLambdaProcessorDescriptionUndefined: Self = StObject.set(x, "InputLambdaProcessorDescription", js.undefined)
+    inline def setInputLambdaProcessorDescriptionUndefined: Self = StObject.set(x, "InputLambdaProcessorDescription", js.undefined)
   }
 }

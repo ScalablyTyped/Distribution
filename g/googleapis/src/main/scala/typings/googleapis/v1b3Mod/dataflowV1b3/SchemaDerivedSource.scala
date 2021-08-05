@@ -24,25 +24,19 @@ trait SchemaDerivedSource extends StObject {
 }
 object SchemaDerivedSource {
   
-  @scala.inline
-  def apply(): SchemaDerivedSource = {
+  inline def apply(): SchemaDerivedSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDerivedSource]
   }
   
-  @scala.inline
-  implicit class SchemaDerivedSourceMutableBuilder[Self <: SchemaDerivedSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDerivedSource](x: Self) {
     
-    @scala.inline
-    def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
+    inline def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
+    inline def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -21,20 +21,17 @@ object ImageSizeUnit {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageSizeUnit.Auto")
   @js.native
   def Auto: ImageSizeUnit = js.native
-  @scala.inline
-  def Auto_=(x: ImageSizeUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
+  inline def Auto_=(x: ImageSizeUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageSizeUnit.Percentage")
   @js.native
   def Percentage: ImageSizeUnit = js.native
-  @scala.inline
-  def Percentage_=(x: ImageSizeUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Percentage")(x.asInstanceOf[js.Any])
+  inline def Percentage_=(x: ImageSizeUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Percentage")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageSizeUnit.Pixels")
   @js.native
   def Pixels: ImageSizeUnit = js.native
-  @scala.inline
-  def Pixels_=(x: ImageSizeUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pixels")(x.asInstanceOf[js.Any])
+  inline def Pixels_=(x: ImageSizeUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pixels")(x.asInstanceOf[js.Any])
 }

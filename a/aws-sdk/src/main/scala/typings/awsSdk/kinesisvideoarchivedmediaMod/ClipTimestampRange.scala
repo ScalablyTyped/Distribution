@@ -18,19 +18,15 @@ trait ClipTimestampRange extends StObject {
 }
 object ClipTimestampRange {
   
-  @scala.inline
-  def apply(EndTimestamp: Timestamp, StartTimestamp: Timestamp): ClipTimestampRange = {
+  inline def apply(EndTimestamp: Timestamp, StartTimestamp: Timestamp): ClipTimestampRange = {
     val __obj = js.Dynamic.literal(EndTimestamp = EndTimestamp.asInstanceOf[js.Any], StartTimestamp = StartTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipTimestampRange]
   }
   
-  @scala.inline
-  implicit class ClipTimestampRangeMutableBuilder[Self <: ClipTimestampRange] (val x: Self) extends AnyVal {
+  extension [Self <: ClipTimestampRange](x: Self) {
     
-    @scala.inline
-    def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
+    inline def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
   }
 }

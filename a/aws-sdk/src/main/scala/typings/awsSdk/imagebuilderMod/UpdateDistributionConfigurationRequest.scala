@@ -28,8 +28,7 @@ trait UpdateDistributionConfigurationRequest extends StObject {
 }
 object UpdateDistributionConfigurationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientToken: ClientToken,
     distributionConfigurationArn: DistributionConfigurationArn,
     distributions: DistributionList
@@ -38,25 +37,18 @@ object UpdateDistributionConfigurationRequest {
     __obj.asInstanceOf[UpdateDistributionConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDistributionConfigurationRequestMutableBuilder[Self <: UpdateDistributionConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDistributionConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDistributionConfigurationArn(value: DistributionConfigurationArn): Self = StObject.set(x, "distributionConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setDistributionConfigurationArn(value: DistributionConfigurationArn): Self = StObject.set(x, "distributionConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributions(value: DistributionList): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
+    inline def setDistributions(value: DistributionList): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionsVarargs(value: Distribution*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: Distribution*): Self = StObject.set(x, "distributions", js.Array(value :_*))
   }
 }

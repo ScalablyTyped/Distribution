@@ -12,19 +12,15 @@ trait ActionsGetRepoPublicKeyResponseData extends StObject {
 }
 object ActionsGetRepoPublicKeyResponseData {
   
-  @scala.inline
-  def apply(key: String, key_id: String): ActionsGetRepoPublicKeyResponseData = {
+  inline def apply(key: String, key_id: String): ActionsGetRepoPublicKeyResponseData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], key_id = key_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsGetRepoPublicKeyResponseData]
   }
   
-  @scala.inline
-  implicit class ActionsGetRepoPublicKeyResponseDataMutableBuilder[Self <: ActionsGetRepoPublicKeyResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsGetRepoPublicKeyResponseData](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
+    inline def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
   }
 }

@@ -27,23 +27,18 @@ object mod extends Shortcut {
   }
   object Action {
     
-    @scala.inline
-    def apply[T](cbArgs: ArrayLike[js.Any], returnValue: T, throwError: Error): Action[T] = {
+    inline def apply[T](cbArgs: ArrayLike[js.Any], returnValue: T, throwError: Error): Action[T] = {
       val __obj = js.Dynamic.literal(cbArgs = cbArgs.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], throwError = throwError.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[T]]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
+    extension [Self <: Action[?], T](x: Self & Action[T]) {
       
-      @scala.inline
-      def setCbArgs(value: ArrayLike[js.Any]): Self = StObject.set(x, "cbArgs", value.asInstanceOf[js.Any])
+      inline def setCbArgs(value: ArrayLike[js.Any]): Self = StObject.set(x, "cbArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValue(value: T): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+      inline def setReturnValue(value: T): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowError(value: Error): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
+      inline def setThrowError(value: Error): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,35 +76,26 @@ object mod extends Shortcut {
   }
   object Calls {
     
-    @scala.inline
-    def apply[T](arg: js.Any, args: js.Array[js.Any], context: js.Any, k: Double, returned: T, threw: Error): Calls[T] = {
+    inline def apply[T](arg: js.Any, args: js.Array[js.Any], context: js.Any, k: Double, returned: T, threw: Error): Calls[T] = {
       val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], returned = returned.asInstanceOf[js.Any], threw = threw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Calls[T]]
     }
     
-    @scala.inline
-    implicit class CallsMutableBuilder[Self <: Calls[?], T] (val x: Self & Calls[T]) extends AnyVal {
+    extension [Self <: Calls[?], T](x: Self & Calls[T]) {
       
-      @scala.inline
-      def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturned(value: T): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
+      inline def setReturned(value: T): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrew(value: Error): Self = StObject.set(x, "threw", value.asInstanceOf[js.Any])
+      inline def setThrew(value: Error): Self = StObject.set(x, "threw", value.asInstanceOf[js.Any])
     }
   }
   

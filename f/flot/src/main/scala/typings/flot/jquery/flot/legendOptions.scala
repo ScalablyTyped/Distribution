@@ -37,73 +37,51 @@ trait legendOptions extends StObject {
 }
 object legendOptions {
   
-  @scala.inline
-  def apply(): legendOptions = {
+  inline def apply(): legendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[legendOptions]
   }
   
-  @scala.inline
-  implicit class legendOptionsMutableBuilder[Self <: legendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: legendOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
+    inline def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
+    inline def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
     
-    @scala.inline
-    def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setLabelBoxBorderColor(value: js.Any): Self = StObject.set(x, "labelBoxBorderColor", value.asInstanceOf[js.Any])
+    inline def setLabelBoxBorderColor(value: js.Any): Self = StObject.set(x, "labelBoxBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelBoxBorderColorUndefined: Self = StObject.set(x, "labelBoxBorderColor", js.undefined)
+    inline def setLabelBoxBorderColorUndefined: Self = StObject.set(x, "labelBoxBorderColor", js.undefined)
     
-    @scala.inline
-    def setLabelFormatter(value: (/* label */ String, /* series */ js.Any) => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction2(value))
+    inline def setLabelFormatter(value: (/* label */ String, /* series */ js.Any) => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
+    inline def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
     
-    @scala.inline
-    def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setNoColumns(value: Double): Self = StObject.set(x, "noColumns", value.asInstanceOf[js.Any])
+    inline def setNoColumns(value: Double): Self = StObject.set(x, "noColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoColumnsUndefined: Self = StObject.set(x, "noColumns", js.undefined)
+    inline def setNoColumnsUndefined: Self = StObject.set(x, "noColumns", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSorted(value: js.Any): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+    inline def setSorted(value: js.Any): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
+    inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
   }
 }

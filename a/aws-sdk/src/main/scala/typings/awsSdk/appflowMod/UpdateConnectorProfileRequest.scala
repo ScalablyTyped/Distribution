@@ -23,8 +23,7 @@ trait UpdateConnectorProfileRequest extends StObject {
 }
 object UpdateConnectorProfileRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionMode: ConnectionMode,
     connectorProfileConfig: ConnectorProfileConfig,
     connectorProfileName: ConnectorProfileName
@@ -33,16 +32,12 @@ object UpdateConnectorProfileRequest {
     __obj.asInstanceOf[UpdateConnectorProfileRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConnectorProfileRequestMutableBuilder[Self <: UpdateConnectorProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConnectorProfileRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
+    inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileConfig(value: ConnectorProfileConfig): Self = StObject.set(x, "connectorProfileConfig", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileConfig(value: ConnectorProfileConfig): Self = StObject.set(x, "connectorProfileConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
   }
 }

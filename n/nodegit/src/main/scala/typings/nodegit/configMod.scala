@@ -56,24 +56,18 @@ object configMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def findGlobal(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findGlobal")().asInstanceOf[js.Promise[String]]
+    inline def findGlobal(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findGlobal")().asInstanceOf[js.Promise[String]]
     
     // the docs says it's a buff but it's actually a string
-    @scala.inline
-    def findProgramdata(): js.Promise[Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findProgramdata")().asInstanceOf[js.Promise[Buf]]
+    inline def findProgramdata(): js.Promise[Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findProgramdata")().asInstanceOf[js.Promise[Buf]]
     
-    @scala.inline
-    def findSystem(): js.Promise[Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSystem")().asInstanceOf[js.Promise[Buf]]
+    inline def findSystem(): js.Promise[Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSystem")().asInstanceOf[js.Promise[Buf]]
     
-    @scala.inline
-    def findXdg(): js.Promise[Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findXdg")().asInstanceOf[js.Promise[Buf]]
+    inline def findXdg(): js.Promise[Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findXdg")().asInstanceOf[js.Promise[Buf]]
     
-    @scala.inline
-    def openDefault(): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDefault")().asInstanceOf[js.Promise[Config]]
+    inline def openDefault(): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDefault")().asInstanceOf[js.Promise[Config]]
     
-    @scala.inline
-    def openOndisk(path: String): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openOndisk")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
+    inline def openOndisk(path: String): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openOndisk")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`1`
@@ -86,23 +80,17 @@ object configMod {
     trait LEVEL extends StObject
     object LEVEL {
       
-      @scala.inline
-      def APP: `5` = 5.asInstanceOf[`5`]
+      inline def APP: `5` = 5.asInstanceOf[`5`]
       
-      @scala.inline
-      def GLOBAL: `3` = 3.asInstanceOf[`3`]
+      inline def GLOBAL: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def HIGHEST_LEVEL: `-1` = -1.asInstanceOf[`-1`]
+      inline def HIGHEST_LEVEL: `-1` = -1.asInstanceOf[`-1`]
       
-      @scala.inline
-      def LOCAL: `4` = 4.asInstanceOf[`4`]
+      inline def LOCAL: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def SYSTEM: `1` = 1.asInstanceOf[`1`]
+      inline def SYSTEM: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def XDG: `2` = 2.asInstanceOf[`2`]
+      inline def XDG: `2` = 2.asInstanceOf[`2`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -114,17 +102,13 @@ object configMod {
     trait MAP extends StObject
     object MAP {
       
-      @scala.inline
-      def FALSE: `0` = 0.asInstanceOf[`0`]
+      inline def FALSE: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def INT32: `2` = 2.asInstanceOf[`2`]
+      inline def INT32: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def STRING: `3` = 3.asInstanceOf[`3`]
+      inline def STRING: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def TRUE: `1` = 1.asInstanceOf[`1`]
+      inline def TRUE: `1` = 1.asInstanceOf[`1`]
     }
   }
   

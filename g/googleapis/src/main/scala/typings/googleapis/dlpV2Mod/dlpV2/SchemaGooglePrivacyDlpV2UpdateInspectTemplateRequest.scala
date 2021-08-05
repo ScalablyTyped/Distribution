@@ -21,25 +21,19 @@ trait SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequest extends StObject {
 }
 object SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequest {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequest = {
+  inline def apply(): SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2UpdateInspectTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setInspectTemplate(value: SchemaGooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "inspectTemplate", value.asInstanceOf[js.Any])
+    inline def setInspectTemplate(value: SchemaGooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "inspectTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplateUndefined: Self = StObject.set(x, "inspectTemplate", js.undefined)
+    inline def setInspectTemplateUndefined: Self = StObject.set(x, "inspectTemplate", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

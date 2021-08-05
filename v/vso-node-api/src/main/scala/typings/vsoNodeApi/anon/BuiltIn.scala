@@ -12,19 +12,15 @@ trait BuiltIn extends StObject {
 }
 object BuiltIn {
   
-  @scala.inline
-  def apply(builtIn: scala.Double, trusted: scala.Double): BuiltIn = {
+  inline def apply(builtIn: scala.Double, trusted: scala.Double): BuiltIn = {
     val __obj = js.Dynamic.literal(builtIn = builtIn.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuiltIn]
   }
   
-  @scala.inline
-  implicit class BuiltInMutableBuilder[Self <: BuiltIn] (val x: Self) extends AnyVal {
+  extension [Self <: BuiltIn](x: Self) {
     
-    @scala.inline
-    def setBuiltIn(value: scala.Double): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
+    inline def setBuiltIn(value: scala.Double): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrusted(value: scala.Double): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+    inline def setTrusted(value: scala.Double): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
   }
 }

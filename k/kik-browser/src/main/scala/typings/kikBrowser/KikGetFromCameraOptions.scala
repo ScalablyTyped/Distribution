@@ -14,31 +14,23 @@ trait KikGetFromCameraOptions extends StObject {
 }
 object KikGetFromCameraOptions {
   
-  @scala.inline
-  def apply(): KikGetFromCameraOptions = {
+  inline def apply(): KikGetFromCameraOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KikGetFromCameraOptions]
   }
   
-  @scala.inline
-  implicit class KikGetFromCameraOptionsMutableBuilder[Self <: KikGetFromCameraOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KikGetFromCameraOptions](x: Self) {
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

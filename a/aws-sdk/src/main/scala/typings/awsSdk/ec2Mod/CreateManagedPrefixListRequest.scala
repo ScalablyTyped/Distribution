@@ -43,52 +43,37 @@ trait CreateManagedPrefixListRequest extends StObject {
 }
 object CreateManagedPrefixListRequest {
   
-  @scala.inline
-  def apply(AddressFamily: String, MaxEntries: Integer, PrefixListName: String): CreateManagedPrefixListRequest = {
+  inline def apply(AddressFamily: String, MaxEntries: Integer, PrefixListName: String): CreateManagedPrefixListRequest = {
     val __obj = js.Dynamic.literal(AddressFamily = AddressFamily.asInstanceOf[js.Any], MaxEntries = MaxEntries.asInstanceOf[js.Any], PrefixListName = PrefixListName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateManagedPrefixListRequest]
   }
   
-  @scala.inline
-  implicit class CreateManagedPrefixListRequestMutableBuilder[Self <: CreateManagedPrefixListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateManagedPrefixListRequest](x: Self) {
     
-    @scala.inline
-    def setAddressFamily(value: String): Self = StObject.set(x, "AddressFamily", value.asInstanceOf[js.Any])
+    inline def setAddressFamily(value: String): Self = StObject.set(x, "AddressFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setEntries(value: AddPrefixListEntries): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: AddPrefixListEntries): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxEntries(value: Integer): Self = StObject.set(x, "MaxEntries", value.asInstanceOf[js.Any])
+    inline def setMaxEntries(value: Integer): Self = StObject.set(x, "MaxEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
+    inline def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
   }
 }

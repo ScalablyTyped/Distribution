@@ -17,20 +17,16 @@ object anon {
   }
   object Assets {
     
-    @scala.inline
-    def apply(assets: js.Object, filename: String): Assets = {
+    inline def apply(assets: js.Object, filename: String): Assets = {
       val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[Assets]
     }
     
-    @scala.inline
-    implicit class AssetsMutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
+    extension [Self <: Assets](x: Self) {
       
-      @scala.inline
-      def setAssets(value: js.Object): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: js.Object): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,44 +53,32 @@ object anon {
   }
   object Chunk {
     
-    @scala.inline
-    def apply(): Chunk = {
+    inline def apply(): Chunk = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Chunk]
     }
     
-    @scala.inline
-    implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+    extension [Self <: Chunk](x: Self) {
       
-      @scala.inline
-      def setChunk(value: Keep): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: Keep): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+      inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setSvg(value: Sizes): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: Sizes): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvg4everybody(value: Boolean | js.Object): Self = StObject.set(x, "svg4everybody", value.asInstanceOf[js.Any])
+      inline def setSvg4everybody(value: Boolean | js.Object): Self = StObject.set(x, "svg4everybody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvg4everybodyUndefined: Self = StObject.set(x, "svg4everybody", js.undefined)
+      inline def setSvg4everybodyUndefined: Self = StObject.set(x, "svg4everybody", js.undefined)
       
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+      inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
       
-      @scala.inline
-      def setSvgo(value: Boolean | js.Object): Self = StObject.set(x, "svgo", value.asInstanceOf[js.Any])
+      inline def setSvgo(value: Boolean | js.Object): Self = StObject.set(x, "svgo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgoUndefined: Self = StObject.set(x, "svgo", js.undefined)
+      inline def setSvgoUndefined: Self = StObject.set(x, "svgo", js.undefined)
     }
   }
   
@@ -108,32 +92,24 @@ object anon {
   }
   object Filename {
     
-    @scala.inline
-    def apply(): Filename = {
+    inline def apply(): Filename = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Filename]
     }
     
-    @scala.inline
-    implicit class FilenameMutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
+    extension [Self <: Filename](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFormat(value: data | fragment): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: data | fragment): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setVariables(value: Mixin): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Mixin): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -156,41 +132,30 @@ object anon {
   }
   object Generate {
     
-    @scala.inline
-    def apply(): Generate = {
+    inline def apply(): Generate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Generate]
     }
     
-    @scala.inline
-    implicit class GenerateMutableBuilder[Self <: Generate] (val x: Self) extends AnyVal {
+    extension [Self <: Generate](x: Self) {
       
-      @scala.inline
-      def setGenerate(value: Symbol): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
+      inline def setGenerate(value: Symbol): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
+      inline def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
       
-      @scala.inline
-      def setGutter(value: Double | `false`): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double | `false`): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setIdify(value: /* file */ String | `false` => String): Self = StObject.set(x, "idify", js.Any.fromFunction1(value))
+      inline def setIdify(value: /* file */ String | `false` => String): Self = StObject.set(x, "idify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdifyUndefined: Self = StObject.set(x, "idify", js.undefined)
+      inline def setIdifyUndefined: Self = StObject.set(x, "idify", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String | (js.Function1[/* file */ String, String]) | `false`): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String | (js.Function1[/* file */ String, String]) | `false`): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixFunction1(value: /* file */ String => String): Self = StObject.set(x, "prefix", js.Any.fromFunction1(value))
+      inline def setPrefixFunction1(value: /* file */ String => String): Self = StObject.set(x, "prefix", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -208,26 +173,20 @@ object anon {
   }
   object Keep {
     
-    @scala.inline
-    def apply(): Keep = {
+    inline def apply(): Keep = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Keep]
     }
     
-    @scala.inline
-    implicit class KeepMutableBuilder[Self <: Keep] (val x: Self) extends AnyVal {
+    extension [Self <: Keep](x: Self) {
       
-      @scala.inline
-      def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
+      inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
+      inline def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -243,38 +202,28 @@ object anon {
   }
   object Mixin {
     
-    @scala.inline
-    def apply(): Mixin = {
+    inline def apply(): Mixin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mixin]
     }
     
-    @scala.inline
-    implicit class MixinMutableBuilder[Self <: Mixin] (val x: Self) extends AnyVal {
+    extension [Self <: Mixin](x: Self) {
       
-      @scala.inline
-      def setMixin(value: String): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
+      inline def setMixin(value: String): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
+      inline def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
       
-      @scala.inline
-      def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      @scala.inline
-      def setSprites(value: String): Self = StObject.set(x, "sprites", value.asInstanceOf[js.Any])
+      inline def setSprites(value: String): Self = StObject.set(x, "sprites", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpritesUndefined: Self = StObject.set(x, "sprites", js.undefined)
+      inline def setSpritesUndefined: Self = StObject.set(x, "sprites", js.undefined)
       
-      @scala.inline
-      def setVariables(value: String): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: String): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -284,20 +233,16 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -311,20 +256,16 @@ object anon {
   }
   object Sizes {
     
-    @scala.inline
-    def apply(): Sizes = {
+    inline def apply(): Sizes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Sizes]
     }
     
-    @scala.inline
-    implicit class SizesMutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
+    extension [Self <: Sizes](x: Self) {
       
-      @scala.inline
-      def setSizes(value: Boolean): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: Boolean): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     }
   }
   
@@ -343,38 +284,28 @@ object anon {
   }
   object Symbol {
     
-    @scala.inline
-    def apply(): Symbol = {
+    inline def apply(): Symbol = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Symbol]
     }
     
-    @scala.inline
-    implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+    extension [Self <: Symbol](x: Self) {
       
-      @scala.inline
-      def setSymbol(value: Boolean | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Boolean | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUse(value: Boolean): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: Boolean): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
       
-      @scala.inline
-      def setView(value: Boolean | String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Boolean | String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
   }
 }

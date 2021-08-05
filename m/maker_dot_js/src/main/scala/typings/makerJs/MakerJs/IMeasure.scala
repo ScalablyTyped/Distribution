@@ -21,19 +21,15 @@ trait IMeasure extends StObject {
 }
 object IMeasure {
   
-  @scala.inline
-  def apply(high: IPoint, low: IPoint): IMeasure = {
+  inline def apply(high: IPoint, low: IPoint): IMeasure = {
     val __obj = js.Dynamic.literal(high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMeasure]
   }
   
-  @scala.inline
-  implicit class IMeasureMutableBuilder[Self <: IMeasure] (val x: Self) extends AnyVal {
+  extension [Self <: IMeasure](x: Self) {
     
-    @scala.inline
-    def setHigh(value: IPoint): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: IPoint): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLow(value: IPoint): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: IPoint): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
   }
 }

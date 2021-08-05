@@ -25,20 +25,16 @@ object math {
   }
   object IPoint {
     
-    @scala.inline
-    def apply(x: Double, y: Double): IPoint = {
+    inline def apply(x: Double, y: Double): IPoint = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPoint]
     }
     
-    @scala.inline
-    implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
+    extension [Self <: IPoint](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,20 +51,16 @@ object math {
   }
   object ISize {
     
-    @scala.inline
-    def apply(h: Double, w: Double): ISize = {
+    inline def apply(h: Double, w: Double): ISize = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISize]
     }
     
-    @scala.inline
-    implicit class ISizeMutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
+    extension [Self <: ISize](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,8 +183,7 @@ object math {
   }
   object Rect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containsXY: (Double, Double) => Boolean,
       getBottomRight: () => Point,
       getTopLeft: () => Point,
@@ -202,20 +193,15 @@ object math {
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setContainsXY(value: (Double, Double) => Boolean): Self = StObject.set(x, "containsXY", js.Any.fromFunction2(value))
+      inline def setContainsXY(value: (Double, Double) => Boolean): Self = StObject.set(x, "containsXY", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBottomRight(value: () => Point): Self = StObject.set(x, "getBottomRight", js.Any.fromFunction0(value))
+      inline def setGetBottomRight(value: () => Point): Self = StObject.set(x, "getBottomRight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTopLeft(value: () => Point): Self = StObject.set(x, "getTopLeft", js.Any.fromFunction0(value))
+      inline def setGetTopLeft(value: () => Point): Self = StObject.set(x, "getTopLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+      inline def setSet(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
     }
   }
   
@@ -232,20 +218,16 @@ object math {
   }
   object Size {
     
-    @scala.inline
-    def apply(h: Double, w: Double): Size = {
+    inline def apply(h: Double, w: Double): Size = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
 }

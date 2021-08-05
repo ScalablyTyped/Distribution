@@ -19,43 +19,31 @@ trait IPolicy extends StObject {
 }
 object IPolicy {
   
-  @scala.inline
-  def apply(): IPolicy = {
+  inline def apply(): IPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPolicy]
   }
   
-  @scala.inline
-  implicit class IPolicyMutableBuilder[Self <: IPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IPolicy](x: Self) {
     
-    @scala.inline
-    def setBindings(value: js.Array[IBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: js.Array[IBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsNull: Self = StObject.set(x, "bindings", null)
+    inline def setBindingsNull: Self = StObject.set(x, "bindings", null)
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    @scala.inline
-    def setBindingsVarargs(value: IBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: IBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: Uint8Array): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: Uint8Array): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagNull: Self = StObject.set(x, "etag", null)
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

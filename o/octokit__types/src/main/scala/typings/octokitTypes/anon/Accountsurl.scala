@@ -34,8 +34,7 @@ trait Accountsurl extends StObject {
 }
 object Accountsurl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accounts_url: String,
     bullets: js.Array[String],
     description: String,
@@ -54,49 +53,34 @@ object Accountsurl {
     __obj.asInstanceOf[Accountsurl]
   }
   
-  @scala.inline
-  implicit class AccountsurlMutableBuilder[Self <: Accountsurl] (val x: Self) extends AnyVal {
+  extension [Self <: Accountsurl](x: Self) {
     
-    @scala.inline
-    def setAccounts_url(value: String): Self = StObject.set(x, "accounts_url", value.asInstanceOf[js.Any])
+    inline def setAccounts_url(value: String): Self = StObject.set(x, "accounts_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBullets(value: js.Array[String]): Self = StObject.set(x, "bullets", value.asInstanceOf[js.Any])
+    inline def setBullets(value: js.Array[String]): Self = StObject.set(x, "bullets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletsVarargs(value: String*): Self = StObject.set(x, "bullets", js.Array(value :_*))
+    inline def setBulletsVarargs(value: String*): Self = StObject.set(x, "bullets", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_free_trial(value: Boolean): Self = StObject.set(x, "has_free_trial", value.asInstanceOf[js.Any])
+    inline def setHas_free_trial(value: Boolean): Self = StObject.set(x, "has_free_trial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthly_price_in_cents(value: Double): Self = StObject.set(x, "monthly_price_in_cents", value.asInstanceOf[js.Any])
+    inline def setMonthly_price_in_cents(value: Double): Self = StObject.set(x, "monthly_price_in_cents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice_model(value: String): Self = StObject.set(x, "price_model", value.asInstanceOf[js.Any])
+    inline def setPrice_model(value: String): Self = StObject.set(x, "price_model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit_name(value: String): Self = StObject.set(x, "unit_name", value.asInstanceOf[js.Any])
+    inline def setUnit_name(value: String): Self = StObject.set(x, "unit_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearly_price_in_cents(value: Double): Self = StObject.set(x, "yearly_price_in_cents", value.asInstanceOf[js.Any])
+    inline def setYearly_price_in_cents(value: Double): Self = StObject.set(x, "yearly_price_in_cents", value.asInstanceOf[js.Any])
   }
 }

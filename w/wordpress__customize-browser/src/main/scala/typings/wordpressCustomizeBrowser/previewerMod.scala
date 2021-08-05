@@ -64,26 +64,20 @@ object previewerMod {
   }
   object PreviewerData {
     
-    @scala.inline
-    def apply(activeControls: js.Any, activePanels: js.Any, activeSections: js.Any, currentUrl: String): PreviewerData = {
+    inline def apply(activeControls: js.Any, activePanels: js.Any, activeSections: js.Any, currentUrl: String): PreviewerData = {
       val __obj = js.Dynamic.literal(activeControls = activeControls.asInstanceOf[js.Any], activePanels = activePanels.asInstanceOf[js.Any], activeSections = activeSections.asInstanceOf[js.Any], currentUrl = currentUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewerData]
     }
     
-    @scala.inline
-    implicit class PreviewerDataMutableBuilder[Self <: PreviewerData] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewerData](x: Self) {
       
-      @scala.inline
-      def setActiveControls(value: js.Any): Self = StObject.set(x, "activeControls", value.asInstanceOf[js.Any])
+      inline def setActiveControls(value: js.Any): Self = StObject.set(x, "activeControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivePanels(value: js.Any): Self = StObject.set(x, "activePanels", value.asInstanceOf[js.Any])
+      inline def setActivePanels(value: js.Any): Self = StObject.set(x, "activePanels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveSections(value: js.Any): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
+      inline def setActiveSections(value: js.Any): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUrl(value: String): Self = StObject.set(x, "currentUrl", value.asInstanceOf[js.Any])
+      inline def setCurrentUrl(value: String): Self = StObject.set(x, "currentUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,17 +87,14 @@ object previewerMod {
   }
   object PreviewerDeferred {
     
-    @scala.inline
-    def apply(active: Deferred[js.Any, js.Any, js.Any]): PreviewerDeferred = {
+    inline def apply(active: Deferred[js.Any, js.Any, js.Any]): PreviewerDeferred = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewerDeferred]
     }
     
-    @scala.inline
-    implicit class PreviewerDeferredMutableBuilder[Self <: PreviewerDeferred] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewerDeferred](x: Self) {
       
-      @scala.inline
-      def setActive(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,8 +113,7 @@ object previewerMod {
   }
   object PreviewerParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowedUrls: js.Array[js.Any],
       channel: String,
       container: String,
@@ -136,23 +126,17 @@ object previewerMod {
       __obj.asInstanceOf[PreviewerParams]
     }
     
-    @scala.inline
-    implicit class PreviewerParamsMutableBuilder[Self <: PreviewerParams] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewerParams](x: Self) {
       
-      @scala.inline
-      def setAllowedUrls(value: js.Array[js.Any]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
+      inline def setAllowedUrls(value: js.Array[js.Any]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedUrlsVarargs(value: js.Any*): Self = StObject.set(x, "allowedUrls", js.Array(value :_*))
+      inline def setAllowedUrlsVarargs(value: js.Any*): Self = StObject.set(x, "allowedUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
+      inline def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -25,22 +25,17 @@ trait Animate extends StObject {
 }
 object Animate {
   
-  @scala.inline
-  def apply(animate: Boolean, cancelable: Boolean, mode: single | multiple): Animate = {
+  inline def apply(animate: Boolean, cancelable: Boolean, mode: single | multiple): Animate = {
     val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animate]
   }
   
-  @scala.inline
-  implicit class AnimateMutableBuilder[Self <: Animate] (val x: Self) extends AnyVal {
+  extension [Self <: Animate](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: single | multiple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: single | multiple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

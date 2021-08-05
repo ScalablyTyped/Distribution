@@ -16,7 +16,7 @@ object textMod {
   trait TextAnnotation
     extends typings.antvComponent.groupComponentMod.default[TextAnnotationCfg] {
     
-    var resetLocation: js.Any = js.native
+    /* private */ var resetLocation: js.Any = js.native
     
     def setLocation(location: PointLocationCfg): Unit = js.native
   }

@@ -13,25 +13,19 @@ trait PartialClassNameMapRadioG extends StObject {
 }
 object PartialClassNameMapRadioG {
   
-  @scala.inline
-  def apply(): PartialClassNameMapRadioG = {
+  inline def apply(): PartialClassNameMapRadioG = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapRadioG]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapRadioGMutableBuilder[Self <: PartialClassNameMapRadioG] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapRadioG](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

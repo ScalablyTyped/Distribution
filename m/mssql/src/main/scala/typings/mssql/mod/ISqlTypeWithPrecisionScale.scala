@@ -25,23 +25,18 @@ trait ISqlTypeWithPrecisionScale
 }
 object ISqlTypeWithPrecisionScale {
   
-  @scala.inline
-  def apply(precision: Double, scale: Double, `type`: ISqlTypeFactoryWithPrecisionScale): ISqlTypeWithPrecisionScale = {
+  inline def apply(precision: Double, scale: Double, `type`: ISqlTypeFactoryWithPrecisionScale): ISqlTypeWithPrecisionScale = {
     val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISqlTypeWithPrecisionScale]
   }
   
-  @scala.inline
-  implicit class ISqlTypeWithPrecisionScaleMutableBuilder[Self <: ISqlTypeWithPrecisionScale] (val x: Self) extends AnyVal {
+  extension [Self <: ISqlTypeWithPrecisionScale](x: Self) {
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ISqlTypeFactoryWithPrecisionScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ISqlTypeFactoryWithPrecisionScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

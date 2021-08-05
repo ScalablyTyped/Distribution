@@ -10,25 +10,19 @@ trait ButtonStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends St
 }
 object ButtonStyleProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ButtonStyleProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ButtonStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonStyleProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class ButtonStylePropsMutableBuilder[Self <: ButtonStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & ButtonStyleProps[ThemeType]) extends AnyVal {
+  extension [Self <: ButtonStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & ButtonStyleProps[ThemeType]) {
     
-    @scala.inline
-    def setVariant(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantNull: Self = StObject.set(x, "variant", null)
+    inline def setVariantNull: Self = StObject.set(x, "variant", null)
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
-    @scala.inline
-    def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+    inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
   }
 }

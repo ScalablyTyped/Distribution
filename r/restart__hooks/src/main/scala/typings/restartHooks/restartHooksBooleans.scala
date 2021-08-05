@@ -11,6 +11,5 @@ object restartHooksBooleans {
   sealed trait `true`
     extends StObject
        with BreakpointDirection
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

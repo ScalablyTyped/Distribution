@@ -21,8 +21,7 @@ trait IInfoReply extends StObject {
 }
 object IInfoReply {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     banner: String,
     help_links: js.Array[Text],
     implementation: String,
@@ -34,28 +33,20 @@ object IInfoReply {
     __obj.asInstanceOf[IInfoReply]
   }
   
-  @scala.inline
-  implicit class IInfoReplyMutableBuilder[Self <: IInfoReply] (val x: Self) extends AnyVal {
+  extension [Self <: IInfoReply](x: Self) {
     
-    @scala.inline
-    def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelp_links(value: js.Array[Text]): Self = StObject.set(x, "help_links", value.asInstanceOf[js.Any])
+    inline def setHelp_links(value: js.Array[Text]): Self = StObject.set(x, "help_links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelp_linksVarargs(value: Text*): Self = StObject.set(x, "help_links", js.Array(value :_*))
+    inline def setHelp_linksVarargs(value: Text*): Self = StObject.set(x, "help_links", js.Array(value :_*))
     
-    @scala.inline
-    def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementation_version(value: String): Self = StObject.set(x, "implementation_version", value.asInstanceOf[js.Any])
+    inline def setImplementation_version(value: String): Self = StObject.set(x, "implementation_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
+    inline def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol_version(value: String): Self = StObject.set(x, "protocol_version", value.asInstanceOf[js.Any])
+    inline def setProtocol_version(value: String): Self = StObject.set(x, "protocol_version", value.asInstanceOf[js.Any])
   }
 }

@@ -88,82 +88,57 @@ trait UniqueValueRendererProperties
 }
 object UniqueValueRendererProperties {
   
-  @scala.inline
-  def apply(): UniqueValueRendererProperties = {
+  inline def apply(): UniqueValueRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UniqueValueRendererProperties]
   }
   
-  @scala.inline
-  implicit class UniqueValueRendererPropertiesMutableBuilder[Self <: UniqueValueRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueValueRendererProperties](x: Self) {
     
-    @scala.inline
-    def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
+    inline def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundFillSymbolUndefined: Self = StObject.set(x, "backgroundFillSymbol", js.undefined)
+    inline def setBackgroundFillSymbolUndefined: Self = StObject.set(x, "backgroundFillSymbol", js.undefined)
     
-    @scala.inline
-    def setDefaultLabel(value: String): Self = StObject.set(x, "defaultLabel", value.asInstanceOf[js.Any])
+    inline def setDefaultLabel(value: String): Self = StObject.set(x, "defaultLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLabelUndefined: Self = StObject.set(x, "defaultLabel", js.undefined)
+    inline def setDefaultLabelUndefined: Self = StObject.set(x, "defaultLabel", js.undefined)
     
-    @scala.inline
-    def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
+    inline def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
+    inline def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField2(value: String): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
+    inline def setField2(value: String): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField2Undefined: Self = StObject.set(x, "field2", js.undefined)
+    inline def setField2Undefined: Self = StObject.set(x, "field2", js.undefined)
     
-    @scala.inline
-    def setField3(value: String): Self = StObject.set(x, "field3", value.asInstanceOf[js.Any])
+    inline def setField3(value: String): Self = StObject.set(x, "field3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField3Undefined: Self = StObject.set(x, "field3", js.undefined)
+    inline def setField3Undefined: Self = StObject.set(x, "field3", js.undefined)
     
-    @scala.inline
-    def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
+    inline def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
+    inline def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLegendOptions(value: UniqueValueRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: UniqueValueRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    @scala.inline
-    def setUniqueValueInfos(value: js.Array[UniqueValueInfoProperties]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
+    inline def setUniqueValueInfos(value: js.Array[UniqueValueInfoProperties]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueValueInfosUndefined: Self = StObject.set(x, "uniqueValueInfos", js.undefined)
+    inline def setUniqueValueInfosUndefined: Self = StObject.set(x, "uniqueValueInfos", js.undefined)
     
-    @scala.inline
-    def setUniqueValueInfosVarargs(value: UniqueValueInfoProperties*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
+    inline def setUniqueValueInfosVarargs(value: UniqueValueInfoProperties*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
-    @scala.inline
-    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

@@ -18,37 +18,27 @@ trait RectSeriesProps
 }
 object RectSeriesProps {
   
-  @scala.inline
-  def apply(): RectSeriesProps = {
+  inline def apply(): RectSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RectSeriesProps]
   }
   
-  @scala.inline
-  implicit class RectSeriesPropsMutableBuilder[Self <: RectSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: RectSeriesProps](x: Self) {
     
-    @scala.inline
-    def setLinePosAttr(value: String): Self = StObject.set(x, "linePosAttr", value.asInstanceOf[js.Any])
+    inline def setLinePosAttr(value: String): Self = StObject.set(x, "linePosAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinePosAttrUndefined: Self = StObject.set(x, "linePosAttr", js.undefined)
+    inline def setLinePosAttrUndefined: Self = StObject.set(x, "linePosAttr", js.undefined)
     
-    @scala.inline
-    def setLineSizeAttr(value: String): Self = StObject.set(x, "lineSizeAttr", value.asInstanceOf[js.Any])
+    inline def setLineSizeAttr(value: String): Self = StObject.set(x, "lineSizeAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSizeAttrUndefined: Self = StObject.set(x, "lineSizeAttr", js.undefined)
+    inline def setLineSizeAttrUndefined: Self = StObject.set(x, "lineSizeAttr", js.undefined)
     
-    @scala.inline
-    def setValuePosAttr(value: String): Self = StObject.set(x, "valuePosAttr", value.asInstanceOf[js.Any])
+    inline def setValuePosAttr(value: String): Self = StObject.set(x, "valuePosAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuePosAttrUndefined: Self = StObject.set(x, "valuePosAttr", js.undefined)
+    inline def setValuePosAttrUndefined: Self = StObject.set(x, "valuePosAttr", js.undefined)
     
-    @scala.inline
-    def setValueSizeAttr(value: String): Self = StObject.set(x, "valueSizeAttr", value.asInstanceOf[js.Any])
+    inline def setValueSizeAttr(value: String): Self = StObject.set(x, "valueSizeAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSizeAttrUndefined: Self = StObject.set(x, "valueSizeAttr", js.undefined)
+    inline def setValueSizeAttrUndefined: Self = StObject.set(x, "valueSizeAttr", js.undefined)
   }
 }

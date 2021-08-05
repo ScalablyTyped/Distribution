@@ -14,16 +14,13 @@ trait File
 }
 object File {
   
-  @scala.inline
-  def apply(file: ExtensionURL): File = {
+  inline def apply(file: ExtensionURL): File = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setFile(value: ExtensionURL): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: ExtensionURL): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }
 }

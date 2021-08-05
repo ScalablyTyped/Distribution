@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayoutOrientation extends StObject
 object LayoutOrientation {
   
-  @scala.inline
-  def landscape: typings.reactNativeNavigation.reactNativeNavigationStrings.landscape = "landscape".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.landscape]
+  inline def landscape: typings.reactNativeNavigation.reactNativeNavigationStrings.landscape = "landscape".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.landscape]
   
-  @scala.inline
-  def portrait: typings.reactNativeNavigation.reactNativeNavigationStrings.portrait = "portrait".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.portrait]
+  inline def portrait: typings.reactNativeNavigation.reactNativeNavigationStrings.portrait = "portrait".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.portrait]
 }

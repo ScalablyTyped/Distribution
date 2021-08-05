@@ -82,8 +82,7 @@ trait XAccessibleHyperlink
 }
 object XAccessibleHyperlink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     EndIndex: Double,
     StartIndex: Double,
@@ -104,28 +103,20 @@ object XAccessibleHyperlink {
     __obj.asInstanceOf[XAccessibleHyperlink]
   }
   
-  @scala.inline
-  implicit class XAccessibleHyperlinkMutableBuilder[Self <: XAccessibleHyperlink] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleHyperlink](x: Self) {
     
-    @scala.inline
-    def setEndIndex(value: Double): Self = StObject.set(x, "EndIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "EndIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAccessibleActionAnchor(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionAnchor", js.Any.fromFunction1(value))
+    inline def setGetAccessibleActionAnchor(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionAnchor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAccessibleActionObject(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionObject", js.Any.fromFunction1(value))
+    inline def setGetAccessibleActionObject(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetEndIndex(value: () => Double): Self = StObject.set(x, "getEndIndex", js.Any.fromFunction0(value))
+    inline def setGetEndIndex(value: () => Double): Self = StObject.set(x, "getEndIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStartIndex(value: () => Double): Self = StObject.set(x, "getStartIndex", js.Any.fromFunction0(value))
+    inline def setGetStartIndex(value: () => Double): Self = StObject.set(x, "getStartIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "StartIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "StartIndex", value.asInstanceOf[js.Any])
   }
 }

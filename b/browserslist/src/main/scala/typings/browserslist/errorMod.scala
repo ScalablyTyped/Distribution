@@ -33,17 +33,14 @@ object errorMod {
   }
   object BrowserslistError {
     
-    @scala.inline
-    def apply(message: String, name: String): BrowserslistError = {
+    inline def apply(message: String, name: String): BrowserslistError = {
       val __obj = js.Dynamic.literal(browserslist = true, message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrowserslistError]
     }
     
-    @scala.inline
-    implicit class BrowserslistErrorMutableBuilder[Self <: BrowserslistError] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserslistError](x: Self) {
       
-      @scala.inline
-      def setBrowserslist(value: `true`): Self = StObject.set(x, "browserslist", value.asInstanceOf[js.Any])
+      inline def setBrowserslist(value: `true`): Self = StObject.set(x, "browserslist", value.asInstanceOf[js.Any])
     }
   }
 }

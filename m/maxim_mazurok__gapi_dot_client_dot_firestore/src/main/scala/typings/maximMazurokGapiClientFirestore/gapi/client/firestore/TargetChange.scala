@@ -27,46 +27,33 @@ trait TargetChange extends StObject {
 }
 object TargetChange {
   
-  @scala.inline
-  def apply(): TargetChange = {
+  inline def apply(): TargetChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetChange]
   }
   
-  @scala.inline
-  implicit class TargetChangeMutableBuilder[Self <: TargetChange] (val x: Self) extends AnyVal {
+  extension [Self <: TargetChange](x: Self) {
     
-    @scala.inline
-    def setCause(value: Status): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: Status): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
-    @scala.inline
-    def setTargetChangeType(value: String): Self = StObject.set(x, "targetChangeType", value.asInstanceOf[js.Any])
+    inline def setTargetChangeType(value: String): Self = StObject.set(x, "targetChangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetChangeTypeUndefined: Self = StObject.set(x, "targetChangeType", js.undefined)
+    inline def setTargetChangeTypeUndefined: Self = StObject.set(x, "targetChangeType", js.undefined)
     
-    @scala.inline
-    def setTargetIds(value: js.Array[Double]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
+    inline def setTargetIds(value: js.Array[Double]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
+    inline def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
-    @scala.inline
-    def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
   }
 }

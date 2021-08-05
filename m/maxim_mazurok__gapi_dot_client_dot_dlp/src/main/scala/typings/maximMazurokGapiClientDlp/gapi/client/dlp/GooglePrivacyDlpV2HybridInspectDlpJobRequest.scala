@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2HybridInspectDlpJobRequest extends StObject {
 }
 object GooglePrivacyDlpV2HybridInspectDlpJobRequest {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2HybridInspectDlpJobRequest = {
+  inline def apply(): GooglePrivacyDlpV2HybridInspectDlpJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2HybridInspectDlpJobRequest]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2HybridInspectDlpJobRequestMutableBuilder[Self <: GooglePrivacyDlpV2HybridInspectDlpJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2HybridInspectDlpJobRequest](x: Self) {
     
-    @scala.inline
-    def setHybridItem(value: GooglePrivacyDlpV2HybridContentItem): Self = StObject.set(x, "hybridItem", value.asInstanceOf[js.Any])
+    inline def setHybridItem(value: GooglePrivacyDlpV2HybridContentItem): Self = StObject.set(x, "hybridItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHybridItemUndefined: Self = StObject.set(x, "hybridItem", js.undefined)
+    inline def setHybridItemUndefined: Self = StObject.set(x, "hybridItem", js.undefined)
   }
 }

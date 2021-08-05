@@ -17,25 +17,19 @@ trait PrivatePKCS8HexResult extends StObject {
 }
 object PrivatePKCS8HexResult {
   
-  @scala.inline
-  def apply(algoid: String, keyidx: String): PrivatePKCS8HexResult = {
+  inline def apply(algoid: String, keyidx: String): PrivatePKCS8HexResult = {
     val __obj = js.Dynamic.literal(algoid = algoid.asInstanceOf[js.Any], keyidx = keyidx.asInstanceOf[js.Any], algparam = null)
     __obj.asInstanceOf[PrivatePKCS8HexResult]
   }
   
-  @scala.inline
-  implicit class PrivatePKCS8HexResultMutableBuilder[Self <: PrivatePKCS8HexResult] (val x: Self) extends AnyVal {
+  extension [Self <: PrivatePKCS8HexResult](x: Self) {
     
-    @scala.inline
-    def setAlgoid(value: String): Self = StObject.set(x, "algoid", value.asInstanceOf[js.Any])
+    inline def setAlgoid(value: String): Self = StObject.set(x, "algoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgparam(value: String): Self = StObject.set(x, "algparam", value.asInstanceOf[js.Any])
+    inline def setAlgparam(value: String): Self = StObject.set(x, "algparam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgparamNull: Self = StObject.set(x, "algparam", null)
+    inline def setAlgparamNull: Self = StObject.set(x, "algparam", null)
     
-    @scala.inline
-    def setKeyidx(value: String): Self = StObject.set(x, "keyidx", value.asInstanceOf[js.Any])
+    inline def setKeyidx(value: String): Self = StObject.set(x, "keyidx", value.asInstanceOf[js.Any])
   }
 }

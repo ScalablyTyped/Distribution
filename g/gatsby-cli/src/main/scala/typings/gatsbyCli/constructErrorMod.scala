@@ -15,6 +15,5 @@ object constructErrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasHasIdOtherDetails: IConstructError, suppliedErrorMap: Record[ErrorId, IErrorMapEntry]): IStructuredError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHasIdOtherDetails.asInstanceOf[js.Any], suppliedErrorMap.asInstanceOf[js.Any])).asInstanceOf[IStructuredError]
+  inline def default(hasHasIdOtherDetails: IConstructError, suppliedErrorMap: Record[ErrorId, IErrorMapEntry]): IStructuredError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHasIdOtherDetails.asInstanceOf[js.Any], suppliedErrorMap.asInstanceOf[js.Any])).asInstanceOf[IStructuredError]
 }

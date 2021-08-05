@@ -16,8 +16,7 @@ object useRefetchableFragmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ReturnTypeRefetchableFragment[TQuery, TKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[ReturnTypeRefetchableFragment[TQuery, TKey]]
+  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ReturnTypeRefetchableFragment[TQuery, TKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[ReturnTypeRefetchableFragment[TQuery, TKey]]
   
   type NonNullableFragmentReturn[TReturn] = ReturnType[NonNullableReturn[TReturn]]
   

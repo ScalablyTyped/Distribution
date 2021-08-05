@@ -26,55 +26,39 @@ trait PartialNameOptions extends StObject {
 }
 object PartialNameOptions {
   
-  @scala.inline
-  def apply(): PartialNameOptions = {
+  inline def apply(): PartialNameOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialNameOptions]
   }
   
-  @scala.inline
-  implicit class PartialNameOptionsMutableBuilder[Self <: PartialNameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialNameOptions](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
-    @scala.inline
-    def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
-    @scala.inline
-    def setMiddle(value: Boolean): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+    inline def setMiddle(value: Boolean): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
+    inline def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
     
-    @scala.inline
-    def setMiddle_initial(value: Boolean): Self = StObject.set(x, "middle_initial", value.asInstanceOf[js.Any])
+    inline def setMiddle_initial(value: Boolean): Self = StObject.set(x, "middle_initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddle_initialUndefined: Self = StObject.set(x, "middle_initial", js.undefined)
+    inline def setMiddle_initialUndefined: Self = StObject.set(x, "middle_initial", js.undefined)
     
-    @scala.inline
-    def setNationality(value: FirstNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
+    inline def setNationality(value: FirstNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNationalityUndefined: Self = StObject.set(x, "nationality", js.undefined)
+    inline def setNationalityUndefined: Self = StObject.set(x, "nationality", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: Boolean): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: Boolean): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

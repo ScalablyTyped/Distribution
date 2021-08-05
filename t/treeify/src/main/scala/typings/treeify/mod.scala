@@ -11,26 +11,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asLines(
+  inline def asLines(
     treeObj: TreeObject,
     showValues: Boolean,
     hideFunctions: Boolean,
     lineCallback: js.Function1[/* line */ String, Unit]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asLines")(treeObj.asInstanceOf[js.Any], showValues.asInstanceOf[js.Any], hideFunctions.asInstanceOf[js.Any], lineCallback.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def asLines(treeObj: TreeObject, showValues: Boolean, lineCallback: js.Function1[/* line */ String, Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asLines")(treeObj.asInstanceOf[js.Any], showValues.asInstanceOf[js.Any], lineCallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def asLines(treeObj: TreeObject, showValues: Boolean, lineCallback: js.Function1[/* line */ String, Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asLines")(treeObj.asInstanceOf[js.Any], showValues.asInstanceOf[js.Any], lineCallback.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def asTree(treeObj: TreeObject, showValues: Boolean, hideFunctions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asTree")(treeObj.asInstanceOf[js.Any], showValues.asInstanceOf[js.Any], hideFunctions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def asTree(treeObj: TreeObject, showValues: Boolean, hideFunctions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asTree")(treeObj.asInstanceOf[js.Any], showValues.asInstanceOf[js.Any], hideFunctions.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait TreeObject
     extends StObject
        with /* k */ StringDictionary[TreeValue]
   object TreeObject {
     
-    @scala.inline
-    def apply(): TreeObject = {
+    inline def apply(): TreeObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeObject]
     }

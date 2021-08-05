@@ -38,35 +38,26 @@ object DDPCommon {
   }
   object MethodInvocationOptions {
     
-    @scala.inline
-    def apply(connection: Connection, isSimulation: Boolean, randomSeed: String): MethodInvocationOptions = {
+    inline def apply(connection: Connection, isSimulation: Boolean, randomSeed: String): MethodInvocationOptions = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSimulation = isSimulation.asInstanceOf[js.Any], randomSeed = randomSeed.asInstanceOf[js.Any], userId = null)
       __obj.asInstanceOf[MethodInvocationOptions]
     }
     
-    @scala.inline
-    implicit class MethodInvocationOptionsMutableBuilder[Self <: MethodInvocationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MethodInvocationOptions](x: Self) {
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSimulation(value: Boolean): Self = StObject.set(x, "isSimulation", value.asInstanceOf[js.Any])
+      inline def setIsSimulation(value: Boolean): Self = StObject.set(x, "isSimulation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomSeed(value: String): Self = StObject.set(x, "randomSeed", value.asInstanceOf[js.Any])
+      inline def setRandomSeed(value: String): Self = StObject.set(x, "randomSeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetUserId(value: /* newUserId */ String => Unit): Self = StObject.set(x, "setUserId", js.Any.fromFunction1(value))
+      inline def setSetUserId(value: /* newUserId */ String => Unit): Self = StObject.set(x, "setUserId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUserIdUndefined: Self = StObject.set(x, "setUserId", js.undefined)
+      inline def setSetUserIdUndefined: Self = StObject.set(x, "setUserId", js.undefined)
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdNull: Self = StObject.set(x, "userId", null)
+      inline def setUserIdNull: Self = StObject.set(x, "userId", null)
     }
   }
 }

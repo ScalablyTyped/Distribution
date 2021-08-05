@@ -19,8 +19,7 @@ trait FileTriggerRequest
 }
 object FileTriggerRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentLength: Double,
     file: File,
     fileSize: Double,
@@ -35,16 +34,12 @@ object FileTriggerRequest {
     __obj.asInstanceOf[FileTriggerRequest]
   }
   
-  @scala.inline
-  implicit class FileTriggerRequestMutableBuilder[Self <: FileTriggerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FileTriggerRequest](x: Self) {
     
-    @scala.inline
-    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+    inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
   }
 }

@@ -22,6 +22,5 @@ object linuxPackagerMod {
     val executableName: String = js.native
   }
   
-  @scala.inline
-  def toAppImageOrSnapArch(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAppImageOrSnapArch")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toAppImageOrSnapArch(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAppImageOrSnapArch")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
 }

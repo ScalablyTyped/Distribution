@@ -11,16 +11,13 @@ trait PickImplupward extends StObject {
 }
 object PickImplupward {
   
-  @scala.inline
-  def apply(upward: String): PickImplupward = {
+  inline def apply(upward: String): PickImplupward = {
     val __obj = js.Dynamic.literal(upward = upward.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplupward]
   }
   
-  @scala.inline
-  implicit class PickImplupwardMutableBuilder[Self <: PickImplupward] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplupward](x: Self) {
     
-    @scala.inline
-    def setUpward(value: String): Self = StObject.set(x, "upward", value.asInstanceOf[js.Any])
+    inline def setUpward(value: String): Self = StObject.set(x, "upward", value.asInstanceOf[js.Any])
   }
 }

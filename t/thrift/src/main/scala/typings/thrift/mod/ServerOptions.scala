@@ -21,46 +21,33 @@ trait ServerOptions[TProcessor, THandler]
 }
 object ServerOptions {
   
-  @scala.inline
-  def apply[TProcessor, THandler](): ServerOptions[TProcessor, THandler] = {
+  inline def apply[TProcessor, THandler](): ServerOptions[TProcessor, THandler] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerOptions[TProcessor, THandler]]
   }
   
-  @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions[?, ?], TProcessor, THandler] (val x: Self & (ServerOptions[TProcessor, THandler])) extends AnyVal {
+  extension [Self <: ServerOptions[?, ?], TProcessor, THandler](x: Self & (ServerOptions[TProcessor, THandler])) {
     
-    @scala.inline
-    def setCors(value: js.Array[String]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: js.Array[String]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
-    @scala.inline
-    def setCorsVarargs(value: String*): Self = StObject.set(x, "cors", js.Array(value :_*))
+    inline def setCorsVarargs(value: String*): Self = StObject.set(x, "cors", js.Array(value :_*))
     
-    @scala.inline
-    def setFiles(value: String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setServices(value: ServiceMap[TProcessor, THandler]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: ServiceMap[TProcessor, THandler]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setTls(value: TlsOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: TlsOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

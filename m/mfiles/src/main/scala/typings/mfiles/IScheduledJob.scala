@@ -37,8 +37,7 @@ trait IScheduledJob extends StObject {
 }
 object IScheduledJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackupVaultJob: IBackupJob,
     Enabled: Boolean,
     ExportContentJob: IExportContentJob,
@@ -58,49 +57,34 @@ object IScheduledJob {
     __obj.asInstanceOf[IScheduledJob]
   }
   
-  @scala.inline
-  implicit class IScheduledJobMutableBuilder[Self <: IScheduledJob] (val x: Self) extends AnyVal {
+  extension [Self <: IScheduledJob](x: Self) {
     
-    @scala.inline
-    def setBackupVaultJob(value: IBackupJob): Self = StObject.set(x, "BackupVaultJob", value.asInstanceOf[js.Any])
+    inline def setBackupVaultJob(value: IBackupJob): Self = StObject.set(x, "BackupVaultJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportContentJob(value: IExportContentJob): Self = StObject.set(x, "ExportContentJob", value.asInstanceOf[js.Any])
+    inline def setExportContentJob(value: IExportContentJob): Self = StObject.set(x, "ExportContentJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportContentJob(value: IImportContentJob): Self = StObject.set(x, "ImportContentJob", value.asInstanceOf[js.Any])
+    inline def setImportContentJob(value: IImportContentJob): Self = StObject.set(x, "ImportContentJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobType(value: MFScheduledJobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
+    inline def setJobType(value: MFScheduledJobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizeVaultJob(value: IOptimizeVaultJob): Self = StObject.set(x, "OptimizeVaultJob", value.asInstanceOf[js.Any])
+    inline def setOptimizeVaultJob(value: IOptimizeVaultJob): Self = StObject.set(x, "OptimizeVaultJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetBackupVaultJob(value: IBackupJob => Unit): Self = StObject.set(x, "SetBackupVaultJob", js.Any.fromFunction1(value))
+    inline def setSetBackupVaultJob(value: IBackupJob => Unit): Self = StObject.set(x, "SetBackupVaultJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExportContentJob(value: IExportContentJob => Unit): Self = StObject.set(x, "SetExportContentJob", js.Any.fromFunction1(value))
+    inline def setSetExportContentJob(value: IExportContentJob => Unit): Self = StObject.set(x, "SetExportContentJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImportContentJob(value: IImportContentJob => Unit): Self = StObject.set(x, "SetImportContentJob", js.Any.fromFunction1(value))
+    inline def setSetImportContentJob(value: IImportContentJob => Unit): Self = StObject.set(x, "SetImportContentJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptimizeVaultJob(value: IOptimizeVaultJob => Unit): Self = StObject.set(x, "SetOptimizeVaultJob", js.Any.fromFunction1(value))
+    inline def setSetOptimizeVaultJob(value: IOptimizeVaultJob => Unit): Self = StObject.set(x, "SetOptimizeVaultJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemporary(value: Boolean): Self = StObject.set(x, "Temporary", value.asInstanceOf[js.Any])
+    inline def setTemporary(value: Boolean): Self = StObject.set(x, "Temporary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggers(value: IScheduledJobTriggers): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
+    inline def setTriggers(value: IScheduledJobTriggers): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
   }
 }

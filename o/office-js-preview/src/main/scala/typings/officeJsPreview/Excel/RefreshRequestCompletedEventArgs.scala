@@ -63,35 +63,26 @@ trait RefreshRequestCompletedEventArgs extends StObject {
 }
 object RefreshRequestCompletedEventArgs {
   
-  @scala.inline
-  def apply(refreshed: Boolean, serviceId: Double, source: EventSource | Local | Remote): RefreshRequestCompletedEventArgs = {
+  inline def apply(refreshed: Boolean, serviceId: Double, source: EventSource | Local | Remote): RefreshRequestCompletedEventArgs = {
     val __obj = js.Dynamic.literal(refreshed = refreshed.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LinkedDataTypeRefreshRequestCompleted")
     __obj.asInstanceOf[RefreshRequestCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class RefreshRequestCompletedEventArgsMutableBuilder[Self <: RefreshRequestCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshRequestCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRefreshed(value: Boolean): Self = StObject.set(x, "refreshed", value.asInstanceOf[js.Any])
+    inline def setRefreshed(value: Boolean): Self = StObject.set(x, "refreshed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LinkedDataTypeRefreshRequestCompleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LinkedDataTypeRefreshRequestCompleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

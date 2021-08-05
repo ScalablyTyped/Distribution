@@ -35,8 +35,7 @@ object typesGetMergeConflictsOutputMod {
   }
   object GetMergeConflictsOutput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $metadata: ResponseMetadata,
       destinationCommitId: String,
       mergeable: Boolean,
@@ -46,20 +45,15 @@ object typesGetMergeConflictsOutputMod {
       __obj.asInstanceOf[GetMergeConflictsOutput]
     }
     
-    @scala.inline
-    implicit class GetMergeConflictsOutputMutableBuilder[Self <: GetMergeConflictsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetMergeConflictsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationCommitId(value: String): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
+      inline def setDestinationCommitId(value: String): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeable(value: Boolean): Self = StObject.set(x, "mergeable", value.asInstanceOf[js.Any])
+      inline def setMergeable(value: Boolean): Self = StObject.set(x, "mergeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCommitId(value: String): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
+      inline def setSourceCommitId(value: String): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
     }
   }
 }

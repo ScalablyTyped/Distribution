@@ -13,6 +13,5 @@ object toFloatMod {
   /**
     * Convert the input string to a float, or `NaN` if the input is not a float.
     */
-  @scala.inline
-  def default(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -25,30 +25,30 @@ object rowRendererMod {
   @js.native
   class RowRenderer () extends BeanStub {
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
     def addRenderedRowListener(eventName: String, rowIndex: Double, callback: js.Function): Unit = js.native
     
     def agWire(loggerFactory: LoggerFactory): Unit = js.native
     
-    var animationFrameService: js.Any = js.native
+    /* private */ var animationFrameService: js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
     /* private */ def binRowComps(recycleRows: js.Any): js.Any = js.native
     
     /* private */ def calculateIndexesToDraw(): js.Any = js.native
     
-    var cellNavigationService: js.Any = js.native
+    /* private */ var cellNavigationService: js.Any = js.native
     
     /* private */ def checkAngularCompile(): js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createOrUpdateRowComp(rowIndex: js.Any, rowsToRecycle: js.Any, animate: js.Any, afterScroll: js.Any): js.Any = js.native
     
@@ -58,24 +58,24 @@ object rowRendererMod {
     
     def ensureCellVisible(gridCell: GridCell): Unit = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var expressionService: js.Any = js.native
+    /* private */ var expressionService: js.Any = js.native
     
     /* private */ def findNextCellToFocusOn(gridCell: js.Any, backwards: js.Any, startEditing: js.Any): js.Any = js.native
     
-    var firstRenderedRow: js.Any = js.native
+    /* private */ var firstRenderedRow: js.Any = js.native
     
     def flashCells(): Unit = js.native
     def flashCells(params: FlashCellsParams): Unit = js.native
     
-    var floatingBottomRowComps: js.Any = js.native
+    /* private */ var floatingBottomRowComps: js.Any = js.native
     
-    var floatingTopRowComps: js.Any = js.native
+    /* private */ var floatingTopRowComps: js.Any = js.native
     
     /* private */ def flushContainers(rowComps: js.Any): js.Any = js.native
     
-    var focusedCellController: js.Any = js.native
+    /* private */ var focusedCellController: js.Any = js.native
     
     def forEachCellComp(callback: js.Function1[/* cellComp */ CellComp, Unit]): Unit = js.native
     
@@ -105,23 +105,23 @@ object rowRendererMod {
     
     def getRenderedNodes(): js.Array[RowNode] = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridCore: js.Any = js.native
+    /* private */ var gridCore: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
-    var heightScaler: js.Any = js.native
+    /* private */ var heightScaler: js.Any = js.native
     
     /* private */ def keepRowBecauseEditing(rowComp: js.Any): js.Any = js.native
     
-    var lastRenderedRow: js.Any = js.native
+    /* private */ var lastRenderedRow: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var loggerFactory: js.Any = js.native
+    /* private */ var loggerFactory: js.Any = js.native
     
     /* private */ def moveEditToNextCellOrRow(previousRenderedCell: js.Any, nextRenderedCell: js.Any): js.Any = js.native
     
@@ -145,15 +145,15 @@ object rowRendererMod {
     
     def onTabKeyDown(previousRenderedCell: CellComp, keyboardEvent: KeyboardEvent): Unit = js.native
     
-    var paginationProxy: js.Any = js.native
+    /* private */ var paginationProxy: js.Any = js.native
     
-    var pinnedRowModel: js.Any = js.native
+    /* private */ var pinnedRowModel: js.Any = js.native
     
-    var pinningLeft: js.Any = js.native
+    /* private */ var pinningLeft: js.Any = js.native
     
-    var pinningRight: js.Any = js.native
+    /* private */ var pinningRight: js.Any = js.native
     
-    var rangeController: js.Any = js.native
+    /* private */ var rangeController: js.Any = js.native
     
     /* private */ def redraw(rowsToRecycle: js.Any, animate: js.Any, afterScroll: js.Any): js.Any = js.native
     
@@ -180,7 +180,7 @@ object rowRendererMod {
       fullWidthContainerComp: js.Any
     ): js.Any = js.native
     
-    var refreshInProgress: js.Any = js.native
+    /* private */ var refreshInProgress: js.Any = js.native
     
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
     
@@ -192,9 +192,9 @@ object rowRendererMod {
     
     /* private */ def restoreFocusedCell(gridCell: js.Any): js.Any = js.native
     
-    var rowCompsByIndex: js.Any = js.native
+    /* private */ var rowCompsByIndex: js.Any = js.native
     
-    var rowContainers: js.Any = js.native
+    /* private */ var rowContainers: js.Any = js.native
     
     /* private */ def scrollToTopIfNewData(params: js.Any): js.Any = js.native
     
@@ -207,9 +207,9 @@ object rowRendererMod {
     
     def tabToNextCell(backwards: Boolean): Boolean = js.native
     
-    var templateService: js.Any = js.native
+    /* private */ var templateService: js.Any = js.native
     
-    var valueService: js.Any = js.native
+    /* private */ var valueService: js.Any = js.native
     
     /* private */ def workOutFirstAndLastRowsToRender(): js.Any = js.native
   }
@@ -230,50 +230,36 @@ object rowRendererMod {
   }
   object RefreshViewParams {
     
-    @scala.inline
-    def apply(): RefreshViewParams = {
+    inline def apply(): RefreshViewParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshViewParams]
     }
     
-    @scala.inline
-    implicit class RefreshViewParamsMutableBuilder[Self <: RefreshViewParams] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshViewParams](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setNewData(value: Boolean): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
+      inline def setNewData(value: Boolean): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewDataUndefined: Self = StObject.set(x, "newData", js.undefined)
+      inline def setNewDataUndefined: Self = StObject.set(x, "newData", js.undefined)
       
-      @scala.inline
-      def setNewPage(value: Boolean): Self = StObject.set(x, "newPage", value.asInstanceOf[js.Any])
+      inline def setNewPage(value: Boolean): Self = StObject.set(x, "newPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPageUndefined: Self = StObject.set(x, "newPage", js.undefined)
+      inline def setNewPageUndefined: Self = StObject.set(x, "newPage", js.undefined)
       
-      @scala.inline
-      def setOnlyBody(value: Boolean): Self = StObject.set(x, "onlyBody", value.asInstanceOf[js.Any])
+      inline def setOnlyBody(value: Boolean): Self = StObject.set(x, "onlyBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyBodyUndefined: Self = StObject.set(x, "onlyBody", js.undefined)
+      inline def setOnlyBodyUndefined: Self = StObject.set(x, "onlyBody", js.undefined)
       
-      @scala.inline
-      def setRecycleRows(value: Boolean): Self = StObject.set(x, "recycleRows", value.asInstanceOf[js.Any])
+      inline def setRecycleRows(value: Boolean): Self = StObject.set(x, "recycleRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecycleRowsUndefined: Self = StObject.set(x, "recycleRows", js.undefined)
+      inline def setRecycleRowsUndefined: Self = StObject.set(x, "recycleRows", js.undefined)
       
-      @scala.inline
-      def setSuppressKeepFocus(value: Boolean): Self = StObject.set(x, "suppressKeepFocus", value.asInstanceOf[js.Any])
+      inline def setSuppressKeepFocus(value: Boolean): Self = StObject.set(x, "suppressKeepFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressKeepFocusUndefined: Self = StObject.set(x, "suppressKeepFocus", js.undefined)
+      inline def setSuppressKeepFocusUndefined: Self = StObject.set(x, "suppressKeepFocus", js.undefined)
     }
   }
 }

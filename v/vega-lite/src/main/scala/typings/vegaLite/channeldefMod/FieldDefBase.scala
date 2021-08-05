@@ -61,37 +61,27 @@ trait FieldDefBase[F, B /* <: Bin */]
 }
 object FieldDefBase {
   
-  @scala.inline
-  def apply[F, B /* <: Bin */](): FieldDefBase[F, B] = {
+  inline def apply[F, B /* <: Bin */](): FieldDefBase[F, B] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldDefBase[F, B]]
   }
   
-  @scala.inline
-  implicit class FieldDefBaseMutableBuilder[Self <: FieldDefBase[?, ?], F, B /* <: Bin */] (val x: Self & (FieldDefBase[F, B])) extends AnyVal {
+  extension [Self <: FieldDefBase[?, ?], F, B /* <: Bin */](x: Self & (FieldDefBase[F, B])) {
     
-    @scala.inline
-    def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    @scala.inline
-    def setBin(value: B): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+    inline def setBin(value: B): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
+    inline def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
     
-    @scala.inline
-    def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+    inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
   }
 }

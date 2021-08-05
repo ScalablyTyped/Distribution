@@ -30,8 +30,7 @@ trait IGeoDataResult extends StObject {
 }
 object IGeoDataResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Copyright: ICopyright,
     EntityID: String,
     EntityMetadata: IMetadata,
@@ -43,31 +42,22 @@ object IGeoDataResult {
     __obj.asInstanceOf[IGeoDataResult]
   }
   
-  @scala.inline
-  implicit class IGeoDataResultMutableBuilder[Self <: IGeoDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoDataResult](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: ICopyright): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: ICopyright): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityID(value: String): Self = StObject.set(x, "EntityID", value.asInstanceOf[js.Any])
+    inline def setEntityID(value: String): Self = StObject.set(x, "EntityID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityMetadata(value: IMetadata): Self = StObject.set(x, "EntityMetadata", value.asInstanceOf[js.Any])
+    inline def setEntityMetadata(value: IMetadata): Self = StObject.set(x, "EntityMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: IName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: IName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygons(value: js.Array[Polygon]): Self = StObject.set(x, "Polygons", value.asInstanceOf[js.Any])
+    inline def setPolygons(value: js.Array[Polygon]): Self = StObject.set(x, "Polygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonsVarargs(value: Polygon*): Self = StObject.set(x, "Polygons", js.Array(value :_*))
+    inline def setPolygonsVarargs(value: Polygon*): Self = StObject.set(x, "Polygons", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimitives(value: js.Array[IGeoDataPrimitive]): Self = StObject.set(x, "Primitives", value.asInstanceOf[js.Any])
+    inline def setPrimitives(value: js.Array[IGeoDataPrimitive]): Self = StObject.set(x, "Primitives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitivesVarargs(value: IGeoDataPrimitive*): Self = StObject.set(x, "Primitives", js.Array(value :_*))
+    inline def setPrimitivesVarargs(value: IGeoDataPrimitive*): Self = StObject.set(x, "Primitives", js.Array(value :_*))
   }
 }

@@ -26,20 +26,16 @@ object typesDeleteBaiduChannelOutputMod {
   }
   object DeleteBaiduChannelOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, BaiduChannelResponse: UnmarshalledBaiduChannelResponse): DeleteBaiduChannelOutput = {
+    inline def apply($metadata: ResponseMetadata, BaiduChannelResponse: UnmarshalledBaiduChannelResponse): DeleteBaiduChannelOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], BaiduChannelResponse = BaiduChannelResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteBaiduChannelOutput]
     }
     
-    @scala.inline
-    implicit class DeleteBaiduChannelOutputMutableBuilder[Self <: DeleteBaiduChannelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteBaiduChannelOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaiduChannelResponse(value: UnmarshalledBaiduChannelResponse): Self = StObject.set(x, "BaiduChannelResponse", value.asInstanceOf[js.Any])
+      inline def setBaiduChannelResponse(value: UnmarshalledBaiduChannelResponse): Self = StObject.set(x, "BaiduChannelResponse", value.asInstanceOf[js.Any])
     }
   }
 }

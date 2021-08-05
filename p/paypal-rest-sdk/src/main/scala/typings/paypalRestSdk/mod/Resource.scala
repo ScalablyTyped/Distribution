@@ -36,94 +36,65 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(amount: Amount, id: String): Resource = {
+  inline def apply(amount: Amount, id: String): Resource = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Amount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Amount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
+    inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate_timeUndefined: Self = StObject.set(x, "create_time", js.undefined)
+    inline def setCreate_timeUndefined: Self = StObject.set(x, "create_time", js.undefined)
     
-    @scala.inline
-    def setFmf_details(value: FraudManagementFiltersDetails): Self = StObject.set(x, "fmf_details", value.asInstanceOf[js.Any])
+    inline def setFmf_details(value: FraudManagementFiltersDetails): Self = StObject.set(x, "fmf_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFmf_detailsUndefined: Self = StObject.set(x, "fmf_details", js.undefined)
+    inline def setFmf_detailsUndefined: Self = StObject.set(x, "fmf_details", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setParent_payment(value: String): Self = StObject.set(x, "parent_payment", value.asInstanceOf[js.Any])
+    inline def setParent_payment(value: String): Self = StObject.set(x, "parent_payment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_paymentUndefined: Self = StObject.set(x, "parent_payment", js.undefined)
+    inline def setParent_paymentUndefined: Self = StObject.set(x, "parent_payment", js.undefined)
     
-    @scala.inline
-    def setPayment_mode(value: String): Self = StObject.set(x, "payment_mode", value.asInstanceOf[js.Any])
+    inline def setPayment_mode(value: String): Self = StObject.set(x, "payment_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_modeUndefined: Self = StObject.set(x, "payment_mode", js.undefined)
+    inline def setPayment_modeUndefined: Self = StObject.set(x, "payment_mode", js.undefined)
     
-    @scala.inline
-    def setProcessor_response(value: js.Any): Self = StObject.set(x, "processor_response", value.asInstanceOf[js.Any])
+    inline def setProcessor_response(value: js.Any): Self = StObject.set(x, "processor_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessor_responseUndefined: Self = StObject.set(x, "processor_response", js.undefined)
+    inline def setProcessor_responseUndefined: Self = StObject.set(x, "processor_response", js.undefined)
     
-    @scala.inline
-    def setProtection_eligibility(value: String): Self = StObject.set(x, "protection_eligibility", value.asInstanceOf[js.Any])
+    inline def setProtection_eligibility(value: String): Self = StObject.set(x, "protection_eligibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection_eligibilityUndefined: Self = StObject.set(x, "protection_eligibility", js.undefined)
+    inline def setProtection_eligibilityUndefined: Self = StObject.set(x, "protection_eligibility", js.undefined)
     
-    @scala.inline
-    def setProtection_eligibility_type(value: String): Self = StObject.set(x, "protection_eligibility_type", value.asInstanceOf[js.Any])
+    inline def setProtection_eligibility_type(value: String): Self = StObject.set(x, "protection_eligibility_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection_eligibility_typeUndefined: Self = StObject.set(x, "protection_eligibility_type", js.undefined)
+    inline def setProtection_eligibility_typeUndefined: Self = StObject.set(x, "protection_eligibility_type", js.undefined)
     
-    @scala.inline
-    def setReason_code(value: String): Self = StObject.set(x, "reason_code", value.asInstanceOf[js.Any])
+    inline def setReason_code(value: String): Self = StObject.set(x, "reason_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason_codeUndefined: Self = StObject.set(x, "reason_code", js.undefined)
+    inline def setReason_codeUndefined: Self = StObject.set(x, "reason_code", js.undefined)
     
-    @scala.inline
-    def setReceipt_id(value: String): Self = StObject.set(x, "receipt_id", value.asInstanceOf[js.Any])
+    inline def setReceipt_id(value: String): Self = StObject.set(x, "receipt_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceipt_idUndefined: Self = StObject.set(x, "receipt_id", js.undefined)
+    inline def setReceipt_idUndefined: Self = StObject.set(x, "receipt_id", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUpdate_time(value: String): Self = StObject.set(x, "update_time", value.asInstanceOf[js.Any])
+    inline def setUpdate_time(value: String): Self = StObject.set(x, "update_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_timeUndefined: Self = StObject.set(x, "update_time", js.undefined)
+    inline def setUpdate_timeUndefined: Self = StObject.set(x, "update_time", js.undefined)
   }
 }

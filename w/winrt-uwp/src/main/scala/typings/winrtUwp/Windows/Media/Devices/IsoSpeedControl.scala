@@ -55,8 +55,7 @@ trait IsoSpeedControl extends StObject {
 }
 object IsoSpeedControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auto: Boolean,
     max: Double,
     min: Double,
@@ -73,40 +72,28 @@ object IsoSpeedControl {
     __obj.asInstanceOf[IsoSpeedControl]
   }
   
-  @scala.inline
-  implicit class IsoSpeedControlMutableBuilder[Self <: IsoSpeedControl] (val x: Self) extends AnyVal {
+  extension [Self <: IsoSpeedControl](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreset(value: IsoSpeedPreset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: IsoSpeedPreset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAutoAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "setAutoAsync", js.Any.fromFunction0(value))
+    inline def setSetAutoAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "setAutoAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPresetAsync(value: IsoSpeedPreset => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPresetAsync", js.Any.fromFunction1(value))
+    inline def setSetPresetAsync(value: IsoSpeedPreset => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPresetAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
+    inline def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPresets(value: IVectorView[IsoSpeedPreset]): Self = StObject.set(x, "supportedPresets", value.asInstanceOf[js.Any])
+    inline def setSupportedPresets(value: IVectorView[IsoSpeedPreset]): Self = StObject.set(x, "supportedPresets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

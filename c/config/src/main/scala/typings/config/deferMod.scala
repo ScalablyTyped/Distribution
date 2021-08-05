@@ -10,8 +10,7 @@ object deferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deferConfig[T, R](func: DeferFunction[T, R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("deferConfig")(func.asInstanceOf[js.Any]).asInstanceOf[R]
+  inline def deferConfig[T, R](func: DeferFunction[T, R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("deferConfig")(func.asInstanceOf[js.Any]).asInstanceOf[R]
   
   type DeferFunction[T, R] = js.ThisFunction1[/* this */ js.Any, /* origValue */ T, R]
 }

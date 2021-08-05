@@ -33,43 +33,31 @@ trait SpawnOptions extends StObject {
 }
 object SpawnOptions {
   
-  @scala.inline
-  def apply(): SpawnOptions = {
+  inline def apply(): SpawnOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpawnOptions]
   }
   
-  @scala.inline
-  implicit class SpawnOptionsMutableBuilder[Self <: SpawnOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SpawnOptions](x: Self) {
     
-    @scala.inline
-    def setDirections(value: js.Array[DirectionConstant]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+    inline def setDirections(value: js.Array[DirectionConstant]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+    inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
-    @scala.inline
-    def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value :_*))
+    inline def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setEnergyStructures(value: js.Array[StructureSpawn | StructureExtension]): Self = StObject.set(x, "energyStructures", value.asInstanceOf[js.Any])
+    inline def setEnergyStructures(value: js.Array[StructureSpawn | StructureExtension]): Self = StObject.set(x, "energyStructures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergyStructuresUndefined: Self = StObject.set(x, "energyStructures", js.undefined)
+    inline def setEnergyStructuresUndefined: Self = StObject.set(x, "energyStructures", js.undefined)
     
-    @scala.inline
-    def setEnergyStructuresVarargs(value: (StructureSpawn | StructureExtension)*): Self = StObject.set(x, "energyStructures", js.Array(value :_*))
+    inline def setEnergyStructuresVarargs(value: (StructureSpawn | StructureExtension)*): Self = StObject.set(x, "energyStructures", js.Array(value :_*))
     
-    @scala.inline
-    def setMemory(value: CreepMemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: CreepMemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
   }
 }

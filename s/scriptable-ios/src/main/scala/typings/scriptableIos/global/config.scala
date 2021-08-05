@@ -21,8 +21,7 @@ object config {
   @JSGlobal("config.runsFromHomeScreen")
   @js.native
   def runsFromHomeScreen: Boolean = js.native
-  @scala.inline
-  def runsFromHomeScreen_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsFromHomeScreen")(x.asInstanceOf[js.Any])
+  inline def runsFromHomeScreen_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsFromHomeScreen")(x.asInstanceOf[js.Any])
   
   /**
     * Whether the script is running in the action extension.
@@ -31,8 +30,7 @@ object config {
   @JSGlobal("config.runsInActionExtension")
   @js.native
   def runsInActionExtension: Boolean = js.native
-  @scala.inline
-  def runsInActionExtension_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInActionExtension")(x.asInstanceOf[js.Any])
+  inline def runsInActionExtension_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInActionExtension")(x.asInstanceOf[js.Any])
   
   /**
     * Whether the script is running in the app.
@@ -41,8 +39,7 @@ object config {
   @JSGlobal("config.runsInApp")
   @js.native
   def runsInApp: Boolean = js.native
-  @scala.inline
-  def runsInApp_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInApp")(x.asInstanceOf[js.Any])
+  inline def runsInApp_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInApp")(x.asInstanceOf[js.Any])
   
   /**
     * Whether the script is running in a notification.
@@ -51,8 +48,7 @@ object config {
   @JSGlobal("config.runsInNotification")
   @js.native
   def runsInNotification: Boolean = js.native
-  @scala.inline
-  def runsInNotification_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInNotification")(x.asInstanceOf[js.Any])
+  inline def runsInNotification_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInNotification")(x.asInstanceOf[js.Any])
   
   /**
     * Whether the script is running in a widget.
@@ -61,8 +57,7 @@ object config {
   @JSGlobal("config.runsInWidget")
   @js.native
   def runsInWidget: Boolean = js.native
-  @scala.inline
-  def runsInWidget_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInWidget")(x.asInstanceOf[js.Any])
+  inline def runsInWidget_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInWidget")(x.asInstanceOf[js.Any])
   
   /**
     * Whether the script is running with Siri.
@@ -71,8 +66,7 @@ object config {
   @JSGlobal("config.runsWithSiri")
   @js.native
   def runsWithSiri: Boolean = js.native
-  @scala.inline
-  def runsWithSiri_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsWithSiri")(x.asInstanceOf[js.Any])
+  inline def runsWithSiri_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsWithSiri")(x.asInstanceOf[js.Any])
   
   /**
     * The size of the widget the script is running in.
@@ -83,6 +77,5 @@ object config {
   @JSGlobal("config.widgetFamily")
   @js.native
   def widgetFamily: String = js.native
-  @scala.inline
-  def widgetFamily_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetFamily")(x.asInstanceOf[js.Any])
+  inline def widgetFamily_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetFamily")(x.asInstanceOf[js.Any])
 }

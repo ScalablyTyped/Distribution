@@ -50,44 +50,32 @@ object anon {
   }
   object FilterFunctionOptions {
     
-    @scala.inline
-    def apply(): FilterFunctionOptions = {
+    inline def apply(): FilterFunctionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterFunctionOptions]
     }
     
-    @scala.inline
-    implicit class FilterFunctionOptionsMutableBuilder[Self <: FilterFunctionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FilterFunctionOptions](x: Self) {
       
-      @scala.inline
-      def setGetItemValue(value: (AutoCompleteData, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
+      inline def setGetItemValue(value: (AutoCompleteData, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetItemValueUndefined: Self = StObject.set(x, "getItemValue", js.undefined)
+      inline def setGetItemValueUndefined: Self = StObject.set(x, "getItemValue", js.undefined)
       
-      @scala.inline
-      def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
+      inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
+      inline def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
       
-      @scala.inline
-      def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
+      inline def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
+      inline def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
+      inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
     }
   }
   
@@ -104,26 +92,20 @@ object anon {
   }
   object RequiredTransitionHooks {
     
-    @scala.inline
-    def apply(onEnter: js.Any, onEntered: js.Any, onEntering: js.Any, onExited: js.Any): RequiredTransitionHooks = {
+    inline def apply(onEnter: js.Any, onEntered: js.Any, onEntering: js.Any, onExited: js.Any): RequiredTransitionHooks = {
       val __obj = js.Dynamic.literal(onEnter = onEnter.asInstanceOf[js.Any], onEntered = onEntered.asInstanceOf[js.Any], onEntering = onEntering.asInstanceOf[js.Any], onExited = onExited.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredTransitionHooks]
     }
     
-    @scala.inline
-    implicit class RequiredTransitionHooksMutableBuilder[Self <: RequiredTransitionHooks] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredTransitionHooks](x: Self) {
       
-      @scala.inline
-      def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
     }
   }
 }

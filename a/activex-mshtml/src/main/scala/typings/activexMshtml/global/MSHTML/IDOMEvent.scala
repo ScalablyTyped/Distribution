@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMEvent")
 @js.native
-class IDOMEvent protected ()
+/* private */ class IDOMEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IDOMEvent_typekey")
   var MSHTMLDotIDOMEvent_typekey: typings.activexMshtml.MSHTML.IDOMEvent = js.native
   

@@ -13,25 +13,19 @@ trait ComplexInputs extends StObject {
 }
 object ComplexInputs {
   
-  @scala.inline
-  def apply(): ComplexInputs = {
+  inline def apply(): ComplexInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplexInputs]
   }
   
-  @scala.inline
-  implicit class ComplexInputsMutableBuilder[Self <: ComplexInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ComplexInputs](x: Self) {
     
-    @scala.inline
-    def setImag(value: js.Any): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
+    inline def setImag(value: js.Any): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagUndefined: Self = StObject.set(x, "imag", js.undefined)
+    inline def setImagUndefined: Self = StObject.set(x, "imag", js.undefined)
     
-    @scala.inline
-    def setReal(value: js.Any): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+    inline def setReal(value: js.Any): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
+    inline def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
   }
 }

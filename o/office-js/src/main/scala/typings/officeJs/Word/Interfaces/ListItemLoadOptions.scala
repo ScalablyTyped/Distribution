@@ -44,37 +44,27 @@ trait ListItemLoadOptions extends StObject {
 }
 object ListItemLoadOptions {
   
-  @scala.inline
-  def apply(): ListItemLoadOptions = {
+  inline def apply(): ListItemLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemLoadOptions]
   }
   
-  @scala.inline
-  implicit class ListItemLoadOptionsMutableBuilder[Self <: ListItemLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setListString(value: Boolean): Self = StObject.set(x, "listString", value.asInstanceOf[js.Any])
+    inline def setListString(value: Boolean): Self = StObject.set(x, "listString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListStringUndefined: Self = StObject.set(x, "listString", js.undefined)
+    inline def setListStringUndefined: Self = StObject.set(x, "listString", js.undefined)
     
-    @scala.inline
-    def setSiblingIndex(value: Boolean): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
+    inline def setSiblingIndex(value: Boolean): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
+    inline def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
   }
 }

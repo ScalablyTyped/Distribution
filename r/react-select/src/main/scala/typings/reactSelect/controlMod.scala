@@ -22,8 +22,7 @@ object controlMod {
   @js.native
   val default: ComponentType[ControlProps[js.Any]] = js.native
   
-  @scala.inline
-  def css(state: State): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def css(state: State): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
   @js.native
   trait ControlProps[OptionType /* <: OptionTypeBase */]
@@ -62,23 +61,18 @@ object controlMod {
   }
   object State {
     
-    @scala.inline
-    def apply(isDisabled: Boolean, isFocused: Boolean, menuIsOpen: Boolean): State = {
+    inline def apply(isDisabled: Boolean, isFocused: Boolean, menuIsOpen: Boolean): State = {
       val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], menuIsOpen = menuIsOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
+      inline def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
     }
   }
 }

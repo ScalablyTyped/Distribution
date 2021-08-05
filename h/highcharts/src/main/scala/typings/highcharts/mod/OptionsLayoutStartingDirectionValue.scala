@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsLayoutStartingDirectionValue extends StObject
 object OptionsLayoutStartingDirectionValue {
   
-  @scala.inline
-  def horizontal: typings.highcharts.highchartsStrings.horizontal = "horizontal".asInstanceOf[typings.highcharts.highchartsStrings.horizontal]
+  inline def horizontal: typings.highcharts.highchartsStrings.horizontal = "horizontal".asInstanceOf[typings.highcharts.highchartsStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.highcharts.highchartsStrings.vertical = "vertical".asInstanceOf[typings.highcharts.highchartsStrings.vertical]
+  inline def vertical: typings.highcharts.highchartsStrings.vertical = "vertical".asInstanceOf[typings.highcharts.highchartsStrings.vertical]
 }

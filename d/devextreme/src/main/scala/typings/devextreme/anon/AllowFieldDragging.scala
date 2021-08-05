@@ -22,55 +22,39 @@ trait AllowFieldDragging extends StObject {
 }
 object AllowFieldDragging {
   
-  @scala.inline
-  def apply(): AllowFieldDragging = {
+  inline def apply(): AllowFieldDragging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowFieldDragging]
   }
   
-  @scala.inline
-  implicit class AllowFieldDraggingMutableBuilder[Self <: AllowFieldDragging] (val x: Self) extends AnyVal {
+  extension [Self <: AllowFieldDragging](x: Self) {
     
-    @scala.inline
-    def setAllowFieldDragging(value: Boolean): Self = StObject.set(x, "allowFieldDragging", value.asInstanceOf[js.Any])
+    inline def setAllowFieldDragging(value: Boolean): Self = StObject.set(x, "allowFieldDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFieldDraggingUndefined: Self = StObject.set(x, "allowFieldDragging", js.undefined)
+    inline def setAllowFieldDraggingUndefined: Self = StObject.set(x, "allowFieldDragging", js.undefined)
     
-    @scala.inline
-    def setShowColumnFields(value: Boolean): Self = StObject.set(x, "showColumnFields", value.asInstanceOf[js.Any])
+    inline def setShowColumnFields(value: Boolean): Self = StObject.set(x, "showColumnFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowColumnFieldsUndefined: Self = StObject.set(x, "showColumnFields", js.undefined)
+    inline def setShowColumnFieldsUndefined: Self = StObject.set(x, "showColumnFields", js.undefined)
     
-    @scala.inline
-    def setShowDataFields(value: Boolean): Self = StObject.set(x, "showDataFields", value.asInstanceOf[js.Any])
+    inline def setShowDataFields(value: Boolean): Self = StObject.set(x, "showDataFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDataFieldsUndefined: Self = StObject.set(x, "showDataFields", js.undefined)
+    inline def setShowDataFieldsUndefined: Self = StObject.set(x, "showDataFields", js.undefined)
     
-    @scala.inline
-    def setShowFilterFields(value: Boolean): Self = StObject.set(x, "showFilterFields", value.asInstanceOf[js.Any])
+    inline def setShowFilterFields(value: Boolean): Self = StObject.set(x, "showFilterFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFilterFieldsUndefined: Self = StObject.set(x, "showFilterFields", js.undefined)
+    inline def setShowFilterFieldsUndefined: Self = StObject.set(x, "showFilterFields", js.undefined)
     
-    @scala.inline
-    def setShowRowFields(value: Boolean): Self = StObject.set(x, "showRowFields", value.asInstanceOf[js.Any])
+    inline def setShowRowFields(value: Boolean): Self = StObject.set(x, "showRowFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRowFieldsUndefined: Self = StObject.set(x, "showRowFields", js.undefined)
+    inline def setShowRowFieldsUndefined: Self = StObject.set(x, "showRowFields", js.undefined)
     
-    @scala.inline
-    def setTexts(value: ColumnFieldArea): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setTexts(value: ColumnFieldArea): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
+    inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

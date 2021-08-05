@@ -10,19 +10,15 @@ trait SubscribeOptions extends StObject {
 }
 object SubscribeOptions {
   
-  @scala.inline
-  def apply(): SubscribeOptions = {
+  inline def apply(): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscribeOptions]
   }
   
-  @scala.inline
-  implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeOptions](x: Self) {
     
-    @scala.inline
-    def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+    inline def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+    inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
   }
 }

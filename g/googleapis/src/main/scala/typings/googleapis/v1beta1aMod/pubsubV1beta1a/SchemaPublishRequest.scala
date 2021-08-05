@@ -21,25 +21,19 @@ trait SchemaPublishRequest extends StObject {
 }
 object SchemaPublishRequest {
   
-  @scala.inline
-  def apply(): SchemaPublishRequest = {
+  inline def apply(): SchemaPublishRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublishRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPublishRequestMutableBuilder[Self <: SchemaPublishRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublishRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: SchemaPubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: SchemaPubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

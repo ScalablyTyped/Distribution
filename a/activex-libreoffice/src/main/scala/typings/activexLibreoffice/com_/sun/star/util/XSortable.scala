@@ -54,8 +54,7 @@ trait XSortable
 }
 object XSortable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createSortDescriptor: () => SafeArray[PropertyValue],
     queryInterface: `type` => js.Any,
@@ -66,13 +65,10 @@ object XSortable {
     __obj.asInstanceOf[XSortable]
   }
   
-  @scala.inline
-  implicit class XSortableMutableBuilder[Self <: XSortable] (val x: Self) extends AnyVal {
+  extension [Self <: XSortable](x: Self) {
     
-    @scala.inline
-    def setCreateSortDescriptor(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "createSortDescriptor", js.Any.fromFunction0(value))
+    inline def setCreateSortDescriptor(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "createSortDescriptor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSort(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+    inline def setSort(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
   }
 }

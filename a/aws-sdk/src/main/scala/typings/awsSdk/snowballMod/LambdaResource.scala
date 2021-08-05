@@ -18,28 +18,21 @@ trait LambdaResource extends StObject {
 }
 object LambdaResource {
   
-  @scala.inline
-  def apply(): LambdaResource = {
+  inline def apply(): LambdaResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LambdaResource]
   }
   
-  @scala.inline
-  implicit class LambdaResourceMutableBuilder[Self <: LambdaResource] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaResource](x: Self) {
     
-    @scala.inline
-    def setEventTriggers(value: EventTriggerDefinitionList): Self = StObject.set(x, "EventTriggers", value.asInstanceOf[js.Any])
+    inline def setEventTriggers(value: EventTriggerDefinitionList): Self = StObject.set(x, "EventTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTriggersUndefined: Self = StObject.set(x, "EventTriggers", js.undefined)
+    inline def setEventTriggersUndefined: Self = StObject.set(x, "EventTriggers", js.undefined)
     
-    @scala.inline
-    def setEventTriggersVarargs(value: EventTriggerDefinition*): Self = StObject.set(x, "EventTriggers", js.Array(value :_*))
+    inline def setEventTriggersVarargs(value: EventTriggerDefinition*): Self = StObject.set(x, "EventTriggers", js.Array(value :_*))
     
-    @scala.inline
-    def setLambdaArn(value: ResourceARN): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
+    inline def setLambdaArn(value: ResourceARN): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaArnUndefined: Self = StObject.set(x, "LambdaArn", js.undefined)
+    inline def setLambdaArnUndefined: Self = StObject.set(x, "LambdaArn", js.undefined)
   }
 }

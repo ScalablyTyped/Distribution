@@ -14,31 +14,23 @@ trait ChatMessageReaction extends StObject {
 }
 object ChatMessageReaction {
   
-  @scala.inline
-  def apply(): ChatMessageReaction = {
+  inline def apply(): ChatMessageReaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatMessageReaction]
   }
   
-  @scala.inline
-  implicit class ChatMessageReactionMutableBuilder[Self <: ChatMessageReaction] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageReaction](x: Self) {
     
-    @scala.inline
-    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setReactionType(value: String): Self = StObject.set(x, "reactionType", value.asInstanceOf[js.Any])
+    inline def setReactionType(value: String): Self = StObject.set(x, "reactionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionTypeUndefined: Self = StObject.set(x, "reactionType", js.undefined)
+    inline def setReactionTypeUndefined: Self = StObject.set(x, "reactionType", js.undefined)
     
-    @scala.inline
-    def setUser(value: IdentitySet): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: IdentitySet): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

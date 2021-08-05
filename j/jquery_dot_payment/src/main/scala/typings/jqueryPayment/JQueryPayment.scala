@@ -47,65 +47,46 @@ object JQueryPayment {
   }
   object CardInfo {
     
-    @scala.inline
-    def apply(): CardInfo = {
+    inline def apply(): CardInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardInfo]
     }
     
-    @scala.inline
-    implicit class CardInfoMutableBuilder[Self <: CardInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CardInfo](x: Self) {
       
-      @scala.inline
-      def setCvcLength(value: js.Array[Double]): Self = StObject.set(x, "cvcLength", value.asInstanceOf[js.Any])
+      inline def setCvcLength(value: js.Array[Double]): Self = StObject.set(x, "cvcLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCvcLengthUndefined: Self = StObject.set(x, "cvcLength", js.undefined)
+      inline def setCvcLengthUndefined: Self = StObject.set(x, "cvcLength", js.undefined)
       
-      @scala.inline
-      def setCvcLengthVarargs(value: Double*): Self = StObject.set(x, "cvcLength", js.Array(value :_*))
+      inline def setCvcLengthVarargs(value: Double*): Self = StObject.set(x, "cvcLength", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setLength(value: js.Array[Double]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: js.Array[Double]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value :_*))
+      inline def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value :_*))
       
-      @scala.inline
-      def setLuhn(value: Boolean): Self = StObject.set(x, "luhn", value.asInstanceOf[js.Any])
+      inline def setLuhn(value: Boolean): Self = StObject.set(x, "luhn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLuhnUndefined: Self = StObject.set(x, "luhn", js.undefined)
+      inline def setLuhnUndefined: Self = StObject.set(x, "luhn", js.undefined)
       
-      @scala.inline
-      def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setPatterns(value: js.Array[Double]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[Double]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
+      inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      @scala.inline
-      def setPatternsVarargs(value: Double*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: Double*): Self = StObject.set(x, "patterns", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -117,20 +98,16 @@ object JQueryPayment {
   }
   object ExpiryInfo {
     
-    @scala.inline
-    def apply(month: Double, year: Double): ExpiryInfo = {
+    inline def apply(month: Double, year: Double): ExpiryInfo = {
       val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpiryInfo]
     }
     
-    @scala.inline
-    implicit class ExpiryInfoMutableBuilder[Self <: ExpiryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ExpiryInfo](x: Self) {
       
-      @scala.inline
-      def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   

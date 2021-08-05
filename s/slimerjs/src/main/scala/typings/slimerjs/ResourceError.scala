@@ -16,25 +16,19 @@ trait ResourceError extends StObject {
 }
 object ResourceError {
   
-  @scala.inline
-  def apply(errorCode: String, errorString: String, id: Double, url: String): ResourceError = {
+  inline def apply(errorCode: String, errorString: String, id: Double, url: String): ResourceError = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorString = errorString.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceError]
   }
   
-  @scala.inline
-  implicit class ResourceErrorMutableBuilder[Self <: ResourceError] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorString(value: String): Self = StObject.set(x, "errorString", value.asInstanceOf[js.Any])
+    inline def setErrorString(value: String): Self = StObject.set(x, "errorString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait ComponentPropsOptionsSelector extends StObject {
 }
 object ComponentPropsOptionsSelector {
   
-  @scala.inline
-  def apply(key: String, value: String): ComponentPropsOptionsSelector = {
+  inline def apply(key: String, value: String): ComponentPropsOptionsSelector = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentPropsOptionsSelector]
   }
   
-  @scala.inline
-  implicit class ComponentPropsOptionsSelectorMutableBuilder[Self <: ComponentPropsOptionsSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentPropsOptionsSelector](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

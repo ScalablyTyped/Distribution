@@ -19,43 +19,31 @@ trait CreateSubscriptionOptions extends StObject {
 }
 object CreateSubscriptionOptions {
   
-  @scala.inline
-  def apply(): CreateSubscriptionOptions = {
+  inline def apply(): CreateSubscriptionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSubscriptionOptions]
   }
   
-  @scala.inline
-  implicit class CreateSubscriptionOptionsMutableBuilder[Self <: CreateSubscriptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSubscriptionOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
+    inline def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
     
-    @scala.inline
-    def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+    inline def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDeadLetteringOnFilterEvaluationExceptionsUndefined: Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", js.undefined)
+    inline def setEnableDeadLetteringOnFilterEvaluationExceptionsUndefined: Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", js.undefined)
     
-    @scala.inline
-    def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    inline def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDeadLetteringOnMessageExpirationUndefined: Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", js.undefined)
+    inline def setEnableDeadLetteringOnMessageExpirationUndefined: Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", js.undefined)
     
-    @scala.inline
-    def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
+    inline def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockDurationUndefined: Self = StObject.set(x, "LockDuration", js.undefined)
+    inline def setLockDurationUndefined: Self = StObject.set(x, "LockDuration", js.undefined)
     
-    @scala.inline
-    def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
+    inline def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresSessionUndefined: Self = StObject.set(x, "RequiresSession", js.undefined)
+    inline def setRequiresSessionUndefined: Self = StObject.set(x, "RequiresSession", js.undefined)
   }
 }

@@ -17,20 +17,16 @@ object popoverPopoverContextMod {
   }
   object PopoverContextValue {
     
-    @scala.inline
-    def apply(excludeClickOutsideClasses: js.Array[String]): PopoverContextValue = {
+    inline def apply(excludeClickOutsideClasses: js.Array[String]): PopoverContextValue = {
       val __obj = js.Dynamic.literal(excludeClickOutsideClasses = excludeClickOutsideClasses.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopoverContextValue]
     }
     
-    @scala.inline
-    implicit class PopoverContextValueMutableBuilder[Self <: PopoverContextValue] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverContextValue](x: Self) {
       
-      @scala.inline
-      def setExcludeClickOutsideClasses(value: js.Array[String]): Self = StObject.set(x, "excludeClickOutsideClasses", value.asInstanceOf[js.Any])
+      inline def setExcludeClickOutsideClasses(value: js.Array[String]): Self = StObject.set(x, "excludeClickOutsideClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeClickOutsideClassesVarargs(value: String*): Self = StObject.set(x, "excludeClickOutsideClasses", js.Array(value :_*))
+      inline def setExcludeClickOutsideClassesVarargs(value: String*): Self = StObject.set(x, "excludeClickOutsideClasses", js.Array(value :_*))
     }
   }
 }

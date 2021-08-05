@@ -10,19 +10,15 @@ trait UpdateReservationResponse extends StObject {
 }
 object UpdateReservationResponse {
   
-  @scala.inline
-  def apply(): UpdateReservationResponse = {
+  inline def apply(): UpdateReservationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateReservationResponse]
   }
   
-  @scala.inline
-  implicit class UpdateReservationResponseMutableBuilder[Self <: UpdateReservationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateReservationResponse](x: Self) {
     
-    @scala.inline
-    def setReservation(value: Reservation): Self = StObject.set(x, "Reservation", value.asInstanceOf[js.Any])
+    inline def setReservation(value: Reservation): Self = StObject.set(x, "Reservation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationUndefined: Self = StObject.set(x, "Reservation", js.undefined)
+    inline def setReservationUndefined: Self = StObject.set(x, "Reservation", js.undefined)
   }
 }

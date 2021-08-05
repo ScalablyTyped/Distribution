@@ -12,22 +12,17 @@ trait ListModelsResults extends StObject {
 }
 object ListModelsResults {
   
-  @scala.inline
-  def apply(): ListModelsResults = {
+  inline def apply(): ListModelsResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListModelsResults]
   }
   
-  @scala.inline
-  implicit class ListModelsResultsMutableBuilder[Self <: ListModelsResults] (val x: Self) extends AnyVal {
+  extension [Self <: ListModelsResults](x: Self) {
     
-    @scala.inline
-    def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    @scala.inline
-    def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
   }
 }

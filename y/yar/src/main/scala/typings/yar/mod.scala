@@ -22,17 +22,14 @@ object mod extends Shortcut {
   }
   object ServerYar {
     
-    @scala.inline
-    def apply(revoke: Id => js.Promise[Unit]): ServerYar = {
+    inline def apply(revoke: Id => js.Promise[Unit]): ServerYar = {
       val __obj = js.Dynamic.literal(revoke = js.Any.fromFunction1(revoke))
       __obj.asInstanceOf[ServerYar]
     }
     
-    @scala.inline
-    implicit class ServerYarMutableBuilder[Self <: ServerYar] (val x: Self) extends AnyVal {
+    extension [Self <: ServerYar](x: Self) {
       
-      @scala.inline
-      def setRevoke(value: Id => js.Promise[Unit]): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
+      inline def setRevoke(value: Id => js.Promise[Unit]): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
     }
   }
   
@@ -137,47 +134,34 @@ object mod extends Shortcut {
   }
   object YarOptions {
     
-    @scala.inline
-    def apply(cookieOptions: ClearInvalid): YarOptions = {
+    inline def apply(cookieOptions: ClearInvalid): YarOptions = {
       val __obj = js.Dynamic.literal(cookieOptions = cookieOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[YarOptions]
     }
     
-    @scala.inline
-    implicit class YarOptionsMutableBuilder[Self <: YarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: YarOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: CachePolicyOptions[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: CachePolicyOptions[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCookieOptions(value: ClearInvalid): Self = StObject.set(x, "cookieOptions", value.asInstanceOf[js.Any])
+      inline def setCookieOptions(value: ClearInvalid): Self = StObject.set(x, "cookieOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOnCacheNotReady(value: Boolean): Self = StObject.set(x, "errorOnCacheNotReady", value.asInstanceOf[js.Any])
+      inline def setErrorOnCacheNotReady(value: Boolean): Self = StObject.set(x, "errorOnCacheNotReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOnCacheNotReadyUndefined: Self = StObject.set(x, "errorOnCacheNotReady", js.undefined)
+      inline def setErrorOnCacheNotReadyUndefined: Self = StObject.set(x, "errorOnCacheNotReady", js.undefined)
       
-      @scala.inline
-      def setMaxCookieSize(value: Double): Self = StObject.set(x, "maxCookieSize", value.asInstanceOf[js.Any])
+      inline def setMaxCookieSize(value: Double): Self = StObject.set(x, "maxCookieSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCookieSizeUndefined: Self = StObject.set(x, "maxCookieSize", js.undefined)
+      inline def setMaxCookieSizeUndefined: Self = StObject.set(x, "maxCookieSize", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStoreBlank(value: Boolean): Self = StObject.set(x, "storeBlank", value.asInstanceOf[js.Any])
+      inline def setStoreBlank(value: Boolean): Self = StObject.set(x, "storeBlank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreBlankUndefined: Self = StObject.set(x, "storeBlank", js.undefined)
+      inline def setStoreBlankUndefined: Self = StObject.set(x, "storeBlank", js.undefined)
     }
   }
   
@@ -195,17 +179,14 @@ object mod extends Shortcut {
     }
     object Request {
       
-      @scala.inline
-      def apply(yar: Yar): Request = {
+      inline def apply(yar: Yar): Request = {
         val __obj = js.Dynamic.literal(yar = yar.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setYar(value: Yar): Self = StObject.set(x, "yar", value.asInstanceOf[js.Any])
+        inline def setYar(value: Yar): Self = StObject.set(x, "yar", value.asInstanceOf[js.Any])
       }
     }
     
@@ -215,17 +196,14 @@ object mod extends Shortcut {
     }
     object Server {
       
-      @scala.inline
-      def apply(yar: ServerYar): Server = {
+      inline def apply(yar: ServerYar): Server = {
         val __obj = js.Dynamic.literal(yar = yar.asInstanceOf[js.Any])
         __obj.asInstanceOf[Server]
       }
       
-      @scala.inline
-      implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+      extension [Self <: Server](x: Self) {
         
-        @scala.inline
-        def setYar(value: ServerYar): Self = StObject.set(x, "yar", value.asInstanceOf[js.Any])
+        inline def setYar(value: ServerYar): Self = StObject.set(x, "yar", value.asInstanceOf[js.Any])
       }
     }
   }

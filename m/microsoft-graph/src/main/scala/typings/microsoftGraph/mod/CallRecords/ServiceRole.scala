@@ -32,69 +32,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceRole extends StObject
 object ServiceRole {
   
-  @scala.inline
-  def audioTeleconferencerController: typings.microsoftGraph.microsoftGraphStrings.audioTeleconferencerController = "audioTeleconferencerController".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.audioTeleconferencerController]
+  inline def audioTeleconferencerController: typings.microsoftGraph.microsoftGraphStrings.audioTeleconferencerController = "audioTeleconferencerController".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.audioTeleconferencerController]
   
-  @scala.inline
-  def conferencingAnnouncementService: typings.microsoftGraph.microsoftGraphStrings.conferencingAnnouncementService = "conferencingAnnouncementService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conferencingAnnouncementService]
+  inline def conferencingAnnouncementService: typings.microsoftGraph.microsoftGraphStrings.conferencingAnnouncementService = "conferencingAnnouncementService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conferencingAnnouncementService]
   
-  @scala.inline
-  def conferencingAttendant: typings.microsoftGraph.microsoftGraphStrings.conferencingAttendant = "conferencingAttendant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conferencingAttendant]
+  inline def conferencingAttendant: typings.microsoftGraph.microsoftGraphStrings.conferencingAttendant = "conferencingAttendant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conferencingAttendant]
   
-  @scala.inline
-  def customBot: typings.microsoftGraph.microsoftGraphStrings.customBot = "customBot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.customBot]
+  inline def customBot: typings.microsoftGraph.microsoftGraphStrings.customBot = "customBot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.customBot]
   
-  @scala.inline
-  def exchangeUnifiedMessagingService: typings.microsoftGraph.microsoftGraphStrings.exchangeUnifiedMessagingService = "exchangeUnifiedMessagingService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeUnifiedMessagingService]
+  inline def exchangeUnifiedMessagingService: typings.microsoftGraph.microsoftGraphStrings.exchangeUnifiedMessagingService = "exchangeUnifiedMessagingService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeUnifiedMessagingService]
   
-  @scala.inline
-  def gateway: typings.microsoftGraph.microsoftGraphStrings.gateway = "gateway".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.gateway]
+  inline def gateway: typings.microsoftGraph.microsoftGraphStrings.gateway = "gateway".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.gateway]
   
-  @scala.inline
-  def mediaController: typings.microsoftGraph.microsoftGraphStrings.mediaController = "mediaController".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediaController]
+  inline def mediaController: typings.microsoftGraph.microsoftGraphStrings.mediaController = "mediaController".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediaController]
   
-  @scala.inline
-  def mediationServer: typings.microsoftGraph.microsoftGraphStrings.mediationServer = "mediationServer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediationServer]
+  inline def mediationServer: typings.microsoftGraph.microsoftGraphStrings.mediationServer = "mediationServer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediationServer]
   
-  @scala.inline
-  def mediationServerCloudConnectorEdition: typings.microsoftGraph.microsoftGraphStrings.mediationServerCloudConnectorEdition = "mediationServerCloudConnectorEdition".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediationServerCloudConnectorEdition]
+  inline def mediationServerCloudConnectorEdition: typings.microsoftGraph.microsoftGraphStrings.mediationServerCloudConnectorEdition = "mediationServerCloudConnectorEdition".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediationServerCloudConnectorEdition]
   
-  @scala.inline
-  def responseGroupService: typings.microsoftGraph.microsoftGraphStrings.responseGroupService = "responseGroupService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.responseGroupService]
+  inline def responseGroupService: typings.microsoftGraph.microsoftGraphStrings.responseGroupService = "responseGroupService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.responseGroupService]
   
-  @scala.inline
-  def responseGroupServiceAnnouncementService: typings.microsoftGraph.microsoftGraphStrings.responseGroupServiceAnnouncementService = "responseGroupServiceAnnouncementService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.responseGroupServiceAnnouncementService]
+  inline def responseGroupServiceAnnouncementService: typings.microsoftGraph.microsoftGraphStrings.responseGroupServiceAnnouncementService = "responseGroupServiceAnnouncementService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.responseGroupServiceAnnouncementService]
   
-  @scala.inline
-  def skypeForBusinessApplicationSharingMcu: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessApplicationSharingMcu = "skypeForBusinessApplicationSharingMcu".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessApplicationSharingMcu]
+  inline def skypeForBusinessApplicationSharingMcu: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessApplicationSharingMcu = "skypeForBusinessApplicationSharingMcu".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessApplicationSharingMcu]
   
-  @scala.inline
-  def skypeForBusinessAttendant: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAttendant = "skypeForBusinessAttendant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAttendant]
+  inline def skypeForBusinessAttendant: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAttendant = "skypeForBusinessAttendant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAttendant]
   
-  @scala.inline
-  def skypeForBusinessAudioVideoMcu: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAudioVideoMcu = "skypeForBusinessAudioVideoMcu".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAudioVideoMcu]
+  inline def skypeForBusinessAudioVideoMcu: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAudioVideoMcu = "skypeForBusinessAudioVideoMcu".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAudioVideoMcu]
   
-  @scala.inline
-  def skypeForBusinessAutoAttendant: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAutoAttendant = "skypeForBusinessAutoAttendant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAutoAttendant]
+  inline def skypeForBusinessAutoAttendant: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAutoAttendant = "skypeForBusinessAutoAttendant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessAutoAttendant]
   
-  @scala.inline
-  def skypeForBusinessCallQueues: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessCallQueues = "skypeForBusinessCallQueues".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessCallQueues]
+  inline def skypeForBusinessCallQueues: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessCallQueues = "skypeForBusinessCallQueues".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessCallQueues]
   
-  @scala.inline
-  def skypeForBusinessMicrosoftTeamsGateway: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessMicrosoftTeamsGateway = "skypeForBusinessMicrosoftTeamsGateway".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessMicrosoftTeamsGateway]
+  inline def skypeForBusinessMicrosoftTeamsGateway: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessMicrosoftTeamsGateway = "skypeForBusinessMicrosoftTeamsGateway".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessMicrosoftTeamsGateway]
   
-  @scala.inline
-  def skypeForBusinessUnifiedCommunicationApplicationPlatform: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessUnifiedCommunicationApplicationPlatform = "skypeForBusinessUnifiedCommunicationApplicationPlatform".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessUnifiedCommunicationApplicationPlatform]
+  inline def skypeForBusinessUnifiedCommunicationApplicationPlatform: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessUnifiedCommunicationApplicationPlatform = "skypeForBusinessUnifiedCommunicationApplicationPlatform".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessUnifiedCommunicationApplicationPlatform]
   
-  @scala.inline
-  def skypeTranslator: typings.microsoftGraph.microsoftGraphStrings.skypeTranslator = "skypeTranslator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeTranslator]
+  inline def skypeTranslator: typings.microsoftGraph.microsoftGraphStrings.skypeTranslator = "skypeTranslator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeTranslator]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def voicemail: typings.microsoftGraph.microsoftGraphStrings.voicemail = "voicemail".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.voicemail]
+  inline def voicemail: typings.microsoftGraph.microsoftGraphStrings.voicemail = "voicemail".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.voicemail]
 }

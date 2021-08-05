@@ -14,22 +14,17 @@ trait SelectDataObject extends StObject {
 }
 object SelectDataObject {
   
-  @scala.inline
-  def apply(axis: Axis, max: Double, min: Double): SelectDataObject = {
+  inline def apply(axis: Axis, max: Double, min: Double): SelectDataObject = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectDataObject]
   }
   
-  @scala.inline
-  implicit class SelectDataObjectMutableBuilder[Self <: SelectDataObject] (val x: Self) extends AnyVal {
+  extension [Self <: SelectDataObject](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

@@ -18,26 +18,20 @@ object anon {
   }
   object Absolute {
     
-    @scala.inline
-    def apply(absolute: Double, alpha: Double, beta: Double, gamma: Double): Absolute = {
+    inline def apply(absolute: Double, alpha: Double, beta: Double, gamma: Double): Absolute = {
       val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any])
       __obj.asInstanceOf[Absolute]
     }
     
-    @scala.inline
-    implicit class AbsoluteMutableBuilder[Self <: Absolute] (val x: Self) extends AnyVal {
+    extension [Self <: Absolute](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Double): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Double): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+      inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+      inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,8 +57,7 @@ object anon {
   }
   object Alpha {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Double,
       beta: Double,
       gamma: Double,
@@ -79,35 +72,25 @@ object anon {
       __obj.asInstanceOf[Alpha]
     }
     
-    @scala.inline
-    implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+    extension [Self <: Alpha](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+      inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+      inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGx(value: Double): Self = StObject.set(x, "gx", value.asInstanceOf[js.Any])
+      inline def setGx(value: Double): Self = StObject.set(x, "gx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGy(value: Double): Self = StObject.set(x, "gy", value.asInstanceOf[js.Any])
+      inline def setGy(value: Double): Self = StObject.set(x, "gy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGz(value: Double): Self = StObject.set(x, "gz", value.asInstanceOf[js.Any])
+      inline def setGz(value: Double): Self = StObject.set(x, "gz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
 }

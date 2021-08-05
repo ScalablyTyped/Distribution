@@ -16,22 +16,17 @@ trait SchemaGooglePrivacyDlpV2CategoricalStatsResult extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CategoricalStatsResult {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CategoricalStatsResult = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CategoricalStatsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CategoricalStatsResult]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CategoricalStatsResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CategoricalStatsResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CategoricalStatsResult](x: Self) {
     
-    @scala.inline
-    def setValueFrequencyHistogramBuckets(value: js.Array[SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket]): Self = StObject.set(x, "valueFrequencyHistogramBuckets", value.asInstanceOf[js.Any])
+    inline def setValueFrequencyHistogramBuckets(value: js.Array[SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket]): Self = StObject.set(x, "valueFrequencyHistogramBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.undefined)
+    inline def setValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.undefined)
     
-    @scala.inline
-    def setValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.Array(value :_*))
+    inline def setValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.Array(value :_*))
   }
 }

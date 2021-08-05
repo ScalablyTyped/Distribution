@@ -38,43 +38,31 @@ trait TextDocumentSyncOptions extends StObject {
 }
 object TextDocumentSyncOptions {
   
-  @scala.inline
-  def apply(): TextDocumentSyncOptions = {
+  inline def apply(): TextDocumentSyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDocumentSyncOptions]
   }
   
-  @scala.inline
-  implicit class TextDocumentSyncOptionsMutableBuilder[Self <: TextDocumentSyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentSyncOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: TextDocumentSyncKind): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: TextDocumentSyncKind): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setOpenClose(value: Boolean): Self = StObject.set(x, "openClose", value.asInstanceOf[js.Any])
+    inline def setOpenClose(value: Boolean): Self = StObject.set(x, "openClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenCloseUndefined: Self = StObject.set(x, "openClose", js.undefined)
+    inline def setOpenCloseUndefined: Self = StObject.set(x, "openClose", js.undefined)
     
-    @scala.inline
-    def setSave(value: SaveOptions): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: SaveOptions): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setWillSave(value: Boolean): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
+    inline def setWillSave(value: Boolean): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
+    inline def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
     
-    @scala.inline
-    def setWillSaveWaitUntil(value: Boolean): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
+    inline def setWillSaveWaitUntil(value: Boolean): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
+    inline def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
   }
 }

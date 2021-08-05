@@ -24,19 +24,16 @@ trait WebviewViewProvider extends StObject {
 }
 object WebviewViewProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     resolveWebviewView: (WebviewView, WebviewViewResolveContext[js.Any], CancellationToken) => Thenable[Unit] | Unit
   ): WebviewViewProvider = {
     val __obj = js.Dynamic.literal(resolveWebviewView = js.Any.fromFunction3(resolveWebviewView))
     __obj.asInstanceOf[WebviewViewProvider]
   }
   
-  @scala.inline
-  implicit class WebviewViewProviderMutableBuilder[Self <: WebviewViewProvider] (val x: Self) extends AnyVal {
+  extension [Self <: WebviewViewProvider](x: Self) {
     
-    @scala.inline
-    def setResolveWebviewView(
+    inline def setResolveWebviewView(
       value: (WebviewView, WebviewViewResolveContext[js.Any], CancellationToken) => Thenable[Unit] | Unit
     ): Self = StObject.set(x, "resolveWebviewView", js.Any.fromFunction3(value))
   }

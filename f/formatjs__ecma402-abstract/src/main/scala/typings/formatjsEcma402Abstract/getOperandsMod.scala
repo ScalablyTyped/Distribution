@@ -10,8 +10,7 @@ object getOperandsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def GetOperands(s: String): OperandsRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperands")(s.asInstanceOf[js.Any]).asInstanceOf[OperandsRecord]
+  inline def GetOperands(s: String): OperandsRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperands")(s.asInstanceOf[js.Any]).asInstanceOf[OperandsRecord]
   
   trait OperandsRecord extends StObject {
     
@@ -47,8 +46,7 @@ object getOperandsMod {
   }
   object OperandsRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FractionDigits: Double,
       FractionDigitsWithoutTrailing: Double,
       IntegerDigits: Double,
@@ -60,26 +58,19 @@ object getOperandsMod {
       __obj.asInstanceOf[OperandsRecord]
     }
     
-    @scala.inline
-    implicit class OperandsRecordMutableBuilder[Self <: OperandsRecord] (val x: Self) extends AnyVal {
+    extension [Self <: OperandsRecord](x: Self) {
       
-      @scala.inline
-      def setFractionDigits(value: Double): Self = StObject.set(x, "FractionDigits", value.asInstanceOf[js.Any])
+      inline def setFractionDigits(value: Double): Self = StObject.set(x, "FractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFractionDigitsWithoutTrailing(value: Double): Self = StObject.set(x, "FractionDigitsWithoutTrailing", value.asInstanceOf[js.Any])
+      inline def setFractionDigitsWithoutTrailing(value: Double): Self = StObject.set(x, "FractionDigitsWithoutTrailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerDigits(value: Double): Self = StObject.set(x, "IntegerDigits", value.asInstanceOf[js.Any])
+      inline def setIntegerDigits(value: Double): Self = StObject.set(x, "IntegerDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfFractionDigits(value: Double): Self = StObject.set(x, "NumberOfFractionDigits", value.asInstanceOf[js.Any])
+      inline def setNumberOfFractionDigits(value: Double): Self = StObject.set(x, "NumberOfFractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfFractionDigitsWithoutTrailing(value: Double): Self = StObject.set(x, "NumberOfFractionDigitsWithoutTrailing", value.asInstanceOf[js.Any])
+      inline def setNumberOfFractionDigitsWithoutTrailing(value: Double): Self = StObject.set(x, "NumberOfFractionDigitsWithoutTrailing", value.asInstanceOf[js.Any])
     }
   }
 }

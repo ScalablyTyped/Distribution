@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isSameSiteNoneCompatible(useragent: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSameSiteNoneCompatible")(useragent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSameSiteNoneCompatible(useragent: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSameSiteNoneCompatible")(useragent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("should-send-same-site-none", "shouldSendSameSiteNone")
   @js.native

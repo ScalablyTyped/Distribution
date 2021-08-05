@@ -16,19 +16,15 @@ trait Config
 }
 object Config {
   
-  @scala.inline
-  def apply(config: OmitTimingAnimationConfig): Config = {
+  inline def apply(config: OmitTimingAnimationConfig): Config = {
     val __obj = js.Dynamic.literal(animation = "timing", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: timing): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: timing): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: OmitTimingAnimationConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: OmitTimingAnimationConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }
 }

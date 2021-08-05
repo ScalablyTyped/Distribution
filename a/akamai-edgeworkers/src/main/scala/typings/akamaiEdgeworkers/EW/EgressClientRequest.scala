@@ -13,8 +13,7 @@ trait EgressClientRequest
      with MutatesVariables
 object EgressClientRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cpCode: Double,
     getHeader: String => js.Array[String] | Null,
     getVariable: String => js.UndefOr[String],

@@ -13,16 +13,13 @@ trait EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint extends StObject {
 }
 object EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String): EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint = {
+  inline def apply(enterprise: String): EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminCreateRemoveTokenForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
   }
 }

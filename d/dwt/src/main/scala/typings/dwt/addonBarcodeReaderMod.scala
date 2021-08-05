@@ -73,8 +73,7 @@ object addonBarcodeReaderMod {
   }
   object FurtherModes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accompanyingTextRecognitionModes: js.Array[Double],
       barcodeColourModes: js.Array[Double],
       barcodeComplementModes: js.Array[Double],
@@ -93,83 +92,57 @@ object addonBarcodeReaderMod {
       __obj.asInstanceOf[FurtherModes]
     }
     
-    @scala.inline
-    implicit class FurtherModesMutableBuilder[Self <: FurtherModes] (val x: Self) extends AnyVal {
+    extension [Self <: FurtherModes](x: Self) {
       
-      @scala.inline
-      def setAccompanyingTextRecognitionModes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextRecognitionModes", value.asInstanceOf[js.Any])
+      inline def setAccompanyingTextRecognitionModes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextRecognitionModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccompanyingTextRecognitionModesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextRecognitionModes", js.Array(value :_*))
+      inline def setAccompanyingTextRecognitionModesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextRecognitionModes", js.Array(value :_*))
       
-      @scala.inline
-      def setBarcodeColourModes(value: js.Array[Double]): Self = StObject.set(x, "barcodeColourModes", value.asInstanceOf[js.Any])
+      inline def setBarcodeColourModes(value: js.Array[Double]): Self = StObject.set(x, "barcodeColourModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeColourModesVarargs(value: Double*): Self = StObject.set(x, "barcodeColourModes", js.Array(value :_*))
+      inline def setBarcodeColourModesVarargs(value: Double*): Self = StObject.set(x, "barcodeColourModes", js.Array(value :_*))
       
-      @scala.inline
-      def setBarcodeComplementModes(value: js.Array[Double]): Self = StObject.set(x, "barcodeComplementModes", value.asInstanceOf[js.Any])
+      inline def setBarcodeComplementModes(value: js.Array[Double]): Self = StObject.set(x, "barcodeComplementModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeComplementModesVarargs(value: Double*): Self = StObject.set(x, "barcodeComplementModes", js.Array(value :_*))
+      inline def setBarcodeComplementModesVarargs(value: Double*): Self = StObject.set(x, "barcodeComplementModes", js.Array(value :_*))
       
-      @scala.inline
-      def setColourClusteringModes(value: js.Array[Double]): Self = StObject.set(x, "colourClusteringModes", value.asInstanceOf[js.Any])
+      inline def setColourClusteringModes(value: js.Array[Double]): Self = StObject.set(x, "colourClusteringModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColourClusteringModesVarargs(value: Double*): Self = StObject.set(x, "colourClusteringModes", js.Array(value :_*))
+      inline def setColourClusteringModesVarargs(value: Double*): Self = StObject.set(x, "colourClusteringModes", js.Array(value :_*))
       
-      @scala.inline
-      def setColourConversionModes(value: js.Array[Double]): Self = StObject.set(x, "colourConversionModes", value.asInstanceOf[js.Any])
+      inline def setColourConversionModes(value: js.Array[Double]): Self = StObject.set(x, "colourConversionModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColourConversionModesVarargs(value: Double*): Self = StObject.set(x, "colourConversionModes", js.Array(value :_*))
+      inline def setColourConversionModesVarargs(value: Double*): Self = StObject.set(x, "colourConversionModes", js.Array(value :_*))
       
-      @scala.inline
-      def setDeformationResistingModes(value: js.Array[Double]): Self = StObject.set(x, "deformationResistingModes", value.asInstanceOf[js.Any])
+      inline def setDeformationResistingModes(value: js.Array[Double]): Self = StObject.set(x, "deformationResistingModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeformationResistingModesVarargs(value: Double*): Self = StObject.set(x, "deformationResistingModes", js.Array(value :_*))
+      inline def setDeformationResistingModesVarargs(value: Double*): Self = StObject.set(x, "deformationResistingModes", js.Array(value :_*))
       
-      @scala.inline
-      def setDpmCodeReadingModes(value: js.Array[Double]): Self = StObject.set(x, "dpmCodeReadingModes", value.asInstanceOf[js.Any])
+      inline def setDpmCodeReadingModes(value: js.Array[Double]): Self = StObject.set(x, "dpmCodeReadingModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpmCodeReadingModesVarargs(value: Double*): Self = StObject.set(x, "dpmCodeReadingModes", js.Array(value :_*))
+      inline def setDpmCodeReadingModesVarargs(value: Double*): Self = StObject.set(x, "dpmCodeReadingModes", js.Array(value :_*))
       
-      @scala.inline
-      def setGrayscaleTransformationModes(value: js.Array[Double]): Self = StObject.set(x, "grayscaleTransformationModes", value.asInstanceOf[js.Any])
+      inline def setGrayscaleTransformationModes(value: js.Array[Double]): Self = StObject.set(x, "grayscaleTransformationModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrayscaleTransformationModesVarargs(value: Double*): Self = StObject.set(x, "grayscaleTransformationModes", js.Array(value :_*))
+      inline def setGrayscaleTransformationModesVarargs(value: Double*): Self = StObject.set(x, "grayscaleTransformationModes", js.Array(value :_*))
       
-      @scala.inline
-      def setImagePreprocessingModes(value: js.Array[Double]): Self = StObject.set(x, "imagePreprocessingModes", value.asInstanceOf[js.Any])
+      inline def setImagePreprocessingModes(value: js.Array[Double]): Self = StObject.set(x, "imagePreprocessingModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagePreprocessingModesVarargs(value: Double*): Self = StObject.set(x, "imagePreprocessingModes", js.Array(value :_*))
+      inline def setImagePreprocessingModesVarargs(value: Double*): Self = StObject.set(x, "imagePreprocessingModes", js.Array(value :_*))
       
-      @scala.inline
-      def setRegionPredetectionModes(value: js.Array[Double]): Self = StObject.set(x, "regionPredetectionModes", value.asInstanceOf[js.Any])
+      inline def setRegionPredetectionModes(value: js.Array[Double]): Self = StObject.set(x, "regionPredetectionModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionPredetectionModesVarargs(value: Double*): Self = StObject.set(x, "regionPredetectionModes", js.Array(value :_*))
+      inline def setRegionPredetectionModesVarargs(value: Double*): Self = StObject.set(x, "regionPredetectionModes", js.Array(value :_*))
       
-      @scala.inline
-      def setTextAssistedCorrectionMode(value: Double): Self = StObject.set(x, "textAssistedCorrectionMode", value.asInstanceOf[js.Any])
+      inline def setTextAssistedCorrectionMode(value: Double): Self = StObject.set(x, "textAssistedCorrectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextFilterModes(value: js.Array[Double]): Self = StObject.set(x, "textFilterModes", value.asInstanceOf[js.Any])
+      inline def setTextFilterModes(value: js.Array[Double]): Self = StObject.set(x, "textFilterModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextFilterModesVarargs(value: Double*): Self = StObject.set(x, "textFilterModes", js.Array(value :_*))
+      inline def setTextFilterModesVarargs(value: Double*): Self = StObject.set(x, "textFilterModes", js.Array(value :_*))
       
-      @scala.inline
-      def setTextureDetectionModes(value: js.Array[Double]): Self = StObject.set(x, "textureDetectionModes", value.asInstanceOf[js.Any])
+      inline def setTextureDetectionModes(value: js.Array[Double]): Self = StObject.set(x, "textureDetectionModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureDetectionModesVarargs(value: Double*): Self = StObject.set(x, "textureDetectionModes", js.Array(value :_*))
+      inline def setTextureDetectionModesVarargs(value: Double*): Self = StObject.set(x, "textureDetectionModes", js.Array(value :_*))
     }
   }
   
@@ -232,8 +205,7 @@ object addonBarcodeReaderMod {
   }
   object LocalizationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: Double,
       moduleSize: Double,
       pageNumber: Double,
@@ -253,50 +225,35 @@ object addonBarcodeReaderMod {
       __obj.asInstanceOf[LocalizationResult]
     }
     
-    @scala.inline
-    implicit class LocalizationResultMutableBuilder[Self <: LocalizationResult] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizationResult](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleSize(value: Double): Self = StObject.set(x, "moduleSize", value.asInstanceOf[js.Any])
+      inline def setModuleSize(value: Double): Self = StObject.set(x, "moduleSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionName(value: Double): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: Double): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCoordinateType(value: Double): Self = StObject.set(x, "resultCoordinateType", value.asInstanceOf[js.Any])
+      inline def setResultCoordinateType(value: Double): Self = StObject.set(x, "resultCoordinateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminatePhase(value: Double): Self = StObject.set(x, "terminatePhase", value.asInstanceOf[js.Any])
+      inline def setTerminatePhase(value: Double): Self = StObject.set(x, "terminatePhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX3(value: Double): Self = StObject.set(x, "x3", value.asInstanceOf[js.Any])
+      inline def setX3(value: Double): Self = StObject.set(x, "x3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX4(value: Double): Self = StObject.set(x, "x4", value.asInstanceOf[js.Any])
+      inline def setX4(value: Double): Self = StObject.set(x, "x4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY3(value: Double): Self = StObject.set(x, "y3", value.asInstanceOf[js.Any])
+      inline def setY3(value: Double): Self = StObject.set(x, "y3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY4(value: Double): Self = StObject.set(x, "y4", value.asInstanceOf[js.Any])
+      inline def setY4(value: Double): Self = StObject.set(x, "y4", value.asInstanceOf[js.Any])
     }
   }
   
@@ -314,8 +271,7 @@ object addonBarcodeReaderMod {
   }
   object Region {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       regionBottom: Double,
       regionLeft: Double,
       regionMeasuredByPercentage: Double,
@@ -326,23 +282,17 @@ object addonBarcodeReaderMod {
       __obj.asInstanceOf[Region]
     }
     
-    @scala.inline
-    implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+    extension [Self <: Region](x: Self) {
       
-      @scala.inline
-      def setRegionBottom(value: Double): Self = StObject.set(x, "regionBottom", value.asInstanceOf[js.Any])
+      inline def setRegionBottom(value: Double): Self = StObject.set(x, "regionBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionLeft(value: Double): Self = StObject.set(x, "regionLeft", value.asInstanceOf[js.Any])
+      inline def setRegionLeft(value: Double): Self = StObject.set(x, "regionLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionMeasuredByPercentage(value: Double): Self = StObject.set(x, "regionMeasuredByPercentage", value.asInstanceOf[js.Any])
+      inline def setRegionMeasuredByPercentage(value: Double): Self = StObject.set(x, "regionMeasuredByPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionRight(value: Double): Self = StObject.set(x, "regionRight", value.asInstanceOf[js.Any])
+      inline def setRegionRight(value: Double): Self = StObject.set(x, "regionRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionTop(value: Double): Self = StObject.set(x, "regionTop", value.asInstanceOf[js.Any])
+      inline def setRegionTop(value: Double): Self = StObject.set(x, "regionTop", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,8 +310,7 @@ object addonBarcodeReaderMod {
   }
   object Result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accompanyingTextBytes: js.Array[Double],
       clarity: Double,
       confidence: Double,
@@ -372,26 +321,19 @@ object addonBarcodeReaderMod {
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setAccompanyingTextBytes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextBytes", value.asInstanceOf[js.Any])
+      inline def setAccompanyingTextBytes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccompanyingTextBytesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextBytes", js.Array(value :_*))
+      inline def setAccompanyingTextBytesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextBytes", js.Array(value :_*))
       
-      @scala.inline
-      def setClarity(value: Double): Self = StObject.set(x, "clarity", value.asInstanceOf[js.Any])
+      inline def setClarity(value: Double): Self = StObject.set(x, "clarity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeformation(value: Double): Self = StObject.set(x, "deformation", value.asInstanceOf[js.Any])
+      inline def setDeformation(value: Double): Self = StObject.set(x, "deformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultType(value: Double): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+      inline def setResultType(value: Double): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -443,8 +385,7 @@ object addonBarcodeReaderMod {
   }
   object RuntimeSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       barcodeFormatIds: Double,
       barcodeFormatIds_2: Double,
       binarizationModes: js.Array[Double],
@@ -472,86 +413,59 @@ object addonBarcodeReaderMod {
       __obj.asInstanceOf[RuntimeSettings]
     }
     
-    @scala.inline
-    implicit class RuntimeSettingsMutableBuilder[Self <: RuntimeSettings] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeSettings](x: Self) {
       
-      @scala.inline
-      def setBarcodeFormatIds(value: Double): Self = StObject.set(x, "barcodeFormatIds", value.asInstanceOf[js.Any])
+      inline def setBarcodeFormatIds(value: Double): Self = StObject.set(x, "barcodeFormatIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeFormatIds_2(value: Double): Self = StObject.set(x, "barcodeFormatIds_2", value.asInstanceOf[js.Any])
+      inline def setBarcodeFormatIds_2(value: Double): Self = StObject.set(x, "barcodeFormatIds_2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinarizationModes(value: js.Array[Double]): Self = StObject.set(x, "binarizationModes", value.asInstanceOf[js.Any])
+      inline def setBinarizationModes(value: js.Array[Double]): Self = StObject.set(x, "binarizationModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinarizationModesVarargs(value: Double*): Self = StObject.set(x, "binarizationModes", js.Array(value :_*))
+      inline def setBinarizationModesVarargs(value: Double*): Self = StObject.set(x, "binarizationModes", js.Array(value :_*))
       
-      @scala.inline
-      def setDeblurLevel(value: Double): Self = StObject.set(x, "deblurLevel", value.asInstanceOf[js.Any])
+      inline def setDeblurLevel(value: Double): Self = StObject.set(x, "deblurLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedBarcodesCount(value: Double): Self = StObject.set(x, "expectedBarcodesCount", value.asInstanceOf[js.Any])
+      inline def setExpectedBarcodesCount(value: Double): Self = StObject.set(x, "expectedBarcodesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFurtherModes(value: FurtherModes): Self = StObject.set(x, "furtherModes", value.asInstanceOf[js.Any])
+      inline def setFurtherModes(value: FurtherModes): Self = StObject.set(x, "furtherModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntermediateResultSavingMode(value: Double): Self = StObject.set(x, "intermediateResultSavingMode", value.asInstanceOf[js.Any])
+      inline def setIntermediateResultSavingMode(value: Double): Self = StObject.set(x, "intermediateResultSavingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntermediateResultTypes(value: Double): Self = StObject.set(x, "intermediateResultTypes", value.asInstanceOf[js.Any])
+      inline def setIntermediateResultTypes(value: Double): Self = StObject.set(x, "intermediateResultTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizationModes(value: js.Array[Double]): Self = StObject.set(x, "localizationModes", value.asInstanceOf[js.Any])
+      inline def setLocalizationModes(value: js.Array[Double]): Self = StObject.set(x, "localizationModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizationModesVarargs(value: Double*): Self = StObject.set(x, "localizationModes", js.Array(value :_*))
+      inline def setLocalizationModesVarargs(value: Double*): Self = StObject.set(x, "localizationModes", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxAlgorithmThreadCount(value: Double): Self = StObject.set(x, "maxAlgorithmThreadCount", value.asInstanceOf[js.Any])
+      inline def setMaxAlgorithmThreadCount(value: Double): Self = StObject.set(x, "maxAlgorithmThreadCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinBarcodeTextLength(value: Double): Self = StObject.set(x, "minBarcodeTextLength", value.asInstanceOf[js.Any])
+      inline def setMinBarcodeTextLength(value: Double): Self = StObject.set(x, "minBarcodeTextLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinResultConfidence(value: Double): Self = StObject.set(x, "minResultConfidence", value.asInstanceOf[js.Any])
+      inline def setMinResultConfidence(value: Double): Self = StObject.set(x, "minResultConfidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdfRasterDPI(value: Double): Self = StObject.set(x, "pdfRasterDPI", value.asInstanceOf[js.Any])
+      inline def setPdfRasterDPI(value: Double): Self = StObject.set(x, "pdfRasterDPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdfReadingMode(value: Double): Self = StObject.set(x, "pdfReadingMode", value.asInstanceOf[js.Any])
+      inline def setPdfReadingMode(value: Double): Self = StObject.set(x, "pdfReadingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCoordinateType(value: Double): Self = StObject.set(x, "resultCoordinateType", value.asInstanceOf[js.Any])
+      inline def setResultCoordinateType(value: Double): Self = StObject.set(x, "resultCoordinateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnBarcodeZoneClarity(value: Double): Self = StObject.set(x, "returnBarcodeZoneClarity", value.asInstanceOf[js.Any])
+      inline def setReturnBarcodeZoneClarity(value: Double): Self = StObject.set(x, "returnBarcodeZoneClarity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleDownThreshold(value: Double): Self = StObject.set(x, "scaleDownThreshold", value.asInstanceOf[js.Any])
+      inline def setScaleDownThreshold(value: Double): Self = StObject.set(x, "scaleDownThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUpModes(value: js.Array[Double]): Self = StObject.set(x, "scaleUpModes", value.asInstanceOf[js.Any])
+      inline def setScaleUpModes(value: js.Array[Double]): Self = StObject.set(x, "scaleUpModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUpModesVarargs(value: Double*): Self = StObject.set(x, "scaleUpModes", js.Array(value :_*))
+      inline def setScaleUpModesVarargs(value: Double*): Self = StObject.set(x, "scaleUpModes", js.Array(value :_*))
       
-      @scala.inline
-      def setTerminatePhase(value: Double): Self = StObject.set(x, "terminatePhase", value.asInstanceOf[js.Any])
+      inline def setTerminatePhase(value: Double): Self = StObject.set(x, "terminatePhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextResultOrderModes(value: js.Array[Double]): Self = StObject.set(x, "textResultOrderModes", value.asInstanceOf[js.Any])
+      inline def setTextResultOrderModes(value: js.Array[Double]): Self = StObject.set(x, "textResultOrderModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextResultOrderModesVarargs(value: Double*): Self = StObject.set(x, "textResultOrderModes", js.Array(value :_*))
+      inline def setTextResultOrderModesVarargs(value: Double*): Self = StObject.set(x, "textResultOrderModes", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -604,8 +518,7 @@ object addonBarcodeReaderMod {
   }
   object TextResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       barcodeBytes: js.Array[Double],
       barcodeFormat: EnumBarcodeFormat | Double,
       barcodeFormatString: String,
@@ -620,41 +533,29 @@ object addonBarcodeReaderMod {
       __obj.asInstanceOf[TextResult]
     }
     
-    @scala.inline
-    implicit class TextResultMutableBuilder[Self <: TextResult] (val x: Self) extends AnyVal {
+    extension [Self <: TextResult](x: Self) {
       
-      @scala.inline
-      def setBarcodeBytes(value: js.Array[Double]): Self = StObject.set(x, "barcodeBytes", value.asInstanceOf[js.Any])
+      inline def setBarcodeBytes(value: js.Array[Double]): Self = StObject.set(x, "barcodeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeBytesVarargs(value: Double*): Self = StObject.set(x, "barcodeBytes", js.Array(value :_*))
+      inline def setBarcodeBytesVarargs(value: Double*): Self = StObject.set(x, "barcodeBytes", js.Array(value :_*))
       
-      @scala.inline
-      def setBarcodeFormat(value: EnumBarcodeFormat | Double): Self = StObject.set(x, "barcodeFormat", value.asInstanceOf[js.Any])
+      inline def setBarcodeFormat(value: EnumBarcodeFormat | Double): Self = StObject.set(x, "barcodeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeFormatString(value: String): Self = StObject.set(x, "barcodeFormatString", value.asInstanceOf[js.Any])
+      inline def setBarcodeFormatString(value: String): Self = StObject.set(x, "barcodeFormatString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeFormatString_2(value: String): Self = StObject.set(x, "barcodeFormatString_2", value.asInstanceOf[js.Any])
+      inline def setBarcodeFormatString_2(value: String): Self = StObject.set(x, "barcodeFormatString_2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeFormat_2(value: EnumBarcodeFormat2 | Double): Self = StObject.set(x, "barcodeFormat_2", value.asInstanceOf[js.Any])
+      inline def setBarcodeFormat_2(value: EnumBarcodeFormat2 | Double): Self = StObject.set(x, "barcodeFormat_2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeText(value: String): Self = StObject.set(x, "barcodeText", value.asInstanceOf[js.Any])
+      inline def setBarcodeText(value: String): Self = StObject.set(x, "barcodeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailedResult(value: js.Any): Self = StObject.set(x, "detailedResult", value.asInstanceOf[js.Any])
+      inline def setDetailedResult(value: js.Any): Self = StObject.set(x, "detailedResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizationResult(value: LocalizationResult): Self = StObject.set(x, "localizationResult", value.asInstanceOf[js.Any])
+      inline def setLocalizationResult(value: LocalizationResult): Self = StObject.set(x, "localizationResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   

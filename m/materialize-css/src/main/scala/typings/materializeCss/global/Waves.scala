@@ -17,6 +17,5 @@ object Waves {
     *   Intended to be used with dynamically loaded forms/inputs, or
     * where the user doesn't want a delegated click handler.
     */
-  @scala.inline
-  def attach(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def attach(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

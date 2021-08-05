@@ -20,18 +20,15 @@ trait predominantCategories extends StObject {
 }
 object predominantCategories {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     predominantCategories: predominantCategoriesPredominantCategoriesParams => js.Promise[PredominantCategoriesResult]
   ): predominantCategories = {
     val __obj = js.Dynamic.literal(predominantCategories = js.Any.fromFunction1(predominantCategories))
     __obj.asInstanceOf[predominantCategories]
   }
   
-  @scala.inline
-  implicit class predominantCategoriesMutableBuilder[Self <: predominantCategories] (val x: Self) extends AnyVal {
+  extension [Self <: predominantCategories](x: Self) {
     
-    @scala.inline
-    def setPredominantCategories(value: predominantCategoriesPredominantCategoriesParams => js.Promise[PredominantCategoriesResult]): Self = StObject.set(x, "predominantCategories", js.Any.fromFunction1(value))
+    inline def setPredominantCategories(value: predominantCategoriesPredominantCategoriesParams => js.Promise[PredominantCategoriesResult]): Self = StObject.set(x, "predominantCategories", js.Any.fromFunction1(value))
   }
 }

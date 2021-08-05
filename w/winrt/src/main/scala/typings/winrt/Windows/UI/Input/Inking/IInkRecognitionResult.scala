@@ -16,8 +16,7 @@ trait IInkRecognitionResult extends StObject {
 }
 object IInkRecognitionResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingRect: Rect,
     getStrokes: () => IVectorView[InkStroke],
     getTextCandidates: () => IVectorView[String]
@@ -26,16 +25,12 @@ object IInkRecognitionResult {
     __obj.asInstanceOf[IInkRecognitionResult]
   }
   
-  @scala.inline
-  implicit class IInkRecognitionResultMutableBuilder[Self <: IInkRecognitionResult] (val x: Self) extends AnyVal {
+  extension [Self <: IInkRecognitionResult](x: Self) {
     
-    @scala.inline
-    def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
+    inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStrokes(value: () => IVectorView[InkStroke]): Self = StObject.set(x, "getStrokes", js.Any.fromFunction0(value))
+    inline def setGetStrokes(value: () => IVectorView[InkStroke]): Self = StObject.set(x, "getStrokes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextCandidates(value: () => IVectorView[String]): Self = StObject.set(x, "getTextCandidates", js.Any.fromFunction0(value))
+    inline def setGetTextCandidates(value: () => IVectorView[String]): Self = StObject.set(x, "getTextCandidates", js.Any.fromFunction0(value))
   }
 }

@@ -18,25 +18,19 @@ trait ListVirtualNodesOutput extends StObject {
 }
 object ListVirtualNodesOutput {
   
-  @scala.inline
-  def apply(virtualNodes: VirtualNodeList): ListVirtualNodesOutput = {
+  inline def apply(virtualNodes: VirtualNodeList): ListVirtualNodesOutput = {
     val __obj = js.Dynamic.literal(virtualNodes = virtualNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualNodesOutput]
   }
   
-  @scala.inline
-  implicit class ListVirtualNodesOutputMutableBuilder[Self <: ListVirtualNodesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVirtualNodesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVirtualNodes(value: VirtualNodeList): Self = StObject.set(x, "virtualNodes", value.asInstanceOf[js.Any])
+    inline def setVirtualNodes(value: VirtualNodeList): Self = StObject.set(x, "virtualNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNodesVarargs(value: VirtualNodeRef*): Self = StObject.set(x, "virtualNodes", js.Array(value :_*))
+    inline def setVirtualNodesVarargs(value: VirtualNodeRef*): Self = StObject.set(x, "virtualNodes", js.Array(value :_*))
   }
 }

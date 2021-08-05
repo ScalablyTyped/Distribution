@@ -29,15 +29,15 @@ object Error {
     def this(name: BacklogErrorNameType, response: Response) = this()
     def this(name: BacklogErrorNameType, response: Response, body: Errors) = this()
     
-    var _body: js.Any = js.native
+    /* private */ var _body: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    var _response: js.Any = js.native
+    /* private */ var _response: js.Any = js.native
     
-    var _status: js.Any = js.native
+    /* private */ var _status: js.Any = js.native
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
     var body: Errors = js.native
     
@@ -68,26 +68,20 @@ object Error {
   }
   object BacklogErrorMessage {
     
-    @scala.inline
-    def apply(code: Double, errorInfo: String, message: String, moreInfo: String): BacklogErrorMessage = {
+    inline def apply(code: Double, errorInfo: String, message: String, moreInfo: String): BacklogErrorMessage = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errorInfo = errorInfo.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], moreInfo = moreInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[BacklogErrorMessage]
     }
     
-    @scala.inline
-    implicit class BacklogErrorMessageMutableBuilder[Self <: BacklogErrorMessage] (val x: Self) extends AnyVal {
+    extension [Self <: BacklogErrorMessage](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorInfo(value: String): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
+      inline def setErrorInfo(value: String): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoreInfo(value: String): Self = StObject.set(x, "moreInfo", value.asInstanceOf[js.Any])
+      inline def setMoreInfo(value: String): Self = StObject.set(x, "moreInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,13 +93,10 @@ object Error {
   trait BacklogErrorNameType extends StObject
   object BacklogErrorNameType {
     
-    @scala.inline
-    def BacklogApiError: typings.backlogJs.backlogJsStrings.BacklogApiError = "BacklogApiError".asInstanceOf[typings.backlogJs.backlogJsStrings.BacklogApiError]
+    inline def BacklogApiError: typings.backlogJs.backlogJsStrings.BacklogApiError = "BacklogApiError".asInstanceOf[typings.backlogJs.backlogJsStrings.BacklogApiError]
     
-    @scala.inline
-    def BacklogAuthError: typings.backlogJs.backlogJsStrings.BacklogAuthError = "BacklogAuthError".asInstanceOf[typings.backlogJs.backlogJsStrings.BacklogAuthError]
+    inline def BacklogAuthError: typings.backlogJs.backlogJsStrings.BacklogAuthError = "BacklogAuthError".asInstanceOf[typings.backlogJs.backlogJsStrings.BacklogAuthError]
     
-    @scala.inline
-    def UnexpectedError: typings.backlogJs.backlogJsStrings.UnexpectedError = "UnexpectedError".asInstanceOf[typings.backlogJs.backlogJsStrings.UnexpectedError]
+    inline def UnexpectedError: typings.backlogJs.backlogJsStrings.UnexpectedError = "UnexpectedError".asInstanceOf[typings.backlogJs.backlogJsStrings.UnexpectedError]
   }
 }

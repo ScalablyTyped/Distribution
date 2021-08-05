@@ -10,16 +10,13 @@ trait Listid extends StObject {
 }
 object Listid {
   
-  @scala.inline
-  def apply(list_id: String): Listid = {
+  inline def apply(list_id: String): Listid = {
     val __obj = js.Dynamic.literal(list_id = list_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Listid]
   }
   
-  @scala.inline
-  implicit class ListidMutableBuilder[Self <: Listid] (val x: Self) extends AnyVal {
+  extension [Self <: Listid](x: Self) {
     
-    @scala.inline
-    def setList_id(value: String): Self = StObject.set(x, "list_id", value.asInstanceOf[js.Any])
+    inline def setList_id(value: String): Self = StObject.set(x, "list_id", value.asInstanceOf[js.Any])
   }
 }

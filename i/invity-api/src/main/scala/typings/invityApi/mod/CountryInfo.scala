@@ -12,22 +12,17 @@ trait CountryInfo extends StObject {
 }
 object CountryInfo {
   
-  @scala.inline
-  def apply(country: String): CountryInfo = {
+  inline def apply(country: String): CountryInfo = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountryInfo]
   }
   
-  @scala.inline
-  implicit class CountryInfoMutableBuilder[Self <: CountryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CountryInfo](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiatCurrency(value: String): Self = StObject.set(x, "fiatCurrency", value.asInstanceOf[js.Any])
+    inline def setFiatCurrency(value: String): Self = StObject.set(x, "fiatCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiatCurrencyUndefined: Self = StObject.set(x, "fiatCurrency", js.undefined)
+    inline def setFiatCurrencyUndefined: Self = StObject.set(x, "fiatCurrency", js.undefined)
   }
 }

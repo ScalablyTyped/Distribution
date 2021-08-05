@@ -26,7 +26,7 @@ trait SmartTag extends StObject {
   
   val SmartTagActions: typings.activexWord.Word.SmartTagActions
   
-  @JSName("Word.SmartTag_typekey")
+  /* private */ @JSName("Word.SmartTag_typekey")
   var WordDotSmartTag_typekey: SmartTag
   
   val XML: String
@@ -35,8 +35,7 @@ trait SmartTag extends StObject {
 }
 object SmartTag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -56,46 +55,32 @@ object SmartTag {
     __obj.asInstanceOf[SmartTag]
   }
   
-  @scala.inline
-  implicit class SmartTagMutableBuilder[Self <: SmartTag] (val x: Self) extends AnyVal {
+  extension [Self <: SmartTag](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDownloadURL(value: String): Self = StObject.set(x, "DownloadURL", value.asInstanceOf[js.Any])
+    inline def setDownloadURL(value: String): Self = StObject.set(x, "DownloadURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: CustomProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: CustomProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
+    inline def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSmartTag_typekey(value: SmartTag): Self = StObject.set(x, "Word.SmartTag_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSmartTag_typekey(value: SmartTag): Self = StObject.set(x, "Word.SmartTag_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
+    inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXMLNode(value: XMLNode): Self = StObject.set(x, "XMLNode", value.asInstanceOf[js.Any])
+    inline def setXMLNode(value: XMLNode): Self = StObject.set(x, "XMLNode", value.asInstanceOf[js.Any])
   }
 }

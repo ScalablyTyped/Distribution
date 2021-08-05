@@ -23,27 +23,23 @@ object textMod {
     @JSImport("@storybook/addon-knobs/dist/components/types/Text", "default.defaultProps")
     @js.native
     def defaultProps: TextTypeProps = js.native
-    @scala.inline
-    def defaultProps_=(x: TextTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: TextTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deserialize(value: TextTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def deserialize(value: TextTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Text", "default.propTypes")
     @js.native
     def propTypes: OnChange = js.native
-    @scala.inline
-    def propTypes_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serialize(value: TextTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def serialize(value: TextTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
   trait TextType
     extends Component[TextTypeProps, js.Object, js.Any] {
     
-    var handleChange: js.Any = js.native
+    /* private */ var handleChange: js.Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MTextType(nextProps: TextTypeProps): Boolean = js.native
@@ -58,20 +54,16 @@ object textMod {
   }
   object TextTypeKnob {
     
-    @scala.inline
-    def apply(name: String): TextTypeKnob = {
+    inline def apply(name: String): TextTypeKnob = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextTypeKnob]
     }
     
-    @scala.inline
-    implicit class TextTypeKnobMutableBuilder[Self <: TextTypeKnob] (val x: Self) extends AnyVal {
+    extension [Self <: TextTypeKnob](x: Self) {
       
-      @scala.inline
-      def setValue(value: TextTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TextTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

@@ -34,12 +34,12 @@ object basicsMod {
     /**
       * The time value in separate year/month/... components
       */
-    var _components: js.Any = js.native
+    /* private */ var _components: js.Any = js.native
     
     /**
       * The time value in unix milliseconds
       */
-    var _unixMillis: js.Any = js.native
+    /* private */ var _unixMillis: js.Any = js.native
     
     def components: TimeComponents = js.native
     
@@ -104,8 +104,7 @@ object basicsMod {
       * @throws timezonecomplete.Argument.Second for invalid second
       * @throws timezonecomplete.Argument.Milli for invalid milliseconds
       */
-    @scala.inline
-    def fromComponents(
+    inline def fromComponents(
       year: js.UndefOr[Double],
       month: js.UndefOr[Double],
       day: js.UndefOr[Double],
@@ -122,23 +121,20 @@ object basicsMod {
       * @param df Which functions to take (getX() or getUTCX())
       * @throws nothing
       */
-    @scala.inline
-    def fromDate(d: Date, df: DateFunctions): TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[TimeStruct]
+    inline def fromDate(d: Date, df: DateFunctions): TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[TimeStruct]
     
     /**
       * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone
       * @throws timezonecomplete.Argument.S if `s` is not a proper iso string
       */
-    @scala.inline
-    def fromString(s: String): TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[TimeStruct]
+    inline def fromString(s: String): TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[TimeStruct]
     
     /**
       * Create a TimeStruct from a number of unix milliseconds
       * (backward compatibility)
       * @throws timezonecomplete.Argument.UnixMillis for non-integer milliseconds
       */
-    @scala.inline
-    def fromUnix(unixMillis: Double): TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnix")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[TimeStruct]
+    inline def fromUnix(unixMillis: Double): TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnix")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[TimeStruct]
   }
   
   @js.native
@@ -260,37 +256,26 @@ object basicsMod {
     /* 3 */ val Wednesday: typings.timezonecomplete.basicsMod.WeekDay.Wednesday & Double = js.native
   }
   
-  @scala.inline
-  def binaryInsertionIndex[T](arr: js.Array[T], compare: js.Function1[/* a */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryInsertionIndex")(arr.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def binaryInsertionIndex[T](arr: js.Array[T], compare: js.Function1[/* a */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryInsertionIndex")(arr.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def dayOfYear(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dayOfYear")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def dayOfYear(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dayOfYear")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def daysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def daysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def daysInYear(year: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("daysInYear")(year.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def daysInYear(year: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("daysInYear")(year.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def firstWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def firstWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def lastWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def lastWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def secondOfDay(hour: Double, minute: Double, second: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("secondOfDay")(hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def secondOfDay(hour: Double, minute: Double, second: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("secondOfDay")(hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def stringToTimeUnit(s: String): TimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToTimeUnit")(s.asInstanceOf[js.Any]).asInstanceOf[TimeUnit]
+  inline def stringToTimeUnit(s: String): TimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToTimeUnit")(s.asInstanceOf[js.Any]).asInstanceOf[TimeUnit]
   
-  @scala.inline
-  def timeToUnixNoLeapSecs(components: TimeComponentOpts): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeToUnixNoLeapSecs")(components.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def timeToUnixNoLeapSecs(
+  inline def timeToUnixNoLeapSecs(components: TimeComponentOpts): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeToUnixNoLeapSecs")(components.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def timeToUnixNoLeapSecs(
     year: Double,
     month: Double,
     day: Double,
@@ -300,31 +285,22 @@ object basicsMod {
     milli: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("timeToUnixNoLeapSecs")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], milli.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def timeUnitToMilliseconds(unit: TimeUnit): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToMilliseconds")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def timeUnitToMilliseconds(unit: TimeUnit): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToMilliseconds")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def timeUnitToString(unit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def timeUnitToString(unit: TimeUnit, amount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def timeUnitToString(unit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def timeUnitToString(unit: TimeUnit, amount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def unixToTimeNoLeapSecs(unixMillis: Double): TimeComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("unixToTimeNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[TimeComponents]
+  inline def unixToTimeNoLeapSecs(unixMillis: Double): TimeComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("unixToTimeNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[TimeComponents]
   
-  @scala.inline
-  def weekDayNoLeapSecs(unixMillis: Double): WeekDay = ^.asInstanceOf[js.Dynamic].applyDynamic("weekDayNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[WeekDay]
+  inline def weekDayNoLeapSecs(unixMillis: Double): WeekDay = ^.asInstanceOf[js.Dynamic].applyDynamic("weekDayNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[WeekDay]
   
-  @scala.inline
-  def weekDayOnOrAfter(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDayOnOrAfter")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def weekDayOnOrAfter(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDayOnOrAfter")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def weekDayOnOrBefore(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDayOnOrBefore")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def weekDayOnOrBefore(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDayOnOrBefore")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def weekNumber(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekNumber")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def weekNumber(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekNumber")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def weekOfMonth(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def weekOfMonth(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait TimeComponentOpts extends StObject {
     
@@ -365,56 +341,40 @@ object basicsMod {
   }
   object TimeComponentOpts {
     
-    @scala.inline
-    def apply(): TimeComponentOpts = {
+    inline def apply(): TimeComponentOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeComponentOpts]
     }
     
-    @scala.inline
-    implicit class TimeComponentOptsMutableBuilder[Self <: TimeComponentOpts] (val x: Self) extends AnyVal {
+    extension [Self <: TimeComponentOpts](x: Self) {
       
-      @scala.inline
-      def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      @scala.inline
-      def setMilli(value: Double): Self = StObject.set(x, "milli", value.asInstanceOf[js.Any])
+      inline def setMilli(value: Double): Self = StObject.set(x, "milli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilliUndefined: Self = StObject.set(x, "milli", js.undefined)
+      inline def setMilliUndefined: Self = StObject.set(x, "milli", js.undefined)
       
-      @scala.inline
-      def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -457,8 +417,7 @@ object basicsMod {
   }
   object TimeComponents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       day: Double,
       hour: Double,
       milli: Double,
@@ -471,29 +430,21 @@ object basicsMod {
       __obj.asInstanceOf[TimeComponents]
     }
     
-    @scala.inline
-    implicit class TimeComponentsMutableBuilder[Self <: TimeComponents] (val x: Self) extends AnyVal {
+    extension [Self <: TimeComponents](x: Self) {
       
-      @scala.inline
-      def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilli(value: Double): Self = StObject.set(x, "milli", value.asInstanceOf[js.Any])
+      inline def setMilli(value: Double): Self = StObject.set(x, "milli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
 }

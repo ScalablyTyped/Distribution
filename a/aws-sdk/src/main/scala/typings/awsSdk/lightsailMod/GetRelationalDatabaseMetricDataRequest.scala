@@ -43,8 +43,7 @@ trait GetRelationalDatabaseMetricDataRequest extends StObject {
 }
 object GetRelationalDatabaseMetricDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endTime: IsoDate,
     metricName: RelationalDatabaseMetricName,
     period: MetricPeriod,
@@ -57,31 +56,22 @@ object GetRelationalDatabaseMetricDataRequest {
     __obj.asInstanceOf[GetRelationalDatabaseMetricDataRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseMetricDataRequestMutableBuilder[Self <: GetRelationalDatabaseMetricDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseMetricDataRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: RelationalDatabaseMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: RelationalDatabaseMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: MetricStatisticList): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: MetricStatisticList): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsVarargs(value: MetricStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: MetricStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
-    @scala.inline
-    def setUnit(value: MetricUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: MetricUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

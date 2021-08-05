@@ -11,19 +11,15 @@ trait ReplaceAllTextResponse extends StObject {
 }
 object ReplaceAllTextResponse {
   
-  @scala.inline
-  def apply(): ReplaceAllTextResponse = {
+  inline def apply(): ReplaceAllTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceAllTextResponse]
   }
   
-  @scala.inline
-  implicit class ReplaceAllTextResponseMutableBuilder[Self <: ReplaceAllTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceAllTextResponse](x: Self) {
     
-    @scala.inline
-    def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+    inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+    inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
   }
 }

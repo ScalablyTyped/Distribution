@@ -23,28 +23,21 @@ trait DescribeNotificationSubscriptionsRequest extends StObject {
 }
 object DescribeNotificationSubscriptionsRequest {
   
-  @scala.inline
-  def apply(OrganizationId: IdType): DescribeNotificationSubscriptionsRequest = {
+  inline def apply(OrganizationId: IdType): DescribeNotificationSubscriptionsRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotificationSubscriptionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeNotificationSubscriptionsRequestMutableBuilder[Self <: DescribeNotificationSubscriptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotificationSubscriptionsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

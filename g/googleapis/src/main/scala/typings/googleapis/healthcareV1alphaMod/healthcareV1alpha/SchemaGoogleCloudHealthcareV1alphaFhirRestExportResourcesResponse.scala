@@ -25,25 +25,19 @@ trait SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponse extends 
 }
 object SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponse = {
+  inline def apply(): SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponseMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudHealthcareV1alphaFhirRestExportResourcesResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceCount(value: String): Self = StObject.set(x, "resourceCount", value.asInstanceOf[js.Any])
+    inline def setResourceCount(value: String): Self = StObject.set(x, "resourceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceCountUndefined: Self = StObject.set(x, "resourceCount", js.undefined)
+    inline def setResourceCountUndefined: Self = StObject.set(x, "resourceCount", js.undefined)
   }
 }

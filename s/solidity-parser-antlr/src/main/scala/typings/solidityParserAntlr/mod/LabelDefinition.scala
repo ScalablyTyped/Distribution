@@ -15,17 +15,14 @@ trait LabelDefinition
 }
 object LabelDefinition {
   
-  @scala.inline
-  def apply(): LabelDefinition = {
+  inline def apply(): LabelDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("LabelDefinition")
     __obj.asInstanceOf[LabelDefinition]
   }
   
-  @scala.inline
-  implicit class LabelDefinitionMutableBuilder[Self <: LabelDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: LabelDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

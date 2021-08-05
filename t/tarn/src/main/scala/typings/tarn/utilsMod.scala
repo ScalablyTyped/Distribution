@@ -11,31 +11,22 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkOptionalTime(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOptionalTime")().asInstanceOf[Boolean]
-  @scala.inline
-  def checkOptionalTime(time: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOptionalTime")(time.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkOptionalTime(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOptionalTime")().asInstanceOf[Boolean]
+  inline def checkOptionalTime(time: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOptionalTime")(time.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def checkRequiredTime(time: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRequiredTime")(time.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkRequiredTime(time: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRequiredTime")(time.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def defer[T](): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Deferred[T]]
+  inline def defer[T](): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Deferred[T]]
   
-  @scala.inline
-  def delay(millis: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millis.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def delay(millis: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millis.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def duration(t1: Double, t2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def duration(t1: Double, t2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @scala.inline
-  def reflect[T](promise: js.Promise[T]): js.Promise[PromiseInspection[js.Any | T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reflect")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseInspection[js.Any | T]]]
+  inline def reflect[T](promise: js.Promise[T]): js.Promise[PromiseInspection[js.Any | T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reflect")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseInspection[js.Any | T]]]
   
-  @scala.inline
-  def tryPromise[T](cb: js.Function0[T | js.Thenable[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryPromise")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def tryPromise[T](cb: js.Function0[T | js.Thenable[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryPromise")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   trait Deferred[T] extends StObject {
     
@@ -47,23 +38,18 @@ object utilsMod {
   }
   object Deferred {
     
-    @scala.inline
-    def apply[T](promise: js.Promise[T], reject: js.Any => js.Any, resolve: T => js.Any): Deferred[T] = {
+    inline def apply[T](promise: js.Promise[T], reject: js.Any => js.Any, resolve: T => js.Any): Deferred[T] = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[Deferred[T]]
     }
     
-    @scala.inline
-    implicit class DeferredMutableBuilder[Self <: Deferred[?], T] (val x: Self & Deferred[T]) extends AnyVal {
+    extension [Self <: Deferred[?], T](x: Self & Deferred[T]) {
       
-      @scala.inline
-      def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReject(value: js.Any => js.Any): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: js.Any => js.Any): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: T => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: T => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
 }

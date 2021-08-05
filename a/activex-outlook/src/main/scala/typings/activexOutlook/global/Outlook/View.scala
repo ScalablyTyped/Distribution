@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.View")
 @js.native
-class View protected ()
+/* private */ class View ()
   extends StObject
      with typings.activexOutlook.Outlook.View {
   
@@ -44,7 +44,7 @@ class View protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.View_typekey")
   var OutlookDotView_typekey: typings.activexOutlook.Outlook.View = js.native
   

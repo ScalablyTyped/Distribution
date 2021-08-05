@@ -14,6 +14,6 @@ abstract class Session protected ()
     * @param userAgent - User agent. See {@link UserAgent} for details.
     * @internal
     */
-  protected def this(userAgent: typings.sipJs.userAgentMod.UserAgent) = this()
-  protected def this(userAgent: typings.sipJs.userAgentMod.UserAgent, options: SessionOptions) = this()
+  /* protected */ def this(userAgent: typings.sipJs.userAgentMod.UserAgent) = this()
+  /* protected */ def this(userAgent: typings.sipJs.userAgentMod.UserAgent, options: SessionOptions) = this()
 }

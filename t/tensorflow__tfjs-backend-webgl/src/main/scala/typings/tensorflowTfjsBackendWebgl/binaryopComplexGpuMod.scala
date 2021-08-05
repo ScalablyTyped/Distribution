@@ -33,13 +33,11 @@ object binaryopComplexGpuMod {
     @JSImport("@tensorflow/tfjs-backend-webgl/dist/binaryop_complex_gpu", "COMPLEX_MULTIPLY.IMAG")
     @js.native
     def IMAG: String = js.native
-    @scala.inline
-    def IMAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAG")(x.asInstanceOf[js.Any])
+    inline def IMAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAG")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-backend-webgl/dist/binaryop_complex_gpu", "COMPLEX_MULTIPLY.REAL")
     @js.native
     def REAL: String = js.native
-    @scala.inline
-    def REAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REAL")(x.asInstanceOf[js.Any])
+    inline def REAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REAL")(x.asInstanceOf[js.Any])
   }
 }

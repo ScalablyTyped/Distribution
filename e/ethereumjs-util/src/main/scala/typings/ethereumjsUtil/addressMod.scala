@@ -35,30 +35,26 @@ object addressMod {
       * Returns an address for a given private key.
       * @param privateKey A private key must be 256 bits wide
       */
-    @scala.inline
-    def fromPrivateKey(privateKey: Buffer): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Address]
+    inline def fromPrivateKey(privateKey: Buffer): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Address]
     
     /**
       * Returns an address for a given public key.
       * @param pubKey The two points of an uncompressed key
       */
-    @scala.inline
-    def fromPublicKey(pubKey: Buffer): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(pubKey.asInstanceOf[js.Any]).asInstanceOf[Address]
+    inline def fromPublicKey(pubKey: Buffer): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(pubKey.asInstanceOf[js.Any]).asInstanceOf[Address]
     
     /**
       * Returns an Address object from a hex-encoded string.
       * @param str - Hex-encoded address
       */
-    @scala.inline
-    def fromString(str: String): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Address]
+    inline def fromString(str: String): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Address]
     
     /**
       * Generates an address for a newly created contract.
       * @param from The address which is creating this new address
       * @param nonce The nonce of the from account
       */
-    @scala.inline
-    def generate(from: Address, nonce: typings.bnJs.mod.^): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(from.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Address]
+    inline def generate(from: Address, nonce: typings.bnJs.mod.^): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(from.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Address]
     
     /**
       * Generates an address for a contract created using CREATE2.
@@ -66,13 +62,11 @@ object addressMod {
       * @param salt A salt
       * @param initCode The init code of the contract being created
       */
-    @scala.inline
-    def generate2(from: Address, salt: Buffer, initCode: Buffer): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate2")(from.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], initCode.asInstanceOf[js.Any])).asInstanceOf[Address]
+    inline def generate2(from: Address, salt: Buffer, initCode: Buffer): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate2")(from.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], initCode.asInstanceOf[js.Any])).asInstanceOf[Address]
     
     /**
       * Returns the zero address.
       */
-    @scala.inline
-    def zero(): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[Address]
+    inline def zero(): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[Address]
   }
 }

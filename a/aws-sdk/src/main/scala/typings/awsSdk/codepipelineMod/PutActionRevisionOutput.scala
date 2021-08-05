@@ -18,25 +18,19 @@ trait PutActionRevisionOutput extends StObject {
 }
 object PutActionRevisionOutput {
   
-  @scala.inline
-  def apply(): PutActionRevisionOutput = {
+  inline def apply(): PutActionRevisionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutActionRevisionOutput]
   }
   
-  @scala.inline
-  implicit class PutActionRevisionOutputMutableBuilder[Self <: PutActionRevisionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutActionRevisionOutput](x: Self) {
     
-    @scala.inline
-    def setNewRevision(value: Boolean): Self = StObject.set(x, "newRevision", value.asInstanceOf[js.Any])
+    inline def setNewRevision(value: Boolean): Self = StObject.set(x, "newRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRevisionUndefined: Self = StObject.set(x, "newRevision", js.undefined)
+    inline def setNewRevisionUndefined: Self = StObject.set(x, "newRevision", js.undefined)
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
+    inline def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
   }
 }

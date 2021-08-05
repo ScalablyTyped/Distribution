@@ -26,8 +26,7 @@ object mod {
   //=> [NonError: 10]
   ```
   */
-  @scala.inline
-  def apply[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]]]
+  inline def apply[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]]]
   
   @JSImport("ensure-error", JSImport.Namespace)
   @js.native
@@ -51,20 +50,16 @@ object mod {
   }
   object NonError {
     
-    @scala.inline
-    def apply(message: String, stack: String): NonError = {
+    inline def apply(message: String, stack: String): NonError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "NonError", stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[NonError]
     }
     
-    @scala.inline
-    implicit class NonErrorMutableBuilder[Self <: NonError] (val x: Self) extends AnyVal {
+    extension [Self <: NonError](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.ensureError.ensureErrorStrings.NonError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.ensureError.ensureErrorStrings.NonError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
 }

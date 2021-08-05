@@ -12,16 +12,13 @@ trait IWebAccountProviderOperation extends StObject {
 }
 object IWebAccountProviderOperation {
   
-  @scala.inline
-  def apply(kind: WebAccountProviderOperationKind): IWebAccountProviderOperation = {
+  inline def apply(kind: WebAccountProviderOperationKind): IWebAccountProviderOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebAccountProviderOperation]
   }
   
-  @scala.inline
-  implicit class IWebAccountProviderOperationMutableBuilder[Self <: IWebAccountProviderOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IWebAccountProviderOperation](x: Self) {
     
-    @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

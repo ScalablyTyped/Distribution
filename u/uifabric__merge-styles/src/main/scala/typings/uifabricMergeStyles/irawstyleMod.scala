@@ -34,26 +34,20 @@ object irawstyleMod {
   }
   object IRawStyle {
     
-    @scala.inline
-    def apply(): IRawStyle = {
+    inline def apply(): IRawStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRawStyle]
     }
     
-    @scala.inline
-    implicit class IRawStyleMutableBuilder[Self <: IRawStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IRawStyle](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setSelectors(value: StringDictionary[IStyle]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: StringDictionary[IStyle]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+      inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     }
   }
 }

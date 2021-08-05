@@ -13,17 +13,14 @@ trait AgentTargetExecutionOptions extends StObject {
 }
 object AgentTargetExecutionOptions {
   
-  @scala.inline
-  def apply(`type`: Double): AgentTargetExecutionOptions = {
+  inline def apply(`type`: Double): AgentTargetExecutionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentTargetExecutionOptions]
   }
   
-  @scala.inline
-  implicit class AgentTargetExecutionOptionsMutableBuilder[Self <: AgentTargetExecutionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AgentTargetExecutionOptions](x: Self) {
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

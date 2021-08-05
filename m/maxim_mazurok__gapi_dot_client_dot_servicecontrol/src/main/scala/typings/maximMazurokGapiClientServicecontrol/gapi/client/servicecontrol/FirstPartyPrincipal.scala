@@ -19,29 +19,23 @@ trait FirstPartyPrincipal extends StObject {
 }
 object FirstPartyPrincipal {
   
-  @scala.inline
-  def apply(): FirstPartyPrincipal = {
+  inline def apply(): FirstPartyPrincipal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirstPartyPrincipal]
   }
   
-  @scala.inline
-  implicit class FirstPartyPrincipalMutableBuilder[Self <: FirstPartyPrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: FirstPartyPrincipal](x: Self) {
     
-    @scala.inline
-    def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
+    inline def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
+    inline def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
     
-    @scala.inline
-    def setServiceMetadata(
+    inline def setServiceMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal & TopLevel[js.Any]
     ): Self = StObject.set(x, "serviceMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceMetadataUndefined: Self = StObject.set(x, "serviceMetadata", js.undefined)
+    inline def setServiceMetadataUndefined: Self = StObject.set(x, "serviceMetadata", js.undefined)
   }
 }

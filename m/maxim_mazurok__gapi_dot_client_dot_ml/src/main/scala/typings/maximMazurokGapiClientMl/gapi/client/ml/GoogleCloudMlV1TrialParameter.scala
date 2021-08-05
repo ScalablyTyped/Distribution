@@ -20,37 +20,27 @@ trait GoogleCloudMlV1TrialParameter extends StObject {
 }
 object GoogleCloudMlV1TrialParameter {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1TrialParameter = {
+  inline def apply(): GoogleCloudMlV1TrialParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1TrialParameter]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1TrialParameterMutableBuilder[Self <: GoogleCloudMlV1TrialParameter] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1TrialParameter](x: Self) {
     
-    @scala.inline
-    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
+    inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
+    inline def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
-    @scala.inline
-    def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
+    inline def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
+    inline def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

@@ -14,10 +14,8 @@ object overlayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  @scala.inline
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/overlay", "makeValidatingTransform")
   @js.native
@@ -33,20 +31,16 @@ object overlayMod {
   }
   object OverlayHelpersProps {
     
-    @scala.inline
-    def apply(): OverlayHelpersProps = {
+    inline def apply(): OverlayHelpersProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OverlayHelpersProps]
     }
     
-    @scala.inline
-    implicit class OverlayHelpersPropsMutableBuilder[Self <: OverlayHelpersProps] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayHelpersProps](x: Self) {
       
-      @scala.inline
-      def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     }
   }
 }

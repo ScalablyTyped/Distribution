@@ -18,22 +18,17 @@ trait ToneScore extends StObject {
 }
 object ToneScore {
   
-  @scala.inline
-  def apply(score: Double, tone_id: String, tone_name: String): ToneScore = {
+  inline def apply(score: Double, tone_id: String, tone_name: String): ToneScore = {
     val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any], tone_id = tone_id.asInstanceOf[js.Any], tone_name = tone_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneScore]
   }
   
-  @scala.inline
-  implicit class ToneScoreMutableBuilder[Self <: ToneScore] (val x: Self) extends AnyVal {
+  extension [Self <: ToneScore](x: Self) {
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTone_id(value: String): Self = StObject.set(x, "tone_id", value.asInstanceOf[js.Any])
+    inline def setTone_id(value: String): Self = StObject.set(x, "tone_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTone_name(value: String): Self = StObject.set(x, "tone_name", value.asInstanceOf[js.Any])
+    inline def setTone_name(value: String): Self = StObject.set(x, "tone_name", value.asInstanceOf[js.Any])
   }
 }

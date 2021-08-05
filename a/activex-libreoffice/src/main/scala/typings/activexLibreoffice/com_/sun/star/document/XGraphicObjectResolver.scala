@@ -16,8 +16,7 @@ trait XGraphicObjectResolver
 }
 object XGraphicObjectResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -27,10 +26,8 @@ object XGraphicObjectResolver {
     __obj.asInstanceOf[XGraphicObjectResolver]
   }
   
-  @scala.inline
-  implicit class XGraphicObjectResolverMutableBuilder[Self <: XGraphicObjectResolver] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphicObjectResolver](x: Self) {
     
-    @scala.inline
-    def setResolveGraphicObjectURL(value: String => String): Self = StObject.set(x, "resolveGraphicObjectURL", js.Any.fromFunction1(value))
+    inline def setResolveGraphicObjectURL(value: String => String): Self = StObject.set(x, "resolveGraphicObjectURL", js.Any.fromFunction1(value))
   }
 }

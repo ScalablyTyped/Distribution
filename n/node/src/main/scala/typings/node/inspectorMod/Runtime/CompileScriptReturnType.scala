@@ -18,25 +18,19 @@ trait CompileScriptReturnType extends StObject {
 }
 object CompileScriptReturnType {
   
-  @scala.inline
-  def apply(): CompileScriptReturnType = {
+  inline def apply(): CompileScriptReturnType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompileScriptReturnType]
   }
   
-  @scala.inline
-  implicit class CompileScriptReturnTypeMutableBuilder[Self <: CompileScriptReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: CompileScriptReturnType](x: Self) {
     
-    @scala.inline
-    def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
+    inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
+    inline def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
     
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
+    inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
   }
 }

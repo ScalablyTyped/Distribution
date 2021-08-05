@@ -29,31 +29,23 @@ trait SchemaLongRunningRecognizeMetadata extends StObject {
 }
 object SchemaLongRunningRecognizeMetadata {
   
-  @scala.inline
-  def apply(): SchemaLongRunningRecognizeMetadata = {
+  inline def apply(): SchemaLongRunningRecognizeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLongRunningRecognizeMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaLongRunningRecognizeMetadataMutableBuilder[Self <: SchemaLongRunningRecognizeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLongRunningRecognizeMetadata](x: Self) {
     
-    @scala.inline
-    def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

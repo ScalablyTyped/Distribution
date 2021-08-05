@@ -24,25 +24,19 @@ trait RangeDomainProperties
 }
 object RangeDomainProperties {
   
-  @scala.inline
-  def apply(): RangeDomainProperties = {
+  inline def apply(): RangeDomainProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeDomainProperties]
   }
   
-  @scala.inline
-  implicit class RangeDomainPropertiesMutableBuilder[Self <: RangeDomainProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RangeDomainProperties](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

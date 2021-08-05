@@ -16,19 +16,15 @@ trait WalletRelevantLocation extends StObject {
 }
 object WalletRelevantLocation {
   
-  @scala.inline
-  def apply(displayMessage: String, position: BasicGeoposition): WalletRelevantLocation = {
+  inline def apply(displayMessage: String, position: BasicGeoposition): WalletRelevantLocation = {
     val __obj = js.Dynamic.literal(displayMessage = displayMessage.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalletRelevantLocation]
   }
   
-  @scala.inline
-  implicit class WalletRelevantLocationMutableBuilder[Self <: WalletRelevantLocation] (val x: Self) extends AnyVal {
+  extension [Self <: WalletRelevantLocation](x: Self) {
     
-    @scala.inline
-    def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
+    inline def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: BasicGeoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: BasicGeoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

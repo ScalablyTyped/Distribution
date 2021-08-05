@@ -15,8 +15,7 @@ object beginDragMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createBeginDrag(manager: DragDropManager): js.Function2[
+  inline def createBeginDrag(manager: DragDropManager): js.Function2[
     /* sourceIds */ js.UndefOr[js.Array[Identifier]], 
     /* options */ js.UndefOr[BeginDragOptions], 
     js.UndefOr[Action[BeginDragPayload]]

@@ -18,13 +18,10 @@ object TYPE {
   @js.native
   val ^ : TYPE = js.native
   
-  @scala.inline
-  implicit class TYPEMutableBuilder[Self <: TYPE] (val x: Self) extends AnyVal {
+  extension [Self <: TYPE](x: Self) {
     
-    @scala.inline
-    def setSearch(value: search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: select): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: select): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

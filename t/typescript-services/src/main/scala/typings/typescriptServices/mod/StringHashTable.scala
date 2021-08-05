@@ -25,7 +25,7 @@ class StringHashTable[T] ()
   /* CompleteClass */
   override def getAllKeys(): js.Array[String] = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var itemCount: js.Any = js.native
   
   /* CompleteClass */
@@ -40,6 +40,6 @@ class StringHashTable[T] ()
   /* CompleteClass */
   override def some(fn: js.Function3[/* k */ String, T, /* context */ js.Any, Unit], context: js.Any): Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var table: js.Any = js.native
 }

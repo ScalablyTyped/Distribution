@@ -18,19 +18,15 @@ trait AttachCertificateToDistributionRequest extends StObject {
 }
 object AttachCertificateToDistributionRequest {
   
-  @scala.inline
-  def apply(certificateName: ResourceName, distributionName: ResourceName): AttachCertificateToDistributionRequest = {
+  inline def apply(certificateName: ResourceName, distributionName: ResourceName): AttachCertificateToDistributionRequest = {
     val __obj = js.Dynamic.literal(certificateName = certificateName.asInstanceOf[js.Any], distributionName = distributionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachCertificateToDistributionRequest]
   }
   
-  @scala.inline
-  implicit class AttachCertificateToDistributionRequestMutableBuilder[Self <: AttachCertificateToDistributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachCertificateToDistributionRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
+    inline def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
+    inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
   }
 }

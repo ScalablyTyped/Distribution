@@ -41,31 +41,23 @@ trait ASPxClientWeekOfMonth extends StObject {
 }
 object ASPxClientWeekOfMonth {
   
-  @scala.inline
-  def apply(First: Double, Fourth: Double, Last: Double, None: Double, Second: Double, Third: Double): ASPxClientWeekOfMonth = {
+  inline def apply(First: Double, Fourth: Double, Last: Double, None: Double, Second: Double, Third: Double): ASPxClientWeekOfMonth = {
     val __obj = js.Dynamic.literal(First = First.asInstanceOf[js.Any], Fourth = Fourth.asInstanceOf[js.Any], Last = Last.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], Second = Second.asInstanceOf[js.Any], Third = Third.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientWeekOfMonth]
   }
   
-  @scala.inline
-  implicit class ASPxClientWeekOfMonthMutableBuilder[Self <: ASPxClientWeekOfMonth] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWeekOfMonth](x: Self) {
     
-    @scala.inline
-    def setFirst(value: Double): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Double): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFourth(value: Double): Self = StObject.set(x, "Fourth", value.asInstanceOf[js.Any])
+    inline def setFourth(value: Double): Self = StObject.set(x, "Fourth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast(value: Double): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Double): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+    inline def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: Double): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Double): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThird(value: Double): Self = StObject.set(x, "Third", value.asInstanceOf[js.Any])
+    inline def setThird(value: Double): Self = StObject.set(x, "Third", value.asInstanceOf[js.Any])
   }
 }

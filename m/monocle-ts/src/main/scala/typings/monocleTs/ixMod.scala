@@ -15,17 +15,13 @@ object ixMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromAt[T, J, B](at: At[T, J, Option_[B]]): Index[T, J, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAt")(at.asInstanceOf[js.Any]).asInstanceOf[Index[T, J, B]]
+  inline def fromAt[T, J, B](at: At[T, J, Option_[B]]): Index[T, J, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAt")(at.asInstanceOf[js.Any]).asInstanceOf[Index[T, J, B]]
   
-  @scala.inline
-  def fromIso[T, S](iso: Iso[T, S]): js.Function1[/* sia */ Index[S, js.Any, js.Any], Index[T, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIso")(iso.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sia */ Index[S, js.Any, js.Any], Index[T, js.Any, js.Any]]]
+  inline def fromIso[T, S](iso: Iso[T, S]): js.Function1[/* sia */ Index[S, js.Any, js.Any], Index[T, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIso")(iso.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sia */ Index[S, js.Any, js.Any], Index[T, js.Any, js.Any]]]
   
-  @scala.inline
-  def indexArray[A](): Index[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexArray")().asInstanceOf[Index[js.Array[A], Double, A]]
+  inline def indexArray[A](): Index[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexArray")().asInstanceOf[Index[js.Array[A], Double, A]]
   
-  @scala.inline
-  def indexRecord[A](): Index[Record[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexRecord")().asInstanceOf[Index[Record[String, A], String, A]]
+  inline def indexRecord[A](): Index[Record[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexRecord")().asInstanceOf[Index[Record[String, A], String, A]]
   
   trait Index[S, I, A] extends StObject {
     
@@ -33,17 +29,14 @@ object ixMod {
   }
   object Index {
     
-    @scala.inline
-    def apply[S, I, A](index: I => Optional[S, A]): Index[S, I, A] = {
+    inline def apply[S, I, A](index: I => Optional[S, A]): Index[S, I, A] = {
       val __obj = js.Dynamic.literal(index = js.Any.fromFunction1(index))
       __obj.asInstanceOf[Index[S, I, A]]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[?, ?, ?], S, I, A] (val x: Self & (Index[S, I, A])) extends AnyVal {
+    extension [Self <: Index[?, ?, ?], S, I, A](x: Self & (Index[S, I, A])) {
       
-      @scala.inline
-      def setIndex(value: I => Optional[S, A]): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
+      inline def setIndex(value: I => Optional[S, A]): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
     }
   }
 }

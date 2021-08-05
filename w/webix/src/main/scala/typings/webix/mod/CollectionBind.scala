@@ -17,6 +17,5 @@ trait CollectionBind extends StObject {
 }
 object CollectionBind {
   
-  @scala.inline
-  def apply: CollectionBind = ^.asInstanceOf[js.Dynamic].selectDynamic("CollectionBind").asInstanceOf[CollectionBind]
+  inline def apply: CollectionBind = ^.asInstanceOf[js.Dynamic].selectDynamic("CollectionBind").asInstanceOf[CollectionBind]
 }

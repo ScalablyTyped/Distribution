@@ -56,7 +56,6 @@ object navigationComponentMod {
     @JSImport("react-native-navigation/lib/dist/interfaces/NavigationComponent", "NavigationComponent.options")
     @js.native
     def options: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options = js.native
-    @scala.inline
-    def options_=(x: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    inline def options_=(x: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
 }

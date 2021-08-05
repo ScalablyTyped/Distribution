@@ -15,19 +15,15 @@ trait BLECharacteristic extends StObject {
 }
 object BLECharacteristic {
   
-  @scala.inline
-  def apply(properties: BLECharacteristicProperties, uuid: String): BLECharacteristic = {
+  inline def apply(properties: BLECharacteristicProperties, uuid: String): BLECharacteristic = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[BLECharacteristic]
   }
   
-  @scala.inline
-  implicit class BLECharacteristicMutableBuilder[Self <: BLECharacteristic] (val x: Self) extends AnyVal {
+  extension [Self <: BLECharacteristic](x: Self) {
     
-    @scala.inline
-    def setProperties(value: BLECharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: BLECharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

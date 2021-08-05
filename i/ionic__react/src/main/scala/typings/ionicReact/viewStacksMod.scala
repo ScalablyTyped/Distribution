@@ -47,6 +47,6 @@ object viewStacksMod {
     
     def remove(viewItem: ViewItem[js.Any]): Unit = js.native
     
-    var viewStacks: js.Any = js.native
+    /* private */ var viewStacks: js.Any = js.native
   }
 }

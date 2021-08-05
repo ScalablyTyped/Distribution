@@ -23,25 +23,19 @@ trait SchemaSubnetworksExpandIpCidrRangeRequest extends StObject {
 }
 object SchemaSubnetworksExpandIpCidrRangeRequest {
   
-  @scala.inline
-  def apply(): SchemaSubnetworksExpandIpCidrRangeRequest = {
+  inline def apply(): SchemaSubnetworksExpandIpCidrRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubnetworksExpandIpCidrRangeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSubnetworksExpandIpCidrRangeRequestMutableBuilder[Self <: SchemaSubnetworksExpandIpCidrRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubnetworksExpandIpCidrRangeRequest](x: Self) {
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
-    @scala.inline
-    def setRangeType(value: String): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
+    inline def setRangeType(value: String): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)
+    inline def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)
   }
 }

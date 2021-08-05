@@ -34,8 +34,7 @@ trait AccessibleTableView
      with XAccessibleEventBroadcaster
 object AccessibleTableView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleCaption: XAccessible,
     AccessibleChildCount: Double,
     AccessibleColumnCount: Double,

@@ -14,25 +14,19 @@ trait GoogleMonitoringV3Range extends StObject {
 }
 object GoogleMonitoringV3Range {
   
-  @scala.inline
-  def apply(): GoogleMonitoringV3Range = {
+  inline def apply(): GoogleMonitoringV3Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMonitoringV3Range]
   }
   
-  @scala.inline
-  implicit class GoogleMonitoringV3RangeMutableBuilder[Self <: GoogleMonitoringV3Range] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMonitoringV3Range](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

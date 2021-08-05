@@ -16,16 +16,13 @@ trait VisibilityModeChangedMessage extends StObject {
 }
 object VisibilityModeChangedMessage {
   
-  @scala.inline
-  def apply(visibilityMode: VisibilityMode): VisibilityModeChangedMessage = {
+  inline def apply(visibilityMode: VisibilityMode): VisibilityModeChangedMessage = {
     val __obj = js.Dynamic.literal(visibilityMode = visibilityMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibilityModeChangedMessage]
   }
   
-  @scala.inline
-  implicit class VisibilityModeChangedMessageMutableBuilder[Self <: VisibilityModeChangedMessage] (val x: Self) extends AnyVal {
+  extension [Self <: VisibilityModeChangedMessage](x: Self) {
     
-    @scala.inline
-    def setVisibilityMode(value: VisibilityMode): Self = StObject.set(x, "visibilityMode", value.asInstanceOf[js.Any])
+    inline def setVisibilityMode(value: VisibilityMode): Self = StObject.set(x, "visibilityMode", value.asInstanceOf[js.Any])
   }
 }

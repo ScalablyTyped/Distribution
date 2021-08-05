@@ -13,16 +13,13 @@ trait DeleteActivationRequest extends StObject {
 }
 object DeleteActivationRequest {
   
-  @scala.inline
-  def apply(ActivationId: ActivationId): DeleteActivationRequest = {
+  inline def apply(ActivationId: ActivationId): DeleteActivationRequest = {
     val __obj = js.Dynamic.literal(ActivationId = ActivationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteActivationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteActivationRequestMutableBuilder[Self <: DeleteActivationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteActivationRequest](x: Self) {
     
-    @scala.inline
-    def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
+    inline def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
   }
 }

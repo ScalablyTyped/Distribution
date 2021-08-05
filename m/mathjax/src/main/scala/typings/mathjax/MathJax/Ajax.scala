@@ -85,8 +85,7 @@ trait Ajax extends StObject {
 }
 object Ajax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Load: (String, js.Any) => js.Any,
     LoadHook: (String, js.Any) => js.Any,
     Preloading: /* repeated */ js.Any => Unit,
@@ -105,52 +104,36 @@ object Ajax {
     __obj.asInstanceOf[Ajax]
   }
   
-  @scala.inline
-  implicit class AjaxMutableBuilder[Self <: Ajax] (val x: Self) extends AnyVal {
+  extension [Self <: Ajax](x: Self) {
     
-    @scala.inline
-    def setFileURL(value: String => String): Self = StObject.set(x, "fileURL", js.Any.fromFunction1(value))
+    inline def setFileURL(value: String => String): Self = StObject.set(x, "fileURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoad(value: (String, js.Any) => js.Any): Self = StObject.set(x, "Load", js.Any.fromFunction2(value))
+    inline def setLoad(value: (String, js.Any) => js.Any): Self = StObject.set(x, "Load", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadComplete(value: String => Unit): Self = StObject.set(x, "loadComplete", js.Any.fromFunction1(value))
+    inline def setLoadComplete(value: String => Unit): Self = StObject.set(x, "loadComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadError(value: String => Unit): Self = StObject.set(x, "loadError", js.Any.fromFunction1(value))
+    inline def setLoadError(value: String => Unit): Self = StObject.set(x, "loadError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadHook(value: (String, js.Any) => js.Any): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
+    inline def setLoadHook(value: (String, js.Any) => js.Any): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadHooks(value: js.Any): Self = StObject.set(x, "loadHooks", value.asInstanceOf[js.Any])
+    inline def setLoadHooks(value: js.Any): Self = StObject.set(x, "loadHooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadTimeout(value: String => Unit): Self = StObject.set(x, "loadTimeout", js.Any.fromFunction1(value))
+    inline def setLoadTimeout(value: String => Unit): Self = StObject.set(x, "loadTimeout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoaded(value: js.Any): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: js.Any): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloading(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "Preloading", js.Any.fromFunction1(value))
+    inline def setPreloading(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "Preloading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequire(value: (String, js.Any) => js.Any): Self = StObject.set(x, "Require", js.Any.fromFunction2(value))
+    inline def setRequire(value: (String, js.Any) => js.Any): Self = StObject.set(x, "Require", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSTATUS(value: STATUS): Self = StObject.set(x, "STATUS", value.asInstanceOf[js.Any])
+    inline def setSTATUS(value: STATUS): Self = StObject.set(x, "STATUS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Styles", js.Any.fromFunction2(value))
+    inline def setStyles(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Styles", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

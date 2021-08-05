@@ -33,34 +33,25 @@ trait ExpansionProfileExcludedSystem
 }
 object ExpansionProfileExcludedSystem {
   
-  @scala.inline
-  def apply(system: uri): ExpansionProfileExcludedSystem = {
+  inline def apply(system: uri): ExpansionProfileExcludedSystem = {
     val __obj = js.Dynamic.literal(system = system.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpansionProfileExcludedSystem]
   }
   
-  @scala.inline
-  implicit class ExpansionProfileExcludedSystemMutableBuilder[Self <: ExpansionProfileExcludedSystem] (val x: Self) extends AnyVal {
+  extension [Self <: ExpansionProfileExcludedSystem](x: Self) {
     
-    @scala.inline
-    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
+    inline def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
+    inline def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
-    @scala.inline
-    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
+    inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

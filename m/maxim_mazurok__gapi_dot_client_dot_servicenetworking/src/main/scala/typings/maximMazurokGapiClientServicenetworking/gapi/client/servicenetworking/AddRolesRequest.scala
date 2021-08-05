@@ -17,28 +17,21 @@ trait AddRolesRequest extends StObject {
 }
 object AddRolesRequest {
   
-  @scala.inline
-  def apply(): AddRolesRequest = {
+  inline def apply(): AddRolesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddRolesRequest]
   }
   
-  @scala.inline
-  implicit class AddRolesRequestMutableBuilder[Self <: AddRolesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddRolesRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
+    inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
+    inline def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
     
-    @scala.inline
-    def setPolicyBinding(value: js.Array[PolicyBinding]): Self = StObject.set(x, "policyBinding", value.asInstanceOf[js.Any])
+    inline def setPolicyBinding(value: js.Array[PolicyBinding]): Self = StObject.set(x, "policyBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyBindingUndefined: Self = StObject.set(x, "policyBinding", js.undefined)
+    inline def setPolicyBindingUndefined: Self = StObject.set(x, "policyBinding", js.undefined)
     
-    @scala.inline
-    def setPolicyBindingVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBinding", js.Array(value :_*))
+    inline def setPolicyBindingVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBinding", js.Array(value :_*))
   }
 }

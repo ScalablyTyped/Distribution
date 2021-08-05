@@ -12,16 +12,13 @@ trait AppearingElementAnimation
 }
 object AppearingElementAnimation {
   
-  @scala.inline
-  def apply(duration: Double, from: Double): AppearingElementAnimation = {
+  inline def apply(duration: Double, from: Double): AppearingElementAnimation = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppearingElementAnimation]
   }
   
-  @scala.inline
-  implicit class AppearingElementAnimationMutableBuilder[Self <: AppearingElementAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: AppearingElementAnimation](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
   }
 }

@@ -32,8 +32,7 @@ object measurersMod {
     @JSImport("typesettable/build/src/measurers", "AbstractMeasurer.HEIGHT_TEXT")
     @js.native
     def HEIGHT_TEXT: String = js.native
-    @scala.inline
-    def HEIGHT_TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT_TEXT")(x.asInstanceOf[js.Any])
+    inline def HEIGHT_TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT_TEXT")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typesettable/build/src/measurers", "CacheCharacterMeasurer")

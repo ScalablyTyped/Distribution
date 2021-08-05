@@ -308,80 +308,56 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArrayValueSize(value: Double): Self = StObject.set(x, "arrayValueSize", value.asInstanceOf[js.Any])
+      inline def setArrayValueSize(value: Double): Self = StObject.set(x, "arrayValueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayValueSizeUndefined: Self = StObject.set(x, "arrayValueSize", js.undefined)
+      inline def setArrayValueSizeUndefined: Self = StObject.set(x, "arrayValueSize", js.undefined)
       
-      @scala.inline
-      def setCheckperiod(value: Double): Self = StObject.set(x, "checkperiod", value.asInstanceOf[js.Any])
+      inline def setCheckperiod(value: Double): Self = StObject.set(x, "checkperiod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckperiodUndefined: Self = StObject.set(x, "checkperiod", js.undefined)
+      inline def setCheckperiodUndefined: Self = StObject.set(x, "checkperiod", js.undefined)
       
-      @scala.inline
-      def setDeleteOnExpire(value: Boolean): Self = StObject.set(x, "deleteOnExpire", value.asInstanceOf[js.Any])
+      inline def setDeleteOnExpire(value: Boolean): Self = StObject.set(x, "deleteOnExpire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteOnExpireUndefined: Self = StObject.set(x, "deleteOnExpire", js.undefined)
+      inline def setDeleteOnExpireUndefined: Self = StObject.set(x, "deleteOnExpire", js.undefined)
       
-      @scala.inline
-      def setEnableLegacyCallbacks(value: Boolean): Self = StObject.set(x, "enableLegacyCallbacks", value.asInstanceOf[js.Any])
+      inline def setEnableLegacyCallbacks(value: Boolean): Self = StObject.set(x, "enableLegacyCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLegacyCallbacksUndefined: Self = StObject.set(x, "enableLegacyCallbacks", js.undefined)
+      inline def setEnableLegacyCallbacksUndefined: Self = StObject.set(x, "enableLegacyCallbacks", js.undefined)
       
-      @scala.inline
-      def setErrorOnMissing(value: Boolean): Self = StObject.set(x, "errorOnMissing", value.asInstanceOf[js.Any])
+      inline def setErrorOnMissing(value: Boolean): Self = StObject.set(x, "errorOnMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOnMissingUndefined: Self = StObject.set(x, "errorOnMissing", js.undefined)
+      inline def setErrorOnMissingUndefined: Self = StObject.set(x, "errorOnMissing", js.undefined)
       
-      @scala.inline
-      def setForceString(value: Boolean): Self = StObject.set(x, "forceString", value.asInstanceOf[js.Any])
+      inline def setForceString(value: Boolean): Self = StObject.set(x, "forceString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceStringUndefined: Self = StObject.set(x, "forceString", js.undefined)
+      inline def setForceStringUndefined: Self = StObject.set(x, "forceString", js.undefined)
       
-      @scala.inline
-      def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
+      inline def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
+      inline def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
       
-      @scala.inline
-      def setObjectValueSize(value: Double): Self = StObject.set(x, "objectValueSize", value.asInstanceOf[js.Any])
+      inline def setObjectValueSize(value: Double): Self = StObject.set(x, "objectValueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectValueSizeUndefined: Self = StObject.set(x, "objectValueSize", js.undefined)
+      inline def setObjectValueSizeUndefined: Self = StObject.set(x, "objectValueSize", js.undefined)
       
-      @scala.inline
-      def setPromiseValueSize(value: Double): Self = StObject.set(x, "promiseValueSize", value.asInstanceOf[js.Any])
+      inline def setPromiseValueSize(value: Double): Self = StObject.set(x, "promiseValueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseValueSizeUndefined: Self = StObject.set(x, "promiseValueSize", js.undefined)
+      inline def setPromiseValueSizeUndefined: Self = StObject.set(x, "promiseValueSize", js.undefined)
       
-      @scala.inline
-      def setStdTTL(value: Double): Self = StObject.set(x, "stdTTL", value.asInstanceOf[js.Any])
+      inline def setStdTTL(value: Double): Self = StObject.set(x, "stdTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdTTLUndefined: Self = StObject.set(x, "stdTTL", js.undefined)
+      inline def setStdTTLUndefined: Self = StObject.set(x, "stdTTL", js.undefined)
       
-      @scala.inline
-      def setUseClones(value: Boolean): Self = StObject.set(x, "useClones", value.asInstanceOf[js.Any])
+      inline def setUseClones(value: Boolean): Self = StObject.set(x, "useClones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClonesUndefined: Self = StObject.set(x, "useClones", js.undefined)
+      inline def setUseClonesUndefined: Self = StObject.set(x, "useClones", js.undefined)
     }
   }
   
@@ -399,29 +375,22 @@ object mod {
   }
   object Stats {
     
-    @scala.inline
-    def apply(hits: Double, keys: Double, ksize: Double, misses: Double, vsize: Double): Stats = {
+    inline def apply(hits: Double, keys: Double, ksize: Double, misses: Double, vsize: Double): Stats = {
       val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], ksize = ksize.asInstanceOf[js.Any], misses = misses.asInstanceOf[js.Any], vsize = vsize.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+      inline def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: Double): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Double): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKsize(value: Double): Self = StObject.set(x, "ksize", value.asInstanceOf[js.Any])
+      inline def setKsize(value: Double): Self = StObject.set(x, "ksize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMisses(value: Double): Self = StObject.set(x, "misses", value.asInstanceOf[js.Any])
+      inline def setMisses(value: Double): Self = StObject.set(x, "misses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVsize(value: Double): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
+      inline def setVsize(value: Double): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -435,27 +404,21 @@ object mod {
   }
   object ValueSetItem {
     
-    @scala.inline
-    def apply[T](key: Key, `val`: T): ValueSetItem[T] = {
+    inline def apply[T](key: Key, `val`: T): ValueSetItem[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueSetItem[T]]
     }
     
-    @scala.inline
-    implicit class ValueSetItemMutableBuilder[Self <: ValueSetItem[?], T] (val x: Self & ValueSetItem[T]) extends AnyVal {
+    extension [Self <: ValueSetItem[?], T](x: Self & ValueSetItem[T]) {
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setVal(value: T): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: T): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   
@@ -469,20 +432,16 @@ object mod {
   }
   object WrappedValue {
     
-    @scala.inline
-    def apply[T](t: Double, v: T): WrappedValue[T] = {
+    inline def apply[T](t: Double, v: T): WrappedValue[T] = {
       val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrappedValue[T]]
     }
     
-    @scala.inline
-    implicit class WrappedValueMutableBuilder[Self <: WrappedValue[?], T] (val x: Self & WrappedValue[T]) extends AnyVal {
+    extension [Self <: WrappedValue[?], T](x: Self & WrappedValue[T]) {
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: T): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: T): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -8,6 +8,5 @@ object reduxDuckStrings {
   
   @js.native
   sealed trait ActionHandlers extends StObject
-  @scala.inline
-  def ActionHandlers: ActionHandlers = "ActionHandlers".asInstanceOf[ActionHandlers]
+  inline def ActionHandlers: ActionHandlers = "ActionHandlers".asInstanceOf[ActionHandlers]
 }

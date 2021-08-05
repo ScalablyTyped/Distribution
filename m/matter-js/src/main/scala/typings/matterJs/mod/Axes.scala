@@ -20,8 +20,7 @@ object Axes {
     * @param {vertices} vertices
     * @return {axes} A new axes from the given vertices
     */
-  @scala.inline
-  def fromVertices(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
+  inline def fromVertices(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
   
   /**
     * Rotates a set of axes by the given angle.
@@ -29,6 +28,5 @@ object Axes {
     * @param {axes} axes
     * @param {number} angle
     */
-  @scala.inline
-  def rotate(axes: js.Array[Vector], angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(axes.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rotate(axes: js.Array[Vector], angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(axes.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

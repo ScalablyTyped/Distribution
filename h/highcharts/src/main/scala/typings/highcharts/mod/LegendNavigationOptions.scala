@@ -52,49 +52,35 @@ trait LegendNavigationOptions extends StObject {
 }
 object LegendNavigationOptions {
   
-  @scala.inline
-  def apply(): LegendNavigationOptions = {
+  inline def apply(): LegendNavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendNavigationOptions]
   }
   
-  @scala.inline
-  implicit class LegendNavigationOptionsMutableBuilder[Self <: LegendNavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LegendNavigationOptions](x: Self) {
     
-    @scala.inline
-    def setActiveColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
+    inline def setActiveColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
+    inline def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
+    inline def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowSizeUndefined: Self = StObject.set(x, "arrowSize", js.undefined)
+    inline def setArrowSizeUndefined: Self = StObject.set(x, "arrowSize", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setInactiveColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "inactiveColor", value.asInstanceOf[js.Any])
+    inline def setInactiveColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "inactiveColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveColorUndefined: Self = StObject.set(x, "inactiveColor", js.undefined)
+    inline def setInactiveColorUndefined: Self = StObject.set(x, "inactiveColor", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

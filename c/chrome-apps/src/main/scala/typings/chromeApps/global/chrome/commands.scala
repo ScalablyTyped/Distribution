@@ -31,8 +31,7 @@ object commands {
     * Returns all the registered commands for this app and their shortcut (if active).
     * @param callback Called to return the registered commands.
     */
-  @scala.inline
-  def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Fired when a registered command is activated using a keyboard shortcut. */
   @JSGlobal("chrome.commands.onCommand")

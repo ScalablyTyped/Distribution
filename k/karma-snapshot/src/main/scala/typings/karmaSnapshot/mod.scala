@@ -18,20 +18,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setSnapshot(value: SnapshotOptions): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+      inline def setSnapshot(value: SnapshotOptions): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+      inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     }
   }
   
@@ -63,35 +59,26 @@ object mod {
   }
   object Snapshot {
     
-    @scala.inline
-    def apply(code: String): Snapshot = {
+    inline def apply(code: String): Snapshot = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Snapshot]
     }
     
-    @scala.inline
-    implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
+    extension [Self <: Snapshot](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+      inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
+      inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
     }
   }
   
@@ -135,50 +122,36 @@ object mod {
   }
   object SnapshotOptions {
     
-    @scala.inline
-    def apply(): SnapshotOptions = {
+    inline def apply(): SnapshotOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SnapshotOptions]
     }
     
-    @scala.inline
-    implicit class SnapshotOptionsMutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotOptions](x: Self) {
       
-      @scala.inline
-      def setCheckSourceFile(value: Boolean): Self = StObject.set(x, "checkSourceFile", value.asInstanceOf[js.Any])
+      inline def setCheckSourceFile(value: Boolean): Self = StObject.set(x, "checkSourceFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckSourceFileUndefined: Self = StObject.set(x, "checkSourceFile", js.undefined)
+      inline def setCheckSourceFileUndefined: Self = StObject.set(x, "checkSourceFile", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String | SnapshotSerializer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String | SnapshotSerializer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setLimitUnusedSnapshotsInWarning(value: Double): Self = StObject.set(x, "limitUnusedSnapshotsInWarning", value.asInstanceOf[js.Any])
+      inline def setLimitUnusedSnapshotsInWarning(value: Double): Self = StObject.set(x, "limitUnusedSnapshotsInWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUnusedSnapshotsInWarningUndefined: Self = StObject.set(x, "limitUnusedSnapshotsInWarning", js.undefined)
+      inline def setLimitUnusedSnapshotsInWarningUndefined: Self = StObject.set(x, "limitUnusedSnapshotsInWarning", js.undefined)
       
-      @scala.inline
-      def setPathResolver(value: (/* basePath */ String, /* suiteName */ String) => String): Self = StObject.set(x, "pathResolver", js.Any.fromFunction2(value))
+      inline def setPathResolver(value: (/* basePath */ String, /* suiteName */ String) => String): Self = StObject.set(x, "pathResolver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPathResolverUndefined: Self = StObject.set(x, "pathResolver", js.undefined)
+      inline def setPathResolverUndefined: Self = StObject.set(x, "pathResolver", js.undefined)
       
-      @scala.inline
-      def setPrune(value: Boolean): Self = StObject.set(x, "prune", value.asInstanceOf[js.Any])
+      inline def setPrune(value: Boolean): Self = StObject.set(x, "prune", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
+      inline def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -198,20 +171,16 @@ object mod {
   }
   object SnapshotSerializer {
     
-    @scala.inline
-    def apply(deserialize: String => Name, serialize: (String, SnapshotSuite) => String): SnapshotSerializer = {
+    inline def apply(deserialize: String => Name, serialize: (String, SnapshotSuite) => String): SnapshotSerializer = {
       val __obj = js.Dynamic.literal(deserialize = js.Any.fromFunction1(deserialize), serialize = js.Any.fromFunction2(serialize))
       __obj.asInstanceOf[SnapshotSerializer]
     }
     
-    @scala.inline
-    implicit class SnapshotSerializerMutableBuilder[Self <: SnapshotSerializer] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotSerializer](x: Self) {
       
-      @scala.inline
-      def setDeserialize(value: String => Name): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: String => Name): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerialize(value: (String, SnapshotSuite) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
+      inline def setSerialize(value: (String, SnapshotSuite) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
     }
   }
   
@@ -233,32 +202,24 @@ object mod {
   }
   object SnapshotSuite {
     
-    @scala.inline
-    def apply(children: StringDictionary[SnapshotSuite], snapshots: StringDictionary[js.Array[Snapshot]]): SnapshotSuite = {
+    inline def apply(children: StringDictionary[SnapshotSuite], snapshots: StringDictionary[js.Array[Snapshot]]): SnapshotSuite = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], snapshots = snapshots.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapshotSuite]
     }
     
-    @scala.inline
-    implicit class SnapshotSuiteMutableBuilder[Self <: SnapshotSuite] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotSuite](x: Self) {
       
-      @scala.inline
-      def setChildren(value: StringDictionary[SnapshotSuite]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: StringDictionary[SnapshotSuite]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+      inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
       
-      @scala.inline
-      def setSnapshots(value: StringDictionary[js.Array[Snapshot]]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
+      inline def setSnapshots(value: StringDictionary[js.Array[Snapshot]]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
+      inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
     }
   }
 }

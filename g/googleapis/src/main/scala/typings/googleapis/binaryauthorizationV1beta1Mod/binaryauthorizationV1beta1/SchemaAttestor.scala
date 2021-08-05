@@ -34,37 +34,27 @@ trait SchemaAttestor extends StObject {
 }
 object SchemaAttestor {
   
-  @scala.inline
-  def apply(): SchemaAttestor = {
+  inline def apply(): SchemaAttestor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttestor]
   }
   
-  @scala.inline
-  implicit class SchemaAttestorMutableBuilder[Self <: SchemaAttestor] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttestor](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUserOwnedDrydockNote(value: SchemaUserOwnedDrydockNote): Self = StObject.set(x, "userOwnedDrydockNote", value.asInstanceOf[js.Any])
+    inline def setUserOwnedDrydockNote(value: SchemaUserOwnedDrydockNote): Self = StObject.set(x, "userOwnedDrydockNote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserOwnedDrydockNoteUndefined: Self = StObject.set(x, "userOwnedDrydockNote", js.undefined)
+    inline def setUserOwnedDrydockNoteUndefined: Self = StObject.set(x, "userOwnedDrydockNote", js.undefined)
   }
 }

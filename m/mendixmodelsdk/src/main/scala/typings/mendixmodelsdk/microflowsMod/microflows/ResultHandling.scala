@@ -67,8 +67,7 @@ object ResultHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
+  inline def create(model: IModel): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -76,8 +75,7 @@ object ResultHandling {
     * of the parent ImportXmlAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInImportXmlActionUnderResultHandling(container: ImportXmlAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportXmlActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
+  inline def createInImportXmlActionUnderResultHandling(container: ImportXmlAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportXmlActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -88,8 +86,7 @@ object ResultHandling {
     *  6.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderResultHandling(container: RestCallAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
+  inline def createInRestCallActionUnderResultHandling(container: RestCallAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -97,20 +94,17 @@ object ResultHandling {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderResultHandling(container: WebServiceCallAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
+  inline def createInWebServiceCallActionUnderResultHandling(container: WebServiceCallAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

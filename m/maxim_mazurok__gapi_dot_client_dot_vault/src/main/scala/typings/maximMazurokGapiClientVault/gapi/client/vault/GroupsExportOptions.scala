@@ -11,19 +11,15 @@ trait GroupsExportOptions extends StObject {
 }
 object GroupsExportOptions {
   
-  @scala.inline
-  def apply(): GroupsExportOptions = {
+  inline def apply(): GroupsExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupsExportOptions]
   }
   
-  @scala.inline
-  implicit class GroupsExportOptionsMutableBuilder[Self <: GroupsExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GroupsExportOptions](x: Self) {
     
-    @scala.inline
-    def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
+    inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
+    inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
   }
 }

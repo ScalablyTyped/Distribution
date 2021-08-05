@@ -10,14 +10,10 @@ object indentStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indentString(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def indentString(string: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def indentString(string: String, count: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def indentString(string: String, count: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def indentString(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def indentString(string: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def indentString(string: String, count: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def indentString(string: String, count: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -35,26 +31,20 @@ object indentStringMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIncludeEmptyLines(value: Boolean): Self = StObject.set(x, "includeEmptyLines", value.asInstanceOf[js.Any])
+      inline def setIncludeEmptyLines(value: Boolean): Self = StObject.set(x, "includeEmptyLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeEmptyLinesUndefined: Self = StObject.set(x, "includeEmptyLines", js.undefined)
+      inline def setIncludeEmptyLinesUndefined: Self = StObject.set(x, "includeEmptyLines", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     }
   }
 }

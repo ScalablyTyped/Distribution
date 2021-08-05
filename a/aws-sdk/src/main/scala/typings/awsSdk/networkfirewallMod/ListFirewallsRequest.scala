@@ -23,34 +23,25 @@ trait ListFirewallsRequest extends StObject {
 }
 object ListFirewallsRequest {
   
-  @scala.inline
-  def apply(): ListFirewallsRequest = {
+  inline def apply(): ListFirewallsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFirewallsRequest]
   }
   
-  @scala.inline
-  implicit class ListFirewallsRequestMutableBuilder[Self <: ListFirewallsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFirewallsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVpcIds(value: VpcIds): Self = StObject.set(x, "VpcIds", value.asInstanceOf[js.Any])
+    inline def setVpcIds(value: VpcIds): Self = StObject.set(x, "VpcIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdsUndefined: Self = StObject.set(x, "VpcIds", js.undefined)
+    inline def setVpcIdsUndefined: Self = StObject.set(x, "VpcIds", js.undefined)
     
-    @scala.inline
-    def setVpcIdsVarargs(value: VpcId*): Self = StObject.set(x, "VpcIds", js.Array(value :_*))
+    inline def setVpcIdsVarargs(value: VpcId*): Self = StObject.set(x, "VpcIds", js.Array(value :_*))
   }
 }

@@ -11,19 +11,15 @@ trait CourseRosterChangesInfo extends StObject {
 }
 object CourseRosterChangesInfo {
   
-  @scala.inline
-  def apply(): CourseRosterChangesInfo = {
+  inline def apply(): CourseRosterChangesInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CourseRosterChangesInfo]
   }
   
-  @scala.inline
-  implicit class CourseRosterChangesInfoMutableBuilder[Self <: CourseRosterChangesInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CourseRosterChangesInfo](x: Self) {
     
-    @scala.inline
-    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+    inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+    inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
   }
 }

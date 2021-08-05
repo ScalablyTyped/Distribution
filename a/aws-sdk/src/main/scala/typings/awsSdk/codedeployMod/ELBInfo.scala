@@ -13,19 +13,15 @@ trait ELBInfo extends StObject {
 }
 object ELBInfo {
   
-  @scala.inline
-  def apply(): ELBInfo = {
+  inline def apply(): ELBInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ELBInfo]
   }
   
-  @scala.inline
-  implicit class ELBInfoMutableBuilder[Self <: ELBInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ELBInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: ELBName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ELBName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

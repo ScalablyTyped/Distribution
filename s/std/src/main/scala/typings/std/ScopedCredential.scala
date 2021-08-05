@@ -12,20 +12,16 @@ trait ScopedCredential extends StObject {
 }
 object ScopedCredential {
   
-  @scala.inline
-  def apply(id: ArrayBuffer, `type`: ScopedCredentialType): ScopedCredential = {
+  inline def apply(id: ArrayBuffer, `type`: ScopedCredentialType): ScopedCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredential]
   }
   
-  @scala.inline
-  implicit class ScopedCredentialMutableBuilder[Self <: ScopedCredential] (val x: Self) extends AnyVal {
+  extension [Self <: ScopedCredential](x: Self) {
     
-    @scala.inline
-    def setId(value: ArrayBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ArrayBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ScopedCredentialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ScopedCredentialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

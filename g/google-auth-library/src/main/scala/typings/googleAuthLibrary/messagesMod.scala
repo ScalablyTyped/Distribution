@@ -32,8 +32,7 @@ object messagesMod {
     /* "Warning" */ val WARNING: typings.googleAuthLibrary.messagesMod.WarningTypes.WARNING & String = js.native
   }
   
-  @scala.inline
-  def warn(warning: Warning): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warn(warning: Warning): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Warning extends StObject {
     
@@ -47,30 +46,23 @@ object messagesMod {
   }
   object Warning {
     
-    @scala.inline
-    def apply(code: String, message: String, `type`: WarningTypes): Warning = {
+    inline def apply(code: String, message: String, `type`: WarningTypes): Warning = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Warning]
     }
     
-    @scala.inline
-    implicit class WarningMutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
+    extension [Self <: Warning](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: WarningTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: WarningTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarned(value: Boolean): Self = StObject.set(x, "warned", value.asInstanceOf[js.Any])
+      inline def setWarned(value: Boolean): Self = StObject.set(x, "warned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnedUndefined: Self = StObject.set(x, "warned", js.undefined)
+      inline def setWarnedUndefined: Self = StObject.set(x, "warned", js.undefined)
     }
   }
 }

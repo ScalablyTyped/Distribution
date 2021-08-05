@@ -11,7 +11,6 @@ object playerNamesMod {
     /**
       * test to see if a specific player GUID is a special system account (e.g. __JARVIS__, __ADA__) that shouldn't be listed as a player
       */
-    @scala.inline
-    def isSystemPlayer(name: String): Boolean = js.Dynamic.global.applyDynamic("isSystemPlayer")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSystemPlayer(name: String): Boolean = js.Dynamic.global.applyDynamic("isSystemPlayer")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

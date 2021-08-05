@@ -29,15 +29,15 @@ object columnHeaderCellMod {
     @JSName("context")
     var context_ColumnHeaderCell: IColumnInteractionBarContextTypes = js.native
     
-    var handlePopoverClosing: js.Any = js.native
+    /* private */ var handlePopoverClosing: js.Any = js.native
     
-    var handlePopoverOpened: js.Any = js.native
+    /* private */ var handlePopoverOpened: js.Any = js.native
     
-    var maybeRenderContent: js.Any = js.native
+    /* private */ var maybeRenderContent: js.Any = js.native
     
-    var maybeRenderDropdownMenu: js.Any = js.native
+    /* private */ var maybeRenderDropdownMenu: js.Any = js.native
     
-    var renderName: js.Any = js.native
+    /* private */ var renderName: js.Any = js.native
     
     @JSName("state")
     var state_ColumnHeaderCell: IsActive = js.native
@@ -52,14 +52,12 @@ object columnHeaderCellMod {
     @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell.contextTypes")
     @js.native
     def contextTypes: ValidationMapIColumnInter = js.native
-    @scala.inline
-    def contextTypes_=(x: ValidationMapIColumnInter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: ValidationMapIColumnInter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell.defaultProps")
     @js.native
     def defaultProps: IColumnHeaderCellProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IColumnHeaderCellProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IColumnHeaderCellProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /**
       * This method determines if a `MouseEvent` was triggered on a target that
@@ -68,12 +66,10 @@ object columnHeaderCellMod {
       * cells without worry of selection or resize operations from capturing
       * their mouse events.
       */
-    @scala.inline
-    def isHeaderMouseTarget(target: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderMouseTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isHeaderMouseTarget(target: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderMouseTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @scala.inline
-  def HorizontalCellDivider(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HorizontalCellDivider")().asInstanceOf[Element]
+  inline def HorizontalCellDivider(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HorizontalCellDivider")().asInstanceOf[Element]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsTable.columnHeaderCellMod.IColumnNameProps because var conflicts: name. Inlined nameRenderer */ trait IColumnHeaderCellProps
@@ -113,38 +109,28 @@ object columnHeaderCellMod {
   }
   object IColumnHeaderCellProps {
     
-    @scala.inline
-    def apply(): IColumnHeaderCellProps = {
+    inline def apply(): IColumnHeaderCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColumnHeaderCellProps]
     }
     
-    @scala.inline
-    implicit class IColumnHeaderCellPropsMutableBuilder[Self <: IColumnHeaderCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnHeaderCellProps](x: Self) {
       
-      @scala.inline
-      def setEnableColumnReordering(value: Boolean): Self = StObject.set(x, "enableColumnReordering", value.asInstanceOf[js.Any])
+      inline def setEnableColumnReordering(value: Boolean): Self = StObject.set(x, "enableColumnReordering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableColumnReorderingUndefined: Self = StObject.set(x, "enableColumnReordering", js.undefined)
+      inline def setEnableColumnReorderingUndefined: Self = StObject.set(x, "enableColumnReordering", js.undefined)
       
-      @scala.inline
-      def setIsColumnSelected(value: Boolean): Self = StObject.set(x, "isColumnSelected", value.asInstanceOf[js.Any])
+      inline def setIsColumnSelected(value: Boolean): Self = StObject.set(x, "isColumnSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsColumnSelectedUndefined: Self = StObject.set(x, "isColumnSelected", js.undefined)
+      inline def setIsColumnSelectedUndefined: Self = StObject.set(x, "isColumnSelected", js.undefined)
       
-      @scala.inline
-      def setMenuIcon(value: IconName | Element): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+      inline def setMenuIcon(value: IconName | Element): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
+      inline def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
       
-      @scala.inline
-      def setNameRenderer(value: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement): Self = StObject.set(x, "nameRenderer", js.Any.fromFunction2(value))
+      inline def setNameRenderer(value: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement): Self = StObject.set(x, "nameRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameRendererUndefined: Self = StObject.set(x, "nameRenderer", js.undefined)
+      inline def setNameRendererUndefined: Self = StObject.set(x, "nameRenderer", js.undefined)
     }
   }
   
@@ -154,20 +140,16 @@ object columnHeaderCellMod {
   }
   object IColumnHeaderCellState {
     
-    @scala.inline
-    def apply(): IColumnHeaderCellState = {
+    inline def apply(): IColumnHeaderCellState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColumnHeaderCellState]
     }
     
-    @scala.inline
-    implicit class IColumnHeaderCellStateMutableBuilder[Self <: IColumnHeaderCellState] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnHeaderCellState](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     }
   }
   
@@ -195,26 +177,20 @@ object columnHeaderCellMod {
   }
   object IColumnNameProps {
     
-    @scala.inline
-    def apply(): IColumnNameProps = {
+    inline def apply(): IColumnNameProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColumnNameProps]
     }
     
-    @scala.inline
-    implicit class IColumnNamePropsMutableBuilder[Self <: IColumnNameProps] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnNameProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameRenderer(value: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement): Self = StObject.set(x, "nameRenderer", js.Any.fromFunction2(value))
+      inline def setNameRenderer(value: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement): Self = StObject.set(x, "nameRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameRendererUndefined: Self = StObject.set(x, "nameRenderer", js.undefined)
+      inline def setNameRendererUndefined: Self = StObject.set(x, "nameRenderer", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

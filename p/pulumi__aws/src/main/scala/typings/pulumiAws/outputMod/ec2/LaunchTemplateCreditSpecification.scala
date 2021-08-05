@@ -13,19 +13,15 @@ trait LaunchTemplateCreditSpecification extends StObject {
 }
 object LaunchTemplateCreditSpecification {
   
-  @scala.inline
-  def apply(): LaunchTemplateCreditSpecification = {
+  inline def apply(): LaunchTemplateCreditSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateCreditSpecification]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateCreditSpecificationMutableBuilder[Self <: LaunchTemplateCreditSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateCreditSpecification](x: Self) {
     
-    @scala.inline
-    def setCpuCredits(value: String): Self = StObject.set(x, "cpuCredits", value.asInstanceOf[js.Any])
+    inline def setCpuCredits(value: String): Self = StObject.set(x, "cpuCredits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCreditsUndefined: Self = StObject.set(x, "cpuCredits", js.undefined)
+    inline def setCpuCreditsUndefined: Self = StObject.set(x, "cpuCredits", js.undefined)
   }
 }

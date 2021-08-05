@@ -14,25 +14,19 @@ trait Layer extends StObject {
 }
 object Layer {
   
-  @scala.inline
-  def apply(): Layer = {
+  inline def apply(): Layer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setDirective(value: String): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
+    inline def setDirective(value: String): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
+    inline def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
   }
 }

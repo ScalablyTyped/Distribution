@@ -14,19 +14,15 @@ trait IPrimitiveChangedEventArgs extends StObject {
 }
 object IPrimitiveChangedEventArgs {
   
-  @scala.inline
-  def apply(name: String, sender: IPrimitive): IPrimitiveChangedEventArgs = {
+  inline def apply(name: String, sender: IPrimitive): IPrimitiveChangedEventArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrimitiveChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class IPrimitiveChangedEventArgsMutableBuilder[Self <: IPrimitiveChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IPrimitiveChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: IPrimitive): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: IPrimitive): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

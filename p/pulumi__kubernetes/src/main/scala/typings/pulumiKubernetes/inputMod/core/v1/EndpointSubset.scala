@@ -34,40 +34,29 @@ trait EndpointSubset extends StObject {
 }
 object EndpointSubset {
   
-  @scala.inline
-  def apply(): EndpointSubset = {
+  inline def apply(): EndpointSubset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointSubset]
   }
   
-  @scala.inline
-  implicit class EndpointSubsetMutableBuilder[Self <: EndpointSubset] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointSubset](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: Input[js.Array[Input[EndpointAddress]]]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: Input[js.Array[Input[EndpointAddress]]]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setAddressesVarargs(value: Input[EndpointAddress]*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Input[EndpointAddress]*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setNotReadyAddresses(value: Input[js.Array[Input[EndpointAddress]]]): Self = StObject.set(x, "notReadyAddresses", value.asInstanceOf[js.Any])
+    inline def setNotReadyAddresses(value: Input[js.Array[Input[EndpointAddress]]]): Self = StObject.set(x, "notReadyAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotReadyAddressesUndefined: Self = StObject.set(x, "notReadyAddresses", js.undefined)
+    inline def setNotReadyAddressesUndefined: Self = StObject.set(x, "notReadyAddresses", js.undefined)
     
-    @scala.inline
-    def setNotReadyAddressesVarargs(value: Input[EndpointAddress]*): Self = StObject.set(x, "notReadyAddresses", js.Array(value :_*))
+    inline def setNotReadyAddressesVarargs(value: Input[EndpointAddress]*): Self = StObject.set(x, "notReadyAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setPorts(value: Input[js.Array[Input[EndpointPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: Input[js.Array[Input[EndpointPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: Input[EndpointPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Input[EndpointPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

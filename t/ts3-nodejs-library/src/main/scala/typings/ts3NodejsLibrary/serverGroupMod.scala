@@ -122,14 +122,11 @@ object serverGroupMod {
     val ^ : js.Any = js.native
     
     /** retrieves the client id from a string or teamspeak client */
-    @scala.inline
-    def getId[T /* <: GroupType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getId[T /* <: GroupType */](group: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(group.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: GroupType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: GroupType */](group: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(group.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleIds(groups: MultiGroupType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(groups.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleIds(groups: MultiGroupType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(groups.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     type GroupType = String | TeamSpeakServerGroup
     

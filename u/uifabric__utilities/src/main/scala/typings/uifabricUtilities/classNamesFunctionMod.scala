@@ -13,8 +13,7 @@ object classNamesFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](): js.Function2[
+  inline def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](): js.Function2[
     /* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
     /* styleProps */ js.UndefOr[TStyleProps], 
     IProcessedStyleSet[TStyleSet]
@@ -23,8 +22,7 @@ object classNamesFunctionMod {
     /* styleProps */ js.UndefOr[TStyleProps], 
     IProcessedStyleSet[TStyleSet]
   ]]
-  @scala.inline
-  def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](options: IClassNamesFunctionOptions): js.Function2[
+  inline def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](options: IClassNamesFunctionOptions): js.Function2[
     /* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
     /* styleProps */ js.UndefOr[TStyleProps], 
     IProcessedStyleSet[TStyleSet]
@@ -53,32 +51,24 @@ object classNamesFunctionMod {
   }
   object IClassNamesFunctionOptions {
     
-    @scala.inline
-    def apply(): IClassNamesFunctionOptions = {
+    inline def apply(): IClassNamesFunctionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IClassNamesFunctionOptions]
     }
     
-    @scala.inline
-    implicit class IClassNamesFunctionOptionsMutableBuilder[Self <: IClassNamesFunctionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IClassNamesFunctionOptions](x: Self) {
       
-      @scala.inline
-      def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+      inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+      inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
-      @scala.inline
-      def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
+      inline def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
+      inline def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
       
-      @scala.inline
-      def setUseStaticStyles(value: Boolean): Self = StObject.set(x, "useStaticStyles", value.asInstanceOf[js.Any])
+      inline def setUseStaticStyles(value: Boolean): Self = StObject.set(x, "useStaticStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseStaticStylesUndefined: Self = StObject.set(x, "useStaticStyles", js.undefined)
+      inline def setUseStaticStylesUndefined: Self = StObject.set(x, "useStaticStyles", js.undefined)
     }
   }
 }

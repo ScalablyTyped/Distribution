@@ -18,25 +18,19 @@ trait ResultRow extends StObject {
 }
 object ResultRow {
   
-  @scala.inline
-  def apply(GroupedBys: ListOfResultRowValue, Values: ListOfResultRowValue): ResultRow = {
+  inline def apply(GroupedBys: ListOfResultRowValue, Values: ListOfResultRowValue): ResultRow = {
     val __obj = js.Dynamic.literal(GroupedBys = GroupedBys.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultRow]
   }
   
-  @scala.inline
-  implicit class ResultRowMutableBuilder[Self <: ResultRow] (val x: Self) extends AnyVal {
+  extension [Self <: ResultRow](x: Self) {
     
-    @scala.inline
-    def setGroupedBys(value: ListOfResultRowValue): Self = StObject.set(x, "GroupedBys", value.asInstanceOf[js.Any])
+    inline def setGroupedBys(value: ListOfResultRowValue): Self = StObject.set(x, "GroupedBys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedBysVarargs(value: ResultRowValue*): Self = StObject.set(x, "GroupedBys", js.Array(value :_*))
+    inline def setGroupedBysVarargs(value: ResultRowValue*): Self = StObject.set(x, "GroupedBys", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: ListOfResultRowValue): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfResultRowValue): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: ResultRowValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ResultRowValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

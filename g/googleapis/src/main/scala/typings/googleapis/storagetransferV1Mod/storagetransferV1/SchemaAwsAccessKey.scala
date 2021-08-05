@@ -23,25 +23,19 @@ trait SchemaAwsAccessKey extends StObject {
 }
 object SchemaAwsAccessKey {
   
-  @scala.inline
-  def apply(): SchemaAwsAccessKey = {
+  inline def apply(): SchemaAwsAccessKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAwsAccessKey]
   }
   
-  @scala.inline
-  implicit class SchemaAwsAccessKeyMutableBuilder[Self <: SchemaAwsAccessKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAwsAccessKey](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+    inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
     
-    @scala.inline
-    def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+    inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+    inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
   }
 }

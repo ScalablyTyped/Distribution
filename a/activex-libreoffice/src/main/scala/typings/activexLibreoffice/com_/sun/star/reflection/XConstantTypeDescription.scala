@@ -28,8 +28,7 @@ trait XConstantTypeDescription
 }
 object XConstantTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConstantValue: js.Any,
     Name: String,
     TypeClass: TypeClass,
@@ -44,13 +43,10 @@ object XConstantTypeDescription {
     __obj.asInstanceOf[XConstantTypeDescription]
   }
   
-  @scala.inline
-  implicit class XConstantTypeDescriptionMutableBuilder[Self <: XConstantTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XConstantTypeDescription](x: Self) {
     
-    @scala.inline
-    def setConstantValue(value: js.Any): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
+    inline def setConstantValue(value: js.Any): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConstantValue(value: () => js.Any): Self = StObject.set(x, "getConstantValue", js.Any.fromFunction0(value))
+    inline def setGetConstantValue(value: () => js.Any): Self = StObject.set(x, "getConstantValue", js.Any.fromFunction0(value))
   }
 }

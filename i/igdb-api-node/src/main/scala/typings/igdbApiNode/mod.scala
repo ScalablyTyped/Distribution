@@ -12,23 +12,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(clientId: String): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(clientId: String, appAccessToken: String): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(clientId: String, appAccessToken: String, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(clientId: String, appAccessToken: Unit, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(clientId: Unit, appAccessToken: String): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(clientId: Unit, appAccessToken: String, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
-  @scala.inline
-  def default(clientId: Unit, appAccessToken: Unit, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  inline def default(): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Apicalypse]
+  inline def default(clientId: String): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
+  inline def default(clientId: String, appAccessToken: String): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  inline def default(clientId: String, appAccessToken: String, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  inline def default(clientId: String, appAccessToken: Unit, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  inline def default(clientId: Unit, appAccessToken: String): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  inline def default(clientId: Unit, appAccessToken: String, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  inline def default(clientId: Unit, appAccessToken: Unit, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
   
-  @scala.inline
-  def getTagNumber(category: Double, id: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTagNumber")(category.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getTagNumber(category: Double, id: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTagNumber")(category.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

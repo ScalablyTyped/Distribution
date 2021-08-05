@@ -19,23 +19,19 @@ trait GoogleCloudRedisV1LocationMetadata extends StObject {
 }
 object GoogleCloudRedisV1LocationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudRedisV1LocationMetadata = {
+  inline def apply(): GoogleCloudRedisV1LocationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRedisV1LocationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRedisV1LocationMetadataMutableBuilder[Self <: GoogleCloudRedisV1LocationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRedisV1LocationMetadata](x: Self) {
     
-    @scala.inline
-    def setAvailableZones(
+    inline def setAvailableZones(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
+    inline def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
   }
 }

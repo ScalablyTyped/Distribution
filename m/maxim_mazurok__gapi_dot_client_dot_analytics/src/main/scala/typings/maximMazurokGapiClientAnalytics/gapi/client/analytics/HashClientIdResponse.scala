@@ -16,37 +16,27 @@ trait HashClientIdResponse extends StObject {
 }
 object HashClientIdResponse {
   
-  @scala.inline
-  def apply(): HashClientIdResponse = {
+  inline def apply(): HashClientIdResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HashClientIdResponse]
   }
   
-  @scala.inline
-  implicit class HashClientIdResponseMutableBuilder[Self <: HashClientIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: HashClientIdResponse](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setHashedClientId(value: String): Self = StObject.set(x, "hashedClientId", value.asInstanceOf[js.Any])
+    inline def setHashedClientId(value: String): Self = StObject.set(x, "hashedClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashedClientIdUndefined: Self = StObject.set(x, "hashedClientId", js.undefined)
+    inline def setHashedClientIdUndefined: Self = StObject.set(x, "hashedClientId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
+    inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

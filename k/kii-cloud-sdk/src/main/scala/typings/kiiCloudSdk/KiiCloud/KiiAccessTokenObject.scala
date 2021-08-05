@@ -13,19 +13,15 @@ trait KiiAccessTokenObject extends StObject {
 }
 object KiiAccessTokenObject {
   
-  @scala.inline
-  def apply(access_token: String, expires_at: Date): KiiAccessTokenObject = {
+  inline def apply(access_token: String, expires_at: Date): KiiAccessTokenObject = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[KiiAccessTokenObject]
   }
   
-  @scala.inline
-  implicit class KiiAccessTokenObjectMutableBuilder[Self <: KiiAccessTokenObject] (val x: Self) extends AnyVal {
+  extension [Self <: KiiAccessTokenObject](x: Self) {
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpires_at(value: Date): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+    inline def setExpires_at(value: Date): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
   }
 }

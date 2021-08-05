@@ -23,25 +23,19 @@ trait ModifyDefaultCreditSpecificationRequest extends StObject {
 }
 object ModifyDefaultCreditSpecificationRequest {
   
-  @scala.inline
-  def apply(CpuCredits: String, InstanceFamily: UnlimitedSupportedInstanceFamily): ModifyDefaultCreditSpecificationRequest = {
+  inline def apply(CpuCredits: String, InstanceFamily: UnlimitedSupportedInstanceFamily): ModifyDefaultCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(CpuCredits = CpuCredits.asInstanceOf[js.Any], InstanceFamily = InstanceFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDefaultCreditSpecificationRequest]
   }
   
-  @scala.inline
-  implicit class ModifyDefaultCreditSpecificationRequestMutableBuilder[Self <: ModifyDefaultCreditSpecificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyDefaultCreditSpecificationRequest](x: Self) {
     
-    @scala.inline
-    def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
+    inline def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
+    inline def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
   }
 }

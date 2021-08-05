@@ -28,8 +28,7 @@ trait IdealDetails extends StObject {
 }
 object IdealDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bank: abn_amro | asn_bank | bunq | handelsbanken | ing | knab | moneyou | rabobank | regiobank | sns_bank | triodos_bank | van_lanschot,
     bic: String,
     iban_last4: String,
@@ -39,21 +38,16 @@ object IdealDetails {
     __obj.asInstanceOf[IdealDetails]
   }
   
-  @scala.inline
-  implicit class IdealDetailsMutableBuilder[Self <: IdealDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IdealDetails](x: Self) {
     
-    @scala.inline
-    def setBank(
+    inline def setBank(
       value: abn_amro | asn_bank | bunq | handelsbanken | ing | knab | moneyou | rabobank | regiobank | sns_bank | triodos_bank | van_lanschot
     ): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBic(value: String): Self = StObject.set(x, "bic", value.asInstanceOf[js.Any])
+    inline def setBic(value: String): Self = StObject.set(x, "bic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIban_last4(value: String): Self = StObject.set(x, "iban_last4", value.asInstanceOf[js.Any])
+    inline def setIban_last4(value: String): Self = StObject.set(x, "iban_last4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
+    inline def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
   }
 }

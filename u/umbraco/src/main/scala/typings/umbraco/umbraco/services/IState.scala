@@ -53,22 +53,17 @@ trait IState extends StObject {
 }
 object IState {
   
-  @scala.inline
-  def apply(getCurrent: () => js.Any, reset: () => Unit, set: js.Object => Unit): IState = {
+  inline def apply(getCurrent: () => js.Any, reset: () => Unit, set: js.Object => Unit): IState = {
     val __obj = js.Dynamic.literal(getCurrent = js.Any.fromFunction0(getCurrent), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[IState]
   }
   
-  @scala.inline
-  implicit class IStateMutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
+  extension [Self <: IState](x: Self) {
     
-    @scala.inline
-    def setGetCurrent(value: () => js.Any): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
+    inline def setGetCurrent(value: () => js.Any): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: js.Object => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Object => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

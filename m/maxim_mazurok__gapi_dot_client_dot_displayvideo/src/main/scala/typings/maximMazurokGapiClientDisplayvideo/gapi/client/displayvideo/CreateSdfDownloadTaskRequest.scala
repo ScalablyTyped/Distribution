@@ -32,49 +32,35 @@ trait CreateSdfDownloadTaskRequest extends StObject {
 }
 object CreateSdfDownloadTaskRequest {
   
-  @scala.inline
-  def apply(): CreateSdfDownloadTaskRequest = {
+  inline def apply(): CreateSdfDownloadTaskRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSdfDownloadTaskRequest]
   }
   
-  @scala.inline
-  implicit class CreateSdfDownloadTaskRequestMutableBuilder[Self <: CreateSdfDownloadTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSdfDownloadTaskRequest](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setIdFilter(value: IdFilter): Self = StObject.set(x, "idFilter", value.asInstanceOf[js.Any])
+    inline def setIdFilter(value: IdFilter): Self = StObject.set(x, "idFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdFilterUndefined: Self = StObject.set(x, "idFilter", js.undefined)
+    inline def setIdFilterUndefined: Self = StObject.set(x, "idFilter", js.undefined)
     
-    @scala.inline
-    def setInventorySourceFilter(value: InventorySourceFilter): Self = StObject.set(x, "inventorySourceFilter", value.asInstanceOf[js.Any])
+    inline def setInventorySourceFilter(value: InventorySourceFilter): Self = StObject.set(x, "inventorySourceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceFilterUndefined: Self = StObject.set(x, "inventorySourceFilter", js.undefined)
+    inline def setInventorySourceFilterUndefined: Self = StObject.set(x, "inventorySourceFilter", js.undefined)
     
-    @scala.inline
-    def setParentEntityFilter(value: ParentEntityFilter): Self = StObject.set(x, "parentEntityFilter", value.asInstanceOf[js.Any])
+    inline def setParentEntityFilter(value: ParentEntityFilter): Self = StObject.set(x, "parentEntityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentEntityFilterUndefined: Self = StObject.set(x, "parentEntityFilter", js.undefined)
+    inline def setParentEntityFilterUndefined: Self = StObject.set(x, "parentEntityFilter", js.undefined)
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -14,16 +14,13 @@ trait DataProviderContext extends StObject {
 }
 object DataProviderContext {
   
-  @scala.inline
-  def apply(properties: StringDictionary[js.Any]): DataProviderContext = {
+  inline def apply(properties: StringDictionary[js.Any]): DataProviderContext = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProviderContext]
   }
   
-  @scala.inline
-  implicit class DataProviderContextMutableBuilder[Self <: DataProviderContext] (val x: Self) extends AnyVal {
+  extension [Self <: DataProviderContext](x: Self) {
     
-    @scala.inline
-    def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

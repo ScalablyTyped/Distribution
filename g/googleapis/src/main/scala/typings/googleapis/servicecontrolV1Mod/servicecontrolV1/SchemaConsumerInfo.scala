@@ -28,31 +28,23 @@ trait SchemaConsumerInfo extends StObject {
 }
 object SchemaConsumerInfo {
   
-  @scala.inline
-  def apply(): SchemaConsumerInfo = {
+  inline def apply(): SchemaConsumerInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConsumerInfo]
   }
   
-  @scala.inline
-  implicit class SchemaConsumerInfoMutableBuilder[Self <: SchemaConsumerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConsumerInfo](x: Self) {
     
-    @scala.inline
-    def setConsumerNumber(value: String): Self = StObject.set(x, "consumerNumber", value.asInstanceOf[js.Any])
+    inline def setConsumerNumber(value: String): Self = StObject.set(x, "consumerNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNumberUndefined: Self = StObject.set(x, "consumerNumber", js.undefined)
+    inline def setConsumerNumberUndefined: Self = StObject.set(x, "consumerNumber", js.undefined)
     
-    @scala.inline
-    def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
+    inline def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
+    inline def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

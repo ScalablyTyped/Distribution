@@ -10,19 +10,15 @@ trait InfoOptions extends StObject {
 }
 object InfoOptions {
   
-  @scala.inline
-  def apply(): InfoOptions = {
+  inline def apply(): InfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InfoOptions]
   }
   
-  @scala.inline
-  implicit class InfoOptionsMutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InfoOptions](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

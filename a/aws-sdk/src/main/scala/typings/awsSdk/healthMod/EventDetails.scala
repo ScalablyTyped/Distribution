@@ -23,31 +23,23 @@ trait EventDetails extends StObject {
 }
 object EventDetails {
   
-  @scala.inline
-  def apply(): EventDetails = {
+  inline def apply(): EventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventDetails]
   }
   
-  @scala.inline
-  implicit class EventDetailsMutableBuilder[Self <: EventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: EventDetails](x: Self) {
     
-    @scala.inline
-    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDescription(value: EventDescription_): Self = StObject.set(x, "eventDescription", value.asInstanceOf[js.Any])
+    inline def setEventDescription(value: EventDescription_): Self = StObject.set(x, "eventDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDescriptionUndefined: Self = StObject.set(x, "eventDescription", js.undefined)
+    inline def setEventDescriptionUndefined: Self = StObject.set(x, "eventDescription", js.undefined)
     
-    @scala.inline
-    def setEventMetadata(value: eventMetadata): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
+    inline def setEventMetadata(value: eventMetadata): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventMetadataUndefined: Self = StObject.set(x, "eventMetadata", js.undefined)
+    inline def setEventMetadataUndefined: Self = StObject.set(x, "eventMetadata", js.undefined)
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
   }
 }

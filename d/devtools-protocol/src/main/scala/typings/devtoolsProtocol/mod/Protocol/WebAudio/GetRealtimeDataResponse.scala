@@ -10,16 +10,13 @@ trait GetRealtimeDataResponse extends StObject {
 }
 object GetRealtimeDataResponse {
   
-  @scala.inline
-  def apply(realtimeData: ContextRealtimeData): GetRealtimeDataResponse = {
+  inline def apply(realtimeData: ContextRealtimeData): GetRealtimeDataResponse = {
     val __obj = js.Dynamic.literal(realtimeData = realtimeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRealtimeDataResponse]
   }
   
-  @scala.inline
-  implicit class GetRealtimeDataResponseMutableBuilder[Self <: GetRealtimeDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRealtimeDataResponse](x: Self) {
     
-    @scala.inline
-    def setRealtimeData(value: ContextRealtimeData): Self = StObject.set(x, "realtimeData", value.asInstanceOf[js.Any])
+    inline def setRealtimeData(value: ContextRealtimeData): Self = StObject.set(x, "realtimeData", value.asInstanceOf[js.Any])
   }
 }

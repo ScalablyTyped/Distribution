@@ -18,22 +18,17 @@ trait DeleteSubnetRequest extends StObject {
 }
 object DeleteSubnetRequest {
   
-  @scala.inline
-  def apply(SubnetId: SubnetId): DeleteSubnetRequest = {
+  inline def apply(SubnetId: SubnetId): DeleteSubnetRequest = {
     val __obj = js.Dynamic.literal(SubnetId = SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSubnetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSubnetRequestMutableBuilder[Self <: DeleteSubnetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSubnetRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait MediaQueryListEventInit
 }
 object MediaQueryListEventInit {
   
-  @scala.inline
-  def apply(): MediaQueryListEventInit = {
+  inline def apply(): MediaQueryListEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaQueryListEventInit]
   }
   
-  @scala.inline
-  implicit class MediaQueryListEventInitMutableBuilder[Self <: MediaQueryListEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: MediaQueryListEventInit](x: Self) {
     
-    @scala.inline
-    def setMatches(value: scala.Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: scala.Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    @scala.inline
-    def setMedia(value: java.lang.String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: java.lang.String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

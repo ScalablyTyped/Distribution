@@ -16,37 +16,27 @@ trait Indeterminate extends StObject {
 }
 object Indeterminate {
   
-  @scala.inline
-  def apply(): Indeterminate = {
+  inline def apply(): Indeterminate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Indeterminate]
   }
   
-  @scala.inline
-  implicit class IndeterminateMutableBuilder[Self <: Indeterminate] (val x: Self) extends AnyVal {
+  extension [Self <: Indeterminate](x: Self) {
     
-    @scala.inline
-    def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+    inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setSecondaryValue(value: Double): Self = StObject.set(x, "secondaryValue", value.asInstanceOf[js.Any])
+    inline def setSecondaryValue(value: Double): Self = StObject.set(x, "secondaryValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryValueUndefined: Self = StObject.set(x, "secondaryValue", js.undefined)
+    inline def setSecondaryValueUndefined: Self = StObject.set(x, "secondaryValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

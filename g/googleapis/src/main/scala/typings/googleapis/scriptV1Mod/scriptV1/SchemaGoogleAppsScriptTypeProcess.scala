@@ -49,55 +49,39 @@ trait SchemaGoogleAppsScriptTypeProcess extends StObject {
 }
 object SchemaGoogleAppsScriptTypeProcess {
   
-  @scala.inline
-  def apply(): SchemaGoogleAppsScriptTypeProcess = {
+  inline def apply(): SchemaGoogleAppsScriptTypeProcess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeProcess]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleAppsScriptTypeProcessMutableBuilder[Self <: SchemaGoogleAppsScriptTypeProcess] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleAppsScriptTypeProcess](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
-    @scala.inline
-    def setProcessStatus(value: String): Self = StObject.set(x, "processStatus", value.asInstanceOf[js.Any])
+    inline def setProcessStatus(value: String): Self = StObject.set(x, "processStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessStatusUndefined: Self = StObject.set(x, "processStatus", js.undefined)
+    inline def setProcessStatusUndefined: Self = StObject.set(x, "processStatus", js.undefined)
     
-    @scala.inline
-    def setProcessType(value: String): Self = StObject.set(x, "processType", value.asInstanceOf[js.Any])
+    inline def setProcessType(value: String): Self = StObject.set(x, "processType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessTypeUndefined: Self = StObject.set(x, "processType", js.undefined)
+    inline def setProcessTypeUndefined: Self = StObject.set(x, "processType", js.undefined)
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
+    inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setUserAccessLevel(value: String): Self = StObject.set(x, "userAccessLevel", value.asInstanceOf[js.Any])
+    inline def setUserAccessLevel(value: String): Self = StObject.set(x, "userAccessLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAccessLevelUndefined: Self = StObject.set(x, "userAccessLevel", js.undefined)
+    inline def setUserAccessLevelUndefined: Self = StObject.set(x, "userAccessLevel", js.undefined)
   }
 }

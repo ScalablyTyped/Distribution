@@ -48,8 +48,7 @@ object ngTableFilterConfigMod {
     @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfig.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfigProvider")
@@ -65,9 +64,9 @@ object ngTableFilterConfigMod {
     @JSName("$get")
     def $get_MNgTableFilterConfigProvider(): NgTableFilterConfig = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
-    var defaultConfig: js.Any = js.native
+    /* private */ var defaultConfig: js.Any = js.native
     
     /**
       * Reset back to factory defaults the config values that `NgTableFilterConfig` service will use
@@ -89,7 +88,6 @@ object ngTableFilterConfigMod {
     @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfigProvider.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
 }

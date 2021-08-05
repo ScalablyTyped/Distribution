@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(file: String): Balancer = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[Balancer]
-  @scala.inline
-  def apply(file: String, options: BalancerOptions): Balancer = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Balancer]
+  inline def apply(file: String): Balancer = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[Balancer]
+  inline def apply(file: String, options: BalancerOptions): Balancer = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Balancer]
   
   @JSImport("recluster", JSImport.Namespace)
   @js.native
@@ -62,65 +60,46 @@ object mod {
   }
   object BalancerOptions {
     
-    @scala.inline
-    def apply(): BalancerOptions = {
+    inline def apply(): BalancerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BalancerOptions]
     }
     
-    @scala.inline
-    implicit class BalancerOptionsMutableBuilder[Self <: BalancerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BalancerOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
+      inline def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
+      inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
       
-      @scala.inline
-      def setLog(value: LogOptions): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: LogOptions): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setReadyWhen(value: String): Self = StObject.set(x, "readyWhen", value.asInstanceOf[js.Any])
+      inline def setReadyWhen(value: String): Self = StObject.set(x, "readyWhen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadyWhenUndefined: Self = StObject.set(x, "readyWhen", js.undefined)
+      inline def setReadyWhenUndefined: Self = StObject.set(x, "readyWhen", js.undefined)
       
-      @scala.inline
-      def setRespawn(value: Double): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
+      inline def setRespawn(value: Double): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespawnUndefined: Self = StObject.set(x, "respawn", js.undefined)
+      inline def setRespawnUndefined: Self = StObject.set(x, "respawn", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+      inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     }
   }
   
@@ -130,20 +109,16 @@ object mod {
   }
   object LogOptions {
     
-    @scala.inline
-    def apply(): LogOptions = {
+    inline def apply(): LogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogOptions]
     }
     
-    @scala.inline
-    implicit class LogOptionsMutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LogOptions](x: Self) {
       
-      @scala.inline
-      def setRespawns(value: Boolean): Self = StObject.set(x, "respawns", value.asInstanceOf[js.Any])
+      inline def setRespawns(value: Boolean): Self = StObject.set(x, "respawns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespawnsUndefined: Self = StObject.set(x, "respawns", js.undefined)
+      inline def setRespawnsUndefined: Self = StObject.set(x, "respawns", js.undefined)
     }
   }
   

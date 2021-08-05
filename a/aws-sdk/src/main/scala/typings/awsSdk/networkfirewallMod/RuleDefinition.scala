@@ -18,22 +18,17 @@ trait RuleDefinition extends StObject {
 }
 object RuleDefinition {
   
-  @scala.inline
-  def apply(Actions: StatelessActions, MatchAttributes: MatchAttributes): RuleDefinition = {
+  inline def apply(Actions: StatelessActions, MatchAttributes: MatchAttributes): RuleDefinition = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], MatchAttributes = MatchAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleDefinition]
   }
   
-  @scala.inline
-  implicit class RuleDefinitionMutableBuilder[Self <: RuleDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: RuleDefinition](x: Self) {
     
-    @scala.inline
-    def setActions(value: StatelessActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: StatelessActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setMatchAttributes(value: MatchAttributes): Self = StObject.set(x, "MatchAttributes", value.asInstanceOf[js.Any])
+    inline def setMatchAttributes(value: MatchAttributes): Self = StObject.set(x, "MatchAttributes", value.asInstanceOf[js.Any])
   }
 }

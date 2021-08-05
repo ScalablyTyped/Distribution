@@ -18,8 +18,7 @@ trait ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint extends
 }
 object ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint,
     request: AppsListSubscriptionsForAuthenticatedUserStubbedRequestOptions,
     response: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint {
     __obj.asInstanceOf[ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpointMutableBuilder[Self <: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsListSubscriptionsForAuthenticatedUserStubbedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsListSubscriptionsForAuthenticatedUserStubbedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

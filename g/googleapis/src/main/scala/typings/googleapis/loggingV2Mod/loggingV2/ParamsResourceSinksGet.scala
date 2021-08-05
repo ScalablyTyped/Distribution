@@ -29,25 +29,19 @@ trait ParamsResourceSinksGet
 }
 object ParamsResourceSinksGet {
   
-  @scala.inline
-  def apply(): ParamsResourceSinksGet = {
+  inline def apply(): ParamsResourceSinksGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSinksGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSinksGetMutableBuilder[Self <: ParamsResourceSinksGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSinksGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
+    inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkNameUndefined: Self = StObject.set(x, "sinkName", js.undefined)
+    inline def setSinkNameUndefined: Self = StObject.set(x, "sinkName", js.undefined)
   }
 }

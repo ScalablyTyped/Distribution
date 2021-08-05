@@ -18,28 +18,21 @@ trait AvailableCapacity extends StObject {
 }
 object AvailableCapacity {
   
-  @scala.inline
-  def apply(): AvailableCapacity = {
+  inline def apply(): AvailableCapacity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvailableCapacity]
   }
   
-  @scala.inline
-  implicit class AvailableCapacityMutableBuilder[Self <: AvailableCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: AvailableCapacity](x: Self) {
     
-    @scala.inline
-    def setAvailableInstanceCapacity(value: AvailableInstanceCapacityList): Self = StObject.set(x, "AvailableInstanceCapacity", value.asInstanceOf[js.Any])
+    inline def setAvailableInstanceCapacity(value: AvailableInstanceCapacityList): Self = StObject.set(x, "AvailableInstanceCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableInstanceCapacityUndefined: Self = StObject.set(x, "AvailableInstanceCapacity", js.undefined)
+    inline def setAvailableInstanceCapacityUndefined: Self = StObject.set(x, "AvailableInstanceCapacity", js.undefined)
     
-    @scala.inline
-    def setAvailableInstanceCapacityVarargs(value: InstanceCapacity*): Self = StObject.set(x, "AvailableInstanceCapacity", js.Array(value :_*))
+    inline def setAvailableInstanceCapacityVarargs(value: InstanceCapacity*): Self = StObject.set(x, "AvailableInstanceCapacity", js.Array(value :_*))
     
-    @scala.inline
-    def setAvailableVCpus(value: Integer): Self = StObject.set(x, "AvailableVCpus", value.asInstanceOf[js.Any])
+    inline def setAvailableVCpus(value: Integer): Self = StObject.set(x, "AvailableVCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableVCpusUndefined: Self = StObject.set(x, "AvailableVCpus", js.undefined)
+    inline def setAvailableVCpusUndefined: Self = StObject.set(x, "AvailableVCpus", js.undefined)
   }
 }

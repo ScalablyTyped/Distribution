@@ -154,93 +154,69 @@ trait GeoJSONDelegate extends StObject {
 }
 object GeoJSONDelegate {
   
-  @scala.inline
-  def apply(): GeoJSONDelegate = {
+  inline def apply(): GeoJSONDelegate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoJSONDelegate]
   }
   
-  @scala.inline
-  implicit class GeoJSONDelegateMutableBuilder[Self <: GeoJSONDelegate] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONDelegate](x: Self) {
     
-    @scala.inline
-    def setGeoJSONDidComplete(value: (/* result */ ItemCollection, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidComplete", js.Any.fromFunction2(value))
+    inline def setGeoJSONDidComplete(value: (/* result */ ItemCollection, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidComplete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGeoJSONDidCompleteUndefined: Self = StObject.set(x, "geoJSONDidComplete", js.undefined)
+    inline def setGeoJSONDidCompleteUndefined: Self = StObject.set(x, "geoJSONDidComplete", js.undefined)
     
-    @scala.inline
-    def setGeoJSONDidError(value: (/* error */ Error, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidError", js.Any.fromFunction2(value))
+    inline def setGeoJSONDidError(value: (/* error */ Error, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGeoJSONDidErrorUndefined: Self = StObject.set(x, "geoJSONDidError", js.undefined)
+    inline def setGeoJSONDidErrorUndefined: Self = StObject.set(x, "geoJSONDidError", js.undefined)
     
-    @scala.inline
-    def setItemForFeature(
+    inline def setItemForFeature(
       value: (/* item */ Annotation | Overlay | ItemCollection | Null, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
     ): Self = StObject.set(x, "itemForFeature", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForFeatureCollection(
+    inline def setItemForFeatureCollection(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
     ): Self = StObject.set(x, "itemForFeatureCollection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForFeatureCollectionUndefined: Self = StObject.set(x, "itemForFeatureCollection", js.undefined)
+    inline def setItemForFeatureCollectionUndefined: Self = StObject.set(x, "itemForFeatureCollection", js.undefined)
     
-    @scala.inline
-    def setItemForFeatureUndefined: Self = StObject.set(x, "itemForFeature", js.undefined)
+    inline def setItemForFeatureUndefined: Self = StObject.set(x, "itemForFeature", js.undefined)
     
-    @scala.inline
-    def setItemForLineString(
+    inline def setItemForLineString(
       value: (/* overlay */ PolylineOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
     ): Self = StObject.set(x, "itemForLineString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForLineStringUndefined: Self = StObject.set(x, "itemForLineString", js.undefined)
+    inline def setItemForLineStringUndefined: Self = StObject.set(x, "itemForLineString", js.undefined)
     
-    @scala.inline
-    def setItemForMultiLineString(
+    inline def setItemForMultiLineString(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
     ): Self = StObject.set(x, "itemForMultiLineString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForMultiLineStringUndefined: Self = StObject.set(x, "itemForMultiLineString", js.undefined)
+    inline def setItemForMultiLineStringUndefined: Self = StObject.set(x, "itemForMultiLineString", js.undefined)
     
-    @scala.inline
-    def setItemForMultiPoint(
+    inline def setItemForMultiPoint(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
     ): Self = StObject.set(x, "itemForMultiPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForMultiPointUndefined: Self = StObject.set(x, "itemForMultiPoint", js.undefined)
+    inline def setItemForMultiPointUndefined: Self = StObject.set(x, "itemForMultiPoint", js.undefined)
     
-    @scala.inline
-    def setItemForMultiPolygon(
+    inline def setItemForMultiPolygon(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
     ): Self = StObject.set(x, "itemForMultiPolygon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForMultiPolygonUndefined: Self = StObject.set(x, "itemForMultiPolygon", js.undefined)
+    inline def setItemForMultiPolygonUndefined: Self = StObject.set(x, "itemForMultiPolygon", js.undefined)
     
-    @scala.inline
-    def setItemForPoint(value: (/* coordinate */ Coordinate, /* geoJSON */ js.Object) => js.Array[Annotation | Overlay]): Self = StObject.set(x, "itemForPoint", js.Any.fromFunction2(value))
+    inline def setItemForPoint(value: (/* coordinate */ Coordinate, /* geoJSON */ js.Object) => js.Array[Annotation | Overlay]): Self = StObject.set(x, "itemForPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForPointUndefined: Self = StObject.set(x, "itemForPoint", js.undefined)
+    inline def setItemForPointUndefined: Self = StObject.set(x, "itemForPoint", js.undefined)
     
-    @scala.inline
-    def setItemForPolygon(
+    inline def setItemForPolygon(
       value: (/* overlay */ PolygonOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
     ): Self = StObject.set(x, "itemForPolygon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemForPolygonUndefined: Self = StObject.set(x, "itemForPolygon", js.undefined)
+    inline def setItemForPolygonUndefined: Self = StObject.set(x, "itemForPolygon", js.undefined)
     
-    @scala.inline
-    def setStyleForOverlay(value: (/* overlay */ Overlay, /* geoJSON */ js.Object) => Style): Self = StObject.set(x, "styleForOverlay", js.Any.fromFunction2(value))
+    inline def setStyleForOverlay(value: (/* overlay */ Overlay, /* geoJSON */ js.Object) => Style): Self = StObject.set(x, "styleForOverlay", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStyleForOverlayUndefined: Self = StObject.set(x, "styleForOverlay", js.undefined)
+    inline def setStyleForOverlayUndefined: Self = StObject.set(x, "styleForOverlay", js.undefined)
   }
 }

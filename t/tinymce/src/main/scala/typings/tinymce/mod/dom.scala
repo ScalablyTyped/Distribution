@@ -411,8 +411,7 @@ object dom {
   }
   object RangeUtils {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compareRanges: (Range, Range) => Boolean,
       getCaretRangeFromPoint: (Double, Double, Document) => Range
     ): RangeUtils = {
@@ -420,14 +419,11 @@ object dom {
       __obj.asInstanceOf[RangeUtils]
     }
     
-    @scala.inline
-    implicit class RangeUtilsMutableBuilder[Self <: RangeUtils] (val x: Self) extends AnyVal {
+    extension [Self <: RangeUtils](x: Self) {
       
-      @scala.inline
-      def setCompareRanges(value: (Range, Range) => Boolean): Self = StObject.set(x, "compareRanges", js.Any.fromFunction2(value))
+      inline def setCompareRanges(value: (Range, Range) => Boolean): Self = StObject.set(x, "compareRanges", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetCaretRangeFromPoint(value: (Double, Double, Document) => Range): Self = StObject.set(x, "getCaretRangeFromPoint", js.Any.fromFunction3(value))
+      inline def setGetCaretRangeFromPoint(value: (Double, Double, Document) => Range): Self = StObject.set(x, "getCaretRangeFromPoint", js.Any.fromFunction3(value))
     }
   }
   
@@ -491,8 +487,7 @@ object dom {
   }
   object TreeWalker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: () => typings.tinymce.mod.html.Node,
       next: () => typings.tinymce.mod.html.Node,
       prev: () => typings.tinymce.mod.html.Node
@@ -501,17 +496,13 @@ object dom {
       __obj.asInstanceOf[typings.tinymce.mod.dom.TreeWalker]
     }
     
-    @scala.inline
-    implicit class TreeWalkerMutableBuilder[Self <: typings.tinymce.mod.dom.TreeWalker] (val x: Self) extends AnyVal {
+    extension [Self <: typings.tinymce.mod.dom.TreeWalker](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
+      inline def setCurrent(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrev(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+      inline def setPrev(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     }
   }
 }

@@ -17,25 +17,19 @@ trait ZipInfo extends StObject {
 }
 object ZipInfo {
   
-  @scala.inline
-  def apply(): ZipInfo = {
+  inline def apply(): ZipInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZipInfo]
   }
   
-  @scala.inline
-  implicit class ZipInfoMutableBuilder[Self <: ZipInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ZipInfo](x: Self) {
     
-    @scala.inline
-    def setFilesCount(value: Double): Self = StObject.set(x, "filesCount", value.asInstanceOf[js.Any])
+    inline def setFilesCount(value: Double): Self = StObject.set(x, "filesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesCountUndefined: Self = StObject.set(x, "filesCount", js.undefined)
+    inline def setFilesCountUndefined: Self = StObject.set(x, "filesCount", js.undefined)
     
-    @scala.inline
-    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
   }
 }

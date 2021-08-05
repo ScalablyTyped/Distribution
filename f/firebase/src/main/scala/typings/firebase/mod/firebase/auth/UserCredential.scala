@@ -23,43 +23,31 @@ trait UserCredential extends StObject {
 }
 object UserCredential {
   
-  @scala.inline
-  def apply(): UserCredential = {
+  inline def apply(): UserCredential = {
     val __obj = js.Dynamic.literal(credential = null, user = null)
     __obj.asInstanceOf[UserCredential]
   }
   
-  @scala.inline
-  implicit class UserCredentialMutableBuilder[Self <: UserCredential] (val x: Self) extends AnyVal {
+  extension [Self <: UserCredential](x: Self) {
     
-    @scala.inline
-    def setAdditionalUserInfo(value: AdditionalUserInfo): Self = StObject.set(x, "additionalUserInfo", value.asInstanceOf[js.Any])
+    inline def setAdditionalUserInfo(value: AdditionalUserInfo): Self = StObject.set(x, "additionalUserInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalUserInfoNull: Self = StObject.set(x, "additionalUserInfo", null)
+    inline def setAdditionalUserInfoNull: Self = StObject.set(x, "additionalUserInfo", null)
     
-    @scala.inline
-    def setAdditionalUserInfoUndefined: Self = StObject.set(x, "additionalUserInfo", js.undefined)
+    inline def setAdditionalUserInfoUndefined: Self = StObject.set(x, "additionalUserInfo", js.undefined)
     
-    @scala.inline
-    def setCredential(value: AuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: AuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialNull: Self = StObject.set(x, "credential", null)
+    inline def setCredentialNull: Self = StObject.set(x, "credential", null)
     
-    @scala.inline
-    def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeNull: Self = StObject.set(x, "operationType", null)
+    inline def setOperationTypeNull: Self = StObject.set(x, "operationType", null)
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNull: Self = StObject.set(x, "user", null)
+    inline def setUserNull: Self = StObject.set(x, "user", null)
   }
 }

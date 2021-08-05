@@ -26,8 +26,7 @@ trait SpaceMemberPropstoPlainOb extends StObject {
 }
 object SpaceMemberPropstoPlainOb {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     admin: Boolean,
     roles: js.Array[MetaLinkProps],
     sys: MetaSysProps,
@@ -37,22 +36,16 @@ object SpaceMemberPropstoPlainOb {
     __obj.asInstanceOf[SpaceMemberPropstoPlainOb]
   }
   
-  @scala.inline
-  implicit class SpaceMemberPropstoPlainObMutableBuilder[Self <: SpaceMemberPropstoPlainOb] (val x: Self) extends AnyVal {
+  extension [Self <: SpaceMemberPropstoPlainOb](x: Self) {
     
-    @scala.inline
-    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
-    @scala.inline
-    def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+    inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPlainObject(value: () => SpaceMemberProps): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction0(value))
+    inline def setToPlainObject(value: () => SpaceMemberProps): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction0(value))
   }
 }

@@ -13,16 +13,13 @@ trait DeleteTopicRuleRequest extends StObject {
 }
 object DeleteTopicRuleRequest {
   
-  @scala.inline
-  def apply(ruleName: RuleName): DeleteTopicRuleRequest = {
+  inline def apply(ruleName: RuleName): DeleteTopicRuleRequest = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTopicRuleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTopicRuleRequestMutableBuilder[Self <: DeleteTopicRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTopicRuleRequest](x: Self) {
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
   }
 }

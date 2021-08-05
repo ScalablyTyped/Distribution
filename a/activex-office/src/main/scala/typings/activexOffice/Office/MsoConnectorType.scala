@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoConnectorType extends StObject
 object MsoConnectorType {
   
-  @scala.inline
-  def msoConnectorCurve: `3` = 3.asInstanceOf[`3`]
+  inline def msoConnectorCurve: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoConnectorElbow: `2` = 2.asInstanceOf[`2`]
+  inline def msoConnectorElbow: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoConnectorStraight: `1` = 1.asInstanceOf[`1`]
+  inline def msoConnectorStraight: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoConnectorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoConnectorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
 }

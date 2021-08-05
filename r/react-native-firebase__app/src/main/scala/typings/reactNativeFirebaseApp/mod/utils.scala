@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @react-native-firebase/app.@react-native-firebase/app.ReactNativeFirebase.FirebaseModuleWithStatics<@react-native-firebase/app.@react-native-firebase/app.Utils.Module, @react-native-firebase/app.@react-native-firebase/app.Utils.Statics> */
 object utils {
   
-  @scala.inline
-  def apply(): Module = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Module]
+  inline def apply(): Module = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Module]
   
   @JSImport("@react-native-firebase/app", "utils")
   @js.native
@@ -19,8 +18,7 @@ object utils {
   @JSImport("@react-native-firebase/app", "utils.FilePath")
   @js.native
   def FilePath: typings.reactNativeFirebaseApp.mod.Utils_.FilePath = js.native
-  @scala.inline
-  def FilePath_=(x: FilePath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FilePath")(x.asInstanceOf[js.Any])
+  inline def FilePath_=(x: FilePath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FilePath")(x.asInstanceOf[js.Any])
   
   /**
     * This React Native Firebase module version.

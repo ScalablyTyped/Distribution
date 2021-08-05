@@ -9,6 +9,5 @@ object global {
   @JSGlobal("Messenger")
   @js.native
   def Messenger: IMessenger = js.native
-  @scala.inline
-  def Messenger_=(x: IMessenger): Unit = js.Dynamic.global.updateDynamic("Messenger")(x.asInstanceOf[js.Any])
+  inline def Messenger_=(x: IMessenger): Unit = js.Dynamic.global.updateDynamic("Messenger")(x.asInstanceOf[js.Any])
 }

@@ -13,22 +13,17 @@ trait DomainDnsUnavailableRecord
 }
 object DomainDnsUnavailableRecord {
   
-  @scala.inline
-  def apply(): DomainDnsUnavailableRecord = {
+  inline def apply(): DomainDnsUnavailableRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDnsUnavailableRecord]
   }
   
-  @scala.inline
-  implicit class DomainDnsUnavailableRecordMutableBuilder[Self <: DomainDnsUnavailableRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDnsUnavailableRecord](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

@@ -13,14 +13,9 @@ object useIntersectionObserverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TElement /* <: Element */](): js.Array[IntersectionObserverEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[IntersectionObserverEntry]]
-  @scala.inline
-  def default[TElement /* <: Element */](element: TElement): js.Array[IntersectionObserverEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[IntersectionObserverEntry]]
-  @scala.inline
-  def default[TElement /* <: Element */](element: TElement, hasThresholdRootRootMargin: IntersectionObserverInit): js.Array[IntersectionObserverEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasThresholdRootRootMargin.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntersectionObserverEntry]]
-  @scala.inline
-  def default[TElement /* <: Element */](element: Null, hasThresholdRootRootMargin: IntersectionObserverInit): js.Array[IntersectionObserverEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasThresholdRootRootMargin.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntersectionObserverEntry]]
-  @scala.inline
-  def default[TElement /* <: Element */](element: Unit, hasThresholdRootRootMargin: IntersectionObserverInit): js.Array[IntersectionObserverEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasThresholdRootRootMargin.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntersectionObserverEntry]]
+  inline def default[TElement /* <: Element */](): js.Array[IntersectionObserverEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[IntersectionObserverEntry]]
+  inline def default[TElement /* <: Element */](element: TElement): js.Array[IntersectionObserverEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[IntersectionObserverEntry]]
+  inline def default[TElement /* <: Element */](element: TElement, hasThresholdRootRootMargin: IntersectionObserverInit): js.Array[IntersectionObserverEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasThresholdRootRootMargin.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntersectionObserverEntry]]
+  inline def default[TElement /* <: Element */](element: Null, hasThresholdRootRootMargin: IntersectionObserverInit): js.Array[IntersectionObserverEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasThresholdRootRootMargin.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntersectionObserverEntry]]
+  inline def default[TElement /* <: Element */](element: Unit, hasThresholdRootRootMargin: IntersectionObserverInit): js.Array[IntersectionObserverEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasThresholdRootRootMargin.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntersectionObserverEntry]]
 }

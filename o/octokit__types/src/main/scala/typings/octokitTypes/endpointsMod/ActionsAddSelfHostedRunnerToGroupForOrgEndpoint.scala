@@ -21,23 +21,18 @@ trait ActionsAddSelfHostedRunnerToGroupForOrgEndpoint extends StObject {
 }
 object ActionsAddSelfHostedRunnerToGroupForOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, runner_group_id: Double, runner_id: Double): ActionsAddSelfHostedRunnerToGroupForOrgEndpoint = {
+  inline def apply(org_ : String, runner_group_id: Double, runner_id: Double): ActionsAddSelfHostedRunnerToGroupForOrgEndpoint = {
     val __obj = js.Dynamic.literal(runner_group_id = runner_group_id.asInstanceOf[js.Any], runner_id = runner_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsAddSelfHostedRunnerToGroupForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsAddSelfHostedRunnerToGroupForOrgEndpointMutableBuilder[Self <: ActionsAddSelfHostedRunnerToGroupForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsAddSelfHostedRunnerToGroupForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
+    inline def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
   }
 }

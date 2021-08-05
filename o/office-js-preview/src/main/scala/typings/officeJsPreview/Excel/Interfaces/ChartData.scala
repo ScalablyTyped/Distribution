@@ -206,154 +206,105 @@ trait ChartData extends StObject {
 }
 object ChartData {
   
-  @scala.inline
-  def apply(): ChartData = {
+  inline def apply(): ChartData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartData]
   }
   
-  @scala.inline
-  implicit class ChartDataMutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartData](x: Self) {
     
-    @scala.inline
-    def setAxes(value: ChartAxesData): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: ChartAxesData): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    @scala.inline
-    def setCategoryLabelLevel(value: Double): Self = StObject.set(x, "categoryLabelLevel", value.asInstanceOf[js.Any])
+    inline def setCategoryLabelLevel(value: Double): Self = StObject.set(x, "categoryLabelLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryLabelLevelUndefined: Self = StObject.set(x, "categoryLabelLevel", js.undefined)
+    inline def setCategoryLabelLevelUndefined: Self = StObject.set(x, "categoryLabelLevel", js.undefined)
     
-    @scala.inline
-    def setChartType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
+    inline def setChartType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
+    inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     
-    @scala.inline
-    def setDataLabels(value: ChartDataLabelsData): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    inline def setDataLabels(value: ChartDataLabelsData): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    @scala.inline
-    def setDisplayBlanksAs(value: ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted): Self = StObject.set(x, "displayBlanksAs", value.asInstanceOf[js.Any])
+    inline def setDisplayBlanksAs(value: ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted): Self = StObject.set(x, "displayBlanksAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayBlanksAsUndefined: Self = StObject.set(x, "displayBlanksAs", js.undefined)
+    inline def setDisplayBlanksAsUndefined: Self = StObject.set(x, "displayBlanksAs", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartAreaFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartAreaFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setLegend(value: ChartLegendData): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: ChartLegendData): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPivotOptions(value: ChartPivotOptionsData): Self = StObject.set(x, "pivotOptions", value.asInstanceOf[js.Any])
+    inline def setPivotOptions(value: ChartPivotOptionsData): Self = StObject.set(x, "pivotOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotOptionsUndefined: Self = StObject.set(x, "pivotOptions", js.undefined)
+    inline def setPivotOptionsUndefined: Self = StObject.set(x, "pivotOptions", js.undefined)
     
-    @scala.inline
-    def setPlotArea(value: ChartPlotAreaData): Self = StObject.set(x, "plotArea", value.asInstanceOf[js.Any])
+    inline def setPlotArea(value: ChartPlotAreaData): Self = StObject.set(x, "plotArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlotAreaUndefined: Self = StObject.set(x, "plotArea", js.undefined)
+    inline def setPlotAreaUndefined: Self = StObject.set(x, "plotArea", js.undefined)
     
-    @scala.inline
-    def setPlotBy(value: ChartPlotBy | Rows | Columns): Self = StObject.set(x, "plotBy", value.asInstanceOf[js.Any])
+    inline def setPlotBy(value: ChartPlotBy | Rows | Columns): Self = StObject.set(x, "plotBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlotByUndefined: Self = StObject.set(x, "plotBy", js.undefined)
+    inline def setPlotByUndefined: Self = StObject.set(x, "plotBy", js.undefined)
     
-    @scala.inline
-    def setPlotVisibleOnly(value: Boolean): Self = StObject.set(x, "plotVisibleOnly", value.asInstanceOf[js.Any])
+    inline def setPlotVisibleOnly(value: Boolean): Self = StObject.set(x, "plotVisibleOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlotVisibleOnlyUndefined: Self = StObject.set(x, "plotVisibleOnly", js.undefined)
+    inline def setPlotVisibleOnlyUndefined: Self = StObject.set(x, "plotVisibleOnly", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Array[ChartSeriesData]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[ChartSeriesData]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesNameLevel(value: Double): Self = StObject.set(x, "seriesNameLevel", value.asInstanceOf[js.Any])
+    inline def setSeriesNameLevel(value: Double): Self = StObject.set(x, "seriesNameLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesNameLevelUndefined: Self = StObject.set(x, "seriesNameLevel", js.undefined)
+    inline def setSeriesNameLevelUndefined: Self = StObject.set(x, "seriesNameLevel", js.undefined)
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: ChartSeriesData*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: ChartSeriesData*): Self = StObject.set(x, "series", js.Array(value :_*))
     
-    @scala.inline
-    def setShowAllFieldButtons(value: Boolean): Self = StObject.set(x, "showAllFieldButtons", value.asInstanceOf[js.Any])
+    inline def setShowAllFieldButtons(value: Boolean): Self = StObject.set(x, "showAllFieldButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAllFieldButtonsUndefined: Self = StObject.set(x, "showAllFieldButtons", js.undefined)
+    inline def setShowAllFieldButtonsUndefined: Self = StObject.set(x, "showAllFieldButtons", js.undefined)
     
-    @scala.inline
-    def setShowDataLabelsOverMaximum(value: Boolean): Self = StObject.set(x, "showDataLabelsOverMaximum", value.asInstanceOf[js.Any])
+    inline def setShowDataLabelsOverMaximum(value: Boolean): Self = StObject.set(x, "showDataLabelsOverMaximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDataLabelsOverMaximumUndefined: Self = StObject.set(x, "showDataLabelsOverMaximum", js.undefined)
+    inline def setShowDataLabelsOverMaximumUndefined: Self = StObject.set(x, "showDataLabelsOverMaximum", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Double): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Double): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTitle(value: ChartTitleData): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ChartTitleData): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

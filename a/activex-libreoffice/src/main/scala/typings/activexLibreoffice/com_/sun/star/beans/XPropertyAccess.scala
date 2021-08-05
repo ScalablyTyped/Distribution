@@ -35,8 +35,7 @@ trait XPropertyAccess
 }
 object XPropertyAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertyValues: SafeArray[PropertyValue],
     acquire: () => Unit,
     getPropertyValues: () => SafeArray[PropertyValue],
@@ -48,16 +47,12 @@ object XPropertyAccess {
     __obj.asInstanceOf[XPropertyAccess]
   }
   
-  @scala.inline
-  implicit class XPropertyAccessMutableBuilder[Self <: XPropertyAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyAccess](x: Self) {
     
-    @scala.inline
-    def setGetPropertyValues(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction0(value))
+    inline def setGetPropertyValues(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPropertyValues(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PropertyValues", value.asInstanceOf[js.Any])
+    inline def setPropertyValues(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PropertyValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPropertyValues(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction1(value))
+    inline def setSetPropertyValues(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction1(value))
   }
 }

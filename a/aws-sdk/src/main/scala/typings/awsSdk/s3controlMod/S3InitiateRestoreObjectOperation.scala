@@ -18,25 +18,19 @@ trait S3InitiateRestoreObjectOperation extends StObject {
 }
 object S3InitiateRestoreObjectOperation {
   
-  @scala.inline
-  def apply(): S3InitiateRestoreObjectOperation = {
+  inline def apply(): S3InitiateRestoreObjectOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3InitiateRestoreObjectOperation]
   }
   
-  @scala.inline
-  implicit class S3InitiateRestoreObjectOperationMutableBuilder[Self <: S3InitiateRestoreObjectOperation] (val x: Self) extends AnyVal {
+  extension [Self <: S3InitiateRestoreObjectOperation](x: Self) {
     
-    @scala.inline
-    def setExpirationInDays(value: S3ExpirationInDays): Self = StObject.set(x, "ExpirationInDays", value.asInstanceOf[js.Any])
+    inline def setExpirationInDays(value: S3ExpirationInDays): Self = StObject.set(x, "ExpirationInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationInDaysUndefined: Self = StObject.set(x, "ExpirationInDays", js.undefined)
+    inline def setExpirationInDaysUndefined: Self = StObject.set(x, "ExpirationInDays", js.undefined)
     
-    @scala.inline
-    def setGlacierJobTier(value: S3GlacierJobTier): Self = StObject.set(x, "GlacierJobTier", value.asInstanceOf[js.Any])
+    inline def setGlacierJobTier(value: S3GlacierJobTier): Self = StObject.set(x, "GlacierJobTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlacierJobTierUndefined: Self = StObject.set(x, "GlacierJobTier", js.undefined)
+    inline def setGlacierJobTierUndefined: Self = StObject.set(x, "GlacierJobTier", js.undefined)
   }
 }

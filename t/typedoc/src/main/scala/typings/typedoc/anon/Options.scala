@@ -10,16 +10,13 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(options: typings.typedoc.optionsOptionsMod.Options): Options = {
+  inline def apply(options: typings.typedoc.optionsOptionsMod.Options): Options = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setOptions(value: typings.typedoc.optionsOptionsMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.typedoc.optionsOptionsMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

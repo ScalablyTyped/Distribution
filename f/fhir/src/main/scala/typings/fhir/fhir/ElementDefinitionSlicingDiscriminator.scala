@@ -33,32 +33,24 @@ trait ElementDefinitionSlicingDiscriminator
 }
 object ElementDefinitionSlicingDiscriminator {
   
-  @scala.inline
-  def apply(path: String, `type`: code): ElementDefinitionSlicingDiscriminator = {
+  inline def apply(path: String, `type`: code): ElementDefinitionSlicingDiscriminator = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionSlicingDiscriminator]
   }
   
-  @scala.inline
-  implicit class ElementDefinitionSlicingDiscriminatorMutableBuilder[Self <: ElementDefinitionSlicingDiscriminator] (val x: Self) extends AnyVal {
+  extension [Self <: ElementDefinitionSlicingDiscriminator](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
+    inline def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
+    inline def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

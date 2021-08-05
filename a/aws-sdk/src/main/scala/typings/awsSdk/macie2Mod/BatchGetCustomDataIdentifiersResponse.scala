@@ -18,31 +18,23 @@ trait BatchGetCustomDataIdentifiersResponse extends StObject {
 }
 object BatchGetCustomDataIdentifiersResponse {
   
-  @scala.inline
-  def apply(): BatchGetCustomDataIdentifiersResponse = {
+  inline def apply(): BatchGetCustomDataIdentifiersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetCustomDataIdentifiersResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetCustomDataIdentifiersResponseMutableBuilder[Self <: BatchGetCustomDataIdentifiersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCustomDataIdentifiersResponse](x: Self) {
     
-    @scala.inline
-    def setCustomDataIdentifiers(value: listOfBatchGetCustomDataIdentifierSummary): Self = StObject.set(x, "customDataIdentifiers", value.asInstanceOf[js.Any])
+    inline def setCustomDataIdentifiers(value: listOfBatchGetCustomDataIdentifierSummary): Self = StObject.set(x, "customDataIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataIdentifiersUndefined: Self = StObject.set(x, "customDataIdentifiers", js.undefined)
+    inline def setCustomDataIdentifiersUndefined: Self = StObject.set(x, "customDataIdentifiers", js.undefined)
     
-    @scala.inline
-    def setCustomDataIdentifiersVarargs(value: BatchGetCustomDataIdentifierSummary*): Self = StObject.set(x, "customDataIdentifiers", js.Array(value :_*))
+    inline def setCustomDataIdentifiersVarargs(value: BatchGetCustomDataIdentifierSummary*): Self = StObject.set(x, "customDataIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setNotFoundIdentifierIds(value: listOfString): Self = StObject.set(x, "notFoundIdentifierIds", value.asInstanceOf[js.Any])
+    inline def setNotFoundIdentifierIds(value: listOfString): Self = StObject.set(x, "notFoundIdentifierIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundIdentifierIdsUndefined: Self = StObject.set(x, "notFoundIdentifierIds", js.undefined)
+    inline def setNotFoundIdentifierIdsUndefined: Self = StObject.set(x, "notFoundIdentifierIds", js.undefined)
     
-    @scala.inline
-    def setNotFoundIdentifierIdsVarargs(value: string*): Self = StObject.set(x, "notFoundIdentifierIds", js.Array(value :_*))
+    inline def setNotFoundIdentifierIdsVarargs(value: string*): Self = StObject.set(x, "notFoundIdentifierIds", js.Array(value :_*))
   }
 }

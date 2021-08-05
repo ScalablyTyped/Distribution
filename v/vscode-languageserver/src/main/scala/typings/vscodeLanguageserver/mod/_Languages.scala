@@ -17,8 +17,7 @@ trait _Languages extends StObject {
 }
 object _Languages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachPartialResultProgress: (typings.vscodeLanguageserverProtocol.mod.ProgressType[js.Any], PartialResultParams) => js.UndefOr[ResultProgress[js.Any]],
     attachWorkDoneProgress: WorkDoneProgressParams => typings.vscodeLanguageserver.progressMod.WorkDoneProgress,
     connection: IConnection
@@ -27,18 +26,14 @@ object _Languages {
     __obj.asInstanceOf[_Languages]
   }
   
-  @scala.inline
-  implicit class _LanguagesMutableBuilder[Self <: _Languages] (val x: Self) extends AnyVal {
+  extension [Self <: _Languages](x: Self) {
     
-    @scala.inline
-    def setAttachPartialResultProgress(
+    inline def setAttachPartialResultProgress(
       value: (typings.vscodeLanguageserverProtocol.mod.ProgressType[js.Any], PartialResultParams) => js.UndefOr[ResultProgress[js.Any]]
     ): Self = StObject.set(x, "attachPartialResultProgress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAttachWorkDoneProgress(value: WorkDoneProgressParams => typings.vscodeLanguageserver.progressMod.WorkDoneProgress): Self = StObject.set(x, "attachWorkDoneProgress", js.Any.fromFunction1(value))
+    inline def setAttachWorkDoneProgress(value: WorkDoneProgressParams => typings.vscodeLanguageserver.progressMod.WorkDoneProgress): Self = StObject.set(x, "attachWorkDoneProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
   }
 }

@@ -15,7 +15,7 @@ object mediaStickerResponsesFeedMod {
     
     var itemName: String = js.native
     
-    var maxId: js.Any = js.native
+    /* private */ var maxId: js.Any = js.native
     
     var mediaId: String = js.native
     

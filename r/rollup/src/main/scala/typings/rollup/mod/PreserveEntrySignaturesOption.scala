@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PreserveEntrySignaturesOption extends StObject
 object PreserveEntrySignaturesOption {
   
-  @scala.inline
-  def `allow-extension`: typings.rollup.rollupStrings.`allow-extension` = "allow-extension".asInstanceOf[typings.rollup.rollupStrings.`allow-extension`]
+  inline def `allow-extension`: typings.rollup.rollupStrings.`allow-extension` = "allow-extension".asInstanceOf[typings.rollup.rollupStrings.`allow-extension`]
   
-  @scala.inline
-  def `exports-only`: typings.rollup.rollupStrings.`exports-only` = "exports-only".asInstanceOf[typings.rollup.rollupStrings.`exports-only`]
+  inline def `exports-only`: typings.rollup.rollupStrings.`exports-only` = "exports-only".asInstanceOf[typings.rollup.rollupStrings.`exports-only`]
   
-  @scala.inline
-  def `false`: typings.rollup.rollupBooleans.`false` = false.asInstanceOf[typings.rollup.rollupBooleans.`false`]
+  inline def `false`: typings.rollup.rollupBooleans.`false` = false.asInstanceOf[typings.rollup.rollupBooleans.`false`]
   
-  @scala.inline
-  def strict: typings.rollup.rollupStrings.strict = "strict".asInstanceOf[typings.rollup.rollupStrings.strict]
+  inline def strict: typings.rollup.rollupStrings.strict = "strict".asInstanceOf[typings.rollup.rollupStrings.strict]
 }

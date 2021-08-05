@@ -16,37 +16,27 @@ trait IHookerOptions extends StObject {
 }
 object IHookerOptions {
   
-  @scala.inline
-  def apply(): IHookerOptions = {
+  inline def apply(): IHookerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHookerOptions]
   }
   
-  @scala.inline
-  implicit class IHookerOptionsMutableBuilder[Self <: IHookerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IHookerOptions](x: Self) {
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
-    @scala.inline
-    def setPassName(value: Boolean): Self = StObject.set(x, "passName", value.asInstanceOf[js.Any])
+    inline def setPassName(value: Boolean): Self = StObject.set(x, "passName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassNameUndefined: Self = StObject.set(x, "passName", js.undefined)
+    inline def setPassNameUndefined: Self = StObject.set(x, "passName", js.undefined)
     
-    @scala.inline
-    def setPost(value: HookerPostHookFunction): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: HookerPostHookFunction): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setPre(value: HookerPreHookFunction): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: HookerPreHookFunction): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+    inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
   }
 }

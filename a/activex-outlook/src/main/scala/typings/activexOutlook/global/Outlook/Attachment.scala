@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Attachment")
 @js.native
-class Attachment protected ()
+/* private */ class Attachment ()
   extends StObject
      with typings.activexOutlook.Outlook.Attachment {
   
@@ -40,7 +40,7 @@ class Attachment protected ()
   /* CompleteClass */
   override val MAPIOBJECT: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Attachment_typekey")
   var OutlookDotAttachment_typekey: typings.activexOutlook.Outlook.Attachment = js.native
   

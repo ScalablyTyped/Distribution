@@ -18,19 +18,15 @@ trait IGenericMeasureListProperties
 }
 object IGenericMeasureListProperties {
   
-  @scala.inline
-  def apply(qInfo: IGenericMeassureListNxInfo, qMeasureListDef: IMeasureListDef): IGenericMeasureListProperties = {
+  inline def apply(qInfo: IGenericMeassureListNxInfo, qMeasureListDef: IMeasureListDef): IGenericMeasureListProperties = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeasureListDef = qMeasureListDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericMeasureListProperties]
   }
   
-  @scala.inline
-  implicit class IGenericMeasureListPropertiesMutableBuilder[Self <: IGenericMeasureListProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericMeasureListProperties](x: Self) {
     
-    @scala.inline
-    def setQInfo(value: IGenericMeassureListNxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: IGenericMeassureListNxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeasureListDef(value: IMeasureListDef): Self = StObject.set(x, "qMeasureListDef", value.asInstanceOf[js.Any])
+    inline def setQMeasureListDef(value: IMeasureListDef): Self = StObject.set(x, "qMeasureListDef", value.asInstanceOf[js.Any])
   }
 }

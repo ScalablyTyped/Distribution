@@ -10,16 +10,13 @@ trait BinParam extends StObject {
 }
 object BinParam {
   
-  @scala.inline
-  def apply(bin: String): BinParam = {
+  inline def apply(bin: String): BinParam = {
     val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinParam]
   }
   
-  @scala.inline
-  implicit class BinParamMutableBuilder[Self <: BinParam] (val x: Self) extends AnyVal {
+  extension [Self <: BinParam](x: Self) {
     
-    @scala.inline
-    def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+    inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
   }
 }

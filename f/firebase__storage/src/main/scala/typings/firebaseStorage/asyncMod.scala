@@ -10,6 +10,5 @@ object asyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def async(f: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def async(f: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

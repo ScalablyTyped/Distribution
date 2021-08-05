@@ -27,37 +27,27 @@ trait SchemaIntentFilter extends StObject {
 }
 object SchemaIntentFilter {
   
-  @scala.inline
-  def apply(): SchemaIntentFilter = {
+  inline def apply(): SchemaIntentFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIntentFilter]
   }
   
-  @scala.inline
-  implicit class SchemaIntentFilterMutableBuilder[Self <: SchemaIntentFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIntentFilter](x: Self) {
     
-    @scala.inline
-    def setActionNames(value: js.Array[String]): Self = StObject.set(x, "actionNames", value.asInstanceOf[js.Any])
+    inline def setActionNames(value: js.Array[String]): Self = StObject.set(x, "actionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNamesUndefined: Self = StObject.set(x, "actionNames", js.undefined)
+    inline def setActionNamesUndefined: Self = StObject.set(x, "actionNames", js.undefined)
     
-    @scala.inline
-    def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value :_*))
+    inline def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value :_*))
     
-    @scala.inline
-    def setCategoryNames(value: js.Array[String]): Self = StObject.set(x, "categoryNames", value.asInstanceOf[js.Any])
+    inline def setCategoryNames(value: js.Array[String]): Self = StObject.set(x, "categoryNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryNamesUndefined: Self = StObject.set(x, "categoryNames", js.undefined)
+    inline def setCategoryNamesUndefined: Self = StObject.set(x, "categoryNames", js.undefined)
     
-    @scala.inline
-    def setCategoryNamesVarargs(value: String*): Self = StObject.set(x, "categoryNames", js.Array(value :_*))
+    inline def setCategoryNamesVarargs(value: String*): Self = StObject.set(x, "categoryNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

@@ -12,8 +12,6 @@ object mergeAllMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeAll[T](): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")().asInstanceOf[OperatorFunction[ObservableInput[T], T]]
-  @scala.inline
-  def mergeAll[T](concurrent: Double): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(concurrent.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[ObservableInput[T], T]]
+  inline def mergeAll[T](): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")().asInstanceOf[OperatorFunction[ObservableInput[T], T]]
+  inline def mergeAll[T](concurrent: Double): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(concurrent.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[ObservableInput[T], T]]
 }

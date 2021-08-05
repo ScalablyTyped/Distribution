@@ -13,19 +13,15 @@ trait DescribeProtectionResponse extends StObject {
 }
 object DescribeProtectionResponse {
   
-  @scala.inline
-  def apply(): DescribeProtectionResponse = {
+  inline def apply(): DescribeProtectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProtectionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeProtectionResponseMutableBuilder[Self <: DescribeProtectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProtectionResponse](x: Self) {
     
-    @scala.inline
-    def setProtection(value: Protection): Self = StObject.set(x, "Protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: Protection): Self = StObject.set(x, "Protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionUndefined: Self = StObject.set(x, "Protection", js.undefined)
+    inline def setProtectionUndefined: Self = StObject.set(x, "Protection", js.undefined)
   }
 }

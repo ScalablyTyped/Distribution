@@ -23,32 +23,24 @@ object anon {
   }
   object Base {
     
-    @scala.inline
-    def apply(focus: String, invalid: String): Base = {
+    inline def apply(focus: String, invalid: String): Base = {
       val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,20 +52,16 @@ object anon {
   }
   object Clientsecret {
     
-    @scala.inline
-    def apply(client_secret: String, id: String): Clientsecret = {
+    inline def apply(client_secret: String, id: String): Clientsecret = {
       val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Clientsecret]
     }
     
-    @scala.inline
-    implicit class ClientsecretMutableBuilder[Self <: Clientsecret] (val x: Self) extends AnyVal {
+    extension [Self <: Clientsecret](x: Self) {
       
-      @scala.inline
-      def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+      inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,44 +79,32 @@ object anon {
   }
   object Complete {
     
-    @scala.inline
-    def apply(): Complete = {
+    inline def apply(): Complete = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Complete]
     }
     
-    @scala.inline
-    implicit class CompleteMutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
+    extension [Self <: Complete](x: Self) {
       
-      @scala.inline
-      def setBase(value: PaymentRequestButtonStyle): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: PaymentRequestButtonStyle): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setComplete(value: PaymentRequestButtonStyle): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: PaymentRequestButtonStyle): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setEmpty(value: PaymentRequestButtonStyle): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: PaymentRequestButtonStyle): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: PaymentRequestButtonStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: PaymentRequestButtonStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setPaymentRequestButton(value: PaymentRequestButtonStyle): Self = StObject.set(x, "paymentRequestButton", value.asInstanceOf[js.Any])
+      inline def setPaymentRequestButton(value: PaymentRequestButtonStyle): Self = StObject.set(x, "paymentRequestButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaymentRequestButtonUndefined: Self = StObject.set(x, "paymentRequestButton", js.undefined)
+      inline def setPaymentRequestButtonUndefined: Self = StObject.set(x, "paymentRequestButton", js.undefined)
     }
   }
   
@@ -153,50 +129,36 @@ object anon {
   }
   object Empty {
     
-    @scala.inline
-    def apply(): Empty = {
+    inline def apply(): Empty = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Empty]
     }
     
-    @scala.inline
-    implicit class EmptyMutableBuilder[Self <: Empty] (val x: Self) extends AnyVal {
+    extension [Self <: Empty](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setWebkitAutofill(value: String): Self = StObject.set(x, "webkitAutofill", value.asInstanceOf[js.Any])
+      inline def setWebkitAutofill(value: String): Self = StObject.set(x, "webkitAutofill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitAutofillUndefined: Self = StObject.set(x, "webkitAutofill", js.undefined)
+      inline def setWebkitAutofillUndefined: Self = StObject.set(x, "webkitAutofill", js.undefined)
     }
   }
   
@@ -212,38 +174,28 @@ object anon {
   }
   object Invalid {
     
-    @scala.inline
-    def apply(): Invalid = {
+    inline def apply(): Invalid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Invalid]
     }
     
-    @scala.inline
-    implicit class InvalidMutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
+    extension [Self <: Invalid](x: Self) {
       
-      @scala.inline
-      def setBase(value: StyleAttributes): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: StyleAttributes): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setComplete(value: StyleAttributes): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: StyleAttributes): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setEmpty(value: StyleAttributes): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: StyleAttributes): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: StyleAttributes): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: StyleAttributes): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     }
   }
   
@@ -253,17 +205,14 @@ object anon {
   }
   object PreventDefault {
     
-    @scala.inline
-    def apply(preventDefault: () => Unit): PreventDefault = {
+    inline def apply(preventDefault: () => Unit): PreventDefault = {
       val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault))
       __obj.asInstanceOf[PreventDefault]
     }
     
-    @scala.inline
-    implicit class PreventDefaultMutableBuilder[Self <: PreventDefault] (val x: Self) extends AnyVal {
+    extension [Self <: PreventDefault](x: Self) {
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     }
   }
 }

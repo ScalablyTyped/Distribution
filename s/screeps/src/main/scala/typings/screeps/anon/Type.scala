@@ -11,17 +11,14 @@ trait Type[K /* <: LookConstant */] extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply[K /* <: LookConstant */](`type`: K): Type[K] = {
+  inline def apply[K /* <: LookConstant */](`type`: K): Type[K] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type[K]]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[?], K /* <: LookConstant */] (val x: Self & Type[K]) extends AnyVal {
+  extension [Self <: Type[?], K /* <: LookConstant */](x: Self & Type[K]) {
     
-    @scala.inline
-    def setType(value: K): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: K): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

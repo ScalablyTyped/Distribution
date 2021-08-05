@@ -18,19 +18,15 @@ trait UpdateBatchPredictionInput extends StObject {
 }
 object UpdateBatchPredictionInput {
   
-  @scala.inline
-  def apply(BatchPredictionId: EntityId, BatchPredictionName: EntityName): UpdateBatchPredictionInput = {
+  inline def apply(BatchPredictionId: EntityId, BatchPredictionName: EntityName): UpdateBatchPredictionInput = {
     val __obj = js.Dynamic.literal(BatchPredictionId = BatchPredictionId.asInstanceOf[js.Any], BatchPredictionName = BatchPredictionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBatchPredictionInput]
   }
   
-  @scala.inline
-  implicit class UpdateBatchPredictionInputMutableBuilder[Self <: UpdateBatchPredictionInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBatchPredictionInput](x: Self) {
     
-    @scala.inline
-    def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
+    inline def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchPredictionName(value: EntityName): Self = StObject.set(x, "BatchPredictionName", value.asInstanceOf[js.Any])
+    inline def setBatchPredictionName(value: EntityName): Self = StObject.set(x, "BatchPredictionName", value.asInstanceOf[js.Any])
   }
 }

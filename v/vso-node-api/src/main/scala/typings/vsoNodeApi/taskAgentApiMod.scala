@@ -21,15 +21,15 @@ object taskAgentApiMod {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
     
-    var _fallbackClient: js.Any = js.native
+    /* private */ var _fallbackClient: js.Any = js.native
     
     /* private */ def _getAccountUrl(collectionUrl: js.Any): js.Any = js.native
     
     /* private */ def _getFallbackClient(baseUrl: js.Any): js.Any = js.native
     
-    var _handlers: js.Any = js.native
+    /* private */ var _handlers: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /**
       * @param {NodeJS.ReadableStream} contentStream

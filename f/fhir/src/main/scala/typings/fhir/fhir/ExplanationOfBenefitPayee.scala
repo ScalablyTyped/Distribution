@@ -28,31 +28,23 @@ trait ExplanationOfBenefitPayee
 }
 object ExplanationOfBenefitPayee {
   
-  @scala.inline
-  def apply(): ExplanationOfBenefitPayee = {
+  inline def apply(): ExplanationOfBenefitPayee = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExplanationOfBenefitPayee]
   }
   
-  @scala.inline
-  implicit class ExplanationOfBenefitPayeeMutableBuilder[Self <: ExplanationOfBenefitPayee] (val x: Self) extends AnyVal {
+  extension [Self <: ExplanationOfBenefitPayee](x: Self) {
     
-    @scala.inline
-    def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
+    inline def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
+    inline def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: CodeableConcept): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: CodeableConcept): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

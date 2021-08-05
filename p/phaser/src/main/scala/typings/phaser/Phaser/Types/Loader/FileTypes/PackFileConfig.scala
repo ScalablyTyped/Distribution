@@ -34,40 +34,29 @@ trait PackFileConfig extends StObject {
 }
 object PackFileConfig {
   
-  @scala.inline
-  def apply(key: String): PackFileConfig = {
+  inline def apply(key: String): PackFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackFileConfig]
   }
   
-  @scala.inline
-  implicit class PackFileConfigMutableBuilder[Self <: PackFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PackFileConfig](x: Self) {
     
-    @scala.inline
-    def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
+    inline def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
+    inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String | js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
+    inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

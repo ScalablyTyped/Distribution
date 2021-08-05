@@ -203,8 +203,7 @@ object CircularGauge {
   @JSGlobal("ej.datavisualization.CircularGauge.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.CircularGauge.MarkerType")
   @js.native
@@ -328,8 +327,7 @@ object CircularGauge {
   @JSGlobal("ej.datavisualization.CircularGauge.fn")
   @js.native
   def fn: typings.ejWebAll.ej.datavisualization.CircularGauge = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.datavisualization.CircularGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.datavisualization.CircularGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.CircularGauge.gaugePosition")
   @js.native

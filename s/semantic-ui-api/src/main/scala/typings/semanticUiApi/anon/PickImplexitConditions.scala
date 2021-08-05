@@ -11,16 +11,13 @@ trait PickImplexitConditions extends StObject {
 }
 object PickImplexitConditions {
   
-  @scala.inline
-  def apply(exitConditions: String): PickImplexitConditions = {
+  inline def apply(exitConditions: String): PickImplexitConditions = {
     val __obj = js.Dynamic.literal(exitConditions = exitConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexitConditions]
   }
   
-  @scala.inline
-  implicit class PickImplexitConditionsMutableBuilder[Self <: PickImplexitConditions] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplexitConditions](x: Self) {
     
-    @scala.inline
-    def setExitConditions(value: String): Self = StObject.set(x, "exitConditions", value.asInstanceOf[js.Any])
+    inline def setExitConditions(value: String): Self = StObject.set(x, "exitConditions", value.asInstanceOf[js.Any])
   }
 }

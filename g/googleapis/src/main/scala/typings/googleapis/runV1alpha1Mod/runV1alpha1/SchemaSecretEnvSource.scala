@@ -23,25 +23,19 @@ trait SchemaSecretEnvSource extends StObject {
 }
 object SchemaSecretEnvSource {
   
-  @scala.inline
-  def apply(): SchemaSecretEnvSource = {
+  inline def apply(): SchemaSecretEnvSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecretEnvSource]
   }
   
-  @scala.inline
-  implicit class SchemaSecretEnvSourceMutableBuilder[Self <: SchemaSecretEnvSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecretEnvSource](x: Self) {
     
-    @scala.inline
-    def setLocalObjectReference(value: SchemaLocalObjectReference): Self = StObject.set(x, "localObjectReference", value.asInstanceOf[js.Any])
+    inline def setLocalObjectReference(value: SchemaLocalObjectReference): Self = StObject.set(x, "localObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalObjectReferenceUndefined: Self = StObject.set(x, "localObjectReference", js.undefined)
+    inline def setLocalObjectReferenceUndefined: Self = StObject.set(x, "localObjectReference", js.undefined)
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

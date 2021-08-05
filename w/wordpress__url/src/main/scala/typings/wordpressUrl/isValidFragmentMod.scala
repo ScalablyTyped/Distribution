@@ -10,6 +10,5 @@ object isValidFragmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidFragment(fragment: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFragment")(fragment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidFragment(fragment: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFragment")(fragment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

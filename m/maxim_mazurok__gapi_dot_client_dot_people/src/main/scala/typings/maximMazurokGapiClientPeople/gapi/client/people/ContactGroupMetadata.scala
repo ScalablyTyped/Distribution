@@ -17,25 +17,19 @@ trait ContactGroupMetadata extends StObject {
 }
 object ContactGroupMetadata {
   
-  @scala.inline
-  def apply(): ContactGroupMetadata = {
+  inline def apply(): ContactGroupMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactGroupMetadata]
   }
   
-  @scala.inline
-  implicit class ContactGroupMetadataMutableBuilder[Self <: ContactGroupMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ContactGroupMetadata](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -40,20 +40,16 @@ object gapi {
       }
       object EnterprisesResource {
         
-        @scala.inline
-        def apply(devices: DevicesResource, structures: StructuresResource): EnterprisesResource = {
+        inline def apply(devices: DevicesResource, structures: StructuresResource): EnterprisesResource = {
           val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], structures = structures.asInstanceOf[js.Any])
           __obj.asInstanceOf[EnterprisesResource]
         }
         
-        @scala.inline
-        implicit class EnterprisesResourceMutableBuilder[Self <: EnterprisesResource] (val x: Self) extends AnyVal {
+        extension [Self <: EnterprisesResource](x: Self) {
           
-          @scala.inline
-          def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+          inline def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStructures(value: StructuresResource): Self = StObject.set(x, "structures", value.asInstanceOf[js.Any])
+          inline def setStructures(value: StructuresResource): Self = StObject.set(x, "structures", value.asInstanceOf[js.Any])
         }
       }
       
@@ -80,45 +76,34 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1Device {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1Device = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1Device = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1Device]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1DeviceMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1Device] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1Device](x: Self) {
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setParentRelations(value: js.Array[GoogleHomeEnterpriseSdmV1ParentRelation]): Self = StObject.set(x, "parentRelations", value.asInstanceOf[js.Any])
+          inline def setParentRelations(value: js.Array[GoogleHomeEnterpriseSdmV1ParentRelation]): Self = StObject.set(x, "parentRelations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParentRelationsUndefined: Self = StObject.set(x, "parentRelations", js.undefined)
+          inline def setParentRelationsUndefined: Self = StObject.set(x, "parentRelations", js.undefined)
           
-          @scala.inline
-          def setParentRelationsVarargs(value: GoogleHomeEnterpriseSdmV1ParentRelation*): Self = StObject.set(x, "parentRelations", js.Array(value :_*))
+          inline def setParentRelationsVarargs(value: GoogleHomeEnterpriseSdmV1ParentRelation*): Self = StObject.set(x, "parentRelations", js.Array(value :_*))
           
-          @scala.inline
-          def setTraits(
+          inline def setTraits(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Device & TopLevel[js.Any]
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+          inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         }
       }
       
@@ -136,30 +121,24 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequestMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest](x: Self) {
           
-          @scala.inline
-          def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+          inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+          inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
           
-          @scala.inline
-          def setParams(
+          inline def setParams(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest & TopLevel[js.Any]
           ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+          inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         }
       }
       
@@ -174,24 +153,20 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponseMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse](x: Self) {
           
-          @scala.inline
-          def setResults(
+          inline def setResults(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse & TopLevel[js.Any]
           ): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+          inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
         }
       }
       
@@ -205,29 +180,22 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1ListDevicesResponse {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1ListDevicesResponse = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1ListDevicesResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ListDevicesResponse]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1ListDevicesResponseMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ListDevicesResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1ListDevicesResponse](x: Self) {
           
-          @scala.inline
-          def setDevices(value: js.Array[GoogleHomeEnterpriseSdmV1Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+          inline def setDevices(value: js.Array[GoogleHomeEnterpriseSdmV1Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+          inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
           
-          @scala.inline
-          def setDevicesVarargs(value: GoogleHomeEnterpriseSdmV1Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
+          inline def setDevicesVarargs(value: GoogleHomeEnterpriseSdmV1Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -241,29 +209,22 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1ListRoomsResponse {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1ListRoomsResponse = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1ListRoomsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ListRoomsResponse]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1ListRoomsResponseMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ListRoomsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1ListRoomsResponse](x: Self) {
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
           
-          @scala.inline
-          def setRooms(value: js.Array[GoogleHomeEnterpriseSdmV1Room]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+          inline def setRooms(value: js.Array[GoogleHomeEnterpriseSdmV1Room]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
+          inline def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
           
-          @scala.inline
-          def setRoomsVarargs(value: GoogleHomeEnterpriseSdmV1Room*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+          inline def setRoomsVarargs(value: GoogleHomeEnterpriseSdmV1Room*): Self = StObject.set(x, "rooms", js.Array(value :_*))
         }
       }
       
@@ -277,29 +238,22 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1ListStructuresResponse {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1ListStructuresResponse = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1ListStructuresResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ListStructuresResponse]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1ListStructuresResponseMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ListStructuresResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1ListStructuresResponse](x: Self) {
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
           
-          @scala.inline
-          def setStructures(value: js.Array[GoogleHomeEnterpriseSdmV1Structure]): Self = StObject.set(x, "structures", value.asInstanceOf[js.Any])
+          inline def setStructures(value: js.Array[GoogleHomeEnterpriseSdmV1Structure]): Self = StObject.set(x, "structures", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStructuresUndefined: Self = StObject.set(x, "structures", js.undefined)
+          inline def setStructuresUndefined: Self = StObject.set(x, "structures", js.undefined)
           
-          @scala.inline
-          def setStructuresVarargs(value: GoogleHomeEnterpriseSdmV1Structure*): Self = StObject.set(x, "structures", js.Array(value :_*))
+          inline def setStructuresVarargs(value: GoogleHomeEnterpriseSdmV1Structure*): Self = StObject.set(x, "structures", js.Array(value :_*))
         }
       }
       
@@ -316,26 +270,20 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1ParentRelation {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1ParentRelation = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1ParentRelation = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1ParentRelation]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1ParentRelationMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1ParentRelation] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1ParentRelation](x: Self) {
           
-          @scala.inline
-          def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+          inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+          inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
           
-          @scala.inline
-          def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+          inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+          inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
         }
       }
       
@@ -353,30 +301,24 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1Room {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1Room = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1Room = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1Room]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1RoomMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1Room] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1Room](x: Self) {
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setTraits(
+          inline def setTraits(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Room & TopLevel[js.Any]
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+          inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
         }
       }
       
@@ -394,30 +336,24 @@ object gapi {
       }
       object GoogleHomeEnterpriseSdmV1Structure {
         
-        @scala.inline
-        def apply(): GoogleHomeEnterpriseSdmV1Structure = {
+        inline def apply(): GoogleHomeEnterpriseSdmV1Structure = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleHomeEnterpriseSdmV1Structure]
         }
         
-        @scala.inline
-        implicit class GoogleHomeEnterpriseSdmV1StructureMutableBuilder[Self <: GoogleHomeEnterpriseSdmV1Structure] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleHomeEnterpriseSdmV1Structure](x: Self) {
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setTraits(
+          inline def setTraits(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Structure & TopLevel[js.Any]
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+          inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
         }
       }
       

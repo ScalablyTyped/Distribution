@@ -14,22 +14,17 @@ trait SchemaRegionInstanceGroupManagersDeleteInstancesRequest extends StObject {
 }
 object SchemaRegionInstanceGroupManagersDeleteInstancesRequest {
   
-  @scala.inline
-  def apply(): SchemaRegionInstanceGroupManagersDeleteInstancesRequest = {
+  inline def apply(): SchemaRegionInstanceGroupManagersDeleteInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionInstanceGroupManagersDeleteInstancesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegionInstanceGroupManagersDeleteInstancesRequestMutableBuilder[Self <: SchemaRegionInstanceGroupManagersDeleteInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionInstanceGroupManagersDeleteInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

@@ -16,22 +16,17 @@ trait ItemRef extends StObject {
 }
 object ItemRef {
   
-  @scala.inline
-  def apply(itemRef: InternalNamePath => js.Function1[/* node */ ReactElement, Unit]): ItemRef = {
+  inline def apply(itemRef: InternalNamePath => js.Function1[/* node */ ReactElement, Unit]): ItemRef = {
     val __obj = js.Dynamic.literal(itemRef = js.Any.fromFunction1(itemRef))
     __obj.asInstanceOf[ItemRef]
   }
   
-  @scala.inline
-  implicit class ItemRefMutableBuilder[Self <: ItemRef] (val x: Self) extends AnyVal {
+  extension [Self <: ItemRef](x: Self) {
     
-    @scala.inline
-    def setItemRef(value: InternalNamePath => js.Function1[/* node */ ReactElement, Unit]): Self = StObject.set(x, "itemRef", js.Any.fromFunction1(value))
+    inline def setItemRef(value: InternalNamePath => js.Function1[/* node */ ReactElement, Unit]): Self = StObject.set(x, "itemRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -36,8 +36,7 @@ trait Catalog extends StObject {
 }
 object Catalog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: js.Object => String,
     description: js.Object => String,
     name: js.Object => String,
@@ -47,19 +46,14 @@ object Catalog {
     __obj.asInstanceOf[Catalog]
   }
   
-  @scala.inline
-  implicit class CatalogMutableBuilder[Self <: Catalog] (val x: Self) extends AnyVal {
+  extension [Self <: Catalog](x: Self) {
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
+    inline def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
+    inline def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

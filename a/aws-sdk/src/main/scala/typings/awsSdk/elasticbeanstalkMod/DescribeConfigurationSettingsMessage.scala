@@ -23,28 +23,21 @@ trait DescribeConfigurationSettingsMessage extends StObject {
 }
 object DescribeConfigurationSettingsMessage {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName): DescribeConfigurationSettingsMessage = {
+  inline def apply(ApplicationName: ApplicationName): DescribeConfigurationSettingsMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationSettingsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationSettingsMessageMutableBuilder[Self <: DescribeConfigurationSettingsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationSettingsMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
   }
 }

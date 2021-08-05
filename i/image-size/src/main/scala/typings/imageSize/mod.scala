@@ -13,22 +13,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(input: String): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
-  @scala.inline
-  def default(input: String, callback: CallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(input: Buffer): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
+  inline def default(input: String): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
+  inline def default(input: String, callback: CallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(input: Buffer): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
   
-  @scala.inline
-  def imageSize(input: String): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSize")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
-  @scala.inline
-  def imageSize(input: String, callback: CallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def imageSize(input: Buffer): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSize")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
+  inline def imageSize(input: String): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSize")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
+  inline def imageSize(input: String, callback: CallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def imageSize(input: Buffer): ISizeCalculationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSize")(input.asInstanceOf[js.Any]).asInstanceOf[ISizeCalculationResult]
   
-  @scala.inline
-  def setConcurrency(c: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConcurrency")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setConcurrency(c: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConcurrency")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("image-size", "types")
   @js.native

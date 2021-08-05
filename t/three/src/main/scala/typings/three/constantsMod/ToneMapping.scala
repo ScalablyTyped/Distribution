@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait ToneMapping extends StObject
 object ToneMapping {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[ToneMapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("ToneMapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ToneMapping & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[ToneMapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("ToneMapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ToneMapping & scala.Nothing]]
 }

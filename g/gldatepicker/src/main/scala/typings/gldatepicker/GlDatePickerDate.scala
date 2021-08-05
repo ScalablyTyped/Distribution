@@ -15,28 +15,21 @@ trait GlDatePickerDate extends StObject {
 }
 object GlDatePickerDate {
   
-  @scala.inline
-  def apply(date: Date): GlDatePickerDate = {
+  inline def apply(date: Date): GlDatePickerDate = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerDate]
   }
   
-  @scala.inline
-  implicit class GlDatePickerDateMutableBuilder[Self <: GlDatePickerDate] (val x: Self) extends AnyVal {
+  extension [Self <: GlDatePickerDate](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatMonth(value: Boolean): Self = StObject.set(x, "repeatMonth", value.asInstanceOf[js.Any])
+    inline def setRepeatMonth(value: Boolean): Self = StObject.set(x, "repeatMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatMonthUndefined: Self = StObject.set(x, "repeatMonth", js.undefined)
+    inline def setRepeatMonthUndefined: Self = StObject.set(x, "repeatMonth", js.undefined)
     
-    @scala.inline
-    def setRepeatYear(value: Boolean): Self = StObject.set(x, "repeatYear", value.asInstanceOf[js.Any])
+    inline def setRepeatYear(value: Boolean): Self = StObject.set(x, "repeatYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatYearUndefined: Self = StObject.set(x, "repeatYear", js.undefined)
+    inline def setRepeatYearUndefined: Self = StObject.set(x, "repeatYear", js.undefined)
   }
 }

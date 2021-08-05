@@ -12,16 +12,13 @@ trait SettingsResponse
 }
 object SettingsResponse {
   
-  @scala.inline
-  def apply(meta: js.Any): SettingsResponse = {
+  inline def apply(meta: js.Any): SettingsResponse = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsResponse]
   }
   
-  @scala.inline
-  implicit class SettingsResponseMutableBuilder[Self <: SettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsResponse](x: Self) {
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

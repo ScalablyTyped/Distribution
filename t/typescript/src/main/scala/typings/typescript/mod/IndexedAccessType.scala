@@ -20,8 +20,7 @@ trait IndexedAccessType
 }
 object IndexedAccessType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -53,31 +52,22 @@ object IndexedAccessType {
     __obj.asInstanceOf[IndexedAccessType]
   }
   
-  @scala.inline
-  implicit class IndexedAccessTypeMutableBuilder[Self <: IndexedAccessType] (val x: Self) extends AnyVal {
+  extension [Self <: IndexedAccessType](x: Self) {
     
-    @scala.inline
-    def setConstraint(value: Type): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: Type): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setIndexType(value: Type): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
+    inline def setIndexType(value: Type): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: Type): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: Type): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifiedForReading(value: Type): Self = StObject.set(x, "simplifiedForReading", value.asInstanceOf[js.Any])
+    inline def setSimplifiedForReading(value: Type): Self = StObject.set(x, "simplifiedForReading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifiedForReadingUndefined: Self = StObject.set(x, "simplifiedForReading", js.undefined)
+    inline def setSimplifiedForReadingUndefined: Self = StObject.set(x, "simplifiedForReading", js.undefined)
     
-    @scala.inline
-    def setSimplifiedForWriting(value: Type): Self = StObject.set(x, "simplifiedForWriting", value.asInstanceOf[js.Any])
+    inline def setSimplifiedForWriting(value: Type): Self = StObject.set(x, "simplifiedForWriting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifiedForWritingUndefined: Self = StObject.set(x, "simplifiedForWriting", js.undefined)
+    inline def setSimplifiedForWritingUndefined: Self = StObject.set(x, "simplifiedForWriting", js.undefined)
   }
 }

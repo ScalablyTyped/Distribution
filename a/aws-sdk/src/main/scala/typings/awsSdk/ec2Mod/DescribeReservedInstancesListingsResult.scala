@@ -13,22 +13,17 @@ trait DescribeReservedInstancesListingsResult extends StObject {
 }
 object DescribeReservedInstancesListingsResult {
   
-  @scala.inline
-  def apply(): DescribeReservedInstancesListingsResult = {
+  inline def apply(): DescribeReservedInstancesListingsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedInstancesListingsResult]
   }
   
-  @scala.inline
-  implicit class DescribeReservedInstancesListingsResultMutableBuilder[Self <: DescribeReservedInstancesListingsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedInstancesListingsResult](x: Self) {
     
-    @scala.inline
-    def setReservedInstancesListings(value: ReservedInstancesListingList): Self = StObject.set(x, "ReservedInstancesListings", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesListings(value: ReservedInstancesListingList): Self = StObject.set(x, "ReservedInstancesListings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesListingsUndefined: Self = StObject.set(x, "ReservedInstancesListings", js.undefined)
+    inline def setReservedInstancesListingsUndefined: Self = StObject.set(x, "ReservedInstancesListings", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesListingsVarargs(value: ReservedInstancesListing*): Self = StObject.set(x, "ReservedInstancesListings", js.Array(value :_*))
+    inline def setReservedInstancesListingsVarargs(value: ReservedInstancesListing*): Self = StObject.set(x, "ReservedInstancesListings", js.Array(value :_*))
   }
 }

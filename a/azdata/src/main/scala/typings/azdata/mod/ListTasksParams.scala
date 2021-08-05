@@ -10,16 +10,13 @@ trait ListTasksParams extends StObject {
 }
 object ListTasksParams {
   
-  @scala.inline
-  def apply(listActiveTasksOnly: Boolean): ListTasksParams = {
+  inline def apply(listActiveTasksOnly: Boolean): ListTasksParams = {
     val __obj = js.Dynamic.literal(listActiveTasksOnly = listActiveTasksOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTasksParams]
   }
   
-  @scala.inline
-  implicit class ListTasksParamsMutableBuilder[Self <: ListTasksParams] (val x: Self) extends AnyVal {
+  extension [Self <: ListTasksParams](x: Self) {
     
-    @scala.inline
-    def setListActiveTasksOnly(value: Boolean): Self = StObject.set(x, "listActiveTasksOnly", value.asInstanceOf[js.Any])
+    inline def setListActiveTasksOnly(value: Boolean): Self = StObject.set(x, "listActiveTasksOnly", value.asInstanceOf[js.Any])
   }
 }

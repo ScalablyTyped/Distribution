@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReadyState extends StObject
 object ReadyState {
   
-  @scala.inline
-  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
+  inline def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   
-  @scala.inline
-  def ended: typings.std.stdStrings.ended = "ended".asInstanceOf[typings.std.stdStrings.ended]
+  inline def ended: typings.std.stdStrings.ended = "ended".asInstanceOf[typings.std.stdStrings.ended]
   
-  @scala.inline
-  def open: typings.std.stdStrings.open = "open".asInstanceOf[typings.std.stdStrings.open]
+  inline def open: typings.std.stdStrings.open = "open".asInstanceOf[typings.std.stdStrings.open]
 }

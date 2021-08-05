@@ -8,11 +8,9 @@ object reactQrReaderStrings {
   
   @js.native
   sealed trait environment extends StObject
-  @scala.inline
-  def environment: environment = "environment".asInstanceOf[environment]
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
   sealed trait user extends StObject
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
 }

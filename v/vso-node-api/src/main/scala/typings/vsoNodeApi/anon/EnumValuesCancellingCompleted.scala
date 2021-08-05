@@ -10,16 +10,13 @@ trait EnumValuesCancellingCompleted extends StObject {
 }
 object EnumValuesCancellingCompleted {
   
-  @scala.inline
-  def apply(enumValues: CancellingCompleted): EnumValuesCancellingCompleted = {
+  inline def apply(enumValues: CancellingCompleted): EnumValuesCancellingCompleted = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCancellingCompleted]
   }
   
-  @scala.inline
-  implicit class EnumValuesCancellingCompletedMutableBuilder[Self <: EnumValuesCancellingCompleted] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCancellingCompleted](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: CancellingCompleted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: CancellingCompleted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

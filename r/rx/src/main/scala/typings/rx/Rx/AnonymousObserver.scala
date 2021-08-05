@@ -9,8 +9,7 @@ trait AnonymousObserver[T]
      with Observer[T]
 object AnonymousObserver {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     asObserver: () => Observer[T],
     checked: () => CheckedObserver[T],
     makeSafe: IDisposable => Observer[T],

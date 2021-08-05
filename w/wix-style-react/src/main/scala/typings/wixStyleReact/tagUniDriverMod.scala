@@ -39,8 +39,7 @@ object tagUniDriverMod {
   }
   object TagUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -62,47 +61,33 @@ object tagUniDriverMod {
       __obj.asInstanceOf[TagUniDriver]
     }
     
-    @scala.inline
-    implicit class TagUniDriverMutableBuilder[Self <: TagUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TagUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDarkTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDarkTheme", js.Any.fromFunction0(value))
+      inline def setIsDarkTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDarkTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorTheme", js.Any.fromFunction0(value))
+      inline def setIsErrorTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
+      inline def setIsLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMedium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
+      inline def setIsMedium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRemovable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRemovable", js.Any.fromFunction0(value))
+      inline def setIsRemovable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRemovable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
+      inline def setIsSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsStandardTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStandardTheme", js.Any.fromFunction0(value))
+      inline def setIsStandardTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStandardTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsThumbExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isThumbExists", js.Any.fromFunction0(value))
+      inline def setIsThumbExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isThumbExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTiny(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
+      inline def setIsTiny(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWarningTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isWarningTheme", js.Any.fromFunction0(value))
+      inline def setIsWarningTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isWarningTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveTag(value: () => js.Promise[Unit]): Self = StObject.set(x, "removeTag", js.Any.fromFunction0(value))
+      inline def setRemoveTag(value: () => js.Promise[Unit]): Self = StObject.set(x, "removeTag", js.Any.fromFunction0(value))
     }
   }
 }

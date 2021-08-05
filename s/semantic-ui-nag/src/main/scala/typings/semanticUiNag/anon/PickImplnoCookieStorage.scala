@@ -11,16 +11,13 @@ trait PickImplnoCookieStorage extends StObject {
 }
 object PickImplnoCookieStorage {
   
-  @scala.inline
-  def apply(noCookieStorage: String): PickImplnoCookieStorage = {
+  inline def apply(noCookieStorage: String): PickImplnoCookieStorage = {
     val __obj = js.Dynamic.literal(noCookieStorage = noCookieStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoCookieStorage]
   }
   
-  @scala.inline
-  implicit class PickImplnoCookieStorageMutableBuilder[Self <: PickImplnoCookieStorage] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnoCookieStorage](x: Self) {
     
-    @scala.inline
-    def setNoCookieStorage(value: String): Self = StObject.set(x, "noCookieStorage", value.asInstanceOf[js.Any])
+    inline def setNoCookieStorage(value: String): Self = StObject.set(x, "noCookieStorage", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait DeleteResolverRequest extends StObject {
 }
 object DeleteResolverRequest {
   
-  @scala.inline
-  def apply(apiId: String, fieldName: ResourceName, typeName: ResourceName): DeleteResolverRequest = {
+  inline def apply(apiId: String, fieldName: ResourceName, typeName: ResourceName): DeleteResolverRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResolverRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResolverRequestMutableBuilder[Self <: DeleteResolverRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResolverRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldName(value: ResourceName): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: ResourceName): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: ResourceName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: ResourceName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

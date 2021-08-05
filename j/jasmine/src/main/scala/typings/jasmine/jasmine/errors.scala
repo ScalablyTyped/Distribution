@@ -12,8 +12,7 @@ object errors {
        with Error
   object ExpectationFailed {
     
-    @scala.inline
-    def apply(message: String, name: String): ExpectationFailed = {
+    inline def apply(message: String, name: String): ExpectationFailed = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectationFailed]
     }

@@ -11,19 +11,15 @@ trait MultiOutputInfo extends StObject {
 }
 object MultiOutputInfo {
   
-  @scala.inline
-  def apply(): MultiOutputInfo = {
+  inline def apply(): MultiOutputInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiOutputInfo]
   }
   
-  @scala.inline
-  implicit class MultiOutputInfoMutableBuilder[Self <: MultiOutputInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MultiOutputInfo](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

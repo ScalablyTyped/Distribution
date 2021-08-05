@@ -16,8 +16,7 @@ trait JacobianElement extends StObject {
 }
 object JacobianElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     multiplyElement: JacobianElement => Double,
     multiplyVectors: (Vec3, Vec3) => Double,
     rotational: Vec3,
@@ -27,19 +26,14 @@ object JacobianElement {
     __obj.asInstanceOf[JacobianElement]
   }
   
-  @scala.inline
-  implicit class JacobianElementMutableBuilder[Self <: JacobianElement] (val x: Self) extends AnyVal {
+  extension [Self <: JacobianElement](x: Self) {
     
-    @scala.inline
-    def setMultiplyElement(value: JacobianElement => Double): Self = StObject.set(x, "multiplyElement", js.Any.fromFunction1(value))
+    inline def setMultiplyElement(value: JacobianElement => Double): Self = StObject.set(x, "multiplyElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMultiplyVectors(value: (Vec3, Vec3) => Double): Self = StObject.set(x, "multiplyVectors", js.Any.fromFunction2(value))
+    inline def setMultiplyVectors(value: (Vec3, Vec3) => Double): Self = StObject.set(x, "multiplyVectors", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRotational(value: Vec3): Self = StObject.set(x, "rotational", value.asInstanceOf[js.Any])
+    inline def setRotational(value: Vec3): Self = StObject.set(x, "rotational", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatial(value: Vec3): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
+    inline def setSpatial(value: Vec3): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
   }
 }

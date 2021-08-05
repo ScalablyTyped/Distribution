@@ -14,22 +14,17 @@ trait DropIndex extends StObject {
 }
 object DropIndex {
   
-  @scala.inline
-  def apply(columns: js.Any, dragIndex: Double, dropIndex: Double): DropIndex = {
+  inline def apply(columns: js.Any, dragIndex: Double, dropIndex: Double): DropIndex = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], dragIndex = dragIndex.asInstanceOf[js.Any], dropIndex = dropIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropIndex]
   }
   
-  @scala.inline
-  implicit class DropIndexMutableBuilder[Self <: DropIndex] (val x: Self) extends AnyVal {
+  extension [Self <: DropIndex](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragIndex(value: Double): Self = StObject.set(x, "dragIndex", value.asInstanceOf[js.Any])
+    inline def setDragIndex(value: Double): Self = StObject.set(x, "dragIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropIndex(value: Double): Self = StObject.set(x, "dropIndex", value.asInstanceOf[js.Any])
+    inline def setDropIndex(value: Double): Self = StObject.set(x, "dropIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait StopReturnType extends StObject {
 }
 object StopReturnType {
   
-  @scala.inline
-  def apply(profile: Profile): StopReturnType = {
+  inline def apply(profile: Profile): StopReturnType = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopReturnType]
   }
   
-  @scala.inline
-  implicit class StopReturnTypeMutableBuilder[Self <: StopReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: StopReturnType](x: Self) {
     
-    @scala.inline
-    def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }
 }

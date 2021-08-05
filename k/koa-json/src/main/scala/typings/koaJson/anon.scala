@@ -25,32 +25,24 @@ object anon {
   }
   object Param {
     
-    @scala.inline
-    def apply(): Param = {
+    inline def apply(): Param = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Param]
     }
     
-    @scala.inline
-    implicit class ParamMutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
+    extension [Self <: Param](x: Self) {
       
-      @scala.inline
-      def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+      inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
       
-      @scala.inline
-      def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+      inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+      inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
       
-      @scala.inline
-      def setSpaces(value: Double): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: Double): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     }
   }
 }

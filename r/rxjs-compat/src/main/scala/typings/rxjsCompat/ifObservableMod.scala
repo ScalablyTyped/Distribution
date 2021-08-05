@@ -17,34 +17,27 @@ object ifObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T, R](condition: js.Function0[Boolean | Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](condition: js.Function0[Boolean | Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T, R](
       condition: js.Function0[Boolean | Unit],
       thenSource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](
       condition: js.Function0[Boolean | Unit],
       thenSource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any,
       elseSource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<R> */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any], elseSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](
       condition: js.Function0[Boolean | Unit],
       thenSource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any,
       elseSource: Unit
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any], elseSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](condition: js.Function0[Boolean | Unit], thenSource: Unit): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](condition: js.Function0[Boolean | Unit], thenSource: Unit): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create[T, R](
       condition: js.Function0[Boolean | Unit],
       thenSource: Unit,
       elseSource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<R> */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any], elseSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](condition: js.Function0[Boolean | Unit], thenSource: Unit, elseSource: Unit): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any], elseSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create[T, R](condition: js.Function0[Boolean | Unit], thenSource: Unit, elseSource: Unit): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(condition.asInstanceOf[js.Any], thenSource.asInstanceOf[js.Any], elseSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

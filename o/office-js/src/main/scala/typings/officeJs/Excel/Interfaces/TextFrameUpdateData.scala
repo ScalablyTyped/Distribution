@@ -137,85 +137,61 @@ trait TextFrameUpdateData extends StObject {
 }
 object TextFrameUpdateData {
   
-  @scala.inline
-  def apply(): TextFrameUpdateData = {
+  inline def apply(): TextFrameUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextFrameUpdateData]
   }
   
-  @scala.inline
-  implicit class TextFrameUpdateDataMutableBuilder[Self <: TextFrameUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: TextFrameUpdateData](x: Self) {
     
-    @scala.inline
-    def setAutoSizeSetting(
+    inline def setAutoSizeSetting(
       value: ShapeAutoSize | AutoSizeNone | AutoSizeTextToFitShape | AutoSizeShapeToFitText | AutoSizeMixed
     ): Self = StObject.set(x, "autoSizeSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSizeSettingUndefined: Self = StObject.set(x, "autoSizeSetting", js.undefined)
+    inline def setAutoSizeSettingUndefined: Self = StObject.set(x, "autoSizeSetting", js.undefined)
     
-    @scala.inline
-    def setBottomMargin(value: Double): Self = StObject.set(x, "bottomMargin", value.asInstanceOf[js.Any])
+    inline def setBottomMargin(value: Double): Self = StObject.set(x, "bottomMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomMarginUndefined: Self = StObject.set(x, "bottomMargin", js.undefined)
+    inline def setBottomMarginUndefined: Self = StObject.set(x, "bottomMargin", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlignment(
+    inline def setHorizontalAlignment(
       value: ShapeTextHorizontalAlignment | Left | Center | Right | Justify | JustifyLow | Distributed | ThaiDistributed
     ): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
-    @scala.inline
-    def setHorizontalOverflow(value: ShapeTextHorizontalOverflow | Overflow | Clip): Self = StObject.set(x, "horizontalOverflow", value.asInstanceOf[js.Any])
+    inline def setHorizontalOverflow(value: ShapeTextHorizontalOverflow | Overflow | Clip): Self = StObject.set(x, "horizontalOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalOverflowUndefined: Self = StObject.set(x, "horizontalOverflow", js.undefined)
+    inline def setHorizontalOverflowUndefined: Self = StObject.set(x, "horizontalOverflow", js.undefined)
     
-    @scala.inline
-    def setLeftMargin(value: Double): Self = StObject.set(x, "leftMargin", value.asInstanceOf[js.Any])
+    inline def setLeftMargin(value: Double): Self = StObject.set(x, "leftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftMarginUndefined: Self = StObject.set(x, "leftMargin", js.undefined)
+    inline def setLeftMarginUndefined: Self = StObject.set(x, "leftMargin", js.undefined)
     
-    @scala.inline
-    def setOrientation(
+    inline def setOrientation(
       value: ShapeTextOrientation | Horizontal | Vertical | Vertical270 | WordArtVertical | EastAsianVertical | MongolianVertical | WordArtVerticalRTL
     ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setReadingOrder(value: ShapeTextReadingOrder | LeftToRight | RightToLeft): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
+    inline def setReadingOrder(value: ShapeTextReadingOrder | LeftToRight | RightToLeft): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadingOrderUndefined: Self = StObject.set(x, "readingOrder", js.undefined)
+    inline def setReadingOrderUndefined: Self = StObject.set(x, "readingOrder", js.undefined)
     
-    @scala.inline
-    def setRightMargin(value: Double): Self = StObject.set(x, "rightMargin", value.asInstanceOf[js.Any])
+    inline def setRightMargin(value: Double): Self = StObject.set(x, "rightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightMarginUndefined: Self = StObject.set(x, "rightMargin", js.undefined)
+    inline def setRightMarginUndefined: Self = StObject.set(x, "rightMargin", js.undefined)
     
-    @scala.inline
-    def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
+    inline def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
+    inline def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignment(value: ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
-    @scala.inline
-    def setVerticalOverflow(value: ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip): Self = StObject.set(x, "verticalOverflow", value.asInstanceOf[js.Any])
+    inline def setVerticalOverflow(value: ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip): Self = StObject.set(x, "verticalOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOverflowUndefined: Self = StObject.set(x, "verticalOverflow", js.undefined)
+    inline def setVerticalOverflowUndefined: Self = StObject.set(x, "verticalOverflow", js.undefined)
   }
 }

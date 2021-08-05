@@ -23,34 +23,25 @@ trait PersonMatch extends StObject {
 }
 object PersonMatch {
   
-  @scala.inline
-  def apply(): PersonMatch = {
+  inline def apply(): PersonMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersonMatch]
   }
   
-  @scala.inline
-  implicit class PersonMatchMutableBuilder[Self <: PersonMatch] (val x: Self) extends AnyVal {
+  extension [Self <: PersonMatch](x: Self) {
     
-    @scala.inline
-    def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
+    inline def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
+    inline def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
-    @scala.inline
-    def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
+    inline def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setPerson(value: PersonDetail): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: PersonDetail): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonUndefined: Self = StObject.set(x, "Person", js.undefined)
+    inline def setPersonUndefined: Self = StObject.set(x, "Person", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

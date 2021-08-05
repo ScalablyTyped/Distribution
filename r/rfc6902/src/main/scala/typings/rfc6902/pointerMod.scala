@@ -44,8 +44,7 @@ object pointerMod {
     /**
       `path` *must* be a properly escaped string.
       */
-    @scala.inline
-    def fromJSON(path: String): Pointer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(path.asInstanceOf[js.Any]).asInstanceOf[Pointer]
+    inline def fromJSON(path: String): Pointer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(path.asInstanceOf[js.Any]).asInstanceOf[Pointer]
   }
   
   trait PointerEvaluation extends StObject {
@@ -58,23 +57,18 @@ object pointerMod {
   }
   object PointerEvaluation {
     
-    @scala.inline
-    def apply(key: String, parent: js.Any, value: js.Any): PointerEvaluation = {
+    inline def apply(key: String, parent: js.Any, value: js.Any): PointerEvaluation = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointerEvaluation]
     }
     
-    @scala.inline
-    implicit class PointerEvaluationMutableBuilder[Self <: PointerEvaluation] (val x: Self) extends AnyVal {
+    extension [Self <: PointerEvaluation](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

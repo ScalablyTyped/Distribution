@@ -14,16 +14,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extract(url: String): js.Promise[OembedData] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OembedData]]
-  @scala.inline
-  def extract(url: String, params: js.Any): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
+  inline def extract(url: String): js.Promise[OembedData] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OembedData]]
+  inline def extract(url: String, params: js.Any): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
   
-  @scala.inline
-  def hasProvider(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasProvider")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasProvider(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasProvider")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def setProviderList(providers: js.Array[Provider]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProviderList")(providers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setProviderList(providers: js.Array[Provider]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProviderList")(providers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Endpoint extends StObject {
     
@@ -38,41 +34,30 @@ object mod {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply(url: String): Endpoint = {
+    inline def apply(url: String): Endpoint = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Endpoint]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Endpoint](x: Self) {
       
-      @scala.inline
-      def setDiscovery(value: Boolean): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
+      inline def setDiscovery(value: Boolean): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscoveryUndefined: Self = StObject.set(x, "discovery", js.undefined)
+      inline def setDiscoveryUndefined: Self = StObject.set(x, "discovery", js.undefined)
       
-      @scala.inline
-      def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
       
-      @scala.inline
-      def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+      inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
+      inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
       
-      @scala.inline
-      def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,18 +70,15 @@ object mod {
   }
   object LinkTypeData {
     
-    @scala.inline
-    def apply(version: String): LinkTypeData = {
+    inline def apply(version: String): LinkTypeData = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("link")
       __obj.asInstanceOf[LinkTypeData]
     }
     
-    @scala.inline
-    implicit class LinkTypeDataMutableBuilder[Self <: LinkTypeData] (val x: Self) extends AnyVal {
+    extension [Self <: LinkTypeData](x: Self) {
       
-      @scala.inline
-      def setType(value: link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,75 +127,53 @@ object mod {
   }
   object OembedData {
     
-    @scala.inline
-    def apply(`type`: rich | video | photo | link, version: String): OembedData = {
+    inline def apply(`type`: rich | video | photo | link, version: String): OembedData = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OembedData]
     }
     
-    @scala.inline
-    implicit class OembedDataMutableBuilder[Self <: OembedData] (val x: Self) extends AnyVal {
+    extension [Self <: OembedData](x: Self) {
       
-      @scala.inline
-      def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
+      inline def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthor_nameUndefined: Self = StObject.set(x, "author_name", js.undefined)
+      inline def setAuthor_nameUndefined: Self = StObject.set(x, "author_name", js.undefined)
       
-      @scala.inline
-      def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
+      inline def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthor_urlUndefined: Self = StObject.set(x, "author_url", js.undefined)
+      inline def setAuthor_urlUndefined: Self = StObject.set(x, "author_url", js.undefined)
       
-      @scala.inline
-      def setCache_age(value: String): Self = StObject.set(x, "cache_age", value.asInstanceOf[js.Any])
+      inline def setCache_age(value: String): Self = StObject.set(x, "cache_age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache_ageUndefined: Self = StObject.set(x, "cache_age", js.undefined)
+      inline def setCache_ageUndefined: Self = StObject.set(x, "cache_age", js.undefined)
       
-      @scala.inline
-      def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
+      inline def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider_nameUndefined: Self = StObject.set(x, "provider_name", js.undefined)
+      inline def setProvider_nameUndefined: Self = StObject.set(x, "provider_name", js.undefined)
       
-      @scala.inline
-      def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
+      inline def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider_urlUndefined: Self = StObject.set(x, "provider_url", js.undefined)
+      inline def setProvider_urlUndefined: Self = StObject.set(x, "provider_url", js.undefined)
       
-      @scala.inline
-      def setThumbnail_height(value: Double): Self = StObject.set(x, "thumbnail_height", value.asInstanceOf[js.Any])
+      inline def setThumbnail_height(value: Double): Self = StObject.set(x, "thumbnail_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail_heightUndefined: Self = StObject.set(x, "thumbnail_height", js.undefined)
+      inline def setThumbnail_heightUndefined: Self = StObject.set(x, "thumbnail_height", js.undefined)
       
-      @scala.inline
-      def setThumbnail_url(value: String): Self = StObject.set(x, "thumbnail_url", value.asInstanceOf[js.Any])
+      inline def setThumbnail_url(value: String): Self = StObject.set(x, "thumbnail_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail_urlUndefined: Self = StObject.set(x, "thumbnail_url", js.undefined)
+      inline def setThumbnail_urlUndefined: Self = StObject.set(x, "thumbnail_url", js.undefined)
       
-      @scala.inline
-      def setThumbnail_width(value: Double): Self = StObject.set(x, "thumbnail_width", value.asInstanceOf[js.Any])
+      inline def setThumbnail_width(value: Double): Self = StObject.set(x, "thumbnail_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail_widthUndefined: Self = StObject.set(x, "thumbnail_width", js.undefined)
+      inline def setThumbnail_widthUndefined: Self = StObject.set(x, "thumbnail_width", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: rich | video | photo | link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: rich | video | photo | link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,27 +198,21 @@ object mod {
   }
   object PhotoTypeData {
     
-    @scala.inline
-    def apply(height: Double, url: String, version: String, width: Double): PhotoTypeData = {
+    inline def apply(height: Double, url: String, version: String, width: Double): PhotoTypeData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("photo")
       __obj.asInstanceOf[PhotoTypeData]
     }
     
-    @scala.inline
-    implicit class PhotoTypeDataMutableBuilder[Self <: PhotoTypeData] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoTypeData](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: photo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: photo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,26 +226,20 @@ object mod {
   }
   object Provider {
     
-    @scala.inline
-    def apply(endpoints: js.Array[Endpoint], provider_name: String, provider_url: String): Provider = {
+    inline def apply(endpoints: js.Array[Endpoint], provider_name: String, provider_url: String): Provider = {
       val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], provider_name = provider_name.asInstanceOf[js.Any], provider_url = provider_url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Provider]
     }
     
-    @scala.inline
-    implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
+    extension [Self <: Provider](x: Self) {
       
-      @scala.inline
-      def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
+      inline def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
+      inline def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -318,27 +266,21 @@ object mod {
   }
   object RichTypeData {
     
-    @scala.inline
-    def apply(height: Double, html: String, version: String, width: Double): RichTypeData = {
+    inline def apply(height: Double, html: String, version: String, width: Double): RichTypeData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("rich")
       __obj.asInstanceOf[RichTypeData]
     }
     
-    @scala.inline
-    implicit class RichTypeDataMutableBuilder[Self <: RichTypeData] (val x: Self) extends AnyVal {
+    extension [Self <: RichTypeData](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: rich): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: rich): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,27 +306,21 @@ object mod {
   }
   object VideoTypeData {
     
-    @scala.inline
-    def apply(height: Double, html: String, version: String, width: Double): VideoTypeData = {
+    inline def apply(height: Double, html: String, version: String, width: Double): VideoTypeData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("video")
       __obj.asInstanceOf[VideoTypeData]
     }
     
-    @scala.inline
-    implicit class VideoTypeDataMutableBuilder[Self <: VideoTypeData] (val x: Self) extends AnyVal {
+    extension [Self <: VideoTypeData](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

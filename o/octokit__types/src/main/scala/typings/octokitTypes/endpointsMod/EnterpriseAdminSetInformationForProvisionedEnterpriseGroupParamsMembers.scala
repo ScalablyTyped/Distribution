@@ -10,16 +10,13 @@ trait EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers ex
 }
 object EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers {
   
-  @scala.inline
-  def apply(value: String): EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers = {
+  inline def apply(value: String): EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembersMutableBuilder[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

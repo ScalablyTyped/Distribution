@@ -13,13 +13,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMockDispatch(): mockDispatch[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockDispatch")().asInstanceOf[mockDispatch[js.Any]]
+  inline def createMockDispatch(): mockDispatch[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockDispatch")().asInstanceOf[mockDispatch[js.Any]]
   
-  @scala.inline
-  def createMockStore(): mockStore[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockStore")().asInstanceOf[mockStore[js.Any]]
-  @scala.inline
-  def createMockStore(state: js.Any): mockStore[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockStore")(state.asInstanceOf[js.Any]).asInstanceOf[mockStore[js.Any]]
+  inline def createMockStore(): mockStore[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockStore")().asInstanceOf[mockStore[js.Any]]
+  inline def createMockStore(state: js.Any): mockStore[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockStore")(state.asInstanceOf[js.Any]).asInstanceOf[mockStore[js.Any]]
   
   trait mockDispatch[S] extends StObject {
     
@@ -37,8 +34,7 @@ object mod {
   }
   object mockDispatch {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       dispatch: S => S,
       getAction: js.Any => js.UndefOr[AnyAction],
       getActions: () => js.Array[AnyAction],
@@ -49,23 +45,17 @@ object mod {
       __obj.asInstanceOf[mockDispatch[S]]
     }
     
-    @scala.inline
-    implicit class mockDispatchMutableBuilder[Self <: mockDispatch[?], S] (val x: Self & mockDispatch[S]) extends AnyVal {
+    extension [Self <: mockDispatch[?], S](x: Self & mockDispatch[S]) {
       
-      @scala.inline
-      def setDispatch(value: S => S): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: S => S): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAction(value: js.Any => js.UndefOr[AnyAction]): Self = StObject.set(x, "getAction", js.Any.fromFunction1(value))
+      inline def setGetAction(value: js.Any => js.UndefOr[AnyAction]): Self = StObject.set(x, "getAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetActions(value: () => js.Array[AnyAction]): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
+      inline def setGetActions(value: () => js.Array[AnyAction]): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsActionDispatched(value: AnyAction => Boolean): Self = StObject.set(x, "isActionDispatched", js.Any.fromFunction1(value))
+      inline def setIsActionDispatched(value: AnyAction => Boolean): Self = StObject.set(x, "isActionDispatched", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsActionTypeDispatched(value: js.Any => Boolean): Self = StObject.set(x, "isActionTypeDispatched", js.Any.fromFunction1(value))
+      inline def setIsActionTypeDispatched(value: js.Any => Boolean): Self = StObject.set(x, "isActionTypeDispatched", js.Any.fromFunction1(value))
     }
   }
   

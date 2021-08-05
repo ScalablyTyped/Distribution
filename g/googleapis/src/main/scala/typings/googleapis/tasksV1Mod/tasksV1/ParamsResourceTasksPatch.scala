@@ -34,37 +34,27 @@ trait ParamsResourceTasksPatch
 }
 object ParamsResourceTasksPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceTasksPatch = {
+  inline def apply(): ParamsResourceTasksPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTasksPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTasksPatchMutableBuilder[Self <: ParamsResourceTasksPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTasksPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaTask): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaTask): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
     
-    @scala.inline
-    def setTasklist(value: String): Self = StObject.set(x, "tasklist", value.asInstanceOf[js.Any])
+    inline def setTasklist(value: String): Self = StObject.set(x, "tasklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasklistUndefined: Self = StObject.set(x, "tasklist", js.undefined)
+    inline def setTasklistUndefined: Self = StObject.set(x, "tasklist", js.undefined)
   }
 }

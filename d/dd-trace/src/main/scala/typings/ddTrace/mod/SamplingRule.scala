@@ -25,28 +25,21 @@ trait SamplingRule extends StObject {
 }
 object SamplingRule {
   
-  @scala.inline
-  def apply(sampleRate: Number): SamplingRule = {
+  inline def apply(sampleRate: Number): SamplingRule = {
     val __obj = js.Dynamic.literal(sampleRate = sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingRule]
   }
   
-  @scala.inline
-  implicit class SamplingRuleMutableBuilder[Self <: SamplingRule] (val x: Self) extends AnyVal {
+  extension [Self <: SamplingRule](x: Self) {
     
-    @scala.inline
-    def setName(value: String | RegExp): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | RegExp): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Number): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Number): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: String | RegExp): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String | RegExp): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

@@ -24,25 +24,19 @@ trait SchemaServiceSpecPinnedType extends StObject {
 }
 object SchemaServiceSpecPinnedType {
   
-  @scala.inline
-  def apply(): SchemaServiceSpecPinnedType = {
+  inline def apply(): SchemaServiceSpecPinnedType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServiceSpecPinnedType]
   }
   
-  @scala.inline
-  implicit class SchemaServiceSpecPinnedTypeMutableBuilder[Self <: SchemaServiceSpecPinnedType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServiceSpecPinnedType](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setRevisionName(value: String): Self = StObject.set(x, "revisionName", value.asInstanceOf[js.Any])
+    inline def setRevisionName(value: String): Self = StObject.set(x, "revisionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNameUndefined: Self = StObject.set(x, "revisionName", js.undefined)
+    inline def setRevisionNameUndefined: Self = StObject.set(x, "revisionName", js.undefined)
   }
 }

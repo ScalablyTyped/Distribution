@@ -23,31 +23,23 @@ trait ListDatasetImportJobsRequest extends StObject {
 }
 object ListDatasetImportJobsRequest {
   
-  @scala.inline
-  def apply(): ListDatasetImportJobsRequest = {
+  inline def apply(): ListDatasetImportJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDatasetImportJobsRequest]
   }
   
-  @scala.inline
-  implicit class ListDatasetImportJobsRequestMutableBuilder[Self <: ListDatasetImportJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDatasetImportJobsRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
+    inline def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetArnUndefined: Self = StObject.set(x, "datasetArn", js.undefined)
+    inline def setDatasetArnUndefined: Self = StObject.set(x, "datasetArn", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

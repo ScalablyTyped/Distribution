@@ -17,16 +17,13 @@ trait PostableResource
 }
 object PostableResource {
   
-  @scala.inline
-  def apply(get: RestMethod, post: RestMethod): PostableResource = {
+  inline def apply(get: RestMethod, post: RestMethod): PostableResource = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostableResource]
   }
   
-  @scala.inline
-  implicit class PostableResourceMutableBuilder[Self <: PostableResource] (val x: Self) extends AnyVal {
+  extension [Self <: PostableResource](x: Self) {
     
-    @scala.inline
-    def setPost(value: RestMethod): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: RestMethod): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

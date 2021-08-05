@@ -20,40 +20,29 @@ trait CreativeOptimizationConfiguration extends StObject {
 }
 object CreativeOptimizationConfiguration {
   
-  @scala.inline
-  def apply(): CreativeOptimizationConfiguration = {
+  inline def apply(): CreativeOptimizationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeOptimizationConfiguration]
   }
   
-  @scala.inline
-  implicit class CreativeOptimizationConfigurationMutableBuilder[Self <: CreativeOptimizationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeOptimizationConfiguration](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptimizationActivitys(value: js.Array[OptimizationActivity]): Self = StObject.set(x, "optimizationActivitys", value.asInstanceOf[js.Any])
+    inline def setOptimizationActivitys(value: js.Array[OptimizationActivity]): Self = StObject.set(x, "optimizationActivitys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizationActivitysUndefined: Self = StObject.set(x, "optimizationActivitys", js.undefined)
+    inline def setOptimizationActivitysUndefined: Self = StObject.set(x, "optimizationActivitys", js.undefined)
     
-    @scala.inline
-    def setOptimizationActivitysVarargs(value: OptimizationActivity*): Self = StObject.set(x, "optimizationActivitys", js.Array(value :_*))
+    inline def setOptimizationActivitysVarargs(value: OptimizationActivity*): Self = StObject.set(x, "optimizationActivitys", js.Array(value :_*))
     
-    @scala.inline
-    def setOptimizationModel(value: String): Self = StObject.set(x, "optimizationModel", value.asInstanceOf[js.Any])
+    inline def setOptimizationModel(value: String): Self = StObject.set(x, "optimizationModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizationModelUndefined: Self = StObject.set(x, "optimizationModel", js.undefined)
+    inline def setOptimizationModelUndefined: Self = StObject.set(x, "optimizationModel", js.undefined)
   }
 }

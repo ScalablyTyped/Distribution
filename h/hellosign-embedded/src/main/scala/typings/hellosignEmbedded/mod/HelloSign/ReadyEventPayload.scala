@@ -10,16 +10,13 @@ trait ReadyEventPayload extends StObject {
 }
 object ReadyEventPayload {
   
-  @scala.inline
-  def apply(signatureId: String): ReadyEventPayload = {
+  inline def apply(signatureId: String): ReadyEventPayload = {
     val __obj = js.Dynamic.literal(signatureId = signatureId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadyEventPayload]
   }
   
-  @scala.inline
-  implicit class ReadyEventPayloadMutableBuilder[Self <: ReadyEventPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ReadyEventPayload](x: Self) {
     
-    @scala.inline
-    def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
+    inline def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
   }
 }

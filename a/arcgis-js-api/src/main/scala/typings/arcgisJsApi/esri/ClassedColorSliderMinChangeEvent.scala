@@ -15,23 +15,18 @@ trait ClassedColorSliderMinChangeEvent extends StObject {
 }
 object ClassedColorSliderMinChangeEvent {
   
-  @scala.inline
-  def apply(oldValue: Double, value: Double): ClassedColorSliderMinChangeEvent = {
+  inline def apply(oldValue: Double, value: Double): ClassedColorSliderMinChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("min-change")
     __obj.asInstanceOf[ClassedColorSliderMinChangeEvent]
   }
   
-  @scala.inline
-  implicit class ClassedColorSliderMinChangeEventMutableBuilder[Self <: ClassedColorSliderMinChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedColorSliderMinChangeEvent](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

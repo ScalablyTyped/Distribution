@@ -20,7 +20,7 @@ object accountFollowersFeedMod {
     
     var id: Double | String = js.native
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     var order: js.UndefOr[default] = js.native
     

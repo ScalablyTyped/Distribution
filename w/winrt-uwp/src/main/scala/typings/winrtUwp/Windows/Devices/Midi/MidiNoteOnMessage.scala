@@ -28,8 +28,7 @@ trait MidiNoteOnMessage extends StObject {
 }
 object MidiNoteOnMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: Double,
     note: Double,
     rawData: IBuffer,
@@ -42,25 +41,18 @@ object MidiNoteOnMessage {
     __obj.asInstanceOf[MidiNoteOnMessage]
   }
   
-  @scala.inline
-  implicit class MidiNoteOnMessageMutableBuilder[Self <: MidiNoteOnMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MidiNoteOnMessage](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: Double): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: Double): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

@@ -11,37 +11,31 @@ object atlaskitCalendarStrings {
   sealed trait down
     extends StObject
        with ArrowKeys
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait left
     extends StObject
        with ArrowKeys
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait next extends StObject
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait prev extends StObject
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
+  inline def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
   sealed trait right
     extends StObject
        with ArrowKeys
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait up
     extends StObject
        with ArrowKeys
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  inline def up: up = "up".asInstanceOf[up]
 }

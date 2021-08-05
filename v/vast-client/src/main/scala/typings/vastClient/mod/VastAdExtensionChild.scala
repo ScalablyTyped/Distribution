@@ -14,25 +14,19 @@ trait VastAdExtensionChild extends StObject {
 }
 object VastAdExtensionChild {
   
-  @scala.inline
-  def apply(attributes: VastAdChildAttributes, value: String | Double): VastAdExtensionChild = {
+  inline def apply(attributes: VastAdChildAttributes, value: String | Double): VastAdExtensionChild = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastAdExtensionChild]
   }
   
-  @scala.inline
-  implicit class VastAdExtensionChildMutableBuilder[Self <: VastAdExtensionChild] (val x: Self) extends AnyVal {
+  extension [Self <: VastAdExtensionChild](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: VastAdChildAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: VastAdChildAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

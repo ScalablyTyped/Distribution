@@ -11,6 +11,5 @@ object setWindowRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(params: HeightWidth): js.Promise[HeightWidth] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HeightWidth]]
+  inline def default(params: HeightWidth): js.Promise[HeightWidth] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HeightWidth]]
 }

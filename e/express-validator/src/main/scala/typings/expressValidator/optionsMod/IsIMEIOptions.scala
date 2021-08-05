@@ -10,19 +10,15 @@ trait IsIMEIOptions extends StObject {
 }
 object IsIMEIOptions {
   
-  @scala.inline
-  def apply(): IsIMEIOptions = {
+  inline def apply(): IsIMEIOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsIMEIOptions]
   }
   
-  @scala.inline
-  implicit class IsIMEIOptionsMutableBuilder[Self <: IsIMEIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsIMEIOptions](x: Self) {
     
-    @scala.inline
-    def setAllow_hyphens(value: Boolean): Self = StObject.set(x, "allow_hyphens", value.asInstanceOf[js.Any])
+    inline def setAllow_hyphens(value: Boolean): Self = StObject.set(x, "allow_hyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_hyphensUndefined: Self = StObject.set(x, "allow_hyphens", js.undefined)
+    inline def setAllow_hyphensUndefined: Self = StObject.set(x, "allow_hyphens", js.undefined)
   }
 }

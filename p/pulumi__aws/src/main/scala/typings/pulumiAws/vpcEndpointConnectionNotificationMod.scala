@@ -70,14 +70,10 @@ object vpcEndpointConnectionNotificationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcEndpointConnectionNotificationState): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
+    inline def get(name: String, id: Input[ID], state: VpcEndpointConnectionNotificationState): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
+    inline def get(
       name: String,
       id: Input[ID],
       state: VpcEndpointConnectionNotificationState,
@@ -88,8 +84,7 @@ object vpcEndpointConnectionNotificationMod {
       * Returns true if the given object is an instance of VpcEndpointConnectionNotification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ Boolean]
   }
   
   trait VpcEndpointConnectionNotificationArgs extends StObject {
@@ -116,35 +111,26 @@ object vpcEndpointConnectionNotificationMod {
   }
   object VpcEndpointConnectionNotificationArgs {
     
-    @scala.inline
-    def apply(connectionEvents: Input[js.Array[Input[String]]], connectionNotificationArn: Input[String]): VpcEndpointConnectionNotificationArgs = {
+    inline def apply(connectionEvents: Input[js.Array[Input[String]]], connectionNotificationArn: Input[String]): VpcEndpointConnectionNotificationArgs = {
       val __obj = js.Dynamic.literal(connectionEvents = connectionEvents.asInstanceOf[js.Any], connectionNotificationArn = connectionNotificationArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpcEndpointConnectionNotificationArgs]
     }
     
-    @scala.inline
-    implicit class VpcEndpointConnectionNotificationArgsMutableBuilder[Self <: VpcEndpointConnectionNotificationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcEndpointConnectionNotificationArgs](x: Self) {
       
-      @scala.inline
-      def setConnectionEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connectionEvents", value.asInstanceOf[js.Any])
+      inline def setConnectionEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connectionEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionEventsVarargs(value: Input[String]*): Self = StObject.set(x, "connectionEvents", js.Array(value :_*))
+      inline def setConnectionEventsVarargs(value: Input[String]*): Self = StObject.set(x, "connectionEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectionNotificationArn(value: Input[String]): Self = StObject.set(x, "connectionNotificationArn", value.asInstanceOf[js.Any])
+      inline def setConnectionNotificationArn(value: Input[String]): Self = StObject.set(x, "connectionNotificationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
+      inline def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
       
-      @scala.inline
-      def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointServiceIdUndefined: Self = StObject.set(x, "vpcEndpointServiceId", js.undefined)
+      inline def setVpcEndpointServiceIdUndefined: Self = StObject.set(x, "vpcEndpointServiceId", js.undefined)
     }
   }
   
@@ -182,53 +168,38 @@ object vpcEndpointConnectionNotificationMod {
   }
   object VpcEndpointConnectionNotificationState {
     
-    @scala.inline
-    def apply(): VpcEndpointConnectionNotificationState = {
+    inline def apply(): VpcEndpointConnectionNotificationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcEndpointConnectionNotificationState]
     }
     
-    @scala.inline
-    implicit class VpcEndpointConnectionNotificationStateMutableBuilder[Self <: VpcEndpointConnectionNotificationState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcEndpointConnectionNotificationState](x: Self) {
       
-      @scala.inline
-      def setConnectionEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connectionEvents", value.asInstanceOf[js.Any])
+      inline def setConnectionEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "connectionEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionEventsUndefined: Self = StObject.set(x, "connectionEvents", js.undefined)
+      inline def setConnectionEventsUndefined: Self = StObject.set(x, "connectionEvents", js.undefined)
       
-      @scala.inline
-      def setConnectionEventsVarargs(value: Input[String]*): Self = StObject.set(x, "connectionEvents", js.Array(value :_*))
+      inline def setConnectionEventsVarargs(value: Input[String]*): Self = StObject.set(x, "connectionEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectionNotificationArn(value: Input[String]): Self = StObject.set(x, "connectionNotificationArn", value.asInstanceOf[js.Any])
+      inline def setConnectionNotificationArn(value: Input[String]): Self = StObject.set(x, "connectionNotificationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionNotificationArnUndefined: Self = StObject.set(x, "connectionNotificationArn", js.undefined)
+      inline def setConnectionNotificationArnUndefined: Self = StObject.set(x, "connectionNotificationArn", js.undefined)
       
-      @scala.inline
-      def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      inline def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
+      inline def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
       
-      @scala.inline
-      def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
+      inline def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
       
-      @scala.inline
-      def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointServiceIdUndefined: Self = StObject.set(x, "vpcEndpointServiceId", js.undefined)
+      inline def setVpcEndpointServiceIdUndefined: Self = StObject.set(x, "vpcEndpointServiceId", js.undefined)
     }
   }
 }

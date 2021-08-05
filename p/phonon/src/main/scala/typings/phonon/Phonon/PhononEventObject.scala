@@ -12,19 +12,15 @@ trait PhononEventObject extends StObject {
 }
 object PhononEventObject {
   
-  @scala.inline
-  def apply(animationEnd: String, transitionEnd: String): PhononEventObject = {
+  inline def apply(animationEnd: String, transitionEnd: String): PhononEventObject = {
     val __obj = js.Dynamic.literal(animationEnd = animationEnd.asInstanceOf[js.Any], transitionEnd = transitionEnd.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononEventObject]
   }
   
-  @scala.inline
-  implicit class PhononEventObjectMutableBuilder[Self <: PhononEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PhononEventObject](x: Self) {
     
-    @scala.inline
-    def setAnimationEnd(value: String): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
+    inline def setAnimationEnd(value: String): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionEnd(value: String): Self = StObject.set(x, "transitionEnd", value.asInstanceOf[js.Any])
+    inline def setTransitionEnd(value: String): Self = StObject.set(x, "transitionEnd", value.asInstanceOf[js.Any])
   }
 }

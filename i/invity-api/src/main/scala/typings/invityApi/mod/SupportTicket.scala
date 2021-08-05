@@ -20,37 +20,27 @@ trait SupportTicket extends StObject {
 }
 object SupportTicket {
   
-  @scala.inline
-  def apply(description: String, email: String, name: String, topic: TicketTopic): SupportTicket = {
+  inline def apply(description: String, email: String, name: String, topic: TicketTopic): SupportTicket = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportTicket]
   }
   
-  @scala.inline
-  implicit class SupportTicketMutableBuilder[Self <: SupportTicket] (val x: Self) extends AnyVal {
+  extension [Self <: SupportTicket](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReCaptchaV2Token(value: String): Self = StObject.set(x, "reCaptchaV2Token", value.asInstanceOf[js.Any])
+    inline def setReCaptchaV2Token(value: String): Self = StObject.set(x, "reCaptchaV2Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReCaptchaV2TokenUndefined: Self = StObject.set(x, "reCaptchaV2Token", js.undefined)
+    inline def setReCaptchaV2TokenUndefined: Self = StObject.set(x, "reCaptchaV2Token", js.undefined)
     
-    @scala.inline
-    def setReCaptchaV3Token(value: String): Self = StObject.set(x, "reCaptchaV3Token", value.asInstanceOf[js.Any])
+    inline def setReCaptchaV3Token(value: String): Self = StObject.set(x, "reCaptchaV3Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReCaptchaV3TokenUndefined: Self = StObject.set(x, "reCaptchaV3Token", js.undefined)
+    inline def setReCaptchaV3TokenUndefined: Self = StObject.set(x, "reCaptchaV3Token", js.undefined)
     
-    @scala.inline
-    def setTopic(value: TicketTopic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: TicketTopic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

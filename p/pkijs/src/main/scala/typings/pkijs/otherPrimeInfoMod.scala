@@ -46,13 +46,10 @@ object otherPrimeInfoMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait OtherPrimeInfo extends StObject {
@@ -77,8 +74,7 @@ object otherPrimeInfoMod {
   }
   object OtherPrimeInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coefficient: Integer,
       exponent: Integer,
       fromJSON: JsonOtherPrimeInfo => Unit,
@@ -91,29 +87,21 @@ object otherPrimeInfoMod {
       __obj.asInstanceOf[OtherPrimeInfo]
     }
     
-    @scala.inline
-    implicit class OtherPrimeInfoMutableBuilder[Self <: OtherPrimeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: OtherPrimeInfo](x: Self) {
       
-      @scala.inline
-      def setCoefficient(value: Integer): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
+      inline def setCoefficient(value: Integer): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExponent(value: Integer): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+      inline def setExponent(value: Integer): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromJSON(value: JsonOtherPrimeInfo => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+      inline def setFromJSON(value: JsonOtherPrimeInfo => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrime(value: Integer): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
+      inline def setPrime(value: Integer): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

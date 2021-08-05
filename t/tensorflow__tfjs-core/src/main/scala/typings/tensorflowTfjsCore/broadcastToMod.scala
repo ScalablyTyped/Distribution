@@ -13,13 +13,11 @@ object broadcastToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def broadcastTo[R /* <: Rank */](
+  inline def broadcastTo[R /* <: Rank */](
     x: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def broadcastTo[R /* <: Rank */](
+  inline def broadcastTo[R /* <: Rank */](
     x: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]

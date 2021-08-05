@@ -21,8 +21,7 @@ trait XCompletedExecution
 }
 object XCompletedExecution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     executeWithCompletion: XInteractionHandler => Unit,
     queryInterface: `type` => js.Any,
@@ -32,10 +31,8 @@ object XCompletedExecution {
     __obj.asInstanceOf[XCompletedExecution]
   }
   
-  @scala.inline
-  implicit class XCompletedExecutionMutableBuilder[Self <: XCompletedExecution] (val x: Self) extends AnyVal {
+  extension [Self <: XCompletedExecution](x: Self) {
     
-    @scala.inline
-    def setExecuteWithCompletion(value: XInteractionHandler => Unit): Self = StObject.set(x, "executeWithCompletion", js.Any.fromFunction1(value))
+    inline def setExecuteWithCompletion(value: XInteractionHandler => Unit): Self = StObject.set(x, "executeWithCompletion", js.Any.fromFunction1(value))
   }
 }

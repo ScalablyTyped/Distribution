@@ -33,8 +33,7 @@ trait SingleReference extends StObject {
 }
 object SingleReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Column: Double,
     Flags: Double,
     RelativeColumn: Double,
@@ -47,28 +46,20 @@ object SingleReference {
     __obj.asInstanceOf[SingleReference]
   }
   
-  @scala.inline
-  implicit class SingleReferenceMutableBuilder[Self <: SingleReference] (val x: Self) extends AnyVal {
+  extension [Self <: SingleReference](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeColumn(value: Double): Self = StObject.set(x, "RelativeColumn", value.asInstanceOf[js.Any])
+    inline def setRelativeColumn(value: Double): Self = StObject.set(x, "RelativeColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeRow(value: Double): Self = StObject.set(x, "RelativeRow", value.asInstanceOf[js.Any])
+    inline def setRelativeRow(value: Double): Self = StObject.set(x, "RelativeRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeSheet(value: Double): Self = StObject.set(x, "RelativeSheet", value.asInstanceOf[js.Any])
+    inline def setRelativeSheet(value: Double): Self = StObject.set(x, "RelativeSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
   }
 }

@@ -16,20 +16,16 @@ object sectionConstructorMod {
   }
   object SectionConstructor {
     
-    @scala.inline
-    def apply(outer: OuterSection, themes: ThemesSection): SectionConstructor = {
+    inline def apply(outer: OuterSection, themes: ThemesSection): SectionConstructor = {
       val __obj = js.Dynamic.literal(outer = outer.asInstanceOf[js.Any], themes = themes.asInstanceOf[js.Any])
       __obj.asInstanceOf[SectionConstructor]
     }
     
-    @scala.inline
-    implicit class SectionConstructorMutableBuilder[Self <: SectionConstructor] (val x: Self) extends AnyVal {
+    extension [Self <: SectionConstructor](x: Self) {
       
-      @scala.inline
-      def setOuter(value: OuterSection): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
+      inline def setOuter(value: OuterSection): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemes(value: ThemesSection): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
+      inline def setThemes(value: ThemesSection): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
     }
   }
 }

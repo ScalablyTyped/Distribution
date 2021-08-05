@@ -15,22 +15,17 @@ trait CachePolicyHeadersConfig extends StObject {
 }
 object CachePolicyHeadersConfig {
   
-  @scala.inline
-  def apply(HeaderBehavior: CachePolicyHeaderBehavior): CachePolicyHeadersConfig = {
+  inline def apply(HeaderBehavior: CachePolicyHeaderBehavior): CachePolicyHeadersConfig = {
     val __obj = js.Dynamic.literal(HeaderBehavior = HeaderBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachePolicyHeadersConfig]
   }
   
-  @scala.inline
-  implicit class CachePolicyHeadersConfigMutableBuilder[Self <: CachePolicyHeadersConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CachePolicyHeadersConfig](x: Self) {
     
-    @scala.inline
-    def setHeaderBehavior(value: CachePolicyHeaderBehavior): Self = StObject.set(x, "HeaderBehavior", value.asInstanceOf[js.Any])
+    inline def setHeaderBehavior(value: CachePolicyHeaderBehavior): Self = StObject.set(x, "HeaderBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
   }
 }

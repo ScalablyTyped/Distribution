@@ -163,8 +163,7 @@ object chatMod {
     @JSGlobal("chat")
     @js.native
     def chat: Chat_ = js.native
-    @scala.inline
-    def chat_=(x: Chat_): Unit = js.Dynamic.global.updateDynamic("chat")(x.asInstanceOf[js.Any])
+    inline def chat_=(x: Chat_): Unit = js.Dynamic.global.updateDynamic("chat")(x.asInstanceOf[js.Any])
     
     /* Rewritten from type alias, can be one of: 
       - typings.iitc.iitcStrings.all
@@ -174,14 +173,11 @@ object chatMod {
     trait ChatChannels extends StObject
     object ChatChannels {
       
-      @scala.inline
-      def alerts: typings.iitc.iitcStrings.alerts = "alerts".asInstanceOf[typings.iitc.iitcStrings.alerts]
+      inline def alerts: typings.iitc.iitcStrings.alerts = "alerts".asInstanceOf[typings.iitc.iitcStrings.alerts]
       
-      @scala.inline
-      def all: typings.iitc.iitcStrings.all = "all".asInstanceOf[typings.iitc.iitcStrings.all]
+      inline def all: typings.iitc.iitcStrings.all = "all".asInstanceOf[typings.iitc.iitcStrings.all]
       
-      @scala.inline
-      def faction: typings.iitc.iitcStrings.faction = "faction".asInstanceOf[typings.iitc.iitcStrings.faction]
+      inline def faction: typings.iitc.iitcStrings.faction = "faction".asInstanceOf[typings.iitc.iitcStrings.faction]
     }
     
     trait chatStorage extends StObject {
@@ -192,20 +188,16 @@ object chatMod {
     }
     object chatStorage {
       
-      @scala.inline
-      def apply(newestTimestamp: Double, oldestTimestamp: Double): chatStorage = {
+      inline def apply(newestTimestamp: Double, oldestTimestamp: Double): chatStorage = {
         val __obj = js.Dynamic.literal(newestTimestamp = newestTimestamp.asInstanceOf[js.Any], oldestTimestamp = oldestTimestamp.asInstanceOf[js.Any])
         __obj.asInstanceOf[chatStorage]
       }
       
-      @scala.inline
-      implicit class chatStorageMutableBuilder[Self <: chatStorage] (val x: Self) extends AnyVal {
+      extension [Self <: chatStorage](x: Self) {
         
-        @scala.inline
-        def setNewestTimestamp(value: Double): Self = StObject.set(x, "newestTimestamp", value.asInstanceOf[js.Any])
+        inline def setNewestTimestamp(value: Double): Self = StObject.set(x, "newestTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldestTimestamp(value: Double): Self = StObject.set(x, "oldestTimestamp", value.asInstanceOf[js.Any])
+        inline def setOldestTimestamp(value: Double): Self = StObject.set(x, "oldestTimestamp", value.asInstanceOf[js.Any])
       }
     }
   }

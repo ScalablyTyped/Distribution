@@ -11,22 +11,17 @@ trait DeviceIpBlockCatalog extends StObject {
 }
 object DeviceIpBlockCatalog {
   
-  @scala.inline
-  def apply(): DeviceIpBlockCatalog = {
+  inline def apply(): DeviceIpBlockCatalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceIpBlockCatalog]
   }
   
-  @scala.inline
-  implicit class DeviceIpBlockCatalogMutableBuilder[Self <: DeviceIpBlockCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceIpBlockCatalog](x: Self) {
     
-    @scala.inline
-    def setIpBlocks(value: js.Array[DeviceIpBlock]): Self = StObject.set(x, "ipBlocks", value.asInstanceOf[js.Any])
+    inline def setIpBlocks(value: js.Array[DeviceIpBlock]): Self = StObject.set(x, "ipBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpBlocksUndefined: Self = StObject.set(x, "ipBlocks", js.undefined)
+    inline def setIpBlocksUndefined: Self = StObject.set(x, "ipBlocks", js.undefined)
     
-    @scala.inline
-    def setIpBlocksVarargs(value: DeviceIpBlock*): Self = StObject.set(x, "ipBlocks", js.Array(value :_*))
+    inline def setIpBlocksVarargs(value: DeviceIpBlock*): Self = StObject.set(x, "ipBlocks", js.Array(value :_*))
   }
 }

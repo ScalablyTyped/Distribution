@@ -27,17 +27,14 @@ object toggleButtonMod {
   }
   object ToggleButtonProps {
     
-    @scala.inline
-    def apply(value: Double | String): ToggleButtonProps = {
+    inline def apply(value: Double | String): ToggleButtonProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToggleButtonProps]
     }
     
-    @scala.inline
-    implicit class ToggleButtonPropsMutableBuilder[Self <: ToggleButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleButtonProps](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

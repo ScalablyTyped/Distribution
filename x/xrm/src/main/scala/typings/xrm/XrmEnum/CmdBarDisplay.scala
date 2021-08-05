@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CmdBarDisplay extends StObject
 object CmdBarDisplay {
   
-  @scala.inline
-  def False: `false` = "false".asInstanceOf[`false`]
+  inline def False: `false` = "false".asInstanceOf[`false`]
   
-  @scala.inline
-  def True: `true` = "true".asInstanceOf[`true`]
+  inline def True: `true` = "true".asInstanceOf[`true`]
 }

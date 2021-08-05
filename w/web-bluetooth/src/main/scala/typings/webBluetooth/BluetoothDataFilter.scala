@@ -13,19 +13,15 @@ trait BluetoothDataFilter extends StObject {
 }
 object BluetoothDataFilter {
   
-  @scala.inline
-  def apply(dataPrefix: DataView, mask: DataView): BluetoothDataFilter = {
+  inline def apply(dataPrefix: DataView, mask: DataView): BluetoothDataFilter = {
     val __obj = js.Dynamic.literal(dataPrefix = dataPrefix.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothDataFilter]
   }
   
-  @scala.inline
-  implicit class BluetoothDataFilterMutableBuilder[Self <: BluetoothDataFilter] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothDataFilter](x: Self) {
     
-    @scala.inline
-    def setDataPrefix(value: DataView): Self = StObject.set(x, "dataPrefix", value.asInstanceOf[js.Any])
+    inline def setDataPrefix(value: DataView): Self = StObject.set(x, "dataPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMask(value: DataView): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: DataView): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
   }
 }

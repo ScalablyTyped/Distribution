@@ -10,19 +10,15 @@ trait IgnoreCancelled extends StObject {
 }
 object IgnoreCancelled {
   
-  @scala.inline
-  def apply(): IgnoreCancelled = {
+  inline def apply(): IgnoreCancelled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreCancelled]
   }
   
-  @scala.inline
-  implicit class IgnoreCancelledMutableBuilder[Self <: IgnoreCancelled] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreCancelled](x: Self) {
     
-    @scala.inline
-    def setIgnoreCancelled(value: Boolean): Self = StObject.set(x, "ignoreCancelled", value.asInstanceOf[js.Any])
+    inline def setIgnoreCancelled(value: Boolean): Self = StObject.set(x, "ignoreCancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCancelledUndefined: Self = StObject.set(x, "ignoreCancelled", js.undefined)
+    inline def setIgnoreCancelledUndefined: Self = StObject.set(x, "ignoreCancelled", js.undefined)
   }
 }

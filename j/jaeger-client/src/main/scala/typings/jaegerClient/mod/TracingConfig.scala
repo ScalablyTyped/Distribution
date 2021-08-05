@@ -20,49 +20,35 @@ trait TracingConfig extends StObject {
 }
 object TracingConfig {
   
-  @scala.inline
-  def apply(): TracingConfig = {
+  inline def apply(): TracingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TracingConfig]
   }
   
-  @scala.inline
-  implicit class TracingConfigMutableBuilder[Self <: TracingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TracingConfig](x: Self) {
     
-    @scala.inline
-    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setReporter(value: ReporterConfig): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: ReporterConfig): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
-    @scala.inline
-    def setSampler(value: SamplerConfig): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+    inline def setSampler(value: SamplerConfig): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
+    inline def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
-    @scala.inline
-    def setShareRpcSpan(value: Boolean): Self = StObject.set(x, "shareRpcSpan", value.asInstanceOf[js.Any])
+    inline def setShareRpcSpan(value: Boolean): Self = StObject.set(x, "shareRpcSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareRpcSpanUndefined: Self = StObject.set(x, "shareRpcSpan", js.undefined)
+    inline def setShareRpcSpanUndefined: Self = StObject.set(x, "shareRpcSpan", js.undefined)
     
-    @scala.inline
-    def setTraceId128bit(value: Boolean): Self = StObject.set(x, "traceId128bit", value.asInstanceOf[js.Any])
+    inline def setTraceId128bit(value: Boolean): Self = StObject.set(x, "traceId128bit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceId128bitUndefined: Self = StObject.set(x, "traceId128bit", js.undefined)
+    inline def setTraceId128bitUndefined: Self = StObject.set(x, "traceId128bit", js.undefined)
   }
 }

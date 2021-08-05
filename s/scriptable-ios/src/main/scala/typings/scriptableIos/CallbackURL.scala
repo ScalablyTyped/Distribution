@@ -43,22 +43,17 @@ trait CallbackURL extends StObject {
 }
 object CallbackURL {
   
-  @scala.inline
-  def apply(addParameter: (String, String) => Unit, getURL: () => String, open: () => js.Promise[js.Any]): CallbackURL = {
+  inline def apply(addParameter: (String, String) => Unit, getURL: () => String, open: () => js.Promise[js.Any]): CallbackURL = {
     val __obj = js.Dynamic.literal(addParameter = js.Any.fromFunction2(addParameter), getURL = js.Any.fromFunction0(getURL), open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[CallbackURL]
   }
   
-  @scala.inline
-  implicit class CallbackURLMutableBuilder[Self <: CallbackURL] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackURL](x: Self) {
     
-    @scala.inline
-    def setAddParameter(value: (String, String) => Unit): Self = StObject.set(x, "addParameter", js.Any.fromFunction2(value))
+    inline def setAddParameter(value: (String, String) => Unit): Self = StObject.set(x, "addParameter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+    inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: () => js.Promise[js.Any]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => js.Promise[js.Any]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

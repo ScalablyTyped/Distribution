@@ -12,16 +12,13 @@ trait RouterProps extends StObject {
 }
 object RouterProps {
   
-  @scala.inline
-  def apply(history: History[LocationState]): RouterProps = {
+  inline def apply(history: History[LocationState]): RouterProps = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterProps]
   }
   
-  @scala.inline
-  implicit class RouterPropsMutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
+  extension [Self <: RouterProps](x: Self) {
     
-    @scala.inline
-    def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
   }
 }

@@ -38,49 +38,35 @@ trait ClusterMasterInstanceFleetInstanceTypeConfig extends StObject {
 }
 object ClusterMasterInstanceFleetInstanceTypeConfig {
   
-  @scala.inline
-  def apply(ebsConfigs: js.Array[ClusterMasterInstanceFleetInstanceTypeConfigEbsConfig], instanceType: String): ClusterMasterInstanceFleetInstanceTypeConfig = {
+  inline def apply(ebsConfigs: js.Array[ClusterMasterInstanceFleetInstanceTypeConfigEbsConfig], instanceType: String): ClusterMasterInstanceFleetInstanceTypeConfig = {
     val __obj = js.Dynamic.literal(ebsConfigs = ebsConfigs.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterMasterInstanceFleetInstanceTypeConfig]
   }
   
-  @scala.inline
-  implicit class ClusterMasterInstanceFleetInstanceTypeConfigMutableBuilder[Self <: ClusterMasterInstanceFleetInstanceTypeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterMasterInstanceFleetInstanceTypeConfig](x: Self) {
     
-    @scala.inline
-    def setBidPrice(value: String): Self = StObject.set(x, "bidPrice", value.asInstanceOf[js.Any])
+    inline def setBidPrice(value: String): Self = StObject.set(x, "bidPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceAsPercentageOfOnDemandPrice(value: Double): Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
+    inline def setBidPriceAsPercentageOfOnDemandPrice(value: Double): Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceAsPercentageOfOnDemandPriceUndefined: Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", js.undefined)
+    inline def setBidPriceAsPercentageOfOnDemandPriceUndefined: Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", js.undefined)
     
-    @scala.inline
-    def setBidPriceUndefined: Self = StObject.set(x, "bidPrice", js.undefined)
+    inline def setBidPriceUndefined: Self = StObject.set(x, "bidPrice", js.undefined)
     
-    @scala.inline
-    def setConfigurations(value: js.Array[ClusterMasterInstanceFleetInstanceTypeConfigConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: js.Array[ClusterMasterInstanceFleetInstanceTypeConfigConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: ClusterMasterInstanceFleetInstanceTypeConfigConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: ClusterMasterInstanceFleetInstanceTypeConfigConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
     
-    @scala.inline
-    def setEbsConfigs(value: js.Array[ClusterMasterInstanceFleetInstanceTypeConfigEbsConfig]): Self = StObject.set(x, "ebsConfigs", value.asInstanceOf[js.Any])
+    inline def setEbsConfigs(value: js.Array[ClusterMasterInstanceFleetInstanceTypeConfigEbsConfig]): Self = StObject.set(x, "ebsConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsConfigsVarargs(value: ClusterMasterInstanceFleetInstanceTypeConfigEbsConfig*): Self = StObject.set(x, "ebsConfigs", js.Array(value :_*))
+    inline def setEbsConfigsVarargs(value: ClusterMasterInstanceFleetInstanceTypeConfigEbsConfig*): Self = StObject.set(x, "ebsConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacity(value: Double): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
+    inline def setWeightedCapacity(value: Double): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacityUndefined: Self = StObject.set(x, "weightedCapacity", js.undefined)
+    inline def setWeightedCapacityUndefined: Self = StObject.set(x, "weightedCapacity", js.undefined)
   }
 }

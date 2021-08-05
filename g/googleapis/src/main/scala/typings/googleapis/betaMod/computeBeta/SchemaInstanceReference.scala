@@ -13,19 +13,15 @@ trait SchemaInstanceReference extends StObject {
 }
 object SchemaInstanceReference {
   
-  @scala.inline
-  def apply(): SchemaInstanceReference = {
+  inline def apply(): SchemaInstanceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceReference]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceReferenceMutableBuilder[Self <: SchemaInstanceReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceReference](x: Self) {
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
   }
 }

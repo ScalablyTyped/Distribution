@@ -14,34 +14,25 @@ trait ISavedModel extends StObject {
 }
 object ISavedModel {
   
-  @scala.inline
-  def apply(): ISavedModel = {
+  inline def apply(): ISavedModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISavedModel]
   }
   
-  @scala.inline
-  implicit class ISavedModelMutableBuilder[Self <: ISavedModel] (val x: Self) extends AnyVal {
+  extension [Self <: ISavedModel](x: Self) {
     
-    @scala.inline
-    def setMetaGraphs(value: js.Array[IMetaGraphDef]): Self = StObject.set(x, "metaGraphs", value.asInstanceOf[js.Any])
+    inline def setMetaGraphs(value: js.Array[IMetaGraphDef]): Self = StObject.set(x, "metaGraphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaGraphsNull: Self = StObject.set(x, "metaGraphs", null)
+    inline def setMetaGraphsNull: Self = StObject.set(x, "metaGraphs", null)
     
-    @scala.inline
-    def setMetaGraphsUndefined: Self = StObject.set(x, "metaGraphs", js.undefined)
+    inline def setMetaGraphsUndefined: Self = StObject.set(x, "metaGraphs", js.undefined)
     
-    @scala.inline
-    def setMetaGraphsVarargs(value: IMetaGraphDef*): Self = StObject.set(x, "metaGraphs", js.Array(value :_*))
+    inline def setMetaGraphsVarargs(value: IMetaGraphDef*): Self = StObject.set(x, "metaGraphs", js.Array(value :_*))
     
-    @scala.inline
-    def setSavedModelSchemaVersion(value: Double | String): Self = StObject.set(x, "savedModelSchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSavedModelSchemaVersion(value: Double | String): Self = StObject.set(x, "savedModelSchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedModelSchemaVersionNull: Self = StObject.set(x, "savedModelSchemaVersion", null)
+    inline def setSavedModelSchemaVersionNull: Self = StObject.set(x, "savedModelSchemaVersion", null)
     
-    @scala.inline
-    def setSavedModelSchemaVersionUndefined: Self = StObject.set(x, "savedModelSchemaVersion", js.undefined)
+    inline def setSavedModelSchemaVersionUndefined: Self = StObject.set(x, "savedModelSchemaVersion", js.undefined)
   }
 }

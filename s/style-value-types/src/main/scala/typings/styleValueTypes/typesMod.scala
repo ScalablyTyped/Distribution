@@ -14,14 +14,12 @@ object typesMod {
   trait Color extends StObject
   object Color {
     
-    @scala.inline
-    def HSLA(hue: Double, lightness: Double, saturation: Double): typings.styleValueTypes.typesMod.HSLA = {
+    inline def HSLA(hue: Double, lightness: Double, saturation: Double): typings.styleValueTypes.typesMod.HSLA = {
       val __obj = js.Dynamic.literal(hue = hue.asInstanceOf[js.Any], lightness = lightness.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.styleValueTypes.typesMod.HSLA]
     }
     
-    @scala.inline
-    def RGBA(blue: Double, green: Double, red: Double): typings.styleValueTypes.typesMod.RGBA = {
+    inline def RGBA(blue: Double, green: Double, red: Double): typings.styleValueTypes.typesMod.RGBA = {
       val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.styleValueTypes.typesMod.RGBA]
     }
@@ -41,29 +39,22 @@ object typesMod {
   }
   object HSLA {
     
-    @scala.inline
-    def apply(hue: Double, lightness: Double, saturation: Double): HSLA = {
+    inline def apply(hue: Double, lightness: Double, saturation: Double): HSLA = {
       val __obj = js.Dynamic.literal(hue = hue.asInstanceOf[js.Any], lightness = lightness.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any])
       __obj.asInstanceOf[HSLA]
     }
     
-    @scala.inline
-    implicit class HSLAMutableBuilder[Self <: HSLA] (val x: Self) extends AnyVal {
+    extension [Self <: HSLA](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
+      inline def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+      inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,29 +74,22 @@ object typesMod {
   }
   object RGBA {
     
-    @scala.inline
-    def apply(blue: Double, green: Double, red: Double): RGBA = {
+    inline def apply(blue: Double, green: Double, red: Double): RGBA = {
       val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBA]
     }
     
-    @scala.inline
-    implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
+    extension [Self <: RGBA](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,44 +111,32 @@ object typesMod {
   }
   object ValueType {
     
-    @scala.inline
-    def apply(parse: js.Any => js.Any, test: js.Any => Boolean): ValueType = {
+    inline def apply(parse: js.Any => js.Any, test: js.Any => Boolean): ValueType = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), test = js.Any.fromFunction1(test))
       __obj.asInstanceOf[ValueType]
     }
     
-    @scala.inline
-    implicit class ValueTypeMutableBuilder[Self <: ValueType] (val x: Self) extends AnyVal {
+    extension [Self <: ValueType](x: Self) {
       
-      @scala.inline
-      def setCreateTransformer(value: /* template */ String => Transformer): Self = StObject.set(x, "createTransformer", js.Any.fromFunction1(value))
+      inline def setCreateTransformer(value: /* template */ String => Transformer): Self = StObject.set(x, "createTransformer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateTransformerUndefined: Self = StObject.set(x, "createTransformer", js.undefined)
+      inline def setCreateTransformerUndefined: Self = StObject.set(x, "createTransformer", js.undefined)
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setGetAnimatableNone(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "getAnimatableNone", js.Any.fromFunction1(value))
+      inline def setGetAnimatableNone(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "getAnimatableNone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAnimatableNoneUndefined: Self = StObject.set(x, "getAnimatableNone", js.undefined)
+      inline def setGetAnimatableNoneUndefined: Self = StObject.set(x, "getAnimatableNone", js.undefined)
       
-      @scala.inline
-      def setParse(value: js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTest(value: js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransform(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
 }

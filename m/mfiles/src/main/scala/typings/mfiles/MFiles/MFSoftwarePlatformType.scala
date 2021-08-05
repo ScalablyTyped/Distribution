@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFSoftwarePlatformType extends StObject
 object MFSoftwarePlatformType {
   
-  @scala.inline
-  def Win32: `0` = 0.asInstanceOf[`0`]
+  inline def Win32: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def X64: `1` = 1.asInstanceOf[`1`]
+  inline def X64: `1` = 1.asInstanceOf[`1`]
 }

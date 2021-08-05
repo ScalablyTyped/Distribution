@@ -13,19 +13,15 @@ trait GetApiCacheResponse extends StObject {
 }
 object GetApiCacheResponse {
   
-  @scala.inline
-  def apply(): GetApiCacheResponse = {
+  inline def apply(): GetApiCacheResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetApiCacheResponse]
   }
   
-  @scala.inline
-  implicit class GetApiCacheResponseMutableBuilder[Self <: GetApiCacheResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetApiCacheResponse](x: Self) {
     
-    @scala.inline
-    def setApiCache(value: ApiCache): Self = StObject.set(x, "apiCache", value.asInstanceOf[js.Any])
+    inline def setApiCache(value: ApiCache): Self = StObject.set(x, "apiCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiCacheUndefined: Self = StObject.set(x, "apiCache", js.undefined)
+    inline def setApiCacheUndefined: Self = StObject.set(x, "apiCache", js.undefined)
   }
 }

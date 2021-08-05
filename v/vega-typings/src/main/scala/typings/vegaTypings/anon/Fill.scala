@@ -18,28 +18,21 @@ trait Fill extends StObject {
 }
 object Fill {
   
-  @scala.inline
-  def apply(fill: Double, height: Double, width: Double, x: Double, y: Double): Fill = {
+  inline def apply(fill: Double, height: Double, width: Double, x: Double, y: Double): Fill = {
     val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
   
-  @scala.inline
-  implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
+  extension [Self <: Fill](x: Self) {
     
-    @scala.inline
-    def setFill(value: Double): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Double): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -26,7 +26,7 @@ trait AddressList extends StObject {
   
   val Name: String
   
-  @JSName("Outlook.AddressList_typekey")
+  /* private */ @JSName("Outlook.AddressList_typekey")
   var OutlookDotAddressList_typekey: AddressList
   
   val Parent: js.Any
@@ -39,8 +39,7 @@ trait AddressList extends StObject {
 }
 object AddressList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddressEntries: AddressEntries,
     AddressListType: OlAddressListType,
     Application: Application,
@@ -62,52 +61,36 @@ object AddressList {
     __obj.asInstanceOf[AddressList]
   }
   
-  @scala.inline
-  implicit class AddressListMutableBuilder[Self <: AddressList] (val x: Self) extends AnyVal {
+  extension [Self <: AddressList](x: Self) {
     
-    @scala.inline
-    def setAddressEntries(value: AddressEntries): Self = StObject.set(x, "AddressEntries", value.asInstanceOf[js.Any])
+    inline def setAddressEntries(value: AddressEntries): Self = StObject.set(x, "AddressEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressListType(value: OlAddressListType): Self = StObject.set(x, "AddressListType", value.asInstanceOf[js.Any])
+    inline def setAddressListType(value: OlAddressListType): Self = StObject.set(x, "AddressListType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContactsFolder(value: () => Folder): Self = StObject.set(x, "GetContactsFolder", js.Any.fromFunction0(value))
+    inline def setGetContactsFolder(value: () => Folder): Self = StObject.set(x, "GetContactsFolder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInitialAddressList(value: Boolean): Self = StObject.set(x, "IsInitialAddressList", value.asInstanceOf[js.Any])
+    inline def setIsInitialAddressList(value: Boolean): Self = StObject.set(x, "IsInitialAddressList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotAddressList_typekey(value: AddressList): Self = StObject.set(x, "Outlook.AddressList_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotAddressList_typekey(value: AddressList): Self = StObject.set(x, "Outlook.AddressList_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
+    inline def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionOrder(value: Double): Self = StObject.set(x, "ResolutionOrder", value.asInstanceOf[js.Any])
+    inline def setResolutionOrder(value: Double): Self = StObject.set(x, "ResolutionOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

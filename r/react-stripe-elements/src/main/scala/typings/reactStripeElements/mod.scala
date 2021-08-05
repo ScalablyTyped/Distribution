@@ -164,10 +164,8 @@ object mod {
     def this(props: StripeProviderProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P & InjectedStripeProps]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectStripe")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
-  @scala.inline
-  def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P & InjectedStripeProps], componentOptions: InjectOptions): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("injectStripe")(WrappedComponent.asInstanceOf[js.Any], componentOptions.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
+  inline def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P & InjectedStripeProps]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectStripe")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
+  inline def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P & InjectedStripeProps], componentOptions: InjectOptions): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("injectStripe")(WrappedComponent.asInstanceOf[js.Any], componentOptions.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
   object ReactStripeElements {
     
@@ -193,56 +191,40 @@ object mod {
     }
     object ElementProps {
       
-      @scala.inline
-      def apply(): ElementProps = {
+      inline def apply(): ElementProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ElementProps]
       }
       
-      @scala.inline
-      implicit class ElementPropsMutableBuilder[Self <: ElementProps] (val x: Self) extends AnyVal {
+      extension [Self <: ElementProps](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setElementRef(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
+        inline def setElementRef(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
+        inline def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setOnBlur(value: /* event */ ElementChangeResponse => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+        inline def setOnBlur(value: /* event */ ElementChangeResponse => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+        inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
         
-        @scala.inline
-        def setOnChange(value: /* event */ ElementChangeResponse => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: /* event */ ElementChangeResponse => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+        inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        @scala.inline
-        def setOnFocus(value: /* event */ ElementChangeResponse => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+        inline def setOnFocus(value: /* event */ ElementChangeResponse => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+        inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
         
-        @scala.inline
-        def setOnReady(value: /* el */ HTMLStripeElement => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+        inline def setOnReady(value: /* el */ HTMLStripeElement => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+        inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       }
     }
     
@@ -256,20 +238,16 @@ object mod {
     }
     object InjectOptions {
       
-      @scala.inline
-      def apply(): InjectOptions = {
+      inline def apply(): InjectOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InjectOptions]
       }
       
-      @scala.inline
-      implicit class InjectOptionsMutableBuilder[Self <: InjectOptions] (val x: Self) extends AnyVal {
+      extension [Self <: InjectOptions](x: Self) {
         
-        @scala.inline
-        def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
+        inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
+        inline def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
       }
     }
     
@@ -281,26 +259,20 @@ object mod {
     }
     object InjectedStripeProps {
       
-      @scala.inline
-      def apply(): InjectedStripeProps = {
+      inline def apply(): InjectedStripeProps = {
         val __obj = js.Dynamic.literal(elements = null, stripe = null)
         __obj.asInstanceOf[InjectedStripeProps]
       }
       
-      @scala.inline
-      implicit class InjectedStripePropsMutableBuilder[Self <: InjectedStripeProps] (val x: Self) extends AnyVal {
+      extension [Self <: InjectedStripeProps](x: Self) {
         
-        @scala.inline
-        def setElements(value: typings.stripeV3.stripe.elements.Elements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+        inline def setElements(value: typings.stripeV3.stripe.elements.Elements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementsNull: Self = StObject.set(x, "elements", null)
+        inline def setElementsNull: Self = StObject.set(x, "elements", null)
         
-        @scala.inline
-        def setStripe(value: StripeProps): Self = StObject.set(x, "stripe", value.asInstanceOf[js.Any])
+        inline def setStripe(value: StripeProps): Self = StObject.set(x, "stripe", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStripeNull: Self = StObject.set(x, "stripe", null)
+        inline def setStripeNull: Self = StObject.set(x, "stripe", null)
       }
     }
     
@@ -312,20 +284,16 @@ object mod {
     }
     object PaymentRequestButtonElementProps {
       
-      @scala.inline
-      def apply(): PaymentRequestButtonElementProps = {
+      inline def apply(): PaymentRequestButtonElementProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PaymentRequestButtonElementProps]
       }
       
-      @scala.inline
-      implicit class PaymentRequestButtonElementPropsMutableBuilder[Self <: PaymentRequestButtonElementProps] (val x: Self) extends AnyVal {
+      extension [Self <: PaymentRequestButtonElementProps](x: Self) {
         
-        @scala.inline
-        def setOnClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+        inline def setOnClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+        inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       }
     }
     
@@ -424,20 +392,16 @@ object mod {
     }
     object StripeProviderOptions {
       
-      @scala.inline
-      def apply(): StripeProviderOptions = {
+      inline def apply(): StripeProviderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StripeProviderOptions]
       }
       
-      @scala.inline
-      implicit class StripeProviderOptionsMutableBuilder[Self <: StripeProviderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: StripeProviderOptions](x: Self) {
         
-        @scala.inline
-        def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
+        inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
+        inline def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
       }
     }
     
@@ -448,14 +412,12 @@ object mod {
     trait StripeProviderProps extends StObject
     object StripeProviderProps {
       
-      @scala.inline
-      def apiKeyneverundefinedstrip(): typings.reactStripeElements.anon.apiKeyneverundefinedstrip = {
+      inline def apiKeyneverundefinedstrip(): typings.reactStripeElements.anon.apiKeyneverundefinedstrip = {
         val __obj = js.Dynamic.literal(stripe = null)
         __obj.asInstanceOf[typings.reactStripeElements.anon.apiKeyneverundefinedstrip]
       }
       
-      @scala.inline
-      def apiKeystringstripeneverun(apiKey: String): typings.reactStripeElements.anon.apiKeystringstripeneverun = {
+      inline def apiKeystringstripeneverun(apiKey: String): typings.reactStripeElements.anon.apiKeystringstripeneverun = {
         val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.reactStripeElements.anon.apiKeystringstripeneverun]
       }
@@ -469,20 +431,16 @@ object mod {
     }
     object TokenOptions {
       
-      @scala.inline
-      def apply(): TokenOptions = {
+      inline def apply(): TokenOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TokenOptions]
       }
       
-      @scala.inline
-      implicit class TokenOptionsMutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TokenOptions](x: Self) {
         
-        @scala.inline
-        def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -501,26 +459,19 @@ object mod {
     trait TokenType extends StObject
     object TokenType {
       
-      @scala.inline
-      def card: typings.reactStripeElements.reactStripeElementsStrings.card = "card".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.card]
+      inline def card: typings.reactStripeElements.reactStripeElementsStrings.card = "card".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.card]
       
-      @scala.inline
-      def cardCvc: typings.reactStripeElements.reactStripeElementsStrings.cardCvc = "cardCvc".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardCvc]
+      inline def cardCvc: typings.reactStripeElements.reactStripeElementsStrings.cardCvc = "cardCvc".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardCvc]
       
-      @scala.inline
-      def cardExpiry: typings.reactStripeElements.reactStripeElementsStrings.cardExpiry = "cardExpiry".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardExpiry]
+      inline def cardExpiry: typings.reactStripeElements.reactStripeElementsStrings.cardExpiry = "cardExpiry".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardExpiry]
       
-      @scala.inline
-      def cardNumber: typings.reactStripeElements.reactStripeElementsStrings.cardNumber = "cardNumber".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardNumber]
+      inline def cardNumber: typings.reactStripeElements.reactStripeElementsStrings.cardNumber = "cardNumber".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardNumber]
       
-      @scala.inline
-      def iban: typings.reactStripeElements.reactStripeElementsStrings.iban = "iban".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.iban]
+      inline def iban: typings.reactStripeElements.reactStripeElementsStrings.iban = "iban".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.iban]
       
-      @scala.inline
-      def idealBank: typings.reactStripeElements.reactStripeElementsStrings.idealBank = "idealBank".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.idealBank]
+      inline def idealBank: typings.reactStripeElements.reactStripeElementsStrings.idealBank = "idealBank".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.idealBank]
       
-      @scala.inline
-      def paymentRequestButton: typings.reactStripeElements.reactStripeElementsStrings.paymentRequestButton = "paymentRequestButton".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.paymentRequestButton]
+      inline def paymentRequestButton: typings.reactStripeElements.reactStripeElementsStrings.paymentRequestButton = "paymentRequestButton".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.paymentRequestButton]
     }
   }
 }

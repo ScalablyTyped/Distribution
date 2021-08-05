@@ -69,74 +69,52 @@ object documentCardImageTypesMod {
   }
   object IDocumentCardImageProps {
     
-    @scala.inline
-    def apply(): IDocumentCardImageProps = {
+    inline def apply(): IDocumentCardImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDocumentCardImageProps]
     }
     
-    @scala.inline
-    implicit class IDocumentCardImagePropsMutableBuilder[Self <: IDocumentCardImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardImageProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IDocumentCardImage]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IDocumentCardImage]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IDocumentCardImage | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IDocumentCardImage | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIconProps(value: IIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
+      inline def setIconProps(value: IIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
+      inline def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
       
-      @scala.inline
-      def setImageFit(value: ImageFit): Self = StObject.set(x, "imageFit", value.asInstanceOf[js.Any])
+      inline def setImageFit(value: ImageFit): Self = StObject.set(x, "imageFit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageFitUndefined: Self = StObject.set(x, "imageFit", js.undefined)
+      inline def setImageFitUndefined: Self = StObject.set(x, "imageFit", js.undefined)
       
-      @scala.inline
-      def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
+      inline def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSrcUndefined: Self = StObject.set(x, "imageSrc", js.undefined)
+      inline def setImageSrcUndefined: Self = StObject.set(x, "imageSrc", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IDocumentCardImageStyleProps, IDocumentCardImageStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IDocumentCardImageStyleProps, IDocumentCardImageStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IDocumentCardImageStyleProps => DeepPartial[IDocumentCardImageStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IDocumentCardImageStyleProps => DeepPartial[IDocumentCardImageStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -154,50 +132,36 @@ object documentCardImageTypesMod {
   }
   object IDocumentCardImageStyles {
     
-    @scala.inline
-    def apply(): IDocumentCardImageStyles = {
+    inline def apply(): IDocumentCardImageStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDocumentCardImageStyles]
     }
     
-    @scala.inline
-    implicit class IDocumentCardImageStylesMutableBuilder[Self <: IDocumentCardImageStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardImageStyles](x: Self) {
       
-      @scala.inline
-      def setCenteredIcon(value: IStyle): Self = StObject.set(x, "centeredIcon", value.asInstanceOf[js.Any])
+      inline def setCenteredIcon(value: IStyle): Self = StObject.set(x, "centeredIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredIconNull: Self = StObject.set(x, "centeredIcon", null)
+      inline def setCenteredIconNull: Self = StObject.set(x, "centeredIcon", null)
       
-      @scala.inline
-      def setCenteredIconUndefined: Self = StObject.set(x, "centeredIcon", js.undefined)
+      inline def setCenteredIconUndefined: Self = StObject.set(x, "centeredIcon", js.undefined)
       
-      @scala.inline
-      def setCenteredIconWrapper(value: IStyle): Self = StObject.set(x, "centeredIconWrapper", value.asInstanceOf[js.Any])
+      inline def setCenteredIconWrapper(value: IStyle): Self = StObject.set(x, "centeredIconWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredIconWrapperNull: Self = StObject.set(x, "centeredIconWrapper", null)
+      inline def setCenteredIconWrapperNull: Self = StObject.set(x, "centeredIconWrapper", null)
       
-      @scala.inline
-      def setCenteredIconWrapperUndefined: Self = StObject.set(x, "centeredIconWrapper", js.undefined)
+      inline def setCenteredIconWrapperUndefined: Self = StObject.set(x, "centeredIconWrapper", js.undefined)
       
-      @scala.inline
-      def setCornerIcon(value: IStyle): Self = StObject.set(x, "cornerIcon", value.asInstanceOf[js.Any])
+      inline def setCornerIcon(value: IStyle): Self = StObject.set(x, "cornerIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerIconNull: Self = StObject.set(x, "cornerIcon", null)
+      inline def setCornerIconNull: Self = StObject.set(x, "cornerIcon", null)
       
-      @scala.inline
-      def setCornerIconUndefined: Self = StObject.set(x, "cornerIcon", js.undefined)
+      inline def setCornerIconUndefined: Self = StObject.set(x, "cornerIcon", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

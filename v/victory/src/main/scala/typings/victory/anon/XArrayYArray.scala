@@ -15,25 +15,19 @@ trait XArrayYArray
 }
 object XArrayYArray {
   
-  @scala.inline
-  def apply(x: js.Array[String], y: js.Array[String]): XArrayYArray = {
+  inline def apply(x: js.Array[String], y: js.Array[String]): XArrayYArray = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[XArrayYArray]
   }
   
-  @scala.inline
-  implicit class XArrayYArrayMutableBuilder[Self <: XArrayYArray] (val x: Self) extends AnyVal {
+  extension [Self <: XArrayYArray](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Array[String]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Array[String]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
     
-    @scala.inline
-    def setY(value: js.Array[String]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: js.Array[String]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

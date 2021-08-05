@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TableOfContents")
 @js.native
-class TableOfContents protected ()
+/* private */ class TableOfContents ()
   extends StObject
      with typings.activexWord.Word.TableOfContents {
   
@@ -65,7 +65,7 @@ class TableOfContents protected ()
   /* CompleteClass */
   var UseHyperlinks: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TableOfContents_typekey")
   var WordDotTableOfContents_typekey: typings.activexWord.Word.TableOfContents = js.native
 }

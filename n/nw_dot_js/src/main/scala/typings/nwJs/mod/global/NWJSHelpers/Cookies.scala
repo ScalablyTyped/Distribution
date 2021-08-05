@@ -59,8 +59,7 @@ trait Cookies extends StObject {
 }
 object Cookies {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: (CookiesGetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit,
     getAll: (CookiesGetAllDetails, js.Function1[/* cookies */ js.UndefOr[js.Array[Cookie]], Unit]) => Unit,
     onChanged: AddListener,
@@ -71,26 +70,20 @@ object Cookies {
     __obj.asInstanceOf[Cookies]
   }
   
-  @scala.inline
-  implicit class CookiesMutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
+  extension [Self <: Cookies](x: Self) {
     
-    @scala.inline
-    def setGet(value: (CookiesGetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (CookiesGetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAll(
+    inline def setGetAll(
       value: (CookiesGetAllDetails, js.Function1[/* cookies */ js.UndefOr[js.Array[Cookie]], Unit]) => Unit
     ): Self = StObject.set(x, "getAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnChanged(value: AddListener): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
+    inline def setOnChanged(value: AddListener): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(
+    inline def setRemove(
       value: (CookiesRemoveDetails, js.Function1[/* details */ js.UndefOr[CookiesRemovedDetails], Unit]) => Unit
     ): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet(value: (CookiesSetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (CookiesSetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

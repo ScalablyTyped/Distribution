@@ -18,22 +18,17 @@ trait DeleteOriginRequestPolicyRequest extends StObject {
 }
 object DeleteOriginRequestPolicyRequest {
   
-  @scala.inline
-  def apply(Id: String): DeleteOriginRequestPolicyRequest = {
+  inline def apply(Id: String): DeleteOriginRequestPolicyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOriginRequestPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOriginRequestPolicyRequestMutableBuilder[Self <: DeleteOriginRequestPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOriginRequestPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

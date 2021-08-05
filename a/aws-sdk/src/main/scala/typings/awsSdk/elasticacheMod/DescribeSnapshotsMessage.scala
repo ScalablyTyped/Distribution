@@ -43,55 +43,39 @@ trait DescribeSnapshotsMessage extends StObject {
 }
 object DescribeSnapshotsMessage {
   
-  @scala.inline
-  def apply(): DescribeSnapshotsMessage = {
+  inline def apply(): DescribeSnapshotsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSnapshotsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeSnapshotsMessageMutableBuilder[Self <: DescribeSnapshotsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSnapshotsMessage](x: Self) {
     
-    @scala.inline
-    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
+    inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
+    inline def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
+    inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
     
-    @scala.inline
-    def setShowNodeGroupConfig(value: BooleanOptional): Self = StObject.set(x, "ShowNodeGroupConfig", value.asInstanceOf[js.Any])
+    inline def setShowNodeGroupConfig(value: BooleanOptional): Self = StObject.set(x, "ShowNodeGroupConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNodeGroupConfigUndefined: Self = StObject.set(x, "ShowNodeGroupConfig", js.undefined)
+    inline def setShowNodeGroupConfigUndefined: Self = StObject.set(x, "ShowNodeGroupConfig", js.undefined)
     
-    @scala.inline
-    def setSnapshotName(value: String): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
+    inline def setSnapshotName(value: String): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotNameUndefined: Self = StObject.set(x, "SnapshotName", js.undefined)
+    inline def setSnapshotNameUndefined: Self = StObject.set(x, "SnapshotName", js.undefined)
     
-    @scala.inline
-    def setSnapshotSource(value: String): Self = StObject.set(x, "SnapshotSource", value.asInstanceOf[js.Any])
+    inline def setSnapshotSource(value: String): Self = StObject.set(x, "SnapshotSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotSourceUndefined: Self = StObject.set(x, "SnapshotSource", js.undefined)
+    inline def setSnapshotSourceUndefined: Self = StObject.set(x, "SnapshotSource", js.undefined)
   }
 }

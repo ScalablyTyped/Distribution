@@ -18,25 +18,19 @@ trait DominantLanguage extends StObject {
 }
 object DominantLanguage {
   
-  @scala.inline
-  def apply(): DominantLanguage = {
+  inline def apply(): DominantLanguage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DominantLanguage]
   }
   
-  @scala.inline
-  implicit class DominantLanguageMutableBuilder[Self <: DominantLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: DominantLanguage](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
   }
 }

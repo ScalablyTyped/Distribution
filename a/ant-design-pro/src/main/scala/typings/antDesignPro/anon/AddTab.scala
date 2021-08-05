@@ -12,19 +12,15 @@ trait AddTab extends StObject {
 }
 object AddTab {
   
-  @scala.inline
-  def apply(addTab: js.Any => Unit, removeTab: js.Any => Unit): AddTab = {
+  inline def apply(addTab: js.Any => Unit, removeTab: js.Any => Unit): AddTab = {
     val __obj = js.Dynamic.literal(addTab = js.Any.fromFunction1(addTab), removeTab = js.Any.fromFunction1(removeTab))
     __obj.asInstanceOf[AddTab]
   }
   
-  @scala.inline
-  implicit class AddTabMutableBuilder[Self <: AddTab] (val x: Self) extends AnyVal {
+  extension [Self <: AddTab](x: Self) {
     
-    @scala.inline
-    def setAddTab(value: js.Any => Unit): Self = StObject.set(x, "addTab", js.Any.fromFunction1(value))
+    inline def setAddTab(value: js.Any => Unit): Self = StObject.set(x, "addTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTab(value: js.Any => Unit): Self = StObject.set(x, "removeTab", js.Any.fromFunction1(value))
+    inline def setRemoveTab(value: js.Any => Unit): Self = StObject.set(x, "removeTab", js.Any.fromFunction1(value))
   }
 }

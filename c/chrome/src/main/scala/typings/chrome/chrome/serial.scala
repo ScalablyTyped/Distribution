@@ -64,74 +64,52 @@ object serial {
   }
   object ConnectionInfo {
     
-    @scala.inline
-    def apply(bufferSize: Double, name: String, paused: Boolean, peristent: Boolean): ConnectionInfo = {
+    inline def apply(bufferSize: Double, name: String, paused: Boolean, peristent: Boolean): ConnectionInfo = {
       val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], peristent = peristent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionInfo]
     }
     
-    @scala.inline
-    implicit class ConnectionInfoMutableBuilder[Self <: ConnectionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionInfo](x: Self) {
       
-      @scala.inline
-      def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+      inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+      inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
       
-      @scala.inline
-      def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+      inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
       
-      @scala.inline
-      def setCtsFlowControl(value: Boolean): Self = StObject.set(x, "ctsFlowControl", value.asInstanceOf[js.Any])
+      inline def setCtsFlowControl(value: Boolean): Self = StObject.set(x, "ctsFlowControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtsFlowControlUndefined: Self = StObject.set(x, "ctsFlowControl", js.undefined)
+      inline def setCtsFlowControlUndefined: Self = StObject.set(x, "ctsFlowControl", js.undefined)
       
-      @scala.inline
-      def setDataBits(value: seven | eight): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
+      inline def setDataBits(value: seven | eight): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
+      inline def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParityBit(value: no | odd | even): Self = StObject.set(x, "parityBit", value.asInstanceOf[js.Any])
+      inline def setParityBit(value: no | odd | even): Self = StObject.set(x, "parityBit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParityBitUndefined: Self = StObject.set(x, "parityBit", js.undefined)
+      inline def setParityBitUndefined: Self = StObject.set(x, "parityBit", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeristent(value: Boolean): Self = StObject.set(x, "peristent", value.asInstanceOf[js.Any])
+      inline def setPeristent(value: Boolean): Self = StObject.set(x, "peristent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiveTimeout(value: Double): Self = StObject.set(x, "receiveTimeout", value.asInstanceOf[js.Any])
+      inline def setReceiveTimeout(value: Double): Self = StObject.set(x, "receiveTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiveTimeoutUndefined: Self = StObject.set(x, "receiveTimeout", js.undefined)
+      inline def setReceiveTimeoutUndefined: Self = StObject.set(x, "receiveTimeout", js.undefined)
       
-      @scala.inline
-      def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
+      inline def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
+      inline def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
       
-      @scala.inline
-      def setStopBits(value: one | two): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
+      inline def setStopBits(value: one | two): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
+      inline def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
     }
   }
   
@@ -178,74 +156,52 @@ object serial {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(): ConnectionOptions = {
+    inline def apply(): ConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+      inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+      inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
       
-      @scala.inline
-      def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setCtsFlowControl(value: Boolean): Self = StObject.set(x, "ctsFlowControl", value.asInstanceOf[js.Any])
+      inline def setCtsFlowControl(value: Boolean): Self = StObject.set(x, "ctsFlowControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtsFlowControlUndefined: Self = StObject.set(x, "ctsFlowControl", js.undefined)
+      inline def setCtsFlowControlUndefined: Self = StObject.set(x, "ctsFlowControl", js.undefined)
       
-      @scala.inline
-      def setDataBits(value: seven | eight): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
+      inline def setDataBits(value: seven | eight): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
+      inline def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParityBit(value: no | odd | even): Self = StObject.set(x, "parityBit", value.asInstanceOf[js.Any])
+      inline def setParityBit(value: no | odd | even): Self = StObject.set(x, "parityBit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParityBitUndefined: Self = StObject.set(x, "parityBit", js.undefined)
+      inline def setParityBitUndefined: Self = StObject.set(x, "parityBit", js.undefined)
       
-      @scala.inline
-      def setPeristent(value: Boolean): Self = StObject.set(x, "peristent", value.asInstanceOf[js.Any])
+      inline def setPeristent(value: Boolean): Self = StObject.set(x, "peristent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeristentUndefined: Self = StObject.set(x, "peristent", js.undefined)
+      inline def setPeristentUndefined: Self = StObject.set(x, "peristent", js.undefined)
       
-      @scala.inline
-      def setReceiveTimeout(value: Double): Self = StObject.set(x, "receiveTimeout", value.asInstanceOf[js.Any])
+      inline def setReceiveTimeout(value: Double): Self = StObject.set(x, "receiveTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiveTimeoutUndefined: Self = StObject.set(x, "receiveTimeout", js.undefined)
+      inline def setReceiveTimeoutUndefined: Self = StObject.set(x, "receiveTimeout", js.undefined)
       
-      @scala.inline
-      def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
+      inline def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
+      inline def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
       
-      @scala.inline
-      def setStopBits(value: one | two): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
+      inline def setStopBits(value: one | two): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
+      inline def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
     }
   }
   
@@ -265,35 +221,26 @@ object serial {
   }
   object DeviceInfo {
     
-    @scala.inline
-    def apply(path: String): DeviceInfo = {
+    inline def apply(path: String): DeviceInfo = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    @scala.inline
-    implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceInfo](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: Double): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: Double): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+      inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       
-      @scala.inline
-      def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
+      inline def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
     }
   }
   
@@ -309,20 +256,16 @@ object serial {
     }
     object OnReceiveInfo {
       
-      @scala.inline
-      def apply(connectionId: Double, data: ArrayBuffer): OnReceiveInfo = {
+      inline def apply(connectionId: Double, data: ArrayBuffer): OnReceiveInfo = {
         val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
         __obj.asInstanceOf[OnReceiveInfo]
       }
       
-      @scala.inline
-      implicit class OnReceiveInfoMutableBuilder[Self <: OnReceiveInfo] (val x: Self) extends AnyVal {
+      extension [Self <: OnReceiveInfo](x: Self) {
         
-        @scala.inline
-        def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+        inline def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -339,20 +282,16 @@ object serial {
     }
     object OnReceiveErrorInfo {
       
-      @scala.inline
-      def apply(connectionId: Double, error: ArrayBuffer): OnReceiveErrorInfo = {
+      inline def apply(connectionId: Double, error: ArrayBuffer): OnReceiveErrorInfo = {
         val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[OnReceiveErrorInfo]
       }
       
-      @scala.inline
-      implicit class OnReceiveErrorInfoMutableBuilder[Self <: OnReceiveErrorInfo] (val x: Self) extends AnyVal {
+      extension [Self <: OnReceiveErrorInfo](x: Self) {
         
-        @scala.inline
-        def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+        inline def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: ArrayBuffer): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: ArrayBuffer): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -28,37 +28,27 @@ trait LoadBasedAutoScalingConfiguration extends StObject {
 }
 object LoadBasedAutoScalingConfiguration {
   
-  @scala.inline
-  def apply(): LoadBasedAutoScalingConfiguration = {
+  inline def apply(): LoadBasedAutoScalingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBasedAutoScalingConfiguration]
   }
   
-  @scala.inline
-  implicit class LoadBasedAutoScalingConfigurationMutableBuilder[Self <: LoadBasedAutoScalingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBasedAutoScalingConfiguration](x: Self) {
     
-    @scala.inline
-    def setDownScaling(value: AutoScalingThresholds): Self = StObject.set(x, "DownScaling", value.asInstanceOf[js.Any])
+    inline def setDownScaling(value: AutoScalingThresholds): Self = StObject.set(x, "DownScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownScalingUndefined: Self = StObject.set(x, "DownScaling", js.undefined)
+    inline def setDownScalingUndefined: Self = StObject.set(x, "DownScaling", js.undefined)
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "Enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "Enable", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
     
-    @scala.inline
-    def setUpScaling(value: AutoScalingThresholds): Self = StObject.set(x, "UpScaling", value.asInstanceOf[js.Any])
+    inline def setUpScaling(value: AutoScalingThresholds): Self = StObject.set(x, "UpScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpScalingUndefined: Self = StObject.set(x, "UpScaling", js.undefined)
+    inline def setUpScalingUndefined: Self = StObject.set(x, "UpScaling", js.undefined)
   }
 }

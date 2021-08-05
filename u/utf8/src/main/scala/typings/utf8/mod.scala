@@ -15,16 +15,14 @@ object mod {
     * It throws an error when malformed UTF-8 is detected.
     * @param {string} byteString
     */
-  @scala.inline
-  def decode(byteString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(byteString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(byteString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(byteString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Encodes any given JavaScript string (string) as UTF-8, and returns the UTF-8-encoded version of the string.
     * It throws an error if the input string contains a non-scalar value, i.e. a lone surrogate.
     * @param {string} inputString
     */
-  @scala.inline
-  def encode(inputString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(inputString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(inputString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(inputString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * A string representing the semantic version number.
@@ -32,6 +30,5 @@ object mod {
   @JSImport("utf8", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

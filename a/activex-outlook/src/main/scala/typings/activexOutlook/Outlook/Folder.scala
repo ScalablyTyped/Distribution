@@ -71,7 +71,7 @@ trait Folder extends StObject {
   
   var Name: String = js.native
   
-  @JSName("Outlook.Folder_typekey")
+  /* private */ @JSName("Outlook.Folder_typekey")
   var OutlookDotFolder_typekey: Folder = js.native
   
   val Parent: js.Any = js.native

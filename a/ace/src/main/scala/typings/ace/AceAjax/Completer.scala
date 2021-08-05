@@ -24,22 +24,17 @@ trait Completer extends StObject {
 }
 object Completer {
   
-  @scala.inline
-  def apply(getCompletions: (Editor, IEditSession, Position, String, CompletionCallback) => Unit): Completer = {
+  inline def apply(getCompletions: (Editor, IEditSession, Position, String, CompletionCallback) => Unit): Completer = {
     val __obj = js.Dynamic.literal(getCompletions = js.Any.fromFunction5(getCompletions))
     __obj.asInstanceOf[Completer]
   }
   
-  @scala.inline
-  implicit class CompleterMutableBuilder[Self <: Completer] (val x: Self) extends AnyVal {
+  extension [Self <: Completer](x: Self) {
     
-    @scala.inline
-    def setGetCompletions(value: (Editor, IEditSession, Position, String, CompletionCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
+    inline def setGetCompletions(value: (Editor, IEditSession, Position, String, CompletionCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetDocTooltip(value: /* item */ Completion => Unit): Self = StObject.set(x, "getDocTooltip", js.Any.fromFunction1(value))
+    inline def setGetDocTooltip(value: /* item */ Completion => Unit): Self = StObject.set(x, "getDocTooltip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDocTooltipUndefined: Self = StObject.set(x, "getDocTooltip", js.undefined)
+    inline def setGetDocTooltipUndefined: Self = StObject.set(x, "getDocTooltip", js.undefined)
   }
 }

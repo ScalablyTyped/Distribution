@@ -13,19 +13,15 @@ trait SchemaPlaylistPlayer extends StObject {
 }
 object SchemaPlaylistPlayer {
   
-  @scala.inline
-  def apply(): SchemaPlaylistPlayer = {
+  inline def apply(): SchemaPlaylistPlayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlaylistPlayer]
   }
   
-  @scala.inline
-  implicit class SchemaPlaylistPlayerMutableBuilder[Self <: SchemaPlaylistPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlaylistPlayer](x: Self) {
     
-    @scala.inline
-    def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
+    inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
+    inline def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
   }
 }

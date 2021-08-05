@@ -13,19 +13,15 @@ trait StartPersonTrackingResponse extends StObject {
 }
 object StartPersonTrackingResponse {
   
-  @scala.inline
-  def apply(): StartPersonTrackingResponse = {
+  inline def apply(): StartPersonTrackingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartPersonTrackingResponse]
   }
   
-  @scala.inline
-  implicit class StartPersonTrackingResponseMutableBuilder[Self <: StartPersonTrackingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartPersonTrackingResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

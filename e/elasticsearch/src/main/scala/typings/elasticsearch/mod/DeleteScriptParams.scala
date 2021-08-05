@@ -14,19 +14,15 @@ trait DeleteScriptParams
 }
 object DeleteScriptParams {
   
-  @scala.inline
-  def apply(id: String, lang: String): DeleteScriptParams = {
+  inline def apply(id: String, lang: String): DeleteScriptParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScriptParams]
   }
   
-  @scala.inline
-  implicit class DeleteScriptParamsMutableBuilder[Self <: DeleteScriptParams] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScriptParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait SkipTo extends StObject {
 }
 object SkipTo {
   
-  @scala.inline
-  def apply(): SkipTo = {
+  inline def apply(): SkipTo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SkipTo]
   }
   
-  @scala.inline
-  implicit class SkipToMutableBuilder[Self <: SkipTo] (val x: Self) extends AnyVal {
+  extension [Self <: SkipTo](x: Self) {
     
-    @scala.inline
-    def setSkipTo(value: String): Self = StObject.set(x, "skipTo", value.asInstanceOf[js.Any])
+    inline def setSkipTo(value: String): Self = StObject.set(x, "skipTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipToUndefined: Self = StObject.set(x, "skipTo", js.undefined)
+    inline def setSkipToUndefined: Self = StObject.set(x, "skipTo", js.undefined)
   }
 }

@@ -22,49 +22,35 @@ trait SharingInvitation extends StObject {
 }
 object SharingInvitation {
   
-  @scala.inline
-  def apply(): SharingInvitation = {
+  inline def apply(): SharingInvitation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharingInvitation]
   }
   
-  @scala.inline
-  implicit class SharingInvitationMutableBuilder[Self <: SharingInvitation] (val x: Self) extends AnyVal {
+  extension [Self <: SharingInvitation](x: Self) {
     
-    @scala.inline
-    def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNull: Self = StObject.set(x, "email", null)
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setInvitedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "invitedBy", value.asInstanceOf[js.Any])
+    inline def setInvitedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "invitedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedByNull: Self = StObject.set(x, "invitedBy", null)
+    inline def setInvitedByNull: Self = StObject.set(x, "invitedBy", null)
     
-    @scala.inline
-    def setInvitedByUndefined: Self = StObject.set(x, "invitedBy", js.undefined)
+    inline def setInvitedByUndefined: Self = StObject.set(x, "invitedBy", js.undefined)
     
-    @scala.inline
-    def setRedeemedBy(value: NullableOption[String]): Self = StObject.set(x, "redeemedBy", value.asInstanceOf[js.Any])
+    inline def setRedeemedBy(value: NullableOption[String]): Self = StObject.set(x, "redeemedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedeemedByNull: Self = StObject.set(x, "redeemedBy", null)
+    inline def setRedeemedByNull: Self = StObject.set(x, "redeemedBy", null)
     
-    @scala.inline
-    def setRedeemedByUndefined: Self = StObject.set(x, "redeemedBy", js.undefined)
+    inline def setRedeemedByUndefined: Self = StObject.set(x, "redeemedBy", js.undefined)
     
-    @scala.inline
-    def setSignInRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "signInRequired", value.asInstanceOf[js.Any])
+    inline def setSignInRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "signInRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignInRequiredNull: Self = StObject.set(x, "signInRequired", null)
+    inline def setSignInRequiredNull: Self = StObject.set(x, "signInRequired", null)
     
-    @scala.inline
-    def setSignInRequiredUndefined: Self = StObject.set(x, "signInRequired", js.undefined)
+    inline def setSignInRequiredUndefined: Self = StObject.set(x, "signInRequired", js.undefined)
   }
 }

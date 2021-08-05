@@ -13,16 +13,13 @@ trait GetStackPolicyInput extends StObject {
 }
 object GetStackPolicyInput {
   
-  @scala.inline
-  def apply(StackName: StackName): GetStackPolicyInput = {
+  inline def apply(StackName: StackName): GetStackPolicyInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStackPolicyInput]
   }
   
-  @scala.inline
-  implicit class GetStackPolicyInputMutableBuilder[Self <: GetStackPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetStackPolicyInput](x: Self) {
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

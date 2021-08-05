@@ -15,25 +15,19 @@ trait ReportEntry
 }
 object ReportEntry {
   
-  @scala.inline
-  def apply(): ReportEntry = {
+  inline def apply(): ReportEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportEntry]
   }
   
-  @scala.inline
-  implicit class ReportEntryMutableBuilder[Self <: ReportEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ReportEntry](x: Self) {
     
-    @scala.inline
-    def setKey(value: ReportKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ReportKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setView(value: TestReportView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: TestReportView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

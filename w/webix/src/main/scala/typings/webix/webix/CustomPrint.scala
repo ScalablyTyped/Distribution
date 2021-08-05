@@ -13,16 +13,13 @@ trait CustomPrint extends StObject {
 }
 object CustomPrint {
   
-  @scala.inline
-  def apply($customPrint: WebixCallback): CustomPrint = {
+  inline def apply($customPrint: WebixCallback): CustomPrint = {
     val __obj = js.Dynamic.literal($customPrint = $customPrint.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPrint]
   }
   
-  @scala.inline
-  implicit class CustomPrintMutableBuilder[Self <: CustomPrint] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPrint](x: Self) {
     
-    @scala.inline
-    def set$customPrint(value: WebixCallback): Self = StObject.set(x, "$customPrint", value.asInstanceOf[js.Any])
+    inline def set$customPrint(value: WebixCallback): Self = StObject.set(x, "$customPrint", value.asInstanceOf[js.Any])
   }
 }

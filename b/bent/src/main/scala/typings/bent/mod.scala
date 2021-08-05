@@ -22,28 +22,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(baseUrl: String, args: Options*): RequestFunction[ValidResponse] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[ValidResponse]]
-  @scala.inline
-  def apply(baseUrl: String, `type`: buffer, args: Options*): RequestFunction[Buffer | ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[Buffer | ArrayBuffer]]
+  inline def apply(baseUrl: String, args: Options*): RequestFunction[ValidResponse] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[ValidResponse]]
+  inline def apply(baseUrl: String, `type`: buffer, args: Options*): RequestFunction[Buffer | ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[Buffer | ArrayBuffer]]
   // Method or url first
-  @scala.inline
-  def apply(baseUrl: String, `type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[String]]
-  @scala.inline
-  def apply(`type`: buffer, args: Options*): RequestFunction[Buffer | ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[Buffer | ArrayBuffer]]
+  inline def apply(baseUrl: String, `type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[String]]
+  inline def apply(`type`: buffer, args: Options*): RequestFunction[Buffer | ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[Buffer | ArrayBuffer]]
   // Type first
-  @scala.inline
-  def apply(`type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[String]]
+  inline def apply(`type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[String]]
   // tslint:disable-next-line no-unnecessary-generics
-  @scala.inline
-  def apply[T /* <: ValidResponse */](args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[RequestFunction[T]]
-  @scala.inline
-  def apply[T /* <: Json */](baseUrl: String, `type`: json, args: Options*): // tslint:disable-next-line no-unnecessary-generics
+  inline def apply[T /* <: ValidResponse */](args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[RequestFunction[T]]
+  inline def apply[T /* <: Json */](baseUrl: String, `type`: json, args: Options*): // tslint:disable-next-line no-unnecessary-generics
   RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
   RequestFunction[T]]
   // tslint:disable-next-line no-unnecessary-generics
-  @scala.inline
-  def apply[T /* <: Json */](`type`: json, args: Options*): RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[T]]
+  inline def apply[T /* <: Json */](`type`: json, args: Options*): RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[T]]
   
   @JSImport("bent", JSImport.Namespace)
   @js.native
@@ -91,8 +83,7 @@ object mod {
   }
   object FetchResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrayBuffer: () => js.Promise[ArrayBuffer],
       blob: () => js.Promise[Blob],
       bodyUsed: Boolean,
@@ -114,11 +105,9 @@ object mod {
       __obj.asInstanceOf[FetchResponse]
     }
     
-    @scala.inline
-    implicit class FetchResponseMutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
+    extension [Self <: FetchResponse](x: Self) {
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,32 +127,23 @@ object mod {
   trait HttpMethod extends StObject
   object HttpMethod {
     
-    @scala.inline
-    def CONNECT: typings.bent.bentStrings.CONNECT = "CONNECT".asInstanceOf[typings.bent.bentStrings.CONNECT]
+    inline def CONNECT: typings.bent.bentStrings.CONNECT = "CONNECT".asInstanceOf[typings.bent.bentStrings.CONNECT]
     
-    @scala.inline
-    def DELETE: typings.bent.bentStrings.DELETE = "DELETE".asInstanceOf[typings.bent.bentStrings.DELETE]
+    inline def DELETE: typings.bent.bentStrings.DELETE = "DELETE".asInstanceOf[typings.bent.bentStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.bent.bentStrings.GET = "GET".asInstanceOf[typings.bent.bentStrings.GET]
+    inline def GET: typings.bent.bentStrings.GET = "GET".asInstanceOf[typings.bent.bentStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.bent.bentStrings.HEAD = "HEAD".asInstanceOf[typings.bent.bentStrings.HEAD]
+    inline def HEAD: typings.bent.bentStrings.HEAD = "HEAD".asInstanceOf[typings.bent.bentStrings.HEAD]
     
-    @scala.inline
-    def OPTIONS: typings.bent.bentStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.bent.bentStrings.OPTIONS]
+    inline def OPTIONS: typings.bent.bentStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.bent.bentStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.bent.bentStrings.PATCH = "PATCH".asInstanceOf[typings.bent.bentStrings.PATCH]
+    inline def PATCH: typings.bent.bentStrings.PATCH = "PATCH".asInstanceOf[typings.bent.bentStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.bent.bentStrings.POST = "POST".asInstanceOf[typings.bent.bentStrings.POST]
+    inline def POST: typings.bent.bentStrings.POST = "POST".asInstanceOf[typings.bent.bentStrings.POST]
     
-    @scala.inline
-    def PUT: typings.bent.bentStrings.PUT = "PUT".asInstanceOf[typings.bent.bentStrings.PUT]
+    inline def PUT: typings.bent.bentStrings.PUT = "PUT".asInstanceOf[typings.bent.bentStrings.PUT]
     
-    @scala.inline
-    def TRACE: typings.bent.bentStrings.TRACE = "TRACE".asInstanceOf[typings.bent.bentStrings.TRACE]
+    inline def TRACE: typings.bent.bentStrings.TRACE = "TRACE".asInstanceOf[typings.bent.bentStrings.TRACE]
   }
   
   type Json = (StringDictionary[js.Any] & NumberDictionary[js.Any]) | js.Array[js.Any]

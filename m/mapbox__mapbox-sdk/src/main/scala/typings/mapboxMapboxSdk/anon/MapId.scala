@@ -14,25 +14,19 @@ trait MapId extends StObject {
 }
 object MapId {
   
-  @scala.inline
-  def apply(mapId: String, url: String): MapId = {
+  inline def apply(mapId: String, url: String): MapId = {
     val __obj = js.Dynamic.literal(mapId = mapId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapId]
   }
   
-  @scala.inline
-  implicit class MapIdMutableBuilder[Self <: MapId] (val x: Self) extends AnyVal {
+  extension [Self <: MapId](x: Self) {
     
-    @scala.inline
-    def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+    inline def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilesetName(value: String): Self = StObject.set(x, "tilesetName", value.asInstanceOf[js.Any])
+    inline def setTilesetName(value: String): Self = StObject.set(x, "tilesetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilesetNameUndefined: Self = StObject.set(x, "tilesetName", js.undefined)
+    inline def setTilesetNameUndefined: Self = StObject.set(x, "tilesetName", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

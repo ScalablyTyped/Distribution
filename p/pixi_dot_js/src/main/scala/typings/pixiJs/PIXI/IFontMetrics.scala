@@ -23,22 +23,17 @@ trait IFontMetrics extends StObject {
 }
 object IFontMetrics {
   
-  @scala.inline
-  def apply(ascent: Double, descent: Double, fontSize: Double): IFontMetrics = {
+  inline def apply(ascent: Double, descent: Double, fontSize: Double): IFontMetrics = {
     val __obj = js.Dynamic.literal(ascent = ascent.asInstanceOf[js.Any], descent = descent.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFontMetrics]
   }
   
-  @scala.inline
-  implicit class IFontMetricsMutableBuilder[Self <: IFontMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: IFontMetrics](x: Self) {
     
-    @scala.inline
-    def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
+    inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescent(value: Double): Self = StObject.set(x, "descent", value.asInstanceOf[js.Any])
+    inline def setDescent(value: Double): Self = StObject.set(x, "descent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
   }
 }

@@ -13,6 +13,5 @@ object getMainAxisFromPlacementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(placement: Placement): x | y = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(placement.asInstanceOf[js.Any]).asInstanceOf[x | y]
+  inline def default(placement: Placement): x | y = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(placement.asInstanceOf[js.Any]).asInstanceOf[x | y]
 }

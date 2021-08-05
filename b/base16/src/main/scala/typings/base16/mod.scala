@@ -195,8 +195,7 @@ object mod extends Shortcut {
   }
   object Base16Theme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       base00: String,
       base01: String,
@@ -220,62 +219,43 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Base16Theme]
     }
     
-    @scala.inline
-    implicit class Base16ThemeMutableBuilder[Self <: Base16Theme] (val x: Self) extends AnyVal {
+    extension [Self <: Base16Theme](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase00(value: String): Self = StObject.set(x, "base00", value.asInstanceOf[js.Any])
+      inline def setBase00(value: String): Self = StObject.set(x, "base00", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase01(value: String): Self = StObject.set(x, "base01", value.asInstanceOf[js.Any])
+      inline def setBase01(value: String): Self = StObject.set(x, "base01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase02(value: String): Self = StObject.set(x, "base02", value.asInstanceOf[js.Any])
+      inline def setBase02(value: String): Self = StObject.set(x, "base02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase03(value: String): Self = StObject.set(x, "base03", value.asInstanceOf[js.Any])
+      inline def setBase03(value: String): Self = StObject.set(x, "base03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase04(value: String): Self = StObject.set(x, "base04", value.asInstanceOf[js.Any])
+      inline def setBase04(value: String): Self = StObject.set(x, "base04", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase05(value: String): Self = StObject.set(x, "base05", value.asInstanceOf[js.Any])
+      inline def setBase05(value: String): Self = StObject.set(x, "base05", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase06(value: String): Self = StObject.set(x, "base06", value.asInstanceOf[js.Any])
+      inline def setBase06(value: String): Self = StObject.set(x, "base06", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase07(value: String): Self = StObject.set(x, "base07", value.asInstanceOf[js.Any])
+      inline def setBase07(value: String): Self = StObject.set(x, "base07", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase08(value: String): Self = StObject.set(x, "base08", value.asInstanceOf[js.Any])
+      inline def setBase08(value: String): Self = StObject.set(x, "base08", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase09(value: String): Self = StObject.set(x, "base09", value.asInstanceOf[js.Any])
+      inline def setBase09(value: String): Self = StObject.set(x, "base09", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0A(value: String): Self = StObject.set(x, "base0A", value.asInstanceOf[js.Any])
+      inline def setBase0A(value: String): Self = StObject.set(x, "base0A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0B(value: String): Self = StObject.set(x, "base0B", value.asInstanceOf[js.Any])
+      inline def setBase0B(value: String): Self = StObject.set(x, "base0B", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0C(value: String): Self = StObject.set(x, "base0C", value.asInstanceOf[js.Any])
+      inline def setBase0C(value: String): Self = StObject.set(x, "base0C", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0D(value: String): Self = StObject.set(x, "base0D", value.asInstanceOf[js.Any])
+      inline def setBase0D(value: String): Self = StObject.set(x, "base0D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0E(value: String): Self = StObject.set(x, "base0E", value.asInstanceOf[js.Any])
+      inline def setBase0E(value: String): Self = StObject.set(x, "base0E", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase0F(value: String): Self = StObject.set(x, "base0F", value.asInstanceOf[js.Any])
+      inline def setBase0F(value: String): Self = StObject.set(x, "base0F", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }
   }
   

@@ -38,43 +38,31 @@ trait AccessDetail extends StObject {
 }
 object AccessDetail {
   
-  @scala.inline
-  def apply(ServiceName: serviceNameType, ServiceNamespace: serviceNamespaceType): AccessDetail = {
+  inline def apply(ServiceName: serviceNameType, ServiceNamespace: serviceNamespaceType): AccessDetail = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessDetail]
   }
   
-  @scala.inline
-  implicit class AccessDetailMutableBuilder[Self <: AccessDetail] (val x: Self) extends AnyVal {
+  extension [Self <: AccessDetail](x: Self) {
     
-    @scala.inline
-    def setEntityPath(value: organizationsEntityPathType): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
+    inline def setEntityPath(value: organizationsEntityPathType): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityPathUndefined: Self = StObject.set(x, "EntityPath", js.undefined)
+    inline def setEntityPathUndefined: Self = StObject.set(x, "EntityPath", js.undefined)
     
-    @scala.inline
-    def setLastAuthenticatedTime(value: dateType): Self = StObject.set(x, "LastAuthenticatedTime", value.asInstanceOf[js.Any])
+    inline def setLastAuthenticatedTime(value: dateType): Self = StObject.set(x, "LastAuthenticatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAuthenticatedTimeUndefined: Self = StObject.set(x, "LastAuthenticatedTime", js.undefined)
+    inline def setLastAuthenticatedTimeUndefined: Self = StObject.set(x, "LastAuthenticatedTime", js.undefined)
     
-    @scala.inline
-    def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: serviceNameType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: serviceNameType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAuthenticatedEntities(value: integerType): Self = StObject.set(x, "TotalAuthenticatedEntities", value.asInstanceOf[js.Any])
+    inline def setTotalAuthenticatedEntities(value: integerType): Self = StObject.set(x, "TotalAuthenticatedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAuthenticatedEntitiesUndefined: Self = StObject.set(x, "TotalAuthenticatedEntities", js.undefined)
+    inline def setTotalAuthenticatedEntitiesUndefined: Self = StObject.set(x, "TotalAuthenticatedEntities", js.undefined)
   }
 }

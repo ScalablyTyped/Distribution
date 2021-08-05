@@ -28,56 +28,40 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdditionalStreams(value: js.Array[ReadWriteStream]): Self = StObject.set(x, "additionalStreams", value.asInstanceOf[js.Any])
+      inline def setAdditionalStreams(value: js.Array[ReadWriteStream]): Self = StObject.set(x, "additionalStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalStreamsUndefined: Self = StObject.set(x, "additionalStreams", js.undefined)
+      inline def setAdditionalStreamsUndefined: Self = StObject.set(x, "additionalStreams", js.undefined)
       
-      @scala.inline
-      def setAdditionalStreamsVarargs(value: ReadWriteStream*): Self = StObject.set(x, "additionalStreams", js.Array(value :_*))
+      inline def setAdditionalStreamsVarargs(value: ReadWriteStream*): Self = StObject.set(x, "additionalStreams", js.Array(value :_*))
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setNoAssets(value: Boolean): Self = StObject.set(x, "noAssets", value.asInstanceOf[js.Any])
+      inline def setNoAssets(value: Boolean): Self = StObject.set(x, "noAssets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoAssetsUndefined: Self = StObject.set(x, "noAssets", js.undefined)
+      inline def setNoAssetsUndefined: Self = StObject.set(x, "noAssets", js.undefined)
       
-      @scala.inline
-      def setNoconcat(value: Boolean): Self = StObject.set(x, "noconcat", value.asInstanceOf[js.Any])
+      inline def setNoconcat(value: Boolean): Self = StObject.set(x, "noconcat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoconcatUndefined: Self = StObject.set(x, "noconcat", js.undefined)
+      inline def setNoconcatUndefined: Self = StObject.set(x, "noconcat", js.undefined)
       
-      @scala.inline
-      def setSearchPath(value: String | js.Array[String]): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
+      inline def setSearchPath(value: String | js.Array[String]): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
+      inline def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
       
-      @scala.inline
-      def setSearchPathVarargs(value: String*): Self = StObject.set(x, "searchPath", js.Array(value :_*))
+      inline def setSearchPathVarargs(value: String*): Self = StObject.set(x, "searchPath", js.Array(value :_*))
       
-      @scala.inline
-      def setTransformPath(value: /* filePath */ String => Unit): Self = StObject.set(x, "transformPath", js.Any.fromFunction1(value))
+      inline def setTransformPath(value: /* filePath */ String => Unit): Self = StObject.set(x, "transformPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformPathUndefined: Self = StObject.set(x, "transformPath", js.undefined)
+      inline def setTransformPathUndefined: Self = StObject.set(x, "transformPath", js.undefined)
     }
   }
   

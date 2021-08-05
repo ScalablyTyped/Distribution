@@ -12,6 +12,5 @@ object defaultGetItemLabelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultGetItemLabel(item: UnknownTreeItem, labelKey: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetItemLabel")(item.asInstanceOf[js.Any], labelKey.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def defaultGetItemLabel(item: UnknownTreeItem, labelKey: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetItemLabel")(item.asInstanceOf[js.Any], labelKey.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
 }

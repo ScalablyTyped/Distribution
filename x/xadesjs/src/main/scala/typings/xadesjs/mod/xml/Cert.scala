@@ -13,6 +13,5 @@ class Cert ()
   extends typings.xadesjs.xmlMod.Cert
 object Cert {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.Cert] = ^.asInstanceOf[js.Dynamic].selectDynamic("Cert").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Cert]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.Cert] = ^.asInstanceOf[js.Dynamic].selectDynamic("Cert").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Cert]]
 }

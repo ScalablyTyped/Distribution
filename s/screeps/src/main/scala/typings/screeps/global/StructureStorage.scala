@@ -101,6 +101,5 @@ class StructureStorage protected ()
 }
 object StructureStorage {
   
-  @scala.inline
-  def apply: StructureStorageConstructor = js.Dynamic.global.selectDynamic("StructureStorage").asInstanceOf[StructureStorageConstructor]
+  inline def apply: StructureStorageConstructor = js.Dynamic.global.selectDynamic("StructureStorage").asInstanceOf[StructureStorageConstructor]
 }

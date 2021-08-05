@@ -39,68 +39,48 @@ object csstransitionMod {
   }
   object CSSTransitionClassNames {
     
-    @scala.inline
-    def apply(): CSSTransitionClassNames = {
+    inline def apply(): CSSTransitionClassNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSTransitionClassNames]
     }
     
-    @scala.inline
-    implicit class CSSTransitionClassNamesMutableBuilder[Self <: CSSTransitionClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: CSSTransitionClassNames](x: Self) {
       
-      @scala.inline
-      def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearActive(value: String): Self = StObject.set(x, "appearActive", value.asInstanceOf[js.Any])
+      inline def setAppearActive(value: String): Self = StObject.set(x, "appearActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearActiveUndefined: Self = StObject.set(x, "appearActive", js.undefined)
+      inline def setAppearActiveUndefined: Self = StObject.set(x, "appearActive", js.undefined)
       
-      @scala.inline
-      def setAppearDone(value: String): Self = StObject.set(x, "appearDone", value.asInstanceOf[js.Any])
+      inline def setAppearDone(value: String): Self = StObject.set(x, "appearDone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearDoneUndefined: Self = StObject.set(x, "appearDone", js.undefined)
+      inline def setAppearDoneUndefined: Self = StObject.set(x, "appearDone", js.undefined)
       
-      @scala.inline
-      def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+      inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
       
-      @scala.inline
-      def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterActive(value: String): Self = StObject.set(x, "enterActive", value.asInstanceOf[js.Any])
+      inline def setEnterActive(value: String): Self = StObject.set(x, "enterActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterActiveUndefined: Self = StObject.set(x, "enterActive", js.undefined)
+      inline def setEnterActiveUndefined: Self = StObject.set(x, "enterActive", js.undefined)
       
-      @scala.inline
-      def setEnterDone(value: String): Self = StObject.set(x, "enterDone", value.asInstanceOf[js.Any])
+      inline def setEnterDone(value: String): Self = StObject.set(x, "enterDone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterDoneUndefined: Self = StObject.set(x, "enterDone", js.undefined)
+      inline def setEnterDoneUndefined: Self = StObject.set(x, "enterDone", js.undefined)
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setExit(value: String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitActive(value: String): Self = StObject.set(x, "exitActive", value.asInstanceOf[js.Any])
+      inline def setExitActive(value: String): Self = StObject.set(x, "exitActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitActiveUndefined: Self = StObject.set(x, "exitActive", js.undefined)
+      inline def setExitActiveUndefined: Self = StObject.set(x, "exitActive", js.undefined)
       
-      @scala.inline
-      def setExitDone(value: String): Self = StObject.set(x, "exitDone", value.asInstanceOf[js.Any])
+      inline def setExitDone(value: String): Self = StObject.set(x, "exitDone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitDoneUndefined: Self = StObject.set(x, "exitDone", js.undefined)
+      inline def setExitDoneUndefined: Self = StObject.set(x, "exitDone", js.undefined)
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     }
   }
   

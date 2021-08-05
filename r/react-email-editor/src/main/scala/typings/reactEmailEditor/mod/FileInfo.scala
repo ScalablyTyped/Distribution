@@ -13,25 +13,19 @@ trait FileInfo extends StObject {
 }
 object FileInfo {
   
-  @scala.inline
-  def apply(accepted: js.Array[File], attachments: js.Array[File]): FileInfo = {
+  inline def apply(accepted: js.Array[File], attachments: js.Array[File]): FileInfo = {
     val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any], attachments = attachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInfo]
   }
   
-  @scala.inline
-  implicit class FileInfoMutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FileInfo](x: Self) {
     
-    @scala.inline
-    def setAccepted(value: js.Array[File]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
+    inline def setAccepted(value: js.Array[File]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedVarargs(value: File*): Self = StObject.set(x, "accepted", js.Array(value :_*))
+    inline def setAcceptedVarargs(value: File*): Self = StObject.set(x, "accepted", js.Array(value :_*))
     
-    @scala.inline
-    def setAttachments(value: js.Array[File]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[File]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsVarargs(value: File*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: File*): Self = StObject.set(x, "attachments", js.Array(value :_*))
   }
 }

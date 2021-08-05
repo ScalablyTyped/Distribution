@@ -14,8 +14,7 @@ trait ArrayType
 }
 object ArrayType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,13 +42,10 @@ object ArrayType {
     __obj.asInstanceOf[ArrayType]
   }
   
-  @scala.inline
-  implicit class ArrayTypeMutableBuilder[Self <: ArrayType] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayType](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (ArrayType, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ArrayType, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

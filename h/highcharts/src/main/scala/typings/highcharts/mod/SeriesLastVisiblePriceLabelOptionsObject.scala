@@ -13,19 +13,15 @@ trait SeriesLastVisiblePriceLabelOptionsObject extends StObject {
 }
 object SeriesLastVisiblePriceLabelOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesLastVisiblePriceLabelOptionsObject = {
+  inline def apply(): SeriesLastVisiblePriceLabelOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesLastVisiblePriceLabelOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesLastVisiblePriceLabelOptionsObjectMutableBuilder[Self <: SeriesLastVisiblePriceLabelOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesLastVisiblePriceLabelOptionsObject](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

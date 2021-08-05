@@ -14,22 +14,17 @@ trait ChildPanGestureHandlerRefs extends StObject {
 }
 object ChildPanGestureHandlerRefs {
   
-  @scala.inline
-  def apply(childPanGestureHandlerRefs: js.Array[RefObject[PanGestureHandler]], enabled: Boolean): ChildPanGestureHandlerRefs = {
+  inline def apply(childPanGestureHandlerRefs: js.Array[RefObject[PanGestureHandler]], enabled: Boolean): ChildPanGestureHandlerRefs = {
     val __obj = js.Dynamic.literal(childPanGestureHandlerRefs = childPanGestureHandlerRefs.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildPanGestureHandlerRefs]
   }
   
-  @scala.inline
-  implicit class ChildPanGestureHandlerRefsMutableBuilder[Self <: ChildPanGestureHandlerRefs] (val x: Self) extends AnyVal {
+  extension [Self <: ChildPanGestureHandlerRefs](x: Self) {
     
-    @scala.inline
-    def setChildPanGestureHandlerRefs(value: js.Array[RefObject[PanGestureHandler]]): Self = StObject.set(x, "childPanGestureHandlerRefs", value.asInstanceOf[js.Any])
+    inline def setChildPanGestureHandlerRefs(value: js.Array[RefObject[PanGestureHandler]]): Self = StObject.set(x, "childPanGestureHandlerRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPanGestureHandlerRefsVarargs(value: RefObject[PanGestureHandler]*): Self = StObject.set(x, "childPanGestureHandlerRefs", js.Array(value :_*))
+    inline def setChildPanGestureHandlerRefsVarargs(value: RefObject[PanGestureHandler]*): Self = StObject.set(x, "childPanGestureHandlerRefs", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

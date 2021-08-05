@@ -11,8 +11,7 @@ object mod {
   /**
     * Returns a rewired version of the module found at filename. Use rewire() exactly like require().
     */
-  @scala.inline
-  def apply[T](filename: String): RewiredModule & T = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[RewiredModule & T]
+  inline def apply[T](filename: String): RewiredModule & T = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[RewiredModule & T]
   
   @JSImport("rewire", JSImport.Namespace)
   @js.native

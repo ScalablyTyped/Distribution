@@ -18,34 +18,25 @@ trait CheckResult extends StObject {
 }
 object CheckResult {
   
-  @scala.inline
-  def apply(data: js.Any, id: String, impact: String, message: String): CheckResult = {
+  inline def apply(data: js.Any, id: String, impact: String, message: String): CheckResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckResult]
   }
   
-  @scala.inline
-  implicit class CheckResultMutableBuilder[Self <: CheckResult] (val x: Self) extends AnyVal {
+  extension [Self <: CheckResult](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpact(value: String): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
+    inline def setImpact(value: String): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedNodes(value: js.Array[RelatedNode]): Self = StObject.set(x, "relatedNodes", value.asInstanceOf[js.Any])
+    inline def setRelatedNodes(value: js.Array[RelatedNode]): Self = StObject.set(x, "relatedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedNodesUndefined: Self = StObject.set(x, "relatedNodes", js.undefined)
+    inline def setRelatedNodesUndefined: Self = StObject.set(x, "relatedNodes", js.undefined)
     
-    @scala.inline
-    def setRelatedNodesVarargs(value: RelatedNode*): Self = StObject.set(x, "relatedNodes", js.Array(value :_*))
+    inline def setRelatedNodesVarargs(value: RelatedNode*): Self = StObject.set(x, "relatedNodes", js.Array(value :_*))
   }
 }

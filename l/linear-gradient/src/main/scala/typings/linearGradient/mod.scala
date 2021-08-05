@@ -42,20 +42,16 @@ object mod {
   }
   object Gradient {
     
-    @scala.inline
-    def apply(calcArray: Double => Color, calcHex: Double => String): Gradient = {
+    inline def apply(calcArray: Double => Color, calcHex: Double => String): Gradient = {
       val __obj = js.Dynamic.literal(calcArray = js.Any.fromFunction1(calcArray), calcHex = js.Any.fromFunction1(calcHex))
       __obj.asInstanceOf[Gradient]
     }
     
-    @scala.inline
-    implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
+    extension [Self <: Gradient](x: Self) {
       
-      @scala.inline
-      def setCalcArray(value: Double => Color): Self = StObject.set(x, "calcArray", js.Any.fromFunction1(value))
+      inline def setCalcArray(value: Double => Color): Self = StObject.set(x, "calcArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCalcHex(value: Double => String): Self = StObject.set(x, "calcHex", js.Any.fromFunction1(value))
+      inline def setCalcHex(value: Double => String): Self = StObject.set(x, "calcHex", js.Any.fromFunction1(value))
     }
   }
 }

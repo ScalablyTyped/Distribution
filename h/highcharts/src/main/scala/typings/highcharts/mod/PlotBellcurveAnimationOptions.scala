@@ -10,19 +10,15 @@ trait PlotBellcurveAnimationOptions extends StObject {
 }
 object PlotBellcurveAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotBellcurveAnimationOptions = {
+  inline def apply(): PlotBellcurveAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotBellcurveAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotBellcurveAnimationOptionsMutableBuilder[Self <: PlotBellcurveAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotBellcurveAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

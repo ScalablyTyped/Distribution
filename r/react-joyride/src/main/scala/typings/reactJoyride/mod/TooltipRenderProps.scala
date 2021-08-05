@@ -22,8 +22,7 @@ trait TooltipRenderProps
 }
 object TooltipRenderProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backProps: Arialabel,
     closeProps: Arialabel,
     continuous: Boolean,
@@ -40,22 +39,16 @@ object TooltipRenderProps {
     __obj.asInstanceOf[TooltipRenderProps]
   }
   
-  @scala.inline
-  implicit class TooltipRenderPropsMutableBuilder[Self <: TooltipRenderProps] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipRenderProps](x: Self) {
     
-    @scala.inline
-    def setBackProps(value: Arialabel): Self = StObject.set(x, "backProps", value.asInstanceOf[js.Any])
+    inline def setBackProps(value: Arialabel): Self = StObject.set(x, "backProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseProps(value: Arialabel): Self = StObject.set(x, "closeProps", value.asInstanceOf[js.Any])
+    inline def setCloseProps(value: Arialabel): Self = StObject.set(x, "closeProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryProps(value: Arialabel): Self = StObject.set(x, "primaryProps", value.asInstanceOf[js.Any])
+    inline def setPrimaryProps(value: Arialabel): Self = StObject.set(x, "primaryProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipProps(value: Arialabel): Self = StObject.set(x, "skipProps", value.asInstanceOf[js.Any])
+    inline def setSkipProps(value: Arialabel): Self = StObject.set(x, "skipProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipProps(value: Ariamodal): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+    inline def setTooltipProps(value: Ariamodal): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
   }
 }

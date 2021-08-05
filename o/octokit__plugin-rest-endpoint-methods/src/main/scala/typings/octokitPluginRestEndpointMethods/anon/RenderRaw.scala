@@ -12,19 +12,15 @@ trait RenderRaw extends StObject {
 }
 object RenderRaw {
   
-  @scala.inline
-  def apply(render: `760`, renderRaw: `761`): RenderRaw = {
+  inline def apply(render: `760`, renderRaw: `761`): RenderRaw = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderRaw = renderRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderRaw]
   }
   
-  @scala.inline
-  implicit class RenderRawMutableBuilder[Self <: RenderRaw] (val x: Self) extends AnyVal {
+  extension [Self <: RenderRaw](x: Self) {
     
-    @scala.inline
-    def setRender(value: `760`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: `760`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderRaw(value: `761`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
+    inline def setRenderRaw(value: `761`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
   }
 }

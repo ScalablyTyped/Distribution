@@ -74,85 +74,59 @@ trait SchemaTableCellStyle extends StObject {
 }
 object SchemaTableCellStyle {
   
-  @scala.inline
-  def apply(): SchemaTableCellStyle = {
+  inline def apply(): SchemaTableCellStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableCellStyle]
   }
   
-  @scala.inline
-  implicit class SchemaTableCellStyleMutableBuilder[Self <: SchemaTableCellStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableCellStyle](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: SchemaOptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: SchemaOptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBorderBottom(value: SchemaTableCellBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: SchemaTableCellBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
-    @scala.inline
-    def setBorderLeft(value: SchemaTableCellBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    inline def setBorderLeft(value: SchemaTableCellBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+    inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
-    @scala.inline
-    def setBorderRight(value: SchemaTableCellBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+    inline def setBorderRight(value: SchemaTableCellBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+    inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
     
-    @scala.inline
-    def setBorderTop(value: SchemaTableCellBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    inline def setBorderTop(value: SchemaTableCellBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+    inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
-    @scala.inline
-    def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+    inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+    inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
-    @scala.inline
-    def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+    inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
+    inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     
-    @scala.inline
-    def setPaddingBottom(value: SchemaDimension): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingBottom(value: SchemaDimension): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+    inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    @scala.inline
-    def setPaddingLeft(value: SchemaDimension): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: SchemaDimension): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+    inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    @scala.inline
-    def setPaddingRight(value: SchemaDimension): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: SchemaDimension): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    @scala.inline
-    def setPaddingTop(value: SchemaDimension): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    inline def setPaddingTop(value: SchemaDimension): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+    inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
   }
 }

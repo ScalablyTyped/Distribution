@@ -21,20 +21,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DeclareModuleExports_ {
   
-  @scala.inline
-  def apply(typeAnnotation: TypeAnnotation_): DeclareModuleExports_ = {
+  inline def apply(typeAnnotation: TypeAnnotation_): DeclareModuleExports_ = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DeclareModuleExports")
     __obj.asInstanceOf[DeclareModuleExports_]
   }
   
-  @scala.inline
-  implicit class DeclareModuleExports_MutableBuilder[Self <: DeclareModuleExports_] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareModuleExports_](x: Self) {
     
-    @scala.inline
-    def setType(value: DeclareModuleExports): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclareModuleExports): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

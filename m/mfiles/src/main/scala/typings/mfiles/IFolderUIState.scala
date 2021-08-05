@@ -26,8 +26,7 @@ trait IFolderUIState extends StObject {
 }
 object IFolderUIState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BottomPaneBarMinimized: Boolean,
     HitHighlightingEnabled: Boolean,
     ListingUIState: IFolderListingUIState,
@@ -42,34 +41,24 @@ object IFolderUIState {
     __obj.asInstanceOf[IFolderUIState]
   }
   
-  @scala.inline
-  implicit class IFolderUIStateMutableBuilder[Self <: IFolderUIState] (val x: Self) extends AnyVal {
+  extension [Self <: IFolderUIState](x: Self) {
     
-    @scala.inline
-    def setBottomPaneBarMinimized(value: Boolean): Self = StObject.set(x, "BottomPaneBarMinimized", value.asInstanceOf[js.Any])
+    inline def setBottomPaneBarMinimized(value: Boolean): Self = StObject.set(x, "BottomPaneBarMinimized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitHighlightingEnabled(value: Boolean): Self = StObject.set(x, "HitHighlightingEnabled", value.asInstanceOf[js.Any])
+    inline def setHitHighlightingEnabled(value: Boolean): Self = StObject.set(x, "HitHighlightingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListingUIState(value: IFolderListingUIState): Self = StObject.set(x, "ListingUIState", value.asInstanceOf[js.Any])
+    inline def setListingUIState(value: IFolderListingUIState): Self = StObject.set(x, "ListingUIState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataEditorInRightPane(value: Boolean): Self = StObject.set(x, "MetadataEditorInRightPane", value.asInstanceOf[js.Any])
+    inline def setMetadataEditorInRightPane(value: Boolean): Self = StObject.set(x, "MetadataEditorInRightPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeBottomPaneHeight(value: Double): Self = StObject.set(x, "RelativeBottomPaneHeight", value.asInstanceOf[js.Any])
+    inline def setRelativeBottomPaneHeight(value: Double): Self = StObject.set(x, "RelativeBottomPaneHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeRightPaneWidth(value: Double): Self = StObject.set(x, "RelativeRightPaneWidth", value.asInstanceOf[js.Any])
+    inline def setRelativeRightPaneWidth(value: Double): Self = StObject.set(x, "RelativeRightPaneWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightPaneBarMinimized(value: Boolean): Self = StObject.set(x, "RightPaneBarMinimized", value.asInstanceOf[js.Any])
+    inline def setRightPaneBarMinimized(value: Boolean): Self = StObject.set(x, "RightPaneBarMinimized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBottomPaneBar(value: Boolean): Self = StObject.set(x, "ShowBottomPaneBar", value.asInstanceOf[js.Any])
+    inline def setShowBottomPaneBar(value: Boolean): Self = StObject.set(x, "ShowBottomPaneBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRightPaneBar(value: Boolean): Self = StObject.set(x, "ShowRightPaneBar", value.asInstanceOf[js.Any])
+    inline def setShowRightPaneBar(value: Boolean): Self = StObject.set(x, "ShowRightPaneBar", value.asInstanceOf[js.Any])
   }
 }

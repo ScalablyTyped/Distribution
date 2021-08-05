@@ -20,37 +20,27 @@ trait GoogleAppsCloudidentityDevicesV1AndroidAttributes extends StObject {
 }
 object GoogleAppsCloudidentityDevicesV1AndroidAttributes {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1AndroidAttributes = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1AndroidAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1AndroidAttributes]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1AndroidAttributesMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1AndroidAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1AndroidAttributes](x: Self) {
     
-    @scala.inline
-    def setEnabledUnknownSources(value: Boolean): Self = StObject.set(x, "enabledUnknownSources", value.asInstanceOf[js.Any])
+    inline def setEnabledUnknownSources(value: Boolean): Self = StObject.set(x, "enabledUnknownSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUnknownSourcesUndefined: Self = StObject.set(x, "enabledUnknownSources", js.undefined)
+    inline def setEnabledUnknownSourcesUndefined: Self = StObject.set(x, "enabledUnknownSources", js.undefined)
     
-    @scala.inline
-    def setOwnerProfileAccount(value: Boolean): Self = StObject.set(x, "ownerProfileAccount", value.asInstanceOf[js.Any])
+    inline def setOwnerProfileAccount(value: Boolean): Self = StObject.set(x, "ownerProfileAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerProfileAccountUndefined: Self = StObject.set(x, "ownerProfileAccount", js.undefined)
+    inline def setOwnerProfileAccountUndefined: Self = StObject.set(x, "ownerProfileAccount", js.undefined)
     
-    @scala.inline
-    def setOwnershipPrivilege(value: String): Self = StObject.set(x, "ownershipPrivilege", value.asInstanceOf[js.Any])
+    inline def setOwnershipPrivilege(value: String): Self = StObject.set(x, "ownershipPrivilege", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnershipPrivilegeUndefined: Self = StObject.set(x, "ownershipPrivilege", js.undefined)
+    inline def setOwnershipPrivilegeUndefined: Self = StObject.set(x, "ownershipPrivilege", js.undefined)
     
-    @scala.inline
-    def setSupportsWorkProfile(value: Boolean): Self = StObject.set(x, "supportsWorkProfile", value.asInstanceOf[js.Any])
+    inline def setSupportsWorkProfile(value: Boolean): Self = StObject.set(x, "supportsWorkProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsWorkProfileUndefined: Self = StObject.set(x, "supportsWorkProfile", js.undefined)
+    inline def setSupportsWorkProfileUndefined: Self = StObject.set(x, "supportsWorkProfile", js.undefined)
   }
 }

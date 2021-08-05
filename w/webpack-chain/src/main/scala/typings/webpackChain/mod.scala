@@ -696,20 +696,16 @@ object mod {
   }
   object Orderable {
     
-    @scala.inline
-    def apply(after: String => Orderable, before: String => Orderable): Orderable = {
+    inline def apply(after: String => Orderable, before: String => Orderable): Orderable = {
       val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before))
       __obj.asInstanceOf[Orderable]
     }
     
-    @scala.inline
-    implicit class OrderableMutableBuilder[Self <: Orderable] (val x: Self) extends AnyVal {
+    extension [Self <: Orderable](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String => Orderable): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+      inline def setAfter(value: String => Orderable): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBefore(value: String => Orderable): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+      inline def setBefore(value: String => Orderable): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     }
   }
   
@@ -724,20 +720,16 @@ object mod {
   }
   object RuntimeChunk {
     
-    @scala.inline
-    def apply(name: String | RuntimeChunkFunction): RuntimeChunk = {
+    inline def apply(name: String | RuntimeChunkFunction): RuntimeChunk = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuntimeChunk]
     }
     
-    @scala.inline
-    implicit class RuntimeChunkMutableBuilder[Self <: RuntimeChunk] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeChunk](x: Self) {
       
-      @scala.inline
-      def setName(value: String | RuntimeChunkFunction): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | RuntimeChunkFunction): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFunction1(value: /* entryPoint */ EntryPoint => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+      inline def setNameFunction1(value: /* entryPoint */ EntryPoint => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     }
   }
   
@@ -753,17 +745,14 @@ object mod {
     }
     object Chained {
       
-      @scala.inline
-      def apply[Parent](end: () => Parent): typings.webpackChain.mod._Config.Chained[Parent] = {
+      inline def apply[Parent](end: () => Parent): typings.webpackChain.mod._Config.Chained[Parent] = {
         val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end))
         __obj.asInstanceOf[typings.webpackChain.mod._Config.Chained[Parent]]
       }
       
-      @scala.inline
-      implicit class ChainedMutableBuilder[Self <: typings.webpackChain.mod._Config.Chained[?], Parent] (val x: Self & typings.webpackChain.mod._Config.Chained[Parent]) extends AnyVal {
+      extension [Self <: typings.webpackChain.mod._Config.Chained[?], Parent](x: Self & typings.webpackChain.mod._Config.Chained[Parent]) {
         
-        @scala.inline
-        def setEnd(value: () => Parent): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+        inline def setEnd(value: () => Parent): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       }
     }
     

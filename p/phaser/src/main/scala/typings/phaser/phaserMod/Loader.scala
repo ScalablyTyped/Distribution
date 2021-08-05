@@ -212,8 +212,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_COMPLETE")
   @js.native
   def FILE_COMPLETE: integer = js.native
-  @scala.inline
-  def FILE_COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_COMPLETE")(x.asInstanceOf[js.Any])
+  inline def FILE_COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_COMPLETE")(x.asInstanceOf[js.Any])
   
   /**
     * File has been destroyed
@@ -221,8 +220,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_DESTROYED")
   @js.native
   def FILE_DESTROYED: integer = js.native
-  @scala.inline
-  def FILE_DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_DESTROYED")(x.asInstanceOf[js.Any])
+  inline def FILE_DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_DESTROYED")(x.asInstanceOf[js.Any])
   
   /**
     * The File has errored somehow during processing.
@@ -230,8 +228,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_ERRORED")
   @js.native
   def FILE_ERRORED: integer = js.native
-  @scala.inline
-  def FILE_ERRORED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_ERRORED")(x.asInstanceOf[js.Any])
+  inline def FILE_ERRORED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_ERRORED")(x.asInstanceOf[js.Any])
   
   /**
     * File failed to load
@@ -239,8 +236,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_FAILED")
   @js.native
   def FILE_FAILED: integer = js.native
-  @scala.inline
-  def FILE_FAILED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_FAILED")(x.asInstanceOf[js.Any])
+  inline def FILE_FAILED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_FAILED")(x.asInstanceOf[js.Any])
   
   /**
     * File has loaded successfully, awaiting processing
@@ -248,8 +244,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_LOADED")
   @js.native
   def FILE_LOADED: integer = js.native
-  @scala.inline
-  def FILE_LOADED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADED")(x.asInstanceOf[js.Any])
+  inline def FILE_LOADED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADED")(x.asInstanceOf[js.Any])
   
   /**
     * File has been started to load by the loader (onLoad called)
@@ -257,8 +252,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_LOADING")
   @js.native
   def FILE_LOADING: integer = js.native
-  @scala.inline
-  def FILE_LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADING")(x.asInstanceOf[js.Any])
+  inline def FILE_LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADING")(x.asInstanceOf[js.Any])
   
   /**
     * File is in the load queue but not yet started
@@ -266,8 +260,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_PENDING")
   @js.native
   def FILE_PENDING: integer = js.native
-  @scala.inline
-  def FILE_PENDING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PENDING")(x.asInstanceOf[js.Any])
+  inline def FILE_PENDING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PENDING")(x.asInstanceOf[js.Any])
   
   /**
     * File was populated from local data and doesn't need an HTTP request
@@ -275,8 +268,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_POPULATED")
   @js.native
   def FILE_POPULATED: integer = js.native
-  @scala.inline
-  def FILE_POPULATED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_POPULATED")(x.asInstanceOf[js.Any])
+  inline def FILE_POPULATED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_POPULATED")(x.asInstanceOf[js.Any])
   
   /**
     * File is being processed (onProcess callback)
@@ -284,8 +276,7 @@ object Loader {
   @JSImport("phaser", "Loader.FILE_PROCESSING")
   @js.native
   def FILE_PROCESSING: integer = js.native
-  @scala.inline
-  def FILE_PROCESSING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PROCESSING")(x.asInstanceOf[js.Any])
+  inline def FILE_PROCESSING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PROCESSING")(x.asInstanceOf[js.Any])
   
   /**
     * The base File class used by all File Types that the Loader can support.
@@ -517,8 +508,7 @@ object Loader {
       * @param defaultType Default mime type used if blob type is not available.
       */
     /* static member */
-    @scala.inline
-    def createObjectURL(image: HTMLImageElement, blob: Blob, defaultType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(image.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def createObjectURL(image: HTMLImageElement, blob: Blob, defaultType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(image.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Static method for releasing an existing object URL which was previously created
@@ -526,8 +516,7 @@ object Loader {
       * @param image Image object which 'src' attribute should be revoked.
       */
     /* static member */
-    @scala.inline
-    def revokeObjectURL(image: HTMLImageElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(image.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def revokeObjectURL(image: HTMLImageElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(image.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object FileTypes {
@@ -9744,8 +9733,7 @@ object Loader {
     /**
       * Removed all associated file types.
       */
-    @scala.inline
-    def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
+    inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
     
     /**
       * Static method called when a LoaderPlugin is created.
@@ -9754,8 +9742,7 @@ object Loader {
       * properties into the LoaderPlugin instance.
       * @param loader The LoaderPlugin to install the types into.
       */
-    @scala.inline
-    def install(loader: typings.phaser.Phaser.Loader.LoaderPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def install(loader: typings.phaser.Phaser.Loader.LoaderPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Static method called directly by the File Types.
@@ -9764,8 +9751,7 @@ object Loader {
       * @param key The key that will be used as the method name in the LoaderPlugin.
       * @param factoryFunction The function that will be called when LoaderPlugin.key is invoked.
       */
-    @scala.inline
-    def register(key: String, factoryFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], factoryFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(key: String, factoryFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], factoryFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -9773,8 +9759,7 @@ object Loader {
     * @param file The File object.
     * @param baseURL A default base URL.
     */
-  @scala.inline
-  def GetURL(file: typings.phaser.Phaser.Loader.File, baseURL: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetURL")(file.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def GetURL(file: typings.phaser.Phaser.Loader.File, baseURL: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetURL")(file.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * The Loader has completed loading and processing.
@@ -9782,8 +9767,7 @@ object Loader {
   @JSImport("phaser", "Loader.LOADER_COMPLETE")
   @js.native
   def LOADER_COMPLETE: integer = js.native
-  @scala.inline
-  def LOADER_COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_COMPLETE")(x.asInstanceOf[js.Any])
+  inline def LOADER_COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_COMPLETE")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader has been destroyed.
@@ -9791,8 +9775,7 @@ object Loader {
   @JSImport("phaser", "Loader.LOADER_DESTROYED")
   @js.native
   def LOADER_DESTROYED: integer = js.native
-  @scala.inline
-  def LOADER_DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_DESTROYED")(x.asInstanceOf[js.Any])
+  inline def LOADER_DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_DESTROYED")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is idle.
@@ -9800,8 +9783,7 @@ object Loader {
   @JSImport("phaser", "Loader.LOADER_IDLE")
   @js.native
   def LOADER_IDLE: integer = js.native
-  @scala.inline
-  def LOADER_IDLE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_IDLE")(x.asInstanceOf[js.Any])
+  inline def LOADER_IDLE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_IDLE")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is actively loading.
@@ -9809,8 +9791,7 @@ object Loader {
   @JSImport("phaser", "Loader.LOADER_LOADING")
   @js.native
   def LOADER_LOADING: integer = js.native
-  @scala.inline
-  def LOADER_LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_LOADING")(x.asInstanceOf[js.Any])
+  inline def LOADER_LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_LOADING")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is processing files is has loaded.
@@ -9818,8 +9799,7 @@ object Loader {
   @JSImport("phaser", "Loader.LOADER_PROCESSING")
   @js.native
   def LOADER_PROCESSING: integer = js.native
-  @scala.inline
-  def LOADER_PROCESSING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_PROCESSING")(x.asInstanceOf[js.Any])
+  inline def LOADER_PROCESSING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_PROCESSING")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is shutting down.
@@ -9827,8 +9807,7 @@ object Loader {
   @JSImport("phaser", "Loader.LOADER_SHUTDOWN")
   @js.native
   def LOADER_SHUTDOWN: integer = js.native
-  @scala.inline
-  def LOADER_SHUTDOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_SHUTDOWN")(x.asInstanceOf[js.Any])
+  inline def LOADER_SHUTDOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_SHUTDOWN")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader handles loading all external content such as Images, Sounds, Texture Atlases and data files.
@@ -9875,8 +9854,7 @@ object Loader {
     * @param global The global XHRSettings object.
     * @param local The local XHRSettings object.
     */
-  @scala.inline
-  def MergeXHRSettings(global: XHRSettingsObject, local: XHRSettingsObject): XHRSettingsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeXHRSettings")(global.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[XHRSettingsObject]
+  inline def MergeXHRSettings(global: XHRSettingsObject, local: XHRSettingsObject): XHRSettingsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeXHRSettings")(global.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[XHRSettingsObject]
   
   /**
     * A MultiFile is a special kind of parent that contains two, or more, Files as children and looks after
@@ -10007,8 +9985,7 @@ object Loader {
     * @param file The File to download.
     * @param globalXHRSettings The global XHRSettings object.
     */
-  @scala.inline
-  def XHRLoader(file: typings.phaser.Phaser.Loader.File, globalXHRSettings: XHRSettingsObject): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("XHRLoader")(file.asInstanceOf[js.Any], globalXHRSettings.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
+  inline def XHRLoader(file: typings.phaser.Phaser.Loader.File, globalXHRSettings: XHRSettingsObject): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("XHRLoader")(file.asInstanceOf[js.Any], globalXHRSettings.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
   
   /**
     * Creates an XHRSettings Object with default values.
@@ -10019,8 +9996,7 @@ object Loader {
     * @param timeout Optional XHR timeout value. Default 0.
     * @param withCredentials Optional XHR withCredentials value. Default false.
     */
-  @scala.inline
-  def XHRSettings(
+  inline def XHRSettings(
     responseType: js.UndefOr[XMLHttpRequestResponseType],
     async: js.UndefOr[Boolean],
     user: js.UndefOr[String],

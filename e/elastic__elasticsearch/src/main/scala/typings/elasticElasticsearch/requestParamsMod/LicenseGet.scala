@@ -14,25 +14,19 @@ trait LicenseGet
 }
 object LicenseGet {
   
-  @scala.inline
-  def apply(): LicenseGet = {
+  inline def apply(): LicenseGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicenseGet]
   }
   
-  @scala.inline
-  implicit class LicenseGetMutableBuilder[Self <: LicenseGet] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseGet](x: Self) {
     
-    @scala.inline
-    def setAccept_enterprise(value: Boolean): Self = StObject.set(x, "accept_enterprise", value.asInstanceOf[js.Any])
+    inline def setAccept_enterprise(value: Boolean): Self = StObject.set(x, "accept_enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_enterpriseUndefined: Self = StObject.set(x, "accept_enterprise", js.undefined)
+    inline def setAccept_enterpriseUndefined: Self = StObject.set(x, "accept_enterprise", js.undefined)
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
   }
 }

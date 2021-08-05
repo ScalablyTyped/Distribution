@@ -18,34 +18,25 @@ trait WebExtensionManifestTelemetry extends StObject {
 }
 object WebExtensionManifestTelemetry {
   
-  @scala.inline
-  def apply(ping_type: String, public_key: WebExtensionManifestTelemetryPublicKey, schemaNamespace: String): WebExtensionManifestTelemetry = {
+  inline def apply(ping_type: String, public_key: WebExtensionManifestTelemetryPublicKey, schemaNamespace: String): WebExtensionManifestTelemetry = {
     val __obj = js.Dynamic.literal(ping_type = ping_type.asInstanceOf[js.Any], public_key = public_key.asInstanceOf[js.Any], schemaNamespace = schemaNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebExtensionManifestTelemetry]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestTelemetryMutableBuilder[Self <: WebExtensionManifestTelemetry] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestTelemetry](x: Self) {
     
-    @scala.inline
-    def setPing_type(value: String): Self = StObject.set(x, "ping_type", value.asInstanceOf[js.Any])
+    inline def setPing_type(value: String): Self = StObject.set(x, "ping_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPioneer_id(value: Boolean): Self = StObject.set(x, "pioneer_id", value.asInstanceOf[js.Any])
+    inline def setPioneer_id(value: Boolean): Self = StObject.set(x, "pioneer_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPioneer_idUndefined: Self = StObject.set(x, "pioneer_id", js.undefined)
+    inline def setPioneer_idUndefined: Self = StObject.set(x, "pioneer_id", js.undefined)
     
-    @scala.inline
-    def setPublic_key(value: WebExtensionManifestTelemetryPublicKey): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
+    inline def setPublic_key(value: WebExtensionManifestTelemetryPublicKey): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNamespace(value: String): Self = StObject.set(x, "schemaNamespace", value.asInstanceOf[js.Any])
+    inline def setSchemaNamespace(value: String): Self = StObject.set(x, "schemaNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudy_name(value: String): Self = StObject.set(x, "study_name", value.asInstanceOf[js.Any])
+    inline def setStudy_name(value: String): Self = StObject.set(x, "study_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudy_nameUndefined: Self = StObject.set(x, "study_name", js.undefined)
+    inline def setStudy_nameUndefined: Self = StObject.set(x, "study_name", js.undefined)
   }
 }

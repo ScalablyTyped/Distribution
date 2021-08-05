@@ -16,20 +16,16 @@ trait DSNodeKeyword
 }
 object DSNodeKeyword {
   
-  @scala.inline
-  def apply(name: String): DSNodeKeyword = {
+  inline def apply(name: String): DSNodeKeyword = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Keyword")
     __obj.asInstanceOf[DSNodeKeyword]
   }
   
-  @scala.inline
-  implicit class DSNodeKeywordMutableBuilder[Self <: DSNodeKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: DSNodeKeyword](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Keyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Keyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

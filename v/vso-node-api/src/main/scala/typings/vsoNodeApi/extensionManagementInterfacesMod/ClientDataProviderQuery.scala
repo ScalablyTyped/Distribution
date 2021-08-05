@@ -15,16 +15,13 @@ trait ClientDataProviderQuery
 }
 object ClientDataProviderQuery {
   
-  @scala.inline
-  def apply(context: DataProviderContext, contributionIds: js.Array[String], queryServiceInstanceType: String): ClientDataProviderQuery = {
+  inline def apply(context: DataProviderContext, contributionIds: js.Array[String], queryServiceInstanceType: String): ClientDataProviderQuery = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], contributionIds = contributionIds.asInstanceOf[js.Any], queryServiceInstanceType = queryServiceInstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientDataProviderQuery]
   }
   
-  @scala.inline
-  implicit class ClientDataProviderQueryMutableBuilder[Self <: ClientDataProviderQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ClientDataProviderQuery](x: Self) {
     
-    @scala.inline
-    def setQueryServiceInstanceType(value: String): Self = StObject.set(x, "queryServiceInstanceType", value.asInstanceOf[js.Any])
+    inline def setQueryServiceInstanceType(value: String): Self = StObject.set(x, "queryServiceInstanceType", value.asInstanceOf[js.Any])
   }
 }

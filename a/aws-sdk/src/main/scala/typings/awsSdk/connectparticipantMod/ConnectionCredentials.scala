@@ -18,25 +18,19 @@ trait ConnectionCredentials extends StObject {
 }
 object ConnectionCredentials {
   
-  @scala.inline
-  def apply(): ConnectionCredentials = {
+  inline def apply(): ConnectionCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionCredentials]
   }
   
-  @scala.inline
-  implicit class ConnectionCredentialsMutableBuilder[Self <: ConnectionCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionCredentials](x: Self) {
     
-    @scala.inline
-    def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
+    inline def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTokenUndefined: Self = StObject.set(x, "ConnectionToken", js.undefined)
+    inline def setConnectionTokenUndefined: Self = StObject.set(x, "ConnectionToken", js.undefined)
     
-    @scala.inline
-    def setExpiry(value: ISO8601Datetime): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: ISO8601Datetime): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
   }
 }

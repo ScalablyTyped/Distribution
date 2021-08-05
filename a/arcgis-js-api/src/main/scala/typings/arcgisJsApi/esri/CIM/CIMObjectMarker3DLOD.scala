@@ -20,29 +20,22 @@ trait CIMObjectMarker3DLOD extends StObject {
 }
 object CIMObjectMarker3DLOD {
   
-  @scala.inline
-  def apply(): CIMObjectMarker3DLOD = {
+  inline def apply(): CIMObjectMarker3DLOD = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMObjectMarker3DLOD")
     __obj.asInstanceOf[CIMObjectMarker3DLOD]
   }
   
-  @scala.inline
-  implicit class CIMObjectMarker3DLODMutableBuilder[Self <: CIMObjectMarker3DLOD] (val x: Self) extends AnyVal {
+  extension [Self <: CIMObjectMarker3DLOD](x: Self) {
     
-    @scala.inline
-    def setFaceCount(value: Double): Self = StObject.set(x, "faceCount", value.asInstanceOf[js.Any])
+    inline def setFaceCount(value: Double): Self = StObject.set(x, "faceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceCountUndefined: Self = StObject.set(x, "faceCount", js.undefined)
+    inline def setFaceCountUndefined: Self = StObject.set(x, "faceCount", js.undefined)
     
-    @scala.inline
-    def setModelURI(value: String): Self = StObject.set(x, "modelURI", value.asInstanceOf[js.Any])
+    inline def setModelURI(value: String): Self = StObject.set(x, "modelURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelURIUndefined: Self = StObject.set(x, "modelURI", js.undefined)
+    inline def setModelURIUndefined: Self = StObject.set(x, "modelURI", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3DLOD): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3DLOD): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

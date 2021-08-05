@@ -20,8 +20,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(username: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(username: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   @JSImport("npm-email", JSImport.Namespace)
   @js.native
@@ -49,8 +48,6 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function npmEmail(username: string): Promise<string>;
   // export = npmEmail;
-  @scala.inline
-  def default(username: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(username: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

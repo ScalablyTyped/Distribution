@@ -14,22 +14,17 @@ trait Playable extends StObject {
 }
 object Playable {
   
-  @scala.inline
-  def apply(dailymotion: PlayerOptions, playable: Unit, youtube: Unit): Playable = {
+  inline def apply(dailymotion: PlayerOptions, playable: Unit, youtube: Unit): Playable = {
     val __obj = js.Dynamic.literal(dailymotion = dailymotion.asInstanceOf[js.Any], playable = playable.asInstanceOf[js.Any], youtube = youtube.asInstanceOf[js.Any])
     __obj.asInstanceOf[Playable]
   }
   
-  @scala.inline
-  implicit class PlayableMutableBuilder[Self <: Playable] (val x: Self) extends AnyVal {
+  extension [Self <: Playable](x: Self) {
     
-    @scala.inline
-    def setDailymotion(value: PlayerOptions): Self = StObject.set(x, "dailymotion", value.asInstanceOf[js.Any])
+    inline def setDailymotion(value: PlayerOptions): Self = StObject.set(x, "dailymotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayable(value: Unit): Self = StObject.set(x, "playable", value.asInstanceOf[js.Any])
+    inline def setPlayable(value: Unit): Self = StObject.set(x, "playable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutube(value: Unit): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
+    inline def setYoutube(value: Unit): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
   }
 }

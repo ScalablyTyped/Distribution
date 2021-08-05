@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _SECUREURLHOSTVALIDATE_FLAGS extends StObject
 object _SECUREURLHOSTVALIDATE_FLAGS {
   
-  @scala.inline
-  def SECUREURLHOSTVALIDATE_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def SECUREURLHOSTVALIDATE_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def SUHV_PROMPTBEFORENO: `1` = 1.asInstanceOf[`1`]
+  inline def SUHV_PROMPTBEFORENO: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SUHV_SILENTYES: `2` = 2.asInstanceOf[`2`]
+  inline def SUHV_SILENTYES: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SUHV_UNSECURESOURCE: `4` = 4.asInstanceOf[`4`]
+  inline def SUHV_UNSECURESOURCE: `4` = 4.asInstanceOf[`4`]
 }

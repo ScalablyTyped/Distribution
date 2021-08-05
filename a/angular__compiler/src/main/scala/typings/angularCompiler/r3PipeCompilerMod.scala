@@ -16,11 +16,9 @@ object r3PipeCompilerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compilePipeFromMetadata(metadata: R3PipeMetadata): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("compilePipeFromMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def compilePipeFromMetadata(metadata: R3PipeMetadata): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("compilePipeFromMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
-  @scala.inline
-  def compilePipeFromRender2(outputCtx: OutputContext, pipe: CompilePipeMetadata, reflector: CompileReflector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compilePipeFromRender2")(outputCtx.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compilePipeFromRender2(outputCtx: OutputContext, pipe: CompilePipeMetadata, reflector: CompileReflector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compilePipeFromRender2")(outputCtx.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait R3PipeMetadata extends StObject {
     
@@ -65,8 +63,7 @@ object r3PipeCompilerMod {
   }
   object R3PipeMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       internalType: typings.angularCompiler.outputAstMod.Expression,
       name: String,
       pipeName: String,
@@ -79,35 +76,25 @@ object r3PipeCompilerMod {
       __obj.asInstanceOf[R3PipeMetadata]
     }
     
-    @scala.inline
-    implicit class R3PipeMetadataMutableBuilder[Self <: R3PipeMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3PipeMetadata](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsNull: Self = StObject.set(x, "deps", null)
+      inline def setDepsNull: Self = StObject.set(x, "deps", null)
       
-      @scala.inline
-      def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setInternalType(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: typings.angularCompiler.outputAstMod.Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipeName(value: String): Self = StObject.set(x, "pipeName", value.asInstanceOf[js.Any])
+      inline def setPipeName(value: String): Self = StObject.set(x, "pipeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+      inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
+      inline def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
     }
   }
 }

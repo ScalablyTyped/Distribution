@@ -33,43 +33,31 @@ trait Face extends StObject {
 }
 object Face {
   
-  @scala.inline
-  def apply(): Face = {
+  inline def apply(): Face = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Face]
   }
   
-  @scala.inline
-  implicit class FaceMutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
+  extension [Self <: Face](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setExternalImageId(value: ExternalImageId): Self = StObject.set(x, "ExternalImageId", value.asInstanceOf[js.Any])
+    inline def setExternalImageId(value: ExternalImageId): Self = StObject.set(x, "ExternalImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalImageIdUndefined: Self = StObject.set(x, "ExternalImageId", js.undefined)
+    inline def setExternalImageIdUndefined: Self = StObject.set(x, "ExternalImageId", js.undefined)
     
-    @scala.inline
-    def setFaceId(value: FaceId): Self = StObject.set(x, "FaceId", value.asInstanceOf[js.Any])
+    inline def setFaceId(value: FaceId): Self = StObject.set(x, "FaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceIdUndefined: Self = StObject.set(x, "FaceId", js.undefined)
+    inline def setFaceIdUndefined: Self = StObject.set(x, "FaceId", js.undefined)
     
-    @scala.inline
-    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
   }
 }

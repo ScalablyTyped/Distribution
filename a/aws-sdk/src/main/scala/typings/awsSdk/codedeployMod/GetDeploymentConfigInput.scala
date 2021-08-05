@@ -13,16 +13,13 @@ trait GetDeploymentConfigInput extends StObject {
 }
 object GetDeploymentConfigInput {
   
-  @scala.inline
-  def apply(deploymentConfigName: DeploymentConfigName): GetDeploymentConfigInput = {
+  inline def apply(deploymentConfigName: DeploymentConfigName): GetDeploymentConfigInput = {
     val __obj = js.Dynamic.literal(deploymentConfigName = deploymentConfigName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeploymentConfigInput]
   }
   
-  @scala.inline
-  implicit class GetDeploymentConfigInputMutableBuilder[Self <: GetDeploymentConfigInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentConfigInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
+    inline def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
   }
 }

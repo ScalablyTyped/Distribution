@@ -28,37 +28,27 @@ trait ContainerServiceRegistryLogin extends StObject {
 }
 object ContainerServiceRegistryLogin {
   
-  @scala.inline
-  def apply(): ContainerServiceRegistryLogin = {
+  inline def apply(): ContainerServiceRegistryLogin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerServiceRegistryLogin]
   }
   
-  @scala.inline
-  implicit class ContainerServiceRegistryLoginMutableBuilder[Self <: ContainerServiceRegistryLogin] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerServiceRegistryLogin](x: Self) {
     
-    @scala.inline
-    def setExpiresAt(value: IsoDate): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: IsoDate): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
+    inline def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+    inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

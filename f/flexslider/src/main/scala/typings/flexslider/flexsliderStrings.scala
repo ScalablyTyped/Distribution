@@ -9,78 +9,65 @@ object flexsliderStrings {
   
   @js.native
   sealed trait fade extends StObject
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
   sealed trait horizontal extends StObject
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait linear extends StObject
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
   sealed trait next
     extends StObject
        with HelperActions
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait pause
     extends StObject
        with HelperActions
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
   sealed trait play
     extends StObject
        with HelperActions
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
+  inline def play: play = "play".asInstanceOf[play]
   
   @js.native
   sealed trait prev
     extends StObject
        with HelperActions
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
+  inline def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
   sealed trait previous
     extends StObject
        with HelperActions
-  @scala.inline
-  def previous: previous = "previous".asInstanceOf[previous]
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
   sealed trait slide extends StObject
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
   sealed trait stop
     extends StObject
        with HelperActions
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
   sealed trait swing extends StObject
-  @scala.inline
-  def swing: swing = "swing".asInstanceOf[swing]
+  inline def swing: swing = "swing".asInstanceOf[swing]
   
   @js.native
   sealed trait thumbnails extends StObject
-  @scala.inline
-  def thumbnails: thumbnails = "thumbnails".asInstanceOf[thumbnails]
+  inline def thumbnails: thumbnails = "thumbnails".asInstanceOf[thumbnails]
   
   @js.native
   sealed trait vertical extends StObject
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

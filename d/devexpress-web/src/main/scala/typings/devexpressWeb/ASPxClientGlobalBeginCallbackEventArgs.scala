@@ -18,16 +18,13 @@ trait ASPxClientGlobalBeginCallbackEventArgs
 }
 object ASPxClientGlobalBeginCallbackEventArgs {
   
-  @scala.inline
-  def apply(command: String, control: ASPxClientControl): ASPxClientGlobalBeginCallbackEventArgs = {
+  inline def apply(command: String, control: ASPxClientControl): ASPxClientGlobalBeginCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGlobalBeginCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGlobalBeginCallbackEventArgsMutableBuilder[Self <: ASPxClientGlobalBeginCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGlobalBeginCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setControl(value: ASPxClientControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: ASPxClientControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
   }
 }

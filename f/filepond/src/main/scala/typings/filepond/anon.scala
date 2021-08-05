@@ -58,113 +58,82 @@ object anon {
   }
   object Fetch {
     
-    @scala.inline
-    def apply(): Fetch = {
+    inline def apply(): Fetch = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fetch]
     }
     
-    @scala.inline
-    implicit class FetchMutableBuilder[Self <: Fetch] (val x: Self) extends AnyVal {
+    extension [Self <: Fetch](x: Self) {
       
-      @scala.inline
-      def setFetch(value: String | ServerUrl | FetchServerConfigFunction): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: String | ServerUrl | FetchServerConfigFunction): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchFunction6(
+      inline def setFetchFunction6(
         value: (/* url */ String, /* load */ js.Function1[/* file */ ActualFileObject | Blob, Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* headers */ js.Function1[/* headersString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "fetch", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setFetchNull: Self = StObject.set(x, "fetch", null)
+      inline def setFetchNull: Self = StObject.set(x, "fetch", null)
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setLoad(value: String | ServerUrl | LoadServerConfigFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+      inline def setLoad(value: String | ServerUrl | LoadServerConfigFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadFunction6(
+      inline def setLoadFunction6(
         value: (/* source */ js.Any, /* load */ js.Function1[/* file */ ActualFileObject | Blob, Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* headers */ js.Function1[/* headersString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "load", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setLoadNull: Self = StObject.set(x, "load", null)
+      inline def setLoadNull: Self = StObject.set(x, "load", null)
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setProcess(value: String | ServerUrl | ProcessServerConfigFunction): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+      inline def setProcess(value: String | ServerUrl | ProcessServerConfigFunction): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessFunction7(
+      inline def setProcessFunction7(
         value: (/* fieldName */ String, /* file */ ActualFileObject, /* metadata */ StringDictionary[js.Any], /* load */ js.Function1[/* p */ String | StringDictionary[js.Any], Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit]) => Unit
       ): Self = StObject.set(x, "process", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setProcessNull: Self = StObject.set(x, "process", null)
+      inline def setProcessNull: Self = StObject.set(x, "process", null)
       
-      @scala.inline
-      def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+      inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
       
-      @scala.inline
-      def setRemove(
+      inline def setRemove(
         value: (/* source */ js.Any, /* load */ js.Function0[Unit], /* error */ js.Function1[/* errorText */ String, Unit]) => Unit
       ): Self = StObject.set(x, "remove", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemoveNull: Self = StObject.set(x, "remove", null)
+      inline def setRemoveNull: Self = StObject.set(x, "remove", null)
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setRestore(value: String | ServerUrl | RestoreServerConfigFunction): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+      inline def setRestore(value: String | ServerUrl | RestoreServerConfigFunction): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreFunction6(
+      inline def setRestoreFunction6(
         value: (/* uniqueFileId */ js.Any, /* load */ js.Function1[/* file */ ActualFileObject, Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* headers */ js.Function1[/* headersString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "restore", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setRestoreNull: Self = StObject.set(x, "restore", null)
+      inline def setRestoreNull: Self = StObject.set(x, "restore", null)
       
-      @scala.inline
-      def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+      inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
       
-      @scala.inline
-      def setRevert(value: String | ServerUrl | RevertServerConfigFunction): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+      inline def setRevert(value: String | ServerUrl | RevertServerConfigFunction): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertFunction3(
+      inline def setRevertFunction3(
         value: (/* uniqueFieldId */ js.Any, /* load */ js.Function0[Unit], /* error */ js.Function1[/* errorText */ String, Unit]) => Unit
       ): Self = StObject.set(x, "revert", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRevertNull: Self = StObject.set(x, "revert", null)
+      inline def setRevertNull: Self = StObject.set(x, "revert", null)
       
-      @scala.inline
-      def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
+      inline def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -181,30 +150,23 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(`type`: input | limbo | local): File = {
+    inline def apply(`type`: input | limbo | local): File = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: Name): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Name): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setType(value: input | limbo | local): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: input | limbo | local): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -649,20 +611,16 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(): Index = {
+    inline def apply(): Index = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
   
@@ -672,17 +630,14 @@ object anon {
   }
   object IndexNumber {
     
-    @scala.inline
-    def apply(index: Double): IndexNumber = {
+    inline def apply(index: Double): IndexNumber = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndexNumber]
     }
     
-    @scala.inline
-    implicit class IndexNumberMutableBuilder[Self <: IndexNumber] (val x: Self) extends AnyVal {
+    extension [Self <: IndexNumber](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -696,32 +651,24 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(): Name = {
+    inline def apply(): Name = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -733,20 +680,16 @@ object anon {
   }
   object Output {
     
-    @scala.inline
-    def apply(file: FilePondFile, output: js.Any): Output = {
+    inline def apply(file: FilePondFile, output: js.Any): Output = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setFile(value: FilePondFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: FilePondFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,22 +23,17 @@ trait AntennaDownlinkDemodDecodeConfig extends StObject {
 }
 object AntennaDownlinkDemodDecodeConfig {
   
-  @scala.inline
-  def apply(decodeConfig: DecodeConfig, demodulationConfig: DemodulationConfig, spectrumConfig: SpectrumConfig): AntennaDownlinkDemodDecodeConfig = {
+  inline def apply(decodeConfig: DecodeConfig, demodulationConfig: DemodulationConfig, spectrumConfig: SpectrumConfig): AntennaDownlinkDemodDecodeConfig = {
     val __obj = js.Dynamic.literal(decodeConfig = decodeConfig.asInstanceOf[js.Any], demodulationConfig = demodulationConfig.asInstanceOf[js.Any], spectrumConfig = spectrumConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntennaDownlinkDemodDecodeConfig]
   }
   
-  @scala.inline
-  implicit class AntennaDownlinkDemodDecodeConfigMutableBuilder[Self <: AntennaDownlinkDemodDecodeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AntennaDownlinkDemodDecodeConfig](x: Self) {
     
-    @scala.inline
-    def setDecodeConfig(value: DecodeConfig): Self = StObject.set(x, "decodeConfig", value.asInstanceOf[js.Any])
+    inline def setDecodeConfig(value: DecodeConfig): Self = StObject.set(x, "decodeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemodulationConfig(value: DemodulationConfig): Self = StObject.set(x, "demodulationConfig", value.asInstanceOf[js.Any])
+    inline def setDemodulationConfig(value: DemodulationConfig): Self = StObject.set(x, "demodulationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpectrumConfig(value: SpectrumConfig): Self = StObject.set(x, "spectrumConfig", value.asInstanceOf[js.Any])
+    inline def setSpectrumConfig(value: SpectrumConfig): Self = StObject.set(x, "spectrumConfig", value.asInstanceOf[js.Any])
   }
 }

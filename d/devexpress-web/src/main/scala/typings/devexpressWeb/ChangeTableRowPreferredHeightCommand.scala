@@ -24,19 +24,15 @@ trait ChangeTableRowPreferredHeightCommand
 }
 object ChangeTableRowPreferredHeightCommand {
   
-  @scala.inline
-  def apply(execute: TableHeightUnit => Boolean, getState: () => CommandState[TableHeightUnit]): ChangeTableRowPreferredHeightCommand = {
+  inline def apply(execute: TableHeightUnit => Boolean, getState: () => CommandState[TableHeightUnit]): ChangeTableRowPreferredHeightCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTableRowPreferredHeightCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTableRowPreferredHeightCommandMutableBuilder[Self <: ChangeTableRowPreferredHeightCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTableRowPreferredHeightCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: TableHeightUnit => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: TableHeightUnit => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TableHeightUnit]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TableHeightUnit]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

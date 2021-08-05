@@ -98,10 +98,8 @@ object TextRenderer {
       *
       * The `formatIntlDateTime()` formatter is more flexible, but slower.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatDate")
     @js.native
@@ -121,20 +119,16 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions](x: Self) {
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -157,10 +151,8 @@ object TextRenderer {
       *
       * The `formatIntlNumber()` formatter is more flexible, but slower.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatExponential")
     @js.native
@@ -187,26 +179,20 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions](x: Self) {
         
-        @scala.inline
-        def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+        inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+        inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -229,10 +215,8 @@ object TextRenderer {
       *
       * The `formatIntlNumber()` formatter is more flexible, but slower.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatFixed")
     @js.native
@@ -259,26 +243,20 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions](x: Self) {
         
-        @scala.inline
-        def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+        inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+        inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -299,10 +277,8 @@ object TextRenderer {
       * This formatter uses the builtin `String()` to coerce any value
       * to a string.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatGeneric")
     @js.native
@@ -322,20 +298,16 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions](x: Self) {
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -360,10 +332,8 @@ object TextRenderer {
       *
       * The `formatIntlDateTime()` formatter is more flexible, but slower.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatISODateTime")
     @js.native
@@ -383,20 +353,16 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions](x: Self) {
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -419,10 +385,8 @@ object TextRenderer {
       *
       * This is the most flexible (but slowest) datetime formatter.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatIntlDateTime")
     @js.native
@@ -456,35 +420,26 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions](x: Self) {
         
-        @scala.inline
-        def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+        inline def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+        inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
         
-        @scala.inline
-        def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+        inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
         
-        @scala.inline
-        def setOptions(value: DateTimeFormatOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: DateTimeFormatOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       }
     }
   }
@@ -507,10 +462,8 @@ object TextRenderer {
       *
       * This is the most flexible (but slowest) number formatter.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatIntlNumber")
     @js.native
@@ -544,35 +497,26 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions](x: Self) {
         
-        @scala.inline
-        def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+        inline def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+        inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
         
-        @scala.inline
-        def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+        inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
         
-        @scala.inline
-        def setOptions(value: NumberFormatOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: NumberFormatOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       }
     }
   }
@@ -595,10 +539,8 @@ object TextRenderer {
       *
       * The `formatIntlNumber()` formatter is more flexible, but slower.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatPrecision")
     @js.native
@@ -625,26 +567,20 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions](x: Self) {
         
-        @scala.inline
-        def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+        inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+        inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -669,10 +605,8 @@ object TextRenderer {
       *
       * The `formatIntlDateTime()` formatter is more flexible, but slower.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatTime")
     @js.native
@@ -692,20 +626,16 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions](x: Self) {
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -730,10 +660,8 @@ object TextRenderer {
       *
       * The `formatIntlDateTime()` formatter is more flexible, but slower.
       */
-    @scala.inline
-    def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
-    @scala.inline
-    def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+    inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatUTCDateTime")
     @js.native
@@ -753,20 +681,16 @@ object TextRenderer {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions = {
+      inline def apply(): typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions](x: Self) {
         
-        @scala.inline
-        def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+        inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+        inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       }
     }
   }
@@ -784,8 +708,7 @@ object TextRenderer {
     * will incur a DOM reflow, but the return value is cached, so any
     * subsequent call for the same font will return the cached value.
     */
-  @scala.inline
-  def measureFontHeight(font: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFontHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def measureFontHeight(font: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFontHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * A type alias for a format function.
@@ -803,14 +726,11 @@ object TextRenderer {
   trait HorizontalAlignment extends StObject
   object HorizontalAlignment {
     
-    @scala.inline
-    def center: typings.luminoDatagrid.luminoDatagridStrings.center = "center".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.center]
+    inline def center: typings.luminoDatagrid.luminoDatagridStrings.center = "center".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.center]
     
-    @scala.inline
-    def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
+    inline def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
     
-    @scala.inline
-    def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
+    inline def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
   }
   
   /**
@@ -862,65 +782,46 @@ object TextRenderer {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: ConfigOption[String]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ConfigOption[String]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorFunction1(value: /* config */ CellConfig => String): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
+      inline def setBackgroundColorFunction1(value: /* config */ CellConfig => String): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setFont(value: ConfigOption[String]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: ConfigOption[String]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFunction1(value: /* config */ CellConfig => String): Self = StObject.set(x, "font", js.Any.fromFunction1(value))
+      inline def setFontFunction1(value: /* config */ CellConfig => String): Self = StObject.set(x, "font", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFormat(value: /* config */ CellConfig => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: /* config */ CellConfig => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHorizontalAlignment(value: ConfigOption[HorizontalAlignment]): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+      inline def setHorizontalAlignment(value: ConfigOption[HorizontalAlignment]): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalAlignmentFunction1(value: /* config */ CellConfig => HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", js.Any.fromFunction1(value))
+      inline def setHorizontalAlignmentFunction1(value: /* config */ CellConfig => HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+      inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
       
-      @scala.inline
-      def setTextColor(value: ConfigOption[String]): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: ConfigOption[String]): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorFunction1(value: /* config */ CellConfig => String): Self = StObject.set(x, "textColor", js.Any.fromFunction1(value))
+      inline def setTextColorFunction1(value: /* config */ CellConfig => String): Self = StObject.set(x, "textColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setVerticalAlignment(value: ConfigOption[VerticalAlignment]): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+      inline def setVerticalAlignment(value: ConfigOption[VerticalAlignment]): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignmentFunction1(value: /* config */ CellConfig => VerticalAlignment): Self = StObject.set(x, "verticalAlignment", js.Any.fromFunction1(value))
+      inline def setVerticalAlignmentFunction1(value: /* config */ CellConfig => VerticalAlignment): Self = StObject.set(x, "verticalAlignment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+      inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     }
   }
   
@@ -935,13 +836,10 @@ object TextRenderer {
   trait VerticalAlignment extends StObject
   object VerticalAlignment {
     
-    @scala.inline
-    def bottom: typings.luminoDatagrid.luminoDatagridStrings.bottom = "bottom".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.bottom]
+    inline def bottom: typings.luminoDatagrid.luminoDatagridStrings.bottom = "bottom".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.bottom]
     
-    @scala.inline
-    def center: typings.luminoDatagrid.luminoDatagridStrings.center = "center".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.center]
+    inline def center: typings.luminoDatagrid.luminoDatagridStrings.center = "center".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.center]
     
-    @scala.inline
-    def top: typings.luminoDatagrid.luminoDatagridStrings.top = "top".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.top]
+    inline def top: typings.luminoDatagrid.luminoDatagridStrings.top = "top".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.top]
   }
 }

@@ -18,8 +18,7 @@ trait ASPxClientDashboardItemMasterFilterStateChangedEventArgs
 }
 object ASPxClientDashboardItemMasterFilterStateChangedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsNullValue: js.Any => Boolean,
     IsOthersValue: js.Any => Boolean,
     ItemName: String,
@@ -29,13 +28,10 @@ object ASPxClientDashboardItemMasterFilterStateChangedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemMasterFilterStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemMasterFilterStateChangedEventArgsMutableBuilder[Self <: ASPxClientDashboardItemMasterFilterStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemMasterFilterStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[js.Array[js.Object]]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[js.Object]]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

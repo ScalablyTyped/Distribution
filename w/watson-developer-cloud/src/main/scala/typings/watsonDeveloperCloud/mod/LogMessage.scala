@@ -19,19 +19,15 @@ trait LogMessage
 }
 object LogMessage {
   
-  @scala.inline
-  def apply(level: String, msg: String): LogMessage = {
+  inline def apply(level: String, msg: String): LogMessage = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogMessage]
   }
   
-  @scala.inline
-  implicit class LogMessageMutableBuilder[Self <: LogMessage] (val x: Self) extends AnyVal {
+  extension [Self <: LogMessage](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }
 }

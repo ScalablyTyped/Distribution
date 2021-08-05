@@ -24,31 +24,23 @@ trait TextPropsIOS extends StObject {
 }
 object TextPropsIOS {
   
-  @scala.inline
-  def apply(): TextPropsIOS = {
+  inline def apply(): TextPropsIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextPropsIOS]
   }
   
-  @scala.inline
-  implicit class TextPropsIOSMutableBuilder[Self <: TextPropsIOS] (val x: Self) extends AnyVal {
+  extension [Self <: TextPropsIOS](x: Self) {
     
-    @scala.inline
-    def setAdjustsFontSizeToFit(value: Boolean): Self = StObject.set(x, "adjustsFontSizeToFit", value.asInstanceOf[js.Any])
+    inline def setAdjustsFontSizeToFit(value: Boolean): Self = StObject.set(x, "adjustsFontSizeToFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustsFontSizeToFitUndefined: Self = StObject.set(x, "adjustsFontSizeToFit", js.undefined)
+    inline def setAdjustsFontSizeToFitUndefined: Self = StObject.set(x, "adjustsFontSizeToFit", js.undefined)
     
-    @scala.inline
-    def setMinimumFontScale(value: Double): Self = StObject.set(x, "minimumFontScale", value.asInstanceOf[js.Any])
+    inline def setMinimumFontScale(value: Double): Self = StObject.set(x, "minimumFontScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumFontScaleUndefined: Self = StObject.set(x, "minimumFontScale", js.undefined)
+    inline def setMinimumFontScaleUndefined: Self = StObject.set(x, "minimumFontScale", js.undefined)
     
-    @scala.inline
-    def setSuppressHighlighting(value: Boolean): Self = StObject.set(x, "suppressHighlighting", value.asInstanceOf[js.Any])
+    inline def setSuppressHighlighting(value: Boolean): Self = StObject.set(x, "suppressHighlighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressHighlightingUndefined: Self = StObject.set(x, "suppressHighlighting", js.undefined)
+    inline def setSuppressHighlightingUndefined: Self = StObject.set(x, "suppressHighlighting", js.undefined)
   }
 }

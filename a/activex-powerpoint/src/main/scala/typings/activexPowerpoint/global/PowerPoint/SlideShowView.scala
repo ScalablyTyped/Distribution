@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SlideShowView")
 @js.native
-class SlideShowView protected ()
+/* private */ class SlideShowView ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SlideShowView

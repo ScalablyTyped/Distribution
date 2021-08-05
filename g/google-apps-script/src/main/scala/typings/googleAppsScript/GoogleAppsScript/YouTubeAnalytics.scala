@@ -49,8 +49,7 @@ trait YouTubeAnalytics extends StObject {
 }
 object YouTubeAnalytics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newErrorProto: () => ErrorProto,
     newErrors: () => Errors,
     newGroup: () => Group,
@@ -130,20 +129,16 @@ object YouTubeAnalytics {
     }
     object EmptyResponse {
       
-      @scala.inline
-      def apply(): EmptyResponse = {
+      inline def apply(): EmptyResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EmptyResponse]
       }
       
-      @scala.inline
-      implicit class EmptyResponseMutableBuilder[Self <: EmptyResponse] (val x: Self) extends AnyVal {
+      extension [Self <: EmptyResponse](x: Self) {
         
-        @scala.inline
-        def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+        inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       }
     }
     
@@ -165,59 +160,42 @@ object YouTubeAnalytics {
     }
     object ErrorProto {
       
-      @scala.inline
-      def apply(): ErrorProto = {
+      inline def apply(): ErrorProto = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ErrorProto]
       }
       
-      @scala.inline
-      implicit class ErrorProtoMutableBuilder[Self <: ErrorProto] (val x: Self) extends AnyVal {
+      extension [Self <: ErrorProto](x: Self) {
         
-        @scala.inline
-        def setArgument(value: js.Array[String]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+        inline def setArgument(value: js.Array[String]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+        inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
         
-        @scala.inline
-        def setArgumentVarargs(value: String*): Self = StObject.set(x, "argument", js.Array(value :_*))
+        inline def setArgumentVarargs(value: String*): Self = StObject.set(x, "argument", js.Array(value :_*))
         
-        @scala.inline
-        def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+        inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
         
-        @scala.inline
-        def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
+        inline def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
+        inline def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
         
-        @scala.inline
-        def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+        inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+        inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        @scala.inline
-        def setExternalErrorMessage(value: String): Self = StObject.set(x, "externalErrorMessage", value.asInstanceOf[js.Any])
+        inline def setExternalErrorMessage(value: String): Self = StObject.set(x, "externalErrorMessage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExternalErrorMessageUndefined: Self = StObject.set(x, "externalErrorMessage", js.undefined)
+        inline def setExternalErrorMessageUndefined: Self = StObject.set(x, "externalErrorMessage", js.undefined)
         
-        @scala.inline
-        def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+        inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+        inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       }
     }
     
@@ -231,35 +209,26 @@ object YouTubeAnalytics {
     }
     object Errors {
       
-      @scala.inline
-      def apply(): Errors = {
+      inline def apply(): Errors = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Errors]
       }
       
-      @scala.inline
-      implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+      extension [Self <: Errors](x: Self) {
         
-        @scala.inline
-        def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+        inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
         
-        @scala.inline
-        def setError(value: js.Array[ErrorProto]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: js.Array[ErrorProto]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+        inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        @scala.inline
-        def setErrorVarargs(value: ErrorProto*): Self = StObject.set(x, "error", js.Array(value :_*))
+        inline def setErrorVarargs(value: ErrorProto*): Self = StObject.set(x, "error", js.Array(value :_*))
         
-        @scala.inline
-        def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+        inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+        inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
       }
     }
     
@@ -279,50 +248,36 @@ object YouTubeAnalytics {
     }
     object Group {
       
-      @scala.inline
-      def apply(): Group = {
+      inline def apply(): Group = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Group]
       }
       
-      @scala.inline
-      implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+      extension [Self <: Group](x: Self) {
         
-        @scala.inline
-        def setContentDetails(value: GroupContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+        inline def setContentDetails(value: GroupContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
+        inline def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
         
-        @scala.inline
-        def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+        inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setSnippet(value: GroupSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+        inline def setSnippet(value: GroupSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+        inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
       }
     }
     
@@ -334,26 +289,20 @@ object YouTubeAnalytics {
     }
     object GroupContentDetails {
       
-      @scala.inline
-      def apply(): GroupContentDetails = {
+      inline def apply(): GroupContentDetails = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GroupContentDetails]
       }
       
-      @scala.inline
-      implicit class GroupContentDetailsMutableBuilder[Self <: GroupContentDetails] (val x: Self) extends AnyVal {
+      extension [Self <: GroupContentDetails](x: Self) {
         
-        @scala.inline
-        def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+        inline def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+        inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
         
-        @scala.inline
-        def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+        inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+        inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       }
     }
     
@@ -373,50 +322,36 @@ object YouTubeAnalytics {
     }
     object GroupItem {
       
-      @scala.inline
-      def apply(): GroupItem = {
+      inline def apply(): GroupItem = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GroupItem]
       }
       
-      @scala.inline
-      implicit class GroupItemMutableBuilder[Self <: GroupItem] (val x: Self) extends AnyVal {
+      extension [Self <: GroupItem](x: Self) {
         
-        @scala.inline
-        def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+        inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+        inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+        inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setResource(value: GroupItemResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+        inline def setResource(value: GroupItemResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+        inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       }
     }
     
@@ -428,26 +363,20 @@ object YouTubeAnalytics {
     }
     object GroupItemResource {
       
-      @scala.inline
-      def apply(): GroupItemResource = {
+      inline def apply(): GroupItemResource = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GroupItemResource]
       }
       
-      @scala.inline
-      implicit class GroupItemResourceMutableBuilder[Self <: GroupItemResource] (val x: Self) extends AnyVal {
+      extension [Self <: GroupItemResource](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       }
     }
     
@@ -459,26 +388,20 @@ object YouTubeAnalytics {
     }
     object GroupSnippet {
       
-      @scala.inline
-      def apply(): GroupSnippet = {
+      inline def apply(): GroupSnippet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GroupSnippet]
       }
       
-      @scala.inline
-      implicit class GroupSnippetMutableBuilder[Self <: GroupSnippet] (val x: Self) extends AnyVal {
+      extension [Self <: GroupSnippet](x: Self) {
         
-        @scala.inline
-        def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
+        inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
+        inline def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -494,41 +417,30 @@ object YouTubeAnalytics {
     }
     object ListGroupItemsResponse {
       
-      @scala.inline
-      def apply(): ListGroupItemsResponse = {
+      inline def apply(): ListGroupItemsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListGroupItemsResponse]
       }
       
-      @scala.inline
-      implicit class ListGroupItemsResponseMutableBuilder[Self <: ListGroupItemsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListGroupItemsResponse](x: Self) {
         
-        @scala.inline
-        def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+        inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[GroupItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[GroupItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: GroupItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: GroupItem*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       }
     }
     
@@ -546,47 +458,34 @@ object YouTubeAnalytics {
     }
     object ListGroupsResponse {
       
-      @scala.inline
-      def apply(): ListGroupsResponse = {
+      inline def apply(): ListGroupsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListGroupsResponse]
       }
       
-      @scala.inline
-      implicit class ListGroupsResponseMutableBuilder[Self <: ListGroupsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListGroupsResponse](x: Self) {
         
-        @scala.inline
-        def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+        inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[Group]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[Group]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: Group*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Group*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -602,44 +501,32 @@ object YouTubeAnalytics {
     }
     object QueryResponse {
       
-      @scala.inline
-      def apply(): QueryResponse = {
+      inline def apply(): QueryResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[QueryResponse]
       }
       
-      @scala.inline
-      implicit class QueryResponseMutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
+      extension [Self <: QueryResponse](x: Self) {
         
-        @scala.inline
-        def setColumnHeaders(value: js.Array[ResultTableColumnHeader]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
+        inline def setColumnHeaders(value: js.Array[ResultTableColumnHeader]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
+        inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
         
-        @scala.inline
-        def setColumnHeadersVarargs(value: ResultTableColumnHeader*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+        inline def setColumnHeadersVarargs(value: ResultTableColumnHeader*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
         
-        @scala.inline
-        def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+        inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+        inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        @scala.inline
-        def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
       }
     }
     
@@ -653,76 +540,54 @@ object YouTubeAnalytics {
     }
     object ResultTableColumnHeader {
       
-      @scala.inline
-      def apply(): ResultTableColumnHeader = {
+      inline def apply(): ResultTableColumnHeader = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResultTableColumnHeader]
       }
       
-      @scala.inline
-      implicit class ResultTableColumnHeaderMutableBuilder[Self <: ResultTableColumnHeader] (val x: Self) extends AnyVal {
+      extension [Self <: ResultTableColumnHeader](x: Self) {
         
-        @scala.inline
-        def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
+        inline def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnTypeUndefined: Self = StObject.set(x, "columnType", js.undefined)
+        inline def setColumnTypeUndefined: Self = StObject.set(x, "columnType", js.undefined)
         
-        @scala.inline
-        def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+        inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+        inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  implicit class YouTubeAnalyticsMutableBuilder[Self <: YouTubeAnalytics] (val x: Self) extends AnyVal {
+  extension [Self <: YouTubeAnalytics](x: Self) {
     
-    @scala.inline
-    def setGroupItems(value: GroupItemsCollection): Self = StObject.set(x, "GroupItems", value.asInstanceOf[js.Any])
+    inline def setGroupItems(value: GroupItemsCollection): Self = StObject.set(x, "GroupItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupItemsUndefined: Self = StObject.set(x, "GroupItems", js.undefined)
+    inline def setGroupItemsUndefined: Self = StObject.set(x, "GroupItems", js.undefined)
     
-    @scala.inline
-    def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setNewErrorProto(value: () => ErrorProto): Self = StObject.set(x, "newErrorProto", js.Any.fromFunction0(value))
+    inline def setNewErrorProto(value: () => ErrorProto): Self = StObject.set(x, "newErrorProto", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewErrors(value: () => Errors): Self = StObject.set(x, "newErrors", js.Any.fromFunction0(value))
+    inline def setNewErrors(value: () => Errors): Self = StObject.set(x, "newErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGroup(value: () => Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
+    inline def setNewGroup(value: () => Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGroupContentDetails(value: () => GroupContentDetails): Self = StObject.set(x, "newGroupContentDetails", js.Any.fromFunction0(value))
+    inline def setNewGroupContentDetails(value: () => GroupContentDetails): Self = StObject.set(x, "newGroupContentDetails", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGroupItem(value: () => GroupItem): Self = StObject.set(x, "newGroupItem", js.Any.fromFunction0(value))
+    inline def setNewGroupItem(value: () => GroupItem): Self = StObject.set(x, "newGroupItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGroupItemResource(value: () => GroupItemResource): Self = StObject.set(x, "newGroupItemResource", js.Any.fromFunction0(value))
+    inline def setNewGroupItemResource(value: () => GroupItemResource): Self = StObject.set(x, "newGroupItemResource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGroupSnippet(value: () => GroupSnippet): Self = StObject.set(x, "newGroupSnippet", js.Any.fromFunction0(value))
+    inline def setNewGroupSnippet(value: () => GroupSnippet): Self = StObject.set(x, "newGroupSnippet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
+    inline def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
+    inline def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
   }
 }

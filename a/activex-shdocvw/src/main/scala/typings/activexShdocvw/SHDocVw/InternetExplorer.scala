@@ -198,7 +198,7 @@ trait InternetExplorer extends StObject {
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
   
-  @JSName("SHDocVw.InternetExplorer_typekey")
+  /* private */ @JSName("SHDocVw.InternetExplorer_typekey")
   var SHDocVwDotInternetExplorer_typekey: InternetExplorer = js.native
   
   /** Set BrowserBar to Clsid */

@@ -41,7 +41,7 @@ object webHookMod {
     
     /* protected */ def convertData(request: WebHookData, data: TApiData): TData = js.native
     
-    val handlers: js.Any = js.native
+    /* private */ val handlers: js.Any = js.native
     
     def registerAsyncHandler(handler: AsyncAction[TData]): Unit = js.native
     
@@ -51,7 +51,7 @@ object webHookMod {
     
     val router: Router = js.native
     
-    var secret: js.Any = js.native
+    /* private */ var secret: js.Any = js.native
   }
   
   trait IssueWebHookData
@@ -65,8 +65,7 @@ object webHookMod {
   }
   object IssueWebHookData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened,
       event: String,
       id: String,
@@ -77,16 +76,13 @@ object webHookMod {
       __obj.asInstanceOf[IssueWebHookData]
     }
     
-    @scala.inline
-    implicit class IssueWebHookDataMutableBuilder[Self <: IssueWebHookData] (val x: Self) extends AnyVal {
+    extension [Self <: IssueWebHookData](x: Self) {
       
-      @scala.inline
-      def setAction(
+      inline def setAction(
         value: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened
       ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+      inline def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,26 +98,20 @@ object webHookMod {
   }
   object WebHookData {
     
-    @scala.inline
-    def apply(action: String, event: String, id: String, sender: UserSummary): WebHookData = {
+    inline def apply(action: String, event: String, id: String, sender: UserSummary): WebHookData = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebHookData]
     }
     
-    @scala.inline
-    implicit class WebHookDataMutableBuilder[Self <: WebHookData] (val x: Self) extends AnyVal {
+    extension [Self <: WebHookData](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSender(value: UserSummary): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: UserSummary): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     }
   }
 }

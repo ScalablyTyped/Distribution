@@ -12,16 +12,13 @@ trait MediaStreamSourceSampleRequestDeferral extends StObject {
 }
 object MediaStreamSourceSampleRequestDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): MediaStreamSourceSampleRequestDeferral = {
+  inline def apply(complete: () => Unit): MediaStreamSourceSampleRequestDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[MediaStreamSourceSampleRequestDeferral]
   }
   
-  @scala.inline
-  implicit class MediaStreamSourceSampleRequestDeferralMutableBuilder[Self <: MediaStreamSourceSampleRequestDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamSourceSampleRequestDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

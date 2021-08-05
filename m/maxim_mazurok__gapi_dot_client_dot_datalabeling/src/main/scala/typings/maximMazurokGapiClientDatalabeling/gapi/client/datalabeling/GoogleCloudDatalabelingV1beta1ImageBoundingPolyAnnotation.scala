@@ -15,31 +15,23 @@ trait GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation extends StObject
 }
 object GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotationMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
+    inline def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
     
-    @scala.inline
-    def setBoundingPoly(value: GoogleCloudDatalabelingV1beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: GoogleCloudDatalabelingV1beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setNormalizedBoundingPoly(value: GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly): Self = StObject.set(x, "normalizedBoundingPoly", value.asInstanceOf[js.Any])
+    inline def setNormalizedBoundingPoly(value: GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly): Self = StObject.set(x, "normalizedBoundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedBoundingPolyUndefined: Self = StObject.set(x, "normalizedBoundingPoly", js.undefined)
+    inline def setNormalizedBoundingPolyUndefined: Self = StObject.set(x, "normalizedBoundingPoly", js.undefined)
   }
 }

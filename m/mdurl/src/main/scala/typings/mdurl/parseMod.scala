@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parseMod {
   
-  @scala.inline
-  def apply(input: String): Url = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Url]
-  @scala.inline
-  def apply(input: String, slashesDenoteHost: Boolean): Url = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url]
+  inline def apply(input: String): Url = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Url]
+  inline def apply(input: String, slashesDenoteHost: Boolean): Url = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url]
   
   @JSImport("mdurl/parse", JSImport.Namespace)
   @js.native

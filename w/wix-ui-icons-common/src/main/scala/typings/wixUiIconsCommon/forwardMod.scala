@@ -22,20 +22,16 @@ object forwardMod extends Shortcut {
   }
   object ForwardProps {
     
-    @scala.inline
-    def apply(): ForwardProps = {
+    inline def apply(): ForwardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ForwardProps]
     }
     
-    @scala.inline
-    implicit class ForwardPropsMutableBuilder[Self <: ForwardProps] (val x: Self) extends AnyVal {
+    extension [Self <: ForwardProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

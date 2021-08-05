@@ -16,19 +16,15 @@ trait MediaPlaybackItemError extends StObject {
 }
 object MediaPlaybackItemError {
   
-  @scala.inline
-  def apply(errorCode: MediaPlaybackItemErrorCode, extendedError: WinRTError): MediaPlaybackItemError = {
+  inline def apply(errorCode: MediaPlaybackItemErrorCode, extendedError: WinRTError): MediaPlaybackItemError = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], extendedError = extendedError.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlaybackItemError]
   }
   
-  @scala.inline
-  implicit class MediaPlaybackItemErrorMutableBuilder[Self <: MediaPlaybackItemError] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlaybackItemError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: MediaPlaybackItemErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: MediaPlaybackItemErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
   }
 }

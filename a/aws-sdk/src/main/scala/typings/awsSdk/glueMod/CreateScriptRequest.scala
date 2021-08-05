@@ -23,37 +23,27 @@ trait CreateScriptRequest extends StObject {
 }
 object CreateScriptRequest {
   
-  @scala.inline
-  def apply(): CreateScriptRequest = {
+  inline def apply(): CreateScriptRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateScriptRequest]
   }
   
-  @scala.inline
-  implicit class CreateScriptRequestMutableBuilder[Self <: CreateScriptRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScriptRequest](x: Self) {
     
-    @scala.inline
-    def setDagEdges(value: DagEdges): Self = StObject.set(x, "DagEdges", value.asInstanceOf[js.Any])
+    inline def setDagEdges(value: DagEdges): Self = StObject.set(x, "DagEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDagEdgesUndefined: Self = StObject.set(x, "DagEdges", js.undefined)
+    inline def setDagEdgesUndefined: Self = StObject.set(x, "DagEdges", js.undefined)
     
-    @scala.inline
-    def setDagEdgesVarargs(value: CodeGenEdge*): Self = StObject.set(x, "DagEdges", js.Array(value :_*))
+    inline def setDagEdgesVarargs(value: CodeGenEdge*): Self = StObject.set(x, "DagEdges", js.Array(value :_*))
     
-    @scala.inline
-    def setDagNodes(value: DagNodes): Self = StObject.set(x, "DagNodes", value.asInstanceOf[js.Any])
+    inline def setDagNodes(value: DagNodes): Self = StObject.set(x, "DagNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDagNodesUndefined: Self = StObject.set(x, "DagNodes", js.undefined)
+    inline def setDagNodesUndefined: Self = StObject.set(x, "DagNodes", js.undefined)
     
-    @scala.inline
-    def setDagNodesVarargs(value: CodeGenNode*): Self = StObject.set(x, "DagNodes", js.Array(value :_*))
+    inline def setDagNodesVarargs(value: CodeGenNode*): Self = StObject.set(x, "DagNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
   }
 }

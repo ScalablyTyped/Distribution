@@ -80,6 +80,5 @@ object mod {
     var table: String = js.native
   }
   
-  @scala.inline
-  def wrapError(err: Error): DBError = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(err.asInstanceOf[js.Any]).asInstanceOf[DBError]
+  inline def wrapError(err: Error): DBError = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(err.asInstanceOf[js.Any]).asInstanceOf[DBError]
 }

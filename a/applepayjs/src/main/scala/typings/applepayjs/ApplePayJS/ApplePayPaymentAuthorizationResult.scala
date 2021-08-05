@@ -21,25 +21,19 @@ trait ApplePayPaymentAuthorizationResult extends StObject {
 }
 object ApplePayPaymentAuthorizationResult {
   
-  @scala.inline
-  def apply(status: Double): ApplePayPaymentAuthorizationResult = {
+  inline def apply(status: Double): ApplePayPaymentAuthorizationResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentAuthorizationResult]
   }
   
-  @scala.inline
-  implicit class ApplePayPaymentAuthorizationResultMutableBuilder[Self <: ApplePayPaymentAuthorizationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayPaymentAuthorizationResult](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[ApplePayError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[ApplePayError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: ApplePayError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ApplePayError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

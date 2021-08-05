@@ -20,37 +20,27 @@ trait Session[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* 
 }
 object Session {
   
-  @scala.inline
-  def apply[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](): Session[A, U, S, VR] = {
+  inline def apply[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](): Session[A, U, S, VR] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Session[A, U, S, VR]]
   }
   
-  @scala.inline
-  implicit class SessionMutableBuilder[Self <: Session[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] (val x: Self & (Session[A, U, S, VR])) extends AnyVal {
+  extension [Self <: Session[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */](x: Self & (Session[A, U, S, VR])) {
     
-    @scala.inline
-    def setAccount(value: Schema[A]): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Schema[A]): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
-    @scala.inline
-    def setSession(value: ModelS_[S]): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ModelS_[S]): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
-    @scala.inline
-    def setUser(value: ModelSchema[U]): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: ModelSchema[U]): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
     
-    @scala.inline
-    def setVerificationRequest(value: ModelVR[VR]): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
+    inline def setVerificationRequest(value: ModelVR[VR]): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationRequestUndefined: Self = StObject.set(x, "VerificationRequest", js.undefined)
+    inline def setVerificationRequestUndefined: Self = StObject.set(x, "VerificationRequest", js.undefined)
   }
 }

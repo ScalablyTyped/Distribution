@@ -23,31 +23,23 @@ trait ListLoggingConfigurationsRequest extends StObject {
 }
 object ListLoggingConfigurationsRequest {
   
-  @scala.inline
-  def apply(): ListLoggingConfigurationsRequest = {
+  inline def apply(): ListLoggingConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLoggingConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class ListLoggingConfigurationsRequestMutableBuilder[Self <: ListLoggingConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLoggingConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Format_ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Format_]
+  inline def apply(): Format_ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Format_]
   
   @JSImport("@newrelic/winston-enricher", JSImport.Namespace)
   @js.native

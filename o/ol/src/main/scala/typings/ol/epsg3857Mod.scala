@@ -32,21 +32,13 @@ object epsg3857Mod {
   @js.native
   val WORLD_EXTENT: Extent = js.native
   
-  @scala.inline
-  def fromEPSG4326(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def fromEPSG4326(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def fromEPSG4326(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def fromEPSG4326(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def toEPSG4326(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def toEPSG4326(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def toEPSG4326(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def toEPSG4326(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toEPSG4326")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

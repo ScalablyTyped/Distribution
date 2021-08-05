@@ -14,19 +14,15 @@ trait UserCredentials
 }
 object UserCredentials {
   
-  @scala.inline
-  def apply(password: String, service: String, storage: String, username: String): UserCredentials = {
+  inline def apply(password: String, service: String, storage: String, username: String): UserCredentials = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserCredentials]
   }
   
-  @scala.inline
-  implicit class UserCredentialsMutableBuilder[Self <: UserCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: UserCredentials](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

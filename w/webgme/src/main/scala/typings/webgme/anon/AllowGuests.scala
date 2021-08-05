@@ -54,8 +54,7 @@ trait AllowGuests extends StObject {
 }
 object AllowGuests {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowGuests: Boolean,
     allowUserRegistration: Boolean,
     authorizer: Options,
@@ -70,34 +69,24 @@ object AllowGuests {
     __obj.asInstanceOf[AllowGuests]
   }
   
-  @scala.inline
-  implicit class AllowGuestsMutableBuilder[Self <: AllowGuests] (val x: Self) extends AnyVal {
+  extension [Self <: AllowGuests](x: Self) {
     
-    @scala.inline
-    def setAllowGuests(value: Boolean): Self = StObject.set(x, "allowGuests", value.asInstanceOf[js.Any])
+    inline def setAllowGuests(value: Boolean): Self = StObject.set(x, "allowGuests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUserRegistration(value: Boolean): Self = StObject.set(x, "allowUserRegistration", value.asInstanceOf[js.Any])
+    inline def setAllowUserRegistration(value: Boolean): Self = StObject.set(x, "allowUserRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizer(value: Options): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
+    inline def setAuthorizer(value: Options): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestAccount(value: String): Self = StObject.set(x, "guestAccount", value.asInstanceOf[js.Any])
+    inline def setGuestAccount(value: String): Self = StObject.set(x, "guestAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwt(value: Algorithm): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+    inline def setJwt(value: Algorithm): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogInUrl(value: String): Self = StObject.set(x, "logInUrl", value.asInstanceOf[js.Any])
+    inline def setLogInUrl(value: String): Self = StObject.set(x, "logInUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogOutUrl(value: String): Self = StObject.set(x, "logOutUrl", value.asInstanceOf[js.Any])
+    inline def setLogOutUrl(value: String): Self = StObject.set(x, "logOutUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalts(value: Double): Self = StObject.set(x, "salts", value.asInstanceOf[js.Any])
+    inline def setSalts(value: Double): Self = StObject.set(x, "salts", value.asInstanceOf[js.Any])
   }
 }

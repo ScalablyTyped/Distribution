@@ -26,20 +26,17 @@ object cascaderCascaderMod {
       @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", "default.defaultProps.cols")
       @js.native
       def cols: Double = js.native
-      @scala.inline
-      def cols_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cols")(x.asInstanceOf[js.Any])
+      inline def cols_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cols")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", "default.defaultProps.data")
       @js.native
       def data: js.Array[scala.Nothing] = js.native
-      @scala.inline
-      def data_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+      inline def data_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", "default.defaultProps.disabled")
       @js.native
       def disabled: Boolean = js.native
-      @scala.inline
-      def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+      inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
     }
   }
   

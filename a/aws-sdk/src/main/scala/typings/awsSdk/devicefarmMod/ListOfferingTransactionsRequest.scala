@@ -13,19 +13,15 @@ trait ListOfferingTransactionsRequest extends StObject {
 }
 object ListOfferingTransactionsRequest {
   
-  @scala.inline
-  def apply(): ListOfferingTransactionsRequest = {
+  inline def apply(): ListOfferingTransactionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOfferingTransactionsRequest]
   }
   
-  @scala.inline
-  implicit class ListOfferingTransactionsRequestMutableBuilder[Self <: ListOfferingTransactionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListOfferingTransactionsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

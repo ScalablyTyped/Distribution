@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlRobustConnect extends StObject
 object XlRobustConnect {
   
-  @scala.inline
-  def xlAlways: `1` = 1.asInstanceOf[`1`]
+  inline def xlAlways: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlAsRequired: `0` = 0.asInstanceOf[`0`]
+  inline def xlAsRequired: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlNever: `2` = 2.asInstanceOf[`2`]
+  inline def xlNever: `2` = 2.asInstanceOf[`2`]
 }

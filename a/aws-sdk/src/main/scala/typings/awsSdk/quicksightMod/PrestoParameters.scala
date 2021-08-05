@@ -23,22 +23,17 @@ trait PrestoParameters extends StObject {
 }
 object PrestoParameters {
   
-  @scala.inline
-  def apply(Catalog: Catalog, Host: Host, Port: Port): PrestoParameters = {
+  inline def apply(Catalog: Catalog, Host: Host, Port: Port): PrestoParameters = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrestoParameters]
   }
   
-  @scala.inline
-  implicit class PrestoParametersMutableBuilder[Self <: PrestoParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PrestoParameters](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait PartialTemplateOptions extends StObject {
 }
 object PartialTemplateOptions {
   
-  @scala.inline
-  def apply(): PartialTemplateOptions = {
+  inline def apply(): PartialTemplateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTemplateOptions]
   }
   
-  @scala.inline
-  implicit class PartialTemplateOptionsMutableBuilder[Self <: PartialTemplateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTemplateOptions](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setPrecompiled(value: Boolean): Self = StObject.set(x, "precompiled", value.asInstanceOf[js.Any])
+    inline def setPrecompiled(value: Boolean): Self = StObject.set(x, "precompiled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecompiledUndefined: Self = StObject.set(x, "precompiled", js.undefined)
+    inline def setPrecompiledUndefined: Self = StObject.set(x, "precompiled", js.undefined)
   }
 }

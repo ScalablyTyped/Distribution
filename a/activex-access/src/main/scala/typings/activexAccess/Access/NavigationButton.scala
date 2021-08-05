@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NavigationButton extends StObject {
   
-  @JSName("Access.NavigationButton_typekey")
+  /* private */ @JSName("Access.NavigationButton_typekey")
   var AccessDotNavigationButton_typekey: NavigationButton = js.native
   
   var AddColon: Boolean = js.native

@@ -32,25 +32,25 @@ object overlayMod {
     
     var containerElement: HTMLElement | Null = js.native
     
-    var handleBackdropMouseDown: js.Any = js.native
+    /* private */ var handleBackdropMouseDown: js.Any = js.native
     
-    var handleDocumentClick: js.Any = js.native
+    /* private */ var handleDocumentClick: js.Any = js.native
     
-    var handleDocumentFocus: js.Any = js.native
+    /* private */ var handleDocumentFocus: js.Any = js.native
     
-    var handleKeyDown: js.Any = js.native
+    /* private */ var handleKeyDown: js.Any = js.native
     
-    var handleTransitionAddEnd: js.Any = js.native
+    /* private */ var handleTransitionAddEnd: js.Any = js.native
     
-    var maybeRenderBackdrop: js.Any = js.native
+    /* private */ var maybeRenderBackdrop: js.Any = js.native
     
-    var maybeRenderChild: js.Any = js.native
+    /* private */ var maybeRenderChild: js.Any = js.native
     
-    var overlayWillClose: js.Any = js.native
+    /* private */ var overlayWillClose: js.Any = js.native
     
-    var overlayWillOpen: js.Any = js.native
+    /* private */ var overlayWillOpen: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
   }
   /* static members */
   object Overlay {
@@ -62,29 +62,24 @@ object overlayMod {
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.defaultProps")
     @js.native
     def defaultProps: IOverlayProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IOverlayProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IOverlayProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(hasHasEverOpened: IOverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasHasEverOpened.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
+    inline def getDerivedStateFromProps(hasHasEverOpened: IOverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasHasEverOpened.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.getLastOpened")
     @js.native
     def getLastOpened: js.Any = js.native
-    @scala.inline
-    def getLastOpened_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLastOpened")(x.asInstanceOf[js.Any])
+    inline def getLastOpened_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLastOpened")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.openStack")
     @js.native
     def openStack: js.Any = js.native
-    @scala.inline
-    def openStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openStack")(x.asInstanceOf[js.Any])
+    inline def openStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openStack")(x.asInstanceOf[js.Any])
   }
   
   trait IBackdropProps extends StObject {
@@ -110,38 +105,28 @@ object overlayMod {
   }
   object IBackdropProps {
     
-    @scala.inline
-    def apply(): IBackdropProps = {
+    inline def apply(): IBackdropProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBackdropProps]
     }
     
-    @scala.inline
-    implicit class IBackdropPropsMutableBuilder[Self <: IBackdropProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBackdropProps](x: Self) {
       
-      @scala.inline
-      def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
+      inline def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
+      inline def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
       
-      @scala.inline
-      def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
+      inline def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
+      inline def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
       
-      @scala.inline
-      def setCanOutsideClickClose(value: Boolean): Self = StObject.set(x, "canOutsideClickClose", value.asInstanceOf[js.Any])
+      inline def setCanOutsideClickClose(value: Boolean): Self = StObject.set(x, "canOutsideClickClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanOutsideClickCloseUndefined: Self = StObject.set(x, "canOutsideClickClose", js.undefined)
+      inline def setCanOutsideClickCloseUndefined: Self = StObject.set(x, "canOutsideClickClose", js.undefined)
       
-      @scala.inline
-      def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
+      inline def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
+      inline def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
     }
   }
   
@@ -175,38 +160,28 @@ object overlayMod {
   }
   object IOverlayLifecycleProps {
     
-    @scala.inline
-    def apply(): IOverlayLifecycleProps = {
+    inline def apply(): IOverlayLifecycleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverlayLifecycleProps]
     }
     
-    @scala.inline
-    implicit class IOverlayLifecyclePropsMutableBuilder[Self <: IOverlayLifecycleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayLifecycleProps](x: Self) {
       
-      @scala.inline
-      def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
+      inline def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
+      inline def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
       
-      @scala.inline
-      def setOnClosing(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction1(value))
+      inline def setOnClosing(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
+      inline def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
       
-      @scala.inline
-      def setOnOpened(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
+      inline def setOnOpened(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
+      inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
       
-      @scala.inline
-      def setOnOpening(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction1(value))
+      inline def setOnOpening(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
+      inline def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
     }
   }
   
@@ -231,23 +206,18 @@ object overlayMod {
   }
   object IOverlayProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean): IOverlayProps = {
+    inline def apply(isOpen: Boolean): IOverlayProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOverlayProps]
     }
     
-    @scala.inline
-    implicit class IOverlayPropsMutableBuilder[Self <: IOverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayProps](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
+      inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
     }
   }
   
@@ -257,20 +227,16 @@ object overlayMod {
   }
   object IOverlayState {
     
-    @scala.inline
-    def apply(): IOverlayState = {
+    inline def apply(): IOverlayState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverlayState]
     }
     
-    @scala.inline
-    implicit class IOverlayStateMutableBuilder[Self <: IOverlayState] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayState](x: Self) {
       
-      @scala.inline
-      def setHasEverOpened(value: Boolean): Self = StObject.set(x, "hasEverOpened", value.asInstanceOf[js.Any])
+      inline def setHasEverOpened(value: Boolean): Self = StObject.set(x, "hasEverOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasEverOpenedUndefined: Self = StObject.set(x, "hasEverOpened", js.undefined)
+      inline def setHasEverOpenedUndefined: Self = StObject.set(x, "hasEverOpened", js.undefined)
     }
   }
   
@@ -356,68 +322,48 @@ object overlayMod {
   }
   object IOverlayableProps {
     
-    @scala.inline
-    def apply(): IOverlayableProps = {
+    inline def apply(): IOverlayableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverlayableProps]
     }
     
-    @scala.inline
-    implicit class IOverlayablePropsMutableBuilder[Self <: IOverlayableProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayableProps](x: Self) {
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setCanEscapeKeyClose(value: Boolean): Self = StObject.set(x, "canEscapeKeyClose", value.asInstanceOf[js.Any])
+      inline def setCanEscapeKeyClose(value: Boolean): Self = StObject.set(x, "canEscapeKeyClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanEscapeKeyCloseUndefined: Self = StObject.set(x, "canEscapeKeyClose", js.undefined)
+      inline def setCanEscapeKeyCloseUndefined: Self = StObject.set(x, "canEscapeKeyClose", js.undefined)
       
-      @scala.inline
-      def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
+      inline def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceFocusUndefined: Self = StObject.set(x, "enforceFocus", js.undefined)
+      inline def setEnforceFocusUndefined: Self = StObject.set(x, "enforceFocus", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setPortalClassName(value: String): Self = StObject.set(x, "portalClassName", value.asInstanceOf[js.Any])
+      inline def setPortalClassName(value: String): Self = StObject.set(x, "portalClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalClassNameUndefined: Self = StObject.set(x, "portalClassName", js.undefined)
+      inline def setPortalClassNameUndefined: Self = StObject.set(x, "portalClassName", js.undefined)
       
-      @scala.inline
-      def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
+      inline def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
+      inline def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
+      inline def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
+      inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     }
   }
 }

@@ -8,6 +8,5 @@ object phonegapNfcStrings {
   
   @js.native
   sealed trait deviceready extends StObject
-  @scala.inline
-  def deviceready: deviceready = "deviceready".asInstanceOf[deviceready]
+  inline def deviceready: deviceready = "deviceready".asInstanceOf[deviceready]
 }

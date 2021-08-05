@@ -169,181 +169,123 @@ trait JScrollPaneSettings extends StObject {
 }
 object JScrollPaneSettings {
   
-  @scala.inline
-  def apply(): JScrollPaneSettings = {
+  inline def apply(): JScrollPaneSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JScrollPaneSettings]
   }
   
-  @scala.inline
-  implicit class JScrollPaneSettingsMutableBuilder[Self <: JScrollPaneSettings] (val x: Self) extends AnyVal {
+  extension [Self <: JScrollPaneSettings](x: Self) {
     
-    @scala.inline
-    def setAnimateDuration(value: Double): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
+    inline def setAnimateDuration(value: Double): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateDurationUndefined: Self = StObject.set(x, "animateDuration", js.undefined)
+    inline def setAnimateDurationUndefined: Self = StObject.set(x, "animateDuration", js.undefined)
     
-    @scala.inline
-    def setAnimateEase(value: String): Self = StObject.set(x, "animateEase", value.asInstanceOf[js.Any])
+    inline def setAnimateEase(value: String): Self = StObject.set(x, "animateEase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateEaseUndefined: Self = StObject.set(x, "animateEase", js.undefined)
+    inline def setAnimateEaseUndefined: Self = StObject.set(x, "animateEase", js.undefined)
     
-    @scala.inline
-    def setAnimateScroll(value: Boolean): Self = StObject.set(x, "animateScroll", value.asInstanceOf[js.Any])
+    inline def setAnimateScroll(value: Boolean): Self = StObject.set(x, "animateScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateScrollUndefined: Self = StObject.set(x, "animateScroll", js.undefined)
+    inline def setAnimateScrollUndefined: Self = StObject.set(x, "animateScroll", js.undefined)
     
-    @scala.inline
-    def setArrowButtonSpeed(value: Double): Self = StObject.set(x, "arrowButtonSpeed", value.asInstanceOf[js.Any])
+    inline def setArrowButtonSpeed(value: Double): Self = StObject.set(x, "arrowButtonSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowButtonSpeedUndefined: Self = StObject.set(x, "arrowButtonSpeed", js.undefined)
+    inline def setArrowButtonSpeedUndefined: Self = StObject.set(x, "arrowButtonSpeed", js.undefined)
     
-    @scala.inline
-    def setArrowRepeatFreq(value: Double): Self = StObject.set(x, "arrowRepeatFreq", value.asInstanceOf[js.Any])
+    inline def setArrowRepeatFreq(value: Double): Self = StObject.set(x, "arrowRepeatFreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowRepeatFreqUndefined: Self = StObject.set(x, "arrowRepeatFreq", js.undefined)
+    inline def setArrowRepeatFreqUndefined: Self = StObject.set(x, "arrowRepeatFreq", js.undefined)
     
-    @scala.inline
-    def setArrowScrollOnHover(value: Boolean): Self = StObject.set(x, "arrowScrollOnHover", value.asInstanceOf[js.Any])
+    inline def setArrowScrollOnHover(value: Boolean): Self = StObject.set(x, "arrowScrollOnHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowScrollOnHoverUndefined: Self = StObject.set(x, "arrowScrollOnHover", js.undefined)
+    inline def setArrowScrollOnHoverUndefined: Self = StObject.set(x, "arrowScrollOnHover", js.undefined)
     
-    @scala.inline
-    def setAutoReinitialise(value: Boolean): Self = StObject.set(x, "autoReinitialise", value.asInstanceOf[js.Any])
+    inline def setAutoReinitialise(value: Boolean): Self = StObject.set(x, "autoReinitialise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoReinitialiseDelay(value: Double): Self = StObject.set(x, "autoReinitialiseDelay", value.asInstanceOf[js.Any])
+    inline def setAutoReinitialiseDelay(value: Double): Self = StObject.set(x, "autoReinitialiseDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoReinitialiseDelayUndefined: Self = StObject.set(x, "autoReinitialiseDelay", js.undefined)
+    inline def setAutoReinitialiseDelayUndefined: Self = StObject.set(x, "autoReinitialiseDelay", js.undefined)
     
-    @scala.inline
-    def setAutoReinitialiseUndefined: Self = StObject.set(x, "autoReinitialise", js.undefined)
+    inline def setAutoReinitialiseUndefined: Self = StObject.set(x, "autoReinitialise", js.undefined)
     
-    @scala.inline
-    def setClickOnTrack(value: Boolean): Self = StObject.set(x, "clickOnTrack", value.asInstanceOf[js.Any])
+    inline def setClickOnTrack(value: Boolean): Self = StObject.set(x, "clickOnTrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickOnTrackUndefined: Self = StObject.set(x, "clickOnTrack", js.undefined)
+    inline def setClickOnTrackUndefined: Self = StObject.set(x, "clickOnTrack", js.undefined)
     
-    @scala.inline
-    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+    inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
+    inline def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
     
-    @scala.inline
-    def setEnableKeyboardNavigation(value: Boolean): Self = StObject.set(x, "enableKeyboardNavigation", value.asInstanceOf[js.Any])
+    inline def setEnableKeyboardNavigation(value: Boolean): Self = StObject.set(x, "enableKeyboardNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableKeyboardNavigationUndefined: Self = StObject.set(x, "enableKeyboardNavigation", js.undefined)
+    inline def setEnableKeyboardNavigationUndefined: Self = StObject.set(x, "enableKeyboardNavigation", js.undefined)
     
-    @scala.inline
-    def setHideFocus(value: Boolean): Self = StObject.set(x, "hideFocus", value.asInstanceOf[js.Any])
+    inline def setHideFocus(value: Boolean): Self = StObject.set(x, "hideFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideFocusUndefined: Self = StObject.set(x, "hideFocus", js.undefined)
+    inline def setHideFocusUndefined: Self = StObject.set(x, "hideFocus", js.undefined)
     
-    @scala.inline
-    def setHijackInternalLinks(value: Boolean): Self = StObject.set(x, "hijackInternalLinks", value.asInstanceOf[js.Any])
+    inline def setHijackInternalLinks(value: Boolean): Self = StObject.set(x, "hijackInternalLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHijackInternalLinksUndefined: Self = StObject.set(x, "hijackInternalLinks", js.undefined)
+    inline def setHijackInternalLinksUndefined: Self = StObject.set(x, "hijackInternalLinks", js.undefined)
     
-    @scala.inline
-    def setHorizontalArrowPositions(value: String): Self = StObject.set(x, "horizontalArrowPositions", value.asInstanceOf[js.Any])
+    inline def setHorizontalArrowPositions(value: String): Self = StObject.set(x, "horizontalArrowPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalArrowPositionsUndefined: Self = StObject.set(x, "horizontalArrowPositions", js.undefined)
+    inline def setHorizontalArrowPositionsUndefined: Self = StObject.set(x, "horizontalArrowPositions", js.undefined)
     
-    @scala.inline
-    def setHorizontalDragMaxWidth(value: Double): Self = StObject.set(x, "horizontalDragMaxWidth", value.asInstanceOf[js.Any])
+    inline def setHorizontalDragMaxWidth(value: Double): Self = StObject.set(x, "horizontalDragMaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalDragMaxWidthUndefined: Self = StObject.set(x, "horizontalDragMaxWidth", js.undefined)
+    inline def setHorizontalDragMaxWidthUndefined: Self = StObject.set(x, "horizontalDragMaxWidth", js.undefined)
     
-    @scala.inline
-    def setHorizontalDragMinWidth(value: Double): Self = StObject.set(x, "horizontalDragMinWidth", value.asInstanceOf[js.Any])
+    inline def setHorizontalDragMinWidth(value: Double): Self = StObject.set(x, "horizontalDragMinWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalDragMinWidthUndefined: Self = StObject.set(x, "horizontalDragMinWidth", js.undefined)
+    inline def setHorizontalDragMinWidthUndefined: Self = StObject.set(x, "horizontalDragMinWidth", js.undefined)
     
-    @scala.inline
-    def setHorizontalGutter(value: Double): Self = StObject.set(x, "horizontalGutter", value.asInstanceOf[js.Any])
+    inline def setHorizontalGutter(value: Double): Self = StObject.set(x, "horizontalGutter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalGutterUndefined: Self = StObject.set(x, "horizontalGutter", js.undefined)
+    inline def setHorizontalGutterUndefined: Self = StObject.set(x, "horizontalGutter", js.undefined)
     
-    @scala.inline
-    def setMaintainPosition(value: Boolean): Self = StObject.set(x, "maintainPosition", value.asInstanceOf[js.Any])
+    inline def setMaintainPosition(value: Boolean): Self = StObject.set(x, "maintainPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintainPositionUndefined: Self = StObject.set(x, "maintainPosition", js.undefined)
+    inline def setMaintainPositionUndefined: Self = StObject.set(x, "maintainPosition", js.undefined)
     
-    @scala.inline
-    def setMouseWheelSpeed(value: Double): Self = StObject.set(x, "mouseWheelSpeed", value.asInstanceOf[js.Any])
+    inline def setMouseWheelSpeed(value: Double): Self = StObject.set(x, "mouseWheelSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseWheelSpeedUndefined: Self = StObject.set(x, "mouseWheelSpeed", js.undefined)
+    inline def setMouseWheelSpeedUndefined: Self = StObject.set(x, "mouseWheelSpeed", js.undefined)
     
-    @scala.inline
-    def setShowArrows(value: Boolean): Self = StObject.set(x, "showArrows", value.asInstanceOf[js.Any])
+    inline def setShowArrows(value: Boolean): Self = StObject.set(x, "showArrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowArrowsUndefined: Self = StObject.set(x, "showArrows", js.undefined)
+    inline def setShowArrowsUndefined: Self = StObject.set(x, "showArrows", js.undefined)
     
-    @scala.inline
-    def setStickToBottom(value: Boolean): Self = StObject.set(x, "stickToBottom", value.asInstanceOf[js.Any])
+    inline def setStickToBottom(value: Boolean): Self = StObject.set(x, "stickToBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickToBottomUndefined: Self = StObject.set(x, "stickToBottom", js.undefined)
+    inline def setStickToBottomUndefined: Self = StObject.set(x, "stickToBottom", js.undefined)
     
-    @scala.inline
-    def setStickToRight(value: Boolean): Self = StObject.set(x, "stickToRight", value.asInstanceOf[js.Any])
+    inline def setStickToRight(value: Boolean): Self = StObject.set(x, "stickToRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickToRightUndefined: Self = StObject.set(x, "stickToRight", js.undefined)
+    inline def setStickToRightUndefined: Self = StObject.set(x, "stickToRight", js.undefined)
     
-    @scala.inline
-    def setTrackClickRepeatFreq(value: Double): Self = StObject.set(x, "trackClickRepeatFreq", value.asInstanceOf[js.Any])
+    inline def setTrackClickRepeatFreq(value: Double): Self = StObject.set(x, "trackClickRepeatFreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackClickRepeatFreqUndefined: Self = StObject.set(x, "trackClickRepeatFreq", js.undefined)
+    inline def setTrackClickRepeatFreqUndefined: Self = StObject.set(x, "trackClickRepeatFreq", js.undefined)
     
-    @scala.inline
-    def setTrackClickSpeed(value: Double): Self = StObject.set(x, "trackClickSpeed", value.asInstanceOf[js.Any])
+    inline def setTrackClickSpeed(value: Double): Self = StObject.set(x, "trackClickSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackClickSpeedUndefined: Self = StObject.set(x, "trackClickSpeed", js.undefined)
+    inline def setTrackClickSpeedUndefined: Self = StObject.set(x, "trackClickSpeed", js.undefined)
     
-    @scala.inline
-    def setVerticalArrowPositions(value: String): Self = StObject.set(x, "verticalArrowPositions", value.asInstanceOf[js.Any])
+    inline def setVerticalArrowPositions(value: String): Self = StObject.set(x, "verticalArrowPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalArrowPositionsUndefined: Self = StObject.set(x, "verticalArrowPositions", js.undefined)
+    inline def setVerticalArrowPositionsUndefined: Self = StObject.set(x, "verticalArrowPositions", js.undefined)
     
-    @scala.inline
-    def setVerticalDragMaxHeight(value: Double): Self = StObject.set(x, "verticalDragMaxHeight", value.asInstanceOf[js.Any])
+    inline def setVerticalDragMaxHeight(value: Double): Self = StObject.set(x, "verticalDragMaxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalDragMaxHeightUndefined: Self = StObject.set(x, "verticalDragMaxHeight", js.undefined)
+    inline def setVerticalDragMaxHeightUndefined: Self = StObject.set(x, "verticalDragMaxHeight", js.undefined)
     
-    @scala.inline
-    def setVerticalDragMinHeight(value: Double): Self = StObject.set(x, "verticalDragMinHeight", value.asInstanceOf[js.Any])
+    inline def setVerticalDragMinHeight(value: Double): Self = StObject.set(x, "verticalDragMinHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalDragMinHeightUndefined: Self = StObject.set(x, "verticalDragMinHeight", js.undefined)
+    inline def setVerticalDragMinHeightUndefined: Self = StObject.set(x, "verticalDragMinHeight", js.undefined)
     
-    @scala.inline
-    def setVerticalGutter(value: Double): Self = StObject.set(x, "verticalGutter", value.asInstanceOf[js.Any])
+    inline def setVerticalGutter(value: Double): Self = StObject.set(x, "verticalGutter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalGutterUndefined: Self = StObject.set(x, "verticalGutter", js.undefined)
+    inline def setVerticalGutterUndefined: Self = StObject.set(x, "verticalGutter", js.undefined)
   }
 }

@@ -28,22 +28,17 @@ trait ASPxClientVerticalGridBatchEditChangesCancelingEventArgs
 }
 object ASPxClientVerticalGridBatchEditChangesCancelingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, deletedValues: js.Any, insertedValues: js.Any, updatedValues: js.Any): ASPxClientVerticalGridBatchEditChangesCancelingEventArgs = {
+  inline def apply(cancel: Boolean, deletedValues: js.Any, insertedValues: js.Any, updatedValues: js.Any): ASPxClientVerticalGridBatchEditChangesCancelingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], deletedValues = deletedValues.asInstanceOf[js.Any], insertedValues = insertedValues.asInstanceOf[js.Any], updatedValues = updatedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditChangesCancelingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridBatchEditChangesCancelingEventArgsMutableBuilder[Self <: ASPxClientVerticalGridBatchEditChangesCancelingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridBatchEditChangesCancelingEventArgs](x: Self) {
     
-    @scala.inline
-    def setDeletedValues(value: js.Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
+    inline def setDeletedValues(value: js.Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedValues(value: js.Any): Self = StObject.set(x, "insertedValues", value.asInstanceOf[js.Any])
+    inline def setInsertedValues(value: js.Any): Self = StObject.set(x, "insertedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedValues(value: js.Any): Self = StObject.set(x, "updatedValues", value.asInstanceOf[js.Any])
+    inline def setUpdatedValues(value: js.Any): Self = StObject.set(x, "updatedValues", value.asInstanceOf[js.Any])
   }
 }

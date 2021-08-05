@@ -21,19 +21,15 @@ trait ASPxClientDashboardRangeFilterSelection extends StObject {
 }
 object ASPxClientDashboardRangeFilterSelection {
   
-  @scala.inline
-  def apply(Maximum: js.Any, Minimum: js.Any): ASPxClientDashboardRangeFilterSelection = {
+  inline def apply(Maximum: js.Any, Minimum: js.Any): ASPxClientDashboardRangeFilterSelection = {
     val __obj = js.Dynamic.literal(Maximum = Maximum.asInstanceOf[js.Any], Minimum = Minimum.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardRangeFilterSelection]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardRangeFilterSelectionMutableBuilder[Self <: ASPxClientDashboardRangeFilterSelection] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardRangeFilterSelection](x: Self) {
     
-    @scala.inline
-    def setMaximum(value: js.Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: js.Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimum(value: js.Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: js.Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
   }
 }

@@ -15,31 +15,23 @@ trait ColumnColumnIndex extends StObject {
 }
 object ColumnColumnIndex {
   
-  @scala.inline
-  def apply(): ColumnColumnIndex = {
+  inline def apply(): ColumnColumnIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnColumnIndex]
   }
   
-  @scala.inline
-  implicit class ColumnColumnIndexMutableBuilder[Self <: ColumnColumnIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnColumnIndex](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ColumnColumnIndex): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ColumnColumnIndex): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteScriptInput extends StObject {
 }
 object DeleteScriptInput {
   
-  @scala.inline
-  def apply(ScriptId: ScriptIdOrArn): DeleteScriptInput = {
+  inline def apply(ScriptId: ScriptIdOrArn): DeleteScriptInput = {
     val __obj = js.Dynamic.literal(ScriptId = ScriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScriptInput]
   }
   
-  @scala.inline
-  implicit class DeleteScriptInputMutableBuilder[Self <: DeleteScriptInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScriptInput](x: Self) {
     
-    @scala.inline
-    def setScriptId(value: ScriptIdOrArn): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptIdOrArn): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
   }
 }

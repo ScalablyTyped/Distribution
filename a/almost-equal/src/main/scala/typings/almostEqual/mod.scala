@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: Double, other: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(value: Double, other: Double, absoluteTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(value: Double, other: Double, absoluteTolerance: Double, relativeTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any], relativeTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(value: Double, other: Double, absoluteTolerance: Unit, relativeTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any], relativeTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(value: Double, other: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(value: Double, other: Double, absoluteTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(value: Double, other: Double, absoluteTolerance: Double, relativeTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any], relativeTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(value: Double, other: Double, absoluteTolerance: Unit, relativeTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any], relativeTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("almost-equal", JSImport.Namespace)
   @js.native

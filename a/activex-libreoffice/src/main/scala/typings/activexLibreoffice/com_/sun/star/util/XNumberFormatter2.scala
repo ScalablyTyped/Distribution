@@ -16,8 +16,7 @@ trait XNumberFormatter2
      with XNumberFormatPreviewer
 object XNumberFormatter2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NumberFormatsSupplier: XNumberFormatsSupplier,
     acquire: () => Unit,
     attachNumberFormatsSupplier: XNumberFormatsSupplier => Unit,

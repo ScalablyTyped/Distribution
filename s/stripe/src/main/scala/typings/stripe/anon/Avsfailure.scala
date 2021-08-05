@@ -22,25 +22,19 @@ trait Avsfailure extends StObject {
 }
 object Avsfailure {
   
-  @scala.inline
-  def apply(): Avsfailure = {
+  inline def apply(): Avsfailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Avsfailure]
   }
   
-  @scala.inline
-  implicit class AvsfailureMutableBuilder[Self <: Avsfailure] (val x: Self) extends AnyVal {
+  extension [Self <: Avsfailure](x: Self) {
     
-    @scala.inline
-    def setAvs_failure(value: Boolean): Self = StObject.set(x, "avs_failure", value.asInstanceOf[js.Any])
+    inline def setAvs_failure(value: Boolean): Self = StObject.set(x, "avs_failure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvs_failureUndefined: Self = StObject.set(x, "avs_failure", js.undefined)
+    inline def setAvs_failureUndefined: Self = StObject.set(x, "avs_failure", js.undefined)
     
-    @scala.inline
-    def setCvc_failure(value: Boolean): Self = StObject.set(x, "cvc_failure", value.asInstanceOf[js.Any])
+    inline def setCvc_failure(value: Boolean): Self = StObject.set(x, "cvc_failure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCvc_failureUndefined: Self = StObject.set(x, "cvc_failure", js.undefined)
+    inline def setCvc_failureUndefined: Self = StObject.set(x, "cvc_failure", js.undefined)
   }
 }

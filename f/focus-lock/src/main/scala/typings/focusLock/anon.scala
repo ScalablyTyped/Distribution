@@ -13,17 +13,14 @@ object anon {
   }
   object Node {
     
-    @scala.inline
-    def apply(node: HTMLInputElement): Node = {
+    inline def apply(node: HTMLInputElement): Node = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setNode(value: HTMLInputElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLInputElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
 }

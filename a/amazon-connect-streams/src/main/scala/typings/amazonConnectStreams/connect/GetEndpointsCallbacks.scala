@@ -14,22 +14,17 @@ trait GetEndpointsCallbacks extends StObject {
 }
 object GetEndpointsCallbacks {
   
-  @scala.inline
-  def apply(success: js.Array[GetEndpointsResult] => Unit): GetEndpointsCallbacks = {
+  inline def apply(success: js.Array[GetEndpointsResult] => Unit): GetEndpointsCallbacks = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetEndpointsCallbacks]
   }
   
-  @scala.inline
-  implicit class GetEndpointsCallbacksMutableBuilder[Self <: GetEndpointsCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: GetEndpointsCallbacks](x: Self) {
     
-    @scala.inline
-    def setFailure(value: js.Array[String] => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
+    inline def setFailure(value: js.Array[String] => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+    inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: js.Array[GetEndpointsResult] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: js.Array[GetEndpointsResult] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

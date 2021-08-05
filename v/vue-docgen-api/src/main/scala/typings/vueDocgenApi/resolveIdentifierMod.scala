@@ -12,6 +12,5 @@ object resolveIdentifierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ast: File_, path: NodePath[js.Any, js.Any]): (NodePath[js.Any, js.Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[(NodePath[js.Any, js.Any]) | Null]
+  inline def default(ast: File_, path: NodePath[js.Any, js.Any]): (NodePath[js.Any, js.Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[(NodePath[js.Any, js.Any]) | Null]
 }

@@ -105,8 +105,7 @@ trait XArray
 }
 object XArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseType: Double,
     BaseTypeName: String,
     acquire: () => Unit,
@@ -123,31 +122,22 @@ object XArray {
     __obj.asInstanceOf[XArray]
   }
   
-  @scala.inline
-  implicit class XArrayMutableBuilder[Self <: XArray] (val x: Self) extends AnyVal {
+  extension [Self <: XArray](x: Self) {
     
-    @scala.inline
-    def setBaseType(value: Double): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
+    inline def setBaseType(value: Double): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
+    inline def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetArray(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
+    inline def setGetArray(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[js.Any]): Self = StObject.set(x, "getArrayAtIndex", js.Any.fromFunction3(value))
+    inline def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[js.Any]): Self = StObject.set(x, "getArrayAtIndex", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetBaseType(value: () => Double): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
+    inline def setGetBaseType(value: () => Double): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBaseTypeName(value: () => String): Self = StObject.set(x, "getBaseTypeName", js.Any.fromFunction0(value))
+    inline def setGetBaseTypeName(value: () => String): Self = StObject.set(x, "getBaseTypeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResultSet(value: XNameAccess => XResultSet): Self = StObject.set(x, "getResultSet", js.Any.fromFunction1(value))
+    inline def setGetResultSet(value: XNameAccess => XResultSet): Self = StObject.set(x, "getResultSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetResultSetAtIndex(value: (Double, Double, XNameAccess) => XResultSet): Self = StObject.set(x, "getResultSetAtIndex", js.Any.fromFunction3(value))
+    inline def setGetResultSetAtIndex(value: (Double, Double, XNameAccess) => XResultSet): Self = StObject.set(x, "getResultSetAtIndex", js.Any.fromFunction3(value))
   }
 }

@@ -11,6 +11,5 @@ object nodeEnvironmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEnv(): RequiredENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[RequiredENVIRONMENT]
+  inline def getEnv(): RequiredENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[RequiredENVIRONMENT]
 }

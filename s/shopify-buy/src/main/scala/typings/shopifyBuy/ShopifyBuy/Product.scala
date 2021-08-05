@@ -65,8 +65,7 @@ trait Product
 }
 object Product {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     id: String | Double,
     images: js.Array[Image],
@@ -82,49 +81,34 @@ object Product {
     __obj.asInstanceOf[Product]
   }
   
-  @scala.inline
-  implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
+  extension [Self <: Product](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedVariant(value: ProductVariant): Self = StObject.set(x, "selectedVariant", value.asInstanceOf[js.Any])
+    inline def setSelectedVariant(value: ProductVariant): Self = StObject.set(x, "selectedVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedVariantImage(value: Image): Self = StObject.set(x, "selectedVariantImage", value.asInstanceOf[js.Any])
+    inline def setSelectedVariantImage(value: Image): Self = StObject.set(x, "selectedVariantImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelections(value: js.Array[String]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+    inline def setSelections(value: js.Array[String]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionsVarargs(value: String*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: String*): Self = StObject.set(x, "selections", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariants(value: js.Array[ProductVariant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[ProductVariant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantsVarargs(value: ProductVariant*): Self = StObject.set(x, "variants", js.Array(value :_*))
+    inline def setVariantsVarargs(value: ProductVariant*): Self = StObject.set(x, "variants", js.Array(value :_*))
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
   }
 }

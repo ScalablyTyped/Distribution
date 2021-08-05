@@ -18,28 +18,21 @@ trait CheckIsSupportSoterAuthenticationRes extends StObject {
 }
 object CheckIsSupportSoterAuthenticationRes {
   
-  @scala.inline
-  def apply(): CheckIsSupportSoterAuthenticationRes = {
+  inline def apply(): CheckIsSupportSoterAuthenticationRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationRes]
   }
   
-  @scala.inline
-  implicit class CheckIsSupportSoterAuthenticationResMutableBuilder[Self <: CheckIsSupportSoterAuthenticationRes] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIsSupportSoterAuthenticationRes](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setSupportMode(value: js.Array[js.Any]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    inline def setSupportMode(value: js.Array[js.Any]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportModeUndefined: Self = StObject.set(x, "supportMode", js.undefined)
+    inline def setSupportModeUndefined: Self = StObject.set(x, "supportMode", js.undefined)
     
-    @scala.inline
-    def setSupportModeVarargs(value: js.Any*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
+    inline def setSupportModeVarargs(value: js.Any*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
   }
 }

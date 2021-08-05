@@ -13,19 +13,15 @@ trait ListRealtimeLogConfigsResult extends StObject {
 }
 object ListRealtimeLogConfigsResult {
   
-  @scala.inline
-  def apply(): ListRealtimeLogConfigsResult = {
+  inline def apply(): ListRealtimeLogConfigsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRealtimeLogConfigsResult]
   }
   
-  @scala.inline
-  implicit class ListRealtimeLogConfigsResultMutableBuilder[Self <: ListRealtimeLogConfigsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListRealtimeLogConfigsResult](x: Self) {
     
-    @scala.inline
-    def setRealtimeLogConfigs(value: RealtimeLogConfigs): Self = StObject.set(x, "RealtimeLogConfigs", value.asInstanceOf[js.Any])
+    inline def setRealtimeLogConfigs(value: RealtimeLogConfigs): Self = StObject.set(x, "RealtimeLogConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimeLogConfigsUndefined: Self = StObject.set(x, "RealtimeLogConfigs", js.undefined)
+    inline def setRealtimeLogConfigsUndefined: Self = StObject.set(x, "RealtimeLogConfigs", js.undefined)
   }
 }

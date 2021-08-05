@@ -55,41 +55,33 @@ object typedDataMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def encode(
+    inline def encode(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
       value: Record[String, js.Any]
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def from(types: Record[String, js.Array[TypedDataField]]): TypedDataEncoder = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(types.asInstanceOf[js.Any]).asInstanceOf[TypedDataEncoder]
+    inline def from(types: Record[String, js.Array[TypedDataField]]): TypedDataEncoder = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(types.asInstanceOf[js.Any]).asInstanceOf[TypedDataEncoder]
     
-    @scala.inline
-    def getPayload(
+    inline def getPayload(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
       value: Record[String, js.Any]
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayload")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def getPrimaryType(types: Record[String, js.Array[TypedDataField]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrimaryType")(types.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getPrimaryType(types: Record[String, js.Array[TypedDataField]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrimaryType")(types.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def hash(
+    inline def hash(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
       value: Record[String, js.Any]
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def hashDomain(domain: TypedDataDomain): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hashDomain(domain: TypedDataDomain): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def hashStruct(name: String, types: Record[String, js.Array[TypedDataField]], value: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashStruct")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hashStruct(name: String, types: Record[String, js.Array[TypedDataField]], value: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashStruct")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def resolveNames(
+    inline def resolveNames(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
       value: Record[String, js.Any],

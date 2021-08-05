@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1ClassificationMetadata extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ClassificationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ClassificationMetadata = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ClassificationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ClassificationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ClassificationMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ClassificationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ClassificationMetadata](x: Self) {
     
-    @scala.inline
-    def setIsMultiLabel(value: Boolean): Self = StObject.set(x, "isMultiLabel", value.asInstanceOf[js.Any])
+    inline def setIsMultiLabel(value: Boolean): Self = StObject.set(x, "isMultiLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMultiLabelUndefined: Self = StObject.set(x, "isMultiLabel", js.undefined)
+    inline def setIsMultiLabelUndefined: Self = StObject.set(x, "isMultiLabel", js.undefined)
   }
 }

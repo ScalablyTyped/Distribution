@@ -40,8 +40,7 @@ trait ResultTable
 }
 object ResultTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -65,46 +64,32 @@ object ResultTable {
     __obj.asInstanceOf[ResultTable]
   }
   
-  @scala.inline
-  implicit class ResultTableMutableBuilder[Self <: ResultTable] (val x: Self) extends AnyVal {
+  extension [Self <: ResultTable](x: Self) {
     
-    @scala.inline
-    def setGet_groupTemplateId(value: () => String): Self = StObject.set(x, "get_groupTemplateId", js.Any.fromFunction0(value))
+    inline def setGet_groupTemplateId(value: () => String): Self = StObject.set(x, "get_groupTemplateId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_itemTemplateId(value: () => String): Self = StObject.set(x, "get_itemTemplateId", js.Any.fromFunction0(value))
+    inline def setGet_itemTemplateId(value: () => String): Self = StObject.set(x, "get_itemTemplateId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_properties(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
+    inline def setGet_properties(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryId(value: () => String): Self = StObject.set(x, "get_queryId", js.Any.fromFunction0(value))
+    inline def setGet_queryId(value: () => String): Self = StObject.set(x, "get_queryId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryRuleId(value: () => String): Self = StObject.set(x, "get_queryRuleId", js.Any.fromFunction0(value))
+    inline def setGet_queryRuleId(value: () => String): Self = StObject.set(x, "get_queryRuleId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_resultRows(value: () => js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "get_resultRows", js.Any.fromFunction0(value))
+    inline def setGet_resultRows(value: () => js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "get_resultRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_resultTitle(value: () => String): Self = StObject.set(x, "get_resultTitle", js.Any.fromFunction0(value))
+    inline def setGet_resultTitle(value: () => String): Self = StObject.set(x, "get_resultTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_resultTitleUrl(value: () => String): Self = StObject.set(x, "get_resultTitleUrl", js.Any.fromFunction0(value))
+    inline def setGet_resultTitleUrl(value: () => String): Self = StObject.set(x, "get_resultTitleUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_rowCount(value: () => Double): Self = StObject.set(x, "get_rowCount", js.Any.fromFunction0(value))
+    inline def setGet_rowCount(value: () => Double): Self = StObject.set(x, "get_rowCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_tableType(value: () => String): Self = StObject.set(x, "get_tableType", js.Any.fromFunction0(value))
+    inline def setGet_tableType(value: () => String): Self = StObject.set(x, "get_tableType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_totalRows(value: () => Double): Self = StObject.set(x, "get_totalRows", js.Any.fromFunction0(value))
+    inline def setGet_totalRows(value: () => Double): Self = StObject.set(x, "get_totalRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_totalRowsIncludingDuplicates(value: () => Double): Self = StObject.set(x, "get_totalRowsIncludingDuplicates", js.Any.fromFunction0(value))
+    inline def setGet_totalRowsIncludingDuplicates(value: () => Double): Self = StObject.set(x, "get_totalRowsIncludingDuplicates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitPropertiesFromJson(value: js.Any => Unit): Self = StObject.set(x, "initPropertiesFromJson", js.Any.fromFunction1(value))
+    inline def setInitPropertiesFromJson(value: js.Any => Unit): Self = StObject.set(x, "initPropertiesFromJson", js.Any.fromFunction1(value))
   }
 }

@@ -12,19 +12,15 @@ trait DimensionMap extends StObject {
 }
 object DimensionMap {
   
-  @scala.inline
-  def apply(draggables: DraggableDimensionMap, droppables: DroppableDimensionMap): DimensionMap = {
+  inline def apply(draggables: DraggableDimensionMap, droppables: DroppableDimensionMap): DimensionMap = {
     val __obj = js.Dynamic.literal(draggables = draggables.asInstanceOf[js.Any], droppables = droppables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionMap]
   }
   
-  @scala.inline
-  implicit class DimensionMapMutableBuilder[Self <: DimensionMap] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionMap](x: Self) {
     
-    @scala.inline
-    def setDraggables(value: DraggableDimensionMap): Self = StObject.set(x, "draggables", value.asInstanceOf[js.Any])
+    inline def setDraggables(value: DraggableDimensionMap): Self = StObject.set(x, "draggables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppables(value: DroppableDimensionMap): Self = StObject.set(x, "droppables", value.asInstanceOf[js.Any])
+    inline def setDroppables(value: DroppableDimensionMap): Self = StObject.set(x, "droppables", value.asInstanceOf[js.Any])
   }
 }

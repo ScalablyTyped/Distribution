@@ -8,11 +8,9 @@ object reactSvgStrings {
   
   @js.native
   sealed trait div extends StObject
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
   sealed trait span extends StObject
-  @scala.inline
-  def span: span = "span".asInstanceOf[span]
+  inline def span: span = "span".asInstanceOf[span]
 }

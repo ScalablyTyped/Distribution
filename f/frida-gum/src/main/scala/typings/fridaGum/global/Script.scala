@@ -24,8 +24,7 @@ object Script {
     * Runs `func` on the next tick, i.e. when the current native thread exits
     * the JavaScript runtime. Any additional `params` are passed to it.
     */
-  @scala.inline
-  def nextTick(func: ScheduledCallback, params: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nextTick(func: ScheduledCallback, params: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Temporarily prevents the current script from being unloaded.
@@ -35,8 +34,7 @@ object Script {
     * Typically used in the callback of `WeakRef.bind()` when you need to
     * schedule cleanup on another thread.
     */
-  @scala.inline
-  def pin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pin")().asInstanceOf[Unit]
+  inline def pin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pin")().asInstanceOf[Unit]
   
   /**
     * Runtime being used.
@@ -55,10 +53,8 @@ object Script {
     * @param handler The handler to install, or `null` to uninstall a
     *                previously installed handler.
     */
-  @scala.inline
-  def setGlobalAccessHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalAccessHandler")().asInstanceOf[Unit]
-  @scala.inline
-  def setGlobalAccessHandler(handler: GlobalAccessHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalAccessHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setGlobalAccessHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalAccessHandler")().asInstanceOf[Unit]
+  inline def setGlobalAccessHandler(handler: GlobalAccessHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalAccessHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Source map of the current script.
@@ -70,6 +66,5 @@ object Script {
   /**
     * Reverses a previous `pin()` so the current script may be unloaded.
     */
-  @scala.inline
-  def unpin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unpin")().asInstanceOf[Unit]
+  inline def unpin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unpin")().asInstanceOf[Unit]
 }

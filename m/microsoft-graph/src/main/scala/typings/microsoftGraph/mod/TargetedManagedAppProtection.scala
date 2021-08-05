@@ -16,31 +16,23 @@ trait TargetedManagedAppProtection
 }
 object TargetedManagedAppProtection {
   
-  @scala.inline
-  def apply(): TargetedManagedAppProtection = {
+  inline def apply(): TargetedManagedAppProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetedManagedAppProtection]
   }
   
-  @scala.inline
-  implicit class TargetedManagedAppProtectionMutableBuilder[Self <: TargetedManagedAppProtection] (val x: Self) extends AnyVal {
+  extension [Self <: TargetedManagedAppProtection](x: Self) {
     
-    @scala.inline
-    def setAssignments(value: NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    inline def setAssignments(value: NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
     
-    @scala.inline
-    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    @scala.inline
-    def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: TargetedManagedAppPolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
     
-    @scala.inline
-    def setIsAssigned(value: Boolean): Self = StObject.set(x, "isAssigned", value.asInstanceOf[js.Any])
+    inline def setIsAssigned(value: Boolean): Self = StObject.set(x, "isAssigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAssignedUndefined: Self = StObject.set(x, "isAssigned", js.undefined)
+    inline def setIsAssignedUndefined: Self = StObject.set(x, "isAssigned", js.undefined)
   }
 }

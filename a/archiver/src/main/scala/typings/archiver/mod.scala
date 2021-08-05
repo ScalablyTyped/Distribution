@@ -30,10 +30,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(format: Format): Archiver = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Archiver]
-  @scala.inline
-  def apply(format: Format, options: ArchiverOptions): Archiver = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Archiver]
+  inline def apply(format: Format): Archiver = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Archiver]
+  inline def apply(format: Format, options: ArchiverOptions): Archiver = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Archiver]
   
   @JSImport("archiver", JSImport.Namespace)
   @js.native
@@ -60,17 +58,13 @@ object mod {
     var path: js.UndefOr[js.Any] = js.native
   }
   
-  @scala.inline
-  def create(format: String): Archiver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(format.asInstanceOf[js.Any]).asInstanceOf[Archiver]
-  @scala.inline
-  def create(format: String, options: ArchiverOptions): Archiver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Archiver]
+  inline def create(format: String): Archiver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(format.asInstanceOf[js.Any]).asInstanceOf[Archiver]
+  inline def create(format: String, options: ArchiverOptions): Archiver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Archiver]
   
   /** Check if the format is already registered. */
-  @scala.inline
-  def isRegisteredFormat(format: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegisteredFormat")(format.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRegisteredFormat(format: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegisteredFormat")(format.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def registerFormat(format: String, module: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormat")(format.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerFormat(format: String, module: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormat")(format.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Archiver extends Transform {
@@ -146,8 +140,7 @@ object mod {
        with TarOptions
   object ArchiverOptions {
     
-    @scala.inline
-    def apply(): ArchiverOptions = {
+    inline def apply(): ArchiverOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArchiverOptions]
     }
@@ -162,20 +155,16 @@ object mod {
   }
   object CoreOptions {
     
-    @scala.inline
-    def apply(): CoreOptions = {
+    inline def apply(): CoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoreOptions]
     }
     
-    @scala.inline
-    implicit class CoreOptionsMutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CoreOptions](x: Self) {
       
-      @scala.inline
-      def setStatConcurrency(value: Double): Self = StObject.set(x, "statConcurrency", value.asInstanceOf[js.Any])
+      inline def setStatConcurrency(value: Double): Self = StObject.set(x, "statConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatConcurrencyUndefined: Self = StObject.set(x, "statConcurrency", js.undefined)
+      inline def setStatConcurrencyUndefined: Self = StObject.set(x, "statConcurrency", js.undefined)
     }
   }
   
@@ -204,41 +193,30 @@ object mod {
   }
   object EntryData {
     
-    @scala.inline
-    def apply(name: String): EntryData = {
+    inline def apply(name: String): EntryData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryData]
     }
     
-    @scala.inline
-    implicit class EntryDataMutableBuilder[Self <: EntryData] (val x: Self) extends AnyVal {
+    extension [Self <: EntryData](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     }
   }
   
@@ -252,11 +230,9 @@ object mod {
   trait Format extends StObject
   object Format {
     
-    @scala.inline
-    def tar: typings.archiver.archiverStrings.tar = "tar".asInstanceOf[typings.archiver.archiverStrings.tar]
+    inline def tar: typings.archiver.archiverStrings.tar = "tar".asInstanceOf[typings.archiver.archiverStrings.tar]
     
-    @scala.inline
-    def zip: typings.archiver.archiverStrings.zip = "zip".asInstanceOf[typings.archiver.archiverStrings.zip]
+    inline def zip: typings.archiver.archiverStrings.zip = "zip".asInstanceOf[typings.archiver.archiverStrings.zip]
   }
   
   type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -271,20 +247,16 @@ object mod {
   }
   object ProgressData {
     
-    @scala.inline
-    def apply(entries: Processed, fs: ProcessedBytes): ProgressData = {
+    inline def apply(entries: Processed, fs: ProcessedBytes): ProgressData = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressData]
     }
     
-    @scala.inline
-    implicit class ProgressDataMutableBuilder[Self <: ProgressData] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressData](x: Self) {
       
-      @scala.inline
-      def setEntries(value: Processed): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: Processed): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFs(value: ProcessedBytes): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: ProcessedBytes): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,26 +270,20 @@ object mod {
   }
   object TarOptions {
     
-    @scala.inline
-    def apply(): TarOptions = {
+    inline def apply(): TarOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TarOptions]
     }
     
-    @scala.inline
-    implicit class TarOptionsMutableBuilder[Self <: TarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TarOptions](x: Self) {
       
-      @scala.inline
-      def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+      inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGzipOptions(value: ZlibOptions): Self = StObject.set(x, "gzipOptions", value.asInstanceOf[js.Any])
+      inline def setGzipOptions(value: ZlibOptions): Self = StObject.set(x, "gzipOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGzipOptionsUndefined: Self = StObject.set(x, "gzipOptions", js.undefined)
+      inline def setGzipOptionsUndefined: Self = StObject.set(x, "gzipOptions", js.undefined)
       
-      @scala.inline
-      def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+      inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
     }
   }
   
@@ -339,56 +305,40 @@ object mod {
   }
   object TransformOptions {
     
-    @scala.inline
-    def apply(): TransformOptions = {
+    inline def apply(): TransformOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformOptions]
     }
     
-    @scala.inline
-    implicit class TransformOptionsMutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransformOptions](x: Self) {
       
-      @scala.inline
-      def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+      inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+      inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
       
-      @scala.inline
-      def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
+      inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
+      inline def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setObjectmode(value: Boolean): Self = StObject.set(x, "objectmode", value.asInstanceOf[js.Any])
+      inline def setObjectmode(value: Boolean): Self = StObject.set(x, "objectmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectmodeUndefined: Self = StObject.set(x, "objectmode", js.undefined)
+      inline def setObjectmodeUndefined: Self = StObject.set(x, "objectmode", js.undefined)
       
-      @scala.inline
-      def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
+      inline def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
+      inline def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
       
-      @scala.inline
-      def setWriteableObjectMode(value: Boolean): Self = StObject.set(x, "writeableObjectMode", value.asInstanceOf[js.Any])
+      inline def setWriteableObjectMode(value: Boolean): Self = StObject.set(x, "writeableObjectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteableObjectModeUndefined: Self = StObject.set(x, "writeableObjectMode", js.undefined)
+      inline def setWriteableObjectModeUndefined: Self = StObject.set(x, "writeableObjectMode", js.undefined)
     }
   }
   
@@ -401,20 +351,16 @@ object mod {
   }
   object ZipEntryData {
     
-    @scala.inline
-    def apply(name: String): ZipEntryData = {
+    inline def apply(name: String): ZipEntryData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZipEntryData]
     }
     
-    @scala.inline
-    implicit class ZipEntryDataMutableBuilder[Self <: ZipEntryData] (val x: Self) extends AnyVal {
+    extension [Self <: ZipEntryData](x: Self) {
       
-      @scala.inline
-      def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
@@ -432,44 +378,32 @@ object mod {
   }
   object ZipOptions {
     
-    @scala.inline
-    def apply(): ZipOptions = {
+    inline def apply(): ZipOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZipOptions]
     }
     
-    @scala.inline
-    implicit class ZipOptionsMutableBuilder[Self <: ZipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ZipOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setForceLocalTime(value: Boolean): Self = StObject.set(x, "forceLocalTime", value.asInstanceOf[js.Any])
+      inline def setForceLocalTime(value: Boolean): Self = StObject.set(x, "forceLocalTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceLocalTimeUndefined: Self = StObject.set(x, "forceLocalTime", js.undefined)
+      inline def setForceLocalTimeUndefined: Self = StObject.set(x, "forceLocalTime", js.undefined)
       
-      @scala.inline
-      def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
+      inline def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceZip64Undefined: Self = StObject.set(x, "forceZip64", js.undefined)
+      inline def setForceZip64Undefined: Self = StObject.set(x, "forceZip64", js.undefined)
       
-      @scala.inline
-      def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setZlib(value: ZlibOptions): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
+      inline def setZlib(value: ZlibOptions): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZlibUndefined: Self = StObject.set(x, "zlib", js.undefined)
+      inline def setZlibUndefined: Self = StObject.set(x, "zlib", js.undefined)
     }
   }
 }

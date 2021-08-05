@@ -40,37 +40,27 @@ trait CompletionOptions
 }
 object CompletionOptions {
   
-  @scala.inline
-  def apply(): CompletionOptions = {
+  inline def apply(): CompletionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompletionOptions]
   }
   
-  @scala.inline
-  implicit class CompletionOptionsMutableBuilder[Self <: CompletionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionOptions](x: Self) {
     
-    @scala.inline
-    def setAllCommitCharacters(value: js.Array[String]): Self = StObject.set(x, "allCommitCharacters", value.asInstanceOf[js.Any])
+    inline def setAllCommitCharacters(value: js.Array[String]): Self = StObject.set(x, "allCommitCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllCommitCharactersUndefined: Self = StObject.set(x, "allCommitCharacters", js.undefined)
+    inline def setAllCommitCharactersUndefined: Self = StObject.set(x, "allCommitCharacters", js.undefined)
     
-    @scala.inline
-    def setAllCommitCharactersVarargs(value: String*): Self = StObject.set(x, "allCommitCharacters", js.Array(value :_*))
+    inline def setAllCommitCharactersVarargs(value: String*): Self = StObject.set(x, "allCommitCharacters", js.Array(value :_*))
     
-    @scala.inline
-    def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
+    inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
+    inline def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
     
-    @scala.inline
-    def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
+    inline def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
+    inline def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
-    @scala.inline
-    def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
+    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
   }
 }

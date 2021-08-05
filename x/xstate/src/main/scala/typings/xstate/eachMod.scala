@@ -13,14 +13,12 @@ object eachMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def each[TContext, TEvent /* <: EventObject */](
+  inline def each[TContext, TEvent /* <: EventObject */](
     collection: /* keyof TContext */ String,
     item: /* keyof TContext */ String,
     actions: SingleOrArray[ActionObject[TContext, TEvent]]
   ): ActionObject[TContext, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(collection.asInstanceOf[js.Any], item.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TContext, TEvent]]
-  @scala.inline
-  def each[TContext, TEvent /* <: EventObject */](
+  inline def each[TContext, TEvent /* <: EventObject */](
     collection: /* keyof TContext */ String,
     item: /* keyof TContext */ String,
     index: /* keyof TContext */ String,

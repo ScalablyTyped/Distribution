@@ -18,28 +18,21 @@ trait ListLexiconsOutput extends StObject {
 }
 object ListLexiconsOutput {
   
-  @scala.inline
-  def apply(): ListLexiconsOutput = {
+  inline def apply(): ListLexiconsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLexiconsOutput]
   }
   
-  @scala.inline
-  implicit class ListLexiconsOutputMutableBuilder[Self <: ListLexiconsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListLexiconsOutput](x: Self) {
     
-    @scala.inline
-    def setLexicons(value: LexiconDescriptionList): Self = StObject.set(x, "Lexicons", value.asInstanceOf[js.Any])
+    inline def setLexicons(value: LexiconDescriptionList): Self = StObject.set(x, "Lexicons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexiconsUndefined: Self = StObject.set(x, "Lexicons", js.undefined)
+    inline def setLexiconsUndefined: Self = StObject.set(x, "Lexicons", js.undefined)
     
-    @scala.inline
-    def setLexiconsVarargs(value: LexiconDescription*): Self = StObject.set(x, "Lexicons", js.Array(value :_*))
+    inline def setLexiconsVarargs(value: LexiconDescription*): Self = StObject.set(x, "Lexicons", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -48,47 +48,34 @@ object Post {
   }
   object Data {
     
-    @scala.inline
-    def apply(): Data = {
+    inline def apply(): Data = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setDate(value: MomentInput): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: MomentInput): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value :_*))
       
-      @scala.inline
-      def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
+      inline def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -100,26 +87,20 @@ object Post {
   }
   object RenderData {
     
-    @scala.inline
-    def apply(): RenderData = {
+    inline def apply(): RenderData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderData]
     }
     
-    @scala.inline
-    implicit class RenderDataMutableBuilder[Self <: RenderData] (val x: Self) extends AnyVal {
+    extension [Self <: RenderData](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     }
   }
 }

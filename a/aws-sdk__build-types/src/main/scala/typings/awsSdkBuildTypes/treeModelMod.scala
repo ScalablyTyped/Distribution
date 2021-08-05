@@ -21,17 +21,14 @@ object treeModelMod {
   }
   object Documented {
     
-    @scala.inline
-    def apply(documentation: String): Documented = {
+    inline def apply(documentation: String): Documented = {
       val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Documented]
     }
     
-    @scala.inline
-    implicit class DocumentedMutableBuilder[Self <: Documented] (val x: Self) extends AnyVal {
+    extension [Self <: Documented](x: Self) {
       
-      @scala.inline
-      def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+      inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,17 +38,14 @@ object treeModelMod {
   }
   object Named {
     
-    @scala.inline
-    def apply(name: String): Named = {
+    inline def apply(name: String): Named = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Named]
     }
     
-    @scala.inline
-    implicit class NamedMutableBuilder[Self <: Named] (val x: Self) extends AnyVal {
+    extension [Self <: Named](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,8 +60,7 @@ object treeModelMod {
   }
   object NormalizedModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any,
       operations: NormalizedOperationMap,
       shapes: ShapeMap
@@ -76,11 +69,9 @@ object treeModelMod {
       __obj.asInstanceOf[NormalizedModel]
     }
     
-    @scala.inline
-    implicit class NormalizedModelMutableBuilder[Self <: NormalizedModel] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedModel](x: Self) {
       
-      @scala.inline
-      def setOperations(value: NormalizedOperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: NormalizedOperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,8 +90,7 @@ object treeModelMod {
   }
   object NormalizedOperation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errors: js.Array[StructureMember],
       http: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait */ js.Any,
       input: StructureMember,
@@ -111,20 +101,15 @@ object treeModelMod {
       __obj.asInstanceOf[NormalizedOperation]
     }
     
-    @scala.inline
-    implicit class NormalizedOperationMutableBuilder[Self <: NormalizedOperation] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedOperation](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[StructureMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[StructureMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: StructureMember*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: StructureMember*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setInput(value: StructureMember): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: StructureMember): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: StructureMember): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: StructureMember): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,8 +128,7 @@ object treeModelMod {
   }
   object TreeModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       documentation: String,
       metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any,
       name: String,
@@ -155,19 +139,15 @@ object treeModelMod {
       __obj.asInstanceOf[TreeModel]
     }
     
-    @scala.inline
-    implicit class TreeModelMutableBuilder[Self <: TreeModel] (val x: Self) extends AnyVal {
+    extension [Self <: TreeModel](x: Self) {
       
-      @scala.inline
-      def setMetadata(
+      inline def setMetadata(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
       ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperations(value: TreeModelOperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: TreeModelOperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapes(value: TreeModelShapeMap): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+      inline def setShapes(value: TreeModelShapeMap): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,17 +161,14 @@ object treeModelMod {
   }
   object TreeModelList {
     
-    @scala.inline
-    def apply(documentation: String, member: TreeModelMember, name: String): TreeModelList = {
+    inline def apply(documentation: String, member: TreeModelMember, name: String): TreeModelList = {
       val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], member = member.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeModelList]
     }
     
-    @scala.inline
-    implicit class TreeModelListMutableBuilder[Self <: TreeModelList] (val x: Self) extends AnyVal {
+    extension [Self <: TreeModelList](x: Self) {
       
-      @scala.inline
-      def setMember(value: TreeModelMember): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
+      inline def setMember(value: TreeModelMember): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,17 +195,14 @@ object treeModelMod {
   }
   object TreeModelMember {
     
-    @scala.inline
-    def apply(shape: TreeModelShape): TreeModelMember = {
+    inline def apply(shape: TreeModelShape): TreeModelMember = {
       val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeModelMember]
     }
     
-    @scala.inline
-    implicit class TreeModelMemberMutableBuilder[Self <: TreeModelMember] (val x: Self) extends AnyVal {
+    extension [Self <: TreeModelMember](x: Self) {
       
-      @scala.inline
-      def setShape(value: TreeModelShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: TreeModelShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,8 +224,7 @@ object treeModelMod {
   }
   object TreeModelOperation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       documentation: String,
       errors: js.Array[TreeModelOperationMember],
       input: TreeModelOperationMember,
@@ -262,28 +235,21 @@ object treeModelMod {
       __obj.asInstanceOf[TreeModelOperation]
     }
     
-    @scala.inline
-    implicit class TreeModelOperationMutableBuilder[Self <: TreeModelOperation] (val x: Self) extends AnyVal {
+    extension [Self <: TreeModelOperation](x: Self) {
       
-      @scala.inline
-      def setAuthtype(
+      inline def setAuthtype(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ js.Any
       ): Self = StObject.set(x, "authtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthtypeUndefined: Self = StObject.set(x, "authtype", js.undefined)
+      inline def setAuthtypeUndefined: Self = StObject.set(x, "authtype", js.undefined)
       
-      @scala.inline
-      def setErrors(value: js.Array[TreeModelOperationMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[TreeModelOperationMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: TreeModelOperationMember*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: TreeModelOperationMember*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setInput(value: TreeModelOperationMember): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: TreeModelOperationMember): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: TreeModelOperationMember): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: TreeModelOperationMember): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,17 +264,14 @@ object treeModelMod {
   }
   object TreeModelOperationMember {
     
-    @scala.inline
-    def apply(shape: TreeModelStructure): TreeModelOperationMember = {
+    inline def apply(shape: TreeModelStructure): TreeModelOperationMember = {
       val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeModelOperationMember]
     }
     
-    @scala.inline
-    implicit class TreeModelOperationMemberMutableBuilder[Self <: TreeModelOperationMember] (val x: Self) extends AnyVal {
+    extension [Self <: TreeModelOperationMember](x: Self) {
       
-      @scala.inline
-      def setShape(value: TreeModelStructure): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: TreeModelStructure): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,29 +305,22 @@ object treeModelMod {
   }
   object TreeModelStructure {
     
-    @scala.inline
-    def apply(documentation: String, members: StringDictionary[TreeModelMember], name: String): TreeModelStructure = {
+    inline def apply(documentation: String, members: StringDictionary[TreeModelMember], name: String): TreeModelStructure = {
       val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeModelStructure]
     }
     
-    @scala.inline
-    implicit class TreeModelStructureMutableBuilder[Self <: TreeModelStructure] (val x: Self) extends AnyVal {
+    extension [Self <: TreeModelStructure](x: Self) {
       
-      @scala.inline
-      def setException(value: Boolean): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+      inline def setException(value: Boolean): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+      inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
       
-      @scala.inline
-      def setMembers(value: StringDictionary[TreeModelMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: StringDictionary[TreeModelMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLevel(value: input | output): Self = StObject.set(x, "topLevel", value.asInstanceOf[js.Any])
+      inline def setTopLevel(value: input | output): Self = StObject.set(x, "topLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLevelUndefined: Self = StObject.set(x, "topLevel", js.undefined)
+      inline def setTopLevelUndefined: Self = StObject.set(x, "topLevel", js.undefined)
     }
   }
 }

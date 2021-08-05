@@ -16,37 +16,27 @@ trait SafeProtocols extends StObject {
 }
 object SafeProtocols {
   
-  @scala.inline
-  def apply(): SafeProtocols = {
+  inline def apply(): SafeProtocols = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SafeProtocols]
   }
   
-  @scala.inline
-  implicit class SafeProtocolsMutableBuilder[Self <: SafeProtocols] (val x: Self) extends AnyVal {
+  extension [Self <: SafeProtocols](x: Self) {
     
-    @scala.inline
-    def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setHttp(value: Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+    inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
-    @scala.inline
-    def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
-    @scala.inline
-    def setJavascript(value: Boolean): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
+    inline def setJavascript(value: Boolean): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavascriptUndefined: Self = StObject.set(x, "javascript", js.undefined)
+    inline def setJavascriptUndefined: Self = StObject.set(x, "javascript", js.undefined)
   }
 }

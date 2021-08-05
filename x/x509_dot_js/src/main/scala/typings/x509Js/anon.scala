@@ -12,17 +12,14 @@ object anon {
   }
   object CommonName {
     
-    @scala.inline
-    def apply(commonName: String): CommonName = {
+    inline def apply(commonName: String): CommonName = {
       val __obj = js.Dynamic.literal(commonName = commonName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonName]
     }
     
-    @scala.inline
-    implicit class CommonNameMutableBuilder[Self <: CommonName] (val x: Self) extends AnyVal {
+    extension [Self <: CommonName](x: Self) {
       
-      @scala.inline
-      def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     }
   }
 }

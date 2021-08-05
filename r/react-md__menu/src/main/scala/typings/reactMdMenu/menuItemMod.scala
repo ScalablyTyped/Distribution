@@ -31,20 +31,16 @@ object menuItemMod {
   }
   object MenuItemProps {
     
-    @scala.inline
-    def apply(): MenuItemProps = {
+    inline def apply(): MenuItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuItemProps]
     }
     
-    @scala.inline
-    implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuItemProps](x: Self) {
       
-      @scala.inline
-      def setRole(value: menuitem | button): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: menuitem | button): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
 }

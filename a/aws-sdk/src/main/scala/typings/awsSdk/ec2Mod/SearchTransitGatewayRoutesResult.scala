@@ -18,28 +18,21 @@ trait SearchTransitGatewayRoutesResult extends StObject {
 }
 object SearchTransitGatewayRoutesResult {
   
-  @scala.inline
-  def apply(): SearchTransitGatewayRoutesResult = {
+  inline def apply(): SearchTransitGatewayRoutesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchTransitGatewayRoutesResult]
   }
   
-  @scala.inline
-  implicit class SearchTransitGatewayRoutesResultMutableBuilder[Self <: SearchTransitGatewayRoutesResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchTransitGatewayRoutesResult](x: Self) {
     
-    @scala.inline
-    def setAdditionalRoutesAvailable(value: Boolean): Self = StObject.set(x, "AdditionalRoutesAvailable", value.asInstanceOf[js.Any])
+    inline def setAdditionalRoutesAvailable(value: Boolean): Self = StObject.set(x, "AdditionalRoutesAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalRoutesAvailableUndefined: Self = StObject.set(x, "AdditionalRoutesAvailable", js.undefined)
+    inline def setAdditionalRoutesAvailableUndefined: Self = StObject.set(x, "AdditionalRoutesAvailable", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: TransitGatewayRouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: TransitGatewayRouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
-    @scala.inline
-    def setRoutesVarargs(value: TransitGatewayRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: TransitGatewayRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
   }
 }

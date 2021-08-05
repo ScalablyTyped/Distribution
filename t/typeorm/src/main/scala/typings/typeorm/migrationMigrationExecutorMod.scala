@@ -20,7 +20,7 @@ object migrationMigrationExecutorMod {
     
     /* protected */ def checkForDuplicateMigrations(migrations: js.Array[Migration]): Unit = js.native
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Creates table "migrations" that will store information about executed migrations.
@@ -94,11 +94,11 @@ object migrationMigrationExecutorMod {
       */
     /* protected */ def loadExecutedMigrations(queryRunner: QueryRunner): js.Promise[js.Array[Migration]] = js.native
     
-    val migrationsTable: js.Any = js.native
+    /* private */ val migrationsTable: js.Any = js.native
     
-    val migrationsTableName: js.Any = js.native
+    /* private */ val migrationsTableName: js.Any = js.native
     
-    var queryRunner: js.UndefOr[QueryRunner] = js.native
+    /* protected */ var queryRunner: js.UndefOr[QueryRunner] = js.native
     
     /**
       * Lists all migrations and whether they have been executed or not

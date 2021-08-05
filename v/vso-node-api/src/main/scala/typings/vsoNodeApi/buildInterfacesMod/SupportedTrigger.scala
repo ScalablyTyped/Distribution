@@ -29,8 +29,7 @@ trait SupportedTrigger extends StObject {
 }
 object SupportedTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultPollingInterval: Double,
     notificationType: String,
     supportedCapabilities: StringDictionary[SupportLevel],
@@ -41,19 +40,14 @@ object SupportedTrigger {
     __obj.asInstanceOf[SupportedTrigger]
   }
   
-  @scala.inline
-  implicit class SupportedTriggerMutableBuilder[Self <: SupportedTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedTrigger](x: Self) {
     
-    @scala.inline
-    def setDefaultPollingInterval(value: Double): Self = StObject.set(x, "defaultPollingInterval", value.asInstanceOf[js.Any])
+    inline def setDefaultPollingInterval(value: Double): Self = StObject.set(x, "defaultPollingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationType(value: String): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: String): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCapabilities(value: StringDictionary[SupportLevel]): Self = StObject.set(x, "supportedCapabilities", value.asInstanceOf[js.Any])
+    inline def setSupportedCapabilities(value: StringDictionary[SupportLevel]): Self = StObject.set(x, "supportedCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DefinitionTriggerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DefinitionTriggerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

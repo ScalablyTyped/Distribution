@@ -51,8 +51,7 @@ trait XPropertyWithState
 }
 object XPropertyWithState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultAsProperty: XInterface,
     StateAsProperty: PropertyState,
     acquire: () => Unit,
@@ -66,22 +65,16 @@ object XPropertyWithState {
     __obj.asInstanceOf[XPropertyWithState]
   }
   
-  @scala.inline
-  implicit class XPropertyWithStateMutableBuilder[Self <: XPropertyWithState] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyWithState](x: Self) {
     
-    @scala.inline
-    def setDefaultAsProperty(value: XInterface): Self = StObject.set(x, "DefaultAsProperty", value.asInstanceOf[js.Any])
+    inline def setDefaultAsProperty(value: XInterface): Self = StObject.set(x, "DefaultAsProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultAsProperty(value: () => XInterface): Self = StObject.set(x, "getDefaultAsProperty", js.Any.fromFunction0(value))
+    inline def setGetDefaultAsProperty(value: () => XInterface): Self = StObject.set(x, "getDefaultAsProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStateAsProperty(value: () => PropertyState): Self = StObject.set(x, "getStateAsProperty", js.Any.fromFunction0(value))
+    inline def setGetStateAsProperty(value: () => PropertyState): Self = StObject.set(x, "getStateAsProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetToDefaultAsProperty(value: () => Unit): Self = StObject.set(x, "setToDefaultAsProperty", js.Any.fromFunction0(value))
+    inline def setSetToDefaultAsProperty(value: () => Unit): Self = StObject.set(x, "setToDefaultAsProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStateAsProperty(value: PropertyState): Self = StObject.set(x, "StateAsProperty", value.asInstanceOf[js.Any])
+    inline def setStateAsProperty(value: PropertyState): Self = StObject.set(x, "StateAsProperty", value.asInstanceOf[js.Any])
   }
 }

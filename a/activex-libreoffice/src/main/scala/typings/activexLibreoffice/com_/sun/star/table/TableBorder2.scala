@@ -60,8 +60,7 @@ trait TableBorder2 extends StObject {
 }
 object TableBorder2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BottomLine: BorderLine2,
     Distance: Double,
     HorizontalLine: BorderLine2,
@@ -81,49 +80,34 @@ object TableBorder2 {
     __obj.asInstanceOf[TableBorder2]
   }
   
-  @scala.inline
-  implicit class TableBorder2MutableBuilder[Self <: TableBorder2] (val x: Self) extends AnyVal {
+  extension [Self <: TableBorder2](x: Self) {
     
-    @scala.inline
-    def setBottomLine(value: BorderLine2): Self = StObject.set(x, "BottomLine", value.asInstanceOf[js.Any])
+    inline def setBottomLine(value: BorderLine2): Self = StObject.set(x, "BottomLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalLine(value: BorderLine2): Self = StObject.set(x, "HorizontalLine", value.asInstanceOf[js.Any])
+    inline def setHorizontalLine(value: BorderLine2): Self = StObject.set(x, "HorizontalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBottomLineValid(value: Boolean): Self = StObject.set(x, "IsBottomLineValid", value.asInstanceOf[js.Any])
+    inline def setIsBottomLineValid(value: Boolean): Self = StObject.set(x, "IsBottomLineValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDistanceValid(value: Boolean): Self = StObject.set(x, "IsDistanceValid", value.asInstanceOf[js.Any])
+    inline def setIsDistanceValid(value: Boolean): Self = StObject.set(x, "IsDistanceValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHorizontalLineValid(value: Boolean): Self = StObject.set(x, "IsHorizontalLineValid", value.asInstanceOf[js.Any])
+    inline def setIsHorizontalLineValid(value: Boolean): Self = StObject.set(x, "IsHorizontalLineValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLeftLineValid(value: Boolean): Self = StObject.set(x, "IsLeftLineValid", value.asInstanceOf[js.Any])
+    inline def setIsLeftLineValid(value: Boolean): Self = StObject.set(x, "IsLeftLineValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRightLineValid(value: Boolean): Self = StObject.set(x, "IsRightLineValid", value.asInstanceOf[js.Any])
+    inline def setIsRightLineValid(value: Boolean): Self = StObject.set(x, "IsRightLineValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTopLineValid(value: Boolean): Self = StObject.set(x, "IsTopLineValid", value.asInstanceOf[js.Any])
+    inline def setIsTopLineValid(value: Boolean): Self = StObject.set(x, "IsTopLineValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVerticalLineValid(value: Boolean): Self = StObject.set(x, "IsVerticalLineValid", value.asInstanceOf[js.Any])
+    inline def setIsVerticalLineValid(value: Boolean): Self = StObject.set(x, "IsVerticalLineValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftLine(value: BorderLine2): Self = StObject.set(x, "LeftLine", value.asInstanceOf[js.Any])
+    inline def setLeftLine(value: BorderLine2): Self = StObject.set(x, "LeftLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightLine(value: BorderLine2): Self = StObject.set(x, "RightLine", value.asInstanceOf[js.Any])
+    inline def setRightLine(value: BorderLine2): Self = StObject.set(x, "RightLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLine(value: BorderLine2): Self = StObject.set(x, "TopLine", value.asInstanceOf[js.Any])
+    inline def setTopLine(value: BorderLine2): Self = StObject.set(x, "TopLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLine(value: BorderLine2): Self = StObject.set(x, "VerticalLine", value.asInstanceOf[js.Any])
+    inline def setVerticalLine(value: BorderLine2): Self = StObject.set(x, "VerticalLine", value.asInstanceOf[js.Any])
   }
 }

@@ -187,8 +187,7 @@ trait DateFormatter extends StObject {
 }
 object DateFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: String => String,
     dateFormat: String,
     locale: String,
@@ -208,49 +207,34 @@ object DateFormatter {
     __obj.asInstanceOf[DateFormatter]
   }
   
-  @scala.inline
-  implicit class DateFormatterMutableBuilder[Self <: DateFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: DateFormatter](x: Self) {
     
-    @scala.inline
-    def setDate(value: String => String): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
+    inline def setDate(value: String => String): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: Date => String): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
+    inline def setString(value: Date => String): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUseFullDateStyle(value: () => Unit): Self = StObject.set(x, "useFullDateStyle", js.Any.fromFunction0(value))
+    inline def setUseFullDateStyle(value: () => Unit): Self = StObject.set(x, "useFullDateStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseFullTimeStyle(value: () => Unit): Self = StObject.set(x, "useFullTimeStyle", js.Any.fromFunction0(value))
+    inline def setUseFullTimeStyle(value: () => Unit): Self = StObject.set(x, "useFullTimeStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseLongDateStyle(value: () => Unit): Self = StObject.set(x, "useLongDateStyle", js.Any.fromFunction0(value))
+    inline def setUseLongDateStyle(value: () => Unit): Self = StObject.set(x, "useLongDateStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseLongTimeStyle(value: () => Unit): Self = StObject.set(x, "useLongTimeStyle", js.Any.fromFunction0(value))
+    inline def setUseLongTimeStyle(value: () => Unit): Self = StObject.set(x, "useLongTimeStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseMediumDateStyle(value: () => Unit): Self = StObject.set(x, "useMediumDateStyle", js.Any.fromFunction0(value))
+    inline def setUseMediumDateStyle(value: () => Unit): Self = StObject.set(x, "useMediumDateStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseMediumTimeStyle(value: () => Unit): Self = StObject.set(x, "useMediumTimeStyle", js.Any.fromFunction0(value))
+    inline def setUseMediumTimeStyle(value: () => Unit): Self = StObject.set(x, "useMediumTimeStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseNoDateStyle(value: () => Unit): Self = StObject.set(x, "useNoDateStyle", js.Any.fromFunction0(value))
+    inline def setUseNoDateStyle(value: () => Unit): Self = StObject.set(x, "useNoDateStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseNoTimeStyle(value: () => Unit): Self = StObject.set(x, "useNoTimeStyle", js.Any.fromFunction0(value))
+    inline def setUseNoTimeStyle(value: () => Unit): Self = StObject.set(x, "useNoTimeStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseShortDateStyle(value: () => Unit): Self = StObject.set(x, "useShortDateStyle", js.Any.fromFunction0(value))
+    inline def setUseShortDateStyle(value: () => Unit): Self = StObject.set(x, "useShortDateStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseShortTimeStyle(value: () => Unit): Self = StObject.set(x, "useShortTimeStyle", js.Any.fromFunction0(value))
+    inline def setUseShortTimeStyle(value: () => Unit): Self = StObject.set(x, "useShortTimeStyle", js.Any.fromFunction0(value))
   }
 }

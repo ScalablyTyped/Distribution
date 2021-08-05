@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object setcookieMod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: js.UndefOr[js.Any],
     value: js.UndefOr[js.Any],
     expires: js.UndefOr[js.Any],

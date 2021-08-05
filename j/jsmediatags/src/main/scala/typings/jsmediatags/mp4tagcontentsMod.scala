@@ -28,16 +28,12 @@ object mp4tagcontentsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createAtom(atomName: String): Atom = ^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(atomName.asInstanceOf[js.Any]).asInstanceOf[Atom]
+    inline def createAtom(atomName: String): Atom = ^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(atomName.asInstanceOf[js.Any]).asInstanceOf[Atom]
     
-    @scala.inline
-    def createContainerAtom(atomName: String, atoms: js.Array[Atom]): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainerAtom")(atomName.asInstanceOf[js.Any], atoms.asInstanceOf[js.Any])).asInstanceOf[Atom]
-    @scala.inline
-    def createContainerAtom(atomName: String, atoms: js.Array[Atom], data: ByteArray): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainerAtom")(atomName.asInstanceOf[js.Any], atoms.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Atom]
+    inline def createContainerAtom(atomName: String, atoms: js.Array[Atom]): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainerAtom")(atomName.asInstanceOf[js.Any], atoms.asInstanceOf[js.Any])).asInstanceOf[Atom]
+    inline def createContainerAtom(atomName: String, atoms: js.Array[Atom], data: ByteArray): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainerAtom")(atomName.asInstanceOf[js.Any], atoms.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Atom]
     
-    @scala.inline
-    def createMetadataAtom(atomName: String, `type`: String, data: ByteArray): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createMetadataAtom")(atomName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Atom]
+    inline def createMetadataAtom(atomName: String, `type`: String, data: ByteArray): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createMetadataAtom")(atomName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Atom]
   }
   
   @JSImport("jsmediatags/build2/MP4TagContents", "Atom")
@@ -65,23 +61,18 @@ object mp4tagcontentsMod {
   }
   object MP4TagContents {
     
-    @scala.inline
-    def apply(_atoms: js.Array[Atom], toArray: () => ByteArray): MP4TagContents = {
+    inline def apply(_atoms: js.Array[Atom], toArray: () => ByteArray): MP4TagContents = {
       val __obj = js.Dynamic.literal(_atoms = _atoms.asInstanceOf[js.Any], toArray = js.Any.fromFunction0(toArray))
       __obj.asInstanceOf[MP4TagContents]
     }
     
-    @scala.inline
-    implicit class MP4TagContentsMutableBuilder[Self <: MP4TagContents] (val x: Self) extends AnyVal {
+    extension [Self <: MP4TagContents](x: Self) {
       
-      @scala.inline
-      def setToArray(value: () => ByteArray): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => ByteArray): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_atoms(value: js.Array[Atom]): Self = StObject.set(x, "_atoms", value.asInstanceOf[js.Any])
+      inline def set_atoms(value: js.Array[Atom]): Self = StObject.set(x, "_atoms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_atomsVarargs(value: Atom*): Self = StObject.set(x, "_atoms", js.Array(value :_*))
+      inline def set_atomsVarargs(value: Atom*): Self = StObject.set(x, "_atoms", js.Array(value :_*))
     }
   }
 }

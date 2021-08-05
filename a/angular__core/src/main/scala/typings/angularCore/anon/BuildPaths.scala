@@ -12,25 +12,19 @@ trait BuildPaths extends StObject {
 }
 object BuildPaths {
   
-  @scala.inline
-  def apply(buildPaths: js.Array[String], testPaths: js.Array[String]): BuildPaths = {
+  inline def apply(buildPaths: js.Array[String], testPaths: js.Array[String]): BuildPaths = {
     val __obj = js.Dynamic.literal(buildPaths = buildPaths.asInstanceOf[js.Any], testPaths = testPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildPaths]
   }
   
-  @scala.inline
-  implicit class BuildPathsMutableBuilder[Self <: BuildPaths] (val x: Self) extends AnyVal {
+  extension [Self <: BuildPaths](x: Self) {
     
-    @scala.inline
-    def setBuildPaths(value: js.Array[String]): Self = StObject.set(x, "buildPaths", value.asInstanceOf[js.Any])
+    inline def setBuildPaths(value: js.Array[String]): Self = StObject.set(x, "buildPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildPathsVarargs(value: String*): Self = StObject.set(x, "buildPaths", js.Array(value :_*))
+    inline def setBuildPathsVarargs(value: String*): Self = StObject.set(x, "buildPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setTestPaths(value: js.Array[String]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
+    inline def setTestPaths(value: js.Array[String]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPathsVarargs(value: String*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
+    inline def setTestPathsVarargs(value: String*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
   }
 }

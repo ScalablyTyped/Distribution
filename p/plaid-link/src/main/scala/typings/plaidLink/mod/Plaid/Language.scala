@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Language extends StObject
 object Language {
   
-  @scala.inline
-  def en: typings.plaidLink.plaidLinkStrings.en = "en".asInstanceOf[typings.plaidLink.plaidLinkStrings.en]
+  inline def en: typings.plaidLink.plaidLinkStrings.en = "en".asInstanceOf[typings.plaidLink.plaidLinkStrings.en]
   
-  @scala.inline
-  def es: typings.plaidLink.plaidLinkStrings.es = "es".asInstanceOf[typings.plaidLink.plaidLinkStrings.es]
+  inline def es: typings.plaidLink.plaidLinkStrings.es = "es".asInstanceOf[typings.plaidLink.plaidLinkStrings.es]
   
-  @scala.inline
-  def fr: typings.plaidLink.plaidLinkStrings.fr = "fr".asInstanceOf[typings.plaidLink.plaidLinkStrings.fr]
+  inline def fr: typings.plaidLink.plaidLinkStrings.fr = "fr".asInstanceOf[typings.plaidLink.plaidLinkStrings.fr]
 }

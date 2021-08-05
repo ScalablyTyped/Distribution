@@ -289,6 +289,5 @@ object mod {
     def this(opt_options: ViewOptions) = this()
   }
   
-  @scala.inline
-  def getUid(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUid(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

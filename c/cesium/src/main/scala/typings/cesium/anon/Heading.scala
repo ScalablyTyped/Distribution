@@ -14,22 +14,17 @@ trait Heading extends StObject {
 }
 object Heading {
   
-  @scala.inline
-  def apply(heading: Double, pitch: Double, roll: Double): Heading = {
+  inline def apply(heading: Double, pitch: Double, roll: Double): Heading = {
     val __obj = js.Dynamic.literal(heading = heading.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], roll = roll.asInstanceOf[js.Any])
     __obj.asInstanceOf[Heading]
   }
   
-  @scala.inline
-  implicit class HeadingMutableBuilder[Self <: Heading] (val x: Self) extends AnyVal {
+  extension [Self <: Heading](x: Self) {
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
+    inline def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
   }
 }

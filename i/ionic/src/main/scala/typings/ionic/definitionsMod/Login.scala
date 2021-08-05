@@ -12,19 +12,15 @@ trait Login extends StObject {
 }
 object Login {
   
-  @scala.inline
-  def apply(token: String, user: User): Login = {
+  inline def apply(token: String, user: User): Login = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Login]
   }
   
-  @scala.inline
-  implicit class LoginMutableBuilder[Self <: Login] (val x: Self) extends AnyVal {
+  extension [Self <: Login](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

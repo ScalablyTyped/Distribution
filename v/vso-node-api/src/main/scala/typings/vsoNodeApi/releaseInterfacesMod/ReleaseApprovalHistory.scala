@@ -22,8 +22,7 @@ trait ReleaseApprovalHistory extends StObject {
 }
 object ReleaseApprovalHistory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approver: IdentityRef,
     changedBy: IdentityRef,
     comments: String,
@@ -35,25 +34,18 @@ object ReleaseApprovalHistory {
     __obj.asInstanceOf[ReleaseApprovalHistory]
   }
   
-  @scala.inline
-  implicit class ReleaseApprovalHistoryMutableBuilder[Self <: ReleaseApprovalHistory] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseApprovalHistory](x: Self) {
     
-    @scala.inline
-    def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
+    inline def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
+    inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

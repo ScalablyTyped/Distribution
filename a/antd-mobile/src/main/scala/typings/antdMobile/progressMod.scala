@@ -24,8 +24,7 @@ object progressMod {
     @JSImport("antd-mobile/lib/progress", "default.defaultProps")
     @js.native
     def defaultProps: AppearTransition = js.native
-    @scala.inline
-    def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -40,7 +39,7 @@ object progressMod {
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MProgress(): Unit = js.native
     
-    var noAppearTransition: js.Any = js.native
+    /* private */ var noAppearTransition: js.Any = js.native
   }
   
   trait ProgressProps
@@ -57,38 +56,28 @@ object progressMod {
   }
   object ProgressProps {
     
-    @scala.inline
-    def apply(): ProgressProps = {
+    inline def apply(): ProgressProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressProps]
     }
     
-    @scala.inline
-    implicit class ProgressPropsMutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressProps](x: Self) {
       
-      @scala.inline
-      def setBarStyle(value: CSSProperties): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+      inline def setBarStyle(value: CSSProperties): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+      inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

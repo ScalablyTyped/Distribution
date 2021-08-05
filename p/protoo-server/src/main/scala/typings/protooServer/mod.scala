@@ -74,23 +74,18 @@ object mod {
   }
   object ConnectionRequestInfo {
     
-    @scala.inline
-    def apply(origin: String, request: IncomingMessage, socket: Socket): ConnectionRequestInfo = {
+    inline def apply(origin: String, request: IncomingMessage, socket: Socket): ConnectionRequestInfo = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionRequestInfo]
     }
     
-    @scala.inline
-    implicit class ConnectionRequestInfoMutableBuilder[Self <: ConnectionRequestInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionRequestInfo](x: Self) {
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: IncomingMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: IncomingMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,41 +136,30 @@ object mod {
   }
   object ProotooResponse {
     
-    @scala.inline
-    def apply(id: Double, ok: Boolean): ProotooResponse = {
+    inline def apply(id: Double, ok: Boolean): ProotooResponse = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = true)
       __obj.asInstanceOf[ProotooResponse]
     }
     
-    @scala.inline
-    implicit class ProotooResponseMutableBuilder[Self <: ProotooResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ProotooResponse](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
       
-      @scala.inline
-      def setErrorReason(value: String): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
+      inline def setErrorReason(value: String): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorReasonUndefined: Self = StObject.set(x, "errorReason", js.undefined)
+      inline def setErrorReasonUndefined: Self = StObject.set(x, "errorReason", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: `true`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: `true`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,23 +173,18 @@ object mod {
   }
   object ProtooNotification {
     
-    @scala.inline
-    def apply(data: js.Any, method: String): ProtooNotification = {
+    inline def apply(data: js.Any, method: String): ProtooNotification = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], notification = true)
       __obj.asInstanceOf[ProtooNotification]
     }
     
-    @scala.inline
-    implicit class ProtooNotificationMutableBuilder[Self <: ProtooNotification] (val x: Self) extends AnyVal {
+    extension [Self <: ProtooNotification](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: `true`): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: `true`): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,26 +200,20 @@ object mod {
   }
   object ProtooRequest {
     
-    @scala.inline
-    def apply(data: js.Any, id: Double, method: String): ProtooRequest = {
+    inline def apply(data: js.Any, id: Double, method: String): ProtooRequest = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = true)
       __obj.asInstanceOf[ProtooRequest]
     }
     
-    @scala.inline
-    implicit class ProtooRequestMutableBuilder[Self <: ProtooRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ProtooRequest](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: `true`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: `true`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,98 +254,68 @@ object mod {
   }
   object WebSocketServerOptions {
     
-    @scala.inline
-    def apply(): WebSocketServerOptions = {
+    inline def apply(): WebSocketServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebSocketServerOptions]
     }
     
-    @scala.inline
-    implicit class WebSocketServerOptionsMutableBuilder[Self <: WebSocketServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebSocketServerOptions](x: Self) {
       
-      @scala.inline
-      def setAssembleFragments(value: Boolean): Self = StObject.set(x, "assembleFragments", value.asInstanceOf[js.Any])
+      inline def setAssembleFragments(value: Boolean): Self = StObject.set(x, "assembleFragments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssembleFragmentsUndefined: Self = StObject.set(x, "assembleFragments", js.undefined)
+      inline def setAssembleFragmentsUndefined: Self = StObject.set(x, "assembleFragments", js.undefined)
       
-      @scala.inline
-      def setAutoAcceptConnections(value: Boolean): Self = StObject.set(x, "autoAcceptConnections", value.asInstanceOf[js.Any])
+      inline def setAutoAcceptConnections(value: Boolean): Self = StObject.set(x, "autoAcceptConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoAcceptConnectionsUndefined: Self = StObject.set(x, "autoAcceptConnections", js.undefined)
+      inline def setAutoAcceptConnectionsUndefined: Self = StObject.set(x, "autoAcceptConnections", js.undefined)
       
-      @scala.inline
-      def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
+      inline def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
+      inline def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
       
-      @scala.inline
-      def setDisableNagleAlgorithm(value: Boolean): Self = StObject.set(x, "disableNagleAlgorithm", value.asInstanceOf[js.Any])
+      inline def setDisableNagleAlgorithm(value: Boolean): Self = StObject.set(x, "disableNagleAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableNagleAlgorithmUndefined: Self = StObject.set(x, "disableNagleAlgorithm", js.undefined)
+      inline def setDisableNagleAlgorithmUndefined: Self = StObject.set(x, "disableNagleAlgorithm", js.undefined)
       
-      @scala.inline
-      def setDropConnectionOnKeepaliveTimeout(value: Boolean): Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", value.asInstanceOf[js.Any])
+      inline def setDropConnectionOnKeepaliveTimeout(value: Boolean): Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropConnectionOnKeepaliveTimeoutUndefined: Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", js.undefined)
+      inline def setDropConnectionOnKeepaliveTimeoutUndefined: Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", js.undefined)
       
-      @scala.inline
-      def setFragmentOutgoingMessages(value: Boolean): Self = StObject.set(x, "fragmentOutgoingMessages", value.asInstanceOf[js.Any])
+      inline def setFragmentOutgoingMessages(value: Boolean): Self = StObject.set(x, "fragmentOutgoingMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentOutgoingMessagesUndefined: Self = StObject.set(x, "fragmentOutgoingMessages", js.undefined)
+      inline def setFragmentOutgoingMessagesUndefined: Self = StObject.set(x, "fragmentOutgoingMessages", js.undefined)
       
-      @scala.inline
-      def setFragmentationThreshold(value: Double): Self = StObject.set(x, "fragmentationThreshold", value.asInstanceOf[js.Any])
+      inline def setFragmentationThreshold(value: Double): Self = StObject.set(x, "fragmentationThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentationThresholdUndefined: Self = StObject.set(x, "fragmentationThreshold", js.undefined)
+      inline def setFragmentationThresholdUndefined: Self = StObject.set(x, "fragmentationThreshold", js.undefined)
       
-      @scala.inline
-      def setIgnoreXForwardedFor(value: Boolean): Self = StObject.set(x, "ignoreXForwardedFor", value.asInstanceOf[js.Any])
+      inline def setIgnoreXForwardedFor(value: Boolean): Self = StObject.set(x, "ignoreXForwardedFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreXForwardedForUndefined: Self = StObject.set(x, "ignoreXForwardedFor", js.undefined)
+      inline def setIgnoreXForwardedForUndefined: Self = StObject.set(x, "ignoreXForwardedFor", js.undefined)
       
-      @scala.inline
-      def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+      inline def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepaliveGracePeriod(value: Double): Self = StObject.set(x, "keepaliveGracePeriod", value.asInstanceOf[js.Any])
+      inline def setKeepaliveGracePeriod(value: Double): Self = StObject.set(x, "keepaliveGracePeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepaliveGracePeriodUndefined: Self = StObject.set(x, "keepaliveGracePeriod", js.undefined)
+      inline def setKeepaliveGracePeriodUndefined: Self = StObject.set(x, "keepaliveGracePeriod", js.undefined)
       
-      @scala.inline
-      def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
+      inline def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
+      inline def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
       
-      @scala.inline
-      def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+      inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
       
-      @scala.inline
-      def setMaxReceivedFrameSize(value: Double): Self = StObject.set(x, "maxReceivedFrameSize", value.asInstanceOf[js.Any])
+      inline def setMaxReceivedFrameSize(value: Double): Self = StObject.set(x, "maxReceivedFrameSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReceivedFrameSizeUndefined: Self = StObject.set(x, "maxReceivedFrameSize", js.undefined)
+      inline def setMaxReceivedFrameSizeUndefined: Self = StObject.set(x, "maxReceivedFrameSize", js.undefined)
       
-      @scala.inline
-      def setMaxReceivedMessageSize(value: Double): Self = StObject.set(x, "maxReceivedMessageSize", value.asInstanceOf[js.Any])
+      inline def setMaxReceivedMessageSize(value: Double): Self = StObject.set(x, "maxReceivedMessageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReceivedMessageSizeUndefined: Self = StObject.set(x, "maxReceivedMessageSize", js.undefined)
+      inline def setMaxReceivedMessageSizeUndefined: Self = StObject.set(x, "maxReceivedMessageSize", js.undefined)
       
-      @scala.inline
-      def setUseNativeKeepalive(value: Boolean): Self = StObject.set(x, "useNativeKeepalive", value.asInstanceOf[js.Any])
+      inline def setUseNativeKeepalive(value: Boolean): Self = StObject.set(x, "useNativeKeepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeKeepaliveUndefined: Self = StObject.set(x, "useNativeKeepalive", js.undefined)
+      inline def setUseNativeKeepaliveUndefined: Self = StObject.set(x, "useNativeKeepalive", js.undefined)
     }
   }
   
@@ -386,23 +329,18 @@ object mod {
   }
   object WebSocketTransport {
     
-    @scala.inline
-    def apply(close: () => Unit, closed: Boolean, send: js.Any => js.Promise[Unit]): WebSocketTransport = {
+    inline def apply(close: () => Unit, closed: Boolean, send: js.Any => js.Promise[Unit]): WebSocketTransport = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), closed = closed.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[WebSocketTransport]
     }
     
-    @scala.inline
-    implicit class WebSocketTransportMutableBuilder[Self <: WebSocketTransport] (val x: Self) extends AnyVal {
+    extension [Self <: WebSocketTransport](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
 }

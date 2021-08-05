@@ -66,67 +66,47 @@ trait SchemaRecognitionMetadata extends StObject {
 }
 object SchemaRecognitionMetadata {
   
-  @scala.inline
-  def apply(): SchemaRecognitionMetadata = {
+  inline def apply(): SchemaRecognitionMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRecognitionMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaRecognitionMetadataMutableBuilder[Self <: SchemaRecognitionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRecognitionMetadata](x: Self) {
     
-    @scala.inline
-    def setAudioTopic(value: String): Self = StObject.set(x, "audioTopic", value.asInstanceOf[js.Any])
+    inline def setAudioTopic(value: String): Self = StObject.set(x, "audioTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioTopicUndefined: Self = StObject.set(x, "audioTopic", js.undefined)
+    inline def setAudioTopicUndefined: Self = StObject.set(x, "audioTopic", js.undefined)
     
-    @scala.inline
-    def setIndustryNaicsCodeOfAudio(value: Double): Self = StObject.set(x, "industryNaicsCodeOfAudio", value.asInstanceOf[js.Any])
+    inline def setIndustryNaicsCodeOfAudio(value: Double): Self = StObject.set(x, "industryNaicsCodeOfAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndustryNaicsCodeOfAudioUndefined: Self = StObject.set(x, "industryNaicsCodeOfAudio", js.undefined)
+    inline def setIndustryNaicsCodeOfAudioUndefined: Self = StObject.set(x, "industryNaicsCodeOfAudio", js.undefined)
     
-    @scala.inline
-    def setInteractionType(value: String): Self = StObject.set(x, "interactionType", value.asInstanceOf[js.Any])
+    inline def setInteractionType(value: String): Self = StObject.set(x, "interactionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractionTypeUndefined: Self = StObject.set(x, "interactionType", js.undefined)
+    inline def setInteractionTypeUndefined: Self = StObject.set(x, "interactionType", js.undefined)
     
-    @scala.inline
-    def setMicrophoneDistance(value: String): Self = StObject.set(x, "microphoneDistance", value.asInstanceOf[js.Any])
+    inline def setMicrophoneDistance(value: String): Self = StObject.set(x, "microphoneDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrophoneDistanceUndefined: Self = StObject.set(x, "microphoneDistance", js.undefined)
+    inline def setMicrophoneDistanceUndefined: Self = StObject.set(x, "microphoneDistance", js.undefined)
     
-    @scala.inline
-    def setObfuscatedId(value: String): Self = StObject.set(x, "obfuscatedId", value.asInstanceOf[js.Any])
+    inline def setObfuscatedId(value: String): Self = StObject.set(x, "obfuscatedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObfuscatedIdUndefined: Self = StObject.set(x, "obfuscatedId", js.undefined)
+    inline def setObfuscatedIdUndefined: Self = StObject.set(x, "obfuscatedId", js.undefined)
     
-    @scala.inline
-    def setOriginalMediaType(value: String): Self = StObject.set(x, "originalMediaType", value.asInstanceOf[js.Any])
+    inline def setOriginalMediaType(value: String): Self = StObject.set(x, "originalMediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalMediaTypeUndefined: Self = StObject.set(x, "originalMediaType", js.undefined)
+    inline def setOriginalMediaTypeUndefined: Self = StObject.set(x, "originalMediaType", js.undefined)
     
-    @scala.inline
-    def setOriginalMimeType(value: String): Self = StObject.set(x, "originalMimeType", value.asInstanceOf[js.Any])
+    inline def setOriginalMimeType(value: String): Self = StObject.set(x, "originalMimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalMimeTypeUndefined: Self = StObject.set(x, "originalMimeType", js.undefined)
+    inline def setOriginalMimeTypeUndefined: Self = StObject.set(x, "originalMimeType", js.undefined)
     
-    @scala.inline
-    def setRecordingDeviceName(value: String): Self = StObject.set(x, "recordingDeviceName", value.asInstanceOf[js.Any])
+    inline def setRecordingDeviceName(value: String): Self = StObject.set(x, "recordingDeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingDeviceNameUndefined: Self = StObject.set(x, "recordingDeviceName", js.undefined)
+    inline def setRecordingDeviceNameUndefined: Self = StObject.set(x, "recordingDeviceName", js.undefined)
     
-    @scala.inline
-    def setRecordingDeviceType(value: String): Self = StObject.set(x, "recordingDeviceType", value.asInstanceOf[js.Any])
+    inline def setRecordingDeviceType(value: String): Self = StObject.set(x, "recordingDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingDeviceTypeUndefined: Self = StObject.set(x, "recordingDeviceType", js.undefined)
+    inline def setRecordingDeviceTypeUndefined: Self = StObject.set(x, "recordingDeviceType", js.undefined)
   }
 }

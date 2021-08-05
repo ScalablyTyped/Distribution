@@ -85,62 +85,44 @@ object LayersControl {
   }
   object ControlledLayerProps {
     
-    @scala.inline
-    def apply(name: String): ControlledLayerProps = {
+    inline def apply(name: String): ControlledLayerProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlledLayerProps]
     }
     
-    @scala.inline
-    implicit class ControlledLayerPropsMutableBuilder[Self <: ControlledLayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ControlledLayerProps](x: Self) {
       
-      @scala.inline
-      def setAddBaseLayer(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addBaseLayer", js.Any.fromFunction3(value))
+      inline def setAddBaseLayer(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addBaseLayer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddBaseLayerUndefined: Self = StObject.set(x, "addBaseLayer", js.undefined)
+      inline def setAddBaseLayerUndefined: Self = StObject.set(x, "addBaseLayer", js.undefined)
       
-      @scala.inline
-      def setAddOverlay(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addOverlay", js.Any.fromFunction3(value))
+      inline def setAddOverlay(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addOverlay", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddOverlayUndefined: Self = StObject.set(x, "addOverlay", js.undefined)
+      inline def setAddOverlayUndefined: Self = StObject.set(x, "addOverlay", js.undefined)
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+      inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+      inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveLayer(value: /* layer */ Layer => Unit): Self = StObject.set(x, "removeLayer", js.Any.fromFunction1(value))
+      inline def setRemoveLayer(value: /* layer */ Layer => Unit): Self = StObject.set(x, "removeLayer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveLayerControl(value: /* layer */ Layer => Unit): Self = StObject.set(x, "removeLayerControl", js.Any.fromFunction1(value))
+      inline def setRemoveLayerControl(value: /* layer */ Layer => Unit): Self = StObject.set(x, "removeLayerControl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveLayerControlUndefined: Self = StObject.set(x, "removeLayerControl", js.undefined)
+      inline def setRemoveLayerControlUndefined: Self = StObject.set(x, "removeLayerControl", js.undefined)
       
-      @scala.inline
-      def setRemoveLayerUndefined: Self = StObject.set(x, "removeLayer", js.undefined)
+      inline def setRemoveLayerUndefined: Self = StObject.set(x, "removeLayer", js.undefined)
     }
   }
 }

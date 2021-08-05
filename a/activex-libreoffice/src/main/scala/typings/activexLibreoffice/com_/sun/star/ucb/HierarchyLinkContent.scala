@@ -35,8 +35,7 @@ trait HierarchyLinkContent
      with XChild
 object HierarchyLinkContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

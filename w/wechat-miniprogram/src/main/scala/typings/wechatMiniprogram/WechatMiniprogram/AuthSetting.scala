@@ -45,67 +45,47 @@ trait AuthSetting extends StObject {
 }
 object AuthSetting {
   
-  @scala.inline
-  def apply(): AuthSetting = {
+  inline def apply(): AuthSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthSetting]
   }
   
-  @scala.inline
-  implicit class AuthSettingMutableBuilder[Self <: AuthSetting] (val x: Self) extends AnyVal {
+  extension [Self <: AuthSetting](x: Self) {
     
-    @scala.inline
-    def setScopeDotaddress(value: Boolean): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
+    inline def setScopeDotaddress(value: Boolean): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotaddressUndefined: Self = StObject.set(x, "scope.address", js.undefined)
+    inline def setScopeDotaddressUndefined: Self = StObject.set(x, "scope.address", js.undefined)
     
-    @scala.inline
-    def setScopeDotcamera(value: Boolean): Self = StObject.set(x, "scope.camera", value.asInstanceOf[js.Any])
+    inline def setScopeDotcamera(value: Boolean): Self = StObject.set(x, "scope.camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotcameraUndefined: Self = StObject.set(x, "scope.camera", js.undefined)
+    inline def setScopeDotcameraUndefined: Self = StObject.set(x, "scope.camera", js.undefined)
     
-    @scala.inline
-    def setScopeDotinvoice(value: Boolean): Self = StObject.set(x, "scope.invoice", value.asInstanceOf[js.Any])
+    inline def setScopeDotinvoice(value: Boolean): Self = StObject.set(x, "scope.invoice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotinvoiceTitle(value: Boolean): Self = StObject.set(x, "scope.invoiceTitle", value.asInstanceOf[js.Any])
+    inline def setScopeDotinvoiceTitle(value: Boolean): Self = StObject.set(x, "scope.invoiceTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotinvoiceTitleUndefined: Self = StObject.set(x, "scope.invoiceTitle", js.undefined)
+    inline def setScopeDotinvoiceTitleUndefined: Self = StObject.set(x, "scope.invoiceTitle", js.undefined)
     
-    @scala.inline
-    def setScopeDotinvoiceUndefined: Self = StObject.set(x, "scope.invoice", js.undefined)
+    inline def setScopeDotinvoiceUndefined: Self = StObject.set(x, "scope.invoice", js.undefined)
     
-    @scala.inline
-    def setScopeDotrecord(value: Boolean): Self = StObject.set(x, "scope.record", value.asInstanceOf[js.Any])
+    inline def setScopeDotrecord(value: Boolean): Self = StObject.set(x, "scope.record", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotrecordUndefined: Self = StObject.set(x, "scope.record", js.undefined)
+    inline def setScopeDotrecordUndefined: Self = StObject.set(x, "scope.record", js.undefined)
     
-    @scala.inline
-    def setScopeDotuserInfo(value: Boolean): Self = StObject.set(x, "scope.userInfo", value.asInstanceOf[js.Any])
+    inline def setScopeDotuserInfo(value: Boolean): Self = StObject.set(x, "scope.userInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotuserInfoUndefined: Self = StObject.set(x, "scope.userInfo", js.undefined)
+    inline def setScopeDotuserInfoUndefined: Self = StObject.set(x, "scope.userInfo", js.undefined)
     
-    @scala.inline
-    def setScopeDotuserLocation(value: Boolean): Self = StObject.set(x, "scope.userLocation", value.asInstanceOf[js.Any])
+    inline def setScopeDotuserLocation(value: Boolean): Self = StObject.set(x, "scope.userLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotuserLocationUndefined: Self = StObject.set(x, "scope.userLocation", js.undefined)
+    inline def setScopeDotuserLocationUndefined: Self = StObject.set(x, "scope.userLocation", js.undefined)
     
-    @scala.inline
-    def setScopeDotwerun(value: Boolean): Self = StObject.set(x, "scope.werun", value.asInstanceOf[js.Any])
+    inline def setScopeDotwerun(value: Boolean): Self = StObject.set(x, "scope.werun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotwerunUndefined: Self = StObject.set(x, "scope.werun", js.undefined)
+    inline def setScopeDotwerunUndefined: Self = StObject.set(x, "scope.werun", js.undefined)
     
-    @scala.inline
-    def setScopeDotwritePhotosAlbum(value: Boolean): Self = StObject.set(x, "scope.writePhotosAlbum", value.asInstanceOf[js.Any])
+    inline def setScopeDotwritePhotosAlbum(value: Boolean): Self = StObject.set(x, "scope.writePhotosAlbum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotwritePhotosAlbumUndefined: Self = StObject.set(x, "scope.writePhotosAlbum", js.undefined)
+    inline def setScopeDotwritePhotosAlbumUndefined: Self = StObject.set(x, "scope.writePhotosAlbum", js.undefined)
   }
 }

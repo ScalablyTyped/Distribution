@@ -17,25 +17,19 @@ trait AddGoogleAnalyticsRequest extends StObject {
 }
 object AddGoogleAnalyticsRequest {
   
-  @scala.inline
-  def apply(): AddGoogleAnalyticsRequest = {
+  inline def apply(): AddGoogleAnalyticsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddGoogleAnalyticsRequest]
   }
   
-  @scala.inline
-  implicit class AddGoogleAnalyticsRequestMutableBuilder[Self <: AddGoogleAnalyticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddGoogleAnalyticsRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyticsAccountId(value: String): Self = StObject.set(x, "analyticsAccountId", value.asInstanceOf[js.Any])
+    inline def setAnalyticsAccountId(value: String): Self = StObject.set(x, "analyticsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsAccountIdUndefined: Self = StObject.set(x, "analyticsAccountId", js.undefined)
+    inline def setAnalyticsAccountIdUndefined: Self = StObject.set(x, "analyticsAccountId", js.undefined)
     
-    @scala.inline
-    def setAnalyticsPropertyId(value: String): Self = StObject.set(x, "analyticsPropertyId", value.asInstanceOf[js.Any])
+    inline def setAnalyticsPropertyId(value: String): Self = StObject.set(x, "analyticsPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsPropertyIdUndefined: Self = StObject.set(x, "analyticsPropertyId", js.undefined)
+    inline def setAnalyticsPropertyIdUndefined: Self = StObject.set(x, "analyticsPropertyId", js.undefined)
   }
 }

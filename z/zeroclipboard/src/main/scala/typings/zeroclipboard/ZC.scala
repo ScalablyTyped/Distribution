@@ -51,17 +51,14 @@ object ZC {
   }
   object EventListenerObject {
     
-    @scala.inline
-    def apply[T /* <: ZeroClipboardEvent */](handleEvent: T => Unit): EventListenerObject[T] = {
+    inline def apply[T /* <: ZeroClipboardEvent */](handleEvent: T => Unit): EventListenerObject[T] = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[EventListenerObject[T]]
     }
     
-    @scala.inline
-    implicit class EventListenerObjectMutableBuilder[Self <: EventListenerObject[?], T /* <: ZeroClipboardEvent */] (val x: Self & EventListenerObject[T]) extends AnyVal {
+    extension [Self <: EventListenerObject[?], T /* <: ZeroClipboardEvent */](x: Self & EventListenerObject[T]) {
       
-      @scala.inline
-      def setHandleEvent(value: T => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: T => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
   
@@ -76,17 +73,14 @@ object ZC {
   }
   object List {
     
-    @scala.inline
-    def apply[T](length: Double): List[T] = {
+    inline def apply[T](length: Double): List[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[List[T]]
     }
     
-    @scala.inline
-    implicit class ListMutableBuilder[Self <: List[?], T] (val x: Self & List[T]) extends AnyVal {
+    extension [Self <: List[?], T](x: Self & List[T]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,8 +96,7 @@ object ZC {
   }
   object ZeroClipboardAfterCopyEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: HTMLObjectElement,
       data: Dictionary[String],
       errors: js.Array[js.Any],
@@ -118,20 +111,15 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardAfterCopyEvent]
     }
     
-    @scala.inline
-    implicit class ZeroClipboardAfterCopyEventMutableBuilder[Self <: ZeroClipboardAfterCopyEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroClipboardAfterCopyEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setSuccess(value: Dictionary[Boolean]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Dictionary[Boolean]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -525,113 +513,78 @@ object ZC {
   }
   object ZeroClipboardConfig {
     
-    @scala.inline
-    def apply(): ZeroClipboardConfig = {
+    inline def apply(): ZeroClipboardConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZeroClipboardConfig]
     }
     
-    @scala.inline
-    implicit class ZeroClipboardConfigMutableBuilder[Self <: ZeroClipboardConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroClipboardConfig](x: Self) {
       
-      @scala.inline
-      def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+      inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+      inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
       
-      @scala.inline
-      def setAutoActivate(value: Boolean): Self = StObject.set(x, "autoActivate", value.asInstanceOf[js.Any])
+      inline def setAutoActivate(value: Boolean): Self = StObject.set(x, "autoActivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoActivateUndefined: Self = StObject.set(x, "autoActivate", js.undefined)
+      inline def setAutoActivateUndefined: Self = StObject.set(x, "autoActivate", js.undefined)
       
-      @scala.inline
-      def setBubbleEvents(value: Boolean): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
+      inline def setBubbleEvents(value: Boolean): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbleEventsUndefined: Self = StObject.set(x, "bubbleEvents", js.undefined)
+      inline def setBubbleEventsUndefined: Self = StObject.set(x, "bubbleEvents", js.undefined)
       
-      @scala.inline
-      def setCacheBust(value: Boolean): Self = StObject.set(x, "cacheBust", value.asInstanceOf[js.Any])
+      inline def setCacheBust(value: Boolean): Self = StObject.set(x, "cacheBust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheBustUndefined: Self = StObject.set(x, "cacheBust", js.undefined)
+      inline def setCacheBustUndefined: Self = StObject.set(x, "cacheBust", js.undefined)
       
-      @scala.inline
-      def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
+      inline def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
+      inline def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
       
-      @scala.inline
-      def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+      inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+      inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
       
-      @scala.inline
-      def setFixLineEndings(value: Boolean): Self = StObject.set(x, "fixLineEndings", value.asInstanceOf[js.Any])
+      inline def setFixLineEndings(value: Boolean): Self = StObject.set(x, "fixLineEndings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixLineEndingsUndefined: Self = StObject.set(x, "fixLineEndings", js.undefined)
+      inline def setFixLineEndingsUndefined: Self = StObject.set(x, "fixLineEndings", js.undefined)
       
-      @scala.inline
-      def setFlashLoadTimeout(value: Double): Self = StObject.set(x, "flashLoadTimeout", value.asInstanceOf[js.Any])
+      inline def setFlashLoadTimeout(value: Double): Self = StObject.set(x, "flashLoadTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashLoadTimeoutUndefined: Self = StObject.set(x, "flashLoadTimeout", js.undefined)
+      inline def setFlashLoadTimeoutUndefined: Self = StObject.set(x, "flashLoadTimeout", js.undefined)
       
-      @scala.inline
-      def setForceEnhancedClipboard(value: Boolean): Self = StObject.set(x, "forceEnhancedClipboard", value.asInstanceOf[js.Any])
+      inline def setForceEnhancedClipboard(value: Boolean): Self = StObject.set(x, "forceEnhancedClipboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceEnhancedClipboardUndefined: Self = StObject.set(x, "forceEnhancedClipboard", js.undefined)
+      inline def setForceEnhancedClipboardUndefined: Self = StObject.set(x, "forceEnhancedClipboard", js.undefined)
       
-      @scala.inline
-      def setForceHandCursor(value: Boolean): Self = StObject.set(x, "forceHandCursor", value.asInstanceOf[js.Any])
+      inline def setForceHandCursor(value: Boolean): Self = StObject.set(x, "forceHandCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceHandCursorUndefined: Self = StObject.set(x, "forceHandCursor", js.undefined)
+      inline def setForceHandCursorUndefined: Self = StObject.set(x, "forceHandCursor", js.undefined)
       
-      @scala.inline
-      def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
+      inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
+      inline def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
       
-      @scala.inline
-      def setSwfObjectId(value: String): Self = StObject.set(x, "swfObjectId", value.asInstanceOf[js.Any])
+      inline def setSwfObjectId(value: String): Self = StObject.set(x, "swfObjectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwfObjectIdUndefined: Self = StObject.set(x, "swfObjectId", js.undefined)
+      inline def setSwfObjectIdUndefined: Self = StObject.set(x, "swfObjectId", js.undefined)
       
-      @scala.inline
-      def setSwfPath(value: String): Self = StObject.set(x, "swfPath", value.asInstanceOf[js.Any])
+      inline def setSwfPath(value: String): Self = StObject.set(x, "swfPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwfPathUndefined: Self = StObject.set(x, "swfPath", js.undefined)
+      inline def setSwfPathUndefined: Self = StObject.set(x, "swfPath", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTrustedDomains(value: js.Array[String]): Self = StObject.set(x, "trustedDomains", value.asInstanceOf[js.Any])
+      inline def setTrustedDomains(value: js.Array[String]): Self = StObject.set(x, "trustedDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustedDomainsUndefined: Self = StObject.set(x, "trustedDomains", js.undefined)
+      inline def setTrustedDomainsUndefined: Self = StObject.set(x, "trustedDomains", js.undefined)
       
-      @scala.inline
-      def setTrustedDomainsVarargs(value: String*): Self = StObject.set(x, "trustedDomains", js.Array(value :_*))
+      inline def setTrustedDomainsVarargs(value: String*): Self = StObject.set(x, "trustedDomains", js.Array(value :_*))
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -643,8 +596,7 @@ object ZC {
   }
   object ZeroClipboardCopyEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clipboardData: ClearData,
       currentTarget: HTMLObjectElement,
       relatedTarget: HTMLElement,
@@ -657,11 +609,9 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardCopyEvent]
     }
     
-    @scala.inline
-    implicit class ZeroClipboardCopyEventMutableBuilder[Self <: ZeroClipboardCopyEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroClipboardCopyEvent](x: Self) {
       
-      @scala.inline
-      def setClipboardData(value: ClearData): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
+      inline def setClipboardData(value: ClearData): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -675,8 +625,7 @@ object ZC {
   }
   object ZeroClipboardDestroyEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: HTMLObjectElement,
       data: Dictionary[String],
       relatedTarget: HTMLElement,
@@ -690,14 +639,11 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardDestroyEvent]
     }
     
-    @scala.inline
-    implicit class ZeroClipboardDestroyEventMutableBuilder[Self <: ZeroClipboardDestroyEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroClipboardDestroyEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Dictionary[Boolean]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Dictionary[Boolean]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -729,8 +675,7 @@ object ZC {
   }
   object ZeroClipboardErrorEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: HTMLObjectElement,
       message: String,
       name: String,
@@ -744,71 +689,49 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardErrorEvent]
     }
     
-    @scala.inline
-    implicit class ZeroClipboardErrorEventMutableBuilder[Self <: ZeroClipboardErrorEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroClipboardErrorEvent](x: Self) {
       
-      @scala.inline
-      def setActualValue(value: String): Self = StObject.set(x, "actualValue", value.asInstanceOf[js.Any])
+      inline def setActualValue(value: String): Self = StObject.set(x, "actualValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualValueUndefined: Self = StObject.set(x, "actualValue", js.undefined)
+      inline def setActualValueUndefined: Self = StObject.set(x, "actualValue", js.undefined)
       
-      @scala.inline
-      def setConfiguredValue(value: String): Self = StObject.set(x, "configuredValue", value.asInstanceOf[js.Any])
+      inline def setConfiguredValue(value: String): Self = StObject.set(x, "configuredValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguredValueUndefined: Self = StObject.set(x, "configuredValue", js.undefined)
+      inline def setConfiguredValueUndefined: Self = StObject.set(x, "configuredValue", js.undefined)
       
-      @scala.inline
-      def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setJsVersion(value: String): Self = StObject.set(x, "jsVersion", value.asInstanceOf[js.Any])
+      inline def setJsVersion(value: String): Self = StObject.set(x, "jsVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsVersionUndefined: Self = StObject.set(x, "jsVersion", js.undefined)
+      inline def setJsVersionUndefined: Self = StObject.set(x, "jsVersion", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
+      inline def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
+      inline def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setSwfVersion(value: String): Self = StObject.set(x, "swfVersion", value.asInstanceOf[js.Any])
+      inline def setSwfVersion(value: String): Self = StObject.set(x, "swfVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwfVersionUndefined: Self = StObject.set(x, "swfVersion", js.undefined)
+      inline def setSwfVersionUndefined: Self = StObject.set(x, "swfVersion", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -828,8 +751,7 @@ object ZC {
   }
   object ZeroClipboardEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: HTMLObjectElement,
       relatedTarget: HTMLElement,
       target: HTMLElement,
@@ -841,29 +763,21 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardEvent]
     }
     
-    @scala.inline
-    implicit class ZeroClipboardEventMutableBuilder[Self <: ZeroClipboardEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroClipboardEvent](x: Self) {
       
-      @scala.inline
-      def setClient(value: ZeroClipboardClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: ZeroClipboardClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setCurrentTarget(value: HTMLObjectElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: HTMLObjectElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: HTMLElement): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: HTMLElement): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -877,8 +791,7 @@ object ZC {
   }
   object ZeroClipboardReadyEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: HTMLObjectElement,
       message: String,
       relatedTarget: HTMLElement,
@@ -892,14 +805,11 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardReadyEvent]
     }
     
-    @scala.inline
-    implicit class ZeroClipboardReadyEventMutableBuilder[Self <: ZeroClipboardReadyEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroClipboardReadyEvent](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

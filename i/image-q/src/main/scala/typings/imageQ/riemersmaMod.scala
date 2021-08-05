@@ -30,15 +30,15 @@ object riemersmaMod {
     
     /* private */ def _createWeights(): js.Any = js.native
     
-    var _distance: js.Any = js.native
+    /* private */ var _distance: js.Any = js.native
     
-    var _errorPropagation: js.Any = js.native
+    /* private */ var _errorPropagation: js.Any = js.native
     
-    var _errorQueueSize: js.Any = js.native
+    /* private */ var _errorQueueSize: js.Any = js.native
     
-    var _max: js.Any = js.native
+    /* private */ var _max: js.Any = js.native
     
-    var _weights: js.Any = js.native
+    /* private */ var _weights: js.Any = js.native
     
     /* CompleteClass */
     override def quantize(pointBuffer: PointContainer, palette: Palette): PointContainer = js.native

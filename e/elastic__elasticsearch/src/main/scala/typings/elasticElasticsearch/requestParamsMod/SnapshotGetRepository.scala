@@ -16,34 +16,25 @@ trait SnapshotGetRepository
 }
 object SnapshotGetRepository {
   
-  @scala.inline
-  def apply(): SnapshotGetRepository = {
+  inline def apply(): SnapshotGetRepository = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotGetRepository]
   }
   
-  @scala.inline
-  implicit class SnapshotGetRepositoryMutableBuilder[Self <: SnapshotGetRepository] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotGetRepository](x: Self) {
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setRepository(value: String | js.Array[String]): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String | js.Array[String]): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
-    @scala.inline
-    def setRepositoryVarargs(value: String*): Self = StObject.set(x, "repository", js.Array(value :_*))
+    inline def setRepositoryVarargs(value: String*): Self = StObject.set(x, "repository", js.Array(value :_*))
   }
 }

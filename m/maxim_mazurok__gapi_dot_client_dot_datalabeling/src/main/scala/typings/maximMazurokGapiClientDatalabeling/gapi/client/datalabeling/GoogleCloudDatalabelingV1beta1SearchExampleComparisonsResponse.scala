@@ -14,28 +14,21 @@ trait GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse extends StO
 }
 object GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponseMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse](x: Self) {
     
-    @scala.inline
-    def setExampleComparisons(value: js.Array[GoogleCloudDatalabelingV1beta1ExampleComparison]): Self = StObject.set(x, "exampleComparisons", value.asInstanceOf[js.Any])
+    inline def setExampleComparisons(value: js.Array[GoogleCloudDatalabelingV1beta1ExampleComparison]): Self = StObject.set(x, "exampleComparisons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleComparisonsUndefined: Self = StObject.set(x, "exampleComparisons", js.undefined)
+    inline def setExampleComparisonsUndefined: Self = StObject.set(x, "exampleComparisons", js.undefined)
     
-    @scala.inline
-    def setExampleComparisonsVarargs(value: GoogleCloudDatalabelingV1beta1ExampleComparison*): Self = StObject.set(x, "exampleComparisons", js.Array(value :_*))
+    inline def setExampleComparisonsVarargs(value: GoogleCloudDatalabelingV1beta1ExampleComparison*): Self = StObject.set(x, "exampleComparisons", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

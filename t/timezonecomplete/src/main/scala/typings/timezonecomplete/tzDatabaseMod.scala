@@ -433,32 +433,32 @@ object tzDatabaseMod {
     * @throws AlreadyCreated if an instance already exists
     * @throws timezonecomplete.InvalidTimeZoneData if `data` is empty or invalid
     */
-  class TzDatabase protected () extends StObject {
+  /* private */ class TzDatabase () extends StObject {
     
     /**
       * Time zone database data
       */
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
     /**
       * Cached min/max DST values
       */
-    var _minmax: js.Any = js.native
+    /* private */ var _minmax: js.Any = js.native
     
     /**
       * Performance improvement: rule info cache
       */
-    var _ruleInfoCache: js.Any = js.native
+    /* private */ var _ruleInfoCache: js.Any = js.native
     
     /**
       * Performance improvement: zone info cache
       */
-    var _zoneInfoCache: js.Any = js.native
+    /* private */ var _zoneInfoCache: js.Any = js.native
     
     /**
       * Cached zone names
       */
-    var _zoneNames: js.Any = js.native
+    /* private */ var _zoneNames: js.Any = js.native
     
     def abbreviation(zoneName: String, utcTime: Double): String = js.native
     def abbreviation(zoneName: String, utcTime: Double, dstDependent: Boolean): String = js.native
@@ -772,8 +772,7 @@ object tzDatabaseMod {
     @JSImport("timezonecomplete/dist/lib/tz-database", "TzDatabase._instance")
     @js.native
     def _instance: js.Any = js.native
-    @scala.inline
-    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /**
       * (re-) initialize timezonecomplete with time zone data
@@ -782,19 +781,15 @@ object tzDatabaseMod {
       *             If not given, Timezonecomplete will search for installed modules.
       * @throws timezonecomplete.InvalidTimeZoneData if `data` or the global time zone data is invalid
       */
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-    @scala.inline
-    def init(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def init(data: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(data: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Single instance of this database
       * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
       */
-    @scala.inline
-    def instance(): TzDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[TzDatabase]
+    inline def instance(): TzDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[TzDatabase]
   }
   
   @JSImport("timezonecomplete/dist/lib/tz-database", "ZoneInfo")
@@ -927,6 +922,5 @@ object tzDatabaseMod {
     var until: js.UndefOr[Double] = js.native
   }
   
-  @scala.inline
-  def isValidOffsetString(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidOffsetString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidOffsetString(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidOffsetString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -14,25 +14,19 @@ trait ReplicationStatus extends StObject {
 }
 object ReplicationStatus {
   
-  @scala.inline
-  def apply(): ReplicationStatus = {
+  inline def apply(): ReplicationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationStatus]
   }
   
-  @scala.inline
-  implicit class ReplicationStatusMutableBuilder[Self <: ReplicationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationStatus](x: Self) {
     
-    @scala.inline
-    def setAutomatic(value: AutomaticStatus): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: AutomaticStatus): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
+    inline def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
     
-    @scala.inline
-    def setUserManaged(value: UserManagedStatus): Self = StObject.set(x, "userManaged", value.asInstanceOf[js.Any])
+    inline def setUserManaged(value: UserManagedStatus): Self = StObject.set(x, "userManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserManagedUndefined: Self = StObject.set(x, "userManaged", js.undefined)
+    inline def setUserManagedUndefined: Self = StObject.set(x, "userManaged", js.undefined)
   }
 }

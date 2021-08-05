@@ -16,6 +16,5 @@ object joinaggregatefacetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeJoinAggregateFromFacet(parent: DataFlowNode, facet: FacetMapping[String, FacetFieldDef[String, ExprRef | SignalRef]]): JoinAggregateTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeJoinAggregateFromFacet")(parent.asInstanceOf[js.Any], facet.asInstanceOf[js.Any])).asInstanceOf[JoinAggregateTransformNode]
+  inline def makeJoinAggregateFromFacet(parent: DataFlowNode, facet: FacetMapping[String, FacetFieldDef[String, ExprRef | SignalRef]]): JoinAggregateTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeJoinAggregateFromFacet")(parent.asInstanceOf[js.Any], facet.asInstanceOf[js.Any])).asInstanceOf[JoinAggregateTransformNode]
 }

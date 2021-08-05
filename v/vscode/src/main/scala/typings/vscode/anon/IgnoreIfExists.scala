@@ -12,25 +12,19 @@ trait IgnoreIfExists extends StObject {
 }
 object IgnoreIfExists {
   
-  @scala.inline
-  def apply(): IgnoreIfExists = {
+  inline def apply(): IgnoreIfExists = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreIfExists]
   }
   
-  @scala.inline
-  implicit class IgnoreIfExistsMutableBuilder[Self <: IgnoreIfExists] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreIfExists](x: Self) {
     
-    @scala.inline
-    def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
+    inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
+    inline def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

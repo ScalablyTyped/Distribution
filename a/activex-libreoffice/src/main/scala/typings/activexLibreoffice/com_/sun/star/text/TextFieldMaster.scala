@@ -29,8 +29,7 @@ trait TextFieldMaster
 }
 object TextFieldMaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DependentTextFields: SafeArray[XDependentTextField],
     InstanceName: String,
     Name: String,
@@ -50,16 +49,12 @@ object TextFieldMaster {
     __obj.asInstanceOf[TextFieldMaster]
   }
   
-  @scala.inline
-  implicit class TextFieldMasterMutableBuilder[Self <: TextFieldMaster] (val x: Self) extends AnyVal {
+  extension [Self <: TextFieldMaster](x: Self) {
     
-    @scala.inline
-    def setDependentTextFields(value: SafeArray[XDependentTextField]): Self = StObject.set(x, "DependentTextFields", value.asInstanceOf[js.Any])
+    inline def setDependentTextFields(value: SafeArray[XDependentTextField]): Self = StObject.set(x, "DependentTextFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceName(value: String): Self = StObject.set(x, "InstanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: String): Self = StObject.set(x, "InstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

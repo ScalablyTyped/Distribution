@@ -11,19 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RTCPeerConnection protected () extends StObject {
   def this(configuration: RTCPeerConnectionConfiguration) = this()
   
-  var _dataChannelIds: js.Any = js.native
+  /* private */ var _dataChannelIds: js.Any = js.native
   
   /* private */ def _getTrack(streamReactTag: String, trackId: String): MediaStreamTrack = js.native
   
-  var _localStreams: js.Array[MediaStream] = js.native
+  /* private */ var _localStreams: js.Array[MediaStream] = js.native
   
-  var _peerConnectionId: Double = js.native
+  /* private */ var _peerConnectionId: Double = js.native
   
   /* private */ def _registerEvents(): Unit = js.native
   
-  var _remoteStreams: js.Array[MediaStream] = js.native
+  /* private */ var _remoteStreams: js.Array[MediaStream] = js.native
   
-  var _subscriptions: js.Array[js.Any] = js.native
+  /* private */ var _subscriptions: js.Array[js.Any] = js.native
   
   /* private */ def _unregisterEvents(): Unit = js.native
   
@@ -71,9 +71,9 @@ class RTCPeerConnection protected () extends StObject {
   
   def onsignalingstatechange(): js.UndefOr[Unit] = js.native
   
-  var privateiceConnectionState: RTCIceConnectionState = js.native
+  /* private */ var privateiceConnectionState: RTCIceConnectionState = js.native
   
-  var privateiceGatheringState: RTCIceGatheringState = js.native
+  /* private */ var privateiceGatheringState: RTCIceGatheringState = js.native
   
   var remoteDescription: RTCSessionDescriptionType = js.native
   

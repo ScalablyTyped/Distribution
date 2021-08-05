@@ -23,34 +23,25 @@ trait ListAttachedRolePoliciesResponse extends StObject {
 }
 object ListAttachedRolePoliciesResponse {
   
-  @scala.inline
-  def apply(): ListAttachedRolePoliciesResponse = {
+  inline def apply(): ListAttachedRolePoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAttachedRolePoliciesResponse]
   }
   
-  @scala.inline
-  implicit class ListAttachedRolePoliciesResponseMutableBuilder[Self <: ListAttachedRolePoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAttachedRolePoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setAttachedPolicies(value: attachedPoliciesListType): Self = StObject.set(x, "AttachedPolicies", value.asInstanceOf[js.Any])
+    inline def setAttachedPolicies(value: attachedPoliciesListType): Self = StObject.set(x, "AttachedPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedPoliciesUndefined: Self = StObject.set(x, "AttachedPolicies", js.undefined)
+    inline def setAttachedPoliciesUndefined: Self = StObject.set(x, "AttachedPolicies", js.undefined)
     
-    @scala.inline
-    def setAttachedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedPolicies", js.Array(value :_*))
+    inline def setAttachedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

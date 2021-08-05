@@ -17,31 +17,23 @@ trait SearchItemsByViewUrlRequest extends StObject {
 }
 object SearchItemsByViewUrlRequest {
   
-  @scala.inline
-  def apply(): SearchItemsByViewUrlRequest = {
+  inline def apply(): SearchItemsByViewUrlRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchItemsByViewUrlRequest]
   }
   
-  @scala.inline
-  implicit class SearchItemsByViewUrlRequestMutableBuilder[Self <: SearchItemsByViewUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchItemsByViewUrlRequest](x: Self) {
     
-    @scala.inline
-    def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setViewUrl(value: String): Self = StObject.set(x, "viewUrl", value.asInstanceOf[js.Any])
+    inline def setViewUrl(value: String): Self = StObject.set(x, "viewUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUrlUndefined: Self = StObject.set(x, "viewUrl", js.undefined)
+    inline def setViewUrlUndefined: Self = StObject.set(x, "viewUrl", js.undefined)
   }
 }

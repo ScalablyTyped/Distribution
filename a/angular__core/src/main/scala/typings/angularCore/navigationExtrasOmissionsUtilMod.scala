@@ -15,9 +15,7 @@ object navigationExtrasOmissionsUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findLiteralsToMigrate(sourceFile: SourceFile, typeChecker: TypeChecker): Map[String, Set[ObjectLiteralExpression]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findLiteralsToMigrate")(sourceFile.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Map[String, Set[ObjectLiteralExpression]]]
+  inline def findLiteralsToMigrate(sourceFile: SourceFile, typeChecker: TypeChecker): Map[String, Set[ObjectLiteralExpression]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findLiteralsToMigrate")(sourceFile.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Map[String, Set[ObjectLiteralExpression]]]
   
-  @scala.inline
-  def migrateLiteral(methodName: String, node: ObjectLiteralExpression): ObjectLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("migrateLiteral")(methodName.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[ObjectLiteralExpression]
+  inline def migrateLiteral(methodName: String, node: ObjectLiteralExpression): ObjectLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("migrateLiteral")(methodName.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[ObjectLiteralExpression]
 }

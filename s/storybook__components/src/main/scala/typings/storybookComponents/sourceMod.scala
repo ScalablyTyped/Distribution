@@ -48,38 +48,28 @@ object sourceMod {
   }
   object SourceCodeProps {
     
-    @scala.inline
-    def apply(): SourceCodeProps = {
+    inline def apply(): SourceCodeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceCodeProps]
     }
     
-    @scala.inline
-    implicit class SourceCodePropsMutableBuilder[Self <: SourceCodeProps] (val x: Self) extends AnyVal {
+    extension [Self <: SourceCodeProps](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+      inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+      inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     }
   }
   
@@ -89,20 +79,16 @@ object sourceMod {
   }
   object SourceErrorProps {
     
-    @scala.inline
-    def apply(): SourceErrorProps = {
+    inline def apply(): SourceErrorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceErrorProps]
     }
     
-    @scala.inline
-    implicit class SourceErrorPropsMutableBuilder[Self <: SourceErrorProps] (val x: Self) extends AnyVal {
+    extension [Self <: SourceErrorProps](x: Self) {
       
-      @scala.inline
-      def setError(value: SourceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: SourceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }
   }
   
@@ -112,8 +98,7 @@ object sourceMod {
        with SourceCodeProps
   object SourceProps {
     
-    @scala.inline
-    def apply(): SourceProps = {
+    inline def apply(): SourceProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceProps]
     }

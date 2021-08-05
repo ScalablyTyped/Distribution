@@ -42,26 +42,22 @@ object mod {
   @JSImport("signals.js", "IOnceSignal")
   @js.native
   def IOnceSignal: js.Symbol = js.native
-  @scala.inline
-  def IOnceSignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IOnceSignal")(x.asInstanceOf[js.Any])
+  inline def IOnceSignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IOnceSignal")(x.asInstanceOf[js.Any])
   
   @JSImport("signals.js", "IPrioritySignal")
   @js.native
   def IPrioritySignal: js.Symbol = js.native
-  @scala.inline
-  def IPrioritySignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IPrioritySignal")(x.asInstanceOf[js.Any])
+  inline def IPrioritySignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IPrioritySignal")(x.asInstanceOf[js.Any])
   
   @JSImport("signals.js", "ISignal")
   @js.native
   def ISignal: js.Symbol = js.native
-  @scala.inline
-  def ISignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISignal")(x.asInstanceOf[js.Any])
+  inline def ISignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISignal")(x.asInstanceOf[js.Any])
   
   @JSImport("signals.js", "ISlot")
   @js.native
   def ISlot: js.Symbol = js.native
-  @scala.inline
-  def ISlot_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISlot")(x.asInstanceOf[js.Any])
+  inline def ISlot_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISlot")(x.asInstanceOf[js.Any])
   
   @JSImport("signals.js", "MonoSignal")
   @js.native
@@ -196,7 +192,6 @@ object mod {
     @JSImport("signals.js", "SlotList.NIL")
     @js.native
     def NIL: typings.signalsJs.slotListMod.SlotList = js.native
-    @scala.inline
-    def NIL_=(x: typings.signalsJs.slotListMod.SlotList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NIL")(x.asInstanceOf[js.Any])
+    inline def NIL_=(x: typings.signalsJs.slotListMod.SlotList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NIL")(x.asInstanceOf[js.Any])
   }
 }

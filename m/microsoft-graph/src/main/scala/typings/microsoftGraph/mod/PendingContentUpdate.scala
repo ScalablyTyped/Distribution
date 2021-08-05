@@ -11,22 +11,17 @@ trait PendingContentUpdate extends StObject {
 }
 object PendingContentUpdate {
   
-  @scala.inline
-  def apply(): PendingContentUpdate = {
+  inline def apply(): PendingContentUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingContentUpdate]
   }
   
-  @scala.inline
-  implicit class PendingContentUpdateMutableBuilder[Self <: PendingContentUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: PendingContentUpdate](x: Self) {
     
-    @scala.inline
-    def setQueuedDateTime(value: NullableOption[String]): Self = StObject.set(x, "queuedDateTime", value.asInstanceOf[js.Any])
+    inline def setQueuedDateTime(value: NullableOption[String]): Self = StObject.set(x, "queuedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuedDateTimeNull: Self = StObject.set(x, "queuedDateTime", null)
+    inline def setQueuedDateTimeNull: Self = StObject.set(x, "queuedDateTime", null)
     
-    @scala.inline
-    def setQueuedDateTimeUndefined: Self = StObject.set(x, "queuedDateTime", js.undefined)
+    inline def setQueuedDateTimeUndefined: Self = StObject.set(x, "queuedDateTime", js.undefined)
   }
 }

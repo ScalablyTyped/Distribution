@@ -143,8 +143,7 @@ trait Branch extends StObject {
 }
 object Branch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeJobId: ActiveJobId,
     branchArn: BranchArn,
     branchName: BranchName,
@@ -167,124 +166,84 @@ object Branch {
     __obj.asInstanceOf[Branch]
   }
   
-  @scala.inline
-  implicit class BranchMutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
+  extension [Self <: Branch](x: Self) {
     
-    @scala.inline
-    def setActiveJobId(value: ActiveJobId): Self = StObject.set(x, "activeJobId", value.asInstanceOf[js.Any])
+    inline def setActiveJobId(value: ActiveJobId): Self = StObject.set(x, "activeJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedResources(value: AssociatedResources): Self = StObject.set(x, "associatedResources", value.asInstanceOf[js.Any])
+    inline def setAssociatedResources(value: AssociatedResources): Self = StObject.set(x, "associatedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedResourcesUndefined: Self = StObject.set(x, "associatedResources", js.undefined)
+    inline def setAssociatedResourcesUndefined: Self = StObject.set(x, "associatedResources", js.undefined)
     
-    @scala.inline
-    def setAssociatedResourcesVarargs(value: AssociatedResource*): Self = StObject.set(x, "associatedResources", js.Array(value :_*))
+    inline def setAssociatedResourcesVarargs(value: AssociatedResource*): Self = StObject.set(x, "associatedResources", js.Array(value :_*))
     
-    @scala.inline
-    def setBackendEnvironmentArn(value: BackendEnvironmentArn): Self = StObject.set(x, "backendEnvironmentArn", value.asInstanceOf[js.Any])
+    inline def setBackendEnvironmentArn(value: BackendEnvironmentArn): Self = StObject.set(x, "backendEnvironmentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendEnvironmentArnUndefined: Self = StObject.set(x, "backendEnvironmentArn", js.undefined)
+    inline def setBackendEnvironmentArnUndefined: Self = StObject.set(x, "backendEnvironmentArn", js.undefined)
     
-    @scala.inline
-    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
+    inline def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicAuthCredentialsUndefined: Self = StObject.set(x, "basicAuthCredentials", js.undefined)
+    inline def setBasicAuthCredentialsUndefined: Self = StObject.set(x, "basicAuthCredentials", js.undefined)
     
-    @scala.inline
-    def setBranchArn(value: BranchArn): Self = StObject.set(x, "branchArn", value.asInstanceOf[js.Any])
+    inline def setBranchArn(value: BranchArn): Self = StObject.set(x, "branchArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildSpec(value: BuildSpec): Self = StObject.set(x, "buildSpec", value.asInstanceOf[js.Any])
+    inline def setBuildSpec(value: BuildSpec): Self = StObject.set(x, "buildSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
+    inline def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDomains(value: CustomDomains): Self = StObject.set(x, "customDomains", value.asInstanceOf[js.Any])
+    inline def setCustomDomains(value: CustomDomains): Self = StObject.set(x, "customDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDomainsVarargs(value: CustomDomain*): Self = StObject.set(x, "customDomains", js.Array(value :_*))
+    inline def setCustomDomainsVarargs(value: CustomDomain*): Self = StObject.set(x, "customDomains", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationBranch(value: BranchName): Self = StObject.set(x, "destinationBranch", value.asInstanceOf[js.Any])
+    inline def setDestinationBranch(value: BranchName): Self = StObject.set(x, "destinationBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationBranchUndefined: Self = StObject.set(x, "destinationBranch", js.undefined)
+    inline def setDestinationBranchUndefined: Self = StObject.set(x, "destinationBranch", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: DisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutoBuild(value: EnableAutoBuild): Self = StObject.set(x, "enableAutoBuild", value.asInstanceOf[js.Any])
+    inline def setEnableAutoBuild(value: EnableAutoBuild): Self = StObject.set(x, "enableAutoBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableBasicAuth(value: EnableBasicAuth): Self = StObject.set(x, "enableBasicAuth", value.asInstanceOf[js.Any])
+    inline def setEnableBasicAuth(value: EnableBasicAuth): Self = StObject.set(x, "enableBasicAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNotification(value: EnableNotification): Self = StObject.set(x, "enableNotification", value.asInstanceOf[js.Any])
+    inline def setEnableNotification(value: EnableNotification): Self = StObject.set(x, "enableNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePerformanceMode(value: EnablePerformanceMode): Self = StObject.set(x, "enablePerformanceMode", value.asInstanceOf[js.Any])
+    inline def setEnablePerformanceMode(value: EnablePerformanceMode): Self = StObject.set(x, "enablePerformanceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePerformanceModeUndefined: Self = StObject.set(x, "enablePerformanceMode", js.undefined)
+    inline def setEnablePerformanceModeUndefined: Self = StObject.set(x, "enablePerformanceMode", js.undefined)
     
-    @scala.inline
-    def setEnablePullRequestPreview(value: EnablePullRequestPreview): Self = StObject.set(x, "enablePullRequestPreview", value.asInstanceOf[js.Any])
+    inline def setEnablePullRequestPreview(value: EnablePullRequestPreview): Self = StObject.set(x, "enablePullRequestPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariables): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: EnvironmentVariables): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramework(value: Framework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: Framework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestEnvironmentName(value: PullRequestEnvironmentName): Self = StObject.set(x, "pullRequestEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setPullRequestEnvironmentName(value: PullRequestEnvironmentName): Self = StObject.set(x, "pullRequestEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestEnvironmentNameUndefined: Self = StObject.set(x, "pullRequestEnvironmentName", js.undefined)
+    inline def setPullRequestEnvironmentNameUndefined: Self = StObject.set(x, "pullRequestEnvironmentName", js.undefined)
     
-    @scala.inline
-    def setSourceBranch(value: BranchName): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
+    inline def setSourceBranch(value: BranchName): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBranchUndefined: Self = StObject.set(x, "sourceBranch", js.undefined)
+    inline def setSourceBranchUndefined: Self = StObject.set(x, "sourceBranch", js.undefined)
     
-    @scala.inline
-    def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setThumbnailUrl(value: ThumbnailUrl): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+    inline def setThumbnailUrl(value: ThumbnailUrl): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
+    inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
-    @scala.inline
-    def setTotalNumberOfJobs(value: TotalNumberOfJobs): Self = StObject.set(x, "totalNumberOfJobs", value.asInstanceOf[js.Any])
+    inline def setTotalNumberOfJobs(value: TotalNumberOfJobs): Self = StObject.set(x, "totalNumberOfJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtl(value: TTL): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: TTL): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

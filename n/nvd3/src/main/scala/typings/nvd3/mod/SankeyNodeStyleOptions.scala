@@ -14,31 +14,23 @@ trait SankeyNodeStyleOptions extends StObject {
 }
 object SankeyNodeStyleOptions {
   
-  @scala.inline
-  def apply(): SankeyNodeStyleOptions = {
+  inline def apply(): SankeyNodeStyleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SankeyNodeStyleOptions]
   }
   
-  @scala.inline
-  implicit class SankeyNodeStyleOptionsMutableBuilder[Self <: SankeyNodeStyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SankeyNodeStyleOptions](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: js.Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: js.Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setStrokeColor(value: js.Any): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: js.Any): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    @scala.inline
-    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

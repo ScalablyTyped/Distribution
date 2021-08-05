@@ -15,38 +15,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Force extends StObject
 object Force {
   
-  @scala.inline
-  def ForceCenter(): typings.vegaTypings.transformMod.ForceCenter = {
+  inline def ForceCenter(): typings.vegaTypings.transformMod.ForceCenter = {
     val __obj = js.Dynamic.literal(force = "center")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.ForceCenter]
   }
   
-  @scala.inline
-  def ForceCollide(): typings.vegaTypings.transformMod.ForceCollide = {
+  inline def ForceCollide(): typings.vegaTypings.transformMod.ForceCollide = {
     val __obj = js.Dynamic.literal(force = "collide")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.ForceCollide]
   }
   
-  @scala.inline
-  def ForceLink(): typings.vegaTypings.transformMod.ForceLink = {
+  inline def ForceLink(): typings.vegaTypings.transformMod.ForceLink = {
     val __obj = js.Dynamic.literal(force = "link")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.ForceLink]
   }
   
-  @scala.inline
-  def ForceNBody(): typings.vegaTypings.transformMod.ForceNBody = {
+  inline def ForceNBody(): typings.vegaTypings.transformMod.ForceNBody = {
     val __obj = js.Dynamic.literal(force = "nbody")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.ForceNBody]
   }
   
-  @scala.inline
-  def ForceX(): typings.vegaTypings.transformMod.ForceX = {
+  inline def ForceX(): typings.vegaTypings.transformMod.ForceX = {
     val __obj = js.Dynamic.literal(force = "x")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.ForceX]
   }
   
-  @scala.inline
-  def ForceY(): typings.vegaTypings.transformMod.ForceY = {
+  inline def ForceY(): typings.vegaTypings.transformMod.ForceY = {
     val __obj = js.Dynamic.literal(force = "y")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.ForceY]
   }

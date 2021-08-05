@@ -18,19 +18,15 @@ trait DescribeDashboardPermissionsRequest extends StObject {
 }
 object DescribeDashboardPermissionsRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): DescribeDashboardPermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): DescribeDashboardPermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDashboardPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDashboardPermissionsRequestMutableBuilder[Self <: DescribeDashboardPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDashboardPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
   }
 }

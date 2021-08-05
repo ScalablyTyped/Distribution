@@ -12,19 +12,15 @@ trait Apikey extends StObject {
 }
 object Apikey {
   
-  @scala.inline
-  def apply(api_key: String, id: String): Apikey = {
+  inline def apply(api_key: String, id: String): Apikey = {
     val __obj = js.Dynamic.literal(api_key = api_key.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Apikey]
   }
   
-  @scala.inline
-  implicit class ApikeyMutableBuilder[Self <: Apikey] (val x: Self) extends AnyVal {
+  extension [Self <: Apikey](x: Self) {
     
-    @scala.inline
-    def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+    inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

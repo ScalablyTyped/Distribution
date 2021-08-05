@@ -19,7 +19,7 @@ class SourceMapper protected ()
     resolvePath: js.Function1[/* path */ String, String]
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var allSourceMappings: js.Any = js.native
   
   /* CompleteClass */
@@ -40,13 +40,13 @@ class SourceMapper protected ()
   /* CompleteClass */
   override def increaseMappingLevel(ast: IASTSpan): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var jsFile: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var jsFileName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var mappingLevel: js.Any = js.native
   
   /* CompleteClass */
@@ -58,28 +58,28 @@ class SourceMapper protected ()
     emitOptions: typings.typescriptServices.TypeScript.EmitOptions
   ): Unit = js.native
   
-  /* CompleteClass */
-  /* private */ override def setNewSourceFilePath(document: js.Any, emitOptions: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def setNewSourceFilePath(document: js.Any, emitOptions: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def setSourceMapOptions(document: js.Any, jsFilePath: js.Any, emitOptions: js.Any, resolvePath: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def setSourceMapOptions(document: js.Any, jsFilePath: js.Any, emitOptions: js.Any, resolvePath: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var sourceMapDirectory: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var sourceMapEntries: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var sourceMapOut: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var sourceMapPath: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var sourceRoot: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var tsFilePaths: js.Any = js.native
 }
 object SourceMapper {
@@ -92,6 +92,5 @@ object SourceMapper {
   @JSImport("typescript-services", "SourceMapper.MapFileExtension")
   @js.native
   def MapFileExtension: String = js.native
-  @scala.inline
-  def MapFileExtension_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MapFileExtension")(x.asInstanceOf[js.Any])
+  inline def MapFileExtension_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MapFileExtension")(x.asInstanceOf[js.Any])
 }

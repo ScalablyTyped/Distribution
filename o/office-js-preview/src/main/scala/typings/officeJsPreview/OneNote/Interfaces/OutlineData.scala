@@ -25,28 +25,21 @@ trait OutlineData extends StObject {
 }
 object OutlineData {
   
-  @scala.inline
-  def apply(): OutlineData = {
+  inline def apply(): OutlineData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutlineData]
   }
   
-  @scala.inline
-  implicit class OutlineDataMutableBuilder[Self <: OutlineData] (val x: Self) extends AnyVal {
+  extension [Self <: OutlineData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+    inline def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
+    inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    @scala.inline
-    def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
   }
 }

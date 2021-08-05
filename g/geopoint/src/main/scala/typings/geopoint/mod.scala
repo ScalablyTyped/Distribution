@@ -19,20 +19,16 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def degreesToRadians(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degreesToRadians")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def degreesToRadians(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degreesToRadians")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def kilometersToMiles(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("kilometersToMiles")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def kilometersToMiles(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("kilometersToMiles")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def milesToKilometers(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("milesToKilometers")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def milesToKilometers(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("milesToKilometers")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def radiansToDegrees(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("radiansToDegrees")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def radiansToDegrees(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("radiansToDegrees")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @js.native
   trait GeoPoint extends StObject {

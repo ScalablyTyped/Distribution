@@ -48,8 +48,7 @@ object AppBar {
     @JSGlobal("WinJS.UI.AppBar.ClosedDisplayMode.compact")
     @js.native
     def compact: String = js.native
-    @scala.inline
-    def compact_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compact")(x.asInstanceOf[js.Any])
+    inline def compact_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compact")(x.asInstanceOf[js.Any])
     
     /**
       * When the AppBar is closed, its height is always sized to content.
@@ -57,8 +56,7 @@ object AppBar {
     @JSGlobal("WinJS.UI.AppBar.ClosedDisplayMode.full")
     @js.native
     def full: String = js.native
-    @scala.inline
-    def full_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
+    inline def full_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
     
     /**
       * When the AppBar is closed, its height is reduced to the minimal height required to display only its overflowbutton. All other content in the AppBar is not displayed.
@@ -66,8 +64,7 @@ object AppBar {
     @JSGlobal("WinJS.UI.AppBar.ClosedDisplayMode.minimal")
     @js.native
     def minimal: String = js.native
-    @scala.inline
-    def minimal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minimal")(x.asInstanceOf[js.Any])
+    inline def minimal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minimal")(x.asInstanceOf[js.Any])
     
     /**
       * When the AppBar is closed, it is not visible and doesn't take up any space.
@@ -75,8 +72,7 @@ object AppBar {
     @JSGlobal("WinJS.UI.AppBar.ClosedDisplayMode.none")
     @js.native
     def none: String = js.native
-    @scala.inline
-    def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -95,8 +91,7 @@ object AppBar {
     @JSGlobal("WinJS.UI.AppBar.Placement.bottom")
     @js.native
     def bottom: String = js.native
-    @scala.inline
-    def bottom_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    inline def bottom_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
     
     /**
       * The AppBar appears at the top of the main view
@@ -104,8 +99,7 @@ object AppBar {
     @JSGlobal("WinJS.UI.AppBar.Placement.top")
     @js.native
     def top: String = js.native
-    @scala.inline
-    def top_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    inline def top_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -115,6 +109,5 @@ object AppBar {
   @JSGlobal("WinJS.UI.AppBar.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

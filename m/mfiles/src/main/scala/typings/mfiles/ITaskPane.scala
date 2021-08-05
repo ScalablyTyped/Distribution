@@ -26,8 +26,7 @@ trait ITaskPane extends StObject {
 }
 object ITaskPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddCustomCommandToGroup: (Double, Double, Double) => Unit,
     Available: Boolean,
     CreateGroup: (String, Double) => Double,
@@ -42,34 +41,24 @@ object ITaskPane {
     __obj.asInstanceOf[ITaskPane]
   }
   
-  @scala.inline
-  implicit class ITaskPaneMutableBuilder[Self <: ITaskPane] (val x: Self) extends AnyVal {
+  extension [Self <: ITaskPane](x: Self) {
     
-    @scala.inline
-    def setAddCustomCommandToGroup(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "AddCustomCommandToGroup", js.Any.fromFunction3(value))
+    inline def setAddCustomCommandToGroup(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "AddCustomCommandToGroup", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateGroup(value: (String, Double) => Double): Self = StObject.set(x, "CreateGroup", js.Any.fromFunction2(value))
+    inline def setCreateGroup(value: (String, Double) => Double): Self = StObject.set(x, "CreateGroup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeleteGroup(value: Double => Unit): Self = StObject.set(x, "DeleteGroup", js.Any.fromFunction1(value))
+    inline def setDeleteGroup(value: Double => Unit): Self = StObject.set(x, "DeleteGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvents(value: ITaskPaneEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: ITaskPaneEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveCustomCommandFromGroup(value: (Double, Double) => Unit): Self = StObject.set(x, "RemoveCustomCommandFromGroup", js.Any.fromFunction2(value))
+    inline def setRemoveCustomCommandFromGroup(value: (Double, Double) => Unit): Self = StObject.set(x, "RemoveCustomCommandFromGroup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLogo(value: String => Unit): Self = StObject.set(x, "SetLogo", js.Any.fromFunction1(value))
+    inline def setSetLogo(value: String => Unit): Self = StObject.set(x, "SetLogo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTheme(value: ITheme => Unit): Self = StObject.set(x, "SetTheme", js.Any.fromFunction1(value))
+    inline def setSetTheme(value: ITheme => Unit): Self = StObject.set(x, "SetTheme", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

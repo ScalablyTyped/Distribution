@@ -340,8 +340,7 @@ trait XCanvas
 }
 object XCanvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Device: XGraphicDevice,
     acquire: () => Unit,
     clear: () => Unit,
@@ -370,70 +369,49 @@ object XCanvas {
     __obj.asInstanceOf[XCanvas]
   }
   
-  @scala.inline
-  implicit class XCanvasMutableBuilder[Self <: XCanvas] (val x: Self) extends AnyVal {
+  extension [Self <: XCanvas](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateFont(value: (FontRequest, SeqEquiv[PropertyValue], Matrix2D) => XCanvasFont): Self = StObject.set(x, "createFont", js.Any.fromFunction3(value))
+    inline def setCreateFont(value: (FontRequest, SeqEquiv[PropertyValue], Matrix2D) => XCanvasFont): Self = StObject.set(x, "createFont", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDevice(value: XGraphicDevice): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: XGraphicDevice): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBezier(value: (RealBezierSegment2D, RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawBezier", js.Any.fromFunction4(value))
+    inline def setDrawBezier(value: (RealBezierSegment2D, RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawBezier", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDrawBitmap(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawBitmap", js.Any.fromFunction3(value))
+    inline def setDrawBitmap(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawBitmap", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawBitmapModulated(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawBitmapModulated", js.Any.fromFunction3(value))
+    inline def setDrawBitmapModulated(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawBitmapModulated", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawLine(value: (RealPoint2D, RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawLine", js.Any.fromFunction4(value))
+    inline def setDrawLine(value: (RealPoint2D, RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawLine", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDrawPoint(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawPoint", js.Any.fromFunction3(value))
+    inline def setDrawPoint(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawPoint", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawPolyPolygon", js.Any.fromFunction3(value))
+    inline def setDrawPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawPolyPolygon", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrawText(value: (StringContext, XCanvasFont, ViewState, RenderState, Double) => XCachedPrimitive): Self = StObject.set(x, "drawText", js.Any.fromFunction5(value))
+    inline def setDrawText(value: (StringContext, XCanvasFont, ViewState, RenderState, Double) => XCachedPrimitive): Self = StObject.set(x, "drawText", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDrawTextLayout(value: (XTextLayout, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawTextLayout", js.Any.fromFunction3(value))
+    inline def setDrawTextLayout(value: (XTextLayout, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawTextLayout", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFillPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "fillPolyPolygon", js.Any.fromFunction3(value))
+    inline def setFillPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "fillPolyPolygon", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFillTextureMappedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], XMapping2D) => XCachedPrimitive): Self = StObject.set(x, "fillTextureMappedPolyPolygon", js.Any.fromFunction5(value))
+    inline def setFillTextureMappedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], XMapping2D) => XCachedPrimitive): Self = StObject.set(x, "fillTextureMappedPolyPolygon", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFillTexturedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture]) => XCachedPrimitive): Self = StObject.set(x, "fillTexturedPolyPolygon", js.Any.fromFunction4(value))
+    inline def setFillTexturedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture]) => XCachedPrimitive): Self = StObject.set(x, "fillTexturedPolyPolygon", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetDevice(value: () => XGraphicDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
+    inline def setGetDevice(value: () => XGraphicDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAvailableFonts(value: (FontInfo, SeqEquiv[PropertyValue]) => SafeArray[FontInfo]): Self = StObject.set(x, "queryAvailableFonts", js.Any.fromFunction2(value))
+    inline def setQueryAvailableFonts(value: (FontInfo, SeqEquiv[PropertyValue]) => SafeArray[FontInfo]): Self = StObject.set(x, "queryAvailableFonts", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryStrokeShapes(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D): Self = StObject.set(x, "queryStrokeShapes", js.Any.fromFunction4(value))
+    inline def setQueryStrokeShapes(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D): Self = StObject.set(x, "queryStrokeShapes", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStrokePolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive): Self = StObject.set(x, "strokePolyPolygon", js.Any.fromFunction4(value))
+    inline def setStrokePolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive): Self = StObject.set(x, "strokePolyPolygon", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStrokeTextureMappedPolyPolygon(
+    inline def setStrokeTextureMappedPolyPolygon(
       value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], XMapping2D, StrokeAttributes) => XCachedPrimitive
     ): Self = StObject.set(x, "strokeTextureMappedPolyPolygon", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setStrokeTexturedPolyPolygon(
+    inline def setStrokeTexturedPolyPolygon(
       value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], StrokeAttributes) => XCachedPrimitive
     ): Self = StObject.set(x, "strokeTexturedPolyPolygon", js.Any.fromFunction5(value))
   }

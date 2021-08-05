@@ -10,15 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(request: RequestAPI[Request, CoreOptions, RequiredUriUrl]): String = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(request: RequestAPI[Request, CoreOptions, RequiredUriUrl], body: js.Any): String = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(request: RequestAPI[Request, CoreOptions, RequiredUriUrl]): String = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(request: RequestAPI[Request, CoreOptions, RequiredUriUrl], body: js.Any): String = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("request-as-curl", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def serialize(request: RequestAPI[Request, CoreOptions, RequiredUriUrl]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(request.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(request: RequestAPI[Request, CoreOptions, RequiredUriUrl]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(request.asInstanceOf[js.Any]).asInstanceOf[String]
 }

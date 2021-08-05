@@ -23,31 +23,23 @@ trait Alias extends StObject {
 }
 object Alias {
   
-  @scala.inline
-  def apply(): Alias = {
+  inline def apply(): Alias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alias]
   }
   
-  @scala.inline
-  implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
+  extension [Self <: Alias](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnlyModule(value: Boolean): Self = StObject.set(x, "onlyModule", value.asInstanceOf[js.Any])
+    inline def setOnlyModule(value: Boolean): Self = StObject.set(x, "onlyModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyModuleUndefined: Self = StObject.set(x, "onlyModule", js.undefined)
+    inline def setOnlyModuleUndefined: Self = StObject.set(x, "onlyModule", js.undefined)
   }
 }

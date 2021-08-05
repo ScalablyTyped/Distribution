@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object stemmer {
   
-  @scala.inline
-  def apply(w: String): String = ^.asInstanceOf[js.Dynamic].apply(w.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(w: String): String = ^.asInstanceOf[js.Dynamic].apply(w.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("elasticlunr", "stemmer")
   @js.native

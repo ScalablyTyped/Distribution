@@ -17,17 +17,14 @@ object heroMod {
   }
   object Hero {
     
-    @scala.inline
-    def apply(id: String): Hero = {
+    inline def apply(id: String): Hero = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hero]
     }
     
-    @scala.inline
-    implicit class HeroMutableBuilder[Self <: Hero] (val x: Self) extends AnyVal {
+    extension [Self <: Hero](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

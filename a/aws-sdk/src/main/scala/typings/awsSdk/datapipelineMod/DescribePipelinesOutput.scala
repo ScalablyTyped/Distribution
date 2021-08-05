@@ -13,19 +13,15 @@ trait DescribePipelinesOutput extends StObject {
 }
 object DescribePipelinesOutput {
   
-  @scala.inline
-  def apply(pipelineDescriptionList: PipelineDescriptionList): DescribePipelinesOutput = {
+  inline def apply(pipelineDescriptionList: PipelineDescriptionList): DescribePipelinesOutput = {
     val __obj = js.Dynamic.literal(pipelineDescriptionList = pipelineDescriptionList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePipelinesOutput]
   }
   
-  @scala.inline
-  implicit class DescribePipelinesOutputMutableBuilder[Self <: DescribePipelinesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePipelinesOutput](x: Self) {
     
-    @scala.inline
-    def setPipelineDescriptionList(value: PipelineDescriptionList): Self = StObject.set(x, "pipelineDescriptionList", value.asInstanceOf[js.Any])
+    inline def setPipelineDescriptionList(value: PipelineDescriptionList): Self = StObject.set(x, "pipelineDescriptionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineDescriptionListVarargs(value: PipelineDescription*): Self = StObject.set(x, "pipelineDescriptionList", js.Array(value :_*))
+    inline def setPipelineDescriptionListVarargs(value: PipelineDescription*): Self = StObject.set(x, "pipelineDescriptionList", js.Array(value :_*))
   }
 }

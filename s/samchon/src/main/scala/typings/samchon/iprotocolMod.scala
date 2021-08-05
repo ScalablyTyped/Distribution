@@ -29,20 +29,16 @@ object iprotocolMod {
   }
   object IProtocol {
     
-    @scala.inline
-    def apply(replyData: Invoke => Unit, sendData: Invoke => Unit): IProtocol = {
+    inline def apply(replyData: Invoke => Unit, sendData: Invoke => Unit): IProtocol = {
       val __obj = js.Dynamic.literal(replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
       __obj.asInstanceOf[IProtocol]
     }
     
-    @scala.inline
-    implicit class IProtocolMutableBuilder[Self <: IProtocol] (val x: Self) extends AnyVal {
+    extension [Self <: IProtocol](x: Self) {
       
-      @scala.inline
-      def setReplyData(value: Invoke => Unit): Self = StObject.set(x, "replyData", js.Any.fromFunction1(value))
+      inline def setReplyData(value: Invoke => Unit): Self = StObject.set(x, "replyData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendData(value: Invoke => Unit): Self = StObject.set(x, "sendData", js.Any.fromFunction1(value))
+      inline def setSendData(value: Invoke => Unit): Self = StObject.set(x, "sendData", js.Any.fromFunction1(value))
     }
   }
 }

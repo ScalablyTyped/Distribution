@@ -10,19 +10,15 @@ trait IsMACAddressOptions extends StObject {
 }
 object IsMACAddressOptions {
   
-  @scala.inline
-  def apply(): IsMACAddressOptions = {
+  inline def apply(): IsMACAddressOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsMACAddressOptions]
   }
   
-  @scala.inline
-  implicit class IsMACAddressOptionsMutableBuilder[Self <: IsMACAddressOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsMACAddressOptions](x: Self) {
     
-    @scala.inline
-    def setNo_colons(value: Boolean): Self = StObject.set(x, "no_colons", value.asInstanceOf[js.Any])
+    inline def setNo_colons(value: Boolean): Self = StObject.set(x, "no_colons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNo_colonsUndefined: Self = StObject.set(x, "no_colons", js.undefined)
+    inline def setNo_colonsUndefined: Self = StObject.set(x, "no_colons", js.undefined)
   }
 }

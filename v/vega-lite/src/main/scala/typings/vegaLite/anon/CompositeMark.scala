@@ -10,19 +10,15 @@ trait CompositeMark extends StObject {
 }
 object CompositeMark {
   
-  @scala.inline
-  def apply(): CompositeMark = {
+  inline def apply(): CompositeMark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompositeMark]
   }
   
-  @scala.inline
-  implicit class CompositeMarkMutableBuilder[Self <: CompositeMark] (val x: Self) extends AnyVal {
+  extension [Self <: CompositeMark](x: Self) {
     
-    @scala.inline
-    def setCompositeMark(value: Boolean): Self = StObject.set(x, "compositeMark", value.asInstanceOf[js.Any])
+    inline def setCompositeMark(value: Boolean): Self = StObject.set(x, "compositeMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeMarkUndefined: Self = StObject.set(x, "compositeMark", js.undefined)
+    inline def setCompositeMarkUndefined: Self = StObject.set(x, "compositeMark", js.undefined)
   }
 }

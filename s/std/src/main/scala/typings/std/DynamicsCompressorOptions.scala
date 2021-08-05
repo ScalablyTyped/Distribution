@@ -20,43 +20,31 @@ trait DynamicsCompressorOptions
 }
 object DynamicsCompressorOptions {
   
-  @scala.inline
-  def apply(): DynamicsCompressorOptions = {
+  inline def apply(): DynamicsCompressorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicsCompressorOptions]
   }
   
-  @scala.inline
-  implicit class DynamicsCompressorOptionsMutableBuilder[Self <: DynamicsCompressorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicsCompressorOptions](x: Self) {
     
-    @scala.inline
-    def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
+    inline def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackUndefined: Self = StObject.set(x, "attack", js.undefined)
+    inline def setAttackUndefined: Self = StObject.set(x, "attack", js.undefined)
     
-    @scala.inline
-    def setKnee(value: Double): Self = StObject.set(x, "knee", value.asInstanceOf[js.Any])
+    inline def setKnee(value: Double): Self = StObject.set(x, "knee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKneeUndefined: Self = StObject.set(x, "knee", js.undefined)
+    inline def setKneeUndefined: Self = StObject.set(x, "knee", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
-    @scala.inline
-    def setRelease(value: Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+    inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

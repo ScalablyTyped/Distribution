@@ -11,16 +11,13 @@ trait LocationProps extends StObject {
 }
 object LocationProps {
   
-  @scala.inline
-  def apply(children: /* context */ LocationContext => ReactNode): LocationProps = {
+  inline def apply(children: /* context */ LocationContext => ReactNode): LocationProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[LocationProps]
   }
   
-  @scala.inline
-  implicit class LocationPropsMutableBuilder[Self <: LocationProps] (val x: Self) extends AnyVal {
+  extension [Self <: LocationProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* context */ LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* context */ LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }
 }

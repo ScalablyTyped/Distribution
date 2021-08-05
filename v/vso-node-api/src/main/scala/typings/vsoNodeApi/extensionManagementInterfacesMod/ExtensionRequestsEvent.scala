@@ -34,8 +34,7 @@ trait ExtensionRequestsEvent extends StObject {
 }
 object ExtensionRequestsEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `extension`: PublishedExtension,
     host: ExtensionHost,
     links: ExtensionRequestUrls,
@@ -47,25 +46,18 @@ object ExtensionRequestsEvent {
     __obj.asInstanceOf[ExtensionRequestsEvent]
   }
   
-  @scala.inline
-  implicit class ExtensionRequestsEventMutableBuilder[Self <: ExtensionRequestsEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionRequestsEvent](x: Self) {
     
-    @scala.inline
-    def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: ExtensionRequestUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: ExtensionRequestUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequests(value: js.Array[ExtensionRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[ExtensionRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateType(value: ExtensionRequestUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
+    inline def setUpdateType(value: ExtensionRequestUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
   }
 }

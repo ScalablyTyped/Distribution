@@ -22,25 +22,19 @@ trait SettlementTransactionAmountCommission extends StObject {
 }
 object SettlementTransactionAmountCommission {
   
-  @scala.inline
-  def apply(): SettlementTransactionAmountCommission = {
+  inline def apply(): SettlementTransactionAmountCommission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettlementTransactionAmountCommission]
   }
   
-  @scala.inline
-  implicit class SettlementTransactionAmountCommissionMutableBuilder[Self <: SettlementTransactionAmountCommission] (val x: Self) extends AnyVal {
+  extension [Self <: SettlementTransactionAmountCommission](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+    inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
   }
 }

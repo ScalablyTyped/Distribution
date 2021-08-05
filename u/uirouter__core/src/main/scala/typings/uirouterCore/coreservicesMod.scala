@@ -15,8 +15,7 @@ object coreservicesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeStub[T](service: String, methods: js.Array[/* keyof T */ String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStub")(service.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def makeStub[T](service: String, methods: js.Array[/* keyof T */ String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStub")(service.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@uirouter/core/lib/common/coreservices", "services")
   @js.native
@@ -32,20 +31,16 @@ object coreservicesMod {
   }
   object CoreServices {
     
-    @scala.inline
-    def apply($injector: InjectorLike, $q: QLike): CoreServices = {
+    inline def apply($injector: InjectorLike, $q: QLike): CoreServices = {
       val __obj = js.Dynamic.literal($injector = $injector.asInstanceOf[js.Any], $q = $q.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoreServices]
     }
     
-    @scala.inline
-    implicit class CoreServicesMutableBuilder[Self <: CoreServices] (val x: Self) extends AnyVal {
+    extension [Self <: CoreServices](x: Self) {
       
-      @scala.inline
-      def set$injector(value: InjectorLike): Self = StObject.set(x, "$injector", value.asInstanceOf[js.Any])
+      inline def set$injector(value: InjectorLike): Self = StObject.set(x, "$injector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$q(value: QLike): Self = StObject.set(x, "$q", value.asInstanceOf[js.Any])
+      inline def set$q(value: QLike): Self = StObject.set(x, "$q", value.asInstanceOf[js.Any])
     }
   }
   

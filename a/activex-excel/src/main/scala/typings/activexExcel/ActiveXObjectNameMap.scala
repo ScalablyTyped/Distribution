@@ -20,8 +20,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(ExcelDotApplication: Application, ExcelDotChart: Chart, ExcelDotSheet: Worksheet): ActiveXObjectNameMap = {
+  inline def apply(ExcelDotApplication: Application, ExcelDotChart: Chart, ExcelDotSheet: Worksheet): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("Excel.Application")(ExcelDotApplication.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.Chart")(ExcelDotChart.asInstanceOf[js.Any])
@@ -29,16 +28,12 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setExcelDotApplication(value: Application): Self = StObject.set(x, "Excel.Application", value.asInstanceOf[js.Any])
+    inline def setExcelDotApplication(value: Application): Self = StObject.set(x, "Excel.Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotChart(value: Chart): Self = StObject.set(x, "Excel.Chart", value.asInstanceOf[js.Any])
+    inline def setExcelDotChart(value: Chart): Self = StObject.set(x, "Excel.Chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSheet(value: Worksheet): Self = StObject.set(x, "Excel.Sheet", value.asInstanceOf[js.Any])
+    inline def setExcelDotSheet(value: Worksheet): Self = StObject.set(x, "Excel.Sheet", value.asInstanceOf[js.Any])
   }
 }

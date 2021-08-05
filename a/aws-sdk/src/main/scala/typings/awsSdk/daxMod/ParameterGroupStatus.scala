@@ -23,34 +23,25 @@ trait ParameterGroupStatus extends StObject {
 }
 object ParameterGroupStatus {
   
-  @scala.inline
-  def apply(): ParameterGroupStatus = {
+  inline def apply(): ParameterGroupStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterGroupStatus]
   }
   
-  @scala.inline
-  implicit class ParameterGroupStatusMutableBuilder[Self <: ParameterGroupStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterGroupStatus](x: Self) {
     
-    @scala.inline
-    def setNodeIdsToReboot(value: NodeIdentifierList): Self = StObject.set(x, "NodeIdsToReboot", value.asInstanceOf[js.Any])
+    inline def setNodeIdsToReboot(value: NodeIdentifierList): Self = StObject.set(x, "NodeIdsToReboot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsToRebootUndefined: Self = StObject.set(x, "NodeIdsToReboot", js.undefined)
+    inline def setNodeIdsToRebootUndefined: Self = StObject.set(x, "NodeIdsToReboot", js.undefined)
     
-    @scala.inline
-    def setNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "NodeIdsToReboot", js.Array(value :_*))
+    inline def setNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "NodeIdsToReboot", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
+    inline def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
+    inline def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
+    inline def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
   }
 }

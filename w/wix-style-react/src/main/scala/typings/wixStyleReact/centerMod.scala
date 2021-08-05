@@ -21,20 +21,16 @@ object centerMod {
   }
   object CenterProps {
     
-    @scala.inline
-    def apply(): CenterProps = {
+    inline def apply(): CenterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CenterProps]
     }
     
-    @scala.inline
-    implicit class CenterPropsMutableBuilder[Self <: CenterProps] (val x: Self) extends AnyVal {
+    extension [Self <: CenterProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait USBTransferStatus extends StObject
 object USBTransferStatus {
   
-  @scala.inline
-  def babble: typings.w3cWebUsb.w3cWebUsbStrings.babble = "babble".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.babble]
+  inline def babble: typings.w3cWebUsb.w3cWebUsbStrings.babble = "babble".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.babble]
   
-  @scala.inline
-  def ok: typings.w3cWebUsb.w3cWebUsbStrings.ok = "ok".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.ok]
+  inline def ok: typings.w3cWebUsb.w3cWebUsbStrings.ok = "ok".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.ok]
   
-  @scala.inline
-  def stall: typings.w3cWebUsb.w3cWebUsbStrings.stall = "stall".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.stall]
+  inline def stall: typings.w3cWebUsb.w3cWebUsbStrings.stall = "stall".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.stall]
 }

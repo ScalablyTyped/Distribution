@@ -18,25 +18,19 @@ trait WaitActivity extends StObject {
 }
 object WaitActivity {
   
-  @scala.inline
-  def apply(): WaitActivity = {
+  inline def apply(): WaitActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaitActivity]
   }
   
-  @scala.inline
-  implicit class WaitActivityMutableBuilder[Self <: WaitActivity] (val x: Self) extends AnyVal {
+  extension [Self <: WaitActivity](x: Self) {
     
-    @scala.inline
-    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
+    inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
+    inline def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
-    @scala.inline
-    def setWaitTime(value: WaitTime): Self = StObject.set(x, "WaitTime", value.asInstanceOf[js.Any])
+    inline def setWaitTime(value: WaitTime): Self = StObject.set(x, "WaitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitTimeUndefined: Self = StObject.set(x, "WaitTime", js.undefined)
+    inline def setWaitTimeUndefined: Self = StObject.set(x, "WaitTime", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteDBSecurityGroupMessage extends StObject {
 }
 object DeleteDBSecurityGroupMessage {
   
-  @scala.inline
-  def apply(DBSecurityGroupName: String): DeleteDBSecurityGroupMessage = {
+  inline def apply(DBSecurityGroupName: String): DeleteDBSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(DBSecurityGroupName = DBSecurityGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBSecurityGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBSecurityGroupMessageMutableBuilder[Self <: DeleteDBSecurityGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBSecurityGroupMessage](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
   }
 }

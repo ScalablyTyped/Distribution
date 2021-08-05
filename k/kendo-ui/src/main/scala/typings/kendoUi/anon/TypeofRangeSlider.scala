@@ -15,19 +15,15 @@ trait TypeofRangeSlider extends StObject {
 }
 object TypeofRangeSlider {
   
-  @scala.inline
-  def apply(extend: js.Object => RangeSlider, fn: RangeSlider): TypeofRangeSlider = {
+  inline def apply(extend: js.Object => RangeSlider, fn: RangeSlider): TypeofRangeSlider = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRangeSlider]
   }
   
-  @scala.inline
-  implicit class TypeofRangeSliderMutableBuilder[Self <: TypeofRangeSlider] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRangeSlider](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => RangeSlider): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => RangeSlider): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: RangeSlider): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: RangeSlider): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

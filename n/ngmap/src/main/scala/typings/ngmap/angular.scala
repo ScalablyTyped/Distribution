@@ -23,26 +23,20 @@ object angular {
     }
     object IGetMapOptions {
       
-      @scala.inline
-      def apply(): IGetMapOptions = {
+      inline def apply(): IGetMapOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IGetMapOptions]
       }
       
-      @scala.inline
-      implicit class IGetMapOptionsMutableBuilder[Self <: IGetMapOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IGetMapOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       }
     }
     
@@ -111,17 +105,14 @@ object angular {
     }
     object INgMapOptions {
       
-      @scala.inline
-      def apply(marker: AnchorPoint): INgMapOptions = {
+      inline def apply(marker: AnchorPoint): INgMapOptions = {
         val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
         __obj.asInstanceOf[INgMapOptions]
       }
       
-      @scala.inline
-      implicit class INgMapOptionsMutableBuilder[Self <: INgMapOptions] (val x: Self) extends AnyVal {
+      extension [Self <: INgMapOptions](x: Self) {
         
-        @scala.inline
-        def setMarker(value: AnchorPoint): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+        inline def setMarker(value: AnchorPoint): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       }
     }
     
@@ -142,17 +133,14 @@ object angular {
     }
     object INgMapProvider {
       
-      @scala.inline
-      def apply(setDefaultOptions: INgMapOptions => Unit): INgMapProvider = {
+      inline def apply(setDefaultOptions: INgMapOptions => Unit): INgMapProvider = {
         val __obj = js.Dynamic.literal(setDefaultOptions = js.Any.fromFunction1(setDefaultOptions))
         __obj.asInstanceOf[INgMapProvider]
       }
       
-      @scala.inline
-      implicit class INgMapProviderMutableBuilder[Self <: INgMapProvider] (val x: Self) extends AnyVal {
+      extension [Self <: INgMapProvider](x: Self) {
         
-        @scala.inline
-        def setSetDefaultOptions(value: INgMapOptions => Unit): Self = StObject.set(x, "setDefaultOptions", js.Any.fromFunction1(value))
+        inline def setSetDefaultOptions(value: INgMapOptions => Unit): Self = StObject.set(x, "setDefaultOptions", js.Any.fromFunction1(value))
       }
     }
     

@@ -13,14 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * @param handler The event handler to add.
 * @param autoRemove (Optional) A boolean value that determines whether the handler should be removed automatically when the element is disposed.
 */
-@scala.inline
-def addHandler(
+inline def addHandler(
   element: typings.std.HTMLElement,
   eventName: java.lang.String,
   handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, scala.Unit]
 ): scala.Unit = (js.Dynamic.global.applyDynamic("$addHandler")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def addHandler(
+inline def addHandler(
   element: typings.std.HTMLElement,
   eventName: java.lang.String,
   handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, scala.Unit],
@@ -35,26 +33,22 @@ def addHandler(
 * @param handlerOwner (Optional) The object instance that is the context for the delegates that should be created from the handlers.
 * @param autoRemove (Optional) A boolean value that determines whether the handler should be removed automatically when the element is disposed.
 */
-@scala.inline
-def addHandlers(
+inline def addHandlers(
   element: typings.std.HTMLElement,
   events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, scala.Unit]]
 ): scala.Unit = (js.Dynamic.global.applyDynamic("$addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def addHandlers(
+inline def addHandlers(
   element: typings.std.HTMLElement,
   events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, scala.Unit]],
   handlerOwner: js.Any
 ): scala.Unit = (js.Dynamic.global.applyDynamic("$addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any], handlerOwner.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def addHandlers(
+inline def addHandlers(
   element: typings.std.HTMLElement,
   events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, scala.Unit]],
   handlerOwner: js.Any,
   autoRemove: scala.Boolean
 ): scala.Unit = (js.Dynamic.global.applyDynamic("$addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any], handlerOwner.asInstanceOf[js.Any], autoRemove.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def addHandlers(
+inline def addHandlers(
   element: typings.std.HTMLElement,
   events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, scala.Unit]],
   handlerOwner: scala.Unit,
@@ -67,8 +61,7 @@ def addHandlers(
 * @see {@link http://msdn.microsoft.com/en-us/library/bb310959(v=vs.100).aspx}
 * @param The DOM element that exposes the events.
 */
-@scala.inline
-def clearHandlers(element: typings.std.HTMLElement): scala.Unit = js.Dynamic.global.applyDynamic("$clearHandlers")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def clearHandlers(element: typings.std.HTMLElement): scala.Unit = js.Dynamic.global.applyDynamic("$clearHandlers")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 //#endregion
 //#region Shortcuts to commonly used APIs
@@ -88,80 +81,64 @@ def clearHandlers(element: typings.std.HTMLElement): scala.Unit = js.Dynamic.glo
 *           (Optional) The DOM element that the component should be attached to.
 * @returns A new instance of a component that uses the specified parameters.
 */
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type): typings.microsoftAjax.Sys.Component = js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type, properties: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type, properties: js.Any, events: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type, properties: js.Any, events: js.Any, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(`type`: typings.microsoftAjax.Type): typings.microsoftAjax.Sys.Component = js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(`type`: typings.microsoftAjax.Type, properties: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(`type`: typings.microsoftAjax.Type, properties: js.Any, events: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(`type`: typings.microsoftAjax.Type, properties: js.Any, events: js.Any, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: js.Any,
   events: js.Any,
   references: js.Any,
   element: typings.std.HTMLElement
 ): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: js.Any,
   events: js.Any,
   references: scala.Unit,
   element: typings.std.HTMLElement
 ): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type, properties: js.Any, events: scala.Unit, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(`type`: typings.microsoftAjax.Type, properties: js.Any, events: scala.Unit, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: js.Any,
   events: scala.Unit,
   references: js.Any,
   element: typings.std.HTMLElement
 ): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: js.Any,
   events: scala.Unit,
   references: scala.Unit,
   element: typings.std.HTMLElement
 ): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type, properties: scala.Unit, events: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type, properties: scala.Unit, events: js.Any, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(`type`: typings.microsoftAjax.Type, properties: scala.Unit, events: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(`type`: typings.microsoftAjax.Type, properties: scala.Unit, events: js.Any, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: scala.Unit,
   events: js.Any,
   references: js.Any,
   element: typings.std.HTMLElement
 ): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: scala.Unit,
   events: js.Any,
   references: scala.Unit,
   element: typings.std.HTMLElement
 ): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(`type`: typings.microsoftAjax.Type, properties: scala.Unit, events: scala.Unit, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(`type`: typings.microsoftAjax.Type, properties: scala.Unit, events: scala.Unit, references: js.Any): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: scala.Unit,
   events: scala.Unit,
   references: js.Any,
   element: typings.std.HTMLElement
 ): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$create")(`type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], events.asInstanceOf[js.Any], references.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def create(
+inline def create(
   `type`: typings.microsoftAjax.Type,
   properties: scala.Unit,
   events: scala.Unit,
@@ -176,12 +153,9 @@ def create(
 * @param parent (Optional) The component or element that contains the component to find.
 * @return A Component object that contains the component requested by ID, if found; otherwise, null.
 */
-@scala.inline
-def find(id: java.lang.String): typings.microsoftAjax.Sys.Component = js.Dynamic.global.applyDynamic("$find")(id.asInstanceOf[js.Any]).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def find(id: java.lang.String, parent: typings.microsoftAjax.Sys.Component): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$find")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
-@scala.inline
-def find(id: java.lang.String, parent: typings.std.HTMLElement): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$find")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def find(id: java.lang.String): typings.microsoftAjax.Sys.Component = js.Dynamic.global.applyDynamic("$find")(id.asInstanceOf[js.Any]).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def find(id: java.lang.String, parent: typings.microsoftAjax.Sys.Component): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$find")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
+inline def find(id: java.lang.String, parent: typings.std.HTMLElement): typings.microsoftAjax.Sys.Component = (js.Dynamic.global.applyDynamic("$find")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.Component]
 
 /**
 * Provides a shortcut to the getElementById method of the HTMLElement class. This member is static and can be invoked without creating an instance of the class.
@@ -193,10 +167,8 @@ def find(id: java.lang.String, parent: typings.std.HTMLElement): typings.microso
 * @return
 *   The  HTMLElement
 */
-@scala.inline
-def get(id: java.lang.String): typings.std.HTMLElement = js.Dynamic.global.applyDynamic("$get")(id.asInstanceOf[js.Any]).asInstanceOf[typings.std.HTMLElement]
-@scala.inline
-def get(id: java.lang.String, element: typings.std.HTMLElement): typings.std.HTMLElement = (js.Dynamic.global.applyDynamic("$get")(id.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement]
+inline def get(id: java.lang.String): typings.std.HTMLElement = js.Dynamic.global.applyDynamic("$get")(id.asInstanceOf[js.Any]).asInstanceOf[typings.std.HTMLElement]
+inline def get(id: java.lang.String, element: typings.std.HTMLElement): typings.std.HTMLElement = (js.Dynamic.global.applyDynamic("$get")(id.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement]
 
 /**
 * Provides a shortcut to the removeHandler method of the Sys.UI.DomEvent class. This member is static and can be invoked without creating an instance of the class.
@@ -205,8 +177,7 @@ def get(id: java.lang.String, element: typings.std.HTMLElement): typings.std.HTM
 * @param eventName The name of the DOM event.
 * @param handler The event handler to remove.
 */
-@scala.inline
-def removeHandler(
+inline def removeHandler(
   element: typings.std.HTMLElement,
   eventName: java.lang.String,
   handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, scala.Unit]

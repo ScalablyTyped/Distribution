@@ -16,19 +16,15 @@ trait Range
 }
 object Range {
   
-  @scala.inline
-  def apply(e: CellAddress, s: CellAddress): Range = {
+  inline def apply(e: CellAddress, s: CellAddress): Range = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setE(value: CellAddress): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: CellAddress): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: CellAddress): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: CellAddress): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

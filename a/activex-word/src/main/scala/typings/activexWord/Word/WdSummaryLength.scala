@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSummaryLength extends StObject
 object WdSummaryLength {
   
-  @scala.inline
-  def wd100Words: `-4` = -4.asInstanceOf[`-4`]
+  inline def wd100Words: `-4` = -4.asInstanceOf[`-4`]
   
-  @scala.inline
-  def wd10Percent: `-6` = -6.asInstanceOf[`-6`]
+  inline def wd10Percent: `-6` = -6.asInstanceOf[`-6`]
   
-  @scala.inline
-  def wd10Sentences: `-2` = -2.asInstanceOf[`-2`]
+  inline def wd10Sentences: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def wd20Sentences: `-3` = -3.asInstanceOf[`-3`]
+  inline def wd20Sentences: `-3` = -3.asInstanceOf[`-3`]
   
-  @scala.inline
-  def wd25Percent: `-7` = -7.asInstanceOf[`-7`]
+  inline def wd25Percent: `-7` = -7.asInstanceOf[`-7`]
   
-  @scala.inline
-  def wd500Words: `-5` = -5.asInstanceOf[`-5`]
+  inline def wd500Words: `-5` = -5.asInstanceOf[`-5`]
   
-  @scala.inline
-  def wd50Percent: `-8` = -8.asInstanceOf[`-8`]
+  inline def wd50Percent: `-8` = -8.asInstanceOf[`-8`]
   
-  @scala.inline
-  def wd75Percent: `-9` = -9.asInstanceOf[`-9`]
+  inline def wd75Percent: `-9` = -9.asInstanceOf[`-9`]
 }

@@ -18,19 +18,15 @@ trait IGenericDimensionsListProperties
 }
 object IGenericDimensionsListProperties {
   
-  @scala.inline
-  def apply(qDimensionListDef: IDimensionListDef, qInfo: IGenericDimensionListNxInfo): IGenericDimensionsListProperties = {
+  inline def apply(qDimensionListDef: IDimensionListDef, qInfo: IGenericDimensionListNxInfo): IGenericDimensionsListProperties = {
     val __obj = js.Dynamic.literal(qDimensionListDef = qDimensionListDef.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericDimensionsListProperties]
   }
   
-  @scala.inline
-  implicit class IGenericDimensionsListPropertiesMutableBuilder[Self <: IGenericDimensionsListProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericDimensionsListProperties](x: Self) {
     
-    @scala.inline
-    def setQDimensionListDef(value: IDimensionListDef): Self = StObject.set(x, "qDimensionListDef", value.asInstanceOf[js.Any])
+    inline def setQDimensionListDef(value: IDimensionListDef): Self = StObject.set(x, "qDimensionListDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInfo(value: IGenericDimensionListNxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: IGenericDimensionListNxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
   }
 }

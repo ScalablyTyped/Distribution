@@ -84,27 +84,19 @@ object utilsMod {
     var code_UnsupportedPlatformError: LaunchErrorCodes = js.native
   }
   
-  @scala.inline
-  def defaults[T](`val`: T, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def defaults[T](`val`: Unit, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def defaults[T](`val`: T, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def defaults[T](`val`: Unit, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def delay(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def delay(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def getLocalAppDataPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAppDataPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getLocalAppDataPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAppDataPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getPlatform(): aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl]
+  inline def getPlatform(): aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl]
   
-  @scala.inline
-  def makeTmpDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTmpDir")().asInstanceOf[String]
+  inline def makeTmpDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTmpDir")().asInstanceOf[String]
   
-  @scala.inline
-  def toWinDirFormat(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWinDirFormat")().asInstanceOf[String]
-  @scala.inline
-  def toWinDirFormat(dir: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWinDirFormat")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toWinDirFormat(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWinDirFormat")().asInstanceOf[String]
+  inline def toWinDirFormat(dir: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWinDirFormat")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_PATH_NOT_SET
@@ -115,16 +107,12 @@ object utilsMod {
   trait LaunchErrorCodes extends StObject
   object LaunchErrorCodes {
     
-    @scala.inline
-    def ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY = "ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY]
+    inline def ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY = "ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY]
     
-    @scala.inline
-    def ERR_LAUNCHER_NOT_INSTALLED: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_NOT_INSTALLED = "ERR_LAUNCHER_NOT_INSTALLED".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_NOT_INSTALLED]
+    inline def ERR_LAUNCHER_NOT_INSTALLED: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_NOT_INSTALLED = "ERR_LAUNCHER_NOT_INSTALLED".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_NOT_INSTALLED]
     
-    @scala.inline
-    def ERR_LAUNCHER_PATH_NOT_SET: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_PATH_NOT_SET = "ERR_LAUNCHER_PATH_NOT_SET".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_PATH_NOT_SET]
+    inline def ERR_LAUNCHER_PATH_NOT_SET: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_PATH_NOT_SET = "ERR_LAUNCHER_PATH_NOT_SET".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_PATH_NOT_SET]
     
-    @scala.inline
-    def ERR_LAUNCHER_UNSUPPORTED_PLATFORM: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_UNSUPPORTED_PLATFORM = "ERR_LAUNCHER_UNSUPPORTED_PLATFORM".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_UNSUPPORTED_PLATFORM]
+    inline def ERR_LAUNCHER_UNSUPPORTED_PLATFORM: typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_UNSUPPORTED_PLATFORM = "ERR_LAUNCHER_UNSUPPORTED_PLATFORM".asInstanceOf[typings.chromeLauncher.chromeLauncherStrings.ERR_LAUNCHER_UNSUPPORTED_PLATFORM]
   }
 }

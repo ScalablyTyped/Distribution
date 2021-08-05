@@ -16,8 +16,7 @@ trait ICollection
 }
 object ICollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: js.Object => ICollection,
     events: IEventManager[js.Object],
     getIterator: () => IIterator,
@@ -27,16 +26,12 @@ object ICollection {
     __obj.asInstanceOf[ICollection]
   }
   
-  @scala.inline
-  implicit class ICollectionMutableBuilder[Self <: ICollection] (val x: Self) extends AnyVal {
+  extension [Self <: ICollection](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Object => ICollection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Object => ICollection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIterator(value: () => IIterator): Self = StObject.set(x, "getIterator", js.Any.fromFunction0(value))
+    inline def setGetIterator(value: () => IIterator): Self = StObject.set(x, "getIterator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: js.Object => ICollection): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Object => ICollection): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

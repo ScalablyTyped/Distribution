@@ -10,16 +10,13 @@ trait EnumValuesFailingSince extends StObject {
 }
 object EnumValuesFailingSince {
   
-  @scala.inline
-  def apply(enumValues: FailingSince): EnumValuesFailingSince = {
+  inline def apply(enumValues: FailingSince): EnumValuesFailingSince = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFailingSince]
   }
   
-  @scala.inline
-  implicit class EnumValuesFailingSinceMutableBuilder[Self <: EnumValuesFailingSince] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFailingSince](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FailingSince): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FailingSince): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait DescribeStandardsControlsRequest extends StObject {
 }
 object DescribeStandardsControlsRequest {
   
-  @scala.inline
-  def apply(StandardsSubscriptionArn: NonEmptyString): DescribeStandardsControlsRequest = {
+  inline def apply(StandardsSubscriptionArn: NonEmptyString): DescribeStandardsControlsRequest = {
     val __obj = js.Dynamic.literal(StandardsSubscriptionArn = StandardsSubscriptionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStandardsControlsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeStandardsControlsRequestMutableBuilder[Self <: DescribeStandardsControlsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStandardsControlsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStandardsSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "StandardsSubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setStandardsSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "StandardsSubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

@@ -47,26 +47,20 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply(config: typings.cosmiconfig.typesMod.Config, filepath: String): Config = {
+    inline def apply(config: typings.cosmiconfig.typesMod.Config, filepath: String): Config = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], filepath = filepath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfig(value: typings.cosmiconfig.typesMod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: typings.cosmiconfig.typesMod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+      inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
+      inline def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
     }
   }
 }

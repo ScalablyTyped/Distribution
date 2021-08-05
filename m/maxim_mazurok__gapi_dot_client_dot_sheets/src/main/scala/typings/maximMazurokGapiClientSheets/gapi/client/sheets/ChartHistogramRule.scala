@@ -20,31 +20,23 @@ trait ChartHistogramRule extends StObject {
 }
 object ChartHistogramRule {
   
-  @scala.inline
-  def apply(): ChartHistogramRule = {
+  inline def apply(): ChartHistogramRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartHistogramRule]
   }
   
-  @scala.inline
-  implicit class ChartHistogramRuleMutableBuilder[Self <: ChartHistogramRule] (val x: Self) extends AnyVal {
+  extension [Self <: ChartHistogramRule](x: Self) {
     
-    @scala.inline
-    def setIntervalSize(value: Double): Self = StObject.set(x, "intervalSize", value.asInstanceOf[js.Any])
+    inline def setIntervalSize(value: Double): Self = StObject.set(x, "intervalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalSizeUndefined: Self = StObject.set(x, "intervalSize", js.undefined)
+    inline def setIntervalSizeUndefined: Self = StObject.set(x, "intervalSize", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

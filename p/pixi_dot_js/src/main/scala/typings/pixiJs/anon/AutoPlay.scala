@@ -16,37 +16,27 @@ trait AutoPlay extends StObject {
 }
 object AutoPlay {
   
-  @scala.inline
-  def apply(): AutoPlay = {
+  inline def apply(): AutoPlay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoPlay]
   }
   
-  @scala.inline
-  implicit class AutoPlayMutableBuilder[Self <: AutoPlay] (val x: Self) extends AnyVal {
+  extension [Self <: AutoPlay](x: Self) {
     
-    @scala.inline
-    def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+    inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
+    inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
-    @scala.inline
-    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+    inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
-    @scala.inline
-    def setCrossorigin(value: Boolean): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
+    inline def setCrossorigin(value: Boolean): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
+    inline def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
     
-    @scala.inline
-    def setUpdateFPS(value: Double): Self = StObject.set(x, "updateFPS", value.asInstanceOf[js.Any])
+    inline def setUpdateFPS(value: Double): Self = StObject.set(x, "updateFPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateFPSUndefined: Self = StObject.set(x, "updateFPS", js.undefined)
+    inline def setUpdateFPSUndefined: Self = StObject.set(x, "updateFPS", js.undefined)
   }
 }

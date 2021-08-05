@@ -26,8 +26,7 @@ object core {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(config: js.Object, files: FileCollection, resources: AssetCollection, parent: Entity): IterableIterator[
+    inline def create(config: js.Object, files: FileCollection, resources: AssetCollection, parent: Entity): IterableIterator[
         js.Object | VariantCollection | typings.frctlFractal.mod.fractal.api.components.Component
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], files.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[
         js.Object | VariantCollection | typings.frctlFractal.mod.fractal.api.components.Component
@@ -49,8 +48,7 @@ object core {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(config: js.Any, content: String, parent: Entity): typings.frctlFractal.mod.fractal.api.docs.Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], content.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.frctlFractal.mod.fractal.api.docs.Doc]
+    inline def create(config: js.Any, content: String, parent: Entity): typings.frctlFractal.mod.fractal.api.docs.Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], content.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.frctlFractal.mod.fractal.api.docs.Doc]
   }
   
   /* was `typeof fractal.api.variants.Variant` */
@@ -73,8 +71,7 @@ object core {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(
+    inline def create(
       config: js.Object,
       view: js.Any,
       resources: AssetCollection,

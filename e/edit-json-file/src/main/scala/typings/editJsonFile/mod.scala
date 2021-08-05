@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /** Create a JSON file editor. */
-  @scala.inline
-  def apply(path: String): JsonEditor = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[JsonEditor]
-  @scala.inline
-  def apply(path: String, options: Options): JsonEditor = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonEditor]
+  inline def apply(path: String): JsonEditor = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[JsonEditor]
+  inline def apply(path: String, options: Options): JsonEditor = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonEditor]
   
   @JSImport("edit-json-file", JSImport.Namespace)
   @js.native
@@ -64,38 +62,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
+      inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
+      inline def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
       
-      @scala.inline
-      def setStringify_eol(value: Boolean): Self = StObject.set(x, "stringify_eol", value.asInstanceOf[js.Any])
+      inline def setStringify_eol(value: Boolean): Self = StObject.set(x, "stringify_eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringify_eolUndefined: Self = StObject.set(x, "stringify_eol", js.undefined)
+      inline def setStringify_eolUndefined: Self = StObject.set(x, "stringify_eol", js.undefined)
       
-      @scala.inline
-      def setStringify_fn(value: /* data */ js.Object => String): Self = StObject.set(x, "stringify_fn", js.Any.fromFunction1(value))
+      inline def setStringify_fn(value: /* data */ js.Object => String): Self = StObject.set(x, "stringify_fn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringify_fnUndefined: Self = StObject.set(x, "stringify_fn", js.undefined)
+      inline def setStringify_fnUndefined: Self = StObject.set(x, "stringify_fn", js.undefined)
       
-      @scala.inline
-      def setStringify_width(value: Double): Self = StObject.set(x, "stringify_width", value.asInstanceOf[js.Any])
+      inline def setStringify_width(value: Double): Self = StObject.set(x, "stringify_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringify_widthUndefined: Self = StObject.set(x, "stringify_width", js.undefined)
+      inline def setStringify_widthUndefined: Self = StObject.set(x, "stringify_width", js.undefined)
     }
   }
 }

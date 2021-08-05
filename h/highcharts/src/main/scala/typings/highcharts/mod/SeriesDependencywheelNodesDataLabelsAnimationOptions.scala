@@ -15,19 +15,15 @@ trait SeriesDependencywheelNodesDataLabelsAnimationOptions extends StObject {
 }
 object SeriesDependencywheelNodesDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): SeriesDependencywheelNodesDataLabelsAnimationOptions = {
+  inline def apply(): SeriesDependencywheelNodesDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesDependencywheelNodesDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class SeriesDependencywheelNodesDataLabelsAnimationOptionsMutableBuilder[Self <: SeriesDependencywheelNodesDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesDependencywheelNodesDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

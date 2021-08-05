@@ -13,19 +13,15 @@ trait CanvasTextMetrics extends StObject {
 }
 object CanvasTextMetrics {
   
-  @scala.inline
-  def apply(): CanvasTextMetrics = {
+  inline def apply(): CanvasTextMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasTextMetrics]
   }
   
-  @scala.inline
-  implicit class CanvasTextMetricsMutableBuilder[Self <: CanvasTextMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasTextMetrics](x: Self) {
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

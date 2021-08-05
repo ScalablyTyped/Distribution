@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Navigation extends StObject
 object Navigation {
   
-  @scala.inline
-  def NAVIGATE: typings.figma.figmaStrings.NAVIGATE = "NAVIGATE".asInstanceOf[typings.figma.figmaStrings.NAVIGATE]
+  inline def NAVIGATE: typings.figma.figmaStrings.NAVIGATE = "NAVIGATE".asInstanceOf[typings.figma.figmaStrings.NAVIGATE]
   
-  @scala.inline
-  def OVERLAY: typings.figma.figmaStrings.OVERLAY = "OVERLAY".asInstanceOf[typings.figma.figmaStrings.OVERLAY]
+  inline def OVERLAY: typings.figma.figmaStrings.OVERLAY = "OVERLAY".asInstanceOf[typings.figma.figmaStrings.OVERLAY]
   
-  @scala.inline
-  def SWAP: typings.figma.figmaStrings.SWAP = "SWAP".asInstanceOf[typings.figma.figmaStrings.SWAP]
+  inline def SWAP: typings.figma.figmaStrings.SWAP = "SWAP".asInstanceOf[typings.figma.figmaStrings.SWAP]
 }

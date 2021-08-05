@@ -34,25 +34,19 @@ trait ChatRoomMessageNotModified
 }
 object ChatRoomMessageNotModified {
   
-  @scala.inline
-  def apply(code: Double, message_id: String, private_message: String, room: String): ChatRoomMessageNotModified = {
+  inline def apply(code: Double, message_id: String, private_message: String, room: String): ChatRoomMessageNotModified = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], private_message = private_message.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomMessageNotModified]
   }
   
-  @scala.inline
-  implicit class ChatRoomMessageNotModifiedMutableBuilder[Self <: ChatRoomMessageNotModified] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomMessageNotModified](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    inline def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate_message(value: String): Self = StObject.set(x, "private_message", value.asInstanceOf[js.Any])
+    inline def setPrivate_message(value: String): Self = StObject.set(x, "private_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait DescribeNetworkInterfaceAttributeRequest extends StObject {
 }
 object DescribeNetworkInterfaceAttributeRequest {
   
-  @scala.inline
-  def apply(NetworkInterfaceId: NetworkInterfaceId): DescribeNetworkInterfaceAttributeRequest = {
+  inline def apply(NetworkInterfaceId: NetworkInterfaceId): DescribeNetworkInterfaceAttributeRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNetworkInterfaceAttributeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeNetworkInterfaceAttributeRequestMutableBuilder[Self <: DescribeNetworkInterfaceAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNetworkInterfaceAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: NetworkInterfaceAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: NetworkInterfaceAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
   }
 }

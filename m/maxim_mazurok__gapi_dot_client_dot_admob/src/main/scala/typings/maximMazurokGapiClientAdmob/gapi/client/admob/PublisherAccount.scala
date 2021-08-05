@@ -20,37 +20,27 @@ trait PublisherAccount extends StObject {
 }
 object PublisherAccount {
   
-  @scala.inline
-  def apply(): PublisherAccount = {
+  inline def apply(): PublisherAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublisherAccount]
   }
   
-  @scala.inline
-  implicit class PublisherAccountMutableBuilder[Self <: PublisherAccount] (val x: Self) extends AnyVal {
+  extension [Self <: PublisherAccount](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
+    inline def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherIdUndefined: Self = StObject.set(x, "publisherId", js.undefined)
+    inline def setPublisherIdUndefined: Self = StObject.set(x, "publisherId", js.undefined)
     
-    @scala.inline
-    def setReportingTimeZone(value: String): Self = StObject.set(x, "reportingTimeZone", value.asInstanceOf[js.Any])
+    inline def setReportingTimeZone(value: String): Self = StObject.set(x, "reportingTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingTimeZoneUndefined: Self = StObject.set(x, "reportingTimeZone", js.undefined)
+    inline def setReportingTimeZoneUndefined: Self = StObject.set(x, "reportingTimeZone", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait TimerDefinition extends StObject {
 }
 object TimerDefinition {
   
-  @scala.inline
-  def apply(name: TimerName, seconds: Seconds): TimerDefinition = {
+  inline def apply(name: TimerName, seconds: Seconds): TimerDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimerDefinition]
   }
   
-  @scala.inline
-  implicit class TimerDefinitionMutableBuilder[Self <: TimerDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TimerDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: TimerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: TimerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeconds(value: Seconds): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Seconds): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait LicensePostStartBasic
 }
 object LicensePostStartBasic {
   
-  @scala.inline
-  def apply(): LicensePostStartBasic = {
+  inline def apply(): LicensePostStartBasic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicensePostStartBasic]
   }
   
-  @scala.inline
-  implicit class LicensePostStartBasicMutableBuilder[Self <: LicensePostStartBasic] (val x: Self) extends AnyVal {
+  extension [Self <: LicensePostStartBasic](x: Self) {
     
-    @scala.inline
-    def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
+    inline def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
+    inline def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
   }
 }

@@ -63,79 +63,55 @@ trait InputSettings extends StObject {
 }
 object InputSettings {
   
-  @scala.inline
-  def apply(): InputSettings = {
+  inline def apply(): InputSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputSettings]
   }
   
-  @scala.inline
-  implicit class InputSettingsMutableBuilder[Self <: InputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: InputSettings](x: Self) {
     
-    @scala.inline
-    def setAudioSelectors(value: listOfAudioSelector): Self = StObject.set(x, "AudioSelectors", value.asInstanceOf[js.Any])
+    inline def setAudioSelectors(value: listOfAudioSelector): Self = StObject.set(x, "AudioSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSelectorsUndefined: Self = StObject.set(x, "AudioSelectors", js.undefined)
+    inline def setAudioSelectorsUndefined: Self = StObject.set(x, "AudioSelectors", js.undefined)
     
-    @scala.inline
-    def setAudioSelectorsVarargs(value: AudioSelector*): Self = StObject.set(x, "AudioSelectors", js.Array(value :_*))
+    inline def setAudioSelectorsVarargs(value: AudioSelector*): Self = StObject.set(x, "AudioSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setCaptionSelectors(value: listOfCaptionSelector): Self = StObject.set(x, "CaptionSelectors", value.asInstanceOf[js.Any])
+    inline def setCaptionSelectors(value: listOfCaptionSelector): Self = StObject.set(x, "CaptionSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionSelectorsUndefined: Self = StObject.set(x, "CaptionSelectors", js.undefined)
+    inline def setCaptionSelectorsUndefined: Self = StObject.set(x, "CaptionSelectors", js.undefined)
     
-    @scala.inline
-    def setCaptionSelectorsVarargs(value: CaptionSelector*): Self = StObject.set(x, "CaptionSelectors", js.Array(value :_*))
+    inline def setCaptionSelectorsVarargs(value: CaptionSelector*): Self = StObject.set(x, "CaptionSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setDeblockFilter(value: InputDeblockFilter): Self = StObject.set(x, "DeblockFilter", value.asInstanceOf[js.Any])
+    inline def setDeblockFilter(value: InputDeblockFilter): Self = StObject.set(x, "DeblockFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeblockFilterUndefined: Self = StObject.set(x, "DeblockFilter", js.undefined)
+    inline def setDeblockFilterUndefined: Self = StObject.set(x, "DeblockFilter", js.undefined)
     
-    @scala.inline
-    def setDenoiseFilter(value: InputDenoiseFilter): Self = StObject.set(x, "DenoiseFilter", value.asInstanceOf[js.Any])
+    inline def setDenoiseFilter(value: InputDenoiseFilter): Self = StObject.set(x, "DenoiseFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenoiseFilterUndefined: Self = StObject.set(x, "DenoiseFilter", js.undefined)
+    inline def setDenoiseFilterUndefined: Self = StObject.set(x, "DenoiseFilter", js.undefined)
     
-    @scala.inline
-    def setFilterStrength(value: integerMin1Max5): Self = StObject.set(x, "FilterStrength", value.asInstanceOf[js.Any])
+    inline def setFilterStrength(value: integerMin1Max5): Self = StObject.set(x, "FilterStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterStrengthUndefined: Self = StObject.set(x, "FilterStrength", js.undefined)
+    inline def setFilterStrengthUndefined: Self = StObject.set(x, "FilterStrength", js.undefined)
     
-    @scala.inline
-    def setInputFilter(value: InputFilter): Self = StObject.set(x, "InputFilter", value.asInstanceOf[js.Any])
+    inline def setInputFilter(value: InputFilter): Self = StObject.set(x, "InputFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFilterUndefined: Self = StObject.set(x, "InputFilter", js.undefined)
+    inline def setInputFilterUndefined: Self = StObject.set(x, "InputFilter", js.undefined)
     
-    @scala.inline
-    def setNetworkInputSettings(value: NetworkInputSettings): Self = StObject.set(x, "NetworkInputSettings", value.asInstanceOf[js.Any])
+    inline def setNetworkInputSettings(value: NetworkInputSettings): Self = StObject.set(x, "NetworkInputSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInputSettingsUndefined: Self = StObject.set(x, "NetworkInputSettings", js.undefined)
+    inline def setNetworkInputSettingsUndefined: Self = StObject.set(x, "NetworkInputSettings", js.undefined)
     
-    @scala.inline
-    def setSmpte2038DataPreference(value: Smpte2038DataPreference): Self = StObject.set(x, "Smpte2038DataPreference", value.asInstanceOf[js.Any])
+    inline def setSmpte2038DataPreference(value: Smpte2038DataPreference): Self = StObject.set(x, "Smpte2038DataPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmpte2038DataPreferenceUndefined: Self = StObject.set(x, "Smpte2038DataPreference", js.undefined)
+    inline def setSmpte2038DataPreferenceUndefined: Self = StObject.set(x, "Smpte2038DataPreference", js.undefined)
     
-    @scala.inline
-    def setSourceEndBehavior(value: InputSourceEndBehavior): Self = StObject.set(x, "SourceEndBehavior", value.asInstanceOf[js.Any])
+    inline def setSourceEndBehavior(value: InputSourceEndBehavior): Self = StObject.set(x, "SourceEndBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEndBehaviorUndefined: Self = StObject.set(x, "SourceEndBehavior", js.undefined)
+    inline def setSourceEndBehaviorUndefined: Self = StObject.set(x, "SourceEndBehavior", js.undefined)
     
-    @scala.inline
-    def setVideoSelector(value: VideoSelector): Self = StObject.set(x, "VideoSelector", value.asInstanceOf[js.Any])
+    inline def setVideoSelector(value: VideoSelector): Self = StObject.set(x, "VideoSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSelectorUndefined: Self = StObject.set(x, "VideoSelector", js.undefined)
+    inline def setVideoSelectorUndefined: Self = StObject.set(x, "VideoSelector", js.undefined)
   }
 }

@@ -10,9 +10,7 @@ object PublicConfigAPI {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def disableWarning(name: Warnings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableWarning")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableWarning(name: Warnings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableWarning")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def enableWarning(name: Warnings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableWarning")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableWarning(name: Warnings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableWarning")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

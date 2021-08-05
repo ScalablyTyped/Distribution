@@ -19,17 +19,14 @@ object batchObserverResultMod {
   }
   object BatchObserverResult {
     
-    @scala.inline
-    def apply(observe: (Labels, js.Array[Observation]) => Unit): BatchObserverResult = {
+    inline def apply(observe: (Labels, js.Array[Observation]) => Unit): BatchObserverResult = {
       val __obj = js.Dynamic.literal(observe = js.Any.fromFunction2(observe))
       __obj.asInstanceOf[BatchObserverResult]
     }
     
-    @scala.inline
-    implicit class BatchObserverResultMutableBuilder[Self <: BatchObserverResult] (val x: Self) extends AnyVal {
+    extension [Self <: BatchObserverResult](x: Self) {
       
-      @scala.inline
-      def setObserve(value: (Labels, js.Array[Observation]) => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction2(value))
+      inline def setObserve(value: (Labels, js.Array[Observation]) => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction2(value))
     }
   }
 }

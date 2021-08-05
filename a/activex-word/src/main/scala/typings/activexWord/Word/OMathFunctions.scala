@@ -22,6 +22,6 @@ trait OMathFunctions extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.OMathFunctions_typekey")
+  /* private */ @JSName("Word.OMathFunctions_typekey")
   var WordDotOMathFunctions_typekey: OMathFunctions = js.native
 }

@@ -18,28 +18,21 @@ trait PredictorExecution extends StObject {
 }
 object PredictorExecution {
   
-  @scala.inline
-  def apply(): PredictorExecution = {
+  inline def apply(): PredictorExecution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PredictorExecution]
   }
   
-  @scala.inline
-  implicit class PredictorExecutionMutableBuilder[Self <: PredictorExecution] (val x: Self) extends AnyVal {
+  extension [Self <: PredictorExecution](x: Self) {
     
-    @scala.inline
-    def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
+    inline def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmArnUndefined: Self = StObject.set(x, "AlgorithmArn", js.undefined)
+    inline def setAlgorithmArnUndefined: Self = StObject.set(x, "AlgorithmArn", js.undefined)
     
-    @scala.inline
-    def setTestWindows(value: TestWindowDetails): Self = StObject.set(x, "TestWindows", value.asInstanceOf[js.Any])
+    inline def setTestWindows(value: TestWindowDetails): Self = StObject.set(x, "TestWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestWindowsUndefined: Self = StObject.set(x, "TestWindows", js.undefined)
+    inline def setTestWindowsUndefined: Self = StObject.set(x, "TestWindows", js.undefined)
     
-    @scala.inline
-    def setTestWindowsVarargs(value: TestWindowSummary*): Self = StObject.set(x, "TestWindows", js.Array(value :_*))
+    inline def setTestWindowsVarargs(value: TestWindowSummary*): Self = StObject.set(x, "TestWindows", js.Array(value :_*))
   }
 }

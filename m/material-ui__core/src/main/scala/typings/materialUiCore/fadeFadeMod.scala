@@ -22,20 +22,16 @@ object fadeFadeMod extends Shortcut {
   }
   object FadeProps {
     
-    @scala.inline
-    def apply(): FadeProps = {
+    inline def apply(): FadeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FadeProps]
     }
     
-    @scala.inline
-    implicit class FadePropsMutableBuilder[Self <: FadeProps] (val x: Self) extends AnyVal {
+    extension [Self <: FadeProps](x: Self) {
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   

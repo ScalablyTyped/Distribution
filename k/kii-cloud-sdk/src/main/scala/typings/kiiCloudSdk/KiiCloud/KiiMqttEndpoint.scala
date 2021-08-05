@@ -28,8 +28,7 @@ trait KiiMqttEndpoint extends StObject {
 }
 object KiiMqttEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `X-MQTT-TTL`: Double,
     host: String,
     installationID: String,
@@ -46,37 +45,26 @@ object KiiMqttEndpoint {
     __obj.asInstanceOf[KiiMqttEndpoint]
   }
   
-  @scala.inline
-  implicit class KiiMqttEndpointMutableBuilder[Self <: KiiMqttEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: KiiMqttEndpoint](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationID(value: String): Self = StObject.set(x, "installationID", value.asInstanceOf[js.Any])
+    inline def setInstallationID(value: String): Self = StObject.set(x, "installationID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMqttTopic(value: String): Self = StObject.set(x, "mqttTopic", value.asInstanceOf[js.Any])
+    inline def setMqttTopic(value: String): Self = StObject.set(x, "mqttTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortSSL(value: Double): Self = StObject.set(x, "portSSL", value.asInstanceOf[js.Any])
+    inline def setPortSSL(value: Double): Self = StObject.set(x, "portSSL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortTCP(value: Double): Self = StObject.set(x, "portTCP", value.asInstanceOf[js.Any])
+    inline def setPortTCP(value: Double): Self = StObject.set(x, "portTCP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortWS(value: Double): Self = StObject.set(x, "portWS", value.asInstanceOf[js.Any])
+    inline def setPortWS(value: Double): Self = StObject.set(x, "portWS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortWSS(value: Double): Self = StObject.set(x, "portWSS", value.asInstanceOf[js.Any])
+    inline def setPortWSS(value: Double): Self = StObject.set(x, "portWSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-MQTT-TTL`(value: Double): Self = StObject.set(x, "X-MQTT-TTL", value.asInstanceOf[js.Any])
+    inline def `setX-MQTT-TTL`(value: Double): Self = StObject.set(x, "X-MQTT-TTL", value.asInstanceOf[js.Any])
   }
 }

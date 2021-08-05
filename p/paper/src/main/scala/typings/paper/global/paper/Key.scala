@@ -26,8 +26,7 @@ object Key {
     * @return true if the key is pressed
     */
   /* static member */
-  @scala.inline
-  def isDown(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDown")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDown(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDown")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** 
     * The current state of the keyboard modifiers.
@@ -53,6 +52,5 @@ object Key {
   @JSGlobal("paper.Key.modifiers")
   @js.native
   def modifiers: js.Any = js.native
-  @scala.inline
-  def modifiers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
+  inline def modifiers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
 }

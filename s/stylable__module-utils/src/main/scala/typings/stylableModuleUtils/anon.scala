@@ -23,47 +23,34 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setInjectCSS(value: Boolean): Self = StObject.set(x, "injectCSS", value.asInstanceOf[js.Any])
+      inline def setInjectCSS(value: Boolean): Self = StObject.set(x, "injectCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectCSSUndefined: Self = StObject.set(x, "injectCSS", js.undefined)
+      inline def setInjectCSSUndefined: Self = StObject.set(x, "injectCSS", js.undefined)
       
-      @scala.inline
-      def setRenderableOnly(value: Boolean): Self = StObject.set(x, "renderableOnly", value.asInstanceOf[js.Any])
+      inline def setRenderableOnly(value: Boolean): Self = StObject.set(x, "renderableOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderableOnlyUndefined: Self = StObject.set(x, "renderableOnly", js.undefined)
+      inline def setRenderableOnlyUndefined: Self = StObject.set(x, "renderableOnly", js.undefined)
       
-      @scala.inline
-      def setRuntimePath(value: String): Self = StObject.set(x, "runtimePath", value.asInstanceOf[js.Any])
+      inline def setRuntimePath(value: String): Self = StObject.set(x, "runtimePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimePathUndefined: Self = StObject.set(x, "runtimePath", js.undefined)
+      inline def setRuntimePathUndefined: Self = StObject.set(x, "runtimePath", js.undefined)
       
-      @scala.inline
-      def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
+      inline def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeStylesheetIdUndefined: Self = StObject.set(x, "runtimeStylesheetId", js.undefined)
+      inline def setRuntimeStylesheetIdUndefined: Self = StObject.set(x, "runtimeStylesheetId", js.undefined)
       
-      @scala.inline
-      def setStaticImports(value: js.Array[String]): Self = StObject.set(x, "staticImports", value.asInstanceOf[js.Any])
+      inline def setStaticImports(value: js.Array[String]): Self = StObject.set(x, "staticImports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticImportsUndefined: Self = StObject.set(x, "staticImports", js.undefined)
+      inline def setStaticImportsUndefined: Self = StObject.set(x, "staticImports", js.undefined)
       
-      @scala.inline
-      def setStaticImportsVarargs(value: String*): Self = StObject.set(x, "staticImports", js.Array(value :_*))
+      inline def setStaticImportsVarargs(value: String*): Self = StObject.set(x, "staticImports", js.Array(value :_*))
     }
   }
 }

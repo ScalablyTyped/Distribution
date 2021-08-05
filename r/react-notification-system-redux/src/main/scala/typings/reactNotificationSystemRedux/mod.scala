@@ -22,14 +22,10 @@ object mod {
   @js.native
   val error: NotificationShow = js.native
   
-  @scala.inline
-  def hide(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Action[js.Any]]
-  @scala.inline
-  def hide(opts: String): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-  @scala.inline
-  def hide(opts: Double): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-  @scala.inline
-  def hide(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
+  inline def hide(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Action[js.Any]]
+  inline def hide(opts: String): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
+  inline def hide(opts: Double): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
+  inline def hide(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
   
   @JSImport("react-notification-system-redux", "info")
   @js.native
@@ -39,17 +35,12 @@ object mod {
   @js.native
   val reducer: NotificationsReducer[js.Any] = js.native
   
-  @scala.inline
-  def removeAll(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Action[js.Any]]
+  inline def removeAll(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Action[js.Any]]
   
-  @scala.inline
-  def show(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Action[js.Any]]
-  @scala.inline
-  def show(opts: Unit, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
-  @scala.inline
-  def show(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-  @scala.inline
-  def show(opts: Notification, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
+  inline def show(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Action[js.Any]]
+  inline def show(opts: Unit, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
+  inline def show(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
+  inline def show(opts: Notification, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
   
   @JSImport("react-notification-system-redux", "success")
   @js.native
@@ -68,17 +59,13 @@ object mod {
   trait NotificationLevel extends StObject
   object NotificationLevel {
     
-    @scala.inline
-    def error: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.error = "error".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.error]
+    inline def error: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.error = "error".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.error]
     
-    @scala.inline
-    def info: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.info = "info".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.info]
+    inline def info: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.info = "info".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.info]
     
-    @scala.inline
-    def success: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.success = "success".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.success]
+    inline def success: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.success = "success".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.success]
     
-    @scala.inline
-    def warning: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.warning = "warning".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.warning]
+    inline def warning: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.warning = "warning".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.warning]
   }
   
   type NotificationShow = js.Function1[/* opts */ js.UndefOr[Notification], Action[js.Any]]
@@ -93,23 +80,18 @@ object mod {
   }
   object NotificationsProps {
     
-    @scala.inline
-    def apply(): NotificationsProps = {
+    inline def apply(): NotificationsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationsProps]
     }
     
-    @scala.inline
-    implicit class NotificationsPropsMutableBuilder[Self <: NotificationsProps] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationsProps](x: Self) {
       
-      @scala.inline
-      def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
     }
   }
   

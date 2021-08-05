@@ -26,8 +26,7 @@ trait AgentRoutingProfile extends StObject {
 }
 object AgentRoutingProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channelConcurrencyMap: AgentChannelConcurrencyMap,
     defaultOutboundQueue: Queue,
     name: String,
@@ -39,28 +38,20 @@ object AgentRoutingProfile {
     __obj.asInstanceOf[AgentRoutingProfile]
   }
   
-  @scala.inline
-  implicit class AgentRoutingProfileMutableBuilder[Self <: AgentRoutingProfile] (val x: Self) extends AnyVal {
+  extension [Self <: AgentRoutingProfile](x: Self) {
     
-    @scala.inline
-    def setChannelConcurrencyMap(value: AgentChannelConcurrencyMap): Self = StObject.set(x, "channelConcurrencyMap", value.asInstanceOf[js.Any])
+    inline def setChannelConcurrencyMap(value: AgentChannelConcurrencyMap): Self = StObject.set(x, "channelConcurrencyMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultOutboundQueue(value: Queue): Self = StObject.set(x, "defaultOutboundQueue", value.asInstanceOf[js.Any])
+    inline def setDefaultOutboundQueue(value: Queue): Self = StObject.set(x, "defaultOutboundQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueues(value: js.Array[Queue]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+    inline def setQueues(value: js.Array[Queue]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "queues", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutingProfileARN(value: String): Self = StObject.set(x, "routingProfileARN", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileARN(value: String): Self = StObject.set(x, "routingProfileARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileId(value: String): Self = StObject.set(x, "routingProfileId", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileId(value: String): Self = StObject.set(x, "routingProfileId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object useRefsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[RefType](): js.Tuple2[js.Function1[/* key */ Key, RefObject[RefType]], js.Function1[/* key */ Key, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[js.Function1[/* key */ Key, RefObject[RefType]], js.Function1[/* key */ Key, Unit]]]
+  inline def default[RefType](): js.Tuple2[js.Function1[/* key */ Key, RefObject[RefType]], js.Function1[/* key */ Key, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[js.Function1[/* key */ Key, RefObject[RefType]], js.Function1[/* key */ Key, Unit]]]
 }

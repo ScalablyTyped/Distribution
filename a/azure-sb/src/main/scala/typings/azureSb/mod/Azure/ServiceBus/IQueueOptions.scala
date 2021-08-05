@@ -18,8 +18,7 @@ trait IQueueOptions
 }
 object IQueueOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoDeleteOnIdle: String,
     DeadLetteringOnMessageExpiration: Boolean,
     DefaultMessageTimeToLive: String,
@@ -34,19 +33,14 @@ object IQueueOptions {
     __obj.asInstanceOf[IQueueOptions]
   }
   
-  @scala.inline
-  implicit class IQueueOptionsMutableBuilder[Self <: IQueueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IQueueOptions](x: Self) {
     
-    @scala.inline
-    def setAutoDeleteOnIdle(value: String): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
+    inline def setAutoDeleteOnIdle(value: String): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    inline def setDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
+    inline def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
+    inline def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
   }
 }

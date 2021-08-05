@@ -21,31 +21,23 @@ trait IResourceOptions extends StObject {
 }
 object IResourceOptions {
   
-  @scala.inline
-  def apply(): IResourceOptions = {
+  inline def apply(): IResourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IResourceOptions]
   }
   
-  @scala.inline
-  implicit class IResourceOptionsMutableBuilder[Self <: IResourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IResourceOptions](x: Self) {
     
-    @scala.inline
-    def setIsodatav4(value: Boolean): Self = StObject.set(x, "isodatav4", value.asInstanceOf[js.Any])
+    inline def setIsodatav4(value: Boolean): Self = StObject.set(x, "isodatav4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsodatav4Undefined: Self = StObject.set(x, "isodatav4", js.undefined)
+    inline def setIsodatav4Undefined: Self = StObject.set(x, "isodatav4", js.undefined)
     
-    @scala.inline
-    def setOdata(value: Method): Self = StObject.set(x, "odata", value.asInstanceOf[js.Any])
+    inline def setOdata(value: Method): Self = StObject.set(x, "odata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOdataUndefined: Self = StObject.set(x, "odata", js.undefined)
+    inline def setOdataUndefined: Self = StObject.set(x, "odata", js.undefined)
     
-    @scala.inline
-    def setStripTrailingSlashes(value: Boolean): Self = StObject.set(x, "stripTrailingSlashes", value.asInstanceOf[js.Any])
+    inline def setStripTrailingSlashes(value: Boolean): Self = StObject.set(x, "stripTrailingSlashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripTrailingSlashesUndefined: Self = StObject.set(x, "stripTrailingSlashes", js.undefined)
+    inline def setStripTrailingSlashesUndefined: Self = StObject.set(x, "stripTrailingSlashes", js.undefined)
   }
 }

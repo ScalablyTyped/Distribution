@@ -30,17 +30,14 @@ object typesDisabledExceptionMod {
   }
   object DisabledException {
     
-    @scala.inline
-    def apply(): DisabledException = {
+    inline def apply(): DisabledException = {
       val __obj = js.Dynamic.literal(name = "DisabledException")
       __obj.asInstanceOf[DisabledException]
     }
     
-    @scala.inline
-    implicit class DisabledExceptionMutableBuilder[Self <: DisabledException] (val x: Self) extends AnyVal {
+    extension [Self <: DisabledException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DisabledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DisabledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,20 +50,16 @@ object typesDisabledExceptionMod {
   }
   object DisabledExceptionDetails {
     
-    @scala.inline
-    def apply(): DisabledExceptionDetails = {
+    inline def apply(): DisabledExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisabledExceptionDetails]
     }
     
-    @scala.inline
-    implicit class DisabledExceptionDetailsMutableBuilder[Self <: DisabledExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: DisabledExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

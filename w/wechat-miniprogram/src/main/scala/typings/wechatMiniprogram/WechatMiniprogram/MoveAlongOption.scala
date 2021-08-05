@@ -29,49 +29,35 @@ trait MoveAlongOption extends StObject {
 }
 object MoveAlongOption {
   
-  @scala.inline
-  def apply(duration: Double, markerId: Double, path: js.Array[js.Any]): MoveAlongOption = {
+  inline def apply(duration: Double, markerId: Double, path: js.Array[js.Any]): MoveAlongOption = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], markerId = markerId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveAlongOption]
   }
   
-  @scala.inline
-  implicit class MoveAlongOptionMutableBuilder[Self <: MoveAlongOption] (val x: Self) extends AnyVal {
+  extension [Self <: MoveAlongOption](x: Self) {
     
-    @scala.inline
-    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
+    inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
+    inline def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
+    inline def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

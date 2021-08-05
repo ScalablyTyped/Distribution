@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SharedWorkspaceTask")
 @js.native
-class SharedWorkspaceTask protected ()
+/* private */ class SharedWorkspaceTask ()
   extends StObject
      with typings.activexOffice.Office.SharedWorkspaceTask {
   
@@ -43,7 +43,7 @@ class SharedWorkspaceTask protected ()
   /* CompleteClass */
   override val ModifiedDate: VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.SharedWorkspaceTask_typekey")
   var OfficeDotSharedWorkspaceTask_typekey: typings.activexOffice.Office.SharedWorkspaceTask = js.native
   

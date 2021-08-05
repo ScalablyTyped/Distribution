@@ -12,16 +12,13 @@ trait INDLicenseFetchResult extends StObject {
 }
 object INDLicenseFetchResult {
   
-  @scala.inline
-  def apply(responseCustomData: INDCustomData): INDLicenseFetchResult = {
+  inline def apply(responseCustomData: INDCustomData): INDLicenseFetchResult = {
     val __obj = js.Dynamic.literal(responseCustomData = responseCustomData.asInstanceOf[js.Any])
     __obj.asInstanceOf[INDLicenseFetchResult]
   }
   
-  @scala.inline
-  implicit class INDLicenseFetchResultMutableBuilder[Self <: INDLicenseFetchResult] (val x: Self) extends AnyVal {
+  extension [Self <: INDLicenseFetchResult](x: Self) {
     
-    @scala.inline
-    def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
+    inline def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
   }
 }

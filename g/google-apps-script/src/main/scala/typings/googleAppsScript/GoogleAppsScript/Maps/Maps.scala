@@ -30,8 +30,7 @@ trait Maps extends StObject {
 }
 object Maps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DirectionFinder: DirectionFinderEnums,
     StaticMap: StaticMapEnums,
     decodePolyline: String => js.Array[Double],
@@ -46,34 +45,24 @@ object Maps {
     __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Maps.Maps]
   }
   
-  @scala.inline
-  implicit class MapsMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Maps.Maps] (val x: Self) extends AnyVal {
+  extension [Self <: typings.googleAppsScript.GoogleAppsScript.Maps.Maps](x: Self) {
     
-    @scala.inline
-    def setDecodePolyline(value: String => js.Array[Double]): Self = StObject.set(x, "decodePolyline", js.Any.fromFunction1(value))
+    inline def setDecodePolyline(value: String => js.Array[Double]): Self = StObject.set(x, "decodePolyline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDirectionFinder(value: DirectionFinderEnums): Self = StObject.set(x, "DirectionFinder", value.asInstanceOf[js.Any])
+    inline def setDirectionFinder(value: DirectionFinderEnums): Self = StObject.set(x, "DirectionFinder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodePolyline(value: js.Array[Double] => String): Self = StObject.set(x, "encodePolyline", js.Any.fromFunction1(value))
+    inline def setEncodePolyline(value: js.Array[Double] => String): Self = StObject.set(x, "encodePolyline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewDirectionFinder(value: () => DirectionFinder): Self = StObject.set(x, "newDirectionFinder", js.Any.fromFunction0(value))
+    inline def setNewDirectionFinder(value: () => DirectionFinder): Self = StObject.set(x, "newDirectionFinder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewElevationSampler(value: () => ElevationSampler): Self = StObject.set(x, "newElevationSampler", js.Any.fromFunction0(value))
+    inline def setNewElevationSampler(value: () => ElevationSampler): Self = StObject.set(x, "newElevationSampler", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGeocoder(value: () => Geocoder): Self = StObject.set(x, "newGeocoder", js.Any.fromFunction0(value))
+    inline def setNewGeocoder(value: () => Geocoder): Self = StObject.set(x, "newGeocoder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewStaticMap(value: () => StaticMap): Self = StObject.set(x, "newStaticMap", js.Any.fromFunction0(value))
+    inline def setNewStaticMap(value: () => StaticMap): Self = StObject.set(x, "newStaticMap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAuthentication(value: (String, String) => Unit): Self = StObject.set(x, "setAuthentication", js.Any.fromFunction2(value))
+    inline def setSetAuthentication(value: (String, String) => Unit): Self = StObject.set(x, "setAuthentication", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStaticMap(value: StaticMapEnums): Self = StObject.set(x, "StaticMap", value.asInstanceOf[js.Any])
+    inline def setStaticMap(value: StaticMapEnums): Self = StObject.set(x, "StaticMap", value.asInstanceOf[js.Any])
   }
 }

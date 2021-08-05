@@ -70,8 +70,7 @@ trait IVaultAsync extends StObject {
 }
 object IVaultAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClassGroupOperations: IVaultClassGroupOperationsAsync,
     ClassOperations: IVaultClassOperationsAsync,
     ClientOperations: IVaultClientOperationsAsync,
@@ -108,100 +107,68 @@ object IVaultAsync {
     __obj.asInstanceOf[IVaultAsync]
   }
   
-  @scala.inline
-  implicit class IVaultAsyncMutableBuilder[Self <: IVaultAsync] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultAsync](x: Self) {
     
-    @scala.inline
-    def setClassGroupOperations(value: IVaultClassGroupOperationsAsync): Self = StObject.set(x, "ClassGroupOperations", value.asInstanceOf[js.Any])
+    inline def setClassGroupOperations(value: IVaultClassGroupOperationsAsync): Self = StObject.set(x, "ClassGroupOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassOperations(value: IVaultClassOperationsAsync): Self = StObject.set(x, "ClassOperations", value.asInstanceOf[js.Any])
+    inline def setClassOperations(value: IVaultClassOperationsAsync): Self = StObject.set(x, "ClassOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientOperations(value: IVaultClientOperationsAsync): Self = StObject.set(x, "ClientOperations", value.asInstanceOf[js.Any])
+    inline def setClientOperations(value: IVaultClientOperationsAsync): Self = StObject.set(x, "ClientOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomApplicationManagementOperations(value: IVaultCustomApplicationManagementOperationsAsync): Self = StObject.set(x, "CustomApplicationManagementOperations", value.asInstanceOf[js.Any])
+    inline def setCustomApplicationManagementOperations(value: IVaultCustomApplicationManagementOperationsAsync): Self = StObject.set(x, "CustomApplicationManagementOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetOperations(value: IVaultDataSetOperationsAsync): Self = StObject.set(x, "DataSetOperations", value.asInstanceOf[js.Any])
+    inline def setDataSetOperations(value: IVaultDataSetOperationsAsync): Self = StObject.set(x, "DataSetOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElectronicSignatureOperations(value: IVaultElectronicSignatureOperationsAsync): Self = StObject.set(x, "ElectronicSignatureOperations", value.asInstanceOf[js.Any])
+    inline def setElectronicSignatureOperations(value: IVaultElectronicSignatureOperationsAsync): Self = StObject.set(x, "ElectronicSignatureOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLogOperations(value: IVaultEventLogOperationsAsync): Self = StObject.set(x, "EventLogOperations", value.asInstanceOf[js.Any])
+    inline def setEventLogOperations(value: IVaultEventLogOperationsAsync): Self = StObject.set(x, "EventLogOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionMethodOperations(value: IVaultExtensionMethodOperationsAsync): Self = StObject.set(x, "ExtensionMethodOperations", value.asInstanceOf[js.Any])
+    inline def setExtensionMethodOperations(value: IVaultExtensionMethodOperationsAsync): Self = StObject.set(x, "ExtensionMethodOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalObjectOperations(value: IVaultExternalObjectOperationsAsync): Self = StObject.set(x, "ExternalObjectOperations", value.asInstanceOf[js.Any])
+    inline def setExternalObjectOperations(value: IVaultExternalObjectOperationsAsync): Self = StObject.set(x, "ExternalObjectOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginAccountOperations(value: IVaultLoginAccountOperationsAsync): Self = StObject.set(x, "LoginAccountOperations", value.asInstanceOf[js.Any])
+    inline def setLoginAccountOperations(value: IVaultLoginAccountOperationsAsync): Self = StObject.set(x, "LoginAccountOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagementOperations(value: IVaultManagementOperationsAsync): Self = StObject.set(x, "ManagementOperations", value.asInstanceOf[js.Any])
+    inline def setManagementOperations(value: IVaultManagementOperationsAsync): Self = StObject.set(x, "ManagementOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedACLOperations(value: IVaultNamedACLOperationsAsync): Self = StObject.set(x, "NamedACLOperations", value.asInstanceOf[js.Any])
+    inline def setNamedACLOperations(value: IVaultNamedACLOperationsAsync): Self = StObject.set(x, "NamedACLOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedValueStorageOperations(value: IVaultNamedValueStorageOperationsAsync): Self = StObject.set(x, "NamedValueStorageOperations", value.asInstanceOf[js.Any])
+    inline def setNamedValueStorageOperations(value: IVaultNamedValueStorageOperationsAsync): Self = StObject.set(x, "NamedValueStorageOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationOperations(value: IVaultNotificationOperationsAsync): Self = StObject.set(x, "NotificationOperations", value.asInstanceOf[js.Any])
+    inline def setNotificationOperations(value: IVaultNotificationOperationsAsync): Self = StObject.set(x, "NotificationOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectFileOperations(value: IVaultObjectFileOperationsAsync): Self = StObject.set(x, "ObjectFileOperations", value.asInstanceOf[js.Any])
+    inline def setObjectFileOperations(value: IVaultObjectFileOperationsAsync): Self = StObject.set(x, "ObjectFileOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectOperations(value: IVaultObjectOperationsAsync): Self = StObject.set(x, "ObjectOperations", value.asInstanceOf[js.Any])
+    inline def setObjectOperations(value: IVaultObjectOperationsAsync): Self = StObject.set(x, "ObjectOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectPropertyOperations(value: IVaultObjectPropertyOperationsAsync): Self = StObject.set(x, "ObjectPropertyOperations", value.asInstanceOf[js.Any])
+    inline def setObjectPropertyOperations(value: IVaultObjectPropertyOperationsAsync): Self = StObject.set(x, "ObjectPropertyOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectSearchOperations(value: IVaultObjectSearchOperationsAsync): Self = StObject.set(x, "ObjectSearchOperations", value.asInstanceOf[js.Any])
+    inline def setObjectSearchOperations(value: IVaultObjectSearchOperationsAsync): Self = StObject.set(x, "ObjectSearchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeOperations(value: IVaultObjectTypeOperationsAsync): Self = StObject.set(x, "ObjectTypeOperations", value.asInstanceOf[js.Any])
+    inline def setObjectTypeOperations(value: IVaultObjectTypeOperationsAsync): Self = StObject.set(x, "ObjectTypeOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDefOperations(value: IVaultPropertyDefOperationsAsync): Self = StObject.set(x, "PropertyDefOperations", value.asInstanceOf[js.Any])
+    inline def setPropertyDefOperations(value: IVaultPropertyDefOperationsAsync): Self = StObject.set(x, "PropertyDefOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledJobManagementOperations(value: IVaultScheduledJobManagementOperationsAsync): Self = StObject.set(x, "ScheduledJobManagementOperations", value.asInstanceOf[js.Any])
+    inline def setScheduledJobManagementOperations(value: IVaultScheduledJobManagementOperationsAsync): Self = StObject.set(x, "ScheduledJobManagementOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerDataPushOperations(value: IVaultServerDataPushOperationsAsync): Self = StObject.set(x, "ServerDataPushOperations", value.asInstanceOf[js.Any])
+    inline def setServerDataPushOperations(value: IVaultServerDataPushOperationsAsync): Self = StObject.set(x, "ServerDataPushOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedLinkOperations(value: IVaultSharedLinkOperationsAsync): Self = StObject.set(x, "SharedLinkOperations", value.asInstanceOf[js.Any])
+    inline def setSharedLinkOperations(value: IVaultSharedLinkOperationsAsync): Self = StObject.set(x, "SharedLinkOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraditionalFolderOperations(value: IVaultTraditionalFolderOperationsAsync): Self = StObject.set(x, "TraditionalFolderOperations", value.asInstanceOf[js.Any])
+    inline def setTraditionalFolderOperations(value: IVaultTraditionalFolderOperationsAsync): Self = StObject.set(x, "TraditionalFolderOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupOperations(value: IVaultUserGroupOperationsAsync): Self = StObject.set(x, "UserGroupOperations", value.asInstanceOf[js.Any])
+    inline def setUserGroupOperations(value: IVaultUserGroupOperationsAsync): Self = StObject.set(x, "UserGroupOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserOperations(value: IVaultUserOperationsAsync): Self = StObject.set(x, "UserOperations", value.asInstanceOf[js.Any])
+    inline def setUserOperations(value: IVaultUserOperationsAsync): Self = StObject.set(x, "UserOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSettingOperations(value: IVaultUserSettingOperationsAsync): Self = StObject.set(x, "UserSettingOperations", value.asInstanceOf[js.Any])
+    inline def setUserSettingOperations(value: IVaultUserSettingOperationsAsync): Self = StObject.set(x, "UserSettingOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueListItemOperations(value: IVaultValueListItemOperationsAsync): Self = StObject.set(x, "ValueListItemOperations", value.asInstanceOf[js.Any])
+    inline def setValueListItemOperations(value: IVaultValueListItemOperationsAsync): Self = StObject.set(x, "ValueListItemOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueListOperations(value: IVaultValueListOperationsAsync): Self = StObject.set(x, "ValueListOperations", value.asInstanceOf[js.Any])
+    inline def setValueListOperations(value: IVaultValueListOperationsAsync): Self = StObject.set(x, "ValueListOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewOperations(value: IVaultViewOperationsAsync): Self = StObject.set(x, "ViewOperations", value.asInstanceOf[js.Any])
+    inline def setViewOperations(value: IVaultViewOperationsAsync): Self = StObject.set(x, "ViewOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowOperations(value: IVaultWorkflowOperationsAsync): Self = StObject.set(x, "WorkflowOperations", value.asInstanceOf[js.Any])
+    inline def setWorkflowOperations(value: IVaultWorkflowOperationsAsync): Self = StObject.set(x, "WorkflowOperations", value.asInstanceOf[js.Any])
   }
 }

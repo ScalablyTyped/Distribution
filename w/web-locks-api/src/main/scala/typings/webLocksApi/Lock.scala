@@ -14,19 +14,15 @@ trait Lock extends StObject {
 }
 object Lock {
   
-  @scala.inline
-  def apply(mode: exclusive | shared, name: String): Lock = {
+  inline def apply(mode: exclusive | shared, name: String): Lock = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lock]
   }
   
-  @scala.inline
-  implicit class LockMutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
+  extension [Self <: Lock](x: Self) {
     
-    @scala.inline
-    def setMode(value: exclusive | shared): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: exclusive | shared): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

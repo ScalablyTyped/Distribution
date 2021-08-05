@@ -22,26 +22,20 @@ trait BaseOAuthSecurity
 }
 object BaseOAuthSecurity {
   
-  @scala.inline
-  def apply(flow: accessCode | application | `implicit` | password): BaseOAuthSecurity = {
+  inline def apply(flow: accessCode | application | `implicit` | password): BaseOAuthSecurity = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[BaseOAuthSecurity]
   }
   
-  @scala.inline
-  implicit class BaseOAuthSecurityMutableBuilder[Self <: BaseOAuthSecurity] (val x: Self) extends AnyVal {
+  extension [Self <: BaseOAuthSecurity](x: Self) {
     
-    @scala.inline
-    def setFlow(value: accessCode | application | `implicit` | password): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: accessCode | application | `implicit` | password): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: OAuthScope): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: OAuthScope): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setType(value: oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

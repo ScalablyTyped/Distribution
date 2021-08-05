@@ -72,56 +72,40 @@ object typesMod {
   }
   object MonacoDiffEditorProps {
     
-    @scala.inline
-    def apply(): MonacoDiffEditorProps = {
+    inline def apply(): MonacoDiffEditorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MonacoDiffEditorProps]
     }
     
-    @scala.inline
-    implicit class MonacoDiffEditorPropsMutableBuilder[Self <: MonacoDiffEditorProps] (val x: Self) extends AnyVal {
+    extension [Self <: MonacoDiffEditorProps](x: Self) {
       
-      @scala.inline
-      def setEditorDidMount(value: (/* editor */ IStandaloneDiffEditor, /* monaco */ TypeofmonacoEditor) => Unit): Self = StObject.set(x, "editorDidMount", js.Any.fromFunction2(value))
+      inline def setEditorDidMount(value: (/* editor */ IStandaloneDiffEditor, /* monaco */ TypeofmonacoEditor) => Unit): Self = StObject.set(x, "editorDidMount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEditorDidMountUndefined: Self = StObject.set(x, "editorDidMount", js.undefined)
+      inline def setEditorDidMountUndefined: Self = StObject.set(x, "editorDidMount", js.undefined)
       
-      @scala.inline
-      def setEditorWillMount(value: /* monaco */ TypeofmonacoEditor => Unit | IStandaloneEditorConstructionOptions): Self = StObject.set(x, "editorWillMount", js.Any.fromFunction1(value))
+      inline def setEditorWillMount(value: /* monaco */ TypeofmonacoEditor => Unit | IStandaloneEditorConstructionOptions): Self = StObject.set(x, "editorWillMount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEditorWillMountUndefined: Self = StObject.set(x, "editorWillMount", js.undefined)
+      inline def setEditorWillMountUndefined: Self = StObject.set(x, "editorWillMount", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOptions(value: IDiffEditorConstructionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: IDiffEditorConstructionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
+      inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
       
-      @scala.inline
-      def setOverrideServices(value: IEditorOverrideServices): Self = StObject.set(x, "overrideServices", value.asInstanceOf[js.Any])
+      inline def setOverrideServices(value: IEditorOverrideServices): Self = StObject.set(x, "overrideServices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideServicesUndefined: Self = StObject.set(x, "overrideServices", js.undefined)
+      inline def setOverrideServicesUndefined: Self = StObject.set(x, "overrideServices", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -156,47 +140,34 @@ object typesMod {
   }
   object MonacoEditorBaseProps {
     
-    @scala.inline
-    def apply(): MonacoEditorBaseProps = {
+    inline def apply(): MonacoEditorBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MonacoEditorBaseProps]
     }
     
-    @scala.inline
-    implicit class MonacoEditorBasePropsMutableBuilder[Self <: MonacoEditorBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: MonacoEditorBaseProps](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeNull: Self = StObject.set(x, "theme", null)
+      inline def setThemeNull: Self = StObject.set(x, "theme", null)
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -238,53 +209,38 @@ object typesMod {
   }
   object MonacoEditorProps {
     
-    @scala.inline
-    def apply(): MonacoEditorProps = {
+    inline def apply(): MonacoEditorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MonacoEditorProps]
     }
     
-    @scala.inline
-    implicit class MonacoEditorPropsMutableBuilder[Self <: MonacoEditorProps] (val x: Self) extends AnyVal {
+    extension [Self <: MonacoEditorProps](x: Self) {
       
-      @scala.inline
-      def setEditorDidMount(value: (/* editor */ IStandaloneCodeEditor, /* monaco */ TypeofmonacoEditor) => Unit): Self = StObject.set(x, "editorDidMount", js.Any.fromFunction2(value))
+      inline def setEditorDidMount(value: (/* editor */ IStandaloneCodeEditor, /* monaco */ TypeofmonacoEditor) => Unit): Self = StObject.set(x, "editorDidMount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEditorDidMountUndefined: Self = StObject.set(x, "editorDidMount", js.undefined)
+      inline def setEditorDidMountUndefined: Self = StObject.set(x, "editorDidMount", js.undefined)
       
-      @scala.inline
-      def setEditorWillMount(value: /* monaco */ TypeofmonacoEditor => Unit | EditorConstructionOptions): Self = StObject.set(x, "editorWillMount", js.Any.fromFunction1(value))
+      inline def setEditorWillMount(value: /* monaco */ TypeofmonacoEditor => Unit | EditorConstructionOptions): Self = StObject.set(x, "editorWillMount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEditorWillMountUndefined: Self = StObject.set(x, "editorWillMount", js.undefined)
+      inline def setEditorWillMountUndefined: Self = StObject.set(x, "editorWillMount", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOptions(value: IStandaloneEditorConstructionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: IStandaloneEditorConstructionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOverrideServices(value: IEditorOverrideServices): Self = StObject.set(x, "overrideServices", value.asInstanceOf[js.Any])
+      inline def setOverrideServices(value: IEditorOverrideServices): Self = StObject.set(x, "overrideServices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideServicesUndefined: Self = StObject.set(x, "overrideServices", js.undefined)
+      inline def setOverrideServicesUndefined: Self = StObject.set(x, "overrideServices", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

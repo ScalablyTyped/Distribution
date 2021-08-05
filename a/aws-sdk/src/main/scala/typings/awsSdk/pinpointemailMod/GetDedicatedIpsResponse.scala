@@ -18,28 +18,21 @@ trait GetDedicatedIpsResponse extends StObject {
 }
 object GetDedicatedIpsResponse {
   
-  @scala.inline
-  def apply(): GetDedicatedIpsResponse = {
+  inline def apply(): GetDedicatedIpsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDedicatedIpsResponse]
   }
   
-  @scala.inline
-  implicit class GetDedicatedIpsResponseMutableBuilder[Self <: GetDedicatedIpsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDedicatedIpsResponse](x: Self) {
     
-    @scala.inline
-    def setDedicatedIps(value: DedicatedIpList): Self = StObject.set(x, "DedicatedIps", value.asInstanceOf[js.Any])
+    inline def setDedicatedIps(value: DedicatedIpList): Self = StObject.set(x, "DedicatedIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedIpsUndefined: Self = StObject.set(x, "DedicatedIps", js.undefined)
+    inline def setDedicatedIpsUndefined: Self = StObject.set(x, "DedicatedIps", js.undefined)
     
-    @scala.inline
-    def setDedicatedIpsVarargs(value: DedicatedIp*): Self = StObject.set(x, "DedicatedIps", js.Array(value :_*))
+    inline def setDedicatedIpsVarargs(value: DedicatedIp*): Self = StObject.set(x, "DedicatedIps", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

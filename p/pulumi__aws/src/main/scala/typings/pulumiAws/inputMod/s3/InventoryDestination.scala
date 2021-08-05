@@ -14,16 +14,13 @@ trait InventoryDestination extends StObject {
 }
 object InventoryDestination {
   
-  @scala.inline
-  def apply(bucket: Input[InventoryDestinationBucket]): InventoryDestination = {
+  inline def apply(bucket: Input[InventoryDestinationBucket]): InventoryDestination = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryDestination]
   }
   
-  @scala.inline
-  implicit class InventoryDestinationMutableBuilder[Self <: InventoryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryDestination](x: Self) {
     
-    @scala.inline
-    def setBucket(value: Input[InventoryDestinationBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: Input[InventoryDestinationBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
   }
 }

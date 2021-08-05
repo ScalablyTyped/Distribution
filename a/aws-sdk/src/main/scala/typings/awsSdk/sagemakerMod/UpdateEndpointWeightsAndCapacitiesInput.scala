@@ -18,22 +18,17 @@ trait UpdateEndpointWeightsAndCapacitiesInput extends StObject {
 }
 object UpdateEndpointWeightsAndCapacitiesInput {
   
-  @scala.inline
-  def apply(DesiredWeightsAndCapacities: DesiredWeightAndCapacityList, EndpointName: EndpointName): UpdateEndpointWeightsAndCapacitiesInput = {
+  inline def apply(DesiredWeightsAndCapacities: DesiredWeightAndCapacityList, EndpointName: EndpointName): UpdateEndpointWeightsAndCapacitiesInput = {
     val __obj = js.Dynamic.literal(DesiredWeightsAndCapacities = DesiredWeightsAndCapacities.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointWeightsAndCapacitiesInput]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointWeightsAndCapacitiesInputMutableBuilder[Self <: UpdateEndpointWeightsAndCapacitiesInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointWeightsAndCapacitiesInput](x: Self) {
     
-    @scala.inline
-    def setDesiredWeightsAndCapacities(value: DesiredWeightAndCapacityList): Self = StObject.set(x, "DesiredWeightsAndCapacities", value.asInstanceOf[js.Any])
+    inline def setDesiredWeightsAndCapacities(value: DesiredWeightAndCapacityList): Self = StObject.set(x, "DesiredWeightsAndCapacities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredWeightsAndCapacitiesVarargs(value: DesiredWeightAndCapacity*): Self = StObject.set(x, "DesiredWeightsAndCapacities", js.Array(value :_*))
+    inline def setDesiredWeightsAndCapacitiesVarargs(value: DesiredWeightAndCapacity*): Self = StObject.set(x, "DesiredWeightsAndCapacities", js.Array(value :_*))
     
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
   }
 }

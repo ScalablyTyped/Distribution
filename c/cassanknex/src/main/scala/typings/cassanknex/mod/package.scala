@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(): typings.cassanknex.mod.CassanKnex = typings.cassanknex.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.cassanknex.mod.CassanKnex]
-@scala.inline
-def apply(options: typings.cassanknex.mod.DriverOptions): typings.cassanknex.mod.CassanKnex = typings.cassanknex.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.cassanknex.mod.CassanKnex]
+inline def apply(): typings.cassanknex.mod.CassanKnex = typings.cassanknex.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.cassanknex.mod.CassanKnex]
+inline def apply(options: typings.cassanknex.mod.DriverOptions): typings.cassanknex.mod.CassanKnex = typings.cassanknex.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.cassanknex.mod.CassanKnex]
 
 type MappedDict[B] = org.scalablytyped.runtime.StringDictionary[B]
 

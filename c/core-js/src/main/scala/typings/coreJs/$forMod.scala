@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object $forMod {
   
-  @scala.inline
-  def apply[T](iterable: Iterable[T]): `for`[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[`for`[T]]
+  inline def apply[T](iterable: Iterable[T]): `for`[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[`for`[T]]
   
   @JSImport("core-js/fn/$for", JSImport.Namespace)
   @js.native

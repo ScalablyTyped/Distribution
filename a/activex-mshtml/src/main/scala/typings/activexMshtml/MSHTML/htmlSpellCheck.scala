@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlSpellCheck extends StObject
 object htmlSpellCheck {
   
-  @scala.inline
-  def htmlSpellCheckDefault: `3` = 3.asInstanceOf[`3`]
+  inline def htmlSpellCheckDefault: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlSpellCheckFalse: `2` = 2.asInstanceOf[`2`]
+  inline def htmlSpellCheckFalse: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlSpellCheckNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def htmlSpellCheckNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlSpellCheckTrue: `1` = 1.asInstanceOf[`1`]
+  inline def htmlSpellCheckTrue: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlSpellCheck_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlSpellCheck_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

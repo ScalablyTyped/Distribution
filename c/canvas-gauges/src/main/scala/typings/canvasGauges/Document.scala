@@ -11,16 +11,13 @@ trait Document extends StObject {
 }
 object Document {
   
-  @scala.inline
-  def apply(gauges: Collection): Document = {
+  inline def apply(gauges: Collection): Document = {
     val __obj = js.Dynamic.literal(gauges = gauges.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setGauges(value: Collection): Self = StObject.set(x, "gauges", value.asInstanceOf[js.Any])
+    inline def setGauges(value: Collection): Self = StObject.set(x, "gauges", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait `29` extends StObject {
 }
 object `29` {
   
-  @scala.inline
-  def apply(): `29` = {
+  inline def apply(): `29` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`29`]
   }
   
-  @scala.inline
-  implicit class `29MutableBuilder`[Self <: `29`] (val x: Self) extends AnyVal {
+  extension [Self <: `29`](x: Self) {
     
-    @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+    inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+    inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
   }
 }

@@ -35,12 +35,12 @@ object stackControllerMod {
       location: Location
     ) = this()
     
-    var activeView: js.Any = js.native
+    /* private */ var activeView: js.Any = js.native
     
     def canGoBack(deep: Double): Boolean = js.native
     def canGoBack(deep: Double, stackId: String): Boolean = js.native
     
-    var containerEl: js.Any = js.native
+    /* private */ var containerEl: js.Any = js.native
     
     def createView(ref: ComponentRef[js.Any], activatedRoute: ActivatedRoute): RouteView = js.native
     
@@ -61,38 +61,38 @@ object stackControllerMod {
     def getRootUrl(): RouteView = js.native
     def getRootUrl(stackId: String): RouteView = js.native
     
-    var getStack: js.Any = js.native
+    /* private */ var getStack: js.Any = js.native
     
-    var insertView: js.Any = js.native
+    /* private */ var insertView: js.Any = js.native
     
-    var location: js.Any = js.native
+    /* private */ var location: js.Any = js.native
     
-    var navCtrl: js.Any = js.native
+    /* private */ var navCtrl: js.Any = js.native
     
-    var nextId: js.Any = js.native
+    /* private */ var nextId: js.Any = js.native
     
     def pop(deep: Double): js.Promise[Boolean] = js.native
     def pop(deep: Double, stackId: String): js.Promise[Boolean] = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
-    var runningTask: js.Any = js.native
+    /* private */ var runningTask: js.Any = js.native
     
     def setActive(enteringView: RouteView): js.Promise[StackEvent] = js.native
     
-    var skipTransition: js.Any = js.native
+    /* private */ var skipTransition: js.Any = js.native
     
     def startBackTransition(): js.Promise[Boolean | Unit] = js.native
     
-    var tabsPrefix: js.Any = js.native
+    /* private */ var tabsPrefix: js.Any = js.native
     
-    var transition: js.Any = js.native
+    /* private */ var transition: js.Any = js.native
     
-    var views: js.Any = js.native
+    /* private */ var views: js.Any = js.native
     
-    @JSName("wait")
+    /* private */ @JSName("wait")
     var wait_FStackController: js.Any = js.native
     
-    var zone: js.Any = js.native
+    /* private */ var zone: js.Any = js.native
   }
 }

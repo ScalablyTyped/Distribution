@@ -12,19 +12,15 @@ trait Identification extends StObject {
 }
 object Identification {
   
-  @scala.inline
-  def apply(id: String, slug: String): Identification = {
+  inline def apply(id: String, slug: String): Identification = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identification]
   }
   
-  @scala.inline
-  implicit class IdentificationMutableBuilder[Self <: Identification] (val x: Self) extends AnyVal {
+  extension [Self <: Identification](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
   }
 }

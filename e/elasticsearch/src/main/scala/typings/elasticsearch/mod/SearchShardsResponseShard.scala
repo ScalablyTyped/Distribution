@@ -23,8 +23,7 @@ trait SearchShardsResponseShard extends StObject {
 }
 object SearchShardsResponseShard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allocation_id: Id,
     index: String,
     node: String,
@@ -37,28 +36,20 @@ object SearchShardsResponseShard {
     __obj.asInstanceOf[SearchShardsResponseShard]
   }
   
-  @scala.inline
-  implicit class SearchShardsResponseShardMutableBuilder[Self <: SearchShardsResponseShard] (val x: Self) extends AnyVal {
+  extension [Self <: SearchShardsResponseShard](x: Self) {
     
-    @scala.inline
-    def setAllocation_id(value: Id): Self = StObject.set(x, "allocation_id", value.asInstanceOf[js.Any])
+    inline def setAllocation_id(value: Id): Self = StObject.set(x, "allocation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelocating_node(value: js.Any): Self = StObject.set(x, "relocating_node", value.asInstanceOf[js.Any])
+    inline def setRelocating_node(value: js.Any): Self = StObject.set(x, "relocating_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShare(value: Double): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+    inline def setShare(value: Double): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

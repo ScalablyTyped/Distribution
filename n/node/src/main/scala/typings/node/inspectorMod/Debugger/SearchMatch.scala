@@ -21,19 +21,15 @@ trait SearchMatch extends StObject {
 }
 object SearchMatch {
   
-  @scala.inline
-  def apply(lineContent: String, lineNumber: Double): SearchMatch = {
+  inline def apply(lineContent: String, lineNumber: Double): SearchMatch = {
     val __obj = js.Dynamic.literal(lineContent = lineContent.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchMatch]
   }
   
-  @scala.inline
-  implicit class SearchMatchMutableBuilder[Self <: SearchMatch] (val x: Self) extends AnyVal {
+  extension [Self <: SearchMatch](x: Self) {
     
-    @scala.inline
-    def setLineContent(value: String): Self = StObject.set(x, "lineContent", value.asInstanceOf[js.Any])
+    inline def setLineContent(value: String): Self = StObject.set(x, "lineContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
   }
 }

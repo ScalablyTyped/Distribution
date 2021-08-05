@@ -12,16 +12,13 @@ trait CompassData extends StObject {
 }
 object CompassData {
   
-  @scala.inline
-  def apply(direction: Double): CompassData = {
+  inline def apply(direction: Double): CompassData = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassData]
   }
   
-  @scala.inline
-  implicit class CompassDataMutableBuilder[Self <: CompassData] (val x: Self) extends AnyVal {
+  extension [Self <: CompassData](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

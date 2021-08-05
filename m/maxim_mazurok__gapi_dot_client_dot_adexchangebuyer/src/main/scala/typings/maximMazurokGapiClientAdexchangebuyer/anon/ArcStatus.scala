@@ -17,31 +17,23 @@ trait ArcStatus extends StObject {
 }
 object ArcStatus {
   
-  @scala.inline
-  def apply(): ArcStatus = {
+  inline def apply(): ArcStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArcStatus]
   }
   
-  @scala.inline
-  implicit class ArcStatusMutableBuilder[Self <: ArcStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ArcStatus](x: Self) {
     
-    @scala.inline
-    def setArcStatus(value: String): Self = StObject.set(x, "arcStatus", value.asInstanceOf[js.Any])
+    inline def setArcStatus(value: String): Self = StObject.set(x, "arcStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcStatusUndefined: Self = StObject.set(x, "arcStatus", js.undefined)
+    inline def setArcStatusUndefined: Self = StObject.set(x, "arcStatus", js.undefined)
     
-    @scala.inline
-    def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
+    inline def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealIdUndefined: Self = StObject.set(x, "dealId", js.undefined)
+    inline def setDealIdUndefined: Self = StObject.set(x, "dealId", js.undefined)
     
-    @scala.inline
-    def setWebPropertyId(value: Double): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    inline def setWebPropertyId(value: Double): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
+    inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

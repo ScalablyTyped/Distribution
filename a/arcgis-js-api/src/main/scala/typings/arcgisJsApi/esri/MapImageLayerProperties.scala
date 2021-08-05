@@ -109,88 +109,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MapImageLayerProperties {
   
-  @scala.inline
-  def apply(): MapImageLayerProperties = {
+  inline def apply(): MapImageLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapImageLayerProperties]
   }
   
-  @scala.inline
-  implicit class MapImageLayerPropertiesMutableBuilder[Self <: MapImageLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MapImageLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+    inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
+    inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
-    @scala.inline
-    def setImageFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
+    inline def setImageFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
+    inline def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
     
-    @scala.inline
-    def setImageMaxHeight(value: Double): Self = StObject.set(x, "imageMaxHeight", value.asInstanceOf[js.Any])
+    inline def setImageMaxHeight(value: Double): Self = StObject.set(x, "imageMaxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageMaxHeightUndefined: Self = StObject.set(x, "imageMaxHeight", js.undefined)
+    inline def setImageMaxHeightUndefined: Self = StObject.set(x, "imageMaxHeight", js.undefined)
     
-    @scala.inline
-    def setImageMaxWidth(value: Double): Self = StObject.set(x, "imageMaxWidth", value.asInstanceOf[js.Any])
+    inline def setImageMaxWidth(value: Double): Self = StObject.set(x, "imageMaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageMaxWidthUndefined: Self = StObject.set(x, "imageMaxWidth", js.undefined)
+    inline def setImageMaxWidthUndefined: Self = StObject.set(x, "imageMaxWidth", js.undefined)
     
-    @scala.inline
-    def setImageTransparency(value: Boolean): Self = StObject.set(x, "imageTransparency", value.asInstanceOf[js.Any])
+    inline def setImageTransparency(value: Boolean): Self = StObject.set(x, "imageTransparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTransparencyUndefined: Self = StObject.set(x, "imageTransparency", js.undefined)
+    inline def setImageTransparencyUndefined: Self = StObject.set(x, "imageTransparency", js.undefined)
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
-    @scala.inline
-    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
-    @scala.inline
-    def setSublayers(value: CollectionProperties[SublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
+    inline def setSublayers(value: CollectionProperties[SublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
+    inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    @scala.inline
-    def setSublayersVarargs(value: SublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
+    inline def setSublayersVarargs(value: SublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -35,53 +35,38 @@ object transMod {
   }
   object TransPropsWithoutI18n {
     
-    @scala.inline
-    def apply(): TransPropsWithoutI18n = {
+    inline def apply(): TransPropsWithoutI18n = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransPropsWithoutI18n]
     }
     
-    @scala.inline
-    implicit class TransPropsWithoutI18nMutableBuilder[Self <: TransPropsWithoutI18n] (val x: Self) extends AnyVal {
+    extension [Self <: TransPropsWithoutI18n](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setComponents(value: js.Array[ReactElement]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Array[ReactElement]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setComponentsVarargs(value: ReactElement*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: ReactElement*): Self = StObject.set(x, "components", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setFormats(value: js.Object): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Object): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
 }

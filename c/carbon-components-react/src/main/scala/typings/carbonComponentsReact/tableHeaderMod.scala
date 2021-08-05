@@ -61,68 +61,48 @@ object tableHeaderMod extends Shortcut {
   }
   object TableHeaderProps {
     
-    @scala.inline
-    def apply(): TableHeaderProps = {
+    inline def apply(): TableHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableHeaderProps]
     }
     
-    @scala.inline
-    implicit class TableHeaderPropsMutableBuilder[Self <: TableHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableHeaderProps](x: Self) {
       
-      @scala.inline
-      def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+      inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
+      inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
       
-      @scala.inline
-      def setAlign(value: left | center | right | justify | char): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: left | center | right | justify | char): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIsSortHeader(value: Boolean): Self = StObject.set(x, "isSortHeader", value.asInstanceOf[js.Any])
+      inline def setIsSortHeader(value: Boolean): Self = StObject.set(x, "isSortHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSortHeaderUndefined: Self = StObject.set(x, "isSortHeader", js.undefined)
+      inline def setIsSortHeaderUndefined: Self = StObject.set(x, "isSortHeader", js.undefined)
       
-      @scala.inline
-      def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+      inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+      inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSortDirection(value: DataTableSortState): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+      inline def setSortDirection(value: DataTableSortState): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
+      inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     }
   }
   

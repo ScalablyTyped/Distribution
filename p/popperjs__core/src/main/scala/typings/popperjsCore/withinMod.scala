@@ -10,6 +10,5 @@ object withinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(min: Double, value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(min: Double, value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -155,8 +155,7 @@ trait XSlideShowView
 }
 object XSlideShowView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Canvas: XSpriteCanvas,
     CanvasArea: Rectangle,
     Transformation: AffineMatrix2D,
@@ -183,61 +182,42 @@ object XSlideShowView {
     __obj.asInstanceOf[XSlideShowView]
   }
   
-  @scala.inline
-  implicit class XSlideShowViewMutableBuilder[Self <: XSlideShowView] (val x: Self) extends AnyVal {
+  extension [Self <: XSlideShowView](x: Self) {
     
-    @scala.inline
-    def setAddMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "addMouseListener", js.Any.fromFunction1(value))
+    inline def setAddMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "addMouseListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "addMouseMotionListener", js.Any.fromFunction1(value))
+    inline def setAddMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "addMouseMotionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddPaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "addPaintListener", js.Any.fromFunction1(value))
+    inline def setAddPaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "addPaintListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddTransformationChangedListener(value: XModifyListener => Unit): Self = StObject.set(x, "addTransformationChangedListener", js.Any.fromFunction1(value))
+    inline def setAddTransformationChangedListener(value: XModifyListener => Unit): Self = StObject.set(x, "addTransformationChangedListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanvas(value: XSpriteCanvas): Self = StObject.set(x, "Canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: XSpriteCanvas): Self = StObject.set(x, "Canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasArea(value: Rectangle): Self = StObject.set(x, "CanvasArea", value.asInstanceOf[js.Any])
+    inline def setCanvasArea(value: Rectangle): Self = StObject.set(x, "CanvasArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCanvas(value: () => XSpriteCanvas): Self = StObject.set(x, "getCanvas", js.Any.fromFunction0(value))
+    inline def setGetCanvas(value: () => XSpriteCanvas): Self = StObject.set(x, "getCanvas", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCanvasArea(value: () => Rectangle): Self = StObject.set(x, "getCanvasArea", js.Any.fromFunction0(value))
+    inline def setGetCanvasArea(value: () => Rectangle): Self = StObject.set(x, "getCanvasArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTransformation(value: () => AffineMatrix2D): Self = StObject.set(x, "getTransformation", js.Any.fromFunction0(value))
+    inline def setGetTransformation(value: () => AffineMatrix2D): Self = StObject.set(x, "getTransformation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTranslationOffset(value: () => IntegerSize2D): Self = StObject.set(x, "getTranslationOffset", js.Any.fromFunction0(value))
+    inline def setGetTranslationOffset(value: () => IntegerSize2D): Self = StObject.set(x, "getTranslationOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "removeMouseListener", js.Any.fromFunction1(value))
+    inline def setRemoveMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "removeMouseListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "removeMouseMotionListener", js.Any.fromFunction1(value))
+    inline def setRemoveMouseMotionListener(value: XMouseMotionListener => Unit): Self = StObject.set(x, "removeMouseMotionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovePaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "removePaintListener", js.Any.fromFunction1(value))
+    inline def setRemovePaintListener(value: XPaintListener => Unit): Self = StObject.set(x, "removePaintListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTransformationChangedListener(value: XModifyListener => Unit): Self = StObject.set(x, "removeTransformationChangedListener", js.Any.fromFunction1(value))
+    inline def setRemoveTransformationChangedListener(value: XModifyListener => Unit): Self = StObject.set(x, "removeTransformationChangedListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMouseCursor(value: Double => Unit): Self = StObject.set(x, "setMouseCursor", js.Any.fromFunction1(value))
+    inline def setSetMouseCursor(value: Double => Unit): Self = StObject.set(x, "setMouseCursor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformation(value: AffineMatrix2D): Self = StObject.set(x, "Transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: AffineMatrix2D): Self = StObject.set(x, "Transformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationOffset(value: IntegerSize2D): Self = StObject.set(x, "TranslationOffset", value.asInstanceOf[js.Any])
+    inline def setTranslationOffset(value: IntegerSize2D): Self = StObject.set(x, "TranslationOffset", value.asInstanceOf[js.Any])
   }
 }

@@ -15,38 +15,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InjectableProvider extends StObject
 object InjectableProvider {
   
-  @scala.inline
-  def ClassSansProvider(useClass: Type[js.Any]): typings.angularCore.mod.ClassSansProvider = {
+  inline def ClassSansProvider(useClass: Type[js.Any]): typings.angularCore.mod.ClassSansProvider = {
     val __obj = js.Dynamic.literal(useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.ClassSansProvider]
   }
   
-  @scala.inline
-  def ConstructorSansProvider(): typings.angularCore.mod.ConstructorSansProvider = {
+  inline def ConstructorSansProvider(): typings.angularCore.mod.ConstructorSansProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.angularCore.mod.ConstructorSansProvider]
   }
   
-  @scala.inline
-  def ExistingSansProvider(useExisting: js.Any): typings.angularCore.mod.ExistingSansProvider = {
+  inline def ExistingSansProvider(useExisting: js.Any): typings.angularCore.mod.ExistingSansProvider = {
     val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.ExistingSansProvider]
   }
   
-  @scala.inline
-  def FactorySansProvider(useFactory: js.Function): typings.angularCore.mod.FactorySansProvider = {
+  inline def FactorySansProvider(useFactory: js.Function): typings.angularCore.mod.FactorySansProvider = {
     val __obj = js.Dynamic.literal(useFactory = useFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.FactorySansProvider]
   }
   
-  @scala.inline
-  def StaticClassSansProvider(deps: js.Array[js.Any], useClass: Type[js.Any]): typings.angularCore.mod.StaticClassSansProvider = {
+  inline def StaticClassSansProvider(deps: js.Array[js.Any], useClass: Type[js.Any]): typings.angularCore.mod.StaticClassSansProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.StaticClassSansProvider]
   }
   
-  @scala.inline
-  def ValueSansProvider(useValue: js.Any): typings.angularCore.mod.ValueSansProvider = {
+  inline def ValueSansProvider(useValue: js.Any): typings.angularCore.mod.ValueSansProvider = {
     val __obj = js.Dynamic.literal(useValue = useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.ValueSansProvider]
   }

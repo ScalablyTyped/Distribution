@@ -19,6 +19,5 @@ class Label protected ()
 }
 object Label {
   
-  @scala.inline
-  def apply: LabelComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[LabelComponent]
+  inline def apply: LabelComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[LabelComponent]
 }

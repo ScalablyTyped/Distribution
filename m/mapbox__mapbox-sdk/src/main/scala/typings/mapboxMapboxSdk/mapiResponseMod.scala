@@ -45,8 +45,7 @@ object mapiResponseMod {
   }
   object MapiResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: js.Any,
       hasNextPage: () => Boolean,
       headers: js.Any,
@@ -60,32 +59,23 @@ object mapiResponseMod {
       __obj.asInstanceOf[MapiResponse]
     }
     
-    @scala.inline
-    implicit class MapiResponseMutableBuilder[Self <: MapiResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MapiResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasNextPage(value: () => Boolean): Self = StObject.set(x, "hasNextPage", js.Any.fromFunction0(value))
+      inline def setHasNextPage(value: () => Boolean): Self = StObject.set(x, "hasNextPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinks(value: js.Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextPage(value: () => MapiRequest): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
+      inline def setNextPage(value: () => MapiRequest): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
+      inline def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: MapiRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: MapiRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

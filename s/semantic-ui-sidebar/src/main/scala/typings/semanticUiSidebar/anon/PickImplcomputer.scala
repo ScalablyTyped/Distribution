@@ -12,16 +12,13 @@ trait PickImplcomputer extends StObject {
 }
 object PickImplcomputer {
   
-  @scala.inline
-  def apply(computer: ComputerSettings): PickImplcomputer = {
+  inline def apply(computer: ComputerSettings): PickImplcomputer = {
     val __obj = js.Dynamic.literal(computer = computer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcomputer]
   }
   
-  @scala.inline
-  implicit class PickImplcomputerMutableBuilder[Self <: PickImplcomputer] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcomputer](x: Self) {
     
-    @scala.inline
-    def setComputer(value: ComputerSettings): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
+    inline def setComputer(value: ComputerSettings): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
   }
 }

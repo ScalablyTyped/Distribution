@@ -13,8 +13,7 @@ object createEnvironmentApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasHttpHttpUpload: HttpUpload): CreateAppInstallation = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttpHttpUpload.asInstanceOf[js.Any]).asInstanceOf[CreateAppInstallation]
+  inline def default(hasHttpHttpUpload: HttpUpload): CreateAppInstallation = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttpHttpUpload.asInstanceOf[js.Any]).asInstanceOf[CreateAppInstallation]
   
   type ContentfulEnvironmentAPI = ReturnType[js.Function1[/* hasHttpHttpUpload */ HttpUpload, CreateAppInstallation]]
 }

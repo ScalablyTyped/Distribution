@@ -62,95 +62,67 @@ trait GooglePrivacyDlpV2Finding extends StObject {
 }
 object GooglePrivacyDlpV2Finding {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Finding = {
+  inline def apply(): GooglePrivacyDlpV2Finding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Finding]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2FindingMutableBuilder[Self <: GooglePrivacyDlpV2Finding] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Finding](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setFindingId(value: String): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
+    inline def setFindingId(value: String): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdUndefined: Self = StObject.set(x, "findingId", js.undefined)
+    inline def setFindingIdUndefined: Self = StObject.set(x, "findingId", js.undefined)
     
-    @scala.inline
-    def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
-    @scala.inline
-    def setJobCreateTime(value: String): Self = StObject.set(x, "jobCreateTime", value.asInstanceOf[js.Any])
+    inline def setJobCreateTime(value: String): Self = StObject.set(x, "jobCreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCreateTimeUndefined: Self = StObject.set(x, "jobCreateTime", js.undefined)
+    inline def setJobCreateTimeUndefined: Self = StObject.set(x, "jobCreateTime", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2Finding & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLikelihood(value: String): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
+    inline def setLikelihood(value: String): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikelihoodUndefined: Self = StObject.set(x, "likelihood", js.undefined)
+    inline def setLikelihoodUndefined: Self = StObject.set(x, "likelihood", js.undefined)
     
-    @scala.inline
-    def setLocation(value: GooglePrivacyDlpV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: GooglePrivacyDlpV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteInfo(value: GooglePrivacyDlpV2QuoteInfo): Self = StObject.set(x, "quoteInfo", value.asInstanceOf[js.Any])
+    inline def setQuoteInfo(value: GooglePrivacyDlpV2QuoteInfo): Self = StObject.set(x, "quoteInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteInfoUndefined: Self = StObject.set(x, "quoteInfo", js.undefined)
+    inline def setQuoteInfoUndefined: Self = StObject.set(x, "quoteInfo", js.undefined)
     
-    @scala.inline
-    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
+    inline def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
   }
 }

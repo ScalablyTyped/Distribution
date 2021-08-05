@@ -13,22 +13,17 @@ trait CreateTapesOutput extends StObject {
 }
 object CreateTapesOutput {
   
-  @scala.inline
-  def apply(): CreateTapesOutput = {
+  inline def apply(): CreateTapesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTapesOutput]
   }
   
-  @scala.inline
-  implicit class CreateTapesOutputMutableBuilder[Self <: CreateTapesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTapesOutput](x: Self) {
     
-    @scala.inline
-    def setTapeARNs(value: TapeARNs): Self = StObject.set(x, "TapeARNs", value.asInstanceOf[js.Any])
+    inline def setTapeARNs(value: TapeARNs): Self = StObject.set(x, "TapeARNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNsUndefined: Self = StObject.set(x, "TapeARNs", js.undefined)
+    inline def setTapeARNsUndefined: Self = StObject.set(x, "TapeARNs", js.undefined)
     
-    @scala.inline
-    def setTapeARNsVarargs(value: TapeARN*): Self = StObject.set(x, "TapeARNs", js.Array(value :_*))
+    inline def setTapeARNsVarargs(value: TapeARN*): Self = StObject.set(x, "TapeARNs", js.Array(value :_*))
   }
 }

@@ -23,31 +23,23 @@ trait BucketCountByEncryptionType extends StObject {
 }
 object BucketCountByEncryptionType {
   
-  @scala.inline
-  def apply(): BucketCountByEncryptionType = {
+  inline def apply(): BucketCountByEncryptionType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketCountByEncryptionType]
   }
   
-  @scala.inline
-  implicit class BucketCountByEncryptionTypeMutableBuilder[Self <: BucketCountByEncryptionType] (val x: Self) extends AnyVal {
+  extension [Self <: BucketCountByEncryptionType](x: Self) {
     
-    @scala.inline
-    def setKmsManaged(value: long): Self = StObject.set(x, "kmsManaged", value.asInstanceOf[js.Any])
+    inline def setKmsManaged(value: long): Self = StObject.set(x, "kmsManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsManagedUndefined: Self = StObject.set(x, "kmsManaged", js.undefined)
+    inline def setKmsManagedUndefined: Self = StObject.set(x, "kmsManaged", js.undefined)
     
-    @scala.inline
-    def setS3Managed(value: long): Self = StObject.set(x, "s3Managed", value.asInstanceOf[js.Any])
+    inline def setS3Managed(value: long): Self = StObject.set(x, "s3Managed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ManagedUndefined: Self = StObject.set(x, "s3Managed", js.undefined)
+    inline def setS3ManagedUndefined: Self = StObject.set(x, "s3Managed", js.undefined)
     
-    @scala.inline
-    def setUnencrypted(value: long): Self = StObject.set(x, "unencrypted", value.asInstanceOf[js.Any])
+    inline def setUnencrypted(value: long): Self = StObject.set(x, "unencrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnencryptedUndefined: Self = StObject.set(x, "unencrypted", js.undefined)
+    inline def setUnencryptedUndefined: Self = StObject.set(x, "unencrypted", js.undefined)
   }
 }

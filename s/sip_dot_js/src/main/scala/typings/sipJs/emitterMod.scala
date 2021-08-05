@@ -19,7 +19,7 @@ object emitterMod {
       */
     def emit(data: T): Unit = js.native
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
     /**
       * Removes all listeners previously registered with addListener.

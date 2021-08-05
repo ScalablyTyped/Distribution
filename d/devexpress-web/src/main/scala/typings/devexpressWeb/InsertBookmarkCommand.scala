@@ -21,16 +21,13 @@ trait InsertBookmarkCommand
 }
 object InsertBookmarkCommand {
   
-  @scala.inline
-  def apply(execute: (String, Double, Double) => Boolean, getState: () => SimpleCommandState): InsertBookmarkCommand = {
+  inline def apply(execute: (String, Double, Double) => Boolean, getState: () => SimpleCommandState): InsertBookmarkCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction3(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertBookmarkCommand]
   }
   
-  @scala.inline
-  implicit class InsertBookmarkCommandMutableBuilder[Self <: InsertBookmarkCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertBookmarkCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (String, Double, Double) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (String, Double, Double) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }
 }

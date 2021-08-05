@@ -18,28 +18,21 @@ trait VolumeStatusInfo extends StObject {
 }
 object VolumeStatusInfo {
   
-  @scala.inline
-  def apply(): VolumeStatusInfo = {
+  inline def apply(): VolumeStatusInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeStatusInfo]
   }
   
-  @scala.inline
-  implicit class VolumeStatusInfoMutableBuilder[Self <: VolumeStatusInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeStatusInfo](x: Self) {
     
-    @scala.inline
-    def setDetails(value: VolumeStatusDetailsList): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: VolumeStatusDetailsList): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: VolumeStatusDetails*): Self = StObject.set(x, "Details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: VolumeStatusDetails*): Self = StObject.set(x, "Details", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: VolumeStatusInfoStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VolumeStatusInfoStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

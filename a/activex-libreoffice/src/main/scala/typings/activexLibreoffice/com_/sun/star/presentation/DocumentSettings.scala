@@ -50,8 +50,7 @@ trait DocumentSettings
 }
 object DocumentSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddExternalLeading: Boolean,
     ApplyUserData: Boolean,
     AutoCalculate: Boolean,
@@ -109,34 +108,24 @@ object DocumentSettings {
     __obj.asInstanceOf[DocumentSettings]
   }
   
-  @scala.inline
-  implicit class DocumentSettingsMutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSettings](x: Self) {
     
-    @scala.inline
-    def setIsPrintDrawing(value: Boolean): Self = StObject.set(x, "IsPrintDrawing", value.asInstanceOf[js.Any])
+    inline def setIsPrintDrawing(value: Boolean): Self = StObject.set(x, "IsPrintDrawing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintFitPage(value: Boolean): Self = StObject.set(x, "IsPrintFitPage", value.asInstanceOf[js.Any])
+    inline def setIsPrintFitPage(value: Boolean): Self = StObject.set(x, "IsPrintFitPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintHandout(value: Boolean): Self = StObject.set(x, "IsPrintHandout", value.asInstanceOf[js.Any])
+    inline def setIsPrintHandout(value: Boolean): Self = StObject.set(x, "IsPrintHandout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintHiddenPages(value: Boolean): Self = StObject.set(x, "IsPrintHiddenPages", value.asInstanceOf[js.Any])
+    inline def setIsPrintHiddenPages(value: Boolean): Self = StObject.set(x, "IsPrintHiddenPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintNotes(value: Boolean): Self = StObject.set(x, "IsPrintNotes", value.asInstanceOf[js.Any])
+    inline def setIsPrintNotes(value: Boolean): Self = StObject.set(x, "IsPrintNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintOutline(value: Boolean): Self = StObject.set(x, "IsPrintOutline", value.asInstanceOf[js.Any])
+    inline def setIsPrintOutline(value: Boolean): Self = StObject.set(x, "IsPrintOutline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintTilePage(value: Boolean): Self = StObject.set(x, "IsPrintTilePage", value.asInstanceOf[js.Any])
+    inline def setIsPrintTilePage(value: Boolean): Self = StObject.set(x, "IsPrintTilePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumberFormat(value: Double): Self = StObject.set(x, "PageNumberFormat", value.asInstanceOf[js.Any])
+    inline def setPageNumberFormat(value: Double): Self = StObject.set(x, "PageNumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphSummation(value: Boolean): Self = StObject.set(x, "ParagraphSummation", value.asInstanceOf[js.Any])
+    inline def setParagraphSummation(value: Boolean): Self = StObject.set(x, "ParagraphSummation", value.asInstanceOf[js.Any])
   }
 }

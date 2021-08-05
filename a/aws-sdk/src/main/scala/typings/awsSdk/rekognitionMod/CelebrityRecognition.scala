@@ -18,25 +18,19 @@ trait CelebrityRecognition extends StObject {
 }
 object CelebrityRecognition {
   
-  @scala.inline
-  def apply(): CelebrityRecognition = {
+  inline def apply(): CelebrityRecognition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CelebrityRecognition]
   }
   
-  @scala.inline
-  implicit class CelebrityRecognitionMutableBuilder[Self <: CelebrityRecognition] (val x: Self) extends AnyVal {
+  extension [Self <: CelebrityRecognition](x: Self) {
     
-    @scala.inline
-    def setCelebrity(value: CelebrityDetail): Self = StObject.set(x, "Celebrity", value.asInstanceOf[js.Any])
+    inline def setCelebrity(value: CelebrityDetail): Self = StObject.set(x, "Celebrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCelebrityUndefined: Self = StObject.set(x, "Celebrity", js.undefined)
+    inline def setCelebrityUndefined: Self = StObject.set(x, "Celebrity", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

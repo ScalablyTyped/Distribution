@@ -151,79 +151,55 @@ trait ColorScaleCSSProperties extends StObject {
 }
 object ColorScaleCSSProperties {
   
-  @scala.inline
-  def apply(): ColorScaleCSSProperties = {
+  inline def apply(): ColorScaleCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorScaleCSSProperties]
   }
   
-  @scala.inline
-  implicit class ColorScaleCSSPropertiesMutableBuilder[Self <: ColorScaleCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ColorScaleCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBorderBottomColor(value: Color): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+    inline def setBorderBottomColor(value: Color): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
+    inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderLeftColor(value: Color): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
+    inline def setBorderLeftColor(value: Color): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
+    inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
-    @scala.inline
-    def setBorderRightColor(value: Color): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
+    inline def setBorderRightColor(value: Color): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
+    inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
     
-    @scala.inline
-    def setBorderTopColor(value: Color): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+    inline def setBorderTopColor(value: Color): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
+    inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
-    @scala.inline
-    def setCaretColor(value: Color): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
+    inline def setCaretColor(value: Color): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
+    inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFill(value: Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setOutlineColor(value: Color): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    inline def setOutlineColor(value: Color): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+    inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
-    @scala.inline
-    def setStroke(value: Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

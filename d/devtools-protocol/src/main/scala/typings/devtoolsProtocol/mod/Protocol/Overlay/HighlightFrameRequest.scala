@@ -25,28 +25,21 @@ trait HighlightFrameRequest extends StObject {
 }
 object HighlightFrameRequest {
   
-  @scala.inline
-  def apply(frameId: FrameId): HighlightFrameRequest = {
+  inline def apply(frameId: FrameId): HighlightFrameRequest = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightFrameRequest]
   }
   
-  @scala.inline
-  implicit class HighlightFrameRequestMutableBuilder[Self <: HighlightFrameRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightFrameRequest](x: Self) {
     
-    @scala.inline
-    def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
+    inline def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
+    inline def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
     
-    @scala.inline
-    def setContentOutlineColor(value: RGBA): Self = StObject.set(x, "contentOutlineColor", value.asInstanceOf[js.Any])
+    inline def setContentOutlineColor(value: RGBA): Self = StObject.set(x, "contentOutlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentOutlineColorUndefined: Self = StObject.set(x, "contentOutlineColor", js.undefined)
+    inline def setContentOutlineColorUndefined: Self = StObject.set(x, "contentOutlineColor", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }
 }

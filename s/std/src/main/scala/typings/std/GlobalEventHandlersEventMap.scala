@@ -182,8 +182,7 @@ trait GlobalEventHandlersEventMap extends StObject {
 }
 object GlobalEventHandlersEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -276,268 +275,180 @@ object GlobalEventHandlersEventMap {
     __obj.asInstanceOf[GlobalEventHandlersEventMap]
   }
   
-  @scala.inline
-  implicit class GlobalEventHandlersEventMapMutableBuilder[Self <: GlobalEventHandlersEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalEventHandlersEventMap](x: Self) {
     
-    @scala.inline
-    def setAbort(value: UIEvent): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    inline def setAbort(value: UIEvent): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationcancel(value: AnimationEvent): Self = StObject.set(x, "animationcancel", value.asInstanceOf[js.Any])
+    inline def setAnimationcancel(value: AnimationEvent): Self = StObject.set(x, "animationcancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationend(value: AnimationEvent): Self = StObject.set(x, "animationend", value.asInstanceOf[js.Any])
+    inline def setAnimationend(value: AnimationEvent): Self = StObject.set(x, "animationend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationiteration(value: AnimationEvent): Self = StObject.set(x, "animationiteration", value.asInstanceOf[js.Any])
+    inline def setAnimationiteration(value: AnimationEvent): Self = StObject.set(x, "animationiteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationstart(value: AnimationEvent): Self = StObject.set(x, "animationstart", value.asInstanceOf[js.Any])
+    inline def setAnimationstart(value: AnimationEvent): Self = StObject.set(x, "animationstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuxclick(value: MouseEvent): Self = StObject.set(x, "auxclick", value.asInstanceOf[js.Any])
+    inline def setAuxclick(value: MouseEvent): Self = StObject.set(x, "auxclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlur(value: FocusEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: FocusEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancel(value: Event): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Event): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanplay(value: Event): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
+    inline def setCanplay(value: Event): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanplaythrough(value: Event): Self = StObject.set(x, "canplaythrough", value.asInstanceOf[js.Any])
+    inline def setCanplaythrough(value: Event): Self = StObject.set(x, "canplaythrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: MouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: MouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: Event): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: Event): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextmenu(value: MouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+    inline def setContextmenu(value: MouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCuechange(value: Event): Self = StObject.set(x, "cuechange", value.asInstanceOf[js.Any])
+    inline def setCuechange(value: Event): Self = StObject.set(x, "cuechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDblclick(value: MouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
+    inline def setDblclick(value: MouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag(value: DragEvent): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+    inline def setDrag(value: DragEvent): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragend(value: DragEvent): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
+    inline def setDragend(value: DragEvent): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragenter(value: DragEvent): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
+    inline def setDragenter(value: DragEvent): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragexit(value: Event): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
+    inline def setDragexit(value: Event): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragleave(value: DragEvent): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
+    inline def setDragleave(value: DragEvent): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragover(value: DragEvent): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
+    inline def setDragover(value: DragEvent): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragstart(value: DragEvent): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
+    inline def setDragstart(value: DragEvent): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrop(value: DragEvent): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: DragEvent): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationchange(value: Event): Self = StObject.set(x, "durationchange", value.asInstanceOf[js.Any])
+    inline def setDurationchange(value: Event): Self = StObject.set(x, "durationchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptied(value: Event): Self = StObject.set(x, "emptied", value.asInstanceOf[js.Any])
+    inline def setEmptied(value: Event): Self = StObject.set(x, "emptied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: FocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: FocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusin(value: FocusEvent): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
+    inline def setFocusin(value: FocusEvent): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusout(value: FocusEvent): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
+    inline def setFocusout(value: FocusEvent): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGotpointercapture(value: PointerEvent): Self = StObject.set(x, "gotpointercapture", value.asInstanceOf[js.Any])
+    inline def setGotpointercapture(value: PointerEvent): Self = StObject.set(x, "gotpointercapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: Event): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Event): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalid(value: Event): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: Event): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeydown(value: KeyboardEvent): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
+    inline def setKeydown(value: KeyboardEvent): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeypress(value: KeyboardEvent): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
+    inline def setKeypress(value: KeyboardEvent): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyup(value: KeyboardEvent): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
+    inline def setKeyup(value: KeyboardEvent): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: Event): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: Event): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadeddata(value: Event): Self = StObject.set(x, "loadeddata", value.asInstanceOf[js.Any])
+    inline def setLoadeddata(value: Event): Self = StObject.set(x, "loadeddata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedmetadata(value: Event): Self = StObject.set(x, "loadedmetadata", value.asInstanceOf[js.Any])
+    inline def setLoadedmetadata(value: Event): Self = StObject.set(x, "loadedmetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadstart(value: Event): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
+    inline def setLoadstart(value: Event): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLostpointercapture(value: PointerEvent): Self = StObject.set(x, "lostpointercapture", value.asInstanceOf[js.Any])
+    inline def setLostpointercapture(value: PointerEvent): Self = StObject.set(x, "lostpointercapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousedown(value: MouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
+    inline def setMousedown(value: MouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseenter(value: MouseEvent): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
+    inline def setMouseenter(value: MouseEvent): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseleave(value: MouseEvent): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
+    inline def setMouseleave(value: MouseEvent): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousemove(value: MouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
+    inline def setMousemove(value: MouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseout(value: MouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+    inline def setMouseout(value: MouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseover(value: MouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+    inline def setMouseover(value: MouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseup(value: MouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
+    inline def setMouseup(value: MouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: Event): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: Event): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay(value: Event): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: Event): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaying(value: Event): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
+    inline def setPlaying(value: Event): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointercancel(value: PointerEvent): Self = StObject.set(x, "pointercancel", value.asInstanceOf[js.Any])
+    inline def setPointercancel(value: PointerEvent): Self = StObject.set(x, "pointercancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerdown(value: PointerEvent): Self = StObject.set(x, "pointerdown", value.asInstanceOf[js.Any])
+    inline def setPointerdown(value: PointerEvent): Self = StObject.set(x, "pointerdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerenter(value: PointerEvent): Self = StObject.set(x, "pointerenter", value.asInstanceOf[js.Any])
+    inline def setPointerenter(value: PointerEvent): Self = StObject.set(x, "pointerenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerleave(value: PointerEvent): Self = StObject.set(x, "pointerleave", value.asInstanceOf[js.Any])
+    inline def setPointerleave(value: PointerEvent): Self = StObject.set(x, "pointerleave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointermove(value: PointerEvent): Self = StObject.set(x, "pointermove", value.asInstanceOf[js.Any])
+    inline def setPointermove(value: PointerEvent): Self = StObject.set(x, "pointermove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerout(value: PointerEvent): Self = StObject.set(x, "pointerout", value.asInstanceOf[js.Any])
+    inline def setPointerout(value: PointerEvent): Self = StObject.set(x, "pointerout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerover(value: PointerEvent): Self = StObject.set(x, "pointerover", value.asInstanceOf[js.Any])
+    inline def setPointerover(value: PointerEvent): Self = StObject.set(x, "pointerover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerup(value: PointerEvent): Self = StObject.set(x, "pointerup", value.asInstanceOf[js.Any])
+    inline def setPointerup(value: PointerEvent): Self = StObject.set(x, "pointerup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatechange(value: Event): Self = StObject.set(x, "ratechange", value.asInstanceOf[js.Any])
+    inline def setRatechange(value: Event): Self = StObject.set(x, "ratechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: Event): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Event): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResize(value: UIEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: UIEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll(value: Event): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: Event): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecuritypolicyviolation(value: SecurityPolicyViolationEvent): Self = StObject.set(x, "securitypolicyviolation", value.asInstanceOf[js.Any])
+    inline def setSecuritypolicyviolation(value: SecurityPolicyViolationEvent): Self = StObject.set(x, "securitypolicyviolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeeked(value: Event): Self = StObject.set(x, "seeked", value.asInstanceOf[js.Any])
+    inline def setSeeked(value: Event): Self = StObject.set(x, "seeked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeeking(value: Event): Self = StObject.set(x, "seeking", value.asInstanceOf[js.Any])
+    inline def setSeeking(value: Event): Self = StObject.set(x, "seeking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: Event): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: Event): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionchange(value: Event): Self = StObject.set(x, "selectionchange", value.asInstanceOf[js.Any])
+    inline def setSelectionchange(value: Event): Self = StObject.set(x, "selectionchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectstart(value: Event): Self = StObject.set(x, "selectstart", value.asInstanceOf[js.Any])
+    inline def setSelectstart(value: Event): Self = StObject.set(x, "selectstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStalled(value: Event): Self = StObject.set(x, "stalled", value.asInstanceOf[js.Any])
+    inline def setStalled(value: Event): Self = StObject.set(x, "stalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: Event): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+    inline def setSubmit(value: Event): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspend(value: Event): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
+    inline def setSuspend(value: Event): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeupdate(value: Event): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
+    inline def setTimeupdate(value: Event): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggle(value: Event): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    inline def setToggle(value: Event): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchcancel(value: TouchEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
+    inline def setTouchcancel(value: TouchEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchend(value: TouchEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
+    inline def setTouchend(value: TouchEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchmove(value: TouchEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
+    inline def setTouchmove(value: TouchEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchstart(value: TouchEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+    inline def setTouchstart(value: TouchEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitioncancel(value: TransitionEvent): Self = StObject.set(x, "transitioncancel", value.asInstanceOf[js.Any])
+    inline def setTransitioncancel(value: TransitionEvent): Self = StObject.set(x, "transitioncancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionend(value: TransitionEvent): Self = StObject.set(x, "transitionend", value.asInstanceOf[js.Any])
+    inline def setTransitionend(value: TransitionEvent): Self = StObject.set(x, "transitionend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionrun(value: TransitionEvent): Self = StObject.set(x, "transitionrun", value.asInstanceOf[js.Any])
+    inline def setTransitionrun(value: TransitionEvent): Self = StObject.set(x, "transitionrun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionstart(value: TransitionEvent): Self = StObject.set(x, "transitionstart", value.asInstanceOf[js.Any])
+    inline def setTransitionstart(value: TransitionEvent): Self = StObject.set(x, "transitionstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumechange(value: Event): Self = StObject.set(x, "volumechange", value.asInstanceOf[js.Any])
+    inline def setVolumechange(value: Event): Self = StObject.set(x, "volumechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaiting(value: Event): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+    inline def setWaiting(value: Event): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheel(value: WheelEvent): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
+    inline def setWheel(value: WheelEvent): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
   }
 }

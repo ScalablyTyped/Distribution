@@ -15,12 +15,10 @@ object typesMod {
   @JSImport("dd-trace/ext/types", "HTTP")
   @js.native
   def HTTP: http = js.native
-  @scala.inline
-  def HTTP_=(x: http): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP")(x.asInstanceOf[js.Any])
+  inline def HTTP_=(x: http): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP")(x.asInstanceOf[js.Any])
   
   @JSImport("dd-trace/ext/types", "WEB")
   @js.native
   def WEB: web = js.native
-  @scala.inline
-  def WEB_=(x: web): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEB")(x.asInstanceOf[js.Any])
+  inline def WEB_=(x: web): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEB")(x.asInstanceOf[js.Any])
 }

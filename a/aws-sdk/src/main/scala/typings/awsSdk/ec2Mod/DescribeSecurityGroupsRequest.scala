@@ -38,58 +38,41 @@ trait DescribeSecurityGroupsRequest extends StObject {
 }
 object DescribeSecurityGroupsRequest {
   
-  @scala.inline
-  def apply(): DescribeSecurityGroupsRequest = {
+  inline def apply(): DescribeSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSecurityGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSecurityGroupsRequestMutableBuilder[Self <: DescribeSecurityGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecurityGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupIds(value: GroupIdStringList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
+    inline def setGroupIds(value: GroupIdStringList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
+    inline def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
     
-    @scala.inline
-    def setGroupIdsVarargs(value: String*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
+    inline def setGroupIdsVarargs(value: String*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupNames(value: GroupNameStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
+    inline def setGroupNames(value: GroupNameStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
+    inline def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
     
-    @scala.inline
-    def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
+    inline def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeSecurityGroupsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeSecurityGroupsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

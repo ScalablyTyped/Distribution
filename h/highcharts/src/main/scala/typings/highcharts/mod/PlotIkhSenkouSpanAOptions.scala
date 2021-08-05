@@ -10,19 +10,15 @@ trait PlotIkhSenkouSpanAOptions extends StObject {
 }
 object PlotIkhSenkouSpanAOptions {
   
-  @scala.inline
-  def apply(): PlotIkhSenkouSpanAOptions = {
+  inline def apply(): PlotIkhSenkouSpanAOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotIkhSenkouSpanAOptions]
   }
   
-  @scala.inline
-  implicit class PlotIkhSenkouSpanAOptionsMutableBuilder[Self <: PlotIkhSenkouSpanAOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotIkhSenkouSpanAOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotIkhSenkouSpanAStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotIkhSenkouSpanAStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdNumberingRule extends StObject
 object WdNumberingRule {
   
-  @scala.inline
-  def wdRestartContinuous: `0` = 0.asInstanceOf[`0`]
+  inline def wdRestartContinuous: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRestartPage: `2` = 2.asInstanceOf[`2`]
+  inline def wdRestartPage: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdRestartSection: `1` = 1.asInstanceOf[`1`]
+  inline def wdRestartSection: `1` = 1.asInstanceOf[`1`]
 }

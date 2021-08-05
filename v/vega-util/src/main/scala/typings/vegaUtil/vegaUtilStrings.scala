@@ -11,28 +11,23 @@ object vegaUtilStrings {
   sealed trait ascending
     extends StObject
        with Order
-  @scala.inline
-  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  inline def ascending: ascending = "ascending".asInstanceOf[ascending]
   
   @js.native
   sealed trait center extends StObject
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait descending
     extends StObject
        with Order
-  @scala.inline
-  def descending: descending = "descending".asInstanceOf[descending]
+  inline def descending: descending = "descending".asInstanceOf[descending]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
 }

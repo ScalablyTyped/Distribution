@@ -20,8 +20,7 @@ trait StructureWall
 }
 object StructureWall {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -38,10 +37,8 @@ object StructureWall {
     __obj.asInstanceOf[StructureWall]
   }
   
-  @scala.inline
-  implicit class StructureWallMutableBuilder[Self <: StructureWall] (val x: Self) extends AnyVal {
+  extension [Self <: StructureWall](x: Self) {
     
-    @scala.inline
-    def setTicksToLive(value: Double): Self = StObject.set(x, "ticksToLive", value.asInstanceOf[js.Any])
+    inline def setTicksToLive(value: Double): Self = StObject.set(x, "ticksToLive", value.asInstanceOf[js.Any])
   }
 }

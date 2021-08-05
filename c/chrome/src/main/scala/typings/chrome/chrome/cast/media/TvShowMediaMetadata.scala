@@ -38,8 +38,7 @@ trait TvShowMediaMetadata extends StObject {
 }
 object TvShowMediaMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     episode: Double,
     episodeNumber: Double,
     episodeTitle: String,
@@ -58,46 +57,32 @@ object TvShowMediaMetadata {
     __obj.asInstanceOf[TvShowMediaMetadata]
   }
   
-  @scala.inline
-  implicit class TvShowMediaMetadataMutableBuilder[Self <: TvShowMediaMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TvShowMediaMetadata](x: Self) {
     
-    @scala.inline
-    def setEpisode(value: Double): Self = StObject.set(x, "episode", value.asInstanceOf[js.Any])
+    inline def setEpisode(value: Double): Self = StObject.set(x, "episode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpisodeNumber(value: Double): Self = StObject.set(x, "episodeNumber", value.asInstanceOf[js.Any])
+    inline def setEpisodeNumber(value: Double): Self = StObject.set(x, "episodeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpisodeTitle(value: String): Self = StObject.set(x, "episodeTitle", value.asInstanceOf[js.Any])
+    inline def setEpisodeTitle(value: String): Self = StObject.set(x, "episodeTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
+    inline def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalAirdate(value: String): Self = StObject.set(x, "originalAirdate", value.asInstanceOf[js.Any])
+    inline def setOriginalAirdate(value: String): Self = StObject.set(x, "originalAirdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
+    inline def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeason(value: Double): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+    inline def setSeason(value: Double): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeasonNumber(value: Double): Self = StObject.set(x, "seasonNumber", value.asInstanceOf[js.Any])
+    inline def setSeasonNumber(value: Double): Self = StObject.set(x, "seasonNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTitle(value: String): Self = StObject.set(x, "seriesTitle", value.asInstanceOf[js.Any])
+    inline def setSeriesTitle(value: String): Self = StObject.set(x, "seriesTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

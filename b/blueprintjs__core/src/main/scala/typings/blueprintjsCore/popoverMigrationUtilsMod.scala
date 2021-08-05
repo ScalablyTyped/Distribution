@@ -12,6 +12,5 @@ object popoverMigrationUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def positionToPlacement(position: PopoverPosition): Placement = ^.asInstanceOf[js.Dynamic].applyDynamic("positionToPlacement")(position.asInstanceOf[js.Any]).asInstanceOf[Placement]
+  inline def positionToPlacement(position: PopoverPosition): Placement = ^.asInstanceOf[js.Dynamic].applyDynamic("positionToPlacement")(position.asInstanceOf[js.Any]).asInstanceOf[Placement]
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.CPrintManagerTemplatePrinter")
 @js.native
-class CPrintManagerTemplatePrinter protected ()
+/* private */ class CPrintManagerTemplatePrinter ()
   extends StObject
      with typings.activexMshtml.MSHTML.CPrintManagerTemplatePrinter {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.CPrintManagerTemplatePrinter_typekey")
   var MSHTMLDotCPrintManagerTemplatePrinter_typekey: typings.activexMshtml.MSHTML.CPrintManagerTemplatePrinter = js.native
   

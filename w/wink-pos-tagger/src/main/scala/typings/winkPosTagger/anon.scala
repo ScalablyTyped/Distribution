@@ -15,20 +15,16 @@ object anon {
   }
   object Lemma {
     
-    @scala.inline
-    def apply(): Lemma = {
+    inline def apply(): Lemma = {
       val __obj = js.Dynamic.literal(lemma = true, normal = true)
       __obj.asInstanceOf[Lemma]
     }
     
-    @scala.inline
-    implicit class LemmaMutableBuilder[Self <: Lemma] (val x: Self) extends AnyVal {
+    extension [Self <: Lemma](x: Self) {
       
-      @scala.inline
-      def setLemma(value: `true`): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
+      inline def setLemma(value: `true`): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormal(value: `true`): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+      inline def setNormal(value: `true`): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     }
   }
 }

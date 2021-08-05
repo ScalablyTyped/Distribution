@@ -10,16 +10,13 @@ trait UsersResource extends StObject {
 }
 object UsersResource {
   
-  @scala.inline
-  def apply(sessions: SessionsResource): UsersResource = {
+  inline def apply(sessions: SessionsResource): UsersResource = {
     val __obj = js.Dynamic.literal(sessions = sessions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersResource]
   }
   
-  @scala.inline
-  implicit class UsersResourceMutableBuilder[Self <: UsersResource] (val x: Self) extends AnyVal {
+  extension [Self <: UsersResource](x: Self) {
     
-    @scala.inline
-    def setSessions(value: SessionsResource): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+    inline def setSessions(value: SessionsResource): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
   }
 }

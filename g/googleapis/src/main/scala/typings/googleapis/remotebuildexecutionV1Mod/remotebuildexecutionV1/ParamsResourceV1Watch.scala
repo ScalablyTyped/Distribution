@@ -67,31 +67,23 @@ trait ParamsResourceV1Watch
 }
 object ParamsResourceV1Watch {
   
-  @scala.inline
-  def apply(): ParamsResourceV1Watch = {
+  inline def apply(): ParamsResourceV1Watch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceV1Watch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceV1WatchMutableBuilder[Self <: ParamsResourceV1Watch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceV1Watch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setResumeMarker(value: String): Self = StObject.set(x, "resumeMarker", value.asInstanceOf[js.Any])
+    inline def setResumeMarker(value: String): Self = StObject.set(x, "resumeMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeMarkerUndefined: Self = StObject.set(x, "resumeMarker", js.undefined)
+    inline def setResumeMarkerUndefined: Self = StObject.set(x, "resumeMarker", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

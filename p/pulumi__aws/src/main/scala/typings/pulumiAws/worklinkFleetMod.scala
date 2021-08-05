@@ -99,21 +99,16 @@ object worklinkFleetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
     
     /**
       * Returns true if the given object is an instance of Fleet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/worklink/fleet.Fleet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/worklink/fleet.Fleet */ Boolean]
   }
   
   trait FleetArgs extends StObject {
@@ -155,56 +150,40 @@ object worklinkFleetMod {
   }
   object FleetArgs {
     
-    @scala.inline
-    def apply(): FleetArgs = {
+    inline def apply(): FleetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FleetArgs]
     }
     
-    @scala.inline
-    implicit class FleetArgsMutableBuilder[Self <: FleetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FleetArgs](x: Self) {
       
-      @scala.inline
-      def setAuditStreamArn(value: Input[String]): Self = StObject.set(x, "auditStreamArn", value.asInstanceOf[js.Any])
+      inline def setAuditStreamArn(value: Input[String]): Self = StObject.set(x, "auditStreamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuditStreamArnUndefined: Self = StObject.set(x, "auditStreamArn", js.undefined)
+      inline def setAuditStreamArnUndefined: Self = StObject.set(x, "auditStreamArn", js.undefined)
       
-      @scala.inline
-      def setDeviceCaCertificate(value: Input[String]): Self = StObject.set(x, "deviceCaCertificate", value.asInstanceOf[js.Any])
+      inline def setDeviceCaCertificate(value: Input[String]): Self = StObject.set(x, "deviceCaCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceCaCertificateUndefined: Self = StObject.set(x, "deviceCaCertificate", js.undefined)
+      inline def setDeviceCaCertificateUndefined: Self = StObject.set(x, "deviceCaCertificate", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setIdentityProvider(value: Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
+      inline def setIdentityProvider(value: Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityProviderUndefined: Self = StObject.set(x, "identityProvider", js.undefined)
+      inline def setIdentityProviderUndefined: Self = StObject.set(x, "identityProvider", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetwork(value: Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+      inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
       
-      @scala.inline
-      def setOptimizeForEndUserLocation(value: Input[Boolean]): Self = StObject.set(x, "optimizeForEndUserLocation", value.asInstanceOf[js.Any])
+      inline def setOptimizeForEndUserLocation(value: Input[Boolean]): Self = StObject.set(x, "optimizeForEndUserLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizeForEndUserLocationUndefined: Self = StObject.set(x, "optimizeForEndUserLocation", js.undefined)
+      inline def setOptimizeForEndUserLocationUndefined: Self = StObject.set(x, "optimizeForEndUserLocation", js.undefined)
     }
   }
   
@@ -267,80 +246,56 @@ object worklinkFleetMod {
   }
   object FleetState {
     
-    @scala.inline
-    def apply(): FleetState = {
+    inline def apply(): FleetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FleetState]
     }
     
-    @scala.inline
-    implicit class FleetStateMutableBuilder[Self <: FleetState] (val x: Self) extends AnyVal {
+    extension [Self <: FleetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAuditStreamArn(value: Input[String]): Self = StObject.set(x, "auditStreamArn", value.asInstanceOf[js.Any])
+      inline def setAuditStreamArn(value: Input[String]): Self = StObject.set(x, "auditStreamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuditStreamArnUndefined: Self = StObject.set(x, "auditStreamArn", js.undefined)
+      inline def setAuditStreamArnUndefined: Self = StObject.set(x, "auditStreamArn", js.undefined)
       
-      @scala.inline
-      def setCompanyCode(value: Input[String]): Self = StObject.set(x, "companyCode", value.asInstanceOf[js.Any])
+      inline def setCompanyCode(value: Input[String]): Self = StObject.set(x, "companyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompanyCodeUndefined: Self = StObject.set(x, "companyCode", js.undefined)
+      inline def setCompanyCodeUndefined: Self = StObject.set(x, "companyCode", js.undefined)
       
-      @scala.inline
-      def setCreatedTime(value: Input[String]): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+      inline def setCreatedTime(value: Input[String]): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+      inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
       
-      @scala.inline
-      def setDeviceCaCertificate(value: Input[String]): Self = StObject.set(x, "deviceCaCertificate", value.asInstanceOf[js.Any])
+      inline def setDeviceCaCertificate(value: Input[String]): Self = StObject.set(x, "deviceCaCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceCaCertificateUndefined: Self = StObject.set(x, "deviceCaCertificate", js.undefined)
+      inline def setDeviceCaCertificateUndefined: Self = StObject.set(x, "deviceCaCertificate", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setIdentityProvider(value: Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
+      inline def setIdentityProvider(value: Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityProviderUndefined: Self = StObject.set(x, "identityProvider", js.undefined)
+      inline def setIdentityProviderUndefined: Self = StObject.set(x, "identityProvider", js.undefined)
       
-      @scala.inline
-      def setLastUpdatedTime(value: Input[String]): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedTime(value: Input[String]): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+      inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetwork(value: Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+      inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
       
-      @scala.inline
-      def setOptimizeForEndUserLocation(value: Input[Boolean]): Self = StObject.set(x, "optimizeForEndUserLocation", value.asInstanceOf[js.Any])
+      inline def setOptimizeForEndUserLocation(value: Input[Boolean]): Self = StObject.set(x, "optimizeForEndUserLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizeForEndUserLocationUndefined: Self = StObject.set(x, "optimizeForEndUserLocation", js.undefined)
+      inline def setOptimizeForEndUserLocationUndefined: Self = StObject.set(x, "optimizeForEndUserLocation", js.undefined)
     }
   }
 }

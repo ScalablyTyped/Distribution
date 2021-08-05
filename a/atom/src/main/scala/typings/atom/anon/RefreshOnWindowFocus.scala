@@ -10,19 +10,15 @@ trait RefreshOnWindowFocus extends StObject {
 }
 object RefreshOnWindowFocus {
   
-  @scala.inline
-  def apply(): RefreshOnWindowFocus = {
+  inline def apply(): RefreshOnWindowFocus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshOnWindowFocus]
   }
   
-  @scala.inline
-  implicit class RefreshOnWindowFocusMutableBuilder[Self <: RefreshOnWindowFocus] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshOnWindowFocus](x: Self) {
     
-    @scala.inline
-    def setRefreshOnWindowFocus(value: Boolean): Self = StObject.set(x, "refreshOnWindowFocus", value.asInstanceOf[js.Any])
+    inline def setRefreshOnWindowFocus(value: Boolean): Self = StObject.set(x, "refreshOnWindowFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshOnWindowFocusUndefined: Self = StObject.set(x, "refreshOnWindowFocus", js.undefined)
+    inline def setRefreshOnWindowFocusUndefined: Self = StObject.set(x, "refreshOnWindowFocus", js.undefined)
   }
 }

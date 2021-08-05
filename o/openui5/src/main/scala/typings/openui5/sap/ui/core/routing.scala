@@ -120,8 +120,7 @@ object routing {
   }
   object History {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDirection: String => js.Any,
       getInstance: () => typings.openui5.sap.ui.core.routing.History,
       getPreviousHash: () => String
@@ -130,17 +129,13 @@ object routing {
       __obj.asInstanceOf[typings.openui5.sap.ui.core.routing.History]
     }
     
-    @scala.inline
-    implicit class HistoryMutableBuilder[Self <: typings.openui5.sap.ui.core.routing.History] (val x: Self) extends AnyVal {
+    extension [Self <: typings.openui5.sap.ui.core.routing.History](x: Self) {
       
-      @scala.inline
-      def setGetDirection(value: String => js.Any): Self = StObject.set(x, "getDirection", js.Any.fromFunction1(value))
+      inline def setGetDirection(value: String => js.Any): Self = StObject.set(x, "getDirection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetInstance(value: () => typings.openui5.sap.ui.core.routing.History): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
+      inline def setGetInstance(value: () => typings.openui5.sap.ui.core.routing.History): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreviousHash(value: () => String): Self = StObject.set(x, "getPreviousHash", js.Any.fromFunction0(value))
+      inline def setGetPreviousHash(value: () => String): Self = StObject.set(x, "getPreviousHash", js.Any.fromFunction0(value))
     }
   }
   

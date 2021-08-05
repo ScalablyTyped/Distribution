@@ -13,19 +13,15 @@ trait EnableAllFeaturesResponse extends StObject {
 }
 object EnableAllFeaturesResponse {
   
-  @scala.inline
-  def apply(): EnableAllFeaturesResponse = {
+  inline def apply(): EnableAllFeaturesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableAllFeaturesResponse]
   }
   
-  @scala.inline
-  implicit class EnableAllFeaturesResponseMutableBuilder[Self <: EnableAllFeaturesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EnableAllFeaturesResponse](x: Self) {
     
-    @scala.inline
-    def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
+    inline def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
+    inline def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
   }
 }

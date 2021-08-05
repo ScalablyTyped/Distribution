@@ -19,23 +19,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object StaticBlock_ {
   
-  @scala.inline
-  def apply(body: js.Array[Statement]): StaticBlock_ = {
+  inline def apply(body: js.Array[Statement]): StaticBlock_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("StaticBlock")
     __obj.asInstanceOf[StaticBlock_]
   }
   
-  @scala.inline
-  implicit class StaticBlock_MutableBuilder[Self <: StaticBlock_] (val x: Self) extends AnyVal {
+  extension [Self <: StaticBlock_](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: StaticBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StaticBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -21,14 +21,12 @@ object ClockIdentifiers {
   @JSGlobal("Windows.Globalization.ClockIdentifiers.twelveHour")
   @js.native
   def twelveHour: String = js.native
-  @scala.inline
-  def twelveHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twelveHour")(x.asInstanceOf[js.Any])
+  inline def twelveHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twelveHour")(x.asInstanceOf[js.Any])
   
   /** Gets the identifier for a 24-hour clock. */
   /* static member */
   @JSGlobal("Windows.Globalization.ClockIdentifiers.twentyFourHour")
   @js.native
   def twentyFourHour: String = js.native
-  @scala.inline
-  def twentyFourHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twentyFourHour")(x.asInstanceOf[js.Any])
+  inline def twentyFourHour_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twentyFourHour")(x.asInstanceOf[js.Any])
 }

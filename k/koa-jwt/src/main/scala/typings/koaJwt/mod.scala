@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): Middleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def apply(options: Options): Middleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   @JSImport("koa-jwt", JSImport.Namespace)
   @js.native
@@ -59,96 +58,68 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Options = {
+    inline def apply(secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Options = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
       
-      @scala.inline
-      def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setGetToken(value: (/* ctx */ Context, Options) => String): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
+      inline def setGetToken(value: (/* ctx */ Context, Options) => String): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
+      inline def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
       
-      @scala.inline
-      def setIsRevoked(
+      inline def setIsRevoked(
         value: (/* ctx */ Context, /* decodedToken */ js.Object, /* token */ String) => js.Promise[Boolean]
       ): Self = StObject.set(x, "isRevoked", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIsRevokedUndefined: Self = StObject.set(x, "isRevoked", js.undefined)
+      inline def setIsRevokedUndefined: Self = StObject.set(x, "isRevoked", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String | js.Array[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String | js.Array[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      @scala.inline
-      def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
+      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
+      inline def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
+      inline def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretFunction2(
+      inline def setSecretFunction2(
         value: (/* header */ js.Any, /* payload */ js.Any) => js.Promise[String | (js.Array[Buffer | String]) | Buffer]
       ): Self = StObject.set(x, "secret", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSecretVarargs(value: (Buffer | String)*): Self = StObject.set(x, "secret", js.Array(value :_*))
+      inline def setSecretVarargs(value: (Buffer | String)*): Self = StObject.set(x, "secret", js.Array(value :_*))
       
-      @scala.inline
-      def setTokenKey(value: String): Self = StObject.set(x, "tokenKey", value.asInstanceOf[js.Any])
+      inline def setTokenKey(value: String): Self = StObject.set(x, "tokenKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenKeyUndefined: Self = StObject.set(x, "tokenKey", js.undefined)
+      inline def setTokenKeyUndefined: Self = StObject.set(x, "tokenKey", js.undefined)
     }
   }
   

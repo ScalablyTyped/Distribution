@@ -15,25 +15,19 @@ trait Histogram extends StObject {
 }
 object Histogram {
   
-  @scala.inline
-  def apply(): Histogram = {
+  inline def apply(): Histogram = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Histogram]
   }
   
-  @scala.inline
-  implicit class HistogramMutableBuilder[Self <: Histogram] (val x: Self) extends AnyVal {
+  extension [Self <: Histogram](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
   }
 }

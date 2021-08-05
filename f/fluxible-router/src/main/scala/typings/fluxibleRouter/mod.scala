@@ -66,12 +66,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def withStaticRoutes(routes: js.Object): TypeofRouteStore = ^.asInstanceOf[js.Dynamic].applyDynamic("withStaticRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[TypeofRouteStore]
+    inline def withStaticRoutes(routes: js.Object): TypeofRouteStore = ^.asInstanceOf[js.Dynamic].applyDynamic("withStaticRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[TypeofRouteStore]
   }
   
-  @scala.inline
-  def handleHistory(
+  inline def handleHistory(
     Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
@@ -83,8 +81,7 @@ object mod {
     /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
     Component[js.Object, js.Object, js.Object]
   ])]
-  @scala.inline
-  def handleHistory(
+  inline def handleHistory(
     Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
@@ -98,6 +95,5 @@ object mod {
     Component[js.Object, js.Object, js.Object]
   ])]
   
-  @scala.inline
-  def navigateAction(context: FluxibleContext, params: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateAction")(context.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def navigateAction(context: FluxibleContext, params: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateAction")(context.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

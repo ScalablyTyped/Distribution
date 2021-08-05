@@ -10,16 +10,13 @@ trait ContextPrefix extends StObject {
 }
 object ContextPrefix {
   
-  @scala.inline
-  def apply(contextPrefix: String): ContextPrefix = {
+  inline def apply(contextPrefix: String): ContextPrefix = {
     val __obj = js.Dynamic.literal(contextPrefix = contextPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextPrefix]
   }
   
-  @scala.inline
-  implicit class ContextPrefixMutableBuilder[Self <: ContextPrefix] (val x: Self) extends AnyVal {
+  extension [Self <: ContextPrefix](x: Self) {
     
-    @scala.inline
-    def setContextPrefix(value: String): Self = StObject.set(x, "contextPrefix", value.asInstanceOf[js.Any])
+    inline def setContextPrefix(value: String): Self = StObject.set(x, "contextPrefix", value.asInstanceOf[js.Any])
   }
 }

@@ -20,17 +20,14 @@ object typesDeleteQueueOutputMod {
   }
   object DeleteQueueOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteQueueOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteQueueOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteQueueOutput]
     }
     
-    @scala.inline
-    implicit class DeleteQueueOutputMutableBuilder[Self <: DeleteQueueOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteQueueOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,31 +16,23 @@ trait Key extends StObject {
 }
 object Key {
   
-  @scala.inline
-  def apply(key: String, name: Unit): Key = {
+  inline def apply(key: String, name: Unit): Key = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
-  @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+  extension [Self <: Key](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
-    @scala.inline
-    def setName(value: Unit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Unit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.WrapFormat")
 @js.native
-class WrapFormat protected ()
+/* private */ class WrapFormat ()
   extends StObject
      with typings.activexWord.Word.WrapFormat {
   
@@ -42,7 +42,7 @@ class WrapFormat protected ()
   /* CompleteClass */
   var Type: WdWrapType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.WrapFormat_typekey")
   var WordDotWrapFormat_typekey: typings.activexWord.Word.WrapFormat = js.native
 }

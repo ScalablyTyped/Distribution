@@ -43,55 +43,39 @@ trait PluginObjectItem extends StObject {
 }
 object PluginObjectItem {
   
-  @scala.inline
-  def apply(): PluginObjectItem = {
+  inline def apply(): PluginObjectItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PluginObjectItem]
   }
   
-  @scala.inline
-  implicit class PluginObjectItemMutableBuilder[Self <: PluginObjectItem] (val x: Self) extends AnyVal {
+  extension [Self <: PluginObjectItem](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    @scala.inline
-    def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+    inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
-    @scala.inline
-    def setSceneKey(value: String): Self = StObject.set(x, "sceneKey", value.asInstanceOf[js.Any])
+    inline def setSceneKey(value: String): Self = StObject.set(x, "sceneKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneKeyUndefined: Self = StObject.set(x, "sceneKey", js.undefined)
+    inline def setSceneKeyUndefined: Self = StObject.set(x, "sceneKey", js.undefined)
     
-    @scala.inline
-    def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemKeyUndefined: Self = StObject.set(x, "systemKey", js.undefined)
+    inline def setSystemKeyUndefined: Self = StObject.set(x, "systemKey", js.undefined)
   }
 }

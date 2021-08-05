@@ -13,16 +13,13 @@ trait DeleteMatchmakingRuleSetInput extends StObject {
 }
 object DeleteMatchmakingRuleSetInput {
   
-  @scala.inline
-  def apply(Name: MatchmakingRuleSetName): DeleteMatchmakingRuleSetInput = {
+  inline def apply(Name: MatchmakingRuleSetName): DeleteMatchmakingRuleSetInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMatchmakingRuleSetInput]
   }
   
-  @scala.inline
-  implicit class DeleteMatchmakingRuleSetInputMutableBuilder[Self <: DeleteMatchmakingRuleSetInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMatchmakingRuleSetInput](x: Self) {
     
-    @scala.inline
-    def setName(value: MatchmakingRuleSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: MatchmakingRuleSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

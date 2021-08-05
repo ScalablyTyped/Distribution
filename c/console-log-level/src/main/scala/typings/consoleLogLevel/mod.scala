@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: Options): Logger = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def apply(opts: Options): Logger = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   @JSImport("console-log-level", JSImport.Namespace)
   @js.native
@@ -24,23 +23,17 @@ object mod {
   trait LogLevelNames extends StObject
   object LogLevelNames {
     
-    @scala.inline
-    def debug: typings.consoleLogLevel.consoleLogLevelStrings.debug = "debug".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.debug]
+    inline def debug: typings.consoleLogLevel.consoleLogLevelStrings.debug = "debug".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.debug]
     
-    @scala.inline
-    def error: typings.consoleLogLevel.consoleLogLevelStrings.error = "error".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.error]
+    inline def error: typings.consoleLogLevel.consoleLogLevelStrings.error = "error".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.error]
     
-    @scala.inline
-    def fatal: typings.consoleLogLevel.consoleLogLevelStrings.fatal = "fatal".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.fatal]
+    inline def fatal: typings.consoleLogLevel.consoleLogLevelStrings.fatal = "fatal".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.fatal]
     
-    @scala.inline
-    def info: typings.consoleLogLevel.consoleLogLevelStrings.info = "info".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.info]
+    inline def info: typings.consoleLogLevel.consoleLogLevelStrings.info = "info".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.info]
     
-    @scala.inline
-    def trace: typings.consoleLogLevel.consoleLogLevelStrings.trace = "trace".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.trace]
+    inline def trace: typings.consoleLogLevel.consoleLogLevelStrings.trace = "trace".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.trace]
     
-    @scala.inline
-    def warn: typings.consoleLogLevel.consoleLogLevelStrings.warn = "warn".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.warn]
+    inline def warn: typings.consoleLogLevel.consoleLogLevelStrings.warn = "warn".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.warn]
   }
   
   /* Inlined std.Record<console-log-level.console-log-level.LogLevelNames, (args : ...any): void> */
@@ -72,8 +65,7 @@ object mod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: /* repeated */ js.Any => Unit,
       error: /* repeated */ js.Any => Unit,
       fatal: /* repeated */ js.Any => Unit,
@@ -85,26 +77,19 @@ object mod {
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
+      inline def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -118,35 +103,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLevel(value: LogLevelNames): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevelNames): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String | PrefixFunction): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String | PrefixFunction): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixFunction1(value: /* level */ String => String): Self = StObject.set(x, "prefix", js.Any.fromFunction1(value))
+      inline def setPrefixFunction1(value: /* level */ String => String): Self = StObject.set(x, "prefix", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     }
   }
   

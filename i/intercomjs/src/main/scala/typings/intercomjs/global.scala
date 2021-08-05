@@ -10,6 +10,5 @@ object global {
   @js.native
   def Intercom_ : IntercomStatic = js.native
   
-  @scala.inline
-  def Intercom__=(x: IntercomStatic): Unit = js.Dynamic.global.updateDynamic("Intercom")(x.asInstanceOf[js.Any])
+  inline def Intercom__=(x: IntercomStatic): Unit = js.Dynamic.global.updateDynamic("Intercom")(x.asInstanceOf[js.Any])
 }

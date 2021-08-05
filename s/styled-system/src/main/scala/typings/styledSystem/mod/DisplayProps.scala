@@ -22,31 +22,25 @@ trait DisplayProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObje
 }
 object DisplayProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): DisplayProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): DisplayProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class DisplayPropsMutableBuilder[Self <: DisplayProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & DisplayProps[ThemeType]) extends AnyVal {
+  extension [Self <: DisplayProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & DisplayProps[ThemeType]) {
     
-    @scala.inline
-    def setDisplay(
+    inline def setDisplay(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNull: Self = StObject.set(x, "display", null)
+    inline def setDisplayNull: Self = StObject.set(x, "display", null)
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setDisplayVarargs(
+    inline def setDisplayVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
     ): Self = StObject.set(x, "display", js.Array(value :_*))
   }

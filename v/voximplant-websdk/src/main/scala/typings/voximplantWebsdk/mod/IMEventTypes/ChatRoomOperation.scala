@@ -30,22 +30,17 @@ trait ChatRoomOperation
 }
 object ChatRoomOperation {
   
-  @scala.inline
-  def apply(operation: ChatRoomOperationType, result: Boolean, room: String): ChatRoomOperation = {
+  inline def apply(operation: ChatRoomOperationType, result: Boolean, room: String): ChatRoomOperation = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomOperation]
   }
   
-  @scala.inline
-  implicit class ChatRoomOperationMutableBuilder[Self <: ChatRoomOperation] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomOperation](x: Self) {
     
-    @scala.inline
-    def setOperation(value: ChatRoomOperationType): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: ChatRoomOperationType): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

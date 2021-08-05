@@ -10,16 +10,13 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(brands: BrandsResource): ProjectsResource = {
+  inline def apply(brands: BrandsResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(brands = brands.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setBrands(value: BrandsResource): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
+    inline def setBrands(value: BrandsResource): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
   }
 }

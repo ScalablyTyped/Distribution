@@ -18,22 +18,17 @@ trait JSZipGeneratorOptions extends StObject {
 }
 object JSZipGeneratorOptions {
   
-  @scala.inline
-  def apply(compression: STORE | DEFLATE): JSZipGeneratorOptions = {
+  inline def apply(compression: STORE | DEFLATE): JSZipGeneratorOptions = {
     val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any], compressionOptions = null)
     __obj.asInstanceOf[JSZipGeneratorOptions]
   }
   
-  @scala.inline
-  implicit class JSZipGeneratorOptionsMutableBuilder[Self <: JSZipGeneratorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JSZipGeneratorOptions](x: Self) {
     
-    @scala.inline
-    def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+    inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+    inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
   }
 }

@@ -33,8 +33,7 @@ trait ConnectionProvider
 }
 object ConnectionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelConnect: String => Thenable[Boolean],
     changeDatabase: (String, String) => Thenable[Boolean],
     connect: (String, ConnectionInfo) => Thenable[Boolean],
@@ -51,43 +50,30 @@ object ConnectionProvider {
     __obj.asInstanceOf[ConnectionProvider]
   }
   
-  @scala.inline
-  implicit class ConnectionProviderMutableBuilder[Self <: ConnectionProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionProvider](x: Self) {
     
-    @scala.inline
-    def setBuildConnectionInfo(value: /* connectionString */ String => Thenable[ConnectionInfo]): Self = StObject.set(x, "buildConnectionInfo", js.Any.fromFunction1(value))
+    inline def setBuildConnectionInfo(value: /* connectionString */ String => Thenable[ConnectionInfo]): Self = StObject.set(x, "buildConnectionInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuildConnectionInfoUndefined: Self = StObject.set(x, "buildConnectionInfo", js.undefined)
+    inline def setBuildConnectionInfoUndefined: Self = StObject.set(x, "buildConnectionInfo", js.undefined)
     
-    @scala.inline
-    def setCancelConnect(value: String => Thenable[Boolean]): Self = StObject.set(x, "cancelConnect", js.Any.fromFunction1(value))
+    inline def setCancelConnect(value: String => Thenable[Boolean]): Self = StObject.set(x, "cancelConnect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeDatabase(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "changeDatabase", js.Any.fromFunction2(value))
+    inline def setChangeDatabase(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "changeDatabase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConnect(value: (String, ConnectionInfo) => Thenable[Boolean]): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
+    inline def setConnect(value: (String, ConnectionInfo) => Thenable[Boolean]): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisconnect(value: String => Thenable[Boolean]): Self = StObject.set(x, "disconnect", js.Any.fromFunction1(value))
+    inline def setDisconnect(value: String => Thenable[Boolean]): Self = StObject.set(x, "disconnect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetConnectionString(value: (String, Boolean) => Thenable[String]): Self = StObject.set(x, "getConnectionString", js.Any.fromFunction2(value))
+    inline def setGetConnectionString(value: (String, Boolean) => Thenable[String]): Self = StObject.set(x, "getConnectionString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setListDatabases(value: String => Thenable[ListDatabasesResult]): Self = StObject.set(x, "listDatabases", js.Any.fromFunction1(value))
+    inline def setListDatabases(value: String => Thenable[ListDatabasesResult]): Self = StObject.set(x, "listDatabases", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRebuildIntelliSenseCache(value: String => Thenable[Unit]): Self = StObject.set(x, "rebuildIntelliSenseCache", js.Any.fromFunction1(value))
+    inline def setRebuildIntelliSenseCache(value: String => Thenable[Unit]): Self = StObject.set(x, "rebuildIntelliSenseCache", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnConnectionChanged(value: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionChanged", js.Any.fromFunction1(value))
+    inline def setRegisterOnConnectionChanged(value: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnConnectionComplete(value: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionComplete", js.Any.fromFunction1(value))
+    inline def setRegisterOnConnectionComplete(value: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnIntelliSenseCacheComplete(value: js.Function1[/* connectionUri */ String, js.Any] => Unit): Self = StObject.set(x, "registerOnIntelliSenseCacheComplete", js.Any.fromFunction1(value))
+    inline def setRegisterOnIntelliSenseCacheComplete(value: js.Function1[/* connectionUri */ String, js.Any] => Unit): Self = StObject.set(x, "registerOnIntelliSenseCacheComplete", js.Any.fromFunction1(value))
   }
 }

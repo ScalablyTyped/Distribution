@@ -14,19 +14,15 @@ trait PushNodesByBackendIdsToFrontendResponse extends StObject {
 }
 object PushNodesByBackendIdsToFrontendResponse {
   
-  @scala.inline
-  def apply(nodeIds: js.Array[NodeId]): PushNodesByBackendIdsToFrontendResponse = {
+  inline def apply(nodeIds: js.Array[NodeId]): PushNodesByBackendIdsToFrontendResponse = {
     val __obj = js.Dynamic.literal(nodeIds = nodeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNodesByBackendIdsToFrontendResponse]
   }
   
-  @scala.inline
-  implicit class PushNodesByBackendIdsToFrontendResponseMutableBuilder[Self <: PushNodesByBackendIdsToFrontendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PushNodesByBackendIdsToFrontendResponse](x: Self) {
     
-    @scala.inline
-    def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
   }
 }

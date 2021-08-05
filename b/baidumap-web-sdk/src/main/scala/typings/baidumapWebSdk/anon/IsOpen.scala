@@ -14,23 +14,18 @@ trait IsOpen extends StObject {
 }
 object IsOpen {
   
-  @scala.inline
-  def apply(isOpen: Boolean, target: js.Any, `type`: String): IsOpen = {
+  inline def apply(isOpen: Boolean, target: js.Any, `type`: String): IsOpen = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsOpen]
   }
   
-  @scala.inline
-  implicit class IsOpenMutableBuilder[Self <: IsOpen] (val x: Self) extends AnyVal {
+  extension [Self <: IsOpen](x: Self) {
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

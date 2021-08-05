@@ -11,6 +11,5 @@ object typeScriptSupportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assertTypeScriptSupport(configuration: TypeScriptReporterConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScriptSupport")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assertTypeScriptSupport(configuration: TypeScriptReporterConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScriptSupport")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

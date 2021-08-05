@@ -12,19 +12,15 @@ trait Module extends StObject {
 }
 object Module {
   
-  @scala.inline
-  def apply(name: String, path: String): Module = {
+  inline def apply(name: String, path: String): Module = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
   
-  @scala.inline
-  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+  extension [Self <: Module](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

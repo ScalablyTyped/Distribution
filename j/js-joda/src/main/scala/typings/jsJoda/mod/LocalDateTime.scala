@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "LocalDateTime")
 @js.native
-class LocalDateTime protected () extends ChronoLocalDateTime {
+/* private */ class LocalDateTime () extends ChronoLocalDateTime {
   
   def adjustInto(temporal: TemporalAdjuster): LocalDateTime = js.native
   
@@ -133,34 +133,26 @@ object LocalDateTime {
   @JSImport("js-joda", "LocalDateTime.MAX")
   @js.native
   def MAX: LocalDateTime = js.native
-  @scala.inline
-  def MAX_=(x: LocalDateTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX")(x.asInstanceOf[js.Any])
+  inline def MAX_=(x: LocalDateTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "LocalDateTime.MIN")
   @js.native
   def MIN: LocalDateTime = js.native
-  @scala.inline
-  def MIN_=(x: LocalDateTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN")(x.asInstanceOf[js.Any])
+  inline def MIN_=(x: LocalDateTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def from(temporal: TemporalAccessor): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
+  inline def from(temporal: TemporalAccessor): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
   
   /* static member */
-  @scala.inline
-  def now(): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalDateTime]
-  @scala.inline
-  def now(clockOrZone: Clock): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
-  @scala.inline
-  def now(clockOrZone: ZoneId): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
+  inline def now(): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalDateTime]
+  inline def now(clockOrZone: Clock): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
+  inline def now(clockOrZone: ZoneId): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
   
   /* static member */
-  @scala.inline
-  def of(date: LocalDate, time: LocalTime): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
+  inline def of(date: LocalDate, time: LocalTime): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
   /* static member */
-  @scala.inline
-  def of(
+  inline def of(
     year: js.UndefOr[Double],
     month: js.UndefOr[Month | Double],
     dayOfMonth: js.UndefOr[Double],
@@ -171,21 +163,15 @@ object LocalDateTime {
   ): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], nanoSecond.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
   
   /* static member */
-  @scala.inline
-  def ofEpochSecond(epochSecond: Double, nanoOfSecond: Double, offset: ZoneOffset): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochSecond")(epochSecond.asInstanceOf[js.Any], nanoOfSecond.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
+  inline def ofEpochSecond(epochSecond: Double, nanoOfSecond: Double, offset: ZoneOffset): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochSecond")(epochSecond.asInstanceOf[js.Any], nanoOfSecond.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
   /* static member */
-  @scala.inline
-  def ofEpochSecond(epochSecond: Double, offset: ZoneOffset): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochSecond")(epochSecond.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
+  inline def ofEpochSecond(epochSecond: Double, offset: ZoneOffset): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochSecond")(epochSecond.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
   
   /* static member */
-  @scala.inline
-  def ofInstant(instant: Instant): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(instant.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
-  @scala.inline
-  def ofInstant(instant: Instant, zoneId: ZoneId): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(instant.asInstanceOf[js.Any], zoneId.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
+  inline def ofInstant(instant: Instant): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(instant.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
+  inline def ofInstant(instant: Instant, zoneId: ZoneId): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(instant.asInstanceOf[js.Any], zoneId.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
   
   /* static member */
-  @scala.inline
-  def parse(text: String): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
-  @scala.inline
-  def parse(text: String, formatter: DateTimeFormatter): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
+  inline def parse(text: String): LocalDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[LocalDateTime]
+  inline def parse(text: String, formatter: DateTimeFormatter): LocalDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[LocalDateTime]
 }

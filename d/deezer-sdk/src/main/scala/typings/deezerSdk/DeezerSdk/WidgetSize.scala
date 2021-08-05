@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WidgetSize extends StObject
 object WidgetSize {
   
-  @scala.inline
-  def big: typings.deezerSdk.deezerSdkStrings.big = "big".asInstanceOf[typings.deezerSdk.deezerSdkStrings.big]
+  inline def big: typings.deezerSdk.deezerSdkStrings.big = "big".asInstanceOf[typings.deezerSdk.deezerSdkStrings.big]
   
-  @scala.inline
-  def medium: typings.deezerSdk.deezerSdkStrings.medium = "medium".asInstanceOf[typings.deezerSdk.deezerSdkStrings.medium]
+  inline def medium: typings.deezerSdk.deezerSdkStrings.medium = "medium".asInstanceOf[typings.deezerSdk.deezerSdkStrings.medium]
   
-  @scala.inline
-  def small: typings.deezerSdk.deezerSdkStrings.small = "small".asInstanceOf[typings.deezerSdk.deezerSdkStrings.small]
+  inline def small: typings.deezerSdk.deezerSdkStrings.small = "small".asInstanceOf[typings.deezerSdk.deezerSdkStrings.small]
 }

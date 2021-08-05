@@ -68,61 +68,43 @@ trait RasterShadedReliefRendererProperties extends StObject {
 }
 object RasterShadedReliefRendererProperties {
   
-  @scala.inline
-  def apply(): RasterShadedReliefRendererProperties = {
+  inline def apply(): RasterShadedReliefRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RasterShadedReliefRendererProperties]
   }
   
-  @scala.inline
-  implicit class RasterShadedReliefRendererPropertiesMutableBuilder[Self <: RasterShadedReliefRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RasterShadedReliefRendererProperties](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
+    inline def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
+    inline def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
     
-    @scala.inline
-    def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
+    inline def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
+    inline def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     
-    @scala.inline
-    def setHillshadeType(value: traditional | `multi-directional`): Self = StObject.set(x, "hillshadeType", value.asInstanceOf[js.Any])
+    inline def setHillshadeType(value: traditional | `multi-directional`): Self = StObject.set(x, "hillshadeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHillshadeTypeUndefined: Self = StObject.set(x, "hillshadeType", js.undefined)
+    inline def setHillshadeTypeUndefined: Self = StObject.set(x, "hillshadeType", js.undefined)
     
-    @scala.inline
-    def setPixelSizeFactor(value: Double): Self = StObject.set(x, "pixelSizeFactor", value.asInstanceOf[js.Any])
+    inline def setPixelSizeFactor(value: Double): Self = StObject.set(x, "pixelSizeFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSizeFactorUndefined: Self = StObject.set(x, "pixelSizeFactor", js.undefined)
+    inline def setPixelSizeFactorUndefined: Self = StObject.set(x, "pixelSizeFactor", js.undefined)
     
-    @scala.inline
-    def setPixelSizePower(value: Double): Self = StObject.set(x, "pixelSizePower", value.asInstanceOf[js.Any])
+    inline def setPixelSizePower(value: Double): Self = StObject.set(x, "pixelSizePower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSizePowerUndefined: Self = StObject.set(x, "pixelSizePower", js.undefined)
+    inline def setPixelSizePowerUndefined: Self = StObject.set(x, "pixelSizePower", js.undefined)
     
-    @scala.inline
-    def setScalingType(value: none | adjusted): Self = StObject.set(x, "scalingType", value.asInstanceOf[js.Any])
+    inline def setScalingType(value: none | adjusted): Self = StObject.set(x, "scalingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingTypeUndefined: Self = StObject.set(x, "scalingType", js.undefined)
+    inline def setScalingTypeUndefined: Self = StObject.set(x, "scalingType", js.undefined)
     
-    @scala.inline
-    def setZFactor(value: Double): Self = StObject.set(x, "zFactor", value.asInstanceOf[js.Any])
+    inline def setZFactor(value: Double): Self = StObject.set(x, "zFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZFactorUndefined: Self = StObject.set(x, "zFactor", js.undefined)
+    inline def setZFactorUndefined: Self = StObject.set(x, "zFactor", js.undefined)
   }
 }

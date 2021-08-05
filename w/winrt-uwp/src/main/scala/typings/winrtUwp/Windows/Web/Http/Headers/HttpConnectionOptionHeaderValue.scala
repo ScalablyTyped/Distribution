@@ -12,16 +12,13 @@ trait HttpConnectionOptionHeaderValue extends StObject {
 }
 object HttpConnectionOptionHeaderValue {
   
-  @scala.inline
-  def apply(token: String): HttpConnectionOptionHeaderValue = {
+  inline def apply(token: String): HttpConnectionOptionHeaderValue = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpConnectionOptionHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpConnectionOptionHeaderValueMutableBuilder[Self <: HttpConnectionOptionHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpConnectionOptionHeaderValue](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

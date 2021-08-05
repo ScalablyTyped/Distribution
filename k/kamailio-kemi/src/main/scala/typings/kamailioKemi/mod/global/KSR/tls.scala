@@ -10,6 +10,5 @@ object tls {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPeerVerified(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_peer_verified")().asInstanceOf[Double]
+  inline def isPeerVerified(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_peer_verified")().asInstanceOf[Double]
 }

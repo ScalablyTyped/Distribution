@@ -13,19 +13,15 @@ trait EstimateTemplateCostOutput extends StObject {
 }
 object EstimateTemplateCostOutput {
   
-  @scala.inline
-  def apply(): EstimateTemplateCostOutput = {
+  inline def apply(): EstimateTemplateCostOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EstimateTemplateCostOutput]
   }
   
-  @scala.inline
-  implicit class EstimateTemplateCostOutputMutableBuilder[Self <: EstimateTemplateCostOutput] (val x: Self) extends AnyVal {
+  extension [Self <: EstimateTemplateCostOutput](x: Self) {
     
-    @scala.inline
-    def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

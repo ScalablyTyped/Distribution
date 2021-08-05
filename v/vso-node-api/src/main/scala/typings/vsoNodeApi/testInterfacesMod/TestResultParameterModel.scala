@@ -23,8 +23,7 @@ trait TestResultParameterModel extends StObject {
 }
 object TestResultParameterModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionPath: String,
     iterationId: Double,
     parameterName: String,
@@ -36,25 +35,18 @@ object TestResultParameterModel {
     __obj.asInstanceOf[TestResultParameterModel]
   }
   
-  @scala.inline
-  implicit class TestResultParameterModelMutableBuilder[Self <: TestResultParameterModel] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultParameterModel](x: Self) {
     
-    @scala.inline
-    def setActionPath(value: String): Self = StObject.set(x, "actionPath", value.asInstanceOf[js.Any])
+    inline def setActionPath(value: String): Self = StObject.set(x, "actionPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
+    inline def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdentifier(value: String): Self = StObject.set(x, "stepIdentifier", value.asInstanceOf[js.Any])
+    inline def setStepIdentifier(value: String): Self = StObject.set(x, "stepIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

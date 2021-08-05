@@ -11,8 +11,7 @@ trait JsonObject
      with JsonCompatible
 object JsonObject {
   
-  @scala.inline
-  def apply(): JsonObject = {
+  inline def apply(): JsonObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonObject]
   }

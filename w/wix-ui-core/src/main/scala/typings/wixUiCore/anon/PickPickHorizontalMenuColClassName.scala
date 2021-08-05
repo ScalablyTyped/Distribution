@@ -23,49 +23,35 @@ trait PickPickHorizontalMenuColClassName extends StObject {
 }
 object PickPickHorizontalMenuColClassName {
   
-  @scala.inline
-  def apply(): PickPickHorizontalMenuColClassName = {
+  inline def apply(): PickPickHorizontalMenuColClassName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickPickHorizontalMenuColClassName]
   }
   
-  @scala.inline
-  implicit class PickPickHorizontalMenuColClassNameMutableBuilder[Self <: PickPickHorizontalMenuColClassName] (val x: Self) extends AnyVal {
+  extension [Self <: PickPickHorizontalMenuColClassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+    inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+    inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsAlignment(value: ColumnsAlignment): Self = StObject.set(x, "columnsAlignment", value.asInstanceOf[js.Any])
+    inline def setColumnsAlignment(value: ColumnsAlignment): Self = StObject.set(x, "columnsAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsAlignmentUndefined: Self = StObject.set(x, "columnsAlignment", js.undefined)
+    inline def setColumnsAlignmentUndefined: Self = StObject.set(x, "columnsAlignment", js.undefined)
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setMaxOverflowWidth(value: Double): Self = StObject.set(x, "maxOverflowWidth", value.asInstanceOf[js.Any])
+    inline def setMaxOverflowWidth(value: Double): Self = StObject.set(x, "maxOverflowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOverflowWidthUndefined: Self = StObject.set(x, "maxOverflowWidth", js.undefined)
+    inline def setMaxOverflowWidthUndefined: Self = StObject.set(x, "maxOverflowWidth", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

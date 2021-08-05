@@ -12,10 +12,8 @@ object requireHookMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attachHook(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")().asInstanceOf[Unit]
-  @scala.inline
-  def attachHook(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def attachHook(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")().asInstanceOf[Unit]
+  inline def attachHook(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -31,38 +29,28 @@ object requireHookMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(matcher: String => Boolean, stylableConfig: PartialStylableConfig): Options = {
+    inline def apply(matcher: String => Boolean, stylableConfig: PartialStylableConfig): Options = {
       val __obj = js.Dynamic.literal(matcher = js.Any.fromFunction1(matcher), stylableConfig = stylableConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAfterCompile(value: (/* code */ String, /* filename */ String) => String): Self = StObject.set(x, "afterCompile", js.Any.fromFunction2(value))
+      inline def setAfterCompile(value: (/* code */ String, /* filename */ String) => String): Self = StObject.set(x, "afterCompile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAfterCompileUndefined: Self = StObject.set(x, "afterCompile", js.undefined)
+      inline def setAfterCompileUndefined: Self = StObject.set(x, "afterCompile", js.undefined)
       
-      @scala.inline
-      def setIgnoreJSModules(value: Boolean): Self = StObject.set(x, "ignoreJSModules", value.asInstanceOf[js.Any])
+      inline def setIgnoreJSModules(value: Boolean): Self = StObject.set(x, "ignoreJSModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreJSModulesUndefined: Self = StObject.set(x, "ignoreJSModules", js.undefined)
+      inline def setIgnoreJSModulesUndefined: Self = StObject.set(x, "ignoreJSModules", js.undefined)
       
-      @scala.inline
-      def setMatcher(value: String => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
+      inline def setMatcher(value: String => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRuntimePath(value: String): Self = StObject.set(x, "runtimePath", value.asInstanceOf[js.Any])
+      inline def setRuntimePath(value: String): Self = StObject.set(x, "runtimePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimePathUndefined: Self = StObject.set(x, "runtimePath", js.undefined)
+      inline def setRuntimePathUndefined: Self = StObject.set(x, "runtimePath", js.undefined)
       
-      @scala.inline
-      def setStylableConfig(value: PartialStylableConfig): Self = StObject.set(x, "stylableConfig", value.asInstanceOf[js.Any])
+      inline def setStylableConfig(value: PartialStylableConfig): Self = StObject.set(x, "stylableConfig", value.asInstanceOf[js.Any])
     }
   }
 }

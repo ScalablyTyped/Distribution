@@ -14,25 +14,19 @@ trait OrderPickupDetailsCollector extends StObject {
 }
 object OrderPickupDetailsCollector {
   
-  @scala.inline
-  def apply(): OrderPickupDetailsCollector = {
+  inline def apply(): OrderPickupDetailsCollector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderPickupDetailsCollector]
   }
   
-  @scala.inline
-  implicit class OrderPickupDetailsCollectorMutableBuilder[Self <: OrderPickupDetailsCollector] (val x: Self) extends AnyVal {
+  extension [Self <: OrderPickupDetailsCollector](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientFilterAppliedEventArgs
 }
 object ASPxClientFilterAppliedEventArgs {
   
-  @scala.inline
-  def apply(filterExpression: String): ASPxClientFilterAppliedEventArgs = {
+  inline def apply(filterExpression: String): ASPxClientFilterAppliedEventArgs = {
     val __obj = js.Dynamic.literal(filterExpression = filterExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFilterAppliedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFilterAppliedEventArgsMutableBuilder[Self <: ASPxClientFilterAppliedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFilterAppliedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
+    inline def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
   }
 }

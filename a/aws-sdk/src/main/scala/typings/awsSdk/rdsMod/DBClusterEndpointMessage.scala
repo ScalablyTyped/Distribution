@@ -18,28 +18,21 @@ trait DBClusterEndpointMessage extends StObject {
 }
 object DBClusterEndpointMessage {
   
-  @scala.inline
-  def apply(): DBClusterEndpointMessage = {
+  inline def apply(): DBClusterEndpointMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterEndpointMessage]
   }
   
-  @scala.inline
-  implicit class DBClusterEndpointMessageMutableBuilder[Self <: DBClusterEndpointMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterEndpointMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterEndpoints(value: DBClusterEndpointList): Self = StObject.set(x, "DBClusterEndpoints", value.asInstanceOf[js.Any])
+    inline def setDBClusterEndpoints(value: DBClusterEndpointList): Self = StObject.set(x, "DBClusterEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterEndpointsUndefined: Self = StObject.set(x, "DBClusterEndpoints", js.undefined)
+    inline def setDBClusterEndpointsUndefined: Self = StObject.set(x, "DBClusterEndpoints", js.undefined)
     
-    @scala.inline
-    def setDBClusterEndpointsVarargs(value: DBClusterEndpoint*): Self = StObject.set(x, "DBClusterEndpoints", js.Array(value :_*))
+    inline def setDBClusterEndpointsVarargs(value: DBClusterEndpoint*): Self = StObject.set(x, "DBClusterEndpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

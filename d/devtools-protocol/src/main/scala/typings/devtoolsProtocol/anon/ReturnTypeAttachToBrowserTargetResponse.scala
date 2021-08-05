@@ -13,22 +13,17 @@ trait ReturnTypeAttachToBrowserTargetResponse extends StObject {
 }
 object ReturnTypeAttachToBrowserTargetResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[js.Any], returnType: AttachToBrowserTargetResponse): ReturnTypeAttachToBrowserTargetResponse = {
+  inline def apply(paramsType: js.Array[js.Any], returnType: AttachToBrowserTargetResponse): ReturnTypeAttachToBrowserTargetResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeAttachToBrowserTargetResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeAttachToBrowserTargetResponseMutableBuilder[Self <: ReturnTypeAttachToBrowserTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeAttachToBrowserTargetResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[js.Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[js.Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: js.Any*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.Any*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: AttachToBrowserTargetResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: AttachToBrowserTargetResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait DescribeChannelRequest extends StObject {
 }
 object DescribeChannelRequest {
   
-  @scala.inline
-  def apply(channelName: ChannelName): DescribeChannelRequest = {
+  inline def apply(channelName: ChannelName): DescribeChannelRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelRequest]
   }
   
-  @scala.inline
-  implicit class DescribeChannelRequestMutableBuilder[Self <: DescribeChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelRequest](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeStatistics(value: IncludeStatisticsFlag): Self = StObject.set(x, "includeStatistics", value.asInstanceOf[js.Any])
+    inline def setIncludeStatistics(value: IncludeStatisticsFlag): Self = StObject.set(x, "includeStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeStatisticsUndefined: Self = StObject.set(x, "includeStatistics", js.undefined)
+    inline def setIncludeStatisticsUndefined: Self = StObject.set(x, "includeStatistics", js.undefined)
   }
 }

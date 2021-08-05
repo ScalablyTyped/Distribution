@@ -10,16 +10,13 @@ trait ControlEventMap extends StObject {
 }
 object ControlEventMap {
   
-  @scala.inline
-  def apply(init: EventArgs): ControlEventMap = {
+  inline def apply(init: EventArgs): ControlEventMap = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlEventMap]
   }
   
-  @scala.inline
-  implicit class ControlEventMapMutableBuilder[Self <: ControlEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ControlEventMap](x: Self) {
     
-    @scala.inline
-    def setInit(value: EventArgs): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: EventArgs): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
   }
 }

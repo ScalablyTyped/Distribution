@@ -18,22 +18,17 @@ trait CreateGroupRequest extends StObject {
 }
 object CreateGroupRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType): CreateGroupRequest = {
+  inline def apply(GroupName: groupNameType): CreateGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateGroupRequestMutableBuilder[Self <: CreateGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

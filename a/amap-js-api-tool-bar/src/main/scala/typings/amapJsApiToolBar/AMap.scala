@@ -105,8 +105,7 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         hide: Event_[hide, Unit],
         location: Event_[location, Lnglat],
         `location-failed`: Event_[`location-failed`, Unit],
@@ -120,26 +119,19 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        inline def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocation(value: Event_[location, Lnglat]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: Event_[location, Lnglat]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setLocation-failed`(value: Event_[`location-failed`, Unit]): Self = StObject.set(x, "location-failed", value.asInstanceOf[js.Any])
+        inline def `setLocation-failed`(value: Event_[`location-failed`, Unit]): Self = StObject.set(x, "location-failed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setLocation-success`(value: Event_[`location-success`, Unit]): Self = StObject.set(x, "location-success", value.asInstanceOf[js.Any])
+        inline def `setLocation-success`(value: Event_[`location-success`, Unit]): Self = StObject.set(x, "location-success", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        inline def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomchanged(value: Event_[zoomin | zoomout, Unit]): Self = StObject.set(x, "zoomchanged", value.asInstanceOf[js.Any])
+        inline def setZoomchanged(value: Event_[zoomin | zoomout, Unit]): Self = StObject.set(x, "zoomchanged", value.asInstanceOf[js.Any])
       }
     }
     
@@ -204,80 +196,56 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAutoPosition(value: Boolean): Self = StObject.set(x, "autoPosition", value.asInstanceOf[js.Any])
+        inline def setAutoPosition(value: Boolean): Self = StObject.set(x, "autoPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoPositionUndefined: Self = StObject.set(x, "autoPosition", js.undefined)
+        inline def setAutoPositionUndefined: Self = StObject.set(x, "autoPosition", js.undefined)
         
-        @scala.inline
-        def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+        inline def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+        inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
         
-        @scala.inline
-        def setLiteStyle(value: Boolean): Self = StObject.set(x, "liteStyle", value.asInstanceOf[js.Any])
+        inline def setLiteStyle(value: Boolean): Self = StObject.set(x, "liteStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLiteStyleUndefined: Self = StObject.set(x, "liteStyle", js.undefined)
+        inline def setLiteStyleUndefined: Self = StObject.set(x, "liteStyle", js.undefined)
         
-        @scala.inline
-        def setLocate(value: Boolean): Self = StObject.set(x, "locate", value.asInstanceOf[js.Any])
+        inline def setLocate(value: Boolean): Self = StObject.set(x, "locate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocateUndefined: Self = StObject.set(x, "locate", js.undefined)
+        inline def setLocateUndefined: Self = StObject.set(x, "locate", js.undefined)
         
-        @scala.inline
-        def setLocationMarker(value: Marker[js.Any]): Self = StObject.set(x, "locationMarker", value.asInstanceOf[js.Any])
+        inline def setLocationMarker(value: Marker[js.Any]): Self = StObject.set(x, "locationMarker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationMarkerUndefined: Self = StObject.set(x, "locationMarker", js.undefined)
+        inline def setLocationMarkerUndefined: Self = StObject.set(x, "locationMarker", js.undefined)
         
-        @scala.inline
-        def setNoIpLocate(value: Boolean): Self = StObject.set(x, "noIpLocate", value.asInstanceOf[js.Any])
+        inline def setNoIpLocate(value: Boolean): Self = StObject.set(x, "noIpLocate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoIpLocateUndefined: Self = StObject.set(x, "noIpLocate", js.undefined)
+        inline def setNoIpLocateUndefined: Self = StObject.set(x, "noIpLocate", js.undefined)
         
-        @scala.inline
-        def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setRuler(value: Boolean): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+        inline def setRuler(value: Boolean): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRulerUndefined: Self = StObject.set(x, "ruler", js.undefined)
+        inline def setRulerUndefined: Self = StObject.set(x, "ruler", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
         
-        @scala.inline
-        def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
+        inline def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
+        inline def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
       }
     }
     
@@ -290,17 +258,13 @@ object AMap {
     trait Position extends StObject
     object Position {
       
-      @scala.inline
-      def LB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LB = "LB".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.LB]
+      inline def LB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LB = "LB".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.LB]
       
-      @scala.inline
-      def LT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LT = "LT".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.LT]
+      inline def LT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LT = "LT".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.LT]
       
-      @scala.inline
-      def RB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RB = "RB".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.RB]
+      inline def RB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RB = "RB".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.RB]
       
-      @scala.inline
-      def RT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RT = "RT".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.RT]
+      inline def RT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RT = "RT".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.RT]
     }
   }
 }

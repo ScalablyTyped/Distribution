@@ -23,31 +23,23 @@ trait FileSizes extends StObject {
 }
 object FileSizes {
   
-  @scala.inline
-  def apply(): FileSizes = {
+  inline def apply(): FileSizes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSizes]
   }
   
-  @scala.inline
-  implicit class FileSizesMutableBuilder[Self <: FileSizes] (val x: Self) extends AnyVal {
+  extension [Self <: FileSizes](x: Self) {
     
-    @scala.inline
-    def setBase(value: FileSize): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: FileSize): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setDestination(value: FileSize): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: FileSize): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setSource(value: FileSize): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: FileSize): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

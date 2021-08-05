@@ -18,6 +18,5 @@ object EventService {
   @JSImport("ag-grid", "EventService.PRIORITY")
   @js.native
   def PRIORITY: js.Any = js.native
-  @scala.inline
-  def PRIORITY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+  inline def PRIORITY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
 }

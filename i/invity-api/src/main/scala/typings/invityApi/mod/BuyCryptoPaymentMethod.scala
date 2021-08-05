@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuyCryptoPaymentMethod extends StObject
 object BuyCryptoPaymentMethod {
   
-  @scala.inline
-  def bancontact: typings.invityApi.invityApiStrings.bancontact = "bancontact".asInstanceOf[typings.invityApi.invityApiStrings.bancontact]
+  inline def bancontact: typings.invityApi.invityApiStrings.bancontact = "bancontact".asInstanceOf[typings.invityApi.invityApiStrings.bancontact]
   
-  @scala.inline
-  def bankTransfer: typings.invityApi.invityApiStrings.bankTransfer = "bankTransfer".asInstanceOf[typings.invityApi.invityApiStrings.bankTransfer]
+  inline def bankTransfer: typings.invityApi.invityApiStrings.bankTransfer = "bankTransfer".asInstanceOf[typings.invityApi.invityApiStrings.bankTransfer]
   
-  @scala.inline
-  def creditCard: typings.invityApi.invityApiStrings.creditCard = "creditCard".asInstanceOf[typings.invityApi.invityApiStrings.creditCard]
+  inline def creditCard: typings.invityApi.invityApiStrings.creditCard = "creditCard".asInstanceOf[typings.invityApi.invityApiStrings.creditCard]
   
-  @scala.inline
-  def eps: typings.invityApi.invityApiStrings.eps = "eps".asInstanceOf[typings.invityApi.invityApiStrings.eps]
+  inline def eps: typings.invityApi.invityApiStrings.eps = "eps".asInstanceOf[typings.invityApi.invityApiStrings.eps]
   
-  @scala.inline
-  def giropay: typings.invityApi.invityApiStrings.giropay = "giropay".asInstanceOf[typings.invityApi.invityApiStrings.giropay]
+  inline def giropay: typings.invityApi.invityApiStrings.giropay = "giropay".asInstanceOf[typings.invityApi.invityApiStrings.giropay]
   
-  @scala.inline
-  def iDeal: typings.invityApi.invityApiStrings.iDeal = "iDeal".asInstanceOf[typings.invityApi.invityApiStrings.iDeal]
+  inline def iDeal: typings.invityApi.invityApiStrings.iDeal = "iDeal".asInstanceOf[typings.invityApi.invityApiStrings.iDeal]
   
-  @scala.inline
-  def sofort: typings.invityApi.invityApiStrings.sofort = "sofort".asInstanceOf[typings.invityApi.invityApiStrings.sofort]
+  inline def sofort: typings.invityApi.invityApiStrings.sofort = "sofort".asInstanceOf[typings.invityApi.invityApiStrings.sofort]
 }

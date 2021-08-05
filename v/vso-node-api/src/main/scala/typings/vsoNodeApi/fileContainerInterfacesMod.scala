@@ -103,20 +103,17 @@ object fileContainerInterfacesMod {
     @JSImport("vso-node-api/interfaces/FileContainerInterfaces", "TypeInfo.ContainerItemStatus")
     @js.native
     def ContainerItemStatus: EnumValuesCreated = js.native
-    @scala.inline
-    def ContainerItemStatus_=(x: EnumValuesCreated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerItemStatus")(x.asInstanceOf[js.Any])
+    inline def ContainerItemStatus_=(x: EnumValuesCreated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerItemStatus")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/FileContainerInterfaces", "TypeInfo.ContainerItemType")
     @js.native
     def ContainerItemType: EnumValuesAny = js.native
-    @scala.inline
-    def ContainerItemType_=(x: EnumValuesAny): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerItemType")(x.asInstanceOf[js.Any])
+    inline def ContainerItemType_=(x: EnumValuesAny): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerItemType")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/FileContainerInterfaces", "TypeInfo.ContainerOptions")
     @js.native
     def ContainerOptions: EnumValuesNone = js.native
-    @scala.inline
-    def ContainerOptions_=(x: EnumValuesNone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerOptions")(x.asInstanceOf[js.Any])
+    inline def ContainerOptions_=(x: EnumValuesNone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/FileContainerInterfaces", "TypeInfo.FileContainer")
     @js.native
@@ -125,11 +122,9 @@ object fileContainerInterfacesMod {
     @JSImport("vso-node-api/interfaces/FileContainerInterfaces", "TypeInfo.FileContainerItem")
     @js.native
     def FileContainerItem: js.Any = js.native
-    @scala.inline
-    def FileContainerItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainerItem")(x.asInstanceOf[js.Any])
+    inline def FileContainerItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainerItem")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def FileContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainer")(x.asInstanceOf[js.Any])
+    inline def FileContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileContainer")(x.asInstanceOf[js.Any])
   }
   
   trait FileContainer extends StObject {
@@ -206,8 +201,7 @@ object fileContainerInterfacesMod {
   }
   object FileContainer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       artifactUri: String,
       contentLocation: String,
       createdBy: String,
@@ -227,50 +221,35 @@ object fileContainerInterfacesMod {
       __obj.asInstanceOf[FileContainer]
     }
     
-    @scala.inline
-    implicit class FileContainerMutableBuilder[Self <: FileContainer] (val x: Self) extends AnyVal {
+    extension [Self <: FileContainer](x: Self) {
       
-      @scala.inline
-      def setArtifactUri(value: String): Self = StObject.set(x, "artifactUri", value.asInstanceOf[js.Any])
+      inline def setArtifactUri(value: String): Self = StObject.set(x, "artifactUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
+      inline def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLocation(value: String): Self = StObject.set(x, "itemLocation", value.asInstanceOf[js.Any])
+      inline def setItemLocation(value: String): Self = StObject.set(x, "itemLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocatorPath(value: String): Self = StObject.set(x, "locatorPath", value.asInstanceOf[js.Any])
+      inline def setLocatorPath(value: String): Self = StObject.set(x, "locatorPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ContainerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ContainerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeIdentifier(value: String): Self = StObject.set(x, "scopeIdentifier", value.asInstanceOf[js.Any])
+      inline def setScopeIdentifier(value: String): Self = StObject.set(x, "scopeIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityToken(value: String): Self = StObject.set(x, "securityToken", value.asInstanceOf[js.Any])
+      inline def setSecurityToken(value: String): Self = StObject.set(x, "securityToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningKeyId(value: String): Self = StObject.set(x, "signingKeyId", value.asInstanceOf[js.Any])
+      inline def setSigningKeyId(value: String): Self = StObject.set(x, "signingKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -362,8 +341,7 @@ object fileContainerInterfacesMod {
   }
   object FileContainerItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerId: Double,
       contentId: js.Array[Double],
       contentLocation: String,
@@ -387,68 +365,47 @@ object fileContainerInterfacesMod {
       __obj.asInstanceOf[FileContainerItem]
     }
     
-    @scala.inline
-    implicit class FileContainerItemMutableBuilder[Self <: FileContainerItem] (val x: Self) extends AnyVal {
+    extension [Self <: FileContainerItem](x: Self) {
       
-      @scala.inline
-      def setContainerId(value: Double): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+      inline def setContainerId(value: Double): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentId(value: js.Array[Double]): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+      inline def setContentId(value: js.Array[Double]): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentIdVarargs(value: Double*): Self = StObject.set(x, "contentId", js.Array(value :_*))
+      inline def setContentIdVarargs(value: Double*): Self = StObject.set(x, "contentId", js.Array(value :_*))
       
-      @scala.inline
-      def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
+      inline def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateLastModified(value: Date): Self = StObject.set(x, "dateLastModified", value.asInstanceOf[js.Any])
+      inline def setDateLastModified(value: Date): Self = StObject.set(x, "dateLastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileEncoding(value: Double): Self = StObject.set(x, "fileEncoding", value.asInstanceOf[js.Any])
+      inline def setFileEncoding(value: Double): Self = StObject.set(x, "fileEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileHash(value: js.Array[Double]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
+      inline def setFileHash(value: js.Array[Double]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileHashVarargs(value: Double*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
+      inline def setFileHashVarargs(value: Double*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
       
-      @scala.inline
-      def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+      inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileLength(value: Double): Self = StObject.set(x, "fileLength", value.asInstanceOf[js.Any])
+      inline def setFileLength(value: Double): Self = StObject.set(x, "fileLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileType(value: Double): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: Double): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLocation(value: String): Self = StObject.set(x, "itemLocation", value.asInstanceOf[js.Any])
+      inline def setItemLocation(value: String): Self = StObject.set(x, "itemLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemType(value: ContainerItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: ContainerItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+      inline def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeIdentifier(value: String): Self = StObject.set(x, "scopeIdentifier", value.asInstanceOf[js.Any])
+      inline def setScopeIdentifier(value: String): Self = StObject.set(x, "scopeIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: ContainerItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ContainerItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+      inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
     }
   }
 }

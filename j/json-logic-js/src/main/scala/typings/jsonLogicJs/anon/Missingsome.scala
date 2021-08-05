@@ -16,8 +16,7 @@ trait Missingsome
 }
 object Missingsome {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     missing_some: js.Tuple2[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
       (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
@@ -27,11 +26,9 @@ object Missingsome {
     __obj.asInstanceOf[Missingsome]
   }
   
-  @scala.inline
-  implicit class MissingsomeMutableBuilder[Self <: Missingsome] (val x: Self) extends AnyVal {
+  extension [Self <: Missingsome](x: Self) {
     
-    @scala.inline
-    def setMissing_some(
+    inline def setMissing_some(
       value: js.Tuple2[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
           (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]

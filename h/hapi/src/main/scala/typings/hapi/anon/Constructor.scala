@@ -14,22 +14,17 @@ trait Constructor[T /* <: ClientOptions */] extends StObject {
 }
 object Constructor {
   
-  @scala.inline
-  def apply[T /* <: ClientOptions */](constructor: EnginePrototype[js.Any]): Constructor[T] = {
+  inline def apply[T /* <: ClientOptions */](constructor: EnginePrototype[js.Any]): Constructor[T] = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constructor[T]]
   }
   
-  @scala.inline
-  implicit class ConstructorMutableBuilder[Self <: Constructor[?], T /* <: ClientOptions */] (val x: Self & Constructor[T]) extends AnyVal {
+  extension [Self <: Constructor[?], T /* <: ClientOptions */](x: Self & Constructor[T]) {
     
-    @scala.inline
-    def setConstructor(value: EnginePrototype[js.Any]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: EnginePrototype[js.Any]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

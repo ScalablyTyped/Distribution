@@ -21,39 +21,29 @@ object `extension` {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBackgroundPage(): Window | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[Window | Null]
+  inline def getBackgroundPage(): Window | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[Window | Null]
   
-  @scala.inline
-  def getExtensionTabs(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionTabs")().asInstanceOf[js.Array[Window]]
-  @scala.inline
-  def getExtensionTabs(windowId: Double): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionTabs")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
+  inline def getExtensionTabs(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionTabs")().asInstanceOf[js.Array[Window]]
+  inline def getExtensionTabs(windowId: Double): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionTabs")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
   
-  @scala.inline
-  def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getViews(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")().asInstanceOf[js.Array[Window]]
-  @scala.inline
-  def getViews(fetchProperties: FetchProperties): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")(fetchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
+  inline def getViews(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")().asInstanceOf[js.Array[Window]]
+  inline def getViews(fetchProperties: FetchProperties): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")(fetchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
   
   @JSGlobal("chrome.extension.inIncognitoContext")
   @js.native
   def inIncognitoContext: Boolean = js.native
-  @scala.inline
-  def inIncognitoContext_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inIncognitoContext")(x.asInstanceOf[js.Any])
+  inline def inIncognitoContext_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inIncognitoContext")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isAllowedFileSchemeAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedFileSchemeAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def isAllowedFileSchemeAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedFileSchemeAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def isAllowedIncognitoAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedIncognitoAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def isAllowedIncognitoAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedIncognitoAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.extension.lastError")
   @js.native
   def lastError: LastError = js.native
-  @scala.inline
-  def lastError_=(x: LastError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastError")(x.asInstanceOf[js.Any])
+  inline def lastError_=(x: LastError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastError")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.extension.onRequest")
   @js.native
@@ -62,21 +52,14 @@ object `extension` {
   @JSGlobal("chrome.extension.onRequestExternal")
   @js.native
   def onRequestExternal: OnRequestEvent = js.native
-  @scala.inline
-  def onRequestExternal_=(x: OnRequestEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequestExternal")(x.asInstanceOf[js.Any])
+  inline def onRequestExternal_=(x: OnRequestEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequestExternal")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def onRequest_=(x: OnRequestEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequest")(x.asInstanceOf[js.Any])
+  inline def onRequest_=(x: OnRequestEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequest")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def sendRequest(extensionId: String, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sendRequest(extensionId: String, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sendRequest(request: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def sendRequest(request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(extensionId: String, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(extensionId: String, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(request: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sendRequest(request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setUpdateUrlData(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdateUrlData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUpdateUrlData(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdateUrlData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

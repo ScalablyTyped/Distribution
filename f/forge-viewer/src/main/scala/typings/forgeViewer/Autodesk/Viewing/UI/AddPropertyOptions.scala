@@ -15,19 +15,15 @@ trait AddPropertyOptions
 }
 object AddPropertyOptions {
   
-  @scala.inline
-  def apply(localizeCategory: Boolean, localizeProperty: Boolean): AddPropertyOptions = {
+  inline def apply(localizeCategory: Boolean, localizeProperty: Boolean): AddPropertyOptions = {
     val __obj = js.Dynamic.literal(localizeCategory = localizeCategory.asInstanceOf[js.Any], localizeProperty = localizeProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPropertyOptions]
   }
   
-  @scala.inline
-  implicit class AddPropertyOptionsMutableBuilder[Self <: AddPropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddPropertyOptions](x: Self) {
     
-    @scala.inline
-    def setLocalizeCategory(value: Boolean): Self = StObject.set(x, "localizeCategory", value.asInstanceOf[js.Any])
+    inline def setLocalizeCategory(value: Boolean): Self = StObject.set(x, "localizeCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizeProperty(value: Boolean): Self = StObject.set(x, "localizeProperty", value.asInstanceOf[js.Any])
+    inline def setLocalizeProperty(value: Boolean): Self = StObject.set(x, "localizeProperty", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait NetworkTypeData extends StObject {
 }
 object NetworkTypeData {
   
-  @scala.inline
-  def apply(networkType: `2g` | `3g` | `4g` | wifi): NetworkTypeData = {
+  inline def apply(networkType: `2g` | `3g` | `4g` | wifi): NetworkTypeData = {
     val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkTypeData]
   }
   
-  @scala.inline
-  implicit class NetworkTypeDataMutableBuilder[Self <: NetworkTypeData] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkTypeData](x: Self) {
     
-    @scala.inline
-    def setNetworkType(value: `2g` | `3g` | `4g` | wifi): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: `2g` | `3g` | `4g` | wifi): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

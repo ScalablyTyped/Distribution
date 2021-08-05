@@ -14,19 +14,15 @@ trait Charset
 }
 object Charset {
   
-  @scala.inline
-  def apply(): Charset = {
+  inline def apply(): Charset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Charset]
   }
   
-  @scala.inline
-  implicit class CharsetMutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
+  extension [Self <: Charset](x: Self) {
     
-    @scala.inline
-    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+    inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
   }
 }

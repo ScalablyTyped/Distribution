@@ -18,23 +18,18 @@ object loginRequiredResponseMod {
   }
   object LoginRequiredResponse {
     
-    @scala.inline
-    def apply(logout_reason: Double): LoginRequiredResponse = {
+    inline def apply(logout_reason: Double): LoginRequiredResponse = {
       val __obj = js.Dynamic.literal(logout_reason = logout_reason.asInstanceOf[js.Any], message = "login_required", status = "fail")
       __obj.asInstanceOf[LoginRequiredResponse]
     }
     
-    @scala.inline
-    implicit class LoginRequiredResponseMutableBuilder[Self <: LoginRequiredResponse] (val x: Self) extends AnyVal {
+    extension [Self <: LoginRequiredResponse](x: Self) {
       
-      @scala.inline
-      def setLogout_reason(value: Double): Self = StObject.set(x, "logout_reason", value.asInstanceOf[js.Any])
+      inline def setLogout_reason(value: Double): Self = StObject.set(x, "logout_reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: login_required): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: login_required): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: fail): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: fail): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

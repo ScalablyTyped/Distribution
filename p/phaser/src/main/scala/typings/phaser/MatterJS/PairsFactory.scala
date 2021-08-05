@@ -16,16 +16,13 @@ trait PairsFactory extends StObject {
 }
 object PairsFactory {
   
-  @scala.inline
-  def apply(clear: js.Any => js.Any): PairsFactory = {
+  inline def apply(clear: js.Any => js.Any): PairsFactory = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear))
     __obj.asInstanceOf[PairsFactory]
   }
   
-  @scala.inline
-  implicit class PairsFactoryMutableBuilder[Self <: PairsFactory] (val x: Self) extends AnyVal {
+  extension [Self <: PairsFactory](x: Self) {
     
-    @scala.inline
-    def setClear(value: js.Any => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: js.Any => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
   }
 }

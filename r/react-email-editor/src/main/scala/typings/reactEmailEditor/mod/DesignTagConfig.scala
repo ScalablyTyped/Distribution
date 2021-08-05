@@ -10,16 +10,13 @@ trait DesignTagConfig extends StObject {
 }
 object DesignTagConfig {
   
-  @scala.inline
-  def apply(delimeter: js.Tuple2[String, String]): DesignTagConfig = {
+  inline def apply(delimeter: js.Tuple2[String, String]): DesignTagConfig = {
     val __obj = js.Dynamic.literal(delimeter = delimeter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesignTagConfig]
   }
   
-  @scala.inline
-  implicit class DesignTagConfigMutableBuilder[Self <: DesignTagConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DesignTagConfig](x: Self) {
     
-    @scala.inline
-    def setDelimeter(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
+    inline def setDelimeter(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
   }
 }

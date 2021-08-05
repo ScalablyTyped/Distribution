@@ -23,28 +23,21 @@ trait ListRecommendationsRequest extends StObject {
 }
 object ListRecommendationsRequest {
   
-  @scala.inline
-  def apply(CodeReviewArn: Arn): ListRecommendationsRequest = {
+  inline def apply(CodeReviewArn: Arn): ListRecommendationsRequest = {
     val __obj = js.Dynamic.literal(CodeReviewArn = CodeReviewArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecommendationsRequest]
   }
   
-  @scala.inline
-  implicit class ListRecommendationsRequestMutableBuilder[Self <: ListRecommendationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecommendationsRequest](x: Self) {
     
-    @scala.inline
-    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
+    inline def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

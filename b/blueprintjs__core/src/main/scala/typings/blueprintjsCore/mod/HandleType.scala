@@ -17,20 +17,17 @@ object HandleType {
   @JSImport("@blueprintjs/core", "HandleType.END")
   @js.native
   def END: end = js.native
-  @scala.inline
-  def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+  inline def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
   
   /** A full handle appears as a small square. */
   @JSImport("@blueprintjs/core", "HandleType.FULL")
   @js.native
   def FULL: full = js.native
-  @scala.inline
-  def FULL_=(x: full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULL")(x.asInstanceOf[js.Any])
+  inline def FULL_=(x: full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULL")(x.asInstanceOf[js.Any])
   
   /** A start handle appears as the left or top half of a square. */
   @JSImport("@blueprintjs/core", "HandleType.START")
   @js.native
   def START: start = js.native
-  @scala.inline
-  def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
+  inline def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
 }

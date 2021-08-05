@@ -20,40 +20,29 @@ trait RefactorEditInfo extends StObject {
 }
 object RefactorEditInfo {
   
-  @scala.inline
-  def apply(edits: js.Array[FileTextChanges]): RefactorEditInfo = {
+  inline def apply(edits: js.Array[FileTextChanges]): RefactorEditInfo = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefactorEditInfo]
   }
   
-  @scala.inline
-  implicit class RefactorEditInfoMutableBuilder[Self <: RefactorEditInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RefactorEditInfo](x: Self) {
     
-    @scala.inline
-    def setCommands(value: js.Array[CodeActionCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[CodeActionCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    @scala.inline
-    def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
-    @scala.inline
-    def setEdits(value: js.Array[FileTextChanges]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
+    inline def setEdits(value: js.Array[FileTextChanges]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditsVarargs(value: FileTextChanges*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: FileTextChanges*): Self = StObject.set(x, "edits", js.Array(value :_*))
     
-    @scala.inline
-    def setRenameFilename(value: java.lang.String): Self = StObject.set(x, "renameFilename", value.asInstanceOf[js.Any])
+    inline def setRenameFilename(value: java.lang.String): Self = StObject.set(x, "renameFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameFilenameUndefined: Self = StObject.set(x, "renameFilename", js.undefined)
+    inline def setRenameFilenameUndefined: Self = StObject.set(x, "renameFilename", js.undefined)
     
-    @scala.inline
-    def setRenameLocation(value: Double): Self = StObject.set(x, "renameLocation", value.asInstanceOf[js.Any])
+    inline def setRenameLocation(value: Double): Self = StObject.set(x, "renameLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameLocationUndefined: Self = StObject.set(x, "renameLocation", js.undefined)
+    inline def setRenameLocationUndefined: Self = StObject.set(x, "renameLocation", js.undefined)
   }
 }

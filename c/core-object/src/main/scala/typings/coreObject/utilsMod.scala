@@ -21,8 +21,7 @@ object utilsMod {
   }
   object CallOrApply {
     
-    @scala.inline
-    def apply[This, Args, Return](
+    inline def apply[This, Args, Return](
       apply: (This, Args | IArguments | js.Array[js.Any]) => Return,
       call: (js.Function2[/* thisArg */ This, /* repeated */ js.Any, Return]) | (js.Function5[/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, /* c */ js.Any, /* d */ js.Any, Return]) | (js.Function4[/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, /* c */ js.Any, Return]) | (js.Function3[/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, Return]) | (js.Function1[/* thisArg */ This, Return])
     ): CallOrApply[This, Args, Return] = {
@@ -30,31 +29,23 @@ object utilsMod {
       __obj.asInstanceOf[CallOrApply[This, Args, Return]]
     }
     
-    @scala.inline
-    implicit class CallOrApplyMutableBuilder[Self <: CallOrApply[?, ?, ?], This, Args, Return] (val x: Self & (CallOrApply[This, Args, Return])) extends AnyVal {
+    extension [Self <: CallOrApply[?, ?, ?], This, Args, Return](x: Self & (CallOrApply[This, Args, Return])) {
       
-      @scala.inline
-      def setApply(value: (This, Args | IArguments | js.Array[js.Any]) => Return): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+      inline def setApply(value: (This, Args | IArguments | js.Array[js.Any]) => Return): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCall(
+      inline def setCall(
         value: (js.Function2[/* thisArg */ This, /* repeated */ js.Any, Return]) | (js.Function5[/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, /* c */ js.Any, /* d */ js.Any, Return]) | (js.Function4[/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, /* c */ js.Any, Return]) | (js.Function3[/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, Return]) | (js.Function1[/* thisArg */ This, Return])
       ): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallFunction1(value: /* thisArg */ This => Return): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
+      inline def setCallFunction1(value: /* thisArg */ This => Return): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallFunction2(value: (/* thisArg */ This, /* repeated */ js.Any) => Return): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
+      inline def setCallFunction2(value: (/* thisArg */ This, /* repeated */ js.Any) => Return): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallFunction3(value: (/* thisArg */ This, /* a */ js.Any, /* b */ js.Any) => Return): Self = StObject.set(x, "call", js.Any.fromFunction3(value))
+      inline def setCallFunction3(value: (/* thisArg */ This, /* a */ js.Any, /* b */ js.Any) => Return): Self = StObject.set(x, "call", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallFunction4(value: (/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, /* c */ js.Any) => Return): Self = StObject.set(x, "call", js.Any.fromFunction4(value))
+      inline def setCallFunction4(value: (/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, /* c */ js.Any) => Return): Self = StObject.set(x, "call", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCallFunction5(
+      inline def setCallFunction5(
         value: (/* thisArg */ This, /* a */ js.Any, /* b */ js.Any, /* c */ js.Any, /* d */ js.Any) => Return
       ): Self = StObject.set(x, "call", js.Any.fromFunction5(value))
     }

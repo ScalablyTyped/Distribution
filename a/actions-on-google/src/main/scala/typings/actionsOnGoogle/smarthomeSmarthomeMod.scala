@@ -220,8 +220,7 @@ object smarthomeSmarthomeMod {
   }
   object SmartHomeApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _intent: (SmartHomeV1Intents, SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]) => SmartHomeApp,
       _intents: SmartHomeHandlers,
       handler: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse],
@@ -236,48 +235,35 @@ object smarthomeSmarthomeMod {
       __obj.asInstanceOf[SmartHomeApp]
     }
     
-    @scala.inline
-    implicit class SmartHomeAppMutableBuilder[Self <: SmartHomeApp] (val x: Self) extends AnyVal {
+    extension [Self <: SmartHomeApp](x: Self) {
       
-      @scala.inline
-      def setJwt(value: SmartHomeJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+      inline def setJwt(value: SmartHomeJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
+      inline def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnDisconnect(
+      inline def setOnDisconnect(
         value: SmartHomeHandler[SmartHomeV1DisconnectRequest, SmartHomeV1DisconnectResponse] => SmartHomeApp
       ): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExecute(value: SmartHomeHandler[SmartHomeV1ExecuteRequest, SmartHomeV1ExecuteResponse] => SmartHomeApp): Self = StObject.set(x, "onExecute", js.Any.fromFunction1(value))
+      inline def setOnExecute(value: SmartHomeHandler[SmartHomeV1ExecuteRequest, SmartHomeV1ExecuteResponse] => SmartHomeApp): Self = StObject.set(x, "onExecute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnQuery(value: SmartHomeHandler[SmartHomeV1QueryRequest, SmartHomeV1QueryResponse] => SmartHomeApp): Self = StObject.set(x, "onQuery", js.Any.fromFunction1(value))
+      inline def setOnQuery(value: SmartHomeHandler[SmartHomeV1QueryRequest, SmartHomeV1QueryResponse] => SmartHomeApp): Self = StObject.set(x, "onQuery", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSync(value: SmartHomeHandler[SmartHomeV1SyncRequest, SmartHomeV1SyncResponse] => SmartHomeApp): Self = StObject.set(x, "onSync", js.Any.fromFunction1(value))
+      inline def setOnSync(value: SmartHomeHandler[SmartHomeV1SyncRequest, SmartHomeV1SyncResponse] => SmartHomeApp): Self = StObject.set(x, "onSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportState(value: SmartHomeV1ReportStateRequest => js.Promise[String]): Self = StObject.set(x, "reportState", js.Any.fromFunction1(value))
+      inline def setReportState(value: SmartHomeV1ReportStateRequest => js.Promise[String]): Self = StObject.set(x, "reportState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestSync(value: String => js.Promise[String]): Self = StObject.set(x, "requestSync", js.Any.fromFunction1(value))
+      inline def setRequestSync(value: String => js.Promise[String]): Self = StObject.set(x, "requestSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_intent(
+      inline def set_intent(
         value: (SmartHomeV1Intents, SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]) => SmartHomeApp
       ): Self = StObject.set(x, "_intent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_intents(value: SmartHomeHandlers): Self = StObject.set(x, "_intents", value.asInstanceOf[js.Any])
+      inline def set_intents(value: SmartHomeHandlers): Self = StObject.set(x, "_intents", value.asInstanceOf[js.Any])
     }
   }
   
@@ -314,8 +300,7 @@ object smarthomeSmarthomeMod {
   }
   object SmartHomeJwt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth_provider_x509_cert_url: String,
       auth_uri: String,
       client_email: String,
@@ -331,38 +316,27 @@ object smarthomeSmarthomeMod {
       __obj.asInstanceOf[SmartHomeJwt]
     }
     
-    @scala.inline
-    implicit class SmartHomeJwtMutableBuilder[Self <: SmartHomeJwt] (val x: Self) extends AnyVal {
+    extension [Self <: SmartHomeJwt](x: Self) {
       
-      @scala.inline
-      def setAuth_provider_x509_cert_url(value: String): Self = StObject.set(x, "auth_provider_x509_cert_url", value.asInstanceOf[js.Any])
+      inline def setAuth_provider_x509_cert_url(value: String): Self = StObject.set(x, "auth_provider_x509_cert_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuth_uri(value: String): Self = StObject.set(x, "auth_uri", value.asInstanceOf[js.Any])
+      inline def setAuth_uri(value: String): Self = StObject.set(x, "auth_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
+      inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+      inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_x509_cert_url(value: String): Self = StObject.set(x, "client_x509_cert_url", value.asInstanceOf[js.Any])
+      inline def setClient_x509_cert_url(value: String): Self = StObject.set(x, "client_x509_cert_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
+      inline def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate_key_id(value: String): Self = StObject.set(x, "private_key_id", value.asInstanceOf[js.Any])
+      inline def setPrivate_key_id(value: String): Self = StObject.set(x, "private_key_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject_id(value: String): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+      inline def setProject_id(value: String): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken_uri(value: String): Self = StObject.set(x, "token_uri", value.asInstanceOf[js.Any])
+      inline def setToken_uri(value: String): Self = StObject.set(x, "token_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: service_account): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: service_account): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,26 +362,20 @@ object smarthomeSmarthomeMod {
   }
   object SmartHomeOptions {
     
-    @scala.inline
-    def apply(): SmartHomeOptions = {
+    inline def apply(): SmartHomeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmartHomeOptions]
     }
     
-    @scala.inline
-    implicit class SmartHomeOptionsMutableBuilder[Self <: SmartHomeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SmartHomeOptions](x: Self) {
       
-      @scala.inline
-      def setJwt(value: SmartHomeJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+      inline def setJwt(value: SmartHomeJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
+      inline def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   

@@ -16,17 +16,14 @@ object typesAuthorDoesNotExistExceptionMod {
   }
   object AuthorDoesNotExistException {
     
-    @scala.inline
-    def apply(): AuthorDoesNotExistException = {
+    inline def apply(): AuthorDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "AuthorDoesNotExistException")
       __obj.asInstanceOf[AuthorDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class AuthorDoesNotExistExceptionMutableBuilder[Self <: AuthorDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.AuthorDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -21,28 +21,21 @@ trait GetReportsRequest extends StObject {
 }
 object GetReportsRequest {
   
-  @scala.inline
-  def apply(): GetReportsRequest = {
+  inline def apply(): GetReportsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReportsRequest]
   }
   
-  @scala.inline
-  implicit class GetReportsRequestMutableBuilder[Self <: GetReportsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetReportsRequest](x: Self) {
     
-    @scala.inline
-    def setReportRequests(value: js.Array[ReportRequest]): Self = StObject.set(x, "reportRequests", value.asInstanceOf[js.Any])
+    inline def setReportRequests(value: js.Array[ReportRequest]): Self = StObject.set(x, "reportRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportRequestsUndefined: Self = StObject.set(x, "reportRequests", js.undefined)
+    inline def setReportRequestsUndefined: Self = StObject.set(x, "reportRequests", js.undefined)
     
-    @scala.inline
-    def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value :_*))
+    inline def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value :_*))
     
-    @scala.inline
-    def setUseResourceQuotas(value: Boolean): Self = StObject.set(x, "useResourceQuotas", value.asInstanceOf[js.Any])
+    inline def setUseResourceQuotas(value: Boolean): Self = StObject.set(x, "useResourceQuotas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseResourceQuotasUndefined: Self = StObject.set(x, "useResourceQuotas", js.undefined)
+    inline def setUseResourceQuotasUndefined: Self = StObject.set(x, "useResourceQuotas", js.undefined)
   }
 }

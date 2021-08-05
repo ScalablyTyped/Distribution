@@ -100,69 +100,49 @@ trait LabelClassProperties extends StObject {
 }
 object LabelClassProperties {
   
-  @scala.inline
-  def apply(): LabelClassProperties = {
+  inline def apply(): LabelClassProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelClassProperties]
   }
   
-  @scala.inline
-  implicit class LabelClassPropertiesMutableBuilder[Self <: LabelClassProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LabelClassProperties](x: Self) {
     
-    @scala.inline
-    def setDeconflictionStrategy(value: none | static): Self = StObject.set(x, "deconflictionStrategy", value.asInstanceOf[js.Any])
+    inline def setDeconflictionStrategy(value: none | static): Self = StObject.set(x, "deconflictionStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeconflictionStrategyUndefined: Self = StObject.set(x, "deconflictionStrategy", js.undefined)
+    inline def setDeconflictionStrategyUndefined: Self = StObject.set(x, "deconflictionStrategy", js.undefined)
     
-    @scala.inline
-    def setLabelExpression(value: String): Self = StObject.set(x, "labelExpression", value.asInstanceOf[js.Any])
+    inline def setLabelExpression(value: String): Self = StObject.set(x, "labelExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelExpressionInfo(value: LabelClassLabelExpressionInfo): Self = StObject.set(x, "labelExpressionInfo", value.asInstanceOf[js.Any])
+    inline def setLabelExpressionInfo(value: LabelClassLabelExpressionInfo): Self = StObject.set(x, "labelExpressionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelExpressionInfoUndefined: Self = StObject.set(x, "labelExpressionInfo", js.undefined)
+    inline def setLabelExpressionInfoUndefined: Self = StObject.set(x, "labelExpressionInfo", js.undefined)
     
-    @scala.inline
-    def setLabelExpressionUndefined: Self = StObject.set(x, "labelExpression", js.undefined)
+    inline def setLabelExpressionUndefined: Self = StObject.set(x, "labelExpression", js.undefined)
     
-    @scala.inline
-    def setLabelPlacement(
+    inline def setLabelPlacement(
       value: `above-center` | `above-left` | `above-right` | `below-center` | `below-left` | `below-right` | `center-center` | `center-left` | `center-right` | `above-after` | `above-along` | `above-before` | `above-start` | `above-end` | `below-after` | `below-along` | `below-before` | `below-start` | `below-end` | `center-after` | `center-along` | `center-before` | `center-start` | `center-end` | `always-horizontal`
     ): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
+    inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: TextSymbolProperties | LabelSymbol3DProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: TextSymbolProperties | LabelSymbol3DProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setUseCodedValues(value: Boolean): Self = StObject.set(x, "useCodedValues", value.asInstanceOf[js.Any])
+    inline def setUseCodedValues(value: Boolean): Self = StObject.set(x, "useCodedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCodedValuesUndefined: Self = StObject.set(x, "useCodedValues", js.undefined)
+    inline def setUseCodedValuesUndefined: Self = StObject.set(x, "useCodedValues", js.undefined)
     
-    @scala.inline
-    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

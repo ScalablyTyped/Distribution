@@ -12,19 +12,15 @@ trait TransformStream[I, O] extends StObject {
 }
 object TransformStream {
   
-  @scala.inline
-  def apply[I, O](readable: ReadableStream[O], writable: WritableStream[I]): TransformStream[I, O] = {
+  inline def apply[I, O](readable: ReadableStream[O], writable: WritableStream[I]): TransformStream[I, O] = {
     val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformStream[I, O]]
   }
   
-  @scala.inline
-  implicit class TransformStreamMutableBuilder[Self <: TransformStream[?, ?], I, O] (val x: Self & (TransformStream[I, O])) extends AnyVal {
+  extension [Self <: TransformStream[?, ?], I, O](x: Self & (TransformStream[I, O])) {
     
-    @scala.inline
-    def setReadable(value: ReadableStream[O]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    inline def setReadable(value: ReadableStream[O]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritable(value: WritableStream[I]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: WritableStream[I]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

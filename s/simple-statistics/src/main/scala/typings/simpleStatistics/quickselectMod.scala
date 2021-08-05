@@ -10,12 +10,8 @@ object quickselectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(arr: js.Array[Double], k: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(arr: js.Array[Double], k: Double, left: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(arr: js.Array[Double], k: Double, left: Double, right: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(arr: js.Array[Double], k: Double, left: Unit, right: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(arr: js.Array[Double], k: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(arr: js.Array[Double], k: Double, left: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(arr: js.Array[Double], k: Double, left: Double, right: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(arr: js.Array[Double], k: Double, left: Unit, right: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

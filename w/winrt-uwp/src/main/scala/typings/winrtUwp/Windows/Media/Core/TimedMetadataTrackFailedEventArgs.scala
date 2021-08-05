@@ -12,16 +12,13 @@ trait TimedMetadataTrackFailedEventArgs extends StObject {
 }
 object TimedMetadataTrackFailedEventArgs {
   
-  @scala.inline
-  def apply(error: TimedMetadataTrackError): TimedMetadataTrackFailedEventArgs = {
+  inline def apply(error: TimedMetadataTrackError): TimedMetadataTrackFailedEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimedMetadataTrackFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class TimedMetadataTrackFailedEventArgsMutableBuilder[Self <: TimedMetadataTrackFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TimedMetadataTrackFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: TimedMetadataTrackError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: TimedMetadataTrackError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

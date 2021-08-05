@@ -28,28 +28,21 @@ trait SearchDijkstraOptions extends StObject {
 }
 object SearchDijkstraOptions {
   
-  @scala.inline
-  def apply(root: Selector | CollectionArgument): SearchDijkstraOptions = {
+  inline def apply(root: Selector | CollectionArgument): SearchDijkstraOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDijkstraOptions]
   }
   
-  @scala.inline
-  implicit class SearchDijkstraOptionsMutableBuilder[Self <: SearchDijkstraOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDijkstraOptions](x: Self) {
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
-    @scala.inline
-    def setRoot(value: Selector | CollectionArgument): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Selector | CollectionArgument): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    inline def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait NotificationContext extends StObject {
 }
 object NotificationContext {
   
-  @scala.inline
-  def apply(): NotificationContext = {
+  inline def apply(): NotificationContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationContext]
   }
   
-  @scala.inline
-  implicit class NotificationContextMutableBuilder[Self <: NotificationContext] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationContext](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ValidationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ValidationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: ValidationStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: ValidationStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setValidationId(value: ValidationId): Self = StObject.set(x, "validationId", value.asInstanceOf[js.Any])
+    inline def setValidationId(value: ValidationId): Self = StObject.set(x, "validationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationIdUndefined: Self = StObject.set(x, "validationId", js.undefined)
+    inline def setValidationIdUndefined: Self = StObject.set(x, "validationId", js.undefined)
   }
 }

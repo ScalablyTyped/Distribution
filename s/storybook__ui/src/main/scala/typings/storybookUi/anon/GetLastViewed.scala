@@ -13,19 +13,15 @@ trait GetLastViewed extends StObject {
 }
 object GetLastViewed {
   
-  @scala.inline
-  def apply(clearLastViewed: () => Unit, getLastViewed: () => js.Array[StoryRef]): GetLastViewed = {
+  inline def apply(clearLastViewed: () => Unit, getLastViewed: () => js.Array[StoryRef]): GetLastViewed = {
     val __obj = js.Dynamic.literal(clearLastViewed = js.Any.fromFunction0(clearLastViewed), getLastViewed = js.Any.fromFunction0(getLastViewed))
     __obj.asInstanceOf[GetLastViewed]
   }
   
-  @scala.inline
-  implicit class GetLastViewedMutableBuilder[Self <: GetLastViewed] (val x: Self) extends AnyVal {
+  extension [Self <: GetLastViewed](x: Self) {
     
-    @scala.inline
-    def setClearLastViewed(value: () => Unit): Self = StObject.set(x, "clearLastViewed", js.Any.fromFunction0(value))
+    inline def setClearLastViewed(value: () => Unit): Self = StObject.set(x, "clearLastViewed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastViewed(value: () => js.Array[StoryRef]): Self = StObject.set(x, "getLastViewed", js.Any.fromFunction0(value))
+    inline def setGetLastViewed(value: () => js.Array[StoryRef]): Self = StObject.set(x, "getLastViewed", js.Any.fromFunction0(value))
   }
 }

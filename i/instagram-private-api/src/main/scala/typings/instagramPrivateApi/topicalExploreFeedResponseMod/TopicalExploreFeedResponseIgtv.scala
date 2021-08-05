@@ -14,8 +14,7 @@ trait TopicalExploreFeedResponseIgtv extends StObject {
 }
 object TopicalExploreFeedResponseIgtv {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     display_content_metadata: Boolean,
     media: TopicalExploreFeedResponseMedia,
     tv_guide: TopicalExploreFeedResponseTvGuide
@@ -24,16 +23,12 @@ object TopicalExploreFeedResponseIgtv {
     __obj.asInstanceOf[TopicalExploreFeedResponseIgtv]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseIgtvMutableBuilder[Self <: TopicalExploreFeedResponseIgtv] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseIgtv](x: Self) {
     
-    @scala.inline
-    def setDisplay_content_metadata(value: Boolean): Self = StObject.set(x, "display_content_metadata", value.asInstanceOf[js.Any])
+    inline def setDisplay_content_metadata(value: Boolean): Self = StObject.set(x, "display_content_metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: TopicalExploreFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: TopicalExploreFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTv_guide(value: TopicalExploreFeedResponseTvGuide): Self = StObject.set(x, "tv_guide", value.asInstanceOf[js.Any])
+    inline def setTv_guide(value: TopicalExploreFeedResponseTvGuide): Self = StObject.set(x, "tv_guide", value.asInstanceOf[js.Any])
   }
 }

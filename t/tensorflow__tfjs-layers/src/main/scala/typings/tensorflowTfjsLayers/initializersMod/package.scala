@@ -5,25 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def checkDistribution(): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkDistribution")().asInstanceOf[scala.Unit]
-@scala.inline
-def checkDistribution(value: java.lang.String): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkDistribution")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def checkDistribution(): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkDistribution")().asInstanceOf[scala.Unit]
+inline def checkDistribution(value: java.lang.String): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkDistribution")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def checkFanMode(): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkFanMode")().asInstanceOf[scala.Unit]
-@scala.inline
-def checkFanMode(value: java.lang.String): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkFanMode")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def checkFanMode(): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkFanMode")().asInstanceOf[scala.Unit]
+inline def checkFanMode(value: java.lang.String): scala.Unit = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("checkFanMode")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def getInitializer(identifier: typings.tensorflowTfjsCore.serializationMod.ConfigDict): typings.tensorflowTfjsLayers.initializersMod.Initializer = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitializer")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.initializersMod.Initializer]
-@scala.inline
-def getInitializer(identifier: typings.tensorflowTfjsLayers.initializersMod.Initializer): typings.tensorflowTfjsLayers.initializersMod.Initializer = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitializer")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.initializersMod.Initializer]
-@scala.inline
-def getInitializer(identifier: typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier): typings.tensorflowTfjsLayers.initializersMod.Initializer = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitializer")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.initializersMod.Initializer]
+inline def getInitializer(identifier: typings.tensorflowTfjsCore.serializationMod.ConfigDict): typings.tensorflowTfjsLayers.initializersMod.Initializer = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitializer")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.initializersMod.Initializer]
+inline def getInitializer(identifier: typings.tensorflowTfjsLayers.initializersMod.Initializer): typings.tensorflowTfjsLayers.initializersMod.Initializer = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitializer")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.initializersMod.Initializer]
+inline def getInitializer(identifier: typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier): typings.tensorflowTfjsLayers.initializersMod.Initializer = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitializer")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.initializersMod.Initializer]
 
-@scala.inline
-def serializeInitializer(initializer: typings.tensorflowTfjsLayers.initializersMod.Initializer): typings.tensorflowTfjsCore.serializationMod.ConfigDictValue = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("serializeInitializer")(initializer.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.serializationMod.ConfigDictValue]
+inline def serializeInitializer(initializer: typings.tensorflowTfjsLayers.initializersMod.Initializer): typings.tensorflowTfjsCore.serializationMod.ConfigDictValue = typings.tensorflowTfjsLayers.initializersMod.^.asInstanceOf[js.Dynamic].applyDynamic("serializeInitializer")(initializer.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.serializationMod.ConfigDictValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.constant_

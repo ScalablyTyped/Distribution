@@ -42,7 +42,7 @@ trait Legend extends StObject {
   
   var Position: XlLegendPosition = js.native
   
-  @JSName("PowerPoint.Legend_typekey")
+  /* private */ @JSName("PowerPoint.Legend_typekey")
   var PowerPointDotLegend_typekey: Legend = js.native
   
   def Select(): js.Any = js.native

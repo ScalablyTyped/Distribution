@@ -71,21 +71,16 @@ object assessmentTemplateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AssessmentTemplateState): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
+    inline def get(name: String, id: Input[ID]): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
+    inline def get(name: String, id: Input[ID], state: AssessmentTemplateState): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
+    inline def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
     
     /**
       * Returns true if the given object is an instance of AssessmentTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean]
   }
   
   trait AssessmentTemplateArgs extends StObject {
@@ -117,8 +112,7 @@ object assessmentTemplateMod {
   }
   object AssessmentTemplateArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       duration: Input[Double],
       rulesPackageArns: Input[js.Array[Input[String]]],
       targetArn: Input[String]
@@ -127,32 +121,23 @@ object assessmentTemplateMod {
       __obj.asInstanceOf[AssessmentTemplateArgs]
     }
     
-    @scala.inline
-    implicit class AssessmentTemplateArgsMutableBuilder[Self <: AssessmentTemplateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AssessmentTemplateArgs](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRulesPackageArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
+      inline def setRulesPackageArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesPackageArnsVarargs(value: Input[String]*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+      inline def setRulesPackageArnsVarargs(value: Input[String]*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+      inline def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,53 +175,38 @@ object assessmentTemplateMod {
   }
   object AssessmentTemplateState {
     
-    @scala.inline
-    def apply(): AssessmentTemplateState = {
+    inline def apply(): AssessmentTemplateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AssessmentTemplateState]
     }
     
-    @scala.inline
-    implicit class AssessmentTemplateStateMutableBuilder[Self <: AssessmentTemplateState] (val x: Self) extends AnyVal {
+    extension [Self <: AssessmentTemplateState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRulesPackageArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
+      inline def setRulesPackageArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
+      inline def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
       
-      @scala.inline
-      def setRulesPackageArnsVarargs(value: Input[String]*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+      inline def setRulesPackageArnsVarargs(value: Input[String]*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+      inline def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
+      inline def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
     }
   }
 }

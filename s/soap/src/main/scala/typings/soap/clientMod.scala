@@ -36,23 +36,23 @@ object clientMod {
     def this(wsdl: WSDL, endpoint: String, options: IOptions) = this()
     def this(wsdl: WSDL, endpoint: Unit, options: IOptions) = this()
     
-    var SOAPAction: js.Any = js.native
+    /* private */ var SOAPAction: js.Any = js.native
     
-    var _defineMethod: js.Any = js.native
+    /* private */ var _defineMethod: js.Any = js.native
     
-    var _definePort: js.Any = js.native
+    /* private */ var _definePort: js.Any = js.native
     
-    var _defineService: js.Any = js.native
+    /* private */ var _defineService: js.Any = js.native
     
-    var _initializeOptions: js.Any = js.native
+    /* private */ var _initializeOptions: js.Any = js.native
     
-    var _initializeServices: js.Any = js.native
+    /* private */ var _initializeServices: js.Any = js.native
     
-    var _invoke: js.Any = js.native
+    /* private */ var _invoke: js.Any = js.native
     
-    var _processSoapHeader: js.Any = js.native
+    /* private */ var _processSoapHeader: js.Any = js.native
     
-    var _promisifyMethod: js.Any = js.native
+    /* private */ var _promisifyMethod: js.Any = js.native
     
     def addBodyAttribute(bodyAttribute: js.Any): Unit = js.native
     def addBodyAttribute(bodyAttribute: js.Any, name: String): Unit = js.native
@@ -75,7 +75,7 @@ object clientMod {
     def addSoapHeader(soapHeader: js.Any, name: Unit, namespace: js.Any, xmlns: String): Double = js.native
     def addSoapHeader(soapHeader: js.Any, name: Unit, namespace: Unit, xmlns: String): Double = js.native
     
-    var bodyAttributes: js.Any = js.native
+    /* private */ var bodyAttributes: js.Any = js.native
     
     def changeSoapHeader(index: js.Any, soapHeader: js.Any): Unit = js.native
     def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any): Unit = js.native
@@ -105,7 +105,7 @@ object clientMod {
     @JSName("emit")
     def emit_soapError(event: soapError, error: js.Any, eid: String): Boolean = js.native
     
-    var endpoint: js.Any = js.native
+    /* private */ var endpoint: js.Any = js.native
     
     def getBodyAttributes(): js.Array[js.Any] = js.native
     
@@ -114,9 +114,9 @@ object clientMod {
     /** return all defined headers */
     def getSoapHeaders(): js.Array[String] = js.native
     
-    var httpClient: js.Any = js.native
+    /* private */ var httpClient: js.Any = js.native
     
-    var httpHeaders: js.Any = js.native
+    /* private */ var httpHeaders: js.Any = js.native
     
     var lastElapsedTime: js.UndefOr[Double] = js.native
     
@@ -133,7 +133,7 @@ object clientMod {
     
     var lastResponseHeaders: js.UndefOr[IncomingHttpHeaders] = js.native
     
-    var normalizeNames: js.Any = js.native
+    /* private */ var normalizeNames: js.Any = js.native
     
     /** Emitted before a request is sent, but only the body is passed to the event handler. Useful if you don't want to log /store Soap headers. */
     @JSName("on")
@@ -151,11 +151,11 @@ object clientMod {
     @JSName("on")
     def on_soapError(event: soapError, listener: js.Function2[/* error */ js.Any, /* eid */ String, Unit]): this.type = js.native
     
-    var overridePromiseSuffix: js.Any = js.native
+    /* private */ var overridePromiseSuffix: js.Any = js.native
     
-    var returnSaxStream: js.Any = js.native
+    /* private */ var returnSaxStream: js.Any = js.native
     
-    var security: js.Any = js.native
+    /* private */ var security: js.Any = js.native
     
     /** overwrite the SOAP service endpoint address */
     def setEndpoint(endpoint: String): Unit = js.native
@@ -165,11 +165,11 @@ object clientMod {
     /** use the specified security protocol */
     def setSecurity(security: ISecurity): Unit = js.native
     
-    var soapHeaders: js.Any = js.native
+    /* private */ var soapHeaders: js.Any = js.native
     
-    var streamAllowed: js.Any = js.native
+    /* private */ var streamAllowed: js.Any = js.native
     
-    var wsdl: js.Any = js.native
+    /* private */ var wsdl: js.Any = js.native
   }
   
   trait ISoapError
@@ -182,26 +182,20 @@ object clientMod {
   }
   object ISoapError {
     
-    @scala.inline
-    def apply(message: String, name: String): ISoapError = {
+    inline def apply(message: String, name: String): ISoapError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISoapError]
     }
     
-    @scala.inline
-    implicit class ISoapErrorMutableBuilder[Self <: ISoapError] (val x: Self) extends AnyVal {
+    extension [Self <: ISoapError](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
 }

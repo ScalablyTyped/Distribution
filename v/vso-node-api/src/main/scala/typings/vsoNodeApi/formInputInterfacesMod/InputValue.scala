@@ -24,22 +24,17 @@ trait InputValue extends StObject {
 }
 object InputValue {
   
-  @scala.inline
-  def apply(data: StringDictionary[js.Any], displayValue: String, value: String): InputValue = {
+  inline def apply(data: StringDictionary[js.Any], displayValue: String, value: String): InputValue = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], displayValue = displayValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputValue]
   }
   
-  @scala.inline
-  implicit class InputValueMutableBuilder[Self <: InputValue] (val x: Self) extends AnyVal {
+  extension [Self <: InputValue](x: Self) {
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
+    inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

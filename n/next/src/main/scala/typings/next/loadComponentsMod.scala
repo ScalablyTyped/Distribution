@@ -26,11 +26,9 @@ object loadComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interopDefault(mod: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interopDefault")(mod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def interopDefault(mod: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interopDefault")(mod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def loadComponents(distDir: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(distDir.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LoadComponentsReturnType]]
+  inline def loadComponents(distDir: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(distDir.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LoadComponentsReturnType]]
   
   trait LoadComponentsReturnType extends StObject {
     
@@ -54,8 +52,7 @@ object loadComponentsMod {
   }
   object LoadComponentsReturnType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       App: AppType,
       Component: ComponentType[js.Object],
       Document: DocumentType,
@@ -66,51 +63,37 @@ object loadComponentsMod {
       __obj.asInstanceOf[LoadComponentsReturnType]
     }
     
-    @scala.inline
-    implicit class LoadComponentsReturnTypeMutableBuilder[Self <: LoadComponentsReturnType] (val x: Self) extends AnyVal {
+    extension [Self <: LoadComponentsReturnType](x: Self) {
       
-      @scala.inline
-      def setApp(value: AppType): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
+      inline def setApp(value: AppType): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildManifest(value: BuildManifest): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
+      inline def setBuildManifest(value: BuildManifest): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocument(value: DocumentType): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: DocumentType): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetServerSideProps(
+      inline def setGetServerSideProps(
         value: /* context */ GetServerSidePropsContext[ParsedUrlQuery] => js.Promise[GetServerSidePropsResult[StringDictionary[js.Any]]]
       ): Self = StObject.set(x, "getServerSideProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetServerSidePropsUndefined: Self = StObject.set(x, "getServerSideProps", js.undefined)
+      inline def setGetServerSidePropsUndefined: Self = StObject.set(x, "getServerSideProps", js.undefined)
       
-      @scala.inline
-      def setGetStaticPaths(value: /* context */ GetStaticPathsContext => js.Promise[GetStaticPathsResult[ParsedUrlQuery]]): Self = StObject.set(x, "getStaticPaths", js.Any.fromFunction1(value))
+      inline def setGetStaticPaths(value: /* context */ GetStaticPathsContext => js.Promise[GetStaticPathsResult[ParsedUrlQuery]]): Self = StObject.set(x, "getStaticPaths", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStaticPathsUndefined: Self = StObject.set(x, "getStaticPaths", js.undefined)
+      inline def setGetStaticPathsUndefined: Self = StObject.set(x, "getStaticPaths", js.undefined)
       
-      @scala.inline
-      def setGetStaticProps(
+      inline def setGetStaticProps(
         value: /* context */ GetStaticPropsContext[ParsedUrlQuery] => js.Promise[GetStaticPropsResult[StringDictionary[js.Any]]]
       ): Self = StObject.set(x, "getStaticProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStaticPropsUndefined: Self = StObject.set(x, "getStaticProps", js.undefined)
+      inline def setGetStaticPropsUndefined: Self = StObject.set(x, "getStaticProps", js.undefined)
       
-      @scala.inline
-      def setPageConfig(value: PageConfig): Self = StObject.set(x, "pageConfig", value.asInstanceOf[js.Any])
+      inline def setPageConfig(value: PageConfig): Self = StObject.set(x, "pageConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageConfigUndefined: Self = StObject.set(x, "pageConfig", js.undefined)
+      inline def setPageConfigUndefined: Self = StObject.set(x, "pageConfig", js.undefined)
       
-      @scala.inline
-      def setReactLoadableManifest(value: ReactLoadableManifest): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
+      inline def setReactLoadableManifest(value: ReactLoadableManifest): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,23 +107,18 @@ object loadComponentsMod {
   }
   object ManifestItem {
     
-    @scala.inline
-    def apply(file: String, id: Double | String, name: String): ManifestItem = {
+    inline def apply(file: String, id: Double | String, name: String): ManifestItem = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManifestItem]
     }
     
-    @scala.inline
-    implicit class ManifestItemMutableBuilder[Self <: ManifestItem] (val x: Self) extends AnyVal {
+    extension [Self <: ManifestItem](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

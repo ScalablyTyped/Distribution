@@ -62,98 +62,68 @@ object sliderMod extends Shortcut {
   }
   object SliderProps {
     
-    @scala.inline
-    def apply(): SliderProps = {
+    inline def apply(): SliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderProps]
     }
     
-    @scala.inline
-    implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabelForHandle(value: String): Self = StObject.set(x, "ariaLabelForHandle", value.asInstanceOf[js.Any])
+      inline def setAriaLabelForHandle(value: String): Self = StObject.set(x, "ariaLabelForHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelForHandleUndefined: Self = StObject.set(x, "ariaLabelForHandle", js.undefined)
+      inline def setAriaLabelForHandleUndefined: Self = StObject.set(x, "ariaLabelForHandle", js.undefined)
       
-      @scala.inline
-      def setAriaLabelledByForHandle(value: String): Self = StObject.set(x, "ariaLabelledByForHandle", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledByForHandle(value: String): Self = StObject.set(x, "ariaLabelledByForHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByForHandleUndefined: Self = StObject.set(x, "ariaLabelledByForHandle", js.undefined)
+      inline def setAriaLabelledByForHandleUndefined: Self = StObject.set(x, "ariaLabelledByForHandle", js.undefined)
       
-      @scala.inline
-      def setAriaValueTextFormatterForHandle(value: String): Self = StObject.set(x, "ariaValueTextFormatterForHandle", value.asInstanceOf[js.Any])
+      inline def setAriaValueTextFormatterForHandle(value: String): Self = StObject.set(x, "ariaValueTextFormatterForHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaValueTextFormatterForHandleUndefined: Self = StObject.set(x, "ariaValueTextFormatterForHandle", js.undefined)
+      inline def setAriaValueTextFormatterForHandleUndefined: Self = StObject.set(x, "ariaValueTextFormatterForHandle", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setHandle(value: /* props */ AriaLabel => ReactElement): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+      inline def setHandle(value: /* props */ AriaLabel => ReactElement): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleStyle(value: CSSProperties): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
+      inline def setHandleStyle(value: CSSProperties): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
+      inline def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
-      @scala.inline
-      def setMinimumTrackStyle(value: CSSProperties): Self = StObject.set(x, "minimumTrackStyle", value.asInstanceOf[js.Any])
+      inline def setMinimumTrackStyle(value: CSSProperties): Self = StObject.set(x, "minimumTrackStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumTrackStyleUndefined: Self = StObject.set(x, "minimumTrackStyle", js.undefined)
+      inline def setMinimumTrackStyleUndefined: Self = StObject.set(x, "minimumTrackStyle", js.undefined)
       
-      @scala.inline
-      def setOnAfterChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction1(value))
+      inline def setOnAfterChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
+      inline def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
       
-      @scala.inline
-      def setOnBeforeChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction1(value))
+      inline def setOnBeforeChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)
+      inline def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setStartPoint(value: Double): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
+      inline def setStartPoint(value: Double): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
+      inline def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setTrackStyle(value: CSSProperties): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
+      inline def setTrackStyle(value: CSSProperties): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
+      inline def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -168,20 +138,16 @@ object sliderMod extends Shortcut {
   }
   object SliderState {
     
-    @scala.inline
-    def apply(dragging: Boolean, value: Double): SliderState = {
+    inline def apply(dragging: Boolean, value: Double): SliderState = {
       val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliderState]
     }
     
-    @scala.inline
-    implicit class SliderStateMutableBuilder[Self <: SliderState] (val x: Self) extends AnyVal {
+    extension [Self <: SliderState](x: Self) {
       
-      @scala.inline
-      def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

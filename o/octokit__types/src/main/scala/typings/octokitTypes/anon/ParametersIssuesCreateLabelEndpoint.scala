@@ -18,8 +18,7 @@ trait ParametersIssuesCreateLabelEndpoint extends StObject {
 }
 object ParametersIssuesCreateLabelEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: IssuesCreateLabelEndpoint,
     request: IssuesCreateLabelRequestOptions,
     response: OctokitResponse[IssuesCreateLabelResponseData]
@@ -28,16 +27,12 @@ object ParametersIssuesCreateLabelEndpoint {
     __obj.asInstanceOf[ParametersIssuesCreateLabelEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersIssuesCreateLabelEndpointMutableBuilder[Self <: ParametersIssuesCreateLabelEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersIssuesCreateLabelEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: IssuesCreateLabelEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IssuesCreateLabelEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: IssuesCreateLabelRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IssuesCreateLabelRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[IssuesCreateLabelResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[IssuesCreateLabelResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

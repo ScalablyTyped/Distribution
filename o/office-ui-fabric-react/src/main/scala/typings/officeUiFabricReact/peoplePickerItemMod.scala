@@ -17,6 +17,5 @@ object peoplePickerItemMod {
   @js.native
   val PeoplePickerItem: FunctionComponent[IPeoplePickerItemSelectedProps] = js.native
   
-  @scala.inline
-  def PeoplePickerItemBase(props: IPeoplePickerItemSelectedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PeoplePickerItemBase(props: IPeoplePickerItemSelectedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

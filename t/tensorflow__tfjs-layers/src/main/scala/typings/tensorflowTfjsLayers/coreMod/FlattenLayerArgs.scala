@@ -15,19 +15,15 @@ trait FlattenLayerArgs
 }
 object FlattenLayerArgs {
   
-  @scala.inline
-  def apply(): FlattenLayerArgs = {
+  inline def apply(): FlattenLayerArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlattenLayerArgs]
   }
   
-  @scala.inline
-  implicit class FlattenLayerArgsMutableBuilder[Self <: FlattenLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: FlattenLayerArgs](x: Self) {
     
-    @scala.inline
-    def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+    inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
   }
 }

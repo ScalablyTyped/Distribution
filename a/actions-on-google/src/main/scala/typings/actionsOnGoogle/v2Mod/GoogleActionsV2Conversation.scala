@@ -27,31 +27,23 @@ trait GoogleActionsV2Conversation extends StObject {
 }
 object GoogleActionsV2Conversation {
   
-  @scala.inline
-  def apply(): GoogleActionsV2Conversation = {
+  inline def apply(): GoogleActionsV2Conversation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2Conversation]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2ConversationMutableBuilder[Self <: GoogleActionsV2Conversation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2Conversation](x: Self) {
     
-    @scala.inline
-    def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
+    inline def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationIdUndefined: Self = StObject.set(x, "conversationId", js.undefined)
+    inline def setConversationIdUndefined: Self = StObject.set(x, "conversationId", js.undefined)
     
-    @scala.inline
-    def setConversationToken(value: String): Self = StObject.set(x, "conversationToken", value.asInstanceOf[js.Any])
+    inline def setConversationToken(value: String): Self = StObject.set(x, "conversationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationTokenUndefined: Self = StObject.set(x, "conversationToken", js.undefined)
+    inline def setConversationTokenUndefined: Self = StObject.set(x, "conversationToken", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsV2ConversationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsV2ConversationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

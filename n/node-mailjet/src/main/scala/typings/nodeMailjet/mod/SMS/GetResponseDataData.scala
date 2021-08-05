@@ -25,8 +25,7 @@ trait GetResponseDataData extends StObject {
 }
 object GetResponseDataData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Cost: ResponseCost,
     CreationTS: Double,
     From: String,
@@ -40,31 +39,22 @@ object GetResponseDataData {
     __obj.asInstanceOf[GetResponseDataData]
   }
   
-  @scala.inline
-  implicit class GetResponseDataDataMutableBuilder[Self <: GetResponseDataData] (val x: Self) extends AnyVal {
+  extension [Self <: GetResponseDataData](x: Self) {
     
-    @scala.inline
-    def setCost(value: ResponseCost): Self = StObject.set(x, "Cost", value.asInstanceOf[js.Any])
+    inline def setCost(value: ResponseCost): Self = StObject.set(x, "Cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTS(value: Double): Self = StObject.set(x, "CreationTS", value.asInstanceOf[js.Any])
+    inline def setCreationTS(value: Double): Self = StObject.set(x, "CreationTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMSCount(value: Double): Self = StObject.set(x, "SMSCount", value.asInstanceOf[js.Any])
+    inline def setSMSCount(value: Double): Self = StObject.set(x, "SMSCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentTS(value: Double): Self = StObject.set(x, "SentTS", value.asInstanceOf[js.Any])
+    inline def setSentTS(value: Double): Self = StObject.set(x, "SentTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ResponseStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ResponseStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

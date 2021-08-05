@@ -18,28 +18,21 @@ trait PutAppReplicationConfigurationRequest extends StObject {
 }
 object PutAppReplicationConfigurationRequest {
   
-  @scala.inline
-  def apply(): PutAppReplicationConfigurationRequest = {
+  inline def apply(): PutAppReplicationConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAppReplicationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutAppReplicationConfigurationRequestMutableBuilder[Self <: PutAppReplicationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAppReplicationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setServerGroupReplicationConfigurations(value: ServerGroupReplicationConfigurations): Self = StObject.set(x, "serverGroupReplicationConfigurations", value.asInstanceOf[js.Any])
+    inline def setServerGroupReplicationConfigurations(value: ServerGroupReplicationConfigurations): Self = StObject.set(x, "serverGroupReplicationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerGroupReplicationConfigurationsUndefined: Self = StObject.set(x, "serverGroupReplicationConfigurations", js.undefined)
+    inline def setServerGroupReplicationConfigurationsUndefined: Self = StObject.set(x, "serverGroupReplicationConfigurations", js.undefined)
     
-    @scala.inline
-    def setServerGroupReplicationConfigurationsVarargs(value: ServerGroupReplicationConfiguration*): Self = StObject.set(x, "serverGroupReplicationConfigurations", js.Array(value :_*))
+    inline def setServerGroupReplicationConfigurationsVarargs(value: ServerGroupReplicationConfiguration*): Self = StObject.set(x, "serverGroupReplicationConfigurations", js.Array(value :_*))
   }
 }

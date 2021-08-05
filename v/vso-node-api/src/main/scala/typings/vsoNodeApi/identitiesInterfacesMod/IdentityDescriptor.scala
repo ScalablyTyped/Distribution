@@ -18,19 +18,15 @@ trait IdentityDescriptor extends StObject {
 }
 object IdentityDescriptor {
   
-  @scala.inline
-  def apply(identifier: String, identityType: String): IdentityDescriptor = {
+  inline def apply(identifier: String, identityType: String): IdentityDescriptor = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], identityType = identityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityDescriptor]
   }
   
-  @scala.inline
-  implicit class IdentityDescriptorMutableBuilder[Self <: IdentityDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityDescriptor](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityType(value: String): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: String): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
   }
 }

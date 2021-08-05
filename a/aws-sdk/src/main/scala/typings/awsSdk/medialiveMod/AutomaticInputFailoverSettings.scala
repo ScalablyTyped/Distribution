@@ -28,37 +28,27 @@ trait AutomaticInputFailoverSettings extends StObject {
 }
 object AutomaticInputFailoverSettings {
   
-  @scala.inline
-  def apply(SecondaryInputId: string): AutomaticInputFailoverSettings = {
+  inline def apply(SecondaryInputId: string): AutomaticInputFailoverSettings = {
     val __obj = js.Dynamic.literal(SecondaryInputId = SecondaryInputId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomaticInputFailoverSettings]
   }
   
-  @scala.inline
-  implicit class AutomaticInputFailoverSettingsMutableBuilder[Self <: AutomaticInputFailoverSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticInputFailoverSettings](x: Self) {
     
-    @scala.inline
-    def setErrorClearTimeMsec(value: integerMin1): Self = StObject.set(x, "ErrorClearTimeMsec", value.asInstanceOf[js.Any])
+    inline def setErrorClearTimeMsec(value: integerMin1): Self = StObject.set(x, "ErrorClearTimeMsec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorClearTimeMsecUndefined: Self = StObject.set(x, "ErrorClearTimeMsec", js.undefined)
+    inline def setErrorClearTimeMsecUndefined: Self = StObject.set(x, "ErrorClearTimeMsec", js.undefined)
     
-    @scala.inline
-    def setFailoverConditions(value: listOfFailoverCondition): Self = StObject.set(x, "FailoverConditions", value.asInstanceOf[js.Any])
+    inline def setFailoverConditions(value: listOfFailoverCondition): Self = StObject.set(x, "FailoverConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailoverConditionsUndefined: Self = StObject.set(x, "FailoverConditions", js.undefined)
+    inline def setFailoverConditionsUndefined: Self = StObject.set(x, "FailoverConditions", js.undefined)
     
-    @scala.inline
-    def setFailoverConditionsVarargs(value: FailoverCondition*): Self = StObject.set(x, "FailoverConditions", js.Array(value :_*))
+    inline def setFailoverConditionsVarargs(value: FailoverCondition*): Self = StObject.set(x, "FailoverConditions", js.Array(value :_*))
     
-    @scala.inline
-    def setInputPreference(value: InputPreference): Self = StObject.set(x, "InputPreference", value.asInstanceOf[js.Any])
+    inline def setInputPreference(value: InputPreference): Self = StObject.set(x, "InputPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPreferenceUndefined: Self = StObject.set(x, "InputPreference", js.undefined)
+    inline def setInputPreferenceUndefined: Self = StObject.set(x, "InputPreference", js.undefined)
     
-    @scala.inline
-    def setSecondaryInputId(value: string): Self = StObject.set(x, "SecondaryInputId", value.asInstanceOf[js.Any])
+    inline def setSecondaryInputId(value: string): Self = StObject.set(x, "SecondaryInputId", value.asInstanceOf[js.Any])
   }
 }

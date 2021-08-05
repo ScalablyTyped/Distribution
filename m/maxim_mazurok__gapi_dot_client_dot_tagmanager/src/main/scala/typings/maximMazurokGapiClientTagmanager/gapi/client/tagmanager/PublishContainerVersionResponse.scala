@@ -14,25 +14,19 @@ trait PublishContainerVersionResponse extends StObject {
 }
 object PublishContainerVersionResponse {
   
-  @scala.inline
-  def apply(): PublishContainerVersionResponse = {
+  inline def apply(): PublishContainerVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublishContainerVersionResponse]
   }
   
-  @scala.inline
-  implicit class PublishContainerVersionResponseMutableBuilder[Self <: PublishContainerVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PublishContainerVersionResponse](x: Self) {
     
-    @scala.inline
-    def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
+    inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
+    inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
     
-    @scala.inline
-    def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
+    inline def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
+    inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
   }
 }

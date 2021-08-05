@@ -34,8 +34,7 @@ trait GalleryImage
 }
 object GalleryImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animated: Boolean,
     bandwidth: Double,
     comment_count: Double,
@@ -63,58 +62,40 @@ object GalleryImage {
     __obj.asInstanceOf[GalleryImage]
   }
   
-  @scala.inline
-  implicit class GalleryImageMutableBuilder[Self <: GalleryImage] (val x: Self) extends AnyVal {
+  extension [Self <: GalleryImage](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletehash(value: String): Self = StObject.set(x, "deletehash", value.asInstanceOf[js.Any])
+    inline def setDeletehash(value: String): Self = StObject.set(x, "deletehash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletehashUndefined: Self = StObject.set(x, "deletehash", js.undefined)
+    inline def setDeletehashUndefined: Self = StObject.set(x, "deletehash", js.undefined)
     
-    @scala.inline
-    def setGifv(value: String): Self = StObject.set(x, "gifv", value.asInstanceOf[js.Any])
+    inline def setGifv(value: String): Self = StObject.set(x, "gifv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGifvUndefined: Self = StObject.set(x, "gifv", js.undefined)
+    inline def setGifvUndefined: Self = StObject.set(x, "gifv", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+    inline def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
+    inline def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
     
-    @scala.inline
-    def setMp4(value: String): Self = StObject.set(x, "mp4", value.asInstanceOf[js.Any])
+    inline def setMp4(value: String): Self = StObject.set(x, "mp4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMp4Undefined: Self = StObject.set(x, "mp4", js.undefined)
+    inline def setMp4Undefined: Self = StObject.set(x, "mp4", js.undefined)
     
-    @scala.inline
-    def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebm(value: String): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
+    inline def setWebm(value: String): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebmUndefined: Self = StObject.set(x, "webm", js.undefined)
+    inline def setWebmUndefined: Self = StObject.set(x, "webm", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

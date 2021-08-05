@@ -21,8 +21,7 @@ object dropzoneUniDriverMod {
   }
   object DropzoneUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       dropFiles: js.Array[File] => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -34,17 +33,13 @@ object dropzoneUniDriverMod {
       __obj.asInstanceOf[DropzoneUniDriver]
     }
     
-    @scala.inline
-    implicit class DropzoneUniDriverMutableBuilder[Self <: DropzoneUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: DropzoneUniDriver](x: Self) {
       
-      @scala.inline
-      def setDropFiles(value: js.Array[File] => js.Promise[Unit]): Self = StObject.set(x, "dropFiles", js.Any.fromFunction1(value))
+      inline def setDropFiles(value: js.Array[File] => js.Promise[Unit]): Self = StObject.set(x, "dropFiles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContentElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
+      inline def setGetContentElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOverlayElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getOverlayElement", js.Any.fromFunction0(value))
+      inline def setGetOverlayElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getOverlayElement", js.Any.fromFunction0(value))
     }
   }
 }

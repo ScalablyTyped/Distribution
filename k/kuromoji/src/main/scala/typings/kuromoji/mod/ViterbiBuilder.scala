@@ -17,8 +17,7 @@ trait ViterbiBuilder extends StObject {
 }
 object ViterbiBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: String => ViterbiLattice,
     token_info_dictionary: TokenInfoDictionary,
     trie: DoubleArray,
@@ -28,19 +27,14 @@ object ViterbiBuilder {
     __obj.asInstanceOf[ViterbiBuilder]
   }
   
-  @scala.inline
-  implicit class ViterbiBuilderMutableBuilder[Self <: ViterbiBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ViterbiBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: String => ViterbiLattice): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
+    inline def setBuild(value: String => ViterbiLattice): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
+    inline def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrie(value: DoubleArray): Self = StObject.set(x, "trie", value.asInstanceOf[js.Any])
+    inline def setTrie(value: DoubleArray): Self = StObject.set(x, "trie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
+    inline def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
   }
 }

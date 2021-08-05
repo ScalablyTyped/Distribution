@@ -36,8 +36,7 @@ trait OpenAddressResponse extends StObject {
 }
 object OpenAddressResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cityName: String,
     countryName: String,
     detailInfo: String,
@@ -52,34 +51,24 @@ object OpenAddressResponse {
     __obj.asInstanceOf[OpenAddressResponse]
   }
   
-  @scala.inline
-  implicit class OpenAddressResponseMutableBuilder[Self <: OpenAddressResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OpenAddressResponse](x: Self) {
     
-    @scala.inline
-    def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
+    inline def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
+    inline def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailInfo(value: String): Self = StObject.set(x, "detailInfo", value.asInstanceOf[js.Any])
+    inline def setDetailInfo(value: String): Self = StObject.set(x, "detailInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNationalCode(value: String): Self = StObject.set(x, "nationalCode", value.asInstanceOf[js.Any])
+    inline def setNationalCode(value: String): Self = StObject.set(x, "nationalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvinceName(value: String): Self = StObject.set(x, "provinceName", value.asInstanceOf[js.Any])
+    inline def setProvinceName(value: String): Self = StObject.set(x, "provinceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelNumber(value: String): Self = StObject.set(x, "telNumber", value.asInstanceOf[js.Any])
+    inline def setTelNumber(value: String): Self = StObject.set(x, "telNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

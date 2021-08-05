@@ -19,12 +19,8 @@ object indexDebugMod {
     * @param bundleFileName string
     * @return Promise<DurationEvent[]>
     */
-  @scala.inline
-  def default(profilePath: String): js.Promise[js.Array[DurationEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
-  @scala.inline
-  def default(profilePath: String, sourceMapPath: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any], sourceMapPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
-  @scala.inline
-  def default(profilePath: String, sourceMapPath: String, bundleFileName: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any], sourceMapPath.asInstanceOf[js.Any], bundleFileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
-  @scala.inline
-  def default(profilePath: String, sourceMapPath: Unit, bundleFileName: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any], sourceMapPath.asInstanceOf[js.Any], bundleFileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
+  inline def default(profilePath: String): js.Promise[js.Array[DurationEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
+  inline def default(profilePath: String, sourceMapPath: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any], sourceMapPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
+  inline def default(profilePath: String, sourceMapPath: String, bundleFileName: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any], sourceMapPath.asInstanceOf[js.Any], bundleFileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
+  inline def default(profilePath: String, sourceMapPath: Unit, bundleFileName: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(profilePath.asInstanceOf[js.Any], sourceMapPath.asInstanceOf[js.Any], bundleFileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
 }

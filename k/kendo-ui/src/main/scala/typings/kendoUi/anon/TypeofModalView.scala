@@ -15,19 +15,15 @@ trait TypeofModalView extends StObject {
 }
 object TypeofModalView {
   
-  @scala.inline
-  def apply(extend: js.Object => ModalView, fn: ModalView): TypeofModalView = {
+  inline def apply(extend: js.Object => ModalView, fn: ModalView): TypeofModalView = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofModalView]
   }
   
-  @scala.inline
-  implicit class TypeofModalViewMutableBuilder[Self <: TypeofModalView] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofModalView](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ModalView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ModalView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ModalView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ModalView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait UploadServerCertificateResponse extends StObject {
 }
 object UploadServerCertificateResponse {
   
-  @scala.inline
-  def apply(): UploadServerCertificateResponse = {
+  inline def apply(): UploadServerCertificateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadServerCertificateResponse]
   }
   
-  @scala.inline
-  implicit class UploadServerCertificateResponseMutableBuilder[Self <: UploadServerCertificateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UploadServerCertificateResponse](x: Self) {
     
-    @scala.inline
-    def setServerCertificateMetadata(value: ServerCertificateMetadata): Self = StObject.set(x, "ServerCertificateMetadata", value.asInstanceOf[js.Any])
+    inline def setServerCertificateMetadata(value: ServerCertificateMetadata): Self = StObject.set(x, "ServerCertificateMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateMetadataUndefined: Self = StObject.set(x, "ServerCertificateMetadata", js.undefined)
+    inline def setServerCertificateMetadataUndefined: Self = StObject.set(x, "ServerCertificateMetadata", js.undefined)
   }
 }

@@ -21,20 +21,16 @@ trait HeaderFooter extends StObject {
 }
 object HeaderFooter {
   
-  @scala.inline
-  def apply(subDocument: SubDocument, `type`: HeaderFooterType): HeaderFooter = {
+  inline def apply(subDocument: SubDocument, `type`: HeaderFooterType): HeaderFooter = {
     val __obj = js.Dynamic.literal(subDocument = subDocument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooter]
   }
   
-  @scala.inline
-  implicit class HeaderFooterMutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderFooter](x: Self) {
     
-    @scala.inline
-    def setSubDocument(value: SubDocument): Self = StObject.set(x, "subDocument", value.asInstanceOf[js.Any])
+    inline def setSubDocument(value: SubDocument): Self = StObject.set(x, "subDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: HeaderFooterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HeaderFooterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

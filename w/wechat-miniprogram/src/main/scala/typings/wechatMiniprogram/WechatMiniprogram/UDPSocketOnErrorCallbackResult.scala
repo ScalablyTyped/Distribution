@@ -11,16 +11,13 @@ trait UDPSocketOnErrorCallbackResult extends StObject {
 }
 object UDPSocketOnErrorCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): UDPSocketOnErrorCallbackResult = {
+  inline def apply(errMsg: String): UDPSocketOnErrorCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[UDPSocketOnErrorCallbackResult]
   }
   
-  @scala.inline
-  implicit class UDPSocketOnErrorCallbackResultMutableBuilder[Self <: UDPSocketOnErrorCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UDPSocketOnErrorCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

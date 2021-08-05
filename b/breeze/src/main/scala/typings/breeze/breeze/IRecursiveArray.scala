@@ -10,8 +10,7 @@ trait IRecursiveArray[T]
      with /* i */ NumberDictionary[T | IRecursiveArray[T]]
 object IRecursiveArray {
   
-  @scala.inline
-  def apply[T](): IRecursiveArray[T] = {
+  inline def apply[T](): IRecursiveArray[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRecursiveArray[T]]
   }

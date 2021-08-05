@@ -21,32 +21,24 @@ object mod extends Shortcut {
   }
   object AsyncValidateOption {
     
-    @scala.inline
-    def apply(): AsyncValidateOption = {
+    inline def apply(): AsyncValidateOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncValidateOption]
     }
     
-    @scala.inline
-    implicit class AsyncValidateOptionMutableBuilder[Self <: AsyncValidateOption] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncValidateOption](x: Self) {
       
-      @scala.inline
-      def setCleanAttributes(value: Boolean): Self = StObject.set(x, "cleanAttributes", value.asInstanceOf[js.Any])
+      inline def setCleanAttributes(value: Boolean): Self = StObject.set(x, "cleanAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanAttributesUndefined: Self = StObject.set(x, "cleanAttributes", js.undefined)
+      inline def setCleanAttributesUndefined: Self = StObject.set(x, "cleanAttributes", js.undefined)
       
-      @scala.inline
-      def setPrettify(value: js.Function): Self = StObject.set(x, "prettify", value.asInstanceOf[js.Any])
+      inline def setPrettify(value: js.Function): Self = StObject.set(x, "prettify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
+      inline def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
       
-      @scala.inline
-      def setWrapErrors(value: js.Function): Self = StObject.set(x, "wrapErrors", value.asInstanceOf[js.Any])
+      inline def setWrapErrors(value: js.Function): Self = StObject.set(x, "wrapErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapErrorsUndefined: Self = StObject.set(x, "wrapErrors", js.undefined)
+      inline def setWrapErrorsUndefined: Self = StObject.set(x, "wrapErrors", js.undefined)
     }
   }
   
@@ -58,26 +50,20 @@ object mod extends Shortcut {
   }
   object CollectFormValuesOption {
     
-    @scala.inline
-    def apply(): CollectFormValuesOption = {
+    inline def apply(): CollectFormValuesOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollectFormValuesOption]
     }
     
-    @scala.inline
-    implicit class CollectFormValuesOptionMutableBuilder[Self <: CollectFormValuesOption] (val x: Self) extends AnyVal {
+    extension [Self <: CollectFormValuesOption](x: Self) {
       
-      @scala.inline
-      def setNullify(value: Boolean): Self = StObject.set(x, "nullify", value.asInstanceOf[js.Any])
+      inline def setNullify(value: Boolean): Self = StObject.set(x, "nullify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullifyUndefined: Self = StObject.set(x, "nullify", js.undefined)
+      inline def setNullifyUndefined: Self = StObject.set(x, "nullify", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
   
@@ -156,32 +142,24 @@ object mod extends Shortcut {
   }
   object ValidateOption {
     
-    @scala.inline
-    def apply(): ValidateOption = {
+    inline def apply(): ValidateOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidateOption]
     }
     
-    @scala.inline
-    implicit class ValidateOptionMutableBuilder[Self <: ValidateOption] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateOption](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setFullMessages(value: Boolean): Self = StObject.set(x, "fullMessages", value.asInstanceOf[js.Any])
+      inline def setFullMessages(value: Boolean): Self = StObject.set(x, "fullMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullMessagesUndefined: Self = StObject.set(x, "fullMessages", js.undefined)
+      inline def setFullMessagesUndefined: Self = StObject.set(x, "fullMessages", js.undefined)
       
-      @scala.inline
-      def setPrettify(value: js.Function): Self = StObject.set(x, "prettify", value.asInstanceOf[js.Any])
+      inline def setPrettify(value: js.Function): Self = StObject.set(x, "prettify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
+      inline def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
     }
   }
   

@@ -105,8 +105,7 @@ trait XSprite
 }
 object XSprite {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     clip: XPolyPolygon2D => Unit,
     hide: () => Unit,
@@ -122,28 +121,20 @@ object XSprite {
     __obj.asInstanceOf[XSprite]
   }
   
-  @scala.inline
-  implicit class XSpriteMutableBuilder[Self <: XSprite] (val x: Self) extends AnyVal {
+  extension [Self <: XSprite](x: Self) {
     
-    @scala.inline
-    def setClip(value: XPolyPolygon2D => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction1(value))
+    inline def setClip(value: XPolyPolygon2D => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMove(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
+    inline def setMove(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetAlpha(value: Double => Unit): Self = StObject.set(x, "setAlpha", js.Any.fromFunction1(value))
+    inline def setSetAlpha(value: Double => Unit): Self = StObject.set(x, "setAlpha", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPriority(value: Double => Unit): Self = StObject.set(x, "setPriority", js.Any.fromFunction1(value))
+    inline def setSetPriority(value: Double => Unit): Self = StObject.set(x, "setPriority", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransform(value: AffineMatrix2D => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: AffineMatrix2D => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

@@ -26,20 +26,16 @@ object carouselCaptionMod {
   }
   object CarouselCaptionProps {
     
-    @scala.inline
-    def apply(): CarouselCaptionProps = {
+    inline def apply(): CarouselCaptionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselCaptionProps]
     }
     
-    @scala.inline
-    implicit class CarouselCaptionPropsMutableBuilder[Self <: CarouselCaptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselCaptionProps](x: Self) {
       
-      @scala.inline
-      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
+      inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
     }
   }
 }

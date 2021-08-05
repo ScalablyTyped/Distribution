@@ -17,28 +17,21 @@ trait ListUptimeCheckIpsResponse extends StObject {
 }
 object ListUptimeCheckIpsResponse {
   
-  @scala.inline
-  def apply(): ListUptimeCheckIpsResponse = {
+  inline def apply(): ListUptimeCheckIpsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUptimeCheckIpsResponse]
   }
   
-  @scala.inline
-  implicit class ListUptimeCheckIpsResponseMutableBuilder[Self <: ListUptimeCheckIpsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUptimeCheckIpsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setUptimeCheckIps(value: js.Array[UptimeCheckIp]): Self = StObject.set(x, "uptimeCheckIps", value.asInstanceOf[js.Any])
+    inline def setUptimeCheckIps(value: js.Array[UptimeCheckIp]): Self = StObject.set(x, "uptimeCheckIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptimeCheckIpsUndefined: Self = StObject.set(x, "uptimeCheckIps", js.undefined)
+    inline def setUptimeCheckIpsUndefined: Self = StObject.set(x, "uptimeCheckIps", js.undefined)
     
-    @scala.inline
-    def setUptimeCheckIpsVarargs(value: UptimeCheckIp*): Self = StObject.set(x, "uptimeCheckIps", js.Array(value :_*))
+    inline def setUptimeCheckIpsVarargs(value: UptimeCheckIp*): Self = StObject.set(x, "uptimeCheckIps", js.Array(value :_*))
   }
 }

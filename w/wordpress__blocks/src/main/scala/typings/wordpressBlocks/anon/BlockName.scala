@@ -10,16 +10,13 @@ trait BlockName extends StObject {
 }
 object BlockName {
   
-  @scala.inline
-  def apply(blockName: String): BlockName = {
+  inline def apply(blockName: String): BlockName = {
     val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockName]
   }
   
-  @scala.inline
-  implicit class BlockNameMutableBuilder[Self <: BlockName] (val x: Self) extends AnyVal {
+  extension [Self <: BlockName](x: Self) {
     
-    @scala.inline
-    def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
+    inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
   }
 }

@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestMethod extends StObject
 object RequestMethod {
   
-  @scala.inline
-  def CONNECT: typings.wegameApi.wegameApiStrings.CONNECT = "CONNECT".asInstanceOf[typings.wegameApi.wegameApiStrings.CONNECT]
+  inline def CONNECT: typings.wegameApi.wegameApiStrings.CONNECT = "CONNECT".asInstanceOf[typings.wegameApi.wegameApiStrings.CONNECT]
   
-  @scala.inline
-  def DELETE: typings.wegameApi.wegameApiStrings.DELETE = "DELETE".asInstanceOf[typings.wegameApi.wegameApiStrings.DELETE]
+  inline def DELETE: typings.wegameApi.wegameApiStrings.DELETE = "DELETE".asInstanceOf[typings.wegameApi.wegameApiStrings.DELETE]
   
-  @scala.inline
-  def GET: typings.wegameApi.wegameApiStrings.GET = "GET".asInstanceOf[typings.wegameApi.wegameApiStrings.GET]
+  inline def GET: typings.wegameApi.wegameApiStrings.GET = "GET".asInstanceOf[typings.wegameApi.wegameApiStrings.GET]
   
-  @scala.inline
-  def HEAD: typings.wegameApi.wegameApiStrings.HEAD = "HEAD".asInstanceOf[typings.wegameApi.wegameApiStrings.HEAD]
+  inline def HEAD: typings.wegameApi.wegameApiStrings.HEAD = "HEAD".asInstanceOf[typings.wegameApi.wegameApiStrings.HEAD]
   
-  @scala.inline
-  def POST: typings.wegameApi.wegameApiStrings.POST = "POST".asInstanceOf[typings.wegameApi.wegameApiStrings.POST]
+  inline def POST: typings.wegameApi.wegameApiStrings.POST = "POST".asInstanceOf[typings.wegameApi.wegameApiStrings.POST]
   
-  @scala.inline
-  def PUT: typings.wegameApi.wegameApiStrings.PUT = "PUT".asInstanceOf[typings.wegameApi.wegameApiStrings.PUT]
+  inline def PUT: typings.wegameApi.wegameApiStrings.PUT = "PUT".asInstanceOf[typings.wegameApi.wegameApiStrings.PUT]
   
-  @scala.inline
-  def TRACE: typings.wegameApi.wegameApiStrings.TRACE = "TRACE".asInstanceOf[typings.wegameApi.wegameApiStrings.TRACE]
+  inline def TRACE: typings.wegameApi.wegameApiStrings.TRACE = "TRACE".asInstanceOf[typings.wegameApi.wegameApiStrings.TRACE]
 }

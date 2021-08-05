@@ -30,46 +30,33 @@ trait BatchUpdateValuesRequest extends StObject {
 }
 object BatchUpdateValuesRequest {
   
-  @scala.inline
-  def apply(): BatchUpdateValuesRequest = {
+  inline def apply(): BatchUpdateValuesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdateValuesRequest]
   }
   
-  @scala.inline
-  implicit class BatchUpdateValuesRequestMutableBuilder[Self <: BatchUpdateValuesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateValuesRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[ValueRange]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[ValueRange]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: ValueRange*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ValueRange*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
+    inline def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeValuesInResponseUndefined: Self = StObject.set(x, "includeValuesInResponse", js.undefined)
+    inline def setIncludeValuesInResponseUndefined: Self = StObject.set(x, "includeValuesInResponse", js.undefined)
     
-    @scala.inline
-    def setResponseDateTimeRenderOption(value: String): Self = StObject.set(x, "responseDateTimeRenderOption", value.asInstanceOf[js.Any])
+    inline def setResponseDateTimeRenderOption(value: String): Self = StObject.set(x, "responseDateTimeRenderOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseDateTimeRenderOptionUndefined: Self = StObject.set(x, "responseDateTimeRenderOption", js.undefined)
+    inline def setResponseDateTimeRenderOptionUndefined: Self = StObject.set(x, "responseDateTimeRenderOption", js.undefined)
     
-    @scala.inline
-    def setResponseValueRenderOption(value: String): Self = StObject.set(x, "responseValueRenderOption", value.asInstanceOf[js.Any])
+    inline def setResponseValueRenderOption(value: String): Self = StObject.set(x, "responseValueRenderOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseValueRenderOptionUndefined: Self = StObject.set(x, "responseValueRenderOption", js.undefined)
+    inline def setResponseValueRenderOptionUndefined: Self = StObject.set(x, "responseValueRenderOption", js.undefined)
     
-    @scala.inline
-    def setValueInputOption(value: String): Self = StObject.set(x, "valueInputOption", value.asInstanceOf[js.Any])
+    inline def setValueInputOption(value: String): Self = StObject.set(x, "valueInputOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueInputOptionUndefined: Self = StObject.set(x, "valueInputOption", js.undefined)
+    inline def setValueInputOptionUndefined: Self = StObject.set(x, "valueInputOption", js.undefined)
   }
 }

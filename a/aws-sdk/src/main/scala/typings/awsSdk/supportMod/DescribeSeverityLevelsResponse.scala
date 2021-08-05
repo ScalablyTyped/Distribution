@@ -13,22 +13,17 @@ trait DescribeSeverityLevelsResponse extends StObject {
 }
 object DescribeSeverityLevelsResponse {
   
-  @scala.inline
-  def apply(): DescribeSeverityLevelsResponse = {
+  inline def apply(): DescribeSeverityLevelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSeverityLevelsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSeverityLevelsResponseMutableBuilder[Self <: DescribeSeverityLevelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSeverityLevelsResponse](x: Self) {
     
-    @scala.inline
-    def setSeverityLevels(value: SeverityLevelsList): Self = StObject.set(x, "severityLevels", value.asInstanceOf[js.Any])
+    inline def setSeverityLevels(value: SeverityLevelsList): Self = StObject.set(x, "severityLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityLevelsUndefined: Self = StObject.set(x, "severityLevels", js.undefined)
+    inline def setSeverityLevelsUndefined: Self = StObject.set(x, "severityLevels", js.undefined)
     
-    @scala.inline
-    def setSeverityLevelsVarargs(value: SeverityLevel*): Self = StObject.set(x, "severityLevels", js.Array(value :_*))
+    inline def setSeverityLevelsVarargs(value: SeverityLevel*): Self = StObject.set(x, "severityLevels", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait AccountPasswordQuestionsRequired extends StObject {
 }
 object AccountPasswordQuestionsRequired {
   
-  @scala.inline
-  def apply(): AccountPasswordQuestionsRequired = {
+  inline def apply(): AccountPasswordQuestionsRequired = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountPasswordQuestionsRequired]
   }
   
-  @scala.inline
-  implicit class AccountPasswordQuestionsRequiredMutableBuilder[Self <: AccountPasswordQuestionsRequired] (val x: Self) extends AnyVal {
+  extension [Self <: AccountPasswordQuestionsRequired](x: Self) {
     
-    @scala.inline
-    def setMaximumQuestions(value: String): Self = StObject.set(x, "maximumQuestions", value.asInstanceOf[js.Any])
+    inline def setMaximumQuestions(value: String): Self = StObject.set(x, "maximumQuestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumQuestionsUndefined: Self = StObject.set(x, "maximumQuestions", js.undefined)
+    inline def setMaximumQuestionsUndefined: Self = StObject.set(x, "maximumQuestions", js.undefined)
     
-    @scala.inline
-    def setMinimumQuestions(value: String): Self = StObject.set(x, "minimumQuestions", value.asInstanceOf[js.Any])
+    inline def setMinimumQuestions(value: String): Self = StObject.set(x, "minimumQuestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumQuestionsUndefined: Self = StObject.set(x, "minimumQuestions", js.undefined)
+    inline def setMinimumQuestionsUndefined: Self = StObject.set(x, "minimumQuestions", js.undefined)
   }
 }

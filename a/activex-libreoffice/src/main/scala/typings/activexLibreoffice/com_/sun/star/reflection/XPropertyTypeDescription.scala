@@ -30,8 +30,7 @@ trait XPropertyTypeDescription
 }
 object XPropertyTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     PropertyFlags: Double,
     PropertyTypeDescription: XTypeDescription,
@@ -48,19 +47,14 @@ object XPropertyTypeDescription {
     __obj.asInstanceOf[XPropertyTypeDescription]
   }
   
-  @scala.inline
-  implicit class XPropertyTypeDescriptionMutableBuilder[Self <: XPropertyTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetPropertyFlags(value: () => Double): Self = StObject.set(x, "getPropertyFlags", js.Any.fromFunction0(value))
+    inline def setGetPropertyFlags(value: () => Double): Self = StObject.set(x, "getPropertyFlags", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyTypeDescription(value: () => XTypeDescription): Self = StObject.set(x, "getPropertyTypeDescription", js.Any.fromFunction0(value))
+    inline def setGetPropertyTypeDescription(value: () => XTypeDescription): Self = StObject.set(x, "getPropertyTypeDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPropertyFlags(value: Double): Self = StObject.set(x, "PropertyFlags", value.asInstanceOf[js.Any])
+    inline def setPropertyFlags(value: Double): Self = StObject.set(x, "PropertyFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyTypeDescription(value: XTypeDescription): Self = StObject.set(x, "PropertyTypeDescription", value.asInstanceOf[js.Any])
+    inline def setPropertyTypeDescription(value: XTypeDescription): Self = StObject.set(x, "PropertyTypeDescription", value.asInstanceOf[js.Any])
   }
 }

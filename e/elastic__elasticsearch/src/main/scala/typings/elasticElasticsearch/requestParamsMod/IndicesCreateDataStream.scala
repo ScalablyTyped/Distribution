@@ -12,16 +12,13 @@ trait IndicesCreateDataStream
 }
 object IndicesCreateDataStream {
   
-  @scala.inline
-  def apply(name: String): IndicesCreateDataStream = {
+  inline def apply(name: String): IndicesCreateDataStream = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesCreateDataStream]
   }
   
-  @scala.inline
-  implicit class IndicesCreateDataStreamMutableBuilder[Self <: IndicesCreateDataStream] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesCreateDataStream](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

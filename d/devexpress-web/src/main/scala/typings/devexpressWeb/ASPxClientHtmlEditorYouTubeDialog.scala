@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorYouTubeDialog
 }
 object ASPxClientHtmlEditorYouTubeDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAllowFullscreenCheckBox: () => ASPxClientCheckBox,
     GetBorderColorColorEdit: () => ASPxClientColorEdit,
     GetBorderStyleComboBox: () => ASPxClientComboBox,
@@ -61,22 +60,16 @@ object ASPxClientHtmlEditorYouTubeDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorYouTubeDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorYouTubeDialogMutableBuilder[Self <: ASPxClientHtmlEditorYouTubeDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorYouTubeDialog](x: Self) {
     
-    @scala.inline
-    def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
+    inline def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetConfidentModeCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetConfidentModeCheckBox", js.Any.fromFunction0(value))
+    inline def setGetConfidentModeCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetConfidentModeCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
+    inline def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowSameVideosCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowSameVideosCheckBox", js.Any.fromFunction0(value))
+    inline def setGetShowSameVideosCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowSameVideosCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowVideoNameCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowVideoNameCheckBox", js.Any.fromFunction0(value))
+    inline def setGetShowVideoNameCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowVideoNameCheckBox", js.Any.fromFunction0(value))
   }
 }

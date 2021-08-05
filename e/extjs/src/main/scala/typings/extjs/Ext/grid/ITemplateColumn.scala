@@ -25,21 +25,17 @@ trait ITemplateColumn
 }
 object ITemplateColumn {
   
-  @scala.inline
-  def apply(): ITemplateColumn = {
+  inline def apply(): ITemplateColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITemplateColumn]
   }
   
-  @scala.inline
-  implicit class ITemplateColumnMutableBuilder[Self <: ITemplateColumn] (val x: Self) extends AnyVal {
+  extension [Self <: ITemplateColumn](x: Self) {
     
-    @scala.inline
-    def setDefaultRenderer(
+    inline def setDefaultRenderer(
       value: (/* value */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "defaultRenderer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)
+    inline def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)
   }
 }

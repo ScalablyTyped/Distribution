@@ -26,8 +26,7 @@ trait MeshScaleParams
 }
 object MeshScaleParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object MeshScaleParams {
     __obj.asInstanceOf[MeshScaleParams]
   }
   
-  @scala.inline
-  implicit class MeshScaleParamsMutableBuilder[Self <: MeshScaleParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshScaleParams](x: Self) {
     
-    @scala.inline
-    def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: Point): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Point): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

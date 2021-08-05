@@ -14,7 +14,7 @@ trait Reminders extends StObject {
   
   def Item(Index: js.Any): Reminder
   
-  @JSName("Outlook.Reminders_typekey")
+  /* private */ @JSName("Outlook.Reminders_typekey")
   var OutlookDotReminders_typekey: Reminders
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait Reminders extends StObject {
 }
 object Reminders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
@@ -41,31 +40,22 @@ object Reminders {
     __obj.asInstanceOf[Reminders]
   }
   
-  @scala.inline
-  implicit class RemindersMutableBuilder[Self <: Reminders] (val x: Self) extends AnyVal {
+  extension [Self <: Reminders](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Reminder): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Reminder): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotReminders_typekey(value: Reminders): Self = StObject.set(x, "Outlook.Reminders_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotReminders_typekey(value: Reminders): Self = StObject.set(x, "Outlook.Reminders_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

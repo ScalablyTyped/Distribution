@@ -17,17 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSSymbolKeyword_ {
   
-  @scala.inline
-  def apply(): TSSymbolKeyword_ = {
+  inline def apply(): TSSymbolKeyword_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSSymbolKeyword")
     __obj.asInstanceOf[TSSymbolKeyword_]
   }
   
-  @scala.inline
-  implicit class TSSymbolKeyword_MutableBuilder[Self <: TSSymbolKeyword_] (val x: Self) extends AnyVal {
+  extension [Self <: TSSymbolKeyword_](x: Self) {
     
-    @scala.inline
-    def setType(value: TSSymbolKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSSymbolKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

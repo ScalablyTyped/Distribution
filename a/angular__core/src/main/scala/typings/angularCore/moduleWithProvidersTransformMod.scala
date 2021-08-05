@@ -23,32 +23,32 @@ object moduleWithProvidersTransformMod {
     ) = this()
     
     /** Add a given generic to a type reference node */
-    var _addGenericToTypeReference: js.Any = js.native
+    /* private */ var _addGenericToTypeReference: js.Any = js.native
     
     /** Evaluate and return the ngModule type from an expression */
-    var _getNgModuleTypeOfExpression: js.Any = js.native
+    /* private */ var _getNgModuleTypeOfExpression: js.Any = js.native
     
     /**
       * Visits a given object literal expression to determine the ngModule type. If the expression
       * cannot be resolved, add a TODO to alert the user.
       */
-    var _getTypeOfResolvedValue: js.Any = js.native
+    /* private */ var _getTypeOfResolvedValue: js.Any = js.native
     
     /**
       * Determine the generic type of a suspected ModuleWithProviders return type and add it
       * explicitly
       */
-    var _migrateStaticNgModuleMethod: js.Any = js.native
+    /* private */ var _migrateStaticNgModuleMethod: js.Any = js.native
     
-    var _updateNode: js.Any = js.native
+    /* private */ var _updateNode: js.Any = js.native
     
     /**
       * Migrates a given static method if its ModuleWithProviders does not provide
       * a generic type.
       */
-    var _updateStaticMethodType: js.Any = js.native
+    /* private */ var _updateStaticMethodType: js.Any = js.native
     
-    var getUpdateRecorder: js.Any = js.native
+    /* private */ var getUpdateRecorder: js.Any = js.native
     
     /** Whether the resolved value map represents a ModuleWithProviders object */
     def isModuleWithProvidersType(
@@ -61,11 +61,11 @@ object moduleWithProvidersTransformMod {
     /** Migrates a ModuleWithProviders type definition that has no explicit generic type */
     def migrateType(`type`: TypeReferenceNode): js.Array[AnalysisFailure] = js.native
     
-    var partialEvaluator: js.Any = js.native
+    /* private */ var partialEvaluator: js.Any = js.native
     
-    var printer: js.Any = js.native
+    /* private */ var printer: js.Any = js.native
     
-    var typeChecker: js.Any = js.native
+    /* private */ var typeChecker: js.Any = js.native
   }
   
   trait AnalysisFailure extends StObject {
@@ -76,20 +76,16 @@ object moduleWithProvidersTransformMod {
   }
   object AnalysisFailure {
     
-    @scala.inline
-    def apply(message: String, node: Node): AnalysisFailure = {
+    inline def apply(message: String, node: Node): AnalysisFailure = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalysisFailure]
     }
     
-    @scala.inline
-    implicit class AnalysisFailureMutableBuilder[Self <: AnalysisFailure] (val x: Self) extends AnyVal {
+    extension [Self <: AnalysisFailure](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
 }

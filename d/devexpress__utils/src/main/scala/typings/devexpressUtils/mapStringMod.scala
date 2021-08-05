@@ -23,90 +23,64 @@ object mapStringMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def accumulate[T, TAcc](
+    inline def accumulate[T, TAcc](
       map: Record[String, T],
       initAccValue: TAcc,
       callback: js.Function3[/* acc */ TAcc, /* currVal */ T, /* key */ String, TAcc]
     ): TAcc = (^.asInstanceOf[js.Dynamic].applyDynamic("accumulate")(map.asInstanceOf[js.Any], initAccValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TAcc]
     
-    @scala.inline
-    def allOf[T](map: Record[String, T], callback: js.Function2[/* currVal */ T, /* key */ String, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def allOf[T](map: Record[String, T], callback: js.Function2[/* currVal */ T, /* key */ String, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allOf")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def anyOf[T, TRes](map: Record[String, T], callback: js.Function2[/* currVal */ T, /* key */ String, TRes | Null]): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
+    inline def anyOf[T, TRes](map: Record[String, T], callback: js.Function2[/* currVal */ T, /* key */ String, TRes | Null]): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("anyOf")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]
     
-    @scala.inline
-    def clear[T](map: Record[String, T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(map.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clear[T](map: Record[String, T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(map.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def containsBy[T](map: Record[String, T], callback: js.Function2[/* element */ T, /* key */ String, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def containsBy[T](map: Record[String, T], callback: js.Function2[/* element */ T, /* key */ String, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def deepCopy[T /* <: ICloneable[T] */](map: Record[String, T]): Record[String, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(map.asInstanceOf[js.Any]).asInstanceOf[Record[String, T]]
+    inline def deepCopy[T /* <: ICloneable[T] */](map: Record[String, T]): Record[String, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(map.asInstanceOf[js.Any]).asInstanceOf[Record[String, T]]
     
-    @scala.inline
-    def elementBy[T](map: Record[String, T], callback: js.Function2[/* element */ T, /* key */ String, Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    inline def elementBy[T](map: Record[String, T], callback: js.Function2[/* element */ T, /* key */ String, Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @scala.inline
-    def forEach[TValue](map: Record[String, TValue], callback: js.Function2[/* element */ TValue, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forEach[TValue](map: Record[String, TValue], callback: js.Function2[/* element */ TValue, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def isEmpty[T](map: Record[String, T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(map.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isEmpty[T](map: Record[String, T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(map.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def keyBy[T](map: Record[String, T], callback: js.Function2[/* element */ T, /* key */ String, Boolean]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("keyBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+    inline def keyBy[T](map: Record[String, T], callback: js.Function2[/* element */ T, /* key */ String, Boolean]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("keyBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     
-    @scala.inline
-    def map[TValue, TRes](map: Record[String, TValue], callback: js.Function2[/* element */ TValue, /* key */ String, TRes]): Record[String, TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Record[String, TRes]]
+    inline def map[TValue, TRes](map: Record[String, TValue], callback: js.Function2[/* element */ TValue, /* key */ String, TRes]): Record[String, TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Record[String, TRes]]
     
-    @scala.inline
-    def mapLength[T](map: Record[String, T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLength")(map.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def mapLength[T](map: Record[String, T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLength")(map.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def max[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    inline def max[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @scala.inline
-    def maxByCmp[T](map: Record[String, T], cmp: CmpFunc[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxByCmp")(map.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    inline def maxByCmp[T](map: Record[String, T], cmp: CmpFunc[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxByCmp")(map.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @scala.inline
-    def maxExtended[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): ExtendedMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxExtended")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMax[T] | Null]
+    inline def maxExtended[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): ExtendedMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxExtended")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMax[T] | Null]
     
-    @scala.inline
-    def min[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    inline def min[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @scala.inline
-    def minByCmp[T](map: Record[String, T], cmp: CmpFunc[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minByCmp")(map.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    inline def minByCmp[T](map: Record[String, T], cmp: CmpFunc[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minByCmp")(map.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[T | Null]
     
-    @scala.inline
-    def minExtended[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): ExtendedMin[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minExtended")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMin[T] | Null]
+    inline def minExtended[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): ExtendedMin[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minExtended")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMin[T] | Null]
     
-    @scala.inline
-    def minMax[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMax")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
+    inline def minMax[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): MinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMax")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[MinMax[T] | Null]
     
-    @scala.inline
-    def minMaxExtended[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): ExtendedMinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxExtended")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMinMax[T] | Null]
+    inline def minMaxExtended[T](map: Record[String, T], getValue: js.Function2[/* val */ T, /* key */ String, Double]): ExtendedMinMax[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minMaxExtended")(map.asInstanceOf[js.Any], getValue.asInstanceOf[js.Any])).asInstanceOf[ExtendedMinMax[T] | Null]
     
-    @scala.inline
-    def reducedMap[T, TRes](map: Record[String, T], callback: js.Function2[/* currVal */ T, /* key */ String, TRes | Null]): Record[String, TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducedMap")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Record[String, TRes]]
+    inline def reducedMap[T, TRes](map: Record[String, T], callback: js.Function2[/* currVal */ T, /* key */ String, TRes | Null]): Record[String, TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducedMap")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Record[String, TRes]]
     
-    @scala.inline
-    def shallowCopy[T](map: Record[String, T]): Record[String, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(map.asInstanceOf[js.Any]).asInstanceOf[Record[String, T]]
+    inline def shallowCopy[T](map: Record[String, T]): Record[String, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(map.asInstanceOf[js.Any]).asInstanceOf[Record[String, T]]
     
-    @scala.inline
-    def toList[T](map: Record[String, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toList")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def toList[T](map: Record[String, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toList")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
-    @scala.inline
-    def toListBy[T, TRes](map: Record[String, T], callback: js.Function2[/* elem */ T, /* key */ String, TRes]): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("toListBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
-    @scala.inline
-    def toListBy[T, TRes](
+    inline def toListBy[T, TRes](map: Record[String, T], callback: js.Function2[/* elem */ T, /* key */ String, TRes]): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("toListBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    inline def toListBy[T, TRes](
       map: Record[String, T],
       callback: js.Function2[/* elem */ T, /* key */ String, TRes],
       maxElements: Double
     ): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("toListBy")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], maxElements.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
     
-    @scala.inline
-    def unsafeAnyOf[T, TRes](
+    inline def unsafeAnyOf[T, TRes](
       map: Record[String, T],
       callback: js.Function2[/* currVal */ T, /* key */ String, js.UndefOr[TRes | Null]]
     ): TRes | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsafeAnyOf")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TRes | Null]

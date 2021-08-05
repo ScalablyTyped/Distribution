@@ -25,8 +25,7 @@ trait CopyDBClusterParameterGroupMessage extends StObject {
 }
 object CopyDBClusterParameterGroupMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SourceDBClusterParameterGroupIdentifier: String,
     TargetDBClusterParameterGroupDescription: String,
     TargetDBClusterParameterGroupIdentifier: String
@@ -35,25 +34,18 @@ object CopyDBClusterParameterGroupMessage {
     __obj.asInstanceOf[CopyDBClusterParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class CopyDBClusterParameterGroupMessageMutableBuilder[Self <: CopyDBClusterParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CopyDBClusterParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setSourceDBClusterParameterGroupIdentifier(value: String): Self = StObject.set(x, "SourceDBClusterParameterGroupIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceDBClusterParameterGroupIdentifier(value: String): Self = StObject.set(x, "SourceDBClusterParameterGroupIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetDBClusterParameterGroupDescription(value: String): Self = StObject.set(x, "TargetDBClusterParameterGroupDescription", value.asInstanceOf[js.Any])
+    inline def setTargetDBClusterParameterGroupDescription(value: String): Self = StObject.set(x, "TargetDBClusterParameterGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDBClusterParameterGroupIdentifier(value: String): Self = StObject.set(x, "TargetDBClusterParameterGroupIdentifier", value.asInstanceOf[js.Any])
+    inline def setTargetDBClusterParameterGroupIdentifier(value: String): Self = StObject.set(x, "TargetDBClusterParameterGroupIdentifier", value.asInstanceOf[js.Any])
   }
 }

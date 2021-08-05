@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "human-to-cron"
-version := "0.3-dt-20201117Z-c6a4bd"
+version := "0.3-dt-20201117Z-a9ab5c"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

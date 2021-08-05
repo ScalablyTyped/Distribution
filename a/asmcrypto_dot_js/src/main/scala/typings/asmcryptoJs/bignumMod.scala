@@ -71,34 +71,26 @@ object bignumMod {
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.ONE")
     @js.native
     def ONE: BigNumber = js.native
-    @scala.inline
-    def ONE_=(x: BigNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    inline def ONE_=(x: BigNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
     
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.ZERO")
     @js.native
     def ZERO: BigNumber = js.native
-    @scala.inline
-    def ZERO_=(x: BigNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    inline def ZERO_=(x: BigNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
     
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "BigNumber.extGCD")
     @js.native
     def extGCD: js.Function2[/* a */ this.type, /* b */ this.type, Gcd] = js.native
-    @scala.inline
-    def extGCD(a: this.type, b: this.type): Gcd = (^.asInstanceOf[js.Dynamic].applyDynamic("extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Gcd]
-    @scala.inline
-    def extGCD_=(x: js.Function2[/* a */ this.type, /* b */ this.type, Gcd]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extGCD")(x.asInstanceOf[js.Any])
+    inline def extGCD(a: this.type, b: this.type): Gcd = (^.asInstanceOf[js.Dynamic].applyDynamic("extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Gcd]
+    inline def extGCD_=(x: js.Function2[/* a */ this.type, /* b */ this.type, Gcd]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extGCD")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def fromArrayBuffer(buffer: ArrayBuffer): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+    inline def fromArrayBuffer(buffer: ArrayBuffer): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
     
-    @scala.inline
-    def fromConfig(obj: BitLength): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+    inline def fromConfig(obj: BitLength): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
     
-    @scala.inline
-    def fromNumber(num: Double): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+    inline def fromNumber(num: Double): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
     
-    @scala.inline
-    def fromString(str: String): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+    inline def fromString(str: String): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
   }
   
   @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "Modulus")
@@ -106,13 +98,13 @@ object bignumMod {
   class Modulus protected () extends BigNumber {
     def this(number: BigNumber) = this()
     
-    var coefficient: js.Any = js.native
+    /* private */ var coefficient: js.Any = js.native
     
-    var comodulus: js.Any = js.native
+    /* private */ var comodulus: js.Any = js.native
     
-    var comodulusRemainder: js.Any = js.native
+    /* private */ var comodulusRemainder: js.Any = js.native
     
-    var comodulusRemainderSquare: js.Any = js.native
+    /* private */ var comodulusRemainderSquare: js.Any = js.native
     
     /**
       * Modular inverse
@@ -136,16 +128,14 @@ object bignumMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _Montgomery_reduce(a: BigNumber, n: Modulus): BigNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("_Montgomery_reduce")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[BigNumber]
+    inline def _Montgomery_reduce(a: BigNumber, n: Modulus): BigNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("_Montgomery_reduce")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[BigNumber]
   }
   
   @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_asm")
   @js.native
   def bigintAsm: bigintresult = js.native
   
-  @scala.inline
-  def bigintAsm_=(x: bigintresult): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_bigint_asm")(x.asInstanceOf[js.Any])
+  inline def bigintAsm_=(x: bigintresult): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_bigint_asm")(x.asInstanceOf[js.Any])
   
   @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_heap")
   @js.native
@@ -160,8 +150,7 @@ object bignumMod {
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_stdlib.Math")
     @js.native
     def Math: typings.std.Math = js.native
-    @scala.inline
-    def Math_=(x: Math): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Math")(x.asInstanceOf[js.Any])
+    inline def Math_=(x: Math): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Math")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_stdlib.Uint32Array")
@@ -180,7 +169,6 @@ object bignumMod {
     @JSImport("asmcrypto.js/dist_es8/bignum/bignum", "_bigint_stdlib.Uint32Array")
     @js.native
     def Uint32Array: Uint32ArrayConstructor = js.native
-    @scala.inline
-    def Uint32Array_=(x: Uint32ArrayConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uint32Array")(x.asInstanceOf[js.Any])
+    inline def Uint32Array_=(x: Uint32ArrayConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uint32Array")(x.asInstanceOf[js.Any])
   }
 }

@@ -16,20 +16,16 @@ object anon {
   }
   object Audio {
     
-    @scala.inline
-    def apply(audio: Double, video: Double): Audio = {
+    inline def apply(audio: Double, video: Double): Audio = {
       val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
       __obj.asInstanceOf[Audio]
     }
     
-    @scala.inline
-    implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+    extension [Self <: Audio](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideo(value: Double): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Double): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,23 +37,18 @@ object anon {
   }
   object Events {
     
-    @scala.inline
-    def apply(events: EventSubscriptionType | js.Array[EventSubscriptionType], listener: Event => Unit): Events = {
+    inline def apply(events: EventSubscriptionType | js.Array[EventSubscriptionType], listener: Event => Unit): Events = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], listener = js.Any.fromFunction1(listener))
       __obj.asInstanceOf[Events]
     }
     
-    @scala.inline
-    implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+    extension [Self <: Events](x: Self) {
       
-      @scala.inline
-      def setEvents(value: EventSubscriptionType | js.Array[EventSubscriptionType]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: EventSubscriptionType | js.Array[EventSubscriptionType]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setListener(value: Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+      inline def setListener(value: Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     }
   }
   
@@ -69,8 +60,7 @@ object anon {
   }
   object Listener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       events: typings.sipml.SIPml.Stack.EventSubscriptionType | js.Array[typings.sipml.SIPml.Stack.EventSubscriptionType],
       listener: typings.sipml.SIPml.Stack.Event => Unit
     ): Listener = {
@@ -78,19 +68,15 @@ object anon {
       __obj.asInstanceOf[Listener]
     }
     
-    @scala.inline
-    implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+    extension [Self <: Listener](x: Self) {
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: typings.sipml.SIPml.Stack.EventSubscriptionType | js.Array[typings.sipml.SIPml.Stack.EventSubscriptionType]
       ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: typings.sipml.SIPml.Stack.EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: typings.sipml.SIPml.Stack.EventSubscriptionType*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setListener(value: typings.sipml.SIPml.Stack.Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+      inline def setListener(value: typings.sipml.SIPml.Stack.Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     }
   }
   
@@ -106,38 +92,28 @@ object anon {
   }
   object MaxHeight {
     
-    @scala.inline
-    def apply(): MaxHeight = {
+    inline def apply(): MaxHeight = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxHeight]
     }
     
-    @scala.inline
-    implicit class MaxHeightMutableBuilder[Self <: MaxHeight] (val x: Self) extends AnyVal {
+    extension [Self <: MaxHeight](x: Self) {
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     }
   }
 }

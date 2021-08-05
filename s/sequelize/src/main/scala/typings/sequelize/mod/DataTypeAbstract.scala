@@ -24,16 +24,13 @@ trait DataTypeAbstract extends StObject {
 }
 object DataTypeAbstract {
   
-  @scala.inline
-  def apply(dialectTypes: String): DataTypeAbstract = {
+  inline def apply(dialectTypes: String): DataTypeAbstract = {
     val __obj = js.Dynamic.literal(dialectTypes = dialectTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTypeAbstract]
   }
   
-  @scala.inline
-  implicit class DataTypeAbstractMutableBuilder[Self <: DataTypeAbstract] (val x: Self) extends AnyVal {
+  extension [Self <: DataTypeAbstract](x: Self) {
     
-    @scala.inline
-    def setDialectTypes(value: String): Self = StObject.set(x, "dialectTypes", value.asInstanceOf[js.Any])
+    inline def setDialectTypes(value: String): Self = StObject.set(x, "dialectTypes", value.asInstanceOf[js.Any])
   }
 }

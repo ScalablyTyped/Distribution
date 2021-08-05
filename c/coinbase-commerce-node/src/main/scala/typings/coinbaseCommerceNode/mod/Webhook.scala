@@ -21,14 +21,12 @@ object Webhook {
     *
     * @link https://github.com/coinbase/coinbase-commerce-node/blob/v1.0.4/lib/Webhook.js#L10
     */
-  @scala.inline
-  def verifyEventBody(rawBody: String, signature: String, sharedSecret: String): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyEventBody")(rawBody.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sharedSecret.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def verifyEventBody(rawBody: String, signature: String, sharedSecret: String): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyEventBody")(rawBody.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sharedSecret.asInstanceOf[js.Any])).asInstanceOf[Event]
   
   /**
     * Verify a signature header.
     *
     * @link https://github.com/coinbase/coinbase-commerce-node#verify-signature-header
     */
-  @scala.inline
-  def verifySigHeader(rawBody: String, signature: String, sharedSecret: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifySigHeader")(rawBody.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sharedSecret.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verifySigHeader(rawBody: String, signature: String, sharedSecret: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifySigHeader")(rawBody.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sharedSecret.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

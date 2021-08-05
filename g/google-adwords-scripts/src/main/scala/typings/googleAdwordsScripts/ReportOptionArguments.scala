@@ -16,37 +16,27 @@ trait ReportOptionArguments extends StObject {
 }
 object ReportOptionArguments {
   
-  @scala.inline
-  def apply(): ReportOptionArguments = {
+  inline def apply(): ReportOptionArguments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportOptionArguments]
   }
   
-  @scala.inline
-  implicit class ReportOptionArgumentsMutableBuilder[Self <: ReportOptionArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ReportOptionArguments](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setIncludeZeroImpressions(value: Boolean): Self = StObject.set(x, "includeZeroImpressions", value.asInstanceOf[js.Any])
+    inline def setIncludeZeroImpressions(value: Boolean): Self = StObject.set(x, "includeZeroImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeZeroImpressionsUndefined: Self = StObject.set(x, "includeZeroImpressions", js.undefined)
+    inline def setIncludeZeroImpressionsUndefined: Self = StObject.set(x, "includeZeroImpressions", js.undefined)
     
-    @scala.inline
-    def setResolveGeoNames(value: Boolean): Self = StObject.set(x, "resolveGeoNames", value.asInstanceOf[js.Any])
+    inline def setResolveGeoNames(value: Boolean): Self = StObject.set(x, "resolveGeoNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveGeoNamesUndefined: Self = StObject.set(x, "resolveGeoNames", js.undefined)
+    inline def setResolveGeoNamesUndefined: Self = StObject.set(x, "resolveGeoNames", js.undefined)
     
-    @scala.inline
-    def setReturnMoneyInMicros(value: Boolean): Self = StObject.set(x, "returnMoneyInMicros", value.asInstanceOf[js.Any])
+    inline def setReturnMoneyInMicros(value: Boolean): Self = StObject.set(x, "returnMoneyInMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnMoneyInMicrosUndefined: Self = StObject.set(x, "returnMoneyInMicros", js.undefined)
+    inline def setReturnMoneyInMicrosUndefined: Self = StObject.set(x, "returnMoneyInMicros", js.undefined)
   }
 }

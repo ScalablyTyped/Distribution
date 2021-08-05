@@ -10,16 +10,13 @@ trait Completer extends StObject {
 }
 object Completer {
   
-  @scala.inline
-  def apply(getCompletions: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Completer = {
+  inline def apply(getCompletions: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Completer = {
     val __obj = js.Dynamic.literal(getCompletions = js.Any.fromFunction5(getCompletions))
     __obj.asInstanceOf[Completer]
   }
   
-  @scala.inline
-  implicit class CompleterMutableBuilder[Self <: Completer] (val x: Self) extends AnyVal {
+  extension [Self <: Completer](x: Self) {
     
-    @scala.inline
-    def setGetCompletions(value: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
+    inline def setGetCompletions(value: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
   }
 }

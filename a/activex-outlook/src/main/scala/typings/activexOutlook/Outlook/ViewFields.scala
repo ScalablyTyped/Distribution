@@ -18,7 +18,7 @@ trait ViewFields extends StObject {
   
   def Item(Index: js.Any): ViewField
   
-  @JSName("Outlook.ViewFields_typekey")
+  /* private */ @JSName("Outlook.ViewFields_typekey")
   var OutlookDotViewFields_typekey: ViewFields
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait ViewFields extends StObject {
 }
 object ViewFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: String => ViewField,
     Application: Application,
     Class: OlObjectClass,
@@ -47,37 +46,26 @@ object ViewFields {
     __obj.asInstanceOf[ViewFields]
   }
   
-  @scala.inline
-  implicit class ViewFieldsMutableBuilder[Self <: ViewFields] (val x: Self) extends AnyVal {
+  extension [Self <: ViewFields](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => ViewField): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => ViewField): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsert(value: (String, js.Any) => ViewField): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (String, js.Any) => ViewField): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItem(value: js.Any => ViewField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => ViewField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotViewFields_typekey(value: ViewFields): Self = StObject.set(x, "Outlook.ViewFields_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotViewFields_typekey(value: ViewFields): Self = StObject.set(x, "Outlook.ViewFields_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

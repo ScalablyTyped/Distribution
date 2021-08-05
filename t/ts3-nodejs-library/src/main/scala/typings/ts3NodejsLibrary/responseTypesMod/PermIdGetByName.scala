@@ -15,19 +15,15 @@ trait PermIdGetByName
 }
 object PermIdGetByName {
   
-  @scala.inline
-  def apply(permid: Double, permsid: String): PermIdGetByName = {
+  inline def apply(permid: Double, permsid: String): PermIdGetByName = {
     val __obj = js.Dynamic.literal(permid = permid.asInstanceOf[js.Any], permsid = permsid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermIdGetByName]
   }
   
-  @scala.inline
-  implicit class PermIdGetByNameMutableBuilder[Self <: PermIdGetByName] (val x: Self) extends AnyVal {
+  extension [Self <: PermIdGetByName](x: Self) {
     
-    @scala.inline
-    def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
+    inline def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
+    inline def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
   }
 }

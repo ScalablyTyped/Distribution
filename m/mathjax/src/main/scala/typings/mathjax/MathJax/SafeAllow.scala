@@ -44,49 +44,35 @@ trait SafeAllow extends StObject {
 }
 object SafeAllow {
   
-  @scala.inline
-  def apply(): SafeAllow = {
+  inline def apply(): SafeAllow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SafeAllow]
   }
   
-  @scala.inline
-  implicit class SafeAllowMutableBuilder[Self <: SafeAllow] (val x: Self) extends AnyVal {
+  extension [Self <: SafeAllow](x: Self) {
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setCssIDs(value: String): Self = StObject.set(x, "cssIDs", value.asInstanceOf[js.Any])
+    inline def setCssIDs(value: String): Self = StObject.set(x, "cssIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssIDsUndefined: Self = StObject.set(x, "cssIDs", js.undefined)
+    inline def setCssIDsUndefined: Self = StObject.set(x, "cssIDs", js.undefined)
     
-    @scala.inline
-    def setFontsize(value: String): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
+    inline def setFontsize(value: String): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
+    inline def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
     
-    @scala.inline
-    def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    inline def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
-    @scala.inline
-    def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setURLs(value: String): Self = StObject.set(x, "URLs", value.asInstanceOf[js.Any])
+    inline def setURLs(value: String): Self = StObject.set(x, "URLs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURLsUndefined: Self = StObject.set(x, "URLs", js.undefined)
+    inline def setURLsUndefined: Self = StObject.set(x, "URLs", js.undefined)
   }
 }

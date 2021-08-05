@@ -66,21 +66,15 @@ object mod {
     def this(props: AnimatableProperties[ViewStyle] & ViewProperties, context: js.Any) = this()
   }
   
-  @scala.inline
-  def createAnimatableComponent[P /* <: Style */, S](Component: ClassicComponentClass[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
-  @scala.inline
-  def createAnimatableComponent[P /* <: Style */, S](Component: ComponentClass[P, ComponentState]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
-  @scala.inline
-  def createAnimatableComponent[P /* <: Style */, S](Component: StatelessComponent[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
+  inline def createAnimatableComponent[P /* <: Style */, S](Component: ClassicComponentClass[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
+  inline def createAnimatableComponent[P /* <: Style */, S](Component: ComponentClass[P, ComponentState]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
+  inline def createAnimatableComponent[P /* <: Style */, S](Component: StatelessComponent[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
   
-  @scala.inline
-  def createAnimation(animation: CustomAnimation[TextStyle & ViewStyle & ImageStyle]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animation.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def createAnimation(animation: CustomAnimation[TextStyle & ViewStyle & ImageStyle]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animation.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @scala.inline
-  def initializeRegistryWithDefinitions(animations: StringDictionary[CustomAnimation[TextStyle & ViewStyle & ImageStyle]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeRegistryWithDefinitions")(animations.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initializeRegistryWithDefinitions(animations: StringDictionary[CustomAnimation[TextStyle & ViewStyle & ImageStyle]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeRegistryWithDefinitions")(animations.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerAnimation(name: String, animation: CustomAnimation[TextStyle & ViewStyle & ImageStyle]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAnimation")(name.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerAnimation(name: String, animation: CustomAnimation[TextStyle & ViewStyle & ImageStyle]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAnimation")(name.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Inlined std.Partial<{[ k in react-native-animatable.react-native-animatable.Animation ]: (duration : number | undefined): std.Promise<{  finished :boolean}>}> */
   trait AnimatableAnimationMethods extends StObject {
@@ -211,386 +205,260 @@ object mod {
   }
   object AnimatableAnimationMethods {
     
-    @scala.inline
-    def apply(): AnimatableAnimationMethods = {
+    inline def apply(): AnimatableAnimationMethods = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimatableAnimationMethods]
     }
     
-    @scala.inline
-    implicit class AnimatableAnimationMethodsMutableBuilder[Self <: AnimatableAnimationMethods] (val x: Self) extends AnyVal {
+    extension [Self <: AnimatableAnimationMethods](x: Self) {
       
-      @scala.inline
-      def setBounce(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
+      inline def setBounce(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceIn", js.Any.fromFunction1(value))
+      inline def setBounceIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInDown", js.Any.fromFunction1(value))
+      inline def setBounceInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceInDownUndefined: Self = StObject.set(x, "bounceInDown", js.undefined)
+      inline def setBounceInDownUndefined: Self = StObject.set(x, "bounceInDown", js.undefined)
       
-      @scala.inline
-      def setBounceInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInLeft", js.Any.fromFunction1(value))
+      inline def setBounceInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceInLeftUndefined: Self = StObject.set(x, "bounceInLeft", js.undefined)
+      inline def setBounceInLeftUndefined: Self = StObject.set(x, "bounceInLeft", js.undefined)
       
-      @scala.inline
-      def setBounceInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInRight", js.Any.fromFunction1(value))
+      inline def setBounceInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceInRightUndefined: Self = StObject.set(x, "bounceInRight", js.undefined)
+      inline def setBounceInRightUndefined: Self = StObject.set(x, "bounceInRight", js.undefined)
       
-      @scala.inline
-      def setBounceInUndefined: Self = StObject.set(x, "bounceIn", js.undefined)
+      inline def setBounceInUndefined: Self = StObject.set(x, "bounceIn", js.undefined)
       
-      @scala.inline
-      def setBounceInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInUp", js.Any.fromFunction1(value))
+      inline def setBounceInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceInUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceInUpUndefined: Self = StObject.set(x, "bounceInUp", js.undefined)
+      inline def setBounceInUpUndefined: Self = StObject.set(x, "bounceInUp", js.undefined)
       
-      @scala.inline
-      def setBounceOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOut", js.Any.fromFunction1(value))
+      inline def setBounceOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutDown", js.Any.fromFunction1(value))
+      inline def setBounceOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceOutDownUndefined: Self = StObject.set(x, "bounceOutDown", js.undefined)
+      inline def setBounceOutDownUndefined: Self = StObject.set(x, "bounceOutDown", js.undefined)
       
-      @scala.inline
-      def setBounceOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutLeft", js.Any.fromFunction1(value))
+      inline def setBounceOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceOutLeftUndefined: Self = StObject.set(x, "bounceOutLeft", js.undefined)
+      inline def setBounceOutLeftUndefined: Self = StObject.set(x, "bounceOutLeft", js.undefined)
       
-      @scala.inline
-      def setBounceOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutRight", js.Any.fromFunction1(value))
+      inline def setBounceOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceOutRightUndefined: Self = StObject.set(x, "bounceOutRight", js.undefined)
+      inline def setBounceOutRightUndefined: Self = StObject.set(x, "bounceOutRight", js.undefined)
       
-      @scala.inline
-      def setBounceOutUndefined: Self = StObject.set(x, "bounceOut", js.undefined)
+      inline def setBounceOutUndefined: Self = StObject.set(x, "bounceOut", js.undefined)
       
-      @scala.inline
-      def setBounceOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutUp", js.Any.fromFunction1(value))
+      inline def setBounceOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounceOutUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBounceOutUpUndefined: Self = StObject.set(x, "bounceOutUp", js.undefined)
+      inline def setBounceOutUpUndefined: Self = StObject.set(x, "bounceOutUp", js.undefined)
       
-      @scala.inline
-      def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+      inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
-      @scala.inline
-      def setFadeIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeIn", js.Any.fromFunction1(value))
+      inline def setFadeIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInDown", js.Any.fromFunction1(value))
+      inline def setFadeInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInDownBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInDownBig", js.Any.fromFunction1(value))
+      inline def setFadeInDownBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInDownBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInDownBigUndefined: Self = StObject.set(x, "fadeInDownBig", js.undefined)
+      inline def setFadeInDownBigUndefined: Self = StObject.set(x, "fadeInDownBig", js.undefined)
       
-      @scala.inline
-      def setFadeInDownUndefined: Self = StObject.set(x, "fadeInDown", js.undefined)
+      inline def setFadeInDownUndefined: Self = StObject.set(x, "fadeInDown", js.undefined)
       
-      @scala.inline
-      def setFadeInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInLeft", js.Any.fromFunction1(value))
+      inline def setFadeInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInLeftBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInLeftBig", js.Any.fromFunction1(value))
+      inline def setFadeInLeftBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInLeftBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInLeftBigUndefined: Self = StObject.set(x, "fadeInLeftBig", js.undefined)
+      inline def setFadeInLeftBigUndefined: Self = StObject.set(x, "fadeInLeftBig", js.undefined)
       
-      @scala.inline
-      def setFadeInLeftUndefined: Self = StObject.set(x, "fadeInLeft", js.undefined)
+      inline def setFadeInLeftUndefined: Self = StObject.set(x, "fadeInLeft", js.undefined)
       
-      @scala.inline
-      def setFadeInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInRight", js.Any.fromFunction1(value))
+      inline def setFadeInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInRightBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInRightBig", js.Any.fromFunction1(value))
+      inline def setFadeInRightBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInRightBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInRightBigUndefined: Self = StObject.set(x, "fadeInRightBig", js.undefined)
+      inline def setFadeInRightBigUndefined: Self = StObject.set(x, "fadeInRightBig", js.undefined)
       
-      @scala.inline
-      def setFadeInRightUndefined: Self = StObject.set(x, "fadeInRight", js.undefined)
+      inline def setFadeInRightUndefined: Self = StObject.set(x, "fadeInRight", js.undefined)
       
-      @scala.inline
-      def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
+      inline def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
       
-      @scala.inline
-      def setFadeInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInUp", js.Any.fromFunction1(value))
+      inline def setFadeInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInUpBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInUpBig", js.Any.fromFunction1(value))
+      inline def setFadeInUpBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeInUpBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeInUpBigUndefined: Self = StObject.set(x, "fadeInUpBig", js.undefined)
+      inline def setFadeInUpBigUndefined: Self = StObject.set(x, "fadeInUpBig", js.undefined)
       
-      @scala.inline
-      def setFadeInUpUndefined: Self = StObject.set(x, "fadeInUp", js.undefined)
+      inline def setFadeInUpUndefined: Self = StObject.set(x, "fadeInUp", js.undefined)
       
-      @scala.inline
-      def setFadeOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOut", js.Any.fromFunction1(value))
+      inline def setFadeOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutDown", js.Any.fromFunction1(value))
+      inline def setFadeOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutDownBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutDownBig", js.Any.fromFunction1(value))
+      inline def setFadeOutDownBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutDownBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutDownBigUndefined: Self = StObject.set(x, "fadeOutDownBig", js.undefined)
+      inline def setFadeOutDownBigUndefined: Self = StObject.set(x, "fadeOutDownBig", js.undefined)
       
-      @scala.inline
-      def setFadeOutDownUndefined: Self = StObject.set(x, "fadeOutDown", js.undefined)
+      inline def setFadeOutDownUndefined: Self = StObject.set(x, "fadeOutDown", js.undefined)
       
-      @scala.inline
-      def setFadeOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutLeft", js.Any.fromFunction1(value))
+      inline def setFadeOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutLeftBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutLeftBig", js.Any.fromFunction1(value))
+      inline def setFadeOutLeftBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutLeftBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutLeftBigUndefined: Self = StObject.set(x, "fadeOutLeftBig", js.undefined)
+      inline def setFadeOutLeftBigUndefined: Self = StObject.set(x, "fadeOutLeftBig", js.undefined)
       
-      @scala.inline
-      def setFadeOutLeftUndefined: Self = StObject.set(x, "fadeOutLeft", js.undefined)
+      inline def setFadeOutLeftUndefined: Self = StObject.set(x, "fadeOutLeft", js.undefined)
       
-      @scala.inline
-      def setFadeOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutRight", js.Any.fromFunction1(value))
+      inline def setFadeOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutRightBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutRightBig", js.Any.fromFunction1(value))
+      inline def setFadeOutRightBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutRightBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutRightBigUndefined: Self = StObject.set(x, "fadeOutRightBig", js.undefined)
+      inline def setFadeOutRightBigUndefined: Self = StObject.set(x, "fadeOutRightBig", js.undefined)
       
-      @scala.inline
-      def setFadeOutRightUndefined: Self = StObject.set(x, "fadeOutRight", js.undefined)
+      inline def setFadeOutRightUndefined: Self = StObject.set(x, "fadeOutRight", js.undefined)
       
-      @scala.inline
-      def setFadeOutUndefined: Self = StObject.set(x, "fadeOut", js.undefined)
+      inline def setFadeOutUndefined: Self = StObject.set(x, "fadeOut", js.undefined)
       
-      @scala.inline
-      def setFadeOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutUp", js.Any.fromFunction1(value))
+      inline def setFadeOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutUpBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutUpBig", js.Any.fromFunction1(value))
+      inline def setFadeOutUpBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "fadeOutUpBig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFadeOutUpBigUndefined: Self = StObject.set(x, "fadeOutUpBig", js.undefined)
+      inline def setFadeOutUpBigUndefined: Self = StObject.set(x, "fadeOutUpBig", js.undefined)
       
-      @scala.inline
-      def setFadeOutUpUndefined: Self = StObject.set(x, "fadeOutUp", js.undefined)
+      inline def setFadeOutUpUndefined: Self = StObject.set(x, "fadeOutUp", js.undefined)
       
-      @scala.inline
-      def setFlash(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flash", js.Any.fromFunction1(value))
+      inline def setFlash(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flash", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
+      inline def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
       
-      @scala.inline
-      def setFlipInX(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipInX", js.Any.fromFunction1(value))
+      inline def setFlipInX(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipInX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlipInXUndefined: Self = StObject.set(x, "flipInX", js.undefined)
+      inline def setFlipInXUndefined: Self = StObject.set(x, "flipInX", js.undefined)
       
-      @scala.inline
-      def setFlipInY(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipInY", js.Any.fromFunction1(value))
+      inline def setFlipInY(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipInY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlipInYUndefined: Self = StObject.set(x, "flipInY", js.undefined)
+      inline def setFlipInYUndefined: Self = StObject.set(x, "flipInY", js.undefined)
       
-      @scala.inline
-      def setFlipOutX(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipOutX", js.Any.fromFunction1(value))
+      inline def setFlipOutX(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipOutX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlipOutXUndefined: Self = StObject.set(x, "flipOutX", js.undefined)
+      inline def setFlipOutXUndefined: Self = StObject.set(x, "flipOutX", js.undefined)
       
-      @scala.inline
-      def setFlipOutY(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipOutY", js.Any.fromFunction1(value))
+      inline def setFlipOutY(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "flipOutY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlipOutYUndefined: Self = StObject.set(x, "flipOutY", js.undefined)
+      inline def setFlipOutYUndefined: Self = StObject.set(x, "flipOutY", js.undefined)
       
-      @scala.inline
-      def setJello(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "jello", js.Any.fromFunction1(value))
+      inline def setJello(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "jello", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJelloUndefined: Self = StObject.set(x, "jello", js.undefined)
+      inline def setJelloUndefined: Self = StObject.set(x, "jello", js.undefined)
       
-      @scala.inline
-      def setLightSpeedIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "lightSpeedIn", js.Any.fromFunction1(value))
+      inline def setLightSpeedIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "lightSpeedIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLightSpeedInUndefined: Self = StObject.set(x, "lightSpeedIn", js.undefined)
+      inline def setLightSpeedInUndefined: Self = StObject.set(x, "lightSpeedIn", js.undefined)
       
-      @scala.inline
-      def setLightSpeedOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "lightSpeedOut", js.Any.fromFunction1(value))
+      inline def setLightSpeedOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "lightSpeedOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLightSpeedOutUndefined: Self = StObject.set(x, "lightSpeedOut", js.undefined)
+      inline def setLightSpeedOutUndefined: Self = StObject.set(x, "lightSpeedOut", js.undefined)
       
-      @scala.inline
-      def setPulse(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "pulse", js.Any.fromFunction1(value))
+      inline def setPulse(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "pulse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
+      inline def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
       
-      @scala.inline
-      def setRotate(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
+      inline def setRotate(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setRubberBand(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "rubberBand", js.Any.fromFunction1(value))
+      inline def setRubberBand(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "rubberBand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRubberBandUndefined: Self = StObject.set(x, "rubberBand", js.undefined)
+      inline def setRubberBandUndefined: Self = StObject.set(x, "rubberBand", js.undefined)
       
-      @scala.inline
-      def setShake(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "shake", js.Any.fromFunction1(value))
+      inline def setShake(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "shake", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShakeUndefined: Self = StObject.set(x, "shake", js.undefined)
+      inline def setShakeUndefined: Self = StObject.set(x, "shake", js.undefined)
       
-      @scala.inline
-      def setSlideInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInDown", js.Any.fromFunction1(value))
+      inline def setSlideInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideInDownUndefined: Self = StObject.set(x, "slideInDown", js.undefined)
+      inline def setSlideInDownUndefined: Self = StObject.set(x, "slideInDown", js.undefined)
       
-      @scala.inline
-      def setSlideInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInLeft", js.Any.fromFunction1(value))
+      inline def setSlideInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideInLeftUndefined: Self = StObject.set(x, "slideInLeft", js.undefined)
+      inline def setSlideInLeftUndefined: Self = StObject.set(x, "slideInLeft", js.undefined)
       
-      @scala.inline
-      def setSlideInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInRight", js.Any.fromFunction1(value))
+      inline def setSlideInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideInRightUndefined: Self = StObject.set(x, "slideInRight", js.undefined)
+      inline def setSlideInRightUndefined: Self = StObject.set(x, "slideInRight", js.undefined)
       
-      @scala.inline
-      def setSlideInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInUp", js.Any.fromFunction1(value))
+      inline def setSlideInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideInUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideInUpUndefined: Self = StObject.set(x, "slideInUp", js.undefined)
+      inline def setSlideInUpUndefined: Self = StObject.set(x, "slideInUp", js.undefined)
       
-      @scala.inline
-      def setSlideOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutDown", js.Any.fromFunction1(value))
+      inline def setSlideOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideOutDownUndefined: Self = StObject.set(x, "slideOutDown", js.undefined)
+      inline def setSlideOutDownUndefined: Self = StObject.set(x, "slideOutDown", js.undefined)
       
-      @scala.inline
-      def setSlideOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutLeft", js.Any.fromFunction1(value))
+      inline def setSlideOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideOutLeftUndefined: Self = StObject.set(x, "slideOutLeft", js.undefined)
+      inline def setSlideOutLeftUndefined: Self = StObject.set(x, "slideOutLeft", js.undefined)
       
-      @scala.inline
-      def setSlideOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutRight", js.Any.fromFunction1(value))
+      inline def setSlideOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideOutRightUndefined: Self = StObject.set(x, "slideOutRight", js.undefined)
+      inline def setSlideOutRightUndefined: Self = StObject.set(x, "slideOutRight", js.undefined)
       
-      @scala.inline
-      def setSlideOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutUp", js.Any.fromFunction1(value))
+      inline def setSlideOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "slideOutUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideOutUpUndefined: Self = StObject.set(x, "slideOutUp", js.undefined)
+      inline def setSlideOutUpUndefined: Self = StObject.set(x, "slideOutUp", js.undefined)
       
-      @scala.inline
-      def setSwing(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "swing", js.Any.fromFunction1(value))
+      inline def setSwing(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "swing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwingUndefined: Self = StObject.set(x, "swing", js.undefined)
+      inline def setSwingUndefined: Self = StObject.set(x, "swing", js.undefined)
       
-      @scala.inline
-      def setTada(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "tada", js.Any.fromFunction1(value))
+      inline def setTada(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "tada", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTadaUndefined: Self = StObject.set(x, "tada", js.undefined)
+      inline def setTadaUndefined: Self = StObject.set(x, "tada", js.undefined)
       
-      @scala.inline
-      def setWobble(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "wobble", js.Any.fromFunction1(value))
+      inline def setWobble(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "wobble", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWobbleUndefined: Self = StObject.set(x, "wobble", js.undefined)
+      inline def setWobbleUndefined: Self = StObject.set(x, "wobble", js.undefined)
       
-      @scala.inline
-      def setZoomIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomIn", js.Any.fromFunction1(value))
+      inline def setZoomIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInDown", js.Any.fromFunction1(value))
+      inline def setZoomInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomInDownUndefined: Self = StObject.set(x, "zoomInDown", js.undefined)
+      inline def setZoomInDownUndefined: Self = StObject.set(x, "zoomInDown", js.undefined)
       
-      @scala.inline
-      def setZoomInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInLeft", js.Any.fromFunction1(value))
+      inline def setZoomInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomInLeftUndefined: Self = StObject.set(x, "zoomInLeft", js.undefined)
+      inline def setZoomInLeftUndefined: Self = StObject.set(x, "zoomInLeft", js.undefined)
       
-      @scala.inline
-      def setZoomInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInRight", js.Any.fromFunction1(value))
+      inline def setZoomInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomInRightUndefined: Self = StObject.set(x, "zoomInRight", js.undefined)
+      inline def setZoomInRightUndefined: Self = StObject.set(x, "zoomInRight", js.undefined)
       
-      @scala.inline
-      def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
+      inline def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
       
-      @scala.inline
-      def setZoomInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInUp", js.Any.fromFunction1(value))
+      inline def setZoomInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomInUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomInUpUndefined: Self = StObject.set(x, "zoomInUp", js.undefined)
+      inline def setZoomInUpUndefined: Self = StObject.set(x, "zoomInUp", js.undefined)
       
-      @scala.inline
-      def setZoomOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOut", js.Any.fromFunction1(value))
+      inline def setZoomOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutDown", js.Any.fromFunction1(value))
+      inline def setZoomOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomOutDownUndefined: Self = StObject.set(x, "zoomOutDown", js.undefined)
+      inline def setZoomOutDownUndefined: Self = StObject.set(x, "zoomOutDown", js.undefined)
       
-      @scala.inline
-      def setZoomOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutLeft", js.Any.fromFunction1(value))
+      inline def setZoomOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomOutLeftUndefined: Self = StObject.set(x, "zoomOutLeft", js.undefined)
+      inline def setZoomOutLeftUndefined: Self = StObject.set(x, "zoomOutLeft", js.undefined)
       
-      @scala.inline
-      def setZoomOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutRight", js.Any.fromFunction1(value))
+      inline def setZoomOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomOutRightUndefined: Self = StObject.set(x, "zoomOutRight", js.undefined)
+      inline def setZoomOutRightUndefined: Self = StObject.set(x, "zoomOutRight", js.undefined)
       
-      @scala.inline
-      def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
+      inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
       
-      @scala.inline
-      def setZoomOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutUp", js.Any.fromFunction1(value))
+      inline def setZoomOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "zoomOutUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomOutUpUndefined: Self = StObject.set(x, "zoomOutUp", js.undefined)
+      inline def setZoomOutUpUndefined: Self = StObject.set(x, "zoomOutUp", js.undefined)
     }
   }
   
@@ -644,98 +512,68 @@ object mod {
   }
   object AnimatableProperties {
     
-    @scala.inline
-    def apply[S /* <: js.Object */](): AnimatableProperties[S] = {
+    inline def apply[S /* <: js.Object */](): AnimatableProperties[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimatableProperties[S]]
     }
     
-    @scala.inline
-    implicit class AnimatablePropertiesMutableBuilder[Self <: AnimatableProperties[?], S /* <: js.Object */] (val x: Self & AnimatableProperties[S]) extends AnyVal {
+    extension [Self <: AnimatableProperties[?], S /* <: js.Object */](x: Self & AnimatableProperties[S]) {
       
-      @scala.inline
-      def setAnimation(value: Animation | String | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Animation | String | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingFunction1(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasingFunction1(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setIterationCount(value: Double | infinite): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
+      inline def setIterationCount(value: Double | infinite): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationCountUndefined: Self = StObject.set(x, "iterationCount", js.undefined)
+      inline def setIterationCountUndefined: Self = StObject.set(x, "iterationCount", js.undefined)
       
-      @scala.inline
-      def setIterationDelay(value: Double): Self = StObject.set(x, "iterationDelay", value.asInstanceOf[js.Any])
+      inline def setIterationDelay(value: Double): Self = StObject.set(x, "iterationDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationDelayUndefined: Self = StObject.set(x, "iterationDelay", js.undefined)
+      inline def setIterationDelayUndefined: Self = StObject.set(x, "iterationDelay", js.undefined)
       
-      @scala.inline
-      def setOnAnimationBegin(value: js.Function): Self = StObject.set(x, "onAnimationBegin", value.asInstanceOf[js.Any])
+      inline def setOnAnimationBegin(value: js.Function): Self = StObject.set(x, "onAnimationBegin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAnimationBeginUndefined: Self = StObject.set(x, "onAnimationBegin", js.undefined)
+      inline def setOnAnimationBeginUndefined: Self = StObject.set(x, "onAnimationBegin", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: js.Function): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
+      inline def setOnAnimationEnd(value: js.Function): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setOnTransitionBegin(value: /* property */ String => Unit): Self = StObject.set(x, "onTransitionBegin", js.Any.fromFunction1(value))
+      inline def setOnTransitionBegin(value: /* property */ String => Unit): Self = StObject.set(x, "onTransitionBegin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionBeginUndefined: Self = StObject.set(x, "onTransitionBegin", js.undefined)
+      inline def setOnTransitionBeginUndefined: Self = StObject.set(x, "onTransitionBegin", js.undefined)
       
-      @scala.inline
-      def setOnTransitionEnd(value: /* property */ String => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: /* property */ String => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+      inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      @scala.inline
-      def setTransition(value: (/* keyof S */ String) | (js.Array[/* keyof S */ String])): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: (/* keyof S */ String) | (js.Array[/* keyof S */ String])): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      @scala.inline
-      def setTransitionVarargs(value: (/* keyof S */ String)*): Self = StObject.set(x, "transition", js.Array(value :_*))
+      inline def setTransitionVarargs(value: (/* keyof S */ String)*): Self = StObject.set(x, "transition", js.Array(value :_*))
       
-      @scala.inline
-      def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
     }
   }
   
@@ -806,191 +644,129 @@ object mod {
   trait Animation extends StObject
   object Animation {
     
-    @scala.inline
-    def bounce: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounce = "bounce".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounce]
+    inline def bounce: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounce = "bounce".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounce]
     
-    @scala.inline
-    def bounceIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceIn = "bounceIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceIn]
+    inline def bounceIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceIn = "bounceIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceIn]
     
-    @scala.inline
-    def bounceInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInDown = "bounceInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInDown]
+    inline def bounceInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInDown = "bounceInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInDown]
     
-    @scala.inline
-    def bounceInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInLeft = "bounceInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInLeft]
+    inline def bounceInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInLeft = "bounceInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInLeft]
     
-    @scala.inline
-    def bounceInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInRight = "bounceInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInRight]
+    inline def bounceInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInRight = "bounceInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInRight]
     
-    @scala.inline
-    def bounceInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInUp = "bounceInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInUp]
+    inline def bounceInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInUp = "bounceInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceInUp]
     
-    @scala.inline
-    def bounceOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOut = "bounceOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOut]
+    inline def bounceOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOut = "bounceOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOut]
     
-    @scala.inline
-    def bounceOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutDown = "bounceOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutDown]
+    inline def bounceOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutDown = "bounceOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutDown]
     
-    @scala.inline
-    def bounceOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutLeft = "bounceOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutLeft]
+    inline def bounceOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutLeft = "bounceOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutLeft]
     
-    @scala.inline
-    def bounceOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutRight = "bounceOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutRight]
+    inline def bounceOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutRight = "bounceOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutRight]
     
-    @scala.inline
-    def bounceOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutUp = "bounceOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutUp]
+    inline def bounceOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutUp = "bounceOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.bounceOutUp]
     
-    @scala.inline
-    def fadeIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeIn = "fadeIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeIn]
+    inline def fadeIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeIn = "fadeIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeIn]
     
-    @scala.inline
-    def fadeInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDown = "fadeInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDown]
+    inline def fadeInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDown = "fadeInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDown]
     
-    @scala.inline
-    def fadeInDownBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDownBig = "fadeInDownBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDownBig]
+    inline def fadeInDownBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDownBig = "fadeInDownBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInDownBig]
     
-    @scala.inline
-    def fadeInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeft = "fadeInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeft]
+    inline def fadeInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeft = "fadeInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeft]
     
-    @scala.inline
-    def fadeInLeftBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeftBig = "fadeInLeftBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeftBig]
+    inline def fadeInLeftBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeftBig = "fadeInLeftBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInLeftBig]
     
-    @scala.inline
-    def fadeInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRight = "fadeInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRight]
+    inline def fadeInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRight = "fadeInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRight]
     
-    @scala.inline
-    def fadeInRightBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRightBig = "fadeInRightBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRightBig]
+    inline def fadeInRightBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRightBig = "fadeInRightBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInRightBig]
     
-    @scala.inline
-    def fadeInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUp = "fadeInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUp]
+    inline def fadeInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUp = "fadeInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUp]
     
-    @scala.inline
-    def fadeInUpBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUpBig = "fadeInUpBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUpBig]
+    inline def fadeInUpBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUpBig = "fadeInUpBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeInUpBig]
     
-    @scala.inline
-    def fadeOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOut = "fadeOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOut]
+    inline def fadeOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOut = "fadeOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOut]
     
-    @scala.inline
-    def fadeOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDown = "fadeOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDown]
+    inline def fadeOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDown = "fadeOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDown]
     
-    @scala.inline
-    def fadeOutDownBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDownBig = "fadeOutDownBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDownBig]
+    inline def fadeOutDownBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDownBig = "fadeOutDownBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutDownBig]
     
-    @scala.inline
-    def fadeOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeft = "fadeOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeft]
+    inline def fadeOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeft = "fadeOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeft]
     
-    @scala.inline
-    def fadeOutLeftBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeftBig = "fadeOutLeftBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeftBig]
+    inline def fadeOutLeftBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeftBig = "fadeOutLeftBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutLeftBig]
     
-    @scala.inline
-    def fadeOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRight = "fadeOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRight]
+    inline def fadeOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRight = "fadeOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRight]
     
-    @scala.inline
-    def fadeOutRightBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRightBig = "fadeOutRightBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRightBig]
+    inline def fadeOutRightBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRightBig = "fadeOutRightBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutRightBig]
     
-    @scala.inline
-    def fadeOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUp = "fadeOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUp]
+    inline def fadeOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUp = "fadeOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUp]
     
-    @scala.inline
-    def fadeOutUpBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUpBig = "fadeOutUpBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUpBig]
+    inline def fadeOutUpBig: typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUpBig = "fadeOutUpBig".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.fadeOutUpBig]
     
-    @scala.inline
-    def flash: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flash = "flash".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flash]
+    inline def flash: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flash = "flash".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flash]
     
-    @scala.inline
-    def flipInX: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInX = "flipInX".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInX]
+    inline def flipInX: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInX = "flipInX".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInX]
     
-    @scala.inline
-    def flipInY: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInY = "flipInY".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInY]
+    inline def flipInY: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInY = "flipInY".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipInY]
     
-    @scala.inline
-    def flipOutX: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutX = "flipOutX".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutX]
+    inline def flipOutX: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutX = "flipOutX".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutX]
     
-    @scala.inline
-    def flipOutY: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutY = "flipOutY".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutY]
+    inline def flipOutY: typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutY = "flipOutY".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.flipOutY]
     
-    @scala.inline
-    def jello: typings.reactNativeAnimatable.reactNativeAnimatableStrings.jello = "jello".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.jello]
+    inline def jello: typings.reactNativeAnimatable.reactNativeAnimatableStrings.jello = "jello".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.jello]
     
-    @scala.inline
-    def lightSpeedIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedIn = "lightSpeedIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedIn]
+    inline def lightSpeedIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedIn = "lightSpeedIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedIn]
     
-    @scala.inline
-    def lightSpeedOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedOut = "lightSpeedOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedOut]
+    inline def lightSpeedOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedOut = "lightSpeedOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.lightSpeedOut]
     
-    @scala.inline
-    def pulse: typings.reactNativeAnimatable.reactNativeAnimatableStrings.pulse = "pulse".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.pulse]
+    inline def pulse: typings.reactNativeAnimatable.reactNativeAnimatableStrings.pulse = "pulse".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.pulse]
     
-    @scala.inline
-    def rotate: typings.reactNativeAnimatable.reactNativeAnimatableStrings.rotate = "rotate".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.rotate]
+    inline def rotate: typings.reactNativeAnimatable.reactNativeAnimatableStrings.rotate = "rotate".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.rotate]
     
-    @scala.inline
-    def rubberBand: typings.reactNativeAnimatable.reactNativeAnimatableStrings.rubberBand = "rubberBand".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.rubberBand]
+    inline def rubberBand: typings.reactNativeAnimatable.reactNativeAnimatableStrings.rubberBand = "rubberBand".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.rubberBand]
     
-    @scala.inline
-    def shake: typings.reactNativeAnimatable.reactNativeAnimatableStrings.shake = "shake".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.shake]
+    inline def shake: typings.reactNativeAnimatable.reactNativeAnimatableStrings.shake = "shake".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.shake]
     
-    @scala.inline
-    def slideInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInDown = "slideInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInDown]
+    inline def slideInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInDown = "slideInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInDown]
     
-    @scala.inline
-    def slideInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInLeft = "slideInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInLeft]
+    inline def slideInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInLeft = "slideInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInLeft]
     
-    @scala.inline
-    def slideInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInRight = "slideInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInRight]
+    inline def slideInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInRight = "slideInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInRight]
     
-    @scala.inline
-    def slideInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInUp = "slideInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInUp]
+    inline def slideInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInUp = "slideInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideInUp]
     
-    @scala.inline
-    def slideOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutDown = "slideOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutDown]
+    inline def slideOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutDown = "slideOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutDown]
     
-    @scala.inline
-    def slideOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutLeft = "slideOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutLeft]
+    inline def slideOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutLeft = "slideOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutLeft]
     
-    @scala.inline
-    def slideOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutRight = "slideOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutRight]
+    inline def slideOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutRight = "slideOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutRight]
     
-    @scala.inline
-    def slideOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutUp = "slideOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutUp]
+    inline def slideOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutUp = "slideOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.slideOutUp]
     
-    @scala.inline
-    def swing: typings.reactNativeAnimatable.reactNativeAnimatableStrings.swing = "swing".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.swing]
+    inline def swing: typings.reactNativeAnimatable.reactNativeAnimatableStrings.swing = "swing".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.swing]
     
-    @scala.inline
-    def tada: typings.reactNativeAnimatable.reactNativeAnimatableStrings.tada = "tada".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.tada]
+    inline def tada: typings.reactNativeAnimatable.reactNativeAnimatableStrings.tada = "tada".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.tada]
     
-    @scala.inline
-    def wobble: typings.reactNativeAnimatable.reactNativeAnimatableStrings.wobble = "wobble".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.wobble]
+    inline def wobble: typings.reactNativeAnimatable.reactNativeAnimatableStrings.wobble = "wobble".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.wobble]
     
-    @scala.inline
-    def zoomIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomIn = "zoomIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomIn]
+    inline def zoomIn: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomIn = "zoomIn".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomIn]
     
-    @scala.inline
-    def zoomInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInDown = "zoomInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInDown]
+    inline def zoomInDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInDown = "zoomInDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInDown]
     
-    @scala.inline
-    def zoomInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInLeft = "zoomInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInLeft]
+    inline def zoomInLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInLeft = "zoomInLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInLeft]
     
-    @scala.inline
-    def zoomInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInRight = "zoomInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInRight]
+    inline def zoomInRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInRight = "zoomInRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInRight]
     
-    @scala.inline
-    def zoomInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInUp = "zoomInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInUp]
+    inline def zoomInUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInUp = "zoomInUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomInUp]
     
-    @scala.inline
-    def zoomOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOut = "zoomOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOut]
+    inline def zoomOut: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOut = "zoomOut".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOut]
     
-    @scala.inline
-    def zoomOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutDown = "zoomOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutDown]
+    inline def zoomOutDown: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutDown = "zoomOutDown".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutDown]
     
-    @scala.inline
-    def zoomOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutLeft = "zoomOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutLeft]
+    inline def zoomOutLeft: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutLeft = "zoomOutLeft".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutLeft]
     
-    @scala.inline
-    def zoomOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutRight = "zoomOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutRight]
+    inline def zoomOutRight: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutRight = "zoomOutRight".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutRight]
     
-    @scala.inline
-    def zoomOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutUp = "zoomOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutUp]
+    inline def zoomOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutUp = "zoomOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutUp]
   }
   
   trait CustomAnimation[T]
@@ -1007,41 +783,30 @@ object mod {
   }
   object CustomAnimation {
     
-    @scala.inline
-    def apply[T](): CustomAnimation[T] = {
+    inline def apply[T](): CustomAnimation[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomAnimation[T]]
     }
     
-    @scala.inline
-    implicit class CustomAnimationMutableBuilder[Self <: CustomAnimation[?], T] (val x: Self & CustomAnimation[T]) extends AnyVal {
+    extension [Self <: CustomAnimation[?], T](x: Self & CustomAnimation[T]) {
       
-      @scala.inline
-      def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingFunction1(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasingFunction1(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setFrom(value: T): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: T): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setStyle(value: T): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: T): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTo(value: T): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: T): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -1054,17 +819,13 @@ object mod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def alternate: typings.reactNativeAnimatable.reactNativeAnimatableStrings.alternate = "alternate".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.alternate]
+    inline def alternate: typings.reactNativeAnimatable.reactNativeAnimatableStrings.alternate = "alternate".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.alternate]
     
-    @scala.inline
-    def `alternate-reverse`: typings.reactNativeAnimatable.reactNativeAnimatableStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.`alternate-reverse`]
+    inline def `alternate-reverse`: typings.reactNativeAnimatable.reactNativeAnimatableStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.`alternate-reverse`]
     
-    @scala.inline
-    def normal: typings.reactNativeAnimatable.reactNativeAnimatableStrings.normal = "normal".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.normal]
+    inline def normal: typings.reactNativeAnimatable.reactNativeAnimatableStrings.normal = "normal".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.normal]
     
-    @scala.inline
-    def reverse: typings.reactNativeAnimatable.reactNativeAnimatableStrings.reverse = "reverse".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.reverse]
+    inline def reverse: typings.reactNativeAnimatable.reactNativeAnimatableStrings.reverse = "reverse".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.reverse]
   }
   
   /* Rewritten from type alias, can be one of: 

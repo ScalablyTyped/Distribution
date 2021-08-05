@@ -64,40 +64,30 @@ object mod extends Shortcut {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setHasChanged(
+      inline def setHasChanged(
         value: (/* stream */ Transform, /* callback */ js.Function, /* sourceFile */ File, /* destPath */ String) => Unit
       ): Self = StObject.set(x, "hasChanged", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setHasChangedUndefined: Self = StObject.set(x, "hasChanged", js.undefined)
+      inline def setHasChangedUndefined: Self = StObject.set(x, "hasChanged", js.undefined)
       
-      @scala.inline
-      def setTransformPath(value: /* destPath */ String => String): Self = StObject.set(x, "transformPath", js.Any.fromFunction1(value))
+      inline def setTransformPath(value: /* destPath */ String => String): Self = StObject.set(x, "transformPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformPathUndefined: Self = StObject.set(x, "transformPath", js.undefined)
+      inline def setTransformPathUndefined: Self = StObject.set(x, "transformPath", js.undefined)
     }
   }
   

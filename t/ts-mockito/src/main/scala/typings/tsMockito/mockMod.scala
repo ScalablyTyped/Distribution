@@ -17,7 +17,7 @@ object mockMod {
     def this(clazz: js.Any) = this()
     def this(clazz: js.Any, instance: js.Any) = this()
     
-    var clazz: js.Any = js.native
+    /* private */ var clazz: js.Any = js.native
     
     /* protected */ def createActionListener(key: String): js.Function0[js.Any] = js.native
     
@@ -27,13 +27,13 @@ object mockMod {
     
     /* protected */ def createInstancePropertyDescriptorListener(key: String, descriptor: PropertyDescriptor, prototype: js.Any): Unit = js.native
     
-    var createMethodStub: js.Any = js.native
+    /* private */ var createMethodStub: js.Any = js.native
     
-    var createMethodToStub: js.Any = js.native
+    /* private */ var createMethodToStub: js.Any = js.native
     
-    var createPropertyStub: js.Any = js.native
+    /* private */ var createPropertyStub: js.Any = js.native
     
-    var excludedPropertyNames: js.Any = js.native
+    /* private */ var excludedPropertyNames: js.Any = js.native
     
     def getActionsByName(name: String): js.Array[MethodAction] = js.native
     
@@ -43,27 +43,27 @@ object mockMod {
     
     def getFirstMatchingAction(methodName: String, matchers: js.Array[Matcher]): MethodAction = js.native
     
-    var getMethodStub: js.Any = js.native
+    /* private */ var getMethodStub: js.Any = js.native
     
     def getMock(): js.Any = js.native
     
     var instance: js.Any = js.native
     
-    var methodActions: js.Any = js.native
+    /* private */ var methodActions: js.Any = js.native
     
-    var methodStubCollections: js.Any = js.native
+    /* private */ var methodStubCollections: js.Any = js.native
     
     var mock: js.Any = js.native
     
-    var mockableFunctionsFinder: js.Any = js.native
+    /* private */ var mockableFunctionsFinder: js.Any = js.native
     
-    var objectInspector: ObjectInspector = js.native
+    /* protected */ var objectInspector: ObjectInspector = js.native
     
-    var objectPropertyCodeRetriever: js.Any = js.native
+    /* private */ var objectPropertyCodeRetriever: js.Any = js.native
     
-    var processClassCode: js.Any = js.native
+    /* private */ var processClassCode: js.Any = js.native
     
-    var processFunctionsCode: js.Any = js.native
+    /* private */ var processFunctionsCode: js.Any = js.native
     
     /* protected */ def processProperties(`object`: js.Any): Unit = js.native
     

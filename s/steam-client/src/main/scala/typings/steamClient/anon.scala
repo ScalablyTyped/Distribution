@@ -23,23 +23,18 @@ object anon {
   }
   object Msg {
     
-    @scala.inline
-    def apply(msg: EMsg): Msg = {
+    inline def apply(msg: EMsg): Msg = {
       val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Msg]
     }
     
-    @scala.inline
-    implicit class MsgMutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
+    extension [Self <: Msg](x: Self) {
       
-      @scala.inline
-      def setMsg(value: EMsg): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: EMsg): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProto(value: CMsgProtoBufHeader | `false`): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
+      inline def setProto(value: CMsgProtoBufHeader | `false`): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
+      inline def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
     }
   }
 }

@@ -10,8 +10,7 @@ trait INotification
      with IAbstract
 object INotification {
   
-  @scala.inline
-  def apply(): INotification = {
+  inline def apply(): INotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INotification]
   }

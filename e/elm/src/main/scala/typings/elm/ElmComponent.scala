@@ -10,16 +10,13 @@ trait ElmComponent[P] extends StObject {
 }
 object ElmComponent {
   
-  @scala.inline
-  def apply[P](ports: P): ElmComponent[P] = {
+  inline def apply[P](ports: P): ElmComponent[P] = {
     val __obj = js.Dynamic.literal(ports = ports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElmComponent[P]]
   }
   
-  @scala.inline
-  implicit class ElmComponentMutableBuilder[Self <: ElmComponent[?], P] (val x: Self & ElmComponent[P]) extends AnyVal {
+  extension [Self <: ElmComponent[?], P](x: Self & ElmComponent[P]) {
     
-    @scala.inline
-    def setPorts(value: P): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: P): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
   }
 }

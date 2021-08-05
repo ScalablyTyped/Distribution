@@ -25,28 +25,21 @@ trait CanvasImageDataOptions
 }
 object CanvasImageDataOptions {
   
-  @scala.inline
-  def apply(canvasId: String, height: Double, width: Double, x: Double, y: Double): CanvasImageDataOptions = {
+  inline def apply(canvasId: String, height: Double, width: Double, x: Double, y: Double): CanvasImageDataOptions = {
     val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasImageDataOptions]
   }
   
-  @scala.inline
-  implicit class CanvasImageDataOptionsMutableBuilder[Self <: CanvasImageDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasImageDataOptions](x: Self) {
     
-    @scala.inline
-    def setCanvasId(value: String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
+    inline def setCanvasId(value: String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

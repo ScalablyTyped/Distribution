@@ -36,12 +36,9 @@ object global {
       *
       * https://kulshekhar.github.io/ts-jest/user/test-helpers
       */
-    @scala.inline
-    def apply[T](item: T): MaybeMocked[T] = ^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any]).asInstanceOf[MaybeMocked[T]]
-    @scala.inline
-    def apply[T](item: T, deep: `false`): MaybeMocked[T] = (^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[MaybeMocked[T]]
-    @scala.inline
-    def apply[T](item: T, deep: `true`): MaybeMockedDeep[T] = (^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[MaybeMockedDeep[T]]
+    inline def apply[T](item: T): MaybeMocked[T] = ^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any]).asInstanceOf[MaybeMocked[T]]
+    inline def apply[T](item: T, deep: `false`): MaybeMocked[T] = (^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[MaybeMocked[T]]
+    inline def apply[T](item: T, deep: `true`): MaybeMockedDeep[T] = (^.asInstanceOf[js.Dynamic].apply(item.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[MaybeMockedDeep[T]]
     
     @JSGlobal("mocked")
     @js.native

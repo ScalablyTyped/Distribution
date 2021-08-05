@@ -18,22 +18,17 @@ trait ListIdentityPoolsInput extends StObject {
 }
 object ListIdentityPoolsInput {
   
-  @scala.inline
-  def apply(MaxResults: QueryLimit): ListIdentityPoolsInput = {
+  inline def apply(MaxResults: QueryLimit): ListIdentityPoolsInput = {
     val __obj = js.Dynamic.literal(MaxResults = MaxResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentityPoolsInput]
   }
   
-  @scala.inline
-  implicit class ListIdentityPoolsInputMutableBuilder[Self <: ListIdentityPoolsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentityPoolsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: QueryLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: QueryLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

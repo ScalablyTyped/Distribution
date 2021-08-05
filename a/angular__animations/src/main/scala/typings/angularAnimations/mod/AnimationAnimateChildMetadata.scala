@@ -17,20 +17,16 @@ trait AnimationAnimateChildMetadata
 }
 object AnimationAnimateChildMetadata {
   
-  @scala.inline
-  def apply(`type`: AnimationMetadataType): AnimationAnimateChildMetadata = {
+  inline def apply(`type`: AnimationMetadataType): AnimationAnimateChildMetadata = {
     val __obj = js.Dynamic.literal(options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationAnimateChildMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationAnimateChildMetadataMutableBuilder[Self <: AnimationAnimateChildMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationAnimateChildMetadata](x: Self) {
     
-    @scala.inline
-    def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
   }
 }

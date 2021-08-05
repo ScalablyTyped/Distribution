@@ -15,7 +15,7 @@ trait HTMLProject extends StObject {
   @JSName("HTMLProjectItems")
   val HTMLProjectItems_Original: HTMLProjectItems = js.native
   
-  @JSName("Office.HTMLProject_typekey")
+  /* private */ @JSName("Office.HTMLProject_typekey")
   var OfficeDotHTMLProject_typekey: HTMLProject = js.native
   
   /** @param OpenKind [OpenKind=0] */

@@ -18,19 +18,15 @@ trait ManifestFileLocation extends StObject {
 }
 object ManifestFileLocation {
   
-  @scala.inline
-  def apply(Bucket: S3Bucket, Key: S3Key): ManifestFileLocation = {
+  inline def apply(Bucket: S3Bucket, Key: S3Key): ManifestFileLocation = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestFileLocation]
   }
   
-  @scala.inline
-  implicit class ManifestFileLocationMutableBuilder[Self <: ManifestFileLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestFileLocation](x: Self) {
     
-    @scala.inline
-    def setBucket(value: S3Bucket): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: S3Bucket): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: S3Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: S3Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
   }
 }

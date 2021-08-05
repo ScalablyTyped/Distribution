@@ -33,8 +33,7 @@ object contentSwitcherMod {
     @JSImport("carbon-components/components/content-switcher/content-switcher", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -48,8 +47,7 @@ object contentSwitcherMod {
   }
   object ContentSwitcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _changeState: (js.Any, js.Any) => Unit,
       _handleClick: js.Any => Unit,
       setActive: (js.Any, js.Any) => Unit
@@ -58,17 +56,13 @@ object contentSwitcherMod {
       __obj.asInstanceOf[ContentSwitcher]
     }
     
-    @scala.inline
-    implicit class ContentSwitcherMutableBuilder[Self <: ContentSwitcher] (val x: Self) extends AnyVal {
+    extension [Self <: ContentSwitcher](x: Self) {
       
-      @scala.inline
-      def setSetActive(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction2(value))
+      inline def setSetActive(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_changeState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction2(value))
+      inline def set_changeState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
+      inline def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
     }
   }
 }

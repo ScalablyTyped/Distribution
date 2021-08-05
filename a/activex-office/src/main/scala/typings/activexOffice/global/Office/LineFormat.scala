@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.LineFormat")
 @js.native
-class LineFormat protected ()
+/* private */ class LineFormat ()
   extends StObject
      with typings.activexOffice.Office.LineFormat {
   
@@ -53,7 +53,7 @@ class LineFormat protected ()
   /* CompleteClass */
   var InsetPen: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.LineFormat_typekey")
   var OfficeDotLineFormat_typekey: typings.activexOffice.Office.LineFormat = js.native
   

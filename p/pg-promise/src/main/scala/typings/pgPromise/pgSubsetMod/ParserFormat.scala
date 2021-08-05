@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParserFormat extends StObject
 object ParserFormat {
   
-  @scala.inline
-  def binary: typings.pgPromise.pgPromiseStrings.binary = "binary".asInstanceOf[typings.pgPromise.pgPromiseStrings.binary]
+  inline def binary: typings.pgPromise.pgPromiseStrings.binary = "binary".asInstanceOf[typings.pgPromise.pgPromiseStrings.binary]
   
-  @scala.inline
-  def text: typings.pgPromise.pgPromiseStrings.text = "text".asInstanceOf[typings.pgPromise.pgPromiseStrings.text]
+  inline def text: typings.pgPromise.pgPromiseStrings.text = "text".asInstanceOf[typings.pgPromise.pgPromiseStrings.text]
 }

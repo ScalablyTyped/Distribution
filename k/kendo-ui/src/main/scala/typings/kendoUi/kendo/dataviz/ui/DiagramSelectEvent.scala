@@ -14,25 +14,19 @@ trait DiagramSelectEvent
 }
 object DiagramSelectEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramSelectEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramSelectEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramSelectEvent]
   }
   
-  @scala.inline
-  implicit class DiagramSelectEventMutableBuilder[Self <: DiagramSelectEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramSelectEvent](x: Self) {
     
-    @scala.inline
-    def setDeselected(value: js.Any): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
+    inline def setDeselected(value: js.Any): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeselectedUndefined: Self = StObject.set(x, "deselected", js.undefined)
+    inline def setDeselectedUndefined: Self = StObject.set(x, "deselected", js.undefined)
     
-    @scala.inline
-    def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait IpCity extends StObject {
 }
 object IpCity {
   
-  @scala.inline
-  def apply(): IpCity = {
+  inline def apply(): IpCity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpCity]
   }
   
-  @scala.inline
-  implicit class IpCityMutableBuilder[Self <: IpCity] (val x: Self) extends AnyVal {
+  extension [Self <: IpCity](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

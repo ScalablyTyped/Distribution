@@ -28,8 +28,7 @@ trait Fulfilled extends StObject {
 }
 object Fulfilled {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Fulfilled: FulfilledProps[js.Any] => Element,
     Initial: InitialProps[js.Any] => Element,
     Loading: PendingProps[js.Any] => Element,
@@ -42,28 +41,20 @@ object Fulfilled {
     __obj.asInstanceOf[Fulfilled]
   }
   
-  @scala.inline
-  implicit class FulfilledMutableBuilder[Self <: Fulfilled] (val x: Self) extends AnyVal {
+  extension [Self <: Fulfilled](x: Self) {
     
-    @scala.inline
-    def setFulfilled(value: FulfilledProps[js.Any] => Element): Self = StObject.set(x, "Fulfilled", js.Any.fromFunction1(value))
+    inline def setFulfilled(value: FulfilledProps[js.Any] => Element): Self = StObject.set(x, "Fulfilled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitial(value: InitialProps[js.Any] => Element): Self = StObject.set(x, "Initial", js.Any.fromFunction1(value))
+    inline def setInitial(value: InitialProps[js.Any] => Element): Self = StObject.set(x, "Initial", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoading(value: PendingProps[js.Any] => Element): Self = StObject.set(x, "Loading", js.Any.fromFunction1(value))
+    inline def setLoading(value: PendingProps[js.Any] => Element): Self = StObject.set(x, "Loading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPending(value: PendingProps[js.Any] => Element): Self = StObject.set(x, "Pending", js.Any.fromFunction1(value))
+    inline def setPending(value: PendingProps[js.Any] => Element): Self = StObject.set(x, "Pending", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRejected(value: RejectedProps[js.Any] => Element): Self = StObject.set(x, "Rejected", js.Any.fromFunction1(value))
+    inline def setRejected(value: RejectedProps[js.Any] => Element): Self = StObject.set(x, "Rejected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolved(value: FulfilledProps[js.Any] => Element): Self = StObject.set(x, "Resolved", js.Any.fromFunction1(value))
+    inline def setResolved(value: FulfilledProps[js.Any] => Element): Self = StObject.set(x, "Resolved", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSettled(value: SettledProps[js.Any] => Element): Self = StObject.set(x, "Settled", js.Any.fromFunction1(value))
+    inline def setSettled(value: SettledProps[js.Any] => Element): Self = StObject.set(x, "Settled", js.Any.fromFunction1(value))
   }
 }

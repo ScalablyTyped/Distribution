@@ -9,8 +9,7 @@ trait IGroupedListStyles
      with typings.officeUiFabricReact.groupedListTypesMod.IGroupedListStyles
 object IGroupedListStyles {
   
-  @scala.inline
-  def apply(): IGroupedListStyles = {
+  inline def apply(): IGroupedListStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGroupedListStyles]
   }

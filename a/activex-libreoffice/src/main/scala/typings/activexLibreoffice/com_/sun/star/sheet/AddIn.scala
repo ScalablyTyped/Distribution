@@ -60,8 +60,7 @@ trait AddIn
      with XCompatibilityNames
 object AddIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locale: Locale,
     ServiceName: String,
     acquire: () => Unit,

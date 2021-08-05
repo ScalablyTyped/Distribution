@@ -10,16 +10,13 @@ trait LineHandle extends StObject {
 }
 object LineHandle {
   
-  @scala.inline
-  def apply(text: String): LineHandle = {
+  inline def apply(text: String): LineHandle = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineHandle]
   }
   
-  @scala.inline
-  implicit class LineHandleMutableBuilder[Self <: LineHandle] (val x: Self) extends AnyVal {
+  extension [Self <: LineHandle](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

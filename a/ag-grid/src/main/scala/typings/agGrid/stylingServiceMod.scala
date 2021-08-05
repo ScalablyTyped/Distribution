@@ -13,7 +13,7 @@ object stylingServiceMod {
   @js.native
   class StylingService () extends StObject {
     
-    var expressionService: js.Any = js.native
+    /* private */ var expressionService: js.Any = js.native
     
     def processAllCellClasses(colDef: ColDef, params: js.Any, onApplicableClass: js.Function1[/* className */ String, Unit]): Unit = js.native
     def processAllCellClasses(

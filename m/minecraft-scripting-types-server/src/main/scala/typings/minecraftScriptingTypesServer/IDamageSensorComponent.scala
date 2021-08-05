@@ -28,25 +28,19 @@ trait IDamageSensorComponent extends StObject {
 }
 object IDamageSensorComponent {
   
-  @scala.inline
-  def apply(cause: String, deals_damage: Boolean, on_damage: js.Array[MinecraftTrigger]): IDamageSensorComponent = {
+  inline def apply(cause: String, deals_damage: Boolean, on_damage: js.Array[MinecraftTrigger]): IDamageSensorComponent = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], deals_damage = deals_damage.asInstanceOf[js.Any], on_damage = on_damage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDamageSensorComponent]
   }
   
-  @scala.inline
-  implicit class IDamageSensorComponentMutableBuilder[Self <: IDamageSensorComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IDamageSensorComponent](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeals_damage(value: Boolean): Self = StObject.set(x, "deals_damage", value.asInstanceOf[js.Any])
+    inline def setDeals_damage(value: Boolean): Self = StObject.set(x, "deals_damage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_damage(value: js.Array[MinecraftTrigger]): Self = StObject.set(x, "on_damage", value.asInstanceOf[js.Any])
+    inline def setOn_damage(value: js.Array[MinecraftTrigger]): Self = StObject.set(x, "on_damage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_damageVarargs(value: MinecraftTrigger*): Self = StObject.set(x, "on_damage", js.Array(value :_*))
+    inline def setOn_damageVarargs(value: MinecraftTrigger*): Self = StObject.set(x, "on_damage", js.Array(value :_*))
   }
 }

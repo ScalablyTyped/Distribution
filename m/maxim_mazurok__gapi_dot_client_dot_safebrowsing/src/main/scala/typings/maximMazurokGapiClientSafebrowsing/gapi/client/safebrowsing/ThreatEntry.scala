@@ -17,31 +17,23 @@ trait ThreatEntry extends StObject {
 }
 object ThreatEntry {
   
-  @scala.inline
-  def apply(): ThreatEntry = {
+  inline def apply(): ThreatEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatEntry]
   }
   
-  @scala.inline
-  implicit class ThreatEntryMutableBuilder[Self <: ThreatEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatEntry](x: Self) {
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

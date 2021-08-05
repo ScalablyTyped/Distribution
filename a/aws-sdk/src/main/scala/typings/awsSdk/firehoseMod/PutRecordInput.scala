@@ -18,19 +18,15 @@ trait PutRecordInput extends StObject {
 }
 object PutRecordInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName, Record: Record): PutRecordInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName, Record: Record): PutRecordInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any], Record = Record.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordInput]
   }
   
-  @scala.inline
-  implicit class PutRecordInputMutableBuilder[Self <: PutRecordInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecordInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecord(value: Record): Self = StObject.set(x, "Record", value.asInstanceOf[js.Any])
+    inline def setRecord(value: Record): Self = StObject.set(x, "Record", value.asInstanceOf[js.Any])
   }
 }

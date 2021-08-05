@@ -44,24 +44,19 @@ object Cookie {
   val ^ : js.Any = js.native
   
   /** Check whether an object is an instance of PostmanCookie. */
-  @scala.inline
-  def isCookie(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCookie(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** Cookie header parser */
-  @scala.inline
-  def parse(str: String): CookieDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[CookieDefinition]
+  inline def parse(str: String): CookieDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[CookieDefinition]
   
   /**
     * Converts the Cookie to a single Set-Cookie header string.
     */
-  @scala.inline
-  def stringify(cookie: CookieDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(cookie.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(cookie: CookieDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(cookie.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Stringifies an Array or {@link PropertyList} of Cookies into a single string. */
-  @scala.inline
-  def unparse(cookies: js.Array[CookieDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(cookies.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unparse(cookies: js.Array[CookieDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(cookies.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Unparses a single Cookie. */
-  @scala.inline
-  def unparseSingle(cookie: CookieDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseSingle")(cookie.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unparseSingle(cookie: CookieDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseSingle")(cookie.asInstanceOf[js.Any]).asInstanceOf[String]
 }

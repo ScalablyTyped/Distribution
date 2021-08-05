@@ -42,40 +42,29 @@ trait SchemaComplianceRule extends StObject {
 }
 object SchemaComplianceRule {
   
-  @scala.inline
-  def apply(): SchemaComplianceRule = {
+  inline def apply(): SchemaComplianceRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaComplianceRule]
   }
   
-  @scala.inline
-  implicit class SchemaComplianceRuleMutableBuilder[Self <: SchemaComplianceRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaComplianceRule](x: Self) {
     
-    @scala.inline
-    def setApiLevelCondition(value: SchemaApiLevelCondition): Self = StObject.set(x, "apiLevelCondition", value.asInstanceOf[js.Any])
+    inline def setApiLevelCondition(value: SchemaApiLevelCondition): Self = StObject.set(x, "apiLevelCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiLevelConditionUndefined: Self = StObject.set(x, "apiLevelCondition", js.undefined)
+    inline def setApiLevelConditionUndefined: Self = StObject.set(x, "apiLevelCondition", js.undefined)
     
-    @scala.inline
-    def setDisableApps(value: Boolean): Self = StObject.set(x, "disableApps", value.asInstanceOf[js.Any])
+    inline def setDisableApps(value: Boolean): Self = StObject.set(x, "disableApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAppsUndefined: Self = StObject.set(x, "disableApps", js.undefined)
+    inline def setDisableAppsUndefined: Self = StObject.set(x, "disableApps", js.undefined)
     
-    @scala.inline
-    def setNonComplianceDetailCondition(value: SchemaNonComplianceDetailCondition): Self = StObject.set(x, "nonComplianceDetailCondition", value.asInstanceOf[js.Any])
+    inline def setNonComplianceDetailCondition(value: SchemaNonComplianceDetailCondition): Self = StObject.set(x, "nonComplianceDetailCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonComplianceDetailConditionUndefined: Self = StObject.set(x, "nonComplianceDetailCondition", js.undefined)
+    inline def setNonComplianceDetailConditionUndefined: Self = StObject.set(x, "nonComplianceDetailCondition", js.undefined)
     
-    @scala.inline
-    def setPackageNamesToDisable(value: js.Array[String]): Self = StObject.set(x, "packageNamesToDisable", value.asInstanceOf[js.Any])
+    inline def setPackageNamesToDisable(value: js.Array[String]): Self = StObject.set(x, "packageNamesToDisable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNamesToDisableUndefined: Self = StObject.set(x, "packageNamesToDisable", js.undefined)
+    inline def setPackageNamesToDisableUndefined: Self = StObject.set(x, "packageNamesToDisable", js.undefined)
     
-    @scala.inline
-    def setPackageNamesToDisableVarargs(value: String*): Self = StObject.set(x, "packageNamesToDisable", js.Array(value :_*))
+    inline def setPackageNamesToDisableVarargs(value: String*): Self = StObject.set(x, "packageNamesToDisable", js.Array(value :_*))
   }
 }

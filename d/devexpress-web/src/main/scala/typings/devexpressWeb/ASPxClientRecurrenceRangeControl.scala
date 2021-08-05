@@ -47,8 +47,7 @@ trait ASPxClientRecurrenceRangeControl
 }
 object ASPxClientRecurrenceRangeControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetEndDate: () => Date,
@@ -75,25 +74,18 @@ object ASPxClientRecurrenceRangeControl {
     __obj.asInstanceOf[ASPxClientRecurrenceRangeControl]
   }
   
-  @scala.inline
-  implicit class ASPxClientRecurrenceRangeControlMutableBuilder[Self <: ASPxClientRecurrenceRangeControl] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRecurrenceRangeControl](x: Self) {
     
-    @scala.inline
-    def setGetEndDate(value: () => Date): Self = StObject.set(x, "GetEndDate", js.Any.fromFunction0(value))
+    inline def setGetEndDate(value: () => Date): Self = StObject.set(x, "GetEndDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOccurrenceCount(value: () => Double): Self = StObject.set(x, "GetOccurrenceCount", js.Any.fromFunction0(value))
+    inline def setGetOccurrenceCount(value: () => Double): Self = StObject.set(x, "GetOccurrenceCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRange(value: () => ASPxClientRecurrenceRange): Self = StObject.set(x, "GetRange", js.Any.fromFunction0(value))
+    inline def setGetRange(value: () => ASPxClientRecurrenceRange): Self = StObject.set(x, "GetRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEndDate(value: Date => Unit): Self = StObject.set(x, "SetEndDate", js.Any.fromFunction1(value))
+    inline def setSetEndDate(value: Date => Unit): Self = StObject.set(x, "SetEndDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOccurrenceCount(value: Double => Unit): Self = StObject.set(x, "SetOccurrenceCount", js.Any.fromFunction1(value))
+    inline def setSetOccurrenceCount(value: Double => Unit): Self = StObject.set(x, "SetOccurrenceCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRange(value: ASPxClientRecurrenceRange => Unit): Self = StObject.set(x, "SetRange", js.Any.fromFunction1(value))
+    inline def setSetRange(value: ASPxClientRecurrenceRange => Unit): Self = StObject.set(x, "SetRange", js.Any.fromFunction1(value))
   }
 }

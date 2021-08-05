@@ -12,20 +12,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply[CK /* <: String */](): `0`[CK] = {
+    inline def apply[CK /* <: String */](): `0`[CK] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`[CK]]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[?], CK /* <: String */] (val x: Self & `0`[CK]) extends AnyVal {
+    extension [Self <: `0`[?], CK /* <: String */](x: Self & `0`[CK]) {
       
-      @scala.inline
-      def setContextKey(value: CK): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
+      inline def setContextKey(value: CK): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
+      inline def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
     }
   }
   
@@ -35,20 +31,16 @@ object anon {
   }
   object ContextKey {
     
-    @scala.inline
-    def apply(): ContextKey = {
+    inline def apply(): ContextKey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContextKey]
     }
     
-    @scala.inline
-    implicit class ContextKeyMutableBuilder[Self <: ContextKey] (val x: Self) extends AnyVal {
+    extension [Self <: ContextKey](x: Self) {
       
-      @scala.inline
-      def setContextKey(value: /* import warning: RewrittenClass.unapply cls was tparam CK */ js.Any): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
+      inline def setContextKey(value: /* import warning: RewrittenClass.unapply cls was tparam CK */ js.Any): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
+      inline def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
     }
   }
 }

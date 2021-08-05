@@ -21,8 +21,7 @@ trait XAccessibleEventListener
 }
 object XAccessibleEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notifyEvent: AccessibleEventObject => Unit,
@@ -33,10 +32,8 @@ object XAccessibleEventListener {
     __obj.asInstanceOf[XAccessibleEventListener]
   }
   
-  @scala.inline
-  implicit class XAccessibleEventListenerMutableBuilder[Self <: XAccessibleEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleEventListener](x: Self) {
     
-    @scala.inline
-    def setNotifyEvent(value: AccessibleEventObject => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
+    inline def setNotifyEvent(value: AccessibleEventObject => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
   }
 }

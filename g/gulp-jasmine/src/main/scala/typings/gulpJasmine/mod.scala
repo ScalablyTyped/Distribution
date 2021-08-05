@@ -12,10 +12,8 @@ object mod {
     * Executes Jasmine tests. Emits a 'jasmineDone' event on success.
     * @param options Optional options for the execution of the Jasmine test
     */
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(options: JasmineOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(options: JasmineOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-jasmine", JSImport.Namespace)
   @js.native
@@ -58,53 +56,38 @@ object mod {
   }
   object JasmineOptions {
     
-    @scala.inline
-    def apply(): JasmineOptions = {
+    inline def apply(): JasmineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JasmineOptions]
     }
     
-    @scala.inline
-    implicit class JasmineOptionsMutableBuilder[Self <: JasmineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JasmineOptions](x: Self) {
       
-      @scala.inline
-      def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setErrorOnFail(value: Boolean): Self = StObject.set(x, "errorOnFail", value.asInstanceOf[js.Any])
+      inline def setErrorOnFail(value: Boolean): Self = StObject.set(x, "errorOnFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOnFailUndefined: Self = StObject.set(x, "errorOnFail", js.undefined)
+      inline def setErrorOnFailUndefined: Self = StObject.set(x, "errorOnFail", js.undefined)
       
-      @scala.inline
-      def setIncludeStackTrace(value: Boolean): Self = StObject.set(x, "includeStackTrace", value.asInstanceOf[js.Any])
+      inline def setIncludeStackTrace(value: Boolean): Self = StObject.set(x, "includeStackTrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeStackTraceUndefined: Self = StObject.set(x, "includeStackTrace", js.undefined)
+      inline def setIncludeStackTraceUndefined: Self = StObject.set(x, "includeStackTrace", js.undefined)
       
-      @scala.inline
-      def setReporter(value: CustomReporter | js.Array[CustomReporter]): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: CustomReporter | js.Array[CustomReporter]): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setReporterVarargs(value: CustomReporter*): Self = StObject.set(x, "reporter", js.Array(value :_*))
+      inline def setReporterVarargs(value: CustomReporter*): Self = StObject.set(x, "reporter", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

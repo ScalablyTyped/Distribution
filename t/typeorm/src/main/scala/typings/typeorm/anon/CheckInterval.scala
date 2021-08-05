@@ -44,55 +44,39 @@ trait CheckInterval extends StObject {
 }
 object CheckInterval {
   
-  @scala.inline
-  def apply(): CheckInterval = {
+  inline def apply(): CheckInterval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckInterval]
   }
   
-  @scala.inline
-  implicit class CheckIntervalMutableBuilder[Self <: CheckInterval] (val x: Self) extends AnyVal {
+  extension [Self <: CheckInterval](x: Self) {
     
-    @scala.inline
-    def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
+    inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
+    inline def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
-    @scala.inline
-    def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+    inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+    inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMaxWaitingRequests(value: Double): Self = StObject.set(x, "maxWaitingRequests", value.asInstanceOf[js.Any])
+    inline def setMaxWaitingRequests(value: Double): Self = StObject.set(x, "maxWaitingRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWaitingRequestsUndefined: Self = StObject.set(x, "maxWaitingRequests", js.undefined)
+    inline def setMaxWaitingRequestsUndefined: Self = StObject.set(x, "maxWaitingRequests", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setPoolErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
+    inline def setPoolErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)
+    inline def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)
     
-    @scala.inline
-    def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+    inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+    inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
   }
 }

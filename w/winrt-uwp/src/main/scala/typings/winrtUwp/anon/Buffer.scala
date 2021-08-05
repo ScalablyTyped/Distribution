@@ -12,22 +12,17 @@ trait Buffer extends StObject {
 }
 object Buffer {
   
-  @scala.inline
-  def apply(buffer: js.Array[Double], bytesWritten: Double): Buffer = {
+  inline def apply(buffer: js.Array[Double], bytesWritten: Double): Buffer = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buffer]
   }
   
-  @scala.inline
-  implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+  extension [Self <: Buffer](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: js.Array[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: js.Array[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value :_*))
+    inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value :_*))
     
-    @scala.inline
-    def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
   }
 }

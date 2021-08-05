@@ -13,22 +13,17 @@ trait ZendeskMetadata extends StObject {
 }
 object ZendeskMetadata {
   
-  @scala.inline
-  def apply(): ZendeskMetadata = {
+  inline def apply(): ZendeskMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZendeskMetadata]
   }
   
-  @scala.inline
-  implicit class ZendeskMetadataMutableBuilder[Self <: ZendeskMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ZendeskMetadata](x: Self) {
     
-    @scala.inline
-    def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
+    inline def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOAuthScopesUndefined: Self = StObject.set(x, "oAuthScopes", js.undefined)
+    inline def setOAuthScopesUndefined: Self = StObject.set(x, "oAuthScopes", js.undefined)
     
-    @scala.inline
-    def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value :_*))
+    inline def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value :_*))
   }
 }

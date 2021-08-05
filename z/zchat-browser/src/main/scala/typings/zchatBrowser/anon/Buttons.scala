@@ -20,26 +20,20 @@ trait Buttons
 }
 object Buttons {
   
-  @scala.inline
-  def apply(buttons: js.Array[Button], panel: Panel): Buttons = {
+  inline def apply(buttons: js.Array[Button], panel: Panel): Buttons = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PANEL_TEMPLATE")
     __obj.asInstanceOf[Buttons]
   }
   
-  @scala.inline
-  implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
+  extension [Self <: Buttons](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[Button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[Button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setPanel(value: Panel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: Panel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PANEL_TEMPLATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PANEL_TEMPLATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

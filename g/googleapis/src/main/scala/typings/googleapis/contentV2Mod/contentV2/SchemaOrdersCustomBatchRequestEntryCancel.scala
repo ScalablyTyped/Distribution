@@ -18,25 +18,19 @@ trait SchemaOrdersCustomBatchRequestEntryCancel extends StObject {
 }
 object SchemaOrdersCustomBatchRequestEntryCancel {
   
-  @scala.inline
-  def apply(): SchemaOrdersCustomBatchRequestEntryCancel = {
+  inline def apply(): SchemaOrdersCustomBatchRequestEntryCancel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersCustomBatchRequestEntryCancel]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersCustomBatchRequestEntryCancelMutableBuilder[Self <: SchemaOrdersCustomBatchRequestEntryCancel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersCustomBatchRequestEntryCancel](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
+    inline def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
+    inline def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

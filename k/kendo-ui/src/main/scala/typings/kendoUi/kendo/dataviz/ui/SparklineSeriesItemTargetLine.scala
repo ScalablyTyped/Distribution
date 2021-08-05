@@ -10,19 +10,15 @@ trait SparklineSeriesItemTargetLine extends StObject {
 }
 object SparklineSeriesItemTargetLine {
   
-  @scala.inline
-  def apply(): SparklineSeriesItemTargetLine = {
+  inline def apply(): SparklineSeriesItemTargetLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineSeriesItemTargetLine]
   }
   
-  @scala.inline
-  implicit class SparklineSeriesItemTargetLineMutableBuilder[Self <: SparklineSeriesItemTargetLine] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineSeriesItemTargetLine](x: Self) {
     
-    @scala.inline
-    def setWidth(value: js.Any | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: js.Any | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -162,169 +162,115 @@ trait GoogleCloudMlV1TrainingInput extends StObject {
 }
 object GoogleCloudMlV1TrainingInput {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1TrainingInput = {
+  inline def apply(): GoogleCloudMlV1TrainingInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1TrainingInput]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1TrainingInputMutableBuilder[Self <: GoogleCloudMlV1TrainingInput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1TrainingInput](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setEncryptionConfig(value: GoogleCloudMlV1EncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: GoogleCloudMlV1EncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
     
-    @scala.inline
-    def setEvaluatorConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "evaluatorConfig", value.asInstanceOf[js.Any])
+    inline def setEvaluatorConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "evaluatorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluatorConfigUndefined: Self = StObject.set(x, "evaluatorConfig", js.undefined)
+    inline def setEvaluatorConfigUndefined: Self = StObject.set(x, "evaluatorConfig", js.undefined)
     
-    @scala.inline
-    def setEvaluatorCount(value: String): Self = StObject.set(x, "evaluatorCount", value.asInstanceOf[js.Any])
+    inline def setEvaluatorCount(value: String): Self = StObject.set(x, "evaluatorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluatorCountUndefined: Self = StObject.set(x, "evaluatorCount", js.undefined)
+    inline def setEvaluatorCountUndefined: Self = StObject.set(x, "evaluatorCount", js.undefined)
     
-    @scala.inline
-    def setEvaluatorType(value: String): Self = StObject.set(x, "evaluatorType", value.asInstanceOf[js.Any])
+    inline def setEvaluatorType(value: String): Self = StObject.set(x, "evaluatorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluatorTypeUndefined: Self = StObject.set(x, "evaluatorType", js.undefined)
+    inline def setEvaluatorTypeUndefined: Self = StObject.set(x, "evaluatorType", js.undefined)
     
-    @scala.inline
-    def setHyperparameters(value: GoogleCloudMlV1HyperparameterSpec): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
+    inline def setHyperparameters(value: GoogleCloudMlV1HyperparameterSpec): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperparametersUndefined: Self = StObject.set(x, "hyperparameters", js.undefined)
+    inline def setHyperparametersUndefined: Self = StObject.set(x, "hyperparameters", js.undefined)
     
-    @scala.inline
-    def setJobDir(value: String): Self = StObject.set(x, "jobDir", value.asInstanceOf[js.Any])
+    inline def setJobDir(value: String): Self = StObject.set(x, "jobDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobDirUndefined: Self = StObject.set(x, "jobDir", js.undefined)
+    inline def setJobDirUndefined: Self = StObject.set(x, "jobDir", js.undefined)
     
-    @scala.inline
-    def setMasterConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "masterConfig", value.asInstanceOf[js.Any])
+    inline def setMasterConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "masterConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterConfigUndefined: Self = StObject.set(x, "masterConfig", js.undefined)
+    inline def setMasterConfigUndefined: Self = StObject.set(x, "masterConfig", js.undefined)
     
-    @scala.inline
-    def setMasterType(value: String): Self = StObject.set(x, "masterType", value.asInstanceOf[js.Any])
+    inline def setMasterType(value: String): Self = StObject.set(x, "masterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTypeUndefined: Self = StObject.set(x, "masterType", js.undefined)
+    inline def setMasterTypeUndefined: Self = StObject.set(x, "masterType", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setPackageUris(value: js.Array[String]): Self = StObject.set(x, "packageUris", value.asInstanceOf[js.Any])
+    inline def setPackageUris(value: js.Array[String]): Self = StObject.set(x, "packageUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageUrisUndefined: Self = StObject.set(x, "packageUris", js.undefined)
+    inline def setPackageUrisUndefined: Self = StObject.set(x, "packageUris", js.undefined)
     
-    @scala.inline
-    def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value :_*))
+    inline def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterServerConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "parameterServerConfig", value.asInstanceOf[js.Any])
+    inline def setParameterServerConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "parameterServerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterServerConfigUndefined: Self = StObject.set(x, "parameterServerConfig", js.undefined)
+    inline def setParameterServerConfigUndefined: Self = StObject.set(x, "parameterServerConfig", js.undefined)
     
-    @scala.inline
-    def setParameterServerCount(value: String): Self = StObject.set(x, "parameterServerCount", value.asInstanceOf[js.Any])
+    inline def setParameterServerCount(value: String): Self = StObject.set(x, "parameterServerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterServerCountUndefined: Self = StObject.set(x, "parameterServerCount", js.undefined)
+    inline def setParameterServerCountUndefined: Self = StObject.set(x, "parameterServerCount", js.undefined)
     
-    @scala.inline
-    def setParameterServerType(value: String): Self = StObject.set(x, "parameterServerType", value.asInstanceOf[js.Any])
+    inline def setParameterServerType(value: String): Self = StObject.set(x, "parameterServerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterServerTypeUndefined: Self = StObject.set(x, "parameterServerType", js.undefined)
+    inline def setParameterServerTypeUndefined: Self = StObject.set(x, "parameterServerType", js.undefined)
     
-    @scala.inline
-    def setPythonModule(value: String): Self = StObject.set(x, "pythonModule", value.asInstanceOf[js.Any])
+    inline def setPythonModule(value: String): Self = StObject.set(x, "pythonModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPythonModuleUndefined: Self = StObject.set(x, "pythonModule", js.undefined)
+    inline def setPythonModuleUndefined: Self = StObject.set(x, "pythonModule", js.undefined)
     
-    @scala.inline
-    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
+    inline def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
+    inline def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
+    inline def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
+    inline def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
     
-    @scala.inline
-    def setScaleTier(value: String): Self = StObject.set(x, "scaleTier", value.asInstanceOf[js.Any])
+    inline def setScaleTier(value: String): Self = StObject.set(x, "scaleTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleTierUndefined: Self = StObject.set(x, "scaleTier", js.undefined)
+    inline def setScaleTierUndefined: Self = StObject.set(x, "scaleTier", js.undefined)
     
-    @scala.inline
-    def setScheduling(value: GoogleCloudMlV1Scheduling): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
+    inline def setScheduling(value: GoogleCloudMlV1Scheduling): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
+    inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setUseChiefInTfConfig(value: Boolean): Self = StObject.set(x, "useChiefInTfConfig", value.asInstanceOf[js.Any])
+    inline def setUseChiefInTfConfig(value: Boolean): Self = StObject.set(x, "useChiefInTfConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseChiefInTfConfigUndefined: Self = StObject.set(x, "useChiefInTfConfig", js.undefined)
+    inline def setUseChiefInTfConfigUndefined: Self = StObject.set(x, "useChiefInTfConfig", js.undefined)
     
-    @scala.inline
-    def setWorkerConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
+    inline def setWorkerConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
+    inline def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
     
-    @scala.inline
-    def setWorkerCount(value: String): Self = StObject.set(x, "workerCount", value.asInstanceOf[js.Any])
+    inline def setWorkerCount(value: String): Self = StObject.set(x, "workerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerCountUndefined: Self = StObject.set(x, "workerCount", js.undefined)
+    inline def setWorkerCountUndefined: Self = StObject.set(x, "workerCount", js.undefined)
     
-    @scala.inline
-    def setWorkerType(value: String): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
+    inline def setWorkerType(value: String): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
+    inline def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
   }
 }

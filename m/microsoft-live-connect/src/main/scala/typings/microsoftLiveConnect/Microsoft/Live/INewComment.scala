@@ -17,16 +17,13 @@ trait INewComment extends StObject {
 }
 object INewComment {
   
-  @scala.inline
-  def apply(message: String): INewComment = {
+  inline def apply(message: String): INewComment = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewComment]
   }
   
-  @scala.inline
-  implicit class INewCommentMutableBuilder[Self <: INewComment] (val x: Self) extends AnyVal {
+  extension [Self <: INewComment](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

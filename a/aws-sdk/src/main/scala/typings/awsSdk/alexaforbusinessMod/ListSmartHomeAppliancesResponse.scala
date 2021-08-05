@@ -18,28 +18,21 @@ trait ListSmartHomeAppliancesResponse extends StObject {
 }
 object ListSmartHomeAppliancesResponse {
   
-  @scala.inline
-  def apply(): ListSmartHomeAppliancesResponse = {
+  inline def apply(): ListSmartHomeAppliancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSmartHomeAppliancesResponse]
   }
   
-  @scala.inline
-  implicit class ListSmartHomeAppliancesResponseMutableBuilder[Self <: ListSmartHomeAppliancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSmartHomeAppliancesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSmartHomeAppliances(value: SmartHomeApplianceList): Self = StObject.set(x, "SmartHomeAppliances", value.asInstanceOf[js.Any])
+    inline def setSmartHomeAppliances(value: SmartHomeApplianceList): Self = StObject.set(x, "SmartHomeAppliances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartHomeAppliancesUndefined: Self = StObject.set(x, "SmartHomeAppliances", js.undefined)
+    inline def setSmartHomeAppliancesUndefined: Self = StObject.set(x, "SmartHomeAppliances", js.undefined)
     
-    @scala.inline
-    def setSmartHomeAppliancesVarargs(value: SmartHomeAppliance*): Self = StObject.set(x, "SmartHomeAppliances", js.Array(value :_*))
+    inline def setSmartHomeAppliancesVarargs(value: SmartHomeAppliance*): Self = StObject.set(x, "SmartHomeAppliances", js.Array(value :_*))
   }
 }

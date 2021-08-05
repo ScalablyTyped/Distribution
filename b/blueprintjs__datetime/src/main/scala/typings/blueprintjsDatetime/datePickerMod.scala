@@ -21,48 +21,48 @@ object datePickerMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDatePicker(prevProps: IDatePickerProps, prevState: IDatePickerState): Unit = js.native
     
-    var computeValidDateInSpecifiedMonthYear: js.Any = js.native
+    /* private */ var computeValidDateInSpecifiedMonthYear: js.Any = js.native
     
-    var disabledDays: js.Any = js.native
+    /* private */ var disabledDays: js.Any = js.native
     
-    var getDatePickerModifiers: js.Any = js.native
+    /* private */ var getDatePickerModifiers: js.Any = js.native
     
-    var getDisabledDaysModifier: js.Any = js.native
+    /* private */ var getDisabledDaysModifier: js.Any = js.native
     
-    var handleClearClick: js.Any = js.native
+    /* private */ var handleClearClick: js.Any = js.native
     
-    var handleDayClick: js.Any = js.native
+    /* private */ var handleDayClick: js.Any = js.native
     
-    var handleMonthChange: js.Any = js.native
+    /* private */ var handleMonthChange: js.Any = js.native
     
-    var handleShortcutClick: js.Any = js.native
+    /* private */ var handleShortcutClick: js.Any = js.native
     
-    var handleTimeChange: js.Any = js.native
+    /* private */ var handleTimeChange: js.Any = js.native
     
-    var handleTodayClick: js.Any = js.native
+    /* private */ var handleTodayClick: js.Any = js.native
     
-    var ignoreNextMonthChange: js.Any = js.native
+    /* private */ var ignoreNextMonthChange: js.Any = js.native
     
-    var maybeRenderShortcuts: js.Any = js.native
+    /* private */ var maybeRenderShortcuts: js.Any = js.native
     
-    var maybeRenderTimePicker: js.Any = js.native
+    /* private */ var maybeRenderTimePicker: js.Any = js.native
     
-    var renderCaption: js.Any = js.native
+    /* private */ var renderCaption: js.Any = js.native
     
-    var renderDay: js.Any = js.native
+    /* private */ var renderDay: js.Any = js.native
     
-    var renderNavbar: js.Any = js.native
+    /* private */ var renderNavbar: js.Any = js.native
     
-    var renderOptionsBar: js.Any = js.native
+    /* private */ var renderOptionsBar: js.Any = js.native
     
-    var shouldHighlightCurrentDay: js.Any = js.native
+    /* private */ var shouldHighlightCurrentDay: js.Any = js.native
     
-    var updateDay: js.Any = js.native
+    /* private */ var updateDay: js.Any = js.native
     
     /**
       * Update `value` by invoking `onChange` (always) and setting state (if uncontrolled).
       */
-    var updateValue: js.Any = js.native
+    /* private */ var updateValue: js.Any = js.native
   }
   /* static members */
   object DatePicker {
@@ -74,14 +74,12 @@ object datePickerMod {
     @JSImport("@blueprintjs/datetime/lib/esm/datePicker", "DatePicker.defaultProps")
     @js.native
     def defaultProps: IDatePickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/datePicker", "DatePicker.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IDatePickerProps
@@ -154,80 +152,56 @@ object datePickerMod {
   }
   object IDatePickerProps {
     
-    @scala.inline
-    def apply(): IDatePickerProps = {
+    inline def apply(): IDatePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDatePickerProps]
     }
     
-    @scala.inline
-    implicit class IDatePickerPropsMutableBuilder[Self <: IDatePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerProps](x: Self) {
       
-      @scala.inline
-      def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
+      inline def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanClearSelectionUndefined: Self = StObject.set(x, "canClearSelection", js.undefined)
+      inline def setCanClearSelectionUndefined: Self = StObject.set(x, "canClearSelection", js.undefined)
       
-      @scala.inline
-      def setClearButtonText(value: String): Self = StObject.set(x, "clearButtonText", value.asInstanceOf[js.Any])
+      inline def setClearButtonText(value: String): Self = StObject.set(x, "clearButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearButtonTextUndefined: Self = StObject.set(x, "clearButtonText", js.undefined)
+      inline def setClearButtonTextUndefined: Self = StObject.set(x, "clearButtonText", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnShortcutChange(value: (/* shortcut */ IDatePickerShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutChange", js.Any.fromFunction2(value))
+      inline def setOnShortcutChange(value: (/* shortcut */ IDatePickerShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnShortcutChangeUndefined: Self = StObject.set(x, "onShortcutChange", js.undefined)
+      inline def setOnShortcutChangeUndefined: Self = StObject.set(x, "onShortcutChange", js.undefined)
       
-      @scala.inline
-      def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
+      inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      @scala.inline
-      def setShortcuts(value: Boolean | js.Array[IDatePickerShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: Boolean | js.Array[IDatePickerShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
+      inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       
-      @scala.inline
-      def setShortcutsVarargs(value: IDatePickerShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+      inline def setShortcutsVarargs(value: IDatePickerShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
       
-      @scala.inline
-      def setShowActionsBar(value: Boolean): Self = StObject.set(x, "showActionsBar", value.asInstanceOf[js.Any])
+      inline def setShowActionsBar(value: Boolean): Self = StObject.set(x, "showActionsBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowActionsBarUndefined: Self = StObject.set(x, "showActionsBar", js.undefined)
+      inline def setShowActionsBarUndefined: Self = StObject.set(x, "showActionsBar", js.undefined)
       
-      @scala.inline
-      def setTodayButtonText(value: String): Self = StObject.set(x, "todayButtonText", value.asInstanceOf[js.Any])
+      inline def setTodayButtonText(value: String): Self = StObject.set(x, "todayButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayButtonTextUndefined: Self = StObject.set(x, "todayButtonText", js.undefined)
+      inline def setTodayButtonTextUndefined: Self = StObject.set(x, "todayButtonText", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -245,38 +219,28 @@ object datePickerMod {
   }
   object IDatePickerState {
     
-    @scala.inline
-    def apply(displayMonth: Double, displayYear: Double): IDatePickerState = {
+    inline def apply(displayMonth: Double, displayYear: Double): IDatePickerState = {
       val __obj = js.Dynamic.literal(displayMonth = displayMonth.asInstanceOf[js.Any], displayYear = displayYear.asInstanceOf[js.Any], selectedDay = null, value = null)
       __obj.asInstanceOf[IDatePickerState]
     }
     
-    @scala.inline
-    implicit class IDatePickerStateMutableBuilder[Self <: IDatePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerState](x: Self) {
       
-      @scala.inline
-      def setDisplayMonth(value: Double): Self = StObject.set(x, "displayMonth", value.asInstanceOf[js.Any])
+      inline def setDisplayMonth(value: Double): Self = StObject.set(x, "displayMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayYear(value: Double): Self = StObject.set(x, "displayYear", value.asInstanceOf[js.Any])
+      inline def setDisplayYear(value: Double): Self = StObject.set(x, "displayYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDay(value: Double): Self = StObject.set(x, "selectedDay", value.asInstanceOf[js.Any])
+      inline def setSelectedDay(value: Double): Self = StObject.set(x, "selectedDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDayNull: Self = StObject.set(x, "selectedDay", null)
+      inline def setSelectedDayNull: Self = StObject.set(x, "selectedDay", null)
       
-      @scala.inline
-      def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
+      inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
 }

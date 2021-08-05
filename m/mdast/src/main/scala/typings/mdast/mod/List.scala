@@ -24,41 +24,30 @@ trait List
 }
 object List {
   
-  @scala.inline
-  def apply(children: js.Array[ListContent]): List = {
+  inline def apply(children: js.Array[ListContent]): List = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("list")
     __obj.asInstanceOf[List]
   }
   
-  @scala.inline
-  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+  extension [Self <: List](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[ListContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ListContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: ListContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ListContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+    inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
+    inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
     
-    @scala.inline
-    def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+    inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
+    inline def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

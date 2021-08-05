@@ -16,7 +16,7 @@ object onlineMonitorMod {
       */
     def currentlyOnline(): Boolean = js.native
     
-    var online_ : js.Any = js.native
+    /* private */ var online_ : js.Any = js.native
   }
   /* static members */
   object OnlineMonitor {
@@ -25,7 +25,6 @@ object onlineMonitorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getInstance(): OnlineMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[OnlineMonitor]
+    inline def getInstance(): OnlineMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[OnlineMonitor]
   }
 }

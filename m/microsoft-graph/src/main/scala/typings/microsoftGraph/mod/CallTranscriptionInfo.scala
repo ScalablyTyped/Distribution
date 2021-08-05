@@ -14,28 +14,21 @@ trait CallTranscriptionInfo extends StObject {
 }
 object CallTranscriptionInfo {
   
-  @scala.inline
-  def apply(): CallTranscriptionInfo = {
+  inline def apply(): CallTranscriptionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallTranscriptionInfo]
   }
   
-  @scala.inline
-  implicit class CallTranscriptionInfoMutableBuilder[Self <: CallTranscriptionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CallTranscriptionInfo](x: Self) {
     
-    @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setState(value: CallTranscriptionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CallTranscriptionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -29,36 +29,36 @@ object loadBalancerPickFirstMod {
       */
     def this(channelControlHelper: ChannelControlHelper) = this()
     
-    val channelControlHelper: js.Any = js.native
+    /* private */ val channelControlHelper: js.Any = js.native
     
     /**
       * Start connecting to the address list most recently passed to
       * `updateAddressList`.
       */
-    var connectToAddressList: js.Any = js.native
+    /* private */ var connectToAddressList: js.Any = js.native
     
     /**
       * Timer reference for the timer tracking when to start
       */
-    var connectionDelayTimeout: js.Any = js.native
+    /* private */ var connectionDelayTimeout: js.Any = js.native
     
     /**
       * The currently picked subchannel used for making calls. Populated if
       * and only if the load balancer's current state is READY. In that case,
       * the subchannel's current state is also READY.
       */
-    var currentPick: js.Any = js.native
+    /* private */ var currentPick: js.Any = js.native
     
     /**
       * The current connectivity state of the load balancer.
       */
-    var currentState: js.Any = js.native
+    /* private */ var currentState: js.Any = js.native
     
     /**
       * The index within the `subchannels` array of the subchannel with the most
       * recently started connection attempt.
       */
-    var currentSubchannelIndex: js.Any = js.native
+    /* private */ var currentSubchannelIndex: js.Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -84,14 +84,14 @@ object loadBalancerPickFirstMod {
     /**
       * The list of backend addresses most recently passed to `updateAddressList`.
       */
-    var latestAddressList: js.Any = js.native
+    /* private */ var latestAddressList: js.Any = js.native
     
-    var pickSubchannel: js.Any = js.native
+    /* private */ var pickSubchannel: js.Any = js.native
     
     /**
       * Listener callback attached to the current picked subchannel.
       */
-    var pickedSubchannelStateListener: js.Any = js.native
+    /* private */ var pickedSubchannelStateListener: js.Any = js.native
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
@@ -101,31 +101,31 @@ object loadBalancerPickFirstMod {
     /* CompleteClass */
     override def resetBackoff(): Unit = js.native
     
-    var resetSubchannelList: js.Any = js.native
+    /* private */ var resetSubchannelList: js.Any = js.native
     
     /**
       * Have a single subchannel in the `subchannels` list start connecting.
       * @param subchannelIndex The index into the `subchannels` list.
       */
-    var startConnecting: js.Any = js.native
+    /* private */ var startConnecting: js.Any = js.native
     
-    var startNextSubchannelConnecting: js.Any = js.native
+    /* private */ var startNextSubchannelConnecting: js.Any = js.native
     
-    var subchannelStateCounts: js.Any = js.native
+    /* private */ var subchannelStateCounts: js.Any = js.native
     
     /**
       * Listener callback attached to each subchannel in the `subchannels` list
       * while establishing a connection.
       */
-    var subchannelStateListener: js.Any = js.native
+    /* private */ var subchannelStateListener: js.Any = js.native
     
     /**
       * The list of subchannels this load balancer is currently attempting to
       * connect to.
       */
-    var subchannels: js.Any = js.native
+    /* private */ var subchannels: js.Any = js.native
     
-    var triedAllSubchannels: js.Any = js.native
+    /* private */ var triedAllSubchannels: js.Any = js.native
     
     def updateAddressList(addressList: js.Array[SubchannelAddress], lbConfig: LoadBalancingConfig): Unit = js.native
     /**
@@ -144,9 +144,8 @@ object loadBalancerPickFirstMod {
       attributes: StringDictionary[js.Any]
     ): Unit = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
   }
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
 }

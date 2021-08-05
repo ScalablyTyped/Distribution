@@ -16,31 +16,23 @@ trait RTCOfferOptions
 }
 object RTCOfferOptions {
   
-  @scala.inline
-  def apply(): RTCOfferOptions = {
+  inline def apply(): RTCOfferOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCOfferOptions]
   }
   
-  @scala.inline
-  implicit class RTCOfferOptionsMutableBuilder[Self <: RTCOfferOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RTCOfferOptions](x: Self) {
     
-    @scala.inline
-    def setIceRestart(value: scala.Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
+    inline def setIceRestart(value: scala.Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIceRestartUndefined: Self = StObject.set(x, "iceRestart", js.undefined)
+    inline def setIceRestartUndefined: Self = StObject.set(x, "iceRestart", js.undefined)
     
-    @scala.inline
-    def setOfferToReceiveAudio(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveAudio", value.asInstanceOf[js.Any])
+    inline def setOfferToReceiveAudio(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferToReceiveAudioUndefined: Self = StObject.set(x, "offerToReceiveAudio", js.undefined)
+    inline def setOfferToReceiveAudioUndefined: Self = StObject.set(x, "offerToReceiveAudio", js.undefined)
     
-    @scala.inline
-    def setOfferToReceiveVideo(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveVideo", value.asInstanceOf[js.Any])
+    inline def setOfferToReceiveVideo(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferToReceiveVideoUndefined: Self = StObject.set(x, "offerToReceiveVideo", js.undefined)
+    inline def setOfferToReceiveVideoUndefined: Self = StObject.set(x, "offerToReceiveVideo", js.undefined)
   }
 }

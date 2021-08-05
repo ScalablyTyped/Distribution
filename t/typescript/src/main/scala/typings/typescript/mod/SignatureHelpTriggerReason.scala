@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SignatureHelpTriggerReason extends StObject
 object SignatureHelpTriggerReason {
   
-  @scala.inline
-  def SignatureHelpCharacterTypedReason(triggerCharacter: SignatureHelpTriggerCharacter): typings.typescript.mod.SignatureHelpCharacterTypedReason = {
+  inline def SignatureHelpCharacterTypedReason(triggerCharacter: SignatureHelpTriggerCharacter): typings.typescript.mod.SignatureHelpCharacterTypedReason = {
     val __obj = js.Dynamic.literal(kind = "characterTyped", triggerCharacter = triggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.SignatureHelpCharacterTypedReason]
   }
   
-  @scala.inline
-  def SignatureHelpInvokedReason(triggerCharacter: Unit): typings.typescript.mod.SignatureHelpInvokedReason = {
+  inline def SignatureHelpInvokedReason(triggerCharacter: Unit): typings.typescript.mod.SignatureHelpInvokedReason = {
     val __obj = js.Dynamic.literal(kind = "invoked", triggerCharacter = triggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.SignatureHelpInvokedReason]
   }
   
-  @scala.inline
-  def SignatureHelpRetriggeredReason(): typings.typescript.mod.SignatureHelpRetriggeredReason = {
+  inline def SignatureHelpRetriggeredReason(): typings.typescript.mod.SignatureHelpRetriggeredReason = {
     val __obj = js.Dynamic.literal(kind = "retrigger")
     __obj.asInstanceOf[typings.typescript.mod.SignatureHelpRetriggeredReason]
   }

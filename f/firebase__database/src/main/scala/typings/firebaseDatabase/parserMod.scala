@@ -12,9 +12,7 @@ object parserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseDatabaseURL(dataURL: String): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDatabaseURL")(dataURL.asInstanceOf[js.Any]).asInstanceOf[Domain]
+  inline def parseDatabaseURL(dataURL: String): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDatabaseURL")(dataURL.asInstanceOf[js.Any]).asInstanceOf[Domain]
   
-  @scala.inline
-  def parseRepoInfo(dataURL: String, nodeAdmin: Boolean): RepoInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRepoInfo")(dataURL.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[RepoInfo]
+  inline def parseRepoInfo(dataURL: String, nodeAdmin: Boolean): RepoInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRepoInfo")(dataURL.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[RepoInfo]
 }

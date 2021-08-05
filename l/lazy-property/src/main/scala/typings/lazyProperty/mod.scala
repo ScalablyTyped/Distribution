@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(`object`: js.Object, name: String, initializer: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(`object`: js.Object, name: String, initializer: js.Function0[js.Any], enumerable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], enumerable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(`object`: js.Object, name: String, initializer: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(`object`: js.Object, name: String, initializer: js.Function0[js.Any], enumerable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], enumerable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("lazy-property", JSImport.Namespace)
   @js.native

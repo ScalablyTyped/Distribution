@@ -39,22 +39,17 @@ trait BillingAddressParameters extends StObject {
 }
 object BillingAddressParameters {
   
-  @scala.inline
-  def apply(format: BillingAddressFormat): BillingAddressParameters = {
+  inline def apply(format: BillingAddressFormat): BillingAddressParameters = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingAddressParameters]
   }
   
-  @scala.inline
-  implicit class BillingAddressParametersMutableBuilder[Self <: BillingAddressParameters] (val x: Self) extends AnyVal {
+  extension [Self <: BillingAddressParameters](x: Self) {
     
-    @scala.inline
-    def setFormat(value: BillingAddressFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: BillingAddressFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberRequired(value: `false` | `true`): Self = StObject.set(x, "phoneNumberRequired", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberRequired(value: `false` | `true`): Self = StObject.set(x, "phoneNumberRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberRequiredUndefined: Self = StObject.set(x, "phoneNumberRequired", js.undefined)
+    inline def setPhoneNumberRequiredUndefined: Self = StObject.set(x, "phoneNumberRequired", js.undefined)
   }
 }

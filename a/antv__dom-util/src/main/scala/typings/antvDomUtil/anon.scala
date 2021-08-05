@@ -12,17 +12,14 @@ object anon {
   }
   object Remove {
     
-    @scala.inline
-    def apply(remove: () => Unit): Remove = {
+    inline def apply(remove: () => Unit): Remove = {
       val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
       __obj.asInstanceOf[Remove]
     }
     
-    @scala.inline
-    implicit class RemoveMutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
+    extension [Self <: Remove](x: Self) {
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
 }

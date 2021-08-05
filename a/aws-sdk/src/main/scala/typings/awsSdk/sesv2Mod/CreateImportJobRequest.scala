@@ -18,19 +18,15 @@ trait CreateImportJobRequest extends StObject {
 }
 object CreateImportJobRequest {
   
-  @scala.inline
-  def apply(ImportDataSource: ImportDataSource, ImportDestination: ImportDestination): CreateImportJobRequest = {
+  inline def apply(ImportDataSource: ImportDataSource, ImportDestination: ImportDestination): CreateImportJobRequest = {
     val __obj = js.Dynamic.literal(ImportDataSource = ImportDataSource.asInstanceOf[js.Any], ImportDestination = ImportDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImportJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateImportJobRequestMutableBuilder[Self <: CreateImportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateImportJobRequest](x: Self) {
     
-    @scala.inline
-    def setImportDataSource(value: ImportDataSource): Self = StObject.set(x, "ImportDataSource", value.asInstanceOf[js.Any])
+    inline def setImportDataSource(value: ImportDataSource): Self = StObject.set(x, "ImportDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportDestination(value: ImportDestination): Self = StObject.set(x, "ImportDestination", value.asInstanceOf[js.Any])
+    inline def setImportDestination(value: ImportDestination): Self = StObject.set(x, "ImportDestination", value.asInstanceOf[js.Any])
   }
 }

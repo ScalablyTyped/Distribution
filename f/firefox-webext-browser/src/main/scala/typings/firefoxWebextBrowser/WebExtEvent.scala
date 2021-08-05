@@ -14,8 +14,7 @@ trait WebExtEvent[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */
 }
 object WebExtEvent {
   
-  @scala.inline
-  def apply[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def apply[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     addListener: TCallback => Unit,
     hasListener: TCallback => Boolean,
     removeListener: TCallback => Unit
@@ -24,16 +23,12 @@ object WebExtEvent {
     __obj.asInstanceOf[WebExtEvent[TCallback]]
   }
   
-  @scala.inline
-  implicit class WebExtEventMutableBuilder[Self <: WebExtEvent[?], TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & WebExtEvent[TCallback]) extends AnyVal {
+  extension [Self <: WebExtEvent[?], TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & WebExtEvent[TCallback]) {
     
-    @scala.inline
-    def setAddListener(value: TCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+    inline def setAddListener(value: TCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+    inline def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+    inline def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
   }
 }

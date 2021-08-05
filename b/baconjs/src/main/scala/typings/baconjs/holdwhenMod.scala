@@ -13,6 +13,5 @@ object holdwhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def holdWhen[V](src: default[V], valve: Property[Boolean]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("holdWhen")(src.asInstanceOf[js.Any], valve.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def holdWhen[V](src: default[V], valve: Property[Boolean]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("holdWhen")(src.asInstanceOf[js.Any], valve.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
 }

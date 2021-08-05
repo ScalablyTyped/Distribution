@@ -18,19 +18,15 @@ trait EvaluatePullRequestApprovalRulesInput extends StObject {
 }
 object EvaluatePullRequestApprovalRulesInput {
   
-  @scala.inline
-  def apply(pullRequestId: PullRequestId, revisionId: RevisionId): EvaluatePullRequestApprovalRulesInput = {
+  inline def apply(pullRequestId: PullRequestId, revisionId: RevisionId): EvaluatePullRequestApprovalRulesInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluatePullRequestApprovalRulesInput]
   }
   
-  @scala.inline
-  implicit class EvaluatePullRequestApprovalRulesInputMutableBuilder[Self <: EvaluatePullRequestApprovalRulesInput] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluatePullRequestApprovalRulesInput](x: Self) {
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
   }
 }

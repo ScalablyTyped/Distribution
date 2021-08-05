@@ -11,6 +11,5 @@ object urlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerUpdateUrl(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerUpdateUrl")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerUpdateUrl(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerUpdateUrl")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

@@ -17,8 +17,7 @@ trait Command extends StObject {
 }
 object Command {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[ValueType],
     getKeys: () => js.Array[String | Buffer],
     getSlot: () => Double | Null,
@@ -28,22 +27,16 @@ object Command {
     __obj.asInstanceOf[Command]
   }
   
-  @scala.inline
-  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+  extension [Self <: Command](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[ValueType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[ValueType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: ValueType*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: ValueType*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setGetKeys(value: () => js.Array[String | Buffer]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+    inline def setGetKeys(value: () => js.Array[String | Buffer]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSlot(value: () => Double | Null): Self = StObject.set(x, "getSlot", js.Any.fromFunction0(value))
+    inline def setGetSlot(value: () => Double | Null): Self = StObject.set(x, "getSlot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCustomCommand(value: Boolean): Self = StObject.set(x, "isCustomCommand", value.asInstanceOf[js.Any])
+    inline def setIsCustomCommand(value: Boolean): Self = StObject.set(x, "isCustomCommand", value.asInstanceOf[js.Any])
   }
 }

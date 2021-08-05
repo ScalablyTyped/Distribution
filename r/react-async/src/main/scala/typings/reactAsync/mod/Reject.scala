@@ -22,23 +22,18 @@ trait Reject
 }
 object Reject {
   
-  @scala.inline
-  def apply(meta: Dictmeta, payload: Error): Reject = {
+  inline def apply(meta: Dictmeta, payload: Error): Reject = {
     val __obj = js.Dynamic.literal(error = true, meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reject")
     __obj.asInstanceOf[Reject]
   }
   
-  @scala.inline
-  implicit class RejectMutableBuilder[Self <: Reject] (val x: Self) extends AnyVal {
+  extension [Self <: Reject](x: Self) {
     
-    @scala.inline
-    def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Error): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Error): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: reject): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: reject): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

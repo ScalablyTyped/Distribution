@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TickLabels")
 @js.native
-class TickLabels protected ()
+/* private */ class TickLabels ()
   extends StObject
      with typings.activexExcel.Excel.TickLabels {
   
@@ -30,7 +30,7 @@ class TickLabels protected ()
   /* CompleteClass */
   override val Depth: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.TickLabels_typekey")
   var ExcelDotTickLabels_typekey: typings.activexExcel.Excel.TickLabels = js.native
   

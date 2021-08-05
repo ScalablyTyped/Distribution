@@ -9,8 +9,7 @@ trait BigIntOptions
      with typings.node.fsMod.BigIntOptions
 object BigIntOptions {
   
-  @scala.inline
-  def apply(): BigIntOptions = {
+  inline def apply(): BigIntOptions = {
     val __obj = js.Dynamic.literal(bigint = true)
     __obj.asInstanceOf[BigIntOptions]
   }

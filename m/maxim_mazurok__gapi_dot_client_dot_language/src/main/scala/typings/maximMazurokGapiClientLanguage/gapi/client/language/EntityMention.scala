@@ -20,31 +20,23 @@ trait EntityMention extends StObject {
 }
 object EntityMention {
   
-  @scala.inline
-  def apply(): EntityMention = {
+  inline def apply(): EntityMention = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityMention]
   }
   
-  @scala.inline
-  implicit class EntityMentionMutableBuilder[Self <: EntityMention] (val x: Self) extends AnyVal {
+  extension [Self <: EntityMention](x: Self) {
     
-    @scala.inline
-    def setSentiment(value: Sentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: Sentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
-    @scala.inline
-    def setText(value: TextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: TextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

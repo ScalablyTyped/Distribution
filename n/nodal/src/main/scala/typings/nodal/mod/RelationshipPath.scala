@@ -12,7 +12,7 @@ class RelationshipPath protected () extends StObject {
   
   def add(node: RelationshipNode, edge: RelationshipEdge): RelationshipPath = js.native
   
-  var constructor: js.Any = js.native
+  /* private */ var constructor: js.Any = js.native
   
   def getModel(): TypeofModel = js.native
   

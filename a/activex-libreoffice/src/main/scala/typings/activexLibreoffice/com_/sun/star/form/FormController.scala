@@ -44,8 +44,7 @@ trait FormController
      with XDatabaseParameterBroadcaster
 object FormController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Container: XControlContainer,
     Controls: SafeArray[XControl],
     CurrentControl: XControl,

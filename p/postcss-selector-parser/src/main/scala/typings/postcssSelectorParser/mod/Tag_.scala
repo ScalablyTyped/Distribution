@@ -15,8 +15,7 @@ trait Tag_
 }
 object Tag_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -42,10 +41,8 @@ object Tag_ {
     __obj.asInstanceOf[Tag_]
   }
   
-  @scala.inline
-  implicit class Tag_MutableBuilder[Self <: Tag_] (val x: Self) extends AnyVal {
+  extension [Self <: Tag_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

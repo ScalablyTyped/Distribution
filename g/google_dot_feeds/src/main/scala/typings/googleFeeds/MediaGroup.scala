@@ -10,19 +10,15 @@ trait MediaGroup extends StObject {
 }
 object MediaGroup {
   
-  @scala.inline
-  def apply(content: js.Array[MediaContent]): MediaGroup = {
+  inline def apply(content: js.Array[MediaContent]): MediaGroup = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaGroup]
   }
   
-  @scala.inline
-  implicit class MediaGroupMutableBuilder[Self <: MediaGroup] (val x: Self) extends AnyVal {
+  extension [Self <: MediaGroup](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[MediaContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[MediaContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVarargs(value: MediaContent*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: MediaContent*): Self = StObject.set(x, "content", js.Array(value :_*))
   }
 }

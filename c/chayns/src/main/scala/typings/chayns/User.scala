@@ -20,8 +20,7 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FacebookID: String,
     FirstName: String,
     LastName: String,
@@ -33,25 +32,18 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setFacebookID(value: String): Self = StObject.set(x, "FacebookID", value.asInstanceOf[js.Any])
+    inline def setFacebookID(value: String): Self = StObject.set(x, "FacebookID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonID(value: String): Self = StObject.set(x, "PersonID", value.asInstanceOf[js.Any])
+    inline def setPersonID(value: String): Self = StObject.set(x, "PersonID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFullName(value: String): Self = StObject.set(x, "UserFullName", value.asInstanceOf[js.Any])
+    inline def setUserFullName(value: String): Self = StObject.set(x, "UserFullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserID(value: Double): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
+    inline def setUserID(value: Double): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
   }
 }

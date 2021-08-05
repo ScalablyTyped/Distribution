@@ -23,31 +23,23 @@ trait AvailableProcessorFeature extends StObject {
 }
 object AvailableProcessorFeature {
   
-  @scala.inline
-  def apply(): AvailableProcessorFeature = {
+  inline def apply(): AvailableProcessorFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvailableProcessorFeature]
   }
   
-  @scala.inline
-  implicit class AvailableProcessorFeatureMutableBuilder[Self <: AvailableProcessorFeature] (val x: Self) extends AnyVal {
+  extension [Self <: AvailableProcessorFeature](x: Self) {
     
-    @scala.inline
-    def setAllowedValues(value: String): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: String): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
+    inline def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

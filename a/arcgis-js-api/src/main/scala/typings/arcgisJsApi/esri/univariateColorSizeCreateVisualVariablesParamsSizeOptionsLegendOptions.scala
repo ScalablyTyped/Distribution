@@ -19,8 +19,7 @@ trait univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions
 }
 object univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions {
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions]
   }
   
-  @scala.inline
-  implicit class univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptionsMutableBuilder[Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

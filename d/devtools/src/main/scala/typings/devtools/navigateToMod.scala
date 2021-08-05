@@ -11,6 +11,5 @@ object navigateToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasUrl: Url): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def default(hasUrl: Url): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
 }

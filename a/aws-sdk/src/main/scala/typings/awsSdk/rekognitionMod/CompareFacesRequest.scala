@@ -28,31 +28,23 @@ trait CompareFacesRequest extends StObject {
 }
 object CompareFacesRequest {
   
-  @scala.inline
-  def apply(SourceImage: Image, TargetImage: Image): CompareFacesRequest = {
+  inline def apply(SourceImage: Image, TargetImage: Image): CompareFacesRequest = {
     val __obj = js.Dynamic.literal(SourceImage = SourceImage.asInstanceOf[js.Any], TargetImage = TargetImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareFacesRequest]
   }
   
-  @scala.inline
-  implicit class CompareFacesRequestMutableBuilder[Self <: CompareFacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CompareFacesRequest](x: Self) {
     
-    @scala.inline
-    def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
+    inline def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityFilterUndefined: Self = StObject.set(x, "QualityFilter", js.undefined)
+    inline def setQualityFilterUndefined: Self = StObject.set(x, "QualityFilter", js.undefined)
     
-    @scala.inline
-    def setSimilarityThreshold(value: Percent): Self = StObject.set(x, "SimilarityThreshold", value.asInstanceOf[js.Any])
+    inline def setSimilarityThreshold(value: Percent): Self = StObject.set(x, "SimilarityThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimilarityThresholdUndefined: Self = StObject.set(x, "SimilarityThreshold", js.undefined)
+    inline def setSimilarityThresholdUndefined: Self = StObject.set(x, "SimilarityThreshold", js.undefined)
     
-    @scala.inline
-    def setSourceImage(value: Image): Self = StObject.set(x, "SourceImage", value.asInstanceOf[js.Any])
+    inline def setSourceImage(value: Image): Self = StObject.set(x, "SourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetImage(value: Image): Self = StObject.set(x, "TargetImage", value.asInstanceOf[js.Any])
+    inline def setTargetImage(value: Image): Self = StObject.set(x, "TargetImage", value.asInstanceOf[js.Any])
   }
 }

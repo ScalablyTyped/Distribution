@@ -23,35 +23,26 @@ object anon {
   }
   object Handler {
     
-    @scala.inline
-    def apply(handler: typings.swPrecache.mod.Handler, urlPattern: RegExp | String): Handler = {
+    inline def apply(handler: typings.swPrecache.mod.Handler, urlPattern: RegExp | String): Handler = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Handler]
     }
     
-    @scala.inline
-    implicit class HandlerMutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
+    extension [Self <: Handler](x: Self) {
       
-      @scala.inline
-      def setHandler(value: typings.swPrecache.mod.Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: typings.swPrecache.mod.Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerFunction1(value: /* request */ Request => js.Promise[Response]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandlerFunction1(value: /* request */ Request => js.Promise[Response]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options_): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options_): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setUrlPattern(value: RegExp | String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+      inline def setUrlPattern(value: RegExp | String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
     }
   }
 }

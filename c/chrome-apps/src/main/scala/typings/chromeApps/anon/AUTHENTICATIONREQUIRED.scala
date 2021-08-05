@@ -23,28 +23,21 @@ trait AUTHENTICATIONREQUIRED extends StObject {
 }
 object AUTHENTICATIONREQUIRED {
   
-  @scala.inline
-  def apply(): AUTHENTICATIONREQUIRED = {
+  inline def apply(): AUTHENTICATIONREQUIRED = {
     val __obj = js.Dynamic.literal(AUTHENTICATION_REQUIRED = "authentication_required", DISABLED = "disabled", INITIALIZING = "initializing", RUNNING = "running", TEMPORARY_UNAVAILABLE = "temporary_unavailable")
     __obj.asInstanceOf[AUTHENTICATIONREQUIRED]
   }
   
-  @scala.inline
-  implicit class AUTHENTICATIONREQUIREDMutableBuilder[Self <: AUTHENTICATIONREQUIRED] (val x: Self) extends AnyVal {
+  extension [Self <: AUTHENTICATIONREQUIRED](x: Self) {
     
-    @scala.inline
-    def setAUTHENTICATION_REQUIRED(value: authentication_required_): Self = StObject.set(x, "AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
+    inline def setAUTHENTICATION_REQUIRED(value: authentication_required_): Self = StObject.set(x, "AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDISABLED(value: disabled__): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
+    inline def setDISABLED(value: disabled__): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINITIALIZING(value: initializing_): Self = StObject.set(x, "INITIALIZING", value.asInstanceOf[js.Any])
+    inline def setINITIALIZING(value: initializing_): Self = StObject.set(x, "INITIALIZING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUNNING(value: running_): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
+    inline def setRUNNING(value: running_): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEMPORARY_UNAVAILABLE(value: temporary_unavailable_): Self = StObject.set(x, "TEMPORARY_UNAVAILABLE", value.asInstanceOf[js.Any])
+    inline def setTEMPORARY_UNAVAILABLE(value: temporary_unavailable_): Self = StObject.set(x, "TEMPORARY_UNAVAILABLE", value.asInstanceOf[js.Any])
   }
 }

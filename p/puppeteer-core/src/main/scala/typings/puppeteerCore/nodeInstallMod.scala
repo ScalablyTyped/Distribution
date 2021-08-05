@@ -10,9 +10,7 @@ object nodeInstallMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def downloadBrowser(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadBrowser")().asInstanceOf[js.Promise[Unit]]
+  inline def downloadBrowser(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadBrowser")().asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def logPolitely(toBeLogged: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPolitely")(toBeLogged.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logPolitely(toBeLogged: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPolitely")(toBeLogged.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

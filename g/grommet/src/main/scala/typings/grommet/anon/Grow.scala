@@ -12,25 +12,19 @@ trait Grow extends StObject {
 }
 object Grow {
   
-  @scala.inline
-  def apply(): Grow = {
+  inline def apply(): Grow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Grow]
   }
   
-  @scala.inline
-  implicit class GrowMutableBuilder[Self <: Grow] (val x: Self) extends AnyVal {
+  extension [Self <: Grow](x: Self) {
     
-    @scala.inline
-    def setGrow(value: Double): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
+    inline def setGrow(value: Double): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
+    inline def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
     
-    @scala.inline
-    def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
+    inline def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
+    inline def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
   }
 }

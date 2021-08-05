@@ -23,25 +23,19 @@ trait ShorthandEntry extends StObject {
 }
 object ShorthandEntry {
   
-  @scala.inline
-  def apply(name: String, value: String): ShorthandEntry = {
+  inline def apply(name: String, value: String): ShorthandEntry = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShorthandEntry]
   }
   
-  @scala.inline
-  implicit class ShorthandEntryMutableBuilder[Self <: ShorthandEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ShorthandEntry](x: Self) {
     
-    @scala.inline
-    def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
+    inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
+    inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait FeatureLayerCapabilitiesMetadata
 }
 object FeatureLayerCapabilitiesMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object FeatureLayerCapabilitiesMetadata {
     __obj.asInstanceOf[FeatureLayerCapabilitiesMetadata]
   }
   
-  @scala.inline
-  implicit class FeatureLayerCapabilitiesMetadataMutableBuilder[Self <: FeatureLayerCapabilitiesMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerCapabilitiesMetadata](x: Self) {
     
-    @scala.inline
-    def setSupportsAdvancedFieldProperties(value: Boolean): Self = StObject.set(x, "supportsAdvancedFieldProperties", value.asInstanceOf[js.Any])
+    inline def setSupportsAdvancedFieldProperties(value: Boolean): Self = StObject.set(x, "supportsAdvancedFieldProperties", value.asInstanceOf[js.Any])
   }
 }

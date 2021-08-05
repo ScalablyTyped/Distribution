@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogicalOperator extends StObject
 object LogicalOperator {
   
-  @scala.inline
-  def AmpersandAmpersand: typings.estree.estreeStrings.AmpersandAmpersand = "&&".asInstanceOf[typings.estree.estreeStrings.AmpersandAmpersand]
+  inline def AmpersandAmpersand: typings.estree.estreeStrings.AmpersandAmpersand = "&&".asInstanceOf[typings.estree.estreeStrings.AmpersandAmpersand]
   
-  @scala.inline
-  def QuestionmarkQuestionmark: typings.estree.estreeStrings.QuestionmarkQuestionmark = "??".asInstanceOf[typings.estree.estreeStrings.QuestionmarkQuestionmark]
+  inline def QuestionmarkQuestionmark: typings.estree.estreeStrings.QuestionmarkQuestionmark = "??".asInstanceOf[typings.estree.estreeStrings.QuestionmarkQuestionmark]
   
-  @scala.inline
-  def VerticallineVerticalline: typings.estree.estreeStrings.VerticallineVerticalline = "||".asInstanceOf[typings.estree.estreeStrings.VerticallineVerticalline]
+  inline def VerticallineVerticalline: typings.estree.estreeStrings.VerticallineVerticalline = "||".asInstanceOf[typings.estree.estreeStrings.VerticallineVerticalline]
 }

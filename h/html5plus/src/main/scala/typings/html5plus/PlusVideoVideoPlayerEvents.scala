@@ -76,55 +76,39 @@ trait PlusVideoVideoPlayerEvents extends StObject {
 }
 object PlusVideoVideoPlayerEvents {
   
-  @scala.inline
-  def apply(): PlusVideoVideoPlayerEvents = {
+  inline def apply(): PlusVideoVideoPlayerEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusVideoVideoPlayerEvents]
   }
   
-  @scala.inline
-  implicit class PlusVideoVideoPlayerEventsMutableBuilder[Self <: PlusVideoVideoPlayerEvents] (val x: Self) extends AnyVal {
+  extension [Self <: PlusVideoVideoPlayerEvents](x: Self) {
     
-    @scala.inline
-    def setEnded(value: String): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: String): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
+    inline def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFullscreenchange(value: String): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
+    inline def setFullscreenchange(value: String): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenchangeUndefined: Self = StObject.set(x, "fullscreenchange", js.undefined)
+    inline def setFullscreenchangeUndefined: Self = StObject.set(x, "fullscreenchange", js.undefined)
     
-    @scala.inline
-    def setPause(value: String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+    inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
-    @scala.inline
-    def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+    inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
-    @scala.inline
-    def setTimeupdate(value: String): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
+    inline def setTimeupdate(value: String): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeupdateUndefined: Self = StObject.set(x, "timeupdate", js.undefined)
+    inline def setTimeupdateUndefined: Self = StObject.set(x, "timeupdate", js.undefined)
     
-    @scala.inline
-    def setWaiting(value: String): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+    inline def setWaiting(value: String): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
+    inline def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
   }
 }

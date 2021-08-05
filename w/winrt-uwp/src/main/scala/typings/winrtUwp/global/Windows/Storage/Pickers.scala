@@ -43,8 +43,7 @@ object Pickers {
     @JSGlobal("Windows.Storage.Pickers.FileOpenPicker.resumePickSingleFileAsync")
     @js.native
     def resumePickSingleFileAsync: js.Any = js.native
-    @scala.inline
-    def resumePickSingleFileAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resumePickSingleFileAsync")(x.asInstanceOf[js.Any])
+    inline def resumePickSingleFileAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resumePickSingleFileAsync")(x.asInstanceOf[js.Any])
   }
   
   /** Represents a collection of display names mapped to the associated file types (extensions). Each element in this collection maps a display name to a corresponding collection of file name extensions. The key is a single string, the value is a list/vector of strings representing one or more extension choices. */

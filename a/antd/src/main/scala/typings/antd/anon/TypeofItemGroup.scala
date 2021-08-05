@@ -14,19 +14,15 @@ trait TypeofItemGroup extends StObject {
 }
 object TypeofItemGroup {
   
-  @scala.inline
-  def apply(defaultProps: TypeofdefaultProps, isMenuItemGroup: Boolean): TypeofItemGroup = {
+  inline def apply(defaultProps: TypeofdefaultProps, isMenuItemGroup: Boolean): TypeofItemGroup = {
     val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], isMenuItemGroup = isMenuItemGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofItemGroup]
   }
   
-  @scala.inline
-  implicit class TypeofItemGroupMutableBuilder[Self <: TypeofItemGroup] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofItemGroup](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: TypeofdefaultProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: TypeofdefaultProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMenuItemGroup(value: Boolean): Self = StObject.set(x, "isMenuItemGroup", value.asInstanceOf[js.Any])
+    inline def setIsMenuItemGroup(value: Boolean): Self = StObject.set(x, "isMenuItemGroup", value.asInstanceOf[js.Any])
   }
 }

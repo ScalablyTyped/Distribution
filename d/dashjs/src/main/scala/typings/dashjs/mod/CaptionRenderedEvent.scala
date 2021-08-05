@@ -19,23 +19,18 @@ trait CaptionRenderedEvent
 }
 object CaptionRenderedEvent {
   
-  @scala.inline
-  def apply(captionDiv: HTMLDivElement, currentTrackIdx: Double): CaptionRenderedEvent = {
+  inline def apply(captionDiv: HTMLDivElement, currentTrackIdx: Double): CaptionRenderedEvent = {
     val __obj = js.Dynamic.literal(captionDiv = captionDiv.asInstanceOf[js.Any], currentTrackIdx = currentTrackIdx.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("captionRendered")
     __obj.asInstanceOf[CaptionRenderedEvent]
   }
   
-  @scala.inline
-  implicit class CaptionRenderedEventMutableBuilder[Self <: CaptionRenderedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionRenderedEvent](x: Self) {
     
-    @scala.inline
-    def setCaptionDiv(value: HTMLDivElement): Self = StObject.set(x, "captionDiv", value.asInstanceOf[js.Any])
+    inline def setCaptionDiv(value: HTMLDivElement): Self = StObject.set(x, "captionDiv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTrackIdx(value: Double): Self = StObject.set(x, "currentTrackIdx", value.asInstanceOf[js.Any])
+    inline def setCurrentTrackIdx(value: Double): Self = StObject.set(x, "currentTrackIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: captionRendered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: captionRendered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

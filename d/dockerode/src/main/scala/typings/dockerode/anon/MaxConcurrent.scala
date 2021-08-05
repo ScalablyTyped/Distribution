@@ -12,25 +12,19 @@ trait MaxConcurrent extends StObject {
 }
 object MaxConcurrent {
   
-  @scala.inline
-  def apply(): MaxConcurrent = {
+  inline def apply(): MaxConcurrent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxConcurrent]
   }
   
-  @scala.inline
-  implicit class MaxConcurrentMutableBuilder[Self <: MaxConcurrent] (val x: Self) extends AnyVal {
+  extension [Self <: MaxConcurrent](x: Self) {
     
-    @scala.inline
-    def setMaxConcurrent(value: Double): Self = StObject.set(x, "MaxConcurrent", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrent(value: Double): Self = StObject.set(x, "MaxConcurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentUndefined: Self = StObject.set(x, "MaxConcurrent", js.undefined)
+    inline def setMaxConcurrentUndefined: Self = StObject.set(x, "MaxConcurrent", js.undefined)
     
-    @scala.inline
-    def setTotalCompletions(value: Double): Self = StObject.set(x, "TotalCompletions", value.asInstanceOf[js.Any])
+    inline def setTotalCompletions(value: Double): Self = StObject.set(x, "TotalCompletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCompletionsUndefined: Self = StObject.set(x, "TotalCompletions", js.undefined)
+    inline def setTotalCompletionsUndefined: Self = StObject.set(x, "TotalCompletions", js.undefined)
   }
 }

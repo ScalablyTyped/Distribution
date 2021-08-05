@@ -12,25 +12,19 @@ trait NumericTextBoxLabel extends StObject {
 }
 object NumericTextBoxLabel {
   
-  @scala.inline
-  def apply(): NumericTextBoxLabel = {
+  inline def apply(): NumericTextBoxLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumericTextBoxLabel]
   }
   
-  @scala.inline
-  implicit class NumericTextBoxLabelMutableBuilder[Self <: NumericTextBoxLabel] (val x: Self) extends AnyVal {
+  extension [Self <: NumericTextBoxLabel](x: Self) {
     
-    @scala.inline
-    def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+    inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
+    inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
   }
 }

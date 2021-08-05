@@ -15,25 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ISpineDisplayObject {
   
-  @scala.inline
-  def apply(): ISpineDisplayObject = {
+  inline def apply(): ISpineDisplayObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISpineDisplayObject]
   }
   
-  @scala.inline
-  implicit class ISpineDisplayObjectMutableBuilder[Self <: ISpineDisplayObject] (val x: Self) extends AnyVal {
+  extension [Self <: ISpineDisplayObject](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+    inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
-    @scala.inline
-    def setRegion(value: TextureRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: TextureRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

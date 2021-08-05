@@ -23,34 +23,26 @@ object entitySchemaEntitySchemaUniqueOptionsMod {
   }
   object EntitySchemaUniqueOptions {
     
-    @scala.inline
-    def apply(): EntitySchemaUniqueOptions = {
+    inline def apply(): EntitySchemaUniqueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EntitySchemaUniqueOptions]
     }
     
-    @scala.inline
-    implicit class EntitySchemaUniqueOptionsMutableBuilder[Self <: EntitySchemaUniqueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntitySchemaUniqueOptions](x: Self) {
       
-      @scala.inline
-      def setColumns(
+      inline def setColumns(
         value: (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]) | js.Array[String]
       ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsFunction1(value: /* object */ js.UndefOr[js.Any] => js.Array[js.Any] | StringDictionary[Double]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
+      inline def setColumnsFunction1(value: /* object */ js.UndefOr[js.Any] => js.Array[js.Any] | StringDictionary[Double]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

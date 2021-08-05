@@ -16,8 +16,6 @@ object realFileSystemMod {
     *
     * @param caseSensitive
     */
-  @scala.inline
-  def createRealFileSystem(): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("createRealFileSystem")().asInstanceOf[FileSystem]
-  @scala.inline
-  def createRealFileSystem(caseSensitive: Boolean): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("createRealFileSystem")(caseSensitive.asInstanceOf[js.Any]).asInstanceOf[FileSystem]
+  inline def createRealFileSystem(): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("createRealFileSystem")().asInstanceOf[FileSystem]
+  inline def createRealFileSystem(caseSensitive: Boolean): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("createRealFileSystem")(caseSensitive.asInstanceOf[js.Any]).asInstanceOf[FileSystem]
 }

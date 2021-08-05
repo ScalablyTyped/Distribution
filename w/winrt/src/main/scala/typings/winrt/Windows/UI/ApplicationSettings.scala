@@ -32,17 +32,14 @@ object ApplicationSettings {
   }
   object ISettingsCommandFactory {
     
-    @scala.inline
-    def apply(create: (js.Any, String, UICommandInvokedHandler) => SettingsCommand): ISettingsCommandFactory = {
+    inline def apply(create: (js.Any, String, UICommandInvokedHandler) => SettingsCommand): ISettingsCommandFactory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction3(create))
       __obj.asInstanceOf[ISettingsCommandFactory]
     }
     
-    @scala.inline
-    implicit class ISettingsCommandFactoryMutableBuilder[Self <: ISettingsCommandFactory] (val x: Self) extends AnyVal {
+    extension [Self <: ISettingsCommandFactory](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (js.Any, String, UICommandInvokedHandler) => SettingsCommand): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+      inline def setCreate(value: (js.Any, String, UICommandInvokedHandler) => SettingsCommand): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     }
   }
   
@@ -52,17 +49,14 @@ object ApplicationSettings {
   }
   object ISettingsPane {
     
-    @scala.inline
-    def apply(oncommandsrequested: js.Any): ISettingsPane = {
+    inline def apply(oncommandsrequested: js.Any): ISettingsPane = {
       val __obj = js.Dynamic.literal(oncommandsrequested = oncommandsrequested.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISettingsPane]
     }
     
-    @scala.inline
-    implicit class ISettingsPaneMutableBuilder[Self <: ISettingsPane] (val x: Self) extends AnyVal {
+    extension [Self <: ISettingsPane](x: Self) {
       
-      @scala.inline
-      def setOncommandsrequested(value: js.Any): Self = StObject.set(x, "oncommandsrequested", value.asInstanceOf[js.Any])
+      inline def setOncommandsrequested(value: js.Any): Self = StObject.set(x, "oncommandsrequested", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,17 +66,14 @@ object ApplicationSettings {
   }
   object ISettingsPaneCommandsRequest {
     
-    @scala.inline
-    def apply(applicationCommands: IVector[SettingsCommand]): ISettingsPaneCommandsRequest = {
+    inline def apply(applicationCommands: IVector[SettingsCommand]): ISettingsPaneCommandsRequest = {
       val __obj = js.Dynamic.literal(applicationCommands = applicationCommands.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISettingsPaneCommandsRequest]
     }
     
-    @scala.inline
-    implicit class ISettingsPaneCommandsRequestMutableBuilder[Self <: ISettingsPaneCommandsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ISettingsPaneCommandsRequest](x: Self) {
       
-      @scala.inline
-      def setApplicationCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "applicationCommands", value.asInstanceOf[js.Any])
+      inline def setApplicationCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "applicationCommands", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,17 +83,14 @@ object ApplicationSettings {
   }
   object ISettingsPaneCommandsRequestedEventArgs {
     
-    @scala.inline
-    def apply(request: SettingsPaneCommandsRequest): ISettingsPaneCommandsRequestedEventArgs = {
+    inline def apply(request: SettingsPaneCommandsRequest): ISettingsPaneCommandsRequestedEventArgs = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISettingsPaneCommandsRequestedEventArgs]
     }
     
-    @scala.inline
-    implicit class ISettingsPaneCommandsRequestedEventArgsMutableBuilder[Self <: ISettingsPaneCommandsRequestedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ISettingsPaneCommandsRequestedEventArgs](x: Self) {
       
-      @scala.inline
-      def setRequest(value: SettingsPaneCommandsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: SettingsPaneCommandsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,23 +104,18 @@ object ApplicationSettings {
   }
   object ISettingsPaneStatics {
     
-    @scala.inline
-    def apply(edge: SettingsEdgeLocation, getForCurrentView: () => SettingsPane, show: () => Unit): ISettingsPaneStatics = {
+    inline def apply(edge: SettingsEdgeLocation, getForCurrentView: () => SettingsPane, show: () => Unit): ISettingsPaneStatics = {
       val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any], getForCurrentView = js.Any.fromFunction0(getForCurrentView), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[ISettingsPaneStatics]
     }
     
-    @scala.inline
-    implicit class ISettingsPaneStaticsMutableBuilder[Self <: ISettingsPaneStatics] (val x: Self) extends AnyVal {
+    extension [Self <: ISettingsPaneStatics](x: Self) {
       
-      @scala.inline
-      def setEdge(value: SettingsEdgeLocation): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: SettingsEdgeLocation): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetForCurrentView(value: () => SettingsPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+      inline def setGetForCurrentView(value: () => SettingsPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -141,8 +124,7 @@ object ApplicationSettings {
        with IUICommand
   object SettingsCommand {
     
-    @scala.inline
-    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
+    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingsCommand]
     }
@@ -153,8 +135,7 @@ object ApplicationSettings {
        with ISettingsPane
   object SettingsPane {
     
-    @scala.inline
-    def apply(oncommandsrequested: js.Any): SettingsPane = {
+    inline def apply(oncommandsrequested: js.Any): SettingsPane = {
       val __obj = js.Dynamic.literal(oncommandsrequested = oncommandsrequested.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingsPane]
     }
@@ -165,8 +146,7 @@ object ApplicationSettings {
        with ISettingsPaneCommandsRequest
   object SettingsPaneCommandsRequest {
     
-    @scala.inline
-    def apply(applicationCommands: IVector[SettingsCommand]): SettingsPaneCommandsRequest = {
+    inline def apply(applicationCommands: IVector[SettingsCommand]): SettingsPaneCommandsRequest = {
       val __obj = js.Dynamic.literal(applicationCommands = applicationCommands.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingsPaneCommandsRequest]
     }
@@ -177,8 +157,7 @@ object ApplicationSettings {
        with ISettingsPaneCommandsRequestedEventArgs
   object SettingsPaneCommandsRequestedEventArgs {
     
-    @scala.inline
-    def apply(request: SettingsPaneCommandsRequest): SettingsPaneCommandsRequestedEventArgs = {
+    inline def apply(request: SettingsPaneCommandsRequest): SettingsPaneCommandsRequestedEventArgs = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingsPaneCommandsRequestedEventArgs]
     }

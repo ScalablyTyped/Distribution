@@ -32,10 +32,8 @@ object mod {
     * You can also pass `process` in which case
     * `process.stdin` and `process.stdout` will be used.
     */
-  @scala.inline
-  def apply(): CharmInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CharmInstance]
-  @scala.inline
-  def apply(param: CharmAnyStream): CharmInstance = ^.asInstanceOf[js.Dynamic].apply(param.asInstanceOf[js.Any]).asInstanceOf[CharmInstance]
+  inline def apply(): CharmInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CharmInstance]
+  inline def apply(param: CharmAnyStream): CharmInstance = ^.asInstanceOf[js.Dynamic].apply(param.asInstanceOf[js.Any]).asInstanceOf[CharmInstance]
   
   @JSImport("charm", JSImport.Namespace)
   @js.native
@@ -60,29 +58,21 @@ object mod {
   trait CharmColorName extends StObject
   object CharmColorName {
     
-    @scala.inline
-    def black: typings.charm.charmStrings.black = "black".asInstanceOf[typings.charm.charmStrings.black]
+    inline def black: typings.charm.charmStrings.black = "black".asInstanceOf[typings.charm.charmStrings.black]
     
-    @scala.inline
-    def blue: typings.charm.charmStrings.blue = "blue".asInstanceOf[typings.charm.charmStrings.blue]
+    inline def blue: typings.charm.charmStrings.blue = "blue".asInstanceOf[typings.charm.charmStrings.blue]
     
-    @scala.inline
-    def cyan: typings.charm.charmStrings.cyan = "cyan".asInstanceOf[typings.charm.charmStrings.cyan]
+    inline def cyan: typings.charm.charmStrings.cyan = "cyan".asInstanceOf[typings.charm.charmStrings.cyan]
     
-    @scala.inline
-    def green: typings.charm.charmStrings.green = "green".asInstanceOf[typings.charm.charmStrings.green]
+    inline def green: typings.charm.charmStrings.green = "green".asInstanceOf[typings.charm.charmStrings.green]
     
-    @scala.inline
-    def magenta: typings.charm.charmStrings.magenta = "magenta".asInstanceOf[typings.charm.charmStrings.magenta]
+    inline def magenta: typings.charm.charmStrings.magenta = "magenta".asInstanceOf[typings.charm.charmStrings.magenta]
     
-    @scala.inline
-    def red: typings.charm.charmStrings.red = "red".asInstanceOf[typings.charm.charmStrings.red]
+    inline def red: typings.charm.charmStrings.red = "red".asInstanceOf[typings.charm.charmStrings.red]
     
-    @scala.inline
-    def white: typings.charm.charmStrings.white = "white".asInstanceOf[typings.charm.charmStrings.white]
+    inline def white: typings.charm.charmStrings.white = "white".asInstanceOf[typings.charm.charmStrings.white]
     
-    @scala.inline
-    def yellow: typings.charm.charmStrings.yellow = "yellow".asInstanceOf[typings.charm.charmStrings.yellow]
+    inline def yellow: typings.charm.charmStrings.yellow = "yellow".asInstanceOf[typings.charm.charmStrings.yellow]
   }
   
   @js.native

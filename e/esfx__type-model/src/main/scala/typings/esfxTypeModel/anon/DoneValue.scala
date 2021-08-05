@@ -15,22 +15,17 @@ trait DoneValue extends StObject {
 }
 object DoneValue {
   
-  @scala.inline
-  def apply(): DoneValue = {
+  inline def apply(): DoneValue = {
     val __obj = js.Dynamic.literal(done = true)
     __obj.asInstanceOf[DoneValue]
   }
   
-  @scala.inline
-  implicit class DoneValueMutableBuilder[Self <: DoneValue] (val x: Self) extends AnyVal {
+  extension [Self <: DoneValue](x: Self) {
     
-    @scala.inline
-    def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

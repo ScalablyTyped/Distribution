@@ -12,25 +12,19 @@ trait FolderName extends StObject {
 }
 object FolderName {
   
-  @scala.inline
-  def apply(): FolderName = {
+  inline def apply(): FolderName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FolderName]
   }
   
-  @scala.inline
-  implicit class FolderNameMutableBuilder[Self <: FolderName] (val x: Self) extends AnyVal {
+  extension [Self <: FolderName](x: Self) {
     
-    @scala.inline
-    def setFolderName(value: String): Self = StObject.set(x, "folderName", value.asInstanceOf[js.Any])
+    inline def setFolderName(value: String): Self = StObject.set(x, "folderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderNameUndefined: Self = StObject.set(x, "folderName", js.undefined)
+    inline def setFolderNameUndefined: Self = StObject.set(x, "folderName", js.undefined)
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
   }
 }

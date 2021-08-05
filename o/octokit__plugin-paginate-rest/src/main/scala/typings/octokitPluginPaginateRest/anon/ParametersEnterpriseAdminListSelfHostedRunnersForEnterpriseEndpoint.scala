@@ -15,8 +15,7 @@ trait ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint extend
 }
 object ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint,
     response: OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] & `0`
   ): ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint = {
@@ -24,13 +23,10 @@ object ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] & `0`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] & `0`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

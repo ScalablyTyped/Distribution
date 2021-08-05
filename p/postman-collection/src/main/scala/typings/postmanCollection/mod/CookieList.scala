@@ -16,6 +16,5 @@ object CookieList {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isCookieList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookieList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCookieList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookieList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -12,16 +12,13 @@ trait SimpleImageOptions
 }
 object SimpleImageOptions {
   
-  @scala.inline
-  def apply(url: String): SimpleImageOptions = {
+  inline def apply(url: String): SimpleImageOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleImageOptions]
   }
   
-  @scala.inline
-  implicit class SimpleImageOptionsMutableBuilder[Self <: SimpleImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleImageOptions](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

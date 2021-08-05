@@ -16,31 +16,23 @@ trait UserNoticeState
 }
 object UserNoticeState {
   
-  @scala.inline
-  def apply(): UserNoticeState = {
+  inline def apply(): UserNoticeState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserNoticeState]
   }
   
-  @scala.inline
-  implicit class UserNoticeStateMutableBuilder[Self <: UserNoticeState] (val x: Self) extends AnyVal {
+  extension [Self <: UserNoticeState](x: Self) {
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
+    inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def `setSystem-msg`(value: String): Self = StObject.set(x, "system-msg", value.asInstanceOf[js.Any])
+    inline def `setSystem-msg`(value: String): Self = StObject.set(x, "system-msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSystem-msgUndefined`: Self = StObject.set(x, "system-msg", js.undefined)
+    inline def `setSystem-msgUndefined`: Self = StObject.set(x, "system-msg", js.undefined)
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Sort")
 @js.native
-class Sort protected ()
+/* private */ class Sort ()
   extends StObject
      with typings.activexExcel.Excel.Sort {
   
@@ -25,7 +25,7 @@ class Sort protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Sort_typekey")
   var ExcelDotSort_typekey: typings.activexExcel.Excel.Sort = js.native
   

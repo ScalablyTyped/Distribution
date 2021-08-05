@@ -46,6 +46,5 @@ object Method {
     * @returns Created method
     * @throws {TypeError} If arguments are invalid
     */
-  @scala.inline
-  def fromJSON(name: String, json: IMethod): typings.protobufjs.mod.Method = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Method]
+  inline def fromJSON(name: String, json: IMethod): typings.protobufjs.mod.Method = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Method]
 }

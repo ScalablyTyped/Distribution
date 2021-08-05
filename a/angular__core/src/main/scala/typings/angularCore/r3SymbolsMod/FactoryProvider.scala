@@ -40,22 +40,17 @@ trait FactoryProvider
 }
 object FactoryProvider {
   
-  @scala.inline
-  def apply(provide: js.Any, useFactory: js.Function): FactoryProvider = {
+  inline def apply(provide: js.Any, useFactory: js.Function): FactoryProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useFactory = useFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactoryProvider]
   }
   
-  @scala.inline
-  implicit class FactoryProviderMutableBuilder[Self <: FactoryProvider] (val x: Self) extends AnyVal {
+  extension [Self <: FactoryProvider](x: Self) {
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

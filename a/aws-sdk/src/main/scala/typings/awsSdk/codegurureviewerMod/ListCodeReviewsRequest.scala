@@ -38,55 +38,39 @@ trait ListCodeReviewsRequest extends StObject {
 }
 object ListCodeReviewsRequest {
   
-  @scala.inline
-  def apply(Type: Type): ListCodeReviewsRequest = {
+  inline def apply(Type: Type): ListCodeReviewsRequest = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCodeReviewsRequest]
   }
   
-  @scala.inline
-  implicit class ListCodeReviewsRequestMutableBuilder[Self <: ListCodeReviewsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListCodeReviewsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ListCodeReviewsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListCodeReviewsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProviderTypes(value: ProviderTypes): Self = StObject.set(x, "ProviderTypes", value.asInstanceOf[js.Any])
+    inline def setProviderTypes(value: ProviderTypes): Self = StObject.set(x, "ProviderTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderTypesUndefined: Self = StObject.set(x, "ProviderTypes", js.undefined)
+    inline def setProviderTypesUndefined: Self = StObject.set(x, "ProviderTypes", js.undefined)
     
-    @scala.inline
-    def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value :_*))
+    inline def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setRepositoryNames(value: RepositoryNames): Self = StObject.set(x, "RepositoryNames", value.asInstanceOf[js.Any])
+    inline def setRepositoryNames(value: RepositoryNames): Self = StObject.set(x, "RepositoryNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNamesUndefined: Self = StObject.set(x, "RepositoryNames", js.undefined)
+    inline def setRepositoryNamesUndefined: Self = StObject.set(x, "RepositoryNames", js.undefined)
     
-    @scala.inline
-    def setRepositoryNamesVarargs(value: Name*): Self = StObject.set(x, "RepositoryNames", js.Array(value :_*))
+    inline def setRepositoryNamesVarargs(value: Name*): Self = StObject.set(x, "RepositoryNames", js.Array(value :_*))
     
-    @scala.inline
-    def setStates(value: JobStates): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
+    inline def setStates(value: JobStates): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
-    @scala.inline
-    def setStatesVarargs(value: JobState*): Self = StObject.set(x, "States", js.Array(value :_*))
+    inline def setStatesVarargs(value: JobState*): Self = StObject.set(x, "States", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

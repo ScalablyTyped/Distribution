@@ -25,8 +25,7 @@ trait Descriptors[Options, ScreenProps] extends StObject {
 }
 object Descriptors {
   
-  @scala.inline
-  def apply[Options, ScreenProps](
+  inline def apply[Options, ScreenProps](
     descriptors: StringDictionary[
       NavigationDescriptor[
         NavigationParams, 
@@ -40,11 +39,9 @@ object Descriptors {
     __obj.asInstanceOf[Descriptors[Options, ScreenProps]]
   }
   
-  @scala.inline
-  implicit class DescriptorsMutableBuilder[Self <: Descriptors[?, ?], Options, ScreenProps] (val x: Self & (Descriptors[Options, ScreenProps])) extends AnyVal {
+  extension [Self <: Descriptors[?, ?], Options, ScreenProps](x: Self & (Descriptors[Options, ScreenProps])) {
     
-    @scala.inline
-    def setDescriptors(
+    inline def setDescriptors(
       value: StringDictionary[
           NavigationDescriptor[
             NavigationParams, 
@@ -54,13 +51,10 @@ object Descriptors {
         ]
     ): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationConfig(value: Options): Self = StObject.set(x, "navigationConfig", value.asInstanceOf[js.Any])
+    inline def setNavigationConfig(value: Options): Self = StObject.set(x, "navigationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
+    inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
   }
 }

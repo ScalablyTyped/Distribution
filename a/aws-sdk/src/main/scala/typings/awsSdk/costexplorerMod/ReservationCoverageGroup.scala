@@ -18,25 +18,19 @@ trait ReservationCoverageGroup extends StObject {
 }
 object ReservationCoverageGroup {
   
-  @scala.inline
-  def apply(): ReservationCoverageGroup = {
+  inline def apply(): ReservationCoverageGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservationCoverageGroup]
   }
   
-  @scala.inline
-  implicit class ReservationCoverageGroupMutableBuilder[Self <: ReservationCoverageGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationCoverageGroup](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setCoverage(value: Coverage): Self = StObject.set(x, "Coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: Coverage): Self = StObject.set(x, "Coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageUndefined: Self = StObject.set(x, "Coverage", js.undefined)
+    inline def setCoverageUndefined: Self = StObject.set(x, "Coverage", js.undefined)
   }
 }

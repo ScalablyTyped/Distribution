@@ -13,16 +13,13 @@ trait HasCacheKey extends StObject {
 }
 object HasCacheKey {
   
-  @scala.inline
-  def apply(cacheKey: CacheKey): HasCacheKey = {
+  inline def apply(cacheKey: CacheKey): HasCacheKey = {
     val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasCacheKey]
   }
   
-  @scala.inline
-  implicit class HasCacheKeyMutableBuilder[Self <: HasCacheKey] (val x: Self) extends AnyVal {
+  extension [Self <: HasCacheKey](x: Self) {
     
-    @scala.inline
-    def setCacheKey(value: CacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+    inline def setCacheKey(value: CacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
   }
 }

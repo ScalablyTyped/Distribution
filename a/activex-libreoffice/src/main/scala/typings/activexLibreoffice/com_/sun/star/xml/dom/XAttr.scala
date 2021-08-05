@@ -38,8 +38,7 @@ trait XAttr
 }
 object XAttr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: XNamedNodeMap,
     ChildNodes: XNodeList,
     FirstChild: XNode,
@@ -96,34 +95,24 @@ object XAttr {
     __obj.asInstanceOf[XAttr]
   }
   
-  @scala.inline
-  implicit class XAttrMutableBuilder[Self <: XAttr] (val x: Self) extends AnyVal {
+  extension [Self <: XAttr](x: Self) {
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerElement(value: () => XElement): Self = StObject.set(x, "getOwnerElement", js.Any.fromFunction0(value))
+    inline def setGetOwnerElement(value: () => XElement): Self = StObject.set(x, "getOwnerElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSpecified(value: () => Boolean): Self = StObject.set(x, "getSpecified", js.Any.fromFunction0(value))
+    inline def setGetSpecified(value: () => Boolean): Self = StObject.set(x, "getSpecified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerElement(value: XElement): Self = StObject.set(x, "OwnerElement", value.asInstanceOf[js.Any])
+    inline def setOwnerElement(value: XElement): Self = StObject.set(x, "OwnerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpecified(value: Boolean): Self = StObject.set(x, "Specified", value.asInstanceOf[js.Any])
+    inline def setSpecified(value: Boolean): Self = StObject.set(x, "Specified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

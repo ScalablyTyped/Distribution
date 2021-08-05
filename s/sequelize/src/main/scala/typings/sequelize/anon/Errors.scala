@@ -15,31 +15,23 @@ trait Errors extends StObject {
 }
 object Errors {
   
-  @scala.inline
-  def apply(): Errors = {
+  inline def apply(): Errors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Errors]
   }
   
-  @scala.inline
-  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+  extension [Self <: Errors](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Object): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Object): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setParent(value: Error): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Error): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

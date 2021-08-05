@@ -37,20 +37,16 @@ object mod extends Shortcut {
   }
   object Page {
     
-    @scala.inline
-    def apply(buffer: Buffer, offset: Double): Page = {
+    inline def apply(buffer: Buffer, offset: Double): Page = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Page]
     }
     
-    @scala.inline
-    implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+    extension [Self <: Page](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   

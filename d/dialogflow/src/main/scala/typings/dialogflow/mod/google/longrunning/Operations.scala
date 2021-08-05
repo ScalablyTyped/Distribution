@@ -107,14 +107,10 @@ object Operations {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @scala.inline
-  def create(rpcImpl: RPCImpl): Operations = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Operations]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Operations = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Operations]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Operations = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Operations]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Operations = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Operations]
+  inline def create(rpcImpl: RPCImpl): Operations = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Operations]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Operations = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Operations]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Operations = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Operations]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Operations = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Operations]
   
   /**
     * Callback as used by {@link google.longrunning.Operations#cancelOperation}.

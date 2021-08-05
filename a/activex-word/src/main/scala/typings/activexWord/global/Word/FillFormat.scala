@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FillFormat")
 @js.native
-class FillFormat protected ()
+/* private */ class FillFormat ()
   extends StObject
      with typings.activexWord.Word.FillFormat {
   
@@ -137,7 +137,7 @@ class FillFormat protected ()
   /* CompleteClass */
   var Visible: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.FillFormat_typekey")
   var WordDotFillFormat_typekey: typings.activexWord.Word.FillFormat = js.native
 }

@@ -18,19 +18,15 @@ trait KinesisFirehoseDestination extends StObject {
 }
 object KinesisFirehoseDestination {
   
-  @scala.inline
-  def apply(DeliveryStreamARN: AmazonResourceName, IAMRoleARN: AmazonResourceName): KinesisFirehoseDestination = {
+  inline def apply(DeliveryStreamARN: AmazonResourceName, IAMRoleARN: AmazonResourceName): KinesisFirehoseDestination = {
     val __obj = js.Dynamic.literal(DeliveryStreamARN = DeliveryStreamARN.asInstanceOf[js.Any], IAMRoleARN = IAMRoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisFirehoseDestination]
   }
   
-  @scala.inline
-  implicit class KinesisFirehoseDestinationMutableBuilder[Self <: KinesisFirehoseDestination] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisFirehoseDestination](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamARN(value: AmazonResourceName): Self = StObject.set(x, "DeliveryStreamARN", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamARN(value: AmazonResourceName): Self = StObject.set(x, "DeliveryStreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIAMRoleARN(value: AmazonResourceName): Self = StObject.set(x, "IAMRoleARN", value.asInstanceOf[js.Any])
+    inline def setIAMRoleARN(value: AmazonResourceName): Self = StObject.set(x, "IAMRoleARN", value.asInstanceOf[js.Any])
   }
 }

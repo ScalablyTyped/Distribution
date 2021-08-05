@@ -10,19 +10,15 @@ trait AddLifecycleRuleOptions extends StObject {
 }
 object AddLifecycleRuleOptions {
   
-  @scala.inline
-  def apply(): AddLifecycleRuleOptions = {
+  inline def apply(): AddLifecycleRuleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddLifecycleRuleOptions]
   }
   
-  @scala.inline
-  implicit class AddLifecycleRuleOptionsMutableBuilder[Self <: AddLifecycleRuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddLifecycleRuleOptions](x: Self) {
     
-    @scala.inline
-    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
   }
 }

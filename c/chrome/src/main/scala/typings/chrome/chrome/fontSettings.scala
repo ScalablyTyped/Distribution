@@ -26,17 +26,14 @@ object fontSettings {
   }
   object DefaultFontSizeDetails {
     
-    @scala.inline
-    def apply(pixelSize: Double): DefaultFontSizeDetails = {
+    inline def apply(pixelSize: Double): DefaultFontSizeDetails = {
       val __obj = js.Dynamic.literal(pixelSize = pixelSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultFontSizeDetails]
     }
     
-    @scala.inline
-    implicit class DefaultFontSizeDetailsMutableBuilder[Self <: DefaultFontSizeDetails] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultFontSizeDetails](x: Self) {
       
-      @scala.inline
-      def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+      inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,23 +49,18 @@ object fontSettings {
   }
   object FontDetails {
     
-    @scala.inline
-    def apply(genericFamily: String): FontDetails = {
+    inline def apply(genericFamily: String): FontDetails = {
       val __obj = js.Dynamic.literal(genericFamily = genericFamily.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontDetails]
     }
     
-    @scala.inline
-    implicit class FontDetailsMutableBuilder[Self <: FontDetails] (val x: Self) extends AnyVal {
+    extension [Self <: FontDetails](x: Self) {
       
-      @scala.inline
-      def setGenericFamily(value: String): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
+      inline def setGenericFamily(value: String): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     }
   }
   
@@ -82,20 +74,16 @@ object fontSettings {
   }
   object FontDetailsResult {
     
-    @scala.inline
-    def apply(fontId: String, levelOfControl: String): FontDetailsResult = {
+    inline def apply(fontId: String, levelOfControl: String): FontDetailsResult = {
       val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], levelOfControl = levelOfControl.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontDetailsResult]
     }
     
-    @scala.inline
-    implicit class FontDetailsResultMutableBuilder[Self <: FontDetailsResult] (val x: Self) extends AnyVal {
+    extension [Self <: FontDetailsResult](x: Self) {
       
-      @scala.inline
-      def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
+      inline def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,20 +97,16 @@ object fontSettings {
   }
   object FontName {
     
-    @scala.inline
-    def apply(displayName: String, fontId: String): FontName = {
+    inline def apply(displayName: String, fontId: String): FontName = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], fontId = fontId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontName]
     }
     
-    @scala.inline
-    implicit class FontNameMutableBuilder[Self <: FontName] (val x: Self) extends AnyVal {
+    extension [Self <: FontName](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
+      inline def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,20 +120,16 @@ object fontSettings {
   }
   object FontSizeDetails {
     
-    @scala.inline
-    def apply(levelOfControl: String, pixelSize: Double): FontSizeDetails = {
+    inline def apply(levelOfControl: String, pixelSize: Double): FontSizeDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], pixelSize = pixelSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontSizeDetails]
     }
     
-    @scala.inline
-    implicit class FontSizeDetailsMutableBuilder[Self <: FontSizeDetails] (val x: Self) extends AnyVal {
+    extension [Self <: FontSizeDetails](x: Self) {
       
-      @scala.inline
-      def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+      inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,29 +149,22 @@ object fontSettings {
   }
   object FullFontDetails {
     
-    @scala.inline
-    def apply(fontId: String, genericFamily: String, levelOfControl: String): FullFontDetails = {
+    inline def apply(fontId: String, genericFamily: String, levelOfControl: String): FullFontDetails = {
       val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], genericFamily = genericFamily.asInstanceOf[js.Any], levelOfControl = levelOfControl.asInstanceOf[js.Any])
       __obj.asInstanceOf[FullFontDetails]
     }
     
-    @scala.inline
-    implicit class FullFontDetailsMutableBuilder[Self <: FullFontDetails] (val x: Self) extends AnyVal {
+    extension [Self <: FullFontDetails](x: Self) {
       
-      @scala.inline
-      def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
+      inline def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenericFamily(value: String): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
+      inline def setGenericFamily(value: String): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     }
   }
   
@@ -206,17 +179,14 @@ object fontSettings {
   }
   object SetFontDetails {
     
-    @scala.inline
-    def apply(fontId: String, genericFamily: String): SetFontDetails = {
+    inline def apply(fontId: String, genericFamily: String): SetFontDetails = {
       val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], genericFamily = genericFamily.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetFontDetails]
     }
     
-    @scala.inline
-    implicit class SetFontDetailsMutableBuilder[Self <: SetFontDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetFontDetails](x: Self) {
       
-      @scala.inline
-      def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
+      inline def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,17 +197,14 @@ object fontSettings {
   }
   object SetFontSizeDetails {
     
-    @scala.inline
-    def apply(pixelSize: Double): SetFontSizeDetails = {
+    inline def apply(pixelSize: Double): SetFontSizeDetails = {
       val __obj = js.Dynamic.literal(pixelSize = pixelSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetFontSizeDetails]
     }
     
-    @scala.inline
-    implicit class SetFontSizeDetailsMutableBuilder[Self <: SetFontSizeDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetFontSizeDetails](x: Self) {
       
-      @scala.inline
-      def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+      inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait ExportBundleResult extends StObject {
 }
 object ExportBundleResult {
   
-  @scala.inline
-  def apply(): ExportBundleResult = {
+  inline def apply(): ExportBundleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportBundleResult]
   }
   
-  @scala.inline
-  implicit class ExportBundleResultMutableBuilder[Self <: ExportBundleResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExportBundleResult](x: Self) {
     
-    @scala.inline
-    def setDownloadUrl(value: DownloadUrl): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: DownloadUrl): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait Event[T /* <: (typings.react.mod.SyntheticEvent[HTMLElement, typings.std.E
 }
 object Event {
   
-  @scala.inline
-  def apply[T /* <: (typings.react.mod.SyntheticEvent[HTMLElement, typings.std.Event]) | typings.std.Event */](event: T): Event[T] = {
+  inline def apply[T /* <: (typings.react.mod.SyntheticEvent[HTMLElement, typings.std.Event]) | typings.std.Event */](event: T): Event[T] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event[T]]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event[?], T /* <: (typings.react.mod.SyntheticEvent[HTMLElement, typings.std.Event]) | typings.std.Event */] (val x: Self & Event[T]) extends AnyVal {
+  extension [Self <: Event[?], T /* <: (typings.react.mod.SyntheticEvent[HTMLElement, typings.std.Event]) | typings.std.Event */](x: Self & Event[T]) {
     
-    @scala.inline
-    def setEvent(value: T): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: T): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

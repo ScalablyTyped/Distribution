@@ -16,8 +16,7 @@ object useCSSTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useCSSTransition[E /* <: HTMLElement */](
+  inline def useCSSTransition[E /* <: HTMLElement */](
     hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNamePropClassNamesPropRef: CSSTransitionOptions[E]
   ): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCSSTransition")(hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNamePropClassNamesPropRef.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionReturnValue[E]]
   

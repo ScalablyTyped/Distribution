@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions extends StObject {
 }
 object StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions = {
+  inline def apply(): StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsTypeChangeTypeOHLCOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

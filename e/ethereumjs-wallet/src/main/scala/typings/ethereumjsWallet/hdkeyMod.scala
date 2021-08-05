@@ -14,7 +14,7 @@ object hdkeyMod {
        with EthereumHDKey {
     def this(_hdkey: js.Any) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _hdkey: js.Any = js.native
     
     /**
@@ -57,8 +57,7 @@ object hdkeyMod {
     /**
       * Create an instance based on a BIP32 extended private or public key.
       */
-    @scala.inline
-    def fromExtendedKey(base58Key: String): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58Key.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
+    inline def fromExtendedKey(base58Key: String): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58Key.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
     
     /**
       * Creates an instance based on a seed.
@@ -66,13 +65,12 @@ object hdkeyMod {
       * For the seed we suggest to use [bip39](https://npmjs.org/package/bip39) to
       * create one from a BIP39 mnemonic.
       */
-    @scala.inline
-    def fromMasterSeed(seedBuffer: Buffer): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seedBuffer.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
+    inline def fromMasterSeed(seedBuffer: Buffer): EthereumHDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seedBuffer.asInstanceOf[js.Any]).asInstanceOf[EthereumHDKey]
   }
   
   trait EthereumHDKey extends StObject {
     
-    val _hdkey: js.Any
+    /* private */ val _hdkey: js.Any
     
     /**
       * Derive a node based on a child index
@@ -101,8 +99,7 @@ object hdkeyMod {
   }
   object EthereumHDKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _hdkey: js.Any,
       deriveChild: Double => EthereumHDKey,
       derivePath: String => EthereumHDKey,
@@ -114,26 +111,19 @@ object hdkeyMod {
       __obj.asInstanceOf[EthereumHDKey]
     }
     
-    @scala.inline
-    implicit class EthereumHDKeyMutableBuilder[Self <: EthereumHDKey] (val x: Self) extends AnyVal {
+    extension [Self <: EthereumHDKey](x: Self) {
       
-      @scala.inline
-      def setDeriveChild(value: Double => EthereumHDKey): Self = StObject.set(x, "deriveChild", js.Any.fromFunction1(value))
+      inline def setDeriveChild(value: Double => EthereumHDKey): Self = StObject.set(x, "deriveChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDerivePath(value: String => EthereumHDKey): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
+      inline def setDerivePath(value: String => EthereumHDKey): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWallet(value: () => typings.ethereumjsWallet.mod.default): Self = StObject.set(x, "getWallet", js.Any.fromFunction0(value))
+      inline def setGetWallet(value: () => typings.ethereumjsWallet.mod.default): Self = StObject.set(x, "getWallet", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrivateExtendedKey(value: () => Buffer): Self = StObject.set(x, "privateExtendedKey", js.Any.fromFunction0(value))
+      inline def setPrivateExtendedKey(value: () => Buffer): Self = StObject.set(x, "privateExtendedKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPublicExtendedKey(value: () => Buffer): Self = StObject.set(x, "publicExtendedKey", js.Any.fromFunction0(value))
+      inline def setPublicExtendedKey(value: () => Buffer): Self = StObject.set(x, "publicExtendedKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_hdkey(value: js.Any): Self = StObject.set(x, "_hdkey", value.asInstanceOf[js.Any])
+      inline def set_hdkey(value: js.Any): Self = StObject.set(x, "_hdkey", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,22 +28,17 @@ trait SingularGraphManipulation extends StObject {
 }
 object SingularGraphManipulation {
   
-  @scala.inline
-  def apply(cy: () => Core, inside: () => Boolean, removed: () => Boolean): SingularGraphManipulation = {
+  inline def apply(cy: () => Core, inside: () => Boolean, removed: () => Boolean): SingularGraphManipulation = {
     val __obj = js.Dynamic.literal(cy = js.Any.fromFunction0(cy), inside = js.Any.fromFunction0(inside), removed = js.Any.fromFunction0(removed))
     __obj.asInstanceOf[SingularGraphManipulation]
   }
   
-  @scala.inline
-  implicit class SingularGraphManipulationMutableBuilder[Self <: SingularGraphManipulation] (val x: Self) extends AnyVal {
+  extension [Self <: SingularGraphManipulation](x: Self) {
     
-    @scala.inline
-    def setCy(value: () => Core): Self = StObject.set(x, "cy", js.Any.fromFunction0(value))
+    inline def setCy(value: () => Core): Self = StObject.set(x, "cy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInside(value: () => Boolean): Self = StObject.set(x, "inside", js.Any.fromFunction0(value))
+    inline def setInside(value: () => Boolean): Self = StObject.set(x, "inside", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoved(value: () => Boolean): Self = StObject.set(x, "removed", js.Any.fromFunction0(value))
+    inline def setRemoved(value: () => Boolean): Self = StObject.set(x, "removed", js.Any.fromFunction0(value))
   }
 }

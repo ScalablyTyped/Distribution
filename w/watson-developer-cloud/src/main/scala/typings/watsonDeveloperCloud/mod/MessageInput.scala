@@ -16,19 +16,15 @@ trait MessageInput
 }
 object MessageInput {
   
-  @scala.inline
-  def apply(): MessageInput = {
+  inline def apply(): MessageInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageInput]
   }
   
-  @scala.inline
-  implicit class MessageInputMutableBuilder[Self <: MessageInput] (val x: Self) extends AnyVal {
+  extension [Self <: MessageInput](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

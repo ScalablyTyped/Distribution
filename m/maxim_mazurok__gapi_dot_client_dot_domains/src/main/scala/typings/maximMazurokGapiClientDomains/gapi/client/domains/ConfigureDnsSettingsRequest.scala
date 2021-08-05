@@ -21,31 +21,23 @@ trait ConfigureDnsSettingsRequest extends StObject {
 }
 object ConfigureDnsSettingsRequest {
   
-  @scala.inline
-  def apply(): ConfigureDnsSettingsRequest = {
+  inline def apply(): ConfigureDnsSettingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigureDnsSettingsRequest]
   }
   
-  @scala.inline
-  implicit class ConfigureDnsSettingsRequestMutableBuilder[Self <: ConfigureDnsSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigureDnsSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setDnsSettings(value: DnsSettings): Self = StObject.set(x, "dnsSettings", value.asInstanceOf[js.Any])
+    inline def setDnsSettings(value: DnsSettings): Self = StObject.set(x, "dnsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsSettingsUndefined: Self = StObject.set(x, "dnsSettings", js.undefined)
+    inline def setDnsSettingsUndefined: Self = StObject.set(x, "dnsSettings", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

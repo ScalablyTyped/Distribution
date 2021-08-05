@@ -13,25 +13,19 @@ trait FlatColorPickerMessages extends StObject {
 }
 object FlatColorPickerMessages {
   
-  @scala.inline
-  def apply(): FlatColorPickerMessages = {
+  inline def apply(): FlatColorPickerMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlatColorPickerMessages]
   }
   
-  @scala.inline
-  implicit class FlatColorPickerMessagesMutableBuilder[Self <: FlatColorPickerMessages] (val x: Self) extends AnyVal {
+  extension [Self <: FlatColorPickerMessages](x: Self) {
     
-    @scala.inline
-    def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
   }
 }

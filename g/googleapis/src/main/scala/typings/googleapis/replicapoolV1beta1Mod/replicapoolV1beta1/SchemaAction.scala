@@ -32,37 +32,27 @@ trait SchemaAction extends StObject {
 }
 object SchemaAction {
   
-  @scala.inline
-  def apply(): SchemaAction = {
+  inline def apply(): SchemaAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAction]
   }
   
-  @scala.inline
-  implicit class SchemaActionMutableBuilder[Self <: SchemaAction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAction](x: Self) {
     
-    @scala.inline
-    def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    @scala.inline
-    def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvVariables(value: js.Array[SchemaEnvVariable]): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
+    inline def setEnvVariables(value: js.Array[SchemaEnvVariable]): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
+    inline def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
     
-    @scala.inline
-    def setEnvVariablesVarargs(value: SchemaEnvVariable*): Self = StObject.set(x, "envVariables", js.Array(value :_*))
+    inline def setEnvVariablesVarargs(value: SchemaEnvVariable*): Self = StObject.set(x, "envVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeoutMilliSeconds(value: Double): Self = StObject.set(x, "timeoutMilliSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutMilliSeconds(value: Double): Self = StObject.set(x, "timeoutMilliSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutMilliSecondsUndefined: Self = StObject.set(x, "timeoutMilliSeconds", js.undefined)
+    inline def setTimeoutMilliSecondsUndefined: Self = StObject.set(x, "timeoutMilliSeconds", js.undefined)
   }
 }

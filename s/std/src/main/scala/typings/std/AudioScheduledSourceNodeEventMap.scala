@@ -10,16 +10,13 @@ trait AudioScheduledSourceNodeEventMap extends StObject {
 }
 object AudioScheduledSourceNodeEventMap {
   
-  @scala.inline
-  def apply(ended: Event): AudioScheduledSourceNodeEventMap = {
+  inline def apply(ended: Event): AudioScheduledSourceNodeEventMap = {
     val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioScheduledSourceNodeEventMap]
   }
   
-  @scala.inline
-  implicit class AudioScheduledSourceNodeEventMapMutableBuilder[Self <: AudioScheduledSourceNodeEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: AudioScheduledSourceNodeEventMap](x: Self) {
     
-    @scala.inline
-    def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
   }
 }

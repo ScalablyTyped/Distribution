@@ -23,19 +23,15 @@ trait ASPxClientDiagramCustomShapeCreateTemplateEventArgs
 }
 object ASPxClientDiagramCustomShapeCreateTemplateEventArgs {
   
-  @scala.inline
-  def apply(container: js.Any, item: DiagramShape): ASPxClientDiagramCustomShapeCreateTemplateEventArgs = {
+  inline def apply(container: js.Any, item: DiagramShape): ASPxClientDiagramCustomShapeCreateTemplateEventArgs = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDiagramCustomShapeCreateTemplateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDiagramCustomShapeCreateTemplateEventArgsMutableBuilder[Self <: ASPxClientDiagramCustomShapeCreateTemplateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDiagramCustomShapeCreateTemplateEventArgs](x: Self) {
     
-    @scala.inline
-    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: DiagramShape): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: DiagramShape): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

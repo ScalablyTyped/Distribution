@@ -26,23 +26,18 @@ object typesDeleteBranchOutputMod {
   }
   object DeleteBranchOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteBranchOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteBranchOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteBranchOutput]
     }
     
-    @scala.inline
-    implicit class DeleteBranchOutputMutableBuilder[Self <: DeleteBranchOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteBranchOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedBranch(value: UnmarshalledBranchInfo): Self = StObject.set(x, "deletedBranch", value.asInstanceOf[js.Any])
+      inline def setDeletedBranch(value: UnmarshalledBranchInfo): Self = StObject.set(x, "deletedBranch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedBranchUndefined: Self = StObject.set(x, "deletedBranch", js.undefined)
+      inline def setDeletedBranchUndefined: Self = StObject.set(x, "deletedBranch", js.undefined)
     }
   }
 }

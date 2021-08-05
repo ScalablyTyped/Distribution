@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlipProp extends StObject
 object FlipProp {
   
-  @scala.inline
-  def both: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.both = "both".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.both]
+  inline def both: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.both = "both".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.both]
   
-  @scala.inline
-  def horizontal: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.horizontal = "horizontal".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.horizontal]
+  inline def horizontal: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.horizontal = "horizontal".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.vertical = "vertical".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.vertical]
+  inline def vertical: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.vertical = "vertical".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.vertical]
 }

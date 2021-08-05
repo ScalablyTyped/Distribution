@@ -18,25 +18,19 @@ trait TaskExecutionListEntry extends StObject {
 }
 object TaskExecutionListEntry {
   
-  @scala.inline
-  def apply(): TaskExecutionListEntry = {
+  inline def apply(): TaskExecutionListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskExecutionListEntry]
   }
   
-  @scala.inline
-  implicit class TaskExecutionListEntryMutableBuilder[Self <: TaskExecutionListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: TaskExecutionListEntry](x: Self) {
     
-    @scala.inline
-    def setStatus(value: TaskExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
+    inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskExecutionArnUndefined: Self = StObject.set(x, "TaskExecutionArn", js.undefined)
+    inline def setTaskExecutionArnUndefined: Self = StObject.set(x, "TaskExecutionArn", js.undefined)
   }
 }

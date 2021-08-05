@@ -20,37 +20,27 @@ trait CountArtifactsMetadata extends StObject {
 }
 object CountArtifactsMetadata {
   
-  @scala.inline
-  def apply(): CountArtifactsMetadata = {
+  inline def apply(): CountArtifactsMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountArtifactsMetadata]
   }
   
-  @scala.inline
-  implicit class CountArtifactsMetadataMutableBuilder[Self <: CountArtifactsMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CountArtifactsMetadata](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
+    inline def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
+    inline def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

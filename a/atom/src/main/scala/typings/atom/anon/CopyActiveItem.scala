@@ -12,28 +12,21 @@ trait CopyActiveItem extends StObject {
 }
 object CopyActiveItem {
   
-  @scala.inline
-  def apply(): CopyActiveItem = {
+  inline def apply(): CopyActiveItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyActiveItem]
   }
   
-  @scala.inline
-  implicit class CopyActiveItemMutableBuilder[Self <: CopyActiveItem] (val x: Self) extends AnyVal {
+  extension [Self <: CopyActiveItem](x: Self) {
     
-    @scala.inline
-    def setCopyActiveItem(value: Boolean): Self = StObject.set(x, "copyActiveItem", value.asInstanceOf[js.Any])
+    inline def setCopyActiveItem(value: Boolean): Self = StObject.set(x, "copyActiveItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyActiveItemUndefined: Self = StObject.set(x, "copyActiveItem", js.undefined)
+    inline def setCopyActiveItemUndefined: Self = StObject.set(x, "copyActiveItem", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

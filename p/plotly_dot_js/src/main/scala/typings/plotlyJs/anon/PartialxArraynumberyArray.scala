@@ -13,31 +13,23 @@ trait PartialxArraynumberyArray extends StObject {
 }
 object PartialxArraynumberyArray {
   
-  @scala.inline
-  def apply(): PartialxArraynumberyArray = {
+  inline def apply(): PartialxArraynumberyArray = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialxArraynumberyArray]
   }
   
-  @scala.inline
-  implicit class PartialxArraynumberyArrayMutableBuilder[Self <: PartialxArraynumberyArray] (val x: Self) extends AnyVal {
+  extension [Self <: PartialxArraynumberyArray](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
     
-    @scala.inline
-    def setY(value: js.Array[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: js.Array[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

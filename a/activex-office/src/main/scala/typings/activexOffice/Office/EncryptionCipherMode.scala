@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionCipherMode extends StObject
 object EncryptionCipherMode {
   
-  @scala.inline
-  def cipherModeCBC: `1` = 1.asInstanceOf[`1`]
+  inline def cipherModeCBC: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def cipherModeECB: `0` = 0.asInstanceOf[`0`]
+  inline def cipherModeECB: `0` = 0.asInstanceOf[`0`]
 }

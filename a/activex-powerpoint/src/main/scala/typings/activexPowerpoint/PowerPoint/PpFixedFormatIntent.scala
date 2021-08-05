@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpFixedFormatIntent extends StObject
 object PpFixedFormatIntent {
   
-  @scala.inline
-  def ppFixedFormatIntentPrint: `2` = 2.asInstanceOf[`2`]
+  inline def ppFixedFormatIntentPrint: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppFixedFormatIntentScreen: `1` = 1.asInstanceOf[`1`]
+  inline def ppFixedFormatIntentScreen: `1` = 1.asInstanceOf[`1`]
 }

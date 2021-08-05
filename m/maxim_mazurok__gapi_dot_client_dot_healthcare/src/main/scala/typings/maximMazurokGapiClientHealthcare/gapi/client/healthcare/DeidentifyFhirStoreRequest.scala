@@ -21,31 +21,23 @@ trait DeidentifyFhirStoreRequest extends StObject {
 }
 object DeidentifyFhirStoreRequest {
   
-  @scala.inline
-  def apply(): DeidentifyFhirStoreRequest = {
+  inline def apply(): DeidentifyFhirStoreRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeidentifyFhirStoreRequest]
   }
   
-  @scala.inline
-  implicit class DeidentifyFhirStoreRequestMutableBuilder[Self <: DeidentifyFhirStoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeidentifyFhirStoreRequest](x: Self) {
     
-    @scala.inline
-    def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDestinationStore(value: String): Self = StObject.set(x, "destinationStore", value.asInstanceOf[js.Any])
+    inline def setDestinationStore(value: String): Self = StObject.set(x, "destinationStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationStoreUndefined: Self = StObject.set(x, "destinationStore", js.undefined)
+    inline def setDestinationStoreUndefined: Self = StObject.set(x, "destinationStore", js.undefined)
     
-    @scala.inline
-    def setResourceFilter(value: FhirFilter): Self = StObject.set(x, "resourceFilter", value.asInstanceOf[js.Any])
+    inline def setResourceFilter(value: FhirFilter): Self = StObject.set(x, "resourceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceFilterUndefined: Self = StObject.set(x, "resourceFilter", js.undefined)
+    inline def setResourceFilterUndefined: Self = StObject.set(x, "resourceFilter", js.undefined)
   }
 }

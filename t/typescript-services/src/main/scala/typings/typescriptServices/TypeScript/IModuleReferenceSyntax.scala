@@ -12,8 +12,7 @@ trait IModuleReferenceSyntax
 }
 object IModuleReferenceSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -42,10 +41,8 @@ object IModuleReferenceSyntax {
     __obj.asInstanceOf[IModuleReferenceSyntax]
   }
   
-  @scala.inline
-  implicit class IModuleReferenceSyntaxMutableBuilder[Self <: IModuleReferenceSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IModuleReferenceSyntax](x: Self) {
     
-    @scala.inline
-    def setIsModuleReference(value: () => Boolean): Self = StObject.set(x, "isModuleReference", js.Any.fromFunction0(value))
+    inline def setIsModuleReference(value: () => Boolean): Self = StObject.set(x, "isModuleReference", js.Any.fromFunction0(value))
   }
 }

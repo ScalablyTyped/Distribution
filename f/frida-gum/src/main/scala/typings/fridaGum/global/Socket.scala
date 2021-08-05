@@ -21,8 +21,7 @@ object Socket {
   /**
     * Connects to a TCP or UNIX server.
     */
-  @scala.inline
-  def connect(options: SocketConnectOptions): js.Promise[typings.fridaGum.SocketConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.fridaGum.SocketConnection]]
+  inline def connect(options: SocketConnectOptions): js.Promise[typings.fridaGum.SocketConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.fridaGum.SocketConnection]]
   
   /**
     * Opens a TCP or UNIX listening socket.
@@ -30,26 +29,21 @@ object Socket {
     * Defaults to listening on both IPv4 and IPv6, if supported, and binding on all interfaces on a randomly
     * selected port.
     */
-  @scala.inline
-  def listen(): js.Promise[SocketListener] = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[js.Promise[SocketListener]]
-  @scala.inline
-  def listen(options: SocketListenOptions): js.Promise[SocketListener] = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocketListener]]
+  inline def listen(): js.Promise[SocketListener] = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[js.Promise[SocketListener]]
+  inline def listen(options: SocketListenOptions): js.Promise[SocketListener] = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocketListener]]
   
   /**
     * Inspects the OS socket `handle` and returns its local address, or `null` if invalid or unknown.
     */
-  @scala.inline
-  def localAddress(handle: Double): SocketEndpointAddress | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("localAddress")(handle.asInstanceOf[js.Any]).asInstanceOf[SocketEndpointAddress | Null]
+  inline def localAddress(handle: Double): SocketEndpointAddress | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("localAddress")(handle.asInstanceOf[js.Any]).asInstanceOf[SocketEndpointAddress | Null]
   
   /**
     * Inspects the OS socket `handle` and returns its peer address, or `null` if invalid or unknown.
     */
-  @scala.inline
-  def peerAddress(handle: Double): SocketEndpointAddress | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("peerAddress")(handle.asInstanceOf[js.Any]).asInstanceOf[SocketEndpointAddress | Null]
+  inline def peerAddress(handle: Double): SocketEndpointAddress | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("peerAddress")(handle.asInstanceOf[js.Any]).asInstanceOf[SocketEndpointAddress | Null]
   
   /**
     * Inspects the OS socket `handle` and returns its type, or `null` if invalid or unknown.
     */
-  @scala.inline
-  def `type`(handle: Double): SocketType | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(handle.asInstanceOf[js.Any]).asInstanceOf[SocketType | Null]
+  inline def `type`(handle: Double): SocketType | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(handle.asInstanceOf[js.Any]).asInstanceOf[SocketType | Null]
 }

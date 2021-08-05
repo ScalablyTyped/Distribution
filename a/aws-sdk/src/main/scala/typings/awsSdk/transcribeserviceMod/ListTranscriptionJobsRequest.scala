@@ -28,37 +28,27 @@ trait ListTranscriptionJobsRequest extends StObject {
 }
 object ListTranscriptionJobsRequest {
   
-  @scala.inline
-  def apply(): ListTranscriptionJobsRequest = {
+  inline def apply(): ListTranscriptionJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTranscriptionJobsRequest]
   }
   
-  @scala.inline
-  implicit class ListTranscriptionJobsRequestMutableBuilder[Self <: ListTranscriptionJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTranscriptionJobsRequest](x: Self) {
     
-    @scala.inline
-    def setJobNameContains(value: TranscriptionJobName): Self = StObject.set(x, "JobNameContains", value.asInstanceOf[js.Any])
+    inline def setJobNameContains(value: TranscriptionJobName): Self = StObject.set(x, "JobNameContains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameContainsUndefined: Self = StObject.set(x, "JobNameContains", js.undefined)
+    inline def setJobNameContainsUndefined: Self = StObject.set(x, "JobNameContains", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TranscriptionJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TranscriptionJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

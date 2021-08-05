@@ -24,17 +24,13 @@ object tableCellContentMod {
   trait SortOrder extends StObject
   object SortOrder {
     
-    @scala.inline
-    def ascending: typings.reactMdTable.reactMdTableStrings.ascending = "ascending".asInstanceOf[typings.reactMdTable.reactMdTableStrings.ascending]
+    inline def ascending: typings.reactMdTable.reactMdTableStrings.ascending = "ascending".asInstanceOf[typings.reactMdTable.reactMdTableStrings.ascending]
     
-    @scala.inline
-    def descending: typings.reactMdTable.reactMdTableStrings.descending = "descending".asInstanceOf[typings.reactMdTable.reactMdTableStrings.descending]
+    inline def descending: typings.reactMdTable.reactMdTableStrings.descending = "descending".asInstanceOf[typings.reactMdTable.reactMdTableStrings.descending]
     
-    @scala.inline
-    def none: typings.reactMdTable.reactMdTableStrings.none = "none".asInstanceOf[typings.reactMdTable.reactMdTableStrings.none]
+    inline def none: typings.reactMdTable.reactMdTableStrings.none = "none".asInstanceOf[typings.reactMdTable.reactMdTableStrings.none]
     
-    @scala.inline
-    def other: typings.reactMdTable.reactMdTableStrings.other = "other".asInstanceOf[typings.reactMdTable.reactMdTableStrings.other]
+    inline def other: typings.reactMdTable.reactMdTableStrings.other = "other".asInstanceOf[typings.reactMdTable.reactMdTableStrings.other]
   }
   
   trait TableCellContentProps
@@ -64,38 +60,28 @@ object tableCellContentMod {
   }
   object TableCellContentProps {
     
-    @scala.inline
-    def apply(): TableCellContentProps = {
+    inline def apply(): TableCellContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableCellContentProps]
     }
     
-    @scala.inline
-    implicit class TableCellContentPropsMutableBuilder[Self <: TableCellContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableCellContentProps](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
+      inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
+      inline def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
       
-      @scala.inline
-      def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

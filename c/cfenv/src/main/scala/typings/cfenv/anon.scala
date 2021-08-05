@@ -14,26 +14,20 @@ object anon {
   }
   object Application {
     
-    @scala.inline
-    def apply(): Application = {
+    inline def apply(): Application = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Application]
     }
     
-    @scala.inline
-    implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+    extension [Self <: Application](x: Self) {
       
-      @scala.inline
-      def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      @scala.inline
-      def setServices(value: String): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+      inline def setServices(value: String): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+      inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     }
   }
 }

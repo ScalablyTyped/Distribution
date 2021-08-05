@@ -17,11 +17,9 @@ object skeletonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseDateTimeSkeleton(skeleton: String): ExtendedDateTimeFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any]).asInstanceOf[ExtendedDateTimeFormatOptions]
+  inline def parseDateTimeSkeleton(skeleton: String): ExtendedDateTimeFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any]).asInstanceOf[ExtendedDateTimeFormatOptions]
   
-  @scala.inline
-  def parseNumberSkeleton(tokens: js.Array[NumberSkeletonToken]): NumberFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumberSkeleton")(tokens.asInstanceOf[js.Any]).asInstanceOf[NumberFormatOptions]
+  inline def parseNumberSkeleton(tokens: js.Array[NumberSkeletonToken]): NumberFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumberSkeleton")(tokens.asInstanceOf[js.Any]).asInstanceOf[NumberFormatOptions]
   
   trait ExtendedDateTimeFormatOptions
     extends StObject
@@ -31,20 +29,16 @@ object skeletonMod {
   }
   object ExtendedDateTimeFormatOptions {
     
-    @scala.inline
-    def apply(): ExtendedDateTimeFormatOptions = {
+    inline def apply(): ExtendedDateTimeFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtendedDateTimeFormatOptions]
     }
     
-    @scala.inline
-    implicit class ExtendedDateTimeFormatOptionsMutableBuilder[Self <: ExtendedDateTimeFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExtendedDateTimeFormatOptions](x: Self) {
       
-      @scala.inline
-      def setHourCycle(value: h11 | h12 | h23 | h24): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
+      inline def setHourCycle(value: h11 | h12 | h23 | h24): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourCycleUndefined: Self = StObject.set(x, "hourCycle", js.undefined)
+      inline def setHourCycleUndefined: Self = StObject.set(x, "hourCycle", js.undefined)
     }
   }
 }

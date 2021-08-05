@@ -58,44 +58,32 @@ object lineBasicMaterialMod {
   }
   object LineBasicMaterialParameters {
     
-    @scala.inline
-    def apply(): LineBasicMaterialParameters = {
+    inline def apply(): LineBasicMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineBasicMaterialParameters]
     }
     
-    @scala.inline
-    implicit class LineBasicMaterialParametersMutableBuilder[Self <: LineBasicMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: LineBasicMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setLinecap(value: String): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
+      inline def setLinecap(value: String): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
+      inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
       
-      @scala.inline
-      def setLinejoin(value: String): Self = StObject.set(x, "linejoin", value.asInstanceOf[js.Any])
+      inline def setLinejoin(value: String): Self = StObject.set(x, "linejoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinejoinUndefined: Self = StObject.set(x, "linejoin", js.undefined)
+      inline def setLinejoinUndefined: Self = StObject.set(x, "linejoin", js.undefined)
       
-      @scala.inline
-      def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
+      inline def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinewidthUndefined: Self = StObject.set(x, "linewidth", js.undefined)
+      inline def setLinewidthUndefined: Self = StObject.set(x, "linewidth", js.undefined)
       
-      @scala.inline
-      def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
+      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
+      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
     }
   }
 }

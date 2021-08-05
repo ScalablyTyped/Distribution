@@ -36,13 +36,10 @@ object webglLayerMod {
     /* "GENERATE_BUFFERS" */ val GENERATE_BUFFERS: typings.ol.webglLayerMod.WebGLWorkerMessageType.GENERATE_BUFFERS & String = js.native
   }
   
-  @scala.inline
-  def colorDecodeId(color: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colorDecodeId")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def colorDecodeId(color: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colorDecodeId")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def colorEncodeId(id: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def colorEncodeId(id: Double, opt_array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any], opt_array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def colorEncodeId(id: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def colorEncodeId(id: Double, opt_array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any], opt_array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   trait BufferPositions extends StObject {
     
@@ -52,20 +49,16 @@ object webglLayerMod {
   }
   object BufferPositions {
     
-    @scala.inline
-    def apply(indexPosition: Double, vertexPosition: Double): BufferPositions = {
+    inline def apply(indexPosition: Double, vertexPosition: Double): BufferPositions = {
       val __obj = js.Dynamic.literal(indexPosition = indexPosition.asInstanceOf[js.Any], vertexPosition = vertexPosition.asInstanceOf[js.Any])
       __obj.asInstanceOf[BufferPositions]
     }
     
-    @scala.inline
-    implicit class BufferPositionsMutableBuilder[Self <: BufferPositions] (val x: Self) extends AnyVal {
+    extension [Self <: BufferPositions](x: Self) {
       
-      @scala.inline
-      def setIndexPosition(value: Double): Self = StObject.set(x, "indexPosition", value.asInstanceOf[js.Any])
+      inline def setIndexPosition(value: Double): Self = StObject.set(x, "indexPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexPosition(value: Double): Self = StObject.set(x, "vertexPosition", value.asInstanceOf[js.Any])
+      inline def setVertexPosition(value: Double): Self = StObject.set(x, "vertexPosition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,29 +70,22 @@ object webglLayerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
+      inline def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
+      inline def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
       
-      @scala.inline
-      def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
+      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
     }
   }
   
@@ -115,38 +101,28 @@ object webglLayerMod {
   }
   object PostProcessesOptions {
     
-    @scala.inline
-    def apply(): PostProcessesOptions = {
+    inline def apply(): PostProcessesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PostProcessesOptions]
     }
     
-    @scala.inline
-    implicit class PostProcessesOptionsMutableBuilder[Self <: PostProcessesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostProcessesOptions](x: Self) {
       
-      @scala.inline
-      def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
+      inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
+      inline def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
       
-      @scala.inline
-      def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
+      inline def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
+      inline def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      @scala.inline
-      def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
+      inline def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
+      inline def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
     }
   }
   
@@ -159,7 +135,7 @@ object webglLayerMod {
       */
     def getShaderCompileErrors(): String | Null = js.native
     
-    var helper: typings.ol.helperMod.default = js.native
+    /* protected */ var helper: typings.ol.helperMod.default = js.native
   }
   
   trait WebGLWorkerGenerateBuffersMessage extends StObject {
@@ -176,39 +152,29 @@ object webglLayerMod {
   }
   object WebGLWorkerGenerateBuffersMessage {
     
-    @scala.inline
-    def apply(renderInstructions: ArrayBuffer, `type`: WebGLWorkerMessageType): WebGLWorkerGenerateBuffersMessage = {
+    inline def apply(renderInstructions: ArrayBuffer, `type`: WebGLWorkerMessageType): WebGLWorkerGenerateBuffersMessage = {
       val __obj = js.Dynamic.literal(renderInstructions = renderInstructions.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebGLWorkerGenerateBuffersMessage]
     }
     
-    @scala.inline
-    implicit class WebGLWorkerGenerateBuffersMessageMutableBuilder[Self <: WebGLWorkerGenerateBuffersMessage] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLWorkerGenerateBuffersMessage](x: Self) {
       
-      @scala.inline
-      def setCustomAttributesCount(value: Double): Self = StObject.set(x, "customAttributesCount", value.asInstanceOf[js.Any])
+      inline def setCustomAttributesCount(value: Double): Self = StObject.set(x, "customAttributesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAttributesCountUndefined: Self = StObject.set(x, "customAttributesCount", js.undefined)
+      inline def setCustomAttributesCountUndefined: Self = StObject.set(x, "customAttributesCount", js.undefined)
       
-      @scala.inline
-      def setIndexBuffer(value: ArrayBuffer): Self = StObject.set(x, "indexBuffer", value.asInstanceOf[js.Any])
+      inline def setIndexBuffer(value: ArrayBuffer): Self = StObject.set(x, "indexBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexBufferUndefined: Self = StObject.set(x, "indexBuffer", js.undefined)
+      inline def setIndexBufferUndefined: Self = StObject.set(x, "indexBuffer", js.undefined)
       
-      @scala.inline
-      def setRenderInstructions(value: ArrayBuffer): Self = StObject.set(x, "renderInstructions", value.asInstanceOf[js.Any])
+      inline def setRenderInstructions(value: ArrayBuffer): Self = StObject.set(x, "renderInstructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: WebGLWorkerMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: WebGLWorkerMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexBuffer(value: ArrayBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
+      inline def setVertexBuffer(value: ArrayBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexBufferUndefined: Self = StObject.set(x, "vertexBuffer", js.undefined)
+      inline def setVertexBufferUndefined: Self = StObject.set(x, "vertexBuffer", js.undefined)
     }
   }
 }

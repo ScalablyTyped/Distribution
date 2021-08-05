@@ -12,23 +12,23 @@ class Boot () extends StObject {
     * The instance of agent
     * @member {Agent}
     */
-  var agent: Agent = js.native
+  /* protected */ var agent: Agent = js.native
   
   /**
     * The instance of app
     * @member {Application}
     */
-  var app: Application = js.native
+  /* protected */ var app: Application = js.native
   
   /**
     * The configuration of application
     * @member {EggAppConfig}
     */
-  var config: EggAppConfig = js.native
+  /* protected */ var config: EggAppConfig = js.native
   
   /**
     * logger
     * @member {EggLogger}
     */
-  var logger: EggLogger = js.native
+  /* protected */ var logger: EggLogger = js.native
 }

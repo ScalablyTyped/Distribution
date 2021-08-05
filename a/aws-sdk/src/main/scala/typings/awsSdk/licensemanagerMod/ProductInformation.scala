@@ -18,22 +18,17 @@ trait ProductInformation extends StObject {
 }
 object ProductInformation {
   
-  @scala.inline
-  def apply(ProductInformationFilterList: ProductInformationFilterList, ResourceType: String): ProductInformation = {
+  inline def apply(ProductInformationFilterList: ProductInformationFilterList, ResourceType: String): ProductInformation = {
     val __obj = js.Dynamic.literal(ProductInformationFilterList = ProductInformationFilterList.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductInformation]
   }
   
-  @scala.inline
-  implicit class ProductInformationMutableBuilder[Self <: ProductInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ProductInformation](x: Self) {
     
-    @scala.inline
-    def setProductInformationFilterList(value: ProductInformationFilterList): Self = StObject.set(x, "ProductInformationFilterList", value.asInstanceOf[js.Any])
+    inline def setProductInformationFilterList(value: ProductInformationFilterList): Self = StObject.set(x, "ProductInformationFilterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductInformationFilterListVarargs(value: ProductInformationFilter*): Self = StObject.set(x, "ProductInformationFilterList", js.Array(value :_*))
+    inline def setProductInformationFilterListVarargs(value: ProductInformationFilter*): Self = StObject.set(x, "ProductInformationFilterList", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

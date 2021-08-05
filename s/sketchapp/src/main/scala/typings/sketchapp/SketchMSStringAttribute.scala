@@ -13,19 +13,15 @@ trait SketchMSStringAttribute extends StObject {
 }
 object SketchMSStringAttribute {
   
-  @scala.inline
-  def apply(attributes: SketchMSAttributes): SketchMSStringAttribute = {
+  inline def apply(attributes: SketchMSAttributes): SketchMSStringAttribute = {
     val __obj = js.Dynamic.literal(_class = "stringAttribute", attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStringAttribute]
   }
   
-  @scala.inline
-  implicit class SketchMSStringAttributeMutableBuilder[Self <: SketchMSStringAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSStringAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: SketchMSAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: SketchMSAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: stringAttribute): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: stringAttribute): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait Channel extends StObject {
 }
 object Channel {
   
-  @scala.inline
-  def apply(channel: Double): Channel = {
+  inline def apply(channel: Double): Channel = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMask(value: typings.fabric.fabricImplMod.Image): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: typings.fabric.fabricImplMod.Image): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

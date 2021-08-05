@@ -19,20 +19,16 @@ trait ChannelObject
 }
 object ChannelObject {
   
-  @scala.inline
-  def apply(_id: String, common: ChannelCommon, native: Record[String, js.Any]): ChannelObject = {
+  inline def apply(_id: String, common: ChannelCommon, native: Record[String, js.Any]): ChannelObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("channel")
     __obj.asInstanceOf[ChannelObject]
   }
   
-  @scala.inline
-  implicit class ChannelObjectMutableBuilder[Self <: ChannelObject] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: ChannelCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: ChannelCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

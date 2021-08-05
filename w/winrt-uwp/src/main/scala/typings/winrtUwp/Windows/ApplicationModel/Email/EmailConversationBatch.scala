@@ -16,19 +16,15 @@ trait EmailConversationBatch extends StObject {
 }
 object EmailConversationBatch {
   
-  @scala.inline
-  def apply(conversations: IVectorView[EmailConversation], status: EmailBatchStatus): EmailConversationBatch = {
+  inline def apply(conversations: IVectorView[EmailConversation], status: EmailBatchStatus): EmailConversationBatch = {
     val __obj = js.Dynamic.literal(conversations = conversations.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailConversationBatch]
   }
   
-  @scala.inline
-  implicit class EmailConversationBatchMutableBuilder[Self <: EmailConversationBatch] (val x: Self) extends AnyVal {
+  extension [Self <: EmailConversationBatch](x: Self) {
     
-    @scala.inline
-    def setConversations(value: IVectorView[EmailConversation]): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
+    inline def setConversations(value: IVectorView[EmailConversation]): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: EmailBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EmailBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

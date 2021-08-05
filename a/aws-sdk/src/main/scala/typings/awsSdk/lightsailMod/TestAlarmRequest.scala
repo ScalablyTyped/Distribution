@@ -18,19 +18,15 @@ trait TestAlarmRequest extends StObject {
 }
 object TestAlarmRequest {
   
-  @scala.inline
-  def apply(alarmName: ResourceName, state: AlarmState): TestAlarmRequest = {
+  inline def apply(alarmName: ResourceName, state: AlarmState): TestAlarmRequest = {
     val __obj = js.Dynamic.literal(alarmName = alarmName.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestAlarmRequest]
   }
   
-  @scala.inline
-  implicit class TestAlarmRequestMutableBuilder[Self <: TestAlarmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestAlarmRequest](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: AlarmState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: AlarmState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

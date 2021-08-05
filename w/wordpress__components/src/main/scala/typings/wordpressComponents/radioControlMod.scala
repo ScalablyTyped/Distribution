@@ -12,8 +12,7 @@ object radioControlMod {
   object default {
     
     // tslint:disable-next-line:no-unnecessary-generics
-    @scala.inline
-    def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/radio-control", JSImport.Default)
     @js.native
@@ -36,20 +35,16 @@ object radioControlMod {
     }
     object Option {
       
-      @scala.inline
-      def apply[T](label: String, value: T): Option[T] = {
+      inline def apply[T](label: String, value: T): Option[T] = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Option[T]]
       }
       
-      @scala.inline
-      implicit class OptionMutableBuilder[Self <: Option[?], T] (val x: Self & Option[T]) extends AnyVal {
+      extension [Self <: Option[?], T](x: Self & Option[T]) {
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     

@@ -28,8 +28,7 @@ trait AssociateDeviceWithPlacementRequest extends StObject {
 }
 object AssociateDeviceWithPlacementRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceId: DeviceId,
     deviceTemplateName: DeviceTemplateName,
     placementName: PlacementName,
@@ -39,19 +38,14 @@ object AssociateDeviceWithPlacementRequest {
     __obj.asInstanceOf[AssociateDeviceWithPlacementRequest]
   }
   
-  @scala.inline
-  implicit class AssociateDeviceWithPlacementRequestMutableBuilder[Self <: AssociateDeviceWithPlacementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateDeviceWithPlacementRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: DeviceId): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTemplateName(value: DeviceTemplateName): Self = StObject.set(x, "deviceTemplateName", value.asInstanceOf[js.Any])
+    inline def setDeviceTemplateName(value: DeviceTemplateName): Self = StObject.set(x, "deviceTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
+    inline def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

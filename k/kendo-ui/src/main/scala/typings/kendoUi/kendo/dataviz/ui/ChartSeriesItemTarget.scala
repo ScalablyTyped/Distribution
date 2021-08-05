@@ -14,31 +14,23 @@ trait ChartSeriesItemTarget extends StObject {
 }
 object ChartSeriesItemTarget {
   
-  @scala.inline
-  def apply(): ChartSeriesItemTarget = {
+  inline def apply(): ChartSeriesItemTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesItemTarget]
   }
   
-  @scala.inline
-  implicit class ChartSeriesItemTargetMutableBuilder[Self <: ChartSeriesItemTarget] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesItemTarget](x: Self) {
     
-    @scala.inline
-    def setBorder(value: js.Function | ChartSeriesItemTargetBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: js.Function | ChartSeriesItemTargetBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLine(value: ChartSeriesItemTargetLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ChartSeriesItemTargetLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

@@ -17,9 +17,9 @@ object appServiceBotMod {
   class AppServiceBot protected () extends StObject {
     def this(client: js.Any, registration: AppServiceRegistration, memberCache: MembershipCache) = this()
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
-    var exclusiveUserRegexes: js.Any = js.native
+    /* private */ var exclusiveUserRegexes: js.Any = js.native
     
     def getClient(): js.Any = js.native
     
@@ -48,6 +48,6 @@ object appServiceBotMod {
       */
     def isRemoteUser(userId: String): Boolean = js.native
     
-    var memberCache: js.Any = js.native
+    /* private */ var memberCache: js.Any = js.native
   }
 }

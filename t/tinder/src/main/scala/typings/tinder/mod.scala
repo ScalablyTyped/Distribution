@@ -311,8 +311,7 @@ object mod {
   }
   object TinderHistory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blocks: js.Array[String],
       deleted_lists: js.Array[js.Any],
       last_activity_date: String,
@@ -325,47 +324,33 @@ object mod {
       __obj.asInstanceOf[TinderHistory]
     }
     
-    @scala.inline
-    implicit class TinderHistoryMutableBuilder[Self <: TinderHistory] (val x: Self) extends AnyVal {
+    extension [Self <: TinderHistory](x: Self) {
       
-      @scala.inline
-      def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value :_*))
       
-      @scala.inline
-      def setDeleted_lists(value: js.Array[js.Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
+      inline def setDeleted_lists(value: js.Array[js.Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleted_listsVarargs(value: js.Any*): Self = StObject.set(x, "deleted_lists", js.Array(value :_*))
+      inline def setDeleted_listsVarargs(value: js.Any*): Self = StObject.set(x, "deleted_lists", js.Array(value :_*))
       
-      @scala.inline
-      def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
+      inline def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiked_messages(value: js.Array[TinderLikedMessage]): Self = StObject.set(x, "liked_messages", value.asInstanceOf[js.Any])
+      inline def setLiked_messages(value: js.Array[TinderLikedMessage]): Self = StObject.set(x, "liked_messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiked_messagesVarargs(value: TinderLikedMessage*): Self = StObject.set(x, "liked_messages", js.Array(value :_*))
+      inline def setLiked_messagesVarargs(value: TinderLikedMessage*): Self = StObject.set(x, "liked_messages", js.Array(value :_*))
       
-      @scala.inline
-      def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+      inline def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
+      inline def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
       
-      @scala.inline
-      def setMatches(value: js.Array[TinderMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[TinderMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesVarargs(value: TinderMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: TinderMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
       
-      @scala.inline
-      def setSquads(value: js.Array[js.Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
+      inline def setSquads(value: js.Array[js.Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquadsVarargs(value: js.Any*): Self = StObject.set(x, "squads", js.Array(value :_*))
+      inline def setSquadsVarargs(value: js.Any*): Self = StObject.set(x, "squads", js.Array(value :_*))
     }
   }
   
@@ -383,29 +368,22 @@ object mod {
   }
   object TinderLikedMessage {
     
-    @scala.inline
-    def apply(is_liked: Boolean, liker_id: String, match_id: String, message_id: String, updated_at: String): TinderLikedMessage = {
+    inline def apply(is_liked: Boolean, liker_id: String, match_id: String, message_id: String, updated_at: String): TinderLikedMessage = {
       val __obj = js.Dynamic.literal(is_liked = is_liked.asInstanceOf[js.Any], liker_id = liker_id.asInstanceOf[js.Any], match_id = match_id.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
       __obj.asInstanceOf[TinderLikedMessage]
     }
     
-    @scala.inline
-    implicit class TinderLikedMessageMutableBuilder[Self <: TinderLikedMessage] (val x: Self) extends AnyVal {
+    extension [Self <: TinderLikedMessage](x: Self) {
       
-      @scala.inline
-      def setIs_liked(value: Boolean): Self = StObject.set(x, "is_liked", value.asInstanceOf[js.Any])
+      inline def setIs_liked(value: Boolean): Self = StObject.set(x, "is_liked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiker_id(value: String): Self = StObject.set(x, "liker_id", value.asInstanceOf[js.Any])
+      inline def setLiker_id(value: String): Self = StObject.set(x, "liker_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch_id(value: String): Self = StObject.set(x, "match_id", value.asInstanceOf[js.Any])
+      inline def setMatch_id(value: String): Self = StObject.set(x, "match_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+      inline def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     }
   }
   
@@ -447,8 +425,7 @@ object mod {
   }
   object TinderMatch {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _id: String,
       closed: Boolean,
       common_friend_count: Double,
@@ -471,65 +448,45 @@ object mod {
       __obj.asInstanceOf[TinderMatch]
     }
     
-    @scala.inline
-    implicit class TinderMatchMutableBuilder[Self <: TinderMatch] (val x: Self) extends AnyVal {
+    extension [Self <: TinderMatch](x: Self) {
       
-      @scala.inline
-      def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon_friend_count(value: Double): Self = StObject.set(x, "common_friend_count", value.asInstanceOf[js.Any])
+      inline def setCommon_friend_count(value: Double): Self = StObject.set(x, "common_friend_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon_like_count(value: Double): Self = StObject.set(x, "common_like_count", value.asInstanceOf[js.Any])
+      inline def setCommon_like_count(value: Double): Self = StObject.set(x, "common_like_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_date(value: String): Self = StObject.set(x, "created_date", value.asInstanceOf[js.Any])
+      inline def setCreated_date(value: String): Self = StObject.set(x, "created_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDead(value: Boolean): Self = StObject.set(x, "dead", value.asInstanceOf[js.Any])
+      inline def setDead(value: Boolean): Self = StObject.set(x, "dead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing_moments(value: Boolean): Self = StObject.set(x, "following_moments", value.asInstanceOf[js.Any])
+      inline def setFollowing_moments(value: Boolean): Self = StObject.set(x, "following_moments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_super_like(value: Boolean): Self = StObject.set(x, "is_super_like", value.asInstanceOf[js.Any])
+      inline def setIs_super_like(value: Boolean): Self = StObject.set(x, "is_super_like", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
+      inline def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage_count(value: Double): Self = StObject.set(x, "message_count", value.asInstanceOf[js.Any])
+      inline def setMessage_count(value: Double): Self = StObject.set(x, "message_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessages(value: js.Array[TinderMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[TinderMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: TinderMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: TinderMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
       
-      @scala.inline
-      def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+      inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticipants(value: js.Array[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+      inline def setParticipants(value: js.Array[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticipantsVarargs(value: String*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: String*): Self = StObject.set(x, "participants", js.Array(value :_*))
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerson(value: TinderPerson): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+      inline def setPerson(value: TinderPerson): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -553,8 +510,7 @@ object mod {
   }
   object TinderMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _id: String,
       created_date: String,
       from: String,
@@ -568,32 +524,23 @@ object mod {
       __obj.asInstanceOf[TinderMessage]
     }
     
-    @scala.inline
-    implicit class TinderMessageMutableBuilder[Self <: TinderMessage] (val x: Self) extends AnyVal {
+    extension [Self <: TinderMessage](x: Self) {
       
-      @scala.inline
-      def setCreated_date(value: String): Self = StObject.set(x, "created_date", value.asInstanceOf[js.Any])
+      inline def setCreated_date(value: String): Self = StObject.set(x, "created_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch_id(value: String): Self = StObject.set(x, "match_id", value.asInstanceOf[js.Any])
+      inline def setMatch_id(value: String): Self = StObject.set(x, "match_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSent_date(value: String): Self = StObject.set(x, "sent_date", value.asInstanceOf[js.Any])
+      inline def setSent_date(value: String): Self = StObject.set(x, "sent_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -619,8 +566,7 @@ object mod {
   }
   object TinderPerson {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _id: String,
       badges: js.Array[js.Any],
       bio: String,
@@ -635,41 +581,29 @@ object mod {
       __obj.asInstanceOf[TinderPerson]
     }
     
-    @scala.inline
-    implicit class TinderPersonMutableBuilder[Self <: TinderPerson] (val x: Self) extends AnyVal {
+    extension [Self <: TinderPerson](x: Self) {
       
-      @scala.inline
-      def setBadges(value: js.Array[js.Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+      inline def setBadges(value: js.Array[js.Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgesVarargs(value: js.Any*): Self = StObject.set(x, "badges", js.Array(value :_*))
+      inline def setBadgesVarargs(value: js.Any*): Self = StObject.set(x, "badges", js.Array(value :_*))
       
-      @scala.inline
-      def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
+      inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBirth_date(value: String): Self = StObject.set(x, "birth_date", value.asInstanceOf[js.Any])
+      inline def setBirth_date(value: String): Self = StObject.set(x, "birth_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGender(value: Double): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: Double): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[TinderPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[TinderPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setPing_time(value: String): Self = StObject.set(x, "ping_time", value.asInstanceOf[js.Any])
+      inline def setPing_time(value: String): Self = StObject.set(x, "ping_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_number(value: Double): Self = StObject.set(x, "user_number", value.asInstanceOf[js.Any])
+      inline def setUser_number(value: Double): Self = StObject.set(x, "user_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -697,8 +631,7 @@ object mod {
   }
   object TinderPhoto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `extension`: String,
       fileName: String,
       id: String,
@@ -715,41 +648,29 @@ object mod {
       __obj.asInstanceOf[TinderPhoto]
     }
     
-    @scala.inline
-    implicit class TinderPhotoMutableBuilder[Self <: TinderPhoto] (val x: Self) extends AnyVal {
+    extension [Self <: TinderPhoto](x: Self) {
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain(value: Boolean): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: Boolean): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessedFiles(value: js.Array[TinderPhotoProcessedFile]): Self = StObject.set(x, "processedFiles", value.asInstanceOf[js.Any])
+      inline def setProcessedFiles(value: js.Array[TinderPhotoProcessedFile]): Self = StObject.set(x, "processedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessedFilesVarargs(value: TinderPhotoProcessedFile*): Self = StObject.set(x, "processedFiles", js.Array(value :_*))
+      inline def setProcessedFilesVarargs(value: TinderPhotoProcessedFile*): Self = StObject.set(x, "processedFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdistance_percent(value: Double): Self = StObject.set(x, "xdistance_percent", value.asInstanceOf[js.Any])
+      inline def setXdistance_percent(value: Double): Self = StObject.set(x, "xdistance_percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXoffset_percent(value: Double): Self = StObject.set(x, "xoffset_percent", value.asInstanceOf[js.Any])
+      inline def setXoffset_percent(value: Double): Self = StObject.set(x, "xoffset_percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYdistance_percent(value: Double): Self = StObject.set(x, "ydistance_percent", value.asInstanceOf[js.Any])
+      inline def setYdistance_percent(value: Double): Self = StObject.set(x, "ydistance_percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoffset_percent(value: Double): Self = StObject.set(x, "yoffset_percent", value.asInstanceOf[js.Any])
+      inline def setYoffset_percent(value: Double): Self = StObject.set(x, "yoffset_percent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -763,23 +684,18 @@ object mod {
   }
   object TinderPhotoProcessedFile {
     
-    @scala.inline
-    def apply(height: Double, url: String, width: Double): TinderPhotoProcessedFile = {
+    inline def apply(height: Double, url: String, width: Double): TinderPhotoProcessedFile = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[TinderPhotoProcessedFile]
     }
     
-    @scala.inline
-    implicit class TinderPhotoProcessedFileMutableBuilder[Self <: TinderPhotoProcessedFile] (val x: Self) extends AnyVal {
+    extension [Self <: TinderPhotoProcessedFile](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -832,8 +748,7 @@ object mod {
   }
   object TinderRecommendation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _id: String,
       badges: js.Array[js.Any],
       bio: String,
@@ -857,89 +772,61 @@ object mod {
       __obj.asInstanceOf[TinderRecommendation]
     }
     
-    @scala.inline
-    implicit class TinderRecommendationMutableBuilder[Self <: TinderRecommendation] (val x: Self) extends AnyVal {
+    extension [Self <: TinderRecommendation](x: Self) {
       
-      @scala.inline
-      def setBadges(value: js.Array[js.Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+      inline def setBadges(value: js.Array[js.Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgesVarargs(value: js.Any*): Self = StObject.set(x, "badges", js.Array(value :_*))
+      inline def setBadgesVarargs(value: js.Any*): Self = StObject.set(x, "badges", js.Array(value :_*))
       
-      @scala.inline
-      def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
+      inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBirth_date(value: String): Self = StObject.set(x, "birth_date", value.asInstanceOf[js.Any])
+      inline def setBirth_date(value: String): Self = StObject.set(x, "birth_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBirth_date_info(value: String): Self = StObject.set(x, "birth_date_info", value.asInstanceOf[js.Any])
+      inline def setBirth_date_info(value: String): Self = StObject.set(x, "birth_date_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon_connections(value: js.Array[js.Any]): Self = StObject.set(x, "common_connections", value.asInstanceOf[js.Any])
+      inline def setCommon_connections(value: js.Array[js.Any]): Self = StObject.set(x, "common_connections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon_connectionsVarargs(value: js.Any*): Self = StObject.set(x, "common_connections", js.Array(value :_*))
+      inline def setCommon_connectionsVarargs(value: js.Any*): Self = StObject.set(x, "common_connections", js.Array(value :_*))
       
-      @scala.inline
-      def setCommon_friends(value: js.Array[js.Any]): Self = StObject.set(x, "common_friends", value.asInstanceOf[js.Any])
+      inline def setCommon_friends(value: js.Array[js.Any]): Self = StObject.set(x, "common_friends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon_friendsVarargs(value: js.Any*): Self = StObject.set(x, "common_friends", js.Array(value :_*))
+      inline def setCommon_friendsVarargs(value: js.Any*): Self = StObject.set(x, "common_friends", js.Array(value :_*))
       
-      @scala.inline
-      def setCommon_interests(value: js.Array[js.Any]): Self = StObject.set(x, "common_interests", value.asInstanceOf[js.Any])
+      inline def setCommon_interests(value: js.Array[js.Any]): Self = StObject.set(x, "common_interests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon_interestsVarargs(value: js.Any*): Self = StObject.set(x, "common_interests", js.Array(value :_*))
+      inline def setCommon_interestsVarargs(value: js.Any*): Self = StObject.set(x, "common_interests", js.Array(value :_*))
       
-      @scala.inline
-      def setCommon_likes(value: js.Array[js.Any]): Self = StObject.set(x, "common_likes", value.asInstanceOf[js.Any])
+      inline def setCommon_likes(value: js.Array[js.Any]): Self = StObject.set(x, "common_likes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon_likesVarargs(value: js.Any*): Self = StObject.set(x, "common_likes", js.Array(value :_*))
+      inline def setCommon_likesVarargs(value: js.Any*): Self = StObject.set(x, "common_likes", js.Array(value :_*))
       
-      @scala.inline
-      def setDistance_mi(value: Number): Self = StObject.set(x, "distance_mi", value.asInstanceOf[js.Any])
+      inline def setDistance_mi(value: Number): Self = StObject.set(x, "distance_mi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGender(value: Double): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: Double): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobs(value: js.Array[js.Any]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+      inline def setJobs(value: js.Array[js.Any]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobsVarargs(value: js.Any*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+      inline def setJobsVarargs(value: js.Any*): Self = StObject.set(x, "jobs", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotos(value: js.Array[TinderPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[TinderPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setPing_time(value: String): Self = StObject.set(x, "ping_time", value.asInstanceOf[js.Any])
+      inline def setPing_time(value: String): Self = StObject.set(x, "ping_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchools(value: js.Array[js.Any]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
+      inline def setSchools(value: js.Array[js.Any]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchoolsVarargs(value: js.Any*): Self = StObject.set(x, "schools", js.Array(value :_*))
+      inline def setSchoolsVarargs(value: js.Any*): Self = StObject.set(x, "schools", js.Array(value :_*))
       
-      @scala.inline
-      def setTeaser(value: typings.tinder.anon.String): Self = StObject.set(x, "teaser", value.asInstanceOf[js.Any])
+      inline def setTeaser(value: typings.tinder.anon.String): Self = StObject.set(x, "teaser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncommon_interests(value: js.Array[js.Any]): Self = StObject.set(x, "uncommon_interests", value.asInstanceOf[js.Any])
+      inline def setUncommon_interests(value: js.Array[js.Any]): Self = StObject.set(x, "uncommon_interests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncommon_interestsVarargs(value: js.Any*): Self = StObject.set(x, "uncommon_interests", js.Array(value :_*))
+      inline def setUncommon_interestsVarargs(value: js.Any*): Self = StObject.set(x, "uncommon_interests", js.Array(value :_*))
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -957,29 +844,22 @@ object mod {
   }
   object TinderRecommendationsResult {
     
-    @scala.inline
-    def apply(results: js.Array[TinderRecommendation], status: Number): TinderRecommendationsResult = {
+    inline def apply(results: js.Array[TinderRecommendation], status: Number): TinderRecommendationsResult = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[TinderRecommendationsResult]
     }
     
-    @scala.inline
-    implicit class TinderRecommendationsResultMutableBuilder[Self <: TinderRecommendationsResult] (val x: Self) extends AnyVal {
+    extension [Self <: TinderRecommendationsResult](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setResults(value: js.Array[TinderRecommendation]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[TinderRecommendation]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: TinderRecommendation*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: TinderRecommendation*): Self = StObject.set(x, "results", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: Number): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Number): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1003,8 +883,7 @@ object mod {
   }
   object TinderUpdates {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blocks: js.Array[js.Any],
       deleted_lists: js.Array[js.Any],
       last_activity_date: String,
@@ -1018,53 +897,37 @@ object mod {
       __obj.asInstanceOf[TinderUpdates]
     }
     
-    @scala.inline
-    implicit class TinderUpdatesMutableBuilder[Self <: TinderUpdates] (val x: Self) extends AnyVal {
+    extension [Self <: TinderUpdates](x: Self) {
       
-      @scala.inline
-      def setBlocks(value: js.Array[js.Any]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: js.Array[js.Any]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksVarargs(value: js.Any*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: js.Any*): Self = StObject.set(x, "blocks", js.Array(value :_*))
       
-      @scala.inline
-      def setDeleted_lists(value: js.Array[js.Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
+      inline def setDeleted_lists(value: js.Array[js.Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleted_listsVarargs(value: js.Any*): Self = StObject.set(x, "deleted_lists", js.Array(value :_*))
+      inline def setDeleted_listsVarargs(value: js.Any*): Self = StObject.set(x, "deleted_lists", js.Array(value :_*))
       
-      @scala.inline
-      def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
+      inline def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiked_messages(value: js.Array[TinderMessage]): Self = StObject.set(x, "liked_messages", value.asInstanceOf[js.Any])
+      inline def setLiked_messages(value: js.Array[TinderMessage]): Self = StObject.set(x, "liked_messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiked_messagesVarargs(value: TinderMessage*): Self = StObject.set(x, "liked_messages", js.Array(value :_*))
+      inline def setLiked_messagesVarargs(value: TinderMessage*): Self = StObject.set(x, "liked_messages", js.Array(value :_*))
       
-      @scala.inline
-      def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+      inline def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
+      inline def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
       
-      @scala.inline
-      def setMatches(value: js.Array[js.Any]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[js.Any]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesVarargs(value: js.Any*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: js.Any*): Self = StObject.set(x, "matches", js.Array(value :_*))
       
-      @scala.inline
-      def setMatchmaker(value: js.Array[js.Any]): Self = StObject.set(x, "matchmaker", value.asInstanceOf[js.Any])
+      inline def setMatchmaker(value: js.Array[js.Any]): Self = StObject.set(x, "matchmaker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchmakerVarargs(value: js.Any*): Self = StObject.set(x, "matchmaker", js.Array(value :_*))
+      inline def setMatchmakerVarargs(value: js.Any*): Self = StObject.set(x, "matchmaker", js.Array(value :_*))
       
-      @scala.inline
-      def setSquads(value: js.Array[js.Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
+      inline def setSquads(value: js.Array[js.Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquadsVarargs(value: js.Any*): Self = StObject.set(x, "squads", js.Array(value :_*))
+      inline def setSquadsVarargs(value: js.Any*): Self = StObject.set(x, "squads", js.Array(value :_*))
     }
   }
 }

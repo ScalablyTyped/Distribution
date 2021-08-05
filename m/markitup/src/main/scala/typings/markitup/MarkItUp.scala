@@ -134,185 +134,126 @@ object MarkItUp {
   }
   object MarkupSet {
     
-    @scala.inline
-    def apply(): MarkupSet = {
+    inline def apply(): MarkupSet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarkupSet]
     }
     
-    @scala.inline
-    implicit class MarkupSetMutableBuilder[Self <: MarkupSet] (val x: Self) extends AnyVal {
+    extension [Self <: MarkupSet](x: Self) {
       
-      @scala.inline
-      def setAfterInsert(value: MarkupSet => String): Self = StObject.set(x, "afterInsert", js.Any.fromFunction1(value))
+      inline def setAfterInsert(value: MarkupSet => String): Self = StObject.set(x, "afterInsert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterInsertUndefined: Self = StObject.set(x, "afterInsert", js.undefined)
+      inline def setAfterInsertUndefined: Self = StObject.set(x, "afterInsert", js.undefined)
       
-      @scala.inline
-      def setAfterMultiInsert(value: MarkupSet => String): Self = StObject.set(x, "afterMultiInsert", js.Any.fromFunction1(value))
+      inline def setAfterMultiInsert(value: MarkupSet => String): Self = StObject.set(x, "afterMultiInsert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterMultiInsertUndefined: Self = StObject.set(x, "afterMultiInsert", js.undefined)
+      inline def setAfterMultiInsertUndefined: Self = StObject.set(x, "afterMultiInsert", js.undefined)
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+      inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
       
-      @scala.inline
-      def setBeforeInsert(value: MarkupSet => String): Self = StObject.set(x, "beforeInsert", js.Any.fromFunction1(value))
+      inline def setBeforeInsert(value: MarkupSet => String): Self = StObject.set(x, "beforeInsert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeInsertUndefined: Self = StObject.set(x, "beforeInsert", js.undefined)
+      inline def setBeforeInsertUndefined: Self = StObject.set(x, "beforeInsert", js.undefined)
       
-      @scala.inline
-      def setBeforeMultiInsert(value: MarkupSet => String): Self = StObject.set(x, "beforeMultiInsert", js.Any.fromFunction1(value))
+      inline def setBeforeMultiInsert(value: MarkupSet => String): Self = StObject.set(x, "beforeMultiInsert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeMultiInsertUndefined: Self = StObject.set(x, "beforeMultiInsert", js.undefined)
+      inline def setBeforeMultiInsertUndefined: Self = StObject.set(x, "beforeMultiInsert", js.undefined)
       
-      @scala.inline
-      def setCaretPosition(value: Double): Self = StObject.set(x, "caretPosition", value.asInstanceOf[js.Any])
+      inline def setCaretPosition(value: Double): Self = StObject.set(x, "caretPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaretPositionUndefined: Self = StObject.set(x, "caretPosition", js.undefined)
+      inline def setCaretPositionUndefined: Self = StObject.set(x, "caretPosition", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseBlockWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "closeBlockWith", value.asInstanceOf[js.Any])
+      inline def setCloseBlockWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "closeBlockWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseBlockWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "closeBlockWith", js.Any.fromFunction1(value))
+      inline def setCloseBlockWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "closeBlockWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseBlockWithUndefined: Self = StObject.set(x, "closeBlockWith", js.undefined)
+      inline def setCloseBlockWithUndefined: Self = StObject.set(x, "closeBlockWith", js.undefined)
       
-      @scala.inline
-      def setCloseWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "closeWith", value.asInstanceOf[js.Any])
+      inline def setCloseWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "closeWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "closeWith", js.Any.fromFunction1(value))
+      inline def setCloseWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "closeWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseWithUndefined: Self = StObject.set(x, "closeWith", js.undefined)
+      inline def setCloseWithUndefined: Self = StObject.set(x, "closeWith", js.undefined)
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
       
-      @scala.inline
-      def setDropMenu(value: js.Array[MarkupSet]): Self = StObject.set(x, "dropMenu", value.asInstanceOf[js.Any])
+      inline def setDropMenu(value: js.Array[MarkupSet]): Self = StObject.set(x, "dropMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropMenuUndefined: Self = StObject.set(x, "dropMenu", js.undefined)
+      inline def setDropMenuUndefined: Self = StObject.set(x, "dropMenu", js.undefined)
       
-      @scala.inline
-      def setDropMenuVarargs(value: MarkupSet*): Self = StObject.set(x, "dropMenu", js.Array(value :_*))
+      inline def setDropMenuVarargs(value: MarkupSet*): Self = StObject.set(x, "dropMenu", js.Array(value :_*))
       
-      @scala.inline
-      def setKeepDefault(value: Boolean): Self = StObject.set(x, "keepDefault", value.asInstanceOf[js.Any])
+      inline def setKeepDefault(value: Boolean): Self = StObject.set(x, "keepDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepDefaultUndefined: Self = StObject.set(x, "keepDefault", js.undefined)
+      inline def setKeepDefaultUndefined: Self = StObject.set(x, "keepDefault", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpenBlockWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "openBlockWith", value.asInstanceOf[js.Any])
+      inline def setOpenBlockWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "openBlockWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenBlockWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "openBlockWith", js.Any.fromFunction1(value))
+      inline def setOpenBlockWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "openBlockWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenBlockWithUndefined: Self = StObject.set(x, "openBlockWith", js.undefined)
+      inline def setOpenBlockWithUndefined: Self = StObject.set(x, "openBlockWith", js.undefined)
       
-      @scala.inline
-      def setOpenWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "openWith", value.asInstanceOf[js.Any])
+      inline def setOpenWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "openWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "openWith", js.Any.fromFunction1(value))
+      inline def setOpenWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "openWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenWithUndefined: Self = StObject.set(x, "openWith", js.undefined)
+      inline def setOpenWithUndefined: Self = StObject.set(x, "openWith", js.undefined)
       
-      @scala.inline
-      def setPlaceHolder(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+      inline def setPlaceHolder(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceHolderFunction1(value: MarkupSet => String): Self = StObject.set(x, "placeHolder", js.Any.fromFunction1(value))
+      inline def setPlaceHolderFunction1(value: MarkupSet => String): Self = StObject.set(x, "placeHolder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+      inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
       
-      @scala.inline
-      def setReplaceWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
+      inline def setReplaceWith(value: String | (js.Function1[MarkupSet, String])): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+      inline def setReplaceWithFunction1(value: MarkupSet => String): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
+      inline def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
       
-      @scala.inline
-      def setScrollPosition(value: Double): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
+      inline def setScrollPosition(value: Double): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPositionUndefined: Self = StObject.set(x, "scrollPosition", js.undefined)
+      inline def setScrollPositionUndefined: Self = StObject.set(x, "scrollPosition", js.undefined)
       
-      @scala.inline
-      def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
       
-      @scala.inline
-      def setTextarea(value: HTMLElement): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+      inline def setTextarea(value: HTMLElement): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
+      inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
     }
   }
   
@@ -411,113 +352,78 @@ object MarkItUp {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAfterInsert(value: /* h */ MarkupSet => String): Self = StObject.set(x, "afterInsert", js.Any.fromFunction1(value))
+      inline def setAfterInsert(value: /* h */ MarkupSet => String): Self = StObject.set(x, "afterInsert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterInsertUndefined: Self = StObject.set(x, "afterInsert", js.undefined)
+      inline def setAfterInsertUndefined: Self = StObject.set(x, "afterInsert", js.undefined)
       
-      @scala.inline
-      def setBeforeInsert(value: /* h */ MarkupSet => String): Self = StObject.set(x, "beforeInsert", js.Any.fromFunction1(value))
+      inline def setBeforeInsert(value: /* h */ MarkupSet => String): Self = StObject.set(x, "beforeInsert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeInsertUndefined: Self = StObject.set(x, "beforeInsert", js.undefined)
+      inline def setBeforeInsertUndefined: Self = StObject.set(x, "beforeInsert", js.undefined)
       
-      @scala.inline
-      def setMarkupSet(value: js.Array[MarkupSet]): Self = StObject.set(x, "markupSet", value.asInstanceOf[js.Any])
+      inline def setMarkupSet(value: js.Array[MarkupSet]): Self = StObject.set(x, "markupSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkupSetUndefined: Self = StObject.set(x, "markupSet", js.undefined)
+      inline def setMarkupSetUndefined: Self = StObject.set(x, "markupSet", js.undefined)
       
-      @scala.inline
-      def setMarkupSetVarargs(value: MarkupSet*): Self = StObject.set(x, "markupSet", js.Array(value :_*))
+      inline def setMarkupSetVarargs(value: MarkupSet*): Self = StObject.set(x, "markupSet", js.Array(value :_*))
       
-      @scala.inline
-      def setNameSpace(value: String): Self = StObject.set(x, "nameSpace", value.asInstanceOf[js.Any])
+      inline def setNameSpace(value: String): Self = StObject.set(x, "nameSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameSpaceUndefined: Self = StObject.set(x, "nameSpace", js.undefined)
+      inline def setNameSpaceUndefined: Self = StObject.set(x, "nameSpace", js.undefined)
       
-      @scala.inline
-      def setOnCtrlEnter(value: MarkupSet): Self = StObject.set(x, "onCtrlEnter", value.asInstanceOf[js.Any])
+      inline def setOnCtrlEnter(value: MarkupSet): Self = StObject.set(x, "onCtrlEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCtrlEnterUndefined: Self = StObject.set(x, "onCtrlEnter", js.undefined)
+      inline def setOnCtrlEnterUndefined: Self = StObject.set(x, "onCtrlEnter", js.undefined)
       
-      @scala.inline
-      def setOnEnter(value: MarkupSet): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: MarkupSet): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnShiftEnter(value: MarkupSet): Self = StObject.set(x, "onShiftEnter", value.asInstanceOf[js.Any])
+      inline def setOnShiftEnter(value: MarkupSet): Self = StObject.set(x, "onShiftEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnShiftEnterUndefined: Self = StObject.set(x, "onShiftEnter", js.undefined)
+      inline def setOnShiftEnterUndefined: Self = StObject.set(x, "onShiftEnter", js.undefined)
       
-      @scala.inline
-      def setOnTab(value: MarkupSet): Self = StObject.set(x, "onTab", value.asInstanceOf[js.Any])
+      inline def setOnTab(value: MarkupSet): Self = StObject.set(x, "onTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTabUndefined: Self = StObject.set(x, "onTab", js.undefined)
+      inline def setOnTabUndefined: Self = StObject.set(x, "onTab", js.undefined)
       
-      @scala.inline
-      def setPreviewAutoRefresh(value: Boolean): Self = StObject.set(x, "previewAutoRefresh", value.asInstanceOf[js.Any])
+      inline def setPreviewAutoRefresh(value: Boolean): Self = StObject.set(x, "previewAutoRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewAutoRefreshUndefined: Self = StObject.set(x, "previewAutoRefresh", js.undefined)
+      inline def setPreviewAutoRefreshUndefined: Self = StObject.set(x, "previewAutoRefresh", js.undefined)
       
-      @scala.inline
-      def setPreviewInWindow(value: String): Self = StObject.set(x, "previewInWindow", value.asInstanceOf[js.Any])
+      inline def setPreviewInWindow(value: String): Self = StObject.set(x, "previewInWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewInWindowUndefined: Self = StObject.set(x, "previewInWindow", js.undefined)
+      inline def setPreviewInWindowUndefined: Self = StObject.set(x, "previewInWindow", js.undefined)
       
-      @scala.inline
-      def setPreviewParser(value: Boolean): Self = StObject.set(x, "previewParser", value.asInstanceOf[js.Any])
+      inline def setPreviewParser(value: Boolean): Self = StObject.set(x, "previewParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewParserPath(value: String): Self = StObject.set(x, "previewParserPath", value.asInstanceOf[js.Any])
+      inline def setPreviewParserPath(value: String): Self = StObject.set(x, "previewParserPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewParserPathUndefined: Self = StObject.set(x, "previewParserPath", js.undefined)
+      inline def setPreviewParserPathUndefined: Self = StObject.set(x, "previewParserPath", js.undefined)
       
-      @scala.inline
-      def setPreviewParserUndefined: Self = StObject.set(x, "previewParser", js.undefined)
+      inline def setPreviewParserUndefined: Self = StObject.set(x, "previewParser", js.undefined)
       
-      @scala.inline
-      def setPreviewParserVar(value: String): Self = StObject.set(x, "previewParserVar", value.asInstanceOf[js.Any])
+      inline def setPreviewParserVar(value: String): Self = StObject.set(x, "previewParserVar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewParserVarUndefined: Self = StObject.set(x, "previewParserVar", js.undefined)
+      inline def setPreviewParserVarUndefined: Self = StObject.set(x, "previewParserVar", js.undefined)
       
-      @scala.inline
-      def setPreviewPosition(value: String): Self = StObject.set(x, "previewPosition", value.asInstanceOf[js.Any])
+      inline def setPreviewPosition(value: String): Self = StObject.set(x, "previewPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewPositionUndefined: Self = StObject.set(x, "previewPosition", js.undefined)
+      inline def setPreviewPositionUndefined: Self = StObject.set(x, "previewPosition", js.undefined)
       
-      @scala.inline
-      def setPreviewTemplatePath(value: String): Self = StObject.set(x, "previewTemplatePath", value.asInstanceOf[js.Any])
+      inline def setPreviewTemplatePath(value: String): Self = StObject.set(x, "previewTemplatePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewTemplatePathUndefined: Self = StObject.set(x, "previewTemplatePath", js.undefined)
+      inline def setPreviewTemplatePathUndefined: Self = StObject.set(x, "previewTemplatePath", js.undefined)
       
-      @scala.inline
-      def setResizeHandle(value: Boolean): Self = StObject.set(x, "resizeHandle", value.asInstanceOf[js.Any])
+      inline def setResizeHandle(value: Boolean): Self = StObject.set(x, "resizeHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeHandleUndefined: Self = StObject.set(x, "resizeHandle", js.undefined)
+      inline def setResizeHandleUndefined: Self = StObject.set(x, "resizeHandle", js.undefined)
     }
   }
   

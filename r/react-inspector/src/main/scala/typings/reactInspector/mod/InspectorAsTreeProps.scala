@@ -19,19 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object InspectorAsTreeProps {
   
-  @scala.inline
-  def apply(): InspectorAsTreeProps = {
+  inline def apply(): InspectorAsTreeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InspectorAsTreeProps]
   }
   
-  @scala.inline
-  implicit class InspectorAsTreePropsMutableBuilder[Self <: InspectorAsTreeProps] (val x: Self) extends AnyVal {
+  extension [Self <: InspectorAsTreeProps](x: Self) {
     
-    @scala.inline
-    def setTable(value: `false`): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: `false`): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

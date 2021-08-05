@@ -56,79 +56,55 @@ trait MetricUpdate extends StObject {
 }
 object MetricUpdate {
   
-  @scala.inline
-  def apply(): MetricUpdate = {
+  inline def apply(): MetricUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricUpdate]
   }
   
-  @scala.inline
-  implicit class MetricUpdateMutableBuilder[Self <: MetricUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: MetricUpdate](x: Self) {
     
-    @scala.inline
-    def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
-    @scala.inline
-    def setDistribution(value: js.Any): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: js.Any): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setGauge(value: js.Any): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
+    inline def setGauge(value: js.Any): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
+    inline def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
     
-    @scala.inline
-    def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+    inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMeanCount(value: js.Any): Self = StObject.set(x, "meanCount", value.asInstanceOf[js.Any])
+    inline def setMeanCount(value: js.Any): Self = StObject.set(x, "meanCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanCountUndefined: Self = StObject.set(x, "meanCount", js.undefined)
+    inline def setMeanCountUndefined: Self = StObject.set(x, "meanCount", js.undefined)
     
-    @scala.inline
-    def setMeanSum(value: js.Any): Self = StObject.set(x, "meanSum", value.asInstanceOf[js.Any])
+    inline def setMeanSum(value: js.Any): Self = StObject.set(x, "meanSum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanSumUndefined: Self = StObject.set(x, "meanSum", js.undefined)
+    inline def setMeanSumUndefined: Self = StObject.set(x, "meanSum", js.undefined)
     
-    @scala.inline
-    def setName(value: MetricStructuredName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: MetricStructuredName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScalar(value: js.Any): Self = StObject.set(x, "scalar", value.asInstanceOf[js.Any])
+    inline def setScalar(value: js.Any): Self = StObject.set(x, "scalar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalarUndefined: Self = StObject.set(x, "scalar", js.undefined)
+    inline def setScalarUndefined: Self = StObject.set(x, "scalar", js.undefined)
     
-    @scala.inline
-    def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -16,7 +16,7 @@ object kinesisClientMod {
   class KinesisClient protected () extends StObject {
     def this(configuration: KinesisConfiguration) = this()
     
-    val config: KinesisResolvedConfiguration = js.native
+    /* protected */ val config: KinesisResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

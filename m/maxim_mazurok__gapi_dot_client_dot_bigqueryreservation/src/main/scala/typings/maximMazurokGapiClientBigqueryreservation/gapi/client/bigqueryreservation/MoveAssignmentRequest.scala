@@ -11,19 +11,15 @@ trait MoveAssignmentRequest extends StObject {
 }
 object MoveAssignmentRequest {
   
-  @scala.inline
-  def apply(): MoveAssignmentRequest = {
+  inline def apply(): MoveAssignmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveAssignmentRequest]
   }
   
-  @scala.inline
-  implicit class MoveAssignmentRequestMutableBuilder[Self <: MoveAssignmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MoveAssignmentRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
+    inline def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationIdUndefined: Self = StObject.set(x, "destinationId", js.undefined)
+    inline def setDestinationIdUndefined: Self = StObject.set(x, "destinationId", js.undefined)
   }
 }

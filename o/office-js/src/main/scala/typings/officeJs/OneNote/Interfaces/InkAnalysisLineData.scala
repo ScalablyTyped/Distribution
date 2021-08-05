@@ -33,34 +33,25 @@ trait InkAnalysisLineData extends StObject {
 }
 object InkAnalysisLineData {
   
-  @scala.inline
-  def apply(): InkAnalysisLineData = {
+  inline def apply(): InkAnalysisLineData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkAnalysisLineData]
   }
   
-  @scala.inline
-  implicit class InkAnalysisLineDataMutableBuilder[Self <: InkAnalysisLineData] (val x: Self) extends AnyVal {
+  extension [Self <: InkAnalysisLineData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParagraph(value: InkAnalysisParagraphData): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: InkAnalysisParagraphData): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    @scala.inline
-    def setWords(value: js.Array[InkAnalysisWordData]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[InkAnalysisWordData]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: InkAnalysisWordData*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: InkAnalysisWordData*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

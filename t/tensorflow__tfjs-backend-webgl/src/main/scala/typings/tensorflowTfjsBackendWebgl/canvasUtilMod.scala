@@ -11,12 +11,9 @@ object canvasUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearWebGLContext(webGLVersion: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWebGLContext")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearWebGLContext(webGLVersion: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWebGLContext")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getWebGLContext(webGLVersion: Double): WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebGLContext")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[WebGLRenderingContext]
+  inline def getWebGLContext(webGLVersion: Double): WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebGLContext")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[WebGLRenderingContext]
   
-  @scala.inline
-  def setWebGLContext(webGLVersion: Double, gl: WebGLRenderingContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWebGLContext")(webGLVersion.asInstanceOf[js.Any], gl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setWebGLContext(webGLVersion: Double, gl: WebGLRenderingContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWebGLContext")(webGLVersion.asInstanceOf[js.Any], gl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -68,8 +68,7 @@ trait RemediationConfiguration extends StObject {
 }
 object RemediationConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigRuleName: ConfigRuleName,
     TargetId: StringWithCharLimit256,
     TargetType: RemediationTargetType
@@ -78,70 +77,48 @@ object RemediationConfiguration {
     __obj.asInstanceOf[RemediationConfiguration]
   }
   
-  @scala.inline
-  implicit class RemediationConfigurationMutableBuilder[Self <: RemediationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RemediationConfiguration](x: Self) {
     
-    @scala.inline
-    def setArn(value: StringWithCharLimit1024): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: StringWithCharLimit1024): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setAutomatic(value: Boolean): Self = StObject.set(x, "Automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: Boolean): Self = StObject.set(x, "Automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticUndefined: Self = StObject.set(x, "Automatic", js.undefined)
+    inline def setAutomaticUndefined: Self = StObject.set(x, "Automatic", js.undefined)
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByService(value: StringWithCharLimit1024): Self = StObject.set(x, "CreatedByService", value.asInstanceOf[js.Any])
+    inline def setCreatedByService(value: StringWithCharLimit1024): Self = StObject.set(x, "CreatedByService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByServiceUndefined: Self = StObject.set(x, "CreatedByService", js.undefined)
+    inline def setCreatedByServiceUndefined: Self = StObject.set(x, "CreatedByService", js.undefined)
     
-    @scala.inline
-    def setExecutionControls(value: ExecutionControls): Self = StObject.set(x, "ExecutionControls", value.asInstanceOf[js.Any])
+    inline def setExecutionControls(value: ExecutionControls): Self = StObject.set(x, "ExecutionControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionControlsUndefined: Self = StObject.set(x, "ExecutionControls", js.undefined)
+    inline def setExecutionControlsUndefined: Self = StObject.set(x, "ExecutionControls", js.undefined)
     
-    @scala.inline
-    def setMaximumAutomaticAttempts(value: AutoRemediationAttempts): Self = StObject.set(x, "MaximumAutomaticAttempts", value.asInstanceOf[js.Any])
+    inline def setMaximumAutomaticAttempts(value: AutoRemediationAttempts): Self = StObject.set(x, "MaximumAutomaticAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumAutomaticAttemptsUndefined: Self = StObject.set(x, "MaximumAutomaticAttempts", js.undefined)
+    inline def setMaximumAutomaticAttemptsUndefined: Self = StObject.set(x, "MaximumAutomaticAttempts", js.undefined)
     
-    @scala.inline
-    def setParameters(value: RemediationParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RemediationParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setRetryAttemptSeconds(value: AutoRemediationAttemptSeconds): Self = StObject.set(x, "RetryAttemptSeconds", value.asInstanceOf[js.Any])
+    inline def setRetryAttemptSeconds(value: AutoRemediationAttemptSeconds): Self = StObject.set(x, "RetryAttemptSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryAttemptSecondsUndefined: Self = StObject.set(x, "RetryAttemptSeconds", js.undefined)
+    inline def setRetryAttemptSecondsUndefined: Self = StObject.set(x, "RetryAttemptSeconds", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: StringWithCharLimit256): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: StringWithCharLimit256): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetType(value: RemediationTargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: RemediationTargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersion(value: String): Self = StObject.set(x, "TargetVersion", value.asInstanceOf[js.Any])
+    inline def setTargetVersion(value: String): Self = StObject.set(x, "TargetVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersionUndefined: Self = StObject.set(x, "TargetVersion", js.undefined)
+    inline def setTargetVersionUndefined: Self = StObject.set(x, "TargetVersion", js.undefined)
   }
 }

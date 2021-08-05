@@ -19,19 +19,16 @@ trait CellErrorValue
 }
 object CellErrorValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error: NumbersignNSlashA | NumbersignREFExclamationmark | NumbersignNAMEQuestionmark | NumbersignDIVSlash0Exclamationmark | NumbersignNULLExclamationmark | NumbersignVALUEExclamationmark | NumbersignNUMExclamationmark
   ): CellErrorValue = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellErrorValue]
   }
   
-  @scala.inline
-  implicit class CellErrorValueMutableBuilder[Self <: CellErrorValue] (val x: Self) extends AnyVal {
+  extension [Self <: CellErrorValue](x: Self) {
     
-    @scala.inline
-    def setError(
+    inline def setError(
       value: NumbersignNSlashA | NumbersignREFExclamationmark | NumbersignNAMEQuestionmark | NumbersignDIVSlash0Exclamationmark | NumbersignNULLExclamationmark | NumbersignVALUEExclamationmark | NumbersignNUMExclamationmark
     ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

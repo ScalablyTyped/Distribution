@@ -24,8 +24,7 @@ object regressionMod {
     @JSImport("@antv/data-set/lib/transform/kernel-smooth/regression", "default.KERNEL_METHODS")
     @js.native
     def KERNEL_METHODS: js.Array[js.Any] = js.native
-    @scala.inline
-    def KERNEL_METHODS_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KERNEL_METHODS")(x.asInstanceOf[js.Any])
+    inline def KERNEL_METHODS_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KERNEL_METHODS")(x.asInstanceOf[js.Any])
   }
   
   trait Options extends StObject {
@@ -42,43 +41,32 @@ object regressionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       method: cosine | epanechnikov | gaussian | quartic | triangular | tricube | triweight | uniform | boxcar
     ): Options = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Tuple2[String, js.UndefOr[String]]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Tuple2[String, js.UndefOr[String]]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+      inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+      inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
       
-      @scala.inline
-      def setExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Tuple2[String, js.UndefOr[String]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Tuple2[String, js.UndefOr[String]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setMethod(
+      inline def setMethod(
         value: cosine | epanechnikov | gaussian | quartic | triangular | tricube | triweight | uniform | boxcar
       ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }

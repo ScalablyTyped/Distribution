@@ -13,22 +13,17 @@ trait HostHeaderConditionConfig extends StObject {
 }
 object HostHeaderConditionConfig {
   
-  @scala.inline
-  def apply(): HostHeaderConditionConfig = {
+  inline def apply(): HostHeaderConditionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostHeaderConditionConfig]
   }
   
-  @scala.inline
-  implicit class HostHeaderConditionConfigMutableBuilder[Self <: HostHeaderConditionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HostHeaderConditionConfig](x: Self) {
     
-    @scala.inline
-    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

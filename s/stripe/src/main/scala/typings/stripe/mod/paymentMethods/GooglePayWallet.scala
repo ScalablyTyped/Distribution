@@ -14,17 +14,14 @@ trait GooglePayWallet
 }
 object GooglePayWallet {
   
-  @scala.inline
-  def apply(): GooglePayWallet = {
+  inline def apply(): GooglePayWallet = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("google_pay")
     __obj.asInstanceOf[GooglePayWallet]
   }
   
-  @scala.inline
-  implicit class GooglePayWalletMutableBuilder[Self <: GooglePayWallet] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePayWallet](x: Self) {
     
-    @scala.inline
-    def setType(value: google_pay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: google_pay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

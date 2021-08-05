@@ -20,31 +20,23 @@ trait SMTPError
 }
 object SMTPError {
   
-  @scala.inline
-  def apply(message: String, name: String): SMTPError = {
+  inline def apply(message: String, name: String): SMTPError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SMTPError]
   }
   
-  @scala.inline
-  implicit class SMTPErrorMutableBuilder[Self <: SMTPError] (val x: Self) extends AnyVal {
+  extension [Self <: SMTPError](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
+    inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

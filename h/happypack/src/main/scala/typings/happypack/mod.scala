@@ -25,29 +25,22 @@ object mod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(loaders: js.Any): PluginOptions = {
+    inline def apply(loaders: js.Any): PluginOptions = {
       val __obj = js.Dynamic.literal(loaders = loaders.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLoaders(value: js.Any): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      inline def setLoaders(value: js.Any): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+      inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+      inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     }
   }
   

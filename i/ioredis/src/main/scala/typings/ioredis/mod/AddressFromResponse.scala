@@ -14,25 +14,19 @@ trait AddressFromResponse extends StObject {
 }
 object AddressFromResponse {
   
-  @scala.inline
-  def apply(ip: String, port: String): AddressFromResponse = {
+  inline def apply(ip: String, port: String): AddressFromResponse = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressFromResponse]
   }
   
-  @scala.inline
-  implicit class AddressFromResponseMutableBuilder[Self <: AddressFromResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddressFromResponse](x: Self) {
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

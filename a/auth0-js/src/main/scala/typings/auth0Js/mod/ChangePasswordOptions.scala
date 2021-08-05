@@ -12,19 +12,15 @@ trait ChangePasswordOptions extends StObject {
 }
 object ChangePasswordOptions {
   
-  @scala.inline
-  def apply(connection: String, email: String): ChangePasswordOptions = {
+  inline def apply(connection: String, email: String): ChangePasswordOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangePasswordOptions]
   }
   
-  @scala.inline
-  implicit class ChangePasswordOptionsMutableBuilder[Self <: ChangePasswordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChangePasswordOptions](x: Self) {
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

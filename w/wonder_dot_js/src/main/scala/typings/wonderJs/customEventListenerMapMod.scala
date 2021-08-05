@@ -38,7 +38,6 @@ object customEventListenerMapMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): CustomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CustomEventListenerMap]
+    inline def create(): CustomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CustomEventListenerMap]
   }
 }

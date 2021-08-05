@@ -10,19 +10,15 @@ trait IColorizerOptions extends StObject {
 }
 object IColorizerOptions {
   
-  @scala.inline
-  def apply(): IColorizerOptions = {
+  inline def apply(): IColorizerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColorizerOptions]
   }
   
-  @scala.inline
-  implicit class IColorizerOptionsMutableBuilder[Self <: IColorizerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IColorizerOptions](x: Self) {
     
-    @scala.inline
-    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+    inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
   }
 }

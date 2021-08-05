@@ -16,8 +16,7 @@ trait keystrokeHandler extends StObject {
 }
 object keystrokeHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attach: domObject => Unit,
     blockedKeystrokes: NumberDictionary[String | Boolean],
     keystrokes: NumberDictionary[String | Boolean]
@@ -26,16 +25,12 @@ object keystrokeHandler {
     __obj.asInstanceOf[keystrokeHandler]
   }
   
-  @scala.inline
-  implicit class keystrokeHandlerMutableBuilder[Self <: keystrokeHandler] (val x: Self) extends AnyVal {
+  extension [Self <: keystrokeHandler](x: Self) {
     
-    @scala.inline
-    def setAttach(value: domObject => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+    inline def setAttach(value: domObject => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBlockedKeystrokes(value: NumberDictionary[String | Boolean]): Self = StObject.set(x, "blockedKeystrokes", value.asInstanceOf[js.Any])
+    inline def setBlockedKeystrokes(value: NumberDictionary[String | Boolean]): Self = StObject.set(x, "blockedKeystrokes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeystrokes(value: NumberDictionary[String | Boolean]): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+    inline def setKeystrokes(value: NumberDictionary[String | Boolean]): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
   }
 }

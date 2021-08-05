@@ -23,36 +23,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(source: String): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: String, configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: String, configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: String, configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: js.Array[String], configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: js.Array[String], configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: js.Array[String], configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: Buffer): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: Buffer, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: Buffer, configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: Buffer, configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(source: Buffer, configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: String): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(source: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: String, configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: String, configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: String, configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(source: js.Array[String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: js.Array[String], configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: js.Array[String], configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: js.Array[String], configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: Buffer): Unit = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(source: Buffer, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: Buffer, configuration: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: Buffer, configuration: PartialConfiguration): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(source: Buffer, configuration: PartialConfiguration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("favicons", JSImport.Namespace)
   @js.native
@@ -63,10 +48,8 @@ object mod {
   @js.native
   val config: Configuration = js.native
   
-  @scala.inline
-  def stream(): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[Duplex]
-  @scala.inline
-  def stream(configuration: Configuration): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(configuration.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+  inline def stream(): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[Duplex]
+  inline def stream(configuration: Configuration): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(configuration.asInstanceOf[js.Any]).asInstanceOf[Duplex]
   
   type Callback = js.Function2[/* error */ Error | Null, /* response */ FavIconResponse, Unit]
   
@@ -150,8 +133,7 @@ object mod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appleStatusBarStyle: `black-translucent` | default | black,
       background: String,
       dir: String,
@@ -174,89 +156,61 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setAppDescription(value: String): Self = StObject.set(x, "appDescription", value.asInstanceOf[js.Any])
+      inline def setAppDescription(value: String): Self = StObject.set(x, "appDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppDescriptionNull: Self = StObject.set(x, "appDescription", null)
+      inline def setAppDescriptionNull: Self = StObject.set(x, "appDescription", null)
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppNameNull: Self = StObject.set(x, "appName", null)
+      inline def setAppNameNull: Self = StObject.set(x, "appName", null)
       
-      @scala.inline
-      def setAppShortName(value: String): Self = StObject.set(x, "appShortName", value.asInstanceOf[js.Any])
+      inline def setAppShortName(value: String): Self = StObject.set(x, "appShortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppShortNameNull: Self = StObject.set(x, "appShortName", null)
+      inline def setAppShortNameNull: Self = StObject.set(x, "appShortName", null)
       
-      @scala.inline
-      def setAppleStatusBarStyle(value: `black-translucent` | default | black): Self = StObject.set(x, "appleStatusBarStyle", value.asInstanceOf[js.Any])
+      inline def setAppleStatusBarStyle(value: `black-translucent` | default | black): Self = StObject.set(x, "appleStatusBarStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeveloperName(value: String): Self = StObject.set(x, "developerName", value.asInstanceOf[js.Any])
+      inline def setDeveloperName(value: String): Self = StObject.set(x, "developerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeveloperNameNull: Self = StObject.set(x, "developerName", null)
+      inline def setDeveloperNameNull: Self = StObject.set(x, "developerName", null)
       
-      @scala.inline
-      def setDeveloperURL(value: String): Self = StObject.set(x, "developerURL", value.asInstanceOf[js.Any])
+      inline def setDeveloperURL(value: String): Self = StObject.set(x, "developerURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeveloperURLNull: Self = StObject.set(x, "developerURL", null)
+      inline def setDeveloperURLNull: Self = StObject.set(x, "developerURL", null)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay(value: fullscreen | standalone | `minimal-ui` | browser): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: fullscreen | standalone | `minimal-ui` | browser): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcons(value: PartialandroidbooleanIcon): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: PartialandroidbooleanIcon): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadManifestWithCredentials(value: Boolean): Self = StObject.set(x, "loadManifestWithCredentials", value.asInstanceOf[js.Any])
+      inline def setLoadManifestWithCredentials(value: Boolean): Self = StObject.set(x, "loadManifestWithCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestRelativePaths(value: Boolean): Self = StObject.set(x, "manifestRelativePaths", value.asInstanceOf[js.Any])
+      inline def setManifestRelativePaths(value: Boolean): Self = StObject.set(x, "manifestRelativePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: any | natural | portrait | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: any | natural | portrait | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipeHTML(value: Boolean): Self = StObject.set(x, "pipeHTML", value.asInstanceOf[js.Any])
+      inline def setPipeHTML(value: Boolean): Self = StObject.set(x, "pipeHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixel_art(value: Boolean): Self = StObject.set(x, "pixel_art", value.asInstanceOf[js.Any])
+      inline def setPixel_art(value: Boolean): Self = StObject.set(x, "pixel_art", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart_url(value: String): Self = StObject.set(x, "start_url", value.asInstanceOf[js.Any])
+      inline def setStart_url(value: String): Self = StObject.set(x, "start_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme_color(value: String): Self = StObject.set(x, "theme_color", value.asInstanceOf[js.Any])
+      inline def setTheme_color(value: String): Self = StObject.set(x, "theme_color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,32 +224,24 @@ object mod {
   }
   object FavIconResponse {
     
-    @scala.inline
-    def apply(files: js.Array[Contents], html: js.Array[String], images: js.Array[Contents]): FavIconResponse = {
+    inline def apply(files: js.Array[Contents], html: js.Array[String], images: js.Array[Contents]): FavIconResponse = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any])
       __obj.asInstanceOf[FavIconResponse]
     }
     
-    @scala.inline
-    implicit class FavIconResponseMutableBuilder[Self <: FavIconResponse] (val x: Self) extends AnyVal {
+    extension [Self <: FavIconResponse](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[Contents]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[Contents]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: Contents*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: Contents*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setHtml(value: js.Array[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: js.Array[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlVarargs(value: String*): Self = StObject.set(x, "html", js.Array(value :_*))
+      inline def setHtmlVarargs(value: String*): Self = StObject.set(x, "html", js.Array(value :_*))
       
-      @scala.inline
-      def setImages(value: js.Array[Contents]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[Contents]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: Contents*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Contents*): Self = StObject.set(x, "images", js.Array(value :_*))
     }
   }
   
@@ -313,44 +259,32 @@ object mod {
   }
   object IconOptions {
     
-    @scala.inline
-    def apply(): IconOptions = {
+    inline def apply(): IconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconOptions]
     }
     
-    @scala.inline
-    implicit class IconOptionsMutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IconOptions](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Boolean | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Boolean | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOvelayShadow(value: Boolean): Self = StObject.set(x, "ovelayShadow", value.asInstanceOf[js.Any])
+      inline def setOvelayShadow(value: Boolean): Self = StObject.set(x, "ovelayShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOvelayShadowUndefined: Self = StObject.set(x, "ovelayShadow", js.undefined)
+      inline def setOvelayShadowUndefined: Self = StObject.set(x, "ovelayShadow", js.undefined)
       
-      @scala.inline
-      def setOverlayGlow(value: Boolean): Self = StObject.set(x, "overlayGlow", value.asInstanceOf[js.Any])
+      inline def setOverlayGlow(value: Boolean): Self = StObject.set(x, "overlayGlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayGlowUndefined: Self = StObject.set(x, "overlayGlow", js.undefined)
+      inline def setOverlayGlowUndefined: Self = StObject.set(x, "overlayGlow", js.undefined)
     }
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShortManifestResource extends StObject
 object ShortManifestResource {
   
-  @scala.inline
-  def addon_catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.addon_catalog = "addon_catalog".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.addon_catalog]
+  inline def addon_catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.addon_catalog = "addon_catalog".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.addon_catalog]
   
-  @scala.inline
-  def catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.catalog = "catalog".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.catalog]
+  inline def catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.catalog = "catalog".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.catalog]
   
-  @scala.inline
-  def meta: typings.stremioAddonSdk.stremioAddonSdkStrings.meta = "meta".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.meta]
+  inline def meta: typings.stremioAddonSdk.stremioAddonSdkStrings.meta = "meta".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.meta]
   
-  @scala.inline
-  def stream: typings.stremioAddonSdk.stremioAddonSdkStrings.stream = "stream".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.stream]
+  inline def stream: typings.stremioAddonSdk.stremioAddonSdkStrings.stream = "stream".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.stream]
   
-  @scala.inline
-  def subtitles: typings.stremioAddonSdk.stremioAddonSdkStrings.subtitles = "subtitles".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.subtitles]
+  inline def subtitles: typings.stremioAddonSdk.stremioAddonSdkStrings.subtitles = "subtitles".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.subtitles]
 }

@@ -18,19 +18,15 @@ trait FunctionFileSystemConfig extends StObject {
 }
 object FunctionFileSystemConfig {
   
-  @scala.inline
-  def apply(arn: String, localMountPath: String): FunctionFileSystemConfig = {
+  inline def apply(arn: String, localMountPath: String): FunctionFileSystemConfig = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], localMountPath = localMountPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionFileSystemConfig]
   }
   
-  @scala.inline
-  implicit class FunctionFileSystemConfigMutableBuilder[Self <: FunctionFileSystemConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionFileSystemConfig](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalMountPath(value: String): Self = StObject.set(x, "localMountPath", value.asInstanceOf[js.Any])
+    inline def setLocalMountPath(value: String): Self = StObject.set(x, "localMountPath", value.asInstanceOf[js.Any])
   }
 }

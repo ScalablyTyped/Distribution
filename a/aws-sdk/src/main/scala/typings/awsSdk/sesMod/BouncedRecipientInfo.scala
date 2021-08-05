@@ -28,34 +28,25 @@ trait BouncedRecipientInfo extends StObject {
 }
 object BouncedRecipientInfo {
   
-  @scala.inline
-  def apply(Recipient: Address): BouncedRecipientInfo = {
+  inline def apply(Recipient: Address): BouncedRecipientInfo = {
     val __obj = js.Dynamic.literal(Recipient = Recipient.asInstanceOf[js.Any])
     __obj.asInstanceOf[BouncedRecipientInfo]
   }
   
-  @scala.inline
-  implicit class BouncedRecipientInfoMutableBuilder[Self <: BouncedRecipientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BouncedRecipientInfo](x: Self) {
     
-    @scala.inline
-    def setBounceType(value: BounceType): Self = StObject.set(x, "BounceType", value.asInstanceOf[js.Any])
+    inline def setBounceType(value: BounceType): Self = StObject.set(x, "BounceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounceTypeUndefined: Self = StObject.set(x, "BounceType", js.undefined)
+    inline def setBounceTypeUndefined: Self = StObject.set(x, "BounceType", js.undefined)
     
-    @scala.inline
-    def setRecipient(value: Address): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Address): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientArn(value: AmazonResourceName): Self = StObject.set(x, "RecipientArn", value.asInstanceOf[js.Any])
+    inline def setRecipientArn(value: AmazonResourceName): Self = StObject.set(x, "RecipientArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientArnUndefined: Self = StObject.set(x, "RecipientArn", js.undefined)
+    inline def setRecipientArnUndefined: Self = StObject.set(x, "RecipientArn", js.undefined)
     
-    @scala.inline
-    def setRecipientDsnFields(value: RecipientDsnFields): Self = StObject.set(x, "RecipientDsnFields", value.asInstanceOf[js.Any])
+    inline def setRecipientDsnFields(value: RecipientDsnFields): Self = StObject.set(x, "RecipientDsnFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientDsnFieldsUndefined: Self = StObject.set(x, "RecipientDsnFields", js.undefined)
+    inline def setRecipientDsnFieldsUndefined: Self = StObject.set(x, "RecipientDsnFields", js.undefined)
   }
 }

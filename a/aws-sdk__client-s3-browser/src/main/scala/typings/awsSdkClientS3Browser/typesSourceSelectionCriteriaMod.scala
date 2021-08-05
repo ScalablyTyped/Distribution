@@ -19,20 +19,16 @@ object typesSourceSelectionCriteriaMod {
   }
   object SourceSelectionCriteria {
     
-    @scala.inline
-    def apply(): SourceSelectionCriteria = {
+    inline def apply(): SourceSelectionCriteria = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceSelectionCriteria]
     }
     
-    @scala.inline
-    implicit class SourceSelectionCriteriaMutableBuilder[Self <: SourceSelectionCriteria] (val x: Self) extends AnyVal {
+    extension [Self <: SourceSelectionCriteria](x: Self) {
       
-      @scala.inline
-      def setSseKmsEncryptedObjects(value: SseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
+      inline def setSseKmsEncryptedObjects(value: SseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "SseKmsEncryptedObjects", js.undefined)
+      inline def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "SseKmsEncryptedObjects", js.undefined)
     }
   }
   
@@ -48,20 +44,16 @@ object typesSourceSelectionCriteriaMod {
   }
   object UnmarshalledSourceSelectionCriteria {
     
-    @scala.inline
-    def apply(): UnmarshalledSourceSelectionCriteria = {
+    inline def apply(): UnmarshalledSourceSelectionCriteria = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSourceSelectionCriteria]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSourceSelectionCriteriaMutableBuilder[Self <: UnmarshalledSourceSelectionCriteria] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSourceSelectionCriteria](x: Self) {
       
-      @scala.inline
-      def setSseKmsEncryptedObjects(value: UnmarshalledSseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
+      inline def setSseKmsEncryptedObjects(value: UnmarshalledSseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "SseKmsEncryptedObjects", js.undefined)
+      inline def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "SseKmsEncryptedObjects", js.undefined)
     }
   }
 }

@@ -38,49 +38,35 @@ trait DescribeVaultOutput extends StObject {
 }
 object DescribeVaultOutput {
   
-  @scala.inline
-  def apply(): DescribeVaultOutput = {
+  inline def apply(): DescribeVaultOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVaultOutput]
   }
   
-  @scala.inline
-  implicit class DescribeVaultOutputMutableBuilder[Self <: DescribeVaultOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVaultOutput](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setLastInventoryDate(value: String): Self = StObject.set(x, "LastInventoryDate", value.asInstanceOf[js.Any])
+    inline def setLastInventoryDate(value: String): Self = StObject.set(x, "LastInventoryDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastInventoryDateUndefined: Self = StObject.set(x, "LastInventoryDate", js.undefined)
+    inline def setLastInventoryDateUndefined: Self = StObject.set(x, "LastInventoryDate", js.undefined)
     
-    @scala.inline
-    def setNumberOfArchives(value: long): Self = StObject.set(x, "NumberOfArchives", value.asInstanceOf[js.Any])
+    inline def setNumberOfArchives(value: long): Self = StObject.set(x, "NumberOfArchives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfArchivesUndefined: Self = StObject.set(x, "NumberOfArchives", js.undefined)
+    inline def setNumberOfArchivesUndefined: Self = StObject.set(x, "NumberOfArchives", js.undefined)
     
-    @scala.inline
-    def setSizeInBytes(value: long): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: long): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
+    inline def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
     
-    @scala.inline
-    def setVaultARN(value: String): Self = StObject.set(x, "VaultARN", value.asInstanceOf[js.Any])
+    inline def setVaultARN(value: String): Self = StObject.set(x, "VaultARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultARNUndefined: Self = StObject.set(x, "VaultARN", js.undefined)
+    inline def setVaultARNUndefined: Self = StObject.set(x, "VaultARN", js.undefined)
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "VaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "VaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultNameUndefined: Self = StObject.set(x, "VaultName", js.undefined)
+    inline def setVaultNameUndefined: Self = StObject.set(x, "VaultName", js.undefined)
   }
 }

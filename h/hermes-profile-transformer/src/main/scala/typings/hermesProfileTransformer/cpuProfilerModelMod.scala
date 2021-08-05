@@ -84,8 +84,7 @@ object cpuProfilerModelMod {
       * @throws Profile must have at least one sample
       * @return {CPUProfileChunk}
       */
-    @scala.inline
-    def collectProfileEvents(profile: HermesCPUProfile): CPUProfileChunk = ^.asInstanceOf[js.Dynamic].applyDynamic("collectProfileEvents")(profile.asInstanceOf[js.Any]).asInstanceOf[CPUProfileChunk]
+    inline def collectProfileEvents(profile: HermesCPUProfile): CPUProfileChunk = ^.asInstanceOf[js.Dynamic].applyDynamic("collectProfileEvents")(profile.asInstanceOf[js.Any]).asInstanceOf[CPUProfileChunk]
     
     /**
       * Constructs CPUProfileChunk Nodes and the resultant samples and time deltas to be inputted into the
@@ -95,8 +94,7 @@ object cpuProfilerModelMod {
       * @param {<string, HermesStackFrame>} stackFrames
       * @return {CPUProfileChunker}
       */
-    @scala.inline
-    def constructNodes(
+    inline def constructNodes(
       samples: js.Array[HermesSample],
       stackFrames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
@@ -107,7 +105,6 @@ object cpuProfilerModelMod {
       * Creates B/E-style trace events from a CpuProfile object created by `collectProfileEvents()`
       * @param {CPUProfileChunk} profile
       */
-    @scala.inline
-    def createStartEndEvents(profile: CPUProfileChunk): js.Array[DurationEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStartEndEvents")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Array[DurationEvent]]
+    inline def createStartEndEvents(profile: CPUProfileChunk): js.Array[DurationEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStartEndEvents")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Array[DurationEvent]]
   }
 }

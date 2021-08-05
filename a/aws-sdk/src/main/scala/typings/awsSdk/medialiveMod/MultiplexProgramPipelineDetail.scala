@@ -18,25 +18,19 @@ trait MultiplexProgramPipelineDetail extends StObject {
 }
 object MultiplexProgramPipelineDetail {
   
-  @scala.inline
-  def apply(): MultiplexProgramPipelineDetail = {
+  inline def apply(): MultiplexProgramPipelineDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexProgramPipelineDetail]
   }
   
-  @scala.inline
-  implicit class MultiplexProgramPipelineDetailMutableBuilder[Self <: MultiplexProgramPipelineDetail] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexProgramPipelineDetail](x: Self) {
     
-    @scala.inline
-    def setActiveChannelPipeline(value: string): Self = StObject.set(x, "ActiveChannelPipeline", value.asInstanceOf[js.Any])
+    inline def setActiveChannelPipeline(value: string): Self = StObject.set(x, "ActiveChannelPipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveChannelPipelineUndefined: Self = StObject.set(x, "ActiveChannelPipeline", js.undefined)
+    inline def setActiveChannelPipelineUndefined: Self = StObject.set(x, "ActiveChannelPipeline", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: string): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: string): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineIdUndefined: Self = StObject.set(x, "PipelineId", js.undefined)
+    inline def setPipelineIdUndefined: Self = StObject.set(x, "PipelineId", js.undefined)
   }
 }

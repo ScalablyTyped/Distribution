@@ -13,22 +13,17 @@ trait OnBluetoothDeviceFoundResult extends StObject {
 }
 object OnBluetoothDeviceFoundResult {
   
-  @scala.inline
-  def apply(): OnBluetoothDeviceFoundResult = {
+  inline def apply(): OnBluetoothDeviceFoundResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnBluetoothDeviceFoundResult]
   }
   
-  @scala.inline
-  implicit class OnBluetoothDeviceFoundResultMutableBuilder[Self <: OnBluetoothDeviceFoundResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnBluetoothDeviceFoundResult](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[BluetoothDeviceInfo]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[BluetoothDeviceInfo]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: BluetoothDeviceInfo*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: BluetoothDeviceInfo*): Self = StObject.set(x, "devices", js.Array(value :_*))
   }
 }

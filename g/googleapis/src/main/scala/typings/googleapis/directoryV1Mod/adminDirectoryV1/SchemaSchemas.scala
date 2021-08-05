@@ -26,34 +26,25 @@ trait SchemaSchemas extends StObject {
 }
 object SchemaSchemas {
   
-  @scala.inline
-  def apply(): SchemaSchemas = {
+  inline def apply(): SchemaSchemas = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSchemas]
   }
   
-  @scala.inline
-  implicit class SchemaSchemasMutableBuilder[Self <: SchemaSchemas] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSchemas](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSchemas(value: js.Array[SchemaSchema]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[SchemaSchema]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+    inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     
-    @scala.inline
-    def setSchemasVarargs(value: SchemaSchema*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaSchema*): Self = StObject.set(x, "schemas", js.Array(value :_*))
   }
 }

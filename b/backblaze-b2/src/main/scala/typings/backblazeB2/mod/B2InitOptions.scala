@@ -17,31 +17,23 @@ trait B2InitOptions extends StObject {
 }
 object B2InitOptions {
   
-  @scala.inline
-  def apply(applicationKey: String, applicationKeyId: String): B2InitOptions = {
+  inline def apply(applicationKey: String, applicationKeyId: String): B2InitOptions = {
     val __obj = js.Dynamic.literal(applicationKey = applicationKey.asInstanceOf[js.Any], applicationKeyId = applicationKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[B2InitOptions]
   }
   
-  @scala.inline
-  implicit class B2InitOptionsMutableBuilder[Self <: B2InitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: B2InitOptions](x: Self) {
     
-    @scala.inline
-    def setApplicationKey(value: String): Self = StObject.set(x, "applicationKey", value.asInstanceOf[js.Any])
+    inline def setApplicationKey(value: String): Self = StObject.set(x, "applicationKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationKeyId(value: String): Self = StObject.set(x, "applicationKeyId", value.asInstanceOf[js.Any])
+    inline def setApplicationKeyId(value: String): Self = StObject.set(x, "applicationKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+    inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxiosUndefined: Self = StObject.set(x, "axios", js.undefined)
+    inline def setAxiosUndefined: Self = StObject.set(x, "axios", js.undefined)
     
-    @scala.inline
-    def setRetry(value: Record[String, js.Any]): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Record[String, js.Any]): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }
 }

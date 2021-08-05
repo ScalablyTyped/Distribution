@@ -13,16 +13,13 @@ trait Css
 }
 object Css {
   
-  @scala.inline
-  def apply(css: String): Css = {
+  inline def apply(css: String): Css = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any])
     __obj.asInstanceOf[Css]
   }
   
-  @scala.inline
-  implicit class CssMutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
+  extension [Self <: Css](x: Self) {
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
   }
 }

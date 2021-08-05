@@ -16,22 +16,17 @@ trait SchemaSendWorkerMessagesResponse extends StObject {
 }
 object SchemaSendWorkerMessagesResponse {
   
-  @scala.inline
-  def apply(): SchemaSendWorkerMessagesResponse = {
+  inline def apply(): SchemaSendWorkerMessagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSendWorkerMessagesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSendWorkerMessagesResponseMutableBuilder[Self <: SchemaSendWorkerMessagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSendWorkerMessagesResponse](x: Self) {
     
-    @scala.inline
-    def setWorkerMessageResponses(value: js.Array[SchemaWorkerMessageResponse]): Self = StObject.set(x, "workerMessageResponses", value.asInstanceOf[js.Any])
+    inline def setWorkerMessageResponses(value: js.Array[SchemaWorkerMessageResponse]): Self = StObject.set(x, "workerMessageResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMessageResponsesUndefined: Self = StObject.set(x, "workerMessageResponses", js.undefined)
+    inline def setWorkerMessageResponsesUndefined: Self = StObject.set(x, "workerMessageResponses", js.undefined)
     
-    @scala.inline
-    def setWorkerMessageResponsesVarargs(value: SchemaWorkerMessageResponse*): Self = StObject.set(x, "workerMessageResponses", js.Array(value :_*))
+    inline def setWorkerMessageResponsesVarargs(value: SchemaWorkerMessageResponse*): Self = StObject.set(x, "workerMessageResponses", js.Array(value :_*))
   }
 }

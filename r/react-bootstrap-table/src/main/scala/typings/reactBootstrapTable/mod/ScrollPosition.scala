@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollPosition extends StObject
 object ScrollPosition {
   
-  @scala.inline
-  def Bottom: typings.reactBootstrapTable.reactBootstrapTableStrings.Bottom = "Bottom".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Bottom]
+  inline def Bottom: typings.reactBootstrapTable.reactBootstrapTableStrings.Bottom = "Bottom".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Bottom]
   
-  @scala.inline
-  def Top: typings.reactBootstrapTable.reactBootstrapTableStrings.Top = "Top".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Top]
+  inline def Top: typings.reactBootstrapTable.reactBootstrapTableStrings.Top = "Top".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Top]
 }

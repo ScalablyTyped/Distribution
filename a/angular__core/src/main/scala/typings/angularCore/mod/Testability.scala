@@ -11,19 +11,19 @@ class Testability protected ()
      with PublicTestability {
   def this(_ngZone: NgZone) = this()
   
-  var _callbacks: js.Any = js.native
+  /* private */ var _callbacks: js.Any = js.native
   
-  var _isZoneStable: js.Any = js.native
+  /* private */ var _isZoneStable: js.Any = js.native
   
-  var _ngZone: js.Any = js.native
+  /* private */ var _ngZone: js.Any = js.native
   
-  var _pendingCount: js.Any = js.native
+  /* private */ var _pendingCount: js.Any = js.native
   
-  var _runCallbacksIfReady: js.Any = js.native
+  /* private */ var _runCallbacksIfReady: js.Any = js.native
   
-  var _watchAngularEvents: js.Any = js.native
+  /* private */ var _watchAngularEvents: js.Any = js.native
   
-  var addCallback: js.Any = js.native
+  /* private */ var addCallback: js.Any = js.native
   
   /**
     * Decreases the number of pending request
@@ -37,7 +37,7 @@ class Testability protected ()
     */
   def getPendingRequestCount(): Double = js.native
   
-  var getPendingTasks: js.Any = js.native
+  /* private */ var getPendingTasks: js.Any = js.native
   
   /**
     * Increases the number of pending request
@@ -45,5 +45,5 @@ class Testability protected ()
     */
   def increasePendingRequestCount(): Double = js.native
   
-  var taskTrackingZone: js.Any = js.native
+  /* private */ var taskTrackingZone: js.Any = js.native
 }

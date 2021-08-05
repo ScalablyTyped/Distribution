@@ -22,7 +22,7 @@ object predicateMod {
       */
     /* protected */ def addValidator(validator: Validator[T]): this.type = js.native
     
-    val context: js.Any = js.native
+    /* private */ val context: js.Any = js.native
     
     /**
       @hidden
@@ -40,9 +40,9 @@ object predicateMod {
       */
     def not: this.type = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    val `type`: js.Any = js.native
+    /* private */ val `type`: js.Any = js.native
     
     /**
       Test if the value matches a custom validation function. The validation function should return an object containing a `validator` and `message`. If the `validator` is `false`, the validation fails and the `message` will be used as error message. If the `message` is a function, the function is invoked with the `label` as argument to let you further customize the error message.
@@ -63,20 +63,16 @@ object predicateMod {
   }
   object Context {
     
-    @scala.inline
-    def apply[T](validators: js.Array[Validator[T]]): Context[T] = {
+    inline def apply[T](validators: js.Array[Validator[T]]): Context[T] = {
       val __obj = js.Dynamic.literal(validators = validators.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context[T]]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
+    extension [Self <: Context[?], T](x: Self & Context[T]) {
       
-      @scala.inline
-      def setValidators(value: js.Array[Validator[T]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+      inline def setValidators(value: js.Array[Validator[T]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatorsVarargs(value: Validator[T]*): Self = StObject.set(x, "validators", js.Array(value :_*))
+      inline def setValidatorsVarargs(value: Validator[T]*): Self = StObject.set(x, "validators", js.Array(value :_*))
     }
   }
   
@@ -88,20 +84,16 @@ object predicateMod {
   }
   object PredicateOptions {
     
-    @scala.inline
-    def apply(): PredicateOptions = {
+    inline def apply(): PredicateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PredicateOptions]
     }
     
-    @scala.inline
-    implicit class PredicateOptionsMutableBuilder[Self <: PredicateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PredicateOptions](x: Self) {
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     }
   }
   

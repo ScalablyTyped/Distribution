@@ -15,16 +15,13 @@ trait PickImplbeforeIndetermina extends StObject {
 }
 object PickImplbeforeIndetermina {
   
-  @scala.inline
-  def apply(beforeIndeterminate: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): PickImplbeforeIndetermina = {
+  inline def apply(beforeIndeterminate: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): PickImplbeforeIndetermina = {
     val __obj = js.Dynamic.literal(beforeIndeterminate = beforeIndeterminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbeforeIndetermina]
   }
   
-  @scala.inline
-  implicit class PickImplbeforeIndeterminaMutableBuilder[Self <: PickImplbeforeIndetermina] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplbeforeIndetermina](x: Self) {
     
-    @scala.inline
-    def setBeforeIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeIndeterminate", value.asInstanceOf[js.Any])
+    inline def setBeforeIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeIndeterminate", value.asInstanceOf[js.Any])
   }
 }

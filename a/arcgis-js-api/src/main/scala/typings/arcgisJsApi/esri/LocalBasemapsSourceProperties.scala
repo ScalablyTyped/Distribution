@@ -15,22 +15,17 @@ trait LocalBasemapsSourceProperties extends StObject {
 }
 object LocalBasemapsSourceProperties {
   
-  @scala.inline
-  def apply(): LocalBasemapsSourceProperties = {
+  inline def apply(): LocalBasemapsSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalBasemapsSourceProperties]
   }
   
-  @scala.inline
-  implicit class LocalBasemapsSourcePropertiesMutableBuilder[Self <: LocalBasemapsSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LocalBasemapsSourceProperties](x: Self) {
     
-    @scala.inline
-    def setBasemaps(value: CollectionProperties[BasemapProperties]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
+    inline def setBasemaps(value: CollectionProperties[BasemapProperties]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapsUndefined: Self = StObject.set(x, "basemaps", js.undefined)
+    inline def setBasemapsUndefined: Self = StObject.set(x, "basemaps", js.undefined)
     
-    @scala.inline
-    def setBasemapsVarargs(value: BasemapProperties*): Self = StObject.set(x, "basemaps", js.Array(value :_*))
+    inline def setBasemapsVarargs(value: BasemapProperties*): Self = StObject.set(x, "basemaps", js.Array(value :_*))
   }
 }

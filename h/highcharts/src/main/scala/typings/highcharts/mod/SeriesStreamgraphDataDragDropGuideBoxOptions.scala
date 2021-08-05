@@ -13,19 +13,15 @@ trait SeriesStreamgraphDataDragDropGuideBoxOptions extends StObject {
 }
 object SeriesStreamgraphDataDragDropGuideBoxOptions {
   
-  @scala.inline
-  def apply(): SeriesStreamgraphDataDragDropGuideBoxOptions = {
+  inline def apply(): SeriesStreamgraphDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesStreamgraphDataDragDropGuideBoxOptions]
   }
   
-  @scala.inline
-  implicit class SeriesStreamgraphDataDragDropGuideBoxOptionsMutableBuilder[Self <: SeriesStreamgraphDataDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesStreamgraphDataDragDropGuideBoxOptions](x: Self) {
     
-    @scala.inline
-    def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

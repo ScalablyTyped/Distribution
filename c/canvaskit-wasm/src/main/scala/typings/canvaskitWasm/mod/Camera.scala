@@ -29,40 +29,29 @@ trait Camera extends StObject {
 }
 object Camera {
   
-  @scala.inline
-  def apply(angle: AngleInRadians, coa: Vector3, eye: Vector3, far: Double, near: Double, up: Vector3): Camera = {
+  inline def apply(angle: AngleInRadians, coa: Vector3, eye: Vector3, far: Double, near: Double, up: Vector3): Camera = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], coa = coa.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
     __obj.asInstanceOf[Camera]
   }
   
-  @scala.inline
-  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
+  extension [Self <: Camera](x: Self) {
     
-    @scala.inline
-    def setAngle(value: AngleInRadians): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: AngleInRadians): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoa(value: Vector3): Self = StObject.set(x, "coa", value.asInstanceOf[js.Any])
+    inline def setCoa(value: Vector3): Self = StObject.set(x, "coa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoaVarargs(value: Double*): Self = StObject.set(x, "coa", js.Array(value :_*))
+    inline def setCoaVarargs(value: Double*): Self = StObject.set(x, "coa", js.Array(value :_*))
     
-    @scala.inline
-    def setEye(value: Vector3): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
+    inline def setEye(value: Vector3): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEyeVarargs(value: Double*): Self = StObject.set(x, "eye", js.Array(value :_*))
+    inline def setEyeVarargs(value: Double*): Self = StObject.set(x, "eye", js.Array(value :_*))
     
-    @scala.inline
-    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
+    inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
+    inline def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpVarargs(value: Double*): Self = StObject.set(x, "up", js.Array(value :_*))
+    inline def setUpVarargs(value: Double*): Self = StObject.set(x, "up", js.Array(value :_*))
   }
 }

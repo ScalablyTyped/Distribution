@@ -21,49 +21,35 @@ trait DroppableEvents extends StObject {
 }
 object DroppableEvents {
   
-  @scala.inline
-  def apply(): DroppableEvents = {
+  inline def apply(): DroppableEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DroppableEvents]
   }
   
-  @scala.inline
-  implicit class DroppableEventsMutableBuilder[Self <: DroppableEvents] (val x: Self) extends AnyVal {
+  extension [Self <: DroppableEvents](x: Self) {
     
-    @scala.inline
-    def setActivate(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
+    inline def setActivate(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDeactivate(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction2(value))
+    inline def setDeactivate(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
+    inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
     
-    @scala.inline
-    def setDrop(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
+    inline def setDrop(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setOut(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "out", js.Any.fromFunction2(value))
+    inline def setOut(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "out", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
+    inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
     
-    @scala.inline
-    def setOver(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "over", js.Any.fromFunction2(value))
+    inline def setOver(value: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit): Self = StObject.set(x, "over", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOverUndefined: Self = StObject.set(x, "over", js.undefined)
+    inline def setOverUndefined: Self = StObject.set(x, "over", js.undefined)
   }
 }

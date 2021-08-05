@@ -16,8 +16,7 @@ trait ConditionalDynamicSlotNode
 }
 object ConditionalDynamicSlotNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternate: DynamicSlotNode | SimpleExpressionNode,
     consequent: DynamicSlotNode,
     loc: SourceLocation,
@@ -29,13 +28,10 @@ object ConditionalDynamicSlotNode {
     __obj.asInstanceOf[ConditionalDynamicSlotNode]
   }
   
-  @scala.inline
-  implicit class ConditionalDynamicSlotNodeMutableBuilder[Self <: ConditionalDynamicSlotNode] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalDynamicSlotNode](x: Self) {
     
-    @scala.inline
-    def setAlternate(value: DynamicSlotNode | SimpleExpressionNode): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: DynamicSlotNode | SimpleExpressionNode): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsequent(value: DynamicSlotNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: DynamicSlotNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
   }
 }

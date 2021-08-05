@@ -15,7 +15,7 @@ trait PublishObject extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.PublishObject_typekey")
+  /* private */ @JSName("PowerPoint.PublishObject_typekey")
   var PowerPointDotPublishObject_typekey: PublishObject
   
   def Publish(): Unit
@@ -32,8 +32,7 @@ trait PublishObject extends StObject {
 }
 object PublishObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     FileName: String,
     HTMLVersion: PpHTMLVersion,
@@ -51,40 +50,28 @@ object PublishObject {
     __obj.asInstanceOf[PublishObject]
   }
   
-  @scala.inline
-  implicit class PublishObjectMutableBuilder[Self <: PublishObject] (val x: Self) extends AnyVal {
+  extension [Self <: PublishObject](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLVersion(value: PpHTMLVersion): Self = StObject.set(x, "HTMLVersion", value.asInstanceOf[js.Any])
+    inline def setHTMLVersion(value: PpHTMLVersion): Self = StObject.set(x, "HTMLVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPublishObject_typekey(value: PublishObject): Self = StObject.set(x, "PowerPoint.PublishObject_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPublishObject_typekey(value: PublishObject): Self = StObject.set(x, "PowerPoint.PublishObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublish(value: () => Unit): Self = StObject.set(x, "Publish", js.Any.fromFunction0(value))
+    inline def setPublish(value: () => Unit): Self = StObject.set(x, "Publish", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRangeEnd(value: Double): Self = StObject.set(x, "RangeEnd", value.asInstanceOf[js.Any])
+    inline def setRangeEnd(value: Double): Self = StObject.set(x, "RangeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeStart(value: Double): Self = StObject.set(x, "RangeStart", value.asInstanceOf[js.Any])
+    inline def setRangeStart(value: Double): Self = StObject.set(x, "RangeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
+    inline def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: PpPublishSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: PpPublishSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeakerNotes(value: MsoTriState): Self = StObject.set(x, "SpeakerNotes", value.asInstanceOf[js.Any])
+    inline def setSpeakerNotes(value: MsoTriState): Self = StObject.set(x, "SpeakerNotes", value.asInstanceOf[js.Any])
   }
 }

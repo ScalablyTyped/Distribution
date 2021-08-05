@@ -27,34 +27,25 @@ trait SchemaTargetingTemplatesListResponse extends StObject {
 }
 object SchemaTargetingTemplatesListResponse {
   
-  @scala.inline
-  def apply(): SchemaTargetingTemplatesListResponse = {
+  inline def apply(): SchemaTargetingTemplatesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetingTemplatesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaTargetingTemplatesListResponseMutableBuilder[Self <: SchemaTargetingTemplatesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetingTemplatesListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTargetingTemplates(value: js.Array[SchemaTargetingTemplate]): Self = StObject.set(x, "targetingTemplates", value.asInstanceOf[js.Any])
+    inline def setTargetingTemplates(value: js.Array[SchemaTargetingTemplate]): Self = StObject.set(x, "targetingTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingTemplatesUndefined: Self = StObject.set(x, "targetingTemplates", js.undefined)
+    inline def setTargetingTemplatesUndefined: Self = StObject.set(x, "targetingTemplates", js.undefined)
     
-    @scala.inline
-    def setTargetingTemplatesVarargs(value: SchemaTargetingTemplate*): Self = StObject.set(x, "targetingTemplates", js.Array(value :_*))
+    inline def setTargetingTemplatesVarargs(value: SchemaTargetingTemplate*): Self = StObject.set(x, "targetingTemplates", js.Array(value :_*))
   }
 }

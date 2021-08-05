@@ -13,20 +13,16 @@ trait DoStatement
 }
 object DoStatement {
   
-  @scala.inline
-  def apply(body: js.Array[Statement]): DoStatement = {
+  inline def apply(body: js.Array[Statement]): DoStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DoStatement")
     __obj.asInstanceOf[DoStatement]
   }
   
-  @scala.inline
-  implicit class DoStatementMutableBuilder[Self <: DoStatement] (val x: Self) extends AnyVal {
+  extension [Self <: DoStatement](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
   }
 }

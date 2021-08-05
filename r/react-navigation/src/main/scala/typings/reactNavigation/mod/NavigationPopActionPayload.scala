@@ -17,37 +17,27 @@ trait NavigationPopActionPayload extends StObject {
 }
 object NavigationPopActionPayload {
   
-  @scala.inline
-  def apply(): NavigationPopActionPayload = {
+  inline def apply(): NavigationPopActionPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationPopActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationPopActionPayloadMutableBuilder[Self <: NavigationPopActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationPopActionPayload](x: Self) {
     
-    @scala.inline
-    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+    inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+    inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
-    @scala.inline
-    def setPrune(value: Boolean): Self = StObject.set(x, "prune", value.asInstanceOf[js.Any])
+    inline def setPrune(value: Boolean): Self = StObject.set(x, "prune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
+    inline def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
   }
 }

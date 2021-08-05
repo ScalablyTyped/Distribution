@@ -38,8 +38,7 @@ trait IAngularEvent extends StObject {
 }
 object IAngularEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentScope: IScope,
     defaultPrevented: Boolean,
     name: String,
@@ -50,28 +49,20 @@ object IAngularEvent {
     __obj.asInstanceOf[IAngularEvent]
   }
   
-  @scala.inline
-  implicit class IAngularEventMutableBuilder[Self <: IAngularEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IAngularEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentScope(value: IScope): Self = StObject.set(x, "currentScope", value.asInstanceOf[js.Any])
+    inline def setCurrentScope(value: IScope): Self = StObject.set(x, "currentScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     
-    @scala.inline
-    def setTargetScope(value: IScope): Self = StObject.set(x, "targetScope", value.asInstanceOf[js.Any])
+    inline def setTargetScope(value: IScope): Self = StObject.set(x, "targetScope", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait GPSPointDimension extends StObject {
 }
 object GPSPointDimension {
   
-  @scala.inline
-  def apply(Coordinates: GPSCoordinates): GPSPointDimension = {
+  inline def apply(Coordinates: GPSCoordinates): GPSPointDimension = {
     val __obj = js.Dynamic.literal(Coordinates = Coordinates.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPSPointDimension]
   }
   
-  @scala.inline
-  implicit class GPSPointDimensionMutableBuilder[Self <: GPSPointDimension] (val x: Self) extends AnyVal {
+  extension [Self <: GPSPointDimension](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: GPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: GPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeInKilometers(value: double): Self = StObject.set(x, "RangeInKilometers", value.asInstanceOf[js.Any])
+    inline def setRangeInKilometers(value: double): Self = StObject.set(x, "RangeInKilometers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeInKilometersUndefined: Self = StObject.set(x, "RangeInKilometers", js.undefined)
+    inline def setRangeInKilometersUndefined: Self = StObject.set(x, "RangeInKilometers", js.undefined)
   }
 }

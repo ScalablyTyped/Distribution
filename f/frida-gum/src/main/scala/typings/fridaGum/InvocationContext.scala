@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InvocationContext extends StObject
 object InvocationContext {
   
-  @scala.inline
-  def PortableInvocationContext(context: CpuContext, depth: Double, returnAddress: NativePointer, threadId: ThreadId): typings.fridaGum.PortableInvocationContext = {
+  inline def PortableInvocationContext(context: CpuContext, depth: Double, returnAddress: NativePointer, threadId: ThreadId): typings.fridaGum.PortableInvocationContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], returnAddress = returnAddress.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.PortableInvocationContext]
   }
   
-  @scala.inline
-  def UnixInvocationContext(
+  inline def UnixInvocationContext(
     context: CpuContext,
     depth: Double,
     errno: Double,
@@ -30,8 +28,7 @@ object InvocationContext {
     __obj.asInstanceOf[typings.fridaGum.UnixInvocationContext]
   }
   
-  @scala.inline
-  def WindowsInvocationContext(
+  inline def WindowsInvocationContext(
     context: CpuContext,
     depth: Double,
     lastError: Double,

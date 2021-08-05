@@ -68,23 +68,18 @@ object mod {
   }
   object CommentToken {
     
-    @scala.inline
-    def apply(text: String): CommentToken = {
+    inline def apply(text: String): CommentToken = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommentToken]
     }
     
-    @scala.inline
-    implicit class CommentTokenMutableBuilder[Self <: CommentToken] (val x: Self) extends AnyVal {
+    extension [Self <: CommentToken](x: Self) {
       
-      @scala.inline
-      def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,29 +107,22 @@ object mod {
   }
   object DoctypeToken {
     
-    @scala.inline
-    def apply(name: String, publicId: String, systemId: String): DoctypeToken = {
+    inline def apply(name: String, publicId: String, systemId: String): DoctypeToken = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], publicId = publicId.asInstanceOf[js.Any], systemId = systemId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DoctypeToken]
     }
     
-    @scala.inline
-    implicit class DoctypeTokenMutableBuilder[Self <: DoctypeToken] (val x: Self) extends AnyVal {
+    extension [Self <: DoctypeToken](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+      inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
       
-      @scala.inline
-      def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+      inline def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,23 +140,18 @@ object mod {
   }
   object EndTagToken {
     
-    @scala.inline
-    def apply(tagName: String): EndTagToken = {
+    inline def apply(tagName: String): EndTagToken = {
       val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndTagToken]
     }
     
-    @scala.inline
-    implicit class EndTagTokenMutableBuilder[Self <: EndTagToken] (val x: Self) extends AnyVal {
+    extension [Self <: EndTagToken](x: Self) {
       
-      @scala.inline
-      def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,20 +265,16 @@ object mod {
   }
   object SAXParserOptions {
     
-    @scala.inline
-    def apply(): SAXParserOptions = {
+    inline def apply(): SAXParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SAXParserOptions]
     }
     
-    @scala.inline
-    implicit class SAXParserOptionsMutableBuilder[Self <: SAXParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SAXParserOptions](x: Self) {
       
-      @scala.inline
-      def setSourceCodeLocationInfo(value: Boolean): Self = StObject.set(x, "sourceCodeLocationInfo", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocationInfo(value: Boolean): Self = StObject.set(x, "sourceCodeLocationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationInfoUndefined: Self = StObject.set(x, "sourceCodeLocationInfo", js.undefined)
+      inline def setSourceCodeLocationInfoUndefined: Self = StObject.set(x, "sourceCodeLocationInfo", js.undefined)
     }
   }
   
@@ -323,32 +302,24 @@ object mod {
   }
   object StartTagToken {
     
-    @scala.inline
-    def apply(attrs: js.Array[Attribute], selfClosing: Boolean, tagName: String): StartTagToken = {
+    inline def apply(attrs: js.Array[Attribute], selfClosing: Boolean, tagName: String): StartTagToken = {
       val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartTagToken]
     }
     
-    @scala.inline
-    implicit class StartTagTokenMutableBuilder[Self <: StartTagToken] (val x: Self) extends AnyVal {
+    extension [Self <: StartTagToken](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: js.Array[Attribute]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: js.Array[Attribute]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsVarargs(value: Attribute*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+      inline def setAttrsVarargs(value: Attribute*): Self = StObject.set(x, "attrs", js.Array(value :_*))
       
-      @scala.inline
-      def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
+      inline def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocation(value: StartTagLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: StartTagLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -366,23 +337,18 @@ object mod {
   }
   object TextToken {
     
-    @scala.inline
-    def apply(text: String): TextToken = {
+    inline def apply(text: String): TextToken = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextToken]
     }
     
-    @scala.inline
-    implicit class TextTokenMutableBuilder[Self <: TextToken] (val x: Self) extends AnyVal {
+    extension [Self <: TextToken](x: Self) {
       
-      @scala.inline
-      def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

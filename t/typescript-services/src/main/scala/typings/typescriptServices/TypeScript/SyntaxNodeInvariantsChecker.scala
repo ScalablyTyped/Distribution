@@ -8,12 +8,11 @@ trait SyntaxNodeInvariantsChecker
   extends StObject
      with SyntaxWalker {
   
-  var tokenTable: js.Any
+  /* private */ var tokenTable: js.Any
 }
 object SyntaxNodeInvariantsChecker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     tokenTable: js.Any,
     visitArgumentList: ArgumentListSyntax => js.Any,
     visitArrayLiteralExpression: ArrayLiteralExpressionSyntax => js.Any,
@@ -113,10 +112,8 @@ object SyntaxNodeInvariantsChecker {
     __obj.asInstanceOf[SyntaxNodeInvariantsChecker]
   }
   
-  @scala.inline
-  implicit class SyntaxNodeInvariantsCheckerMutableBuilder[Self <: SyntaxNodeInvariantsChecker] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxNodeInvariantsChecker](x: Self) {
     
-    @scala.inline
-    def setTokenTable(value: js.Any): Self = StObject.set(x, "tokenTable", value.asInstanceOf[js.Any])
+    inline def setTokenTable(value: js.Any): Self = StObject.set(x, "tokenTable", value.asInstanceOf[js.Any])
   }
 }

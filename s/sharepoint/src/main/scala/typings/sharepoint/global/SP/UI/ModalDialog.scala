@@ -75,126 +75,88 @@ object ModalDialog {
   
   /** Show modal dialog specified by url, callback, height and width. */
   /* static member */
-  @scala.inline
-  def OpenPopUpPage(url: String, callback: DialogReturnValueCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Unit, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def OpenPopUpPage(url: String, callback: DialogReturnValueCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Double, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Unit, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OpenPopUpPage")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Refresh the page if specified dialogResult equals to SP.UI.DialogResult.OK */
   /* static member */
-  @scala.inline
-  def RefreshPage(dialogResult: typings.sharepoint.SP.UI.DialogResult): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RefreshPage")(dialogResult.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def RefreshPage(dialogResult: typings.sharepoint.SP.UI.DialogResult): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RefreshPage")(dialogResult.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Show page specified by the url in a modal dialog. If the dialog returns SP.UI.DialogResult.OK, the page is refreshed. */
   /* static member */
-  @scala.inline
-  def ShowPopupDialog(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ShowPopupDialog")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ShowPopupDialog(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ShowPopupDialog")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Should be called from an existing dialog. */
   /* static member */
-  @scala.inline
-  def commonModalDialogClose(dialogResult: typings.sharepoint.SP.UI.DialogResult, returnValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogClose")(dialogResult.asInstanceOf[js.Any], returnValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogClose(dialogResult: typings.sharepoint.SP.UI.DialogResult, returnValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogClose")(dialogResult.asInstanceOf[js.Any], returnValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Shows a modal dialog, specified by url, callback, args, and options. Internally, uses SP.UI.ModalDialog.showModalDialog.
     @param url overrides options.url
     @param callback overrides options.dialogResultValueCallback
     @param args overrides options.args */
   /* static member */
-  @scala.inline
-  def commonModalDialogOpen(url: String, options: IDialogOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def commonModalDialogOpen(url: String, options: IDialogOptions, callback: Unit, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogOpen(url: String, options: IDialogOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: Unit, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def getChildDialog(): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("get_childDialog")().asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def getChildDialog(): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("get_childDialog")().asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
   
   /** Displays a modal dialog defined by the specified options. */
   /* static member */
-  @scala.inline
-  def showModalDialog(options: IDialogOptions): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("showModalDialog")(options.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showModalDialog(options: IDialogOptions): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("showModalDialog")(options.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
   
   /* static member */
-  @scala.inline
-  def showPlatformFirstRunDialog(url: String, callbackFunc: DialogReturnValueCallback): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showPlatformFirstRunDialog")(url.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showPlatformFirstRunDialog(url: String, callbackFunc: DialogReturnValueCallback): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showPlatformFirstRunDialog")(url.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
   
   /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel button is shown. If user clicks it, the callbackFunc is called. */
   /* static member */
-  @scala.inline
-  def showWaitScreenSize(title: String): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: String): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: String, callbackFunc: Unit, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: String, callbackFunc: Unit, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: String, callbackFunc: Unit, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: String, callbackFunc: DialogReturnValueCallback): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: String, callbackFunc: DialogReturnValueCallback, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(
+  inline def showWaitScreenSize(title: String): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: String): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: String, callbackFunc: Unit, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: String, callbackFunc: Unit, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: String, callbackFunc: Unit, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: String, callbackFunc: DialogReturnValueCallback): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: String, callbackFunc: DialogReturnValueCallback, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(
     title: String,
     message: String,
     callbackFunc: DialogReturnValueCallback,
     height: Double,
     width: Double
   ): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(
+  inline def showWaitScreenSize(
     title: String,
     message: String,
     callbackFunc: DialogReturnValueCallback,
     height: Unit,
     width: Double
   ): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: Unit, callbackFunc: Unit, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: Unit, callbackFunc: Unit, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: Unit, callbackFunc: Unit, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: Unit, callbackFunc: DialogReturnValueCallback): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: Unit, callbackFunc: DialogReturnValueCallback, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(
+  inline def showWaitScreenSize(title: String, message: Unit, callbackFunc: Unit, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: Unit, callbackFunc: Unit, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: Unit, callbackFunc: Unit, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: Unit, callbackFunc: DialogReturnValueCallback): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: Unit, callbackFunc: DialogReturnValueCallback, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(
     title: String,
     message: Unit,
     callbackFunc: DialogReturnValueCallback,
     height: Double,
     width: Double
   ): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenSize(title: String, message: Unit, callbackFunc: DialogReturnValueCallback, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenSize(title: String, message: Unit, callbackFunc: DialogReturnValueCallback, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenSize")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackFunc.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
   
   /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel/close button is not shown. */
   /* static member */
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String, message: String): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String, message: String, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String, message: String, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String, message: String, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String, message: Unit, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String, message: Unit, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
-  @scala.inline
-  def showWaitScreenWithNoClose(title: String, message: Unit, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String, message: String): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String, message: String, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String, message: String, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String, message: String, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String, message: Unit, height: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String, message: Unit, height: Double, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
+  inline def showWaitScreenWithNoClose(title: String, message: Unit, height: Unit, width: Double): typings.sharepoint.SP.UI.ModalDialog = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitScreenWithNoClose")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]
 }

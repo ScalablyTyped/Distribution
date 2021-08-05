@@ -30,8 +30,7 @@ trait ExtensionManager extends StObject {
 }
 object ExtensionManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extensions: StringDictionary[Extension],
     extensionsAsync: StringDictionary[Extension],
     getExtension: String => Extension | Null,
@@ -47,37 +46,26 @@ object ExtensionManager {
     __obj.asInstanceOf[ExtensionManager]
   }
   
-  @scala.inline
-  implicit class ExtensionManagerMutableBuilder[Self <: ExtensionManager] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionManager](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: StringDictionary[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: StringDictionary[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsAsync(value: StringDictionary[Extension]): Self = StObject.set(x, "extensionsAsync", value.asInstanceOf[js.Any])
+    inline def setExtensionsAsync(value: StringDictionary[Extension]): Self = StObject.set(x, "extensionsAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExtension(value: String => Extension | Null): Self = StObject.set(x, "getExtension", js.Any.fromFunction1(value))
+    inline def setGetExtension(value: String => Extension | Null): Self = StObject.set(x, "getExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetExternalPath(value: String => String | Null): Self = StObject.set(x, "getExternalPath", js.Any.fromFunction1(value))
+    inline def setGetExternalPath(value: String => String | Null): Self = StObject.set(x, "getExternalPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRegisteredExtensions(value: () => js.Array[Id]): Self = StObject.set(x, "getRegisteredExtensions", js.Any.fromFunction0(value))
+    inline def setGetRegisteredExtensions(value: () => js.Array[Id]): Self = StObject.set(x, "getRegisteredExtensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPopuplateOptions(value: js.Any => Unit): Self = StObject.set(x, "popuplateOptions", js.Any.fromFunction1(value))
+    inline def setPopuplateOptions(value: js.Any => Unit): Self = StObject.set(x, "popuplateOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterExtension(value: (String, js.Object) => Boolean): Self = StObject.set(x, "registerExtension", js.Any.fromFunction2(value))
+    inline def setRegisterExtension(value: (String, js.Object) => Boolean): Self = StObject.set(x, "registerExtension", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterExternalExtension(value: (String, String) => Boolean): Self = StObject.set(x, "registerExternalExtension", js.Any.fromFunction2(value))
+    inline def setRegisterExternalExtension(value: (String, String) => Boolean): Self = StObject.set(x, "registerExternalExtension", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnregisterExtension(value: String => Boolean): Self = StObject.set(x, "unregisterExtension", js.Any.fromFunction1(value))
+    inline def setUnregisterExtension(value: String => Boolean): Self = StObject.set(x, "unregisterExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregisterExternalExtension(value: String => Boolean): Self = StObject.set(x, "unregisterExternalExtension", js.Any.fromFunction1(value))
+    inline def setUnregisterExternalExtension(value: String => Boolean): Self = StObject.set(x, "unregisterExternalExtension", js.Any.fromFunction1(value))
   }
 }

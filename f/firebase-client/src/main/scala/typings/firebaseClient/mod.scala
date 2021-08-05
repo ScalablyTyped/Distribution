@@ -84,20 +84,16 @@ object mod extends Shortcut {
   }
   object FirebaseConfig {
     
-    @scala.inline
-    def apply(auth: String, url: String): FirebaseConfig = {
+    inline def apply(auth: String, url: String): FirebaseConfig = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirebaseConfig]
     }
     
-    @scala.inline
-    implicit class FirebaseConfigMutableBuilder[Self <: FirebaseConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseConfig](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,17 +106,14 @@ object mod extends Shortcut {
   }
   object PushResponse {
     
-    @scala.inline
-    def apply(name: String): PushResponse = {
+    inline def apply(name: String): PushResponse = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PushResponse]
     }
     
-    @scala.inline
-    implicit class PushResponseMutableBuilder[Self <: PushResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PushResponse](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

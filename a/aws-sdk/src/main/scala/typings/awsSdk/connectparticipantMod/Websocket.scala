@@ -18,25 +18,19 @@ trait Websocket extends StObject {
 }
 object Websocket {
   
-  @scala.inline
-  def apply(): Websocket = {
+  inline def apply(): Websocket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Websocket]
   }
   
-  @scala.inline
-  implicit class WebsocketMutableBuilder[Self <: Websocket] (val x: Self) extends AnyVal {
+  extension [Self <: Websocket](x: Self) {
     
-    @scala.inline
-    def setConnectionExpiry(value: ISO8601Datetime): Self = StObject.set(x, "ConnectionExpiry", value.asInstanceOf[js.Any])
+    inline def setConnectionExpiry(value: ISO8601Datetime): Self = StObject.set(x, "ConnectionExpiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionExpiryUndefined: Self = StObject.set(x, "ConnectionExpiry", js.undefined)
+    inline def setConnectionExpiryUndefined: Self = StObject.set(x, "ConnectionExpiry", js.undefined)
     
-    @scala.inline
-    def setUrl(value: PreSignedConnectionUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: PreSignedConnectionUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

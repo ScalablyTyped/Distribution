@@ -12,19 +12,15 @@ trait DialogSuggestionValue extends StObject {
 }
 object DialogSuggestionValue {
   
-  @scala.inline
-  def apply(): DialogSuggestionValue = {
+  inline def apply(): DialogSuggestionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogSuggestionValue]
   }
   
-  @scala.inline
-  implicit class DialogSuggestionValueMutableBuilder[Self <: DialogSuggestionValue] (val x: Self) extends AnyVal {
+  extension [Self <: DialogSuggestionValue](x: Self) {
     
-    @scala.inline
-    def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait AcceptDomainTransferFromAnotherAwsAccountRequest extends StObject {
 }
 object AcceptDomainTransferFromAnotherAwsAccountRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, Password: String): AcceptDomainTransferFromAnotherAwsAccountRequest = {
+  inline def apply(DomainName: DomainName, Password: String): AcceptDomainTransferFromAnotherAwsAccountRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptDomainTransferFromAnotherAwsAccountRequest]
   }
   
-  @scala.inline
-  implicit class AcceptDomainTransferFromAnotherAwsAccountRequestMutableBuilder[Self <: AcceptDomainTransferFromAnotherAwsAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptDomainTransferFromAnotherAwsAccountRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

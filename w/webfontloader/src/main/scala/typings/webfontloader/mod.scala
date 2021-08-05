@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def load(config: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def load(config: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Config extends StObject {
     
@@ -58,107 +57,74 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setActive(value: () => Unit): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
+      inline def setActive(value: () => Unit): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setClasses(value: Boolean): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Boolean): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Array[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Array[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setContextVarargs(value: String*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: String*): Self = StObject.set(x, "context", js.Array(value :_*))
       
-      @scala.inline
-      def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setFontactive(value: (/* familyName */ String, /* fvd */ String) => Unit): Self = StObject.set(x, "fontactive", js.Any.fromFunction2(value))
+      inline def setFontactive(value: (/* familyName */ String, /* fvd */ String) => Unit): Self = StObject.set(x, "fontactive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFontactiveUndefined: Self = StObject.set(x, "fontactive", js.undefined)
+      inline def setFontactiveUndefined: Self = StObject.set(x, "fontactive", js.undefined)
       
-      @scala.inline
-      def setFontdeck(value: Fontdeck): Self = StObject.set(x, "fontdeck", value.asInstanceOf[js.Any])
+      inline def setFontdeck(value: Fontdeck): Self = StObject.set(x, "fontdeck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontdeckUndefined: Self = StObject.set(x, "fontdeck", js.undefined)
+      inline def setFontdeckUndefined: Self = StObject.set(x, "fontdeck", js.undefined)
       
-      @scala.inline
-      def setFontinactive(value: (/* familyName */ String, /* fvd */ String) => Unit): Self = StObject.set(x, "fontinactive", js.Any.fromFunction2(value))
+      inline def setFontinactive(value: (/* familyName */ String, /* fvd */ String) => Unit): Self = StObject.set(x, "fontinactive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFontinactiveUndefined: Self = StObject.set(x, "fontinactive", js.undefined)
+      inline def setFontinactiveUndefined: Self = StObject.set(x, "fontinactive", js.undefined)
       
-      @scala.inline
-      def setFontloading(value: (/* familyName */ String, /* fvd */ String) => Unit): Self = StObject.set(x, "fontloading", js.Any.fromFunction2(value))
+      inline def setFontloading(value: (/* familyName */ String, /* fvd */ String) => Unit): Self = StObject.set(x, "fontloading", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFontloadingUndefined: Self = StObject.set(x, "fontloading", js.undefined)
+      inline def setFontloadingUndefined: Self = StObject.set(x, "fontloading", js.undefined)
       
-      @scala.inline
-      def setGoogle(value: Google): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
+      inline def setGoogle(value: Google): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogleUndefined: Self = StObject.set(x, "google", js.undefined)
+      inline def setGoogleUndefined: Self = StObject.set(x, "google", js.undefined)
       
-      @scala.inline
-      def setInactive(value: () => Unit): Self = StObject.set(x, "inactive", js.Any.fromFunction0(value))
+      inline def setInactive(value: () => Unit): Self = StObject.set(x, "inactive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+      inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
       
-      @scala.inline
-      def setLoading(value: () => Unit): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
+      inline def setLoading(value: () => Unit): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setMonotype(value: Monotype): Self = StObject.set(x, "monotype", value.asInstanceOf[js.Any])
+      inline def setMonotype(value: Monotype): Self = StObject.set(x, "monotype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonotypeUndefined: Self = StObject.set(x, "monotype", js.undefined)
+      inline def setMonotypeUndefined: Self = StObject.set(x, "monotype", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTypekit(value: Typekit): Self = StObject.set(x, "typekit", value.asInstanceOf[js.Any])
+      inline def setTypekit(value: Typekit): Self = StObject.set(x, "typekit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypekitUndefined: Self = StObject.set(x, "typekit", js.undefined)
+      inline def setTypekitUndefined: Self = StObject.set(x, "typekit", js.undefined)
     }
   }
   
@@ -172,38 +138,28 @@ object mod {
   }
   object Custom {
     
-    @scala.inline
-    def apply(): Custom = {
+    inline def apply(): Custom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Custom]
     }
     
-    @scala.inline
-    implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+    extension [Self <: Custom](x: Self) {
       
-      @scala.inline
-      def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
+      inline def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamiliesUndefined: Self = StObject.set(x, "families", js.undefined)
+      inline def setFamiliesUndefined: Self = StObject.set(x, "families", js.undefined)
       
-      @scala.inline
-      def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
       
-      @scala.inline
-      def setTestStrings(value: StringDictionary[String]): Self = StObject.set(x, "testStrings", value.asInstanceOf[js.Any])
+      inline def setTestStrings(value: StringDictionary[String]): Self = StObject.set(x, "testStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestStringsUndefined: Self = StObject.set(x, "testStrings", js.undefined)
+      inline def setTestStringsUndefined: Self = StObject.set(x, "testStrings", js.undefined)
       
-      @scala.inline
-      def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+      inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      @scala.inline
-      def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
     }
   }
   
@@ -213,20 +169,16 @@ object mod {
   }
   object Fontdeck {
     
-    @scala.inline
-    def apply(): Fontdeck = {
+    inline def apply(): Fontdeck = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fontdeck]
     }
     
-    @scala.inline
-    implicit class FontdeckMutableBuilder[Self <: Fontdeck] (val x: Self) extends AnyVal {
+    extension [Self <: Fontdeck](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -240,32 +192,24 @@ object mod {
   }
   object Google {
     
-    @scala.inline
-    def apply(families: js.Array[String]): Google = {
+    inline def apply(families: js.Array[String]): Google = {
       val __obj = js.Dynamic.literal(families = families.asInstanceOf[js.Any])
       __obj.asInstanceOf[Google]
     }
     
-    @scala.inline
-    implicit class GoogleMutableBuilder[Self <: Google] (val x: Self) extends AnyVal {
+    extension [Self <: Google](x: Self) {
       
-      @scala.inline
-      def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+      inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
       
-      @scala.inline
-      def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
+      inline def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -279,32 +223,24 @@ object mod {
   }
   object Monotype {
     
-    @scala.inline
-    def apply(): Monotype = {
+    inline def apply(): Monotype = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Monotype]
     }
     
-    @scala.inline
-    implicit class MonotypeMutableBuilder[Self <: Monotype] (val x: Self) extends AnyVal {
+    extension [Self <: Monotype](x: Self) {
       
-      @scala.inline
-      def setLoadAllFonts(value: Boolean): Self = StObject.set(x, "loadAllFonts", value.asInstanceOf[js.Any])
+      inline def setLoadAllFonts(value: Boolean): Self = StObject.set(x, "loadAllFonts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadAllFontsUndefined: Self = StObject.set(x, "loadAllFonts", js.undefined)
+      inline def setLoadAllFontsUndefined: Self = StObject.set(x, "loadAllFonts", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -314,20 +250,16 @@ object mod {
   }
   object Typekit {
     
-    @scala.inline
-    def apply(): Typekit = {
+    inline def apply(): Typekit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Typekit]
     }
     
-    @scala.inline
-    implicit class TypekitMutableBuilder[Self <: Typekit] (val x: Self) extends AnyVal {
+    extension [Self <: Typekit](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
 }

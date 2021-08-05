@@ -23,25 +23,19 @@ trait PutResourcePolicyRequest extends StObject {
 }
 object PutResourcePolicyRequest {
   
-  @scala.inline
-  def apply(ResourcePolicy: NonEmptyResourcePolicyType, SecretId: SecretIdType): PutResourcePolicyRequest = {
+  inline def apply(ResourcePolicy: NonEmptyResourcePolicyType, SecretId: SecretIdType): PutResourcePolicyRequest = {
     val __obj = js.Dynamic.literal(ResourcePolicy = ResourcePolicy.asInstanceOf[js.Any], SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResourcePolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutResourcePolicyRequestMutableBuilder[Self <: PutResourcePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutResourcePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setBlockPublicPolicy(value: BooleanType): Self = StObject.set(x, "BlockPublicPolicy", value.asInstanceOf[js.Any])
+    inline def setBlockPublicPolicy(value: BooleanType): Self = StObject.set(x, "BlockPublicPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPublicPolicyUndefined: Self = StObject.set(x, "BlockPublicPolicy", js.undefined)
+    inline def setBlockPublicPolicyUndefined: Self = StObject.set(x, "BlockPublicPolicy", js.undefined)
     
-    @scala.inline
-    def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
+    inline def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

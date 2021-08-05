@@ -12,19 +12,15 @@ trait SetAutomaticPresenceSimulationRequest extends StObject {
 }
 object SetAutomaticPresenceSimulationRequest {
   
-  @scala.inline
-  def apply(authenticatorId: AuthenticatorId, enabled: Boolean): SetAutomaticPresenceSimulationRequest = {
+  inline def apply(authenticatorId: AuthenticatorId, enabled: Boolean): SetAutomaticPresenceSimulationRequest = {
     val __obj = js.Dynamic.literal(authenticatorId = authenticatorId.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAutomaticPresenceSimulationRequest]
   }
   
-  @scala.inline
-  implicit class SetAutomaticPresenceSimulationRequestMutableBuilder[Self <: SetAutomaticPresenceSimulationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetAutomaticPresenceSimulationRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
+    inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

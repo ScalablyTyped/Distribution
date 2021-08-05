@@ -43,8 +43,7 @@ object refIndicatorMod {
   }
   object CurrentVersionProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       url: String,
       versions: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/ui.@storybook/ui/dist/components/sidebar/types.RefType['versions'] */ js.Any
     ): CurrentVersionProps = {
@@ -52,14 +51,11 @@ object refIndicatorMod {
       __obj.asInstanceOf[CurrentVersionProps]
     }
     
-    @scala.inline
-    implicit class CurrentVersionPropsMutableBuilder[Self <: CurrentVersionProps] (val x: Self) extends AnyVal {
+    extension [Self <: CurrentVersionProps](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersions(
+      inline def setVersions(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/ui.@storybook/ui/dist/components/sidebar/types.RefType['versions'] */ js.Any
       ): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     }
@@ -79,8 +75,7 @@ object refIndicatorMod {
   }
   object IndicatorIconProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `type`: ReturnType[
           js.Function4[
             /* isLoading */ Boolean, 
@@ -96,11 +91,9 @@ object refIndicatorMod {
       __obj.asInstanceOf[IndicatorIconProps]
     }
     
-    @scala.inline
-    implicit class IndicatorIconPropsMutableBuilder[Self <: IndicatorIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: IndicatorIconProps](x: Self) {
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: ReturnType[
               js.Function4[
                 /* isLoading */ Boolean, 

@@ -43,49 +43,35 @@ trait IColumnReorderOptions extends StObject {
 }
 object IColumnReorderOptions {
   
-  @scala.inline
-  def apply(): IColumnReorderOptions = {
+  inline def apply(): IColumnReorderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnReorderOptions]
   }
   
-  @scala.inline
-  implicit class IColumnReorderOptionsMutableBuilder[Self <: IColumnReorderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IColumnReorderOptions](x: Self) {
     
-    @scala.inline
-    def setFrozenColumnCountFromEnd(value: Double): Self = StObject.set(x, "frozenColumnCountFromEnd", value.asInstanceOf[js.Any])
+    inline def setFrozenColumnCountFromEnd(value: Double): Self = StObject.set(x, "frozenColumnCountFromEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrozenColumnCountFromEndUndefined: Self = StObject.set(x, "frozenColumnCountFromEnd", js.undefined)
+    inline def setFrozenColumnCountFromEndUndefined: Self = StObject.set(x, "frozenColumnCountFromEnd", js.undefined)
     
-    @scala.inline
-    def setFrozenColumnCountFromStart(value: Double): Self = StObject.set(x, "frozenColumnCountFromStart", value.asInstanceOf[js.Any])
+    inline def setFrozenColumnCountFromStart(value: Double): Self = StObject.set(x, "frozenColumnCountFromStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrozenColumnCountFromStartUndefined: Self = StObject.set(x, "frozenColumnCountFromStart", js.undefined)
+    inline def setFrozenColumnCountFromStartUndefined: Self = StObject.set(x, "frozenColumnCountFromStart", js.undefined)
     
-    @scala.inline
-    def setHandleColumnReorder(value: (/* draggedIndex */ Double, /* targetIndex */ Double) => Unit): Self = StObject.set(x, "handleColumnReorder", js.Any.fromFunction2(value))
+    inline def setHandleColumnReorder(value: (/* draggedIndex */ Double, /* targetIndex */ Double) => Unit): Self = StObject.set(x, "handleColumnReorder", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHandleColumnReorderUndefined: Self = StObject.set(x, "handleColumnReorder", js.undefined)
+    inline def setHandleColumnReorderUndefined: Self = StObject.set(x, "handleColumnReorder", js.undefined)
     
-    @scala.inline
-    def setOnColumnDragStart(value: /* dragStarted */ Boolean => Unit): Self = StObject.set(x, "onColumnDragStart", js.Any.fromFunction1(value))
+    inline def setOnColumnDragStart(value: /* dragStarted */ Boolean => Unit): Self = StObject.set(x, "onColumnDragStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnColumnDragStartUndefined: Self = StObject.set(x, "onColumnDragStart", js.undefined)
+    inline def setOnColumnDragStartUndefined: Self = StObject.set(x, "onColumnDragStart", js.undefined)
     
-    @scala.inline
-    def setOnColumnDrop(value: /* dragDropDetails */ IColumnDragDropDetails => Unit): Self = StObject.set(x, "onColumnDrop", js.Any.fromFunction1(value))
+    inline def setOnColumnDrop(value: /* dragDropDetails */ IColumnDragDropDetails => Unit): Self = StObject.set(x, "onColumnDrop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnColumnDropUndefined: Self = StObject.set(x, "onColumnDrop", js.undefined)
+    inline def setOnColumnDropUndefined: Self = StObject.set(x, "onColumnDrop", js.undefined)
     
-    @scala.inline
-    def setOnDragEnd(value: /* columnDropLocationDetails */ ColumnDragEndLocation => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    inline def setOnDragEnd(value: /* columnDropLocationDetails */ ColumnDragEndLocation => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+    inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
   }
 }

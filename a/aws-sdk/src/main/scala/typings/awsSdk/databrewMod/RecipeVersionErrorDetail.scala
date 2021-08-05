@@ -23,31 +23,23 @@ trait RecipeVersionErrorDetail extends StObject {
 }
 object RecipeVersionErrorDetail {
   
-  @scala.inline
-  def apply(): RecipeVersionErrorDetail = {
+  inline def apply(): RecipeVersionErrorDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipeVersionErrorDetail]
   }
   
-  @scala.inline
-  implicit class RecipeVersionErrorDetailMutableBuilder[Self <: RecipeVersionErrorDetail] (val x: Self) extends AnyVal {
+  extension [Self <: RecipeVersionErrorDetail](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: RecipeErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: RecipeErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
+    inline def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeVersionUndefined: Self = StObject.set(x, "RecipeVersion", js.undefined)
+    inline def setRecipeVersionUndefined: Self = StObject.set(x, "RecipeVersion", js.undefined)
   }
 }

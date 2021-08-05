@@ -23,22 +23,17 @@ trait RegisterJobDefinitionResponse extends StObject {
 }
 object RegisterJobDefinitionResponse {
   
-  @scala.inline
-  def apply(jobDefinitionArn: String, jobDefinitionName: String, revision: Integer): RegisterJobDefinitionResponse = {
+  inline def apply(jobDefinitionArn: String, jobDefinitionName: String, revision: Integer): RegisterJobDefinitionResponse = {
     val __obj = js.Dynamic.literal(jobDefinitionArn = jobDefinitionArn.asInstanceOf[js.Any], jobDefinitionName = jobDefinitionName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterJobDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class RegisterJobDefinitionResponseMutableBuilder[Self <: RegisterJobDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterJobDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setJobDefinitionArn(value: String): Self = StObject.set(x, "jobDefinitionArn", value.asInstanceOf[js.Any])
+    inline def setJobDefinitionArn(value: String): Self = StObject.set(x, "jobDefinitionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobDefinitionName(value: String): Self = StObject.set(x, "jobDefinitionName", value.asInstanceOf[js.Any])
+    inline def setJobDefinitionName(value: String): Self = StObject.set(x, "jobDefinitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Integer): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Integer): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

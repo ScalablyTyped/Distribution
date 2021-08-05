@@ -14,31 +14,23 @@ trait MultiSelectVirtual extends StObject {
 }
 object MultiSelectVirtual {
   
-  @scala.inline
-  def apply(): MultiSelectVirtual = {
+  inline def apply(): MultiSelectVirtual = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiSelectVirtual]
   }
   
-  @scala.inline
-  implicit class MultiSelectVirtualMutableBuilder[Self <: MultiSelectVirtual] (val x: Self) extends AnyVal {
+  extension [Self <: MultiSelectVirtual](x: Self) {
     
-    @scala.inline
-    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+    inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
-    @scala.inline
-    def setMapValueTo(value: String): Self = StObject.set(x, "mapValueTo", value.asInstanceOf[js.Any])
+    inline def setMapValueTo(value: String): Self = StObject.set(x, "mapValueTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapValueToUndefined: Self = StObject.set(x, "mapValueTo", js.undefined)
+    inline def setMapValueToUndefined: Self = StObject.set(x, "mapValueTo", js.undefined)
     
-    @scala.inline
-    def setValueMapper(value: js.Function): Self = StObject.set(x, "valueMapper", value.asInstanceOf[js.Any])
+    inline def setValueMapper(value: js.Function): Self = StObject.set(x, "valueMapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
+    inline def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
   }
 }

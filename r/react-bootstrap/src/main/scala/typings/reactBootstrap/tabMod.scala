@@ -27,8 +27,7 @@ object tabMod {
   @JSImport("react-bootstrap/lib/Tab", "Container")
   @js.native
   def Container: Instantiable0[typings.reactBootstrap.tabContainerMod.^] = js.native
-  @scala.inline
-  def Container_=(x: Instantiable0[typings.reactBootstrap.tabContainerMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
+  inline def Container_=(x: Instantiable0[typings.reactBootstrap.tabContainerMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Tab", "Content")
@@ -39,8 +38,7 @@ object tabMod {
   @JSImport("react-bootstrap/lib/Tab", "Content")
   @js.native
   def Content: Instantiable0[typings.reactBootstrap.tabContentMod.^] = js.native
-  @scala.inline
-  def Content_=(x: Instantiable0[typings.reactBootstrap.tabContentMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: Instantiable0[typings.reactBootstrap.tabContentMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Tab", "Pane")
@@ -51,8 +49,7 @@ object tabMod {
   @JSImport("react-bootstrap/lib/Tab", "Pane")
   @js.native
   def Pane: Instantiable0[typings.reactBootstrap.tabPaneMod.^] = js.native
-  @scala.inline
-  def Pane_=(x: Instantiable0[typings.reactBootstrap.tabPaneMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pane")(x.asInstanceOf[js.Any])
+  inline def Pane_=(x: Instantiable0[typings.reactBootstrap.tabPaneMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pane")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Tab
@@ -80,56 +77,40 @@ object tabMod {
   }
   object TabProps {
     
-    @scala.inline
-    def apply(): TabProps = {
+    inline def apply(): TabProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabProps]
     }
     
-    @scala.inline
-    implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+      inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       
-      @scala.inline
-      def setTabClassName(value: String): Self = StObject.set(x, "tabClassName", value.asInstanceOf[js.Any])
+      inline def setTabClassName(value: String): Self = StObject.set(x, "tabClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabClassNameUndefined: Self = StObject.set(x, "tabClassName", js.undefined)
+      inline def setTabClassNameUndefined: Self = StObject.set(x, "tabClassName", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
+      inline def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
+      inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
     }
   }
 }

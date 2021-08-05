@@ -10,19 +10,15 @@ trait PubSubOptions extends StObject {
 }
 object PubSubOptions {
   
-  @scala.inline
-  def apply(): PubSubOptions = {
+  inline def apply(): PubSubOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PubSubOptions]
   }
   
-  @scala.inline
-  implicit class PubSubOptionsMutableBuilder[Self <: PubSubOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PubSubOptions](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

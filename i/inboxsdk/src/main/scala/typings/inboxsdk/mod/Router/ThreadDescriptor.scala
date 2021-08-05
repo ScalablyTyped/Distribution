@@ -12,25 +12,19 @@ trait ThreadDescriptor extends StObject {
 }
 object ThreadDescriptor {
   
-  @scala.inline
-  def apply(): ThreadDescriptor = {
+  inline def apply(): ThreadDescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreadDescriptor]
   }
   
-  @scala.inline
-  implicit class ThreadDescriptorMutableBuilder[Self <: ThreadDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadDescriptor](x: Self) {
     
-    @scala.inline
-    def setGmailThreadId(value: String): Self = StObject.set(x, "gmailThreadId", value.asInstanceOf[js.Any])
+    inline def setGmailThreadId(value: String): Self = StObject.set(x, "gmailThreadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmailThreadIdUndefined: Self = StObject.set(x, "gmailThreadId", js.undefined)
+    inline def setGmailThreadIdUndefined: Self = StObject.set(x, "gmailThreadId", js.undefined)
     
-    @scala.inline
-    def setRfcMessageId(value: String): Self = StObject.set(x, "rfcMessageId", value.asInstanceOf[js.Any])
+    inline def setRfcMessageId(value: String): Self = StObject.set(x, "rfcMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRfcMessageIdUndefined: Self = StObject.set(x, "rfcMessageId", js.undefined)
+    inline def setRfcMessageIdUndefined: Self = StObject.set(x, "rfcMessageId", js.undefined)
   }
 }

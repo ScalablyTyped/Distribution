@@ -15,17 +15,14 @@ object aliasOptionsMod {
   }
   object AliasOptions {
     
-    @scala.inline
-    def apply(alias: String): AliasOptions = {
+    inline def apply(alias: String): AliasOptions = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
       __obj.asInstanceOf[AliasOptions]
     }
     
-    @scala.inline
-    implicit class AliasOptionsMutableBuilder[Self <: AliasOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AliasOptions](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,34 +23,25 @@ trait ResolverRuleConfig extends StObject {
 }
 object ResolverRuleConfig {
   
-  @scala.inline
-  def apply(): ResolverRuleConfig = {
+  inline def apply(): ResolverRuleConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolverRuleConfig]
   }
   
-  @scala.inline
-  implicit class ResolverRuleConfigMutableBuilder[Self <: ResolverRuleConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ResolverRuleConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
+    inline def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverEndpointIdUndefined: Self = StObject.set(x, "ResolverEndpointId", js.undefined)
+    inline def setResolverEndpointIdUndefined: Self = StObject.set(x, "ResolverEndpointId", js.undefined)
     
-    @scala.inline
-    def setTargetIps(value: TargetList): Self = StObject.set(x, "TargetIps", value.asInstanceOf[js.Any])
+    inline def setTargetIps(value: TargetList): Self = StObject.set(x, "TargetIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIpsUndefined: Self = StObject.set(x, "TargetIps", js.undefined)
+    inline def setTargetIpsUndefined: Self = StObject.set(x, "TargetIps", js.undefined)
     
-    @scala.inline
-    def setTargetIpsVarargs(value: TargetAddress*): Self = StObject.set(x, "TargetIps", js.Array(value :_*))
+    inline def setTargetIpsVarargs(value: TargetAddress*): Self = StObject.set(x, "TargetIps", js.Array(value :_*))
   }
 }

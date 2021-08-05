@@ -12,28 +12,21 @@ trait NotaryResult extends StObject {
 }
 object NotaryResult {
   
-  @scala.inline
-  def apply(): NotaryResult = {
+  inline def apply(): NotaryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotaryResult]
   }
   
-  @scala.inline
-  implicit class NotaryResultMutableBuilder[Self <: NotaryResult] (val x: Self) extends AnyVal {
+  extension [Self <: NotaryResult](x: Self) {
     
-    @scala.inline
-    def setJurisdictions(value: js.Array[Jurisdiction]): Self = StObject.set(x, "jurisdictions", value.asInstanceOf[js.Any])
+    inline def setJurisdictions(value: js.Array[Jurisdiction]): Self = StObject.set(x, "jurisdictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJurisdictionsUndefined: Self = StObject.set(x, "jurisdictions", js.undefined)
+    inline def setJurisdictionsUndefined: Self = StObject.set(x, "jurisdictions", js.undefined)
     
-    @scala.inline
-    def setJurisdictionsVarargs(value: Jurisdiction*): Self = StObject.set(x, "jurisdictions", js.Array(value :_*))
+    inline def setJurisdictionsVarargs(value: Jurisdiction*): Self = StObject.set(x, "jurisdictions", js.Array(value :_*))
     
-    @scala.inline
-    def setNotary(value: Notary): Self = StObject.set(x, "notary", value.asInstanceOf[js.Any])
+    inline def setNotary(value: Notary): Self = StObject.set(x, "notary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotaryUndefined: Self = StObject.set(x, "notary", js.undefined)
+    inline def setNotaryUndefined: Self = StObject.set(x, "notary", js.undefined)
   }
 }

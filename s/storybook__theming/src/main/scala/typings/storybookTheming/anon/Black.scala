@@ -14,22 +14,17 @@ trait Black extends StObject {
 }
 object Black {
   
-  @scala.inline
-  def apply(black: Double, bold: Double, regular: Double): Black = {
+  inline def apply(black: Double, bold: Double, regular: Double): Black = {
     val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], regular = regular.asInstanceOf[js.Any])
     __obj.asInstanceOf[Black]
   }
   
-  @scala.inline
-  implicit class BlackMutableBuilder[Self <: Black] (val x: Self) extends AnyVal {
+  extension [Self <: Black](x: Self) {
     
-    @scala.inline
-    def setBlack(value: Double): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+    inline def setBlack(value: Double): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBold(value: Double): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Double): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegular(value: Double): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
+    inline def setRegular(value: Double): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
   }
 }

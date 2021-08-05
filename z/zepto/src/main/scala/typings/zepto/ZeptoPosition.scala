@@ -12,19 +12,15 @@ trait ZeptoPosition extends StObject {
 }
 object ZeptoPosition {
   
-  @scala.inline
-  def apply(left: Double, top: Double): ZeptoPosition = {
+  inline def apply(left: Double, top: Double): ZeptoPosition = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoPosition]
   }
   
-  @scala.inline
-  implicit class ZeptoPositionMutableBuilder[Self <: ZeptoPosition] (val x: Self) extends AnyVal {
+  extension [Self <: ZeptoPosition](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

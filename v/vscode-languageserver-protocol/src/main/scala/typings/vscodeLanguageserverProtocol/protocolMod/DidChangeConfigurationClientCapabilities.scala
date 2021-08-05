@@ -13,19 +13,15 @@ trait DidChangeConfigurationClientCapabilities extends StObject {
 }
 object DidChangeConfigurationClientCapabilities {
   
-  @scala.inline
-  def apply(): DidChangeConfigurationClientCapabilities = {
+  inline def apply(): DidChangeConfigurationClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DidChangeConfigurationClientCapabilities]
   }
   
-  @scala.inline
-  implicit class DidChangeConfigurationClientCapabilitiesMutableBuilder[Self <: DidChangeConfigurationClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeConfigurationClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

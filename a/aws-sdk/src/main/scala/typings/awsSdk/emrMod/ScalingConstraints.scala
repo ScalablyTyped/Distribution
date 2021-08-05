@@ -18,19 +18,15 @@ trait ScalingConstraints extends StObject {
 }
 object ScalingConstraints {
   
-  @scala.inline
-  def apply(MaxCapacity: Integer, MinCapacity: Integer): ScalingConstraints = {
+  inline def apply(MaxCapacity: Integer, MinCapacity: Integer): ScalingConstraints = {
     val __obj = js.Dynamic.literal(MaxCapacity = MaxCapacity.asInstanceOf[js.Any], MinCapacity = MinCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingConstraints]
   }
   
-  @scala.inline
-  implicit class ScalingConstraintsMutableBuilder[Self <: ScalingConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingConstraints](x: Self) {
     
-    @scala.inline
-    def setMaxCapacity(value: Integer): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
+    inline def setMaxCapacity(value: Integer): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCapacity(value: Integer): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
+    inline def setMinCapacity(value: Integer): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
   }
 }

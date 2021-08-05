@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object convertMod {
   
-  @scala.inline
-  def apply[T /* <: Node */](test: Test[T]): TestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[TestFunction[T]]
+  inline def apply[T /* <: Node */](test: Test[T]): TestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(test.asInstanceOf[js.Any]).asInstanceOf[TestFunction[T]]
   
   @JSImport("unist-util-is/convert", JSImport.Namespace)
   @js.native

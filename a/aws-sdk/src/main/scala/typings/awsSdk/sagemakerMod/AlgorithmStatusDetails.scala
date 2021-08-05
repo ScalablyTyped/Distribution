@@ -18,31 +18,23 @@ trait AlgorithmStatusDetails extends StObject {
 }
 object AlgorithmStatusDetails {
   
-  @scala.inline
-  def apply(): AlgorithmStatusDetails = {
+  inline def apply(): AlgorithmStatusDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlgorithmStatusDetails]
   }
   
-  @scala.inline
-  implicit class AlgorithmStatusDetailsMutableBuilder[Self <: AlgorithmStatusDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AlgorithmStatusDetails](x: Self) {
     
-    @scala.inline
-    def setImageScanStatuses(value: AlgorithmStatusItemList): Self = StObject.set(x, "ImageScanStatuses", value.asInstanceOf[js.Any])
+    inline def setImageScanStatuses(value: AlgorithmStatusItemList): Self = StObject.set(x, "ImageScanStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageScanStatusesUndefined: Self = StObject.set(x, "ImageScanStatuses", js.undefined)
+    inline def setImageScanStatusesUndefined: Self = StObject.set(x, "ImageScanStatuses", js.undefined)
     
-    @scala.inline
-    def setImageScanStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ImageScanStatuses", js.Array(value :_*))
+    inline def setImageScanStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ImageScanStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationStatuses(value: AlgorithmStatusItemList): Self = StObject.set(x, "ValidationStatuses", value.asInstanceOf[js.Any])
+    inline def setValidationStatuses(value: AlgorithmStatusItemList): Self = StObject.set(x, "ValidationStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationStatusesUndefined: Self = StObject.set(x, "ValidationStatuses", js.undefined)
+    inline def setValidationStatusesUndefined: Self = StObject.set(x, "ValidationStatuses", js.undefined)
     
-    @scala.inline
-    def setValidationStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ValidationStatuses", js.Array(value :_*))
+    inline def setValidationStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ValidationStatuses", js.Array(value :_*))
   }
 }

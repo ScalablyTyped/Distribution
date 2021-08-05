@@ -10,6 +10,5 @@ object stringRepeatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stringRepeat(pattern: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringRepeat")(pattern.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringRepeat(pattern: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringRepeat")(pattern.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
 }

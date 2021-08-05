@@ -111,28 +111,20 @@ object mod {
     var name_RequestError: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.RequestError = js.native
   }
   
-  @scala.inline
-  def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], js.Any]): ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apiMiddleware")(api.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]]
+  inline def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], js.Any]): ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apiMiddleware")(api.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]]
   
-  @scala.inline
-  def createAction[State, Payload, Meta](clientCall: RSAACall[State, Payload, Meta]): RSAAAction[State, Payload, Meta] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(clientCall.asInstanceOf[js.Any]).asInstanceOf[RSAAAction[State, Payload, Meta]]
+  inline def createAction[State, Payload, Meta](clientCall: RSAACall[State, Payload, Meta]): RSAAAction[State, Payload, Meta] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(clientCall.asInstanceOf[js.Any]).asInstanceOf[RSAAAction[State, Payload, Meta]]
   
-  @scala.inline
-  def createMiddleware(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
-  @scala.inline
-  def getJSON(res: Response): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getJSON(res: Response): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def isRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def validateRSAA(action: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def validateRSAA(action: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   trait CreateMiddlewareOptions extends StObject {
     
@@ -142,26 +134,20 @@ object mod {
   }
   object CreateMiddlewareOptions {
     
-    @scala.inline
-    def apply(): CreateMiddlewareOptions = {
+    inline def apply(): CreateMiddlewareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateMiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class CreateMiddlewareOptionsMutableBuilder[Self <: CreateMiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateMiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setOk(value: /* res */ Response => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
+      inline def setOk(value: /* res */ Response => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+      inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
     }
   }
   
@@ -175,24 +161,19 @@ object mod {
   }
   object InvalidAction {
     
-    @scala.inline
-    def apply[Payload](payload: Payload, `type`: String | js.Symbol): InvalidAction[Payload] = {
+    inline def apply[Payload](payload: Payload, `type`: String | js.Symbol): InvalidAction[Payload] = {
       val __obj = js.Dynamic.literal(error = true, payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvalidAction[Payload]]
     }
     
-    @scala.inline
-    implicit class InvalidActionMutableBuilder[Self <: InvalidAction[?], Payload] (val x: Self & InvalidAction[Payload]) extends AnyVal {
+    extension [Self <: InvalidAction[?], Payload](x: Self & InvalidAction[Payload]) {
       
-      @scala.inline
-      def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +211,7 @@ object mod {
   }
   object RSAACall {
     
-    @scala.inline
-    def apply[State, Payload, Meta](
+    inline def apply[State, Payload, Meta](
       endpoint: TypeOrResolver[State, String],
       method: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS,
       types: js.Tuple3[
@@ -244,80 +224,55 @@ object mod {
       __obj.asInstanceOf[RSAACall[State, Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class RSAACallMutableBuilder[Self <: RSAACall[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAACall[State, Payload, Meta])) extends AnyVal {
+    extension [Self <: RSAACall[?, ?, ?], State, Payload, Meta](x: Self & (RSAACall[State, Payload, Meta])) {
       
-      @scala.inline
-      def setBailout(value: TypeOrResolver[State, Boolean]): Self = StObject.set(x, "bailout", value.asInstanceOf[js.Any])
+      inline def setBailout(value: TypeOrResolver[State, Boolean]): Self = StObject.set(x, "bailout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBailoutFunction1(value: State => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "bailout", js.Any.fromFunction1(value))
+      inline def setBailoutFunction1(value: State => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "bailout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBailoutUndefined: Self = StObject.set(x, "bailout", js.undefined)
+      inline def setBailoutUndefined: Self = StObject.set(x, "bailout", js.undefined)
       
-      @scala.inline
-      def setBody(value: TypeOrResolver[State, BodyInit | Null]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: TypeOrResolver[State, BodyInit | Null]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyFunction1(value: State => (BodyInit | Null) | (js.Promise[BodyInit | Null])): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
+      inline def setBodyFunction1(value: State => (BodyInit | Null) | (js.Promise[BodyInit | Null])): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: TypeOrResolver[State, String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: TypeOrResolver[State, String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointFunction1(value: State => String | js.Promise[String]): Self = StObject.set(x, "endpoint", js.Any.fromFunction1(value))
+      inline def setEndpointFunction1(value: State => String | js.Promise[String]): Self = StObject.set(x, "endpoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: TypeOrResolver[State, HeadersInit]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: TypeOrResolver[State, HeadersInit]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersFunction1(value: State => HeadersInit | js.Promise[HeadersInit]): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
+      inline def setHeadersFunction1(value: State => HeadersInit | js.Promise[HeadersInit]): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: /* res */ Response => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
+      inline def setOk(value: /* res */ Response => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+      inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
       
-      @scala.inline
-      def setOptions(value: TypeOrResolver[State, RequestInit]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: TypeOrResolver[State, RequestInit]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsFunction1(value: State => RequestInit | js.Promise[RequestInit]): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+      inline def setOptionsFunction1(value: State => RequestInit | js.Promise[RequestInit]): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setTypes(
+      inline def setTypes(
         value: js.Tuple3[
               RSAARequestType[State, Payload, Meta], 
               RSAASuccessType[State, Payload, Meta], 
@@ -355,18 +310,15 @@ object mod {
   }
   object RSAAFailureTypeDescriptor {
     
-    @scala.inline
-    def apply[State, Payload, Meta](`type`: String | js.Symbol): RSAAFailureTypeDescriptor[State, Payload, Meta] = {
+    inline def apply[State, Payload, Meta](`type`: String | js.Symbol): RSAAFailureTypeDescriptor[State, Payload, Meta] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RSAAFailureTypeDescriptor[State, Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class RSAAFailureTypeDescriptorMutableBuilder[Self <: RSAAFailureTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAAFailureTypeDescriptor[State, Payload, Meta])) extends AnyVal {
+    extension [Self <: RSAAFailureTypeDescriptor[?, ?, ?], State, Payload, Meta](x: Self & (RSAAFailureTypeDescriptor[State, Payload, Meta])) {
       
-      @scala.inline
-      def setMeta(
+      inline def setMeta(
         value: (js.Function3[
               /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
@@ -375,16 +327,13 @@ object mod {
             ]) | Meta
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaFunction3(
+      inline def setMetaFunction3(
         value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
       ): Self = StObject.set(x, "meta", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setPayload(
+      inline def setPayload(
         value: (js.Function3[
               /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
@@ -393,16 +342,13 @@ object mod {
             ]) | Payload
       ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadFunction3(
+      inline def setPayloadFunction3(
         value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -432,18 +378,15 @@ object mod {
   }
   object RSAARequestTypeDescriptor {
     
-    @scala.inline
-    def apply[State, Payload, Meta](`type`: String | js.Symbol): RSAARequestTypeDescriptor[State, Payload, Meta] = {
+    inline def apply[State, Payload, Meta](`type`: String | js.Symbol): RSAARequestTypeDescriptor[State, Payload, Meta] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RSAARequestTypeDescriptor[State, Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class RSAARequestTypeDescriptorMutableBuilder[Self <: RSAARequestTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAARequestTypeDescriptor[State, Payload, Meta])) extends AnyVal {
+    extension [Self <: RSAARequestTypeDescriptor[?, ?, ?], State, Payload, Meta](x: Self & (RSAARequestTypeDescriptor[State, Payload, Meta])) {
       
-      @scala.inline
-      def setMeta(
+      inline def setMeta(
         value: (js.Function2[
               /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
@@ -451,16 +394,13 @@ object mod {
             ]) | Meta
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaFunction2(
+      inline def setMetaFunction2(
         value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State) => Meta | js.Promise[Meta]
       ): Self = StObject.set(x, "meta", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setPayload(
+      inline def setPayload(
         value: (js.Function2[
               /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
@@ -468,16 +408,13 @@ object mod {
             ]) | Payload
       ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadFunction2(
+      inline def setPayloadFunction2(
         value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -511,18 +448,15 @@ object mod {
   }
   object RSAASuccessTypeDescriptor {
     
-    @scala.inline
-    def apply[State, Payload, Meta](`type`: String | js.Symbol): RSAASuccessTypeDescriptor[State, Payload, Meta] = {
+    inline def apply[State, Payload, Meta](`type`: String | js.Symbol): RSAASuccessTypeDescriptor[State, Payload, Meta] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RSAASuccessTypeDescriptor[State, Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class RSAASuccessTypeDescriptorMutableBuilder[Self <: RSAASuccessTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAASuccessTypeDescriptor[State, Payload, Meta])) extends AnyVal {
+    extension [Self <: RSAASuccessTypeDescriptor[?, ?, ?], State, Payload, Meta](x: Self & (RSAASuccessTypeDescriptor[State, Payload, Meta])) {
       
-      @scala.inline
-      def setMeta(
+      inline def setMeta(
         value: (js.Function3[
               /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
@@ -531,16 +465,13 @@ object mod {
             ]) | Meta
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaFunction3(
+      inline def setMetaFunction3(
         value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
       ): Self = StObject.set(x, "meta", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setPayload(
+      inline def setPayload(
         value: (js.Function3[
               /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
@@ -549,16 +480,13 @@ object mod {
             ]) | Payload
       ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadFunction3(
+      inline def setPayloadFunction3(
         value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

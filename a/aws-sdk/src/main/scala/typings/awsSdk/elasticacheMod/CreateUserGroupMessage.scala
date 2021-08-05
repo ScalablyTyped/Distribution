@@ -23,28 +23,21 @@ trait CreateUserGroupMessage extends StObject {
 }
 object CreateUserGroupMessage {
   
-  @scala.inline
-  def apply(Engine: EngineType, UserGroupId: String): CreateUserGroupMessage = {
+  inline def apply(Engine: EngineType, UserGroupId: String): CreateUserGroupMessage = {
     val __obj = js.Dynamic.literal(Engine = Engine.asInstanceOf[js.Any], UserGroupId = UserGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserGroupMessage]
   }
   
-  @scala.inline
-  implicit class CreateUserGroupMessageMutableBuilder[Self <: CreateUserGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserGroupMessage](x: Self) {
     
-    @scala.inline
-    def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
+    inline def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIds(value: UserIdListInput): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
+    inline def setUserIds(value: UserIdListInput): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
+    inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    @scala.inline
-    def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

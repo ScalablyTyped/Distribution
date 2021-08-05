@@ -33,40 +33,29 @@ trait ListReportsForReportGroupInput extends StObject {
 }
 object ListReportsForReportGroupInput {
   
-  @scala.inline
-  def apply(reportGroupArn: String): ListReportsForReportGroupInput = {
+  inline def apply(reportGroupArn: String): ListReportsForReportGroupInput = {
     val __obj = js.Dynamic.literal(reportGroupArn = reportGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReportsForReportGroupInput]
   }
   
-  @scala.inline
-  implicit class ListReportsForReportGroupInputMutableBuilder[Self <: ListReportsForReportGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListReportsForReportGroupInput](x: Self) {
     
-    @scala.inline
-    def setFilter(value: ReportFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ReportFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReportGroupArn(value: String): Self = StObject.set(x, "reportGroupArn", value.asInstanceOf[js.Any])
+    inline def setReportGroupArn(value: String): Self = StObject.set(x, "reportGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: SortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

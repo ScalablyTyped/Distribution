@@ -14,22 +14,17 @@ trait PluginInterfaceType extends StObject {
 }
 object PluginInterfaceType {
   
-  @scala.inline
-  def apply(Capability: String, Prefix: String, Version: String): PluginInterfaceType = {
+  inline def apply(Capability: String, Prefix: String, Version: String): PluginInterfaceType = {
     val __obj = js.Dynamic.literal(Capability = Capability.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginInterfaceType]
   }
   
-  @scala.inline
-  implicit class PluginInterfaceTypeMutableBuilder[Self <: PluginInterfaceType] (val x: Self) extends AnyVal {
+  extension [Self <: PluginInterfaceType](x: Self) {
     
-    @scala.inline
-    def setCapability(value: String): Self = StObject.set(x, "Capability", value.asInstanceOf[js.Any])
+    inline def setCapability(value: String): Self = StObject.set(x, "Capability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

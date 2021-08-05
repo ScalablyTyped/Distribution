@@ -26,20 +26,17 @@ object mod {
     @JSImport("diff2html", "defaultDiff2HtmlConfig.diffStyle")
     @js.native
     def diffStyle: DiffStyleType = js.native
-    @scala.inline
-    def diffStyle_=(x: DiffStyleType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diffStyle")(x.asInstanceOf[js.Any])
+    inline def diffStyle_=(x: DiffStyleType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diffStyle")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html", "defaultDiff2HtmlConfig.drawFileList")
     @js.native
     def drawFileList: Boolean = js.native
-    @scala.inline
-    def drawFileList_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawFileList")(x.asInstanceOf[js.Any])
+    inline def drawFileList_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawFileList")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html", "defaultDiff2HtmlConfig.matchWordsThreshold")
     @js.native
     def matchWordsThreshold: Double = js.native
-    @scala.inline
-    def matchWordsThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchWordsThreshold")(x.asInstanceOf[js.Any])
+    inline def matchWordsThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchWordsThreshold")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html", "defaultDiff2HtmlConfig.matching")
     @js.native
@@ -48,50 +45,38 @@ object mod {
     @JSImport("diff2html", "defaultDiff2HtmlConfig.matchingMaxComparisons")
     @js.native
     def matchingMaxComparisons: Double = js.native
-    @scala.inline
-    def matchingMaxComparisons_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchingMaxComparisons")(x.asInstanceOf[js.Any])
+    inline def matchingMaxComparisons_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchingMaxComparisons")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def matching_=(x: LineMatchingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matching")(x.asInstanceOf[js.Any])
+    inline def matching_=(x: LineMatchingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matching")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html", "defaultDiff2HtmlConfig.maxLineLengthHighlight")
     @js.native
     def maxLineLengthHighlight: Double = js.native
-    @scala.inline
-    def maxLineLengthHighlight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineLengthHighlight")(x.asInstanceOf[js.Any])
+    inline def maxLineLengthHighlight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineLengthHighlight")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html", "defaultDiff2HtmlConfig.maxLineSizeInBlockForComparison")
     @js.native
     def maxLineSizeInBlockForComparison: Double = js.native
-    @scala.inline
-    def maxLineSizeInBlockForComparison_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineSizeInBlockForComparison")(x.asInstanceOf[js.Any])
+    inline def maxLineSizeInBlockForComparison_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineSizeInBlockForComparison")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html", "defaultDiff2HtmlConfig.outputFormat")
     @js.native
     def outputFormat: OutputFormatType = js.native
-    @scala.inline
-    def outputFormat_=(x: OutputFormatType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputFormat")(x.asInstanceOf[js.Any])
+    inline def outputFormat_=(x: OutputFormatType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputFormat")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html", "defaultDiff2HtmlConfig.renderNothingWhenEmpty")
     @js.native
     def renderNothingWhenEmpty: Boolean = js.native
-    @scala.inline
-    def renderNothingWhenEmpty_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderNothingWhenEmpty")(x.asInstanceOf[js.Any])
+    inline def renderNothingWhenEmpty_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderNothingWhenEmpty")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def html(diffInput: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def html(diffInput: String, configuration: Diff2HtmlConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def html(diffInput: js.Array[DiffFile]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def html(diffInput: js.Array[DiffFile], configuration: Diff2HtmlConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def html(diffInput: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def html(diffInput: String, configuration: Diff2HtmlConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def html(diffInput: js.Array[DiffFile]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def html(diffInput: js.Array[DiffFile], configuration: Diff2HtmlConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def parse(diffInput: String): js.Array[DiffFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any]).asInstanceOf[js.Array[DiffFile]]
-  @scala.inline
-  def parse(diffInput: String, configuration: Diff2HtmlConfig): js.Array[DiffFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiffFile]]
+  inline def parse(diffInput: String): js.Array[DiffFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any]).asInstanceOf[js.Array[DiffFile]]
+  inline def parse(diffInput: String, configuration: Diff2HtmlConfig): js.Array[DiffFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiffFile]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.diff2html.renderUtilsMod.RenderConfig because Already inherited
@@ -107,26 +92,20 @@ object mod {
   }
   object Diff2HtmlConfig {
     
-    @scala.inline
-    def apply(): Diff2HtmlConfig = {
+    inline def apply(): Diff2HtmlConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Diff2HtmlConfig]
     }
     
-    @scala.inline
-    implicit class Diff2HtmlConfigMutableBuilder[Self <: Diff2HtmlConfig] (val x: Self) extends AnyVal {
+    extension [Self <: Diff2HtmlConfig](x: Self) {
       
-      @scala.inline
-      def setDrawFileList(value: Boolean): Self = StObject.set(x, "drawFileList", value.asInstanceOf[js.Any])
+      inline def setDrawFileList(value: Boolean): Self = StObject.set(x, "drawFileList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawFileListUndefined: Self = StObject.set(x, "drawFileList", js.undefined)
+      inline def setDrawFileListUndefined: Self = StObject.set(x, "drawFileList", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: OutputFormatType): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: OutputFormatType): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+      inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     }
   }
 }

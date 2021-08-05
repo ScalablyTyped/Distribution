@@ -20,25 +20,19 @@ trait ActivityGetThreadRequestOptions extends StObject {
 }
 object ActivityGetThreadRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActivityGetThreadRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActivityGetThreadRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/notifications/threads/:thread_id")
     __obj.asInstanceOf[ActivityGetThreadRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActivityGetThreadRequestOptionsMutableBuilder[Self <: ActivityGetThreadRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityGetThreadRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashnotificationsSlashthreadsSlashColonthread_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashnotificationsSlashthreadsSlashColonthread_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

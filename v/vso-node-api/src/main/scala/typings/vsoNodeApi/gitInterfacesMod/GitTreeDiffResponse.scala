@@ -15,22 +15,17 @@ trait GitTreeDiffResponse extends StObject {
 }
 object GitTreeDiffResponse {
   
-  @scala.inline
-  def apply(continuationToken: js.Array[String], treeDiff: GitTreeDiff): GitTreeDiffResponse = {
+  inline def apply(continuationToken: js.Array[String], treeDiff: GitTreeDiff): GitTreeDiffResponse = {
     val __obj = js.Dynamic.literal(continuationToken = continuationToken.asInstanceOf[js.Any], treeDiff = treeDiff.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitTreeDiffResponse]
   }
   
-  @scala.inline
-  implicit class GitTreeDiffResponseMutableBuilder[Self <: GitTreeDiffResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GitTreeDiffResponse](x: Self) {
     
-    @scala.inline
-    def setContinuationToken(value: js.Array[String]): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
+    inline def setContinuationToken(value: js.Array[String]): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationTokenVarargs(value: String*): Self = StObject.set(x, "continuationToken", js.Array(value :_*))
+    inline def setContinuationTokenVarargs(value: String*): Self = StObject.set(x, "continuationToken", js.Array(value :_*))
     
-    @scala.inline
-    def setTreeDiff(value: GitTreeDiff): Self = StObject.set(x, "treeDiff", value.asInstanceOf[js.Any])
+    inline def setTreeDiff(value: GitTreeDiff): Self = StObject.set(x, "treeDiff", value.asInstanceOf[js.Any])
   }
 }

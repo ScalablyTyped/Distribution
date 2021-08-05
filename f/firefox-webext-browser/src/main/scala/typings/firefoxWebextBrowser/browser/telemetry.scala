@@ -36,44 +36,32 @@ object telemetry {
   }
   object EventData {
     
-    @scala.inline
-    def apply(extra_keys: js.Array[String], methods: js.Array[String], objects: js.Array[String]): EventData = {
+    inline def apply(extra_keys: js.Array[String], methods: js.Array[String], objects: js.Array[String]): EventData = {
       val __obj = js.Dynamic.literal(extra_keys = extra_keys.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventData]
     }
     
-    @scala.inline
-    implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+    extension [Self <: EventData](x: Self) {
       
-      @scala.inline
-      def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+      inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
+      inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
       
-      @scala.inline
-      def setExtra_keys(value: js.Array[String]): Self = StObject.set(x, "extra_keys", value.asInstanceOf[js.Any])
+      inline def setExtra_keys(value: js.Array[String]): Self = StObject.set(x, "extra_keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra_keysVarargs(value: String*): Self = StObject.set(x, "extra_keys", js.Array(value :_*))
+      inline def setExtra_keysVarargs(value: String*): Self = StObject.set(x, "extra_keys", js.Array(value :_*))
       
-      @scala.inline
-      def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setObjects(value: js.Array[String]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[String]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsVarargs(value: String*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: String*): Self = StObject.set(x, "objects", js.Array(value :_*))
       
-      @scala.inline
-      def setRecord_on_release(value: Boolean): Self = StObject.set(x, "record_on_release", value.asInstanceOf[js.Any])
+      inline def setRecord_on_release(value: Boolean): Self = StObject.set(x, "record_on_release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecord_on_releaseUndefined: Self = StObject.set(x, "record_on_release", js.undefined)
+      inline def setRecord_on_releaseUndefined: Self = StObject.set(x, "record_on_release", js.undefined)
     }
   }
   
@@ -95,35 +83,26 @@ object telemetry {
   }
   object ScalarData {
     
-    @scala.inline
-    def apply(kind: ScalarType): ScalarData = {
+    inline def apply(kind: ScalarType): ScalarData = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScalarData]
     }
     
-    @scala.inline
-    implicit class ScalarDataMutableBuilder[Self <: ScalarData] (val x: Self) extends AnyVal {
+    extension [Self <: ScalarData](x: Self) {
       
-      @scala.inline
-      def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+      inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
+      inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
       
-      @scala.inline
-      def setKeyed(value: Boolean): Self = StObject.set(x, "keyed", value.asInstanceOf[js.Any])
+      inline def setKeyed(value: Boolean): Self = StObject.set(x, "keyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyedUndefined: Self = StObject.set(x, "keyed", js.undefined)
+      inline def setKeyedUndefined: Self = StObject.set(x, "keyed", js.undefined)
       
-      @scala.inline
-      def setKind(value: ScalarType): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: ScalarType): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecord_on_release(value: Boolean): Self = StObject.set(x, "record_on_release", value.asInstanceOf[js.Any])
+      inline def setRecord_on_release(value: Boolean): Self = StObject.set(x, "record_on_release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecord_on_releaseUndefined: Self = StObject.set(x, "record_on_release", js.undefined)
+      inline def setRecord_on_releaseUndefined: Self = StObject.set(x, "record_on_release", js.undefined)
     }
   }
   
@@ -139,14 +118,11 @@ object telemetry {
   trait ScalarType extends StObject
   object ScalarType {
     
-    @scala.inline
-    def boolean: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.boolean = "boolean".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.boolean]
+    inline def boolean: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.boolean = "boolean".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.boolean]
     
-    @scala.inline
-    def count: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.count = "count".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.count]
+    inline def count: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.count = "count".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.count]
     
-    @scala.inline
-    def string: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.string = "string".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.string]
+    inline def string: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.string = "string".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.string]
   }
   
   /** Options object. */
@@ -160,20 +136,16 @@ object telemetry {
   }
   object SubmitEncryptedPingOptions {
     
-    @scala.inline
-    def apply(schemaName: String, schemaVersion: Double): SubmitEncryptedPingOptions = {
+    inline def apply(schemaName: String, schemaVersion: Double): SubmitEncryptedPingOptions = {
       val __obj = js.Dynamic.literal(schemaName = schemaName.asInstanceOf[js.Any], schemaVersion = schemaVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubmitEncryptedPingOptions]
     }
     
-    @scala.inline
-    implicit class SubmitEncryptedPingOptionsMutableBuilder[Self <: SubmitEncryptedPingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubmitEncryptedPingOptions](x: Self) {
       
-      @scala.inline
-      def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
+      inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaVersion(value: Double): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+      inline def setSchemaVersion(value: Double): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,38 +166,28 @@ object telemetry {
   }
   object SubmitPingOptions {
     
-    @scala.inline
-    def apply(): SubmitPingOptions = {
+    inline def apply(): SubmitPingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubmitPingOptions]
     }
     
-    @scala.inline
-    implicit class SubmitPingOptionsMutableBuilder[Self <: SubmitPingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubmitPingOptions](x: Self) {
       
-      @scala.inline
-      def setAddClientId(value: Boolean): Self = StObject.set(x, "addClientId", value.asInstanceOf[js.Any])
+      inline def setAddClientId(value: Boolean): Self = StObject.set(x, "addClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddClientIdUndefined: Self = StObject.set(x, "addClientId", js.undefined)
+      inline def setAddClientIdUndefined: Self = StObject.set(x, "addClientId", js.undefined)
       
-      @scala.inline
-      def setAddEnvironment(value: Boolean): Self = StObject.set(x, "addEnvironment", value.asInstanceOf[js.Any])
+      inline def setAddEnvironment(value: Boolean): Self = StObject.set(x, "addEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddEnvironmentUndefined: Self = StObject.set(x, "addEnvironment", js.undefined)
+      inline def setAddEnvironmentUndefined: Self = StObject.set(x, "addEnvironment", js.undefined)
       
-      @scala.inline
-      def setOverrideEnvironment(value: StringDictionary[js.Any]): Self = StObject.set(x, "overrideEnvironment", value.asInstanceOf[js.Any])
+      inline def setOverrideEnvironment(value: StringDictionary[js.Any]): Self = StObject.set(x, "overrideEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideEnvironmentUndefined: Self = StObject.set(x, "overrideEnvironment", js.undefined)
+      inline def setOverrideEnvironmentUndefined: Self = StObject.set(x, "overrideEnvironment", js.undefined)
       
-      @scala.inline
-      def setUsePingSender(value: Boolean): Self = StObject.set(x, "usePingSender", value.asInstanceOf[js.Any])
+      inline def setUsePingSender(value: Boolean): Self = StObject.set(x, "usePingSender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePingSenderUndefined: Self = StObject.set(x, "usePingSender", js.undefined)
+      inline def setUsePingSenderUndefined: Self = StObject.set(x, "usePingSender", js.undefined)
     }
   }
 }

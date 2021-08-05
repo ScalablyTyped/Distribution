@@ -9,20 +9,17 @@ object dbusStrings {
   
   @js.native
   sealed trait PickMatching extends StObject
-  @scala.inline
-  def PickMatching: PickMatching = "PickMatching".asInstanceOf[PickMatching]
+  inline def PickMatching: PickMatching = "PickMatching".asInstanceOf[PickMatching]
   
   @js.native
   sealed trait session
     extends StObject
        with busType
-  @scala.inline
-  def session: session = "session".asInstanceOf[session]
+  inline def session: session = "session".asInstanceOf[session]
   
   @js.native
   sealed trait system
     extends StObject
        with busType
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
+  inline def system: system = "system".asInstanceOf[system]
 }

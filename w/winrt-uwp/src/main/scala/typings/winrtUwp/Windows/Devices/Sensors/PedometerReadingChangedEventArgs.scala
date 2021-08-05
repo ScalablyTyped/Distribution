@@ -12,16 +12,13 @@ trait PedometerReadingChangedEventArgs extends StObject {
 }
 object PedometerReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: PedometerReading): PedometerReadingChangedEventArgs = {
+  inline def apply(reading: PedometerReading): PedometerReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[PedometerReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PedometerReadingChangedEventArgsMutableBuilder[Self <: PedometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PedometerReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: PedometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: PedometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

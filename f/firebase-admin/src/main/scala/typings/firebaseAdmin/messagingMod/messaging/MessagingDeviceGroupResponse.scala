@@ -23,25 +23,19 @@ trait MessagingDeviceGroupResponse extends StObject {
 }
 object MessagingDeviceGroupResponse {
   
-  @scala.inline
-  def apply(failedRegistrationTokens: js.Array[String], failureCount: Double, successCount: Double): MessagingDeviceGroupResponse = {
+  inline def apply(failedRegistrationTokens: js.Array[String], failureCount: Double, successCount: Double): MessagingDeviceGroupResponse = {
     val __obj = js.Dynamic.literal(failedRegistrationTokens = failedRegistrationTokens.asInstanceOf[js.Any], failureCount = failureCount.asInstanceOf[js.Any], successCount = successCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingDeviceGroupResponse]
   }
   
-  @scala.inline
-  implicit class MessagingDeviceGroupResponseMutableBuilder[Self <: MessagingDeviceGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingDeviceGroupResponse](x: Self) {
     
-    @scala.inline
-    def setFailedRegistrationTokens(value: js.Array[String]): Self = StObject.set(x, "failedRegistrationTokens", value.asInstanceOf[js.Any])
+    inline def setFailedRegistrationTokens(value: js.Array[String]): Self = StObject.set(x, "failedRegistrationTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedRegistrationTokensVarargs(value: String*): Self = StObject.set(x, "failedRegistrationTokens", js.Array(value :_*))
+    inline def setFailedRegistrationTokensVarargs(value: String*): Self = StObject.set(x, "failedRegistrationTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
+    inline def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
   }
 }

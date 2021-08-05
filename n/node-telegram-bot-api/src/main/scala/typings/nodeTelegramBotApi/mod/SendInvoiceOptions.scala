@@ -30,73 +30,51 @@ trait SendInvoiceOptions
 }
 object SendInvoiceOptions {
   
-  @scala.inline
-  def apply(): SendInvoiceOptions = {
+  inline def apply(): SendInvoiceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendInvoiceOptions]
   }
   
-  @scala.inline
-  implicit class SendInvoiceOptionsMutableBuilder[Self <: SendInvoiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendInvoiceOptions](x: Self) {
     
-    @scala.inline
-    def setIs_flexible(value: Boolean): Self = StObject.set(x, "is_flexible", value.asInstanceOf[js.Any])
+    inline def setIs_flexible(value: Boolean): Self = StObject.set(x, "is_flexible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_flexibleUndefined: Self = StObject.set(x, "is_flexible", js.undefined)
+    inline def setIs_flexibleUndefined: Self = StObject.set(x, "is_flexible", js.undefined)
     
-    @scala.inline
-    def setNeed_email(value: Boolean): Self = StObject.set(x, "need_email", value.asInstanceOf[js.Any])
+    inline def setNeed_email(value: Boolean): Self = StObject.set(x, "need_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeed_emailUndefined: Self = StObject.set(x, "need_email", js.undefined)
+    inline def setNeed_emailUndefined: Self = StObject.set(x, "need_email", js.undefined)
     
-    @scala.inline
-    def setNeed_name(value: Boolean): Self = StObject.set(x, "need_name", value.asInstanceOf[js.Any])
+    inline def setNeed_name(value: Boolean): Self = StObject.set(x, "need_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeed_nameUndefined: Self = StObject.set(x, "need_name", js.undefined)
+    inline def setNeed_nameUndefined: Self = StObject.set(x, "need_name", js.undefined)
     
-    @scala.inline
-    def setNeed_phone_number(value: Boolean): Self = StObject.set(x, "need_phone_number", value.asInstanceOf[js.Any])
+    inline def setNeed_phone_number(value: Boolean): Self = StObject.set(x, "need_phone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeed_phone_numberUndefined: Self = StObject.set(x, "need_phone_number", js.undefined)
+    inline def setNeed_phone_numberUndefined: Self = StObject.set(x, "need_phone_number", js.undefined)
     
-    @scala.inline
-    def setNeed_shipping_address(value: Boolean): Self = StObject.set(x, "need_shipping_address", value.asInstanceOf[js.Any])
+    inline def setNeed_shipping_address(value: Boolean): Self = StObject.set(x, "need_shipping_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeed_shipping_addressUndefined: Self = StObject.set(x, "need_shipping_address", js.undefined)
+    inline def setNeed_shipping_addressUndefined: Self = StObject.set(x, "need_shipping_address", js.undefined)
     
-    @scala.inline
-    def setPhoto_height(value: Double): Self = StObject.set(x, "photo_height", value.asInstanceOf[js.Any])
+    inline def setPhoto_height(value: Double): Self = StObject.set(x, "photo_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoto_heightUndefined: Self = StObject.set(x, "photo_height", js.undefined)
+    inline def setPhoto_heightUndefined: Self = StObject.set(x, "photo_height", js.undefined)
     
-    @scala.inline
-    def setPhoto_size(value: Double): Self = StObject.set(x, "photo_size", value.asInstanceOf[js.Any])
+    inline def setPhoto_size(value: Double): Self = StObject.set(x, "photo_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoto_sizeUndefined: Self = StObject.set(x, "photo_size", js.undefined)
+    inline def setPhoto_sizeUndefined: Self = StObject.set(x, "photo_size", js.undefined)
     
-    @scala.inline
-    def setPhoto_url(value: String): Self = StObject.set(x, "photo_url", value.asInstanceOf[js.Any])
+    inline def setPhoto_url(value: String): Self = StObject.set(x, "photo_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoto_urlUndefined: Self = StObject.set(x, "photo_url", js.undefined)
+    inline def setPhoto_urlUndefined: Self = StObject.set(x, "photo_url", js.undefined)
     
-    @scala.inline
-    def setPhoto_width(value: Double): Self = StObject.set(x, "photo_width", value.asInstanceOf[js.Any])
+    inline def setPhoto_width(value: Double): Self = StObject.set(x, "photo_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoto_widthUndefined: Self = StObject.set(x, "photo_width", js.undefined)
+    inline def setPhoto_widthUndefined: Self = StObject.set(x, "photo_width", js.undefined)
     
-    @scala.inline
-    def setProvider_data(value: String): Self = StObject.set(x, "provider_data", value.asInstanceOf[js.Any])
+    inline def setProvider_data(value: String): Self = StObject.set(x, "provider_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider_dataUndefined: Self = StObject.set(x, "provider_data", js.undefined)
+    inline def setProvider_dataUndefined: Self = StObject.set(x, "provider_data", js.undefined)
   }
 }

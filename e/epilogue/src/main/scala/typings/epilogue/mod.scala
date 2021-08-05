@@ -278,15 +278,11 @@ object mod {
     def write(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], context: Context): js.Promise[js.Function0[Unit]] = js.native
   }
   
-  @scala.inline
-  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
-  @scala.inline
-  def initialize(options: InitializeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  inline def initialize(options: InitializeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def resource(): Resource_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resource")().asInstanceOf[Resource_]
-  @scala.inline
-  def resource(options: ResourceOptions): Resource_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resource")(options.asInstanceOf[js.Any]).asInstanceOf[Resource_]
+  inline def resource(): Resource_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resource")().asInstanceOf[Resource_]
+  inline def resource(options: ResourceOptions): Resource_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resource")(options.asInstanceOf[js.Any]).asInstanceOf[Resource_]
   
   trait BaseContollerOptions extends StObject {
     
@@ -311,8 +307,7 @@ object mod {
   }
   object BaseContollerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       app: Express,
       endpoint: String,
       include: js.Array[Model | String],
@@ -323,26 +318,19 @@ object mod {
       __obj.asInstanceOf[BaseContollerOptions]
     }
     
-    @scala.inline
-    implicit class BaseContollerOptionsMutableBuilder[Self <: BaseContollerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseContollerOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude(value: js.Array[Model | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[Model | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeVarargs(value: (Model | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (Model | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: Resource_): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Resource_): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     }
   }
   
@@ -397,8 +385,7 @@ object mod {
   }
   object Controllers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base: BaseController,
       create: CreateController,
       delete: DeleteController,
@@ -410,26 +397,19 @@ object mod {
       __obj.asInstanceOf[Controllers]
     }
     
-    @scala.inline
-    implicit class ControllersMutableBuilder[Self <: Controllers] (val x: Self) extends AnyVal {
+    extension [Self <: Controllers](x: Self) {
       
-      @scala.inline
-      def setBase(value: BaseController): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: BaseController): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreate(value: CreateController): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: CreateController): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: DeleteController): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: DeleteController): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setList(value: ListController): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: ListController): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: ReadController): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: ReadController): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: UpdateController): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: UpdateController): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     }
   }
   
@@ -454,32 +434,24 @@ object mod {
   }
   object InitializeOptions {
     
-    @scala.inline
-    def apply(app: Express, sequelize: Sequelize): InitializeOptions = {
+    inline def apply(app: Express, sequelize: Sequelize): InitializeOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], sequelize = sequelize.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitializeOptions]
     }
     
-    @scala.inline
-    implicit class InitializeOptionsMutableBuilder[Self <: InitializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitializeOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setSequelize(value: Sequelize): Self = StObject.set(x, "sequelize", value.asInstanceOf[js.Any])
+      inline def setSequelize(value: Sequelize): Self = StObject.set(x, "sequelize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateMethod(value: String): Self = StObject.set(x, "updateMethod", value.asInstanceOf[js.Any])
+      inline def setUpdateMethod(value: String): Self = StObject.set(x, "updateMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateMethodUndefined: Self = StObject.set(x, "updateMethod", js.undefined)
+      inline def setUpdateMethodUndefined: Self = StObject.set(x, "updateMethod", js.undefined)
     }
   }
   
@@ -491,17 +463,14 @@ object mod {
   }
   object ResourceAssociationOptions {
     
-    @scala.inline
-    def apply(removeForeignKeys: Boolean): ResourceAssociationOptions = {
+    inline def apply(removeForeignKeys: Boolean): ResourceAssociationOptions = {
       val __obj = js.Dynamic.literal(removeForeignKeys = removeForeignKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceAssociationOptions]
     }
     
-    @scala.inline
-    implicit class ResourceAssociationOptionsMutableBuilder[Self <: ResourceAssociationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceAssociationOptions](x: Self) {
       
-      @scala.inline
-      def setRemoveForeignKeys(value: Boolean): Self = StObject.set(x, "removeForeignKeys", value.asInstanceOf[js.Any])
+      inline def setRemoveForeignKeys(value: Boolean): Self = StObject.set(x, "removeForeignKeys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -533,95 +502,66 @@ object mod {
   }
   object ResourceOptions {
     
-    @scala.inline
-    def apply(endpoints: js.Array[String], model: js.Any): ResourceOptions = {
+    inline def apply(endpoints: js.Array[String], model: js.Any): ResourceOptions = {
       val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceOptions]
     }
     
-    @scala.inline
-    implicit class ResourceOptionsMutableBuilder[Self <: ResourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceOptions](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setAssociations(value: AssociationOptions): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
+      inline def setAssociations(value: AssociationOptions): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
+      inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
       
-      @scala.inline
-      def setEndpoints(value: js.Array[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: js.Array[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: String*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: String*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludeAttributes(value: js.Array[String]): Self = StObject.set(x, "excludeAttributes", value.asInstanceOf[js.Any])
+      inline def setExcludeAttributes(value: js.Array[String]): Self = StObject.set(x, "excludeAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeAttributesUndefined: Self = StObject.set(x, "excludeAttributes", js.undefined)
+      inline def setExcludeAttributesUndefined: Self = StObject.set(x, "excludeAttributes", js.undefined)
       
-      @scala.inline
-      def setExcludeAttributesVarargs(value: String*): Self = StObject.set(x, "excludeAttributes", js.Array(value :_*))
+      inline def setExcludeAttributesVarargs(value: String*): Self = StObject.set(x, "excludeAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: js.Array[Model | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[Model | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (Model | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (Model | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
-      @scala.inline
-      def setReadOnlyAttributes(value: js.Array[String]): Self = StObject.set(x, "readOnlyAttributes", value.asInstanceOf[js.Any])
+      inline def setReadOnlyAttributes(value: js.Array[String]): Self = StObject.set(x, "readOnlyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyAttributesUndefined: Self = StObject.set(x, "readOnlyAttributes", js.undefined)
+      inline def setReadOnlyAttributesUndefined: Self = StObject.set(x, "readOnlyAttributes", js.undefined)
       
-      @scala.inline
-      def setReadOnlyAttributesVarargs(value: String*): Self = StObject.set(x, "readOnlyAttributes", js.Array(value :_*))
+      inline def setReadOnlyAttributesVarargs(value: String*): Self = StObject.set(x, "readOnlyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setReloadInstances(value: Boolean): Self = StObject.set(x, "reloadInstances", value.asInstanceOf[js.Any])
+      inline def setReloadInstances(value: Boolean): Self = StObject.set(x, "reloadInstances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadInstancesUndefined: Self = StObject.set(x, "reloadInstances", js.undefined)
+      inline def setReloadInstancesUndefined: Self = StObject.set(x, "reloadInstances", js.undefined)
       
-      @scala.inline
-      def setSearch(value: ResourceSearchOption): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: ResourceSearchOption): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setSort(value: ResourceSortOption): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: ResourceSortOption): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setUpdateMethod(value: String): Self = StObject.set(x, "updateMethod", value.asInstanceOf[js.Any])
+      inline def setUpdateMethod(value: String): Self = StObject.set(x, "updateMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateMethodUndefined: Self = StObject.set(x, "updateMethod", js.undefined)
+      inline def setUpdateMethodUndefined: Self = StObject.set(x, "updateMethod", js.undefined)
     }
   }
   
@@ -635,26 +575,20 @@ object mod {
   }
   object ResourceSearchOption {
     
-    @scala.inline
-    def apply(attributes: js.Array[String], operator: String, param: String): ResourceSearchOption = {
+    inline def apply(attributes: js.Array[String], operator: String, param: String): ResourceSearchOption = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceSearchOption]
     }
     
-    @scala.inline
-    implicit class ResourceSearchOptionMutableBuilder[Self <: ResourceSearchOption] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceSearchOption](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     }
   }
   
@@ -666,20 +600,16 @@ object mod {
   }
   object ResourceSortOption {
     
-    @scala.inline
-    def apply(default: String, param: String): ResourceSortOption = {
+    inline def apply(default: String, param: String): ResourceSortOption = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceSortOption]
     }
     
-    @scala.inline
-    implicit class ResourceSortOptionMutableBuilder[Self <: ResourceSortOption] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceSortOption](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     }
   }
 }

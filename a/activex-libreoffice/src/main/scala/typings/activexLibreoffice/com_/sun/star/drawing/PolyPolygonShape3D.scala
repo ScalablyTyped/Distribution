@@ -15,8 +15,7 @@ trait PolyPolygonShape3D extends StObject {
 }
 object PolyPolygonShape3D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SequenceX: DoubleSequenceSequence,
     SequenceY: DoubleSequenceSequence,
     SequenceZ: DoubleSequenceSequence
@@ -25,25 +24,18 @@ object PolyPolygonShape3D {
     __obj.asInstanceOf[PolyPolygonShape3D]
   }
   
-  @scala.inline
-  implicit class PolyPolygonShape3DMutableBuilder[Self <: PolyPolygonShape3D] (val x: Self) extends AnyVal {
+  extension [Self <: PolyPolygonShape3D](x: Self) {
     
-    @scala.inline
-    def setSequenceX(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceX", value.asInstanceOf[js.Any])
+    inline def setSequenceX(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceXVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceX", js.Array(value :_*))
+    inline def setSequenceXVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceX", js.Array(value :_*))
     
-    @scala.inline
-    def setSequenceY(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceY", value.asInstanceOf[js.Any])
+    inline def setSequenceY(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceYVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceY", js.Array(value :_*))
+    inline def setSequenceYVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceY", js.Array(value :_*))
     
-    @scala.inline
-    def setSequenceZ(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceZ", value.asInstanceOf[js.Any])
+    inline def setSequenceZ(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceZVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceZ", js.Array(value :_*))
+    inline def setSequenceZVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceZ", js.Array(value :_*))
   }
 }

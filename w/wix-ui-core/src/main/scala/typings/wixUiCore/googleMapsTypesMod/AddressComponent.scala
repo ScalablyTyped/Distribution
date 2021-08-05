@@ -14,25 +14,19 @@ trait AddressComponent extends StObject {
 }
 object AddressComponent {
   
-  @scala.inline
-  def apply(long_name: String, short_name: String, types: js.Array[String]): AddressComponent = {
+  inline def apply(long_name: String, short_name: String, types: js.Array[String]): AddressComponent = {
     val __obj = js.Dynamic.literal(long_name = long_name.asInstanceOf[js.Any], short_name = short_name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressComponent]
   }
   
-  @scala.inline
-  implicit class AddressComponentMutableBuilder[Self <: AddressComponent] (val x: Self) extends AnyVal {
+  extension [Self <: AddressComponent](x: Self) {
     
-    @scala.inline
-    def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])
+    inline def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+    inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

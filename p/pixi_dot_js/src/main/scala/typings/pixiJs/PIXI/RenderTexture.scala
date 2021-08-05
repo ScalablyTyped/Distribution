@@ -63,7 +63,7 @@ trait RenderTexture
     * @protected
     * @member {string} PIXI.RenderTexture#filterPoolKey
     */
-  var filterPoolKey: String = js.native
+  /* protected */ var filterPoolKey: String = js.native
   
   /**
     * Shortcut to `this.baseTexture.framebuffer`, saves baseTexture cast.

@@ -33,8 +33,7 @@ object GrpcClient {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def _resolveFile(protoPath: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_resolveFile")(protoPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _resolveFile(protoPath: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_resolveFile")(protoPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Creates a 'bytelength' function for a given proto message class.
@@ -46,6 +45,5 @@ object GrpcClient {
     * @return {function(Object):number} - a function to compute the byte length
     *   for an object.
     */
-  @scala.inline
-  def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
+  inline def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdToaFormat extends StObject
 object WdToaFormat {
   
-  @scala.inline
-  def wdTOAClassic: `1` = 1.asInstanceOf[`1`]
+  inline def wdTOAClassic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTOADistinctive: `2` = 2.asInstanceOf[`2`]
+  inline def wdTOADistinctive: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdTOAFormal: `3` = 3.asInstanceOf[`3`]
+  inline def wdTOAFormal: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdTOASimple: `4` = 4.asInstanceOf[`4`]
+  inline def wdTOASimple: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdTOATemplate: `0` = 0.asInstanceOf[`0`]
+  inline def wdTOATemplate: `0` = 0.asInstanceOf[`0`]
 }

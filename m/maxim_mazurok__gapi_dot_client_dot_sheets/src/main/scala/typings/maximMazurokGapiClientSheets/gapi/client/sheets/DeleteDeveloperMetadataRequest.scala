@@ -11,19 +11,15 @@ trait DeleteDeveloperMetadataRequest extends StObject {
 }
 object DeleteDeveloperMetadataRequest {
   
-  @scala.inline
-  def apply(): DeleteDeveloperMetadataRequest = {
+  inline def apply(): DeleteDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDeveloperMetadataRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDeveloperMetadataRequestMutableBuilder[Self <: DeleteDeveloperMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeveloperMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
+    inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
+    inline def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
   }
 }

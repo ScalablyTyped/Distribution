@@ -19,35 +19,26 @@ object anon {
   }
   object EndSeconds {
     
-    @scala.inline
-    def apply(mediaContentUrl: String): EndSeconds = {
+    inline def apply(mediaContentUrl: String): EndSeconds = {
       val __obj = js.Dynamic.literal(mediaContentUrl = mediaContentUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndSeconds]
     }
     
-    @scala.inline
-    implicit class EndSecondsMutableBuilder[Self <: EndSeconds] (val x: Self) extends AnyVal {
+    extension [Self <: EndSeconds](x: Self) {
       
-      @scala.inline
-      def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
+      inline def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndSecondsUndefined: Self = StObject.set(x, "endSeconds", js.undefined)
+      inline def setEndSecondsUndefined: Self = StObject.set(x, "endSeconds", js.undefined)
       
-      @scala.inline
-      def setMediaContentUrl(value: String): Self = StObject.set(x, "mediaContentUrl", value.asInstanceOf[js.Any])
+      inline def setMediaContentUrl(value: String): Self = StObject.set(x, "mediaContentUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartSeconds(value: Double): Self = StObject.set(x, "startSeconds", value.asInstanceOf[js.Any])
+      inline def setStartSeconds(value: Double): Self = StObject.set(x, "startSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartSecondsUndefined: Self = StObject.set(x, "startSeconds", js.undefined)
+      inline def setStartSecondsUndefined: Self = StObject.set(x, "startSeconds", js.undefined)
       
-      @scala.inline
-      def setSuggestedQuality(value: SuggestedVideoQuality): Self = StObject.set(x, "suggestedQuality", value.asInstanceOf[js.Any])
+      inline def setSuggestedQuality(value: SuggestedVideoQuality): Self = StObject.set(x, "suggestedQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedQualityUndefined: Self = StObject.set(x, "suggestedQuality", js.undefined)
+      inline def setSuggestedQualityUndefined: Self = StObject.set(x, "suggestedQuality", js.undefined)
     }
   }
 }

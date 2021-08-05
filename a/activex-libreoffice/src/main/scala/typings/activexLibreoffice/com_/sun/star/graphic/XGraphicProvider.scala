@@ -50,8 +50,7 @@ trait XGraphicProvider
 }
 object XGraphicProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryGraphic: PropertyValues => XGraphic,
     queryGraphicDescriptor: PropertyValues => XPropertySet,
@@ -63,16 +62,12 @@ object XGraphicProvider {
     __obj.asInstanceOf[XGraphicProvider]
   }
   
-  @scala.inline
-  implicit class XGraphicProviderMutableBuilder[Self <: XGraphicProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphicProvider](x: Self) {
     
-    @scala.inline
-    def setQueryGraphic(value: PropertyValues => XGraphic): Self = StObject.set(x, "queryGraphic", js.Any.fromFunction1(value))
+    inline def setQueryGraphic(value: PropertyValues => XGraphic): Self = StObject.set(x, "queryGraphic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryGraphicDescriptor(value: PropertyValues => XPropertySet): Self = StObject.set(x, "queryGraphicDescriptor", js.Any.fromFunction1(value))
+    inline def setQueryGraphicDescriptor(value: PropertyValues => XPropertySet): Self = StObject.set(x, "queryGraphicDescriptor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoreGraphic(value: (XGraphic, PropertyValues) => Unit): Self = StObject.set(x, "storeGraphic", js.Any.fromFunction2(value))
+    inline def setStoreGraphic(value: (XGraphic, PropertyValues) => Unit): Self = StObject.set(x, "storeGraphic", js.Any.fromFunction2(value))
   }
 }

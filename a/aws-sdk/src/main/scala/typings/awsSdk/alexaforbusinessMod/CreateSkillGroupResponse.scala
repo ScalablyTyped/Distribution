@@ -13,19 +13,15 @@ trait CreateSkillGroupResponse extends StObject {
 }
 object CreateSkillGroupResponse {
   
-  @scala.inline
-  def apply(): CreateSkillGroupResponse = {
+  inline def apply(): CreateSkillGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSkillGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateSkillGroupResponseMutableBuilder[Self <: CreateSkillGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSkillGroupResponse](x: Self) {
     
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
+    inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
+    inline def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
   }
 }

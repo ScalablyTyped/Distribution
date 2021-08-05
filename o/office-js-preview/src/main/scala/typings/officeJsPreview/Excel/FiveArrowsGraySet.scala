@@ -21,8 +21,7 @@ trait FiveArrowsGraySet
 }
 object FiveArrowsGraySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     grayDownArrow: Icon,
     grayDownInclineArrow: Icon,
     graySideArrow: Icon,
@@ -33,22 +32,16 @@ object FiveArrowsGraySet {
     __obj.asInstanceOf[FiveArrowsGraySet]
   }
   
-  @scala.inline
-  implicit class FiveArrowsGraySetMutableBuilder[Self <: FiveArrowsGraySet] (val x: Self) extends AnyVal {
+  extension [Self <: FiveArrowsGraySet](x: Self) {
     
-    @scala.inline
-    def setGrayDownArrow(value: Icon): Self = StObject.set(x, "grayDownArrow", value.asInstanceOf[js.Any])
+    inline def setGrayDownArrow(value: Icon): Self = StObject.set(x, "grayDownArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayDownInclineArrow(value: Icon): Self = StObject.set(x, "grayDownInclineArrow", value.asInstanceOf[js.Any])
+    inline def setGrayDownInclineArrow(value: Icon): Self = StObject.set(x, "grayDownInclineArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraySideArrow(value: Icon): Self = StObject.set(x, "graySideArrow", value.asInstanceOf[js.Any])
+    inline def setGraySideArrow(value: Icon): Self = StObject.set(x, "graySideArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayUpArrow(value: Icon): Self = StObject.set(x, "grayUpArrow", value.asInstanceOf[js.Any])
+    inline def setGrayUpArrow(value: Icon): Self = StObject.set(x, "grayUpArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayUpInclineArrow(value: Icon): Self = StObject.set(x, "grayUpInclineArrow", value.asInstanceOf[js.Any])
+    inline def setGrayUpInclineArrow(value: Icon): Self = StObject.set(x, "grayUpInclineArrow", value.asInstanceOf[js.Any])
   }
 }

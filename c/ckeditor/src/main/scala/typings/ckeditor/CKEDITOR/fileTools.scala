@@ -108,8 +108,7 @@ object fileTools {
   }
   object uploadWidgetDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalRequestParameters: js.Any,
       fileToElement: js.Any => HTMLElement,
       loadMethod: String,
@@ -128,47 +127,33 @@ object fileTools {
       __obj.asInstanceOf[uploadWidgetDefinition]
     }
     
-    @scala.inline
-    implicit class uploadWidgetDefinitionMutableBuilder[Self <: uploadWidgetDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: uploadWidgetDefinition](x: Self) {
       
-      @scala.inline
-      def setAdditionalRequestParameters(value: js.Any): Self = StObject.set(x, "additionalRequestParameters", value.asInstanceOf[js.Any])
+      inline def setAdditionalRequestParameters(value: js.Any): Self = StObject.set(x, "additionalRequestParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileToElement(value: js.Any => HTMLElement): Self = StObject.set(x, "fileToElement", js.Any.fromFunction1(value))
+      inline def setFileToElement(value: js.Any => HTMLElement): Self = StObject.set(x, "fileToElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadMethod(value: String): Self = StObject.set(x, "loadMethod", value.asInstanceOf[js.Any])
+      inline def setLoadMethod(value: String): Self = StObject.set(x, "loadMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderType(value: js.Any): Self = StObject.set(x, "loaderType", value.asInstanceOf[js.Any])
+      inline def setLoaderType(value: js.Any): Self = StObject.set(x, "loaderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAbort(value: () => Boolean): Self = StObject.set(x, "onAbort", js.Any.fromFunction0(value))
+      inline def setOnAbort(value: () => Boolean): Self = StObject.set(x, "onAbort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnError(value: () => Boolean): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+      inline def setOnError(value: () => Boolean): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoaded(value: () => Boolean): Self = StObject.set(x, "onLoaded", js.Any.fromFunction0(value))
+      inline def setOnLoaded(value: () => Boolean): Self = StObject.set(x, "onLoaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUploaded(value: () => Boolean): Self = StObject.set(x, "onUploaded", js.Any.fromFunction0(value))
+      inline def setOnUploaded(value: () => Boolean): Self = StObject.set(x, "onUploaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUploading(value: () => Boolean): Self = StObject.set(x, "onUploading", js.Any.fromFunction0(value))
+      inline def setOnUploading(value: () => Boolean): Self = StObject.set(x, "onUploading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReplaceWith(value: () => js.Any): Self = StObject.set(x, "replaceWith", js.Any.fromFunction0(value))
+      inline def setReplaceWith(value: () => js.Any): Self = StObject.set(x, "replaceWith", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSkipNotifications(value: Boolean): Self = StObject.set(x, "skipNotifications", value.asInstanceOf[js.Any])
+      inline def setSkipNotifications(value: Boolean): Self = StObject.set(x, "skipNotifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedTypes(value: String): Self = StObject.set(x, "supportedTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedTypes(value: String): Self = StObject.set(x, "supportedTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
+      inline def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     }
   }
 }

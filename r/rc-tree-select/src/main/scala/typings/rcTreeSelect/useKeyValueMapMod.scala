@@ -12,6 +12,5 @@ object useKeyValueMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(flattenOptions: js.Array[FlattenDataNode]): js.Array[Map[String | Double, FlattenDataNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(flattenOptions.asInstanceOf[js.Any]).asInstanceOf[js.Array[Map[String | Double, FlattenDataNode]]]
+  inline def default(flattenOptions: js.Array[FlattenDataNode]): js.Array[Map[String | Double, FlattenDataNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(flattenOptions.asInstanceOf[js.Any]).asInstanceOf[js.Array[Map[String | Double, FlattenDataNode]]]
 }

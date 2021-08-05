@@ -12,22 +12,17 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(locations: js.Array[Location], names: Translations): Region = {
+  inline def apply(locations: js.Array[Location], names: Translations): Region = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
   }
 }

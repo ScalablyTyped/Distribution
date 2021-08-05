@@ -11,19 +11,15 @@ trait AdminAuditData extends StObject {
 }
 object AdminAuditData {
   
-  @scala.inline
-  def apply(): AdminAuditData = {
+  inline def apply(): AdminAuditData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminAuditData]
   }
   
-  @scala.inline
-  implicit class AdminAuditDataMutableBuilder[Self <: AdminAuditData] (val x: Self) extends AnyVal {
+  extension [Self <: AdminAuditData](x: Self) {
     
-    @scala.inline
-    def setPermissionDelta(value: PermissionDelta): Self = StObject.set(x, "permissionDelta", value.asInstanceOf[js.Any])
+    inline def setPermissionDelta(value: PermissionDelta): Self = StObject.set(x, "permissionDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionDeltaUndefined: Self = StObject.set(x, "permissionDelta", js.undefined)
+    inline def setPermissionDeltaUndefined: Self = StObject.set(x, "permissionDelta", js.undefined)
   }
 }

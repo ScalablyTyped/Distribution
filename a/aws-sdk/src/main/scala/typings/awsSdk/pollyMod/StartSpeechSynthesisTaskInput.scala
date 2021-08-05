@@ -68,79 +68,55 @@ trait StartSpeechSynthesisTaskInput extends StObject {
 }
 object StartSpeechSynthesisTaskInput {
   
-  @scala.inline
-  def apply(OutputFormat: OutputFormat, OutputS3BucketName: OutputS3BucketName, Text: Text, VoiceId: VoiceId): StartSpeechSynthesisTaskInput = {
+  inline def apply(OutputFormat: OutputFormat, OutputS3BucketName: OutputS3BucketName, Text: Text, VoiceId: VoiceId): StartSpeechSynthesisTaskInput = {
     val __obj = js.Dynamic.literal(OutputFormat = OutputFormat.asInstanceOf[js.Any], OutputS3BucketName = OutputS3BucketName.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], VoiceId = VoiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSpeechSynthesisTaskInput]
   }
   
-  @scala.inline
-  implicit class StartSpeechSynthesisTaskInputMutableBuilder[Self <: StartSpeechSynthesisTaskInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartSpeechSynthesisTaskInput](x: Self) {
     
-    @scala.inline
-    def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setLexiconNames(value: LexiconNameList): Self = StObject.set(x, "LexiconNames", value.asInstanceOf[js.Any])
+    inline def setLexiconNames(value: LexiconNameList): Self = StObject.set(x, "LexiconNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexiconNamesUndefined: Self = StObject.set(x, "LexiconNames", js.undefined)
+    inline def setLexiconNamesUndefined: Self = StObject.set(x, "LexiconNames", js.undefined)
     
-    @scala.inline
-    def setLexiconNamesVarargs(value: LexiconName*): Self = StObject.set(x, "LexiconNames", js.Array(value :_*))
+    inline def setLexiconNamesVarargs(value: LexiconName*): Self = StObject.set(x, "LexiconNames", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
+    inline def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3BucketName(value: OutputS3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
+    inline def setOutputS3BucketName(value: OutputS3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3KeyPrefix(value: OutputS3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputS3KeyPrefix(value: OutputS3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
+    inline def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: SampleRate): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: SampleRate): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
-    @scala.inline
-    def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
+    inline def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
     
-    @scala.inline
-    def setSpeechMarkTypes(value: SpeechMarkTypeList): Self = StObject.set(x, "SpeechMarkTypes", value.asInstanceOf[js.Any])
+    inline def setSpeechMarkTypes(value: SpeechMarkTypeList): Self = StObject.set(x, "SpeechMarkTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechMarkTypesUndefined: Self = StObject.set(x, "SpeechMarkTypes", js.undefined)
+    inline def setSpeechMarkTypesUndefined: Self = StObject.set(x, "SpeechMarkTypes", js.undefined)
     
-    @scala.inline
-    def setSpeechMarkTypesVarargs(value: SpeechMarkType*): Self = StObject.set(x, "SpeechMarkTypes", js.Array(value :_*))
+    inline def setSpeechMarkTypesVarargs(value: SpeechMarkType*): Self = StObject.set(x, "SpeechMarkTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: Text): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: Text): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextType(value: TextType): Self = StObject.set(x, "TextType", value.asInstanceOf[js.Any])
+    inline def setTextType(value: TextType): Self = StObject.set(x, "TextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTypeUndefined: Self = StObject.set(x, "TextType", js.undefined)
+    inline def setTextTypeUndefined: Self = StObject.set(x, "TextType", js.undefined)
     
-    @scala.inline
-    def setVoiceId(value: VoiceId): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
+    inline def setVoiceId(value: VoiceId): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
   }
 }

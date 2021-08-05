@@ -8,6 +8,5 @@ object angularTranslateStrings {
   
   @js.native
   sealed trait translate extends StObject
-  @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
+  inline def translate: translate = "translate".asInstanceOf[translate]
 }

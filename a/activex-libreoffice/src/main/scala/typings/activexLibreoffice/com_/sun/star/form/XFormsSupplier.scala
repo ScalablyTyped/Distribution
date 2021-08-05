@@ -30,8 +30,7 @@ trait XFormsSupplier
 }
 object XFormsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Forms: XNameContainer,
     acquire: () => Unit,
     getForms: () => XNameContainer,
@@ -42,13 +41,10 @@ object XFormsSupplier {
     __obj.asInstanceOf[XFormsSupplier]
   }
   
-  @scala.inline
-  implicit class XFormsSupplierMutableBuilder[Self <: XFormsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XFormsSupplier](x: Self) {
     
-    @scala.inline
-    def setForms(value: XNameContainer): Self = StObject.set(x, "Forms", value.asInstanceOf[js.Any])
+    inline def setForms(value: XNameContainer): Self = StObject.set(x, "Forms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetForms(value: () => XNameContainer): Self = StObject.set(x, "getForms", js.Any.fromFunction0(value))
+    inline def setGetForms(value: () => XNameContainer): Self = StObject.set(x, "getForms", js.Any.fromFunction0(value))
   }
 }

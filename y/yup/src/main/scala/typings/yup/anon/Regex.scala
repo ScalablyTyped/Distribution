@@ -11,16 +11,13 @@ trait Regex extends StObject {
 }
 object Regex {
   
-  @scala.inline
-  def apply(regex: RegExp): Regex = {
+  inline def apply(regex: RegExp): Regex = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Regex]
   }
   
-  @scala.inline
-  implicit class RegexMutableBuilder[Self <: Regex] (val x: Self) extends AnyVal {
+  extension [Self <: Regex](x: Self) {
     
-    @scala.inline
-    def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
   }
 }

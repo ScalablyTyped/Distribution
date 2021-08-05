@@ -16,8 +16,7 @@ object mod {
   @js.native
   val default: AsyncStorageStatic = js.native
   
-  @scala.inline
-  def useAsyncStorage(key: String): GetItem = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncStorage")(key.asInstanceOf[js.Any]).asInstanceOf[GetItem]
+  inline def useAsyncStorage(key: String): GetItem = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncStorage")(key.asInstanceOf[js.Any]).asInstanceOf[GetItem]
   
   @js.native
   trait AsyncStorageStatic extends StObject {

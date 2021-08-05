@@ -39,10 +39,8 @@ object mod {
     *
     * @param group Group id in string, or array of chart instance.
     */
-  @scala.inline
-  def connect(group: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def connect(group: js.Array[ECharts]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connect(group: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connect(group: js.Array[ECharts]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Disconnects interaction of multiple chart series. To have one single
@@ -50,8 +48,7 @@ object mod {
     *
     * @param {string} group Group id in string.
     */
-  @scala.inline
-  def disConnect(group: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disConnect")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disConnect(group: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disConnect")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Destroys chart instance, after which the instance cannot be used any
@@ -59,22 +56,17 @@ object mod {
     *
     * @param target Chart instance or container.
     */
-  @scala.inline
-  def dispose(target: ECharts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def dispose(target: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def dispose(target: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dispose(target: ECharts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dispose(target: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dispose(target: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getInstanceByDom(target: HTMLCanvasElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceByDom")(target.asInstanceOf[js.Any]).asInstanceOf[ECharts]
+  inline def getInstanceByDom(target: HTMLCanvasElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceByDom")(target.asInstanceOf[js.Any]).asInstanceOf[ECharts]
   /**
     * Returns chart instance of dom container.
     *
     * @param target Chart container.
     */
-  @scala.inline
-  def getInstanceByDom(target: HTMLDivElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceByDom")(target.asInstanceOf[js.Any]).asInstanceOf[ECharts]
+  inline def getInstanceByDom(target: HTMLDivElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceByDom")(target.asInstanceOf[js.Any]).asInstanceOf[ECharts]
   
   /**
     * Get a registed map.
@@ -82,8 +74,7 @@ object mod {
     * @param {string} mapName Map name.
     * @return {MapObj} Map data.
     */
-  @scala.inline
-  def getMap(mapName: String): MapObj = ^.asInstanceOf[js.Dynamic].applyDynamic("getMap")(mapName.asInstanceOf[js.Any]).asInstanceOf[MapObj]
+  inline def getMap(mapName: String): MapObj = ^.asInstanceOf[js.Dynamic].applyDynamic("getMap")(mapName.asInstanceOf[js.Any]).asInstanceOf[MapObj]
   
   /**
     * Util methods about graphics.
@@ -149,18 +140,12 @@ object mod {
     override def _to: Graphic = ^
   }
   
-  @scala.inline
-  def init(dom: HTMLCanvasElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any]).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLCanvasElement, theme: String): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLCanvasElement, theme: String, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLCanvasElement, theme: js.Object): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLCanvasElement, theme: js.Object, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLCanvasElement, theme: Unit, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLCanvasElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any]).asInstanceOf[ECharts]
+  inline def init(dom: HTMLCanvasElement, theme: String): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLCanvasElement, theme: String, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLCanvasElement, theme: js.Object): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLCanvasElement, theme: js.Object, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLCanvasElement, theme: Unit, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
   /**
     * Creates an ECharts instance, and returns an echartsInstance. You shall
     *     not initialize multiple ECharts instances on a single container.
@@ -183,18 +168,12 @@ object mod {
     *     If setting to `null`/`undefined`/`'auto'`, height of `dom`
     *     (instance container) will be used.
     */
-  @scala.inline
-  def init(dom: HTMLDivElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any]).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLDivElement, theme: String): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLDivElement, theme: String, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLDivElement, theme: js.Object): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLDivElement, theme: js.Object, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
-  @scala.inline
-  def init(dom: HTMLDivElement, theme: Unit, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLDivElement): ECharts = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any]).asInstanceOf[ECharts]
+  inline def init(dom: HTMLDivElement, theme: String): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLDivElement, theme: String, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLDivElement, theme: js.Object): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLDivElement, theme: js.Object, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
+  inline def init(dom: HTMLDivElement, theme: Unit, opts: DevicePixelRatio): ECharts = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dom.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ECharts]
   
   /**
     * Registers available maps. This can only be used after including
@@ -212,10 +191,8 @@ object mod {
     *     for better visual effect.
     *     See [USA Population Estimates example](https://echarts.apache.org/examples/en/editor.html?c=map-usa).
     */
-  @scala.inline
-  def registerMap(mapName: String, geoJson: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMap")(mapName.asInstanceOf[js.Any], geoJson.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def registerMap(mapName: String, geoJson: js.Object, specialAreas: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMap")(mapName.asInstanceOf[js.Any], geoJson.asInstanceOf[js.Any], specialAreas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerMap(mapName: String, geoJson: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMap")(mapName.asInstanceOf[js.Any], geoJson.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerMap(mapName: String, geoJson: js.Object, specialAreas: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMap")(mapName.asInstanceOf[js.Any], geoJson.asInstanceOf[js.Any], specialAreas.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Registers a theme, should be specified when
@@ -224,6 +201,5 @@ object mod {
     * @param {string} themeName Theme name.
     * @param {object} theme Theme configurations.
     */
-  @scala.inline
-  def registerTheme(themeName: String, theme: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(themeName.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerTheme(themeName: String, theme: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(themeName.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

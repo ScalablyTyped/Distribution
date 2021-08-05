@@ -18,19 +18,15 @@ trait IntegerParameterRangeSpecification extends StObject {
 }
 object IntegerParameterRangeSpecification {
   
-  @scala.inline
-  def apply(MaxValue: ParameterValue, MinValue: ParameterValue): IntegerParameterRangeSpecification = {
+  inline def apply(MaxValue: ParameterValue, MinValue: ParameterValue): IntegerParameterRangeSpecification = {
     val __obj = js.Dynamic.literal(MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerParameterRangeSpecification]
   }
   
-  @scala.inline
-  implicit class IntegerParameterRangeSpecificationMutableBuilder[Self <: IntegerParameterRangeSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerParameterRangeSpecification](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: ParameterValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: ParameterValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: ParameterValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: ParameterValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
   }
 }

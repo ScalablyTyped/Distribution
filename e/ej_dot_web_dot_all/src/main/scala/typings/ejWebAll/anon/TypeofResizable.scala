@@ -15,19 +15,15 @@ trait TypeofResizable extends StObject {
 }
 object TypeofResizable {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Resizable): TypeofResizable = {
+  inline def apply(Locale: js.Any, fn: Resizable): TypeofResizable = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofResizable]
   }
   
-  @scala.inline
-  implicit class TypeofResizableMutableBuilder[Self <: TypeofResizable] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofResizable](x: Self) {
     
-    @scala.inline
-    def setFn(value: Resizable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Resizable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

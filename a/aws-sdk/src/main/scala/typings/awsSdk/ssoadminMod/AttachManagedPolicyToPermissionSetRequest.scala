@@ -23,22 +23,17 @@ trait AttachManagedPolicyToPermissionSetRequest extends StObject {
 }
 object AttachManagedPolicyToPermissionSetRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn, ManagedPolicyArn: ManagedPolicyArn, PermissionSetArn: PermissionSetArn): AttachManagedPolicyToPermissionSetRequest = {
+  inline def apply(InstanceArn: InstanceArn, ManagedPolicyArn: ManagedPolicyArn, PermissionSetArn: PermissionSetArn): AttachManagedPolicyToPermissionSetRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], ManagedPolicyArn = ManagedPolicyArn.asInstanceOf[js.Any], PermissionSetArn = PermissionSetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachManagedPolicyToPermissionSetRequest]
   }
   
-  @scala.inline
-  implicit class AttachManagedPolicyToPermissionSetRequestMutableBuilder[Self <: AttachManagedPolicyToPermissionSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachManagedPolicyToPermissionSetRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedPolicyArn(value: ManagedPolicyArn): Self = StObject.set(x, "ManagedPolicyArn", value.asInstanceOf[js.Any])
+    inline def setManagedPolicyArn(value: ManagedPolicyArn): Self = StObject.set(x, "ManagedPolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
   }
 }

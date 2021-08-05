@@ -20,28 +20,21 @@ trait RangeReservation extends StObject {
 }
 object RangeReservation {
   
-  @scala.inline
-  def apply(): RangeReservation = {
+  inline def apply(): RangeReservation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeReservation]
   }
   
-  @scala.inline
-  implicit class RangeReservationMutableBuilder[Self <: RangeReservation] (val x: Self) extends AnyVal {
+  extension [Self <: RangeReservation](x: Self) {
     
-    @scala.inline
-    def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
+    inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
+    inline def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
     
-    @scala.inline
-    def setSecondaryRangeIpPrefixLengths(value: js.Array[Double]): Self = StObject.set(x, "secondaryRangeIpPrefixLengths", value.asInstanceOf[js.Any])
+    inline def setSecondaryRangeIpPrefixLengths(value: js.Array[Double]): Self = StObject.set(x, "secondaryRangeIpPrefixLengths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryRangeIpPrefixLengthsUndefined: Self = StObject.set(x, "secondaryRangeIpPrefixLengths", js.undefined)
+    inline def setSecondaryRangeIpPrefixLengthsUndefined: Self = StObject.set(x, "secondaryRangeIpPrefixLengths", js.undefined)
     
-    @scala.inline
-    def setSecondaryRangeIpPrefixLengthsVarargs(value: Double*): Self = StObject.set(x, "secondaryRangeIpPrefixLengths", js.Array(value :_*))
+    inline def setSecondaryRangeIpPrefixLengthsVarargs(value: Double*): Self = StObject.set(x, "secondaryRangeIpPrefixLengths", js.Array(value :_*))
   }
 }

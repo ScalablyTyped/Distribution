@@ -16,8 +16,7 @@ object firebaseNamespaceCoreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFirebaseNamespaceCore(
+  inline def createFirebaseNamespaceCore(
     firebaseAppImpl: Instantiable3[
       /* options */ FirebaseOptions, 
       /* config */ FirebaseAppConfig, 

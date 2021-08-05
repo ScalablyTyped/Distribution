@@ -33,43 +33,31 @@ trait ModifyHostsRequest extends StObject {
 }
 object ModifyHostsRequest {
   
-  @scala.inline
-  def apply(HostIds: RequestHostIdList): ModifyHostsRequest = {
+  inline def apply(HostIds: RequestHostIdList): ModifyHostsRequest = {
     val __obj = js.Dynamic.literal(HostIds = HostIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyHostsRequest]
   }
   
-  @scala.inline
-  implicit class ModifyHostsRequestMutableBuilder[Self <: ModifyHostsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyHostsRequest](x: Self) {
     
-    @scala.inline
-    def setAutoPlacement(value: AutoPlacement): Self = StObject.set(x, "AutoPlacement", value.asInstanceOf[js.Any])
+    inline def setAutoPlacement(value: AutoPlacement): Self = StObject.set(x, "AutoPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlacementUndefined: Self = StObject.set(x, "AutoPlacement", js.undefined)
+    inline def setAutoPlacementUndefined: Self = StObject.set(x, "AutoPlacement", js.undefined)
     
-    @scala.inline
-    def setHostIds(value: RequestHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
+    inline def setHostIds(value: RequestHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIdsVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
+    inline def setHostIdsVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
     
-    @scala.inline
-    def setHostRecovery(value: HostRecovery): Self = StObject.set(x, "HostRecovery", value.asInstanceOf[js.Any])
+    inline def setHostRecovery(value: HostRecovery): Self = StObject.set(x, "HostRecovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostRecoveryUndefined: Self = StObject.set(x, "HostRecovery", js.undefined)
+    inline def setHostRecoveryUndefined: Self = StObject.set(x, "HostRecovery", js.undefined)
     
-    @scala.inline
-    def setInstanceFamily(value: String): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
+    inline def setInstanceFamily(value: String): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
+    inline def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait ExcludedPlacementList
 }
 object ExcludedPlacementList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addExcludedPlacement: String => Unit,
     addExcludedPlacements: js.Array[String] => Unit,
     campaigns: () => AdWordsSelector[Campaign],
@@ -39,28 +38,20 @@ object ExcludedPlacementList {
     __obj.asInstanceOf[ExcludedPlacementList]
   }
   
-  @scala.inline
-  implicit class ExcludedPlacementListMutableBuilder[Self <: ExcludedPlacementList] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedPlacementList](x: Self) {
     
-    @scala.inline
-    def setAddExcludedPlacement(value: String => Unit): Self = StObject.set(x, "addExcludedPlacement", js.Any.fromFunction1(value))
+    inline def setAddExcludedPlacement(value: String => Unit): Self = StObject.set(x, "addExcludedPlacement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddExcludedPlacements(value: js.Array[String] => Unit): Self = StObject.set(x, "addExcludedPlacements", js.Any.fromFunction1(value))
+    inline def setAddExcludedPlacements(value: js.Array[String] => Unit): Self = StObject.set(x, "addExcludedPlacements", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = StObject.set(x, "campaigns", js.Any.fromFunction0(value))
+    inline def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = StObject.set(x, "campaigns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludedPlacements(value: () => AdWordsSelector[SharedExcludedPlacement]): Self = StObject.set(x, "excludedPlacements", js.Any.fromFunction0(value))
+    inline def setExcludedPlacements(value: () => AdWordsSelector[SharedExcludedPlacement]): Self = StObject.set(x, "excludedPlacements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

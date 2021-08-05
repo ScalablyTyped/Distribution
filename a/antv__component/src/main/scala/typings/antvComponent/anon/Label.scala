@@ -20,8 +20,7 @@ trait Label extends StObject {
 }
 object Label {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     label: AutoHide,
     line: StyleStroke,
     subTickLine: Count,
@@ -33,25 +32,18 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setLabel(value: AutoHide): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: AutoHide): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: StyleStroke): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: StyleStroke): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTickLine(value: Count): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
+    inline def setSubTickLine(value: Count): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLine(value: AlignTick): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
+    inline def setTickLine(value: AlignTick): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickStates(value: Active): Self = StObject.set(x, "tickStates", value.asInstanceOf[js.Any])
+    inline def setTickStates(value: Active): Self = StObject.set(x, "tickStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Position): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Position): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

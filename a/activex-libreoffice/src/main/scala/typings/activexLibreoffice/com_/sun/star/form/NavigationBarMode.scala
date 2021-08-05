@@ -23,8 +23,7 @@ object NavigationBarMode {
     *
     * pressing the TAB key from the last control moves the focus to the first control in the tab order of the same record.
     */
-  @scala.inline
-  def CURRENT: `1` = 1.asInstanceOf[`1`]
+  inline def CURRENT: `1` = 1.asInstanceOf[`1`]
   
   /**
     * no navigation bar is provided and navigation on the current form is only possible with the keyboard (TAB/SHIFT TAB).
@@ -32,8 +31,7 @@ object NavigationBarMode {
     * Note that when this mode is set, a simultaneous TabulatorCycle value of TabulatorCycle::CURRENT means that you cannot travel between records anymore.
     * @see TabulatorCycle
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * a navigation bar is provided and navigation will be performed on the parent of the current/active form.
@@ -41,6 +39,5 @@ object NavigationBarMode {
     * This options is usually used for forms containing an grid control only. In such a form, the control has it's own navigation elements, so there is no
     * need to use the navigation bar for the form, but rather for its parent.
     */
-  @scala.inline
-  def PARENT: `2` = 2.asInstanceOf[`2`]
+  inline def PARENT: `2` = 2.asInstanceOf[`2`]
 }

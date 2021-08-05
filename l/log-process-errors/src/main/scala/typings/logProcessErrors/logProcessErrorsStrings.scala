@@ -12,101 +12,85 @@ object logProcessErrorsStrings {
   sealed trait default
     extends StObject
        with LogLevel
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait ava extends StObject
-  @scala.inline
-  def ava: ava = "ava".asInstanceOf[ava]
+  inline def ava: ava = "ava".asInstanceOf[ava]
   
   @js.native
   sealed trait debug
     extends StObject
        with LogLevel
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait error
     extends StObject
        with LogLevel
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait info
     extends StObject
        with LogLevel
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait jasmine extends StObject
-  @scala.inline
-  def jasmine: jasmine = "jasmine".asInstanceOf[jasmine]
+  inline def jasmine: jasmine = "jasmine".asInstanceOf[jasmine]
   
   @js.native
   sealed trait mocha extends StObject
-  @scala.inline
-  def mocha: mocha = "mocha".asInstanceOf[mocha]
+  inline def mocha: mocha = "mocha".asInstanceOf[mocha]
   
   @js.native
   sealed trait multipleResolves
     extends StObject
        with ExceptionType
-  @scala.inline
-  def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
+  inline def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
   
   @js.native
   sealed trait `node-tap` extends StObject
-  @scala.inline
-  def `node-tap`: `node-tap` = "node-tap".asInstanceOf[`node-tap`]
+  inline def `node-tap`: `node-tap` = "node-tap".asInstanceOf[`node-tap`]
   
   @js.native
   sealed trait rejectionHandled
     extends StObject
        with ExceptionType
-  @scala.inline
-  def rejectionHandled: rejectionHandled = "rejectionHandled".asInstanceOf[rejectionHandled]
+  inline def rejectionHandled: rejectionHandled = "rejectionHandled".asInstanceOf[rejectionHandled]
   
   @js.native
   sealed trait silent
     extends StObject
        with LogLevel
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait tape extends StObject
-  @scala.inline
-  def tape: tape = "tape".asInstanceOf[tape]
+  inline def tape: tape = "tape".asInstanceOf[tape]
   
   @js.native
   sealed trait uncaughtException
     extends StObject
        with ExceptionType
-  @scala.inline
-  def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
+  inline def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
   
   @js.native
   sealed trait unhandledRejection
     extends StObject
        with ExceptionType
-  @scala.inline
-  def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
+  inline def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
   
   @js.native
   sealed trait warn
     extends StObject
        with LogLevel
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait warning
     extends StObject
        with ExceptionType
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

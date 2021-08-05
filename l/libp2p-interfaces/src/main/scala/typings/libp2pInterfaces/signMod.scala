@@ -14,12 +14,9 @@ object signMod {
   @js.native
   val SignPrefix: js.Any = js.native
   
-  @scala.inline
-  def messagePublicKey(message: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("messagePublicKey")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def messagePublicKey(message: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("messagePublicKey")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def signMessage(peerId: typings.peerId.mod.^, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("signMessage")(peerId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def signMessage(peerId: typings.peerId.mod.^, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("signMessage")(peerId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def verifySignature(message: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignature")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def verifySignature(message: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignature")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

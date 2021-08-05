@@ -13,19 +13,15 @@ trait ResetServiceSpecificCredentialResponse extends StObject {
 }
 object ResetServiceSpecificCredentialResponse {
   
-  @scala.inline
-  def apply(): ResetServiceSpecificCredentialResponse = {
+  inline def apply(): ResetServiceSpecificCredentialResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetServiceSpecificCredentialResponse]
   }
   
-  @scala.inline
-  implicit class ResetServiceSpecificCredentialResponseMutableBuilder[Self <: ResetServiceSpecificCredentialResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResetServiceSpecificCredentialResponse](x: Self) {
     
-    @scala.inline
-    def setServiceSpecificCredential(value: ServiceSpecificCredential): Self = StObject.set(x, "ServiceSpecificCredential", value.asInstanceOf[js.Any])
+    inline def setServiceSpecificCredential(value: ServiceSpecificCredential): Self = StObject.set(x, "ServiceSpecificCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSpecificCredentialUndefined: Self = StObject.set(x, "ServiceSpecificCredential", js.undefined)
+    inline def setServiceSpecificCredentialUndefined: Self = StObject.set(x, "ServiceSpecificCredential", js.undefined)
   }
 }

@@ -17,29 +17,22 @@ trait PolygonDrawActionDrawCompleteEvent extends StObject {
 }
 object PolygonDrawActionDrawCompleteEvent {
   
-  @scala.inline
-  def apply(defaultPrevented: Boolean, preventDefault: js.Function, vertices: js.Array[js.Array[Double]]): PolygonDrawActionDrawCompleteEvent = {
+  inline def apply(defaultPrevented: Boolean, preventDefault: js.Function, vertices: js.Array[js.Array[Double]]): PolygonDrawActionDrawCompleteEvent = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("draw-complete")
     __obj.asInstanceOf[PolygonDrawActionDrawCompleteEvent]
   }
   
-  @scala.inline
-  implicit class PolygonDrawActionDrawCompleteEventMutableBuilder[Self <: PolygonDrawActionDrawCompleteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PolygonDrawActionDrawCompleteEvent](x: Self) {
     
-    @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `draw-complete`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `draw-complete`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

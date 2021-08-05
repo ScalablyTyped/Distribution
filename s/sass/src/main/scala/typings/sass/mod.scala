@@ -25,11 +25,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def render(options: Options, callback: js.Function2[/* exception */ SassException, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(options: Options, callback: js.Function2[/* exception */ SassException, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def renderSync(options: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def renderSync(options: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   object types {
     
@@ -285,121 +283,84 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFunctions(value: StringDictionary[js.Function1[/* repeated */ SassType, SassType | Unit]]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: StringDictionary[js.Function1[/* repeated */ SassType, SassType | Unit]]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      @scala.inline
-      def setImporter(value: Importer | js.Array[Importer]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
+      inline def setImporter(value: Importer | js.Array[Importer]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImporterFunction3(
+      inline def setImporterFunction3(
         value: (/* url */ String, /* prev */ String, /* done */ js.Function1[/* data */ ImporterReturnType, Unit]) => ImporterReturnType | Unit
       ): Self = StObject.set(x, "importer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
+      inline def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
       
-      @scala.inline
-      def setImporterVarargs(value: Importer*): Self = StObject.set(x, "importer", js.Array(value :_*))
+      inline def setImporterVarargs(value: Importer*): Self = StObject.set(x, "importer", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
+      inline def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
+      inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
       
-      @scala.inline
-      def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
+      inline def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setIndentType(value: space | tab): Self = StObject.set(x, "indentType", value.asInstanceOf[js.Any])
+      inline def setIndentType(value: space | tab): Self = StObject.set(x, "indentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentTypeUndefined: Self = StObject.set(x, "indentType", js.undefined)
+      inline def setIndentTypeUndefined: Self = StObject.set(x, "indentType", js.undefined)
       
-      @scala.inline
-      def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
+      inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
+      inline def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
       
-      @scala.inline
-      def setIndentedSyntax(value: Boolean): Self = StObject.set(x, "indentedSyntax", value.asInstanceOf[js.Any])
+      inline def setIndentedSyntax(value: Boolean): Self = StObject.set(x, "indentedSyntax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentedSyntaxUndefined: Self = StObject.set(x, "indentedSyntax", js.undefined)
+      inline def setIndentedSyntaxUndefined: Self = StObject.set(x, "indentedSyntax", js.undefined)
       
-      @scala.inline
-      def setLinefeed(value: cr | crlf | lf | lfcr): Self = StObject.set(x, "linefeed", value.asInstanceOf[js.Any])
+      inline def setLinefeed(value: cr | crlf | lf | lfcr): Self = StObject.set(x, "linefeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinefeedUndefined: Self = StObject.set(x, "linefeed", js.undefined)
+      inline def setLinefeedUndefined: Self = StObject.set(x, "linefeed", js.undefined)
       
-      @scala.inline
-      def setOmitSourceMapUrl(value: Boolean): Self = StObject.set(x, "omitSourceMapUrl", value.asInstanceOf[js.Any])
+      inline def setOmitSourceMapUrl(value: Boolean): Self = StObject.set(x, "omitSourceMapUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitSourceMapUrlUndefined: Self = StObject.set(x, "omitSourceMapUrl", js.undefined)
+      inline def setOmitSourceMapUrlUndefined: Self = StObject.set(x, "omitSourceMapUrl", js.undefined)
       
-      @scala.inline
-      def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
+      inline def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
+      inline def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
       
-      @scala.inline
-      def setOutputStyle(value: compressed | expanded): Self = StObject.set(x, "outputStyle", value.asInstanceOf[js.Any])
+      inline def setOutputStyle(value: compressed | expanded): Self = StObject.set(x, "outputStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputStyleUndefined: Self = StObject.set(x, "outputStyle", js.undefined)
+      inline def setOutputStyleUndefined: Self = StObject.set(x, "outputStyle", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean | String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean | String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapContents(value: Boolean): Self = StObject.set(x, "sourceMapContents", value.asInstanceOf[js.Any])
+      inline def setSourceMapContents(value: Boolean): Self = StObject.set(x, "sourceMapContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapContentsUndefined: Self = StObject.set(x, "sourceMapContents", js.undefined)
+      inline def setSourceMapContentsUndefined: Self = StObject.set(x, "sourceMapContents", js.undefined)
       
-      @scala.inline
-      def setSourceMapEmbed(value: Boolean): Self = StObject.set(x, "sourceMapEmbed", value.asInstanceOf[js.Any])
+      inline def setSourceMapEmbed(value: Boolean): Self = StObject.set(x, "sourceMapEmbed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapEmbedUndefined: Self = StObject.set(x, "sourceMapEmbed", js.undefined)
+      inline def setSourceMapEmbedUndefined: Self = StObject.set(x, "sourceMapEmbed", js.undefined)
       
-      @scala.inline
-      def setSourceMapRoot(value: String): Self = StObject.set(x, "sourceMapRoot", value.asInstanceOf[js.Any])
+      inline def setSourceMapRoot(value: String): Self = StObject.set(x, "sourceMapRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapRootUndefined: Self = StObject.set(x, "sourceMapRoot", js.undefined)
+      inline def setSourceMapRootUndefined: Self = StObject.set(x, "sourceMapRoot", js.undefined)
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     }
   }
   
@@ -421,26 +382,20 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(css: Buffer, stats: Duration): Result = {
+    inline def apply(css: Buffer, stats: Duration): Result = {
       val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setCss(value: Buffer): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: Buffer): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: Buffer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Buffer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setStats(value: Duration): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Duration): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
   
@@ -477,8 +432,7 @@ object mod {
   }
   object SassException {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       column: Double,
       file: String,
       formatted: String,
@@ -491,37 +445,29 @@ object mod {
       __obj.asInstanceOf[SassException]
     }
     
-    @scala.inline
-    implicit class SassExceptionMutableBuilder[Self <: SassException] (val x: Self) extends AnyVal {
+    extension [Self <: SassException](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+      inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
   trait _ImporterReturnType extends StObject
   object _ImporterReturnType {
     
-    @scala.inline
-    def Contents(contents: String): typings.sass.anon.Contents = {
+    inline def Contents(contents: String): typings.sass.anon.Contents = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.sass.anon.Contents]
     }
     
-    @scala.inline
-    def File(file: String): typings.sass.anon.File = {
+    inline def File(file: String): typings.sass.anon.File = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.sass.anon.File]
     }

@@ -16,18 +16,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeOpenURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeOpenURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def openInStore(options: AppLinkOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInStore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def openInStore(options: AppLinkOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInStore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
-  @scala.inline
-  def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeOpenURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def maybeOpenURL(url: String, options: AppLinkOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeOpenURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def openInStore(options: AppLinkOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInStore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def openInStore(options: AppLinkOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInStore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait AppLinkOptions extends StObject {
     
@@ -41,26 +37,20 @@ object mod {
   }
   object AppLinkOptions {
     
-    @scala.inline
-    def apply(appName: String, appStoreId: Double, appStoreLocale: String, playStoreId: String): AppLinkOptions = {
+    inline def apply(appName: String, appStoreId: Double, appStoreLocale: String, playStoreId: String): AppLinkOptions = {
       val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], appStoreId = appStoreId.asInstanceOf[js.Any], appStoreLocale = appStoreLocale.asInstanceOf[js.Any], playStoreId = playStoreId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppLinkOptions]
     }
     
-    @scala.inline
-    implicit class AppLinkOptionsMutableBuilder[Self <: AppLinkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppLinkOptions](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppStoreId(value: Double): Self = StObject.set(x, "appStoreId", value.asInstanceOf[js.Any])
+      inline def setAppStoreId(value: Double): Self = StObject.set(x, "appStoreId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppStoreLocale(value: String): Self = StObject.set(x, "appStoreLocale", value.asInstanceOf[js.Any])
+      inline def setAppStoreLocale(value: String): Self = StObject.set(x, "appStoreLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayStoreId(value: String): Self = StObject.set(x, "playStoreId", value.asInstanceOf[js.Any])
+      inline def setPlayStoreId(value: String): Self = StObject.set(x, "playStoreId", value.asInstanceOf[js.Any])
     }
   }
 }

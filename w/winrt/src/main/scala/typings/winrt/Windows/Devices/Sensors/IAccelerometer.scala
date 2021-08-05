@@ -18,8 +18,7 @@ trait IAccelerometer extends StObject {
 }
 object IAccelerometer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => AccelerometerReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,
@@ -30,22 +29,16 @@ object IAccelerometer {
     __obj.asInstanceOf[IAccelerometer]
   }
   
-  @scala.inline
-  implicit class IAccelerometerMutableBuilder[Self <: IAccelerometer] (val x: Self) extends AnyVal {
+  extension [Self <: IAccelerometer](x: Self) {
     
-    @scala.inline
-    def setGetCurrentReading(value: () => AccelerometerReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
+    inline def setGetCurrentReading(value: () => AccelerometerReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
+    inline def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
+    inline def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnshaken(value: js.Any): Self = StObject.set(x, "onshaken", value.asInstanceOf[js.Any])
+    inline def setOnshaken(value: js.Any): Self = StObject.set(x, "onshaken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
+    inline def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
   }
 }

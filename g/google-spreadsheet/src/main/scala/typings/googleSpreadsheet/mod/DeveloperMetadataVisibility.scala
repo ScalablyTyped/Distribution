@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeveloperMetadataVisibility extends StObject
 object DeveloperMetadataVisibility {
   
-  @scala.inline
-  def DOCUMENT: typings.googleSpreadsheet.googleSpreadsheetStrings.DOCUMENT = "DOCUMENT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.DOCUMENT]
+  inline def DOCUMENT: typings.googleSpreadsheet.googleSpreadsheetStrings.DOCUMENT = "DOCUMENT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.DOCUMENT]
   
-  @scala.inline
-  def PROJECT: typings.googleSpreadsheet.googleSpreadsheetStrings.PROJECT = "PROJECT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.PROJECT]
+  inline def PROJECT: typings.googleSpreadsheet.googleSpreadsheetStrings.PROJECT = "PROJECT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.PROJECT]
 }

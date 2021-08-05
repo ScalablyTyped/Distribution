@@ -28,28 +28,21 @@ trait AssociationStatus extends StObject {
 }
 object AssociationStatus {
   
-  @scala.inline
-  def apply(Date: DateTime, Message: StatusMessage, Name: AssociationStatusName): AssociationStatus = {
+  inline def apply(Date: DateTime, Message: StatusMessage, Name: AssociationStatusName): AssociationStatus = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationStatus]
   }
   
-  @scala.inline
-  implicit class AssociationStatusMutableBuilder[Self <: AssociationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationStatus](x: Self) {
     
-    @scala.inline
-    def setAdditionalInfo(value: StatusAdditionalInfo): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
+    inline def setAdditionalInfo(value: StatusAdditionalInfo): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalInfoUndefined: Self = StObject.set(x, "AdditionalInfo", js.undefined)
+    inline def setAdditionalInfoUndefined: Self = StObject.set(x, "AdditionalInfo", js.undefined)
     
-    @scala.inline
-    def setDate(value: DateTime): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: DateTime): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: StatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: StatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AssociationStatusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AssociationStatusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

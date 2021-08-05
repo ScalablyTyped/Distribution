@@ -60,8 +60,6 @@ object DOMRect {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromRect(): typings.std.DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")().asInstanceOf[typings.std.DOMRect]
-  @scala.inline
-  def fromRect(other: DOMRectInit): typings.std.DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMRect]
+  inline def fromRect(): typings.std.DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")().asInstanceOf[typings.std.DOMRect]
+  inline def fromRect(other: DOMRectInit): typings.std.DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMRect]
 }

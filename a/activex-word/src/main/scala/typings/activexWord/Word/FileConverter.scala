@@ -30,13 +30,12 @@ trait FileConverter extends StObject {
   
   val SaveFormat: Double
   
-  @JSName("Word.FileConverter_typekey")
+  /* private */ @JSName("Word.FileConverter_typekey")
   var WordDotFileConverter_typekey: FileConverter
 }
 object FileConverter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     CanOpen: Boolean,
     CanSave: Boolean,
@@ -56,46 +55,32 @@ object FileConverter {
     __obj.asInstanceOf[FileConverter]
   }
   
-  @scala.inline
-  implicit class FileConverterMutableBuilder[Self <: FileConverter] (val x: Self) extends AnyVal {
+  extension [Self <: FileConverter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanOpen(value: Boolean): Self = StObject.set(x, "CanOpen", value.asInstanceOf[js.Any])
+    inline def setCanOpen(value: Boolean): Self = StObject.set(x, "CanOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSave(value: Boolean): Self = StObject.set(x, "CanSave", value.asInstanceOf[js.Any])
+    inline def setCanSave(value: Boolean): Self = StObject.set(x, "CanSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensions(value: String): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: String): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatName(value: String): Self = StObject.set(x, "FormatName", value.asInstanceOf[js.Any])
+    inline def setFormatName(value: String): Self = StObject.set(x, "FormatName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenFormat(value: Double): Self = StObject.set(x, "OpenFormat", value.asInstanceOf[js.Any])
+    inline def setOpenFormat(value: Double): Self = StObject.set(x, "OpenFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveFormat(value: Double): Self = StObject.set(x, "SaveFormat", value.asInstanceOf[js.Any])
+    inline def setSaveFormat(value: Double): Self = StObject.set(x, "SaveFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotFileConverter_typekey(value: FileConverter): Self = StObject.set(x, "Word.FileConverter_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotFileConverter_typekey(value: FileConverter): Self = StObject.set(x, "Word.FileConverter_typekey", value.asInstanceOf[js.Any])
   }
 }

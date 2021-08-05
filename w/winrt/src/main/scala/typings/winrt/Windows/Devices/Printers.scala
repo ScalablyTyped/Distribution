@@ -15,17 +15,14 @@ object Printers {
     }
     object IPrintExtensionContextStatic {
       
-      @scala.inline
-      def apply(fromDeviceId: String => js.Any): IPrintExtensionContextStatic = {
+      inline def apply(fromDeviceId: String => js.Any): IPrintExtensionContextStatic = {
         val __obj = js.Dynamic.literal(fromDeviceId = js.Any.fromFunction1(fromDeviceId))
         __obj.asInstanceOf[IPrintExtensionContextStatic]
       }
       
-      @scala.inline
-      implicit class IPrintExtensionContextStaticMutableBuilder[Self <: IPrintExtensionContextStatic] (val x: Self) extends AnyVal {
+      extension [Self <: IPrintExtensionContextStatic](x: Self) {
         
-        @scala.inline
-        def setFromDeviceId(value: String => js.Any): Self = StObject.set(x, "fromDeviceId", js.Any.fromFunction1(value))
+        inline def setFromDeviceId(value: String => js.Any): Self = StObject.set(x, "fromDeviceId", js.Any.fromFunction1(value))
       }
     }
     
@@ -37,20 +34,16 @@ object Printers {
     }
     object IPrintNotificationEventDetails {
       
-      @scala.inline
-      def apply(eventData: String, printerName: String): IPrintNotificationEventDetails = {
+      inline def apply(eventData: String, printerName: String): IPrintNotificationEventDetails = {
         val __obj = js.Dynamic.literal(eventData = eventData.asInstanceOf[js.Any], printerName = printerName.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPrintNotificationEventDetails]
       }
       
-      @scala.inline
-      implicit class IPrintNotificationEventDetailsMutableBuilder[Self <: IPrintNotificationEventDetails] (val x: Self) extends AnyVal {
+      extension [Self <: IPrintNotificationEventDetails](x: Self) {
         
-        @scala.inline
-        def setEventData(value: String): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+        inline def setEventData(value: String): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrinterName(value: String): Self = StObject.set(x, "printerName", value.asInstanceOf[js.Any])
+        inline def setPrinterName(value: String): Self = StObject.set(x, "printerName", value.asInstanceOf[js.Any])
       }
     }
     
@@ -62,20 +55,16 @@ object Printers {
     }
     object IPrintTaskConfiguration {
       
-      @scala.inline
-      def apply(onsaverequested: js.Any, printerExtensionContext: js.Any): IPrintTaskConfiguration = {
+      inline def apply(onsaverequested: js.Any, printerExtensionContext: js.Any): IPrintTaskConfiguration = {
         val __obj = js.Dynamic.literal(onsaverequested = onsaverequested.asInstanceOf[js.Any], printerExtensionContext = printerExtensionContext.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPrintTaskConfiguration]
       }
       
-      @scala.inline
-      implicit class IPrintTaskConfigurationMutableBuilder[Self <: IPrintTaskConfiguration] (val x: Self) extends AnyVal {
+      extension [Self <: IPrintTaskConfiguration](x: Self) {
         
-        @scala.inline
-        def setOnsaverequested(value: js.Any): Self = StObject.set(x, "onsaverequested", value.asInstanceOf[js.Any])
+        inline def setOnsaverequested(value: js.Any): Self = StObject.set(x, "onsaverequested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrinterExtensionContext(value: js.Any): Self = StObject.set(x, "printerExtensionContext", value.asInstanceOf[js.Any])
+        inline def setPrinterExtensionContext(value: js.Any): Self = StObject.set(x, "printerExtensionContext", value.asInstanceOf[js.Any])
       }
     }
     
@@ -91,8 +80,7 @@ object Printers {
     }
     object IPrintTaskConfigurationSaveRequest {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         cancel: () => Unit,
         deadline: Date,
         getDeferral: () => PrintTaskConfigurationSaveRequestedDeferral,
@@ -102,20 +90,15 @@ object Printers {
         __obj.asInstanceOf[IPrintTaskConfigurationSaveRequest]
       }
       
-      @scala.inline
-      implicit class IPrintTaskConfigurationSaveRequestMutableBuilder[Self <: IPrintTaskConfigurationSaveRequest] (val x: Self) extends AnyVal {
+      extension [Self <: IPrintTaskConfigurationSaveRequest](x: Self) {
         
-        @scala.inline
-        def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+        inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+        inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetDeferral(value: () => PrintTaskConfigurationSaveRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+        inline def setGetDeferral(value: () => PrintTaskConfigurationSaveRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSave(value: js.Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+        inline def setSave(value: js.Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       }
     }
     
@@ -125,17 +108,14 @@ object Printers {
     }
     object IPrintTaskConfigurationSaveRequestedDeferral {
       
-      @scala.inline
-      def apply(complete: () => Unit): IPrintTaskConfigurationSaveRequestedDeferral = {
+      inline def apply(complete: () => Unit): IPrintTaskConfigurationSaveRequestedDeferral = {
         val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
         __obj.asInstanceOf[IPrintTaskConfigurationSaveRequestedDeferral]
       }
       
-      @scala.inline
-      implicit class IPrintTaskConfigurationSaveRequestedDeferralMutableBuilder[Self <: IPrintTaskConfigurationSaveRequestedDeferral] (val x: Self) extends AnyVal {
+      extension [Self <: IPrintTaskConfigurationSaveRequestedDeferral](x: Self) {
         
-        @scala.inline
-        def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+        inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       }
     }
     
@@ -145,17 +125,14 @@ object Printers {
     }
     object IPrintTaskConfigurationSaveRequestedEventArgs {
       
-      @scala.inline
-      def apply(request: PrintTaskConfigurationSaveRequest): IPrintTaskConfigurationSaveRequestedEventArgs = {
+      inline def apply(request: PrintTaskConfigurationSaveRequest): IPrintTaskConfigurationSaveRequestedEventArgs = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPrintTaskConfigurationSaveRequestedEventArgs]
       }
       
-      @scala.inline
-      implicit class IPrintTaskConfigurationSaveRequestedEventArgsMutableBuilder[Self <: IPrintTaskConfigurationSaveRequestedEventArgs] (val x: Self) extends AnyVal {
+      extension [Self <: IPrintTaskConfigurationSaveRequestedEventArgs](x: Self) {
         
-        @scala.inline
-        def setRequest(value: PrintTaskConfigurationSaveRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: PrintTaskConfigurationSaveRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       }
     }
     
@@ -166,8 +143,7 @@ object Printers {
          with IPrintNotificationEventDetails
     object PrintNotificationEventDetails {
       
-      @scala.inline
-      def apply(eventData: String, printerName: String): PrintNotificationEventDetails = {
+      inline def apply(eventData: String, printerName: String): PrintNotificationEventDetails = {
         val __obj = js.Dynamic.literal(eventData = eventData.asInstanceOf[js.Any], printerName = printerName.asInstanceOf[js.Any])
         __obj.asInstanceOf[PrintNotificationEventDetails]
       }
@@ -178,8 +154,7 @@ object Printers {
          with IPrintTaskConfiguration
     object PrintTaskConfiguration {
       
-      @scala.inline
-      def apply(onsaverequested: js.Any, printerExtensionContext: js.Any): PrintTaskConfiguration = {
+      inline def apply(onsaverequested: js.Any, printerExtensionContext: js.Any): PrintTaskConfiguration = {
         val __obj = js.Dynamic.literal(onsaverequested = onsaverequested.asInstanceOf[js.Any], printerExtensionContext = printerExtensionContext.asInstanceOf[js.Any])
         __obj.asInstanceOf[PrintTaskConfiguration]
       }
@@ -190,8 +165,7 @@ object Printers {
          with IPrintTaskConfigurationSaveRequest
     object PrintTaskConfigurationSaveRequest {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         cancel: () => Unit,
         deadline: Date,
         getDeferral: () => PrintTaskConfigurationSaveRequestedDeferral,
@@ -207,8 +181,7 @@ object Printers {
          with IPrintTaskConfigurationSaveRequestedDeferral
     object PrintTaskConfigurationSaveRequestedDeferral {
       
-      @scala.inline
-      def apply(complete: () => Unit): PrintTaskConfigurationSaveRequestedDeferral = {
+      inline def apply(complete: () => Unit): PrintTaskConfigurationSaveRequestedDeferral = {
         val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
         __obj.asInstanceOf[PrintTaskConfigurationSaveRequestedDeferral]
       }
@@ -219,8 +192,7 @@ object Printers {
          with IPrintTaskConfigurationSaveRequestedEventArgs
     object PrintTaskConfigurationSaveRequestedEventArgs {
       
-      @scala.inline
-      def apply(request: PrintTaskConfigurationSaveRequest): PrintTaskConfigurationSaveRequestedEventArgs = {
+      inline def apply(request: PrintTaskConfigurationSaveRequest): PrintTaskConfigurationSaveRequestedEventArgs = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
         __obj.asInstanceOf[PrintTaskConfigurationSaveRequestedEventArgs]
       }

@@ -10,19 +10,15 @@ trait InsertExtraNode extends StObject {
 }
 object InsertExtraNode {
   
-  @scala.inline
-  def apply(): InsertExtraNode = {
+  inline def apply(): InsertExtraNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertExtraNode]
   }
   
-  @scala.inline
-  implicit class InsertExtraNodeMutableBuilder[Self <: InsertExtraNode] (val x: Self) extends AnyVal {
+  extension [Self <: InsertExtraNode](x: Self) {
     
-    @scala.inline
-    def setInsertExtraNode(value: Boolean): Self = StObject.set(x, "insertExtraNode", value.asInstanceOf[js.Any])
+    inline def setInsertExtraNode(value: Boolean): Self = StObject.set(x, "insertExtraNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertExtraNodeUndefined: Self = StObject.set(x, "insertExtraNode", js.undefined)
+    inline def setInsertExtraNodeUndefined: Self = StObject.set(x, "insertExtraNode", js.undefined)
   }
 }

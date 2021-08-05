@@ -23,19 +23,19 @@ object bufferWriterMod {
     def addString(): Writer = js.native
     def addString(string: String): Writer = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var ensure: js.Any = js.native
+    /* private */ var ensure: js.Any = js.native
     
     def flush(): Buffer = js.native
     def flush(code: Double): Buffer = js.native
     
-    var headerPosition: js.Any = js.native
+    /* private */ var headerPosition: js.Any = js.native
     
-    var join: js.Any = js.native
+    /* private */ var join: js.Any = js.native
     
-    var offset: js.Any = js.native
+    /* private */ var offset: js.Any = js.native
     
-    var size: js.Any = js.native
+    /* private */ var size: js.Any = js.native
   }
 }

@@ -14,28 +14,21 @@ trait PostureDetail extends StObject {
 }
 object PostureDetail {
   
-  @scala.inline
-  def apply(): PostureDetail = {
+  inline def apply(): PostureDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostureDetail]
   }
   
-  @scala.inline
-  implicit class PostureDetailMutableBuilder[Self <: PostureDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PostureDetail](x: Self) {
     
-    @scala.inline
-    def setAdvice(value: js.Array[UserFacingMessage]): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
+    inline def setAdvice(value: js.Array[UserFacingMessage]): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdviceUndefined: Self = StObject.set(x, "advice", js.undefined)
+    inline def setAdviceUndefined: Self = StObject.set(x, "advice", js.undefined)
     
-    @scala.inline
-    def setAdviceVarargs(value: UserFacingMessage*): Self = StObject.set(x, "advice", js.Array(value :_*))
+    inline def setAdviceVarargs(value: UserFacingMessage*): Self = StObject.set(x, "advice", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurityRisk(value: String): Self = StObject.set(x, "securityRisk", value.asInstanceOf[js.Any])
+    inline def setSecurityRisk(value: String): Self = StObject.set(x, "securityRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityRiskUndefined: Self = StObject.set(x, "securityRisk", js.undefined)
+    inline def setSecurityRiskUndefined: Self = StObject.set(x, "securityRisk", js.undefined)
   }
 }

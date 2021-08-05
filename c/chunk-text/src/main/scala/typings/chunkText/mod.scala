@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(text: String, chunkSize: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(text: String, chunkSize: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("chunk-text", JSImport.Namespace)
   @js.native

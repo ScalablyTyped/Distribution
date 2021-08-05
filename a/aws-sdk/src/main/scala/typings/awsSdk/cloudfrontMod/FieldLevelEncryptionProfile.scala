@@ -23,8 +23,7 @@ trait FieldLevelEncryptionProfile extends StObject {
 }
 object FieldLevelEncryptionProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfig,
     Id: String,
     LastModifiedTime: timestamp
@@ -33,16 +32,12 @@ object FieldLevelEncryptionProfile {
     __obj.asInstanceOf[FieldLevelEncryptionProfile]
   }
   
-  @scala.inline
-  implicit class FieldLevelEncryptionProfileMutableBuilder[Self <: FieldLevelEncryptionProfile] (val x: Self) extends AnyVal {
+  extension [Self <: FieldLevelEncryptionProfile](x: Self) {
     
-    @scala.inline
-    def setFieldLevelEncryptionProfileConfig(value: FieldLevelEncryptionProfileConfig): Self = StObject.set(x, "FieldLevelEncryptionProfileConfig", value.asInstanceOf[js.Any])
+    inline def setFieldLevelEncryptionProfileConfig(value: FieldLevelEncryptionProfileConfig): Self = StObject.set(x, "FieldLevelEncryptionProfileConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

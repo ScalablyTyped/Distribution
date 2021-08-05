@@ -17,24 +17,19 @@ object EmailAuthProvider {
   @JSImport("@firebase/auth-types", "EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD")
   @js.native
   def EMAIL_LINK_SIGN_IN_METHOD: String = js.native
-  @scala.inline
-  def EMAIL_LINK_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_LINK_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+  inline def EMAIL_LINK_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_LINK_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
   
   @JSImport("@firebase/auth-types", "EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD")
   @js.native
   def EMAIL_PASSWORD_SIGN_IN_METHOD: String = js.native
-  @scala.inline
-  def EMAIL_PASSWORD_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_PASSWORD_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+  inline def EMAIL_PASSWORD_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_PASSWORD_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
   
   @JSImport("@firebase/auth-types", "EmailAuthProvider.PROVIDER_ID")
   @js.native
   def PROVIDER_ID: String = js.native
-  @scala.inline
-  def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+  inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def credential(email: String, password: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
+  inline def credential(email: String, password: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
   
-  @scala.inline
-  def credentialWithLink(email: String, emailLink: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
+  inline def credentialWithLink(email: String, emailLink: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
 }

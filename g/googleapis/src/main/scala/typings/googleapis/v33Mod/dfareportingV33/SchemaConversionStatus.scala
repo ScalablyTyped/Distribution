@@ -28,34 +28,25 @@ trait SchemaConversionStatus extends StObject {
 }
 object SchemaConversionStatus {
   
-  @scala.inline
-  def apply(): SchemaConversionStatus = {
+  inline def apply(): SchemaConversionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConversionStatus]
   }
   
-  @scala.inline
-  implicit class SchemaConversionStatusMutableBuilder[Self <: SchemaConversionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConversionStatus](x: Self) {
     
-    @scala.inline
-    def setConversion(value: SchemaConversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
+    inline def setConversion(value: SchemaConversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
+    inline def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[SchemaConversionError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[SchemaConversionError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: SchemaConversionError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaConversionError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

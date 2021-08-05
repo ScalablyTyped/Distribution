@@ -14,25 +14,19 @@ trait IconModule extends StObject {
 }
 object IconModule {
   
-  @scala.inline
-  def apply(icon: String, module: String): IconModule = {
+  inline def apply(icon: String, module: String): IconModule = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconModule]
   }
   
-  @scala.inline
-  implicit class IconModuleMutableBuilder[Self <: IconModule] (val x: Self) extends AnyVal {
+  extension [Self <: IconModule](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

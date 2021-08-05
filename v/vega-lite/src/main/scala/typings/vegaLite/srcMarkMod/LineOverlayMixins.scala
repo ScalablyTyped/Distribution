@@ -21,19 +21,15 @@ trait LineOverlayMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
 }
 object LineOverlayMixins {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): LineOverlayMixins[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): LineOverlayMixins[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineOverlayMixins[ES]]
   }
   
-  @scala.inline
-  implicit class LineOverlayMixinsMutableBuilder[Self <: LineOverlayMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & LineOverlayMixins[ES]) extends AnyVal {
+  extension [Self <: LineOverlayMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & LineOverlayMixins[ES]) {
     
-    @scala.inline
-    def setLine(value: Boolean | OverlayMarkDef[ES]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Boolean | OverlayMarkDef[ES]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

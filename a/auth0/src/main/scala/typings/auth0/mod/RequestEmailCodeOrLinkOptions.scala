@@ -12,19 +12,15 @@ trait RequestEmailCodeOrLinkOptions extends StObject {
 }
 object RequestEmailCodeOrLinkOptions {
   
-  @scala.inline
-  def apply(email: String, send: SendType): RequestEmailCodeOrLinkOptions = {
+  inline def apply(email: String, send: SendType): RequestEmailCodeOrLinkOptions = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], send = send.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestEmailCodeOrLinkOptions]
   }
   
-  @scala.inline
-  implicit class RequestEmailCodeOrLinkOptionsMutableBuilder[Self <: RequestEmailCodeOrLinkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestEmailCodeOrLinkOptions](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSend(value: SendType): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: SendType): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
   }
 }

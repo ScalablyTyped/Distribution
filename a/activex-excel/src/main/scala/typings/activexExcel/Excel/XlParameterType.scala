@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlParameterType extends StObject
 object XlParameterType {
   
-  @scala.inline
-  def xlConstant: `1` = 1.asInstanceOf[`1`]
+  inline def xlConstant: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlPrompt: `0` = 0.asInstanceOf[`0`]
+  inline def xlPrompt: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlRange: `2` = 2.asInstanceOf[`2`]
+  inline def xlRange: `2` = 2.asInstanceOf[`2`]
 }

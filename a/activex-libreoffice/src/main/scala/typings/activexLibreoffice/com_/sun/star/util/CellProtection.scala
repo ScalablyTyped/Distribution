@@ -21,25 +21,19 @@ trait CellProtection extends StObject {
 }
 object CellProtection {
   
-  @scala.inline
-  def apply(IsFormulaHidden: Boolean, IsHidden: Boolean, IsLocked: Boolean, IsPrintHidden: Boolean): CellProtection = {
+  inline def apply(IsFormulaHidden: Boolean, IsHidden: Boolean, IsLocked: Boolean, IsPrintHidden: Boolean): CellProtection = {
     val __obj = js.Dynamic.literal(IsFormulaHidden = IsFormulaHidden.asInstanceOf[js.Any], IsHidden = IsHidden.asInstanceOf[js.Any], IsLocked = IsLocked.asInstanceOf[js.Any], IsPrintHidden = IsPrintHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProtection]
   }
   
-  @scala.inline
-  implicit class CellProtectionMutableBuilder[Self <: CellProtection] (val x: Self) extends AnyVal {
+  extension [Self <: CellProtection](x: Self) {
     
-    @scala.inline
-    def setIsFormulaHidden(value: Boolean): Self = StObject.set(x, "IsFormulaHidden", value.asInstanceOf[js.Any])
+    inline def setIsFormulaHidden(value: Boolean): Self = StObject.set(x, "IsFormulaHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
+    inline def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "IsLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "IsLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintHidden(value: Boolean): Self = StObject.set(x, "IsPrintHidden", value.asInstanceOf[js.Any])
+    inline def setIsPrintHidden(value: Boolean): Self = StObject.set(x, "IsPrintHidden", value.asInstanceOf[js.Any])
   }
 }

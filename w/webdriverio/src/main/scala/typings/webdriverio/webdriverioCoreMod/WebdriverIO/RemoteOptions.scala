@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with HookFunctions
 object RemoteOptions {
   
-  @scala.inline
-  def apply(): RemoteOptions = {
+  inline def apply(): RemoteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoteOptions]
   }

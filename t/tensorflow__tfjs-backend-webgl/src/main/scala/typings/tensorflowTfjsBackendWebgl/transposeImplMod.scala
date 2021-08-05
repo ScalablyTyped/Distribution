@@ -12,6 +12,5 @@ object transposeImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transposeImpl(x: TensorInfo, perm: js.Array[Double], backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("transposeImpl")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
+  inline def transposeImpl(x: TensorInfo, perm: js.Array[Double], backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("transposeImpl")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
 }

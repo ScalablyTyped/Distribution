@@ -34,8 +34,7 @@ trait Locked extends StObject {
 }
 object Locked {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     builtIn: scala.Double,
     disabled: scala.Double,
     locked: scala.Double,
@@ -54,46 +53,32 @@ object Locked {
     __obj.asInstanceOf[Locked]
   }
   
-  @scala.inline
-  implicit class LockedMutableBuilder[Self <: Locked] (val x: Self) extends AnyVal {
+  extension [Self <: Locked](x: Self) {
     
-    @scala.inline
-    def setBuiltIn(value: scala.Double): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
+    inline def setBuiltIn(value: scala.Double): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: scala.Double): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: scala.Double): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiVersion(value: scala.Double): Self = StObject.set(x, "multiVersion", value.asInstanceOf[js.Any])
+    inline def setMultiVersion(value: scala.Double): Self = StObject.set(x, "multiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaid(value: scala.Double): Self = StObject.set(x, "paid", value.asInstanceOf[js.Any])
+    inline def setPaid(value: scala.Double): Self = StObject.set(x, "paid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: scala.Double): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: scala.Double): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic(value: scala.Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: scala.Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem(value: scala.Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: scala.Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrial(value: scala.Double): Self = StObject.set(x, "trial", value.asInstanceOf[js.Any])
+    inline def setTrial(value: scala.Double): Self = StObject.set(x, "trial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrusted(value: scala.Double): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+    inline def setTrusted(value: scala.Double): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnpublished(value: scala.Double): Self = StObject.set(x, "unpublished", value.asInstanceOf[js.Any])
+    inline def setUnpublished(value: scala.Double): Self = StObject.set(x, "unpublished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidated(value: scala.Double): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
+    inline def setValidated(value: scala.Double): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
   }
 }

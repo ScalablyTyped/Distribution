@@ -14,19 +14,15 @@ trait EmulateOptions extends StObject {
 }
 object EmulateOptions {
   
-  @scala.inline
-  def apply(userAgent: String, viewport: Viewport): EmulateOptions = {
+  inline def apply(userAgent: String, viewport: Viewport): EmulateOptions = {
     val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmulateOptions]
   }
   
-  @scala.inline
-  implicit class EmulateOptionsMutableBuilder[Self <: EmulateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmulateOptions](x: Self) {
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

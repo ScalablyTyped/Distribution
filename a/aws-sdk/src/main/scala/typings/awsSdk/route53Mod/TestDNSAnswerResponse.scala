@@ -38,8 +38,7 @@ trait TestDNSAnswerResponse extends StObject {
 }
 object TestDNSAnswerResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Nameserver: Nameserver,
     Protocol: TransportProtocol,
     RecordData: RecordData,
@@ -51,28 +50,20 @@ object TestDNSAnswerResponse {
     __obj.asInstanceOf[TestDNSAnswerResponse]
   }
   
-  @scala.inline
-  implicit class TestDNSAnswerResponseMutableBuilder[Self <: TestDNSAnswerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestDNSAnswerResponse](x: Self) {
     
-    @scala.inline
-    def setNameserver(value: Nameserver): Self = StObject.set(x, "Nameserver", value.asInstanceOf[js.Any])
+    inline def setNameserver(value: Nameserver): Self = StObject.set(x, "Nameserver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: TransportProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: TransportProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordData(value: RecordData): Self = StObject.set(x, "RecordData", value.asInstanceOf[js.Any])
+    inline def setRecordData(value: RecordData): Self = StObject.set(x, "RecordData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordDataVarargs(value: RecordDataEntry*): Self = StObject.set(x, "RecordData", js.Array(value :_*))
+    inline def setRecordDataVarargs(value: RecordDataEntry*): Self = StObject.set(x, "RecordData", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordName(value: DNSName): Self = StObject.set(x, "RecordName", value.asInstanceOf[js.Any])
+    inline def setRecordName(value: DNSName): Self = StObject.set(x, "RecordName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordType(value: RRType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
+    inline def setRecordType(value: RRType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: DNSRCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: DNSRCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
   }
 }

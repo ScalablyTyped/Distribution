@@ -11,8 +11,7 @@ object scrollDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getScrollData(componentEl: HTMLElement, contentEl: HTMLElement, keyboardHeight: Double): ScrollData = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollData")(componentEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[ScrollData]
+  inline def getScrollData(componentEl: HTMLElement, contentEl: HTMLElement, keyboardHeight: Double): ScrollData = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollData")(componentEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[ScrollData]
   
   trait ScrollData extends StObject {
     
@@ -26,26 +25,20 @@ object scrollDataMod {
   }
   object ScrollData {
     
-    @scala.inline
-    def apply(inputSafeY: Double, scrollAmount: Double, scrollDuration: Double, scrollPadding: Double): ScrollData = {
+    inline def apply(inputSafeY: Double, scrollAmount: Double, scrollDuration: Double, scrollPadding: Double): ScrollData = {
       val __obj = js.Dynamic.literal(inputSafeY = inputSafeY.asInstanceOf[js.Any], scrollAmount = scrollAmount.asInstanceOf[js.Any], scrollDuration = scrollDuration.asInstanceOf[js.Any], scrollPadding = scrollPadding.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollData]
     }
     
-    @scala.inline
-    implicit class ScrollDataMutableBuilder[Self <: ScrollData] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollData](x: Self) {
       
-      @scala.inline
-      def setInputSafeY(value: Double): Self = StObject.set(x, "inputSafeY", value.asInstanceOf[js.Any])
+      inline def setInputSafeY(value: Double): Self = StObject.set(x, "inputSafeY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollAmount(value: Double): Self = StObject.set(x, "scrollAmount", value.asInstanceOf[js.Any])
+      inline def setScrollAmount(value: Double): Self = StObject.set(x, "scrollAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+      inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPadding(value: Double): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
+      inline def setScrollPadding(value: Double): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
     }
   }
 }

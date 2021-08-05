@@ -22,8 +22,7 @@ trait ChangeFloatingObjectTextWrappingCommand extends StObject {
 }
 object ChangeFloatingObjectTextWrappingCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: FloatingObjectTextWrappingSettings => Boolean,
     getState: () => CommandState[FloatingObjectTextWrappingSettings]
   ): ChangeFloatingObjectTextWrappingCommand = {
@@ -31,13 +30,10 @@ object ChangeFloatingObjectTextWrappingCommand {
     __obj.asInstanceOf[ChangeFloatingObjectTextWrappingCommand]
   }
   
-  @scala.inline
-  implicit class ChangeFloatingObjectTextWrappingCommandMutableBuilder[Self <: ChangeFloatingObjectTextWrappingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeFloatingObjectTextWrappingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: FloatingObjectTextWrappingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: FloatingObjectTextWrappingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[FloatingObjectTextWrappingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[FloatingObjectTextWrappingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

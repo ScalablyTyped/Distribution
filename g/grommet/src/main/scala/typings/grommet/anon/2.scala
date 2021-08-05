@@ -20,49 +20,35 @@ trait `2` extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply(): `2` = {
+  inline def apply(): `2` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def set1(value: Font): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: Font): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1Undefined: Self = StObject.set(x, "1", js.undefined)
+    inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
     
-    @scala.inline
-    def set2(value: Font): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: Font): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2Undefined: Self = StObject.set(x, "2", js.undefined)
+    inline def set2Undefined: Self = StObject.set(x, "2", js.undefined)
     
-    @scala.inline
-    def set3(value: Font): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: Font): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3Undefined: Self = StObject.set(x, "3", js.undefined)
+    inline def set3Undefined: Self = StObject.set(x, "3", js.undefined)
     
-    @scala.inline
-    def set4(value: Font): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+    inline def set4(value: Font): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set4Undefined: Self = StObject.set(x, "4", js.undefined)
+    inline def set4Undefined: Self = StObject.set(x, "4", js.undefined)
     
-    @scala.inline
-    def set5(value: Font): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+    inline def set5(value: Font): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set5Undefined: Self = StObject.set(x, "5", js.undefined)
+    inline def set5Undefined: Self = StObject.set(x, "5", js.undefined)
     
-    @scala.inline
-    def set6(value: Font): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+    inline def set6(value: Font): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set6Undefined: Self = StObject.set(x, "6", js.undefined)
+    inline def set6Undefined: Self = StObject.set(x, "6", js.undefined)
   }
 }

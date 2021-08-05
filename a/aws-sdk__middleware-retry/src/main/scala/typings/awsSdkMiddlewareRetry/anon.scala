@@ -15,20 +15,16 @@ object anon {
   }
   object Output {
     
-    @scala.inline
-    def apply[Ouput /* <: MetadataBearer */](output: Ouput, response: js.Any): Output[Ouput] = {
+    inline def apply[Ouput /* <: MetadataBearer */](output: Ouput, response: js.Any): Output[Ouput] = {
       val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output[Ouput]]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output[?], Ouput /* <: MetadataBearer */] (val x: Self & Output[Ouput]) extends AnyVal {
+    extension [Self <: Output[?], Ouput /* <: MetadataBearer */](x: Self & Output[Ouput]) {
       
-      @scala.inline
-      def setOutput(value: Ouput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Ouput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

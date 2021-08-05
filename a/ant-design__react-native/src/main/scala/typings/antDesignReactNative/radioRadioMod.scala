@@ -27,8 +27,7 @@ object radioRadioMod {
     @JSImport("@ant-design/react-native/lib/radio/Radio", "default.RadioItem")
     @js.native
     def RadioItem: js.Any = js.native
-    @scala.inline
-    def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+    inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -50,23 +49,18 @@ object radioRadioMod {
   }
   object RadioNativeProps {
     
-    @scala.inline
-    def apply(): RadioNativeProps = {
+    inline def apply(): RadioNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioNativeProps]
     }
     
-    @scala.inline
-    implicit class RadioNativePropsMutableBuilder[Self <: RadioNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

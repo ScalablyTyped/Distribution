@@ -65,86 +65,60 @@ object mod {
   }
   object ScrollbarProps {
     
-    @scala.inline
-    def apply(): ScrollbarProps = {
+    inline def apply(): ScrollbarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollbarProps]
     }
     
-    @scala.inline
-    implicit class ScrollbarPropsMutableBuilder[Self <: ScrollbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarProps](x: Self) {
       
-      @scala.inline
-      def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
+      inline def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysShowTracksUndefined: Self = StObject.set(x, "alwaysShowTracks", js.undefined)
+      inline def setAlwaysShowTracksUndefined: Self = StObject.set(x, "alwaysShowTracks", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContinuousScrolling(value: Boolean): Self = StObject.set(x, "continuousScrolling", value.asInstanceOf[js.Any])
+      inline def setContinuousScrolling(value: Boolean): Self = StObject.set(x, "continuousScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousScrollingUndefined: Self = StObject.set(x, "continuousScrolling", js.undefined)
+      inline def setContinuousScrollingUndefined: Self = StObject.set(x, "continuousScrolling", js.undefined)
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+      inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
       
-      @scala.inline
-      def setDelegateTo(value: EventTarget): Self = StObject.set(x, "delegateTo", value.asInstanceOf[js.Any])
+      inline def setDelegateTo(value: EventTarget): Self = StObject.set(x, "delegateTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateToNull: Self = StObject.set(x, "delegateTo", null)
+      inline def setDelegateToNull: Self = StObject.set(x, "delegateTo", null)
       
-      @scala.inline
-      def setDelegateToUndefined: Self = StObject.set(x, "delegateTo", js.undefined)
+      inline def setDelegateToUndefined: Self = StObject.set(x, "delegateTo", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: (/* status */ ScrollStatus, /* scrollbarInstance */ default) => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction2(value))
+      inline def setOnScroll(value: (/* status */ ScrollStatus, /* scrollbarInstance */ default) => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setRenderByPixels(value: Boolean): Self = StObject.set(x, "renderByPixels", value.asInstanceOf[js.Any])
+      inline def setRenderByPixels(value: Boolean): Self = StObject.set(x, "renderByPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderByPixelsUndefined: Self = StObject.set(x, "renderByPixels", js.undefined)
+      inline def setRenderByPixelsUndefined: Self = StObject.set(x, "renderByPixels", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setThumbMinSize(value: Double): Self = StObject.set(x, "thumbMinSize", value.asInstanceOf[js.Any])
+      inline def setThumbMinSize(value: Double): Self = StObject.set(x, "thumbMinSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbMinSizeUndefined: Self = StObject.set(x, "thumbMinSize", js.undefined)
+      inline def setThumbMinSizeUndefined: Self = StObject.set(x, "thumbMinSize", js.undefined)
       
-      @scala.inline
-      def setWheelEventTarget(value: EventTarget): Self = StObject.set(x, "wheelEventTarget", value.asInstanceOf[js.Any])
+      inline def setWheelEventTarget(value: EventTarget): Self = StObject.set(x, "wheelEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelEventTargetNull: Self = StObject.set(x, "wheelEventTarget", null)
+      inline def setWheelEventTargetNull: Self = StObject.set(x, "wheelEventTarget", null)
       
-      @scala.inline
-      def setWheelEventTargetUndefined: Self = StObject.set(x, "wheelEventTarget", js.undefined)
+      inline def setWheelEventTargetUndefined: Self = StObject.set(x, "wheelEventTarget", js.undefined)
     }
   }
 }

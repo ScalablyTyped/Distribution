@@ -88,29 +88,22 @@ object Sections extends Shortcut {
   }
   object SectionsParams {
     
-    @scala.inline
-    def apply(task: Double | String): SectionsParams = {
+    inline def apply(task: Double | String): SectionsParams = {
       val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any])
       __obj.asInstanceOf[SectionsParams]
     }
     
-    @scala.inline
-    implicit class SectionsParamsMutableBuilder[Self <: SectionsParams] (val x: Self) extends AnyVal {
+    extension [Self <: SectionsParams](x: Self) {
       
-      @scala.inline
-      def setInsert_after(value: String): Self = StObject.set(x, "insert_after", value.asInstanceOf[js.Any])
+      inline def setInsert_after(value: String): Self = StObject.set(x, "insert_after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsert_afterUndefined: Self = StObject.set(x, "insert_after", js.undefined)
+      inline def setInsert_afterUndefined: Self = StObject.set(x, "insert_after", js.undefined)
       
-      @scala.inline
-      def setInsert_before(value: String): Self = StObject.set(x, "insert_before", value.asInstanceOf[js.Any])
+      inline def setInsert_before(value: String): Self = StObject.set(x, "insert_before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsert_beforeUndefined: Self = StObject.set(x, "insert_before", js.undefined)
+      inline def setInsert_beforeUndefined: Self = StObject.set(x, "insert_before", js.undefined)
       
-      @scala.inline
-      def setTask(value: Double | String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: Double | String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     }
   }
   

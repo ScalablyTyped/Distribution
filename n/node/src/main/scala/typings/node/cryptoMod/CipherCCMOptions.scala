@@ -13,16 +13,13 @@ trait CipherCCMOptions
 }
 object CipherCCMOptions {
   
-  @scala.inline
-  def apply(authTagLength: Double): CipherCCMOptions = {
+  inline def apply(authTagLength: Double): CipherCCMOptions = {
     val __obj = js.Dynamic.literal(authTagLength = authTagLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherCCMOptions]
   }
   
-  @scala.inline
-  implicit class CipherCCMOptionsMutableBuilder[Self <: CipherCCMOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CipherCCMOptions](x: Self) {
     
-    @scala.inline
-    def setAuthTagLength(value: Double): Self = StObject.set(x, "authTagLength", value.asInstanceOf[js.Any])
+    inline def setAuthTagLength(value: Double): Self = StObject.set(x, "authTagLength", value.asInstanceOf[js.Any])
   }
 }

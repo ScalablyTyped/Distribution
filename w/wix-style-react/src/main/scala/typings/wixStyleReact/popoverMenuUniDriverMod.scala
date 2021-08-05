@@ -26,8 +26,7 @@ object popoverMenuUniDriverMod {
   }
   object PopoverMenuUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childrenCount: () => js.Promise[Double],
       click: () => js.Promise[Unit],
       clickAtChild: Double => js.Promise[Unit],
@@ -42,26 +41,19 @@ object popoverMenuUniDriverMod {
       __obj.asInstanceOf[PopoverMenuUniDriver]
     }
     
-    @scala.inline
-    implicit class PopoverMenuUniDriverMutableBuilder[Self <: PopoverMenuUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverMenuUniDriver](x: Self) {
       
-      @scala.inline
-      def setChildrenCount(value: () => js.Promise[Double]): Self = StObject.set(x, "childrenCount", js.Any.fromFunction0(value))
+      inline def setChildrenCount(value: () => js.Promise[Double]): Self = StObject.set(x, "childrenCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickAtChild(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtChild", js.Any.fromFunction1(value))
+      inline def setClickAtChild(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickAtChildByDataHook(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickAtChildByDataHook", js.Any.fromFunction1(value))
+      inline def setClickAtChildByDataHook(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickAtChildByDataHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTriggerElement(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getTriggerElement", js.Any.fromFunction1(value))
+      inline def setGetTriggerElement(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getTriggerElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsMenuOpen(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMenuOpen", js.Any.fromFunction0(value))
+      inline def setIsMenuOpen(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMenuOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setItemContentAt(value: Double => js.Promise[String]): Self = StObject.set(x, "itemContentAt", js.Any.fromFunction1(value))
+      inline def setItemContentAt(value: Double => js.Promise[String]): Self = StObject.set(x, "itemContentAt", js.Any.fromFunction1(value))
     }
   }
 }

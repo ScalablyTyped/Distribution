@@ -44,8 +44,7 @@ trait ASN1Object extends StObject {
 }
 object ASN1Object {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -60,34 +59,24 @@ object ASN1Object {
     __obj.asInstanceOf[ASN1Object]
   }
   
-  @scala.inline
-  implicit class ASN1ObjectMutableBuilder[Self <: ASN1Object] (val x: Self) extends AnyVal {
+  extension [Self <: ASN1Object](x: Self) {
     
-    @scala.inline
-    def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
+    inline def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
+    inline def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLengthHexFromValue(value: () => String): Self = StObject.set(x, "getLengthHexFromValue", js.Any.fromFunction0(value))
+    inline def setGetLengthHexFromValue(value: () => String): Self = StObject.set(x, "getLengthHexFromValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueHex(value: () => String): Self = StObject.set(x, "getValueHex", js.Any.fromFunction0(value))
+    inline def setGetValueHex(value: () => String): Self = StObject.set(x, "getValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHL(value: String): Self = StObject.set(x, "hL", value.asInstanceOf[js.Any])
+    inline def setHL(value: String): Self = StObject.set(x, "hL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHT(value: String): Self = StObject.set(x, "hT", value.asInstanceOf[js.Any])
+    inline def setHT(value: String): Self = StObject.set(x, "hT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTLV(value: String): Self = StObject.set(x, "hTLV", value.asInstanceOf[js.Any])
+    inline def setHTLV(value: String): Self = StObject.set(x, "hTLV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHV(value: String): Self = StObject.set(x, "hV", value.asInstanceOf[js.Any])
+    inline def setHV(value: String): Self = StObject.set(x, "hV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsModified(value: String): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
+    inline def setIsModified(value: String): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
   }
 }

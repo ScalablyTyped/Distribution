@@ -23,34 +23,25 @@ trait ProtectiveEquipmentBodyPart extends StObject {
 }
 object ProtectiveEquipmentBodyPart {
   
-  @scala.inline
-  def apply(): ProtectiveEquipmentBodyPart = {
+  inline def apply(): ProtectiveEquipmentBodyPart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProtectiveEquipmentBodyPart]
   }
   
-  @scala.inline
-  implicit class ProtectiveEquipmentBodyPartMutableBuilder[Self <: ProtectiveEquipmentBodyPart] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectiveEquipmentBodyPart](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setEquipmentDetections(value: EquipmentDetections): Self = StObject.set(x, "EquipmentDetections", value.asInstanceOf[js.Any])
+    inline def setEquipmentDetections(value: EquipmentDetections): Self = StObject.set(x, "EquipmentDetections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquipmentDetectionsUndefined: Self = StObject.set(x, "EquipmentDetections", js.undefined)
+    inline def setEquipmentDetectionsUndefined: Self = StObject.set(x, "EquipmentDetections", js.undefined)
     
-    @scala.inline
-    def setEquipmentDetectionsVarargs(value: EquipmentDetection*): Self = StObject.set(x, "EquipmentDetections", js.Array(value :_*))
+    inline def setEquipmentDetectionsVarargs(value: EquipmentDetection*): Self = StObject.set(x, "EquipmentDetections", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: BodyPart): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: BodyPart): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

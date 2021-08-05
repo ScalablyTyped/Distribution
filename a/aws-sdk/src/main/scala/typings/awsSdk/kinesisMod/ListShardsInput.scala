@@ -35,49 +35,35 @@ trait ListShardsInput extends StObject {
 }
 object ListShardsInput {
   
-  @scala.inline
-  def apply(): ListShardsInput = {
+  inline def apply(): ListShardsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListShardsInput]
   }
   
-  @scala.inline
-  implicit class ListShardsInputMutableBuilder[Self <: ListShardsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListShardsInput](x: Self) {
     
-    @scala.inline
-    def setExclusiveStartShardId(value: ShardId): Self = StObject.set(x, "ExclusiveStartShardId", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartShardId(value: ShardId): Self = StObject.set(x, "ExclusiveStartShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartShardIdUndefined: Self = StObject.set(x, "ExclusiveStartShardId", js.undefined)
+    inline def setExclusiveStartShardIdUndefined: Self = StObject.set(x, "ExclusiveStartShardId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: ListShardsInputLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListShardsInputLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setShardFilter(value: ShardFilter): Self = StObject.set(x, "ShardFilter", value.asInstanceOf[js.Any])
+    inline def setShardFilter(value: ShardFilter): Self = StObject.set(x, "ShardFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardFilterUndefined: Self = StObject.set(x, "ShardFilter", js.undefined)
+    inline def setShardFilterUndefined: Self = StObject.set(x, "ShardFilter", js.undefined)
     
-    @scala.inline
-    def setStreamCreationTimestamp(value: Timestamp): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setStreamCreationTimestamp(value: Timestamp): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamCreationTimestampUndefined: Self = StObject.set(x, "StreamCreationTimestamp", js.undefined)
+    inline def setStreamCreationTimestampUndefined: Self = StObject.set(x, "StreamCreationTimestamp", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

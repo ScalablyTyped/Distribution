@@ -38,73 +38,51 @@ trait CreativeCustomEvent extends StObject {
 }
 object CreativeCustomEvent {
   
-  @scala.inline
-  def apply(): CreativeCustomEvent = {
+  inline def apply(): CreativeCustomEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeCustomEvent]
   }
   
-  @scala.inline
-  implicit class CreativeCustomEventMutableBuilder[Self <: CreativeCustomEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeCustomEvent](x: Self) {
     
-    @scala.inline
-    def setAdvertiserCustomEventId(value: String): Self = StObject.set(x, "advertiserCustomEventId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserCustomEventId(value: String): Self = StObject.set(x, "advertiserCustomEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserCustomEventIdUndefined: Self = StObject.set(x, "advertiserCustomEventId", js.undefined)
+    inline def setAdvertiserCustomEventIdUndefined: Self = StObject.set(x, "advertiserCustomEventId", js.undefined)
     
-    @scala.inline
-    def setAdvertiserCustomEventName(value: String): Self = StObject.set(x, "advertiserCustomEventName", value.asInstanceOf[js.Any])
+    inline def setAdvertiserCustomEventName(value: String): Self = StObject.set(x, "advertiserCustomEventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserCustomEventNameUndefined: Self = StObject.set(x, "advertiserCustomEventName", js.undefined)
+    inline def setAdvertiserCustomEventNameUndefined: Self = StObject.set(x, "advertiserCustomEventName", js.undefined)
     
-    @scala.inline
-    def setAdvertiserCustomEventType(value: String): Self = StObject.set(x, "advertiserCustomEventType", value.asInstanceOf[js.Any])
+    inline def setAdvertiserCustomEventType(value: String): Self = StObject.set(x, "advertiserCustomEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserCustomEventTypeUndefined: Self = StObject.set(x, "advertiserCustomEventType", js.undefined)
+    inline def setAdvertiserCustomEventTypeUndefined: Self = StObject.set(x, "advertiserCustomEventType", js.undefined)
     
-    @scala.inline
-    def setArtworkLabel(value: String): Self = StObject.set(x, "artworkLabel", value.asInstanceOf[js.Any])
+    inline def setArtworkLabel(value: String): Self = StObject.set(x, "artworkLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtworkLabelUndefined: Self = StObject.set(x, "artworkLabel", js.undefined)
+    inline def setArtworkLabelUndefined: Self = StObject.set(x, "artworkLabel", js.undefined)
     
-    @scala.inline
-    def setArtworkType(value: String): Self = StObject.set(x, "artworkType", value.asInstanceOf[js.Any])
+    inline def setArtworkType(value: String): Self = StObject.set(x, "artworkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtworkTypeUndefined: Self = StObject.set(x, "artworkType", js.undefined)
+    inline def setArtworkTypeUndefined: Self = StObject.set(x, "artworkType", js.undefined)
     
-    @scala.inline
-    def setExitClickThroughUrl(value: CreativeClickThroughUrl): Self = StObject.set(x, "exitClickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setExitClickThroughUrl(value: CreativeClickThroughUrl): Self = StObject.set(x, "exitClickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitClickThroughUrlUndefined: Self = StObject.set(x, "exitClickThroughUrl", js.undefined)
+    inline def setExitClickThroughUrlUndefined: Self = StObject.set(x, "exitClickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPopupWindowProperties(value: PopupWindowProperties): Self = StObject.set(x, "popupWindowProperties", value.asInstanceOf[js.Any])
+    inline def setPopupWindowProperties(value: PopupWindowProperties): Self = StObject.set(x, "popupWindowProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupWindowPropertiesUndefined: Self = StObject.set(x, "popupWindowProperties", js.undefined)
+    inline def setPopupWindowPropertiesUndefined: Self = StObject.set(x, "popupWindowProperties", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
-    @scala.inline
-    def setVideoReportingId(value: String): Self = StObject.set(x, "videoReportingId", value.asInstanceOf[js.Any])
+    inline def setVideoReportingId(value: String): Self = StObject.set(x, "videoReportingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoReportingIdUndefined: Self = StObject.set(x, "videoReportingId", js.undefined)
+    inline def setVideoReportingIdUndefined: Self = StObject.set(x, "videoReportingId", js.undefined)
   }
 }

@@ -21,20 +21,17 @@ object AlignmentEnum {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AlignmentEnum.Center")
   @js.native
   def Center: AlignmentEnum = js.native
-  @scala.inline
-  def Center_=(x: AlignmentEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
+  inline def Center_=(x: AlignmentEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AlignmentEnum.Left")
   @js.native
   def Left: AlignmentEnum = js.native
-  @scala.inline
-  def Left_=(x: AlignmentEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
+  inline def Left_=(x: AlignmentEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AlignmentEnum.Right")
   @js.native
   def Right: AlignmentEnum = js.native
-  @scala.inline
-  def Right_=(x: AlignmentEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
+  inline def Right_=(x: AlignmentEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
 }

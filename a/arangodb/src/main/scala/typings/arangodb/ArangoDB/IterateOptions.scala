@@ -12,25 +12,19 @@ trait IterateOptions extends StObject {
 }
 object IterateOptions {
   
-  @scala.inline
-  def apply(): IterateOptions = {
+  inline def apply(): IterateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IterateOptions]
   }
   
-  @scala.inline
-  implicit class IterateOptionsMutableBuilder[Self <: IterateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IterateOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    inline def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbabilityUndefined: Self = StObject.set(x, "probability", js.undefined)
+    inline def setProbabilityUndefined: Self = StObject.set(x, "probability", js.undefined)
   }
 }

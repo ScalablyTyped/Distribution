@@ -14,31 +14,23 @@ trait TreeViewCheckboxes extends StObject {
 }
 object TreeViewCheckboxes {
   
-  @scala.inline
-  def apply(): TreeViewCheckboxes = {
+  inline def apply(): TreeViewCheckboxes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeViewCheckboxes]
   }
   
-  @scala.inline
-  implicit class TreeViewCheckboxesMutableBuilder[Self <: TreeViewCheckboxes] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewCheckboxes](x: Self) {
     
-    @scala.inline
-    def setCheckChildren(value: Boolean): Self = StObject.set(x, "checkChildren", value.asInstanceOf[js.Any])
+    inline def setCheckChildren(value: Boolean): Self = StObject.set(x, "checkChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckChildrenUndefined: Self = StObject.set(x, "checkChildren", js.undefined)
+    inline def setCheckChildrenUndefined: Self = StObject.set(x, "checkChildren", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

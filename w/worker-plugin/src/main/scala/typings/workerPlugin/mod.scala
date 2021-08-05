@@ -46,59 +46,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGlobalObject(value: `false` | String): Self = StObject.set(x, "globalObject", value.asInstanceOf[js.Any])
+      inline def setGlobalObject(value: `false` | String): Self = StObject.set(x, "globalObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalObjectUndefined: Self = StObject.set(x, "globalObject", js.undefined)
+      inline def setGlobalObjectUndefined: Self = StObject.set(x, "globalObject", js.undefined)
       
-      @scala.inline
-      def setPlugins(
+      inline def setPlugins(
         value: js.Array[
               String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any)
             ]
       ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(
+      inline def setPluginsVarargs(
         value: (String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any))*
       ): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserveTypeModule(value: Boolean): Self = StObject.set(x, "preserveTypeModule", value.asInstanceOf[js.Any])
+      inline def setPreserveTypeModule(value: Boolean): Self = StObject.set(x, "preserveTypeModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveTypeModuleUndefined: Self = StObject.set(x, "preserveTypeModule", js.undefined)
+      inline def setPreserveTypeModuleUndefined: Self = StObject.set(x, "preserveTypeModule", js.undefined)
       
-      @scala.inline
-      def setSharedWorker(value: Boolean): Self = StObject.set(x, "sharedWorker", value.asInstanceOf[js.Any])
+      inline def setSharedWorker(value: Boolean): Self = StObject.set(x, "sharedWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedWorkerUndefined: Self = StObject.set(x, "sharedWorker", js.undefined)
+      inline def setSharedWorkerUndefined: Self = StObject.set(x, "sharedWorker", js.undefined)
       
-      @scala.inline
-      def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerType(value: String): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
+      inline def setWorkerType(value: String): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
+      inline def setWorkerTypeUndefined: Self = StObject.set(x, "workerType", js.undefined)
       
-      @scala.inline
-      def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
+      inline def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
     }
   }
   

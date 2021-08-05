@@ -26,8 +26,7 @@ trait XUsersSupplier
 }
 object XUsersSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Users: XNameAccess,
     acquire: () => Unit,
     getUsers: () => XNameAccess,
@@ -38,13 +37,10 @@ object XUsersSupplier {
     __obj.asInstanceOf[XUsersSupplier]
   }
   
-  @scala.inline
-  implicit class XUsersSupplierMutableBuilder[Self <: XUsersSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XUsersSupplier](x: Self) {
     
-    @scala.inline
-    def setGetUsers(value: () => XNameAccess): Self = StObject.set(x, "getUsers", js.Any.fromFunction0(value))
+    inline def setGetUsers(value: () => XNameAccess): Self = StObject.set(x, "getUsers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUsers(value: XNameAccess): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: XNameAccess): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait WorkflowExecutionCount extends StObject {
 }
 object WorkflowExecutionCount {
   
-  @scala.inline
-  def apply(count: Count): WorkflowExecutionCount = {
+  inline def apply(count: Count): WorkflowExecutionCount = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionCount]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionCountMutableBuilder[Self <: WorkflowExecutionCount] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncated(value: Truncated): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: Truncated): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
   }
 }

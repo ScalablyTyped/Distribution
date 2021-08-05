@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AchievementPool extends StObject
 object AchievementPool {
   
-  @scala.inline
-  def dungeon: typings.cookieclicker.cookieclickerStrings.dungeon = "dungeon".asInstanceOf[typings.cookieclicker.cookieclickerStrings.dungeon]
+  inline def dungeon: typings.cookieclicker.cookieclickerStrings.dungeon = "dungeon".asInstanceOf[typings.cookieclicker.cookieclickerStrings.dungeon]
   
-  @scala.inline
-  def normal: typings.cookieclicker.cookieclickerStrings.normal = "normal".asInstanceOf[typings.cookieclicker.cookieclickerStrings.normal]
+  inline def normal: typings.cookieclicker.cookieclickerStrings.normal = "normal".asInstanceOf[typings.cookieclicker.cookieclickerStrings.normal]
   
-  @scala.inline
-  def shadow: typings.cookieclicker.cookieclickerStrings.shadow = "shadow".asInstanceOf[typings.cookieclicker.cookieclickerStrings.shadow]
+  inline def shadow: typings.cookieclicker.cookieclickerStrings.shadow = "shadow".asInstanceOf[typings.cookieclicker.cookieclickerStrings.shadow]
 }

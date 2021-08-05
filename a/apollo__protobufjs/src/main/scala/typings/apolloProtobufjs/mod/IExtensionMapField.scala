@@ -14,17 +14,14 @@ trait IExtensionMapField
 }
 object IExtensionMapField {
   
-  @scala.inline
-  def apply(extend: String, id: Double, keyType: String, `type`: String): IExtensionMapField = {
+  inline def apply(extend: String, id: Double, keyType: String, `type`: String): IExtensionMapField = {
     val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtensionMapField]
   }
   
-  @scala.inline
-  implicit class IExtensionMapFieldMutableBuilder[Self <: IExtensionMapField] (val x: Self) extends AnyVal {
+  extension [Self <: IExtensionMapField](x: Self) {
     
-    @scala.inline
-    def setExtend(value: String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
   }
 }

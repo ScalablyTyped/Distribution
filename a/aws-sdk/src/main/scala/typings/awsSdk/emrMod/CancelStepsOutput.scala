@@ -13,22 +13,17 @@ trait CancelStepsOutput extends StObject {
 }
 object CancelStepsOutput {
   
-  @scala.inline
-  def apply(): CancelStepsOutput = {
+  inline def apply(): CancelStepsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelStepsOutput]
   }
   
-  @scala.inline
-  implicit class CancelStepsOutputMutableBuilder[Self <: CancelStepsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CancelStepsOutput](x: Self) {
     
-    @scala.inline
-    def setCancelStepsInfoList(value: CancelStepsInfoList): Self = StObject.set(x, "CancelStepsInfoList", value.asInstanceOf[js.Any])
+    inline def setCancelStepsInfoList(value: CancelStepsInfoList): Self = StObject.set(x, "CancelStepsInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelStepsInfoListUndefined: Self = StObject.set(x, "CancelStepsInfoList", js.undefined)
+    inline def setCancelStepsInfoListUndefined: Self = StObject.set(x, "CancelStepsInfoList", js.undefined)
     
-    @scala.inline
-    def setCancelStepsInfoListVarargs(value: CancelStepsInfo*): Self = StObject.set(x, "CancelStepsInfoList", js.Array(value :_*))
+    inline def setCancelStepsInfoListVarargs(value: CancelStepsInfo*): Self = StObject.set(x, "CancelStepsInfoList", js.Array(value :_*))
   }
 }

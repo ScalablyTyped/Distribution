@@ -11,8 +11,7 @@ object patchRequireMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makePatchingRequire(knownPatches: IModulePatchMap): js.Function1[/* moduleId */ String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePatchingRequire")(knownPatches.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* moduleId */ String, js.Any]]
+  inline def makePatchingRequire(knownPatches: IModulePatchMap): js.Function1[/* moduleId */ String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePatchingRequire")(knownPatches.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* moduleId */ String, js.Any]]
   
   type IModulePatchMap = StringDictionary[js.Array[IModulePatcher]]
   
@@ -26,20 +25,16 @@ object patchRequireMod {
   }
   object IModulePatcher {
     
-    @scala.inline
-    def apply(patch: (/* module */ js.Any, /* path */ String) => js.Any, versionSpecifier: String): IModulePatcher = {
+    inline def apply(patch: (/* module */ js.Any, /* path */ String) => js.Any, versionSpecifier: String): IModulePatcher = {
       val __obj = js.Dynamic.literal(patch = js.Any.fromFunction2(patch), versionSpecifier = versionSpecifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[IModulePatcher]
     }
     
-    @scala.inline
-    implicit class IModulePatcherMutableBuilder[Self <: IModulePatcher] (val x: Self) extends AnyVal {
+    extension [Self <: IModulePatcher](x: Self) {
       
-      @scala.inline
-      def setPatch(value: (/* module */ js.Any, /* path */ String) => js.Any): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
+      inline def setPatch(value: (/* module */ js.Any, /* path */ String) => js.Any): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVersionSpecifier(value: String): Self = StObject.set(x, "versionSpecifier", value.asInstanceOf[js.Any])
+      inline def setVersionSpecifier(value: String): Self = StObject.set(x, "versionSpecifier", value.asInstanceOf[js.Any])
     }
   }
   

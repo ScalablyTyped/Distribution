@@ -18,8 +18,7 @@ trait Decrement extends StObject {
 }
 object Decrement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decrement: scala.Double,
     delete: scala.Double,
     increment: scala.Double,
@@ -30,22 +29,16 @@ object Decrement {
     __obj.asInstanceOf[Decrement]
   }
   
-  @scala.inline
-  implicit class DecrementMutableBuilder[Self <: Decrement] (val x: Self) extends AnyVal {
+  extension [Self <: Decrement](x: Self) {
     
-    @scala.inline
-    def setDecrement(value: scala.Double): Self = StObject.set(x, "decrement", value.asInstanceOf[js.Any])
+    inline def setDecrement(value: scala.Double): Self = StObject.set(x, "decrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrement(value: scala.Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    inline def setIncrement(value: scala.Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: scala.Double): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: scala.Double): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
   }
 }

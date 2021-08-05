@@ -40,8 +40,7 @@ object plusDomainsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Plusdomains
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object plusDomainsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object plusDomainsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def plusDomains(options: Options): Plusdomains = ^.asInstanceOf[js.Dynamic].applyDynamic("plusDomains")(options.asInstanceOf[js.Any]).asInstanceOf[Plusdomains]
+  inline def plusDomains(options: Options): Plusdomains = ^.asInstanceOf[js.Dynamic].applyDynamic("plusDomains")(options.asInstanceOf[js.Any]).asInstanceOf[Plusdomains]
   
-  @scala.inline
-  def plusDomains_v1(version: v1): Plusdomains = ^.asInstanceOf[js.Dynamic].applyDynamic("plusDomains")(version.asInstanceOf[js.Any]).asInstanceOf[Plusdomains]
+  inline def plusDomains_v1(version: v1): Plusdomains = ^.asInstanceOf[js.Dynamic].applyDynamic("plusDomains")(version.asInstanceOf[js.Any]).asInstanceOf[Plusdomains]
 }

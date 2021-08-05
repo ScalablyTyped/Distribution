@@ -12,19 +12,15 @@ trait CollectionUser extends StObject {
 }
 object CollectionUser {
   
-  @scala.inline
-  def apply(collection_User: scala.Double, project_Team: scala.Double): CollectionUser = {
+  inline def apply(collection_User: scala.Double, project_Team: scala.Double): CollectionUser = {
     val __obj = js.Dynamic.literal(collection_User = collection_User.asInstanceOf[js.Any], project_Team = project_Team.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionUser]
   }
   
-  @scala.inline
-  implicit class CollectionUserMutableBuilder[Self <: CollectionUser] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionUser](x: Self) {
     
-    @scala.inline
-    def setCollection_User(value: scala.Double): Self = StObject.set(x, "collection_User", value.asInstanceOf[js.Any])
+    inline def setCollection_User(value: scala.Double): Self = StObject.set(x, "collection_User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject_Team(value: scala.Double): Self = StObject.set(x, "project_Team", value.asInstanceOf[js.Any])
+    inline def setProject_Team(value: scala.Double): Self = StObject.set(x, "project_Team", value.asInstanceOf[js.Any])
   }
 }

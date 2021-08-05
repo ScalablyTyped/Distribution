@@ -16,26 +16,20 @@ object anon {
   }
   object Category {
     
-    @scala.inline
-    def apply(category: String, distributions: js.Array[Max], percentile: Double): Category = {
+    inline def apply(category: String, distributions: js.Array[Max], percentile: Double): Category = {
       val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], distributions = distributions.asInstanceOf[js.Any], percentile = percentile.asInstanceOf[js.Any])
       __obj.asInstanceOf[Category]
     }
     
-    @scala.inline
-    implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+    extension [Self <: Category](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributions(value: js.Array[Max]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
+      inline def setDistributions(value: js.Array[Max]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributionsVarargs(value: Max*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+      inline def setDistributionsVarargs(value: Max*): Self = StObject.set(x, "distributions", js.Array(value :_*))
       
-      @scala.inline
-      def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
+      inline def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,23 +43,18 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(max: Double, min: Double, proportion: Double): Max = {
+    inline def apply(max: Double, min: Double, proportion: Double): Max = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], proportion = proportion.asInstanceOf[js.Any])
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProportion(value: Double): Self = StObject.set(x, "proportion", value.asInstanceOf[js.Any])
+      inline def setProportion(value: Double): Self = StObject.set(x, "proportion", value.asInstanceOf[js.Any])
     }
   }
 }

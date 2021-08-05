@@ -17,23 +17,17 @@ object loggerMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def all: typings.awsSdkTypes.awsSdkTypesStrings.all = "all".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.all]
+    inline def all: typings.awsSdkTypes.awsSdkTypesStrings.all = "all".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.all]
     
-    @scala.inline
-    def error: typings.awsSdkTypes.awsSdkTypesStrings.error = "error".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.error]
+    inline def error: typings.awsSdkTypes.awsSdkTypesStrings.error = "error".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.error]
     
-    @scala.inline
-    def info: typings.awsSdkTypes.awsSdkTypesStrings.info = "info".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.info]
+    inline def info: typings.awsSdkTypes.awsSdkTypesStrings.info = "info".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.info]
     
-    @scala.inline
-    def log: typings.awsSdkTypes.awsSdkTypesStrings.log = "log".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.log]
+    inline def log: typings.awsSdkTypes.awsSdkTypesStrings.log = "log".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.log]
     
-    @scala.inline
-    def off: typings.awsSdkTypes.awsSdkTypesStrings.off = "off".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.off]
+    inline def off: typings.awsSdkTypes.awsSdkTypesStrings.off = "off".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.off]
     
-    @scala.inline
-    def warn: typings.awsSdkTypes.awsSdkTypesStrings.warn = "warn".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.warn]
+    inline def warn: typings.awsSdkTypes.awsSdkTypesStrings.warn = "warn".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.warn]
   }
   
   trait Logger extends StObject {
@@ -48,8 +42,7 @@ object loggerMod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: js.Object => Unit,
       error: js.Object => Unit,
       info: js.Object => Unit,
@@ -59,20 +52,15 @@ object loggerMod {
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: js.Object => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: js.Object => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: js.Object => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Object => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: js.Object => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: js.Object => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: js.Object => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: js.Object => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -84,26 +72,20 @@ object loggerMod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     }
   }
 }

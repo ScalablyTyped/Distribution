@@ -10,16 +10,13 @@ trait EnumValuesCancelledFailed extends StObject {
 }
 object EnumValuesCancelledFailed {
   
-  @scala.inline
-  def apply(enumValues: CancelledFailed): EnumValuesCancelledFailed = {
+  inline def apply(enumValues: CancelledFailed): EnumValuesCancelledFailed = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCancelledFailed]
   }
   
-  @scala.inline
-  implicit class EnumValuesCancelledFailedMutableBuilder[Self <: EnumValuesCancelledFailed] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCancelledFailed](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: CancelledFailed): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: CancelledFailed): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -66,31 +66,31 @@ object animationsAnimationsMod {
   class ɵAnimationRendererFactory protected () extends RendererFactory2 {
     def this(delegate: RendererFactory2, engine: ɵAnimationEngine, _zone: NgZone) = this()
     
-    var _animationCallbacksBuffer: js.Any = js.native
+    /* private */ var _animationCallbacksBuffer: js.Any = js.native
     
-    var _cdRecurDepth: js.Any = js.native
+    /* private */ var _cdRecurDepth: js.Any = js.native
     
-    var _currentId: js.Any = js.native
+    /* private */ var _currentId: js.Any = js.native
     
-    var _microtaskId: js.Any = js.native
+    /* private */ var _microtaskId: js.Any = js.native
     
-    var _rendererCache: js.Any = js.native
+    /* private */ var _rendererCache: js.Any = js.native
     
-    var _scheduleCountTask: js.Any = js.native
+    /* private */ var _scheduleCountTask: js.Any = js.native
     
-    var _zone: js.Any = js.native
+    /* private */ var _zone: js.Any = js.native
     
     @JSName("begin")
     def begin_MɵAnimationRendererFactory(): Unit = js.native
     
-    var delegate: js.Any = js.native
+    /* private */ var delegate: js.Any = js.native
     
     @JSName("end")
     def end_MɵAnimationRendererFactory(): Unit = js.native
     
-    var engine: js.Any = js.native
+    /* private */ var engine: js.Any = js.native
     
-    var promise: js.Any = js.native
+    /* private */ var promise: js.Any = js.native
     
     @JSName("whenRenderingDone")
     def whenRenderingDone_MɵAnimationRendererFactory(): js.Promise[js.Any] = js.native
@@ -101,9 +101,9 @@ object animationsAnimationsMod {
   class ɵBrowserAnimationBuilder protected () extends AnimationBuilder {
     def this(rootRenderer: RendererFactory2, doc: js.Any) = this()
     
-    var _nextAnimationId: js.Any = js.native
+    /* private */ var _nextAnimationId: js.Any = js.native
     
-    var _renderer: js.Any = js.native
+    /* private */ var _renderer: js.Any = js.native
   }
   
   @JSImport("@angular/platform-browser/animations/animations", "\u0275BrowserAnimationFactory")
@@ -111,9 +111,9 @@ object animationsAnimationsMod {
   class ɵBrowserAnimationFactory protected () extends AnimationFactory {
     def this(_id: String, _renderer: ɵAnimationRenderer) = this()
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _renderer: js.Any = js.native
+    /* private */ var _renderer: js.Any = js.native
   }
   
   @JSImport("@angular/platform-browser/animations/animations", "\u0275InjectableAnimationEngine")
@@ -122,14 +122,11 @@ object animationsAnimationsMod {
     def this(doc: js.Any, driver: AnimationDriver, normalizer: ɵAnimationStyleNormalizer) = this()
   }
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserAnimationsAnimationsA(): ɵWebAnimationsDriver | ɵCssKeyframesDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_a")().asInstanceOf[ɵWebAnimationsDriver | ɵCssKeyframesDriver]
+  inline def ɵangularPackagesPlatformBrowserAnimationsAnimationsA(): ɵWebAnimationsDriver | ɵCssKeyframesDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_a")().asInstanceOf[ɵWebAnimationsDriver | ɵCssKeyframesDriver]
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserAnimationsAnimationsB(): ɵWebAnimationsStyleNormalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_b")().asInstanceOf[ɵWebAnimationsStyleNormalizer]
+  inline def ɵangularPackagesPlatformBrowserAnimationsAnimationsB(): ɵWebAnimationsStyleNormalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_b")().asInstanceOf[ɵWebAnimationsStyleNormalizer]
   
-  @scala.inline
-  def ɵangularPackagesPlatformBrowserAnimationsAnimationsC(renderer: ɵDomRendererFactory2, engine: ɵAnimationEngine, zone: NgZone): ɵAnimationRendererFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_c")(renderer.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ɵAnimationRendererFactory]
+  inline def ɵangularPackagesPlatformBrowserAnimationsAnimationsC(renderer: ɵDomRendererFactory2, engine: ɵAnimationEngine, zone: NgZone): ɵAnimationRendererFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_c")(renderer.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ɵAnimationRendererFactory]
   
   @JSImport("@angular/platform-browser/animations/animations", "\u0275angular_packages_platform_browser_animations_animations_d")
   @js.native
@@ -150,6 +147,6 @@ object animationsAnimationsMod {
     
     var engine: ɵAnimationEngine = js.native
     
-    var namespaceId: String = js.native
+    /* protected */ var namespaceId: String = js.native
   }
 }

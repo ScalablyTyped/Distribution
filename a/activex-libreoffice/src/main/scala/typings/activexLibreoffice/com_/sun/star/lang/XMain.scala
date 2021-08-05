@@ -24,8 +24,7 @@ trait XMain
 }
 object XMain {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -35,10 +34,8 @@ object XMain {
     __obj.asInstanceOf[XMain]
   }
   
-  @scala.inline
-  implicit class XMainMutableBuilder[Self <: XMain] (val x: Self) extends AnyVal {
+  extension [Self <: XMain](x: Self) {
     
-    @scala.inline
-    def setRun(value: SeqEquiv[String] => Double): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: SeqEquiv[String] => Double): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

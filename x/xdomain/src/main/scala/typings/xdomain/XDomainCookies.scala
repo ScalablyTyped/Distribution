@@ -12,19 +12,15 @@ trait XDomainCookies extends StObject {
 }
 object XDomainCookies {
   
-  @scala.inline
-  def apply(master: String, slave: String): XDomainCookies = {
+  inline def apply(master: String, slave: String): XDomainCookies = {
     val __obj = js.Dynamic.literal(master = master.asInstanceOf[js.Any], slave = slave.asInstanceOf[js.Any])
     __obj.asInstanceOf[XDomainCookies]
   }
   
-  @scala.inline
-  implicit class XDomainCookiesMutableBuilder[Self <: XDomainCookies] (val x: Self) extends AnyVal {
+  extension [Self <: XDomainCookies](x: Self) {
     
-    @scala.inline
-    def setMaster(value: String): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: String): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlave(value: String): Self = StObject.set(x, "slave", value.asInstanceOf[js.Any])
+    inline def setSlave(value: String): Self = StObject.set(x, "slave", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait MemberVariableDeclaration
 }
 object MemberVariableDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,16 +42,12 @@ object MemberVariableDeclaration {
     __obj.asInstanceOf[MemberVariableDeclaration]
   }
   
-  @scala.inline
-  implicit class MemberVariableDeclarationMutableBuilder[Self <: MemberVariableDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: MemberVariableDeclaration](x: Self) {
     
-    @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setVariableDeclarator(value: VariableDeclarator): Self = StObject.set(x, "variableDeclarator", value.asInstanceOf[js.Any])
+    inline def setVariableDeclarator(value: VariableDeclarator): Self = StObject.set(x, "variableDeclarator", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait DeleteHeaderRequest extends StObject {
 }
 object DeleteHeaderRequest {
   
-  @scala.inline
-  def apply(): DeleteHeaderRequest = {
+  inline def apply(): DeleteHeaderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteHeaderRequest]
   }
   
-  @scala.inline
-  implicit class DeleteHeaderRequestMutableBuilder[Self <: DeleteHeaderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHeaderRequest](x: Self) {
     
-    @scala.inline
-    def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
+    inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
+    inline def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
   }
 }

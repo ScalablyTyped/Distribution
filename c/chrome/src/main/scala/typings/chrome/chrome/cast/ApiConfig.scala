@@ -18,8 +18,7 @@ trait ApiConfig extends StObject {
 }
 object ApiConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoJoinPolicy: AutoJoinPolicy,
     defaultActionPolicy: DefaultActionPolicy,
     receiverListener: ReceiverAvailability => Unit,
@@ -30,22 +29,16 @@ object ApiConfig {
     __obj.asInstanceOf[ApiConfig]
   }
   
-  @scala.inline
-  implicit class ApiConfigMutableBuilder[Self <: ApiConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ApiConfig](x: Self) {
     
-    @scala.inline
-    def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultActionPolicy(value: DefaultActionPolicy): Self = StObject.set(x, "defaultActionPolicy", value.asInstanceOf[js.Any])
+    inline def setDefaultActionPolicy(value: DefaultActionPolicy): Self = StObject.set(x, "defaultActionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiverListener(value: ReceiverAvailability => Unit): Self = StObject.set(x, "receiverListener", js.Any.fromFunction1(value))
+    inline def setReceiverListener(value: ReceiverAvailability => Unit): Self = StObject.set(x, "receiverListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSessionListener(value: Session => Unit): Self = StObject.set(x, "sessionListener", js.Any.fromFunction1(value))
+    inline def setSessionListener(value: Session => Unit): Self = StObject.set(x, "sessionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSessionRequest(value: SessionRequest): Self = StObject.set(x, "sessionRequest", value.asInstanceOf[js.Any])
+    inline def setSessionRequest(value: SessionRequest): Self = StObject.set(x, "sessionRequest", value.asInstanceOf[js.Any])
   }
 }

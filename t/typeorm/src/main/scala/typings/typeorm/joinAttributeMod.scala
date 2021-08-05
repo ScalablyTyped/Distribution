@@ -29,7 +29,7 @@ object joinAttributeMod {
       */
     var condition: js.UndefOr[String] = js.native
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
     
     /**
       * Join direction.
@@ -85,7 +85,7 @@ object joinAttributeMod {
       */
     val parentAlias: js.UndefOr[String] = js.native
     
-    var queryExpressionMap: js.Any = js.native
+    /* private */ var queryExpressionMap: js.Any = js.native
     
     /**
       * Relation of the parent.

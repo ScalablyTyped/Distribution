@@ -12,25 +12,19 @@ trait DarkModeImage extends StObject {
 }
 object DarkModeImage {
   
-  @scala.inline
-  def apply(): DarkModeImage = {
+  inline def apply(): DarkModeImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DarkModeImage]
   }
   
-  @scala.inline
-  implicit class DarkModeImageMutableBuilder[Self <: DarkModeImage] (val x: Self) extends AnyVal {
+  extension [Self <: DarkModeImage](x: Self) {
     
-    @scala.inline
-    def setDarkMode(value: `2`): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+    inline def setDarkMode(value: `2`): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
+    inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

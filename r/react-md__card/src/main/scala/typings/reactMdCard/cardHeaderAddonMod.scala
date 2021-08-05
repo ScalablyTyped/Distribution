@@ -13,6 +13,5 @@ object cardHeaderAddonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CardHeaderAddon(hasClassNameChildrenProps: HTMLAttributes[HTMLSpanElement]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CardHeaderAddon")(hasClassNameChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def CardHeaderAddon(hasClassNameChildrenProps: HTMLAttributes[HTMLSpanElement]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CardHeaderAddon")(hasClassNameChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
 }

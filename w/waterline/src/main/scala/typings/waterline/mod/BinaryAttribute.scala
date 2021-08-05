@@ -15,17 +15,14 @@ trait BinaryAttribute
 }
 object BinaryAttribute {
   
-  @scala.inline
-  def apply(): BinaryAttribute = {
+  inline def apply(): BinaryAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("binary")
     __obj.asInstanceOf[BinaryAttribute]
   }
   
-  @scala.inline
-  implicit class BinaryAttributeMutableBuilder[Self <: BinaryAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryAttribute](x: Self) {
     
-    @scala.inline
-    def setType(value: binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

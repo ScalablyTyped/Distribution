@@ -28,14 +28,12 @@ object Page {
   /**
     * @internal
     */
-  @scala.inline
-  def create(
+  inline def create(
     client: typings.puppeteerCore.connectionMod.CDPSession,
     target: typings.puppeteerCore.targetMod.Target,
     ignoreHTTPSErrors: Boolean
   ): js.Promise[typings.puppeteerCore.pageMod.Page] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(client.asInstanceOf[js.Any], target.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.puppeteerCore.pageMod.Page]]
-  @scala.inline
-  def create(
+  inline def create(
     client: typings.puppeteerCore.connectionMod.CDPSession,
     target: typings.puppeteerCore.targetMod.Target,
     ignoreHTTPSErrors: Boolean,

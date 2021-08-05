@@ -127,8 +127,7 @@ object plans {
   }
   object IPlan {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       billing_scheme: per_unit | tiered,
       created: Double,
@@ -145,95 +144,65 @@ object plans {
       __obj.asInstanceOf[IPlan]
     }
     
-    @scala.inline
-    implicit class IPlanMutableBuilder[Self <: IPlan] (val x: Self) extends AnyVal {
+    extension [Self <: IPlan](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregate_usage(value: sum | last_during_period | last_ever | max): Self = StObject.set(x, "aggregate_usage", value.asInstanceOf[js.Any])
+      inline def setAggregate_usage(value: sum | last_during_period | last_ever | max): Self = StObject.set(x, "aggregate_usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregate_usageNull: Self = StObject.set(x, "aggregate_usage", null)
+      inline def setAggregate_usageNull: Self = StObject.set(x, "aggregate_usage", null)
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountNull: Self = StObject.set(x, "amount", null)
+      inline def setAmountNull: Self = StObject.set(x, "amount", null)
       
-      @scala.inline
-      def setAmount_decimal(value: String): Self = StObject.set(x, "amount_decimal", value.asInstanceOf[js.Any])
+      inline def setAmount_decimal(value: String): Self = StObject.set(x, "amount_decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_decimalNull: Self = StObject.set(x, "amount_decimal", null)
+      inline def setAmount_decimalNull: Self = StObject.set(x, "amount_decimal", null)
       
-      @scala.inline
-      def setBilling_scheme(value: per_unit | tiered): Self = StObject.set(x, "billing_scheme", value.asInstanceOf[js.Any])
+      inline def setBilling_scheme(value: per_unit | tiered): Self = StObject.set(x, "billing_scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval(value: IntervalUnit): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: IntervalUnit): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval_count(value: Double): Self = StObject.set(x, "interval_count", value.asInstanceOf[js.Any])
+      inline def setInterval_count(value: Double): Self = StObject.set(x, "interval_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNicknameNull: Self = StObject.set(x, "nickname", null)
+      inline def setNicknameNull: Self = StObject.set(x, "nickname", null)
       
-      @scala.inline
-      def setObject(value: plan): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: plan): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct(value: String | IProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String | IProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+      inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
       
-      @scala.inline
-      def setTiers(value: js.Array[ITier]): Self = StObject.set(x, "tiers", value.asInstanceOf[js.Any])
+      inline def setTiers(value: js.Array[ITier]): Self = StObject.set(x, "tiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiersNull: Self = StObject.set(x, "tiers", null)
+      inline def setTiersNull: Self = StObject.set(x, "tiers", null)
       
-      @scala.inline
-      def setTiersVarargs(value: ITier*): Self = StObject.set(x, "tiers", js.Array(value :_*))
+      inline def setTiersVarargs(value: ITier*): Self = StObject.set(x, "tiers", js.Array(value :_*))
       
-      @scala.inline
-      def setTiers_mode(value: graduated | volume): Self = StObject.set(x, "tiers_mode", value.asInstanceOf[js.Any])
+      inline def setTiers_mode(value: graduated | volume): Self = StObject.set(x, "tiers_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiers_modeNull: Self = StObject.set(x, "tiers_mode", null)
+      inline def setTiers_modeNull: Self = StObject.set(x, "tiers_mode", null)
       
-      @scala.inline
-      def setTransform_usage(value: ITransformUsage): Self = StObject.set(x, "transform_usage", value.asInstanceOf[js.Any])
+      inline def setTransform_usage(value: ITransformUsage): Self = StObject.set(x, "transform_usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform_usageNull: Self = StObject.set(x, "transform_usage", null)
+      inline def setTransform_usageNull: Self = StObject.set(x, "transform_usage", null)
       
-      @scala.inline
-      def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
+      inline def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrial_period_daysNull: Self = StObject.set(x, "trial_period_days", null)
+      inline def setTrial_period_daysNull: Self = StObject.set(x, "trial_period_days", null)
       
-      @scala.inline
-      def setUsage_type(value: metered | licensed): Self = StObject.set(x, "usage_type", value.asInstanceOf[js.Any])
+      inline def setUsage_type(value: metered | licensed): Self = StObject.set(x, "usage_type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,110 +302,76 @@ object plans {
   }
   object IPlanCreationOptions {
     
-    @scala.inline
-    def apply(currency: String, interval: IntervalUnit, product: String | IPlanCreationOptionsProductHash): IPlanCreationOptions = {
+    inline def apply(currency: String, interval: IntervalUnit, product: String | IPlanCreationOptionsProductHash): IPlanCreationOptions = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPlanCreationOptions]
     }
     
-    @scala.inline
-    implicit class IPlanCreationOptionsMutableBuilder[Self <: IPlanCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IPlanCreationOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAggregate_usage(value: sum | last_during_period | last_ever | max): Self = StObject.set(x, "aggregate_usage", value.asInstanceOf[js.Any])
+      inline def setAggregate_usage(value: sum | last_during_period | last_ever | max): Self = StObject.set(x, "aggregate_usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregate_usageUndefined: Self = StObject.set(x, "aggregate_usage", js.undefined)
+      inline def setAggregate_usageUndefined: Self = StObject.set(x, "aggregate_usage", js.undefined)
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setAmount_decimal(value: Double): Self = StObject.set(x, "amount_decimal", value.asInstanceOf[js.Any])
+      inline def setAmount_decimal(value: Double): Self = StObject.set(x, "amount_decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_decimalUndefined: Self = StObject.set(x, "amount_decimal", js.undefined)
+      inline def setAmount_decimalUndefined: Self = StObject.set(x, "amount_decimal", js.undefined)
       
-      @scala.inline
-      def setBilling_scheme(value: per_unit | tiered): Self = StObject.set(x, "billing_scheme", value.asInstanceOf[js.Any])
+      inline def setBilling_scheme(value: per_unit | tiered): Self = StObject.set(x, "billing_scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilling_schemeUndefined: Self = StObject.set(x, "billing_scheme", js.undefined)
+      inline def setBilling_schemeUndefined: Self = StObject.set(x, "billing_scheme", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInterval(value: IntervalUnit): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: IntervalUnit): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval_count(value: Double): Self = StObject.set(x, "interval_count", value.asInstanceOf[js.Any])
+      inline def setInterval_count(value: Double): Self = StObject.set(x, "interval_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval_countUndefined: Self = StObject.set(x, "interval_count", js.undefined)
+      inline def setInterval_countUndefined: Self = StObject.set(x, "interval_count", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+      inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
       
-      @scala.inline
-      def setProduct(value: String | IPlanCreationOptionsProductHash): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String | IPlanCreationOptionsProductHash): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiers(value: js.Array[ITier]): Self = StObject.set(x, "tiers", value.asInstanceOf[js.Any])
+      inline def setTiers(value: js.Array[ITier]): Self = StObject.set(x, "tiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiersUndefined: Self = StObject.set(x, "tiers", js.undefined)
+      inline def setTiersUndefined: Self = StObject.set(x, "tiers", js.undefined)
       
-      @scala.inline
-      def setTiersVarargs(value: ITier*): Self = StObject.set(x, "tiers", js.Array(value :_*))
+      inline def setTiersVarargs(value: ITier*): Self = StObject.set(x, "tiers", js.Array(value :_*))
       
-      @scala.inline
-      def setTiers_mode(value: graduated | volume): Self = StObject.set(x, "tiers_mode", value.asInstanceOf[js.Any])
+      inline def setTiers_mode(value: graduated | volume): Self = StObject.set(x, "tiers_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiers_modeUndefined: Self = StObject.set(x, "tiers_mode", js.undefined)
+      inline def setTiers_modeUndefined: Self = StObject.set(x, "tiers_mode", js.undefined)
       
-      @scala.inline
-      def setTransform_usage(value: ITransformUsage): Self = StObject.set(x, "transform_usage", value.asInstanceOf[js.Any])
+      inline def setTransform_usage(value: ITransformUsage): Self = StObject.set(x, "transform_usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform_usageUndefined: Self = StObject.set(x, "transform_usage", js.undefined)
+      inline def setTransform_usageUndefined: Self = StObject.set(x, "transform_usage", js.undefined)
       
-      @scala.inline
-      def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
+      inline def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrial_period_daysUndefined: Self = StObject.set(x, "trial_period_days", js.undefined)
+      inline def setTrial_period_daysUndefined: Self = StObject.set(x, "trial_period_days", js.undefined)
       
-      @scala.inline
-      def setUsage_type(value: metered | licensed): Self = StObject.set(x, "usage_type", value.asInstanceOf[js.Any])
+      inline def setUsage_type(value: metered | licensed): Self = StObject.set(x, "usage_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage_typeUndefined: Self = StObject.set(x, "usage_type", js.undefined)
+      inline def setUsage_typeUndefined: Self = StObject.set(x, "usage_type", js.undefined)
     }
   }
   
@@ -467,35 +402,26 @@ object plans {
   }
   object IPlanCreationOptionsProductHash {
     
-    @scala.inline
-    def apply(name: String): IPlanCreationOptionsProductHash = {
+    inline def apply(name: String): IPlanCreationOptionsProductHash = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPlanCreationOptionsProductHash]
     }
     
-    @scala.inline
-    implicit class IPlanCreationOptionsProductHashMutableBuilder[Self <: IPlanCreationOptionsProductHash] (val x: Self) extends AnyVal {
+    extension [Self <: IPlanCreationOptionsProductHash](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+      inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
     }
   }
   
@@ -526,38 +452,28 @@ object plans {
   }
   object IPlanUpdateOptions {
     
-    @scala.inline
-    def apply(): IPlanUpdateOptions = {
+    inline def apply(): IPlanUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPlanUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IPlanUpdateOptionsMutableBuilder[Self <: IPlanUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IPlanUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+      inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+      inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
       
-      @scala.inline
-      def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
+      inline def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrial_period_daysUndefined: Self = StObject.set(x, "trial_period_days", js.undefined)
+      inline def setTrial_period_daysUndefined: Self = StObject.set(x, "trial_period_days", js.undefined)
     }
   }
   
@@ -590,56 +506,40 @@ object plans {
   }
   object ITier {
     
-    @scala.inline
-    def apply(): ITier = {
+    inline def apply(): ITier = {
       val __obj = js.Dynamic.literal(up_to = null)
       __obj.asInstanceOf[ITier]
     }
     
-    @scala.inline
-    implicit class ITierMutableBuilder[Self <: ITier] (val x: Self) extends AnyVal {
+    extension [Self <: ITier](x: Self) {
       
-      @scala.inline
-      def setFlat_amount(value: Double): Self = StObject.set(x, "flat_amount", value.asInstanceOf[js.Any])
+      inline def setFlat_amount(value: Double): Self = StObject.set(x, "flat_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlat_amountNull: Self = StObject.set(x, "flat_amount", null)
+      inline def setFlat_amountNull: Self = StObject.set(x, "flat_amount", null)
       
-      @scala.inline
-      def setFlat_amountUndefined: Self = StObject.set(x, "flat_amount", js.undefined)
+      inline def setFlat_amountUndefined: Self = StObject.set(x, "flat_amount", js.undefined)
       
-      @scala.inline
-      def setFlat_amount_decimal(value: Double): Self = StObject.set(x, "flat_amount_decimal", value.asInstanceOf[js.Any])
+      inline def setFlat_amount_decimal(value: Double): Self = StObject.set(x, "flat_amount_decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlat_amount_decimalNull: Self = StObject.set(x, "flat_amount_decimal", null)
+      inline def setFlat_amount_decimalNull: Self = StObject.set(x, "flat_amount_decimal", null)
       
-      @scala.inline
-      def setFlat_amount_decimalUndefined: Self = StObject.set(x, "flat_amount_decimal", js.undefined)
+      inline def setFlat_amount_decimalUndefined: Self = StObject.set(x, "flat_amount_decimal", js.undefined)
       
-      @scala.inline
-      def setUnit_amount(value: Double): Self = StObject.set(x, "unit_amount", value.asInstanceOf[js.Any])
+      inline def setUnit_amount(value: Double): Self = StObject.set(x, "unit_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit_amountNull: Self = StObject.set(x, "unit_amount", null)
+      inline def setUnit_amountNull: Self = StObject.set(x, "unit_amount", null)
       
-      @scala.inline
-      def setUnit_amountUndefined: Self = StObject.set(x, "unit_amount", js.undefined)
+      inline def setUnit_amountUndefined: Self = StObject.set(x, "unit_amount", js.undefined)
       
-      @scala.inline
-      def setUnit_amount_decimal(value: Double): Self = StObject.set(x, "unit_amount_decimal", value.asInstanceOf[js.Any])
+      inline def setUnit_amount_decimal(value: Double): Self = StObject.set(x, "unit_amount_decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit_amount_decimalNull: Self = StObject.set(x, "unit_amount_decimal", null)
+      inline def setUnit_amount_decimalNull: Self = StObject.set(x, "unit_amount_decimal", null)
       
-      @scala.inline
-      def setUnit_amount_decimalUndefined: Self = StObject.set(x, "unit_amount_decimal", js.undefined)
+      inline def setUnit_amount_decimalUndefined: Self = StObject.set(x, "unit_amount_decimal", js.undefined)
       
-      @scala.inline
-      def setUp_to(value: Double | inf): Self = StObject.set(x, "up_to", value.asInstanceOf[js.Any])
+      inline def setUp_to(value: Double | inf): Self = StObject.set(x, "up_to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp_toNull: Self = StObject.set(x, "up_to", null)
+      inline def setUp_toNull: Self = StObject.set(x, "up_to", null)
     }
   }
   
@@ -657,20 +557,16 @@ object plans {
   }
   object ITransformUsage {
     
-    @scala.inline
-    def apply(divide_by: Double, round: up | down): ITransformUsage = {
+    inline def apply(divide_by: Double, round: up | down): ITransformUsage = {
       val __obj = js.Dynamic.literal(divide_by = divide_by.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITransformUsage]
     }
     
-    @scala.inline
-    implicit class ITransformUsageMutableBuilder[Self <: ITransformUsage] (val x: Self) extends AnyVal {
+    extension [Self <: ITransformUsage](x: Self) {
       
-      @scala.inline
-      def setDivide_by(value: Double): Self = StObject.set(x, "divide_by", value.asInstanceOf[js.Any])
+      inline def setDivide_by(value: Double): Self = StObject.set(x, "divide_by", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRound(value: up | down): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: up | down): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     }
   }
   
@@ -683,16 +579,12 @@ object plans {
   trait IntervalUnit extends StObject
   object IntervalUnit {
     
-    @scala.inline
-    def day: typings.stripe.stripeStrings.day = "day".asInstanceOf[typings.stripe.stripeStrings.day]
+    inline def day: typings.stripe.stripeStrings.day = "day".asInstanceOf[typings.stripe.stripeStrings.day]
     
-    @scala.inline
-    def month: typings.stripe.stripeStrings.month = "month".asInstanceOf[typings.stripe.stripeStrings.month]
+    inline def month: typings.stripe.stripeStrings.month = "month".asInstanceOf[typings.stripe.stripeStrings.month]
     
-    @scala.inline
-    def week: typings.stripe.stripeStrings.week = "week".asInstanceOf[typings.stripe.stripeStrings.week]
+    inline def week: typings.stripe.stripeStrings.week = "week".asInstanceOf[typings.stripe.stripeStrings.week]
     
-    @scala.inline
-    def year: typings.stripe.stripeStrings.year = "year".asInstanceOf[typings.stripe.stripeStrings.year]
+    inline def year: typings.stripe.stripeStrings.year = "year".asInstanceOf[typings.stripe.stripeStrings.year]
   }
 }

@@ -11,22 +11,17 @@ trait GooglePrivacyDlpV2LDiversityResult extends StObject {
 }
 object GooglePrivacyDlpV2LDiversityResult {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2LDiversityResult = {
+  inline def apply(): GooglePrivacyDlpV2LDiversityResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2LDiversityResult]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2LDiversityResultMutableBuilder[Self <: GooglePrivacyDlpV2LDiversityResult] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2LDiversityResult](x: Self) {
     
-    @scala.inline
-    def setSensitiveValueFrequencyHistogramBuckets(value: js.Array[GooglePrivacyDlpV2LDiversityHistogramBucket]): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", value.asInstanceOf[js.Any])
+    inline def setSensitiveValueFrequencyHistogramBuckets(value: js.Array[GooglePrivacyDlpV2LDiversityHistogramBucket]): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitiveValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.undefined)
+    inline def setSensitiveValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.undefined)
     
-    @scala.inline
-    def setSensitiveValueFrequencyHistogramBucketsVarargs(value: GooglePrivacyDlpV2LDiversityHistogramBucket*): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.Array(value :_*))
+    inline def setSensitiveValueFrequencyHistogramBucketsVarargs(value: GooglePrivacyDlpV2LDiversityHistogramBucket*): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.Array(value :_*))
   }
 }

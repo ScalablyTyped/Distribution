@@ -36,64 +36,45 @@ trait ContentItem extends StObject {
 }
 object ContentItem {
   
-  @scala.inline
-  def apply(content: String): ContentItem = {
+  inline def apply(content: String): ContentItem = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentItem]
   }
   
-  @scala.inline
-  implicit class ContentItemMutableBuilder[Self <: ContentItem] (val x: Self) extends AnyVal {
+  extension [Self <: ContentItem](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContenttype(value: String): Self = StObject.set(x, "contenttype", value.asInstanceOf[js.Any])
+    inline def setContenttype(value: String): Self = StObject.set(x, "contenttype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContenttypeUndefined: Self = StObject.set(x, "contenttype", js.undefined)
+    inline def setContenttypeUndefined: Self = StObject.set(x, "contenttype", js.undefined)
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setParentid(value: String): Self = StObject.set(x, "parentid", value.asInstanceOf[js.Any])
+    inline def setParentid(value: String): Self = StObject.set(x, "parentid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentidUndefined: Self = StObject.set(x, "parentid", js.undefined)
+    inline def setParentidUndefined: Self = StObject.set(x, "parentid", js.undefined)
     
-    @scala.inline
-    def setReply(value: Boolean): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+    inline def setReply(value: Boolean): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
+    inline def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

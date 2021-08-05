@@ -12,10 +12,10 @@ object featureFileEventGeneratorMod {
   class FeatureFileEventGenerator protected () extends StObject {
     def this(eventBroadcaster: EventEmitter) = this()
     
-    var eventBroadcaster: js.Any = js.native
+    /* private */ var eventBroadcaster: js.Any = js.native
     
     def generateEventsFromFeatureFile(featureFilePath: String): js.Promise[Unit] = js.native
     
-    var processedFeatureFiles: js.Any = js.native
+    /* private */ var processedFeatureFiles: js.Any = js.native
   }
 }

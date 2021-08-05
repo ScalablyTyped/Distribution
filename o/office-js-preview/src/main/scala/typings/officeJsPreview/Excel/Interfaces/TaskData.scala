@@ -74,58 +74,41 @@ trait TaskData extends StObject {
 }
 object TaskData {
   
-  @scala.inline
-  def apply(): TaskData = {
+  inline def apply(): TaskData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskData]
   }
   
-  @scala.inline
-  implicit class TaskDataMutableBuilder[Self <: TaskData] (val x: Self) extends AnyVal {
+  extension [Self <: TaskData](x: Self) {
     
-    @scala.inline
-    def setAssignees(value: js.Array[User]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+    inline def setAssignees(value: js.Array[User]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
+    inline def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
     
-    @scala.inline
-    def setAssigneesVarargs(value: User*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+    inline def setAssigneesVarargs(value: User*): Self = StObject.set(x, "assignees", js.Array(value :_*))
     
-    @scala.inline
-    def setDueDate(value: Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
+    inline def setDueDate(value: Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
+    inline def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
+    inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -11,13 +11,11 @@ object timezonecompleteStrings {
   sealed trait local
     extends StObject
        with PeriodDstJson
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait regular
     extends StObject
        with PeriodDstJson
-  @scala.inline
-  def regular: regular = "regular".asInstanceOf[regular]
+  inline def regular: regular = "regular".asInstanceOf[regular]
 }

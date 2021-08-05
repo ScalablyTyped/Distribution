@@ -31,23 +31,19 @@ object Pipeline {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getRegisteredFunction(label: String): PipelineFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredFunction")(label.asInstanceOf[js.Any]).asInstanceOf[PipelineFunction]
+  inline def getRegisteredFunction(label: String): PipelineFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredFunction")(label.asInstanceOf[js.Any]).asInstanceOf[PipelineFunction]
   
   /* static member */
-  @scala.inline
-  def load(serialised: SerialisedPipeline): Pipeline = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialised.asInstanceOf[js.Any]).asInstanceOf[Pipeline]
+  inline def load(serialised: SerialisedPipeline): Pipeline = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialised.asInstanceOf[js.Any]).asInstanceOf[Pipeline]
   
   /* static member */
-  @scala.inline
-  def registerFunction(fn: PipelineFunction, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunction")(fn.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerFunction(fn: PipelineFunction, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunction")(fn.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object registeredFunctions {
     
     object stemmer {
       
-      @scala.inline
-      def apply(w: String): String = ^.asInstanceOf[js.Dynamic].apply(w.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def apply(w: String): String = ^.asInstanceOf[js.Dynamic].apply(w.asInstanceOf[js.Any]).asInstanceOf[String]
       
       @JSImport("elasticlunr", "Pipeline.registeredFunctions.stemmer")
       @js.native
@@ -60,8 +56,7 @@ object Pipeline {
     
     object stopWordFilter {
       
-      @scala.inline
-      def apply(token: String): String = ^.asInstanceOf[js.Dynamic].apply(token.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def apply(token: String): String = ^.asInstanceOf[js.Dynamic].apply(token.asInstanceOf[js.Any]).asInstanceOf[String]
       
       @JSImport("elasticlunr", "Pipeline.registeredFunctions.stopWordFilter")
       @js.native
@@ -74,8 +69,7 @@ object Pipeline {
     
     object trimmer {
       
-      @scala.inline
-      def apply(token: String): String = ^.asInstanceOf[js.Dynamic].apply(token.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def apply(token: String): String = ^.asInstanceOf[js.Dynamic].apply(token.asInstanceOf[js.Any]).asInstanceOf[String]
       
       @JSImport("elasticlunr", "Pipeline.registeredFunctions.trimmer")
       @js.native
@@ -88,6 +82,5 @@ object Pipeline {
   }
   
   /* static member */
-  @scala.inline
-  def warnIfFunctionNotRegistered(fn: PipelineFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnIfFunctionNotRegistered")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warnIfFunctionNotRegistered(fn: PipelineFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnIfFunctionNotRegistered")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

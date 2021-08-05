@@ -14,25 +14,19 @@ trait TextRun extends StObject {
 }
 object TextRun {
   
-  @scala.inline
-  def apply(): TextRun = {
+  inline def apply(): TextRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextRun]
   }
   
-  @scala.inline
-  implicit class TextRunMutableBuilder[Self <: TextRun] (val x: Self) extends AnyVal {
+  extension [Self <: TextRun](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setStyle(value: TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

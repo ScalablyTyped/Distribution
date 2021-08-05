@@ -12,53 +12,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: String, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(input: String, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     input: String,
     opts: CreateTorrentOptions,
     cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(
     input: js.Array[Buffer | File | ReadableStream | String],
     cb: js.Function2[Error | Null, /* torrent */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(
     input: js.Array[Buffer | File | ReadableStream | String],
     opts: CreateTorrentOptions,
     cb: js.Function2[Error | Null, /* torrent */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(input: Buffer, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(input: Buffer, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     input: Buffer,
     opts: CreateTorrentOptions,
     cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(input: ReadableStream, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(input: ReadableStream, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     input: ReadableStream,
     opts: CreateTorrentOptions,
     cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(input: FileList, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(input: FileList, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     input: FileList,
     opts: CreateTorrentOptions,
     cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(input: File, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(input: File, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     input: File,
     opts: CreateTorrentOptions,
     cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
@@ -99,74 +87,52 @@ object mod {
   }
   object CreateTorrentOptions {
     
-    @scala.inline
-    def apply(): CreateTorrentOptions = {
+    inline def apply(): CreateTorrentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateTorrentOptions]
     }
     
-    @scala.inline
-    implicit class CreateTorrentOptionsMutableBuilder[Self <: CreateTorrentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTorrentOptions](x: Self) {
       
-      @scala.inline
-      def setAnnounceList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "announceList", value.asInstanceOf[js.Any])
+      inline def setAnnounceList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "announceList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnounceListUndefined: Self = StObject.set(x, "announceList", js.undefined)
+      inline def setAnnounceListUndefined: Self = StObject.set(x, "announceList", js.undefined)
       
-      @scala.inline
-      def setAnnounceListVarargs(value: js.Array[String]*): Self = StObject.set(x, "announceList", js.Array(value :_*))
+      inline def setAnnounceListVarargs(value: js.Array[String]*): Self = StObject.set(x, "announceList", js.Array(value :_*))
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+      inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      @scala.inline
-      def setInfo(value: Record[String, String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Record[String, String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPieceLength(value: Double): Self = StObject.set(x, "pieceLength", value.asInstanceOf[js.Any])
+      inline def setPieceLength(value: Double): Self = StObject.set(x, "pieceLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPieceLengthUndefined: Self = StObject.set(x, "pieceLength", js.undefined)
+      inline def setPieceLengthUndefined: Self = StObject.set(x, "pieceLength", js.undefined)
       
-      @scala.inline
-      def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setUrlList(value: js.Array[String]): Self = StObject.set(x, "urlList", value.asInstanceOf[js.Any])
+      inline def setUrlList(value: js.Array[String]): Self = StObject.set(x, "urlList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlListUndefined: Self = StObject.set(x, "urlList", js.undefined)
+      inline def setUrlListUndefined: Self = StObject.set(x, "urlList", js.undefined)
       
-      @scala.inline
-      def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value :_*))
+      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value :_*))
     }
   }
 }

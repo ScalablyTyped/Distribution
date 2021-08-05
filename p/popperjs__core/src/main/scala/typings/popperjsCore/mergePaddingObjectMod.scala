@@ -12,6 +12,5 @@ object mergePaddingObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(paddingObject: PartialSideObject): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(paddingObject.asInstanceOf[js.Any]).asInstanceOf[SideObject]
+  inline def default(paddingObject: PartialSideObject): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(paddingObject.asInstanceOf[js.Any]).asInstanceOf[SideObject]
 }

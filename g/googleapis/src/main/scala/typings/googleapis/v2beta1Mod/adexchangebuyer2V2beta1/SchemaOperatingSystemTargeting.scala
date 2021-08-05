@@ -21,25 +21,19 @@ trait SchemaOperatingSystemTargeting extends StObject {
 }
 object SchemaOperatingSystemTargeting {
   
-  @scala.inline
-  def apply(): SchemaOperatingSystemTargeting = {
+  inline def apply(): SchemaOperatingSystemTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperatingSystemTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaOperatingSystemTargetingMutableBuilder[Self <: SchemaOperatingSystemTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperatingSystemTargeting](x: Self) {
     
-    @scala.inline
-    def setOperatingSystemCriteria(value: SchemaCriteriaTargeting): Self = StObject.set(x, "operatingSystemCriteria", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemCriteria(value: SchemaCriteriaTargeting): Self = StObject.set(x, "operatingSystemCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemCriteriaUndefined: Self = StObject.set(x, "operatingSystemCriteria", js.undefined)
+    inline def setOperatingSystemCriteriaUndefined: Self = StObject.set(x, "operatingSystemCriteria", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemVersionCriteria(value: SchemaCriteriaTargeting): Self = StObject.set(x, "operatingSystemVersionCriteria", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemVersionCriteria(value: SchemaCriteriaTargeting): Self = StObject.set(x, "operatingSystemVersionCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemVersionCriteriaUndefined: Self = StObject.set(x, "operatingSystemVersionCriteria", js.undefined)
+    inline def setOperatingSystemVersionCriteriaUndefined: Self = StObject.set(x, "operatingSystemVersionCriteria", js.undefined)
   }
 }

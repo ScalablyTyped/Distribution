@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "MetadataCollection")
 @js.native
-class MetadataCollection protected () extends StObject {
+/* private */ class MetadataCollection () extends StObject {
   
   def get(name: String): String | js.Array[String] | Double | Date | Null = js.native
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnimationEffectTimingFillMode extends StObject
 object AnimationEffectTimingFillMode {
   
-  @scala.inline
-  def auto: typings.webAnimationsJs.webAnimationsJsStrings.auto = "auto".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.auto]
+  inline def auto: typings.webAnimationsJs.webAnimationsJsStrings.auto = "auto".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.auto]
   
-  @scala.inline
-  def backwards: typings.webAnimationsJs.webAnimationsJsStrings.backwards = "backwards".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.backwards]
+  inline def backwards: typings.webAnimationsJs.webAnimationsJsStrings.backwards = "backwards".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.backwards]
   
-  @scala.inline
-  def both: typings.webAnimationsJs.webAnimationsJsStrings.both = "both".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.both]
+  inline def both: typings.webAnimationsJs.webAnimationsJsStrings.both = "both".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.both]
   
-  @scala.inline
-  def forwards: typings.webAnimationsJs.webAnimationsJsStrings.forwards = "forwards".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.forwards]
+  inline def forwards: typings.webAnimationsJs.webAnimationsJsStrings.forwards = "forwards".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.forwards]
   
-  @scala.inline
-  def none: typings.webAnimationsJs.webAnimationsJsStrings.none = "none".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.none]
+  inline def none: typings.webAnimationsJs.webAnimationsJsStrings.none = "none".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.none]
 }

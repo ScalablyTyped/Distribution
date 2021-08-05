@@ -23,37 +23,27 @@ trait GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest extends St
 }
 object GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequestMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest](x: Self) {
     
-    @scala.inline
-    def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = StObject.set(x, "errorsConfig", value.asInstanceOf[js.Any])
+    inline def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = StObject.set(x, "errorsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsConfigUndefined: Self = StObject.set(x, "errorsConfig", js.undefined)
+    inline def setErrorsConfigUndefined: Self = StObject.set(x, "errorsConfig", js.undefined)
     
-    @scala.inline
-    def setInputConfig(value: GoogleCloudRecommendationengineV1beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: GoogleCloudRecommendationengineV1beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

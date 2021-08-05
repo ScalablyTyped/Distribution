@@ -18,22 +18,17 @@ trait Metrics extends StObject {
 }
 object Metrics {
   
-  @scala.inline
-  def apply(Status: MetricsStatus): Metrics = {
+  inline def apply(Status: MetricsStatus): Metrics = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metrics]
   }
   
-  @scala.inline
-  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+  extension [Self <: Metrics](x: Self) {
     
-    @scala.inline
-    def setEventThreshold(value: ReplicationTimeValue): Self = StObject.set(x, "EventThreshold", value.asInstanceOf[js.Any])
+    inline def setEventThreshold(value: ReplicationTimeValue): Self = StObject.set(x, "EventThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventThresholdUndefined: Self = StObject.set(x, "EventThreshold", js.undefined)
+    inline def setEventThresholdUndefined: Self = StObject.set(x, "EventThreshold", js.undefined)
     
-    @scala.inline
-    def setStatus(value: MetricsStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MetricsStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

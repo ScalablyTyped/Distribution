@@ -18,26 +18,20 @@ object anon {
   }
   object Created {
     
-    @scala.inline
-    def apply(created: Double, priv: String, pub: String, sin: String): Created = {
+    inline def apply(created: Double, priv: String, pub: String, sin: String): Created = {
       val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], priv = priv.asInstanceOf[js.Any], pub = pub.asInstanceOf[js.Any], sin = sin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Created]
     }
     
-    @scala.inline
-    implicit class CreatedMutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
+    extension [Self <: Created](x: Self) {
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriv(value: String): Self = StObject.set(x, "priv", value.asInstanceOf[js.Any])
+      inline def setPriv(value: String): Self = StObject.set(x, "priv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+      inline def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSin(value: String): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
+      inline def setSin(value: String): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
     }
   }
 }

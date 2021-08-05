@@ -14,22 +14,17 @@ trait CategoricalValue extends StObject {
 }
 object CategoricalValue {
   
-  @scala.inline
-  def apply(): CategoricalValue = {
+  inline def apply(): CategoricalValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CategoricalValue]
   }
   
-  @scala.inline
-  implicit class CategoricalValueMutableBuilder[Self <: CategoricalValue] (val x: Self) extends AnyVal {
+  extension [Self <: CategoricalValue](x: Self) {
     
-    @scala.inline
-    def setCategoryCounts(value: js.Array[CategoryCount]): Self = StObject.set(x, "categoryCounts", value.asInstanceOf[js.Any])
+    inline def setCategoryCounts(value: js.Array[CategoryCount]): Self = StObject.set(x, "categoryCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryCountsUndefined: Self = StObject.set(x, "categoryCounts", js.undefined)
+    inline def setCategoryCountsUndefined: Self = StObject.set(x, "categoryCounts", js.undefined)
     
-    @scala.inline
-    def setCategoryCountsVarargs(value: CategoryCount*): Self = StObject.set(x, "categoryCounts", js.Array(value :_*))
+    inline def setCategoryCountsVarargs(value: CategoryCount*): Self = StObject.set(x, "categoryCounts", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait WebGLTexture extends StObject {
 }
 object WebGLTexture {
   
-  @scala.inline
-  def apply(__WebGLTexture: Unit): WebGLTexture = {
+  inline def apply(__WebGLTexture: Unit): WebGLTexture = {
     val __obj = js.Dynamic.literal(__WebGLTexture = __WebGLTexture.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLTexture]
   }
   
-  @scala.inline
-  implicit class WebGLTextureMutableBuilder[Self <: WebGLTexture] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLTexture](x: Self) {
     
-    @scala.inline
-    def set__WebGLTexture(value: Unit): Self = StObject.set(x, "__WebGLTexture", value.asInstanceOf[js.Any])
+    inline def set__WebGLTexture(value: Unit): Self = StObject.set(x, "__WebGLTexture", value.asInstanceOf[js.Any])
   }
 }

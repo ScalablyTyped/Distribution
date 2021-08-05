@@ -38,8 +38,7 @@ trait ILibConfig[Ext, C /* <: IClient */] extends StObject {
 }
 object ILibConfig {
   
-  @scala.inline
-  def apply[Ext, C /* <: IClient */](
+  inline def apply[Ext, C /* <: IClient */](
     $npm: js.Any,
     options: IInitOptions[Ext, C],
     pgp: IMain[Ext, C],
@@ -51,25 +50,18 @@ object ILibConfig {
     __obj.asInstanceOf[ILibConfig[Ext, C]]
   }
   
-  @scala.inline
-  implicit class ILibConfigMutableBuilder[Self <: ILibConfig[?, ?], Ext, C /* <: IClient */] (val x: Self & (ILibConfig[Ext, C])) extends AnyVal {
+  extension [Self <: ILibConfig[?, ?], Ext, C /* <: IClient */](x: Self & (ILibConfig[Ext, C])) {
     
-    @scala.inline
-    def set$npm(value: js.Any): Self = StObject.set(x, "$npm", value.asInstanceOf[js.Any])
+    inline def set$npm(value: js.Any): Self = StObject.set(x, "$npm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: IInitOptions[Ext, C]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IInitOptions[Ext, C]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgp(value: IMain[Ext, C]): Self = StObject.set(x, "pgp", value.asInstanceOf[js.Any])
+    inline def setPgp(value: IMain[Ext, C]): Self = StObject.set(x, "pgp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromise(value: IGenericPromise): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: IGenericPromise): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseLib(value: js.Any): Self = StObject.set(x, "promiseLib", value.asInstanceOf[js.Any])
+    inline def setPromiseLib(value: js.Any): Self = StObject.set(x, "promiseLib", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

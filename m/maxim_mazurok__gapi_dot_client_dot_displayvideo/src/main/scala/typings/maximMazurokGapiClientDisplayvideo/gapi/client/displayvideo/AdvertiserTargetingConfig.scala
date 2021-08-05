@@ -11,19 +11,15 @@ trait AdvertiserTargetingConfig extends StObject {
 }
 object AdvertiserTargetingConfig {
   
-  @scala.inline
-  def apply(): AdvertiserTargetingConfig = {
+  inline def apply(): AdvertiserTargetingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserTargetingConfig]
   }
   
-  @scala.inline
-  implicit class AdvertiserTargetingConfigMutableBuilder[Self <: AdvertiserTargetingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserTargetingConfig](x: Self) {
     
-    @scala.inline
-    def setExemptTvFromViewabilityTargeting(value: Boolean): Self = StObject.set(x, "exemptTvFromViewabilityTargeting", value.asInstanceOf[js.Any])
+    inline def setExemptTvFromViewabilityTargeting(value: Boolean): Self = StObject.set(x, "exemptTvFromViewabilityTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExemptTvFromViewabilityTargetingUndefined: Self = StObject.set(x, "exemptTvFromViewabilityTargeting", js.undefined)
+    inline def setExemptTvFromViewabilityTargetingUndefined: Self = StObject.set(x, "exemptTvFromViewabilityTargeting", js.undefined)
   }
 }

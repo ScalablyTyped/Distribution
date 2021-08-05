@@ -18,19 +18,15 @@ trait GetVpcEndpointDnsEntry extends StObject {
 }
 object GetVpcEndpointDnsEntry {
   
-  @scala.inline
-  def apply(dnsName: String, hostedZoneId: String): GetVpcEndpointDnsEntry = {
+  inline def apply(dnsName: String, hostedZoneId: String): GetVpcEndpointDnsEntry = {
     val __obj = js.Dynamic.literal(dnsName = dnsName.asInstanceOf[js.Any], hostedZoneId = hostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVpcEndpointDnsEntry]
   }
   
-  @scala.inline
-  implicit class GetVpcEndpointDnsEntryMutableBuilder[Self <: GetVpcEndpointDnsEntry] (val x: Self) extends AnyVal {
+  extension [Self <: GetVpcEndpointDnsEntry](x: Self) {
     
-    @scala.inline
-    def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
   }
 }

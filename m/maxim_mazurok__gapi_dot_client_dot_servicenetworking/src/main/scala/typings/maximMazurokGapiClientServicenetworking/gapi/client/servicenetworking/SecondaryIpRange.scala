@@ -14,25 +14,19 @@ trait SecondaryIpRange extends StObject {
 }
 object SecondaryIpRange {
   
-  @scala.inline
-  def apply(): SecondaryIpRange = {
+  inline def apply(): SecondaryIpRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecondaryIpRange]
   }
   
-  @scala.inline
-  implicit class SecondaryIpRangeMutableBuilder[Self <: SecondaryIpRange] (val x: Self) extends AnyVal {
+  extension [Self <: SecondaryIpRange](x: Self) {
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
-    @scala.inline
-    def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
+    inline def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeNameUndefined: Self = StObject.set(x, "rangeName", js.undefined)
+    inline def setRangeNameUndefined: Self = StObject.set(x, "rangeName", js.undefined)
   }
 }

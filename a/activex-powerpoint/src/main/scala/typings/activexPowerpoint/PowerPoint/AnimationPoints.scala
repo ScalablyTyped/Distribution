@@ -20,7 +20,7 @@ trait AnimationPoints extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.AnimationPoints_typekey")
+  /* private */ @JSName("PowerPoint.AnimationPoints_typekey")
   var PowerPointDotAnimationPoints_typekey: AnimationPoints = js.native
   
   var Smooth: MsoTriState = js.native

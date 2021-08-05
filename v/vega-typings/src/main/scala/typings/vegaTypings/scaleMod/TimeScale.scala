@@ -19,23 +19,18 @@ trait TimeScale
 }
 object TimeScale {
   
-  @scala.inline
-  def apply(name: String, `type`: time | utc): TimeScale = {
+  inline def apply(name: String, `type`: time | utc): TimeScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeScale]
   }
   
-  @scala.inline
-  implicit class TimeScaleMutableBuilder[Self <: TimeScale] (val x: Self) extends AnyVal {
+  extension [Self <: TimeScale](x: Self) {
     
-    @scala.inline
-    def setNice(value: Boolean | TimeInterval | TimeIntervalStep | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: Boolean | TimeInterval | TimeIntervalStep | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+    inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
     
-    @scala.inline
-    def setType(value: time | utc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: time | utc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ trait GetSampledRequestsRequest extends StObject {
 }
 object GetSampledRequestsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MaxItems: GetSampledRequestsMaxItems,
     RuleId: ResourceId,
     TimeWindow: TimeWindow,
@@ -39,19 +38,14 @@ object GetSampledRequestsRequest {
     __obj.asInstanceOf[GetSampledRequestsRequest]
   }
   
-  @scala.inline
-  implicit class GetSampledRequestsRequestMutableBuilder[Self <: GetSampledRequestsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSampledRequestsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxItems(value: GetSampledRequestsMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: GetSampledRequestsMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
+    inline def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAclId(value: ResourceId): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
+    inline def setWebAclId(value: ResourceId): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
   }
 }

@@ -16,20 +16,16 @@ object s3outposts {
   }
   object EndpointNetworkInterface {
     
-    @scala.inline
-    def apply(): EndpointNetworkInterface = {
+    inline def apply(): EndpointNetworkInterface = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointNetworkInterface]
     }
     
-    @scala.inline
-    implicit class EndpointNetworkInterfaceMutableBuilder[Self <: EndpointNetworkInterface] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointNetworkInterface](x: Self) {
       
-      @scala.inline
-      def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
+      inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
     }
   }
 }

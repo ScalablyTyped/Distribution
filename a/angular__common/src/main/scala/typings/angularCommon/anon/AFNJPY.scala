@@ -14,31 +14,23 @@ trait AFNJPY extends StObject {
 }
 object AFNJPY {
   
-  @scala.inline
-  def apply(AFN: js.Array[String], JPY: js.Array[String], PKR: js.Array[String]): AFNJPY = {
+  inline def apply(AFN: js.Array[String], JPY: js.Array[String], PKR: js.Array[String]): AFNJPY = {
     val __obj = js.Dynamic.literal(AFN = AFN.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], PKR = PKR.asInstanceOf[js.Any])
     __obj.asInstanceOf[AFNJPY]
   }
   
-  @scala.inline
-  implicit class AFNJPYMutableBuilder[Self <: AFNJPY] (val x: Self) extends AnyVal {
+  extension [Self <: AFNJPY](x: Self) {
     
-    @scala.inline
-    def setAFN(value: js.Array[String]): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
+    inline def setAFN(value: js.Array[String]): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAFNVarargs(value: String*): Self = StObject.set(x, "AFN", js.Array(value :_*))
+    inline def setAFNVarargs(value: String*): Self = StObject.set(x, "AFN", js.Array(value :_*))
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setPKR(value: js.Array[String]): Self = StObject.set(x, "PKR", value.asInstanceOf[js.Any])
+    inline def setPKR(value: js.Array[String]): Self = StObject.set(x, "PKR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPKRVarargs(value: String*): Self = StObject.set(x, "PKR", js.Array(value :_*))
+    inline def setPKRVarargs(value: String*): Self = StObject.set(x, "PKR", js.Array(value :_*))
   }
 }

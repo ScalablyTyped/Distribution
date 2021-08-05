@@ -88,118 +88,81 @@ trait ResizeProgressMessage extends StObject {
 }
 object ResizeProgressMessage {
   
-  @scala.inline
-  def apply(): ResizeProgressMessage = {
+  inline def apply(): ResizeProgressMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizeProgressMessage]
   }
   
-  @scala.inline
-  implicit class ResizeProgressMessageMutableBuilder[Self <: ResizeProgressMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeProgressMessage](x: Self) {
     
-    @scala.inline
-    def setAvgResizeRateInMegaBytesPerSecond(value: DoubleOptional): Self = StObject.set(x, "AvgResizeRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
+    inline def setAvgResizeRateInMegaBytesPerSecond(value: DoubleOptional): Self = StObject.set(x, "AvgResizeRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvgResizeRateInMegaBytesPerSecondUndefined: Self = StObject.set(x, "AvgResizeRateInMegaBytesPerSecond", js.undefined)
+    inline def setAvgResizeRateInMegaBytesPerSecondUndefined: Self = StObject.set(x, "AvgResizeRateInMegaBytesPerSecond", js.undefined)
     
-    @scala.inline
-    def setDataTransferProgressPercent(value: DoubleOptional): Self = StObject.set(x, "DataTransferProgressPercent", value.asInstanceOf[js.Any])
+    inline def setDataTransferProgressPercent(value: DoubleOptional): Self = StObject.set(x, "DataTransferProgressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTransferProgressPercentUndefined: Self = StObject.set(x, "DataTransferProgressPercent", js.undefined)
+    inline def setDataTransferProgressPercentUndefined: Self = StObject.set(x, "DataTransferProgressPercent", js.undefined)
     
-    @scala.inline
-    def setElapsedTimeInSeconds(value: LongOptional): Self = StObject.set(x, "ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setElapsedTimeInSeconds(value: LongOptional): Self = StObject.set(x, "ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTimeInSecondsUndefined: Self = StObject.set(x, "ElapsedTimeInSeconds", js.undefined)
+    inline def setElapsedTimeInSecondsUndefined: Self = StObject.set(x, "ElapsedTimeInSeconds", js.undefined)
     
-    @scala.inline
-    def setEstimatedTimeToCompletionInSeconds(value: LongOptional): Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
+    inline def setEstimatedTimeToCompletionInSeconds(value: LongOptional): Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedTimeToCompletionInSecondsUndefined: Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", js.undefined)
+    inline def setEstimatedTimeToCompletionInSecondsUndefined: Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", js.undefined)
     
-    @scala.inline
-    def setImportTablesCompleted(value: ImportTablesCompleted): Self = StObject.set(x, "ImportTablesCompleted", value.asInstanceOf[js.Any])
+    inline def setImportTablesCompleted(value: ImportTablesCompleted): Self = StObject.set(x, "ImportTablesCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTablesCompletedUndefined: Self = StObject.set(x, "ImportTablesCompleted", js.undefined)
+    inline def setImportTablesCompletedUndefined: Self = StObject.set(x, "ImportTablesCompleted", js.undefined)
     
-    @scala.inline
-    def setImportTablesCompletedVarargs(value: String*): Self = StObject.set(x, "ImportTablesCompleted", js.Array(value :_*))
+    inline def setImportTablesCompletedVarargs(value: String*): Self = StObject.set(x, "ImportTablesCompleted", js.Array(value :_*))
     
-    @scala.inline
-    def setImportTablesInProgress(value: ImportTablesInProgress): Self = StObject.set(x, "ImportTablesInProgress", value.asInstanceOf[js.Any])
+    inline def setImportTablesInProgress(value: ImportTablesInProgress): Self = StObject.set(x, "ImportTablesInProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTablesInProgressUndefined: Self = StObject.set(x, "ImportTablesInProgress", js.undefined)
+    inline def setImportTablesInProgressUndefined: Self = StObject.set(x, "ImportTablesInProgress", js.undefined)
     
-    @scala.inline
-    def setImportTablesInProgressVarargs(value: String*): Self = StObject.set(x, "ImportTablesInProgress", js.Array(value :_*))
+    inline def setImportTablesInProgressVarargs(value: String*): Self = StObject.set(x, "ImportTablesInProgress", js.Array(value :_*))
     
-    @scala.inline
-    def setImportTablesNotStarted(value: ImportTablesNotStarted): Self = StObject.set(x, "ImportTablesNotStarted", value.asInstanceOf[js.Any])
+    inline def setImportTablesNotStarted(value: ImportTablesNotStarted): Self = StObject.set(x, "ImportTablesNotStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTablesNotStartedUndefined: Self = StObject.set(x, "ImportTablesNotStarted", js.undefined)
+    inline def setImportTablesNotStartedUndefined: Self = StObject.set(x, "ImportTablesNotStarted", js.undefined)
     
-    @scala.inline
-    def setImportTablesNotStartedVarargs(value: String*): Self = StObject.set(x, "ImportTablesNotStarted", js.Array(value :_*))
+    inline def setImportTablesNotStartedVarargs(value: String*): Self = StObject.set(x, "ImportTablesNotStarted", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setProgressInMegaBytes(value: LongOptional): Self = StObject.set(x, "ProgressInMegaBytes", value.asInstanceOf[js.Any])
+    inline def setProgressInMegaBytes(value: LongOptional): Self = StObject.set(x, "ProgressInMegaBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressInMegaBytesUndefined: Self = StObject.set(x, "ProgressInMegaBytes", js.undefined)
+    inline def setProgressInMegaBytesUndefined: Self = StObject.set(x, "ProgressInMegaBytes", js.undefined)
     
-    @scala.inline
-    def setResizeType(value: String): Self = StObject.set(x, "ResizeType", value.asInstanceOf[js.Any])
+    inline def setResizeType(value: String): Self = StObject.set(x, "ResizeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeTypeUndefined: Self = StObject.set(x, "ResizeType", js.undefined)
+    inline def setResizeTypeUndefined: Self = StObject.set(x, "ResizeType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargetClusterType(value: String): Self = StObject.set(x, "TargetClusterType", value.asInstanceOf[js.Any])
+    inline def setTargetClusterType(value: String): Self = StObject.set(x, "TargetClusterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetClusterTypeUndefined: Self = StObject.set(x, "TargetClusterType", js.undefined)
+    inline def setTargetClusterTypeUndefined: Self = StObject.set(x, "TargetClusterType", js.undefined)
     
-    @scala.inline
-    def setTargetEncryptionType(value: String): Self = StObject.set(x, "TargetEncryptionType", value.asInstanceOf[js.Any])
+    inline def setTargetEncryptionType(value: String): Self = StObject.set(x, "TargetEncryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetEncryptionTypeUndefined: Self = StObject.set(x, "TargetEncryptionType", js.undefined)
+    inline def setTargetEncryptionTypeUndefined: Self = StObject.set(x, "TargetEncryptionType", js.undefined)
     
-    @scala.inline
-    def setTargetNodeType(value: String): Self = StObject.set(x, "TargetNodeType", value.asInstanceOf[js.Any])
+    inline def setTargetNodeType(value: String): Self = StObject.set(x, "TargetNodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNodeTypeUndefined: Self = StObject.set(x, "TargetNodeType", js.undefined)
+    inline def setTargetNodeTypeUndefined: Self = StObject.set(x, "TargetNodeType", js.undefined)
     
-    @scala.inline
-    def setTargetNumberOfNodes(value: IntegerOptional): Self = StObject.set(x, "TargetNumberOfNodes", value.asInstanceOf[js.Any])
+    inline def setTargetNumberOfNodes(value: IntegerOptional): Self = StObject.set(x, "TargetNumberOfNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNumberOfNodesUndefined: Self = StObject.set(x, "TargetNumberOfNodes", js.undefined)
+    inline def setTargetNumberOfNodesUndefined: Self = StObject.set(x, "TargetNumberOfNodes", js.undefined)
     
-    @scala.inline
-    def setTotalResizeDataInMegaBytes(value: LongOptional): Self = StObject.set(x, "TotalResizeDataInMegaBytes", value.asInstanceOf[js.Any])
+    inline def setTotalResizeDataInMegaBytes(value: LongOptional): Self = StObject.set(x, "TotalResizeDataInMegaBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResizeDataInMegaBytesUndefined: Self = StObject.set(x, "TotalResizeDataInMegaBytes", js.undefined)
+    inline def setTotalResizeDataInMegaBytesUndefined: Self = StObject.set(x, "TotalResizeDataInMegaBytes", js.undefined)
   }
 }

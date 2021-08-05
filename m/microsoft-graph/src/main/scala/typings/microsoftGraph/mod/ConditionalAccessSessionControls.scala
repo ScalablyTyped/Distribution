@@ -26,49 +26,35 @@ trait ConditionalAccessSessionControls extends StObject {
 }
 object ConditionalAccessSessionControls {
   
-  @scala.inline
-  def apply(): ConditionalAccessSessionControls = {
+  inline def apply(): ConditionalAccessSessionControls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalAccessSessionControls]
   }
   
-  @scala.inline
-  implicit class ConditionalAccessSessionControlsMutableBuilder[Self <: ConditionalAccessSessionControls] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalAccessSessionControls](x: Self) {
     
-    @scala.inline
-    def setApplicationEnforcedRestrictions(value: NullableOption[ApplicationEnforcedRestrictionsSessionControl]): Self = StObject.set(x, "applicationEnforcedRestrictions", value.asInstanceOf[js.Any])
+    inline def setApplicationEnforcedRestrictions(value: NullableOption[ApplicationEnforcedRestrictionsSessionControl]): Self = StObject.set(x, "applicationEnforcedRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationEnforcedRestrictionsNull: Self = StObject.set(x, "applicationEnforcedRestrictions", null)
+    inline def setApplicationEnforcedRestrictionsNull: Self = StObject.set(x, "applicationEnforcedRestrictions", null)
     
-    @scala.inline
-    def setApplicationEnforcedRestrictionsUndefined: Self = StObject.set(x, "applicationEnforcedRestrictions", js.undefined)
+    inline def setApplicationEnforcedRestrictionsUndefined: Self = StObject.set(x, "applicationEnforcedRestrictions", js.undefined)
     
-    @scala.inline
-    def setCloudAppSecurity(value: NullableOption[CloudAppSecuritySessionControl]): Self = StObject.set(x, "cloudAppSecurity", value.asInstanceOf[js.Any])
+    inline def setCloudAppSecurity(value: NullableOption[CloudAppSecuritySessionControl]): Self = StObject.set(x, "cloudAppSecurity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudAppSecurityNull: Self = StObject.set(x, "cloudAppSecurity", null)
+    inline def setCloudAppSecurityNull: Self = StObject.set(x, "cloudAppSecurity", null)
     
-    @scala.inline
-    def setCloudAppSecurityUndefined: Self = StObject.set(x, "cloudAppSecurity", js.undefined)
+    inline def setCloudAppSecurityUndefined: Self = StObject.set(x, "cloudAppSecurity", js.undefined)
     
-    @scala.inline
-    def setPersistentBrowser(value: NullableOption[PersistentBrowserSessionControl]): Self = StObject.set(x, "persistentBrowser", value.asInstanceOf[js.Any])
+    inline def setPersistentBrowser(value: NullableOption[PersistentBrowserSessionControl]): Self = StObject.set(x, "persistentBrowser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentBrowserNull: Self = StObject.set(x, "persistentBrowser", null)
+    inline def setPersistentBrowserNull: Self = StObject.set(x, "persistentBrowser", null)
     
-    @scala.inline
-    def setPersistentBrowserUndefined: Self = StObject.set(x, "persistentBrowser", js.undefined)
+    inline def setPersistentBrowserUndefined: Self = StObject.set(x, "persistentBrowser", js.undefined)
     
-    @scala.inline
-    def setSignInFrequency(value: NullableOption[SignInFrequencySessionControl]): Self = StObject.set(x, "signInFrequency", value.asInstanceOf[js.Any])
+    inline def setSignInFrequency(value: NullableOption[SignInFrequencySessionControl]): Self = StObject.set(x, "signInFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignInFrequencyNull: Self = StObject.set(x, "signInFrequency", null)
+    inline def setSignInFrequencyNull: Self = StObject.set(x, "signInFrequency", null)
     
-    @scala.inline
-    def setSignInFrequencyUndefined: Self = StObject.set(x, "signInFrequency", js.undefined)
+    inline def setSignInFrequencyUndefined: Self = StObject.set(x, "signInFrequency", js.undefined)
   }
 }

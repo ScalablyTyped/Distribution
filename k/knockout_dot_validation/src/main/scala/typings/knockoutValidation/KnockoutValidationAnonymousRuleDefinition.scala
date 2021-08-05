@@ -10,16 +10,13 @@ trait KnockoutValidationAnonymousRuleDefinition extends StObject {
 }
 object KnockoutValidationAnonymousRuleDefinition {
   
-  @scala.inline
-  def apply(validation: KnockoutValidationRuleDefinition): KnockoutValidationAnonymousRuleDefinition = {
+  inline def apply(validation: KnockoutValidationRuleDefinition): KnockoutValidationAnonymousRuleDefinition = {
     val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutValidationAnonymousRuleDefinition]
   }
   
-  @scala.inline
-  implicit class KnockoutValidationAnonymousRuleDefinitionMutableBuilder[Self <: KnockoutValidationAnonymousRuleDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutValidationAnonymousRuleDefinition](x: Self) {
     
-    @scala.inline
-    def setValidation(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
   }
 }

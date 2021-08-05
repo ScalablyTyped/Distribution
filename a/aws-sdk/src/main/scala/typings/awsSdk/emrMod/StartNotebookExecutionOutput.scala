@@ -13,19 +13,15 @@ trait StartNotebookExecutionOutput extends StObject {
 }
 object StartNotebookExecutionOutput {
   
-  @scala.inline
-  def apply(): StartNotebookExecutionOutput = {
+  inline def apply(): StartNotebookExecutionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartNotebookExecutionOutput]
   }
   
-  @scala.inline
-  implicit class StartNotebookExecutionOutputMutableBuilder[Self <: StartNotebookExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StartNotebookExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setNotebookExecutionId(value: XmlStringMaxLen256): Self = StObject.set(x, "NotebookExecutionId", value.asInstanceOf[js.Any])
+    inline def setNotebookExecutionId(value: XmlStringMaxLen256): Self = StObject.set(x, "NotebookExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookExecutionIdUndefined: Self = StObject.set(x, "NotebookExecutionId", js.undefined)
+    inline def setNotebookExecutionIdUndefined: Self = StObject.set(x, "NotebookExecutionId", js.undefined)
   }
 }

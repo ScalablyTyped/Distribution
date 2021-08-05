@@ -27,8 +27,7 @@ object media {
   @JSGlobal("chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID")
   @js.native
   def DEFAULT_MEDIA_RECEIVER_APP_ID: String = js.native
-  @scala.inline
-  def DEFAULT_MEDIA_RECEIVER_APP_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MEDIA_RECEIVER_APP_ID")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_MEDIA_RECEIVER_APP_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MEDIA_RECEIVER_APP_ID")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.cast.media.EditTracksInfoRequest")
   @js.native
@@ -1199,79 +1198,66 @@ object media {
     @JSGlobal("chrome.cast.media.timeout.editTracksInfo")
     @js.native
     def editTracksInfo: Double = js.native
-    @scala.inline
-    def editTracksInfo_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editTracksInfo")(x.asInstanceOf[js.Any])
+    inline def editTracksInfo_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editTracksInfo")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.getStatus")
     @js.native
     def getStatus: Double = js.native
-    @scala.inline
-    def getStatus_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStatus")(x.asInstanceOf[js.Any])
+    inline def getStatus_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStatus")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.load")
     @js.native
     def load: Double = js.native
-    @scala.inline
-    def load_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("load")(x.asInstanceOf[js.Any])
+    inline def load_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("load")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.pause")
     @js.native
     def pause: Double = js.native
-    @scala.inline
-    def pause_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pause")(x.asInstanceOf[js.Any])
+    inline def pause_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pause")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.play")
     @js.native
     def play: Double = js.native
-    @scala.inline
-    def play_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("play")(x.asInstanceOf[js.Any])
+    inline def play_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("play")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.queueInsert")
     @js.native
     def queueInsert: Double = js.native
-    @scala.inline
-    def queueInsert_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueInsert")(x.asInstanceOf[js.Any])
+    inline def queueInsert_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueInsert")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.queueLoad")
     @js.native
     def queueLoad: Double = js.native
-    @scala.inline
-    def queueLoad_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueLoad")(x.asInstanceOf[js.Any])
+    inline def queueLoad_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueLoad")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.queueRemove")
     @js.native
     def queueRemove: Double = js.native
-    @scala.inline
-    def queueRemove_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueRemove")(x.asInstanceOf[js.Any])
+    inline def queueRemove_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueRemove")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.queueReorder")
     @js.native
     def queueReorder: Double = js.native
-    @scala.inline
-    def queueReorder_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueReorder")(x.asInstanceOf[js.Any])
+    inline def queueReorder_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueReorder")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.queueUpdate")
     @js.native
     def queueUpdate: Double = js.native
-    @scala.inline
-    def queueUpdate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueUpdate")(x.asInstanceOf[js.Any])
+    inline def queueUpdate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueUpdate")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.seek")
     @js.native
     def seek: Double = js.native
-    @scala.inline
-    def seek_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seek")(x.asInstanceOf[js.Any])
+    inline def seek_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seek")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.setVolume")
     @js.native
     def setVolume: Double = js.native
-    @scala.inline
-    def setVolume_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setVolume")(x.asInstanceOf[js.Any])
+    inline def setVolume_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setVolume")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.cast.media.timeout.stop")
     @js.native
     def stop: Double = js.native
-    @scala.inline
-    def stop_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stop")(x.asInstanceOf[js.Any])
+    inline def stop_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stop")(x.asInstanceOf[js.Any])
   }
 }

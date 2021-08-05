@@ -17,43 +17,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Layout extends StObject
 object Layout {
   
-  @scala.inline
-  def BaseLayout(): typings.log4js.mod.BaseLayout = {
+  inline def BaseLayout(): typings.log4js.mod.BaseLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[typings.log4js.mod.BaseLayout]
   }
   
-  @scala.inline
-  def ColoredLayout(`type`: colored | coloured): typings.log4js.mod.ColoredLayout = {
+  inline def ColoredLayout(`type`: colored | coloured): typings.log4js.mod.ColoredLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.log4js.mod.ColoredLayout]
   }
   
-  @scala.inline
-  def CustomLayout(`type`: String): typings.log4js.mod.CustomLayout = {
+  inline def CustomLayout(`type`: String): typings.log4js.mod.CustomLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.log4js.mod.CustomLayout]
   }
   
-  @scala.inline
-  def DummyLayout(): typings.log4js.mod.DummyLayout = {
+  inline def DummyLayout(): typings.log4js.mod.DummyLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("dummy")
     __obj.asInstanceOf[typings.log4js.mod.DummyLayout]
   }
   
-  @scala.inline
-  def MessagePassThroughLayout(): typings.log4js.mod.MessagePassThroughLayout = {
+  inline def MessagePassThroughLayout(): typings.log4js.mod.MessagePassThroughLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("messagePassThrough")
     __obj.asInstanceOf[typings.log4js.mod.MessagePassThroughLayout]
   }
   
-  @scala.inline
-  def PatternLayout(pattern: String): typings.log4js.mod.PatternLayout = {
+  inline def PatternLayout(pattern: String): typings.log4js.mod.PatternLayout = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[typings.log4js.mod.PatternLayout]

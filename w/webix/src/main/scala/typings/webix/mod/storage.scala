@@ -18,16 +18,12 @@ object storage {
   @js.native
   val ^ : typings.webix.webix.storage = js.native
   
-  @scala.inline
-  implicit class storageMutableBuilder[Self <: storage] (val x: Self) extends AnyVal {
+  extension [Self <: storage](x: Self) {
     
-    @scala.inline
-    def setCookie(value: typings.webix.webix.cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: typings.webix.webix.cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: typings.webix.webix.local): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: typings.webix.webix.local): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: typings.webix.webix.session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: typings.webix.webix.session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

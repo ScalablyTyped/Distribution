@@ -26,22 +26,17 @@ trait ISearchCharRange extends StObject {
 }
 object ISearchCharRange {
   
-  @scala.inline
-  def apply(qCharCount: Double, qCharPos: Double, qTerm: Double): ISearchCharRange = {
+  inline def apply(qCharCount: Double, qCharPos: Double, qTerm: Double): ISearchCharRange = {
     val __obj = js.Dynamic.literal(qCharCount = qCharCount.asInstanceOf[js.Any], qCharPos = qCharPos.asInstanceOf[js.Any], qTerm = qTerm.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchCharRange]
   }
   
-  @scala.inline
-  implicit class ISearchCharRangeMutableBuilder[Self <: ISearchCharRange] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchCharRange](x: Self) {
     
-    @scala.inline
-    def setQCharCount(value: Double): Self = StObject.set(x, "qCharCount", value.asInstanceOf[js.Any])
+    inline def setQCharCount(value: Double): Self = StObject.set(x, "qCharCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCharPos(value: Double): Self = StObject.set(x, "qCharPos", value.asInstanceOf[js.Any])
+    inline def setQCharPos(value: Double): Self = StObject.set(x, "qCharPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTerm(value: Double): Self = StObject.set(x, "qTerm", value.asInstanceOf[js.Any])
+    inline def setQTerm(value: Double): Self = StObject.set(x, "qTerm", value.asInstanceOf[js.Any])
   }
 }

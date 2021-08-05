@@ -23,37 +23,27 @@ trait UsageCriteria extends StObject {
 }
 object UsageCriteria {
   
-  @scala.inline
-  def apply(DataSources: DataSourceList): UsageCriteria = {
+  inline def apply(DataSources: DataSourceList): UsageCriteria = {
     val __obj = js.Dynamic.literal(DataSources = DataSources.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageCriteria]
   }
   
-  @scala.inline
-  implicit class UsageCriteriaMutableBuilder[Self <: UsageCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: UsageCriteria](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSources(value: DataSourceList): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: DataSourceList): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "DataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "DataSources", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
   }
 }

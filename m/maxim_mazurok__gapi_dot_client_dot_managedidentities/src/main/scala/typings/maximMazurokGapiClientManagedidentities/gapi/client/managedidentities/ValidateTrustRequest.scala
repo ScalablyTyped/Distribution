@@ -11,19 +11,15 @@ trait ValidateTrustRequest extends StObject {
 }
 object ValidateTrustRequest {
   
-  @scala.inline
-  def apply(): ValidateTrustRequest = {
+  inline def apply(): ValidateTrustRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateTrustRequest]
   }
   
-  @scala.inline
-  implicit class ValidateTrustRequestMutableBuilder[Self <: ValidateTrustRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateTrustRequest](x: Self) {
     
-    @scala.inline
-    def setTrust(value: Trust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
+    inline def setTrust(value: Trust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustUndefined: Self = StObject.set(x, "trust", js.undefined)
+    inline def setTrustUndefined: Self = StObject.set(x, "trust", js.undefined)
   }
 }

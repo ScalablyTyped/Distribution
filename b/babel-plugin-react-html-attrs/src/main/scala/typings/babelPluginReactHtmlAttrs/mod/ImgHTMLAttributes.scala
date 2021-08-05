@@ -52,79 +52,55 @@ trait ImgHTMLAttributes[T]
 }
 object ImgHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): ImgHTMLAttributes[T] = {
+  inline def apply[T](): ImgHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImgHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class ImgHTMLAttributesMutableBuilder[Self <: ImgHTMLAttributes[?], T] (val x: Self & ImgHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: ImgHTMLAttributes[?], T](x: Self & ImgHTMLAttributes[T]) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    @scala.inline
-    def setDecoding(value: async | auto | sync): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
+    inline def setDecoding(value: async | auto | sync): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
+    inline def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLoading(value: eager | typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.`lazy`): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: eager | typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.`lazy`): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setReferrerPolicy(value: `no-referrer` | origin | `unsafe-url`): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+    inline def setReferrerPolicy(value: `no-referrer` | origin | `unsafe-url`): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+    inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
     
-    @scala.inline
-    def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+    inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+    inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
+    inline def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
+    inline def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMapUndefined: Self = StObject.set(x, "useMap", js.undefined)
+    inline def setUseMapUndefined: Self = StObject.set(x, "useMap", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

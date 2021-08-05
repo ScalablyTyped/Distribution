@@ -16,37 +16,27 @@ trait SplitViewOptions extends StObject {
 }
 object SplitViewOptions {
   
-  @scala.inline
-  def apply(): SplitViewOptions = {
+  inline def apply(): SplitViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplitViewOptions]
   }
   
-  @scala.inline
-  implicit class SplitViewOptionsMutableBuilder[Self <: SplitViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SplitViewOptions](x: Self) {
     
-    @scala.inline
-    def setInit(value: /* e */ SplitViewInitEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* e */ SplitViewInitEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setShow(value: /* e */ SplitViewShowEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* e */ SplitViewShowEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

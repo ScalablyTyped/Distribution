@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCompatibilityMode extends StObject
 object WdCompatibilityMode {
   
-  @scala.inline
-  def wdCurrent: `65535` = 65535.asInstanceOf[`65535`]
+  inline def wdCurrent: `65535` = 65535.asInstanceOf[`65535`]
   
-  @scala.inline
-  def wdWord2003: `11` = 11.asInstanceOf[`11`]
+  inline def wdWord2003: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def wdWord2007: `12` = 12.asInstanceOf[`12`]
+  inline def wdWord2007: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def wdWord2010: `14` = 14.asInstanceOf[`14`]
+  inline def wdWord2010: `14` = 14.asInstanceOf[`14`]
 }

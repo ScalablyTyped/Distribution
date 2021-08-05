@@ -16,8 +16,7 @@ trait ExtensionStatisticUpdate extends StObject {
 }
 object ExtensionStatisticUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extensionName: String,
     operation: ExtensionStatisticOperation,
     publisherName: String,
@@ -27,19 +26,14 @@ object ExtensionStatisticUpdate {
     __obj.asInstanceOf[ExtensionStatisticUpdate]
   }
   
-  @scala.inline
-  implicit class ExtensionStatisticUpdateMutableBuilder[Self <: ExtensionStatisticUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionStatisticUpdate](x: Self) {
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: ExtensionStatisticOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: ExtensionStatisticOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistic(value: ExtensionStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: ExtensionStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
   }
 }

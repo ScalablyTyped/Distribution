@@ -10,16 +10,13 @@ trait OnBufferData extends StObject {
 }
 object OnBufferData {
   
-  @scala.inline
-  def apply(isBuffering: Boolean): OnBufferData = {
+  inline def apply(isBuffering: Boolean): OnBufferData = {
     val __obj = js.Dynamic.literal(isBuffering = isBuffering.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBufferData]
   }
   
-  @scala.inline
-  implicit class OnBufferDataMutableBuilder[Self <: OnBufferData] (val x: Self) extends AnyVal {
+  extension [Self <: OnBufferData](x: Self) {
     
-    @scala.inline
-    def setIsBuffering(value: Boolean): Self = StObject.set(x, "isBuffering", value.asInstanceOf[js.Any])
+    inline def setIsBuffering(value: Boolean): Self = StObject.set(x, "isBuffering", value.asInstanceOf[js.Any])
   }
 }

@@ -23,37 +23,27 @@ trait HostbasedAuthMethodData
 }
 object HostbasedAuthMethodData {
   
-  @scala.inline
-  def apply(key: Buffer, keyAlgo: String, localHostname: String, localUsername: String): HostbasedAuthMethodData = {
+  inline def apply(key: Buffer, keyAlgo: String, localHostname: String, localUsername: String): HostbasedAuthMethodData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyAlgo = keyAlgo.asInstanceOf[js.Any], localHostname = localHostname.asInstanceOf[js.Any], localUsername = localUsername.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostbasedAuthMethodData]
   }
   
-  @scala.inline
-  implicit class HostbasedAuthMethodDataMutableBuilder[Self <: HostbasedAuthMethodData] (val x: Self) extends AnyVal {
+  extension [Self <: HostbasedAuthMethodData](x: Self) {
     
-    @scala.inline
-    def setBlob(value: Buffer): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: Buffer): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
-    @scala.inline
-    def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAlgo(value: String): Self = StObject.set(x, "keyAlgo", value.asInstanceOf[js.Any])
+    inline def setKeyAlgo(value: String): Self = StObject.set(x, "keyAlgo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalHostname(value: String): Self = StObject.set(x, "localHostname", value.asInstanceOf[js.Any])
+    inline def setLocalHostname(value: String): Self = StObject.set(x, "localHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUsername(value: String): Self = StObject.set(x, "localUsername", value.asInstanceOf[js.Any])
+    inline def setLocalUsername(value: String): Self = StObject.set(x, "localUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

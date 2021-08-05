@@ -23,31 +23,23 @@ trait DescribeConstraintOutput extends StObject {
 }
 object DescribeConstraintOutput {
   
-  @scala.inline
-  def apply(): DescribeConstraintOutput = {
+  inline def apply(): DescribeConstraintOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConstraintOutput]
   }
   
-  @scala.inline
-  implicit class DescribeConstraintOutputMutableBuilder[Self <: DescribeConstraintOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConstraintOutput](x: Self) {
     
-    @scala.inline
-    def setConstraintDetail(value: ConstraintDetail): Self = StObject.set(x, "ConstraintDetail", value.asInstanceOf[js.Any])
+    inline def setConstraintDetail(value: ConstraintDetail): Self = StObject.set(x, "ConstraintDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintDetailUndefined: Self = StObject.set(x, "ConstraintDetail", js.undefined)
+    inline def setConstraintDetailUndefined: Self = StObject.set(x, "ConstraintDetail", js.undefined)
     
-    @scala.inline
-    def setConstraintParameters(value: ConstraintParameters): Self = StObject.set(x, "ConstraintParameters", value.asInstanceOf[js.Any])
+    inline def setConstraintParameters(value: ConstraintParameters): Self = StObject.set(x, "ConstraintParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintParametersUndefined: Self = StObject.set(x, "ConstraintParameters", js.undefined)
+    inline def setConstraintParametersUndefined: Self = StObject.set(x, "ConstraintParameters", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

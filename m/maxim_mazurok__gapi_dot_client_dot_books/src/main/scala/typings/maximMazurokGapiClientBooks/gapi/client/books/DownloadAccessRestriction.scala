@@ -44,85 +44,59 @@ trait DownloadAccessRestriction extends StObject {
 }
 object DownloadAccessRestriction {
   
-  @scala.inline
-  def apply(): DownloadAccessRestriction = {
+  inline def apply(): DownloadAccessRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadAccessRestriction]
   }
   
-  @scala.inline
-  implicit class DownloadAccessRestrictionMutableBuilder[Self <: DownloadAccessRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadAccessRestriction](x: Self) {
     
-    @scala.inline
-    def setDeviceAllowed(value: Boolean): Self = StObject.set(x, "deviceAllowed", value.asInstanceOf[js.Any])
+    inline def setDeviceAllowed(value: Boolean): Self = StObject.set(x, "deviceAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceAllowedUndefined: Self = StObject.set(x, "deviceAllowed", js.undefined)
+    inline def setDeviceAllowedUndefined: Self = StObject.set(x, "deviceAllowed", js.undefined)
     
-    @scala.inline
-    def setDownloadsAcquired(value: Double): Self = StObject.set(x, "downloadsAcquired", value.asInstanceOf[js.Any])
+    inline def setDownloadsAcquired(value: Double): Self = StObject.set(x, "downloadsAcquired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadsAcquiredUndefined: Self = StObject.set(x, "downloadsAcquired", js.undefined)
+    inline def setDownloadsAcquiredUndefined: Self = StObject.set(x, "downloadsAcquired", js.undefined)
     
-    @scala.inline
-    def setJustAcquired(value: Boolean): Self = StObject.set(x, "justAcquired", value.asInstanceOf[js.Any])
+    inline def setJustAcquired(value: Boolean): Self = StObject.set(x, "justAcquired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustAcquiredUndefined: Self = StObject.set(x, "justAcquired", js.undefined)
+    inline def setJustAcquiredUndefined: Self = StObject.set(x, "justAcquired", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMaxDownloadDevices(value: Double): Self = StObject.set(x, "maxDownloadDevices", value.asInstanceOf[js.Any])
+    inline def setMaxDownloadDevices(value: Double): Self = StObject.set(x, "maxDownloadDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDownloadDevicesUndefined: Self = StObject.set(x, "maxDownloadDevices", js.undefined)
+    inline def setMaxDownloadDevicesUndefined: Self = StObject.set(x, "maxDownloadDevices", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setReasonCode(value: String): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    inline def setReasonCode(value: String): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
     
-    @scala.inline
-    def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+    inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
+    inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

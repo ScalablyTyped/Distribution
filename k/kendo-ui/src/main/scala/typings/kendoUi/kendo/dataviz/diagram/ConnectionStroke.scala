@@ -10,19 +10,15 @@ trait ConnectionStroke extends StObject {
 }
 object ConnectionStroke {
   
-  @scala.inline
-  def apply(): ConnectionStroke = {
+  inline def apply(): ConnectionStroke = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionStroke]
   }
   
-  @scala.inline
-  implicit class ConnectionStrokeMutableBuilder[Self <: ConnectionStroke] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionStroke](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

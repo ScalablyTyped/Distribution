@@ -26,20 +26,16 @@ object typesGetSegmentOutputMod {
   }
   object GetSegmentOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, SegmentResponse: UnmarshalledSegmentResponse): GetSegmentOutput = {
+    inline def apply($metadata: ResponseMetadata, SegmentResponse: UnmarshalledSegmentResponse): GetSegmentOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SegmentResponse = SegmentResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSegmentOutput]
     }
     
-    @scala.inline
-    implicit class GetSegmentOutputMutableBuilder[Self <: GetSegmentOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetSegmentOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentResponse(value: UnmarshalledSegmentResponse): Self = StObject.set(x, "SegmentResponse", value.asInstanceOf[js.Any])
+      inline def setSegmentResponse(value: UnmarshalledSegmentResponse): Self = StObject.set(x, "SegmentResponse", value.asInstanceOf[js.Any])
     }
   }
 }

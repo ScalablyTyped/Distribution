@@ -13,22 +13,17 @@ trait HeaderContext extends StObject {
 }
 object HeaderContext {
   
-  @scala.inline
-  def apply(intervals: js.Array[StartTime], unit: String): HeaderContext = {
+  inline def apply(intervals: js.Array[StartTime], unit: String): HeaderContext = {
     val __obj = js.Dynamic.literal(intervals = intervals.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderContext]
   }
   
-  @scala.inline
-  implicit class HeaderContextMutableBuilder[Self <: HeaderContext] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderContext](x: Self) {
     
-    @scala.inline
-    def setIntervals(value: js.Array[StartTime]): Self = StObject.set(x, "intervals", value.asInstanceOf[js.Any])
+    inline def setIntervals(value: js.Array[StartTime]): Self = StObject.set(x, "intervals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalsVarargs(value: StartTime*): Self = StObject.set(x, "intervals", js.Array(value :_*))
+    inline def setIntervalsVarargs(value: StartTime*): Self = StObject.set(x, "intervals", js.Array(value :_*))
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

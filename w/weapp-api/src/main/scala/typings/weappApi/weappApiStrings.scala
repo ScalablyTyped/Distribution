@@ -18,59 +18,50 @@ object weappApiStrings {
   
   @js.native
   sealed trait `2g` extends StObject
-  @scala.inline
-  def `2g`: `2g` = "2g".asInstanceOf[`2g`]
+  inline def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   
   @js.native
   sealed trait `3g` extends StObject
-  @scala.inline
-  def `3g`: `3g` = "3g".asInstanceOf[`3g`]
+  inline def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   
   @js.native
   sealed trait `4g` extends StObject
-  @scala.inline
-  def `4g`: `4g` = "4g".asInstanceOf[`4g`]
+  inline def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   
   @js.native
   sealed trait MD5 extends StObject
-  @scala.inline
-  def MD5: MD5 = "MD5".asInstanceOf[MD5]
+  inline def MD5: MD5 = "MD5".asInstanceOf[MD5]
   
   @js.native
   sealed trait address
     extends StObject
        with Scope
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
+  inline def address: address = "address".asInstanceOf[address]
   
   @js.native
   sealed trait album
     extends StObject
        with ImageSourceType
        with VideoSourceType
-  @scala.inline
-  def album: album = "album".asInstanceOf[album]
+  inline def album: album = "album".asInstanceOf[album]
   
   @js.native
   sealed trait back
     extends StObject
        with CameraDevice
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
+  inline def back: back = "back".asInstanceOf[back]
   
   @js.native
   sealed trait bevel
     extends StObject
        with LineJoinType
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
   sealed trait butt
     extends StObject
        with LineCapType
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
+  inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
   sealed trait camera
@@ -78,219 +69,186 @@ object weappApiStrings {
        with ImageSourceType
        with Scope
        with VideoSourceType
-  @scala.inline
-  def camera: camera = "camera".asInstanceOf[camera]
+  inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
   sealed trait compressed
     extends StObject
        with ImageSizeType
-  @scala.inline
-  def compressed: compressed = "compressed".asInstanceOf[compressed]
+  inline def compressed: compressed = "compressed".asInstanceOf[compressed]
   
   @js.native
   sealed trait develop
     extends StObject
        with envVersion
-  @scala.inline
-  def develop: develop = "develop".asInstanceOf[develop]
+  inline def develop: develop = "develop".asInstanceOf[develop]
   
   @js.native
   sealed trait ease
     extends StObject
        with TimingFunction
-  @scala.inline
-  def ease: ease = "ease".asInstanceOf[ease]
+  inline def ease: ease = "ease".asInstanceOf[ease]
   
   @js.native
   sealed trait `ease-in`
     extends StObject
        with TimingFunction
-  @scala.inline
-  def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
+  inline def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
   
   @js.native
   sealed trait `ease-in-out`
     extends StObject
        with TimingFunction
-  @scala.inline
-  def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
+  inline def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
   
   @js.native
   sealed trait `ease-out`
     extends StObject
        with TimingFunction
-  @scala.inline
-  def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
+  inline def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
   
   @js.native
   sealed trait easeIn extends StObject
-  @scala.inline
-  def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
+  inline def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
   
   @js.native
   sealed trait easeInOut extends StObject
-  @scala.inline
-  def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
+  inline def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
   
   @js.native
   sealed trait easeOut extends StObject
-  @scala.inline
-  def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
+  inline def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
   
   @js.native
   sealed trait front
     extends StObject
        with CameraDevice
-  @scala.inline
-  def front: front = "front".asInstanceOf[front]
+  inline def front: front = "front".asInstanceOf[front]
   
   @js.native
   sealed trait gcj02 extends StObject
-  @scala.inline
-  def gcj02: gcj02 = "gcj02".asInstanceOf[gcj02]
+  inline def gcj02: gcj02 = "gcj02".asInstanceOf[gcj02]
   
   @js.native
   sealed trait invoice
     extends StObject
        with Scope
-  @scala.inline
-  def invoice: invoice = "invoice".asInstanceOf[invoice]
+  inline def invoice: invoice = "invoice".asInstanceOf[invoice]
   
   @js.native
   sealed trait invoiceTitle
     extends StObject
        with Scope
-  @scala.inline
-  def invoiceTitle: invoiceTitle = "invoiceTitle".asInstanceOf[invoiceTitle]
+  inline def invoiceTitle: invoiceTitle = "invoiceTitle".asInstanceOf[invoiceTitle]
   
   @js.native
   sealed trait linear
     extends StObject
        with TimingFunction
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
   sealed trait loading
     extends StObject
        with icon
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
   sealed trait miter
     extends StObject
        with LineJoinType
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
+  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
   sealed trait none
     extends StObject
        with icon
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait original
     extends StObject
        with ImageSizeType
-  @scala.inline
-  def original: original = "original".asInstanceOf[original]
+  inline def original: original = "original".asInstanceOf[original]
   
   @js.native
   sealed trait record
     extends StObject
        with Scope
-  @scala.inline
-  def record: record = "record".asInstanceOf[record]
+  inline def record: record = "record".asInstanceOf[record]
   
   @js.native
   sealed trait release
     extends StObject
        with envVersion
-  @scala.inline
-  def release: release = "release".asInstanceOf[release]
+  inline def release: release = "release".asInstanceOf[release]
   
   @js.native
   sealed trait round
     extends StObject
        with LineCapType
        with LineJoinType
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
   sealed trait square
     extends StObject
        with LineCapType
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
   sealed trait `step-end`
     extends StObject
        with TimingFunction
-  @scala.inline
-  def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
+  inline def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
   
   @js.native
   sealed trait `step-start`
     extends StObject
        with TimingFunction
-  @scala.inline
-  def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
+  inline def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
   
   @js.native
   sealed trait success
     extends StObject
        with icon
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait trial
     extends StObject
        with envVersion
-  @scala.inline
-  def trial: trial = "trial".asInstanceOf[trial]
+  inline def trial: trial = "trial".asInstanceOf[trial]
   
   @js.native
   sealed trait userInfo
     extends StObject
        with Scope
-  @scala.inline
-  def userInfo: userInfo = "userInfo".asInstanceOf[userInfo]
+  inline def userInfo: userInfo = "userInfo".asInstanceOf[userInfo]
   
   @js.native
   sealed trait userLocation
     extends StObject
        with Scope
-  @scala.inline
-  def userLocation: userLocation = "userLocation".asInstanceOf[userLocation]
+  inline def userLocation: userLocation = "userLocation".asInstanceOf[userLocation]
   
   @js.native
   sealed trait werun
     extends StObject
        with Scope
-  @scala.inline
-  def werun: werun = "werun".asInstanceOf[werun]
+  inline def werun: werun = "werun".asInstanceOf[werun]
   
   @js.native
   sealed trait wgs84 extends StObject
-  @scala.inline
-  def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
+  inline def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
   
   @js.native
   sealed trait wifi extends StObject
-  @scala.inline
-  def wifi: wifi = "wifi".asInstanceOf[wifi]
+  inline def wifi: wifi = "wifi".asInstanceOf[wifi]
   
   @js.native
   sealed trait writePhotosAlbum
     extends StObject
        with Scope
-  @scala.inline
-  def writePhotosAlbum: writePhotosAlbum = "writePhotosAlbum".asInstanceOf[writePhotosAlbum]
+  inline def writePhotosAlbum: writePhotosAlbum = "writePhotosAlbum".asInstanceOf[writePhotosAlbum]
 }

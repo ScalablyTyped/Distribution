@@ -45,21 +45,16 @@ object receiptRuleSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReceiptRuleSetState): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReceiptRuleSetState, opts: CustomResourceOptions): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
+    inline def get(name: String, id: Input[ID]): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
+    inline def get(name: String, id: Input[ID], state: ReceiptRuleSetState): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
+    inline def get(name: String, id: Input[ID], state: ReceiptRuleSetState, opts: CustomResourceOptions): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
     
     /**
       * Returns true if the given object is an instance of ReceiptRuleSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ Boolean]
   }
   
   trait ReceiptRuleSetArgs extends StObject {
@@ -71,17 +66,14 @@ object receiptRuleSetMod {
   }
   object ReceiptRuleSetArgs {
     
-    @scala.inline
-    def apply(ruleSetName: Input[String]): ReceiptRuleSetArgs = {
+    inline def apply(ruleSetName: Input[String]): ReceiptRuleSetArgs = {
       val __obj = js.Dynamic.literal(ruleSetName = ruleSetName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleSetArgs]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleSetArgsMutableBuilder[Self <: ReceiptRuleSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleSetArgs](x: Self) {
       
-      @scala.inline
-      def setRuleSetName(value: Input[String]): Self = StObject.set(x, "ruleSetName", value.asInstanceOf[js.Any])
+      inline def setRuleSetName(value: Input[String]): Self = StObject.set(x, "ruleSetName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +86,16 @@ object receiptRuleSetMod {
   }
   object ReceiptRuleSetState {
     
-    @scala.inline
-    def apply(): ReceiptRuleSetState = {
+    inline def apply(): ReceiptRuleSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReceiptRuleSetState]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleSetStateMutableBuilder[Self <: ReceiptRuleSetState] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleSetState](x: Self) {
       
-      @scala.inline
-      def setRuleSetName(value: Input[String]): Self = StObject.set(x, "ruleSetName", value.asInstanceOf[js.Any])
+      inline def setRuleSetName(value: Input[String]): Self = StObject.set(x, "ruleSetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleSetNameUndefined: Self = StObject.set(x, "ruleSetName", js.undefined)
+      inline def setRuleSetNameUndefined: Self = StObject.set(x, "ruleSetName", js.undefined)
     }
   }
 }

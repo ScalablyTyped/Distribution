@@ -17,40 +17,29 @@ trait WidgetClassOptions extends StObject {
 }
 object WidgetClassOptions {
   
-  @scala.inline
-  def apply(attributes: Record[String, Attribute | AttributeWithOptions]): WidgetClassOptions = {
+  inline def apply(attributes: Record[String, Attribute | AttributeWithOptions]): WidgetClassOptions = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetClassOptions]
   }
   
-  @scala.inline
-  implicit class WidgetClassOptionsMutableBuilder[Self <: WidgetClassOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetClassOptions](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Record[String, Attribute | AttributeWithOptions]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Record[String, Attribute | AttributeWithOptions]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtend(value: WidgetClass): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: WidgetClass): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setExtractTextAttributes(value: js.Array[String]): Self = StObject.set(x, "extractTextAttributes", value.asInstanceOf[js.Any])
+    inline def setExtractTextAttributes(value: js.Array[String]): Self = StObject.set(x, "extractTextAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractTextAttributesUndefined: Self = StObject.set(x, "extractTextAttributes", js.undefined)
+    inline def setExtractTextAttributesUndefined: Self = StObject.set(x, "extractTextAttributes", js.undefined)
     
-    @scala.inline
-    def setExtractTextAttributesVarargs(value: String*): Self = StObject.set(x, "extractTextAttributes", js.Array(value :_*))
+    inline def setExtractTextAttributesVarargs(value: String*): Self = StObject.set(x, "extractTextAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setOnlyInside(value: String | js.Array[String]): Self = StObject.set(x, "onlyInside", value.asInstanceOf[js.Any])
+    inline def setOnlyInside(value: String | js.Array[String]): Self = StObject.set(x, "onlyInside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyInsideUndefined: Self = StObject.set(x, "onlyInside", js.undefined)
+    inline def setOnlyInsideUndefined: Self = StObject.set(x, "onlyInside", js.undefined)
     
-    @scala.inline
-    def setOnlyInsideVarargs(value: String*): Self = StObject.set(x, "onlyInside", js.Array(value :_*))
+    inline def setOnlyInsideVarargs(value: String*): Self = StObject.set(x, "onlyInside", js.Array(value :_*))
   }
 }

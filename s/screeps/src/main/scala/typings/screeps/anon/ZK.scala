@@ -10,16 +10,13 @@ trait ZK extends StObject {
 }
 object ZK {
   
-  @scala.inline
-  def apply(): ZK = {
+  inline def apply(): ZK = {
     val __obj = js.Dynamic.literal(ZK = "G")
     __obj.asInstanceOf[ZK]
   }
   
-  @scala.inline
-  implicit class ZKMutableBuilder[Self <: ZK] (val x: Self) extends AnyVal {
+  extension [Self <: ZK](x: Self) {
     
-    @scala.inline
-    def setZK(value: typings.screeps.screepsStrings.G): Self = StObject.set(x, "ZK", value.asInstanceOf[js.Any])
+    inline def setZK(value: typings.screeps.screepsStrings.G): Self = StObject.set(x, "ZK", value.asInstanceOf[js.Any])
   }
 }

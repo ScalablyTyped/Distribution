@@ -24,61 +24,43 @@ trait Animatable extends StObject {
 }
 object Animatable {
   
-  @scala.inline
-  def apply(): Animatable = {
+  inline def apply(): Animatable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Animatable]
   }
   
-  @scala.inline
-  implicit class AnimatableMutableBuilder[Self <: Animatable] (val x: Self) extends AnyVal {
+  extension [Self <: Animatable](x: Self) {
     
-    @scala.inline
-    def setAnimationBegin(value: Double): Self = StObject.set(x, "animationBegin", value.asInstanceOf[js.Any])
+    inline def setAnimationBegin(value: Double): Self = StObject.set(x, "animationBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationBeginUndefined: Self = StObject.set(x, "animationBegin", js.undefined)
+    inline def setAnimationBeginUndefined: Self = StObject.set(x, "animationBegin", js.undefined)
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
-    @scala.inline
-    def setAnimationEasing(value: AnimationEasingType): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
+    inline def setAnimationEasing(value: AnimationEasingType): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
+    inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
     
-    @scala.inline
-    def setAnimationId(value: Double): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
+    inline def setAnimationId(value: Double): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationIdUndefined: Self = StObject.set(x, "animationId", js.undefined)
+    inline def setAnimationIdUndefined: Self = StObject.set(x, "animationId", js.undefined)
     
-    @scala.inline
-    def setIsAnimationActive(value: Boolean): Self = StObject.set(x, "isAnimationActive", value.asInstanceOf[js.Any])
+    inline def setIsAnimationActive(value: Boolean): Self = StObject.set(x, "isAnimationActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAnimationActiveUndefined: Self = StObject.set(x, "isAnimationActive", js.undefined)
+    inline def setIsAnimationActiveUndefined: Self = StObject.set(x, "isAnimationActive", js.undefined)
     
-    @scala.inline
-    def setIsUpdateAnimationActive(value: Boolean): Self = StObject.set(x, "isUpdateAnimationActive", value.asInstanceOf[js.Any])
+    inline def setIsUpdateAnimationActive(value: Boolean): Self = StObject.set(x, "isUpdateAnimationActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUpdateAnimationActiveUndefined: Self = StObject.set(x, "isUpdateAnimationActive", js.undefined)
+    inline def setIsUpdateAnimationActiveUndefined: Self = StObject.set(x, "isUpdateAnimationActive", js.undefined)
     
-    @scala.inline
-    def setOnAnimationEnd(value: RechartsFunction): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
+    inline def setOnAnimationEnd(value: RechartsFunction): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+    inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
-    @scala.inline
-    def setOnAnimationStart(value: RechartsFunction): Self = StObject.set(x, "onAnimationStart", value.asInstanceOf[js.Any])
+    inline def setOnAnimationStart(value: RechartsFunction): Self = StObject.set(x, "onAnimationStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
+    inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
   }
 }

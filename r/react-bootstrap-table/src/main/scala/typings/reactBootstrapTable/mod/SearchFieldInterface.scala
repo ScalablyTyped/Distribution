@@ -18,19 +18,15 @@ trait SearchFieldInterface extends StObject {
 }
 object SearchFieldInterface {
   
-  @scala.inline
-  def apply(getValue: () => String, setValue: String => Unit): SearchFieldInterface = {
+  inline def apply(getValue: () => String, setValue: String => Unit): SearchFieldInterface = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[SearchFieldInterface]
   }
   
-  @scala.inline
-  implicit class SearchFieldInterfaceMutableBuilder[Self <: SearchFieldInterface] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFieldInterface](x: Self) {
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

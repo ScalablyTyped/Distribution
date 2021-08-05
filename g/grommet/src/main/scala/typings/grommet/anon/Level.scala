@@ -13,25 +13,19 @@ trait Level extends StObject {
 }
 object Level {
   
-  @scala.inline
-  def apply(): Level = {
+  inline def apply(): Level = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Level]
   }
   
-  @scala.inline
-  implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+  extension [Self <: Level](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
   }
 }

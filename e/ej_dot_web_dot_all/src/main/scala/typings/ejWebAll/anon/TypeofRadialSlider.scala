@@ -15,19 +15,15 @@ trait TypeofRadialSlider extends StObject {
 }
 object TypeofRadialSlider {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: RadialSlider): TypeofRadialSlider = {
+  inline def apply(Locale: js.Any, fn: RadialSlider): TypeofRadialSlider = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRadialSlider]
   }
   
-  @scala.inline
-  implicit class TypeofRadialSliderMutableBuilder[Self <: TypeofRadialSlider] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRadialSlider](x: Self) {
     
-    @scala.inline
-    def setFn(value: RadialSlider): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: RadialSlider): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

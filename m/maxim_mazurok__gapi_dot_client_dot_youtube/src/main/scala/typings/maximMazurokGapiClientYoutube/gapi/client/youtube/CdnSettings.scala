@@ -23,43 +23,31 @@ trait CdnSettings extends StObject {
 }
 object CdnSettings {
   
-  @scala.inline
-  def apply(): CdnSettings = {
+  inline def apply(): CdnSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CdnSettings]
   }
   
-  @scala.inline
-  implicit class CdnSettingsMutableBuilder[Self <: CdnSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CdnSettings](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: String): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: String): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setIngestionInfo(value: IngestionInfo): Self = StObject.set(x, "ingestionInfo", value.asInstanceOf[js.Any])
+    inline def setIngestionInfo(value: IngestionInfo): Self = StObject.set(x, "ingestionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionInfoUndefined: Self = StObject.set(x, "ingestionInfo", js.undefined)
+    inline def setIngestionInfoUndefined: Self = StObject.set(x, "ingestionInfo", js.undefined)
     
-    @scala.inline
-    def setIngestionType(value: String): Self = StObject.set(x, "ingestionType", value.asInstanceOf[js.Any])
+    inline def setIngestionType(value: String): Self = StObject.set(x, "ingestionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionTypeUndefined: Self = StObject.set(x, "ingestionType", js.undefined)
+    inline def setIngestionTypeUndefined: Self = StObject.set(x, "ingestionType", js.undefined)
     
-    @scala.inline
-    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

@@ -11,13 +11,11 @@ object musicmatchNumbers {
   sealed trait `0`
     extends StObject
        with TBoolean
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
     extends StObject
        with TBoolean
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
 }

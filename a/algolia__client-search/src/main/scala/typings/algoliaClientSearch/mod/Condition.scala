@@ -34,37 +34,27 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(): Condition = {
+  inline def apply(): Condition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
+    inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
-    @scala.inline
-    def setAnchoring(value: is | startsWith | endsWith | contains): Self = StObject.set(x, "anchoring", value.asInstanceOf[js.Any])
+    inline def setAnchoring(value: is | startsWith | endsWith | contains): Self = StObject.set(x, "anchoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchoringUndefined: Self = StObject.set(x, "anchoring", js.undefined)
+    inline def setAnchoringUndefined: Self = StObject.set(x, "anchoring", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

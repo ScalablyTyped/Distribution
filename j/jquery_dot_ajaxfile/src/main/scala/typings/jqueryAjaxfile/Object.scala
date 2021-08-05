@@ -14,16 +14,13 @@ trait Object extends StObject {
 }
 object Object {
   
-  @scala.inline
-  def apply(should: Assertion): Object = {
+  inline def apply(should: Assertion): Object = {
     val __obj = js.Dynamic.literal(should = should.asInstanceOf[js.Any])
     __obj.asInstanceOf[Object]
   }
   
-  @scala.inline
-  implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+  extension [Self <: Object](x: Self) {
     
-    @scala.inline
-    def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
+    inline def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
   }
 }

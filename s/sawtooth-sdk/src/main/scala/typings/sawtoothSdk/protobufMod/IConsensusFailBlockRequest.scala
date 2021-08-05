@@ -12,22 +12,17 @@ trait IConsensusFailBlockRequest extends StObject {
 }
 object IConsensusFailBlockRequest {
   
-  @scala.inline
-  def apply(): IConsensusFailBlockRequest = {
+  inline def apply(): IConsensusFailBlockRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusFailBlockRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusFailBlockRequestMutableBuilder[Self <: IConsensusFailBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusFailBlockRequest](x: Self) {
     
-    @scala.inline
-    def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
+    inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
-    @scala.inline
-    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
+    inline def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
   }
 }

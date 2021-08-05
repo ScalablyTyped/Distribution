@@ -13,19 +13,15 @@ trait RegisterInstanceResult extends StObject {
 }
 object RegisterInstanceResult {
   
-  @scala.inline
-  def apply(): RegisterInstanceResult = {
+  inline def apply(): RegisterInstanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterInstanceResult]
   }
   
-  @scala.inline
-  implicit class RegisterInstanceResultMutableBuilder[Self <: RegisterInstanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterInstanceResult](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

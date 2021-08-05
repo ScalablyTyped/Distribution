@@ -13,16 +13,13 @@ trait DescribeCompanyNetworkConfigurationRequest extends StObject {
 }
 object DescribeCompanyNetworkConfigurationRequest {
   
-  @scala.inline
-  def apply(FleetArn: FleetArn): DescribeCompanyNetworkConfigurationRequest = {
+  inline def apply(FleetArn: FleetArn): DescribeCompanyNetworkConfigurationRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCompanyNetworkConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCompanyNetworkConfigurationRequestMutableBuilder[Self <: DescribeCompanyNetworkConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCompanyNetworkConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

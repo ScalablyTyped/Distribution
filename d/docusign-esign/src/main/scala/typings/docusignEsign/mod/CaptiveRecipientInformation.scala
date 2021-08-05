@@ -17,27 +17,22 @@ trait CaptiveRecipientInformation extends StObject {
 }
 object CaptiveRecipientInformation {
   
-  @scala.inline
-  def apply(): CaptiveRecipientInformation = {
+  inline def apply(): CaptiveRecipientInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptiveRecipientInformation]
   }
   
-  @scala.inline
-  implicit class CaptiveRecipientInformationMutableBuilder[Self <: CaptiveRecipientInformation] (val x: Self) extends AnyVal {
+  extension [Self <: CaptiveRecipientInformation](x: Self) {
     
-    @scala.inline
-    def setCaptiveRecipients(
+    inline def setCaptiveRecipients(
       value: js.Array[
           /* This object contains details about a captive (embedded) recipient. */ CaptiveRecipient
         ]
     ): Self = StObject.set(x, "captiveRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptiveRecipientsUndefined: Self = StObject.set(x, "captiveRecipients", js.undefined)
+    inline def setCaptiveRecipientsUndefined: Self = StObject.set(x, "captiveRecipients", js.undefined)
     
-    @scala.inline
-    def setCaptiveRecipientsVarargs(
+    inline def setCaptiveRecipientsVarargs(
       value: (/* This object contains details about a captive (embedded) recipient. */ CaptiveRecipient)*
     ): Self = StObject.set(x, "captiveRecipients", js.Array(value :_*))
   }

@@ -14,28 +14,21 @@ trait GooglePrivacyDlpV2ListDeidentifyTemplatesResponse extends StObject {
 }
 object GooglePrivacyDlpV2ListDeidentifyTemplatesResponse {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ListDeidentifyTemplatesResponse = {
+  inline def apply(): GooglePrivacyDlpV2ListDeidentifyTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ListDeidentifyTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ListDeidentifyTemplatesResponseMutableBuilder[Self <: GooglePrivacyDlpV2ListDeidentifyTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ListDeidentifyTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setDeidentifyTemplates(value: js.Array[GooglePrivacyDlpV2DeidentifyTemplate]): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
+    inline def setDeidentifyTemplates(value: js.Array[GooglePrivacyDlpV2DeidentifyTemplate]): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeidentifyTemplatesUndefined: Self = StObject.set(x, "deidentifyTemplates", js.undefined)
+    inline def setDeidentifyTemplatesUndefined: Self = StObject.set(x, "deidentifyTemplates", js.undefined)
     
-    @scala.inline
-    def setDeidentifyTemplatesVarargs(value: GooglePrivacyDlpV2DeidentifyTemplate*): Self = StObject.set(x, "deidentifyTemplates", js.Array(value :_*))
+    inline def setDeidentifyTemplatesVarargs(value: GooglePrivacyDlpV2DeidentifyTemplate*): Self = StObject.set(x, "deidentifyTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

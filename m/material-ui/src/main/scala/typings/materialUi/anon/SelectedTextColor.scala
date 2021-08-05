@@ -14,31 +14,23 @@ trait SelectedTextColor extends StObject {
 }
 object SelectedTextColor {
   
-  @scala.inline
-  def apply(): SelectedTextColor = {
+  inline def apply(): SelectedTextColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectedTextColor]
   }
   
-  @scala.inline
-  implicit class SelectedTextColorMutableBuilder[Self <: SelectedTextColor] (val x: Self) extends AnyVal {
+  extension [Self <: SelectedTextColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setSelectedTextColor(value: String): Self = StObject.set(x, "selectedTextColor", value.asInstanceOf[js.Any])
+    inline def setSelectedTextColor(value: String): Self = StObject.set(x, "selectedTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedTextColorUndefined: Self = StObject.set(x, "selectedTextColor", js.undefined)
+    inline def setSelectedTextColorUndefined: Self = StObject.set(x, "selectedTextColor", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

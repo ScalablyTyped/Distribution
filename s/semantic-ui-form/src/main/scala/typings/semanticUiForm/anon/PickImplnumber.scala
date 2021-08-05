@@ -11,16 +11,13 @@ trait PickImplnumber extends StObject {
 }
 object PickImplnumber {
   
-  @scala.inline
-  def apply(number: String): PickImplnumber = {
+  inline def apply(number: String): PickImplnumber = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnumber]
   }
   
-  @scala.inline
-  implicit class PickImplnumberMutableBuilder[Self <: PickImplnumber] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnumber](x: Self) {
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

@@ -38,7 +38,7 @@ object userdescriptorMod {
     
     val attributes: js.Any = js.native
     
-    var descriptor: js.Any = js.native
+    /* private */ var descriptor: js.Any = js.native
     
     val friendlyName: String = js.native
     
@@ -48,7 +48,7 @@ object userdescriptorMod {
     
     val online: Boolean = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
     /**
       * Gets User object from descriptor and subscribes to it.
@@ -63,17 +63,14 @@ object userdescriptorMod {
   }
   object UserDescriptorServices {
     
-    @scala.inline
-    def apply(users: Users): UserDescriptorServices = {
+    inline def apply(users: Users): UserDescriptorServices = {
       val __obj = js.Dynamic.literal(users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserDescriptorServices]
     }
     
-    @scala.inline
-    implicit class UserDescriptorServicesMutableBuilder[Self <: UserDescriptorServices] (val x: Self) extends AnyVal {
+    extension [Self <: UserDescriptorServices](x: Self) {
       
-      @scala.inline
-      def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
 }

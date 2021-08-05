@@ -23,7 +23,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_currentLocalID
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _currentLocalID: Double = js.native
   
   /**
@@ -33,7 +33,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_cx
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _cx: Double = js.native
   
   /**
@@ -43,7 +43,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_cy
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _cy: Double = js.native
   
   /**
@@ -52,7 +52,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_localID
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _localID: Double = js.native
   
   /**
@@ -62,7 +62,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_parentID
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _parentID: Double = js.native
   
   /**
@@ -71,7 +71,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_rotation
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _rotation: Double = js.native
   
   /**
@@ -81,7 +81,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_sx
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _sx: Double = js.native
   
   /**
@@ -91,7 +91,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_sy
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _sy: Double = js.native
   
   /**
@@ -100,7 +100,7 @@ class Transform ()
     * @protected
     * @member {number} PIXI.Transform#_worldID
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _worldID: Double = js.native
   
   /**
@@ -116,8 +116,8 @@ class Transform ()
     *
     * @protected
     */
-  /* CompleteClass */
-  /* protected */ override def onChange(): Unit = js.native
+  /* protected */ /* CompleteClass */
+  override def onChange(): Unit = js.native
   
   /**
     * The pivot point of the displayObject that it rotates around.
@@ -178,8 +178,8 @@ class Transform ()
     *
     * @protected
     */
-  /* CompleteClass */
-  /* protected */ override def updateSkew(): Unit = js.native
+  /* protected */ /* CompleteClass */
+  override def updateSkew(): Unit = js.native
   
   /**
     * Updates the local and the world transformation matrices.
@@ -214,6 +214,5 @@ object Transform {
   @JSGlobal("PIXI.Transform.IDENTITY")
   @js.native
   def IDENTITY: typings.pixiJs.PIXI.Transform = js.native
-  @scala.inline
-  def IDENTITY_=(x: typings.pixiJs.PIXI.Transform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY")(x.asInstanceOf[js.Any])
+  inline def IDENTITY_=(x: typings.pixiJs.PIXI.Transform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY")(x.asInstanceOf[js.Any])
 }

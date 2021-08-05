@@ -28,37 +28,27 @@ trait FindMatchesParameters extends StObject {
 }
 object FindMatchesParameters {
   
-  @scala.inline
-  def apply(): FindMatchesParameters = {
+  inline def apply(): FindMatchesParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindMatchesParameters]
   }
   
-  @scala.inline
-  implicit class FindMatchesParametersMutableBuilder[Self <: FindMatchesParameters] (val x: Self) extends AnyVal {
+  extension [Self <: FindMatchesParameters](x: Self) {
     
-    @scala.inline
-    def setAccuracyCostTradeoff(value: GenericBoundedDouble): Self = StObject.set(x, "AccuracyCostTradeoff", value.asInstanceOf[js.Any])
+    inline def setAccuracyCostTradeoff(value: GenericBoundedDouble): Self = StObject.set(x, "AccuracyCostTradeoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyCostTradeoffUndefined: Self = StObject.set(x, "AccuracyCostTradeoff", js.undefined)
+    inline def setAccuracyCostTradeoffUndefined: Self = StObject.set(x, "AccuracyCostTradeoff", js.undefined)
     
-    @scala.inline
-    def setEnforceProvidedLabels(value: NullableBoolean): Self = StObject.set(x, "EnforceProvidedLabels", value.asInstanceOf[js.Any])
+    inline def setEnforceProvidedLabels(value: NullableBoolean): Self = StObject.set(x, "EnforceProvidedLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceProvidedLabelsUndefined: Self = StObject.set(x, "EnforceProvidedLabels", js.undefined)
+    inline def setEnforceProvidedLabelsUndefined: Self = StObject.set(x, "EnforceProvidedLabels", js.undefined)
     
-    @scala.inline
-    def setPrecisionRecallTradeoff(value: GenericBoundedDouble): Self = StObject.set(x, "PrecisionRecallTradeoff", value.asInstanceOf[js.Any])
+    inline def setPrecisionRecallTradeoff(value: GenericBoundedDouble): Self = StObject.set(x, "PrecisionRecallTradeoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionRecallTradeoffUndefined: Self = StObject.set(x, "PrecisionRecallTradeoff", js.undefined)
+    inline def setPrecisionRecallTradeoffUndefined: Self = StObject.set(x, "PrecisionRecallTradeoff", js.undefined)
     
-    @scala.inline
-    def setPrimaryKeyColumnName(value: ColumnNameString): Self = StObject.set(x, "PrimaryKeyColumnName", value.asInstanceOf[js.Any])
+    inline def setPrimaryKeyColumnName(value: ColumnNameString): Self = StObject.set(x, "PrimaryKeyColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKeyColumnNameUndefined: Self = StObject.set(x, "PrimaryKeyColumnName", js.undefined)
+    inline def setPrimaryKeyColumnNameUndefined: Self = StObject.set(x, "PrimaryKeyColumnName", js.undefined)
   }
 }

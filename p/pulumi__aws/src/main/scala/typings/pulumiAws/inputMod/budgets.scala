@@ -66,80 +66,56 @@ object budgets {
   }
   object BudgetCostTypes {
     
-    @scala.inline
-    def apply(): BudgetCostTypes = {
+    inline def apply(): BudgetCostTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BudgetCostTypes]
     }
     
-    @scala.inline
-    implicit class BudgetCostTypesMutableBuilder[Self <: BudgetCostTypes] (val x: Self) extends AnyVal {
+    extension [Self <: BudgetCostTypes](x: Self) {
       
-      @scala.inline
-      def setIncludeCredit(value: Input[Boolean]): Self = StObject.set(x, "includeCredit", value.asInstanceOf[js.Any])
+      inline def setIncludeCredit(value: Input[Boolean]): Self = StObject.set(x, "includeCredit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeCreditUndefined: Self = StObject.set(x, "includeCredit", js.undefined)
+      inline def setIncludeCreditUndefined: Self = StObject.set(x, "includeCredit", js.undefined)
       
-      @scala.inline
-      def setIncludeDiscount(value: Input[Boolean]): Self = StObject.set(x, "includeDiscount", value.asInstanceOf[js.Any])
+      inline def setIncludeDiscount(value: Input[Boolean]): Self = StObject.set(x, "includeDiscount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeDiscountUndefined: Self = StObject.set(x, "includeDiscount", js.undefined)
+      inline def setIncludeDiscountUndefined: Self = StObject.set(x, "includeDiscount", js.undefined)
       
-      @scala.inline
-      def setIncludeOtherSubscription(value: Input[Boolean]): Self = StObject.set(x, "includeOtherSubscription", value.asInstanceOf[js.Any])
+      inline def setIncludeOtherSubscription(value: Input[Boolean]): Self = StObject.set(x, "includeOtherSubscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeOtherSubscriptionUndefined: Self = StObject.set(x, "includeOtherSubscription", js.undefined)
+      inline def setIncludeOtherSubscriptionUndefined: Self = StObject.set(x, "includeOtherSubscription", js.undefined)
       
-      @scala.inline
-      def setIncludeRecurring(value: Input[Boolean]): Self = StObject.set(x, "includeRecurring", value.asInstanceOf[js.Any])
+      inline def setIncludeRecurring(value: Input[Boolean]): Self = StObject.set(x, "includeRecurring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeRecurringUndefined: Self = StObject.set(x, "includeRecurring", js.undefined)
+      inline def setIncludeRecurringUndefined: Self = StObject.set(x, "includeRecurring", js.undefined)
       
-      @scala.inline
-      def setIncludeRefund(value: Input[Boolean]): Self = StObject.set(x, "includeRefund", value.asInstanceOf[js.Any])
+      inline def setIncludeRefund(value: Input[Boolean]): Self = StObject.set(x, "includeRefund", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeRefundUndefined: Self = StObject.set(x, "includeRefund", js.undefined)
+      inline def setIncludeRefundUndefined: Self = StObject.set(x, "includeRefund", js.undefined)
       
-      @scala.inline
-      def setIncludeSubscription(value: Input[Boolean]): Self = StObject.set(x, "includeSubscription", value.asInstanceOf[js.Any])
+      inline def setIncludeSubscription(value: Input[Boolean]): Self = StObject.set(x, "includeSubscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSubscriptionUndefined: Self = StObject.set(x, "includeSubscription", js.undefined)
+      inline def setIncludeSubscriptionUndefined: Self = StObject.set(x, "includeSubscription", js.undefined)
       
-      @scala.inline
-      def setIncludeSupport(value: Input[Boolean]): Self = StObject.set(x, "includeSupport", value.asInstanceOf[js.Any])
+      inline def setIncludeSupport(value: Input[Boolean]): Self = StObject.set(x, "includeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSupportUndefined: Self = StObject.set(x, "includeSupport", js.undefined)
+      inline def setIncludeSupportUndefined: Self = StObject.set(x, "includeSupport", js.undefined)
       
-      @scala.inline
-      def setIncludeTax(value: Input[Boolean]): Self = StObject.set(x, "includeTax", value.asInstanceOf[js.Any])
+      inline def setIncludeTax(value: Input[Boolean]): Self = StObject.set(x, "includeTax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeTaxUndefined: Self = StObject.set(x, "includeTax", js.undefined)
+      inline def setIncludeTaxUndefined: Self = StObject.set(x, "includeTax", js.undefined)
       
-      @scala.inline
-      def setIncludeUpfront(value: Input[Boolean]): Self = StObject.set(x, "includeUpfront", value.asInstanceOf[js.Any])
+      inline def setIncludeUpfront(value: Input[Boolean]): Self = StObject.set(x, "includeUpfront", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUpfrontUndefined: Self = StObject.set(x, "includeUpfront", js.undefined)
+      inline def setIncludeUpfrontUndefined: Self = StObject.set(x, "includeUpfront", js.undefined)
       
-      @scala.inline
-      def setUseAmortized(value: Input[Boolean]): Self = StObject.set(x, "useAmortized", value.asInstanceOf[js.Any])
+      inline def setUseAmortized(value: Input[Boolean]): Self = StObject.set(x, "useAmortized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAmortizedUndefined: Self = StObject.set(x, "useAmortized", js.undefined)
+      inline def setUseAmortizedUndefined: Self = StObject.set(x, "useAmortized", js.undefined)
       
-      @scala.inline
-      def setUseBlended(value: Input[Boolean]): Self = StObject.set(x, "useBlended", value.asInstanceOf[js.Any])
+      inline def setUseBlended(value: Input[Boolean]): Self = StObject.set(x, "useBlended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBlendedUndefined: Self = StObject.set(x, "useBlended", js.undefined)
+      inline def setUseBlendedUndefined: Self = StObject.set(x, "useBlended", js.undefined)
     }
   }
   
@@ -177,8 +153,7 @@ object budgets {
   }
   object BudgetNotification {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       comparisonOperator: Input[String],
       notificationType: Input[String],
       threshold: Input[Double],
@@ -188,38 +163,27 @@ object budgets {
       __obj.asInstanceOf[BudgetNotification]
     }
     
-    @scala.inline
-    implicit class BudgetNotificationMutableBuilder[Self <: BudgetNotification] (val x: Self) extends AnyVal {
+    extension [Self <: BudgetNotification](x: Self) {
       
-      @scala.inline
-      def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+      inline def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      inline def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriberEmailAddresses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subscriberEmailAddresses", value.asInstanceOf[js.Any])
+      inline def setSubscriberEmailAddresses(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subscriberEmailAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriberEmailAddressesUndefined: Self = StObject.set(x, "subscriberEmailAddresses", js.undefined)
+      inline def setSubscriberEmailAddressesUndefined: Self = StObject.set(x, "subscriberEmailAddresses", js.undefined)
       
-      @scala.inline
-      def setSubscriberEmailAddressesVarargs(value: Input[String]*): Self = StObject.set(x, "subscriberEmailAddresses", js.Array(value :_*))
+      inline def setSubscriberEmailAddressesVarargs(value: Input[String]*): Self = StObject.set(x, "subscriberEmailAddresses", js.Array(value :_*))
       
-      @scala.inline
-      def setSubscriberSnsTopicArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subscriberSnsTopicArns", value.asInstanceOf[js.Any])
+      inline def setSubscriberSnsTopicArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subscriberSnsTopicArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriberSnsTopicArnsUndefined: Self = StObject.set(x, "subscriberSnsTopicArns", js.undefined)
+      inline def setSubscriberSnsTopicArnsUndefined: Self = StObject.set(x, "subscriberSnsTopicArns", js.undefined)
       
-      @scala.inline
-      def setSubscriberSnsTopicArnsVarargs(value: Input[String]*): Self = StObject.set(x, "subscriberSnsTopicArns", js.Array(value :_*))
+      inline def setSubscriberSnsTopicArnsVarargs(value: Input[String]*): Self = StObject.set(x, "subscriberSnsTopicArns", js.Array(value :_*))
       
-      @scala.inline
-      def setThreshold(value: Input[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Input[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdType(value: Input[String]): Self = StObject.set(x, "thresholdType", value.asInstanceOf[js.Any])
+      inline def setThresholdType(value: Input[String]): Self = StObject.set(x, "thresholdType", value.asInstanceOf[js.Any])
     }
   }
 }

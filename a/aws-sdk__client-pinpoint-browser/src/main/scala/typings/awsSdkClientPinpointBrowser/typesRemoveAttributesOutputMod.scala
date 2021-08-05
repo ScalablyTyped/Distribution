@@ -26,20 +26,16 @@ object typesRemoveAttributesOutputMod {
   }
   object RemoveAttributesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, AttributesResource: UnmarshalledAttributesResource): RemoveAttributesOutput = {
+    inline def apply($metadata: ResponseMetadata, AttributesResource: UnmarshalledAttributesResource): RemoveAttributesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], AttributesResource = AttributesResource.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveAttributesOutput]
     }
     
-    @scala.inline
-    implicit class RemoveAttributesOutputMutableBuilder[Self <: RemoveAttributesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveAttributesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesResource(value: UnmarshalledAttributesResource): Self = StObject.set(x, "AttributesResource", value.asInstanceOf[js.Any])
+      inline def setAttributesResource(value: UnmarshalledAttributesResource): Self = StObject.set(x, "AttributesResource", value.asInstanceOf[js.Any])
     }
   }
 }

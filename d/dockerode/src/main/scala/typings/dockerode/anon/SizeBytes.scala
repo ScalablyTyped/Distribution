@@ -12,19 +12,15 @@ trait SizeBytes extends StObject {
 }
 object SizeBytes {
   
-  @scala.inline
-  def apply(Mode: Double, SizeBytes: Double): SizeBytes = {
+  inline def apply(Mode: Double, SizeBytes: Double): SizeBytes = {
     val __obj = js.Dynamic.literal(Mode = Mode.asInstanceOf[js.Any], SizeBytes = SizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeBytes]
   }
   
-  @scala.inline
-  implicit class SizeBytesMutableBuilder[Self <: SizeBytes] (val x: Self) extends AnyVal {
+  extension [Self <: SizeBytes](x: Self) {
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytes(value: Double): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: Double): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
   }
 }

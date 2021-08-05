@@ -75,91 +75,63 @@ trait MatterConstraintConfig extends StObject {
 }
 object MatterConstraintConfig {
   
-  @scala.inline
-  def apply(): MatterConstraintConfig = {
+  inline def apply(): MatterConstraintConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatterConstraintConfig]
   }
   
-  @scala.inline
-  implicit class MatterConstraintConfigMutableBuilder[Self <: MatterConstraintConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MatterConstraintConfig](x: Self) {
     
-    @scala.inline
-    def setAngleA(value: Double): Self = StObject.set(x, "angleA", value.asInstanceOf[js.Any])
+    inline def setAngleA(value: Double): Self = StObject.set(x, "angleA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleAUndefined: Self = StObject.set(x, "angleA", js.undefined)
+    inline def setAngleAUndefined: Self = StObject.set(x, "angleA", js.undefined)
     
-    @scala.inline
-    def setAngleB(value: Double): Self = StObject.set(x, "angleB", value.asInstanceOf[js.Any])
+    inline def setAngleB(value: Double): Self = StObject.set(x, "angleB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleBUndefined: Self = StObject.set(x, "angleB", js.undefined)
+    inline def setAngleBUndefined: Self = StObject.set(x, "angleB", js.undefined)
     
-    @scala.inline
-    def setAngularStiffness(value: Double): Self = StObject.set(x, "angularStiffness", value.asInstanceOf[js.Any])
+    inline def setAngularStiffness(value: Double): Self = StObject.set(x, "angularStiffness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngularStiffnessUndefined: Self = StObject.set(x, "angularStiffness", js.undefined)
+    inline def setAngularStiffnessUndefined: Self = StObject.set(x, "angularStiffness", js.undefined)
     
-    @scala.inline
-    def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
+    inline def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyAUndefined: Self = StObject.set(x, "bodyA", js.undefined)
+    inline def setBodyAUndefined: Self = StObject.set(x, "bodyA", js.undefined)
     
-    @scala.inline
-    def setBodyB(value: BodyType): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
+    inline def setBodyB(value: BodyType): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyBUndefined: Self = StObject.set(x, "bodyB", js.undefined)
+    inline def setBodyBUndefined: Self = StObject.set(x, "bodyB", js.undefined)
     
-    @scala.inline
-    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+    inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+    inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+    inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
-    @scala.inline
-    def setPointA(value: Vector2Like): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
+    inline def setPointA(value: Vector2Like): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointAUndefined: Self = StObject.set(x, "pointA", js.undefined)
+    inline def setPointAUndefined: Self = StObject.set(x, "pointA", js.undefined)
     
-    @scala.inline
-    def setPointB(value: Vector2Like): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
+    inline def setPointB(value: Vector2Like): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointBUndefined: Self = StObject.set(x, "pointB", js.undefined)
+    inline def setPointBUndefined: Self = StObject.set(x, "pointB", js.undefined)
     
-    @scala.inline
-    def setRender(value: MatterConstraintRenderConfig): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: MatterConstraintRenderConfig): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+    inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+    inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
   }
 }

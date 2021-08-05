@@ -26,168 +26,142 @@ object tabulatorTablesStrings {
   sealed trait Equalssign
     extends StObject
        with FilterType
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
   sealed trait ExclamationmarkEqualssign
     extends StObject
        with FilterType
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
+  inline def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
   sealed trait GET
     extends StObject
        with HttpMethod
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait Greaterthansign
     extends StObject
        with FilterType
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
   sealed trait GreaterthansignEqualssign
     extends StObject
        with FilterType
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
   sealed trait Lessthansign
     extends StObject
        with FilterType
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
   sealed trait LessthansignEqualssign
     extends StObject
        with FilterType
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
   sealed trait POST
     extends StObject
        with HttpMethod
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait active
     extends StObject
        with RowRangeLookup
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait add extends StObject
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait all
     extends StObject
        with RowRangeLookup
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait alphanum extends StObject
-  @scala.inline
-  def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
+  inline def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
   
   @js.native
   sealed trait array extends StObject
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait arrow extends StObject
-  @scala.inline
-  def arrow: arrow = "arrow".asInstanceOf[arrow]
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
   sealed trait asc
     extends StObject
        with SortDirection
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait auto
     extends StObject
        with TextDirection
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait autocomplete
     extends StObject
        with _Editor
-  @scala.inline
-  def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
+  inline def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
   
   @js.native
   sealed trait avg
     extends StObject
        with _ColumnCalc
-  @scala.inline
-  def avg: avg = "avg".asInstanceOf[avg]
+  inline def avg: avg = "avg".asInstanceOf[avg]
   
   @js.native
   sealed trait blocking extends StObject
-  @scala.inline
-  def blocking: blocking = "blocking".asInstanceOf[blocking]
+  inline def blocking: blocking = "blocking".asInstanceOf[blocking]
   
   @js.native
   sealed trait boolean extends StObject
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait both extends StObject
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait bottom
     extends StObject
        with ScrollToRowPostition
        with VerticalAlign
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait buttonCross
     extends StObject
        with _Formatter
-  @scala.inline
-  def buttonCross: buttonCross = "buttonCross".asInstanceOf[buttonCross]
+  inline def buttonCross: buttonCross = "buttonCross".asInstanceOf[buttonCross]
   
   @js.native
   sealed trait buttonTick
     extends StObject
        with _Formatter
-  @scala.inline
-  def buttonTick: buttonTick = "buttonTick".asInstanceOf[buttonTick]
+  inline def buttonTick: buttonTick = "buttonTick".asInstanceOf[buttonTick]
   
   @js.native
   sealed trait cell extends StObject
-  @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
+  inline def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
   sealed trait cellEdit
     extends StObject
        with HistoryAction
-  @scala.inline
-  def cellEdit: cellEdit = "cellEdit".asInstanceOf[cellEdit]
+  inline def cellEdit: cellEdit = "cellEdit".asInstanceOf[cellEdit]
   
   @js.native
   sealed trait center
@@ -196,293 +170,242 @@ object tabulatorTablesStrings {
        with ColumnDefinitionAlign
        with ScrollToColumnPosition
        with ScrollToRowPostition
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait click extends StObject
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait clipboard extends StObject
-  @scala.inline
-  def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
+  inline def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
   
   @js.native
   sealed trait collapse extends StObject
-  @scala.inline
-  def collapse: collapse = "collapse".asInstanceOf[collapse]
+  inline def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
   sealed trait color
     extends StObject
        with _Formatter
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
   sealed trait columns extends StObject
-  @scala.inline
-  def columns: columns = "columns".asInstanceOf[columns]
+  inline def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
   sealed trait concat
     extends StObject
        with _ColumnCalc
-  @scala.inline
-  def concat: concat = "concat".asInstanceOf[concat]
+  inline def concat: concat = "concat".asInstanceOf[concat]
   
   @js.native
   sealed trait cookie extends StObject
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
+  inline def cookie: cookie = "cookie".asInstanceOf[cookie]
   
   @js.native
   sealed trait copy extends StObject
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
   sealed trait count
     extends StObject
        with _ColumnCalc
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
+  inline def count: count = "count".asInstanceOf[count]
   
   @js.native
   sealed trait csv
     extends StObject
        with DownloadType
-  @scala.inline
-  def csv: csv = "csv".asInstanceOf[csv]
+  inline def csv: csv = "csv".asInstanceOf[csv]
   
   @js.native
   sealed trait data extends StObject
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait date extends StObject
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait datetime
     extends StObject
        with _Formatter
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
   sealed trait datetimediff
     extends StObject
        with _Formatter
-  @scala.inline
-  def datetimediff: datetimediff = "datetimediff".asInstanceOf[datetimediff]
+  inline def datetimediff: datetimediff = "datetimediff".asInstanceOf[datetimediff]
   
   @js.native
   sealed trait days extends StObject
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
+  inline def days: days = "days".asInstanceOf[days]
   
   @js.native
   sealed trait delete extends StObject
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait desc
     extends StObject
        with SortDirection
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait download extends StObject
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
+  inline def download: download = "download".asInstanceOf[download]
   
   @js.native
   sealed trait edit extends StObject
-  @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
+  inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
   sealed trait editor extends StObject
-  @scala.inline
-  def editor: editor = "editor".asInstanceOf[editor]
+  inline def editor: editor = "editor".asInstanceOf[editor]
   
   @js.native
   sealed trait ends
     extends StObject
        with FilterType
-  @scala.inline
-  def ends: ends = "ends".asInstanceOf[ends]
+  inline def ends: ends = "ends".asInstanceOf[ends]
   
   @js.native
   sealed trait exists extends StObject
-  @scala.inline
-  def exists: exists = "exists".asInstanceOf[exists]
+  inline def exists: exists = "exists".asInstanceOf[exists]
   
   @js.native
   sealed trait filter extends StObject
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
   sealed trait first extends StObject
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait fitColumns extends StObject
-  @scala.inline
-  def fitColumns: fitColumns = "fitColumns".asInstanceOf[fitColumns]
+  inline def fitColumns: fitColumns = "fitColumns".asInstanceOf[fitColumns]
   
   @js.native
   sealed trait fitData extends StObject
-  @scala.inline
-  def fitData: fitData = "fitData".asInstanceOf[fitData]
+  inline def fitData: fitData = "fitData".asInstanceOf[fitData]
   
   @js.native
   sealed trait fitDataFill extends StObject
-  @scala.inline
-  def fitDataFill: fitDataFill = "fitDataFill".asInstanceOf[fitDataFill]
+  inline def fitDataFill: fitDataFill = "fitDataFill".asInstanceOf[fitDataFill]
   
   @js.native
   sealed trait fitDataStretch extends StObject
-  @scala.inline
-  def fitDataStretch: fitDataStretch = "fitDataStretch".asInstanceOf[fitDataStretch]
+  inline def fitDataStretch: fitDataStretch = "fitDataStretch".asInstanceOf[fitDataStretch]
   
   @js.native
   sealed trait fitDataTable extends StObject
-  @scala.inline
-  def fitDataTable: fitDataTable = "fitDataTable".asInstanceOf[fitDataTable]
+  inline def fitDataTable: fitDataTable = "fitDataTable".asInstanceOf[fitDataTable]
   
   @js.native
   sealed trait flip extends StObject
-  @scala.inline
-  def flip: flip = "flip".asInstanceOf[flip]
+  inline def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
   sealed trait float
     extends StObject
        with StandardValidatorType
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait form extends StObject
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
   sealed trait group extends StObject
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
   sealed trait handle
     extends StObject
        with _Formatter
-  @scala.inline
-  def handle: handle = "handle".asInstanceOf[handle]
+  inline def handle: handle = "handle".asInstanceOf[handle]
   
   @js.native
   sealed trait header extends StObject
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait hide extends StObject
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait highlight extends StObject
-  @scala.inline
-  def highlight: highlight = "highlight".asInstanceOf[highlight]
+  inline def highlight: highlight = "highlight".asInstanceOf[highlight]
   
   @js.native
   sealed trait hours extends StObject
-  @scala.inline
-  def hours: hours = "hours".asInstanceOf[hours]
+  inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
   sealed trait hover extends StObject
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
   sealed trait html
     extends StObject
        with DownloadType
        with _Formatter
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait hybrid extends StObject
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
   sealed trait image
     extends StObject
        with _Formatter
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait in
     extends StObject
        with FilterType
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
+  inline def in: in = "in".asInstanceOf[in]
   
   @js.native
   sealed trait input
     extends StObject
        with _Editor
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
   sealed trait insert extends StObject
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
   sealed trait integer
     extends StObject
        with StandardValidatorType
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait json
     extends StObject
        with DownloadType
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait justify
     extends StObject
        with Align
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait landscape extends StObject
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait last extends StObject
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait left
@@ -490,205 +413,172 @@ object tabulatorTablesStrings {
        with Align
        with ColumnDefinitionAlign
        with ScrollToColumnPosition
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait length extends StObject
-  @scala.inline
-  def length: length = "length".asInstanceOf[length]
+  inline def length: length = "length".asInstanceOf[length]
   
   @js.native
   sealed trait like
     extends StObject
        with FilterType
-  @scala.inline
-  def like: like = "like".asInstanceOf[like]
+  inline def like: like = "like".asInstanceOf[like]
   
   @js.native
   sealed trait link
     extends StObject
        with _Formatter
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait load extends StObject
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
   sealed trait local extends StObject
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait lookup
     extends StObject
        with _Formatter
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
   sealed trait ltr
     extends StObject
        with TextDirection
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait manual extends StObject
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
   sealed trait max
     extends StObject
        with _ColumnCalc
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
+  inline def max: max = "max".asInstanceOf[max]
   
   @js.native
   sealed trait middle
     extends StObject
        with ScrollToColumnPosition
        with VerticalAlign
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait min
     extends StObject
        with _ColumnCalc
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
+  inline def min: min = "min".asInstanceOf[min]
   
   @js.native
   sealed trait minutes extends StObject
-  @scala.inline
-  def minutes: minutes = "minutes".asInstanceOf[minutes]
+  inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
   sealed trait money
     extends StObject
        with _Formatter
-  @scala.inline
-  def money: money = "money".asInstanceOf[money]
+  inline def money: money = "money".asInstanceOf[money]
   
   @js.native
   sealed trait months extends StObject
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
+  inline def months: months = "months".asInstanceOf[months]
   
   @js.native
   sealed trait nearest
     extends StObject
        with ScrollToRowPostition
-  @scala.inline
-  def nearest: nearest = "nearest".asInstanceOf[nearest]
+  inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
   sealed trait next extends StObject
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait number
     extends StObject
        with _Editor
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait numeric
     extends StObject
        with StandardValidatorType
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait page extends StObject
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait paste extends StObject
-  @scala.inline
-  def paste: paste = "paste".asInstanceOf[paste]
+  inline def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
   sealed trait pdf
     extends StObject
        with DownloadType
-  @scala.inline
-  def pdf: pdf = "pdf".asInstanceOf[pdf]
+  inline def pdf: pdf = "pdf".asInstanceOf[pdf]
   
   @js.native
   sealed trait plain extends StObject
-  @scala.inline
-  def plain: plain = "plain".asInstanceOf[plain]
+  inline def plain: plain = "plain".asInstanceOf[plain]
   
   @js.native
   sealed trait plaintext
     extends StObject
        with _Formatter
-  @scala.inline
-  def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
+  inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
   @js.native
   sealed trait portrait extends StObject
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
   sealed trait prev extends StObject
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
+  inline def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
   sealed trait progress
     extends StObject
        with _Formatter
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
   sealed trait range
     extends StObject
        with _Editor
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
+  inline def range: range = "range".asInstanceOf[range]
   
   @js.native
   sealed trait regex
     extends StObject
        with FilterType
-  @scala.inline
-  def regex: regex = "regex".asInstanceOf[regex]
+  inline def regex: regex = "regex".asInstanceOf[regex]
   
   @js.native
   sealed trait remote extends StObject
-  @scala.inline
-  def remote: remote = "remote".asInstanceOf[remote]
+  inline def remote: remote = "remote".asInstanceOf[remote]
   
   @js.native
   sealed trait replace extends StObject
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
   sealed trait required
     extends StObject
        with StandardValidatorType
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  inline def required: required = "required".asInstanceOf[required]
   
   @js.native
   sealed trait responsiveCollapse
     extends StObject
        with _Formatter
-  @scala.inline
-  def responsiveCollapse: responsiveCollapse = "responsiveCollapse".asInstanceOf[responsiveCollapse]
+  inline def responsiveCollapse: responsiveCollapse = "responsiveCollapse".asInstanceOf[responsiveCollapse]
   
   @js.native
   sealed trait right
@@ -696,183 +586,155 @@ object tabulatorTablesStrings {
        with Align
        with ColumnDefinitionAlign
        with ScrollToColumnPosition
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait rowAdd
     extends StObject
        with HistoryAction
-  @scala.inline
-  def rowAdd: rowAdd = "rowAdd".asInstanceOf[rowAdd]
+  inline def rowAdd: rowAdd = "rowAdd".asInstanceOf[rowAdd]
   
   @js.native
   sealed trait rowDelete
     extends StObject
        with HistoryAction
-  @scala.inline
-  def rowDelete: rowDelete = "rowDelete".asInstanceOf[rowDelete]
+  inline def rowDelete: rowDelete = "rowDelete".asInstanceOf[rowDelete]
   
   @js.native
   sealed trait rowMoved
     extends StObject
        with HistoryAction
-  @scala.inline
-  def rowMoved: rowMoved = "rowMoved".asInstanceOf[rowMoved]
+  inline def rowMoved: rowMoved = "rowMoved".asInstanceOf[rowMoved]
   
   @js.native
   sealed trait rowSelection
     extends StObject
        with _Formatter
-  @scala.inline
-  def rowSelection: rowSelection = "rowSelection".asInstanceOf[rowSelection]
+  inline def rowSelection: rowSelection = "rowSelection".asInstanceOf[rowSelection]
   
   @js.native
   sealed trait rownum
     extends StObject
        with _Formatter
-  @scala.inline
-  def rownum: rownum = "rownum".asInstanceOf[rownum]
+  inline def rownum: rownum = "rownum".asInstanceOf[rownum]
   
   @js.native
   sealed trait rtl
     extends StObject
        with TextDirection
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait scroll extends StObject
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait seconds extends StObject
-  @scala.inline
-  def seconds: seconds = "seconds".asInstanceOf[seconds]
+  inline def seconds: seconds = "seconds".asInstanceOf[seconds]
   
   @js.native
   sealed trait select
     extends StObject
        with _Editor
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
   sealed trait selected
     extends StObject
        with RowRangeLookup
-  @scala.inline
-  def selected: selected = "selected".asInstanceOf[selected]
+  inline def selected: selected = "selected".asInstanceOf[selected]
   
   @js.native
   sealed trait sort extends StObject
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
+  inline def sort: sort = "sort".asInstanceOf[sort]
   
   @js.native
   sealed trait star
     extends StObject
        with _Editor
        with _Formatter
-  @scala.inline
-  def star: star = "star".asInstanceOf[star]
+  inline def star: star = "star".asInstanceOf[star]
   
   @js.native
   sealed trait starts
     extends StObject
        with FilterType
-  @scala.inline
-  def starts: starts = "starts".asInstanceOf[starts]
+  inline def starts: starts = "starts".asInstanceOf[starts]
   
   @js.native
   sealed trait string
     extends StObject
        with StandardValidatorType
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait sum
     extends StObject
        with _ColumnCalc
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
   sealed trait table extends StObject
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
+  inline def table: table = "table".asInstanceOf[table]
   
   @js.native
   sealed trait textarea
     extends StObject
        with _Editor
        with _Formatter
-  @scala.inline
-  def textarea: textarea = "textarea".asInstanceOf[textarea]
+  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
   sealed trait tickCross
     extends StObject
        with _Editor
        with _Formatter
-  @scala.inline
-  def tickCross: tickCross = "tickCross".asInstanceOf[tickCross]
+  inline def tickCross: tickCross = "tickCross".asInstanceOf[tickCross]
   
   @js.native
   sealed trait time extends StObject
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait top
     extends StObject
        with ScrollToRowPostition
        with VerticalAlign
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait traffic
     extends StObject
        with _Formatter
-  @scala.inline
-  def traffic: traffic = "traffic".asInstanceOf[traffic]
+  inline def traffic: traffic = "traffic".asInstanceOf[traffic]
   
   @js.native
   sealed trait unique
     extends StObject
        with StandardValidatorType
-  @scala.inline
-  def unique: unique = "unique".asInstanceOf[unique]
+  inline def unique: unique = "unique".asInstanceOf[unique]
   
   @js.native
   sealed trait update extends StObject
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
   sealed trait visible
     extends StObject
        with RowRangeLookup
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
+  inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
   sealed trait weeks extends StObject
-  @scala.inline
-  def weeks: weeks = "weeks".asInstanceOf[weeks]
+  inline def weeks: weeks = "weeks".asInstanceOf[weeks]
   
   @js.native
   sealed trait xlsx
     extends StObject
        with DownloadType
-  @scala.inline
-  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
+  inline def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
   
   @js.native
   sealed trait years extends StObject
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
+  inline def years: years = "years".asInstanceOf[years]
 }

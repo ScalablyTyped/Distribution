@@ -21,25 +21,19 @@ object treeNodeStoriesMod {
     @JSImport("@storybook/ui/dist/components/sidebar/TreeNode.stories", "default.parameters")
     @js.native
     def parameters: Layout = js.native
-    @scala.inline
-    def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+    inline def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/TreeNode.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def Expandable(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Expandable")().asInstanceOf[Element]
+  inline def Expandable(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Expandable")().asInstanceOf[Element]
   
-  @scala.inline
-  def Nested(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Nested")().asInstanceOf[Element]
+  inline def Nested(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Nested")().asInstanceOf[Element]
   
-  @scala.inline
-  def Selection(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Selection")().asInstanceOf[Element]
+  inline def Selection(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Selection")().asInstanceOf[Element]
   
-  @scala.inline
-  def Types(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Types")().asInstanceOf[Element]
+  inline def Types(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Types")().asInstanceOf[Element]
 }

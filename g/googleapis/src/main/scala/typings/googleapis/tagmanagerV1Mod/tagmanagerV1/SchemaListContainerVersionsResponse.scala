@@ -21,31 +21,23 @@ trait SchemaListContainerVersionsResponse extends StObject {
 }
 object SchemaListContainerVersionsResponse {
   
-  @scala.inline
-  def apply(): SchemaListContainerVersionsResponse = {
+  inline def apply(): SchemaListContainerVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListContainerVersionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListContainerVersionsResponseMutableBuilder[Self <: SchemaListContainerVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListContainerVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setContainerVersion(value: js.Array[SchemaContainerVersion]): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
+    inline def setContainerVersion(value: js.Array[SchemaContainerVersion]): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerVersionHeader(value: js.Array[SchemaContainerVersionHeader]): Self = StObject.set(x, "containerVersionHeader", value.asInstanceOf[js.Any])
+    inline def setContainerVersionHeader(value: js.Array[SchemaContainerVersionHeader]): Self = StObject.set(x, "containerVersionHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerVersionHeaderUndefined: Self = StObject.set(x, "containerVersionHeader", js.undefined)
+    inline def setContainerVersionHeaderUndefined: Self = StObject.set(x, "containerVersionHeader", js.undefined)
     
-    @scala.inline
-    def setContainerVersionHeaderVarargs(value: SchemaContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value :_*))
+    inline def setContainerVersionHeaderVarargs(value: SchemaContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
+    inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
     
-    @scala.inline
-    def setContainerVersionVarargs(value: SchemaContainerVersion*): Self = StObject.set(x, "containerVersion", js.Array(value :_*))
+    inline def setContainerVersionVarargs(value: SchemaContainerVersion*): Self = StObject.set(x, "containerVersion", js.Array(value :_*))
   }
 }

@@ -11,55 +11,47 @@ object antvScaleStrings {
   sealed trait base
     extends StObject
        with ScaleType
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
   sealed trait cat
     extends StObject
        with ScaleType
-  @scala.inline
-  def cat: cat = "cat".asInstanceOf[cat]
+  inline def cat: cat = "cat".asInstanceOf[cat]
   
   @js.native
   sealed trait identity
     extends StObject
        with ScaleType
-  @scala.inline
-  def identity: identity = "identity".asInstanceOf[identity]
+  inline def identity: identity = "identity".asInstanceOf[identity]
   
   @js.native
   sealed trait linear
     extends StObject
        with ScaleType
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
   sealed trait log
     extends StObject
        with ScaleType
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait pow
     extends StObject
        with ScaleType
-  @scala.inline
-  def pow: pow = "pow".asInstanceOf[pow]
+  inline def pow: pow = "pow".asInstanceOf[pow]
   
   @js.native
   sealed trait time
     extends StObject
        with ScaleType
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait timeCat
     extends StObject
        with ScaleType
-  @scala.inline
-  def timeCat: timeCat = "timeCat".asInstanceOf[timeCat]
+  inline def timeCat: timeCat = "timeCat".asInstanceOf[timeCat]
 }

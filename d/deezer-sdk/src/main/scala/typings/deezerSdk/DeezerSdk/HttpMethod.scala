@@ -17,12 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HttpMethod extends StObject
 object HttpMethod {
   
-  @scala.inline
-  def DELETE: typings.deezerSdk.deezerSdkStrings.DELETE = "DELETE".asInstanceOf[typings.deezerSdk.deezerSdkStrings.DELETE]
+  inline def DELETE: typings.deezerSdk.deezerSdkStrings.DELETE = "DELETE".asInstanceOf[typings.deezerSdk.deezerSdkStrings.DELETE]
   
-  @scala.inline
-  def GET: typings.deezerSdk.deezerSdkStrings.GET = "GET".asInstanceOf[typings.deezerSdk.deezerSdkStrings.GET]
+  inline def GET: typings.deezerSdk.deezerSdkStrings.GET = "GET".asInstanceOf[typings.deezerSdk.deezerSdkStrings.GET]
   
-  @scala.inline
-  def POST: typings.deezerSdk.deezerSdkStrings.POST = "POST".asInstanceOf[typings.deezerSdk.deezerSdkStrings.POST]
+  inline def POST: typings.deezerSdk.deezerSdkStrings.POST = "POST".asInstanceOf[typings.deezerSdk.deezerSdkStrings.POST]
 }

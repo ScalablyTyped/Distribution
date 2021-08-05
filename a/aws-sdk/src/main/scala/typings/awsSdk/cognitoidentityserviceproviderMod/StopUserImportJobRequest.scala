@@ -18,19 +18,15 @@ trait StopUserImportJobRequest extends StObject {
 }
 object StopUserImportJobRequest {
   
-  @scala.inline
-  def apply(JobId: UserImportJobIdType, UserPoolId: UserPoolIdType): StopUserImportJobRequest = {
+  inline def apply(JobId: UserImportJobIdType, UserPoolId: UserPoolIdType): StopUserImportJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopUserImportJobRequest]
   }
   
-  @scala.inline
-  implicit class StopUserImportJobRequestMutableBuilder[Self <: StopUserImportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopUserImportJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: UserImportJobIdType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: UserImportJobIdType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait TargetChanged extends StObject {
 }
 object TargetChanged {
   
-  @scala.inline
-  def apply(): TargetChanged = {
+  inline def apply(): TargetChanged = {
     val __obj = js.Dynamic.literal(TargetChanged = "targetchanged", TargetCreated = "targetcreated", TargetDestroyed = "targetdestroyed")
     __obj.asInstanceOf[TargetChanged]
   }
   
-  @scala.inline
-  implicit class TargetChangedMutableBuilder[Self <: TargetChanged] (val x: Self) extends AnyVal {
+  extension [Self <: TargetChanged](x: Self) {
     
-    @scala.inline
-    def setTargetChanged(value: targetchanged): Self = StObject.set(x, "TargetChanged", value.asInstanceOf[js.Any])
+    inline def setTargetChanged(value: targetchanged): Self = StObject.set(x, "TargetChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCreated(value: targetcreated): Self = StObject.set(x, "TargetCreated", value.asInstanceOf[js.Any])
+    inline def setTargetCreated(value: targetcreated): Self = StObject.set(x, "TargetCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDestroyed(value: targetdestroyed): Self = StObject.set(x, "TargetDestroyed", value.asInstanceOf[js.Any])
+    inline def setTargetDestroyed(value: targetdestroyed): Self = StObject.set(x, "TargetDestroyed", value.asInstanceOf[js.Any])
   }
 }

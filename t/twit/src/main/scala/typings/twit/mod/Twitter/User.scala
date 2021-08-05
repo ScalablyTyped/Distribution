@@ -94,8 +94,7 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contributors_enabled: Boolean,
     created_at: String,
     default_profile: String,
@@ -137,160 +136,108 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setContributors_enabled(value: Boolean): Self = StObject.set(x, "contributors_enabled", value.asInstanceOf[js.Any])
+    inline def setContributors_enabled(value: Boolean): Self = StObject.set(x, "contributors_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_profile(value: String): Self = StObject.set(x, "default_profile", value.asInstanceOf[js.Any])
+    inline def setDefault_profile(value: String): Self = StObject.set(x, "default_profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_profile_image(value: String): Self = StObject.set(x, "default_profile_image", value.asInstanceOf[js.Any])
+    inline def setDefault_profile_image(value: String): Self = StObject.set(x, "default_profile_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntities(value: Entities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: Entities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavourites_count(value: Double): Self = StObject.set(x, "favourites_count", value.asInstanceOf[js.Any])
+    inline def setFavourites_count(value: Double): Self = StObject.set(x, "favourites_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollow_request_sent(value: Boolean): Self = StObject.set(x, "follow_request_sent", value.asInstanceOf[js.Any])
+    inline def setFollow_request_sent(value: Boolean): Self = StObject.set(x, "follow_request_sent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollow_request_sentUndefined: Self = StObject.set(x, "follow_request_sent", js.undefined)
+    inline def setFollow_request_sentUndefined: Self = StObject.set(x, "follow_request_sent", js.undefined)
     
-    @scala.inline
-    def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
+    inline def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+    inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowingUndefined: Self = StObject.set(x, "following", js.undefined)
+    inline def setFollowingUndefined: Self = StObject.set(x, "following", js.undefined)
     
-    @scala.inline
-    def setFriends_count(value: Double): Self = StObject.set(x, "friends_count", value.asInstanceOf[js.Any])
+    inline def setFriends_count(value: Double): Self = StObject.set(x, "friends_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeo_enabled(value: Boolean): Self = StObject.set(x, "geo_enabled", value.asInstanceOf[js.Any])
+    inline def setGeo_enabled(value: Boolean): Self = StObject.set(x, "geo_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeo_enabledUndefined: Self = StObject.set(x, "geo_enabled", js.undefined)
+    inline def setGeo_enabledUndefined: Self = StObject.set(x, "geo_enabled", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+    inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_translator(value: Boolean): Self = StObject.set(x, "is_translator", value.asInstanceOf[js.Any])
+    inline def setIs_translator(value: Boolean): Self = StObject.set(x, "is_translator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_translatorUndefined: Self = StObject.set(x, "is_translator", js.undefined)
+    inline def setIs_translatorUndefined: Self = StObject.set(x, "is_translator", js.undefined)
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListed_count(value: Double): Self = StObject.set(x, "listed_count", value.asInstanceOf[js.Any])
+    inline def setListed_count(value: Double): Self = StObject.set(x, "listed_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: Boolean): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: Boolean): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    @scala.inline
-    def setProfile_background_color(value: String): Self = StObject.set(x, "profile_background_color", value.asInstanceOf[js.Any])
+    inline def setProfile_background_color(value: String): Self = StObject.set(x, "profile_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_background_image_url(value: String): Self = StObject.set(x, "profile_background_image_url", value.asInstanceOf[js.Any])
+    inline def setProfile_background_image_url(value: String): Self = StObject.set(x, "profile_background_image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_background_image_url_https(value: String): Self = StObject.set(x, "profile_background_image_url_https", value.asInstanceOf[js.Any])
+    inline def setProfile_background_image_url_https(value: String): Self = StObject.set(x, "profile_background_image_url_https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_background_tile(value: Boolean): Self = StObject.set(x, "profile_background_tile", value.asInstanceOf[js.Any])
+    inline def setProfile_background_tile(value: Boolean): Self = StObject.set(x, "profile_background_tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_banner_url(value: String): Self = StObject.set(x, "profile_banner_url", value.asInstanceOf[js.Any])
+    inline def setProfile_banner_url(value: String): Self = StObject.set(x, "profile_banner_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_image_url(value: String): Self = StObject.set(x, "profile_image_url", value.asInstanceOf[js.Any])
+    inline def setProfile_image_url(value: String): Self = StObject.set(x, "profile_image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_image_url_https(value: String): Self = StObject.set(x, "profile_image_url_https", value.asInstanceOf[js.Any])
+    inline def setProfile_image_url_https(value: String): Self = StObject.set(x, "profile_image_url_https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_link_color(value: String): Self = StObject.set(x, "profile_link_color", value.asInstanceOf[js.Any])
+    inline def setProfile_link_color(value: String): Self = StObject.set(x, "profile_link_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_sidebar_border_color(value: String): Self = StObject.set(x, "profile_sidebar_border_color", value.asInstanceOf[js.Any])
+    inline def setProfile_sidebar_border_color(value: String): Self = StObject.set(x, "profile_sidebar_border_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_sidebar_fill_color(value: String): Self = StObject.set(x, "profile_sidebar_fill_color", value.asInstanceOf[js.Any])
+    inline def setProfile_sidebar_fill_color(value: String): Self = StObject.set(x, "profile_sidebar_fill_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_text_color(value: String): Self = StObject.set(x, "profile_text_color", value.asInstanceOf[js.Any])
+    inline def setProfile_text_color(value: String): Self = StObject.set(x, "profile_text_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_use_background_image(value: Boolean): Self = StObject.set(x, "profile_use_background_image", value.asInstanceOf[js.Any])
+    inline def setProfile_use_background_image(value: Boolean): Self = StObject.set(x, "profile_use_background_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
+    inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_all_inline_media(value: Boolean): Self = StObject.set(x, "show_all_inline_media", value.asInstanceOf[js.Any])
+    inline def setShow_all_inline_media(value: Boolean): Self = StObject.set(x, "show_all_inline_media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatuses_count(value: Double): Self = StObject.set(x, "statuses_count", value.asInstanceOf[js.Any])
+    inline def setStatuses_count(value: Double): Self = StObject.set(x, "statuses_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
+    inline def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
+    inline def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtc_offset(value: Double): Self = StObject.set(x, "utc_offset", value.asInstanceOf[js.Any])
+    inline def setUtc_offset(value: Double): Self = StObject.set(x, "utc_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtc_offsetUndefined: Self = StObject.set(x, "utc_offset", js.undefined)
+    inline def setUtc_offsetUndefined: Self = StObject.set(x, "utc_offset", js.undefined)
     
-    @scala.inline
-    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithheld_in_countries(value: String): Self = StObject.set(x, "withheld_in_countries", value.asInstanceOf[js.Any])
+    inline def setWithheld_in_countries(value: String): Self = StObject.set(x, "withheld_in_countries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithheld_scope(value: String): Self = StObject.set(x, "withheld_scope", value.asInstanceOf[js.Any])
+    inline def setWithheld_scope(value: String): Self = StObject.set(x, "withheld_scope", value.asInstanceOf[js.Any])
   }
 }

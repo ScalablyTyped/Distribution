@@ -12,14 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fetch(uri: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def fetch(uri: String, userArgs: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any], userArgs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def fetch[T](uri: String, callback: Callback[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def fetch[T](uri: String, userArgs: Options, callback: Callback[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any], userArgs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def fetch(uri: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def fetch(uri: String, userArgs: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any], userArgs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def fetch[T](uri: String, callback: Callback[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def fetch[T](uri: String, userArgs: Options, callback: Callback[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(uri.asInstanceOf[js.Any], userArgs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   type Callback[T] = js.Function2[/* error */ Error | Null, /* data */ Result, T]
   
@@ -31,26 +27,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

@@ -24,26 +24,22 @@ object horizontalTimelineMod {
     @JSImport("wix-style-react/dist/es/src/HorizontalTimeline", "default.ActiveIcon")
     @js.native
     def ActiveIcon: FC[js.Object] = js.native
-    @scala.inline
-    def ActiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActiveIcon")(x.asInstanceOf[js.Any])
+    inline def ActiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActiveIcon")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/HorizontalTimeline", "default.CompleteIcon")
     @js.native
     def CompleteIcon: FC[js.Object] = js.native
-    @scala.inline
-    def CompleteIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompleteIcon")(x.asInstanceOf[js.Any])
+    inline def CompleteIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompleteIcon")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/HorizontalTimeline", "default.DefaultIcon")
     @js.native
     def DefaultIcon: FC[js.Object] = js.native
-    @scala.inline
-    def DefaultIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultIcon")(x.asInstanceOf[js.Any])
+    inline def DefaultIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultIcon")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/HorizontalTimeline", "default.DestructiveIcon")
     @js.native
     def DestructiveIcon: FC[js.Object] = js.native
-    @scala.inline
-    def DestructiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DestructiveIcon")(x.asInstanceOf[js.Any])
+    inline def DestructiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DestructiveIcon")(x.asInstanceOf[js.Any])
   }
   
   type HorizontalTimeline = PureComponent[HorizontalTimelineProps, js.Object, js.Any]
@@ -60,35 +56,26 @@ object horizontalTimelineMod {
   }
   object HorizontalTimelineItem {
     
-    @scala.inline
-    def apply(label: String): HorizontalTimelineItem = {
+    inline def apply(label: String): HorizontalTimelineItem = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalTimelineItem]
     }
     
-    @scala.inline
-    implicit class HorizontalTimelineItemMutableBuilder[Self <: HorizontalTimelineItem] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalTimelineItem](x: Self) {
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkin(value: HorizontalTimelineItemSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: HorizontalTimelineItemSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setWidth(value: WidthProperty[String | Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: WidthProperty[String | Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -99,11 +86,9 @@ object horizontalTimelineMod {
   trait HorizontalTimelineItemSkin extends StObject
   object HorizontalTimelineItemSkin {
     
-    @scala.inline
-    def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
+    inline def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
     
-    @scala.inline
-    def light: typings.wixStyleReact.wixStyleReactStrings.light = "light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.light]
+    inline def light: typings.wixStyleReact.wixStyleReactStrings.light = "light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.light]
   }
   
   trait HorizontalTimelineProps extends StObject {
@@ -116,32 +101,24 @@ object horizontalTimelineMod {
   }
   object HorizontalTimelineProps {
     
-    @scala.inline
-    def apply(items: js.Array[HorizontalTimelineItem]): HorizontalTimelineProps = {
+    inline def apply(items: js.Array[HorizontalTimelineItem]): HorizontalTimelineProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalTimelineProps]
     }
     
-    @scala.inline
-    implicit class HorizontalTimelinePropsMutableBuilder[Self <: HorizontalTimelineProps] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalTimelineProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[HorizontalTimelineItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[HorizontalTimelineItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: HorizontalTimelineItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: HorizontalTimelineItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
 }

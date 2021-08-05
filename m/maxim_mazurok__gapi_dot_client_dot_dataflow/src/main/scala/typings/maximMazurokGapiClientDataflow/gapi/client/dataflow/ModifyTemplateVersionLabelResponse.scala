@@ -16,23 +16,19 @@ trait ModifyTemplateVersionLabelResponse extends StObject {
 }
 object ModifyTemplateVersionLabelResponse {
   
-  @scala.inline
-  def apply(): ModifyTemplateVersionLabelResponse = {
+  inline def apply(): ModifyTemplateVersionLabelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyTemplateVersionLabelResponse]
   }
   
-  @scala.inline
-  implicit class ModifyTemplateVersionLabelResponseMutableBuilder[Self <: ModifyTemplateVersionLabelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTemplateVersionLabelResponse](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ModifyTemplateVersionLabelResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

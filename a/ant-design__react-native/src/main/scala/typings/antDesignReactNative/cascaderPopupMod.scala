@@ -25,14 +25,12 @@ object cascaderPopupMod {
       @JSImport("@ant-design/react-native/lib/picker/cascader/Popup", "default.defaultProps.pickerValueChangeProp")
       @js.native
       def pickerValueChangeProp: String = js.native
-      @scala.inline
-      def pickerValueChangeProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueChangeProp")(x.asInstanceOf[js.Any])
+      inline def pickerValueChangeProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueChangeProp")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/picker/cascader/Popup", "default.defaultProps.pickerValueProp")
       @js.native
       def pickerValueProp: String = js.native
-      @scala.inline
-      def pickerValueProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueProp")(x.asInstanceOf[js.Any])
+      inline def pickerValueProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueProp")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -46,23 +44,18 @@ object cascaderPopupMod {
   }
   object IPopupCascaderProps {
     
-    @scala.inline
-    def apply(cascader: ReactElement): IPopupCascaderProps = {
+    inline def apply(cascader: ReactElement): IPopupCascaderProps = {
       val __obj = js.Dynamic.literal(cascader = cascader.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPopupCascaderProps]
     }
     
-    @scala.inline
-    implicit class IPopupCascaderPropsMutableBuilder[Self <: IPopupCascaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPopupCascaderProps](x: Self) {
       
-      @scala.inline
-      def setCascader(value: ReactElement): Self = StObject.set(x, "cascader", value.asInstanceOf[js.Any])
+      inline def setCascader(value: ReactElement): Self = StObject.set(x, "cascader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: /* date */ js.UndefOr[CascaderValue] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* date */ js.UndefOr[CascaderValue] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
   

@@ -14,38 +14,38 @@ object mod {
   class XmlBodyBuilder protected () extends StObject {
     def this(base64Encoder: Encoder, utf8Decoder: Decoder) = this()
     
-    val base64Encoder: js.Any = js.native
+    /* private */ val base64Encoder: js.Any = js.native
     
     def build(
       hasOperationMemberHasPayloadInputMemberName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ js.Any
     ): String = js.native
     
-    var formatMap: js.Any = js.native
+    /* private */ var formatMap: js.Any = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
     
-    var serializeBlob: js.Any = js.native
+    /* private */ var serializeBlob: js.Any = js.native
     
-    var serializeFloat: js.Any = js.native
+    /* private */ var serializeFloat: js.Any = js.native
     
-    var serializeInteger: js.Any = js.native
+    /* private */ var serializeInteger: js.Any = js.native
     
-    var serializeList: js.Any = js.native
+    /* private */ var serializeList: js.Any = js.native
     
-    var serializeMap: js.Any = js.native
+    /* private */ var serializeMap: js.Any = js.native
     
-    var serializeScalar: js.Any = js.native
+    /* private */ var serializeScalar: js.Any = js.native
     
-    var serializeString: js.Any = js.native
+    /* private */ var serializeString: js.Any = js.native
     
-    var serializeStructure: js.Any = js.native
+    /* private */ var serializeStructure: js.Any = js.native
     
-    var serializeStructureMember: js.Any = js.native
+    /* private */ var serializeStructureMember: js.Any = js.native
     
-    var serializeTimestamp: js.Any = js.native
+    /* private */ var serializeTimestamp: js.Any = js.native
     
-    var toXml: js.Any = js.native
+    /* private */ var toXml: js.Any = js.native
     
-    val utf8Decoder: js.Any = js.native
+    /* private */ val utf8Decoder: js.Any = js.native
   }
 }

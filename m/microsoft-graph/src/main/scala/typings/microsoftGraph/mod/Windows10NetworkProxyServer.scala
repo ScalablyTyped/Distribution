@@ -20,37 +20,27 @@ trait Windows10NetworkProxyServer extends StObject {
 }
 object Windows10NetworkProxyServer {
   
-  @scala.inline
-  def apply(): Windows10NetworkProxyServer = {
+  inline def apply(): Windows10NetworkProxyServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Windows10NetworkProxyServer]
   }
   
-  @scala.inline
-  implicit class Windows10NetworkProxyServerMutableBuilder[Self <: Windows10NetworkProxyServer] (val x: Self) extends AnyVal {
+  extension [Self <: Windows10NetworkProxyServer](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setExceptions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+    inline def setExceptions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionsNull: Self = StObject.set(x, "exceptions", null)
+    inline def setExceptionsNull: Self = StObject.set(x, "exceptions", null)
     
-    @scala.inline
-    def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
+    inline def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
-    @scala.inline
-    def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+    inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
     
-    @scala.inline
-    def setUseForLocalAddresses(value: Boolean): Self = StObject.set(x, "useForLocalAddresses", value.asInstanceOf[js.Any])
+    inline def setUseForLocalAddresses(value: Boolean): Self = StObject.set(x, "useForLocalAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseForLocalAddressesUndefined: Self = StObject.set(x, "useForLocalAddresses", js.undefined)
+    inline def setUseForLocalAddressesUndefined: Self = StObject.set(x, "useForLocalAddresses", js.undefined)
   }
 }

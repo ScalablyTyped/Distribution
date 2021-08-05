@@ -52,55 +52,39 @@ trait IgPivotGridGridOptions
 }
 object IgPivotGridGridOptions {
   
-  @scala.inline
-  def apply(): IgPivotGridGridOptions = {
+  inline def apply(): IgPivotGridGridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotGridGridOptions]
   }
   
-  @scala.inline
-  implicit class IgPivotGridGridOptionsMutableBuilder[Self <: IgPivotGridGridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotGridGridOptions](x: Self) {
     
-    @scala.inline
-    def setAlternateRowStyles(value: Boolean): Self = StObject.set(x, "alternateRowStyles", value.asInstanceOf[js.Any])
+    inline def setAlternateRowStyles(value: Boolean): Self = StObject.set(x, "alternateRowStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateRowStylesUndefined: Self = StObject.set(x, "alternateRowStyles", js.undefined)
+    inline def setAlternateRowStylesUndefined: Self = StObject.set(x, "alternateRowStyles", js.undefined)
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDefaultColumnWidth(value: String | Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
+    inline def setDefaultColumnWidth(value: String | Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultColumnWidthUndefined: Self = StObject.set(x, "defaultColumnWidth", js.undefined)
+    inline def setDefaultColumnWidthUndefined: Self = StObject.set(x, "defaultColumnWidth", js.undefined)
     
-    @scala.inline
-    def setEnableHoverStyles(value: Boolean): Self = StObject.set(x, "enableHoverStyles", value.asInstanceOf[js.Any])
+    inline def setEnableHoverStyles(value: Boolean): Self = StObject.set(x, "enableHoverStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHoverStylesUndefined: Self = StObject.set(x, "enableHoverStyles", js.undefined)
+    inline def setEnableHoverStylesUndefined: Self = StObject.set(x, "enableHoverStyles", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: IgPivotGridGridOptionsFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: IgPivotGridGridOptionsFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFixedHeaders(value: Boolean): Self = StObject.set(x, "fixedHeaders", value.asInstanceOf[js.Any])
+    inline def setFixedHeaders(value: Boolean): Self = StObject.set(x, "fixedHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedHeadersUndefined: Self = StObject.set(x, "fixedHeaders", js.undefined)
+    inline def setFixedHeadersUndefined: Self = StObject.set(x, "fixedHeaders", js.undefined)
     
-    @scala.inline
-    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

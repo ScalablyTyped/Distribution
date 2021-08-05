@@ -14,22 +14,17 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(file: String, function: String, line: String): File = {
+  inline def apply(file: String, function: String, line: String): File = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

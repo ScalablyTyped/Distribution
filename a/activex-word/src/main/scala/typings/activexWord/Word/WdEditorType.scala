@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdEditorType extends StObject
 object WdEditorType {
   
-  @scala.inline
-  def wdEditorCurrent: `-6` = -6.asInstanceOf[`-6`]
+  inline def wdEditorCurrent: `-6` = -6.asInstanceOf[`-6`]
   
-  @scala.inline
-  def wdEditorEditors: `-5` = -5.asInstanceOf[`-5`]
+  inline def wdEditorEditors: `-5` = -5.asInstanceOf[`-5`]
   
-  @scala.inline
-  def wdEditorEveryone: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdEditorEveryone: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def wdEditorOwners: `-4` = -4.asInstanceOf[`-4`]
+  inline def wdEditorOwners: `-4` = -4.asInstanceOf[`-4`]
 }

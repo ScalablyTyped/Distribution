@@ -13,16 +13,13 @@ trait DisableDirectoryRequest extends StObject {
 }
 object DisableDirectoryRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn): DisableDirectoryRequest = {
+  inline def apply(DirectoryArn: Arn): DisableDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableDirectoryRequest]
   }
   
-  @scala.inline
-  implicit class DisableDirectoryRequestMutableBuilder[Self <: DisableDirectoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableDirectoryRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
   }
 }

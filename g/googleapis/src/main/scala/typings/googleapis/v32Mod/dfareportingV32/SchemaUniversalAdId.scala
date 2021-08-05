@@ -24,25 +24,19 @@ trait SchemaUniversalAdId extends StObject {
 }
 object SchemaUniversalAdId {
   
-  @scala.inline
-  def apply(): SchemaUniversalAdId = {
+  inline def apply(): SchemaUniversalAdId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUniversalAdId]
   }
   
-  @scala.inline
-  implicit class SchemaUniversalAdIdMutableBuilder[Self <: SchemaUniversalAdId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUniversalAdId](x: Self) {
     
-    @scala.inline
-    def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+    inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

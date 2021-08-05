@@ -54,8 +54,7 @@ trait ArcGISImageServiceCapabilitiesQuery
 }
 object ArcGISImageServiceCapabilitiesQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     maxRecordCount: Unit,
@@ -70,25 +69,18 @@ object ArcGISImageServiceCapabilitiesQuery {
     __obj.asInstanceOf[ArcGISImageServiceCapabilitiesQuery]
   }
   
-  @scala.inline
-  implicit class ArcGISImageServiceCapabilitiesQueryMutableBuilder[Self <: ArcGISImageServiceCapabilitiesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISImageServiceCapabilitiesQuery](x: Self) {
     
-    @scala.inline
-    def setMaxRecordCount(value: Unit): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
+    inline def setMaxRecordCount(value: Unit): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDistinct(value: Unit): Self = StObject.set(x, "supportsDistinct", value.asInstanceOf[js.Any])
+    inline def setSupportsDistinct(value: Unit): Self = StObject.set(x, "supportsDistinct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsOrderBy(value: Unit): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
+    inline def setSupportsOrderBy(value: Unit): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsPagination(value: Unit): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
+    inline def setSupportsPagination(value: Unit): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsStandardizedQueriesOnly(value: Unit): Self = StObject.set(x, "supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
+    inline def setSupportsStandardizedQueriesOnly(value: Unit): Self = StObject.set(x, "supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsStatistics(value: Unit): Self = StObject.set(x, "supportsStatistics", value.asInstanceOf[js.Any])
+    inline def setSupportsStatistics(value: Unit): Self = StObject.set(x, "supportsStatistics", value.asInstanceOf[js.Any])
   }
 }

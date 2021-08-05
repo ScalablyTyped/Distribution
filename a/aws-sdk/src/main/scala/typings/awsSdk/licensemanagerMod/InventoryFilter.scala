@@ -23,25 +23,19 @@ trait InventoryFilter extends StObject {
 }
 object InventoryFilter {
   
-  @scala.inline
-  def apply(Condition: InventoryFilterCondition, Name: String): InventoryFilter = {
+  inline def apply(Condition: InventoryFilterCondition, Name: String): InventoryFilter = {
     val __obj = js.Dynamic.literal(Condition = Condition.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryFilter]
   }
   
-  @scala.inline
-  implicit class InventoryFilterMutableBuilder[Self <: InventoryFilter] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryFilter](x: Self) {
     
-    @scala.inline
-    def setCondition(value: InventoryFilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: InventoryFilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

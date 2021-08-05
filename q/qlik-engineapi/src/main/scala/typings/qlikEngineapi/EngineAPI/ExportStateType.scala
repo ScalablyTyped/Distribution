@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportStateType extends StObject
 object ExportStateType {
   
-  @scala.inline
-  def A: typings.qlikEngineapi.qlikEngineapiStrings.A = "A".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.A]
+  inline def A: typings.qlikEngineapi.qlikEngineapiStrings.A = "A".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.A]
   
-  @scala.inline
-  def P: typings.qlikEngineapi.qlikEngineapiStrings.P = "P".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.P]
+  inline def P: typings.qlikEngineapi.qlikEngineapiStrings.P = "P".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.P]
 }

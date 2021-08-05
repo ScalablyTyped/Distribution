@@ -12,22 +12,17 @@ trait Reason extends StObject {
 }
 object Reason {
   
-  @scala.inline
-  def apply(channelId: String): Reason = {
+  inline def apply(channelId: String): Reason = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }
   
-  @scala.inline
-  implicit class ReasonMutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
+  extension [Self <: Reason](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

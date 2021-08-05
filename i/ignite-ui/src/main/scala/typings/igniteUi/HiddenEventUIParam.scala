@@ -28,37 +28,27 @@ trait HiddenEventUIParam extends StObject {
 }
 object HiddenEventUIParam {
   
-  @scala.inline
-  def apply(): HiddenEventUIParam = {
+  inline def apply(): HiddenEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HiddenEventUIParam]
   }
   
-  @scala.inline
-  implicit class HiddenEventUIParamMutableBuilder[Self <: HiddenEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: HiddenEventUIParam](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPopover(value: String): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: String): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
+    inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
   }
 }

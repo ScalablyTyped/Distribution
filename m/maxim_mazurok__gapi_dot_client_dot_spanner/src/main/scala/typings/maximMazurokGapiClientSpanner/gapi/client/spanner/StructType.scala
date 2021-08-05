@@ -14,22 +14,17 @@ trait StructType extends StObject {
 }
 object StructType {
   
-  @scala.inline
-  def apply(): StructType = {
+  inline def apply(): StructType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructType]
   }
   
-  @scala.inline
-  implicit class StructTypeMutableBuilder[Self <: StructType] (val x: Self) extends AnyVal {
+  extension [Self <: StructType](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

@@ -32,7 +32,7 @@ trait Items extends StObject {
   
   def Item(Index: js.Any): js.Any = js.native
   
-  @JSName("Outlook.Items_typekey")
+  /* private */ @JSName("Outlook.Items_typekey")
   var OutlookDotItems_typekey: Items = js.native
   
   val Parent: js.Any = js.native

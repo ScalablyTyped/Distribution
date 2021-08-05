@@ -18,25 +18,19 @@ trait Prefix extends StObject {
 }
 object Prefix {
   
-  @scala.inline
-  def apply(infix: RightToLeft, prefix: ArgCountF): Prefix = {
+  inline def apply(infix: RightToLeft, prefix: ArgCountF): Prefix = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = "\\+", symbol = "+")
     __obj.asInstanceOf[Prefix]
   }
   
-  @scala.inline
-  implicit class PrefixMutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
+  extension [Self <: Prefix](x: Self) {
     
-    @scala.inline
-    def setInfix(value: RightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: RightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: ArgCountF): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: ArgCountF): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: BackslashPlussign): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: BackslashPlussign): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Plussign): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Plussign): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

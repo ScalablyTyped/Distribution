@@ -18,22 +18,17 @@ trait GetPasswordDataRequest extends StObject {
 }
 object GetPasswordDataRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId): GetPasswordDataRequest = {
+  inline def apply(InstanceId: InstanceId): GetPasswordDataRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPasswordDataRequest]
   }
   
-  @scala.inline
-  implicit class GetPasswordDataRequestMutableBuilder[Self <: GetPasswordDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPasswordDataRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait SchemaFhirConfig extends StObject {
 }
 object SchemaFhirConfig {
   
-  @scala.inline
-  def apply(): SchemaFhirConfig = {
+  inline def apply(): SchemaFhirConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFhirConfig]
   }
   
-  @scala.inline
-  implicit class SchemaFhirConfigMutableBuilder[Self <: SchemaFhirConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFhirConfig](x: Self) {
     
-    @scala.inline
-    def setFieldMetadataList(value: js.Array[SchemaFieldMetadata]): Self = StObject.set(x, "fieldMetadataList", value.asInstanceOf[js.Any])
+    inline def setFieldMetadataList(value: js.Array[SchemaFieldMetadata]): Self = StObject.set(x, "fieldMetadataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMetadataListUndefined: Self = StObject.set(x, "fieldMetadataList", js.undefined)
+    inline def setFieldMetadataListUndefined: Self = StObject.set(x, "fieldMetadataList", js.undefined)
     
-    @scala.inline
-    def setFieldMetadataListVarargs(value: SchemaFieldMetadata*): Self = StObject.set(x, "fieldMetadataList", js.Array(value :_*))
+    inline def setFieldMetadataListVarargs(value: SchemaFieldMetadata*): Self = StObject.set(x, "fieldMetadataList", js.Array(value :_*))
   }
 }

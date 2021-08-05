@@ -951,50 +951,36 @@ object mod {
   }
   object QuaternionLike {
     
-    @scala.inline
-    def apply(): QuaternionLike = {
+    inline def apply(): QuaternionLike = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QuaternionLike]
     }
     
-    @scala.inline
-    implicit class QuaternionLikeMutableBuilder[Self <: QuaternionLike] (val x: Self) extends AnyVal {
+    extension [Self <: QuaternionLike](x: Self) {
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWNull: Self = StObject.set(x, "w", null)
+      inline def setWNull: Self = StObject.set(x, "w", null)
       
-      @scala.inline
-      def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+      inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXNull: Self = StObject.set(x, "x", null)
+      inline def setXNull: Self = StObject.set(x, "x", null)
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYNull: Self = StObject.set(x, "y", null)
+      inline def setYNull: Self = StObject.set(x, "y", null)
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZNull: Self = StObject.set(x, "z", null)
+      inline def setZNull: Self = StObject.set(x, "z", null)
       
-      @scala.inline
-      def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     }
   }
   
@@ -1016,41 +1002,30 @@ object mod {
   }
   object Vector3Like {
     
-    @scala.inline
-    def apply(): Vector3Like = {
+    inline def apply(): Vector3Like = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Vector3Like]
     }
     
-    @scala.inline
-    implicit class Vector3LikeMutableBuilder[Self <: Vector3Like] (val x: Self) extends AnyVal {
+    extension [Self <: Vector3Like](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXNull: Self = StObject.set(x, "x", null)
+      inline def setXNull: Self = StObject.set(x, "x", null)
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYNull: Self = StObject.set(x, "y", null)
+      inline def setYNull: Self = StObject.set(x, "y", null)
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZNull: Self = StObject.set(x, "z", null)
+      inline def setZNull: Self = StObject.set(x, "z", null)
       
-      @scala.inline
-      def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     }
   }
 }

@@ -15,22 +15,17 @@ trait RxJQueryAjaxResult[T] extends StObject {
 }
 object RxJQueryAjaxResult {
   
-  @scala.inline
-  def apply[T](data: T, jqXHR: JQueryXHR, textStatus: String): RxJQueryAjaxResult[T] = {
+  inline def apply[T](data: T, jqXHR: JQueryXHR, textStatus: String): RxJQueryAjaxResult[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], jqXHR = jqXHR.asInstanceOf[js.Any], textStatus = textStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[RxJQueryAjaxResult[T]]
   }
   
-  @scala.inline
-  implicit class RxJQueryAjaxResultMutableBuilder[Self <: RxJQueryAjaxResult[?], T] (val x: Self & RxJQueryAjaxResult[T]) extends AnyVal {
+  extension [Self <: RxJQueryAjaxResult[?], T](x: Self & RxJQueryAjaxResult[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
+    inline def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStatus(value: String): Self = StObject.set(x, "textStatus", value.asInstanceOf[js.Any])
+    inline def setTextStatus(value: String): Self = StObject.set(x, "textStatus", value.asInstanceOf[js.Any])
   }
 }

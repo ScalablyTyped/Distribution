@@ -32,7 +32,7 @@ object mediatorSystemMod {
     /**
       * @hidden
       */
-    var _Complete_history: js.Any = js.native
+    /* private */ var _Complete_history: js.Any = js.native
     
     /**
       * Get parent {@link ParallelSystemArrayMediator} or {@link DistributedSystemArrayMediator} object.
@@ -52,7 +52,7 @@ object mediatorSystemMod {
     /**
       * @hidden
       */
-    var progress_list_ : js.Any = js.native
+    /* private */ var progress_list_ : js.Any = js.native
     
     /**
       * Start interaction.
@@ -66,6 +66,6 @@ object mediatorSystemMod {
     /**
       * @hidden
       */
-    var system_array_ : js.Any = js.native
+    /* private */ var system_array_ : js.Any = js.native
   }
 }

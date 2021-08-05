@@ -10,8 +10,7 @@ trait Tags
      with TagFrames
 object Tags {
   
-  @scala.inline
-  def apply(): Tags = {
+  inline def apply(): Tags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tags]
   }

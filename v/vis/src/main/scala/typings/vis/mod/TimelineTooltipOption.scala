@@ -14,25 +14,19 @@ trait TimelineTooltipOption extends StObject {
 }
 object TimelineTooltipOption {
   
-  @scala.inline
-  def apply(): TimelineTooltipOption = {
+  inline def apply(): TimelineTooltipOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineTooltipOption]
   }
   
-  @scala.inline
-  implicit class TimelineTooltipOptionMutableBuilder[Self <: TimelineTooltipOption] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineTooltipOption](x: Self) {
     
-    @scala.inline
-    def setFollowMouse(value: Boolean): Self = StObject.set(x, "followMouse", value.asInstanceOf[js.Any])
+    inline def setFollowMouse(value: Boolean): Self = StObject.set(x, "followMouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowMouseUndefined: Self = StObject.set(x, "followMouse", js.undefined)
+    inline def setFollowMouseUndefined: Self = StObject.set(x, "followMouse", js.undefined)
     
-    @scala.inline
-    def setOverflowMethod(value: cap | flip): Self = StObject.set(x, "overflowMethod", value.asInstanceOf[js.Any])
+    inline def setOverflowMethod(value: cap | flip): Self = StObject.set(x, "overflowMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowMethodUndefined: Self = StObject.set(x, "overflowMethod", js.undefined)
+    inline def setOverflowMethodUndefined: Self = StObject.set(x, "overflowMethod", js.undefined)
   }
 }

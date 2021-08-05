@@ -32,32 +32,24 @@ object gradient {
   }
   object IGradient {
     
-    @scala.inline
-    def apply(): IGradient = {
+    inline def apply(): IGradient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGradient]
     }
     
-    @scala.inline
-    implicit class IGradientMutableBuilder[Self <: IGradient] (val x: Self) extends AnyVal {
+    extension [Self <: IGradient](x: Self) {
       
-      @scala.inline
-      def setDefines(value: js.Any): Self = StObject.set(x, "Defines", value.asInstanceOf[js.Any])
+      inline def setDefines(value: js.Any): Self = StObject.set(x, "Defines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinesUndefined: Self = StObject.set(x, "Defines", js.undefined)
+      inline def setDefinesUndefined: Self = StObject.set(x, "Defines", js.undefined)
       
-      @scala.inline
-      def setGenerateGradient(value: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "generateGradient", js.Any.fromFunction2(value))
+      inline def setGenerateGradient(value: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "generateGradient", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateGradientUndefined: Self = StObject.set(x, "generateGradient", js.undefined)
+      inline def setGenerateGradientUndefined: Self = StObject.set(x, "generateGradient", js.undefined)
       
-      @scala.inline
-      def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
+      inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     }
   }
   
@@ -70,20 +62,16 @@ object gradient {
   }
   object ILinear {
     
-    @scala.inline
-    def apply(): ILinear = {
+    inline def apply(): ILinear = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILinear]
     }
     
-    @scala.inline
-    implicit class ILinearMutableBuilder[Self <: ILinear] (val x: Self) extends AnyVal {
+    extension [Self <: ILinear](x: Self) {
       
-      @scala.inline
-      def setThe(value: Double): Self = StObject.set(x, "The", value.asInstanceOf[js.Any])
+      inline def setThe(value: Double): Self = StObject.set(x, "The", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheUndefined: Self = StObject.set(x, "The", js.undefined)
+      inline def setTheUndefined: Self = StObject.set(x, "The", js.undefined)
     }
   }
   
@@ -119,50 +107,36 @@ object gradient {
   }
   object IRadial {
     
-    @scala.inline
-    def apply(): IRadial = {
+    inline def apply(): IRadial = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRadial]
     }
     
-    @scala.inline
-    implicit class IRadialMutableBuilder[Self <: IRadial] (val x: Self) extends AnyVal {
+    extension [Self <: IRadial](x: Self) {
       
-      @scala.inline
-      def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setGetEnd(value: () => js.Any): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+      inline def setGetEnd(value: () => js.Any): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEndUndefined: Self = StObject.set(x, "getEnd", js.undefined)
+      inline def setGetEndUndefined: Self = StObject.set(x, "getEnd", js.undefined)
       
-      @scala.inline
-      def setGetStart(value: () => js.Any): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
+      inline def setGetStart(value: () => js.Any): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStartUndefined: Self = StObject.set(x, "getStart", js.undefined)
+      inline def setGetStartUndefined: Self = StObject.set(x, "getStart", js.undefined)
       
-      @scala.inline
-      def setSetEnd(value: /* end */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
+      inline def setSetEnd(value: /* end */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEndUndefined: Self = StObject.set(x, "setEnd", js.undefined)
+      inline def setSetEndUndefined: Self = StObject.set(x, "setEnd", js.undefined)
       
-      @scala.inline
-      def setSetStart(value: /* start */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
+      inline def setSetStart(value: /* start */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStartUndefined: Self = StObject.set(x, "setStart", js.undefined)
+      inline def setSetStartUndefined: Self = StObject.set(x, "setStart", js.undefined)
       
-      @scala.inline
-      def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait IOverlayWidgetPosition extends StObject {
 }
 object IOverlayWidgetPosition {
   
-  @scala.inline
-  def apply(): IOverlayWidgetPosition = {
+  inline def apply(): IOverlayWidgetPosition = {
     val __obj = js.Dynamic.literal(preference = null)
     __obj.asInstanceOf[IOverlayWidgetPosition]
   }
   
-  @scala.inline
-  implicit class IOverlayWidgetPositionMutableBuilder[Self <: IOverlayWidgetPosition] (val x: Self) extends AnyVal {
+  extension [Self <: IOverlayWidgetPosition](x: Self) {
     
-    @scala.inline
-    def setPreference(value: OverlayWidgetPositionPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: OverlayWidgetPositionPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceNull: Self = StObject.set(x, "preference", null)
+    inline def setPreferenceNull: Self = StObject.set(x, "preference", null)
   }
 }

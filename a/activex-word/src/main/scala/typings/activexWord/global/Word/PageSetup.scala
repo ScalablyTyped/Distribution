@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.PageSetup")
 @js.native
-class PageSetup protected ()
+/* private */ class PageSetup ()
   extends StObject
      with typings.activexWord.Word.PageSetup {
   
@@ -133,7 +133,7 @@ class PageSetup protected ()
   /* CompleteClass */
   var VerticalAlignment: WdVerticalAlignment = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.PageSetup_typekey")
   var WordDotPageSetup_typekey: typings.activexWord.Word.PageSetup = js.native
 }

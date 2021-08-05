@@ -14,22 +14,17 @@ trait ReposGetAllStatusCheckContextsEndpoint extends StObject {
 }
 object ReposGetAllStatusCheckContextsEndpoint {
   
-  @scala.inline
-  def apply(branch: String, owner: String, repo: String): ReposGetAllStatusCheckContextsEndpoint = {
+  inline def apply(branch: String, owner: String, repo: String): ReposGetAllStatusCheckContextsEndpoint = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetAllStatusCheckContextsEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetAllStatusCheckContextsEndpointMutableBuilder[Self <: ReposGetAllStatusCheckContextsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetAllStatusCheckContextsEndpoint](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

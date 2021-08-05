@@ -23,31 +23,23 @@ trait CreateThingTypeResponse extends StObject {
 }
 object CreateThingTypeResponse {
   
-  @scala.inline
-  def apply(): CreateThingTypeResponse = {
+  inline def apply(): CreateThingTypeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateThingTypeResponse]
   }
   
-  @scala.inline
-  implicit class CreateThingTypeResponseMutableBuilder[Self <: CreateThingTypeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateThingTypeResponse](x: Self) {
     
-    @scala.inline
-    def setThingTypeArn(value: ThingTypeArn): Self = StObject.set(x, "thingTypeArn", value.asInstanceOf[js.Any])
+    inline def setThingTypeArn(value: ThingTypeArn): Self = StObject.set(x, "thingTypeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeArnUndefined: Self = StObject.set(x, "thingTypeArn", js.undefined)
+    inline def setThingTypeArnUndefined: Self = StObject.set(x, "thingTypeArn", js.undefined)
     
-    @scala.inline
-    def setThingTypeId(value: ThingTypeId): Self = StObject.set(x, "thingTypeId", value.asInstanceOf[js.Any])
+    inline def setThingTypeId(value: ThingTypeId): Self = StObject.set(x, "thingTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeIdUndefined: Self = StObject.set(x, "thingTypeId", js.undefined)
+    inline def setThingTypeIdUndefined: Self = StObject.set(x, "thingTypeId", js.undefined)
     
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
+    inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
+    inline def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
   }
 }

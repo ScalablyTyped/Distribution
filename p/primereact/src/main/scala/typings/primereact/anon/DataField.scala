@@ -12,19 +12,15 @@ trait DataField extends StObject {
 }
 object DataField {
   
-  @scala.inline
-  def apply(data: js.Any, field: String): DataField = {
+  inline def apply(data: js.Any, field: String): DataField = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataField]
   }
   
-  @scala.inline
-  implicit class DataFieldMutableBuilder[Self <: DataField] (val x: Self) extends AnyVal {
+  extension [Self <: DataField](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

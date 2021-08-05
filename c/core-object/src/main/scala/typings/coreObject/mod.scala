@@ -23,8 +23,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend[BaseClass /* <: Constructor[js.Any] */, Ext /* <: ExtendOptions[InstanceType[BaseClass]] */](options: Ext & (ExtendThisType[InstanceType[BaseClass], Ext])): BaseClass & (Constructor[Mix[InstanceType[BaseClass], Ext]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(options.asInstanceOf[js.Any]).asInstanceOf[BaseClass & (Constructor[Mix[InstanceType[BaseClass], Ext]])]
+  inline def extend[BaseClass /* <: Constructor[js.Any] */, Ext /* <: ExtendOptions[InstanceType[BaseClass]] */](options: Ext & (ExtendThisType[InstanceType[BaseClass], Ext])): BaseClass & (Constructor[Mix[InstanceType[BaseClass], Ext]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(options.asInstanceOf[js.Any]).asInstanceOf[BaseClass & (Constructor[Mix[InstanceType[BaseClass], Ext]])]
   
   @js.native
   trait CoreObject extends StObject {

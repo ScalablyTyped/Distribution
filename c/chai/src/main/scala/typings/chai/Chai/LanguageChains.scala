@@ -83,8 +83,7 @@ trait LanguageChains extends StObject {
 }
 object LanguageChains {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     and: Assertion,
     at: Assertion,
     be: Assertion,
@@ -106,52 +105,36 @@ object LanguageChains {
     __obj.asInstanceOf[LanguageChains]
   }
   
-  @scala.inline
-  implicit class LanguageChainsMutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageChains](x: Self) {
     
-    @scala.inline
-    def setAnd(value: Assertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAnd(value: Assertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAt(value: Assertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: Assertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBe(value: Assertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
+    inline def setBe(value: Assertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeen(value: Assertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
+    inline def setBeen(value: Assertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBut(value: Assertion): Self = StObject.set(x, "but", value.asInstanceOf[js.Any])
+    inline def setBut(value: Assertion): Self = StObject.set(x, "but", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoes(value: Assertion): Self = StObject.set(x, "does", value.asInstanceOf[js.Any])
+    inline def setDoes(value: Assertion): Self = StObject.set(x, "does", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas(value: Assertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
+    inline def setHas(value: Assertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHave(value: Assertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
+    inline def setHave(value: Assertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs(value: Assertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: Assertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOf(value: Assertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    inline def setOf(value: Assertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSame(value: Assertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
+    inline def setSame(value: Assertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThat(value: Assertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
+    inline def setThat(value: Assertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: Assertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Assertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhich(value: Assertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+    inline def setWhich(value: Assertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWith(value: Assertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+    inline def setWith(value: Assertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
   }
 }

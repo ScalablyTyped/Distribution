@@ -29,8 +29,7 @@ trait OpenFileRequestedEventOptions
 }
 object OpenFileRequestedEventOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filePath: String,
     fileSystemId: String,
     mode: ToStringLiteral[
@@ -47,11 +46,9 @@ object OpenFileRequestedEventOptions {
     __obj.asInstanceOf[OpenFileRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class OpenFileRequestedEventOptionsMutableBuilder[Self <: OpenFileRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenFileRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setMode(
+    inline def setMode(
       value: ToStringLiteral[
           READ, 
           /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 

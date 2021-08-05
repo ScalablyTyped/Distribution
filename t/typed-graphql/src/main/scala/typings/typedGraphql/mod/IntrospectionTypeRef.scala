@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IntrospectionTypeRef extends StObject
 object IntrospectionTypeRef {
   
-  @scala.inline
-  def IntrospectionListTypeRef(): typings.typedGraphql.mod.IntrospectionListTypeRef = {
+  inline def IntrospectionListTypeRef(): typings.typedGraphql.mod.IntrospectionListTypeRef = {
     val __obj = js.Dynamic.literal(kind = "LIST")
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionListTypeRef]
   }
   
-  @scala.inline
-  def IntrospectionNamedTypeRef(kind: String, name: String): typings.typedGraphql.mod.IntrospectionNamedTypeRef = {
+  inline def IntrospectionNamedTypeRef(kind: String, name: String): typings.typedGraphql.mod.IntrospectionNamedTypeRef = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionNamedTypeRef]
   }
   
-  @scala.inline
-  def IntrospectionNonNullTypeRef(): typings.typedGraphql.mod.IntrospectionNonNullTypeRef = {
+  inline def IntrospectionNonNullTypeRef(): typings.typedGraphql.mod.IntrospectionNonNullTypeRef = {
     val __obj = js.Dynamic.literal(kind = "NON_NULL")
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionNonNullTypeRef]
   }

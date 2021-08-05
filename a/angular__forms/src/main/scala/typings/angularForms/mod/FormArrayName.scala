@@ -18,7 +18,7 @@ class FormArrayName protected ()
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
   ) = this()
   
-  var _checkParentType: js.Any = js.native
+  /* private */ var _checkParentType: js.Any = js.native
   
   /**
     * A callback method that performs custom clean-up, invoked immediately

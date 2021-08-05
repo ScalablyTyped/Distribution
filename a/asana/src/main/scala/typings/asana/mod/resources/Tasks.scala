@@ -483,35 +483,26 @@ object Tasks extends Shortcut {
   }
   object AddProjectParams {
     
-    @scala.inline
-    def apply(project: String | Double): AddProjectParams = {
+    inline def apply(project: String | Double): AddProjectParams = {
       val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddProjectParams]
     }
     
-    @scala.inline
-    implicit class AddProjectParamsMutableBuilder[Self <: AddProjectParams] (val x: Self) extends AnyVal {
+    extension [Self <: AddProjectParams](x: Self) {
       
-      @scala.inline
-      def setInsertAfter(value: Double): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
+      inline def setInsertAfter(value: Double): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
+      inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
       
-      @scala.inline
-      def setInsertBefore(value: Double): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+      inline def setInsertBefore(value: Double): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+      inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
       
-      @scala.inline
-      def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSection(value: Double): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: Double): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     }
   }
   
@@ -523,26 +514,20 @@ object Tasks extends Shortcut {
   }
   object CommentParams {
     
-    @scala.inline
-    def apply(): CommentParams = {
+    inline def apply(): CommentParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommentParams]
     }
     
-    @scala.inline
-    implicit class CommentParamsMutableBuilder[Self <: CommentParams] (val x: Self) extends AnyVal {
+    extension [Self <: CommentParams](x: Self) {
       
-      @scala.inline
-      def setHtml_text(value: String): Self = StObject.set(x, "html_text", value.asInstanceOf[js.Any])
+      inline def setHtml_text(value: String): Self = StObject.set(x, "html_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml_textUndefined: Self = StObject.set(x, "html_text", js.undefined)
+      inline def setHtml_textUndefined: Self = StObject.set(x, "html_text", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -560,41 +545,30 @@ object Tasks extends Shortcut {
   }
   object CreateParams {
     
-    @scala.inline
-    def apply(name: String): CreateParams = {
+    inline def apply(name: String): CreateParams = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateParams]
     }
     
-    @scala.inline
-    implicit class CreateParamsMutableBuilder[Self <: CreateParams] (val x: Self) extends AnyVal {
+    extension [Self <: CreateParams](x: Self) {
       
-      @scala.inline
-      def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+      inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
       
-      @scala.inline
-      def setCustom_fields(value: js.Object): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
+      inline def setCustom_fields(value: js.Object): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
+      inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
       
-      @scala.inline
-      def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
+      inline def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartedUndefined: Self = StObject.set(x, "hearted", js.undefined)
+      inline def setHeartedUndefined: Self = StObject.set(x, "hearted", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+      inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     }
   }
   
@@ -616,50 +590,36 @@ object Tasks extends Shortcut {
   }
   object FindAllParams {
     
-    @scala.inline
-    def apply(): FindAllParams = {
+    inline def apply(): FindAllParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindAllParams]
     }
     
-    @scala.inline
-    implicit class FindAllParamsMutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
+    extension [Self <: FindAllParams](x: Self) {
       
-      @scala.inline
-      def setAssignee(value: Double): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      inline def setAssignee(value: Double): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+      inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
       
-      @scala.inline
-      def setCompleted_since(value: String): Self = StObject.set(x, "completed_since", value.asInstanceOf[js.Any])
+      inline def setCompleted_since(value: String): Self = StObject.set(x, "completed_since", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleted_sinceUndefined: Self = StObject.set(x, "completed_since", js.undefined)
+      inline def setCompleted_sinceUndefined: Self = StObject.set(x, "completed_since", js.undefined)
       
-      @scala.inline
-      def setModified_since(value: String): Self = StObject.set(x, "modified_since", value.asInstanceOf[js.Any])
+      inline def setModified_since(value: String): Self = StObject.set(x, "modified_since", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified_sinceUndefined: Self = StObject.set(x, "modified_since", js.undefined)
+      inline def setModified_sinceUndefined: Self = StObject.set(x, "modified_since", js.undefined)
       
-      @scala.inline
-      def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setSection(value: String | Double): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: String | Double): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
       
-      @scala.inline
-      def setWorkspace(value: String | Double): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+      inline def setWorkspace(value: String | Double): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+      inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     }
   }
   
@@ -669,20 +629,16 @@ object Tasks extends Shortcut {
   }
   object FollowersParams {
     
-    @scala.inline
-    def apply(followers: js.Array[Double | String]): FollowersParams = {
+    inline def apply(followers: js.Array[Double | String]): FollowersParams = {
       val __obj = js.Dynamic.literal(followers = followers.asInstanceOf[js.Any])
       __obj.asInstanceOf[FollowersParams]
     }
     
-    @scala.inline
-    implicit class FollowersParamsMutableBuilder[Self <: FollowersParams] (val x: Self) extends AnyVal {
+    extension [Self <: FollowersParams](x: Self) {
       
-      @scala.inline
-      def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      inline def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value :_*))
+      inline def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value :_*))
     }
   }
   
@@ -692,17 +648,14 @@ object Tasks extends Shortcut {
   }
   object RemoveProjectParams {
     
-    @scala.inline
-    def apply(project: String | Double): RemoveProjectParams = {
+    inline def apply(project: String | Double): RemoveProjectParams = {
       val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveProjectParams]
     }
     
-    @scala.inline
-    implicit class RemoveProjectParamsMutableBuilder[Self <: RemoveProjectParams] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveProjectParams](x: Self) {
       
-      @scala.inline
-      def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
   
@@ -712,17 +665,14 @@ object Tasks extends Shortcut {
   }
   object TagParams {
     
-    @scala.inline
-    def apply(tag: String | Double): TagParams = {
+    inline def apply(tag: String | Double): TagParams = {
       val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagParams]
     }
     
-    @scala.inline
-    implicit class TagParamsMutableBuilder[Self <: TagParams] (val x: Self) extends AnyVal {
+    extension [Self <: TagParams](x: Self) {
       
-      @scala.inline
-      def setTag(value: String | Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String | Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,19 +14,15 @@ trait SetLocaleOverrideRequest extends StObject {
 }
 object SetLocaleOverrideRequest {
   
-  @scala.inline
-  def apply(): SetLocaleOverrideRequest = {
+  inline def apply(): SetLocaleOverrideRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetLocaleOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SetLocaleOverrideRequestMutableBuilder[Self <: SetLocaleOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetLocaleOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

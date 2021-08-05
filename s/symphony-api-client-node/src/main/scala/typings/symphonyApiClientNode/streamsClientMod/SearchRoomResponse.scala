@@ -20,8 +20,7 @@ trait SearchRoomResponse extends StObject {
 }
 object SearchRoomResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Double,
     facetedMatchCount: js.Array[FacetedMatch],
     limit: Double,
@@ -33,28 +32,20 @@ object SearchRoomResponse {
     __obj.asInstanceOf[SearchRoomResponse]
   }
   
-  @scala.inline
-  implicit class SearchRoomResponseMutableBuilder[Self <: SearchRoomResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchRoomResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetedMatchCount(value: js.Array[FacetedMatch]): Self = StObject.set(x, "facetedMatchCount", value.asInstanceOf[js.Any])
+    inline def setFacetedMatchCount(value: js.Array[FacetedMatch]): Self = StObject.set(x, "facetedMatchCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetedMatchCountVarargs(value: FacetedMatch*): Self = StObject.set(x, "facetedMatchCount", js.Array(value :_*))
+    inline def setFacetedMatchCountVarargs(value: FacetedMatch*): Self = StObject.set(x, "facetedMatchCount", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRooms(value: RoomInfo): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+    inline def setRooms(value: RoomInfo): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
   }
 }

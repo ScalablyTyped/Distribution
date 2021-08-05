@@ -105,8 +105,7 @@ object mod extends Shortcut {
   }
   object IAnalyticsServiceProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $get: js.Any,
       developerMode: Boolean => Unit,
       excludeRoutes: js.Array[String] => Unit,
@@ -137,82 +136,57 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IAnalyticsServiceProvider]
     }
     
-    @scala.inline
-    implicit class IAnalyticsServiceProviderMutableBuilder[Self <: IAnalyticsServiceProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IAnalyticsServiceProvider](x: Self) {
       
-      @scala.inline
-      def setDeveloperMode(value: Boolean => Unit): Self = StObject.set(x, "developerMode", js.Any.fromFunction1(value))
+      inline def setDeveloperMode(value: Boolean => Unit): Self = StObject.set(x, "developerMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExcludeRoutes(value: js.Array[String] => Unit): Self = StObject.set(x, "excludeRoutes", js.Any.fromFunction1(value))
+      inline def setExcludeRoutes(value: js.Array[String] => Unit): Self = StObject.set(x, "excludeRoutes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirstPageview(value: Boolean => Unit): Self = StObject.set(x, "firstPageview", js.Any.fromFunction1(value))
+      inline def setFirstPageview(value: Boolean => Unit): Self = StObject.set(x, "firstPageview", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQueryKeysBlacklist(value: js.Array[String] => Unit): Self = StObject.set(x, "queryKeysBlacklist", js.Any.fromFunction1(value))
+      inline def setQueryKeysBlacklist(value: js.Array[String] => Unit): Self = StObject.set(x, "queryKeysBlacklist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQueryKeysWhitelist(value: js.Array[String] => Unit): Self = StObject.set(x, "queryKeysWhitelist", js.Any.fromFunction1(value))
+      inline def setQueryKeysWhitelist(value: js.Array[String] => Unit): Self = StObject.set(x, "queryKeysWhitelist", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterClearCookies(value: js.Any => Unit): Self = StObject.set(x, "registerClearCookies", js.Any.fromFunction1(value))
+      inline def setRegisterClearCookies(value: js.Any => Unit): Self = StObject.set(x, "registerClearCookies", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterEventTrack(value: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], js.Any] => Unit): Self = StObject.set(x, "registerEventTrack", js.Any.fromFunction1(value))
+      inline def setRegisterEventTrack(value: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], js.Any] => Unit): Self = StObject.set(x, "registerEventTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterIncrementProperty(value: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], js.Any] => Unit): Self = StObject.set(x, "registerIncrementProperty", js.Any.fromFunction1(value))
+      inline def setRegisterIncrementProperty(value: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], js.Any] => Unit): Self = StObject.set(x, "registerIncrementProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterPageTrack(
+      inline def setRegisterPageTrack(
         value: js.Function2[/* path */ String, /* location */ js.UndefOr[ILocationService], js.Any] => Unit
       ): Self = StObject.set(x, "registerPageTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterSetAlias(value: js.Function1[/* alias */ String, js.Any] => Unit): Self = StObject.set(x, "registerSetAlias", js.Any.fromFunction1(value))
+      inline def setRegisterSetAlias(value: js.Function1[/* alias */ String, js.Any] => Unit): Self = StObject.set(x, "registerSetAlias", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterSetSuperProperties(value: js.Function1[/* superProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetSuperProperties", js.Any.fromFunction1(value))
+      inline def setRegisterSetSuperProperties(value: js.Function1[/* superProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetSuperProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterSetSuperPropertiesOnce(value: js.Function1[/* superProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetSuperPropertiesOnce", js.Any.fromFunction1(value))
+      inline def setRegisterSetSuperPropertiesOnce(value: js.Function1[/* superProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetSuperPropertiesOnce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterSetUserProperties(value: js.Function1[/* userProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetUserProperties", js.Any.fromFunction1(value))
+      inline def setRegisterSetUserProperties(value: js.Function1[/* userProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetUserProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterSetUserPropertiesOnce(value: js.Function1[/* userProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetUserPropertiesOnce", js.Any.fromFunction1(value))
+      inline def setRegisterSetUserPropertiesOnce(value: js.Function1[/* userProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetUserPropertiesOnce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterSetUsername(value: js.Function1[/* username */ String, js.Any] => Unit): Self = StObject.set(x, "registerSetUsername", js.Any.fromFunction1(value))
+      inline def setRegisterSetUsername(value: js.Function1[/* username */ String, js.Any] => Unit): Self = StObject.set(x, "registerSetUsername", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterTransactionTrack(value: js.Any => Unit): Self = StObject.set(x, "registerTransactionTrack", js.Any.fromFunction1(value))
+      inline def setRegisterTransactionTrack(value: js.Any => Unit): Self = StObject.set(x, "registerTransactionTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterUserTimings(value: js.Function1[/* properties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerUserTimings", js.Any.fromFunction1(value))
+      inline def setRegisterUserTimings(value: js.Function1[/* properties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerUserTimings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSettings(value: BufferFlushDelay): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: BufferFlushDelay): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackExceptions(value: Boolean => Unit): Self = StObject.set(x, "trackExceptions", js.Any.fromFunction1(value))
+      inline def setTrackExceptions(value: Boolean => Unit): Self = StObject.set(x, "trackExceptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrackRoutes(value: Boolean => Unit): Self = StObject.set(x, "trackRoutes", js.Any.fromFunction1(value))
+      inline def setTrackRoutes(value: Boolean => Unit): Self = StObject.set(x, "trackRoutes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrackStates(value: Boolean => Unit): Self = StObject.set(x, "trackStates", js.Any.fromFunction1(value))
+      inline def setTrackStates(value: Boolean => Unit): Self = StObject.set(x, "trackStates", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVirtualPageviews(value: Boolean => Unit): Self = StObject.set(x, "virtualPageviews", js.Any.fromFunction1(value))
+      inline def setVirtualPageviews(value: Boolean => Unit): Self = StObject.set(x, "virtualPageviews", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithAutoBase(value: Boolean => Unit): Self = StObject.set(x, "withAutoBase", js.Any.fromFunction1(value))
+      inline def setWithAutoBase(value: Boolean => Unit): Self = StObject.set(x, "withAutoBase", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithBase(value: Boolean => Unit): Self = StObject.set(x, "withBase", js.Any.fromFunction1(value))
+      inline def setWithBase(value: Boolean => Unit): Self = StObject.set(x, "withBase", js.Any.fromFunction1(value))
     }
   }
   

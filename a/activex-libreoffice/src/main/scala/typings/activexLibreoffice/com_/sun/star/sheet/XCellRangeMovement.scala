@@ -49,8 +49,7 @@ trait XCellRangeMovement
 }
 object XCellRangeMovement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     copyRange: (CellAddress, CellRangeAddress) => Unit,
     insertCells: (CellRangeAddress, CellInsertMode) => Unit,
@@ -63,19 +62,14 @@ object XCellRangeMovement {
     __obj.asInstanceOf[XCellRangeMovement]
   }
   
-  @scala.inline
-  implicit class XCellRangeMovementMutableBuilder[Self <: XCellRangeMovement] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRangeMovement](x: Self) {
     
-    @scala.inline
-    def setCopyRange(value: (CellAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "copyRange", js.Any.fromFunction2(value))
+    inline def setCopyRange(value: (CellAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "copyRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertCells(value: (CellRangeAddress, CellInsertMode) => Unit): Self = StObject.set(x, "insertCells", js.Any.fromFunction2(value))
+    inline def setInsertCells(value: (CellRangeAddress, CellInsertMode) => Unit): Self = StObject.set(x, "insertCells", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveRange(value: (CellAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "moveRange", js.Any.fromFunction2(value))
+    inline def setMoveRange(value: (CellAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "moveRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveRange(value: (CellRangeAddress, CellDeleteMode) => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction2(value))
+    inline def setRemoveRange(value: (CellRangeAddress, CellDeleteMode) => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction2(value))
   }
 }

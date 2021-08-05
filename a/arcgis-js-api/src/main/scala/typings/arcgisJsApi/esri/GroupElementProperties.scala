@@ -34,34 +34,25 @@ trait GroupElementProperties
 }
 object GroupElementProperties {
   
-  @scala.inline
-  def apply(): GroupElementProperties = {
+  inline def apply(): GroupElementProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupElementProperties]
   }
   
-  @scala.inline
-  implicit class GroupElementPropertiesMutableBuilder[Self <: GroupElementProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GroupElementProperties](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[FieldElementProperties]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[FieldElementProperties]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: FieldElementProperties*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: FieldElementProperties*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setInitialState(value: collapsed | expanded): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: collapsed | expanded): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

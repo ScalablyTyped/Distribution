@@ -47,8 +47,7 @@ trait AnchorEl[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: 
 }
 object AnchorEl {
   
-  @scala.inline
-  def apply[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](
+  inline def apply[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](
     dirty: Boolean,
     focused: Boolean,
     focusedTag: Double,
@@ -70,73 +69,50 @@ object AnchorEl {
     __obj.asInstanceOf[AnchorEl[T, Multiple, DisableClearable, FreeSolo]]
   }
   
-  @scala.inline
-  implicit class AnchorElMutableBuilder[Self <: AnchorEl[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] (val x: Self & (AnchorEl[T, Multiple, DisableClearable, FreeSolo])) extends AnyVal {
+  extension [Self <: AnchorEl[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](x: Self & (AnchorEl[T, Multiple, DisableClearable, FreeSolo])) {
     
-    @scala.inline
-    def setAnchorEl(value: HTMLElement): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
+    inline def setAnchorEl(value: HTMLElement): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorElNull: Self = StObject.set(x, "anchorEl", null)
+    inline def setAnchorElNull: Self = StObject.set(x, "anchorEl", null)
     
-    @scala.inline
-    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusedTag(value: Double): Self = StObject.set(x, "focusedTag", value.asInstanceOf[js.Any])
+    inline def setFocusedTag(value: Double): Self = StObject.set(x, "focusedTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClearProps(value: () => js.Object): Self = StObject.set(x, "getClearProps", js.Any.fromFunction0(value))
+    inline def setGetClearProps(value: () => js.Object): Self = StObject.set(x, "getClearProps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInputLabelProps(value: () => js.Object): Self = StObject.set(x, "getInputLabelProps", js.Any.fromFunction0(value))
+    inline def setGetInputLabelProps(value: () => js.Object): Self = StObject.set(x, "getInputLabelProps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInputProps(value: () => js.Object): Self = StObject.set(x, "getInputProps", js.Any.fromFunction0(value))
+    inline def setGetInputProps(value: () => js.Object): Self = StObject.set(x, "getInputProps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetListboxProps(value: () => js.Object): Self = StObject.set(x, "getListboxProps", js.Any.fromFunction0(value))
+    inline def setGetListboxProps(value: () => js.Object): Self = StObject.set(x, "getListboxProps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptionProps(value: Option[T] => js.Object): Self = StObject.set(x, "getOptionProps", js.Any.fromFunction1(value))
+    inline def setGetOptionProps(value: Option[T] => js.Object): Self = StObject.set(x, "getOptionProps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPopupIndicatorProps(value: () => js.Object): Self = StObject.set(x, "getPopupIndicatorProps", js.Any.fromFunction0(value))
+    inline def setGetPopupIndicatorProps(value: () => js.Object): Self = StObject.set(x, "getPopupIndicatorProps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRootProps(value: () => js.Object): Self = StObject.set(x, "getRootProps", js.Any.fromFunction0(value))
+    inline def setGetRootProps(value: () => js.Object): Self = StObject.set(x, "getRootProps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTagProps(value: Index => js.Object): Self = StObject.set(x, "getTagProps", js.Any.fromFunction1(value))
+    inline def setGetTagProps(value: Index => js.Object): Self = StObject.set(x, "getTagProps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroupedOptions(value: js.Array[T]): Self = StObject.set(x, "groupedOptions", value.asInstanceOf[js.Any])
+    inline def setGroupedOptions(value: js.Array[T]): Self = StObject.set(x, "groupedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedOptionsVarargs(value: T*): Self = StObject.set(x, "groupedOptions", js.Array(value :_*))
+    inline def setGroupedOptionsVarargs(value: T*): Self = StObject.set(x, "groupedOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+    inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupOpen(value: Boolean): Self = StObject.set(x, "popupOpen", value.asInstanceOf[js.Any])
+    inline def setPopupOpen(value: Boolean): Self = StObject.set(x, "popupOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAnchorEl(value: () => Unit): Self = StObject.set(x, "setAnchorEl", js.Any.fromFunction0(value))
+    inline def setSetAnchorEl(value: () => Unit): Self = StObject.set(x, "setAnchorEl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: Value[T, Multiple, DisableClearable, FreeSolo]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value[T, Multiple, DisableClearable, FreeSolo]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueVarargs(value: (T | AutocompleteFreeSoloValueMapping[FreeSolo])*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (T | AutocompleteFreeSoloValueMapping[FreeSolo])*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

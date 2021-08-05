@@ -27,50 +27,42 @@ object appMod {
       * @param enablePassthrough If to enable passthrough to actual arm.
       * @return A promise that completes when local proxy is setup.
       */
-    @scala.inline
-    def create(armEndpoint: String, serverPort: Double): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(armEndpoint: String, serverPort: Double): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Unit,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit]
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Unit,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit],
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Unit,
       customRoutes: Unit,
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(armEndpoint: String, serverPort: Double, armManager: Manager): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(armEndpoint: String, serverPort: Double, armManager: Manager): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Manager,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit]
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Manager,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit],
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Manager,
@@ -86,8 +78,7 @@ object appMod {
       * @param enablePassthrough If to enable passthrough to actual arm.
       * @return A promise that completes when local proxy is setup.
       */
-    @scala.inline
-    def dispose(proxy: ProxyServer): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(proxy.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+    inline def dispose(proxy: ProxyServer): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(proxy.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   }
   
   object HttpsProxy {
@@ -105,10 +96,8 @@ object appMod {
       * @param defaultHandler The default handler for incoming requests. The default handler return 404.
       * @return A promise that when resolved will return the proxy server.
       */
-    @scala.inline
-    def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions, defaultHandler: RequestHandler): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any], defaultHandler.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions, defaultHandler: RequestHandler): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any], defaultHandler.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     
     /**
       * Creates a local server running express with a proxy to allow forwarding call to a target host.
@@ -119,10 +108,8 @@ object appMod {
       * @param proxOptions The proxy options.
       * @return A promise that when resolved will return the proxy server.
       */
-    @scala.inline
-    def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions, proxOptions: ProxyOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any], proxOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions, proxOptions: ProxyOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any], proxOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
   }
   
   object RdfeProxy {
@@ -140,54 +127,46 @@ object appMod {
       * @param enablePassthrough If to enable passthrough to actual rdfe.
       * @return A promise that completes when local proxy is setup.
       */
-    @scala.inline
-    def create(rdfeEndpoint: String, serverPort: Double): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(rdfeEndpoint: String, serverPort: Double): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
       rdfeManager: Unit,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit]
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
       rdfeManager: Unit,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit],
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
       rdfeManager: Unit,
       customRoutes: Unit,
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
       rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
       rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit]
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
       rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager,
       customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit],
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rdfeEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], rdfeManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def create(
+    inline def create(
       rdfeEndpoint: String,
       serverPort: Double,
       rdfeManager: typings.msportalfxMock.rdfeManagerMod.RdfeManager.Manager,
@@ -203,7 +182,6 @@ object appMod {
       * @param enablePassthrough If to enable passthrough to actual rdfe.
       * @return A promise that completes when local proxy is setup.
       */
-    @scala.inline
-    def dispose(proxy: ProxyServer): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(proxy.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+    inline def dispose(proxy: ProxyServer): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(proxy.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   }
 }

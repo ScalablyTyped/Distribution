@@ -21,49 +21,35 @@ trait ConstructorOptions extends StObject {
 }
 object ConstructorOptions {
   
-  @scala.inline
-  def apply(): ConstructorOptions = {
+  inline def apply(): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstructorOptions]
   }
   
-  @scala.inline
-  implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setBaseApiUrl(value: String): Self = StObject.set(x, "baseApiUrl", value.asInstanceOf[js.Any])
+    inline def setBaseApiUrl(value: String): Self = StObject.set(x, "baseApiUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseApiUrlUndefined: Self = StObject.set(x, "baseApiUrl", js.undefined)
+    inline def setBaseApiUrlUndefined: Self = StObject.set(x, "baseApiUrl", js.undefined)
     
-    @scala.inline
-    def setFilepath(value: Boolean): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+    inline def setFilepath(value: Boolean): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
+    inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
     
-    @scala.inline
-    def setOnlyFirstMatch(value: Boolean): Self = StObject.set(x, "onlyFirstMatch", value.asInstanceOf[js.Any])
+    inline def setOnlyFirstMatch(value: Boolean): Self = StObject.set(x, "onlyFirstMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyFirstMatchUndefined: Self = StObject.set(x, "onlyFirstMatch", js.undefined)
+    inline def setOnlyFirstMatchUndefined: Self = StObject.set(x, "onlyFirstMatch", js.undefined)
     
-    @scala.inline
-    def setPolling(value: Boolean | PollingOptions): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+    inline def setPolling(value: Boolean | PollingOptions): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
+    inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
     
-    @scala.inline
-    def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setWebHook(value: Boolean | WebHookOptions): Self = StObject.set(x, "webHook", value.asInstanceOf[js.Any])
+    inline def setWebHook(value: Boolean | WebHookOptions): Self = StObject.set(x, "webHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebHookUndefined: Self = StObject.set(x, "webHook", js.undefined)
+    inline def setWebHookUndefined: Self = StObject.set(x, "webHook", js.undefined)
   }
 }

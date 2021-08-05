@@ -13,19 +13,15 @@ trait Sel extends StObject {
 }
 object Sel {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Sel: Selection): Sel = {
+  inline def apply(Cancel: Boolean, Sel: Selection): Sel = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Sel = Sel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sel]
   }
   
-  @scala.inline
-  implicit class SelMutableBuilder[Self <: Sel] (val x: Self) extends AnyVal {
+  extension [Self <: Sel](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
+    inline def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
   }
 }

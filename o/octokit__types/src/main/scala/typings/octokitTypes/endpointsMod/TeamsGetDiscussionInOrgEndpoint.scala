@@ -15,23 +15,18 @@ trait TeamsGetDiscussionInOrgEndpoint extends StObject {
 }
 object TeamsGetDiscussionInOrgEndpoint {
   
-  @scala.inline
-  def apply(discussion_number: Double, org_ : String, team_slug: String): TeamsGetDiscussionInOrgEndpoint = {
+  inline def apply(discussion_number: Double, org_ : String, team_slug: String): TeamsGetDiscussionInOrgEndpoint = {
     val __obj = js.Dynamic.literal(discussion_number = discussion_number.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsGetDiscussionInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsGetDiscussionInOrgEndpointMutableBuilder[Self <: TeamsGetDiscussionInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsGetDiscussionInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
+    inline def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait DeleteByQueryRethrottle
 }
 object DeleteByQueryRethrottle {
   
-  @scala.inline
-  def apply(requests_per_second: Double, task_id: String): DeleteByQueryRethrottle = {
+  inline def apply(requests_per_second: Double, task_id: String): DeleteByQueryRethrottle = {
     val __obj = js.Dynamic.literal(requests_per_second = requests_per_second.asInstanceOf[js.Any], task_id = task_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteByQueryRethrottle]
   }
   
-  @scala.inline
-  implicit class DeleteByQueryRethrottleMutableBuilder[Self <: DeleteByQueryRethrottle] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteByQueryRethrottle](x: Self) {
     
-    @scala.inline
-    def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
+    inline def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask_id(value: String): Self = StObject.set(x, "task_id", value.asInstanceOf[js.Any])
+    inline def setTask_id(value: String): Self = StObject.set(x, "task_id", value.asInstanceOf[js.Any])
   }
 }

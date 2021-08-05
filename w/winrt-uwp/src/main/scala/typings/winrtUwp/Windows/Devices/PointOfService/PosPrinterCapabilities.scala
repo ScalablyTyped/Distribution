@@ -39,8 +39,7 @@ trait PosPrinterCapabilities extends StObject {
 }
 object PosPrinterCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canMapCharacterSet: Boolean,
     defaultCharacterSet: Double,
     hasCoverSensor: Boolean,
@@ -56,37 +55,26 @@ object PosPrinterCapabilities {
     __obj.asInstanceOf[PosPrinterCapabilities]
   }
   
-  @scala.inline
-  implicit class PosPrinterCapabilitiesMutableBuilder[Self <: PosPrinterCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: PosPrinterCapabilities](x: Self) {
     
-    @scala.inline
-    def setCanMapCharacterSet(value: Boolean): Self = StObject.set(x, "canMapCharacterSet", value.asInstanceOf[js.Any])
+    inline def setCanMapCharacterSet(value: Boolean): Self = StObject.set(x, "canMapCharacterSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCharacterSet(value: Double): Self = StObject.set(x, "defaultCharacterSet", value.asInstanceOf[js.Any])
+    inline def setDefaultCharacterSet(value: Double): Self = StObject.set(x, "defaultCharacterSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCoverSensor(value: Boolean): Self = StObject.set(x, "hasCoverSensor", value.asInstanceOf[js.Any])
+    inline def setHasCoverSensor(value: Boolean): Self = StObject.set(x, "hasCoverSensor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTransactionSupported(value: Boolean): Self = StObject.set(x, "isTransactionSupported", value.asInstanceOf[js.Any])
+    inline def setIsTransactionSupported(value: Boolean): Self = StObject.set(x, "isTransactionSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJournal(value: JournalPrinterCapabilities): Self = StObject.set(x, "journal", value.asInstanceOf[js.Any])
+    inline def setJournal(value: JournalPrinterCapabilities): Self = StObject.set(x, "journal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
+    inline def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceipt(value: ReceiptPrinterCapabilities): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
+    inline def setReceipt(value: ReceiptPrinterCapabilities): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlip(value: SlipPrinterCapabilities): Self = StObject.set(x, "slip", value.asInstanceOf[js.Any])
+    inline def setSlip(value: SlipPrinterCapabilities): Self = StObject.set(x, "slip", value.asInstanceOf[js.Any])
   }
 }

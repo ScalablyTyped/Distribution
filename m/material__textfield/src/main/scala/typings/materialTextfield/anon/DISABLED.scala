@@ -30,8 +30,7 @@ trait DISABLED extends StObject {
 }
 object DISABLED {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DISABLED: String,
     FOCUSED: String,
     HELPER_LINE: String,
@@ -48,40 +47,28 @@ object DISABLED {
     __obj.asInstanceOf[DISABLED]
   }
   
-  @scala.inline
-  implicit class DISABLEDMutableBuilder[Self <: DISABLED] (val x: Self) extends AnyVal {
+  extension [Self <: DISABLED](x: Self) {
     
-    @scala.inline
-    def setDISABLED(value: String): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
+    inline def setDISABLED(value: String): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFOCUSED(value: String): Self = StObject.set(x, "FOCUSED", value.asInstanceOf[js.Any])
+    inline def setFOCUSED(value: String): Self = StObject.set(x, "FOCUSED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHELPER_LINE(value: String): Self = StObject.set(x, "HELPER_LINE", value.asInstanceOf[js.Any])
+    inline def setHELPER_LINE(value: String): Self = StObject.set(x, "HELPER_LINE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINVALID(value: String): Self = StObject.set(x, "INVALID", value.asInstanceOf[js.Any])
+    inline def setINVALID(value: String): Self = StObject.set(x, "INVALID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLABEL_FLOATING(value: String): Self = StObject.set(x, "LABEL_FLOATING", value.asInstanceOf[js.Any])
+    inline def setLABEL_FLOATING(value: String): Self = StObject.set(x, "LABEL_FLOATING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNO_LABEL(value: String): Self = StObject.set(x, "NO_LABEL", value.asInstanceOf[js.Any])
+    inline def setNO_LABEL(value: String): Self = StObject.set(x, "NO_LABEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOUTLINED(value: String): Self = StObject.set(x, "OUTLINED", value.asInstanceOf[js.Any])
+    inline def setOUTLINED(value: String): Self = StObject.set(x, "OUTLINED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
+    inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEXTAREA(value: String): Self = StObject.set(x, "TEXTAREA", value.asInstanceOf[js.Any])
+    inline def setTEXTAREA(value: String): Self = StObject.set(x, "TEXTAREA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWITH_LEADING_ICON(value: String): Self = StObject.set(x, "WITH_LEADING_ICON", value.asInstanceOf[js.Any])
+    inline def setWITH_LEADING_ICON(value: String): Self = StObject.set(x, "WITH_LEADING_ICON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWITH_TRAILING_ICON(value: String): Self = StObject.set(x, "WITH_TRAILING_ICON", value.asInstanceOf[js.Any])
+    inline def setWITH_TRAILING_ICON(value: String): Self = StObject.set(x, "WITH_TRAILING_ICON", value.asInstanceOf[js.Any])
   }
 }

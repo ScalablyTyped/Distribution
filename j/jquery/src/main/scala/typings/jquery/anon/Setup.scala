@@ -21,16 +21,13 @@ trait Setup[TTarget, TData]
 }
 object Setup {
   
-  @scala.inline
-  def apply[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Setup[TTarget, TData] = {
+  inline def apply[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Setup[TTarget, TData] = {
     val __obj = js.Dynamic.literal(setup = js.Any.fromFunction3(setup))
     __obj.asInstanceOf[Setup[TTarget, TData]]
   }
   
-  @scala.inline
-  implicit class SetupMutableBuilder[Self <: Setup[?, ?], TTarget, TData] (val x: Self & (Setup[TTarget, TData])) extends AnyVal {
+  extension [Self <: Setup[?, ?], TTarget, TData](x: Self & (Setup[TTarget, TData])) {
     
-    @scala.inline
-    def setSetup(value: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Self = StObject.set(x, "setup", js.Any.fromFunction3(value))
+    inline def setSetup(value: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Self = StObject.set(x, "setup", js.Any.fromFunction3(value))
   }
 }

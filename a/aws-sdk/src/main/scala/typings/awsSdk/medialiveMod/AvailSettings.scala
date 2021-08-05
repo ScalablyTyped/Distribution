@@ -12,25 +12,19 @@ trait AvailSettings extends StObject {
 }
 object AvailSettings {
   
-  @scala.inline
-  def apply(): AvailSettings = {
+  inline def apply(): AvailSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvailSettings]
   }
   
-  @scala.inline
-  implicit class AvailSettingsMutableBuilder[Self <: AvailSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AvailSettings](x: Self) {
     
-    @scala.inline
-    def setScte35SpliceInsert(value: Scte35SpliceInsert): Self = StObject.set(x, "Scte35SpliceInsert", value.asInstanceOf[js.Any])
+    inline def setScte35SpliceInsert(value: Scte35SpliceInsert): Self = StObject.set(x, "Scte35SpliceInsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35SpliceInsertUndefined: Self = StObject.set(x, "Scte35SpliceInsert", js.undefined)
+    inline def setScte35SpliceInsertUndefined: Self = StObject.set(x, "Scte35SpliceInsert", js.undefined)
     
-    @scala.inline
-    def setScte35TimeSignalApos(value: Scte35TimeSignalApos): Self = StObject.set(x, "Scte35TimeSignalApos", value.asInstanceOf[js.Any])
+    inline def setScte35TimeSignalApos(value: Scte35TimeSignalApos): Self = StObject.set(x, "Scte35TimeSignalApos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35TimeSignalAposUndefined: Self = StObject.set(x, "Scte35TimeSignalApos", js.undefined)
+    inline def setScte35TimeSignalAposUndefined: Self = StObject.set(x, "Scte35TimeSignalApos", js.undefined)
   }
 }

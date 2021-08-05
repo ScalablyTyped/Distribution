@@ -45,64 +45,45 @@ trait ApiApplication extends StObject {
 }
 object ApiApplication {
   
-  @scala.inline
-  def apply(): ApiApplication = {
+  inline def apply(): ApiApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiApplication]
   }
   
-  @scala.inline
-  implicit class ApiApplicationMutableBuilder[Self <: ApiApplication] (val x: Self) extends AnyVal {
+  extension [Self <: ApiApplication](x: Self) {
     
-    @scala.inline
-    def setAcceptMappedClaims(value: NullableOption[Boolean]): Self = StObject.set(x, "acceptMappedClaims", value.asInstanceOf[js.Any])
+    inline def setAcceptMappedClaims(value: NullableOption[Boolean]): Self = StObject.set(x, "acceptMappedClaims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptMappedClaimsNull: Self = StObject.set(x, "acceptMappedClaims", null)
+    inline def setAcceptMappedClaimsNull: Self = StObject.set(x, "acceptMappedClaims", null)
     
-    @scala.inline
-    def setAcceptMappedClaimsUndefined: Self = StObject.set(x, "acceptMappedClaims", js.undefined)
+    inline def setAcceptMappedClaimsUndefined: Self = StObject.set(x, "acceptMappedClaims", js.undefined)
     
-    @scala.inline
-    def setKnownClientApplications(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "knownClientApplications", value.asInstanceOf[js.Any])
+    inline def setKnownClientApplications(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "knownClientApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnownClientApplicationsNull: Self = StObject.set(x, "knownClientApplications", null)
+    inline def setKnownClientApplicationsNull: Self = StObject.set(x, "knownClientApplications", null)
     
-    @scala.inline
-    def setKnownClientApplicationsUndefined: Self = StObject.set(x, "knownClientApplications", js.undefined)
+    inline def setKnownClientApplicationsUndefined: Self = StObject.set(x, "knownClientApplications", js.undefined)
     
-    @scala.inline
-    def setKnownClientApplicationsVarargs(value: String*): Self = StObject.set(x, "knownClientApplications", js.Array(value :_*))
+    inline def setKnownClientApplicationsVarargs(value: String*): Self = StObject.set(x, "knownClientApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = StObject.set(x, "oauth2PermissionScopes", value.asInstanceOf[js.Any])
+    inline def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = StObject.set(x, "oauth2PermissionScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2PermissionScopesUndefined: Self = StObject.set(x, "oauth2PermissionScopes", js.undefined)
+    inline def setOauth2PermissionScopesUndefined: Self = StObject.set(x, "oauth2PermissionScopes", js.undefined)
     
-    @scala.inline
-    def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value :_*))
+    inline def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value :_*))
     
-    @scala.inline
-    def setPreAuthorizedApplications(value: NullableOption[js.Array[PreAuthorizedApplication]]): Self = StObject.set(x, "preAuthorizedApplications", value.asInstanceOf[js.Any])
+    inline def setPreAuthorizedApplications(value: NullableOption[js.Array[PreAuthorizedApplication]]): Self = StObject.set(x, "preAuthorizedApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreAuthorizedApplicationsNull: Self = StObject.set(x, "preAuthorizedApplications", null)
+    inline def setPreAuthorizedApplicationsNull: Self = StObject.set(x, "preAuthorizedApplications", null)
     
-    @scala.inline
-    def setPreAuthorizedApplicationsUndefined: Self = StObject.set(x, "preAuthorizedApplications", js.undefined)
+    inline def setPreAuthorizedApplicationsUndefined: Self = StObject.set(x, "preAuthorizedApplications", js.undefined)
     
-    @scala.inline
-    def setPreAuthorizedApplicationsVarargs(value: PreAuthorizedApplication*): Self = StObject.set(x, "preAuthorizedApplications", js.Array(value :_*))
+    inline def setPreAuthorizedApplicationsVarargs(value: PreAuthorizedApplication*): Self = StObject.set(x, "preAuthorizedApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestedAccessTokenVersion(value: NullableOption[Double]): Self = StObject.set(x, "requestedAccessTokenVersion", value.asInstanceOf[js.Any])
+    inline def setRequestedAccessTokenVersion(value: NullableOption[Double]): Self = StObject.set(x, "requestedAccessTokenVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedAccessTokenVersionNull: Self = StObject.set(x, "requestedAccessTokenVersion", null)
+    inline def setRequestedAccessTokenVersionNull: Self = StObject.set(x, "requestedAccessTokenVersion", null)
     
-    @scala.inline
-    def setRequestedAccessTokenVersionUndefined: Self = StObject.set(x, "requestedAccessTokenVersion", js.undefined)
+    inline def setRequestedAccessTokenVersionUndefined: Self = StObject.set(x, "requestedAccessTokenVersion", js.undefined)
   }
 }

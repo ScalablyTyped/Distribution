@@ -28,34 +28,25 @@ trait ListDetectorsRequest extends StObject {
 }
 object ListDetectorsRequest {
   
-  @scala.inline
-  def apply(detectorModelName: DetectorModelName): ListDetectorsRequest = {
+  inline def apply(detectorModelName: DetectorModelName): ListDetectorsRequest = {
     val __obj = js.Dynamic.literal(detectorModelName = detectorModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDetectorsRequest]
   }
   
-  @scala.inline
-  implicit class ListDetectorsRequestMutableBuilder[Self <: ListDetectorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDetectorsRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
+    inline def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
+    inline def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNameUndefined: Self = StObject.set(x, "stateName", js.undefined)
+    inline def setStateNameUndefined: Self = StObject.set(x, "stateName", js.undefined)
   }
 }

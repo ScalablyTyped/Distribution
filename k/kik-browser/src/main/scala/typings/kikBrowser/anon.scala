@@ -52,23 +52,18 @@ object anon {
   }
   object Browser {
     
-    @scala.inline
-    def apply(browser: Name, os: Name, version: Name): Browser = {
+    inline def apply(browser: Name, os: Name, version: Name): Browser = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Browser]
     }
     
-    @scala.inline
-    implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+    extension [Self <: Browser](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Name): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Name): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,23 +108,18 @@ object anon {
   }
   object Hide {
     
-    @scala.inline
-    def apply(hide: () => Unit, isEnabled: () => Boolean, show: () => Unit): Hide = {
+    inline def apply(hide: () => Unit, isEnabled: () => Boolean, show: () => Unit): Hide = {
       val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), isEnabled = js.Any.fromFunction0(isEnabled), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[Hide]
     }
     
-    @scala.inline
-    implicit class HideMutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
+    extension [Self <: Hide](x: Self) {
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+      inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -141,20 +131,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, version: String): Name = {
+    inline def apply(name: String, version: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,17 +150,14 @@ object anon {
   }
   object Platform {
     
-    @scala.inline
-    def apply(platform: Browser): Platform = {
+    inline def apply(platform: Browser): Platform = {
       val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
       __obj.asInstanceOf[Platform]
     }
     
-    @scala.inline
-    implicit class PlatformMutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
+    extension [Self <: Platform](x: Self) {
       
-      @scala.inline
-      def setPlatform(value: Browser): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: Browser): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,17 +167,14 @@ object anon {
   }
   object Username {
     
-    @scala.inline
-    def apply(username: String): Username = {
+    inline def apply(username: String): Username = {
       val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Username]
     }
     
-    @scala.inline
-    implicit class UsernameMutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
+    extension [Self <: Username](x: Self) {
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

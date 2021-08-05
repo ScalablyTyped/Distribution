@@ -10,16 +10,13 @@ trait SQLTransaction extends StObject {
 }
 object SQLTransaction {
   
-  @scala.inline
-  def apply(executeSql: String => SQLResultSet): SQLTransaction = {
+  inline def apply(executeSql: String => SQLResultSet): SQLTransaction = {
     val __obj = js.Dynamic.literal(executeSql = js.Any.fromFunction1(executeSql))
     __obj.asInstanceOf[SQLTransaction]
   }
   
-  @scala.inline
-  implicit class SQLTransactionMutableBuilder[Self <: SQLTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: SQLTransaction](x: Self) {
     
-    @scala.inline
-    def setExecuteSql(value: String => SQLResultSet): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
+    inline def setExecuteSql(value: String => SQLResultSet): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
   }
 }

@@ -10,8 +10,6 @@ object getModuleUrlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getModuleURL(moduleName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleURL")(moduleName.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getModuleURL(moduleName: String, buildType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getModuleURL")(moduleName.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getModuleURL(moduleName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleURL")(moduleName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getModuleURL(moduleName: String, buildType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getModuleURL")(moduleName.asInstanceOf[js.Any], buildType.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -22,6 +22,5 @@ object Tag {
   @JSImport("antd-mobile-rn", "Tag.defaultProps")
   @js.native
   def defaultProps: AfterClose = js.native
-  @scala.inline
-  def defaultProps_=(x: AfterClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: AfterClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

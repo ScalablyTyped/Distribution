@@ -21,20 +21,17 @@ object LanguageSettingType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.LanguageSettingType.CurrentUser")
   @js.native
   def CurrentUser: LanguageSettingType = js.native
-  @scala.inline
-  def CurrentUser_=(x: LanguageSettingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurrentUser")(x.asInstanceOf[js.Any])
+  inline def CurrentUser_=(x: LanguageSettingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurrentUser")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.LanguageSettingType.ProjectDefault")
   @js.native
   def ProjectDefault: LanguageSettingType = js.native
-  @scala.inline
-  def ProjectDefault_=(x: LanguageSettingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectDefault")(x.asInstanceOf[js.Any])
+  inline def ProjectDefault_=(x: LanguageSettingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectDefault")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.LanguageSettingType.Variable")
   @js.native
   def Variable: LanguageSettingType = js.native
-  @scala.inline
-  def Variable_=(x: LanguageSettingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Variable")(x.asInstanceOf[js.Any])
+  inline def Variable_=(x: LanguageSettingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Variable")(x.asInstanceOf[js.Any])
 }

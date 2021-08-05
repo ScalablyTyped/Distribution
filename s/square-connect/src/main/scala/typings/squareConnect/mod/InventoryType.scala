@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InventoryType extends StObject
 object InventoryType {
   
-  @scala.inline
-  def ADJUSTMENT: typings.squareConnect.squareConnectStrings.ADJUSTMENT = "ADJUSTMENT".asInstanceOf[typings.squareConnect.squareConnectStrings.ADJUSTMENT]
+  inline def ADJUSTMENT: typings.squareConnect.squareConnectStrings.ADJUSTMENT = "ADJUSTMENT".asInstanceOf[typings.squareConnect.squareConnectStrings.ADJUSTMENT]
   
-  @scala.inline
-  def PHYSICAL_COUNT: typings.squareConnect.squareConnectStrings.PHYSICAL_COUNT = "PHYSICAL_COUNT".asInstanceOf[typings.squareConnect.squareConnectStrings.PHYSICAL_COUNT]
+  inline def PHYSICAL_COUNT: typings.squareConnect.squareConnectStrings.PHYSICAL_COUNT = "PHYSICAL_COUNT".asInstanceOf[typings.squareConnect.squareConnectStrings.PHYSICAL_COUNT]
   
-  @scala.inline
-  def TRANSFER: typings.squareConnect.squareConnectStrings.TRANSFER = "TRANSFER".asInstanceOf[typings.squareConnect.squareConnectStrings.TRANSFER]
+  inline def TRANSFER: typings.squareConnect.squareConnectStrings.TRANSFER = "TRANSFER".asInstanceOf[typings.squareConnect.squareConnectStrings.TRANSFER]
 }

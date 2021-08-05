@@ -14,8 +14,7 @@ trait DeclarationMemberType
      with IDLInterfaceMemberType
 object DeclarationMemberType {
   
-  @scala.inline
-  def IterableDeclarationMemberType(
+  inline def IterableDeclarationMemberType(
     arguments: js.Array[Argument],
     async: Boolean,
     extAttrs: js.Array[ExtendedAttribute],
@@ -27,8 +26,7 @@ object DeclarationMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.IterableDeclarationMemberType]
   }
   
-  @scala.inline
-  def MaplikeDeclarationMemberType(
+  inline def MaplikeDeclarationMemberType(
     arguments: js.Array[js.Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
@@ -40,8 +38,7 @@ object DeclarationMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.MaplikeDeclarationMemberType]
   }
   
-  @scala.inline
-  def SetlikeDeclarationMemberType(
+  inline def SetlikeDeclarationMemberType(
     arguments: js.Array[js.Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],

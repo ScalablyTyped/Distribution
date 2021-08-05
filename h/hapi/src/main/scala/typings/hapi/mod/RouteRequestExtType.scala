@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteRequestExtType extends StObject
 object RouteRequestExtType {
   
-  @scala.inline
-  def onCredentials: typings.hapi.hapiStrings.onCredentials = "onCredentials".asInstanceOf[typings.hapi.hapiStrings.onCredentials]
+  inline def onCredentials: typings.hapi.hapiStrings.onCredentials = "onCredentials".asInstanceOf[typings.hapi.hapiStrings.onCredentials]
   
-  @scala.inline
-  def onPostAuth: typings.hapi.hapiStrings.onPostAuth = "onPostAuth".asInstanceOf[typings.hapi.hapiStrings.onPostAuth]
+  inline def onPostAuth: typings.hapi.hapiStrings.onPostAuth = "onPostAuth".asInstanceOf[typings.hapi.hapiStrings.onPostAuth]
   
-  @scala.inline
-  def onPostHandler: typings.hapi.hapiStrings.onPostHandler = "onPostHandler".asInstanceOf[typings.hapi.hapiStrings.onPostHandler]
+  inline def onPostHandler: typings.hapi.hapiStrings.onPostHandler = "onPostHandler".asInstanceOf[typings.hapi.hapiStrings.onPostHandler]
   
-  @scala.inline
-  def onPreAuth: typings.hapi.hapiStrings.onPreAuth = "onPreAuth".asInstanceOf[typings.hapi.hapiStrings.onPreAuth]
+  inline def onPreAuth: typings.hapi.hapiStrings.onPreAuth = "onPreAuth".asInstanceOf[typings.hapi.hapiStrings.onPreAuth]
   
-  @scala.inline
-  def onPreHandler: typings.hapi.hapiStrings.onPreHandler = "onPreHandler".asInstanceOf[typings.hapi.hapiStrings.onPreHandler]
+  inline def onPreHandler: typings.hapi.hapiStrings.onPreHandler = "onPreHandler".asInstanceOf[typings.hapi.hapiStrings.onPreHandler]
   
-  @scala.inline
-  def onPreResponse: typings.hapi.hapiStrings.onPreResponse = "onPreResponse".asInstanceOf[typings.hapi.hapiStrings.onPreResponse]
+  inline def onPreResponse: typings.hapi.hapiStrings.onPreResponse = "onPreResponse".asInstanceOf[typings.hapi.hapiStrings.onPreResponse]
 }

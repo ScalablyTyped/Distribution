@@ -16,10 +16,8 @@ object booleanMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Boolean.BooleanTypeProps> & {  serialize :(value : @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Boolean.BooleanTypeKnobValue): string | null,   deserialize :(value : string | null): boolean} */
   object default {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[BooleanTypeProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[BooleanTypeProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[BooleanTypeProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[BooleanTypeProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", JSImport.Default)
     @js.native
@@ -28,38 +26,32 @@ object booleanMod {
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", "default.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", "default.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialBooleanTypeProps] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialBooleanTypeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialBooleanTypeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", "default.deserialize")
     @js.native
     def deserialize: js.Function1[/* value */ String | Null, Boolean] = js.native
-    @scala.inline
-    def deserialize_=(x: js.Function1[/* value */ String | Null, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
+    inline def deserialize_=(x: js.Function1[/* value */ String | Null, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", "default.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", "default.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapBooleanT] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapBooleanT]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapBooleanT]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", "default.serialize")
     @js.native
     def serialize: js.Function1[/* value */ BooleanTypeKnobValue, String | Null] = js.native
-    @scala.inline
-    def serialize_=(x: js.Function1[/* value */ BooleanTypeKnobValue, String | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
+    inline def serialize_=(x: js.Function1[/* value */ BooleanTypeKnobValue, String | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   }
   
   type BooleanTypeKnob = KnobControlConfig[BooleanTypeKnobValue]
@@ -75,17 +67,14 @@ object booleanMod {
   }
   object BooleanTypeProps {
     
-    @scala.inline
-    def apply(knob: BooleanTypeKnob, onChange: BooleanTypeKnobValue => BooleanTypeKnobValue): BooleanTypeProps = {
+    inline def apply(knob: BooleanTypeKnob, onChange: BooleanTypeKnobValue => BooleanTypeKnobValue): BooleanTypeProps = {
       val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[BooleanTypeProps]
     }
     
-    @scala.inline
-    implicit class BooleanTypePropsMutableBuilder[Self <: BooleanTypeProps] (val x: Self) extends AnyVal {
+    extension [Self <: BooleanTypeProps](x: Self) {
       
-      @scala.inline
-      def setKnob(value: BooleanTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+      inline def setKnob(value: BooleanTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }
   }
 }

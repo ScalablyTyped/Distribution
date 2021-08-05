@@ -18,8 +18,7 @@ trait ApplicativeComposition[F, G]
 }
 object ApplicativeComposition {
   
-  @scala.inline
-  def apply[F, G](
+  inline def apply[F, G](
     ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any) => js.Any,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
     of: js.Any => js.Any
@@ -28,15 +27,12 @@ object ApplicativeComposition {
     __obj.asInstanceOf[ApplicativeComposition[F, G]]
   }
   
-  @scala.inline
-  implicit class ApplicativeCompositionMutableBuilder[Self <: ApplicativeComposition[?, ?], F, G] (val x: Self & (ApplicativeComposition[F, G])) extends AnyVal {
+  extension [Self <: ApplicativeComposition[?, ?], F, G](x: Self & (ApplicativeComposition[F, G])) {
     
-    @scala.inline
-    def setAp(
+    inline def setAp(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any) => js.Any
     ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOf(value: js.Any => js.Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: js.Any => js.Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
   }
 }

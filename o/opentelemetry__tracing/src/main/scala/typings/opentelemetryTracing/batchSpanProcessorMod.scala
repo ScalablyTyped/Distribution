@@ -19,26 +19,26 @@ object batchSpanProcessorMod {
     def this(_exporter: SpanExporter, config: BufferConfig) = this()
     
     /** Add a span in the buffer. */
-    var _addToBuffer: js.Any = js.native
+    /* private */ var _addToBuffer: js.Any = js.native
     
-    val _bufferSize: js.Any = js.native
+    /* private */ val _bufferSize: js.Any = js.native
     
-    val _bufferTimeout: js.Any = js.native
+    /* private */ val _bufferTimeout: js.Any = js.native
     
-    var _clearTimer: js.Any = js.native
+    /* private */ var _clearTimer: js.Any = js.native
     
-    val _exporter: js.Any = js.native
+    /* private */ val _exporter: js.Any = js.native
     
-    var _finishedSpans: js.Any = js.native
+    /* private */ var _finishedSpans: js.Any = js.native
     
     /** Send the span data list to exporter */
-    var _flush: js.Any = js.native
+    /* private */ var _flush: js.Any = js.native
     
-    var _isShutdown: js.Any = js.native
+    /* private */ var _isShutdown: js.Any = js.native
     
-    var _maybeStartTimer: js.Any = js.native
+    /* private */ var _maybeStartTimer: js.Any = js.native
     
-    var _timer: js.Any = js.native
+    /* private */ var _timer: js.Any = js.native
     
     def forceFlush(): Unit = js.native
     /**

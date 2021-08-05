@@ -13,8 +13,6 @@ object dragLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps]): DndComponentEnhancer[CollectedProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("DragLayer")(collect.asInstanceOf[js.Any]).asInstanceOf[DndComponentEnhancer[CollectedProps]]
-  @scala.inline
-  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps], options: DndOptions[RequiredProps]): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragLayer")(collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  inline def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps]): DndComponentEnhancer[CollectedProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("DragLayer")(collect.asInstanceOf[js.Any]).asInstanceOf[DndComponentEnhancer[CollectedProps]]
+  inline def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps], options: DndOptions[RequiredProps]): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragLayer")(collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
 }

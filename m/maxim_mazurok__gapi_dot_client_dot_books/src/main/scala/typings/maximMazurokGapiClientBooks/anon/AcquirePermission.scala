@@ -22,43 +22,31 @@ trait AcquirePermission extends StObject {
 }
 object AcquirePermission {
   
-  @scala.inline
-  def apply(): AcquirePermission = {
+  inline def apply(): AcquirePermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcquirePermission]
   }
   
-  @scala.inline
-  implicit class AcquirePermissionMutableBuilder[Self <: AcquirePermission] (val x: Self) extends AnyVal {
+  extension [Self <: AcquirePermission](x: Self) {
     
-    @scala.inline
-    def setAcquirePermission(value: String): Self = StObject.set(x, "acquirePermission", value.asInstanceOf[js.Any])
+    inline def setAcquirePermission(value: String): Self = StObject.set(x, "acquirePermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquirePermissionUndefined: Self = StObject.set(x, "acquirePermission", js.undefined)
+    inline def setAcquirePermissionUndefined: Self = StObject.set(x, "acquirePermission", js.undefined)
     
-    @scala.inline
-    def setAgeGroup(value: String): Self = StObject.set(x, "ageGroup", value.asInstanceOf[js.Any])
+    inline def setAgeGroup(value: String): Self = StObject.set(x, "ageGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeGroupUndefined: Self = StObject.set(x, "ageGroup", js.undefined)
+    inline def setAgeGroupUndefined: Self = StObject.set(x, "ageGroup", js.undefined)
     
-    @scala.inline
-    def setAllowedMaturityRating(value: String): Self = StObject.set(x, "allowedMaturityRating", value.asInstanceOf[js.Any])
+    inline def setAllowedMaturityRating(value: String): Self = StObject.set(x, "allowedMaturityRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedMaturityRatingUndefined: Self = StObject.set(x, "allowedMaturityRating", js.undefined)
+    inline def setAllowedMaturityRatingUndefined: Self = StObject.set(x, "allowedMaturityRating", js.undefined)
     
-    @scala.inline
-    def setIsInFamily(value: Boolean): Self = StObject.set(x, "isInFamily", value.asInstanceOf[js.Any])
+    inline def setIsInFamily(value: Boolean): Self = StObject.set(x, "isInFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInFamilyUndefined: Self = StObject.set(x, "isInFamily", js.undefined)
+    inline def setIsInFamilyUndefined: Self = StObject.set(x, "isInFamily", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

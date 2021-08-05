@@ -13,19 +13,15 @@ trait AvailabilityZoneMessage extends StObject {
 }
 object AvailabilityZoneMessage {
   
-  @scala.inline
-  def apply(): AvailabilityZoneMessage = {
+  inline def apply(): AvailabilityZoneMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvailabilityZoneMessage]
   }
   
-  @scala.inline
-  implicit class AvailabilityZoneMessageMutableBuilder[Self <: AvailabilityZoneMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AvailabilityZoneMessage](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

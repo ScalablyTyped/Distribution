@@ -18,28 +18,21 @@ trait RemoveTargetsResponse extends StObject {
 }
 object RemoveTargetsResponse {
   
-  @scala.inline
-  def apply(): RemoveTargetsResponse = {
+  inline def apply(): RemoveTargetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveTargetsResponse]
   }
   
-  @scala.inline
-  implicit class RemoveTargetsResponseMutableBuilder[Self <: RemoveTargetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTargetsResponse](x: Self) {
     
-    @scala.inline
-    def setFailedEntries(value: RemoveTargetsResultEntryList): Self = StObject.set(x, "FailedEntries", value.asInstanceOf[js.Any])
+    inline def setFailedEntries(value: RemoveTargetsResultEntryList): Self = StObject.set(x, "FailedEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedEntriesUndefined: Self = StObject.set(x, "FailedEntries", js.undefined)
+    inline def setFailedEntriesUndefined: Self = StObject.set(x, "FailedEntries", js.undefined)
     
-    @scala.inline
-    def setFailedEntriesVarargs(value: RemoveTargetsResultEntry*): Self = StObject.set(x, "FailedEntries", js.Array(value :_*))
+    inline def setFailedEntriesVarargs(value: RemoveTargetsResultEntry*): Self = StObject.set(x, "FailedEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setFailedEntryCount(value: Integer): Self = StObject.set(x, "FailedEntryCount", value.asInstanceOf[js.Any])
+    inline def setFailedEntryCount(value: Integer): Self = StObject.set(x, "FailedEntryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedEntryCountUndefined: Self = StObject.set(x, "FailedEntryCount", js.undefined)
+    inline def setFailedEntryCountUndefined: Self = StObject.set(x, "FailedEntryCount", js.undefined)
   }
 }

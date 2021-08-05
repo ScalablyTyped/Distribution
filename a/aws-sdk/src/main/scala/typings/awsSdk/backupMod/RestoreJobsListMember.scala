@@ -73,91 +73,63 @@ trait RestoreJobsListMember extends StObject {
 }
 object RestoreJobsListMember {
   
-  @scala.inline
-  def apply(): RestoreJobsListMember = {
+  inline def apply(): RestoreJobsListMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreJobsListMember]
   }
   
-  @scala.inline
-  implicit class RestoreJobsListMemberMutableBuilder[Self <: RestoreJobsListMember] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreJobsListMember](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setBackupSizeInBytes(value: Long_): Self = StObject.set(x, "BackupSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setBackupSizeInBytes(value: Long_): Self = StObject.set(x, "BackupSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupSizeInBytesUndefined: Self = StObject.set(x, "BackupSizeInBytes", js.undefined)
+    inline def setBackupSizeInBytesUndefined: Self = StObject.set(x, "BackupSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setCompletionDate(value: timestamp): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: timestamp): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
+    inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
-    @scala.inline
-    def setCreatedResourceArn(value: ARN): Self = StObject.set(x, "CreatedResourceArn", value.asInstanceOf[js.Any])
+    inline def setCreatedResourceArn(value: ARN): Self = StObject.set(x, "CreatedResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedResourceArnUndefined: Self = StObject.set(x, "CreatedResourceArn", js.undefined)
+    inline def setCreatedResourceArnUndefined: Self = StObject.set(x, "CreatedResourceArn", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setExpectedCompletionTimeMinutes(value: Long_): Self = StObject.set(x, "ExpectedCompletionTimeMinutes", value.asInstanceOf[js.Any])
+    inline def setExpectedCompletionTimeMinutes(value: Long_): Self = StObject.set(x, "ExpectedCompletionTimeMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedCompletionTimeMinutesUndefined: Self = StObject.set(x, "ExpectedCompletionTimeMinutes", js.undefined)
+    inline def setExpectedCompletionTimeMinutesUndefined: Self = StObject.set(x, "ExpectedCompletionTimeMinutes", js.undefined)
     
-    @scala.inline
-    def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
-    @scala.inline
-    def setPercentDone(value: String): Self = StObject.set(x, "PercentDone", value.asInstanceOf[js.Any])
+    inline def setPercentDone(value: String): Self = StObject.set(x, "PercentDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentDoneUndefined: Self = StObject.set(x, "PercentDone", js.undefined)
+    inline def setPercentDoneUndefined: Self = StObject.set(x, "PercentDone", js.undefined)
     
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
+    inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
+    inline def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setRestoreJobId(value: String): Self = StObject.set(x, "RestoreJobId", value.asInstanceOf[js.Any])
+    inline def setRestoreJobId(value: String): Self = StObject.set(x, "RestoreJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreJobIdUndefined: Self = StObject.set(x, "RestoreJobId", js.undefined)
+    inline def setRestoreJobIdUndefined: Self = StObject.set(x, "RestoreJobId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: RestoreJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RestoreJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

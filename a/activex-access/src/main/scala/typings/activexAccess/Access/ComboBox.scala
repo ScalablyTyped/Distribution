@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ComboBox extends StObject {
   
-  @JSName("Access.ComboBox_typekey")
+  /* private */ @JSName("Access.ComboBox_typekey")
   var AccessDotComboBox_typekey: ComboBox = js.native
   
   var AddColon: Boolean = js.native

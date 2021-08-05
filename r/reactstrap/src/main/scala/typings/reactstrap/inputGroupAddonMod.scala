@@ -34,29 +34,22 @@ object inputGroupAddonMod {
   }
   object InputGroupAddonProps {
     
-    @scala.inline
-    def apply(addonType: prepend | append): InputGroupAddonProps = {
+    inline def apply(addonType: prepend | append): InputGroupAddonProps = {
       val __obj = js.Dynamic.literal(addonType = addonType.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputGroupAddonProps]
     }
     
-    @scala.inline
-    implicit class InputGroupAddonPropsMutableBuilder[Self <: InputGroupAddonProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputGroupAddonProps](x: Self) {
       
-      @scala.inline
-      def setAddonType(value: prepend | append): Self = StObject.set(x, "addonType", value.asInstanceOf[js.Any])
+      inline def setAddonType(value: prepend | append): Self = StObject.set(x, "addonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

@@ -39,37 +39,27 @@ trait ParamsResourceCalendarlistUpdate
 }
 object ParamsResourceCalendarlistUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceCalendarlistUpdate = {
+  inline def apply(): ParamsResourceCalendarlistUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCalendarlistUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCalendarlistUpdateMutableBuilder[Self <: ParamsResourceCalendarlistUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCalendarlistUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
+    inline def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
     
-    @scala.inline
-    def setColorRgbFormat(value: Boolean): Self = StObject.set(x, "colorRgbFormat", value.asInstanceOf[js.Any])
+    inline def setColorRgbFormat(value: Boolean): Self = StObject.set(x, "colorRgbFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRgbFormatUndefined: Self = StObject.set(x, "colorRgbFormat", js.undefined)
+    inline def setColorRgbFormatUndefined: Self = StObject.set(x, "colorRgbFormat", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCalendarListEntry): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCalendarListEntry): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -28,34 +28,25 @@ trait GetManagedPrefixListAssociationsRequest extends StObject {
 }
 object GetManagedPrefixListAssociationsRequest {
   
-  @scala.inline
-  def apply(PrefixListId: PrefixListResourceId): GetManagedPrefixListAssociationsRequest = {
+  inline def apply(PrefixListId: PrefixListResourceId): GetManagedPrefixListAssociationsRequest = {
     val __obj = js.Dynamic.literal(PrefixListId = PrefixListId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetManagedPrefixListAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class GetManagedPrefixListAssociationsRequestMutableBuilder[Self <: GetManagedPrefixListAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetManagedPrefixListAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: GetManagedPrefixListAssociationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: GetManagedPrefixListAssociationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
   }
 }

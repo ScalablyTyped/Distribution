@@ -58,73 +58,51 @@ trait CodeSystemConcept
 }
 object CodeSystemConcept {
   
-  @scala.inline
-  def apply(code: code): CodeSystemConcept = {
+  inline def apply(code: code): CodeSystemConcept = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSystemConcept]
   }
   
-  @scala.inline
-  implicit class CodeSystemConceptMutableBuilder[Self <: CodeSystemConcept] (val x: Self) extends AnyVal {
+  extension [Self <: CodeSystemConcept](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcept(value: js.Array[CodeSystemConcept]): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
+    inline def setConcept(value: js.Array[CodeSystemConcept]): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
+    inline def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
     
-    @scala.inline
-    def setConceptVarargs(value: CodeSystemConcept*): Self = StObject.set(x, "concept", js.Array(value :_*))
+    inline def setConceptVarargs(value: CodeSystemConcept*): Self = StObject.set(x, "concept", js.Array(value :_*))
     
-    @scala.inline
-    def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setDesignation(value: js.Array[CodeSystemConceptDesignation]): Self = StObject.set(x, "designation", value.asInstanceOf[js.Any])
+    inline def setDesignation(value: js.Array[CodeSystemConceptDesignation]): Self = StObject.set(x, "designation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesignationUndefined: Self = StObject.set(x, "designation", js.undefined)
+    inline def setDesignationUndefined: Self = StObject.set(x, "designation", js.undefined)
     
-    @scala.inline
-    def setDesignationVarargs(value: CodeSystemConceptDesignation*): Self = StObject.set(x, "designation", js.Array(value :_*))
+    inline def setDesignationVarargs(value: CodeSystemConceptDesignation*): Self = StObject.set(x, "designation", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setProperty(value: js.Array[CodeSystemConceptProperty]): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: js.Array[CodeSystemConceptProperty]): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setPropertyVarargs(value: CodeSystemConceptProperty*): Self = StObject.set(x, "property", js.Array(value :_*))
+    inline def setPropertyVarargs(value: CodeSystemConceptProperty*): Self = StObject.set(x, "property", js.Array(value :_*))
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_definition(value: Element): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
+    inline def set_definition(value: Element): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
+    inline def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
     
-    @scala.inline
-    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
+    inline def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
+    inline def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
   }
 }

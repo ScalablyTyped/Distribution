@@ -25,8 +25,7 @@ trait ProvisioningAgent extends StObject {
 }
 object ProvisioningAgent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getProvisionedProfile: (ProfileMediaType, String) => ProvisionedProfile,
     provisionFromXmlDocumentAsync: String => IPromiseWithIAsyncOperation[ProvisionFromXmlDocumentResults]
   ): ProvisioningAgent = {
@@ -34,13 +33,10 @@ object ProvisioningAgent {
     __obj.asInstanceOf[ProvisioningAgent]
   }
   
-  @scala.inline
-  implicit class ProvisioningAgentMutableBuilder[Self <: ProvisioningAgent] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisioningAgent](x: Self) {
     
-    @scala.inline
-    def setGetProvisionedProfile(value: (ProfileMediaType, String) => ProvisionedProfile): Self = StObject.set(x, "getProvisionedProfile", js.Any.fromFunction2(value))
+    inline def setGetProvisionedProfile(value: (ProfileMediaType, String) => ProvisionedProfile): Self = StObject.set(x, "getProvisionedProfile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProvisionFromXmlDocumentAsync(value: String => IPromiseWithIAsyncOperation[ProvisionFromXmlDocumentResults]): Self = StObject.set(x, "provisionFromXmlDocumentAsync", js.Any.fromFunction1(value))
+    inline def setProvisionFromXmlDocumentAsync(value: String => IPromiseWithIAsyncOperation[ProvisionFromXmlDocumentResults]): Self = StObject.set(x, "provisionFromXmlDocumentAsync", js.Any.fromFunction1(value))
   }
 }

@@ -87,16 +87,14 @@ object Render {
     * @param {object} [options]
     * @return {render} A new renderer
     */
-  @scala.inline
-  def create(options: IRenderDefinition): Render = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Render]
+  inline def create(options: IRenderDefinition): Render = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Render]
   
   /**
     * Continuously updates the render canvas on the `requestAnimationFrame` event.
     * @method run
     * @param {render} render
     */
-  @scala.inline
-  def run(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def run(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets the pixel ratio of the renderer and updates the canvas.
@@ -105,16 +103,14 @@ object Render {
     * @param {render} render
     * @param {number} pixelRatio
     */
-  @scala.inline
-  def setPixelRatio(render: Render, pixelRatio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPixelRatio")(render.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPixelRatio(render: Render, pixelRatio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPixelRatio")(render.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Ends execution of `Render.run` on the given `render`, by canceling the animation frame request event loop.
     * @method stop
     * @param {render} render
     */
-  @scala.inline
-  def stop(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stop(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Renders the given `engine`'s `Matter.World` object.
@@ -122,6 +118,5 @@ object Render {
     * @method world
     * @param {engine} engine
     */
-  @scala.inline
-  def world(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("world")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def world(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("world")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

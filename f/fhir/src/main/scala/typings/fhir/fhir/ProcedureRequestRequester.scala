@@ -23,22 +23,17 @@ trait ProcedureRequestRequester
 }
 object ProcedureRequestRequester {
   
-  @scala.inline
-  def apply(agent: Reference): ProcedureRequestRequester = {
+  inline def apply(agent: Reference): ProcedureRequestRequester = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcedureRequestRequester]
   }
   
-  @scala.inline
-  implicit class ProcedureRequestRequesterMutableBuilder[Self <: ProcedureRequestRequester] (val x: Self) extends AnyVal {
+  extension [Self <: ProcedureRequestRequester](x: Self) {
     
-    @scala.inline
-    def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
+    inline def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ object chanceNumbers {
   sealed trait `0`
     extends StObject
        with _FalsyType
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `4` extends StObject
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `5` extends StObject
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
 }

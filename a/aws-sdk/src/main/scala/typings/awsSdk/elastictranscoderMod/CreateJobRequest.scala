@@ -48,67 +48,47 @@ trait CreateJobRequest extends StObject {
 }
 object CreateJobRequest {
   
-  @scala.inline
-  def apply(PipelineId: Id): CreateJobRequest = {
+  inline def apply(PipelineId: Id): CreateJobRequest = {
     val __obj = js.Dynamic.literal(PipelineId = PipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateJobRequestMutableBuilder[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateJobRequest](x: Self) {
     
-    @scala.inline
-    def setInput(value: JobInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: JobInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
-    @scala.inline
-    def setInputs(value: JobInputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: JobInputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: JobInput*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: JobInput*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setOutput(value: CreateJobOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: CreateJobOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeyPrefix(value: Key): Self = StObject.set(x, "OutputKeyPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputKeyPrefix(value: Key): Self = StObject.set(x, "OutputKeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeyPrefixUndefined: Self = StObject.set(x, "OutputKeyPrefix", js.undefined)
+    inline def setOutputKeyPrefixUndefined: Self = StObject.set(x, "OutputKeyPrefix", js.undefined)
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: CreateJobOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: CreateJobOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: CreateJobOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: CreateJobOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineId(value: Id): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: Id): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylists(value: CreateJobPlaylists): Self = StObject.set(x, "Playlists", value.asInstanceOf[js.Any])
+    inline def setPlaylists(value: CreateJobPlaylists): Self = StObject.set(x, "Playlists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistsUndefined: Self = StObject.set(x, "Playlists", js.undefined)
+    inline def setPlaylistsUndefined: Self = StObject.set(x, "Playlists", js.undefined)
     
-    @scala.inline
-    def setPlaylistsVarargs(value: CreateJobPlaylist*): Self = StObject.set(x, "Playlists", js.Array(value :_*))
+    inline def setPlaylistsVarargs(value: CreateJobPlaylist*): Self = StObject.set(x, "Playlists", js.Array(value :_*))
     
-    @scala.inline
-    def setUserMetadata(value: UserMetadata): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
+    inline def setUserMetadata(value: UserMetadata): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserMetadataUndefined: Self = StObject.set(x, "UserMetadata", js.undefined)
+    inline def setUserMetadataUndefined: Self = StObject.set(x, "UserMetadata", js.undefined)
   }
 }

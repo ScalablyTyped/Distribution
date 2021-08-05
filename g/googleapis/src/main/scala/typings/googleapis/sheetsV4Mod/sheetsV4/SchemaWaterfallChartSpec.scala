@@ -41,52 +41,37 @@ trait SchemaWaterfallChartSpec extends StObject {
 }
 object SchemaWaterfallChartSpec {
   
-  @scala.inline
-  def apply(): SchemaWaterfallChartSpec = {
+  inline def apply(): SchemaWaterfallChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWaterfallChartSpec]
   }
   
-  @scala.inline
-  implicit class SchemaWaterfallChartSpecMutableBuilder[Self <: SchemaWaterfallChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWaterfallChartSpec](x: Self) {
     
-    @scala.inline
-    def setConnectorLineStyle(value: SchemaLineStyle): Self = StObject.set(x, "connectorLineStyle", value.asInstanceOf[js.Any])
+    inline def setConnectorLineStyle(value: SchemaLineStyle): Self = StObject.set(x, "connectorLineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorLineStyleUndefined: Self = StObject.set(x, "connectorLineStyle", js.undefined)
+    inline def setConnectorLineStyleUndefined: Self = StObject.set(x, "connectorLineStyle", js.undefined)
     
-    @scala.inline
-    def setDomain(value: SchemaWaterfallChartDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: SchemaWaterfallChartDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setFirstValueIsTotal(value: Boolean): Self = StObject.set(x, "firstValueIsTotal", value.asInstanceOf[js.Any])
+    inline def setFirstValueIsTotal(value: Boolean): Self = StObject.set(x, "firstValueIsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstValueIsTotalUndefined: Self = StObject.set(x, "firstValueIsTotal", js.undefined)
+    inline def setFirstValueIsTotalUndefined: Self = StObject.set(x, "firstValueIsTotal", js.undefined)
     
-    @scala.inline
-    def setHideConnectorLines(value: Boolean): Self = StObject.set(x, "hideConnectorLines", value.asInstanceOf[js.Any])
+    inline def setHideConnectorLines(value: Boolean): Self = StObject.set(x, "hideConnectorLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideConnectorLinesUndefined: Self = StObject.set(x, "hideConnectorLines", js.undefined)
+    inline def setHideConnectorLinesUndefined: Self = StObject.set(x, "hideConnectorLines", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Array[SchemaWaterfallChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[SchemaWaterfallChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: SchemaWaterfallChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: SchemaWaterfallChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
-    @scala.inline
-    def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
+    inline def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackedTypeUndefined: Self = StObject.set(x, "stackedType", js.undefined)
+    inline def setStackedTypeUndefined: Self = StObject.set(x, "stackedType", js.undefined)
   }
 }

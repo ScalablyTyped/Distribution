@@ -43,58 +43,41 @@ trait SkillsStoreSkill extends StObject {
 }
 object SkillsStoreSkill {
   
-  @scala.inline
-  def apply(): SkillsStoreSkill = {
+  inline def apply(): SkillsStoreSkill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SkillsStoreSkill]
   }
   
-  @scala.inline
-  implicit class SkillsStoreSkillMutableBuilder[Self <: SkillsStoreSkill] (val x: Self) extends AnyVal {
+  extension [Self <: SkillsStoreSkill](x: Self) {
     
-    @scala.inline
-    def setIconUrl(value: IconUrl): Self = StObject.set(x, "IconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: IconUrl): Self = StObject.set(x, "IconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "IconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "IconUrl", js.undefined)
     
-    @scala.inline
-    def setSampleUtterances(value: SampleUtterances): Self = StObject.set(x, "SampleUtterances", value.asInstanceOf[js.Any])
+    inline def setSampleUtterances(value: SampleUtterances): Self = StObject.set(x, "SampleUtterances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleUtterancesUndefined: Self = StObject.set(x, "SampleUtterances", js.undefined)
+    inline def setSampleUtterancesUndefined: Self = StObject.set(x, "SampleUtterances", js.undefined)
     
-    @scala.inline
-    def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "SampleUtterances", js.Array(value :_*))
+    inline def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "SampleUtterances", js.Array(value :_*))
     
-    @scala.inline
-    def setShortDescription(value: ShortDescription): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
+    inline def setShortDescription(value: ShortDescription): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescriptionUndefined: Self = StObject.set(x, "ShortDescription", js.undefined)
+    inline def setShortDescriptionUndefined: Self = StObject.set(x, "ShortDescription", js.undefined)
     
-    @scala.inline
-    def setSkillDetails(value: SkillDetails): Self = StObject.set(x, "SkillDetails", value.asInstanceOf[js.Any])
+    inline def setSkillDetails(value: SkillDetails): Self = StObject.set(x, "SkillDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillDetailsUndefined: Self = StObject.set(x, "SkillDetails", js.undefined)
+    inline def setSkillDetailsUndefined: Self = StObject.set(x, "SkillDetails", js.undefined)
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillIdUndefined: Self = StObject.set(x, "SkillId", js.undefined)
+    inline def setSkillIdUndefined: Self = StObject.set(x, "SkillId", js.undefined)
     
-    @scala.inline
-    def setSkillName(value: SkillName): Self = StObject.set(x, "SkillName", value.asInstanceOf[js.Any])
+    inline def setSkillName(value: SkillName): Self = StObject.set(x, "SkillName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillNameUndefined: Self = StObject.set(x, "SkillName", js.undefined)
+    inline def setSkillNameUndefined: Self = StObject.set(x, "SkillName", js.undefined)
     
-    @scala.inline
-    def setSupportsLinking(value: scala.Boolean): Self = StObject.set(x, "SupportsLinking", value.asInstanceOf[js.Any])
+    inline def setSupportsLinking(value: scala.Boolean): Self = StObject.set(x, "SupportsLinking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsLinkingUndefined: Self = StObject.set(x, "SupportsLinking", js.undefined)
+    inline def setSupportsLinkingUndefined: Self = StObject.set(x, "SupportsLinking", js.undefined)
   }
 }

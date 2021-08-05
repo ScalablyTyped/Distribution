@@ -23,28 +23,21 @@ trait KernelEnum extends StObject {
 }
 object KernelEnum {
   
-  @scala.inline
-  def apply(): KernelEnum = {
+  inline def apply(): KernelEnum = {
     val __obj = js.Dynamic.literal(cubic = "cubic", lanczos2 = "lanczos2", lanczos3 = "lanczos3", mitchell = "mitchell", nearest = "nearest")
     __obj.asInstanceOf[KernelEnum]
   }
   
-  @scala.inline
-  implicit class KernelEnumMutableBuilder[Self <: KernelEnum] (val x: Self) extends AnyVal {
+  extension [Self <: KernelEnum](x: Self) {
     
-    @scala.inline
-    def setCubic(value: cubic): Self = StObject.set(x, "cubic", value.asInstanceOf[js.Any])
+    inline def setCubic(value: cubic): Self = StObject.set(x, "cubic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanczos2(value: lanczos2): Self = StObject.set(x, "lanczos2", value.asInstanceOf[js.Any])
+    inline def setLanczos2(value: lanczos2): Self = StObject.set(x, "lanczos2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanczos3(value: lanczos3): Self = StObject.set(x, "lanczos3", value.asInstanceOf[js.Any])
+    inline def setLanczos3(value: lanczos3): Self = StObject.set(x, "lanczos3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMitchell(value: mitchell): Self = StObject.set(x, "mitchell", value.asInstanceOf[js.Any])
+    inline def setMitchell(value: mitchell): Self = StObject.set(x, "mitchell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearest(value: nearest): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
+    inline def setNearest(value: nearest): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: Writable */](stream: T): T = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: Writable */](stream: T, callback: js.ThisFunction1[/* this */ T, /* stream */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: Writable */](stream: T): T = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T /* <: Writable */](stream: T, callback: js.ThisFunction1[/* this */ T, /* stream */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("destroy-on-hwm", JSImport.Namespace)
   @js.native

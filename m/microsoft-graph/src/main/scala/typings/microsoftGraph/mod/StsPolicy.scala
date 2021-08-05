@@ -24,43 +24,31 @@ trait StsPolicy
 }
 object StsPolicy {
   
-  @scala.inline
-  def apply(): StsPolicy = {
+  inline def apply(): StsPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StsPolicy]
   }
   
-  @scala.inline
-  implicit class StsPolicyMutableBuilder[Self <: StsPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: StsPolicy](x: Self) {
     
-    @scala.inline
-    def setAppliesTo(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
+    inline def setAppliesTo(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliesToNull: Self = StObject.set(x, "appliesTo", null)
+    inline def setAppliesToNull: Self = StObject.set(x, "appliesTo", null)
     
-    @scala.inline
-    def setAppliesToUndefined: Self = StObject.set(x, "appliesTo", js.undefined)
+    inline def setAppliesToUndefined: Self = StObject.set(x, "appliesTo", js.undefined)
     
-    @scala.inline
-    def setAppliesToVarargs(value: DirectoryObject*): Self = StObject.set(x, "appliesTo", js.Array(value :_*))
+    inline def setAppliesToVarargs(value: DirectoryObject*): Self = StObject.set(x, "appliesTo", js.Array(value :_*))
     
-    @scala.inline
-    def setDefinition(value: js.Array[String]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: js.Array[String]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setDefinitionVarargs(value: String*): Self = StObject.set(x, "definition", js.Array(value :_*))
+    inline def setDefinitionVarargs(value: String*): Self = StObject.set(x, "definition", js.Array(value :_*))
     
-    @scala.inline
-    def setIsOrganizationDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isOrganizationDefault", value.asInstanceOf[js.Any])
+    inline def setIsOrganizationDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isOrganizationDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOrganizationDefaultNull: Self = StObject.set(x, "isOrganizationDefault", null)
+    inline def setIsOrganizationDefaultNull: Self = StObject.set(x, "isOrganizationDefault", null)
     
-    @scala.inline
-    def setIsOrganizationDefaultUndefined: Self = StObject.set(x, "isOrganizationDefault", js.undefined)
+    inline def setIsOrganizationDefaultUndefined: Self = StObject.set(x, "isOrganizationDefault", js.undefined)
   }
 }

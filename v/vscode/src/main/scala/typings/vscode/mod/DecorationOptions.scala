@@ -24,31 +24,23 @@ trait DecorationOptions extends StObject {
 }
 object DecorationOptions {
   
-  @scala.inline
-  def apply(range: Range): DecorationOptions = {
+  inline def apply(range: Range): DecorationOptions = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecorationOptions]
   }
   
-  @scala.inline
-  implicit class DecorationOptionsMutableBuilder[Self <: DecorationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DecorationOptions](x: Self) {
     
-    @scala.inline
-    def setHoverMessage(value: MarkedString | js.Array[MarkedString]): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
+    inline def setHoverMessage(value: MarkedString | js.Array[MarkedString]): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverMessageUndefined: Self = StObject.set(x, "hoverMessage", js.undefined)
+    inline def setHoverMessageUndefined: Self = StObject.set(x, "hoverMessage", js.undefined)
     
-    @scala.inline
-    def setHoverMessageVarargs(value: MarkedString*): Self = StObject.set(x, "hoverMessage", js.Array(value :_*))
+    inline def setHoverMessageVarargs(value: MarkedString*): Self = StObject.set(x, "hoverMessage", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderOptions(value: DecorationInstanceRenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
+    inline def setRenderOptions(value: DecorationInstanceRenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
+    inline def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
   }
 }

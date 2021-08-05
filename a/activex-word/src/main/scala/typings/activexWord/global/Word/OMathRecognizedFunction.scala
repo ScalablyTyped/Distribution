@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathRecognizedFunction")
 @js.native
-class OMathRecognizedFunction protected ()
+/* private */ class OMathRecognizedFunction ()
   extends StObject
      with typings.activexWord.Word.OMathRecognizedFunction {
   
@@ -28,7 +28,7 @@ class OMathRecognizedFunction protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathRecognizedFunction_typekey")
   var WordDotOMathRecognizedFunction_typekey: typings.activexWord.Word.OMathRecognizedFunction = js.native
 }

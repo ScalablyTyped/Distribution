@@ -11,19 +11,15 @@ trait ExecuteStreamResponse extends StObject {
 }
 object ExecuteStreamResponse {
   
-  @scala.inline
-  def apply(): ExecuteStreamResponse = {
+  inline def apply(): ExecuteStreamResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteStreamResponse]
   }
   
-  @scala.inline
-  implicit class ExecuteStreamResponseMutableBuilder[Self <: ExecuteStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteStreamResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: ScriptExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ScriptExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

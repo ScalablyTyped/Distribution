@@ -43,76 +43,53 @@ trait QueryNoticesResult
 }
 object QueryNoticesResult {
   
-  @scala.inline
-  def apply(): QueryNoticesResult = {
+  inline def apply(): QueryNoticesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryNoticesResult]
   }
   
-  @scala.inline
-  implicit class QueryNoticesResultMutableBuilder[Self <: QueryNoticesResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryNoticesResult](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
+    inline def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
-    @scala.inline
-    def setFile_type(value: String): Self = StObject.set(x, "file_type", value.asInstanceOf[js.Any])
+    inline def setFile_type(value: String): Self = StObject.set(x, "file_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_typeUndefined: Self = StObject.set(x, "file_type", js.undefined)
+    inline def setFile_typeUndefined: Self = StObject.set(x, "file_type", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+    inline def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
+    inline def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
     
-    @scala.inline
-    def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
+    inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
     
-    @scala.inline
-    def setResult_metadata(value: QueryResultMetadata): Self = StObject.set(x, "result_metadata", value.asInstanceOf[js.Any])
+    inline def setResult_metadata(value: QueryResultMetadata): Self = StObject.set(x, "result_metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult_metadataUndefined: Self = StObject.set(x, "result_metadata", js.undefined)
+    inline def setResult_metadataUndefined: Self = StObject.set(x, "result_metadata", js.undefined)
     
-    @scala.inline
-    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
+    inline def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

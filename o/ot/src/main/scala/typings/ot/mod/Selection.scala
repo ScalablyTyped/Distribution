@@ -67,8 +67,7 @@ object Selection {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromJSON(`object`: Anchor): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(`object`.asInstanceOf[js.Any]).asInstanceOf[Range]
+    inline def fromJSON(`object`: Anchor): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(`object`.asInstanceOf[js.Any]).asInstanceOf[Range]
   }
   
   /**
@@ -76,9 +75,7 @@ object Selection {
     * and no real selection range.
     * @param position The pos
     */
-  @scala.inline
-  def createCursor(position: Double): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("createCursor")(position.asInstanceOf[js.Any]).asInstanceOf[Selection]
+  inline def createCursor(position: Double): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("createCursor")(position.asInstanceOf[js.Any]).asInstanceOf[Selection]
   
-  @scala.inline
-  def fromJSON(obj: String): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Selection]
+  inline def fromJSON(obj: String): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Selection]
 }

@@ -13,19 +13,15 @@ trait CancelMaintenanceWindowExecutionResult extends StObject {
 }
 object CancelMaintenanceWindowExecutionResult {
   
-  @scala.inline
-  def apply(): CancelMaintenanceWindowExecutionResult = {
+  inline def apply(): CancelMaintenanceWindowExecutionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelMaintenanceWindowExecutionResult]
   }
   
-  @scala.inline
-  implicit class CancelMaintenanceWindowExecutionResultMutableBuilder[Self <: CancelMaintenanceWindowExecutionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CancelMaintenanceWindowExecutionResult](x: Self) {
     
-    @scala.inline
-    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
+    inline def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowExecutionIdUndefined: Self = StObject.set(x, "WindowExecutionId", js.undefined)
+    inline def setWindowExecutionIdUndefined: Self = StObject.set(x, "WindowExecutionId", js.undefined)
   }
 }

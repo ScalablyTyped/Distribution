@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def create(options: typings.braintreeWebDropIn.mod.Options): js.Promise[typings.braintreeWebDropIn.mod.Dropin] = typings.braintreeWebDropIn.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.braintreeWebDropIn.mod.Dropin]]
-@scala.inline
-def create(
+inline def create(options: typings.braintreeWebDropIn.mod.Options): js.Promise[typings.braintreeWebDropIn.mod.Dropin] = typings.braintreeWebDropIn.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.braintreeWebDropIn.mod.Dropin]]
+inline def create(
   options: typings.braintreeWebDropIn.mod.Options,
   callback: js.Function2[
   /* error */ js.Object | scala.Null, 

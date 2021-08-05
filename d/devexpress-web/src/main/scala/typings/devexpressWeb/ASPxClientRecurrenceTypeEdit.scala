@@ -24,8 +24,7 @@ trait ASPxClientRecurrenceTypeEdit
 }
 object ASPxClientRecurrenceTypeEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Focus: () => Unit,
     GetCaption: () => String,
@@ -74,13 +73,10 @@ object ASPxClientRecurrenceTypeEdit {
     __obj.asInstanceOf[ASPxClientRecurrenceTypeEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientRecurrenceTypeEditMutableBuilder[Self <: ASPxClientRecurrenceTypeEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRecurrenceTypeEdit](x: Self) {
     
-    @scala.inline
-    def setGetRecurrenceType(value: () => ASPxClientRecurrenceType): Self = StObject.set(x, "GetRecurrenceType", js.Any.fromFunction0(value))
+    inline def setGetRecurrenceType(value: () => ASPxClientRecurrenceType): Self = StObject.set(x, "GetRecurrenceType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetRecurrenceType(value: ASPxClientRecurrenceType => Unit): Self = StObject.set(x, "SetRecurrenceType", js.Any.fromFunction1(value))
+    inline def setSetRecurrenceType(value: ASPxClientRecurrenceType => Unit): Self = StObject.set(x, "SetRecurrenceType", js.Any.fromFunction1(value))
   }
 }

@@ -29,14 +29,12 @@ object stepsIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/steps/index.native", "default.Step")
     @js.native
     def Step: js.Any = js.native
-    @scala.inline
-    def Step_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+    inline def Step_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/index.native", "default.defaultProps")
     @js.native
     def defaultProps: Direction = js.native
-    @scala.inline
-    def defaultProps_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -55,20 +53,16 @@ object stepsIndexNativeMod {
   }
   object StepsNativeProps {
     
-    @scala.inline
-    def apply(children: js.Array[ReactElement]): StepsNativeProps = {
+    inline def apply(children: js.Array[ReactElement]): StepsNativeProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepsNativeProps]
     }
     
-    @scala.inline
-    implicit class StepsNativePropsMutableBuilder[Self <: StepsNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: StepsNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: IStepsStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStepsStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -87,38 +81,28 @@ object stepsIndexNativeMod {
   }
   object StepsProps {
     
-    @scala.inline
-    def apply(children: js.Array[ReactElement]): StepsProps = {
+    inline def apply(children: js.Array[ReactElement]): StepsProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepsProps]
     }
     
-    @scala.inline
-    implicit class StepsPropsMutableBuilder[Self <: StepsProps] (val x: Self) extends AnyVal {
+    extension [Self <: StepsProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDirection(value: vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setFinishIcon(value: String): Self = StObject.set(x, "finishIcon", value.asInstanceOf[js.Any])
+      inline def setFinishIcon(value: String): Self = StObject.set(x, "finishIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinishIconUndefined: Self = StObject.set(x, "finishIcon", js.undefined)
+      inline def setFinishIconUndefined: Self = StObject.set(x, "finishIcon", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

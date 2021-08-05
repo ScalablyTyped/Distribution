@@ -22,17 +22,14 @@ object toHaveEmptyStringMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toHaveEmptyString: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
+        inline def apply[T](toHaveEmptyString: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveEmptyString = js.Any.fromFunction2(toHaveEmptyString))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveEmptyString(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveEmptyString", js.Any.fromFunction2(value))
+          inline def setToHaveEmptyString(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveEmptyString", js.Any.fromFunction2(value))
         }
       }
     }

@@ -13,19 +13,15 @@ trait CancelArchivalOutput extends StObject {
 }
 object CancelArchivalOutput {
   
-  @scala.inline
-  def apply(): CancelArchivalOutput = {
+  inline def apply(): CancelArchivalOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelArchivalOutput]
   }
   
-  @scala.inline
-  implicit class CancelArchivalOutputMutableBuilder[Self <: CancelArchivalOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CancelArchivalOutput](x: Self) {
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
+    inline def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
   }
 }

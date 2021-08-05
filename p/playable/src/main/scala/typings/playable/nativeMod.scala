@@ -13,6 +13,5 @@ object nativeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(streamType: MediaStreamType, deliveryPriority: MediaStreamDeliveryPriority): IPlaybackAdapterClass = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(streamType.asInstanceOf[js.Any], deliveryPriority.asInstanceOf[js.Any])).asInstanceOf[IPlaybackAdapterClass]
+  inline def default(streamType: MediaStreamType, deliveryPriority: MediaStreamDeliveryPriority): IPlaybackAdapterClass = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(streamType.asInstanceOf[js.Any], deliveryPriority.asInstanceOf[js.Any])).asInstanceOf[IPlaybackAdapterClass]
 }

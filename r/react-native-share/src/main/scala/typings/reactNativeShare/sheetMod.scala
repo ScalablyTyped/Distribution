@@ -29,23 +29,18 @@ object sheetMod {
   }
   object SheetProps {
     
-    @scala.inline
-    def apply(visible: Boolean): SheetProps = {
+    inline def apply(visible: Boolean): SheetProps = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[SheetProps]
     }
     
-    @scala.inline
-    implicit class SheetPropsMutableBuilder[Self <: SheetProps] (val x: Self) extends AnyVal {
+    extension [Self <: SheetProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,17 +50,14 @@ object sheetMod {
   }
   object SheetState {
     
-    @scala.inline
-    def apply(bottom: Value): SheetState = {
+    inline def apply(bottom: Value): SheetState = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
       __obj.asInstanceOf[SheetState]
     }
     
-    @scala.inline
-    implicit class SheetStateMutableBuilder[Self <: SheetState] (val x: Self) extends AnyVal {
+    extension [Self <: SheetState](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Value): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Value): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,19 +11,15 @@ trait AppRestrictionsSchemaChangeEvent extends StObject {
 }
 object AppRestrictionsSchemaChangeEvent {
   
-  @scala.inline
-  def apply(): AppRestrictionsSchemaChangeEvent = {
+  inline def apply(): AppRestrictionsSchemaChangeEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppRestrictionsSchemaChangeEvent]
   }
   
-  @scala.inline
-  implicit class AppRestrictionsSchemaChangeEventMutableBuilder[Self <: AppRestrictionsSchemaChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AppRestrictionsSchemaChangeEvent](x: Self) {
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

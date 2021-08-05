@@ -18,22 +18,17 @@ trait ReplaceableItem extends StObject {
 }
 object ReplaceableItem {
   
-  @scala.inline
-  def apply(Attributes: ReplaceableAttributeList, Name: String): ReplaceableItem = {
+  inline def apply(Attributes: ReplaceableAttributeList, Name: String): ReplaceableItem = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceableItem]
   }
   
-  @scala.inline
-  implicit class ReplaceableItemMutableBuilder[Self <: ReplaceableItem] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceableItem](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: ReplaceableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ReplaceableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: ReplaceableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: ReplaceableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

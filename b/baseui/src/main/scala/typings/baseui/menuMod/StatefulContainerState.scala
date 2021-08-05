@@ -14,25 +14,19 @@ trait StatefulContainerState extends StObject {
 }
 object StatefulContainerState {
   
-  @scala.inline
-  def apply(highlightedIndex: Double, isFocused: Boolean): StatefulContainerState = {
+  inline def apply(highlightedIndex: Double, isFocused: Boolean): StatefulContainerState = {
     val __obj = js.Dynamic.literal(highlightedIndex = highlightedIndex.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulContainerState]
   }
   
-  @scala.inline
-  implicit class StatefulContainerStateMutableBuilder[Self <: StatefulContainerState] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulContainerState](x: Self) {
     
-    @scala.inline
-    def setActivedescendantId(value: String): Self = StObject.set(x, "activedescendantId", value.asInstanceOf[js.Any])
+    inline def setActivedescendantId(value: String): Self = StObject.set(x, "activedescendantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivedescendantIdUndefined: Self = StObject.set(x, "activedescendantId", js.undefined)
+    inline def setActivedescendantIdUndefined: Self = StObject.set(x, "activedescendantId", js.undefined)
     
-    @scala.inline
-    def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
+    inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+    inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
   }
 }

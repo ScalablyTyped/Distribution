@@ -10,9 +10,7 @@ object statistics {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resetStat(sname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reset_stat")(sname.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def resetStat(sname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reset_stat")(sname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def updateStat(sname: String, sval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("update_stat")(sname.asInstanceOf[js.Any], sval.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def updateStat(sname: String, sval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("update_stat")(sname.asInstanceOf[js.Any], sval.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

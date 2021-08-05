@@ -12,19 +12,15 @@ trait PromiseTask extends StObject {
 }
 object PromiseTask {
   
-  @scala.inline
-  def apply(gen: () => js.Promise[js.Any], name: String): PromiseTask = {
+  inline def apply(gen: () => js.Promise[js.Any], name: String): PromiseTask = {
     val __obj = js.Dynamic.literal(gen = js.Any.fromFunction0(gen), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseTask]
   }
   
-  @scala.inline
-  implicit class PromiseTaskMutableBuilder[Self <: PromiseTask] (val x: Self) extends AnyVal {
+  extension [Self <: PromiseTask](x: Self) {
     
-    @scala.inline
-    def setGen(value: () => js.Promise[js.Any]): Self = StObject.set(x, "gen", js.Any.fromFunction0(value))
+    inline def setGen(value: () => js.Promise[js.Any]): Self = StObject.set(x, "gen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

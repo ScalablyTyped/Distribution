@@ -80,32 +80,24 @@ object devs {
   }
   object ModelAttributes {
     
-    @scala.inline
-    def apply(): ModelAttributes = {
+    inline def apply(): ModelAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelAttributes]
     }
     
-    @scala.inline
-    implicit class ModelAttributesMutableBuilder[Self <: ModelAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: ModelAttributes](x: Self) {
       
-      @scala.inline
-      def setInPorts(value: js.Array[String]): Self = StObject.set(x, "inPorts", value.asInstanceOf[js.Any])
+      inline def setInPorts(value: js.Array[String]): Self = StObject.set(x, "inPorts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInPortsUndefined: Self = StObject.set(x, "inPorts", js.undefined)
+      inline def setInPortsUndefined: Self = StObject.set(x, "inPorts", js.undefined)
       
-      @scala.inline
-      def setInPortsVarargs(value: String*): Self = StObject.set(x, "inPorts", js.Array(value :_*))
+      inline def setInPortsVarargs(value: String*): Self = StObject.set(x, "inPorts", js.Array(value :_*))
       
-      @scala.inline
-      def setOutPorts(value: js.Array[String]): Self = StObject.set(x, "outPorts", value.asInstanceOf[js.Any])
+      inline def setOutPorts(value: js.Array[String]): Self = StObject.set(x, "outPorts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutPortsUndefined: Self = StObject.set(x, "outPorts", js.undefined)
+      inline def setOutPortsUndefined: Self = StObject.set(x, "outPorts", js.undefined)
       
-      @scala.inline
-      def setOutPortsVarargs(value: String*): Self = StObject.set(x, "outPorts", js.Array(value :_*))
+      inline def setOutPortsVarargs(value: String*): Self = StObject.set(x, "outPorts", js.Array(value :_*))
     }
   }
   
@@ -121,26 +113,20 @@ object devs {
   }
   object ModelSelectors {
     
-    @scala.inline
-    def apply(): ModelSelectors = {
+    inline def apply(): ModelSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelSelectors]
     }
     
-    @scala.inline
-    implicit class ModelSelectorsMutableBuilder[Self <: ModelSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: ModelSelectors](x: Self) {
       
-      @scala.inline
-      def setDotbody(value: SVGRectAttributes): Self = StObject.set(x, ".body", value.asInstanceOf[js.Any])
+      inline def setDotbody(value: SVGRectAttributes): Self = StObject.set(x, ".body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotbodyUndefined: Self = StObject.set(x, ".body", js.undefined)
+      inline def setDotbodyUndefined: Self = StObject.set(x, ".body", js.undefined)
       
-      @scala.inline
-      def setDotlabel(value: SVGTextAttributes): Self = StObject.set(x, ".label", value.asInstanceOf[js.Any])
+      inline def setDotlabel(value: SVGTextAttributes): Self = StObject.set(x, ".label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotlabelUndefined: Self = StObject.set(x, ".label", js.undefined)
+      inline def setDotlabelUndefined: Self = StObject.set(x, ".label", js.undefined)
     }
   }
 }

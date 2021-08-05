@@ -28,8 +28,7 @@ trait UpdatePullRequestApprovalRuleContentInput extends StObject {
 }
 object UpdatePullRequestApprovalRuleContentInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approvalRuleName: ApprovalRuleName,
     newRuleContent: ApprovalRuleContent,
     pullRequestId: PullRequestId
@@ -38,22 +37,16 @@ object UpdatePullRequestApprovalRuleContentInput {
     __obj.asInstanceOf[UpdatePullRequestApprovalRuleContentInput]
   }
   
-  @scala.inline
-  implicit class UpdatePullRequestApprovalRuleContentInputMutableBuilder[Self <: UpdatePullRequestApprovalRuleContentInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePullRequestApprovalRuleContentInput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingRuleContentSha256(value: RuleContentSha256): Self = StObject.set(x, "existingRuleContentSha256", value.asInstanceOf[js.Any])
+    inline def setExistingRuleContentSha256(value: RuleContentSha256): Self = StObject.set(x, "existingRuleContentSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingRuleContentSha256Undefined: Self = StObject.set(x, "existingRuleContentSha256", js.undefined)
+    inline def setExistingRuleContentSha256Undefined: Self = StObject.set(x, "existingRuleContentSha256", js.undefined)
     
-    @scala.inline
-    def setNewRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "newRuleContent", value.asInstanceOf[js.Any])
+    inline def setNewRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "newRuleContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

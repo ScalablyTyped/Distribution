@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DpType extends StObject
 object DpType {
   
-  @scala.inline
-  def bitmap: typings.tuyaPanelKit.tuyaPanelKitStrings.bitmap = "bitmap".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.bitmap]
+  inline def bitmap: typings.tuyaPanelKit.tuyaPanelKitStrings.bitmap = "bitmap".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.bitmap]
   
-  @scala.inline
-  def bool: typings.tuyaPanelKit.tuyaPanelKitStrings.bool = "bool".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.bool]
+  inline def bool: typings.tuyaPanelKit.tuyaPanelKitStrings.bool = "bool".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.bool]
   
-  @scala.inline
-  def `enum`: typings.tuyaPanelKit.tuyaPanelKitStrings.`enum` = "enum".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.`enum`]
+  inline def `enum`: typings.tuyaPanelKit.tuyaPanelKitStrings.`enum` = "enum".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.`enum`]
   
-  @scala.inline
-  def raw: typings.tuyaPanelKit.tuyaPanelKitStrings.raw = "raw".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.raw]
+  inline def raw: typings.tuyaPanelKit.tuyaPanelKitStrings.raw = "raw".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.raw]
   
-  @scala.inline
-  def string: typings.tuyaPanelKit.tuyaPanelKitStrings.string = "string".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.string]
+  inline def string: typings.tuyaPanelKit.tuyaPanelKitStrings.string = "string".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.string]
   
-  @scala.inline
-  def value: typings.tuyaPanelKit.tuyaPanelKitStrings.value = "value".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.value]
+  inline def value: typings.tuyaPanelKit.tuyaPanelKitStrings.value = "value".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.value]
 }

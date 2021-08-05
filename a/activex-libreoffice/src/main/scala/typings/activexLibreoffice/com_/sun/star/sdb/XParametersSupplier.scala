@@ -26,8 +26,7 @@ trait XParametersSupplier
 }
 object XParametersSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Parameters: XIndexAccess,
     acquire: () => Unit,
     getParameters: () => XIndexAccess,
@@ -38,13 +37,10 @@ object XParametersSupplier {
     __obj.asInstanceOf[XParametersSupplier]
   }
   
-  @scala.inline
-  implicit class XParametersSupplierMutableBuilder[Self <: XParametersSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XParametersSupplier](x: Self) {
     
-    @scala.inline
-    def setGetParameters(value: () => XIndexAccess): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => XIndexAccess): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParameters(value: XIndexAccess): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: XIndexAccess): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

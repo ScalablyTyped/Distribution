@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParsedEventType extends StObject
 object ParsedEventType {
   
-  @scala.inline
-  def Animation: `1` = 1.asInstanceOf[`1`]
+  inline def Animation: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Regular: `0` = 0.asInstanceOf[`0`]
+  inline def Regular: `0` = 0.asInstanceOf[`0`]
 }

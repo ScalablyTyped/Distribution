@@ -13,16 +13,13 @@ trait DeleteInstanceProfileRequest extends StObject {
 }
 object DeleteInstanceProfileRequest {
   
-  @scala.inline
-  def apply(InstanceProfileName: instanceProfileNameType): DeleteInstanceProfileRequest = {
+  inline def apply(InstanceProfileName: instanceProfileNameType): DeleteInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInstanceProfileRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInstanceProfileRequestMutableBuilder[Self <: DeleteInstanceProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInstanceProfileRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
+    inline def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
   }
 }

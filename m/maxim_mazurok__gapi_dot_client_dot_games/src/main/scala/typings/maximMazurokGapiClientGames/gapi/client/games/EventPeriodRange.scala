@@ -17,31 +17,23 @@ trait EventPeriodRange extends StObject {
 }
 object EventPeriodRange {
   
-  @scala.inline
-  def apply(): EventPeriodRange = {
+  inline def apply(): EventPeriodRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventPeriodRange]
   }
   
-  @scala.inline
-  implicit class EventPeriodRangeMutableBuilder[Self <: EventPeriodRange] (val x: Self) extends AnyVal {
+  extension [Self <: EventPeriodRange](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPeriodEndMillis(value: String): Self = StObject.set(x, "periodEndMillis", value.asInstanceOf[js.Any])
+    inline def setPeriodEndMillis(value: String): Self = StObject.set(x, "periodEndMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodEndMillisUndefined: Self = StObject.set(x, "periodEndMillis", js.undefined)
+    inline def setPeriodEndMillisUndefined: Self = StObject.set(x, "periodEndMillis", js.undefined)
     
-    @scala.inline
-    def setPeriodStartMillis(value: String): Self = StObject.set(x, "periodStartMillis", value.asInstanceOf[js.Any])
+    inline def setPeriodStartMillis(value: String): Self = StObject.set(x, "periodStartMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodStartMillisUndefined: Self = StObject.set(x, "periodStartMillis", js.undefined)
+    inline def setPeriodStartMillisUndefined: Self = StObject.set(x, "periodStartMillis", js.undefined)
   }
 }

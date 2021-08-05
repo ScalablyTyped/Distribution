@@ -11,203 +11,171 @@ object awsSdkBuildTypesStrings {
   
   @js.native
   sealed trait Configuration extends StObject
-  @scala.inline
-  def Configuration: Configuration = "Configuration".asInstanceOf[Configuration]
+  inline def Configuration: Configuration = "Configuration".asInstanceOf[Configuration]
   
   @js.native
   sealed trait Middleware extends StObject
-  @scala.inline
-  def Middleware: Middleware = "Middleware".asInstanceOf[Middleware]
+  inline def Middleware: Middleware = "Middleware".asInstanceOf[Middleware]
   
   @js.native
   sealed trait ParameterSuppression extends StObject
-  @scala.inline
-  def ParameterSuppression: ParameterSuppression = "ParameterSuppression".asInstanceOf[ParameterSuppression]
+  inline def ParameterSuppression: ParameterSuppression = "ParameterSuppression".asInstanceOf[ParameterSuppression]
   
   @js.native
   sealed trait ParserDecorator extends StObject
-  @scala.inline
-  def ParserDecorator: ParserDecorator = "ParserDecorator".asInstanceOf[ParserDecorator]
+  inline def ParserDecorator: ParserDecorator = "ParserDecorator".asInstanceOf[ParserDecorator]
   
   @js.native
   sealed trait SyntheticParameter extends StObject
-  @scala.inline
-  def SyntheticParameter: SyntheticParameter = "SyntheticParameter".asInstanceOf[SyntheticParameter]
+  inline def SyntheticParameter: SyntheticParameter = "SyntheticParameter".asInstanceOf[SyntheticParameter]
   
   @js.native
   sealed trait blob
     extends StObject
        with Type
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
   sealed trait boolean
     extends StObject
        with Type
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait browser
     extends StObject
        with RuntimeTarget
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
   sealed trait byte
     extends StObject
        with Type
-  @scala.inline
-  def byte: byte = "byte".asInstanceOf[byte]
+  inline def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
   sealed trait character
     extends StObject
        with Type
-  @scala.inline
-  def character: character = "character".asInstanceOf[character]
+  inline def character: character = "character".asInstanceOf[character]
   
   @js.native
   sealed trait double
     extends StObject
        with Type
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait float
     extends StObject
        with Type
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait forked extends StObject
-  @scala.inline
-  def forked: forked = "forked".asInstanceOf[forked]
+  inline def forked: forked = "forked".asInstanceOf[forked]
   
   @js.native
   sealed trait header
     extends StObject
        with MemberLocation
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait headers
     extends StObject
        with MemberLocation
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
+  inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
   sealed trait input extends StObject
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
   sealed trait integer
     extends StObject
        with Type
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait list
     extends StObject
        with Type
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
   sealed trait long
     extends StObject
        with Type
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
+  inline def long: long = "long".asInstanceOf[long]
   
   @js.native
   sealed trait map
     extends StObject
        with Type
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
+  inline def map: map = "map".asInstanceOf[map]
   
   @js.native
   sealed trait node
     extends StObject
        with RuntimeTarget
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait output extends StObject
-  @scala.inline
-  def output: output = "output".asInstanceOf[output]
+  inline def output: output = "output".asInstanceOf[output]
   
   @js.native
   sealed trait provider extends StObject
-  @scala.inline
-  def provider: provider = "provider".asInstanceOf[provider]
+  inline def provider: provider = "provider".asInstanceOf[provider]
   
   @js.native
   sealed trait querystring
     extends StObject
        with MemberLocation
-  @scala.inline
-  def querystring: querystring = "querystring".asInstanceOf[querystring]
+  inline def querystring: querystring = "querystring".asInstanceOf[querystring]
   
   @js.native
   sealed trait short
     extends StObject
        with Type
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
+  inline def short: short = "short".asInstanceOf[short]
   
   @js.native
   sealed trait string
     extends StObject
        with Type
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait structure
     extends StObject
        with Type
-  @scala.inline
-  def structure: structure = "structure".asInstanceOf[structure]
+  inline def structure: structure = "structure".asInstanceOf[structure]
   
   @js.native
   sealed trait timestamp
     extends StObject
        with Type
-  @scala.inline
-  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  inline def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   
   @js.native
   sealed trait unified extends StObject
-  @scala.inline
-  def unified: unified = "unified".asInstanceOf[unified]
+  inline def unified: unified = "unified".asInstanceOf[unified]
   
   @js.native
   sealed trait universal
     extends StObject
        with RuntimeTarget
-  @scala.inline
-  def universal: universal = "universal".asInstanceOf[universal]
+  inline def universal: universal = "universal".asInstanceOf[universal]
   
   @js.native
   sealed trait uri
     extends StObject
        with MemberLocation
-  @scala.inline
-  def uri: uri = "uri".asInstanceOf[uri]
+  inline def uri: uri = "uri".asInstanceOf[uri]
   
   @js.native
   sealed trait value extends StObject
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  inline def value: value = "value".asInstanceOf[value]
 }

@@ -13,16 +13,13 @@ trait DescribeTableInput extends StObject {
 }
 object DescribeTableInput {
   
-  @scala.inline
-  def apply(TableName: TableName): DescribeTableInput = {
+  inline def apply(TableName: TableName): DescribeTableInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableInput]
   }
   
-  @scala.inline
-  implicit class DescribeTableInputMutableBuilder[Self <: DescribeTableInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTableInput](x: Self) {
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait AutoInit extends StObject {
 }
 object AutoInit {
   
-  @scala.inline
-  def apply(autoInit: Boolean): AutoInit = {
+  inline def apply(autoInit: Boolean): AutoInit = {
     val __obj = js.Dynamic.literal(autoInit = autoInit.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoInit]
   }
   
-  @scala.inline
-  implicit class AutoInitMutableBuilder[Self <: AutoInit] (val x: Self) extends AnyVal {
+  extension [Self <: AutoInit](x: Self) {
     
-    @scala.inline
-    def setAutoInit(value: Boolean): Self = StObject.set(x, "autoInit", value.asInstanceOf[js.Any])
+    inline def setAutoInit(value: Boolean): Self = StObject.set(x, "autoInit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAutoInitModule(value: js.Any): Self = StObject.set(x, "getAutoInitModule", value.asInstanceOf[js.Any])
+    inline def setGetAutoInitModule(value: js.Any): Self = StObject.set(x, "getAutoInitModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAutoInitModuleUndefined: Self = StObject.set(x, "getAutoInitModule", js.undefined)
+    inline def setGetAutoInitModuleUndefined: Self = StObject.set(x, "getAutoInitModule", js.undefined)
     
-    @scala.inline
-    def setGlobalInjection(value: /* p */ String => String): Self = StObject.set(x, "globalInjection", js.Any.fromFunction1(value))
+    inline def setGlobalInjection(value: /* p */ String => String): Self = StObject.set(x, "globalInjection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGlobalInjectionUndefined: Self = StObject.set(x, "globalInjection", js.undefined)
+    inline def setGlobalInjectionUndefined: Self = StObject.set(x, "globalInjection", js.undefined)
   }
 }

@@ -128,8 +128,7 @@ object mod {
   }
   object Backoff {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attempts: Double,
       duration: () => Double,
       factor: Double,
@@ -145,38 +144,27 @@ object mod {
       __obj.asInstanceOf[Backoff]
     }
     
-    @scala.inline
-    implicit class BackoffMutableBuilder[Self <: Backoff] (val x: Self) extends AnyVal {
+    extension [Self <: Backoff](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: () => Double): Self = StObject.set(x, "duration", js.Any.fromFunction0(value))
+      inline def setDuration(value: () => Double): Self = StObject.set(x, "duration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+      inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+      inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetJitter(value: Double => Unit): Self = StObject.set(x, "setJitter", js.Any.fromFunction1(value))
+      inline def setSetJitter(value: Double => Unit): Self = StObject.set(x, "setJitter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMax(value: Double => Unit): Self = StObject.set(x, "setMax", js.Any.fromFunction1(value))
+      inline def setSetMax(value: Double => Unit): Self = StObject.set(x, "setMax", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMin(value: Double => Unit): Self = StObject.set(x, "setMin", js.Any.fromFunction1(value))
+      inline def setSetMin(value: Double => Unit): Self = StObject.set(x, "setMin", js.Any.fromFunction1(value))
     }
   }
   
@@ -193,38 +181,28 @@ object mod {
   }
   object BackoffOptions {
     
-    @scala.inline
-    def apply(): BackoffOptions = {
+    inline def apply(): BackoffOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackoffOptions]
     }
     
-    @scala.inline
-    implicit class BackoffOptionsMutableBuilder[Self <: BackoffOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BackoffOptions](x: Self) {
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      @scala.inline
-      def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+      inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
+      inline def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     }
   }
 }

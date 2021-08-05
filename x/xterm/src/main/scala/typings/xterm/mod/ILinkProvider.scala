@@ -20,16 +20,13 @@ trait ILinkProvider extends StObject {
 }
 object ILinkProvider {
   
-  @scala.inline
-  def apply(provideLinks: (Double, js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]) => Unit): ILinkProvider = {
+  inline def apply(provideLinks: (Double, js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]) => Unit): ILinkProvider = {
     val __obj = js.Dynamic.literal(provideLinks = js.Any.fromFunction2(provideLinks))
     __obj.asInstanceOf[ILinkProvider]
   }
   
-  @scala.inline
-  implicit class ILinkProviderMutableBuilder[Self <: ILinkProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ILinkProvider](x: Self) {
     
-    @scala.inline
-    def setProvideLinks(value: (Double, js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]) => Unit): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
+    inline def setProvideLinks(value: (Double, js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]) => Unit): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
   }
 }

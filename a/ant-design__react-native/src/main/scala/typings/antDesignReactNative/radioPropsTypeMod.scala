@@ -17,26 +17,20 @@ object radioPropsTypeMod {
   }
   object RadioItemPropsType {
     
-    @scala.inline
-    def apply(): RadioItemPropsType = {
+    inline def apply(): RadioItemPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioItemPropsType]
     }
     
-    @scala.inline
-    implicit class RadioItemPropsTypeMutableBuilder[Self <: RadioItemPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: RadioItemPropsType](x: Self) {
       
-      @scala.inline
-      def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setRadioProps(value: js.Object): Self = StObject.set(x, "radioProps", value.asInstanceOf[js.Any])
+      inline def setRadioProps(value: js.Object): Self = StObject.set(x, "radioProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioPropsUndefined: Self = StObject.set(x, "radioProps", js.undefined)
+      inline def setRadioPropsUndefined: Self = StObject.set(x, "radioProps", js.undefined)
     }
   }
   
@@ -56,50 +50,36 @@ object radioPropsTypeMod {
   }
   object RadioPropsType {
     
-    @scala.inline
-    def apply(): RadioPropsType = {
+    inline def apply(): RadioPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioPropsType]
     }
     
-    @scala.inline
-    implicit class RadioPropsTypeMutableBuilder[Self <: RadioPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: RadioPropsType](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+      inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+      inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ Target => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ Target => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setWrapLabel(value: Boolean): Self = StObject.set(x, "wrapLabel", value.asInstanceOf[js.Any])
+      inline def setWrapLabel(value: Boolean): Self = StObject.set(x, "wrapLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapLabelUndefined: Self = StObject.set(x, "wrapLabel", js.undefined)
+      inline def setWrapLabelUndefined: Self = StObject.set(x, "wrapLabel", js.undefined)
     }
   }
 }

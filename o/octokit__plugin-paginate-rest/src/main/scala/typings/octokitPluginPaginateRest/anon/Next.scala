@@ -10,16 +10,13 @@ trait Next extends StObject {
 }
 object Next {
   
-  @scala.inline
-  def apply(next: () => js.Promise[Done | Value]): Next = {
+  inline def apply(next: () => js.Promise[Done | Value]): Next = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
     __obj.asInstanceOf[Next]
   }
   
-  @scala.inline
-  implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+  extension [Self <: Next](x: Self) {
     
-    @scala.inline
-    def setNext(value: () => js.Promise[Done | Value]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => js.Promise[Done | Value]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }
 }

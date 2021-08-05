@@ -53,8 +53,7 @@ trait SortDescriptor
 }
 object SortDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CollatorAlgorithm: String,
     CollatorLocale: Locale,
     IsCaseSensitive: Boolean,
@@ -76,22 +75,16 @@ object SortDescriptor {
     __obj.asInstanceOf[SortDescriptor]
   }
   
-  @scala.inline
-  implicit class SortDescriptorMutableBuilder[Self <: SortDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SortDescriptor](x: Self) {
     
-    @scala.inline
-    def setCollatorAlgorithm(value: String): Self = StObject.set(x, "CollatorAlgorithm", value.asInstanceOf[js.Any])
+    inline def setCollatorAlgorithm(value: String): Self = StObject.set(x, "CollatorAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollatorLocale(value: Locale): Self = StObject.set(x, "CollatorLocale", value.asInstanceOf[js.Any])
+    inline def setCollatorLocale(value: Locale): Self = StObject.set(x, "CollatorLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortColumns(value: Boolean): Self = StObject.set(x, "SortColumns", value.asInstanceOf[js.Any])
+    inline def setSortColumns(value: Boolean): Self = StObject.set(x, "SortColumns", value.asInstanceOf[js.Any])
   }
 }

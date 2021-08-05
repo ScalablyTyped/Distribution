@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TableOfAuthorities")
 @js.native
-class TableOfAuthorities protected ()
+/* private */ class TableOfAuthorities ()
   extends StObject
      with typings.activexWord.Word.TableOfAuthorities {
   
@@ -62,7 +62,7 @@ class TableOfAuthorities protected ()
   /* CompleteClass */
   override def Update(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TableOfAuthorities_typekey")
   var WordDotTableOfAuthorities_typekey: typings.activexWord.Word.TableOfAuthorities = js.native
 }

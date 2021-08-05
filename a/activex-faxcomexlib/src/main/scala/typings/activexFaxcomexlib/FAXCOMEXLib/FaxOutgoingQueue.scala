@@ -26,7 +26,7 @@ trait FaxOutgoingQueue extends StObject {
   /** Start of the discount rate period */
   var DiscountRateStart: VarDate
   
-  @JSName("FAXCOMEXLib.FaxOutgoingQueue_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxOutgoingQueue_typekey")
   var FAXCOMEXLibDotFaxOutgoingQueue_typekey: FaxOutgoingQueue
   
   /** Outgoing job by ID */
@@ -55,8 +55,7 @@ trait FaxOutgoingQueue extends StObject {
 }
 object FaxOutgoingQueue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AgeLimit: Double,
     AllowPersonalCoverPages: Boolean,
     Blocked: Boolean,
@@ -78,52 +77,36 @@ object FaxOutgoingQueue {
     __obj.asInstanceOf[FaxOutgoingQueue]
   }
   
-  @scala.inline
-  implicit class FaxOutgoingQueueMutableBuilder[Self <: FaxOutgoingQueue] (val x: Self) extends AnyVal {
+  extension [Self <: FaxOutgoingQueue](x: Self) {
     
-    @scala.inline
-    def setAgeLimit(value: Double): Self = StObject.set(x, "AgeLimit", value.asInstanceOf[js.Any])
+    inline def setAgeLimit(value: Double): Self = StObject.set(x, "AgeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPersonalCoverPages(value: Boolean): Self = StObject.set(x, "AllowPersonalCoverPages", value.asInstanceOf[js.Any])
+    inline def setAllowPersonalCoverPages(value: Boolean): Self = StObject.set(x, "AllowPersonalCoverPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranding(value: Boolean): Self = StObject.set(x, "Branding", value.asInstanceOf[js.Any])
+    inline def setBranding(value: Boolean): Self = StObject.set(x, "Branding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscountRateEnd(value: VarDate): Self = StObject.set(x, "DiscountRateEnd", value.asInstanceOf[js.Any])
+    inline def setDiscountRateEnd(value: VarDate): Self = StObject.set(x, "DiscountRateEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscountRateStart(value: VarDate): Self = StObject.set(x, "DiscountRateStart", value.asInstanceOf[js.Any])
+    inline def setDiscountRateStart(value: VarDate): Self = StObject.set(x, "DiscountRateStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxOutgoingQueue_typekey(value: FaxOutgoingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingQueue_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxOutgoingQueue_typekey(value: FaxOutgoingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingQueue_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetJob(value: String => IFaxOutgoingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
+    inline def setGetJob(value: String => IFaxOutgoingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetJobs(value: () => FaxOutgoingJobs): Self = StObject.set(x, "GetJobs", js.Any.fromFunction0(value))
+    inline def setGetJobs(value: () => FaxOutgoingJobs): Self = StObject.set(x, "GetJobs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "Paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "Paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDelay(value: Double): Self = StObject.set(x, "RetryDelay", value.asInstanceOf[js.Any])
+    inline def setRetryDelay(value: Double): Self = StObject.set(x, "RetryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseDeviceTSID(value: Boolean): Self = StObject.set(x, "UseDeviceTSID", value.asInstanceOf[js.Any])
+    inline def setUseDeviceTSID(value: Boolean): Self = StObject.set(x, "UseDeviceTSID", value.asInstanceOf[js.Any])
   }
 }

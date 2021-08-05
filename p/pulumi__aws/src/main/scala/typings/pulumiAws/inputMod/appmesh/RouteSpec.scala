@@ -35,43 +35,31 @@ trait RouteSpec extends StObject {
 }
 object RouteSpec {
   
-  @scala.inline
-  def apply(): RouteSpec = {
+  inline def apply(): RouteSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteSpec]
   }
   
-  @scala.inline
-  implicit class RouteSpecMutableBuilder[Self <: RouteSpec] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpec](x: Self) {
     
-    @scala.inline
-    def setGrpcRoute(value: Input[RouteSpecGrpcRoute]): Self = StObject.set(x, "grpcRoute", value.asInstanceOf[js.Any])
+    inline def setGrpcRoute(value: Input[RouteSpecGrpcRoute]): Self = StObject.set(x, "grpcRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrpcRouteUndefined: Self = StObject.set(x, "grpcRoute", js.undefined)
+    inline def setGrpcRouteUndefined: Self = StObject.set(x, "grpcRoute", js.undefined)
     
-    @scala.inline
-    def setHttp2Route(value: Input[RouteSpecHttp2Route]): Self = StObject.set(x, "http2Route", value.asInstanceOf[js.Any])
+    inline def setHttp2Route(value: Input[RouteSpecHttp2Route]): Self = StObject.set(x, "http2Route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp2RouteUndefined: Self = StObject.set(x, "http2Route", js.undefined)
+    inline def setHttp2RouteUndefined: Self = StObject.set(x, "http2Route", js.undefined)
     
-    @scala.inline
-    def setHttpRoute(value: Input[RouteSpecHttpRoute]): Self = StObject.set(x, "httpRoute", value.asInstanceOf[js.Any])
+    inline def setHttpRoute(value: Input[RouteSpecHttpRoute]): Self = StObject.set(x, "httpRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRouteUndefined: Self = StObject.set(x, "httpRoute", js.undefined)
+    inline def setHttpRouteUndefined: Self = StObject.set(x, "httpRoute", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setTcpRoute(value: Input[RouteSpecTcpRoute]): Self = StObject.set(x, "tcpRoute", value.asInstanceOf[js.Any])
+    inline def setTcpRoute(value: Input[RouteSpecTcpRoute]): Self = StObject.set(x, "tcpRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpRouteUndefined: Self = StObject.set(x, "tcpRoute", js.undefined)
+    inline def setTcpRouteUndefined: Self = StObject.set(x, "tcpRoute", js.undefined)
   }
 }

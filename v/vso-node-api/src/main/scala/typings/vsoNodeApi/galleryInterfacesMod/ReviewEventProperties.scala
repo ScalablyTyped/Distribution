@@ -74,8 +74,7 @@ trait ReviewEventProperties extends StObject {
 }
 object ReviewEventProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventOperation: ReviewEventOperation,
     isAdminReply: Boolean,
     isIgnored: Boolean,
@@ -94,46 +93,32 @@ object ReviewEventProperties {
     __obj.asInstanceOf[ReviewEventProperties]
   }
   
-  @scala.inline
-  implicit class ReviewEventPropertiesMutableBuilder[Self <: ReviewEventProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewEventProperties](x: Self) {
     
-    @scala.inline
-    def setEventOperation(value: ReviewEventOperation): Self = StObject.set(x, "eventOperation", value.asInstanceOf[js.Any])
+    inline def setEventOperation(value: ReviewEventOperation): Self = StObject.set(x, "eventOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAdminReply(value: Boolean): Self = StObject.set(x, "isAdminReply", value.asInstanceOf[js.Any])
+    inline def setIsAdminReply(value: Boolean): Self = StObject.set(x, "isAdminReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIgnored(value: Boolean): Self = StObject.set(x, "isIgnored", value.asInstanceOf[js.Any])
+    inline def setIsIgnored(value: Boolean): Self = StObject.set(x, "isIgnored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyDate(value: Date): Self = StObject.set(x, "replyDate", value.asInstanceOf[js.Any])
+    inline def setReplyDate(value: Date): Self = StObject.set(x, "replyDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
+    inline def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyUserId(value: String): Self = StObject.set(x, "replyUserId", value.asInstanceOf[js.Any])
+    inline def setReplyUserId(value: String): Self = StObject.set(x, "replyUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ReviewResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ReviewResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewDate(value: Date): Self = StObject.set(x, "reviewDate", value.asInstanceOf[js.Any])
+    inline def setReviewDate(value: Date): Self = StObject.set(x, "reviewDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
+    inline def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewText(value: String): Self = StObject.set(x, "reviewText", value.asInstanceOf[js.Any])
+    inline def setReviewText(value: String): Self = StObject.set(x, "reviewText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
+    inline def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

@@ -32,37 +32,27 @@ trait FlowSchemaSpec extends StObject {
 }
 object FlowSchemaSpec {
   
-  @scala.inline
-  def apply(priorityLevelConfiguration: Input[PriorityLevelConfigurationReference]): FlowSchemaSpec = {
+  inline def apply(priorityLevelConfiguration: Input[PriorityLevelConfigurationReference]): FlowSchemaSpec = {
     val __obj = js.Dynamic.literal(priorityLevelConfiguration = priorityLevelConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowSchemaSpec]
   }
   
-  @scala.inline
-  implicit class FlowSchemaSpecMutableBuilder[Self <: FlowSchemaSpec] (val x: Self) extends AnyVal {
+  extension [Self <: FlowSchemaSpec](x: Self) {
     
-    @scala.inline
-    def setDistinguisherMethod(value: Input[FlowDistinguisherMethod]): Self = StObject.set(x, "distinguisherMethod", value.asInstanceOf[js.Any])
+    inline def setDistinguisherMethod(value: Input[FlowDistinguisherMethod]): Self = StObject.set(x, "distinguisherMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistinguisherMethodUndefined: Self = StObject.set(x, "distinguisherMethod", js.undefined)
+    inline def setDistinguisherMethodUndefined: Self = StObject.set(x, "distinguisherMethod", js.undefined)
     
-    @scala.inline
-    def setMatchingPrecedence(value: Input[Double]): Self = StObject.set(x, "matchingPrecedence", value.asInstanceOf[js.Any])
+    inline def setMatchingPrecedence(value: Input[Double]): Self = StObject.set(x, "matchingPrecedence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingPrecedenceUndefined: Self = StObject.set(x, "matchingPrecedence", js.undefined)
+    inline def setMatchingPrecedenceUndefined: Self = StObject.set(x, "matchingPrecedence", js.undefined)
     
-    @scala.inline
-    def setPriorityLevelConfiguration(value: Input[PriorityLevelConfigurationReference]): Self = StObject.set(x, "priorityLevelConfiguration", value.asInstanceOf[js.Any])
+    inline def setPriorityLevelConfiguration(value: Input[PriorityLevelConfigurationReference]): Self = StObject.set(x, "priorityLevelConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: Input[js.Array[Input[PolicyRulesWithSubjects]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Input[js.Array[Input[PolicyRulesWithSubjects]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: Input[PolicyRulesWithSubjects]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Input[PolicyRulesWithSubjects]*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

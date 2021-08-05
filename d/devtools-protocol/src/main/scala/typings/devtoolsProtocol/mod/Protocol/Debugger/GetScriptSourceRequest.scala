@@ -14,16 +14,13 @@ trait GetScriptSourceRequest extends StObject {
 }
 object GetScriptSourceRequest {
   
-  @scala.inline
-  def apply(scriptId: ScriptId): GetScriptSourceRequest = {
+  inline def apply(scriptId: ScriptId): GetScriptSourceRequest = {
     val __obj = js.Dynamic.literal(scriptId = scriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptSourceRequest]
   }
   
-  @scala.inline
-  implicit class GetScriptSourceRequestMutableBuilder[Self <: GetScriptSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetScriptSourceRequest](x: Self) {
     
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }
 }

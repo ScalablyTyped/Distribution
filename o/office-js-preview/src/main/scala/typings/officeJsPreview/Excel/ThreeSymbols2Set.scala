@@ -17,22 +17,17 @@ trait ThreeSymbols2Set
 }
 object ThreeSymbols2Set {
   
-  @scala.inline
-  def apply(greenCheck: Icon, redCross: Icon, yellowExclamation: Icon): ThreeSymbols2Set = {
+  inline def apply(greenCheck: Icon, redCross: Icon, yellowExclamation: Icon): ThreeSymbols2Set = {
     val __obj = js.Dynamic.literal(greenCheck = greenCheck.asInstanceOf[js.Any], redCross = redCross.asInstanceOf[js.Any], yellowExclamation = yellowExclamation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreeSymbols2Set]
   }
   
-  @scala.inline
-  implicit class ThreeSymbols2SetMutableBuilder[Self <: ThreeSymbols2Set] (val x: Self) extends AnyVal {
+  extension [Self <: ThreeSymbols2Set](x: Self) {
     
-    @scala.inline
-    def setGreenCheck(value: Icon): Self = StObject.set(x, "greenCheck", value.asInstanceOf[js.Any])
+    inline def setGreenCheck(value: Icon): Self = StObject.set(x, "greenCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedCross(value: Icon): Self = StObject.set(x, "redCross", value.asInstanceOf[js.Any])
+    inline def setRedCross(value: Icon): Self = StObject.set(x, "redCross", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellowExclamation(value: Icon): Self = StObject.set(x, "yellowExclamation", value.asInstanceOf[js.Any])
+    inline def setYellowExclamation(value: Icon): Self = StObject.set(x, "yellowExclamation", value.asInstanceOf[js.Any])
   }
 }

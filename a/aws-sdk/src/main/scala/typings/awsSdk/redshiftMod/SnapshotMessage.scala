@@ -18,28 +18,21 @@ trait SnapshotMessage extends StObject {
 }
 object SnapshotMessage {
   
-  @scala.inline
-  def apply(): SnapshotMessage = {
+  inline def apply(): SnapshotMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotMessage]
   }
   
-  @scala.inline
-  implicit class SnapshotMessageMutableBuilder[Self <: SnapshotMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSnapshots(value: SnapshotList): Self = StObject.set(x, "Snapshots", value.asInstanceOf[js.Any])
+    inline def setSnapshots(value: SnapshotList): Self = StObject.set(x, "Snapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotsUndefined: Self = StObject.set(x, "Snapshots", js.undefined)
+    inline def setSnapshotsUndefined: Self = StObject.set(x, "Snapshots", js.undefined)
     
-    @scala.inline
-    def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "Snapshots", js.Array(value :_*))
+    inline def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "Snapshots", js.Array(value :_*))
   }
 }

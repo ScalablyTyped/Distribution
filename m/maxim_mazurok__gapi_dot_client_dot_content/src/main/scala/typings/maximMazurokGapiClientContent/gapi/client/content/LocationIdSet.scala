@@ -11,22 +11,17 @@ trait LocationIdSet extends StObject {
 }
 object LocationIdSet {
   
-  @scala.inline
-  def apply(): LocationIdSet = {
+  inline def apply(): LocationIdSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationIdSet]
   }
   
-  @scala.inline
-  implicit class LocationIdSetMutableBuilder[Self <: LocationIdSet] (val x: Self) extends AnyVal {
+  extension [Self <: LocationIdSet](x: Self) {
     
-    @scala.inline
-    def setLocationIds(value: js.Array[String]): Self = StObject.set(x, "locationIds", value.asInstanceOf[js.Any])
+    inline def setLocationIds(value: js.Array[String]): Self = StObject.set(x, "locationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdsUndefined: Self = StObject.set(x, "locationIds", js.undefined)
+    inline def setLocationIdsUndefined: Self = StObject.set(x, "locationIds", js.undefined)
     
-    @scala.inline
-    def setLocationIdsVarargs(value: String*): Self = StObject.set(x, "locationIds", js.Array(value :_*))
+    inline def setLocationIdsVarargs(value: String*): Self = StObject.set(x, "locationIds", js.Array(value :_*))
   }
 }

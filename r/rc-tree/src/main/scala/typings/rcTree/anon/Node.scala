@@ -14,19 +14,15 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(node: EventDataNode): Node = {
+  inline def apply(node: EventDataNode): Node = {
     val __obj = js.Dynamic.literal(event = "load", node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setEvent(value: load): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: load): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

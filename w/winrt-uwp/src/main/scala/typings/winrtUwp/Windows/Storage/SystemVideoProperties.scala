@@ -24,8 +24,7 @@ trait SystemVideoProperties extends StObject {
 }
 object SystemVideoProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     director: String,
     frameHeight: String,
     frameWidth: String,
@@ -36,22 +35,16 @@ object SystemVideoProperties {
     __obj.asInstanceOf[SystemVideoProperties]
   }
   
-  @scala.inline
-  implicit class SystemVideoPropertiesMutableBuilder[Self <: SystemVideoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemVideoProperties](x: Self) {
     
-    @scala.inline
-    def setDirector(value: String): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
+    inline def setDirector(value: String): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameHeight(value: String): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
+    inline def setFrameHeight(value: String): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameWidth(value: String): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
+    inline def setFrameWidth(value: String): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBitrate(value: String): Self = StObject.set(x, "totalBitrate", value.asInstanceOf[js.Any])
+    inline def setTotalBitrate(value: String): Self = StObject.set(x, "totalBitrate", value.asInstanceOf[js.Any])
   }
 }

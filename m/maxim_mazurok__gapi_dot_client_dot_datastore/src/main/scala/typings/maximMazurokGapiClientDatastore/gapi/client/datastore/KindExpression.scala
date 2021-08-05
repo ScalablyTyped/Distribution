@@ -11,19 +11,15 @@ trait KindExpression extends StObject {
 }
 object KindExpression {
   
-  @scala.inline
-  def apply(): KindExpression = {
+  inline def apply(): KindExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KindExpression]
   }
   
-  @scala.inline
-  implicit class KindExpressionMutableBuilder[Self <: KindExpression] (val x: Self) extends AnyVal {
+  extension [Self <: KindExpression](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait BorderBottomLeftRadius extends StObject {
 }
 object BorderBottomLeftRadius {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderBottomLeftRadius: Double,
     borderBottomRightRadius: Double,
     bottom: Double,
@@ -33,25 +32,18 @@ object BorderBottomLeftRadius {
     __obj.asInstanceOf[BorderBottomLeftRadius]
   }
   
-  @scala.inline
-  implicit class BorderBottomLeftRadiusMutableBuilder[Self <: BorderBottomLeftRadius] (val x: Self) extends AnyVal {
+  extension [Self <: BorderBottomLeftRadius](x: Self) {
     
-    @scala.inline
-    def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomRightRadius(value: Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomRightRadius(value: Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

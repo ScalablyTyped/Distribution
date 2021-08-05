@@ -23,31 +23,23 @@ trait StreamingConfiguration extends StObject {
 }
 object StreamingConfiguration {
   
-  @scala.inline
-  def apply(DataRetentionInHours: DataRetentionInHours): StreamingConfiguration = {
+  inline def apply(DataRetentionInHours: DataRetentionInHours): StreamingConfiguration = {
     val __obj = js.Dynamic.literal(DataRetentionInHours = DataRetentionInHours.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingConfiguration]
   }
   
-  @scala.inline
-  implicit class StreamingConfigurationMutableBuilder[Self <: StreamingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingConfiguration](x: Self) {
     
-    @scala.inline
-    def setDataRetentionInHours(value: DataRetentionInHours): Self = StObject.set(x, "DataRetentionInHours", value.asInstanceOf[js.Any])
+    inline def setDataRetentionInHours(value: DataRetentionInHours): Self = StObject.set(x, "DataRetentionInHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setStreamingNotificationTargets(value: StreamingNotificationTargetList): Self = StObject.set(x, "StreamingNotificationTargets", value.asInstanceOf[js.Any])
+    inline def setStreamingNotificationTargets(value: StreamingNotificationTargetList): Self = StObject.set(x, "StreamingNotificationTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingNotificationTargetsUndefined: Self = StObject.set(x, "StreamingNotificationTargets", js.undefined)
+    inline def setStreamingNotificationTargetsUndefined: Self = StObject.set(x, "StreamingNotificationTargets", js.undefined)
     
-    @scala.inline
-    def setStreamingNotificationTargetsVarargs(value: StreamingNotificationTarget*): Self = StObject.set(x, "StreamingNotificationTargets", js.Array(value :_*))
+    inline def setStreamingNotificationTargetsVarargs(value: StreamingNotificationTarget*): Self = StObject.set(x, "StreamingNotificationTargets", js.Array(value :_*))
   }
 }

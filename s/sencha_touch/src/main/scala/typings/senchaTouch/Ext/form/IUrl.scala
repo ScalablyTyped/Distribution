@@ -9,8 +9,7 @@ trait IUrl
      with typings.senchaTouch.Ext.field.IText
 object IUrl {
   
-  @scala.inline
-  def apply(): IUrl = {
+  inline def apply(): IUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUrl]
   }

@@ -38,49 +38,35 @@ trait Destination extends StObject {
 }
 object Destination {
   
-  @scala.inline
-  def apply(): Destination = {
+  inline def apply(): Destination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Destination]
   }
   
-  @scala.inline
-  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+  extension [Self <: Destination](x: Self) {
     
-    @scala.inline
-    def setAccessPolicy(value: AccessPolicy): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
+    inline def setAccessPolicy(value: AccessPolicy): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
+    inline def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDestinationName(value: DestinationName): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+    inline def setDestinationName(value: DestinationName): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+    inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
-    @scala.inline
-    def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
+    inline def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
   }
 }

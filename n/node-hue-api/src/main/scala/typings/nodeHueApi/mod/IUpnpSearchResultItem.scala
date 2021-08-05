@@ -12,19 +12,15 @@ trait IUpnpSearchResultItem extends StObject {
 }
 object IUpnpSearchResultItem {
   
-  @scala.inline
-  def apply(id: String, ipaddress: String): IUpnpSearchResultItem = {
+  inline def apply(id: String, ipaddress: String): IUpnpSearchResultItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ipaddress = ipaddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpnpSearchResultItem]
   }
   
-  @scala.inline
-  implicit class IUpnpSearchResultItemMutableBuilder[Self <: IUpnpSearchResultItem] (val x: Self) extends AnyVal {
+  extension [Self <: IUpnpSearchResultItem](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpaddress(value: String): Self = StObject.set(x, "ipaddress", value.asInstanceOf[js.Any])
+    inline def setIpaddress(value: String): Self = StObject.set(x, "ipaddress", value.asInstanceOf[js.Any])
   }
 }

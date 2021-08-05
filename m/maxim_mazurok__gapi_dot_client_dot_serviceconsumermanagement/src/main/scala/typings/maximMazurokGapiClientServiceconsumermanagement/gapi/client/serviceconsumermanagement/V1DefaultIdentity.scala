@@ -17,31 +17,23 @@ trait V1DefaultIdentity extends StObject {
 }
 object V1DefaultIdentity {
   
-  @scala.inline
-  def apply(): V1DefaultIdentity = {
+  inline def apply(): V1DefaultIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[V1DefaultIdentity]
   }
   
-  @scala.inline
-  implicit class V1DefaultIdentityMutableBuilder[Self <: V1DefaultIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: V1DefaultIdentity](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+    inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+    inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
   }
 }

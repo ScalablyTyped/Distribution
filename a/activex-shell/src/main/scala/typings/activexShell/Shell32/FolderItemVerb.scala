@@ -13,28 +13,23 @@ trait FolderItemVerb extends StObject {
   /** Get display name for item */
   val Name: String
   
-  @JSName("Shell32.FolderItemVerb_typekey")
+  /* private */ @JSName("Shell32.FolderItemVerb_typekey")
   var Shell32DotFolderItemVerb_typekey: FolderItemVerb
 }
 object FolderItemVerb {
   
-  @scala.inline
-  def apply(DoIt: () => Unit, Name: String, Shell32DotFolderItemVerb_typekey: FolderItemVerb): FolderItemVerb = {
+  inline def apply(DoIt: () => Unit, Name: String, Shell32DotFolderItemVerb_typekey: FolderItemVerb): FolderItemVerb = {
     val __obj = js.Dynamic.literal(DoIt = js.Any.fromFunction0(DoIt), Name = Name.asInstanceOf[js.Any])
     __obj.updateDynamic("Shell32.FolderItemVerb_typekey")(Shell32DotFolderItemVerb_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderItemVerb]
   }
   
-  @scala.inline
-  implicit class FolderItemVerbMutableBuilder[Self <: FolderItemVerb] (val x: Self) extends AnyVal {
+  extension [Self <: FolderItemVerb](x: Self) {
     
-    @scala.inline
-    def setDoIt(value: () => Unit): Self = StObject.set(x, "DoIt", js.Any.fromFunction0(value))
+    inline def setDoIt(value: () => Unit): Self = StObject.set(x, "DoIt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShell32DotFolderItemVerb_typekey(value: FolderItemVerb): Self = StObject.set(x, "Shell32.FolderItemVerb_typekey", value.asInstanceOf[js.Any])
+    inline def setShell32DotFolderItemVerb_typekey(value: FolderItemVerb): Self = StObject.set(x, "Shell32.FolderItemVerb_typekey", value.asInstanceOf[js.Any])
   }
 }

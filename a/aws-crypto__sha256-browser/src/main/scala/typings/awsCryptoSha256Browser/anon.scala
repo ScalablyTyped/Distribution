@@ -13,17 +13,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(): Name = {
+    inline def apply(): Name = {
       val __obj = js.Dynamic.literal(name = "SHA-256")
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: `SHA-256`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: `SHA-256`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

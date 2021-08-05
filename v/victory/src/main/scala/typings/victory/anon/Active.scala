@@ -12,25 +12,19 @@ trait Active extends StObject {
 }
 object Active {
   
-  @scala.inline
-  def apply(): Active = {
+  inline def apply(): Active = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Active]
   }
   
-  @scala.inline
-  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+  extension [Self <: Active](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
   }
 }

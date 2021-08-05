@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OutlookBarGroup")
 @js.native
-class OutlookBarGroup protected ()
+/* private */ class OutlookBarGroup ()
   extends StObject
      with typings.activexOutlook.Outlook.OutlookBarGroup {
   
@@ -21,7 +21,7 @@ class OutlookBarGroup protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OutlookBarGroup_typekey")
   var OutlookDotOutlookBarGroup_typekey: typings.activexOutlook.Outlook.OutlookBarGroup = js.native
   

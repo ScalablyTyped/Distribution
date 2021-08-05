@@ -15,22 +15,17 @@ trait TextInputTextInputEventData extends StObject {
 }
 object TextInputTextInputEventData {
   
-  @scala.inline
-  def apply(previousText: String, range: End, text: String): TextInputTextInputEventData = {
+  inline def apply(previousText: String, range: End, text: String): TextInputTextInputEventData = {
     val __obj = js.Dynamic.literal(previousText = previousText.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputTextInputEventData]
   }
   
-  @scala.inline
-  implicit class TextInputTextInputEventDataMutableBuilder[Self <: TextInputTextInputEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputTextInputEventData](x: Self) {
     
-    @scala.inline
-    def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
+    inline def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: End): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: End): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

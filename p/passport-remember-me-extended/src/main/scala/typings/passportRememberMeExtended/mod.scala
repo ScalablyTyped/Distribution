@@ -49,26 +49,20 @@ object mod {
   }
   object StrategyOption {
     
-    @scala.inline
-    def apply(): StrategyOption = {
+    inline def apply(): StrategyOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrategyOption]
     }
     
-    @scala.inline
-    implicit class StrategyOptionMutableBuilder[Self <: StrategyOption] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOption](x: Self) {
       
-      @scala.inline
-      def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -80,17 +74,14 @@ object mod {
   }
   object StrategyOptionWithRequest {
     
-    @scala.inline
-    def apply(): StrategyOptionWithRequest = {
+    inline def apply(): StrategyOptionWithRequest = {
       val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     
-    @scala.inline
-    implicit class StrategyOptionWithRequestMutableBuilder[Self <: StrategyOptionWithRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptionWithRequest](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
   }
   

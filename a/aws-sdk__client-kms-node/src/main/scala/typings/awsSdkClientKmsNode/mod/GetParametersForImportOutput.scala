@@ -10,8 +10,7 @@ trait GetParametersForImportOutput
      with typings.awsSdkClientKmsNode.typesGetParametersForImportOutputMod.GetParametersForImportOutput
 object GetParametersForImportOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetParametersForImportOutput = {
+  inline def apply($metadata: ResponseMetadata): GetParametersForImportOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersForImportOutput]
   }

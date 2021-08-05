@@ -49,8 +49,7 @@ object selectorDriverMod {
   }
   object SelectorDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getExtraNode: () => HTMLElement,
       getImage: () => HTMLElement,
@@ -74,59 +73,41 @@ object selectorDriverMod {
       __obj.asInstanceOf[SelectorDriver]
     }
     
-    @scala.inline
-    implicit class SelectorDriverMutableBuilder[Self <: SelectorDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorDriver](x: Self) {
       
-      @scala.inline
-      def setGetExtraNode(value: () => HTMLElement): Self = StObject.set(x, "getExtraNode", js.Any.fromFunction0(value))
+      inline def setGetExtraNode(value: () => HTMLElement): Self = StObject.set(x, "getExtraNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImage(value: () => HTMLElement): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
+      inline def setGetImage(value: () => HTMLElement): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasExtraNode(value: () => Boolean): Self = StObject.set(x, "hasExtraNode", js.Any.fromFunction0(value))
+      inline def setHasExtraNode(value: () => Boolean): Self = StObject.set(x, "hasExtraNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasImage(value: () => Boolean): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
+      inline def setHasImage(value: () => Boolean): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageCinema(value: () => Boolean): Self = StObject.set(x, "isImageCinema", js.Any.fromFunction0(value))
+      inline def setIsImageCinema(value: () => Boolean): Self = StObject.set(x, "isImageCinema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageCircle(value: () => Boolean): Self = StObject.set(x, "isImageCircle", js.Any.fromFunction0(value))
+      inline def setIsImageCircle(value: () => Boolean): Self = StObject.set(x, "isImageCircle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageLarge(value: () => Boolean): Self = StObject.set(x, "isImageLarge", js.Any.fromFunction0(value))
+      inline def setIsImageLarge(value: () => Boolean): Self = StObject.set(x, "isImageLarge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImagePortrait(value: () => Boolean): Self = StObject.set(x, "isImagePortrait", js.Any.fromFunction0(value))
+      inline def setIsImagePortrait(value: () => Boolean): Self = StObject.set(x, "isImagePortrait", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageRectangular(value: () => Boolean): Self = StObject.set(x, "isImageRectangular", js.Any.fromFunction0(value))
+      inline def setIsImageRectangular(value: () => Boolean): Self = StObject.set(x, "isImageRectangular", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageSmall(value: () => Boolean): Self = StObject.set(x, "isImageSmall", js.Any.fromFunction0(value))
+      inline def setIsImageSmall(value: () => Boolean): Self = StObject.set(x, "isImageSmall", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageTiny(value: () => Boolean): Self = StObject.set(x, "isImageTiny", js.Any.fromFunction0(value))
+      inline def setIsImageTiny(value: () => Boolean): Self = StObject.set(x, "isImageTiny", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtitleTextDriver(value: () => TextDriver): Self = StObject.set(x, "subtitleTextDriver", js.Any.fromFunction0(value))
+      inline def setSubtitleTextDriver(value: () => TextDriver): Self = StObject.set(x, "subtitleTextDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitleTextDriver(value: () => TextDriver): Self = StObject.set(x, "titleTextDriver", js.Any.fromFunction0(value))
+      inline def setTitleTextDriver(value: () => TextDriver): Self = StObject.set(x, "titleTextDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleType(value: () => String): Self = StObject.set(x, "toggleType", js.Any.fromFunction0(value))
+      inline def setToggleType(value: () => String): Self = StObject.set(x, "toggleType", js.Any.fromFunction0(value))
     }
   }
 }

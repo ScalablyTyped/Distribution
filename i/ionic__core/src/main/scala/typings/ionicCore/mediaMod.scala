@@ -14,8 +14,6 @@ object mediaMod {
   @js.native
   val SIZE_TO_MEDIA: js.Any = js.native
   
-  @scala.inline
-  def matchBreakpoint(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchBreakpoint")().asInstanceOf[Boolean]
-  @scala.inline
-  def matchBreakpoint(breakpoint: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchBreakpoint")(breakpoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def matchBreakpoint(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchBreakpoint")().asInstanceOf[Boolean]
+  inline def matchBreakpoint(breakpoint: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchBreakpoint")(breakpoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

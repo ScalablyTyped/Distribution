@@ -13,19 +13,15 @@ trait CreateServiceResponse extends StObject {
 }
 object CreateServiceResponse {
   
-  @scala.inline
-  def apply(): CreateServiceResponse = {
+  inline def apply(): CreateServiceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateServiceResponse]
   }
   
-  @scala.inline
-  implicit class CreateServiceResponseMutableBuilder[Self <: CreateServiceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateServiceResponse](x: Self) {
     
-    @scala.inline
-    def setService(value: Service): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+    inline def setService(value: Service): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
   }
 }

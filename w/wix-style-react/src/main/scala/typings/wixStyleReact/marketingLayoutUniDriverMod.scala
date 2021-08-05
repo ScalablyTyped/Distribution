@@ -17,8 +17,7 @@ object marketingLayoutUniDriverMod {
   }
   object MarketingLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object marketingLayoutUniDriverMod {
       __obj.asInstanceOf[MarketingLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class MarketingLayoutUniDriverMutableBuilder[Self <: MarketingLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MarketingLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetDescriptionText(value: () => js.Promise[String]): Self = StObject.set(x, "getDescriptionText", js.Any.fromFunction0(value))
+      inline def setGetDescriptionText(value: () => js.Promise[String]): Self = StObject.set(x, "getDescriptionText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
+      inline def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
     }
   }
 }

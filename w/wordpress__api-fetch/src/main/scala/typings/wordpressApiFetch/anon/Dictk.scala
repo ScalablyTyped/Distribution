@@ -13,16 +13,13 @@ trait Dictk
 }
 object Dictk {
   
-  @scala.inline
-  def apply(href: String): Dictk = {
+  inline def apply(href: String): Dictk = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictk]
   }
   
-  @scala.inline
-  implicit class DictkMutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
+  extension [Self <: Dictk](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }
 }

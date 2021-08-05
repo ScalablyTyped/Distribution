@@ -9,8 +9,7 @@ trait IPInformation
      with IIPInformation
 object IPInformation {
   
-  @scala.inline
-  def apply(networkAdapter: NetworkAdapter, prefixLength: Double): IPInformation = {
+  inline def apply(networkAdapter: NetworkAdapter, prefixLength: Double): IPInformation = {
     val __obj = js.Dynamic.literal(networkAdapter = networkAdapter.asInstanceOf[js.Any], prefixLength = prefixLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPInformation]
   }

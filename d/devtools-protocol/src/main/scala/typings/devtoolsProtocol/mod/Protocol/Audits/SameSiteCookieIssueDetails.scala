@@ -26,8 +26,7 @@ trait SameSiteCookieIssueDetails extends StObject {
 }
 object SameSiteCookieIssueDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cookie: AffectedCookie,
     cookieExclusionReasons: js.Array[SameSiteCookieExclusionReason],
     cookieWarningReasons: js.Array[SameSiteCookieWarningReason],
@@ -37,43 +36,30 @@ object SameSiteCookieIssueDetails {
     __obj.asInstanceOf[SameSiteCookieIssueDetails]
   }
   
-  @scala.inline
-  implicit class SameSiteCookieIssueDetailsMutableBuilder[Self <: SameSiteCookieIssueDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SameSiteCookieIssueDetails](x: Self) {
     
-    @scala.inline
-    def setCookie(value: AffectedCookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: AffectedCookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieExclusionReasons(value: js.Array[SameSiteCookieExclusionReason]): Self = StObject.set(x, "cookieExclusionReasons", value.asInstanceOf[js.Any])
+    inline def setCookieExclusionReasons(value: js.Array[SameSiteCookieExclusionReason]): Self = StObject.set(x, "cookieExclusionReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieExclusionReasonsVarargs(value: SameSiteCookieExclusionReason*): Self = StObject.set(x, "cookieExclusionReasons", js.Array(value :_*))
+    inline def setCookieExclusionReasonsVarargs(value: SameSiteCookieExclusionReason*): Self = StObject.set(x, "cookieExclusionReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setCookieUrl(value: String): Self = StObject.set(x, "cookieUrl", value.asInstanceOf[js.Any])
+    inline def setCookieUrl(value: String): Self = StObject.set(x, "cookieUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieUrlUndefined: Self = StObject.set(x, "cookieUrl", js.undefined)
+    inline def setCookieUrlUndefined: Self = StObject.set(x, "cookieUrl", js.undefined)
     
-    @scala.inline
-    def setCookieWarningReasons(value: js.Array[SameSiteCookieWarningReason]): Self = StObject.set(x, "cookieWarningReasons", value.asInstanceOf[js.Any])
+    inline def setCookieWarningReasons(value: js.Array[SameSiteCookieWarningReason]): Self = StObject.set(x, "cookieWarningReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieWarningReasonsVarargs(value: SameSiteCookieWarningReason*): Self = StObject.set(x, "cookieWarningReasons", js.Array(value :_*))
+    inline def setCookieWarningReasonsVarargs(value: SameSiteCookieWarningReason*): Self = StObject.set(x, "cookieWarningReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setOperation(value: SameSiteCookieOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SameSiteCookieOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AffectedRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AffectedRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setSiteForCookies(value: String): Self = StObject.set(x, "siteForCookies", value.asInstanceOf[js.Any])
+    inline def setSiteForCookies(value: String): Self = StObject.set(x, "siteForCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteForCookiesUndefined: Self = StObject.set(x, "siteForCookies", js.undefined)
+    inline def setSiteForCookiesUndefined: Self = StObject.set(x, "siteForCookies", js.undefined)
   }
 }

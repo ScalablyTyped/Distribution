@@ -25,8 +25,7 @@ trait SocialExceptionDetails
 }
 object SocialExceptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -42,22 +41,16 @@ object SocialExceptionDetails {
     __obj.asInstanceOf[SocialExceptionDetails]
   }
   
-  @scala.inline
-  implicit class SocialExceptionDetailsMutableBuilder[Self <: SocialExceptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SocialExceptionDetails](x: Self) {
     
-    @scala.inline
-    def setGet_internalErrorCode(value: () => Double): Self = StObject.set(x, "get_internalErrorCode", js.Any.fromFunction0(value))
+    inline def setGet_internalErrorCode(value: () => Double): Self = StObject.set(x, "get_internalErrorCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_internalMessage(value: () => String): Self = StObject.set(x, "get_internalMessage", js.Any.fromFunction0(value))
+    inline def setGet_internalMessage(value: () => String): Self = StObject.set(x, "get_internalMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_internalStackTrace(value: () => String): Self = StObject.set(x, "get_internalStackTrace", js.Any.fromFunction0(value))
+    inline def setGet_internalStackTrace(value: () => String): Self = StObject.set(x, "get_internalStackTrace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_internalTypeName(value: () => String): Self = StObject.set(x, "get_internalTypeName", js.Any.fromFunction0(value))
+    inline def setGet_internalTypeName(value: () => String): Self = StObject.set(x, "get_internalTypeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_status(value: () => SocialStatusCode): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
+    inline def setGet_status(value: () => SocialStatusCode): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
   }
 }

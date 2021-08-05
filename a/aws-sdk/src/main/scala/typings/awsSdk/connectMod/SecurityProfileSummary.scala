@@ -23,31 +23,23 @@ trait SecurityProfileSummary extends StObject {
 }
 object SecurityProfileSummary {
   
-  @scala.inline
-  def apply(): SecurityProfileSummary = {
+  inline def apply(): SecurityProfileSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityProfileSummary]
   }
   
-  @scala.inline
-  implicit class SecurityProfileSummaryMutableBuilder[Self <: SecurityProfileSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityProfileSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setId(value: SecurityProfileId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: SecurityProfileId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: SecurityProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SecurityProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

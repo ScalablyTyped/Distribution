@@ -11,20 +11,17 @@ object reactNativeAwesomeCardIoStrings {
   sealed trait AUTOMATIC
     extends StObject
        with CardIODetectionMode
-  @scala.inline
-  def AUTOMATIC: AUTOMATIC = "AUTOMATIC".asInstanceOf[AUTOMATIC]
+  inline def AUTOMATIC: AUTOMATIC = "AUTOMATIC".asInstanceOf[AUTOMATIC]
   
   @js.native
   sealed trait IMAGE
     extends StObject
        with CardIODetectionMode
-  @scala.inline
-  def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
+  inline def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
   
   @js.native
   sealed trait IMAGE_AND_NUMBER
     extends StObject
        with CardIODetectionMode
-  @scala.inline
-  def IMAGE_AND_NUMBER: IMAGE_AND_NUMBER = "IMAGE_AND_NUMBER".asInstanceOf[IMAGE_AND_NUMBER]
+  inline def IMAGE_AND_NUMBER: IMAGE_AND_NUMBER = "IMAGE_AND_NUMBER".asInstanceOf[IMAGE_AND_NUMBER]
 }

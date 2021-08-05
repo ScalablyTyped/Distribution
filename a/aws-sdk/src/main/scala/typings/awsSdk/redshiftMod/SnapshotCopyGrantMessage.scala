@@ -18,28 +18,21 @@ trait SnapshotCopyGrantMessage extends StObject {
 }
 object SnapshotCopyGrantMessage {
   
-  @scala.inline
-  def apply(): SnapshotCopyGrantMessage = {
+  inline def apply(): SnapshotCopyGrantMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotCopyGrantMessage]
   }
   
-  @scala.inline
-  implicit class SnapshotCopyGrantMessageMutableBuilder[Self <: SnapshotCopyGrantMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotCopyGrantMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSnapshotCopyGrants(value: SnapshotCopyGrantList): Self = StObject.set(x, "SnapshotCopyGrants", value.asInstanceOf[js.Any])
+    inline def setSnapshotCopyGrants(value: SnapshotCopyGrantList): Self = StObject.set(x, "SnapshotCopyGrants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotCopyGrantsUndefined: Self = StObject.set(x, "SnapshotCopyGrants", js.undefined)
+    inline def setSnapshotCopyGrantsUndefined: Self = StObject.set(x, "SnapshotCopyGrants", js.undefined)
     
-    @scala.inline
-    def setSnapshotCopyGrantsVarargs(value: SnapshotCopyGrant*): Self = StObject.set(x, "SnapshotCopyGrants", js.Array(value :_*))
+    inline def setSnapshotCopyGrantsVarargs(value: SnapshotCopyGrant*): Self = StObject.set(x, "SnapshotCopyGrants", js.Array(value :_*))
   }
 }

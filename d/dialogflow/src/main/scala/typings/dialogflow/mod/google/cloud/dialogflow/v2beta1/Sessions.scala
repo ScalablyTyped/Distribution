@@ -64,14 +64,10 @@ object Sessions {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @scala.inline
-  def create(rpcImpl: RPCImpl): Sessions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Sessions]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
+  inline def create(rpcImpl: RPCImpl): Sessions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Sessions]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Sessions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Sessions]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Sessions#detectIntent}.

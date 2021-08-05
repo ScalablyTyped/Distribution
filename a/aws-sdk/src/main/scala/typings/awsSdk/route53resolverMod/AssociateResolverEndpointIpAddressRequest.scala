@@ -18,19 +18,15 @@ trait AssociateResolverEndpointIpAddressRequest extends StObject {
 }
 object AssociateResolverEndpointIpAddressRequest {
   
-  @scala.inline
-  def apply(IpAddress: IpAddressUpdate, ResolverEndpointId: ResourceId): AssociateResolverEndpointIpAddressRequest = {
+  inline def apply(IpAddress: IpAddressUpdate, ResolverEndpointId: ResourceId): AssociateResolverEndpointIpAddressRequest = {
     val __obj = js.Dynamic.literal(IpAddress = IpAddress.asInstanceOf[js.Any], ResolverEndpointId = ResolverEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateResolverEndpointIpAddressRequest]
   }
   
-  @scala.inline
-  implicit class AssociateResolverEndpointIpAddressRequestMutableBuilder[Self <: AssociateResolverEndpointIpAddressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateResolverEndpointIpAddressRequest](x: Self) {
     
-    @scala.inline
-    def setIpAddress(value: IpAddressUpdate): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddressUpdate): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
+    inline def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
   }
 }

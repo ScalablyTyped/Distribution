@@ -18,28 +18,21 @@ trait SearchFlowExecutionsResponse extends StObject {
 }
 object SearchFlowExecutionsResponse {
   
-  @scala.inline
-  def apply(): SearchFlowExecutionsResponse = {
+  inline def apply(): SearchFlowExecutionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchFlowExecutionsResponse]
   }
   
-  @scala.inline
-  implicit class SearchFlowExecutionsResponseMutableBuilder[Self <: SearchFlowExecutionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFlowExecutionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSummaries(value: FlowExecutionSummaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
+    inline def setSummaries(value: FlowExecutionSummaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
+    inline def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
     
-    @scala.inline
-    def setSummariesVarargs(value: FlowExecutionSummary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: FlowExecutionSummary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
   }
 }

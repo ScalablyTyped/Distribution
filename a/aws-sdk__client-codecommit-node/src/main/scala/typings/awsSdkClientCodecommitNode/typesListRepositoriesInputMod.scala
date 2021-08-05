@@ -55,52 +55,38 @@ object typesListRepositoriesInputMod {
   }
   object ListRepositoriesInput {
     
-    @scala.inline
-    def apply(): ListRepositoriesInput = {
+    inline def apply(): ListRepositoriesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListRepositoriesInput]
     }
     
-    @scala.inline
-    implicit class ListRepositoriesInputMutableBuilder[Self <: ListRepositoriesInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListRepositoriesInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setOrder(value: ascending | descending | String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ascending | descending | String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setSortBy(value: repositoryName | lastModifiedDate | String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+      inline def setSortBy(value: repositoryName | lastModifiedDate | String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+      inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     }
   }
 }

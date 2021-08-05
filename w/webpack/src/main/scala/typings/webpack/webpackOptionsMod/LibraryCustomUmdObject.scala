@@ -23,34 +23,25 @@ trait LibraryCustomUmdObject extends StObject {
 }
 object LibraryCustomUmdObject {
   
-  @scala.inline
-  def apply(): LibraryCustomUmdObject = {
+  inline def apply(): LibraryCustomUmdObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LibraryCustomUmdObject]
   }
   
-  @scala.inline
-  implicit class LibraryCustomUmdObjectMutableBuilder[Self <: LibraryCustomUmdObject] (val x: Self) extends AnyVal {
+  extension [Self <: LibraryCustomUmdObject](x: Self) {
     
-    @scala.inline
-    def setAmd(value: String): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
+    inline def setAmd(value: String): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
+    inline def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
     
-    @scala.inline
-    def setCommonjs(value: String): Self = StObject.set(x, "commonjs", value.asInstanceOf[js.Any])
+    inline def setCommonjs(value: String): Self = StObject.set(x, "commonjs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonjsUndefined: Self = StObject.set(x, "commonjs", js.undefined)
+    inline def setCommonjsUndefined: Self = StObject.set(x, "commonjs", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String | ArrayOfStringValues): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String | ArrayOfStringValues): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value :_*))
+    inline def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value :_*))
   }
 }

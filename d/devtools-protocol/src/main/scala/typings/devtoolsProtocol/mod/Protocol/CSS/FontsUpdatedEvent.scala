@@ -13,19 +13,15 @@ trait FontsUpdatedEvent extends StObject {
 }
 object FontsUpdatedEvent {
   
-  @scala.inline
-  def apply(): FontsUpdatedEvent = {
+  inline def apply(): FontsUpdatedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontsUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class FontsUpdatedEventMutableBuilder[Self <: FontsUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FontsUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setFont(value: FontFace): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontFace): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
   }
 }

@@ -14,7 +14,7 @@ trait HTMLTaskPaneObject extends StObject {
   @JSName("HTMLWindow")
   val HTMLWindow_Original: IHTMLWindow2
   
-  @JSName("InfoPath.HTMLTaskPaneObject_typekey")
+  /* private */ @JSName("InfoPath.HTMLTaskPaneObject_typekey")
   var InfoPathDotHTMLTaskPaneObject_typekey: HTMLTaskPaneObject
   
   def Navigate(bstrURL: String): Unit
@@ -25,8 +25,7 @@ trait HTMLTaskPaneObject extends StObject {
 }
 object HTMLTaskPaneObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HTMLDocument: IHTMLDocument2,
     HTMLWindow: IHTMLWindow2,
     InfoPathDotHTMLTaskPaneObject_typekey: HTMLTaskPaneObject,
@@ -39,25 +38,18 @@ object HTMLTaskPaneObject {
     __obj.asInstanceOf[HTMLTaskPaneObject]
   }
   
-  @scala.inline
-  implicit class HTMLTaskPaneObjectMutableBuilder[Self <: HTMLTaskPaneObject] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLTaskPaneObject](x: Self) {
     
-    @scala.inline
-    def setHTMLDocument(value: IHTMLDocument2): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
+    inline def setHTMLDocument(value: IHTMLDocument2): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLWindow(value: IHTMLWindow2): Self = StObject.set(x, "HTMLWindow", value.asInstanceOf[js.Any])
+    inline def setHTMLWindow(value: IHTMLWindow2): Self = StObject.set(x, "HTMLWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotHTMLTaskPaneObject_typekey(value: HTMLTaskPaneObject): Self = StObject.set(x, "InfoPath.HTMLTaskPaneObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotHTMLTaskPaneObject_typekey(value: HTMLTaskPaneObject): Self = StObject.set(x, "InfoPath.HTMLTaskPaneObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigate(value: String => Unit): Self = StObject.set(x, "Navigate", js.Any.fromFunction1(value))
+    inline def setNavigate(value: String => Unit): Self = StObject.set(x, "Navigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: XdTaskPaneType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XdTaskPaneType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

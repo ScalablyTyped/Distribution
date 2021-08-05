@@ -17,7 +17,7 @@ object moduleWithProvidersCollectorMod {
   class Collector protected () extends StObject {
     def this(typeChecker: TypeChecker) = this()
     
-    var _visitNgModuleClass: js.Any = js.native
+    /* private */ var _visitNgModuleClass: js.Any = js.native
     
     var resolvedModules: js.Array[ResolvedNgModule] = js.native
     
@@ -25,7 +25,7 @@ object moduleWithProvidersCollectorMod {
     
     var typeChecker: TypeChecker = js.native
     
-    var visitClassDeclaration: js.Any = js.native
+    /* private */ var visitClassDeclaration: js.Any = js.native
     
     def visitNode(node: Node): Unit = js.native
   }
@@ -46,8 +46,7 @@ object moduleWithProvidersCollectorMod {
   }
   object ResolvedNgModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decorator: NgDecorator,
       name: String,
       node: ClassDeclaration,
@@ -57,23 +56,17 @@ object moduleWithProvidersCollectorMod {
       __obj.asInstanceOf[ResolvedNgModule]
     }
     
-    @scala.inline
-    implicit class ResolvedNgModuleMutableBuilder[Self <: ResolvedNgModule] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedNgModule](x: Self) {
       
-      @scala.inline
-      def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
+      inline def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticMethodsWithoutType(value: js.Array[MethodDeclaration]): Self = StObject.set(x, "staticMethodsWithoutType", value.asInstanceOf[js.Any])
+      inline def setStaticMethodsWithoutType(value: js.Array[MethodDeclaration]): Self = StObject.set(x, "staticMethodsWithoutType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticMethodsWithoutTypeVarargs(value: MethodDeclaration*): Self = StObject.set(x, "staticMethodsWithoutType", js.Array(value :_*))
+      inline def setStaticMethodsWithoutTypeVarargs(value: MethodDeclaration*): Self = StObject.set(x, "staticMethodsWithoutType", js.Array(value :_*))
     }
   }
 }

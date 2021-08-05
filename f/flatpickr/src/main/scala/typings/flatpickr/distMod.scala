@@ -14,6 +14,5 @@ object distMod {
   @JSImport("flatpickr/dist", JSImport.Default)
   @js.native
   def default: FlatpickrFn = js.native
-  @scala.inline
-  def default_=(x: FlatpickrFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: FlatpickrFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

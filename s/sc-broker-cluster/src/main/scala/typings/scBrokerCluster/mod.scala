@@ -309,26 +309,20 @@ object mod {
   }
   object BrokerExitInfo {
     
-    @scala.inline
-    def apply(code: Double, id: Double, pid: Double, signal: String): BrokerExitInfo = {
+    inline def apply(code: Double, id: Double, pid: Double, signal: String): BrokerExitInfo = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrokerExitInfo]
     }
     
-    @scala.inline
-    implicit class BrokerExitInfoMutableBuilder[Self <: BrokerExitInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerExitInfo](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -349,23 +343,18 @@ object mod {
   }
   object BrokerStartInfo {
     
-    @scala.inline
-    def apply(id: Double, pid: Double, respawn: Boolean): BrokerStartInfo = {
+    inline def apply(id: Double, pid: Double, respawn: Boolean): BrokerStartInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], respawn = respawn.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrokerStartInfo]
     }
     
-    @scala.inline
-    implicit class BrokerStartInfoMutableBuilder[Self <: BrokerStartInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerStartInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
+      inline def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -377,20 +366,16 @@ object mod {
   }
   object MessagePacket {
     
-    @scala.inline
-    def apply(channel: String, data: js.Any): MessagePacket = {
+    inline def apply(channel: String, data: js.Any): MessagePacket = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessagePacket]
     }
     
-    @scala.inline
-    implicit class MessagePacketMutableBuilder[Self <: MessagePacket] (val x: Self) extends AnyVal {
+    extension [Self <: MessagePacket](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -406,35 +391,26 @@ object mod {
   }
   object SCBrokerClusterClientOptions {
     
-    @scala.inline
-    def apply(brokers: js.Array[String], connectRetryErrorThreshold: Double): SCBrokerClusterClientOptions = {
+    inline def apply(brokers: js.Array[String], connectRetryErrorThreshold: Double): SCBrokerClusterClientOptions = {
       val __obj = js.Dynamic.literal(brokers = brokers.asInstanceOf[js.Any], connectRetryErrorThreshold = connectRetryErrorThreshold.asInstanceOf[js.Any])
       __obj.asInstanceOf[SCBrokerClusterClientOptions]
     }
     
-    @scala.inline
-    implicit class SCBrokerClusterClientOptionsMutableBuilder[Self <: SCBrokerClusterClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SCBrokerClusterClientOptions](x: Self) {
       
-      @scala.inline
-      def setBrokers(value: js.Array[String]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
+      inline def setBrokers(value: js.Array[String]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokersVarargs(value: String*): Self = StObject.set(x, "brokers", js.Array(value :_*))
+      inline def setBrokersVarargs(value: String*): Self = StObject.set(x, "brokers", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectRetryErrorThreshold(value: Double): Self = StObject.set(x, "connectRetryErrorThreshold", value.asInstanceOf[js.Any])
+      inline def setConnectRetryErrorThreshold(value: Double): Self = StObject.set(x, "connectRetryErrorThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubSubBatchDuration(value: Double): Self = StObject.set(x, "pubSubBatchDuration", value.asInstanceOf[js.Any])
+      inline def setPubSubBatchDuration(value: Double): Self = StObject.set(x, "pubSubBatchDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubSubBatchDurationUndefined: Self = StObject.set(x, "pubSubBatchDuration", js.undefined)
+      inline def setPubSubBatchDurationUndefined: Self = StObject.set(x, "pubSubBatchDuration", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
     }
   }
   
@@ -466,79 +442,56 @@ object mod {
   }
   object SCBrokerClusterServerOptions {
     
-    @scala.inline
-    def apply(brokers: js.Array[String], downgradeToUser: Double | String): SCBrokerClusterServerOptions = {
+    inline def apply(brokers: js.Array[String], downgradeToUser: Double | String): SCBrokerClusterServerOptions = {
       val __obj = js.Dynamic.literal(brokers = brokers.asInstanceOf[js.Any], downgradeToUser = downgradeToUser.asInstanceOf[js.Any])
       __obj.asInstanceOf[SCBrokerClusterServerOptions]
     }
     
-    @scala.inline
-    implicit class SCBrokerClusterServerOptionsMutableBuilder[Self <: SCBrokerClusterServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SCBrokerClusterServerOptions](x: Self) {
       
-      @scala.inline
-      def setAppBrokerControllerPath(value: String): Self = StObject.set(x, "appBrokerControllerPath", value.asInstanceOf[js.Any])
+      inline def setAppBrokerControllerPath(value: String): Self = StObject.set(x, "appBrokerControllerPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppBrokerControllerPathUndefined: Self = StObject.set(x, "appBrokerControllerPath", js.undefined)
+      inline def setAppBrokerControllerPathUndefined: Self = StObject.set(x, "appBrokerControllerPath", js.undefined)
       
-      @scala.inline
-      def setBrokerOptions(
+      inline def setBrokerOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AGServerOptions */ js.Any
       ): Self = StObject.set(x, "brokerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerOptionsUndefined: Self = StObject.set(x, "brokerOptions", js.undefined)
+      inline def setBrokerOptionsUndefined: Self = StObject.set(x, "brokerOptions", js.undefined)
       
-      @scala.inline
-      def setBrokers(value: js.Array[String]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
+      inline def setBrokers(value: js.Array[String]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokersVarargs(value: String*): Self = StObject.set(x, "brokers", js.Array(value :_*))
+      inline def setBrokersVarargs(value: String*): Self = StObject.set(x, "brokers", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDowngradeToUser(value: Double | String): Self = StObject.set(x, "downgradeToUser", value.asInstanceOf[js.Any])
+      inline def setDowngradeToUser(value: Double | String): Self = StObject.set(x, "downgradeToUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryAccuracy(value: Double): Self = StObject.set(x, "expiryAccuracy", value.asInstanceOf[js.Any])
+      inline def setExpiryAccuracy(value: Double): Self = StObject.set(x, "expiryAccuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryAccuracyUndefined: Self = StObject.set(x, "expiryAccuracy", js.undefined)
+      inline def setExpiryAccuracyUndefined: Self = StObject.set(x, "expiryAccuracy", js.undefined)
       
-      @scala.inline
-      def setInspect(value: Boolean): Self = StObject.set(x, "inspect", value.asInstanceOf[js.Any])
+      inline def setInspect(value: Boolean): Self = StObject.set(x, "inspect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
+      inline def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIpcAckTimeout(value: Double): Self = StObject.set(x, "ipcAckTimeout", value.asInstanceOf[js.Any])
+      inline def setIpcAckTimeout(value: Double): Self = StObject.set(x, "ipcAckTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcAckTimeoutUndefined: Self = StObject.set(x, "ipcAckTimeout", js.undefined)
+      inline def setIpcAckTimeoutUndefined: Self = StObject.set(x, "ipcAckTimeout", js.undefined)
       
-      @scala.inline
-      def setProcessTermTimeout(value: Double): Self = StObject.set(x, "processTermTimeout", value.asInstanceOf[js.Any])
+      inline def setProcessTermTimeout(value: Double): Self = StObject.set(x, "processTermTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessTermTimeoutUndefined: Self = StObject.set(x, "processTermTimeout", js.undefined)
+      inline def setProcessTermTimeoutUndefined: Self = StObject.set(x, "processTermTimeout", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
     }
   }
   
@@ -548,19 +501,16 @@ object mod {
   }
   object SCServer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       codec: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecEngine */ js.Any
     ): SCServer = {
       val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any])
       __obj.asInstanceOf[SCServer]
     }
     
-    @scala.inline
-    implicit class SCServerMutableBuilder[Self <: SCServer] (val x: Self) extends AnyVal {
+    extension [Self <: SCServer](x: Self) {
       
-      @scala.inline
-      def setCodec(
+      inline def setCodec(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecEngine */ js.Any
       ): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     }
@@ -574,20 +524,16 @@ object mod {
   }
   object ServerSocket {
     
-    @scala.inline
-    def apply(emit: (String, /* repeated */ js.Any) => Unit, id: String): ServerSocket = {
+    inline def apply(emit: (String, /* repeated */ js.Any) => Unit, id: String): ServerSocket = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerSocket]
     }
     
-    @scala.inline
-    implicit class ServerSocketMutableBuilder[Self <: ServerSocket] (val x: Self) extends AnyVal {
+    extension [Self <: ServerSocket](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

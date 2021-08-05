@@ -18,8 +18,7 @@ trait XUIElementFactoryManager
      with XUIElementFactoryRegistration
 object XUIElementFactoryManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RegisteredFactories: SafeArray[SafeArray[PropertyValue]],
     acquire: () => Unit,
     createUIElement: (String, SeqEquiv[PropertyValue]) => XUIElement,

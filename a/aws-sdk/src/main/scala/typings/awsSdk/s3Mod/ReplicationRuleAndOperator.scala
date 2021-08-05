@@ -18,28 +18,21 @@ trait ReplicationRuleAndOperator extends StObject {
 }
 object ReplicationRuleAndOperator {
   
-  @scala.inline
-  def apply(): ReplicationRuleAndOperator = {
+  inline def apply(): ReplicationRuleAndOperator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationRuleAndOperator]
   }
   
-  @scala.inline
-  implicit class ReplicationRuleAndOperatorMutableBuilder[Self <: ReplicationRuleAndOperator] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationRuleAndOperator](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagSet): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagSet): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

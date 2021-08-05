@@ -10,6 +10,5 @@ object useKeyboardDetectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useKeyboardDetection(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardDetection")().asInstanceOf[Boolean]
+  inline def useKeyboardDetection(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardDetection")().asInstanceOf[Boolean]
 }

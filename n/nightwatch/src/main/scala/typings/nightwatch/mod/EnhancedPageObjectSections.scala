@@ -10,8 +10,7 @@ trait EnhancedPageObjectSections
      with /* name */ StringDictionary[EnhancedSectionInstance[js.Any, js.Any, js.Any]]
 object EnhancedPageObjectSections {
   
-  @scala.inline
-  def apply(): EnhancedPageObjectSections = {
+  inline def apply(): EnhancedPageObjectSections = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnhancedPageObjectSections]
   }

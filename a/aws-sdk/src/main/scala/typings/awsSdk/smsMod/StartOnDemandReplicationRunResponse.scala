@@ -13,19 +13,15 @@ trait StartOnDemandReplicationRunResponse extends StObject {
 }
 object StartOnDemandReplicationRunResponse {
   
-  @scala.inline
-  def apply(): StartOnDemandReplicationRunResponse = {
+  inline def apply(): StartOnDemandReplicationRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartOnDemandReplicationRunResponse]
   }
   
-  @scala.inline
-  implicit class StartOnDemandReplicationRunResponseMutableBuilder[Self <: StartOnDemandReplicationRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartOnDemandReplicationRunResponse](x: Self) {
     
-    @scala.inline
-    def setReplicationRunId(value: ReplicationRunId): Self = StObject.set(x, "replicationRunId", value.asInstanceOf[js.Any])
+    inline def setReplicationRunId(value: ReplicationRunId): Self = StObject.set(x, "replicationRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationRunIdUndefined: Self = StObject.set(x, "replicationRunId", js.undefined)
+    inline def setReplicationRunIdUndefined: Self = StObject.set(x, "replicationRunId", js.undefined)
   }
 }

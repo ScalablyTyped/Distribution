@@ -23,25 +23,19 @@ trait PortMapping extends StObject {
 }
 object PortMapping {
   
-  @scala.inline
-  def apply(applicationPort: NonSystemPort, jobPort: Port): PortMapping = {
+  inline def apply(applicationPort: NonSystemPort, jobPort: Port): PortMapping = {
     val __obj = js.Dynamic.literal(applicationPort = applicationPort.asInstanceOf[js.Any], jobPort = jobPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortMapping]
   }
   
-  @scala.inline
-  implicit class PortMappingMutableBuilder[Self <: PortMapping] (val x: Self) extends AnyVal {
+  extension [Self <: PortMapping](x: Self) {
     
-    @scala.inline
-    def setApplicationPort(value: NonSystemPort): Self = StObject.set(x, "applicationPort", value.asInstanceOf[js.Any])
+    inline def setApplicationPort(value: NonSystemPort): Self = StObject.set(x, "applicationPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableOnPublicIp(value: Boolean): Self = StObject.set(x, "enableOnPublicIp", value.asInstanceOf[js.Any])
+    inline def setEnableOnPublicIp(value: Boolean): Self = StObject.set(x, "enableOnPublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableOnPublicIpUndefined: Self = StObject.set(x, "enableOnPublicIp", js.undefined)
+    inline def setEnableOnPublicIpUndefined: Self = StObject.set(x, "enableOnPublicIp", js.undefined)
     
-    @scala.inline
-    def setJobPort(value: Port): Self = StObject.set(x, "jobPort", value.asInstanceOf[js.Any])
+    inline def setJobPort(value: Port): Self = StObject.set(x, "jobPort", value.asInstanceOf[js.Any])
   }
 }

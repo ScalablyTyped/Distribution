@@ -23,34 +23,25 @@ trait AddInstanceGroupsOutput extends StObject {
 }
 object AddInstanceGroupsOutput {
   
-  @scala.inline
-  def apply(): AddInstanceGroupsOutput = {
+  inline def apply(): AddInstanceGroupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddInstanceGroupsOutput]
   }
   
-  @scala.inline
-  implicit class AddInstanceGroupsOutputMutableBuilder[Self <: AddInstanceGroupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AddInstanceGroupsOutput](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
+    inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupIds(value: InstanceGroupIdsList): Self = StObject.set(x, "InstanceGroupIds", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupIds(value: InstanceGroupIdsList): Self = StObject.set(x, "InstanceGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupIdsUndefined: Self = StObject.set(x, "InstanceGroupIds", js.undefined)
+    inline def setInstanceGroupIdsUndefined: Self = StObject.set(x, "InstanceGroupIds", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "InstanceGroupIds", js.Array(value :_*))
+    inline def setInstanceGroupIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "InstanceGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
+    inline def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFlowIdUndefined: Self = StObject.set(x, "JobFlowId", js.undefined)
+    inline def setJobFlowIdUndefined: Self = StObject.set(x, "JobFlowId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait IsVpcPeeredResult extends StObject {
 }
 object IsVpcPeeredResult {
   
-  @scala.inline
-  def apply(): IsVpcPeeredResult = {
+  inline def apply(): IsVpcPeeredResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsVpcPeeredResult]
   }
   
-  @scala.inline
-  implicit class IsVpcPeeredResultMutableBuilder[Self <: IsVpcPeeredResult] (val x: Self) extends AnyVal {
+  extension [Self <: IsVpcPeeredResult](x: Self) {
     
-    @scala.inline
-    def setIsPeered(value: Boolean): Self = StObject.set(x, "isPeered", value.asInstanceOf[js.Any])
+    inline def setIsPeered(value: Boolean): Self = StObject.set(x, "isPeered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPeeredUndefined: Self = StObject.set(x, "isPeered", js.undefined)
+    inline def setIsPeeredUndefined: Self = StObject.set(x, "isPeered", js.undefined)
   }
 }

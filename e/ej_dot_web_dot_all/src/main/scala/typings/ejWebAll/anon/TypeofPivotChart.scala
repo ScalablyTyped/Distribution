@@ -15,19 +15,15 @@ trait TypeofPivotChart extends StObject {
 }
 object TypeofPivotChart {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: PivotChart): TypeofPivotChart = {
+  inline def apply(Locale: js.Any, fn: PivotChart): TypeofPivotChart = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotChart]
   }
   
-  @scala.inline
-  implicit class TypeofPivotChartMutableBuilder[Self <: TypeofPivotChart] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPivotChart](x: Self) {
     
-    @scala.inline
-    def setFn(value: PivotChart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PivotChart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

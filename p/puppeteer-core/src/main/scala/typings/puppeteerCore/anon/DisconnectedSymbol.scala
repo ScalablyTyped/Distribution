@@ -10,16 +10,13 @@ trait DisconnectedSymbol extends StObject {
 }
 object DisconnectedSymbol {
   
-  @scala.inline
-  def apply(Disconnected: js.Symbol): DisconnectedSymbol = {
+  inline def apply(Disconnected: js.Symbol): DisconnectedSymbol = {
     val __obj = js.Dynamic.literal(Disconnected = Disconnected.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisconnectedSymbol]
   }
   
-  @scala.inline
-  implicit class DisconnectedSymbolMutableBuilder[Self <: DisconnectedSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: DisconnectedSymbol](x: Self) {
     
-    @scala.inline
-    def setDisconnected(value: js.Symbol): Self = StObject.set(x, "Disconnected", value.asInstanceOf[js.Any])
+    inline def setDisconnected(value: js.Symbol): Self = StObject.set(x, "Disconnected", value.asInstanceOf[js.Any])
   }
 }

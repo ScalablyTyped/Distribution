@@ -18,28 +18,21 @@ trait OneDriveUsers extends StObject {
 }
 object OneDriveUsers {
   
-  @scala.inline
-  def apply(): OneDriveUsers = {
+  inline def apply(): OneDriveUsers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OneDriveUsers]
   }
   
-  @scala.inline
-  implicit class OneDriveUsersMutableBuilder[Self <: OneDriveUsers] (val x: Self) extends AnyVal {
+  extension [Self <: OneDriveUsers](x: Self) {
     
-    @scala.inline
-    def setOneDriveUserList(value: OneDriveUserList): Self = StObject.set(x, "OneDriveUserList", value.asInstanceOf[js.Any])
+    inline def setOneDriveUserList(value: OneDriveUserList): Self = StObject.set(x, "OneDriveUserList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneDriveUserListUndefined: Self = StObject.set(x, "OneDriveUserList", js.undefined)
+    inline def setOneDriveUserListUndefined: Self = StObject.set(x, "OneDriveUserList", js.undefined)
     
-    @scala.inline
-    def setOneDriveUserListVarargs(value: OneDriveUser*): Self = StObject.set(x, "OneDriveUserList", js.Array(value :_*))
+    inline def setOneDriveUserListVarargs(value: OneDriveUser*): Self = StObject.set(x, "OneDriveUserList", js.Array(value :_*))
     
-    @scala.inline
-    def setOneDriveUserS3Path(value: S3Path): Self = StObject.set(x, "OneDriveUserS3Path", value.asInstanceOf[js.Any])
+    inline def setOneDriveUserS3Path(value: S3Path): Self = StObject.set(x, "OneDriveUserS3Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneDriveUserS3PathUndefined: Self = StObject.set(x, "OneDriveUserS3Path", js.undefined)
+    inline def setOneDriveUserS3PathUndefined: Self = StObject.set(x, "OneDriveUserS3Path", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ trait IGeolocation
      with IAbstract
 object IGeolocation {
   
-  @scala.inline
-  def apply(): IGeolocation = {
+  inline def apply(): IGeolocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeolocation]
   }

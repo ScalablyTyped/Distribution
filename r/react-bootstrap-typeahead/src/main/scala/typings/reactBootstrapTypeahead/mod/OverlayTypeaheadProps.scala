@@ -21,49 +21,35 @@ trait OverlayTypeaheadProps extends StObject {
 }
 object OverlayTypeaheadProps {
   
-  @scala.inline
-  def apply(): OverlayTypeaheadProps = {
+  inline def apply(): OverlayTypeaheadProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverlayTypeaheadProps]
   }
   
-  @scala.inline
-  implicit class OverlayTypeaheadPropsMutableBuilder[Self <: OverlayTypeaheadProps] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayTypeaheadProps](x: Self) {
     
-    @scala.inline
-    def setAlign(value: TypeaheadAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: TypeaheadAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setDropup(value: Boolean): Self = StObject.set(x, "dropup", value.asInstanceOf[js.Any])
+    inline def setDropup(value: Boolean): Self = StObject.set(x, "dropup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropupUndefined: Self = StObject.set(x, "dropup", js.undefined)
+    inline def setDropupUndefined: Self = StObject.set(x, "dropup", js.undefined)
     
-    @scala.inline
-    def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+    inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
     
-    @scala.inline
-    def setOnMenuHide(value: () => Unit): Self = StObject.set(x, "onMenuHide", js.Any.fromFunction0(value))
+    inline def setOnMenuHide(value: () => Unit): Self = StObject.set(x, "onMenuHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMenuHideUndefined: Self = StObject.set(x, "onMenuHide", js.undefined)
+    inline def setOnMenuHideUndefined: Self = StObject.set(x, "onMenuHide", js.undefined)
     
-    @scala.inline
-    def setOnMenuShow(value: () => Unit): Self = StObject.set(x, "onMenuShow", js.Any.fromFunction0(value))
+    inline def setOnMenuShow(value: () => Unit): Self = StObject.set(x, "onMenuShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMenuShowUndefined: Self = StObject.set(x, "onMenuShow", js.undefined)
+    inline def setOnMenuShowUndefined: Self = StObject.set(x, "onMenuShow", js.undefined)
     
-    @scala.inline
-    def setOnMenuToggle(value: /* show */ Boolean => Unit): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
+    inline def setOnMenuToggle(value: /* show */ Boolean => Unit): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMenuToggleUndefined: Self = StObject.set(x, "onMenuToggle", js.undefined)
+    inline def setOnMenuToggleUndefined: Self = StObject.set(x, "onMenuToggle", js.undefined)
   }
 }

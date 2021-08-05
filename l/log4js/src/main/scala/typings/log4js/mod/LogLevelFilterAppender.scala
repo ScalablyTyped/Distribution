@@ -22,29 +22,22 @@ trait LogLevelFilterAppender
 }
 object LogLevelFilterAppender {
   
-  @scala.inline
-  def apply(appender: String, level: String): LogLevelFilterAppender = {
+  inline def apply(appender: String, level: String): LogLevelFilterAppender = {
     val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("logLevelFilter")
     __obj.asInstanceOf[LogLevelFilterAppender]
   }
   
-  @scala.inline
-  implicit class LogLevelFilterAppenderMutableBuilder[Self <: LogLevelFilterAppender] (val x: Self) extends AnyVal {
+  extension [Self <: LogLevelFilterAppender](x: Self) {
     
-    @scala.inline
-    def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
+    inline def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLevel(value: String): Self = StObject.set(x, "maxLevel", value.asInstanceOf[js.Any])
+    inline def setMaxLevel(value: String): Self = StObject.set(x, "maxLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLevelUndefined: Self = StObject.set(x, "maxLevel", js.undefined)
+    inline def setMaxLevelUndefined: Self = StObject.set(x, "maxLevel", js.undefined)
     
-    @scala.inline
-    def setType(value: logLevelFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: logLevelFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

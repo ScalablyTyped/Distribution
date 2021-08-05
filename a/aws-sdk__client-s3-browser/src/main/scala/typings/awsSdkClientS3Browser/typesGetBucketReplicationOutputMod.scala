@@ -22,20 +22,16 @@ object typesGetBucketReplicationOutputMod {
   }
   object GetBucketReplicationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketReplicationOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketReplicationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketReplicationOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketReplicationOutputMutableBuilder[Self <: GetBucketReplicationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketReplicationOutput](x: Self) {
       
-      @scala.inline
-      def setReplicationConfiguration(value: UnmarshalledReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
+      inline def setReplicationConfiguration(value: UnmarshalledReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationConfigurationUndefined: Self = StObject.set(x, "ReplicationConfiguration", js.undefined)
+      inline def setReplicationConfigurationUndefined: Self = StObject.set(x, "ReplicationConfiguration", js.undefined)
     }
   }
 }

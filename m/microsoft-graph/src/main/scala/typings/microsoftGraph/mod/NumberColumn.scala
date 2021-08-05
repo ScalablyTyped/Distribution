@@ -20,49 +20,35 @@ trait NumberColumn extends StObject {
 }
 object NumberColumn {
   
-  @scala.inline
-  def apply(): NumberColumn = {
+  inline def apply(): NumberColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumberColumn]
   }
   
-  @scala.inline
-  implicit class NumberColumnMutableBuilder[Self <: NumberColumn] (val x: Self) extends AnyVal {
+  extension [Self <: NumberColumn](x: Self) {
     
-    @scala.inline
-    def setDecimalPlaces(value: NullableOption[String]): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
+    inline def setDecimalPlaces(value: NullableOption[String]): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalPlacesNull: Self = StObject.set(x, "decimalPlaces", null)
+    inline def setDecimalPlacesNull: Self = StObject.set(x, "decimalPlaces", null)
     
-    @scala.inline
-    def setDecimalPlacesUndefined: Self = StObject.set(x, "decimalPlaces", js.undefined)
+    inline def setDecimalPlacesUndefined: Self = StObject.set(x, "decimalPlaces", js.undefined)
     
-    @scala.inline
-    def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
+    inline def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
+    inline def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
     
-    @scala.inline
-    def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
+    inline def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: NullableOption[Double]): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: NullableOption[Double]): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumNull: Self = StObject.set(x, "maximum", null)
+    inline def setMaximumNull: Self = StObject.set(x, "maximum", null)
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: NullableOption[Double]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: NullableOption[Double]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumNull: Self = StObject.set(x, "minimum", null)
+    inline def setMinimumNull: Self = StObject.set(x, "minimum", null)
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
   }
 }

@@ -10,8 +10,6 @@ object getTreeItemIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTreeItemId(treeId: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeItemId")(treeId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getTreeItemId(treeId: String, index: Double, parentIndexes: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeItemId")(treeId.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parentIndexes.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getTreeItemId(treeId: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeItemId")(treeId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getTreeItemId(treeId: String, index: Double, parentIndexes: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeItemId")(treeId.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parentIndexes.asInstanceOf[js.Any])).asInstanceOf[String]
 }

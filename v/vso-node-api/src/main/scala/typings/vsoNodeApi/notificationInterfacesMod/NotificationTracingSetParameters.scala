@@ -10,16 +10,13 @@ trait NotificationTracingSetParameters extends StObject {
 }
 object NotificationTracingSetParameters {
   
-  @scala.inline
-  def apply(enabled: Boolean): NotificationTracingSetParameters = {
+  inline def apply(enabled: Boolean): NotificationTracingSetParameters = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationTracingSetParameters]
   }
   
-  @scala.inline
-  implicit class NotificationTracingSetParametersMutableBuilder[Self <: NotificationTracingSetParameters] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationTracingSetParameters](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

@@ -20,25 +20,19 @@ trait ActionsGetWorkflowRequestOptions extends StObject {
 }
 object ActionsGetWorkflowRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsGetWorkflowRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsGetWorkflowRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/actions/workflows/:workflow_id")
     __obj.asInstanceOf[ActionsGetWorkflowRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActionsGetWorkflowRequestOptionsMutableBuilder[Self <: ActionsGetWorkflowRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsGetWorkflowRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

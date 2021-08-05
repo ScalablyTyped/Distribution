@@ -586,8 +586,7 @@ object stateManagerMod {
   }
   object StateManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _cache: typings.ethereumjsVm.cacheMod.default,
       _checkpointCount: Double,
       _clearOriginalStorageCache: () => Unit,
@@ -626,110 +625,75 @@ object stateManagerMod {
       __obj.asInstanceOf[StateManager]
     }
     
-    @scala.inline
-    implicit class StateManagerMutableBuilder[Self <: StateManager] (val x: Self) extends AnyVal {
+    extension [Self <: StateManager](x: Self) {
       
-      @scala.inline
-      def setAccountIsEmpty(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "accountIsEmpty", js.Any.fromFunction2(value))
+      inline def setAccountIsEmpty(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "accountIsEmpty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCheckpoint(value: js.Any => Unit): Self = StObject.set(x, "checkpoint", js.Any.fromFunction1(value))
+      inline def setCheckpoint(value: js.Any => Unit): Self = StObject.set(x, "checkpoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCleanupTouchedAccounts(value: js.Any => Unit): Self = StObject.set(x, "cleanupTouchedAccounts", js.Any.fromFunction1(value))
+      inline def setCleanupTouchedAccounts(value: js.Any => Unit): Self = StObject.set(x, "cleanupTouchedAccounts", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearContractStorage(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "clearContractStorage", js.Any.fromFunction2(value))
+      inline def setClearContractStorage(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "clearContractStorage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCommit(value: js.Any => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
+      inline def setCommit(value: js.Any => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopy(value: () => StateManager): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+      inline def setCopy(value: () => StateManager): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDumpStorage(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "dumpStorage", js.Any.fromFunction2(value))
+      inline def setDumpStorage(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "dumpStorage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateCanonicalGenesis(value: js.Any => Unit): Self = StObject.set(x, "generateCanonicalGenesis", js.Any.fromFunction1(value))
+      inline def setGenerateCanonicalGenesis(value: js.Any => Unit): Self = StObject.set(x, "generateCanonicalGenesis", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenerateGenesis(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "generateGenesis", js.Any.fromFunction2(value))
+      inline def setGenerateGenesis(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "generateGenesis", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAccount(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "getAccount", js.Any.fromFunction2(value))
+      inline def setGetAccount(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "getAccount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetContractCode(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "getContractCode", js.Any.fromFunction2(value))
+      inline def setGetContractCode(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "getContractCode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetContractStorage(value: (Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "getContractStorage", js.Any.fromFunction3(value))
+      inline def setGetContractStorage(value: (Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "getContractStorage", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetOriginalContractStorage(value: (Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "getOriginalContractStorage", js.Any.fromFunction3(value))
+      inline def setGetOriginalContractStorage(value: (Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "getOriginalContractStorage", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetStateRoot(value: js.Any => Unit): Self = StObject.set(x, "getStateRoot", js.Any.fromFunction1(value))
+      inline def setGetStateRoot(value: js.Any => Unit): Self = StObject.set(x, "getStateRoot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasGenesisState(value: js.Any => Unit): Self = StObject.set(x, "hasGenesisState", js.Any.fromFunction1(value))
+      inline def setHasGenesisState(value: js.Any => Unit): Self = StObject.set(x, "hasGenesisState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPutAccount(value: (Buffer, typings.ethereumjsAccount.mod.default, js.Any) => Unit): Self = StObject.set(x, "putAccount", js.Any.fromFunction3(value))
+      inline def setPutAccount(value: (Buffer, typings.ethereumjsAccount.mod.default, js.Any) => Unit): Self = StObject.set(x, "putAccount", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPutContractCode(value: (Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "putContractCode", js.Any.fromFunction3(value))
+      inline def setPutContractCode(value: (Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "putContractCode", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPutContractStorage(value: (Buffer, Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "putContractStorage", js.Any.fromFunction4(value))
+      inline def setPutContractStorage(value: (Buffer, Buffer, Buffer, js.Any) => Unit): Self = StObject.set(x, "putContractStorage", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRevert(value: js.Any => Unit): Self = StObject.set(x, "revert", js.Any.fromFunction1(value))
+      inline def setRevert(value: js.Any => Unit): Self = StObject.set(x, "revert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStateRoot(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "setStateRoot", js.Any.fromFunction2(value))
+      inline def setSetStateRoot(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "setStateRoot", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchAccount(value: Buffer => Unit): Self = StObject.set(x, "touchAccount", js.Any.fromFunction1(value))
+      inline def setTouchAccount(value: Buffer => Unit): Self = StObject.set(x, "touchAccount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_cache(value: typings.ethereumjsVm.cacheMod.default): Self = StObject.set(x, "_cache", value.asInstanceOf[js.Any])
+      inline def set_cache(value: typings.ethereumjsVm.cacheMod.default): Self = StObject.set(x, "_cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_checkpointCount(value: Double): Self = StObject.set(x, "_checkpointCount", value.asInstanceOf[js.Any])
+      inline def set_checkpointCount(value: Double): Self = StObject.set(x, "_checkpointCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_clearOriginalStorageCache(value: () => Unit): Self = StObject.set(x, "_clearOriginalStorageCache", js.Any.fromFunction0(value))
+      inline def set_clearOriginalStorageCache(value: () => Unit): Self = StObject.set(x, "_clearOriginalStorageCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
+      inline def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getStorageTrie(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "_getStorageTrie", js.Any.fromFunction2(value))
+      inline def set_getStorageTrie(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "_getStorageTrie", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_lookupStorageTrie(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "_lookupStorageTrie", js.Any.fromFunction2(value))
+      inline def set_lookupStorageTrie(value: (Buffer, js.Any) => Unit): Self = StObject.set(x, "_lookupStorageTrie", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_modifyContractStorage(value: (Buffer, js.Any, js.Any) => Unit): Self = StObject.set(x, "_modifyContractStorage", js.Any.fromFunction3(value))
+      inline def set_modifyContractStorage(value: (Buffer, js.Any, js.Any) => Unit): Self = StObject.set(x, "_modifyContractStorage", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_originalStorageCache(value: Map[String, Map[String, Buffer]]): Self = StObject.set(x, "_originalStorageCache", value.asInstanceOf[js.Any])
+      inline def set_originalStorageCache(value: Map[String, Map[String, Buffer]]): Self = StObject.set(x, "_originalStorageCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_storageTries(value: js.Any): Self = StObject.set(x, "_storageTries", value.asInstanceOf[js.Any])
+      inline def set_storageTries(value: js.Any): Self = StObject.set(x, "_storageTries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_touched(value: Set[String]): Self = StObject.set(x, "_touched", value.asInstanceOf[js.Any])
+      inline def set_touched(value: Set[String]): Self = StObject.set(x, "_touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_touchedStack(value: js.Array[Set[String]]): Self = StObject.set(x, "_touchedStack", value.asInstanceOf[js.Any])
+      inline def set_touchedStack(value: js.Array[Set[String]]): Self = StObject.set(x, "_touchedStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_touchedStackVarargs(value: Set[String]*): Self = StObject.set(x, "_touchedStack", js.Array(value :_*))
+      inline def set_touchedStackVarargs(value: Set[String]*): Self = StObject.set(x, "_touchedStack", js.Array(value :_*))
       
-      @scala.inline
-      def set_trie(value: js.Any): Self = StObject.set(x, "_trie", value.asInstanceOf[js.Any])
+      inline def set_trie(value: js.Any): Self = StObject.set(x, "_trie", value.asInstanceOf[js.Any])
     }
   }
   
@@ -747,26 +711,20 @@ object stateManagerMod {
   }
   object StateManagerOpts {
     
-    @scala.inline
-    def apply(): StateManagerOpts = {
+    inline def apply(): StateManagerOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StateManagerOpts]
     }
     
-    @scala.inline
-    implicit class StateManagerOptsMutableBuilder[Self <: StateManagerOpts] (val x: Self) extends AnyVal {
+    extension [Self <: StateManagerOpts](x: Self) {
       
-      @scala.inline
-      def setCommon(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+      inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
       
-      @scala.inline
-      def setTrie(value: js.Any): Self = StObject.set(x, "trie", value.asInstanceOf[js.Any])
+      inline def setTrie(value: js.Any): Self = StObject.set(x, "trie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrieUndefined: Self = StObject.set(x, "trie", js.undefined)
+      inline def setTrieUndefined: Self = StObject.set(x, "trie", js.undefined)
     }
   }
   

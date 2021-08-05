@@ -28,12 +28,10 @@ object Matrix2D {
   @JSGlobal("createjs.Matrix2D.DEG_TO_RAD")
   @js.native
   def DEG_TO_RAD: Double = js.native
-  @scala.inline
-  def DEG_TO_RAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEG_TO_RAD")(x.asInstanceOf[js.Any])
+  inline def DEG_TO_RAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEG_TO_RAD")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.Matrix2D.identity")
   @js.native
   def identity: typings.easeljs.createjs.Matrix2D = js.native
-  @scala.inline
-  def identity_=(x: typings.easeljs.createjs.Matrix2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
+  inline def identity_=(x: typings.easeljs.createjs.Matrix2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
 }

@@ -19,8 +19,7 @@ trait ASPxClientSpinEditBase
 }
 object ASPxClientSpinEditBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
     Focus: () => Unit,
@@ -75,10 +74,8 @@ object ASPxClientSpinEditBase {
     __obj.asInstanceOf[ASPxClientSpinEditBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpinEditBaseMutableBuilder[Self <: ASPxClientSpinEditBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpinEditBase](x: Self) {
     
-    @scala.inline
-    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEditBase]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
+    inline def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEditBase]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
   }
 }

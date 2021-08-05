@@ -21,49 +21,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MapOptions {
   
-  @scala.inline
-  def apply(): MapOptions = {
+  inline def apply(): MapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapOptions]
   }
   
-  @scala.inline
-  implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapOptions](x: Self) {
     
-    @scala.inline
-    def setFeatureLayer(value: FeatureLayerOptions): Self = StObject.set(x, "featureLayer", value.asInstanceOf[js.Any])
+    inline def setFeatureLayer(value: FeatureLayerOptions): Self = StObject.set(x, "featureLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureLayerUndefined: Self = StObject.set(x, "featureLayer", js.undefined)
+    inline def setFeatureLayerUndefined: Self = StObject.set(x, "featureLayer", js.undefined)
     
-    @scala.inline
-    def setGridLayer(value: js.Any): Self = StObject.set(x, "gridLayer", value.asInstanceOf[js.Any])
+    inline def setGridLayer(value: js.Any): Self = StObject.set(x, "gridLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridLayerUndefined: Self = StObject.set(x, "gridLayer", js.undefined)
+    inline def setGridLayerUndefined: Self = StObject.set(x, "gridLayer", js.undefined)
     
-    @scala.inline
-    def setInfoControl(value: ControlOptions): Self = StObject.set(x, "infoControl", value.asInstanceOf[js.Any])
+    inline def setInfoControl(value: ControlOptions): Self = StObject.set(x, "infoControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoControlUndefined: Self = StObject.set(x, "infoControl", js.undefined)
+    inline def setInfoControlUndefined: Self = StObject.set(x, "infoControl", js.undefined)
     
-    @scala.inline
-    def setLegendControl(value: ControlOptions): Self = StObject.set(x, "legendControl", value.asInstanceOf[js.Any])
+    inline def setLegendControl(value: ControlOptions): Self = StObject.set(x, "legendControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendControlUndefined: Self = StObject.set(x, "legendControl", js.undefined)
+    inline def setLegendControlUndefined: Self = StObject.set(x, "legendControl", js.undefined)
     
-    @scala.inline
-    def setShareControl(value: ShareControlOptions): Self = StObject.set(x, "shareControl", value.asInstanceOf[js.Any])
+    inline def setShareControl(value: ShareControlOptions): Self = StObject.set(x, "shareControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareControlUndefined: Self = StObject.set(x, "shareControl", js.undefined)
+    inline def setShareControlUndefined: Self = StObject.set(x, "shareControl", js.undefined)
     
-    @scala.inline
-    def setTileLayer(value: TileLayerOptions): Self = StObject.set(x, "tileLayer", value.asInstanceOf[js.Any])
+    inline def setTileLayer(value: TileLayerOptions): Self = StObject.set(x, "tileLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileLayerUndefined: Self = StObject.set(x, "tileLayer", js.undefined)
+    inline def setTileLayerUndefined: Self = StObject.set(x, "tileLayer", js.undefined)
   }
 }

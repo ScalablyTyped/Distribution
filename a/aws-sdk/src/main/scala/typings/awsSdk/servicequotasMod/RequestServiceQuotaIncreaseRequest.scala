@@ -23,22 +23,17 @@ trait RequestServiceQuotaIncreaseRequest extends StObject {
 }
 object RequestServiceQuotaIncreaseRequest {
   
-  @scala.inline
-  def apply(DesiredValue: QuotaValue, QuotaCode: QuotaCode, ServiceCode: ServiceCode): RequestServiceQuotaIncreaseRequest = {
+  inline def apply(DesiredValue: QuotaValue, QuotaCode: QuotaCode, ServiceCode: ServiceCode): RequestServiceQuotaIncreaseRequest = {
     val __obj = js.Dynamic.literal(DesiredValue = DesiredValue.asInstanceOf[js.Any], QuotaCode = QuotaCode.asInstanceOf[js.Any], ServiceCode = ServiceCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestServiceQuotaIncreaseRequest]
   }
   
-  @scala.inline
-  implicit class RequestServiceQuotaIncreaseRequestMutableBuilder[Self <: RequestServiceQuotaIncreaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RequestServiceQuotaIncreaseRequest](x: Self) {
     
-    @scala.inline
-    def setDesiredValue(value: QuotaValue): Self = StObject.set(x, "DesiredValue", value.asInstanceOf[js.Any])
+    inline def setDesiredValue(value: QuotaValue): Self = StObject.set(x, "DesiredValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaCode(value: QuotaCode): Self = StObject.set(x, "QuotaCode", value.asInstanceOf[js.Any])
+    inline def setQuotaCode(value: QuotaCode): Self = StObject.set(x, "QuotaCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCode(value: ServiceCode): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
+    inline def setServiceCode(value: ServiceCode): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
   }
 }

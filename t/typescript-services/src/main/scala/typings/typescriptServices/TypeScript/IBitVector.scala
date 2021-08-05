@@ -14,22 +14,17 @@ trait IBitVector extends StObject {
 }
 object IBitVector {
   
-  @scala.inline
-  def apply(release: () => Unit, setValueAt: (Double, Boolean) => Unit, valueAt: Double => Boolean): IBitVector = {
+  inline def apply(release: () => Unit, setValueAt: (Double, Boolean) => Unit, valueAt: Double => Boolean): IBitVector = {
     val __obj = js.Dynamic.literal(release = js.Any.fromFunction0(release), setValueAt = js.Any.fromFunction2(setValueAt), valueAt = js.Any.fromFunction1(valueAt))
     __obj.asInstanceOf[IBitVector]
   }
   
-  @scala.inline
-  implicit class IBitVectorMutableBuilder[Self <: IBitVector] (val x: Self) extends AnyVal {
+  extension [Self <: IBitVector](x: Self) {
     
-    @scala.inline
-    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValueAt(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setValueAt", js.Any.fromFunction2(value))
+    inline def setSetValueAt(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setValueAt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValueAt(value: Double => Boolean): Self = StObject.set(x, "valueAt", js.Any.fromFunction1(value))
+    inline def setValueAt(value: Double => Boolean): Self = StObject.set(x, "valueAt", js.Any.fromFunction1(value))
   }
 }

@@ -493,8 +493,7 @@ object mod {
   }
   object ClientJS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAvailableResolution: () => String,
       getBrowser: () => String,
       getBrowserMajorVersion: () => String,
@@ -562,194 +561,131 @@ object mod {
       __obj.asInstanceOf[ClientJS]
     }
     
-    @scala.inline
-    implicit class ClientJSMutableBuilder[Self <: ClientJS] (val x: Self) extends AnyVal {
+    extension [Self <: ClientJS](x: Self) {
       
-      @scala.inline
-      def setGetAvailableResolution(value: () => String): Self = StObject.set(x, "getAvailableResolution", js.Any.fromFunction0(value))
+      inline def setGetAvailableResolution(value: () => String): Self = StObject.set(x, "getAvailableResolution", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBrowser(value: () => String): Self = StObject.set(x, "getBrowser", js.Any.fromFunction0(value))
+      inline def setGetBrowser(value: () => String): Self = StObject.set(x, "getBrowser", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBrowserMajorVersion(value: () => String): Self = StObject.set(x, "getBrowserMajorVersion", js.Any.fromFunction0(value))
+      inline def setGetBrowserMajorVersion(value: () => String): Self = StObject.set(x, "getBrowserMajorVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBrowserVersion(value: () => String): Self = StObject.set(x, "getBrowserVersion", js.Any.fromFunction0(value))
+      inline def setGetBrowserVersion(value: () => String): Self = StObject.set(x, "getBrowserVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCPU(value: () => String): Self = StObject.set(x, "getCPU", js.Any.fromFunction0(value))
+      inline def setGetCPU(value: () => String): Self = StObject.set(x, "getCPU", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCanvasPrint(value: () => String): Self = StObject.set(x, "getCanvasPrint", js.Any.fromFunction0(value))
+      inline def setGetCanvasPrint(value: () => String): Self = StObject.set(x, "getCanvasPrint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetColorDepth(value: () => String): Self = StObject.set(x, "getColorDepth", js.Any.fromFunction0(value))
+      inline def setGetColorDepth(value: () => String): Self = StObject.set(x, "getColorDepth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentResolution(value: () => String): Self = StObject.set(x, "getCurrentResolution", js.Any.fromFunction0(value))
+      inline def setGetCurrentResolution(value: () => String): Self = StObject.set(x, "getCurrentResolution", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCustomFingerprint(value: /* repeated */ String | Double => Double): Self = StObject.set(x, "getCustomFingerprint", js.Any.fromFunction1(value))
+      inline def setGetCustomFingerprint(value: /* repeated */ String | Double => Double): Self = StObject.set(x, "getCustomFingerprint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDevice(value: () => String): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
+      inline def setGetDevice(value: () => String): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDeviceType(value: () => String): Self = StObject.set(x, "getDeviceType", js.Any.fromFunction0(value))
+      inline def setGetDeviceType(value: () => String): Self = StObject.set(x, "getDeviceType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDeviceVendor(value: () => String): Self = StObject.set(x, "getDeviceVendor", js.Any.fromFunction0(value))
+      inline def setGetDeviceVendor(value: () => String): Self = StObject.set(x, "getDeviceVendor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDeviceXDPI(value: () => String): Self = StObject.set(x, "getDeviceXDPI", js.Any.fromFunction0(value))
+      inline def setGetDeviceXDPI(value: () => String): Self = StObject.set(x, "getDeviceXDPI", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDeviceYDPI(value: () => String): Self = StObject.set(x, "getDeviceYDPI", js.Any.fromFunction0(value))
+      inline def setGetDeviceYDPI(value: () => String): Self = StObject.set(x, "getDeviceYDPI", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEngine(value: () => String): Self = StObject.set(x, "getEngine", js.Any.fromFunction0(value))
+      inline def setGetEngine(value: () => String): Self = StObject.set(x, "getEngine", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEngineVersion(value: () => String): Self = StObject.set(x, "getEngineVersion", js.Any.fromFunction0(value))
+      inline def setGetEngineVersion(value: () => String): Self = StObject.set(x, "getEngineVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFingerprint(value: () => Double): Self = StObject.set(x, "getFingerprint", js.Any.fromFunction0(value))
+      inline def setGetFingerprint(value: () => Double): Self = StObject.set(x, "getFingerprint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFlashVersion(value: () => String): Self = StObject.set(x, "getFlashVersion", js.Any.fromFunction0(value))
+      inline def setGetFlashVersion(value: () => String): Self = StObject.set(x, "getFlashVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFonts(value: () => String): Self = StObject.set(x, "getFonts", js.Any.fromFunction0(value))
+      inline def setGetFonts(value: () => String): Self = StObject.set(x, "getFonts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetJavaVersion(value: () => String): Self = StObject.set(x, "getJavaVersion", js.Any.fromFunction0(value))
+      inline def setGetJavaVersion(value: () => String): Self = StObject.set(x, "getJavaVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
+      inline def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMimeTypes(value: () => String): Self = StObject.set(x, "getMimeTypes", js.Any.fromFunction0(value))
+      inline def setGetMimeTypes(value: () => String): Self = StObject.set(x, "getMimeTypes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOS(value: () => String): Self = StObject.set(x, "getOS", js.Any.fromFunction0(value))
+      inline def setGetOS(value: () => String): Self = StObject.set(x, "getOS", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOSVersion(value: () => String): Self = StObject.set(x, "getOSVersion", js.Any.fromFunction0(value))
+      inline def setGetOSVersion(value: () => String): Self = StObject.set(x, "getOSVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPlugins(value: () => String): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
+      inline def setGetPlugins(value: () => String): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScreenPrint(value: () => String): Self = StObject.set(x, "getScreenPrint", js.Any.fromFunction0(value))
+      inline def setGetScreenPrint(value: () => String): Self = StObject.set(x, "getScreenPrint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSilverlightVersion(value: () => String): Self = StObject.set(x, "getSilverlightVersion", js.Any.fromFunction0(value))
+      inline def setGetSilverlightVersion(value: () => String): Self = StObject.set(x, "getSilverlightVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSoftwareVersion(value: () => String): Self = StObject.set(x, "getSoftwareVersion", js.Any.fromFunction0(value))
+      inline def setGetSoftwareVersion(value: () => String): Self = StObject.set(x, "getSoftwareVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSystemLanguage(value: () => String): Self = StObject.set(x, "getSystemLanguage", js.Any.fromFunction0(value))
+      inline def setGetSystemLanguage(value: () => String): Self = StObject.set(x, "getSystemLanguage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeZone(value: () => String): Self = StObject.set(x, "getTimeZone", js.Any.fromFunction0(value))
+      inline def setGetTimeZone(value: () => String): Self = StObject.set(x, "getTimeZone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserAgent(value: () => String): Self = StObject.set(x, "getUserAgent", js.Any.fromFunction0(value))
+      inline def setGetUserAgent(value: () => String): Self = StObject.set(x, "getUserAgent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserAgentLowerCase(value: () => String): Self = StObject.set(x, "getUserAgentLowerCase", js.Any.fromFunction0(value))
+      inline def setGetUserAgentLowerCase(value: () => String): Self = StObject.set(x, "getUserAgentLowerCase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCanvas(value: () => Boolean): Self = StObject.set(x, "isCanvas", js.Any.fromFunction0(value))
+      inline def setIsCanvas(value: () => Boolean): Self = StObject.set(x, "isCanvas", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChrome(value: () => Boolean): Self = StObject.set(x, "isChrome", js.Any.fromFunction0(value))
+      inline def setIsChrome(value: () => Boolean): Self = StObject.set(x, "isChrome", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCookie(value: () => Boolean): Self = StObject.set(x, "isCookie", js.Any.fromFunction0(value))
+      inline def setIsCookie(value: () => Boolean): Self = StObject.set(x, "isCookie", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFirefox(value: () => Boolean): Self = StObject.set(x, "isFirefox", js.Any.fromFunction0(value))
+      inline def setIsFirefox(value: () => Boolean): Self = StObject.set(x, "isFirefox", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFlash(value: () => Boolean): Self = StObject.set(x, "isFlash", js.Any.fromFunction0(value))
+      inline def setIsFlash(value: () => Boolean): Self = StObject.set(x, "isFlash", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFont(value: String => Boolean): Self = StObject.set(x, "isFont", js.Any.fromFunction1(value))
+      inline def setIsFont(value: String => Boolean): Self = StObject.set(x, "isFont", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsIE(value: () => Boolean): Self = StObject.set(x, "isIE", js.Any.fromFunction0(value))
+      inline def setIsIE(value: () => Boolean): Self = StObject.set(x, "isIE", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsIpad(value: () => Boolean): Self = StObject.set(x, "isIpad", js.Any.fromFunction0(value))
+      inline def setIsIpad(value: () => Boolean): Self = StObject.set(x, "isIpad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsIphone(value: () => Boolean): Self = StObject.set(x, "isIphone", js.Any.fromFunction0(value))
+      inline def setIsIphone(value: () => Boolean): Self = StObject.set(x, "isIphone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsIpod(value: () => Boolean): Self = StObject.set(x, "isIpod", js.Any.fromFunction0(value))
+      inline def setIsIpod(value: () => Boolean): Self = StObject.set(x, "isIpod", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsJava(value: () => Boolean): Self = StObject.set(x, "isJava", js.Any.fromFunction0(value))
+      inline def setIsJava(value: () => Boolean): Self = StObject.set(x, "isJava", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLinux(value: () => Boolean): Self = StObject.set(x, "isLinux", js.Any.fromFunction0(value))
+      inline def setIsLinux(value: () => Boolean): Self = StObject.set(x, "isLinux", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLocalStorage(value: () => Boolean): Self = StObject.set(x, "isLocalStorage", js.Any.fromFunction0(value))
+      inline def setIsLocalStorage(value: () => Boolean): Self = StObject.set(x, "isLocalStorage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMac(value: () => Boolean): Self = StObject.set(x, "isMac", js.Any.fromFunction0(value))
+      inline def setIsMac(value: () => Boolean): Self = StObject.set(x, "isMac", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMimeTypes(value: () => Boolean): Self = StObject.set(x, "isMimeTypes", js.Any.fromFunction0(value))
+      inline def setIsMimeTypes(value: () => Boolean): Self = StObject.set(x, "isMimeTypes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobile(value: () => Boolean): Self = StObject.set(x, "isMobile", js.Any.fromFunction0(value))
+      inline def setIsMobile(value: () => Boolean): Self = StObject.set(x, "isMobile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileAndroid(value: () => Boolean): Self = StObject.set(x, "isMobileAndroid", js.Any.fromFunction0(value))
+      inline def setIsMobileAndroid(value: () => Boolean): Self = StObject.set(x, "isMobileAndroid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileBlackBerry(value: () => Boolean): Self = StObject.set(x, "isMobileBlackBerry", js.Any.fromFunction0(value))
+      inline def setIsMobileBlackBerry(value: () => Boolean): Self = StObject.set(x, "isMobileBlackBerry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileIOS(value: () => Boolean): Self = StObject.set(x, "isMobileIOS", js.Any.fromFunction0(value))
+      inline def setIsMobileIOS(value: () => Boolean): Self = StObject.set(x, "isMobileIOS", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileMajor(value: () => Boolean): Self = StObject.set(x, "isMobileMajor", js.Any.fromFunction0(value))
+      inline def setIsMobileMajor(value: () => Boolean): Self = StObject.set(x, "isMobileMajor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileOpera(value: () => Boolean): Self = StObject.set(x, "isMobileOpera", js.Any.fromFunction0(value))
+      inline def setIsMobileOpera(value: () => Boolean): Self = StObject.set(x, "isMobileOpera", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileSafari(value: () => Boolean): Self = StObject.set(x, "isMobileSafari", js.Any.fromFunction0(value))
+      inline def setIsMobileSafari(value: () => Boolean): Self = StObject.set(x, "isMobileSafari", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileWindows(value: () => Boolean): Self = StObject.set(x, "isMobileWindows", js.Any.fromFunction0(value))
+      inline def setIsMobileWindows(value: () => Boolean): Self = StObject.set(x, "isMobileWindows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOpera(value: () => Boolean): Self = StObject.set(x, "isOpera", js.Any.fromFunction0(value))
+      inline def setIsOpera(value: () => Boolean): Self = StObject.set(x, "isOpera", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSafari(value: () => Boolean): Self = StObject.set(x, "isSafari", js.Any.fromFunction0(value))
+      inline def setIsSafari(value: () => Boolean): Self = StObject.set(x, "isSafari", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSessionStorage(value: () => Boolean): Self = StObject.set(x, "isSessionStorage", js.Any.fromFunction0(value))
+      inline def setIsSessionStorage(value: () => Boolean): Self = StObject.set(x, "isSessionStorage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSilverlight(value: () => Boolean): Self = StObject.set(x, "isSilverlight", js.Any.fromFunction0(value))
+      inline def setIsSilverlight(value: () => Boolean): Self = StObject.set(x, "isSilverlight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSolaris(value: () => Boolean): Self = StObject.set(x, "isSolaris", js.Any.fromFunction0(value))
+      inline def setIsSolaris(value: () => Boolean): Self = StObject.set(x, "isSolaris", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUbuntu(value: () => Boolean): Self = StObject.set(x, "isUbuntu", js.Any.fromFunction0(value))
+      inline def setIsUbuntu(value: () => Boolean): Self = StObject.set(x, "isUbuntu", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWindows(value: () => Boolean): Self = StObject.set(x, "isWindows", js.Any.fromFunction0(value))
+      inline def setIsWindows(value: () => Boolean): Self = StObject.set(x, "isWindows", js.Any.fromFunction0(value))
     }
   }
 }

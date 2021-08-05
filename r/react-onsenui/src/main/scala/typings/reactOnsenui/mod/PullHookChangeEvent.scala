@@ -13,16 +13,13 @@ trait PullHookChangeEvent extends StObject {
 }
 object PullHookChangeEvent {
   
-  @scala.inline
-  def apply(state: initial | preaction | action): PullHookChangeEvent = {
+  inline def apply(state: initial | preaction | action): PullHookChangeEvent = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullHookChangeEvent]
   }
   
-  @scala.inline
-  implicit class PullHookChangeEventMutableBuilder[Self <: PullHookChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PullHookChangeEvent](x: Self) {
     
-    @scala.inline
-    def setState(value: initial | preaction | action): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: initial | preaction | action): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

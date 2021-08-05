@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCalendarType extends StObject
 object WdCalendarType {
   
-  @scala.inline
-  def wdCalendarArabic: `1` = 1.asInstanceOf[`1`]
+  inline def wdCalendarArabic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdCalendarHebrew: `2` = 2.asInstanceOf[`2`]
+  inline def wdCalendarHebrew: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdCalendarJapan: `4` = 4.asInstanceOf[`4`]
+  inline def wdCalendarJapan: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdCalendarKorean: `6` = 6.asInstanceOf[`6`]
+  inline def wdCalendarKorean: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdCalendarSakaEra: `7` = 7.asInstanceOf[`7`]
+  inline def wdCalendarSakaEra: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdCalendarTaiwan: `3` = 3.asInstanceOf[`3`]
+  inline def wdCalendarTaiwan: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdCalendarThai: `5` = 5.asInstanceOf[`5`]
+  inline def wdCalendarThai: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdCalendarTranslitEnglish: `8` = 8.asInstanceOf[`8`]
+  inline def wdCalendarTranslitEnglish: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdCalendarTranslitFrench: `9` = 9.asInstanceOf[`9`]
+  inline def wdCalendarTranslitFrench: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdCalendarUmalqura: `13` = 13.asInstanceOf[`13`]
+  inline def wdCalendarUmalqura: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def wdCalendarWestern: `0` = 0.asInstanceOf[`0`]
+  inline def wdCalendarWestern: `0` = 0.asInstanceOf[`0`]
 }

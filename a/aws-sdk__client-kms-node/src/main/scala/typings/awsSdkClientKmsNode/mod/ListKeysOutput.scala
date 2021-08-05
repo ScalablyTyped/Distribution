@@ -10,8 +10,7 @@ trait ListKeysOutput
      with typings.awsSdkClientKmsNode.typesListKeysOutputMod.ListKeysOutput
 object ListKeysOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListKeysOutput = {
+  inline def apply($metadata: ResponseMetadata): ListKeysOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeysOutput]
   }

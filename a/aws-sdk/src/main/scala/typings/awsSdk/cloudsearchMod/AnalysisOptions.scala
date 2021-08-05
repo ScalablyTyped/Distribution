@@ -33,43 +33,31 @@ trait AnalysisOptions extends StObject {
 }
 object AnalysisOptions {
   
-  @scala.inline
-  def apply(): AnalysisOptions = {
+  inline def apply(): AnalysisOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalysisOptions]
   }
   
-  @scala.inline
-  implicit class AnalysisOptionsMutableBuilder[Self <: AnalysisOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnalysisOptions](x: Self) {
     
-    @scala.inline
-    def setAlgorithmicStemming(value: AlgorithmicStemming): Self = StObject.set(x, "AlgorithmicStemming", value.asInstanceOf[js.Any])
+    inline def setAlgorithmicStemming(value: AlgorithmicStemming): Self = StObject.set(x, "AlgorithmicStemming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmicStemmingUndefined: Self = StObject.set(x, "AlgorithmicStemming", js.undefined)
+    inline def setAlgorithmicStemmingUndefined: Self = StObject.set(x, "AlgorithmicStemming", js.undefined)
     
-    @scala.inline
-    def setJapaneseTokenizationDictionary(value: String): Self = StObject.set(x, "JapaneseTokenizationDictionary", value.asInstanceOf[js.Any])
+    inline def setJapaneseTokenizationDictionary(value: String): Self = StObject.set(x, "JapaneseTokenizationDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJapaneseTokenizationDictionaryUndefined: Self = StObject.set(x, "JapaneseTokenizationDictionary", js.undefined)
+    inline def setJapaneseTokenizationDictionaryUndefined: Self = StObject.set(x, "JapaneseTokenizationDictionary", js.undefined)
     
-    @scala.inline
-    def setStemmingDictionary(value: String): Self = StObject.set(x, "StemmingDictionary", value.asInstanceOf[js.Any])
+    inline def setStemmingDictionary(value: String): Self = StObject.set(x, "StemmingDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStemmingDictionaryUndefined: Self = StObject.set(x, "StemmingDictionary", js.undefined)
+    inline def setStemmingDictionaryUndefined: Self = StObject.set(x, "StemmingDictionary", js.undefined)
     
-    @scala.inline
-    def setStopwords(value: String): Self = StObject.set(x, "Stopwords", value.asInstanceOf[js.Any])
+    inline def setStopwords(value: String): Self = StObject.set(x, "Stopwords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopwordsUndefined: Self = StObject.set(x, "Stopwords", js.undefined)
+    inline def setStopwordsUndefined: Self = StObject.set(x, "Stopwords", js.undefined)
     
-    @scala.inline
-    def setSynonyms(value: String): Self = StObject.set(x, "Synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: String): Self = StObject.set(x, "Synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsUndefined: Self = StObject.set(x, "Synonyms", js.undefined)
+    inline def setSynonymsUndefined: Self = StObject.set(x, "Synonyms", js.undefined)
   }
 }

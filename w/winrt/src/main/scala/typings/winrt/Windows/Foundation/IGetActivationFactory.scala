@@ -10,16 +10,13 @@ trait IGetActivationFactory extends StObject {
 }
 object IGetActivationFactory {
   
-  @scala.inline
-  def apply(getActivationFactory: String => js.Any): IGetActivationFactory = {
+  inline def apply(getActivationFactory: String => js.Any): IGetActivationFactory = {
     val __obj = js.Dynamic.literal(getActivationFactory = js.Any.fromFunction1(getActivationFactory))
     __obj.asInstanceOf[IGetActivationFactory]
   }
   
-  @scala.inline
-  implicit class IGetActivationFactoryMutableBuilder[Self <: IGetActivationFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IGetActivationFactory](x: Self) {
     
-    @scala.inline
-    def setGetActivationFactory(value: String => js.Any): Self = StObject.set(x, "getActivationFactory", js.Any.fromFunction1(value))
+    inline def setGetActivationFactory(value: String => js.Any): Self = StObject.set(x, "getActivationFactory", js.Any.fromFunction1(value))
   }
 }

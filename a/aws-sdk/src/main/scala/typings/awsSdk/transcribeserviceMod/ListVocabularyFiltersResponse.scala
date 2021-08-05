@@ -18,28 +18,21 @@ trait ListVocabularyFiltersResponse extends StObject {
 }
 object ListVocabularyFiltersResponse {
   
-  @scala.inline
-  def apply(): ListVocabularyFiltersResponse = {
+  inline def apply(): ListVocabularyFiltersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVocabularyFiltersResponse]
   }
   
-  @scala.inline
-  implicit class ListVocabularyFiltersResponseMutableBuilder[Self <: ListVocabularyFiltersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListVocabularyFiltersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVocabularyFilters(value: VocabularyFilters): Self = StObject.set(x, "VocabularyFilters", value.asInstanceOf[js.Any])
+    inline def setVocabularyFilters(value: VocabularyFilters): Self = StObject.set(x, "VocabularyFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFiltersUndefined: Self = StObject.set(x, "VocabularyFilters", js.undefined)
+    inline def setVocabularyFiltersUndefined: Self = StObject.set(x, "VocabularyFilters", js.undefined)
     
-    @scala.inline
-    def setVocabularyFiltersVarargs(value: VocabularyFilterInfo*): Self = StObject.set(x, "VocabularyFilters", js.Array(value :_*))
+    inline def setVocabularyFiltersVarargs(value: VocabularyFilterInfo*): Self = StObject.set(x, "VocabularyFilters", js.Array(value :_*))
   }
 }

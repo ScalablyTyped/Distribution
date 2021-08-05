@@ -23,29 +23,22 @@ object anon {
   }
   object Codomain {
     
-    @scala.inline
-    def apply[T](codomain: T, domain: Constructor[String], identity: Boolean, kind: String, name: String): Codomain[T] = {
+    inline def apply[T](codomain: T, domain: Constructor[String], identity: Boolean, kind: String, name: String): Codomain[T] = {
       val __obj = js.Dynamic.literal(codomain = codomain.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Codomain[T]]
     }
     
-    @scala.inline
-    implicit class CodomainMutableBuilder[Self <: Codomain[?], T] (val x: Self & Codomain[T]) extends AnyVal {
+    extension [Self <: Codomain[?], T](x: Self & Codomain[T]) {
       
-      @scala.inline
-      def setCodomain(value: T): Self = StObject.set(x, "codomain", value.asInstanceOf[js.Any])
+      inline def setCodomain(value: T): Self = StObject.set(x, "codomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: Constructor[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Constructor[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +58,7 @@ object anon {
   }
   object DefaultProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultProps: js.Object,
       identity: Boolean,
       kind: String,
@@ -78,26 +70,19 @@ object anon {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    @scala.inline
-    implicit class DefaultPropsMutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultProps](x: Self) {
       
-      @scala.inline
-      def setDefaultProps(value: js.Object): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+      inline def setDefaultProps(value: js.Object): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: StructProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: StructProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,20 +94,16 @@ object anon {
   }
   object From {
     
-    @scala.inline
-    def apply(from: Double, to: Double): From = {
+    inline def apply(from: Double, to: Double): From = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[From]
     }
     
-    @scala.inline
-    implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+    extension [Self <: From](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,23 +117,18 @@ object anon {
   }
   object Identity {
     
-    @scala.inline
-    def apply(identity: Boolean, kind: String, name: String): Identity = {
+    inline def apply(identity: Boolean, kind: String, name: String): Identity = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Identity]
     }
     
-    @scala.inline
-    implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+    extension [Self <: Identity](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,29 +144,22 @@ object anon {
   }
   object IdentityKind {
     
-    @scala.inline
-    def apply[T](identity: Boolean, kind: String, name: String, types: js.Array[Constructor[T]]): IdentityKind[T] = {
+    inline def apply[T](identity: Boolean, kind: String, name: String, types: js.Array[Constructor[T]]): IdentityKind[T] = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdentityKind[T]]
     }
     
-    @scala.inline
-    implicit class IdentityKindMutableBuilder[Self <: IdentityKind[?], T] (val x: Self & IdentityKind[T]) extends AnyVal {
+    extension [Self <: IdentityKind[?], T](x: Self & IdentityKind[T]) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: js.Array[Constructor[T]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[Constructor[T]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: Constructor[T]*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Constructor[T]*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
   
@@ -208,26 +177,20 @@ object anon {
   }
   object Kind {
     
-    @scala.inline
-    def apply[T](identity: Boolean, kind: String, name: String, predicate: /* x */ js.Any => /* is T */ Boolean): Kind[T] = {
+    inline def apply[T](identity: Boolean, kind: String, name: String, predicate: /* x */ js.Any => /* is T */ Boolean): Kind[T] = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
       __obj.asInstanceOf[Kind[T]]
     }
     
-    @scala.inline
-    implicit class KindMutableBuilder[Self <: Kind[?], T] (val x: Self & Kind[T]) extends AnyVal {
+    extension [Self <: Kind[?], T](x: Self & Kind[T]) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
     }
   }
   
@@ -243,26 +206,20 @@ object anon {
   }
   object Map {
     
-    @scala.inline
-    def apply(identity: Boolean, kind: String, map: js.Object, name: String): Map = {
+    inline def apply(identity: Boolean, kind: String, map: js.Object, name: String): Map = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Map]
     }
     
-    @scala.inline
-    implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+    extension [Self <: Map](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,8 +239,7 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       identity: Boolean,
       kind: String,
       name: String,
@@ -295,23 +251,17 @@ object anon {
       __obj.asInstanceOf[Name[T]]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
+    extension [Self <: Name[?], T](x: Self & Name[T]) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: Constructor[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Constructor[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -329,29 +279,22 @@ object anon {
   }
   object Props {
     
-    @scala.inline
-    def apply(identity: Boolean, kind: String, name: String, props: StructProps, strict: Boolean): Props = {
+    inline def apply(identity: Boolean, kind: String, name: String, props: StructProps, strict: Boolean): Props = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: StructProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: StructProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     }
   }
   
@@ -367,27 +310,21 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply[T](identity: Boolean, kind: String, name: String, `type`: Constructor[T]): Type[T] = {
+    inline def apply[T](identity: Boolean, kind: String, name: String, `type`: Constructor[T]): Type[T] = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type[T]]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[?], T] (val x: Self & Type[T]) extends AnyVal {
+    extension [Self <: Type[?], T](x: Self & Type[T]) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Constructor[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Constructor[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -403,29 +340,22 @@ object anon {
   }
   object Types {
     
-    @scala.inline
-    def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[js.Any]]): Types = {
+    inline def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[js.Any]]): Types = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[Types]
     }
     
-    @scala.inline
-    implicit class TypesMutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
+    extension [Self <: Types](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: js.Array[Constructor[js.Any]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[Constructor[js.Any]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: Constructor[js.Any]*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Constructor[js.Any]*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
 }

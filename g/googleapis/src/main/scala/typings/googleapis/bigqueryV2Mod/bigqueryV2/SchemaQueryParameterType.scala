@@ -25,34 +25,25 @@ trait SchemaQueryParameterType extends StObject {
 }
 object SchemaQueryParameterType {
   
-  @scala.inline
-  def apply(): SchemaQueryParameterType = {
+  inline def apply(): SchemaQueryParameterType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryParameterType]
   }
   
-  @scala.inline
-  implicit class SchemaQueryParameterTypeMutableBuilder[Self <: SchemaQueryParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryParameterType](x: Self) {
     
-    @scala.inline
-    def setArrayType(value: SchemaQueryParameterType): Self = StObject.set(x, "arrayType", value.asInstanceOf[js.Any])
+    inline def setArrayType(value: SchemaQueryParameterType): Self = StObject.set(x, "arrayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayTypeUndefined: Self = StObject.set(x, "arrayType", js.undefined)
+    inline def setArrayTypeUndefined: Self = StObject.set(x, "arrayType", js.undefined)
     
-    @scala.inline
-    def setStructTypes(value: js.Array[Description]): Self = StObject.set(x, "structTypes", value.asInstanceOf[js.Any])
+    inline def setStructTypes(value: js.Array[Description]): Self = StObject.set(x, "structTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructTypesUndefined: Self = StObject.set(x, "structTypes", js.undefined)
+    inline def setStructTypesUndefined: Self = StObject.set(x, "structTypes", js.undefined)
     
-    @scala.inline
-    def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value :_*))
+    inline def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

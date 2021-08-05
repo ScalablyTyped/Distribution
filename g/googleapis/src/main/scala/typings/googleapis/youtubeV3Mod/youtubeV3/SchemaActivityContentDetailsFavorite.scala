@@ -17,19 +17,15 @@ trait SchemaActivityContentDetailsFavorite extends StObject {
 }
 object SchemaActivityContentDetailsFavorite {
   
-  @scala.inline
-  def apply(): SchemaActivityContentDetailsFavorite = {
+  inline def apply(): SchemaActivityContentDetailsFavorite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActivityContentDetailsFavorite]
   }
   
-  @scala.inline
-  implicit class SchemaActivityContentDetailsFavoriteMutableBuilder[Self <: SchemaActivityContentDetailsFavorite] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActivityContentDetailsFavorite](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

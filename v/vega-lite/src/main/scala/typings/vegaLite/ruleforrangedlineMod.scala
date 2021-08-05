@@ -55,20 +55,16 @@ object ruleforrangedlineMod {
   }
   object EncodingX2Mixins {
     
-    @scala.inline
-    def apply(): EncodingX2Mixins = {
+    inline def apply(): EncodingX2Mixins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodingX2Mixins]
     }
     
-    @scala.inline
-    implicit class EncodingX2MixinsMutableBuilder[Self <: EncodingX2Mixins] (val x: Self) extends AnyVal {
+    extension [Self <: EncodingX2Mixins](x: Self) {
       
-      @scala.inline
-      def setX2(value: Position2Def[Field]): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: Position2Def[Field]): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+      inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     }
   }
   
@@ -78,20 +74,16 @@ object ruleforrangedlineMod {
   }
   object EncodingY2Mixins {
     
-    @scala.inline
-    def apply(): EncodingY2Mixins = {
+    inline def apply(): EncodingY2Mixins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodingY2Mixins]
     }
     
-    @scala.inline
-    implicit class EncodingY2MixinsMutableBuilder[Self <: EncodingY2Mixins] (val x: Self) extends AnyVal {
+    extension [Self <: EncodingY2Mixins](x: Self) {
       
-      @scala.inline
-      def setY2(value: Position2Def[Field]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: Position2Def[Field]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+      inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
     }
   }
   

@@ -16,32 +16,24 @@ object Y {
   }
   object IConfig {
     
-    @scala.inline
-    def apply(optional: js.Array[String], requires: js.Array[String], use: js.Array[String]): IConfig = {
+    inline def apply(optional: js.Array[String], requires: js.Array[String], use: js.Array[String]): IConfig = {
       val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], requires = requires.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConfig]
     }
     
-    @scala.inline
-    implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IConfig](x: Self) {
       
-      @scala.inline
-      def setOptional(value: js.Array[String]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Array[String]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalVarargs(value: String*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: String*): Self = StObject.set(x, "optional", js.Array(value :_*))
       
-      @scala.inline
-      def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
       
-      @scala.inline
-      def setUse(value: js.Array[String]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: js.Array[String]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseVarargs(value: String*): Self = StObject.set(x, "use", js.Array(value :_*))
+      inline def setUseVarargs(value: String*): Self = StObject.set(x, "use", js.Array(value :_*))
     }
   }
 }

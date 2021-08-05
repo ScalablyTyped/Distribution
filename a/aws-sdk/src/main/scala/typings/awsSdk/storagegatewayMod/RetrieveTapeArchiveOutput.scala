@@ -13,19 +13,15 @@ trait RetrieveTapeArchiveOutput extends StObject {
 }
 object RetrieveTapeArchiveOutput {
   
-  @scala.inline
-  def apply(): RetrieveTapeArchiveOutput = {
+  inline def apply(): RetrieveTapeArchiveOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetrieveTapeArchiveOutput]
   }
   
-  @scala.inline
-  implicit class RetrieveTapeArchiveOutputMutableBuilder[Self <: RetrieveTapeArchiveOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveTapeArchiveOutput](x: Self) {
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
+    inline def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
   }
 }

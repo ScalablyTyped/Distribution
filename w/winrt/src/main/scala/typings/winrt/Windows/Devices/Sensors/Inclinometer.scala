@@ -9,8 +9,7 @@ trait Inclinometer
      with IInclinometer
 object Inclinometer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => InclinometerReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,

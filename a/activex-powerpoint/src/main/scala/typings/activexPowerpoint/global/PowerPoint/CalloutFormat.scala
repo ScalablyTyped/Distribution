@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CalloutFormat")
 @js.native
-class CalloutFormat protected ()
+/* private */ class CalloutFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CalloutFormat {
   
@@ -59,7 +59,7 @@ class CalloutFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.CalloutFormat_typekey")
   var PowerPointDotCalloutFormat_typekey: typings.activexPowerpoint.PowerPoint.CalloutFormat = js.native
   

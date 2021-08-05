@@ -11,16 +11,13 @@ trait SecureConnectBundle extends StObject {
 }
 object SecureConnectBundle {
   
-  @scala.inline
-  def apply(secureConnectBundle: String | URL_): SecureConnectBundle = {
+  inline def apply(secureConnectBundle: String | URL_): SecureConnectBundle = {
     val __obj = js.Dynamic.literal(secureConnectBundle = secureConnectBundle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureConnectBundle]
   }
   
-  @scala.inline
-  implicit class SecureConnectBundleMutableBuilder[Self <: SecureConnectBundle] (val x: Self) extends AnyVal {
+  extension [Self <: SecureConnectBundle](x: Self) {
     
-    @scala.inline
-    def setSecureConnectBundle(value: String | URL_): Self = StObject.set(x, "secureConnectBundle", value.asInstanceOf[js.Any])
+    inline def setSecureConnectBundle(value: String | URL_): Self = StObject.set(x, "secureConnectBundle", value.asInstanceOf[js.Any])
   }
 }

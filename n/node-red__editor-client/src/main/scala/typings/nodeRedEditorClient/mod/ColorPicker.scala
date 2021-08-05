@@ -13,16 +13,13 @@ trait ColorPicker extends StObject {
 }
 object ColorPicker {
   
-  @scala.inline
-  def apply(create: CellHeight => JQuery[HTMLDivElement]): ColorPicker = {
+  inline def apply(create: CellHeight => JQuery[HTMLDivElement]): ColorPicker = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[ColorPicker]
   }
   
-  @scala.inline
-  implicit class ColorPickerMutableBuilder[Self <: ColorPicker] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPicker](x: Self) {
     
-    @scala.inline
-    def setCreate(value: CellHeight => JQuery[HTMLDivElement]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: CellHeight => JQuery[HTMLDivElement]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

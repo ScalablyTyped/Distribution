@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentIntentDataCaptureMethodOptions extends StObject
 object PaymentIntentDataCaptureMethodOptions {
   
-  @scala.inline
-  def automatic: typings.stripe.stripeStrings.automatic = "automatic".asInstanceOf[typings.stripe.stripeStrings.automatic]
+  inline def automatic: typings.stripe.stripeStrings.automatic = "automatic".asInstanceOf[typings.stripe.stripeStrings.automatic]
   
-  @scala.inline
-  def manual: typings.stripe.stripeStrings.manual = "manual".asInstanceOf[typings.stripe.stripeStrings.manual]
+  inline def manual: typings.stripe.stripeStrings.manual = "manual".asInstanceOf[typings.stripe.stripeStrings.manual]
 }

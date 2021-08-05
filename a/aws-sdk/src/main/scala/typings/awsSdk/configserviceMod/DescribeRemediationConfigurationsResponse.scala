@@ -13,22 +13,17 @@ trait DescribeRemediationConfigurationsResponse extends StObject {
 }
 object DescribeRemediationConfigurationsResponse {
   
-  @scala.inline
-  def apply(): DescribeRemediationConfigurationsResponse = {
+  inline def apply(): DescribeRemediationConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRemediationConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRemediationConfigurationsResponseMutableBuilder[Self <: DescribeRemediationConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRemediationConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setRemediationConfigurations(value: RemediationConfigurations): Self = StObject.set(x, "RemediationConfigurations", value.asInstanceOf[js.Any])
+    inline def setRemediationConfigurations(value: RemediationConfigurations): Self = StObject.set(x, "RemediationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationConfigurationsUndefined: Self = StObject.set(x, "RemediationConfigurations", js.undefined)
+    inline def setRemediationConfigurationsUndefined: Self = StObject.set(x, "RemediationConfigurations", js.undefined)
     
-    @scala.inline
-    def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = StObject.set(x, "RemediationConfigurations", js.Array(value :_*))
+    inline def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = StObject.set(x, "RemediationConfigurations", js.Array(value :_*))
   }
 }

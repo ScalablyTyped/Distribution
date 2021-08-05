@@ -29,7 +29,7 @@ object hashtagMatcherMod {
       * @protected
       * @property {RegExp} matcherRegex
       */
-    var matcherRegex: RegExp = js.native
+    /* protected */ var matcherRegex: RegExp = js.native
     
     /**
       * The regular expression to use to check the character before a username match to
@@ -40,7 +40,7 @@ object hashtagMatcherMod {
       * @protected
       * @property {RegExp} nonWordCharRegex
       */
-    var nonWordCharRegex: RegExp = js.native
+    /* protected */ var nonWordCharRegex: RegExp = js.native
     
     /**
       * @cfg {String} serviceName
@@ -48,7 +48,7 @@ object hashtagMatcherMod {
       * The service to point hashtag matches to. See {@link Autolinker#hashtag}
       * for available values.
       */
-    val serviceName: HashtagServices = js.native
+    /* protected */ val serviceName: HashtagServices = js.native
   }
   
   trait HashtagMatcherConfig
@@ -59,17 +59,14 @@ object hashtagMatcherMod {
   }
   object HashtagMatcherConfig {
     
-    @scala.inline
-    def apply(serviceName: HashtagServices, tagBuilder: AnchorTagBuilder): HashtagMatcherConfig = {
+    inline def apply(serviceName: HashtagServices, tagBuilder: AnchorTagBuilder): HashtagMatcherConfig = {
       val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
       __obj.asInstanceOf[HashtagMatcherConfig]
     }
     
-    @scala.inline
-    implicit class HashtagMatcherConfigMutableBuilder[Self <: HashtagMatcherConfig] (val x: Self) extends AnyVal {
+    extension [Self <: HashtagMatcherConfig](x: Self) {
       
-      @scala.inline
-      def setServiceName(value: HashtagServices): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: HashtagServices): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
 }

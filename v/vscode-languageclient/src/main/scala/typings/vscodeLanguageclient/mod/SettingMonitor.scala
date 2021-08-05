@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SettingMonitor protected () extends StObject {
   def this(_client: LanguageClient, _setting: String) = this()
   
-  var _client: js.Any = js.native
+  /* private */ var _client: js.Any = js.native
   
-  var _listeners: js.Any = js.native
+  /* private */ var _listeners: js.Any = js.native
   
-  var _setting: js.Any = js.native
+  /* private */ var _setting: js.Any = js.native
   
-  var onDidChangeConfiguration: js.Any = js.native
+  /* private */ var onDidChangeConfiguration: js.Any = js.native
   
   def start(): typings.vscode.mod.Disposable = js.native
 }

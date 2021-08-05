@@ -28,8 +28,7 @@ trait ASPxClientMovingAverageConvergenceDivergence
 }
 object ASPxClientMovingAverageConvergenceDivergence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     longPeriod: Double,
@@ -43,16 +42,12 @@ object ASPxClientMovingAverageConvergenceDivergence {
     __obj.asInstanceOf[ASPxClientMovingAverageConvergenceDivergence]
   }
   
-  @scala.inline
-  implicit class ASPxClientMovingAverageConvergenceDivergenceMutableBuilder[Self <: ASPxClientMovingAverageConvergenceDivergence] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMovingAverageConvergenceDivergence](x: Self) {
     
-    @scala.inline
-    def setLongPeriod(value: Double): Self = StObject.set(x, "longPeriod", value.asInstanceOf[js.Any])
+    inline def setLongPeriod(value: Double): Self = StObject.set(x, "longPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortPeriod(value: Double): Self = StObject.set(x, "shortPeriod", value.asInstanceOf[js.Any])
+    inline def setShortPeriod(value: Double): Self = StObject.set(x, "shortPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalSmoothingPeriod(value: Double): Self = StObject.set(x, "signalSmoothingPeriod", value.asInstanceOf[js.Any])
+    inline def setSignalSmoothingPeriod(value: Double): Self = StObject.set(x, "signalSmoothingPeriod", value.asInstanceOf[js.Any])
   }
 }

@@ -14,16 +14,13 @@ trait NSOptionsWithNamespaces
 }
 object NSOptionsWithNamespaces {
   
-  @scala.inline
-  def apply(): NSOptionsWithNamespaces = {
+  inline def apply(): NSOptionsWithNamespaces = {
     val __obj = js.Dynamic.literal(xmlns = true)
     __obj.asInstanceOf[NSOptionsWithNamespaces]
   }
   
-  @scala.inline
-  implicit class NSOptionsWithNamespacesMutableBuilder[Self <: NSOptionsWithNamespaces] (val x: Self) extends AnyVal {
+  extension [Self <: NSOptionsWithNamespaces](x: Self) {
     
-    @scala.inline
-    def setXmlns(value: `true`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+    inline def setXmlns(value: `true`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
   }
 }

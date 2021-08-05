@@ -12,6 +12,5 @@ object mdLeaveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mdLeaveAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdLeaveAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def mdLeaveAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdLeaveAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

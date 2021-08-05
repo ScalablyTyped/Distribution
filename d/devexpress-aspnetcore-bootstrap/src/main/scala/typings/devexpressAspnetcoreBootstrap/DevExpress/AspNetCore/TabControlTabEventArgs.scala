@@ -12,16 +12,13 @@ trait TabControlTabEventArgs
 }
 object TabControlTabEventArgs {
   
-  @scala.inline
-  def apply(sender: Control, tab: BootstrapTab): TabControlTabEventArgs = {
+  inline def apply(sender: Control, tab: BootstrapTab): TabControlTabEventArgs = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabControlTabEventArgs]
   }
   
-  @scala.inline
-  implicit class TabControlTabEventArgsMutableBuilder[Self <: TabControlTabEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TabControlTabEventArgs](x: Self) {
     
-    @scala.inline
-    def setTab(value: BootstrapTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: BootstrapTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

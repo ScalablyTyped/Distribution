@@ -28,17 +28,14 @@ object mod extends Shortcut {
     }
     object Response {
       
-      @scala.inline
-      def apply(setLink: (String, String) => Unit): Response = {
+      inline def apply(setLink: (String, String) => Unit): Response = {
         val __obj = js.Dynamic.literal(setLink = js.Any.fromFunction2(setLink))
         __obj.asInstanceOf[Response]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+      extension [Self <: Response](x: Self) {
         
-        @scala.inline
-        def setSetLink(value: (String, String) => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction2(value))
+        inline def setSetLink(value: (String, String) => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction2(value))
       }
     }
   }

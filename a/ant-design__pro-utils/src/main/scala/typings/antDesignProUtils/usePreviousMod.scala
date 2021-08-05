@@ -10,6 +10,5 @@ object usePreviousMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](state: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  inline def default[T](state: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 }

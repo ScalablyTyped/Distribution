@@ -26,8 +26,7 @@ trait AutocompleteService extends StObject {
 }
 object AutocompleteService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPlacePredictions: (AutocompletionRequest, js.Function2[
       /* result */ js.Array[AutocompletePrediction], 
       /* status */ PlacesServiceStatus, 
@@ -43,11 +42,9 @@ object AutocompleteService {
     __obj.asInstanceOf[AutocompleteService]
   }
   
-  @scala.inline
-  implicit class AutocompleteServiceMutableBuilder[Self <: AutocompleteService] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteService](x: Self) {
     
-    @scala.inline
-    def setGetPlacePredictions(
+    inline def setGetPlacePredictions(
       value: (AutocompletionRequest, js.Function2[
           /* result */ js.Array[AutocompletePrediction], 
           /* status */ PlacesServiceStatus, 
@@ -55,8 +52,7 @@ object AutocompleteService {
         ]) => Unit
     ): Self = StObject.set(x, "getPlacePredictions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetQueryPredictions(
+    inline def setGetQueryPredictions(
       value: (QueryAutocompletionRequest, js.Function2[
           /* result */ js.Array[QueryAutocompletePrediction], 
           /* status */ PlacesServiceStatus, 

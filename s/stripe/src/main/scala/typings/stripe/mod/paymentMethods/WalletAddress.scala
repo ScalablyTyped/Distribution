@@ -26,31 +26,23 @@ trait WalletAddress extends StObject {
 }
 object WalletAddress {
   
-  @scala.inline
-  def apply(city: String, country: String, line1: String, line2: String, postal_code: String, state: String): WalletAddress = {
+  inline def apply(city: String, country: String, line1: String, line2: String, postal_code: String, state: String): WalletAddress = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], line1 = line1.asInstanceOf[js.Any], line2 = line2.asInstanceOf[js.Any], postal_code = postal_code.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalletAddress]
   }
   
-  @scala.inline
-  implicit class WalletAddressMutableBuilder[Self <: WalletAddress] (val x: Self) extends AnyVal {
+  extension [Self <: WalletAddress](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
+    inline def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
+    inline def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+    inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ object fillPathByDiffMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(source: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(source: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait DiffType extends StObject {
     
@@ -21,21 +20,17 @@ object fillPathByDiffMod {
   }
   object DiffType {
     
-    @scala.inline
-    def apply(min: Double, `type`: String): DiffType = {
+    inline def apply(min: Double, `type`: String): DiffType = {
       val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffType]
     }
     
-    @scala.inline
-    implicit class DiffTypeMutableBuilder[Self <: DiffType] (val x: Self) extends AnyVal {
+    extension [Self <: DiffType](x: Self) {
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,10 +11,8 @@ object getBotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBot(args: GetBotArgs): js.Promise[GetBotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBotResult]]
-  @scala.inline
-  def getBot(args: GetBotArgs, opts: InvokeOptions): js.Promise[GetBotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBotResult]]
+  inline def getBot(args: GetBotArgs): js.Promise[GetBotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBotResult]]
+  inline def getBot(args: GetBotArgs, opts: InvokeOptions): js.Promise[GetBotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBotResult]]
   
   trait GetBotArgs extends StObject {
     
@@ -30,23 +28,18 @@ object getBotMod {
   }
   object GetBotArgs {
     
-    @scala.inline
-    def apply(name: String): GetBotArgs = {
+    inline def apply(name: String): GetBotArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBotArgs]
     }
     
-    @scala.inline
-    implicit class GetBotArgsMutableBuilder[Self <: GetBotArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBotArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -118,8 +111,7 @@ object getBotMod {
   }
   object GetBotResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       checksum: String,
       childDirected: Boolean,
@@ -141,62 +133,43 @@ object getBotMod {
       __obj.asInstanceOf[GetBotResult]
     }
     
-    @scala.inline
-    implicit class GetBotResultMutableBuilder[Self <: GetBotResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBotResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildDirected(value: Boolean): Self = StObject.set(x, "childDirected", value.asInstanceOf[js.Any])
+      inline def setChildDirected(value: Boolean): Self = StObject.set(x, "childDirected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectSentiment(value: Boolean): Self = StObject.set(x, "detectSentiment", value.asInstanceOf[js.Any])
+      inline def setDetectSentiment(value: Boolean): Self = StObject.set(x, "detectSentiment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableModelImprovements(value: Boolean): Self = StObject.set(x, "enableModelImprovements", value.asInstanceOf[js.Any])
+      inline def setEnableModelImprovements(value: Boolean): Self = StObject.set(x, "enableModelImprovements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+      inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleSessionTtlInSeconds(value: Double): Self = StObject.set(x, "idleSessionTtlInSeconds", value.asInstanceOf[js.Any])
+      inline def setIdleSessionTtlInSeconds(value: Double): Self = StObject.set(x, "idleSessionTtlInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNluIntentConfidenceThreshold(value: Double): Self = StObject.set(x, "nluIntentConfidenceThreshold", value.asInstanceOf[js.Any])
+      inline def setNluIntentConfidenceThreshold(value: Double): Self = StObject.set(x, "nluIntentConfidenceThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setVoiceId(value: String): Self = StObject.set(x, "voiceId", value.asInstanceOf[js.Any])
+      inline def setVoiceId(value: String): Self = StObject.set(x, "voiceId", value.asInstanceOf[js.Any])
     }
   }
 }

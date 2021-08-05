@@ -26,37 +26,27 @@ trait PartialRangeSelectorButto extends StObject {
 }
 object PartialRangeSelectorButto {
   
-  @scala.inline
-  def apply(): PartialRangeSelectorButto = {
+  inline def apply(): PartialRangeSelectorButto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRangeSelectorButto]
   }
   
-  @scala.inline
-  implicit class PartialRangeSelectorButtoMutableBuilder[Self <: PartialRangeSelectorButto] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRangeSelectorButto](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setStep(value: second | minute | hour | day | month | year | all): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: second | minute | hour | day | month | year | all): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setStepmode(value: backward | todate): Self = StObject.set(x, "stepmode", value.asInstanceOf[js.Any])
+    inline def setStepmode(value: backward | todate): Self = StObject.set(x, "stepmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepmodeUndefined: Self = StObject.set(x, "stepmode", js.undefined)
+    inline def setStepmodeUndefined: Self = StObject.set(x, "stepmode", js.undefined)
   }
 }

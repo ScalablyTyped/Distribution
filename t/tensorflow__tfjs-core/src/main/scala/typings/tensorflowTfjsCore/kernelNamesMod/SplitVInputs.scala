@@ -11,19 +11,15 @@ trait SplitVInputs extends StObject {
 }
 object SplitVInputs {
   
-  @scala.inline
-  def apply(): SplitVInputs = {
+  inline def apply(): SplitVInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplitVInputs]
   }
   
-  @scala.inline
-  implicit class SplitVInputsMutableBuilder[Self <: SplitVInputs] (val x: Self) extends AnyVal {
+  extension [Self <: SplitVInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

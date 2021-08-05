@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

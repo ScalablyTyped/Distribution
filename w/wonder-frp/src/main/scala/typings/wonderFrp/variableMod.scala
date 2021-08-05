@@ -13,6 +13,5 @@ object variableMod {
   @JSImport("wonder-frp/dist/commonjs/global/Variable", "root")
   @js.native
   def root: js.Any = js.native
-  @scala.inline
-  def root_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+  inline def root_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
 }

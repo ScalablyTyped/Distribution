@@ -16,9 +16,9 @@ object storeMod {
     
     def clearComponent(componentId: String): Unit = js.native
     
-    var componentsByName: js.Any = js.native
+    /* private */ var componentsByName: js.Any = js.native
     
-    var componentsInstancesById: js.Any = js.native
+    /* private */ var componentsInstancesById: js.Any = js.native
     
     def ensureClassForName(componentName: String): Unit = js.native
     def ensureClassForName(componentName: Double): Unit = js.native
@@ -36,11 +36,11 @@ object storeMod {
     def hasRegisteredWrappedComponent(componentName: String): Boolean = js.native
     def hasRegisteredWrappedComponent(componentName: Double): Boolean = js.native
     
-    var lazyRegistratorFn: js.Any = js.native
+    /* private */ var lazyRegistratorFn: js.Any = js.native
     
     def mergeNewPropsForId(componentId: String, newProps: js.Any): Unit = js.native
     
-    var propsById: js.Any = js.native
+    /* private */ var propsById: js.Any = js.native
     
     def setComponentClassForName(componentName: String, ComponentClass: ComponentProvider): Unit = js.native
     def setComponentClassForName(componentName: Double, ComponentClass: ComponentProvider): Unit = js.native
@@ -54,6 +54,6 @@ object storeMod {
     
     def updateProps(componentId: String, props: js.Any): Unit = js.native
     
-    var wrappedComponents: js.Any = js.native
+    /* private */ var wrappedComponents: js.Any = js.native
   }
 }

@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uAngle extends StObject
 object uAngle {
   
-  @scala.inline
-  def arcmin: typings.convertUnits.convertUnitsStrings.arcmin = "arcmin".asInstanceOf[typings.convertUnits.convertUnitsStrings.arcmin]
+  inline def arcmin: typings.convertUnits.convertUnitsStrings.arcmin = "arcmin".asInstanceOf[typings.convertUnits.convertUnitsStrings.arcmin]
   
-  @scala.inline
-  def arcsec: typings.convertUnits.convertUnitsStrings.arcsec = "arcsec".asInstanceOf[typings.convertUnits.convertUnitsStrings.arcsec]
+  inline def arcsec: typings.convertUnits.convertUnitsStrings.arcsec = "arcsec".asInstanceOf[typings.convertUnits.convertUnitsStrings.arcsec]
   
-  @scala.inline
-  def deg: typings.convertUnits.convertUnitsStrings.deg = "deg".asInstanceOf[typings.convertUnits.convertUnitsStrings.deg]
+  inline def deg: typings.convertUnits.convertUnitsStrings.deg = "deg".asInstanceOf[typings.convertUnits.convertUnitsStrings.deg]
   
-  @scala.inline
-  def grad: typings.convertUnits.convertUnitsStrings.grad = "grad".asInstanceOf[typings.convertUnits.convertUnitsStrings.grad]
+  inline def grad: typings.convertUnits.convertUnitsStrings.grad = "grad".asInstanceOf[typings.convertUnits.convertUnitsStrings.grad]
   
-  @scala.inline
-  def rad: typings.convertUnits.convertUnitsStrings.rad = "rad".asInstanceOf[typings.convertUnits.convertUnitsStrings.rad]
+  inline def rad: typings.convertUnits.convertUnitsStrings.rad = "rad".asInstanceOf[typings.convertUnits.convertUnitsStrings.rad]
 }

@@ -17,13 +17,10 @@ object SpellFailure {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CAPTION_ERROR: `3` = 3.asInstanceOf[`3`]
+    inline def CAPTION_ERROR: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def IS_NEGATIVE_WORD: `2` = 2.asInstanceOf[`2`]
+    inline def IS_NEGATIVE_WORD: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SPELLING_ERROR: `4` = 4.asInstanceOf[`4`]
+    inline def SPELLING_ERROR: `4` = 4.asInstanceOf[`4`]
   }
 }

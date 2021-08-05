@@ -51,41 +51,30 @@ object mod extends Shortcut {
     }
     object Province {
       
-      @scala.inline
-      def apply(country: String, name: String): Province = {
+      inline def apply(country: String, name: String): Province = {
         val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Province]
       }
       
-      @scala.inline
-      implicit class ProvinceMutableBuilder[Self <: Province] (val x: Self) extends AnyVal {
+      extension [Self <: Province](x: Self) {
         
-        @scala.inline
-        def setAlt(value: js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
+        inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
         
-        @scala.inline
-        def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+        inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+        inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
         
-        @scala.inline
-        def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+        inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+        inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
       }
     }
   }

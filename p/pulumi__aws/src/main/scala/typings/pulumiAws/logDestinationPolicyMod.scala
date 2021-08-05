@@ -50,21 +50,16 @@ object logDestinationPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogDestinationPolicyState): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogDestinationPolicyState, opts: CustomResourceOptions): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
+    inline def get(name: String, id: Input[ID]): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
+    inline def get(name: String, id: Input[ID], state: LogDestinationPolicyState): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
+    inline def get(name: String, id: Input[ID], state: LogDestinationPolicyState, opts: CustomResourceOptions): LogDestinationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogDestinationPolicy]
     
     /**
       * Returns true if the given object is an instance of LogDestinationPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ Boolean]
   }
   
   trait LogDestinationPolicyArgs extends StObject {
@@ -81,20 +76,16 @@ object logDestinationPolicyMod {
   }
   object LogDestinationPolicyArgs {
     
-    @scala.inline
-    def apply(accessPolicy: Input[String], destinationName: Input[String]): LogDestinationPolicyArgs = {
+    inline def apply(accessPolicy: Input[String], destinationName: Input[String]): LogDestinationPolicyArgs = {
       val __obj = js.Dynamic.literal(accessPolicy = accessPolicy.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogDestinationPolicyArgs]
     }
     
-    @scala.inline
-    implicit class LogDestinationPolicyArgsMutableBuilder[Self <: LogDestinationPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LogDestinationPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
+      inline def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationName(value: Input[String]): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+      inline def setDestinationName(value: Input[String]): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object logDestinationPolicyMod {
   }
   object LogDestinationPolicyState {
     
-    @scala.inline
-    def apply(): LogDestinationPolicyState = {
+    inline def apply(): LogDestinationPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogDestinationPolicyState]
     }
     
-    @scala.inline
-    implicit class LogDestinationPolicyStateMutableBuilder[Self <: LogDestinationPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: LogDestinationPolicyState](x: Self) {
       
-      @scala.inline
-      def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
+      inline def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
+      inline def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
       
-      @scala.inline
-      def setDestinationName(value: Input[String]): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+      inline def setDestinationName(value: Input[String]): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+      inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     }
   }
 }

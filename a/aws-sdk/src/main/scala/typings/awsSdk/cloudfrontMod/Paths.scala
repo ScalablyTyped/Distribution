@@ -18,25 +18,19 @@ trait Paths extends StObject {
 }
 object Paths {
   
-  @scala.inline
-  def apply(Quantity: integer): Paths = {
+  inline def apply(Quantity: integer): Paths = {
     val __obj = js.Dynamic.literal(Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paths]
   }
   
-  @scala.inline
-  implicit class PathsMutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
+  extension [Self <: Paths](x: Self) {
     
-    @scala.inline
-    def setItems(value: PathList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: PathList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

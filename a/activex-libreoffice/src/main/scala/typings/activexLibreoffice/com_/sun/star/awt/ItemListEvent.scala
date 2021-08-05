@@ -37,8 +37,7 @@ trait ItemListEvent
 }
 object ItemListEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ItemImageURL: Optional[String],
     ItemPosition: Double,
     ItemText: Optional[String],
@@ -48,16 +47,12 @@ object ItemListEvent {
     __obj.asInstanceOf[ItemListEvent]
   }
   
-  @scala.inline
-  implicit class ItemListEventMutableBuilder[Self <: ItemListEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ItemListEvent](x: Self) {
     
-    @scala.inline
-    def setItemImageURL(value: Optional[String]): Self = StObject.set(x, "ItemImageURL", value.asInstanceOf[js.Any])
+    inline def setItemImageURL(value: Optional[String]): Self = StObject.set(x, "ItemImageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemPosition(value: Double): Self = StObject.set(x, "ItemPosition", value.asInstanceOf[js.Any])
+    inline def setItemPosition(value: Double): Self = StObject.set(x, "ItemPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemText(value: Optional[String]): Self = StObject.set(x, "ItemText", value.asInstanceOf[js.Any])
+    inline def setItemText(value: Optional[String]): Self = StObject.set(x, "ItemText", value.asInstanceOf[js.Any])
   }
 }

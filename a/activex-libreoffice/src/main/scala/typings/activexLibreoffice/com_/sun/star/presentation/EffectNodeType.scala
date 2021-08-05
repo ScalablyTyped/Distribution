@@ -25,25 +25,18 @@ object EffectNodeType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AFTER_PREVIOUS: `3` = 3.asInstanceOf[`3`]
+    inline def AFTER_PREVIOUS: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DEFAULT: `0` = 0.asInstanceOf[`0`]
+    inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def INTERACTIVE_SEQUENCE: `6` = 6.asInstanceOf[`6`]
+    inline def INTERACTIVE_SEQUENCE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def MAIN_SEQUENCE: `4` = 4.asInstanceOf[`4`]
+    inline def MAIN_SEQUENCE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def ON_CLICK: `1` = 1.asInstanceOf[`1`]
+    inline def ON_CLICK: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TIMING_ROOT: `5` = 5.asInstanceOf[`5`]
+    inline def TIMING_ROOT: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def WITH_PREVIOUS: `2` = 2.asInstanceOf[`2`]
+    inline def WITH_PREVIOUS: `2` = 2.asInstanceOf[`2`]
   }
 }

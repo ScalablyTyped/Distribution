@@ -34,8 +34,7 @@ trait NotificationSubscriptionCreateParameters extends StObject {
 }
 object NotificationSubscriptionCreateParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: ISubscriptionChannel,
     description: String,
     filter: ISubscriptionFilter,
@@ -46,22 +45,16 @@ object NotificationSubscriptionCreateParameters {
     __obj.asInstanceOf[NotificationSubscriptionCreateParameters]
   }
   
-  @scala.inline
-  implicit class NotificationSubscriptionCreateParametersMutableBuilder[Self <: NotificationSubscriptionCreateParameters] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationSubscriptionCreateParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: ISubscriptionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: ISubscriptionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: ISubscriptionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ISubscriptionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: SubscriptionScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: SubscriptionScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriber(value: IdentityRef): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
+    inline def setSubscriber(value: IdentityRef): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
   }
 }

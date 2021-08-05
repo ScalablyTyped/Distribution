@@ -16,13 +16,13 @@ object loadingCoverViewMod {
   trait LoadingCoverView
     extends typings.playable.viewMod.default[ILoadingCoverViewStyles] {
     
-    @JSName("_$image")
+    /* private */ @JSName("_$image")
     var _$image: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
     def destroy(): Unit = js.native
     

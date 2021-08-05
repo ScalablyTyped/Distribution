@@ -24,22 +24,17 @@ trait Marker extends StObject {
 }
 object Marker {
   
-  @scala.inline
-  def apply(color: String, date: Date, label: String): Marker = {
+  inline def apply(color: String, date: Date, label: String): Marker = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Marker]
   }
   
-  @scala.inline
-  implicit class MarkerMutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
+  extension [Self <: Marker](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

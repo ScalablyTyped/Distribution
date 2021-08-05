@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsUpdateType extends StObject
 object WindowsUpdateType {
   
-  @scala.inline
-  def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
+  inline def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
   
-  @scala.inline
-  def businessReadyOnly: typings.microsoftGraph.microsoftGraphStrings.businessReadyOnly = "businessReadyOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessReadyOnly]
+  inline def businessReadyOnly: typings.microsoftGraph.microsoftGraphStrings.businessReadyOnly = "businessReadyOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessReadyOnly]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
   
-  @scala.inline
-  def windowsInsiderBuildFast: typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildFast = "windowsInsiderBuildFast".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildFast]
+  inline def windowsInsiderBuildFast: typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildFast = "windowsInsiderBuildFast".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildFast]
   
-  @scala.inline
-  def windowsInsiderBuildRelease: typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildRelease = "windowsInsiderBuildRelease".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildRelease]
+  inline def windowsInsiderBuildRelease: typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildRelease = "windowsInsiderBuildRelease".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildRelease]
   
-  @scala.inline
-  def windowsInsiderBuildSlow: typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildSlow = "windowsInsiderBuildSlow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildSlow]
+  inline def windowsInsiderBuildSlow: typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildSlow = "windowsInsiderBuildSlow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildSlow]
 }

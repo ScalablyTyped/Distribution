@@ -65,93 +65,93 @@ object metadataResolverMod {
       _errorCollector: ErrorCollector
     ) = this()
     
-    var _addTypeToModule: js.Any = js.native
+    /* private */ var _addTypeToModule: js.Any = js.native
     
-    var _checkSelfImport: js.Any = js.native
+    /* private */ var _checkSelfImport: js.Any = js.native
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _console: js.Any = js.native
+    /* private */ var _console: js.Any = js.native
     
-    var _createProxyClass: js.Any = js.native
+    /* private */ var _createProxyClass: js.Any = js.native
     
-    var _directiveCache: js.Any = js.native
+    /* private */ var _directiveCache: js.Any = js.native
     
-    var _directiveNormalizer: js.Any = js.native
+    /* private */ var _directiveNormalizer: js.Any = js.native
     
-    var _directiveResolver: js.Any = js.native
+    /* private */ var _directiveResolver: js.Any = js.native
     
-    var _errorCollector: js.Any = js.native
+    /* private */ var _errorCollector: js.Any = js.native
     
-    var _getDependenciesMetadata: js.Any = js.native
+    /* private */ var _getDependenciesMetadata: js.Any = js.native
     
-    var _getEntryComponentMetadata: js.Any = js.native
+    /* private */ var _getEntryComponentMetadata: js.Any = js.native
     
-    var _getEntryComponentsFromProvider: js.Any = js.native
+    /* private */ var _getEntryComponentsFromProvider: js.Any = js.native
     
-    var _getFactoryMetadata: js.Any = js.native
+    /* private */ var _getFactoryMetadata: js.Any = js.native
     
-    var _getIdentifierMetadata: js.Any = js.native
+    /* private */ var _getIdentifierMetadata: js.Any = js.native
     
-    var _getInjectableTypeMetadata: js.Any = js.native
+    /* private */ var _getInjectableTypeMetadata: js.Any = js.native
     
-    var _getProvidersMetadata: js.Any = js.native
+    /* private */ var _getProvidersMetadata: js.Any = js.native
     
-    var _getQueriesMetadata: js.Any = js.native
+    /* private */ var _getQueriesMetadata: js.Any = js.native
     
-    var _getQueryMetadata: js.Any = js.native
+    /* private */ var _getQueryMetadata: js.Any = js.native
     
-    var _getTokenMetadata: js.Any = js.native
+    /* private */ var _getTokenMetadata: js.Any = js.native
     
-    var _getTransitiveNgModuleMetadata: js.Any = js.native
+    /* private */ var _getTransitiveNgModuleMetadata: js.Any = js.native
     
-    var _getTypeDescriptor: js.Any = js.native
+    /* private */ var _getTypeDescriptor: js.Any = js.native
     
-    var _getTypeMetadata: js.Any = js.native
+    /* private */ var _getTypeMetadata: js.Any = js.native
     
-    var _htmlParser: js.Any = js.native
+    /* private */ var _htmlParser: js.Any = js.native
     
-    var _loadPipeMetadata: js.Any = js.native
+    /* private */ var _loadPipeMetadata: js.Any = js.native
     
-    var _loadSummary: js.Any = js.native
+    /* private */ var _loadSummary: js.Any = js.native
     
-    var _ngModuleCache: js.Any = js.native
+    /* private */ var _ngModuleCache: js.Any = js.native
     
-    var _ngModuleOfTypes: js.Any = js.native
+    /* private */ var _ngModuleOfTypes: js.Any = js.native
     
-    var _ngModuleResolver: js.Any = js.native
+    /* private */ var _ngModuleResolver: js.Any = js.native
     
-    var _nonNormalizedDirectiveCache: js.Any = js.native
+    /* private */ var _nonNormalizedDirectiveCache: js.Any = js.native
     
-    var _pipeCache: js.Any = js.native
+    /* private */ var _pipeCache: js.Any = js.native
     
-    var _pipeResolver: js.Any = js.native
+    /* private */ var _pipeResolver: js.Any = js.native
     
-    var _queryVarBindings: js.Any = js.native
+    /* private */ var _queryVarBindings: js.Any = js.native
     
-    var _reflector: js.Any = js.native
+    /* private */ var _reflector: js.Any = js.native
     
-    var _reportError: js.Any = js.native
+    /* private */ var _reportError: js.Any = js.native
     
-    var _schemaRegistry: js.Any = js.native
+    /* private */ var _schemaRegistry: js.Any = js.native
     
-    var _shallowModuleCache: js.Any = js.native
+    /* private */ var _shallowModuleCache: js.Any = js.native
     
-    var _staticSymbolCache: js.Any = js.native
+    /* private */ var _staticSymbolCache: js.Any = js.native
     
-    var _summaryCache: js.Any = js.native
+    /* private */ var _summaryCache: js.Any = js.native
     
-    var _summaryResolver: js.Any = js.native
+    /* private */ var _summaryResolver: js.Any = js.native
     
-    var _validateProvider: js.Any = js.native
+    /* private */ var _validateProvider: js.Any = js.native
     
     def clearCache(): Unit = js.native
     
     def clearCacheFor(`type`: Type): Unit = js.native
     
-    var getComponentFactory: js.Any = js.native
+    /* private */ var getComponentFactory: js.Any = js.native
     
-    var getComponentViewClass: js.Any = js.native
+    /* private */ var getComponentViewClass: js.Any = js.native
     
     /**
       * Gets the metadata for the given directive.
@@ -161,7 +161,7 @@ object metadataResolverMod {
     
     def getDirectiveSummary(dirType: js.Any): CompileDirectiveSummary = js.native
     
-    var getGeneratedClass: js.Any = js.native
+    /* private */ var getGeneratedClass: js.Any = js.native
     
     def getHostComponentMetadata(compMeta: CompileDirectiveMetadata): CompileDirectiveMetadata = js.native
     def getHostComponentMetadata(compMeta: CompileDirectiveMetadata, hostViewType: ProxyClass): CompileDirectiveMetadata = js.native
@@ -203,11 +203,11 @@ object metadataResolverMod {
     
     def getReflector(): CompileReflector = js.native
     
-    var getRendererType: js.Any = js.native
+    /* private */ var getRendererType: js.Any = js.native
     
     def getShallowModuleMetadata(moduleType: js.Any): CompileShallowModuleMetadata | Null = js.native
     
-    var initComponentFactory: js.Any = js.native
+    /* private */ var initComponentFactory: js.Any = js.native
     
     def isAbstractDirective(`type`: js.Any): Boolean = js.native
     

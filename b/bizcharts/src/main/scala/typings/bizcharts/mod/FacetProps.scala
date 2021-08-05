@@ -33,76 +33,53 @@ trait FacetProps
 }
 object FacetProps {
   
-  @scala.inline
-  def apply(): FacetProps = {
+  inline def apply(): FacetProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FacetProps]
   }
   
-  @scala.inline
-  implicit class FacetPropsMutableBuilder[Self <: FacetProps] (val x: Self) extends AnyVal {
+  extension [Self <: FacetProps](x: Self) {
     
-    @scala.inline
-    def setAutoSetAxis(value: Boolean): Self = StObject.set(x, "autoSetAxis", value.asInstanceOf[js.Any])
+    inline def setAutoSetAxis(value: Boolean): Self = StObject.set(x, "autoSetAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSetAxisUndefined: Self = StObject.set(x, "autoSetAxis", js.undefined)
+    inline def setAutoSetAxisUndefined: Self = StObject.set(x, "autoSetAxis", js.undefined)
     
-    @scala.inline
-    def setColTitle(value: OffsetY): Self = StObject.set(x, "colTitle", value.asInstanceOf[js.Any])
+    inline def setColTitle(value: OffsetY): Self = StObject.set(x, "colTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColTitleUndefined: Self = StObject.set(x, "colTitle", js.undefined)
+    inline def setColTitleUndefined: Self = StObject.set(x, "colTitle", js.undefined)
     
-    @scala.inline
-    def setEachView(value: (/* view */ js.UndefOr[js.Any], /* facet */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachView", js.Any.fromFunction2(value))
+    inline def setEachView(value: (/* view */ js.UndefOr[js.Any], /* facet */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachView", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachViewUndefined: Self = StObject.set(x, "eachView", js.undefined)
+    inline def setEachViewUndefined: Self = StObject.set(x, "eachView", js.undefined)
     
-    @scala.inline
-    def setFields(value: String | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
-    @scala.inline
-    def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
-    @scala.inline
-    def setRowTitle(value: OffsetX): Self = StObject.set(x, "rowTitle", value.asInstanceOf[js.Any])
+    inline def setRowTitle(value: OffsetX): Self = StObject.set(x, "rowTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowTitleUndefined: Self = StObject.set(x, "rowTitle", js.undefined)
+    inline def setRowTitleUndefined: Self = StObject.set(x, "rowTitle", js.undefined)
     
-    @scala.inline
-    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
+    inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
+    inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     
-    @scala.inline
-    def setType(value: FacetType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FacetType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

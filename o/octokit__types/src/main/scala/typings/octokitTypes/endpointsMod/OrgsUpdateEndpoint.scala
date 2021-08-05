@@ -113,107 +113,74 @@ trait OrgsUpdateEndpoint extends StObject {
 }
 object OrgsUpdateEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): OrgsUpdateEndpoint = {
+  inline def apply(org_ : String): OrgsUpdateEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsUpdateEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsUpdateEndpointMutableBuilder[Self <: OrgsUpdateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsUpdateEndpoint](x: Self) {
     
-    @scala.inline
-    def setBilling_email(value: String): Self = StObject.set(x, "billing_email", value.asInstanceOf[js.Any])
+    inline def setBilling_email(value: String): Self = StObject.set(x, "billing_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBilling_emailUndefined: Self = StObject.set(x, "billing_email", js.undefined)
+    inline def setBilling_emailUndefined: Self = StObject.set(x, "billing_email", js.undefined)
     
-    @scala.inline
-    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    @scala.inline
-    def setDefault_repository_permission(value: read | write | admin | none): Self = StObject.set(x, "default_repository_permission", value.asInstanceOf[js.Any])
+    inline def setDefault_repository_permission(value: read | write | admin | none): Self = StObject.set(x, "default_repository_permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_repository_permissionUndefined: Self = StObject.set(x, "default_repository_permission", js.undefined)
+    inline def setDefault_repository_permissionUndefined: Self = StObject.set(x, "default_repository_permission", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setHas_organization_projects(value: Boolean): Self = StObject.set(x, "has_organization_projects", value.asInstanceOf[js.Any])
+    inline def setHas_organization_projects(value: Boolean): Self = StObject.set(x, "has_organization_projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_organization_projectsUndefined: Self = StObject.set(x, "has_organization_projects", js.undefined)
+    inline def setHas_organization_projectsUndefined: Self = StObject.set(x, "has_organization_projects", js.undefined)
     
-    @scala.inline
-    def setHas_repository_projects(value: Boolean): Self = StObject.set(x, "has_repository_projects", value.asInstanceOf[js.Any])
+    inline def setHas_repository_projects(value: Boolean): Self = StObject.set(x, "has_repository_projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_repository_projectsUndefined: Self = StObject.set(x, "has_repository_projects", js.undefined)
+    inline def setHas_repository_projectsUndefined: Self = StObject.set(x, "has_repository_projects", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMembers_allowed_repository_creation_type(value: all | `private` | none): Self = StObject.set(x, "members_allowed_repository_creation_type", value.asInstanceOf[js.Any])
+    inline def setMembers_allowed_repository_creation_type(value: all | `private` | none): Self = StObject.set(x, "members_allowed_repository_creation_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers_allowed_repository_creation_typeUndefined: Self = StObject.set(x, "members_allowed_repository_creation_type", js.undefined)
+    inline def setMembers_allowed_repository_creation_typeUndefined: Self = StObject.set(x, "members_allowed_repository_creation_type", js.undefined)
     
-    @scala.inline
-    def setMembers_can_create_internal_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_internal_repositories", value.asInstanceOf[js.Any])
+    inline def setMembers_can_create_internal_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_internal_repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers_can_create_internal_repositoriesUndefined: Self = StObject.set(x, "members_can_create_internal_repositories", js.undefined)
+    inline def setMembers_can_create_internal_repositoriesUndefined: Self = StObject.set(x, "members_can_create_internal_repositories", js.undefined)
     
-    @scala.inline
-    def setMembers_can_create_private_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_private_repositories", value.asInstanceOf[js.Any])
+    inline def setMembers_can_create_private_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_private_repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers_can_create_private_repositoriesUndefined: Self = StObject.set(x, "members_can_create_private_repositories", js.undefined)
+    inline def setMembers_can_create_private_repositoriesUndefined: Self = StObject.set(x, "members_can_create_private_repositories", js.undefined)
     
-    @scala.inline
-    def setMembers_can_create_public_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_public_repositories", value.asInstanceOf[js.Any])
+    inline def setMembers_can_create_public_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_public_repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers_can_create_public_repositoriesUndefined: Self = StObject.set(x, "members_can_create_public_repositories", js.undefined)
+    inline def setMembers_can_create_public_repositoriesUndefined: Self = StObject.set(x, "members_can_create_public_repositories", js.undefined)
     
-    @scala.inline
-    def setMembers_can_create_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_repositories", value.asInstanceOf[js.Any])
+    inline def setMembers_can_create_repositories(value: Boolean): Self = StObject.set(x, "members_can_create_repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers_can_create_repositoriesUndefined: Self = StObject.set(x, "members_can_create_repositories", js.undefined)
+    inline def setMembers_can_create_repositoriesUndefined: Self = StObject.set(x, "members_can_create_repositories", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter_username(value: String): Self = StObject.set(x, "twitter_username", value.asInstanceOf[js.Any])
+    inline def setTwitter_username(value: String): Self = StObject.set(x, "twitter_username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter_usernameUndefined: Self = StObject.set(x, "twitter_username", js.undefined)
+    inline def setTwitter_usernameUndefined: Self = StObject.set(x, "twitter_username", js.undefined)
   }
 }

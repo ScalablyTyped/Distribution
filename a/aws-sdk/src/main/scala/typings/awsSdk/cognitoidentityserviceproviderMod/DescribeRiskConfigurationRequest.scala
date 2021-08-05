@@ -18,22 +18,17 @@ trait DescribeRiskConfigurationRequest extends StObject {
 }
 object DescribeRiskConfigurationRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType): DescribeRiskConfigurationRequest = {
+  inline def apply(UserPoolId: UserPoolIdType): DescribeRiskConfigurationRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRiskConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRiskConfigurationRequestMutableBuilder[Self <: DescribeRiskConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRiskConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

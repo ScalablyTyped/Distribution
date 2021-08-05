@@ -28,37 +28,27 @@ trait ContainerDetails extends StObject {
 }
 object ContainerDetails {
   
-  @scala.inline
-  def apply(): ContainerDetails = {
+  inline def apply(): ContainerDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerDetails]
   }
   
-  @scala.inline
-  implicit class ContainerDetailsMutableBuilder[Self <: ContainerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerDetails](x: Self) {
     
-    @scala.inline
-    def setImageId(value: NonEmptyString): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: NonEmptyString): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
-    @scala.inline
-    def setImageName(value: NonEmptyString): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: NonEmptyString): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageNameUndefined: Self = StObject.set(x, "ImageName", js.undefined)
+    inline def setImageNameUndefined: Self = StObject.set(x, "ImageName", js.undefined)
     
-    @scala.inline
-    def setLaunchedAt(value: NonEmptyString): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
+    inline def setLaunchedAt(value: NonEmptyString): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
+    inline def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

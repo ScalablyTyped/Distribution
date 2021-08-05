@@ -17,22 +17,17 @@ trait PickCardStylefooterConten extends StObject {
 }
 object PickCardStylefooterConten {
   
-  @scala.inline
-  def apply(footerContent: TextStyle, footerExtra: TextStyle, footerWrap: ViewStyle): PickCardStylefooterConten = {
+  inline def apply(footerContent: TextStyle, footerExtra: TextStyle, footerWrap: ViewStyle): PickCardStylefooterConten = {
     val __obj = js.Dynamic.literal(footerContent = footerContent.asInstanceOf[js.Any], footerExtra = footerExtra.asInstanceOf[js.Any], footerWrap = footerWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickCardStylefooterConten]
   }
   
-  @scala.inline
-  implicit class PickCardStylefooterContenMutableBuilder[Self <: PickCardStylefooterConten] (val x: Self) extends AnyVal {
+  extension [Self <: PickCardStylefooterConten](x: Self) {
     
-    @scala.inline
-    def setFooterContent(value: TextStyle): Self = StObject.set(x, "footerContent", value.asInstanceOf[js.Any])
+    inline def setFooterContent(value: TextStyle): Self = StObject.set(x, "footerContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterExtra(value: TextStyle): Self = StObject.set(x, "footerExtra", value.asInstanceOf[js.Any])
+    inline def setFooterExtra(value: TextStyle): Self = StObject.set(x, "footerExtra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterWrap(value: ViewStyle): Self = StObject.set(x, "footerWrap", value.asInstanceOf[js.Any])
+    inline def setFooterWrap(value: ViewStyle): Self = StObject.set(x, "footerWrap", value.asInstanceOf[js.Any])
   }
 }

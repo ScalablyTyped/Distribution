@@ -27,22 +27,17 @@ trait InitializeResult[T]
 }
 object InitializeResult {
   
-  @scala.inline
-  def apply[T](capabilities: ServerCapabilities[T]): InitializeResult[T] = {
+  inline def apply[T](capabilities: ServerCapabilities[T]): InitializeResult[T] = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeResult[T]]
   }
   
-  @scala.inline
-  implicit class InitializeResultMutableBuilder[Self <: InitializeResult[?], T] (val x: Self & InitializeResult[T]) extends AnyVal {
+  extension [Self <: InitializeResult[?], T](x: Self & InitializeResult[T]) {
     
-    @scala.inline
-    def setCapabilities(value: ServerCapabilities[T]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: ServerCapabilities[T]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerInfo(value: Name): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
+    inline def setServerInfo(value: Name): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerInfoUndefined: Self = StObject.set(x, "serverInfo", js.undefined)
+    inline def setServerInfoUndefined: Self = StObject.set(x, "serverInfo", js.undefined)
   }
 }

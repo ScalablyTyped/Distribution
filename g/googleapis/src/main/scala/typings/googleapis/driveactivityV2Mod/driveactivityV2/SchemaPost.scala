@@ -16,19 +16,15 @@ trait SchemaPost extends StObject {
 }
 object SchemaPost {
   
-  @scala.inline
-  def apply(): SchemaPost = {
+  inline def apply(): SchemaPost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPost]
   }
   
-  @scala.inline
-  implicit class SchemaPostMutableBuilder[Self <: SchemaPost] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPost](x: Self) {
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
   }
 }

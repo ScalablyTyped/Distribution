@@ -19,8 +19,7 @@ trait SystemProps
      with XGridProps
 object SystemProps {
   
-  @scala.inline
-  def apply(): SystemProps = {
+  inline def apply(): SystemProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemProps]
   }

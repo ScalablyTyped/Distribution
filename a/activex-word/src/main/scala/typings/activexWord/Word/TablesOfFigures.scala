@@ -66,6 +66,6 @@ trait TablesOfFigures extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.TablesOfFigures_typekey")
+  /* private */ @JSName("Word.TablesOfFigures_typekey")
   var WordDotTablesOfFigures_typekey: TablesOfFigures = js.native
 }

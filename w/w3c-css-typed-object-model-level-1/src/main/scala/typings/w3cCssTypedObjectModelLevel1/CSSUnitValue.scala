@@ -14,8 +14,7 @@ trait CSSUnitValue
 }
 object CSSUnitValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: /* repeated */ CSSNumberish => CSSNumericValue,
     div: /* repeated */ CSSNumberish => CSSNumericValue,
     equals_ : /* repeated */ CSSNumberish => Boolean,
@@ -35,13 +34,10 @@ object CSSUnitValue {
     __obj.asInstanceOf[CSSUnitValue]
   }
   
-  @scala.inline
-  implicit class CSSUnitValueMutableBuilder[Self <: CSSUnitValue] (val x: Self) extends AnyVal {
+  extension [Self <: CSSUnitValue](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

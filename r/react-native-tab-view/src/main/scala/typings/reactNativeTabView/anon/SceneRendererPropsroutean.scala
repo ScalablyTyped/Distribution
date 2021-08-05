@@ -18,8 +18,7 @@ trait SceneRendererPropsroutean extends StObject {
 }
 object SceneRendererPropsroutean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     jumpTo: String => Unit,
     layout: typings.reactNativeTabView.typesMod.Layout,
     position: Node,
@@ -29,19 +28,14 @@ object SceneRendererPropsroutean {
     __obj.asInstanceOf[SceneRendererPropsroutean]
   }
   
-  @scala.inline
-  implicit class SceneRendererPropsrouteanMutableBuilder[Self <: SceneRendererPropsroutean] (val x: Self) extends AnyVal {
+  extension [Self <: SceneRendererPropsroutean](x: Self) {
     
-    @scala.inline
-    def setJumpTo(value: String => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
+    inline def setJumpTo(value: String => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLayout(value: typings.reactNativeTabView.typesMod.Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: typings.reactNativeTabView.typesMod.Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Node): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Node): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute(value: js.Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: js.Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

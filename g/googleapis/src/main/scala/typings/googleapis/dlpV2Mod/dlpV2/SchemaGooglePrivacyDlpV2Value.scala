@@ -32,61 +32,43 @@ trait SchemaGooglePrivacyDlpV2Value extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Value {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Value = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Value = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Value]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ValueMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Value] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Value](x: Self) {
     
-    @scala.inline
-    def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
+    inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
+    inline def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
-    @scala.inline
-    def setDateValue(value: SchemaGoogleTypeDate): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
+    inline def setDateValue(value: SchemaGoogleTypeDate): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
+    inline def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
     
-    @scala.inline
-    def setDayOfWeekValue(value: String): Self = StObject.set(x, "dayOfWeekValue", value.asInstanceOf[js.Any])
+    inline def setDayOfWeekValue(value: String): Self = StObject.set(x, "dayOfWeekValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekValueUndefined: Self = StObject.set(x, "dayOfWeekValue", js.undefined)
+    inline def setDayOfWeekValueUndefined: Self = StObject.set(x, "dayOfWeekValue", js.undefined)
     
-    @scala.inline
-    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
+    inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
+    inline def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
-    @scala.inline
-    def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
-    @scala.inline
-    def setTimeValue(value: SchemaGoogleTypeTimeOfDay): Self = StObject.set(x, "timeValue", value.asInstanceOf[js.Any])
+    inline def setTimeValue(value: SchemaGoogleTypeTimeOfDay): Self = StObject.set(x, "timeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeValueUndefined: Self = StObject.set(x, "timeValue", js.undefined)
+    inline def setTimeValueUndefined: Self = StObject.set(x, "timeValue", js.undefined)
     
-    @scala.inline
-    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
+    inline def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
+    inline def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }
 }

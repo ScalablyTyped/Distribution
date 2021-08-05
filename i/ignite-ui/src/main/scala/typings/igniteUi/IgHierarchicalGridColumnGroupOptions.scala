@@ -38,31 +38,23 @@ trait IgHierarchicalGridColumnGroupOptions
 }
 object IgHierarchicalGridColumnGroupOptions {
   
-  @scala.inline
-  def apply(): IgHierarchicalGridColumnGroupOptions = {
+  inline def apply(): IgHierarchicalGridColumnGroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgHierarchicalGridColumnGroupOptions]
   }
   
-  @scala.inline
-  implicit class IgHierarchicalGridColumnGroupOptionsMutableBuilder[Self <: IgHierarchicalGridColumnGroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IgHierarchicalGridColumnGroupOptions](x: Self) {
     
-    @scala.inline
-    def setAllowGroupCollapsing(value: Boolean): Self = StObject.set(x, "allowGroupCollapsing", value.asInstanceOf[js.Any])
+    inline def setAllowGroupCollapsing(value: Boolean): Self = StObject.set(x, "allowGroupCollapsing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowGroupCollapsingUndefined: Self = StObject.set(x, "allowGroupCollapsing", js.undefined)
+    inline def setAllowGroupCollapsingUndefined: Self = StObject.set(x, "allowGroupCollapsing", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
   }
 }

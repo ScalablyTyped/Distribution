@@ -23,22 +23,17 @@ trait TaskAgentAuthorization extends StObject {
 }
 object TaskAgentAuthorization {
   
-  @scala.inline
-  def apply(authorizationUrl: String, clientId: String, publicKey: TaskAgentPublicKey): TaskAgentAuthorization = {
+  inline def apply(authorizationUrl: String, clientId: String, publicKey: TaskAgentPublicKey): TaskAgentAuthorization = {
     val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskAgentAuthorization]
   }
   
-  @scala.inline
-  implicit class TaskAgentAuthorizationMutableBuilder[Self <: TaskAgentAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentAuthorization](x: Self) {
     
-    @scala.inline
-    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: TaskAgentPublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: TaskAgentPublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ListPipelinesResponse extends StObject {
 }
 object ListPipelinesResponse {
   
-  @scala.inline
-  def apply(): ListPipelinesResponse = {
+  inline def apply(): ListPipelinesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPipelinesResponse]
   }
   
-  @scala.inline
-  implicit class ListPipelinesResponseMutableBuilder[Self <: ListPipelinesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPipelinesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: Id): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: Id): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setPipelines(value: Pipelines): Self = StObject.set(x, "Pipelines", value.asInstanceOf[js.Any])
+    inline def setPipelines(value: Pipelines): Self = StObject.set(x, "Pipelines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelinesUndefined: Self = StObject.set(x, "Pipelines", js.undefined)
+    inline def setPipelinesUndefined: Self = StObject.set(x, "Pipelines", js.undefined)
     
-    @scala.inline
-    def setPipelinesVarargs(value: Pipeline*): Self = StObject.set(x, "Pipelines", js.Array(value :_*))
+    inline def setPipelinesVarargs(value: Pipeline*): Self = StObject.set(x, "Pipelines", js.Array(value :_*))
   }
 }

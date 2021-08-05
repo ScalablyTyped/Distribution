@@ -16,37 +16,27 @@ trait SchedulerMessagesRecurrenceEditorMonthly extends StObject {
 }
 object SchedulerMessagesRecurrenceEditorMonthly {
   
-  @scala.inline
-  def apply(): SchedulerMessagesRecurrenceEditorMonthly = {
+  inline def apply(): SchedulerMessagesRecurrenceEditorMonthly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorMonthly]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorMonthlyMutableBuilder[Self <: SchedulerMessagesRecurrenceEditorMonthly] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesRecurrenceEditorMonthly](x: Self) {
     
-    @scala.inline
-    def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setRepeatEvery(value: String): Self = StObject.set(x, "repeatEvery", value.asInstanceOf[js.Any])
+    inline def setRepeatEvery(value: String): Self = StObject.set(x, "repeatEvery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatEveryUndefined: Self = StObject.set(x, "repeatEvery", js.undefined)
+    inline def setRepeatEveryUndefined: Self = StObject.set(x, "repeatEvery", js.undefined)
     
-    @scala.inline
-    def setRepeatOn(value: String): Self = StObject.set(x, "repeatOn", value.asInstanceOf[js.Any])
+    inline def setRepeatOn(value: String): Self = StObject.set(x, "repeatOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatOnUndefined: Self = StObject.set(x, "repeatOn", js.undefined)
+    inline def setRepeatOnUndefined: Self = StObject.set(x, "repeatOn", js.undefined)
   }
 }

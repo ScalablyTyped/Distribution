@@ -22,22 +22,17 @@ trait StaticClassSansProvider
 }
 object StaticClassSansProvider {
   
-  @scala.inline
-  def apply(deps: js.Array[js.Any], useClass: Type[js.Any]): StaticClassSansProvider = {
+  inline def apply(deps: js.Array[js.Any], useClass: Type[js.Any]): StaticClassSansProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticClassSansProvider]
   }
   
-  @scala.inline
-  implicit class StaticClassSansProviderMutableBuilder[Self <: StaticClassSansProvider] (val x: Self) extends AnyVal {
+  extension [Self <: StaticClassSansProvider](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setUseClass(value: Type[js.Any]): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
+    inline def setUseClass(value: Type[js.Any]): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
   }
 }

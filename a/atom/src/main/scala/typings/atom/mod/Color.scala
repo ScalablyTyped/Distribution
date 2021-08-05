@@ -14,19 +14,15 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(toHexString: () => String, toRGBAString: () => String): Color = {
+  inline def apply(toHexString: () => String, toRGBAString: () => String): Color = {
     val __obj = js.Dynamic.literal(toHexString = js.Any.fromFunction0(toHexString), toRGBAString = js.Any.fromFunction0(toRGBAString))
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
+    inline def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToRGBAString(value: () => String): Self = StObject.set(x, "toRGBAString", js.Any.fromFunction0(value))
+    inline def setToRGBAString(value: () => String): Self = StObject.set(x, "toRGBAString", js.Any.fromFunction0(value))
   }
 }

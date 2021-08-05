@@ -43,6 +43,5 @@ object FlowPanelModel {
   @JSImport("survey-knockout", "FlowPanelModel.contentElementNamePrefix")
   @js.native
   def contentElementNamePrefix: String = js.native
-  @scala.inline
-  def contentElementNamePrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentElementNamePrefix")(x.asInstanceOf[js.Any])
+  inline def contentElementNamePrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentElementNamePrefix")(x.asInstanceOf[js.Any])
 }

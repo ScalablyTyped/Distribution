@@ -10,16 +10,13 @@ trait LiveQueryHandle extends StObject {
 }
 object LiveQueryHandle {
   
-  @scala.inline
-  def apply(stop: () => Unit): LiveQueryHandle = {
+  inline def apply(stop: () => Unit): LiveQueryHandle = {
     val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[LiveQueryHandle]
   }
   
-  @scala.inline
-  implicit class LiveQueryHandleMutableBuilder[Self <: LiveQueryHandle] (val x: Self) extends AnyVal {
+  extension [Self <: LiveQueryHandle](x: Self) {
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

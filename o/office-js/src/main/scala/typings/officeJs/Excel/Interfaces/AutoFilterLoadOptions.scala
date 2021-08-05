@@ -45,37 +45,27 @@ trait AutoFilterLoadOptions extends StObject {
 }
 object AutoFilterLoadOptions {
   
-  @scala.inline
-  def apply(): AutoFilterLoadOptions = {
+  inline def apply(): AutoFilterLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoFilterLoadOptions]
   }
   
-  @scala.inline
-  implicit class AutoFilterLoadOptionsMutableBuilder[Self <: AutoFilterLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AutoFilterLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIsDataFiltered(value: Boolean): Self = StObject.set(x, "isDataFiltered", value.asInstanceOf[js.Any])
+    inline def setIsDataFiltered(value: Boolean): Self = StObject.set(x, "isDataFiltered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDataFilteredUndefined: Self = StObject.set(x, "isDataFiltered", js.undefined)
+    inline def setIsDataFilteredUndefined: Self = StObject.set(x, "isDataFiltered", js.undefined)
   }
 }

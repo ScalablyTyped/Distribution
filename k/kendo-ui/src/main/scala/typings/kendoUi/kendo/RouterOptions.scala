@@ -24,61 +24,43 @@ trait RouterOptions extends StObject {
 }
 object RouterOptions {
   
-  @scala.inline
-  def apply(): RouterOptions = {
+  inline def apply(): RouterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouterOptions]
   }
   
-  @scala.inline
-  implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RouterOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: /* e */ RouterChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ RouterChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setHashBang(value: Boolean): Self = StObject.set(x, "hashBang", value.asInstanceOf[js.Any])
+    inline def setHashBang(value: Boolean): Self = StObject.set(x, "hashBang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashBangUndefined: Self = StObject.set(x, "hashBang", js.undefined)
+    inline def setHashBangUndefined: Self = StObject.set(x, "hashBang", js.undefined)
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
-    @scala.inline
-    def setInit(value: /* e */ RouterEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* e */ RouterEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+    inline def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
+    inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setRouteMissing(value: /* e */ RouterRouteMissingEvent => Unit): Self = StObject.set(x, "routeMissing", js.Any.fromFunction1(value))
+    inline def setRouteMissing(value: /* e */ RouterRouteMissingEvent => Unit): Self = StObject.set(x, "routeMissing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRouteMissingUndefined: Self = StObject.set(x, "routeMissing", js.undefined)
+    inline def setRouteMissingUndefined: Self = StObject.set(x, "routeMissing", js.undefined)
     
-    @scala.inline
-    def setSame(value: /* e */ RouterEvent => Unit): Self = StObject.set(x, "same", js.Any.fromFunction1(value))
+    inline def setSame(value: /* e */ RouterEvent => Unit): Self = StObject.set(x, "same", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSameUndefined: Self = StObject.set(x, "same", js.undefined)
+    inline def setSameUndefined: Self = StObject.set(x, "same", js.undefined)
   }
 }

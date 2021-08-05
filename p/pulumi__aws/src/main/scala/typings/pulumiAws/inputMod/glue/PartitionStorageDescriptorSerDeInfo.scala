@@ -25,31 +25,23 @@ trait PartitionStorageDescriptorSerDeInfo extends StObject {
 }
 object PartitionStorageDescriptorSerDeInfo {
   
-  @scala.inline
-  def apply(): PartitionStorageDescriptorSerDeInfo = {
+  inline def apply(): PartitionStorageDescriptorSerDeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionStorageDescriptorSerDeInfo]
   }
   
-  @scala.inline
-  implicit class PartitionStorageDescriptorSerDeInfoMutableBuilder[Self <: PartitionStorageDescriptorSerDeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionStorageDescriptorSerDeInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setSerializationLibrary(value: Input[String]): Self = StObject.set(x, "serializationLibrary", value.asInstanceOf[js.Any])
+    inline def setSerializationLibrary(value: Input[String]): Self = StObject.set(x, "serializationLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationLibraryUndefined: Self = StObject.set(x, "serializationLibrary", js.undefined)
+    inline def setSerializationLibraryUndefined: Self = StObject.set(x, "serializationLibrary", js.undefined)
   }
 }

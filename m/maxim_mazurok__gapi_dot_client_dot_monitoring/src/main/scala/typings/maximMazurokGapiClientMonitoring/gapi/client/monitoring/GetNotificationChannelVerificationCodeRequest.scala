@@ -16,19 +16,15 @@ trait GetNotificationChannelVerificationCodeRequest extends StObject {
 }
 object GetNotificationChannelVerificationCodeRequest {
   
-  @scala.inline
-  def apply(): GetNotificationChannelVerificationCodeRequest = {
+  inline def apply(): GetNotificationChannelVerificationCodeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNotificationChannelVerificationCodeRequest]
   }
   
-  @scala.inline
-  implicit class GetNotificationChannelVerificationCodeRequestMutableBuilder[Self <: GetNotificationChannelVerificationCodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetNotificationChannelVerificationCodeRequest](x: Self) {
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
   }
 }

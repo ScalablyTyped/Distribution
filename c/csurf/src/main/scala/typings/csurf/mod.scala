@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
-  @scala.inline
-  def apply(options: Cookie): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  inline def apply(options: Cookie): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
   
   @JSImport("csurf", JSImport.Namespace)
   @js.native
@@ -30,20 +28,16 @@ object mod {
   }
   object CookieOptions {
     
-    @scala.inline
-    def apply(): CookieOptions = {
+    inline def apply(): CookieOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieOptions]
     }
     
-    @scala.inline
-    implicit class CookieOptionsMutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CookieOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -57,17 +51,14 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(csrfToken: () => String): Request = {
+        inline def apply(csrfToken: () => String): Request = {
           val __obj = js.Dynamic.literal(csrfToken = js.Any.fromFunction0(csrfToken))
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setCsrfToken(value: () => String): Self = StObject.set(x, "csrfToken", js.Any.fromFunction0(value))
+          inline def setCsrfToken(value: () => String): Self = StObject.set(x, "csrfToken", js.Any.fromFunction0(value))
         }
       }
     }

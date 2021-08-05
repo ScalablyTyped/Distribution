@@ -82,8 +82,7 @@ trait XServiceTypeDescription
 }
 object XServiceTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MandatoryInterfaces: SafeArray[XInterfaceTypeDescription],
     MandatoryServices: SafeArray[XServiceTypeDescription],
     Name: String,
@@ -106,37 +105,26 @@ object XServiceTypeDescription {
     __obj.asInstanceOf[XServiceTypeDescription]
   }
   
-  @scala.inline
-  implicit class XServiceTypeDescriptionMutableBuilder[Self <: XServiceTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XServiceTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetMandatoryInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "getMandatoryInterfaces", js.Any.fromFunction0(value))
+    inline def setGetMandatoryInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "getMandatoryInterfaces", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMandatoryServices(value: () => SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "getMandatoryServices", js.Any.fromFunction0(value))
+    inline def setGetMandatoryServices(value: () => SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "getMandatoryServices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptionalInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "getOptionalInterfaces", js.Any.fromFunction0(value))
+    inline def setGetOptionalInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "getOptionalInterfaces", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptionalServices(value: () => SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "getOptionalServices", js.Any.fromFunction0(value))
+    inline def setGetOptionalServices(value: () => SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "getOptionalServices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProperties(value: () => SafeArray[XPropertyTypeDescription]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => SafeArray[XPropertyTypeDescription]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMandatoryInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "MandatoryInterfaces", value.asInstanceOf[js.Any])
+    inline def setMandatoryInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "MandatoryInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatoryServices(value: SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "MandatoryServices", value.asInstanceOf[js.Any])
+    inline def setMandatoryServices(value: SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "MandatoryServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "OptionalInterfaces", value.asInstanceOf[js.Any])
+    inline def setOptionalInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "OptionalInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalServices(value: SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "OptionalServices", value.asInstanceOf[js.Any])
+    inline def setOptionalServices(value: SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "OptionalServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: SafeArray[XPropertyTypeDescription]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[XPropertyTypeDescription]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
   }
 }

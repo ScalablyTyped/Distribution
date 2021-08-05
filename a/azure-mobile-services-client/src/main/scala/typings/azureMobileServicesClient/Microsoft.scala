@@ -46,38 +46,28 @@ object Microsoft {
     }
     object InvokeApiOptions {
       
-      @scala.inline
-      def apply(): InvokeApiOptions = {
+      inline def apply(): InvokeApiOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InvokeApiOptions]
       }
       
-      @scala.inline
-      implicit class InvokeApiOptionsMutableBuilder[Self <: InvokeApiOptions] (val x: Self) extends AnyVal {
+      extension [Self <: InvokeApiOptions](x: Self) {
         
-        @scala.inline
-        def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+        inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         
-        @scala.inline
-        def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+        inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+        inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        @scala.inline
-        def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+        inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       }
     }
     
@@ -269,8 +259,7 @@ object Microsoft {
     }
     object User {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessTokens: js.Any,
         getIdentities: () => js.Any,
         level: String,
@@ -281,23 +270,17 @@ object Microsoft {
         __obj.asInstanceOf[User]
       }
       
-      @scala.inline
-      implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+      extension [Self <: User](x: Self) {
         
-        @scala.inline
-        def setAccessTokens(value: js.Any): Self = StObject.set(x, "accessTokens", value.asInstanceOf[js.Any])
+        inline def setAccessTokens(value: js.Any): Self = StObject.set(x, "accessTokens", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetIdentities(value: () => js.Any): Self = StObject.set(x, "getIdentities", js.Any.fromFunction0(value))
+        inline def setGetIdentities(value: () => js.Any): Self = StObject.set(x, "getIdentities", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMobileServiceAuthenticationToken(value: String): Self = StObject.set(x, "mobileServiceAuthenticationToken", value.asInstanceOf[js.Any])
+        inline def setMobileServiceAuthenticationToken(value: String): Self = StObject.set(x, "mobileServiceAuthenticationToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -307,17 +290,14 @@ object Microsoft {
     }
     object WindowsAzureStatic {
       
-      @scala.inline
-      def apply(MobileServiceClient: MobileServiceClient): WindowsAzureStatic = {
+      inline def apply(MobileServiceClient: MobileServiceClient): WindowsAzureStatic = {
         val __obj = js.Dynamic.literal(MobileServiceClient = MobileServiceClient.asInstanceOf[js.Any])
         __obj.asInstanceOf[WindowsAzureStatic]
       }
       
-      @scala.inline
-      implicit class WindowsAzureStaticMutableBuilder[Self <: WindowsAzureStatic] (val x: Self) extends AnyVal {
+      extension [Self <: WindowsAzureStatic](x: Self) {
         
-        @scala.inline
-        def setMobileServiceClient(value: MobileServiceClient): Self = StObject.set(x, "MobileServiceClient", value.asInstanceOf[js.Any])
+        inline def setMobileServiceClient(value: MobileServiceClient): Self = StObject.set(x, "MobileServiceClient", value.asInstanceOf[js.Any])
       }
     }
     

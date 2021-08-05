@@ -28,37 +28,27 @@ trait RecoveryPointCreator extends StObject {
 }
 object RecoveryPointCreator {
   
-  @scala.inline
-  def apply(): RecoveryPointCreator = {
+  inline def apply(): RecoveryPointCreator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecoveryPointCreator]
   }
   
-  @scala.inline
-  implicit class RecoveryPointCreatorMutableBuilder[Self <: RecoveryPointCreator] (val x: Self) extends AnyVal {
+  extension [Self <: RecoveryPointCreator](x: Self) {
     
-    @scala.inline
-    def setBackupPlanArn(value: ARN): Self = StObject.set(x, "BackupPlanArn", value.asInstanceOf[js.Any])
+    inline def setBackupPlanArn(value: ARN): Self = StObject.set(x, "BackupPlanArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanArnUndefined: Self = StObject.set(x, "BackupPlanArn", js.undefined)
+    inline def setBackupPlanArnUndefined: Self = StObject.set(x, "BackupPlanArn", js.undefined)
     
-    @scala.inline
-    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
+    inline def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
-    @scala.inline
-    def setBackupPlanVersion(value: String): Self = StObject.set(x, "BackupPlanVersion", value.asInstanceOf[js.Any])
+    inline def setBackupPlanVersion(value: String): Self = StObject.set(x, "BackupPlanVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanVersionUndefined: Self = StObject.set(x, "BackupPlanVersion", js.undefined)
+    inline def setBackupPlanVersionUndefined: Self = StObject.set(x, "BackupPlanVersion", js.undefined)
     
-    @scala.inline
-    def setBackupRuleId(value: String): Self = StObject.set(x, "BackupRuleId", value.asInstanceOf[js.Any])
+    inline def setBackupRuleId(value: String): Self = StObject.set(x, "BackupRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupRuleIdUndefined: Self = StObject.set(x, "BackupRuleId", js.undefined)
+    inline def setBackupRuleIdUndefined: Self = StObject.set(x, "BackupRuleId", js.undefined)
   }
 }

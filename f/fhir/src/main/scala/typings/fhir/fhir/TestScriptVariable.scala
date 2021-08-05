@@ -93,106 +93,73 @@ trait TestScriptVariable
 }
 object TestScriptVariable {
   
-  @scala.inline
-  def apply(name: String): TestScriptVariable = {
+  inline def apply(name: String): TestScriptVariable = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptVariable]
   }
   
-  @scala.inline
-  implicit class TestScriptVariableMutableBuilder[Self <: TestScriptVariable] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptVariable](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setHeaderField(value: String): Self = StObject.set(x, "headerField", value.asInstanceOf[js.Any])
+    inline def setHeaderField(value: String): Self = StObject.set(x, "headerField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderFieldUndefined: Self = StObject.set(x, "headerField", js.undefined)
+    inline def setHeaderFieldUndefined: Self = StObject.set(x, "headerField", js.undefined)
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSourceId(value: id): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: id): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
+    inline def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
     
-    @scala.inline
-    def set_defaultValue(value: Element): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
+    inline def set_defaultValue(value: Element): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_defaultValueUndefined: Self = StObject.set(x, "_defaultValue", js.undefined)
+    inline def set_defaultValueUndefined: Self = StObject.set(x, "_defaultValue", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
+    inline def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
+    inline def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
     
-    @scala.inline
-    def set_headerField(value: Element): Self = StObject.set(x, "_headerField", value.asInstanceOf[js.Any])
+    inline def set_headerField(value: Element): Self = StObject.set(x, "_headerField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_headerFieldUndefined: Self = StObject.set(x, "_headerField", js.undefined)
+    inline def set_headerFieldUndefined: Self = StObject.set(x, "_headerField", js.undefined)
     
-    @scala.inline
-    def set_hint(value: Element): Self = StObject.set(x, "_hint", value.asInstanceOf[js.Any])
+    inline def set_hint(value: Element): Self = StObject.set(x, "_hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_hintUndefined: Self = StObject.set(x, "_hint", js.undefined)
+    inline def set_hintUndefined: Self = StObject.set(x, "_hint", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
+    inline def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
+    inline def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
     
-    @scala.inline
-    def set_sourceId(value: Element): Self = StObject.set(x, "_sourceId", value.asInstanceOf[js.Any])
+    inline def set_sourceId(value: Element): Self = StObject.set(x, "_sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sourceIdUndefined: Self = StObject.set(x, "_sourceId", js.undefined)
+    inline def set_sourceIdUndefined: Self = StObject.set(x, "_sourceId", js.undefined)
   }
 }

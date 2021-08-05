@@ -101,103 +101,71 @@ trait Mpeg2Settings extends StObject {
 }
 object Mpeg2Settings {
   
-  @scala.inline
-  def apply(FramerateDenominator: integerMin1, FramerateNumerator: integerMin1): Mpeg2Settings = {
+  inline def apply(FramerateDenominator: integerMin1, FramerateNumerator: integerMin1): Mpeg2Settings = {
     val __obj = js.Dynamic.literal(FramerateDenominator = FramerateDenominator.asInstanceOf[js.Any], FramerateNumerator = FramerateNumerator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mpeg2Settings]
   }
   
-  @scala.inline
-  implicit class Mpeg2SettingsMutableBuilder[Self <: Mpeg2Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Mpeg2Settings](x: Self) {
     
-    @scala.inline
-    def setAdaptiveQuantization(value: Mpeg2AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
+    inline def setAdaptiveQuantization(value: Mpeg2AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
+    inline def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
     
-    @scala.inline
-    def setAfdSignaling(value: AfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
+    inline def setAfdSignaling(value: AfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
+    inline def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
     
-    @scala.inline
-    def setColorMetadata(value: Mpeg2ColorMetadata): Self = StObject.set(x, "ColorMetadata", value.asInstanceOf[js.Any])
+    inline def setColorMetadata(value: Mpeg2ColorMetadata): Self = StObject.set(x, "ColorMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorMetadataUndefined: Self = StObject.set(x, "ColorMetadata", js.undefined)
+    inline def setColorMetadataUndefined: Self = StObject.set(x, "ColorMetadata", js.undefined)
     
-    @scala.inline
-    def setColorSpace(value: Mpeg2ColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: Mpeg2ColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
+    inline def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
     
-    @scala.inline
-    def setDisplayAspectRatio(value: Mpeg2DisplayRatio): Self = StObject.set(x, "DisplayAspectRatio", value.asInstanceOf[js.Any])
+    inline def setDisplayAspectRatio(value: Mpeg2DisplayRatio): Self = StObject.set(x, "DisplayAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAspectRatioUndefined: Self = StObject.set(x, "DisplayAspectRatio", js.undefined)
+    inline def setDisplayAspectRatioUndefined: Self = StObject.set(x, "DisplayAspectRatio", js.undefined)
     
-    @scala.inline
-    def setFilterSettings(value: Mpeg2FilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
+    inline def setFilterSettings(value: Mpeg2FilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
+    inline def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
     
-    @scala.inline
-    def setFixedAfd(value: FixedAfd): Self = StObject.set(x, "FixedAfd", value.asInstanceOf[js.Any])
+    inline def setFixedAfd(value: FixedAfd): Self = StObject.set(x, "FixedAfd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedAfdUndefined: Self = StObject.set(x, "FixedAfd", js.undefined)
+    inline def setFixedAfdUndefined: Self = StObject.set(x, "FixedAfd", js.undefined)
     
-    @scala.inline
-    def setFramerateDenominator(value: integerMin1): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
+    inline def setFramerateDenominator(value: integerMin1): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateNumerator(value: integerMin1): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
+    inline def setFramerateNumerator(value: integerMin1): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopClosedCadence(value: integerMin0): Self = StObject.set(x, "GopClosedCadence", value.asInstanceOf[js.Any])
+    inline def setGopClosedCadence(value: integerMin0): Self = StObject.set(x, "GopClosedCadence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopClosedCadenceUndefined: Self = StObject.set(x, "GopClosedCadence", js.undefined)
+    inline def setGopClosedCadenceUndefined: Self = StObject.set(x, "GopClosedCadence", js.undefined)
     
-    @scala.inline
-    def setGopNumBFrames(value: integerMin0Max7): Self = StObject.set(x, "GopNumBFrames", value.asInstanceOf[js.Any])
+    inline def setGopNumBFrames(value: integerMin0Max7): Self = StObject.set(x, "GopNumBFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopNumBFramesUndefined: Self = StObject.set(x, "GopNumBFrames", js.undefined)
+    inline def setGopNumBFramesUndefined: Self = StObject.set(x, "GopNumBFrames", js.undefined)
     
-    @scala.inline
-    def setGopSize(value: double): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
+    inline def setGopSize(value: double): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
+    inline def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
     
-    @scala.inline
-    def setGopSizeUnits(value: Mpeg2GopSizeUnits): Self = StObject.set(x, "GopSizeUnits", value.asInstanceOf[js.Any])
+    inline def setGopSizeUnits(value: Mpeg2GopSizeUnits): Self = StObject.set(x, "GopSizeUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopSizeUnitsUndefined: Self = StObject.set(x, "GopSizeUnits", js.undefined)
+    inline def setGopSizeUnitsUndefined: Self = StObject.set(x, "GopSizeUnits", js.undefined)
     
-    @scala.inline
-    def setScanType(value: Mpeg2ScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: Mpeg2ScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
+    inline def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
     
-    @scala.inline
-    def setSubgopLength(value: Mpeg2SubGopLength): Self = StObject.set(x, "SubgopLength", value.asInstanceOf[js.Any])
+    inline def setSubgopLength(value: Mpeg2SubGopLength): Self = StObject.set(x, "SubgopLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubgopLengthUndefined: Self = StObject.set(x, "SubgopLength", js.undefined)
+    inline def setSubgopLengthUndefined: Self = StObject.set(x, "SubgopLength", js.undefined)
     
-    @scala.inline
-    def setTimecodeInsertion(value: Mpeg2TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
+    inline def setTimecodeInsertion(value: Mpeg2TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeInsertionUndefined: Self = StObject.set(x, "TimecodeInsertion", js.undefined)
+    inline def setTimecodeInsertionUndefined: Self = StObject.set(x, "TimecodeInsertion", js.undefined)
   }
 }

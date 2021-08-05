@@ -18,25 +18,19 @@ trait UploadFileOptionFiles extends StObject {
 }
 object UploadFileOptionFiles {
   
-  @scala.inline
-  def apply(): UploadFileOptionFiles = {
+  inline def apply(): UploadFileOptionFiles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadFileOptionFiles]
   }
   
-  @scala.inline
-  implicit class UploadFileOptionFilesMutableBuilder[Self <: UploadFileOptionFiles] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFileOptionFiles](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

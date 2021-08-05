@@ -22,20 +22,16 @@ object thumbsUpSmallMod extends Shortcut {
   }
   object ThumbsUpSmallProps {
     
-    @scala.inline
-    def apply(): ThumbsUpSmallProps = {
+    inline def apply(): ThumbsUpSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThumbsUpSmallProps]
     }
     
-    @scala.inline
-    implicit class ThumbsUpSmallPropsMutableBuilder[Self <: ThumbsUpSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbsUpSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

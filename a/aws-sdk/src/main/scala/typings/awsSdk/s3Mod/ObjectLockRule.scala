@@ -13,19 +13,15 @@ trait ObjectLockRule extends StObject {
 }
 object ObjectLockRule {
   
-  @scala.inline
-  def apply(): ObjectLockRule = {
+  inline def apply(): ObjectLockRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectLockRule]
   }
   
-  @scala.inline
-  implicit class ObjectLockRuleMutableBuilder[Self <: ObjectLockRule] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectLockRule](x: Self) {
     
-    @scala.inline
-    def setDefaultRetention(value: DefaultRetention): Self = StObject.set(x, "DefaultRetention", value.asInstanceOf[js.Any])
+    inline def setDefaultRetention(value: DefaultRetention): Self = StObject.set(x, "DefaultRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRetentionUndefined: Self = StObject.set(x, "DefaultRetention", js.undefined)
+    inline def setDefaultRetentionUndefined: Self = StObject.set(x, "DefaultRetention", js.undefined)
   }
 }

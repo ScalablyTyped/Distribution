@@ -26,49 +26,35 @@ trait PathReportDimensionValue extends StObject {
 }
 object PathReportDimensionValue {
   
-  @scala.inline
-  def apply(): PathReportDimensionValue = {
+  inline def apply(): PathReportDimensionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathReportDimensionValue]
   }
   
-  @scala.inline
-  implicit class PathReportDimensionValueMutableBuilder[Self <: PathReportDimensionValue] (val x: Self) extends AnyVal {
+  extension [Self <: PathReportDimensionValue](x: Self) {
     
-    @scala.inline
-    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+    inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+    inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
+    inline def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

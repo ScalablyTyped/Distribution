@@ -19,20 +19,17 @@ trait ConnectorType extends StObject
 object ConnectorType {
   
   /** the {@link ConnectorShape} is drawn as a curve */
-  @scala.inline
-  def CURVE: `1` = 1.asInstanceOf[`1`]
+  inline def CURVE: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the {@link ConnectorShape} is drawn as a straight line
     *
     * This is the PolygonKind for a {@link LineShape} .
     */
-  @scala.inline
-  def LINE: `2` = 2.asInstanceOf[`2`]
+  inline def LINE: `2` = 2.asInstanceOf[`2`]
   
   /** the connector is drawn with three lines */
-  @scala.inline
-  def LINES: `3` = 3.asInstanceOf[`3`]
+  inline def LINES: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the graphic is rendered in the default color style of the output device,
@@ -41,6 +38,5 @@ object ConnectorType {
     *
     * use the length measurement.
     */
-  @scala.inline
-  def STANDARD: `0` = 0.asInstanceOf[`0`]
+  inline def STANDARD: `0` = 0.asInstanceOf[`0`]
 }

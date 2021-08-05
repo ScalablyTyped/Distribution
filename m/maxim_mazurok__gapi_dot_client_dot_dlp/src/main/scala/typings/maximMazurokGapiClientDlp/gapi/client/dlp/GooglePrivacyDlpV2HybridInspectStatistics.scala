@@ -20,31 +20,23 @@ trait GooglePrivacyDlpV2HybridInspectStatistics extends StObject {
 }
 object GooglePrivacyDlpV2HybridInspectStatistics {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2HybridInspectStatistics = {
+  inline def apply(): GooglePrivacyDlpV2HybridInspectStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2HybridInspectStatistics]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2HybridInspectStatisticsMutableBuilder[Self <: GooglePrivacyDlpV2HybridInspectStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2HybridInspectStatistics](x: Self) {
     
-    @scala.inline
-    def setAbortedCount(value: String): Self = StObject.set(x, "abortedCount", value.asInstanceOf[js.Any])
+    inline def setAbortedCount(value: String): Self = StObject.set(x, "abortedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortedCountUndefined: Self = StObject.set(x, "abortedCount", js.undefined)
+    inline def setAbortedCountUndefined: Self = StObject.set(x, "abortedCount", js.undefined)
     
-    @scala.inline
-    def setPendingCount(value: String): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
+    inline def setPendingCount(value: String): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
+    inline def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
     
-    @scala.inline
-    def setProcessedCount(value: String): Self = StObject.set(x, "processedCount", value.asInstanceOf[js.Any])
+    inline def setProcessedCount(value: String): Self = StObject.set(x, "processedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessedCountUndefined: Self = StObject.set(x, "processedCount", js.undefined)
+    inline def setProcessedCountUndefined: Self = StObject.set(x, "processedCount", js.undefined)
   }
 }

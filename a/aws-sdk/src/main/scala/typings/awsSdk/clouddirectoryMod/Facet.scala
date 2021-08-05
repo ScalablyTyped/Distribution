@@ -23,31 +23,23 @@ trait Facet extends StObject {
 }
 object Facet {
   
-  @scala.inline
-  def apply(): Facet = {
+  inline def apply(): Facet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Facet]
   }
   
-  @scala.inline
-  implicit class FacetMutableBuilder[Self <: Facet] (val x: Self) extends AnyVal {
+  extension [Self <: Facet](x: Self) {
     
-    @scala.inline
-    def setFacetStyle(value: FacetStyle): Self = StObject.set(x, "FacetStyle", value.asInstanceOf[js.Any])
+    inline def setFacetStyle(value: FacetStyle): Self = StObject.set(x, "FacetStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetStyleUndefined: Self = StObject.set(x, "FacetStyle", js.undefined)
+    inline def setFacetStyleUndefined: Self = StObject.set(x, "FacetStyle", js.undefined)
     
-    @scala.inline
-    def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setObjectType(value: ObjectType): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: ObjectType): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "ObjectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "ObjectType", js.undefined)
   }
 }

@@ -44,8 +44,7 @@ object platformMod {
   }
   object Platform {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get_container: () => js.Any,
       is_browser: () => Boolean,
       is_karma: () => Boolean,
@@ -56,23 +55,17 @@ object platformMod {
       __obj.asInstanceOf[Platform]
     }
     
-    @scala.inline
-    implicit class PlatformMutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
+    extension [Self <: Platform](x: Self) {
       
-      @scala.inline
-      def setGet_container(value: () => js.Any): Self = StObject.set(x, "get_container", js.Any.fromFunction0(value))
+      inline def setGet_container(value: () => js.Any): Self = StObject.set(x, "get_container", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIs_browser(value: () => Boolean): Self = StObject.set(x, "is_browser", js.Any.fromFunction0(value))
+      inline def setIs_browser(value: () => Boolean): Self = StObject.set(x, "is_browser", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIs_karma(value: () => Boolean): Self = StObject.set(x, "is_karma", js.Any.fromFunction0(value))
+      inline def setIs_karma(value: () => Boolean): Self = StObject.set(x, "is_karma", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIs_node(value: () => Boolean): Self = StObject.set(x, "is_node", js.Any.fromFunction0(value))
+      inline def setIs_node(value: () => Boolean): Self = StObject.set(x, "is_node", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIs_phantom(value: () => Boolean): Self = StObject.set(x, "is_phantom", js.Any.fromFunction0(value))
+      inline def setIs_phantom(value: () => Boolean): Self = StObject.set(x, "is_phantom", js.Any.fromFunction0(value))
     }
   }
 }

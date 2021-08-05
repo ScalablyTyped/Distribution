@@ -22,8 +22,7 @@ object useOnActionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     hasRouterGetStateSetStateKeyActionListenersBeforeRemoveListenersRouterConfigOptionsEmitter: Options
   ): js.Function2[
     /* action */ NavigationAction, 

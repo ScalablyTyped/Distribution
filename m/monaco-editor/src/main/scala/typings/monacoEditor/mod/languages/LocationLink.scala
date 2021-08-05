@@ -31,31 +31,23 @@ trait LocationLink extends StObject {
 }
 object LocationLink {
   
-  @scala.inline
-  def apply(range: IRange, uri: Uri): LocationLink = {
+  inline def apply(range: IRange, uri: Uri): LocationLink = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationLink]
   }
   
-  @scala.inline
-  implicit class LocationLinkMutableBuilder[Self <: LocationLink] (val x: Self) extends AnyVal {
+  extension [Self <: LocationLink](x: Self) {
     
-    @scala.inline
-    def setOriginSelectionRange(value: IRange): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
+    inline def setOriginSelectionRange(value: IRange): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginSelectionRangeUndefined: Self = StObject.set(x, "originSelectionRange", js.undefined)
+    inline def setOriginSelectionRangeUndefined: Self = StObject.set(x, "originSelectionRange", js.undefined)
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSelectionRange(value: IRange): Self = StObject.set(x, "targetSelectionRange", value.asInstanceOf[js.Any])
+    inline def setTargetSelectionRange(value: IRange): Self = StObject.set(x, "targetSelectionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSelectionRangeUndefined: Self = StObject.set(x, "targetSelectionRange", js.undefined)
+    inline def setTargetSelectionRangeUndefined: Self = StObject.set(x, "targetSelectionRange", js.undefined)
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

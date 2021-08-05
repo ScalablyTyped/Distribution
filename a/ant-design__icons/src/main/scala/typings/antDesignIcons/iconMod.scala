@@ -35,41 +35,30 @@ object iconMod extends Shortcut {
   }
   object CustomIconComponentProps {
     
-    @scala.inline
-    def apply(fill: String, height: String | Double, width: String | Double): CustomIconComponentProps = {
+    inline def apply(fill: String, height: String | Double, width: String | Double): CustomIconComponentProps = {
       val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomIconComponentProps]
     }
     
-    @scala.inline
-    implicit class CustomIconComponentPropsMutableBuilder[Self <: CustomIconComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: CustomIconComponentProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+      inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+      inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,26 +72,20 @@ object iconMod extends Shortcut {
   }
   object IconBaseProps {
     
-    @scala.inline
-    def apply(): IconBaseProps = {
+    inline def apply(): IconBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconBaseProps]
     }
     
-    @scala.inline
-    implicit class IconBasePropsMutableBuilder[Self <: IconBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconBaseProps](x: Self) {
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
+      inline def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
+      inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
     }
   }
   
@@ -118,32 +101,24 @@ object iconMod extends Shortcut {
   }
   object IconComponentProps {
     
-    @scala.inline
-    def apply(): IconComponentProps = {
+    inline def apply(): IconComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconComponentProps]
     }
     
-    @scala.inline
-    implicit class IconComponentPropsMutableBuilder[Self <: IconComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconComponentProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+      inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+      inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
     }
   }
   

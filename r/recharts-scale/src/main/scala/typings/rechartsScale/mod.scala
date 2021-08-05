@@ -10,30 +10,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNiceTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getNiceTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getNiceTickValues(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNiceTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def getTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getTickValues(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getTickValues(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Double, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getTickValuesFixedDomain(domain: js.Tuple2[Double, Double], tickCount: Unit, allowDecimals: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValuesFixedDomain")(domain.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

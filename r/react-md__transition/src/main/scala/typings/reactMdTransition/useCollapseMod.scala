@@ -13,10 +13,8 @@ object useCollapseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
-  @scala.inline
-  def useCollapse[E /* <: HTMLElement */](
+  inline def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  inline def useCollapse[E /* <: HTMLElement */](
     collapsed: Boolean,
     hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary: CollapseOptions[E]
   ): ReturnValue[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any], hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[E]]

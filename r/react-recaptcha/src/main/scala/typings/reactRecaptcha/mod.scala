@@ -30,15 +30,13 @@ object mod {
   @JSImport("react-recaptcha", "defaultProps")
   @js.native
   def defaultProps: RecaptchaProps = js.native
-  @scala.inline
-  def defaultProps_=(x: RecaptchaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: RecaptchaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("react-recaptcha", "propTypes")
   @js.native
   def propTypes: js.Any = js.native
-  @scala.inline
-  def propTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Recaptcha
@@ -85,110 +83,76 @@ object mod {
   }
   object RecaptchaProps {
     
-    @scala.inline
-    def apply(): RecaptchaProps = {
+    inline def apply(): RecaptchaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecaptchaProps]
     }
     
-    @scala.inline
-    implicit class RecaptchaPropsMutableBuilder[Self <: RecaptchaProps] (val x: Self) extends AnyVal {
+    extension [Self <: RecaptchaProps](x: Self) {
       
-      @scala.inline
-      def setBadge(value: bottomright | bottomleft | `inline`): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: bottomright | bottomleft | `inline`): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setElementID(value: String): Self = StObject.set(x, "elementID", value.asInstanceOf[js.Any])
+      inline def setElementID(value: String): Self = StObject.set(x, "elementID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementIDUndefined: Self = StObject.set(x, "elementID", js.undefined)
+      inline def setElementIDUndefined: Self = StObject.set(x, "elementID", js.undefined)
       
-      @scala.inline
-      def setExpiredCallback(value: () => js.Any): Self = StObject.set(x, "expiredCallback", js.Any.fromFunction0(value))
+      inline def setExpiredCallback(value: () => js.Any): Self = StObject.set(x, "expiredCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExpiredCallbackName(value: String): Self = StObject.set(x, "expiredCallbackName", value.asInstanceOf[js.Any])
+      inline def setExpiredCallbackName(value: String): Self = StObject.set(x, "expiredCallbackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiredCallbackNameUndefined: Self = StObject.set(x, "expiredCallbackName", js.undefined)
+      inline def setExpiredCallbackNameUndefined: Self = StObject.set(x, "expiredCallbackName", js.undefined)
       
-      @scala.inline
-      def setExpiredCallbackUndefined: Self = StObject.set(x, "expiredCallback", js.undefined)
+      inline def setExpiredCallbackUndefined: Self = StObject.set(x, "expiredCallback", js.undefined)
       
-      @scala.inline
-      def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+      inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+      inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
       
-      @scala.inline
-      def setOnloadCallback(value: () => js.Any): Self = StObject.set(x, "onloadCallback", js.Any.fromFunction0(value))
+      inline def setOnloadCallback(value: () => js.Any): Self = StObject.set(x, "onloadCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnloadCallbackName(value: String): Self = StObject.set(x, "onloadCallbackName", value.asInstanceOf[js.Any])
+      inline def setOnloadCallbackName(value: String): Self = StObject.set(x, "onloadCallbackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnloadCallbackNameUndefined: Self = StObject.set(x, "onloadCallbackName", js.undefined)
+      inline def setOnloadCallbackNameUndefined: Self = StObject.set(x, "onloadCallbackName", js.undefined)
       
-      @scala.inline
-      def setOnloadCallbackUndefined: Self = StObject.set(x, "onloadCallback", js.undefined)
+      inline def setOnloadCallbackUndefined: Self = StObject.set(x, "onloadCallback", js.undefined)
       
-      @scala.inline
-      def setRender(value: onload | explicit): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: onload | explicit): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
+      inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSitekeyUndefined: Self = StObject.set(x, "sitekey", js.undefined)
+      inline def setSitekeyUndefined: Self = StObject.set(x, "sitekey", js.undefined)
       
-      @scala.inline
-      def setSize(value: normal | compact | invisible): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: normal | compact | invisible): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTabindex(value: Double | String): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+      inline def setTabindex(value: Double | String): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+      inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
       
-      @scala.inline
-      def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setType(value: audio | image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: audio | image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVerifyCallback(value: /* response */ String => js.Any): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
+      inline def setVerifyCallback(value: /* response */ String => js.Any): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerifyCallbackName(value: String): Self = StObject.set(x, "verifyCallbackName", value.asInstanceOf[js.Any])
+      inline def setVerifyCallbackName(value: String): Self = StObject.set(x, "verifyCallbackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyCallbackNameUndefined: Self = StObject.set(x, "verifyCallbackName", js.undefined)
+      inline def setVerifyCallbackNameUndefined: Self = StObject.set(x, "verifyCallbackName", js.undefined)
       
-      @scala.inline
-      def setVerifyCallbackUndefined: Self = StObject.set(x, "verifyCallback", js.undefined)
+      inline def setVerifyCallbackUndefined: Self = StObject.set(x, "verifyCallback", js.undefined)
     }
   }
 }

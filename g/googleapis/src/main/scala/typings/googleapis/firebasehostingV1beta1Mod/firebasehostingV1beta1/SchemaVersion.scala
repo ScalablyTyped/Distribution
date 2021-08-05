@@ -88,85 +88,59 @@ trait SchemaVersion extends StObject {
 }
 object SchemaVersion {
   
-  @scala.inline
-  def apply(): SchemaVersion = {
+  inline def apply(): SchemaVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVersion]
   }
   
-  @scala.inline
-  implicit class SchemaVersionMutableBuilder[Self <: SchemaVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVersion](x: Self) {
     
-    @scala.inline
-    def setConfig(value: SchemaServingConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaServingConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCreateUser(value: SchemaActingUser): Self = StObject.set(x, "createUser", value.asInstanceOf[js.Any])
+    inline def setCreateUser(value: SchemaActingUser): Self = StObject.set(x, "createUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUserUndefined: Self = StObject.set(x, "createUser", js.undefined)
+    inline def setCreateUserUndefined: Self = StObject.set(x, "createUser", js.undefined)
     
-    @scala.inline
-    def setDeleteTime(value: String): Self = StObject.set(x, "deleteTime", value.asInstanceOf[js.Any])
+    inline def setDeleteTime(value: String): Self = StObject.set(x, "deleteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTimeUndefined: Self = StObject.set(x, "deleteTime", js.undefined)
+    inline def setDeleteTimeUndefined: Self = StObject.set(x, "deleteTime", js.undefined)
     
-    @scala.inline
-    def setDeleteUser(value: SchemaActingUser): Self = StObject.set(x, "deleteUser", value.asInstanceOf[js.Any])
+    inline def setDeleteUser(value: SchemaActingUser): Self = StObject.set(x, "deleteUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUserUndefined: Self = StObject.set(x, "deleteUser", js.undefined)
+    inline def setDeleteUserUndefined: Self = StObject.set(x, "deleteUser", js.undefined)
     
-    @scala.inline
-    def setFileCount(value: String): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
+    inline def setFileCount(value: String): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileCountUndefined: Self = StObject.set(x, "fileCount", js.undefined)
+    inline def setFileCountUndefined: Self = StObject.set(x, "fileCount", js.undefined)
     
-    @scala.inline
-    def setFinalizeTime(value: String): Self = StObject.set(x, "finalizeTime", value.asInstanceOf[js.Any])
+    inline def setFinalizeTime(value: String): Self = StObject.set(x, "finalizeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizeTimeUndefined: Self = StObject.set(x, "finalizeTime", js.undefined)
+    inline def setFinalizeTimeUndefined: Self = StObject.set(x, "finalizeTime", js.undefined)
     
-    @scala.inline
-    def setFinalizeUser(value: SchemaActingUser): Self = StObject.set(x, "finalizeUser", value.asInstanceOf[js.Any])
+    inline def setFinalizeUser(value: SchemaActingUser): Self = StObject.set(x, "finalizeUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizeUserUndefined: Self = StObject.set(x, "finalizeUser", js.undefined)
+    inline def setFinalizeUserUndefined: Self = StObject.set(x, "finalizeUser", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setVersionBytes(value: String): Self = StObject.set(x, "versionBytes", value.asInstanceOf[js.Any])
+    inline def setVersionBytes(value: String): Self = StObject.set(x, "versionBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionBytesUndefined: Self = StObject.set(x, "versionBytes", js.undefined)
+    inline def setVersionBytesUndefined: Self = StObject.set(x, "versionBytes", js.undefined)
   }
 }

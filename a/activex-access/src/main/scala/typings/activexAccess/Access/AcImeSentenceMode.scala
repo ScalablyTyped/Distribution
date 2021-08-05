@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcImeSentenceMode extends StObject
 object AcImeSentenceMode {
   
-  @scala.inline
-  def acImeSentenceModeConversation: `2` = 2.asInstanceOf[`2`]
+  inline def acImeSentenceModeConversation: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acImeSentenceModeNone: `3` = 3.asInstanceOf[`3`]
+  inline def acImeSentenceModeNone: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acImeSentenceModePhrasePredict: `0` = 0.asInstanceOf[`0`]
+  inline def acImeSentenceModePhrasePredict: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acImeSentenceModePluralClause: `1` = 1.asInstanceOf[`1`]
+  inline def acImeSentenceModePluralClause: `1` = 1.asInstanceOf[`1`]
 }

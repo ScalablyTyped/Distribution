@@ -27,8 +27,7 @@ object mod {
     @JSImport("sha3", "default.SHA3Hash")
     @js.native
     def SHA3Hash: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
-    @scala.inline
-    def SHA3Hash_=(x: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHA3Hash")(x.asInstanceOf[js.Any])
+    inline def SHA3Hash_=(x: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHA3Hash")(x.asInstanceOf[js.Any])
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -61,8 +60,7 @@ object mod {
     @JSImport("sha3", "SHA3.SHA3Hash")
     @js.native
     def SHA3Hash: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
-    @scala.inline
-    def SHA3Hash_=(x: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHA3Hash")(x.asInstanceOf[js.Any])
+    inline def SHA3Hash_=(x: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHA3Hash")(x.asInstanceOf[js.Any])
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

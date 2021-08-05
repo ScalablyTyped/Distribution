@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAppEnv(): AppEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEnv")().asInstanceOf[AppEnv]
-  @scala.inline
-  def getAppEnv(options: GetAppEnvOptions): AppEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEnv")(options.asInstanceOf[js.Any]).asInstanceOf[AppEnv]
+  inline def getAppEnv(): AppEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEnv")().asInstanceOf[AppEnv]
+  inline def getAppEnv(options: GetAppEnvOptions): AppEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEnv")(options.asInstanceOf[js.Any]).asInstanceOf[AppEnv]
   
   @js.native
   trait AppEnv extends StObject {
@@ -65,38 +63,28 @@ object mod {
   }
   object GetAppEnvOptions {
     
-    @scala.inline
-    def apply(): GetAppEnvOptions = {
+    inline def apply(): GetAppEnvOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAppEnvOptions]
     }
     
-    @scala.inline
-    implicit class GetAppEnvOptionsMutableBuilder[Self <: GetAppEnvOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetAppEnvOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setVcap(value: Application): Self = StObject.set(x, "vcap", value.asInstanceOf[js.Any])
+      inline def setVcap(value: Application): Self = StObject.set(x, "vcap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVcapFile(value: String): Self = StObject.set(x, "vcapFile", value.asInstanceOf[js.Any])
+      inline def setVcapFile(value: String): Self = StObject.set(x, "vcapFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVcapFileUndefined: Self = StObject.set(x, "vcapFile", js.undefined)
+      inline def setVcapFileUndefined: Self = StObject.set(x, "vcapFile", js.undefined)
       
-      @scala.inline
-      def setVcapUndefined: Self = StObject.set(x, "vcap", js.undefined)
+      inline def setVcapUndefined: Self = StObject.set(x, "vcap", js.undefined)
     }
   }
   
@@ -114,32 +102,24 @@ object mod {
   }
   object Service {
     
-    @scala.inline
-    def apply(credentials: js.Object, label: String, name: String, plan: String, tags: js.Array[String]): Service = {
+    inline def apply(credentials: js.Object, label: String, name: String, plan: String, tags: js.Array[String]): Service = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
 }

@@ -14,19 +14,15 @@ trait WeRunDataOptions
 }
 object WeRunDataOptions {
   
-  @scala.inline
-  def apply(): WeRunDataOptions = {
+  inline def apply(): WeRunDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeRunDataOptions]
   }
   
-  @scala.inline
-  implicit class WeRunDataOptionsMutableBuilder[Self <: WeRunDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WeRunDataOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ EncryptedData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ EncryptedData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

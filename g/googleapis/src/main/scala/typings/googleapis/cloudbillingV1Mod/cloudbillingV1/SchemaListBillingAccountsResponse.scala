@@ -23,28 +23,21 @@ trait SchemaListBillingAccountsResponse extends StObject {
 }
 object SchemaListBillingAccountsResponse {
   
-  @scala.inline
-  def apply(): SchemaListBillingAccountsResponse = {
+  inline def apply(): SchemaListBillingAccountsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListBillingAccountsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListBillingAccountsResponseMutableBuilder[Self <: SchemaListBillingAccountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListBillingAccountsResponse](x: Self) {
     
-    @scala.inline
-    def setBillingAccounts(value: js.Array[SchemaBillingAccount]): Self = StObject.set(x, "billingAccounts", value.asInstanceOf[js.Any])
+    inline def setBillingAccounts(value: js.Array[SchemaBillingAccount]): Self = StObject.set(x, "billingAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAccountsUndefined: Self = StObject.set(x, "billingAccounts", js.undefined)
+    inline def setBillingAccountsUndefined: Self = StObject.set(x, "billingAccounts", js.undefined)
     
-    @scala.inline
-    def setBillingAccountsVarargs(value: SchemaBillingAccount*): Self = StObject.set(x, "billingAccounts", js.Array(value :_*))
+    inline def setBillingAccountsVarargs(value: SchemaBillingAccount*): Self = StObject.set(x, "billingAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

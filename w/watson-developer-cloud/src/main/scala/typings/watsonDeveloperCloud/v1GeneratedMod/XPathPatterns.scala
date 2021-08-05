@@ -12,22 +12,17 @@ trait XPathPatterns extends StObject {
 }
 object XPathPatterns {
   
-  @scala.inline
-  def apply(): XPathPatterns = {
+  inline def apply(): XPathPatterns = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XPathPatterns]
   }
   
-  @scala.inline
-  implicit class XPathPatternsMutableBuilder[Self <: XPathPatterns] (val x: Self) extends AnyVal {
+  extension [Self <: XPathPatterns](x: Self) {
     
-    @scala.inline
-    def setXpaths(value: js.Array[String]): Self = StObject.set(x, "xpaths", value.asInstanceOf[js.Any])
+    inline def setXpaths(value: js.Array[String]): Self = StObject.set(x, "xpaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpathsUndefined: Self = StObject.set(x, "xpaths", js.undefined)
+    inline def setXpathsUndefined: Self = StObject.set(x, "xpaths", js.undefined)
     
-    @scala.inline
-    def setXpathsVarargs(value: String*): Self = StObject.set(x, "xpaths", js.Array(value :_*))
+    inline def setXpathsVarargs(value: String*): Self = StObject.set(x, "xpaths", js.Array(value :_*))
   }
 }

@@ -10,6 +10,5 @@ object statsc {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def statscReset(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("statsc_reset")().asInstanceOf[Double]
+  inline def statscReset(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("statsc_reset")().asInstanceOf[Double]
 }

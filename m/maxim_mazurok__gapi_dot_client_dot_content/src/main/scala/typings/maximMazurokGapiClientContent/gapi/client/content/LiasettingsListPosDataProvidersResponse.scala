@@ -14,28 +14,21 @@ trait LiasettingsListPosDataProvidersResponse extends StObject {
 }
 object LiasettingsListPosDataProvidersResponse {
   
-  @scala.inline
-  def apply(): LiasettingsListPosDataProvidersResponse = {
+  inline def apply(): LiasettingsListPosDataProvidersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiasettingsListPosDataProvidersResponse]
   }
   
-  @scala.inline
-  implicit class LiasettingsListPosDataProvidersResponseMutableBuilder[Self <: LiasettingsListPosDataProvidersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LiasettingsListPosDataProvidersResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPosDataProviders(value: js.Array[PosDataProviders]): Self = StObject.set(x, "posDataProviders", value.asInstanceOf[js.Any])
+    inline def setPosDataProviders(value: js.Array[PosDataProviders]): Self = StObject.set(x, "posDataProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
+    inline def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
-    @scala.inline
-    def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
+    inline def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
   }
 }

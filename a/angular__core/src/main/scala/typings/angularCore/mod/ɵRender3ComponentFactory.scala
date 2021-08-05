@@ -14,7 +14,7 @@ class ɵRender3ComponentFactory[T] protected () extends ComponentFactory[T] {
   def this(componentDef: ɵComponentDef[js.Any]) = this()
   def this(componentDef: ɵComponentDef[js.Any], ngModule: NgModuleRef[js.Any]) = this()
   
-  var componentDef: js.Any = js.native
+  /* private */ var componentDef: js.Any = js.native
   
   @JSName("componentType")
   var componentType_FɵRender3ComponentFactory: Type[js.Any] = js.native
@@ -24,7 +24,7 @@ class ɵRender3ComponentFactory[T] protected () extends ComponentFactory[T] {
   @JSName("ngContentSelectors")
   var ngContentSelectors_FɵRender3ComponentFactory: js.Array[String] = js.native
   
-  var ngModule: js.Any = js.native
+  /* private */ var ngModule: js.Any = js.native
   
   @JSName("selector")
   var selector_FɵRender3ComponentFactory: String = js.native

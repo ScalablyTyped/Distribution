@@ -9,8 +9,7 @@ trait DeleteGcmChannelInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteGcmChannelInputMod.DeleteGcmChannelInput
 object DeleteGcmChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): DeleteGcmChannelInput = {
+  inline def apply(ApplicationId: String): DeleteGcmChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGcmChannelInput]
   }

@@ -13,14 +13,10 @@ object getLocalGatewayVirtualInterfaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLocalGatewayVirtualInterface(): js.Promise[GetLocalGatewayVirtualInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")().asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
-  @scala.inline
-  def getLocalGatewayVirtualInterface(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
-  @scala.inline
-  def getLocalGatewayVirtualInterface(args: GetLocalGatewayVirtualInterfaceArgs): js.Promise[GetLocalGatewayVirtualInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
-  @scala.inline
-  def getLocalGatewayVirtualInterface(args: GetLocalGatewayVirtualInterfaceArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
+  inline def getLocalGatewayVirtualInterface(): js.Promise[GetLocalGatewayVirtualInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")().asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
+  inline def getLocalGatewayVirtualInterface(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
+  inline def getLocalGatewayVirtualInterface(args: GetLocalGatewayVirtualInterfaceArgs): js.Promise[GetLocalGatewayVirtualInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
+  inline def getLocalGatewayVirtualInterface(args: GetLocalGatewayVirtualInterfaceArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayVirtualInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayVirtualInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayVirtualInterfaceResult]]
   
   trait GetLocalGatewayVirtualInterfaceArgs extends StObject {
     
@@ -41,35 +37,26 @@ object getLocalGatewayVirtualInterfaceMod {
   }
   object GetLocalGatewayVirtualInterfaceArgs {
     
-    @scala.inline
-    def apply(): GetLocalGatewayVirtualInterfaceArgs = {
+    inline def apply(): GetLocalGatewayVirtualInterfaceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetLocalGatewayVirtualInterfaceArgs]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayVirtualInterfaceArgsMutableBuilder[Self <: GetLocalGatewayVirtualInterfaceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayVirtualInterfaceArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetLocalGatewayVirtualInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetLocalGatewayVirtualInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetLocalGatewayVirtualInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetLocalGatewayVirtualInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -115,8 +102,7 @@ object getLocalGatewayVirtualInterfaceMod {
   }
   object GetLocalGatewayVirtualInterfaceResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       localAddress: String,
       localBgpAsn: Double,
@@ -131,47 +117,33 @@ object getLocalGatewayVirtualInterfaceMod {
       __obj.asInstanceOf[GetLocalGatewayVirtualInterfaceResult]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayVirtualInterfaceResultMutableBuilder[Self <: GetLocalGatewayVirtualInterfaceResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayVirtualInterfaceResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayVirtualInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalBgpAsn(value: Double): Self = StObject.set(x, "localBgpAsn", value.asInstanceOf[js.Any])
+      inline def setLocalBgpAsn(value: Double): Self = StObject.set(x, "localBgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayId(value: String): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayId(value: String): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayVirtualInterfaceIds(value: js.Array[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayVirtualInterfaceIds(value: js.Array[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayVirtualInterfaceIdsVarargs(value: String*): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", js.Array(value :_*))
+      inline def setLocalGatewayVirtualInterfaceIdsVarargs(value: String*): Self = StObject.set(x, "localGatewayVirtualInterfaceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setPeerAddress(value: String): Self = StObject.set(x, "peerAddress", value.asInstanceOf[js.Any])
+      inline def setPeerAddress(value: String): Self = StObject.set(x, "peerAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerBgpAsn(value: Double): Self = StObject.set(x, "peerBgpAsn", value.asInstanceOf[js.Any])
+      inline def setPeerBgpAsn(value: Double): Self = StObject.set(x, "peerBgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVlan(value: Double): Self = StObject.set(x, "vlan", value.asInstanceOf[js.Any])
+      inline def setVlan(value: Double): Self = StObject.set(x, "vlan", value.asInstanceOf[js.Any])
     }
   }
 }

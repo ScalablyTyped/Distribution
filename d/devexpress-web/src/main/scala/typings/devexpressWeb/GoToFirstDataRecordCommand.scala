@@ -18,16 +18,13 @@ trait GoToFirstDataRecordCommand
 }
 object GoToFirstDataRecordCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): GoToFirstDataRecordCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): GoToFirstDataRecordCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[GoToFirstDataRecordCommand]
   }
   
-  @scala.inline
-  implicit class GoToFirstDataRecordCommandMutableBuilder[Self <: GoToFirstDataRecordCommand] (val x: Self) extends AnyVal {
+  extension [Self <: GoToFirstDataRecordCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -14,19 +14,15 @@ trait MultiVarsReadResult extends StObject {
 }
 object MultiVarsReadResult {
   
-  @scala.inline
-  def apply(Data: Buffer, Result: Double): MultiVarsReadResult = {
+  inline def apply(Data: Buffer, Result: Double): MultiVarsReadResult = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarsReadResult]
   }
   
-  @scala.inline
-  implicit class MultiVarsReadResultMutableBuilder[Self <: MultiVarsReadResult] (val x: Self) extends AnyVal {
+  extension [Self <: MultiVarsReadResult](x: Self) {
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

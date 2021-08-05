@@ -32,8 +32,7 @@ trait Array extends StObject {
 }
 object Array {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Date: Type[Date],
     RegExp: Type[RegExp],
     array: Type[js.Array[js.Any]],
@@ -51,37 +50,26 @@ object Array {
     __obj.asInstanceOf[Array]
   }
   
-  @scala.inline
-  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+  extension [Self <: Array](x: Self) {
     
-    @scala.inline
-    def setArray(value: Type[js.Array[js.Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: Type[js.Array[js.Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolean(value: Type[Boolean]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: Type[Boolean]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Type[Date]): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Type[Date]): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction(value: Type[js.Function]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: Type[js.Function]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNull(value: Type[Null]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+    inline def setNull(value: Type[Null]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Type[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Type[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: Type[StringDictionary[js.Any]]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Type[StringDictionary[js.Any]]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegExp(value: Type[RegExp]): Self = StObject.set(x, "RegExp", value.asInstanceOf[js.Any])
+    inline def setRegExp(value: Type[RegExp]): Self = StObject.set(x, "RegExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: Type[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: Type[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: Type[Unit]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: Type[Unit]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

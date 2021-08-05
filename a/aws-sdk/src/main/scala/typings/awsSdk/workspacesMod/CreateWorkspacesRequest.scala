@@ -13,19 +13,15 @@ trait CreateWorkspacesRequest extends StObject {
 }
 object CreateWorkspacesRequest {
   
-  @scala.inline
-  def apply(Workspaces: WorkspaceRequestList): CreateWorkspacesRequest = {
+  inline def apply(Workspaces: WorkspaceRequestList): CreateWorkspacesRequest = {
     val __obj = js.Dynamic.literal(Workspaces = Workspaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkspacesRequest]
   }
   
-  @scala.inline
-  implicit class CreateWorkspacesRequestMutableBuilder[Self <: CreateWorkspacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkspacesRequest](x: Self) {
     
-    @scala.inline
-    def setWorkspaces(value: WorkspaceRequestList): Self = StObject.set(x, "Workspaces", value.asInstanceOf[js.Any])
+    inline def setWorkspaces(value: WorkspaceRequestList): Self = StObject.set(x, "Workspaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspacesVarargs(value: WorkspaceRequest*): Self = StObject.set(x, "Workspaces", js.Array(value :_*))
+    inline def setWorkspacesVarargs(value: WorkspaceRequest*): Self = StObject.set(x, "Workspaces", js.Array(value :_*))
   }
 }

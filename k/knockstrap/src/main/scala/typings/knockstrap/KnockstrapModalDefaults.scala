@@ -18,8 +18,7 @@ trait KnockstrapModalDefaults extends StObject {
 }
 object KnockstrapModalDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: KnockstrapModalDefaultsAttributes,
     bodyTemplate: KnockstrapDefaultsTemplateBase,
     css: String,
@@ -30,22 +29,16 @@ object KnockstrapModalDefaults {
     __obj.asInstanceOf[KnockstrapModalDefaults]
   }
   
-  @scala.inline
-  implicit class KnockstrapModalDefaultsMutableBuilder[Self <: KnockstrapModalDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapModalDefaults](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: KnockstrapModalDefaultsAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: KnockstrapModalDefaultsAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyTemplate(value: KnockstrapDefaultsTemplateBase): Self = StObject.set(x, "bodyTemplate", value.asInstanceOf[js.Any])
+    inline def setBodyTemplate(value: KnockstrapDefaultsTemplateBase): Self = StObject.set(x, "bodyTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterTemplate(value: KnockstrapModalDefaultsFooterTemplate): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+    inline def setFooterTemplate(value: KnockstrapModalDefaultsFooterTemplate): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTemplate(value: KnockstrapDefaultsTemplateBase): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+    inline def setHeaderTemplate(value: KnockstrapDefaultsTemplateBase): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
   }
 }

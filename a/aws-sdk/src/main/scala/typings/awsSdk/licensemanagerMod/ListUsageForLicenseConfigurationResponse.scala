@@ -18,28 +18,21 @@ trait ListUsageForLicenseConfigurationResponse extends StObject {
 }
 object ListUsageForLicenseConfigurationResponse {
   
-  @scala.inline
-  def apply(): ListUsageForLicenseConfigurationResponse = {
+  inline def apply(): ListUsageForLicenseConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUsageForLicenseConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class ListUsageForLicenseConfigurationResponseMutableBuilder[Self <: ListUsageForLicenseConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUsageForLicenseConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setLicenseConfigurationUsageList(value: LicenseConfigurationUsageList): Self = StObject.set(x, "LicenseConfigurationUsageList", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationUsageList(value: LicenseConfigurationUsageList): Self = StObject.set(x, "LicenseConfigurationUsageList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseConfigurationUsageListUndefined: Self = StObject.set(x, "LicenseConfigurationUsageList", js.undefined)
+    inline def setLicenseConfigurationUsageListUndefined: Self = StObject.set(x, "LicenseConfigurationUsageList", js.undefined)
     
-    @scala.inline
-    def setLicenseConfigurationUsageListVarargs(value: LicenseConfigurationUsage*): Self = StObject.set(x, "LicenseConfigurationUsageList", js.Array(value :_*))
+    inline def setLicenseConfigurationUsageListVarargs(value: LicenseConfigurationUsage*): Self = StObject.set(x, "LicenseConfigurationUsageList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

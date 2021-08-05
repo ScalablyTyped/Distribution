@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModuleFormat extends StObject
 object ModuleFormat {
   
-  @scala.inline
-  def amd: typings.rollup.rollupStrings.amd = "amd".asInstanceOf[typings.rollup.rollupStrings.amd]
+  inline def amd: typings.rollup.rollupStrings.amd = "amd".asInstanceOf[typings.rollup.rollupStrings.amd]
   
-  @scala.inline
-  def cjs: typings.rollup.rollupStrings.cjs = "cjs".asInstanceOf[typings.rollup.rollupStrings.cjs]
+  inline def cjs: typings.rollup.rollupStrings.cjs = "cjs".asInstanceOf[typings.rollup.rollupStrings.cjs]
   
-  @scala.inline
-  def commonjs: typings.rollup.rollupStrings.commonjs = "commonjs".asInstanceOf[typings.rollup.rollupStrings.commonjs]
+  inline def commonjs: typings.rollup.rollupStrings.commonjs = "commonjs".asInstanceOf[typings.rollup.rollupStrings.commonjs]
   
-  @scala.inline
-  def es: typings.rollup.rollupStrings.es = "es".asInstanceOf[typings.rollup.rollupStrings.es]
+  inline def es: typings.rollup.rollupStrings.es = "es".asInstanceOf[typings.rollup.rollupStrings.es]
   
-  @scala.inline
-  def esm: typings.rollup.rollupStrings.esm = "esm".asInstanceOf[typings.rollup.rollupStrings.esm]
+  inline def esm: typings.rollup.rollupStrings.esm = "esm".asInstanceOf[typings.rollup.rollupStrings.esm]
   
-  @scala.inline
-  def iife: typings.rollup.rollupStrings.iife = "iife".asInstanceOf[typings.rollup.rollupStrings.iife]
+  inline def iife: typings.rollup.rollupStrings.iife = "iife".asInstanceOf[typings.rollup.rollupStrings.iife]
   
-  @scala.inline
-  def module: typings.rollup.rollupStrings.module = "module".asInstanceOf[typings.rollup.rollupStrings.module]
+  inline def module: typings.rollup.rollupStrings.module = "module".asInstanceOf[typings.rollup.rollupStrings.module]
   
-  @scala.inline
-  def system: typings.rollup.rollupStrings.system = "system".asInstanceOf[typings.rollup.rollupStrings.system]
+  inline def system: typings.rollup.rollupStrings.system = "system".asInstanceOf[typings.rollup.rollupStrings.system]
   
-  @scala.inline
-  def systemjs: typings.rollup.rollupStrings.systemjs = "systemjs".asInstanceOf[typings.rollup.rollupStrings.systemjs]
+  inline def systemjs: typings.rollup.rollupStrings.systemjs = "systemjs".asInstanceOf[typings.rollup.rollupStrings.systemjs]
   
-  @scala.inline
-  def umd: typings.rollup.rollupStrings.umd = "umd".asInstanceOf[typings.rollup.rollupStrings.umd]
+  inline def umd: typings.rollup.rollupStrings.umd = "umd".asInstanceOf[typings.rollup.rollupStrings.umd]
 }

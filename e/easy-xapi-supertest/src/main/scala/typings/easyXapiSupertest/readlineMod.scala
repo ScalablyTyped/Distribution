@@ -13,8 +13,7 @@ object readlineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createInterface(options: ReadLineOptions): ReadLine = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(options.asInstanceOf[js.Any]).asInstanceOf[ReadLine]
+  inline def createInterface(options: ReadLineOptions): ReadLine = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(options.asInstanceOf[js.Any]).asInstanceOf[ReadLine]
   
   @js.native
   trait ReadLine extends EventEmitter {
@@ -48,32 +47,24 @@ object readlineMod {
   }
   object ReadLineOptions {
     
-    @scala.inline
-    def apply(input: ReadableStream, output: WritableStream): ReadLineOptions = {
+    inline def apply(input: ReadableStream, output: WritableStream): ReadLineOptions = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadLineOptions]
     }
     
-    @scala.inline
-    implicit class ReadLineOptionsMutableBuilder[Self <: ReadLineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadLineOptions](x: Self) {
       
-      @scala.inline
-      def setCompleter(value: js.Function): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
+      inline def setCompleter(value: js.Function): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleterUndefined: Self = StObject.set(x, "completer", js.undefined)
+      inline def setCompleterUndefined: Self = StObject.set(x, "completer", js.undefined)
       
-      @scala.inline
-      def setInput(value: ReadableStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: ReadableStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: WritableStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: WritableStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
+      inline def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
+      inline def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
     }
   }
 }

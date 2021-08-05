@@ -10,14 +10,10 @@ object iscomputedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def _isComputed(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isComputed")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def _isComputed(value: js.Any, property: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_isComputed")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def _isComputed(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isComputed")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def _isComputed(value: js.Any, property: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_isComputed")(value.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isComputed(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputed")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isComputed(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputed")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isComputedProp(value: js.Any, propName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isComputedProp")(value.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isComputedProp(value: js.Any, propName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isComputedProp")(value.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

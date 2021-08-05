@@ -26,7 +26,7 @@ trait SectionProperties extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.SectionProperties_typekey")
+  /* private */ @JSName("PowerPoint.SectionProperties_typekey")
   var PowerPointDotSectionProperties_typekey: SectionProperties = js.native
   
   def Rename(sectionIndex: Double, sectionName: String): Unit = js.native

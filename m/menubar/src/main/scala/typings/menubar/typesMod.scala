@@ -117,8 +117,7 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       browserWindow: BrowserWindowConstructorOptions,
       dir: String,
       index: String | `false`,
@@ -128,70 +127,49 @@ object typesMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBrowserWindow(value: BrowserWindowConstructorOptions): Self = StObject.set(x, "browserWindow", value.asInstanceOf[js.Any])
+      inline def setBrowserWindow(value: BrowserWindowConstructorOptions): Self = StObject.set(x, "browserWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String | NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String | NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String | `false`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String | `false`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadUrlOptions(value: LoadURLOptions): Self = StObject.set(x, "loadUrlOptions", value.asInstanceOf[js.Any])
+      inline def setLoadUrlOptions(value: LoadURLOptions): Self = StObject.set(x, "loadUrlOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadUrlOptionsUndefined: Self = StObject.set(x, "loadUrlOptions", js.undefined)
+      inline def setLoadUrlOptionsUndefined: Self = StObject.set(x, "loadUrlOptions", js.undefined)
       
-      @scala.inline
-      def setPreloadWindow(value: Boolean): Self = StObject.set(x, "preloadWindow", value.asInstanceOf[js.Any])
+      inline def setPreloadWindow(value: Boolean): Self = StObject.set(x, "preloadWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadWindowUndefined: Self = StObject.set(x, "preloadWindow", js.undefined)
+      inline def setPreloadWindowUndefined: Self = StObject.set(x, "preloadWindow", js.undefined)
       
-      @scala.inline
-      def setShowDockIcon(value: Boolean): Self = StObject.set(x, "showDockIcon", value.asInstanceOf[js.Any])
+      inline def setShowDockIcon(value: Boolean): Self = StObject.set(x, "showDockIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDockIconUndefined: Self = StObject.set(x, "showDockIcon", js.undefined)
+      inline def setShowDockIconUndefined: Self = StObject.set(x, "showDockIcon", js.undefined)
       
-      @scala.inline
-      def setShowOnAllWorkspaces(value: Boolean): Self = StObject.set(x, "showOnAllWorkspaces", value.asInstanceOf[js.Any])
+      inline def setShowOnAllWorkspaces(value: Boolean): Self = StObject.set(x, "showOnAllWorkspaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnAllWorkspacesUndefined: Self = StObject.set(x, "showOnAllWorkspaces", js.undefined)
+      inline def setShowOnAllWorkspacesUndefined: Self = StObject.set(x, "showOnAllWorkspaces", js.undefined)
       
-      @scala.inline
-      def setShowOnRightClick(value: Boolean): Self = StObject.set(x, "showOnRightClick", value.asInstanceOf[js.Any])
+      inline def setShowOnRightClick(value: Boolean): Self = StObject.set(x, "showOnRightClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnRightClickUndefined: Self = StObject.set(x, "showOnRightClick", js.undefined)
+      inline def setShowOnRightClickUndefined: Self = StObject.set(x, "showOnRightClick", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTray(value: Tray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
+      inline def setTray(value: Tray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrayUndefined: Self = StObject.set(x, "tray", js.undefined)
+      inline def setTrayUndefined: Self = StObject.set(x, "tray", js.undefined)
       
-      @scala.inline
-      def setWindowPosition(
+      inline def setWindowPosition(
         value: trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
       ): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
+      inline def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
     }
   }
 }

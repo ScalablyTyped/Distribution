@@ -25,46 +25,33 @@ trait ForceLink
 }
 object ForceLink {
   
-  @scala.inline
-  def apply(): ForceLink = {
+  inline def apply(): ForceLink = {
     val __obj = js.Dynamic.literal(force = "link")
     __obj.asInstanceOf[ForceLink]
   }
   
-  @scala.inline
-  implicit class ForceLinkMutableBuilder[Self <: ForceLink] (val x: Self) extends AnyVal {
+  extension [Self <: ForceLink](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setForce(value: link): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: link): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: FieldRef): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FieldRef): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIterations(value: Double | SignalRef): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double | SignalRef): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setLinks(value: DataName): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: DataName): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setStrength(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
   }
 }

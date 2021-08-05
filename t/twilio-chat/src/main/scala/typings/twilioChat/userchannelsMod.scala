@@ -19,14 +19,14 @@ object userchannelsMod {
   class UserChannels protected () extends StObject {
     def this(client: Client, services: UserChannelServices, url: String) = this()
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
     def getChannels(): js.Promise[RestPaginator[ChannelDescriptor]] = js.native
     def getChannels(args: js.Any): js.Promise[RestPaginator[ChannelDescriptor]] = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
-    var url: js.Any = js.native
+    /* private */ var url: js.Any = js.native
   }
   
   trait UserChannelServices extends StObject {
@@ -35,17 +35,14 @@ object userchannelsMod {
   }
   object UserChannelServices {
     
-    @scala.inline
-    def apply(network: Network): UserChannelServices = {
+    inline def apply(network: Network): UserChannelServices = {
       val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserChannelServices]
     }
     
-    @scala.inline
-    implicit class UserChannelServicesMutableBuilder[Self <: UserChannelServices] (val x: Self) extends AnyVal {
+    extension [Self <: UserChannelServices](x: Self) {
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     }
   }
 }

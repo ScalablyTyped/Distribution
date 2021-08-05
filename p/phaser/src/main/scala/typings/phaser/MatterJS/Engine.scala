@@ -94,8 +94,7 @@ trait Engine extends StObject {
 }
 object Engine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     broadphase: Grid,
     constraintIterations: Double,
     enableSleeping: Boolean,
@@ -110,34 +109,24 @@ object Engine {
     __obj.asInstanceOf[Engine]
   }
   
-  @scala.inline
-  implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
+  extension [Self <: Engine](x: Self) {
     
-    @scala.inline
-    def setBroadphase(value: Grid): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
+    inline def setBroadphase(value: Grid): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintIterations(value: Double): Self = StObject.set(x, "constraintIterations", value.asInstanceOf[js.Any])
+    inline def setConstraintIterations(value: Double): Self = StObject.set(x, "constraintIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSleeping(value: Boolean): Self = StObject.set(x, "enableSleeping", value.asInstanceOf[js.Any])
+    inline def setEnableSleeping(value: Boolean): Self = StObject.set(x, "enableSleeping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPairs(value: js.Any): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
+    inline def setPairs(value: js.Any): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
+    inline def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiming(value: IEngineTimingOptions): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: IEngineTimingOptions): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityIterations(value: Double): Self = StObject.set(x, "velocityIterations", value.asInstanceOf[js.Any])
+    inline def setVelocityIterations(value: Double): Self = StObject.set(x, "velocityIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorld(value: World): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
+    inline def setWorld(value: World): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
   }
 }

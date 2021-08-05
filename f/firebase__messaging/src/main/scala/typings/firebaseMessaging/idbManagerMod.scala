@@ -16,15 +16,11 @@ object idbManagerMod {
   @js.native
   val DATABASE_NAME: /* "firebase-messaging-database" */ String = js.native
   
-  @scala.inline
-  def dbDelete(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbDelete")().asInstanceOf[js.Promise[Unit]]
+  inline def dbDelete(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbDelete")().asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def dbGet(firebaseDependencies: FirebaseInternalDependencies): js.Promise[js.UndefOr[TokenDetails]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbGet")(firebaseDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[TokenDetails]]]
+  inline def dbGet(firebaseDependencies: FirebaseInternalDependencies): js.Promise[js.UndefOr[TokenDetails]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbGet")(firebaseDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[TokenDetails]]]
   
-  @scala.inline
-  def dbRemove(firebaseDependencies: FirebaseInternalDependencies): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbRemove")(firebaseDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def dbRemove(firebaseDependencies: FirebaseInternalDependencies): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbRemove")(firebaseDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def dbSet(firebaseDependencies: FirebaseInternalDependencies, tokenDetails: TokenDetails): js.Promise[TokenDetails] = (^.asInstanceOf[js.Dynamic].applyDynamic("dbSet")(firebaseDependencies.asInstanceOf[js.Any], tokenDetails.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TokenDetails]]
+  inline def dbSet(firebaseDependencies: FirebaseInternalDependencies, tokenDetails: TokenDetails): js.Promise[TokenDetails] = (^.asInstanceOf[js.Dynamic].applyDynamic("dbSet")(firebaseDependencies.asInstanceOf[js.Any], tokenDetails.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TokenDetails]]
 }

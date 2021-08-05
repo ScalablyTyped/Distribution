@@ -13,25 +13,19 @@ trait Custom extends StObject {
 }
 object Custom {
   
-  @scala.inline
-  def apply(): Custom = {
+  inline def apply(): Custom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Custom]
   }
   
-  @scala.inline
-  implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+  extension [Self <: Custom](x: Self) {
     
-    @scala.inline
-    def setCustom(value: CustomPluginOptions): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: CustomPluginOptions): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setSkipSelf(value: Boolean): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
+    inline def setSkipSelf(value: Boolean): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipSelfUndefined: Self = StObject.set(x, "skipSelf", js.undefined)
+    inline def setSkipSelfUndefined: Self = StObject.set(x, "skipSelf", js.undefined)
   }
 }

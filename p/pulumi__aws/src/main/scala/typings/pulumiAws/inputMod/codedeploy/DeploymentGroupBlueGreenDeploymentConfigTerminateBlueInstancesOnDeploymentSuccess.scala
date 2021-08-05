@@ -21,25 +21,19 @@ trait DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeployment
 }
 object DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess {
   
-  @scala.inline
-  def apply(): DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess = {
+  inline def apply(): DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessMutableBuilder[Self <: DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess](x: Self) {
     
-    @scala.inline
-    def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setTerminationWaitTimeInMinutes(value: Input[Double]): Self = StObject.set(x, "terminationWaitTimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setTerminationWaitTimeInMinutes(value: Input[Double]): Self = StObject.set(x, "terminationWaitTimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationWaitTimeInMinutesUndefined: Self = StObject.set(x, "terminationWaitTimeInMinutes", js.undefined)
+    inline def setTerminationWaitTimeInMinutesUndefined: Self = StObject.set(x, "terminationWaitTimeInMinutes", js.undefined)
   }
 }

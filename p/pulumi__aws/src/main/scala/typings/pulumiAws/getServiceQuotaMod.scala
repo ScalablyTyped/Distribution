@@ -11,10 +11,8 @@ object getServiceQuotaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceQuotaResult]]
-  @scala.inline
-  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceQuotaResult]]
+  inline def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceQuotaResult]]
+  inline def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceQuotaResult]]
   
   trait GetServiceQuotaArgs extends StObject {
     
@@ -35,29 +33,22 @@ object getServiceQuotaMod {
   }
   object GetServiceQuotaArgs {
     
-    @scala.inline
-    def apply(serviceCode: String): GetServiceQuotaArgs = {
+    inline def apply(serviceCode: String): GetServiceQuotaArgs = {
       val __obj = js.Dynamic.literal(serviceCode = serviceCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetServiceQuotaArgs]
     }
     
-    @scala.inline
-    implicit class GetServiceQuotaArgsMutableBuilder[Self <: GetServiceQuotaArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceQuotaArgs](x: Self) {
       
-      @scala.inline
-      def setQuotaCode(value: String): Self = StObject.set(x, "quotaCode", value.asInstanceOf[js.Any])
+      inline def setQuotaCode(value: String): Self = StObject.set(x, "quotaCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaCodeUndefined: Self = StObject.set(x, "quotaCode", js.undefined)
+      inline def setQuotaCodeUndefined: Self = StObject.set(x, "quotaCode", js.undefined)
       
-      @scala.inline
-      def setQuotaName(value: String): Self = StObject.set(x, "quotaName", value.asInstanceOf[js.Any])
+      inline def setQuotaName(value: String): Self = StObject.set(x, "quotaName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaNameUndefined: Self = StObject.set(x, "quotaName", js.undefined)
+      inline def setQuotaNameUndefined: Self = StObject.set(x, "quotaName", js.undefined)
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,8 +97,7 @@ object getServiceQuotaMod {
   }
   object GetServiceQuotaResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjustable: Boolean,
       arn: String,
       defaultValue: Double,
@@ -123,38 +113,27 @@ object getServiceQuotaMod {
       __obj.asInstanceOf[GetServiceQuotaResult]
     }
     
-    @scala.inline
-    implicit class GetServiceQuotaResultMutableBuilder[Self <: GetServiceQuotaResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceQuotaResult](x: Self) {
       
-      @scala.inline
-      def setAdjustable(value: Boolean): Self = StObject.set(x, "adjustable", value.asInstanceOf[js.Any])
+      inline def setAdjustable(value: Boolean): Self = StObject.set(x, "adjustable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalQuota(value: Boolean): Self = StObject.set(x, "globalQuota", value.asInstanceOf[js.Any])
+      inline def setGlobalQuota(value: Boolean): Self = StObject.set(x, "globalQuota", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaCode(value: String): Self = StObject.set(x, "quotaCode", value.asInstanceOf[js.Any])
+      inline def setQuotaCode(value: String): Self = StObject.set(x, "quotaCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaName(value: String): Self = StObject.set(x, "quotaName", value.asInstanceOf[js.Any])
+      inline def setQuotaName(value: String): Self = StObject.set(x, "quotaName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

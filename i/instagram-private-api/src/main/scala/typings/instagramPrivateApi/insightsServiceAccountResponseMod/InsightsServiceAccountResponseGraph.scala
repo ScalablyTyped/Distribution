@@ -10,19 +10,15 @@ trait InsightsServiceAccountResponseGraph extends StObject {
 }
 object InsightsServiceAccountResponseGraph {
   
-  @scala.inline
-  def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseGraph = {
+  inline def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseGraph = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseGraph]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseGraphMutableBuilder[Self <: InsightsServiceAccountResponseGraph] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseGraph](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[InsightsServiceAccountResponseNodesItem]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[InsightsServiceAccountResponseNodesItem]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: InsightsServiceAccountResponseNodesItem*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: InsightsServiceAccountResponseNodesItem*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

@@ -19,8 +19,7 @@ trait IPointerEventArgs
 }
 object IPointerEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentPoint: PointerPoint,
     getIntermediatePoints: () => IVector[PointerPoint],
     handled: Boolean,
@@ -30,16 +29,12 @@ object IPointerEventArgs {
     __obj.asInstanceOf[IPointerEventArgs]
   }
   
-  @scala.inline
-  implicit class IPointerEventArgsMutableBuilder[Self <: IPointerEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IPointerEventArgs](x: Self) {
     
-    @scala.inline
-    def setCurrentPoint(value: PointerPoint): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
+    inline def setCurrentPoint(value: PointerPoint): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetIntermediatePoints(value: () => IVector[PointerPoint]): Self = StObject.set(x, "getIntermediatePoints", js.Any.fromFunction0(value))
+    inline def setGetIntermediatePoints(value: () => IVector[PointerPoint]): Self = StObject.set(x, "getIntermediatePoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "keyModifiers", value.asInstanceOf[js.Any])
+    inline def setKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "keyModifiers", value.asInstanceOf[js.Any])
   }
 }

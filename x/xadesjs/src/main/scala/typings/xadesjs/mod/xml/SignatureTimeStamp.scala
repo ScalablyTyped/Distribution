@@ -13,6 +13,5 @@ class SignatureTimeStamp ()
   extends typings.xadesjs.xmlMod.SignatureTimeStamp
 object SignatureTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SignatureTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignatureTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignatureTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SignatureTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignatureTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignatureTimeStamp]]
 }

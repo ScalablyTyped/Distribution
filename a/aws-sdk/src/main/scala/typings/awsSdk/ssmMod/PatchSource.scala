@@ -23,25 +23,19 @@ trait PatchSource extends StObject {
 }
 object PatchSource {
   
-  @scala.inline
-  def apply(Configuration: PatchSourceConfiguration, Name: PatchSourceName, Products: PatchSourceProductList): PatchSource = {
+  inline def apply(Configuration: PatchSourceConfiguration, Name: PatchSourceName, Products: PatchSourceProductList): PatchSource = {
     val __obj = js.Dynamic.literal(Configuration = Configuration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Products = Products.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchSource]
   }
   
-  @scala.inline
-  implicit class PatchSourceMutableBuilder[Self <: PatchSource] (val x: Self) extends AnyVal {
+  extension [Self <: PatchSource](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: PatchSourceConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: PatchSourceConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: PatchSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PatchSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducts(value: PatchSourceProductList): Self = StObject.set(x, "Products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: PatchSourceProductList): Self = StObject.set(x, "Products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsVarargs(value: PatchSourceProduct*): Self = StObject.set(x, "Products", js.Array(value :_*))
+    inline def setProductsVarargs(value: PatchSourceProduct*): Self = StObject.set(x, "Products", js.Array(value :_*))
   }
 }

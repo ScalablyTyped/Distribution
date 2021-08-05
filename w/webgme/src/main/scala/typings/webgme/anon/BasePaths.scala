@@ -33,25 +33,19 @@ trait BasePaths extends StObject {
 }
 object BasePaths {
   
-  @scala.inline
-  def apply(basePaths: js.Array[String], enable: Boolean, monitorTimeout: Double): BasePaths = {
+  inline def apply(basePaths: js.Array[String], enable: Boolean, monitorTimeout: Double): BasePaths = {
     val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], monitorTimeout = monitorTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePaths]
   }
   
-  @scala.inline
-  implicit class BasePathsMutableBuilder[Self <: BasePaths] (val x: Self) extends AnyVal {
+  extension [Self <: BasePaths](x: Self) {
     
-    @scala.inline
-    def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+    inline def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+    inline def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorTimeout(value: Double): Self = StObject.set(x, "monitorTimeout", value.asInstanceOf[js.Any])
+    inline def setMonitorTimeout(value: Double): Self = StObject.set(x, "monitorTimeout", value.asInstanceOf[js.Any])
   }
 }

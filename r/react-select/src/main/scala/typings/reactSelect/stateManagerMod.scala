@@ -25,8 +25,7 @@ object stateManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: typings.reactSelect.selectMod.default[js.Any] */](SelectComponent: T): StateManager[GetOptionType[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[StateManager[GetOptionType[T], T]]
+  inline def default[T /* <: typings.reactSelect.selectMod.default[js.Any] */](SelectComponent: T): StateManager[GetOptionType[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[StateManager[GetOptionType[T], T]]
   
   @JSImport("react-select/src/stateManager", "StateManager")
   @js.native
@@ -74,12 +73,10 @@ object stateManagerMod {
     @JSImport("react-select/src/stateManager", "StateManager.defaultProps")
     @js.native
     def defaultProps: DefaultProps[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: DefaultProps[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DefaultProps[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def manageState[T /* <: default[js.Any] */](SelectComponent: T): StateManager[GetOptionType[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("manageState")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[StateManager[GetOptionType[T], T]]
+  inline def manageState[T /* <: default[js.Any] */](SelectComponent: T): StateManager[GetOptionType[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("manageState")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[StateManager[GetOptionType[T], T]]
   
   trait DefaultProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
@@ -91,32 +88,24 @@ object stateManagerMod {
   }
   object DefaultProps {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](defaultInputValue: String, defaultMenuIsOpen: Boolean): DefaultProps[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](defaultInputValue: String, defaultMenuIsOpen: Boolean): DefaultProps[OptionType] = {
       val __obj = js.Dynamic.literal(defaultInputValue = defaultInputValue.asInstanceOf[js.Any], defaultMenuIsOpen = defaultMenuIsOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultProps[OptionType]]
     }
     
-    @scala.inline
-    implicit class DefaultPropsMutableBuilder[Self <: DefaultProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & DefaultProps[OptionType]) extends AnyVal {
+    extension [Self <: DefaultProps[?], OptionType /* <: OptionTypeBase */](x: Self & DefaultProps[OptionType]) {
       
-      @scala.inline
-      def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
+      inline def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMenuIsOpen(value: Boolean): Self = StObject.set(x, "defaultMenuIsOpen", value.asInstanceOf[js.Any])
+      inline def setDefaultMenuIsOpen(value: Boolean): Self = StObject.set(x, "defaultMenuIsOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValue(value: ValueType[OptionType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: ValueType[OptionType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: OptionType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: OptionType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
     }
   }
   
@@ -142,68 +131,48 @@ object stateManagerMod {
   }
   object Props {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](): Props[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](): Props[OptionType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props[OptionType]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], OptionType /* <: OptionTypeBase */] (val x: Self & Props[OptionType]) extends AnyVal {
+    extension [Self <: Props[?], OptionType /* <: OptionTypeBase */](x: Self & Props[OptionType]) {
       
-      @scala.inline
-      def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
+      inline def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultInputValueUndefined: Self = StObject.set(x, "defaultInputValue", js.undefined)
+      inline def setDefaultInputValueUndefined: Self = StObject.set(x, "defaultInputValue", js.undefined)
       
-      @scala.inline
-      def setDefaultMenuIsOpen(value: Boolean): Self = StObject.set(x, "defaultMenuIsOpen", value.asInstanceOf[js.Any])
+      inline def setDefaultMenuIsOpen(value: Boolean): Self = StObject.set(x, "defaultMenuIsOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMenuIsOpenUndefined: Self = StObject.set(x, "defaultMenuIsOpen", js.undefined)
+      inline def setDefaultMenuIsOpenUndefined: Self = StObject.set(x, "defaultMenuIsOpen", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: ValueType[OptionType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: ValueType[OptionType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: OptionType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: OptionType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
+      inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
       
-      @scala.inline
-      def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
+      inline def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuIsOpenUndefined: Self = StObject.set(x, "menuIsOpen", js.undefined)
+      inline def setMenuIsOpenUndefined: Self = StObject.set(x, "menuIsOpen", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* value */ ValueType[OptionType], /* actionMeta */ ActionMeta[OptionType]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ ValueType[OptionType], /* actionMeta */ ActionMeta[OptionType]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setValue(value: ValueType[OptionType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ValueType[OptionType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: OptionType*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: OptionType*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -217,32 +186,24 @@ object stateManagerMod {
   }
   object State {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](inputValue: String, menuIsOpen: Boolean): State[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](inputValue: String, menuIsOpen: Boolean): State[OptionType] = {
       val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], menuIsOpen = menuIsOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[State[OptionType]]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State[?], OptionType /* <: OptionTypeBase */] (val x: Self & State[OptionType]) extends AnyVal {
+    extension [Self <: State[?], OptionType /* <: OptionTypeBase */](x: Self & State[OptionType]) {
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
+      inline def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: ValueType[OptionType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ValueType[OptionType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: OptionType*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: OptionType*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   

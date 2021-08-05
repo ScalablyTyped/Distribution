@@ -29,8 +29,7 @@ object mod {
   *\/
   ```
   */
-  @scala.inline
-  def apply(data: ArrayLike[Double]): ResultType = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[ResultType]
+  inline def apply(data: ArrayLike[Double]): ResultType = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[ResultType]
   
   @JSImport("decode-gif", JSImport.Namespace)
   @js.native
@@ -46,20 +45,16 @@ object mod {
   }
   object FrameType {
     
-    @scala.inline
-    def apply(data: Uint8ClampedArray, timeCode: Double): FrameType = {
+    inline def apply(data: Uint8ClampedArray, timeCode: Double): FrameType = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], timeCode = timeCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameType]
     }
     
-    @scala.inline
-    implicit class FrameTypeMutableBuilder[Self <: FrameType] (val x: Self) extends AnyVal {
+    extension [Self <: FrameType](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeCode(value: Double): Self = StObject.set(x, "timeCode", value.asInstanceOf[js.Any])
+      inline def setTimeCode(value: Double): Self = StObject.set(x, "timeCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,26 +71,20 @@ object mod {
   }
   object ResultType {
     
-    @scala.inline
-    def apply(frames: js.Array[FrameType], height: Double, width: Double): ResultType = {
+    inline def apply(frames: js.Array[FrameType], height: Double, width: Double): ResultType = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultType]
     }
     
-    @scala.inline
-    implicit class ResultTypeMutableBuilder[Self <: ResultType] (val x: Self) extends AnyVal {
+    extension [Self <: ResultType](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[FrameType]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[FrameType]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: FrameType*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: FrameType*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

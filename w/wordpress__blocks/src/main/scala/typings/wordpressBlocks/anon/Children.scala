@@ -31,8 +31,7 @@ trait Children extends StObject {
 }
 object Children {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: js.Array[
       accessKey | accessKeyLabel | autocapitalize | dir | draggable | hidden | innerText | lang | offsetHeight | offsetLeft | offsetParent | offsetTop | offsetWidth | spellcheck | title | translate
     ],
@@ -42,22 +41,18 @@ object Children {
     __obj.asInstanceOf[Children]
   }
   
-  @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+  extension [Self <: Children](x: Self) {
     
-    @scala.inline
-    def setAttributes(
+    inline def setAttributes(
       value: js.Array[
           accessKey | accessKeyLabel | autocapitalize | dir | draggable | hidden | innerText | lang | offsetHeight | offsetLeft | offsetParent | offsetTop | offsetWidth | spellcheck | title | translate
         ]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(
+    inline def setAttributesVarargs(
       value: (accessKey | accessKeyLabel | autocapitalize | dir | draggable | hidden | innerText | lang | offsetHeight | offsetLeft | offsetParent | offsetTop | offsetWidth | spellcheck | title | translate)*
     ): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setChildren(value: PhrasingContentSchema): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: PhrasingContentSchema): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

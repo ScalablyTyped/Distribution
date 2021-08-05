@@ -75,6 +75,5 @@ object Polyline {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def parse(svgString: String): Polyline = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgString.asInstanceOf[js.Any]).asInstanceOf[Polyline]
+  inline def parse(svgString: String): Polyline = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgString.asInstanceOf[js.Any]).asInstanceOf[Polyline]
 }

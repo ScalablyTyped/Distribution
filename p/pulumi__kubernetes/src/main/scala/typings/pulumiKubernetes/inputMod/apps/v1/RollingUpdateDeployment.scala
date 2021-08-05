@@ -22,25 +22,19 @@ trait RollingUpdateDeployment extends StObject {
 }
 object RollingUpdateDeployment {
   
-  @scala.inline
-  def apply(): RollingUpdateDeployment = {
+  inline def apply(): RollingUpdateDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RollingUpdateDeployment]
   }
   
-  @scala.inline
-  implicit class RollingUpdateDeploymentMutableBuilder[Self <: RollingUpdateDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: RollingUpdateDeployment](x: Self) {
     
-    @scala.inline
-    def setMaxSurge(value: Input[Double | String]): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
+    inline def setMaxSurge(value: Input[Double | String]): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
+    inline def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
     
-    @scala.inline
-    def setMaxUnavailable(value: Input[Double | String]): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+    inline def setMaxUnavailable(value: Input[Double | String]): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
+    inline def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
   }
 }

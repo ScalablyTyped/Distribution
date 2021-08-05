@@ -22,8 +22,7 @@ object slotFillMod {
   
   object Fill {
     
-    @scala.inline
-    def apply(props: Props): ReactPortal = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactPortal]
+    inline def apply(props: Props): ReactPortal = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactPortal]
     
     @JSImport("@wordpress/components/slot-fill", "Fill")
     @js.native
@@ -46,6 +45,5 @@ object slotFillMod {
     override def _to: ComponentType[typings.wordpressComponents.slotMod.Slot.Props] = ^
   }
   
-  @scala.inline
-  def createSlotFill(name: String): Fill = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlotFill")(name.asInstanceOf[js.Any]).asInstanceOf[Fill]
+  inline def createSlotFill(name: String): Fill = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlotFill")(name.asInstanceOf[js.Any]).asInstanceOf[Fill]
 }

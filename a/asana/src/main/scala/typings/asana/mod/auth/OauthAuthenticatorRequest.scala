@@ -15,16 +15,13 @@ trait OauthAuthenticatorRequest extends StObject {
 }
 object OauthAuthenticatorRequest {
   
-  @scala.inline
-  def apply(headers: Authorization): OauthAuthenticatorRequest = {
+  inline def apply(headers: Authorization): OauthAuthenticatorRequest = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthenticatorRequest]
   }
   
-  @scala.inline
-  implicit class OauthAuthenticatorRequestMutableBuilder[Self <: OauthAuthenticatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthenticatorRequest](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Authorization): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Authorization): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

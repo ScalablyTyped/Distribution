@@ -26,8 +26,7 @@ trait SupportingWidgetDefaultsFeatureTemplates
 }
 object SupportingWidgetDefaultsFeatureTemplates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,22 +35,16 @@ object SupportingWidgetDefaultsFeatureTemplates {
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureTemplates]
   }
   
-  @scala.inline
-  implicit class SupportingWidgetDefaultsFeatureTemplatesMutableBuilder[Self <: SupportingWidgetDefaultsFeatureTemplates] (val x: Self) extends AnyVal {
+  extension [Self <: SupportingWidgetDefaultsFeatureTemplates](x: Self) {
     
-    @scala.inline
-    def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
+    inline def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
+    inline def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+    inline def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+    inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait Audio extends StObject {
 }
 object Audio {
   
-  @scala.inline
-  def apply(Locale: Locale, Location: AudioLocation): Audio = {
+  inline def apply(Locale: Locale, Location: AudioLocation): Audio = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audio]
   }
   
-  @scala.inline
-  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+  extension [Self <: Audio](x: Self) {
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: AudioLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: AudioLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
   }
 }

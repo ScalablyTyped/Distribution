@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sideway__pinpoint"
-version := "2.0.0-e1295b"
+version := "2.0.0-b70ec4"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

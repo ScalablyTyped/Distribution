@@ -13,19 +13,15 @@ trait GetDataRetrievalPolicyOutput extends StObject {
 }
 object GetDataRetrievalPolicyOutput {
   
-  @scala.inline
-  def apply(): GetDataRetrievalPolicyOutput = {
+  inline def apply(): GetDataRetrievalPolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataRetrievalPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetDataRetrievalPolicyOutputMutableBuilder[Self <: GetDataRetrievalPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataRetrievalPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: DataRetrievalPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: DataRetrievalPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait SwitchEvent extends StObject {
 }
 object SwitchEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Switch): SwitchEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Switch): SwitchEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchEvent]
   }
   
-  @scala.inline
-  implicit class SwitchEventMutableBuilder[Self <: SwitchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: Switch): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Switch): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

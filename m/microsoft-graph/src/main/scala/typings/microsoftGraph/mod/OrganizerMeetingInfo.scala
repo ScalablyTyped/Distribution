@@ -13,19 +13,15 @@ trait OrganizerMeetingInfo
 }
 object OrganizerMeetingInfo {
   
-  @scala.inline
-  def apply(): OrganizerMeetingInfo = {
+  inline def apply(): OrganizerMeetingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrganizerMeetingInfo]
   }
   
-  @scala.inline
-  implicit class OrganizerMeetingInfoMutableBuilder[Self <: OrganizerMeetingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizerMeetingInfo](x: Self) {
     
-    @scala.inline
-    def setOrganizer(value: IdentitySet): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
+    inline def setOrganizer(value: IdentitySet): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
+    inline def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
   }
 }

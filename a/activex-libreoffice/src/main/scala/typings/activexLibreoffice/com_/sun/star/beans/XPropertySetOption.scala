@@ -15,8 +15,7 @@ trait XPropertySetOption
 }
 object XPropertySetOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     enableChangeListenerNotification: Boolean => Unit,
     queryInterface: `type` => js.Any,
@@ -26,10 +25,8 @@ object XPropertySetOption {
     __obj.asInstanceOf[XPropertySetOption]
   }
   
-  @scala.inline
-  implicit class XPropertySetOptionMutableBuilder[Self <: XPropertySetOption] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertySetOption](x: Self) {
     
-    @scala.inline
-    def setEnableChangeListenerNotification(value: Boolean => Unit): Self = StObject.set(x, "enableChangeListenerNotification", js.Any.fromFunction1(value))
+    inline def setEnableChangeListenerNotification(value: Boolean => Unit): Self = StObject.set(x, "enableChangeListenerNotification", js.Any.fromFunction1(value))
   }
 }

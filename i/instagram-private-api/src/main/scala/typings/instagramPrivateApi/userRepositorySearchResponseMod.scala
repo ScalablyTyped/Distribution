@@ -20,8 +20,7 @@ object userRepositorySearchResponseMod {
   }
   object UserRepositorySearchResponseFriendshipStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       following: Boolean,
       incoming_request: Boolean,
       is_bestie: Boolean,
@@ -32,23 +31,17 @@ object userRepositorySearchResponseMod {
       __obj.asInstanceOf[UserRepositorySearchResponseFriendshipStatus]
     }
     
-    @scala.inline
-    implicit class UserRepositorySearchResponseFriendshipStatusMutableBuilder[Self <: UserRepositorySearchResponseFriendshipStatus] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositorySearchResponseFriendshipStatus](x: Self) {
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+      inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+      inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+      inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,8 +59,7 @@ object userRepositorySearchResponseMod {
   }
   object UserRepositorySearchResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       has_more: Boolean,
       num_results: Double,
       rank_token: String,
@@ -78,26 +70,19 @@ object userRepositorySearchResponseMod {
       __obj.asInstanceOf[UserRepositorySearchResponseRootObject]
     }
     
-    @scala.inline
-    implicit class UserRepositorySearchResponseRootObjectMutableBuilder[Self <: UserRepositorySearchResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositorySearchResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
+      inline def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
+      inline def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+      inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[UserRepositorySearchResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[UserRepositorySearchResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: UserRepositorySearchResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: UserRepositorySearchResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -137,8 +122,7 @@ object userRepositorySearchResponseMod {
   }
   object UserRepositorySearchResponseUsersItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       byline: String,
       follower_count: Double,
       friendship_status: UserRepositorySearchResponseFriendshipStatus,
@@ -155,71 +139,49 @@ object userRepositorySearchResponseMod {
       __obj.asInstanceOf[UserRepositorySearchResponseUsersItem]
     }
     
-    @scala.inline
-    implicit class UserRepositorySearchResponseUsersItemMutableBuilder[Self <: UserRepositorySearchResponseUsersItem] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositorySearchResponseUsersItem](x: Self) {
       
-      @scala.inline
-      def setByline(value: String): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
+      inline def setByline(value: String): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
+      inline def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendship_status(value: UserRepositorySearchResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: UserRepositorySearchResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
+      inline def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
+      inline def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
       
-      @scala.inline
-      def setMutual_followers_count(value: Double): Self = StObject.set(x, "mutual_followers_count", value.asInstanceOf[js.Any])
+      inline def setMutual_followers_count(value: Double): Self = StObject.set(x, "mutual_followers_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
+      inline def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_social_context(value: String): Self = StObject.set(x, "search_social_context", value.asInstanceOf[js.Any])
+      inline def setSearch_social_context(value: String): Self = StObject.set(x, "search_social_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_social_contextUndefined: Self = StObject.set(x, "search_social_context", js.undefined)
+      inline def setSearch_social_contextUndefined: Self = StObject.set(x, "search_social_context", js.undefined)
       
-      @scala.inline
-      def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
+      inline def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocial_contextUndefined: Self = StObject.set(x, "social_context", js.undefined)
+      inline def setSocial_contextUndefined: Self = StObject.set(x, "social_context", js.undefined)
       
-      @scala.inline
-      def setUnseen_count(value: Double): Self = StObject.set(x, "unseen_count", value.asInstanceOf[js.Any])
+      inline def setUnseen_count(value: Double): Self = StObject.set(x, "unseen_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnseen_countUndefined: Self = StObject.set(x, "unseen_count", js.undefined)
+      inline def setUnseen_countUndefined: Self = StObject.set(x, "unseen_count", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

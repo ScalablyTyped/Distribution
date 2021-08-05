@@ -31,31 +31,23 @@ trait PgpSignedAttestation extends StObject {
 }
 object PgpSignedAttestation {
   
-  @scala.inline
-  def apply(): PgpSignedAttestation = {
+  inline def apply(): PgpSignedAttestation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PgpSignedAttestation]
   }
   
-  @scala.inline
-  implicit class PgpSignedAttestationMutableBuilder[Self <: PgpSignedAttestation] (val x: Self) extends AnyVal {
+  extension [Self <: PgpSignedAttestation](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setPgpKeyId(value: String): Self = StObject.set(x, "pgpKeyId", value.asInstanceOf[js.Any])
+    inline def setPgpKeyId(value: String): Self = StObject.set(x, "pgpKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgpKeyIdUndefined: Self = StObject.set(x, "pgpKeyId", js.undefined)
+    inline def setPgpKeyIdUndefined: Self = StObject.set(x, "pgpKeyId", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

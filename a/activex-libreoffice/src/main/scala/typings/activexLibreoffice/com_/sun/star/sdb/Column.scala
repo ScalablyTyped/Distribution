@@ -16,8 +16,7 @@ trait Column
      with ColumnSettings
 object Column {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: Double,
     ControlDefault: String,
     ControlModel: XPropertySet,

@@ -34,22 +34,19 @@ object global {
           @JSGlobal("Six.plugins.dataProvider.DataProvider.deps")
           @js.native
           def deps: js.Array[String] = js.native
-          @scala.inline
-          def deps_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deps")(x.asInstanceOf[js.Any])
+          inline def deps_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deps")(x.asInstanceOf[js.Any])
           
           /* static member */
           @JSGlobal("Six.plugins.dataProvider.DataProvider.retry")
           @js.native
           def retry: Double = js.native
-          @scala.inline
-          def retry_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("retry")(x.asInstanceOf[js.Any])
+          inline def retry_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("retry")(x.asInstanceOf[js.Any])
           
           /* static member */
           @JSGlobal("Six.plugins.dataProvider.DataProvider.timeout")
           @js.native
           def timeout: Double = js.native
-          @scala.inline
-          def timeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+          inline def timeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
         }
       }
     }

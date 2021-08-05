@@ -23,8 +23,7 @@ trait IInkStrokeRenderingSegment extends StObject {
 }
 object IInkStrokeRenderingSegment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bezierControlPoint1: Point,
     bezierControlPoint2: Point,
     position: Point,
@@ -37,28 +36,20 @@ object IInkStrokeRenderingSegment {
     __obj.asInstanceOf[IInkStrokeRenderingSegment]
   }
   
-  @scala.inline
-  implicit class IInkStrokeRenderingSegmentMutableBuilder[Self <: IInkStrokeRenderingSegment] (val x: Self) extends AnyVal {
+  extension [Self <: IInkStrokeRenderingSegment](x: Self) {
     
-    @scala.inline
-    def setBezierControlPoint1(value: Point): Self = StObject.set(x, "bezierControlPoint1", value.asInstanceOf[js.Any])
+    inline def setBezierControlPoint1(value: Point): Self = StObject.set(x, "bezierControlPoint1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBezierControlPoint2(value: Point): Self = StObject.set(x, "bezierControlPoint2", value.asInstanceOf[js.Any])
+    inline def setBezierControlPoint2(value: Point): Self = StObject.set(x, "bezierControlPoint2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
+    inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
+    inline def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
+    inline def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
+    inline def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
   }
 }

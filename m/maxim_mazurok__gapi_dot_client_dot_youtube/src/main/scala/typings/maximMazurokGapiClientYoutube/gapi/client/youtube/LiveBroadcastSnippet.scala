@@ -47,79 +47,55 @@ trait LiveBroadcastSnippet extends StObject {
 }
 object LiveBroadcastSnippet {
   
-  @scala.inline
-  def apply(): LiveBroadcastSnippet = {
+  inline def apply(): LiveBroadcastSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveBroadcastSnippet]
   }
   
-  @scala.inline
-  implicit class LiveBroadcastSnippetMutableBuilder[Self <: LiveBroadcastSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: LiveBroadcastSnippet](x: Self) {
     
-    @scala.inline
-    def setActualEndTime(value: String): Self = StObject.set(x, "actualEndTime", value.asInstanceOf[js.Any])
+    inline def setActualEndTime(value: String): Self = StObject.set(x, "actualEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualEndTimeUndefined: Self = StObject.set(x, "actualEndTime", js.undefined)
+    inline def setActualEndTimeUndefined: Self = StObject.set(x, "actualEndTime", js.undefined)
     
-    @scala.inline
-    def setActualStartTime(value: String): Self = StObject.set(x, "actualStartTime", value.asInstanceOf[js.Any])
+    inline def setActualStartTime(value: String): Self = StObject.set(x, "actualStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualStartTimeUndefined: Self = StObject.set(x, "actualStartTime", js.undefined)
+    inline def setActualStartTimeUndefined: Self = StObject.set(x, "actualStartTime", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIsDefaultBroadcast(value: Boolean): Self = StObject.set(x, "isDefaultBroadcast", value.asInstanceOf[js.Any])
+    inline def setIsDefaultBroadcast(value: Boolean): Self = StObject.set(x, "isDefaultBroadcast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultBroadcastUndefined: Self = StObject.set(x, "isDefaultBroadcast", js.undefined)
+    inline def setIsDefaultBroadcastUndefined: Self = StObject.set(x, "isDefaultBroadcast", js.undefined)
     
-    @scala.inline
-    def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
+    inline def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
+    inline def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
     
-    @scala.inline
-    def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
+    inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
+    inline def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
     
-    @scala.inline
-    def setScheduledEndTime(value: String): Self = StObject.set(x, "scheduledEndTime", value.asInstanceOf[js.Any])
+    inline def setScheduledEndTime(value: String): Self = StObject.set(x, "scheduledEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledEndTimeUndefined: Self = StObject.set(x, "scheduledEndTime", js.undefined)
+    inline def setScheduledEndTimeUndefined: Self = StObject.set(x, "scheduledEndTime", js.undefined)
     
-    @scala.inline
-    def setScheduledStartTime(value: String): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
+    inline def setScheduledStartTime(value: String): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
+    inline def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
     
-    @scala.inline
-    def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+    inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

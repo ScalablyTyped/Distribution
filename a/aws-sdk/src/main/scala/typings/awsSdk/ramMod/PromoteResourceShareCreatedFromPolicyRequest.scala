@@ -13,16 +13,13 @@ trait PromoteResourceShareCreatedFromPolicyRequest extends StObject {
 }
 object PromoteResourceShareCreatedFromPolicyRequest {
   
-  @scala.inline
-  def apply(resourceShareArn: String): PromoteResourceShareCreatedFromPolicyRequest = {
+  inline def apply(resourceShareArn: String): PromoteResourceShareCreatedFromPolicyRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromoteResourceShareCreatedFromPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PromoteResourceShareCreatedFromPolicyRequestMutableBuilder[Self <: PromoteResourceShareCreatedFromPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PromoteResourceShareCreatedFromPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }
 }

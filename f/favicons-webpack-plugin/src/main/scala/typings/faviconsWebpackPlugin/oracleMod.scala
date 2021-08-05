@@ -89,8 +89,7 @@ object oracleMod {
   }
   object Oracle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       guessAppName: () => js.Any,
       guessDescription: () => js.Any,
       guessDeveloper: () => js.Any,
@@ -103,29 +102,21 @@ object oracleMod {
       __obj.asInstanceOf[Oracle]
     }
     
-    @scala.inline
-    implicit class OracleMutableBuilder[Self <: Oracle] (val x: Self) extends AnyVal {
+    extension [Self <: Oracle](x: Self) {
       
-      @scala.inline
-      def setGuessAppName(value: () => js.Any): Self = StObject.set(x, "guessAppName", js.Any.fromFunction0(value))
+      inline def setGuessAppName(value: () => js.Any): Self = StObject.set(x, "guessAppName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGuessDescription(value: () => js.Any): Self = StObject.set(x, "guessDescription", js.Any.fromFunction0(value))
+      inline def setGuessDescription(value: () => js.Any): Self = StObject.set(x, "guessDescription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGuessDeveloper(value: () => js.Any): Self = StObject.set(x, "guessDeveloper", js.Any.fromFunction0(value))
+      inline def setGuessDeveloper(value: () => js.Any): Self = StObject.set(x, "guessDeveloper", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGuessDeveloperName(value: () => js.Any): Self = StObject.set(x, "guessDeveloperName", js.Any.fromFunction0(value))
+      inline def setGuessDeveloperName(value: () => js.Any): Self = StObject.set(x, "guessDeveloperName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGuessDeveloperURL(value: () => js.Any): Self = StObject.set(x, "guessDeveloperURL", js.Any.fromFunction0(value))
+      inline def setGuessDeveloperURL(value: () => js.Any): Self = StObject.set(x, "guessDeveloperURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGuessVersion(value: () => js.Any): Self = StObject.set(x, "guessVersion", js.Any.fromFunction0(value))
+      inline def setGuessVersion(value: () => js.Any): Self = StObject.set(x, "guessVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPkg(value: js.Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: js.Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
     }
   }
 }

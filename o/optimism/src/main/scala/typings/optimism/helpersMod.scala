@@ -10,8 +10,7 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def maybeUnsubscribe(entryOrDep: Unsubscribable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeUnsubscribe")(entryOrDep.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def maybeUnsubscribe(entryOrDep: Unsubscribable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeUnsubscribe")(entryOrDep.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Unsubscribable extends StObject {
     
@@ -19,23 +18,18 @@ object helpersMod {
   }
   object Unsubscribable {
     
-    @scala.inline
-    def apply(): Unsubscribable = {
+    inline def apply(): Unsubscribable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Unsubscribable]
     }
     
-    @scala.inline
-    implicit class UnsubscribableMutableBuilder[Self <: Unsubscribable] (val x: Self) extends AnyVal {
+    extension [Self <: Unsubscribable](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: Unit | js.Function0[js.Any]): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
+      inline def setUnsubscribe(value: Unit | js.Function0[js.Any]): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribeFunction0(value: () => js.Any): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribeFunction0(value: () => js.Any): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnsubscribeUndefined: Self = StObject.set(x, "unsubscribe", js.undefined)
+      inline def setUnsubscribeUndefined: Self = StObject.set(x, "unsubscribe", js.undefined)
     }
   }
 }

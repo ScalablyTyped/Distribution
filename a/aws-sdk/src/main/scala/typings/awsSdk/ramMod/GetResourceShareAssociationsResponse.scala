@@ -18,28 +18,21 @@ trait GetResourceShareAssociationsResponse extends StObject {
 }
 object GetResourceShareAssociationsResponse {
   
-  @scala.inline
-  def apply(): GetResourceShareAssociationsResponse = {
+  inline def apply(): GetResourceShareAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourceShareAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class GetResourceShareAssociationsResponseMutableBuilder[Self <: GetResourceShareAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceShareAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareAssociations(value: ResourceShareAssociationList): Self = StObject.set(x, "resourceShareAssociations", value.asInstanceOf[js.Any])
+    inline def setResourceShareAssociations(value: ResourceShareAssociationList): Self = StObject.set(x, "resourceShareAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareAssociationsUndefined: Self = StObject.set(x, "resourceShareAssociations", js.undefined)
+    inline def setResourceShareAssociationsUndefined: Self = StObject.set(x, "resourceShareAssociations", js.undefined)
     
-    @scala.inline
-    def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = StObject.set(x, "resourceShareAssociations", js.Array(value :_*))
+    inline def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = StObject.set(x, "resourceShareAssociations", js.Array(value :_*))
   }
 }

@@ -15,20 +15,16 @@ trait RefreshedAction
 }
 object RefreshedAction {
   
-  @scala.inline
-  def apply(fields: js.Object, `type`: REFRESHED): RefreshedAction = {
+  inline def apply(fields: js.Object, `type`: REFRESHED): RefreshedAction = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshedAction]
   }
   
-  @scala.inline
-  implicit class RefreshedActionMutableBuilder[Self <: RefreshedAction] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshedAction](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: REFRESHED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: REFRESHED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

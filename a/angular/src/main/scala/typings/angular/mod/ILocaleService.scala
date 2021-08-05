@@ -22,8 +22,7 @@ trait ILocaleService extends StObject {
 }
 object ILocaleService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor,
     NUMBER_FORMATS: ILocaleNumberFormatDescriptor,
     id: String,
@@ -33,19 +32,14 @@ object ILocaleService {
     __obj.asInstanceOf[ILocaleService]
   }
   
-  @scala.inline
-  implicit class ILocaleServiceMutableBuilder[Self <: ILocaleService] (val x: Self) extends AnyVal {
+  extension [Self <: ILocaleService](x: Self) {
     
-    @scala.inline
-    def setDATETIME_FORMATS(value: ILocaleDateTimeFormatDescriptor): Self = StObject.set(x, "DATETIME_FORMATS", value.asInstanceOf[js.Any])
+    inline def setDATETIME_FORMATS(value: ILocaleDateTimeFormatDescriptor): Self = StObject.set(x, "DATETIME_FORMATS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMBER_FORMATS(value: ILocaleNumberFormatDescriptor): Self = StObject.set(x, "NUMBER_FORMATS", value.asInstanceOf[js.Any])
+    inline def setNUMBER_FORMATS(value: ILocaleNumberFormatDescriptor): Self = StObject.set(x, "NUMBER_FORMATS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluralCat(value: js.Any => String): Self = StObject.set(x, "pluralCat", js.Any.fromFunction1(value))
+    inline def setPluralCat(value: js.Any => String): Self = StObject.set(x, "pluralCat", js.Any.fromFunction1(value))
   }
 }

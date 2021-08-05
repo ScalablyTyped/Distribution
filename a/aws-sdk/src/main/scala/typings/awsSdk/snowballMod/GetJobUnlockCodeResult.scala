@@ -13,19 +13,15 @@ trait GetJobUnlockCodeResult extends StObject {
 }
 object GetJobUnlockCodeResult {
   
-  @scala.inline
-  def apply(): GetJobUnlockCodeResult = {
+  inline def apply(): GetJobUnlockCodeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetJobUnlockCodeResult]
   }
   
-  @scala.inline
-  implicit class GetJobUnlockCodeResultMutableBuilder[Self <: GetJobUnlockCodeResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobUnlockCodeResult](x: Self) {
     
-    @scala.inline
-    def setUnlockCode(value: String): Self = StObject.set(x, "UnlockCode", value.asInstanceOf[js.Any])
+    inline def setUnlockCode(value: String): Self = StObject.set(x, "UnlockCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockCodeUndefined: Self = StObject.set(x, "UnlockCode", js.undefined)
+    inline def setUnlockCodeUndefined: Self = StObject.set(x, "UnlockCode", js.undefined)
   }
 }

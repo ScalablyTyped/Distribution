@@ -25,7 +25,7 @@ trait Scenario extends StObject {
   
   def Delete(): js.Any = js.native
   
-  @JSName("Excel.Scenario_typekey")
+  /* private */ @JSName("Excel.Scenario_typekey")
   var ExcelDotScenario_typekey: Scenario = js.native
   
   var Hidden: Boolean = js.native

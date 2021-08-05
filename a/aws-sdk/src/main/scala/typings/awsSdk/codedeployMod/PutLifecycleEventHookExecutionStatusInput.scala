@@ -23,31 +23,23 @@ trait PutLifecycleEventHookExecutionStatusInput extends StObject {
 }
 object PutLifecycleEventHookExecutionStatusInput {
   
-  @scala.inline
-  def apply(): PutLifecycleEventHookExecutionStatusInput = {
+  inline def apply(): PutLifecycleEventHookExecutionStatusInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutLifecycleEventHookExecutionStatusInput]
   }
   
-  @scala.inline
-  implicit class PutLifecycleEventHookExecutionStatusInputMutableBuilder[Self <: PutLifecycleEventHookExecutionStatusInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutLifecycleEventHookExecutionStatusInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    @scala.inline
-    def setLifecycleEventHookExecutionId(value: LifecycleEventHookExecutionId): Self = StObject.set(x, "lifecycleEventHookExecutionId", value.asInstanceOf[js.Any])
+    inline def setLifecycleEventHookExecutionId(value: LifecycleEventHookExecutionId): Self = StObject.set(x, "lifecycleEventHookExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleEventHookExecutionIdUndefined: Self = StObject.set(x, "lifecycleEventHookExecutionId", js.undefined)
+    inline def setLifecycleEventHookExecutionIdUndefined: Self = StObject.set(x, "lifecycleEventHookExecutionId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: LifecycleEventStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LifecycleEventStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

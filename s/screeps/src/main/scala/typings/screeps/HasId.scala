@@ -10,16 +10,13 @@ trait HasId extends StObject {
 }
 object HasId {
   
-  @scala.inline
-  def apply(id: Id[HasId]): HasId = {
+  inline def apply(id: Id[HasId]): HasId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasId]
   }
   
-  @scala.inline
-  implicit class HasIdMutableBuilder[Self <: HasId] (val x: Self) extends AnyVal {
+  extension [Self <: HasId](x: Self) {
     
-    @scala.inline
-    def setId(value: Id[HasId]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[HasId]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -44,46 +44,33 @@ trait SchemaReportWorkItemStatusRequest extends StObject {
 }
 object SchemaReportWorkItemStatusRequest {
   
-  @scala.inline
-  def apply(): SchemaReportWorkItemStatusRequest = {
+  inline def apply(): SchemaReportWorkItemStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportWorkItemStatusRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReportWorkItemStatusRequestMutableBuilder[Self <: SchemaReportWorkItemStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReportWorkItemStatusRequest](x: Self) {
     
-    @scala.inline
-    def setCurrentWorkerTime(value: String): Self = StObject.set(x, "currentWorkerTime", value.asInstanceOf[js.Any])
+    inline def setCurrentWorkerTime(value: String): Self = StObject.set(x, "currentWorkerTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentWorkerTimeUndefined: Self = StObject.set(x, "currentWorkerTime", js.undefined)
+    inline def setCurrentWorkerTimeUndefined: Self = StObject.set(x, "currentWorkerTime", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setUnifiedWorkerRequest(value: StringDictionary[js.Any]): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
+    inline def setUnifiedWorkerRequest(value: StringDictionary[js.Any]): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnifiedWorkerRequestUndefined: Self = StObject.set(x, "unifiedWorkerRequest", js.undefined)
+    inline def setUnifiedWorkerRequestUndefined: Self = StObject.set(x, "unifiedWorkerRequest", js.undefined)
     
-    @scala.inline
-    def setWorkItemStatuses(value: js.Array[SchemaWorkItemStatus]): Self = StObject.set(x, "workItemStatuses", value.asInstanceOf[js.Any])
+    inline def setWorkItemStatuses(value: js.Array[SchemaWorkItemStatus]): Self = StObject.set(x, "workItemStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemStatusesUndefined: Self = StObject.set(x, "workItemStatuses", js.undefined)
+    inline def setWorkItemStatusesUndefined: Self = StObject.set(x, "workItemStatuses", js.undefined)
     
-    @scala.inline
-    def setWorkItemStatusesVarargs(value: SchemaWorkItemStatus*): Self = StObject.set(x, "workItemStatuses", js.Array(value :_*))
+    inline def setWorkItemStatusesVarargs(value: SchemaWorkItemStatus*): Self = StObject.set(x, "workItemStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

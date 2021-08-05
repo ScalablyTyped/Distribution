@@ -18,19 +18,15 @@ trait CharacterDataModifiedEvent extends StObject {
 }
 object CharacterDataModifiedEvent {
   
-  @scala.inline
-  def apply(characterData: String, nodeId: NodeId): CharacterDataModifiedEvent = {
+  inline def apply(characterData: String, nodeId: NodeId): CharacterDataModifiedEvent = {
     val __obj = js.Dynamic.literal(characterData = characterData.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterDataModifiedEvent]
   }
   
-  @scala.inline
-  implicit class CharacterDataModifiedEventMutableBuilder[Self <: CharacterDataModifiedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CharacterDataModifiedEvent](x: Self) {
     
-    @scala.inline
-    def setCharacterData(value: String): Self = StObject.set(x, "characterData", value.asInstanceOf[js.Any])
+    inline def setCharacterData(value: String): Self = StObject.set(x, "characterData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

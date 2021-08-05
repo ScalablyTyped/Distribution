@@ -11,16 +11,13 @@ trait Cascader extends StObject {
 }
 object Cascader {
   
-  @scala.inline
-  def apply(cascader: Element): Cascader = {
+  inline def apply(cascader: Element): Cascader = {
     val __obj = js.Dynamic.literal(cascader = cascader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cascader]
   }
   
-  @scala.inline
-  implicit class CascaderMutableBuilder[Self <: Cascader] (val x: Self) extends AnyVal {
+  extension [Self <: Cascader](x: Self) {
     
-    @scala.inline
-    def setCascader(value: Element): Self = StObject.set(x, "cascader", value.asInstanceOf[js.Any])
+    inline def setCascader(value: Element): Self = StObject.set(x, "cascader", value.asInstanceOf[js.Any])
   }
 }

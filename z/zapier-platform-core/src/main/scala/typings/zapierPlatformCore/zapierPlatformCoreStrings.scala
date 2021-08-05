@@ -11,63 +11,53 @@ object zapierPlatformCoreStrings {
   sealed trait DELETE
     extends StObject
        with HttpMethod
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
   sealed trait GET
     extends StObject
        with HttpMethod
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait HEAD
     extends StObject
        with HttpMethod
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
   sealed trait OPTIONS
     extends StObject
        with HttpMethod
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
   sealed trait PATCH
     extends StObject
        with HttpMethod
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
   sealed trait POST
     extends StObject
        with HttpMethod
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait PUT
     extends StObject
        with HttpMethod
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait follow extends StObject
-  @scala.inline
-  def follow: follow = "follow".asInstanceOf[follow]
+  inline def follow: follow = "follow".asInstanceOf[follow]
   
   @js.native
   sealed trait manual extends StObject
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
+  inline def manual: manual = "manual".asInstanceOf[manual]
 }

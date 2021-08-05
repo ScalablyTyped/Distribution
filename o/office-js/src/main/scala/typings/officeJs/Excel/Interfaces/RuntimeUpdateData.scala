@@ -17,19 +17,15 @@ trait RuntimeUpdateData extends StObject {
 }
 object RuntimeUpdateData {
   
-  @scala.inline
-  def apply(): RuntimeUpdateData = {
+  inline def apply(): RuntimeUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuntimeUpdateData]
   }
   
-  @scala.inline
-  implicit class RuntimeUpdateDataMutableBuilder[Self <: RuntimeUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeUpdateData](x: Self) {
     
-    @scala.inline
-    def setEnableEvents(value: Boolean): Self = StObject.set(x, "enableEvents", value.asInstanceOf[js.Any])
+    inline def setEnableEvents(value: Boolean): Self = StObject.set(x, "enableEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEventsUndefined: Self = StObject.set(x, "enableEvents", js.undefined)
+    inline def setEnableEventsUndefined: Self = StObject.set(x, "enableEvents", js.undefined)
   }
 }

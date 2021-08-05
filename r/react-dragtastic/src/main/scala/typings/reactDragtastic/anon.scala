@@ -23,8 +23,7 @@ object anon {
   }
   object OnMouseDown {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,
       onTouchStart: TouchEvent[Element] => Unit
     ): OnMouseDown = {
@@ -32,14 +31,11 @@ object anon {
       __obj.asInstanceOf[OnMouseDown]
     }
     
-    @scala.inline
-    implicit class OnMouseDownMutableBuilder[Self <: OnMouseDown] (val x: Self) extends AnyVal {
+    extension [Self <: OnMouseDown](x: Self) {
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[Element] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[Element] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     }
   }
   
@@ -53,23 +49,18 @@ object anon {
   }
   object OnMouseEnter {
     
-    @scala.inline
-    def apply(onMouseEnter: () => Unit, onMouseLeave: () => Unit, onMouseUp: () => Unit): OnMouseEnter = {
+    inline def apply(onMouseEnter: () => Unit, onMouseLeave: () => Unit, onMouseUp: () => Unit): OnMouseEnter = {
       val __obj = js.Dynamic.literal(onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave), onMouseUp = js.Any.fromFunction0(onMouseUp))
       __obj.asInstanceOf[OnMouseEnter]
     }
     
-    @scala.inline
-    implicit class OnMouseEnterMutableBuilder[Self <: OnMouseEnter] (val x: Self) extends AnyVal {
+    extension [Self <: OnMouseEnter](x: Self) {
       
-      @scala.inline
-      def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
+      inline def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
+      inline def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMouseUp(value: () => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction0(value))
+      inline def setOnMouseUp(value: () => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction0(value))
     }
   }
   
@@ -113,8 +104,7 @@ object anon {
   }
   object StateisActivebooleanevent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Any,
       events: OnMouseDown,
       isActive: Boolean,
@@ -128,59 +118,41 @@ object anon {
       __obj.asInstanceOf[StateisActivebooleanevent]
     }
     
-    @scala.inline
-    implicit class StateisActivebooleaneventMutableBuilder[Self <: StateisActivebooleanevent] (val x: Self) extends AnyVal {
+    extension [Self <: StateisActivebooleanevent](x: Self) {
       
-      @scala.inline
-      def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
+      inline def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyDraggingIdUndefined: Self = StObject.set(x, "currentlyDraggingId", js.undefined)
+      inline def setCurrentlyDraggingIdUndefined: Self = StObject.set(x, "currentlyDraggingId", js.undefined)
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAccepts(value: Accepts): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", value.asInstanceOf[js.Any])
+      inline def setCurrentlyHoveredDroppableAccepts(value: Accepts): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
+      inline def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
+      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
+      inline def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
+      inline def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: OnMouseDown): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: OnMouseDown): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingX(value: Double): Self = StObject.set(x, "startingX", value.asInstanceOf[js.Any])
+      inline def setStartingX(value: Double): Self = StObject.set(x, "startingX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingY(value: Double): Self = StObject.set(x, "startingY", value.asInstanceOf[js.Any])
+      inline def setStartingY(value: Double): Self = StObject.set(x, "startingY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,8 +194,7 @@ object anon {
   }
   object StateisOverAcceptedboolea {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Any,
       isDragging: Boolean,
       isOverAccepted: Boolean,
@@ -236,56 +207,39 @@ object anon {
       __obj.asInstanceOf[StateisOverAcceptedboolea]
     }
     
-    @scala.inline
-    implicit class StateisOverAcceptedbooleaMutableBuilder[Self <: StateisOverAcceptedboolea] (val x: Self) extends AnyVal {
+    extension [Self <: StateisOverAcceptedboolea](x: Self) {
       
-      @scala.inline
-      def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
+      inline def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyDraggingIdUndefined: Self = StObject.set(x, "currentlyDraggingId", js.undefined)
+      inline def setCurrentlyDraggingIdUndefined: Self = StObject.set(x, "currentlyDraggingId", js.undefined)
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAccepts(value: Accepts): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", value.asInstanceOf[js.Any])
+      inline def setCurrentlyHoveredDroppableAccepts(value: Accepts): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
+      inline def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
+      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
+      inline def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
+      inline def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOverAccepted(value: Boolean): Self = StObject.set(x, "isOverAccepted", value.asInstanceOf[js.Any])
+      inline def setIsOverAccepted(value: Boolean): Self = StObject.set(x, "isOverAccepted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingX(value: Double): Self = StObject.set(x, "startingX", value.asInstanceOf[js.Any])
+      inline def setStartingX(value: Double): Self = StObject.set(x, "startingX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingY(value: Double): Self = StObject.set(x, "startingY", value.asInstanceOf[js.Any])
+      inline def setStartingY(value: Double): Self = StObject.set(x, "startingY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -332,8 +286,7 @@ object anon {
   }
   object StateisOverbooleanwillAcc {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Any,
       events: OnMouseEnter,
       isDragging: Boolean,
@@ -348,62 +301,43 @@ object anon {
       __obj.asInstanceOf[StateisOverbooleanwillAcc]
     }
     
-    @scala.inline
-    implicit class StateisOverbooleanwillAccMutableBuilder[Self <: StateisOverbooleanwillAcc] (val x: Self) extends AnyVal {
+    extension [Self <: StateisOverbooleanwillAcc](x: Self) {
       
-      @scala.inline
-      def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
+      inline def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyDraggingIdUndefined: Self = StObject.set(x, "currentlyDraggingId", js.undefined)
+      inline def setCurrentlyDraggingIdUndefined: Self = StObject.set(x, "currentlyDraggingId", js.undefined)
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAccepts(value: Accepts): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", value.asInstanceOf[js.Any])
+      inline def setCurrentlyHoveredDroppableAccepts(value: Accepts): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
+      inline def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
+      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
+      inline def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
+      inline def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: OnMouseEnter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: OnMouseEnter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
+      inline def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingX(value: Double): Self = StObject.set(x, "startingX", value.asInstanceOf[js.Any])
+      inline def setStartingX(value: Double): Self = StObject.set(x, "startingX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingY(value: Double): Self = StObject.set(x, "startingY", value.asInstanceOf[js.Any])
+      inline def setStartingY(value: Double): Self = StObject.set(x, "startingY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWillAccept(value: Boolean): Self = StObject.set(x, "willAccept", value.asInstanceOf[js.Any])
+      inline def setWillAccept(value: Boolean): Self = StObject.set(x, "willAccept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

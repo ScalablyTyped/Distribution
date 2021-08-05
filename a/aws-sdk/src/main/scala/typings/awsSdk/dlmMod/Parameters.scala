@@ -18,25 +18,19 @@ trait Parameters extends StObject {
 }
 object Parameters {
   
-  @scala.inline
-  def apply(): Parameters = {
+  inline def apply(): Parameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parameters]
   }
   
-  @scala.inline
-  implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+  extension [Self <: Parameters](x: Self) {
     
-    @scala.inline
-    def setExcludeBootVolume(value: ExcludeBootVolume): Self = StObject.set(x, "ExcludeBootVolume", value.asInstanceOf[js.Any])
+    inline def setExcludeBootVolume(value: ExcludeBootVolume): Self = StObject.set(x, "ExcludeBootVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeBootVolumeUndefined: Self = StObject.set(x, "ExcludeBootVolume", js.undefined)
+    inline def setExcludeBootVolumeUndefined: Self = StObject.set(x, "ExcludeBootVolume", js.undefined)
     
-    @scala.inline
-    def setNoReboot(value: NoReboot): Self = StObject.set(x, "NoReboot", value.asInstanceOf[js.Any])
+    inline def setNoReboot(value: NoReboot): Self = StObject.set(x, "NoReboot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoRebootUndefined: Self = StObject.set(x, "NoReboot", js.undefined)
+    inline def setNoRebootUndefined: Self = StObject.set(x, "NoReboot", js.undefined)
   }
 }

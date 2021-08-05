@@ -17,8 +17,7 @@ trait XText
 }
 object XText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: XNamedNodeMap,
     ChildNodes: XNodeList,
     Data: String,
@@ -77,10 +76,8 @@ object XText {
     __obj.asInstanceOf[XText]
   }
   
-  @scala.inline
-  implicit class XTextMutableBuilder[Self <: XText] (val x: Self) extends AnyVal {
+  extension [Self <: XText](x: Self) {
     
-    @scala.inline
-    def setSplitText(value: Double => XText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
+    inline def setSplitText(value: Double => XText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
   }
 }

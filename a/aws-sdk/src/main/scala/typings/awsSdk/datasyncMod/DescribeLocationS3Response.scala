@@ -35,52 +35,37 @@ trait DescribeLocationS3Response extends StObject {
 }
 object DescribeLocationS3Response {
   
-  @scala.inline
-  def apply(): DescribeLocationS3Response = {
+  inline def apply(): DescribeLocationS3Response = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocationS3Response]
   }
   
-  @scala.inline
-  implicit class DescribeLocationS3ResponseMutableBuilder[Self <: DescribeLocationS3Response] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocationS3Response](x: Self) {
     
-    @scala.inline
-    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
+    inline def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
+    inline def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
-    @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
+    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    @scala.inline
-    def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
+    inline def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ConfigUndefined: Self = StObject.set(x, "S3Config", js.undefined)
+    inline def setS3ConfigUndefined: Self = StObject.set(x, "S3Config", js.undefined)
     
-    @scala.inline
-    def setS3StorageClass(value: S3StorageClass): Self = StObject.set(x, "S3StorageClass", value.asInstanceOf[js.Any])
+    inline def setS3StorageClass(value: S3StorageClass): Self = StObject.set(x, "S3StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3StorageClassUndefined: Self = StObject.set(x, "S3StorageClass", js.undefined)
+    inline def setS3StorageClassUndefined: Self = StObject.set(x, "S3StorageClass", js.undefined)
   }
 }

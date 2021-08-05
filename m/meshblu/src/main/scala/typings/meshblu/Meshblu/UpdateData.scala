@@ -12,19 +12,15 @@ trait UpdateData extends StObject {
 }
 object UpdateData {
   
-  @scala.inline
-  def apply(color: String, uuid: String): UpdateData = {
+  inline def apply(color: String, uuid: String): UpdateData = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateData]
   }
   
-  @scala.inline
-  implicit class UpdateDataMutableBuilder[Self <: UpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateData](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

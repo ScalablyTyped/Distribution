@@ -29,26 +29,20 @@ object lrucacheMod {
   }
   object Entry {
     
-    @scala.inline
-    def apply(key_ : String, newer: js.Any, older: js.Any, value_ : js.Any): Entry = {
+    inline def apply(key_ : String, newer: js.Any, older: js.Any, value_ : js.Any): Entry = {
       val __obj = js.Dynamic.literal(key_ = key_.asInstanceOf[js.Any], newer = newer.asInstanceOf[js.Any], older = older.asInstanceOf[js.Any], value_ = value_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entry]
     }
     
-    @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+    extension [Self <: Entry](x: Self) {
       
-      @scala.inline
-      def setKey_(value: String): Self = StObject.set(x, "key_", value.asInstanceOf[js.Any])
+      inline def setKey_(value: String): Self = StObject.set(x, "key_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewer(value: js.Any): Self = StObject.set(x, "newer", value.asInstanceOf[js.Any])
+      inline def setNewer(value: js.Any): Self = StObject.set(x, "newer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOlder(value: js.Any): Self = StObject.set(x, "older", value.asInstanceOf[js.Any])
+      inline def setOlder(value: js.Any): Self = StObject.set(x, "older", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue_(value: js.Any): Self = StObject.set(x, "value_", value.asInstanceOf[js.Any])
+      inline def setValue_(value: js.Any): Self = StObject.set(x, "value_", value.asInstanceOf[js.Any])
     }
   }
   

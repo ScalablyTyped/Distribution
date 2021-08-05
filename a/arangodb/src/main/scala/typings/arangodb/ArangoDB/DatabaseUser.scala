@@ -17,34 +17,25 @@ trait DatabaseUser extends StObject {
 }
 object DatabaseUser {
   
-  @scala.inline
-  def apply(username: String): DatabaseUser = {
+  inline def apply(username: String): DatabaseUser = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseUser]
   }
   
-  @scala.inline
-  implicit class DatabaseUserMutableBuilder[Self <: DatabaseUser] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseUser](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setExtra(value: js.Object): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: js.Object): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    @scala.inline
-    def setPasswd(value: String): Self = StObject.set(x, "passwd", value.asInstanceOf[js.Any])
+    inline def setPasswd(value: String): Self = StObject.set(x, "passwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswdUndefined: Self = StObject.set(x, "passwd", js.undefined)
+    inline def setPasswdUndefined: Self = StObject.set(x, "passwd", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

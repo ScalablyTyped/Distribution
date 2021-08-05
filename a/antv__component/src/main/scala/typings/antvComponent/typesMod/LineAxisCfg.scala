@@ -24,19 +24,15 @@ trait LineAxisCfg
 }
 object LineAxisCfg {
   
-  @scala.inline
-  def apply(container: IGroup, end: Point, start: Point, ticks: js.Array[ListItem]): LineAxisCfg = {
+  inline def apply(container: IGroup, end: Point, start: Point, ticks: js.Array[ListItem]): LineAxisCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineAxisCfg]
   }
   
-  @scala.inline
-  implicit class LineAxisCfgMutableBuilder[Self <: LineAxisCfg] (val x: Self) extends AnyVal {
+  extension [Self <: LineAxisCfg](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

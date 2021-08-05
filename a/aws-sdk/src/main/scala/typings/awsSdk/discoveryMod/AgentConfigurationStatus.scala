@@ -23,31 +23,23 @@ trait AgentConfigurationStatus extends StObject {
 }
 object AgentConfigurationStatus {
   
-  @scala.inline
-  def apply(): AgentConfigurationStatus = {
+  inline def apply(): AgentConfigurationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AgentConfigurationStatus]
   }
   
-  @scala.inline
-  implicit class AgentConfigurationStatusMutableBuilder[Self <: AgentConfigurationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AgentConfigurationStatus](x: Self) {
     
-    @scala.inline
-    def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
+    inline def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setOperationSucceeded(value: Boolean): Self = StObject.set(x, "operationSucceeded", value.asInstanceOf[js.Any])
+    inline def setOperationSucceeded(value: Boolean): Self = StObject.set(x, "operationSucceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationSucceededUndefined: Self = StObject.set(x, "operationSucceeded", js.undefined)
+    inline def setOperationSucceededUndefined: Self = StObject.set(x, "operationSucceeded", js.undefined)
   }
 }

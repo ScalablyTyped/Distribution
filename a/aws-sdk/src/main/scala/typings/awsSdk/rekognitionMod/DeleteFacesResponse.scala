@@ -13,22 +13,17 @@ trait DeleteFacesResponse extends StObject {
 }
 object DeleteFacesResponse {
   
-  @scala.inline
-  def apply(): DeleteFacesResponse = {
+  inline def apply(): DeleteFacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFacesResponse]
   }
   
-  @scala.inline
-  implicit class DeleteFacesResponseMutableBuilder[Self <: DeleteFacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFacesResponse](x: Self) {
     
-    @scala.inline
-    def setDeletedFaces(value: FaceIdList): Self = StObject.set(x, "DeletedFaces", value.asInstanceOf[js.Any])
+    inline def setDeletedFaces(value: FaceIdList): Self = StObject.set(x, "DeletedFaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedFacesUndefined: Self = StObject.set(x, "DeletedFaces", js.undefined)
+    inline def setDeletedFacesUndefined: Self = StObject.set(x, "DeletedFaces", js.undefined)
     
-    @scala.inline
-    def setDeletedFacesVarargs(value: FaceId*): Self = StObject.set(x, "DeletedFaces", js.Array(value :_*))
+    inline def setDeletedFacesVarargs(value: FaceId*): Self = StObject.set(x, "DeletedFaces", js.Array(value :_*))
   }
 }

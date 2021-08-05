@@ -10,15 +10,11 @@ object Matrices {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def flipX(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipX")().asInstanceOf[Matrix]
+  inline def flipX(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipX")().asInstanceOf[Matrix]
   
-  @scala.inline
-  def flipY(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipY")().asInstanceOf[Matrix]
+  inline def flipY(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipY")().asInstanceOf[Matrix]
   
-  @scala.inline
-  def flipZ(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipZ")().asInstanceOf[Matrix]
+  inline def flipZ(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipZ")().asInstanceOf[Matrix]
   
-  @scala.inline
-  def identity(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")().asInstanceOf[Matrix]
+  inline def identity(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")().asInstanceOf[Matrix]
 }

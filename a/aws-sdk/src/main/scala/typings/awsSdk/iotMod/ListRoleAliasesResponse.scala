@@ -18,28 +18,21 @@ trait ListRoleAliasesResponse extends StObject {
 }
 object ListRoleAliasesResponse {
   
-  @scala.inline
-  def apply(): ListRoleAliasesResponse = {
+  inline def apply(): ListRoleAliasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRoleAliasesResponse]
   }
   
-  @scala.inline
-  implicit class ListRoleAliasesResponseMutableBuilder[Self <: ListRoleAliasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRoleAliasesResponse](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
     
-    @scala.inline
-    def setRoleAliases(value: RoleAliases): Self = StObject.set(x, "roleAliases", value.asInstanceOf[js.Any])
+    inline def setRoleAliases(value: RoleAliases): Self = StObject.set(x, "roleAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleAliasesUndefined: Self = StObject.set(x, "roleAliases", js.undefined)
+    inline def setRoleAliasesUndefined: Self = StObject.set(x, "roleAliases", js.undefined)
     
-    @scala.inline
-    def setRoleAliasesVarargs(value: RoleAlias*): Self = StObject.set(x, "roleAliases", js.Array(value :_*))
+    inline def setRoleAliasesVarargs(value: RoleAlias*): Self = StObject.set(x, "roleAliases", js.Array(value :_*))
   }
 }

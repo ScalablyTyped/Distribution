@@ -12,8 +12,7 @@ trait IAxisTitle
 }
 object IAxisTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     add: String => IAnnotation,
     bounds: IRectangle,
@@ -36,10 +35,8 @@ object IAxisTitle {
     __obj.asInstanceOf[IAxisTitle]
   }
   
-  @scala.inline
-  implicit class IAxisTitleMutableBuilder[Self <: IAxisTitle] (val x: Self) extends AnyVal {
+  extension [Self <: IAxisTitle](x: Self) {
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
   }
 }

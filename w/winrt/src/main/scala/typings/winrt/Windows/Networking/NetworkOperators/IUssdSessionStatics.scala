@@ -12,8 +12,7 @@ trait IUssdSessionStatics extends StObject {
 }
 object IUssdSessionStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createFromNetworkAccountId: String => UssdSession,
     createFromNetworkInterfaceId: String => UssdSession
   ): IUssdSessionStatics = {
@@ -21,13 +20,10 @@ object IUssdSessionStatics {
     __obj.asInstanceOf[IUssdSessionStatics]
   }
   
-  @scala.inline
-  implicit class IUssdSessionStaticsMutableBuilder[Self <: IUssdSessionStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IUssdSessionStatics](x: Self) {
     
-    @scala.inline
-    def setCreateFromNetworkAccountId(value: String => UssdSession): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
+    inline def setCreateFromNetworkAccountId(value: String => UssdSession): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFromNetworkInterfaceId(value: String => UssdSession): Self = StObject.set(x, "createFromNetworkInterfaceId", js.Any.fromFunction1(value))
+    inline def setCreateFromNetworkInterfaceId(value: String => UssdSession): Self = StObject.set(x, "createFromNetworkInterfaceId", js.Any.fromFunction1(value))
   }
 }

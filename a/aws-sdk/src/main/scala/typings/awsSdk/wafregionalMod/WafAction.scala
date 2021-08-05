@@ -13,16 +13,13 @@ trait WafAction extends StObject {
 }
 object WafAction {
   
-  @scala.inline
-  def apply(Type: WafActionType): WafAction = {
+  inline def apply(Type: WafActionType): WafAction = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[WafAction]
   }
   
-  @scala.inline
-  implicit class WafActionMutableBuilder[Self <: WafAction] (val x: Self) extends AnyVal {
+  extension [Self <: WafAction](x: Self) {
     
-    @scala.inline
-    def setType(value: WafActionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WafActionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

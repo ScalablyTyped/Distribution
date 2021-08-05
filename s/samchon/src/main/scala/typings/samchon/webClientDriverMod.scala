@@ -51,16 +51,16 @@ object webClientDriverMod {
     /**
       * @hidden
       */
-    var listening_ : js.Any = js.native
+    /* private */ var listening_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var path_ : js.Any = js.native
+    /* private */ var path_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var session_id_ : js.Any = js.native
+    /* private */ var session_id_ : js.Any = js.native
   }
 }

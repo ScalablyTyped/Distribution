@@ -13,19 +13,15 @@ trait TriggerNodeDetails extends StObject {
 }
 object TriggerNodeDetails {
   
-  @scala.inline
-  def apply(): TriggerNodeDetails = {
+  inline def apply(): TriggerNodeDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriggerNodeDetails]
   }
   
-  @scala.inline
-  implicit class TriggerNodeDetailsMutableBuilder[Self <: TriggerNodeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerNodeDetails](x: Self) {
     
-    @scala.inline
-    def setTrigger(value: Trigger): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Trigger): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "Trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "Trigger", js.undefined)
   }
 }

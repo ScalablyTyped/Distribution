@@ -36,26 +36,20 @@ object navigationMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(onChangeTab: Double => Unit, tabOpen: Double): Props = {
+    inline def apply(onChangeTab: Double => Unit, tabOpen: Double): Props = {
       val __obj = js.Dynamic.literal(onChangeTab = js.Any.fromFunction1(onChangeTab), tabOpen = tabOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setInitialUiVisible(value: Boolean): Self = StObject.set(x, "initialUiVisible", value.asInstanceOf[js.Any])
+      inline def setInitialUiVisible(value: Boolean): Self = StObject.set(x, "initialUiVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUiVisibleUndefined: Self = StObject.set(x, "initialUiVisible", js.undefined)
+      inline def setInitialUiVisibleUndefined: Self = StObject.set(x, "initialUiVisible", js.undefined)
       
-      @scala.inline
-      def setOnChangeTab(value: Double => Unit): Self = StObject.set(x, "onChangeTab", js.Any.fromFunction1(value))
+      inline def setOnChangeTab(value: Double => Unit): Self = StObject.set(x, "onChangeTab", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
+      inline def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
     }
   }
 }

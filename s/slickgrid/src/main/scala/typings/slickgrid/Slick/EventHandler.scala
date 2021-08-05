@@ -14,8 +14,7 @@ trait EventHandler[T] extends StObject {
 }
 object EventHandler {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     subscribe: (Event[T], js.Function2[/* e */ EventData, /* data */ T, Unit]) => EventHandler[js.Any],
     unsubscribe: (Event[T], js.Function2[/* e */ EventData, /* data */ T, Unit]) => EventHandler[js.Any],
     unsubscribeAll: () => EventHandler[js.Any]
@@ -24,16 +23,12 @@ object EventHandler {
     __obj.asInstanceOf[EventHandler[T]]
   }
   
-  @scala.inline
-  implicit class EventHandlerMutableBuilder[Self <: EventHandler[?], T] (val x: Self & EventHandler[T]) extends AnyVal {
+  extension [Self <: EventHandler[?], T](x: Self & EventHandler[T]) {
     
-    @scala.inline
-    def setSubscribe(value: (Event[T], js.Function2[/* e */ EventData, /* data */ T, Unit]) => EventHandler[js.Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+    inline def setSubscribe(value: (Event[T], js.Function2[/* e */ EventData, /* data */ T, Unit]) => EventHandler[js.Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnsubscribe(value: (Event[T], js.Function2[/* e */ EventData, /* data */ T, Unit]) => EventHandler[js.Any]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+    inline def setUnsubscribe(value: (Event[T], js.Function2[/* e */ EventData, /* data */ T, Unit]) => EventHandler[js.Any]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnsubscribeAll(value: () => EventHandler[js.Any]): Self = StObject.set(x, "unsubscribeAll", js.Any.fromFunction0(value))
+    inline def setUnsubscribeAll(value: () => EventHandler[js.Any]): Self = StObject.set(x, "unsubscribeAll", js.Any.fromFunction0(value))
   }
 }

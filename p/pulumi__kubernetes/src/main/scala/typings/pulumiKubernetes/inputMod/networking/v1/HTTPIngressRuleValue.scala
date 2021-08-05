@@ -17,19 +17,15 @@ trait HTTPIngressRuleValue extends StObject {
 }
 object HTTPIngressRuleValue {
   
-  @scala.inline
-  def apply(paths: Input[js.Array[Input[HTTPIngressPath]]]): HTTPIngressRuleValue = {
+  inline def apply(paths: Input[js.Array[Input[HTTPIngressPath]]]): HTTPIngressRuleValue = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTTPIngressRuleValue]
   }
   
-  @scala.inline
-  implicit class HTTPIngressRuleValueMutableBuilder[Self <: HTTPIngressRuleValue] (val x: Self) extends AnyVal {
+  extension [Self <: HTTPIngressRuleValue](x: Self) {
     
-    @scala.inline
-    def setPaths(value: Input[js.Array[Input[HTTPIngressPath]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: Input[js.Array[Input[HTTPIngressPath]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsVarargs(value: Input[HTTPIngressPath]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: Input[HTTPIngressPath]*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

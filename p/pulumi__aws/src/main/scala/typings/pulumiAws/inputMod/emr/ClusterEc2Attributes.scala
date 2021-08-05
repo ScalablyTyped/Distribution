@@ -49,58 +49,41 @@ trait ClusterEc2Attributes extends StObject {
 }
 object ClusterEc2Attributes {
   
-  @scala.inline
-  def apply(instanceProfile: Input[String]): ClusterEc2Attributes = {
+  inline def apply(instanceProfile: Input[String]): ClusterEc2Attributes = {
     val __obj = js.Dynamic.literal(instanceProfile = instanceProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEc2Attributes]
   }
   
-  @scala.inline
-  implicit class ClusterEc2AttributesMutableBuilder[Self <: ClusterEc2Attributes] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterEc2Attributes](x: Self) {
     
-    @scala.inline
-    def setAdditionalMasterSecurityGroups(value: Input[String]): Self = StObject.set(x, "additionalMasterSecurityGroups", value.asInstanceOf[js.Any])
+    inline def setAdditionalMasterSecurityGroups(value: Input[String]): Self = StObject.set(x, "additionalMasterSecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalMasterSecurityGroupsUndefined: Self = StObject.set(x, "additionalMasterSecurityGroups", js.undefined)
+    inline def setAdditionalMasterSecurityGroupsUndefined: Self = StObject.set(x, "additionalMasterSecurityGroups", js.undefined)
     
-    @scala.inline
-    def setAdditionalSlaveSecurityGroups(value: Input[String]): Self = StObject.set(x, "additionalSlaveSecurityGroups", value.asInstanceOf[js.Any])
+    inline def setAdditionalSlaveSecurityGroups(value: Input[String]): Self = StObject.set(x, "additionalSlaveSecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalSlaveSecurityGroupsUndefined: Self = StObject.set(x, "additionalSlaveSecurityGroups", js.undefined)
+    inline def setAdditionalSlaveSecurityGroupsUndefined: Self = StObject.set(x, "additionalSlaveSecurityGroups", js.undefined)
     
-    @scala.inline
-    def setEmrManagedMasterSecurityGroup(value: Input[String]): Self = StObject.set(x, "emrManagedMasterSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setEmrManagedMasterSecurityGroup(value: Input[String]): Self = StObject.set(x, "emrManagedMasterSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmrManagedMasterSecurityGroupUndefined: Self = StObject.set(x, "emrManagedMasterSecurityGroup", js.undefined)
+    inline def setEmrManagedMasterSecurityGroupUndefined: Self = StObject.set(x, "emrManagedMasterSecurityGroup", js.undefined)
     
-    @scala.inline
-    def setEmrManagedSlaveSecurityGroup(value: Input[String]): Self = StObject.set(x, "emrManagedSlaveSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setEmrManagedSlaveSecurityGroup(value: Input[String]): Self = StObject.set(x, "emrManagedSlaveSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmrManagedSlaveSecurityGroupUndefined: Self = StObject.set(x, "emrManagedSlaveSecurityGroup", js.undefined)
+    inline def setEmrManagedSlaveSecurityGroupUndefined: Self = StObject.set(x, "emrManagedSlaveSecurityGroup", js.undefined)
     
-    @scala.inline
-    def setInstanceProfile(value: Input[String]): Self = StObject.set(x, "instanceProfile", value.asInstanceOf[js.Any])
+    inline def setInstanceProfile(value: Input[String]): Self = StObject.set(x, "instanceProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyName(value: Input[String]): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: Input[String]): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
+    inline def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
-    @scala.inline
-    def setServiceAccessSecurityGroup(value: Input[String]): Self = StObject.set(x, "serviceAccessSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setServiceAccessSecurityGroup(value: Input[String]): Self = StObject.set(x, "serviceAccessSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccessSecurityGroupUndefined: Self = StObject.set(x, "serviceAccessSecurityGroup", js.undefined)
+    inline def setServiceAccessSecurityGroupUndefined: Self = StObject.set(x, "serviceAccessSecurityGroup", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
   }
 }

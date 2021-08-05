@@ -23,25 +23,19 @@ trait ChunkedUploadRequest extends StObject {
 }
 object ChunkedUploadRequest {
   
-  @scala.inline
-  def apply(): ChunkedUploadRequest = {
+  inline def apply(): ChunkedUploadRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChunkedUploadRequest]
   }
   
-  @scala.inline
-  implicit class ChunkedUploadRequestMutableBuilder[Self <: ChunkedUploadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ChunkedUploadRequest](x: Self) {
     
-    @scala.inline
-    def setChunkedUploadId(value: String): Self = StObject.set(x, "chunkedUploadId", value.asInstanceOf[js.Any])
+    inline def setChunkedUploadId(value: String): Self = StObject.set(x, "chunkedUploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkedUploadIdUndefined: Self = StObject.set(x, "chunkedUploadId", js.undefined)
+    inline def setChunkedUploadIdUndefined: Self = StObject.set(x, "chunkedUploadId", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

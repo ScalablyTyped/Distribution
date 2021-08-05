@@ -25,26 +25,20 @@ object Highland {
   }
   object CleanupObject {
     
-    @scala.inline
-    def apply(): CleanupObject = {
+    inline def apply(): CleanupObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CleanupObject]
     }
     
-    @scala.inline
-    implicit class CleanupObjectMutableBuilder[Self <: CleanupObject] (val x: Self) extends AnyVal {
+    extension [Self <: CleanupObject](x: Self) {
       
-      @scala.inline
-      def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
+      inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
+      inline def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
       
-      @scala.inline
-      def setOnDestroy(value: js.Function): Self = StObject.set(x, "onDestroy", value.asInstanceOf[js.Any])
+      inline def setOnDestroy(value: js.Function): Self = StObject.set(x, "onDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDestroyUndefined: Self = StObject.set(x, "onDestroy", js.undefined)
+      inline def setOnDestroyUndefined: Self = StObject.set(x, "onDestroy", js.undefined)
     }
   }
   
@@ -58,17 +52,14 @@ object Highland {
   }
   object Nil {
     
-    @scala.inline
-    def apply(Highland_NIL: Nil): Nil = {
+    inline def apply(Highland_NIL: Nil): Nil = {
       val __obj = js.Dynamic.literal(Highland_NIL = Highland_NIL.asInstanceOf[js.Any])
       __obj.asInstanceOf[Nil]
     }
     
-    @scala.inline
-    implicit class NilMutableBuilder[Self <: Nil] (val x: Self) extends AnyVal {
+    extension [Self <: Nil](x: Self) {
       
-      @scala.inline
-      def setHighland_NIL(value: Nil): Self = StObject.set(x, "Highland_NIL", value.asInstanceOf[js.Any])
+      inline def setHighland_NIL(value: Nil): Self = StObject.set(x, "Highland_NIL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +75,14 @@ object Highland {
   }
   object PipeOptions {
     
-    @scala.inline
-    def apply(end: Boolean): PipeOptions = {
+    inline def apply(end: Boolean): PipeOptions = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipeOptions]
     }
     
-    @scala.inline
-    implicit class PipeOptionsMutableBuilder[Self <: PipeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PipeOptions](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1277,17 +1265,14 @@ object Highland {
   }
   object StreamError {
     
-    @scala.inline
-    def apply(error: Error): StreamError = {
+    inline def apply(error: Error): StreamError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamError]
     }
     
-    @scala.inline
-    implicit class StreamErrorMutableBuilder[Self <: StreamError] (val x: Self) extends AnyVal {
+    extension [Self <: StreamError](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1301,17 +1286,14 @@ object Highland {
   }
   object StreamRedirect {
     
-    @scala.inline
-    def apply[R](to: Stream[R]): StreamRedirect[R] = {
+    inline def apply[R](to: Stream[R]): StreamRedirect[R] = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamRedirect[R]]
     }
     
-    @scala.inline
-    implicit class StreamRedirectMutableBuilder[Self <: StreamRedirect[?], R] (val x: Self & StreamRedirect[R]) extends AnyVal {
+    extension [Self <: StreamRedirect[?], R](x: Self & StreamRedirect[R]) {
       
-      @scala.inline
-      def setTo(value: Stream[R]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Stream[R]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

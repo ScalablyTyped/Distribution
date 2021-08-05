@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: js.Object */](state: T): typings.reactCopyWrite.anon.Consumer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[typings.reactCopyWrite.anon.Consumer[T]]
+  inline def default[T /* <: js.Object */](state: T): typings.reactCopyWrite.anon.Consumer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[typings.reactCopyWrite.anon.Consumer[T]]
   
   // It'd be nice if this could somehow be improved! Perhaps we need variadic
   // kinds plus infer keyword? Alternatively unions may solve our issue if we had
@@ -31,14 +30,12 @@ object mod {
   trait ConsumerProps[T] extends StObject
   object ConsumerProps {
     
-    @scala.inline
-    def ConsumerPropsExplicitRender[T](): typings.reactCopyWrite.mod.ConsumerPropsExplicitRender[T] = {
+    inline def ConsumerPropsExplicitRender[T](): typings.reactCopyWrite.mod.ConsumerPropsExplicitRender[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactCopyWrite.mod.ConsumerPropsExplicitRender[T]]
     }
     
-    @scala.inline
-    def ConsumerPropsImplicitRender[T](): typings.reactCopyWrite.mod.ConsumerPropsImplicitRender[T] = {
+    inline def ConsumerPropsImplicitRender[T](): typings.reactCopyWrite.mod.ConsumerPropsImplicitRender[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactCopyWrite.mod.ConsumerPropsImplicitRender[T]]
     }
@@ -50,23 +47,18 @@ object mod {
   }
   object ConsumerPropsBase {
     
-    @scala.inline
-    def apply[T](): ConsumerPropsBase[T] = {
+    inline def apply[T](): ConsumerPropsBase[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsumerPropsBase[T]]
     }
     
-    @scala.inline
-    implicit class ConsumerPropsBaseMutableBuilder[Self <: ConsumerPropsBase[?], T] (val x: Self & ConsumerPropsBase[T]) extends AnyVal {
+    extension [Self <: ConsumerPropsBase[?], T](x: Self & ConsumerPropsBase[T]) {
       
-      @scala.inline
-      def setSelect(value: js.Array[SelectorFn[T]]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: js.Array[SelectorFn[T]]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setSelectVarargs(value: SelectorFn[T]*): Self = StObject.set(x, "select", js.Array(value :_*))
+      inline def setSelectVarargs(value: SelectorFn[T]*): Self = StObject.set(x, "select", js.Array(value :_*))
     }
   }
   
@@ -79,20 +71,16 @@ object mod {
   }
   object ConsumerPropsExplicitRender {
     
-    @scala.inline
-    def apply[T](): ConsumerPropsExplicitRender[T] = {
+    inline def apply[T](): ConsumerPropsExplicitRender[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsumerPropsExplicitRender[T]]
     }
     
-    @scala.inline
-    implicit class ConsumerPropsExplicitRenderMutableBuilder[Self <: ConsumerPropsExplicitRender[?], T] (val x: Self & ConsumerPropsExplicitRender[T]) extends AnyVal {
+    extension [Self <: ConsumerPropsExplicitRender[?], T](x: Self & ConsumerPropsExplicitRender[T]) {
       
-      @scala.inline
-      def setRender(value: RenderFn[T]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: RenderFn[T]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
   
@@ -105,20 +93,16 @@ object mod {
   }
   object ConsumerPropsImplicitRender {
     
-    @scala.inline
-    def apply[T](): ConsumerPropsImplicitRender[T] = {
+    inline def apply[T](): ConsumerPropsImplicitRender[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsumerPropsImplicitRender[T]]
     }
     
-    @scala.inline
-    implicit class ConsumerPropsImplicitRenderMutableBuilder[Self <: ConsumerPropsImplicitRender[?], T] (val x: Self & ConsumerPropsImplicitRender[T]) extends AnyVal {
+    extension [Self <: ConsumerPropsImplicitRender[?], T](x: Self & ConsumerPropsImplicitRender[T]) {
       
-      @scala.inline
-      def setChildren(value: RenderFn[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: RenderFn[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -136,26 +120,20 @@ object mod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply[T](children: Element | js.Array[Element]): ProviderProps[T] = {
+    inline def apply[T](children: Element | js.Array[Element]): ProviderProps[T] = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderProps[T]]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[?], T] (val x: Self & ProviderProps[T]) extends AnyVal {
+    extension [Self <: ProviderProps[?], T](x: Self & ProviderProps[T]) {
       
-      @scala.inline
-      def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialState(value: Partial[T]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: Partial[T]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     }
   }
   

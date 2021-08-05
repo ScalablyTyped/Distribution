@@ -12,8 +12,7 @@ object fromEnvMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromEnv[T](envVarSelector: GetterFromEnv[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(envVarSelector.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
+  inline def fromEnv[T](envVarSelector: GetterFromEnv[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(envVarSelector.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
   
   type GetterFromEnv[T] = js.Function1[/* env */ ProcessEnv, js.UndefOr[T]]
 }

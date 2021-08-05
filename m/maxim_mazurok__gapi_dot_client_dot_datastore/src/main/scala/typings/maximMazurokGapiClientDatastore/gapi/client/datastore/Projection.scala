@@ -11,19 +11,15 @@ trait Projection extends StObject {
 }
 object Projection {
   
-  @scala.inline
-  def apply(): Projection = {
+  inline def apply(): Projection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Projection]
   }
   
-  @scala.inline
-  implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+  extension [Self <: Projection](x: Self) {
     
-    @scala.inline
-    def setProperty(value: PropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: PropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

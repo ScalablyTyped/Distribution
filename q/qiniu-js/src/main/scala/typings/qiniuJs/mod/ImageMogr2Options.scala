@@ -34,8 +34,7 @@ trait ImageMogr2Options extends StObject {
 }
 object ImageMogr2Options {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `auto-orient`: Boolean,
     blur: String,
     crop: String,
@@ -51,34 +50,24 @@ object ImageMogr2Options {
     __obj.asInstanceOf[ImageMogr2Options]
   }
   
-  @scala.inline
-  implicit class ImageMogr2OptionsMutableBuilder[Self <: ImageMogr2Options] (val x: Self) extends AnyVal {
+  extension [Self <: ImageMogr2Options](x: Self) {
     
-    @scala.inline
-    def `setAuto-orient`(value: Boolean): Self = StObject.set(x, "auto-orient", value.asInstanceOf[js.Any])
+    inline def `setAuto-orient`(value: Boolean): Self = StObject.set(x, "auto-orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlur(value: String): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: String): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+    inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

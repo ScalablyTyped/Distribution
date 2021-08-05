@@ -37,8 +37,7 @@ object bankAccounts {
   }
   object IBankAccount {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bank_name: String,
       country: String,
       currency: String,
@@ -54,23 +53,17 @@ object bankAccounts {
       __obj.asInstanceOf[typings.stripe.mod.bankAccounts.IBankAccount]
     }
     
-    @scala.inline
-    implicit class IBankAccountMutableBuilder[Self <: typings.stripe.mod.bankAccounts.IBankAccount] (val x: Self) extends AnyVal {
+    extension [Self <: typings.stripe.mod.bankAccounts.IBankAccount](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+      inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
       
-      @scala.inline
-      def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
+      inline def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
+      inline def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,8 +134,7 @@ object bankAccounts {
   }
   object IBankAccountHash {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bank_name: String,
       country: String,
       currency: String,
@@ -157,50 +149,35 @@ object bankAccounts {
       __obj.asInstanceOf[IBankAccountHash]
     }
     
-    @scala.inline
-    implicit class IBankAccountHashMutableBuilder[Self <: IBankAccountHash] (val x: Self) extends AnyVal {
+    extension [Self <: IBankAccountHash](x: Self) {
       
-      @scala.inline
-      def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_holder_nameNull: Self = StObject.set(x, "account_holder_name", null)
+      inline def setAccount_holder_nameNull: Self = StObject.set(x, "account_holder_name", null)
       
-      @scala.inline
-      def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_holder_typeNull: Self = StObject.set(x, "account_holder_type", null)
+      inline def setAccount_holder_typeNull: Self = StObject.set(x, "account_holder_type", null)
       
-      @scala.inline
-      def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
+      inline def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
+      inline def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
+      inline def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: `new` | validated | verified | verification_failed | errored): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `new` | validated | verified | verification_failed | errored): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,32 +197,24 @@ object bankAccounts {
   }
   object IBankAccountUpdateOptions {
     
-    @scala.inline
-    def apply(): IBankAccountUpdateOptions = {
+    inline def apply(): IBankAccountUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBankAccountUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IBankAccountUpdateOptionsMutableBuilder[Self <: IBankAccountUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IBankAccountUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_holder_nameNull: Self = StObject.set(x, "account_holder_name", null)
+      inline def setAccount_holder_nameNull: Self = StObject.set(x, "account_holder_name", null)
       
-      @scala.inline
-      def setAccount_holder_nameUndefined: Self = StObject.set(x, "account_holder_name", js.undefined)
+      inline def setAccount_holder_nameUndefined: Self = StObject.set(x, "account_holder_name", js.undefined)
       
-      @scala.inline
-      def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_holder_typeNull: Self = StObject.set(x, "account_holder_type", null)
+      inline def setAccount_holder_typeNull: Self = StObject.set(x, "account_holder_type", null)
       
-      @scala.inline
-      def setAccount_holder_typeUndefined: Self = StObject.set(x, "account_holder_type", js.undefined)
+      inline def setAccount_holder_typeUndefined: Self = StObject.set(x, "account_holder_type", js.undefined)
     }
   }
   
@@ -258,17 +227,14 @@ object bankAccounts {
   }
   object IBankAccountVerifyOptions {
     
-    @scala.inline
-    def apply(amounts: js.Tuple2[Double, Double]): IBankAccountVerifyOptions = {
+    inline def apply(amounts: js.Tuple2[Double, Double]): IBankAccountVerifyOptions = {
       val __obj = js.Dynamic.literal(amounts = amounts.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBankAccountVerifyOptions]
     }
     
-    @scala.inline
-    implicit class IBankAccountVerifyOptionsMutableBuilder[Self <: IBankAccountVerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IBankAccountVerifyOptions](x: Self) {
       
-      @scala.inline
-      def setAmounts(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "amounts", value.asInstanceOf[js.Any])
+      inline def setAmounts(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "amounts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,45 +287,33 @@ object bankAccounts {
   }
   object ISourceCreationOptions {
     
-    @scala.inline
-    def apply(account_number: String, country: String, currency: String): ISourceCreationOptions = {
+    inline def apply(account_number: String, country: String, currency: String): ISourceCreationOptions = {
       val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
       __obj.updateDynamic("object")("bank_account")
       __obj.asInstanceOf[ISourceCreationOptions]
     }
     
-    @scala.inline
-    implicit class ISourceCreationOptionsMutableBuilder[Self <: ISourceCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISourceCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_holder_nameUndefined: Self = StObject.set(x, "account_holder_name", js.undefined)
+      inline def setAccount_holder_nameUndefined: Self = StObject.set(x, "account_holder_name", js.undefined)
       
-      @scala.inline
-      def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_holder_typeUndefined: Self = StObject.set(x, "account_holder_type", js.undefined)
+      inline def setAccount_holder_typeUndefined: Self = StObject.set(x, "account_holder_type", js.undefined)
       
-      @scala.inline
-      def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
+      inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
+      inline def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouting_numberUndefined: Self = StObject.set(x, "routing_number", js.undefined)
+      inline def setRouting_numberUndefined: Self = StObject.set(x, "routing_number", js.undefined)
     }
   }
 }

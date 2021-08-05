@@ -16,19 +16,15 @@ trait SchemaLineFill extends StObject {
 }
 object SchemaLineFill {
   
-  @scala.inline
-  def apply(): SchemaLineFill = {
+  inline def apply(): SchemaLineFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLineFill]
   }
   
-  @scala.inline
-  implicit class SchemaLineFillMutableBuilder[Self <: SchemaLineFill] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLineFill](x: Self) {
     
-    @scala.inline
-    def setSolidFill(value: SchemaSolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+    inline def setSolidFill(value: SchemaSolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+    inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
   }
 }

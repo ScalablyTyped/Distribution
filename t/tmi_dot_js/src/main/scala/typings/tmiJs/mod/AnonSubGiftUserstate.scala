@@ -14,19 +14,15 @@ trait AnonSubGiftUserstate
 }
 object AnonSubGiftUserstate {
   
-  @scala.inline
-  def apply(): AnonSubGiftUserstate = {
+  inline def apply(): AnonSubGiftUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnonSubGiftUserstate]
   }
   
-  @scala.inline
-  implicit class AnonSubGiftUserstateMutableBuilder[Self <: AnonSubGiftUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: AnonSubGiftUserstate](x: Self) {
     
-    @scala.inline
-    def `setMessage-type`(value: anonsubgift): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
+    inline def `setMessage-type`(value: anonsubgift): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
+    inline def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
   }
 }

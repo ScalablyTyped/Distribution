@@ -118,8 +118,7 @@ object Uri {
     * @return The escaped representation of toEscape.
     */
   /* static member */
-  @scala.inline
-  def escapeComponent(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeComponent(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts the specified string by replacing any escape sequences with their unescaped representation.
@@ -127,6 +126,5 @@ object Uri {
     * @return The unescaped representation of stringToUnescape.
     */
   /* static member */
-  @scala.inline
-  def unescapeComponent(toUnescape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(toUnescape.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescapeComponent(toUnescape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(toUnescape.asInstanceOf[js.Any]).asInstanceOf[String]
 }

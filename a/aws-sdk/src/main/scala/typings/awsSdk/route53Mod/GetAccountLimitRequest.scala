@@ -13,16 +13,13 @@ trait GetAccountLimitRequest extends StObject {
 }
 object GetAccountLimitRequest {
   
-  @scala.inline
-  def apply(Type: AccountLimitType): GetAccountLimitRequest = {
+  inline def apply(Type: AccountLimitType): GetAccountLimitRequest = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountLimitRequest]
   }
   
-  @scala.inline
-  implicit class GetAccountLimitRequestMutableBuilder[Self <: GetAccountLimitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountLimitRequest](x: Self) {
     
-    @scala.inline
-    def setType(value: AccountLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AccountLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

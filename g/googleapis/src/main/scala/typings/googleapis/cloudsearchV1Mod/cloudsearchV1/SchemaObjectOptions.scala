@@ -22,25 +22,19 @@ trait SchemaObjectOptions extends StObject {
 }
 object SchemaObjectOptions {
   
-  @scala.inline
-  def apply(): SchemaObjectOptions = {
+  inline def apply(): SchemaObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaObjectOptions]
   }
   
-  @scala.inline
-  implicit class SchemaObjectOptionsMutableBuilder[Self <: SchemaObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaObjectOptions](x: Self) {
     
-    @scala.inline
-    def setDisplayOptions(value: SchemaObjectDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayOptions(value: SchemaObjectDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
+    inline def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
     
-    @scala.inline
-    def setFreshnessOptions(value: SchemaFreshnessOptions): Self = StObject.set(x, "freshnessOptions", value.asInstanceOf[js.Any])
+    inline def setFreshnessOptions(value: SchemaFreshnessOptions): Self = StObject.set(x, "freshnessOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreshnessOptionsUndefined: Self = StObject.set(x, "freshnessOptions", js.undefined)
+    inline def setFreshnessOptionsUndefined: Self = StObject.set(x, "freshnessOptions", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ object appsyncResolverMod {
   }
   object AppSyncIdentityCognito {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       claims: js.Any,
       defaultAuthStrategy: String,
       issuer: String,
@@ -39,29 +38,21 @@ object appsyncResolverMod {
       __obj.asInstanceOf[AppSyncIdentityCognito]
     }
     
-    @scala.inline
-    implicit class AppSyncIdentityCognitoMutableBuilder[Self <: AppSyncIdentityCognito] (val x: Self) extends AnyVal {
+    extension [Self <: AppSyncIdentityCognito](x: Self) {
       
-      @scala.inline
-      def setClaims(value: js.Any): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
+      inline def setClaims(value: js.Any): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAuthStrategy(value: String): Self = StObject.set(x, "defaultAuthStrategy", value.asInstanceOf[js.Any])
+      inline def setDefaultAuthStrategy(value: String): Self = StObject.set(x, "defaultAuthStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIp(value: js.Array[String]): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
+      inline def setSourceIp(value: js.Array[String]): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIpVarargs(value: String*): Self = StObject.set(x, "sourceIp", js.Array(value :_*))
+      inline def setSourceIpVarargs(value: String*): Self = StObject.set(x, "sourceIp", js.Array(value :_*))
       
-      @scala.inline
-      def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,8 +76,7 @@ object appsyncResolverMod {
   }
   object AppSyncIdentityIAM {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accountId: String,
       cognitoIdentityAuthProvider: String,
       cognitoIdentityAuthType: String,
@@ -100,35 +90,25 @@ object appsyncResolverMod {
       __obj.asInstanceOf[AppSyncIdentityIAM]
     }
     
-    @scala.inline
-    implicit class AppSyncIdentityIAMMutableBuilder[Self <: AppSyncIdentityIAM] (val x: Self) extends AnyVal {
+    extension [Self <: AppSyncIdentityIAM](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityAuthProvider(value: String): Self = StObject.set(x, "cognitoIdentityAuthProvider", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityAuthProvider(value: String): Self = StObject.set(x, "cognitoIdentityAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityAuthType(value: String): Self = StObject.set(x, "cognitoIdentityAuthType", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityAuthType(value: String): Self = StObject.set(x, "cognitoIdentityAuthType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityId(value: String): Self = StObject.set(x, "cognitoIdentityId", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityId(value: String): Self = StObject.set(x, "cognitoIdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityPoolId(value: String): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityPoolId(value: String): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIp(value: js.Array[String]): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
+      inline def setSourceIp(value: js.Array[String]): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIpVarargs(value: String*): Self = StObject.set(x, "sourceIp", js.Array(value :_*))
+      inline def setSourceIpVarargs(value: String*): Self = StObject.set(x, "sourceIp", js.Array(value :_*))
       
-      @scala.inline
-      def setUserArn(value: String): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+      inline def setUserArn(value: String): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,35 +126,26 @@ object appsyncResolverMod {
   }
   object AppSyncResolverEvent {
     
-    @scala.inline
-    def apply[T](arguments: T, info: FieldName, request: Headers): AppSyncResolverEvent[T] = {
+    inline def apply[T](arguments: T, info: FieldName, request: Headers): AppSyncResolverEvent[T] = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppSyncResolverEvent[T]]
     }
     
-    @scala.inline
-    implicit class AppSyncResolverEventMutableBuilder[Self <: AppSyncResolverEvent[?], T] (val x: Self & AppSyncResolverEvent[T]) extends AnyVal {
+    extension [Self <: AppSyncResolverEvent[?], T](x: Self & AppSyncResolverEvent[T]) {
       
-      @scala.inline
-      def setArguments(value: T): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: T): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: AppSyncIdentityIAM | AppSyncIdentityCognito): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: AppSyncIdentityIAM | AppSyncIdentityCognito): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+      inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      @scala.inline
-      def setInfo(value: FieldName): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: FieldName): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: StringDictionary[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: StringDictionary[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   

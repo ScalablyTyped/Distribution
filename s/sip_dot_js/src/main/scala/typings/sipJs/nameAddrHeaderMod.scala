@@ -20,7 +20,7 @@ object nameAddrHeaderMod {
       */
     def this(uri: URI, displayName: String, parameters: StringDictionary[String]) = this()
     
-    var _displayName: js.Any = js.native
+    /* private */ var _displayName: js.Any = js.native
     
     def displayName: String = js.native
     def displayName_=(value: String): Unit = js.native

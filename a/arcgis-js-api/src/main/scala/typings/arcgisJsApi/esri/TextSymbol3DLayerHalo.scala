@@ -26,8 +26,7 @@ trait TextSymbol3DLayerHalo
 }
 object TextSymbol3DLayerHalo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -39,19 +38,14 @@ object TextSymbol3DLayerHalo {
     __obj.asInstanceOf[TextSymbol3DLayerHalo]
   }
   
-  @scala.inline
-  implicit class TextSymbol3DLayerHaloMutableBuilder[Self <: TextSymbol3DLayerHalo] (val x: Self) extends AnyVal {
+  extension [Self <: TextSymbol3DLayerHalo](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

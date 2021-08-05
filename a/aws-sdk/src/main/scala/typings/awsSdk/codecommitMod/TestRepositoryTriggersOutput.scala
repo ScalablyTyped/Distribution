@@ -18,31 +18,23 @@ trait TestRepositoryTriggersOutput extends StObject {
 }
 object TestRepositoryTriggersOutput {
   
-  @scala.inline
-  def apply(): TestRepositoryTriggersOutput = {
+  inline def apply(): TestRepositoryTriggersOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestRepositoryTriggersOutput]
   }
   
-  @scala.inline
-  implicit class TestRepositoryTriggersOutputMutableBuilder[Self <: TestRepositoryTriggersOutput] (val x: Self) extends AnyVal {
+  extension [Self <: TestRepositoryTriggersOutput](x: Self) {
     
-    @scala.inline
-    def setFailedExecutions(value: RepositoryTriggerExecutionFailureList): Self = StObject.set(x, "failedExecutions", value.asInstanceOf[js.Any])
+    inline def setFailedExecutions(value: RepositoryTriggerExecutionFailureList): Self = StObject.set(x, "failedExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedExecutionsUndefined: Self = StObject.set(x, "failedExecutions", js.undefined)
+    inline def setFailedExecutionsUndefined: Self = StObject.set(x, "failedExecutions", js.undefined)
     
-    @scala.inline
-    def setFailedExecutionsVarargs(value: RepositoryTriggerExecutionFailure*): Self = StObject.set(x, "failedExecutions", js.Array(value :_*))
+    inline def setFailedExecutionsVarargs(value: RepositoryTriggerExecutionFailure*): Self = StObject.set(x, "failedExecutions", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessfulExecutions(value: RepositoryTriggerNameList): Self = StObject.set(x, "successfulExecutions", value.asInstanceOf[js.Any])
+    inline def setSuccessfulExecutions(value: RepositoryTriggerNameList): Self = StObject.set(x, "successfulExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulExecutionsUndefined: Self = StObject.set(x, "successfulExecutions", js.undefined)
+    inline def setSuccessfulExecutionsUndefined: Self = StObject.set(x, "successfulExecutions", js.undefined)
     
-    @scala.inline
-    def setSuccessfulExecutionsVarargs(value: RepositoryTriggerName*): Self = StObject.set(x, "successfulExecutions", js.Array(value :_*))
+    inline def setSuccessfulExecutionsVarargs(value: RepositoryTriggerName*): Self = StObject.set(x, "successfulExecutions", js.Array(value :_*))
   }
 }

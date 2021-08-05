@@ -99,8 +99,7 @@ object typesDateTimeMod {
   }
   object DateTimeFormatLocaleInternalData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       am: String,
       ca: js.Array[String],
       dateFormat: FullLong,
@@ -122,65 +121,45 @@ object typesDateTimeMod {
       __obj.asInstanceOf[DateTimeFormatLocaleInternalData]
     }
     
-    @scala.inline
-    implicit class DateTimeFormatLocaleInternalDataMutableBuilder[Self <: DateTimeFormatLocaleInternalData] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeFormatLocaleInternalData](x: Self) {
       
-      @scala.inline
-      def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
+      inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
       
-      @scala.inline
-      def setDateFormat(value: FullLong): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: FullLong): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeFormat(value: Medium): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
+      inline def setDateTimeFormat(value: Medium): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEra(value: LongEraData): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: LongEraData): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormats(value: Record[String, js.Array[Formats]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Record[String, js.Array[Formats]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGmtFormat(value: String): Self = StObject.set(x, "gmtFormat", value.asInstanceOf[js.Any])
+      inline def setGmtFormat(value: String): Self = StObject.set(x, "gmtFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHc(value: js.Array[String]): Self = StObject.set(x, "hc", value.asInstanceOf[js.Any])
+      inline def setHc(value: js.Array[String]): Self = StObject.set(x, "hc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHcVarargs(value: String*): Self = StObject.set(x, "hc", js.Array(value :_*))
+      inline def setHcVarargs(value: String*): Self = StObject.set(x, "hc", js.Array(value :_*))
       
-      @scala.inline
-      def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
+      inline def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
+      inline def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: Narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
+      inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
+      inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
       
-      @scala.inline
-      def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
+      inline def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeFormat(value: FullLong): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+      inline def setTimeFormat(value: FullLong): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneName(value: TimeZoneNameData): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: TimeZoneNameData): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekday(value: Narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: Narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,52 +183,38 @@ object typesDateTimeMod {
   }
   object DateTimeFormatOptions {
     
-    @scala.inline
-    def apply(): DateTimeFormatOptions = {
+    inline def apply(): DateTimeFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTimeFormatOptions]
     }
     
-    @scala.inline
-    implicit class DateTimeFormatOptionsMutableBuilder[Self <: DateTimeFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeFormatOptions](x: Self) {
       
-      @scala.inline
-      def setCalendar(
+      inline def setCalendar(
         value: buddhist | chinese | coptic | ethiopia | ethiopic | gregory | hebrew | indian | islamic | iso8601 | japanese | persian | roc
       ): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+      inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
       
-      @scala.inline
-      def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
+      inline def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
+      inline def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
       
-      @scala.inline
-      def setFractionalSecondDigits(value: Double): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
+      inline def setFractionalSecondDigits(value: Double): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFractionalSecondDigitsUndefined: Self = StObject.set(x, "fractionalSecondDigits", js.undefined)
+      inline def setFractionalSecondDigitsUndefined: Self = StObject.set(x, "fractionalSecondDigits", js.undefined)
       
-      @scala.inline
-      def setHourCycle(value: h11 | h12 | h23 | h24): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
+      inline def setHourCycle(value: h11 | h12 | h23 | h24): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourCycleUndefined: Self = StObject.set(x, "hourCycle", js.undefined)
+      inline def setHourCycleUndefined: Self = StObject.set(x, "hourCycle", js.undefined)
       
-      @scala.inline
-      def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+      inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
+      inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
       
-      @scala.inline
-      def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
+      inline def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
+      inline def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
     }
   }
   
@@ -261,20 +226,16 @@ object typesDateTimeMod {
   }
   object EraData {
     
-    @scala.inline
-    def apply(AD: String, BC: String): EraData = {
+    inline def apply(AD: String, BC: String): EraData = {
       val __obj = js.Dynamic.literal(AD = AD.asInstanceOf[js.Any], BC = BC.asInstanceOf[js.Any])
       __obj.asInstanceOf[EraData]
     }
     
-    @scala.inline
-    implicit class EraDataMutableBuilder[Self <: EraData] (val x: Self) extends AnyVal {
+    extension [Self <: EraData](x: Self) {
       
-      @scala.inline
-      def setAD(value: String): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
+      inline def setAD(value: String): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBC(value: String): Self = StObject.set(x, "BC", value.asInstanceOf[js.Any])
+      inline def setBC(value: String): Self = StObject.set(x, "BC", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,8 +276,7 @@ object typesDateTimeMod {
   }
   object Formats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       pattern: String,
       pattern12: String,
       rangePatterns: RecordTABLE2defaultRangePAmpm,
@@ -328,86 +288,59 @@ object typesDateTimeMod {
       __obj.asInstanceOf[Formats]
     }
     
-    @scala.inline
-    implicit class FormatsMutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
+    extension [Self <: Formats](x: Self) {
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
+      inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      @scala.inline
-      def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12(value: Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
+      inline def setHour12(value: Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
+      inline def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
       
-      @scala.inline
-      def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      @scala.inline
-      def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern12(value: String): Self = StObject.set(x, "pattern12", value.asInstanceOf[js.Any])
+      inline def setPattern12(value: String): Self = StObject.set(x, "pattern12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangePatterns(value: RecordTABLE2defaultRangePAmpm): Self = StObject.set(x, "rangePatterns", value.asInstanceOf[js.Any])
+      inline def setRangePatterns(value: RecordTABLE2defaultRangePAmpm): Self = StObject.set(x, "rangePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangePatterns12(value: RecordTABLE2defaultRangePAmpm): Self = StObject.set(x, "rangePatterns12", value.asInstanceOf[js.Any])
+      inline def setRangePatterns12(value: RecordTABLE2defaultRangePAmpm): Self = StObject.set(x, "rangePatterns12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawPattern(value: String): Self = StObject.set(x, "rawPattern", value.asInstanceOf[js.Any])
+      inline def setRawPattern(value: String): Self = StObject.set(x, "rawPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setSkeleton(value: String): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
+      inline def setSkeleton(value: String): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
+      inline def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
       
-      @scala.inline
-      def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
+      inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -459,8 +392,7 @@ object typesDateTimeMod {
   }
   object IntlDateTimeFormatInternal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataLocale: String,
       day: `2-digit` | numeric,
       era: narrow | short | long,
@@ -483,83 +415,57 @@ object typesDateTimeMod {
       __obj.asInstanceOf[IntlDateTimeFormatInternal]
     }
     
-    @scala.inline
-    implicit class IntlDateTimeFormatInternalMutableBuilder[Self <: IntlDateTimeFormatInternal] (val x: Self) extends AnyVal {
+    extension [Self <: IntlDateTimeFormatInternal](x: Self) {
       
-      @scala.inline
-      def setBoundFormat(value: FnCall): Self = StObject.set(x, "boundFormat", value.asInstanceOf[js.Any])
+      inline def setBoundFormat(value: FnCall): Self = StObject.set(x, "boundFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundFormatUndefined: Self = StObject.set(x, "boundFormat", js.undefined)
+      inline def setBoundFormatUndefined: Self = StObject.set(x, "boundFormat", js.undefined)
       
-      @scala.inline
-      def setCalendar(value: String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+      inline def setCalendar(value: String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+      inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
       
-      @scala.inline
-      def setDataLocale(value: String): Self = StObject.set(x, "dataLocale", value.asInstanceOf[js.Any])
+      inline def setDataLocale(value: String): Self = StObject.set(x, "dataLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
+      inline def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
+      inline def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
       
-      @scala.inline
-      def setDay(value: `2-digit` | numeric): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: `2-digit` | numeric): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEra(value: narrow | short | long): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: narrow | short | long): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: Formats): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Formats): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour(value: `2-digit` | numeric): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: `2-digit` | numeric): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
+      inline def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: `2-digit` | numeric): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: `2-digit` | numeric): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: `2-digit` | numeric | narrow | short | long): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: `2-digit` | numeric | narrow | short | long): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+      inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangePatterns(value: RecordTABLE2defaultRangePAmpm): Self = StObject.set(x, "rangePatterns", value.asInstanceOf[js.Any])
+      inline def setRangePatterns(value: RecordTABLE2defaultRangePAmpm): Self = StObject.set(x, "rangePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: `2-digit` | numeric): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: `2-digit` | numeric): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
+      inline def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
+      inline def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneName(value: short | long): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: short | long): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekday(value: narrow | short | long): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: narrow | short | long): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: `2-digit` | numeric): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: `2-digit` | numeric): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -573,30 +479,23 @@ object typesDateTimeMod {
   }
   object IntlDateTimeFormatPart {
     
-    @scala.inline
-    def apply(`type`: IntlDateTimeFormatPartType): IntlDateTimeFormatPart = {
+    inline def apply(`type`: IntlDateTimeFormatPartType): IntlDateTimeFormatPart = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntlDateTimeFormatPart]
     }
     
-    @scala.inline
-    implicit class IntlDateTimeFormatPartMutableBuilder[Self <: IntlDateTimeFormatPart] (val x: Self) extends AnyVal {
+    extension [Self <: IntlDateTimeFormatPart](x: Self) {
       
-      @scala.inline
-      def setSource(value: RangePatternType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: RangePatternType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setType(value: IntlDateTimeFormatPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IntlDateTimeFormatPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -617,20 +516,16 @@ object typesDateTimeMod {
   }
   object RangePatternPart {
     
-    @scala.inline
-    def apply[T /* <: RangePatternType */](pattern: String, source: T): RangePatternPart[T] = {
+    inline def apply[T /* <: RangePatternType */](pattern: String, source: T): RangePatternPart[T] = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangePatternPart[T]]
     }
     
-    @scala.inline
-    implicit class RangePatternPartMutableBuilder[Self <: RangePatternPart[?], T /* <: RangePatternType */] (val x: Self & RangePatternPart[T]) extends AnyVal {
+    extension [Self <: RangePatternPart[?], T /* <: RangePatternType */](x: Self & RangePatternPart[T]) {
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: T): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: T): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -642,14 +537,11 @@ object typesDateTimeMod {
   trait RangePatternType extends StObject
   object RangePatternType {
     
-    @scala.inline
-    def endRange: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.endRange = "endRange".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.endRange]
+    inline def endRange: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.endRange = "endRange".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.endRange]
     
-    @scala.inline
-    def shared: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shared = "shared".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shared]
+    inline def shared: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shared = "shared".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shared]
     
-    @scala.inline
-    def startRange: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.startRange = "startRange".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.startRange]
+    inline def startRange: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.startRange = "startRange".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.startRange]
   }
   
   /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  hour12 :boolean | undefined,   patternParts :std.Array<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatternPart<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatternType>>} */
@@ -679,80 +571,56 @@ object typesDateTimeMod {
   }
   object RangePatterns {
     
-    @scala.inline
-    def apply(patternParts: js.Array[RangePatternPart[RangePatternType]]): RangePatterns = {
+    inline def apply(patternParts: js.Array[RangePatternPart[RangePatternType]]): RangePatterns = {
       val __obj = js.Dynamic.literal(patternParts = patternParts.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangePatterns]
     }
     
-    @scala.inline
-    implicit class RangePatternsMutableBuilder[Self <: RangePatterns] (val x: Self) extends AnyVal {
+    extension [Self <: RangePatterns](x: Self) {
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
+      inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      @scala.inline
-      def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12(value: Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
+      inline def setHour12(value: Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
+      inline def setHour12Undefined: Self = StObject.set(x, "hour12", js.undefined)
       
-      @scala.inline
-      def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      @scala.inline
-      def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setPatternParts(value: js.Array[RangePatternPart[RangePatternType]]): Self = StObject.set(x, "patternParts", value.asInstanceOf[js.Any])
+      inline def setPatternParts(value: js.Array[RangePatternPart[RangePatternType]]): Self = StObject.set(x, "patternParts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternPartsVarargs(value: RangePatternPart[RangePatternType]*): Self = StObject.set(x, "patternParts", js.Array(value :_*))
+      inline def setPatternPartsVarargs(value: RangePatternPart[RangePatternType]*): Self = StObject.set(x, "patternParts", js.Array(value :_*))
       
-      @scala.inline
-      def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
+      inline def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
       
-      @scala.inline
-      def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
+      inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -768,29 +636,22 @@ object typesDateTimeMod {
   }
   object ResolvedDateTimeFormatOptions {
     
-    @scala.inline
-    def apply(calendar: String, hourCycle: String, locale: String, numberingSystem: String, timeZone: String): ResolvedDateTimeFormatOptions = {
+    inline def apply(calendar: String, hourCycle: String, locale: String, numberingSystem: String, timeZone: String): ResolvedDateTimeFormatOptions = {
       val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], hourCycle = hourCycle.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedDateTimeFormatOptions]
     }
     
-    @scala.inline
-    implicit class ResolvedDateTimeFormatOptionsMutableBuilder[Self <: ResolvedDateTimeFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedDateTimeFormatOptions](x: Self) {
       
-      @scala.inline
-      def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
+      inline def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
+      inline def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
       
-      @scala.inline
-      def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
+      inline def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
+      inline def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
+      inline def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
     }
   }
   
@@ -807,29 +668,21 @@ object typesDateTimeMod {
   trait TABLE_2 extends StObject
   object TABLE_2 {
     
-    @scala.inline
-    def ampm: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm = "ampm".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm]
+    inline def ampm: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm = "ampm".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm]
     
-    @scala.inline
-    def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
+    inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
     
-    @scala.inline
-    def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
+    inline def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
     
-    @scala.inline
-    def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
+    inline def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
     
-    @scala.inline
-    def minute: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute = "minute".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute]
+    inline def minute: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute = "minute".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute]
     
-    @scala.inline
-    def month: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month = "month".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month]
+    inline def month: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month = "month".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month]
     
-    @scala.inline
-    def second: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second = "second".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second]
+    inline def second: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second = "second".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second]
     
-    @scala.inline
-    def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
+    inline def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -846,32 +699,23 @@ object typesDateTimeMod {
   trait TABLE_6 extends StObject
   object TABLE_6 {
     
-    @scala.inline
-    def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
+    inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
     
-    @scala.inline
-    def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
+    inline def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
     
-    @scala.inline
-    def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
+    inline def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
     
-    @scala.inline
-    def minute: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute = "minute".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute]
+    inline def minute: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute = "minute".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute]
     
-    @scala.inline
-    def month: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month = "month".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month]
+    inline def month: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month = "month".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month]
     
-    @scala.inline
-    def second: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second = "second".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second]
+    inline def second: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second = "second".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second]
     
-    @scala.inline
-    def timeZoneName: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName = "timeZoneName".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName]
+    inline def timeZoneName: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName = "timeZoneName".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName]
     
-    @scala.inline
-    def weekday: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weekday = "weekday".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weekday]
+    inline def weekday: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weekday = "weekday".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weekday]
     
-    @scala.inline
-    def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
+    inline def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
   }
   
   type TimeZoneNameData = Record[String, Long]

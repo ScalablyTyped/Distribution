@@ -63,67 +63,47 @@ trait ShapeDataSourceSettings
 }
 object ShapeDataSourceSettings {
   
-  @scala.inline
-  def apply(): ShapeDataSourceSettings = {
+  inline def apply(): ShapeDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeDataSourceSettings]
   }
   
-  @scala.inline
-  implicit class ShapeDataSourceSettingsMutableBuilder[Self <: ShapeDataSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeDataSourceSettings](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
+    inline def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
-    @scala.inline
-    def setDatabaseSource(value: String): Self = StObject.set(x, "databaseSource", value.asInstanceOf[js.Any])
+    inline def setDatabaseSource(value: String): Self = StObject.set(x, "databaseSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseSourceUndefined: Self = StObject.set(x, "databaseSource", js.undefined)
+    inline def setDatabaseSourceUndefined: Self = StObject.set(x, "databaseSource", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImportCompleted(value: js.Function): Self = StObject.set(x, "importCompleted", value.asInstanceOf[js.Any])
+    inline def setImportCompleted(value: js.Function): Self = StObject.set(x, "importCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportCompletedUndefined: Self = StObject.set(x, "importCompleted", js.undefined)
+    inline def setImportCompletedUndefined: Self = StObject.set(x, "importCompleted", js.undefined)
     
-    @scala.inline
-    def setShapefileSource(value: String): Self = StObject.set(x, "shapefileSource", value.asInstanceOf[js.Any])
+    inline def setShapefileSource(value: String): Self = StObject.set(x, "shapefileSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapefileSourceUndefined: Self = StObject.set(x, "shapefileSource", js.undefined)
+    inline def setShapefileSourceUndefined: Self = StObject.set(x, "shapefileSource", js.undefined)
     
-    @scala.inline
-    def setTransformBounds(value: js.Function): Self = StObject.set(x, "transformBounds", value.asInstanceOf[js.Any])
+    inline def setTransformBounds(value: js.Function): Self = StObject.set(x, "transformBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformBoundsUndefined: Self = StObject.set(x, "transformBounds", js.undefined)
+    inline def setTransformBoundsUndefined: Self = StObject.set(x, "transformBounds", js.undefined)
     
-    @scala.inline
-    def setTransformPoint(value: js.Function): Self = StObject.set(x, "transformPoint", value.asInstanceOf[js.Any])
+    inline def setTransformPoint(value: js.Function): Self = StObject.set(x, "transformPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformPointUndefined: Self = StObject.set(x, "transformPoint", js.undefined)
+    inline def setTransformPointUndefined: Self = StObject.set(x, "transformPoint", js.undefined)
     
-    @scala.inline
-    def setTransformRecord(value: js.Function): Self = StObject.set(x, "transformRecord", value.asInstanceOf[js.Any])
+    inline def setTransformRecord(value: js.Function): Self = StObject.set(x, "transformRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformRecordUndefined: Self = StObject.set(x, "transformRecord", js.undefined)
+    inline def setTransformRecordUndefined: Self = StObject.set(x, "transformRecord", js.undefined)
   }
 }

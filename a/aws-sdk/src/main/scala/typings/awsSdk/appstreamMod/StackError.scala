@@ -18,25 +18,19 @@ trait StackError extends StObject {
 }
 object StackError {
   
-  @scala.inline
-  def apply(): StackError = {
+  inline def apply(): StackError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackError]
   }
   
-  @scala.inline
-  implicit class StackErrorMutableBuilder[Self <: StackError] (val x: Self) extends AnyVal {
+  extension [Self <: StackError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: StackErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: StackErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
   }
 }

@@ -14,6 +14,5 @@ object cliInstanceMod {
   @JSImport("webdriver-manager/built/lib/cli_instance", "cli")
   @js.native
   def cli: Cli = js.native
-  @scala.inline
-  def cli_=(x: Cli): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cli")(x.asInstanceOf[js.Any])
+  inline def cli_=(x: Cli): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cli")(x.asInstanceOf[js.Any])
 }

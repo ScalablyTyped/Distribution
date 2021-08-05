@@ -56,8 +56,7 @@ trait ResultColumn
 }
 object ResultColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: Double,
     CatalogName: String,
     ControlDefault: String,
@@ -106,43 +105,30 @@ object ResultColumn {
     __obj.asInstanceOf[ResultColumn]
   }
   
-  @scala.inline
-  implicit class ResultColumnMutableBuilder[Self <: ResultColumn] (val x: Self) extends AnyVal {
+  extension [Self <: ResultColumn](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaySize(value: Double): Self = StObject.set(x, "DisplaySize", value.asInstanceOf[js.Any])
+    inline def setDisplaySize(value: Double): Self = StObject.set(x, "DisplaySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefinitelyWritable(value: Boolean): Self = StObject.set(x, "IsDefinitelyWritable", value.asInstanceOf[js.Any])
+    inline def setIsDefinitelyWritable(value: Boolean): Self = StObject.set(x, "IsDefinitelyWritable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSearchable(value: Boolean): Self = StObject.set(x, "IsSearchable", value.asInstanceOf[js.Any])
+    inline def setIsSearchable(value: Boolean): Self = StObject.set(x, "IsSearchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSigned(value: Boolean): Self = StObject.set(x, "IsSigned", value.asInstanceOf[js.Any])
+    inline def setIsSigned(value: Boolean): Self = StObject.set(x, "IsSigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWritable(value: Boolean): Self = StObject.set(x, "IsWritable", value.asInstanceOf[js.Any])
+    inline def setIsWritable(value: Boolean): Self = StObject.set(x, "IsWritable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

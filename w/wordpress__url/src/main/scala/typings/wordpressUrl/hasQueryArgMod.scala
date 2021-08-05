@@ -10,6 +10,5 @@ object hasQueryArgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasQueryArg(url: String, arg: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasQueryArg(url: String, arg: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

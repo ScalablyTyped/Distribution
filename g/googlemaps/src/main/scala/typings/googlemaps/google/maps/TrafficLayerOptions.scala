@@ -13,25 +13,19 @@ trait TrafficLayerOptions extends StObject {
 }
 object TrafficLayerOptions {
   
-  @scala.inline
-  def apply(): TrafficLayerOptions = {
+  inline def apply(): TrafficLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficLayerOptions]
   }
   
-  @scala.inline
-  implicit class TrafficLayerOptionsMutableBuilder[Self <: TrafficLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficLayerOptions](x: Self) {
     
-    @scala.inline
-    def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
+    inline def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRefreshUndefined: Self = StObject.set(x, "autoRefresh", js.undefined)
+    inline def setAutoRefreshUndefined: Self = StObject.set(x, "autoRefresh", js.undefined)
     
-    @scala.inline
-    def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
   }
 }

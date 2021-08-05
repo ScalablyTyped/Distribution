@@ -42,14 +42,14 @@ object commMod {
     @JSName("on")
     def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
     
-    var parseData: js.Any = js.native
+    /* private */ var parseData: js.Any = js.native
     
     /**
       * Port of communication server.
       */
     var port: Double = js.native
     
-    var server: js.UndefOr[Server] = js.native
+    /* protected */ var server: js.UndefOr[Server] = js.native
     
     def start(): js.Promise[Unit] = js.native
     
@@ -64,20 +64,16 @@ object commMod {
   }
   object CommServerConnectionPayload {
     
-    @scala.inline
-    def apply(device: String): CommServerConnectionPayload = {
+    inline def apply(device: String): CommServerConnectionPayload = {
       val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], event = "connect")
       __obj.asInstanceOf[CommServerConnectionPayload]
     }
     
-    @scala.inline
-    implicit class CommServerConnectionPayloadMutableBuilder[Self <: CommServerConnectionPayload] (val x: Self) extends AnyVal {
+    extension [Self <: CommServerConnectionPayload](x: Self) {
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: connect): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: connect): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
 }

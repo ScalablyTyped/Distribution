@@ -18,8 +18,7 @@ trait ParametersActionsGetJobForWorkflowRunEndpoint extends StObject {
 }
 object ParametersActionsGetJobForWorkflowRunEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsGetJobForWorkflowRunEndpoint,
     request: ActionsGetJobForWorkflowRunRequestOptions,
     response: OctokitResponse[ActionsGetJobForWorkflowRunResponseData]
@@ -28,16 +27,12 @@ object ParametersActionsGetJobForWorkflowRunEndpoint {
     __obj.asInstanceOf[ParametersActionsGetJobForWorkflowRunEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsGetJobForWorkflowRunEndpointMutableBuilder[Self <: ParametersActionsGetJobForWorkflowRunEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsGetJobForWorkflowRunEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsGetJobForWorkflowRunEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsGetJobForWorkflowRunEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsGetJobForWorkflowRunRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsGetJobForWorkflowRunRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsGetJobForWorkflowRunResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsGetJobForWorkflowRunResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

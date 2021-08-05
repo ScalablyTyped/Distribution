@@ -15,19 +15,15 @@ trait PlotTreemapClusterStatesHoverOptions extends StObject {
 }
 object PlotTreemapClusterStatesHoverOptions {
   
-  @scala.inline
-  def apply(): PlotTreemapClusterStatesHoverOptions = {
+  inline def apply(): PlotTreemapClusterStatesHoverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotTreemapClusterStatesHoverOptions]
   }
   
-  @scala.inline
-  implicit class PlotTreemapClusterStatesHoverOptionsMutableBuilder[Self <: PlotTreemapClusterStatesHoverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotTreemapClusterStatesHoverOptions](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: ColorType): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: ColorType): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
   }
 }

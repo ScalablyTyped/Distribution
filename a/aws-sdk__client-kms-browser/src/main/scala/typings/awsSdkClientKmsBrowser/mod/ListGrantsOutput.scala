@@ -10,8 +10,7 @@ trait ListGrantsOutput
      with typings.awsSdkClientKmsBrowser.typesListGrantsOutputMod.ListGrantsOutput
 object ListGrantsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListGrantsOutput = {
+  inline def apply($metadata: ResponseMetadata): ListGrantsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGrantsOutput]
   }

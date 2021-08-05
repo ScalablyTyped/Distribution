@@ -23,22 +23,17 @@ trait ChangePasswordRequest extends StObject {
 }
 object ChangePasswordRequest {
   
-  @scala.inline
-  def apply(AccessToken: TokenModelType, PreviousPassword: PasswordType, ProposedPassword: PasswordType): ChangePasswordRequest = {
+  inline def apply(AccessToken: TokenModelType, PreviousPassword: PasswordType, ProposedPassword: PasswordType): ChangePasswordRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], PreviousPassword = PreviousPassword.asInstanceOf[js.Any], ProposedPassword = ProposedPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangePasswordRequest]
   }
   
-  @scala.inline
-  implicit class ChangePasswordRequestMutableBuilder[Self <: ChangePasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ChangePasswordRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousPassword(value: PasswordType): Self = StObject.set(x, "PreviousPassword", value.asInstanceOf[js.Any])
+    inline def setPreviousPassword(value: PasswordType): Self = StObject.set(x, "PreviousPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedPassword(value: PasswordType): Self = StObject.set(x, "ProposedPassword", value.asInstanceOf[js.Any])
+    inline def setProposedPassword(value: PasswordType): Self = StObject.set(x, "ProposedPassword", value.asInstanceOf[js.Any])
   }
 }

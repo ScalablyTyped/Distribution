@@ -26,25 +26,19 @@ trait SchemaDemoteMasterConfiguration extends StObject {
 }
 object SchemaDemoteMasterConfiguration {
   
-  @scala.inline
-  def apply(): SchemaDemoteMasterConfiguration = {
+  inline def apply(): SchemaDemoteMasterConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDemoteMasterConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaDemoteMasterConfigurationMutableBuilder[Self <: SchemaDemoteMasterConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDemoteMasterConfiguration](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMysqlReplicaConfiguration(value: SchemaDemoteMasterMySqlReplicaConfiguration): Self = StObject.set(x, "mysqlReplicaConfiguration", value.asInstanceOf[js.Any])
+    inline def setMysqlReplicaConfiguration(value: SchemaDemoteMasterMySqlReplicaConfiguration): Self = StObject.set(x, "mysqlReplicaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMysqlReplicaConfigurationUndefined: Self = StObject.set(x, "mysqlReplicaConfiguration", js.undefined)
+    inline def setMysqlReplicaConfigurationUndefined: Self = StObject.set(x, "mysqlReplicaConfiguration", js.undefined)
   }
 }

@@ -17,28 +17,21 @@ trait BatchClearValuesResponse extends StObject {
 }
 object BatchClearValuesResponse {
   
-  @scala.inline
-  def apply(): BatchClearValuesResponse = {
+  inline def apply(): BatchClearValuesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchClearValuesResponse]
   }
   
-  @scala.inline
-  implicit class BatchClearValuesResponseMutableBuilder[Self <: BatchClearValuesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchClearValuesResponse](x: Self) {
     
-    @scala.inline
-    def setClearedRanges(value: js.Array[String]): Self = StObject.set(x, "clearedRanges", value.asInstanceOf[js.Any])
+    inline def setClearedRanges(value: js.Array[String]): Self = StObject.set(x, "clearedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearedRangesUndefined: Self = StObject.set(x, "clearedRanges", js.undefined)
+    inline def setClearedRangesUndefined: Self = StObject.set(x, "clearedRanges", js.undefined)
     
-    @scala.inline
-    def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value :_*))
+    inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
   }
 }

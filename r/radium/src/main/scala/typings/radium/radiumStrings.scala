@@ -8,16 +8,13 @@ object radiumStrings {
   
   @js.native
   sealed trait Colonactive extends StObject
-  @scala.inline
-  def Colonactive: Colonactive = ":active".asInstanceOf[Colonactive]
+  inline def Colonactive: Colonactive = ":active".asInstanceOf[Colonactive]
   
   @js.native
   sealed trait Colonfocus extends StObject
-  @scala.inline
-  def Colonfocus: Colonfocus = ":focus".asInstanceOf[Colonfocus]
+  inline def Colonfocus: Colonfocus = ":focus".asInstanceOf[Colonfocus]
   
   @js.native
   sealed trait Colonhover extends StObject
-  @scala.inline
-  def Colonhover: Colonhover = ":hover".asInstanceOf[Colonhover]
+  inline def Colonhover: Colonhover = ":hover".asInstanceOf[Colonhover]
 }

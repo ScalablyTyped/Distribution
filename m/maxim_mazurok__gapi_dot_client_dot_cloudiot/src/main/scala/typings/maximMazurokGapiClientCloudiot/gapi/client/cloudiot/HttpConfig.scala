@@ -11,19 +11,15 @@ trait HttpConfig extends StObject {
 }
 object HttpConfig {
   
-  @scala.inline
-  def apply(): HttpConfig = {
+  inline def apply(): HttpConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpConfig]
   }
   
-  @scala.inline
-  implicit class HttpConfigMutableBuilder[Self <: HttpConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HttpConfig](x: Self) {
     
-    @scala.inline
-    def setHttpEnabledState(value: String): Self = StObject.set(x, "httpEnabledState", value.asInstanceOf[js.Any])
+    inline def setHttpEnabledState(value: String): Self = StObject.set(x, "httpEnabledState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpEnabledStateUndefined: Self = StObject.set(x, "httpEnabledState", js.undefined)
+    inline def setHttpEnabledStateUndefined: Self = StObject.set(x, "httpEnabledState", js.undefined)
   }
 }

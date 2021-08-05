@@ -59,8 +59,7 @@ object MasterDetail {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def create(model: IModel): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -71,8 +70,7 @@ object MasterDetail {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -83,8 +81,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInDataViewUnderFooterWidget(container: DataView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -95,8 +92,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInDataViewUnderWidget(container: DataView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -107,8 +103,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInDivContainerUnderWidget(container: DivContainer): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -119,8 +114,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -131,8 +125,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInHeaderUnderLeftWidget(container: Header): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -143,8 +136,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInHeaderUnderRightWidget(container: Header): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -155,8 +147,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -167,8 +158,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -179,8 +169,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInLayoutUnderWidget(container: Layout): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -191,8 +180,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -203,8 +191,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInListViewUnderWidget(container: ListView): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -215,8 +202,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -227,8 +213,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -239,8 +224,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -251,8 +235,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInSnippetUnderWidget(container: Snippet): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -263,8 +246,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -275,8 +257,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -287,8 +268,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInTabPageUnderWidget(container: TabPage): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -299,8 +279,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInTableCellUnderWidget(container: TableCell): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -311,8 +290,7 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /**
     * Creates and returns a new MasterDetail instance in the SDK and on the server.
@@ -323,20 +301,17 @@ object MasterDetail {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

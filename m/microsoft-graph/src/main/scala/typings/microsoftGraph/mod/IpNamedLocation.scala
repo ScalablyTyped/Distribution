@@ -16,28 +16,21 @@ trait IpNamedLocation
 }
 object IpNamedLocation {
   
-  @scala.inline
-  def apply(): IpNamedLocation = {
+  inline def apply(): IpNamedLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpNamedLocation]
   }
   
-  @scala.inline
-  implicit class IpNamedLocationMutableBuilder[Self <: IpNamedLocation] (val x: Self) extends AnyVal {
+  extension [Self <: IpNamedLocation](x: Self) {
     
-    @scala.inline
-    def setIpRanges(value: js.Array[IpRange]): Self = StObject.set(x, "ipRanges", value.asInstanceOf[js.Any])
+    inline def setIpRanges(value: js.Array[IpRange]): Self = StObject.set(x, "ipRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRangesUndefined: Self = StObject.set(x, "ipRanges", js.undefined)
+    inline def setIpRangesUndefined: Self = StObject.set(x, "ipRanges", js.undefined)
     
-    @scala.inline
-    def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "ipRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "ipRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+    inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
+    inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
   }
 }

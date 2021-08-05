@@ -9,6 +9,5 @@ object global {
   @JSGlobal("RTree")
   @js.native
   def RTree: RTreeFactory = js.native
-  @scala.inline
-  def RTree_=(x: RTreeFactory): Unit = js.Dynamic.global.updateDynamic("RTree")(x.asInstanceOf[js.Any])
+  inline def RTree_=(x: RTreeFactory): Unit = js.Dynamic.global.updateDynamic("RTree")(x.asInstanceOf[js.Any])
 }

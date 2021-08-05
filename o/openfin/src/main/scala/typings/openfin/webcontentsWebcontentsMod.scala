@@ -68,32 +68,24 @@ object webcontentsWebcontentsMod {
   }
   object CapturePageOptions {
     
-    @scala.inline
-    def apply(): CapturePageOptions = {
+    inline def apply(): CapturePageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CapturePageOptions]
     }
     
-    @scala.inline
-    implicit class CapturePageOptionsMutableBuilder[Self <: CapturePageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CapturePageOptions](x: Self) {
       
-      @scala.inline
-      def setArea(value: Area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: Area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+      inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
       
-      @scala.inline
-      def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
   
@@ -105,13 +97,10 @@ object webcontentsWebcontentsMod {
   trait ImageFormat extends StObject
   object ImageFormat {
     
-    @scala.inline
-    def bmp: typings.openfin.openfinStrings.bmp = "bmp".asInstanceOf[typings.openfin.openfinStrings.bmp]
+    inline def bmp: typings.openfin.openfinStrings.bmp = "bmp".asInstanceOf[typings.openfin.openfinStrings.bmp]
     
-    @scala.inline
-    def jpg: typings.openfin.openfinStrings.jpg = "jpg".asInstanceOf[typings.openfin.openfinStrings.jpg]
+    inline def jpg: typings.openfin.openfinStrings.jpg = "jpg".asInstanceOf[typings.openfin.openfinStrings.jpg]
     
-    @scala.inline
-    def png: typings.openfin.openfinStrings.png = "png".asInstanceOf[typings.openfin.openfinStrings.png]
+    inline def png: typings.openfin.openfinStrings.png = "png".asInstanceOf[typings.openfin.openfinStrings.png]
   }
 }

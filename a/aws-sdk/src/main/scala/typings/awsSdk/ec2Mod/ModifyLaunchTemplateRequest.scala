@@ -33,43 +33,31 @@ trait ModifyLaunchTemplateRequest extends StObject {
 }
 object ModifyLaunchTemplateRequest {
   
-  @scala.inline
-  def apply(): ModifyLaunchTemplateRequest = {
+  inline def apply(): ModifyLaunchTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyLaunchTemplateRequest]
   }
   
-  @scala.inline
-  implicit class ModifyLaunchTemplateRequestMutableBuilder[Self <: ModifyLaunchTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyLaunchTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDefaultVersion(value: String): Self = StObject.set(x, "DefaultVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultVersion(value: String): Self = StObject.set(x, "DefaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionUndefined: Self = StObject.set(x, "DefaultVersion", js.undefined)
+    inline def setDefaultVersionUndefined: Self = StObject.set(x, "DefaultVersion", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateId(value: LaunchTemplateId): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateId(value: LaunchTemplateId): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
+    inline def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
+    inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
   }
 }

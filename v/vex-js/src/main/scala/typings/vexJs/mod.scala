@@ -50,104 +50,72 @@ object mod extends Shortcut {
   }
   object IVexOptions {
     
-    @scala.inline
-    def apply(): IVexOptions = {
+    inline def apply(): IVexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVexOptions]
     }
     
-    @scala.inline
-    implicit class IVexOptionsMutableBuilder[Self <: IVexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IVexOptions](x: Self) {
       
-      @scala.inline
-      def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+      inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      @scala.inline
-      def setAfterOpen(value: /* vexContent */ JQuery[HTMLElement] => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(value: /* vexContent */ JQuery[HTMLElement] => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
+      inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
-      @scala.inline
-      def setAppendLocation(value: HTMLElement | JQuery[HTMLElement] | String): Self = StObject.set(x, "appendLocation", value.asInstanceOf[js.Any])
+      inline def setAppendLocation(value: HTMLElement | JQuery[HTMLElement] | String): Self = StObject.set(x, "appendLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendLocationUndefined: Self = StObject.set(x, "appendLocation", js.undefined)
+      inline def setAppendLocationUndefined: Self = StObject.set(x, "appendLocation", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseCSS(value: ICSSAttributes): Self = StObject.set(x, "closeCSS", value.asInstanceOf[js.Any])
+      inline def setCloseCSS(value: ICSSAttributes): Self = StObject.set(x, "closeCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseCSSUndefined: Self = StObject.set(x, "closeCSS", js.undefined)
+      inline def setCloseCSSUndefined: Self = StObject.set(x, "closeCSS", js.undefined)
       
-      @scala.inline
-      def setCloseClassName(value: String): Self = StObject.set(x, "closeClassName", value.asInstanceOf[js.Any])
+      inline def setCloseClassName(value: String): Self = StObject.set(x, "closeClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseClassNameUndefined: Self = StObject.set(x, "closeClassName", js.undefined)
+      inline def setCloseClassNameUndefined: Self = StObject.set(x, "closeClassName", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentCSS(value: ICSSAttributes): Self = StObject.set(x, "contentCSS", value.asInstanceOf[js.Any])
+      inline def setContentCSS(value: ICSSAttributes): Self = StObject.set(x, "contentCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentCSSUndefined: Self = StObject.set(x, "contentCSS", js.undefined)
+      inline def setContentCSSUndefined: Self = StObject.set(x, "contentCSS", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setCss(value: ICSSAttributes): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: ICSSAttributes): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setEscapeButtonCloses(value: Boolean): Self = StObject.set(x, "escapeButtonCloses", value.asInstanceOf[js.Any])
+      inline def setEscapeButtonCloses(value: Boolean): Self = StObject.set(x, "escapeButtonCloses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeButtonClosesUndefined: Self = StObject.set(x, "escapeButtonCloses", js.undefined)
+      inline def setEscapeButtonClosesUndefined: Self = StObject.set(x, "escapeButtonCloses", js.undefined)
       
-      @scala.inline
-      def setOverlayCSS(value: ICSSAttributes): Self = StObject.set(x, "overlayCSS", value.asInstanceOf[js.Any])
+      inline def setOverlayCSS(value: ICSSAttributes): Self = StObject.set(x, "overlayCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayCSSUndefined: Self = StObject.set(x, "overlayCSS", js.undefined)
+      inline def setOverlayCSSUndefined: Self = StObject.set(x, "overlayCSS", js.undefined)
       
-      @scala.inline
-      def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
+      inline def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
+      inline def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
       
-      @scala.inline
-      def setOverlayClosesOnClick(value: Boolean): Self = StObject.set(x, "overlayClosesOnClick", value.asInstanceOf[js.Any])
+      inline def setOverlayClosesOnClick(value: Boolean): Self = StObject.set(x, "overlayClosesOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayClosesOnClickUndefined: Self = StObject.set(x, "overlayClosesOnClick", js.undefined)
+      inline def setOverlayClosesOnClickUndefined: Self = StObject.set(x, "overlayClosesOnClick", js.undefined)
       
-      @scala.inline
-      def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+      inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+      inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
     }
   }
   

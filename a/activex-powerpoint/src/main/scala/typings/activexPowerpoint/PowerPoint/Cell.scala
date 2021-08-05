@@ -14,7 +14,7 @@ trait Cell extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Cell_typekey")
+  /* private */ @JSName("PowerPoint.Cell_typekey")
   var PowerPointDotCell_typekey: Cell
   
   def Select(): Unit
@@ -27,8 +27,7 @@ trait Cell extends StObject {
 }
 object Cell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Borders: Borders,
     Merge: Cell => Unit,
@@ -44,34 +43,24 @@ object Cell {
     __obj.asInstanceOf[Cell]
   }
   
-  @scala.inline
-  implicit class CellMutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
+  extension [Self <: Cell](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: Cell => Unit): Self = StObject.set(x, "Merge", js.Any.fromFunction1(value))
+    inline def setMerge(value: Cell => Unit): Self = StObject.set(x, "Merge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotCell_typekey(value: Cell): Self = StObject.set(x, "PowerPoint.Cell_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotCell_typekey(value: Cell): Self = StObject.set(x, "PowerPoint.Cell_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: Shape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Shape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplit(value: (Double, Double) => Unit): Self = StObject.set(x, "Split", js.Any.fromFunction2(value))
+    inline def setSplit(value: (Double, Double) => Unit): Self = StObject.set(x, "Split", js.Any.fromFunction2(value))
   }
 }

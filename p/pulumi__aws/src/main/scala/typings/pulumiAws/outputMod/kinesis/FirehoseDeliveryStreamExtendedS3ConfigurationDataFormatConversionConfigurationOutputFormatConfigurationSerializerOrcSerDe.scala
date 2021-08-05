@@ -58,76 +58,53 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe = {
+  inline def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe](x: Self) {
     
-    @scala.inline
-    def setBlockSizeBytes(value: Double): Self = StObject.set(x, "blockSizeBytes", value.asInstanceOf[js.Any])
+    inline def setBlockSizeBytes(value: Double): Self = StObject.set(x, "blockSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockSizeBytesUndefined: Self = StObject.set(x, "blockSizeBytes", js.undefined)
+    inline def setBlockSizeBytesUndefined: Self = StObject.set(x, "blockSizeBytes", js.undefined)
     
-    @scala.inline
-    def setBloomFilterColumns(value: js.Array[String]): Self = StObject.set(x, "bloomFilterColumns", value.asInstanceOf[js.Any])
+    inline def setBloomFilterColumns(value: js.Array[String]): Self = StObject.set(x, "bloomFilterColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBloomFilterColumnsUndefined: Self = StObject.set(x, "bloomFilterColumns", js.undefined)
+    inline def setBloomFilterColumnsUndefined: Self = StObject.set(x, "bloomFilterColumns", js.undefined)
     
-    @scala.inline
-    def setBloomFilterColumnsVarargs(value: String*): Self = StObject.set(x, "bloomFilterColumns", js.Array(value :_*))
+    inline def setBloomFilterColumnsVarargs(value: String*): Self = StObject.set(x, "bloomFilterColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setBloomFilterFalsePositiveProbability(value: Double): Self = StObject.set(x, "bloomFilterFalsePositiveProbability", value.asInstanceOf[js.Any])
+    inline def setBloomFilterFalsePositiveProbability(value: Double): Self = StObject.set(x, "bloomFilterFalsePositiveProbability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBloomFilterFalsePositiveProbabilityUndefined: Self = StObject.set(x, "bloomFilterFalsePositiveProbability", js.undefined)
+    inline def setBloomFilterFalsePositiveProbabilityUndefined: Self = StObject.set(x, "bloomFilterFalsePositiveProbability", js.undefined)
     
-    @scala.inline
-    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setDictionaryKeyThreshold(value: Double): Self = StObject.set(x, "dictionaryKeyThreshold", value.asInstanceOf[js.Any])
+    inline def setDictionaryKeyThreshold(value: Double): Self = StObject.set(x, "dictionaryKeyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictionaryKeyThresholdUndefined: Self = StObject.set(x, "dictionaryKeyThreshold", js.undefined)
+    inline def setDictionaryKeyThresholdUndefined: Self = StObject.set(x, "dictionaryKeyThreshold", js.undefined)
     
-    @scala.inline
-    def setEnablePadding(value: Boolean): Self = StObject.set(x, "enablePadding", value.asInstanceOf[js.Any])
+    inline def setEnablePadding(value: Boolean): Self = StObject.set(x, "enablePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePaddingUndefined: Self = StObject.set(x, "enablePadding", js.undefined)
+    inline def setEnablePaddingUndefined: Self = StObject.set(x, "enablePadding", js.undefined)
     
-    @scala.inline
-    def setFormatVersion(value: String): Self = StObject.set(x, "formatVersion", value.asInstanceOf[js.Any])
+    inline def setFormatVersion(value: String): Self = StObject.set(x, "formatVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatVersionUndefined: Self = StObject.set(x, "formatVersion", js.undefined)
+    inline def setFormatVersionUndefined: Self = StObject.set(x, "formatVersion", js.undefined)
     
-    @scala.inline
-    def setPaddingTolerance(value: Double): Self = StObject.set(x, "paddingTolerance", value.asInstanceOf[js.Any])
+    inline def setPaddingTolerance(value: Double): Self = StObject.set(x, "paddingTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingToleranceUndefined: Self = StObject.set(x, "paddingTolerance", js.undefined)
+    inline def setPaddingToleranceUndefined: Self = StObject.set(x, "paddingTolerance", js.undefined)
     
-    @scala.inline
-    def setRowIndexStride(value: Double): Self = StObject.set(x, "rowIndexStride", value.asInstanceOf[js.Any])
+    inline def setRowIndexStride(value: Double): Self = StObject.set(x, "rowIndexStride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexStrideUndefined: Self = StObject.set(x, "rowIndexStride", js.undefined)
+    inline def setRowIndexStrideUndefined: Self = StObject.set(x, "rowIndexStride", js.undefined)
     
-    @scala.inline
-    def setStripeSizeBytes(value: Double): Self = StObject.set(x, "stripeSizeBytes", value.asInstanceOf[js.Any])
+    inline def setStripeSizeBytes(value: Double): Self = StObject.set(x, "stripeSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripeSizeBytesUndefined: Self = StObject.set(x, "stripeSizeBytes", js.undefined)
+    inline def setStripeSizeBytesUndefined: Self = StObject.set(x, "stripeSizeBytes", js.undefined)
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdDateLanguage extends StObject
 object WdDateLanguage {
   
-  @scala.inline
-  def wdDateLanguageBidi: `10` = 10.asInstanceOf[`10`]
+  inline def wdDateLanguageBidi: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def wdDateLanguageLatin: `1033` = 1033.asInstanceOf[`1033`]
+  inline def wdDateLanguageLatin: `1033` = 1033.asInstanceOf[`1033`]
 }

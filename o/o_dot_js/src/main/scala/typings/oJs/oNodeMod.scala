@@ -49,16 +49,10 @@ object oNodeMod {
     def this(url: URL, config: RequestInit) = this()
   }
   
-  @scala.inline
-  def o(rootUrl: String): typings.oJs.ohandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
-  @scala.inline
-  def o(rootUrl: String, config: js.Any): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
-  @scala.inline
-  def o(rootUrl: String, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
-  @scala.inline
-  def o(rootUrl: URL): typings.oJs.ohandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
-  @scala.inline
-  def o(rootUrl: URL, config: js.Any): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
-  @scala.inline
-  def o(rootUrl: URL, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  inline def o(rootUrl: String): typings.oJs.ohandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  inline def o(rootUrl: String, config: js.Any): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  inline def o(rootUrl: String, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  inline def o(rootUrl: URL): typings.oJs.ohandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  inline def o(rootUrl: URL, config: js.Any): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
+  inline def o(rootUrl: URL, config: OdataConfig): typings.oJs.ohandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.oJs.ohandlerMod.OHandler]
 }

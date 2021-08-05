@@ -10,16 +10,13 @@ trait Router extends StObject {
 }
 object Router {
   
-  @scala.inline
-  def apply(router: typings.next.routerMod.Router): Router = {
+  inline def apply(router: typings.next.routerMod.Router): Router = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[Router]
   }
   
-  @scala.inline
-  implicit class RouterMutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
+  extension [Self <: Router](x: Self) {
     
-    @scala.inline
-    def setRouter(value: typings.next.routerMod.Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: typings.next.routerMod.Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait CreateSnapshotCopyGrantResult extends StObject {
 }
 object CreateSnapshotCopyGrantResult {
   
-  @scala.inline
-  def apply(): CreateSnapshotCopyGrantResult = {
+  inline def apply(): CreateSnapshotCopyGrantResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSnapshotCopyGrantResult]
   }
   
-  @scala.inline
-  implicit class CreateSnapshotCopyGrantResultMutableBuilder[Self <: CreateSnapshotCopyGrantResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSnapshotCopyGrantResult](x: Self) {
     
-    @scala.inline
-    def setSnapshotCopyGrant(value: SnapshotCopyGrant): Self = StObject.set(x, "SnapshotCopyGrant", value.asInstanceOf[js.Any])
+    inline def setSnapshotCopyGrant(value: SnapshotCopyGrant): Self = StObject.set(x, "SnapshotCopyGrant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotCopyGrantUndefined: Self = StObject.set(x, "SnapshotCopyGrant", js.undefined)
+    inline def setSnapshotCopyGrantUndefined: Self = StObject.set(x, "SnapshotCopyGrant", js.undefined)
   }
 }

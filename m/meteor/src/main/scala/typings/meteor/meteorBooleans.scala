@@ -12,6 +12,5 @@ object meteorBooleans {
     extends StObject
        with CurrentDateModifier
        with typings.meteor.mongoMod.Mongo.CurrentDateModifier
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

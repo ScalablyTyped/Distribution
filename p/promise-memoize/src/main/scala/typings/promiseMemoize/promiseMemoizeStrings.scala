@@ -11,13 +11,11 @@ object promiseMemoizeStrings {
   sealed trait json
     extends StObject
        with _KeyResolver
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait simple
     extends StObject
        with _KeyResolver
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
+  inline def simple: simple = "simple".asInstanceOf[simple]
 }

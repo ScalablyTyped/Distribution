@@ -9,8 +9,7 @@ trait RadialChartOptions
      with ChartOptions
 object RadialChartOptions {
   
-  @scala.inline
-  def apply(): RadialChartOptions = {
+  inline def apply(): RadialChartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadialChartOptions]
   }

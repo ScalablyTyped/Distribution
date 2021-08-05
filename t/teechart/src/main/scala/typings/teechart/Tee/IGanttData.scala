@@ -16,8 +16,7 @@ trait IGanttData
 }
 object IGanttData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: js.Array[Double],
     labels: js.Array[String],
     source: js.Any,
@@ -29,25 +28,18 @@ object IGanttData {
     __obj.asInstanceOf[IGanttData]
   }
   
-  @scala.inline
-  implicit class IGanttDataMutableBuilder[Self <: IGanttData] (val x: Self) extends AnyVal {
+  extension [Self <: IGanttData](x: Self) {
     
-    @scala.inline
-    def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
+    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
     
-    @scala.inline
-    def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
   }
 }

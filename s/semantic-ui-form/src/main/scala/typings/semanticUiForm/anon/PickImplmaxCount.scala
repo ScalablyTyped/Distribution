@@ -11,16 +11,13 @@ trait PickImplmaxCount extends StObject {
 }
 object PickImplmaxCount {
   
-  @scala.inline
-  def apply(maxCount: String): PickImplmaxCount = {
+  inline def apply(maxCount: String): PickImplmaxCount = {
     val __obj = js.Dynamic.literal(maxCount = maxCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxCount]
   }
   
-  @scala.inline
-  implicit class PickImplmaxCountMutableBuilder[Self <: PickImplmaxCount] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmaxCount](x: Self) {
     
-    @scala.inline
-    def setMaxCount(value: String): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+    inline def setMaxCount(value: String): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
   }
 }

@@ -19,29 +19,22 @@ object schemaInterfaceMod {
   }
   object NestedFieldsInterface {
     
-    @scala.inline
-    def apply(fields: SchemaInterface): NestedFieldsInterface = {
+    inline def apply(fields: SchemaInterface): NestedFieldsInterface = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[NestedFieldsInterface]
     }
     
-    @scala.inline
-    implicit class NestedFieldsInterfaceMutableBuilder[Self <: NestedFieldsInterface] (val x: Self) extends AnyVal {
+    extension [Self <: NestedFieldsInterface](x: Self) {
       
-      @scala.inline
-      def setFields(value: SchemaInterface): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: SchemaInterface): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
+      inline def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
+      inline def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
     }
   }
   
@@ -54,14 +47,12 @@ object schemaInterfaceMod {
   trait SchemaInterfaceField extends StObject
   object SchemaInterfaceField {
     
-    @scala.inline
-    def NestedFieldsInterface(fields: SchemaInterface): typings.parquetjs.schemaInterfaceMod.NestedFieldsInterface = {
+    inline def NestedFieldsInterface(fields: SchemaInterface): typings.parquetjs.schemaInterfaceMod.NestedFieldsInterface = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parquetjs.schemaInterfaceMod.NestedFieldsInterface]
     }
     
-    @scala.inline
-    def SingleFieldInterface(`type`: String): typings.parquetjs.schemaInterfaceMod.SingleFieldInterface = {
+    inline def SingleFieldInterface(`type`: String): typings.parquetjs.schemaInterfaceMod.SingleFieldInterface = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parquetjs.schemaInterfaceMod.SingleFieldInterface]
@@ -84,42 +75,31 @@ object schemaInterfaceMod {
   }
   object SingleFieldInterface {
     
-    @scala.inline
-    def apply(`type`: String): SingleFieldInterface = {
+    inline def apply(`type`: String): SingleFieldInterface = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SingleFieldInterface]
     }
     
-    @scala.inline
-    implicit class SingleFieldInterfaceMutableBuilder[Self <: SingleFieldInterface] (val x: Self) extends AnyVal {
+    extension [Self <: SingleFieldInterface](x: Self) {
       
-      @scala.inline
-      def setBitWidth(value: Double): Self = StObject.set(x, "bitWidth", value.asInstanceOf[js.Any])
+      inline def setBitWidth(value: Double): Self = StObject.set(x, "bitWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitWidthUndefined: Self = StObject.set(x, "bitWidth", js.undefined)
+      inline def setBitWidthUndefined: Self = StObject.set(x, "bitWidth", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
+      inline def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
+      inline def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

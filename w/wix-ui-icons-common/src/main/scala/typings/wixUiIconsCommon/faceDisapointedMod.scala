@@ -22,20 +22,16 @@ object faceDisapointedMod extends Shortcut {
   }
   object FaceDisapointedProps {
     
-    @scala.inline
-    def apply(): FaceDisapointedProps = {
+    inline def apply(): FaceDisapointedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FaceDisapointedProps]
     }
     
-    @scala.inline
-    implicit class FaceDisapointedPropsMutableBuilder[Self <: FaceDisapointedProps] (val x: Self) extends AnyVal {
+    extension [Self <: FaceDisapointedProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

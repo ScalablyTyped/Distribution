@@ -22,8 +22,7 @@ trait WebAccountProviderActivatedEventArgs extends StObject {
 }
 object WebAccountProviderActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     operation: IWebAccountProviderOperation,
     previousExecutionState: ApplicationExecutionState,
@@ -33,19 +32,14 @@ object WebAccountProviderActivatedEventArgs {
     __obj.asInstanceOf[WebAccountProviderActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderActivatedEventArgsMutableBuilder[Self <: WebAccountProviderActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: IWebAccountProviderOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: IWebAccountProviderOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

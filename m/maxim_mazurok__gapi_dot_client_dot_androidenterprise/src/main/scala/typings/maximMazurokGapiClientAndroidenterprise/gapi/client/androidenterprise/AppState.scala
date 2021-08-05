@@ -14,28 +14,21 @@ trait AppState extends StObject {
 }
 object AppState {
   
-  @scala.inline
-  def apply(): AppState = {
+  inline def apply(): AppState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppState]
   }
   
-  @scala.inline
-  implicit class AppStateMutableBuilder[Self <: AppState] (val x: Self) extends AnyVal {
+  extension [Self <: AppState](x: Self) {
     
-    @scala.inline
-    def setKeyedAppState(value: js.Array[KeyedAppState]): Self = StObject.set(x, "keyedAppState", value.asInstanceOf[js.Any])
+    inline def setKeyedAppState(value: js.Array[KeyedAppState]): Self = StObject.set(x, "keyedAppState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyedAppStateUndefined: Self = StObject.set(x, "keyedAppState", js.undefined)
+    inline def setKeyedAppStateUndefined: Self = StObject.set(x, "keyedAppState", js.undefined)
     
-    @scala.inline
-    def setKeyedAppStateVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppState", js.Array(value :_*))
+    inline def setKeyedAppStateVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppState", js.Array(value :_*))
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

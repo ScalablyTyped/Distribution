@@ -24,10 +24,8 @@ object layoutGridMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/LayoutGrid/LayoutGrid.LayoutGridProps> & {  displayName :'LayoutGridProps'} */
   object default {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[LayoutGridProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[LayoutGridProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[LayoutGridProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[LayoutGridProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", JSImport.Default)
     @js.native
@@ -36,26 +34,22 @@ object layoutGridMod {
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", "default.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", "default.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialLayoutGridProps] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialLayoutGridProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialLayoutGridProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", "default.displayName")
     @js.native
     def displayName: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.LayoutGridProps | String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.LayoutGridProps | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.LayoutGridProps | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/LayoutGrid/LayoutGrid", "default.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapLayoutGr] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapLayoutGr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapLayoutGr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait LayoutGridProps
@@ -74,50 +68,36 @@ object layoutGridMod {
   }
   object LayoutGridProps {
     
-    @scala.inline
-    def apply(): LayoutGridProps = {
+    inline def apply(): LayoutGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutGridProps]
     }
     
-    @scala.inline
-    implicit class LayoutGridPropsMutableBuilder[Self <: LayoutGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutGridProps](x: Self) {
       
-      @scala.inline
-      def setColSpan(value: js.Any): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: js.Any): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setCols(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setNogap(value: Boolean): Self = StObject.set(x, "nogap", value.asInstanceOf[js.Any])
+      inline def setNogap(value: Boolean): Self = StObject.set(x, "nogap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNogapUndefined: Self = StObject.set(x, "nogap", js.undefined)
+      inline def setNogapUndefined: Self = StObject.set(x, "nogap", js.undefined)
       
-      @scala.inline
-      def setRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
 }

@@ -18,25 +18,19 @@ trait CapacityReservationGroup extends StObject {
 }
 object CapacityReservationGroup {
   
-  @scala.inline
-  def apply(): CapacityReservationGroup = {
+  inline def apply(): CapacityReservationGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapacityReservationGroup]
   }
   
-  @scala.inline
-  implicit class CapacityReservationGroupMutableBuilder[Self <: CapacityReservationGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityReservationGroup](x: Self) {
     
-    @scala.inline
-    def setGroupArn(value: String): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
+    inline def setGroupArn(value: String): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupArnUndefined: Self = StObject.set(x, "GroupArn", js.undefined)
+    inline def setGroupArnUndefined: Self = StObject.set(x, "GroupArn", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
   }
 }

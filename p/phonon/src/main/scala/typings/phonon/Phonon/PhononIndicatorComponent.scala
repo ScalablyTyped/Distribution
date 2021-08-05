@@ -14,8 +14,7 @@ trait PhononIndicatorComponent
 }
 object PhononIndicatorComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     on: (String, js.Function1[/* value */ js.UndefOr[js.Any], Unit]) => PhononDialogComponent,
     open: () => Unit
@@ -24,13 +23,10 @@ object PhononIndicatorComponent {
     __obj.asInstanceOf[PhononIndicatorComponent]
   }
   
-  @scala.inline
-  implicit class PhononIndicatorComponentMutableBuilder[Self <: PhononIndicatorComponent] (val x: Self) extends AnyVal {
+  extension [Self <: PhononIndicatorComponent](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

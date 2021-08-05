@@ -21,22 +21,17 @@ trait SxProps extends StObject {
 }
 object SxProps {
   
-  @scala.inline
-  def apply(): SxProps = {
+  inline def apply(): SxProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SxProps]
   }
   
-  @scala.inline
-  implicit class SxPropsMutableBuilder[Self <: SxProps] (val x: Self) extends AnyVal {
+  extension [Self <: SxProps](x: Self) {
     
-    @scala.inline
-    def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSxNull: Self = StObject.set(x, "sx", null)
+    inline def setSxNull: Self = StObject.set(x, "sx", null)
     
-    @scala.inline
-    def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
+    inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
   }
 }

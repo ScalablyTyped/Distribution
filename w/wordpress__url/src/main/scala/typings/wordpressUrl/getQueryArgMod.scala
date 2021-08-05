@@ -11,8 +11,7 @@ object getQueryArgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getQueryArg(url: String, arg: String): js.UndefOr[
+  inline def getQueryArg(url: String, arg: String): js.UndefOr[
     String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
     String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])

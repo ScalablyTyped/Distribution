@@ -15,19 +15,15 @@ trait NxFieldSelectionInfo extends StObject {
 }
 object NxFieldSelectionInfo {
   
-  @scala.inline
-  def apply(qFieldSelectionmode: NORMAL | AND | NOT, qName: String): NxFieldSelectionInfo = {
+  inline def apply(qFieldSelectionmode: NORMAL | AND | NOT, qName: String): NxFieldSelectionInfo = {
     val __obj = js.Dynamic.literal(qFieldSelectionmode = qFieldSelectionmode.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxFieldSelectionInfo]
   }
   
-  @scala.inline
-  implicit class NxFieldSelectionInfoMutableBuilder[Self <: NxFieldSelectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NxFieldSelectionInfo](x: Self) {
     
-    @scala.inline
-    def setQFieldSelectionmode(value: NORMAL | AND | NOT): Self = StObject.set(x, "qFieldSelectionmode", value.asInstanceOf[js.Any])
+    inline def setQFieldSelectionmode(value: NORMAL | AND | NOT): Self = StObject.set(x, "qFieldSelectionmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object exposureMod extends Shortcut {
   }
   object ExposureProps {
     
-    @scala.inline
-    def apply(): ExposureProps = {
+    inline def apply(): ExposureProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExposureProps]
     }
     
-    @scala.inline
-    implicit class ExposurePropsMutableBuilder[Self <: ExposureProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExposureProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

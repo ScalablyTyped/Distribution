@@ -15,25 +15,19 @@ trait IControl extends StObject {
 }
 object IControl {
   
-  @scala.inline
-  def apply(onAdd: Map => HTMLElement, onRemove: Map => Unit): IControl = {
+  inline def apply(onAdd: Map => HTMLElement, onRemove: Map => Unit): IControl = {
     val __obj = js.Dynamic.literal(onAdd = js.Any.fromFunction1(onAdd), onRemove = js.Any.fromFunction1(onRemove))
     __obj.asInstanceOf[IControl]
   }
   
-  @scala.inline
-  implicit class IControlMutableBuilder[Self <: IControl] (val x: Self) extends AnyVal {
+  extension [Self <: IControl](x: Self) {
     
-    @scala.inline
-    def setGetDefaultPosition(value: () => String): Self = StObject.set(x, "getDefaultPosition", js.Any.fromFunction0(value))
+    inline def setGetDefaultPosition(value: () => String): Self = StObject.set(x, "getDefaultPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultPositionUndefined: Self = StObject.set(x, "getDefaultPosition", js.undefined)
+    inline def setGetDefaultPositionUndefined: Self = StObject.set(x, "getDefaultPosition", js.undefined)
     
-    @scala.inline
-    def setOnAdd(value: Map => HTMLElement): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: Map => HTMLElement): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRemove(value: Map => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+    inline def setOnRemove(value: Map => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
   }
 }

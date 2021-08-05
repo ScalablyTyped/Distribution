@@ -14,6 +14,5 @@ object fetchWrapperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(requestOptions: ReturnType[EndpointInterface[js.Object]] & Redirect): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(requestOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+  inline def default(requestOptions: ReturnType[EndpointInterface[js.Object]] & Redirect): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(requestOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
 }

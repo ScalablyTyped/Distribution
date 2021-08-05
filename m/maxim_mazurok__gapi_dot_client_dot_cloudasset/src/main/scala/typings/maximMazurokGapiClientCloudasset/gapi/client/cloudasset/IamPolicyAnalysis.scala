@@ -20,43 +20,31 @@ trait IamPolicyAnalysis extends StObject {
 }
 object IamPolicyAnalysis {
   
-  @scala.inline
-  def apply(): IamPolicyAnalysis = {
+  inline def apply(): IamPolicyAnalysis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IamPolicyAnalysis]
   }
   
-  @scala.inline
-  implicit class IamPolicyAnalysisMutableBuilder[Self <: IamPolicyAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: IamPolicyAnalysis](x: Self) {
     
-    @scala.inline
-    def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "analysisQuery", value.asInstanceOf[js.Any])
+    inline def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "analysisQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisQueryUndefined: Self = StObject.set(x, "analysisQuery", js.undefined)
+    inline def setAnalysisQueryUndefined: Self = StObject.set(x, "analysisQuery", js.undefined)
     
-    @scala.inline
-    def setAnalysisResults(value: js.Array[IamPolicyAnalysisResult]): Self = StObject.set(x, "analysisResults", value.asInstanceOf[js.Any])
+    inline def setAnalysisResults(value: js.Array[IamPolicyAnalysisResult]): Self = StObject.set(x, "analysisResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisResultsUndefined: Self = StObject.set(x, "analysisResults", js.undefined)
+    inline def setAnalysisResultsUndefined: Self = StObject.set(x, "analysisResults", js.undefined)
     
-    @scala.inline
-    def setAnalysisResultsVarargs(value: IamPolicyAnalysisResult*): Self = StObject.set(x, "analysisResults", js.Array(value :_*))
+    inline def setAnalysisResultsVarargs(value: IamPolicyAnalysisResult*): Self = StObject.set(x, "analysisResults", js.Array(value :_*))
     
-    @scala.inline
-    def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
+    inline def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
+    inline def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
     
-    @scala.inline
-    def setNonCriticalErrors(value: js.Array[IamPolicyAnalysisState]): Self = StObject.set(x, "nonCriticalErrors", value.asInstanceOf[js.Any])
+    inline def setNonCriticalErrors(value: js.Array[IamPolicyAnalysisState]): Self = StObject.set(x, "nonCriticalErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCriticalErrorsUndefined: Self = StObject.set(x, "nonCriticalErrors", js.undefined)
+    inline def setNonCriticalErrorsUndefined: Self = StObject.set(x, "nonCriticalErrors", js.undefined)
     
-    @scala.inline
-    def setNonCriticalErrorsVarargs(value: IamPolicyAnalysisState*): Self = StObject.set(x, "nonCriticalErrors", js.Array(value :_*))
+    inline def setNonCriticalErrorsVarargs(value: IamPolicyAnalysisState*): Self = StObject.set(x, "nonCriticalErrors", js.Array(value :_*))
   }
 }

@@ -15,19 +15,15 @@ trait SelectableWordSegment extends StObject {
 }
 object SelectableWordSegment {
   
-  @scala.inline
-  def apply(sourceTextSegment: TextSegment, text: String): SelectableWordSegment = {
+  inline def apply(sourceTextSegment: TextSegment, text: String): SelectableWordSegment = {
     val __obj = js.Dynamic.literal(sourceTextSegment = sourceTextSegment.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectableWordSegment]
   }
   
-  @scala.inline
-  implicit class SelectableWordSegmentMutableBuilder[Self <: SelectableWordSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SelectableWordSegment](x: Self) {
     
-    @scala.inline
-    def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
+    inline def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

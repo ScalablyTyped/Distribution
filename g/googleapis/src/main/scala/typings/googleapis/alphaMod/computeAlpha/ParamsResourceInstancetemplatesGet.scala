@@ -28,31 +28,23 @@ trait ParamsResourceInstancetemplatesGet
 }
 object ParamsResourceInstancetemplatesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceInstancetemplatesGet = {
+  inline def apply(): ParamsResourceInstancetemplatesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceInstancetemplatesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceInstancetemplatesGetMutableBuilder[Self <: ParamsResourceInstancetemplatesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceInstancetemplatesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
+    inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
+    inline def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

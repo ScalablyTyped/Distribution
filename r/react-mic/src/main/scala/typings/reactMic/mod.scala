@@ -68,92 +68,64 @@ object mod {
   }
   object ReactMicProps {
     
-    @scala.inline
-    def apply(): ReactMicProps = {
+    inline def apply(): ReactMicProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactMicProps]
     }
     
-    @scala.inline
-    implicit class ReactMicPropsMutableBuilder[Self <: ReactMicProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactMicProps](x: Self) {
       
-      @scala.inline
-      def setAutoGainControl(value: Boolean): Self = StObject.set(x, "autoGainControl", value.asInstanceOf[js.Any])
+      inline def setAutoGainControl(value: Boolean): Self = StObject.set(x, "autoGainControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoGainControlUndefined: Self = StObject.set(x, "autoGainControl", js.undefined)
+      inline def setAutoGainControlUndefined: Self = StObject.set(x, "autoGainControl", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setChannelCount(value: `1` | `2`): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+      inline def setChannelCount(value: `1` | `2`): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
+      inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setEchoCancellation(value: Boolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
+      inline def setEchoCancellation(value: Boolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEchoCancellationUndefined: Self = StObject.set(x, "echoCancellation", js.undefined)
+      inline def setEchoCancellationUndefined: Self = StObject.set(x, "echoCancellation", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: audioSlashwebm | audioSlashwav): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: audioSlashwebm | audioSlashwav): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setNoiseSuppression(value: Boolean): Self = StObject.set(x, "noiseSuppression", value.asInstanceOf[js.Any])
+      inline def setNoiseSuppression(value: Boolean): Self = StObject.set(x, "noiseSuppression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
+      inline def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
       
-      @scala.inline
-      def setOnData(value: /* recordedData */ Blob => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
+      inline def setOnData(value: /* recordedData */ Blob => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDataUndefined: Self = StObject.set(x, "onData", js.undefined)
+      inline def setOnDataUndefined: Self = StObject.set(x, "onData", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: /* recordedData */ ReactMicStopEvent => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+      inline def setOnStop(value: /* recordedData */ ReactMicStopEvent => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setPause(value: Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
       
-      @scala.inline
-      def setRecord(value: Boolean): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+      inline def setRecord(value: Boolean): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
+      inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setVisualSetting(value: sinewave | frequencyBars): Self = StObject.set(x, "visualSetting", value.asInstanceOf[js.Any])
+      inline def setVisualSetting(value: sinewave | frequencyBars): Self = StObject.set(x, "visualSetting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisualSettingUndefined: Self = StObject.set(x, "visualSetting", js.undefined)
+      inline def setVisualSettingUndefined: Self = StObject.set(x, "visualSetting", js.undefined)
     }
   }
   
@@ -171,29 +143,22 @@ object mod {
   }
   object ReactMicStopEvent {
     
-    @scala.inline
-    def apply(blob: Blob, blobURL: String, option: AudioBitsPerSecond, startTime: Double, stopTime: Double): ReactMicStopEvent = {
+    inline def apply(blob: Blob, blobURL: String, option: AudioBitsPerSecond, startTime: Double, stopTime: Double): ReactMicStopEvent = {
       val __obj = js.Dynamic.literal(blob = blob.asInstanceOf[js.Any], blobURL = blobURL.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], stopTime = stopTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactMicStopEvent]
     }
     
-    @scala.inline
-    implicit class ReactMicStopEventMutableBuilder[Self <: ReactMicStopEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ReactMicStopEvent](x: Self) {
       
-      @scala.inline
-      def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+      inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlobURL(value: String): Self = StObject.set(x, "blobURL", value.asInstanceOf[js.Any])
+      inline def setBlobURL(value: String): Self = StObject.set(x, "blobURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOption(value: AudioBitsPerSecond): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      inline def setOption(value: AudioBitsPerSecond): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopTime(value: Double): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
+      inline def setStopTime(value: Double): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
     }
   }
 }

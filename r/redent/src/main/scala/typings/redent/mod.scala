@@ -17,14 +17,10 @@ object mod {
   //=> '\n foo\n   bar\n'
   ```
   */
-  @scala.inline
-  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(string: String, count: Double): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(string: String, count: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(string: String, count: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(string: String, count: Double): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(string: String, count: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(string: String, count: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("redent", JSImport.Namespace)
   @js.native

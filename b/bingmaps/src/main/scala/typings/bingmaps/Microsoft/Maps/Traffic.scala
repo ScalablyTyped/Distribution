@@ -29,38 +29,28 @@ object Traffic {
   }
   object ITrafficOptions {
     
-    @scala.inline
-    def apply(): ITrafficOptions = {
+    inline def apply(): ITrafficOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITrafficOptions]
     }
     
-    @scala.inline
-    implicit class ITrafficOptionsMutableBuilder[Self <: ITrafficOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITrafficOptions](x: Self) {
       
-      @scala.inline
-      def setFlowVisible(value: Boolean): Self = StObject.set(x, "flowVisible", value.asInstanceOf[js.Any])
+      inline def setFlowVisible(value: Boolean): Self = StObject.set(x, "flowVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowVisibleUndefined: Self = StObject.set(x, "flowVisible", js.undefined)
+      inline def setFlowVisibleUndefined: Self = StObject.set(x, "flowVisible", js.undefined)
       
-      @scala.inline
-      def setIncidentsVisible(value: Boolean): Self = StObject.set(x, "incidentsVisible", value.asInstanceOf[js.Any])
+      inline def setIncidentsVisible(value: Boolean): Self = StObject.set(x, "incidentsVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncidentsVisibleUndefined: Self = StObject.set(x, "incidentsVisible", js.undefined)
+      inline def setIncidentsVisibleUndefined: Self = StObject.set(x, "incidentsVisible", js.undefined)
       
-      @scala.inline
-      def setLegendVisible(value: Boolean): Self = StObject.set(x, "legendVisible", value.asInstanceOf[js.Any])
+      inline def setLegendVisible(value: Boolean): Self = StObject.set(x, "legendVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendVisibleUndefined: Self = StObject.set(x, "legendVisible", js.undefined)
+      inline def setLegendVisibleUndefined: Self = StObject.set(x, "legendVisible", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     }
   }
   
@@ -98,8 +88,7 @@ object Traffic {
   }
   object TrafficManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hide: () => Unit,
       hideFlow: () => Unit,
       hideIncidents: () => Unit,
@@ -114,35 +103,25 @@ object Traffic {
       __obj.asInstanceOf[TrafficManager]
     }
     
-    @scala.inline
-    implicit class TrafficManagerMutableBuilder[Self <: TrafficManager] (val x: Self) extends AnyVal {
+    extension [Self <: TrafficManager](x: Self) {
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideFlow(value: () => Unit): Self = StObject.set(x, "hideFlow", js.Any.fromFunction0(value))
+      inline def setHideFlow(value: () => Unit): Self = StObject.set(x, "hideFlow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideIncidents(value: () => Unit): Self = StObject.set(x, "hideIncidents", js.Any.fromFunction0(value))
+      inline def setHideIncidents(value: () => Unit): Self = StObject.set(x, "hideIncidents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideLegend(value: () => Unit): Self = StObject.set(x, "hideLegend", js.Any.fromFunction0(value))
+      inline def setHideLegend(value: () => Unit): Self = StObject.set(x, "hideLegend", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetOptions(value: ITrafficOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+      inline def setSetOptions(value: ITrafficOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowFlow(value: () => Unit): Self = StObject.set(x, "showFlow", js.Any.fromFunction0(value))
+      inline def setShowFlow(value: () => Unit): Self = StObject.set(x, "showFlow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowIncidents(value: () => Unit): Self = StObject.set(x, "showIncidents", js.Any.fromFunction0(value))
+      inline def setShowIncidents(value: () => Unit): Self = StObject.set(x, "showIncidents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowLegend(value: () => Unit): Self = StObject.set(x, "showLegend", js.Any.fromFunction0(value))
+      inline def setShowLegend(value: () => Unit): Self = StObject.set(x, "showLegend", js.Any.fromFunction0(value))
     }
   }
 }

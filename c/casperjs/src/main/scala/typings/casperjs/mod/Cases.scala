@@ -12,22 +12,17 @@ trait Cases extends StObject {
 }
 object Cases {
   
-  @scala.inline
-  def apply(cases: js.Array[Case], length: Double): Cases = {
+  inline def apply(cases: js.Array[Case], length: Double): Cases = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cases]
   }
   
-  @scala.inline
-  implicit class CasesMutableBuilder[Self <: Cases] (val x: Self) extends AnyVal {
+  extension [Self <: Cases](x: Self) {
     
-    @scala.inline
-    def setCases(value: js.Array[Case]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    inline def setCases(value: js.Array[Case]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCasesVarargs(value: Case*): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: Case*): Self = StObject.set(x, "cases", js.Array(value :_*))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

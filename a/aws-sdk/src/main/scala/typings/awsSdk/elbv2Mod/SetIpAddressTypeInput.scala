@@ -18,19 +18,15 @@ trait SetIpAddressTypeInput extends StObject {
 }
 object SetIpAddressTypeInput {
   
-  @scala.inline
-  def apply(IpAddressType: IpAddressType, LoadBalancerArn: LoadBalancerArn): SetIpAddressTypeInput = {
+  inline def apply(IpAddressType: IpAddressType, LoadBalancerArn: LoadBalancerArn): SetIpAddressTypeInput = {
     val __obj = js.Dynamic.literal(IpAddressType = IpAddressType.asInstanceOf[js.Any], LoadBalancerArn = LoadBalancerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIpAddressTypeInput]
   }
   
-  @scala.inline
-  implicit class SetIpAddressTypeInputMutableBuilder[Self <: SetIpAddressTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetIpAddressTypeInput](x: Self) {
     
-    @scala.inline
-    def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
   }
 }

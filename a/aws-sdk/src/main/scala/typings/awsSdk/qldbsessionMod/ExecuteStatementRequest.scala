@@ -23,28 +23,21 @@ trait ExecuteStatementRequest extends StObject {
 }
 object ExecuteStatementRequest {
   
-  @scala.inline
-  def apply(Statement: Statement, TransactionId: TransactionId): ExecuteStatementRequest = {
+  inline def apply(Statement: Statement, TransactionId: TransactionId): ExecuteStatementRequest = {
     val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any], TransactionId = TransactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteStatementRequest]
   }
   
-  @scala.inline
-  implicit class ExecuteStatementRequestMutableBuilder[Self <: ExecuteStatementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteStatementRequest](x: Self) {
     
-    @scala.inline
-    def setParameters(value: StatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: ValueHolder*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ValueHolder*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
   }
 }

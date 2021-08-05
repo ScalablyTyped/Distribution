@@ -28,8 +28,7 @@ trait PutMailboxPermissionsRequest extends StObject {
 }
 object PutMailboxPermissionsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EntityId: WorkMailIdentifier,
     GranteeId: WorkMailIdentifier,
     OrganizationId: OrganizationId,
@@ -39,22 +38,16 @@ object PutMailboxPermissionsRequest {
     __obj.asInstanceOf[PutMailboxPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class PutMailboxPermissionsRequestMutableBuilder[Self <: PutMailboxPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutMailboxPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranteeId(value: WorkMailIdentifier): Self = StObject.set(x, "GranteeId", value.asInstanceOf[js.Any])
+    inline def setGranteeId(value: WorkMailIdentifier): Self = StObject.set(x, "GranteeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionValues(value: PermissionValues): Self = StObject.set(x, "PermissionValues", value.asInstanceOf[js.Any])
+    inline def setPermissionValues(value: PermissionValues): Self = StObject.set(x, "PermissionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionValuesVarargs(value: PermissionType*): Self = StObject.set(x, "PermissionValues", js.Array(value :_*))
+    inline def setPermissionValuesVarargs(value: PermissionType*): Self = StObject.set(x, "PermissionValues", js.Array(value :_*))
   }
 }

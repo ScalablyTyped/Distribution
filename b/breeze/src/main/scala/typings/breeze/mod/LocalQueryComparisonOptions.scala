@@ -25,12 +25,10 @@ object LocalQueryComparisonOptions {
   @JSImport("breeze", "LocalQueryComparisonOptions.caseInsensitiveSQL")
   @js.native
   def caseInsensitiveSQL: typings.breeze.breeze.LocalQueryComparisonOptions = js.native
-  @scala.inline
-  def caseInsensitiveSQL_=(x: typings.breeze.breeze.LocalQueryComparisonOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caseInsensitiveSQL")(x.asInstanceOf[js.Any])
+  inline def caseInsensitiveSQL_=(x: typings.breeze.breeze.LocalQueryComparisonOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caseInsensitiveSQL")(x.asInstanceOf[js.Any])
   
   @JSImport("breeze", "LocalQueryComparisonOptions.defaultInstance")
   @js.native
   def defaultInstance: typings.breeze.breeze.LocalQueryComparisonOptions = js.native
-  @scala.inline
-  def defaultInstance_=(x: typings.breeze.breeze.LocalQueryComparisonOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
+  inline def defaultInstance_=(x: typings.breeze.breeze.LocalQueryComparisonOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
 }

@@ -33,20 +33,16 @@ object personalizeeventsMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -101,59 +97,42 @@ object personalizeeventsMod {
   }
   object Event {
     
-    @scala.inline
-    def apply(eventType: StringType, sentAt: Date): Event = {
+    inline def apply(eventType: StringType, sentAt: Date): Event = {
       val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], sentAt = sentAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setEventId(value: StringType): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+      inline def setEventId(value: StringType): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+      inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
       
-      @scala.inline
-      def setEventType(value: StringType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: StringType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventValue(value: FloatType): Self = StObject.set(x, "eventValue", value.asInstanceOf[js.Any])
+      inline def setEventValue(value: FloatType): Self = StObject.set(x, "eventValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventValueUndefined: Self = StObject.set(x, "eventValue", js.undefined)
+      inline def setEventValueUndefined: Self = StObject.set(x, "eventValue", js.undefined)
       
-      @scala.inline
-      def setImpression(value: Impression): Self = StObject.set(x, "impression", value.asInstanceOf[js.Any])
+      inline def setImpression(value: Impression): Self = StObject.set(x, "impression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpressionUndefined: Self = StObject.set(x, "impression", js.undefined)
+      inline def setImpressionUndefined: Self = StObject.set(x, "impression", js.undefined)
       
-      @scala.inline
-      def setImpressionVarargs(value: ItemId*): Self = StObject.set(x, "impression", js.Array(value :_*))
+      inline def setImpressionVarargs(value: ItemId*): Self = StObject.set(x, "impression", js.Array(value :_*))
       
-      @scala.inline
-      def setItemId(value: ItemId): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      inline def setItemId(value: ItemId): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      @scala.inline
-      def setProperties(value: EventPropertiesJSON): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: EventPropertiesJSON): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "recommendationId", value.asInstanceOf[js.Any])
+      inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "recommendationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommendationIdUndefined: Self = StObject.set(x, "recommendationId", js.undefined)
+      inline def setRecommendationIdUndefined: Self = StObject.set(x, "recommendationId", js.undefined)
       
-      @scala.inline
-      def setSentAt(value: Date): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
+      inline def setSentAt(value: Date): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,23 +158,18 @@ object personalizeeventsMod {
   }
   object Item {
     
-    @scala.inline
-    def apply(itemId: StringType): Item = {
+    inline def apply(itemId: StringType): Item = {
       val __obj = js.Dynamic.literal(itemId = itemId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setItemId(value: StringType): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      inline def setItemId(value: StringType): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: ItemProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: ItemProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     }
   }
   
@@ -269,32 +243,24 @@ object personalizeeventsMod {
   }
   object PutEventsRequest {
     
-    @scala.inline
-    def apply(eventList: EventList, sessionId: StringType, trackingId: StringType): PutEventsRequest = {
+    inline def apply(eventList: EventList, sessionId: StringType, trackingId: StringType): PutEventsRequest = {
       val __obj = js.Dynamic.literal(eventList = eventList.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], trackingId = trackingId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutEventsRequest]
     }
     
-    @scala.inline
-    implicit class PutEventsRequestMutableBuilder[Self <: PutEventsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PutEventsRequest](x: Self) {
       
-      @scala.inline
-      def setEventList(value: EventList): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
+      inline def setEventList(value: EventList): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventListVarargs(value: Event*): Self = StObject.set(x, "eventList", js.Array(value :_*))
+      inline def setEventListVarargs(value: Event*): Self = StObject.set(x, "eventList", js.Array(value :_*))
       
-      @scala.inline
-      def setSessionId(value: StringType): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+      inline def setSessionId(value: StringType): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackingId(value: StringType): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
+      inline def setTrackingId(value: StringType): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
@@ -312,23 +278,18 @@ object personalizeeventsMod {
   }
   object PutItemsRequest {
     
-    @scala.inline
-    def apply(datasetArn: Arn, items: ItemList): PutItemsRequest = {
+    inline def apply(datasetArn: Arn, items: ItemList): PutItemsRequest = {
       val __obj = js.Dynamic.literal(datasetArn = datasetArn.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutItemsRequest]
     }
     
-    @scala.inline
-    implicit class PutItemsRequestMutableBuilder[Self <: PutItemsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PutItemsRequest](x: Self) {
       
-      @scala.inline
-      def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
+      inline def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: ItemList): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: ItemList): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
@@ -346,23 +307,18 @@ object personalizeeventsMod {
   }
   object PutUsersRequest {
     
-    @scala.inline
-    def apply(datasetArn: Arn, users: UserList): PutUsersRequest = {
+    inline def apply(datasetArn: Arn, users: UserList): PutUsersRequest = {
       val __obj = js.Dynamic.literal(datasetArn = datasetArn.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutUsersRequest]
     }
     
-    @scala.inline
-    implicit class PutUsersRequestMutableBuilder[Self <: PutUsersRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PutUsersRequest](x: Self) {
       
-      @scala.inline
-      def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
+      inline def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: UserList): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: UserList): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -384,23 +340,18 @@ object personalizeeventsMod {
   }
   object User {
     
-    @scala.inline
-    def apply(userId: StringType): User = {
+    inline def apply(userId: StringType): User = {
       val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setProperties(value: UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setUserId(value: StringType): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: StringType): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   

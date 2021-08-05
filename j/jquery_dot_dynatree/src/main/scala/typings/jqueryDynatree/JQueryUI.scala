@@ -12,17 +12,14 @@ object JQueryUI {
   }
   object UI {
     
-    @scala.inline
-    def apply(dynatree: DynatreeNamespace): UI = {
+    inline def apply(dynatree: DynatreeNamespace): UI = {
       val __obj = js.Dynamic.literal(dynatree = dynatree.asInstanceOf[js.Any])
       __obj.asInstanceOf[UI]
     }
     
-    @scala.inline
-    implicit class UIMutableBuilder[Self <: UI] (val x: Self) extends AnyVal {
+    extension [Self <: UI](x: Self) {
       
-      @scala.inline
-      def setDynatree(value: DynatreeNamespace): Self = StObject.set(x, "dynatree", value.asInstanceOf[js.Any])
+      inline def setDynatree(value: DynatreeNamespace): Self = StObject.set(x, "dynatree", value.asInstanceOf[js.Any])
     }
   }
 }

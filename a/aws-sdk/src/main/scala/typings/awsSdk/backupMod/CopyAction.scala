@@ -15,22 +15,17 @@ trait CopyAction extends StObject {
 }
 object CopyAction {
   
-  @scala.inline
-  def apply(DestinationBackupVaultArn: ARN): CopyAction = {
+  inline def apply(DestinationBackupVaultArn: ARN): CopyAction = {
     val __obj = js.Dynamic.literal(DestinationBackupVaultArn = DestinationBackupVaultArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyAction]
   }
   
-  @scala.inline
-  implicit class CopyActionMutableBuilder[Self <: CopyAction] (val x: Self) extends AnyVal {
+  extension [Self <: CopyAction](x: Self) {
     
-    @scala.inline
-    def setDestinationBackupVaultArn(value: ARN): Self = StObject.set(x, "DestinationBackupVaultArn", value.asInstanceOf[js.Any])
+    inline def setDestinationBackupVaultArn(value: ARN): Self = StObject.set(x, "DestinationBackupVaultArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
   }
 }

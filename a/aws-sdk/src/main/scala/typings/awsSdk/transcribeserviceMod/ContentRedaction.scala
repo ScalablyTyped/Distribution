@@ -18,19 +18,15 @@ trait ContentRedaction extends StObject {
 }
 object ContentRedaction {
   
-  @scala.inline
-  def apply(RedactionOutput: RedactionOutput, RedactionType: RedactionType): ContentRedaction = {
+  inline def apply(RedactionOutput: RedactionOutput, RedactionType: RedactionType): ContentRedaction = {
     val __obj = js.Dynamic.literal(RedactionOutput = RedactionOutput.asInstanceOf[js.Any], RedactionType = RedactionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRedaction]
   }
   
-  @scala.inline
-  implicit class ContentRedactionMutableBuilder[Self <: ContentRedaction] (val x: Self) extends AnyVal {
+  extension [Self <: ContentRedaction](x: Self) {
     
-    @scala.inline
-    def setRedactionOutput(value: RedactionOutput): Self = StObject.set(x, "RedactionOutput", value.asInstanceOf[js.Any])
+    inline def setRedactionOutput(value: RedactionOutput): Self = StObject.set(x, "RedactionOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactionType(value: RedactionType): Self = StObject.set(x, "RedactionType", value.asInstanceOf[js.Any])
+    inline def setRedactionType(value: RedactionType): Self = StObject.set(x, "RedactionType", value.asInstanceOf[js.Any])
   }
 }

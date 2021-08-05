@@ -13,16 +13,13 @@ trait ApplicationSnapshotConfigurationDescription extends StObject {
 }
 object ApplicationSnapshotConfigurationDescription {
   
-  @scala.inline
-  def apply(SnapshotsEnabled: BooleanObject): ApplicationSnapshotConfigurationDescription = {
+  inline def apply(SnapshotsEnabled: BooleanObject): ApplicationSnapshotConfigurationDescription = {
     val __obj = js.Dynamic.literal(SnapshotsEnabled = SnapshotsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationSnapshotConfigurationDescription]
   }
   
-  @scala.inline
-  implicit class ApplicationSnapshotConfigurationDescriptionMutableBuilder[Self <: ApplicationSnapshotConfigurationDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationSnapshotConfigurationDescription](x: Self) {
     
-    @scala.inline
-    def setSnapshotsEnabled(value: BooleanObject): Self = StObject.set(x, "SnapshotsEnabled", value.asInstanceOf[js.Any])
+    inline def setSnapshotsEnabled(value: BooleanObject): Self = StObject.set(x, "SnapshotsEnabled", value.asInstanceOf[js.Any])
   }
 }

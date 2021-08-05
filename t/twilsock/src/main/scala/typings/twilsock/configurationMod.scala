@@ -22,9 +22,9 @@ object configurationMod {
     def this(token: String, activeGrant: String) = this()
     def this(token: String, activeGrant: String, options: js.Any) = this()
     
-    var _continuationToken: js.Any = js.native
+    /* private */ var _continuationToken: js.Any = js.native
     
-    var _token: js.Any = js.native
+    /* private */ var _token: js.Any = js.native
     
     val activeGrant: String = js.native
     

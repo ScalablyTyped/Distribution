@@ -67,44 +67,32 @@ object checkouts {
     }
     object ICheckOutCreationSubscriptionData {
       
-      @scala.inline
-      def apply(items: js.Array[ICheckOutCreationSubscriptionDataItem]): ICheckOutCreationSubscriptionData = {
+      inline def apply(items: js.Array[ICheckOutCreationSubscriptionDataItem]): ICheckOutCreationSubscriptionData = {
         val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICheckOutCreationSubscriptionData]
       }
       
-      @scala.inline
-      implicit class ICheckOutCreationSubscriptionDataMutableBuilder[Self <: ICheckOutCreationSubscriptionData] (val x: Self) extends AnyVal {
+      extension [Self <: ICheckOutCreationSubscriptionData](x: Self) {
         
-        @scala.inline
-        def setApplication_fee_percent(value: Double): Self = StObject.set(x, "application_fee_percent", value.asInstanceOf[js.Any])
+        inline def setApplication_fee_percent(value: Double): Self = StObject.set(x, "application_fee_percent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplication_fee_percentUndefined: Self = StObject.set(x, "application_fee_percent", js.undefined)
+        inline def setApplication_fee_percentUndefined: Self = StObject.set(x, "application_fee_percent", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[ICheckOutCreationSubscriptionDataItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[ICheckOutCreationSubscriptionDataItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsVarargs(value: ICheckOutCreationSubscriptionDataItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ICheckOutCreationSubscriptionDataItem*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setTrial_end(value: Double): Self = StObject.set(x, "trial_end", value.asInstanceOf[js.Any])
+        inline def setTrial_end(value: Double): Self = StObject.set(x, "trial_end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrial_endUndefined: Self = StObject.set(x, "trial_end", js.undefined)
+        inline def setTrial_endUndefined: Self = StObject.set(x, "trial_end", js.undefined)
         
-        @scala.inline
-        def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
+        inline def setTrial_period_days(value: Double): Self = StObject.set(x, "trial_period_days", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrial_period_daysUndefined: Self = StObject.set(x, "trial_period_days", js.undefined)
+        inline def setTrial_period_daysUndefined: Self = StObject.set(x, "trial_period_days", js.undefined)
       }
     }
     
@@ -122,23 +110,18 @@ object checkouts {
     }
     object ICheckOutCreationSubscriptionDataItem {
       
-      @scala.inline
-      def apply(plan: String): ICheckOutCreationSubscriptionDataItem = {
+      inline def apply(plan: String): ICheckOutCreationSubscriptionDataItem = {
         val __obj = js.Dynamic.literal(plan = plan.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICheckOutCreationSubscriptionDataItem]
       }
       
-      @scala.inline
-      implicit class ICheckOutCreationSubscriptionDataItemMutableBuilder[Self <: ICheckOutCreationSubscriptionDataItem] (val x: Self) extends AnyVal {
+      extension [Self <: ICheckOutCreationSubscriptionDataItem](x: Self) {
         
-        @scala.inline
-        def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+        inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+        inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+        inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
       }
     }
     
@@ -222,95 +205,66 @@ object checkouts {
     }
     object ICheckoutCreationOptions {
       
-      @scala.inline
-      def apply(cancel_url: String, payment_method_types: js.Array[String], success_url: String): ICheckoutCreationOptions = {
+      inline def apply(cancel_url: String, payment_method_types: js.Array[String], success_url: String): ICheckoutCreationOptions = {
         val __obj = js.Dynamic.literal(cancel_url = cancel_url.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], success_url = success_url.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICheckoutCreationOptions]
       }
       
-      @scala.inline
-      implicit class ICheckoutCreationOptionsMutableBuilder[Self <: ICheckoutCreationOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ICheckoutCreationOptions](x: Self) {
         
-        @scala.inline
-        def setBilling_address_collection(value: required | auto): Self = StObject.set(x, "billing_address_collection", value.asInstanceOf[js.Any])
+        inline def setBilling_address_collection(value: required | auto): Self = StObject.set(x, "billing_address_collection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBilling_address_collectionUndefined: Self = StObject.set(x, "billing_address_collection", js.undefined)
+        inline def setBilling_address_collectionUndefined: Self = StObject.set(x, "billing_address_collection", js.undefined)
         
-        @scala.inline
-        def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
+        inline def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClient_reference_id(value: String): Self = StObject.set(x, "client_reference_id", value.asInstanceOf[js.Any])
+        inline def setClient_reference_id(value: String): Self = StObject.set(x, "client_reference_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClient_reference_idUndefined: Self = StObject.set(x, "client_reference_id", js.undefined)
+        inline def setClient_reference_idUndefined: Self = StObject.set(x, "client_reference_id", js.undefined)
         
-        @scala.inline
-        def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+        inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+        inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
         
-        @scala.inline
-        def setCustomer_email(value: String): Self = StObject.set(x, "customer_email", value.asInstanceOf[js.Any])
+        inline def setCustomer_email(value: String): Self = StObject.set(x, "customer_email", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomer_emailUndefined: Self = StObject.set(x, "customer_email", js.undefined)
+        inline def setCustomer_emailUndefined: Self = StObject.set(x, "customer_email", js.undefined)
         
-        @scala.inline
-        def setLine_items(value: js.Array[ICheckoutLineItems]): Self = StObject.set(x, "line_items", value.asInstanceOf[js.Any])
+        inline def setLine_items(value: js.Array[ICheckoutLineItems]): Self = StObject.set(x, "line_items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLine_itemsUndefined: Self = StObject.set(x, "line_items", js.undefined)
+        inline def setLine_itemsUndefined: Self = StObject.set(x, "line_items", js.undefined)
         
-        @scala.inline
-        def setLine_itemsVarargs(value: ICheckoutLineItems*): Self = StObject.set(x, "line_items", js.Array(value :_*))
+        inline def setLine_itemsVarargs(value: ICheckoutLineItems*): Self = StObject.set(x, "line_items", js.Array(value :_*))
         
-        @scala.inline
-        def setLocale(value: auto | da | de | en | es | fi | fr | it | ja | nb | nl | pl | pt | sv | zh): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+        inline def setLocale(value: auto | da | de | en | es | fi | fr | it | ja | nb | nl | pl | pt | sv | zh): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+        inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
         
-        @scala.inline
-        def setMode(value: payment | setup | subscription): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: payment | setup | subscription): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setPayment_intent_data(value: IPaymentIntentSessionSubset | IPaymentIntentData): Self = StObject.set(x, "payment_intent_data", value.asInstanceOf[js.Any])
+        inline def setPayment_intent_data(value: IPaymentIntentSessionSubset | IPaymentIntentData): Self = StObject.set(x, "payment_intent_data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayment_intent_dataUndefined: Self = StObject.set(x, "payment_intent_data", js.undefined)
+        inline def setPayment_intent_dataUndefined: Self = StObject.set(x, "payment_intent_data", js.undefined)
         
-        @scala.inline
-        def setPayment_method_types(value: js.Array[String]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
+        inline def setPayment_method_types(value: js.Array[String]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayment_method_typesVarargs(value: String*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
+        inline def setPayment_method_typesVarargs(value: String*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
         
-        @scala.inline
-        def setSetup_intent_data(value: ISetupIntentSessionSubset): Self = StObject.set(x, "setup_intent_data", value.asInstanceOf[js.Any])
+        inline def setSetup_intent_data(value: ISetupIntentSessionSubset): Self = StObject.set(x, "setup_intent_data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetup_intent_dataUndefined: Self = StObject.set(x, "setup_intent_data", js.undefined)
+        inline def setSetup_intent_dataUndefined: Self = StObject.set(x, "setup_intent_data", js.undefined)
         
-        @scala.inline
-        def setSubmit_type(value: auto | book | donate | pay): Self = StObject.set(x, "submit_type", value.asInstanceOf[js.Any])
+        inline def setSubmit_type(value: auto | book | donate | pay): Self = StObject.set(x, "submit_type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubmit_typeUndefined: Self = StObject.set(x, "submit_type", js.undefined)
+        inline def setSubmit_typeUndefined: Self = StObject.set(x, "submit_type", js.undefined)
         
-        @scala.inline
-        def setSubscription_data(value: ICheckOutCreationSubscriptionData | ISubscriptionCustCreationOptions): Self = StObject.set(x, "subscription_data", value.asInstanceOf[js.Any])
+        inline def setSubscription_data(value: ICheckOutCreationSubscriptionData | ISubscriptionCustCreationOptions): Self = StObject.set(x, "subscription_data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscription_dataUndefined: Self = StObject.set(x, "subscription_data", js.undefined)
+        inline def setSubscription_dataUndefined: Self = StObject.set(x, "subscription_data", js.undefined)
         
-        @scala.inline
-        def setSuccess_url(value: String): Self = StObject.set(x, "success_url", value.asInstanceOf[js.Any])
+        inline def setSuccess_url(value: String): Self = StObject.set(x, "success_url", value.asInstanceOf[js.Any])
       }
     }
     
@@ -348,41 +302,30 @@ object checkouts {
     }
     object ICheckoutLineItems {
       
-      @scala.inline
-      def apply(amount: Double, currency: String, name: String, quantity: Double): ICheckoutLineItems = {
+      inline def apply(amount: Double, currency: String, name: String, quantity: Double): ICheckoutLineItems = {
         val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICheckoutLineItems]
       }
       
-      @scala.inline
-      implicit class ICheckoutLineItemsMutableBuilder[Self <: ICheckoutLineItems] (val x: Self) extends AnyVal {
+      extension [Self <: ICheckoutLineItems](x: Self) {
         
-        @scala.inline
-        def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+        inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+        inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+        inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
         
-        @scala.inline
-        def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+        inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+        inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       }
     }
     
@@ -470,8 +413,7 @@ object checkouts {
     }
     object ICheckoutSession {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         cancel_url: String,
         display_items: js.Array[ICheckoutLineItems],
         id: String,
@@ -484,95 +426,65 @@ object checkouts {
         __obj.asInstanceOf[ICheckoutSession]
       }
       
-      @scala.inline
-      implicit class ICheckoutSessionMutableBuilder[Self <: ICheckoutSession] (val x: Self) extends AnyVal {
+      extension [Self <: ICheckoutSession](x: Self) {
         
-        @scala.inline
-        def setBilling_address_collection(value: String): Self = StObject.set(x, "billing_address_collection", value.asInstanceOf[js.Any])
+        inline def setBilling_address_collection(value: String): Self = StObject.set(x, "billing_address_collection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBilling_address_collectionUndefined: Self = StObject.set(x, "billing_address_collection", js.undefined)
+        inline def setBilling_address_collectionUndefined: Self = StObject.set(x, "billing_address_collection", js.undefined)
         
-        @scala.inline
-        def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
+        inline def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClient_reference_id(value: String): Self = StObject.set(x, "client_reference_id", value.asInstanceOf[js.Any])
+        inline def setClient_reference_id(value: String): Self = StObject.set(x, "client_reference_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClient_reference_idUndefined: Self = StObject.set(x, "client_reference_id", js.undefined)
+        inline def setClient_reference_idUndefined: Self = StObject.set(x, "client_reference_id", js.undefined)
         
-        @scala.inline
-        def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+        inline def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+        inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
         
-        @scala.inline
-        def setCustomer_email(value: String): Self = StObject.set(x, "customer_email", value.asInstanceOf[js.Any])
+        inline def setCustomer_email(value: String): Self = StObject.set(x, "customer_email", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomer_emailUndefined: Self = StObject.set(x, "customer_email", js.undefined)
+        inline def setCustomer_emailUndefined: Self = StObject.set(x, "customer_email", js.undefined)
         
-        @scala.inline
-        def setDisplay_items(value: js.Array[ICheckoutLineItems]): Self = StObject.set(x, "display_items", value.asInstanceOf[js.Any])
+        inline def setDisplay_items(value: js.Array[ICheckoutLineItems]): Self = StObject.set(x, "display_items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplay_itemsVarargs(value: ICheckoutLineItems*): Self = StObject.set(x, "display_items", js.Array(value :_*))
+        inline def setDisplay_itemsVarargs(value: ICheckoutLineItems*): Self = StObject.set(x, "display_items", js.Array(value :_*))
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+        inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+        inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+        inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
         
-        @scala.inline
-        def setMode(value: payment | setup | subscription): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: payment | setup | subscription): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+        inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayment_intent(value: String | IPaymentIntent): Self = StObject.set(x, "payment_intent", value.asInstanceOf[js.Any])
+        inline def setPayment_intent(value: String | IPaymentIntent): Self = StObject.set(x, "payment_intent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayment_intentUndefined: Self = StObject.set(x, "payment_intent", js.undefined)
+        inline def setPayment_intentUndefined: Self = StObject.set(x, "payment_intent", js.undefined)
         
-        @scala.inline
-        def setPayment_method_types(value: js.Array[String]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
+        inline def setPayment_method_types(value: js.Array[String]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
+        inline def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
         
-        @scala.inline
-        def setPayment_method_typesVarargs(value: String*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
+        inline def setPayment_method_typesVarargs(value: String*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
         
-        @scala.inline
-        def setSetup_intent(value: String): Self = StObject.set(x, "setup_intent", value.asInstanceOf[js.Any])
+        inline def setSetup_intent(value: String): Self = StObject.set(x, "setup_intent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetup_intentNull: Self = StObject.set(x, "setup_intent", null)
+        inline def setSetup_intentNull: Self = StObject.set(x, "setup_intent", null)
         
-        @scala.inline
-        def setSetup_intentUndefined: Self = StObject.set(x, "setup_intent", js.undefined)
+        inline def setSetup_intentUndefined: Self = StObject.set(x, "setup_intent", js.undefined)
         
-        @scala.inline
-        def setSubscription(value: String | ISubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+        inline def setSubscription(value: String | ISubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+        inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
         
-        @scala.inline
-        def setSuccess_url(value: String): Self = StObject.set(x, "success_url", value.asInstanceOf[js.Any])
+        inline def setSuccess_url(value: String): Self = StObject.set(x, "success_url", value.asInstanceOf[js.Any])
       }
     }
   }

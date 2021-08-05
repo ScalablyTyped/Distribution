@@ -28,8 +28,7 @@ trait StartSchemaExtensionRequest extends StObject {
 }
 object StartSchemaExtensionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreateSnapshotBeforeSchemaExtension: CreateSnapshotBeforeSchemaExtension,
     Description: Description,
     DirectoryId: DirectoryId,
@@ -39,19 +38,14 @@ object StartSchemaExtensionRequest {
     __obj.asInstanceOf[StartSchemaExtensionRequest]
   }
   
-  @scala.inline
-  implicit class StartSchemaExtensionRequestMutableBuilder[Self <: StartSchemaExtensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSchemaExtensionRequest](x: Self) {
     
-    @scala.inline
-    def setCreateSnapshotBeforeSchemaExtension(value: CreateSnapshotBeforeSchemaExtension): Self = StObject.set(x, "CreateSnapshotBeforeSchemaExtension", value.asInstanceOf[js.Any])
+    inline def setCreateSnapshotBeforeSchemaExtension(value: CreateSnapshotBeforeSchemaExtension): Self = StObject.set(x, "CreateSnapshotBeforeSchemaExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLdifContent(value: LdifContent): Self = StObject.set(x, "LdifContent", value.asInstanceOf[js.Any])
+    inline def setLdifContent(value: LdifContent): Self = StObject.set(x, "LdifContent", value.asInstanceOf[js.Any])
   }
 }

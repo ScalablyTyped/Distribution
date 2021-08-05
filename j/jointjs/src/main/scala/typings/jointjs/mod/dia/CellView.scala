@@ -22,8 +22,7 @@ object CellView {
        with typings.jointjs.mod.dia.LinkView.InteractivityOptions
   object InteractivityOptions {
     
-    @scala.inline
-    def apply(): InteractivityOptions = {
+    inline def apply(): InteractivityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InteractivityOptions]
     }
@@ -34,8 +33,7 @@ object CellView {
        with ViewOptions[T]
   object Options {
     
-    @scala.inline
-    def apply[T /* <: Cell */](): Options[T] = {
+    inline def apply[T /* <: Cell */](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }

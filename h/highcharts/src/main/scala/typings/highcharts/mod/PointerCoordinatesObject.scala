@@ -12,19 +12,15 @@ trait PointerCoordinatesObject extends StObject {
 }
 object PointerCoordinatesObject {
   
-  @scala.inline
-  def apply(chartX: Double, chartY: Double): PointerCoordinatesObject = {
+  inline def apply(chartX: Double, chartY: Double): PointerCoordinatesObject = {
     val __obj = js.Dynamic.literal(chartX = chartX.asInstanceOf[js.Any], chartY = chartY.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerCoordinatesObject]
   }
   
-  @scala.inline
-  implicit class PointerCoordinatesObjectMutableBuilder[Self <: PointerCoordinatesObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointerCoordinatesObject](x: Self) {
     
-    @scala.inline
-    def setChartX(value: Double): Self = StObject.set(x, "chartX", value.asInstanceOf[js.Any])
+    inline def setChartX(value: Double): Self = StObject.set(x, "chartX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartY(value: Double): Self = StObject.set(x, "chartY", value.asInstanceOf[js.Any])
+    inline def setChartY(value: Double): Self = StObject.set(x, "chartY", value.asInstanceOf[js.Any])
   }
 }

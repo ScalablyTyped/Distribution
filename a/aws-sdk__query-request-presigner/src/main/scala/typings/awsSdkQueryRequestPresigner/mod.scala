@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def presignRequestQuery(
+  inline def presignRequestQuery(
     request: HttpRequest,
     hasCredentialsSha256SigningNameSigningRegionEndpointExpireTime: PresignOption
   ): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("presignRequestQuery")(request.asInstanceOf[js.Any], hasCredentialsSha256SigningNameSigningRegionEndpointExpireTime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
@@ -55,40 +54,30 @@ object mod {
   }
   object PresignOption {
     
-    @scala.inline
-    def apply(credentials: Credentials, sha256: HashConstructor, signingName: String, signingRegion: String): PresignOption = {
+    inline def apply(credentials: Credentials, sha256: HashConstructor, signingName: String, signingRegion: String): PresignOption = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], signingName = signingName.asInstanceOf[js.Any], signingRegion = signingRegion.asInstanceOf[js.Any])
       __obj.asInstanceOf[PresignOption]
     }
     
-    @scala.inline
-    implicit class PresignOptionMutableBuilder[Self <: PresignOption] (val x: Self) extends AnyVal {
+    extension [Self <: PresignOption](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(
+      inline def setEndpoint(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
       ): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setExpireTime(value: Double): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+      inline def setExpireTime(value: Double): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+      inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
+      inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
     }
   }
 }

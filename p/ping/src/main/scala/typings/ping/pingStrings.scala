@@ -8,6 +8,5 @@ object pingStrings {
   
   @js.native
   sealed trait unknown extends StObject
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
 }

@@ -21,8 +21,7 @@ trait SignatureCreator
      with XInitialization
 object SignatureCreator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSignatureCreationResultListener: XSignatureCreationResultListener => Unit,
     endMission: () => Boolean,

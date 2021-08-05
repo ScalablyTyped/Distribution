@@ -23,28 +23,21 @@ trait SchemaMetadata extends StObject {
 }
 object SchemaMetadata {
   
-  @scala.inline
-  def apply(): SchemaMetadata = {
+  inline def apply(): SchemaMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaMetadataMutableBuilder[Self <: SchemaMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetadata](x: Self) {
     
-    @scala.inline
-    def setFingerPrint(value: String): Self = StObject.set(x, "fingerPrint", value.asInstanceOf[js.Any])
+    inline def setFingerPrint(value: String): Self = StObject.set(x, "fingerPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerPrintUndefined: Self = StObject.set(x, "fingerPrint", js.undefined)
+    inline def setFingerPrintUndefined: Self = StObject.set(x, "fingerPrint", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaMetadataItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaMetadataItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaMetadataItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaMetadataItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

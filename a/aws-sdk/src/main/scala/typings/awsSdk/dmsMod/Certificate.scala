@@ -58,73 +58,51 @@ trait Certificate extends StObject {
 }
 object Certificate {
   
-  @scala.inline
-  def apply(): Certificate = {
+  inline def apply(): Certificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Certificate]
   }
   
-  @scala.inline
-  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+  extension [Self <: Certificate](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateCreationDate(value: TStamp): Self = StObject.set(x, "CertificateCreationDate", value.asInstanceOf[js.Any])
+    inline def setCertificateCreationDate(value: TStamp): Self = StObject.set(x, "CertificateCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateCreationDateUndefined: Self = StObject.set(x, "CertificateCreationDate", js.undefined)
+    inline def setCertificateCreationDateUndefined: Self = StObject.set(x, "CertificateCreationDate", js.undefined)
     
-    @scala.inline
-    def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
+    inline def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
     
-    @scala.inline
-    def setCertificateOwner(value: String): Self = StObject.set(x, "CertificateOwner", value.asInstanceOf[js.Any])
+    inline def setCertificateOwner(value: String): Self = StObject.set(x, "CertificateOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateOwnerUndefined: Self = StObject.set(x, "CertificateOwner", js.undefined)
+    inline def setCertificateOwnerUndefined: Self = StObject.set(x, "CertificateOwner", js.undefined)
     
-    @scala.inline
-    def setCertificatePem(value: String): Self = StObject.set(x, "CertificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: String): Self = StObject.set(x, "CertificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePemUndefined: Self = StObject.set(x, "CertificatePem", js.undefined)
+    inline def setCertificatePemUndefined: Self = StObject.set(x, "CertificatePem", js.undefined)
     
-    @scala.inline
-    def setCertificateWallet(value: CertificateWallet): Self = StObject.set(x, "CertificateWallet", value.asInstanceOf[js.Any])
+    inline def setCertificateWallet(value: CertificateWallet): Self = StObject.set(x, "CertificateWallet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateWalletUndefined: Self = StObject.set(x, "CertificateWallet", js.undefined)
+    inline def setCertificateWalletUndefined: Self = StObject.set(x, "CertificateWallet", js.undefined)
     
-    @scala.inline
-    def setKeyLength(value: IntegerOptional): Self = StObject.set(x, "KeyLength", value.asInstanceOf[js.Any])
+    inline def setKeyLength(value: IntegerOptional): Self = StObject.set(x, "KeyLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyLengthUndefined: Self = StObject.set(x, "KeyLength", js.undefined)
+    inline def setKeyLengthUndefined: Self = StObject.set(x, "KeyLength", js.undefined)
     
-    @scala.inline
-    def setSigningAlgorithm(value: String): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSigningAlgorithm(value: String): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAlgorithmUndefined: Self = StObject.set(x, "SigningAlgorithm", js.undefined)
+    inline def setSigningAlgorithmUndefined: Self = StObject.set(x, "SigningAlgorithm", js.undefined)
     
-    @scala.inline
-    def setValidFromDate(value: TStamp): Self = StObject.set(x, "ValidFromDate", value.asInstanceOf[js.Any])
+    inline def setValidFromDate(value: TStamp): Self = StObject.set(x, "ValidFromDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidFromDateUndefined: Self = StObject.set(x, "ValidFromDate", js.undefined)
+    inline def setValidFromDateUndefined: Self = StObject.set(x, "ValidFromDate", js.undefined)
     
-    @scala.inline
-    def setValidToDate(value: TStamp): Self = StObject.set(x, "ValidToDate", value.asInstanceOf[js.Any])
+    inline def setValidToDate(value: TStamp): Self = StObject.set(x, "ValidToDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidToDateUndefined: Self = StObject.set(x, "ValidToDate", js.undefined)
+    inline def setValidToDateUndefined: Self = StObject.set(x, "ValidToDate", js.undefined)
   }
 }

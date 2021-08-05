@@ -34,8 +34,7 @@ trait SkContourMeasure
 }
 object SkContourMeasure {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: () => Unit,
     deleteAfter: () => Unit,
     getPosTan: Double => PosTan,
@@ -49,19 +48,14 @@ object SkContourMeasure {
     __obj.asInstanceOf[SkContourMeasure]
   }
   
-  @scala.inline
-  implicit class SkContourMeasureMutableBuilder[Self <: SkContourMeasure] (val x: Self) extends AnyVal {
+  extension [Self <: SkContourMeasure](x: Self) {
     
-    @scala.inline
-    def setGetPosTan(value: Double => PosTan): Self = StObject.set(x, "getPosTan", js.Any.fromFunction1(value))
+    inline def setGetPosTan(value: Double => PosTan): Self = StObject.set(x, "getPosTan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSegment(value: (Double, Double, Boolean) => SkPath): Self = StObject.set(x, "getSegment", js.Any.fromFunction3(value))
+    inline def setGetSegment(value: (Double, Double, Boolean) => SkPath): Self = StObject.set(x, "getSegment", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
+    inline def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
   }
 }

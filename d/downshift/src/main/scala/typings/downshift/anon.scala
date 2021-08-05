@@ -96,8 +96,7 @@ object anon {
   }
   object BlurButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blurButton: blurButton,
       blurInput: blurInput,
       changeInput: changeInput,
@@ -118,53 +117,37 @@ object anon {
       __obj.asInstanceOf[BlurButton]
     }
     
-    @scala.inline
-    implicit class BlurButtonMutableBuilder[Self <: BlurButton] (val x: Self) extends AnyVal {
+    extension [Self <: BlurButton](x: Self) {
       
-      @scala.inline
-      def setBlurButton(value: blurButton): Self = StObject.set(x, "blurButton", value.asInstanceOf[js.Any])
+      inline def setBlurButton(value: blurButton): Self = StObject.set(x, "blurButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurInput(value: blurInput): Self = StObject.set(x, "blurInput", value.asInstanceOf[js.Any])
+      inline def setBlurInput(value: blurInput): Self = StObject.set(x, "blurInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeInput(value: changeInput): Self = StObject.set(x, "changeInput", value.asInstanceOf[js.Any])
+      inline def setChangeInput(value: changeInput): Self = StObject.set(x, "changeInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickButton(value: clickButton): Self = StObject.set(x, "clickButton", value.asInstanceOf[js.Any])
+      inline def setClickButton(value: clickButton): Self = StObject.set(x, "clickButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickItem(value: clickItem): Self = StObject.set(x, "clickItem", value.asInstanceOf[js.Any])
+      inline def setClickItem(value: clickItem): Self = StObject.set(x, "clickItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlledPropUpdatedSelectedItem(value: controlledPropUpdatedSelectedItem): Self = StObject.set(x, "controlledPropUpdatedSelectedItem", value.asInstanceOf[js.Any])
+      inline def setControlledPropUpdatedSelectedItem(value: controlledPropUpdatedSelectedItem): Self = StObject.set(x, "controlledPropUpdatedSelectedItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemMouseEnter(value: itemMouseEnter): Self = StObject.set(x, "itemMouseEnter", value.asInstanceOf[js.Any])
+      inline def setItemMouseEnter(value: itemMouseEnter): Self = StObject.set(x, "itemMouseEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyDownArrowDown(value: keyDownArrowDown): Self = StObject.set(x, "keyDownArrowDown", value.asInstanceOf[js.Any])
+      inline def setKeyDownArrowDown(value: keyDownArrowDown): Self = StObject.set(x, "keyDownArrowDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyDownArrowUp(value: keyDownArrowUp): Self = StObject.set(x, "keyDownArrowUp", value.asInstanceOf[js.Any])
+      inline def setKeyDownArrowUp(value: keyDownArrowUp): Self = StObject.set(x, "keyDownArrowUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyDownEnter(value: keyDownEnter): Self = StObject.set(x, "keyDownEnter", value.asInstanceOf[js.Any])
+      inline def setKeyDownEnter(value: keyDownEnter): Self = StObject.set(x, "keyDownEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyDownEscape(value: keyDownEscape): Self = StObject.set(x, "keyDownEscape", value.asInstanceOf[js.Any])
+      inline def setKeyDownEscape(value: keyDownEscape): Self = StObject.set(x, "keyDownEscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyDownSpaceButton(value: keyDownSpaceButton): Self = StObject.set(x, "keyDownSpaceButton", value.asInstanceOf[js.Any])
+      inline def setKeyDownSpaceButton(value: keyDownSpaceButton): Self = StObject.set(x, "keyDownSpaceButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseUp(value: mouseUp): Self = StObject.set(x, "mouseUp", value.asInstanceOf[js.Any])
+      inline def setMouseUp(value: mouseUp): Self = StObject.set(x, "mouseUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchEnd(value: touchEnd): Self = StObject.set(x, "touchEnd", value.asInstanceOf[js.Any])
+      inline def setTouchEnd(value: touchEnd): Self = StObject.set(x, "touchEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknown(value: unknown): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+      inline def setUnknown(value: unknown): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,8 +195,7 @@ object anon {
   }
   object ControlledPropUpdatedSelectedItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ControlledPropUpdatedSelectedItem: typings.downshift.mod.UseComboboxStateChangeTypes.ControlledPropUpdatedSelectedItem,
       FunctionCloseMenu: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionCloseMenu,
       FunctionOpenMenu: FunctionOpenMenu,
@@ -239,68 +221,47 @@ object anon {
       __obj.asInstanceOf[ControlledPropUpdatedSelectedItem]
     }
     
-    @scala.inline
-    implicit class ControlledPropUpdatedSelectedItemMutableBuilder[Self <: ControlledPropUpdatedSelectedItem] (val x: Self) extends AnyVal {
+    extension [Self <: ControlledPropUpdatedSelectedItem](x: Self) {
       
-      @scala.inline
-      def setControlledPropUpdatedSelectedItem(value: typings.downshift.mod.UseComboboxStateChangeTypes.ControlledPropUpdatedSelectedItem): Self = StObject.set(x, "ControlledPropUpdatedSelectedItem", value.asInstanceOf[js.Any])
+      inline def setControlledPropUpdatedSelectedItem(value: typings.downshift.mod.UseComboboxStateChangeTypes.ControlledPropUpdatedSelectedItem): Self = StObject.set(x, "ControlledPropUpdatedSelectedItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionCloseMenu(value: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionCloseMenu): Self = StObject.set(x, "FunctionCloseMenu", value.asInstanceOf[js.Any])
+      inline def setFunctionCloseMenu(value: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionCloseMenu): Self = StObject.set(x, "FunctionCloseMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionOpenMenu(value: FunctionOpenMenu): Self = StObject.set(x, "FunctionOpenMenu", value.asInstanceOf[js.Any])
+      inline def setFunctionOpenMenu(value: FunctionOpenMenu): Self = StObject.set(x, "FunctionOpenMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionReset(value: FunctionReset): Self = StObject.set(x, "FunctionReset", value.asInstanceOf[js.Any])
+      inline def setFunctionReset(value: FunctionReset): Self = StObject.set(x, "FunctionReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSelectItem(value: FunctionSelectItem): Self = StObject.set(x, "FunctionSelectItem", value.asInstanceOf[js.Any])
+      inline def setFunctionSelectItem(value: FunctionSelectItem): Self = StObject.set(x, "FunctionSelectItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSetHighlightedIndex(value: FunctionSetHighlightedIndex): Self = StObject.set(x, "FunctionSetHighlightedIndex", value.asInstanceOf[js.Any])
+      inline def setFunctionSetHighlightedIndex(value: FunctionSetHighlightedIndex): Self = StObject.set(x, "FunctionSetHighlightedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSetInputValue(value: FunctionSetInputValue): Self = StObject.set(x, "FunctionSetInputValue", value.asInstanceOf[js.Any])
+      inline def setFunctionSetInputValue(value: FunctionSetInputValue): Self = StObject.set(x, "FunctionSetInputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionToggleMenu(value: FunctionToggleMenu): Self = StObject.set(x, "FunctionToggleMenu", value.asInstanceOf[js.Any])
+      inline def setFunctionToggleMenu(value: FunctionToggleMenu): Self = StObject.set(x, "FunctionToggleMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputBlur(value: InputBlur): Self = StObject.set(x, "InputBlur", value.asInstanceOf[js.Any])
+      inline def setInputBlur(value: InputBlur): Self = StObject.set(x, "InputBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputChange(value: InputChange): Self = StObject.set(x, "InputChange", value.asInstanceOf[js.Any])
+      inline def setInputChange(value: InputChange): Self = StObject.set(x, "InputChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyDownArrowDown(value: InputKeyDownArrowDown): Self = StObject.set(x, "InputKeyDownArrowDown", value.asInstanceOf[js.Any])
+      inline def setInputKeyDownArrowDown(value: InputKeyDownArrowDown): Self = StObject.set(x, "InputKeyDownArrowDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyDownArrowUp(value: InputKeyDownArrowUp): Self = StObject.set(x, "InputKeyDownArrowUp", value.asInstanceOf[js.Any])
+      inline def setInputKeyDownArrowUp(value: InputKeyDownArrowUp): Self = StObject.set(x, "InputKeyDownArrowUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyDownEnd(value: InputKeyDownEnd): Self = StObject.set(x, "InputKeyDownEnd", value.asInstanceOf[js.Any])
+      inline def setInputKeyDownEnd(value: InputKeyDownEnd): Self = StObject.set(x, "InputKeyDownEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyDownEnter(value: InputKeyDownEnter): Self = StObject.set(x, "InputKeyDownEnter", value.asInstanceOf[js.Any])
+      inline def setInputKeyDownEnter(value: InputKeyDownEnter): Self = StObject.set(x, "InputKeyDownEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyDownEscape(value: InputKeyDownEscape): Self = StObject.set(x, "InputKeyDownEscape", value.asInstanceOf[js.Any])
+      inline def setInputKeyDownEscape(value: InputKeyDownEscape): Self = StObject.set(x, "InputKeyDownEscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyDownHome(value: InputKeyDownHome): Self = StObject.set(x, "InputKeyDownHome", value.asInstanceOf[js.Any])
+      inline def setInputKeyDownHome(value: InputKeyDownHome): Self = StObject.set(x, "InputKeyDownHome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClick(value: ItemClick): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
+      inline def setItemClick(value: ItemClick): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemMouseMove(value: ItemMouseMove): Self = StObject.set(x, "ItemMouseMove", value.asInstanceOf[js.Any])
+      inline def setItemMouseMove(value: ItemMouseMove): Self = StObject.set(x, "ItemMouseMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuMouseLeave(value: MenuMouseLeave): Self = StObject.set(x, "MenuMouseLeave", value.asInstanceOf[js.Any])
+      inline def setMenuMouseLeave(value: MenuMouseLeave): Self = StObject.set(x, "MenuMouseLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleButtonClick(value: ToggleButtonClick): Self = StObject.set(x, "ToggleButtonClick", value.asInstanceOf[js.Any])
+      inline def setToggleButtonClick(value: ToggleButtonClick): Self = StObject.set(x, "ToggleButtonClick", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,8 +295,7 @@ object anon {
   }
   object DropdownClick {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DropdownClick: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownClick,
       DropdownKeyDownBackspace: DropdownKeyDownBackspace,
       DropdownKeyDownNavigationPrevious: DropdownKeyDownNavigationPrevious,
@@ -354,47 +314,33 @@ object anon {
       __obj.asInstanceOf[DropdownClick]
     }
     
-    @scala.inline
-    implicit class DropdownClickMutableBuilder[Self <: DropdownClick] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownClick](x: Self) {
       
-      @scala.inline
-      def setDropdownClick(value: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownClick): Self = StObject.set(x, "DropdownClick", value.asInstanceOf[js.Any])
+      inline def setDropdownClick(value: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownClick): Self = StObject.set(x, "DropdownClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownKeyDownBackspace(value: DropdownKeyDownBackspace): Self = StObject.set(x, "DropdownKeyDownBackspace", value.asInstanceOf[js.Any])
+      inline def setDropdownKeyDownBackspace(value: DropdownKeyDownBackspace): Self = StObject.set(x, "DropdownKeyDownBackspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownKeyDownNavigationPrevious(value: DropdownKeyDownNavigationPrevious): Self = StObject.set(x, "DropdownKeyDownNavigationPrevious", value.asInstanceOf[js.Any])
+      inline def setDropdownKeyDownNavigationPrevious(value: DropdownKeyDownNavigationPrevious): Self = StObject.set(x, "DropdownKeyDownNavigationPrevious", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionAddSelectedItem(value: FunctionAddSelectedItem): Self = StObject.set(x, "FunctionAddSelectedItem", value.asInstanceOf[js.Any])
+      inline def setFunctionAddSelectedItem(value: FunctionAddSelectedItem): Self = StObject.set(x, "FunctionAddSelectedItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionRemoveSelectedItem(value: FunctionRemoveSelectedItem): Self = StObject.set(x, "FunctionRemoveSelectedItem", value.asInstanceOf[js.Any])
+      inline def setFunctionRemoveSelectedItem(value: FunctionRemoveSelectedItem): Self = StObject.set(x, "FunctionRemoveSelectedItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionReset(value: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionReset): Self = StObject.set(x, "FunctionReset", value.asInstanceOf[js.Any])
+      inline def setFunctionReset(value: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionReset): Self = StObject.set(x, "FunctionReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSetActiveIndex(value: FunctionSetActiveIndex): Self = StObject.set(x, "FunctionSetActiveIndex", value.asInstanceOf[js.Any])
+      inline def setFunctionSetActiveIndex(value: FunctionSetActiveIndex): Self = StObject.set(x, "FunctionSetActiveIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSetSelectedItems(value: FunctionSetSelectedItems): Self = StObject.set(x, "FunctionSetSelectedItems", value.asInstanceOf[js.Any])
+      inline def setFunctionSetSelectedItems(value: FunctionSetSelectedItems): Self = StObject.set(x, "FunctionSetSelectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemClick(value: SelectedItemClick): Self = StObject.set(x, "SelectedItemClick", value.asInstanceOf[js.Any])
+      inline def setSelectedItemClick(value: SelectedItemClick): Self = StObject.set(x, "SelectedItemClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemKeyDownBackspace(value: SelectedItemKeyDownBackspace): Self = StObject.set(x, "SelectedItemKeyDownBackspace", value.asInstanceOf[js.Any])
+      inline def setSelectedItemKeyDownBackspace(value: SelectedItemKeyDownBackspace): Self = StObject.set(x, "SelectedItemKeyDownBackspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemKeyDownDelete(value: SelectedItemKeyDownDelete): Self = StObject.set(x, "SelectedItemKeyDownDelete", value.asInstanceOf[js.Any])
+      inline def setSelectedItemKeyDownDelete(value: SelectedItemKeyDownDelete): Self = StObject.set(x, "SelectedItemKeyDownDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemKeyDownNavigationNext(value: SelectedItemKeyDownNavigationNext): Self = StObject.set(x, "SelectedItemKeyDownNavigationNext", value.asInstanceOf[js.Any])
+      inline def setSelectedItemKeyDownNavigationNext(value: SelectedItemKeyDownNavigationNext): Self = StObject.set(x, "SelectedItemKeyDownNavigationNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemKeyDownNavigationPrevious(value: SelectedItemKeyDownNavigationPrevious): Self = StObject.set(x, "SelectedItemKeyDownNavigationPrevious", value.asInstanceOf[js.Any])
+      inline def setSelectedItemKeyDownNavigationPrevious(value: SelectedItemKeyDownNavigationPrevious): Self = StObject.set(x, "SelectedItemKeyDownNavigationPrevious", value.asInstanceOf[js.Any])
     }
   }
   
@@ -448,8 +394,7 @@ object anon {
   }
   object FunctionCloseMenu {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FunctionCloseMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionCloseMenu,
       FunctionOpenMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionOpenMenu,
       FunctionReset: typings.downshift.mod.UseSelectStateChangeTypes.FunctionReset,
@@ -478,77 +423,53 @@ object anon {
       __obj.asInstanceOf[FunctionCloseMenu]
     }
     
-    @scala.inline
-    implicit class FunctionCloseMenuMutableBuilder[Self <: FunctionCloseMenu] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionCloseMenu](x: Self) {
       
-      @scala.inline
-      def setFunctionCloseMenu(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionCloseMenu): Self = StObject.set(x, "FunctionCloseMenu", value.asInstanceOf[js.Any])
+      inline def setFunctionCloseMenu(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionCloseMenu): Self = StObject.set(x, "FunctionCloseMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionOpenMenu(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionOpenMenu): Self = StObject.set(x, "FunctionOpenMenu", value.asInstanceOf[js.Any])
+      inline def setFunctionOpenMenu(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionOpenMenu): Self = StObject.set(x, "FunctionOpenMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionReset(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionReset): Self = StObject.set(x, "FunctionReset", value.asInstanceOf[js.Any])
+      inline def setFunctionReset(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionReset): Self = StObject.set(x, "FunctionReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSelectItem(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSelectItem): Self = StObject.set(x, "FunctionSelectItem", value.asInstanceOf[js.Any])
+      inline def setFunctionSelectItem(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSelectItem): Self = StObject.set(x, "FunctionSelectItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSetHighlightedIndex(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetHighlightedIndex): Self = StObject.set(x, "FunctionSetHighlightedIndex", value.asInstanceOf[js.Any])
+      inline def setFunctionSetHighlightedIndex(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetHighlightedIndex): Self = StObject.set(x, "FunctionSetHighlightedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionSetInputValue(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetInputValue): Self = StObject.set(x, "FunctionSetInputValue", value.asInstanceOf[js.Any])
+      inline def setFunctionSetInputValue(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetInputValue): Self = StObject.set(x, "FunctionSetInputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionToggleMenu(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionToggleMenu): Self = StObject.set(x, "FunctionToggleMenu", value.asInstanceOf[js.Any])
+      inline def setFunctionToggleMenu(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionToggleMenu): Self = StObject.set(x, "FunctionToggleMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClick(value: typings.downshift.mod.UseSelectStateChangeTypes.ItemClick): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
+      inline def setItemClick(value: typings.downshift.mod.UseSelectStateChangeTypes.ItemClick): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemMouseMove(value: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove): Self = StObject.set(x, "ItemMouseMove", value.asInstanceOf[js.Any])
+      inline def setItemMouseMove(value: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove): Self = StObject.set(x, "ItemMouseMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuBlur(value: MenuBlur): Self = StObject.set(x, "MenuBlur", value.asInstanceOf[js.Any])
+      inline def setMenuBlur(value: MenuBlur): Self = StObject.set(x, "MenuBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownArrowDown(value: MenuKeyDownArrowDown): Self = StObject.set(x, "MenuKeyDownArrowDown", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownArrowDown(value: MenuKeyDownArrowDown): Self = StObject.set(x, "MenuKeyDownArrowDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownArrowUp(value: MenuKeyDownArrowUp): Self = StObject.set(x, "MenuKeyDownArrowUp", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownArrowUp(value: MenuKeyDownArrowUp): Self = StObject.set(x, "MenuKeyDownArrowUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownCharacter(value: MenuKeyDownCharacter): Self = StObject.set(x, "MenuKeyDownCharacter", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownCharacter(value: MenuKeyDownCharacter): Self = StObject.set(x, "MenuKeyDownCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownEnd(value: MenuKeyDownEnd): Self = StObject.set(x, "MenuKeyDownEnd", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownEnd(value: MenuKeyDownEnd): Self = StObject.set(x, "MenuKeyDownEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownEnter(value: MenuKeyDownEnter): Self = StObject.set(x, "MenuKeyDownEnter", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownEnter(value: MenuKeyDownEnter): Self = StObject.set(x, "MenuKeyDownEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownEscape(value: MenuKeyDownEscape): Self = StObject.set(x, "MenuKeyDownEscape", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownEscape(value: MenuKeyDownEscape): Self = StObject.set(x, "MenuKeyDownEscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownHome(value: MenuKeyDownHome): Self = StObject.set(x, "MenuKeyDownHome", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownHome(value: MenuKeyDownHome): Self = StObject.set(x, "MenuKeyDownHome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuKeyDownSpaceButton(value: MenuKeyDownSpaceButton): Self = StObject.set(x, "MenuKeyDownSpaceButton", value.asInstanceOf[js.Any])
+      inline def setMenuKeyDownSpaceButton(value: MenuKeyDownSpaceButton): Self = StObject.set(x, "MenuKeyDownSpaceButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuMouseLeave(value: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave): Self = StObject.set(x, "MenuMouseLeave", value.asInstanceOf[js.Any])
+      inline def setMenuMouseLeave(value: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave): Self = StObject.set(x, "MenuMouseLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleButtonClick(value: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick): Self = StObject.set(x, "ToggleButtonClick", value.asInstanceOf[js.Any])
+      inline def setToggleButtonClick(value: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick): Self = StObject.set(x, "ToggleButtonClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleButtonKeyDownArrowDown(value: ToggleButtonKeyDownArrowDown): Self = StObject.set(x, "ToggleButtonKeyDownArrowDown", value.asInstanceOf[js.Any])
+      inline def setToggleButtonKeyDownArrowDown(value: ToggleButtonKeyDownArrowDown): Self = StObject.set(x, "ToggleButtonKeyDownArrowDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleButtonKeyDownArrowUp(value: ToggleButtonKeyDownArrowUp): Self = StObject.set(x, "ToggleButtonKeyDownArrowUp", value.asInstanceOf[js.Any])
+      inline def setToggleButtonKeyDownArrowUp(value: ToggleButtonKeyDownArrowUp): Self = StObject.set(x, "ToggleButtonKeyDownArrowUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleButtonKeyDownCharacter(value: ToggleButtonKeyDownCharacter): Self = StObject.set(x, "ToggleButtonKeyDownCharacter", value.asInstanceOf[js.Any])
+      inline def setToggleButtonKeyDownCharacter(value: ToggleButtonKeyDownCharacter): Self = StObject.set(x, "ToggleButtonKeyDownCharacter", value.asInstanceOf[js.Any])
     }
   }
 }

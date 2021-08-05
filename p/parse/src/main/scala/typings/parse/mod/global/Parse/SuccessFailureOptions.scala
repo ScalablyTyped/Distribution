@@ -10,8 +10,7 @@ trait SuccessFailureOptions
      with ErrorOption
 object SuccessFailureOptions {
   
-  @scala.inline
-  def apply(): SuccessFailureOptions = {
+  inline def apply(): SuccessFailureOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessFailureOptions]
   }

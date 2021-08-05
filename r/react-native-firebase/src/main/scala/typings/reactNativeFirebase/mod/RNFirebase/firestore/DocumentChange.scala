@@ -19,26 +19,20 @@ trait DocumentChange extends StObject {
 }
 object DocumentChange {
   
-  @scala.inline
-  def apply(doc: DocumentSnapshot, newIndex: Double, oldIndex: Double, `type`: added | modified | removed): DocumentChange = {
+  inline def apply(doc: DocumentSnapshot, newIndex: Double, oldIndex: Double, `type`: added | modified | removed): DocumentChange = {
     val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentChange]
   }
   
-  @scala.inline
-  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentChange](x: Self) {
     
-    @scala.inline
-    def setDoc(value: DocumentSnapshot): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: DocumentSnapshot): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: added | modified | removed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: added | modified | removed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

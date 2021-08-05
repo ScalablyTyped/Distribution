@@ -14,13 +14,13 @@ object mod {
     def this(config: Double) = this()
     def this(config: Config) = this()
     
-    var _dutyCycleValue: js.Any = js.native
+    /* private */ var _dutyCycleValue: js.Any = js.native
     
-    var _frequencyValue: js.Any = js.native
+    /* private */ var _frequencyValue: js.Any = js.native
     
-    var _pwm: js.Any = js.native
+    /* private */ var _pwm: js.Any = js.native
     
-    var _pwmPort: js.Any = js.native
+    /* private */ var _pwmPort: js.Any = js.native
     
     val dutyCycle: Double = js.native
     
@@ -37,26 +37,20 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
+      inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
     }
   }
 }

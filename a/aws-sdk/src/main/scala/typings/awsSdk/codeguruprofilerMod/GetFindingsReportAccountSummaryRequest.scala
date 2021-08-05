@@ -23,31 +23,23 @@ trait GetFindingsReportAccountSummaryRequest extends StObject {
 }
 object GetFindingsReportAccountSummaryRequest {
   
-  @scala.inline
-  def apply(): GetFindingsReportAccountSummaryRequest = {
+  inline def apply(): GetFindingsReportAccountSummaryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFindingsReportAccountSummaryRequest]
   }
   
-  @scala.inline
-  implicit class GetFindingsReportAccountSummaryRequestMutableBuilder[Self <: GetFindingsReportAccountSummaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingsReportAccountSummaryRequest](x: Self) {
     
-    @scala.inline
-    def setDailyReportsOnly(value: Boolean): Self = StObject.set(x, "dailyReportsOnly", value.asInstanceOf[js.Any])
+    inline def setDailyReportsOnly(value: Boolean): Self = StObject.set(x, "dailyReportsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyReportsOnlyUndefined: Self = StObject.set(x, "dailyReportsOnly", js.undefined)
+    inline def setDailyReportsOnlyUndefined: Self = StObject.set(x, "dailyReportsOnly", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

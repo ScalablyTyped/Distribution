@@ -20,25 +20,19 @@ trait SchemaMarketplaceDealParty extends StObject {
 }
 object SchemaMarketplaceDealParty {
   
-  @scala.inline
-  def apply(): SchemaMarketplaceDealParty = {
+  inline def apply(): SchemaMarketplaceDealParty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMarketplaceDealParty]
   }
   
-  @scala.inline
-  implicit class SchemaMarketplaceDealPartyMutableBuilder[Self <: SchemaMarketplaceDealParty] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMarketplaceDealParty](x: Self) {
     
-    @scala.inline
-    def setBuyer(value: SchemaBuyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
+    inline def setBuyer(value: SchemaBuyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
+    inline def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
     
-    @scala.inline
-    def setSeller(value: SchemaSeller): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
+    inline def setSeller(value: SchemaSeller): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
+    inline def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
   }
 }

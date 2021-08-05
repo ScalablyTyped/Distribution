@@ -35,8 +35,7 @@ object mod {
       }
       object Beacon {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           accuracy: Double,
           major: String,
           minor: String,
@@ -49,29 +48,21 @@ object mod {
           __obj.asInstanceOf[Beacon]
         }
         
-        @scala.inline
-        implicit class BeaconMutableBuilder[Self <: Beacon] (val x: Self) extends AnyVal {
+        extension [Self <: Beacon](x: Self) {
           
-          @scala.inline
-          def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+          inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+          inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+          inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProximity(value: String): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+          inline def setProximity(value: String): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
+          inline def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
+          inline def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+          inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
         }
       }
       
@@ -147,8 +138,7 @@ object mod {
       }
       object Delegate {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           didChangeAuthorizationStatus: String => Unit,
           didDetermineStateForRegion: PluginResult => Unit,
           didEnterRegion: PluginResult => Unit,
@@ -163,35 +153,25 @@ object mod {
           __obj.asInstanceOf[Delegate]
         }
         
-        @scala.inline
-        implicit class DelegateMutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
+        extension [Self <: Delegate](x: Self) {
           
-          @scala.inline
-          def setDidChangeAuthorizationStatus(value: String => Unit): Self = StObject.set(x, "didChangeAuthorizationStatus", js.Any.fromFunction1(value))
+          inline def setDidChangeAuthorizationStatus(value: String => Unit): Self = StObject.set(x, "didChangeAuthorizationStatus", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setDidDetermineStateForRegion(value: PluginResult => Unit): Self = StObject.set(x, "didDetermineStateForRegion", js.Any.fromFunction1(value))
+          inline def setDidDetermineStateForRegion(value: PluginResult => Unit): Self = StObject.set(x, "didDetermineStateForRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setDidEnterRegion(value: PluginResult => Unit): Self = StObject.set(x, "didEnterRegion", js.Any.fromFunction1(value))
+          inline def setDidEnterRegion(value: PluginResult => Unit): Self = StObject.set(x, "didEnterRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setDidExitRegion(value: PluginResult => Unit): Self = StObject.set(x, "didExitRegion", js.Any.fromFunction1(value))
+          inline def setDidExitRegion(value: PluginResult => Unit): Self = StObject.set(x, "didExitRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setDidRangeBeaconsInRegion(value: PluginResult => Unit): Self = StObject.set(x, "didRangeBeaconsInRegion", js.Any.fromFunction1(value))
+          inline def setDidRangeBeaconsInRegion(value: PluginResult => Unit): Self = StObject.set(x, "didRangeBeaconsInRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setDidStartMonitoringForRegion(value: PluginResult => Unit): Self = StObject.set(x, "didStartMonitoringForRegion", js.Any.fromFunction1(value))
+          inline def setDidStartMonitoringForRegion(value: PluginResult => Unit): Self = StObject.set(x, "didStartMonitoringForRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setMonitoringDidFailForRegionWithError(value: PluginResult => Unit): Self = StObject.set(x, "monitoringDidFailForRegionWithError", js.Any.fromFunction1(value))
+          inline def setMonitoringDidFailForRegionWithError(value: PluginResult => Unit): Self = StObject.set(x, "monitoringDidFailForRegionWithError", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPeripheralManagerDidStartAdvertising(value: PluginResult => Unit): Self = StObject.set(x, "peripheralManagerDidStartAdvertising", js.Any.fromFunction1(value))
+          inline def setPeripheralManagerDidStartAdvertising(value: PluginResult => Unit): Self = StObject.set(x, "peripheralManagerDidStartAdvertising", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPeripheralManagerDidUpdateState(value: PluginResult => Unit): Self = StObject.set(x, "peripheralManagerDidUpdateState", js.Any.fromFunction1(value))
+          inline def setPeripheralManagerDidUpdateState(value: PluginResult => Unit): Self = StObject.set(x, "peripheralManagerDidUpdateState", js.Any.fromFunction1(value))
         }
       }
       
@@ -255,8 +235,7 @@ object mod {
       }
       object LocationManager {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           BeaconRegion: BeaconRegion,
           Region: Region,
           appendToDeviceLog: String => Promise[String],
@@ -290,92 +269,63 @@ object mod {
           __obj.asInstanceOf[LocationManager]
         }
         
-        @scala.inline
-        implicit class LocationManagerMutableBuilder[Self <: LocationManager] (val x: Self) extends AnyVal {
+        extension [Self <: LocationManager](x: Self) {
           
-          @scala.inline
-          def setAppendToDeviceLog(value: String => Promise[String]): Self = StObject.set(x, "appendToDeviceLog", js.Any.fromFunction1(value))
+          inline def setAppendToDeviceLog(value: String => Promise[String]): Self = StObject.set(x, "appendToDeviceLog", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setBeaconRegion(value: BeaconRegion): Self = StObject.set(x, "BeaconRegion", value.asInstanceOf[js.Any])
+          inline def setBeaconRegion(value: BeaconRegion): Self = StObject.set(x, "BeaconRegion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDelegate(value: Delegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+          inline def setDelegate(value: Delegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisableBluetooth(value: () => Promise[Unit]): Self = StObject.set(x, "disableBluetooth", js.Any.fromFunction0(value))
+          inline def setDisableBluetooth(value: () => Promise[Unit]): Self = StObject.set(x, "disableBluetooth", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setDisableDebugLogs(value: () => Promise[Unit]): Self = StObject.set(x, "disableDebugLogs", js.Any.fromFunction0(value))
+          inline def setDisableDebugLogs(value: () => Promise[Unit]): Self = StObject.set(x, "disableDebugLogs", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setDisableDebugNotifications(value: () => Promise[Unit]): Self = StObject.set(x, "disableDebugNotifications", js.Any.fromFunction0(value))
+          inline def setDisableDebugNotifications(value: () => Promise[Unit]): Self = StObject.set(x, "disableDebugNotifications", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setEnableBluetooth(value: () => Promise[Unit]): Self = StObject.set(x, "enableBluetooth", js.Any.fromFunction0(value))
+          inline def setEnableBluetooth(value: () => Promise[Unit]): Self = StObject.set(x, "enableBluetooth", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setEnableDebugLogs(value: () => Promise[Unit]): Self = StObject.set(x, "enableDebugLogs", js.Any.fromFunction0(value))
+          inline def setEnableDebugLogs(value: () => Promise[Unit]): Self = StObject.set(x, "enableDebugLogs", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setEnableDebugNotifications(value: () => Promise[Unit]): Self = StObject.set(x, "enableDebugNotifications", js.Any.fromFunction0(value))
+          inline def setEnableDebugNotifications(value: () => Promise[Unit]): Self = StObject.set(x, "enableDebugNotifications", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setGetAuthorizationStatus(value: () => Promise[PluginResult]): Self = StObject.set(x, "getAuthorizationStatus", js.Any.fromFunction0(value))
+          inline def setGetAuthorizationStatus(value: () => Promise[PluginResult]): Self = StObject.set(x, "getAuthorizationStatus", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setGetMonitoredRegions(value: () => Promise[js.Array[Region]]): Self = StObject.set(x, "getMonitoredRegions", js.Any.fromFunction0(value))
+          inline def setGetMonitoredRegions(value: () => Promise[js.Array[Region]]): Self = StObject.set(x, "getMonitoredRegions", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setGetRangedRegions(value: () => Promise[js.Array[Region]]): Self = StObject.set(x, "getRangedRegions", js.Any.fromFunction0(value))
+          inline def setGetRangedRegions(value: () => Promise[js.Array[Region]]): Self = StObject.set(x, "getRangedRegions", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIsAdvertising(value: () => Promise[Boolean]): Self = StObject.set(x, "isAdvertising", js.Any.fromFunction0(value))
+          inline def setIsAdvertising(value: () => Promise[Boolean]): Self = StObject.set(x, "isAdvertising", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIsAdvertisingAvailable(value: () => Promise[Boolean]): Self = StObject.set(x, "isAdvertisingAvailable", js.Any.fromFunction0(value))
+          inline def setIsAdvertisingAvailable(value: () => Promise[Boolean]): Self = StObject.set(x, "isAdvertisingAvailable", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIsBluetoothEnabled(value: () => Promise[Boolean]): Self = StObject.set(x, "isBluetoothEnabled", js.Any.fromFunction0(value))
+          inline def setIsBluetoothEnabled(value: () => Promise[Boolean]): Self = StObject.set(x, "isBluetoothEnabled", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIsMonitoringAvailableForClass(value: Region => Promise[Boolean]): Self = StObject.set(x, "isMonitoringAvailableForClass", js.Any.fromFunction1(value))
+          inline def setIsMonitoringAvailableForClass(value: Region => Promise[Boolean]): Self = StObject.set(x, "isMonitoringAvailableForClass", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setIsRangingAvailable(value: () => Promise[Boolean]): Self = StObject.set(x, "isRangingAvailable", js.Any.fromFunction0(value))
+          inline def setIsRangingAvailable(value: () => Promise[Boolean]): Self = StObject.set(x, "isRangingAvailable", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setOnDomDelegateReady(value: () => Promise[Unit]): Self = StObject.set(x, "onDomDelegateReady", js.Any.fromFunction0(value))
+          inline def setOnDomDelegateReady(value: () => Promise[Unit]): Self = StObject.set(x, "onDomDelegateReady", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+          inline def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRequestAlwaysAuthorization(value: () => Promise[Unit]): Self = StObject.set(x, "requestAlwaysAuthorization", js.Any.fromFunction0(value))
+          inline def setRequestAlwaysAuthorization(value: () => Promise[Unit]): Self = StObject.set(x, "requestAlwaysAuthorization", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setRequestStateForRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "requestStateForRegion", js.Any.fromFunction1(value))
+          inline def setRequestStateForRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "requestStateForRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setRequestWhenInUseAuthorization(value: () => Promise[Unit]): Self = StObject.set(x, "requestWhenInUseAuthorization", js.Any.fromFunction0(value))
+          inline def setRequestWhenInUseAuthorization(value: () => Promise[Unit]): Self = StObject.set(x, "requestWhenInUseAuthorization", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setStartAdvertising(value: (Region, Boolean) => Promise[Unit]): Self = StObject.set(x, "startAdvertising", js.Any.fromFunction2(value))
+          inline def setStartAdvertising(value: (Region, Boolean) => Promise[Unit]): Self = StObject.set(x, "startAdvertising", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setStartMonitoringForRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "startMonitoringForRegion", js.Any.fromFunction1(value))
+          inline def setStartMonitoringForRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "startMonitoringForRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setStartRangingBeaconsInRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "startRangingBeaconsInRegion", js.Any.fromFunction1(value))
+          inline def setStartRangingBeaconsInRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "startRangingBeaconsInRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setStopAdvertising(value: () => Promise[Unit]): Self = StObject.set(x, "stopAdvertising", js.Any.fromFunction0(value))
+          inline def setStopAdvertising(value: () => Promise[Unit]): Self = StObject.set(x, "stopAdvertising", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setStopMonitoringForRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "stopMonitoringForRegion", js.Any.fromFunction1(value))
+          inline def setStopMonitoringForRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "stopMonitoringForRegion", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setStopRangingBeaconsInRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "stopRangingBeaconsInRegion", js.Any.fromFunction1(value))
+          inline def setStopRangingBeaconsInRegion(value: Region => Promise[Unit]): Self = StObject.set(x, "stopRangingBeaconsInRegion", js.Any.fromFunction1(value))
         }
       }
       
@@ -395,8 +345,7 @@ object mod {
       }
       object PluginResult {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           authorizationStatus: String,
           beacons: js.Array[Beacon],
           error: String,
@@ -408,29 +357,21 @@ object mod {
           __obj.asInstanceOf[PluginResult]
         }
         
-        @scala.inline
-        implicit class PluginResultMutableBuilder[Self <: PluginResult] (val x: Self) extends AnyVal {
+        extension [Self <: PluginResult](x: Self) {
           
-          @scala.inline
-          def setAuthorizationStatus(value: String): Self = StObject.set(x, "authorizationStatus", value.asInstanceOf[js.Any])
+          inline def setAuthorizationStatus(value: String): Self = StObject.set(x, "authorizationStatus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+          inline def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+          inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
           
-          @scala.inline
-          def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+          inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+          inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+          inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+          inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
         }
       }
       
@@ -449,17 +390,14 @@ object mod {
     }
     object CordovaPlugins {
       
-      @scala.inline
-      def apply(locationManager: LocationManager): CordovaPlugins = {
+      inline def apply(locationManager: LocationManager): CordovaPlugins = {
         val __obj = js.Dynamic.literal(locationManager = locationManager.asInstanceOf[js.Any])
         __obj.asInstanceOf[CordovaPlugins]
       }
       
-      @scala.inline
-      implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+      extension [Self <: CordovaPlugins](x: Self) {
         
-        @scala.inline
-        def setLocationManager(value: LocationManager): Self = StObject.set(x, "locationManager", value.asInstanceOf[js.Any])
+        inline def setLocationManager(value: LocationManager): Self = StObject.set(x, "locationManager", value.asInstanceOf[js.Any])
       }
     }
   }

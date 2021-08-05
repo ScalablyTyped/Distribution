@@ -8,16 +8,13 @@ object firebaseUtilStrings {
   
   @js.native
   sealed trait ErrorFactory extends StObject
-  @scala.inline
-  def ErrorFactory: ErrorFactory = "ErrorFactory".asInstanceOf[ErrorFactory]
+  inline def ErrorFactory: ErrorFactory = "ErrorFactory".asInstanceOf[ErrorFactory]
   
   @js.native
   sealed trait ErrorMap extends StObject
-  @scala.inline
-  def ErrorMap: ErrorMap = "ErrorMap".asInstanceOf[ErrorMap]
+  inline def ErrorMap: ErrorMap = "ErrorMap".asInstanceOf[ErrorMap]
   
   @js.native
   sealed trait map extends StObject
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
+  inline def map: map = "map".asInstanceOf[map]
 }

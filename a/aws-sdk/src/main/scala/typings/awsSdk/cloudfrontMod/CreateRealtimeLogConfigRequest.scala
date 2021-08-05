@@ -28,31 +28,23 @@ trait CreateRealtimeLogConfigRequest extends StObject {
 }
 object CreateRealtimeLogConfigRequest {
   
-  @scala.inline
-  def apply(EndPoints: EndPointList, Fields: FieldList, Name: String, SamplingRate: long): CreateRealtimeLogConfigRequest = {
+  inline def apply(EndPoints: EndPointList, Fields: FieldList, Name: String, SamplingRate: long): CreateRealtimeLogConfigRequest = {
     val __obj = js.Dynamic.literal(EndPoints = EndPoints.asInstanceOf[js.Any], Fields = Fields.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SamplingRate = SamplingRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRealtimeLogConfigRequest]
   }
   
-  @scala.inline
-  implicit class CreateRealtimeLogConfigRequestMutableBuilder[Self <: CreateRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRealtimeLogConfigRequest](x: Self) {
     
-    @scala.inline
-    def setEndPoints(value: EndPointList): Self = StObject.set(x, "EndPoints", value.asInstanceOf[js.Any])
+    inline def setEndPoints(value: EndPointList): Self = StObject.set(x, "EndPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value :_*))
+    inline def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: FieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: FieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingRate(value: long): Self = StObject.set(x, "SamplingRate", value.asInstanceOf[js.Any])
+    inline def setSamplingRate(value: long): Self = StObject.set(x, "SamplingRate", value.asInstanceOf[js.Any])
   }
 }

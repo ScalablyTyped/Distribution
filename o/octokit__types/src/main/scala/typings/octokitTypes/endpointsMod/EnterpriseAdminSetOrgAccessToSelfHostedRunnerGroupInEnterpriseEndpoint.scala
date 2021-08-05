@@ -23,25 +23,19 @@ trait EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint ext
 }
 object EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String, runner_group_id: Double, selected_organization_ids: js.Array[Double]): EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint = {
+  inline def apply(enterprise: String, runner_group_id: Double, selected_organization_ids: js.Array[Double]): EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any], runner_group_id = runner_group_id.asInstanceOf[js.Any], selected_organization_ids = selected_organization_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_organization_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_organization_ids", value.asInstanceOf[js.Any])
+    inline def setSelected_organization_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_organization_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_organization_idsVarargs(value: Double*): Self = StObject.set(x, "selected_organization_ids", js.Array(value :_*))
+    inline def setSelected_organization_idsVarargs(value: Double*): Self = StObject.set(x, "selected_organization_ids", js.Array(value :_*))
   }
 }

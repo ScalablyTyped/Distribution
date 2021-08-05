@@ -20,29 +20,22 @@ trait FormulaTransform
 }
 object FormulaTransform {
   
-  @scala.inline
-  def apply(as: String | SignalRef, expr: ExprString): FormulaTransform = {
+  inline def apply(as: String | SignalRef, expr: ExprString): FormulaTransform = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("formula")
     __obj.asInstanceOf[FormulaTransform]
   }
   
-  @scala.inline
-  implicit class FormulaTransformMutableBuilder[Self <: FormulaTransform] (val x: Self) extends AnyVal {
+  extension [Self <: FormulaTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpr(value: ExprString): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: ExprString): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitonly(value: Boolean): Self = StObject.set(x, "initonly", value.asInstanceOf[js.Any])
+    inline def setInitonly(value: Boolean): Self = StObject.set(x, "initonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitonlyUndefined: Self = StObject.set(x, "initonly", js.undefined)
+    inline def setInitonlyUndefined: Self = StObject.set(x, "initonly", js.undefined)
     
-    @scala.inline
-    def setType(value: formula): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: formula): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

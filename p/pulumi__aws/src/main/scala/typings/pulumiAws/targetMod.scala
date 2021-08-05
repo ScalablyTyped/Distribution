@@ -70,21 +70,16 @@ object targetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Target]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Target]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TargetState): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Target]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TargetState, opts: CustomResourceOptions): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Target]
+    inline def get(name: String, id: Input[ID]): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Target]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Target]
+    inline def get(name: String, id: Input[ID], state: TargetState): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Target]
+    inline def get(name: String, id: Input[ID], state: TargetState, opts: CustomResourceOptions): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Target]
     
     /**
       * Returns true if the given object is an instance of Target.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ Boolean]
   }
   
   trait TargetArgs extends StObject {
@@ -121,8 +116,7 @@ object targetMod {
   }
   object TargetArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       maxCapacity: Input[Double],
       minCapacity: Input[Double],
       resourceId: Input[String],
@@ -133,29 +127,21 @@ object targetMod {
       __obj.asInstanceOf[TargetArgs]
     }
     
-    @scala.inline
-    implicit class TargetArgsMutableBuilder[Self <: TargetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TargetArgs](x: Self) {
       
-      @scala.inline
-      def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
+      inline def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCapacity(value: Input[Double]): Self = StObject.set(x, "minCapacity", value.asInstanceOf[js.Any])
+      inline def setMinCapacity(value: Input[Double]): Self = StObject.set(x, "minCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
+      inline def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
+      inline def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,50 +179,36 @@ object targetMod {
   }
   object TargetState {
     
-    @scala.inline
-    def apply(): TargetState = {
+    inline def apply(): TargetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TargetState]
     }
     
-    @scala.inline
-    implicit class TargetStateMutableBuilder[Self <: TargetState] (val x: Self) extends AnyVal {
+    extension [Self <: TargetState](x: Self) {
       
-      @scala.inline
-      def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
+      inline def setMaxCapacity(value: Input[Double]): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
+      inline def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
       
-      @scala.inline
-      def setMinCapacity(value: Input[Double]): Self = StObject.set(x, "minCapacity", value.asInstanceOf[js.Any])
+      inline def setMinCapacity(value: Input[Double]): Self = StObject.set(x, "minCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCapacityUndefined: Self = StObject.set(x, "minCapacity", js.undefined)
+      inline def setMinCapacityUndefined: Self = StObject.set(x, "minCapacity", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+      inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
+      inline def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableDimensionUndefined: Self = StObject.set(x, "scalableDimension", js.undefined)
+      inline def setScalableDimensionUndefined: Self = StObject.set(x, "scalableDimension", js.undefined)
       
-      @scala.inline
-      def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
+      inline def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
+      inline def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
     }
   }
 }

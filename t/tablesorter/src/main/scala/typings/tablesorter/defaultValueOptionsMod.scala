@@ -15,20 +15,16 @@ object defaultValueOptionsMod {
   }
   object DefaultValueOptions {
     
-    @scala.inline
-    def apply[T](): DefaultValueOptions[T] = {
+    inline def apply[T](): DefaultValueOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultValueOptions[T]]
     }
     
-    @scala.inline
-    implicit class DefaultValueOptionsMutableBuilder[Self <: DefaultValueOptions[?], T] (val x: Self & DefaultValueOptions[T]) extends AnyVal {
+    extension [Self <: DefaultValueOptions[?], T](x: Self & DefaultValueOptions[T]) {
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

@@ -16,28 +16,21 @@ trait WorkbookCommentReply
 }
 object WorkbookCommentReply {
   
-  @scala.inline
-  def apply(): WorkbookCommentReply = {
+  inline def apply(): WorkbookCommentReply = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookCommentReply]
   }
   
-  @scala.inline
-  implicit class WorkbookCommentReplyMutableBuilder[Self <: WorkbookCommentReply] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookCommentReply](x: Self) {
     
-    @scala.inline
-    def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

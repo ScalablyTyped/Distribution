@@ -13,16 +13,13 @@ trait DeleteDatasetGroupRequest extends StObject {
 }
 object DeleteDatasetGroupRequest {
   
-  @scala.inline
-  def apply(datasetGroupArn: Arn): DeleteDatasetGroupRequest = {
+  inline def apply(datasetGroupArn: Arn): DeleteDatasetGroupRequest = {
     val __obj = js.Dynamic.literal(datasetGroupArn = datasetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDatasetGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDatasetGroupRequestMutableBuilder[Self <: DeleteDatasetGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDatasetGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
   }
 }

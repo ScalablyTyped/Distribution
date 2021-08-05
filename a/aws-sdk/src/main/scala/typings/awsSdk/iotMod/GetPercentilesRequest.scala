@@ -33,43 +33,31 @@ trait GetPercentilesRequest extends StObject {
 }
 object GetPercentilesRequest {
   
-  @scala.inline
-  def apply(queryString: QueryString): GetPercentilesRequest = {
+  inline def apply(queryString: QueryString): GetPercentilesRequest = {
     val __obj = js.Dynamic.literal(queryString = queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPercentilesRequest]
   }
   
-  @scala.inline
-  implicit class GetPercentilesRequestMutableBuilder[Self <: GetPercentilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPercentilesRequest](x: Self) {
     
-    @scala.inline
-    def setAggregationField(value: AggregationField): Self = StObject.set(x, "aggregationField", value.asInstanceOf[js.Any])
+    inline def setAggregationField(value: AggregationField): Self = StObject.set(x, "aggregationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationFieldUndefined: Self = StObject.set(x, "aggregationField", js.undefined)
+    inline def setAggregationFieldUndefined: Self = StObject.set(x, "aggregationField", js.undefined)
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
-    @scala.inline
-    def setPercents(value: PercentList): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
+    inline def setPercents(value: PercentList): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentsUndefined: Self = StObject.set(x, "percents", js.undefined)
+    inline def setPercentsUndefined: Self = StObject.set(x, "percents", js.undefined)
     
-    @scala.inline
-    def setPercentsVarargs(value: Percent*): Self = StObject.set(x, "percents", js.Array(value :_*))
+    inline def setPercentsVarargs(value: Percent*): Self = StObject.set(x, "percents", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
+    inline def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
+    inline def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
   }
 }

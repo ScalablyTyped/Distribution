@@ -41,31 +41,23 @@ trait SchemaStatement extends StObject {
 }
 object SchemaStatement {
   
-  @scala.inline
-  def apply(): SchemaStatement = {
+  inline def apply(): SchemaStatement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStatement]
   }
   
-  @scala.inline
-  implicit class SchemaStatementMutableBuilder[Self <: SchemaStatement] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStatement](x: Self) {
     
-    @scala.inline
-    def setParamTypes(value: StringDictionary[SchemaType]): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
+    inline def setParamTypes(value: StringDictionary[SchemaType]): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
+    inline def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
     
-    @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+    inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
   }
 }

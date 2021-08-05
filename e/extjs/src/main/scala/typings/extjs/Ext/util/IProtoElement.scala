@@ -59,73 +59,51 @@ trait IProtoElement
 }
 object IProtoElement {
   
-  @scala.inline
-  def apply(): IProtoElement = {
+  inline def apply(): IProtoElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IProtoElement]
   }
   
-  @scala.inline
-  implicit class IProtoElementMutableBuilder[Self <: IProtoElement] (val x: Self) extends AnyVal {
+  extension [Self <: IProtoElement](x: Self) {
     
-    @scala.inline
-    def setAddCls(value: /* cls */ js.UndefOr[String] => IProtoElement): Self = StObject.set(x, "addCls", js.Any.fromFunction1(value))
+    inline def setAddCls(value: /* cls */ js.UndefOr[String] => IProtoElement): Self = StObject.set(x, "addCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
+    inline def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
     
-    @scala.inline
-    def setClsProp(value: String): Self = StObject.set(x, "clsProp", value.asInstanceOf[js.Any])
+    inline def setClsProp(value: String): Self = StObject.set(x, "clsProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClsPropUndefined: Self = StObject.set(x, "clsProp", js.undefined)
+    inline def setClsPropUndefined: Self = StObject.set(x, "clsProp", js.undefined)
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+    inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
-    @scala.inline
-    def setHasCls(value: /* cls */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "hasCls", js.Any.fromFunction1(value))
+    inline def setHasCls(value: /* cls */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "hasCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasClsUndefined: Self = StObject.set(x, "hasCls", js.undefined)
+    inline def setHasClsUndefined: Self = StObject.set(x, "hasCls", js.undefined)
     
-    @scala.inline
-    def setRemoveCls(value: /* cls */ js.UndefOr[String] => IProtoElement): Self = StObject.set(x, "removeCls", js.Any.fromFunction1(value))
+    inline def setRemoveCls(value: /* cls */ js.UndefOr[String] => IProtoElement): Self = StObject.set(x, "removeCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
+    inline def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
     
-    @scala.inline
-    def setRemovedProp(value: String): Self = StObject.set(x, "removedProp", value.asInstanceOf[js.Any])
+    inline def setRemovedProp(value: String): Self = StObject.set(x, "removedProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedPropUndefined: Self = StObject.set(x, "removedProp", js.undefined)
+    inline def setRemovedPropUndefined: Self = StObject.set(x, "removedProp", js.undefined)
     
-    @scala.inline
-    def setSetStyle(value: (/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IProtoElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
+    inline def setSetStyle(value: (/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IProtoElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
+    inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
     
-    @scala.inline
-    def setStyleIsText(value: Boolean): Self = StObject.set(x, "styleIsText", value.asInstanceOf[js.Any])
+    inline def setStyleIsText(value: Boolean): Self = StObject.set(x, "styleIsText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleIsTextUndefined: Self = StObject.set(x, "styleIsText", js.undefined)
+    inline def setStyleIsTextUndefined: Self = StObject.set(x, "styleIsText", js.undefined)
     
-    @scala.inline
-    def setStyleProp(value: String): Self = StObject.set(x, "styleProp", value.asInstanceOf[js.Any])
+    inline def setStyleProp(value: String): Self = StObject.set(x, "styleProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylePropUndefined: Self = StObject.set(x, "styleProp", js.undefined)
+    inline def setStylePropUndefined: Self = StObject.set(x, "styleProp", js.undefined)
     
-    @scala.inline
-    def setWriteTo(value: /* to */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "writeTo", js.Any.fromFunction1(value))
+    inline def setWriteTo(value: /* to */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "writeTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteToUndefined: Self = StObject.set(x, "writeTo", js.undefined)
+    inline def setWriteToUndefined: Self = StObject.set(x, "writeTo", js.undefined)
   }
 }

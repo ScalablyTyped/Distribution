@@ -17,37 +17,27 @@ trait PartialPickImplkeyofImplAddResult extends StObject {
 }
 object PartialPickImplkeyofImplAddResult {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplAddResult = {
+  inline def apply(): PartialPickImplkeyofImplAddResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplAddResult]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplAddResultMutableBuilder[Self <: PartialPickImplkeyofImplAddResult] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplAddResult](x: Self) {
     
-    @scala.inline
-    def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
+    inline def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddResultUndefined: Self = StObject.set(x, "addResult", js.undefined)
+    inline def setAddResultUndefined: Self = StObject.set(x, "addResult", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMaxSelections(value: String): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
+    inline def setMaxSelections(value: String): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSelectionsUndefined: Self = StObject.set(x, "maxSelections", js.undefined)
+    inline def setMaxSelectionsUndefined: Self = StObject.set(x, "maxSelections", js.undefined)
     
-    @scala.inline
-    def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
+    inline def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
+    inline def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
   }
 }

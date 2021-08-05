@@ -72,88 +72,61 @@ trait SchemaZone extends StObject {
 }
 object SchemaZone {
   
-  @scala.inline
-  def apply(): SchemaZone = {
+  inline def apply(): SchemaZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaZone]
   }
   
-  @scala.inline
-  implicit class SchemaZoneMutableBuilder[Self <: SchemaZone] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaZone](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBoundary(value: SchemaZoneBoundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: SchemaZoneBoundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+    inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    @scala.inline
-    def setChildContainer(value: js.Array[SchemaZoneChildContainer]): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
+    inline def setChildContainer(value: js.Array[SchemaZoneChildContainer]): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
+    inline def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
     
-    @scala.inline
-    def setChildContainerVarargs(value: SchemaZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value :_*))
+    inline def setChildContainerVarargs(value: SchemaZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+    inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+    inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
     
-    @scala.inline
-    def setTypeRestriction(value: SchemaZoneTypeRestriction): Self = StObject.set(x, "typeRestriction", value.asInstanceOf[js.Any])
+    inline def setTypeRestriction(value: SchemaZoneTypeRestriction): Self = StObject.set(x, "typeRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeRestrictionUndefined: Self = StObject.set(x, "typeRestriction", js.undefined)
+    inline def setTypeRestrictionUndefined: Self = StObject.set(x, "typeRestriction", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
     
-    @scala.inline
-    def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+    inline def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+    inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
   }
 }

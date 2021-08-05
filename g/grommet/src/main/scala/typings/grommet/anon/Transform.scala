@@ -13,19 +13,15 @@ trait Transform extends StObject {
 }
 object Transform {
   
-  @scala.inline
-  def apply(property: String, transform: /* repeated */ js.Any => ReactNode): Transform = {
+  inline def apply(property: String, transform: /* repeated */ js.Any => ReactNode): Transform = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
     __obj.asInstanceOf[Transform]
   }
   
-  @scala.inline
-  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+  extension [Self <: Transform](x: Self) {
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform(value: /* repeated */ js.Any => ReactNode): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: /* repeated */ js.Any => ReactNode): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

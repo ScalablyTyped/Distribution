@@ -14,31 +14,23 @@ trait GetEventsOptions extends StObject {
 }
 object GetEventsOptions {
   
-  @scala.inline
-  def apply(): GetEventsOptions = {
+  inline def apply(): GetEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEventsOptions]
   }
   
-  @scala.inline
-  implicit class GetEventsOptionsMutableBuilder[Self <: GetEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetEventsOptions](x: Self) {
     
-    @scala.inline
-    def setFilters(value: String | typings.dockerode.anon.Container): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: String | typings.dockerode.anon.Container): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    @scala.inline
-    def setUntil(value: Double): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+    inline def setUntil(value: Double): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
+    inline def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
   }
 }

@@ -32,13 +32,11 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     input: Iterable[ValueType | js.Thenable[ValueType]],
     filterer: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]]
   ): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     input: Iterable[ValueType | js.Thenable[ValueType]],
     filterer: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]],
     options: Options
@@ -61,8 +59,7 @@ object mod {
   @JSImport("p-filter", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pFilter */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pFilter */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pFilter */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type Options = typings.pMap.mod.Options
 }

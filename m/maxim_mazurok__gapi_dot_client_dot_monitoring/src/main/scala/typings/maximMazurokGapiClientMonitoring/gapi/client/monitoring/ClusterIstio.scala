@@ -20,37 +20,27 @@ trait ClusterIstio extends StObject {
 }
 object ClusterIstio {
   
-  @scala.inline
-  def apply(): ClusterIstio = {
+  inline def apply(): ClusterIstio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterIstio]
   }
   
-  @scala.inline
-  implicit class ClusterIstioMutableBuilder[Self <: ClusterIstio] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterIstio](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
-    @scala.inline
-    def setServiceNamespace(value: String): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: String): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
+    inline def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
   }
 }

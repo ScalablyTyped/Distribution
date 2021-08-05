@@ -63,67 +63,47 @@ trait SchemaPlayerLeaderboardScore extends StObject {
 }
 object SchemaPlayerLeaderboardScore {
   
-  @scala.inline
-  def apply(): SchemaPlayerLeaderboardScore = {
+  inline def apply(): SchemaPlayerLeaderboardScore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlayerLeaderboardScore]
   }
   
-  @scala.inline
-  implicit class SchemaPlayerLeaderboardScoreMutableBuilder[Self <: SchemaPlayerLeaderboardScore] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlayerLeaderboardScore](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLeaderboard_id(value: String): Self = StObject.set(x, "leaderboard_id", value.asInstanceOf[js.Any])
+    inline def setLeaderboard_id(value: String): Self = StObject.set(x, "leaderboard_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderboard_idUndefined: Self = StObject.set(x, "leaderboard_id", js.undefined)
+    inline def setLeaderboard_idUndefined: Self = StObject.set(x, "leaderboard_id", js.undefined)
     
-    @scala.inline
-    def setPublicRank(value: SchemaLeaderboardScoreRank): Self = StObject.set(x, "publicRank", value.asInstanceOf[js.Any])
+    inline def setPublicRank(value: SchemaLeaderboardScoreRank): Self = StObject.set(x, "publicRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicRankUndefined: Self = StObject.set(x, "publicRank", js.undefined)
+    inline def setPublicRankUndefined: Self = StObject.set(x, "publicRank", js.undefined)
     
-    @scala.inline
-    def setScoreString(value: String): Self = StObject.set(x, "scoreString", value.asInstanceOf[js.Any])
+    inline def setScoreString(value: String): Self = StObject.set(x, "scoreString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreStringUndefined: Self = StObject.set(x, "scoreString", js.undefined)
+    inline def setScoreStringUndefined: Self = StObject.set(x, "scoreString", js.undefined)
     
-    @scala.inline
-    def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
+    inline def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
+    inline def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
     
-    @scala.inline
-    def setScoreValue(value: String): Self = StObject.set(x, "scoreValue", value.asInstanceOf[js.Any])
+    inline def setScoreValue(value: String): Self = StObject.set(x, "scoreValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreValueUndefined: Self = StObject.set(x, "scoreValue", js.undefined)
+    inline def setScoreValueUndefined: Self = StObject.set(x, "scoreValue", js.undefined)
     
-    @scala.inline
-    def setSocialRank(value: SchemaLeaderboardScoreRank): Self = StObject.set(x, "socialRank", value.asInstanceOf[js.Any])
+    inline def setSocialRank(value: SchemaLeaderboardScoreRank): Self = StObject.set(x, "socialRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialRankUndefined: Self = StObject.set(x, "socialRank", js.undefined)
+    inline def setSocialRankUndefined: Self = StObject.set(x, "socialRank", js.undefined)
     
-    @scala.inline
-    def setTimeSpan(value: String): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
+    inline def setTimeSpan(value: String): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
+    inline def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
     
-    @scala.inline
-    def setWriteTimestamp(value: String): Self = StObject.set(x, "writeTimestamp", value.asInstanceOf[js.Any])
+    inline def setWriteTimestamp(value: String): Self = StObject.set(x, "writeTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteTimestampUndefined: Self = StObject.set(x, "writeTimestamp", js.undefined)
+    inline def setWriteTimestampUndefined: Self = StObject.set(x, "writeTimestamp", js.undefined)
   }
 }

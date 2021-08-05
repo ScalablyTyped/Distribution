@@ -20,15 +20,14 @@ trait WorkflowTemplate extends StObject {
   
   val Name: String
   
-  @JSName("Office.WorkflowTemplate_typekey")
+  /* private */ @JSName("Office.WorkflowTemplate_typekey")
   var OfficeDotWorkflowTemplate_typekey: WorkflowTemplate
   
   def Show(): Double
 }
 object WorkflowTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Description: String,
@@ -44,34 +43,24 @@ object WorkflowTemplate {
     __obj.asInstanceOf[WorkflowTemplate]
   }
   
-  @scala.inline
-  implicit class WorkflowTemplateMutableBuilder[Self <: WorkflowTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTemplate](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentLibraryName(value: String): Self = StObject.set(x, "DocumentLibraryName", value.asInstanceOf[js.Any])
+    inline def setDocumentLibraryName(value: String): Self = StObject.set(x, "DocumentLibraryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentLibraryURL(value: String): Self = StObject.set(x, "DocumentLibraryURL", value.asInstanceOf[js.Any])
+    inline def setDocumentLibraryURL(value: String): Self = StObject.set(x, "DocumentLibraryURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotWorkflowTemplate_typekey(value: WorkflowTemplate): Self = StObject.set(x, "Office.WorkflowTemplate_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotWorkflowTemplate_typekey(value: WorkflowTemplate): Self = StObject.set(x, "Office.WorkflowTemplate_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: () => Double): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Double): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
   }
 }

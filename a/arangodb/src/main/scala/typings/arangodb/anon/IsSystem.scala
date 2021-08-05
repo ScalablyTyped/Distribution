@@ -10,19 +10,15 @@ trait IsSystem extends StObject {
 }
 object IsSystem {
   
-  @scala.inline
-  def apply(): IsSystem = {
+  inline def apply(): IsSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsSystem]
   }
   
-  @scala.inline
-  implicit class IsSystemMutableBuilder[Self <: IsSystem] (val x: Self) extends AnyVal {
+  extension [Self <: IsSystem](x: Self) {
     
-    @scala.inline
-    def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
+    inline def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSystemUndefined: Self = StObject.set(x, "isSystem", js.undefined)
+    inline def setIsSystemUndefined: Self = StObject.set(x, "isSystem", js.undefined)
   }
 }

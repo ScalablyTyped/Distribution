@@ -18,25 +18,19 @@ trait FleetError extends StObject {
 }
 object FleetError {
   
-  @scala.inline
-  def apply(): FleetError = {
+  inline def apply(): FleetError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetError]
   }
   
-  @scala.inline
-  implicit class FleetErrorMutableBuilder[Self <: FleetError] (val x: Self) extends AnyVal {
+  extension [Self <: FleetError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: FleetErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: FleetErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
   }
 }

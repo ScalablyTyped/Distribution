@@ -18,20 +18,16 @@ trait DaemonSetUpdateStrategy extends StObject {
 }
 object DaemonSetUpdateStrategy {
   
-  @scala.inline
-  def apply(rollingUpdate: RollingUpdateDaemonSet, `type`: String): DaemonSetUpdateStrategy = {
+  inline def apply(rollingUpdate: RollingUpdateDaemonSet, `type`: String): DaemonSetUpdateStrategy = {
     val __obj = js.Dynamic.literal(rollingUpdate = rollingUpdate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaemonSetUpdateStrategy]
   }
   
-  @scala.inline
-  implicit class DaemonSetUpdateStrategyMutableBuilder[Self <: DaemonSetUpdateStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: DaemonSetUpdateStrategy](x: Self) {
     
-    @scala.inline
-    def setRollingUpdate(value: RollingUpdateDaemonSet): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
+    inline def setRollingUpdate(value: RollingUpdateDaemonSet): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

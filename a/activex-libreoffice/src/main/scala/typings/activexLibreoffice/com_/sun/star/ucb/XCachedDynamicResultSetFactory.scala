@@ -28,8 +28,7 @@ trait XCachedDynamicResultSetFactory
 }
 object XCachedDynamicResultSetFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createCachedDynamicResultSet: (XDynamicResultSet, XContentIdentifierMapping) => XDynamicResultSet,
     queryInterface: `type` => js.Any,
@@ -39,10 +38,8 @@ object XCachedDynamicResultSetFactory {
     __obj.asInstanceOf[XCachedDynamicResultSetFactory]
   }
   
-  @scala.inline
-  implicit class XCachedDynamicResultSetFactoryMutableBuilder[Self <: XCachedDynamicResultSetFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XCachedDynamicResultSetFactory](x: Self) {
     
-    @scala.inline
-    def setCreateCachedDynamicResultSet(value: (XDynamicResultSet, XContentIdentifierMapping) => XDynamicResultSet): Self = StObject.set(x, "createCachedDynamicResultSet", js.Any.fromFunction2(value))
+    inline def setCreateCachedDynamicResultSet(value: (XDynamicResultSet, XContentIdentifierMapping) => XDynamicResultSet): Self = StObject.set(x, "createCachedDynamicResultSet", js.Any.fromFunction2(value))
   }
 }

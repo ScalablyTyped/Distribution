@@ -17,31 +17,23 @@ trait Link extends StObject {
 }
 object Link {
   
-  @scala.inline
-  def apply(): Link = {
+  inline def apply(): Link = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Link]
   }
   
-  @scala.inline
-  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+  extension [Self <: Link](x: Self) {
     
-    @scala.inline
-    def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
+    inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
+    inline def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
     
-    @scala.inline
-    def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
+    inline def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
+    inline def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

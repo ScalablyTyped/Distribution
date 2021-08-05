@@ -23,22 +23,17 @@ trait IHitResultChangedEventData extends StObject {
 }
 object IHitResultChangedEventData {
   
-  @scala.inline
-  def apply(entity: IEntity): IHitResultChangedEventData = {
+  inline def apply(entity: IEntity): IHitResultChangedEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], position = null)
     __obj.asInstanceOf[IHitResultChangedEventData]
   }
   
-  @scala.inline
-  implicit class IHitResultChangedEventDataMutableBuilder[Self <: IHitResultChangedEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IHitResultChangedEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: VectorXYZ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: VectorXYZ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
   }
 }

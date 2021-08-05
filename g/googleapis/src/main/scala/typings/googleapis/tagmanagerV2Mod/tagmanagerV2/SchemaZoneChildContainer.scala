@@ -21,25 +21,19 @@ trait SchemaZoneChildContainer extends StObject {
 }
 object SchemaZoneChildContainer {
   
-  @scala.inline
-  def apply(): SchemaZoneChildContainer = {
+  inline def apply(): SchemaZoneChildContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaZoneChildContainer]
   }
   
-  @scala.inline
-  implicit class SchemaZoneChildContainerMutableBuilder[Self <: SchemaZoneChildContainer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaZoneChildContainer](x: Self) {
     
-    @scala.inline
-    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+    inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
+    inline def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
   }
 }

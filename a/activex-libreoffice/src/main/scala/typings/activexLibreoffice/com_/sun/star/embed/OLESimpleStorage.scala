@@ -31,8 +31,7 @@ trait OLESimpleStorage
 }
 object OLESimpleStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClassID: SafeArray[Double],
     ClassName: String,
     ElementNames: SafeArray[String],
@@ -63,13 +62,10 @@ object OLESimpleStorage {
     __obj.asInstanceOf[OLESimpleStorage]
   }
   
-  @scala.inline
-  implicit class OLESimpleStorageMutableBuilder[Self <: OLESimpleStorage] (val x: Self) extends AnyVal {
+  extension [Self <: OLESimpleStorage](x: Self) {
     
-    @scala.inline
-    def setCreateFromInputStream(value: (XInputStream, Boolean) => Unit): Self = StObject.set(x, "createFromInputStream", js.Any.fromFunction2(value))
+    inline def setCreateFromInputStream(value: (XInputStream, Boolean) => Unit): Self = StObject.set(x, "createFromInputStream", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateFromStream(value: (XStream, Boolean) => Unit): Self = StObject.set(x, "createFromStream", js.Any.fromFunction2(value))
+    inline def setCreateFromStream(value: (XStream, Boolean) => Unit): Self = StObject.set(x, "createFromStream", js.Any.fromFunction2(value))
   }
 }

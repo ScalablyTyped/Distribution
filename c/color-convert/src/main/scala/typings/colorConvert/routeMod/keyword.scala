@@ -51,49 +51,34 @@ trait keyword extends StObject {
 }
 object keyword {
   
-  @scala.inline
-  implicit class keywordMutableBuilder[Self <: keyword] (val x: Self) extends AnyVal {
+  extension [Self <: keyword](x: Self) {
     
-    @scala.inline
-    def setAnsi16(value: KEYWORD_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
+    inline def setAnsi16(value: KEYWORD_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnsi256(value: KEYWORD_ => ANSI256_): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
+    inline def setAnsi256(value: KEYWORD_ => ANSI256_): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApple(value: KEYWORD_ => APPLE_): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
+    inline def setApple(value: KEYWORD_ => APPLE_): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCmyk(value: KEYWORD_ => CMYK_): Self = StObject.set(x, "cmyk", js.Any.fromFunction1(value))
+    inline def setCmyk(value: KEYWORD_ => CMYK_): Self = StObject.set(x, "cmyk", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGray(value: KEYWORD_ => GRAY_): Self = StObject.set(x, "gray", js.Any.fromFunction1(value))
+    inline def setGray(value: KEYWORD_ => GRAY_): Self = StObject.set(x, "gray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHcg(value: KEYWORD_ => HCG_): Self = StObject.set(x, "hcg", js.Any.fromFunction1(value))
+    inline def setHcg(value: KEYWORD_ => HCG_): Self = StObject.set(x, "hcg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHex(value: KEYWORD_ => HEX_): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
+    inline def setHex(value: KEYWORD_ => HEX_): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHsl(value: KEYWORD_ => HSL_): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
+    inline def setHsl(value: KEYWORD_ => HSL_): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHsv(value: KEYWORD_ => HSV_): Self = StObject.set(x, "hsv", js.Any.fromFunction1(value))
+    inline def setHsv(value: KEYWORD_ => HSV_): Self = StObject.set(x, "hsv", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHwb(value: KEYWORD_ => HWB_): Self = StObject.set(x, "hwb", js.Any.fromFunction1(value))
+    inline def setHwb(value: KEYWORD_ => HWB_): Self = StObject.set(x, "hwb", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLab(value: KEYWORD_ => LAB_): Self = StObject.set(x, "lab", js.Any.fromFunction1(value))
+    inline def setLab(value: KEYWORD_ => LAB_): Self = StObject.set(x, "lab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLch(value: KEYWORD_ => LCH_): Self = StObject.set(x, "lch", js.Any.fromFunction1(value))
+    inline def setLch(value: KEYWORD_ => LCH_): Self = StObject.set(x, "lch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRgb(value: KEYWORD_ => RGB_): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
+    inline def setRgb(value: KEYWORD_ => RGB_): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXyz(value: KEYWORD_ => XYZ_): Self = StObject.set(x, "xyz", js.Any.fromFunction1(value))
+    inline def setXyz(value: KEYWORD_ => XYZ_): Self = StObject.set(x, "xyz", js.Any.fromFunction1(value))
   }
 }

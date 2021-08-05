@@ -18,23 +18,18 @@ trait Time
 }
 object Time {
   
-  @scala.inline
-  def apply(epoch_time: Double, timezone: String): Time = {
+  inline def apply(epoch_time: Double, timezone: String): Time = {
     val __obj = js.Dynamic.literal(epoch_time = epoch_time.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
     __obj.updateDynamic("$reql_type$")("TIME")
     __obj.asInstanceOf[Time]
   }
   
-  @scala.inline
-  implicit class TimeMutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
+  extension [Self <: Time](x: Self) {
     
-    @scala.inline
-    def setDollarreql_typeDollar(value: TIME): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
+    inline def setDollarreql_typeDollar(value: TIME): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpoch_time(value: Double): Self = StObject.set(x, "epoch_time", value.asInstanceOf[js.Any])
+    inline def setEpoch_time(value: Double): Self = StObject.set(x, "epoch_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
   }
 }

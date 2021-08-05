@@ -36,8 +36,7 @@ object dlpMod {
     @JSImport("googleapis/build/src/apis/dlp", "VERSIONS.v2")
     @js.native
     def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dlp] = js.native
-    @scala.inline
-    def v2_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dlp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
+    inline def v2_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dlp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
   }
   
   object auth extends Shortcut {
@@ -73,8 +72,7 @@ object dlpMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -118,9 +116,7 @@ object dlpMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def dlp(options: Options): Dlp = ^.asInstanceOf[js.Dynamic].applyDynamic("dlp")(options.asInstanceOf[js.Any]).asInstanceOf[Dlp]
+  inline def dlp(options: Options): Dlp = ^.asInstanceOf[js.Dynamic].applyDynamic("dlp")(options.asInstanceOf[js.Any]).asInstanceOf[Dlp]
   
-  @scala.inline
-  def dlp_v2(version: v2): Dlp = ^.asInstanceOf[js.Dynamic].applyDynamic("dlp")(version.asInstanceOf[js.Any]).asInstanceOf[Dlp]
+  inline def dlp_v2(version: v2): Dlp = ^.asInstanceOf[js.Dynamic].applyDynamic("dlp")(version.asInstanceOf[js.Any]).asInstanceOf[Dlp]
 }

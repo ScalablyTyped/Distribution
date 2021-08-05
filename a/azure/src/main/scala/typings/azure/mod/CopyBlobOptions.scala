@@ -14,22 +14,17 @@ trait CopyBlobOptions
 }
 object CopyBlobOptions {
   
-  @scala.inline
-  def apply(sourceAccessConditions: StorageAccessCondition): CopyBlobOptions = {
+  inline def apply(sourceAccessConditions: StorageAccessCondition): CopyBlobOptions = {
     val __obj = js.Dynamic.literal(sourceAccessConditions = sourceAccessConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyBlobOptions]
   }
   
-  @scala.inline
-  implicit class CopyBlobOptionsMutableBuilder[Self <: CopyBlobOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CopyBlobOptions](x: Self) {
     
-    @scala.inline
-    def setSourceAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "sourceAccessConditions", value.asInstanceOf[js.Any])
+    inline def setSourceAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "sourceAccessConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLeaseId(value: String): Self = StObject.set(x, "sourceLeaseId", value.asInstanceOf[js.Any])
+    inline def setSourceLeaseId(value: String): Self = StObject.set(x, "sourceLeaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLeaseIdUndefined: Self = StObject.set(x, "sourceLeaseId", js.undefined)
+    inline def setSourceLeaseIdUndefined: Self = StObject.set(x, "sourceLeaseId", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait ASPxClientWebDocumentViewerBrick extends StObject {
 }
 object ASPxClientWebDocumentViewerBrick {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: StringDictionary[String],
     height: Double,
     left: Double,
@@ -37,28 +36,20 @@ object ASPxClientWebDocumentViewerBrick {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerBrick]
   }
   
-  @scala.inline
-  implicit class ASPxClientWebDocumentViewerBrickMutableBuilder[Self <: ASPxClientWebDocumentViewerBrick] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWebDocumentViewerBrick](x: Self) {
     
-    @scala.inline
-    def setContent(value: StringDictionary[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: StringDictionary[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: ASPxClientWebDocumentViewerBrickNavigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: ASPxClientWebDocumentViewerBrickNavigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+    inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

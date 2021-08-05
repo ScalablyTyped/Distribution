@@ -22,6 +22,5 @@ object Table {
   /**
     * Creates table from a given entity metadata.
     */
-  @scala.inline
-  def create(entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata, driver: Driver): typings.typeorm.tableMod.Table = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[typings.typeorm.tableMod.Table]
+  inline def create(entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata, driver: Driver): typings.typeorm.tableMod.Table = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[typings.typeorm.tableMod.Table]
 }

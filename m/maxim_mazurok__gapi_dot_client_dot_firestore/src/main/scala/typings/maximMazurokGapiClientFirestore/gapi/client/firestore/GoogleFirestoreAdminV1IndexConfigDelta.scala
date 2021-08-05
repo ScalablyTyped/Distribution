@@ -14,25 +14,19 @@ trait GoogleFirestoreAdminV1IndexConfigDelta extends StObject {
 }
 object GoogleFirestoreAdminV1IndexConfigDelta {
   
-  @scala.inline
-  def apply(): GoogleFirestoreAdminV1IndexConfigDelta = {
+  inline def apply(): GoogleFirestoreAdminV1IndexConfigDelta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleFirestoreAdminV1IndexConfigDelta]
   }
   
-  @scala.inline
-  implicit class GoogleFirestoreAdminV1IndexConfigDeltaMutableBuilder[Self <: GoogleFirestoreAdminV1IndexConfigDelta] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleFirestoreAdminV1IndexConfigDelta](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
+    inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     
-    @scala.inline
-    def setIndex(value: GoogleFirestoreAdminV1Index): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: GoogleFirestoreAdminV1Index): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

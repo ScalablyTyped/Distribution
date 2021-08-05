@@ -18,20 +18,16 @@ object mod {
     }
     object IDynamicLocale {
       
-      @scala.inline
-      def apply(get: () => String, set: String => IPromise[ILocaleService]): IDynamicLocale = {
+      inline def apply(get: () => String, set: String => IPromise[ILocaleService]): IDynamicLocale = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
         __obj.asInstanceOf[IDynamicLocale]
       }
       
-      @scala.inline
-      implicit class IDynamicLocaleMutableBuilder[Self <: IDynamicLocale] (val x: Self) extends AnyVal {
+      extension [Self <: IDynamicLocale](x: Self) {
         
-        @scala.inline
-        def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+        inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSet(value: String => IPromise[ILocaleService]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+        inline def setSet(value: String => IPromise[ILocaleService]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       }
     }
   }

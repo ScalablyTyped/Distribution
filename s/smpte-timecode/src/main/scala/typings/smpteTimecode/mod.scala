@@ -10,22 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): TimecodeInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[TimecodeInstance]
-  @scala.inline
-  def apply(timecode: Unit, frameRate: Unit, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
-  @scala.inline
-  def apply(timecode: Unit, frameRate: FRAMERATE): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
-  @scala.inline
-  def apply(timecode: Unit, frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
-  @scala.inline
-  def apply(timecode: TIMECODE): TimecodeInstance = ^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any]).asInstanceOf[TimecodeInstance]
-  @scala.inline
-  def apply(timecode: TIMECODE, frameRate: Unit, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
-  @scala.inline
-  def apply(timecode: TIMECODE, frameRate: FRAMERATE): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
-  @scala.inline
-  def apply(timecode: TIMECODE, frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  inline def apply(): TimecodeInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[TimecodeInstance]
+  inline def apply(timecode: Unit, frameRate: Unit, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  inline def apply(timecode: Unit, frameRate: FRAMERATE): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  inline def apply(timecode: Unit, frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  inline def apply(timecode: TIMECODE): TimecodeInstance = ^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any]).asInstanceOf[TimecodeInstance]
+  inline def apply(timecode: TIMECODE, frameRate: Unit, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  inline def apply(timecode: TIMECODE, frameRate: FRAMERATE): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
+  inline def apply(timecode: TIMECODE, frameRate: FRAMERATE, dropFrame: Boolean): TimecodeInstance = (^.asInstanceOf[js.Dynamic].apply(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], dropFrame.asInstanceOf[js.Any])).asInstanceOf[TimecodeInstance]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("smpte-timecode", JSImport.Namespace)
@@ -58,29 +50,21 @@ object mod {
   trait FRAMERATE extends StObject
   object FRAMERATE {
     
-    @scala.inline
-    def `23Dot976`: `23.976` = 23.976.asInstanceOf[`23.976`]
+    inline def `23Dot976`: `23.976` = 23.976.asInstanceOf[`23.976`]
     
-    @scala.inline
-    def `24`: typings.smpteTimecode.smpteTimecodeNumbers.`24` = 24.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`24`]
+    inline def `24`: typings.smpteTimecode.smpteTimecodeNumbers.`24` = 24.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`24`]
     
-    @scala.inline
-    def `25`: typings.smpteTimecode.smpteTimecodeNumbers.`25` = 25.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`25`]
+    inline def `25`: typings.smpteTimecode.smpteTimecodeNumbers.`25` = 25.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`25`]
     
-    @scala.inline
-    def `29Dot97`: `29.97` = 29.97.asInstanceOf[`29.97`]
+    inline def `29Dot97`: `29.97` = 29.97.asInstanceOf[`29.97`]
     
-    @scala.inline
-    def `30`: typings.smpteTimecode.smpteTimecodeNumbers.`30` = 30.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`30`]
+    inline def `30`: typings.smpteTimecode.smpteTimecodeNumbers.`30` = 30.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`30`]
     
-    @scala.inline
-    def `50`: typings.smpteTimecode.smpteTimecodeNumbers.`50` = 50.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`50`]
+    inline def `50`: typings.smpteTimecode.smpteTimecodeNumbers.`50` = 50.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`50`]
     
-    @scala.inline
-    def `59Dot94`: `59.94` = 59.94.asInstanceOf[`59.94`]
+    inline def `59Dot94`: `59.94` = 59.94.asInstanceOf[`59.94`]
     
-    @scala.inline
-    def `60`: typings.smpteTimecode.smpteTimecodeNumbers.`60` = 60.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`60`]
+    inline def `60`: typings.smpteTimecode.smpteTimecodeNumbers.`60` = 60.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`60`]
   }
   
   type TIMECODE = Double | String | Date | TimecodeObject
@@ -127,26 +111,20 @@ object mod {
   }
   object TimecodeObject {
     
-    @scala.inline
-    def apply(frames: Double, hours: Double, minutes: Double, seconds: Double): TimecodeObject = {
+    inline def apply(frames: Double, hours: Double, minutes: Double, seconds: Double): TimecodeObject = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimecodeObject]
     }
     
-    @scala.inline
-    implicit class TimecodeObjectMutableBuilder[Self <: TimecodeObject] (val x: Self) extends AnyVal {
+    extension [Self <: TimecodeObject](x: Self) {
       
-      @scala.inline
-      def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }
   }
 }

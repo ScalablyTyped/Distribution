@@ -21,25 +21,19 @@ trait ContinueLegendHandlerCfg extends StObject {
 }
 object ContinueLegendHandlerCfg {
   
-  @scala.inline
-  def apply(): ContinueLegendHandlerCfg = {
+  inline def apply(): ContinueLegendHandlerCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContinueLegendHandlerCfg]
   }
   
-  @scala.inline
-  implicit class ContinueLegendHandlerCfgMutableBuilder[Self <: ContinueLegendHandlerCfg] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueLegendHandlerCfg](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

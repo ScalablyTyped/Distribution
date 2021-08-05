@@ -18,16 +18,13 @@ trait MVCxClientBeginCallbackEventArgs
 }
 object MVCxClientBeginCallbackEventArgs {
   
-  @scala.inline
-  def apply(command: String, customArgs: js.Any): MVCxClientBeginCallbackEventArgs = {
+  inline def apply(command: String, customArgs: js.Any): MVCxClientBeginCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], customArgs = customArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MVCxClientBeginCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class MVCxClientBeginCallbackEventArgsMutableBuilder[Self <: MVCxClientBeginCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientBeginCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setCustomArgs(value: js.Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
+    inline def setCustomArgs(value: js.Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
   }
 }

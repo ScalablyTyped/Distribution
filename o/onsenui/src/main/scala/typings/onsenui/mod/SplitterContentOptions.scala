@@ -14,19 +14,15 @@ trait SplitterContentOptions extends StObject {
 }
 object SplitterContentOptions {
   
-  @scala.inline
-  def apply(): SplitterContentOptions = {
+  inline def apply(): SplitterContentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplitterContentOptions]
   }
   
-  @scala.inline
-  implicit class SplitterContentOptionsMutableBuilder[Self <: SplitterContentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SplitterContentOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
   }
 }

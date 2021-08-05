@@ -27,8 +27,7 @@ object iclientdriverMod {
   }
   object IClientDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       isConnected: () => Boolean,
       listen: IProtocol => Unit,
@@ -40,11 +39,9 @@ object iclientdriverMod {
       __obj.asInstanceOf[IClientDriver]
     }
     
-    @scala.inline
-    implicit class IClientDriverMutableBuilder[Self <: IClientDriver] (val x: Self) extends AnyVal {
+    extension [Self <: IClientDriver](x: Self) {
       
-      @scala.inline
-      def setListen(value: IProtocol => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: IProtocol => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
     }
   }
 }

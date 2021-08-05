@@ -13,6 +13,5 @@ object calendarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: CalendarProps[Moment]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: CalendarProps[Moment]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

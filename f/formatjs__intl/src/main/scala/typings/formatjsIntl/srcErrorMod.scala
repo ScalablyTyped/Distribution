@@ -80,19 +80,14 @@ object srcErrorMod {
   trait IntlErrorCode extends StObject
   object IntlErrorCode {
     
-    @scala.inline
-    def FORMAT_ERROR: typings.formatjsIntl.formatjsIntlStrings.FORMAT_ERROR = "FORMAT_ERROR".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.FORMAT_ERROR]
+    inline def FORMAT_ERROR: typings.formatjsIntl.formatjsIntlStrings.FORMAT_ERROR = "FORMAT_ERROR".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.FORMAT_ERROR]
     
-    @scala.inline
-    def INVALID_CONFIG: typings.formatjsIntl.formatjsIntlStrings.INVALID_CONFIG = "INVALID_CONFIG".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.INVALID_CONFIG]
+    inline def INVALID_CONFIG: typings.formatjsIntl.formatjsIntlStrings.INVALID_CONFIG = "INVALID_CONFIG".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.INVALID_CONFIG]
     
-    @scala.inline
-    def MISSING_DATA: typings.formatjsIntl.formatjsIntlStrings.MISSING_DATA = "MISSING_DATA".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.MISSING_DATA]
+    inline def MISSING_DATA: typings.formatjsIntl.formatjsIntlStrings.MISSING_DATA = "MISSING_DATA".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.MISSING_DATA]
     
-    @scala.inline
-    def MISSING_TRANSLATION: typings.formatjsIntl.formatjsIntlStrings.MISSING_TRANSLATION = "MISSING_TRANSLATION".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.MISSING_TRANSLATION]
+    inline def MISSING_TRANSLATION: typings.formatjsIntl.formatjsIntlStrings.MISSING_TRANSLATION = "MISSING_TRANSLATION".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.MISSING_TRANSLATION]
     
-    @scala.inline
-    def UNSUPPORTED_FORMATTER: typings.formatjsIntl.formatjsIntlStrings.UNSUPPORTED_FORMATTER = "UNSUPPORTED_FORMATTER".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.UNSUPPORTED_FORMATTER]
+    inline def UNSUPPORTED_FORMATTER: typings.formatjsIntl.formatjsIntlStrings.UNSUPPORTED_FORMATTER = "UNSUPPORTED_FORMATTER".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.UNSUPPORTED_FORMATTER]
   }
 }

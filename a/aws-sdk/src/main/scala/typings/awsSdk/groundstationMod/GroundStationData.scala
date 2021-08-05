@@ -23,31 +23,23 @@ trait GroundStationData extends StObject {
 }
 object GroundStationData {
   
-  @scala.inline
-  def apply(): GroundStationData = {
+  inline def apply(): GroundStationData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroundStationData]
   }
   
-  @scala.inline
-  implicit class GroundStationDataMutableBuilder[Self <: GroundStationData] (val x: Self) extends AnyVal {
+  extension [Self <: GroundStationData](x: Self) {
     
-    @scala.inline
-    def setGroundStationId(value: String): Self = StObject.set(x, "groundStationId", value.asInstanceOf[js.Any])
+    inline def setGroundStationId(value: String): Self = StObject.set(x, "groundStationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundStationIdUndefined: Self = StObject.set(x, "groundStationId", js.undefined)
+    inline def setGroundStationIdUndefined: Self = StObject.set(x, "groundStationId", js.undefined)
     
-    @scala.inline
-    def setGroundStationName(value: String): Self = StObject.set(x, "groundStationName", value.asInstanceOf[js.Any])
+    inline def setGroundStationName(value: String): Self = StObject.set(x, "groundStationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundStationNameUndefined: Self = StObject.set(x, "groundStationName", js.undefined)
+    inline def setGroundStationNameUndefined: Self = StObject.set(x, "groundStationName", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

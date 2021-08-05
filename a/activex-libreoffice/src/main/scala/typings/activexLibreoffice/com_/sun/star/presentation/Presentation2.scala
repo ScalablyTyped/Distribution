@@ -20,8 +20,7 @@ trait Presentation2
      with XPresentation2
 object Presentation2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowAnimations: Boolean,
     Controller: XSlideShowController,
     CustomShow: String,

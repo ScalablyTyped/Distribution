@@ -17,28 +17,21 @@ trait ListSinksResponse extends StObject {
 }
 object ListSinksResponse {
   
-  @scala.inline
-  def apply(): ListSinksResponse = {
+  inline def apply(): ListSinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSinksResponse]
   }
   
-  @scala.inline
-  implicit class ListSinksResponseMutableBuilder[Self <: ListSinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSinksResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSinks(value: js.Array[LogSink]): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
+    inline def setSinks(value: js.Array[LogSink]): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinksUndefined: Self = StObject.set(x, "sinks", js.undefined)
+    inline def setSinksUndefined: Self = StObject.set(x, "sinks", js.undefined)
     
-    @scala.inline
-    def setSinksVarargs(value: LogSink*): Self = StObject.set(x, "sinks", js.Array(value :_*))
+    inline def setSinksVarargs(value: LogSink*): Self = StObject.set(x, "sinks", js.Array(value :_*))
   }
 }

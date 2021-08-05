@@ -30,8 +30,7 @@ object typesMod {
   }
   object IntlConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultFormats: CustomFormats,
       defaultLocale: String,
       formats: CustomFormats,
@@ -43,20 +42,15 @@ object typesMod {
       __obj.asInstanceOf[IntlConfig]
     }
     
-    @scala.inline
-    implicit class IntlConfigMutableBuilder[Self <: IntlConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IntlConfig](x: Self) {
       
-      @scala.inline
-      def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
+      inline def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
+      inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
       
-      @scala.inline
-      def setWrapRichTextChunksInFragment(value: Boolean): Self = StObject.set(x, "wrapRichTextChunksInFragment", value.asInstanceOf[js.Any])
+      inline def setWrapRichTextChunksInFragment(value: Boolean): Self = StObject.set(x, "wrapRichTextChunksInFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapRichTextChunksInFragmentUndefined: Self = StObject.set(x, "wrapRichTextChunksInFragment", js.undefined)
+      inline def setWrapRichTextChunksInFragmentUndefined: Self = StObject.set(x, "wrapRichTextChunksInFragment", js.undefined)
     }
   }
   

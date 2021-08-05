@@ -19,17 +19,14 @@ object interfaceMod {
   }
   object SharedConfig {
     
-    @scala.inline
-    def apply[T](getKey: T => Key): SharedConfig[T] = {
+    inline def apply[T](getKey: T => Key): SharedConfig[T] = {
       val __obj = js.Dynamic.literal(getKey = js.Any.fromFunction1(getKey))
       __obj.asInstanceOf[SharedConfig[T]]
     }
     
-    @scala.inline
-    implicit class SharedConfigMutableBuilder[Self <: SharedConfig[?], T] (val x: Self & SharedConfig[T]) extends AnyVal {
+    extension [Self <: SharedConfig[?], T](x: Self & SharedConfig[T]) {
       
-      @scala.inline
-      def setGetKey(value: T => Key): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+      inline def setGetKey(value: T => Key): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     }
   }
 }

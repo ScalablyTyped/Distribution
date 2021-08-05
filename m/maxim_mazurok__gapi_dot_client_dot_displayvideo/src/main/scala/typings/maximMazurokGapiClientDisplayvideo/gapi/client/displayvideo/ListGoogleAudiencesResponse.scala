@@ -14,28 +14,21 @@ trait ListGoogleAudiencesResponse extends StObject {
 }
 object ListGoogleAudiencesResponse {
   
-  @scala.inline
-  def apply(): ListGoogleAudiencesResponse = {
+  inline def apply(): ListGoogleAudiencesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGoogleAudiencesResponse]
   }
   
-  @scala.inline
-  implicit class ListGoogleAudiencesResponseMutableBuilder[Self <: ListGoogleAudiencesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGoogleAudiencesResponse](x: Self) {
     
-    @scala.inline
-    def setGoogleAudiences(value: js.Array[GoogleAudience]): Self = StObject.set(x, "googleAudiences", value.asInstanceOf[js.Any])
+    inline def setGoogleAudiences(value: js.Array[GoogleAudience]): Self = StObject.set(x, "googleAudiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAudiencesUndefined: Self = StObject.set(x, "googleAudiences", js.undefined)
+    inline def setGoogleAudiencesUndefined: Self = StObject.set(x, "googleAudiences", js.undefined)
     
-    @scala.inline
-    def setGoogleAudiencesVarargs(value: GoogleAudience*): Self = StObject.set(x, "googleAudiences", js.Array(value :_*))
+    inline def setGoogleAudiencesVarargs(value: GoogleAudience*): Self = StObject.set(x, "googleAudiences", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

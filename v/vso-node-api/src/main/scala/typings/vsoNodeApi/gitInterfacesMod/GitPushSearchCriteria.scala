@@ -24,8 +24,7 @@ trait GitPushSearchCriteria extends StObject {
 }
 object GitPushSearchCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromDate: Date,
     includeLinks: Boolean,
     includeRefUpdates: Boolean,
@@ -37,25 +36,18 @@ object GitPushSearchCriteria {
     __obj.asInstanceOf[GitPushSearchCriteria]
   }
   
-  @scala.inline
-  implicit class GitPushSearchCriteriaMutableBuilder[Self <: GitPushSearchCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: GitPushSearchCriteria](x: Self) {
     
-    @scala.inline
-    def setFromDate(value: Date): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+    inline def setFromDate(value: Date): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRefUpdates(value: Boolean): Self = StObject.set(x, "includeRefUpdates", value.asInstanceOf[js.Any])
+    inline def setIncludeRefUpdates(value: Boolean): Self = StObject.set(x, "includeRefUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPusherId(value: String): Self = StObject.set(x, "pusherId", value.asInstanceOf[js.Any])
+    inline def setPusherId(value: String): Self = StObject.set(x, "pusherId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefName(value: String): Self = StObject.set(x, "refName", value.asInstanceOf[js.Any])
+    inline def setRefName(value: String): Self = StObject.set(x, "refName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDate(value: Date): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+    inline def setToDate(value: Date): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
   }
 }

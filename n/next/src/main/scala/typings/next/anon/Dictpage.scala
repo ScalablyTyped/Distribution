@@ -14,20 +14,16 @@ trait Dictpage
 }
 object Dictpage {
   
-  @scala.inline
-  def apply(Slash_app: js.Array[String]): Dictpage = {
+  inline def apply(Slash_app: js.Array[String]): Dictpage = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("/_app")(Slash_app.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictpage]
   }
   
-  @scala.inline
-  implicit class DictpageMutableBuilder[Self <: Dictpage] (val x: Self) extends AnyVal {
+  extension [Self <: Dictpage](x: Self) {
     
-    @scala.inline
-    def setSlash_app(value: js.Array[String]): Self = StObject.set(x, "/_app", value.asInstanceOf[js.Any])
+    inline def setSlash_app(value: js.Array[String]): Self = StObject.set(x, "/_app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlash_appVarargs(value: String*): Self = StObject.set(x, "/_app", js.Array(value :_*))
+    inline def setSlash_appVarargs(value: String*): Self = StObject.set(x, "/_app", js.Array(value :_*))
   }
 }

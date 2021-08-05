@@ -29,34 +29,25 @@ trait GlobalPolicy extends StObject {
 }
 object GlobalPolicy {
   
-  @scala.inline
-  def apply(): GlobalPolicy = {
+  inline def apply(): GlobalPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalPolicy]
   }
   
-  @scala.inline
-  implicit class GlobalPolicyMutableBuilder[Self <: GlobalPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalPolicy](x: Self) {
     
-    @scala.inline
-    def setAllowOnlyPolicyNetworksToAutoconnect(value: Boolean): Self = StObject.set(x, "AllowOnlyPolicyNetworksToAutoconnect", value.asInstanceOf[js.Any])
+    inline def setAllowOnlyPolicyNetworksToAutoconnect(value: Boolean): Self = StObject.set(x, "AllowOnlyPolicyNetworksToAutoconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowOnlyPolicyNetworksToAutoconnectUndefined: Self = StObject.set(x, "AllowOnlyPolicyNetworksToAutoconnect", js.undefined)
+    inline def setAllowOnlyPolicyNetworksToAutoconnectUndefined: Self = StObject.set(x, "AllowOnlyPolicyNetworksToAutoconnect", js.undefined)
     
-    @scala.inline
-    def setAllowOnlyPolicyNetworksToConnect(value: Boolean): Self = StObject.set(x, "AllowOnlyPolicyNetworksToConnect", value.asInstanceOf[js.Any])
+    inline def setAllowOnlyPolicyNetworksToConnect(value: Boolean): Self = StObject.set(x, "AllowOnlyPolicyNetworksToConnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowOnlyPolicyNetworksToConnectUndefined: Self = StObject.set(x, "AllowOnlyPolicyNetworksToConnect", js.undefined)
+    inline def setAllowOnlyPolicyNetworksToConnectUndefined: Self = StObject.set(x, "AllowOnlyPolicyNetworksToConnect", js.undefined)
     
-    @scala.inline
-    def setBlacklistedHexSSIDs(value: js.Array[String]): Self = StObject.set(x, "BlacklistedHexSSIDs", value.asInstanceOf[js.Any])
+    inline def setBlacklistedHexSSIDs(value: js.Array[String]): Self = StObject.set(x, "BlacklistedHexSSIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlacklistedHexSSIDsUndefined: Self = StObject.set(x, "BlacklistedHexSSIDs", js.undefined)
+    inline def setBlacklistedHexSSIDsUndefined: Self = StObject.set(x, "BlacklistedHexSSIDs", js.undefined)
     
-    @scala.inline
-    def setBlacklistedHexSSIDsVarargs(value: String*): Self = StObject.set(x, "BlacklistedHexSSIDs", js.Array(value :_*))
+    inline def setBlacklistedHexSSIDsVarargs(value: String*): Self = StObject.set(x, "BlacklistedHexSSIDs", js.Array(value :_*))
   }
 }

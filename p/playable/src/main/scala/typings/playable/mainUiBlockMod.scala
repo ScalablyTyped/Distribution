@@ -56,15 +56,13 @@ object mainUiBlockMod {
     @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -72,55 +70,55 @@ object mainUiBlockMod {
     extends StObject
        with IMainUIBlock {
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _bindViewCallbacks: js.Any = js.native
+    /* private */ var _bindViewCallbacks: js.Any = js.native
     
-    var _bottomBlock: js.Any = js.native
+    /* private */ var _bottomBlock: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _hideContent: js.Any = js.native
+    /* private */ var _hideContent: js.Any = js.native
     
-    var _hideTimeout: js.Any = js.native
+    /* private */ var _hideTimeout: js.Any = js.native
     
-    var _initUI: js.Any = js.native
+    /* private */ var _initUI: js.Any = js.native
     
     /* private */ def _isBlockFocused: js.Any = js.native
     
-    var _isContentShowingEnabled: js.Any = js.native
+    /* private */ var _isContentShowingEnabled: js.Any = js.native
     
-    var _isContentShown: js.Any = js.native
+    /* private */ var _isContentShown: js.Any = js.native
     
-    var _isDragging: js.Any = js.native
+    /* private */ var _isDragging: js.Any = js.native
     
-    var _onControlDragEnd: js.Any = js.native
+    /* private */ var _onControlDragEnd: js.Any = js.native
     
-    var _onControlDragStart: js.Any = js.native
+    /* private */ var _onControlDragStart: js.Any = js.native
     
-    var _screen: js.Any = js.native
+    /* private */ var _screen: js.Any = js.native
     
-    var _shouldAlwaysShow: js.Any = js.native
+    /* private */ var _shouldAlwaysShow: js.Any = js.native
     
-    var _shouldShowContent: js.Any = js.native
+    /* private */ var _shouldShowContent: js.Any = js.native
     
-    var _showContent: js.Any = js.native
+    /* private */ var _showContent: js.Any = js.native
     
-    var _startHideBlockTimeout: js.Any = js.native
+    /* private */ var _startHideBlockTimeout: js.Any = js.native
     
-    var _stopHideBlockTimeout: js.Any = js.native
+    /* private */ var _stopHideBlockTimeout: js.Any = js.native
     
-    var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: js.Any = js.native
     
-    var _topBlock: js.Any = js.native
+    /* private */ var _topBlock: js.Any = js.native
     
-    var _tryHideContent: js.Any = js.native
+    /* private */ var _tryHideContent: js.Any = js.native
     
-    var _tryShowContent: js.Any = js.native
+    /* private */ var _tryShowContent: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
-    var _updatePlayingState: js.Any = js.native
+    /* private */ var _updatePlayingState: js.Any = js.native
     
     var isHidden: Boolean = js.native
     

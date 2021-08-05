@@ -58,8 +58,7 @@ trait Queue extends StObject {
 }
 object Queue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Process: () => Unit,
     Push: js.Array[js.Any] => CallbackObject,
     Resume: () => Unit,
@@ -75,37 +74,26 @@ object Queue {
     __obj.asInstanceOf[Queue]
   }
   
-  @scala.inline
-  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
+  extension [Self <: Queue](x: Self) {
     
-    @scala.inline
-    def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
+    inline def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcess(value: () => Unit): Self = StObject.set(x, "Process", js.Any.fromFunction0(value))
+    inline def setProcess(value: () => Unit): Self = StObject.set(x, "Process", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: js.Array[js.Any] => CallbackObject): Self = StObject.set(x, "Push", js.Any.fromFunction1(value))
+    inline def setPush(value: js.Array[js.Any] => CallbackObject): Self = StObject.set(x, "Push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueue(value: js.Array[js.Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: js.Array[js.Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueVarargs(value: js.Any*): Self = StObject.set(x, "queue", js.Array(value :_*))
+    inline def setQueueVarargs(value: js.Any*): Self = StObject.set(x, "queue", js.Array(value :_*))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "Resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "Resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRunning(value: Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspend(value: () => Unit): Self = StObject.set(x, "Suspend", js.Any.fromFunction0(value))
+    inline def setSuspend(value: () => Unit): Self = StObject.set(x, "Suspend", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWait_(value: js.Function => js.Function): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
+    inline def setWait_(value: js.Function => js.Function): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
   }
 }

@@ -14,25 +14,19 @@ trait BottomRightCorner extends StObject {
 }
 object BottomRightCorner {
   
-  @scala.inline
-  def apply(bottomRightCorner: Double, size: Double): BottomRightCorner = {
+  inline def apply(bottomRightCorner: Double, size: Double): BottomRightCorner = {
     val __obj = js.Dynamic.literal(bottomRightCorner = bottomRightCorner.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomRightCorner]
   }
   
-  @scala.inline
-  implicit class BottomRightCornerMutableBuilder[Self <: BottomRightCorner] (val x: Self) extends AnyVal {
+  extension [Self <: BottomRightCorner](x: Self) {
     
-    @scala.inline
-    def setBottomRightCorner(value: Double): Self = StObject.set(x, "bottomRightCorner", value.asInstanceOf[js.Any])
+    inline def setBottomRightCorner(value: Double): Self = StObject.set(x, "bottomRightCorner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSides(value: Left): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
+    inline def setSides(value: Left): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
+    inline def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ErrorReason extends StObject {
 }
 object ErrorReason {
   
-  @scala.inline
-  def apply(): ErrorReason = {
+  inline def apply(): ErrorReason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorReason]
   }
   
-  @scala.inline
-  implicit class ErrorReasonMutableBuilder[Self <: ErrorReason] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorReason](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
   }
 }

@@ -8,16 +8,13 @@ object colorNumbers {
   
   @js.native
   sealed trait `1` extends StObject
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `3` extends StObject
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `4` extends StObject
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
 }

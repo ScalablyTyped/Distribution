@@ -24,6 +24,6 @@ object inMemoryStorageMod {
     /* CompleteClass */
     override def setItem(key: String, data: String): Unit | js.Promise[Unit] = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
   }
 }

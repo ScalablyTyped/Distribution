@@ -13,16 +13,13 @@ trait DeleteWorkspaceImageRequest extends StObject {
 }
 object DeleteWorkspaceImageRequest {
   
-  @scala.inline
-  def apply(ImageId: WorkspaceImageId): DeleteWorkspaceImageRequest = {
+  inline def apply(ImageId: WorkspaceImageId): DeleteWorkspaceImageRequest = {
     val __obj = js.Dynamic.literal(ImageId = ImageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWorkspaceImageRequest]
   }
   
-  @scala.inline
-  implicit class DeleteWorkspaceImageRequestMutableBuilder[Self <: DeleteWorkspaceImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWorkspaceImageRequest](x: Self) {
     
-    @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
   }
 }

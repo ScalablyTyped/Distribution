@@ -13,19 +13,15 @@ trait LanguageRangeWithQualityHeaderValue extends StObject {
 }
 object LanguageRangeWithQualityHeaderValue {
   
-  @scala.inline
-  def apply(languageRangeWithQualityHeaderValue: HttpLanguageRangeWithQualityHeaderValue, returnValue: Boolean): LanguageRangeWithQualityHeaderValue = {
+  inline def apply(languageRangeWithQualityHeaderValue: HttpLanguageRangeWithQualityHeaderValue, returnValue: Boolean): LanguageRangeWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(languageRangeWithQualityHeaderValue = languageRangeWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageRangeWithQualityHeaderValue]
   }
   
-  @scala.inline
-  implicit class LanguageRangeWithQualityHeaderValueMutableBuilder[Self <: LanguageRangeWithQualityHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageRangeWithQualityHeaderValue](x: Self) {
     
-    @scala.inline
-    def setLanguageRangeWithQualityHeaderValue(value: HttpLanguageRangeWithQualityHeaderValue): Self = StObject.set(x, "languageRangeWithQualityHeaderValue", value.asInstanceOf[js.Any])
+    inline def setLanguageRangeWithQualityHeaderValue(value: HttpLanguageRangeWithQualityHeaderValue): Self = StObject.set(x, "languageRangeWithQualityHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

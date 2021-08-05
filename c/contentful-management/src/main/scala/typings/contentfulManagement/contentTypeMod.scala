@@ -23,11 +23,9 @@ object contentTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapContentType(http: AxiosInstance, data: ContentTypeProps): ContentType = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapContentType")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ContentType]
+  inline def wrapContentType(http: AxiosInstance, data: ContentTypeProps): ContentType = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapContentType")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ContentType]
   
-  @scala.inline
-  def wrapContentTypeCollection(http: AxiosInstance, data: CollectionProp[ContentTypeProps]): Collection[ContentType, ContentTypeProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapContentTypeCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[ContentType, ContentTypeProps]]
+  inline def wrapContentTypeCollection(http: AxiosInstance, data: CollectionProp[ContentTypeProps]): Collection[ContentType, ContentTypeProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapContentTypeCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[ContentType, ContentTypeProps]]
   
   trait ContentType
     extends StObject
@@ -36,8 +34,7 @@ object contentTypeMod {
        with ContentTypeApi
   object ContentType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       description: String,
       displayField: String,
@@ -228,8 +225,7 @@ object contentTypeMod {
   }
   object ContentTypeApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       getEditorInterface: () => js.Promise[EditorInterface],
       getSnapshot: String => js.Promise[SnapshotProps[ContentTypeProps]],
@@ -246,41 +242,29 @@ object contentTypeMod {
       __obj.asInstanceOf[ContentTypeApi]
     }
     
-    @scala.inline
-    implicit class ContentTypeApiMutableBuilder[Self <: ContentTypeApi] (val x: Self) extends AnyVal {
+    extension [Self <: ContentTypeApi](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEditorInterface(value: () => js.Promise[EditorInterface]): Self = StObject.set(x, "getEditorInterface", js.Any.fromFunction0(value))
+      inline def setGetEditorInterface(value: () => js.Promise[EditorInterface]): Self = StObject.set(x, "getEditorInterface", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSnapshot(value: String => js.Promise[SnapshotProps[ContentTypeProps]]): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
+      inline def setGetSnapshot(value: String => js.Promise[SnapshotProps[ContentTypeProps]]): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSnapshots(value: () => js.Promise[Collection[Snapshot[ContentTypeProps], SnapshotProps[ContentTypeProps]]]): Self = StObject.set(x, "getSnapshots", js.Any.fromFunction0(value))
+      inline def setGetSnapshots(value: () => js.Promise[Collection[Snapshot[ContentTypeProps], SnapshotProps[ContentTypeProps]]]): Self = StObject.set(x, "getSnapshots", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDraft(value: () => Boolean): Self = StObject.set(x, "isDraft", js.Any.fromFunction0(value))
+      inline def setIsDraft(value: () => Boolean): Self = StObject.set(x, "isDraft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPublished(value: () => Boolean): Self = StObject.set(x, "isPublished", js.Any.fromFunction0(value))
+      inline def setIsPublished(value: () => Boolean): Self = StObject.set(x, "isPublished", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUpdated(value: () => Boolean): Self = StObject.set(x, "isUpdated", js.Any.fromFunction0(value))
+      inline def setIsUpdated(value: () => Boolean): Self = StObject.set(x, "isUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOmitAndDeleteField(value: String => js.Promise[ContentType]): Self = StObject.set(x, "omitAndDeleteField", js.Any.fromFunction1(value))
+      inline def setOmitAndDeleteField(value: String => js.Promise[ContentType]): Self = StObject.set(x, "omitAndDeleteField", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPublish(value: () => js.Promise[ContentType]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
+      inline def setPublish(value: () => js.Promise[ContentType]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnpublish(value: () => js.Promise[ContentType]): Self = StObject.set(x, "unpublish", js.Any.fromFunction0(value))
+      inline def setUnpublish(value: () => js.Promise[ContentType]): Self = StObject.set(x, "unpublish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[ContentType]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[ContentType]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -300,8 +284,7 @@ object contentTypeMod {
   }
   object ContentTypeProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       displayField: String,
       fields: js.Array[ContentFields],
@@ -312,26 +295,19 @@ object contentTypeMod {
       __obj.asInstanceOf[ContentTypeProps]
     }
     
-    @scala.inline
-    implicit class ContentTypePropsMutableBuilder[Self <: ContentTypeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContentTypeProps](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+      inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: js.Array[ContentFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[ContentFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: ContentFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: ContentFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
   

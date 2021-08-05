@@ -46,8 +46,7 @@ trait TimedTextStyle extends StObject {
 }
 object TimedTextStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background: Color,
     flowDirection: TimedTextFlowDirection,
     fontFamily: String,
@@ -65,43 +64,30 @@ object TimedTextStyle {
     __obj.asInstanceOf[TimedTextStyle]
   }
   
-  @scala.inline
-  implicit class TimedTextStyleMutableBuilder[Self <: TimedTextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TimedTextStyle](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowDirection(value: TimedTextFlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
+    inline def setFlowDirection(value: TimedTextFlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: TimedTextDouble): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: TimedTextDouble): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeight(value: TimedTextWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: TimedTextWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeground(value: Color): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+    inline def setForeground(value: Color): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBackgroundAlwaysShown(value: Boolean): Self = StObject.set(x, "isBackgroundAlwaysShown", value.asInstanceOf[js.Any])
+    inline def setIsBackgroundAlwaysShown(value: Boolean): Self = StObject.set(x, "isBackgroundAlwaysShown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineAlignment(value: TimedTextLineAlignment): Self = StObject.set(x, "lineAlignment", value.asInstanceOf[js.Any])
+    inline def setLineAlignment(value: TimedTextLineAlignment): Self = StObject.set(x, "lineAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineColor(value: Color): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    inline def setOutlineColor(value: Color): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineRadius(value: TimedTextDouble): Self = StObject.set(x, "outlineRadius", value.asInstanceOf[js.Any])
+    inline def setOutlineRadius(value: TimedTextDouble): Self = StObject.set(x, "outlineRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineThickness(value: TimedTextDouble): Self = StObject.set(x, "outlineThickness", value.asInstanceOf[js.Any])
+    inline def setOutlineThickness(value: TimedTextDouble): Self = StObject.set(x, "outlineThickness", value.asInstanceOf[js.Any])
   }
 }

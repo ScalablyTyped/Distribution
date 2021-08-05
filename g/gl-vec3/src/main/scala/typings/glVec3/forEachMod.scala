@@ -10,8 +10,7 @@ object forEachMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     a: js.Array[Double],
     stride: Double,
     offset: Double,

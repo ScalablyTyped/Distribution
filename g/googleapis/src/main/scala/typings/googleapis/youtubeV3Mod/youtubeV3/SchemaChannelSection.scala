@@ -48,55 +48,39 @@ trait SchemaChannelSection extends StObject {
 }
 object SchemaChannelSection {
   
-  @scala.inline
-  def apply(): SchemaChannelSection = {
+  inline def apply(): SchemaChannelSection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelSection]
   }
   
-  @scala.inline
-  implicit class SchemaChannelSectionMutableBuilder[Self <: SchemaChannelSection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelSection](x: Self) {
     
-    @scala.inline
-    def setContentDetails(value: SchemaChannelSectionContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: SchemaChannelSectionContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
+    inline def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLocalizations(value: StringDictionary[SchemaChannelSectionLocalization]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
+    inline def setLocalizations(value: StringDictionary[SchemaChannelSectionLocalization]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
+    inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: SchemaChannelSectionSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: SchemaChannelSectionSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setTargeting(value: SchemaChannelSectionTargeting): Self = StObject.set(x, "targeting", value.asInstanceOf[js.Any])
+    inline def setTargeting(value: SchemaChannelSectionTargeting): Self = StObject.set(x, "targeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingUndefined: Self = StObject.set(x, "targeting", js.undefined)
+    inline def setTargetingUndefined: Self = StObject.set(x, "targeting", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait JQueryCLEditorButtonDefinitionEventData extends StObject {
 }
 object JQueryCLEditorButtonDefinitionEventData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     button: HTMLElement,
     buttonName: String,
     command: String,
@@ -40,31 +39,22 @@ object JQueryCLEditorButtonDefinitionEventData {
     __obj.asInstanceOf[JQueryCLEditorButtonDefinitionEventData]
   }
   
-  @scala.inline
-  implicit class JQueryCLEditorButtonDefinitionEventDataMutableBuilder[Self <: JQueryCLEditorButtonDefinitionEventData] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryCLEditorButtonDefinitionEventData](x: Self) {
     
-    @scala.inline
-    def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
+    inline def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor(value: CLEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: CLEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopup(value: HTMLElement): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: HTMLElement): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupName(value: String): Self = StObject.set(x, "popupName", value.asInstanceOf[js.Any])
+    inline def setPopupName(value: String): Self = StObject.set(x, "popupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
+    inline def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

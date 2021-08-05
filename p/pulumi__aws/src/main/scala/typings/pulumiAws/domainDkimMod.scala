@@ -55,21 +55,16 @@ object domainDkimMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainDkimState): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainDkimState, opts: CustomResourceOptions): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
+    inline def get(name: String, id: Input[ID]): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
+    inline def get(name: String, id: Input[ID], state: DomainDkimState): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
+    inline def get(name: String, id: Input[ID], state: DomainDkimState, opts: CustomResourceOptions): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
     
     /**
       * Returns true if the given object is an instance of DomainDkim.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ Boolean]
   }
   
   trait DomainDkimArgs extends StObject {
@@ -81,17 +76,14 @@ object domainDkimMod {
   }
   object DomainDkimArgs {
     
-    @scala.inline
-    def apply(domain: Input[String]): DomainDkimArgs = {
+    inline def apply(domain: Input[String]): DomainDkimArgs = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainDkimArgs]
     }
     
-    @scala.inline
-    implicit class DomainDkimArgsMutableBuilder[Self <: DomainDkimArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DomainDkimArgs](x: Self) {
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,29 +106,22 @@ object domainDkimMod {
   }
   object DomainDkimState {
     
-    @scala.inline
-    def apply(): DomainDkimState = {
+    inline def apply(): DomainDkimState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainDkimState]
     }
     
-    @scala.inline
-    implicit class DomainDkimStateMutableBuilder[Self <: DomainDkimState] (val x: Self) extends AnyVal {
+    extension [Self <: DomainDkimState](x: Self) {
       
-      @scala.inline
-      def setDkimTokens(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dkimTokens", value.asInstanceOf[js.Any])
+      inline def setDkimTokens(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dkimTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDkimTokensUndefined: Self = StObject.set(x, "dkimTokens", js.undefined)
+      inline def setDkimTokensUndefined: Self = StObject.set(x, "dkimTokens", js.undefined)
       
-      @scala.inline
-      def setDkimTokensVarargs(value: Input[String]*): Self = StObject.set(x, "dkimTokens", js.Array(value :_*))
+      inline def setDkimTokensVarargs(value: Input[String]*): Self = StObject.set(x, "dkimTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     }
   }
 }

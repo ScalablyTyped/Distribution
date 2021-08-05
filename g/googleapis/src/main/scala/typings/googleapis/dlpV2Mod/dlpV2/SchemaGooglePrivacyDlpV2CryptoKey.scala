@@ -20,31 +20,23 @@ trait SchemaGooglePrivacyDlpV2CryptoKey extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CryptoKey {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CryptoKey = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CryptoKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CryptoKey]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CryptoKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CryptoKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CryptoKey](x: Self) {
     
-    @scala.inline
-    def setKmsWrapped(value: SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey): Self = StObject.set(x, "kmsWrapped", value.asInstanceOf[js.Any])
+    inline def setKmsWrapped(value: SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey): Self = StObject.set(x, "kmsWrapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsWrappedUndefined: Self = StObject.set(x, "kmsWrapped", js.undefined)
+    inline def setKmsWrappedUndefined: Self = StObject.set(x, "kmsWrapped", js.undefined)
     
-    @scala.inline
-    def setTransient(value: SchemaGooglePrivacyDlpV2TransientCryptoKey): Self = StObject.set(x, "transient", value.asInstanceOf[js.Any])
+    inline def setTransient(value: SchemaGooglePrivacyDlpV2TransientCryptoKey): Self = StObject.set(x, "transient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransientUndefined: Self = StObject.set(x, "transient", js.undefined)
+    inline def setTransientUndefined: Self = StObject.set(x, "transient", js.undefined)
     
-    @scala.inline
-    def setUnwrapped(value: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey): Self = StObject.set(x, "unwrapped", value.asInstanceOf[js.Any])
+    inline def setUnwrapped(value: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey): Self = StObject.set(x, "unwrapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnwrappedUndefined: Self = StObject.set(x, "unwrapped", js.undefined)
+    inline def setUnwrappedUndefined: Self = StObject.set(x, "unwrapped", js.undefined)
   }
 }

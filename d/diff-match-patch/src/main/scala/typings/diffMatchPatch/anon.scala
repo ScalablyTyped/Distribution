@@ -16,26 +16,20 @@ object anon {
   }
   object Chars1 {
     
-    @scala.inline
-    def apply(chars1: String, chars2: String, lineArray: js.Array[String]): Chars1 = {
+    inline def apply(chars1: String, chars2: String, lineArray: js.Array[String]): Chars1 = {
       val __obj = js.Dynamic.literal(chars1 = chars1.asInstanceOf[js.Any], chars2 = chars2.asInstanceOf[js.Any], lineArray = lineArray.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chars1]
     }
     
-    @scala.inline
-    implicit class Chars1MutableBuilder[Self <: Chars1] (val x: Self) extends AnyVal {
+    extension [Self <: Chars1](x: Self) {
       
-      @scala.inline
-      def setChars1(value: String): Self = StObject.set(x, "chars1", value.asInstanceOf[js.Any])
+      inline def setChars1(value: String): Self = StObject.set(x, "chars1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChars2(value: String): Self = StObject.set(x, "chars2", value.asInstanceOf[js.Any])
+      inline def setChars2(value: String): Self = StObject.set(x, "chars2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineArray(value: js.Array[String]): Self = StObject.set(x, "lineArray", value.asInstanceOf[js.Any])
+      inline def setLineArray(value: js.Array[String]): Self = StObject.set(x, "lineArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineArrayVarargs(value: String*): Self = StObject.set(x, "lineArray", js.Array(value :_*))
+      inline def setLineArrayVarargs(value: String*): Self = StObject.set(x, "lineArray", js.Array(value :_*))
     }
   }
 }

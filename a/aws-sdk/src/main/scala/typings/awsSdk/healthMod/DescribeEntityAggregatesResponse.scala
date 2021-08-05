@@ -13,22 +13,17 @@ trait DescribeEntityAggregatesResponse extends StObject {
 }
 object DescribeEntityAggregatesResponse {
   
-  @scala.inline
-  def apply(): DescribeEntityAggregatesResponse = {
+  inline def apply(): DescribeEntityAggregatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEntityAggregatesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEntityAggregatesResponseMutableBuilder[Self <: DescribeEntityAggregatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEntityAggregatesResponse](x: Self) {
     
-    @scala.inline
-    def setEntityAggregates(value: EntityAggregateList): Self = StObject.set(x, "entityAggregates", value.asInstanceOf[js.Any])
+    inline def setEntityAggregates(value: EntityAggregateList): Self = StObject.set(x, "entityAggregates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityAggregatesUndefined: Self = StObject.set(x, "entityAggregates", js.undefined)
+    inline def setEntityAggregatesUndefined: Self = StObject.set(x, "entityAggregates", js.undefined)
     
-    @scala.inline
-    def setEntityAggregatesVarargs(value: EntityAggregate*): Self = StObject.set(x, "entityAggregates", js.Array(value :_*))
+    inline def setEntityAggregatesVarargs(value: EntityAggregate*): Self = StObject.set(x, "entityAggregates", js.Array(value :_*))
   }
 }

@@ -14,33 +14,33 @@ object messageBarBaseMod {
     extends Component[IMessageBarProps, IMessageBarState, js.Any] {
     def this(props: IMessageBarProps) = this()
     
-    var ICON_MAP: js.Any = js.native
+    /* private */ var ICON_MAP: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _getActionsDiv: js.Any = js.native
+    /* private */ var _getActionsDiv: js.Any = js.native
     
-    var _getAnnouncementPriority: js.Any = js.native
+    /* private */ var _getAnnouncementPriority: js.Any = js.native
     
-    var _getClassNames: js.Any = js.native
+    /* private */ var _getClassNames: js.Any = js.native
     
-    var _getDismissDiv: js.Any = js.native
+    /* private */ var _getDismissDiv: js.Any = js.native
     
-    var _getDismissSingleLine: js.Any = js.native
+    /* private */ var _getDismissSingleLine: js.Any = js.native
     
-    var _getExpandSingleLine: js.Any = js.native
+    /* private */ var _getExpandSingleLine: js.Any = js.native
     
-    var _getIconSpan: js.Any = js.native
+    /* private */ var _getIconSpan: js.Any = js.native
     
-    var _getRegionProps: js.Any = js.native
+    /* private */ var _getRegionProps: js.Any = js.native
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _renderInnerText: js.Any = js.native
+    /* private */ var _renderInnerText: js.Any = js.native
     
-    var _renderMultiLine: js.Any = js.native
+    /* private */ var _renderMultiLine: js.Any = js.native
     
-    var _renderSingleLine: js.Any = js.native
+    /* private */ var _renderSingleLine: js.Any = js.native
   }
   /* static members */
   object MessageBarBase {
@@ -52,8 +52,7 @@ object messageBarBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/MessageBar/MessageBar.base", "MessageBarBase.defaultProps")
     @js.native
     def defaultProps: IMessageBarProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IMessageBarState extends StObject {
@@ -66,32 +65,24 @@ object messageBarBaseMod {
   }
   object IMessageBarState {
     
-    @scala.inline
-    def apply(): IMessageBarState = {
+    inline def apply(): IMessageBarState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMessageBarState]
     }
     
-    @scala.inline
-    implicit class IMessageBarStateMutableBuilder[Self <: IMessageBarState] (val x: Self) extends AnyVal {
+    extension [Self <: IMessageBarState](x: Self) {
       
-      @scala.inline
-      def setExpandSingleLine(value: Boolean): Self = StObject.set(x, "expandSingleLine", value.asInstanceOf[js.Any])
+      inline def setExpandSingleLine(value: Boolean): Self = StObject.set(x, "expandSingleLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandSingleLineUndefined: Self = StObject.set(x, "expandSingleLine", js.undefined)
+      inline def setExpandSingleLineUndefined: Self = StObject.set(x, "expandSingleLine", js.undefined)
       
-      @scala.inline
-      def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+      inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+      inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
       
-      @scala.inline
-      def setShowContent(value: Boolean): Self = StObject.set(x, "showContent", value.asInstanceOf[js.Any])
+      inline def setShowContent(value: Boolean): Self = StObject.set(x, "showContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowContentUndefined: Self = StObject.set(x, "showContent", js.undefined)
+      inline def setShowContentUndefined: Self = StObject.set(x, "showContent", js.undefined)
     }
   }
 }

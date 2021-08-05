@@ -11,21 +11,17 @@ trait UseSortByHooks[D /* <: js.Object */] extends StObject {
 }
 object UseSortByHooks {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](
+  inline def apply[D /* <: js.Object */](
     getSortByToggleProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   ): UseSortByHooks[D] = {
     val __obj = js.Dynamic.literal(getSortByToggleProps = getSortByToggleProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseSortByHooks[D]]
   }
   
-  @scala.inline
-  implicit class UseSortByHooksMutableBuilder[Self <: UseSortByHooks[?], D /* <: js.Object */] (val x: Self & UseSortByHooks[D]) extends AnyVal {
+  extension [Self <: UseSortByHooks[?], D /* <: js.Object */](x: Self & UseSortByHooks[D]) {
     
-    @scala.inline
-    def setGetSortByToggleProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getSortByToggleProps", value.asInstanceOf[js.Any])
+    inline def setGetSortByToggleProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getSortByToggleProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSortByTogglePropsVarargs(value: (PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps])*): Self = StObject.set(x, "getSortByToggleProps", js.Array(value :_*))
+    inline def setGetSortByTogglePropsVarargs(value: (PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps])*): Self = StObject.set(x, "getSortByToggleProps", js.Array(value :_*))
   }
 }

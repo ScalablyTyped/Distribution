@@ -15,25 +15,19 @@ trait TransactionInput extends StObject {
 }
 object TransactionInput {
   
-  @scala.inline
-  def apply(hash: String | Buffer, index: Double): TransactionInput = {
+  inline def apply(hash: String | Buffer, index: Double): TransactionInput = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionInput]
   }
   
-  @scala.inline
-  implicit class TransactionInputMutableBuilder[Self <: TransactionInput] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionInput](x: Self) {
     
-    @scala.inline
-    def setHash(value: String | Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String | Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
+    inline def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
   }
 }

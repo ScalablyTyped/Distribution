@@ -10,19 +10,15 @@ trait Persistent extends StObject {
 }
 object Persistent {
   
-  @scala.inline
-  def apply(): Persistent = {
+  inline def apply(): Persistent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Persistent]
   }
   
-  @scala.inline
-  implicit class PersistentMutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
+  extension [Self <: Persistent](x: Self) {
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
   }
 }

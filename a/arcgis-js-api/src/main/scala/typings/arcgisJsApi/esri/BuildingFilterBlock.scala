@@ -33,8 +33,7 @@ trait BuildingFilterBlock
 }
 object BuildingFilterBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     filterExpression: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -44,22 +43,16 @@ object BuildingFilterBlock {
     __obj.asInstanceOf[BuildingFilterBlock]
   }
   
-  @scala.inline
-  implicit class BuildingFilterBlockMutableBuilder[Self <: BuildingFilterBlock] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingFilterBlock](x: Self) {
     
-    @scala.inline
-    def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
+    inline def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterMode(value: BuildingFilterBlockFilterMode): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+    inline def setFilterMode(value: BuildingFilterBlockFilterMode): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
+    inline def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

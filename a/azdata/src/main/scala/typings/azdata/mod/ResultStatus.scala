@@ -12,19 +12,15 @@ trait ResultStatus extends StObject {
 }
 object ResultStatus {
   
-  @scala.inline
-  def apply(errorMessage: String, success: Boolean): ResultStatus = {
+  inline def apply(errorMessage: String, success: Boolean): ResultStatus = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultStatus]
   }
   
-  @scala.inline
-  implicit class ResultStatusMutableBuilder[Self <: ResultStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ResultStatus](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -22,25 +22,19 @@ trait SchemaFindingTypeStats extends StObject {
 }
 object SchemaFindingTypeStats {
   
-  @scala.inline
-  def apply(): SchemaFindingTypeStats = {
+  inline def apply(): SchemaFindingTypeStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFindingTypeStats]
   }
   
-  @scala.inline
-  implicit class SchemaFindingTypeStatsMutableBuilder[Self <: SchemaFindingTypeStats] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFindingTypeStats](x: Self) {
     
-    @scala.inline
-    def setFindingCount(value: Double): Self = StObject.set(x, "findingCount", value.asInstanceOf[js.Any])
+    inline def setFindingCount(value: Double): Self = StObject.set(x, "findingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCountUndefined: Self = StObject.set(x, "findingCount", js.undefined)
+    inline def setFindingCountUndefined: Self = StObject.set(x, "findingCount", js.undefined)
     
-    @scala.inline
-    def setFindingType(value: String): Self = StObject.set(x, "findingType", value.asInstanceOf[js.Any])
+    inline def setFindingType(value: String): Self = StObject.set(x, "findingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingTypeUndefined: Self = StObject.set(x, "findingType", js.undefined)
+    inline def setFindingTypeUndefined: Self = StObject.set(x, "findingType", js.undefined)
   }
 }

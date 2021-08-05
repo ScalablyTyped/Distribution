@@ -15,8 +15,7 @@ trait MediaDevices extends StObject {
 }
 object MediaDevices {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enumerateDevices: () => js.Promise[js.Array[MediaDeviceInfo]],
     getSupportedConstraints: () => MediaTrackSupportedConstraints,
     getUserMedia: MediaStreamConstraints => js.Promise[MediaStream]
@@ -25,16 +24,12 @@ object MediaDevices {
     __obj.asInstanceOf[MediaDevices]
   }
   
-  @scala.inline
-  implicit class MediaDevicesMutableBuilder[Self <: MediaDevices] (val x: Self) extends AnyVal {
+  extension [Self <: MediaDevices](x: Self) {
     
-    @scala.inline
-    def setEnumerateDevices(value: () => js.Promise[js.Array[MediaDeviceInfo]]): Self = StObject.set(x, "enumerateDevices", js.Any.fromFunction0(value))
+    inline def setEnumerateDevices(value: () => js.Promise[js.Array[MediaDeviceInfo]]): Self = StObject.set(x, "enumerateDevices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedConstraints(value: () => MediaTrackSupportedConstraints): Self = StObject.set(x, "getSupportedConstraints", js.Any.fromFunction0(value))
+    inline def setGetSupportedConstraints(value: () => MediaTrackSupportedConstraints): Self = StObject.set(x, "getSupportedConstraints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUserMedia(value: MediaStreamConstraints => js.Promise[MediaStream]): Self = StObject.set(x, "getUserMedia", js.Any.fromFunction1(value))
+    inline def setGetUserMedia(value: MediaStreamConstraints => js.Promise[MediaStream]): Self = StObject.set(x, "getUserMedia", js.Any.fromFunction1(value))
   }
 }

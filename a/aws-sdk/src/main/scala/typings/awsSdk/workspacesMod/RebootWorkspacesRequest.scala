@@ -13,19 +13,15 @@ trait RebootWorkspacesRequest extends StObject {
 }
 object RebootWorkspacesRequest {
   
-  @scala.inline
-  def apply(RebootWorkspaceRequests: RebootWorkspaceRequests): RebootWorkspacesRequest = {
+  inline def apply(RebootWorkspaceRequests: RebootWorkspaceRequests): RebootWorkspacesRequest = {
     val __obj = js.Dynamic.literal(RebootWorkspaceRequests = RebootWorkspaceRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootWorkspacesRequest]
   }
   
-  @scala.inline
-  implicit class RebootWorkspacesRequestMutableBuilder[Self <: RebootWorkspacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RebootWorkspacesRequest](x: Self) {
     
-    @scala.inline
-    def setRebootWorkspaceRequests(value: RebootWorkspaceRequests): Self = StObject.set(x, "RebootWorkspaceRequests", value.asInstanceOf[js.Any])
+    inline def setRebootWorkspaceRequests(value: RebootWorkspaceRequests): Self = StObject.set(x, "RebootWorkspaceRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebootWorkspaceRequestsVarargs(value: RebootRequest*): Self = StObject.set(x, "RebootWorkspaceRequests", js.Array(value :_*))
+    inline def setRebootWorkspaceRequestsVarargs(value: RebootRequest*): Self = StObject.set(x, "RebootWorkspaceRequests", js.Array(value :_*))
   }
 }

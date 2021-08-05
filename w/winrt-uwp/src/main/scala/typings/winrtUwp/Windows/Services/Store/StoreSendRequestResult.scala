@@ -20,22 +20,17 @@ trait StoreSendRequestResult extends StObject {
 }
 object StoreSendRequestResult {
   
-  @scala.inline
-  def apply(extendedError: WinRTError, httpStatusCode: HttpStatusCode, response: String): StoreSendRequestResult = {
+  inline def apply(extendedError: WinRTError, httpStatusCode: HttpStatusCode, response: String): StoreSendRequestResult = {
     val __obj = js.Dynamic.literal(extendedError = extendedError.asInstanceOf[js.Any], httpStatusCode = httpStatusCode.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreSendRequestResult]
   }
   
-  @scala.inline
-  implicit class StoreSendRequestResultMutableBuilder[Self <: StoreSendRequestResult] (val x: Self) extends AnyVal {
+  extension [Self <: StoreSendRequestResult](x: Self) {
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpStatusCode(value: HttpStatusCode): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
+    inline def setHttpStatusCode(value: HttpStatusCode): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

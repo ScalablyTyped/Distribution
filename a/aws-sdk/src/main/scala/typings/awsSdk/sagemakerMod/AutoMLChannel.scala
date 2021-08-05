@@ -23,25 +23,19 @@ trait AutoMLChannel extends StObject {
 }
 object AutoMLChannel {
   
-  @scala.inline
-  def apply(DataSource: AutoMLDataSource, TargetAttributeName: TargetAttributeName): AutoMLChannel = {
+  inline def apply(DataSource: AutoMLDataSource, TargetAttributeName: TargetAttributeName): AutoMLChannel = {
     val __obj = js.Dynamic.literal(DataSource = DataSource.asInstanceOf[js.Any], TargetAttributeName = TargetAttributeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLChannel]
   }
   
-  @scala.inline
-  implicit class AutoMLChannelMutableBuilder[Self <: AutoMLChannel] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLChannel](x: Self) {
     
-    @scala.inline
-    def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
+    inline def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
+    inline def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: AutoMLDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: AutoMLDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAttributeName(value: TargetAttributeName): Self = StObject.set(x, "TargetAttributeName", value.asInstanceOf[js.Any])
+    inline def setTargetAttributeName(value: TargetAttributeName): Self = StObject.set(x, "TargetAttributeName", value.asInstanceOf[js.Any])
   }
 }

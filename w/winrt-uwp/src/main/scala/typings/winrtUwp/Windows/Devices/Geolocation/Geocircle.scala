@@ -24,8 +24,7 @@ trait Geocircle extends StObject {
 }
 object Geocircle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     altitudeReferenceSystem: AltitudeReferenceSystem,
     center: BasicGeoposition,
     geoshapeType: GeoshapeType,
@@ -36,22 +35,16 @@ object Geocircle {
     __obj.asInstanceOf[Geocircle]
   }
   
-  @scala.inline
-  implicit class GeocircleMutableBuilder[Self <: Geocircle] (val x: Self) extends AnyVal {
+  extension [Self <: Geocircle](x: Self) {
     
-    @scala.inline
-    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
+    inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: BasicGeoposition): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: BasicGeoposition): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
+    inline def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
+    inline def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
   }
 }

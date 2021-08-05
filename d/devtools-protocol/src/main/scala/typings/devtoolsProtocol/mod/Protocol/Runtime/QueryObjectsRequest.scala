@@ -18,22 +18,17 @@ trait QueryObjectsRequest extends StObject {
 }
 object QueryObjectsRequest {
   
-  @scala.inline
-  def apply(prototypeObjectId: RemoteObjectId): QueryObjectsRequest = {
+  inline def apply(prototypeObjectId: RemoteObjectId): QueryObjectsRequest = {
     val __obj = js.Dynamic.literal(prototypeObjectId = prototypeObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryObjectsRequest]
   }
   
-  @scala.inline
-  implicit class QueryObjectsRequestMutableBuilder[Self <: QueryObjectsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QueryObjectsRequest](x: Self) {
     
-    @scala.inline
-    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
+    inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
+    inline def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
     
-    @scala.inline
-    def setPrototypeObjectId(value: RemoteObjectId): Self = StObject.set(x, "prototypeObjectId", value.asInstanceOf[js.Any])
+    inline def setPrototypeObjectId(value: RemoteObjectId): Self = StObject.set(x, "prototypeObjectId", value.asInstanceOf[js.Any])
   }
 }

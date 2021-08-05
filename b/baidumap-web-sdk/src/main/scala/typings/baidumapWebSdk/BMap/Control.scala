@@ -32,8 +32,7 @@ trait Control extends StObject {
 }
 object Control {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultAnchor: ControlAnchor,
     defaultOffset: Size,
     getAnchor: () => ControlAnchor,
@@ -50,40 +49,28 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  @scala.inline
-  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+  extension [Self <: Control](x: Self) {
     
-    @scala.inline
-    def setDefaultAnchor(value: ControlAnchor): Self = StObject.set(x, "defaultAnchor", value.asInstanceOf[js.Any])
+    inline def setDefaultAnchor(value: ControlAnchor): Self = StObject.set(x, "defaultAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultOffset(value: Size): Self = StObject.set(x, "defaultOffset", value.asInstanceOf[js.Any])
+    inline def setDefaultOffset(value: Size): Self = StObject.set(x, "defaultOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAnchor(value: () => ControlAnchor): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
+    inline def setGetAnchor(value: () => ControlAnchor): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContainer(value: () => js.UndefOr[HTMLElement]): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+    inline def setGetContainer(value: () => js.UndefOr[HTMLElement]): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOffset(value: () => Size): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
+    inline def setGetOffset(value: () => Size): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialize(value: Map => HTMLElement): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: Map => HTMLElement): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAnchor(value: ControlAnchor => Unit): Self = StObject.set(x, "setAnchor", js.Any.fromFunction1(value))
+    inline def setSetAnchor(value: ControlAnchor => Unit): Self = StObject.set(x, "setAnchor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOffset(value: Size => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
+    inline def setSetOffset(value: Size => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

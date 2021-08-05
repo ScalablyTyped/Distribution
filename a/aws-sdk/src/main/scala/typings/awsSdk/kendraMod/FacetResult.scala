@@ -23,34 +23,25 @@ trait FacetResult extends StObject {
 }
 object FacetResult {
   
-  @scala.inline
-  def apply(): FacetResult = {
+  inline def apply(): FacetResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FacetResult]
   }
   
-  @scala.inline
-  implicit class FacetResultMutableBuilder[Self <: FacetResult] (val x: Self) extends AnyVal {
+  extension [Self <: FacetResult](x: Self) {
     
-    @scala.inline
-    def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
+    inline def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentAttributeKeyUndefined: Self = StObject.set(x, "DocumentAttributeKey", js.undefined)
+    inline def setDocumentAttributeKeyUndefined: Self = StObject.set(x, "DocumentAttributeKey", js.undefined)
     
-    @scala.inline
-    def setDocumentAttributeValueCountPairs(value: DocumentAttributeValueCountPairList): Self = StObject.set(x, "DocumentAttributeValueCountPairs", value.asInstanceOf[js.Any])
+    inline def setDocumentAttributeValueCountPairs(value: DocumentAttributeValueCountPairList): Self = StObject.set(x, "DocumentAttributeValueCountPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentAttributeValueCountPairsUndefined: Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.undefined)
+    inline def setDocumentAttributeValueCountPairsUndefined: Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.undefined)
     
-    @scala.inline
-    def setDocumentAttributeValueCountPairsVarargs(value: DocumentAttributeValueCountPair*): Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.Array(value :_*))
+    inline def setDocumentAttributeValueCountPairsVarargs(value: DocumentAttributeValueCountPair*): Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentAttributeValueType(value: DocumentAttributeValueType): Self = StObject.set(x, "DocumentAttributeValueType", value.asInstanceOf[js.Any])
+    inline def setDocumentAttributeValueType(value: DocumentAttributeValueType): Self = StObject.set(x, "DocumentAttributeValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentAttributeValueTypeUndefined: Self = StObject.set(x, "DocumentAttributeValueType", js.undefined)
+    inline def setDocumentAttributeValueTypeUndefined: Self = StObject.set(x, "DocumentAttributeValueType", js.undefined)
   }
 }

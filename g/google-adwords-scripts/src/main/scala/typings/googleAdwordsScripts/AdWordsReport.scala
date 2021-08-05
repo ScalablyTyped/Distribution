@@ -16,8 +16,7 @@ trait AdWordsReport extends StObject {
 }
 object AdWordsReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exportToSheet: Sheet => Unit,
     getColumnHeader: String => AdWordsReportColumnHeader,
     rows: () => AdWordsReportRowIterator
@@ -26,16 +25,12 @@ object AdWordsReport {
     __obj.asInstanceOf[AdWordsReport]
   }
   
-  @scala.inline
-  implicit class AdWordsReportMutableBuilder[Self <: AdWordsReport] (val x: Self) extends AnyVal {
+  extension [Self <: AdWordsReport](x: Self) {
     
-    @scala.inline
-    def setExportToSheet(value: Sheet => Unit): Self = StObject.set(x, "exportToSheet", js.Any.fromFunction1(value))
+    inline def setExportToSheet(value: Sheet => Unit): Self = StObject.set(x, "exportToSheet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetColumnHeader(value: String => AdWordsReportColumnHeader): Self = StObject.set(x, "getColumnHeader", js.Any.fromFunction1(value))
+    inline def setGetColumnHeader(value: String => AdWordsReportColumnHeader): Self = StObject.set(x, "getColumnHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRows(value: () => AdWordsReportRowIterator): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
+    inline def setRows(value: () => AdWordsReportRowIterator): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browser-extname"
-version := "1.0-dt-20200530Z-db4800"
+version := "1.0-dt-20200530Z-09276b"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

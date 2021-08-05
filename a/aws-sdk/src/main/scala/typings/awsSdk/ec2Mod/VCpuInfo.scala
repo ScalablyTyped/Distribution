@@ -33,49 +33,35 @@ trait VCpuInfo extends StObject {
 }
 object VCpuInfo {
   
-  @scala.inline
-  def apply(): VCpuInfo = {
+  inline def apply(): VCpuInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VCpuInfo]
   }
   
-  @scala.inline
-  implicit class VCpuInfoMutableBuilder[Self <: VCpuInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VCpuInfo](x: Self) {
     
-    @scala.inline
-    def setDefaultCores(value: CoreCount): Self = StObject.set(x, "DefaultCores", value.asInstanceOf[js.Any])
+    inline def setDefaultCores(value: CoreCount): Self = StObject.set(x, "DefaultCores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCoresUndefined: Self = StObject.set(x, "DefaultCores", js.undefined)
+    inline def setDefaultCoresUndefined: Self = StObject.set(x, "DefaultCores", js.undefined)
     
-    @scala.inline
-    def setDefaultThreadsPerCore(value: ThreadsPerCore): Self = StObject.set(x, "DefaultThreadsPerCore", value.asInstanceOf[js.Any])
+    inline def setDefaultThreadsPerCore(value: ThreadsPerCore): Self = StObject.set(x, "DefaultThreadsPerCore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultThreadsPerCoreUndefined: Self = StObject.set(x, "DefaultThreadsPerCore", js.undefined)
+    inline def setDefaultThreadsPerCoreUndefined: Self = StObject.set(x, "DefaultThreadsPerCore", js.undefined)
     
-    @scala.inline
-    def setDefaultVCpus(value: VCpuCount): Self = StObject.set(x, "DefaultVCpus", value.asInstanceOf[js.Any])
+    inline def setDefaultVCpus(value: VCpuCount): Self = StObject.set(x, "DefaultVCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVCpusUndefined: Self = StObject.set(x, "DefaultVCpus", js.undefined)
+    inline def setDefaultVCpusUndefined: Self = StObject.set(x, "DefaultVCpus", js.undefined)
     
-    @scala.inline
-    def setValidCores(value: CoreCountList): Self = StObject.set(x, "ValidCores", value.asInstanceOf[js.Any])
+    inline def setValidCores(value: CoreCountList): Self = StObject.set(x, "ValidCores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidCoresUndefined: Self = StObject.set(x, "ValidCores", js.undefined)
+    inline def setValidCoresUndefined: Self = StObject.set(x, "ValidCores", js.undefined)
     
-    @scala.inline
-    def setValidCoresVarargs(value: CoreCount*): Self = StObject.set(x, "ValidCores", js.Array(value :_*))
+    inline def setValidCoresVarargs(value: CoreCount*): Self = StObject.set(x, "ValidCores", js.Array(value :_*))
     
-    @scala.inline
-    def setValidThreadsPerCore(value: ThreadsPerCoreList): Self = StObject.set(x, "ValidThreadsPerCore", value.asInstanceOf[js.Any])
+    inline def setValidThreadsPerCore(value: ThreadsPerCoreList): Self = StObject.set(x, "ValidThreadsPerCore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidThreadsPerCoreUndefined: Self = StObject.set(x, "ValidThreadsPerCore", js.undefined)
+    inline def setValidThreadsPerCoreUndefined: Self = StObject.set(x, "ValidThreadsPerCore", js.undefined)
     
-    @scala.inline
-    def setValidThreadsPerCoreVarargs(value: ThreadsPerCore*): Self = StObject.set(x, "ValidThreadsPerCore", js.Array(value :_*))
+    inline def setValidThreadsPerCoreVarargs(value: ThreadsPerCore*): Self = StObject.set(x, "ValidThreadsPerCore", js.Array(value :_*))
   }
 }

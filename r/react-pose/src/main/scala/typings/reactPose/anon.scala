@@ -14,17 +14,14 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply(current: js.Any): Current = {
+    inline def apply(current: js.Any): Current = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
       __obj.asInstanceOf[Current]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+    extension [Self <: Current](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,26 +35,20 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])
+      inline def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithParentUndefined: Self = StObject.set(x, "withParent", js.undefined)
+      inline def setWithParentUndefined: Self = StObject.set(x, "withParent", js.undefined)
     }
   }
   
@@ -67,17 +58,14 @@ object anon {
   }
   object FlipMove {
     
-    @scala.inline
-    def apply(flipMove: Boolean): FlipMove = {
+    inline def apply(flipMove: Boolean): FlipMove = {
       val __obj = js.Dynamic.literal(flipMove = flipMove.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlipMove]
     }
     
-    @scala.inline
-    implicit class FlipMoveMutableBuilder[Self <: FlipMove] (val x: Self) extends AnyVal {
+    extension [Self <: FlipMove](x: Self) {
       
-      @scala.inline
-      def setFlipMove(value: Boolean): Self = StObject.set(x, "flipMove", value.asInstanceOf[js.Any])
+      inline def setFlipMove(value: Boolean): Self = StObject.set(x, "flipMove", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,47 +84,34 @@ object anon {
   }
   object PartialState {
     
-    @scala.inline
-    def apply(): PartialState = {
+    inline def apply(): PartialState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialState]
     }
     
-    @scala.inline
-    implicit class PartialStateMutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
+    extension [Self <: PartialState](x: Self) {
       
-      @scala.inline
-      def setDisplayedChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "displayedChildren", value.asInstanceOf[js.Any])
+      inline def setDisplayedChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "displayedChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayedChildrenUndefined: Self = StObject.set(x, "displayedChildren", js.undefined)
+      inline def setDisplayedChildrenUndefined: Self = StObject.set(x, "displayedChildren", js.undefined)
       
-      @scala.inline
-      def setDisplayedChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "displayedChildren", js.Array(value :_*))
+      inline def setDisplayedChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "displayedChildren", js.Array(value :_*))
       
-      @scala.inline
-      def setFinishedLeaving(value: StringDictionary[Boolean]): Self = StObject.set(x, "finishedLeaving", value.asInstanceOf[js.Any])
+      inline def setFinishedLeaving(value: StringDictionary[Boolean]): Self = StObject.set(x, "finishedLeaving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinishedLeavingUndefined: Self = StObject.set(x, "finishedLeaving", js.undefined)
+      inline def setFinishedLeavingUndefined: Self = StObject.set(x, "finishedLeaving", js.undefined)
       
-      @scala.inline
-      def setHasInitialized(value: Boolean): Self = StObject.set(x, "hasInitialized", value.asInstanceOf[js.Any])
+      inline def setHasInitialized(value: Boolean): Self = StObject.set(x, "hasInitialized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasInitializedUndefined: Self = StObject.set(x, "hasInitialized", js.undefined)
+      inline def setHasInitializedUndefined: Self = StObject.set(x, "hasInitialized", js.undefined)
       
-      @scala.inline
-      def setIndexedChildren(value: StringDictionary[ReactElement]): Self = StObject.set(x, "indexedChildren", value.asInstanceOf[js.Any])
+      inline def setIndexedChildren(value: StringDictionary[ReactElement]): Self = StObject.set(x, "indexedChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexedChildrenUndefined: Self = StObject.set(x, "indexedChildren", js.undefined)
+      inline def setIndexedChildrenUndefined: Self = StObject.set(x, "indexedChildren", js.undefined)
       
-      @scala.inline
-      def setScheduleChildRemoval(value: /* key */ String => Unit): Self = StObject.set(x, "scheduleChildRemoval", js.Any.fromFunction1(value))
+      inline def setScheduleChildRemoval(value: /* key */ String => Unit): Self = StObject.set(x, "scheduleChildRemoval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScheduleChildRemovalUndefined: Self = StObject.set(x, "scheduleChildRemoval", js.undefined)
+      inline def setScheduleChildRemovalUndefined: Self = StObject.set(x, "scheduleChildRemoval", js.undefined)
     }
   }
 }

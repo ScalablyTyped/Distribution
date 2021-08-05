@@ -32,52 +32,37 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setDatauri(value: base64 | enc | unenc): Self = StObject.set(x, "datauri", value.asInstanceOf[js.Any])
+    inline def setDatauri(value: base64 | enc | unenc): Self = StObject.set(x, "datauri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatauriUndefined: Self = StObject.set(x, "datauri", js.undefined)
+    inline def setDatauriUndefined: Self = StObject.set(x, "datauri", js.undefined)
     
-    @scala.inline
-    def setFloatPrecision(value: Double): Self = StObject.set(x, "floatPrecision", value.asInstanceOf[js.Any])
+    inline def setFloatPrecision(value: Double): Self = StObject.set(x, "floatPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatPrecisionUndefined: Self = StObject.set(x, "floatPrecision", js.undefined)
+    inline def setFloatPrecisionUndefined: Self = StObject.set(x, "floatPrecision", js.undefined)
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
-    @scala.inline
-    def setJs2svg(value: Js2SvgOptions): Self = StObject.set(x, "js2svg", value.asInstanceOf[js.Any])
+    inline def setJs2svg(value: Js2SvgOptions): Self = StObject.set(x, "js2svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJs2svgUndefined: Self = StObject.set(x, "js2svg", js.undefined)
+    inline def setJs2svgUndefined: Self = StObject.set(x, "js2svg", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: js.Array[PluginConfig]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[PluginConfig]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    @scala.inline
-    def setPluginsVarargs(value: PluginConfig*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: PluginConfig*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
-    @scala.inline
-    def setSvg2js(value: Svg2JsOptions): Self = StObject.set(x, "svg2js", value.asInstanceOf[js.Any])
+    inline def setSvg2js(value: Svg2JsOptions): Self = StObject.set(x, "svg2js", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvg2jsUndefined: Self = StObject.set(x, "svg2js", js.undefined)
+    inline def setSvg2jsUndefined: Self = StObject.set(x, "svg2js", js.undefined)
   }
 }

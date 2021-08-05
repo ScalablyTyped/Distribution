@@ -11,25 +11,19 @@ trait IEventList extends StObject {
 }
 object IEventList {
   
-  @scala.inline
-  def apply(): IEventList = {
+  inline def apply(): IEventList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEventList]
   }
   
-  @scala.inline
-  implicit class IEventListMutableBuilder[Self <: IEventList] (val x: Self) extends AnyVal {
+  extension [Self <: IEventList](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsNull: Self = StObject.set(x, "events", null)
+    inline def setEventsNull: Self = StObject.set(x, "events", null)
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
   }
 }

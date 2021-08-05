@@ -14,22 +14,17 @@ trait LCauseFlag extends StObject {
 }
 object LCauseFlag {
   
-  @scala.inline
-  def apply(Cancel: Boolean, lCauseFlag: Double, pWB2: js.Any): LCauseFlag = {
+  inline def apply(Cancel: Boolean, lCauseFlag: Double, pWB2: js.Any): LCauseFlag = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], lCauseFlag = lCauseFlag.asInstanceOf[js.Any], pWB2 = pWB2.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCauseFlag]
   }
   
-  @scala.inline
-  implicit class LCauseFlagMutableBuilder[Self <: LCauseFlag] (val x: Self) extends AnyVal {
+  extension [Self <: LCauseFlag](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLCauseFlag(value: Double): Self = StObject.set(x, "lCauseFlag", value.asInstanceOf[js.Any])
+    inline def setLCauseFlag(value: Double): Self = StObject.set(x, "lCauseFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPWB2(value: js.Any): Self = StObject.set(x, "pWB2", value.asInstanceOf[js.Any])
+    inline def setPWB2(value: js.Any): Self = StObject.set(x, "pWB2", value.asInstanceOf[js.Any])
   }
 }

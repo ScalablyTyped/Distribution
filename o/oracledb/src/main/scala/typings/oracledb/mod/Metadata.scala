@@ -61,64 +61,45 @@ trait Metadata[T] extends StObject {
 }
 object Metadata {
   
-  @scala.inline
-  def apply[T](name: String): Metadata[T] = {
+  inline def apply[T](name: String): Metadata[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata[T]]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata[?], T] (val x: Self & Metadata[T]) extends AnyVal {
+  extension [Self <: Metadata[?], T](x: Self & Metadata[T]) {
     
-    @scala.inline
-    def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
+    inline def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteSizeUndefined: Self = StObject.set(x, "byteSize", js.undefined)
+    inline def setByteSizeUndefined: Self = StObject.set(x, "byteSize", js.undefined)
     
-    @scala.inline
-    def setDbType(value: Double): Self = StObject.set(x, "dbType", value.asInstanceOf[js.Any])
+    inline def setDbType(value: Double): Self = StObject.set(x, "dbType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbTypeClass(value: DBObjectClass[T]): Self = StObject.set(x, "dbTypeClass", value.asInstanceOf[js.Any])
+    inline def setDbTypeClass(value: DBObjectClass[T]): Self = StObject.set(x, "dbTypeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbTypeClassUndefined: Self = StObject.set(x, "dbTypeClass", js.undefined)
+    inline def setDbTypeClassUndefined: Self = StObject.set(x, "dbTypeClass", js.undefined)
     
-    @scala.inline
-    def setDbTypeName(value: String): Self = StObject.set(x, "dbTypeName", value.asInstanceOf[js.Any])
+    inline def setDbTypeName(value: String): Self = StObject.set(x, "dbTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbTypeNameUndefined: Self = StObject.set(x, "dbTypeName", js.undefined)
+    inline def setDbTypeNameUndefined: Self = StObject.set(x, "dbTypeName", js.undefined)
     
-    @scala.inline
-    def setDbTypeUndefined: Self = StObject.set(x, "dbType", js.undefined)
+    inline def setDbTypeUndefined: Self = StObject.set(x, "dbType", js.undefined)
     
-    @scala.inline
-    def setFetchType(value: Double): Self = StObject.set(x, "fetchType", value.asInstanceOf[js.Any])
+    inline def setFetchType(value: Double): Self = StObject.set(x, "fetchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchTypeUndefined: Self = StObject.set(x, "fetchType", js.undefined)
+    inline def setFetchTypeUndefined: Self = StObject.set(x, "fetchType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

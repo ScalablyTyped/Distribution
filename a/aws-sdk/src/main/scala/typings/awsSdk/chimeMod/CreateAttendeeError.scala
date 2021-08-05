@@ -23,31 +23,23 @@ trait CreateAttendeeError extends StObject {
 }
 object CreateAttendeeError {
   
-  @scala.inline
-  def apply(): CreateAttendeeError = {
+  inline def apply(): CreateAttendeeError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAttendeeError]
   }
   
-  @scala.inline
-  implicit class CreateAttendeeErrorMutableBuilder[Self <: CreateAttendeeError] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAttendeeError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
+    inline def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalUserIdUndefined: Self = StObject.set(x, "ExternalUserId", js.undefined)
+    inline def setExternalUserIdUndefined: Self = StObject.set(x, "ExternalUserId", js.undefined)
   }
 }

@@ -22,28 +22,21 @@ trait SchemaListServiceAccountsResponse extends StObject {
 }
 object SchemaListServiceAccountsResponse {
   
-  @scala.inline
-  def apply(): SchemaListServiceAccountsResponse = {
+  inline def apply(): SchemaListServiceAccountsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListServiceAccountsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListServiceAccountsResponseMutableBuilder[Self <: SchemaListServiceAccountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListServiceAccountsResponse](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: js.Array[SchemaServiceAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: js.Array[SchemaServiceAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    @scala.inline
-    def setAccountsVarargs(value: SchemaServiceAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: SchemaServiceAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

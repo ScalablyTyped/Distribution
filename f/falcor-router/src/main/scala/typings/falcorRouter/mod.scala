@@ -31,10 +31,8 @@ object mod {
   }
   
   /* static member */
-  @scala.inline
-  def createClass(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")().asInstanceOf[js.Any]
-  @scala.inline
-  def createClass(routes: js.Array[RouteDefinition]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createClass(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")().asInstanceOf[js.Any]
+  inline def createClass(routes: js.Array[RouteDefinition]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait CallRoute
     extends StObject
@@ -45,8 +43,7 @@ object mod {
   }
   object CallRoute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       call: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
       route: String
     ): CallRoute = {
@@ -54,11 +51,9 @@ object mod {
       __obj.asInstanceOf[CallRoute]
     }
     
-    @scala.inline
-    implicit class CallRouteMutableBuilder[Self <: CallRoute] (val x: Self) extends AnyVal {
+    extension [Self <: CallRoute](x: Self) {
       
-      @scala.inline
-      def setCall(
+      inline def setCall(
         value: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
       ): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
     }
@@ -85,8 +80,7 @@ object mod {
   }
   object GetRoute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get: RoutePathSet => RouteResult | js.Promise[RouteResult] | Observable[RouteResult],
       route: String
     ): GetRoute = {
@@ -94,11 +88,9 @@ object mod {
       __obj.asInstanceOf[GetRoute]
     }
     
-    @scala.inline
-    implicit class GetRouteMutableBuilder[Self <: GetRoute] (val x: Self) extends AnyVal {
+    extension [Self <: GetRoute](x: Self) {
       
-      @scala.inline
-      def setGet(value: RoutePathSet => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: RoutePathSet => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
@@ -108,17 +100,14 @@ object mod {
   }
   object Route {
     
-    @scala.inline
-    def apply(route: String): Route = {
+    inline def apply(route: String): Route = {
       val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[Route]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+    extension [Self <: Route](x: Self) {
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,8 +119,7 @@ object mod {
   trait RouteDefinition extends StObject
   object RouteDefinition {
     
-    @scala.inline
-    def CallRoute(
+    inline def CallRoute(
       call: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
       route: String
     ): typings.falcorRouter.mod.CallRoute = {
@@ -139,8 +127,7 @@ object mod {
       __obj.asInstanceOf[typings.falcorRouter.mod.CallRoute]
     }
     
-    @scala.inline
-    def GetRoute(
+    inline def GetRoute(
       get: RoutePathSet => RouteResult | js.Promise[RouteResult] | Observable[RouteResult],
       route: String
     ): typings.falcorRouter.mod.GetRoute = {
@@ -148,8 +135,7 @@ object mod {
       __obj.asInstanceOf[typings.falcorRouter.mod.GetRoute]
     }
     
-    @scala.inline
-    def SetRoute(route: String, set: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): typings.falcorRouter.mod.SetRoute = {
+    inline def SetRoute(route: String, set: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): typings.falcorRouter.mod.SetRoute = {
       val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any], set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[typings.falcorRouter.mod.SetRoute]
     }
@@ -169,32 +155,24 @@ object mod {
   }
   object RouterOptions {
     
-    @scala.inline
-    def apply(): RouterOptions = {
+    inline def apply(): RouterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouterOptions]
     }
     
-    @scala.inline
-    implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouterOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setMaxPaths(value: Double): Self = StObject.set(x, "maxPaths", value.asInstanceOf[js.Any])
+      inline def setMaxPaths(value: Double): Self = StObject.set(x, "maxPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPathsUndefined: Self = StObject.set(x, "maxPaths", js.undefined)
+      inline def setMaxPathsUndefined: Self = StObject.set(x, "maxPaths", js.undefined)
       
-      @scala.inline
-      def setMaxRefFollow(value: Double): Self = StObject.set(x, "maxRefFollow", value.asInstanceOf[js.Any])
+      inline def setMaxRefFollow(value: Double): Self = StObject.set(x, "maxRefFollow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRefFollowUndefined: Self = StObject.set(x, "maxRefFollow", js.undefined)
+      inline def setMaxRefFollowUndefined: Self = StObject.set(x, "maxRefFollow", js.undefined)
     }
   }
   
@@ -207,17 +185,14 @@ object mod {
   }
   object SetRoute {
     
-    @scala.inline
-    def apply(route: String, set: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): SetRoute = {
+    inline def apply(route: String, set: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): SetRoute = {
       val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any], set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[SetRoute]
     }
     
-    @scala.inline
-    implicit class SetRouteMutableBuilder[Self <: SetRoute] (val x: Self) extends AnyVal {
+    extension [Self <: SetRoute](x: Self) {
       
-      @scala.inline
-      def setSet(value: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
 }

@@ -29,22 +29,17 @@ trait WorkspaceFolder
 }
 object WorkspaceFolder {
   
-  @scala.inline
-  def apply(index: Double, name: String, uri: Uri): WorkspaceFolder = {
+  inline def apply(index: Double, name: String, uri: Uri): WorkspaceFolder = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceFolder]
   }
   
-  @scala.inline
-  implicit class WorkspaceFolderMutableBuilder[Self <: WorkspaceFolder] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceFolder](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -26,37 +26,27 @@ trait RunQueryResponse extends StObject {
 }
 object RunQueryResponse {
   
-  @scala.inline
-  def apply(): RunQueryResponse = {
+  inline def apply(): RunQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunQueryResponse]
   }
   
-  @scala.inline
-  implicit class RunQueryResponseMutableBuilder[Self <: RunQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RunQueryResponse](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setSkippedResults(value: Double): Self = StObject.set(x, "skippedResults", value.asInstanceOf[js.Any])
+    inline def setSkippedResults(value: Double): Self = StObject.set(x, "skippedResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedResultsUndefined: Self = StObject.set(x, "skippedResults", js.undefined)
+    inline def setSkippedResultsUndefined: Self = StObject.set(x, "skippedResults", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

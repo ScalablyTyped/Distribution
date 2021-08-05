@@ -20,23 +20,18 @@ object anon {
   }
   object Clazz {
     
-    @scala.inline
-    def apply(encoding: primitive | constructed): Clazz = {
+    inline def apply(encoding: primitive | constructed): Clazz = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Clazz]
     }
     
-    @scala.inline
-    implicit class ClazzMutableBuilder[Self <: Clazz] (val x: Self) extends AnyVal {
+    extension [Self <: Clazz](x: Self) {
       
-      @scala.inline
-      def setClazz(value: universal | application | (`context specific`) | `private`): Self = StObject.set(x, "clazz", value.asInstanceOf[js.Any])
+      inline def setClazz(value: universal | application | (`context specific`) | `private`): Self = StObject.set(x, "clazz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClazzUndefined: Self = StObject.set(x, "clazz", js.undefined)
+      inline def setClazzUndefined: Self = StObject.set(x, "clazz", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: primitive | constructed): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: primitive | constructed): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
 }

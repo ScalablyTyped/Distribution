@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlErrorBarDirection extends StObject
 object XlErrorBarDirection {
   
-  @scala.inline
-  def xlChartX: `-4168` = -4168.asInstanceOf[`-4168`]
+  inline def xlChartX: `-4168` = -4168.asInstanceOf[`-4168`]
   
-  @scala.inline
-  def xlChartY: `1` = 1.asInstanceOf[`1`]
+  inline def xlChartY: `1` = 1.asInstanceOf[`1`]
 }

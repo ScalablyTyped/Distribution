@@ -9,10 +9,10 @@ object exceptionMod {
   
   @JSImport("sip.js/lib/core/exceptions/exception", "Exception")
   @js.native
-  abstract class Exception protected ()
+  /* protected */ abstract class Exception ()
     extends StObject
        with Error {
-    protected def this(message: String) = this()
+    /* protected */ def this(message: String) = this()
     
     /* CompleteClass */
     var message: String = js.native

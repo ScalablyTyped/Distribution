@@ -86,8 +86,7 @@ object XMLService {
   }
   object Attribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getName: () => String,
       getNamespace: () => Namespace,
       getValue: () => String,
@@ -99,26 +98,19 @@ object XMLService {
       __obj.asInstanceOf[Attribute]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute](x: Self) {
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNamespace(value: () => Namespace): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
+      inline def setGetNamespace(value: () => Namespace): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetName(value: String => Attribute): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+      inline def setSetName(value: String => Attribute): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNamespace(value: Namespace => Attribute): Self = StObject.set(x, "setNamespace", js.Any.fromFunction1(value))
+      inline def setSetNamespace(value: Namespace => Attribute): Self = StObject.set(x, "setNamespace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValue(value: String => Attribute): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: String => Attribute): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -147,8 +139,7 @@ object XMLService {
   }
   object Cdata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: String => Text,
       asCdata: () => Cdata,
       asComment: () => Comment,
@@ -168,17 +159,13 @@ object XMLService {
       __obj.asInstanceOf[Cdata]
     }
     
-    @scala.inline
-    implicit class CdataMutableBuilder[Self <: Cdata] (val x: Self) extends AnyVal {
+    extension [Self <: Cdata](x: Self) {
       
-      @scala.inline
-      def setAppend(value: String => Text): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+      inline def setAppend(value: String => Text): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetText(value: String => Text): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => Text): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     }
   }
   
@@ -195,8 +182,7 @@ object XMLService {
   }
   object Comment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asCdata: () => Cdata,
       asComment: () => Comment,
       asDocType: () => DocType,
@@ -215,14 +201,11 @@ object XMLService {
       __obj.asInstanceOf[Comment]
     }
     
-    @scala.inline
-    implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+    extension [Self <: Comment](x: Self) {
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetText(value: String => Comment): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => Comment): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     }
   }
   
@@ -272,8 +255,7 @@ object XMLService {
   }
   object Content {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asCdata: () => Cdata,
       asComment: () => Comment,
       asDocType: () => DocType,
@@ -290,41 +272,29 @@ object XMLService {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.XMLService.Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.XMLService.Content] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.XMLService.Content](x: Self) {
       
-      @scala.inline
-      def setAsCdata(value: () => Cdata): Self = StObject.set(x, "asCdata", js.Any.fromFunction0(value))
+      inline def setAsCdata(value: () => Cdata): Self = StObject.set(x, "asCdata", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsComment(value: () => Comment): Self = StObject.set(x, "asComment", js.Any.fromFunction0(value))
+      inline def setAsComment(value: () => Comment): Self = StObject.set(x, "asComment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsDocType(value: () => DocType): Self = StObject.set(x, "asDocType", js.Any.fromFunction0(value))
+      inline def setAsDocType(value: () => DocType): Self = StObject.set(x, "asDocType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsElement(value: () => Element): Self = StObject.set(x, "asElement", js.Any.fromFunction0(value))
+      inline def setAsElement(value: () => Element): Self = StObject.set(x, "asElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsEntityRef(value: () => EntityRef): Self = StObject.set(x, "asEntityRef", js.Any.fromFunction0(value))
+      inline def setAsEntityRef(value: () => EntityRef): Self = StObject.set(x, "asEntityRef", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsProcessingInstruction(value: () => ProcessingInstruction): Self = StObject.set(x, "asProcessingInstruction", js.Any.fromFunction0(value))
+      inline def setAsProcessingInstruction(value: () => ProcessingInstruction): Self = StObject.set(x, "asProcessingInstruction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsText(value: () => Text): Self = StObject.set(x, "asText", js.Any.fromFunction0(value))
+      inline def setAsText(value: () => Text): Self = StObject.set(x, "asText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetach(value: () => typings.googleAppsScript.GoogleAppsScript.XMLService.Content): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+      inline def setDetach(value: () => typings.googleAppsScript.GoogleAppsScript.XMLService.Content): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentElement(value: () => Element): Self = StObject.set(x, "getParentElement", js.Any.fromFunction0(value))
+      inline def setGetParentElement(value: () => Element): Self = StObject.set(x, "getParentElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => ContentType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => ContentType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -353,8 +323,7 @@ object XMLService {
   }
   object DocType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asCdata: () => Cdata,
       asComment: () => Comment,
       asDocType: () => DocType,
@@ -379,32 +348,23 @@ object XMLService {
       __obj.asInstanceOf[DocType]
     }
     
-    @scala.inline
-    implicit class DocTypeMutableBuilder[Self <: DocType] (val x: Self) extends AnyVal {
+    extension [Self <: DocType](x: Self) {
       
-      @scala.inline
-      def setGetElementName(value: () => String): Self = StObject.set(x, "getElementName", js.Any.fromFunction0(value))
+      inline def setGetElementName(value: () => String): Self = StObject.set(x, "getElementName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInternalSubset(value: () => String): Self = StObject.set(x, "getInternalSubset", js.Any.fromFunction0(value))
+      inline def setGetInternalSubset(value: () => String): Self = StObject.set(x, "getInternalSubset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
+      inline def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
+      inline def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetElementName(value: String => DocType): Self = StObject.set(x, "setElementName", js.Any.fromFunction1(value))
+      inline def setSetElementName(value: String => DocType): Self = StObject.set(x, "setElementName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetInternalSubset(value: String => DocType): Self = StObject.set(x, "setInternalSubset", js.Any.fromFunction1(value))
+      inline def setSetInternalSubset(value: String => DocType): Self = StObject.set(x, "setInternalSubset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPublicId(value: String => DocType): Self = StObject.set(x, "setPublicId", js.Any.fromFunction1(value))
+      inline def setSetPublicId(value: String => DocType): Self = StObject.set(x, "setPublicId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSystemId(value: String => DocType): Self = StObject.set(x, "setSystemId", js.Any.fromFunction1(value))
+      inline def setSetSystemId(value: String => DocType): Self = StObject.set(x, "setSystemId", js.Any.fromFunction1(value))
     }
   }
   
@@ -553,8 +513,7 @@ object XMLService {
   }
   object EntityRef {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asCdata: () => Cdata,
       asComment: () => Comment,
       asDocType: () => DocType,
@@ -577,26 +536,19 @@ object XMLService {
       __obj.asInstanceOf[EntityRef]
     }
     
-    @scala.inline
-    implicit class EntityRefMutableBuilder[Self <: EntityRef] (val x: Self) extends AnyVal {
+    extension [Self <: EntityRef](x: Self) {
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
+      inline def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
+      inline def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetName(value: String => EntityRef): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+      inline def setSetName(value: String => EntityRef): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPublicId(value: String => EntityRef): Self = StObject.set(x, "setPublicId", js.Any.fromFunction1(value))
+      inline def setSetPublicId(value: String => EntityRef): Self = StObject.set(x, "setPublicId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSystemId(value: String => EntityRef): Self = StObject.set(x, "setSystemId", js.Any.fromFunction1(value))
+      inline def setSetSystemId(value: String => EntityRef): Self = StObject.set(x, "setSystemId", js.Any.fromFunction1(value))
     }
   }
   
@@ -642,20 +594,16 @@ object XMLService {
   }
   object Namespace {
     
-    @scala.inline
-    def apply(getPrefix: () => String, getURI: () => String): Namespace = {
+    inline def apply(getPrefix: () => String, getURI: () => String): Namespace = {
       val __obj = js.Dynamic.literal(getPrefix = js.Any.fromFunction0(getPrefix), getURI = js.Any.fromFunction0(getURI))
       __obj.asInstanceOf[Namespace]
     }
     
-    @scala.inline
-    implicit class NamespaceMutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
+    extension [Self <: Namespace](x: Self) {
       
-      @scala.inline
-      def setGetPrefix(value: () => String): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
+      inline def setGetPrefix(value: () => String): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetURI(value: () => String): Self = StObject.set(x, "getURI", js.Any.fromFunction0(value))
+      inline def setGetURI(value: () => String): Self = StObject.set(x, "getURI", js.Any.fromFunction0(value))
     }
   }
   
@@ -672,8 +620,7 @@ object XMLService {
   }
   object ProcessingInstruction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asCdata: () => Cdata,
       asComment: () => Comment,
       asDocType: () => DocType,
@@ -692,14 +639,11 @@ object XMLService {
       __obj.asInstanceOf[ProcessingInstruction]
     }
     
-    @scala.inline
-    implicit class ProcessingInstructionMutableBuilder[Self <: ProcessingInstruction] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessingInstruction](x: Self) {
       
-      @scala.inline
-      def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTarget(value: () => String): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+      inline def setGetTarget(value: () => String): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     }
   }
   
@@ -718,8 +662,7 @@ object XMLService {
   }
   object Text {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: String => Text,
       asCdata: () => Cdata,
       asComment: () => Comment,
@@ -739,17 +682,13 @@ object XMLService {
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setAppend(value: String => Text): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+      inline def setAppend(value: String => Text): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetText(value: String => Text): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => Text): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     }
   }
   

@@ -28,13 +28,13 @@ object constraintsMod {
   class MaxNorm protected () extends Constraint {
     def this(args: MaxNormArgs) = this()
     
-    var axis: js.Any = js.native
+    /* private */ var axis: js.Any = js.native
     
-    val defaultAxis: js.Any = js.native
+    /* private */ val defaultAxis: js.Any = js.native
     
-    val defaultMaxValue: js.Any = js.native
+    /* private */ val defaultMaxValue: js.Any = js.native
     
-    var maxValue: js.Any = js.native
+    /* private */ var maxValue: js.Any = js.native
   }
   /* static members */
   object MaxNorm {
@@ -50,21 +50,21 @@ object constraintsMod {
   class MinMaxNorm protected () extends Constraint {
     def this(args: MinMaxNormArgs) = this()
     
-    var axis: js.Any = js.native
+    /* private */ var axis: js.Any = js.native
     
-    val defaultAxis: js.Any = js.native
+    /* private */ val defaultAxis: js.Any = js.native
     
-    val defaultMaxValue: js.Any = js.native
+    /* private */ val defaultMaxValue: js.Any = js.native
     
-    val defaultMinValue: js.Any = js.native
+    /* private */ val defaultMinValue: js.Any = js.native
     
-    val defaultRate: js.Any = js.native
+    /* private */ val defaultRate: js.Any = js.native
     
-    var maxValue: js.Any = js.native
+    /* private */ var maxValue: js.Any = js.native
     
-    var minValue: js.Any = js.native
+    /* private */ var minValue: js.Any = js.native
     
-    var rate: js.Any = js.native
+    /* private */ var rate: js.Any = js.native
   }
   /* static members */
   object MinMaxNorm {
@@ -92,9 +92,9 @@ object constraintsMod {
   class UnitNorm protected () extends Constraint {
     def this(args: UnitNormArgs) = this()
     
-    var axis: js.Any = js.native
+    /* private */ var axis: js.Any = js.native
     
-    val defaultAxis: js.Any = js.native
+    /* private */ val defaultAxis: js.Any = js.native
   }
   /* static members */
   object UnitNorm {
@@ -105,20 +105,14 @@ object constraintsMod {
     val className: /* "UnitNorm" */ String = js.native
   }
   
-  @scala.inline
-  def deserializeConstraint(config: ConfigDict): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConstraint")(config.asInstanceOf[js.Any]).asInstanceOf[Constraint]
-  @scala.inline
-  def deserializeConstraint(config: ConfigDict, customObjects: ConfigDict): Constraint = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConstraint")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Constraint]
+  inline def deserializeConstraint(config: ConfigDict): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConstraint")(config.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  inline def deserializeConstraint(config: ConfigDict, customObjects: ConfigDict): Constraint = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConstraint")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Constraint]
   
-  @scala.inline
-  def getConstraint(identifier: ConfigDict): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
-  @scala.inline
-  def getConstraint(identifier: Constraint): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
-  @scala.inline
-  def getConstraint(identifier: ConstraintIdentifier): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  inline def getConstraint(identifier: ConfigDict): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  inline def getConstraint(identifier: Constraint): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  inline def getConstraint(identifier: ConstraintIdentifier): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
   
-  @scala.inline
-  def serializeConstraint(constraint: Constraint): ConfigDictValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeConstraint")(constraint.asInstanceOf[js.Any]).asInstanceOf[ConfigDictValue]
+  inline def serializeConstraint(constraint: Constraint): ConfigDictValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeConstraint")(constraint.asInstanceOf[js.Any]).asInstanceOf[ConfigDictValue]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.maxNorm_
@@ -154,26 +148,20 @@ object constraintsMod {
   }
   object MaxNormArgs {
     
-    @scala.inline
-    def apply(): MaxNormArgs = {
+    inline def apply(): MaxNormArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxNormArgs]
     }
     
-    @scala.inline
-    implicit class MaxNormArgsMutableBuilder[Self <: MaxNormArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MaxNormArgs](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+      inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     }
   }
   
@@ -216,38 +204,28 @@ object constraintsMod {
   }
   object MinMaxNormArgs {
     
-    @scala.inline
-    def apply(): MinMaxNormArgs = {
+    inline def apply(): MinMaxNormArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MinMaxNormArgs]
     }
     
-    @scala.inline
-    implicit class MinMaxNormArgsMutableBuilder[Self <: MinMaxNormArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MinMaxNormArgs](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+      inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+      inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     }
   }
   
@@ -271,20 +249,16 @@ object constraintsMod {
   }
   object UnitNormArgs {
     
-    @scala.inline
-    def apply(): UnitNormArgs = {
+    inline def apply(): UnitNormArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnitNormArgs]
     }
     
-    @scala.inline
-    implicit class UnitNormArgsMutableBuilder[Self <: UnitNormArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UnitNormArgs](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     }
   }
   

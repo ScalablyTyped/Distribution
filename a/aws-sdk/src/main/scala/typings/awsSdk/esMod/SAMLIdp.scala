@@ -18,19 +18,15 @@ trait SAMLIdp extends StObject {
 }
 object SAMLIdp {
   
-  @scala.inline
-  def apply(EntityId: SAMLEntityId, MetadataContent: SAMLMetadata): SAMLIdp = {
+  inline def apply(EntityId: SAMLEntityId, MetadataContent: SAMLMetadata): SAMLIdp = {
     val __obj = js.Dynamic.literal(EntityId = EntityId.asInstanceOf[js.Any], MetadataContent = MetadataContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAMLIdp]
   }
   
-  @scala.inline
-  implicit class SAMLIdpMutableBuilder[Self <: SAMLIdp] (val x: Self) extends AnyVal {
+  extension [Self <: SAMLIdp](x: Self) {
     
-    @scala.inline
-    def setEntityId(value: SAMLEntityId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: SAMLEntityId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataContent(value: SAMLMetadata): Self = StObject.set(x, "MetadataContent", value.asInstanceOf[js.Any])
+    inline def setMetadataContent(value: SAMLMetadata): Self = StObject.set(x, "MetadataContent", value.asInstanceOf[js.Any])
   }
 }

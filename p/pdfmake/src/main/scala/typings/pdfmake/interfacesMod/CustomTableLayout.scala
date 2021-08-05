@@ -36,127 +36,95 @@ trait CustomTableLayout
 }
 object CustomTableLayout {
   
-  @scala.inline
-  def apply(): CustomTableLayout = {
+  inline def apply(): CustomTableLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomTableLayout]
   }
   
-  @scala.inline
-  implicit class CustomTableLayoutMutableBuilder[Self <: CustomTableLayout] (val x: Self) extends AnyVal {
+  extension [Self <: CustomTableLayout](x: Self) {
     
-    @scala.inline
-    def setDefaultBorder(value: Boolean): Self = StObject.set(x, "defaultBorder", value.asInstanceOf[js.Any])
+    inline def setDefaultBorder(value: Boolean): Self = StObject.set(x, "defaultBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBorderUndefined: Self = StObject.set(x, "defaultBorder", js.undefined)
+    inline def setDefaultBorderUndefined: Self = StObject.set(x, "defaultBorder", js.undefined)
     
-    @scala.inline
-    def setFillColor(value: String | DynamicLayout[String]): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String | DynamicLayout[String]): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorFunction3(
+    inline def setFillColorFunction3(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[String | Null]
     ): Self = StObject.set(x, "fillColor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setFillOpacity(value: Double | DynamicLayout[Double]): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: Double | DynamicLayout[Double]): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacityFunction3(
+    inline def setFillOpacityFunction3(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null]
     ): Self = StObject.set(x, "fillOpacity", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    @scala.inline
-    def setHLineColor(value: String | DynamicLayout[String]): Self = StObject.set(x, "hLineColor", value.asInstanceOf[js.Any])
+    inline def setHLineColor(value: String | DynamicLayout[String]): Self = StObject.set(x, "hLineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHLineColorFunction3(
+    inline def setHLineColorFunction3(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[String | Null]
     ): Self = StObject.set(x, "hLineColor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHLineColorUndefined: Self = StObject.set(x, "hLineColor", js.undefined)
+    inline def setHLineColorUndefined: Self = StObject.set(x, "hLineColor", js.undefined)
     
-    @scala.inline
-    def setHLineStyle(
+    inline def setHLineStyle(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[LineStyle | Null]
     ): Self = StObject.set(x, "hLineStyle", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHLineStyleUndefined: Self = StObject.set(x, "hLineStyle", js.undefined)
+    inline def setHLineStyleUndefined: Self = StObject.set(x, "hLineStyle", js.undefined)
     
-    @scala.inline
-    def setHLineWidth(
+    inline def setHLineWidth(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null]
     ): Self = StObject.set(x, "hLineWidth", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHLineWidthUndefined: Self = StObject.set(x, "hLineWidth", js.undefined)
+    inline def setHLineWidthUndefined: Self = StObject.set(x, "hLineWidth", js.undefined)
     
-    @scala.inline
-    def setPaddingBottom(
+    inline def setPaddingBottom(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null]
     ): Self = StObject.set(x, "paddingBottom", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+    inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    @scala.inline
-    def setPaddingLeft(
+    inline def setPaddingLeft(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null]
     ): Self = StObject.set(x, "paddingLeft", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+    inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    @scala.inline
-    def setPaddingRight(
+    inline def setPaddingRight(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null]
     ): Self = StObject.set(x, "paddingRight", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    @scala.inline
-    def setPaddingTop(
+    inline def setPaddingTop(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null]
     ): Self = StObject.set(x, "paddingTop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
-    @scala.inline
-    def setVLineColor(value: String | DynamicLayout[String]): Self = StObject.set(x, "vLineColor", value.asInstanceOf[js.Any])
+    inline def setVLineColor(value: String | DynamicLayout[String]): Self = StObject.set(x, "vLineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVLineColorFunction3(
+    inline def setVLineColorFunction3(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[String | Null]
     ): Self = StObject.set(x, "vLineColor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setVLineColorUndefined: Self = StObject.set(x, "vLineColor", js.undefined)
+    inline def setVLineColorUndefined: Self = StObject.set(x, "vLineColor", js.undefined)
     
-    @scala.inline
-    def setVLineStyle(
+    inline def setVLineStyle(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[LineStyle | Null]
     ): Self = StObject.set(x, "vLineStyle", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setVLineStyleUndefined: Self = StObject.set(x, "vLineStyle", js.undefined)
+    inline def setVLineStyleUndefined: Self = StObject.set(x, "vLineStyle", js.undefined)
     
-    @scala.inline
-    def setVLineWidth(
+    inline def setVLineWidth(
       value: (/* rowIndex */ Double, /* node */ ContentTable, /* columnIndex */ Double) => js.UndefOr[Double | Null]
     ): Self = StObject.set(x, "vLineWidth", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setVLineWidthUndefined: Self = StObject.set(x, "vLineWidth", js.undefined)
+    inline def setVLineWidthUndefined: Self = StObject.set(x, "vLineWidth", js.undefined)
   }
 }

@@ -144,143 +144,98 @@ object JQueryNanoScroller {
   }
   object NanoScrollerOptions {
     
-    @scala.inline
-    def apply(): NanoScrollerOptions = {
+    inline def apply(): NanoScrollerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NanoScrollerOptions]
     }
     
-    @scala.inline
-    implicit class NanoScrollerOptionsMutableBuilder[Self <: NanoScrollerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NanoScrollerOptions](x: Self) {
       
-      @scala.inline
-      def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+      inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+      inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
       
-      @scala.inline
-      def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
+      inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysVisibleUndefined: Self = StObject.set(x, "alwaysVisible", js.undefined)
+      inline def setAlwaysVisibleUndefined: Self = StObject.set(x, "alwaysVisible", js.undefined)
       
-      @scala.inline
-      def setContentClass(value: String): Self = StObject.set(x, "contentClass", value.asInstanceOf[js.Any])
+      inline def setContentClass(value: String): Self = StObject.set(x, "contentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassUndefined: Self = StObject.set(x, "contentClass", js.undefined)
+      inline def setContentClassUndefined: Self = StObject.set(x, "contentClass", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+      inline def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setDisableResize(value: Boolean): Self = StObject.set(x, "disableResize", value.asInstanceOf[js.Any])
+      inline def setDisableResize(value: Boolean): Self = StObject.set(x, "disableResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableResizeUndefined: Self = StObject.set(x, "disableResize", js.undefined)
+      inline def setDisableResizeUndefined: Self = StObject.set(x, "disableResize", js.undefined)
       
-      @scala.inline
-      def setEnabledClass(value: String): Self = StObject.set(x, "enabledClass", value.asInstanceOf[js.Any])
+      inline def setEnabledClass(value: String): Self = StObject.set(x, "enabledClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledClassUndefined: Self = StObject.set(x, "enabledClass", js.undefined)
+      inline def setEnabledClassUndefined: Self = StObject.set(x, "enabledClass", js.undefined)
       
-      @scala.inline
-      def setFlash(value: Boolean): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+      inline def setFlash(value: Boolean): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashDelay(value: Double): Self = StObject.set(x, "flashDelay", value.asInstanceOf[js.Any])
+      inline def setFlashDelay(value: Double): Self = StObject.set(x, "flashDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashDelayUndefined: Self = StObject.set(x, "flashDelay", js.undefined)
+      inline def setFlashDelayUndefined: Self = StObject.set(x, "flashDelay", js.undefined)
       
-      @scala.inline
-      def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
+      inline def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
       
-      @scala.inline
-      def setFlashedClass(value: String): Self = StObject.set(x, "flashedClass", value.asInstanceOf[js.Any])
+      inline def setFlashedClass(value: String): Self = StObject.set(x, "flashedClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashedClassUndefined: Self = StObject.set(x, "flashedClass", js.undefined)
+      inline def setFlashedClassUndefined: Self = StObject.set(x, "flashedClass", js.undefined)
       
-      @scala.inline
-      def setIOSNativeScrolling(value: Boolean): Self = StObject.set(x, "iOSNativeScrolling", value.asInstanceOf[js.Any])
+      inline def setIOSNativeScrolling(value: Boolean): Self = StObject.set(x, "iOSNativeScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOSNativeScrollingUndefined: Self = StObject.set(x, "iOSNativeScrolling", js.undefined)
+      inline def setIOSNativeScrollingUndefined: Self = StObject.set(x, "iOSNativeScrolling", js.undefined)
       
-      @scala.inline
-      def setPaneClass(value: String): Self = StObject.set(x, "paneClass", value.asInstanceOf[js.Any])
+      inline def setPaneClass(value: String): Self = StObject.set(x, "paneClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaneClassUndefined: Self = StObject.set(x, "paneClass", js.undefined)
+      inline def setPaneClassUndefined: Self = StObject.set(x, "paneClass", js.undefined)
       
-      @scala.inline
-      def setPreventPageScrolling(value: Boolean): Self = StObject.set(x, "preventPageScrolling", value.asInstanceOf[js.Any])
+      inline def setPreventPageScrolling(value: Boolean): Self = StObject.set(x, "preventPageScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventPageScrollingUndefined: Self = StObject.set(x, "preventPageScrolling", js.undefined)
+      inline def setPreventPageScrollingUndefined: Self = StObject.set(x, "preventPageScrolling", js.undefined)
       
-      @scala.inline
-      def setScroll(value: top | bottom): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: top | bottom): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollBottom(value: Double): Self = StObject.set(x, "scrollBottom", value.asInstanceOf[js.Any])
+      inline def setScrollBottom(value: Double): Self = StObject.set(x, "scrollBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollBottomUndefined: Self = StObject.set(x, "scrollBottom", js.undefined)
+      inline def setScrollBottomUndefined: Self = StObject.set(x, "scrollBottom", js.undefined)
       
-      @scala.inline
-      def setScrollTo(value: JQuery): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
+      inline def setScrollTo(value: JQuery): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
+      inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+      inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setSliderClass(value: String): Self = StObject.set(x, "sliderClass", value.asInstanceOf[js.Any])
+      inline def setSliderClass(value: String): Self = StObject.set(x, "sliderClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderClassUndefined: Self = StObject.set(x, "sliderClass", js.undefined)
+      inline def setSliderClassUndefined: Self = StObject.set(x, "sliderClass", js.undefined)
       
-      @scala.inline
-      def setSliderMaxHeight(value: Double): Self = StObject.set(x, "sliderMaxHeight", value.asInstanceOf[js.Any])
+      inline def setSliderMaxHeight(value: Double): Self = StObject.set(x, "sliderMaxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderMaxHeightNull: Self = StObject.set(x, "sliderMaxHeight", null)
+      inline def setSliderMaxHeightNull: Self = StObject.set(x, "sliderMaxHeight", null)
       
-      @scala.inline
-      def setSliderMaxHeightUndefined: Self = StObject.set(x, "sliderMaxHeight", js.undefined)
+      inline def setSliderMaxHeightUndefined: Self = StObject.set(x, "sliderMaxHeight", js.undefined)
       
-      @scala.inline
-      def setSliderMinHeight(value: Double): Self = StObject.set(x, "sliderMinHeight", value.asInstanceOf[js.Any])
+      inline def setSliderMinHeight(value: Double): Self = StObject.set(x, "sliderMinHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderMinHeightUndefined: Self = StObject.set(x, "sliderMinHeight", js.undefined)
+      inline def setSliderMinHeightUndefined: Self = StObject.set(x, "sliderMinHeight", js.undefined)
       
-      @scala.inline
-      def setStop(value: Boolean): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: Boolean): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+      inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
 }

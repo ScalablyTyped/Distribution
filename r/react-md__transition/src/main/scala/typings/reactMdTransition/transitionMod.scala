@@ -11,8 +11,7 @@ object transitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Transition(
+  inline def Transition(
     hasChildrenTransitionInOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ js.Any
   ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Transition")(hasChildrenTransitionInOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
 }

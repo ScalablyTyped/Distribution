@@ -14,19 +14,15 @@ trait DataParams extends StObject {
 }
 object DataParams {
   
-  @scala.inline
-  def apply(data: OptionData, originalEvent: BaseJQueryEventObject): DataParams = {
+  inline def apply(data: OptionData, originalEvent: BaseJQueryEventObject): DataParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataParams]
   }
   
-  @scala.inline
-  implicit class DataParamsMutableBuilder[Self <: DataParams] (val x: Self) extends AnyVal {
+  extension [Self <: DataParams](x: Self) {
     
-    @scala.inline
-    def setData(value: OptionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: OptionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: BaseJQueryEventObject): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: BaseJQueryEventObject): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -90,71 +90,50 @@ object meshDistanceMaterialMod {
   }
   object MeshDistanceMaterialParameters {
     
-    @scala.inline
-    def apply(): MeshDistanceMaterialParameters = {
+    inline def apply(): MeshDistanceMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MeshDistanceMaterialParameters]
     }
     
-    @scala.inline
-    implicit class MeshDistanceMaterialParametersMutableBuilder[Self <: MeshDistanceMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MeshDistanceMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
+      inline def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
+      inline def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
       
-      @scala.inline
-      def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
+      inline def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
       
-      @scala.inline
-      def setDisplacementBias(value: Double): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
+      inline def setDisplacementBias(value: Double): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementBiasUndefined: Self = StObject.set(x, "displacementBias", js.undefined)
+      inline def setDisplacementBiasUndefined: Self = StObject.set(x, "displacementBias", js.undefined)
       
-      @scala.inline
-      def setDisplacementMap(value: Texture): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
+      inline def setDisplacementMap(value: Texture): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementMapNull: Self = StObject.set(x, "displacementMap", null)
+      inline def setDisplacementMapNull: Self = StObject.set(x, "displacementMap", null)
       
-      @scala.inline
-      def setDisplacementMapUndefined: Self = StObject.set(x, "displacementMap", js.undefined)
+      inline def setDisplacementMapUndefined: Self = StObject.set(x, "displacementMap", js.undefined)
       
-      @scala.inline
-      def setDisplacementScale(value: Double): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
+      inline def setDisplacementScale(value: Double): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
+      inline def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
       
-      @scala.inline
-      def setFarDistance(value: Double): Self = StObject.set(x, "farDistance", value.asInstanceOf[js.Any])
+      inline def setFarDistance(value: Double): Self = StObject.set(x, "farDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFarDistanceUndefined: Self = StObject.set(x, "farDistance", js.undefined)
+      inline def setFarDistanceUndefined: Self = StObject.set(x, "farDistance", js.undefined)
       
-      @scala.inline
-      def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNull: Self = StObject.set(x, "map", null)
+      inline def setMapNull: Self = StObject.set(x, "map", null)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setNearDistance(value: Double): Self = StObject.set(x, "nearDistance", value.asInstanceOf[js.Any])
+      inline def setNearDistance(value: Double): Self = StObject.set(x, "nearDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearDistanceUndefined: Self = StObject.set(x, "nearDistance", js.undefined)
+      inline def setNearDistanceUndefined: Self = StObject.set(x, "nearDistance", js.undefined)
       
-      @scala.inline
-      def setReferencePosition(value: Vector3): Self = StObject.set(x, "referencePosition", value.asInstanceOf[js.Any])
+      inline def setReferencePosition(value: Vector3): Self = StObject.set(x, "referencePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencePositionUndefined: Self = StObject.set(x, "referencePosition", js.undefined)
+      inline def setReferencePositionUndefined: Self = StObject.set(x, "referencePosition", js.undefined)
     }
   }
 }

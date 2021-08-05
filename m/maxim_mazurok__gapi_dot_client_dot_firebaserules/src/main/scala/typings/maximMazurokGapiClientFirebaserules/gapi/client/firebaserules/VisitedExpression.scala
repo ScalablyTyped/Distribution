@@ -14,25 +14,19 @@ trait VisitedExpression extends StObject {
 }
 object VisitedExpression {
   
-  @scala.inline
-  def apply(): VisitedExpression = {
+  inline def apply(): VisitedExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VisitedExpression]
   }
   
-  @scala.inline
-  implicit class VisitedExpressionMutableBuilder[Self <: VisitedExpression] (val x: Self) extends AnyVal {
+  extension [Self <: VisitedExpression](x: Self) {
     
-    @scala.inline
-    def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
+    inline def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
+    inline def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

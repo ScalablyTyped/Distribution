@@ -18,25 +18,19 @@ trait LocationListEntry extends StObject {
 }
 object LocationListEntry {
   
-  @scala.inline
-  def apply(): LocationListEntry = {
+  inline def apply(): LocationListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationListEntry]
   }
   
-  @scala.inline
-  implicit class LocationListEntryMutableBuilder[Self <: LocationListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: LocationListEntry](x: Self) {
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
   }
 }

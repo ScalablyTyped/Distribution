@@ -12,16 +12,13 @@ trait DataRequestedEventArgs extends StObject {
 }
 object DataRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: DataRequest): DataRequestedEventArgs = {
+  inline def apply(request: DataRequest): DataRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class DataRequestedEventArgsMutableBuilder[Self <: DataRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DataRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: DataRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: DataRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

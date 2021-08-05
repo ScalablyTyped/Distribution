@@ -13,16 +13,13 @@ trait RepositoryCredentials extends StObject {
 }
 object RepositoryCredentials {
   
-  @scala.inline
-  def apply(credentialsParameter: String): RepositoryCredentials = {
+  inline def apply(credentialsParameter: String): RepositoryCredentials = {
     val __obj = js.Dynamic.literal(credentialsParameter = credentialsParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryCredentials]
   }
   
-  @scala.inline
-  implicit class RepositoryCredentialsMutableBuilder[Self <: RepositoryCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: RepositoryCredentials](x: Self) {
     
-    @scala.inline
-    def setCredentialsParameter(value: String): Self = StObject.set(x, "credentialsParameter", value.asInstanceOf[js.Any])
+    inline def setCredentialsParameter(value: String): Self = StObject.set(x, "credentialsParameter", value.asInstanceOf[js.Any])
   }
 }

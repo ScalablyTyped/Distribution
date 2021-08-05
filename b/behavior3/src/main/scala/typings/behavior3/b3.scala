@@ -119,8 +119,7 @@ object b3 {
   }
   object BaseNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -137,41 +136,29 @@ object b3 {
       __obj.asInstanceOf[BaseNode]
     }
     
-    @scala.inline
-    implicit class BaseNodeMutableBuilder[Self <: BaseNode] (val x: Self) extends AnyVal {
+    extension [Self <: BaseNode](x: Self) {
       
-      @scala.inline
-      def setClose(value: Tick => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: Tick => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnter(value: Tick => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      inline def setEnter(value: Tick => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExit(value: Tick => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
+      inline def setExit(value: Tick => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpen(value: Tick => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: Tick => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTick(value: Tick => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+      inline def setTick(value: Tick => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_close(value: Tick => Unit): Self = StObject.set(x, "_close", js.Any.fromFunction1(value))
+      inline def set_close(value: Tick => Unit): Self = StObject.set(x, "_close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_enter(value: Tick => Unit): Self = StObject.set(x, "_enter", js.Any.fromFunction1(value))
+      inline def set_enter(value: Tick => Unit): Self = StObject.set(x, "_enter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_execute(value: Tick => Double): Self = StObject.set(x, "_execute", js.Any.fromFunction1(value))
+      inline def set_execute(value: Tick => Double): Self = StObject.set(x, "_execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_exit(value: Tick => Unit): Self = StObject.set(x, "_exit", js.Any.fromFunction1(value))
+      inline def set_exit(value: Tick => Unit): Self = StObject.set(x, "_exit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_open(value: Tick => Unit): Self = StObject.set(x, "_open", js.Any.fromFunction1(value))
+      inline def set_open(value: Tick => Unit): Self = StObject.set(x, "_open", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_tick(value: Tick => Double): Self = StObject.set(x, "_tick", js.Any.fromFunction1(value))
+      inline def set_tick(value: Tick => Double): Self = StObject.set(x, "_tick", js.Any.fromFunction1(value))
     }
   }
   
@@ -383,8 +370,7 @@ object b3 {
   }
   object Blackboard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _getMemory: (String, String) => js.Any,
       _getNodeMemory: (String, String) => js.Any,
       _getTreeMemory: String => js.Any,
@@ -395,23 +381,17 @@ object b3 {
       __obj.asInstanceOf[Blackboard]
     }
     
-    @scala.inline
-    implicit class BlackboardMutableBuilder[Self <: Blackboard] (val x: Self) extends AnyVal {
+    extension [Self <: Blackboard](x: Self) {
       
-      @scala.inline
-      def setGet(value: (String, String, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+      inline def setGet(value: (String, String, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSet(value: (String, String, String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+      inline def setSet(value: (String, String, String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def set_getMemory(value: (String, String) => js.Any): Self = StObject.set(x, "_getMemory", js.Any.fromFunction2(value))
+      inline def set_getMemory(value: (String, String) => js.Any): Self = StObject.set(x, "_getMemory", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_getNodeMemory(value: (String, String) => js.Any): Self = StObject.set(x, "_getNodeMemory", js.Any.fromFunction2(value))
+      inline def set_getNodeMemory(value: (String, String) => js.Any): Self = StObject.set(x, "_getNodeMemory", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_getTreeMemory(value: String => js.Any): Self = StObject.set(x, "_getTreeMemory", js.Any.fromFunction1(value))
+      inline def set_getTreeMemory(value: String => js.Any): Self = StObject.set(x, "_getTreeMemory", js.Any.fromFunction1(value))
     }
   }
   
@@ -507,8 +487,7 @@ object b3 {
        with BaseNode
   object Error {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -535,8 +514,7 @@ object b3 {
        with BaseNode
   object Failer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -564,8 +542,7 @@ object b3 {
        with BaseNode
   object Inverter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -594,8 +571,7 @@ object b3 {
        with BaseNode
   object Limiter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -625,8 +601,7 @@ object b3 {
        with BaseNode
   object MaxTime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -656,8 +631,7 @@ object b3 {
        with BaseNode
   object MemPriority {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -687,8 +661,7 @@ object b3 {
        with BaseNode
   object MemSequence {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -717,8 +690,7 @@ object b3 {
        with BaseNode
   object Priority {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -747,8 +719,7 @@ object b3 {
        with BaseNode
   object RepeatUntilFailure {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -777,8 +748,7 @@ object b3 {
        with BaseNode
   object RepeatUntilSuccess {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -807,8 +777,7 @@ object b3 {
        with BaseNode
   object Repeater {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -835,8 +804,7 @@ object b3 {
        with BaseNode
   object Runner {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -865,8 +833,7 @@ object b3 {
        with BaseNode
   object Sequence {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -893,8 +860,7 @@ object b3 {
        with BaseNode
   object Succeeder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,
@@ -956,8 +922,7 @@ object b3 {
   }
   object Tick {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _closeNode: js.Any => Unit,
       _enterNode: js.Any => Unit,
       _exitNode: js.Any => Unit,
@@ -968,23 +933,17 @@ object b3 {
       __obj.asInstanceOf[Tick]
     }
     
-    @scala.inline
-    implicit class TickMutableBuilder[Self <: Tick] (val x: Self) extends AnyVal {
+    extension [Self <: Tick](x: Self) {
       
-      @scala.inline
-      def set_closeNode(value: js.Any => Unit): Self = StObject.set(x, "_closeNode", js.Any.fromFunction1(value))
+      inline def set_closeNode(value: js.Any => Unit): Self = StObject.set(x, "_closeNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_enterNode(value: js.Any => Unit): Self = StObject.set(x, "_enterNode", js.Any.fromFunction1(value))
+      inline def set_enterNode(value: js.Any => Unit): Self = StObject.set(x, "_enterNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_exitNode(value: js.Any => Unit): Self = StObject.set(x, "_exitNode", js.Any.fromFunction1(value))
+      inline def set_exitNode(value: js.Any => Unit): Self = StObject.set(x, "_exitNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_openNode(value: js.Any => Unit): Self = StObject.set(x, "_openNode", js.Any.fromFunction1(value))
+      inline def set_openNode(value: js.Any => Unit): Self = StObject.set(x, "_openNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_tickNode(value: js.Any => Unit): Self = StObject.set(x, "_tickNode", js.Any.fromFunction1(value))
+      inline def set_tickNode(value: js.Any => Unit): Self = StObject.set(x, "_tickNode", js.Any.fromFunction1(value))
     }
   }
   
@@ -997,8 +956,7 @@ object b3 {
        with BaseNode
   object Wait {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _close: Tick => Unit,
       _enter: Tick => Unit,
       _execute: Tick => Double,

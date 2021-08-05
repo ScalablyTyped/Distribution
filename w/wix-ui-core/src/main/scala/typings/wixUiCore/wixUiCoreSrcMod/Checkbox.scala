@@ -27,12 +27,10 @@ object Checkbox {
   @JSImport("wix-ui-core/src", "Checkbox.defaultProps")
   @js.native
   def defaultProps: PartialCheckboxPropsAccept = js.native
-  @scala.inline
-  def defaultProps_=(x: PartialCheckboxPropsAccept): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PartialCheckboxPropsAccept): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "Checkbox.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

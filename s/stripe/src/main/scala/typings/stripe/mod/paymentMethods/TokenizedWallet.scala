@@ -11,19 +11,15 @@ trait TokenizedWallet extends StObject {
 }
 object TokenizedWallet {
   
-  @scala.inline
-  def apply(): TokenizedWallet = {
+  inline def apply(): TokenizedWallet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenizedWallet]
   }
   
-  @scala.inline
-  implicit class TokenizedWalletMutableBuilder[Self <: TokenizedWallet] (val x: Self) extends AnyVal {
+  extension [Self <: TokenizedWallet](x: Self) {
     
-    @scala.inline
-    def setDynamic_last4(value: String): Self = StObject.set(x, "dynamic_last4", value.asInstanceOf[js.Any])
+    inline def setDynamic_last4(value: String): Self = StObject.set(x, "dynamic_last4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamic_last4Undefined: Self = StObject.set(x, "dynamic_last4", js.undefined)
+    inline def setDynamic_last4Undefined: Self = StObject.set(x, "dynamic_last4", js.undefined)
   }
 }

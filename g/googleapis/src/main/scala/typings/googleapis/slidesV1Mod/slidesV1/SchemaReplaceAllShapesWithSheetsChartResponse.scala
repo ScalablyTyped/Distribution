@@ -16,19 +16,15 @@ trait SchemaReplaceAllShapesWithSheetsChartResponse extends StObject {
 }
 object SchemaReplaceAllShapesWithSheetsChartResponse {
   
-  @scala.inline
-  def apply(): SchemaReplaceAllShapesWithSheetsChartResponse = {
+  inline def apply(): SchemaReplaceAllShapesWithSheetsChartResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplaceAllShapesWithSheetsChartResponse]
   }
   
-  @scala.inline
-  implicit class SchemaReplaceAllShapesWithSheetsChartResponseMutableBuilder[Self <: SchemaReplaceAllShapesWithSheetsChartResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplaceAllShapesWithSheetsChartResponse](x: Self) {
     
-    @scala.inline
-    def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+    inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+    inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
   }
 }

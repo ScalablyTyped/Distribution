@@ -15,25 +15,19 @@ trait ResourceHeaderProps extends StObject {
 }
 object ResourceHeaderProps {
   
-  @scala.inline
-  def apply(index: Double, resource: js.Object): ResourceHeaderProps = {
+  inline def apply(index: Double, resource: js.Object): ResourceHeaderProps = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceHeaderProps]
   }
   
-  @scala.inline
-  implicit class ResourceHeaderPropsMutableBuilder[Self <: ResourceHeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceHeaderProps](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setResource(value: js.Object): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: js.Object): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

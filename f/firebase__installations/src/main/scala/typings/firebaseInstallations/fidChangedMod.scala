@@ -12,12 +12,9 @@ object fidChangedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallback")(appConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallback")(appConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fidChanged(appConfig: AppConfig, fid: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fidChanged")(appConfig.asInstanceOf[js.Any], fid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fidChanged(appConfig: AppConfig, fid: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fidChanged")(appConfig.asInstanceOf[js.Any], fid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCallback")(appConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCallback")(appConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

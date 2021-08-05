@@ -18,28 +18,21 @@ trait ItemCollectionMetrics extends StObject {
 }
 object ItemCollectionMetrics {
   
-  @scala.inline
-  def apply(): ItemCollectionMetrics = {
+  inline def apply(): ItemCollectionMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemCollectionMetrics]
   }
   
-  @scala.inline
-  implicit class ItemCollectionMetricsMutableBuilder[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ItemCollectionMetrics](x: Self) {
     
-    @scala.inline
-    def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
+    inline def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
+    inline def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
     
-    @scala.inline
-    def setSizeEstimateRangeGB(value: ItemCollectionSizeEstimateRange): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
+    inline def setSizeEstimateRangeGB(value: ItemCollectionSizeEstimateRange): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
+    inline def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
     
-    @scala.inline
-    def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
+    inline def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
   }
 }

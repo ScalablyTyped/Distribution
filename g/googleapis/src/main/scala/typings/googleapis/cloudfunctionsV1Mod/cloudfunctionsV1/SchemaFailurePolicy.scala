@@ -17,19 +17,15 @@ trait SchemaFailurePolicy extends StObject {
 }
 object SchemaFailurePolicy {
   
-  @scala.inline
-  def apply(): SchemaFailurePolicy = {
+  inline def apply(): SchemaFailurePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFailurePolicy]
   }
   
-  @scala.inline
-  implicit class SchemaFailurePolicyMutableBuilder[Self <: SchemaFailurePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFailurePolicy](x: Self) {
     
-    @scala.inline
-    def setRetry(value: SchemaRetry): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: SchemaRetry): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }
 }

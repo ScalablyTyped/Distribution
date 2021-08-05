@@ -15,8 +15,7 @@ object mod {
   @js.native
   def $: js.Function1[/* fn */ js.Function, JQuery] = js.native
   
-  @scala.inline
-  def $_=(x: js.Function1[/* fn */ js.Function, JQuery]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$$")(x.asInstanceOf[js.Any])
+  inline def $_=(x: js.Function1[/* fn */ js.Function, JQuery]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$$")(x.asInstanceOf[js.Any])
   
   @JSImport("space-pen", "Builder")
   @js.native
@@ -48,8 +47,7 @@ object mod {
   @js.native
   def DollarDollarDollar: js.Function1[/* fn */ js.Function, js.Any] = js.native
   
-  @scala.inline
-  def DollarDollarDollar_=(x: js.Function1[/* fn */ js.Function, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$$$")(x.asInstanceOf[js.Any])
+  inline def DollarDollarDollar_=(x: js.Function1[/* fn */ js.Function, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$$$")(x.asInstanceOf[js.Any])
   
   // copy & paste start
   @JSImport("space-pen", "View")
@@ -84,489 +82,370 @@ object mod {
     
     // tag start
     /* static member */
-    @scala.inline
-    def a(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("a")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def a(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("a")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def abbr(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abbr")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def abbr(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abbr")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def address(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def address(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def area(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def area(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def article(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("article")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def article(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("article")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def aside(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("aside")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def aside(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("aside")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def audio(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("audio")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def audio(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("audio")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def b(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("b")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def b(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("b")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def base(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def base(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def bdi(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bdi")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def bdi(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bdi")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def bdo(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bdo")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def bdo(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bdo")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def blockquote(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("blockquote")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def blockquote(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("blockquote")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def body(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("body")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def body(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("body")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def br(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("br")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def br(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("br")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def buildHtml(fn: js.Function0[Unit]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildHtml")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def buildHtml(fn: js.Function0[Unit]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildHtml")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /* static member */
     @JSImport("space-pen", "View.builderStack")
     @js.native
     def builderStack: js.Array[typings.spacePen.mod.Builder] = js.native
-    @scala.inline
-    def builderStack_=(x: js.Array[typings.spacePen.mod.Builder]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builderStack")(x.asInstanceOf[js.Any])
+    inline def builderStack_=(x: js.Array[typings.spacePen.mod.Builder]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builderStack")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def button(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("button")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def button(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("button")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def canvas(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def canvas(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def caption(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("caption")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def caption(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("caption")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def cite(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cite")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def cite(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cite")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def code(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def code(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def col(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("col")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def col(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("col")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def colgroup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("colgroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def colgroup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("colgroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def command(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def command(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     // please override this method!
     /* static member */
-    @scala.inline
-    def content(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def content(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("content")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def datalist(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("datalist")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def datalist(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("datalist")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def dd(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dd")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def dd(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dd")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def del(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def del(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def details(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("details")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def details(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("details")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def dfn(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dfn")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def dfn(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dfn")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def div(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("div")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def div(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("div")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def dl(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dl")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def dl(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dl")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def dt(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dt")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def dt(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dt")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def em(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def em(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def embed(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("embed")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def embed(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("embed")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def fieldset(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldset")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def fieldset(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldset")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def figcaption(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("figcaption")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def figcaption(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("figcaption")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def figure(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("figure")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def figure(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("figure")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def footer(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("footer")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def footer(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("footer")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def form(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("form")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def form(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("form")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def h1(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h1")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def h1(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h1")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def h2(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h2")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def h2(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h2")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def h3(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h3")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def h3(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h3")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def h4(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h4")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def h4(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h4")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def h5(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h5")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def h5(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h5")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def h6(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h6")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def h6(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("h6")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def head(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def head(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def header(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("header")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def header(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("header")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def hgroup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hgroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def hgroup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hgroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def hr(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hr")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def hr(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hr")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def html(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def html(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def i(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("i")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def i(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("i")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def iframe(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("iframe")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def iframe(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("iframe")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def img(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("img")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def img(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("img")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def input(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def input(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def ins(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ins")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ins(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ins")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def kbd(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("kbd")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def kbd(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("kbd")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def keygen(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("keygen")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def keygen(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("keygen")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def label(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def label(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def legend(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("legend")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def legend(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("legend")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def li(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("li")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def li(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("li")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def link(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def link(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def map(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def map(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def mark(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mark")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def mark(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mark")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def menu(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("menu")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def menu(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("menu")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def meta(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("meta")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def meta(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("meta")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def meter(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("meter")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def meter(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("meter")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def nav(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nav")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def nav(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nav")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def noscript(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noscript")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def noscript(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noscript")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def `object`(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def `object`(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def ol(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ol")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ol(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ol")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def optgroup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("optgroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def optgroup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("optgroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def option(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def option(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def output(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def output(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def p(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("p")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def p(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("p")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def param(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("param")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def param(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("param")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def popBuilder(): typings.spacePen.mod.Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("popBuilder")().asInstanceOf[typings.spacePen.mod.Builder]
+    inline def popBuilder(): typings.spacePen.mod.Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("popBuilder")().asInstanceOf[typings.spacePen.mod.Builder]
     
     /* static member */
-    @scala.inline
-    def pre(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def pre(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def progress(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("progress")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def progress(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("progress")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def pushBuilder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pushBuilder")().asInstanceOf[Unit]
+    inline def pushBuilder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pushBuilder")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def q(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("q")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def q(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("q")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def raw(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def raw(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def render(fn: js.Function0[Unit]): JQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(fn.asInstanceOf[js.Any]).asInstanceOf[JQuery]
+    inline def render(fn: js.Function0[Unit]): JQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(fn.asInstanceOf[js.Any]).asInstanceOf[JQuery]
     
     /* static member */
-    @scala.inline
-    def rp(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rp")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def rp(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rp")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def rt(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rt")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def rt(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rt")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def ruby(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ruby")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ruby(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ruby")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def s(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def s(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def samp(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("samp")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def samp(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("samp")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def script(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("script")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def script(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("script")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def section(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("section")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def section(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("section")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def select(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def select(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def small(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("small")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def small(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("small")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def source(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def source(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def span(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("span")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def span(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("span")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def strong(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strong")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def strong(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("strong")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def style(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def style(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def sub(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sub")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def sub(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sub")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def subview(name: js.Any, view: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subview")(name.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def subview(name: js.Any, view: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subview")(name.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def summary(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("summary")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def summary(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("summary")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def sup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def sup(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def table(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("table")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def table(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("table")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def tag(tagName: js.Any, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tag")(tagName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def tag(tagName: js.Any, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tag")(tagName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def tbody(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tbody")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def tbody(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tbody")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def td(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("td")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def td(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("td")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def text(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def text(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def textarea(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("textarea")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def textarea(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("textarea")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def tfoot(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tfoot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def tfoot(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tfoot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def th(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("th")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def th(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("th")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def thead(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("thead")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def thead(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("thead")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def time(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def time(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def title(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("title")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def title(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("title")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def tr(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tr")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def tr(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tr")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def track(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def track(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def u(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("u")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def u(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("u")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def ul(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ul")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ul(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ul")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def video(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("video")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def video(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("video")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def wbrk(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wbrk")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def wbrk(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wbrk")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("space-pen", "$")
   @js.native
   def _empty: JQueryStatic = js.native
   
-  @scala.inline
-  def _empty_=(x: JQueryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
+  inline def _empty_=(x: JQueryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
   
   // copy & paste end
   @JSImport("space-pen", "jQuery")
   @js.native
   def jQuery: JQueryStatic = js.native
-  @scala.inline
-  def jQuery_=(x: JQueryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQuery")(x.asInstanceOf[js.Any])
+  inline def jQuery_=(x: JQueryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQuery")(x.asInstanceOf[js.Any])
 }

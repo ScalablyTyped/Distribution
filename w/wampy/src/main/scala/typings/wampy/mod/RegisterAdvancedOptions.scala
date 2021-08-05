@@ -19,25 +19,19 @@ trait RegisterAdvancedOptions extends StObject {
 }
 object RegisterAdvancedOptions {
   
-  @scala.inline
-  def apply(): RegisterAdvancedOptions = {
+  inline def apply(): RegisterAdvancedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterAdvancedOptions]
   }
   
-  @scala.inline
-  implicit class RegisterAdvancedOptionsMutableBuilder[Self <: RegisterAdvancedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterAdvancedOptions](x: Self) {
     
-    @scala.inline
-    def setInvoke(value: single | roundrobin | random | first | last): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+    inline def setInvoke(value: single | roundrobin | random | first | last): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokeUndefined: Self = StObject.set(x, "invoke", js.undefined)
+    inline def setInvokeUndefined: Self = StObject.set(x, "invoke", js.undefined)
     
-    @scala.inline
-    def setMatch(value: prefix | wildcard): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: prefix | wildcard): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
   }
 }

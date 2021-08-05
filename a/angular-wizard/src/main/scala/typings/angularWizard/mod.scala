@@ -77,8 +77,7 @@ object mod {
     }
     object WzStep {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         canenter: /* repeated */ js.Any => Boolean,
         canexit: /* repeated */ js.Any => Boolean,
         description: String,
@@ -91,29 +90,21 @@ object mod {
         __obj.asInstanceOf[WzStep]
       }
       
-      @scala.inline
-      implicit class WzStepMutableBuilder[Self <: WzStep] (val x: Self) extends AnyVal {
+      extension [Self <: WzStep](x: Self) {
         
-        @scala.inline
-        def setCanenter(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "canenter", js.Any.fromFunction1(value))
+        inline def setCanenter(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "canenter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCanexit(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "canexit", js.Any.fromFunction1(value))
+        inline def setCanexit(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "canexit", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+        inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWzData(value: js.Any): Self = StObject.set(x, "wzData", value.asInstanceOf[js.Any])
+        inline def setWzData(value: js.Any): Self = StObject.set(x, "wzData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWzTitle(value: String): Self = StObject.set(x, "wzTitle", value.asInstanceOf[js.Any])
+        inline def setWzTitle(value: String): Self = StObject.set(x, "wzTitle", value.asInstanceOf[js.Any])
       }
     }
   }

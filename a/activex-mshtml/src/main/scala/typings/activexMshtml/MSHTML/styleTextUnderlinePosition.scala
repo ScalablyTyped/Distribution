@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleTextUnderlinePosition extends StObject
 object styleTextUnderlinePosition {
   
-  @scala.inline
-  def styleTextUnderlinePositionAbove: `1` = 1.asInstanceOf[`1`]
+  inline def styleTextUnderlinePositionAbove: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleTextUnderlinePositionAuto: `2` = 2.asInstanceOf[`2`]
+  inline def styleTextUnderlinePositionAuto: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleTextUnderlinePositionBelow: `0` = 0.asInstanceOf[`0`]
+  inline def styleTextUnderlinePositionBelow: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleTextUnderlinePositionNotSet: `3` = 3.asInstanceOf[`3`]
+  inline def styleTextUnderlinePositionNotSet: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleTextUnderlinePosition_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleTextUnderlinePosition_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

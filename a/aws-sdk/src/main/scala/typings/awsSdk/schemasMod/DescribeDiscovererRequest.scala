@@ -13,16 +13,13 @@ trait DescribeDiscovererRequest extends StObject {
 }
 object DescribeDiscovererRequest {
   
-  @scala.inline
-  def apply(DiscovererId: string): DescribeDiscovererRequest = {
+  inline def apply(DiscovererId: string): DescribeDiscovererRequest = {
     val __obj = js.Dynamic.literal(DiscovererId = DiscovererId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDiscovererRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDiscovererRequestMutableBuilder[Self <: DescribeDiscovererRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDiscovererRequest](x: Self) {
     
-    @scala.inline
-    def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
+    inline def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
   }
 }

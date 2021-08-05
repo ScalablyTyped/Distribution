@@ -18,28 +18,21 @@ trait DeregisterInstanceTagAttributeRequest extends StObject {
 }
 object DeregisterInstanceTagAttributeRequest {
   
-  @scala.inline
-  def apply(): DeregisterInstanceTagAttributeRequest = {
+  inline def apply(): DeregisterInstanceTagAttributeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterInstanceTagAttributeRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterInstanceTagAttributeRequestMutableBuilder[Self <: DeregisterInstanceTagAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterInstanceTagAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeAllTagsOfInstance(value: Boolean): Self = StObject.set(x, "IncludeAllTagsOfInstance", value.asInstanceOf[js.Any])
+    inline def setIncludeAllTagsOfInstance(value: Boolean): Self = StObject.set(x, "IncludeAllTagsOfInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAllTagsOfInstanceUndefined: Self = StObject.set(x, "IncludeAllTagsOfInstance", js.undefined)
+    inline def setIncludeAllTagsOfInstanceUndefined: Self = StObject.set(x, "IncludeAllTagsOfInstance", js.undefined)
     
-    @scala.inline
-    def setInstanceTagKeys(value: InstanceTagKeySet): Self = StObject.set(x, "InstanceTagKeys", value.asInstanceOf[js.Any])
+    inline def setInstanceTagKeys(value: InstanceTagKeySet): Self = StObject.set(x, "InstanceTagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTagKeysUndefined: Self = StObject.set(x, "InstanceTagKeys", js.undefined)
+    inline def setInstanceTagKeysUndefined: Self = StObject.set(x, "InstanceTagKeys", js.undefined)
     
-    @scala.inline
-    def setInstanceTagKeysVarargs(value: String*): Self = StObject.set(x, "InstanceTagKeys", js.Array(value :_*))
+    inline def setInstanceTagKeysVarargs(value: String*): Self = StObject.set(x, "InstanceTagKeys", js.Array(value :_*))
   }
 }

@@ -22,25 +22,19 @@ trait OpenExternalOptions extends StObject {
 }
 object OpenExternalOptions {
   
-  @scala.inline
-  def apply(): OpenExternalOptions = {
+  inline def apply(): OpenExternalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenExternalOptions]
   }
   
-  @scala.inline
-  implicit class OpenExternalOptionsMutableBuilder[Self <: OpenExternalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenExternalOptions](x: Self) {
     
-    @scala.inline
-    def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
+    inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
+    inline def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
+    inline def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
   }
 }

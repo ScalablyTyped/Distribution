@@ -12,25 +12,19 @@ trait NodeNewProps extends StObject {
 }
 object NodeNewProps {
   
-  @scala.inline
-  def apply(): NodeNewProps = {
+  inline def apply(): NodeNewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeNewProps]
   }
   
-  @scala.inline
-  implicit class NodeNewPropsMutableBuilder[Self <: NodeNewProps] (val x: Self) extends AnyVal {
+  extension [Self <: NodeNewProps](x: Self) {
     
-    @scala.inline
-    def setRaws(value: NodeRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: NodeRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
+    inline def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
     
-    @scala.inline
-    def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

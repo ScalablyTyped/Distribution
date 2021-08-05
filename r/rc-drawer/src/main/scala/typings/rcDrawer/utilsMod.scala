@@ -15,53 +15,41 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addEventListener(
+  inline def addEventListener(
     target: HTMLElement,
     eventType: String,
     callback: js.Function1[/* e */ TouchEvent[Element] | typings.std.TouchEvent | Event, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addEventListener(
+  inline def addEventListener(
     target: HTMLElement,
     eventType: String,
     callback: js.Function1[/* e */ TouchEvent[Element] | typings.std.TouchEvent | Event, Unit],
     options: js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def dataToArray(vars: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataToArray")(vars.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def dataToArray(vars: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataToArray")(vars.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getTouchParentScroll(root: HTMLElement, currentTarget: Null, differX: Double, differY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getTouchParentScroll")(root.asInstanceOf[js.Any], currentTarget.asInstanceOf[js.Any], differX.asInstanceOf[js.Any], differY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def getTouchParentScroll(root: HTMLElement, currentTarget: Document, differX: Double, differY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getTouchParentScroll")(root.asInstanceOf[js.Any], currentTarget.asInstanceOf[js.Any], differX.asInstanceOf[js.Any], differY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def getTouchParentScroll(root: HTMLElement, currentTarget: HTMLElement, differX: Double, differY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getTouchParentScroll")(root.asInstanceOf[js.Any], currentTarget.asInstanceOf[js.Any], differX.asInstanceOf[js.Any], differY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def getTouchParentScroll(root: HTMLElement, currentTarget: Null, differX: Double, differY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getTouchParentScroll")(root.asInstanceOf[js.Any], currentTarget.asInstanceOf[js.Any], differX.asInstanceOf[js.Any], differY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def getTouchParentScroll(root: HTMLElement, currentTarget: Document, differX: Double, differY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getTouchParentScroll")(root.asInstanceOf[js.Any], currentTarget.asInstanceOf[js.Any], differX.asInstanceOf[js.Any], differY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def getTouchParentScroll(root: HTMLElement, currentTarget: HTMLElement, differX: Double, differY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getTouchParentScroll")(root.asInstanceOf[js.Any], currentTarget.asInstanceOf[js.Any], differX.asInstanceOf[js.Any], differY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNumeric(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")().asInstanceOf[Boolean]
-  @scala.inline
-  def isNumeric(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isNumeric(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNumeric(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")().asInstanceOf[Boolean]
+  inline def isNumeric(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNumeric(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def removeEventListener(
+  inline def removeEventListener(
     target: HTMLElement,
     eventType: String,
     callback: js.Function1[/* e */ TouchEvent[Element] | typings.std.TouchEvent | Event, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeEventListener(
+  inline def removeEventListener(
     target: HTMLElement,
     eventType: String,
     callback: js.Function1[/* e */ TouchEvent[Element] | typings.std.TouchEvent | Event, Unit],
     options: js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def transformArguments(arg: js.Any, cb: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def transformArguments(arg: js.Any, cb: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   @JSImport("rc-drawer/es/utils", "transitionEnd")
   @js.native

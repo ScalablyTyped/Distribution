@@ -10,19 +10,15 @@ trait PutObjectAclOutput extends StObject {
 }
 object PutObjectAclOutput {
   
-  @scala.inline
-  def apply(): PutObjectAclOutput = {
+  inline def apply(): PutObjectAclOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutObjectAclOutput]
   }
   
-  @scala.inline
-  implicit class PutObjectAclOutputMutableBuilder[Self <: PutObjectAclOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectAclOutput](x: Self) {
     
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+    inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+    inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

@@ -13,7 +13,7 @@ trait ContactCard extends StObject {
   
   val Creator: Double = js.native
   
-  @JSName("Office.ContactCard_typekey")
+  /* private */ @JSName("Office.ContactCard_typekey")
   var OfficeDotContactCard_typekey: ContactCard = js.native
   
   /** @param boolean [ShowWithDelay=false] */

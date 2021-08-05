@@ -13,19 +13,15 @@ trait GetBucketInventoryConfigurationOutput extends StObject {
 }
 object GetBucketInventoryConfigurationOutput {
   
-  @scala.inline
-  def apply(): GetBucketInventoryConfigurationOutput = {
+  inline def apply(): GetBucketInventoryConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketInventoryConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketInventoryConfigurationOutputMutableBuilder[Self <: GetBucketInventoryConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketInventoryConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setInventoryConfiguration(value: InventoryConfiguration): Self = StObject.set(x, "InventoryConfiguration", value.asInstanceOf[js.Any])
+    inline def setInventoryConfiguration(value: InventoryConfiguration): Self = StObject.set(x, "InventoryConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryConfigurationUndefined: Self = StObject.set(x, "InventoryConfiguration", js.undefined)
+    inline def setInventoryConfigurationUndefined: Self = StObject.set(x, "InventoryConfiguration", js.undefined)
   }
 }

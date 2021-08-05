@@ -17,22 +17,17 @@ trait IName extends StObject {
 }
 object IName {
   
-  @scala.inline
-  def apply(Culture: String, EntityName: String, SourceID: String): IName = {
+  inline def apply(Culture: String, EntityName: String, SourceID: String): IName = {
     val __obj = js.Dynamic.literal(Culture = Culture.asInstanceOf[js.Any], EntityName = EntityName.asInstanceOf[js.Any], SourceID = SourceID.asInstanceOf[js.Any])
     __obj.asInstanceOf[IName]
   }
   
-  @scala.inline
-  implicit class INameMutableBuilder[Self <: IName] (val x: Self) extends AnyVal {
+  extension [Self <: IName](x: Self) {
     
-    @scala.inline
-    def setCulture(value: String): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: String): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
+    inline def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
+    inline def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
   }
 }

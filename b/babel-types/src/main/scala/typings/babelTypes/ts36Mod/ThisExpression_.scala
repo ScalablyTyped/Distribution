@@ -15,17 +15,14 @@ trait ThisExpression_
 }
 object ThisExpression_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): ThisExpression_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): ThisExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ThisExpression")
     __obj.asInstanceOf[ThisExpression_]
   }
   
-  @scala.inline
-  implicit class ThisExpression_MutableBuilder[Self <: ThisExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: ThisExpression_](x: Self) {
     
-    @scala.inline
-    def setType(value: ThisExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ThisExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

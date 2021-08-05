@@ -18,22 +18,17 @@ trait InstanceInformationFilter extends StObject {
 }
 object InstanceInformationFilter {
   
-  @scala.inline
-  def apply(key: InstanceInformationFilterKey, valueSet: InstanceInformationFilterValueSet): InstanceInformationFilter = {
+  inline def apply(key: InstanceInformationFilterKey, valueSet: InstanceInformationFilterValueSet): InstanceInformationFilter = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], valueSet = valueSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceInformationFilter]
   }
   
-  @scala.inline
-  implicit class InstanceInformationFilterMutableBuilder[Self <: InstanceInformationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceInformationFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: InstanceInformationFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: InstanceInformationFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSet(value: InstanceInformationFilterValueSet): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
+    inline def setValueSet(value: InstanceInformationFilterValueSet): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSetVarargs(value: InstanceInformationFilterValue*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
+    inline def setValueSetVarargs(value: InstanceInformationFilterValue*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
   }
 }

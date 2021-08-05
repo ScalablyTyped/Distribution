@@ -16,8 +16,7 @@ trait ListOnItemsRenderedProps extends StObject {
 }
 object ListOnItemsRenderedProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     overscanStartIndex: Double,
     overscanStopIndex: Double,
     visibleStartIndex: Double,
@@ -27,19 +26,14 @@ object ListOnItemsRenderedProps {
     __obj.asInstanceOf[ListOnItemsRenderedProps]
   }
   
-  @scala.inline
-  implicit class ListOnItemsRenderedPropsMutableBuilder[Self <: ListOnItemsRenderedProps] (val x: Self) extends AnyVal {
+  extension [Self <: ListOnItemsRenderedProps](x: Self) {
     
-    @scala.inline
-    def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscanStopIndex(value: Double): Self = StObject.set(x, "overscanStopIndex", value.asInstanceOf[js.Any])
+    inline def setOverscanStopIndex(value: Double): Self = StObject.set(x, "overscanStopIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleStartIndex(value: Double): Self = StObject.set(x, "visibleStartIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleStartIndex(value: Double): Self = StObject.set(x, "visibleStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleStopIndex(value: Double): Self = StObject.set(x, "visibleStopIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleStopIndex(value: Double): Self = StObject.set(x, "visibleStopIndex", value.asInstanceOf[js.Any])
   }
 }

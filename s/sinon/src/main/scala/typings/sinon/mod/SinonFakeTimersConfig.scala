@@ -15,25 +15,19 @@ trait SinonFakeTimersConfig extends StObject {
 }
 object SinonFakeTimersConfig {
   
-  @scala.inline
-  def apply(now: Double | Date, shouldAdvanceTime: Boolean, toFake: js.Array[String]): SinonFakeTimersConfig = {
+  inline def apply(now: Double | Date, shouldAdvanceTime: Boolean, toFake: js.Array[String]): SinonFakeTimersConfig = {
     val __obj = js.Dynamic.literal(now = now.asInstanceOf[js.Any], shouldAdvanceTime = shouldAdvanceTime.asInstanceOf[js.Any], toFake = toFake.asInstanceOf[js.Any])
     __obj.asInstanceOf[SinonFakeTimersConfig]
   }
   
-  @scala.inline
-  implicit class SinonFakeTimersConfigMutableBuilder[Self <: SinonFakeTimersConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SinonFakeTimersConfig](x: Self) {
     
-    @scala.inline
-    def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    inline def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
+    inline def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToFake(value: js.Array[String]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
+    inline def setToFake(value: js.Array[String]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToFakeVarargs(value: String*): Self = StObject.set(x, "toFake", js.Array(value :_*))
+    inline def setToFakeVarargs(value: String*): Self = StObject.set(x, "toFake", js.Array(value :_*))
   }
 }

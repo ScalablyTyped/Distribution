@@ -25,8 +25,7 @@ trait SessionManager extends StObject {
 }
 object SessionManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isReady: Boolean,
     ready: Thenable[Unit],
     shutdown: String => Thenable[Unit],
@@ -36,25 +35,18 @@ object SessionManager {
     __obj.asInstanceOf[SessionManager]
   }
   
-  @scala.inline
-  implicit class SessionManagerMutableBuilder[Self <: SessionManager] (val x: Self) extends AnyVal {
+  extension [Self <: SessionManager](x: Self) {
     
-    @scala.inline
-    def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
+    inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReady(value: Thenable[Unit]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: Thenable[Unit]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShutdown(value: String => Thenable[Unit]): Self = StObject.set(x, "shutdown", js.Any.fromFunction1(value))
+    inline def setShutdown(value: String => Thenable[Unit]): Self = StObject.set(x, "shutdown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpecs(value: IAllKernels): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+    inline def setSpecs(value: IAllKernels): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
+    inline def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
     
-    @scala.inline
-    def setStartNew(value: ISessionOptions => Thenable[ISession]): Self = StObject.set(x, "startNew", js.Any.fromFunction1(value))
+    inline def setStartNew(value: ISessionOptions => Thenable[ISession]): Self = StObject.set(x, "startNew", js.Any.fromFunction1(value))
   }
 }

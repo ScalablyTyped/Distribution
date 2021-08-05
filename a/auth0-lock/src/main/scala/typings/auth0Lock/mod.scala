@@ -22,6 +22,5 @@ object mod {
   @JSImport("auth0-lock", JSImport.Default)
   @js.native
   def default: Auth0LockStatic = js.native
-  @scala.inline
-  def default_=(x: Auth0LockStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Auth0LockStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

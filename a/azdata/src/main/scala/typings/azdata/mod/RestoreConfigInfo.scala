@@ -11,16 +11,13 @@ trait RestoreConfigInfo extends StObject {
 }
 object RestoreConfigInfo {
   
-  @scala.inline
-  def apply(configInfo: StringDictionary[js.Any]): RestoreConfigInfo = {
+  inline def apply(configInfo: StringDictionary[js.Any]): RestoreConfigInfo = {
     val __obj = js.Dynamic.literal(configInfo = configInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreConfigInfo]
   }
   
-  @scala.inline
-  implicit class RestoreConfigInfoMutableBuilder[Self <: RestoreConfigInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreConfigInfo](x: Self) {
     
-    @scala.inline
-    def setConfigInfo(value: StringDictionary[js.Any]): Self = StObject.set(x, "configInfo", value.asInstanceOf[js.Any])
+    inline def setConfigInfo(value: StringDictionary[js.Any]): Self = StObject.set(x, "configInfo", value.asInstanceOf[js.Any])
   }
 }

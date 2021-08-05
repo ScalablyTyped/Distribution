@@ -15,17 +15,14 @@ trait BreakStatement
 }
 object BreakStatement {
   
-  @scala.inline
-  def apply(): BreakStatement = {
+  inline def apply(): BreakStatement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("BreakStatement")
     __obj.asInstanceOf[BreakStatement]
   }
   
-  @scala.inline
-  implicit class BreakStatementMutableBuilder[Self <: BreakStatement] (val x: Self) extends AnyVal {
+  extension [Self <: BreakStatement](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

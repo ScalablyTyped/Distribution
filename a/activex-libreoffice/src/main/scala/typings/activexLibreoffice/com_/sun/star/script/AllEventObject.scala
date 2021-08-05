@@ -35,8 +35,7 @@ trait AllEventObject
 }
 object AllEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Arguments: SafeArray[js.Any],
     Helper: js.Any,
     ListenerType: `type`,
@@ -47,19 +46,14 @@ object AllEventObject {
     __obj.asInstanceOf[AllEventObject]
   }
   
-  @scala.inline
-  implicit class AllEventObjectMutableBuilder[Self <: AllEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: AllEventObject](x: Self) {
     
-    @scala.inline
-    def setArguments(value: SafeArray[js.Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: SafeArray[js.Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerType(value: `type`): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
+    inline def setListenerType(value: `type`): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodName(value: String): Self = StObject.set(x, "MethodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: String): Self = StObject.set(x, "MethodName", value.asInstanceOf[js.Any])
   }
 }

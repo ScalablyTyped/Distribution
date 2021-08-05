@@ -25,46 +25,33 @@ trait ObserveParamsReportProgressResponseTypeWithCredentials extends StObject {
 }
 object ObserveParamsReportProgressResponseTypeWithCredentials {
   
-  @scala.inline
-  def apply(): ObserveParamsReportProgressResponseTypeWithCredentials = {
+  inline def apply(): ObserveParamsReportProgressResponseTypeWithCredentials = {
     val __obj = js.Dynamic.literal(observe = "events")
     __obj.asInstanceOf[ObserveParamsReportProgressResponseTypeWithCredentials]
   }
   
-  @scala.inline
-  implicit class ObserveParamsReportProgressResponseTypeWithCredentialsMutableBuilder[Self <: ObserveParamsReportProgressResponseTypeWithCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: ObserveParamsReportProgressResponseTypeWithCredentials](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: HttpHeaders | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HttpHeaders | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setObserve(value: events): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
+    inline def setObserve(value: events): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: HttpParams | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: HttpParams | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
+    inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
+    inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: json): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: json): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

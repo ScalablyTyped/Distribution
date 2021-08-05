@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(message: String, optionalParams: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(message: String, optionalParams: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("format-util", JSImport.Namespace)
   @js.native

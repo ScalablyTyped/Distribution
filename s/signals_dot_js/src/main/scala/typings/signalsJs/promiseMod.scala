@@ -23,8 +23,8 @@ object promiseMod {
       */
     def this(valueClasses: js.Any*) = this()
     
-    var isDispatched: js.Any = js.native
+    /* private */ var isDispatched: js.Any = js.native
     
-    var valueObjects: js.Any = js.native
+    /* private */ var valueObjects: js.Any = js.native
   }
 }

@@ -20,25 +20,19 @@ trait IEditorCommentsOptions extends StObject {
 }
 object IEditorCommentsOptions {
   
-  @scala.inline
-  def apply(): IEditorCommentsOptions = {
+  inline def apply(): IEditorCommentsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditorCommentsOptions]
   }
   
-  @scala.inline
-  implicit class IEditorCommentsOptionsMutableBuilder[Self <: IEditorCommentsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorCommentsOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreEmptyLines(value: Boolean): Self = StObject.set(x, "ignoreEmptyLines", value.asInstanceOf[js.Any])
+    inline def setIgnoreEmptyLines(value: Boolean): Self = StObject.set(x, "ignoreEmptyLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreEmptyLinesUndefined: Self = StObject.set(x, "ignoreEmptyLines", js.undefined)
+    inline def setIgnoreEmptyLinesUndefined: Self = StObject.set(x, "ignoreEmptyLines", js.undefined)
     
-    @scala.inline
-    def setInsertSpace(value: Boolean): Self = StObject.set(x, "insertSpace", value.asInstanceOf[js.Any])
+    inline def setInsertSpace(value: Boolean): Self = StObject.set(x, "insertSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSpaceUndefined: Self = StObject.set(x, "insertSpace", js.undefined)
+    inline def setInsertSpaceUndefined: Self = StObject.set(x, "insertSpace", js.undefined)
   }
 }

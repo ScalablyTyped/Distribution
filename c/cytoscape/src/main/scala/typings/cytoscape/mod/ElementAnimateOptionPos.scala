@@ -13,19 +13,15 @@ trait ElementAnimateOptionPos
 }
 object ElementAnimateOptionPos {
   
-  @scala.inline
-  def apply(): ElementAnimateOptionPos = {
+  inline def apply(): ElementAnimateOptionPos = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElementAnimateOptionPos]
   }
   
-  @scala.inline
-  implicit class ElementAnimateOptionPosMutableBuilder[Self <: ElementAnimateOptionPos] (val x: Self) extends AnyVal {
+  extension [Self <: ElementAnimateOptionPos](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

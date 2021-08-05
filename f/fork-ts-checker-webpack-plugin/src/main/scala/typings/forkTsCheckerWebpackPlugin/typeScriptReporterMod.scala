@@ -12,6 +12,5 @@ object typeScriptReporterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTypeScriptReporter(configuration: TypeScriptReporterConfiguration): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporter")(configuration.asInstanceOf[js.Any]).asInstanceOf[Reporter]
+  inline def createTypeScriptReporter(configuration: TypeScriptReporterConfiguration): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporter")(configuration.asInstanceOf[js.Any]).asInstanceOf[Reporter]
 }

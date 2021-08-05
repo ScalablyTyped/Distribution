@@ -18,8 +18,7 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Location: DisplayPosition,
     MatchLevel: String,
     MatchQuality: HouseNumber,
@@ -30,22 +29,16 @@ object Location {
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setLocation(value: DisplayPosition): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: DisplayPosition): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchLevel(value: String): Self = StObject.set(x, "MatchLevel", value.asInstanceOf[js.Any])
+    inline def setMatchLevel(value: String): Self = StObject.set(x, "MatchLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchQuality(value: HouseNumber): Self = StObject.set(x, "MatchQuality", value.asInstanceOf[js.Any])
+    inline def setMatchQuality(value: HouseNumber): Self = StObject.set(x, "MatchQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchType(value: String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevance(value: Double): Self = StObject.set(x, "Relevance", value.asInstanceOf[js.Any])
+    inline def setRelevance(value: Double): Self = StObject.set(x, "Relevance", value.asInstanceOf[js.Any])
   }
 }

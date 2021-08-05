@@ -13,6 +13,5 @@ object absMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def abs[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def abs[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

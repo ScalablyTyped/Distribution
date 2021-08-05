@@ -13,16 +13,13 @@ trait GetFindingsFilterRequest extends StObject {
 }
 object GetFindingsFilterRequest {
   
-  @scala.inline
-  def apply(id: string): GetFindingsFilterRequest = {
+  inline def apply(id: string): GetFindingsFilterRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsFilterRequest]
   }
   
-  @scala.inline
-  implicit class GetFindingsFilterRequestMutableBuilder[Self <: GetFindingsFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingsFilterRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

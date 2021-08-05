@@ -23,29 +23,22 @@ object mod extends Shortcut {
   }
   object CurrencyFormat {
     
-    @scala.inline
-    def apply(pos: String): CurrencyFormat = {
+    inline def apply(pos: String): CurrencyFormat = {
       val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[CurrencyFormat]
     }
     
-    @scala.inline
-    implicit class CurrencyFormatMutableBuilder[Self <: CurrencyFormat] (val x: Self) extends AnyVal {
+    extension [Self <: CurrencyFormat](x: Self) {
       
-      @scala.inline
-      def setNeg(value: String): Self = StObject.set(x, "neg", value.asInstanceOf[js.Any])
+      inline def setNeg(value: String): Self = StObject.set(x, "neg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegUndefined: Self = StObject.set(x, "neg", js.undefined)
+      inline def setNegUndefined: Self = StObject.set(x, "neg", js.undefined)
       
-      @scala.inline
-      def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZero(value: String): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: String): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+      inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
   
@@ -67,44 +60,32 @@ object mod extends Shortcut {
   }
   object CurrencySettings {
     
-    @scala.inline
-    def apply[TFormat](): CurrencySettings[TFormat] = {
+    inline def apply[TFormat](): CurrencySettings[TFormat] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CurrencySettings[TFormat]]
     }
     
-    @scala.inline
-    implicit class CurrencySettingsMutableBuilder[Self <: CurrencySettings[?], TFormat] (val x: Self & CurrencySettings[TFormat]) extends AnyVal {
+    extension [Self <: CurrencySettings[?], TFormat](x: Self & CurrencySettings[TFormat]) {
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setFormat(value: TFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: TFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
+      inline def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
+      inline def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
     }
   }
   
@@ -119,32 +100,24 @@ object mod extends Shortcut {
   }
   object NumberSettings {
     
-    @scala.inline
-    def apply(): NumberSettings = {
+    inline def apply(): NumberSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberSettings]
     }
     
-    @scala.inline
-    implicit class NumberSettingsMutableBuilder[Self <: NumberSettings] (val x: Self) extends AnyVal {
+    extension [Self <: NumberSettings](x: Self) {
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
+      inline def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
+      inline def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
     }
   }
   
@@ -157,20 +130,16 @@ object mod extends Shortcut {
   }
   object Settings {
     
-    @scala.inline
-    def apply(currency: CurrencySettings[js.Any], number: NumberSettings): Settings = {
+    inline def apply(currency: CurrencySettings[js.Any], number: NumberSettings): Settings = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: CurrencySettings[js.Any]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencySettings[js.Any]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: NumberSettings): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: NumberSettings): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
   }
   

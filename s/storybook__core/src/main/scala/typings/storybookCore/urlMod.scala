@@ -13,17 +13,12 @@ object urlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSelectionSpecifierFromPath(): StoreSelectionSpecifier = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectionSpecifierFromPath")().asInstanceOf[StoreSelectionSpecifier]
+  inline def getSelectionSpecifierFromPath(): StoreSelectionSpecifier = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectionSpecifierFromPath")().asInstanceOf[StoreSelectionSpecifier]
   
-  @scala.inline
-  def parseQueryParameters(search: String): String | (js.Array[ParsedQs | String]) | ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQueryParameters")(search.asInstanceOf[js.Any]).asInstanceOf[String | (js.Array[ParsedQs | String]) | ParsedQs]
+  inline def parseQueryParameters(search: String): String | (js.Array[ParsedQs | String]) | ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQueryParameters")(search.asInstanceOf[js.Any]).asInstanceOf[String | (js.Array[ParsedQs | String]) | ParsedQs]
   
-  @scala.inline
-  def pathToId(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToId")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pathToId(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToId")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def setPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")().asInstanceOf[Unit]
-  @scala.inline
-  def setPath(selection: StoreSelection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(selection.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")().asInstanceOf[Unit]
+  inline def setPath(selection: StoreSelection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(selection.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

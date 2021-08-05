@@ -13,19 +13,15 @@ trait RTCSctpTransport extends StObject {
 }
 object RTCSctpTransport {
   
-  @scala.inline
-  def apply(maxMessageSize: Double, transport: RTCDtlsTransport): RTCSctpTransport = {
+  inline def apply(maxMessageSize: Double, transport: RTCDtlsTransport): RTCSctpTransport = {
     val __obj = js.Dynamic.literal(maxMessageSize = maxMessageSize.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSctpTransport]
   }
   
-  @scala.inline
-  implicit class RTCSctpTransportMutableBuilder[Self <: RTCSctpTransport] (val x: Self) extends AnyVal {
+  extension [Self <: RTCSctpTransport](x: Self) {
     
-    @scala.inline
-    def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
+    inline def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransport(value: RTCDtlsTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: RTCDtlsTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
   }
 }

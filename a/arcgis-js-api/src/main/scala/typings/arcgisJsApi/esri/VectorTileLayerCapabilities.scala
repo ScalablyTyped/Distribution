@@ -28,8 +28,7 @@ trait VectorTileLayerCapabilities
 }
 object VectorTileLayerCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     exportMap: VectorTileLayerCapabilitiesExportMap,
     exportTiles: js.Any,
@@ -41,16 +40,12 @@ object VectorTileLayerCapabilities {
     __obj.asInstanceOf[VectorTileLayerCapabilities]
   }
   
-  @scala.inline
-  implicit class VectorTileLayerCapabilitiesMutableBuilder[Self <: VectorTileLayerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: VectorTileLayerCapabilities](x: Self) {
     
-    @scala.inline
-    def setExportMap(value: VectorTileLayerCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
+    inline def setExportMap(value: VectorTileLayerCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTiles(value: js.Any): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
+    inline def setExportTiles(value: js.Any): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: VectorTileLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: VectorTileLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

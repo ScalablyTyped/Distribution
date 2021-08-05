@@ -13,19 +13,15 @@ trait SjclCodec[T] extends StObject {
 }
 object SjclCodec {
   
-  @scala.inline
-  def apply[T](fromBits: BitArray_ => T, toBits: T => BitArray_): SjclCodec[T] = {
+  inline def apply[T](fromBits: BitArray_ => T, toBits: T => BitArray_): SjclCodec[T] = {
     val __obj = js.Dynamic.literal(fromBits = js.Any.fromFunction1(fromBits), toBits = js.Any.fromFunction1(toBits))
     __obj.asInstanceOf[SjclCodec[T]]
   }
   
-  @scala.inline
-  implicit class SjclCodecMutableBuilder[Self <: SjclCodec[?], T] (val x: Self & SjclCodec[T]) extends AnyVal {
+  extension [Self <: SjclCodec[?], T](x: Self & SjclCodec[T]) {
     
-    @scala.inline
-    def setFromBits(value: BitArray_ => T): Self = StObject.set(x, "fromBits", js.Any.fromFunction1(value))
+    inline def setFromBits(value: BitArray_ => T): Self = StObject.set(x, "fromBits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToBits(value: T => BitArray_): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
+    inline def setToBits(value: T => BitArray_): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
   }
 }

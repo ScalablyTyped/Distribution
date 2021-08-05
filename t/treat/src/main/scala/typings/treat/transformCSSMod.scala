@@ -10,8 +10,7 @@ object transformCSSMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(styles: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default(styles: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   @JSImport("treat/lib/types/transformCSS", "simplePseudos")
   @js.native

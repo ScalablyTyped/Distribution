@@ -22,19 +22,15 @@ trait WeightedPodAffinityTerm extends StObject {
 }
 object WeightedPodAffinityTerm {
   
-  @scala.inline
-  def apply(podAffinityTerm: Input[PodAffinityTerm], weight: Input[Double]): WeightedPodAffinityTerm = {
+  inline def apply(podAffinityTerm: Input[PodAffinityTerm], weight: Input[Double]): WeightedPodAffinityTerm = {
     val __obj = js.Dynamic.literal(podAffinityTerm = podAffinityTerm.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedPodAffinityTerm]
   }
   
-  @scala.inline
-  implicit class WeightedPodAffinityTermMutableBuilder[Self <: WeightedPodAffinityTerm] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedPodAffinityTerm](x: Self) {
     
-    @scala.inline
-    def setPodAffinityTerm(value: Input[PodAffinityTerm]): Self = StObject.set(x, "podAffinityTerm", value.asInstanceOf[js.Any])
+    inline def setPodAffinityTerm(value: Input[PodAffinityTerm]): Self = StObject.set(x, "podAffinityTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

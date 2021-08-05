@@ -15,23 +15,18 @@ trait CIMGeometricEffectBase extends StObject {
 }
 object CIMGeometricEffectBase {
   
-  @scala.inline
-  def apply(`type`: String): CIMGeometricEffectBase = {
+  inline def apply(`type`: String): CIMGeometricEffectBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMGeometricEffectBase]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectBaseMutableBuilder[Self <: CIMGeometricEffectBase] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectBase](x: Self) {
     
-    @scala.inline
-    def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
+    inline def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
+    inline def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

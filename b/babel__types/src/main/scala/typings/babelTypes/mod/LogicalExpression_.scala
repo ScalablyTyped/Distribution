@@ -26,8 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object LogicalExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     left: Expression,
     operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
     right: Expression
@@ -37,19 +36,14 @@ object LogicalExpression_ {
     __obj.asInstanceOf[LogicalExpression_]
   }
   
-  @scala.inline
-  implicit class LogicalExpression_MutableBuilder[Self <: LogicalExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: LogicalExpression_](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LogicalExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LogicalExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait FileSaveBinaryInformation
 }
 object FileSaveBinaryInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -46,31 +45,22 @@ object FileSaveBinaryInformation {
     __obj.asInstanceOf[FileSaveBinaryInformation]
   }
   
-  @scala.inline
-  implicit class FileSaveBinaryInformationMutableBuilder[Self <: FileSaveBinaryInformation] (val x: Self) extends AnyVal {
+  extension [Self <: FileSaveBinaryInformation](x: Self) {
     
-    @scala.inline
-    def setGet_checkRequiredFields(value: () => Boolean): Self = StObject.set(x, "get_checkRequiredFields", js.Any.fromFunction0(value))
+    inline def setGet_checkRequiredFields(value: () => Boolean): Self = StObject.set(x, "get_checkRequiredFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_content(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_content", js.Any.fromFunction0(value))
+    inline def setGet_content(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_content", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_eTag(value: () => String): Self = StObject.set(x, "get_eTag", js.Any.fromFunction0(value))
+    inline def setGet_eTag(value: () => String): Self = StObject.set(x, "get_eTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fieldValues(value: () => js.Any): Self = StObject.set(x, "get_fieldValues", js.Any.fromFunction0(value))
+    inline def setGet_fieldValues(value: () => js.Any): Self = StObject.set(x, "get_fieldValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_checkRequiredFields(value: Boolean => Unit): Self = StObject.set(x, "set_checkRequiredFields", js.Any.fromFunction1(value))
+    inline def setSet_checkRequiredFields(value: Boolean => Unit): Self = StObject.set(x, "set_checkRequiredFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_content(value: Base64EncodedByteArray => Unit): Self = StObject.set(x, "set_content", js.Any.fromFunction1(value))
+    inline def setSet_content(value: Base64EncodedByteArray => Unit): Self = StObject.set(x, "set_content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_eTag(value: String => Unit): Self = StObject.set(x, "set_eTag", js.Any.fromFunction1(value))
+    inline def setSet_eTag(value: String => Unit): Self = StObject.set(x, "set_eTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fieldValues(value: js.Any => Unit): Self = StObject.set(x, "set_fieldValues", js.Any.fromFunction1(value))
+    inline def setSet_fieldValues(value: js.Any => Unit): Self = StObject.set(x, "set_fieldValues", js.Any.fromFunction1(value))
   }
 }

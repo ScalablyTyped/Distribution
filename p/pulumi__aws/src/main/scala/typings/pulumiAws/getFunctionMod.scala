@@ -17,10 +17,8 @@ object getFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFunction(args: GetFunctionArgs): js.Promise[GetFunctionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFunctionResult]]
-  @scala.inline
-  def getFunction(args: GetFunctionArgs, opts: InvokeOptions): js.Promise[GetFunctionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunction")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFunctionResult]]
+  inline def getFunction(args: GetFunctionArgs): js.Promise[GetFunctionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFunctionResult]]
+  inline def getFunction(args: GetFunctionArgs, opts: InvokeOptions): js.Promise[GetFunctionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunction")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFunctionResult]]
   
   trait GetFunctionArgs extends StObject {
     
@@ -38,29 +36,22 @@ object getFunctionMod {
   }
   object GetFunctionArgs {
     
-    @scala.inline
-    def apply(functionName: String): GetFunctionArgs = {
+    inline def apply(functionName: String): GetFunctionArgs = {
       val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetFunctionArgs]
     }
     
-    @scala.inline
-    implicit class GetFunctionArgsMutableBuilder[Self <: GetFunctionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetFunctionArgs](x: Self) {
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -184,8 +175,7 @@ object getFunctionMod {
   }
   object GetFunctionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       deadLetterConfig: GetFunctionDeadLetterConfig,
       description: String,
@@ -215,92 +205,63 @@ object getFunctionMod {
       __obj.asInstanceOf[GetFunctionResult]
     }
     
-    @scala.inline
-    implicit class GetFunctionResultMutableBuilder[Self <: GetFunctionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetFunctionResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadLetterConfig(value: GetFunctionDeadLetterConfig): Self = StObject.set(x, "deadLetterConfig", value.asInstanceOf[js.Any])
+      inline def setDeadLetterConfig(value: GetFunctionDeadLetterConfig): Self = StObject.set(x, "deadLetterConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: GetFunctionEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: GetFunctionEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemConfigs(value: js.Array[GetFunctionFileSystemConfig]): Self = StObject.set(x, "fileSystemConfigs", value.asInstanceOf[js.Any])
+      inline def setFileSystemConfigs(value: js.Array[GetFunctionFileSystemConfig]): Self = StObject.set(x, "fileSystemConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemConfigsVarargs(value: GetFunctionFileSystemConfig*): Self = StObject.set(x, "fileSystemConfigs", js.Array(value :_*))
+      inline def setFileSystemConfigsVarargs(value: GetFunctionFileSystemConfig*): Self = StObject.set(x, "fileSystemConfigs", js.Array(value :_*))
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeArn(value: String): Self = StObject.set(x, "invokeArn", value.asInstanceOf[js.Any])
+      inline def setInvokeArn(value: String): Self = StObject.set(x, "invokeArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setMemorySize(value: Double): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
+      inline def setMemorySize(value: Double): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiedArn(value: String): Self = StObject.set(x, "qualifiedArn", value.asInstanceOf[js.Any])
+      inline def setQualifiedArn(value: String): Self = StObject.set(x, "qualifiedArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
       
-      @scala.inline
-      def setReservedConcurrentExecutions(value: Double): Self = StObject.set(x, "reservedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setReservedConcurrentExecutions(value: Double): Self = StObject.set(x, "reservedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeHash(value: String): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
+      inline def setSourceCodeHash(value: String): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeSize(value: Double): Self = StObject.set(x, "sourceCodeSize", value.asInstanceOf[js.Any])
+      inline def setSourceCodeSize(value: Double): Self = StObject.set(x, "sourceCodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingConfig(value: GetFunctionTracingConfig): Self = StObject.set(x, "tracingConfig", value.asInstanceOf[js.Any])
+      inline def setTracingConfig(value: GetFunctionTracingConfig): Self = StObject.set(x, "tracingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfig(value: GetFunctionVpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: GetFunctionVpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
     }
   }
 }

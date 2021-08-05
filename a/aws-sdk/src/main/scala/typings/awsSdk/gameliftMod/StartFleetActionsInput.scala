@@ -18,22 +18,17 @@ trait StartFleetActionsInput extends StObject {
 }
 object StartFleetActionsInput {
   
-  @scala.inline
-  def apply(Actions: FleetActionList, FleetId: FleetIdOrArn): StartFleetActionsInput = {
+  inline def apply(Actions: FleetActionList, FleetId: FleetIdOrArn): StartFleetActionsInput = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], FleetId = FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartFleetActionsInput]
   }
   
-  @scala.inline
-  implicit class StartFleetActionsInputMutableBuilder[Self <: StartFleetActionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartFleetActionsInput](x: Self) {
     
-    @scala.inline
-    def setActions(value: FleetActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: FleetActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: FleetAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: FleetAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
   }
 }

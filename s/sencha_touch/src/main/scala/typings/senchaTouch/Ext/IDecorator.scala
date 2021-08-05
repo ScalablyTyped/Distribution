@@ -23,31 +23,23 @@ trait IDecorator
 }
 object IDecorator {
   
-  @scala.inline
-  def apply(): IDecorator = {
+  inline def apply(): IDecorator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDecorator]
   }
   
-  @scala.inline
-  implicit class IDecoratorMutableBuilder[Self <: IDecorator] (val x: Self) extends AnyVal {
+  extension [Self <: IDecorator](x: Self) {
     
-    @scala.inline
-    def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setGetComponent(value: () => js.Any): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
+    inline def setGetComponent(value: () => js.Any): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
+    inline def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
     
-    @scala.inline
-    def setSetComponent(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setComponent", js.Any.fromFunction1(value))
+    inline def setSetComponent(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetComponentUndefined: Self = StObject.set(x, "setComponent", js.undefined)
+    inline def setSetComponentUndefined: Self = StObject.set(x, "setComponent", js.undefined)
   }
 }

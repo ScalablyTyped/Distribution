@@ -16,35 +16,26 @@ trait APIResponseErrorError extends StObject {
 }
 object APIResponseErrorError {
   
-  @scala.inline
-  def apply(message: String, `type`: String): APIResponseErrorError = {
+  inline def apply(message: String, `type`: String): APIResponseErrorError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], link = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIResponseErrorError]
   }
   
-  @scala.inline
-  implicit class APIResponseErrorErrorMutableBuilder[Self <: APIResponseErrorError] (val x: Self) extends AnyVal {
+  extension [Self <: APIResponseErrorError](x: Self) {
     
-    @scala.inline
-    def setDetails(value: js.Array[APIResponseErrorDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[APIResponseErrorDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: APIResponseErrorDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: APIResponseErrorDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkNull: Self = StObject.set(x, "link", null)
+    inline def setLinkNull: Self = StObject.set(x, "link", null)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

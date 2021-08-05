@@ -10,7 +10,7 @@ trait IAssistance extends StObject {
   /** ClearDefaultContext Method */
   def ClearDefaultContext(HelpId: String): Unit = js.native
   
-  @JSName("Office.IAssistance_typekey")
+  /* private */ @JSName("Office.IAssistance_typekey")
   var OfficeDotIAssistance_typekey: IAssistance = js.native
   
   /**

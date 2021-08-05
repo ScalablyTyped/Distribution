@@ -7,46 +7,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(patterns: String): Unit = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(patterns: String): Unit = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(
     patterns: String,
     options: Null,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(
     patterns: String,
     options: Unit,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(patterns: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(patterns: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     patterns: String,
     options: Options,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(patterns: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(patterns: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(
     patterns: js.Array[String],
     options: Null,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(
     patterns: js.Array[String],
     options: Unit,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(patterns: js.Array[String], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(patterns: js.Array[String], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     patterns: js.Array[String],
     options: Options,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
@@ -137,14 +127,11 @@ object mod {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def auto: typings.gaze.gazeStrings.auto = "auto".asInstanceOf[typings.gaze.gazeStrings.auto]
+    inline def auto: typings.gaze.gazeStrings.auto = "auto".asInstanceOf[typings.gaze.gazeStrings.auto]
     
-    @scala.inline
-    def poll: typings.gaze.gazeStrings.poll = "poll".asInstanceOf[typings.gaze.gazeStrings.poll]
+    inline def poll: typings.gaze.gazeStrings.poll = "poll".asInstanceOf[typings.gaze.gazeStrings.poll]
     
-    @scala.inline
-    def watch: typings.gaze.gazeStrings.watch = "watch".asInstanceOf[typings.gaze.gazeStrings.watch]
+    inline def watch: typings.gaze.gazeStrings.watch = "watch".asInstanceOf[typings.gaze.gazeStrings.watch]
   }
   
   trait Options extends StObject {
@@ -172,38 +159,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDebounceDelay(value: Double): Self = StObject.set(x, "debounceDelay", value.asInstanceOf[js.Any])
+      inline def setDebounceDelay(value: Double): Self = StObject.set(x, "debounceDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceDelayUndefined: Self = StObject.set(x, "debounceDelay", js.undefined)
+      inline def setDebounceDelayUndefined: Self = StObject.set(x, "debounceDelay", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
 }

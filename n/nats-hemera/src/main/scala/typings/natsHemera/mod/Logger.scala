@@ -44,31 +44,23 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(debug: LogFn, error: LogFn, fatal: LogFn, info: LogFn, trace: LogFn, warn: LogFn): Logger = {
+  inline def apply(debug: LogFn, error: LogFn, fatal: LogFn, info: LogFn, trace: LogFn, warn: LogFn): Logger = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setDebug(value: LogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: LogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: LogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: LogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFatal(value: LogFn): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+    inline def setFatal(value: LogFn): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: LogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: LogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrace(value: LogFn): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: LogFn): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarn(value: LogFn): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    inline def setWarn(value: LogFn): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
   }
 }

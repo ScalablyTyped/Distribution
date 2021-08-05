@@ -13,11 +13,11 @@ object lineEquationMod {
   class LineEquation protected () extends StObject {
     def this(aParam: Double, bParam: Double, cParam: Double) = this()
     
-    var aParam: js.Any = js.native
+    /* private */ var aParam: js.Any = js.native
     
-    var bParam: js.Any = js.native
+    /* private */ var bParam: js.Any = js.native
     
-    var cParam: js.Any = js.native
+    /* private */ var cParam: js.Any = js.native
     
     def equals(obj: LineEquation): Boolean = js.native
     
@@ -30,13 +30,10 @@ object lineEquationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def equals(a: LineEquation, b: LineEquation): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(a: LineEquation, b: LineEquation): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def fromPoints(pointA: IPoint, pointB: IPoint): LineEquation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[LineEquation]
+    inline def fromPoints(pointA: IPoint, pointB: IPoint): LineEquation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[LineEquation]
     
-    @scala.inline
-    def getIntersection(a: LineEquation, b: LineEquation): Point | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point | Null]
+    inline def getIntersection(a: LineEquation, b: LineEquation): Point | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point | Null]
   }
 }

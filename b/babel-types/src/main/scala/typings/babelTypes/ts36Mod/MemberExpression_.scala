@@ -22,8 +22,7 @@ trait MemberExpression_
 }
 object MemberExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     computed: Boolean,
     end: Double,
     loc: SourceLocation,
@@ -37,19 +36,14 @@ object MemberExpression_ {
     __obj.asInstanceOf[MemberExpression_]
   }
   
-  @scala.inline
-  implicit class MemberExpression_MutableBuilder[Self <: MemberExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: MemberExpression_](x: Self) {
     
-    @scala.inline
-    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: Expression | Super): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Expression | Super): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Expression): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Expression): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

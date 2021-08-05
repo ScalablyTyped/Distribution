@@ -19,20 +19,16 @@ object anon {
   }
   object ContentType {
     
-    @scala.inline
-    def apply(): ContentType = {
+    inline def apply(): ContentType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentType]
     }
     
-    @scala.inline
-    implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+    extension [Self <: ContentType](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     }
   }
   
@@ -51,20 +47,16 @@ object anon {
   }
   object ReqOpts {
     
-    @scala.inline
-    def apply(): ReqOpts = {
+    inline def apply(): ReqOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReqOpts]
     }
     
-    @scala.inline
-    implicit class ReqOptsMutableBuilder[Self <: ReqOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ReqOpts](x: Self) {
       
-      @scala.inline
-      def setReqOpts(value: CoreOptions): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
+      inline def setReqOpts(value: CoreOptions): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqOptsUndefined: Self = StObject.set(x, "reqOpts", js.undefined)
+      inline def setReqOptsUndefined: Self = StObject.set(x, "reqOpts", js.undefined)
     }
   }
   

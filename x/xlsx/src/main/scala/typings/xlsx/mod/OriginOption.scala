@@ -11,19 +11,15 @@ trait OriginOption extends StObject {
 }
 object OriginOption {
   
-  @scala.inline
-  def apply(): OriginOption = {
+  inline def apply(): OriginOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OriginOption]
   }
   
-  @scala.inline
-  implicit class OriginOptionMutableBuilder[Self <: OriginOption] (val x: Self) extends AnyVal {
+  extension [Self <: OriginOption](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: Double | String | CellAddress): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Double | String | CellAddress): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

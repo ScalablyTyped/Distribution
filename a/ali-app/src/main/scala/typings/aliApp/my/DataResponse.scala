@@ -18,22 +18,17 @@ trait DataResponse extends StObject {
 }
 object DataResponse {
   
-  @scala.inline
-  def apply(data: js.Any, headers: js.Object, status: Double): DataResponse = {
+  inline def apply(data: js.Any, headers: js.Object, status: Double): DataResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataResponse]
   }
   
-  @scala.inline
-  implicit class DataResponseMutableBuilder[Self <: DataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DataResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait RegistryCredential extends StObject {
 }
 object RegistryCredential {
   
-  @scala.inline
-  def apply(credential: NonEmptyString, credentialProvider: CredentialProviderType): RegistryCredential = {
+  inline def apply(credential: NonEmptyString, credentialProvider: CredentialProviderType): RegistryCredential = {
     val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], credentialProvider = credentialProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistryCredential]
   }
   
-  @scala.inline
-  implicit class RegistryCredentialMutableBuilder[Self <: RegistryCredential] (val x: Self) extends AnyVal {
+  extension [Self <: RegistryCredential](x: Self) {
     
-    @scala.inline
-    def setCredential(value: NonEmptyString): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: NonEmptyString): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialProvider(value: CredentialProviderType): Self = StObject.set(x, "credentialProvider", value.asInstanceOf[js.Any])
+    inline def setCredentialProvider(value: CredentialProviderType): Self = StObject.set(x, "credentialProvider", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait TerminationHealth extends StObject {
 }
 object TerminationHealth {
   
-  @scala.inline
-  def apply(): TerminationHealth = {
+  inline def apply(): TerminationHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminationHealth]
   }
   
-  @scala.inline
-  implicit class TerminationHealthMutableBuilder[Self <: TerminationHealth] (val x: Self) extends AnyVal {
+  extension [Self <: TerminationHealth](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

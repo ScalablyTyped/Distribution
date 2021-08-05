@@ -16,8 +16,7 @@ trait DeleteOp
 }
 object DeleteOp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     c: String,
     create: Unit,
     d: String,
@@ -32,16 +31,12 @@ object DeleteOp {
     __obj.asInstanceOf[DeleteOp]
   }
   
-  @scala.inline
-  implicit class DeleteOpMutableBuilder[Self <: DeleteOp] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOp](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Unit): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Unit): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDel(value: Boolean): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+    inline def setDel(value: Boolean): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: Unit): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: Unit): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
   }
 }

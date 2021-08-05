@@ -26,43 +26,31 @@ trait RestoreTableMetadata extends StObject {
 }
 object RestoreTableMetadata {
   
-  @scala.inline
-  def apply(): RestoreTableMetadata = {
+  inline def apply(): RestoreTableMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreTableMetadata]
   }
   
-  @scala.inline
-  implicit class RestoreTableMetadataMutableBuilder[Self <: RestoreTableMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreTableMetadata](x: Self) {
     
-    @scala.inline
-    def setBackupInfo(value: BackupInfo): Self = StObject.set(x, "backupInfo", value.asInstanceOf[js.Any])
+    inline def setBackupInfo(value: BackupInfo): Self = StObject.set(x, "backupInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupInfoUndefined: Self = StObject.set(x, "backupInfo", js.undefined)
+    inline def setBackupInfoUndefined: Self = StObject.set(x, "backupInfo", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptimizeTableOperationName(value: String): Self = StObject.set(x, "optimizeTableOperationName", value.asInstanceOf[js.Any])
+    inline def setOptimizeTableOperationName(value: String): Self = StObject.set(x, "optimizeTableOperationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizeTableOperationNameUndefined: Self = StObject.set(x, "optimizeTableOperationName", js.undefined)
+    inline def setOptimizeTableOperationNameUndefined: Self = StObject.set(x, "optimizeTableOperationName", js.undefined)
     
-    @scala.inline
-    def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait IsISO8601Options extends StObject {
 }
 object IsISO8601Options {
   
-  @scala.inline
-  def apply(): IsISO8601Options = {
+  inline def apply(): IsISO8601Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsISO8601Options]
   }
   
-  @scala.inline
-  implicit class IsISO8601OptionsMutableBuilder[Self <: IsISO8601Options] (val x: Self) extends AnyVal {
+  extension [Self <: IsISO8601Options](x: Self) {
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

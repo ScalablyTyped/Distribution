@@ -15,19 +15,15 @@ trait Artist extends StObject {
 }
 object Artist {
   
-  @scala.inline
-  def apply(id: String, name: String): Artist = {
+  inline def apply(id: String, name: String): Artist = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artist]
   }
   
-  @scala.inline
-  implicit class ArtistMutableBuilder[Self <: Artist] (val x: Self) extends AnyVal {
+  extension [Self <: Artist](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait PivotDataSourceMeasureOptions extends StObject {
 }
 object PivotDataSourceMeasureOptions {
   
-  @scala.inline
-  def apply(values: js.Array[String]): PivotDataSourceMeasureOptions = {
+  inline def apply(values: js.Array[String]): PivotDataSourceMeasureOptions = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotDataSourceMeasureOptions]
   }
   
-  @scala.inline
-  implicit class PivotDataSourceMeasureOptionsMutableBuilder[Self <: PivotDataSourceMeasureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotDataSourceMeasureOptions](x: Self) {
     
-    @scala.inline
-    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

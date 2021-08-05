@@ -75,167 +75,114 @@ object mod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setADD_ATTR(value: js.Array[String]): Self = StObject.set(x, "ADD_ATTR", value.asInstanceOf[js.Any])
+      inline def setADD_ATTR(value: js.Array[String]): Self = StObject.set(x, "ADD_ATTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADD_ATTRUndefined: Self = StObject.set(x, "ADD_ATTR", js.undefined)
+      inline def setADD_ATTRUndefined: Self = StObject.set(x, "ADD_ATTR", js.undefined)
       
-      @scala.inline
-      def setADD_ATTRVarargs(value: String*): Self = StObject.set(x, "ADD_ATTR", js.Array(value :_*))
+      inline def setADD_ATTRVarargs(value: String*): Self = StObject.set(x, "ADD_ATTR", js.Array(value :_*))
       
-      @scala.inline
-      def setADD_DATA_URI_TAGS(value: js.Array[String]): Self = StObject.set(x, "ADD_DATA_URI_TAGS", value.asInstanceOf[js.Any])
+      inline def setADD_DATA_URI_TAGS(value: js.Array[String]): Self = StObject.set(x, "ADD_DATA_URI_TAGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADD_DATA_URI_TAGSUndefined: Self = StObject.set(x, "ADD_DATA_URI_TAGS", js.undefined)
+      inline def setADD_DATA_URI_TAGSUndefined: Self = StObject.set(x, "ADD_DATA_URI_TAGS", js.undefined)
       
-      @scala.inline
-      def setADD_DATA_URI_TAGSVarargs(value: String*): Self = StObject.set(x, "ADD_DATA_URI_TAGS", js.Array(value :_*))
+      inline def setADD_DATA_URI_TAGSVarargs(value: String*): Self = StObject.set(x, "ADD_DATA_URI_TAGS", js.Array(value :_*))
       
-      @scala.inline
-      def setADD_TAGS(value: js.Array[String]): Self = StObject.set(x, "ADD_TAGS", value.asInstanceOf[js.Any])
+      inline def setADD_TAGS(value: js.Array[String]): Self = StObject.set(x, "ADD_TAGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADD_TAGSUndefined: Self = StObject.set(x, "ADD_TAGS", js.undefined)
+      inline def setADD_TAGSUndefined: Self = StObject.set(x, "ADD_TAGS", js.undefined)
       
-      @scala.inline
-      def setADD_TAGSVarargs(value: String*): Self = StObject.set(x, "ADD_TAGS", js.Array(value :_*))
+      inline def setADD_TAGSVarargs(value: String*): Self = StObject.set(x, "ADD_TAGS", js.Array(value :_*))
       
-      @scala.inline
-      def setALLOWED_ATTR(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_ATTR", value.asInstanceOf[js.Any])
+      inline def setALLOWED_ATTR(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_ATTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALLOWED_ATTRUndefined: Self = StObject.set(x, "ALLOWED_ATTR", js.undefined)
+      inline def setALLOWED_ATTRUndefined: Self = StObject.set(x, "ALLOWED_ATTR", js.undefined)
       
-      @scala.inline
-      def setALLOWED_ATTRVarargs(value: String*): Self = StObject.set(x, "ALLOWED_ATTR", js.Array(value :_*))
+      inline def setALLOWED_ATTRVarargs(value: String*): Self = StObject.set(x, "ALLOWED_ATTR", js.Array(value :_*))
       
-      @scala.inline
-      def setALLOWED_TAGS(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_TAGS", value.asInstanceOf[js.Any])
+      inline def setALLOWED_TAGS(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_TAGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALLOWED_TAGSUndefined: Self = StObject.set(x, "ALLOWED_TAGS", js.undefined)
+      inline def setALLOWED_TAGSUndefined: Self = StObject.set(x, "ALLOWED_TAGS", js.undefined)
       
-      @scala.inline
-      def setALLOWED_TAGSVarargs(value: String*): Self = StObject.set(x, "ALLOWED_TAGS", js.Array(value :_*))
+      inline def setALLOWED_TAGSVarargs(value: String*): Self = StObject.set(x, "ALLOWED_TAGS", js.Array(value :_*))
       
-      @scala.inline
-      def setALLOWED_URI_REGEXP(value: RegExp): Self = StObject.set(x, "ALLOWED_URI_REGEXP", value.asInstanceOf[js.Any])
+      inline def setALLOWED_URI_REGEXP(value: RegExp): Self = StObject.set(x, "ALLOWED_URI_REGEXP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALLOWED_URI_REGEXPUndefined: Self = StObject.set(x, "ALLOWED_URI_REGEXP", js.undefined)
+      inline def setALLOWED_URI_REGEXPUndefined: Self = StObject.set(x, "ALLOWED_URI_REGEXP", js.undefined)
       
-      @scala.inline
-      def setALLOW_DATA_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_DATA_ATTR", value.asInstanceOf[js.Any])
+      inline def setALLOW_DATA_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_DATA_ATTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALLOW_DATA_ATTRUndefined: Self = StObject.set(x, "ALLOW_DATA_ATTR", js.undefined)
+      inline def setALLOW_DATA_ATTRUndefined: Self = StObject.set(x, "ALLOW_DATA_ATTR", js.undefined)
       
-      @scala.inline
-      def setALLOW_UNKNOWN_PROTOCOLS(value: Boolean): Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", value.asInstanceOf[js.Any])
+      inline def setALLOW_UNKNOWN_PROTOCOLS(value: Boolean): Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALLOW_UNKNOWN_PROTOCOLSUndefined: Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", js.undefined)
+      inline def setALLOW_UNKNOWN_PROTOCOLSUndefined: Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", js.undefined)
       
-      @scala.inline
-      def setFORBID_ATTR(value: js.Array[String]): Self = StObject.set(x, "FORBID_ATTR", value.asInstanceOf[js.Any])
+      inline def setFORBID_ATTR(value: js.Array[String]): Self = StObject.set(x, "FORBID_ATTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFORBID_ATTRUndefined: Self = StObject.set(x, "FORBID_ATTR", js.undefined)
+      inline def setFORBID_ATTRUndefined: Self = StObject.set(x, "FORBID_ATTR", js.undefined)
       
-      @scala.inline
-      def setFORBID_ATTRVarargs(value: String*): Self = StObject.set(x, "FORBID_ATTR", js.Array(value :_*))
+      inline def setFORBID_ATTRVarargs(value: String*): Self = StObject.set(x, "FORBID_ATTR", js.Array(value :_*))
       
-      @scala.inline
-      def setFORBID_TAGS(value: js.Array[String]): Self = StObject.set(x, "FORBID_TAGS", value.asInstanceOf[js.Any])
+      inline def setFORBID_TAGS(value: js.Array[String]): Self = StObject.set(x, "FORBID_TAGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFORBID_TAGSUndefined: Self = StObject.set(x, "FORBID_TAGS", js.undefined)
+      inline def setFORBID_TAGSUndefined: Self = StObject.set(x, "FORBID_TAGS", js.undefined)
       
-      @scala.inline
-      def setFORBID_TAGSVarargs(value: String*): Self = StObject.set(x, "FORBID_TAGS", js.Array(value :_*))
+      inline def setFORBID_TAGSVarargs(value: String*): Self = StObject.set(x, "FORBID_TAGS", js.Array(value :_*))
       
-      @scala.inline
-      def setFORCE_BODY(value: Boolean): Self = StObject.set(x, "FORCE_BODY", value.asInstanceOf[js.Any])
+      inline def setFORCE_BODY(value: Boolean): Self = StObject.set(x, "FORCE_BODY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFORCE_BODYUndefined: Self = StObject.set(x, "FORCE_BODY", js.undefined)
+      inline def setFORCE_BODYUndefined: Self = StObject.set(x, "FORCE_BODY", js.undefined)
       
-      @scala.inline
-      def setIN_PLACE(value: Boolean): Self = StObject.set(x, "IN_PLACE", value.asInstanceOf[js.Any])
+      inline def setIN_PLACE(value: Boolean): Self = StObject.set(x, "IN_PLACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIN_PLACEUndefined: Self = StObject.set(x, "IN_PLACE", js.undefined)
+      inline def setIN_PLACEUndefined: Self = StObject.set(x, "IN_PLACE", js.undefined)
       
-      @scala.inline
-      def setKEEP_CONTENT(value: Boolean): Self = StObject.set(x, "KEEP_CONTENT", value.asInstanceOf[js.Any])
+      inline def setKEEP_CONTENT(value: Boolean): Self = StObject.set(x, "KEEP_CONTENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKEEP_CONTENTUndefined: Self = StObject.set(x, "KEEP_CONTENT", js.undefined)
+      inline def setKEEP_CONTENTUndefined: Self = StObject.set(x, "KEEP_CONTENT", js.undefined)
       
-      @scala.inline
-      def setRETURN_DOM(value: Boolean): Self = StObject.set(x, "RETURN_DOM", value.asInstanceOf[js.Any])
+      inline def setRETURN_DOM(value: Boolean): Self = StObject.set(x, "RETURN_DOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRETURN_DOMUndefined: Self = StObject.set(x, "RETURN_DOM", js.undefined)
+      inline def setRETURN_DOMUndefined: Self = StObject.set(x, "RETURN_DOM", js.undefined)
       
-      @scala.inline
-      def setRETURN_DOM_FRAGMENT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_FRAGMENT", value.asInstanceOf[js.Any])
+      inline def setRETURN_DOM_FRAGMENT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_FRAGMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRETURN_DOM_FRAGMENTUndefined: Self = StObject.set(x, "RETURN_DOM_FRAGMENT", js.undefined)
+      inline def setRETURN_DOM_FRAGMENTUndefined: Self = StObject.set(x, "RETURN_DOM_FRAGMENT", js.undefined)
       
-      @scala.inline
-      def setRETURN_DOM_IMPORT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_IMPORT", value.asInstanceOf[js.Any])
+      inline def setRETURN_DOM_IMPORT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_IMPORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRETURN_DOM_IMPORTUndefined: Self = StObject.set(x, "RETURN_DOM_IMPORT", js.undefined)
+      inline def setRETURN_DOM_IMPORTUndefined: Self = StObject.set(x, "RETURN_DOM_IMPORT", js.undefined)
       
-      @scala.inline
-      def setRETURN_TRUSTED_TYPE(value: Boolean): Self = StObject.set(x, "RETURN_TRUSTED_TYPE", value.asInstanceOf[js.Any])
+      inline def setRETURN_TRUSTED_TYPE(value: Boolean): Self = StObject.set(x, "RETURN_TRUSTED_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRETURN_TRUSTED_TYPEUndefined: Self = StObject.set(x, "RETURN_TRUSTED_TYPE", js.undefined)
+      inline def setRETURN_TRUSTED_TYPEUndefined: Self = StObject.set(x, "RETURN_TRUSTED_TYPE", js.undefined)
       
-      @scala.inline
-      def setSAFE_FOR_JQUERY(value: Boolean): Self = StObject.set(x, "SAFE_FOR_JQUERY", value.asInstanceOf[js.Any])
+      inline def setSAFE_FOR_JQUERY(value: Boolean): Self = StObject.set(x, "SAFE_FOR_JQUERY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAFE_FOR_JQUERYUndefined: Self = StObject.set(x, "SAFE_FOR_JQUERY", js.undefined)
+      inline def setSAFE_FOR_JQUERYUndefined: Self = StObject.set(x, "SAFE_FOR_JQUERY", js.undefined)
       
-      @scala.inline
-      def setSAFE_FOR_TEMPLATES(value: Boolean): Self = StObject.set(x, "SAFE_FOR_TEMPLATES", value.asInstanceOf[js.Any])
+      inline def setSAFE_FOR_TEMPLATES(value: Boolean): Self = StObject.set(x, "SAFE_FOR_TEMPLATES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAFE_FOR_TEMPLATESUndefined: Self = StObject.set(x, "SAFE_FOR_TEMPLATES", js.undefined)
+      inline def setSAFE_FOR_TEMPLATESUndefined: Self = StObject.set(x, "SAFE_FOR_TEMPLATES", js.undefined)
       
-      @scala.inline
-      def setSANITIZE_DOM(value: Boolean): Self = StObject.set(x, "SANITIZE_DOM", value.asInstanceOf[js.Any])
+      inline def setSANITIZE_DOM(value: Boolean): Self = StObject.set(x, "SANITIZE_DOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSANITIZE_DOMUndefined: Self = StObject.set(x, "SANITIZE_DOM", js.undefined)
+      inline def setSANITIZE_DOMUndefined: Self = StObject.set(x, "SANITIZE_DOM", js.undefined)
       
-      @scala.inline
-      def setUSE_PROFILES(value: `false` | Html): Self = StObject.set(x, "USE_PROFILES", value.asInstanceOf[js.Any])
+      inline def setUSE_PROFILES(value: `false` | Html): Self = StObject.set(x, "USE_PROFILES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSE_PROFILESUndefined: Self = StObject.set(x, "USE_PROFILES", js.undefined)
+      inline def setUSE_PROFILESUndefined: Self = StObject.set(x, "USE_PROFILES", js.undefined)
       
-      @scala.inline
-      def setWHOLE_DOCUMENT(value: Boolean): Self = StObject.set(x, "WHOLE_DOCUMENT", value.asInstanceOf[js.Any])
+      inline def setWHOLE_DOCUMENT(value: Boolean): Self = StObject.set(x, "WHOLE_DOCUMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWHOLE_DOCUMENTUndefined: Self = StObject.set(x, "WHOLE_DOCUMENT", js.undefined)
+      inline def setWHOLE_DOCUMENTUndefined: Self = StObject.set(x, "WHOLE_DOCUMENT", js.undefined)
     }
   }
   
@@ -320,32 +267,23 @@ object mod extends Shortcut {
   trait HookName extends StObject
   object HookName {
     
-    @scala.inline
-    def afterSanitizeAttributes: typings.dompurify.dompurifyStrings.afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeAttributes]
+    inline def afterSanitizeAttributes: typings.dompurify.dompurifyStrings.afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeAttributes]
     
-    @scala.inline
-    def afterSanitizeElements: typings.dompurify.dompurifyStrings.afterSanitizeElements = "afterSanitizeElements".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeElements]
+    inline def afterSanitizeElements: typings.dompurify.dompurifyStrings.afterSanitizeElements = "afterSanitizeElements".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeElements]
     
-    @scala.inline
-    def afterSanitizeShadowDOM: typings.dompurify.dompurifyStrings.afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeShadowDOM]
+    inline def afterSanitizeShadowDOM: typings.dompurify.dompurifyStrings.afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeShadowDOM]
     
-    @scala.inline
-    def beforeSanitizeAttributes: typings.dompurify.dompurifyStrings.beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeAttributes]
+    inline def beforeSanitizeAttributes: typings.dompurify.dompurifyStrings.beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeAttributes]
     
-    @scala.inline
-    def beforeSanitizeElements: typings.dompurify.dompurifyStrings.beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeElements]
+    inline def beforeSanitizeElements: typings.dompurify.dompurifyStrings.beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeElements]
     
-    @scala.inline
-    def beforeSanitizeShadowDOM: typings.dompurify.dompurifyStrings.beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeShadowDOM]
+    inline def beforeSanitizeShadowDOM: typings.dompurify.dompurifyStrings.beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeShadowDOM]
     
-    @scala.inline
-    def uponSanitizeAttribute: typings.dompurify.dompurifyStrings.uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeAttribute]
+    inline def uponSanitizeAttribute: typings.dompurify.dompurifyStrings.uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeAttribute]
     
-    @scala.inline
-    def uponSanitizeElement: typings.dompurify.dompurifyStrings.uponSanitizeElement = "uponSanitizeElement".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeElement]
+    inline def uponSanitizeElement: typings.dompurify.dompurifyStrings.uponSanitizeElement = "uponSanitizeElement".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeElement]
     
-    @scala.inline
-    def uponSanitizeShadowNode: typings.dompurify.dompurifyStrings.uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeShadowNode]
+    inline def uponSanitizeShadowNode: typings.dompurify.dompurifyStrings.uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeShadowNode]
   }
   
   trait SanitizeAttributeHookEvent
@@ -362,8 +300,7 @@ object mod extends Shortcut {
   }
   object SanitizeAttributeHookEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowedAttributes: StringDictionary[Boolean],
       attrName: String,
       attrValue: String,
@@ -373,20 +310,15 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SanitizeAttributeHookEvent]
     }
     
-    @scala.inline
-    implicit class SanitizeAttributeHookEventMutableBuilder[Self <: SanitizeAttributeHookEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SanitizeAttributeHookEvent](x: Self) {
       
-      @scala.inline
-      def setAllowedAttributes(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
+      inline def setAllowedAttributes(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrName(value: String): Self = StObject.set(x, "attrName", value.asInstanceOf[js.Any])
+      inline def setAttrName(value: String): Self = StObject.set(x, "attrName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrValue(value: String): Self = StObject.set(x, "attrValue", value.asInstanceOf[js.Any])
+      inline def setAttrValue(value: String): Self = StObject.set(x, "attrValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAttr(value: Boolean): Self = StObject.set(x, "keepAttr", value.asInstanceOf[js.Any])
+      inline def setKeepAttr(value: Boolean): Self = StObject.set(x, "keepAttr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,28 +332,23 @@ object mod extends Shortcut {
   }
   object SanitizeElementHookEvent {
     
-    @scala.inline
-    def apply(allowedTags: StringDictionary[Boolean], tagName: String): SanitizeElementHookEvent = {
+    inline def apply(allowedTags: StringDictionary[Boolean], tagName: String): SanitizeElementHookEvent = {
       val __obj = js.Dynamic.literal(allowedTags = allowedTags.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SanitizeElementHookEvent]
     }
     
-    @scala.inline
-    implicit class SanitizeElementHookEventMutableBuilder[Self <: SanitizeElementHookEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SanitizeElementHookEvent](x: Self) {
       
-      @scala.inline
-      def setAllowedTags(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
+      inline def setAllowedTags(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   
   trait _HookEvent extends StObject
   object _HookEvent {
     
-    @scala.inline
-    def SanitizeAttributeHookEvent(
+    inline def SanitizeAttributeHookEvent(
       allowedAttributes: StringDictionary[Boolean],
       attrName: String,
       attrValue: String,
@@ -431,8 +358,7 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.dompurify.mod.SanitizeAttributeHookEvent]
     }
     
-    @scala.inline
-    def SanitizeElementHookEvent(allowedTags: StringDictionary[Boolean], tagName: String): typings.dompurify.mod.SanitizeElementHookEvent = {
+    inline def SanitizeElementHookEvent(allowedTags: StringDictionary[Boolean], tagName: String): typings.dompurify.mod.SanitizeElementHookEvent = {
       val __obj = js.Dynamic.literal(allowedTags = allowedTags.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.dompurify.mod.SanitizeElementHookEvent]
     }

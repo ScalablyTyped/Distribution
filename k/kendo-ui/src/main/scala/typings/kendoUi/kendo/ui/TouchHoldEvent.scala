@@ -16,25 +16,19 @@ trait TouchHoldEvent
 }
 object TouchHoldEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Touch): TouchHoldEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Touch): TouchHoldEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchHoldEvent]
   }
   
-  @scala.inline
-  implicit class TouchHoldEventMutableBuilder[Self <: TouchHoldEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TouchHoldEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setTouch(value: TouchEventOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: TouchEventOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+    inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
   }
 }

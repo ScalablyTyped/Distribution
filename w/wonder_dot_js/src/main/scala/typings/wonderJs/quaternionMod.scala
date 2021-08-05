@@ -69,37 +69,21 @@ object quaternionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double): Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double, y: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double, y: Double, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double, y: Double, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double, y: Double, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double, y: Unit, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double, y: Unit, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Double, y: Unit, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Unit, y: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Unit, y: Double, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Unit, y: Double, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Unit, y: Double, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Unit, y: Unit, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Unit, y: Unit, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
-    @scala.inline
-    def create(x: Unit, y: Unit, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(): Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Quaternion]
+    inline def create(x: Double): Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[Quaternion]
+    inline def create(x: Double, y: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Double, y: Double, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Double, y: Double, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Double, y: Double, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Double, y: Unit, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Double, y: Unit, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Double, y: Unit, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Unit, y: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Unit, y: Double, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Unit, y: Double, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Unit, y: Double, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Unit, y: Unit, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Unit, y: Unit, z: Double, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def create(x: Unit, y: Unit, z: Unit, w: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
   }
 }

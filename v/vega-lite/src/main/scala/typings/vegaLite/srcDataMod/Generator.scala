@@ -15,20 +15,17 @@ trait Generator
      with Data
 object Generator {
   
-  @scala.inline
-  def GraticuleGenerator(graticule: `true` | GraticuleParams): typings.vegaLite.srcDataMod.GraticuleGenerator = {
+  inline def GraticuleGenerator(graticule: `true` | GraticuleParams): typings.vegaLite.srcDataMod.GraticuleGenerator = {
     val __obj = js.Dynamic.literal(graticule = graticule.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.GraticuleGenerator]
   }
   
-  @scala.inline
-  def SequenceGenerator(sequence: SequenceParams): typings.vegaLite.srcDataMod.SequenceGenerator = {
+  inline def SequenceGenerator(sequence: SequenceParams): typings.vegaLite.srcDataMod.SequenceGenerator = {
     val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.SequenceGenerator]
   }
   
-  @scala.inline
-  def SphereGenerator(sphere: `true` | js.Object): typings.vegaLite.srcDataMod.SphereGenerator = {
+  inline def SphereGenerator(sphere: `true` | js.Object): typings.vegaLite.srcDataMod.SphereGenerator = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.SphereGenerator]
   }

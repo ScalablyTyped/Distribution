@@ -14,19 +14,15 @@ trait DialogflowV1MessageText
 }
 object DialogflowV1MessageText {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageText = {
+  inline def apply(): DialogflowV1MessageText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1MessageText]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageTextMutableBuilder[Self <: DialogflowV1MessageText] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageText](x: Self) {
     
-    @scala.inline
-    def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
+    inline def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
+    inline def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
   }
 }

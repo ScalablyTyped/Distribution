@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAnimatedPreserveAspectRatio extends StObject {
   
-  @JSName("MSHTML.SVGAnimatedPreserveAspectRatio_typekey")
+  /* private */ @JSName("MSHTML.SVGAnimatedPreserveAspectRatio_typekey")
   var MSHTMLDotSVGAnimatedPreserveAspectRatio_typekey: SVGAnimatedPreserveAspectRatio
   
   var animVal: SVGPreserveAspectRatio
@@ -15,8 +15,7 @@ trait SVGAnimatedPreserveAspectRatio extends StObject {
 }
 object SVGAnimatedPreserveAspectRatio {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGAnimatedPreserveAspectRatio_typekey: SVGAnimatedPreserveAspectRatio,
     animVal: SVGPreserveAspectRatio,
     baseVal: SVGPreserveAspectRatio
@@ -26,16 +25,12 @@ object SVGAnimatedPreserveAspectRatio {
     __obj.asInstanceOf[SVGAnimatedPreserveAspectRatio]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedPreserveAspectRatioMutableBuilder[Self <: SVGAnimatedPreserveAspectRatio] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedPreserveAspectRatio](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: SVGPreserveAspectRatio): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: SVGPreserveAspectRatio): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: SVGPreserveAspectRatio): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: SVGPreserveAspectRatio): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedPreserveAspectRatio_typekey(value: SVGAnimatedPreserveAspectRatio): Self = StObject.set(x, "MSHTML.SVGAnimatedPreserveAspectRatio_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGAnimatedPreserveAspectRatio_typekey(value: SVGAnimatedPreserveAspectRatio): Self = StObject.set(x, "MSHTML.SVGAnimatedPreserveAspectRatio_typekey", value.asInstanceOf[js.Any])
   }
 }

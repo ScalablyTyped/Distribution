@@ -58,17 +58,14 @@ object typesInvalidArgumentExceptionMod {
   }
   object InvalidArgumentException {
     
-    @scala.inline
-    def apply(): InvalidArgumentException = {
+    inline def apply(): InvalidArgumentException = {
       val __obj = js.Dynamic.literal(name = "InvalidArgumentException")
       __obj.asInstanceOf[InvalidArgumentException]
     }
     
-    @scala.inline
-    implicit class InvalidArgumentExceptionMutableBuilder[Self <: InvalidArgumentException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidArgumentException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -83,20 +80,16 @@ object typesInvalidArgumentExceptionMod {
   }
   object InvalidArgumentExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidArgumentExceptionDetails = {
+    inline def apply(): InvalidArgumentExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidArgumentExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidArgumentExceptionDetailsMutableBuilder[Self <: InvalidArgumentExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidArgumentExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

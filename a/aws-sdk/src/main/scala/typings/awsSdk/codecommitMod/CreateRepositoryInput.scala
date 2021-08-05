@@ -23,28 +23,21 @@ trait CreateRepositoryInput extends StObject {
 }
 object CreateRepositoryInput {
   
-  @scala.inline
-  def apply(repositoryName: RepositoryName): CreateRepositoryInput = {
+  inline def apply(repositoryName: RepositoryName): CreateRepositoryInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRepositoryInput]
   }
   
-  @scala.inline
-  implicit class CreateRepositoryInputMutableBuilder[Self <: CreateRepositoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRepositoryInput](x: Self) {
     
-    @scala.inline
-    def setRepositoryDescription(value: RepositoryDescription): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
+    inline def setRepositoryDescription(value: RepositoryDescription): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
+    inline def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

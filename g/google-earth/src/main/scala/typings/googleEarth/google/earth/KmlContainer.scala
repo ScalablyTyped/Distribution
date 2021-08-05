@@ -42,8 +42,7 @@ trait KmlContainer
 }
 object KmlContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -98,19 +97,14 @@ object KmlContainer {
     __obj.asInstanceOf[KmlContainer]
   }
   
-  @scala.inline
-  implicit class KmlContainerMutableBuilder[Self <: KmlContainer] (val x: Self) extends AnyVal {
+  extension [Self <: KmlContainer](x: Self) {
     
-    @scala.inline
-    def setGetElementById(value: String => KmlObject): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
+    inline def setGetElementById(value: String => KmlObject): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementByUrl(value: String => KmlObject): Self = StObject.set(x, "getElementByUrl", js.Any.fromFunction1(value))
+    inline def setGetElementByUrl(value: String => KmlObject): Self = StObject.set(x, "getElementByUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementsByType(value: String => KmlObjectList[KmlObject]): Self = StObject.set(x, "getElementsByType", js.Any.fromFunction1(value))
+    inline def setGetElementsByType(value: String => KmlObjectList[KmlObject]): Self = StObject.set(x, "getElementsByType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
+    inline def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
   }
 }

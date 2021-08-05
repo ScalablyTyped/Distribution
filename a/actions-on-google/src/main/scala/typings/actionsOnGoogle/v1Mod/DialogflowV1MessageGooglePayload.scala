@@ -15,19 +15,15 @@ trait DialogflowV1MessageGooglePayload
 }
 object DialogflowV1MessageGooglePayload {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageGooglePayload = {
+  inline def apply(): DialogflowV1MessageGooglePayload = {
     val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageGooglePayload]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageGooglePayloadMutableBuilder[Self <: DialogflowV1MessageGooglePayload] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageGooglePayload](x: Self) {
     
-    @scala.inline
-    def setPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

@@ -20,25 +20,19 @@ trait LookupBase extends StObject {
 }
 object LookupBase {
   
-  @scala.inline
-  def apply(key: FieldName): LookupBase = {
+  inline def apply(key: FieldName): LookupBase = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupBase]
   }
   
-  @scala.inline
-  implicit class LookupBaseMutableBuilder[Self <: LookupBase] (val x: Self) extends AnyVal {
+  extension [Self <: LookupBase](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[FieldName]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldName]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldName*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldName*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: FieldName): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: FieldName): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

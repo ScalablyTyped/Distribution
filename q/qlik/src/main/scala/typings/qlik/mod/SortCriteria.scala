@@ -25,8 +25,7 @@ trait SortCriteria extends StObject {
 }
 object SortCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qExpression: ValueExpr,
     qSortByAscii: `-1` | `0` | `1`,
     qSortByExpression: `-1` | `0` | `1`,
@@ -39,28 +38,20 @@ object SortCriteria {
     __obj.asInstanceOf[SortCriteria]
   }
   
-  @scala.inline
-  implicit class SortCriteriaMutableBuilder[Self <: SortCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SortCriteria](x: Self) {
     
-    @scala.inline
-    def setQExpression(value: ValueExpr): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
+    inline def setQExpression(value: ValueExpr): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortByAscii(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByAscii", value.asInstanceOf[js.Any])
+    inline def setQSortByAscii(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByAscii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortByExpression(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByExpression", value.asInstanceOf[js.Any])
+    inline def setQSortByExpression(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortByFrequency(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByFrequency", value.asInstanceOf[js.Any])
+    inline def setQSortByFrequency(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortByLoadOrder(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByLoadOrder", value.asInstanceOf[js.Any])
+    inline def setQSortByLoadOrder(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByLoadOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortByNumeric(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByNumeric", value.asInstanceOf[js.Any])
+    inline def setQSortByNumeric(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByNumeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortByState(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByState", value.asInstanceOf[js.Any])
+    inline def setQSortByState(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByState", value.asInstanceOf[js.Any])
   }
 }

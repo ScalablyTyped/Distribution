@@ -28,6 +28,6 @@ trait KeysBoundTo extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.KeysBoundTo_typekey")
+  /* private */ @JSName("Word.KeysBoundTo_typekey")
   var WordDotKeysBoundTo_typekey: KeysBoundTo = js.native
 }

@@ -38,8 +38,7 @@ object authTokenProviderMod {
     @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "EmulatorAdminTokenProvider.EMULATOR_AUTH_TOKEN")
     @js.native
     def EMULATOR_AUTH_TOKEN: js.Any = js.native
-    @scala.inline
-    def EMULATOR_AUTH_TOKEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMULATOR_AUTH_TOKEN")(x.asInstanceOf[js.Any])
+    inline def EMULATOR_AUTH_TOKEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMULATOR_AUTH_TOKEN")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "FirebaseAuthTokenProvider")
@@ -52,11 +51,11 @@ object authTokenProviderMod {
     /* CompleteClass */
     override def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
     
-    var app_ : js.Any = js.native
+    /* private */ var app_ : js.Any = js.native
     
-    var authProvider_ : js.Any = js.native
+    /* private */ var authProvider_ : js.Any = js.native
     
-    var auth_ : js.Any = js.native
+    /* private */ var auth_ : js.Any = js.native
     
     /* CompleteClass */
     override def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData] = js.native
@@ -80,8 +79,7 @@ object authTokenProviderMod {
   }
   object AuthTokenProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addTokenChangeListener: js.Function1[/* token */ String | Null, Unit] => Unit,
       getToken: Boolean => js.Promise[FirebaseAuthTokenData],
       notifyForInvalidToken: () => Unit,
@@ -91,20 +89,15 @@ object authTokenProviderMod {
       __obj.asInstanceOf[AuthTokenProvider]
     }
     
-    @scala.inline
-    implicit class AuthTokenProviderMutableBuilder[Self <: AuthTokenProvider] (val x: Self) extends AnyVal {
+    extension [Self <: AuthTokenProvider](x: Self) {
       
-      @scala.inline
-      def setAddTokenChangeListener(value: js.Function1[/* token */ String | Null, Unit] => Unit): Self = StObject.set(x, "addTokenChangeListener", js.Any.fromFunction1(value))
+      inline def setAddTokenChangeListener(value: js.Function1[/* token */ String | Null, Unit] => Unit): Self = StObject.set(x, "addTokenChangeListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetToken(value: Boolean => js.Promise[FirebaseAuthTokenData]): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
+      inline def setGetToken(value: Boolean => js.Promise[FirebaseAuthTokenData]): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyForInvalidToken(value: () => Unit): Self = StObject.set(x, "notifyForInvalidToken", js.Any.fromFunction0(value))
+      inline def setNotifyForInvalidToken(value: () => Unit): Self = StObject.set(x, "notifyForInvalidToken", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveTokenChangeListener(value: js.Function1[/* token */ String | Null, Unit] => Unit): Self = StObject.set(x, "removeTokenChangeListener", js.Any.fromFunction1(value))
+      inline def setRemoveTokenChangeListener(value: js.Function1[/* token */ String | Null, Unit] => Unit): Self = StObject.set(x, "removeTokenChangeListener", js.Any.fromFunction1(value))
     }
   }
 }

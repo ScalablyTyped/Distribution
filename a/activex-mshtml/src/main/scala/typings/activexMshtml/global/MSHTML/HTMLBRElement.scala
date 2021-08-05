@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLBRElement")
 @js.native
-class HTMLBRElement protected ()
+/* private */ class HTMLBRElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLBRElement

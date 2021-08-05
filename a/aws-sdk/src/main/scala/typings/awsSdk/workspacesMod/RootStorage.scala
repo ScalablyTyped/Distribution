@@ -13,19 +13,15 @@ trait RootStorage extends StObject {
 }
 object RootStorage {
   
-  @scala.inline
-  def apply(): RootStorage = {
+  inline def apply(): RootStorage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RootStorage]
   }
   
-  @scala.inline
-  implicit class RootStorageMutableBuilder[Self <: RootStorage] (val x: Self) extends AnyVal {
+  extension [Self <: RootStorage](x: Self) {
     
-    @scala.inline
-    def setCapacity(value: NonEmptyString): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: NonEmptyString): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUndefined: Self = StObject.set(x, "Capacity", js.undefined)
+    inline def setCapacityUndefined: Self = StObject.set(x, "Capacity", js.undefined)
   }
 }

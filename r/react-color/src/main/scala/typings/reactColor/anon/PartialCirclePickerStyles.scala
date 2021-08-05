@@ -12,19 +12,15 @@ trait PartialCirclePickerStyles extends StObject {
 }
 object PartialCirclePickerStyles {
   
-  @scala.inline
-  def apply(): PartialCirclePickerStyles = {
+  inline def apply(): PartialCirclePickerStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCirclePickerStyles]
   }
   
-  @scala.inline
-  implicit class PartialCirclePickerStylesMutableBuilder[Self <: PartialCirclePickerStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCirclePickerStyles](x: Self) {
     
-    @scala.inline
-    def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
   }
 }

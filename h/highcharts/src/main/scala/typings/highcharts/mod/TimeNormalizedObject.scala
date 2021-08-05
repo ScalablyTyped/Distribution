@@ -18,19 +18,15 @@ trait TimeNormalizedObject extends StObject {
 }
 object TimeNormalizedObject {
   
-  @scala.inline
-  def apply(count: Double, unitRange: Double): TimeNormalizedObject = {
+  inline def apply(count: Double, unitRange: Double): TimeNormalizedObject = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], unitRange = unitRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeNormalizedObject]
   }
   
-  @scala.inline
-  implicit class TimeNormalizedObjectMutableBuilder[Self <: TimeNormalizedObject] (val x: Self) extends AnyVal {
+  extension [Self <: TimeNormalizedObject](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitRange(value: Double): Self = StObject.set(x, "unitRange", value.asInstanceOf[js.Any])
+    inline def setUnitRange(value: Double): Self = StObject.set(x, "unitRange", value.asInstanceOf[js.Any])
   }
 }

@@ -85,21 +85,16 @@ object functionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Function]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FunctionState): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Function]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID], state: FunctionState): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
     
     /**
       * Returns true if the given object is an instance of Function.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/function.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/function.Function */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/function.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/function.Function */ Boolean]
   }
   
   trait FunctionArgs extends StObject {
@@ -141,8 +136,7 @@ object functionMod {
   }
   object FunctionArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiId: Input[String],
       dataSource: Input[String],
       requestMappingTemplate: Input[String],
@@ -152,38 +146,27 @@ object functionMod {
       __obj.asInstanceOf[FunctionArgs]
     }
     
-    @scala.inline
-    implicit class FunctionArgsMutableBuilder[Self <: FunctionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionArgs](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSource(value: Input[String]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Input[String]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFunctionVersion(value: Input[String]): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
+      inline def setFunctionVersion(value: Input[String]): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
+      inline def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRequestMappingTemplate(value: Input[String]): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
+      inline def setRequestMappingTemplate(value: Input[String]): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseMappingTemplate(value: Input[String]): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
+      inline def setResponseMappingTemplate(value: Input[String]): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,68 +219,48 @@ object functionMod {
   }
   object FunctionState {
     
-    @scala.inline
-    def apply(): FunctionState = {
+    inline def apply(): FunctionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FunctionState]
     }
     
-    @scala.inline
-    implicit class FunctionStateMutableBuilder[Self <: FunctionState] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionState](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDataSource(value: Input[String]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Input[String]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+      inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFunctionId(value: Input[String]): Self = StObject.set(x, "functionId", value.asInstanceOf[js.Any])
+      inline def setFunctionId(value: Input[String]): Self = StObject.set(x, "functionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionIdUndefined: Self = StObject.set(x, "functionId", js.undefined)
+      inline def setFunctionIdUndefined: Self = StObject.set(x, "functionId", js.undefined)
       
-      @scala.inline
-      def setFunctionVersion(value: Input[String]): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
+      inline def setFunctionVersion(value: Input[String]): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
+      inline def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRequestMappingTemplate(value: Input[String]): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
+      inline def setRequestMappingTemplate(value: Input[String]): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestMappingTemplateUndefined: Self = StObject.set(x, "requestMappingTemplate", js.undefined)
+      inline def setRequestMappingTemplateUndefined: Self = StObject.set(x, "requestMappingTemplate", js.undefined)
       
-      @scala.inline
-      def setResponseMappingTemplate(value: Input[String]): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
+      inline def setResponseMappingTemplate(value: Input[String]): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
+      inline def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
     }
   }
 }

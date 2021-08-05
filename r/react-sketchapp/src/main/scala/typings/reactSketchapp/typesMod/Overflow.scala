@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Overflow extends StObject
 object Overflow {
   
-  @scala.inline
-  def hidden: typings.reactSketchapp.reactSketchappStrings.hidden = "hidden".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.hidden]
+  inline def hidden: typings.reactSketchapp.reactSketchappStrings.hidden = "hidden".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.hidden]
   
-  @scala.inline
-  def scroll: typings.reactSketchapp.reactSketchappStrings.scroll = "scroll".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.scroll]
+  inline def scroll: typings.reactSketchapp.reactSketchappStrings.scroll = "scroll".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.scroll]
   
-  @scala.inline
-  def visible: typings.reactSketchapp.reactSketchappStrings.visible = "visible".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.visible]
+  inline def visible: typings.reactSketchapp.reactSketchappStrings.visible = "visible".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.visible]
 }

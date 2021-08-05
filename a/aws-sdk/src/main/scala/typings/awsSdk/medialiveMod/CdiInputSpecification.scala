@@ -13,19 +13,15 @@ trait CdiInputSpecification extends StObject {
 }
 object CdiInputSpecification {
   
-  @scala.inline
-  def apply(): CdiInputSpecification = {
+  inline def apply(): CdiInputSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CdiInputSpecification]
   }
   
-  @scala.inline
-  implicit class CdiInputSpecificationMutableBuilder[Self <: CdiInputSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: CdiInputSpecification](x: Self) {
     
-    @scala.inline
-    def setResolution(value: CdiInputResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: CdiInputResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
   }
 }

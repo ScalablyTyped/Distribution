@@ -218,8 +218,7 @@ object auth {
   }
   object AuthSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appVerificationDisabledForTesting: Boolean,
       setAutoRetrievedSmsCodeForPhoneNumber: (String, String) => js.Promise[Null]
     ): AuthSettings = {
@@ -227,14 +226,11 @@ object auth {
       __obj.asInstanceOf[AuthSettings]
     }
     
-    @scala.inline
-    implicit class AuthSettingsMutableBuilder[Self <: AuthSettings] (val x: Self) extends AnyVal {
+    extension [Self <: AuthSettings](x: Self) {
       
-      @scala.inline
-      def setAppVerificationDisabledForTesting(value: Boolean): Self = StObject.set(x, "appVerificationDisabledForTesting", value.asInstanceOf[js.Any])
+      inline def setAppVerificationDisabledForTesting(value: Boolean): Self = StObject.set(x, "appVerificationDisabledForTesting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAutoRetrievedSmsCodeForPhoneNumber(value: (String, String) => js.Promise[Null]): Self = StObject.set(x, "setAutoRetrievedSmsCodeForPhoneNumber", js.Any.fromFunction2(value))
+      inline def setSetAutoRetrievedSmsCodeForPhoneNumber(value: (String, String) => js.Promise[Null]): Self = StObject.set(x, "setAutoRetrievedSmsCodeForPhoneNumber", js.Any.fromFunction2(value))
     }
   }
   
@@ -260,8 +256,7 @@ object auth {
   }
   object AuthStatics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AppleAuthProvider: AuthProvider,
       EmailAuthProvider: EmailAuthProvider,
       FacebookAuthProvider: AuthProvider,
@@ -276,35 +271,25 @@ object auth {
       __obj.asInstanceOf[AuthStatics]
     }
     
-    @scala.inline
-    implicit class AuthStaticsMutableBuilder[Self <: AuthStatics] (val x: Self) extends AnyVal {
+    extension [Self <: AuthStatics](x: Self) {
       
-      @scala.inline
-      def setAppleAuthProvider(value: AuthProvider): Self = StObject.set(x, "AppleAuthProvider", value.asInstanceOf[js.Any])
+      inline def setAppleAuthProvider(value: AuthProvider): Self = StObject.set(x, "AppleAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAuthProvider(value: EmailAuthProvider): Self = StObject.set(x, "EmailAuthProvider", value.asInstanceOf[js.Any])
+      inline def setEmailAuthProvider(value: EmailAuthProvider): Self = StObject.set(x, "EmailAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacebookAuthProvider(value: AuthProvider): Self = StObject.set(x, "FacebookAuthProvider", value.asInstanceOf[js.Any])
+      inline def setFacebookAuthProvider(value: AuthProvider): Self = StObject.set(x, "FacebookAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGithubAuthProvider(value: AuthProvider): Self = StObject.set(x, "GithubAuthProvider", value.asInstanceOf[js.Any])
+      inline def setGithubAuthProvider(value: AuthProvider): Self = StObject.set(x, "GithubAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogleAuthProvider(value: AuthProvider): Self = StObject.set(x, "GoogleAuthProvider", value.asInstanceOf[js.Any])
+      inline def setGoogleAuthProvider(value: AuthProvider): Self = StObject.set(x, "GoogleAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOAuthProvider(value: AuthProvider): Self = StObject.set(x, "OAuthProvider", value.asInstanceOf[js.Any])
+      inline def setOAuthProvider(value: AuthProvider): Self = StObject.set(x, "OAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneAuthProvider(value: AuthProvider): Self = StObject.set(x, "PhoneAuthProvider", value.asInstanceOf[js.Any])
+      inline def setPhoneAuthProvider(value: AuthProvider): Self = StObject.set(x, "PhoneAuthProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneAuthState(value: AUTOVERIFIED): Self = StObject.set(x, "PhoneAuthState", value.asInstanceOf[js.Any])
+      inline def setPhoneAuthState(value: AUTOVERIFIED): Self = StObject.set(x, "PhoneAuthState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwitterAuthProvider(value: AuthProvider): Self = StObject.set(x, "TwitterAuthProvider", value.asInstanceOf[js.Any])
+      inline def setTwitterAuthProvider(value: AuthProvider): Self = StObject.set(x, "TwitterAuthProvider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,8 +307,7 @@ object auth {
   }
   object EmailAuthProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EMAIL_LINK_SIGN_IN_METHOD: String,
       EMAIL_PASSWORD_SIGN_IN_METHOD: String,
       PROVIDER_ID: String,
@@ -334,23 +318,17 @@ object auth {
       __obj.asInstanceOf[EmailAuthProvider]
     }
     
-    @scala.inline
-    implicit class EmailAuthProviderMutableBuilder[Self <: EmailAuthProvider] (val x: Self) extends AnyVal {
+    extension [Self <: EmailAuthProvider](x: Self) {
       
-      @scala.inline
-      def setCredential(value: (String, String) => AuthCredential): Self = StObject.set(x, "credential", js.Any.fromFunction2(value))
+      inline def setCredential(value: (String, String) => AuthCredential): Self = StObject.set(x, "credential", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCredentialWithLink(value: (String, String) => AuthCredential): Self = StObject.set(x, "credentialWithLink", js.Any.fromFunction2(value))
+      inline def setCredentialWithLink(value: (String, String) => AuthCredential): Self = StObject.set(x, "credentialWithLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEMAIL_LINK_SIGN_IN_METHOD(value: String): Self = StObject.set(x, "EMAIL_LINK_SIGN_IN_METHOD", value.asInstanceOf[js.Any])
+      inline def setEMAIL_LINK_SIGN_IN_METHOD(value: String): Self = StObject.set(x, "EMAIL_LINK_SIGN_IN_METHOD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMAIL_PASSWORD_SIGN_IN_METHOD(value: String): Self = StObject.set(x, "EMAIL_PASSWORD_SIGN_IN_METHOD", value.asInstanceOf[js.Any])
+      inline def setEMAIL_PASSWORD_SIGN_IN_METHOD(value: String): Self = StObject.set(x, "EMAIL_PASSWORD_SIGN_IN_METHOD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROVIDER_ID(value: String): Self = StObject.set(x, "PROVIDER_ID", value.asInstanceOf[js.Any])
+      inline def setPROVIDER_ID(value: String): Self = StObject.set(x, "PROVIDER_ID", value.asInstanceOf[js.Any])
     }
   }
   

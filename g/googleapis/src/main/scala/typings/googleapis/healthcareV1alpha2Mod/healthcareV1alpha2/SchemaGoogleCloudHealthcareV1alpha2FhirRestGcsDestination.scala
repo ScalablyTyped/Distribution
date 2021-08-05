@@ -20,19 +20,15 @@ trait SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination extends StObject
 }
 object SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination = {
+  inline def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestinationMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination](x: Self) {
     
-    @scala.inline
-    def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
+    inline def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
+    inline def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
   }
 }

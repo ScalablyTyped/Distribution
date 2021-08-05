@@ -18,22 +18,17 @@ trait MobileBroadbandPinLockStateChange extends StObject {
 }
 object MobileBroadbandPinLockStateChange {
   
-  @scala.inline
-  def apply(deviceId: String, pinLockState: MobileBroadbandPinLockState, pinType: MobileBroadbandPinType): MobileBroadbandPinLockStateChange = {
+  inline def apply(deviceId: String, pinLockState: MobileBroadbandPinLockState, pinType: MobileBroadbandPinType): MobileBroadbandPinLockStateChange = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], pinLockState = pinLockState.asInstanceOf[js.Any], pinType = pinType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandPinLockStateChange]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandPinLockStateChangeMutableBuilder[Self <: MobileBroadbandPinLockStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandPinLockStateChange](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinLockState(value: MobileBroadbandPinLockState): Self = StObject.set(x, "pinLockState", value.asInstanceOf[js.Any])
+    inline def setPinLockState(value: MobileBroadbandPinLockState): Self = StObject.set(x, "pinLockState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinType(value: MobileBroadbandPinType): Self = StObject.set(x, "pinType", value.asInstanceOf[js.Any])
+    inline def setPinType(value: MobileBroadbandPinType): Self = StObject.set(x, "pinType", value.asInstanceOf[js.Any])
   }
 }

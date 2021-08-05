@@ -21,8 +21,7 @@ trait Page
 }
 object Page {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: Color,
     children: js.Array[Screen | Image | Rectangle | Ellipse | Diamond],
     id: String,
@@ -33,25 +32,18 @@ object Page {
     __obj.asInstanceOf[Page]
   }
   
-  @scala.inline
-  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+  extension [Self <: Page](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[Screen | Image | Rectangle | Ellipse | Diamond]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Screen | Image | Rectangle | Ellipse | Diamond]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (Screen | Image | Rectangle | Ellipse | Diamond)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (Screen | Image | Rectangle | Ellipse | Diamond)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setStartNodeID(value: String): Self = StObject.set(x, "startNodeID", value.asInstanceOf[js.Any])
+    inline def setStartNodeID(value: String): Self = StObject.set(x, "startNodeID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartNodeIDUndefined: Self = StObject.set(x, "startNodeID", js.undefined)
+    inline def setStartNodeIDUndefined: Self = StObject.set(x, "startNodeID", js.undefined)
     
-    @scala.inline
-    def setType(value: PAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

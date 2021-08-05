@@ -12,19 +12,15 @@ trait Definition extends StObject {
 }
 object Definition {
   
-  @scala.inline
-  def apply(definition: scala.Double, draft: scala.Double): Definition = {
+  inline def apply(definition: scala.Double, draft: scala.Double): Definition = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], draft = draft.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
   
-  @scala.inline
-  implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
+  extension [Self <: Definition](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: scala.Double): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: scala.Double): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraft(value: scala.Double): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: scala.Double): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
   }
 }

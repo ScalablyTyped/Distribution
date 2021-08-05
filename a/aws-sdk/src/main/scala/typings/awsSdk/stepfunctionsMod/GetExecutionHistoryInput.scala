@@ -33,40 +33,29 @@ trait GetExecutionHistoryInput extends StObject {
 }
 object GetExecutionHistoryInput {
   
-  @scala.inline
-  def apply(executionArn: Arn): GetExecutionHistoryInput = {
+  inline def apply(executionArn: Arn): GetExecutionHistoryInput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExecutionHistoryInput]
   }
   
-  @scala.inline
-  implicit class GetExecutionHistoryInputMutableBuilder[Self <: GetExecutionHistoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetExecutionHistoryInput](x: Self) {
     
-    @scala.inline
-    def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+    inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeExecutionData(value: IncludeExecutionDataGetExecutionHistory): Self = StObject.set(x, "includeExecutionData", value.asInstanceOf[js.Any])
+    inline def setIncludeExecutionData(value: IncludeExecutionDataGetExecutionHistory): Self = StObject.set(x, "includeExecutionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeExecutionDataUndefined: Self = StObject.set(x, "includeExecutionData", js.undefined)
+    inline def setIncludeExecutionDataUndefined: Self = StObject.set(x, "includeExecutionData", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
+    inline def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
+    inline def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
   }
 }

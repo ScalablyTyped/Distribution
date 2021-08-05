@@ -35,8 +35,7 @@ trait BuyProviderInfo extends StObject {
 }
 object BuyProviderInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     companyName: String,
     isActive: Boolean,
     logo: String,
@@ -52,49 +51,34 @@ object BuyProviderInfo {
     __obj.asInstanceOf[BuyProviderInfo]
   }
   
-  @scala.inline
-  implicit class BuyProviderInfoMutableBuilder[Self <: BuyProviderInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BuyProviderInfo](x: Self) {
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethods(value: js.Array[BuyCryptoPaymentMethod]): Self = StObject.set(x, "paymentMethods", value.asInstanceOf[js.Any])
+    inline def setPaymentMethods(value: js.Array[BuyCryptoPaymentMethod]): Self = StObject.set(x, "paymentMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethodsVarargs(value: BuyCryptoPaymentMethod*): Self = StObject.set(x, "paymentMethods", js.Array(value :_*))
+    inline def setPaymentMethodsVarargs(value: BuyCryptoPaymentMethod*): Self = StObject.set(x, "paymentMethods", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
+    inline def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
+    inline def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCountries(value: js.Array[String]): Self = StObject.set(x, "supportedCountries", value.asInstanceOf[js.Any])
+    inline def setSupportedCountries(value: js.Array[String]): Self = StObject.set(x, "supportedCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
+    inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setTradedCoins(value: js.Array[String]): Self = StObject.set(x, "tradedCoins", value.asInstanceOf[js.Any])
+    inline def setTradedCoins(value: js.Array[String]): Self = StObject.set(x, "tradedCoins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTradedCoinsVarargs(value: String*): Self = StObject.set(x, "tradedCoins", js.Array(value :_*))
+    inline def setTradedCoinsVarargs(value: String*): Self = StObject.set(x, "tradedCoins", js.Array(value :_*))
     
-    @scala.inline
-    def setTradedFiatCurrencies(value: js.Array[String]): Self = StObject.set(x, "tradedFiatCurrencies", value.asInstanceOf[js.Any])
+    inline def setTradedFiatCurrencies(value: js.Array[String]): Self = StObject.set(x, "tradedFiatCurrencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTradedFiatCurrenciesVarargs(value: String*): Self = StObject.set(x, "tradedFiatCurrencies", js.Array(value :_*))
+    inline def setTradedFiatCurrenciesVarargs(value: String*): Self = StObject.set(x, "tradedFiatCurrencies", js.Array(value :_*))
   }
 }

@@ -14,22 +14,17 @@ trait DraggableOptions extends StObject {
 }
 object DraggableOptions {
   
-  @scala.inline
-  def apply(canDragInteractiveElements: Boolean, isEnabled: Boolean, shouldRespectForcePress: Boolean): DraggableOptions = {
+  inline def apply(canDragInteractiveElements: Boolean, isEnabled: Boolean, shouldRespectForcePress: Boolean): DraggableOptions = {
     val __obj = js.Dynamic.literal(canDragInteractiveElements = canDragInteractiveElements.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], shouldRespectForcePress = shouldRespectForcePress.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableOptions]
   }
   
-  @scala.inline
-  implicit class DraggableOptionsMutableBuilder[Self <: DraggableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableOptions](x: Self) {
     
-    @scala.inline
-    def setCanDragInteractiveElements(value: Boolean): Self = StObject.set(x, "canDragInteractiveElements", value.asInstanceOf[js.Any])
+    inline def setCanDragInteractiveElements(value: Boolean): Self = StObject.set(x, "canDragInteractiveElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRespectForcePress(value: Boolean): Self = StObject.set(x, "shouldRespectForcePress", value.asInstanceOf[js.Any])
+    inline def setShouldRespectForcePress(value: Boolean): Self = StObject.set(x, "shouldRespectForcePress", value.asInstanceOf[js.Any])
   }
 }

@@ -31,8 +31,7 @@ trait XTextPortionAppend
 }
 object XTextPortionAppend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     appendTextPortion: (String, PropertyValues) => XTextRange,
     insertTextPortion: (String, PropertyValues, XTextRange) => XTextRange,
@@ -43,13 +42,10 @@ object XTextPortionAppend {
     __obj.asInstanceOf[XTextPortionAppend]
   }
   
-  @scala.inline
-  implicit class XTextPortionAppendMutableBuilder[Self <: XTextPortionAppend] (val x: Self) extends AnyVal {
+  extension [Self <: XTextPortionAppend](x: Self) {
     
-    @scala.inline
-    def setAppendTextPortion(value: (String, PropertyValues) => XTextRange): Self = StObject.set(x, "appendTextPortion", js.Any.fromFunction2(value))
+    inline def setAppendTextPortion(value: (String, PropertyValues) => XTextRange): Self = StObject.set(x, "appendTextPortion", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertTextPortion(value: (String, PropertyValues, XTextRange) => XTextRange): Self = StObject.set(x, "insertTextPortion", js.Any.fromFunction3(value))
+    inline def setInsertTextPortion(value: (String, PropertyValues, XTextRange) => XTextRange): Self = StObject.set(x, "insertTextPortion", js.Any.fromFunction3(value))
   }
 }

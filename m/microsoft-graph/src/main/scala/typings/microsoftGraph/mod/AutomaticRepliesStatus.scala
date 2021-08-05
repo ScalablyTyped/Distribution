@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutomaticRepliesStatus extends StObject
 object AutomaticRepliesStatus {
   
-  @scala.inline
-  def alwaysEnabled: typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled = "alwaysEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled]
+  inline def alwaysEnabled: typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled = "alwaysEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled]
   
-  @scala.inline
-  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
+  inline def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
   
-  @scala.inline
-  def scheduled: typings.microsoftGraph.microsoftGraphStrings.scheduled = "scheduled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.scheduled]
+  inline def scheduled: typings.microsoftGraph.microsoftGraphStrings.scheduled = "scheduled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.scheduled]
 }

@@ -18,16 +18,13 @@ trait ASPxClientDashboardTitleToolbarUpdatedEventArgs
 }
 object ASPxClientDashboardTitleToolbarUpdatedEventArgs {
   
-  @scala.inline
-  def apply(Options: js.Any): ASPxClientDashboardTitleToolbarUpdatedEventArgs = {
+  inline def apply(Options: js.Any): ASPxClientDashboardTitleToolbarUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardTitleToolbarUpdatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardTitleToolbarUpdatedEventArgsMutableBuilder[Self <: ASPxClientDashboardTitleToolbarUpdatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardTitleToolbarUpdatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ trait PhysicsAnimationState
 }
 object PhysicsAnimationState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     finished: AnimatedValue[Double],
     position: AnimatedValue[Double],
     time: AnimatedValue[Double],
@@ -23,10 +22,8 @@ object PhysicsAnimationState {
     __obj.asInstanceOf[PhysicsAnimationState]
   }
   
-  @scala.inline
-  implicit class PhysicsAnimationStateMutableBuilder[Self <: PhysicsAnimationState] (val x: Self) extends AnyVal {
+  extension [Self <: PhysicsAnimationState](x: Self) {
     
-    @scala.inline
-    def setVelocity(value: AnimatedValue[Double]): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: AnimatedValue[Double]): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

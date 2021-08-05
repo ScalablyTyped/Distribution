@@ -27,7 +27,7 @@ object directThreadEntityMod {
     
     def addUser(userIds: js.Array[Double | String]): js.Promise[DirectThreadRepositoryAddUserResponseRootObject] = js.native
     
-    var broadcast: js.Any = js.native
+    /* private */ var broadcast: js.Any = js.native
     
     def broadcastLink(link_text: String, link_urls: js.Array[String]): js.Promise[
         DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload

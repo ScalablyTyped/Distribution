@@ -15,19 +15,15 @@ trait BackgroundTaskCompletedEventArgs extends StObject {
 }
 object BackgroundTaskCompletedEventArgs {
   
-  @scala.inline
-  def apply(checkResult: () => Unit, instanceId: String): BackgroundTaskCompletedEventArgs = {
+  inline def apply(checkResult: () => Unit, instanceId: String): BackgroundTaskCompletedEventArgs = {
     val __obj = js.Dynamic.literal(checkResult = js.Any.fromFunction0(checkResult), instanceId = instanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundTaskCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class BackgroundTaskCompletedEventArgsMutableBuilder[Self <: BackgroundTaskCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundTaskCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCheckResult(value: () => Unit): Self = StObject.set(x, "checkResult", js.Any.fromFunction0(value))
+    inline def setCheckResult(value: () => Unit): Self = StObject.set(x, "checkResult", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
   }
 }

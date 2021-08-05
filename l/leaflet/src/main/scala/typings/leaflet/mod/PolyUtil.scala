@@ -10,8 +10,6 @@ object PolyUtil {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
-  @scala.inline
-  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression, round: Boolean): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
+  inline def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
+  inline def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression, round: Boolean): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
 }

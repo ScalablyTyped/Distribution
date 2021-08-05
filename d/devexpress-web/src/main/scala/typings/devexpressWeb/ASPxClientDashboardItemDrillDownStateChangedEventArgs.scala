@@ -23,8 +23,7 @@ trait ASPxClientDashboardItemDrillDownStateChangedEventArgs
 }
 object ASPxClientDashboardItemDrillDownStateChangedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Action: String,
     IsNullValue: js.Any => Boolean,
     IsOthersValue: js.Any => Boolean,
@@ -35,16 +34,12 @@ object ASPxClientDashboardItemDrillDownStateChangedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemDrillDownStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemDrillDownStateChangedEventArgsMutableBuilder[Self <: ASPxClientDashboardItemDrillDownStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemDrillDownStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

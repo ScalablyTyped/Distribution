@@ -17,20 +17,16 @@ object Preview {
   }
   object InstalledClassicAppInfo {
     
-    @scala.inline
-    def apply(displayName: js.Any, displayVersion: js.Any): InstalledClassicAppInfo = {
+    inline def apply(displayName: js.Any, displayVersion: js.Any): InstalledClassicAppInfo = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], displayVersion = displayVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstalledClassicAppInfo]
     }
     
-    @scala.inline
-    implicit class InstalledClassicAppInfoMutableBuilder[Self <: InstalledClassicAppInfo] (val x: Self) extends AnyVal {
+    extension [Self <: InstalledClassicAppInfo](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: js.Any): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: js.Any): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayVersion(value: js.Any): Self = StObject.set(x, "displayVersion", value.asInstanceOf[js.Any])
+      inline def setDisplayVersion(value: js.Any): Self = StObject.set(x, "displayVersion", value.asInstanceOf[js.Any])
     }
   }
 }

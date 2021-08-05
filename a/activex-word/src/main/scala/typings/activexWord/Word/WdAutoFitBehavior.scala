@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdAutoFitBehavior extends StObject
 object WdAutoFitBehavior {
   
-  @scala.inline
-  def wdAutoFitContent: `1` = 1.asInstanceOf[`1`]
+  inline def wdAutoFitContent: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdAutoFitFixed: `0` = 0.asInstanceOf[`0`]
+  inline def wdAutoFitFixed: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdAutoFitWindow: `2` = 2.asInstanceOf[`2`]
+  inline def wdAutoFitWindow: `2` = 2.asInstanceOf[`2`]
 }

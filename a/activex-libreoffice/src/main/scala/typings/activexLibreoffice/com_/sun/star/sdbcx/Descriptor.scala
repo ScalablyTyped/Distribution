@@ -28,8 +28,7 @@ trait Descriptor
 }
 object Descriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
@@ -47,10 +46,8 @@ object Descriptor {
     __obj.asInstanceOf[Descriptor]
   }
   
-  @scala.inline
-  implicit class DescriptorMutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
+  extension [Self <: Descriptor](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

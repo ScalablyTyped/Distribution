@@ -12,25 +12,19 @@ trait Signals extends StObject {
 }
 object Signals {
   
-  @scala.inline
-  def apply(): Signals = {
+  inline def apply(): Signals = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Signals]
   }
   
-  @scala.inline
-  implicit class SignalsMutableBuilder[Self <: Signals] (val x: Self) extends AnyVal {
+  extension [Self <: Signals](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setSignals(value: js.Any): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
+    inline def setSignals(value: js.Any): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+    inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
   }
 }

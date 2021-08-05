@@ -23,38 +23,28 @@ object anon {
   }
   object Ddoc {
     
-    @scala.inline
-    def apply(fields: js.Array[String]): Ddoc = {
+    inline def apply(fields: js.Array[String]): Ddoc = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ddoc]
     }
     
-    @scala.inline
-    implicit class DdocMutableBuilder[Self <: Ddoc] (val x: Self) extends AnyVal {
+    extension [Self <: Ddoc](x: Self) {
       
-      @scala.inline
-      def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
+      inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDdocUndefined: Self = StObject.set(x, "ddoc", js.undefined)
+      inline def setDdocUndefined: Self = StObject.set(x, "ddoc", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -64,20 +54,16 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(fields: js.Array[StringDictionary[String]]): Fields = {
+    inline def apply(fields: js.Array[StringDictionary[String]]): Fields = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "fields", js.Array(value :_*))
     }
   }
 }

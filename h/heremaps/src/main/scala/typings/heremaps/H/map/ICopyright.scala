@@ -17,19 +17,15 @@ trait ICopyright extends StObject {
 }
 object ICopyright {
   
-  @scala.inline
-  def apply(alt: String, label: String): ICopyright = {
+  inline def apply(alt: String, label: String): ICopyright = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICopyright]
   }
   
-  @scala.inline
-  implicit class ICopyrightMutableBuilder[Self <: ICopyright] (val x: Self) extends AnyVal {
+  extension [Self <: ICopyright](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

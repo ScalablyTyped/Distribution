@@ -30,7 +30,7 @@ object navLinkMod {
     
     var el: HTMLElement = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     @JSName("render")
     def render_MNavLink(): js.Any = js.native

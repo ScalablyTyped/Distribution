@@ -10,12 +10,10 @@ object subscribeOnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def subscribeOn[T](
+  inline def subscribeOn[T](
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeOn")(scheduler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def subscribeOn[T](
+  inline def subscribeOn[T](
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any,
     delay: Double
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeOn")(scheduler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Any]

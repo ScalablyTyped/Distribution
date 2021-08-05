@@ -20,8 +20,7 @@ object headingUniDriverMod {
   }
   object HeadingUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -33,17 +32,13 @@ object headingUniDriverMod {
       __obj.asInstanceOf[HeadingUniDriver]
     }
     
-    @scala.inline
-    implicit class HeadingUniDriverMutableBuilder[Self <: HeadingUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: HeadingUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetAppearance(value: () => js.Promise[HeadingAppearance | Null]): Self = StObject.set(x, "getAppearance", js.Any.fromFunction0(value))
+      inline def setGetAppearance(value: () => js.Promise[HeadingAppearance | Null]): Self = StObject.set(x, "getAppearance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLight(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
+      inline def setIsLight(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
     }
   }
 }

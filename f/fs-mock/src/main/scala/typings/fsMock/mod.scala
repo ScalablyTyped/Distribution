@@ -399,35 +399,26 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(): Opts = {
+    inline def apply(): Opts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def setDrives(value: js.Array[String]): Self = StObject.set(x, "drives", value.asInstanceOf[js.Any])
+      inline def setDrives(value: js.Array[String]): Self = StObject.set(x, "drives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrivesUndefined: Self = StObject.set(x, "drives", js.undefined)
+      inline def setDrivesUndefined: Self = StObject.set(x, "drives", js.undefined)
       
-      @scala.inline
-      def setDrivesVarargs(value: String*): Self = StObject.set(x, "drives", js.Array(value :_*))
+      inline def setDrivesVarargs(value: String*): Self = StObject.set(x, "drives", js.Array(value :_*))
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
+      inline def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
     }
   }
 }

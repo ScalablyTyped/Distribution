@@ -14,25 +14,19 @@ trait Price extends StObject {
 }
 object Price {
   
-  @scala.inline
-  def apply(amount: Double, currency: String): Price = {
+  inline def apply(amount: Double, currency: String): Price = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
     __obj.asInstanceOf[Price]
   }
   
-  @scala.inline
-  implicit class PriceMutableBuilder[Self <: Price] (val x: Self) extends AnyVal {
+  extension [Self <: Price](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
   }
 }

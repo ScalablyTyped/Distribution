@@ -13,16 +13,13 @@ trait GetHostedZoneCountResponse extends StObject {
 }
 object GetHostedZoneCountResponse {
   
-  @scala.inline
-  def apply(HostedZoneCount: HostedZoneCount): GetHostedZoneCountResponse = {
+  inline def apply(HostedZoneCount: HostedZoneCount): GetHostedZoneCountResponse = {
     val __obj = js.Dynamic.literal(HostedZoneCount = HostedZoneCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostedZoneCountResponse]
   }
   
-  @scala.inline
-  implicit class GetHostedZoneCountResponseMutableBuilder[Self <: GetHostedZoneCountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostedZoneCountResponse](x: Self) {
     
-    @scala.inline
-    def setHostedZoneCount(value: HostedZoneCount): Self = StObject.set(x, "HostedZoneCount", value.asInstanceOf[js.Any])
+    inline def setHostedZoneCount(value: HostedZoneCount): Self = StObject.set(x, "HostedZoneCount", value.asInstanceOf[js.Any])
   }
 }

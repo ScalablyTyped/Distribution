@@ -16,23 +16,18 @@ object mod {
   }
   object RemarkConfig {
     
-    @scala.inline
-    def apply(): RemarkConfig = {
+    inline def apply(): RemarkConfig = {
       val __obj = js.Dynamic.literal(resolve = "gatsby-transformer-remark")
       __obj.asInstanceOf[RemarkConfig]
     }
     
-    @scala.inline
-    implicit class RemarkConfigMutableBuilder[Self <: RemarkConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RemarkConfig](x: Self) {
       
-      @scala.inline
-      def setOptions(value: RemarkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RemarkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setResolve(value: `gatsby-transformer-remark`): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: `gatsby-transformer-remark`): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,59 +61,42 @@ object mod {
   }
   object RemarkOptions {
     
-    @scala.inline
-    def apply(): RemarkOptions = {
+    inline def apply(): RemarkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemarkOptions]
     }
     
-    @scala.inline
-    implicit class RemarkOptionsMutableBuilder[Self <: RemarkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemarkOptions](x: Self) {
       
-      @scala.inline
-      def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
+      inline def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonmarkUndefined: Self = StObject.set(x, "commonmark", js.undefined)
+      inline def setCommonmarkUndefined: Self = StObject.set(x, "commonmark", js.undefined)
       
-      @scala.inline
-      def setExcerpt_separator(value: String): Self = StObject.set(x, "excerpt_separator", value.asInstanceOf[js.Any])
+      inline def setExcerpt_separator(value: String): Self = StObject.set(x, "excerpt_separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcerpt_separatorUndefined: Self = StObject.set(x, "excerpt_separator", js.undefined)
+      inline def setExcerpt_separatorUndefined: Self = StObject.set(x, "excerpt_separator", js.undefined)
       
-      @scala.inline
-      def setFootnotes(value: Boolean): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
+      inline def setFootnotes(value: Boolean): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
+      inline def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
       
-      @scala.inline
-      def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+      inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
+      inline def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
       
-      @scala.inline
-      def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
+      inline def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
+      inline def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setTableOfContents(value: Absolute): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
+      inline def setTableOfContents(value: Absolute): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableOfContentsUndefined: Self = StObject.set(x, "tableOfContents", js.undefined)
+      inline def setTableOfContentsUndefined: Self = StObject.set(x, "tableOfContents", js.undefined)
     }
   }
 }

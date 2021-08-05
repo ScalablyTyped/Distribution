@@ -47,37 +47,27 @@ trait IgGridCellMergingColumnSetting
 }
 object IgGridCellMergingColumnSetting {
   
-  @scala.inline
-  def apply(): IgGridCellMergingColumnSetting = {
+  inline def apply(): IgGridCellMergingColumnSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridCellMergingColumnSetting]
   }
   
-  @scala.inline
-  implicit class IgGridCellMergingColumnSettingMutableBuilder[Self <: IgGridCellMergingColumnSetting] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridCellMergingColumnSetting](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setMergeOn(value: String): Self = StObject.set(x, "mergeOn", value.asInstanceOf[js.Any])
+    inline def setMergeOn(value: String): Self = StObject.set(x, "mergeOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOnUndefined: Self = StObject.set(x, "mergeOn", js.undefined)
+    inline def setMergeOnUndefined: Self = StObject.set(x, "mergeOn", js.undefined)
     
-    @scala.inline
-    def setMergeStrategy(value: String | js.Function): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
+    inline def setMergeStrategy(value: String | js.Function): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
+    inline def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait FinalCall extends StObject {
 }
 object FinalCall {
   
-  @scala.inline
-  def apply(finalCall: Boolean): FinalCall = {
+  inline def apply(finalCall: Boolean): FinalCall = {
     val __obj = js.Dynamic.literal(finalCall = finalCall.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalCall]
   }
   
-  @scala.inline
-  implicit class FinalCallMutableBuilder[Self <: FinalCall] (val x: Self) extends AnyVal {
+  extension [Self <: FinalCall](x: Self) {
     
-    @scala.inline
-    def setFinalCall(value: Boolean): Self = StObject.set(x, "finalCall", value.asInstanceOf[js.Any])
+    inline def setFinalCall(value: Boolean): Self = StObject.set(x, "finalCall", value.asInstanceOf[js.Any])
   }
 }

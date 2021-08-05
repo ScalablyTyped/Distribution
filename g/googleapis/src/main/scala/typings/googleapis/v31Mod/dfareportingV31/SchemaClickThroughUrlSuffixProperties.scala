@@ -23,25 +23,19 @@ trait SchemaClickThroughUrlSuffixProperties extends StObject {
 }
 object SchemaClickThroughUrlSuffixProperties {
   
-  @scala.inline
-  def apply(): SchemaClickThroughUrlSuffixProperties = {
+  inline def apply(): SchemaClickThroughUrlSuffixProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClickThroughUrlSuffixProperties]
   }
   
-  @scala.inline
-  implicit class SchemaClickThroughUrlSuffixPropertiesMutableBuilder[Self <: SchemaClickThroughUrlSuffixProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClickThroughUrlSuffixProperties](x: Self) {
     
-    @scala.inline
-    def setClickThroughUrlSuffix(value: String): Self = StObject.set(x, "clickThroughUrlSuffix", value.asInstanceOf[js.Any])
+    inline def setClickThroughUrlSuffix(value: String): Self = StObject.set(x, "clickThroughUrlSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickThroughUrlSuffixUndefined: Self = StObject.set(x, "clickThroughUrlSuffix", js.undefined)
+    inline def setClickThroughUrlSuffixUndefined: Self = StObject.set(x, "clickThroughUrlSuffix", js.undefined)
     
-    @scala.inline
-    def setOverrideInheritedSuffix(value: Boolean): Self = StObject.set(x, "overrideInheritedSuffix", value.asInstanceOf[js.Any])
+    inline def setOverrideInheritedSuffix(value: Boolean): Self = StObject.set(x, "overrideInheritedSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideInheritedSuffixUndefined: Self = StObject.set(x, "overrideInheritedSuffix", js.undefined)
+    inline def setOverrideInheritedSuffixUndefined: Self = StObject.set(x, "overrideInheritedSuffix", js.undefined)
   }
 }

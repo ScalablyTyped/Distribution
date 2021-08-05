@@ -18,25 +18,19 @@ trait AssociateRouteTableResult extends StObject {
 }
 object AssociateRouteTableResult {
   
-  @scala.inline
-  def apply(): AssociateRouteTableResult = {
+  inline def apply(): AssociateRouteTableResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateRouteTableResult]
   }
   
-  @scala.inline
-  implicit class AssociateRouteTableResultMutableBuilder[Self <: AssociateRouteTableResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateRouteTableResult](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
+    inline def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
+    inline def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
   }
 }

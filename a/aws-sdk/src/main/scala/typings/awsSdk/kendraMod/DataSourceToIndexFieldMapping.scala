@@ -23,25 +23,19 @@ trait DataSourceToIndexFieldMapping extends StObject {
 }
 object DataSourceToIndexFieldMapping {
   
-  @scala.inline
-  def apply(DataSourceFieldName: DataSourceFieldName, IndexFieldName: IndexFieldName): DataSourceToIndexFieldMapping = {
+  inline def apply(DataSourceFieldName: DataSourceFieldName, IndexFieldName: IndexFieldName): DataSourceToIndexFieldMapping = {
     val __obj = js.Dynamic.literal(DataSourceFieldName = DataSourceFieldName.asInstanceOf[js.Any], IndexFieldName = IndexFieldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceToIndexFieldMapping]
   }
   
-  @scala.inline
-  implicit class DataSourceToIndexFieldMappingMutableBuilder[Self <: DataSourceToIndexFieldMapping] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceToIndexFieldMapping](x: Self) {
     
-    @scala.inline
-    def setDataSourceFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
+    inline def setDataSourceFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFieldFormat(value: DataSourceDateFieldFormat): Self = StObject.set(x, "DateFieldFormat", value.asInstanceOf[js.Any])
+    inline def setDateFieldFormat(value: DataSourceDateFieldFormat): Self = StObject.set(x, "DateFieldFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFieldFormatUndefined: Self = StObject.set(x, "DateFieldFormat", js.undefined)
+    inline def setDateFieldFormatUndefined: Self = StObject.set(x, "DateFieldFormat", js.undefined)
     
-    @scala.inline
-    def setIndexFieldName(value: IndexFieldName): Self = StObject.set(x, "IndexFieldName", value.asInstanceOf[js.Any])
+    inline def setIndexFieldName(value: IndexFieldName): Self = StObject.set(x, "IndexFieldName", value.asInstanceOf[js.Any])
   }
 }

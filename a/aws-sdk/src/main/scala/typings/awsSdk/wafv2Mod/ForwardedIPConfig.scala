@@ -18,19 +18,15 @@ trait ForwardedIPConfig extends StObject {
 }
 object ForwardedIPConfig {
   
-  @scala.inline
-  def apply(FallbackBehavior: FallbackBehavior, HeaderName: ForwardedIPHeaderName): ForwardedIPConfig = {
+  inline def apply(FallbackBehavior: FallbackBehavior, HeaderName: ForwardedIPHeaderName): ForwardedIPConfig = {
     val __obj = js.Dynamic.literal(FallbackBehavior = FallbackBehavior.asInstanceOf[js.Any], HeaderName = HeaderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardedIPConfig]
   }
   
-  @scala.inline
-  implicit class ForwardedIPConfigMutableBuilder[Self <: ForwardedIPConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardedIPConfig](x: Self) {
     
-    @scala.inline
-    def setFallbackBehavior(value: FallbackBehavior): Self = StObject.set(x, "FallbackBehavior", value.asInstanceOf[js.Any])
+    inline def setFallbackBehavior(value: FallbackBehavior): Self = StObject.set(x, "FallbackBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderName(value: ForwardedIPHeaderName): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: ForwardedIPHeaderName): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
   }
 }

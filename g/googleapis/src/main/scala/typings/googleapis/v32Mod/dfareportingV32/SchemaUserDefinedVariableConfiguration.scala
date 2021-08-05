@@ -28,31 +28,23 @@ trait SchemaUserDefinedVariableConfiguration extends StObject {
 }
 object SchemaUserDefinedVariableConfiguration {
   
-  @scala.inline
-  def apply(): SchemaUserDefinedVariableConfiguration = {
+  inline def apply(): SchemaUserDefinedVariableConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserDefinedVariableConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaUserDefinedVariableConfigurationMutableBuilder[Self <: SchemaUserDefinedVariableConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserDefinedVariableConfiguration](x: Self) {
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
+    inline def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
+    inline def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
     
-    @scala.inline
-    def setVariableType(value: String): Self = StObject.set(x, "variableType", value.asInstanceOf[js.Any])
+    inline def setVariableType(value: String): Self = StObject.set(x, "variableType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableTypeUndefined: Self = StObject.set(x, "variableType", js.undefined)
+    inline def setVariableTypeUndefined: Self = StObject.set(x, "variableType", js.undefined)
   }
 }

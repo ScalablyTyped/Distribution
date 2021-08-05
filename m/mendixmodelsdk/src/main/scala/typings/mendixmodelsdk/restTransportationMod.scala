@@ -20,13 +20,13 @@ object restTransportationMod {
        with ITransportation {
     def this(config: ISdkConfig) = this()
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
-    var generateStandardOptions: js.Any = js.native
+    /* private */ var generateStandardOptions: js.Any = js.native
     
-    var handleRequest: js.Any = js.native
+    /* private */ var handleRequest: js.Any = js.native
     
-    var prepareRequestOptions: js.Any = js.native
+    /* private */ var prepareRequestOptions: js.Any = js.native
     
     /**
       * Send a HTTP request, with specified method, url, data, success and failure callbacks.
@@ -44,7 +44,7 @@ object restTransportationMod {
       failure: IErrorCallback
     ): Unit = js.native
     
-    var retryRequest: js.Any = js.native
+    /* private */ var retryRequest: js.Any = js.native
     
     /**
       * Send a HTTP request that will be retried in case of network errors, with specified method, url, data, success and failure callbacks.
@@ -52,8 +52,8 @@ object restTransportationMod {
     /* CompleteClass */
     override def retryableRequest[T](options: IRequestOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
     
-    var sanitizedMethod: js.Any = js.native
+    /* private */ var sanitizedMethod: js.Any = js.native
     
-    var url: js.Any = js.native
+    /* private */ var url: js.Any = js.native
   }
 }

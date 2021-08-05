@@ -19,7 +19,7 @@ object domEventRegisterMod {
     
     def isBinded(dom: HTMLElement, eventName: EEventName): Boolean = js.native
     
-    @JSName("listenerMap")
+    /* protected */ @JSName("listenerMap")
     var listenerMap_DomEventRegister: DomEventListenerMap = js.native
     
     def register(
@@ -44,8 +44,7 @@ object domEventRegisterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
   }
   
   trait DomEventRegisterData extends StObject {
@@ -66,8 +65,7 @@ object domEventRegisterMod {
   }
   object DomEventRegisterData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domHandler: js.Function,
       eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
       handler: js.Function,
@@ -78,37 +76,27 @@ object domEventRegisterMod {
       __obj.asInstanceOf[DomEventRegisterData]
     }
     
-    @scala.inline
-    implicit class DomEventRegisterDataMutableBuilder[Self <: DomEventRegisterData] (val x: Self) extends AnyVal {
+    extension [Self <: DomEventRegisterData](x: Self) {
       
-      @scala.inline
-      def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
+      inline def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
+      inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
-      @scala.inline
-      def setEventData(
+      inline def setEventData(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any
       ): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginHandler(value: js.Function): Self = StObject.set(x, "originHandler", value.asInstanceOf[js.Any])
+      inline def setOriginHandler(value: js.Function): Self = StObject.set(x, "originHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: EntityObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EntityObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

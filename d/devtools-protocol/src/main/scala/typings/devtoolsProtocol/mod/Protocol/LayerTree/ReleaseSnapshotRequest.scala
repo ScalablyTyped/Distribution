@@ -13,16 +13,13 @@ trait ReleaseSnapshotRequest extends StObject {
 }
 object ReleaseSnapshotRequest {
   
-  @scala.inline
-  def apply(snapshotId: SnapshotId): ReleaseSnapshotRequest = {
+  inline def apply(snapshotId: SnapshotId): ReleaseSnapshotRequest = {
     val __obj = js.Dynamic.literal(snapshotId = snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class ReleaseSnapshotRequestMutableBuilder[Self <: ReleaseSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
   }
 }

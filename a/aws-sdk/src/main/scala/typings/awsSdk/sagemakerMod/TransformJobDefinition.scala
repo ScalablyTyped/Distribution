@@ -43,8 +43,7 @@ trait TransformJobDefinition extends StObject {
 }
 object TransformJobDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TransformInput: TransformInput,
     TransformOutput: TransformOutput,
     TransformResources: TransformResources
@@ -53,40 +52,28 @@ object TransformJobDefinition {
     __obj.asInstanceOf[TransformJobDefinition]
   }
   
-  @scala.inline
-  implicit class TransformJobDefinitionMutableBuilder[Self <: TransformJobDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TransformJobDefinition](x: Self) {
     
-    @scala.inline
-    def setBatchStrategy(value: BatchStrategy): Self = StObject.set(x, "BatchStrategy", value.asInstanceOf[js.Any])
+    inline def setBatchStrategy(value: BatchStrategy): Self = StObject.set(x, "BatchStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchStrategyUndefined: Self = StObject.set(x, "BatchStrategy", js.undefined)
+    inline def setBatchStrategyUndefined: Self = StObject.set(x, "BatchStrategy", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: TransformEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: TransformEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentTransforms(value: MaxConcurrentTransforms): Self = StObject.set(x, "MaxConcurrentTransforms", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentTransforms(value: MaxConcurrentTransforms): Self = StObject.set(x, "MaxConcurrentTransforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentTransformsUndefined: Self = StObject.set(x, "MaxConcurrentTransforms", js.undefined)
+    inline def setMaxConcurrentTransformsUndefined: Self = StObject.set(x, "MaxConcurrentTransforms", js.undefined)
     
-    @scala.inline
-    def setMaxPayloadInMB(value: MaxPayloadInMB): Self = StObject.set(x, "MaxPayloadInMB", value.asInstanceOf[js.Any])
+    inline def setMaxPayloadInMB(value: MaxPayloadInMB): Self = StObject.set(x, "MaxPayloadInMB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPayloadInMBUndefined: Self = StObject.set(x, "MaxPayloadInMB", js.undefined)
+    inline def setMaxPayloadInMBUndefined: Self = StObject.set(x, "MaxPayloadInMB", js.undefined)
     
-    @scala.inline
-    def setTransformInput(value: TransformInput): Self = StObject.set(x, "TransformInput", value.asInstanceOf[js.Any])
+    inline def setTransformInput(value: TransformInput): Self = StObject.set(x, "TransformInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformOutput(value: TransformOutput): Self = StObject.set(x, "TransformOutput", value.asInstanceOf[js.Any])
+    inline def setTransformOutput(value: TransformOutput): Self = StObject.set(x, "TransformOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformResources(value: TransformResources): Self = StObject.set(x, "TransformResources", value.asInstanceOf[js.Any])
+    inline def setTransformResources(value: TransformResources): Self = StObject.set(x, "TransformResources", value.asInstanceOf[js.Any])
   }
 }

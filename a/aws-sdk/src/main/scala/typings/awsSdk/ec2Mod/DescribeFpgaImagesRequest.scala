@@ -38,58 +38,41 @@ trait DescribeFpgaImagesRequest extends StObject {
 }
 object DescribeFpgaImagesRequest {
   
-  @scala.inline
-  def apply(): DescribeFpgaImagesRequest = {
+  inline def apply(): DescribeFpgaImagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFpgaImagesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFpgaImagesRequestMutableBuilder[Self <: DescribeFpgaImagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFpgaImagesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setFpgaImageIds(value: FpgaImageIdList): Self = StObject.set(x, "FpgaImageIds", value.asInstanceOf[js.Any])
+    inline def setFpgaImageIds(value: FpgaImageIdList): Self = StObject.set(x, "FpgaImageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpgaImageIdsUndefined: Self = StObject.set(x, "FpgaImageIds", js.undefined)
+    inline def setFpgaImageIdsUndefined: Self = StObject.set(x, "FpgaImageIds", js.undefined)
     
-    @scala.inline
-    def setFpgaImageIdsVarargs(value: FpgaImageId*): Self = StObject.set(x, "FpgaImageIds", js.Array(value :_*))
+    inline def setFpgaImageIdsVarargs(value: FpgaImageId*): Self = StObject.set(x, "FpgaImageIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeFpgaImagesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeFpgaImagesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOwners(value: OwnerStringList): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: OwnerStringList): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
   }
 }

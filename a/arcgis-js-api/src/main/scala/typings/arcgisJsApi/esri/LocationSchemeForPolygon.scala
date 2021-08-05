@@ -34,8 +34,7 @@ trait LocationSchemeForPolygon
 }
 object LocationSchemeForPolygon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,16 +46,12 @@ object LocationSchemeForPolygon {
     __obj.asInstanceOf[LocationSchemeForPolygon]
   }
   
-  @scala.inline
-  implicit class LocationSchemeForPolygonMutableBuilder[Self <: LocationSchemeForPolygon] (val x: Self) extends AnyVal {
+  extension [Self <: LocationSchemeForPolygon](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutline(value: LocationSchemeForPolygonOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: LocationSchemeForPolygonOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait CreateMonitoringScheduleResponse extends StObject {
 }
 object CreateMonitoringScheduleResponse {
   
-  @scala.inline
-  def apply(MonitoringScheduleArn: MonitoringScheduleArn): CreateMonitoringScheduleResponse = {
+  inline def apply(MonitoringScheduleArn: MonitoringScheduleArn): CreateMonitoringScheduleResponse = {
     val __obj = js.Dynamic.literal(MonitoringScheduleArn = MonitoringScheduleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMonitoringScheduleResponse]
   }
   
-  @scala.inline
-  implicit class CreateMonitoringScheduleResponseMutableBuilder[Self <: CreateMonitoringScheduleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMonitoringScheduleResponse](x: Self) {
     
-    @scala.inline
-    def setMonitoringScheduleArn(value: MonitoringScheduleArn): Self = StObject.set(x, "MonitoringScheduleArn", value.asInstanceOf[js.Any])
+    inline def setMonitoringScheduleArn(value: MonitoringScheduleArn): Self = StObject.set(x, "MonitoringScheduleArn", value.asInstanceOf[js.Any])
   }
 }

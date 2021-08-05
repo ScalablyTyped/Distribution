@@ -39,49 +39,35 @@ trait FleetLaunchTemplateConfigOverride extends StObject {
 }
 object FleetLaunchTemplateConfigOverride {
   
-  @scala.inline
-  def apply(): FleetLaunchTemplateConfigOverride = {
+  inline def apply(): FleetLaunchTemplateConfigOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetLaunchTemplateConfigOverride]
   }
   
-  @scala.inline
-  implicit class FleetLaunchTemplateConfigOverrideMutableBuilder[Self <: FleetLaunchTemplateConfigOverride] (val x: Self) extends AnyVal {
+  extension [Self <: FleetLaunchTemplateConfigOverride](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
-    @scala.inline
-    def setMaxPrice(value: Input[String]): Self = StObject.set(x, "maxPrice", value.asInstanceOf[js.Any])
+    inline def setMaxPrice(value: Input[String]): Self = StObject.set(x, "maxPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPriceUndefined: Self = StObject.set(x, "maxPrice", js.undefined)
+    inline def setMaxPriceUndefined: Self = StObject.set(x, "maxPrice", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     
-    @scala.inline
-    def setWeightedCapacity(value: Input[Double]): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
+    inline def setWeightedCapacity(value: Input[Double]): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacityUndefined: Self = StObject.set(x, "weightedCapacity", js.undefined)
+    inline def setWeightedCapacityUndefined: Self = StObject.set(x, "weightedCapacity", js.undefined)
   }
 }

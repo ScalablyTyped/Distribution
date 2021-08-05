@@ -21,8 +21,7 @@ trait PickAPIonoffemitgetQueryP extends StObject {
 }
 object PickAPIonoffemitgetQueryP {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emit: (/* type */ String, /* repeated */ js.Any) => Unit,
     getQueryParam: /* key */ String => js.UndefOr[String],
     off: (/* type */ String, /* cb */ Listener) => Unit,
@@ -33,22 +32,16 @@ object PickAPIonoffemitgetQueryP {
     __obj.asInstanceOf[PickAPIonoffemitgetQueryP]
   }
   
-  @scala.inline
-  implicit class PickAPIonoffemitgetQueryPMutableBuilder[Self <: PickAPIonoffemitgetQueryP] (val x: Self) extends AnyVal {
+  extension [Self <: PickAPIonoffemitgetQueryP](x: Self) {
     
-    @scala.inline
-    def setEmit(value: (/* type */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+    inline def setEmit(value: (/* type */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetQueryParam(value: /* key */ String => js.UndefOr[String]): Self = StObject.set(x, "getQueryParam", js.Any.fromFunction1(value))
+    inline def setGetQueryParam(value: /* key */ String => js.UndefOr[String]): Self = StObject.set(x, "getQueryParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOff(value: (/* type */ String, /* cb */ Listener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (/* type */ String, /* cb */ Listener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (/* type */ String, /* cb */ Listener) => js.Function0[Unit]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (/* type */ String, /* cb */ Listener) => js.Function0[Unit]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetQueryParams(value: /* input */ QueryParams => Unit): Self = StObject.set(x, "setQueryParams", js.Any.fromFunction1(value))
+    inline def setSetQueryParams(value: /* input */ QueryParams => Unit): Self = StObject.set(x, "setQueryParams", js.Any.fromFunction1(value))
   }
 }

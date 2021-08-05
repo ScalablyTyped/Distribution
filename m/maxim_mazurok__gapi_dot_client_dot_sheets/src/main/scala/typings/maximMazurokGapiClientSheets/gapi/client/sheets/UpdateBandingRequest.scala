@@ -17,25 +17,19 @@ trait UpdateBandingRequest extends StObject {
 }
 object UpdateBandingRequest {
   
-  @scala.inline
-  def apply(): UpdateBandingRequest = {
+  inline def apply(): UpdateBandingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateBandingRequest]
   }
   
-  @scala.inline
-  implicit class UpdateBandingRequestMutableBuilder[Self <: UpdateBandingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBandingRequest](x: Self) {
     
-    @scala.inline
-    def setBandedRange(value: BandedRange): Self = StObject.set(x, "bandedRange", value.asInstanceOf[js.Any])
+    inline def setBandedRange(value: BandedRange): Self = StObject.set(x, "bandedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandedRangeUndefined: Self = StObject.set(x, "bandedRange", js.undefined)
+    inline def setBandedRangeUndefined: Self = StObject.set(x, "bandedRange", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

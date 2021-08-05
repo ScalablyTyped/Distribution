@@ -10,6 +10,5 @@ object mergeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](dataArray: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dataArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def default[T](dataArray: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dataArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

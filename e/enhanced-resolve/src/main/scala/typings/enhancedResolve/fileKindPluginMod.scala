@@ -35,23 +35,18 @@ object fileKindPluginMod {
   }
   object FileKindPlugin {
     
-    @scala.inline
-    def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String, target: String): FileKindPlugin = {
+    inline def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String, target: String): FileKindPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileKindPlugin]
     }
     
-    @scala.inline
-    implicit class FileKindPluginMutableBuilder[Self <: FileKindPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: FileKindPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

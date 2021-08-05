@@ -12,12 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Fetch = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fetch]
-  @scala.inline
-  def default(fetch: Unit, options: AgentOptions): Fetch = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fetch]
-  @scala.inline
-  def default(fetch: Fetch): Fetch = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any]).asInstanceOf[Fetch]
-  @scala.inline
-  def default(fetch: Fetch, options: AgentOptions): Fetch = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fetch]
+  inline def default(): Fetch = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fetch]
+  inline def default(fetch: Unit, options: AgentOptions): Fetch = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fetch]
+  inline def default(fetch: Fetch): Fetch = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any]).asInstanceOf[Fetch]
+  inline def default(fetch: Fetch, options: AgentOptions): Fetch = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fetch]
 }

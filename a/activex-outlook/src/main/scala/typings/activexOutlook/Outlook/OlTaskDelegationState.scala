@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlTaskDelegationState extends StObject
 object OlTaskDelegationState {
   
-  @scala.inline
-  def olTaskDelegationAccepted: `2` = 2.asInstanceOf[`2`]
+  inline def olTaskDelegationAccepted: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olTaskDelegationDeclined: `3` = 3.asInstanceOf[`3`]
+  inline def olTaskDelegationDeclined: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olTaskDelegationUnknown: `1` = 1.asInstanceOf[`1`]
+  inline def olTaskDelegationUnknown: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olTaskNotDelegated: `0` = 0.asInstanceOf[`0`]
+  inline def olTaskNotDelegated: `0` = 0.asInstanceOf[`0`]
 }

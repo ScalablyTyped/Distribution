@@ -29,34 +29,24 @@ object PropertyAttribute {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BOUND: `2` = 2.asInstanceOf[`2`]
+    inline def BOUND: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CONSTRAINED: `4` = 4.asInstanceOf[`4`]
+    inline def CONSTRAINED: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def MAYBEAMBIGUOUS: `32` = 32.asInstanceOf[`32`]
+    inline def MAYBEAMBIGUOUS: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def MAYBEDEFAULT: `64` = 64.asInstanceOf[`64`]
+    inline def MAYBEDEFAULT: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def MAYBEVOID: `1` = 1.asInstanceOf[`1`]
+    inline def MAYBEVOID: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def OPTIONAL: `256` = 256.asInstanceOf[`256`]
+    inline def OPTIONAL: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def READONLY: `16` = 16.asInstanceOf[`16`]
+    inline def READONLY: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def REMOVABLE: `128` = 128.asInstanceOf[`128`]
+    inline def REMOVABLE: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def REMOVEABLE: `128` = 128.asInstanceOf[`128`]
+    inline def REMOVEABLE: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def TRANSIENT: `8` = 8.asInstanceOf[`8`]
+    inline def TRANSIENT: `8` = 8.asInstanceOf[`8`]
   }
 }

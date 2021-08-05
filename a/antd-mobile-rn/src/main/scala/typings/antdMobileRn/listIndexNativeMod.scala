@@ -26,14 +26,12 @@ object listIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/list/index.native", "default.Item")
     @js.native
     def Item: TypeofItem = js.native
-    @scala.inline
-    def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/list/index.native", "default.defaultProps")
     @js.native
     def defaultProps: Styles = js.native
-    @scala.inline
-    def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -50,29 +48,22 @@ object listIndexNativeMod {
   }
   object ListProps {
     
-    @scala.inline
-    def apply(): ListProps = {
+    inline def apply(): ListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListProps]
     }
     
-    @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: ArrowV): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ArrowV): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

@@ -54,19 +54,19 @@ object messageQueuesMod {
     def this(sub: Subscriber) = this()
     def this(sub: Subscriber, options: BatchOptions) = this()
     
-    var _onDrain: js.UndefOr[DeferredPromise[Unit]] = js.native
+    /* protected */ var _onDrain: js.UndefOr[DeferredPromise[Unit]] = js.native
     
-    var _onFlush: js.UndefOr[DeferredPromise[Unit]] = js.native
+    /* protected */ var _onFlush: js.UndefOr[DeferredPromise[Unit]] = js.native
     
-    var _options: BatchOptions = js.native
+    /* protected */ var _options: BatchOptions = js.native
     
-    var _requests: QueuedMessages = js.native
+    /* protected */ var _requests: QueuedMessages = js.native
     
     /* protected */ def _sendBatch(batch: QueuedMessages): js.Promise[Unit] = js.native
     
-    var _subscriber: Subscriber = js.native
+    /* protected */ var _subscriber: Subscriber = js.native
     
-    var _timer: js.UndefOr[Timer] = js.native
+    /* protected */ var _timer: js.UndefOr[Timer] = js.native
     
     /**
       * Adds a message to the queue.
@@ -135,32 +135,24 @@ object messageQueuesMod {
   }
   object BatchOptions {
     
-    @scala.inline
-    def apply(): BatchOptions = {
+    inline def apply(): BatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BatchOptions]
     }
     
-    @scala.inline
-    implicit class BatchOptionsMutableBuilder[Self <: BatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BatchOptions](x: Self) {
       
-      @scala.inline
-      def setCallOptions(value: CallOptions): Self = StObject.set(x, "callOptions", value.asInstanceOf[js.Any])
+      inline def setCallOptions(value: CallOptions): Self = StObject.set(x, "callOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallOptionsUndefined: Self = StObject.set(x, "callOptions", js.undefined)
+      inline def setCallOptionsUndefined: Self = StObject.set(x, "callOptions", js.undefined)
       
-      @scala.inline
-      def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+      inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
+      inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
       
-      @scala.inline
-      def setMaxMilliseconds(value: Double): Self = StObject.set(x, "maxMilliseconds", value.asInstanceOf[js.Any])
+      inline def setMaxMilliseconds(value: Double): Self = StObject.set(x, "maxMilliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMillisecondsUndefined: Self = StObject.set(x, "maxMilliseconds", js.undefined)
+      inline def setMaxMillisecondsUndefined: Self = StObject.set(x, "maxMilliseconds", js.undefined)
     }
   }
   

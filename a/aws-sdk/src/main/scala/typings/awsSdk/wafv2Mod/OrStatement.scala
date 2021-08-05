@@ -13,19 +13,15 @@ trait OrStatement extends StObject {
 }
 object OrStatement {
   
-  @scala.inline
-  def apply(Statements: Statements): OrStatement = {
+  inline def apply(Statements: Statements): OrStatement = {
     val __obj = js.Dynamic.literal(Statements = Statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrStatement]
   }
   
-  @scala.inline
-  implicit class OrStatementMutableBuilder[Self <: OrStatement] (val x: Self) extends AnyVal {
+  extension [Self <: OrStatement](x: Self) {
     
-    @scala.inline
-    def setStatements(value: Statements): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: Statements): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "Statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "Statements", js.Array(value :_*))
   }
 }

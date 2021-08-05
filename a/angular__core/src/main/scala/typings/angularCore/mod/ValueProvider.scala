@@ -23,22 +23,17 @@ trait ValueProvider
 }
 object ValueProvider {
   
-  @scala.inline
-  def apply(provide: js.Any, useValue: js.Any): ValueProvider = {
+  inline def apply(provide: js.Any, useValue: js.Any): ValueProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useValue = useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueProvider]
   }
   
-  @scala.inline
-  implicit class ValueProviderMutableBuilder[Self <: ValueProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ValueProvider](x: Self) {
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

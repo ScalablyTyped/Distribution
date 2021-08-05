@@ -28,31 +28,23 @@ trait BeginTransactionRequest extends StObject {
 }
 object BeginTransactionRequest {
   
-  @scala.inline
-  def apply(resourceArn: Arn, secretArn: Arn): BeginTransactionRequest = {
+  inline def apply(resourceArn: Arn, secretArn: Arn): BeginTransactionRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginTransactionRequest]
   }
   
-  @scala.inline
-  implicit class BeginTransactionRequestMutableBuilder[Self <: BeginTransactionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BeginTransactionRequest](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
   }
 }

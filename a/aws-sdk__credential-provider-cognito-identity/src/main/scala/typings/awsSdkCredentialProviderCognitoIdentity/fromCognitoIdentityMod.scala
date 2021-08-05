@@ -14,8 +14,7 @@ object fromCognitoIdentityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentity")(parameters.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentity")(parameters.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
   trait CognitoIdentityCredentials
     extends StObject
@@ -28,17 +27,14 @@ object fromCognitoIdentityMod {
   }
   object CognitoIdentityCredentials {
     
-    @scala.inline
-    def apply(accessKeyId: String, identityId: String, secretAccessKey: String): CognitoIdentityCredentials = {
+    inline def apply(accessKeyId: String, identityId: String, secretAccessKey: String): CognitoIdentityCredentials = {
       val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], identityId = identityId.asInstanceOf[js.Any], secretAccessKey = secretAccessKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[CognitoIdentityCredentials]
     }
     
-    @scala.inline
-    implicit class CognitoIdentityCredentialsMutableBuilder[Self <: CognitoIdentityCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoIdentityCredentials](x: Self) {
       
-      @scala.inline
-      def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
+      inline def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,17 +50,14 @@ object fromCognitoIdentityMod {
   }
   object FromCognitoIdentityParameters {
     
-    @scala.inline
-    def apply(client: CognitoIdentityClient, identityId: String): FromCognitoIdentityParameters = {
+    inline def apply(client: CognitoIdentityClient, identityId: String): FromCognitoIdentityParameters = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], identityId = identityId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FromCognitoIdentityParameters]
     }
     
-    @scala.inline
-    implicit class FromCognitoIdentityParametersMutableBuilder[Self <: FromCognitoIdentityParameters] (val x: Self) extends AnyVal {
+    extension [Self <: FromCognitoIdentityParameters](x: Self) {
       
-      @scala.inline
-      def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
+      inline def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
     }
   }
 }

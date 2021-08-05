@@ -11,6 +11,5 @@ object deleteInstallationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deleteInstallation(dependencies: FirebaseDependencies): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteInstallation")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def deleteInstallation(dependencies: FirebaseDependencies): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteInstallation")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

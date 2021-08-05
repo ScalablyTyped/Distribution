@@ -18,25 +18,19 @@ trait TrainingResult extends StObject {
 }
 object TrainingResult {
   
-  @scala.inline
-  def apply(): TrainingResult = {
+  inline def apply(): TrainingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingResult]
   }
   
-  @scala.inline
-  implicit class TrainingResultMutableBuilder[Self <: TrainingResult] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingResult](x: Self) {
     
-    @scala.inline
-    def setDataValidationMetrics(value: DataValidationMetrics): Self = StObject.set(x, "dataValidationMetrics", value.asInstanceOf[js.Any])
+    inline def setDataValidationMetrics(value: DataValidationMetrics): Self = StObject.set(x, "dataValidationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataValidationMetricsUndefined: Self = StObject.set(x, "dataValidationMetrics", js.undefined)
+    inline def setDataValidationMetricsUndefined: Self = StObject.set(x, "dataValidationMetrics", js.undefined)
     
-    @scala.inline
-    def setTrainingMetrics(value: TrainingMetrics): Self = StObject.set(x, "trainingMetrics", value.asInstanceOf[js.Any])
+    inline def setTrainingMetrics(value: TrainingMetrics): Self = StObject.set(x, "trainingMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingMetricsUndefined: Self = StObject.set(x, "trainingMetrics", js.undefined)
+    inline def setTrainingMetricsUndefined: Self = StObject.set(x, "trainingMetrics", js.undefined)
   }
 }

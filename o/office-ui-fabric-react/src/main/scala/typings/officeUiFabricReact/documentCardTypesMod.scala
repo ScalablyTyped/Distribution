@@ -53,17 +53,14 @@ object documentCardTypesMod {
   }
   object IDocumentCard {
     
-    @scala.inline
-    def apply(focus: () => Unit): IDocumentCard = {
+    inline def apply(focus: () => Unit): IDocumentCard = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IDocumentCard]
     }
     
-    @scala.inline
-    implicit class IDocumentCardMutableBuilder[Self <: IDocumentCard] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCard](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -116,59 +113,42 @@ object documentCardTypesMod {
   }
   object IDocumentCardProps {
     
-    @scala.inline
-    def apply(): IDocumentCardProps = {
+    inline def apply(): IDocumentCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDocumentCardProps]
     }
     
-    @scala.inline
-    implicit class IDocumentCardPropsMutableBuilder[Self <: IDocumentCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardProps](x: Self) {
       
-      @scala.inline
-      def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+      inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickHref(value: String): Self = StObject.set(x, "onClickHref", value.asInstanceOf[js.Any])
+      inline def setOnClickHref(value: String): Self = StObject.set(x, "onClickHref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickHrefUndefined: Self = StObject.set(x, "onClickHref", js.undefined)
+      inline def setOnClickHrefUndefined: Self = StObject.set(x, "onClickHref", js.undefined)
       
-      @scala.inline
-      def setOnClickTarget(value: String): Self = StObject.set(x, "onClickTarget", value.asInstanceOf[js.Any])
+      inline def setOnClickTarget(value: String): Self = StObject.set(x, "onClickTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickTargetUndefined: Self = StObject.set(x, "onClickTarget", js.undefined)
+      inline def setOnClickTargetUndefined: Self = StObject.set(x, "onClickTarget", js.undefined)
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IDocumentCardStyleProps, IDocumentCardStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IDocumentCardStyleProps, IDocumentCardStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IDocumentCardStyleProps => DeepPartial[IDocumentCardStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IDocumentCardStyleProps => DeepPartial[IDocumentCardStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setType(value: DocumentCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DocumentCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -196,35 +176,26 @@ object documentCardTypesMod {
   }
   object IDocumentCardStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IDocumentCardStyleProps = {
+    inline def apply(theme: ITheme): IDocumentCardStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocumentCardStyleProps]
     }
     
-    @scala.inline
-    implicit class IDocumentCardStylePropsMutableBuilder[Self <: IDocumentCardStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardStyleProps](x: Self) {
       
-      @scala.inline
-      def setActionable(value: Boolean): Self = StObject.set(x, "actionable", value.asInstanceOf[js.Any])
+      inline def setActionable(value: Boolean): Self = StObject.set(x, "actionable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionableUndefined: Self = StObject.set(x, "actionable", js.undefined)
+      inline def setActionableUndefined: Self = StObject.set(x, "actionable", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,23 +205,18 @@ object documentCardTypesMod {
   }
   object IDocumentCardStyles {
     
-    @scala.inline
-    def apply(): IDocumentCardStyles = {
+    inline def apply(): IDocumentCardStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDocumentCardStyles]
     }
     
-    @scala.inline
-    implicit class IDocumentCardStylesMutableBuilder[Self <: IDocumentCardStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

@@ -14,22 +14,17 @@ trait DocumentAndElementEventHandlersEventMap extends StObject {
 }
 object DocumentAndElementEventHandlersEventMap {
   
-  @scala.inline
-  def apply(copy: ClipboardEvent, cut: ClipboardEvent, paste: ClipboardEvent): DocumentAndElementEventHandlersEventMap = {
+  inline def apply(copy: ClipboardEvent, cut: ClipboardEvent, paste: ClipboardEvent): DocumentAndElementEventHandlersEventMap = {
     val __obj = js.Dynamic.literal(copy = copy.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAndElementEventHandlersEventMap]
   }
   
-  @scala.inline
-  implicit class DocumentAndElementEventHandlersEventMapMutableBuilder[Self <: DocumentAndElementEventHandlersEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAndElementEventHandlersEventMap](x: Self) {
     
-    @scala.inline
-    def setCopy(value: ClipboardEvent): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    inline def setCopy(value: ClipboardEvent): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCut(value: ClipboardEvent): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
+    inline def setCut(value: ClipboardEvent): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaste(value: ClipboardEvent): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
+    inline def setPaste(value: ClipboardEvent): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
   }
 }

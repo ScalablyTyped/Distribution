@@ -22,22 +22,17 @@ trait ObjectFieldSelector extends StObject {
 }
 object ObjectFieldSelector {
   
-  @scala.inline
-  def apply(fieldPath: Input[String]): ObjectFieldSelector = {
+  inline def apply(fieldPath: Input[String]): ObjectFieldSelector = {
     val __obj = js.Dynamic.literal(fieldPath = fieldPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectFieldSelector]
   }
   
-  @scala.inline
-  implicit class ObjectFieldSelectorMutableBuilder[Self <: ObjectFieldSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectFieldSelector](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setFieldPath(value: Input[String]): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    inline def setFieldPath(value: Input[String]): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
   }
 }

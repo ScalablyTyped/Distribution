@@ -119,8 +119,7 @@ object mod {
   }
   object PlaidLinkProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientName: String,
       env: tartan | sandbox | development | production,
       onSuccess: (String, Accounts) => Unit,
@@ -133,100 +132,71 @@ object mod {
       __obj.asInstanceOf[PlaidLinkProps]
     }
     
-    @scala.inline
-    implicit class PlaidLinkPropsMutableBuilder[Self <: PlaidLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: PlaidLinkProps](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
+      inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: tartan | sandbox | development | production): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: tartan | sandbox | development | production): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstitution(value: String): Self = StObject.set(x, "institution", value.asInstanceOf[js.Any])
+      inline def setInstitution(value: String): Self = StObject.set(x, "institution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstitutionUndefined: Self = StObject.set(x, "institution", js.undefined)
+      inline def setInstitutionUndefined: Self = StObject.set(x, "institution", js.undefined)
       
-      @scala.inline
-      def setOnEvent(
+      inline def setOnEvent(
         value: (/* eventName */ ERROR | EXIT | HANDOFF | OPEN | OPEN_MY_PLAID | SEARCH_INSTITUTION | SELECT_INSTITUTION | SUBMIT_CREDENTIALS | SUBMIT_MFA | TRANSITION_VIEW, /* metadata */ Errorcode) => Unit
       ): Self = StObject.set(x, "onEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
+      inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
       
-      @scala.inline
-      def setOnExit(value: (/* error */ Displaymessage | Null, /* metadata */ Institution) => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction2(value))
+      inline def setOnExit(value: (/* error */ Displaymessage | Null, /* metadata */ Institution) => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+      inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: (String, Accounts) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
+      inline def setOnSuccess(value: (String, Accounts) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProduct(
+      inline def setProduct(
         value: js.Array[
               connect | info | auth | identity | income | transactions | assets | liabilities | investments | payment_initiation
             ]
       ): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductVarargs(
+      inline def setProductVarargs(
         value: (connect | info | auth | identity | income | transactions | assets | liabilities | investments | payment_initiation)*
       ): Self = StObject.set(x, "product", js.Array(value :_*))
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAccount(value: Boolean): Self = StObject.set(x, "selectAccount", value.asInstanceOf[js.Any])
+      inline def setSelectAccount(value: Boolean): Self = StObject.set(x, "selectAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAccountUndefined: Self = StObject.set(x, "selectAccount", js.undefined)
+      inline def setSelectAccountUndefined: Self = StObject.set(x, "selectAccount", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUser(value: EmailAddress): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: EmailAddress): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       
-      @scala.inline
-      def setWebhook(value: String): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+      inline def setWebhook(value: String): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
+      inline def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
     }
   }
 }

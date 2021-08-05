@@ -26,8 +26,7 @@ object formattingMod {
   @js.native
   val formats: Formats_ = js.native
   
-  @scala.inline
-  def monthToStr(monthNumber: Double, shorthand: Boolean, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("monthToStr")(monthNumber.asInstanceOf[js.Any], shorthand.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def monthToStr(monthNumber: Double, shorthand: Boolean, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("monthToStr")(monthNumber.asInstanceOf[js.Any], shorthand.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("flatpickr/dist/utils/formatting", "revFormat")
   @js.native
@@ -134,8 +133,7 @@ object formattingMod {
   }
   object Formats_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       D: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
       F: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
       G: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
@@ -164,53 +162,37 @@ object formattingMod {
       __obj.asInstanceOf[Formats_]
     }
     
-    @scala.inline
-    implicit class Formats_MutableBuilder[Self <: Formats_] (val x: Self) extends AnyVal {
+    extension [Self <: Formats_](x: Self) {
       
-      @scala.inline
-      def setD(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "D", js.Any.fromFunction3(value))
+      inline def setD(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "D", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setF(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "F", js.Any.fromFunction3(value))
+      inline def setF(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "F", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setG(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "G", js.Any.fromFunction3(value))
+      inline def setG(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "G", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setH(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "H", js.Any.fromFunction3(value))
+      inline def setH(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "H", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setI(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "i", js.Any.fromFunction3(value))
+      inline def setI(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "i", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setJ(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "J", js.Any.fromFunction3(value))
+      inline def setJ(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "J", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setK(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "K", js.Any.fromFunction3(value))
+      inline def setK(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "K", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setL(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "l", js.Any.fromFunction3(value))
+      inline def setL(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "l", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setM(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "M", js.Any.fromFunction3(value))
+      inline def setM(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "M", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setN(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "n", js.Any.fromFunction3(value))
+      inline def setN(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "n", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setS(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "S", js.Any.fromFunction3(value))
+      inline def setS(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "S", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setU(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "U", js.Any.fromFunction3(value))
+      inline def setU(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "U", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setW(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "W", js.Any.fromFunction3(value))
+      inline def setW(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "W", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setY(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "Y", js.Any.fromFunction3(value))
+      inline def setY(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "Y", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setZ(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "Z", js.Any.fromFunction3(value))
+      inline def setZ(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "Z", js.Any.fromFunction3(value))
     }
   }
   
@@ -269,8 +251,7 @@ object formattingMod {
   }
   object TokenRegex_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       D: String,
       F: String,
       G: String,
@@ -299,53 +280,37 @@ object formattingMod {
       __obj.asInstanceOf[TokenRegex_]
     }
     
-    @scala.inline
-    implicit class TokenRegex_MutableBuilder[Self <: TokenRegex_] (val x: Self) extends AnyVal {
+    extension [Self <: TokenRegex_](x: Self) {
       
-      @scala.inline
-      def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      inline def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
+      inline def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: String): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+      inline def setG(value: String): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH(value: String): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+      inline def setH(value: String): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      inline def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJ(value: String): Self = StObject.set(x, "J", value.asInstanceOf[js.Any])
+      inline def setJ(value: String): Self = StObject.set(x, "J", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK(value: String): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
+      inline def setK(value: String): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      inline def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+      inline def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+      inline def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: String): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
+      inline def setW(value: String): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: String): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+      inline def setZ(value: String): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
     }
   }
   
@@ -377,73 +342,50 @@ object formattingMod {
   trait token extends StObject
   object token {
     
-    @scala.inline
-    def D: typings.flatpickr.flatpickrStrings.D = "D".asInstanceOf[typings.flatpickr.flatpickrStrings.D]
+    inline def D: typings.flatpickr.flatpickrStrings.D = "D".asInstanceOf[typings.flatpickr.flatpickrStrings.D]
     
-    @scala.inline
-    def F: typings.flatpickr.flatpickrStrings.F = "F".asInstanceOf[typings.flatpickr.flatpickrStrings.F]
+    inline def F: typings.flatpickr.flatpickrStrings.F = "F".asInstanceOf[typings.flatpickr.flatpickrStrings.F]
     
-    @scala.inline
-    def G: typings.flatpickr.flatpickrStrings.G = "G".asInstanceOf[typings.flatpickr.flatpickrStrings.G]
+    inline def G: typings.flatpickr.flatpickrStrings.G = "G".asInstanceOf[typings.flatpickr.flatpickrStrings.G]
     
-    @scala.inline
-    def H: typings.flatpickr.flatpickrStrings.H = "H".asInstanceOf[typings.flatpickr.flatpickrStrings.H]
+    inline def H: typings.flatpickr.flatpickrStrings.H = "H".asInstanceOf[typings.flatpickr.flatpickrStrings.H]
     
-    @scala.inline
-    def J: typings.flatpickr.flatpickrStrings.J = "J".asInstanceOf[typings.flatpickr.flatpickrStrings.J]
+    inline def J: typings.flatpickr.flatpickrStrings.J = "J".asInstanceOf[typings.flatpickr.flatpickrStrings.J]
     
-    @scala.inline
-    def K: typings.flatpickr.flatpickrStrings.K = "K".asInstanceOf[typings.flatpickr.flatpickrStrings.K]
+    inline def K: typings.flatpickr.flatpickrStrings.K = "K".asInstanceOf[typings.flatpickr.flatpickrStrings.K]
     
-    @scala.inline
-    def M: typings.flatpickr.flatpickrStrings.M = "M".asInstanceOf[typings.flatpickr.flatpickrStrings.M]
+    inline def M: typings.flatpickr.flatpickrStrings.M = "M".asInstanceOf[typings.flatpickr.flatpickrStrings.M]
     
-    @scala.inline
-    def S: typings.flatpickr.flatpickrStrings.S = "S".asInstanceOf[typings.flatpickr.flatpickrStrings.S]
+    inline def S: typings.flatpickr.flatpickrStrings.S = "S".asInstanceOf[typings.flatpickr.flatpickrStrings.S]
     
-    @scala.inline
-    def U: typings.flatpickr.flatpickrStrings.U = "U".asInstanceOf[typings.flatpickr.flatpickrStrings.U]
+    inline def U: typings.flatpickr.flatpickrStrings.U = "U".asInstanceOf[typings.flatpickr.flatpickrStrings.U]
     
-    @scala.inline
-    def W: typings.flatpickr.flatpickrStrings.W = "W".asInstanceOf[typings.flatpickr.flatpickrStrings.W]
+    inline def W: typings.flatpickr.flatpickrStrings.W = "W".asInstanceOf[typings.flatpickr.flatpickrStrings.W]
     
-    @scala.inline
-    def Y: typings.flatpickr.flatpickrStrings.Y = "Y".asInstanceOf[typings.flatpickr.flatpickrStrings.Y]
+    inline def Y: typings.flatpickr.flatpickrStrings.Y = "Y".asInstanceOf[typings.flatpickr.flatpickrStrings.Y]
     
-    @scala.inline
-    def Z: typings.flatpickr.flatpickrStrings.Z = "Z".asInstanceOf[typings.flatpickr.flatpickrStrings.Z]
+    inline def Z: typings.flatpickr.flatpickrStrings.Z = "Z".asInstanceOf[typings.flatpickr.flatpickrStrings.Z]
     
-    @scala.inline
-    def d: d_ = "d".asInstanceOf[d_]
+    inline def d: d_ = "d".asInstanceOf[d_]
     
-    @scala.inline
-    def h: h_ = "h".asInstanceOf[h_]
+    inline def h: h_ = "h".asInstanceOf[h_]
     
-    @scala.inline
-    def i: typings.flatpickr.flatpickrStrings.i = "i".asInstanceOf[typings.flatpickr.flatpickrStrings.i]
+    inline def i: typings.flatpickr.flatpickrStrings.i = "i".asInstanceOf[typings.flatpickr.flatpickrStrings.i]
     
-    @scala.inline
-    def j: j_ = "j".asInstanceOf[j_]
+    inline def j: j_ = "j".asInstanceOf[j_]
     
-    @scala.inline
-    def l: typings.flatpickr.flatpickrStrings.l = "l".asInstanceOf[typings.flatpickr.flatpickrStrings.l]
+    inline def l: typings.flatpickr.flatpickrStrings.l = "l".asInstanceOf[typings.flatpickr.flatpickrStrings.l]
     
-    @scala.inline
-    def m: m_ = "m".asInstanceOf[m_]
+    inline def m: m_ = "m".asInstanceOf[m_]
     
-    @scala.inline
-    def n: typings.flatpickr.flatpickrStrings.n = "n".asInstanceOf[typings.flatpickr.flatpickrStrings.n]
+    inline def n: typings.flatpickr.flatpickrStrings.n = "n".asInstanceOf[typings.flatpickr.flatpickrStrings.n]
     
-    @scala.inline
-    def s: s_ = "s".asInstanceOf[s_]
+    inline def s: s_ = "s".asInstanceOf[s_]
     
-    @scala.inline
-    def u: u_ = "u".asInstanceOf[u_]
+    inline def u: u_ = "u".asInstanceOf[u_]
     
-    @scala.inline
-    def w: w_ = "w".asInstanceOf[w_]
+    inline def w: w_ = "w".asInstanceOf[w_]
     
-    @scala.inline
-    def y: y_ = "y".asInstanceOf[y_]
+    inline def y: y_ = "y".asInstanceOf[y_]
   }
 }

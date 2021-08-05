@@ -17,35 +17,35 @@ object mod {
       */
     def this(options: IOptions[T, U]) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _coerce: js.Any = js.native
+    /* private */ var _coerce: js.Any = js.native
     
     /**
       * Coerce the value for the given owner.
       */
-    var _coerceValue: js.Any = js.native
+    /* private */ var _coerceValue: js.Any = js.native
     
-    var _compare: js.Any = js.native
+    /* private */ var _compare: js.Any = js.native
     
     /**
       * Compare the old value and new value for equality.
       */
-    var _compareValue: js.Any = js.native
+    /* private */ var _compareValue: js.Any = js.native
     
-    var _create: js.Any = js.native
+    /* private */ var _create: js.Any = js.native
     
     /**
       * Get or create the default value for the given owner.
       */
-    var _createValue: js.Any = js.native
+    /* private */ var _createValue: js.Any = js.native
     
     /**
       * Run the change notification if the given values are different.
       */
-    var _maybeNotify: js.Any = js.native
+    /* private */ var _maybeNotify: js.Any = js.native
     
-    var _pid: js.Any = js.native
+    /* private */ var _pid: js.Any = js.native
     
     /**
       * Explicitly coerce the current property value for a given owner.
@@ -104,8 +104,7 @@ object mod {
       * This will clear all property values for the owner, but it will
       * **not** run the change notification for any of the properties.
       */
-    @scala.inline
-    def clearData(owner: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearData(owner: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * The options object used to initialize an attached property.
@@ -171,38 +170,28 @@ object mod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T, U](create: T => U, name: String): IOptions[T, U] = {
+      inline def apply[T, U](create: T => U, name: String): IOptions[T, U] = {
         val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[T, U]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?, ?], T, U] (val x: Self & (IOptions[T, U])) extends AnyVal {
+      extension [Self <: IOptions[?, ?], T, U](x: Self & (IOptions[T, U])) {
         
-        @scala.inline
-        def setChanged(value: (/* owner */ T, /* oldValue */ U, /* newValue */ U) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))
+        inline def setChanged(value: (/* owner */ T, /* oldValue */ U, /* newValue */ U) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
+        inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
         
-        @scala.inline
-        def setCoerce(value: (/* owner */ T, /* value */ U) => U): Self = StObject.set(x, "coerce", js.Any.fromFunction2(value))
+        inline def setCoerce(value: (/* owner */ T, /* value */ U) => U): Self = StObject.set(x, "coerce", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+        inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
         
-        @scala.inline
-        def setCompare(value: (/* oldValue */ U, /* newValue */ U) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+        inline def setCompare(value: (/* oldValue */ U, /* newValue */ U) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+        inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
         
-        @scala.inline
-        def setCreate(value: T => U): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+        inline def setCreate(value: T => U): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }

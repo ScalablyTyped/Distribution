@@ -12,20 +12,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def jest(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("jest")().asInstanceOf[Aliases]
-  @scala.inline
-  def jest(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("jest")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
+  inline def jest(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("jest")().asInstanceOf[Aliases]
+  inline def jest(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("jest")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
   
-  @scala.inline
-  def rollup(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")().asInstanceOf[Aliases]
-  @scala.inline
-  def rollup(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
+  inline def rollup(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")().asInstanceOf[Aliases]
+  inline def rollup(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
   
-  @scala.inline
-  def webpack(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("webpack")().asInstanceOf[Aliases]
-  @scala.inline
-  def webpack(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("webpack")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
+  inline def webpack(): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("webpack")().asInstanceOf[Aliases]
+  inline def webpack(options: Options): Aliases = ^.asInstanceOf[js.Dynamic].applyDynamic("webpack")(options.asInstanceOf[js.Any]).asInstanceOf[Aliases]
   
   type Aliases = /**
     * Key is the package name or an appropriate mapping for the tool.
@@ -58,35 +52,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+      inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
+      inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      @scala.inline
-      def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceDirectory(value: String | `false`): Self = StObject.set(x, "sourceDirectory", value.asInstanceOf[js.Any])
+      inline def setSourceDirectory(value: String | `false`): Self = StObject.set(x, "sourceDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirectoryUndefined: Self = StObject.set(x, "sourceDirectory", js.undefined)
+      inline def setSourceDirectoryUndefined: Self = StObject.set(x, "sourceDirectory", js.undefined)
     }
   }
 }

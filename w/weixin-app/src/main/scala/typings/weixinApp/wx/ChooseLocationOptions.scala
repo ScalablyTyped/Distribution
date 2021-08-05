@@ -13,16 +13,13 @@ trait ChooseLocationOptions
 }
 object ChooseLocationOptions {
   
-  @scala.inline
-  def apply(success: ChooseLocationData => Unit): ChooseLocationOptions = {
+  inline def apply(success: ChooseLocationData => Unit): ChooseLocationOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseLocationOptions]
   }
   
-  @scala.inline
-  implicit class ChooseLocationOptionsMutableBuilder[Self <: ChooseLocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseLocationOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: ChooseLocationData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ChooseLocationData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

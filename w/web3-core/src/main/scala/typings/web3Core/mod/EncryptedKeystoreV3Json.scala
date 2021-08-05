@@ -17,25 +17,19 @@ trait EncryptedKeystoreV3Json extends StObject {
 }
 object EncryptedKeystoreV3Json {
   
-  @scala.inline
-  def apply(address: String, crypto: Cipher, id: String, version: Double): EncryptedKeystoreV3Json = {
+  inline def apply(address: String, crypto: Cipher, id: String, version: Double): EncryptedKeystoreV3Json = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], crypto = crypto.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptedKeystoreV3Json]
   }
   
-  @scala.inline
-  implicit class EncryptedKeystoreV3JsonMutableBuilder[Self <: EncryptedKeystoreV3Json] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptedKeystoreV3Json](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrypto(value: Cipher): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
+    inline def setCrypto(value: Cipher): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

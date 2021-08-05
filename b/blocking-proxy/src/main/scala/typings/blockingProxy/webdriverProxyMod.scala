@@ -29,17 +29,14 @@ object webdriverProxyMod {
   }
   object WebDriverBarrier {
     
-    @scala.inline
-    def apply(onCommand: WebDriverCommand => js.Promise[Unit]): WebDriverBarrier = {
+    inline def apply(onCommand: WebDriverCommand => js.Promise[Unit]): WebDriverBarrier = {
       val __obj = js.Dynamic.literal(onCommand = js.Any.fromFunction1(onCommand))
       __obj.asInstanceOf[WebDriverBarrier]
     }
     
-    @scala.inline
-    implicit class WebDriverBarrierMutableBuilder[Self <: WebDriverBarrier] (val x: Self) extends AnyVal {
+    extension [Self <: WebDriverBarrier](x: Self) {
       
-      @scala.inline
-      def setOnCommand(value: WebDriverCommand => js.Promise[Unit]): Self = StObject.set(x, "onCommand", js.Any.fromFunction1(value))
+      inline def setOnCommand(value: WebDriverCommand => js.Promise[Unit]): Self = StObject.set(x, "onCommand", js.Any.fromFunction1(value))
     }
   }
 }

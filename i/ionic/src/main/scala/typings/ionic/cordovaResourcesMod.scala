@@ -22,24 +22,17 @@ object cordovaResourcesMod {
   @js.native
   val RESOURCES: ResourcesConfig = js.native
   
-  @scala.inline
-  def addResourcesToConfigXml(conf: CordovaConfig, platformList: js.Array[KnownPlatform], resourceJson: ResourcesConfig): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addResourcesToConfigXml")(conf.asInstanceOf[js.Any], platformList.asInstanceOf[js.Any], resourceJson.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def addResourcesToConfigXml(conf: CordovaConfig, platformList: js.Array[KnownPlatform], resourceJson: ResourcesConfig): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addResourcesToConfigXml")(conf.asInstanceOf[js.Any], platformList.asInstanceOf[js.Any], resourceJson.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def createImgDestinationDirectories(imgResources: js.Array[ImageResource]): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImgDestinationDirectories")(imgResources.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit]]]
+  inline def createImgDestinationDirectories(imgResources: js.Array[ImageResource]): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImgDestinationDirectories")(imgResources.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit]]]
   
-  @scala.inline
-  def findMostSpecificSourceImage(imageResource: ImageResource, srcImagesAvailable: js.Array[SourceImage]): js.UndefOr[SourceImage] = (^.asInstanceOf[js.Dynamic].applyDynamic("findMostSpecificSourceImage")(imageResource.asInstanceOf[js.Any], srcImagesAvailable.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SourceImage]]
+  inline def findMostSpecificSourceImage(imageResource: ImageResource, srcImagesAvailable: js.Array[SourceImage]): js.UndefOr[SourceImage] = (^.asInstanceOf[js.Dynamic].applyDynamic("findMostSpecificSourceImage")(imageResource.asInstanceOf[js.Any], srcImagesAvailable.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SourceImage]]
   
-  @scala.inline
-  def getImageResources(projectDir: String): js.Array[ImageResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageResources")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[ImageResource]]
+  inline def getImageResources(projectDir: String): js.Array[ImageResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageResources")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[ImageResource]]
   
-  @scala.inline
-  def getSourceImages(projectDir: String, buildPlatforms: js.Array[String], resourceTypes: js.Array[String]): js.Promise[js.Array[SourceImage]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceImages")(projectDir.asInstanceOf[js.Any], buildPlatforms.asInstanceOf[js.Any], resourceTypes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SourceImage]]]
+  inline def getSourceImages(projectDir: String, buildPlatforms: js.Array[String], resourceTypes: js.Array[String]): js.Promise[js.Array[SourceImage]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceImages")(projectDir.asInstanceOf[js.Any], buildPlatforms.asInstanceOf[js.Any], resourceTypes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SourceImage]]]
   
-  @scala.inline
-  def transformResourceImage(env: IonicEnvironment, resource: ImageResource): js.Promise[ImageResourceTransformResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformResourceImage")(env.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageResourceTransformResult]]
+  inline def transformResourceImage(env: IonicEnvironment, resource: ImageResource): js.Promise[ImageResourceTransformResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformResourceImage")(env.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageResourceTransformResult]]
   
-  @scala.inline
-  def uploadSourceImage(env: IonicEnvironment, srcImage: SourceImage): js.Promise[ImageUploadResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadSourceImage")(env.asInstanceOf[js.Any], srcImage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageUploadResponse]]
+  inline def uploadSourceImage(env: IonicEnvironment, srcImage: SourceImage): js.Promise[ImageUploadResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadSourceImage")(env.asInstanceOf[js.Any], srcImage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageUploadResponse]]
 }

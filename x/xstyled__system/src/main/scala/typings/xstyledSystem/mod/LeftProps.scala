@@ -14,27 +14,22 @@ trait LeftProps[TLength] extends StObject {
 }
 object LeftProps {
   
-  @scala.inline
-  def apply[TLength](): LeftProps[TLength] = {
+  inline def apply[TLength](): LeftProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeftProps[TLength]]
   }
   
-  @scala.inline
-  implicit class LeftPropsMutableBuilder[Self <: LeftProps[?], TLength] (val x: Self & LeftProps[TLength]) extends AnyVal {
+  extension [Self <: LeftProps[?], TLength](x: Self & LeftProps[TLength]) {
     
-    @scala.inline
-    def setLeft(
+    inline def setLeft(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setLeftVarargs(
+    inline def setLeftVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any)*
     ): Self = StObject.set(x, "left", js.Array(value :_*))
   }

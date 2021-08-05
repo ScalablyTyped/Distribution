@@ -14,17 +14,14 @@ trait ResolveNodeResponse extends StObject {
 }
 object ResolveNodeResponse {
   
-  @scala.inline
-  def apply(`object`: RemoteObject): ResolveNodeResponse = {
+  inline def apply(`object`: RemoteObject): ResolveNodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveNodeResponse]
   }
   
-  @scala.inline
-  implicit class ResolveNodeResponseMutableBuilder[Self <: ResolveNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveNodeResponse](x: Self) {
     
-    @scala.inline
-    def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

@@ -47,56 +47,40 @@ object typesPullRequestTargetMod {
   }
   object PullRequestTarget {
     
-    @scala.inline
-    def apply(): PullRequestTarget = {
+    inline def apply(): PullRequestTarget = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PullRequestTarget]
     }
     
-    @scala.inline
-    implicit class PullRequestTargetMutableBuilder[Self <: PullRequestTarget] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequestTarget](x: Self) {
       
-      @scala.inline
-      def setDestinationCommit(value: String): Self = StObject.set(x, "destinationCommit", value.asInstanceOf[js.Any])
+      inline def setDestinationCommit(value: String): Self = StObject.set(x, "destinationCommit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationCommitUndefined: Self = StObject.set(x, "destinationCommit", js.undefined)
+      inline def setDestinationCommitUndefined: Self = StObject.set(x, "destinationCommit", js.undefined)
       
-      @scala.inline
-      def setDestinationReference(value: String): Self = StObject.set(x, "destinationReference", value.asInstanceOf[js.Any])
+      inline def setDestinationReference(value: String): Self = StObject.set(x, "destinationReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationReferenceUndefined: Self = StObject.set(x, "destinationReference", js.undefined)
+      inline def setDestinationReferenceUndefined: Self = StObject.set(x, "destinationReference", js.undefined)
       
-      @scala.inline
-      def setMergeBase(value: String): Self = StObject.set(x, "mergeBase", value.asInstanceOf[js.Any])
+      inline def setMergeBase(value: String): Self = StObject.set(x, "mergeBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeBaseUndefined: Self = StObject.set(x, "mergeBase", js.undefined)
+      inline def setMergeBaseUndefined: Self = StObject.set(x, "mergeBase", js.undefined)
       
-      @scala.inline
-      def setMergeMetadata(value: MergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
+      inline def setMergeMetadata(value: MergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeMetadataUndefined: Self = StObject.set(x, "mergeMetadata", js.undefined)
+      inline def setMergeMetadataUndefined: Self = StObject.set(x, "mergeMetadata", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+      inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
       
-      @scala.inline
-      def setSourceCommit(value: String): Self = StObject.set(x, "sourceCommit", value.asInstanceOf[js.Any])
+      inline def setSourceCommit(value: String): Self = StObject.set(x, "sourceCommit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCommitUndefined: Self = StObject.set(x, "sourceCommit", js.undefined)
+      inline def setSourceCommitUndefined: Self = StObject.set(x, "sourceCommit", js.undefined)
       
-      @scala.inline
-      def setSourceReference(value: String): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
+      inline def setSourceReference(value: String): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
+      inline def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
     }
   }
   
@@ -112,20 +96,16 @@ object typesPullRequestTargetMod {
   }
   object UnmarshalledPullRequestTarget {
     
-    @scala.inline
-    def apply(): UnmarshalledPullRequestTarget = {
+    inline def apply(): UnmarshalledPullRequestTarget = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledPullRequestTarget]
     }
     
-    @scala.inline
-    implicit class UnmarshalledPullRequestTargetMutableBuilder[Self <: UnmarshalledPullRequestTarget] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledPullRequestTarget](x: Self) {
       
-      @scala.inline
-      def setMergeMetadata(value: UnmarshalledMergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
+      inline def setMergeMetadata(value: UnmarshalledMergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeMetadataUndefined: Self = StObject.set(x, "mergeMetadata", js.undefined)
+      inline def setMergeMetadataUndefined: Self = StObject.set(x, "mergeMetadata", js.undefined)
     }
   }
 }

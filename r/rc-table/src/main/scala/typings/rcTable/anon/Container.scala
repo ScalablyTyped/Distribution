@@ -20,8 +20,7 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     container: Window | HTMLElement,
     isSticky: Boolean,
     offsetHeader: Double,
@@ -32,22 +31,16 @@ object Container {
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setContainer(value: Window | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Window | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
+    inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
+    inline def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
+    inline def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
+    inline def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
   }
 }

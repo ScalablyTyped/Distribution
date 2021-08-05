@@ -44,8 +44,7 @@ object typesMod {
   }
   object ICollection {
     
-    @scala.inline
-    def apply[I](
+    inline def apply[I](
       Add: I => Unit,
       Clear: () => Unit,
       Count: Double,
@@ -65,58 +64,43 @@ object typesMod {
       __obj.asInstanceOf[ICollection[I]]
     }
     
-    @scala.inline
-    implicit class ICollectionMutableBuilder[Self <: ICollection[?], I] (val x: Self & ICollection[I]) extends AnyVal {
+    extension [Self <: ICollection[?], I](x: Self & ICollection[I]) {
       
-      @scala.inline
-      def setAdd(value: I => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+      inline def setAdd(value: I => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvery(
+      inline def setEvery(
         value: js.Function3[/* value */ I, /* index */ Double, /* array */ js.Array[I], Boolean] => Boolean
       ): Self = StObject.set(x, "Every", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Boolean] => ICollection[I]
       ): Self = StObject.set(x, "Filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Unit] => Unit): Self = StObject.set(x, "ForEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Unit] => Unit): Self = StObject.set(x, "ForEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIterator(value: () => js.Array[I]): Self = StObject.set(x, "GetIterator", js.Any.fromFunction0(value))
+      inline def setGetIterator(value: () => js.Array[I]): Self = StObject.set(x, "GetIterator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setItem(value: Double => I | Null): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => I | Null): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], js.Any] => ICollection[js.Any]
       ): Self = StObject.set(x, "Map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPop(value: () => js.UndefOr[I]): Self = StObject.set(x, "Pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => js.UndefOr[I]): Self = StObject.set(x, "Pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "RemoveAt", js.Any.fromFunction1(value))
+      inline def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "RemoveAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSome(
+      inline def setSome(
         value: js.Function3[/* value */ I, /* index */ Double, /* array */ js.Array[I], Boolean] => Boolean
       ): Self = StObject.set(x, "Some", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSort(value: js.Function2[/* a */ I, /* b */ I, Double] => ICollection[I]): Self = StObject.set(x, "Sort", js.Any.fromFunction1(value))
+      inline def setSort(value: js.Function2[/* a */ I, /* b */ I, Double] => ICollection[I]): Self = StObject.set(x, "Sort", js.Any.fromFunction1(value))
     }
   }
   
@@ -138,20 +122,16 @@ object typesMod {
   }
   object IConverter {
     
-    @scala.inline
-    def apply[T](get: T => js.UndefOr[String], set: String => T): IConverter[T] = {
+    inline def apply[T](get: T => js.UndefOr[String], set: String => T): IConverter[T] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[IConverter[T]]
     }
     
-    @scala.inline
-    implicit class IConverterMutableBuilder[Self <: IConverter[?], T] (val x: Self & IConverter[T]) extends AnyVal {
+    extension [Self <: IConverter[?], T](x: Self & IConverter[T]) {
       
-      @scala.inline
-      def setGet(value: T => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: T => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: String => T): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: String => T): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
   
@@ -221,32 +201,24 @@ object typesMod {
   }
   object XmlChildElementType {
     
-    @scala.inline
-    def apply[T](): XmlChildElementType[T] = {
+    inline def apply[T](): XmlChildElementType[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlChildElementType[T]]
     }
     
-    @scala.inline
-    implicit class XmlChildElementTypeMutableBuilder[Self <: XmlChildElementType[?], T] (val x: Self & XmlChildElementType[T]) extends AnyVal {
+    extension [Self <: XmlChildElementType[?], T](x: Self & XmlChildElementType[T]) {
       
-      @scala.inline
-      def setMaxOccurs(value: Double): Self = StObject.set(x, "maxOccurs", value.asInstanceOf[js.Any])
+      inline def setMaxOccurs(value: Double): Self = StObject.set(x, "maxOccurs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOccursUndefined: Self = StObject.set(x, "maxOccurs", js.undefined)
+      inline def setMaxOccursUndefined: Self = StObject.set(x, "maxOccurs", js.undefined)
       
-      @scala.inline
-      def setMinOccurs(value: Double): Self = StObject.set(x, "minOccurs", value.asInstanceOf[js.Any])
+      inline def setMinOccurs(value: Double): Self = StObject.set(x, "minOccurs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinOccursUndefined: Self = StObject.set(x, "minOccurs", js.undefined)
+      inline def setMinOccursUndefined: Self = StObject.set(x, "minOccurs", js.undefined)
       
-      @scala.inline
-      def setNoRoot(value: Boolean): Self = StObject.set(x, "noRoot", value.asInstanceOf[js.Any])
+      inline def setNoRoot(value: Boolean): Self = StObject.set(x, "noRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoRootUndefined: Self = StObject.set(x, "noRoot", js.undefined)
+      inline def setNoRootUndefined: Self = StObject.set(x, "noRoot", js.undefined)
     }
   }
   
@@ -278,35 +250,26 @@ object typesMod {
   }
   object XmlContentType {
     
-    @scala.inline
-    def apply[T](): XmlContentType[T] = {
+    inline def apply[T](): XmlContentType[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlContentType[T]]
     }
     
-    @scala.inline
-    implicit class XmlContentTypeMutableBuilder[Self <: XmlContentType[?], T] (val x: Self & XmlContentType[T]) extends AnyVal {
+    extension [Self <: XmlContentType[?], T](x: Self & XmlContentType[T]) {
       
-      @scala.inline
-      def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+      inline def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
+      inline def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   
@@ -326,17 +289,14 @@ object typesMod {
   }
   object XmlElementType {
     
-    @scala.inline
-    def apply(localName: String): XmlElementType = {
+    inline def apply(localName: String): XmlElementType = {
       val __obj = js.Dynamic.literal(localName = localName.asInstanceOf[js.Any])
       __obj.asInstanceOf[XmlElementType]
     }
     
-    @scala.inline
-    implicit class XmlElementTypeMutableBuilder[Self <: XmlElementType] (val x: Self) extends AnyVal {
+    extension [Self <: XmlElementType](x: Self) {
       
-      @scala.inline
-      def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+      inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,26 +320,20 @@ object typesMod {
   }
   object XmlNamespace {
     
-    @scala.inline
-    def apply(): XmlNamespace = {
+    inline def apply(): XmlNamespace = {
       val __obj = js.Dynamic.literal(namespace = null, prefix = null)
       __obj.asInstanceOf[XmlNamespace]
     }
     
-    @scala.inline
-    implicit class XmlNamespaceMutableBuilder[Self <: XmlNamespace] (val x: Self) extends AnyVal {
+    extension [Self <: XmlNamespace](x: Self) {
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceNull: Self = StObject.set(x, "namespace", null)
+      inline def setNamespaceNull: Self = StObject.set(x, "namespace", null)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixNull: Self = StObject.set(x, "prefix", null)
+      inline def setPrefixNull: Self = StObject.set(x, "prefix", null)
     }
   }
   
@@ -401,56 +355,40 @@ object typesMod {
   }
   object XmlSchema {
     
-    @scala.inline
-    def apply(): XmlSchema = {
+    inline def apply(): XmlSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlSchema]
     }
     
-    @scala.inline
-    implicit class XmlSchemaMutableBuilder[Self <: XmlSchema] (val x: Self) extends AnyVal {
+    extension [Self <: XmlSchema](x: Self) {
       
-      @scala.inline
-      def setItems(value: StringDictionary[(XmlChildElementType[js.Any] | XmlAttributeType[js.Any]) & Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: StringDictionary[(XmlChildElementType[js.Any] | XmlAttributeType[js.Any]) & Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+      inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
+      inline def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
       
-      @scala.inline
-      def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
+      inline def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceURINull: Self = StObject.set(x, "namespaceURI", null)
+      inline def setNamespaceURINull: Self = StObject.set(x, "namespaceURI", null)
       
-      @scala.inline
-      def setNamespaceURIUndefined: Self = StObject.set(x, "namespaceURI", js.undefined)
+      inline def setNamespaceURIUndefined: Self = StObject.set(x, "namespaceURI", js.undefined)
       
-      @scala.inline
-      def setParser(value: IXmlSerializableConstructor): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: IXmlSerializableConstructor): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixNull: Self = StObject.set(x, "prefix", null)
+      inline def setPrefixNull: Self = StObject.set(x, "prefix", null)
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -484,35 +422,26 @@ object typesMod {
   }
   object XmlSchemaItem {
     
-    @scala.inline
-    def apply[T](): XmlSchemaItem[T] = {
+    inline def apply[T](): XmlSchemaItem[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlSchemaItem[T]]
     }
     
-    @scala.inline
-    implicit class XmlSchemaItemMutableBuilder[Self <: XmlSchemaItem[?], T] (val x: Self & XmlSchemaItem[T]) extends AnyVal {
+    extension [Self <: XmlSchemaItem[?], T](x: Self & XmlSchemaItem[T]) {
       
-      @scala.inline
-      def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+      inline def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
+      inline def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   
@@ -544,38 +473,28 @@ object typesMod {
   }
   object XmlSchemaItemBase {
     
-    @scala.inline
-    def apply(): XmlSchemaItemBase = {
+    inline def apply(): XmlSchemaItemBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlSchemaItemBase]
     }
     
-    @scala.inline
-    implicit class XmlSchemaItemBaseMutableBuilder[Self <: XmlSchemaItemBase] (val x: Self) extends AnyVal {
+    extension [Self <: XmlSchemaItemBase](x: Self) {
       
-      @scala.inline
-      def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+      inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
+      inline def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
       
-      @scala.inline
-      def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
+      inline def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceURINull: Self = StObject.set(x, "namespaceURI", null)
+      inline def setNamespaceURINull: Self = StObject.set(x, "namespaceURI", null)
       
-      @scala.inline
-      def setNamespaceURIUndefined: Self = StObject.set(x, "namespaceURI", js.undefined)
+      inline def setNamespaceURIUndefined: Self = StObject.set(x, "namespaceURI", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixNull: Self = StObject.set(x, "prefix", null)
+      inline def setPrefixNull: Self = StObject.set(x, "prefix", null)
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -591,20 +510,16 @@ object typesMod {
   }
   object XmlSchemaItemParser {
     
-    @scala.inline
-    def apply(): XmlSchemaItemParser = {
+    inline def apply(): XmlSchemaItemParser = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlSchemaItemParser]
     }
     
-    @scala.inline
-    implicit class XmlSchemaItemParserMutableBuilder[Self <: XmlSchemaItemParser] (val x: Self) extends AnyVal {
+    extension [Self <: XmlSchemaItemParser](x: Self) {
       
-      @scala.inline
-      def setParser(value: IXmlSerializableConstructor): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: IXmlSerializableConstructor): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     }
   }
   

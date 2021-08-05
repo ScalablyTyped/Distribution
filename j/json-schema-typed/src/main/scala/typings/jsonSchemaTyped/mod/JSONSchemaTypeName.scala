@@ -18,24 +18,17 @@ trait JSONSchemaTypeName
      with _JSONSchemaTypeValue
 object JSONSchemaTypeName {
   
-  @scala.inline
-  def array: typings.jsonSchemaTyped.jsonSchemaTypedStrings.array = "array".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.array]
+  inline def array: typings.jsonSchemaTyped.jsonSchemaTypedStrings.array = "array".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.array]
   
-  @scala.inline
-  def boolean: typings.jsonSchemaTyped.jsonSchemaTypedStrings.boolean = "boolean".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.boolean]
+  inline def boolean: typings.jsonSchemaTyped.jsonSchemaTypedStrings.boolean = "boolean".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.boolean]
   
-  @scala.inline
-  def integer: typings.jsonSchemaTyped.jsonSchemaTypedStrings.integer = "integer".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.integer]
+  inline def integer: typings.jsonSchemaTyped.jsonSchemaTypedStrings.integer = "integer".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.integer]
   
-  @scala.inline
-  def `null`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`null` = "null".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`null`]
+  inline def `null`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`null` = "null".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`null`]
   
-  @scala.inline
-  def number: typings.jsonSchemaTyped.jsonSchemaTypedStrings.number = "number".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.number]
+  inline def number: typings.jsonSchemaTyped.jsonSchemaTypedStrings.number = "number".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.number]
   
-  @scala.inline
-  def `object`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`object` = "object".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`object`]
+  inline def `object`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`object` = "object".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`object`]
   
-  @scala.inline
-  def string: typings.jsonSchemaTyped.jsonSchemaTypedStrings.string = "string".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.string]
+  inline def string: typings.jsonSchemaTyped.jsonSchemaTypedStrings.string = "string".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.string]
 }

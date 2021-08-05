@@ -18,19 +18,15 @@ trait UpdateTriggerRequest extends StObject {
 }
 object UpdateTriggerRequest {
   
-  @scala.inline
-  def apply(Name: NameString, TriggerUpdate: TriggerUpdate): UpdateTriggerRequest = {
+  inline def apply(Name: NameString, TriggerUpdate: TriggerUpdate): UpdateTriggerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], TriggerUpdate = TriggerUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTriggerRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTriggerRequestMutableBuilder[Self <: UpdateTriggerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTriggerRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUpdate(value: TriggerUpdate): Self = StObject.set(x, "TriggerUpdate", value.asInstanceOf[js.Any])
+    inline def setTriggerUpdate(value: TriggerUpdate): Self = StObject.set(x, "TriggerUpdate", value.asInstanceOf[js.Any])
   }
 }

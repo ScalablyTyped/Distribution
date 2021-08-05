@@ -11,19 +11,15 @@ trait WorkerOptions extends StObject {
 }
 object WorkerOptions {
   
-  @scala.inline
-  def apply(): WorkerOptions = {
+  inline def apply(): WorkerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerOptions]
   }
   
-  @scala.inline
-  implicit class WorkerOptionsMutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerOptions](x: Self) {
     
-    @scala.inline
-    def setCustomWorkerPath(value: String): Self = StObject.set(x, "customWorkerPath", value.asInstanceOf[js.Any])
+    inline def setCustomWorkerPath(value: String): Self = StObject.set(x, "customWorkerPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomWorkerPathUndefined: Self = StObject.set(x, "customWorkerPath", js.undefined)
+    inline def setCustomWorkerPathUndefined: Self = StObject.set(x, "customWorkerPath", js.undefined)
   }
 }

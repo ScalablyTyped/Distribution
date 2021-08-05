@@ -17,23 +17,18 @@ trait StringLiteral
 }
 object StringLiteral {
   
-  @scala.inline
-  def apply(loc: SourceLocation, original: String, value: String): StringLiteral = {
+  inline def apply(loc: SourceLocation, original: String, value: String): StringLiteral = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[StringLiteral]
   }
   
-  @scala.inline
-  implicit class StringLiteralMutableBuilder[Self <: StringLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: StringLiteral](x: Self) {
     
-    @scala.inline
-    def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.StringLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.StringLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

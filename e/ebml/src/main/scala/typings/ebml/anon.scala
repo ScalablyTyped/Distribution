@@ -14,20 +14,16 @@ object anon {
   }
   object Length {
     
-    @scala.inline
-    def apply(length: Double, value: Double): Length = {
+    inline def apply(length: Double, value: Double): Length = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Length]
     }
     
-    @scala.inline
-    implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+    extension [Self <: Length](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,17 +34,14 @@ object anon {
   }
   object PickTagStackItemend {
     
-    @scala.inline
-    def apply(end: Double): PickTagStackItemend = {
+    inline def apply(end: Double): PickTagStackItemend = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickTagStackItemend]
     }
     
-    @scala.inline
-    implicit class PickTagStackItemendMutableBuilder[Self <: PickTagStackItemend] (val x: Self) extends AnyVal {
+    extension [Self <: PickTagStackItemend](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     }
   }
 }

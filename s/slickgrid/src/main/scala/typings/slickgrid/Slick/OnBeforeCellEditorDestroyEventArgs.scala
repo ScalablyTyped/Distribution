@@ -13,16 +13,13 @@ trait OnBeforeCellEditorDestroyEventArgs[T /* <: SlickData */]
 }
 object OnBeforeCellEditorDestroyEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](editor: Editor[T], grid: Grid[T]): OnBeforeCellEditorDestroyEventArgs[T] = {
+  inline def apply[T /* <: SlickData */](editor: Editor[T], grid: Grid[T]): OnBeforeCellEditorDestroyEventArgs[T] = {
     val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeforeCellEditorDestroyEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class OnBeforeCellEditorDestroyEventArgsMutableBuilder[Self <: OnBeforeCellEditorDestroyEventArgs[?], T /* <: SlickData */] (val x: Self & OnBeforeCellEditorDestroyEventArgs[T]) extends AnyVal {
+  extension [Self <: OnBeforeCellEditorDestroyEventArgs[?], T /* <: SlickData */](x: Self & OnBeforeCellEditorDestroyEventArgs[T]) {
     
-    @scala.inline
-    def setEditor(value: Editor[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Editor[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
   }
 }

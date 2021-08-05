@@ -18,37 +18,27 @@ trait PartialClientListenCall extends StObject {
 }
 object PartialClientListenCall {
   
-  @scala.inline
-  def apply(): PartialClientListenCall = {
+  inline def apply(): PartialClientListenCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClientListenCall]
   }
   
-  @scala.inline
-  implicit class PartialClientListenCallMutableBuilder[Self <: PartialClientListenCall] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClientListenCall](x: Self) {
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+    inline def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
+    inline def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
     
-    @scala.inline
-    def setOp(value: listen): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: listen): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }
 }

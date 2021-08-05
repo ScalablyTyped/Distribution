@@ -18,22 +18,17 @@ trait CreateMemberRequest extends StObject {
 }
 object CreateMemberRequest {
   
-  @scala.inline
-  def apply(account: AccountDetail): CreateMemberRequest = {
+  inline def apply(account: AccountDetail): CreateMemberRequest = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMemberRequest]
   }
   
-  @scala.inline
-  implicit class CreateMemberRequestMutableBuilder[Self <: CreateMemberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMemberRequest](x: Self) {
     
-    @scala.inline
-    def setAccount(value: AccountDetail): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AccountDetail): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GoogleActionsV2DeliveryAddressValueSpec extends StObject {
 }
 object GoogleActionsV2DeliveryAddressValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2DeliveryAddressValueSpec = {
+  inline def apply(): GoogleActionsV2DeliveryAddressValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2DeliveryAddressValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DeliveryAddressValueSpecMutableBuilder[Self <: GoogleActionsV2DeliveryAddressValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2DeliveryAddressValueSpec](x: Self) {
     
-    @scala.inline
-    def setAddressOptions(value: GoogleActionsV2DeliveryAddressValueSpecAddressOptions): Self = StObject.set(x, "addressOptions", value.asInstanceOf[js.Any])
+    inline def setAddressOptions(value: GoogleActionsV2DeliveryAddressValueSpecAddressOptions): Self = StObject.set(x, "addressOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressOptionsUndefined: Self = StObject.set(x, "addressOptions", js.undefined)
+    inline def setAddressOptionsUndefined: Self = StObject.set(x, "addressOptions", js.undefined)
   }
 }

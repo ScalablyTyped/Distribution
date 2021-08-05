@@ -20,19 +20,15 @@ trait BuildingGroupSublayerProperties
 }
 object BuildingGroupSublayerProperties {
   
-  @scala.inline
-  def apply(): BuildingGroupSublayerProperties = {
+  inline def apply(): BuildingGroupSublayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingGroupSublayerProperties]
   }
   
-  @scala.inline
-  implicit class BuildingGroupSublayerPropertiesMutableBuilder[Self <: BuildingGroupSublayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingGroupSublayerProperties](x: Self) {
     
-    @scala.inline
-    def setListMode(value: show | hide | `hide-children`): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
+    inline def setListMode(value: show | hide | `hide-children`): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
+    inline def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
   }
 }

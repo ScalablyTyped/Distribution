@@ -21,8 +21,7 @@ trait Task
      with XTask
 object Task {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComponentWindow: XWindow,
     ContainerWindow: XWindow,
     Controller: XController,

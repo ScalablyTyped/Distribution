@@ -60,6 +60,5 @@ object global {
   @JSGlobal("HashSet")
   @js.native
   def HashSet: IHashSetStatic = js.native
-  @scala.inline
-  def HashSet_=(x: IHashSetStatic): Unit = js.Dynamic.global.updateDynamic("HashSet")(x.asInstanceOf[js.Any])
+  inline def HashSet_=(x: IHashSetStatic): Unit = js.Dynamic.global.updateDynamic("HashSet")(x.asInstanceOf[js.Any])
 }

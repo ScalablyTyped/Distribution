@@ -33,31 +33,23 @@ trait WriteConcern extends StObject {
 }
 object WriteConcern {
   
-  @scala.inline
-  def apply(): WriteConcern = {
+  inline def apply(): WriteConcern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteConcern]
   }
   
-  @scala.inline
-  implicit class WriteConcernMutableBuilder[Self <: WriteConcern] (val x: Self) extends AnyVal {
+  extension [Self <: WriteConcern](x: Self) {
     
-    @scala.inline
-    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
-    @scala.inline
-    def setW(value: scala.Double | majority | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: scala.Double | majority | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
+    inline def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
+    inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

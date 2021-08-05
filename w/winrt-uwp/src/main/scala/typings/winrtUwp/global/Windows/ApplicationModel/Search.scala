@@ -147,13 +147,11 @@ object Search {
       * @return An instance of the search pane, which provides a consistent, touch-friendly search box and optional search suggestions for searching within the current application.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.Search.SearchPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Search.SearchPane]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.Search.SearchPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Search.SearchPane]
     
     /** Hides the current app's UI. */
     /* static member */
-    @scala.inline
-    def hideThisApplication(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideThisApplication")().asInstanceOf[Unit]
+    inline def hideThisApplication(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideThisApplication")().asInstanceOf[Unit]
   }
   
   /** Provides data for a querychanged event that is associated with a searchPane object. */

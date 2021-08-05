@@ -32,19 +32,16 @@ object mod {
   }
   object AssetsWebpackPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
     ): AssetsWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[AssetsWebpackPlugin]
     }
     
-    @scala.inline
-    implicit class AssetsWebpackPluginMutableBuilder[Self <: AssetsWebpackPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: AssetsWebpackPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -159,122 +156,84 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
+      inline def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
+      inline def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
       
-      @scala.inline
-      def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+      inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+      inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
       
-      @scala.inline
-      def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+      inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFullPath(value: Boolean): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+      inline def setFullPath(value: Boolean): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullPathUndefined: Self = StObject.set(x, "fullPath", js.undefined)
+      inline def setFullPathUndefined: Self = StObject.set(x, "fullPath", js.undefined)
       
-      @scala.inline
-      def setIncludeAllFileTypes(value: Boolean): Self = StObject.set(x, "includeAllFileTypes", value.asInstanceOf[js.Any])
+      inline def setIncludeAllFileTypes(value: Boolean): Self = StObject.set(x, "includeAllFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAllFileTypesUndefined: Self = StObject.set(x, "includeAllFileTypes", js.undefined)
+      inline def setIncludeAllFileTypesUndefined: Self = StObject.set(x, "includeAllFileTypes", js.undefined)
       
-      @scala.inline
-      def setIncludeFilesWithoutChunk(value: Boolean): Self = StObject.set(x, "includeFilesWithoutChunk", value.asInstanceOf[js.Any])
+      inline def setIncludeFilesWithoutChunk(value: Boolean): Self = StObject.set(x, "includeFilesWithoutChunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFilesWithoutChunkUndefined: Self = StObject.set(x, "includeFilesWithoutChunk", js.undefined)
+      inline def setIncludeFilesWithoutChunkUndefined: Self = StObject.set(x, "includeFilesWithoutChunk", js.undefined)
       
-      @scala.inline
-      def setIncludeManifest(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "includeManifest", value.asInstanceOf[js.Any])
+      inline def setIncludeManifest(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "includeManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeManifestUndefined: Self = StObject.set(x, "includeManifest", js.undefined)
+      inline def setIncludeManifestUndefined: Self = StObject.set(x, "includeManifest", js.undefined)
       
-      @scala.inline
-      def setIncludeManifestVarargs(value: String*): Self = StObject.set(x, "includeManifest", js.Array(value :_*))
+      inline def setIncludeManifestVarargs(value: String*): Self = StObject.set(x, "includeManifest", js.Array(value :_*))
       
-      @scala.inline
-      def setIntegrity(value: Boolean): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: Boolean): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
       
-      @scala.inline
-      def setKeepInMemory(value: Boolean): Self = StObject.set(x, "keepInMemory", value.asInstanceOf[js.Any])
+      inline def setKeepInMemory(value: Boolean): Self = StObject.set(x, "keepInMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepInMemoryUndefined: Self = StObject.set(x, "keepInMemory", js.undefined)
+      inline def setKeepInMemoryUndefined: Self = StObject.set(x, "keepInMemory", js.undefined)
       
-      @scala.inline
-      def setManifestFirst(value: Boolean): Self = StObject.set(x, "manifestFirst", value.asInstanceOf[js.Any])
+      inline def setManifestFirst(value: Boolean): Self = StObject.set(x, "manifestFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestFirstUndefined: Self = StObject.set(x, "manifestFirst", js.undefined)
+      inline def setManifestFirstUndefined: Self = StObject.set(x, "manifestFirst", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
       
-      @scala.inline
-      def setProcessOutput(value: /* assets */ Assets => String): Self = StObject.set(x, "processOutput", js.Any.fromFunction1(value))
+      inline def setProcessOutput(value: /* assets */ Assets => String): Self = StObject.set(x, "processOutput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessOutputUndefined: Self = StObject.set(x, "processOutput", js.undefined)
+      inline def setProcessOutputUndefined: Self = StObject.set(x, "processOutput", js.undefined)
       
-      @scala.inline
-      def setRemoveFullPathAutoPrefix(value: Boolean): Self = StObject.set(x, "removeFullPathAutoPrefix", value.asInstanceOf[js.Any])
+      inline def setRemoveFullPathAutoPrefix(value: Boolean): Self = StObject.set(x, "removeFullPathAutoPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveFullPathAutoPrefixUndefined: Self = StObject.set(x, "removeFullPathAutoPrefix", js.undefined)
+      inline def setRemoveFullPathAutoPrefixUndefined: Self = StObject.set(x, "removeFullPathAutoPrefix", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
-      @scala.inline
-      def setUseCompilerPath(value: Boolean): Self = StObject.set(x, "useCompilerPath", value.asInstanceOf[js.Any])
+      inline def setUseCompilerPath(value: Boolean): Self = StObject.set(x, "useCompilerPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCompilerPathUndefined: Self = StObject.set(x, "useCompilerPath", js.undefined)
+      inline def setUseCompilerPathUndefined: Self = StObject.set(x, "useCompilerPath", js.undefined)
     }
   }
   

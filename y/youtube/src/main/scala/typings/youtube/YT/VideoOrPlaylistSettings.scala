@@ -23,31 +23,23 @@ trait VideoOrPlaylistSettings extends StObject {
 }
 object VideoOrPlaylistSettings {
   
-  @scala.inline
-  def apply(): VideoOrPlaylistSettings = {
+  inline def apply(): VideoOrPlaylistSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoOrPlaylistSettings]
   }
   
-  @scala.inline
-  implicit class VideoOrPlaylistSettingsMutableBuilder[Self <: VideoOrPlaylistSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoOrPlaylistSettings](x: Self) {
     
-    @scala.inline
-    def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
+    inline def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSecondsUndefined: Self = StObject.set(x, "endSeconds", js.undefined)
+    inline def setEndSecondsUndefined: Self = StObject.set(x, "endSeconds", js.undefined)
     
-    @scala.inline
-    def setStartSeconds(value: Double): Self = StObject.set(x, "startSeconds", value.asInstanceOf[js.Any])
+    inline def setStartSeconds(value: Double): Self = StObject.set(x, "startSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSecondsUndefined: Self = StObject.set(x, "startSeconds", js.undefined)
+    inline def setStartSecondsUndefined: Self = StObject.set(x, "startSeconds", js.undefined)
     
-    @scala.inline
-    def setSuggestedQuality(value: SuggestedVideoQuality): Self = StObject.set(x, "suggestedQuality", value.asInstanceOf[js.Any])
+    inline def setSuggestedQuality(value: SuggestedVideoQuality): Self = StObject.set(x, "suggestedQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedQualityUndefined: Self = StObject.set(x, "suggestedQuality", js.undefined)
+    inline def setSuggestedQualityUndefined: Self = StObject.set(x, "suggestedQuality", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait DeleteBlobOptions
 }
 object DeleteBlobOptions {
   
-  @scala.inline
-  def apply(): DeleteBlobOptions = {
+  inline def apply(): DeleteBlobOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteBlobOptions]
   }
   
-  @scala.inline
-  implicit class DeleteBlobOptionsMutableBuilder[Self <: DeleteBlobOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBlobOptions](x: Self) {
     
-    @scala.inline
-    def setDeleteSnapshots(value: String): Self = StObject.set(x, "deleteSnapshots", value.asInstanceOf[js.Any])
+    inline def setDeleteSnapshots(value: String): Self = StObject.set(x, "deleteSnapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteSnapshotsUndefined: Self = StObject.set(x, "deleteSnapshots", js.undefined)
+    inline def setDeleteSnapshotsUndefined: Self = StObject.set(x, "deleteSnapshots", js.undefined)
   }
 }

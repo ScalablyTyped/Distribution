@@ -18,37 +18,27 @@ trait MlGetCalendars[T]
 }
 object MlGetCalendars {
   
-  @scala.inline
-  def apply[T](): MlGetCalendars[T] = {
+  inline def apply[T](): MlGetCalendars[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MlGetCalendars[T]]
   }
   
-  @scala.inline
-  implicit class MlGetCalendarsMutableBuilder[Self <: MlGetCalendars[?], T] (val x: Self & MlGetCalendars[T]) extends AnyVal {
+  extension [Self <: MlGetCalendars[?], T](x: Self & MlGetCalendars[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
+    inline def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendar_idUndefined: Self = StObject.set(x, "calendar_id", js.undefined)
+    inline def setCalendar_idUndefined: Self = StObject.set(x, "calendar_id", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

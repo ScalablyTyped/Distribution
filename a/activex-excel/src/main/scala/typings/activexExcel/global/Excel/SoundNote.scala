@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SoundNote")
 @js.native
-class SoundNote protected ()
+/* private */ class SoundNote ()
   extends StObject
      with typings.activexExcel.Excel.SoundNote {
   
@@ -20,7 +20,7 @@ class SoundNote protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SoundNote_typekey")
   var ExcelDotSoundNote_typekey: typings.activexExcel.Excel.SoundNote = js.native
   

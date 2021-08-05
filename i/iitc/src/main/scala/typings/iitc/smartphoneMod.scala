@@ -18,22 +18,16 @@ object smartphoneMod {
       * browsers - e.g. android phone/tablet. let's allow it for all, but
       * no promises it'll work right)
       */
-    @scala.inline
-    def isSmartphone(): Boolean = js.Dynamic.global.applyDynamic("isSmartphone")().asInstanceOf[Boolean]
+    inline def isSmartphone(): Boolean = js.Dynamic.global.applyDynamic("isSmartphone")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def runOnSmartphonesAfterBoot(): Unit = js.Dynamic.global.applyDynamic("runOnSmartphonesAfterBoot")().asInstanceOf[Unit]
+    inline def runOnSmartphonesAfterBoot(): Unit = js.Dynamic.global.applyDynamic("runOnSmartphonesAfterBoot")().asInstanceOf[Unit]
     
-    @scala.inline
-    def runOnSmartphonesBeforeBoot(): Unit = js.Dynamic.global.applyDynamic("runOnSmartphonesBeforeBoot")().asInstanceOf[Unit]
+    inline def runOnSmartphonesBeforeBoot(): Unit = js.Dynamic.global.applyDynamic("runOnSmartphonesBeforeBoot")().asInstanceOf[Unit]
     
-    @scala.inline
-    def setAndroidPermalink(): Unit = js.Dynamic.global.applyDynamic("setAndroidPermalink")().asInstanceOf[Unit]
+    inline def setAndroidPermalink(): Unit = js.Dynamic.global.applyDynamic("setAndroidPermalink")().asInstanceOf[Unit]
     
-    @scala.inline
-    def smartphoneInfo(data: SelectedPortalGuid): Unit = js.Dynamic.global.applyDynamic("smartphoneInfo")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def smartphoneInfo(data: SelectedPortalGuid): Unit = js.Dynamic.global.applyDynamic("smartphoneInfo")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def useAndroidPanes(): Unit = js.Dynamic.global.applyDynamic("useAndroidPanes")().asInstanceOf[Unit]
+    inline def useAndroidPanes(): Unit = js.Dynamic.global.applyDynamic("useAndroidPanes")().asInstanceOf[Unit]
   }
 }

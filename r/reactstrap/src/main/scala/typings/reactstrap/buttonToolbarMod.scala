@@ -30,26 +30,20 @@ object buttonToolbarMod {
   }
   object ButtonToolbarProps {
     
-    @scala.inline
-    def apply(): ButtonToolbarProps = {
+    inline def apply(): ButtonToolbarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonToolbarProps]
     }
     
-    @scala.inline
-    implicit class ButtonToolbarPropsMutableBuilder[Self <: ButtonToolbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonToolbarProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

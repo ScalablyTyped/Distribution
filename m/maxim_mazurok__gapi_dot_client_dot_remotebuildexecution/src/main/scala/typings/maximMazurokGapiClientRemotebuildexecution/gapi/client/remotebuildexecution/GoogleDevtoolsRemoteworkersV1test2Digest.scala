@@ -17,25 +17,19 @@ trait GoogleDevtoolsRemoteworkersV1test2Digest extends StObject {
 }
 object GoogleDevtoolsRemoteworkersV1test2Digest {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemoteworkersV1test2Digest = {
+  inline def apply(): GoogleDevtoolsRemoteworkersV1test2Digest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2Digest]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2DigestMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2Digest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemoteworkersV1test2Digest](x: Self) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteDataflowEndpointGroupRequest extends StObject {
 }
 object DeleteDataflowEndpointGroupRequest {
   
-  @scala.inline
-  def apply(dataflowEndpointGroupId: String): DeleteDataflowEndpointGroupRequest = {
+  inline def apply(dataflowEndpointGroupId: String): DeleteDataflowEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(dataflowEndpointGroupId = dataflowEndpointGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDataflowEndpointGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDataflowEndpointGroupRequestMutableBuilder[Self <: DeleteDataflowEndpointGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDataflowEndpointGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDataflowEndpointGroupId(value: String): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
+    inline def setDataflowEndpointGroupId(value: String): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
   }
 }

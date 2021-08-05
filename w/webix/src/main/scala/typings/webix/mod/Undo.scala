@@ -18,16 +18,12 @@ object Undo {
   @js.native
   val ^ : Undo = js.native
   
-  @scala.inline
-  implicit class UndoMutableBuilder[Self <: Undo] (val x: Self) extends AnyVal {
+  extension [Self <: Undo](x: Self) {
     
-    @scala.inline
-    def setIgnoreUndo(value: WebixCallback => Unit): Self = StObject.set(x, "ignoreUndo", js.Any.fromFunction1(value))
+    inline def setIgnoreUndo(value: WebixCallback => Unit): Self = StObject.set(x, "ignoreUndo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveUndo(value: String => Unit): Self = StObject.set(x, "removeUndo", js.Any.fromFunction1(value))
+    inline def setRemoveUndo(value: String => Unit): Self = StObject.set(x, "removeUndo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUndo(value: String => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
+    inline def setUndo(value: String => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
   }
 }

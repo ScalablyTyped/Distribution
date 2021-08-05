@@ -22,37 +22,27 @@ trait SegmentedControlProps extends StObject {
 }
 object SegmentedControlProps {
   
-  @scala.inline
-  def apply(items: js.Array[ReactNode], onChange: ActiveIndex => Unit, selectedItemIndex: Double): SegmentedControlProps = {
+  inline def apply(items: js.Array[ReactNode], onChange: ActiveIndex => Unit, selectedItemIndex: Double): SegmentedControlProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), selectedItemIndex = selectedItemIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentedControlProps]
   }
   
-  @scala.inline
-  implicit class SegmentedControlPropsMutableBuilder[Self <: SegmentedControlProps] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentedControlProps](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ReactNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ReactNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ReactNode*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ReactNode*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setOnChange(value: ActiveIndex => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: ActiveIndex => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
-    @scala.inline
-    def setSelectedItemIndex(value: Double): Self = StObject.set(x, "selectedItemIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedItemIndex(value: Double): Self = StObject.set(x, "selectedItemIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

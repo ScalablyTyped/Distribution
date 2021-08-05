@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlThemeColor extends StObject
 object XlThemeColor {
   
-  @scala.inline
-  def xlThemeColorAccent1: `5` = 5.asInstanceOf[`5`]
+  inline def xlThemeColorAccent1: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlThemeColorAccent2: `6` = 6.asInstanceOf[`6`]
+  inline def xlThemeColorAccent2: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlThemeColorAccent3: `7` = 7.asInstanceOf[`7`]
+  inline def xlThemeColorAccent3: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlThemeColorAccent4: `8` = 8.asInstanceOf[`8`]
+  inline def xlThemeColorAccent4: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlThemeColorAccent5: `9` = 9.asInstanceOf[`9`]
+  inline def xlThemeColorAccent5: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def xlThemeColorAccent6: `10` = 10.asInstanceOf[`10`]
+  inline def xlThemeColorAccent6: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def xlThemeColorDark1: `1` = 1.asInstanceOf[`1`]
+  inline def xlThemeColorDark1: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlThemeColorDark2: `3` = 3.asInstanceOf[`3`]
+  inline def xlThemeColorDark2: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlThemeColorFollowedHyperlink: `12` = 12.asInstanceOf[`12`]
+  inline def xlThemeColorFollowedHyperlink: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def xlThemeColorHyperlink: `11` = 11.asInstanceOf[`11`]
+  inline def xlThemeColorHyperlink: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def xlThemeColorLight1: `2` = 2.asInstanceOf[`2`]
+  inline def xlThemeColorLight1: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlThemeColorLight2: `4` = 4.asInstanceOf[`4`]
+  inline def xlThemeColorLight2: `4` = 4.asInstanceOf[`4`]
 }

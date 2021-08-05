@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](array: js.Array[T], index: Double, total: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], total.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def default[T](array: js.Array[T], index: Double, total: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], total.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

@@ -23,46 +23,33 @@ trait Subnetwork extends StObject {
 }
 object Subnetwork {
   
-  @scala.inline
-  def apply(): Subnetwork = {
+  inline def apply(): Subnetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subnetwork]
   }
   
-  @scala.inline
-  implicit class SubnetworkMutableBuilder[Self <: Subnetwork] (val x: Self) extends AnyVal {
+  extension [Self <: Subnetwork](x: Self) {
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setOutsideAllocation(value: Boolean): Self = StObject.set(x, "outsideAllocation", value.asInstanceOf[js.Any])
+    inline def setOutsideAllocation(value: Boolean): Self = StObject.set(x, "outsideAllocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutsideAllocationUndefined: Self = StObject.set(x, "outsideAllocation", js.undefined)
+    inline def setOutsideAllocationUndefined: Self = StObject.set(x, "outsideAllocation", js.undefined)
     
-    @scala.inline
-    def setSecondaryIpRanges(value: js.Array[SecondaryIpRange]): Self = StObject.set(x, "secondaryIpRanges", value.asInstanceOf[js.Any])
+    inline def setSecondaryIpRanges(value: js.Array[SecondaryIpRange]): Self = StObject.set(x, "secondaryIpRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryIpRangesUndefined: Self = StObject.set(x, "secondaryIpRanges", js.undefined)
+    inline def setSecondaryIpRangesUndefined: Self = StObject.set(x, "secondaryIpRanges", js.undefined)
     
-    @scala.inline
-    def setSecondaryIpRangesVarargs(value: SecondaryIpRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value :_*))
+    inline def setSecondaryIpRangesVarargs(value: SecondaryIpRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value :_*))
   }
 }

@@ -10,8 +10,7 @@ trait ProxyWebRequestExecutorFactory
      with IWebRequestExecutorFactory
 object ProxyWebRequestExecutorFactory {
   
-  @scala.inline
-  def apply(createWebRequestExecutor: () => WebRequestExecutor): ProxyWebRequestExecutorFactory = {
+  inline def apply(createWebRequestExecutor: () => WebRequestExecutor): ProxyWebRequestExecutorFactory = {
     val __obj = js.Dynamic.literal(createWebRequestExecutor = js.Any.fromFunction0(createWebRequestExecutor))
     __obj.asInstanceOf[ProxyWebRequestExecutorFactory]
   }

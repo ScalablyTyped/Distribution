@@ -86,88 +86,61 @@ trait SchemaMachineImage extends StObject {
 }
 object SchemaMachineImage {
   
-  @scala.inline
-  def apply(): SchemaMachineImage = {
+  inline def apply(): SchemaMachineImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMachineImage]
   }
   
-  @scala.inline
-  implicit class SchemaMachineImageMutableBuilder[Self <: SchemaMachineImage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMachineImage](x: Self) {
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMachineImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "machineImageEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setMachineImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "machineImageEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineImageEncryptionKeyUndefined: Self = StObject.set(x, "machineImageEncryptionKey", js.undefined)
+    inline def setMachineImageEncryptionKeyUndefined: Self = StObject.set(x, "machineImageEncryptionKey", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setSelfLinkWithId(value: String): Self = StObject.set(x, "selfLinkWithId", value.asInstanceOf[js.Any])
+    inline def setSelfLinkWithId(value: String): Self = StObject.set(x, "selfLinkWithId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkWithIdUndefined: Self = StObject.set(x, "selfLinkWithId", js.undefined)
+    inline def setSelfLinkWithIdUndefined: Self = StObject.set(x, "selfLinkWithId", js.undefined)
     
-    @scala.inline
-    def setSourceInstance(value: String): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
+    inline def setSourceInstance(value: String): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceInstanceProperties(value: SchemaSourceInstanceProperties): Self = StObject.set(x, "sourceInstanceProperties", value.asInstanceOf[js.Any])
+    inline def setSourceInstanceProperties(value: SchemaSourceInstanceProperties): Self = StObject.set(x, "sourceInstanceProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceInstancePropertiesUndefined: Self = StObject.set(x, "sourceInstanceProperties", js.undefined)
+    inline def setSourceInstancePropertiesUndefined: Self = StObject.set(x, "sourceInstanceProperties", js.undefined)
     
-    @scala.inline
-    def setSourceInstanceUndefined: Self = StObject.set(x, "sourceInstance", js.undefined)
+    inline def setSourceInstanceUndefined: Self = StObject.set(x, "sourceInstance", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStorageLocations(value: js.Array[String]): Self = StObject.set(x, "storageLocations", value.asInstanceOf[js.Any])
+    inline def setStorageLocations(value: js.Array[String]): Self = StObject.set(x, "storageLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageLocationsUndefined: Self = StObject.set(x, "storageLocations", js.undefined)
+    inline def setStorageLocationsUndefined: Self = StObject.set(x, "storageLocations", js.undefined)
     
-    @scala.inline
-    def setStorageLocationsVarargs(value: String*): Self = StObject.set(x, "storageLocations", js.Array(value :_*))
+    inline def setStorageLocationsVarargs(value: String*): Self = StObject.set(x, "storageLocations", js.Array(value :_*))
   }
 }

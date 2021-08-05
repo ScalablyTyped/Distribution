@@ -18,25 +18,19 @@ trait ListApprovalRuleTemplatesInput extends StObject {
 }
 object ListApprovalRuleTemplatesInput {
   
-  @scala.inline
-  def apply(): ListApprovalRuleTemplatesInput = {
+  inline def apply(): ListApprovalRuleTemplatesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApprovalRuleTemplatesInput]
   }
   
-  @scala.inline
-  implicit class ListApprovalRuleTemplatesInputMutableBuilder[Self <: ListApprovalRuleTemplatesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListApprovalRuleTemplatesInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

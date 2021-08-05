@@ -13,19 +13,15 @@ trait MemberAccount extends StObject {
 }
 object MemberAccount {
   
-  @scala.inline
-  def apply(): MemberAccount = {
+  inline def apply(): MemberAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberAccount]
   }
   
-  @scala.inline
-  implicit class MemberAccountMutableBuilder[Self <: MemberAccount] (val x: Self) extends AnyVal {
+  extension [Self <: MemberAccount](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AWSAccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AWSAccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }
 }

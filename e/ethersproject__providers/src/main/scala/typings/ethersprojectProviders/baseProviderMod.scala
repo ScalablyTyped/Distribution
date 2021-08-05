@@ -171,11 +171,9 @@ object baseProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getFormatter(): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")().asInstanceOf[Formatter]
+    inline def getFormatter(): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")().asInstanceOf[Formatter]
     
-    @scala.inline
-    def getNetwork(network: Networkish): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetwork")(network.asInstanceOf[js.Any]).asInstanceOf[Network]
+    inline def getNetwork(network: Networkish): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetwork")(network.asInstanceOf[js.Any]).asInstanceOf[Network]
   }
   
   @JSImport("@ethersproject/providers/lib/base-provider", "Event")
@@ -227,8 +225,7 @@ object baseProviderMod {
   }
   object EnsProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getResolver: String => js.Promise[EnsResolver],
       lookupAddress: String => js.Promise[String],
       resolveName: String => js.Promise[String]
@@ -237,17 +234,13 @@ object baseProviderMod {
       __obj.asInstanceOf[EnsProvider]
     }
     
-    @scala.inline
-    implicit class EnsProviderMutableBuilder[Self <: EnsProvider] (val x: Self) extends AnyVal {
+    extension [Self <: EnsProvider](x: Self) {
       
-      @scala.inline
-      def setGetResolver(value: String => js.Promise[EnsResolver]): Self = StObject.set(x, "getResolver", js.Any.fromFunction1(value))
+      inline def setGetResolver(value: String => js.Promise[EnsResolver]): Self = StObject.set(x, "getResolver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLookupAddress(value: String => js.Promise[String]): Self = StObject.set(x, "lookupAddress", js.Any.fromFunction1(value))
+      inline def setLookupAddress(value: String => js.Promise[String]): Self = StObject.set(x, "lookupAddress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveName(value: String => js.Promise[String]): Self = StObject.set(x, "resolveName", js.Any.fromFunction1(value))
+      inline def setResolveName(value: String => js.Promise[String]): Self = StObject.set(x, "resolveName", js.Any.fromFunction1(value))
     }
   }
   

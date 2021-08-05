@@ -14,22 +14,17 @@ trait SocketTcpServerPermission extends StObject {
 }
 object SocketTcpServerPermission {
   
-  @scala.inline
-  def apply(): SocketTcpServerPermission = {
+  inline def apply(): SocketTcpServerPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SocketTcpServerPermission]
   }
   
-  @scala.inline
-  implicit class SocketTcpServerPermissionMutableBuilder[Self <: SocketTcpServerPermission] (val x: Self) extends AnyVal {
+  extension [Self <: SocketTcpServerPermission](x: Self) {
     
-    @scala.inline
-    def setListen(value: String | js.Array[String]): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+    inline def setListen(value: String | js.Array[String]): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
+    inline def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
     
-    @scala.inline
-    def setListenVarargs(value: String*): Self = StObject.set(x, "listen", js.Array(value :_*))
+    inline def setListenVarargs(value: String*): Self = StObject.set(x, "listen", js.Array(value :_*))
   }
 }

@@ -117,65 +117,46 @@ object visualization {
   }
   object DotMapOptions {
     
-    @scala.inline
-    def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation], map: Map): DotMapOptions = {
+    inline def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation], map: Map): DotMapOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[DotMapOptions]
     }
     
-    @scala.inline
-    implicit class DotMapOptionsMutableBuilder[Self <: DotMapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DotMapOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+      inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setStrokeLineCap(value: strokeLineCapType): Self = StObject.set(x, "strokeLineCap", value.asInstanceOf[js.Any])
+      inline def setStrokeLineCap(value: strokeLineCapType): Self = StObject.set(x, "strokeLineCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeLineCapUndefined: Self = StObject.set(x, "strokeLineCap", js.undefined)
+      inline def setStrokeLineCapUndefined: Self = StObject.set(x, "strokeLineCap", js.undefined)
       
-      @scala.inline
-      def setStrokeLineJoin(value: strokeLineJoinType): Self = StObject.set(x, "strokeLineJoin", value.asInstanceOf[js.Any])
+      inline def setStrokeLineJoin(value: strokeLineJoinType): Self = StObject.set(x, "strokeLineJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeLineJoinUndefined: Self = StObject.set(x, "strokeLineJoin", js.undefined)
+      inline def setStrokeLineJoinUndefined: Self = StObject.set(x, "strokeLineJoin", js.undefined)
       
-      @scala.inline
-      def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
+      inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
+      inline def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
     }
   }
   
@@ -218,41 +199,30 @@ object visualization {
   }
   object HeatMapOptions {
     
-    @scala.inline
-    def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation], map: Map): HeatMapOptions = {
+    inline def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation], map: Map): HeatMapOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeatMapOptions]
     }
     
-    @scala.inline
-    implicit class HeatMapOptionsMutableBuilder[Self <: HeatMapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeatMapOptions](x: Self) {
       
-      @scala.inline
-      def setColorMap(value: SpectrumStyle): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
+      inline def setColorMap(value: SpectrumStyle): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorMapUndefined: Self = StObject.set(x, "colorMap", js.undefined)
+      inline def setColorMapUndefined: Self = StObject.set(x, "colorMap", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
   
@@ -268,26 +238,20 @@ object visualization {
   }
   object WeightedLocation {
     
-    @scala.inline
-    def apply(getLocation: () => LatLng, getWeight: () => Double, lat: () => Double, lng: () => Double): WeightedLocation = {
+    inline def apply(getLocation: () => LatLng, getWeight: () => Double, lat: () => Double, lng: () => Double): WeightedLocation = {
       val __obj = js.Dynamic.literal(getLocation = js.Any.fromFunction0(getLocation), getWeight = js.Any.fromFunction0(getWeight), lat = js.Any.fromFunction0(lat), lng = js.Any.fromFunction0(lng))
       __obj.asInstanceOf[WeightedLocation]
     }
     
-    @scala.inline
-    implicit class WeightedLocationMutableBuilder[Self <: WeightedLocation] (val x: Self) extends AnyVal {
+    extension [Self <: WeightedLocation](x: Self) {
       
-      @scala.inline
-      def setGetLocation(value: () => LatLng): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+      inline def setGetLocation(value: () => LatLng): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
+      inline def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLat(value: () => Double): Self = StObject.set(x, "lat", js.Any.fromFunction0(value))
+      inline def setLat(value: () => Double): Self = StObject.set(x, "lat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLng(value: () => Double): Self = StObject.set(x, "lng", js.Any.fromFunction0(value))
+      inline def setLng(value: () => Double): Self = StObject.set(x, "lng", js.Any.fromFunction0(value))
     }
   }
 }

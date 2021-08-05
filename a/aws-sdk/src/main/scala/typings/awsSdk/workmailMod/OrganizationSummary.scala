@@ -33,43 +33,31 @@ trait OrganizationSummary extends StObject {
 }
 object OrganizationSummary {
   
-  @scala.inline
-  def apply(): OrganizationSummary = {
+  inline def apply(): OrganizationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrganizationSummary]
   }
   
-  @scala.inline
-  implicit class OrganizationSummaryMutableBuilder[Self <: OrganizationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationSummary](x: Self) {
     
-    @scala.inline
-    def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
-    @scala.inline
-    def setDefaultMailDomain(value: DomainName): Self = StObject.set(x, "DefaultMailDomain", value.asInstanceOf[js.Any])
+    inline def setDefaultMailDomain(value: DomainName): Self = StObject.set(x, "DefaultMailDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMailDomainUndefined: Self = StObject.set(x, "DefaultMailDomain", js.undefined)
+    inline def setDefaultMailDomainUndefined: Self = StObject.set(x, "DefaultMailDomain", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
+    inline def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

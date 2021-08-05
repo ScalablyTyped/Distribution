@@ -651,8 +651,7 @@ object filter {
     * @returns `<And>` operator.
     * @api
     */
-  @scala.inline
-  def and(conditions: Filter*): And_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[js.Any]).asInstanceOf[And_]
+  inline def and(conditions: Filter*): And_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[js.Any]).asInstanceOf[And_]
   
   /**
     * Create a `<BBOX>` operator to test whether a geometry-valued property
@@ -665,10 +664,8 @@ object filter {
     * @returns `<BBOX>` operator.
     * @api
     */
-  @scala.inline
-  def bbox(geometryName: String, extent: Extent_): Bbox_ = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(geometryName.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[Bbox_]
-  @scala.inline
-  def bbox(geometryName: String, extent: Extent_, opt_srsName: String): Bbox_ = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(geometryName.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[Bbox_]
+  inline def bbox(geometryName: String, extent: Extent_): Bbox_ = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(geometryName.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[Bbox_]
+  inline def bbox(geometryName: String, extent: Extent_, opt_srsName: String): Bbox_ = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(geometryName.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[Bbox_]
   
   /**
     * Creates a `<PropertyIsBetween>` comparison operator to test whether an expression
@@ -680,8 +677,7 @@ object filter {
     * @returns `<PropertyIsBetween>` operator.
     * @api
     */
-  @scala.inline
-  def between(propertyName: String, lowerBoundary: Double, upperBoundary: Double): IsBetween = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(propertyName.asInstanceOf[js.Any], lowerBoundary.asInstanceOf[js.Any], upperBoundary.asInstanceOf[js.Any])).asInstanceOf[IsBetween]
+  inline def between(propertyName: String, lowerBoundary: Double, upperBoundary: Double): IsBetween = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(propertyName.asInstanceOf[js.Any], lowerBoundary.asInstanceOf[js.Any], upperBoundary.asInstanceOf[js.Any])).asInstanceOf[IsBetween]
   
   /**
     * Create a `<During>` temporal operator.
@@ -692,8 +688,7 @@ object filter {
     * @returns `<During>` operator.
     * @api
     */
-  @scala.inline
-  def during(propertyName: String, begin: String, end: String): During_ = (^.asInstanceOf[js.Dynamic].applyDynamic("during")(propertyName.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[During_]
+  inline def during(propertyName: String, begin: String, end: String): During_ = (^.asInstanceOf[js.Dynamic].applyDynamic("during")(propertyName.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[During_]
   
   /**
     * Creates a `<PropertyIsEqualTo>` comparison operator.
@@ -704,14 +699,10 @@ object filter {
     * @returns `<PropertyIsEqualTo>` operator.
     * @api
     */
-  @scala.inline
-  def equalTo(propertyName: String, expression: String): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
-  @scala.inline
-  def equalTo(propertyName: String, expression: String, opt_matchCase: Boolean): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
-  @scala.inline
-  def equalTo(propertyName: String, expression: Double): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
-  @scala.inline
-  def equalTo(propertyName: String, expression: Double, opt_matchCase: Boolean): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
+  inline def equalTo(propertyName: String, expression: String): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
+  inline def equalTo(propertyName: String, expression: String, opt_matchCase: Boolean): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
+  inline def equalTo(propertyName: String, expression: Double): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
+  inline def equalTo(propertyName: String, expression: Double, opt_matchCase: Boolean): EqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[EqualTo_]
   
   /**
     * Creates a `<PropertyIsGreaterThan>` comparison operator.
@@ -721,8 +712,7 @@ object filter {
     * @returns `<PropertyIsGreaterThan>` operator.
     * @api
     */
-  @scala.inline
-  def greaterThan(propertyName: String, expression: Double): GreaterThan_ = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[GreaterThan_]
+  inline def greaterThan(propertyName: String, expression: Double): GreaterThan_ = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[GreaterThan_]
   
   /**
     * Creates a `<PropertyIsGreaterThanOrEqualTo>` comparison operator.
@@ -732,8 +722,7 @@ object filter {
     * @returns `<PropertyIsGreaterThanOrEqualTo>` operator.
     * @api
     */
-  @scala.inline
-  def greaterThanOrEqualTo(propertyName: String, expression: Double): GreaterThanOrEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThanOrEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[GreaterThanOrEqualTo_]
+  inline def greaterThanOrEqualTo(propertyName: String, expression: Double): GreaterThanOrEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThanOrEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[GreaterThanOrEqualTo_]
   
   /**
     * Create a `<Intersects>` operator to test whether a geometry-valued property
@@ -746,10 +735,8 @@ object filter {
     * @returns `<Intersects>` operator.
     * @api
     */
-  @scala.inline
-  def intersects(geometryName: String, geometry: Geometry): Intersects_ = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[Intersects_]
-  @scala.inline
-  def intersects(geometryName: String, geometry: Geometry, opt_srsName: String): Intersects_ = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[Intersects_]
+  inline def intersects(geometryName: String, geometry: Geometry): Intersects_ = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[Intersects_]
+  inline def intersects(geometryName: String, geometry: Geometry, opt_srsName: String): Intersects_ = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[Intersects_]
   
   /**
     * Creates a `<PropertyIsNull>` comparison operator to test whether a property value
@@ -759,8 +746,7 @@ object filter {
     * @returns `<PropertyIsNull>` operator.
     * @api
     */
-  @scala.inline
-  def isNull(propertyName: String): IsNull_ = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(propertyName.asInstanceOf[js.Any]).asInstanceOf[IsNull_]
+  inline def isNull(propertyName: String): IsNull_ = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(propertyName.asInstanceOf[js.Any]).asInstanceOf[IsNull_]
   
   /**
     * Creates a `<PropertyIsLessThan>` comparison operator.
@@ -770,8 +756,7 @@ object filter {
     * @returns `<PropertyIsLessThan>` operator.
     * @api
     */
-  @scala.inline
-  def lessThan(propertyName: String, expression: Double): LessThan_ = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[LessThan_]
+  inline def lessThan(propertyName: String, expression: Double): LessThan_ = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[LessThan_]
   
   /**
     * Creates a `<PropertyIsLessThanOrEqualTo>` comparison operator.
@@ -781,8 +766,7 @@ object filter {
     * @returns `<PropertyIsLessThanOrEqualTo>` operator.
     * @api
     */
-  @scala.inline
-  def lessThanOrEqualTo(propertyName: String, expression: Double): LessThanOrEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThanOrEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[LessThanOrEqualTo_]
+  inline def lessThanOrEqualTo(propertyName: String, expression: Double): LessThanOrEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThanOrEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[LessThanOrEqualTo_]
   
   /**
     * Represents a `<PropertyIsLike>` comparison operator that matches a string property
@@ -800,22 +784,17 @@ object filter {
     * @returns `<PropertyIsLike>` operator.
     * @api
     */
-  @scala.inline
-  def like(propertyName: String, pattern: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(propertyName: String, pattern: String, opt_wildCard: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(propertyName: String, pattern: String, opt_wildCard: String, opt_singleChar: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(propertyName: String, pattern: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[IsLike]
+  inline def like(propertyName: String, pattern: String, opt_wildCard: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any])).asInstanceOf[IsLike]
+  inline def like(propertyName: String, pattern: String, opt_wildCard: String, opt_singleChar: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: String,
     opt_singleChar: String,
     opt_escapeChar: String
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: String,
@@ -823,8 +802,7 @@ object filter {
     opt_escapeChar: String,
     opt_matchCase: Boolean
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: String,
@@ -832,16 +810,14 @@ object filter {
     opt_escapeChar: Unit,
     opt_matchCase: Boolean
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: String,
     opt_singleChar: Unit,
     opt_escapeChar: String
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: String,
@@ -849,8 +825,7 @@ object filter {
     opt_escapeChar: String,
     opt_matchCase: Boolean
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: String,
@@ -858,18 +833,15 @@ object filter {
     opt_escapeChar: Unit,
     opt_matchCase: Boolean
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(propertyName: String, pattern: String, opt_wildCard: Unit, opt_singleChar: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(propertyName: String, pattern: String, opt_wildCard: Unit, opt_singleChar: String): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: Unit,
     opt_singleChar: String,
     opt_escapeChar: String
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: Unit,
@@ -877,8 +849,7 @@ object filter {
     opt_escapeChar: String,
     opt_matchCase: Boolean
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: Unit,
@@ -886,16 +857,14 @@ object filter {
     opt_escapeChar: Unit,
     opt_matchCase: Boolean
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: Unit,
     opt_singleChar: Unit,
     opt_escapeChar: String
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: Unit,
@@ -903,8 +872,7 @@ object filter {
     opt_escapeChar: String,
     opt_matchCase: Boolean
   ): IsLike = (^.asInstanceOf[js.Dynamic].applyDynamic("like")(propertyName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], opt_wildCard.asInstanceOf[js.Any], opt_singleChar.asInstanceOf[js.Any], opt_escapeChar.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[IsLike]
-  @scala.inline
-  def like(
+  inline def like(
     propertyName: String,
     pattern: String,
     opt_wildCard: Unit,
@@ -920,8 +888,7 @@ object filter {
     * @returns `<Not>` operator.
     * @api
     */
-  @scala.inline
-  def not(condition: Filter): Not_ = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(condition.asInstanceOf[js.Any]).asInstanceOf[Not_]
+  inline def not(condition: Filter): Not_ = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(condition.asInstanceOf[js.Any]).asInstanceOf[Not_]
   
   /**
     * Creates a `<PropertyIsNotEqualTo>` comparison operator.
@@ -932,14 +899,10 @@ object filter {
     * @returns `<PropertyIsNotEqualTo>` operator.
     * @api
     */
-  @scala.inline
-  def notEqualTo(propertyName: String, expression: String): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
-  @scala.inline
-  def notEqualTo(propertyName: String, expression: String, opt_matchCase: Boolean): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
-  @scala.inline
-  def notEqualTo(propertyName: String, expression: Double): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
-  @scala.inline
-  def notEqualTo(propertyName: String, expression: Double, opt_matchCase: Boolean): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
+  inline def notEqualTo(propertyName: String, expression: String): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
+  inline def notEqualTo(propertyName: String, expression: String, opt_matchCase: Boolean): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
+  inline def notEqualTo(propertyName: String, expression: Double): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
+  inline def notEqualTo(propertyName: String, expression: Double, opt_matchCase: Boolean): NotEqualTo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[NotEqualTo_]
   
   /**
     * Create a logical `<Or>` operator between two or more filter conditions.
@@ -948,8 +911,7 @@ object filter {
     * @returns `<Or>` operator.
     * @api
     */
-  @scala.inline
-  def or(conditions: Filter*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[js.Any]).asInstanceOf[Or_]
+  inline def or(conditions: Filter*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[js.Any]).asInstanceOf[Or_]
   
   /**
     * Create a `<Within>` operator to test whether a geometry-valued property
@@ -962,8 +924,6 @@ object filter {
     * @returns `<Within>` operator.
     * @api
     */
-  @scala.inline
-  def within(geometryName: String, geometry: Geometry): Within_ = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[Within_]
-  @scala.inline
-  def within(geometryName: String, geometry: Geometry, opt_srsName: String): Within_ = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[Within_]
+  inline def within(geometryName: String, geometry: Geometry): Within_ = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[Within_]
+  inline def within(geometryName: String, geometry: Geometry, opt_srsName: String): Within_ = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[Within_]
 }

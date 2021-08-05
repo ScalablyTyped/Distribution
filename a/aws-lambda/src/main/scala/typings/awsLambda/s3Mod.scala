@@ -19,20 +19,16 @@ object s3Mod {
   }
   object S3Event {
     
-    @scala.inline
-    def apply(Records: js.Array[S3EventRecord]): S3Event = {
+    inline def apply(Records: js.Array[S3EventRecord]): S3Event = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3Event]
     }
     
-    @scala.inline
-    implicit class S3EventMutableBuilder[Self <: S3Event] (val x: Self) extends AnyVal {
+    extension [Self <: S3Event](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[S3EventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[S3EventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: S3EventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: S3EventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -60,8 +56,7 @@ object s3Mod {
   }
   object S3EventRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsRegion: String,
       eventName: String,
       eventSource: String,
@@ -76,41 +71,29 @@ object s3Mod {
       __obj.asInstanceOf[S3EventRecord]
     }
     
-    @scala.inline
-    implicit class S3EventRecordMutableBuilder[Self <: S3EventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: S3EventRecord](x: Self) {
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+      inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
+      inline def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlacierEventData(value: S3EventRecordGlacierEventData): Self = StObject.set(x, "glacierEventData", value.asInstanceOf[js.Any])
+      inline def setGlacierEventData(value: S3EventRecordGlacierEventData): Self = StObject.set(x, "glacierEventData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlacierEventDataUndefined: Self = StObject.set(x, "glacierEventData", js.undefined)
+      inline def setGlacierEventDataUndefined: Self = StObject.set(x, "glacierEventData", js.undefined)
       
-      @scala.inline
-      def setRequestParameters(value: SourceIPAddress): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
+      inline def setRequestParameters(value: SourceIPAddress): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseElements(value: Xamzid2): Self = StObject.set(x, "responseElements", value.asInstanceOf[js.Any])
+      inline def setResponseElements(value: Xamzid2): Self = StObject.set(x, "responseElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3(value: Bucket): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+      inline def setS3(value: Bucket): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdentity(value: PrincipalId): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
+      inline def setUserIdentity(value: PrincipalId): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,17 +103,14 @@ object s3Mod {
   }
   object S3EventRecordGlacierEventData {
     
-    @scala.inline
-    def apply(restoreEventData: S3EventRecordGlacierRestoreEventData): S3EventRecordGlacierEventData = {
+    inline def apply(restoreEventData: S3EventRecordGlacierRestoreEventData): S3EventRecordGlacierEventData = {
       val __obj = js.Dynamic.literal(restoreEventData = restoreEventData.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3EventRecordGlacierEventData]
     }
     
-    @scala.inline
-    implicit class S3EventRecordGlacierEventDataMutableBuilder[Self <: S3EventRecordGlacierEventData] (val x: Self) extends AnyVal {
+    extension [Self <: S3EventRecordGlacierEventData](x: Self) {
       
-      @scala.inline
-      def setRestoreEventData(value: S3EventRecordGlacierRestoreEventData): Self = StObject.set(x, "restoreEventData", value.asInstanceOf[js.Any])
+      inline def setRestoreEventData(value: S3EventRecordGlacierRestoreEventData): Self = StObject.set(x, "restoreEventData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,20 +122,16 @@ object s3Mod {
   }
   object S3EventRecordGlacierRestoreEventData {
     
-    @scala.inline
-    def apply(lifecycleRestorationExpiryTime: String, lifecycleRestoreStorageClass: String): S3EventRecordGlacierRestoreEventData = {
+    inline def apply(lifecycleRestorationExpiryTime: String, lifecycleRestoreStorageClass: String): S3EventRecordGlacierRestoreEventData = {
       val __obj = js.Dynamic.literal(lifecycleRestorationExpiryTime = lifecycleRestorationExpiryTime.asInstanceOf[js.Any], lifecycleRestoreStorageClass = lifecycleRestoreStorageClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3EventRecordGlacierRestoreEventData]
     }
     
-    @scala.inline
-    implicit class S3EventRecordGlacierRestoreEventDataMutableBuilder[Self <: S3EventRecordGlacierRestoreEventData] (val x: Self) extends AnyVal {
+    extension [Self <: S3EventRecordGlacierRestoreEventData](x: Self) {
       
-      @scala.inline
-      def setLifecycleRestorationExpiryTime(value: String): Self = StObject.set(x, "lifecycleRestorationExpiryTime", value.asInstanceOf[js.Any])
+      inline def setLifecycleRestorationExpiryTime(value: String): Self = StObject.set(x, "lifecycleRestorationExpiryTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifecycleRestoreStorageClass(value: String): Self = StObject.set(x, "lifecycleRestoreStorageClass", value.asInstanceOf[js.Any])
+      inline def setLifecycleRestoreStorageClass(value: String): Self = StObject.set(x, "lifecycleRestoreStorageClass", value.asInstanceOf[js.Any])
     }
   }
   

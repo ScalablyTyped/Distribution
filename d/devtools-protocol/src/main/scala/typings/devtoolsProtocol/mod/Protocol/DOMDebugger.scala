@@ -19,14 +19,11 @@ object DOMDebugger {
   trait DOMBreakpointType extends StObject
   object DOMBreakpointType {
     
-    @scala.inline
-    def `attribute-modified`: typings.devtoolsProtocol.devtoolsProtocolStrings.`attribute-modified` = "attribute-modified".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`attribute-modified`]
+    inline def `attribute-modified`: typings.devtoolsProtocol.devtoolsProtocolStrings.`attribute-modified` = "attribute-modified".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`attribute-modified`]
     
-    @scala.inline
-    def `node-removed`: typings.devtoolsProtocol.devtoolsProtocolStrings.`node-removed` = "node-removed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`node-removed`]
+    inline def `node-removed`: typings.devtoolsProtocol.devtoolsProtocolStrings.`node-removed` = "node-removed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`node-removed`]
     
-    @scala.inline
-    def `subtree-modified`: typings.devtoolsProtocol.devtoolsProtocolStrings.`subtree-modified` = "subtree-modified".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`subtree-modified`]
+    inline def `subtree-modified`: typings.devtoolsProtocol.devtoolsProtocolStrings.`subtree-modified` = "subtree-modified".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`subtree-modified`]
   }
   
   trait EventListener extends StObject {
@@ -83,8 +80,7 @@ object DOMDebugger {
   }
   object EventListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnNumber: integer,
       lineNumber: integer,
       once: Boolean,
@@ -98,47 +94,33 @@ object DOMDebugger {
       __obj.asInstanceOf[EventListener]
     }
     
-    @scala.inline
-    implicit class EventListenerMutableBuilder[Self <: EventListener] (val x: Self) extends AnyVal {
+    extension [Self <: EventListener](x: Self) {
       
-      @scala.inline
-      def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+      inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+      inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
       
-      @scala.inline
-      def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: RemoteObject): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: RemoteObject): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalHandler(value: RemoteObject): Self = StObject.set(x, "originalHandler", value.asInstanceOf[js.Any])
+      inline def setOriginalHandler(value: RemoteObject): Self = StObject.set(x, "originalHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalHandlerUndefined: Self = StObject.set(x, "originalHandler", js.undefined)
+      inline def setOriginalHandlerUndefined: Self = StObject.set(x, "originalHandler", js.undefined)
       
-      @scala.inline
-      def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+      inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
+      inline def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,29 +145,22 @@ object DOMDebugger {
   }
   object GetEventListenersRequest {
     
-    @scala.inline
-    def apply(objectId: RemoteObjectId): GetEventListenersRequest = {
+    inline def apply(objectId: RemoteObjectId): GetEventListenersRequest = {
       val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEventListenersRequest]
     }
     
-    @scala.inline
-    implicit class GetEventListenersRequestMutableBuilder[Self <: GetEventListenersRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetEventListenersRequest](x: Self) {
       
-      @scala.inline
-      def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+      inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
+      inline def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
+      inline def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
     }
   }
   
@@ -198,20 +173,16 @@ object DOMDebugger {
   }
   object GetEventListenersResponse {
     
-    @scala.inline
-    def apply(listeners: js.Array[EventListener]): GetEventListenersResponse = {
+    inline def apply(listeners: js.Array[EventListener]): GetEventListenersResponse = {
       val __obj = js.Dynamic.literal(listeners = listeners.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEventListenersResponse]
     }
     
-    @scala.inline
-    implicit class GetEventListenersResponseMutableBuilder[Self <: GetEventListenersResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetEventListenersResponse](x: Self) {
       
-      @scala.inline
-      def setListeners(value: js.Array[EventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: js.Array[EventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersVarargs(value: EventListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: EventListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
     }
   }
   
@@ -229,21 +200,17 @@ object DOMDebugger {
   }
   object RemoveDOMBreakpointRequest {
     
-    @scala.inline
-    def apply(nodeId: NodeId, `type`: DOMBreakpointType): RemoveDOMBreakpointRequest = {
+    inline def apply(nodeId: NodeId, `type`: DOMBreakpointType): RemoveDOMBreakpointRequest = {
       val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveDOMBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class RemoveDOMBreakpointRequestMutableBuilder[Self <: RemoveDOMBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveDOMBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+      inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: DOMBreakpointType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DOMBreakpointType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,23 +228,18 @@ object DOMDebugger {
   }
   object RemoveEventListenerBreakpointRequest {
     
-    @scala.inline
-    def apply(eventName: String): RemoveEventListenerBreakpointRequest = {
+    inline def apply(eventName: String): RemoveEventListenerBreakpointRequest = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveEventListenerBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class RemoveEventListenerBreakpointRequestMutableBuilder[Self <: RemoveEventListenerBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveEventListenerBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+      inline def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
+      inline def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
     }
   }
   
@@ -290,17 +252,14 @@ object DOMDebugger {
   }
   object RemoveInstrumentationBreakpointRequest {
     
-    @scala.inline
-    def apply(eventName: String): RemoveInstrumentationBreakpointRequest = {
+    inline def apply(eventName: String): RemoveInstrumentationBreakpointRequest = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveInstrumentationBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class RemoveInstrumentationBreakpointRequestMutableBuilder[Self <: RemoveInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveInstrumentationBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,17 +272,14 @@ object DOMDebugger {
   }
   object RemoveXHRBreakpointRequest {
     
-    @scala.inline
-    def apply(url: String): RemoveXHRBreakpointRequest = {
+    inline def apply(url: String): RemoveXHRBreakpointRequest = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveXHRBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class RemoveXHRBreakpointRequestMutableBuilder[Self <: RemoveXHRBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveXHRBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,21 +297,17 @@ object DOMDebugger {
   }
   object SetDOMBreakpointRequest {
     
-    @scala.inline
-    def apply(nodeId: NodeId, `type`: DOMBreakpointType): SetDOMBreakpointRequest = {
+    inline def apply(nodeId: NodeId, `type`: DOMBreakpointType): SetDOMBreakpointRequest = {
       val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetDOMBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class SetDOMBreakpointRequestMutableBuilder[Self <: SetDOMBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetDOMBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+      inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: DOMBreakpointType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DOMBreakpointType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,23 +326,18 @@ object DOMDebugger {
   }
   object SetEventListenerBreakpointRequest {
     
-    @scala.inline
-    def apply(eventName: String): SetEventListenerBreakpointRequest = {
+    inline def apply(eventName: String): SetEventListenerBreakpointRequest = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetEventListenerBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class SetEventListenerBreakpointRequestMutableBuilder[Self <: SetEventListenerBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetEventListenerBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+      inline def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
+      inline def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
     }
   }
   
@@ -403,17 +350,14 @@ object DOMDebugger {
   }
   object SetInstrumentationBreakpointRequest {
     
-    @scala.inline
-    def apply(eventName: String): SetInstrumentationBreakpointRequest = {
+    inline def apply(eventName: String): SetInstrumentationBreakpointRequest = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetInstrumentationBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class SetInstrumentationBreakpointRequestMutableBuilder[Self <: SetInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetInstrumentationBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -426,17 +370,14 @@ object DOMDebugger {
   }
   object SetXHRBreakpointRequest {
     
-    @scala.inline
-    def apply(url: String): SetXHRBreakpointRequest = {
+    inline def apply(url: String): SetXHRBreakpointRequest = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetXHRBreakpointRequest]
     }
     
-    @scala.inline
-    implicit class SetXHRBreakpointRequestMutableBuilder[Self <: SetXHRBreakpointRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SetXHRBreakpointRequest](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,6 +17,5 @@ object AnonymousStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(subscribeFunc: js.Function): typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(subscribeFunc.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream]
+  inline def create(subscribeFunc: js.Function): typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(subscribeFunc.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream]
 }

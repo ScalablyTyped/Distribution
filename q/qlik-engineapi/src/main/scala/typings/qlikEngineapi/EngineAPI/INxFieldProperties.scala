@@ -10,16 +10,13 @@ trait INxFieldProperties extends StObject {
 }
 object INxFieldProperties {
   
-  @scala.inline
-  def apply(qOneAndOnlyOne: Boolean): INxFieldProperties = {
+  inline def apply(qOneAndOnlyOne: Boolean): INxFieldProperties = {
     val __obj = js.Dynamic.literal(qOneAndOnlyOne = qOneAndOnlyOne.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxFieldProperties]
   }
   
-  @scala.inline
-  implicit class INxFieldPropertiesMutableBuilder[Self <: INxFieldProperties] (val x: Self) extends AnyVal {
+  extension [Self <: INxFieldProperties](x: Self) {
     
-    @scala.inline
-    def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
+    inline def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
   }
 }

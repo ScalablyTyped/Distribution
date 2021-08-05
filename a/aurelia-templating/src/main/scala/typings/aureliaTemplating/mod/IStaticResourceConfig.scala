@@ -99,88 +99,63 @@ trait IStaticResourceConfig extends StObject {
 }
 object IStaticResourceConfig {
   
-  @scala.inline
-  def apply(): IStaticResourceConfig = {
+  inline def apply(): IStaticResourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStaticResourceConfig]
   }
   
-  @scala.inline
-  implicit class IStaticResourceConfigMutableBuilder[Self <: IStaticResourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IStaticResourceConfig](x: Self) {
     
-    @scala.inline
-    def setBindables(value: js.Array[String | IBindablePropertyConfig]): Self = StObject.set(x, "bindables", value.asInstanceOf[js.Any])
+    inline def setBindables(value: js.Array[String | IBindablePropertyConfig]): Self = StObject.set(x, "bindables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindablesUndefined: Self = StObject.set(x, "bindables", js.undefined)
+    inline def setBindablesUndefined: Self = StObject.set(x, "bindables", js.undefined)
     
-    @scala.inline
-    def setBindablesVarargs(value: (String | IBindablePropertyConfig)*): Self = StObject.set(x, "bindables", js.Array(value :_*))
+    inline def setBindablesVarargs(value: (String | IBindablePropertyConfig)*): Self = StObject.set(x, "bindables", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerless(value: Boolean): Self = StObject.set(x, "containerless", value.asInstanceOf[js.Any])
+    inline def setContainerless(value: Boolean): Self = StObject.set(x, "containerless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerlessUndefined: Self = StObject.set(x, "containerless", js.undefined)
+    inline def setContainerlessUndefined: Self = StObject.set(x, "containerless", js.undefined)
     
-    @scala.inline
-    def setDefaultBindingMode(value: bindingMode | oneTime | oneWay | twoWay | fromView | toView): Self = StObject.set(x, "defaultBindingMode", value.asInstanceOf[js.Any])
+    inline def setDefaultBindingMode(value: bindingMode | oneTime | oneWay | twoWay | fromView | toView): Self = StObject.set(x, "defaultBindingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBindingModeUndefined: Self = StObject.set(x, "defaultBindingMode", js.undefined)
+    inline def setDefaultBindingModeUndefined: Self = StObject.set(x, "defaultBindingMode", js.undefined)
     
-    @scala.inline
-    def setHasDynamicOptions(value: Boolean): Self = StObject.set(x, "hasDynamicOptions", value.asInstanceOf[js.Any])
+    inline def setHasDynamicOptions(value: Boolean): Self = StObject.set(x, "hasDynamicOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDynamicOptionsUndefined: Self = StObject.set(x, "hasDynamicOptions", js.undefined)
+    inline def setHasDynamicOptionsUndefined: Self = StObject.set(x, "hasDynamicOptions", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProcessAttributes(
+    inline def setProcessAttributes(
       value: (/* viewCompiler */ ViewCompiler, /* resources */ ViewResources_, /* node */ Element, /* attributes */ NamedNodeMap, /* elementInstruction */ BehaviorInstruction) => Unit
     ): Self = StObject.set(x, "processAttributes", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setProcessAttributesUndefined: Self = StObject.set(x, "processAttributes", js.undefined)
+    inline def setProcessAttributesUndefined: Self = StObject.set(x, "processAttributes", js.undefined)
     
-    @scala.inline
-    def setProcessContent(
+    inline def setProcessContent(
       value: (/* viewCompiler */ ViewCompiler, /* resources */ ViewResources_, /* node */ Element, /* instruction */ BehaviorInstruction) => Boolean
     ): Self = StObject.set(x, "processContent", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setProcessContentUndefined: Self = StObject.set(x, "processContent", js.undefined)
+    inline def setProcessContentUndefined: Self = StObject.set(x, "processContent", js.undefined)
     
-    @scala.inline
-    def setShadowDOMOptions(value: ShadowRootInit): Self = StObject.set(x, "shadowDOMOptions", value.asInstanceOf[js.Any])
+    inline def setShadowDOMOptions(value: ShadowRootInit): Self = StObject.set(x, "shadowDOMOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowDOMOptionsUndefined: Self = StObject.set(x, "shadowDOMOptions", js.undefined)
+    inline def setShadowDOMOptionsUndefined: Self = StObject.set(x, "shadowDOMOptions", js.undefined)
     
-    @scala.inline
-    def setTemplateController(value: Boolean): Self = StObject.set(x, "templateController", value.asInstanceOf[js.Any])
+    inline def setTemplateController(value: Boolean): Self = StObject.set(x, "templateController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateControllerUndefined: Self = StObject.set(x, "templateController", js.undefined)
+    inline def setTemplateControllerUndefined: Self = StObject.set(x, "templateController", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: element | attribute | valueConverter | bindingBehavior | typings.aureliaTemplating.aureliaTemplatingStrings.viewEngineHooks
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUsesShadowDOM(value: Boolean): Self = StObject.set(x, "usesShadowDOM", value.asInstanceOf[js.Any])
+    inline def setUsesShadowDOM(value: Boolean): Self = StObject.set(x, "usesShadowDOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesShadowDOMUndefined: Self = StObject.set(x, "usesShadowDOM", js.undefined)
+    inline def setUsesShadowDOMUndefined: Self = StObject.set(x, "usesShadowDOM", js.undefined)
   }
 }

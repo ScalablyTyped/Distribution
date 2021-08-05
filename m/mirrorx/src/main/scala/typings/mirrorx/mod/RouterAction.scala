@@ -13,20 +13,16 @@ trait RouterAction extends StObject {
 }
 object RouterAction {
   
-  @scala.inline
-  def apply(payload: LocationActionPayload): RouterAction = {
+  inline def apply(payload: LocationActionPayload): RouterAction = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("@@router/CALL_HISTORY_METHOD")
     __obj.asInstanceOf[RouterAction]
   }
   
-  @scala.inline
-  implicit class RouterActionMutableBuilder[Self <: RouterAction] (val x: Self) extends AnyVal {
+  extension [Self <: RouterAction](x: Self) {
     
-    @scala.inline
-    def setPayload(value: LocationActionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: LocationActionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `@@routerSlashCALL_HISTORY_METHOD`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `@@routerSlashCALL_HISTORY_METHOD`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

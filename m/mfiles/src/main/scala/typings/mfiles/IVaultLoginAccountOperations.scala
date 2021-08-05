@@ -26,8 +26,7 @@ trait IVaultLoginAccountOperations extends StObject {
 }
 object IVaultLoginAccountOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddLoginAccount: (ILoginAccount, String) => Unit,
     ForceLogout: IStrings => Unit,
     GetLoginAccount: String => ILoginAccount,
@@ -42,34 +41,24 @@ object IVaultLoginAccountOperations {
     __obj.asInstanceOf[IVaultLoginAccountOperations]
   }
   
-  @scala.inline
-  implicit class IVaultLoginAccountOperationsMutableBuilder[Self <: IVaultLoginAccountOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultLoginAccountOperations](x: Self) {
     
-    @scala.inline
-    def setAddLoginAccount(value: (ILoginAccount, String) => Unit): Self = StObject.set(x, "AddLoginAccount", js.Any.fromFunction2(value))
+    inline def setAddLoginAccount(value: (ILoginAccount, String) => Unit): Self = StObject.set(x, "AddLoginAccount", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setForceLogout(value: IStrings => Unit): Self = StObject.set(x, "ForceLogout", js.Any.fromFunction1(value))
+    inline def setForceLogout(value: IStrings => Unit): Self = StObject.set(x, "ForceLogout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLoginAccount(value: String => ILoginAccount): Self = StObject.set(x, "GetLoginAccount", js.Any.fromFunction1(value))
+    inline def setGetLoginAccount(value: String => ILoginAccount): Self = StObject.set(x, "GetLoginAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLoginAccounts(value: () => ILoginAccounts): Self = StObject.set(x, "GetLoginAccounts", js.Any.fromFunction0(value))
+    inline def setGetLoginAccounts(value: () => ILoginAccounts): Self = StObject.set(x, "GetLoginAccounts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoginAccountsWithSessions(value: () => ILoginAccounts): Self = StObject.set(x, "GetLoginAccountsWithSessions", js.Any.fromFunction0(value))
+    inline def setGetLoginAccountsWithSessions(value: () => ILoginAccounts): Self = StObject.set(x, "GetLoginAccountsWithSessions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPersonalInformationFromDomain(value: String => ILoginAccountPersonalInformation): Self = StObject.set(x, "GetPersonalInformationFromDomain", js.Any.fromFunction1(value))
+    inline def setGetPersonalInformationFromDomain(value: String => ILoginAccountPersonalInformation): Self = StObject.set(x, "GetPersonalInformationFromDomain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifyLoginAccount(value: ILoginAccount => Unit): Self = StObject.set(x, "ModifyLoginAccount", js.Any.fromFunction1(value))
+    inline def setModifyLoginAccount(value: ILoginAccount => Unit): Self = StObject.set(x, "ModifyLoginAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveLoginAccount(value: String => Unit): Self = StObject.set(x, "RemoveLoginAccount", js.Any.fromFunction1(value))
+    inline def setRemoveLoginAccount(value: String => Unit): Self = StObject.set(x, "RemoveLoginAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateLoginPassword(value: (String, String) => Unit): Self = StObject.set(x, "UpdateLoginPassword", js.Any.fromFunction2(value))
+    inline def setUpdateLoginPassword(value: (String, String) => Unit): Self = StObject.set(x, "UpdateLoginPassword", js.Any.fromFunction2(value))
   }
 }

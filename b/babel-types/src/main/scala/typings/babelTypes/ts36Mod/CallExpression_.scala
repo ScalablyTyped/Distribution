@@ -19,8 +19,7 @@ trait CallExpression_
 }
 object CallExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[Expression | SpreadElement_],
     callee: Expression | Super,
     end: Double,
@@ -32,19 +31,14 @@ object CallExpression_ {
     __obj.asInstanceOf[CallExpression_]
   }
   
-  @scala.inline
-  implicit class CallExpression_MutableBuilder[Self <: CallExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: CallExpression_](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Expression | SpreadElement_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Expression | SpreadElement_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: (Expression | SpreadElement_)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: (Expression | SpreadElement_)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setCallee(value: Expression | Super): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Expression | Super): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,16 +17,13 @@ trait Color
 }
 object Color {
   
-  @scala.inline
-  def apply(color: ColorRGB | ColorHSL | ColorLAB | ColorHCL): Color = {
+  inline def apply(color: ColorRGB | ColorHSL | ColorLAB | ColorHCL): Color = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorRGB | ColorHSL | ColorLAB | ColorHCL): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorRGB | ColorHSL | ColorLAB | ColorHCL): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

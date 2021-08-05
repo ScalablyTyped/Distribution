@@ -34,8 +34,7 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     debugInfo: DebugInfo,
     innerError: Error,
@@ -48,31 +47,22 @@ object Error {
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugInfo(value: DebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
+    inline def setDebugInfo(value: DebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerError(value: Error): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
+    inline def setInnerError(value: Error): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceMessages(value: js.Array[String]): Self = StObject.set(x, "traceMessages", value.asInstanceOf[js.Any])
+    inline def setTraceMessages(value: js.Array[String]): Self = StObject.set(x, "traceMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceMessagesVarargs(value: String*): Self = StObject.set(x, "traceMessages", js.Array(value :_*))
+    inline def setTraceMessagesVarargs(value: String*): Self = StObject.set(x, "traceMessages", js.Array(value :_*))
   }
 }

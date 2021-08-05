@@ -22,28 +22,21 @@ trait PolyPolygonDescriptor extends StObject {
 }
 object PolyPolygonDescriptor {
   
-  @scala.inline
-  def apply(Geometry: PointSequenceSequence, PolyPolygon: PointSequenceSequence, PolygonKind: PolygonKind): PolyPolygonDescriptor = {
+  inline def apply(Geometry: PointSequenceSequence, PolyPolygon: PointSequenceSequence, PolygonKind: PolygonKind): PolyPolygonDescriptor = {
     val __obj = js.Dynamic.literal(Geometry = Geometry.asInstanceOf[js.Any], PolyPolygon = PolyPolygon.asInstanceOf[js.Any], PolygonKind = PolygonKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolyPolygonDescriptor]
   }
   
-  @scala.inline
-  implicit class PolyPolygonDescriptorMutableBuilder[Self <: PolyPolygonDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PolyPolygonDescriptor](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: PointSequenceSequence): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: PointSequenceSequence): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryVarargs(value: PointSequence*): Self = StObject.set(x, "Geometry", js.Array(value :_*))
+    inline def setGeometryVarargs(value: PointSequence*): Self = StObject.set(x, "Geometry", js.Array(value :_*))
     
-    @scala.inline
-    def setPolyPolygon(value: PointSequenceSequence): Self = StObject.set(x, "PolyPolygon", value.asInstanceOf[js.Any])
+    inline def setPolyPolygon(value: PointSequenceSequence): Self = StObject.set(x, "PolyPolygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolyPolygonVarargs(value: PointSequence*): Self = StObject.set(x, "PolyPolygon", js.Array(value :_*))
+    inline def setPolyPolygonVarargs(value: PointSequence*): Self = StObject.set(x, "PolyPolygon", js.Array(value :_*))
     
-    @scala.inline
-    def setPolygonKind(value: PolygonKind): Self = StObject.set(x, "PolygonKind", value.asInstanceOf[js.Any])
+    inline def setPolygonKind(value: PolygonKind): Self = StObject.set(x, "PolygonKind", value.asInstanceOf[js.Any])
   }
 }

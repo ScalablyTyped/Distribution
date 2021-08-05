@@ -28,38 +28,32 @@ object marqueeNativeMod {
       @JSImport("antd-mobile-rn/lib/notice-bar/Marquee.native", "default.defaultProps.fps")
       @js.native
       def fps: Double = js.native
-      @scala.inline
-      def fps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fps")(x.asInstanceOf[js.Any])
+      inline def fps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fps")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile-rn/lib/notice-bar/Marquee.native", "default.defaultProps.leading")
       @js.native
       def leading: Double = js.native
-      @scala.inline
-      def leading_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leading")(x.asInstanceOf[js.Any])
+      inline def leading_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leading")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile-rn/lib/notice-bar/Marquee.native", "default.defaultProps.loop")
       @js.native
       def loop: Boolean = js.native
-      @scala.inline
-      def loop_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loop")(x.asInstanceOf[js.Any])
+      inline def loop_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loop")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile-rn/lib/notice-bar/Marquee.native", "default.defaultProps.maxWidth")
       @js.native
       def maxWidth: Double = js.native
-      @scala.inline
-      def maxWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxWidth")(x.asInstanceOf[js.Any])
+      inline def maxWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxWidth")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile-rn/lib/notice-bar/Marquee.native", "default.defaultProps.text")
       @js.native
       def text: String = js.native
-      @scala.inline
-      def text_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+      inline def text_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
       
       @JSImport("antd-mobile-rn/lib/notice-bar/Marquee.native", "default.defaultProps.trailing")
       @js.native
       def trailing: Double = js.native
-      @scala.inline
-      def trailing_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trailing")(x.asInstanceOf[js.Any])
+      inline def trailing_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trailing")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -104,65 +98,46 @@ object marqueeNativeMod {
   }
   object MarqueeProps {
     
-    @scala.inline
-    def apply(): MarqueeProps = {
+    inline def apply(): MarqueeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarqueeProps]
     }
     
-    @scala.inline
-    implicit class MarqueePropsMutableBuilder[Self <: MarqueeProps] (val x: Self) extends AnyVal {
+    extension [Self <: MarqueeProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+      inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+      inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
       
-      @scala.inline
-      def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Double): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Double): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
 }

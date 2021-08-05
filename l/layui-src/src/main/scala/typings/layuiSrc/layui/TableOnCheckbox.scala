@@ -24,8 +24,7 @@ trait TableOnCheckbox extends StObject {
 }
 object TableOnCheckbox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Object,
     del: () => Unit,
     tr: JQuery[HTMLElement],
@@ -37,25 +36,18 @@ object TableOnCheckbox {
     __obj.asInstanceOf[TableOnCheckbox]
   }
   
-  @scala.inline
-  implicit class TableOnCheckboxMutableBuilder[Self <: TableOnCheckbox] (val x: Self) extends AnyVal {
+  extension [Self <: TableOnCheckbox](x: Self) {
     
-    @scala.inline
-    def setChecked(value: `true`): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: `true`): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDel(value: () => Unit): Self = StObject.set(x, "del", js.Any.fromFunction0(value))
+    inline def setDel(value: () => Unit): Self = StObject.set(x, "del", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTr(value: JQuery[HTMLElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+    inline def setTr(value: JQuery[HTMLElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

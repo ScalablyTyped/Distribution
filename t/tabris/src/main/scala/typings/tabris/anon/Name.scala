@@ -12,25 +12,19 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(): Name = {
+  inline def apply(): Name = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
   }
 }

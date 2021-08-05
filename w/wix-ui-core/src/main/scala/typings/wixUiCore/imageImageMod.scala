@@ -27,23 +27,23 @@ object imageImageMod {
       */
     def this(props: ImageProps, context: js.Any) = this()
     
-    val getErrorImage: js.Any = js.native
+    /* private */ val getErrorImage: js.Any = js.native
     
-    val getErrorSrc: js.Any = js.native
+    /* private */ val getErrorSrc: js.Any = js.native
     
-    var getImageProps: js.Any = js.native
+    /* private */ var getImageProps: js.Any = js.native
     
-    val getSrc: js.Any = js.native
+    /* private */ val getSrc: js.Any = js.native
     
-    val getSrcSet: js.Any = js.native
+    /* private */ val getSrcSet: js.Any = js.native
     
-    val handleOnError: js.Any = js.native
+    /* private */ val handleOnError: js.Any = js.native
     
-    val handleOnLoad: js.Any = js.native
+    /* private */ val handleOnLoad: js.Any = js.native
     
-    val isErrorState: js.Any = js.native
+    /* private */ val isErrorState: js.Any = js.native
     
-    val isResized: js.Any = js.native
+    /* private */ val isResized: js.Any = js.native
     
     @JSName("state")
     var state_Image: Status = js.native
@@ -69,62 +69,44 @@ object imageImageMod {
   }
   object ImageProps {
     
-    @scala.inline
-    def apply(): ImageProps = {
+    inline def apply(): ImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageProps]
     }
     
-    @scala.inline
-    implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageProps](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setErrorImage(value: String): Self = StObject.set(x, "errorImage", value.asInstanceOf[js.Any])
+      inline def setErrorImage(value: String): Self = StObject.set(x, "errorImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorImageUndefined: Self = StObject.set(x, "errorImage", js.undefined)
+      inline def setErrorImageUndefined: Self = StObject.set(x, "errorImage", js.undefined)
       
-      @scala.inline
-      def setNativeProps(value: ImgHTMLAttributes[HTMLImageElement]): Self = StObject.set(x, "nativeProps", value.asInstanceOf[js.Any])
+      inline def setNativeProps(value: ImgHTMLAttributes[HTMLImageElement]): Self = StObject.set(x, "nativeProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativePropsUndefined: Self = StObject.set(x, "nativeProps", js.undefined)
+      inline def setNativePropsUndefined: Self = StObject.set(x, "nativeProps", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setResizeMode(value: fill | contain | cover): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+      inline def setResizeMode(value: fill | contain | cover): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
+      inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+      inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
+      inline def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   
@@ -136,23 +118,18 @@ object imageImageMod {
   }
   object ImageState {
     
-    @scala.inline
-    def apply(status: ImageStatus): ImageState = {
+    inline def apply(status: ImageStatus): ImageState = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageState]
     }
     
-    @scala.inline
-    implicit class ImageStateMutableBuilder[Self <: ImageState] (val x: Self) extends AnyVal {
+    extension [Self <: ImageState](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setStatus(value: ImageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ImageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

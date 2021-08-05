@@ -10,16 +10,13 @@ trait CommandA7[R, T, U, V, W, X, Y, Z] extends StObject {
 }
 object CommandA7 {
   
-  @scala.inline
-  def apply[R, T, U, V, W, X, Y, Z](execute: (T, U, V, W, X, Y, Z) => js.Thenable[R]): CommandA7[R, T, U, V, W, X, Y, Z] = {
+  inline def apply[R, T, U, V, W, X, Y, Z](execute: (T, U, V, W, X, Y, Z) => js.Thenable[R]): CommandA7[R, T, U, V, W, X, Y, Z] = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction7(execute))
     __obj.asInstanceOf[CommandA7[R, T, U, V, W, X, Y, Z]]
   }
   
-  @scala.inline
-  implicit class CommandA7MutableBuilder[Self <: CommandA7[?, ?, ?, ?, ?, ?, ?, ?], R, T, U, V, W, X, Y, Z] (val x: Self & (CommandA7[R, T, U, V, W, X, Y, Z])) extends AnyVal {
+  extension [Self <: CommandA7[?, ?, ?, ?, ?, ?, ?, ?], R, T, U, V, W, X, Y, Z](x: Self & (CommandA7[R, T, U, V, W, X, Y, Z])) {
     
-    @scala.inline
-    def setExecute(value: (T, U, V, W, X, Y, Z) => js.Thenable[R]): Self = StObject.set(x, "execute", js.Any.fromFunction7(value))
+    inline def setExecute(value: (T, U, V, W, X, Y, Z) => js.Thenable[R]): Self = StObject.set(x, "execute", js.Any.fromFunction7(value))
   }
 }

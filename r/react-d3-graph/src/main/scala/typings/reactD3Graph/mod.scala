@@ -90,8 +90,7 @@ object mod {
   }
   object GraphConfiguration {
     
-    @scala.inline
-    def apply[N /* <: GraphNode */, L /* <: GraphLink */](
+    inline def apply[N /* <: GraphNode */, L /* <: GraphLink */](
       automaticRearrangeAfterDropNode: Boolean,
       collapsible: Boolean,
       d3: AlphaTarget,
@@ -116,65 +115,45 @@ object mod {
       __obj.asInstanceOf[GraphConfiguration[N, L]]
     }
     
-    @scala.inline
-    implicit class GraphConfigurationMutableBuilder[Self <: GraphConfiguration[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphConfiguration[N, L])) extends AnyVal {
+    extension [Self <: GraphConfiguration[?, ?], N /* <: GraphNode */, L /* <: GraphLink */](x: Self & (GraphConfiguration[N, L])) {
       
-      @scala.inline
-      def setAutomaticRearrangeAfterDropNode(value: Boolean): Self = StObject.set(x, "automaticRearrangeAfterDropNode", value.asInstanceOf[js.Any])
+      inline def setAutomaticRearrangeAfterDropNode(value: Boolean): Self = StObject.set(x, "automaticRearrangeAfterDropNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+      inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD3(value: AlphaTarget): Self = StObject.set(x, "d3", value.asInstanceOf[js.Any])
+      inline def setD3(value: AlphaTarget): Self = StObject.set(x, "d3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+      inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusAnimationDuration(value: Double): Self = StObject.set(x, "focusAnimationDuration", value.asInstanceOf[js.Any])
+      inline def setFocusAnimationDuration(value: Double): Self = StObject.set(x, "focusAnimationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusZoom(value: Double): Self = StObject.set(x, "focusZoom", value.asInstanceOf[js.Any])
+      inline def setFocusZoom(value: Double): Self = StObject.set(x, "focusZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightDegree(value: Double): Self = StObject.set(x, "highlightDegree", value.asInstanceOf[js.Any])
+      inline def setHighlightDegree(value: Double): Self = StObject.set(x, "highlightDegree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightOpacity(value: Double): Self = StObject.set(x, "highlightOpacity", value.asInstanceOf[js.Any])
+      inline def setHighlightOpacity(value: Double): Self = StObject.set(x, "highlightOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: Partial[GraphLevelLinkConfiguration[L]]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: Partial[GraphLevelLinkConfiguration[L]]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkHighlightBehavior(value: Boolean): Self = StObject.set(x, "linkHighlightBehavior", value.asInstanceOf[js.Any])
+      inline def setLinkHighlightBehavior(value: Boolean): Self = StObject.set(x, "linkHighlightBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Partial[GraphLevelNodeConfiguration[N]]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Partial[GraphLevelNodeConfiguration[N]]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeHighlightBehavior(value: Boolean): Self = StObject.set(x, "nodeHighlightBehavior", value.asInstanceOf[js.Any])
+      inline def setNodeHighlightBehavior(value: Boolean): Self = StObject.set(x, "nodeHighlightBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanAndZoom(value: Boolean): Self = StObject.set(x, "panAndZoom", value.asInstanceOf[js.Any])
+      inline def setPanAndZoom(value: Boolean): Self = StObject.set(x, "panAndZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticGraph(value: Boolean): Self = StObject.set(x, "staticGraph", value.asInstanceOf[js.Any])
+      inline def setStaticGraph(value: Boolean): Self = StObject.set(x, "staticGraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticGraphWithDragAndDrop(value: Boolean): Self = StObject.set(x, "staticGraphWithDragAndDrop", value.asInstanceOf[js.Any])
+      inline def setStaticGraphWithDragAndDrop(value: Boolean): Self = StObject.set(x, "staticGraphWithDragAndDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,32 +167,24 @@ object mod {
   }
   object GraphData {
     
-    @scala.inline
-    def apply[N /* <: GraphNode */, L /* <: GraphLink */](links: js.Array[L], nodes: js.Array[N]): GraphData[N, L] = {
+    inline def apply[N /* <: GraphNode */, L /* <: GraphLink */](links: js.Array[L], nodes: js.Array[N]): GraphData[N, L] = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphData[N, L]]
     }
     
-    @scala.inline
-    implicit class GraphDataMutableBuilder[Self <: GraphData[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphData[N, L])) extends AnyVal {
+    extension [Self <: GraphData[?, ?], N /* <: GraphNode */, L /* <: GraphLink */](x: Self & (GraphData[N, L])) {
       
-      @scala.inline
-      def setFocusedNodeId(value: String): Self = StObject.set(x, "focusedNodeId", value.asInstanceOf[js.Any])
+      inline def setFocusedNodeId(value: String): Self = StObject.set(x, "focusedNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedNodeIdUndefined: Self = StObject.set(x, "focusedNodeId", js.undefined)
+      inline def setFocusedNodeIdUndefined: Self = StObject.set(x, "focusedNodeId", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[L]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[L]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: L*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: L*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setNodes(value: js.Array[N]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[N]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: N*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: N*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
@@ -243,8 +214,7 @@ object mod {
   }
   object GraphEventCallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onClickGraph: MouseEvent[Element, NativeMouseEvent] => Unit,
       onClickLink: (String, String) => Unit,
       onClickNode: String => Unit,
@@ -261,41 +231,29 @@ object mod {
       __obj.asInstanceOf[GraphEventCallbacks]
     }
     
-    @scala.inline
-    implicit class GraphEventCallbacksMutableBuilder[Self <: GraphEventCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: GraphEventCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnClickGraph(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickGraph", js.Any.fromFunction1(value))
+      inline def setOnClickGraph(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickGraph", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickLink(value: (String, String) => Unit): Self = StObject.set(x, "onClickLink", js.Any.fromFunction2(value))
+      inline def setOnClickLink(value: (String, String) => Unit): Self = StObject.set(x, "onClickLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickNode(value: String => Unit): Self = StObject.set(x, "onClickNode", js.Any.fromFunction1(value))
+      inline def setOnClickNode(value: String => Unit): Self = StObject.set(x, "onClickNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickNode(value: String => Unit): Self = StObject.set(x, "onDoubleClickNode", js.Any.fromFunction1(value))
+      inline def setOnDoubleClickNode(value: String => Unit): Self = StObject.set(x, "onDoubleClickNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOutLink(value: (String, String) => Unit): Self = StObject.set(x, "onMouseOutLink", js.Any.fromFunction2(value))
+      inline def setOnMouseOutLink(value: (String, String) => Unit): Self = StObject.set(x, "onMouseOutLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseOutNode(value: String => Unit): Self = StObject.set(x, "onMouseOutNode", js.Any.fromFunction1(value))
+      inline def setOnMouseOutNode(value: String => Unit): Self = StObject.set(x, "onMouseOutNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOverLink(value: (String, String) => Unit): Self = StObject.set(x, "onMouseOverLink", js.Any.fromFunction2(value))
+      inline def setOnMouseOverLink(value: (String, String) => Unit): Self = StObject.set(x, "onMouseOverLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseOverNode(value: String => Unit): Self = StObject.set(x, "onMouseOverNode", js.Any.fromFunction1(value))
+      inline def setOnMouseOverNode(value: String => Unit): Self = StObject.set(x, "onMouseOverNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNodePositionChange(value: (String, Double, Double) => Unit): Self = StObject.set(x, "onNodePositionChange", js.Any.fromFunction3(value))
+      inline def setOnNodePositionChange(value: (String, Double, Double) => Unit): Self = StObject.set(x, "onNodePositionChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRightClickLink(value: (MouseEvent[Element, NativeMouseEvent], String, String) => Unit): Self = StObject.set(x, "onRightClickLink", js.Any.fromFunction3(value))
+      inline def setOnRightClickLink(value: (MouseEvent[Element, NativeMouseEvent], String, String) => Unit): Self = StObject.set(x, "onRightClickLink", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRightClickNode(value: (MouseEvent[Element, NativeMouseEvent], String) => Unit): Self = StObject.set(x, "onRightClickNode", js.Any.fromFunction2(value))
+      inline def setOnRightClickNode(value: (MouseEvent[Element, NativeMouseEvent], String) => Unit): Self = StObject.set(x, "onRightClickNode", js.Any.fromFunction2(value))
     }
   }
   
@@ -327,8 +285,7 @@ object mod {
   }
   object GraphLevelLinkConfiguration {
     
-    @scala.inline
-    def apply[L /* <: GraphLink */](
+    inline def apply[L /* <: GraphLink */](
       color: String,
       fontColor: String,
       fontSize: Double,
@@ -351,44 +308,31 @@ object mod {
       __obj.asInstanceOf[GraphLevelLinkConfiguration[L]]
     }
     
-    @scala.inline
-    implicit class GraphLevelLinkConfigurationMutableBuilder[Self <: GraphLevelLinkConfiguration[?], L /* <: GraphLink */] (val x: Self & GraphLevelLinkConfiguration[L]) extends AnyVal {
+    extension [Self <: GraphLevelLinkConfiguration[?], L /* <: GraphLink */](x: Self & GraphLevelLinkConfiguration[L]) {
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+      inline def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightFontSize(value: Double): Self = StObject.set(x, "highlightFontSize", value.asInstanceOf[js.Any])
+      inline def setHighlightFontSize(value: Double): Self = StObject.set(x, "highlightFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightFontWeight(value: String): Self = StObject.set(x, "highlightFontWeight", value.asInstanceOf[js.Any])
+      inline def setHighlightFontWeight(value: String): Self = StObject.set(x, "highlightFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelProperty(value: LinkLabelProperty[L]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
+      inline def setLabelProperty(value: LinkLabelProperty[L]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPropertyFunction1(value: L => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
+      inline def setLabelPropertyFunction1(value: L => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMarkerHeight(value: Double): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
+      inline def setMarkerHeight(value: Double): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseCursor(value: String): Self = StObject.set(x, "mouseCursor", value.asInstanceOf[js.Any])
+      inline def setMouseCursor(value: String): Self = StObject.set(x, "mouseCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
+      inline def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSemanticStrokeWidth(value: Boolean): Self = StObject.set(x, "semanticStrokeWidth", value.asInstanceOf[js.Any])
+      inline def setSemanticStrokeWidth(value: Boolean): Self = StObject.set(x, "semanticStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -434,8 +378,7 @@ object mod {
   }
   object GraphLevelNodeConfiguration {
     
-    @scala.inline
-    def apply[N /* <: GraphNode */](
+    inline def apply[N /* <: GraphNode */](
       color: String,
       fontColor: String,
       fontSize: Double,
@@ -460,68 +403,47 @@ object mod {
       __obj.asInstanceOf[GraphLevelNodeConfiguration[N]]
     }
     
-    @scala.inline
-    implicit class GraphLevelNodeConfigurationMutableBuilder[Self <: GraphLevelNodeConfiguration[?], N /* <: GraphNode */] (val x: Self & GraphLevelNodeConfiguration[N]) extends AnyVal {
+    extension [Self <: GraphLevelNodeConfiguration[?], N /* <: GraphNode */](x: Self & GraphLevelNodeConfiguration[N]) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+      inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+      inline def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightFontSize(value: Double): Self = StObject.set(x, "highlightFontSize", value.asInstanceOf[js.Any])
+      inline def setHighlightFontSize(value: Double): Self = StObject.set(x, "highlightFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightFontWeight(value: String): Self = StObject.set(x, "highlightFontWeight", value.asInstanceOf[js.Any])
+      inline def setHighlightFontWeight(value: String): Self = StObject.set(x, "highlightFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightStrokeColor(value: SAME | String): Self = StObject.set(x, "highlightStrokeColor", value.asInstanceOf[js.Any])
+      inline def setHighlightStrokeColor(value: SAME | String): Self = StObject.set(x, "highlightStrokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightStrokeWidth(value: SAME | Double): Self = StObject.set(x, "highlightStrokeWidth", value.asInstanceOf[js.Any])
+      inline def setHighlightStrokeWidth(value: SAME | Double): Self = StObject.set(x, "highlightStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelProperty(value: NodeLabelProperty[N]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
+      inline def setLabelProperty(value: NodeLabelProperty[N]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPropertyFunction1(value: N => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
+      inline def setLabelPropertyFunction1(value: N => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMouseCursor(value: String): Self = StObject.set(x, "mouseCursor", value.asInstanceOf[js.Any])
+      inline def setMouseCursor(value: String): Self = StObject.set(x, "mouseCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
+      inline def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+      inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewGenerator(value: N => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
+      inline def setViewGenerator(value: N => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
     }
   }
   
@@ -544,50 +466,36 @@ object mod {
   }
   object GraphLink {
     
-    @scala.inline
-    def apply(source: String, target: String): GraphLink = {
+    inline def apply(source: String, target: String): GraphLink = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphLink]
     }
     
-    @scala.inline
-    implicit class GraphLinkMutableBuilder[Self <: GraphLink] (val x: Self) extends AnyVal {
+    extension [Self <: GraphLink](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+      inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
+      inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
       
-      @scala.inline
-      def setMarkerWidth(value: Double): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
+      inline def setMarkerWidth(value: Double): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerWidthUndefined: Self = StObject.set(x, "markerWidth", js.undefined)
+      inline def setMarkerWidthUndefined: Self = StObject.set(x, "markerWidth", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -620,86 +528,60 @@ object mod {
   }
   object GraphNode {
     
-    @scala.inline
-    def apply(id: String): GraphNode = {
+    inline def apply(id: String): GraphNode = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphNode]
     }
     
-    @scala.inline
-    implicit class GraphNodeMutableBuilder[Self <: GraphNode] (val x: Self) extends AnyVal {
+    extension [Self <: GraphNode](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+      inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
+      inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelProperty(value: NodeLabelProperty[NodeWithExtraParameters]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
+      inline def setLabelProperty(value: NodeLabelProperty[NodeWithExtraParameters]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPropertyFunction1(value: NodeWithExtraParameters => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
+      inline def setLabelPropertyFunction1(value: NodeWithExtraParameters => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabelPropertyUndefined: Self = StObject.set(x, "labelProperty", js.undefined)
+      inline def setLabelPropertyUndefined: Self = StObject.set(x, "labelProperty", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
+      inline def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
+      inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+      inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
       
-      @scala.inline
-      def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+      inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+      inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
       
-      @scala.inline
-      def setViewGenerator(value: /* node */ NodeWithExtraParameters => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
+      inline def setViewGenerator(value: /* node */ NodeWithExtraParameters => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setViewGeneratorUndefined: Self = StObject.set(x, "viewGenerator", js.undefined)
+      inline def setViewGeneratorUndefined: Self = StObject.set(x, "viewGenerator", js.undefined)
     }
   }
   
@@ -745,97 +627,68 @@ object mod {
   }
   object GraphProps {
     
-    @scala.inline
-    def apply[N /* <: GraphNode */, L /* <: GraphLink */](id: String): GraphProps[N, L] = {
+    inline def apply[N /* <: GraphNode */, L /* <: GraphLink */](id: String): GraphProps[N, L] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphProps[N, L]]
     }
     
-    @scala.inline
-    implicit class GraphPropsMutableBuilder[Self <: GraphProps[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphProps[N, L])) extends AnyVal {
+    extension [Self <: GraphProps[?, ?], N /* <: GraphNode */, L /* <: GraphLink */](x: Self & (GraphProps[N, L])) {
       
-      @scala.inline
-      def setConfig(value: Partial[GraphConfiguration[N, L]]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Partial[GraphConfiguration[N, L]]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setData(value: GraphData[N, L]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: GraphData[N, L]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickGraph(value: /* event */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickGraph", js.Any.fromFunction1(value))
+      inline def setOnClickGraph(value: /* event */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickGraph", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickGraphUndefined: Self = StObject.set(x, "onClickGraph", js.undefined)
+      inline def setOnClickGraphUndefined: Self = StObject.set(x, "onClickGraph", js.undefined)
       
-      @scala.inline
-      def setOnClickLink(value: (/* source */ String, /* target */ String) => Unit): Self = StObject.set(x, "onClickLink", js.Any.fromFunction2(value))
+      inline def setOnClickLink(value: (/* source */ String, /* target */ String) => Unit): Self = StObject.set(x, "onClickLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickLinkUndefined: Self = StObject.set(x, "onClickLink", js.undefined)
+      inline def setOnClickLinkUndefined: Self = StObject.set(x, "onClickLink", js.undefined)
       
-      @scala.inline
-      def setOnClickNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onClickNode", js.Any.fromFunction1(value))
+      inline def setOnClickNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onClickNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickNodeUndefined: Self = StObject.set(x, "onClickNode", js.undefined)
+      inline def setOnClickNodeUndefined: Self = StObject.set(x, "onClickNode", js.undefined)
       
-      @scala.inline
-      def setOnDoubleClickNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onDoubleClickNode", js.Any.fromFunction1(value))
+      inline def setOnDoubleClickNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onDoubleClickNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickNodeUndefined: Self = StObject.set(x, "onDoubleClickNode", js.undefined)
+      inline def setOnDoubleClickNodeUndefined: Self = StObject.set(x, "onDoubleClickNode", js.undefined)
       
-      @scala.inline
-      def setOnMouseOutLink(value: (/* source */ String, /* target */ String) => Unit): Self = StObject.set(x, "onMouseOutLink", js.Any.fromFunction2(value))
+      inline def setOnMouseOutLink(value: (/* source */ String, /* target */ String) => Unit): Self = StObject.set(x, "onMouseOutLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseOutLinkUndefined: Self = StObject.set(x, "onMouseOutLink", js.undefined)
+      inline def setOnMouseOutLinkUndefined: Self = StObject.set(x, "onMouseOutLink", js.undefined)
       
-      @scala.inline
-      def setOnMouseOutNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onMouseOutNode", js.Any.fromFunction1(value))
+      inline def setOnMouseOutNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onMouseOutNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOutNodeUndefined: Self = StObject.set(x, "onMouseOutNode", js.undefined)
+      inline def setOnMouseOutNodeUndefined: Self = StObject.set(x, "onMouseOutNode", js.undefined)
       
-      @scala.inline
-      def setOnMouseOverLink(value: (/* source */ String, /* target */ String) => Unit): Self = StObject.set(x, "onMouseOverLink", js.Any.fromFunction2(value))
+      inline def setOnMouseOverLink(value: (/* source */ String, /* target */ String) => Unit): Self = StObject.set(x, "onMouseOverLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseOverLinkUndefined: Self = StObject.set(x, "onMouseOverLink", js.undefined)
+      inline def setOnMouseOverLinkUndefined: Self = StObject.set(x, "onMouseOverLink", js.undefined)
       
-      @scala.inline
-      def setOnMouseOverNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onMouseOverNode", js.Any.fromFunction1(value))
+      inline def setOnMouseOverNode(value: /* nodeId */ String => Unit): Self = StObject.set(x, "onMouseOverNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOverNodeUndefined: Self = StObject.set(x, "onMouseOverNode", js.undefined)
+      inline def setOnMouseOverNodeUndefined: Self = StObject.set(x, "onMouseOverNode", js.undefined)
       
-      @scala.inline
-      def setOnNodePositionChange(value: (/* nodeId */ String, /* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "onNodePositionChange", js.Any.fromFunction3(value))
+      inline def setOnNodePositionChange(value: (/* nodeId */ String, /* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "onNodePositionChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNodePositionChangeUndefined: Self = StObject.set(x, "onNodePositionChange", js.undefined)
+      inline def setOnNodePositionChangeUndefined: Self = StObject.set(x, "onNodePositionChange", js.undefined)
       
-      @scala.inline
-      def setOnRightClickLink(
+      inline def setOnRightClickLink(
         value: (/* event */ MouseEvent[Element, NativeMouseEvent], /* source */ String, /* target */ String) => Unit
       ): Self = StObject.set(x, "onRightClickLink", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRightClickLinkUndefined: Self = StObject.set(x, "onRightClickLink", js.undefined)
+      inline def setOnRightClickLinkUndefined: Self = StObject.set(x, "onRightClickLink", js.undefined)
       
-      @scala.inline
-      def setOnRightClickNode(value: (/* event */ MouseEvent[Element, NativeMouseEvent], /* nodeId */ String) => Unit): Self = StObject.set(x, "onRightClickNode", js.Any.fromFunction2(value))
+      inline def setOnRightClickNode(value: (/* event */ MouseEvent[Element, NativeMouseEvent], /* nodeId */ String) => Unit): Self = StObject.set(x, "onRightClickNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRightClickNodeUndefined: Self = StObject.set(x, "onRightClickNode", js.undefined)
+      inline def setOnRightClickNodeUndefined: Self = StObject.set(x, "onRightClickNode", js.undefined)
     }
   }
   
@@ -855,29 +708,22 @@ object mod {
   }
   object LinkLevelLinkConfiguration {
     
-    @scala.inline
-    def apply(color: String, fontColor: String, markerWidth: Double, opacity: Double, strokeWidth: Double): LinkLevelLinkConfiguration = {
+    inline def apply(color: String, fontColor: String, markerWidth: Double, opacity: Double, strokeWidth: Double): LinkLevelLinkConfiguration = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontColor = fontColor.asInstanceOf[js.Any], markerWidth = markerWidth.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkLevelLinkConfiguration]
     }
     
-    @scala.inline
-    implicit class LinkLevelLinkConfigurationMutableBuilder[Self <: LinkLevelLinkConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LinkLevelLinkConfiguration](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+      inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerWidth(value: Double): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
+      inline def setMarkerWidth(value: Double): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -909,8 +755,7 @@ object mod {
   }
   object NodeLevelNodeConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       fontColor: String,
       labelProperty: NodeLabelProperty[NodeWithExtraParameters],
@@ -927,44 +772,31 @@ object mod {
       __obj.asInstanceOf[NodeLevelNodeConfiguration]
     }
     
-    @scala.inline
-    implicit class NodeLevelNodeConfigurationMutableBuilder[Self <: NodeLevelNodeConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: NodeLevelNodeConfiguration](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+      inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelProperty(value: NodeLabelProperty[NodeWithExtraParameters]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
+      inline def setLabelProperty(value: NodeLabelProperty[NodeWithExtraParameters]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPropertyFunction1(value: NodeWithExtraParameters => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
+      inline def setLabelPropertyFunction1(value: NodeWithExtraParameters => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
+      inline def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+      inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewGenerator(value: NodeWithExtraParameters => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
+      inline def setViewGenerator(value: NodeWithExtraParameters => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
     }
   }
   
@@ -974,8 +806,7 @@ object mod {
        with /* key */ StringDictionary[String]
   object NodeWithExtraParameters {
     
-    @scala.inline
-    def apply(id: String): NodeWithExtraParameters = {
+    inline def apply(id: String): NodeWithExtraParameters = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeWithExtraParameters]
     }

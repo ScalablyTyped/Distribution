@@ -15,6 +15,6 @@ object regionFilterMod {
   trait RegionFilterAnnotation
     extends typings.antvComponent.groupComponentMod.default[RegionFilterAnnotationCfg] {
     
-    var adjustShapeAttrs: js.Any = js.native
+    /* private */ var adjustShapeAttrs: js.Any = js.native
   }
 }

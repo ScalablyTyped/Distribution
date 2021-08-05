@@ -73,64 +73,45 @@ trait PageData extends StObject {
 }
 object PageData {
   
-  @scala.inline
-  def apply(): PageData = {
+  inline def apply(): PageData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageData]
   }
   
-  @scala.inline
-  implicit class PageDataMutableBuilder[Self <: PageData] (val x: Self) extends AnyVal {
+  extension [Self <: PageData](x: Self) {
     
-    @scala.inline
-    def setClassNotebookPageSource(value: String): Self = StObject.set(x, "classNotebookPageSource", value.asInstanceOf[js.Any])
+    inline def setClassNotebookPageSource(value: String): Self = StObject.set(x, "classNotebookPageSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNotebookPageSourceUndefined: Self = StObject.set(x, "classNotebookPageSource", js.undefined)
+    inline def setClassNotebookPageSourceUndefined: Self = StObject.set(x, "classNotebookPageSource", js.undefined)
     
-    @scala.inline
-    def setClientUrl(value: String): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
+    inline def setClientUrl(value: String): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
+    inline def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
     
-    @scala.inline
-    def setContents(value: js.Array[PageContentData]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[PageContentData]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setContentsVarargs(value: PageContentData*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: PageContentData*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInkAnalysisOrNull(value: InkAnalysisData): Self = StObject.set(x, "inkAnalysisOrNull", value.asInstanceOf[js.Any])
+    inline def setInkAnalysisOrNull(value: InkAnalysisData): Self = StObject.set(x, "inkAnalysisOrNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkAnalysisOrNullUndefined: Self = StObject.set(x, "inkAnalysisOrNull", js.undefined)
+    inline def setInkAnalysisOrNullUndefined: Self = StObject.set(x, "inkAnalysisOrNull", js.undefined)
     
-    @scala.inline
-    def setPageLevel(value: Double): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
+    inline def setPageLevel(value: Double): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLevelUndefined: Self = StObject.set(x, "pageLevel", js.undefined)
+    inline def setPageLevelUndefined: Self = StObject.set(x, "pageLevel", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+    inline def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+    inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

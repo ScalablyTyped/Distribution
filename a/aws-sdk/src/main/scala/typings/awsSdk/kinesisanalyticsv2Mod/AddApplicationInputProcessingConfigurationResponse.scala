@@ -28,37 +28,27 @@ trait AddApplicationInputProcessingConfigurationResponse extends StObject {
 }
 object AddApplicationInputProcessingConfigurationResponse {
   
-  @scala.inline
-  def apply(): AddApplicationInputProcessingConfigurationResponse = {
+  inline def apply(): AddApplicationInputProcessingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddApplicationInputProcessingConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class AddApplicationInputProcessingConfigurationResponseMutableBuilder[Self <: AddApplicationInputProcessingConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationInputProcessingConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
+    inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
+    inline def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
     
-    @scala.inline
-    def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
+    inline def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
     
-    @scala.inline
-    def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputIdUndefined: Self = StObject.set(x, "InputId", js.undefined)
+    inline def setInputIdUndefined: Self = StObject.set(x, "InputId", js.undefined)
     
-    @scala.inline
-    def setInputProcessingConfigurationDescription(value: InputProcessingConfigurationDescription): Self = StObject.set(x, "InputProcessingConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setInputProcessingConfigurationDescription(value: InputProcessingConfigurationDescription): Self = StObject.set(x, "InputProcessingConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputProcessingConfigurationDescriptionUndefined: Self = StObject.set(x, "InputProcessingConfigurationDescription", js.undefined)
+    inline def setInputProcessingConfigurationDescriptionUndefined: Self = StObject.set(x, "InputProcessingConfigurationDescription", js.undefined)
   }
 }

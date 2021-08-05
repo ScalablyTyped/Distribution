@@ -63,42 +63,27 @@ object mod {
     @JSImport("msgpack-lite", "codec.preset")
     @js.native
     def preset: Codec_ = js.native
-    @scala.inline
-    def preset_=(x: Codec_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preset")(x.asInstanceOf[js.Any])
+    inline def preset_=(x: Codec_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preset")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createCodec(): Codec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodec")().asInstanceOf[Codec_]
-  @scala.inline
-  def createCodec(options: CodecOptions): Codec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodec")(options.asInstanceOf[js.Any]).asInstanceOf[Codec_]
+  inline def createCodec(): Codec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodec")().asInstanceOf[Codec_]
+  inline def createCodec(options: CodecOptions): Codec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodec")(options.asInstanceOf[js.Any]).asInstanceOf[Codec_]
   
-  @scala.inline
-  def createDecodeStream(): DecodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecodeStream")().asInstanceOf[DecodeStream]
-  @scala.inline
-  def createDecodeStream(options: DecoderOptions & TransformOptions): DecodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecodeStream")(options.asInstanceOf[js.Any]).asInstanceOf[DecodeStream]
+  inline def createDecodeStream(): DecodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecodeStream")().asInstanceOf[DecodeStream]
+  inline def createDecodeStream(options: DecoderOptions & TransformOptions): DecodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecodeStream")(options.asInstanceOf[js.Any]).asInstanceOf[DecodeStream]
   
-  @scala.inline
-  def createEncodeStream(): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")().asInstanceOf[EncodeStream]
-  @scala.inline
-  def createEncodeStream(options: EncoderOptions & TransformOptions): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")(options.asInstanceOf[js.Any]).asInstanceOf[EncodeStream]
+  inline def createEncodeStream(): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")().asInstanceOf[EncodeStream]
+  inline def createEncodeStream(options: EncoderOptions & TransformOptions): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")(options.asInstanceOf[js.Any]).asInstanceOf[EncodeStream]
   
-  @scala.inline
-  def decode(input: js.Array[Double]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def decode(input: js.Array[Double], options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def decode(input: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def decode(input: Buffer, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def decode(input: Uint8Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def decode(input: Uint8Array, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def decode(input: js.Array[Double]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def decode(input: js.Array[Double], options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def decode(input: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def decode(input: Buffer, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def decode(input: Uint8Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def decode(input: Uint8Array, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def encode(input: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def encode(input: js.Any, options: EncoderOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encode(input: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encode(input: js.Any, options: EncoderOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   trait CodecOptions extends StObject {
     
@@ -152,56 +137,40 @@ object mod {
   }
   object CodecOptions {
     
-    @scala.inline
-    def apply(): CodecOptions = {
+    inline def apply(): CodecOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CodecOptions]
     }
     
-    @scala.inline
-    implicit class CodecOptionsMutableBuilder[Self <: CodecOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CodecOptions](x: Self) {
       
-      @scala.inline
-      def setBinarraybuffer(value: Boolean): Self = StObject.set(x, "binarraybuffer", value.asInstanceOf[js.Any])
+      inline def setBinarraybuffer(value: Boolean): Self = StObject.set(x, "binarraybuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinarraybufferUndefined: Self = StObject.set(x, "binarraybuffer", js.undefined)
+      inline def setBinarraybufferUndefined: Self = StObject.set(x, "binarraybuffer", js.undefined)
       
-      @scala.inline
-      def setInt64(value: Boolean): Self = StObject.set(x, "int64", value.asInstanceOf[js.Any])
+      inline def setInt64(value: Boolean): Self = StObject.set(x, "int64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt64Undefined: Self = StObject.set(x, "int64", js.undefined)
+      inline def setInt64Undefined: Self = StObject.set(x, "int64", js.undefined)
       
-      @scala.inline
-      def setPreset(value: Boolean): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: Boolean): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+      inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+      inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
       
-      @scala.inline
-      def setUint8array(value: Boolean): Self = StObject.set(x, "uint8array", value.asInstanceOf[js.Any])
+      inline def setUint8array(value: Boolean): Self = StObject.set(x, "uint8array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUint8arrayUndefined: Self = StObject.set(x, "uint8array", js.undefined)
+      inline def setUint8arrayUndefined: Self = StObject.set(x, "uint8array", js.undefined)
       
-      @scala.inline
-      def setUsemap(value: Boolean): Self = StObject.set(x, "usemap", value.asInstanceOf[js.Any])
+      inline def setUsemap(value: Boolean): Self = StObject.set(x, "usemap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsemapUndefined: Self = StObject.set(x, "usemap", js.undefined)
+      inline def setUsemapUndefined: Self = StObject.set(x, "usemap", js.undefined)
       
-      @scala.inline
-      def setUseraw(value: Boolean): Self = StObject.set(x, "useraw", value.asInstanceOf[js.Any])
+      inline def setUseraw(value: Boolean): Self = StObject.set(x, "useraw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserawUndefined: Self = StObject.set(x, "useraw", js.undefined)
+      inline def setUserawUndefined: Self = StObject.set(x, "useraw", js.undefined)
     }
   }
   
@@ -230,8 +199,7 @@ object mod {
   }
   object Codec_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addExtPacker: (Double, Instantiable1[/* args (repeated) */ js.Any, js.Any], js.Function1[js.Any, Buffer | Uint8Array]) => Unit,
       addExtUnpacker: (Double, js.Function1[/* data */ Buffer | Uint8Array, js.Any]) => Unit
     ): Codec_ = {
@@ -239,16 +207,13 @@ object mod {
       __obj.asInstanceOf[Codec_]
     }
     
-    @scala.inline
-    implicit class Codec_MutableBuilder[Self <: Codec_] (val x: Self) extends AnyVal {
+    extension [Self <: Codec_](x: Self) {
       
-      @scala.inline
-      def setAddExtPacker(
+      inline def setAddExtPacker(
         value: (Double, Instantiable1[/* args (repeated) */ js.Any, js.Any], js.Function1[js.Any, Buffer | Uint8Array]) => Unit
       ): Self = StObject.set(x, "addExtPacker", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddExtUnpacker(value: (Double, js.Function1[/* data */ Buffer | Uint8Array, js.Any]) => Unit): Self = StObject.set(x, "addExtUnpacker", js.Any.fromFunction2(value))
+      inline def setAddExtUnpacker(value: (Double, js.Function1[/* data */ Buffer | Uint8Array, js.Any]) => Unit): Self = StObject.set(x, "addExtUnpacker", js.Any.fromFunction2(value))
     }
   }
   
@@ -264,20 +229,16 @@ object mod {
   }
   object DecoderOptions {
     
-    @scala.inline
-    def apply(): DecoderOptions = {
+    inline def apply(): DecoderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecoderOptions]
     }
     
-    @scala.inline
-    implicit class DecoderOptionsMutableBuilder[Self <: DecoderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DecoderOptions](x: Self) {
       
-      @scala.inline
-      def setCodec(value: Codec_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+      inline def setCodec(value: Codec_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+      inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     }
   }
   
@@ -321,8 +282,7 @@ object mod {
   }
   object Encoder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bufferish: js.Any,
       encode: js.Any => Unit,
       end: js.Any => Unit,
@@ -343,53 +303,37 @@ object mod {
       __obj.asInstanceOf[Encoder]
     }
     
-    @scala.inline
-    implicit class EncoderMutableBuilder[Self <: Encoder] (val x: Self) extends AnyVal {
+    extension [Self <: Encoder](x: Self) {
       
-      @scala.inline
-      def setBufferish(value: js.Any): Self = StObject.set(x, "bufferish", value.asInstanceOf[js.Any])
+      inline def setBufferish(value: js.Any): Self = StObject.set(x, "bufferish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncode(value: js.Any => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Any => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnd(value: js.Any => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEnd(value: js.Any => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFetch(value: () => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
+      inline def setFetch(value: () => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
+      inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinBufferSize(value: Double): Self = StObject.set(x, "minBufferSize", value.asInstanceOf[js.Any])
+      inline def setMinBufferSize(value: Double): Self = StObject.set(x, "minBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPull(value: () => Double): Self = StObject.set(x, "pull", js.Any.fromFunction0(value))
+      inline def setPull(value: () => Double): Self = StObject.set(x, "pull", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRead(value: () => Double): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => Double): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReserve(value: Double => Double): Self = StObject.set(x, "reserve", js.Any.fromFunction1(value))
+      inline def setReserve(value: Double => Double): Self = StObject.set(x, "reserve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSend(value: Buffer => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: Buffer => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -399,20 +343,16 @@ object mod {
   }
   object EncoderOptions {
     
-    @scala.inline
-    def apply(): EncoderOptions = {
+    inline def apply(): EncoderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncoderOptions]
     }
     
-    @scala.inline
-    implicit class EncoderOptionsMutableBuilder[Self <: EncoderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EncoderOptions](x: Self) {
       
-      @scala.inline
-      def setCodec(value: Codec_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+      inline def setCodec(value: Codec_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+      inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     }
   }
 }

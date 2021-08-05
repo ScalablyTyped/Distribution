@@ -42,27 +42,19 @@ object pathSpecMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(pathspec: String): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
-    @scala.inline
-    def create(pathspec: js.Array[String]): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
-    @scala.inline
-    def create(pathspec: Strarray): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
+    inline def create(pathspec: String): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
+    inline def create(pathspec: js.Array[String]): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
+    inline def create(pathspec: Strarray): Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[Pathspec]
     
-    @scala.inline
-    def matchListDiffEntry(m: js.Any, pos: Double): DiffDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListDiffEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[DiffDelta]
+    inline def matchListDiffEntry(m: js.Any, pos: Double): DiffDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListDiffEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[DiffDelta]
     
-    @scala.inline
-    def matchListEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def matchListEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def matchListEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def matchListEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def matchListFailedEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def matchListFailedEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def matchListFailedEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def matchListFailedEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -76,26 +68,19 @@ object pathSpecMod {
     trait FLAG extends StObject
     object FLAG {
       
-      @scala.inline
-      def DEFAULT: `0` = 0.asInstanceOf[`0`]
+      inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def FAILURES_ONLY: `32` = 32.asInstanceOf[`32`]
+      inline def FAILURES_ONLY: `32` = 32.asInstanceOf[`32`]
       
-      @scala.inline
-      def FIND_FAILURES: `16` = 16.asInstanceOf[`16`]
+      inline def FIND_FAILURES: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
+      inline def IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def NO_GLOB: `4` = 4.asInstanceOf[`4`]
+      inline def NO_GLOB: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def NO_MATCH_ERROR: `8` = 8.asInstanceOf[`8`]
+      inline def NO_MATCH_ERROR: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def USE_CASE: `2` = 2.asInstanceOf[`2`]
+      inline def USE_CASE: `2` = 2.asInstanceOf[`2`]
     }
   }
 }

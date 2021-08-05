@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommandLocation extends StObject
 object CommandLocation {
   
-  @scala.inline
-  def All: `268435455` = 268435455.asInstanceOf[`268435455`]
+  inline def All: `268435455` = 268435455.asInstanceOf[`268435455`]
   
-  @scala.inline
-  def ContextMenu: `2` = 2.asInstanceOf[`2`]
+  inline def ContextMenu: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def MainMenu: `1` = 1.asInstanceOf[`1`]
+  inline def MainMenu: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def TaskPane: `4` = 4.asInstanceOf[`4`]
+  inline def TaskPane: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Undefined: `0` = 0.asInstanceOf[`0`]
+  inline def Undefined: `0` = 0.asInstanceOf[`0`]
 }

@@ -13,9 +13,9 @@ class CheckboxControlValueAccessor protected ()
      with ControlValueAccessor {
   def this(_renderer: Renderer2, _elementRef: ElementRef[js.Any]) = this()
   
-  var _elementRef: js.Any = js.native
+  /* private */ var _elementRef: js.Any = js.native
   
-  var _renderer: js.Any = js.native
+  /* private */ var _renderer: js.Any = js.native
   
   /**
     * The registered callback function called when a change event occurs on the input element.

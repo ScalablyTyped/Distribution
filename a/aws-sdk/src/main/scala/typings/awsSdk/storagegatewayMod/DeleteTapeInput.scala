@@ -23,25 +23,19 @@ trait DeleteTapeInput extends StObject {
 }
 object DeleteTapeInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN, TapeARN: TapeARN): DeleteTapeInput = {
+  inline def apply(GatewayARN: GatewayARN, TapeARN: TapeARN): DeleteTapeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], TapeARN = TapeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTapeInput]
   }
   
-  @scala.inline
-  implicit class DeleteTapeInputMutableBuilder[Self <: DeleteTapeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTapeInput](x: Self) {
     
-    @scala.inline
-    def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
+    inline def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
+    inline def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
   }
 }

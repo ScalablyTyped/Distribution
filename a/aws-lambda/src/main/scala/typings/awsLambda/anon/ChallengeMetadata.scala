@@ -15,8 +15,7 @@ trait ChallengeMetadata extends StObject {
 }
 object ChallengeMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     challengeMetadata: String,
     privateChallengeParameters: StringMap,
     publicChallengeParameters: StringMap
@@ -25,16 +24,12 @@ object ChallengeMetadata {
     __obj.asInstanceOf[ChallengeMetadata]
   }
   
-  @scala.inline
-  implicit class ChallengeMetadataMutableBuilder[Self <: ChallengeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ChallengeMetadata](x: Self) {
     
-    @scala.inline
-    def setChallengeMetadata(value: String): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
+    inline def setChallengeMetadata(value: String): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateChallengeParameters(value: StringMap): Self = StObject.set(x, "privateChallengeParameters", value.asInstanceOf[js.Any])
+    inline def setPrivateChallengeParameters(value: StringMap): Self = StObject.set(x, "privateChallengeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicChallengeParameters(value: StringMap): Self = StObject.set(x, "publicChallengeParameters", value.asInstanceOf[js.Any])
+    inline def setPublicChallengeParameters(value: StringMap): Self = StObject.set(x, "publicChallengeParameters", value.asInstanceOf[js.Any])
   }
 }

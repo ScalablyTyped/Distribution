@@ -13,19 +13,15 @@ trait DisassociateRoleFromGroupResponse extends StObject {
 }
 object DisassociateRoleFromGroupResponse {
   
-  @scala.inline
-  def apply(): DisassociateRoleFromGroupResponse = {
+  inline def apply(): DisassociateRoleFromGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateRoleFromGroupResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateRoleFromGroupResponseMutableBuilder[Self <: DisassociateRoleFromGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateRoleFromGroupResponse](x: Self) {
     
-    @scala.inline
-    def setDisassociatedAt(value: string): Self = StObject.set(x, "DisassociatedAt", value.asInstanceOf[js.Any])
+    inline def setDisassociatedAt(value: string): Self = StObject.set(x, "DisassociatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociatedAtUndefined: Self = StObject.set(x, "DisassociatedAt", js.undefined)
+    inline def setDisassociatedAtUndefined: Self = StObject.set(x, "DisassociatedAt", js.undefined)
   }
 }

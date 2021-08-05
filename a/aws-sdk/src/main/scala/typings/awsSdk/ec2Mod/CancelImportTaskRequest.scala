@@ -23,31 +23,23 @@ trait CancelImportTaskRequest extends StObject {
 }
 object CancelImportTaskRequest {
   
-  @scala.inline
-  def apply(): CancelImportTaskRequest = {
+  inline def apply(): CancelImportTaskRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelImportTaskRequest]
   }
   
-  @scala.inline
-  implicit class CancelImportTaskRequestMutableBuilder[Self <: CancelImportTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelImportTaskRequest](x: Self) {
     
-    @scala.inline
-    def setCancelReason(value: String): Self = StObject.set(x, "CancelReason", value.asInstanceOf[js.Any])
+    inline def setCancelReason(value: String): Self = StObject.set(x, "CancelReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelReasonUndefined: Self = StObject.set(x, "CancelReason", js.undefined)
+    inline def setCancelReasonUndefined: Self = StObject.set(x, "CancelReason", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setImportTaskId(value: ImportTaskId): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
+    inline def setImportTaskId(value: ImportTaskId): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTaskIdUndefined: Self = StObject.set(x, "ImportTaskId", js.undefined)
+    inline def setImportTaskIdUndefined: Self = StObject.set(x, "ImportTaskId", js.undefined)
   }
 }

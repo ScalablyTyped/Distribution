@@ -14,19 +14,15 @@ trait HeartbeatEvent
 }
 object HeartbeatEvent {
   
-  @scala.inline
-  def apply(beat: Double => Unit, timeout: () => Unit): HeartbeatEvent = {
+  inline def apply(beat: Double => Unit, timeout: () => Unit): HeartbeatEvent = {
     val __obj = js.Dynamic.literal(beat = js.Any.fromFunction1(beat), timeout = js.Any.fromFunction0(timeout))
     __obj.asInstanceOf[HeartbeatEvent]
   }
   
-  @scala.inline
-  implicit class HeartbeatEventMutableBuilder[Self <: HeartbeatEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HeartbeatEvent](x: Self) {
     
-    @scala.inline
-    def setBeat(value: Double => Unit): Self = StObject.set(x, "beat", js.Any.fromFunction1(value))
+    inline def setBeat(value: Double => Unit): Self = StObject.set(x, "beat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeout(value: () => Unit): Self = StObject.set(x, "timeout", js.Any.fromFunction0(value))
+    inline def setTimeout(value: () => Unit): Self = StObject.set(x, "timeout", js.Any.fromFunction0(value))
   }
 }

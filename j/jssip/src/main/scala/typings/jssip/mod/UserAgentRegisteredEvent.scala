@@ -10,16 +10,13 @@ trait UserAgentRegisteredEvent extends StObject {
 }
 object UserAgentRegisteredEvent {
   
-  @scala.inline
-  def apply(response: IncomingResponse): UserAgentRegisteredEvent = {
+  inline def apply(response: IncomingResponse): UserAgentRegisteredEvent = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentRegisteredEvent]
   }
   
-  @scala.inline
-  implicit class UserAgentRegisteredEventMutableBuilder[Self <: UserAgentRegisteredEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentRegisteredEvent](x: Self) {
     
-    @scala.inline
-    def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

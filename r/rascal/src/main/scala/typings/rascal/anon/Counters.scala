@@ -10,16 +10,13 @@ trait Counters extends StObject {
 }
 object Counters {
   
-  @scala.inline
-  def apply(counters: InMemory): Counters = {
+  inline def apply(counters: InMemory): Counters = {
     val __obj = js.Dynamic.literal(counters = counters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Counters]
   }
   
-  @scala.inline
-  implicit class CountersMutableBuilder[Self <: Counters] (val x: Self) extends AnyVal {
+  extension [Self <: Counters](x: Self) {
     
-    @scala.inline
-    def setCounters(value: InMemory): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
+    inline def setCounters(value: InMemory): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
   }
 }

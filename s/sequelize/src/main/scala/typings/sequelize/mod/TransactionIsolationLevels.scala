@@ -24,8 +24,7 @@ trait TransactionIsolationLevels extends StObject {
 }
 object TransactionIsolationLevels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     READ_COMMITTED: TransactionIsolationLevelReadCommitted,
     READ_UNCOMMITTED: TransactionIsolationLevelReadUncommitted,
     REPEATABLE_READ: TransactionIsolationLevelRepeatableRead,
@@ -35,19 +34,14 @@ object TransactionIsolationLevels {
     __obj.asInstanceOf[TransactionIsolationLevels]
   }
   
-  @scala.inline
-  implicit class TransactionIsolationLevelsMutableBuilder[Self <: TransactionIsolationLevels] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionIsolationLevels](x: Self) {
     
-    @scala.inline
-    def setREAD_COMMITTED(value: TransactionIsolationLevelReadCommitted): Self = StObject.set(x, "READ_COMMITTED", value.asInstanceOf[js.Any])
+    inline def setREAD_COMMITTED(value: TransactionIsolationLevelReadCommitted): Self = StObject.set(x, "READ_COMMITTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREAD_UNCOMMITTED(value: TransactionIsolationLevelReadUncommitted): Self = StObject.set(x, "READ_UNCOMMITTED", value.asInstanceOf[js.Any])
+    inline def setREAD_UNCOMMITTED(value: TransactionIsolationLevelReadUncommitted): Self = StObject.set(x, "READ_UNCOMMITTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREPEATABLE_READ(value: TransactionIsolationLevelRepeatableRead): Self = StObject.set(x, "REPEATABLE_READ", value.asInstanceOf[js.Any])
+    inline def setREPEATABLE_READ(value: TransactionIsolationLevelRepeatableRead): Self = StObject.set(x, "REPEATABLE_READ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSERIALIZABLE(value: TransactionIsolationLevelSerializable): Self = StObject.set(x, "SERIALIZABLE", value.asInstanceOf[js.Any])
+    inline def setSERIALIZABLE(value: TransactionIsolationLevelSerializable): Self = StObject.set(x, "SERIALIZABLE", value.asInstanceOf[js.Any])
   }
 }

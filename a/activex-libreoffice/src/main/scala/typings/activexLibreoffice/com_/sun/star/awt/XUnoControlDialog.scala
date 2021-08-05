@@ -22,8 +22,7 @@ trait XUnoControlDialog
      with XDialog2
 object XUnoControlDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XInterface,
     Controls: SafeArray[XControl],
     Model: XControlModel,

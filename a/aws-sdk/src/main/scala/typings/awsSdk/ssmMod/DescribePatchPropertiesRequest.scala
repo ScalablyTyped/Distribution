@@ -33,37 +33,27 @@ trait DescribePatchPropertiesRequest extends StObject {
 }
 object DescribePatchPropertiesRequest {
   
-  @scala.inline
-  def apply(OperatingSystem: OperatingSystem, Property: PatchProperty): DescribePatchPropertiesRequest = {
+  inline def apply(OperatingSystem: OperatingSystem, Property: PatchProperty): DescribePatchPropertiesRequest = {
     val __obj = js.Dynamic.literal(OperatingSystem = OperatingSystem.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePatchPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class DescribePatchPropertiesRequestMutableBuilder[Self <: DescribePatchPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePatchPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchSet(value: PatchSet): Self = StObject.set(x, "PatchSet", value.asInstanceOf[js.Any])
+    inline def setPatchSet(value: PatchSet): Self = StObject.set(x, "PatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchSetUndefined: Self = StObject.set(x, "PatchSet", js.undefined)
+    inline def setPatchSetUndefined: Self = StObject.set(x, "PatchSet", js.undefined)
     
-    @scala.inline
-    def setProperty(value: PatchProperty): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: PatchProperty): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
   }
 }

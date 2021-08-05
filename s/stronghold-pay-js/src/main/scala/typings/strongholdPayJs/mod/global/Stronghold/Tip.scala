@@ -23,8 +23,7 @@ trait Tip extends StObject {
 }
 object Tip {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: Double,
     beneficiary_name: String,
     charge_id: String,
@@ -36,31 +35,22 @@ object Tip {
     __obj.asInstanceOf[Tip]
   }
   
-  @scala.inline
-  implicit class TipMutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
+  extension [Self <: Tip](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeneficiary_name(value: String): Self = StObject.set(x, "beneficiary_name", value.asInstanceOf[js.Any])
+    inline def setBeneficiary_name(value: String): Self = StObject.set(x, "beneficiary_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharge_id(value: String): Self = StObject.set(x, "charge_id", value.asInstanceOf[js.Any])
+    inline def setCharge_id(value: String): Self = StObject.set(x, "charge_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Displaymessage): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Displaymessage): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_source_id(value: String): Self = StObject.set(x, "payment_source_id", value.asInstanceOf[js.Any])
+    inline def setPayment_source_id(value: String): Self = StObject.set(x, "payment_source_id", value.asInstanceOf[js.Any])
   }
 }

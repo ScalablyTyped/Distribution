@@ -15,19 +15,15 @@ trait RemoteSystemConnectionRequest extends StObject {
 }
 object RemoteSystemConnectionRequest {
   
-  @scala.inline
-  def apply(remoteSystem: RemoteSystem, remoteSystemApp: RemoteSystemApp): RemoteSystemConnectionRequest = {
+  inline def apply(remoteSystem: RemoteSystem, remoteSystemApp: RemoteSystemApp): RemoteSystemConnectionRequest = {
     val __obj = js.Dynamic.literal(remoteSystem = remoteSystem.asInstanceOf[js.Any], remoteSystemApp = remoteSystemApp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteSystemConnectionRequest]
   }
   
-  @scala.inline
-  implicit class RemoteSystemConnectionRequestMutableBuilder[Self <: RemoteSystemConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setRemoteSystem(value: RemoteSystem): Self = StObject.set(x, "remoteSystem", value.asInstanceOf[js.Any])
+    inline def setRemoteSystem(value: RemoteSystem): Self = StObject.set(x, "remoteSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteSystemApp(value: RemoteSystemApp): Self = StObject.set(x, "remoteSystemApp", value.asInstanceOf[js.Any])
+    inline def setRemoteSystemApp(value: RemoteSystemApp): Self = StObject.set(x, "remoteSystemApp", value.asInstanceOf[js.Any])
   }
 }

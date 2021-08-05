@@ -18,22 +18,17 @@ trait MobileBroadbandDeviceServiceInformation extends StObject {
 }
 object MobileBroadbandDeviceServiceInformation {
   
-  @scala.inline
-  def apply(deviceServiceId: String, isDataReadSupported: Boolean, isDataWriteSupported: Boolean): MobileBroadbandDeviceServiceInformation = {
+  inline def apply(deviceServiceId: String, isDataReadSupported: Boolean, isDataWriteSupported: Boolean): MobileBroadbandDeviceServiceInformation = {
     val __obj = js.Dynamic.literal(deviceServiceId = deviceServiceId.asInstanceOf[js.Any], isDataReadSupported = isDataReadSupported.asInstanceOf[js.Any], isDataWriteSupported = isDataWriteSupported.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandDeviceServiceInformation]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandDeviceServiceInformationMutableBuilder[Self <: MobileBroadbandDeviceServiceInformation] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandDeviceServiceInformation](x: Self) {
     
-    @scala.inline
-    def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
+    inline def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDataReadSupported(value: Boolean): Self = StObject.set(x, "isDataReadSupported", value.asInstanceOf[js.Any])
+    inline def setIsDataReadSupported(value: Boolean): Self = StObject.set(x, "isDataReadSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDataWriteSupported(value: Boolean): Self = StObject.set(x, "isDataWriteSupported", value.asInstanceOf[js.Any])
+    inline def setIsDataWriteSupported(value: Boolean): Self = StObject.set(x, "isDataWriteSupported", value.asInstanceOf[js.Any])
   }
 }

@@ -23,38 +23,28 @@ trait EventData extends StObject {
 }
 object EventData {
   
-  @scala.inline
-  def apply(event: String, eventIndex: Double, `type`: String, typeIndex: Double): EventData = {
+  inline def apply(event: String, eventIndex: Double, `type`: String, typeIndex: Double): EventData = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], eventIndex = eventIndex.asInstanceOf[js.Any], typeIndex = typeIndex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventData]
   }
   
-  @scala.inline
-  implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+  extension [Self <: EventData](x: Self) {
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventData(value: EventActionJumpUrl | EventActionCall | EventActionEvent): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+    inline def setEventData(value: EventActionJumpUrl | EventActionCall | EventActionEvent): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
+    inline def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
-    @scala.inline
-    def setEventIndex(value: Double): Self = StObject.set(x, "eventIndex", value.asInstanceOf[js.Any])
+    inline def setEventIndex(value: Double): Self = StObject.set(x, "eventIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeData(value: EventTriggerEvent): Self = StObject.set(x, "typeData", value.asInstanceOf[js.Any])
+    inline def setTypeData(value: EventTriggerEvent): Self = StObject.set(x, "typeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeDataUndefined: Self = StObject.set(x, "typeData", js.undefined)
+    inline def setTypeDataUndefined: Self = StObject.set(x, "typeData", js.undefined)
     
-    @scala.inline
-    def setTypeIndex(value: Double): Self = StObject.set(x, "typeIndex", value.asInstanceOf[js.Any])
+    inline def setTypeIndex(value: Double): Self = StObject.set(x, "typeIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait DescribeKeyRequest extends StObject {
 }
 object DescribeKeyRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType): DescribeKeyRequest = {
+  inline def apply(KeyId: KeyIdType): DescribeKeyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeKeyRequest]
   }
   
-  @scala.inline
-  implicit class DescribeKeyRequestMutableBuilder[Self <: DescribeKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeKeyRequest](x: Self) {
     
-    @scala.inline
-    def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
+    inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
+    inline def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
     
-    @scala.inline
-    def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
+    inline def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

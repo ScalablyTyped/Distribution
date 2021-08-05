@@ -17,37 +17,27 @@ trait MediaTypeObject extends StObject {
 }
 object MediaTypeObject {
   
-  @scala.inline
-  def apply(): MediaTypeObject = {
+  inline def apply(): MediaTypeObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaTypeObject]
   }
   
-  @scala.inline
-  implicit class MediaTypeObjectMutableBuilder[Self <: MediaTypeObject] (val x: Self) extends AnyVal {
+  extension [Self <: MediaTypeObject](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: StringDictionary[EncodingObject]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: StringDictionary[EncodingObject]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
+    inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
-    @scala.inline
-    def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    @scala.inline
-    def setSchema(value: ReferenceObject | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: ReferenceObject | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

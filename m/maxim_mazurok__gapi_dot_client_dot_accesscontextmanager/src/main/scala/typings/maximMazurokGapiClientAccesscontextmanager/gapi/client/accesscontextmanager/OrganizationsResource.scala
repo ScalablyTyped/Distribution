@@ -10,16 +10,13 @@ trait OrganizationsResource extends StObject {
 }
 object OrganizationsResource {
   
-  @scala.inline
-  def apply(gcpUserAccessBindings: GcpUserAccessBindingsResource): OrganizationsResource = {
+  inline def apply(gcpUserAccessBindings: GcpUserAccessBindingsResource): OrganizationsResource = {
     val __obj = js.Dynamic.literal(gcpUserAccessBindings = gcpUserAccessBindings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationsResource]
   }
   
-  @scala.inline
-  implicit class OrganizationsResourceMutableBuilder[Self <: OrganizationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationsResource](x: Self) {
     
-    @scala.inline
-    def setGcpUserAccessBindings(value: GcpUserAccessBindingsResource): Self = StObject.set(x, "gcpUserAccessBindings", value.asInstanceOf[js.Any])
+    inline def setGcpUserAccessBindings(value: GcpUserAccessBindingsResource): Self = StObject.set(x, "gcpUserAccessBindings", value.asInstanceOf[js.Any])
   }
 }

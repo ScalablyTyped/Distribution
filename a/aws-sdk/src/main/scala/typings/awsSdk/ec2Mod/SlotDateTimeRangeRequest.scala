@@ -18,19 +18,15 @@ trait SlotDateTimeRangeRequest extends StObject {
 }
 object SlotDateTimeRangeRequest {
   
-  @scala.inline
-  def apply(EarliestTime: DateTime, LatestTime: DateTime): SlotDateTimeRangeRequest = {
+  inline def apply(EarliestTime: DateTime, LatestTime: DateTime): SlotDateTimeRangeRequest = {
     val __obj = js.Dynamic.literal(EarliestTime = EarliestTime.asInstanceOf[js.Any], LatestTime = LatestTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotDateTimeRangeRequest]
   }
   
-  @scala.inline
-  implicit class SlotDateTimeRangeRequestMutableBuilder[Self <: SlotDateTimeRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SlotDateTimeRangeRequest](x: Self) {
     
-    @scala.inline
-    def setEarliestTime(value: DateTime): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
+    inline def setEarliestTime(value: DateTime): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestTime(value: DateTime): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
+    inline def setLatestTime(value: DateTime): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
   }
 }

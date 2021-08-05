@@ -29,48 +29,34 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(ethereumProvider: js.Any): js.Promise[Box] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ethereumProvider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Box]]
+  inline def create(ethereumProvider: js.Any): js.Promise[Box] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ethereumProvider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Box]]
   
   /* static member */
-  @scala.inline
-  def getConfig(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
-  @scala.inline
-  def getConfig(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def getConfig(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def getConfig(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @scala.inline
-  def getProfile(address: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def getProfile(address: String, opts: Blocklist): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def getProfile(address: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getProfile(address: String, opts: Blocklist): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /* static member */
-  @scala.inline
-  def getProfiles(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
-  @scala.inline
-  def getProfiles(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def getProfiles(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def getProfiles(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @scala.inline
-  def getSpace(address: String, name: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
-  @scala.inline
-  def getSpace(address: String, name: String, opts: BlocklistMetadata): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def getSpace(address: String, name: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def getSpace(address: String, name: String, opts: BlocklistMetadata): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @scala.inline
-  def getThread(space: String, name: String, firstModerator: String, members: Boolean): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
-  @scala.inline
-  def getThread(space: String, name: String, firstModerator: String, members: Boolean, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
+  inline def getThread(space: String, name: String, firstModerator: String, members: Boolean): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
+  inline def getThread(space: String, name: String, firstModerator: String, members: Boolean, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
   
   /* static member */
-  @scala.inline
-  def getThreadByAddress(address: String): js.Promise[js.Array[ThreadPost]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getThreadByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
-  @scala.inline
-  def getThreadByAddress(address: String, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThreadByAddress")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
+  inline def getThreadByAddress(address: String): js.Promise[js.Array[ThreadPost]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getThreadByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
+  inline def getThreadByAddress(address: String, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThreadByAddress")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
   
   /* static member */
-  @scala.inline
-  def getVerifiedAccounts(profile: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerifiedAccounts")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def getVerifiedAccounts(profile: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerifiedAccounts")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
   object idUtils {
@@ -79,41 +65,29 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isClaim(claim: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isClaim")(claim.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def isClaim(claim: String, opts: Audience): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isClaim")(claim.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def isClaim(claim: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isClaim")(claim.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def isClaim(claim: String, opts: Audience): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isClaim")(claim.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def isMuportDID(address: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMuportDID")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def isMuportDID(address: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMuportDID")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def verifyClaim(claim: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyClaim")(claim.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
-    @scala.inline
-    def verifyClaim(claim: String, opts: Audience): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyClaim")(claim.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+    inline def verifyClaim(claim: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyClaim")(claim.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+    inline def verifyClaim(claim: String, opts: Audience): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyClaim")(claim.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   }
   
   /* static member */
-  @scala.inline
-  def isLoggedIn(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedIn")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLoggedIn(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedIn")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def listSpaces(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
-  @scala.inline
-  def listSpaces(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def listSpaces(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def listSpaces(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @scala.inline
-  def openBox(address: String, ethereumProvider: js.Any): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
-  @scala.inline
-  def openBox(address: String, ethereumProvider: js.Any, opts: AddressServer): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
+  inline def openBox(address: String, ethereumProvider: js.Any): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
+  inline def openBox(address: String, ethereumProvider: js.Any, opts: AddressServer): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
   
   /* static member */
-  @scala.inline
-  def profileGraphQL(query: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
-  @scala.inline
-  def profileGraphQL(query: js.Object, opts: GraphqlServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def profileGraphQL(query: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def profileGraphQL(query: js.Object, opts: GraphqlServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   @js.native
   trait Box extends StObject {
@@ -154,21 +128,17 @@ object mod {
   }
   object Link {
     
-    @scala.inline
-    def apply(proof: String, `type`: String): Link = {
+    inline def apply(proof: String, `type`: String): Link = {
       val __obj = js.Dynamic.literal(proof = proof.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Link]
     }
     
-    @scala.inline
-    implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+    extension [Self <: Link](x: Self) {
       
-      @scala.inline
-      def setProof(value: String): Self = StObject.set(x, "proof", value.asInstanceOf[js.Any])
+      inline def setProof(value: String): Self = StObject.set(x, "proof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,21 +150,17 @@ object mod {
   }
   object Query {
     
-    @scala.inline
-    def apply(address: String, `type`: String): Query = {
+    inline def apply(address: String, `type`: String): Query = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,26 +219,20 @@ object mod {
   }
   object StorageLog {
     
-    @scala.inline
-    def apply(key: String, op: String, timeStamp: Double, value: js.Any): StorageLog = {
+    inline def apply(key: String, op: String, timeStamp: Double, value: js.Any): StorageLog = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageLog]
     }
     
-    @scala.inline
-    implicit class StorageLogMutableBuilder[Self <: StorageLog] (val x: Self) extends AnyVal {
+    extension [Self <: StorageLog](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -311,26 +271,20 @@ object mod {
   }
   object ThreadPost {
     
-    @scala.inline
-    def apply(author: String, message: js.Any, postId: String, timestamp: Double): ThreadPost = {
+    inline def apply(author: String, message: js.Any, postId: String, timestamp: Double): ThreadPost = {
       val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], postId = postId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThreadPost]
     }
     
-    @scala.inline
-    implicit class ThreadPostMutableBuilder[Self <: ThreadPost] (val x: Self) extends AnyVal {
+    extension [Self <: ThreadPost](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
+      inline def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

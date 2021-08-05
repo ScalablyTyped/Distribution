@@ -23,28 +23,21 @@ trait SchemaListOccurrencesResponse extends StObject {
 }
 object SchemaListOccurrencesResponse {
   
-  @scala.inline
-  def apply(): SchemaListOccurrencesResponse = {
+  inline def apply(): SchemaListOccurrencesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListOccurrencesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListOccurrencesResponseMutableBuilder[Self <: SchemaListOccurrencesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListOccurrencesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setOccurrences(value: js.Array[SchemaOccurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
+    inline def setOccurrences(value: js.Array[SchemaOccurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
+    inline def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
     
-    @scala.inline
-    def setOccurrencesVarargs(value: SchemaOccurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
+    inline def setOccurrencesVarargs(value: SchemaOccurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
   }
 }

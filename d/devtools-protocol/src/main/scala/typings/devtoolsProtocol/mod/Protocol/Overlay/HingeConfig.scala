@@ -25,28 +25,21 @@ trait HingeConfig extends StObject {
 }
 object HingeConfig {
   
-  @scala.inline
-  def apply(rect: Rect): HingeConfig = {
+  inline def apply(rect: Rect): HingeConfig = {
     val __obj = js.Dynamic.literal(rect = rect.asInstanceOf[js.Any])
     __obj.asInstanceOf[HingeConfig]
   }
   
-  @scala.inline
-  implicit class HingeConfigMutableBuilder[Self <: HingeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HingeConfig](x: Self) {
     
-    @scala.inline
-    def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
+    inline def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
+    inline def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
     
-    @scala.inline
-    def setOutlineColor(value: RGBA): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    inline def setOutlineColor(value: RGBA): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+    inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
-    @scala.inline
-    def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asyncEach[T](
+  inline def asyncEach[T](
     array: js.Array[T],
     each: js.Function3[
       /* i */ Double, 
@@ -23,8 +22,7 @@ object mod {
     finish: js.Function1[/* err */ js.UndefOr[Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncEach")(array.asInstanceOf[js.Any], each.asInstanceOf[js.Any], finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def awaitEach[T](
+  inline def awaitEach[T](
     array: js.Array[T],
     each: js.Function3[
       /* i */ Double, 

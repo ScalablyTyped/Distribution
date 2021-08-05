@@ -12,19 +12,15 @@ trait ThemeBreakPoints
 }
 object ThemeBreakPoints {
   
-  @scala.inline
-  def apply(breakpoints: js.Array[Double | String]): ThemeBreakPoints = {
+  inline def apply(breakpoints: js.Array[Double | String]): ThemeBreakPoints = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeBreakPoints]
   }
   
-  @scala.inline
-  implicit class ThemeBreakPointsMutableBuilder[Self <: ThemeBreakPoints] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeBreakPoints](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: js.Array[Double | String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: js.Array[Double | String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointsVarargs(value: (Double | String)*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: (Double | String)*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
   }
 }

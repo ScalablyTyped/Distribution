@@ -11,6 +11,5 @@ object registerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def register(explicitParams: ExplicitParams): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(explicitParams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def register(explicitParams: ExplicitParams): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(explicitParams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
 }

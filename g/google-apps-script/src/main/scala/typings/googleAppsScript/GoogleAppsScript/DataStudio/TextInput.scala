@@ -34,8 +34,7 @@ trait TextInput extends StObject {
 }
 object TextInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setAllowOverride: Boolean => TextInput,
     setHelpText: String => TextInput,
     setId: String => TextInput,
@@ -47,25 +46,18 @@ object TextInput {
     __obj.asInstanceOf[TextInput]
   }
   
-  @scala.inline
-  implicit class TextInputMutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
+  extension [Self <: TextInput](x: Self) {
     
-    @scala.inline
-    def setSetAllowOverride(value: Boolean => TextInput): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
+    inline def setSetAllowOverride(value: Boolean => TextInput): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHelpText(value: String => TextInput): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    inline def setSetHelpText(value: String => TextInput): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetId(value: String => TextInput): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: String => TextInput): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIsDynamic(value: Boolean => TextInput): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
+    inline def setSetIsDynamic(value: Boolean => TextInput): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetName(value: String => TextInput): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => TextInput): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPlaceholder(value: String => TextInput): Self = StObject.set(x, "setPlaceholder", js.Any.fromFunction1(value))
+    inline def setSetPlaceholder(value: String => TextInput): Self = StObject.set(x, "setPlaceholder", js.Any.fromFunction1(value))
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientVerticalGridRowCancelEventArgs
 }
 object ASPxClientVerticalGridRowCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridRowCancelEventArgs = {
+  inline def apply(cancel: Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridRowCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridRowCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridRowCancelEventArgsMutableBuilder[Self <: ASPxClientVerticalGridRowCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridRowCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

@@ -18,17 +18,14 @@ object mediaMediaMod {
   }
   object MediaProps {
     
-    @scala.inline
-    def apply(matches: Boolean): MediaProps = {
+    inline def apply(matches: Boolean): MediaProps = {
       val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaProps]
     }
     
-    @scala.inline
-    implicit class MediaPropsMutableBuilder[Self <: MediaProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaProps](x: Self) {
       
-      @scala.inline
-      def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,43 +33,31 @@ trait CustomerGatewayAssociation extends StObject {
 }
 object CustomerGatewayAssociation {
   
-  @scala.inline
-  def apply(): CustomerGatewayAssociation = {
+  inline def apply(): CustomerGatewayAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerGatewayAssociation]
   }
   
-  @scala.inline
-  implicit class CustomerGatewayAssociationMutableBuilder[Self <: CustomerGatewayAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerGatewayAssociation](x: Self) {
     
-    @scala.inline
-    def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerGatewayArnUndefined: Self = StObject.set(x, "CustomerGatewayArn", js.undefined)
+    inline def setCustomerGatewayArnUndefined: Self = StObject.set(x, "CustomerGatewayArn", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
+    inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
-    @scala.inline
-    def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
+    inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
     
-    @scala.inline
-    def setState(value: CustomerGatewayAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CustomerGatewayAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

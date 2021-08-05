@@ -18,25 +18,19 @@ trait S3Logs extends StObject {
 }
 object S3Logs {
   
-  @scala.inline
-  def apply(): S3Logs = {
+  inline def apply(): S3Logs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Logs]
   }
   
-  @scala.inline
-  implicit class S3LogsMutableBuilder[Self <: S3Logs] (val x: Self) extends AnyVal {
+  extension [Self <: S3Logs](x: Self) {
     
-    @scala.inline
-    def setS3BucketName(value: NonEmptyString): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: NonEmptyString): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
     
-    @scala.inline
-    def setS3KeyPrefix(value: NonEmptyString): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setS3KeyPrefix(value: NonEmptyString): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+    inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
   }
 }

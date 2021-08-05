@@ -9,20 +9,17 @@ object binaryParserStrings {
   
   @js.native
   sealed trait Next extends StObject
-  @scala.inline
-  def Next: Next = "Next".asInstanceOf[Next]
+  inline def Next: Next = "Next".asInstanceOf[Next]
   
   @js.native
   sealed trait big
     extends StObject
        with Endianness
-  @scala.inline
-  def big: big = "big".asInstanceOf[big]
+  inline def big: big = "big".asInstanceOf[big]
   
   @js.native
   sealed trait little
     extends StObject
        with Endianness
-  @scala.inline
-  def little: little = "little".asInstanceOf[little]
+  inline def little: little = "little".asInstanceOf[little]
 }

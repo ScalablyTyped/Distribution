@@ -344,8 +344,7 @@ trait VirtualRenderer
 }
 object VirtualRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addGutterDecoration: () => Unit,
     adjustWrapLimit: () => Unit,
     characterWidth: Double,
@@ -418,196 +417,132 @@ object VirtualRenderer {
     __obj.asInstanceOf[VirtualRenderer]
   }
   
-  @scala.inline
-  implicit class VirtualRendererMutableBuilder[Self <: VirtualRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualRenderer](x: Self) {
     
-    @scala.inline
-    def setAddGutterDecoration(value: () => Unit): Self = StObject.set(x, "addGutterDecoration", js.Any.fromFunction0(value))
+    inline def setAddGutterDecoration(value: () => Unit): Self = StObject.set(x, "addGutterDecoration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAdjustWrapLimit(value: () => Unit): Self = StObject.set(x, "adjustWrapLimit", js.Any.fromFunction0(value))
+    inline def setAdjustWrapLimit(value: () => Unit): Self = StObject.set(x, "adjustWrapLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCharacterWidth(value: Double): Self = StObject.set(x, "characterWidth", value.asInstanceOf[js.Any])
+    inline def setCharacterWidth(value: Double): Self = StObject.set(x, "characterWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnimatedScroll(value: () => Boolean): Self = StObject.set(x, "getAnimatedScroll", js.Any.fromFunction0(value))
+    inline def setGetAnimatedScroll(value: () => Boolean): Self = StObject.set(x, "getAnimatedScroll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContainerElement(value: () => HTMLElement): Self = StObject.set(x, "getContainerElement", js.Any.fromFunction0(value))
+    inline def setGetContainerElement(value: () => HTMLElement): Self = StObject.set(x, "getContainerElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirstFullyVisibleRow(value: () => Double): Self = StObject.set(x, "getFirstFullyVisibleRow", js.Any.fromFunction0(value))
+    inline def setGetFirstFullyVisibleRow(value: () => Double): Self = StObject.set(x, "getFirstFullyVisibleRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirstVisibleRow(value: () => Double): Self = StObject.set(x, "getFirstVisibleRow", js.Any.fromFunction0(value))
+    inline def setGetFirstVisibleRow(value: () => Double): Self = StObject.set(x, "getFirstVisibleRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHScrollBarAlwaysVisible(value: () => Boolean): Self = StObject.set(x, "getHScrollBarAlwaysVisible", js.Any.fromFunction0(value))
+    inline def setGetHScrollBarAlwaysVisible(value: () => Boolean): Self = StObject.set(x, "getHScrollBarAlwaysVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastFullyVisibleRow(value: () => Double): Self = StObject.set(x, "getLastFullyVisibleRow", js.Any.fromFunction0(value))
+    inline def setGetLastFullyVisibleRow(value: () => Double): Self = StObject.set(x, "getLastFullyVisibleRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastVisibleRow(value: () => Double): Self = StObject.set(x, "getLastVisibleRow", js.Any.fromFunction0(value))
+    inline def setGetLastVisibleRow(value: () => Double): Self = StObject.set(x, "getLastVisibleRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMouseEventTarget(value: () => HTMLElement): Self = StObject.set(x, "getMouseEventTarget", js.Any.fromFunction0(value))
+    inline def setGetMouseEventTarget(value: () => HTMLElement): Self = StObject.set(x, "getMouseEventTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrintMarginColumn(value: () => Boolean): Self = StObject.set(x, "getPrintMarginColumn", js.Any.fromFunction0(value))
+    inline def setGetPrintMarginColumn(value: () => Boolean): Self = StObject.set(x, "getPrintMarginColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollBottomRow(value: () => Double): Self = StObject.set(x, "getScrollBottomRow", js.Any.fromFunction0(value))
+    inline def setGetScrollBottomRow(value: () => Double): Self = StObject.set(x, "getScrollBottomRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollLeft", js.Any.fromFunction0(value))
+    inline def setGetScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollLeft", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollTop(value: () => Double): Self = StObject.set(x, "getScrollTop", js.Any.fromFunction0(value))
+    inline def setGetScrollTop(value: () => Double): Self = StObject.set(x, "getScrollTop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollTopRow(value: () => Double): Self = StObject.set(x, "getScrollTopRow", js.Any.fromFunction0(value))
+    inline def setGetScrollTopRow(value: () => Double): Self = StObject.set(x, "getScrollTopRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowGutter(value: () => Boolean): Self = StObject.set(x, "getShowGutter", js.Any.fromFunction0(value))
+    inline def setGetShowGutter(value: () => Boolean): Self = StObject.set(x, "getShowGutter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowInvisibles(value: () => Boolean): Self = StObject.set(x, "getShowInvisibles", js.Any.fromFunction0(value))
+    inline def setGetShowInvisibles(value: () => Boolean): Self = StObject.set(x, "getShowInvisibles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowPrintMargin(value: () => Boolean): Self = StObject.set(x, "getShowPrintMargin", js.Any.fromFunction0(value))
+    inline def setGetShowPrintMargin(value: () => Boolean): Self = StObject.set(x, "getShowPrintMargin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextAreaContainer(value: () => HTMLElement): Self = StObject.set(x, "getTextAreaContainer", js.Any.fromFunction0(value))
+    inline def setGetTextAreaContainer(value: () => HTMLElement): Self = StObject.set(x, "getTextAreaContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTheme(value: () => String): Self = StObject.set(x, "getTheme", js.Any.fromFunction0(value))
+    inline def setGetTheme(value: () => String): Self = StObject.set(x, "getTheme", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideComposition(value: () => Unit): Self = StObject.set(x, "hideComposition", js.Any.fromFunction0(value))
+    inline def setHideComposition(value: () => Unit): Self = StObject.set(x, "hideComposition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideCursor(value: () => Unit): Self = StObject.set(x, "hideCursor", js.Any.fromFunction0(value))
+    inline def setHideCursor(value: () => Unit): Self = StObject.set(x, "hideCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsScrollableBy(value: (Double, Double) => Boolean): Self = StObject.set(x, "isScrollableBy", js.Any.fromFunction2(value))
+    inline def setIsScrollableBy(value: (Double, Double) => Boolean): Self = StObject.set(x, "isScrollableBy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResize(value: (Boolean, Double, Double, Double) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction4(value))
+    inline def setOnResize(value: (Boolean, Double, Double, Double) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRemoveGutterDecoration(value: () => Unit): Self = StObject.set(x, "removeGutterDecoration", js.Any.fromFunction0(value))
+    inline def setRemoveGutterDecoration(value: () => Unit): Self = StObject.set(x, "removeGutterDecoration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScreenToTextCoordinates(value: (Double, Double) => Unit): Self = StObject.set(x, "screenToTextCoordinates", js.Any.fromFunction2(value))
+    inline def setScreenToTextCoordinates(value: (Double, Double) => Unit): Self = StObject.set(x, "screenToTextCoordinates", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScrollBy(value: (Double, Double) => Unit): Self = StObject.set(x, "scrollBy", js.Any.fromFunction2(value))
+    inline def setScrollBy(value: (Double, Double) => Unit): Self = StObject.set(x, "scrollBy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScrollCursorIntoView(value: () => Unit): Self = StObject.set(x, "scrollCursorIntoView", js.Any.fromFunction0(value))
+    inline def setScrollCursorIntoView(value: () => Unit): Self = StObject.set(x, "scrollCursorIntoView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScrollToLine(value: (Double, Boolean, Boolean, js.Function) => Unit): Self = StObject.set(x, "scrollToLine", js.Any.fromFunction4(value))
+    inline def setScrollToLine(value: (Double, Boolean, Boolean, js.Function) => Unit): Self = StObject.set(x, "scrollToLine", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setScrollToRow(value: Double => Unit): Self = StObject.set(x, "scrollToRow", js.Any.fromFunction1(value))
+    inline def setScrollToRow(value: Double => Unit): Self = StObject.set(x, "scrollToRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollToX(value: Double => Double): Self = StObject.set(x, "scrollToX", js.Any.fromFunction1(value))
+    inline def setScrollToX(value: Double => Double): Self = StObject.set(x, "scrollToX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollToY(value: Double => Double): Self = StObject.set(x, "scrollToY", js.Any.fromFunction1(value))
+    inline def setScrollToY(value: Double => Double): Self = StObject.set(x, "scrollToY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScroller(value: js.Any): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
+    inline def setScroller(value: js.Any): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAnimatedScroll(value: Boolean => Unit): Self = StObject.set(x, "setAnimatedScroll", js.Any.fromFunction1(value))
+    inline def setSetAnimatedScroll(value: Boolean => Unit): Self = StObject.set(x, "setAnimatedScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAnnotations(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "setAnnotations", js.Any.fromFunction1(value))
+    inline def setSetAnnotations(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "setAnnotations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCompositionText(value: String => Unit): Self = StObject.set(x, "setCompositionText", js.Any.fromFunction1(value))
+    inline def setSetCompositionText(value: String => Unit): Self = StObject.set(x, "setCompositionText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHScrollBarAlwaysVisible(value: Boolean => Unit): Self = StObject.set(x, "setHScrollBarAlwaysVisible", js.Any.fromFunction1(value))
+    inline def setSetHScrollBarAlwaysVisible(value: Boolean => Unit): Self = StObject.set(x, "setHScrollBarAlwaysVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPadding(value: Double => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
+    inline def setSetPadding(value: Double => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPrintMarginColumn(value: Boolean => Unit): Self = StObject.set(x, "setPrintMarginColumn", js.Any.fromFunction1(value))
+    inline def setSetPrintMarginColumn(value: Boolean => Unit): Self = StObject.set(x, "setPrintMarginColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScrollMargin(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setScrollMargin", js.Any.fromFunction4(value))
+    inline def setSetScrollMargin(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setScrollMargin", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetSession(value: IEditSession => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction1(value))
+    inline def setSetSession(value: IEditSession => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetShowGutter(value: Boolean => Unit): Self = StObject.set(x, "setShowGutter", js.Any.fromFunction1(value))
+    inline def setSetShowGutter(value: Boolean => Unit): Self = StObject.set(x, "setShowGutter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetShowInvisibles(value: Boolean => Unit): Self = StObject.set(x, "setShowInvisibles", js.Any.fromFunction1(value))
+    inline def setSetShowInvisibles(value: Boolean => Unit): Self = StObject.set(x, "setShowInvisibles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetShowPrintMargin(value: Boolean => Unit): Self = StObject.set(x, "setShowPrintMargin", js.Any.fromFunction1(value))
+    inline def setSetShowPrintMargin(value: Boolean => Unit): Self = StObject.set(x, "setShowPrintMargin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStyle(value: String => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
+    inline def setSetStyle(value: String => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTheme(value: String => Unit): Self = StObject.set(x, "setTheme", js.Any.fromFunction1(value))
+    inline def setSetTheme(value: String => Unit): Self = StObject.set(x, "setTheme", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowComposition(value: Double => Unit): Self = StObject.set(x, "showComposition", js.Any.fromFunction1(value))
+    inline def setShowComposition(value: Double => Unit): Self = StObject.set(x, "showComposition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowCursor(value: () => Unit): Self = StObject.set(x, "showCursor", js.Any.fromFunction0(value))
+    inline def setShowCursor(value: () => Unit): Self = StObject.set(x, "showCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextToScreenCoordinates(value: (Double, Double) => js.Any): Self = StObject.set(x, "textToScreenCoordinates", js.Any.fromFunction2(value))
+    inline def setTextToScreenCoordinates(value: (Double, Double) => js.Any): Self = StObject.set(x, "textToScreenCoordinates", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnsetStyle(value: String => Unit): Self = StObject.set(x, "unsetStyle", js.Any.fromFunction1(value))
+    inline def setUnsetStyle(value: String => Unit): Self = StObject.set(x, "unsetStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateBackMarkers(value: () => Unit): Self = StObject.set(x, "updateBackMarkers", js.Any.fromFunction0(value))
+    inline def setUpdateBackMarkers(value: () => Unit): Self = StObject.set(x, "updateBackMarkers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateBreakpoints(value: () => Unit): Self = StObject.set(x, "updateBreakpoints", js.Any.fromFunction0(value))
+    inline def setUpdateBreakpoints(value: () => Unit): Self = StObject.set(x, "updateBreakpoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateCursor(value: () => Unit): Self = StObject.set(x, "updateCursor", js.Any.fromFunction0(value))
+    inline def setUpdateCursor(value: () => Unit): Self = StObject.set(x, "updateCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateFontSize(value: () => Unit): Self = StObject.set(x, "updateFontSize", js.Any.fromFunction0(value))
+    inline def setUpdateFontSize(value: () => Unit): Self = StObject.set(x, "updateFontSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateFrontMarkers(value: () => Unit): Self = StObject.set(x, "updateFrontMarkers", js.Any.fromFunction0(value))
+    inline def setUpdateFrontMarkers(value: () => Unit): Self = StObject.set(x, "updateFrontMarkers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateFull(value: Boolean => Unit): Self = StObject.set(x, "updateFull", js.Any.fromFunction1(value))
+    inline def setUpdateFull(value: Boolean => Unit): Self = StObject.set(x, "updateFull", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateLines(value: (Double, Double) => Unit): Self = StObject.set(x, "updateLines", js.Any.fromFunction2(value))
+    inline def setUpdateLines(value: (Double, Double) => Unit): Self = StObject.set(x, "updateLines", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateText(value: () => Unit): Self = StObject.set(x, "updateText", js.Any.fromFunction0(value))
+    inline def setUpdateText(value: () => Unit): Self = StObject.set(x, "updateText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisualizeBlur(value: () => Unit): Self = StObject.set(x, "visualizeBlur", js.Any.fromFunction0(value))
+    inline def setVisualizeBlur(value: () => Unit): Self = StObject.set(x, "visualizeBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisualizeFocus(value: () => Unit): Self = StObject.set(x, "visualizeFocus", js.Any.fromFunction0(value))
+    inline def setVisualizeFocus(value: () => Unit): Self = StObject.set(x, "visualizeFocus", js.Any.fromFunction0(value))
   }
 }

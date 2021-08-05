@@ -26,8 +26,7 @@ trait AnonymousAccessor
 }
 object AnonymousAccessor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -37,26 +36,20 @@ object AnonymousAccessor {
     __obj.asInstanceOf[AnonymousAccessor]
   }
   
-  @scala.inline
-  implicit class AnonymousAccessorMutableBuilder[Self <: AnonymousAccessor] (val x: Self) extends AnyVal {
+  extension [Self <: AnonymousAccessor](x: Self) {
     
-    @scala.inline
-    def setGet(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setSet(
+    inline def setSet(
       value: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, AnonymousAccessor]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], AnonymousAccessor]])
     ): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatch(
+    inline def setWatch(
       value: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle
     ): Self = StObject.set(x, "watch", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

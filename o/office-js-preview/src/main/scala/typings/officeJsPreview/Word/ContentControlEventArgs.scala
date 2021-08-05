@@ -40,8 +40,7 @@ trait ContentControlEventArgs extends StObject {
 }
 object ContentControlEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentControl: ContentControl,
     eventType: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | AnnotationAdded | AnnotationChanged | AnnotationDeleted
   ): ContentControlEventArgs = {
@@ -49,14 +48,11 @@ object ContentControlEventArgs {
     __obj.asInstanceOf[ContentControlEventArgs]
   }
   
-  @scala.inline
-  implicit class ContentControlEventArgsMutableBuilder[Self <: ContentControlEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ContentControlEventArgs](x: Self) {
     
-    @scala.inline
-    def setContentControl(value: ContentControl): Self = StObject.set(x, "contentControl", value.asInstanceOf[js.Any])
+    inline def setContentControl(value: ContentControl): Self = StObject.set(x, "contentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventType(
+    inline def setEventType(
       value: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | AnnotationAdded | AnnotationChanged | AnnotationDeleted
     ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
   }

@@ -23,8 +23,7 @@ trait IStreamSocketListener
 }
 object IStreamSocketListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindEndpointAsync: (HostName, String) => IAsyncAction,
     bindServiceNameAsync: String => IAsyncAction,
     close: () => Unit,
@@ -36,22 +35,16 @@ object IStreamSocketListener {
     __obj.asInstanceOf[IStreamSocketListener]
   }
   
-  @scala.inline
-  implicit class IStreamSocketListenerMutableBuilder[Self <: IStreamSocketListener] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamSocketListener](x: Self) {
     
-    @scala.inline
-    def setBindEndpointAsync(value: (HostName, String) => IAsyncAction): Self = StObject.set(x, "bindEndpointAsync", js.Any.fromFunction2(value))
+    inline def setBindEndpointAsync(value: (HostName, String) => IAsyncAction): Self = StObject.set(x, "bindEndpointAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBindServiceNameAsync(value: String => IAsyncAction): Self = StObject.set(x, "bindServiceNameAsync", js.Any.fromFunction1(value))
+    inline def setBindServiceNameAsync(value: String => IAsyncAction): Self = StObject.set(x, "bindServiceNameAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setControl(value: StreamSocketListenerControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: StreamSocketListenerControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInformation(value: StreamSocketListenerInformation): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
+    inline def setInformation(value: StreamSocketListenerInformation): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnconnectionreceived(value: js.Any): Self = StObject.set(x, "onconnectionreceived", value.asInstanceOf[js.Any])
+    inline def setOnconnectionreceived(value: js.Any): Self = StObject.set(x, "onconnectionreceived", value.asInstanceOf[js.Any])
   }
 }

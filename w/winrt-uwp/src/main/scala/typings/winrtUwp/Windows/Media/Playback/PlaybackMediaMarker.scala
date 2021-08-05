@@ -18,22 +18,17 @@ trait PlaybackMediaMarker extends StObject {
 }
 object PlaybackMediaMarker {
   
-  @scala.inline
-  def apply(mediaMarkerType: String, text: String, time: Double): PlaybackMediaMarker = {
+  inline def apply(mediaMarkerType: String, text: String, time: Double): PlaybackMediaMarker = {
     val __obj = js.Dynamic.literal(mediaMarkerType = mediaMarkerType.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackMediaMarker]
   }
   
-  @scala.inline
-  implicit class PlaybackMediaMarkerMutableBuilder[Self <: PlaybackMediaMarker] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackMediaMarker](x: Self) {
     
-    @scala.inline
-    def setMediaMarkerType(value: String): Self = StObject.set(x, "mediaMarkerType", value.asInstanceOf[js.Any])
+    inline def setMediaMarkerType(value: String): Self = StObject.set(x, "mediaMarkerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

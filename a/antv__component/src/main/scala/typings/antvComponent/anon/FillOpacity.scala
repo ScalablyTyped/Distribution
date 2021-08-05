@@ -12,19 +12,15 @@ trait FillOpacity extends StObject {
 }
 object FillOpacity {
   
-  @scala.inline
-  def apply(fill: String, opacity: Double): FillOpacity = {
+  inline def apply(fill: String, opacity: Double): FillOpacity = {
     val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillOpacity]
   }
   
-  @scala.inline
-  implicit class FillOpacityMutableBuilder[Self <: FillOpacity] (val x: Self) extends AnyVal {
+  extension [Self <: FillOpacity](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }
 }

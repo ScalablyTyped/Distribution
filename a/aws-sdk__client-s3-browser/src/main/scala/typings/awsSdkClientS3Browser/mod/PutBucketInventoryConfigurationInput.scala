@@ -10,8 +10,7 @@ trait PutBucketInventoryConfigurationInput
      with typings.awsSdkClientS3Browser.typesPutBucketInventoryConfigurationInputMod.PutBucketInventoryConfigurationInput
 object PutBucketInventoryConfigurationInput {
   
-  @scala.inline
-  def apply(Bucket: String, Id: String, InventoryConfiguration: InventoryConfiguration): PutBucketInventoryConfigurationInput = {
+  inline def apply(Bucket: String, Id: String, InventoryConfiguration: InventoryConfiguration): PutBucketInventoryConfigurationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InventoryConfiguration = InventoryConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketInventoryConfigurationInput]
   }

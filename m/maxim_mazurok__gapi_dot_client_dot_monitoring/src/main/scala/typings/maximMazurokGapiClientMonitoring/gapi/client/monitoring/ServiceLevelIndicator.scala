@@ -17,31 +17,23 @@ trait ServiceLevelIndicator extends StObject {
 }
 object ServiceLevelIndicator {
   
-  @scala.inline
-  def apply(): ServiceLevelIndicator = {
+  inline def apply(): ServiceLevelIndicator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceLevelIndicator]
   }
   
-  @scala.inline
-  implicit class ServiceLevelIndicatorMutableBuilder[Self <: ServiceLevelIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceLevelIndicator](x: Self) {
     
-    @scala.inline
-    def setBasicSli(value: BasicSli): Self = StObject.set(x, "basicSli", value.asInstanceOf[js.Any])
+    inline def setBasicSli(value: BasicSli): Self = StObject.set(x, "basicSli", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicSliUndefined: Self = StObject.set(x, "basicSli", js.undefined)
+    inline def setBasicSliUndefined: Self = StObject.set(x, "basicSli", js.undefined)
     
-    @scala.inline
-    def setRequestBased(value: RequestBasedSli): Self = StObject.set(x, "requestBased", value.asInstanceOf[js.Any])
+    inline def setRequestBased(value: RequestBasedSli): Self = StObject.set(x, "requestBased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBasedUndefined: Self = StObject.set(x, "requestBased", js.undefined)
+    inline def setRequestBasedUndefined: Self = StObject.set(x, "requestBased", js.undefined)
     
-    @scala.inline
-    def setWindowsBased(value: WindowsBasedSli): Self = StObject.set(x, "windowsBased", value.asInstanceOf[js.Any])
+    inline def setWindowsBased(value: WindowsBasedSli): Self = StObject.set(x, "windowsBased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsBasedUndefined: Self = StObject.set(x, "windowsBased", js.undefined)
+    inline def setWindowsBasedUndefined: Self = StObject.set(x, "windowsBased", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait EditorPdfExportEvent
 }
 object EditorPdfExportEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Editor_): EditorPdfExportEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Editor_): EditorPdfExportEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorPdfExportEvent]
   }
   
-  @scala.inline
-  implicit class EditorPdfExportEventMutableBuilder[Self <: EditorPdfExportEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EditorPdfExportEvent](x: Self) {
     
-    @scala.inline
-    def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

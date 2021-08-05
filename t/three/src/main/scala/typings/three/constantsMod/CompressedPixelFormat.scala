@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait CompressedPixelFormat extends StObject
 object CompressedPixelFormat {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[CompressedPixelFormat & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("CompressedPixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CompressedPixelFormat & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[CompressedPixelFormat & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("CompressedPixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CompressedPixelFormat & scala.Nothing]]
 }

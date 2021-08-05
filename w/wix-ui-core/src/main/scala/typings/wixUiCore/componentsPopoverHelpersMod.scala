@@ -12,10 +12,8 @@ object componentsPopoverHelpersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createRange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createRange")().asInstanceOf[Unit]
+    inline def createRange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createRange")().asInstanceOf[Unit]
     
-    @scala.inline
-    def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
+    inline def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   }
 }

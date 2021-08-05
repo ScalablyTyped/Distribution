@@ -13,16 +13,13 @@ trait DeleteForecastRequest extends StObject {
 }
 object DeleteForecastRequest {
   
-  @scala.inline
-  def apply(ForecastArn: Arn): DeleteForecastRequest = {
+  inline def apply(ForecastArn: Arn): DeleteForecastRequest = {
     val __obj = js.Dynamic.literal(ForecastArn = ForecastArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteForecastRequest]
   }
   
-  @scala.inline
-  implicit class DeleteForecastRequestMutableBuilder[Self <: DeleteForecastRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteForecastRequest](x: Self) {
     
-    @scala.inline
-    def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
+    inline def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
   }
 }

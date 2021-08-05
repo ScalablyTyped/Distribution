@@ -38,8 +38,7 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: Double,
     b: Double,
     g: Double,
@@ -52,28 +51,20 @@ object Color {
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
+    inline def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToHex(value: () => String): Self = StObject.set(x, "toHex", js.Any.fromFunction0(value))
+    inline def setToHex(value: () => String): Self = StObject.set(x, "toHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToRgba(value: () => String): Self = StObject.set(x, "toRgba", js.Any.fromFunction0(value))
+    inline def setToRgba(value: () => String): Self = StObject.set(x, "toRgba", js.Any.fromFunction0(value))
   }
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.CodeData")
 @js.native
-class CodeData protected ()
+/* private */ class CodeData ()
   extends StObject
      with typings.activexAccess.Access.CodeData {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.CodeData_typekey")
   var AccessDotCodeData_typekey: typings.activexAccess.Access.CodeData = js.native
   

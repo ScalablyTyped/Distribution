@@ -13,22 +13,17 @@ trait DescribeEnvironmentManagedActionsResult extends StObject {
 }
 object DescribeEnvironmentManagedActionsResult {
   
-  @scala.inline
-  def apply(): DescribeEnvironmentManagedActionsResult = {
+  inline def apply(): DescribeEnvironmentManagedActionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEnvironmentManagedActionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeEnvironmentManagedActionsResultMutableBuilder[Self <: DescribeEnvironmentManagedActionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEnvironmentManagedActionsResult](x: Self) {
     
-    @scala.inline
-    def setManagedActions(value: ManagedActions): Self = StObject.set(x, "ManagedActions", value.asInstanceOf[js.Any])
+    inline def setManagedActions(value: ManagedActions): Self = StObject.set(x, "ManagedActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedActionsUndefined: Self = StObject.set(x, "ManagedActions", js.undefined)
+    inline def setManagedActionsUndefined: Self = StObject.set(x, "ManagedActions", js.undefined)
     
-    @scala.inline
-    def setManagedActionsVarargs(value: ManagedAction*): Self = StObject.set(x, "ManagedActions", js.Array(value :_*))
+    inline def setManagedActionsVarargs(value: ManagedAction*): Self = StObject.set(x, "ManagedActions", js.Array(value :_*))
   }
 }

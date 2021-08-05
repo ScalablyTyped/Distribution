@@ -17,72 +17,72 @@ object sourceConnectorMod {
        with Connector {
     def this(backend: Backend) = this()
     
-    val backend: js.Any = js.native
+    /* private */ val backend: js.Any = js.native
     
-    var clearDragPreview: js.Any = js.native
+    /* private */ var clearDragPreview: js.Any = js.native
     
-    var clearDragSource: js.Any = js.native
+    /* private */ var clearDragSource: js.Any = js.native
     
     @JSName("connectTarget")
     def connectTarget_MSourceConnector: js.Any = js.native
     
-    var didConnectedDragPreviewChange: js.Any = js.native
+    /* private */ var didConnectedDragPreviewChange: js.Any = js.native
     
-    var didConnectedDragSourceChange: js.Any = js.native
+    /* private */ var didConnectedDragSourceChange: js.Any = js.native
     
-    var didDragPreviewOptionsChange: js.Any = js.native
+    /* private */ var didDragPreviewOptionsChange: js.Any = js.native
     
-    var didDragSourceOptionsChange: js.Any = js.native
+    /* private */ var didDragSourceOptionsChange: js.Any = js.native
     
-    var didHandlerIdChange: js.Any = js.native
+    /* private */ var didHandlerIdChange: js.Any = js.native
     
-    var disconnectDragPreview: js.Any = js.native
+    /* private */ var disconnectDragPreview: js.Any = js.native
     
-    var disconnectDragSource: js.Any = js.native
+    /* private */ var disconnectDragSource: js.Any = js.native
     
     /* private */ def dragPreview: js.Any = js.native
     
-    var dragPreviewNode: js.Any = js.native
+    /* private */ var dragPreviewNode: js.Any = js.native
     
     def dragPreviewOptions: DragPreviewOptions | Null = js.native
     
-    var dragPreviewOptionsInternal: js.Any = js.native
+    /* private */ var dragPreviewOptionsInternal: js.Any = js.native
     
     def dragPreviewOptions_=(options: DragPreviewOptions | Null): Unit = js.native
     
-    var dragPreviewRef: js.Any = js.native
+    /* private */ var dragPreviewRef: js.Any = js.native
     
-    var dragPreviewUnsubscribe: js.Any = js.native
+    /* private */ var dragPreviewUnsubscribe: js.Any = js.native
     
     /* private */ def dragSource: js.Any = js.native
     
-    var dragSourceNode: js.Any = js.native
+    /* private */ var dragSourceNode: js.Any = js.native
     
     def dragSourceOptions: DragSourceOptions | Null = js.native
     
-    var dragSourceOptionsInternal: js.Any = js.native
+    /* private */ var dragSourceOptionsInternal: js.Any = js.native
     
     def dragSourceOptions_=(options: DragSourceOptions | Null): Unit = js.native
     
-    var dragSourceRef: js.Any = js.native
+    /* private */ var dragSourceRef: js.Any = js.native
     
-    var dragSourceUnsubscribe: js.Any = js.native
+    /* private */ var dragSourceUnsubscribe: js.Any = js.native
     
-    var handlerId: js.Any = js.native
+    /* private */ var handlerId: js.Any = js.native
     
-    var lastConnectedDragPreview: js.Any = js.native
+    /* private */ var lastConnectedDragPreview: js.Any = js.native
     
-    var lastConnectedDragPreviewOptions: js.Any = js.native
+    /* private */ var lastConnectedDragPreviewOptions: js.Any = js.native
     
-    var lastConnectedDragSource: js.Any = js.native
+    /* private */ var lastConnectedDragSource: js.Any = js.native
     
-    var lastConnectedDragSourceOptions: js.Any = js.native
+    /* private */ var lastConnectedDragSourceOptions: js.Any = js.native
     
-    var lastConnectedHandlerId: js.Any = js.native
+    /* private */ var lastConnectedHandlerId: js.Any = js.native
     
-    var reconnectDragPreview: js.Any = js.native
+    /* private */ var reconnectDragPreview: js.Any = js.native
     
-    var reconnectDragSource: js.Any = js.native
+    /* private */ var reconnectDragSource: js.Any = js.native
   }
   
   @js.native

@@ -18,25 +18,19 @@ trait HttpTimeout extends StObject {
 }
 object HttpTimeout {
   
-  @scala.inline
-  def apply(): HttpTimeout = {
+  inline def apply(): HttpTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpTimeout]
   }
   
-  @scala.inline
-  implicit class HttpTimeoutMutableBuilder[Self <: HttpTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: HttpTimeout](x: Self) {
     
-    @scala.inline
-    def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
-    @scala.inline
-    def setPerRequest(value: Duration): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
+    inline def setPerRequest(value: Duration): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
+    inline def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
   }
 }

@@ -19,14 +19,14 @@ object consoleSpanExporterMod {
       * converts span info into more readable format
       * @param span
       */
-    var _exportInfo: js.Any = js.native
+    /* private */ var _exportInfo: js.Any = js.native
     
     /**
       * Showing spans in console
       * @param spans
       * @param done
       */
-    var _sendSpans: js.Any = js.native
+    /* private */ var _sendSpans: js.Any = js.native
     
     /**
       * Called to export sampled {@link ReadableSpan}s.

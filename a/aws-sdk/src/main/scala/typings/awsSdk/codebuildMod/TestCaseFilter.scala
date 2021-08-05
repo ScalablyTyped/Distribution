@@ -18,25 +18,19 @@ trait TestCaseFilter extends StObject {
 }
 object TestCaseFilter {
   
-  @scala.inline
-  def apply(): TestCaseFilter = {
+  inline def apply(): TestCaseFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestCaseFilter]
   }
   
-  @scala.inline
-  implicit class TestCaseFilterMutableBuilder[Self <: TestCaseFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TestCaseFilter](x: Self) {
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
+    inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

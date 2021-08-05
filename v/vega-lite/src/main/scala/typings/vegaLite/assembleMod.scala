@@ -20,19 +20,13 @@ object assembleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assembleAxes(axisComponents: AxisComponentIndex, config: Config[SignalRef]): js.Array[Axis] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxes")(axisComponents.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Axis]]
+  inline def assembleAxes(axisComponents: AxisComponentIndex, config: Config[SignalRef]): js.Array[Axis] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxes")(axisComponents.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Axis]]
   
-  @scala.inline
-  def assembleAxisSignals(model: Model): js.Array[NewSignal] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxisSignals")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[NewSignal]]
+  inline def assembleAxisSignals(model: Model): js.Array[NewSignal] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxisSignals")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[NewSignal]]
   
-  @scala.inline
-  def assembleAxis_grid(axisCmpt: AxisComponent, kind: grid, config: Config[SignalRef]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Axis]
-  @scala.inline
-  def assembleAxis_grid(axisCmpt: AxisComponent, kind: grid, config: Config[SignalRef], opt: HeaderBoolean): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Axis]
+  inline def assembleAxis_grid(axisCmpt: AxisComponent, kind: grid, config: Config[SignalRef]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Axis]
+  inline def assembleAxis_grid(axisCmpt: AxisComponent, kind: grid, config: Config[SignalRef], opt: HeaderBoolean): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Axis]
   
-  @scala.inline
-  def assembleAxis_main(axisCmpt: AxisComponent, kind: main, config: Config[SignalRef]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Axis]
-  @scala.inline
-  def assembleAxis_main(axisCmpt: AxisComponent, kind: main, config: Config[SignalRef], opt: HeaderBoolean): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Axis]
+  inline def assembleAxis_main(axisCmpt: AxisComponent, kind: main, config: Config[SignalRef]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Axis]
+  inline def assembleAxis_main(axisCmpt: AxisComponent, kind: main, config: Config[SignalRef], opt: HeaderBoolean): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleAxis")(axisCmpt.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Axis]
 }

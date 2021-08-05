@@ -100,26 +100,20 @@ object Chai {
   }
   object Assertion {
     
-    @scala.inline
-    def apply(been: Been, called: Called, nth: Double => Assertion, spy: Assertion): Assertion = {
+    inline def apply(been: Been, called: Called, nth: Double => Assertion, spy: Assertion): Assertion = {
       val __obj = js.Dynamic.literal(been = been.asInstanceOf[js.Any], called = called.asInstanceOf[js.Any], nth = js.Any.fromFunction1(nth), spy = spy.asInstanceOf[js.Any])
       __obj.asInstanceOf[Assertion]
     }
     
-    @scala.inline
-    implicit class AssertionMutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
+    extension [Self <: Assertion](x: Self) {
       
-      @scala.inline
-      def setBeen(value: Been): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
+      inline def setBeen(value: Been): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalled(value: Called): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
+      inline def setCalled(value: Called): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNth(value: Double => Assertion): Self = StObject.set(x, "nth", js.Any.fromFunction1(value))
+      inline def setNth(value: Double => Assertion): Self = StObject.set(x, "nth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSpy(value: Assertion): Self = StObject.set(x, "spy", value.asInstanceOf[js.Any])
+      inline def setSpy(value: Assertion): Self = StObject.set(x, "spy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,17 +159,14 @@ object Chai {
   }
   object ChaiStatic {
     
-    @scala.inline
-    def apply(spy: Spy): ChaiStatic = {
+    inline def apply(spy: Spy): ChaiStatic = {
       val __obj = js.Dynamic.literal(spy = spy.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChaiStatic]
     }
     
-    @scala.inline
-    implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ChaiStatic](x: Self) {
       
-      @scala.inline
-      def setSpy(value: Spy): Self = StObject.set(x, "spy", value.asInstanceOf[js.Any])
+      inline def setSpy(value: Spy): Self = StObject.set(x, "spy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,17 +176,14 @@ object Chai {
   }
   object LanguageChains {
     
-    @scala.inline
-    def apply(on: Assertion): LanguageChains = {
+    inline def apply(on: Assertion): LanguageChains = {
       val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[LanguageChains]
     }
     
-    @scala.inline
-    implicit class LanguageChainsMutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageChains](x: Self) {
       
-      @scala.inline
-      def setOn(value: Assertion): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: Assertion): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
   }
 }

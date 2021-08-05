@@ -12,22 +12,17 @@ trait DependsOn extends StObject {
 }
 object DependsOn {
   
-  @scala.inline
-  def apply(input: String, map: js.Array[DependencyBinding]): DependsOn = {
+  inline def apply(input: String, map: js.Array[DependencyBinding]): DependsOn = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependsOn]
   }
   
-  @scala.inline
-  implicit class DependsOnMutableBuilder[Self <: DependsOn] (val x: Self) extends AnyVal {
+  extension [Self <: DependsOn](x: Self) {
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: js.Array[DependencyBinding]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Array[DependencyBinding]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapVarargs(value: DependencyBinding*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: DependencyBinding*): Self = StObject.set(x, "map", js.Array(value :_*))
   }
 }

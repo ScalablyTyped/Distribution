@@ -24,10 +24,8 @@ object mod {
   //=> '▁▂▃▄▄'
   ```
   */
-  @scala.inline
-  def apply(numbers: js.Array[Double | _empty]): String = ^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(numbers: js.Array[Double | _empty], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(numbers: js.Array[Double | _empty]): String = ^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(numbers: js.Array[Double | _empty], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("sparkly", JSImport.Namespace)
   @js.native
@@ -52,32 +50,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+      inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+      inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
       
-      @scala.inline
-      def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+      inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+      inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
       
-      @scala.inline
-      def setStyle(value: fire): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: fire): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

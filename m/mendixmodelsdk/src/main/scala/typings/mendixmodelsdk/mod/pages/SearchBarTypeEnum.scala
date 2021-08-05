@@ -21,27 +21,23 @@ object SearchBarTypeEnum {
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.AlwaysOpen")
   @js.native
   def AlwaysOpen: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  @scala.inline
-  def AlwaysOpen_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlwaysOpen")(x.asInstanceOf[js.Any])
+  inline def AlwaysOpen_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlwaysOpen")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.FoldableClosed")
   @js.native
   def FoldableClosed: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  @scala.inline
-  def FoldableClosed_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableClosed")(x.asInstanceOf[js.Any])
+  inline def FoldableClosed_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableClosed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.FoldableOpen")
   @js.native
   def FoldableOpen: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  @scala.inline
-  def FoldableOpen_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableOpen")(x.asInstanceOf[js.Any])
+  inline def FoldableOpen_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FoldableOpen")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SearchBarTypeEnum.None")
   @js.native
   def None: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum = js.native
-  @scala.inline
-  def None_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: typings.mendixmodelsdk.pagesMod.pages.SearchBarTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
 }

@@ -18,16 +18,13 @@ trait ASPxClientCustomDataCallbackEventArgs
 }
 object ASPxClientCustomDataCallbackEventArgs {
   
-  @scala.inline
-  def apply(result: String): ASPxClientCustomDataCallbackEventArgs = {
+  inline def apply(result: String): ASPxClientCustomDataCallbackEventArgs = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCustomDataCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCustomDataCallbackEventArgsMutableBuilder[Self <: ASPxClientCustomDataCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCustomDataCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

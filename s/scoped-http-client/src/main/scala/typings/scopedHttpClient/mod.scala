@@ -98,16 +98,11 @@ object mod {
     def timeout(time: js.Any): ScopedClient = js.native
   }
   
-  @scala.inline
-  def create(): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ScopedClient]
-  @scala.inline
-  def create(options: Options): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ScopedClient]
-  @scala.inline
-  def create(url: String): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[ScopedClient]
-  @scala.inline
-  def create(url: String, options: Options): ScopedClient = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScopedClient]
-  @scala.inline
-  def create(url: Unit, options: Options): ScopedClient = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScopedClient]
+  inline def create(): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ScopedClient]
+  inline def create(options: Options): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ScopedClient]
+  inline def create(url: String): ScopedClient = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[ScopedClient]
+  inline def create(url: String, options: Options): ScopedClient = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScopedClient]
+  inline def create(url: Unit, options: Options): ScopedClient = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScopedClient]
   
   trait Options
     extends StObject
@@ -129,56 +124,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setHttpAgent(value: Agent | Boolean): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
+      inline def setHttpAgent(value: Agent | Boolean): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
+      inline def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
       
-      @scala.inline
-      def setHttpsAgent(value: Agent | Boolean): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
+      inline def setHttpsAgent(value: Agent | Boolean): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
+      inline def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setSlashes(value: js.Any): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
+      inline def setSlashes(value: js.Any): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashesUndefined: Self = StObject.set(x, "slashes", js.undefined)
+      inline def setSlashesUndefined: Self = StObject.set(x, "slashes", js.undefined)
     }
   }
   

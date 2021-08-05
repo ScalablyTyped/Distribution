@@ -66,8 +66,7 @@ object interfacesPullRequestMod {
   }
   object PullRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assignees: js.Array[UserSummary],
       base: BranchSummaryWithRepository,
       body: String,
@@ -91,83 +90,57 @@ object interfacesPullRequestMod {
       __obj.asInstanceOf[PullRequest]
     }
     
-    @scala.inline
-    implicit class PullRequestMutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequest](x: Self) {
       
-      @scala.inline
-      def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      inline def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssigneeNull: Self = StObject.set(x, "assignee", null)
+      inline def setAssigneeNull: Self = StObject.set(x, "assignee", null)
       
-      @scala.inline
-      def setAssignees(value: js.Array[UserSummary]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+      inline def setAssignees(value: js.Array[UserSummary]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value :_*))
       
-      @scala.inline
-      def setBase(value: BranchSummaryWithRepository): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: BranchSummaryWithRepository): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedAt(value: Moment): Self = StObject.set(x, "closedAt", value.asInstanceOf[js.Any])
+      inline def setClosedAt(value: Moment): Self = StObject.set(x, "closedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedAtUndefined: Self = StObject.set(x, "closedAt", js.undefined)
+      inline def setClosedAtUndefined: Self = StObject.set(x, "closedAt", js.undefined)
       
-      @scala.inline
-      def setCreatedAt(value: Moment): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Moment): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: BranchSummary): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: BranchSummary): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
+      inline def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadIssueAsync(value: () => js.Promise[Issue]): Self = StObject.set(x, "loadIssueAsync", js.Any.fromFunction0(value))
+      inline def setLoadIssueAsync(value: () => js.Promise[Issue]): Self = StObject.set(x, "loadIssueAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadReviewCommentsAsync(value: () => js.Promise[js.Array[ReviewComment]]): Self = StObject.set(x, "loadReviewCommentsAsync", js.Any.fromFunction0(value))
+      inline def setLoadReviewCommentsAsync(value: () => js.Promise[js.Array[ReviewComment]]): Self = StObject.set(x, "loadReviewCommentsAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadReviewRequestsAsync(value: () => js.Promise[ReviewRequests]): Self = StObject.set(x, "loadReviewRequestsAsync", js.Any.fromFunction0(value))
+      inline def setLoadReviewRequestsAsync(value: () => js.Promise[ReviewRequests]): Self = StObject.set(x, "loadReviewRequestsAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadReviewsAsync(value: () => js.Promise[js.Array[Review]]): Self = StObject.set(x, "loadReviewsAsync", js.Any.fromFunction0(value))
+      inline def setLoadReviewsAsync(value: () => js.Promise[js.Array[Review]]): Self = StObject.set(x, "loadReviewsAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+      inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergedAt(value: Moment): Self = StObject.set(x, "mergedAt", value.asInstanceOf[js.Any])
+      inline def setMergedAt(value: Moment): Self = StObject.set(x, "mergedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergedAtUndefined: Self = StObject.set(x, "mergedAt", js.undefined)
+      inline def setMergedAtUndefined: Self = StObject.set(x, "mergedAt", js.undefined)
       
-      @scala.inline
-      def setMilestone(value: Milestone): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+      inline def setMilestone(value: Milestone): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilestoneNull: Self = StObject.set(x, "milestone", null)
+      inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
       
-      @scala.inline
-      def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAt(value: Moment): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: Moment): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,20 +152,16 @@ object interfacesPullRequestMod {
   }
   object PullRequestRef {
     
-    @scala.inline
-    def apply(loadAsync: () => js.Promise[PullRequest | Null], number: Double): PullRequestRef = {
+    inline def apply(loadAsync: () => js.Promise[PullRequest | Null], number: Double): PullRequestRef = {
       val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[PullRequestRef]
     }
     
-    @scala.inline
-    implicit class PullRequestRefMutableBuilder[Self <: PullRequestRef] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequestRef](x: Self) {
       
-      @scala.inline
-      def setLoadAsync(value: () => js.Promise[PullRequest | Null]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
+      inline def setLoadAsync(value: () => js.Promise[PullRequest | Null]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,8 +181,7 @@ object interfacesPullRequestMod {
   }
   object Review {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: String,
       commitSha: String,
       createdBy: UserSummary,
@@ -225,26 +193,19 @@ object interfacesPullRequestMod {
       __obj.asInstanceOf[Review]
     }
     
-    @scala.inline
-    implicit class ReviewMutableBuilder[Self <: Review] (val x: Self) extends AnyVal {
+    extension [Self <: Review](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitSha(value: String): Self = StObject.set(x, "commitSha", value.asInstanceOf[js.Any])
+      inline def setCommitSha(value: String): Self = StObject.set(x, "commitSha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
+      inline def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -258,8 +219,7 @@ object interfacesPullRequestMod {
   }
   object ReviewComment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: String,
       createdAt: Moment,
       createdBy: UserSummary,
@@ -273,14 +233,11 @@ object interfacesPullRequestMod {
       __obj.asInstanceOf[ReviewComment]
     }
     
-    @scala.inline
-    implicit class ReviewCommentMutableBuilder[Self <: ReviewComment] (val x: Self) extends AnyVal {
+    extension [Self <: ReviewComment](x: Self) {
       
-      @scala.inline
-      def setDiffHunk(value: String): Self = StObject.set(x, "diffHunk", value.asInstanceOf[js.Any])
+      inline def setDiffHunk(value: String): Self = StObject.set(x, "diffHunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,26 +249,20 @@ object interfacesPullRequestMod {
   }
   object ReviewRequests {
     
-    @scala.inline
-    def apply(teams: js.Array[Team], users: js.Array[UserSummary]): ReviewRequests = {
+    inline def apply(teams: js.Array[Team], users: js.Array[UserSummary]): ReviewRequests = {
       val __obj = js.Dynamic.literal(teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReviewRequests]
     }
     
-    @scala.inline
-    implicit class ReviewRequestsMutableBuilder[Self <: ReviewRequests] (val x: Self) extends AnyVal {
+    extension [Self <: ReviewRequests](x: Self) {
       
-      @scala.inline
-      def setTeams(value: js.Array[Team]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: js.Array[Team]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value :_*))
+      inline def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value :_*))
       
-      @scala.inline
-      def setUsers(value: js.Array[UserSummary]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[UserSummary]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -331,32 +282,24 @@ object interfacesPullRequestMod {
   }
   object Team {
     
-    @scala.inline
-    def apply(description: String, id: Double, name: String, slug: String): Team = {
+    inline def apply(description: String, id: Double, name: String, slug: String): Team = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permission = "admin", privacy = "closed", slug = slug.asInstanceOf[js.Any])
       __obj.asInstanceOf[Team]
     }
     
-    @scala.inline
-    implicit class TeamMutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
+    extension [Self <: Team](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermission(value: admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+      inline def setPermission(value: admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivacy(value: closed): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+      inline def setPrivacy(value: closed): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     }
   }
 }

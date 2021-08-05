@@ -10,9 +10,7 @@ object authXkeys {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def authXkeysAdd(shdr: String, skey: String, salg: String, sdata: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("auth_xkeys_add")(shdr.asInstanceOf[js.Any], skey.asInstanceOf[js.Any], salg.asInstanceOf[js.Any], sdata.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def authXkeysAdd(shdr: String, skey: String, salg: String, sdata: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("auth_xkeys_add")(shdr.asInstanceOf[js.Any], skey.asInstanceOf[js.Any], salg.asInstanceOf[js.Any], sdata.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def authXkeysCheck(shdr: String, skey: String, salg: String, sdata: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("auth_xkeys_check")(shdr.asInstanceOf[js.Any], skey.asInstanceOf[js.Any], salg.asInstanceOf[js.Any], sdata.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def authXkeysCheck(shdr: String, skey: String, salg: String, sdata: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("auth_xkeys_check")(shdr.asInstanceOf[js.Any], skey.asInstanceOf[js.Any], salg.asInstanceOf[js.Any], sdata.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

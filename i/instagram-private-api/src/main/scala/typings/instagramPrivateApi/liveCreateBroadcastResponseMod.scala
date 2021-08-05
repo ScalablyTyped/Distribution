@@ -76,8 +76,7 @@ object liveCreateBroadcastResponseMod {
   }
   object LiveCreateBroadcastResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allow_resolution_change: Double,
       avc_rtmp_payload: Double,
       broadcast_id: String,
@@ -116,107 +115,73 @@ object liveCreateBroadcastResponseMod {
       __obj.asInstanceOf[LiveCreateBroadcastResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LiveCreateBroadcastResponseRootObjectMutableBuilder[Self <: LiveCreateBroadcastResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LiveCreateBroadcastResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setAllow_resolution_change(value: Double): Self = StObject.set(x, "allow_resolution_change", value.asInstanceOf[js.Any])
+      inline def setAllow_resolution_change(value: Double): Self = StObject.set(x, "allow_resolution_change", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvc_rtmp_payload(value: Double): Self = StObject.set(x, "avc_rtmp_payload", value.asInstanceOf[js.Any])
+      inline def setAvc_rtmp_payload(value: Double): Self = StObject.set(x, "avc_rtmp_payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcast_id(value: String): Self = StObject.set(x, "broadcast_id", value.asInstanceOf[js.Any])
+      inline def setBroadcast_id(value: String): Self = StObject.set(x, "broadcast_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcaster_update_frequency(value: Double): Self = StObject.set(x, "broadcaster_update_frequency", value.asInstanceOf[js.Any])
+      inline def setBroadcaster_update_frequency(value: Double): Self = StObject.set(x, "broadcaster_update_frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnect_with_1rtt(value: Double): Self = StObject.set(x, "connect_with_1rtt", value.asInstanceOf[js.Any])
+      inline def setConnect_with_1rtt(value: Double): Self = StObject.set(x, "connect_with_1rtt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_speed_test(value: Double): Self = StObject.set(x, "disable_speed_test", value.asInstanceOf[js.Any])
+      inline def setDisable_speed_test(value: Double): Self = StObject.set(x, "disable_speed_test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFbvp_quic_upload_url(value: String): Self = StObject.set(x, "fbvp_quic_upload_url", value.asInstanceOf[js.Any])
+      inline def setFbvp_quic_upload_url(value: String): Self = StObject.set(x, "fbvp_quic_upload_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFbvp_tcp_upload_url(value: String): Self = StObject.set(x, "fbvp_tcp_upload_url", value.asInstanceOf[js.Any])
+      inline def setFbvp_tcp_upload_url(value: String): Self = StObject.set(x, "fbvp_tcp_upload_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeat_interval(value: Double): Self = StObject.set(x, "heartbeat_interval", value.asInstanceOf[js.Any])
+      inline def setHeartbeat_interval(value: Double): Self = StObject.set(x, "heartbeat_interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLive_trace_enabled(value: Double): Self = StObject.set(x, "live_trace_enabled", value.asInstanceOf[js.Any])
+      inline def setLive_trace_enabled(value: Double): Self = StObject.set(x, "live_trace_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLive_trace_sample_interval_in_seconds(value: Double): Self = StObject.set(x, "live_trace_sample_interval_in_seconds", value.asInstanceOf[js.Any])
+      inline def setLive_trace_sample_interval_in_seconds(value: Double): Self = StObject.set(x, "live_trace_sample_interval_in_seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLive_trace_sampling_source(value: Double): Self = StObject.set(x, "live_trace_sampling_source", value.asInstanceOf[js.Any])
+      inline def setLive_trace_sampling_source(value: Double): Self = StObject.set(x, "live_trace_sampling_source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_time_in_seconds(value: Double): Self = StObject.set(x, "max_time_in_seconds", value.asInstanceOf[js.Any])
+      inline def setMax_time_in_seconds(value: Double): Self = StObject.set(x, "max_time_in_seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPass_thru_enabled(value: Double): Self = StObject.set(x, "pass_thru_enabled", value.asInstanceOf[js.Any])
+      inline def setPass_thru_enabled(value: Double): Self = StObject.set(x, "pass_thru_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed_test_minimum_bandwidth_threshold(value: Double): Self = StObject.set(x, "speed_test_minimum_bandwidth_threshold", value.asInstanceOf[js.Any])
+      inline def setSpeed_test_minimum_bandwidth_threshold(value: Double): Self = StObject.set(x, "speed_test_minimum_bandwidth_threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed_test_retry_max_count(value: Double): Self = StObject.set(x, "speed_test_retry_max_count", value.asInstanceOf[js.Any])
+      inline def setSpeed_test_retry_max_count(value: Double): Self = StObject.set(x, "speed_test_retry_max_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed_test_retry_time_delay(value: Double): Self = StObject.set(x, "speed_test_retry_time_delay", value.asInstanceOf[js.Any])
+      inline def setSpeed_test_retry_time_delay(value: Double): Self = StObject.set(x, "speed_test_retry_time_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed_test_ui_timeout(value: Double): Self = StObject.set(x, "speed_test_ui_timeout", value.asInstanceOf[js.Any])
+      inline def setSpeed_test_ui_timeout(value: Double): Self = StObject.set(x, "speed_test_ui_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_audio_bit_rate(value: Double): Self = StObject.set(x, "stream_audio_bit_rate", value.asInstanceOf[js.Any])
+      inline def setStream_audio_bit_rate(value: Double): Self = StObject.set(x, "stream_audio_bit_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_audio_channels(value: Double): Self = StObject.set(x, "stream_audio_channels", value.asInstanceOf[js.Any])
+      inline def setStream_audio_channels(value: Double): Self = StObject.set(x, "stream_audio_channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_audio_sample_rate(value: Double): Self = StObject.set(x, "stream_audio_sample_rate", value.asInstanceOf[js.Any])
+      inline def setStream_audio_sample_rate(value: Double): Self = StObject.set(x, "stream_audio_sample_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_network_connection_retry_count(value: Double): Self = StObject.set(x, "stream_network_connection_retry_count", value.asInstanceOf[js.Any])
+      inline def setStream_network_connection_retry_count(value: Double): Self = StObject.set(x, "stream_network_connection_retry_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_network_connection_retry_delay_in_seconds(value: Double): Self = StObject.set(x, "stream_network_connection_retry_delay_in_seconds", value.asInstanceOf[js.Any])
+      inline def setStream_network_connection_retry_delay_in_seconds(value: Double): Self = StObject.set(x, "stream_network_connection_retry_delay_in_seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_network_speed_test_payload_chunk_size_in_bytes(value: Double): Self = StObject.set(x, "stream_network_speed_test_payload_chunk_size_in_bytes", value.asInstanceOf[js.Any])
+      inline def setStream_network_speed_test_payload_chunk_size_in_bytes(value: Double): Self = StObject.set(x, "stream_network_speed_test_payload_chunk_size_in_bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_network_speed_test_payload_size_in_bytes(value: Double): Self = StObject.set(x, "stream_network_speed_test_payload_size_in_bytes", value.asInstanceOf[js.Any])
+      inline def setStream_network_speed_test_payload_size_in_bytes(value: Double): Self = StObject.set(x, "stream_network_speed_test_payload_size_in_bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_network_speed_test_payload_timeout_in_seconds(value: Double): Self = StObject.set(x, "stream_network_speed_test_payload_timeout_in_seconds", value.asInstanceOf[js.Any])
+      inline def setStream_network_speed_test_payload_timeout_in_seconds(value: Double): Self = StObject.set(x, "stream_network_speed_test_payload_timeout_in_seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_video_adaptive_bitrate_config(value: String): Self = StObject.set(x, "stream_video_adaptive_bitrate_config", value.asInstanceOf[js.Any])
+      inline def setStream_video_adaptive_bitrate_config(value: String): Self = StObject.set(x, "stream_video_adaptive_bitrate_config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_video_allow_b_frames(value: Double): Self = StObject.set(x, "stream_video_allow_b_frames", value.asInstanceOf[js.Any])
+      inline def setStream_video_allow_b_frames(value: Double): Self = StObject.set(x, "stream_video_allow_b_frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_video_bit_rate(value: Double): Self = StObject.set(x, "stream_video_bit_rate", value.asInstanceOf[js.Any])
+      inline def setStream_video_bit_rate(value: Double): Self = StObject.set(x, "stream_video_bit_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_video_fps(value: Double): Self = StObject.set(x, "stream_video_fps", value.asInstanceOf[js.Any])
+      inline def setStream_video_fps(value: Double): Self = StObject.set(x, "stream_video_fps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_video_width(value: Double): Self = StObject.set(x, "stream_video_width", value.asInstanceOf[js.Any])
+      inline def setStream_video_width(value: Double): Self = StObject.set(x, "stream_video_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload_url(value: String): Self = StObject.set(x, "upload_url", value.asInstanceOf[js.Any])
+      inline def setUpload_url(value: String): Self = StObject.set(x, "upload_url", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -42,8 +42,7 @@ object statisticsMod {
   }
   object StatisticsApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       average: String => Double,
       extent: String => Double,
       max: String => Double,
@@ -65,56 +64,39 @@ object statisticsMod {
       __obj.asInstanceOf[StatisticsApi]
     }
     
-    @scala.inline
-    implicit class StatisticsApiMutableBuilder[Self <: StatisticsApi] (val x: Self) extends AnyVal {
+    extension [Self <: StatisticsApi](x: Self) {
       
-      @scala.inline
-      def setAverage(value: String => Double): Self = StObject.set(x, "average", js.Any.fromFunction1(value))
+      inline def setAverage(value: String => Double): Self = StObject.set(x, "average", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtent(value: String => Double): Self = StObject.set(x, "extent", js.Any.fromFunction1(value))
+      inline def setExtent(value: String => Double): Self = StObject.set(x, "extent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMax(value: String => Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+      inline def setMax(value: String => Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMean(value: String => Double): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
+      inline def setMean(value: String => Double): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMedian(value: String => Double): Self = StObject.set(x, "median", js.Any.fromFunction1(value))
+      inline def setMedian(value: String => Double): Self = StObject.set(x, "median", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMin(value: String => Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+      inline def setMin(value: String => Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMode(value: String => Double): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
+      inline def setMode(value: String => Double): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProduct(value: String => Double): Self = StObject.set(x, "product", js.Any.fromFunction1(value))
+      inline def setProduct(value: String => Double): Self = StObject.set(x, "product", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuantile(value: (String, Double) => Double): Self = StObject.set(x, "quantile", js.Any.fromFunction2(value))
+      inline def setQuantile(value: (String, Double) => Double): Self = StObject.set(x, "quantile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQuantiles(value: (String, js.Array[Double]) => js.Array[Double]): Self = StObject.set(x, "quantiles", js.Any.fromFunction2(value))
+      inline def setQuantiles(value: (String, js.Array[Double]) => js.Array[Double]): Self = StObject.set(x, "quantiles", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQuantilesByFraction(value: (String, Double) => Double): Self = StObject.set(x, "quantilesByFraction", js.Any.fromFunction2(value))
+      inline def setQuantilesByFraction(value: (String, Double) => Double): Self = StObject.set(x, "quantilesByFraction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRange(value: String => js.Tuple2[Double, Double]): Self = StObject.set(x, "range", js.Any.fromFunction1(value))
+      inline def setRange(value: String => js.Tuple2[Double, Double]): Self = StObject.set(x, "range", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStandardDeviation(value: String => Double): Self = StObject.set(x, "standardDeviation", js.Any.fromFunction1(value))
+      inline def setStandardDeviation(value: String => Double): Self = StObject.set(x, "standardDeviation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSum(value: String => Double): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
+      inline def setSum(value: String => Double): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSumSimple(value: String => Double): Self = StObject.set(x, "sumSimple", js.Any.fromFunction1(value))
+      inline def setSumSimple(value: String => Double): Self = StObject.set(x, "sumSimple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVariance(value: String => Double): Self = StObject.set(x, "variance", js.Any.fromFunction1(value))
+      inline def setVariance(value: String => Double): Self = StObject.set(x, "variance", js.Any.fromFunction1(value))
     }
   }
 }

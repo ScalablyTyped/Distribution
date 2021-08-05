@@ -10,19 +10,15 @@ trait SkipNulls extends StObject {
 }
 object SkipNulls {
   
-  @scala.inline
-  def apply(): SkipNulls = {
+  inline def apply(): SkipNulls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SkipNulls]
   }
   
-  @scala.inline
-  implicit class SkipNullsMutableBuilder[Self <: SkipNulls] (val x: Self) extends AnyVal {
+  extension [Self <: SkipNulls](x: Self) {
     
-    @scala.inline
-    def setSkipNulls(value: Boolean): Self = StObject.set(x, "skipNulls", value.asInstanceOf[js.Any])
+    inline def setSkipNulls(value: Boolean): Self = StObject.set(x, "skipNulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipNullsUndefined: Self = StObject.set(x, "skipNulls", js.undefined)
+    inline def setSkipNullsUndefined: Self = StObject.set(x, "skipNulls", js.undefined)
   }
 }

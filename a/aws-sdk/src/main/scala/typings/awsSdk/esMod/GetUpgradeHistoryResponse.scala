@@ -18,28 +18,21 @@ trait GetUpgradeHistoryResponse extends StObject {
 }
 object GetUpgradeHistoryResponse {
   
-  @scala.inline
-  def apply(): GetUpgradeHistoryResponse = {
+  inline def apply(): GetUpgradeHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUpgradeHistoryResponse]
   }
   
-  @scala.inline
-  implicit class GetUpgradeHistoryResponseMutableBuilder[Self <: GetUpgradeHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUpgradeHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUpgradeHistories(value: UpgradeHistoryList): Self = StObject.set(x, "UpgradeHistories", value.asInstanceOf[js.Any])
+    inline def setUpgradeHistories(value: UpgradeHistoryList): Self = StObject.set(x, "UpgradeHistories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeHistoriesUndefined: Self = StObject.set(x, "UpgradeHistories", js.undefined)
+    inline def setUpgradeHistoriesUndefined: Self = StObject.set(x, "UpgradeHistories", js.undefined)
     
-    @scala.inline
-    def setUpgradeHistoriesVarargs(value: UpgradeHistory*): Self = StObject.set(x, "UpgradeHistories", js.Array(value :_*))
+    inline def setUpgradeHistoriesVarargs(value: UpgradeHistory*): Self = StObject.set(x, "UpgradeHistories", js.Array(value :_*))
   }
 }

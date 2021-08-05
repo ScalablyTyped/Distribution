@@ -110,46 +110,40 @@ object PathSegment {
   @JSImport("go", "PathSegment.Arc")
   @js.native
   def Arc: EnumValue = js.native
-  @scala.inline
-  def Arc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arc")(x.asInstanceOf[js.Any])
+  inline def Arc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arc")(x.asInstanceOf[js.Any])
   
   /**For drawing a cubic bezier segment, a value for PathSegment.type.*/
   /* static member */
   @JSImport("go", "PathSegment.Bezier")
   @js.native
   def Bezier: EnumValue = js.native
-  @scala.inline
-  def Bezier_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bezier")(x.asInstanceOf[js.Any])
+  inline def Bezier_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bezier")(x.asInstanceOf[js.Any])
   
   /**For drawing a straight line segment, a value for PathSegment.type.*/
   /* static member */
   @JSImport("go", "PathSegment.Line")
   @js.native
   def Line: EnumValue = js.native
-  @scala.inline
-  def Line_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
+  inline def Line_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
   
   /**For beginning a new subpath, a value for PathSegment.type.*/
   /* static member */
   @JSImport("go", "PathSegment.Move")
   @js.native
   def Move: EnumValue = js.native
-  @scala.inline
-  def Move_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Move")(x.asInstanceOf[js.Any])
+  inline def Move_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Move")(x.asInstanceOf[js.Any])
   
   /**For drawing a quadratic bezier segment, a value for PathSegment.type.*/
   /* static member */
   @JSImport("go", "PathSegment.QuadraticBezier")
   @js.native
   def QuadraticBezier: EnumValue = js.native
-  @scala.inline
-  def QuadraticBezier_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuadraticBezier")(x.asInstanceOf[js.Any])
+  inline def QuadraticBezier_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuadraticBezier")(x.asInstanceOf[js.Any])
   
   /**For drawing an SVG arc segment, a value for PathSegment.type.*/
   /* static member */
   @JSImport("go", "PathSegment.SvgArc")
   @js.native
   def SvgArc: EnumValue = js.native
-  @scala.inline
-  def SvgArc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SvgArc")(x.asInstanceOf[js.Any])
+  inline def SvgArc_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SvgArc")(x.asInstanceOf[js.Any])
 }

@@ -42,40 +42,29 @@ trait DensifyParametersProperties extends StObject {
 }
 object DensifyParametersProperties {
   
-  @scala.inline
-  def apply(): DensifyParametersProperties = {
+  inline def apply(): DensifyParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DensifyParametersProperties]
   }
   
-  @scala.inline
-  implicit class DensifyParametersPropertiesMutableBuilder[Self <: DensifyParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DensifyParametersProperties](x: Self) {
     
-    @scala.inline
-    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
-    @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
-    @scala.inline
-    def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
+    inline def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
+    inline def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
-    @scala.inline
-    def setMaxSegmentLength(value: Double): Self = StObject.set(x, "maxSegmentLength", value.asInstanceOf[js.Any])
+    inline def setMaxSegmentLength(value: Double): Self = StObject.set(x, "maxSegmentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSegmentLengthUndefined: Self = StObject.set(x, "maxSegmentLength", js.undefined)
+    inline def setMaxSegmentLengthUndefined: Self = StObject.set(x, "maxSegmentLength", js.undefined)
   }
 }

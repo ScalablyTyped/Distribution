@@ -35,46 +35,33 @@ trait OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint extends StObject
 }
 object OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint {
   
-  @scala.inline
-  def apply(client_id: String, client_secret: String): OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint = {
+  inline def apply(client_id: String, client_secret: String): OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint]
   }
   
-  @scala.inline
-  implicit class OauthAuthorizationsGetOrCreateAuthorizationForAppEndpointMutableBuilder[Self <: OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+    inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setNote_url(value: String): Self = StObject.set(x, "note_url", value.asInstanceOf[js.Any])
+    inline def setNote_url(value: String): Self = StObject.set(x, "note_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote_urlUndefined: Self = StObject.set(x, "note_url", js.undefined)
+    inline def setNote_urlUndefined: Self = StObject.set(x, "note_url", js.undefined)
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

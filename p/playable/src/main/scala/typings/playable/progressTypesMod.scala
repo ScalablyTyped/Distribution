@@ -34,8 +34,7 @@ object progressTypesMod {
   }
   object IProgressControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addTimeIndicator: Double => Unit,
       addTimeIndicators: js.Array[Double] => Unit,
       clearTimeIndicators: () => Unit,
@@ -50,35 +49,25 @@ object progressTypesMod {
       __obj.asInstanceOf[IProgressControl]
     }
     
-    @scala.inline
-    implicit class IProgressControlMutableBuilder[Self <: IProgressControl] (val x: Self) extends AnyVal {
+    extension [Self <: IProgressControl](x: Self) {
       
-      @scala.inline
-      def setAddTimeIndicator(value: Double => Unit): Self = StObject.set(x, "addTimeIndicator", js.Any.fromFunction1(value))
+      inline def setAddTimeIndicator(value: Double => Unit): Self = StObject.set(x, "addTimeIndicator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddTimeIndicators(value: js.Array[Double] => Unit): Self = StObject.set(x, "addTimeIndicators", js.Any.fromFunction1(value))
+      inline def setAddTimeIndicators(value: js.Array[Double] => Unit): Self = StObject.set(x, "addTimeIndicators", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearTimeIndicators(value: () => Unit): Self = StObject.set(x, "clearTimeIndicators", js.Any.fromFunction0(value))
+      inline def setClearTimeIndicators(value: () => Unit): Self = StObject.set(x, "clearTimeIndicators", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSeekOnProgressDrag(value: () => Unit): Self = StObject.set(x, "seekOnProgressDrag", js.Any.fromFunction0(value))
+      inline def setSeekOnProgressDrag(value: () => Unit): Self = StObject.set(x, "seekOnProgressDrag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowPreviewOnProgressDrag(value: () => Unit): Self = StObject.set(x, "showPreviewOnProgressDrag", js.Any.fromFunction0(value))
+      inline def setShowPreviewOnProgressDrag(value: () => Unit): Self = StObject.set(x, "showPreviewOnProgressDrag", js.Any.fromFunction0(value))
     }
   }
   
@@ -96,44 +85,32 @@ object progressTypesMod {
   }
   object IProgressControlAPI {
     
-    @scala.inline
-    def apply(): IProgressControlAPI = {
+    inline def apply(): IProgressControlAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProgressControlAPI]
     }
     
-    @scala.inline
-    implicit class IProgressControlAPIMutableBuilder[Self <: IProgressControlAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IProgressControlAPI](x: Self) {
       
-      @scala.inline
-      def setAddTimeIndicator(value: /* time */ Double => Unit): Self = StObject.set(x, "addTimeIndicator", js.Any.fromFunction1(value))
+      inline def setAddTimeIndicator(value: /* time */ Double => Unit): Self = StObject.set(x, "addTimeIndicator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddTimeIndicatorUndefined: Self = StObject.set(x, "addTimeIndicator", js.undefined)
+      inline def setAddTimeIndicatorUndefined: Self = StObject.set(x, "addTimeIndicator", js.undefined)
       
-      @scala.inline
-      def setAddTimeIndicators(value: /* times */ js.Array[Double] => Unit): Self = StObject.set(x, "addTimeIndicators", js.Any.fromFunction1(value))
+      inline def setAddTimeIndicators(value: /* times */ js.Array[Double] => Unit): Self = StObject.set(x, "addTimeIndicators", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddTimeIndicatorsUndefined: Self = StObject.set(x, "addTimeIndicators", js.undefined)
+      inline def setAddTimeIndicatorsUndefined: Self = StObject.set(x, "addTimeIndicators", js.undefined)
       
-      @scala.inline
-      def setClearTimeIndicators(value: () => Unit): Self = StObject.set(x, "clearTimeIndicators", js.Any.fromFunction0(value))
+      inline def setClearTimeIndicators(value: () => Unit): Self = StObject.set(x, "clearTimeIndicators", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearTimeIndicatorsUndefined: Self = StObject.set(x, "clearTimeIndicators", js.undefined)
+      inline def setClearTimeIndicatorsUndefined: Self = StObject.set(x, "clearTimeIndicators", js.undefined)
       
-      @scala.inline
-      def setSeekOnProgressDrag(value: () => Unit): Self = StObject.set(x, "seekOnProgressDrag", js.Any.fromFunction0(value))
+      inline def setSeekOnProgressDrag(value: () => Unit): Self = StObject.set(x, "seekOnProgressDrag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSeekOnProgressDragUndefined: Self = StObject.set(x, "seekOnProgressDrag", js.undefined)
+      inline def setSeekOnProgressDragUndefined: Self = StObject.set(x, "seekOnProgressDrag", js.undefined)
       
-      @scala.inline
-      def setShowPreviewOnProgressDrag(value: () => Unit): Self = StObject.set(x, "showPreviewOnProgressDrag", js.Any.fromFunction0(value))
+      inline def setShowPreviewOnProgressDrag(value: () => Unit): Self = StObject.set(x, "showPreviewOnProgressDrag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowPreviewOnProgressDragUndefined: Self = StObject.set(x, "showPreviewOnProgressDrag", js.undefined)
+      inline def setShowPreviewOnProgressDragUndefined: Self = StObject.set(x, "showPreviewOnProgressDrag", js.undefined)
     }
   }
   
@@ -157,8 +134,7 @@ object progressTypesMod {
   }
   object IProgressViewCallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onChangePlayedPercent: Double => Unit,
       onDragEnd: () => Unit,
       onDragStart: () => Unit,
@@ -172,38 +148,27 @@ object progressTypesMod {
       __obj.asInstanceOf[IProgressViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IProgressViewCallbacksMutableBuilder[Self <: IProgressViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IProgressViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnChangePlayedPercent(value: Double => Unit): Self = StObject.set(x, "onChangePlayedPercent", js.Any.fromFunction1(value))
+      inline def setOnChangePlayedPercent(value: Double => Unit): Self = StObject.set(x, "onChangePlayedPercent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
+      inline def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
+      inline def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSeekToByMouseEnd(value: () => Unit): Self = StObject.set(x, "onSeekToByMouseEnd", js.Any.fromFunction0(value))
+      inline def setOnSeekToByMouseEnd(value: () => Unit): Self = StObject.set(x, "onSeekToByMouseEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSeekToByMouseStart(value: Double => Unit): Self = StObject.set(x, "onSeekToByMouseStart", js.Any.fromFunction1(value))
+      inline def setOnSeekToByMouseStart(value: Double => Unit): Self = StObject.set(x, "onSeekToByMouseStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSyncWithLiveClick(value: () => Unit): Self = StObject.set(x, "onSyncWithLiveClick", js.Any.fromFunction0(value))
+      inline def setOnSyncWithLiveClick(value: () => Unit): Self = StObject.set(x, "onSyncWithLiveClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSyncWithLiveMouseEnter(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onSyncWithLiveMouseEnter", value.asInstanceOf[js.Any])
+      inline def setOnSyncWithLiveMouseEnter(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onSyncWithLiveMouseEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSyncWithLiveMouseEnterFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onSyncWithLiveMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnSyncWithLiveMouseEnterFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onSyncWithLiveMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSyncWithLiveMouseLeave(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onSyncWithLiveMouseLeave", value.asInstanceOf[js.Any])
+      inline def setOnSyncWithLiveMouseLeave(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onSyncWithLiveMouseLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSyncWithLiveMouseLeaveFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onSyncWithLiveMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnSyncWithLiveMouseLeaveFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onSyncWithLiveMouseLeave", js.Any.fromFunction1(value))
     }
   }
   
@@ -219,8 +184,7 @@ object progressTypesMod {
   }
   object IProgressViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: IProgressViewCallbacks,
       textMap: ITextMap,
       theme: IThemeService,
@@ -230,20 +194,15 @@ object progressTypesMod {
       __obj.asInstanceOf[IProgressViewConfig]
     }
     
-    @scala.inline
-    implicit class IProgressViewConfigMutableBuilder[Self <: IProgressViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IProgressViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IProgressViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IProgressViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+      inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+      inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     }
   }
   
@@ -279,8 +238,7 @@ object progressTypesMod {
   }
   object IProgressViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: String,
       buffered: String,
       hidden: String,
@@ -300,50 +258,35 @@ object progressTypesMod {
       __obj.asInstanceOf[IProgressViewStyles]
     }
     
-    @scala.inline
-    implicit class IProgressViewStylesMutableBuilder[Self <: IProgressViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IProgressViewStyles](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuffered(value: String): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+      inline def setBuffered(value: String): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitbox(value: String): Self = StObject.set(x, "hitbox", value.asInstanceOf[js.Any])
+      inline def setHitbox(value: String): Self = StObject.set(x, "hitbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInLive(value: String): Self = StObject.set(x, "inLive", value.asInstanceOf[js.Any])
+      inline def setInLive(value: String): Self = StObject.set(x, "inLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDragging(value: String): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: String): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiveSync(value: String): Self = StObject.set(x, "liveSync", value.asInstanceOf[js.Any])
+      inline def setLiveSync(value: String): Self = StObject.set(x, "liveSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayed(value: String): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
+      inline def setPlayed(value: String): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressBar(value: String): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+      inline def setProgressBar(value: String): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressBarsWrapper(value: String): Self = StObject.set(x, "progressBarsWrapper", value.asInstanceOf[js.Any])
+      inline def setProgressBarsWrapper(value: String): Self = StObject.set(x, "progressBarsWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekBlock(value: String): Self = StObject.set(x, "seekBlock", value.asInstanceOf[js.Any])
+      inline def setSeekBlock(value: String): Self = StObject.set(x, "seekBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekTo(value: String): Self = StObject.set(x, "seekTo", value.asInstanceOf[js.Any])
+      inline def setSeekTo(value: String): Self = StObject.set(x, "seekTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncButton(value: String): Self = StObject.set(x, "syncButton", value.asInstanceOf[js.Any])
+      inline def setSyncButton(value: String): Self = StObject.set(x, "syncButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeIndicators(value: String): Self = StObject.set(x, "timeIndicators", value.asInstanceOf[js.Any])
+      inline def setTimeIndicators(value: String): Self = StObject.set(x, "timeIndicators", value.asInstanceOf[js.Any])
     }
   }
 }

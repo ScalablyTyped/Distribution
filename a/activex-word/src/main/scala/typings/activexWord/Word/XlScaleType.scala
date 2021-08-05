@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlScaleType extends StObject
 object XlScaleType {
   
-  @scala.inline
-  def xlScaleLinear: `-4132` = -4132.asInstanceOf[`-4132`]
+  inline def xlScaleLinear: `-4132` = -4132.asInstanceOf[`-4132`]
   
-  @scala.inline
-  def xlScaleLogarithmic: `-4133` = -4133.asInstanceOf[`-4133`]
+  inline def xlScaleLogarithmic: `-4133` = -4133.asInstanceOf[`-4133`]
 }

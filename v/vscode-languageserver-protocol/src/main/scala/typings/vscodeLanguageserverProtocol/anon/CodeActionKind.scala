@@ -14,16 +14,13 @@ trait CodeActionKind extends StObject {
 }
 object CodeActionKind {
   
-  @scala.inline
-  def apply(codeActionKind: `2`): CodeActionKind = {
+  inline def apply(codeActionKind: `2`): CodeActionKind = {
     val __obj = js.Dynamic.literal(codeActionKind = codeActionKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionKind]
   }
   
-  @scala.inline
-  implicit class CodeActionKindMutableBuilder[Self <: CodeActionKind] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionKind](x: Self) {
     
-    @scala.inline
-    def setCodeActionKind(value: `2`): Self = StObject.set(x, "codeActionKind", value.asInstanceOf[js.Any])
+    inline def setCodeActionKind(value: `2`): Self = StObject.set(x, "codeActionKind", value.asInstanceOf[js.Any])
   }
 }

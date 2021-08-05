@@ -20,31 +20,23 @@ trait OsConstraint extends StObject {
 }
 object OsConstraint {
   
-  @scala.inline
-  def apply(): OsConstraint = {
+  inline def apply(): OsConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OsConstraint]
   }
   
-  @scala.inline
-  implicit class OsConstraintMutableBuilder[Self <: OsConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: OsConstraint](x: Self) {
     
-    @scala.inline
-    def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
+    inline def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
+    inline def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
     
-    @scala.inline
-    def setOsType(value: String): Self = StObject.set(x, "osType", value.asInstanceOf[js.Any])
+    inline def setOsType(value: String): Self = StObject.set(x, "osType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsTypeUndefined: Self = StObject.set(x, "osType", js.undefined)
+    inline def setOsTypeUndefined: Self = StObject.set(x, "osType", js.undefined)
     
-    @scala.inline
-    def setRequireVerifiedChromeOs(value: Boolean): Self = StObject.set(x, "requireVerifiedChromeOs", value.asInstanceOf[js.Any])
+    inline def setRequireVerifiedChromeOs(value: Boolean): Self = StObject.set(x, "requireVerifiedChromeOs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireVerifiedChromeOsUndefined: Self = StObject.set(x, "requireVerifiedChromeOs", js.undefined)
+    inline def setRequireVerifiedChromeOsUndefined: Self = StObject.set(x, "requireVerifiedChromeOs", js.undefined)
   }
 }

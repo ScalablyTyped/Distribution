@@ -20,25 +20,19 @@ trait InteractionsGetRestrictionsForRepoRequestOptions extends StObject {
 }
 object InteractionsGetRestrictionsForRepoRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): InteractionsGetRestrictionsForRepoRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): InteractionsGetRestrictionsForRepoRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/interaction-limits")
     __obj.asInstanceOf[InteractionsGetRestrictionsForRepoRequestOptions]
   }
   
-  @scala.inline
-  implicit class InteractionsGetRestrictionsForRepoRequestOptionsMutableBuilder[Self <: InteractionsGetRestrictionsForRepoRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionsGetRestrictionsForRepoRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

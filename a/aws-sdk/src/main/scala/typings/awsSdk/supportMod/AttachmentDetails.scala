@@ -18,25 +18,19 @@ trait AttachmentDetails extends StObject {
 }
 object AttachmentDetails {
   
-  @scala.inline
-  def apply(): AttachmentDetails = {
+  inline def apply(): AttachmentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentDetails]
   }
   
-  @scala.inline
-  implicit class AttachmentDetailsMutableBuilder[Self <: AttachmentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentDetails](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
     
-    @scala.inline
-    def setFileName(value: FileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: FileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
   }
 }

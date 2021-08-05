@@ -13,16 +13,13 @@ trait SSESpecification extends StObject {
 }
 object SSESpecification {
   
-  @scala.inline
-  def apply(Enabled: SSEEnabled): SSESpecification = {
+  inline def apply(Enabled: SSEEnabled): SSESpecification = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSESpecification]
   }
   
-  @scala.inline
-  implicit class SSESpecificationMutableBuilder[Self <: SSESpecification] (val x: Self) extends AnyVal {
+  extension [Self <: SSESpecification](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

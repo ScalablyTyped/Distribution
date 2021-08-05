@@ -10,8 +10,7 @@ trait UseComboboxGetInputPropsOptions
      with GetPropsWithRefKey
 object UseComboboxGetInputPropsOptions {
   
-  @scala.inline
-  def apply(): UseComboboxGetInputPropsOptions = {
+  inline def apply(): UseComboboxGetInputPropsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseComboboxGetInputPropsOptions]
   }

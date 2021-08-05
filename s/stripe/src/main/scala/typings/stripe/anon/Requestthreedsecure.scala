@@ -20,19 +20,15 @@ trait Requestthreedsecure extends StObject {
 }
 object Requestthreedsecure {
   
-  @scala.inline
-  def apply(): Requestthreedsecure = {
+  inline def apply(): Requestthreedsecure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Requestthreedsecure]
   }
   
-  @scala.inline
-  implicit class RequestthreedsecureMutableBuilder[Self <: Requestthreedsecure] (val x: Self) extends AnyVal {
+  extension [Self <: Requestthreedsecure](x: Self) {
     
-    @scala.inline
-    def setRequest_three_d_secure(value: automatic | any): Self = StObject.set(x, "request_three_d_secure", value.asInstanceOf[js.Any])
+    inline def setRequest_three_d_secure(value: automatic | any): Self = StObject.set(x, "request_three_d_secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_three_d_secureUndefined: Self = StObject.set(x, "request_three_d_secure", js.undefined)
+    inline def setRequest_three_d_secureUndefined: Self = StObject.set(x, "request_three_d_secure", js.undefined)
   }
 }

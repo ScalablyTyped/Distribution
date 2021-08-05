@@ -10,16 +10,13 @@ trait NotificationId extends StObject {
 }
 object NotificationId {
   
-  @scala.inline
-  def apply(notificationId: String): NotificationId = {
+  inline def apply(notificationId: String): NotificationId = {
     val __obj = js.Dynamic.literal(notificationId = notificationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationId]
   }
   
-  @scala.inline
-  implicit class NotificationIdMutableBuilder[Self <: NotificationId] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationId](x: Self) {
     
-    @scala.inline
-    def setNotificationId(value: String): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
+    inline def setNotificationId(value: String): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
   }
 }

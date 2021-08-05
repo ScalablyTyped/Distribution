@@ -31,8 +31,7 @@ trait TextBoxSnapshot extends StObject {
 }
 object TextBoxSnapshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: js.Array[Rectangle],
     layoutIndex: js.Array[integer],
     length: js.Array[integer],
@@ -42,31 +41,22 @@ object TextBoxSnapshot {
     __obj.asInstanceOf[TextBoxSnapshot]
   }
   
-  @scala.inline
-  implicit class TextBoxSnapshotMutableBuilder[Self <: TextBoxSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: TextBoxSnapshot](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Array[Rectangle]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Array[Rectangle]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsVarargs(value: Rectangle*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Rectangle*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
-    @scala.inline
-    def setLayoutIndex(value: js.Array[integer]): Self = StObject.set(x, "layoutIndex", value.asInstanceOf[js.Any])
+    inline def setLayoutIndex(value: js.Array[integer]): Self = StObject.set(x, "layoutIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutIndexVarargs(value: integer*): Self = StObject.set(x, "layoutIndex", js.Array(value :_*))
+    inline def setLayoutIndexVarargs(value: integer*): Self = StObject.set(x, "layoutIndex", js.Array(value :_*))
     
-    @scala.inline
-    def setLength(value: js.Array[integer]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: js.Array[integer]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthVarargs(value: integer*): Self = StObject.set(x, "length", js.Array(value :_*))
+    inline def setLengthVarargs(value: integer*): Self = StObject.set(x, "length", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: js.Array[integer]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Array[integer]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartVarargs(value: integer*): Self = StObject.set(x, "start", js.Array(value :_*))
+    inline def setStartVarargs(value: integer*): Self = StObject.set(x, "start", js.Array(value :_*))
   }
 }

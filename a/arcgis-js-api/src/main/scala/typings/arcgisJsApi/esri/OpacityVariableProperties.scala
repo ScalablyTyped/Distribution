@@ -24,28 +24,21 @@ trait OpacityVariableProperties
 }
 object OpacityVariableProperties {
   
-  @scala.inline
-  def apply(): OpacityVariableProperties = {
+  inline def apply(): OpacityVariableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpacityVariableProperties]
   }
   
-  @scala.inline
-  implicit class OpacityVariablePropertiesMutableBuilder[Self <: OpacityVariableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OpacityVariableProperties](x: Self) {
     
-    @scala.inline
-    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

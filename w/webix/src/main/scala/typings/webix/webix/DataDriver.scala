@@ -22,8 +22,7 @@ trait DataDriver extends StObject {
 }
 object DataDriver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     csv: js.Any,
     excel: String,
     html: js.Any,
@@ -36,28 +35,20 @@ object DataDriver {
     __obj.asInstanceOf[DataDriver]
   }
   
-  @scala.inline
-  implicit class DataDriverMutableBuilder[Self <: DataDriver] (val x: Self) extends AnyVal {
+  extension [Self <: DataDriver](x: Self) {
     
-    @scala.inline
-    def setCsv(value: js.Any): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    inline def setCsv(value: js.Any): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
+    inline def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmltable(value: js.Any): Self = StObject.set(x, "htmltable", value.asInstanceOf[js.Any])
+    inline def setHtmltable(value: js.Any): Self = StObject.set(x, "htmltable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsarray(value: js.Any): Self = StObject.set(x, "jsarray", value.asInstanceOf[js.Any])
+    inline def setJsarray(value: js.Any): Self = StObject.set(x, "jsarray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXml(value: js.Any): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: js.Any): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ListLedgersRequest extends StObject {
 }
 object ListLedgersRequest {
   
-  @scala.inline
-  def apply(): ListLedgersRequest = {
+  inline def apply(): ListLedgersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLedgersRequest]
   }
   
-  @scala.inline
-  implicit class ListLedgersRequestMutableBuilder[Self <: ListLedgersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLedgersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

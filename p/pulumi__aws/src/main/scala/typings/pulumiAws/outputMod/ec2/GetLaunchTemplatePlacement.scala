@@ -22,8 +22,7 @@ trait GetLaunchTemplatePlacement extends StObject {
 }
 object GetLaunchTemplatePlacement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     affinity: String,
     availabilityZone: String,
     groupName: String,
@@ -36,28 +35,20 @@ object GetLaunchTemplatePlacement {
     __obj.asInstanceOf[GetLaunchTemplatePlacement]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplatePlacementMutableBuilder[Self <: GetLaunchTemplatePlacement] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplatePlacement](x: Self) {
     
-    @scala.inline
-    def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
+    inline def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
+    inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionNumber(value: Double): Self = StObject.set(x, "partitionNumber", value.asInstanceOf[js.Any])
+    inline def setPartitionNumber(value: Double): Self = StObject.set(x, "partitionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadDomain(value: String): Self = StObject.set(x, "spreadDomain", value.asInstanceOf[js.Any])
+    inline def setSpreadDomain(value: String): Self = StObject.set(x, "spreadDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancy(value: String): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
+    inline def setTenancy(value: String): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
   }
 }

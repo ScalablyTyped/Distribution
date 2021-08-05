@@ -25,25 +25,18 @@ object ElementModes {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def NOCREATE: `16` = 16.asInstanceOf[`16`]
+    inline def NOCREATE: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def READ: `1` = 1.asInstanceOf[`1`]
+    inline def READ: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def READWRITE: `7` = 7.asInstanceOf[`7`]
+    inline def READWRITE: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def SEEKABLE: `2` = 2.asInstanceOf[`2`]
+    inline def SEEKABLE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SEEKABLEREAD: `3` = 3.asInstanceOf[`3`]
+    inline def SEEKABLEREAD: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def TRUNCATE: `8` = 8.asInstanceOf[`8`]
+    inline def TRUNCATE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def WRITE: `4` = 4.asInstanceOf[`4`]
+    inline def WRITE: `4` = 4.asInstanceOf[`4`]
   }
 }

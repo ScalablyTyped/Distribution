@@ -18,19 +18,15 @@ trait DescribeWorkflowTypeInput extends StObject {
 }
 object DescribeWorkflowTypeInput {
   
-  @scala.inline
-  def apply(domain: DomainName, workflowType: WorkflowType): DescribeWorkflowTypeInput = {
+  inline def apply(domain: DomainName, workflowType: WorkflowType): DescribeWorkflowTypeInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkflowTypeInput]
   }
   
-  @scala.inline
-  implicit class DescribeWorkflowTypeInputMutableBuilder[Self <: DescribeWorkflowTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkflowTypeInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

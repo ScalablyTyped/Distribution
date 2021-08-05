@@ -14,25 +14,19 @@ trait SourceOperationResponse extends StObject {
 }
 object SourceOperationResponse {
   
-  @scala.inline
-  def apply(): SourceOperationResponse = {
+  inline def apply(): SourceOperationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceOperationResponse]
   }
   
-  @scala.inline
-  implicit class SourceOperationResponseMutableBuilder[Self <: SourceOperationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SourceOperationResponse](x: Self) {
     
-    @scala.inline
-    def setGetMetadata(value: SourceGetMetadataResponse): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
+    inline def setGetMetadata(value: SourceGetMetadataResponse): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
+    inline def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
-    @scala.inline
-    def setSplit(value: SourceSplitResponse): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    inline def setSplit(value: SourceSplitResponse): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
   }
 }

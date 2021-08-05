@@ -24,8 +24,7 @@ trait XDocumentIndexesSupplier
 }
 object XDocumentIndexesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentIndexes: XIndexAccess,
     acquire: () => Unit,
     getDocumentIndexes: () => XIndexAccess,
@@ -36,13 +35,10 @@ object XDocumentIndexesSupplier {
     __obj.asInstanceOf[XDocumentIndexesSupplier]
   }
   
-  @scala.inline
-  implicit class XDocumentIndexesSupplierMutableBuilder[Self <: XDocumentIndexesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentIndexesSupplier](x: Self) {
     
-    @scala.inline
-    def setDocumentIndexes(value: XIndexAccess): Self = StObject.set(x, "DocumentIndexes", value.asInstanceOf[js.Any])
+    inline def setDocumentIndexes(value: XIndexAccess): Self = StObject.set(x, "DocumentIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDocumentIndexes(value: () => XIndexAccess): Self = StObject.set(x, "getDocumentIndexes", js.Any.fromFunction0(value))
+    inline def setGetDocumentIndexes(value: () => XIndexAccess): Self = StObject.set(x, "getDocumentIndexes", js.Any.fromFunction0(value))
   }
 }

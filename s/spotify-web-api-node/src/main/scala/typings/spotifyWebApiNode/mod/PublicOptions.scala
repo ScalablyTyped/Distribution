@@ -10,19 +10,15 @@ trait PublicOptions extends StObject {
 }
 object PublicOptions {
   
-  @scala.inline
-  def apply(): PublicOptions = {
+  inline def apply(): PublicOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicOptions]
   }
   
-  @scala.inline
-  implicit class PublicOptionsMutableBuilder[Self <: PublicOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PublicOptions](x: Self) {
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
   }
 }

@@ -38,8 +38,7 @@ trait ItemResponse extends StObject {
 }
 object ItemResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFeedback: () => QuizFeedback,
     getItem: () => Item,
     getResponse: () => (js.Array[js.Array[String] | String]) | String,
@@ -51,25 +50,18 @@ object ItemResponse {
     __obj.asInstanceOf[ItemResponse]
   }
   
-  @scala.inline
-  implicit class ItemResponseMutableBuilder[Self <: ItemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ItemResponse](x: Self) {
     
-    @scala.inline
-    def setGetFeedback(value: () => QuizFeedback): Self = StObject.set(x, "getFeedback", js.Any.fromFunction0(value))
+    inline def setGetFeedback(value: () => QuizFeedback): Self = StObject.set(x, "getFeedback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItem(value: () => Item): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
+    inline def setGetItem(value: () => Item): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResponse(value: () => (js.Array[js.Array[String] | String]) | String): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
+    inline def setGetResponse(value: () => (js.Array[js.Array[String] | String]) | String): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScore(value: () => Double): Self = StObject.set(x, "getScore", js.Any.fromFunction0(value))
+    inline def setGetScore(value: () => Double): Self = StObject.set(x, "getScore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFeedback(value: js.Any => ItemResponse): Self = StObject.set(x, "setFeedback", js.Any.fromFunction1(value))
+    inline def setSetFeedback(value: js.Any => ItemResponse): Self = StObject.set(x, "setFeedback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScore(value: js.Any => ItemResponse): Self = StObject.set(x, "setScore", js.Any.fromFunction1(value))
+    inline def setSetScore(value: js.Any => ItemResponse): Self = StObject.set(x, "setScore", js.Any.fromFunction1(value))
   }
 }

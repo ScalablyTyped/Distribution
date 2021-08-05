@@ -20,23 +20,18 @@ object ec2transitgateway {
   }
   object GetDirectConnectGatewayAttachmentFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetDirectConnectGatewayAttachmentFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetDirectConnectGatewayAttachmentFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDirectConnectGatewayAttachmentFilter]
     }
     
-    @scala.inline
-    implicit class GetDirectConnectGatewayAttachmentFilterMutableBuilder[Self <: GetDirectConnectGatewayAttachmentFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectConnectGatewayAttachmentFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -56,23 +51,18 @@ object ec2transitgateway {
   }
   object GetPeeringAttachmentFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetPeeringAttachmentFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetPeeringAttachmentFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPeeringAttachmentFilter]
     }
     
-    @scala.inline
-    implicit class GetPeeringAttachmentFilterMutableBuilder[Self <: GetPeeringAttachmentFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetPeeringAttachmentFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -90,23 +80,18 @@ object ec2transitgateway {
   }
   object GetRouteTableFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetRouteTableFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetRouteTableFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRouteTableFilter]
     }
     
-    @scala.inline
-    implicit class GetRouteTableFilterMutableBuilder[Self <: GetRouteTableFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetRouteTableFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -124,23 +109,18 @@ object ec2transitgateway {
   }
   object GetTransitGatewayFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetTransitGatewayFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetTransitGatewayFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTransitGatewayFilter]
     }
     
-    @scala.inline
-    implicit class GetTransitGatewayFilterMutableBuilder[Self <: GetTransitGatewayFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetTransitGatewayFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -158,23 +138,18 @@ object ec2transitgateway {
   }
   object GetVpcAttachmentFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetVpcAttachmentFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetVpcAttachmentFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVpcAttachmentFilter]
     }
     
-    @scala.inline
-    implicit class GetVpcAttachmentFilterMutableBuilder[Self <: GetVpcAttachmentFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpcAttachmentFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -192,23 +167,18 @@ object ec2transitgateway {
   }
   object GetVpnAttachmentFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetVpnAttachmentFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetVpnAttachmentFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVpnAttachmentFilter]
     }
     
-    @scala.inline
-    implicit class GetVpnAttachmentFilterMutableBuilder[Self <: GetVpnAttachmentFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpnAttachmentFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

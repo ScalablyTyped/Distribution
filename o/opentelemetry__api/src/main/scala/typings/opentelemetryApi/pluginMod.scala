@@ -82,56 +82,40 @@ object pluginMod {
   }
   object PluginConfig {
     
-    @scala.inline
-    def apply(): PluginConfig = {
+    inline def apply(): PluginConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginConfig]
     }
     
-    @scala.inline
-    implicit class PluginConfigMutableBuilder[Self <: PluginConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PluginConfig](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEnhancedDatabaseReporting(value: Boolean): Self = StObject.set(x, "enhancedDatabaseReporting", value.asInstanceOf[js.Any])
+      inline def setEnhancedDatabaseReporting(value: Boolean): Self = StObject.set(x, "enhancedDatabaseReporting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedDatabaseReportingUndefined: Self = StObject.set(x, "enhancedDatabaseReporting", js.undefined)
+      inline def setEnhancedDatabaseReportingUndefined: Self = StObject.set(x, "enhancedDatabaseReporting", js.undefined)
       
-      @scala.inline
-      def setIgnoreMethods(value: js.Array[String]): Self = StObject.set(x, "ignoreMethods", value.asInstanceOf[js.Any])
+      inline def setIgnoreMethods(value: js.Array[String]): Self = StObject.set(x, "ignoreMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreMethodsUndefined: Self = StObject.set(x, "ignoreMethods", js.undefined)
+      inline def setIgnoreMethodsUndefined: Self = StObject.set(x, "ignoreMethods", js.undefined)
       
-      @scala.inline
-      def setIgnoreMethodsVarargs(value: String*): Self = StObject.set(x, "ignoreMethods", js.Array(value :_*))
+      inline def setIgnoreMethodsVarargs(value: String*): Self = StObject.set(x, "ignoreMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreUrls", value.asInstanceOf[js.Any])
+      inline def setIgnoreUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUrlsUndefined: Self = StObject.set(x, "ignoreUrls", js.undefined)
+      inline def setIgnoreUrlsUndefined: Self = StObject.set(x, "ignoreUrls", js.undefined)
       
-      @scala.inline
-      def setIgnoreUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreUrls", js.Array(value :_*))
+      inline def setIgnoreUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setInternalFilesExports(value: PluginInternalFiles): Self = StObject.set(x, "internalFilesExports", value.asInstanceOf[js.Any])
+      inline def setInternalFilesExports(value: PluginInternalFiles): Self = StObject.set(x, "internalFilesExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalFilesExportsUndefined: Self = StObject.set(x, "internalFilesExports", js.undefined)
+      inline def setInternalFilesExportsUndefined: Self = StObject.set(x, "internalFilesExports", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   

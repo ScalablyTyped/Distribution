@@ -49,8 +49,7 @@ trait XServiceTypeDescription2
 }
 object XServiceTypeDescription2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Constructors: SafeArray[XServiceConstructorDescription],
     Interface: XTypeDescription,
     MandatoryInterfaces: SafeArray[XInterfaceTypeDescription],
@@ -78,22 +77,16 @@ object XServiceTypeDescription2 {
     __obj.asInstanceOf[XServiceTypeDescription2]
   }
   
-  @scala.inline
-  implicit class XServiceTypeDescription2MutableBuilder[Self <: XServiceTypeDescription2] (val x: Self) extends AnyVal {
+  extension [Self <: XServiceTypeDescription2](x: Self) {
     
-    @scala.inline
-    def setConstructors(value: SafeArray[XServiceConstructorDescription]): Self = StObject.set(x, "Constructors", value.asInstanceOf[js.Any])
+    inline def setConstructors(value: SafeArray[XServiceConstructorDescription]): Self = StObject.set(x, "Constructors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConstructors(value: () => SafeArray[XServiceConstructorDescription]): Self = StObject.set(x, "getConstructors", js.Any.fromFunction0(value))
+    inline def setGetConstructors(value: () => SafeArray[XServiceConstructorDescription]): Self = StObject.set(x, "getConstructors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInterface(value: () => XTypeDescription): Self = StObject.set(x, "getInterface", js.Any.fromFunction0(value))
+    inline def setGetInterface(value: () => XTypeDescription): Self = StObject.set(x, "getInterface", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInterface(value: XTypeDescription): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: XTypeDescription): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSingleInterfaceBased(value: () => Boolean): Self = StObject.set(x, "isSingleInterfaceBased", js.Any.fromFunction0(value))
+    inline def setIsSingleInterfaceBased(value: () => Boolean): Self = StObject.set(x, "isSingleInterfaceBased", js.Any.fromFunction0(value))
   }
 }

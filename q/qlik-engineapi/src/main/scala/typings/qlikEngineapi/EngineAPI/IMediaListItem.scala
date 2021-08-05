@@ -30,19 +30,15 @@ trait IMediaListItem extends StObject {
 }
 object IMediaListItem {
   
-  @scala.inline
-  def apply(qUrl: String, qUrlDef: String): IMediaListItem = {
+  inline def apply(qUrl: String, qUrlDef: String): IMediaListItem = {
     val __obj = js.Dynamic.literal(qUrl = qUrl.asInstanceOf[js.Any], qUrlDef = qUrlDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaListItem]
   }
   
-  @scala.inline
-  implicit class IMediaListItemMutableBuilder[Self <: IMediaListItem] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaListItem](x: Self) {
     
-    @scala.inline
-    def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
+    inline def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUrlDef(value: String): Self = StObject.set(x, "qUrlDef", value.asInstanceOf[js.Any])
+    inline def setQUrlDef(value: String): Self = StObject.set(x, "qUrlDef", value.asInstanceOf[js.Any])
   }
 }

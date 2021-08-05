@@ -33,8 +33,7 @@ trait ElevationLayerElevationQueryResult
 }
 object ElevationLayerElevationQueryResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     geometry: Point | Multipoint | Polyline,
     hasOwnProperty: PropertyKey => Boolean,
@@ -45,22 +44,16 @@ object ElevationLayerElevationQueryResult {
     __obj.asInstanceOf[ElevationLayerElevationQueryResult]
   }
   
-  @scala.inline
-  implicit class ElevationLayerElevationQueryResultMutableBuilder[Self <: ElevationLayerElevationQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationLayerElevationQueryResult](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: Point | Multipoint | Polyline): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Point | Multipoint | Polyline): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleInfo(value: js.Array[ElevationLayerElevationQueryResultSampleInfo]): Self = StObject.set(x, "sampleInfo", value.asInstanceOf[js.Any])
+    inline def setSampleInfo(value: js.Array[ElevationLayerElevationQueryResultSampleInfo]): Self = StObject.set(x, "sampleInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleInfoUndefined: Self = StObject.set(x, "sampleInfo", js.undefined)
+    inline def setSampleInfoUndefined: Self = StObject.set(x, "sampleInfo", js.undefined)
     
-    @scala.inline
-    def setSampleInfoVarargs(value: ElevationLayerElevationQueryResultSampleInfo*): Self = StObject.set(x, "sampleInfo", js.Array(value :_*))
+    inline def setSampleInfoVarargs(value: ElevationLayerElevationQueryResultSampleInfo*): Self = StObject.set(x, "sampleInfo", js.Array(value :_*))
   }
 }

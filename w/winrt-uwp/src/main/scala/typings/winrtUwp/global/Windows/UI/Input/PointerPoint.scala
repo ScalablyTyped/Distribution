@@ -59,8 +59,7 @@ object PointerPoint {
     * @return The pointer property values.
     */
   /* static member */
-  @scala.inline
-  def getCurrentPoint(pointerId: Double): typings.winrtUwp.Windows.UI.Input.PointerPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Input.PointerPoint]
+  inline def getCurrentPoint(pointerId: Double): typings.winrtUwp.Windows.UI.Input.PointerPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Input.PointerPoint]
   /**
     * Retrieves the transformed information for the specified pointer.
     * @param pointerId The ID of the pointer.
@@ -68,8 +67,7 @@ object PointerPoint {
     * @return The pointer property values.
     */
   /* static member */
-  @scala.inline
-  def getCurrentPoint(pointerId: Double, transform: IPointerPointTransform): typings.winrtUwp.Windows.UI.Input.PointerPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.UI.Input.PointerPoint]
+  inline def getCurrentPoint(pointerId: Double, transform: IPointerPointTransform): typings.winrtUwp.Windows.UI.Input.PointerPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.UI.Input.PointerPoint]
   
   /**
     * Retrieves position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
@@ -77,8 +75,7 @@ object PointerPoint {
     * @return The transformed pointer properties (current and historic).
     */
   /* static member */
-  @scala.inline
-  def getIntermediatePoints(pointerId: Double): IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint]]
+  inline def getIntermediatePoints(pointerId: Double): IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint]]
   /**
     * Retrieves the transformed position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
     * @param pointerId The ID of the pointer.
@@ -86,6 +83,5 @@ object PointerPoint {
     * @return The transformed pointer properties (current and historic).
     */
   /* static member */
-  @scala.inline
-  def getIntermediatePoints(pointerId: Double, transform: IPointerPointTransform): IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint]]
+  inline def getIntermediatePoints(pointerId: Double, transform: IPointerPointTransform): IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[IVector[typings.winrtUwp.Windows.UI.Input.PointerPoint]]
 }

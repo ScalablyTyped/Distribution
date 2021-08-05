@@ -10,16 +10,13 @@ trait WrappedSketchDocument extends StObject {
 }
 object WrappedSketchDocument {
   
-  @scala.inline
-  def apply(sketchObject: SketchDocument | SketchDocumentData): WrappedSketchDocument = {
+  inline def apply(sketchObject: SketchDocument | SketchDocumentData): WrappedSketchDocument = {
     val __obj = js.Dynamic.literal(sketchObject = sketchObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedSketchDocument]
   }
   
-  @scala.inline
-  implicit class WrappedSketchDocumentMutableBuilder[Self <: WrappedSketchDocument] (val x: Self) extends AnyVal {
+  extension [Self <: WrappedSketchDocument](x: Self) {
     
-    @scala.inline
-    def setSketchObject(value: SketchDocument | SketchDocumentData): Self = StObject.set(x, "sketchObject", value.asInstanceOf[js.Any])
+    inline def setSketchObject(value: SketchDocument | SketchDocumentData): Self = StObject.set(x, "sketchObject", value.asInstanceOf[js.Any])
   }
 }

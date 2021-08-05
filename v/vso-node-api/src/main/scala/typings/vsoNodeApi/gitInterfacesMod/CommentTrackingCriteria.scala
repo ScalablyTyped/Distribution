@@ -43,8 +43,7 @@ trait CommentTrackingCriteria extends StObject {
 }
 object CommentTrackingCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     firstComparingIteration: Double,
     origFilePath: String,
     origLeftFileEnd: CommentPosition,
@@ -57,28 +56,20 @@ object CommentTrackingCriteria {
     __obj.asInstanceOf[CommentTrackingCriteria]
   }
   
-  @scala.inline
-  implicit class CommentTrackingCriteriaMutableBuilder[Self <: CommentTrackingCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: CommentTrackingCriteria](x: Self) {
     
-    @scala.inline
-    def setFirstComparingIteration(value: Double): Self = StObject.set(x, "firstComparingIteration", value.asInstanceOf[js.Any])
+    inline def setFirstComparingIteration(value: Double): Self = StObject.set(x, "firstComparingIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigFilePath(value: String): Self = StObject.set(x, "origFilePath", value.asInstanceOf[js.Any])
+    inline def setOrigFilePath(value: String): Self = StObject.set(x, "origFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigLeftFileEnd(value: CommentPosition): Self = StObject.set(x, "origLeftFileEnd", value.asInstanceOf[js.Any])
+    inline def setOrigLeftFileEnd(value: CommentPosition): Self = StObject.set(x, "origLeftFileEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigLeftFileStart(value: CommentPosition): Self = StObject.set(x, "origLeftFileStart", value.asInstanceOf[js.Any])
+    inline def setOrigLeftFileStart(value: CommentPosition): Self = StObject.set(x, "origLeftFileStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigRightFileEnd(value: CommentPosition): Self = StObject.set(x, "origRightFileEnd", value.asInstanceOf[js.Any])
+    inline def setOrigRightFileEnd(value: CommentPosition): Self = StObject.set(x, "origRightFileEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigRightFileStart(value: CommentPosition): Self = StObject.set(x, "origRightFileStart", value.asInstanceOf[js.Any])
+    inline def setOrigRightFileStart(value: CommentPosition): Self = StObject.set(x, "origRightFileStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondComparingIteration(value: Double): Self = StObject.set(x, "secondComparingIteration", value.asInstanceOf[js.Any])
+    inline def setSecondComparingIteration(value: Double): Self = StObject.set(x, "secondComparingIteration", value.asInstanceOf[js.Any])
   }
 }

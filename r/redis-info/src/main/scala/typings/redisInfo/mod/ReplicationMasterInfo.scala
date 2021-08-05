@@ -11,16 +11,13 @@ trait ReplicationMasterInfo extends StObject {
 }
 object ReplicationMasterInfo {
   
-  @scala.inline
-  def apply(): ReplicationMasterInfo = {
+  inline def apply(): ReplicationMasterInfo = {
     val __obj = js.Dynamic.literal(role = "master")
     __obj.asInstanceOf[ReplicationMasterInfo]
   }
   
-  @scala.inline
-  implicit class ReplicationMasterInfoMutableBuilder[Self <: ReplicationMasterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationMasterInfo](x: Self) {
     
-    @scala.inline
-    def setRole(value: master): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: master): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

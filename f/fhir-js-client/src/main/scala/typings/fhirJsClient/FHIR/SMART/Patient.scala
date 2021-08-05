@@ -28,22 +28,17 @@ trait Patient extends StObject {
 }
 object Patient {
   
-  @scala.inline
-  def apply(api: Api, id: String, read: () => js.Promise[Response]): Patient = {
+  inline def apply(api: Api, id: String, read: () => js.Promise[Response]): Patient = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], read = js.Any.fromFunction0(read))
     __obj.asInstanceOf[Patient]
   }
   
-  @scala.inline
-  implicit class PatientMutableBuilder[Self <: Patient] (val x: Self) extends AnyVal {
+  extension [Self <: Patient](x: Self) {
     
-    @scala.inline
-    def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: () => js.Promise[Response]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => js.Promise[Response]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
   }
 }

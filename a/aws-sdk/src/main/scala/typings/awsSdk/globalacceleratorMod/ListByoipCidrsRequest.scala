@@ -18,25 +18,19 @@ trait ListByoipCidrsRequest extends StObject {
 }
 object ListByoipCidrsRequest {
   
-  @scala.inline
-  def apply(): ListByoipCidrsRequest = {
+  inline def apply(): ListByoipCidrsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListByoipCidrsRequest]
   }
   
-  @scala.inline
-  implicit class ListByoipCidrsRequestMutableBuilder[Self <: ListByoipCidrsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListByoipCidrsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

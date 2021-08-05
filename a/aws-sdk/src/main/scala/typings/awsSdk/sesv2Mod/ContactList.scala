@@ -18,25 +18,19 @@ trait ContactList extends StObject {
 }
 object ContactList {
   
-  @scala.inline
-  def apply(): ContactList = {
+  inline def apply(): ContactList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactList]
   }
   
-  @scala.inline
-  implicit class ContactListMutableBuilder[Self <: ContactList] (val x: Self) extends AnyVal {
+  extension [Self <: ContactList](x: Self) {
     
-    @scala.inline
-    def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
+    inline def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactListNameUndefined: Self = StObject.set(x, "ContactListName", js.undefined)
+    inline def setContactListNameUndefined: Self = StObject.set(x, "ContactListName", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
   }
 }

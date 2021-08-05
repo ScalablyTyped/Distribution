@@ -46,8 +46,7 @@ trait Gradient extends StObject {
 }
 object Gradient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Angle: Double,
     Border: Double,
     EndColor: Color,
@@ -63,37 +62,26 @@ object Gradient {
     __obj.asInstanceOf[Gradient]
   }
   
-  @scala.inline
-  implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
+  extension [Self <: Gradient](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndColor(value: Color): Self = StObject.set(x, "EndColor", value.asInstanceOf[js.Any])
+    inline def setEndColor(value: Color): Self = StObject.set(x, "EndColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIntensity(value: Double): Self = StObject.set(x, "EndIntensity", value.asInstanceOf[js.Any])
+    inline def setEndIntensity(value: Double): Self = StObject.set(x, "EndIntensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColor(value: Color): Self = StObject.set(x, "StartColor", value.asInstanceOf[js.Any])
+    inline def setStartColor(value: Color): Self = StObject.set(x, "StartColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIntensity(value: Double): Self = StObject.set(x, "StartIntensity", value.asInstanceOf[js.Any])
+    inline def setStartIntensity(value: Double): Self = StObject.set(x, "StartIntensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepCount(value: Double): Self = StObject.set(x, "StepCount", value.asInstanceOf[js.Any])
+    inline def setStepCount(value: Double): Self = StObject.set(x, "StepCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: GradientStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: GradientStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOffset(value: Double): Self = StObject.set(x, "XOffset", value.asInstanceOf[js.Any])
+    inline def setXOffset(value: Double): Self = StObject.set(x, "XOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffset(value: Double): Self = StObject.set(x, "YOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double): Self = StObject.set(x, "YOffset", value.asInstanceOf[js.Any])
   }
 }

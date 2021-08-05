@@ -31,8 +31,7 @@ object global {
       *     console.log('starting')
       * })
       */
-    @scala.inline
-    def apply(options: Options): Events = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Events]
+    inline def apply(options: Options): Events = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Events]
     
     @JSGlobal("TileReduce")
     @js.native

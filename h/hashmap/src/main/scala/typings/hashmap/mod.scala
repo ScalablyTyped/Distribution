@@ -267,8 +267,7 @@ object mod {
   }
   object HashMap {
     
-    @scala.inline
-    def apply[TKey, TValue](
+    inline def apply[TKey, TValue](
       clear: () => HashMap[TKey, TValue],
       copy: HashMap[TKey, TValue] => HashMap[TKey, TValue],
       count: () => Double,
@@ -288,50 +287,35 @@ object mod {
       __obj.asInstanceOf[HashMap[TKey, TValue]]
     }
     
-    @scala.inline
-    implicit class HashMapMutableBuilder[Self <: HashMap[?, ?], TKey, TValue] (val x: Self & (HashMap[TKey, TValue])) extends AnyVal {
+    extension [Self <: HashMap[?, ?], TKey, TValue](x: Self & (HashMap[TKey, TValue])) {
       
-      @scala.inline
-      def setClear(value: () => HashMap[TKey, TValue]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => HashMap[TKey, TValue]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCopy(value: HashMap[TKey, TValue] => HashMap[TKey, TValue]): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+      inline def setCopy(value: HashMap[TKey, TValue] => HashMap[TKey, TValue]): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+      inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: TKey => HashMap[TKey, TValue]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: TKey => HashMap[TKey, TValue]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntries(value: () => js.Array[js.Tuple2[TKey, TValue]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntries(value: () => js.Array[js.Tuple2[TKey, TValue]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setForEach(value: js.Function2[/* value */ TValue, /* key */ TKey, Unit] => HashMap[TKey, TValue]): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function2[/* value */ TValue, /* key */ TKey, Unit] => HashMap[TKey, TValue]): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: TKey => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: TKey => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: TKey => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: TKey => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: () => js.Array[TKey]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => js.Array[TKey]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMulti(value: /* repeated */ TKey | TValue => HashMap[TKey, TValue]): Self = StObject.set(x, "multi", js.Any.fromFunction1(value))
+      inline def setMulti(value: /* repeated */ TKey | TValue => HashMap[TKey, TValue]): Self = StObject.set(x, "multi", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: TKey => HashMap[TKey, TValue]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: TKey => HashMap[TKey, TValue]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSearch(value: TValue => TKey): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(value: TValue => TKey): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (TKey, TValue) => HashMap[TKey, TValue]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (TKey, TValue) => HashMap[TKey, TValue]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValues(value: () => js.Array[TValue]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValues(value: () => js.Array[TValue]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
     }
   }
 }

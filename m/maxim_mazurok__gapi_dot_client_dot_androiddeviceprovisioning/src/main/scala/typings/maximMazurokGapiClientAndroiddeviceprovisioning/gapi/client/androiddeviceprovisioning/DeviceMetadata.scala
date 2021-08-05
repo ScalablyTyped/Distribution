@@ -16,23 +16,19 @@ trait DeviceMetadata extends StObject {
 }
 object DeviceMetadata {
   
-  @scala.inline
-  def apply(): DeviceMetadata = {
+  inline def apply(): DeviceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceMetadata]
   }
   
-  @scala.inline
-  implicit class DeviceMetadataMutableBuilder[Self <: DeviceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceMetadata](x: Self) {
     
-    @scala.inline
-    def setEntries(
+    inline def setEntries(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientAndroiddeviceprovisioning.maximMazurokGapiClientAndroiddeviceprovisioningStrings.DeviceMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
   }
 }

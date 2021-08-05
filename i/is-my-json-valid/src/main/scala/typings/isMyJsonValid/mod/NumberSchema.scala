@@ -13,17 +13,14 @@ trait NumberSchema
 }
 object NumberSchema {
   
-  @scala.inline
-  def apply(): NumberSchema = {
+  inline def apply(): NumberSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[NumberSchema]
   }
   
-  @scala.inline
-  implicit class NumberSchemaMutableBuilder[Self <: NumberSchema] (val x: Self) extends AnyVal {
+  extension [Self <: NumberSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

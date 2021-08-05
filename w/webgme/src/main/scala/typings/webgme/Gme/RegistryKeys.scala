@@ -10,16 +10,13 @@ trait RegistryKeys extends StObject {
 }
 object RegistryKeys {
   
-  @scala.inline
-  def apply(POSITION: String): RegistryKeys = {
+  inline def apply(POSITION: String): RegistryKeys = {
     val __obj = js.Dynamic.literal(POSITION = POSITION.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistryKeys]
   }
   
-  @scala.inline
-  implicit class RegistryKeysMutableBuilder[Self <: RegistryKeys] (val x: Self) extends AnyVal {
+  extension [Self <: RegistryKeys](x: Self) {
     
-    @scala.inline
-    def setPOSITION(value: String): Self = StObject.set(x, "POSITION", value.asInstanceOf[js.Any])
+    inline def setPOSITION(value: String): Self = StObject.set(x, "POSITION", value.asInstanceOf[js.Any])
   }
 }

@@ -35,39 +35,30 @@ object cssIconSetOptionsMod {
   }
   object CssIconSetOptions {
     
-    @scala.inline
-    def apply(): CssIconSetOptions = {
+    inline def apply(): CssIconSetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CssIconSetOptions]
     }
     
-    @scala.inline
-    implicit class CssIconSetOptionsMutableBuilder[Self <: CssIconSetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CssIconSetOptions](x: Self) {
       
-      @scala.inline
-      def setClass(
+      inline def setClass(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
       ): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: CssClassConfig): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: CssClassConfig): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameFunction2(value: (/* id */ String, /* params */ js.Array[String]) => String): Self = StObject.set(x, "className", js.Any.fromFunction2(value))
+      inline def setClassNameFunction2(value: (/* id */ String, /* params */ js.Array[String]) => String): Self = StObject.set(x, "className", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setCssClass(
+      inline def setCssClass(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
       ): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     }
   }
 }

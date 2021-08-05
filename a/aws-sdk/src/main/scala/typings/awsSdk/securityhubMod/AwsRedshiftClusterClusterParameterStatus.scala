@@ -23,31 +23,23 @@ trait AwsRedshiftClusterClusterParameterStatus extends StObject {
 }
 object AwsRedshiftClusterClusterParameterStatus {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterClusterParameterStatus = {
+  inline def apply(): AwsRedshiftClusterClusterParameterStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterClusterParameterStatus]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterClusterParameterStatusMutableBuilder[Self <: AwsRedshiftClusterClusterParameterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterClusterParameterStatus](x: Self) {
     
-    @scala.inline
-    def setParameterApplyErrorDescription(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyErrorDescription", value.asInstanceOf[js.Any])
+    inline def setParameterApplyErrorDescription(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyErrorDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterApplyErrorDescriptionUndefined: Self = StObject.set(x, "ParameterApplyErrorDescription", js.undefined)
+    inline def setParameterApplyErrorDescriptionUndefined: Self = StObject.set(x, "ParameterApplyErrorDescription", js.undefined)
     
-    @scala.inline
-    def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
+    inline def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
+    inline def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
     
-    @scala.inline
-    def setParameterName(value: NonEmptyString): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: NonEmptyString): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameUndefined: Self = StObject.set(x, "ParameterName", js.undefined)
+    inline def setParameterNameUndefined: Self = StObject.set(x, "ParameterName", js.undefined)
   }
 }

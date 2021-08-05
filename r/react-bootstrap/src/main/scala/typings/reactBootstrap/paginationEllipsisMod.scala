@@ -22,8 +22,7 @@ object paginationEllipsisMod {
        with HTMLProps[PaginationEllipsis]
   object PaginationEllipsisProps {
     
-    @scala.inline
-    def apply(): PaginationEllipsisProps = {
+    inline def apply(): PaginationEllipsisProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationEllipsisProps]
     }

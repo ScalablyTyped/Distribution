@@ -23,8 +23,7 @@ trait IdentityMailFromDomainAttributes extends StObject {
 }
 object IdentityMailFromDomainAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BehaviorOnMXFailure: BehaviorOnMXFailure,
     MailFromDomain: MailFromDomainName,
     MailFromDomainStatus: CustomMailFromStatus
@@ -33,16 +32,12 @@ object IdentityMailFromDomainAttributes {
     __obj.asInstanceOf[IdentityMailFromDomainAttributes]
   }
   
-  @scala.inline
-  implicit class IdentityMailFromDomainAttributesMutableBuilder[Self <: IdentityMailFromDomainAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityMailFromDomainAttributes](x: Self) {
     
-    @scala.inline
-    def setBehaviorOnMXFailure(value: BehaviorOnMXFailure): Self = StObject.set(x, "BehaviorOnMXFailure", value.asInstanceOf[js.Any])
+    inline def setBehaviorOnMXFailure(value: BehaviorOnMXFailure): Self = StObject.set(x, "BehaviorOnMXFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailFromDomain(value: MailFromDomainName): Self = StObject.set(x, "MailFromDomain", value.asInstanceOf[js.Any])
+    inline def setMailFromDomain(value: MailFromDomainName): Self = StObject.set(x, "MailFromDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailFromDomainStatus(value: CustomMailFromStatus): Self = StObject.set(x, "MailFromDomainStatus", value.asInstanceOf[js.Any])
+    inline def setMailFromDomainStatus(value: CustomMailFromStatus): Self = StObject.set(x, "MailFromDomainStatus", value.asInstanceOf[js.Any])
   }
 }

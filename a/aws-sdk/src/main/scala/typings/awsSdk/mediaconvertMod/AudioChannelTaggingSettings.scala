@@ -13,19 +13,15 @@ trait AudioChannelTaggingSettings extends StObject {
 }
 object AudioChannelTaggingSettings {
   
-  @scala.inline
-  def apply(): AudioChannelTaggingSettings = {
+  inline def apply(): AudioChannelTaggingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioChannelTaggingSettings]
   }
   
-  @scala.inline
-  implicit class AudioChannelTaggingSettingsMutableBuilder[Self <: AudioChannelTaggingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AudioChannelTaggingSettings](x: Self) {
     
-    @scala.inline
-    def setChannelTag(value: AudioChannelTag): Self = StObject.set(x, "ChannelTag", value.asInstanceOf[js.Any])
+    inline def setChannelTag(value: AudioChannelTag): Self = StObject.set(x, "ChannelTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelTagUndefined: Self = StObject.set(x, "ChannelTag", js.undefined)
+    inline def setChannelTagUndefined: Self = StObject.set(x, "ChannelTag", js.undefined)
   }
 }

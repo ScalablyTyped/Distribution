@@ -10,16 +10,13 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(mapper: KnockoutMapper): KnockoutStatic = {
+  inline def apply(mapper: KnockoutMapper): KnockoutStatic = {
     val __obj = js.Dynamic.literal(mapper = mapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setMapper(value: KnockoutMapper): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
+    inline def setMapper(value: KnockoutMapper): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
   }
 }

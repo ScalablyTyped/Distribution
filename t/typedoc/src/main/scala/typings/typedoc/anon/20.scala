@@ -11,16 +11,13 @@ trait `20` extends StObject {
 }
 object `20` {
   
-  @scala.inline
-  def apply(): `20` = {
+  inline def apply(): `20` = {
     val __obj = js.Dynamic.literal(name = "excludeNotExported")
     __obj.asInstanceOf[`20`]
   }
   
-  @scala.inline
-  implicit class `20MutableBuilder`[Self <: `20`] (val x: Self) extends AnyVal {
+  extension [Self <: `20`](x: Self) {
     
-    @scala.inline
-    def setName(value: excludeNotExported): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: excludeNotExported): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

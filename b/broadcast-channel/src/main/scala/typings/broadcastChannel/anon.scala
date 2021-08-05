@@ -16,32 +16,24 @@ object anon {
   }
   object FallbackInterval {
     
-    @scala.inline
-    def apply(): FallbackInterval = {
+    inline def apply(): FallbackInterval = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FallbackInterval]
     }
     
-    @scala.inline
-    implicit class FallbackIntervalMutableBuilder[Self <: FallbackInterval] (val x: Self) extends AnyVal {
+    extension [Self <: FallbackInterval](x: Self) {
       
-      @scala.inline
-      def setFallbackInterval(value: Double): Self = StObject.set(x, "fallbackInterval", value.asInstanceOf[js.Any])
+      inline def setFallbackInterval(value: Double): Self = StObject.set(x, "fallbackInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackIntervalUndefined: Self = StObject.set(x, "fallbackInterval", js.undefined)
+      inline def setFallbackIntervalUndefined: Self = StObject.set(x, "fallbackInterval", js.undefined)
       
-      @scala.inline
-      def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
+      inline def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
+      inline def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -53,26 +45,20 @@ object anon {
   }
   object Ttl {
     
-    @scala.inline
-    def apply(): Ttl = {
+    inline def apply(): Ttl = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ttl]
     }
     
-    @scala.inline
-    implicit class TtlMutableBuilder[Self <: Ttl] (val x: Self) extends AnyVal {
+    extension [Self <: Ttl](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setUseFastPath(value: Boolean): Self = StObject.set(x, "useFastPath", value.asInstanceOf[js.Any])
+      inline def setUseFastPath(value: Boolean): Self = StObject.set(x, "useFastPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFastPathUndefined: Self = StObject.set(x, "useFastPath", js.undefined)
+      inline def setUseFastPathUndefined: Self = StObject.set(x, "useFastPath", js.undefined)
     }
   }
 }

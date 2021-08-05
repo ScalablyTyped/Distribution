@@ -26,19 +26,15 @@ trait PlusShareShareMessageExtra extends StObject {
 }
 object PlusShareShareMessageExtra {
   
-  @scala.inline
-  def apply(): PlusShareShareMessageExtra = {
+  inline def apply(): PlusShareShareMessageExtra = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusShareShareMessageExtra]
   }
   
-  @scala.inline
-  implicit class PlusShareShareMessageExtraMutableBuilder[Self <: PlusShareShareMessageExtra] (val x: Self) extends AnyVal {
+  extension [Self <: PlusShareShareMessageExtra](x: Self) {
     
-    @scala.inline
-    def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
   }
 }

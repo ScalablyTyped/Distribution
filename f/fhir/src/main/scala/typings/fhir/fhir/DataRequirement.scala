@@ -53,77 +53,54 @@ trait DataRequirement
 }
 object DataRequirement {
   
-  @scala.inline
-  def apply(`type`: code): DataRequirement = {
+  inline def apply(`type`: code): DataRequirement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRequirement]
   }
   
-  @scala.inline
-  implicit class DataRequirementMutableBuilder[Self <: DataRequirement] (val x: Self) extends AnyVal {
+  extension [Self <: DataRequirement](x: Self) {
     
-    @scala.inline
-    def setCodeFilter(value: js.Array[DataRequirementCodeFilter]): Self = StObject.set(x, "codeFilter", value.asInstanceOf[js.Any])
+    inline def setCodeFilter(value: js.Array[DataRequirementCodeFilter]): Self = StObject.set(x, "codeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeFilterUndefined: Self = StObject.set(x, "codeFilter", js.undefined)
+    inline def setCodeFilterUndefined: Self = StObject.set(x, "codeFilter", js.undefined)
     
-    @scala.inline
-    def setCodeFilterVarargs(value: DataRequirementCodeFilter*): Self = StObject.set(x, "codeFilter", js.Array(value :_*))
+    inline def setCodeFilterVarargs(value: DataRequirementCodeFilter*): Self = StObject.set(x, "codeFilter", js.Array(value :_*))
     
-    @scala.inline
-    def setDateFilter(value: js.Array[DataRequirementDateFilter]): Self = StObject.set(x, "dateFilter", value.asInstanceOf[js.Any])
+    inline def setDateFilter(value: js.Array[DataRequirementDateFilter]): Self = StObject.set(x, "dateFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFilterUndefined: Self = StObject.set(x, "dateFilter", js.undefined)
+    inline def setDateFilterUndefined: Self = StObject.set(x, "dateFilter", js.undefined)
     
-    @scala.inline
-    def setDateFilterVarargs(value: DataRequirementDateFilter*): Self = StObject.set(x, "dateFilter", js.Array(value :_*))
+    inline def setDateFilterVarargs(value: DataRequirementDateFilter*): Self = StObject.set(x, "dateFilter", js.Array(value :_*))
     
-    @scala.inline
-    def setMustSupport(value: js.Array[String]): Self = StObject.set(x, "mustSupport", value.asInstanceOf[js.Any])
+    inline def setMustSupport(value: js.Array[String]): Self = StObject.set(x, "mustSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustSupportUndefined: Self = StObject.set(x, "mustSupport", js.undefined)
+    inline def setMustSupportUndefined: Self = StObject.set(x, "mustSupport", js.undefined)
     
-    @scala.inline
-    def setMustSupportVarargs(value: String*): Self = StObject.set(x, "mustSupport", js.Array(value :_*))
+    inline def setMustSupportVarargs(value: String*): Self = StObject.set(x, "mustSupport", js.Array(value :_*))
     
-    @scala.inline
-    def setProfile(value: js.Array[uri]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: js.Array[uri]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setProfileVarargs(value: uri*): Self = StObject.set(x, "profile", js.Array(value :_*))
+    inline def setProfileVarargs(value: uri*): Self = StObject.set(x, "profile", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_mustSupport(value: js.Array[Element]): Self = StObject.set(x, "_mustSupport", value.asInstanceOf[js.Any])
+    inline def set_mustSupport(value: js.Array[Element]): Self = StObject.set(x, "_mustSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_mustSupportUndefined: Self = StObject.set(x, "_mustSupport", js.undefined)
+    inline def set_mustSupportUndefined: Self = StObject.set(x, "_mustSupport", js.undefined)
     
-    @scala.inline
-    def set_mustSupportVarargs(value: Element*): Self = StObject.set(x, "_mustSupport", js.Array(value :_*))
+    inline def set_mustSupportVarargs(value: Element*): Self = StObject.set(x, "_mustSupport", js.Array(value :_*))
     
-    @scala.inline
-    def set_profile(value: js.Array[Element]): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
+    inline def set_profile(value: js.Array[Element]): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
+    inline def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
     
-    @scala.inline
-    def set_profileVarargs(value: Element*): Self = StObject.set(x, "_profile", js.Array(value :_*))
+    inline def set_profileVarargs(value: Element*): Self = StObject.set(x, "_profile", js.Array(value :_*))
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

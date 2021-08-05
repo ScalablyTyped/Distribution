@@ -17,19 +17,15 @@ trait SchemaGooglePrivacyDlpV2UnwrappedCryptoKey extends StObject {
 }
 object SchemaGooglePrivacyDlpV2UnwrappedCryptoKey {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2UnwrappedCryptoKey = {
+  inline def apply(): SchemaGooglePrivacyDlpV2UnwrappedCryptoKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2UnwrappedCryptoKey]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2UnwrappedCryptoKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

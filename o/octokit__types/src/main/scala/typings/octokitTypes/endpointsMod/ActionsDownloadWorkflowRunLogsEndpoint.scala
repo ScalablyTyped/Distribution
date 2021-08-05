@@ -14,22 +14,17 @@ trait ActionsDownloadWorkflowRunLogsEndpoint extends StObject {
 }
 object ActionsDownloadWorkflowRunLogsEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, run_id: Double): ActionsDownloadWorkflowRunLogsEndpoint = {
+  inline def apply(owner: String, repo: String, run_id: Double): ActionsDownloadWorkflowRunLogsEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], run_id = run_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsDownloadWorkflowRunLogsEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsDownloadWorkflowRunLogsEndpointMutableBuilder[Self <: ActionsDownloadWorkflowRunLogsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsDownloadWorkflowRunLogsEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun_id(value: Double): Self = StObject.set(x, "run_id", value.asInstanceOf[js.Any])
+    inline def setRun_id(value: Double): Self = StObject.set(x, "run_id", value.asInstanceOf[js.Any])
   }
 }

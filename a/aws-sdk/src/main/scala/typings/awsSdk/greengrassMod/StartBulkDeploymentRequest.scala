@@ -28,31 +28,23 @@ trait StartBulkDeploymentRequest extends StObject {
 }
 object StartBulkDeploymentRequest {
   
-  @scala.inline
-  def apply(ExecutionRoleArn: string, InputFileUri: string): StartBulkDeploymentRequest = {
+  inline def apply(ExecutionRoleArn: string, InputFileUri: string): StartBulkDeploymentRequest = {
     val __obj = js.Dynamic.literal(ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], InputFileUri = InputFileUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBulkDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class StartBulkDeploymentRequestMutableBuilder[Self <: StartBulkDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartBulkDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: string): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: string): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFileUri(value: string): Self = StObject.set(x, "InputFileUri", value.asInstanceOf[js.Any])
+    inline def setInputFileUri(value: string): Self = StObject.set(x, "InputFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

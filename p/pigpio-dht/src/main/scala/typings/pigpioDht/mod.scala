@@ -12,8 +12,7 @@ object mod {
     * @param gpio      an unsigned integer specifying the GPIO number
     * @param type      11 to initialize for reading a DHT11, 22 for DHT22/AM2302
     */
-  @scala.inline
-  def apply(gpio: Double, `type`: Double): Dht = (^.asInstanceOf[js.Dynamic].apply(gpio.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Dht]
+  inline def apply(gpio: Double, `type`: Double): Dht = (^.asInstanceOf[js.Dynamic].apply(gpio.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Dht]
   
   @JSImport("pigpio-dht", JSImport.Namespace)
   @js.native
@@ -47,20 +46,16 @@ object mod {
   }
   object DhtResult {
     
-    @scala.inline
-    def apply(humidity: Double, temperature: Double): DhtResult = {
+    inline def apply(humidity: Double, temperature: Double): DhtResult = {
       val __obj = js.Dynamic.literal(humidity = humidity.asInstanceOf[js.Any], temperature = temperature.asInstanceOf[js.Any])
       __obj.asInstanceOf[DhtResult]
     }
     
-    @scala.inline
-    implicit class DhtResultMutableBuilder[Self <: DhtResult] (val x: Self) extends AnyVal {
+    extension [Self <: DhtResult](x: Self) {
       
-      @scala.inline
-      def setHumidity(value: Double): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
+      inline def setHumidity(value: Double): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
+      inline def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
     }
   }
 }

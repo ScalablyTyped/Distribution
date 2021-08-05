@@ -16,37 +16,27 @@ trait Derivatives extends StObject {
 }
 object Derivatives {
   
-  @scala.inline
-  def apply(): Derivatives = {
+  inline def apply(): Derivatives = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Derivatives]
   }
   
-  @scala.inline
-  implicit class DerivativesMutableBuilder[Self <: Derivatives] (val x: Self) extends AnyVal {
+  extension [Self <: Derivatives](x: Self) {
     
-    @scala.inline
-    def setDerivatives(value: Boolean): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
+    inline def setDerivatives(value: Boolean): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDerivativesUndefined: Self = StObject.set(x, "derivatives", js.undefined)
+    inline def setDerivativesUndefined: Self = StObject.set(x, "derivatives", js.undefined)
     
-    @scala.inline
-    def setDrawBuffers(value: Boolean): Self = StObject.set(x, "drawBuffers", value.asInstanceOf[js.Any])
+    inline def setDrawBuffers(value: Boolean): Self = StObject.set(x, "drawBuffers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBuffersUndefined: Self = StObject.set(x, "drawBuffers", js.undefined)
+    inline def setDrawBuffersUndefined: Self = StObject.set(x, "drawBuffers", js.undefined)
     
-    @scala.inline
-    def setFragDepth(value: Boolean): Self = StObject.set(x, "fragDepth", value.asInstanceOf[js.Any])
+    inline def setFragDepth(value: Boolean): Self = StObject.set(x, "fragDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragDepthUndefined: Self = StObject.set(x, "fragDepth", js.undefined)
+    inline def setFragDepthUndefined: Self = StObject.set(x, "fragDepth", js.undefined)
     
-    @scala.inline
-    def setShaderTextureLOD(value: Boolean): Self = StObject.set(x, "shaderTextureLOD", value.asInstanceOf[js.Any])
+    inline def setShaderTextureLOD(value: Boolean): Self = StObject.set(x, "shaderTextureLOD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaderTextureLODUndefined: Self = StObject.set(x, "shaderTextureLOD", js.undefined)
+    inline def setShaderTextureLODUndefined: Self = StObject.set(x, "shaderTextureLOD", js.undefined)
   }
 }

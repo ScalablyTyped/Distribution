@@ -12,8 +12,7 @@ trait BatchWriteItemInput
      with typings.awsSdkClientDynamodbNode.typesBatchWriteItemInputMod.BatchWriteItemInput
 object BatchWriteItemInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RequestItems: (StringDictionary[js.Array[WriteRequest] | Iterable[WriteRequest]]) | (Iterable[js.Tuple2[String, js.Array[WriteRequest] | Iterable[WriteRequest]]])
   ): BatchWriteItemInput = {
     val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])

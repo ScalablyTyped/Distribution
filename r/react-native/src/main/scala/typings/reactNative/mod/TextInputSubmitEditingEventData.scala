@@ -10,16 +10,13 @@ trait TextInputSubmitEditingEventData extends StObject {
 }
 object TextInputSubmitEditingEventData {
   
-  @scala.inline
-  def apply(text: String): TextInputSubmitEditingEventData = {
+  inline def apply(text: String): TextInputSubmitEditingEventData = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputSubmitEditingEventData]
   }
   
-  @scala.inline
-  implicit class TextInputSubmitEditingEventDataMutableBuilder[Self <: TextInputSubmitEditingEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputSubmitEditingEventData](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

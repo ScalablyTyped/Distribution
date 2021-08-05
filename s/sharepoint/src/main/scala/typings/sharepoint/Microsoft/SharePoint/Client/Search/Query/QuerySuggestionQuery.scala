@@ -21,8 +21,7 @@ trait QuerySuggestionQuery
 }
 object QuerySuggestionQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -37,19 +36,14 @@ object QuerySuggestionQuery {
     __obj.asInstanceOf[QuerySuggestionQuery]
   }
   
-  @scala.inline
-  implicit class QuerySuggestionQueryMutableBuilder[Self <: QuerySuggestionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: QuerySuggestionQuery](x: Self) {
     
-    @scala.inline
-    def setGet_isPersonal(value: () => Boolean): Self = StObject.set(x, "get_isPersonal", js.Any.fromFunction0(value))
+    inline def setGet_isPersonal(value: () => Boolean): Self = StObject.set(x, "get_isPersonal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_query(value: () => String): Self = StObject.set(x, "get_query", js.Any.fromFunction0(value))
+    inline def setGet_query(value: () => String): Self = StObject.set(x, "get_query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_isPersonal(value: Boolean => Unit): Self = StObject.set(x, "set_isPersonal", js.Any.fromFunction1(value))
+    inline def setSet_isPersonal(value: Boolean => Unit): Self = StObject.set(x, "set_isPersonal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_query(value: String => Unit): Self = StObject.set(x, "set_query", js.Any.fromFunction1(value))
+    inline def setSet_query(value: String => Unit): Self = StObject.set(x, "set_query", js.Any.fromFunction1(value))
   }
 }

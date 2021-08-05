@@ -20,8 +20,7 @@ object mapDataCalcToolsMod {
       @JSGlobal("TILE_PARAMS.TILES_PER_EDGE")
       @js.native
       def TILES_PER_EDGE: js.Array[Double] = js.native
-      @scala.inline
-      def TILES_PER_EDGE_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILES_PER_EDGE")(x.asInstanceOf[js.Any])
+      inline def TILES_PER_EDGE_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILES_PER_EDGE")(x.asInstanceOf[js.Any])
       
       /**
         * @default [8,8,8,8,7,7,7,6,6,5,4,4,3,2,2,1,1];
@@ -29,8 +28,7 @@ object mapDataCalcToolsMod {
       @JSGlobal("TILE_PARAMS.ZOOM_TO_LEVEL")
       @js.native
       def ZOOM_TO_LEVEL: js.Array[Double] = js.native
-      @scala.inline
-      def ZOOM_TO_LEVEL_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZOOM_TO_LEVEL")(x.asInstanceOf[js.Any])
+      inline def ZOOM_TO_LEVEL_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZOOM_TO_LEVEL")(x.asInstanceOf[js.Any])
       
       /**
         * @default [200000,200000,200000,200000,200000,60000,60000,10000,5000,2500,2500,800,300,0,0];
@@ -38,8 +36,7 @@ object mapDataCalcToolsMod {
       @JSGlobal("TILE_PARAMS.ZOOM_TO_LINK_LENGTH")
       @js.native
       def ZOOM_TO_LINK_LENGTH: js.Array[Double] = js.native
-      @scala.inline
-      def ZOOM_TO_LINK_LENGTH_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZOOM_TO_LINK_LENGTH")(x.asInstanceOf[js.Any])
+      inline def ZOOM_TO_LINK_LENGTH_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZOOM_TO_LINK_LENGTH")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -48,20 +45,15 @@ object mapDataCalcToolsMod {
       * to avoid impacting server load, we keep ourselves restricted to a zoom level with the sane number
       * of tilesPerEdge and portal levels visible
       */
-    @scala.inline
-    def getDataZoomForMapZoom(mapZoom: Double): Double = js.Dynamic.global.applyDynamic("getDataZoomForMapZoom")(mapZoom.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getDataZoomForMapZoom(mapZoom: Double): Double = js.Dynamic.global.applyDynamic("getDataZoomForMapZoom")(mapZoom.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def getMapZoomTileParameters(zoom: Double): MapZoomTileParameters = js.Dynamic.global.applyDynamic("getMapZoomTileParameters")(zoom.asInstanceOf[js.Any]).asInstanceOf[MapZoomTileParameters]
+    inline def getMapZoomTileParameters(zoom: Double): MapZoomTileParameters = js.Dynamic.global.applyDynamic("getMapZoomTileParameters")(zoom.asInstanceOf[js.Any]).asInstanceOf[MapZoomTileParameters]
     
-    @scala.inline
-    def latToTile(lat: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("latToTile")(lat.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def latToTile(lat: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("latToTile")(lat.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def lngToTile(lng: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("lngToTile")(lng.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def lngToTile(lng: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("lngToTile")(lng.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def pointToTileId(params: MapZoomTileParameters, x: Double, y: Double): String = (js.Dynamic.global.applyDynamic("pointToTileId")(params.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def pointToTileId(params: MapZoomTileParameters, x: Double, y: Double): String = (js.Dynamic.global.applyDynamic("pointToTileId")(params.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Ingress Intel splits up requests for map data (portals, links,fields) into tiles. To get data for the current viewport
@@ -71,14 +63,11 @@ object mapDataCalcToolsMod {
       *
       * Conversion functions courtesy of @link http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
       */
-    @scala.inline
-    def setupDataTileParams(): Unit = js.Dynamic.global.applyDynamic("setupDataTileParams")().asInstanceOf[Unit]
+    inline def setupDataTileParams(): Unit = js.Dynamic.global.applyDynamic("setupDataTileParams")().asInstanceOf[Unit]
     
-    @scala.inline
-    def tileToLat(y: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("tileToLat")(y.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def tileToLat(y: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("tileToLat")(y.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def tileToLng(x: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("tileToLng")(x.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def tileToLng(x: Double, params: MapZoomTileParameters): Double = (js.Dynamic.global.applyDynamic("tileToLng")(x.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     trait MapZoomTileParameters extends StObject {
       
@@ -94,29 +83,22 @@ object mapDataCalcToolsMod {
     }
     object MapZoomTileParameters {
       
-      @scala.inline
-      def apply(hasPortals: Boolean, level: Double, minLinkLength: Double, tilesPerEdge: Double, zoom: Double): MapZoomTileParameters = {
+      inline def apply(hasPortals: Boolean, level: Double, minLinkLength: Double, tilesPerEdge: Double, zoom: Double): MapZoomTileParameters = {
         val __obj = js.Dynamic.literal(hasPortals = hasPortals.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], minLinkLength = minLinkLength.asInstanceOf[js.Any], tilesPerEdge = tilesPerEdge.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
         __obj.asInstanceOf[MapZoomTileParameters]
       }
       
-      @scala.inline
-      implicit class MapZoomTileParametersMutableBuilder[Self <: MapZoomTileParameters] (val x: Self) extends AnyVal {
+      extension [Self <: MapZoomTileParameters](x: Self) {
         
-        @scala.inline
-        def setHasPortals(value: Boolean): Self = StObject.set(x, "hasPortals", value.asInstanceOf[js.Any])
+        inline def setHasPortals(value: Boolean): Self = StObject.set(x, "hasPortals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinLinkLength(value: Double): Self = StObject.set(x, "minLinkLength", value.asInstanceOf[js.Any])
+        inline def setMinLinkLength(value: Double): Self = StObject.set(x, "minLinkLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTilesPerEdge(value: Double): Self = StObject.set(x, "tilesPerEdge", value.asInstanceOf[js.Any])
+        inline def setTilesPerEdge(value: Double): Self = StObject.set(x, "tilesPerEdge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+        inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       }
     }
   }

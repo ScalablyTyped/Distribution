@@ -13,19 +13,15 @@ trait ResendConfirmationCodeResponse extends StObject {
 }
 object ResendConfirmationCodeResponse {
   
-  @scala.inline
-  def apply(): ResendConfirmationCodeResponse = {
+  inline def apply(): ResendConfirmationCodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResendConfirmationCodeResponse]
   }
   
-  @scala.inline
-  implicit class ResendConfirmationCodeResponseMutableBuilder[Self <: ResendConfirmationCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResendConfirmationCodeResponse](x: Self) {
     
-    @scala.inline
-    def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
+    inline def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
+    inline def setCodeDeliveryDetailsUndefined: Self = StObject.set(x, "CodeDeliveryDetails", js.undefined)
   }
 }

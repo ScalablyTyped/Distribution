@@ -23,22 +23,16 @@ object WizardButton {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CANCEL: `4` = 4.asInstanceOf[`4`]
+    inline def CANCEL: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def FINISH: `3` = 3.asInstanceOf[`3`]
+    inline def FINISH: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def HELP: `5` = 5.asInstanceOf[`5`]
+    inline def HELP: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def NEXT: `1` = 1.asInstanceOf[`1`]
+    inline def NEXT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PREVIOUS: `2` = 2.asInstanceOf[`2`]
+    inline def PREVIOUS: `2` = 2.asInstanceOf[`2`]
   }
 }

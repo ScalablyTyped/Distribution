@@ -13,16 +13,13 @@ trait CancelSimulationJobBatchRequest extends StObject {
 }
 object CancelSimulationJobBatchRequest {
   
-  @scala.inline
-  def apply(batch: Arn): CancelSimulationJobBatchRequest = {
+  inline def apply(batch: Arn): CancelSimulationJobBatchRequest = {
     val __obj = js.Dynamic.literal(batch = batch.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSimulationJobBatchRequest]
   }
   
-  @scala.inline
-  implicit class CancelSimulationJobBatchRequestMutableBuilder[Self <: CancelSimulationJobBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSimulationJobBatchRequest](x: Self) {
     
-    @scala.inline
-    def setBatch(value: Arn): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: Arn): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
   }
 }

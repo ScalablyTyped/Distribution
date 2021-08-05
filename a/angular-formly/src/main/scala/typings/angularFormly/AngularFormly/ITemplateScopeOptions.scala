@@ -15,8 +15,7 @@ trait ITemplateScopeOptions extends StObject {
 }
 object ITemplateScopeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formControl: IFormController | js.Array[IFormController],
     templateOptions: ITemplateOptions,
     validation: js.Object
@@ -25,19 +24,14 @@ object ITemplateScopeOptions {
     __obj.asInstanceOf[ITemplateScopeOptions]
   }
   
-  @scala.inline
-  implicit class ITemplateScopeOptionsMutableBuilder[Self <: ITemplateScopeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITemplateScopeOptions](x: Self) {
     
-    @scala.inline
-    def setFormControl(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
+    inline def setFormControl(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
+    inline def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
+    inline def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidation(value: js.Object): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: js.Object): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
   }
 }

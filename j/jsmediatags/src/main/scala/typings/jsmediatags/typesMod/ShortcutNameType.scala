@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShortcutNameType extends StObject
 object ShortcutNameType {
   
-  @scala.inline
-  def album: typings.jsmediatags.jsmediatagsStrings.album = "album".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.album]
+  inline def album: typings.jsmediatags.jsmediatagsStrings.album = "album".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.album]
   
-  @scala.inline
-  def artist: typings.jsmediatags.jsmediatagsStrings.artist = "artist".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.artist]
+  inline def artist: typings.jsmediatags.jsmediatagsStrings.artist = "artist".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.artist]
   
-  @scala.inline
-  def comment: typings.jsmediatags.jsmediatagsStrings.comment = "comment".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.comment]
+  inline def comment: typings.jsmediatags.jsmediatagsStrings.comment = "comment".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.comment]
   
-  @scala.inline
-  def genre: typings.jsmediatags.jsmediatagsStrings.genre = "genre".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.genre]
+  inline def genre: typings.jsmediatags.jsmediatagsStrings.genre = "genre".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.genre]
   
-  @scala.inline
-  def lyrics: typings.jsmediatags.jsmediatagsStrings.lyrics = "lyrics".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.lyrics]
+  inline def lyrics: typings.jsmediatags.jsmediatagsStrings.lyrics = "lyrics".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.lyrics]
   
-  @scala.inline
-  def picture: typings.jsmediatags.jsmediatagsStrings.picture = "picture".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.picture]
+  inline def picture: typings.jsmediatags.jsmediatagsStrings.picture = "picture".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.picture]
   
-  @scala.inline
-  def title: typings.jsmediatags.jsmediatagsStrings.title = "title".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.title]
+  inline def title: typings.jsmediatags.jsmediatagsStrings.title = "title".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.title]
   
-  @scala.inline
-  def track: typings.jsmediatags.jsmediatagsStrings.track = "track".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.track]
+  inline def track: typings.jsmediatags.jsmediatagsStrings.track = "track".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.track]
   
-  @scala.inline
-  def year: typings.jsmediatags.jsmediatagsStrings.year = "year".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.year]
+  inline def year: typings.jsmediatags.jsmediatagsStrings.year = "year".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.year]
 }

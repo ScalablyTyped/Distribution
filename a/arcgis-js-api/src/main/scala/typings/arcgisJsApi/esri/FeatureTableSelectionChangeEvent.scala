@@ -12,8 +12,7 @@ trait FeatureTableSelectionChangeEvent extends StObject {
 }
 object FeatureTableSelectionChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     added: js.Array[FeatureTableSelectionChangeEventAdded],
     removed: js.Array[FeatureTableSelectionChangeEventRemoved]
   ): FeatureTableSelectionChangeEvent = {
@@ -21,19 +20,14 @@ object FeatureTableSelectionChangeEvent {
     __obj.asInstanceOf[FeatureTableSelectionChangeEvent]
   }
   
-  @scala.inline
-  implicit class FeatureTableSelectionChangeEventMutableBuilder[Self <: FeatureTableSelectionChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTableSelectionChangeEvent](x: Self) {
     
-    @scala.inline
-    def setAdded(value: js.Array[FeatureTableSelectionChangeEventAdded]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: js.Array[FeatureTableSelectionChangeEventAdded]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedVarargs(value: FeatureTableSelectionChangeEventAdded*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: FeatureTableSelectionChangeEventAdded*): Self = StObject.set(x, "added", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoved(value: js.Array[FeatureTableSelectionChangeEventRemoved]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[FeatureTableSelectionChangeEventRemoved]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedVarargs(value: FeatureTableSelectionChangeEventRemoved*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: FeatureTableSelectionChangeEventRemoved*): Self = StObject.set(x, "removed", js.Array(value :_*))
   }
 }

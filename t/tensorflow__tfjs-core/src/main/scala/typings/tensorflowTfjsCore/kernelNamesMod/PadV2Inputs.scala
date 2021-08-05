@@ -11,19 +11,15 @@ trait PadV2Inputs extends StObject {
 }
 object PadV2Inputs {
   
-  @scala.inline
-  def apply(): PadV2Inputs = {
+  inline def apply(): PadV2Inputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PadV2Inputs]
   }
   
-  @scala.inline
-  implicit class PadV2InputsMutableBuilder[Self <: PadV2Inputs] (val x: Self) extends AnyVal {
+  extension [Self <: PadV2Inputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

@@ -22,38 +22,29 @@ trait SslCertificateManagedSslCertificate extends StObject {
 }
 object SslCertificateManagedSslCertificate {
   
-  @scala.inline
-  def apply(): SslCertificateManagedSslCertificate = {
+  inline def apply(): SslCertificateManagedSslCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SslCertificateManagedSslCertificate]
   }
   
-  @scala.inline
-  implicit class SslCertificateManagedSslCertificateMutableBuilder[Self <: SslCertificateManagedSslCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: SslCertificateManagedSslCertificate](x: Self) {
     
-    @scala.inline
-    def setDomainStatus(
+    inline def setDomainStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[js.Any]
     ): Self = StObject.set(x, "domainStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainStatusUndefined: Self = StObject.set(x, "domainStatus", js.undefined)
+    inline def setDomainStatusUndefined: Self = StObject.set(x, "domainStatus", js.undefined)
     
-    @scala.inline
-    def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

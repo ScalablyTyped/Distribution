@@ -13,6 +13,5 @@ class ResponderID ()
   extends typings.xadesjs.xmlMod.ResponderID
 object ResponderID {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.ResponderID] = ^.asInstanceOf[js.Dynamic].selectDynamic("ResponderID").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ResponderID]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.ResponderID] = ^.asInstanceOf[js.Dynamic].selectDynamic("ResponderID").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ResponderID]]
 }

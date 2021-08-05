@@ -34,8 +34,7 @@ trait StatResult extends StObject {
 }
 object StatResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ctime: Double,
     isDirectory: () => Boolean,
     isFile: () => Boolean,
@@ -49,37 +48,26 @@ object StatResult {
     __obj.asInstanceOf[StatResult]
   }
   
-  @scala.inline
-  implicit class StatResultMutableBuilder[Self <: StatResult] (val x: Self) extends AnyVal {
+  extension [Self <: StatResult](x: Self) {
     
-    @scala.inline
-    def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
+    inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
+    inline def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOriginalFilepath(value: String): Self = StObject.set(x, "originalFilepath", value.asInstanceOf[js.Any])
+    inline def setOriginalFilepath(value: String): Self = StObject.set(x, "originalFilepath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

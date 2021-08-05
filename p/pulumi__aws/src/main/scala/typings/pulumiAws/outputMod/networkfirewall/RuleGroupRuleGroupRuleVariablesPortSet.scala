@@ -18,19 +18,15 @@ trait RuleGroupRuleGroupRuleVariablesPortSet extends StObject {
 }
 object RuleGroupRuleGroupRuleVariablesPortSet {
   
-  @scala.inline
-  def apply(key: String, portSet: RuleGroupRuleGroupRuleVariablesPortSetPortSet): RuleGroupRuleGroupRuleVariablesPortSet = {
+  inline def apply(key: String, portSet: RuleGroupRuleGroupRuleVariablesPortSetPortSet): RuleGroupRuleGroupRuleVariablesPortSet = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], portSet = portSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRuleVariablesPortSet]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRuleVariablesPortSetMutableBuilder[Self <: RuleGroupRuleGroupRuleVariablesPortSet] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRuleVariablesPortSet](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortSet(value: RuleGroupRuleGroupRuleVariablesPortSetPortSet): Self = StObject.set(x, "portSet", value.asInstanceOf[js.Any])
+    inline def setPortSet(value: RuleGroupRuleGroupRuleVariablesPortSetPortSet): Self = StObject.set(x, "portSet", value.asInstanceOf[js.Any])
   }
 }

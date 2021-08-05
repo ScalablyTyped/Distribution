@@ -38,8 +38,7 @@ object anon {
   }
   object Abort {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: js.Array[js.Any],
       error: js.Array[js.Any],
       load: js.Array[js.Any],
@@ -49,32 +48,23 @@ object anon {
       __obj.asInstanceOf[Abort]
     }
     
-    @scala.inline
-    implicit class AbortMutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
+    extension [Self <: Abort](x: Self) {
       
-      @scala.inline
-      def setAbort(value: js.Array[js.Any]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+      inline def setAbort(value: js.Array[js.Any]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortVarargs(value: js.Any*): Self = StObject.set(x, "abort", js.Array(value :_*))
+      inline def setAbortVarargs(value: js.Any*): Self = StObject.set(x, "abort", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: js.Array[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Array[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorVarargs(value: js.Any*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: js.Any*): Self = StObject.set(x, "error", js.Array(value :_*))
       
-      @scala.inline
-      def setLoad(value: js.Array[js.Any]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+      inline def setLoad(value: js.Array[js.Any]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadVarargs(value: js.Any*): Self = StObject.set(x, "load", js.Array(value :_*))
+      inline def setLoadVarargs(value: js.Any*): Self = StObject.set(x, "load", js.Array(value :_*))
       
-      @scala.inline
-      def setProgress(value: js.Array[js.Any]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: js.Array[js.Any]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressVarargs(value: js.Any*): Self = StObject.set(x, "progress", js.Array(value :_*))
+      inline def setProgressVarargs(value: js.Any*): Self = StObject.set(x, "progress", js.Array(value :_*))
     }
   }
   
@@ -113,8 +103,7 @@ object anon {
   }
   object Get {
     
-    @scala.inline
-    def apply[T, K /* <: /* keyof T */ String */](
+    inline def apply[T, K /* <: /* keyof T */ String */](
       get: SinonSpy[
           js.Array[js.Any], 
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
@@ -130,19 +119,16 @@ object anon {
       __obj.asInstanceOf[Get[T, K]]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get[?, ?], T, K /* <: /* keyof T */ String */] (val x: Self & (Get[T, K])) extends AnyVal {
+    extension [Self <: Get[?, ?], T, K /* <: /* keyof T */ String */](x: Self & (Get[T, K])) {
       
-      @scala.inline
-      def setGet(
+      inline def setGet(
         value: SinonSpy[
               js.Array[js.Any], 
               /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
             ]
       ): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(
+      inline def setSet(
         value: SinonSpy[
               js.Array[
                 /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
@@ -372,8 +358,7 @@ object anon {
   }
   object MatchArgumentsArrayany {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       concat: SinonMatcher | (MatchArguments[js.Function1[/* repeated */ js.Array[js.Any], js.Array[js.Any]]]) | (js.Function1[/* repeated */ js.Array[js.Any], js.Array[js.Any]]),
       copyWithin: SinonMatcher | (MatchArguments[js.Function2[/* target */ Double, /* start */ Double, MatchArgumentsArrayany]]) | (js.Function2[/* target */ Double, /* start */ Double, MatchArgumentsArrayany]),
       entries: SinonMatcher | (MatchArguments[js.Function0[IterableIterator[js.Tuple2[Double, js.Any]]]]) | (js.Function0[IterableIterator[js.Tuple2[Double, js.Any]]]),
@@ -560,35 +545,27 @@ object anon {
       __obj.asInstanceOf[MatchArgumentsArrayany]
     }
     
-    @scala.inline
-    implicit class MatchArgumentsArrayanyMutableBuilder[Self <: MatchArgumentsArrayany] (val x: Self) extends AnyVal {
+    extension [Self <: MatchArgumentsArrayany](x: Self) {
       
-      @scala.inline
-      def setConcat(
+      inline def setConcat(
         value: SinonMatcher | (MatchArguments[js.Function1[/* repeated */ js.Array[js.Any], js.Array[js.Any]]]) | (js.Function1[/* repeated */ js.Array[js.Any], js.Array[js.Any]])
       ): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcatFunction1(value: /* repeated */ js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+      inline def setConcatFunction1(value: /* repeated */ js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyWithin(
+      inline def setCopyWithin(
         value: SinonMatcher | (MatchArguments[js.Function2[/* target */ Double, /* start */ Double, MatchArgumentsArrayany]]) | (js.Function2[/* target */ Double, /* start */ Double, MatchArgumentsArrayany])
       ): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyWithinFunction2(value: (/* target */ Double, /* start */ Double) => MatchArgumentsArrayany): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
+      inline def setCopyWithinFunction2(value: (/* target */ Double, /* start */ Double) => MatchArgumentsArrayany): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEntries(
+      inline def setEntries(
         value: SinonMatcher | (MatchArguments[js.Function0[IterableIterator[js.Tuple2[Double, js.Any]]]]) | (js.Function0[IterableIterator[js.Tuple2[Double, js.Any]]])
       ): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesFunction0(value: () => IterableIterator[js.Tuple2[Double, js.Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntriesFunction0(value: () => IterableIterator[js.Tuple2[Double, js.Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEvery(
+      inline def setEvery(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[
@@ -610,8 +587,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEveryFunction1(
+      inline def setEveryFunction1(
         value: /* predicate */ js.Function3[
               /* value */ js.Any, 
               /* index */ Double, 
@@ -620,16 +596,13 @@ object anon {
             ] => /* is std.Array<any> */ Boolean
       ): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFill(
+      inline def setFill(
         value: SinonMatcher | (MatchArguments[js.Function1[/* value */ js.Any, MatchArgumentsArrayany]]) | (js.Function1[/* value */ js.Any, MatchArgumentsArrayany])
       ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillFunction1(value: /* value */ js.Any => MatchArgumentsArrayany): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+      inline def setFillFunction1(value: /* value */ js.Any => MatchArgumentsArrayany): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[
@@ -651,8 +624,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(
+      inline def setFilterFunction1(
         value: /* predicate */ js.Function3[
               /* value */ js.Any, 
               /* index */ Double, 
@@ -661,8 +633,7 @@ object anon {
             ] => js.Array[js.Any]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFind(
+      inline def setFind(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.ThisFunction3[
@@ -686,8 +657,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindFunction1(
+      inline def setFindFunction1(
         value: /* predicate */ js.ThisFunction3[
               /* this */ Unit, 
               /* value */ js.Any, 
@@ -697,8 +667,7 @@ object anon {
             ] => js.UndefOr[js.Any]
       ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindIndex(
+      inline def setFindIndex(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* obj */ js.Array[js.Any], js.Any], 
@@ -710,18 +679,15 @@ object anon {
             ])
       ): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindIndexFunction1(
+      inline def setFindIndexFunction1(
         value: /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* obj */ js.Array[js.Any], js.Any] => Double
       ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlat(
+      inline def setFlat(
         value: SinonMatcher | (MatchArguments[js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]]]) | (js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]])
       ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatMap(
+      inline def setFlatMap(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callback */ js.ThisFunction3[
@@ -745,8 +711,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "flatMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatMapFunction1(
+      inline def setFlatMapFunction1(
         value: /* callback */ js.ThisFunction3[
               /* this */ Unit, 
               /* value */ js.Any, 
@@ -756,8 +721,7 @@ object anon {
             ] => js.Array[js.Any]
       ): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(
+      inline def setForEach(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], Unit], 
@@ -769,54 +733,41 @@ object anon {
             ])
       ): Self = StObject.set(x, "forEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForEachFunction1(
+      inline def setForEachFunction1(
         value: /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], Unit] => Unit
       ): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncludes(
+      inline def setIncludes(
         value: SinonMatcher | (MatchArguments[js.Function1[/* searchElement */ js.Any, Boolean]]) | (js.Function1[/* searchElement */ js.Any, Boolean])
       ): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludesFunction1(value: /* searchElement */ js.Any => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
+      inline def setIncludesFunction1(value: /* searchElement */ js.Any => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndexOf(
+      inline def setIndexOf(
         value: SinonMatcher | (MatchArguments[js.Function1[/* searchElement */ js.Any, Double]]) | (js.Function1[/* searchElement */ js.Any, Double])
       ): Self = StObject.set(x, "indexOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      inline def setIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJoin(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      inline def setJoin(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinFunction0(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
+      inline def setJoinFunction0(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeys(
+      inline def setKeys(
         value: SinonMatcher | MatchArguments[js.Function0[IterableIterator[Double]]] | js.Function0[IterableIterator[Double]]
       ): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysFunction0(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeysFunction0(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLastIndexOf(
+      inline def setLastIndexOf(
         value: SinonMatcher | (MatchArguments[js.Function1[/* searchElement */ js.Any, Double]]) | (js.Function1[/* searchElement */ js.Any, Double])
       ): Self = StObject.set(x, "lastIndexOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
+      inline def setLastIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: SinonMatcher | MatchArguments[Double] | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: SinonMatcher | MatchArguments[Double] | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any], 
@@ -828,29 +779,23 @@ object anon {
             ])
       ): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapFunction1(
+      inline def setMapFunction1(
         value: /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any] => js.Array[js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPop(
+      inline def setPop(
         value: SinonMatcher | MatchArguments[js.Function0[js.UndefOr[js.Any]]] | js.Function0[js.UndefOr[js.Any]]
       ): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPopFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(
+      inline def setPush(
         value: SinonMatcher | (MatchArguments[js.Function1[/* repeated */ js.Any, Double]]) | (js.Function1[/* repeated */ js.Any, Double])
       ): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPushFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReduce(
+      inline def setReduce(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function4[
@@ -874,8 +819,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReduceFunction1(
+      inline def setReduceFunction1(
         value: /* callbackfn */ js.Function4[
               /* previousValue */ js.Any, 
               /* currentValue */ js.Any, 
@@ -885,8 +829,7 @@ object anon {
             ] => js.Any
       ): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReduceRight(
+      inline def setReduceRight(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function4[
@@ -910,8 +853,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "reduceRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReduceRightFunction1(
+      inline def setReduceRightFunction1(
         value: /* callbackfn */ js.Function4[
               /* previousValue */ js.Any, 
               /* currentValue */ js.Any, 
@@ -921,32 +863,25 @@ object anon {
             ] => js.Any
       ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReverse(
+      inline def setReverse(
         value: SinonMatcher | MatchArguments[js.Function0[js.Array[js.Any]]] | js.Function0[js.Array[js.Any]]
       ): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      inline def setReverseFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShift(
+      inline def setShift(
         value: SinonMatcher | MatchArguments[js.Function0[js.UndefOr[js.Any]]] | js.Function0[js.UndefOr[js.Any]]
       ): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+      inline def setShiftFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlice(
+      inline def setSlice(
         value: SinonMatcher | MatchArguments[js.Function0[js.Array[js.Any]]] | js.Function0[js.Array[js.Any]]
       ): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
+      inline def setSliceFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSome(
+      inline def setSome(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any], 
@@ -958,54 +893,41 @@ object anon {
             ])
       ): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSomeFunction1(
+      inline def setSomeFunction1(
         value: /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any] => Boolean
       ): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSort(
+      inline def setSort(
         value: SinonMatcher | MatchArguments[js.Function0[MatchArgumentsArrayany]] | js.Function0[MatchArgumentsArrayany]
       ): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortFunction0(value: () => MatchArgumentsArrayany): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
+      inline def setSortFunction0(value: () => MatchArgumentsArrayany): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSplice(
+      inline def setSplice(
         value: SinonMatcher | (MatchArguments[js.Function1[/* start */ Double, js.Array[js.Any]]]) | (js.Function1[/* start */ Double, js.Array[js.Any]])
       ): Self = StObject.set(x, "splice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpliceFunction1(value: /* start */ Double => js.Array[js.Any]): Self = StObject.set(x, "splice", js.Any.fromFunction1(value))
+      inline def setSpliceFunction1(value: /* start */ Double => js.Array[js.Any]): Self = StObject.set(x, "splice", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToLocaleString(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toLocaleString", value.asInstanceOf[js.Any])
+      inline def setToLocaleString(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toLocaleString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToLocaleStringFunction0(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
+      inline def setToLocaleStringFunction0(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToString_(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toString", value.asInstanceOf[js.Any])
+      inline def setToString_(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToString_Function0(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      inline def setToString_Function0(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnshift(
+      inline def setUnshift(
         value: SinonMatcher | (MatchArguments[js.Function1[/* repeated */ js.Any, Double]]) | (js.Function1[/* repeated */ js.Any, Double])
       ): Self = StObject.set(x, "unshift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnshiftFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshiftFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValues(
+      inline def setValues(
         value: SinonMatcher | MatchArguments[js.Function0[IterableIterator[js.Any]]] | js.Function0[IterableIterator[js.Any]]
       ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesFunction0(value: () => IterableIterator[js.Any]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValuesFunction0(value: () => IterableIterator[js.Any]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
     }
   }
   
@@ -1282,50 +1204,38 @@ object anon {
   }
   object PartialMatchArgumentsArra {
     
-    @scala.inline
-    def apply(): PartialMatchArgumentsArra = {
+    inline def apply(): PartialMatchArgumentsArra = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMatchArgumentsArra]
     }
     
-    @scala.inline
-    implicit class PartialMatchArgumentsArraMutableBuilder[Self <: PartialMatchArgumentsArra] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMatchArgumentsArra](x: Self) {
       
-      @scala.inline
-      def setConcat(
+      inline def setConcat(
         value: SinonMatcher | (MatchArguments[js.Function1[/* repeated */ js.Array[js.Any], js.Array[js.Any]]]) | (js.Function1[/* repeated */ js.Array[js.Any], js.Array[js.Any]])
       ): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcatFunction1(value: /* repeated */ js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+      inline def setConcatFunction1(value: /* repeated */ js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConcatUndefined: Self = StObject.set(x, "concat", js.undefined)
+      inline def setConcatUndefined: Self = StObject.set(x, "concat", js.undefined)
       
-      @scala.inline
-      def setCopyWithin(
+      inline def setCopyWithin(
         value: SinonMatcher | (MatchArguments[js.Function2[/* target */ Double, /* start */ Double, PartialMatchArgumentsArra]]) | (js.Function2[/* target */ Double, /* start */ Double, PartialMatchArgumentsArra])
       ): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyWithinFunction2(value: (/* target */ Double, /* start */ Double) => PartialMatchArgumentsArra): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
+      inline def setCopyWithinFunction2(value: (/* target */ Double, /* start */ Double) => PartialMatchArgumentsArra): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCopyWithinUndefined: Self = StObject.set(x, "copyWithin", js.undefined)
+      inline def setCopyWithinUndefined: Self = StObject.set(x, "copyWithin", js.undefined)
       
-      @scala.inline
-      def setEntries(
+      inline def setEntries(
         value: SinonMatcher | (MatchArguments[js.Function0[IterableIterator[js.Tuple2[Double, js.Any]]]]) | (js.Function0[IterableIterator[js.Tuple2[Double, js.Any]]])
       ): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesFunction0(value: () => IterableIterator[js.Tuple2[Double, js.Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntriesFunction0(value: () => IterableIterator[js.Tuple2[Double, js.Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+      inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      @scala.inline
-      def setEvery(
+      inline def setEvery(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[
@@ -1347,8 +1257,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEveryFunction1(
+      inline def setEveryFunction1(
         value: /* predicate */ js.Function3[
               /* value */ js.Any, 
               /* index */ Double, 
@@ -1357,22 +1266,17 @@ object anon {
             ] => /* is std.Array<any> */ Boolean
       ): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEveryUndefined: Self = StObject.set(x, "every", js.undefined)
+      inline def setEveryUndefined: Self = StObject.set(x, "every", js.undefined)
       
-      @scala.inline
-      def setFill(
+      inline def setFill(
         value: SinonMatcher | (MatchArguments[js.Function1[/* value */ js.Any, PartialMatchArgumentsArra]]) | (js.Function1[/* value */ js.Any, PartialMatchArgumentsArra])
       ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillFunction1(value: /* value */ js.Any => PartialMatchArgumentsArra): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+      inline def setFillFunction1(value: /* value */ js.Any => PartialMatchArgumentsArra): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[
@@ -1394,8 +1298,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(
+      inline def setFilterFunction1(
         value: /* predicate */ js.Function3[
               /* value */ js.Any, 
               /* index */ Double, 
@@ -1404,11 +1307,9 @@ object anon {
             ] => js.Array[js.Any]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFind(
+      inline def setFind(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.ThisFunction3[
@@ -1432,8 +1333,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindFunction1(
+      inline def setFindFunction1(
         value: /* predicate */ js.ThisFunction3[
               /* this */ Unit, 
               /* value */ js.Any, 
@@ -1443,8 +1343,7 @@ object anon {
             ] => js.UndefOr[js.Any]
       ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindIndex(
+      inline def setFindIndex(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* obj */ js.Array[js.Any], js.Any], 
@@ -1456,24 +1355,19 @@ object anon {
             ])
       ): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindIndexFunction1(
+      inline def setFindIndexFunction1(
         value: /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* obj */ js.Array[js.Any], js.Any] => Double
       ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindIndexUndefined: Self = StObject.set(x, "findIndex", js.undefined)
+      inline def setFindIndexUndefined: Self = StObject.set(x, "findIndex", js.undefined)
       
-      @scala.inline
-      def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
+      inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
       
-      @scala.inline
-      def setFlat(
+      inline def setFlat(
         value: SinonMatcher | (MatchArguments[js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]]]) | (js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]])
       ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatMap(
+      inline def setFlatMap(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callback */ js.ThisFunction3[
@@ -1497,8 +1391,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "flatMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatMapFunction1(
+      inline def setFlatMapFunction1(
         value: /* callback */ js.ThisFunction3[
               /* this */ Unit, 
               /* value */ js.Any, 
@@ -1508,14 +1401,11 @@ object anon {
             ] => js.Array[js.Any]
       ): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatMapUndefined: Self = StObject.set(x, "flatMap", js.undefined)
+      inline def setFlatMapUndefined: Self = StObject.set(x, "flatMap", js.undefined)
       
-      @scala.inline
-      def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+      inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
       
-      @scala.inline
-      def setForEach(
+      inline def setForEach(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], Unit], 
@@ -1527,75 +1417,55 @@ object anon {
             ])
       ): Self = StObject.set(x, "forEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForEachFunction1(
+      inline def setForEachFunction1(
         value: /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], Unit] => Unit
       ): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEachUndefined: Self = StObject.set(x, "forEach", js.undefined)
+      inline def setForEachUndefined: Self = StObject.set(x, "forEach", js.undefined)
       
-      @scala.inline
-      def setIncludes(
+      inline def setIncludes(
         value: SinonMatcher | (MatchArguments[js.Function1[/* searchElement */ js.Any, Boolean]]) | (js.Function1[/* searchElement */ js.Any, Boolean])
       ): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludesFunction1(value: /* searchElement */ js.Any => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
+      inline def setIncludesFunction1(value: /* searchElement */ js.Any => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
+      inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
       
-      @scala.inline
-      def setIndexOf(
+      inline def setIndexOf(
         value: SinonMatcher | (MatchArguments[js.Function1[/* searchElement */ js.Any, Double]]) | (js.Function1[/* searchElement */ js.Any, Double])
       ): Self = StObject.set(x, "indexOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      inline def setIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
+      inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
       
-      @scala.inline
-      def setJoin(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      inline def setJoin(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinFunction0(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
+      inline def setJoinFunction0(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
+      inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
       
-      @scala.inline
-      def setKeys(
+      inline def setKeys(
         value: SinonMatcher | MatchArguments[js.Function0[IterableIterator[Double]]] | js.Function0[IterableIterator[Double]]
       ): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysFunction0(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeysFunction0(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setLastIndexOf(
+      inline def setLastIndexOf(
         value: SinonMatcher | (MatchArguments[js.Function1[/* searchElement */ js.Any, Double]]) | (js.Function1[/* searchElement */ js.Any, Double])
       ): Self = StObject.set(x, "lastIndexOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
+      inline def setLastIndexOfFunction1(value: /* searchElement */ js.Any => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLastIndexOfUndefined: Self = StObject.set(x, "lastIndexOf", js.undefined)
+      inline def setLastIndexOfUndefined: Self = StObject.set(x, "lastIndexOf", js.undefined)
       
-      @scala.inline
-      def setLength(value: SinonMatcher | MatchArguments[Double] | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: SinonMatcher | MatchArguments[Double] | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any], 
@@ -1607,38 +1477,29 @@ object anon {
             ])
       ): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapFunction1(
+      inline def setMapFunction1(
         value: /* callbackfn */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any] => js.Array[js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setPop(
+      inline def setPop(
         value: SinonMatcher | MatchArguments[js.Function0[js.UndefOr[js.Any]]] | js.Function0[js.UndefOr[js.Any]]
       ): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPopFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
+      inline def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
       
-      @scala.inline
-      def setPush(
+      inline def setPush(
         value: SinonMatcher | (MatchArguments[js.Function1[/* repeated */ js.Any, Double]]) | (js.Function1[/* repeated */ js.Any, Double])
       ): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPushFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
       
-      @scala.inline
-      def setReduce(
+      inline def setReduce(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function4[
@@ -1662,8 +1523,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReduceFunction1(
+      inline def setReduceFunction1(
         value: /* callbackfn */ js.Function4[
               /* previousValue */ js.Any, 
               /* currentValue */ js.Any, 
@@ -1673,8 +1533,7 @@ object anon {
             ] => js.Any
       ): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReduceRight(
+      inline def setReduceRight(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* callbackfn */ js.Function4[
@@ -1698,8 +1557,7 @@ object anon {
             ])
       ): Self = StObject.set(x, "reduceRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReduceRightFunction1(
+      inline def setReduceRightFunction1(
         value: /* callbackfn */ js.Function4[
               /* previousValue */ js.Any, 
               /* currentValue */ js.Any, 
@@ -1709,47 +1567,35 @@ object anon {
             ] => js.Any
       ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReduceRightUndefined: Self = StObject.set(x, "reduceRight", js.undefined)
+      inline def setReduceRightUndefined: Self = StObject.set(x, "reduceRight", js.undefined)
       
-      @scala.inline
-      def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
+      inline def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
       
-      @scala.inline
-      def setReverse(
+      inline def setReverse(
         value: SinonMatcher | MatchArguments[js.Function0[js.Array[js.Any]]] | js.Function0[js.Array[js.Any]]
       ): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      inline def setReverseFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setShift(
+      inline def setShift(
         value: SinonMatcher | MatchArguments[js.Function0[js.UndefOr[js.Any]]] | js.Function0[js.UndefOr[js.Any]]
       ): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+      inline def setShiftFunction0(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+      inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
       
-      @scala.inline
-      def setSlice(
+      inline def setSlice(
         value: SinonMatcher | MatchArguments[js.Function0[js.Array[js.Any]]] | js.Function0[js.Array[js.Any]]
       ): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
+      inline def setSliceFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+      inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
       
-      @scala.inline
-      def setSome(
+      inline def setSome(
         value: SinonMatcher | (MatchArguments[
               js.Function1[
                 /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any], 
@@ -1761,75 +1607,55 @@ object anon {
             ])
       ): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSomeFunction1(
+      inline def setSomeFunction1(
         value: /* predicate */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], js.Any] => Boolean
       ): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSomeUndefined: Self = StObject.set(x, "some", js.undefined)
+      inline def setSomeUndefined: Self = StObject.set(x, "some", js.undefined)
       
-      @scala.inline
-      def setSort(
+      inline def setSort(
         value: SinonMatcher | MatchArguments[js.Function0[PartialMatchArgumentsArra]] | js.Function0[PartialMatchArgumentsArra]
       ): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortFunction0(value: () => PartialMatchArgumentsArra): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
+      inline def setSortFunction0(value: () => PartialMatchArgumentsArra): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setSplice(
+      inline def setSplice(
         value: SinonMatcher | (MatchArguments[js.Function1[/* start */ Double, js.Array[js.Any]]]) | (js.Function1[/* start */ Double, js.Array[js.Any]])
       ): Self = StObject.set(x, "splice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpliceFunction1(value: /* start */ Double => js.Array[js.Any]): Self = StObject.set(x, "splice", js.Any.fromFunction1(value))
+      inline def setSpliceFunction1(value: /* start */ Double => js.Array[js.Any]): Self = StObject.set(x, "splice", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSpliceUndefined: Self = StObject.set(x, "splice", js.undefined)
+      inline def setSpliceUndefined: Self = StObject.set(x, "splice", js.undefined)
       
-      @scala.inline
-      def setToLocaleString(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toLocaleString", value.asInstanceOf[js.Any])
+      inline def setToLocaleString(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toLocaleString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToLocaleStringFunction0(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
+      inline def setToLocaleStringFunction0(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToLocaleStringUndefined: Self = StObject.set(x, "toLocaleString", js.undefined)
+      inline def setToLocaleStringUndefined: Self = StObject.set(x, "toLocaleString", js.undefined)
       
-      @scala.inline
-      def setToString_(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toString", value.asInstanceOf[js.Any])
+      inline def setToString_(value: SinonMatcher | MatchArguments[js.Function0[String]] | js.Function0[String]): Self = StObject.set(x, "toString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToString_Function0(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      inline def setToString_Function0(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+      inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
       
-      @scala.inline
-      def setUnshift(
+      inline def setUnshift(
         value: SinonMatcher | (MatchArguments[js.Function1[/* repeated */ js.Any, Double]]) | (js.Function1[/* repeated */ js.Any, Double])
       ): Self = StObject.set(x, "unshift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnshiftFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshiftFunction1(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnshiftUndefined: Self = StObject.set(x, "unshift", js.undefined)
+      inline def setUnshiftUndefined: Self = StObject.set(x, "unshift", js.undefined)
       
-      @scala.inline
-      def setValues(
+      inline def setValues(
         value: SinonMatcher | MatchArguments[js.Function0[IterableIterator[js.Any]]] | js.Function0[IterableIterator[js.Any]]
       ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesFunction0(value: () => IterableIterator[js.Any]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValuesFunction0(value: () => IterableIterator[js.Any]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   
@@ -1842,26 +1668,20 @@ object anon {
   }
   object PartialSinonExposeOptions {
     
-    @scala.inline
-    def apply(): PartialSinonExposeOptions = {
+    inline def apply(): PartialSinonExposeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSinonExposeOptions]
     }
     
-    @scala.inline
-    implicit class PartialSinonExposeOptionsMutableBuilder[Self <: PartialSinonExposeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSinonExposeOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
+      inline def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFailUndefined: Self = StObject.set(x, "includeFail", js.undefined)
+      inline def setIncludeFailUndefined: Self = StObject.set(x, "includeFail", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -1878,38 +1698,28 @@ object anon {
   }
   object PartialSinonFakeServerOpt {
     
-    @scala.inline
-    def apply(): PartialSinonFakeServerOpt = {
+    inline def apply(): PartialSinonFakeServerOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSinonFakeServerOpt]
     }
     
-    @scala.inline
-    implicit class PartialSinonFakeServerOptMutableBuilder[Self <: PartialSinonFakeServerOpt] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSinonFakeServerOpt](x: Self) {
       
-      @scala.inline
-      def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
+      inline def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRespondAfter(value: Double): Self = StObject.set(x, "autoRespondAfter", value.asInstanceOf[js.Any])
+      inline def setAutoRespondAfter(value: Double): Self = StObject.set(x, "autoRespondAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRespondAfterUndefined: Self = StObject.set(x, "autoRespondAfter", js.undefined)
+      inline def setAutoRespondAfterUndefined: Self = StObject.set(x, "autoRespondAfter", js.undefined)
       
-      @scala.inline
-      def setAutoRespondUndefined: Self = StObject.set(x, "autoRespond", js.undefined)
+      inline def setAutoRespondUndefined: Self = StObject.set(x, "autoRespond", js.undefined)
       
-      @scala.inline
-      def setFakeHTTPMethods(value: Boolean): Self = StObject.set(x, "fakeHTTPMethods", value.asInstanceOf[js.Any])
+      inline def setFakeHTTPMethods(value: Boolean): Self = StObject.set(x, "fakeHTTPMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFakeHTTPMethodsUndefined: Self = StObject.set(x, "fakeHTTPMethods", js.undefined)
+      inline def setFakeHTTPMethodsUndefined: Self = StObject.set(x, "fakeHTTPMethods", js.undefined)
       
-      @scala.inline
-      def setRespondImmediately(value: Boolean): Self = StObject.set(x, "respondImmediately", value.asInstanceOf[js.Any])
+      inline def setRespondImmediately(value: Boolean): Self = StObject.set(x, "respondImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespondImmediatelyUndefined: Self = StObject.set(x, "respondImmediately", js.undefined)
+      inline def setRespondImmediatelyUndefined: Self = StObject.set(x, "respondImmediately", js.undefined)
     }
   }
   
@@ -1924,35 +1734,26 @@ object anon {
   }
   object PartialSinonFakeTimersCon {
     
-    @scala.inline
-    def apply(): PartialSinonFakeTimersCon = {
+    inline def apply(): PartialSinonFakeTimersCon = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSinonFakeTimersCon]
     }
     
-    @scala.inline
-    implicit class PartialSinonFakeTimersConMutableBuilder[Self <: PartialSinonFakeTimersCon] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSinonFakeTimersCon](x: Self) {
       
-      @scala.inline
-      def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
+      inline def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
+      inline def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
       
-      @scala.inline
-      def setToFake(value: js.Array[String]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
+      inline def setToFake(value: js.Array[String]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
+      inline def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
       
-      @scala.inline
-      def setToFakeVarargs(value: String*): Self = StObject.set(x, "toFake", js.Array(value :_*))
+      inline def setToFakeVarargs(value: String*): Self = StObject.set(x, "toFake", js.Array(value :_*))
     }
   }
   
@@ -1969,44 +1770,32 @@ object anon {
   }
   object PartialSinonSandboxConfig {
     
-    @scala.inline
-    def apply(): PartialSinonSandboxConfig = {
+    inline def apply(): PartialSinonSandboxConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSinonSandboxConfig]
     }
     
-    @scala.inline
-    implicit class PartialSinonSandboxConfigMutableBuilder[Self <: PartialSinonSandboxConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSinonSandboxConfig](x: Self) {
       
-      @scala.inline
-      def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
+      inline def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectIntoNull: Self = StObject.set(x, "injectInto", null)
+      inline def setInjectIntoNull: Self = StObject.set(x, "injectInto", null)
       
-      @scala.inline
-      def setInjectIntoUndefined: Self = StObject.set(x, "injectInto", js.undefined)
+      inline def setInjectIntoUndefined: Self = StObject.set(x, "injectInto", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setUseFakeServer(value: Boolean | SinonFakeServer): Self = StObject.set(x, "useFakeServer", value.asInstanceOf[js.Any])
+      inline def setUseFakeServer(value: Boolean | SinonFakeServer): Self = StObject.set(x, "useFakeServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFakeServerUndefined: Self = StObject.set(x, "useFakeServer", js.undefined)
+      inline def setUseFakeServerUndefined: Self = StObject.set(x, "useFakeServer", js.undefined)
       
-      @scala.inline
-      def setUseFakeTimers(value: Boolean | PartialSinonFakeTimersCon): Self = StObject.set(x, "useFakeTimers", value.asInstanceOf[js.Any])
+      inline def setUseFakeTimers(value: Boolean | PartialSinonFakeTimersCon): Self = StObject.set(x, "useFakeTimers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFakeTimersUndefined: Self = StObject.set(x, "useFakeTimers", js.undefined)
+      inline def setUseFakeTimersUndefined: Self = StObject.set(x, "useFakeTimers", js.undefined)
     }
   }
 }

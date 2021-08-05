@@ -28,28 +28,21 @@ trait GitTreeDiff extends StObject {
 }
 object GitTreeDiff {
   
-  @scala.inline
-  def apply(baseTreeId: String, diffEntries: js.Array[GitTreeDiffEntry], targetTreeId: String, url: String): GitTreeDiff = {
+  inline def apply(baseTreeId: String, diffEntries: js.Array[GitTreeDiffEntry], targetTreeId: String, url: String): GitTreeDiff = {
     val __obj = js.Dynamic.literal(baseTreeId = baseTreeId.asInstanceOf[js.Any], diffEntries = diffEntries.asInstanceOf[js.Any], targetTreeId = targetTreeId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitTreeDiff]
   }
   
-  @scala.inline
-  implicit class GitTreeDiffMutableBuilder[Self <: GitTreeDiff] (val x: Self) extends AnyVal {
+  extension [Self <: GitTreeDiff](x: Self) {
     
-    @scala.inline
-    def setBaseTreeId(value: String): Self = StObject.set(x, "baseTreeId", value.asInstanceOf[js.Any])
+    inline def setBaseTreeId(value: String): Self = StObject.set(x, "baseTreeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiffEntries(value: js.Array[GitTreeDiffEntry]): Self = StObject.set(x, "diffEntries", value.asInstanceOf[js.Any])
+    inline def setDiffEntries(value: js.Array[GitTreeDiffEntry]): Self = StObject.set(x, "diffEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiffEntriesVarargs(value: GitTreeDiffEntry*): Self = StObject.set(x, "diffEntries", js.Array(value :_*))
+    inline def setDiffEntriesVarargs(value: GitTreeDiffEntry*): Self = StObject.set(x, "diffEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetTreeId(value: String): Self = StObject.set(x, "targetTreeId", value.asInstanceOf[js.Any])
+    inline def setTargetTreeId(value: String): Self = StObject.set(x, "targetTreeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

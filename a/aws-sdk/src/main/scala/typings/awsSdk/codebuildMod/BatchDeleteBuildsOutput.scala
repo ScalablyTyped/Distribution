@@ -18,31 +18,23 @@ trait BatchDeleteBuildsOutput extends StObject {
 }
 object BatchDeleteBuildsOutput {
   
-  @scala.inline
-  def apply(): BatchDeleteBuildsOutput = {
+  inline def apply(): BatchDeleteBuildsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteBuildsOutput]
   }
   
-  @scala.inline
-  implicit class BatchDeleteBuildsOutputMutableBuilder[Self <: BatchDeleteBuildsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteBuildsOutput](x: Self) {
     
-    @scala.inline
-    def setBuildsDeleted(value: BuildIds): Self = StObject.set(x, "buildsDeleted", value.asInstanceOf[js.Any])
+    inline def setBuildsDeleted(value: BuildIds): Self = StObject.set(x, "buildsDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildsDeletedUndefined: Self = StObject.set(x, "buildsDeleted", js.undefined)
+    inline def setBuildsDeletedUndefined: Self = StObject.set(x, "buildsDeleted", js.undefined)
     
-    @scala.inline
-    def setBuildsDeletedVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildsDeleted", js.Array(value :_*))
+    inline def setBuildsDeletedVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildsDeleted", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildsNotDeleted(value: BuildsNotDeleted): Self = StObject.set(x, "buildsNotDeleted", value.asInstanceOf[js.Any])
+    inline def setBuildsNotDeleted(value: BuildsNotDeleted): Self = StObject.set(x, "buildsNotDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildsNotDeletedUndefined: Self = StObject.set(x, "buildsNotDeleted", js.undefined)
+    inline def setBuildsNotDeletedUndefined: Self = StObject.set(x, "buildsNotDeleted", js.undefined)
     
-    @scala.inline
-    def setBuildsNotDeletedVarargs(value: BuildNotDeleted*): Self = StObject.set(x, "buildsNotDeleted", js.Array(value :_*))
+    inline def setBuildsNotDeletedVarargs(value: BuildNotDeleted*): Self = StObject.set(x, "buildsNotDeleted", js.Array(value :_*))
   }
 }

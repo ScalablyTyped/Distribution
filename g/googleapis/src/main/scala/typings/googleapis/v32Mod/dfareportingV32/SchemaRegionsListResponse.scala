@@ -22,28 +22,21 @@ trait SchemaRegionsListResponse extends StObject {
 }
 object SchemaRegionsListResponse {
   
-  @scala.inline
-  def apply(): SchemaRegionsListResponse = {
+  inline def apply(): SchemaRegionsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRegionsListResponseMutableBuilder[Self <: SchemaRegionsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRegions(value: js.Array[SchemaRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[SchemaRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: SchemaRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: SchemaRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

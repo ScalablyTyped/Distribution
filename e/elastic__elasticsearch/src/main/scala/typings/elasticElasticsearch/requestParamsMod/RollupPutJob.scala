@@ -14,19 +14,15 @@ trait RollupPutJob[T]
 }
 object RollupPutJob {
   
-  @scala.inline
-  def apply[T](body: T, id: String): RollupPutJob[T] = {
+  inline def apply[T](body: T, id: String): RollupPutJob[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupPutJob[T]]
   }
   
-  @scala.inline
-  implicit class RollupPutJobMutableBuilder[Self <: RollupPutJob[?], T] (val x: Self & RollupPutJob[T]) extends AnyVal {
+  extension [Self <: RollupPutJob[?], T](x: Self & RollupPutJob[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

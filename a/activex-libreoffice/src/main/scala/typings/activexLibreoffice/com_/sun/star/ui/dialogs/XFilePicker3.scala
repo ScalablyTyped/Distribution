@@ -27,8 +27,7 @@ trait XFilePicker3
      with XComponent
 object XFilePicker3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableHeight: Double,
     AvailableWidth: Double,
     CurrentFilter: String,

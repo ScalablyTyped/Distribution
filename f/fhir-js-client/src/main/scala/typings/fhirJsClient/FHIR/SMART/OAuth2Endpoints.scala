@@ -26,31 +26,23 @@ trait OAuth2Endpoints extends StObject {
 }
 object OAuth2Endpoints {
   
-  @scala.inline
-  def apply(): OAuth2Endpoints = {
+  inline def apply(): OAuth2Endpoints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuth2Endpoints]
   }
   
-  @scala.inline
-  implicit class OAuth2EndpointsMutableBuilder[Self <: OAuth2Endpoints] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2Endpoints](x: Self) {
     
-    @scala.inline
-    def setAuthorize_uri(value: String): Self = StObject.set(x, "authorize_uri", value.asInstanceOf[js.Any])
+    inline def setAuthorize_uri(value: String): Self = StObject.set(x, "authorize_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorize_uriUndefined: Self = StObject.set(x, "authorize_uri", js.undefined)
+    inline def setAuthorize_uriUndefined: Self = StObject.set(x, "authorize_uri", js.undefined)
     
-    @scala.inline
-    def setRegistration_uri(value: String): Self = StObject.set(x, "registration_uri", value.asInstanceOf[js.Any])
+    inline def setRegistration_uri(value: String): Self = StObject.set(x, "registration_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistration_uriUndefined: Self = StObject.set(x, "registration_uri", js.undefined)
+    inline def setRegistration_uriUndefined: Self = StObject.set(x, "registration_uri", js.undefined)
     
-    @scala.inline
-    def setToken_uri(value: String): Self = StObject.set(x, "token_uri", value.asInstanceOf[js.Any])
+    inline def setToken_uri(value: String): Self = StObject.set(x, "token_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken_uriUndefined: Self = StObject.set(x, "token_uri", js.undefined)
+    inline def setToken_uriUndefined: Self = StObject.set(x, "token_uri", js.undefined)
   }
 }

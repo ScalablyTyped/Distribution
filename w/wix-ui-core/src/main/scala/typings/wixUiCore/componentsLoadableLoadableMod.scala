@@ -18,9 +18,9 @@ object componentsLoadableLoadableMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MLoadable(prevProps: js.Any): Unit = js.native
     
-    val loadSyncOrAsync: js.Any = js.native
+    /* private */ val loadSyncOrAsync: js.Any = js.native
     
-    val resolveModule: js.Any = js.native
+    /* private */ val resolveModule: js.Any = js.native
   }
   
   trait LoadableProps[LoadableExports] extends StObject {
@@ -51,8 +51,7 @@ object componentsLoadableLoadableMod {
   }
   object LoadableProps {
     
-    @scala.inline
-    def apply[LoadableExports](
+    inline def apply[LoadableExports](
       children: LoadedMap[LoadableExports] => Element,
       defaultComponent: Element,
       loader: LoaderMap[LoadableExports]
@@ -61,45 +60,33 @@ object componentsLoadableLoadableMod {
       __obj.asInstanceOf[LoadableProps[LoadableExports]]
     }
     
-    @scala.inline
-    implicit class LoadablePropsMutableBuilder[Self <: LoadableProps[?], LoadableExports] (val x: Self & LoadableProps[LoadableExports]) extends AnyVal {
+    extension [Self <: LoadableProps[?], LoadableExports](x: Self & LoadableProps[LoadableExports]) {
       
-      @scala.inline
-      def setChildren(value: LoadedMap[LoadableExports] => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: LoadedMap[LoadableExports] => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultComponent(value: Element): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+      inline def setDefaultComponent(value: Element): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoader(value: LoaderMap[LoadableExports]): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: LoaderMap[LoadableExports]): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingComponent(value: Element): Self = StObject.set(x, "loadingComponent", value.asInstanceOf[js.Any])
+      inline def setLoadingComponent(value: Element): Self = StObject.set(x, "loadingComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingComponentUndefined: Self = StObject.set(x, "loadingComponent", js.undefined)
+      inline def setLoadingComponentUndefined: Self = StObject.set(x, "loadingComponent", js.undefined)
       
-      @scala.inline
-      def setNamedExports(
+      inline def setNamedExports(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ Key in keyof LoadableExports ]:? string}
         */ typings.wixUiCore.wixUiCoreStrings.LoadableProps & TopLevel[js.Any]
       ): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedExportsUndefined: Self = StObject.set(x, "namedExports", js.undefined)
+      inline def setNamedExportsUndefined: Self = StObject.set(x, "namedExports", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => js.Function): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => js.Function): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setShouldLoadComponent(value: Boolean): Self = StObject.set(x, "shouldLoadComponent", value.asInstanceOf[js.Any])
+      inline def setShouldLoadComponent(value: Boolean): Self = StObject.set(x, "shouldLoadComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldLoadComponentUndefined: Self = StObject.set(x, "shouldLoadComponent", js.undefined)
+      inline def setShouldLoadComponentUndefined: Self = StObject.set(x, "shouldLoadComponent", js.undefined)
     }
   }
   
@@ -111,20 +98,16 @@ object componentsLoadableLoadableMod {
   }
   object LoadableState {
     
-    @scala.inline
-    def apply[LoadableExports](isLoading: Boolean, loaded: LoadedMap[LoadableExports]): LoadableState[LoadableExports] = {
+    inline def apply[LoadableExports](isLoading: Boolean, loaded: LoadedMap[LoadableExports]): LoadableState[LoadableExports] = {
       val __obj = js.Dynamic.literal(isLoading = isLoading.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadableState[LoadableExports]]
     }
     
-    @scala.inline
-    implicit class LoadableStateMutableBuilder[Self <: LoadableState[?], LoadableExports] (val x: Self & LoadableState[LoadableExports]) extends AnyVal {
+    extension [Self <: LoadableState[?], LoadableExports](x: Self & LoadableState[LoadableExports]) {
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaded(value: LoadedMap[LoadableExports]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: LoadedMap[LoadableExports]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     }
   }
   

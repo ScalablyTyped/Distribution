@@ -182,8 +182,7 @@ object graphDataItemMod {
   }
   object GraphDataItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Double,
       bullet: String,
       bulletSize: Double,
@@ -204,56 +203,39 @@ object graphDataItemMod {
       __obj.asInstanceOf[GraphDataItem]
     }
     
-    @scala.inline
-    implicit class GraphDataItemMutableBuilder[Self <: GraphDataItem] (val x: Self) extends AnyVal {
+    extension [Self <: GraphDataItem](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBullet(value: String): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+      inline def setBullet(value: String): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulletSize(value: Double): Self = StObject.set(x, "bulletSize", value.asInstanceOf[js.Any])
+      inline def setBulletSize(value: Double): Self = StObject.set(x, "bulletSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomBullet(value: String): Self = StObject.set(x, "customBullet", value.asInstanceOf[js.Any])
+      inline def setCustomBullet(value: String): Self = StObject.set(x, "customBullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataContext(value: js.Object): Self = StObject.set(x, "dataContext", value.asInstanceOf[js.Any])
+      inline def setDataContext(value: js.Object): Self = StObject.set(x, "dataContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColors(value: js.Array[js.Any]): Self = StObject.set(x, "fillColors", value.asInstanceOf[js.Any])
+      inline def setFillColors(value: js.Array[js.Any]): Self = StObject.set(x, "fillColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorsVarargs(value: js.Any*): Self = StObject.set(x, "fillColors", js.Array(value :_*))
+      inline def setFillColorsVarargs(value: js.Any*): Self = StObject.set(x, "fillColors", js.Array(value :_*))
       
-      @scala.inline
-      def setPercents(value: js.Object): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
+      inline def setPercents(value: js.Object): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialDataItem(value: typings.amcharts.serialDataItemMod.default): Self = StObject.set(x, "serialDataItem", value.asInstanceOf[js.Any])
+      inline def setSerialDataItem(value: typings.amcharts.serialDataItemMod.default): Self = StObject.set(x, "serialDataItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

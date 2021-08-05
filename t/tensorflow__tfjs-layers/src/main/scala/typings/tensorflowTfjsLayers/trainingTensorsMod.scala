@@ -21,87 +21,52 @@ object trainingTensorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkBatchSize(batchSize: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBatchSize")(batchSize.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkBatchSize(batchSize: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBatchSize")(batchSize.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: Tensor[Rank], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: Tensor[Rank], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disposeNewTensors(tensors: Tensor[Rank], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: js.Array[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: StringDictionary[Tensor[Rank]], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: Tensor[Rank], refTensors: js.Array[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: Tensor[Rank], refTensors: StringDictionary[Tensor[Rank]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disposeNewTensors(tensors: Tensor[Rank], refTensors: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disposeNewTensors")(tensors.asInstanceOf[js.Any], refTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def ensureTensorsRank2OrHigher(tensors: js.Array[Tensor[Rank]]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
-  @scala.inline
-  def ensureTensorsRank2OrHigher(tensors: Tensor[Rank]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
+  inline def ensureTensorsRank2OrHigher(tensors: js.Array[Tensor[Rank]]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
+  inline def ensureTensorsRank2OrHigher(tensors: Tensor[Rank]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
   
-  @scala.inline
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(
+  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(
     model: js.Any,
     x: StringDictionary[Tensor[Rank]],
     y: StringDictionary[Tensor[Rank]],
     args: ModelFitArgs
   ): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  @scala.inline
-  def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
   
-  @scala.inline
-  def makeBatches(size: Double, batchSize: Double): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBatches")(size.asInstanceOf[js.Any], batchSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  inline def makeBatches(size: Double, batchSize: Double): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBatches")(size.asInstanceOf[js.Any], batchSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
-  @scala.inline
-  def sliceArrays(arrays: js.Array[Tensor[Rank]], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArrays")(arrays.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
-  @scala.inline
-  def sliceArrays(arrays: Tensor[Rank], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArrays")(arrays.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
+  inline def sliceArrays(arrays: js.Array[Tensor[Rank]], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArrays")(arrays.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
+  inline def sliceArrays(arrays: Tensor[Rank], start: Double, stop: Double): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArrays")(arrays.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
   
-  @scala.inline
-  def sliceArraysByIndices(arrays: js.Array[Tensor[Rank]], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArraysByIndices")(arrays.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
-  @scala.inline
-  def sliceArraysByIndices(arrays: Tensor[Rank], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArraysByIndices")(arrays.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
+  inline def sliceArraysByIndices(arrays: js.Array[Tensor[Rank]], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArraysByIndices")(arrays.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
+  inline def sliceArraysByIndices(arrays: Tensor[Rank], indices: Tensor1D): Tensor[Rank] | js.Array[Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceArraysByIndices")(arrays.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | js.Array[Tensor[Rank]]]
   
   trait ModelFitArgs extends StObject {
     
@@ -243,71 +208,50 @@ object trainingTensorsMod {
   }
   object ModelFitArgs {
     
-    @scala.inline
-    def apply(): ModelFitArgs = {
+    inline def apply(): ModelFitArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelFitArgs]
     }
     
-    @scala.inline
-    implicit class ModelFitArgsMutableBuilder[Self <: ModelFitArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ModelFitArgs](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setCallbacks(value: (js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: (js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+      inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      @scala.inline
-      def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
       
-      @scala.inline
-      def setClassWeight(value: ClassWeight | js.Array[ClassWeight] | ClassWeightMap): Self = StObject.set(x, "classWeight", value.asInstanceOf[js.Any])
+      inline def setClassWeight(value: ClassWeight | js.Array[ClassWeight] | ClassWeightMap): Self = StObject.set(x, "classWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassWeightUndefined: Self = StObject.set(x, "classWeight", js.undefined)
+      inline def setClassWeightUndefined: Self = StObject.set(x, "classWeight", js.undefined)
       
-      @scala.inline
-      def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value :_*))
+      inline def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value :_*))
       
-      @scala.inline
-      def setEpochs(value: Double): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
+      inline def setEpochs(value: Double): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpochsUndefined: Self = StObject.set(x, "epochs", js.undefined)
+      inline def setEpochsUndefined: Self = StObject.set(x, "epochs", js.undefined)
       
-      @scala.inline
-      def setInitialEpoch(value: Double): Self = StObject.set(x, "initialEpoch", value.asInstanceOf[js.Any])
+      inline def setInitialEpoch(value: Double): Self = StObject.set(x, "initialEpoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialEpochUndefined: Self = StObject.set(x, "initialEpoch", js.undefined)
+      inline def setInitialEpochUndefined: Self = StObject.set(x, "initialEpoch", js.undefined)
       
-      @scala.inline
-      def setSampleWeight(value: Tensor[Rank]): Self = StObject.set(x, "sampleWeight", value.asInstanceOf[js.Any])
+      inline def setSampleWeight(value: Tensor[Rank]): Self = StObject.set(x, "sampleWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleWeightUndefined: Self = StObject.set(x, "sampleWeight", js.undefined)
+      inline def setSampleWeightUndefined: Self = StObject.set(x, "sampleWeight", js.undefined)
       
-      @scala.inline
-      def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+      inline def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
+      inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
       
-      @scala.inline
-      def setStepsPerEpoch(value: Double): Self = StObject.set(x, "stepsPerEpoch", value.asInstanceOf[js.Any])
+      inline def setStepsPerEpoch(value: Double): Self = StObject.set(x, "stepsPerEpoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsPerEpochUndefined: Self = StObject.set(x, "stepsPerEpoch", js.undefined)
+      inline def setStepsPerEpochUndefined: Self = StObject.set(x, "stepsPerEpoch", js.undefined)
       
-      @scala.inline
-      def setValidationData(
+      inline def setValidationData(
         value: (js.Tuple2[Tensor[Rank] | js.Array[Tensor[Rank]], Tensor[Rank] | js.Array[Tensor[Rank]]]) | (js.Tuple3[
               Tensor[Rank] | js.Array[Tensor[Rank]], 
               Tensor[Rank] | js.Array[Tensor[Rank]], 
@@ -315,32 +259,23 @@ object trainingTensorsMod {
             ])
       ): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
+      inline def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
       
-      @scala.inline
-      def setValidationSplit(value: Double): Self = StObject.set(x, "validationSplit", value.asInstanceOf[js.Any])
+      inline def setValidationSplit(value: Double): Self = StObject.set(x, "validationSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationSplitUndefined: Self = StObject.set(x, "validationSplit", js.undefined)
+      inline def setValidationSplitUndefined: Self = StObject.set(x, "validationSplit", js.undefined)
       
-      @scala.inline
-      def setValidationSteps(value: Double): Self = StObject.set(x, "validationSteps", value.asInstanceOf[js.Any])
+      inline def setValidationSteps(value: Double): Self = StObject.set(x, "validationSteps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationStepsUndefined: Self = StObject.set(x, "validationSteps", js.undefined)
+      inline def setValidationStepsUndefined: Self = StObject.set(x, "validationSteps", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: ModelLoggingVerbosity): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: ModelLoggingVerbosity): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setYieldEvery(value: YieldEveryOptions): Self = StObject.set(x, "yieldEvery", value.asInstanceOf[js.Any])
+      inline def setYieldEvery(value: YieldEveryOptions): Self = StObject.set(x, "yieldEvery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYieldEveryUndefined: Self = StObject.set(x, "yieldEvery", js.undefined)
+      inline def setYieldEveryUndefined: Self = StObject.set(x, "yieldEvery", js.undefined)
     }
   }
 }

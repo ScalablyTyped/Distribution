@@ -11,22 +11,17 @@ trait BulkEditNegativeKeywordsResponse extends StObject {
 }
 object BulkEditNegativeKeywordsResponse {
   
-  @scala.inline
-  def apply(): BulkEditNegativeKeywordsResponse = {
+  inline def apply(): BulkEditNegativeKeywordsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditNegativeKeywordsResponse]
   }
   
-  @scala.inline
-  implicit class BulkEditNegativeKeywordsResponseMutableBuilder[Self <: BulkEditNegativeKeywordsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditNegativeKeywordsResponse](x: Self) {
     
-    @scala.inline
-    def setNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "negativeKeywords", value.asInstanceOf[js.Any])
+    inline def setNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "negativeKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeKeywordsUndefined: Self = StObject.set(x, "negativeKeywords", js.undefined)
+    inline def setNegativeKeywordsUndefined: Self = StObject.set(x, "negativeKeywords", js.undefined)
     
-    @scala.inline
-    def setNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "negativeKeywords", js.Array(value :_*))
+    inline def setNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "negativeKeywords", js.Array(value :_*))
   }
 }

@@ -14,25 +14,19 @@ trait SDKInfo extends StObject {
 }
 object SDKInfo {
   
-  @scala.inline
-  def apply(): SDKInfo = {
+  inline def apply(): SDKInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SDKInfo]
   }
   
-  @scala.inline
-  implicit class SDKInfoMutableBuilder[Self <: SDKInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SDKInfo](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -22,20 +22,16 @@ object anon {
   }
   object Resize {
     
-    @scala.inline
-    def apply(resize: Double, scroll: Double): Resize = {
+    inline def apply(resize: Double, scroll: Double): Resize = {
       val __obj = js.Dynamic.literal(resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resize]
     }
     
-    @scala.inline
-    implicit class ResizeMutableBuilder[Self <: Resize] (val x: Self) extends AnyVal {
+    extension [Self <: Resize](x: Self) {
       
-      @scala.inline
-      def setResize(value: Double): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Double): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScroll(value: Double): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Double): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     }
   }
 }

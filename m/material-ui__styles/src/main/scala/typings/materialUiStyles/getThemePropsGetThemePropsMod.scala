@@ -12,8 +12,7 @@ object getThemePropsGetThemePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Theme /* <: ThemeWithProps[js.Any] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props & (ThemedProps[Theme, Name]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[Props & (ThemedProps[Theme, Name])]
+  inline def default[Theme /* <: ThemeWithProps[js.Any] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props & (ThemedProps[Theme, Name]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[Props & (ThemedProps[Theme, Name])]
   
   trait ThemeWithProps[Components] extends StObject {
     
@@ -25,24 +24,20 @@ object getThemePropsGetThemePropsMod {
   }
   object ThemeWithProps {
     
-    @scala.inline
-    def apply[Components](): ThemeWithProps[Components] = {
+    inline def apply[Components](): ThemeWithProps[Components] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThemeWithProps[Components]]
     }
     
-    @scala.inline
-    implicit class ThemeWithPropsMutableBuilder[Self <: ThemeWithProps[?], Components] (val x: Self & ThemeWithProps[Components]) extends AnyVal {
+    extension [Self <: ThemeWithProps[?], Components](x: Self & ThemeWithProps[Components]) {
       
-      @scala.inline
-      def setProps(
+      inline def setProps(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof Components ]: std.Partial<Components[K]>}
         */ typings.materialUiStyles.materialUiStylesStrings.ThemeWithProps & TopLevel[Components]
       ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   

@@ -19,32 +19,25 @@ trait LeaseWorkItemResponse extends StObject {
 }
 object LeaseWorkItemResponse {
   
-  @scala.inline
-  def apply(): LeaseWorkItemResponse = {
+  inline def apply(): LeaseWorkItemResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeaseWorkItemResponse]
   }
   
-  @scala.inline
-  implicit class LeaseWorkItemResponseMutableBuilder[Self <: LeaseWorkItemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LeaseWorkItemResponse](x: Self) {
     
-    @scala.inline
-    def setUnifiedWorkerResponse(
+    inline def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
+    inline def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
     
-    @scala.inline
-    def setWorkItems(value: js.Array[WorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: js.Array[WorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
+    inline def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
     
-    @scala.inline
-    def setWorkItemsVarargs(value: WorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: WorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

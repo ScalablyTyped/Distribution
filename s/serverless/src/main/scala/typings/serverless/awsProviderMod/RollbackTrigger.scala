@@ -12,19 +12,15 @@ trait RollbackTrigger extends StObject {
 }
 object RollbackTrigger {
   
-  @scala.inline
-  def apply(Arn: String, Type: String): RollbackTrigger = {
+  inline def apply(Arn: String, Type: String): RollbackTrigger = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollbackTrigger]
   }
   
-  @scala.inline
-  implicit class RollbackTriggerMutableBuilder[Self <: RollbackTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: RollbackTrigger](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

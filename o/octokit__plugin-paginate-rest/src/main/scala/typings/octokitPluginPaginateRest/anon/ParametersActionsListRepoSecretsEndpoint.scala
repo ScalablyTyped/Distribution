@@ -15,8 +15,7 @@ trait ParametersActionsListRepoSecretsEndpoint extends StObject {
 }
 object ParametersActionsListRepoSecretsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsListRepoSecretsEndpoint,
     response: OctokitResponse[ActionsListRepoSecretsResponseData] & `11`
   ): ParametersActionsListRepoSecretsEndpoint = {
@@ -24,13 +23,10 @@ object ParametersActionsListRepoSecretsEndpoint {
     __obj.asInstanceOf[ParametersActionsListRepoSecretsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsListRepoSecretsEndpointMutableBuilder[Self <: ParametersActionsListRepoSecretsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsListRepoSecretsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsListRepoSecretsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsListRepoSecretsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListRepoSecretsResponseData] & `11`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsListRepoSecretsResponseData] & `11`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

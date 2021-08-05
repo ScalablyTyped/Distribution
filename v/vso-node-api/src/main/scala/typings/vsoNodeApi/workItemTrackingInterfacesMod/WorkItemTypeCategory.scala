@@ -30,8 +30,7 @@ trait WorkItemTypeCategory
 }
 object WorkItemTypeCategory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     defaultWorkItemType: WorkItemTypeReference,
     name: String,
@@ -43,22 +42,16 @@ object WorkItemTypeCategory {
     __obj.asInstanceOf[WorkItemTypeCategory]
   }
   
-  @scala.inline
-  implicit class WorkItemTypeCategoryMutableBuilder[Self <: WorkItemTypeCategory] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTypeCategory](x: Self) {
     
-    @scala.inline
-    def setDefaultWorkItemType(value: WorkItemTypeReference): Self = StObject.set(x, "defaultWorkItemType", value.asInstanceOf[js.Any])
+    inline def setDefaultWorkItemType(value: WorkItemTypeReference): Self = StObject.set(x, "defaultWorkItemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+    inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypes(value: js.Array[WorkItemTypeReference]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypes(value: js.Array[WorkItemTypeReference]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
+    inline def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
   }
 }

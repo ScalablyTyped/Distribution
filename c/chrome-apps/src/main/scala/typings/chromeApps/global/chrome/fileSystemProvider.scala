@@ -102,14 +102,12 @@ object fileSystemProvider {
     @JSGlobal("chrome.fileSystemProvider.ChangeType.CHANGED")
     @js.native
     def CHANGED: typings.chromeApps.chromeAppsStrings.CHANGED = js.native
-    @scala.inline
-    def CHANGED_=(x: CHANGED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGED")(x.asInstanceOf[js.Any])
+    inline def CHANGED_=(x: CHANGED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ChangeType.DELETED")
     @js.native
     def DELETED: typings.chromeApps.chromeAppsStrings.DELETED = js.native
-    @scala.inline
-    def DELETED_=(x: DELETED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETED")(x.asInstanceOf[js.Any])
+    inline def DELETED_=(x: DELETED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETED")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -128,20 +126,17 @@ object fileSystemProvider {
     @JSGlobal("chrome.fileSystemProvider.CommonActionId.OFFLINE_NOT_NECESSARY")
     @js.native
     def OFFLINE_NOT_NECESSARY: typings.chromeApps.chromeAppsStrings.OFFLINE_NOT_NECESSARY = js.native
-    @scala.inline
-    def OFFLINE_NOT_NECESSARY_=(x: OFFLINE_NOT_NECESSARY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFLINE_NOT_NECESSARY")(x.asInstanceOf[js.Any])
+    inline def OFFLINE_NOT_NECESSARY_=(x: OFFLINE_NOT_NECESSARY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFLINE_NOT_NECESSARY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.CommonActionId.SAVE_FOR_OFFLINE")
     @js.native
     def SAVE_FOR_OFFLINE: typings.chromeApps.chromeAppsStrings.SAVE_FOR_OFFLINE = js.native
-    @scala.inline
-    def SAVE_FOR_OFFLINE_=(x: SAVE_FOR_OFFLINE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAVE_FOR_OFFLINE")(x.asInstanceOf[js.Any])
+    inline def SAVE_FOR_OFFLINE_=(x: SAVE_FOR_OFFLINE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAVE_FOR_OFFLINE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.CommonActionId.SHARE")
     @js.native
     def SHARE: typings.chromeApps.chromeAppsStrings.SHARE = js.native
-    @scala.inline
-    def SHARE_=(x: SHARE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHARE")(x.asInstanceOf[js.Any])
+    inline def SHARE_=(x: SHARE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHARE")(x.asInstanceOf[js.Any])
   }
   
   /** Mode of opening a file. Used by onOpenFileRequested. */
@@ -154,14 +149,12 @@ object fileSystemProvider {
     @JSGlobal("chrome.fileSystemProvider.OpenFileMode.READ")
     @js.native
     def READ: typings.chromeApps.chromeAppsStrings.READ = js.native
-    @scala.inline
-    def READ_=(x: READ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READ")(x.asInstanceOf[js.Any])
+    inline def READ_=(x: READ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READ")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.OpenFileMode.WRITE")
     @js.native
     def WRITE: typings.chromeApps.chromeAppsStrings.WRITE = js.native
-    @scala.inline
-    def WRITE_=(x: WRITE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRITE")(x.asInstanceOf[js.Any])
+    inline def WRITE_=(x: WRITE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRITE")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -178,104 +171,87 @@ object fileSystemProvider {
     @JSGlobal("chrome.fileSystemProvider.ProviderError.ABORT")
     @js.native
     def ABORT: typings.chromeApps.chromeAppsStrings.ABORT = js.native
-    @scala.inline
-    def ABORT_=(x: ABORT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABORT")(x.asInstanceOf[js.Any])
+    inline def ABORT_=(x: ABORT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABORT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.ACCESS_DENIED")
     @js.native
     def ACCESS_DENIED: typings.chromeApps.chromeAppsStrings.ACCESS_DENIED = js.native
-    @scala.inline
-    def ACCESS_DENIED_=(x: ACCESS_DENIED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCESS_DENIED")(x.asInstanceOf[js.Any])
+    inline def ACCESS_DENIED_=(x: ACCESS_DENIED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCESS_DENIED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.EXISTS")
     @js.native
     def EXISTS: typings.chromeApps.chromeAppsStrings.EXISTS = js.native
-    @scala.inline
-    def EXISTS_=(x: EXISTS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXISTS")(x.asInstanceOf[js.Any])
+    inline def EXISTS_=(x: EXISTS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXISTS")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.FAILED")
     @js.native
     def FAILED: typings.chromeApps.chromeAppsStrings.FAILED = js.native
-    @scala.inline
-    def FAILED_=(x: FAILED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILED")(x.asInstanceOf[js.Any])
+    inline def FAILED_=(x: FAILED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.INVALID_OPERATION")
     @js.native
     def INVALID_OPERATION: typings.chromeApps.chromeAppsStrings.INVALID_OPERATION = js.native
-    @scala.inline
-    def INVALID_OPERATION_=(x: INVALID_OPERATION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_OPERATION")(x.asInstanceOf[js.Any])
+    inline def INVALID_OPERATION_=(x: INVALID_OPERATION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_OPERATION")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.INVALID_URL")
     @js.native
     def INVALID_URL: typings.chromeApps.chromeAppsStrings.INVALID_URL = js.native
-    @scala.inline
-    def INVALID_URL_=(x: INVALID_URL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_URL")(x.asInstanceOf[js.Any])
+    inline def INVALID_URL_=(x: INVALID_URL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_URL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.IN_USE")
     @js.native
     def IN_USE: typings.chromeApps.chromeAppsStrings.IN_USE = js.native
-    @scala.inline
-    def IN_USE_=(x: IN_USE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_USE")(x.asInstanceOf[js.Any])
+    inline def IN_USE_=(x: IN_USE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_USE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.IO")
     @js.native
     def IO: typings.chromeApps.chromeAppsStrings.IO = js.native
-    @scala.inline
-    def IO_=(x: IO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IO")(x.asInstanceOf[js.Any])
+    inline def IO_=(x: IO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IO")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.NOT_A_DIRECTORY")
     @js.native
     def NOT_A_DIRECTORY: typings.chromeApps.chromeAppsStrings.NOT_A_DIRECTORY = js.native
-    @scala.inline
-    def NOT_A_DIRECTORY_=(x: NOT_A_DIRECTORY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_A_DIRECTORY")(x.asInstanceOf[js.Any])
+    inline def NOT_A_DIRECTORY_=(x: NOT_A_DIRECTORY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_A_DIRECTORY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.NOT_A_FILE")
     @js.native
     def NOT_A_FILE: typings.chromeApps.chromeAppsStrings.NOT_A_FILE = js.native
-    @scala.inline
-    def NOT_A_FILE_=(x: NOT_A_FILE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_A_FILE")(x.asInstanceOf[js.Any])
+    inline def NOT_A_FILE_=(x: NOT_A_FILE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_A_FILE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.NOT_EMPTY")
     @js.native
     def NOT_EMPTY: typings.chromeApps.chromeAppsStrings.NOT_EMPTY = js.native
-    @scala.inline
-    def NOT_EMPTY_=(x: NOT_EMPTY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_EMPTY")(x.asInstanceOf[js.Any])
+    inline def NOT_EMPTY_=(x: NOT_EMPTY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_EMPTY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.NOT_FOUND")
     @js.native
     def NOT_FOUND: typings.chromeApps.chromeAppsStrings.NOT_FOUND = js.native
-    @scala.inline
-    def NOT_FOUND_=(x: NOT_FOUND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_FOUND")(x.asInstanceOf[js.Any])
+    inline def NOT_FOUND_=(x: NOT_FOUND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_FOUND")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.NO_MEMORY")
     @js.native
     def NO_MEMORY: typings.chromeApps.chromeAppsStrings.NO_MEMORY = js.native
-    @scala.inline
-    def NO_MEMORY_=(x: NO_MEMORY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_MEMORY")(x.asInstanceOf[js.Any])
+    inline def NO_MEMORY_=(x: NO_MEMORY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_MEMORY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.NO_SPACE")
     @js.native
     def NO_SPACE: typings.chromeApps.chromeAppsStrings.NO_SPACE = js.native
-    @scala.inline
-    def NO_SPACE_=(x: NO_SPACE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SPACE")(x.asInstanceOf[js.Any])
+    inline def NO_SPACE_=(x: NO_SPACE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SPACE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.OK")
     @js.native
     def OK: typings.chromeApps.chromeAppsStrings.OK = js.native
-    @scala.inline
-    def OK_=(x: OK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OK")(x.asInstanceOf[js.Any])
+    inline def OK_=(x: OK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OK")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.SECURITY")
     @js.native
     def SECURITY: typings.chromeApps.chromeAppsStrings.SECURITY = js.native
-    @scala.inline
-    def SECURITY_=(x: SECURITY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECURITY")(x.asInstanceOf[js.Any])
+    inline def SECURITY_=(x: SECURITY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECURITY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.fileSystemProvider.ProviderError.TOO_MANY_OPENED")
     @js.native
     def TOO_MANY_OPENED: typings.chromeApps.chromeAppsStrings.TOO_MANY_OPENED = js.native
-    @scala.inline
-    def TOO_MANY_OPENED_=(x: TOO_MANY_OPENED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOO_MANY_OPENED")(x.asInstanceOf[js.Any])
+    inline def TOO_MANY_OPENED_=(x: TOO_MANY_OPENED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOO_MANY_OPENED")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -283,15 +259,13 @@ object fileSystemProvider {
     * @since Chrome 42.
     * @param callback Callback to receive the result of get function.
     */
-  @scala.inline
-  def get(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(fileSystemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(fileSystemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns all file systems mounted by the app.
     * @param callback Callback to receive the result of getAll function.
     */
-  @scala.inline
-  def getAll(callback: js.Function1[/* fileSystems */ js.Array[FileSystemInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAll(callback: js.Function1[/* fileSystems */ js.Array[FileSystemInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   ///\/\/|\/\/\\\
   /// METHODS \\\
@@ -309,10 +283,8 @@ object fileSystemProvider {
     *
     * @param callback A generic result callback to indicate success or failure.
     */
-  @scala.inline
-  def mount(options: MountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def mount(options: MountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mount(options: MountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mount(options: MountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @requires Manifest: 'file_system_provider.notify' = true
@@ -342,8 +314,7 @@ object fileSystemProvider {
     * @param callback A generic result callback to indicate success or failure.
     * @since Chrome 45.
     */
-  @scala.inline
-  def notify_(options: NotificationOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify_(options: NotificationOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Raised when aborting an operation with operationRequestId is requested.
@@ -900,10 +871,8 @@ object fileSystemProvider {
     *
     * @param callback A generic result callback to indicate success or failure.
     */
-  @scala.inline
-  def unmount(options: UnmountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def unmount(options: UnmountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unmount(options: UnmountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unmount(options: UnmountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Internal interfaces, not for use

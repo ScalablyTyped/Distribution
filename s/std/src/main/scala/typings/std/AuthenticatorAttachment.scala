@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticatorAttachment extends StObject
 object AuthenticatorAttachment {
   
-  @scala.inline
-  def `cross-platform`: typings.std.stdStrings.`cross-platform` = "cross-platform".asInstanceOf[typings.std.stdStrings.`cross-platform`]
+  inline def `cross-platform`: typings.std.stdStrings.`cross-platform` = "cross-platform".asInstanceOf[typings.std.stdStrings.`cross-platform`]
   
-  @scala.inline
-  def platform: typings.std.stdStrings.platform = "platform".asInstanceOf[typings.std.stdStrings.platform]
+  inline def platform: typings.std.stdStrings.platform = "platform".asInstanceOf[typings.std.stdStrings.platform]
 }

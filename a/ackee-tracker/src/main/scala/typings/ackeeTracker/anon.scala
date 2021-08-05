@@ -24,17 +24,14 @@ object anon {
   }
   object Stop {
     
-    @scala.inline
-    def apply(stop: () => Unit): Stop = {
+    inline def apply(stop: () => Unit): Stop = {
       val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[Stop]
     }
     
-    @scala.inline
-    implicit class StopMutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
+    extension [Self <: Stop](x: Self) {
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

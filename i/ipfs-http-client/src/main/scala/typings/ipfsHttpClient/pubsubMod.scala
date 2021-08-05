@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pubsubMod {
   
-  @scala.inline
-  def apply(config: js.Any): Cancel = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Cancel]
+  inline def apply(config: js.Any): Cancel = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Cancel]
   
   @JSImport("ipfs-http-client/dist/src/name/pubsub", JSImport.Namespace)
   @js.native

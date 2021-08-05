@@ -12,19 +12,15 @@ trait GlideLocale extends StObject {
 }
 object GlideLocale {
   
-  @scala.inline
-  def apply(getDecimalSeparator: () => String, getGroupingSeparator: () => String): GlideLocale = {
+  inline def apply(getDecimalSeparator: () => String, getGroupingSeparator: () => String): GlideLocale = {
     val __obj = js.Dynamic.literal(getDecimalSeparator = js.Any.fromFunction0(getDecimalSeparator), getGroupingSeparator = js.Any.fromFunction0(getGroupingSeparator))
     __obj.asInstanceOf[GlideLocale]
   }
   
-  @scala.inline
-  implicit class GlideLocaleMutableBuilder[Self <: GlideLocale] (val x: Self) extends AnyVal {
+  extension [Self <: GlideLocale](x: Self) {
     
-    @scala.inline
-    def setGetDecimalSeparator(value: () => String): Self = StObject.set(x, "getDecimalSeparator", js.Any.fromFunction0(value))
+    inline def setGetDecimalSeparator(value: () => String): Self = StObject.set(x, "getDecimalSeparator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupingSeparator(value: () => String): Self = StObject.set(x, "getGroupingSeparator", js.Any.fromFunction0(value))
+    inline def setGetGroupingSeparator(value: () => String): Self = StObject.set(x, "getGroupingSeparator", js.Any.fromFunction0(value))
   }
 }

@@ -23,25 +23,19 @@ trait Connector extends StObject {
 }
 object Connector {
   
-  @scala.inline
-  def apply(ConnectorArn: string, Id: string): Connector = {
+  inline def apply(ConnectorArn: string, Id: string): Connector = {
     val __obj = js.Dynamic.literal(ConnectorArn = ConnectorArn.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connector]
   }
   
-  @scala.inline
-  implicit class ConnectorMutableBuilder[Self <: Connector] (val x: Self) extends AnyVal {
+  extension [Self <: Connector](x: Self) {
     
-    @scala.inline
-    def setConnectorArn(value: string): Self = StObject.set(x, "ConnectorArn", value.asInstanceOf[js.Any])
+    inline def setConnectorArn(value: string): Self = StObject.set(x, "ConnectorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: mapOfString): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: mapOfString): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
   }
 }

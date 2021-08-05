@@ -23,52 +23,37 @@ trait GroupsCountResult extends StObject {
 }
 object GroupsCountResult {
   
-  @scala.inline
-  def apply(): GroupsCountResult = {
+  inline def apply(): GroupsCountResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupsCountResult]
   }
   
-  @scala.inline
-  implicit class GroupsCountResultMutableBuilder[Self <: GroupsCountResult] (val x: Self) extends AnyVal {
+  extension [Self <: GroupsCountResult](x: Self) {
     
-    @scala.inline
-    def setAccountCountErrors(value: js.Array[AccountCountError]): Self = StObject.set(x, "accountCountErrors", value.asInstanceOf[js.Any])
+    inline def setAccountCountErrors(value: js.Array[AccountCountError]): Self = StObject.set(x, "accountCountErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountCountErrorsUndefined: Self = StObject.set(x, "accountCountErrors", js.undefined)
+    inline def setAccountCountErrorsUndefined: Self = StObject.set(x, "accountCountErrors", js.undefined)
     
-    @scala.inline
-    def setAccountCountErrorsVarargs(value: AccountCountError*): Self = StObject.set(x, "accountCountErrors", js.Array(value :_*))
+    inline def setAccountCountErrorsVarargs(value: AccountCountError*): Self = StObject.set(x, "accountCountErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setAccountCounts(value: js.Array[AccountCount]): Self = StObject.set(x, "accountCounts", value.asInstanceOf[js.Any])
+    inline def setAccountCounts(value: js.Array[AccountCount]): Self = StObject.set(x, "accountCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountCountsUndefined: Self = StObject.set(x, "accountCounts", js.undefined)
+    inline def setAccountCountsUndefined: Self = StObject.set(x, "accountCounts", js.undefined)
     
-    @scala.inline
-    def setAccountCountsVarargs(value: AccountCount*): Self = StObject.set(x, "accountCounts", js.Array(value :_*))
+    inline def setAccountCountsVarargs(value: AccountCount*): Self = StObject.set(x, "accountCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setMatchingAccountsCount(value: String): Self = StObject.set(x, "matchingAccountsCount", value.asInstanceOf[js.Any])
+    inline def setMatchingAccountsCount(value: String): Self = StObject.set(x, "matchingAccountsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingAccountsCountUndefined: Self = StObject.set(x, "matchingAccountsCount", js.undefined)
+    inline def setMatchingAccountsCountUndefined: Self = StObject.set(x, "matchingAccountsCount", js.undefined)
     
-    @scala.inline
-    def setNonQueryableAccounts(value: js.Array[String]): Self = StObject.set(x, "nonQueryableAccounts", value.asInstanceOf[js.Any])
+    inline def setNonQueryableAccounts(value: js.Array[String]): Self = StObject.set(x, "nonQueryableAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonQueryableAccountsUndefined: Self = StObject.set(x, "nonQueryableAccounts", js.undefined)
+    inline def setNonQueryableAccountsUndefined: Self = StObject.set(x, "nonQueryableAccounts", js.undefined)
     
-    @scala.inline
-    def setNonQueryableAccountsVarargs(value: String*): Self = StObject.set(x, "nonQueryableAccounts", js.Array(value :_*))
+    inline def setNonQueryableAccountsVarargs(value: String*): Self = StObject.set(x, "nonQueryableAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setQueriedAccountsCount(value: String): Self = StObject.set(x, "queriedAccountsCount", value.asInstanceOf[js.Any])
+    inline def setQueriedAccountsCount(value: String): Self = StObject.set(x, "queriedAccountsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriedAccountsCountUndefined: Self = StObject.set(x, "queriedAccountsCount", js.undefined)
+    inline def setQueriedAccountsCountUndefined: Self = StObject.set(x, "queriedAccountsCount", js.undefined)
   }
 }

@@ -1166,80 +1166,70 @@ object Diagram {
   @JSImport("go", "Diagram.AllParentsCollapsed")
   @js.native
   def AllParentsCollapsed: EnumValue = js.native
-  @scala.inline
-  def AllParentsCollapsed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllParentsCollapsed")(x.asInstanceOf[js.Any])
+  inline def AllParentsCollapsed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllParentsCollapsed")(x.asInstanceOf[js.Any])
   
   /**This value for Diagram.validCycle states that there are no restrictions on making cycles of links.*/
   /* static member */
   @JSImport("go", "Diagram.CycleAll")
   @js.native
   def CycleAll: EnumValue = js.native
-  @scala.inline
-  def CycleAll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleAll")(x.asInstanceOf[js.Any])
+  inline def CycleAll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleAll")(x.asInstanceOf[js.Any])
   
   /**This value for Diagram.validCycle states that any number of destination links may go out of a node, but at most one source link may come into a node, and there are no directed cycles.*/
   /* static member */
   @JSImport("go", "Diagram.CycleDestinationTree")
   @js.native
   def CycleDestinationTree: EnumValue = js.native
-  @scala.inline
-  def CycleDestinationTree_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleDestinationTree")(x.asInstanceOf[js.Any])
+  inline def CycleDestinationTree_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleDestinationTree")(x.asInstanceOf[js.Any])
   
   /**This value for Diagram.validCycle states that a valid link from a node will not produce a directed cycle in the graph.*/
   /* static member */
   @JSImport("go", "Diagram.CycleNotDirected")
   @js.native
   def CycleNotDirected: EnumValue = js.native
-  @scala.inline
-  def CycleNotDirected_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleNotDirected")(x.asInstanceOf[js.Any])
+  inline def CycleNotDirected_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleNotDirected")(x.asInstanceOf[js.Any])
   
   /**This value for Diagram.validCycle states that a valid link from a node will not produce an undirected cycle in the graph.*/
   /* static member */
   @JSImport("go", "Diagram.CycleNotUndirected")
   @js.native
   def CycleNotUndirected: EnumValue = js.native
-  @scala.inline
-  def CycleNotUndirected_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleNotUndirected")(x.asInstanceOf[js.Any])
+  inline def CycleNotUndirected_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleNotUndirected")(x.asInstanceOf[js.Any])
   
   /**This value for Diagram.validCycle states that any number of source links may come into a node, but at most one destination link may go out of a node, and there are no directed cycles.*/
   /* static member */
   @JSImport("go", "Diagram.CycleSourceTree")
   @js.native
   def CycleSourceTree: EnumValue = js.native
-  @scala.inline
-  def CycleSourceTree_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleSourceTree")(x.asInstanceOf[js.Any])
+  inline def CycleSourceTree_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CycleSourceTree")(x.asInstanceOf[js.Any])
   
   /**This value for Diagram.scrollMode states that the viewport constrains scrolling to the Diagram document bounds.*/
   /* static member */
   @JSImport("go", "Diagram.DocumentScroll")
   @js.native
   def DocumentScroll: EnumValue = js.native
-  @scala.inline
-  def DocumentScroll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DocumentScroll")(x.asInstanceOf[js.Any])
+  inline def DocumentScroll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DocumentScroll")(x.asInstanceOf[js.Any])
   
   /**This value for Diagram.scrollMode states that the viewport does not constrain scrolling to the Diagram document bounds.*/
   /* static member */
   @JSImport("go", "Diagram.InfiniteScroll")
   @js.native
   def InfiniteScroll: EnumValue = js.native
-  @scala.inline
-  def InfiniteScroll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InfiniteScroll")(x.asInstanceOf[js.Any])
+  inline def InfiniteScroll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InfiniteScroll")(x.asInstanceOf[js.Any])
   
   /**The default autoScale type, used as the value of Diagram.autoScale: The Diagram does not attempt to scale its bounds to fit the view.*/
   /* static member */
   @JSImport("go", "Diagram.None")
   @js.native
   def None: EnumValue = js.native
-  @scala.inline
-  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /** This value for Diagram.treeCollapsePolicy states that only the Node.findTreeParentNode's Node.isTreeExpanded property determines whether a "child" node is visible.*/
   /* static member */
   @JSImport("go", "Diagram.TreeParentCollapsed")
   @js.native
   def TreeParentCollapsed: EnumValue = js.native
-  @scala.inline
-  def TreeParentCollapsed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeParentCollapsed")(x.asInstanceOf[js.Any])
+  inline def TreeParentCollapsed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeParentCollapsed")(x.asInstanceOf[js.Any])
   
   /**Diagrams with this autoScale type, used as the value of Diagram.autoScale, are scaled uniformly until the documentBounds fits in the view.*/
   /* static member */
@@ -1252,19 +1242,16 @@ object Diagram {
   @JSImport("go", "Diagram.UniformToFill")
   @js.native
   def UniformToFill: EnumValue = js.native
-  @scala.inline
-  def UniformToFill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniformToFill")(x.asInstanceOf[js.Any])
+  inline def UniformToFill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniformToFill")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Uniform_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uniform")(x.asInstanceOf[js.Any])
+  inline def Uniform_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uniform")(x.asInstanceOf[js.Any])
   
   /**
     * This static function gets the Diagram that is attached to an HTML DIV element.
     * @param {HTMLDivElement} div
     */
   /* static member */
-  @scala.inline
-  def fromDiv(div: HTMLDivElement): Diagram = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDiv")(div.asInstanceOf[js.Any]).asInstanceOf[Diagram]
+  inline def fromDiv(div: HTMLDivElement): Diagram = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDiv")(div.asInstanceOf[js.Any]).asInstanceOf[Diagram]
   
   /**
     * This static function declares that a class (constructor function) derives from another class -- but please note that most classes do not support inheritance.
@@ -1272,6 +1259,5 @@ object Diagram {
     * @param {Function} baseclass
     */
   /* static member */
-  @scala.inline
-  def inherit(derivedclass: Constructor, baseclass: Constructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inherit")(derivedclass.asInstanceOf[js.Any], baseclass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def inherit(derivedclass: Constructor, baseclass: Constructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inherit")(derivedclass.asInstanceOf[js.Any], baseclass.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -23,23 +23,18 @@ trait Orient extends StObject {
 }
 object Orient {
   
-  @scala.inline
-  def apply(`type`: BoxPlot): Orient = {
+  inline def apply(`type`: BoxPlot): Orient = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Orient]
   }
   
-  @scala.inline
-  implicit class OrientMutableBuilder[Self <: Orient] (val x: Self) extends AnyVal {
+  extension [Self <: Orient](x: Self) {
     
-    @scala.inline
-    def setOrient(value: Orientation): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    inline def setOrient(value: Orientation): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+    inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
-    @scala.inline
-    def setType(value: BoxPlot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BoxPlot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

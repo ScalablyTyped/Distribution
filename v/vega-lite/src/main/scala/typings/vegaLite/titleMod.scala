@@ -30,11 +30,9 @@ object titleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractTitleConfig(titleConfig: TitleConfig[SignalRef]): NonMark = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTitleConfig")(titleConfig.asInstanceOf[js.Any]).asInstanceOf[NonMark]
+  inline def extractTitleConfig(titleConfig: TitleConfig[SignalRef]): NonMark = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTitleConfig")(titleConfig.asInstanceOf[js.Any]).asInstanceOf[NonMark]
   
-  @scala.inline
-  def isText(v: js.Any): /* is vega-typings.vega-typings/types/spec/encode.Text */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(v.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/encode.Text */ Boolean]
+  inline def isText(v: js.Any): /* is vega-typings.vega-typings/types/spec/encode.Text */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(v.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/encode.Text */ Boolean]
   
   /* Inlined vega-lite.vega-lite/build/src/vega.schema.MapExcludeValueRefAndReplaceSignalWith<std.Omit<vega.vega.BaseTitle, 'align' | 'baseline'>, ES> & vega-lite.vega-lite/build/src/vega.schema.MappedExcludeValueRef<std.Pick<vega.vega.BaseTitle, 'align' | 'baseline'>> */
   trait BaseTitleNoValueRefs[ES /* <: ExprRef | SignalRef */] extends StObject {
@@ -162,242 +160,187 @@ object titleMod {
   }
   object BaseTitleNoValueRefs {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): BaseTitleNoValueRefs[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): BaseTitleNoValueRefs[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseTitleNoValueRefs[ES]]
     }
     
-    @scala.inline
-    implicit class BaseTitleNoValueRefsMutableBuilder[Self <: BaseTitleNoValueRefs[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseTitleNoValueRefs[ES]) extends AnyVal {
+    extension [Self <: BaseTitleNoValueRefs[?], ES /* <: ExprRef | SignalRef */](x: Self & BaseTitleNoValueRefs[ES]) {
       
-      @scala.inline
-      def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAnchor(
+      inline def setAnchor(
         value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorNull: Self = StObject.set(x, "anchor", null)
+      inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setAngle(
+      inline def setAngle(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setAria(
+      inline def setAria(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+      inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
-      @scala.inline
-      def setBaseline(
+      inline def setBaseline(
         value: Exclude[
               js.UndefOr[TextBaselineValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]
       ): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+      inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
-      @scala.inline
-      def setColor(
+      inline def setColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNull: Self = StObject.set(x, "color", null)
+      inline def setColorNull: Self = StObject.set(x, "color", null)
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDx(
+      inline def setDx(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+      inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      @scala.inline
-      def setDy(
+      inline def setDy(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+      inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      @scala.inline
-      def setFont(
+      inline def setFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(
+      inline def setFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontStyle(
+      inline def setFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFontWeight(
+      inline def setFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setFrame(
+      inline def setFrame(
         value: (Exclude[
               js.UndefOr[TitleFrame | StringValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setLimit(
+      inline def setLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLineHeight(
+      inline def setLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setOffset(
+      inline def setOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrient(
+      inline def setOrient(
         value: (Exclude[
               js.UndefOr[TitleOrient | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
-      @scala.inline
-      def setSubtitleColor(
+      inline def setSubtitleColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
+      inline def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
       
-      @scala.inline
-      def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
+      inline def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
       
-      @scala.inline
-      def setSubtitleFont(
+      inline def setSubtitleFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontSize(
+      inline def setSubtitleFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
+      inline def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontStyle(
+      inline def setSubtitleFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
+      inline def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontUndefined: Self = StObject.set(x, "subtitleFont", js.undefined)
+      inline def setSubtitleFontUndefined: Self = StObject.set(x, "subtitleFont", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontWeight(
+      inline def setSubtitleFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "subtitleFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontWeightUndefined: Self = StObject.set(x, "subtitleFontWeight", js.undefined)
+      inline def setSubtitleFontWeightUndefined: Self = StObject.set(x, "subtitleFontWeight", js.undefined)
       
-      @scala.inline
-      def setSubtitleLineHeight(
+      inline def setSubtitleLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleLineHeightUndefined: Self = StObject.set(x, "subtitleLineHeight", js.undefined)
+      inline def setSubtitleLineHeightUndefined: Self = StObject.set(x, "subtitleLineHeight", js.undefined)
       
-      @scala.inline
-      def setSubtitlePadding(
+      inline def setSubtitlePadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitlePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
+      inline def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
       
-      @scala.inline
-      def setZindex(
+      inline def setZindex(
         value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
+      inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
   
@@ -443,44 +386,32 @@ object titleMod {
   }
   object TitleBase {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): TitleBase[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): TitleBase[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TitleBase[ES]]
     }
     
-    @scala.inline
-    implicit class TitleBaseMutableBuilder[Self <: TitleBase[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleBase[ES]) extends AnyVal {
+    extension [Self <: TitleBase[?], ES /* <: ExprRef | SignalRef */](x: Self & TitleBase[ES]) {
       
-      @scala.inline
-      def setAnchor(value: TitleAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: TitleAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorNull: Self = StObject.set(x, "anchor", null)
+      inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: TextEncodeEntry): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: TextEncodeEntry): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
       
-      @scala.inline
-      def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
+      inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
+      inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
   
@@ -610,242 +541,187 @@ object titleMod {
   }
   object TitleConfig {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): TitleConfig[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): TitleConfig[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TitleConfig[ES]]
     }
     
-    @scala.inline
-    implicit class TitleConfigMutableBuilder[Self <: TitleConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleConfig[ES]) extends AnyVal {
+    extension [Self <: TitleConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & TitleConfig[ES]) {
       
-      @scala.inline
-      def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAnchor(
+      inline def setAnchor(
         value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorNull: Self = StObject.set(x, "anchor", null)
+      inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setAngle(
+      inline def setAngle(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setAria(
+      inline def setAria(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+      inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
-      @scala.inline
-      def setBaseline(
+      inline def setBaseline(
         value: Exclude[
               js.UndefOr[TextBaselineValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]
       ): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+      inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
-      @scala.inline
-      def setColor(
+      inline def setColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNull: Self = StObject.set(x, "color", null)
+      inline def setColorNull: Self = StObject.set(x, "color", null)
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDx(
+      inline def setDx(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+      inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      @scala.inline
-      def setDy(
+      inline def setDy(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+      inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      @scala.inline
-      def setFont(
+      inline def setFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(
+      inline def setFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontStyle(
+      inline def setFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFontWeight(
+      inline def setFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setFrame(
+      inline def setFrame(
         value: (Exclude[
               js.UndefOr[TitleFrame | StringValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setLimit(
+      inline def setLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLineHeight(
+      inline def setLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setOffset(
+      inline def setOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrient(
+      inline def setOrient(
         value: (Exclude[
               js.UndefOr[TitleOrient | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
-      @scala.inline
-      def setSubtitleColor(
+      inline def setSubtitleColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
+      inline def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
       
-      @scala.inline
-      def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
+      inline def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
       
-      @scala.inline
-      def setSubtitleFont(
+      inline def setSubtitleFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontSize(
+      inline def setSubtitleFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
+      inline def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontStyle(
+      inline def setSubtitleFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
+      inline def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontUndefined: Self = StObject.set(x, "subtitleFont", js.undefined)
+      inline def setSubtitleFontUndefined: Self = StObject.set(x, "subtitleFont", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontWeight(
+      inline def setSubtitleFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "subtitleFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontWeightUndefined: Self = StObject.set(x, "subtitleFontWeight", js.undefined)
+      inline def setSubtitleFontWeightUndefined: Self = StObject.set(x, "subtitleFontWeight", js.undefined)
       
-      @scala.inline
-      def setSubtitleLineHeight(
+      inline def setSubtitleLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleLineHeightUndefined: Self = StObject.set(x, "subtitleLineHeight", js.undefined)
+      inline def setSubtitleLineHeightUndefined: Self = StObject.set(x, "subtitleLineHeight", js.undefined)
       
-      @scala.inline
-      def setSubtitlePadding(
+      inline def setSubtitlePadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitlePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
+      inline def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
       
-      @scala.inline
-      def setZindex(
+      inline def setZindex(
         value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
+      inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
   
@@ -865,29 +741,22 @@ object titleMod {
   }
   object TitleParams {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](text: Text | ES): TitleParams[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](text: Text | ES): TitleParams[ES] = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TitleParams[ES]]
     }
     
-    @scala.inline
-    implicit class TitleParamsMutableBuilder[Self <: TitleParams[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleParams[ES]) extends AnyVal {
+    extension [Self <: TitleParams[?], ES /* <: ExprRef | SignalRef */](x: Self & TitleParams[ES]) {
       
-      @scala.inline
-      def setSubtitle(value: Text): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: Text): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setSubtitleVarargs(value: String*): Self = StObject.set(x, "subtitle", js.Array(value :_*))
+      inline def setSubtitleVarargs(value: String*): Self = StObject.set(x, "subtitle", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: Text | ES): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Text | ES): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
     }
   }
 }

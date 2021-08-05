@@ -20,29 +20,22 @@ trait DateTimeSkeleton
 }
 object DateTimeSkeleton {
   
-  @scala.inline
-  def apply(parsedOptions: DateTimeFormatOptions, pattern: String): DateTimeSkeleton = {
+  inline def apply(parsedOptions: DateTimeFormatOptions, pattern: String): DateTimeSkeleton = {
     val __obj = js.Dynamic.literal(parsedOptions = parsedOptions.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[DateTimeSkeleton]
   }
   
-  @scala.inline
-  implicit class DateTimeSkeletonMutableBuilder[Self <: DateTimeSkeleton] (val x: Self) extends AnyVal {
+  extension [Self <: DateTimeSkeleton](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setParsedOptions(value: DateTimeFormatOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
+    inline def setParsedOptions(value: DateTimeFormatOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

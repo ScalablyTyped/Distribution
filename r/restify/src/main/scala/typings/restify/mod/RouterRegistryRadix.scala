@@ -28,8 +28,7 @@ trait RouterRegistryRadix extends StObject {
 }
 object RouterRegistryRadix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: Route => Boolean,
     get: () => js.Array[Route],
     lookup: (String, String) => js.UndefOr[Chain],
@@ -39,19 +38,14 @@ object RouterRegistryRadix {
     __obj.asInstanceOf[RouterRegistryRadix]
   }
   
-  @scala.inline
-  implicit class RouterRegistryRadixMutableBuilder[Self <: RouterRegistryRadix] (val x: Self) extends AnyVal {
+  extension [Self <: RouterRegistryRadix](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Route => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Route => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: () => js.Array[Route]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Array[Route]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLookup(value: (String, String) => js.UndefOr[Chain]): Self = StObject.set(x, "lookup", js.Any.fromFunction2(value))
+    inline def setLookup(value: (String, String) => js.UndefOr[Chain]): Self = StObject.set(x, "lookup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: String => js.UndefOr[Route]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => js.UndefOr[Route]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

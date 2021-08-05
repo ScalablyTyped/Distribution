@@ -18,16 +18,13 @@ trait GenerateSecretWithOtpAuthUrlOptions
 }
 object GenerateSecretWithOtpAuthUrlOptions {
   
-  @scala.inline
-  def apply(): GenerateSecretWithOtpAuthUrlOptions = {
+  inline def apply(): GenerateSecretWithOtpAuthUrlOptions = {
     val __obj = js.Dynamic.literal(otpauth_url = true)
     __obj.asInstanceOf[GenerateSecretWithOtpAuthUrlOptions]
   }
   
-  @scala.inline
-  implicit class GenerateSecretWithOtpAuthUrlOptionsMutableBuilder[Self <: GenerateSecretWithOtpAuthUrlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateSecretWithOtpAuthUrlOptions](x: Self) {
     
-    @scala.inline
-    def setOtpauth_url(value: `true`): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
+    inline def setOtpauth_url(value: `true`): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
   }
 }

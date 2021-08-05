@@ -6,12 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object observable {
   
-  @scala.inline
-  def apply[T](): Observable_[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Observable_[js.UndefOr[T]]]
-  @scala.inline
-  def apply[T](value: T): Observable_[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
-  @scala.inline
-  def apply[T](value: Null): Observable_[T | Null] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Observable_[T | Null]]
+  inline def apply[T](): Observable_[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Observable_[js.UndefOr[T]]]
+  inline def apply[T](value: T): Observable_[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def apply[T](value: Null): Observable_[T | Null] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Observable_[T | Null]]
   
   @JSImport("knockout", "observable")
   @js.native

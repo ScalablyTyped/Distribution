@@ -28,37 +28,27 @@ trait ListVocabulariesRequest extends StObject {
 }
 object ListVocabulariesRequest {
   
-  @scala.inline
-  def apply(): ListVocabulariesRequest = {
+  inline def apply(): ListVocabulariesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVocabulariesRequest]
   }
   
-  @scala.inline
-  implicit class ListVocabulariesRequestMutableBuilder[Self <: ListVocabulariesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListVocabulariesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNameContains(value: VocabularyName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
+    inline def setNameContains(value: VocabularyName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
+    inline def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStateEquals(value: VocabularyState): Self = StObject.set(x, "StateEquals", value.asInstanceOf[js.Any])
+    inline def setStateEquals(value: VocabularyState): Self = StObject.set(x, "StateEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateEqualsUndefined: Self = StObject.set(x, "StateEquals", js.undefined)
+    inline def setStateEqualsUndefined: Self = StObject.set(x, "StateEquals", js.undefined)
   }
 }

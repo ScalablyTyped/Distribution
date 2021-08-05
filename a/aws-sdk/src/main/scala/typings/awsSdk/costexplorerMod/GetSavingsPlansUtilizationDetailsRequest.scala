@@ -28,34 +28,25 @@ trait GetSavingsPlansUtilizationDetailsRequest extends StObject {
 }
 object GetSavingsPlansUtilizationDetailsRequest {
   
-  @scala.inline
-  def apply(TimePeriod: DateInterval): GetSavingsPlansUtilizationDetailsRequest = {
+  inline def apply(TimePeriod: DateInterval): GetSavingsPlansUtilizationDetailsRequest = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansUtilizationDetailsRequest]
   }
   
-  @scala.inline
-  implicit class GetSavingsPlansUtilizationDetailsRequestMutableBuilder[Self <: GetSavingsPlansUtilizationDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavingsPlansUtilizationDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

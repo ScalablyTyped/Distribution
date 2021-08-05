@@ -158,8 +158,7 @@ trait XAccessibleComponent
 }
 object XAccessibleComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Background: Color,
     Bounds: Rectangle,
     Foreground: Color,
@@ -183,52 +182,36 @@ object XAccessibleComponent {
     __obj.asInstanceOf[XAccessibleComponent]
   }
   
-  @scala.inline
-  implicit class XAccessibleComponentMutableBuilder[Self <: XAccessibleComponent] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleComponent](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Color): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Color): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsPoint(value: Point => Boolean): Self = StObject.set(x, "containsPoint", js.Any.fromFunction1(value))
+    inline def setContainsPoint(value: Point => Boolean): Self = StObject.set(x, "containsPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForeground(value: Color): Self = StObject.set(x, "Foreground", value.asInstanceOf[js.Any])
+    inline def setForeground(value: Color): Self = StObject.set(x, "Foreground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAccessibleAtPoint(value: Point => XAccessible): Self = StObject.set(x, "getAccessibleAtPoint", js.Any.fromFunction1(value))
+    inline def setGetAccessibleAtPoint(value: Point => XAccessible): Self = StObject.set(x, "getAccessibleAtPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBackground(value: () => Color): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+    inline def setGetBackground(value: () => Color): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetForeground(value: () => Color): Self = StObject.set(x, "getForeground", js.Any.fromFunction0(value))
+    inline def setGetForeground(value: () => Color): Self = StObject.set(x, "getForeground", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocation(value: () => Point): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+    inline def setGetLocation(value: () => Point): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocationOnScreen(value: () => Point): Self = StObject.set(x, "getLocationOnScreen", js.Any.fromFunction0(value))
+    inline def setGetLocationOnScreen(value: () => Point): Self = StObject.set(x, "getLocationOnScreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGrabFocus(value: () => Unit): Self = StObject.set(x, "grabFocus", js.Any.fromFunction0(value))
+    inline def setGrabFocus(value: () => Unit): Self = StObject.set(x, "grabFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocation(value: Point): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationOnScreen(value: Point): Self = StObject.set(x, "LocationOnScreen", value.asInstanceOf[js.Any])
+    inline def setLocationOnScreen(value: Point): Self = StObject.set(x, "LocationOnScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

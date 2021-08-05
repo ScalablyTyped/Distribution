@@ -13,19 +13,15 @@ trait ResultSetOptions extends StObject {
 }
 object ResultSetOptions {
   
-  @scala.inline
-  def apply(): ResultSetOptions = {
+  inline def apply(): ResultSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultSetOptions]
   }
   
-  @scala.inline
-  implicit class ResultSetOptionsMutableBuilder[Self <: ResultSetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSetOptions](x: Self) {
     
-    @scala.inline
-    def setDecimalReturnType(value: DecimalReturnType): Self = StObject.set(x, "decimalReturnType", value.asInstanceOf[js.Any])
+    inline def setDecimalReturnType(value: DecimalReturnType): Self = StObject.set(x, "decimalReturnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalReturnTypeUndefined: Self = StObject.set(x, "decimalReturnType", js.undefined)
+    inline def setDecimalReturnTypeUndefined: Self = StObject.set(x, "decimalReturnType", js.undefined)
   }
 }

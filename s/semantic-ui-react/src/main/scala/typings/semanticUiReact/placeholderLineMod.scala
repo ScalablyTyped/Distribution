@@ -27,8 +27,7 @@ object placeholderLineMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object PlaceholderLineProps {
     
-    @scala.inline
-    def apply(): PlaceholderLineProps = {
+    inline def apply(): PlaceholderLineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlaceholderLineProps]
     }
@@ -47,32 +46,24 @@ object placeholderLineMod extends Shortcut {
   }
   object StrictPlaceholderLineProps {
     
-    @scala.inline
-    def apply(): StrictPlaceholderLineProps = {
+    inline def apply(): StrictPlaceholderLineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictPlaceholderLineProps]
     }
     
-    @scala.inline
-    implicit class StrictPlaceholderLinePropsMutableBuilder[Self <: StrictPlaceholderLineProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictPlaceholderLineProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setLength(value: full | (`very long`) | long | medium | short | (`very short`)): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: full | (`very long`) | long | medium | short | (`very short`)): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     }
   }
   

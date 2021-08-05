@@ -11,16 +11,13 @@ trait Drilldown extends StObject {
 }
 object Drilldown {
   
-  @scala.inline
-  def apply(destroy: () => Unit): Drilldown = {
+  inline def apply(destroy: () => Unit): Drilldown = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[Drilldown]
   }
   
-  @scala.inline
-  implicit class DrilldownMutableBuilder[Self <: Drilldown] (val x: Self) extends AnyVal {
+  extension [Self <: Drilldown](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

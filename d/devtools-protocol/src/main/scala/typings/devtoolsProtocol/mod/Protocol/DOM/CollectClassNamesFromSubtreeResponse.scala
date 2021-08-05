@@ -13,19 +13,15 @@ trait CollectClassNamesFromSubtreeResponse extends StObject {
 }
 object CollectClassNamesFromSubtreeResponse {
   
-  @scala.inline
-  def apply(classNames: js.Array[String]): CollectClassNamesFromSubtreeResponse = {
+  inline def apply(classNames: js.Array[String]): CollectClassNamesFromSubtreeResponse = {
     val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectClassNamesFromSubtreeResponse]
   }
   
-  @scala.inline
-  implicit class CollectClassNamesFromSubtreeResponseMutableBuilder[Self <: CollectClassNamesFromSubtreeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CollectClassNamesFromSubtreeResponse](x: Self) {
     
-    @scala.inline
-    def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value :_*))
+    inline def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value :_*))
   }
 }

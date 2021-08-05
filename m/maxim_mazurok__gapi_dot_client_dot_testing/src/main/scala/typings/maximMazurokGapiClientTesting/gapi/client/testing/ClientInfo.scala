@@ -14,28 +14,21 @@ trait ClientInfo extends StObject {
 }
 object ClientInfo {
   
-  @scala.inline
-  def apply(): ClientInfo = {
+  inline def apply(): ClientInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientInfo]
   }
   
-  @scala.inline
-  implicit class ClientInfoMutableBuilder[Self <: ClientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClientInfo](x: Self) {
     
-    @scala.inline
-    def setClientInfoDetails(value: js.Array[ClientInfoDetail]): Self = StObject.set(x, "clientInfoDetails", value.asInstanceOf[js.Any])
+    inline def setClientInfoDetails(value: js.Array[ClientInfoDetail]): Self = StObject.set(x, "clientInfoDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientInfoDetailsUndefined: Self = StObject.set(x, "clientInfoDetails", js.undefined)
+    inline def setClientInfoDetailsUndefined: Self = StObject.set(x, "clientInfoDetails", js.undefined)
     
-    @scala.inline
-    def setClientInfoDetailsVarargs(value: ClientInfoDetail*): Self = StObject.set(x, "clientInfoDetails", js.Array(value :_*))
+    inline def setClientInfoDetailsVarargs(value: ClientInfoDetail*): Self = StObject.set(x, "clientInfoDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

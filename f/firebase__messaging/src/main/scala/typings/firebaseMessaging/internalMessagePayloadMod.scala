@@ -40,26 +40,20 @@ object internalMessagePayloadMod {
   }
   object FcmOptionsInternal {
     
-    @scala.inline
-    def apply(): FcmOptionsInternal = {
+    inline def apply(): FcmOptionsInternal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FcmOptionsInternal]
     }
     
-    @scala.inline
-    implicit class FcmOptionsInternalMutableBuilder[Self <: FcmOptionsInternal] (val x: Self) extends AnyVal {
+    extension [Self <: FcmOptionsInternal](x: Self) {
       
-      @scala.inline
-      def setAnalytics_label(value: String): Self = StObject.set(x, "analytics_label", value.asInstanceOf[js.Any])
+      inline def setAnalytics_label(value: String): Self = StObject.set(x, "analytics_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalytics_labelUndefined: Self = StObject.set(x, "analytics_label", js.undefined)
+      inline def setAnalytics_labelUndefined: Self = StObject.set(x, "analytics_label", js.undefined)
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     }
   }
   
@@ -81,50 +75,36 @@ object internalMessagePayloadMod {
   }
   object MessagePayloadInternal {
     
-    @scala.inline
-    def apply(collapse_key: String, from: String): MessagePayloadInternal = {
+    inline def apply(collapse_key: String, from: String): MessagePayloadInternal = {
       val __obj = js.Dynamic.literal(collapse_key = collapse_key.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessagePayloadInternal]
     }
     
-    @scala.inline
-    implicit class MessagePayloadInternalMutableBuilder[Self <: MessagePayloadInternal] (val x: Self) extends AnyVal {
+    extension [Self <: MessagePayloadInternal](x: Self) {
       
-      @scala.inline
-      def setCollapse_key(value: String): Self = StObject.set(x, "collapse_key", value.asInstanceOf[js.Any])
+      inline def setCollapse_key(value: String): Self = StObject.set(x, "collapse_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFcmOptions(value: FcmOptionsInternal): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
+      inline def setFcmOptions(value: FcmOptionsInternal): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
+      inline def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFirebaseMessaging(value: Boolean): Self = StObject.set(x, "isFirebaseMessaging", value.asInstanceOf[js.Any])
+      inline def setIsFirebaseMessaging(value: Boolean): Self = StObject.set(x, "isFirebaseMessaging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFirebaseMessagingUndefined: Self = StObject.set(x, "isFirebaseMessaging", js.undefined)
+      inline def setIsFirebaseMessagingUndefined: Self = StObject.set(x, "isFirebaseMessaging", js.undefined)
       
-      @scala.inline
-      def setMessageType(value: MessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+      inline def setMessageType(value: MessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+      inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
       
-      @scala.inline
-      def setNotification(value: NotificationPayloadInternal): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: NotificationPayloadInternal): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+      inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     }
   }
   
@@ -138,23 +118,18 @@ object internalMessagePayloadMod {
   }
   object NotificationPayloadInternal {
     
-    @scala.inline
-    def apply(title: String): NotificationPayloadInternal = {
+    inline def apply(title: String): NotificationPayloadInternal = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationPayloadInternal]
     }
     
-    @scala.inline
-    implicit class NotificationPayloadInternalMutableBuilder[Self <: NotificationPayloadInternal] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationPayloadInternal](x: Self) {
       
-      @scala.inline
-      def setClick_action(value: String): Self = StObject.set(x, "click_action", value.asInstanceOf[js.Any])
+      inline def setClick_action(value: String): Self = StObject.set(x, "click_action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClick_actionUndefined: Self = StObject.set(x, "click_action", js.undefined)
+      inline def setClick_actionUndefined: Self = StObject.set(x, "click_action", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

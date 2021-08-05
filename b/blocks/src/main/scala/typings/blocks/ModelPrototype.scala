@@ -43,49 +43,35 @@ trait ModelPrototype
 }
 object ModelPrototype {
   
-  @scala.inline
-  def apply(): ModelPrototype = {
+  inline def apply(): ModelPrototype = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelPrototype]
   }
   
-  @scala.inline
-  implicit class ModelPrototypeMutableBuilder[Self <: ModelPrototype] (val x: Self) extends AnyVal {
+  extension [Self <: ModelPrototype](x: Self) {
     
-    @scala.inline
-    def setDataItem(value: () => js.Object): Self = StObject.set(x, "dataItem", js.Any.fromFunction0(value))
+    inline def setDataItem(value: () => js.Object): Self = StObject.set(x, "dataItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
+    inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
-    @scala.inline
-    def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setIsNew(value: () => Boolean): Self = StObject.set(x, "isNew", js.Any.fromFunction0(value))
+    inline def setIsNew(value: () => Boolean): Self = StObject.set(x, "isNew", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNewUndefined: Self = StObject.set(x, "isNew", js.undefined)
+    inline def setIsNewUndefined: Self = StObject.set(x, "isNew", js.undefined)
     
-    @scala.inline
-    def setOptions(value: BaseUrl): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: BaseUrl): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setReset(value: ModelPrototype => ModelPrototype): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+    inline def setReset(value: ModelPrototype => ModelPrototype): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

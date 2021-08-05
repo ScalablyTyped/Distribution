@@ -23,8 +23,7 @@ trait AdminLinkProviderForUserRequest extends StObject {
 }
 object AdminLinkProviderForUserRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestinationUser: ProviderUserIdentifierType,
     SourceUser: ProviderUserIdentifierType,
     UserPoolId: StringType
@@ -33,16 +32,12 @@ object AdminLinkProviderForUserRequest {
     __obj.asInstanceOf[AdminLinkProviderForUserRequest]
   }
   
-  @scala.inline
-  implicit class AdminLinkProviderForUserRequestMutableBuilder[Self <: AdminLinkProviderForUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminLinkProviderForUserRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "DestinationUser", value.asInstanceOf[js.Any])
+    inline def setDestinationUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "DestinationUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "SourceUser", value.asInstanceOf[js.Any])
+    inline def setSourceUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "SourceUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: StringType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: StringType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

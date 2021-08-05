@@ -11,13 +11,11 @@ object cfnResponseStrings {
   sealed trait FAILED
     extends StObject
        with ResponseStatus
-  @scala.inline
-  def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
+  inline def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
   sealed trait SUCCESS
     extends StObject
        with ResponseStatus
-  @scala.inline
-  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
 }

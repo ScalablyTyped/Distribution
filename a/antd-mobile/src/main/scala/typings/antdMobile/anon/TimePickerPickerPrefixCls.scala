@@ -14,22 +14,17 @@ trait TimePickerPickerPrefixCls extends StObject {
 }
 object TimePickerPickerPrefixCls {
   
-  @scala.inline
-  def apply(prefixCls: String, timePickerPickerPrefixCls: String, timePickerPrefixCls: String): TimePickerPickerPrefixCls = {
+  inline def apply(prefixCls: String, timePickerPickerPrefixCls: String, timePickerPrefixCls: String): TimePickerPickerPrefixCls = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], timePickerPickerPrefixCls = timePickerPickerPrefixCls.asInstanceOf[js.Any], timePickerPrefixCls = timePickerPrefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerPickerPrefixCls]
   }
   
-  @scala.inline
-  implicit class TimePickerPickerPrefixClsMutableBuilder[Self <: TimePickerPickerPrefixCls] (val x: Self) extends AnyVal {
+  extension [Self <: TimePickerPickerPrefixCls](x: Self) {
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePickerPickerPrefixCls(value: String): Self = StObject.set(x, "timePickerPickerPrefixCls", value.asInstanceOf[js.Any])
+    inline def setTimePickerPickerPrefixCls(value: String): Self = StObject.set(x, "timePickerPickerPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePickerPrefixCls(value: String): Self = StObject.set(x, "timePickerPrefixCls", value.asInstanceOf[js.Any])
+    inline def setTimePickerPrefixCls(value: String): Self = StObject.set(x, "timePickerPrefixCls", value.asInstanceOf[js.Any])
   }
 }

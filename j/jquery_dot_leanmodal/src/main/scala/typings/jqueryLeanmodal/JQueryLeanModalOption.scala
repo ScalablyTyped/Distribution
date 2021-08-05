@@ -14,31 +14,23 @@ trait JQueryLeanModalOption extends StObject {
 }
 object JQueryLeanModalOption {
   
-  @scala.inline
-  def apply(): JQueryLeanModalOption = {
+  inline def apply(): JQueryLeanModalOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryLeanModalOption]
   }
   
-  @scala.inline
-  implicit class JQueryLeanModalOptionMutableBuilder[Self <: JQueryLeanModalOption] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryLeanModalOption](x: Self) {
     
-    @scala.inline
-    def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
-    @scala.inline
-    def setOverlay(value: Double): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: Double): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

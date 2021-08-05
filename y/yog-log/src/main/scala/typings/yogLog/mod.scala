@@ -25,8 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Function3[
+  inline def apply(): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -37,8 +36,7 @@ object mod {
     /* next */ NextFunction, 
     js.Any
   ]]
-  @scala.inline
-  def apply(config: LogConfig): js.Function3[
+  inline def apply(config: LogConfig): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -108,10 +106,8 @@ object mod {
     def writeLog(intLevel: LevelInt, options: WriteLogConfig, log_format: String): Unit | `false` = js.native
   }
   
-  @scala.inline
-  def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
-  @scala.inline
-  def getLogger(config: LogConfig): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(config.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
+  inline def getLogger(config: LogConfig): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(config.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   trait LEVELS extends StObject {
     
@@ -133,8 +129,7 @@ object mod {
   }
   object LEVELS {
     
-    @scala.inline
-    def apply(): LEVELS = {
+    inline def apply(): LEVELS = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")("ACCESS")
       __obj.updateDynamic("1")("FATAL")
@@ -146,29 +141,21 @@ object mod {
       __obj.asInstanceOf[LEVELS]
     }
     
-    @scala.inline
-    implicit class LEVELSMutableBuilder[Self <: LEVELS] (val x: Self) extends AnyVal {
+    extension [Self <: LEVELS](x: Self) {
       
-      @scala.inline
-      def set0(value: ACCESS): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: ACCESS): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1(value: FATAL): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: FATAL): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set16(value: DEBUG): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
+      inline def set16(value: DEBUG): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2(value: WARNING): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: WARNING): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3(value: ACCESS_ERROR): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: ACCESS_ERROR): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(value: NOTICE): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: NOTICE): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set8(value: TRACE): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+      inline def set8(value: TRACE): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,26 +190,19 @@ object mod {
   trait LevelName extends StObject
   object LevelName {
     
-    @scala.inline
-    def ACCESS: typings.yogLog.yogLogStrings.ACCESS = "ACCESS".asInstanceOf[typings.yogLog.yogLogStrings.ACCESS]
+    inline def ACCESS: typings.yogLog.yogLogStrings.ACCESS = "ACCESS".asInstanceOf[typings.yogLog.yogLogStrings.ACCESS]
     
-    @scala.inline
-    def ACCESS_ERROR: typings.yogLog.yogLogStrings.ACCESS_ERROR = "ACCESS_ERROR".asInstanceOf[typings.yogLog.yogLogStrings.ACCESS_ERROR]
+    inline def ACCESS_ERROR: typings.yogLog.yogLogStrings.ACCESS_ERROR = "ACCESS_ERROR".asInstanceOf[typings.yogLog.yogLogStrings.ACCESS_ERROR]
     
-    @scala.inline
-    def DEBUG: typings.yogLog.yogLogStrings.DEBUG = "DEBUG".asInstanceOf[typings.yogLog.yogLogStrings.DEBUG]
+    inline def DEBUG: typings.yogLog.yogLogStrings.DEBUG = "DEBUG".asInstanceOf[typings.yogLog.yogLogStrings.DEBUG]
     
-    @scala.inline
-    def FATAL: typings.yogLog.yogLogStrings.FATAL = "FATAL".asInstanceOf[typings.yogLog.yogLogStrings.FATAL]
+    inline def FATAL: typings.yogLog.yogLogStrings.FATAL = "FATAL".asInstanceOf[typings.yogLog.yogLogStrings.FATAL]
     
-    @scala.inline
-    def NOTICE: typings.yogLog.yogLogStrings.NOTICE = "NOTICE".asInstanceOf[typings.yogLog.yogLogStrings.NOTICE]
+    inline def NOTICE: typings.yogLog.yogLogStrings.NOTICE = "NOTICE".asInstanceOf[typings.yogLog.yogLogStrings.NOTICE]
     
-    @scala.inline
-    def TRACE: typings.yogLog.yogLogStrings.TRACE = "TRACE".asInstanceOf[typings.yogLog.yogLogStrings.TRACE]
+    inline def TRACE: typings.yogLog.yogLogStrings.TRACE = "TRACE".asInstanceOf[typings.yogLog.yogLogStrings.TRACE]
     
-    @scala.inline
-    def WARNING: typings.yogLog.yogLogStrings.WARNING = "WARNING".asInstanceOf[typings.yogLog.yogLogStrings.WARNING]
+    inline def WARNING: typings.yogLog.yogLogStrings.WARNING = "WARNING".asInstanceOf[typings.yogLog.yogLogStrings.WARNING]
   }
   
   trait LogConfig extends StObject {
@@ -257,92 +237,64 @@ object mod {
   }
   object LogConfig {
     
-    @scala.inline
-    def apply(): LogConfig = {
+    inline def apply(): LogConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogConfig]
     }
     
-    @scala.inline
-    implicit class LogConfigMutableBuilder[Self <: LogConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LogConfig](x: Self) {
       
-      @scala.inline
-      def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+      inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+      inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
       
-      @scala.inline
-      def setAccess_error_log_path(value: String): Self = StObject.set(x, "access_error_log_path", value.asInstanceOf[js.Any])
+      inline def setAccess_error_log_path(value: String): Self = StObject.set(x, "access_error_log_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccess_error_log_pathUndefined: Self = StObject.set(x, "access_error_log_path", js.undefined)
+      inline def setAccess_error_log_pathUndefined: Self = StObject.set(x, "access_error_log_path", js.undefined)
       
-      @scala.inline
-      def setAccess_log_path(value: String): Self = StObject.set(x, "access_log_path", value.asInstanceOf[js.Any])
+      inline def setAccess_log_path(value: String): Self = StObject.set(x, "access_log_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccess_log_pathUndefined: Self = StObject.set(x, "access_log_path", js.undefined)
+      inline def setAccess_log_pathUndefined: Self = StObject.set(x, "access_log_path", js.undefined)
       
-      @scala.inline
-      def setAuto_rotate(value: `0` | `1`): Self = StObject.set(x, "auto_rotate", value.asInstanceOf[js.Any])
+      inline def setAuto_rotate(value: `0` | `1`): Self = StObject.set(x, "auto_rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_rotateUndefined: Self = StObject.set(x, "auto_rotate", js.undefined)
+      inline def setAuto_rotateUndefined: Self = StObject.set(x, "auto_rotate", js.undefined)
       
-      @scala.inline
-      def setData_path(value: String): Self = StObject.set(x, "data_path", value.asInstanceOf[js.Any])
+      inline def setData_path(value: String): Self = StObject.set(x, "data_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData_pathUndefined: Self = StObject.set(x, "data_path", js.undefined)
+      inline def setData_pathUndefined: Self = StObject.set(x, "data_path", js.undefined)
       
-      @scala.inline
-      def setDebug(value: `0` | `1`): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: `0` | `1`): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFormat_wf(value: String): Self = StObject.set(x, "format_wf", value.asInstanceOf[js.Any])
+      inline def setFormat_wf(value: String): Self = StObject.set(x, "format_wf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat_wfUndefined: Self = StObject.set(x, "format_wf", js.undefined)
+      inline def setFormat_wfUndefined: Self = StObject.set(x, "format_wf", js.undefined)
       
-      @scala.inline
-      def setIS_ODP(value: Boolean): Self = StObject.set(x, "IS_ODP", value.asInstanceOf[js.Any])
+      inline def setIS_ODP(value: Boolean): Self = StObject.set(x, "IS_ODP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS_ODPUndefined: Self = StObject.set(x, "IS_ODP", js.undefined)
+      inline def setIS_ODPUndefined: Self = StObject.set(x, "IS_ODP", js.undefined)
       
-      @scala.inline
-      def setIS_OMP(value: `0` | `1`): Self = StObject.set(x, "IS_OMP", value.asInstanceOf[js.Any])
+      inline def setIS_OMP(value: `0` | `1`): Self = StObject.set(x, "IS_OMP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS_OMPUndefined: Self = StObject.set(x, "IS_OMP", js.undefined)
+      inline def setIS_OMPUndefined: Self = StObject.set(x, "IS_OMP", js.undefined)
       
-      @scala.inline
-      def setIntLevel(value: `16`): Self = StObject.set(x, "intLevel", value.asInstanceOf[js.Any])
+      inline def setIntLevel(value: `16`): Self = StObject.set(x, "intLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntLevelUndefined: Self = StObject.set(x, "intLevel", js.undefined)
+      inline def setIntLevelUndefined: Self = StObject.set(x, "intLevel", js.undefined)
       
-      @scala.inline
-      def setLogIdName(value: String): Self = StObject.set(x, "LogIdName", value.asInstanceOf[js.Any])
+      inline def setLogIdName(value: String): Self = StObject.set(x, "LogIdName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogIdNameUndefined: Self = StObject.set(x, "LogIdName", js.undefined)
+      inline def setLogIdNameUndefined: Self = StObject.set(x, "LogIdName", js.undefined)
       
-      @scala.inline
-      def setLog_path(value: String): Self = StObject.set(x, "log_path", value.asInstanceOf[js.Any])
+      inline def setLog_path(value: String): Self = StObject.set(x, "log_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog_pathUndefined: Self = StObject.set(x, "log_path", js.undefined)
+      inline def setLog_pathUndefined: Self = StObject.set(x, "log_path", js.undefined)
       
-      @scala.inline
-      def setUse_sub_dir(value: `0` | `1`): Self = StObject.set(x, "use_sub_dir", value.asInstanceOf[js.Any])
+      inline def setUse_sub_dir(value: `0` | `1`): Self = StObject.set(x, "use_sub_dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse_sub_dirUndefined: Self = StObject.set(x, "use_sub_dir", js.undefined)
+      inline def setUse_sub_dirUndefined: Self = StObject.set(x, "use_sub_dir", js.undefined)
     }
   }
   
@@ -352,17 +304,14 @@ object mod {
   }
   object LogInfo {
     
-    @scala.inline
-    def apply(msg: String): LogInfo = {
+    inline def apply(msg: String): LogInfo = {
       val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogInfo]
     }
     
-    @scala.inline
-    implicit class LogInfoMutableBuilder[Self <: LogInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LogInfo](x: Self) {
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -380,23 +329,18 @@ object mod {
   }
   object WriteLogConfig {
     
-    @scala.inline
-    def apply(errno: Double, escape_msg: Boolean, filename_suffix: String): WriteLogConfig = {
+    inline def apply(errno: Double, escape_msg: Boolean, filename_suffix: String): WriteLogConfig = {
       val __obj = js.Dynamic.literal(errno = errno.asInstanceOf[js.Any], escape_msg = escape_msg.asInstanceOf[js.Any], filename_suffix = filename_suffix.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteLogConfig]
     }
     
-    @scala.inline
-    implicit class WriteLogConfigMutableBuilder[Self <: WriteLogConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WriteLogConfig](x: Self) {
       
-      @scala.inline
-      def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
+      inline def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscape_msg(value: Boolean): Self = StObject.set(x, "escape_msg", value.asInstanceOf[js.Any])
+      inline def setEscape_msg(value: Boolean): Self = StObject.set(x, "escape_msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename_suffix(value: String): Self = StObject.set(x, "filename_suffix", value.asInstanceOf[js.Any])
+      inline def setFilename_suffix(value: String): Self = StObject.set(x, "filename_suffix", value.asInstanceOf[js.Any])
     }
   }
 }

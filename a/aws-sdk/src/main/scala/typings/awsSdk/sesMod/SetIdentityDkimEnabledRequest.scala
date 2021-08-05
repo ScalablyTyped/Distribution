@@ -18,19 +18,15 @@ trait SetIdentityDkimEnabledRequest extends StObject {
 }
 object SetIdentityDkimEnabledRequest {
   
-  @scala.inline
-  def apply(DkimEnabled: Enabled, Identity: Identity): SetIdentityDkimEnabledRequest = {
+  inline def apply(DkimEnabled: Enabled, Identity: Identity): SetIdentityDkimEnabledRequest = {
     val __obj = js.Dynamic.literal(DkimEnabled = DkimEnabled.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIdentityDkimEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetIdentityDkimEnabledRequestMutableBuilder[Self <: SetIdentityDkimEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIdentityDkimEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setDkimEnabled(value: Enabled): Self = StObject.set(x, "DkimEnabled", value.asInstanceOf[js.Any])
+    inline def setDkimEnabled(value: Enabled): Self = StObject.set(x, "DkimEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SmartArtLayout")
 @js.native
-class SmartArtLayout protected ()
+/* private */ class SmartArtLayout ()
   extends StObject
      with typings.activexOffice.Office.SmartArtLayout {
   
@@ -28,7 +28,7 @@ class SmartArtLayout protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.SmartArtLayout_typekey")
   var OfficeDotSmartArtLayout_typekey: typings.activexOffice.Office.SmartArtLayout = js.native
   

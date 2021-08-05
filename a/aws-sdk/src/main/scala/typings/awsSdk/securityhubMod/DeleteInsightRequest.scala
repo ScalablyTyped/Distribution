@@ -13,16 +13,13 @@ trait DeleteInsightRequest extends StObject {
 }
 object DeleteInsightRequest {
   
-  @scala.inline
-  def apply(InsightArn: NonEmptyString): DeleteInsightRequest = {
+  inline def apply(InsightArn: NonEmptyString): DeleteInsightRequest = {
     val __obj = js.Dynamic.literal(InsightArn = InsightArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInsightRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInsightRequestMutableBuilder[Self <: DeleteInsightRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInsightRequest](x: Self) {
     
-    @scala.inline
-    def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
+    inline def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
   }
 }

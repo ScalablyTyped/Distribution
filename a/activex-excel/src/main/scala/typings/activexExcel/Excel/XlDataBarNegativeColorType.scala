@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlDataBarNegativeColorType extends StObject
 object XlDataBarNegativeColorType {
   
-  @scala.inline
-  def xlDataBarColor: `0` = 0.asInstanceOf[`0`]
+  inline def xlDataBarColor: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlDataBarSameAsPositive: `1` = 1.asInstanceOf[`1`]
+  inline def xlDataBarSameAsPositive: `1` = 1.asInstanceOf[`1`]
 }

@@ -8,16 +8,13 @@ object sourceMapSupportStrings {
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait browser extends StObject
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
   sealed trait node extends StObject
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
 }

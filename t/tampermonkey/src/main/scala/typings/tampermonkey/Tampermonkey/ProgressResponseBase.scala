@@ -20,8 +20,7 @@ trait ProgressResponseBase extends StObject {
 }
 object ProgressResponseBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     done: Double,
     lengthComputable: Boolean,
     loaded: Double,
@@ -33,25 +32,18 @@ object ProgressResponseBase {
     __obj.asInstanceOf[ProgressResponseBase]
   }
   
-  @scala.inline
-  implicit class ProgressResponseBaseMutableBuilder[Self <: ProgressResponseBase] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressResponseBase](x: Self) {
     
-    @scala.inline
-    def setDone(value: Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+    inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
   }
 }

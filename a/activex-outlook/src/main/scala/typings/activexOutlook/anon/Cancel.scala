@@ -12,19 +12,15 @@ trait Cancel extends StObject {
 }
 object Cancel {
   
-  @scala.inline
-  def apply(Cancel: Boolean, FolderToShare: typings.activexOutlook.Outlook.Folder): Cancel = {
+  inline def apply(Cancel: Boolean, FolderToShare: typings.activexOutlook.Outlook.Folder): Cancel = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], FolderToShare = FolderToShare.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cancel]
   }
   
-  @scala.inline
-  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+  extension [Self <: Cancel](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderToShare(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "FolderToShare", value.asInstanceOf[js.Any])
+    inline def setFolderToShare(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "FolderToShare", value.asInstanceOf[js.Any])
   }
 }

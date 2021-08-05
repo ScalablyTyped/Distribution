@@ -44,49 +44,35 @@ trait RESTDataSourceSettingsRestSettings
 }
 object RESTDataSourceSettingsRestSettings {
   
-  @scala.inline
-  def apply(): RESTDataSourceSettingsRestSettings = {
+  inline def apply(): RESTDataSourceSettingsRestSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RESTDataSourceSettingsRestSettings]
   }
   
-  @scala.inline
-  implicit class RESTDataSourceSettingsRestSettingsMutableBuilder[Self <: RESTDataSourceSettingsRestSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RESTDataSourceSettingsRestSettings](x: Self) {
     
-    @scala.inline
-    def setContentSerializer(value: js.Function): Self = StObject.set(x, "contentSerializer", value.asInstanceOf[js.Any])
+    inline def setContentSerializer(value: js.Function): Self = StObject.set(x, "contentSerializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentSerializerUndefined: Self = StObject.set(x, "contentSerializer", js.undefined)
+    inline def setContentSerializerUndefined: Self = StObject.set(x, "contentSerializer", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setCreate(value: RESTDataSourceSettingsRestSettingsCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: RESTDataSourceSettingsRestSettingsCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setEncodeRemoveInRequestUri(value: Boolean): Self = StObject.set(x, "encodeRemoveInRequestUri", value.asInstanceOf[js.Any])
+    inline def setEncodeRemoveInRequestUri(value: Boolean): Self = StObject.set(x, "encodeRemoveInRequestUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeRemoveInRequestUriUndefined: Self = StObject.set(x, "encodeRemoveInRequestUri", js.undefined)
+    inline def setEncodeRemoveInRequestUriUndefined: Self = StObject.set(x, "encodeRemoveInRequestUri", js.undefined)
     
-    @scala.inline
-    def setRemove(value: RESTDataSourceSettingsRestSettingsRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: RESTDataSourceSettingsRestSettingsRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: RESTDataSourceSettingsRestSettingsUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: RESTDataSourceSettingsRestSettingsUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

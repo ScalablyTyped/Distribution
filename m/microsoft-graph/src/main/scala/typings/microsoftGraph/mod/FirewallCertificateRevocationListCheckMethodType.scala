@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirewallCertificateRevocationListCheckMethodType extends StObject
 object FirewallCertificateRevocationListCheckMethodType {
   
-  @scala.inline
-  def attempt: typings.microsoftGraph.microsoftGraphStrings.attempt = "attempt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.attempt]
+  inline def attempt: typings.microsoftGraph.microsoftGraphStrings.attempt = "attempt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.attempt]
   
-  @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def require: typings.microsoftGraph.microsoftGraphStrings.require = "require".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.require]
+  inline def require: typings.microsoftGraph.microsoftGraphStrings.require = "require".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.require]
 }

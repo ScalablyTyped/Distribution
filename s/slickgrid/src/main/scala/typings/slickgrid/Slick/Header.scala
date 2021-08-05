@@ -10,19 +10,15 @@ trait Header extends StObject {
 }
 object Header {
   
-  @scala.inline
-  def apply(buttons: js.Array[HeaderButton]): Header = {
+  inline def apply(buttons: js.Array[HeaderButton]): Header = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+  extension [Self <: Header](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[HeaderButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[HeaderButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: HeaderButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: HeaderButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
   }
 }

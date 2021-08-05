@@ -26,52 +26,37 @@ trait ThreatHit extends StObject {
 }
 object ThreatHit {
   
-  @scala.inline
-  def apply(): ThreatHit = {
+  inline def apply(): ThreatHit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatHit]
   }
   
-  @scala.inline
-  implicit class ThreatHitMutableBuilder[Self <: ThreatHit] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatHit](x: Self) {
     
-    @scala.inline
-    def setClientInfo(value: ClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
+    inline def setClientInfo(value: ClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
+    inline def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
-    @scala.inline
-    def setEntry(value: ThreatEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: ThreatEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+    inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
-    @scala.inline
-    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
+    inline def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
+    inline def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[ThreatSource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[ThreatSource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: ThreatSource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: ThreatSource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
+    inline def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
+    inline def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
     
-    @scala.inline
-    def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
+    inline def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

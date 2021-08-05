@@ -28,37 +28,27 @@ trait ActionTypeSettings extends StObject {
 }
 object ActionTypeSettings {
   
-  @scala.inline
-  def apply(): ActionTypeSettings = {
+  inline def apply(): ActionTypeSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionTypeSettings]
   }
   
-  @scala.inline
-  implicit class ActionTypeSettingsMutableBuilder[Self <: ActionTypeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ActionTypeSettings](x: Self) {
     
-    @scala.inline
-    def setEntityUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "entityUrlTemplate", value.asInstanceOf[js.Any])
+    inline def setEntityUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "entityUrlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUrlTemplateUndefined: Self = StObject.set(x, "entityUrlTemplate", js.undefined)
+    inline def setEntityUrlTemplateUndefined: Self = StObject.set(x, "entityUrlTemplate", js.undefined)
     
-    @scala.inline
-    def setExecutionUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "executionUrlTemplate", value.asInstanceOf[js.Any])
+    inline def setExecutionUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "executionUrlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionUrlTemplateUndefined: Self = StObject.set(x, "executionUrlTemplate", js.undefined)
+    inline def setExecutionUrlTemplateUndefined: Self = StObject.set(x, "executionUrlTemplate", js.undefined)
     
-    @scala.inline
-    def setRevisionUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "revisionUrlTemplate", value.asInstanceOf[js.Any])
+    inline def setRevisionUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "revisionUrlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUrlTemplateUndefined: Self = StObject.set(x, "revisionUrlTemplate", js.undefined)
+    inline def setRevisionUrlTemplateUndefined: Self = StObject.set(x, "revisionUrlTemplate", js.undefined)
     
-    @scala.inline
-    def setThirdPartyConfigurationUrl(value: Url): Self = StObject.set(x, "thirdPartyConfigurationUrl", value.asInstanceOf[js.Any])
+    inline def setThirdPartyConfigurationUrl(value: Url): Self = StObject.set(x, "thirdPartyConfigurationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyConfigurationUrlUndefined: Self = StObject.set(x, "thirdPartyConfigurationUrl", js.undefined)
+    inline def setThirdPartyConfigurationUrlUndefined: Self = StObject.set(x, "thirdPartyConfigurationUrl", js.undefined)
   }
 }

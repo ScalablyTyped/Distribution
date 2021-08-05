@@ -24,33 +24,25 @@ trait DocumentHtmlDefinitionOriginal extends StObject {
 }
 object DocumentHtmlDefinitionOriginal {
   
-  @scala.inline
-  def apply(): DocumentHtmlDefinitionOriginal = {
+  inline def apply(): DocumentHtmlDefinitionOriginal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentHtmlDefinitionOriginal]
   }
   
-  @scala.inline
-  implicit class DocumentHtmlDefinitionOriginalMutableBuilder[Self <: DocumentHtmlDefinitionOriginal] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHtmlDefinitionOriginal](x: Self) {
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdGuid(value: String): Self = StObject.set(x, "documentIdGuid", value.asInstanceOf[js.Any])
+    inline def setDocumentIdGuid(value: String): Self = StObject.set(x, "documentIdGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdGuidUndefined: Self = StObject.set(x, "documentIdGuid", js.undefined)
+    inline def setDocumentIdGuidUndefined: Self = StObject.set(x, "documentIdGuid", js.undefined)
     
-    @scala.inline
-    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
-    @scala.inline
-    def setHtmlDefinition(
+    inline def setHtmlDefinition(
       value: /* Holds the properties that define how to generate the responsive-formatted HTML for the document. */ DocumentHtmlDefinition
     ): Self = StObject.set(x, "htmlDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlDefinitionUndefined: Self = StObject.set(x, "htmlDefinition", js.undefined)
+    inline def setHtmlDefinitionUndefined: Self = StObject.set(x, "htmlDefinition", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait DrawOrderTimeline
 }
 object DrawOrderTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     drawOrders: js.Array[js.Array[Double]],
     frames: ArrayLike[Double],
@@ -31,22 +30,16 @@ object DrawOrderTimeline {
     __obj.asInstanceOf[DrawOrderTimeline]
   }
   
-  @scala.inline
-  implicit class DrawOrderTimelineMutableBuilder[Self <: DrawOrderTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: DrawOrderTimeline](x: Self) {
     
-    @scala.inline
-    def setDrawOrders(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "drawOrders", value.asInstanceOf[js.Any])
+    inline def setDrawOrders(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "drawOrders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawOrdersVarargs(value: js.Array[Double]*): Self = StObject.set(x, "drawOrders", js.Array(value :_*))
+    inline def setDrawOrdersVarargs(value: js.Array[Double]*): Self = StObject.set(x, "drawOrders", js.Array(value :_*))
     
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFrameCount(value: () => Double): Self = StObject.set(x, "getFrameCount", js.Any.fromFunction0(value))
+    inline def setGetFrameCount(value: () => Double): Self = StObject.set(x, "getFrameCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFrame(value: (Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction3(value))
+    inline def setSetFrame(value: (Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction3(value))
   }
 }

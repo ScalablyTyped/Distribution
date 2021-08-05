@@ -13,9 +13,7 @@ trait SheetType
      with _SheetKeys
 object SheetType {
   
-  @scala.inline
-  def chart: typings.xlsx.xlsxStrings.chart = "chart".asInstanceOf[typings.xlsx.xlsxStrings.chart]
+  inline def chart: typings.xlsx.xlsxStrings.chart = "chart".asInstanceOf[typings.xlsx.xlsxStrings.chart]
   
-  @scala.inline
-  def sheet: typings.xlsx.xlsxStrings.sheet = "sheet".asInstanceOf[typings.xlsx.xlsxStrings.sheet]
+  inline def sheet: typings.xlsx.xlsxStrings.sheet = "sheet".asInstanceOf[typings.xlsx.xlsxStrings.sheet]
 }

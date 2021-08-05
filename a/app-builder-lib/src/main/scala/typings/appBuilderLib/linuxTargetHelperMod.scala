@@ -20,13 +20,13 @@ object linuxTargetHelperMod {
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String, extra: StringDictionary[String]): js.Promise[String] = js.native
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: Unit, extra: StringDictionary[String]): js.Promise[String] = js.native
     
-    var computeDesktopIcons: js.Any = js.native
+    /* private */ var computeDesktopIcons: js.Any = js.native
     
-    var computeMimeTypeFiles: js.Any = js.native
+    /* private */ var computeMimeTypeFiles: js.Any = js.native
     
     def getDescription(options: LinuxTargetSpecificOptions): String = js.native
     
-    val iconPromise: js.Any = js.native
+    /* private */ val iconPromise: js.Any = js.native
     
     def icons: js.Promise[js.Array[IconInfo]] = js.native
     
@@ -34,9 +34,9 @@ object linuxTargetHelperMod {
     
     def mimeTypeFiles: js.Promise[String | Null] = js.native
     
-    val mimeTypeFilesPromise: js.Any = js.native
+    /* private */ val mimeTypeFilesPromise: js.Any = js.native
     
-    var packager: js.Any = js.native
+    /* private */ var packager: js.Any = js.native
     
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions): js.Promise[String] = js.native
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String): js.Promise[String] = js.native

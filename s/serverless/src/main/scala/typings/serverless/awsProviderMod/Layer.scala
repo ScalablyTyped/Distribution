@@ -22,58 +22,41 @@ trait Layer extends StObject {
 }
 object Layer {
   
-  @scala.inline
-  def apply(path: String): Layer = {
+  inline def apply(path: String): Layer = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setAllowedAccounts(value: js.Array[String]): Self = StObject.set(x, "allowedAccounts", value.asInstanceOf[js.Any])
+    inline def setAllowedAccounts(value: js.Array[String]): Self = StObject.set(x, "allowedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedAccountsUndefined: Self = StObject.set(x, "allowedAccounts", js.undefined)
+    inline def setAllowedAccountsUndefined: Self = StObject.set(x, "allowedAccounts", js.undefined)
     
-    @scala.inline
-    def setAllowedAccountsVarargs(value: String*): Self = StObject.set(x, "allowedAccounts", js.Array(value :_*))
+    inline def setAllowedAccountsVarargs(value: String*): Self = StObject.set(x, "allowedAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setCompatibleRuntimes(value: js.Array[String]): Self = StObject.set(x, "compatibleRuntimes", value.asInstanceOf[js.Any])
+    inline def setCompatibleRuntimes(value: js.Array[String]): Self = StObject.set(x, "compatibleRuntimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleRuntimesUndefined: Self = StObject.set(x, "compatibleRuntimes", js.undefined)
+    inline def setCompatibleRuntimesUndefined: Self = StObject.set(x, "compatibleRuntimes", js.undefined)
     
-    @scala.inline
-    def setCompatibleRuntimesVarargs(value: String*): Self = StObject.set(x, "compatibleRuntimes", js.Array(value :_*))
+    inline def setCompatibleRuntimesVarargs(value: String*): Self = StObject.set(x, "compatibleRuntimes", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLicenseInfo(value: String): Self = StObject.set(x, "licenseInfo", value.asInstanceOf[js.Any])
+    inline def setLicenseInfo(value: String): Self = StObject.set(x, "licenseInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseInfoUndefined: Self = StObject.set(x, "licenseInfo", js.undefined)
+    inline def setLicenseInfoUndefined: Self = StObject.set(x, "licenseInfo", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetain(value: Boolean): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
+    inline def setRetain(value: Boolean): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainUndefined: Self = StObject.set(x, "retain", js.undefined)
+    inline def setRetainUndefined: Self = StObject.set(x, "retain", js.undefined)
   }
 }

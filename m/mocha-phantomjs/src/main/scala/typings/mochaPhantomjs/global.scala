@@ -9,6 +9,5 @@ object global {
   @JSGlobal("mochaPhantomJS")
   @js.native
   def mochaPhantomJS: MochaPhantomJS = js.native
-  @scala.inline
-  def mochaPhantomJS_=(x: MochaPhantomJS): Unit = js.Dynamic.global.updateDynamic("mochaPhantomJS")(x.asInstanceOf[js.Any])
+  inline def mochaPhantomJS_=(x: MochaPhantomJS): Unit = js.Dynamic.global.updateDynamic("mochaPhantomJS")(x.asInstanceOf[js.Any])
 }

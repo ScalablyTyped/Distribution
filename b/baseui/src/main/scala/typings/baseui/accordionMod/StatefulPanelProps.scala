@@ -16,25 +16,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object StatefulPanelProps {
   
-  @scala.inline
-  def apply(): StatefulPanelProps = {
+  inline def apply(): StatefulPanelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulPanelProps]
   }
   
-  @scala.inline
-  implicit class StatefulPanelPropsMutableBuilder[Self <: StatefulPanelProps] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulPanelProps](x: Self) {
     
-    @scala.inline
-    def setInitialState(value: PanelState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: PanelState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setStateReducer(value: (expand, PanelState, PanelState) => PanelState): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+    inline def setStateReducer(value: (expand, PanelState, PanelState) => PanelState): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+    inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
   }
 }

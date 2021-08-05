@@ -54,8 +54,7 @@ object xmlHttpRequestMod {
     /**
       * Construct an XmlHttpRequest file system backend with the given options.
       */
-    @scala.inline
-    def Create(opts: XmlHttpRequestOptions, cb: BFSCallback[XmlHttpRequest]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: XmlHttpRequestOptions, cb: BFSCallback[XmlHttpRequest]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * **Deprecated. Please use XmlHttpRequest.Create() method instead to construct XmlHttpRequest objects.**
@@ -64,14 +63,10 @@ object xmlHttpRequestMod {
       * Uses the base URL as the URL prefix for fetched files.
       * @param cb Called when the file system has been instantiated, or if an error occurs.
       */
-    @scala.inline
-    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: Unit, deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromURL(url: String, cb: BFSCallback[XmlHttpRequest]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: Unit, deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.Name")
     @js.native
@@ -81,8 +76,7 @@ object xmlHttpRequestMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -90,7 +84,7 @@ object xmlHttpRequestMod {
     extends BaseFileSystem
        with FileSystem {
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
     /**
       * Asynchronously download the given file.
@@ -249,26 +243,20 @@ object xmlHttpRequestMod {
   }
   object XmlHttpRequestOptions {
     
-    @scala.inline
-    def apply(): XmlHttpRequestOptions = {
+    inline def apply(): XmlHttpRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlHttpRequestOptions]
     }
     
-    @scala.inline
-    implicit class XmlHttpRequestOptionsMutableBuilder[Self <: XmlHttpRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XmlHttpRequestOptions](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String | js.Object): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String | js.Object): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
 }

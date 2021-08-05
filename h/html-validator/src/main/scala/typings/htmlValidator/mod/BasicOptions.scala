@@ -19,46 +19,33 @@ trait BasicOptions extends StObject {
 }
 object BasicOptions {
   
-  @scala.inline
-  def apply(): BasicOptions = {
+  inline def apply(): BasicOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasicOptions]
   }
   
-  @scala.inline
-  implicit class BasicOptionsMutableBuilder[Self <: BasicOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BasicOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+    inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    @scala.inline
-    def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
-    @scala.inline
-    def setIsFragment(value: Boolean): Self = StObject.set(x, "isFragment", value.asInstanceOf[js.Any])
+    inline def setIsFragment(value: Boolean): Self = StObject.set(x, "isFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFragmentUndefined: Self = StObject.set(x, "isFragment", js.undefined)
+    inline def setIsFragmentUndefined: Self = StObject.set(x, "isFragment", js.undefined)
     
-    @scala.inline
-    def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
+    inline def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
+    inline def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
     
-    @scala.inline
-    def setValidator(value: js.Object): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    inline def setValidator(value: js.Object): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }
 }

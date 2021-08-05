@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParentNode2 extends StObject
 object ParentNode2 {
   
-  @scala.inline
-  def ComponentNode(
+  inline def ComponentNode(
     children: js.Array[TemplateChildNode],
     isSelfClosing: Boolean,
     loc: SourceLocation,
@@ -27,8 +26,7 @@ object ParentNode2 {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ComponentNode]
   }
   
-  @scala.inline
-  def ForNode(
+  inline def ForNode(
     children: js.Array[TemplateChildNode],
     loc: SourceLocation,
     parseResult: ForParseResult,
@@ -39,15 +37,13 @@ object ParentNode2 {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ForNode]
   }
   
-  @scala.inline
-  def IfBranchNode(children: js.Array[TemplateChildNode], loc: SourceLocation): typings.vueCompilerCore.mod.IfBranchNode = {
+  inline def IfBranchNode(children: js.Array[TemplateChildNode], loc: SourceLocation): typings.vueCompilerCore.mod.IfBranchNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(10)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.IfBranchNode]
   }
   
-  @scala.inline
-  def PlainElementNode(
+  inline def PlainElementNode(
     children: js.Array[TemplateChildNode],
     isSelfClosing: Boolean,
     loc: SourceLocation,
@@ -60,8 +56,7 @@ object ParentNode2 {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.PlainElementNode]
   }
   
-  @scala.inline
-  def RootNode(
+  inline def RootNode(
     cached: Double,
     children: js.Array[TemplateChildNode],
     components: js.Array[String],
@@ -77,8 +72,7 @@ object ParentNode2 {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.RootNode]
   }
   
-  @scala.inline
-  def SlotOutletNode(
+  inline def SlotOutletNode(
     children: js.Array[TemplateChildNode],
     isSelfClosing: Boolean,
     loc: SourceLocation,
@@ -91,8 +85,7 @@ object ParentNode2 {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SlotOutletNode]
   }
   
-  @scala.inline
-  def TemplateNode(
+  inline def TemplateNode(
     children: js.Array[TemplateChildNode],
     codegenNode: Unit,
     isSelfClosing: Boolean,

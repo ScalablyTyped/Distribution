@@ -18,25 +18,19 @@ trait ChallengeResponseType extends StObject {
 }
 object ChallengeResponseType {
   
-  @scala.inline
-  def apply(): ChallengeResponseType = {
+  inline def apply(): ChallengeResponseType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChallengeResponseType]
   }
   
-  @scala.inline
-  implicit class ChallengeResponseTypeMutableBuilder[Self <: ChallengeResponseType] (val x: Self) extends AnyVal {
+  extension [Self <: ChallengeResponseType](x: Self) {
     
-    @scala.inline
-    def setChallengeName(value: ChallengeName): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
+    inline def setChallengeName(value: ChallengeName): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeNameUndefined: Self = StObject.set(x, "ChallengeName", js.undefined)
+    inline def setChallengeNameUndefined: Self = StObject.set(x, "ChallengeName", js.undefined)
     
-    @scala.inline
-    def setChallengeResponse(value: ChallengeResponse): Self = StObject.set(x, "ChallengeResponse", value.asInstanceOf[js.Any])
+    inline def setChallengeResponse(value: ChallengeResponse): Self = StObject.set(x, "ChallengeResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeResponseUndefined: Self = StObject.set(x, "ChallengeResponse", js.undefined)
+    inline def setChallengeResponseUndefined: Self = StObject.set(x, "ChallengeResponse", js.undefined)
   }
 }

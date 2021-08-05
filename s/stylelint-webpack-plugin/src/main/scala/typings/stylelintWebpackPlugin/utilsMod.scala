@@ -10,11 +10,8 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseFiles(files: String, context: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFiles")(files.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def parseFiles(files: js.Array[String], context: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFiles")(files.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def parseFiles(files: String, context: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFiles")(files.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def parseFiles(files: js.Array[String], context: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFiles")(files.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def replaceBackslashes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceBackslashes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def replaceBackslashes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceBackslashes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

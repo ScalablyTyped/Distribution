@@ -11,19 +11,15 @@ trait UniqueInputs extends StObject {
 }
 object UniqueInputs {
   
-  @scala.inline
-  def apply(): UniqueInputs = {
+  inline def apply(): UniqueInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UniqueInputs]
   }
   
-  @scala.inline
-  implicit class UniqueInputsMutableBuilder[Self <: UniqueInputs] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

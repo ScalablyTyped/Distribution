@@ -23,22 +23,19 @@ object eventTypesMod {
   trait EphemeralEvent extends StObject
   object EphemeralEvent {
     
-    @scala.inline
-    def PresenceEvent(content: Currentlyactive, sender: String): typings.matrixAppserviceBridge.eventTypesMod.PresenceEvent = {
+    inline def PresenceEvent(content: Currentlyactive, sender: String): typings.matrixAppserviceBridge.eventTypesMod.PresenceEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("m.presence")
       __obj.asInstanceOf[typings.matrixAppserviceBridge.eventTypesMod.PresenceEvent]
     }
     
-    @scala.inline
-    def ReadReceiptEvent(content: StringDictionary[Mread], room_id: String): typings.matrixAppserviceBridge.eventTypesMod.ReadReceiptEvent = {
+    inline def ReadReceiptEvent(content: StringDictionary[Mread], room_id: String): typings.matrixAppserviceBridge.eventTypesMod.ReadReceiptEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("m.receipt")
       __obj.asInstanceOf[typings.matrixAppserviceBridge.eventTypesMod.ReadReceiptEvent]
     }
     
-    @scala.inline
-    def TypingEvent(content: Userids, room_id: String): typings.matrixAppserviceBridge.eventTypesMod.TypingEvent = {
+    inline def TypingEvent(content: Userids, room_id: String): typings.matrixAppserviceBridge.eventTypesMod.TypingEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("m.typing")
       __obj.asInstanceOf[typings.matrixAppserviceBridge.eventTypesMod.TypingEvent]
@@ -57,24 +54,19 @@ object eventTypesMod {
   }
   object PresenceEvent {
     
-    @scala.inline
-    def apply(content: Currentlyactive, sender: String): PresenceEvent = {
+    inline def apply(content: Currentlyactive, sender: String): PresenceEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("m.presence")
       __obj.asInstanceOf[PresenceEvent]
     }
     
-    @scala.inline
-    implicit class PresenceEventMutableBuilder[Self <: PresenceEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PresenceEvent](x: Self) {
       
-      @scala.inline
-      def setContent(value: Currentlyactive): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Currentlyactive): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: mDotpresence): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mDotpresence): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,24 +82,19 @@ object eventTypesMod {
   }
   object ReadReceiptEvent {
     
-    @scala.inline
-    def apply(content: StringDictionary[Mread], room_id: String): ReadReceiptEvent = {
+    inline def apply(content: StringDictionary[Mread], room_id: String): ReadReceiptEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("m.receipt")
       __obj.asInstanceOf[ReadReceiptEvent]
     }
     
-    @scala.inline
-    implicit class ReadReceiptEventMutableBuilder[Self <: ReadReceiptEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ReadReceiptEvent](x: Self) {
       
-      @scala.inline
-      def setContent(value: StringDictionary[Mread]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: StringDictionary[Mread]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
+      inline def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: mDotreceipt): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mDotreceipt): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,24 +110,19 @@ object eventTypesMod {
   }
   object TypingEvent {
     
-    @scala.inline
-    def apply(content: Userids, room_id: String): TypingEvent = {
+    inline def apply(content: Userids, room_id: String): TypingEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("m.typing")
       __obj.asInstanceOf[TypingEvent]
     }
     
-    @scala.inline
-    implicit class TypingEventMutableBuilder[Self <: TypingEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TypingEvent](x: Self) {
       
-      @scala.inline
-      def setContent(value: Userids): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Userids): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
+      inline def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: mDottyping): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mDottyping): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,8 +147,7 @@ object eventTypesMod {
   }
   object WeakEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content: Record[String, js.Any],
       event_id: String,
       origin_server_ts: Double,
@@ -179,38 +160,27 @@ object eventTypesMod {
       __obj.asInstanceOf[WeakEvent]
     }
     
-    @scala.inline
-    implicit class WeakEventMutableBuilder[Self <: WeakEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WeakEvent](x: Self) {
       
-      @scala.inline
-      def setContent(value: Record[String, js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Record[String, js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
+      inline def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin_server_ts(value: Double): Self = StObject.set(x, "origin_server_ts", value.asInstanceOf[js.Any])
+      inline def setOrigin_server_ts(value: Double): Self = StObject.set(x, "origin_server_ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
+      inline def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState_key(value: String): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
+      inline def setState_key(value: String): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState_keyUndefined: Self = StObject.set(x, "state_key", js.undefined)
+      inline def setState_keyUndefined: Self = StObject.set(x, "state_key", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsigned(value: Age): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
+      inline def setUnsigned(value: Age): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
+      inline def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
     }
   }
 }

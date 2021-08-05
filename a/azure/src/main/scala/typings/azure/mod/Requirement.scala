@@ -12,19 +12,15 @@ trait Requirement extends StObject {
 }
 object Requirement {
   
-  @scala.inline
-  def apply(SettingName: String, SettingPredicate: js.Function): Requirement = {
+  inline def apply(SettingName: String, SettingPredicate: js.Function): Requirement = {
     val __obj = js.Dynamic.literal(SettingName = SettingName.asInstanceOf[js.Any], SettingPredicate = SettingPredicate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Requirement]
   }
   
-  @scala.inline
-  implicit class RequirementMutableBuilder[Self <: Requirement] (val x: Self) extends AnyVal {
+  extension [Self <: Requirement](x: Self) {
     
-    @scala.inline
-    def setSettingName(value: String): Self = StObject.set(x, "SettingName", value.asInstanceOf[js.Any])
+    inline def setSettingName(value: String): Self = StObject.set(x, "SettingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingPredicate(value: js.Function): Self = StObject.set(x, "SettingPredicate", value.asInstanceOf[js.Any])
+    inline def setSettingPredicate(value: js.Function): Self = StObject.set(x, "SettingPredicate", value.asInstanceOf[js.Any])
   }
 }

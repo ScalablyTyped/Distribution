@@ -12,22 +12,17 @@ trait ReferencedSymbol extends StObject {
 }
 object ReferencedSymbol {
   
-  @scala.inline
-  def apply(definition: ReferencedSymbolDefinitionInfo, references: js.Array[ReferenceEntry]): ReferencedSymbol = {
+  inline def apply(definition: ReferencedSymbolDefinitionInfo, references: js.Array[ReferenceEntry]): ReferencedSymbol = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferencedSymbol]
   }
   
-  @scala.inline
-  implicit class ReferencedSymbolMutableBuilder[Self <: ReferencedSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: ReferencedSymbol](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: ReferencedSymbolDefinitionInfo): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: ReferencedSymbolDefinitionInfo): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferences(value: js.Array[ReferenceEntry]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: js.Array[ReferenceEntry]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesVarargs(value: ReferenceEntry*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: ReferenceEntry*): Self = StObject.set(x, "references", js.Array(value :_*))
   }
 }

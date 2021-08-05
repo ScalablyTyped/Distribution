@@ -15,19 +15,15 @@ trait LiveBroadcastStatistics extends StObject {
 }
 object LiveBroadcastStatistics {
   
-  @scala.inline
-  def apply(): LiveBroadcastStatistics = {
+  inline def apply(): LiveBroadcastStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveBroadcastStatistics]
   }
   
-  @scala.inline
-  implicit class LiveBroadcastStatisticsMutableBuilder[Self <: LiveBroadcastStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: LiveBroadcastStatistics](x: Self) {
     
-    @scala.inline
-    def setTotalChatCount(value: String): Self = StObject.set(x, "totalChatCount", value.asInstanceOf[js.Any])
+    inline def setTotalChatCount(value: String): Self = StObject.set(x, "totalChatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalChatCountUndefined: Self = StObject.set(x, "totalChatCount", js.undefined)
+    inline def setTotalChatCountUndefined: Self = StObject.set(x, "totalChatCount", js.undefined)
   }
 }

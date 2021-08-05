@@ -23,31 +23,23 @@ trait MultiplexStatmuxVideoSettings extends StObject {
 }
 object MultiplexStatmuxVideoSettings {
   
-  @scala.inline
-  def apply(): MultiplexStatmuxVideoSettings = {
+  inline def apply(): MultiplexStatmuxVideoSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexStatmuxVideoSettings]
   }
   
-  @scala.inline
-  implicit class MultiplexStatmuxVideoSettingsMutableBuilder[Self <: MultiplexStatmuxVideoSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexStatmuxVideoSettings](x: Self) {
     
-    @scala.inline
-    def setMaximumBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
+    inline def setMaximumBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
+    inline def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
     
-    @scala.inline
-    def setMinimumBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MinimumBitrate", value.asInstanceOf[js.Any])
+    inline def setMinimumBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MinimumBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumBitrateUndefined: Self = StObject.set(x, "MinimumBitrate", js.undefined)
+    inline def setMinimumBitrateUndefined: Self = StObject.set(x, "MinimumBitrate", js.undefined)
     
-    @scala.inline
-    def setPriority(value: integerMinNegative5Max5): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: integerMinNegative5Max5): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
   }
 }

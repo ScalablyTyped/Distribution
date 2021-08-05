@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlLoop extends StObject
 object htmlLoop {
   
-  @scala.inline
-  def htmlLoopLoopInfinite: `-1` = -1.asInstanceOf[`-1`]
+  inline def htmlLoopLoopInfinite: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def htmlLoop_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlLoop_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

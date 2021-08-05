@@ -29,50 +29,36 @@ trait TypeQueryResult extends StObject {
 }
 object TypeQueryResult {
   
-  @scala.inline
-  def apply(guess: Boolean, `type`: String): TypeQueryResult = {
+  inline def apply(guess: Boolean, `type`: String): TypeQueryResult = {
     val __obj = js.Dynamic.literal(guess = guess.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeQueryResult]
   }
   
-  @scala.inline
-  implicit class TypeQueryResultMutableBuilder[Self <: TypeQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: TypeQueryResult](x: Self) {
     
-    @scala.inline
-    def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+    inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
     
-    @scala.inline
-    def setExprName(value: String): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
+    inline def setExprName(value: String): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprNameUndefined: Self = StObject.set(x, "exprName", js.undefined)
+    inline def setExprNameUndefined: Self = StObject.set(x, "exprName", js.undefined)
     
-    @scala.inline
-    def setGuess(value: Boolean): Self = StObject.set(x, "guess", value.asInstanceOf[js.Any])
+    inline def setGuess(value: Boolean): Self = StObject.set(x, "guess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

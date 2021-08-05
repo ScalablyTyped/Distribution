@@ -36,8 +36,7 @@ object ApplicationCache {
   }
   object ApplicationCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       creationTime: Double,
       manifestURL: String,
       resources: js.Array[ApplicationCacheResource],
@@ -48,26 +47,19 @@ object ApplicationCache {
       __obj.asInstanceOf[typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache]
     }
     
-    @scala.inline
-    implicit class ApplicationCacheMutableBuilder[Self <: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache] (val x: Self) extends AnyVal {
+    extension [Self <: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache](x: Self) {
       
-      @scala.inline
-      def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
+      inline def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResources(value: js.Array[ApplicationCacheResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: js.Array[ApplicationCacheResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesVarargs(value: ApplicationCacheResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: ApplicationCacheResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateTime(value: Double): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+      inline def setUpdateTime(value: Double): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,24 +82,19 @@ object ApplicationCache {
   }
   object ApplicationCacheResource {
     
-    @scala.inline
-    def apply(size: integer, `type`: String, url: String): ApplicationCacheResource = {
+    inline def apply(size: integer, `type`: String, url: String): ApplicationCacheResource = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationCacheResource]
     }
     
-    @scala.inline
-    implicit class ApplicationCacheResourceMutableBuilder[Self <: ApplicationCacheResource] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationCacheResource](x: Self) {
       
-      @scala.inline
-      def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,23 +117,18 @@ object ApplicationCache {
   }
   object ApplicationCacheStatusUpdatedEvent {
     
-    @scala.inline
-    def apply(frameId: FrameId, manifestURL: String, status: integer): ApplicationCacheStatusUpdatedEvent = {
+    inline def apply(frameId: FrameId, manifestURL: String, status: integer): ApplicationCacheStatusUpdatedEvent = {
       val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], manifestURL = manifestURL.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationCacheStatusUpdatedEvent]
     }
     
-    @scala.inline
-    implicit class ApplicationCacheStatusUpdatedEventMutableBuilder[Self <: ApplicationCacheStatusUpdatedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationCacheStatusUpdatedEvent](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
+      inline def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,23 +151,18 @@ object ApplicationCache {
   }
   object FrameWithManifest {
     
-    @scala.inline
-    def apply(frameId: FrameId, manifestURL: String, status: integer): FrameWithManifest = {
+    inline def apply(frameId: FrameId, manifestURL: String, status: integer): FrameWithManifest = {
       val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], manifestURL = manifestURL.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameWithManifest]
     }
     
-    @scala.inline
-    implicit class FrameWithManifestMutableBuilder[Self <: FrameWithManifest] (val x: Self) extends AnyVal {
+    extension [Self <: FrameWithManifest](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
+      inline def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,17 +175,14 @@ object ApplicationCache {
   }
   object GetApplicationCacheForFrameRequest {
     
-    @scala.inline
-    def apply(frameId: FrameId): GetApplicationCacheForFrameRequest = {
+    inline def apply(frameId: FrameId): GetApplicationCacheForFrameRequest = {
       val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetApplicationCacheForFrameRequest]
     }
     
-    @scala.inline
-    implicit class GetApplicationCacheForFrameRequestMutableBuilder[Self <: GetApplicationCacheForFrameRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetApplicationCacheForFrameRequest](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,17 +195,14 @@ object ApplicationCache {
   }
   object GetApplicationCacheForFrameResponse {
     
-    @scala.inline
-    def apply(applicationCache: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache): GetApplicationCacheForFrameResponse = {
+    inline def apply(applicationCache: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache): GetApplicationCacheForFrameResponse = {
       val __obj = js.Dynamic.literal(applicationCache = applicationCache.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetApplicationCacheForFrameResponse]
     }
     
-    @scala.inline
-    implicit class GetApplicationCacheForFrameResponseMutableBuilder[Self <: GetApplicationCacheForFrameResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetApplicationCacheForFrameResponse](x: Self) {
       
-      @scala.inline
-      def setApplicationCache(value: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache): Self = StObject.set(x, "applicationCache", value.asInstanceOf[js.Any])
+      inline def setApplicationCache(value: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache): Self = StObject.set(x, "applicationCache", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,20 +216,16 @@ object ApplicationCache {
   }
   object GetFramesWithManifestsResponse {
     
-    @scala.inline
-    def apply(frameIds: js.Array[FrameWithManifest]): GetFramesWithManifestsResponse = {
+    inline def apply(frameIds: js.Array[FrameWithManifest]): GetFramesWithManifestsResponse = {
       val __obj = js.Dynamic.literal(frameIds = frameIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetFramesWithManifestsResponse]
     }
     
-    @scala.inline
-    implicit class GetFramesWithManifestsResponseMutableBuilder[Self <: GetFramesWithManifestsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetFramesWithManifestsResponse](x: Self) {
       
-      @scala.inline
-      def setFrameIds(value: js.Array[FrameWithManifest]): Self = StObject.set(x, "frameIds", value.asInstanceOf[js.Any])
+      inline def setFrameIds(value: js.Array[FrameWithManifest]): Self = StObject.set(x, "frameIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameIdsVarargs(value: FrameWithManifest*): Self = StObject.set(x, "frameIds", js.Array(value :_*))
+      inline def setFrameIdsVarargs(value: FrameWithManifest*): Self = StObject.set(x, "frameIds", js.Array(value :_*))
     }
   }
   
@@ -271,17 +238,14 @@ object ApplicationCache {
   }
   object GetManifestForFrameRequest {
     
-    @scala.inline
-    def apply(frameId: FrameId): GetManifestForFrameRequest = {
+    inline def apply(frameId: FrameId): GetManifestForFrameRequest = {
       val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetManifestForFrameRequest]
     }
     
-    @scala.inline
-    implicit class GetManifestForFrameRequestMutableBuilder[Self <: GetManifestForFrameRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetManifestForFrameRequest](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,17 +258,14 @@ object ApplicationCache {
   }
   object GetManifestForFrameResponse {
     
-    @scala.inline
-    def apply(manifestURL: String): GetManifestForFrameResponse = {
+    inline def apply(manifestURL: String): GetManifestForFrameResponse = {
       val __obj = js.Dynamic.literal(manifestURL = manifestURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetManifestForFrameResponse]
     }
     
-    @scala.inline
-    implicit class GetManifestForFrameResponseMutableBuilder[Self <: GetManifestForFrameResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetManifestForFrameResponse](x: Self) {
       
-      @scala.inline
-      def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
+      inline def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -314,17 +275,14 @@ object ApplicationCache {
   }
   object NetworkStateUpdatedEvent {
     
-    @scala.inline
-    def apply(isNowOnline: Boolean): NetworkStateUpdatedEvent = {
+    inline def apply(isNowOnline: Boolean): NetworkStateUpdatedEvent = {
       val __obj = js.Dynamic.literal(isNowOnline = isNowOnline.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkStateUpdatedEvent]
     }
     
-    @scala.inline
-    implicit class NetworkStateUpdatedEventMutableBuilder[Self <: NetworkStateUpdatedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkStateUpdatedEvent](x: Self) {
       
-      @scala.inline
-      def setIsNowOnline(value: Boolean): Self = StObject.set(x, "isNowOnline", value.asInstanceOf[js.Any])
+      inline def setIsNowOnline(value: Boolean): Self = StObject.set(x, "isNowOnline", value.asInstanceOf[js.Any])
     }
   }
 }

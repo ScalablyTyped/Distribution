@@ -10,16 +10,13 @@ trait Absolute extends StObject {
 }
 object Absolute {
   
-  @scala.inline
-  def apply(absolute: Boolean): Absolute = {
+  inline def apply(absolute: Boolean): Absolute = {
     val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any])
     __obj.asInstanceOf[Absolute]
   }
   
-  @scala.inline
-  implicit class AbsoluteMutableBuilder[Self <: Absolute] (val x: Self) extends AnyVal {
+  extension [Self <: Absolute](x: Self) {
     
-    @scala.inline
-    def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+    inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
   }
 }

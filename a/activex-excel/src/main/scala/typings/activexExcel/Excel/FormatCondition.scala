@@ -27,7 +27,7 @@ trait FormatCondition extends StObject {
   
   def Delete(): Unit = js.native
   
-  @JSName("Excel.FormatCondition_typekey")
+  /* private */ @JSName("Excel.FormatCondition_typekey")
   var ExcelDotFormatCondition_typekey: FormatCondition = js.native
   
   val Font: typings.activexExcel.Excel.Font = js.native

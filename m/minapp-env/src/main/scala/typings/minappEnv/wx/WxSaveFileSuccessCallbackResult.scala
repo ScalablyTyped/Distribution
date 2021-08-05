@@ -11,16 +11,13 @@ trait WxSaveFileSuccessCallbackResult extends StObject {
 }
 object WxSaveFileSuccessCallbackResult {
   
-  @scala.inline
-  def apply(savedFilePath: Double): WxSaveFileSuccessCallbackResult = {
+  inline def apply(savedFilePath: Double): WxSaveFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(savedFilePath = savedFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[WxSaveFileSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class WxSaveFileSuccessCallbackResultMutableBuilder[Self <: WxSaveFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: WxSaveFileSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setSavedFilePath(value: Double): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
+    inline def setSavedFilePath(value: Double): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
   }
 }

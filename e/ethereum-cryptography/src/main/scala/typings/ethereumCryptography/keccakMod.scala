@@ -11,15 +11,11 @@ object keccakMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def keccak224(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak224")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def keccak224(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak224")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def keccak256(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def keccak256(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def keccak384(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak384")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def keccak384(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak384")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def keccak512(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak512")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def keccak512(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak512")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

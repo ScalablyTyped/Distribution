@@ -16,25 +16,19 @@ trait AppVersion extends StObject {
 }
 object AppVersion {
   
-  @scala.inline
-  def apply(appVersion: String, batteryLevel: Double, deviceDescription: String, platform: String): AppVersion = {
+  inline def apply(appVersion: String, batteryLevel: Double, deviceDescription: String, platform: String): AppVersion = {
     val __obj = js.Dynamic.literal(appVersion = appVersion.asInstanceOf[js.Any], batteryLevel = batteryLevel.asInstanceOf[js.Any], deviceDescription = deviceDescription.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppVersion]
   }
   
-  @scala.inline
-  implicit class AppVersionMutableBuilder[Self <: AppVersion] (val x: Self) extends AnyVal {
+  extension [Self <: AppVersion](x: Self) {
     
-    @scala.inline
-    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+    inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatteryLevel(value: Double): Self = StObject.set(x, "batteryLevel", value.asInstanceOf[js.Any])
+    inline def setBatteryLevel(value: Double): Self = StObject.set(x, "batteryLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceDescription(value: String): Self = StObject.set(x, "deviceDescription", value.asInstanceOf[js.Any])
+    inline def setDeviceDescription(value: String): Self = StObject.set(x, "deviceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
   }
 }

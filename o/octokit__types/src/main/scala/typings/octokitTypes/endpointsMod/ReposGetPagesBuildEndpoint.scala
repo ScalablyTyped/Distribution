@@ -14,22 +14,17 @@ trait ReposGetPagesBuildEndpoint extends StObject {
 }
 object ReposGetPagesBuildEndpoint {
   
-  @scala.inline
-  def apply(build_id: Double, owner: String, repo: String): ReposGetPagesBuildEndpoint = {
+  inline def apply(build_id: Double, owner: String, repo: String): ReposGetPagesBuildEndpoint = {
     val __obj = js.Dynamic.literal(build_id = build_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetPagesBuildEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetPagesBuildEndpointMutableBuilder[Self <: ReposGetPagesBuildEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetPagesBuildEndpoint](x: Self) {
     
-    @scala.inline
-    def setBuild_id(value: Double): Self = StObject.set(x, "build_id", value.asInstanceOf[js.Any])
+    inline def setBuild_id(value: Double): Self = StObject.set(x, "build_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

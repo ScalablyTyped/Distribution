@@ -16,17 +16,14 @@ object sortableListDriverMod {
   }
   object SortableListDriver {
     
-    @scala.inline
-    def apply(exists: () => Boolean, reorder: AddedId => Unit): SortableListDriver = {
+    inline def apply(exists: () => Boolean, reorder: AddedId => Unit): SortableListDriver = {
       val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), reorder = js.Any.fromFunction1(reorder))
       __obj.asInstanceOf[SortableListDriver]
     }
     
-    @scala.inline
-    implicit class SortableListDriverMutableBuilder[Self <: SortableListDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SortableListDriver](x: Self) {
       
-      @scala.inline
-      def setReorder(value: AddedId => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
+      inline def setReorder(value: AddedId => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
     }
   }
 }

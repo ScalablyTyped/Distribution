@@ -28,34 +28,25 @@ trait SetUserAgentOverrideRequest extends StObject {
 }
 object SetUserAgentOverrideRequest {
   
-  @scala.inline
-  def apply(userAgent: String): SetUserAgentOverrideRequest = {
+  inline def apply(userAgent: String): SetUserAgentOverrideRequest = {
     val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetUserAgentOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SetUserAgentOverrideRequestMutableBuilder[Self <: SetUserAgentOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetUserAgentOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "acceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "acceptLanguage", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentMetadata(value: UserAgentMetadata): Self = StObject.set(x, "userAgentMetadata", value.asInstanceOf[js.Any])
+    inline def setUserAgentMetadata(value: UserAgentMetadata): Self = StObject.set(x, "userAgentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentMetadataUndefined: Self = StObject.set(x, "userAgentMetadata", js.undefined)
+    inline def setUserAgentMetadataUndefined: Self = StObject.set(x, "userAgentMetadata", js.undefined)
   }
 }

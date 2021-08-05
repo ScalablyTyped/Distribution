@@ -40,8 +40,7 @@ trait ExtensionEvent extends StObject {
 }
 object ExtensionEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `extension`: PublishedExtension,
     extensionVersion: String,
     host: ExtensionHost,
@@ -54,25 +53,18 @@ object ExtensionEvent {
     __obj.asInstanceOf[ExtensionEvent]
   }
   
-  @scala.inline
-  implicit class ExtensionEventMutableBuilder[Self <: ExtensionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionEvent](x: Self) {
     
-    @scala.inline
-    def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionVersion(value: String): Self = StObject.set(x, "extensionVersion", value.asInstanceOf[js.Any])
+    inline def setExtensionVersion(value: String): Self = StObject.set(x, "extensionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: ExtensionEventUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: ExtensionEventUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
+    inline def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateType(value: ExtensionUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
+    inline def setUpdateType(value: ExtensionUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
   }
 }

@@ -42,8 +42,7 @@ object deploymentmanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Deploymentmanager
       ] = js.native
-    @scala.inline
-    def alpha_=(
+    inline def alpha_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -66,8 +65,7 @@ object deploymentmanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -90,8 +88,7 @@ object deploymentmanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager
       ] = js.native
-    @scala.inline
-    def v2beta_=(
+    inline def v2beta_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -133,8 +130,7 @@ object deploymentmanagerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -178,19 +174,13 @@ object deploymentmanagerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def deploymentmanager(options: Options): Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[Deploymentmanager]
-  @scala.inline
-  def deploymentmanager(options: typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Options): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager]
-  @scala.inline
-  def deploymentmanager(options: typings.googleapis.v2betaMod.deploymentmanagerV2beta.Options): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager]
+  inline def deploymentmanager(options: Options): Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[Deploymentmanager]
+  inline def deploymentmanager(options: typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Options): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager]
+  inline def deploymentmanager(options: typings.googleapis.v2betaMod.deploymentmanagerV2beta.Options): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager]
   
-  @scala.inline
-  def deploymentmanager_alpha(version: alpha): Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[Deploymentmanager]
+  inline def deploymentmanager_alpha(version: alpha): Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[Deploymentmanager]
   
-  @scala.inline
-  def deploymentmanager_v2(version: v2): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager]
+  inline def deploymentmanager_v2(version: v2): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager]
   
-  @scala.inline
-  def deploymentmanager_v2beta(version: v2beta): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager]
+  inline def deploymentmanager_v2beta(version: v2beta): typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("deploymentmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager]
 }

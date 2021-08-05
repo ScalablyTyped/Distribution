@@ -17,8 +17,7 @@ object usingObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](
+    inline def create[T](
       resourceFactory: js.Function0[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Unsubscribable */ js.Any) | Unit
         ],

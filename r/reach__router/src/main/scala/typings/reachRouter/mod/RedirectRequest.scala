@@ -10,16 +10,13 @@ trait RedirectRequest extends StObject {
 }
 object RedirectRequest {
   
-  @scala.inline
-  def apply(uri: String): RedirectRequest = {
+  inline def apply(uri: String): RedirectRequest = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectRequest]
   }
   
-  @scala.inline
-  implicit class RedirectRequestMutableBuilder[Self <: RedirectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectRequest](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

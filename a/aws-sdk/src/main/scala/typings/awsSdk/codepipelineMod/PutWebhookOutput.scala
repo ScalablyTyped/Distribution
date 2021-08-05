@@ -13,19 +13,15 @@ trait PutWebhookOutput extends StObject {
 }
 object PutWebhookOutput {
   
-  @scala.inline
-  def apply(): PutWebhookOutput = {
+  inline def apply(): PutWebhookOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutWebhookOutput]
   }
   
-  @scala.inline
-  implicit class PutWebhookOutputMutableBuilder[Self <: PutWebhookOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutWebhookOutput](x: Self) {
     
-    @scala.inline
-    def setWebhook(value: ListWebhookItem): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+    inline def setWebhook(value: ListWebhookItem): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
+    inline def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
   }
 }

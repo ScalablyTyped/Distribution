@@ -15,19 +15,15 @@ trait AddCardRequestInfo extends StObject {
 }
 object AddCardRequestInfo {
   
-  @scala.inline
-  def apply(cardExt: String, cardId: String): AddCardRequestInfo = {
+  inline def apply(cardExt: String, cardId: String): AddCardRequestInfo = {
     val __obj = js.Dynamic.literal(cardExt = cardExt.asInstanceOf[js.Any], cardId = cardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCardRequestInfo]
   }
   
-  @scala.inline
-  implicit class AddCardRequestInfoMutableBuilder[Self <: AddCardRequestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AddCardRequestInfo](x: Self) {
     
-    @scala.inline
-    def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
+    inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
   }
 }

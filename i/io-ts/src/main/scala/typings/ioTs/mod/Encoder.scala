@@ -10,16 +10,13 @@ trait Encoder[A, O] extends StObject {
 }
 object Encoder {
   
-  @scala.inline
-  def apply[A, O](encode: A => O): Encoder[A, O] = {
+  inline def apply[A, O](encode: A => O): Encoder[A, O] = {
     val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
     __obj.asInstanceOf[Encoder[A, O]]
   }
   
-  @scala.inline
-  implicit class EncoderMutableBuilder[Self <: Encoder[?, ?], A, O] (val x: Self & (Encoder[A, O])) extends AnyVal {
+  extension [Self <: Encoder[?, ?], A, O](x: Self & (Encoder[A, O])) {
     
-    @scala.inline
-    def setEncode(value: A => O): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: A => O): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
   }
 }

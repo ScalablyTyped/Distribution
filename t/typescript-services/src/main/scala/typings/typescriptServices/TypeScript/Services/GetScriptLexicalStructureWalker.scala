@@ -108,15 +108,15 @@ trait GetScriptLexicalStructureWalker
   
   /* private */ def createScope(): js.Any
   
-  var currentInterfaceDeclaration: js.Any
+  /* private */ var currentInterfaceDeclaration: js.Any
   
-  var currentMemberVariableDeclaration: js.Any
+  /* private */ var currentMemberVariableDeclaration: js.Any
   
-  var currentScope: js.Any
+  /* private */ var currentScope: js.Any
   
-  var currentVariableStatement: js.Any
+  /* private */ var currentVariableStatement: js.Any
   
-  var fileName: js.Any
+  /* private */ var fileName: js.Any
   
   /* private */ def getKindModifiers(modifiers: js.Any): js.Any
   
@@ -124,11 +124,11 @@ trait GetScriptLexicalStructureWalker
   
   /* private */ def getModuleNamesHelper(name: js.Any, result: js.Any): js.Any
   
-  var kindStack: js.Any
+  /* private */ var kindStack: js.Any
   
-  var nameStack: js.Any
+  /* private */ var nameStack: js.Any
   
-  var parentScopes: js.Any
+  /* private */ var parentScopes: js.Any
   
   /* private */ def popScope(): js.Any
   
@@ -138,8 +138,7 @@ trait GetScriptLexicalStructureWalker
 }
 object GetScriptLexicalStructureWalker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _position: js.Any,
     addAdditionalSpan: (js.Any, js.Any) => js.Any,
     collectItems: (js.Any, js.Any) => js.Any,
@@ -259,61 +258,42 @@ object GetScriptLexicalStructureWalker {
     __obj.asInstanceOf[GetScriptLexicalStructureWalker]
   }
   
-  @scala.inline
-  implicit class GetScriptLexicalStructureWalkerMutableBuilder[Self <: GetScriptLexicalStructureWalker] (val x: Self) extends AnyVal {
+  extension [Self <: GetScriptLexicalStructureWalker](x: Self) {
     
-    @scala.inline
-    def setAddAdditionalSpan(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "addAdditionalSpan", js.Any.fromFunction2(value))
+    inline def setAddAdditionalSpan(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "addAdditionalSpan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollectItems(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "collectItems", js.Any.fromFunction2(value))
+    inline def setCollectItems(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "collectItems", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateItem(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "createItem", js.Any.fromFunction4(value))
+    inline def setCreateItem(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "createItem", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateScope(value: () => js.Any): Self = StObject.set(x, "createScope", js.Any.fromFunction0(value))
+    inline def setCreateScope(value: () => js.Any): Self = StObject.set(x, "createScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCurrentInterfaceDeclaration(value: js.Any): Self = StObject.set(x, "currentInterfaceDeclaration", value.asInstanceOf[js.Any])
+    inline def setCurrentInterfaceDeclaration(value: js.Any): Self = StObject.set(x, "currentInterfaceDeclaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentMemberVariableDeclaration(value: js.Any): Self = StObject.set(x, "currentMemberVariableDeclaration", value.asInstanceOf[js.Any])
+    inline def setCurrentMemberVariableDeclaration(value: js.Any): Self = StObject.set(x, "currentMemberVariableDeclaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentScope(value: js.Any): Self = StObject.set(x, "currentScope", value.asInstanceOf[js.Any])
+    inline def setCurrentScope(value: js.Any): Self = StObject.set(x, "currentScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVariableStatement(value: js.Any): Self = StObject.set(x, "currentVariableStatement", value.asInstanceOf[js.Any])
+    inline def setCurrentVariableStatement(value: js.Any): Self = StObject.set(x, "currentVariableStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: js.Any): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: js.Any): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKindModifiers(value: js.Any => js.Any): Self = StObject.set(x, "getKindModifiers", js.Any.fromFunction1(value))
+    inline def setGetKindModifiers(value: js.Any => js.Any): Self = StObject.set(x, "getKindModifiers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetModuleNames(value: js.Any => js.Any): Self = StObject.set(x, "getModuleNames", js.Any.fromFunction1(value))
+    inline def setGetModuleNames(value: js.Any => js.Any): Self = StObject.set(x, "getModuleNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetModuleNamesHelper(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getModuleNamesHelper", js.Any.fromFunction2(value))
+    inline def setGetModuleNamesHelper(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getModuleNamesHelper", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKindStack(value: js.Any): Self = StObject.set(x, "kindStack", value.asInstanceOf[js.Any])
+    inline def setKindStack(value: js.Any): Self = StObject.set(x, "kindStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameStack(value: js.Any): Self = StObject.set(x, "nameStack", value.asInstanceOf[js.Any])
+    inline def setNameStack(value: js.Any): Self = StObject.set(x, "nameStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentScopes(value: js.Any): Self = StObject.set(x, "parentScopes", value.asInstanceOf[js.Any])
+    inline def setParentScopes(value: js.Any): Self = StObject.set(x, "parentScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopScope(value: () => js.Any): Self = StObject.set(x, "popScope", js.Any.fromFunction0(value))
+    inline def setPopScope(value: () => js.Any): Self = StObject.set(x, "popScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPushNewContainerScope(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "pushNewContainerScope", js.Any.fromFunction2(value))
+    inline def setPushNewContainerScope(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "pushNewContainerScope", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisitModuleDeclarationWorker(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "visitModuleDeclarationWorker", js.Any.fromFunction3(value))
+    inline def setVisitModuleDeclarationWorker(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "visitModuleDeclarationWorker", js.Any.fromFunction3(value))
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-route-fs"
-version := "v0.1.0-dt-20201002Z-b0678f"
+version := "v0.1.0-dt-20201002Z-65f6a8"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

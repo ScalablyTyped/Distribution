@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](SourceComponent: ComponentClass[T, ComponentState]): ComponentClass[T, ComponentState] = ^.asInstanceOf[js.Dynamic].apply(SourceComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[T, ComponentState]]
-  @scala.inline
-  def apply[T](SourceComponent: StatelessComponent[T]): ComponentClass[T, ComponentState] = ^.asInstanceOf[js.Dynamic].apply(SourceComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[T, ComponentState]]
+  inline def apply[T](SourceComponent: ComponentClass[T, ComponentState]): ComponentClass[T, ComponentState] = ^.asInstanceOf[js.Dynamic].apply(SourceComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[T, ComponentState]]
+  inline def apply[T](SourceComponent: StatelessComponent[T]): ComponentClass[T, ComponentState] = ^.asInstanceOf[js.Dynamic].apply(SourceComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[T, ComponentState]]
   
   @JSImport("react-timeout", JSImport.Namespace)
   @js.native
@@ -56,66 +54,48 @@ object mod {
   }
   object ReactTimeoutProps {
     
-    @scala.inline
-    def apply(): ReactTimeoutProps = {
+    inline def apply(): ReactTimeoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactTimeoutProps]
     }
     
-    @scala.inline
-    implicit class ReactTimeoutPropsMutableBuilder[Self <: ReactTimeoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactTimeoutProps](x: Self) {
       
-      @scala.inline
-      def setCancelAnimationFrame(value: /* id */ Id => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
+      inline def setCancelAnimationFrame(value: /* id */ Id => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCancelAnimationFrameUndefined: Self = StObject.set(x, "cancelAnimationFrame", js.undefined)
+      inline def setCancelAnimationFrameUndefined: Self = StObject.set(x, "cancelAnimationFrame", js.undefined)
       
-      @scala.inline
-      def setClearImmediate(value: /* id */ Id => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
+      inline def setClearImmediate(value: /* id */ Id => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearImmediateUndefined: Self = StObject.set(x, "clearImmediate", js.undefined)
+      inline def setClearImmediateUndefined: Self = StObject.set(x, "clearImmediate", js.undefined)
       
-      @scala.inline
-      def setClearInterval(value: /* id */ Id => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
+      inline def setClearInterval(value: /* id */ Id => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearIntervalUndefined: Self = StObject.set(x, "clearInterval", js.undefined)
+      inline def setClearIntervalUndefined: Self = StObject.set(x, "clearInterval", js.undefined)
       
-      @scala.inline
-      def setClearTimeout(value: /* timer */ Timer => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: /* timer */ Timer => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearTimeoutUndefined: Self = StObject.set(x, "clearTimeout", js.undefined)
+      inline def setClearTimeoutUndefined: Self = StObject.set(x, "clearTimeout", js.undefined)
       
-      @scala.inline
-      def setRequestAnimationFrame(value: /* callback */ js.Function1[/* repeated */ js.Any, Unit] => Id): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
+      inline def setRequestAnimationFrame(value: /* callback */ js.Function1[/* repeated */ js.Any, Unit] => Id): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
+      inline def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
       
-      @scala.inline
-      def setSetImmediate(value: (/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Id): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
+      inline def setSetImmediate(value: (/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Id): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetImmediateUndefined: Self = StObject.set(x, "setImmediate", js.undefined)
+      inline def setSetImmediateUndefined: Self = StObject.set(x, "setImmediate", js.undefined)
       
-      @scala.inline
-      def setSetInterval(
+      inline def setSetInterval(
         value: (/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* ms */ Double, /* repeated */ js.Any) => Id
       ): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
+      inline def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
       
-      @scala.inline
-      def setSetTimeout(
+      inline def setSetTimeout(
         value: (/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* ms */ Double, /* repeated */ js.Any) => Timer
       ): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+      inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
     }
   }
   

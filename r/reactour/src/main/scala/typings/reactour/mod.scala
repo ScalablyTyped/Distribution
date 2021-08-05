@@ -32,15 +32,13 @@ object mod {
   class default ()
     extends Component[ReactourProps, ReactourState, js.Any]
   
-  @scala.inline
-  def Arrow(props: ArrowProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Arrow")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Arrow(props: ArrowProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Arrow")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("reactour", "Badge")
   @js.native
   val Badge: FC[BadgeProps] = js.native
   
-  @scala.inline
-  def Close(props: CloseProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Close")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Close(props: CloseProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Close")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("reactour", "Controls")
   @js.native
@@ -68,41 +66,30 @@ object mod {
   }
   object ArrowProps {
     
-    @scala.inline
-    def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): ArrowProps = {
+    inline def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): ArrowProps = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[ArrowProps]
     }
     
-    @scala.inline
-    implicit class ArrowPropsMutableBuilder[Self <: ArrowProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArrowProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -113,20 +100,16 @@ object mod {
   }
   object BadgeProps {
     
-    @scala.inline
-    def apply(): BadgeProps = {
+    inline def apply(): BadgeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BadgeProps]
     }
     
-    @scala.inline
-    implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeProps](x: Self) {
       
-      @scala.inline
-      def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+      inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
     }
   }
   
@@ -138,23 +121,18 @@ object mod {
   }
   object CloseProps {
     
-    @scala.inline
-    def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): CloseProps = {
+    inline def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): CloseProps = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[CloseProps]
     }
     
-    @scala.inline
-    implicit class ClosePropsMutableBuilder[Self <: CloseProps] (val x: Self) extends AnyVal {
+    extension [Self <: CloseProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -175,44 +153,32 @@ object mod {
   }
   object DotProps {
     
-    @scala.inline
-    def apply(): DotProps = {
+    inline def apply(): DotProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotProps]
     }
     
-    @scala.inline
-    implicit class DotPropsMutableBuilder[Self <: DotProps] (val x: Self) extends AnyVal {
+    extension [Self <: DotProps](x: Self) {
       
-      @scala.inline
-      def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+      inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setShowNumber(value: Boolean): Self = StObject.set(x, "showNumber", value.asInstanceOf[js.Any])
+      inline def setShowNumber(value: Boolean): Self = StObject.set(x, "showNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNumberUndefined: Self = StObject.set(x, "showNumber", js.undefined)
+      inline def setShowNumberUndefined: Self = StObject.set(x, "showNumber", js.undefined)
     }
   }
   
@@ -231,32 +197,24 @@ object mod {
   }
   object ReactourAccessibilityOptions {
     
-    @scala.inline
-    def apply(): ReactourAccessibilityOptions = {
+    inline def apply(): ReactourAccessibilityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactourAccessibilityOptions]
     }
     
-    @scala.inline
-    implicit class ReactourAccessibilityOptionsMutableBuilder[Self <: ReactourAccessibilityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactourAccessibilityOptions](x: Self) {
       
-      @scala.inline
-      def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
+      inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
-      @scala.inline
-      def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButtonAriaLabelUndefined: Self = StObject.set(x, "closeButtonAriaLabel", js.undefined)
+      inline def setCloseButtonAriaLabelUndefined: Self = StObject.set(x, "closeButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setShowNavigationScreenReaders(value: Boolean): Self = StObject.set(x, "showNavigationScreenReaders", value.asInstanceOf[js.Any])
+      inline def setShowNavigationScreenReaders(value: Boolean): Self = StObject.set(x, "showNavigationScreenReaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNavigationScreenReadersUndefined: Self = StObject.set(x, "showNavigationScreenReaders", js.undefined)
+      inline def setShowNavigationScreenReadersUndefined: Self = StObject.set(x, "showNavigationScreenReaders", js.undefined)
     }
   }
   
@@ -460,8 +418,7 @@ object mod {
   }
   object ReactourProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isOpen: Boolean,
       onRequestClose: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit,
       steps: js.Array[ReactourStep]
@@ -470,227 +427,153 @@ object mod {
       __obj.asInstanceOf[ReactourProps]
     }
     
-    @scala.inline
-    implicit class ReactourPropsMutableBuilder[Self <: ReactourProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactourProps](x: Self) {
       
-      @scala.inline
-      def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+      inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
       
-      @scala.inline
-      def setAccessibilityOptions(value: ReactourAccessibilityOptions): Self = StObject.set(x, "accessibilityOptions", value.asInstanceOf[js.Any])
+      inline def setAccessibilityOptions(value: ReactourAccessibilityOptions): Self = StObject.set(x, "accessibilityOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityOptionsUndefined: Self = StObject.set(x, "accessibilityOptions", js.undefined)
+      inline def setAccessibilityOptionsUndefined: Self = StObject.set(x, "accessibilityOptions", js.undefined)
       
-      @scala.inline
-      def setBadgeContent(value: (/* current */ Double, /* total */ Double) => ReactNode): Self = StObject.set(x, "badgeContent", js.Any.fromFunction2(value))
+      inline def setBadgeContent(value: (/* current */ Double, /* total */ Double) => ReactNode): Self = StObject.set(x, "badgeContent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBadgeContentUndefined: Self = StObject.set(x, "badgeContent", js.undefined)
+      inline def setBadgeContentUndefined: Self = StObject.set(x, "badgeContent", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseWithMask(value: Boolean): Self = StObject.set(x, "closeWithMask", value.asInstanceOf[js.Any])
+      inline def setCloseWithMask(value: Boolean): Self = StObject.set(x, "closeWithMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseWithMaskUndefined: Self = StObject.set(x, "closeWithMask", js.undefined)
+      inline def setCloseWithMaskUndefined: Self = StObject.set(x, "closeWithMask", js.undefined)
       
-      @scala.inline
-      def setDisableDotsNavigation(value: Boolean): Self = StObject.set(x, "disableDotsNavigation", value.asInstanceOf[js.Any])
+      inline def setDisableDotsNavigation(value: Boolean): Self = StObject.set(x, "disableDotsNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableDotsNavigationUndefined: Self = StObject.set(x, "disableDotsNavigation", js.undefined)
+      inline def setDisableDotsNavigationUndefined: Self = StObject.set(x, "disableDotsNavigation", js.undefined)
       
-      @scala.inline
-      def setDisableFocusLock(value: Boolean): Self = StObject.set(x, "disableFocusLock", value.asInstanceOf[js.Any])
+      inline def setDisableFocusLock(value: Boolean): Self = StObject.set(x, "disableFocusLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFocusLockUndefined: Self = StObject.set(x, "disableFocusLock", js.undefined)
+      inline def setDisableFocusLockUndefined: Self = StObject.set(x, "disableFocusLock", js.undefined)
       
-      @scala.inline
-      def setDisableInteraction(value: Boolean): Self = StObject.set(x, "disableInteraction", value.asInstanceOf[js.Any])
+      inline def setDisableInteraction(value: Boolean): Self = StObject.set(x, "disableInteraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableInteractionUndefined: Self = StObject.set(x, "disableInteraction", js.undefined)
+      inline def setDisableInteractionUndefined: Self = StObject.set(x, "disableInteraction", js.undefined)
       
-      @scala.inline
-      def setDisableKeyboardNavigation(value: Boolean | (js.Array[esc | right | left])): Self = StObject.set(x, "disableKeyboardNavigation", value.asInstanceOf[js.Any])
+      inline def setDisableKeyboardNavigation(value: Boolean | (js.Array[esc | right | left])): Self = StObject.set(x, "disableKeyboardNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableKeyboardNavigationUndefined: Self = StObject.set(x, "disableKeyboardNavigation", js.undefined)
+      inline def setDisableKeyboardNavigationUndefined: Self = StObject.set(x, "disableKeyboardNavigation", js.undefined)
       
-      @scala.inline
-      def setDisableKeyboardNavigationVarargs(value: (esc | right | left)*): Self = StObject.set(x, "disableKeyboardNavigation", js.Array(value :_*))
+      inline def setDisableKeyboardNavigationVarargs(value: (esc | right | left)*): Self = StObject.set(x, "disableKeyboardNavigation", js.Array(value :_*))
       
-      @scala.inline
-      def setGetCurrentStep(value: /* currentStep */ Double => Unit): Self = StObject.set(x, "getCurrentStep", js.Any.fromFunction1(value))
+      inline def setGetCurrentStep(value: /* currentStep */ Double => Unit): Self = StObject.set(x, "getCurrentStep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentStepUndefined: Self = StObject.set(x, "getCurrentStep", js.undefined)
+      inline def setGetCurrentStepUndefined: Self = StObject.set(x, "getCurrentStep", js.undefined)
       
-      @scala.inline
-      def setGoToStep(value: Double): Self = StObject.set(x, "goToStep", value.asInstanceOf[js.Any])
+      inline def setGoToStep(value: Double): Self = StObject.set(x, "goToStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoToStepUndefined: Self = StObject.set(x, "goToStep", js.undefined)
+      inline def setGoToStepUndefined: Self = StObject.set(x, "goToStep", js.undefined)
       
-      @scala.inline
-      def setHighlightedMaskClassName(value: String): Self = StObject.set(x, "highlightedMaskClassName", value.asInstanceOf[js.Any])
+      inline def setHighlightedMaskClassName(value: String): Self = StObject.set(x, "highlightedMaskClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedMaskClassNameUndefined: Self = StObject.set(x, "highlightedMaskClassName", js.undefined)
+      inline def setHighlightedMaskClassNameUndefined: Self = StObject.set(x, "highlightedMaskClassName", js.undefined)
       
-      @scala.inline
-      def setInViewThreshold(value: Double): Self = StObject.set(x, "inViewThreshold", value.asInstanceOf[js.Any])
+      inline def setInViewThreshold(value: Double): Self = StObject.set(x, "inViewThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInViewThresholdUndefined: Self = StObject.set(x, "inViewThreshold", js.undefined)
+      inline def setInViewThresholdUndefined: Self = StObject.set(x, "inViewThreshold", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastStepNextButton(value: ReactNode): Self = StObject.set(x, "lastStepNextButton", value.asInstanceOf[js.Any])
+      inline def setLastStepNextButton(value: ReactNode): Self = StObject.set(x, "lastStepNextButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastStepNextButtonUndefined: Self = StObject.set(x, "lastStepNextButton", js.undefined)
+      inline def setLastStepNextButtonUndefined: Self = StObject.set(x, "lastStepNextButton", js.undefined)
       
-      @scala.inline
-      def setMaskClassName(value: String): Self = StObject.set(x, "maskClassName", value.asInstanceOf[js.Any])
+      inline def setMaskClassName(value: String): Self = StObject.set(x, "maskClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
+      inline def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
       
-      @scala.inline
-      def setMaskSpace(value: Double): Self = StObject.set(x, "maskSpace", value.asInstanceOf[js.Any])
+      inline def setMaskSpace(value: Double): Self = StObject.set(x, "maskSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskSpaceUndefined: Self = StObject.set(x, "maskSpace", js.undefined)
+      inline def setMaskSpaceUndefined: Self = StObject.set(x, "maskSpace", js.undefined)
       
-      @scala.inline
-      def setNextButton(value: ReactNode): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
+      inline def setNextButton(value: ReactNode): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
+      inline def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
       
-      @scala.inline
-      def setNextStep(value: () => Unit): Self = StObject.set(x, "nextStep", js.Any.fromFunction0(value))
+      inline def setNextStep(value: () => Unit): Self = StObject.set(x, "nextStep", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextStepUndefined: Self = StObject.set(x, "nextStep", js.undefined)
+      inline def setNextStepUndefined: Self = StObject.set(x, "nextStep", js.undefined)
       
-      @scala.inline
-      def setOnAfterOpen(value: /* target */ HTMLDivElement => Unit): Self = StObject.set(x, "onAfterOpen", js.Any.fromFunction1(value))
+      inline def setOnAfterOpen(value: /* target */ HTMLDivElement => Unit): Self = StObject.set(x, "onAfterOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAfterOpenUndefined: Self = StObject.set(x, "onAfterOpen", js.undefined)
+      inline def setOnAfterOpenUndefined: Self = StObject.set(x, "onAfterOpen", js.undefined)
       
-      @scala.inline
-      def setOnBeforeClose(value: /* target */ HTMLDivElement => Unit): Self = StObject.set(x, "onBeforeClose", js.Any.fromFunction1(value))
+      inline def setOnBeforeClose(value: /* target */ HTMLDivElement => Unit): Self = StObject.set(x, "onBeforeClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeCloseUndefined: Self = StObject.set(x, "onBeforeClose", js.undefined)
+      inline def setOnBeforeCloseUndefined: Self = StObject.set(x, "onBeforeClose", js.undefined)
       
-      @scala.inline
-      def setOnRequestClose(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
+      inline def setOnRequestClose(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrevButton(value: ReactNode): Self = StObject.set(x, "prevButton", value.asInstanceOf[js.Any])
+      inline def setPrevButton(value: ReactNode): Self = StObject.set(x, "prevButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevButtonUndefined: Self = StObject.set(x, "prevButton", js.undefined)
+      inline def setPrevButtonUndefined: Self = StObject.set(x, "prevButton", js.undefined)
       
-      @scala.inline
-      def setPrevStep(value: () => Unit): Self = StObject.set(x, "prevStep", js.Any.fromFunction0(value))
+      inline def setPrevStep(value: () => Unit): Self = StObject.set(x, "prevStep", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrevStepUndefined: Self = StObject.set(x, "prevStep", js.undefined)
+      inline def setPrevStepUndefined: Self = StObject.set(x, "prevStep", js.undefined)
       
-      @scala.inline
-      def setRounded(value: Double): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+      inline def setRounded(value: Double): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+      inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
       
-      @scala.inline
-      def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+      inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
+      inline def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
       
-      @scala.inline
-      def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+      inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
+      inline def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
       
-      @scala.inline
-      def setShowButtons(value: Boolean): Self = StObject.set(x, "showButtons", value.asInstanceOf[js.Any])
+      inline def setShowButtons(value: Boolean): Self = StObject.set(x, "showButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowButtonsUndefined: Self = StObject.set(x, "showButtons", js.undefined)
+      inline def setShowButtonsUndefined: Self = StObject.set(x, "showButtons", js.undefined)
       
-      @scala.inline
-      def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+      inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+      inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
       
-      @scala.inline
-      def setShowNavigation(value: Boolean): Self = StObject.set(x, "showNavigation", value.asInstanceOf[js.Any])
+      inline def setShowNavigation(value: Boolean): Self = StObject.set(x, "showNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNavigationNumber(value: Boolean): Self = StObject.set(x, "showNavigationNumber", value.asInstanceOf[js.Any])
+      inline def setShowNavigationNumber(value: Boolean): Self = StObject.set(x, "showNavigationNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNavigationNumberUndefined: Self = StObject.set(x, "showNavigationNumber", js.undefined)
+      inline def setShowNavigationNumberUndefined: Self = StObject.set(x, "showNavigationNumber", js.undefined)
       
-      @scala.inline
-      def setShowNavigationUndefined: Self = StObject.set(x, "showNavigation", js.undefined)
+      inline def setShowNavigationUndefined: Self = StObject.set(x, "showNavigation", js.undefined)
       
-      @scala.inline
-      def setShowNumber(value: Boolean): Self = StObject.set(x, "showNumber", value.asInstanceOf[js.Any])
+      inline def setShowNumber(value: Boolean): Self = StObject.set(x, "showNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNumberUndefined: Self = StObject.set(x, "showNumber", js.undefined)
+      inline def setShowNumberUndefined: Self = StObject.set(x, "showNumber", js.undefined)
       
-      @scala.inline
-      def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+      inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
-      @scala.inline
-      def setSteps(value: js.Array[ReactourStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[ReactourStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: ReactourStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: ReactourStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
+      inline def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
+      inline def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -730,8 +613,7 @@ object mod {
   }
   object ReactourState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       current: Double,
       focusUnlocked: Boolean,
@@ -749,68 +631,47 @@ object mod {
       __obj.asInstanceOf[ReactourState]
     }
     
-    @scala.inline
-    implicit class ReactourStateMutableBuilder[Self <: ReactourState] (val x: Self) extends AnyVal {
+    extension [Self <: ReactourState](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUnlocked(value: Boolean): Self = StObject.set(x, "focusUnlocked", value.asInstanceOf[js.Any])
+      inline def setFocusUnlocked(value: Boolean): Self = StObject.set(x, "focusUnlocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperHeight(value: Double): Self = StObject.set(x, "helperHeight", value.asInstanceOf[js.Any])
+      inline def setHelperHeight(value: Double): Self = StObject.set(x, "helperHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperHeightUndefined: Self = StObject.set(x, "helperHeight", js.undefined)
+      inline def setHelperHeightUndefined: Self = StObject.set(x, "helperHeight", js.undefined)
       
-      @scala.inline
-      def setHelperPosition(value: ReactourStepPosition): Self = StObject.set(x, "helperPosition", value.asInstanceOf[js.Any])
+      inline def setHelperPosition(value: ReactourStepPosition): Self = StObject.set(x, "helperPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperPositionUndefined: Self = StObject.set(x, "helperPosition", js.undefined)
+      inline def setHelperPositionUndefined: Self = StObject.set(x, "helperPosition", js.undefined)
       
-      @scala.inline
-      def setHelperWidth(value: Double): Self = StObject.set(x, "helperWidth", value.asInstanceOf[js.Any])
+      inline def setHelperWidth(value: Double): Self = StObject.set(x, "helperWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperWidthUndefined: Self = StObject.set(x, "helperWidth", js.undefined)
+      inline def setHelperWidthUndefined: Self = StObject.set(x, "helperWidth", js.undefined)
       
-      @scala.inline
-      def setInDOM(value: Boolean): Self = StObject.set(x, "inDOM", value.asInstanceOf[js.Any])
+      inline def setInDOM(value: Boolean): Self = StObject.set(x, "inDOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserver(value: MutationObserver): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
+      inline def setObserver(value: MutationObserver): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserverNull: Self = StObject.set(x, "observer", null)
+      inline def setObserverNull: Self = StObject.set(x, "observer", null)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -855,59 +716,42 @@ object mod {
   }
   object ReactourStep {
     
-    @scala.inline
-    def apply(): ReactourStep = {
+    inline def apply(): ReactourStep = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactourStep]
     }
     
-    @scala.inline
-    implicit class ReactourStepMutableBuilder[Self <: ReactourStep] (val x: Self) extends AnyVal {
+    extension [Self <: ReactourStep](x: Self) {
       
-      @scala.inline
-      def setAction(value: /* domNode */ js.Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* domNode */ js.Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setContent(value: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentFunction1(value: /* args */ ReactourStepContentArgs => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      inline def setContentFunction1(value: /* args */ ReactourStepContentArgs => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setNavDotAriaLabel(value: String): Self = StObject.set(x, "navDotAriaLabel", value.asInstanceOf[js.Any])
+      inline def setNavDotAriaLabel(value: String): Self = StObject.set(x, "navDotAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavDotAriaLabelUndefined: Self = StObject.set(x, "navDotAriaLabel", js.undefined)
+      inline def setNavDotAriaLabelUndefined: Self = StObject.set(x, "navDotAriaLabel", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ReactourStepPosition | (js.Tuple2[Double, Double])): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ReactourStepPosition | (js.Tuple2[Double, Double])): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setStepInteraction(value: Boolean): Self = StObject.set(x, "stepInteraction", value.asInstanceOf[js.Any])
+      inline def setStepInteraction(value: Boolean): Self = StObject.set(x, "stepInteraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepInteractionUndefined: Self = StObject.set(x, "stepInteraction", js.undefined)
+      inline def setStepInteractionUndefined: Self = StObject.set(x, "stepInteraction", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -923,26 +767,20 @@ object mod {
   }
   object ReactourStepContentArgs {
     
-    @scala.inline
-    def apply(close: () => Unit, goTo: Double => Unit, inDOM: Boolean, step: Double): ReactourStepContentArgs = {
+    inline def apply(close: () => Unit, goTo: Double => Unit, inDOM: Boolean, step: Double): ReactourStepContentArgs = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), goTo = js.Any.fromFunction1(goTo), inDOM = inDOM.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactourStepContentArgs]
     }
     
-    @scala.inline
-    implicit class ReactourStepContentArgsMutableBuilder[Self <: ReactourStepContentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReactourStepContentArgs](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGoTo(value: Double => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
+      inline def setGoTo(value: Double => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInDOM(value: Boolean): Self = StObject.set(x, "inDOM", value.asInstanceOf[js.Any])
+      inline def setInDOM(value: Boolean): Self = StObject.set(x, "inDOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
   
@@ -956,20 +794,15 @@ object mod {
   trait ReactourStepPosition extends StObject
   object ReactourStepPosition {
     
-    @scala.inline
-    def bottom: typings.reactour.reactourStrings.bottom = "bottom".asInstanceOf[typings.reactour.reactourStrings.bottom]
+    inline def bottom: typings.reactour.reactourStrings.bottom = "bottom".asInstanceOf[typings.reactour.reactourStrings.bottom]
     
-    @scala.inline
-    def center: typings.reactour.reactourStrings.center = "center".asInstanceOf[typings.reactour.reactourStrings.center]
+    inline def center: typings.reactour.reactourStrings.center = "center".asInstanceOf[typings.reactour.reactourStrings.center]
     
-    @scala.inline
-    def left: typings.reactour.reactourStrings.left = "left".asInstanceOf[typings.reactour.reactourStrings.left]
+    inline def left: typings.reactour.reactourStrings.left = "left".asInstanceOf[typings.reactour.reactourStrings.left]
     
-    @scala.inline
-    def right: typings.reactour.reactourStrings.right = "right".asInstanceOf[typings.reactour.reactourStrings.right]
+    inline def right: typings.reactour.reactourStrings.right = "right".asInstanceOf[typings.reactour.reactourStrings.right]
     
-    @scala.inline
-    def top: typings.reactour.reactourStrings.top = "top".asInstanceOf[typings.reactour.reactourStrings.top]
+    inline def top: typings.reactour.reactourStrings.top = "top".asInstanceOf[typings.reactour.reactourStrings.top]
   }
   
   type Tour = Component[ReactourProps, ReactourState, js.Any]

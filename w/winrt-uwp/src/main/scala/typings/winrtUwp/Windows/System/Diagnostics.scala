@@ -19,17 +19,14 @@ object Diagnostics {
   }
   object ProcessCpuUsage {
     
-    @scala.inline
-    def apply(getReport: () => ProcessCpuUsageReport): ProcessCpuUsage = {
+    inline def apply(getReport: () => ProcessCpuUsageReport): ProcessCpuUsage = {
       val __obj = js.Dynamic.literal(getReport = js.Any.fromFunction0(getReport))
       __obj.asInstanceOf[ProcessCpuUsage]
     }
     
-    @scala.inline
-    implicit class ProcessCpuUsageMutableBuilder[Self <: ProcessCpuUsage] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessCpuUsage](x: Self) {
       
-      @scala.inline
-      def setGetReport(value: () => ProcessCpuUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
+      inline def setGetReport(value: () => ProcessCpuUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
     }
   }
   
@@ -44,20 +41,16 @@ object Diagnostics {
   }
   object ProcessCpuUsageReport {
     
-    @scala.inline
-    def apply(kernelTime: Double, userTime: Double): ProcessCpuUsageReport = {
+    inline def apply(kernelTime: Double, userTime: Double): ProcessCpuUsageReport = {
       val __obj = js.Dynamic.literal(kernelTime = kernelTime.asInstanceOf[js.Any], userTime = userTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessCpuUsageReport]
     }
     
-    @scala.inline
-    implicit class ProcessCpuUsageReportMutableBuilder[Self <: ProcessCpuUsageReport] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessCpuUsageReport](x: Self) {
       
-      @scala.inline
-      def setKernelTime(value: Double): Self = StObject.set(x, "kernelTime", value.asInstanceOf[js.Any])
+      inline def setKernelTime(value: Double): Self = StObject.set(x, "kernelTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserTime(value: Double): Self = StObject.set(x, "userTime", value.asInstanceOf[js.Any])
+      inline def setUserTime(value: Double): Self = StObject.set(x, "userTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,8 +80,7 @@ object Diagnostics {
   }
   object ProcessDiagnosticInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cpuUsage: ProcessCpuUsage,
       diskUsage: ProcessDiskUsage,
       executableFileName: String,
@@ -101,29 +93,21 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessDiagnosticInfo]
     }
     
-    @scala.inline
-    implicit class ProcessDiagnosticInfoMutableBuilder[Self <: ProcessDiagnosticInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessDiagnosticInfo](x: Self) {
       
-      @scala.inline
-      def setCpuUsage(value: ProcessCpuUsage): Self = StObject.set(x, "cpuUsage", value.asInstanceOf[js.Any])
+      inline def setCpuUsage(value: ProcessCpuUsage): Self = StObject.set(x, "cpuUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskUsage(value: ProcessDiskUsage): Self = StObject.set(x, "diskUsage", value.asInstanceOf[js.Any])
+      inline def setDiskUsage(value: ProcessDiskUsage): Self = StObject.set(x, "diskUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutableFileName(value: String): Self = StObject.set(x, "executableFileName", value.asInstanceOf[js.Any])
+      inline def setExecutableFileName(value: String): Self = StObject.set(x, "executableFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUsage(value: ProcessMemoryUsage): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
+      inline def setMemoryUsage(value: ProcessMemoryUsage): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: ProcessDiagnosticInfo): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ProcessDiagnosticInfo): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessStartTime(value: Date): Self = StObject.set(x, "processStartTime", value.asInstanceOf[js.Any])
+      inline def setProcessStartTime(value: Date): Self = StObject.set(x, "processStartTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,17 +122,14 @@ object Diagnostics {
   }
   object ProcessDiskUsage {
     
-    @scala.inline
-    def apply(getReport: () => ProcessDiskUsageReport): ProcessDiskUsage = {
+    inline def apply(getReport: () => ProcessDiskUsageReport): ProcessDiskUsage = {
       val __obj = js.Dynamic.literal(getReport = js.Any.fromFunction0(getReport))
       __obj.asInstanceOf[ProcessDiskUsage]
     }
     
-    @scala.inline
-    implicit class ProcessDiskUsageMutableBuilder[Self <: ProcessDiskUsage] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessDiskUsage](x: Self) {
       
-      @scala.inline
-      def setGetReport(value: () => ProcessDiskUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
+      inline def setGetReport(value: () => ProcessDiskUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
     }
   }
   
@@ -175,8 +156,7 @@ object Diagnostics {
   }
   object ProcessDiskUsageReport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesReadCount: Double,
       bytesWrittenCount: Double,
       otherBytesCount: Double,
@@ -188,26 +168,19 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessDiskUsageReport]
     }
     
-    @scala.inline
-    implicit class ProcessDiskUsageReportMutableBuilder[Self <: ProcessDiskUsageReport] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessDiskUsageReport](x: Self) {
       
-      @scala.inline
-      def setBytesReadCount(value: Double): Self = StObject.set(x, "bytesReadCount", value.asInstanceOf[js.Any])
+      inline def setBytesReadCount(value: Double): Self = StObject.set(x, "bytesReadCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesWrittenCount(value: Double): Self = StObject.set(x, "bytesWrittenCount", value.asInstanceOf[js.Any])
+      inline def setBytesWrittenCount(value: Double): Self = StObject.set(x, "bytesWrittenCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherBytesCount(value: Double): Self = StObject.set(x, "otherBytesCount", value.asInstanceOf[js.Any])
+      inline def setOtherBytesCount(value: Double): Self = StObject.set(x, "otherBytesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherOperationCount(value: Double): Self = StObject.set(x, "otherOperationCount", value.asInstanceOf[js.Any])
+      inline def setOtherOperationCount(value: Double): Self = StObject.set(x, "otherOperationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOperationCount(value: Double): Self = StObject.set(x, "readOperationCount", value.asInstanceOf[js.Any])
+      inline def setReadOperationCount(value: Double): Self = StObject.set(x, "readOperationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteOperationCount(value: Double): Self = StObject.set(x, "writeOperationCount", value.asInstanceOf[js.Any])
+      inline def setWriteOperationCount(value: Double): Self = StObject.set(x, "writeOperationCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,17 +195,14 @@ object Diagnostics {
   }
   object ProcessMemoryUsage {
     
-    @scala.inline
-    def apply(getReport: () => ProcessMemoryUsageReport): ProcessMemoryUsage = {
+    inline def apply(getReport: () => ProcessMemoryUsageReport): ProcessMemoryUsage = {
       val __obj = js.Dynamic.literal(getReport = js.Any.fromFunction0(getReport))
       __obj.asInstanceOf[ProcessMemoryUsage]
     }
     
-    @scala.inline
-    implicit class ProcessMemoryUsageMutableBuilder[Self <: ProcessMemoryUsage] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessMemoryUsage](x: Self) {
       
-      @scala.inline
-      def setGetReport(value: () => ProcessMemoryUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
+      inline def setGetReport(value: () => ProcessMemoryUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
     }
   }
   
@@ -277,8 +247,7 @@ object Diagnostics {
   }
   object ProcessMemoryUsageReport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       nonPagedPoolSizeInBytes: Double,
       pageFaultCount: Double,
       pageFileSizeInBytes: Double,
@@ -296,44 +265,31 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessMemoryUsageReport]
     }
     
-    @scala.inline
-    implicit class ProcessMemoryUsageReportMutableBuilder[Self <: ProcessMemoryUsageReport] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessMemoryUsageReport](x: Self) {
       
-      @scala.inline
-      def setNonPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "nonPagedPoolSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setNonPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "nonPagedPoolSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageFaultCount(value: Double): Self = StObject.set(x, "pageFaultCount", value.asInstanceOf[js.Any])
+      inline def setPageFaultCount(value: Double): Self = StObject.set(x, "pageFaultCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageFileSizeInBytes(value: Double): Self = StObject.set(x, "pageFileSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setPageFileSizeInBytes(value: Double): Self = StObject.set(x, "pageFileSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "pagedPoolSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "pagedPoolSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakNonPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "peakNonPagedPoolSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setPeakNonPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "peakNonPagedPoolSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakPageFileSizeInBytes(value: Double): Self = StObject.set(x, "peakPageFileSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setPeakPageFileSizeInBytes(value: Double): Self = StObject.set(x, "peakPageFileSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "peakPagedPoolSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setPeakPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "peakPagedPoolSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakVirtualMemorySizeInBytes(value: Double): Self = StObject.set(x, "peakVirtualMemorySizeInBytes", value.asInstanceOf[js.Any])
+      inline def setPeakVirtualMemorySizeInBytes(value: Double): Self = StObject.set(x, "peakVirtualMemorySizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakWorkingSetSizeInBytes(value: Double): Self = StObject.set(x, "peakWorkingSetSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setPeakWorkingSetSizeInBytes(value: Double): Self = StObject.set(x, "peakWorkingSetSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivatePageCount(value: Double): Self = StObject.set(x, "privatePageCount", value.asInstanceOf[js.Any])
+      inline def setPrivatePageCount(value: Double): Self = StObject.set(x, "privatePageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualMemorySizeInBytes(value: Double): Self = StObject.set(x, "virtualMemorySizeInBytes", value.asInstanceOf[js.Any])
+      inline def setVirtualMemorySizeInBytes(value: Double): Self = StObject.set(x, "virtualMemorySizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkingSetSizeInBytes(value: Double): Self = StObject.set(x, "workingSetSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setWorkingSetSizeInBytes(value: Double): Self = StObject.set(x, "workingSetSizeInBytes", value.asInstanceOf[js.Any])
     }
   }
 }

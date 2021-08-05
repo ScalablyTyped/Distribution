@@ -18,25 +18,19 @@ trait GrantConstraints extends StObject {
 }
 object GrantConstraints {
   
-  @scala.inline
-  def apply(): GrantConstraints = {
+  inline def apply(): GrantConstraints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrantConstraints]
   }
   
-  @scala.inline
-  implicit class GrantConstraintsMutableBuilder[Self <: GrantConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: GrantConstraints](x: Self) {
     
-    @scala.inline
-    def setEncryptionContextEquals(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
+    inline def setEncryptionContextEquals(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
+    inline def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
     
-    @scala.inline
-    def setEncryptionContextSubset(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
+    inline def setEncryptionContextSubset(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
+    inline def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
   }
 }

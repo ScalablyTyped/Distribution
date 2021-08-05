@@ -23,19 +23,15 @@ trait TimeWithTimezone extends StObject {
 }
 object TimeWithTimezone {
   
-  @scala.inline
-  def apply(TimeInTZ: Time, Timezone: Double): TimeWithTimezone = {
+  inline def apply(TimeInTZ: Time, Timezone: Double): TimeWithTimezone = {
     val __obj = js.Dynamic.literal(TimeInTZ = TimeInTZ.asInstanceOf[js.Any], Timezone = Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeWithTimezone]
   }
   
-  @scala.inline
-  implicit class TimeWithTimezoneMutableBuilder[Self <: TimeWithTimezone] (val x: Self) extends AnyVal {
+  extension [Self <: TimeWithTimezone](x: Self) {
     
-    @scala.inline
-    def setTimeInTZ(value: Time): Self = StObject.set(x, "TimeInTZ", value.asInstanceOf[js.Any])
+    inline def setTimeInTZ(value: Time): Self = StObject.set(x, "TimeInTZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: Double): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: Double): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
   }
 }

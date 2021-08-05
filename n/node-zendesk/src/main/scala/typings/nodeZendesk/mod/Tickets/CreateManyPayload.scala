@@ -10,19 +10,15 @@ trait CreateManyPayload extends StObject {
 }
 object CreateManyPayload {
   
-  @scala.inline
-  def apply(tickets: js.Array[CreateModel]): CreateManyPayload = {
+  inline def apply(tickets: js.Array[CreateModel]): CreateManyPayload = {
     val __obj = js.Dynamic.literal(tickets = tickets.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateManyPayload]
   }
   
-  @scala.inline
-  implicit class CreateManyPayloadMutableBuilder[Self <: CreateManyPayload] (val x: Self) extends AnyVal {
+  extension [Self <: CreateManyPayload](x: Self) {
     
-    @scala.inline
-    def setTickets(value: js.Array[CreateModel]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
+    inline def setTickets(value: js.Array[CreateModel]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketsVarargs(value: CreateModel*): Self = StObject.set(x, "tickets", js.Array(value :_*))
+    inline def setTicketsVarargs(value: CreateModel*): Self = StObject.set(x, "tickets", js.Array(value :_*))
   }
 }

@@ -79,8 +79,7 @@ trait ArmRelocator extends StObject {
 }
 object ArmRelocator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     eob: Boolean,
     eoi: Boolean,
@@ -96,43 +95,30 @@ object ArmRelocator {
     __obj.asInstanceOf[ArmRelocator]
   }
   
-  @scala.inline
-  implicit class ArmRelocatorMutableBuilder[Self <: ArmRelocator] (val x: Self) extends AnyVal {
+  extension [Self <: ArmRelocator](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEob(value: Boolean): Self = StObject.set(x, "eob", value.asInstanceOf[js.Any])
+    inline def setEob(value: Boolean): Self = StObject.set(x, "eob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEoi(value: Boolean): Self = StObject.set(x, "eoi", value.asInstanceOf[js.Any])
+    inline def setEoi(value: Boolean): Self = StObject.set(x, "eoi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: Instruction): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Instruction): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputNull: Self = StObject.set(x, "input", null)
+    inline def setInputNull: Self = StObject.set(x, "input", null)
     
-    @scala.inline
-    def setPeekNextWriteInsn(value: () => Instruction | Null): Self = StObject.set(x, "peekNextWriteInsn", js.Any.fromFunction0(value))
+    inline def setPeekNextWriteInsn(value: () => Instruction | Null): Self = StObject.set(x, "peekNextWriteInsn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeekNextWriteSource(value: () => NativePointer): Self = StObject.set(x, "peekNextWriteSource", js.Any.fromFunction0(value))
+    inline def setPeekNextWriteSource(value: () => NativePointer): Self = StObject.set(x, "peekNextWriteSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadOne(value: () => Double): Self = StObject.set(x, "readOne", js.Any.fromFunction0(value))
+    inline def setReadOne(value: () => Double): Self = StObject.set(x, "readOne", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: (NativePointerValue, ArmWriter) => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
+    inline def setReset(value: (NativePointerValue, ArmWriter) => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSkipOne(value: () => Unit): Self = StObject.set(x, "skipOne", js.Any.fromFunction0(value))
+    inline def setSkipOne(value: () => Unit): Self = StObject.set(x, "skipOne", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteAll(value: () => Unit): Self = StObject.set(x, "writeAll", js.Any.fromFunction0(value))
+    inline def setWriteAll(value: () => Unit): Self = StObject.set(x, "writeAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteOne(value: () => Boolean): Self = StObject.set(x, "writeOne", js.Any.fromFunction0(value))
+    inline def setWriteOne(value: () => Boolean): Self = StObject.set(x, "writeOne", js.Any.fromFunction0(value))
   }
 }

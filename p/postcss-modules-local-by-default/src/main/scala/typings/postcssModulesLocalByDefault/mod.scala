@@ -25,26 +25,20 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMode(value: global | local | pure): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: global | local | pure): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setRewriteUrl(value: (/* global */ Boolean, /* url */ String) => String): Self = StObject.set(x, "rewriteUrl", js.Any.fromFunction2(value))
+      inline def setRewriteUrl(value: (/* global */ Boolean, /* url */ String) => String): Self = StObject.set(x, "rewriteUrl", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRewriteUrlUndefined: Self = StObject.set(x, "rewriteUrl", js.undefined)
+      inline def setRewriteUrlUndefined: Self = StObject.set(x, "rewriteUrl", js.undefined)
     }
   }
   

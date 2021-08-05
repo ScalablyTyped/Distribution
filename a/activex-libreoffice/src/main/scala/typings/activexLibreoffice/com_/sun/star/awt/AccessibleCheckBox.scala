@@ -36,8 +36,7 @@ trait AccessibleCheckBox
      with XAccessibleValue
 object AccessibleCheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     AccessibleChildCount: Double,
     AccessibleDescription: String,

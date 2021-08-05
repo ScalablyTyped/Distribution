@@ -19,34 +19,25 @@ trait WindowsInformationProtectionAppLearningSummary
 }
 object WindowsInformationProtectionAppLearningSummary {
   
-  @scala.inline
-  def apply(): WindowsInformationProtectionAppLearningSummary = {
+  inline def apply(): WindowsInformationProtectionAppLearningSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtectionAppLearningSummary]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionAppLearningSummaryMutableBuilder[Self <: WindowsInformationProtectionAppLearningSummary] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtectionAppLearningSummary](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: NullableOption[String]): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: NullableOption[String]): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameNull: Self = StObject.set(x, "applicationName", null)
+    inline def setApplicationNameNull: Self = StObject.set(x, "applicationName", null)
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setApplicationType(value: ApplicationType): Self = StObject.set(x, "applicationType", value.asInstanceOf[js.Any])
+    inline def setApplicationType(value: ApplicationType): Self = StObject.set(x, "applicationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationTypeUndefined: Self = StObject.set(x, "applicationType", js.undefined)
+    inline def setApplicationTypeUndefined: Self = StObject.set(x, "applicationType", js.undefined)
     
-    @scala.inline
-    def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
+    inline def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceCountUndefined: Self = StObject.set(x, "deviceCount", js.undefined)
+    inline def setDeviceCountUndefined: Self = StObject.set(x, "deviceCount", js.undefined)
   }
 }

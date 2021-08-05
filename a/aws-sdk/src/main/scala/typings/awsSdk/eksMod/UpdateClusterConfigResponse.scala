@@ -10,19 +10,15 @@ trait UpdateClusterConfigResponse extends StObject {
 }
 object UpdateClusterConfigResponse {
   
-  @scala.inline
-  def apply(): UpdateClusterConfigResponse = {
+  inline def apply(): UpdateClusterConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateClusterConfigResponse]
   }
   
-  @scala.inline
-  implicit class UpdateClusterConfigResponseMutableBuilder[Self <: UpdateClusterConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateClusterConfigResponse](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

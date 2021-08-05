@@ -18,25 +18,19 @@ trait TextEditOptions extends StObject {
 }
 object TextEditOptions {
   
-  @scala.inline
-  def apply(): TextEditOptions = {
+  inline def apply(): TextEditOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextEditOptions]
   }
   
-  @scala.inline
-  implicit class TextEditOptionsMutableBuilder[Self <: TextEditOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditOptions](x: Self) {
     
-    @scala.inline
-    def setNormalizeLineEndings(value: Boolean): Self = StObject.set(x, "normalizeLineEndings", value.asInstanceOf[js.Any])
+    inline def setNormalizeLineEndings(value: Boolean): Self = StObject.set(x, "normalizeLineEndings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeLineEndingsUndefined: Self = StObject.set(x, "normalizeLineEndings", js.undefined)
+    inline def setNormalizeLineEndingsUndefined: Self = StObject.set(x, "normalizeLineEndings", js.undefined)
     
-    @scala.inline
-    def setUndo(value: skip): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    inline def setUndo(value: skip): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
+    inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
   }
 }

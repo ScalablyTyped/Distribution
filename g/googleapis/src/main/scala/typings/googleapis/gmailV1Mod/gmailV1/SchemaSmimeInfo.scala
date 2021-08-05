@@ -53,55 +53,39 @@ trait SchemaSmimeInfo extends StObject {
 }
 object SchemaSmimeInfo {
   
-  @scala.inline
-  def apply(): SchemaSmimeInfo = {
+  inline def apply(): SchemaSmimeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSmimeInfo]
   }
   
-  @scala.inline
-  implicit class SchemaSmimeInfoMutableBuilder[Self <: SchemaSmimeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSmimeInfo](x: Self) {
     
-    @scala.inline
-    def setEncryptedKeyPassword(value: String): Self = StObject.set(x, "encryptedKeyPassword", value.asInstanceOf[js.Any])
+    inline def setEncryptedKeyPassword(value: String): Self = StObject.set(x, "encryptedKeyPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedKeyPasswordUndefined: Self = StObject.set(x, "encryptedKeyPassword", js.undefined)
+    inline def setEncryptedKeyPasswordUndefined: Self = StObject.set(x, "encryptedKeyPassword", js.undefined)
     
-    @scala.inline
-    def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+    inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setIssuerCn(value: String): Self = StObject.set(x, "issuerCn", value.asInstanceOf[js.Any])
+    inline def setIssuerCn(value: String): Self = StObject.set(x, "issuerCn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerCnUndefined: Self = StObject.set(x, "issuerCn", js.undefined)
+    inline def setIssuerCnUndefined: Self = StObject.set(x, "issuerCn", js.undefined)
     
-    @scala.inline
-    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
+    inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
+    inline def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
     
-    @scala.inline
-    def setPkcs12(value: String): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
+    inline def setPkcs12(value: String): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPkcs12Undefined: Self = StObject.set(x, "pkcs12", js.undefined)
+    inline def setPkcs12Undefined: Self = StObject.set(x, "pkcs12", js.undefined)
   }
 }

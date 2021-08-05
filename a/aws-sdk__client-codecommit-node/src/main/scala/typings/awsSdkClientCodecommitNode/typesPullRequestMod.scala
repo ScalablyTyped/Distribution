@@ -61,71 +61,50 @@ object typesPullRequestMod {
   }
   object PullRequest {
     
-    @scala.inline
-    def apply(): PullRequest = {
+    inline def apply(): PullRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PullRequest]
     }
     
-    @scala.inline
-    implicit class PullRequestMutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequest](x: Self) {
       
-      @scala.inline
-      def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
+      inline def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
+      inline def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
       
-      @scala.inline
-      def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+      inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+      inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLastActivityDate(value: Date | String | Double): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
+      inline def setLastActivityDate(value: Date | String | Double): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
+      inline def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
       
-      @scala.inline
-      def setPullRequestId(value: String): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+      inline def setPullRequestId(value: String): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
+      inline def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
       
-      @scala.inline
-      def setPullRequestStatus(value: OPEN | CLOSED | String): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
+      inline def setPullRequestStatus(value: OPEN | CLOSED | String): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
+      inline def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
       
-      @scala.inline
-      def setPullRequestTargets(value: js.Array[PullRequestTarget] | Iterable[PullRequestTarget]): Self = StObject.set(x, "pullRequestTargets", value.asInstanceOf[js.Any])
+      inline def setPullRequestTargets(value: js.Array[PullRequestTarget] | Iterable[PullRequestTarget]): Self = StObject.set(x, "pullRequestTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
+      inline def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
       
-      @scala.inline
-      def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
+      inline def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -153,35 +132,26 @@ object typesPullRequestMod {
   }
   object UnmarshalledPullRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledPullRequest = {
+    inline def apply(): UnmarshalledPullRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledPullRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledPullRequestMutableBuilder[Self <: UnmarshalledPullRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledPullRequest](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      @scala.inline
-      def setLastActivityDate(value: Date): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
+      inline def setLastActivityDate(value: Date): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
+      inline def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
       
-      @scala.inline
-      def setPullRequestTargets(value: js.Array[UnmarshalledPullRequestTarget]): Self = StObject.set(x, "pullRequestTargets", value.asInstanceOf[js.Any])
+      inline def setPullRequestTargets(value: js.Array[UnmarshalledPullRequestTarget]): Self = StObject.set(x, "pullRequestTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
+      inline def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
       
-      @scala.inline
-      def setPullRequestTargetsVarargs(value: UnmarshalledPullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
+      inline def setPullRequestTargetsVarargs(value: UnmarshalledPullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
     }
   }
 }

@@ -18,28 +18,21 @@ trait DescribeOrganizationConfigRulesResponse extends StObject {
 }
 object DescribeOrganizationConfigRulesResponse {
   
-  @scala.inline
-  def apply(): DescribeOrganizationConfigRulesResponse = {
+  inline def apply(): DescribeOrganizationConfigRulesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrganizationConfigRulesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConfigRulesResponseMutableBuilder[Self <: DescribeOrganizationConfigRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConfigRulesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRules(value: OrganizationConfigRules): Self = StObject.set(x, "OrganizationConfigRules", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfigRules(value: OrganizationConfigRules): Self = StObject.set(x, "OrganizationConfigRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConfigRulesUndefined: Self = StObject.set(x, "OrganizationConfigRules", js.undefined)
+    inline def setOrganizationConfigRulesUndefined: Self = StObject.set(x, "OrganizationConfigRules", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRulesVarargs(value: OrganizationConfigRule*): Self = StObject.set(x, "OrganizationConfigRules", js.Array(value :_*))
+    inline def setOrganizationConfigRulesVarargs(value: OrganizationConfigRule*): Self = StObject.set(x, "OrganizationConfigRules", js.Array(value :_*))
   }
 }

@@ -33,6 +33,5 @@ object FormattingOptions {
   @JSGlobal("FormattingOptions.defaultOptions")
   @js.native
   def defaultOptions: typings.typescriptServices.FormattingOptions = js.native
-  @scala.inline
-  def defaultOptions_=(x: typings.typescriptServices.FormattingOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  inline def defaultOptions_=(x: typings.typescriptServices.FormattingOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
 }

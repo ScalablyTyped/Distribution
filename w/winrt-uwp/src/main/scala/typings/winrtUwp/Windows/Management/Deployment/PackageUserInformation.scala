@@ -15,19 +15,15 @@ trait PackageUserInformation extends StObject {
 }
 object PackageUserInformation {
   
-  @scala.inline
-  def apply(installState: PackageInstallState, userSecurityId: String): PackageUserInformation = {
+  inline def apply(installState: PackageInstallState, userSecurityId: String): PackageUserInformation = {
     val __obj = js.Dynamic.literal(installState = installState.asInstanceOf[js.Any], userSecurityId = userSecurityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageUserInformation]
   }
   
-  @scala.inline
-  implicit class PackageUserInformationMutableBuilder[Self <: PackageUserInformation] (val x: Self) extends AnyVal {
+  extension [Self <: PackageUserInformation](x: Self) {
     
-    @scala.inline
-    def setInstallState(value: PackageInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
+    inline def setInstallState(value: PackageInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSecurityId(value: String): Self = StObject.set(x, "userSecurityId", value.asInstanceOf[js.Any])
+    inline def setUserSecurityId(value: String): Self = StObject.set(x, "userSecurityId", value.asInstanceOf[js.Any])
   }
 }

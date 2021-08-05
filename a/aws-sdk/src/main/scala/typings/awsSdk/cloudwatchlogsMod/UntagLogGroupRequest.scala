@@ -18,22 +18,17 @@ trait UntagLogGroupRequest extends StObject {
 }
 object UntagLogGroupRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName, tags: TagList): UntagLogGroupRequest = {
+  inline def apply(logGroupName: LogGroupName, tags: TagList): UntagLogGroupRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagLogGroupRequest]
   }
   
-  @scala.inline
-  implicit class UntagLogGroupRequestMutableBuilder[Self <: UntagLogGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UntagLogGroupRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: TagKey*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagKey*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait CreateImageResponse extends StObject {
 }
 object CreateImageResponse {
   
-  @scala.inline
-  def apply(): CreateImageResponse = {
+  inline def apply(): CreateImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateImageResponse]
   }
   
-  @scala.inline
-  implicit class CreateImageResponseMutableBuilder[Self <: CreateImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateImageResponse](x: Self) {
     
-    @scala.inline
-    def setImageArn(value: ImageArn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
+    inline def setImageArn(value: ImageArn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageArnUndefined: Self = StObject.set(x, "ImageArn", js.undefined)
+    inline def setImageArnUndefined: Self = StObject.set(x, "ImageArn", js.undefined)
   }
 }

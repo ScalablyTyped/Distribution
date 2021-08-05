@@ -31,23 +31,18 @@ object typesMod {
   }
   object IOpenAPIFramework {
     
-    @scala.inline
-    def apply(featureType: String, loggingPrefix: String, name: String): IOpenAPIFramework = {
+    inline def apply(featureType: String, loggingPrefix: String, name: String): IOpenAPIFramework = {
       val __obj = js.Dynamic.literal(featureType = featureType.asInstanceOf[js.Any], loggingPrefix = loggingPrefix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOpenAPIFramework]
     }
     
-    @scala.inline
-    implicit class IOpenAPIFrameworkMutableBuilder[Self <: IOpenAPIFramework] (val x: Self) extends AnyVal {
+    extension [Self <: IOpenAPIFramework](x: Self) {
       
-      @scala.inline
-      def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+      inline def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingPrefix(value: String): Self = StObject.set(x, "loggingPrefix", value.asInstanceOf[js.Any])
+      inline def setLoggingPrefix(value: String): Self = StObject.set(x, "loggingPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,23 +56,18 @@ object typesMod {
   }
   object OpenAPIFrameworkAPIContext {
     
-    @scala.inline
-    def apply(basePaths: js.Array[default], getApiDoc: () => js.Any): OpenAPIFrameworkAPIContext = {
+    inline def apply(basePaths: js.Array[default], getApiDoc: () => js.Any): OpenAPIFrameworkAPIContext = {
       val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], getApiDoc = js.Any.fromFunction0(getApiDoc))
       __obj.asInstanceOf[OpenAPIFrameworkAPIContext]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkAPIContextMutableBuilder[Self <: OpenAPIFrameworkAPIContext] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFrameworkAPIContext](x: Self) {
       
-      @scala.inline
-      def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+      inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setGetApiDoc(value: () => js.Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
+      inline def setGetApiDoc(value: () => js.Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
     }
   }
   
@@ -117,113 +107,78 @@ object typesMod {
   }
   object OpenAPIFrameworkArgs {
     
-    @scala.inline
-    def apply(apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String): OpenAPIFrameworkArgs = {
+    inline def apply(apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String): OpenAPIFrameworkArgs = {
       val __obj = js.Dynamic.literal(apiDoc = apiDoc.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIFrameworkArgs]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkArgsMutableBuilder[Self <: OpenAPIFrameworkArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFrameworkArgs](x: Self) {
       
-      @scala.inline
-      def setApiDoc(value: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
+      inline def setApiDoc(value: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFormats(value: StringDictionary[js.Function1[/* arg */ js.Any, Boolean]]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+      inline def setCustomFormats(value: StringDictionary[js.Function1[/* arg */ js.Any, Boolean]]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
+      inline def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
       
-      @scala.inline
-      def setCustomKeywords(value: StringDictionary[KeywordDefinition]): Self = StObject.set(x, "customKeywords", value.asInstanceOf[js.Any])
+      inline def setCustomKeywords(value: StringDictionary[KeywordDefinition]): Self = StObject.set(x, "customKeywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomKeywordsUndefined: Self = StObject.set(x, "customKeywords", js.undefined)
+      inline def setCustomKeywordsUndefined: Self = StObject.set(x, "customKeywords", js.undefined)
       
-      @scala.inline
-      def setDependencies(value: StringDictionary[js.Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[js.Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setEnableObjectCoercion(value: Boolean): Self = StObject.set(x, "enableObjectCoercion", value.asInstanceOf[js.Any])
+      inline def setEnableObjectCoercion(value: Boolean): Self = StObject.set(x, "enableObjectCoercion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableObjectCoercionUndefined: Self = StObject.set(x, "enableObjectCoercion", js.undefined)
+      inline def setEnableObjectCoercionUndefined: Self = StObject.set(x, "enableObjectCoercion", js.undefined)
       
-      @scala.inline
-      def setErrorTransformer(value: (/* has0 */ js.Object, /* has1 */ js.Object) => js.Object): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
+      inline def setErrorTransformer(value: (/* has0 */ js.Object, /* has1 */ js.Object) => js.Object): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
+      inline def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
       
-      @scala.inline
-      def setExternalSchemas(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "externalSchemas", value.asInstanceOf[js.Any])
+      inline def setExternalSchemas(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "externalSchemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalSchemasUndefined: Self = StObject.set(x, "externalSchemas", js.undefined)
+      inline def setExternalSchemasUndefined: Self = StObject.set(x, "externalSchemas", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setOperations(value: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+      inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
       
-      @scala.inline
-      def setPathSecurity(value: js.Array[PathSecurityTuple]): Self = StObject.set(x, "pathSecurity", value.asInstanceOf[js.Any])
+      inline def setPathSecurity(value: js.Array[PathSecurityTuple]): Self = StObject.set(x, "pathSecurity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathSecurityUndefined: Self = StObject.set(x, "pathSecurity", js.undefined)
+      inline def setPathSecurityUndefined: Self = StObject.set(x, "pathSecurity", js.undefined)
       
-      @scala.inline
-      def setPathSecurityVarargs(value: PathSecurityTuple*): Self = StObject.set(x, "pathSecurity", js.Array(value :_*))
+      inline def setPathSecurityVarargs(value: PathSecurityTuple*): Self = StObject.set(x, "pathSecurity", js.Array(value :_*))
       
-      @scala.inline
-      def setPaths(value: String | js.Array[OpenAPIFrameworkPathObject]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: String | js.Array[OpenAPIFrameworkPathObject]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsIgnore(value: RegExp): Self = StObject.set(x, "pathsIgnore", value.asInstanceOf[js.Any])
+      inline def setPathsIgnore(value: RegExp): Self = StObject.set(x, "pathsIgnore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsIgnoreUndefined: Self = StObject.set(x, "pathsIgnore", js.undefined)
+      inline def setPathsIgnoreUndefined: Self = StObject.set(x, "pathsIgnore", js.undefined)
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: OpenAPIFrameworkPathObject*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: OpenAPIFrameworkPathObject*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setRoutesGlob(value: String): Self = StObject.set(x, "routesGlob", value.asInstanceOf[js.Any])
+      inline def setRoutesGlob(value: String): Self = StObject.set(x, "routesGlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesGlobUndefined: Self = StObject.set(x, "routesGlob", js.undefined)
+      inline def setRoutesGlobUndefined: Self = StObject.set(x, "routesGlob", js.undefined)
       
-      @scala.inline
-      def setRoutesIndexFileRegExp(value: RegExp): Self = StObject.set(x, "routesIndexFileRegExp", value.asInstanceOf[js.Any])
+      inline def setRoutesIndexFileRegExp(value: RegExp): Self = StObject.set(x, "routesIndexFileRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesIndexFileRegExpUndefined: Self = StObject.set(x, "routesIndexFileRegExp", js.undefined)
+      inline def setRoutesIndexFileRegExpUndefined: Self = StObject.set(x, "routesIndexFileRegExp", js.undefined)
       
-      @scala.inline
-      def setSecurityHandlers(value: SecurityHandlers): Self = StObject.set(x, "securityHandlers", value.asInstanceOf[js.Any])
+      inline def setSecurityHandlers(value: SecurityHandlers): Self = StObject.set(x, "securityHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityHandlersUndefined: Self = StObject.set(x, "securityHandlers", js.undefined)
+      inline def setSecurityHandlersUndefined: Self = StObject.set(x, "securityHandlers", js.undefined)
       
-      @scala.inline
-      def setValidateApiDoc(value: Boolean): Self = StObject.set(x, "validateApiDoc", value.asInstanceOf[js.Any])
+      inline def setValidateApiDoc(value: Boolean): Self = StObject.set(x, "validateApiDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateApiDocUndefined: Self = StObject.set(x, "validateApiDoc", js.undefined)
+      inline def setValidateApiDocUndefined: Self = StObject.set(x, "validateApiDoc", js.undefined)
     }
   }
   
@@ -237,8 +192,7 @@ object typesMod {
   }
   object OpenAPIFrameworkConstructorArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String,
       featureType: String,
       name: String
@@ -247,14 +201,11 @@ object typesMod {
       __obj.asInstanceOf[OpenAPIFrameworkConstructorArgs]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkConstructorArgsMutableBuilder[Self <: OpenAPIFrameworkConstructorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFrameworkConstructorArgs](x: Self) {
       
-      @scala.inline
-      def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+      inline def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -284,8 +235,7 @@ object typesMod {
   }
   object OpenAPIFrameworkOperationContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalFeatures: js.Array[js.Any],
       allowsFeatures: Boolean,
       apiDoc: js.Any,
@@ -302,53 +252,37 @@ object typesMod {
       __obj.asInstanceOf[OpenAPIFrameworkOperationContext]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkOperationContextMutableBuilder[Self <: OpenAPIFrameworkOperationContext] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFrameworkOperationContext](x: Self) {
       
-      @scala.inline
-      def setAdditionalFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "additionalFeatures", value.asInstanceOf[js.Any])
+      inline def setAdditionalFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "additionalFeatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "additionalFeatures", js.Array(value :_*))
+      inline def setAdditionalFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "additionalFeatures", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowsFeatures(value: Boolean): Self = StObject.set(x, "allowsFeatures", value.asInstanceOf[js.Any])
+      inline def setAllowsFeatures(value: Boolean): Self = StObject.set(x, "allowsFeatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiDoc(value: js.Any): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
+      inline def setApiDoc(value: js.Any): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+      inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setConsumes(value: js.Array[String]): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
+      inline def setConsumes(value: js.Array[String]): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
+      inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatures(value: Coercer): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: Coercer): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodParameters(value: js.Array[js.Any]): Self = StObject.set(x, "methodParameters", value.asInstanceOf[js.Any])
+      inline def setMethodParameters(value: js.Array[js.Any]): Self = StObject.set(x, "methodParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodParametersVarargs(value: js.Any*): Self = StObject.set(x, "methodParameters", js.Array(value :_*))
+      inline def setMethodParametersVarargs(value: js.Any*): Self = StObject.set(x, "methodParameters", js.Array(value :_*))
       
-      @scala.inline
-      def setOperationDoc(value: js.Any): Self = StObject.set(x, "operationDoc", value.asInstanceOf[js.Any])
+      inline def setOperationDoc(value: js.Any): Self = StObject.set(x, "operationDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationHandler(value: js.Any): Self = StObject.set(x, "operationHandler", value.asInstanceOf[js.Any])
+      inline def setOperationHandler(value: js.Any): Self = StObject.set(x, "operationHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -362,26 +296,20 @@ object typesMod {
   }
   object OpenAPIFrameworkPathContext {
     
-    @scala.inline
-    def apply(basePaths: js.Array[default], getApiDoc: () => js.Any, getPathDoc: () => js.Any): OpenAPIFrameworkPathContext = {
+    inline def apply(basePaths: js.Array[default], getApiDoc: () => js.Any, getPathDoc: () => js.Any): OpenAPIFrameworkPathContext = {
       val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], getApiDoc = js.Any.fromFunction0(getApiDoc), getPathDoc = js.Any.fromFunction0(getPathDoc))
       __obj.asInstanceOf[OpenAPIFrameworkPathContext]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkPathContextMutableBuilder[Self <: OpenAPIFrameworkPathContext] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFrameworkPathContext](x: Self) {
       
-      @scala.inline
-      def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+      inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setGetApiDoc(value: () => js.Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
+      inline def setGetApiDoc(value: () => js.Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPathDoc(value: () => js.Any): Self = StObject.set(x, "getPathDoc", js.Any.fromFunction0(value))
+      inline def setGetPathDoc(value: () => js.Any): Self = StObject.set(x, "getPathDoc", js.Any.fromFunction0(value))
     }
   }
   
@@ -393,26 +321,20 @@ object typesMod {
   }
   object OpenAPIFrameworkPathObject {
     
-    @scala.inline
-    def apply(): OpenAPIFrameworkPathObject = {
+    inline def apply(): OpenAPIFrameworkPathObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenAPIFrameworkPathObject]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkPathObjectMutableBuilder[Self <: OpenAPIFrameworkPathObject] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFrameworkPathObject](x: Self) {
       
-      @scala.inline
-      def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -426,32 +348,24 @@ object typesMod {
   }
   object OpenAPIFrameworkVisitor {
     
-    @scala.inline
-    def apply(): OpenAPIFrameworkVisitor = {
+    inline def apply(): OpenAPIFrameworkVisitor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenAPIFrameworkVisitor]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkVisitorMutableBuilder[Self <: OpenAPIFrameworkVisitor] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFrameworkVisitor](x: Self) {
       
-      @scala.inline
-      def setVisitApi(value: /* context */ OpenAPIFrameworkAPIContext => Unit): Self = StObject.set(x, "visitApi", js.Any.fromFunction1(value))
+      inline def setVisitApi(value: /* context */ OpenAPIFrameworkAPIContext => Unit): Self = StObject.set(x, "visitApi", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitApiUndefined: Self = StObject.set(x, "visitApi", js.undefined)
+      inline def setVisitApiUndefined: Self = StObject.set(x, "visitApi", js.undefined)
       
-      @scala.inline
-      def setVisitOperation(value: /* context */ OpenAPIFrameworkOperationContext => Unit): Self = StObject.set(x, "visitOperation", js.Any.fromFunction1(value))
+      inline def setVisitOperation(value: /* context */ OpenAPIFrameworkOperationContext => Unit): Self = StObject.set(x, "visitOperation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitOperationUndefined: Self = StObject.set(x, "visitOperation", js.undefined)
+      inline def setVisitOperationUndefined: Self = StObject.set(x, "visitOperation", js.undefined)
       
-      @scala.inline
-      def setVisitPath(value: /* context */ OpenAPIFrameworkPathContext => Unit): Self = StObject.set(x, "visitPath", js.Any.fromFunction1(value))
+      inline def setVisitPath(value: /* context */ OpenAPIFrameworkPathContext => Unit): Self = StObject.set(x, "visitPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitPathUndefined: Self = StObject.set(x, "visitPath", js.undefined)
+      inline def setVisitPathUndefined: Self = StObject.set(x, "visitPath", js.undefined)
     }
   }
   

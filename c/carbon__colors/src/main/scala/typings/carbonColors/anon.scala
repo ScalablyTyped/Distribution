@@ -12,18 +12,15 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(`0`: String): `0` = {
+    inline def apply(`0`: String): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,8 +48,7 @@ object anon {
   }
   object `10` {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `10`: String,
       `100`: String,
       `20`: String,
@@ -78,38 +74,27 @@ object anon {
       __obj.asInstanceOf[`10`]
     }
     
-    @scala.inline
-    implicit class `10MutableBuilder`[Self <: `10`] (val x: Self) extends AnyVal {
+    extension [Self <: `10`](x: Self) {
       
-      @scala.inline
-      def set10(value: String): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
+      inline def set10(value: String): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+      inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
+      inline def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set30(value: String): Self = StObject.set(x, "30", value.asInstanceOf[js.Any])
+      inline def set30(value: String): Self = StObject.set(x, "30", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set40(value: String): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
+      inline def set40(value: String): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
+      inline def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set60(value: String): Self = StObject.set(x, "60", value.asInstanceOf[js.Any])
+      inline def set60(value: String): Self = StObject.set(x, "60", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set70(value: String): Self = StObject.set(x, "70", value.asInstanceOf[js.Any])
+      inline def set70(value: String): Self = StObject.set(x, "70", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set80(value: String): Self = StObject.set(x, "80", value.asInstanceOf[js.Any])
+      inline def set80(value: String): Self = StObject.set(x, "80", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set90(value: String): Self = StObject.set(x, "90", value.asInstanceOf[js.Any])
+      inline def set90(value: String): Self = StObject.set(x, "90", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,18 +104,15 @@ object anon {
   }
   object `100` {
     
-    @scala.inline
-    def apply(`100`: String): `100` = {
+    inline def apply(`100`: String): `100` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
       __obj.asInstanceOf[`100`]
     }
     
-    @scala.inline
-    implicit class `100MutableBuilder`[Self <: `100`] (val x: Self) extends AnyVal {
+    extension [Self <: `100`](x: Self) {
       
-      @scala.inline
-      def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+      inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,18 +122,15 @@ object anon {
   }
   object `20` {
     
-    @scala.inline
-    def apply(`20`: String): `20` = {
+    inline def apply(`20`: String): `20` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("20")(`20`.asInstanceOf[js.Any])
       __obj.asInstanceOf[`20`]
     }
     
-    @scala.inline
-    implicit class `20MutableBuilder`[Self <: `20`] (val x: Self) extends AnyVal {
+    extension [Self <: `20`](x: Self) {
       
-      @scala.inline
-      def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
+      inline def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,18 +140,15 @@ object anon {
   }
   object `40` {
     
-    @scala.inline
-    def apply(`40`: String): `40` = {
+    inline def apply(`40`: String): `40` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("40")(`40`.asInstanceOf[js.Any])
       __obj.asInstanceOf[`40`]
     }
     
-    @scala.inline
-    implicit class `40MutableBuilder`[Self <: `40`] (val x: Self) extends AnyVal {
+    extension [Self <: `40`](x: Self) {
       
-      @scala.inline
-      def set40(value: String): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
+      inline def set40(value: String): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
     }
   }
 }

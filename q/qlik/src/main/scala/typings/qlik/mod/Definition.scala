@@ -17,23 +17,18 @@ trait Definition extends StObject {
 }
 object Definition {
   
-  @scala.inline
-  def apply(items: Data): Definition = {
+  inline def apply(items: Data): Definition = {
     val __obj = js.Dynamic.literal(component = "accordion", items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("items")
     __obj.asInstanceOf[Definition]
   }
   
-  @scala.inline
-  implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
+  extension [Self <: Definition](x: Self) {
     
-    @scala.inline
-    def setComponent(value: accordion): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: accordion): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: Data): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Data): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

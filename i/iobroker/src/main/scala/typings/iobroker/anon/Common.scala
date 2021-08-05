@@ -13,19 +13,15 @@ trait Common extends StObject {
 }
 object Common {
   
-  @scala.inline
-  def apply(common: Record[String, js.Any], native: Record[String, js.Any]): Common = {
+  inline def apply(common: Record[String, js.Any], native: Record[String, js.Any]): Common = {
     val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.asInstanceOf[Common]
   }
   
-  @scala.inline
-  implicit class CommonMutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
+  extension [Self <: Common](x: Self) {
     
-    @scala.inline
-    def setCommon(value: Record[String, js.Any]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: Record[String, js.Any]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
   }
 }

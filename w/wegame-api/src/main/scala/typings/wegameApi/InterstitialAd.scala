@@ -29,8 +29,7 @@ trait InterstitialAd
 }
 object InterstitialAd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adUnitId: String,
     destroy: () => Unit,
     hide: () => Unit,
@@ -50,16 +49,12 @@ object InterstitialAd {
     __obj.asInstanceOf[InterstitialAd]
   }
   
-  @scala.inline
-  implicit class InterstitialAdMutableBuilder[Self <: InterstitialAd] (val x: Self) extends AnyVal {
+  extension [Self <: InterstitialAd](x: Self) {
     
-    @scala.inline
-    def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+    inline def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOffClose(value: js.Function1[/* res */ IsEnded, Unit] => Unit): Self = StObject.set(x, "offClose", js.Any.fromFunction1(value))
+    inline def setOffClose(value: js.Function1[/* res */ IsEnded, Unit] => Unit): Self = StObject.set(x, "offClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClose(value: js.Function1[/* res */ IsEnded, Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: js.Function1[/* res */ IsEnded, Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
   }
 }

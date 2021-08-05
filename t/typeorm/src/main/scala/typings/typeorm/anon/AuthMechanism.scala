@@ -10,16 +10,13 @@ trait AuthMechanism extends StObject {
 }
 object AuthMechanism {
   
-  @scala.inline
-  def apply(authMechanism: String): AuthMechanism = {
+  inline def apply(authMechanism: String): AuthMechanism = {
     val __obj = js.Dynamic.literal(authMechanism = authMechanism.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthMechanism]
   }
   
-  @scala.inline
-  implicit class AuthMechanismMutableBuilder[Self <: AuthMechanism] (val x: Self) extends AnyVal {
+  extension [Self <: AuthMechanism](x: Self) {
     
-    @scala.inline
-    def setAuthMechanism(value: String): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
+    inline def setAuthMechanism(value: String): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
   }
 }

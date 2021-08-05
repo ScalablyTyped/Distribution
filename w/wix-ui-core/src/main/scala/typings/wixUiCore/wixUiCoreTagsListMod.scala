@@ -33,14 +33,12 @@ object wixUiCoreTagsListMod {
     @JSImport("wix-ui-core/tags-list", "FocusableTag.displayName")
     @js.native
     def displayName: DisplayNames = js.native
-    @scala.inline
-    def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/tags-list", "FocusableTag.propTypes")
     @js.native
     def propTypes: Checked = js.native
-    @scala.inline
-    def propTypes_=(x: Checked): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Checked): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/tags-list", "Tag")
@@ -64,14 +62,12 @@ object wixUiCoreTagsListMod {
     @JSImport("wix-ui-core/tags-list", "Tag.displayName")
     @js.native
     def displayName: DisplayNames = js.native
-    @scala.inline
-    def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/tags-list", "Tag.propTypes")
     @js.native
     def propTypes: CompId = js.native
-    @scala.inline
-    def propTypes_=(x: CompId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: CompId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/tags-list", "TagsList")

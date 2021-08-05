@@ -40,8 +40,7 @@ object functions {
   }
   object Functions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       httpsCallable: String => HttpsCallable[js.Any, js.Any],
       useFunctionsEmulator: String => js.Promise[Null]
     ): Functions = {
@@ -49,14 +48,11 @@ object functions {
       __obj.asInstanceOf[Functions]
     }
     
-    @scala.inline
-    implicit class FunctionsMutableBuilder[Self <: Functions] (val x: Self) extends AnyVal {
+    extension [Self <: Functions](x: Self) {
       
-      @scala.inline
-      def setHttpsCallable(value: String => HttpsCallable[js.Any, js.Any]): Self = StObject.set(x, "httpsCallable", js.Any.fromFunction1(value))
+      inline def setHttpsCallable(value: String => HttpsCallable[js.Any, js.Any]): Self = StObject.set(x, "httpsCallable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUseFunctionsEmulator(value: String => js.Promise[Null]): Self = StObject.set(x, "useFunctionsEmulator", js.Any.fromFunction1(value))
+      inline def setUseFunctionsEmulator(value: String => js.Promise[Null]): Self = StObject.set(x, "useFunctionsEmulator", js.Any.fromFunction1(value))
     }
   }
   
@@ -121,56 +117,39 @@ object functions {
   trait FunctionsErrorCode extends StObject
   object FunctionsErrorCode {
     
-    @scala.inline
-    def aborted: typings.reactNativeFirebase.reactNativeFirebaseStrings.aborted = "aborted".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.aborted]
+    inline def aborted: typings.reactNativeFirebase.reactNativeFirebaseStrings.aborted = "aborted".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.aborted]
     
-    @scala.inline
-    def `already-exists`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`already-exists` = "already-exists".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`already-exists`]
+    inline def `already-exists`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`already-exists` = "already-exists".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`already-exists`]
     
-    @scala.inline
-    def cancelled: typings.reactNativeFirebase.reactNativeFirebaseStrings.cancelled = "cancelled".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.cancelled]
+    inline def cancelled: typings.reactNativeFirebase.reactNativeFirebaseStrings.cancelled = "cancelled".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.cancelled]
     
-    @scala.inline
-    def `data-loss`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`data-loss` = "data-loss".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`data-loss`]
+    inline def `data-loss`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`data-loss` = "data-loss".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`data-loss`]
     
-    @scala.inline
-    def `deadline-exceeded`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`deadline-exceeded`]
+    inline def `deadline-exceeded`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`deadline-exceeded`]
     
-    @scala.inline
-    def `failed-precondition`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`failed-precondition`]
+    inline def `failed-precondition`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`failed-precondition`]
     
-    @scala.inline
-    def internal: typings.reactNativeFirebase.reactNativeFirebaseStrings.internal = "internal".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.internal]
+    inline def internal: typings.reactNativeFirebase.reactNativeFirebaseStrings.internal = "internal".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.internal]
     
-    @scala.inline
-    def `invalid-argument`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`invalid-argument`]
+    inline def `invalid-argument`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`invalid-argument`]
     
-    @scala.inline
-    def `not-found`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`not-found` = "not-found".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`not-found`]
+    inline def `not-found`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`not-found` = "not-found".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`not-found`]
     
-    @scala.inline
-    def ok: typings.reactNativeFirebase.reactNativeFirebaseStrings.ok = "ok".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.ok]
+    inline def ok: typings.reactNativeFirebase.reactNativeFirebaseStrings.ok = "ok".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.ok]
     
-    @scala.inline
-    def `out-of-range`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`out-of-range`]
+    inline def `out-of-range`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`out-of-range`]
     
-    @scala.inline
-    def `permission-denied`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`permission-denied`]
+    inline def `permission-denied`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`permission-denied`]
     
-    @scala.inline
-    def `resource-exhausted`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`resource-exhausted`]
+    inline def `resource-exhausted`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`resource-exhausted`]
     
-    @scala.inline
-    def unauthenticated: typings.reactNativeFirebase.reactNativeFirebaseStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unauthenticated]
+    inline def unauthenticated: typings.reactNativeFirebase.reactNativeFirebaseStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unauthenticated]
     
-    @scala.inline
-    def unavailable: typings.reactNativeFirebase.reactNativeFirebaseStrings.unavailable = "unavailable".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unavailable]
+    inline def unavailable: typings.reactNativeFirebase.reactNativeFirebaseStrings.unavailable = "unavailable".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unavailable]
     
-    @scala.inline
-    def unimplemented: typings.reactNativeFirebase.reactNativeFirebaseStrings.unimplemented = "unimplemented".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unimplemented]
+    inline def unimplemented: typings.reactNativeFirebase.reactNativeFirebaseStrings.unimplemented = "unimplemented".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unimplemented]
     
-    @scala.inline
-    def unknown: typings.reactNativeFirebase.reactNativeFirebaseStrings.unknown = "unknown".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unknown]
+    inline def unknown: typings.reactNativeFirebase.reactNativeFirebaseStrings.unknown = "unknown".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.unknown]
   }
   
   /**
@@ -211,17 +190,14 @@ object functions {
   }
   object HttpsCallableResult {
     
-    @scala.inline
-    def apply[R](data: R): HttpsCallableResult[R] = {
+    inline def apply[R](data: R): HttpsCallableResult[R] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpsCallableResult[R]]
     }
     
-    @scala.inline
-    implicit class HttpsCallableResultMutableBuilder[Self <: HttpsCallableResult[?], R] (val x: Self & HttpsCallableResult[R]) extends AnyVal {
+    extension [Self <: HttpsCallableResult[?], R](x: Self & HttpsCallableResult[R]) {
       
-      @scala.inline
-      def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,23 +218,18 @@ object functions {
   }
   object HttpsError {
     
-    @scala.inline
-    def apply(code: FunctionsErrorCode, message: String, name: String): HttpsError = {
+    inline def apply(code: FunctionsErrorCode, message: String, name: String): HttpsError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpsError]
     }
     
-    @scala.inline
-    implicit class HttpsErrorMutableBuilder[Self <: HttpsError] (val x: Self) extends AnyVal {
+    extension [Self <: HttpsError](x: Self) {
       
-      @scala.inline
-      def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     }
   }
   

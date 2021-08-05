@@ -17,13 +17,10 @@ object ignoreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addRule(repo: Repository, rules: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addRule")(repo.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def addRule(repo: Repository, rules: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addRule")(repo.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def clearInternalRules(repo: Repository): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInternalRules")(repo.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def clearInternalRules(repo: Repository): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInternalRules")(repo.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def pathIsIgnored(repo: Repository, path: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathIsIgnored")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def pathIsIgnored(repo: Repository, path: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathIsIgnored")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   }
 }

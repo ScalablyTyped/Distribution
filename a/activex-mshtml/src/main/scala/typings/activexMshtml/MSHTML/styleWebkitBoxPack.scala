@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleWebkitBoxPack extends StObject
 object styleWebkitBoxPack {
   
-  @scala.inline
-  def styleWebkitBoxPackCenter: `2` = 2.asInstanceOf[`2`]
+  inline def styleWebkitBoxPackCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleWebkitBoxPackEnd: `1` = 1.asInstanceOf[`1`]
+  inline def styleWebkitBoxPackEnd: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleWebkitBoxPackJustify: `3` = 3.asInstanceOf[`3`]
+  inline def styleWebkitBoxPackJustify: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleWebkitBoxPackNotSet: `5` = 5.asInstanceOf[`5`]
+  inline def styleWebkitBoxPackNotSet: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def styleWebkitBoxPackStart: `0` = 0.asInstanceOf[`0`]
+  inline def styleWebkitBoxPackStart: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleWebkitBoxPack_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleWebkitBoxPack_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -14,25 +14,19 @@ trait GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig extends StObj
 }
 object GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfigMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig](x: Self) {
     
-    @scala.inline
-    def setEventItemLevel(value: String): Self = StObject.set(x, "eventItemLevel", value.asInstanceOf[js.Any])
+    inline def setEventItemLevel(value: String): Self = StObject.set(x, "eventItemLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventItemLevelUndefined: Self = StObject.set(x, "eventItemLevel", js.undefined)
+    inline def setEventItemLevelUndefined: Self = StObject.set(x, "eventItemLevel", js.undefined)
     
-    @scala.inline
-    def setPredictItemLevel(value: String): Self = StObject.set(x, "predictItemLevel", value.asInstanceOf[js.Any])
+    inline def setPredictItemLevel(value: String): Self = StObject.set(x, "predictItemLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictItemLevelUndefined: Self = StObject.set(x, "predictItemLevel", js.undefined)
+    inline def setPredictItemLevelUndefined: Self = StObject.set(x, "predictItemLevel", js.undefined)
   }
 }

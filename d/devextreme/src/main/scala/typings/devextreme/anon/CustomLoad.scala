@@ -26,49 +26,35 @@ trait CustomLoad extends StObject {
 }
 object CustomLoad {
   
-  @scala.inline
-  def apply(): CustomLoad = {
+  inline def apply(): CustomLoad = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomLoad]
   }
   
-  @scala.inline
-  implicit class CustomLoadMutableBuilder[Self <: CustomLoad] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLoad](x: Self) {
     
-    @scala.inline
-    def setCustomLoad(value: () => typings.devextreme.mod.global.Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
+    inline def setCustomLoad(value: () => typings.devextreme.mod.global.Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCustomLoadUndefined: Self = StObject.set(x, "customLoad", js.undefined)
+    inline def setCustomLoadUndefined: Self = StObject.set(x, "customLoad", js.undefined)
     
-    @scala.inline
-    def setCustomSave(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "customSave", js.Any.fromFunction1(value))
+    inline def setCustomSave(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "customSave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomSaveUndefined: Self = StObject.set(x, "customSave", js.undefined)
+    inline def setCustomSaveUndefined: Self = StObject.set(x, "customSave", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSavingTimeout(value: Double): Self = StObject.set(x, "savingTimeout", value.asInstanceOf[js.Any])
+    inline def setSavingTimeout(value: Double): Self = StObject.set(x, "savingTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingTimeoutUndefined: Self = StObject.set(x, "savingTimeout", js.undefined)
+    inline def setSavingTimeoutUndefined: Self = StObject.set(x, "savingTimeout", js.undefined)
     
-    @scala.inline
-    def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
+    inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
     
-    @scala.inline
-    def setType(value: custom | localStorage | sessionStorage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: custom | localStorage | sessionStorage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

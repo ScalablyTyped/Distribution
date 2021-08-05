@@ -28,8 +28,7 @@ trait XCellRangeAddressable
 }
 object XCellRangeAddressable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RangeAddress: CellRangeAddress,
     acquire: () => Unit,
     getRangeAddress: () => CellRangeAddress,
@@ -40,13 +39,10 @@ object XCellRangeAddressable {
     __obj.asInstanceOf[XCellRangeAddressable]
   }
   
-  @scala.inline
-  implicit class XCellRangeAddressableMutableBuilder[Self <: XCellRangeAddressable] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRangeAddressable](x: Self) {
     
-    @scala.inline
-    def setGetRangeAddress(value: () => CellRangeAddress): Self = StObject.set(x, "getRangeAddress", js.Any.fromFunction0(value))
+    inline def setGetRangeAddress(value: () => CellRangeAddress): Self = StObject.set(x, "getRangeAddress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRangeAddress(value: CellRangeAddress): Self = StObject.set(x, "RangeAddress", value.asInstanceOf[js.Any])
+    inline def setRangeAddress(value: CellRangeAddress): Self = StObject.set(x, "RangeAddress", value.asInstanceOf[js.Any])
   }
 }

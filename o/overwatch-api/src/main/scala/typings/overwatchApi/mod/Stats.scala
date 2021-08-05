@@ -22,8 +22,7 @@ trait Stats extends StObject {
 }
 object Stats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endorsement: Frame,
     level: Double,
     portrait: String,
@@ -36,25 +35,18 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  @scala.inline
-  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+  extension [Self <: Stats](x: Self) {
     
-    @scala.inline
-    def setEndorsement(value: Frame): Self = StObject.set(x, "endorsement", value.asInstanceOf[js.Any])
+    inline def setEndorsement(value: Frame): Self = StObject.set(x, "endorsement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
+    inline def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Assists): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Assists): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

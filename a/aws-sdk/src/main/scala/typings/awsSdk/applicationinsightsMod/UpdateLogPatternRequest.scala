@@ -33,8 +33,7 @@ trait UpdateLogPatternRequest extends StObject {
 }
 object UpdateLogPatternRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PatternName: LogPatternName,
     PatternSetName: LogPatternSetName,
     ResourceGroupName: ResourceGroupName
@@ -43,28 +42,20 @@ object UpdateLogPatternRequest {
     __obj.asInstanceOf[UpdateLogPatternRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLogPatternRequestMutableBuilder[Self <: UpdateLogPatternRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLogPatternRequest](x: Self) {
     
-    @scala.inline
-    def setPattern(value: LogPatternRegex): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: LogPatternRegex): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
+    inline def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
+    inline def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
     
-    @scala.inline
-    def setRank(value: LogPatternRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: LogPatternRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "Rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "Rank", js.undefined)
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

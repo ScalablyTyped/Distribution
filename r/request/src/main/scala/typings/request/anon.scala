@@ -20,23 +20,18 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: MultipartBody): Body = {
+    inline def apply(body: MultipartBody): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: MultipartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: MultipartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
+      inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
+      inline def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
     }
   }
   
@@ -54,29 +49,22 @@ object anon {
   }
   object Connect {
     
-    @scala.inline
-    def apply(connect: Double, end: Double, lookup: Double, response: Double, socket: Double): Connect = {
+    inline def apply(connect: Double, end: Double, lookup: Double, response: Double, socket: Double): Connect = {
       val __obj = js.Dynamic.literal(connect = connect.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connect]
     }
     
-    @scala.inline
-    implicit class ConnectMutableBuilder[Self <: Connect] (val x: Self) extends AnyVal {
+    extension [Self <: Connect](x: Self) {
       
-      @scala.inline
-      def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+      inline def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookup(value: Double): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      inline def setLookup(value: Double): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,33 +85,25 @@ object anon {
   }
   object Dns {
     
-    @scala.inline
-    def apply(dns: Double, download: Double, firstByte: Double, tcp: Double, total: Double, wait_ : Double): Dns = {
+    inline def apply(dns: Double, download: Double, firstByte: Double, tcp: Double, total: Double, wait_ : Double): Dns = {
       val __obj = js.Dynamic.literal(dns = dns.asInstanceOf[js.Any], download = download.asInstanceOf[js.Any], firstByte = firstByte.asInstanceOf[js.Any], tcp = tcp.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dns]
     }
     
-    @scala.inline
-    implicit class DnsMutableBuilder[Self <: Dns] (val x: Self) extends AnyVal {
+    extension [Self <: Dns](x: Self) {
       
-      @scala.inline
-      def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+      inline def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstByte(value: Double): Self = StObject.set(x, "firstByte", value.asInstanceOf[js.Any])
+      inline def setFirstByte(value: Double): Self = StObject.set(x, "firstByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTcp(value: Double): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
+      inline def setTcp(value: Double): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,29 +115,22 @@ object anon {
   }
   object MimeType {
     
-    @scala.inline
-    def apply(): MimeType = {
+    inline def apply(): MimeType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MimeType]
     }
     
-    @scala.inline
-    implicit class MimeTypeMutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
+    extension [Self <: MimeType](x: Self) {
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Array[NameValuePair]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[NameValuePair]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParamsVarargs(value: NameValuePair*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: NameValuePair*): Self = StObject.set(x, "params", js.Array(value :_*))
     }
   }
   
@@ -190,80 +163,56 @@ object anon {
   }
   object Urlhrefstringpathnamestri {
     
-    @scala.inline
-    def apply(href: String, pathname: (String | Null) & String): Urlhrefstringpathnamestri = {
+    inline def apply(href: String, pathname: (String | Null) & String): Urlhrefstringpathnamestri = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[Urlhrefstringpathnamestri]
     }
     
-    @scala.inline
-    implicit class UrlhrefstringpathnamestriMutableBuilder[Self <: Urlhrefstringpathnamestri] (val x: Self) extends AnyVal {
+    extension [Self <: Urlhrefstringpathnamestri](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthNull: Self = StObject.set(x, "auth", null)
+      inline def setAuthNull: Self = StObject.set(x, "auth", null)
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashNull: Self = StObject.set(x, "hash", null)
+      inline def setHashNull: Self = StObject.set(x, "hash", null)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNull: Self = StObject.set(x, "host", null)
+      inline def setHostNull: Self = StObject.set(x, "host", null)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameNull: Self = StObject.set(x, "hostname", null)
+      inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathNull: Self = StObject.set(x, "path", null)
+      inline def setPathNull: Self = StObject.set(x, "path", null)
       
-      @scala.inline
-      def setPathname(value: (String | Null) & String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: (String | Null) & String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortNull: Self = StObject.set(x, "port", null)
+      inline def setPortNull: Self = StObject.set(x, "port", null)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolNull: Self = StObject.set(x, "protocol", null)
+      inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
       
-      @scala.inline
-      def setQuery(value: String | ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String | ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryNull: Self = StObject.set(x, "query", null)
+      inline def setQueryNull: Self = StObject.set(x, "query", null)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchNull: Self = StObject.set(x, "search", null)
+      inline def setSearchNull: Self = StObject.set(x, "search", null)
       
-      @scala.inline
-      def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
+      inline def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashesNull: Self = StObject.set(x, "slashes", null)
+      inline def setSlashesNull: Self = StObject.set(x, "slashes", null)
     }
   }
   
@@ -277,20 +226,16 @@ object anon {
   }
   object keystringAgentAgentExtraP {
     
-    @scala.inline
-    def apply(): keystringAgentAgentExtraP = {
+    inline def apply(): keystringAgentAgentExtraP = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[keystringAgentAgentExtraP]
     }
     
-    @scala.inline
-    implicit class keystringAgentAgentExtraPMutableBuilder[Self <: keystringAgentAgentExtraP] (val x: Self) extends AnyVal {
+    extension [Self <: keystringAgentAgentExtraP](x: Self) {
       
-      @scala.inline
-      def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
+      inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
+      inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
     }
   }
 }

@@ -14,28 +14,21 @@ trait ListCourseAliasesResponse extends StObject {
 }
 object ListCourseAliasesResponse {
   
-  @scala.inline
-  def apply(): ListCourseAliasesResponse = {
+  inline def apply(): ListCourseAliasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCourseAliasesResponse]
   }
   
-  @scala.inline
-  implicit class ListCourseAliasesResponseMutableBuilder[Self <: ListCourseAliasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCourseAliasesResponse](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Array[CourseAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[CourseAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: CourseAlias*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: CourseAlias*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

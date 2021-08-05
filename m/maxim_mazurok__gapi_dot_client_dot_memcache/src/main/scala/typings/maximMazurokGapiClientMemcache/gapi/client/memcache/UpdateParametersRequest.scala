@@ -14,25 +14,19 @@ trait UpdateParametersRequest extends StObject {
 }
 object UpdateParametersRequest {
   
-  @scala.inline
-  def apply(): UpdateParametersRequest = {
+  inline def apply(): UpdateParametersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateParametersRequest]
   }
   
-  @scala.inline
-  implicit class UpdateParametersRequestMutableBuilder[Self <: UpdateParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateParametersRequest](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MemcacheParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MemcacheParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -39,8 +39,7 @@ trait TaskAgentPoolMaintenanceDefinition extends StObject {
 }
 object TaskAgentPoolMaintenanceDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enabled: Boolean,
     id: Double,
     jobTimeoutInMinutes: Double,
@@ -54,31 +53,22 @@ object TaskAgentPoolMaintenanceDefinition {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceDefinition]
   }
   
-  @scala.inline
-  implicit class TaskAgentPoolMaintenanceDefinitionMutableBuilder[Self <: TaskAgentPoolMaintenanceDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentPoolMaintenanceDefinition](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTimeoutInMinutes(value: Double): Self = StObject.set(x, "jobTimeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setJobTimeoutInMinutes(value: Double): Self = StObject.set(x, "jobTimeoutInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentAgentsPercentage(value: Double): Self = StObject.set(x, "maxConcurrentAgentsPercentage", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentAgentsPercentage(value: Double): Self = StObject.set(x, "maxConcurrentAgentsPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: TaskAgentPoolMaintenanceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TaskAgentPoolMaintenanceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPolicy(value: TaskAgentPoolMaintenanceRetentionPolicy): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
+    inline def setRetentionPolicy(value: TaskAgentPoolMaintenanceRetentionPolicy): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleSetting(value: TaskAgentPoolMaintenanceSchedule): Self = StObject.set(x, "scheduleSetting", value.asInstanceOf[js.Any])
+    inline def setScheduleSetting(value: TaskAgentPoolMaintenanceSchedule): Self = StObject.set(x, "scheduleSetting", value.asInstanceOf[js.Any])
   }
 }

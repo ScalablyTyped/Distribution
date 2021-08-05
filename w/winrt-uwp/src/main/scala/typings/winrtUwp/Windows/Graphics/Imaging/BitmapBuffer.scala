@@ -32,8 +32,7 @@ trait BitmapBuffer extends StObject {
 }
 object BitmapBuffer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     createReference: () => IMemoryBufferReference,
     getPlaneCount: () => Double,
@@ -43,19 +42,14 @@ object BitmapBuffer {
     __obj.asInstanceOf[BitmapBuffer]
   }
   
-  @scala.inline
-  implicit class BitmapBufferMutableBuilder[Self <: BitmapBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapBuffer](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
+    inline def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlaneCount(value: () => Double): Self = StObject.set(x, "getPlaneCount", js.Any.fromFunction0(value))
+    inline def setGetPlaneCount(value: () => Double): Self = StObject.set(x, "getPlaneCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlaneDescription(value: Double => BitmapPlaneDescription): Self = StObject.set(x, "getPlaneDescription", js.Any.fromFunction1(value))
+    inline def setGetPlaneDescription(value: Double => BitmapPlaneDescription): Self = StObject.set(x, "getPlaneDescription", js.Any.fromFunction1(value))
   }
 }

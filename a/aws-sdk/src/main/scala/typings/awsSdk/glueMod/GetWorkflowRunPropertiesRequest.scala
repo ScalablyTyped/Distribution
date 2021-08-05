@@ -18,19 +18,15 @@ trait GetWorkflowRunPropertiesRequest extends StObject {
 }
 object GetWorkflowRunPropertiesRequest {
   
-  @scala.inline
-  def apply(Name: NameString, RunId: IdString): GetWorkflowRunPropertiesRequest = {
+  inline def apply(Name: NameString, RunId: IdString): GetWorkflowRunPropertiesRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkflowRunPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class GetWorkflowRunPropertiesRequestMutableBuilder[Self <: GetWorkflowRunPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorkflowRunPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

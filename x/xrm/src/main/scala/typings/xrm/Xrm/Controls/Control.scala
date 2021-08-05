@@ -57,8 +57,7 @@ trait Control
 }
 object Control {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getControlType: () => ControlType | String,
     getLabel: () => String,
     getName: () => String,
@@ -70,16 +69,12 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  @scala.inline
-  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+  extension [Self <: Control](x: Self) {
     
-    @scala.inline
-    def setGetControlType(value: () => ControlType | String): Self = StObject.set(x, "getControlType", js.Any.fromFunction0(value))
+    inline def setGetControlType(value: () => ControlType | String): Self = StObject.set(x, "getControlType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParent(value: () => Section): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => Section): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
   }
 }

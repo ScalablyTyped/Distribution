@@ -12,16 +12,13 @@ trait BeginCallbackEventArgs
 }
 object BeginCallbackEventArgs {
   
-  @scala.inline
-  def apply(command: String, sender: Control): BeginCallbackEventArgs = {
+  inline def apply(command: String, sender: Control): BeginCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class BeginCallbackEventArgsMutableBuilder[Self <: BeginCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BeginCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

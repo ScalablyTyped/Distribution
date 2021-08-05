@@ -12,25 +12,19 @@ trait Major extends StObject {
 }
 object Major {
   
-  @scala.inline
-  def apply(): Major = {
+  inline def apply(): Major = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Major]
   }
   
-  @scala.inline
-  implicit class MajorMutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
+  extension [Self <: Major](x: Self) {
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+    inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+    inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
   }
 }

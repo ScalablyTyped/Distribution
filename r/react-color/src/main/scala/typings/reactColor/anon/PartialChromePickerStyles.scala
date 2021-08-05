@@ -36,73 +36,51 @@ trait PartialChromePickerStyles extends StObject {
 }
 object PartialChromePickerStyles {
   
-  @scala.inline
-  def apply(): PartialChromePickerStyles = {
+  inline def apply(): PartialChromePickerStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialChromePickerStyles]
   }
   
-  @scala.inline
-  implicit class PartialChromePickerStylesMutableBuilder[Self <: PartialChromePickerStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PartialChromePickerStyles](x: Self) {
     
-    @scala.inline
-    def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAlpha(value: CSSProperties): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: CSSProperties): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "Alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "Alpha", js.undefined)
     
-    @scala.inline
-    def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setColor(value: CSSProperties): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: CSSProperties): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setControls(value: CSSProperties): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: CSSProperties): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+    inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
-    @scala.inline
-    def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHueUndefined: Self = StObject.set(x, "Hue", js.undefined)
+    inline def setHueUndefined: Self = StObject.set(x, "Hue", js.undefined)
     
-    @scala.inline
-    def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
+    inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
     
-    @scala.inline
-    def setSaturation(value: CSSProperties): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
+    inline def setSaturation(value: CSSProperties): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturationUndefined: Self = StObject.set(x, "Saturation", js.undefined)
+    inline def setSaturationUndefined: Self = StObject.set(x, "Saturation", js.undefined)
     
-    @scala.inline
-    def setSwatch(value: CSSProperties): Self = StObject.set(x, "swatch", value.asInstanceOf[js.Any])
+    inline def setSwatch(value: CSSProperties): Self = StObject.set(x, "swatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwatchUndefined: Self = StObject.set(x, "swatch", js.undefined)
+    inline def setSwatchUndefined: Self = StObject.set(x, "swatch", js.undefined)
     
-    @scala.inline
-    def setToggles(value: CSSProperties): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
+    inline def setToggles(value: CSSProperties): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTogglesUndefined: Self = StObject.set(x, "toggles", js.undefined)
+    inline def setTogglesUndefined: Self = StObject.set(x, "toggles", js.undefined)
   }
 }

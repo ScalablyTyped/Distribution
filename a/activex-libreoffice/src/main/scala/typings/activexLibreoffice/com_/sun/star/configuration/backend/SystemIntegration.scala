@@ -15,8 +15,7 @@ trait SystemIntegration
      with XInitialization
 object SystemIntegration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getOwnUpdateHandler: String => XUpdateHandler,
     getUpdateHandler: (String, String) => XUpdateHandler,

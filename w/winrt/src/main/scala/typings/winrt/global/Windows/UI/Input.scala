@@ -122,8 +122,7 @@ object Input {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.UI.Input.EdgeGesture = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.Input.EdgeGesture]
+    inline def getForCurrentView(): typings.winrt.Windows.UI.Input.EdgeGesture = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.Input.EdgeGesture]
   }
   
   @JSGlobal("Windows.UI.Input.EdgeGestureEventArgs")
@@ -762,15 +761,11 @@ object Input {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getCurrentPoint(pointerId: Double): typings.winrt.Windows.UI.Input.PointerPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Input.PointerPoint]
-    @scala.inline
-    def getCurrentPoint(pointerId: Double, transform: IPointerPointTransform): typings.winrt.Windows.UI.Input.PointerPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.UI.Input.PointerPoint]
+    inline def getCurrentPoint(pointerId: Double): typings.winrt.Windows.UI.Input.PointerPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.UI.Input.PointerPoint]
+    inline def getCurrentPoint(pointerId: Double, transform: IPointerPointTransform): typings.winrt.Windows.UI.Input.PointerPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPoint")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.UI.Input.PointerPoint]
     
-    @scala.inline
-    def getIntermediatePoints(pointerId: Double): IVector[typings.winrt.Windows.UI.Input.PointerPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrt.Windows.UI.Input.PointerPoint]]
-    @scala.inline
-    def getIntermediatePoints(pointerId: Double, transform: IPointerPointTransform): IVector[typings.winrt.Windows.UI.Input.PointerPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[IVector[typings.winrt.Windows.UI.Input.PointerPoint]]
+    inline def getIntermediatePoints(pointerId: Double): IVector[typings.winrt.Windows.UI.Input.PointerPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrt.Windows.UI.Input.PointerPoint]]
+    inline def getIntermediatePoints(pointerId: Double, transform: IPointerPointTransform): IVector[typings.winrt.Windows.UI.Input.PointerPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntermediatePoints")(pointerId.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[IVector[typings.winrt.Windows.UI.Input.PointerPoint]]
   }
   
   @JSGlobal("Windows.UI.Input.PointerPointProperties")
@@ -901,8 +896,7 @@ object Input {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.UI.Input.PointerVisualizationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.Input.PointerVisualizationSettings]
+    inline def getForCurrentView(): typings.winrt.Windows.UI.Input.PointerVisualizationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.Input.PointerVisualizationSettings]
   }
   
   @JSGlobal("Windows.UI.Input.RightTappedEventArgs")

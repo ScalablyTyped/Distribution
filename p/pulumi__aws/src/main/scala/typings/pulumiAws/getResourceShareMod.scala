@@ -13,10 +13,8 @@ object getResourceShareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getResourceShare(args: GetResourceShareArgs): js.Promise[GetResourceShareResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResourceShareResult]]
-  @scala.inline
-  def getResourceShare(args: GetResourceShareArgs, opts: InvokeOptions): js.Promise[GetResourceShareResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResourceShareResult]]
+  inline def getResourceShare(args: GetResourceShareArgs): js.Promise[GetResourceShareResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResourceShareResult]]
+  inline def getResourceShare(args: GetResourceShareArgs, opts: InvokeOptions): js.Promise[GetResourceShareResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResourceShareResult]]
   
   trait GetResourceShareArgs extends StObject {
     
@@ -42,35 +40,26 @@ object getResourceShareMod {
   }
   object GetResourceShareArgs {
     
-    @scala.inline
-    def apply(name: String, resourceOwner: String): GetResourceShareArgs = {
+    inline def apply(name: String, resourceOwner: String): GetResourceShareArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetResourceShareArgs]
     }
     
-    @scala.inline
-    implicit class GetResourceShareArgsMutableBuilder[Self <: GetResourceShareArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetResourceShareArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetResourceShareFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetResourceShareFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetResourceShareFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetResourceShareFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceOwner(value: String): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
+      inline def setResourceOwner(value: String): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -109,8 +98,7 @@ object getResourceShareMod {
   }
   object GetResourceShareResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       id: String,
       name: String,
@@ -123,38 +111,27 @@ object getResourceShareMod {
       __obj.asInstanceOf[GetResourceShareResult]
     }
     
-    @scala.inline
-    implicit class GetResourceShareResultMutableBuilder[Self <: GetResourceShareResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetResourceShareResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ram.GetResourceShareFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ram.GetResourceShareFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ram.GetResourceShareFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ram.GetResourceShareFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwningAccountId(value: String): Self = StObject.set(x, "owningAccountId", value.asInstanceOf[js.Any])
+      inline def setOwningAccountId(value: String): Self = StObject.set(x, "owningAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceOwner(value: String): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
+      inline def setResourceOwner(value: String): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

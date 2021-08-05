@@ -13,8 +13,6 @@ object withDefaultsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withDefaults(oldDefaults: Null, newDefaults: RequestParameters): EndpointInterface[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(oldDefaults.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[EndpointInterface[js.Object]]
-  @scala.inline
-  def withDefaults(oldDefaults: EndpointDefaults, newDefaults: RequestParameters): EndpointInterface[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(oldDefaults.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[EndpointInterface[js.Object]]
+  inline def withDefaults(oldDefaults: Null, newDefaults: RequestParameters): EndpointInterface[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(oldDefaults.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[EndpointInterface[js.Object]]
+  inline def withDefaults(oldDefaults: EndpointDefaults, newDefaults: RequestParameters): EndpointInterface[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(oldDefaults.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[EndpointInterface[js.Object]]
 }

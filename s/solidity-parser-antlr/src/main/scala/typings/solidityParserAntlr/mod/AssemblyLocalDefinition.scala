@@ -15,17 +15,14 @@ trait AssemblyLocalDefinition
 }
 object AssemblyLocalDefinition {
   
-  @scala.inline
-  def apply(): AssemblyLocalDefinition = {
+  inline def apply(): AssemblyLocalDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyLocalDefinition")
     __obj.asInstanceOf[AssemblyLocalDefinition]
   }
   
-  @scala.inline
-  implicit class AssemblyLocalDefinitionMutableBuilder[Self <: AssemblyLocalDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyLocalDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

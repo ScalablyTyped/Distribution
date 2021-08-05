@@ -12,19 +12,15 @@ trait ClusterDeleteVotingConfigExclusions
 }
 object ClusterDeleteVotingConfigExclusions {
   
-  @scala.inline
-  def apply(): ClusterDeleteVotingConfigExclusions = {
+  inline def apply(): ClusterDeleteVotingConfigExclusions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterDeleteVotingConfigExclusions]
   }
   
-  @scala.inline
-  implicit class ClusterDeleteVotingConfigExclusionsMutableBuilder[Self <: ClusterDeleteVotingConfigExclusions] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterDeleteVotingConfigExclusions](x: Self) {
     
-    @scala.inline
-    def setWait_for_removal(value: Boolean): Self = StObject.set(x, "wait_for_removal", value.asInstanceOf[js.Any])
+    inline def setWait_for_removal(value: Boolean): Self = StObject.set(x, "wait_for_removal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_removalUndefined: Self = StObject.set(x, "wait_for_removal", js.undefined)
+    inline def setWait_for_removalUndefined: Self = StObject.set(x, "wait_for_removal", js.undefined)
   }
 }

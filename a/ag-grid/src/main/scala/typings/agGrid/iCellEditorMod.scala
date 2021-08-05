@@ -42,47 +42,34 @@ object iCellEditorMod {
   }
   object ICellEditor {
     
-    @scala.inline
-    def apply(getValue: () => js.Any): ICellEditor = {
+    inline def apply(getValue: () => js.Any): ICellEditor = {
       val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
       __obj.asInstanceOf[ICellEditor]
     }
     
-    @scala.inline
-    implicit class ICellEditorMutableBuilder[Self <: ICellEditor] (val x: Self) extends AnyVal {
+    extension [Self <: ICellEditor](x: Self) {
       
-      @scala.inline
-      def setFocusIn(value: () => Unit): Self = StObject.set(x, "focusIn", js.Any.fromFunction0(value))
+      inline def setFocusIn(value: () => Unit): Self = StObject.set(x, "focusIn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusInUndefined: Self = StObject.set(x, "focusIn", js.undefined)
+      inline def setFocusInUndefined: Self = StObject.set(x, "focusIn", js.undefined)
       
-      @scala.inline
-      def setFocusOut(value: () => Unit): Self = StObject.set(x, "focusOut", js.Any.fromFunction0(value))
+      inline def setFocusOut(value: () => Unit): Self = StObject.set(x, "focusOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusOutUndefined: Self = StObject.set(x, "focusOut", js.undefined)
+      inline def setFocusOutUndefined: Self = StObject.set(x, "focusOut", js.undefined)
       
-      @scala.inline
-      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancelAfterEnd(value: () => Boolean): Self = StObject.set(x, "isCancelAfterEnd", js.Any.fromFunction0(value))
+      inline def setIsCancelAfterEnd(value: () => Boolean): Self = StObject.set(x, "isCancelAfterEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancelAfterEndUndefined: Self = StObject.set(x, "isCancelAfterEnd", js.undefined)
+      inline def setIsCancelAfterEndUndefined: Self = StObject.set(x, "isCancelAfterEnd", js.undefined)
       
-      @scala.inline
-      def setIsCancelBeforeStart(value: () => Boolean): Self = StObject.set(x, "isCancelBeforeStart", js.Any.fromFunction0(value))
+      inline def setIsCancelBeforeStart(value: () => Boolean): Self = StObject.set(x, "isCancelBeforeStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancelBeforeStartUndefined: Self = StObject.set(x, "isCancelBeforeStart", js.undefined)
+      inline def setIsCancelBeforeStartUndefined: Self = StObject.set(x, "isCancelBeforeStart", js.undefined)
       
-      @scala.inline
-      def setIsPopup(value: () => Boolean): Self = StObject.set(x, "isPopup", js.Any.fromFunction0(value))
+      inline def setIsPopup(value: () => Boolean): Self = StObject.set(x, "isPopup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPopupUndefined: Self = StObject.set(x, "isPopup", js.undefined)
+      inline def setIsPopupUndefined: Self = StObject.set(x, "isPopup", js.undefined)
     }
   }
   
@@ -92,8 +79,7 @@ object iCellEditorMod {
        with IComponent[ICellEditorParams]
   object ICellEditorComp {
     
-    @scala.inline
-    def apply(getGui: () => HTMLElement, getValue: () => js.Any): ICellEditorComp = {
+    inline def apply(getGui: () => HTMLElement, getValue: () => js.Any): ICellEditorComp = {
       val __obj = js.Dynamic.literal(getGui = js.Any.fromFunction0(getGui), getValue = js.Any.fromFunction0(getValue))
       __obj.asInstanceOf[ICellEditorComp]
     }

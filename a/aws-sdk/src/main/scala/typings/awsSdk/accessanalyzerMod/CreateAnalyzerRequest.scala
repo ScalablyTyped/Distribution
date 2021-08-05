@@ -33,41 +33,30 @@ trait CreateAnalyzerRequest extends StObject {
 }
 object CreateAnalyzerRequest {
   
-  @scala.inline
-  def apply(analyzerName: Name, `type`: Type): CreateAnalyzerRequest = {
+  inline def apply(analyzerName: Name, `type`: Type): CreateAnalyzerRequest = {
     val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAnalyzerRequest]
   }
   
-  @scala.inline
-  implicit class CreateAnalyzerRequestMutableBuilder[Self <: CreateAnalyzerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAnalyzerRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
+    inline def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveRules(value: InlineArchiveRulesList): Self = StObject.set(x, "archiveRules", value.asInstanceOf[js.Any])
+    inline def setArchiveRules(value: InlineArchiveRulesList): Self = StObject.set(x, "archiveRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveRulesUndefined: Self = StObject.set(x, "archiveRules", js.undefined)
+    inline def setArchiveRulesUndefined: Self = StObject.set(x, "archiveRules", js.undefined)
     
-    @scala.inline
-    def setArchiveRulesVarargs(value: InlineArchiveRule*): Self = StObject.set(x, "archiveRules", js.Array(value :_*))
+    inline def setArchiveRulesVarargs(value: InlineArchiveRule*): Self = StObject.set(x, "archiveRules", js.Array(value :_*))
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

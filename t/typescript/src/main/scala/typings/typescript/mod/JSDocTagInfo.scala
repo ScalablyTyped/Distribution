@@ -12,22 +12,17 @@ trait JSDocTagInfo extends StObject {
 }
 object JSDocTagInfo {
   
-  @scala.inline
-  def apply(name: java.lang.String): JSDocTagInfo = {
+  inline def apply(name: java.lang.String): JSDocTagInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSDocTagInfo]
   }
   
-  @scala.inline
-  implicit class JSDocTagInfoMutableBuilder[Self <: JSDocTagInfo] (val x: Self) extends AnyVal {
+  extension [Self <: JSDocTagInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

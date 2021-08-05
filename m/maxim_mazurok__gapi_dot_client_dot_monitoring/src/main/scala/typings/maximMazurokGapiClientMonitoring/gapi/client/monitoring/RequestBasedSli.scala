@@ -17,25 +17,19 @@ trait RequestBasedSli extends StObject {
 }
 object RequestBasedSli {
   
-  @scala.inline
-  def apply(): RequestBasedSli = {
+  inline def apply(): RequestBasedSli = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestBasedSli]
   }
   
-  @scala.inline
-  implicit class RequestBasedSliMutableBuilder[Self <: RequestBasedSli] (val x: Self) extends AnyVal {
+  extension [Self <: RequestBasedSli](x: Self) {
     
-    @scala.inline
-    def setDistributionCut(value: DistributionCut): Self = StObject.set(x, "distributionCut", value.asInstanceOf[js.Any])
+    inline def setDistributionCut(value: DistributionCut): Self = StObject.set(x, "distributionCut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionCutUndefined: Self = StObject.set(x, "distributionCut", js.undefined)
+    inline def setDistributionCutUndefined: Self = StObject.set(x, "distributionCut", js.undefined)
     
-    @scala.inline
-    def setGoodTotalRatio(value: TimeSeriesRatio): Self = StObject.set(x, "goodTotalRatio", value.asInstanceOf[js.Any])
+    inline def setGoodTotalRatio(value: TimeSeriesRatio): Self = StObject.set(x, "goodTotalRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoodTotalRatioUndefined: Self = StObject.set(x, "goodTotalRatio", js.undefined)
+    inline def setGoodTotalRatioUndefined: Self = StObject.set(x, "goodTotalRatio", js.undefined)
   }
 }

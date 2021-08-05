@@ -14,8 +14,7 @@ object updateInfoBuilderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def writeUpdateInfoFiles(updateInfoFileTasks: js.Array[UpdateInfoFileTask], packager: Packager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUpdateInfoFiles")(updateInfoFileTasks.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeUpdateInfoFiles(updateInfoFileTasks: js.Array[UpdateInfoFileTask], packager: Packager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUpdateInfoFiles")(updateInfoFileTasks.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait UpdateInfoFileTask extends StObject {
     
@@ -29,8 +28,7 @@ object updateInfoBuilderMod {
   }
   object UpdateInfoFileTask {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       file: String,
       info: UpdateInfo,
       packager: PlatformPackager[js.Any],
@@ -40,20 +38,15 @@ object updateInfoBuilderMod {
       __obj.asInstanceOf[UpdateInfoFileTask]
     }
     
-    @scala.inline
-    implicit class UpdateInfoFileTaskMutableBuilder[Self <: UpdateInfoFileTask] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateInfoFileTask](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: UpdateInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: UpdateInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishConfiguration(value: PublishConfiguration): Self = StObject.set(x, "publishConfiguration", value.asInstanceOf[js.Any])
+      inline def setPublishConfiguration(value: PublishConfiguration): Self = StObject.set(x, "publishConfiguration", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,28 +14,21 @@ trait DisplayName extends StObject {
 }
 object DisplayName {
   
-  @scala.inline
-  def apply(validationURL: String): DisplayName = {
+  inline def apply(validationURL: String): DisplayName = {
     val __obj = js.Dynamic.literal(validationURL = validationURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayName]
   }
   
-  @scala.inline
-  implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayName](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMerchantIdentifier(value: String): Self = StObject.set(x, "merchantIdentifier", value.asInstanceOf[js.Any])
+    inline def setMerchantIdentifier(value: String): Self = StObject.set(x, "merchantIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdentifierUndefined: Self = StObject.set(x, "merchantIdentifier", js.undefined)
+    inline def setMerchantIdentifierUndefined: Self = StObject.set(x, "merchantIdentifier", js.undefined)
     
-    @scala.inline
-    def setValidationURL(value: String): Self = StObject.set(x, "validationURL", value.asInstanceOf[js.Any])
+    inline def setValidationURL(value: String): Self = StObject.set(x, "validationURL", value.asInstanceOf[js.Any])
   }
 }

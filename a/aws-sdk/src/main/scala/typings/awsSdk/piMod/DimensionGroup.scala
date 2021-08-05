@@ -23,31 +23,23 @@ trait DimensionGroup extends StObject {
 }
 object DimensionGroup {
   
-  @scala.inline
-  def apply(Group: String): DimensionGroup = {
+  inline def apply(Group: String): DimensionGroup = {
     val __obj = js.Dynamic.literal(Group = Group.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionGroup]
   }
   
-  @scala.inline
-  implicit class DimensionGroupMutableBuilder[Self <: DimensionGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionGroup](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: StringList): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: StringList): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: String*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

@@ -5,17 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def VERSION: java.lang.String = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: java.lang.String = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
 
-@scala.inline
-def runner: typings.karma.mod.Runner_ = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("runner").asInstanceOf[typings.karma.mod.Runner_]
+inline def runner: typings.karma.mod.Runner_ = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("runner").asInstanceOf[typings.karma.mod.Runner_]
 
-@scala.inline
-def server: typings.karma.mod.DeprecatedServer = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("server").asInstanceOf[typings.karma.mod.DeprecatedServer]
+inline def server: typings.karma.mod.DeprecatedServer = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("server").asInstanceOf[typings.karma.mod.DeprecatedServer]
 
-@scala.inline
-def stopper: typings.karma.mod.Stopper_ = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("stopper").asInstanceOf[typings.karma.mod.Stopper_]
+inline def stopper: typings.karma.mod.Stopper_ = typings.karma.mod.^.asInstanceOf[js.Dynamic].selectDynamic("stopper").asInstanceOf[typings.karma.mod.Stopper_]
 
 type ConstructorFn = js.Function | (org.scalablytyped.runtime.Instantiable1[/* params (repeated) */ js.Any, js.Any])
 

@@ -14,28 +14,21 @@ trait BackgroundImageTagProps extends StObject {
 }
 object BackgroundImageTagProps {
   
-  @scala.inline
-  def apply(style: CSSPropsWithoutBackground & BackgroundImageBackgroundProp): BackgroundImageTagProps = {
+  inline def apply(style: CSSPropsWithoutBackground & BackgroundImageBackgroundProp): BackgroundImageTagProps = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundImageTagProps]
   }
   
-  @scala.inline
-  implicit class BackgroundImageTagPropsMutableBuilder[Self <: BackgroundImageTagProps] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundImageTagProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSPropsWithoutBackground & BackgroundImageBackgroundProp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropsWithoutBackground & BackgroundImageBackgroundProp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -20,52 +20,37 @@ trait IRoute extends StObject {
 }
 object IRoute {
   
-  @scala.inline
-  def apply(): IRoute = {
+  inline def apply(): IRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRoute]
   }
   
-  @scala.inline
-  implicit class IRouteMutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
+  extension [Self <: IRoute](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: js.Array[LatLng_]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[LatLng_]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setCoordinatesVarargs(value: LatLng_ *): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: LatLng_ *): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setInstructions(value: js.Array[IInstruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+    inline def setInstructions(value: js.Array[IInstruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
+    inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
-    @scala.inline
-    def setInstructionsVarargs(value: IInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+    inline def setInstructionsVarargs(value: IInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSummary(value: IRouteSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: IRouteSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setWaypoints(value: js.Array[LatLng_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[LatLng_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
+    inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
     
-    @scala.inline
-    def setWaypointsVarargs(value: LatLng_ *): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: LatLng_ *): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

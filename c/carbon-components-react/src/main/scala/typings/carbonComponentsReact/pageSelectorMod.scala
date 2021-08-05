@@ -23,20 +23,16 @@ object pageSelectorMod extends Shortcut {
   }
   object PageSelectorProps {
     
-    @scala.inline
-    def apply(currentPage: Double, id: String, totalPages: Double): PageSelectorProps = {
+    inline def apply(currentPage: Double, id: String, totalPages: Double): PageSelectorProps = {
       val __obj = js.Dynamic.literal(currentPage = currentPage.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], totalPages = totalPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageSelectorProps]
     }
     
-    @scala.inline
-    implicit class PageSelectorPropsMutableBuilder[Self <: PageSelectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: PageSelectorProps](x: Self) {
       
-      @scala.inline
-      def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     }
   }
   

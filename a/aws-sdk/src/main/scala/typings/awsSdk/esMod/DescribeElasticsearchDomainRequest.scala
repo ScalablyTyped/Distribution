@@ -13,16 +13,13 @@ trait DescribeElasticsearchDomainRequest extends StObject {
 }
 object DescribeElasticsearchDomainRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DescribeElasticsearchDomainRequest = {
+  inline def apply(DomainName: DomainName): DescribeElasticsearchDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeElasticsearchDomainRequest]
   }
   
-  @scala.inline
-  implicit class DescribeElasticsearchDomainRequestMutableBuilder[Self <: DescribeElasticsearchDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticsearchDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

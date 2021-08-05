@@ -333,68 +333,48 @@ object libMod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+      inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+      inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
       
-      @scala.inline
-      def setHighlight(value: (/* str */ String, /* lang */ String) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
+      inline def setHighlight(value: (/* str */ String, /* lang */ String) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHighlightNull: Self = StObject.set(x, "highlight", null)
+      inline def setHighlightNull: Self = StObject.set(x, "highlight", null)
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
+      inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
+      inline def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
       
-      @scala.inline
-      def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
+      inline def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkifyUndefined: Self = StObject.set(x, "linkify", js.undefined)
+      inline def setLinkifyUndefined: Self = StObject.set(x, "linkify", js.undefined)
       
-      @scala.inline
-      def setQuotes(value: String | js.Array[String]): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: String | js.Array[String]): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+      inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      @scala.inline
-      def setQuotesVarargs(value: String*): Self = StObject.set(x, "quotes", js.Array(value :_*))
+      inline def setQuotesVarargs(value: String*): Self = StObject.set(x, "quotes", js.Array(value :_*))
       
-      @scala.inline
-      def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
+      inline def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypographerUndefined: Self = StObject.set(x, "typographer", js.undefined)
+      inline def setTypographerUndefined: Self = StObject.set(x, "typographer", js.undefined)
       
-      @scala.inline
-      def setXhtmlOut(value: Boolean): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
+      inline def setXhtmlOut(value: Boolean): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhtmlOutUndefined: Self = StObject.set(x, "xhtmlOut", js.undefined)
+      inline def setXhtmlOutUndefined: Self = StObject.set(x, "xhtmlOut", js.undefined)
     }
   }
   
@@ -429,14 +409,11 @@ object libMod extends Shortcut {
   trait PresetName extends StObject
   object PresetName {
     
-    @scala.inline
-    def default: typings.markdownIt.markdownItStrings.default = "default".asInstanceOf[typings.markdownIt.markdownItStrings.default]
+    inline def default: typings.markdownIt.markdownItStrings.default = "default".asInstanceOf[typings.markdownIt.markdownItStrings.default]
     
-    @scala.inline
-    def commonmark: typings.markdownIt.markdownItStrings.commonmark = "commonmark".asInstanceOf[typings.markdownIt.markdownItStrings.commonmark]
+    inline def commonmark: typings.markdownIt.markdownItStrings.commonmark = "commonmark".asInstanceOf[typings.markdownIt.markdownItStrings.commonmark]
     
-    @scala.inline
-    def zero: typings.markdownIt.markdownItStrings.zero = "zero".asInstanceOf[typings.markdownIt.markdownItStrings.zero]
+    inline def zero: typings.markdownIt.markdownItStrings.zero = "zero".asInstanceOf[typings.markdownIt.markdownItStrings.zero]
   }
   
   type _To = js.Object & MarkdownItConstructor

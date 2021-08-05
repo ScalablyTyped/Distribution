@@ -10,16 +10,13 @@ trait AnimatedBoolean extends StObject {
 }
 object AnimatedBoolean {
   
-  @scala.inline
-  def apply(animated: Boolean): AnimatedBoolean = {
+  inline def apply(animated: Boolean): AnimatedBoolean = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedBoolean]
   }
   
-  @scala.inline
-  implicit class AnimatedBooleanMutableBuilder[Self <: AnimatedBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: AnimatedBoolean](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
   }
 }

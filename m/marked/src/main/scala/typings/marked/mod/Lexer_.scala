@@ -28,15 +28,12 @@ object Lexer_ {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def lex(src: TokensList): TokensList = ^.asInstanceOf[js.Dynamic].applyDynamic("lex")(src.asInstanceOf[js.Any]).asInstanceOf[TokensList]
-  @scala.inline
-  def lex(src: TokensList, options: MarkedOptions): TokensList = (^.asInstanceOf[js.Dynamic].applyDynamic("lex")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TokensList]
+  inline def lex(src: TokensList): TokensList = ^.asInstanceOf[js.Dynamic].applyDynamic("lex")(src.asInstanceOf[js.Any]).asInstanceOf[TokensList]
+  inline def lex(src: TokensList, options: MarkedOptions): TokensList = (^.asInstanceOf[js.Dynamic].applyDynamic("lex")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TokensList]
   
   /* static member */
   @JSImport("marked", "Lexer.rules")
   @js.native
   def rules: Rules = js.native
-  @scala.inline
-  def rules_=(x: Rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
+  inline def rules_=(x: Rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
 }

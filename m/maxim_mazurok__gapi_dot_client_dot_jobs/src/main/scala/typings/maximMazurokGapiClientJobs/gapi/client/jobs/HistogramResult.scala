@@ -22,29 +22,23 @@ trait HistogramResult extends StObject {
 }
 object HistogramResult {
   
-  @scala.inline
-  def apply(): HistogramResult = {
+  inline def apply(): HistogramResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramResult]
   }
   
-  @scala.inline
-  implicit class HistogramResultMutableBuilder[Self <: HistogramResult] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramResult](x: Self) {
     
-    @scala.inline
-    def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
+    inline def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
+    inline def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
     
-    @scala.inline
-    def setValues(
+    inline def setValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.HistogramResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

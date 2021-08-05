@@ -52,24 +52,21 @@ object SerialCommunication {
       * @return Returns an IAsyncOperation(SerialDevice) object that returns the results of the operation.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SerialCommunication.SerialDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SerialCommunication.SerialDevice]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SerialCommunication.SerialDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SerialCommunication.SerialDevice]]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string that the app can pass to DeviceInformation.FindAllAsync in order to find all serial devices on the system.
       * @return String formatted as an AQS query.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
     /**
       * Gets an Advanced Query Syntax (AQS) string that the app can pass to DeviceInformation.FindAllAsync in order to find a serial device by specifying its port name.
       * @param portName The serial port name. For example, "COM1".
       * @return String formatted as an AQS query.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(portName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(portName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(portName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(portName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string that the app can pass to DeviceInformation.FindAllAsync in order to find a specific Serial-to-USB device by specifying it's VID and PID.
@@ -78,8 +75,7 @@ object SerialCommunication {
       * @return String formatted as an AQS query.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelectorFromUsbVidPid(vendorId: Double, productId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromUsbVidPid")(vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDeviceSelectorFromUsbVidPid(vendorId: Double, productId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromUsbVidPid")(vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /** Defines values for error conditions that can occur on the serial port. */

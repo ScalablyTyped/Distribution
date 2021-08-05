@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoDataTable")
 @js.native
-class IMsoDataTable protected ()
+/* private */ class IMsoDataTable ()
   extends StObject
      with typings.activexOffice.Office.IMsoDataTable {
   
@@ -40,7 +40,7 @@ class IMsoDataTable protected ()
   /* CompleteClass */
   var HasBorderVertical: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoDataTable_typekey")
   var OfficeDotIMsoDataTable_typekey: typings.activexOffice.Office.IMsoDataTable = js.native
   

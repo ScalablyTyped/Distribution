@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFTriggerWeekOfMonth extends StObject
 object MFTriggerWeekOfMonth {
   
-  @scala.inline
-  def FirstWeek: `1` = 1.asInstanceOf[`1`]
+  inline def FirstWeek: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def FourthWeek: `4` = 4.asInstanceOf[`4`]
+  inline def FourthWeek: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def LastWeek: `5` = 5.asInstanceOf[`5`]
+  inline def LastWeek: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def SecondWeek: `2` = 2.asInstanceOf[`2`]
+  inline def SecondWeek: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ThirdWeek: `3` = 3.asInstanceOf[`3`]
+  inline def ThirdWeek: `3` = 3.asInstanceOf[`3`]
 }

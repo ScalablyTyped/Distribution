@@ -20,17 +20,14 @@ object typesTableInUseExceptionMod {
   }
   object TableInUseException {
     
-    @scala.inline
-    def apply(): TableInUseException = {
+    inline def apply(): TableInUseException = {
       val __obj = js.Dynamic.literal(name = "TableInUseException")
       __obj.asInstanceOf[TableInUseException]
     }
     
-    @scala.inline
-    implicit class TableInUseExceptionMutableBuilder[Self <: TableInUseException] (val x: Self) extends AnyVal {
+    extension [Self <: TableInUseException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,20 +40,16 @@ object typesTableInUseExceptionMod {
   }
   object TableInUseExceptionDetails {
     
-    @scala.inline
-    def apply(): TableInUseExceptionDetails = {
+    inline def apply(): TableInUseExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableInUseExceptionDetails]
     }
     
-    @scala.inline
-    implicit class TableInUseExceptionDetailsMutableBuilder[Self <: TableInUseExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TableInUseExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

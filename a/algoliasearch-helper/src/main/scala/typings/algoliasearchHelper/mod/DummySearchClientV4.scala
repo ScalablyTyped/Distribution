@@ -10,16 +10,13 @@ trait DummySearchClientV4 extends StObject {
 }
 object DummySearchClientV4 {
   
-  @scala.inline
-  def apply(transporter: js.Any): DummySearchClientV4 = {
+  inline def apply(transporter: js.Any): DummySearchClientV4 = {
     val __obj = js.Dynamic.literal(transporter = transporter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DummySearchClientV4]
   }
   
-  @scala.inline
-  implicit class DummySearchClientV4MutableBuilder[Self <: DummySearchClientV4] (val x: Self) extends AnyVal {
+  extension [Self <: DummySearchClientV4](x: Self) {
     
-    @scala.inline
-    def setTransporter(value: js.Any): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
+    inline def setTransporter(value: js.Any): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
   }
 }

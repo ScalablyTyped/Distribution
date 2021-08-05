@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object arrayMapMod {
   
   /* was `typeof core.Array.map` */
-  @scala.inline
-  def apply[T, U](
+  inline def apply[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U]
   ): Array[U] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
-  @scala.inline
-  def apply[T, U](
+  inline def apply[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U],
     thisArg: js.Any

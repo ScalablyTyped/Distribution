@@ -60,6 +60,5 @@ class Mineral protected ()
 }
 object Mineral {
   
-  @scala.inline
-  def apply: MineralConstructor = js.Dynamic.global.selectDynamic("Mineral").asInstanceOf[MineralConstructor]
+  inline def apply: MineralConstructor = js.Dynamic.global.selectDynamic("Mineral").asInstanceOf[MineralConstructor]
 }

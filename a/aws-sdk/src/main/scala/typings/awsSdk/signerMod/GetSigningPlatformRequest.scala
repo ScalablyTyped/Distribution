@@ -13,16 +13,13 @@ trait GetSigningPlatformRequest extends StObject {
 }
 object GetSigningPlatformRequest {
   
-  @scala.inline
-  def apply(platformId: PlatformId): GetSigningPlatformRequest = {
+  inline def apply(platformId: PlatformId): GetSigningPlatformRequest = {
     val __obj = js.Dynamic.literal(platformId = platformId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSigningPlatformRequest]
   }
   
-  @scala.inline
-  implicit class GetSigningPlatformRequestMutableBuilder[Self <: GetSigningPlatformRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSigningPlatformRequest](x: Self) {
     
-    @scala.inline
-    def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
+    inline def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
   }
 }

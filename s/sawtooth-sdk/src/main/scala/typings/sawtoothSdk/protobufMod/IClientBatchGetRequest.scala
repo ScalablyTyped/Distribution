@@ -11,22 +11,17 @@ trait IClientBatchGetRequest extends StObject {
 }
 object IClientBatchGetRequest {
   
-  @scala.inline
-  def apply(): IClientBatchGetRequest = {
+  inline def apply(): IClientBatchGetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBatchGetRequest]
   }
   
-  @scala.inline
-  implicit class IClientBatchGetRequestMutableBuilder[Self <: IClientBatchGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBatchGetRequest](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdNull: Self = StObject.set(x, "batchId", null)
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
   }
 }

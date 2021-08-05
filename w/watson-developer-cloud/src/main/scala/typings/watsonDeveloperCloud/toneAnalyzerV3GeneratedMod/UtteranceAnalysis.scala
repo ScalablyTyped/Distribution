@@ -21,31 +21,23 @@ trait UtteranceAnalysis extends StObject {
 }
 object UtteranceAnalysis {
   
-  @scala.inline
-  def apply(tones: js.Array[ToneChatScore], utterance_id: Double, utterance_text: String): UtteranceAnalysis = {
+  inline def apply(tones: js.Array[ToneChatScore], utterance_id: Double, utterance_text: String): UtteranceAnalysis = {
     val __obj = js.Dynamic.literal(tones = tones.asInstanceOf[js.Any], utterance_id = utterance_id.asInstanceOf[js.Any], utterance_text = utterance_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[UtteranceAnalysis]
   }
   
-  @scala.inline
-  implicit class UtteranceAnalysisMutableBuilder[Self <: UtteranceAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: UtteranceAnalysis](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setTones(value: js.Array[ToneChatScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
+    inline def setTones(value: js.Array[ToneChatScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTonesVarargs(value: ToneChatScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
+    inline def setTonesVarargs(value: ToneChatScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
     
-    @scala.inline
-    def setUtterance_id(value: Double): Self = StObject.set(x, "utterance_id", value.asInstanceOf[js.Any])
+    inline def setUtterance_id(value: Double): Self = StObject.set(x, "utterance_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtterance_text(value: String): Self = StObject.set(x, "utterance_text", value.asInstanceOf[js.Any])
+    inline def setUtterance_text(value: String): Self = StObject.set(x, "utterance_text", value.asInstanceOf[js.Any])
   }
 }

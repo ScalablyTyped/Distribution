@@ -19,25 +19,19 @@ trait UserPoolAdminCreateUserConfig extends StObject {
 }
 object UserPoolAdminCreateUserConfig {
   
-  @scala.inline
-  def apply(): UserPoolAdminCreateUserConfig = {
+  inline def apply(): UserPoolAdminCreateUserConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPoolAdminCreateUserConfig]
   }
   
-  @scala.inline
-  implicit class UserPoolAdminCreateUserConfigMutableBuilder[Self <: UserPoolAdminCreateUserConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolAdminCreateUserConfig](x: Self) {
     
-    @scala.inline
-    def setAllowAdminCreateUserOnly(value: Input[Boolean]): Self = StObject.set(x, "allowAdminCreateUserOnly", value.asInstanceOf[js.Any])
+    inline def setAllowAdminCreateUserOnly(value: Input[Boolean]): Self = StObject.set(x, "allowAdminCreateUserOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAdminCreateUserOnlyUndefined: Self = StObject.set(x, "allowAdminCreateUserOnly", js.undefined)
+    inline def setAllowAdminCreateUserOnlyUndefined: Self = StObject.set(x, "allowAdminCreateUserOnly", js.undefined)
     
-    @scala.inline
-    def setInviteMessageTemplate(value: Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]): Self = StObject.set(x, "inviteMessageTemplate", value.asInstanceOf[js.Any])
+    inline def setInviteMessageTemplate(value: Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]): Self = StObject.set(x, "inviteMessageTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInviteMessageTemplateUndefined: Self = StObject.set(x, "inviteMessageTemplate", js.undefined)
+    inline def setInviteMessageTemplateUndefined: Self = StObject.set(x, "inviteMessageTemplate", js.undefined)
   }
 }

@@ -17,20 +17,16 @@ trait X86MemOperand
 }
 object X86MemOperand {
   
-  @scala.inline
-  def apply(size: Double, value: Base): X86MemOperand = {
+  inline def apply(size: Double, value: Base): X86MemOperand = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[X86MemOperand]
   }
   
-  @scala.inline
-  implicit class X86MemOperandMutableBuilder[Self <: X86MemOperand] (val x: Self) extends AnyVal {
+  extension [Self <: X86MemOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Base): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Base): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

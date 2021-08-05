@@ -10,16 +10,13 @@ trait EnumValuesSystem extends StObject {
 }
 object EnumValuesSystem {
   
-  @scala.inline
-  def apply(enumValues: System): EnumValuesSystem = {
+  inline def apply(enumValues: System): EnumValuesSystem = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesSystem]
   }
   
-  @scala.inline
-  implicit class EnumValuesSystemMutableBuilder[Self <: EnumValuesSystem] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesSystem](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: System): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: System): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

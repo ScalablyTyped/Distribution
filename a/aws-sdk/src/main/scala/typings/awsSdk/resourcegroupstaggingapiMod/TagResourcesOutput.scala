@@ -13,19 +13,15 @@ trait TagResourcesOutput extends StObject {
 }
 object TagResourcesOutput {
   
-  @scala.inline
-  def apply(): TagResourcesOutput = {
+  inline def apply(): TagResourcesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagResourcesOutput]
   }
   
-  @scala.inline
-  implicit class TagResourcesOutputMutableBuilder[Self <: TagResourcesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: TagResourcesOutput](x: Self) {
     
-    @scala.inline
-    def setFailedResourcesMap(value: FailedResourcesMap): Self = StObject.set(x, "FailedResourcesMap", value.asInstanceOf[js.Any])
+    inline def setFailedResourcesMap(value: FailedResourcesMap): Self = StObject.set(x, "FailedResourcesMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedResourcesMapUndefined: Self = StObject.set(x, "FailedResourcesMap", js.undefined)
+    inline def setFailedResourcesMapUndefined: Self = StObject.set(x, "FailedResourcesMap", js.undefined)
   }
 }

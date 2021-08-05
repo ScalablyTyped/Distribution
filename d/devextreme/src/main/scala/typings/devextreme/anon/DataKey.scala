@@ -12,25 +12,19 @@ trait DataKey extends StObject {
 }
 object DataKey {
   
-  @scala.inline
-  def apply(): DataKey = {
+  inline def apply(): DataKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataKey]
   }
   
-  @scala.inline
-  implicit class DataKeyMutableBuilder[Self <: DataKey] (val x: Self) extends AnyVal {
+  extension [Self <: DataKey](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

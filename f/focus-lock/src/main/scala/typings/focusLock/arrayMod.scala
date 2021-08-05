@@ -11,15 +11,11 @@ object arrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asArray[T](a: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def asArray[T](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def asArray[T](a: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def asArray[T](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def toArray[T](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def toArray[T](a: ListOf[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](a: ListOf[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   trait ListOf[TNode]
     extends StObject
@@ -29,17 +25,14 @@ object arrayMod {
   }
   object ListOf {
     
-    @scala.inline
-    def apply[TNode](length: Double): ListOf[TNode] = {
+    inline def apply[TNode](length: Double): ListOf[TNode] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListOf[TNode]]
     }
     
-    @scala.inline
-    implicit class ListOfMutableBuilder[Self <: ListOf[?], TNode] (val x: Self & ListOf[TNode]) extends AnyVal {
+    extension [Self <: ListOf[?], TNode](x: Self & ListOf[TNode]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
 }

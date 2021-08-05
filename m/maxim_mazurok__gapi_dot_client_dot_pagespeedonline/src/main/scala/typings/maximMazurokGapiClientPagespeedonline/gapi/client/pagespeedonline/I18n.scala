@@ -12,19 +12,15 @@ trait I18n extends StObject {
 }
 object I18n {
   
-  @scala.inline
-  def apply(): I18n = {
+  inline def apply(): I18n = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[I18n]
   }
   
-  @scala.inline
-  implicit class I18nMutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
+  extension [Self <: I18n](x: Self) {
     
-    @scala.inline
-    def setRendererFormattedStrings(value: RendererFormattedStrings): Self = StObject.set(x, "rendererFormattedStrings", value.asInstanceOf[js.Any])
+    inline def setRendererFormattedStrings(value: RendererFormattedStrings): Self = StObject.set(x, "rendererFormattedStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererFormattedStringsUndefined: Self = StObject.set(x, "rendererFormattedStrings", js.undefined)
+    inline def setRendererFormattedStringsUndefined: Self = StObject.set(x, "rendererFormattedStrings", js.undefined)
   }
 }

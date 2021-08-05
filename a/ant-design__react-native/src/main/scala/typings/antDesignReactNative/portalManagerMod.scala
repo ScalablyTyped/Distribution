@@ -33,20 +33,16 @@ object portalManagerMod {
   }
   object PortalManagerState {
     
-    @scala.inline
-    def apply(portals: js.Array[js.Any]): PortalManagerState = {
+    inline def apply(portals: js.Array[js.Any]): PortalManagerState = {
       val __obj = js.Dynamic.literal(portals = portals.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortalManagerState]
     }
     
-    @scala.inline
-    implicit class PortalManagerStateMutableBuilder[Self <: PortalManagerState] (val x: Self) extends AnyVal {
+    extension [Self <: PortalManagerState](x: Self) {
       
-      @scala.inline
-      def setPortals(value: js.Array[js.Any]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
+      inline def setPortals(value: js.Array[js.Any]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalsVarargs(value: js.Any*): Self = StObject.set(x, "portals", js.Array(value :_*))
+      inline def setPortalsVarargs(value: js.Any*): Self = StObject.set(x, "portals", js.Array(value :_*))
     }
   }
   
@@ -56,20 +52,16 @@ object portalManagerMod {
   }
   object State {
     
-    @scala.inline
-    def apply(portals: js.Array[ChildrenReactNode]): State = {
+    inline def apply(portals: js.Array[ChildrenReactNode]): State = {
       val __obj = js.Dynamic.literal(portals = portals.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setPortals(value: js.Array[ChildrenReactNode]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
+      inline def setPortals(value: js.Array[ChildrenReactNode]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalsVarargs(value: ChildrenReactNode*): Self = StObject.set(x, "portals", js.Array(value :_*))
+      inline def setPortalsVarargs(value: ChildrenReactNode*): Self = StObject.set(x, "portals", js.Array(value :_*))
     }
   }
 }

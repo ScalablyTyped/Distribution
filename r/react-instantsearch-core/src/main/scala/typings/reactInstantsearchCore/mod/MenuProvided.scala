@@ -21,8 +21,7 @@ trait MenuProvided extends StObject {
 }
 object MenuProvided {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createURL: /* repeated */ js.Any => js.Any,
     currentRefinement: String,
     isFromSearch: Boolean,
@@ -34,28 +33,20 @@ object MenuProvided {
     __obj.asInstanceOf[MenuProvided]
   }
   
-  @scala.inline
-  implicit class MenuProvidedMutableBuilder[Self <: MenuProvided] (val x: Self) extends AnyVal {
+  extension [Self <: MenuProvided](x: Self) {
     
-    @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
+    inline def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFromSearch(value: Boolean): Self = StObject.set(x, "isFromSearch", value.asInstanceOf[js.Any])
+    inline def setIsFromSearch(value: Boolean): Self = StObject.set(x, "isFromSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Count]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Count]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Count*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Count*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchForItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
+    inline def setSearchForItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
   }
 }

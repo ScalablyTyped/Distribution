@@ -16,16 +16,13 @@ trait EmailMessageReader extends StObject {
 }
 object EmailMessageReader {
   
-  @scala.inline
-  def apply(readBatchAsync: () => IPromiseWithIAsyncOperation[EmailMessageBatch]): EmailMessageReader = {
+  inline def apply(readBatchAsync: () => IPromiseWithIAsyncOperation[EmailMessageBatch]): EmailMessageReader = {
     val __obj = js.Dynamic.literal(readBatchAsync = js.Any.fromFunction0(readBatchAsync))
     __obj.asInstanceOf[EmailMessageReader]
   }
   
-  @scala.inline
-  implicit class EmailMessageReaderMutableBuilder[Self <: EmailMessageReader] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMessageReader](x: Self) {
     
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[EmailMessageBatch]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[EmailMessageBatch]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

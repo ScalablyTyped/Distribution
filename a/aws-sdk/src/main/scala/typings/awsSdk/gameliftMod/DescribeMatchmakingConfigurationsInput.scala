@@ -28,40 +28,29 @@ trait DescribeMatchmakingConfigurationsInput extends StObject {
 }
 object DescribeMatchmakingConfigurationsInput {
   
-  @scala.inline
-  def apply(): DescribeMatchmakingConfigurationsInput = {
+  inline def apply(): DescribeMatchmakingConfigurationsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMatchmakingConfigurationsInput]
   }
   
-  @scala.inline
-  implicit class DescribeMatchmakingConfigurationsInputMutableBuilder[Self <: DescribeMatchmakingConfigurationsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMatchmakingConfigurationsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNames(value: MatchmakingConfigurationNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: MatchmakingConfigurationNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: MatchmakingConfigurationName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: MatchmakingConfigurationName*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRuleSetName(value: MatchmakingRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
+    inline def setRuleSetName(value: MatchmakingRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
+    inline def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
   }
 }

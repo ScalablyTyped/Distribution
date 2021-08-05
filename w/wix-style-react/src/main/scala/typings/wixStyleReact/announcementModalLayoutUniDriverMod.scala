@@ -13,8 +13,7 @@ object announcementModalLayoutUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def announcementModalLayoutDriverFactory(base: BaseUniDriver): AnnouncementModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("announcementModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[AnnouncementModalLayoutUniDriver]
+  inline def announcementModalLayoutDriverFactory(base: BaseUniDriver): AnnouncementModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("announcementModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[AnnouncementModalLayoutUniDriver]
   
   trait AnnouncementModalLayoutUniDriver
     extends StObject
@@ -27,8 +26,7 @@ object announcementModalLayoutUniDriverMod {
   }
   object AnnouncementModalLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childExists: String => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       clickCloseButton: () => js.Promise[Unit],
@@ -48,11 +46,9 @@ object announcementModalLayoutUniDriverMod {
       __obj.asInstanceOf[AnnouncementModalLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class AnnouncementModalLayoutUniDriverMutableBuilder[Self <: AnnouncementModalLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AnnouncementModalLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     }
   }
   
@@ -66,8 +62,7 @@ object announcementModalLayoutUniDriverMod {
   }
   object LinkBlockUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickLink: () => js.Promise[Unit],
       exists: () => js.Promise[Boolean],
       getLinkText: () => js.Promise[String]
@@ -76,17 +71,13 @@ object announcementModalLayoutUniDriverMod {
       __obj.asInstanceOf[LinkBlockUniDriver]
     }
     
-    @scala.inline
-    implicit class LinkBlockUniDriverMutableBuilder[Self <: LinkBlockUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LinkBlockUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickLink(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickLink", js.Any.fromFunction0(value))
+      inline def setClickLink(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickLink", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLinkText(value: () => js.Promise[String]): Self = StObject.set(x, "getLinkText", js.Any.fromFunction0(value))
+      inline def setGetLinkText(value: () => js.Promise[String]): Self = StObject.set(x, "getLinkText", js.Any.fromFunction0(value))
     }
   }
 }

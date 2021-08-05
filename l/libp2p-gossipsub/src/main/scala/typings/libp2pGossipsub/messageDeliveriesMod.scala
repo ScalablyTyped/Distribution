@@ -64,9 +64,9 @@ object messageDeliveriesMod {
     
     def gc(): Unit = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
     
-    var records: js.Any = js.native
+    /* private */ var records: js.Any = js.native
   }
   
   trait DeliveryRecord extends StObject {
@@ -81,26 +81,20 @@ object messageDeliveriesMod {
   }
   object DeliveryRecord {
     
-    @scala.inline
-    def apply(firstSeen: Double, peers: Set[String], status: DeliveryRecordStatus, validated: Double): DeliveryRecord = {
+    inline def apply(firstSeen: Double, peers: Set[String], status: DeliveryRecordStatus, validated: Double): DeliveryRecord = {
       val __obj = js.Dynamic.literal(firstSeen = firstSeen.asInstanceOf[js.Any], peers = peers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], validated = validated.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeliveryRecord]
     }
     
-    @scala.inline
-    implicit class DeliveryRecordMutableBuilder[Self <: DeliveryRecord] (val x: Self) extends AnyVal {
+    extension [Self <: DeliveryRecord](x: Self) {
       
-      @scala.inline
-      def setFirstSeen(value: Double): Self = StObject.set(x, "firstSeen", value.asInstanceOf[js.Any])
+      inline def setFirstSeen(value: Double): Self = StObject.set(x, "firstSeen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeers(value: Set[String]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
+      inline def setPeers(value: Set[String]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: DeliveryRecordStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: DeliveryRecordStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidated(value: Double): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
+      inline def setValidated(value: Double): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
     }
   }
 }

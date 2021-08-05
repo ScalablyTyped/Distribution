@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object variableMod {
   
-  @scala.inline
-  def apply(variable: Variable): String = ^.asInstanceOf[js.Dynamic].apply(variable.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(variable: Variable): String = ^.asInstanceOf[js.Dynamic].apply(variable.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@rdfjs/to-ntriples/lib/variable", JSImport.Namespace)
   @js.native

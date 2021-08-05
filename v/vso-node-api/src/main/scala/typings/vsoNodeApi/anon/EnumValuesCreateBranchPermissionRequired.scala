@@ -10,16 +10,13 @@ trait EnumValuesCreateBranchPermissionRequired extends StObject {
 }
 object EnumValuesCreateBranchPermissionRequired {
   
-  @scala.inline
-  def apply(enumValues: CreateBranchPermissionRequired): EnumValuesCreateBranchPermissionRequired = {
+  inline def apply(enumValues: CreateBranchPermissionRequired): EnumValuesCreateBranchPermissionRequired = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCreateBranchPermissionRequired]
   }
   
-  @scala.inline
-  implicit class EnumValuesCreateBranchPermissionRequiredMutableBuilder[Self <: EnumValuesCreateBranchPermissionRequired] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCreateBranchPermissionRequired](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: CreateBranchPermissionRequired): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: CreateBranchPermissionRequired): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

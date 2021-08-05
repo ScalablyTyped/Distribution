@@ -10,19 +10,15 @@ trait DataAccessOptions extends StObject {
 }
 object DataAccessOptions {
   
-  @scala.inline
-  def apply(): DataAccessOptions = {
+  inline def apply(): DataAccessOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataAccessOptions]
   }
   
-  @scala.inline
-  implicit class DataAccessOptionsMutableBuilder[Self <: DataAccessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DataAccessOptions](x: Self) {
     
-    @scala.inline
-    def setLogMode(value: String): Self = StObject.set(x, "logMode", value.asInstanceOf[js.Any])
+    inline def setLogMode(value: String): Self = StObject.set(x, "logMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogModeUndefined: Self = StObject.set(x, "logMode", js.undefined)
+    inline def setLogModeUndefined: Self = StObject.set(x, "logMode", js.undefined)
   }
 }

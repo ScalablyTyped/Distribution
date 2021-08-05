@@ -56,8 +56,7 @@ trait TickConfig
 }
 object TickConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     mode: count | percent | position,
@@ -68,38 +67,28 @@ object TickConfig {
     __obj.asInstanceOf[TickConfig]
   }
   
-  @scala.inline
-  implicit class TickConfigMutableBuilder[Self <: TickConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TickConfig](x: Self) {
     
-    @scala.inline
-    def setLabelFormatFunction(
+    inline def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String
     ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
+    inline def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
-    @scala.inline
-    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
+    inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
-    @scala.inline
-    def setMode(value: count | percent | position): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: count | percent | position): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickCreatedFunction(
+    inline def setTickCreatedFunction(
       value: (/* value */ Double, /* tickElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => Unit
     ): Self = StObject.set(x, "tickCreatedFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTickCreatedFunctionUndefined: Self = StObject.set(x, "tickCreatedFunction", js.undefined)
+    inline def setTickCreatedFunctionUndefined: Self = StObject.set(x, "tickCreatedFunction", js.undefined)
     
-    @scala.inline
-    def setValues(value: Double | js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Double | js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -12,16 +12,13 @@ trait DeviceAccessChangedEventArgs extends StObject {
 }
 object DeviceAccessChangedEventArgs {
   
-  @scala.inline
-  def apply(status: DeviceAccessStatus): DeviceAccessChangedEventArgs = {
+  inline def apply(status: DeviceAccessStatus): DeviceAccessChangedEventArgs = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceAccessChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class DeviceAccessChangedEventArgsMutableBuilder[Self <: DeviceAccessChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceAccessChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setStatus(value: DeviceAccessStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeviceAccessStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

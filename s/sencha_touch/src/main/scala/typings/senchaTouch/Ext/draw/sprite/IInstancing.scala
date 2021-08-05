@@ -87,67 +87,49 @@ trait IInstancing
 }
 object IInstancing {
   
-  @scala.inline
-  def apply(): IInstancing = {
+  inline def apply(): IInstancing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInstancing]
   }
   
-  @scala.inline
-  implicit class IInstancingMutableBuilder[Self <: IInstancing] (val x: Self) extends AnyVal {
+  extension [Self <: IInstancing](x: Self) {
     
-    @scala.inline
-    def setCreateInstance(
+    inline def setCreateInstance(
       value: (/* config */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "createInstance", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateInstanceUndefined: Self = StObject.set(x, "createInstance", js.undefined)
+    inline def setCreateInstanceUndefined: Self = StObject.set(x, "createInstance", js.undefined)
     
-    @scala.inline
-    def setGetBBox(value: () => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
+    inline def setGetBBox(value: () => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBBoxFor(value: (/* index */ js.UndefOr[Double], /* isWithoutTransform */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBBoxFor", js.Any.fromFunction2(value))
+    inline def setGetBBoxFor(value: (/* index */ js.UndefOr[Double], /* isWithoutTransform */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBBoxFor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBBoxForUndefined: Self = StObject.set(x, "getBBoxFor", js.undefined)
+    inline def setGetBBoxForUndefined: Self = StObject.set(x, "getBBoxFor", js.undefined)
     
-    @scala.inline
-    def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
+    inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
-    @scala.inline
-    def setGetTemplate(value: () => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction0(value))
+    inline def setGetTemplate(value: () => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTemplateUndefined: Self = StObject.set(x, "getTemplate", js.undefined)
+    inline def setGetTemplateUndefined: Self = StObject.set(x, "getTemplate", js.undefined)
     
-    @scala.inline
-    def setRender(
+    inline def setRender(
       value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setSetAttributesFor(
+    inline def setSetAttributesFor(
       value: (/* index */ js.UndefOr[Double], /* changes */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "setAttributesFor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetAttributesForUndefined: Self = StObject.set(x, "setAttributesFor", js.undefined)
+    inline def setSetAttributesForUndefined: Self = StObject.set(x, "setAttributesFor", js.undefined)
     
-    @scala.inline
-    def setSetTemplate(value: /* template */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
+    inline def setSetTemplate(value: /* template */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTemplateUndefined: Self = StObject.set(x, "setTemplate", js.undefined)
+    inline def setSetTemplateUndefined: Self = StObject.set(x, "setTemplate", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

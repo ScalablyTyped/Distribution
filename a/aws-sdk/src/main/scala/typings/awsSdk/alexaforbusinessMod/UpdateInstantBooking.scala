@@ -18,25 +18,19 @@ trait UpdateInstantBooking extends StObject {
 }
 object UpdateInstantBooking {
   
-  @scala.inline
-  def apply(): UpdateInstantBooking = {
+  inline def apply(): UpdateInstantBooking = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateInstantBooking]
   }
   
-  @scala.inline
-  implicit class UpdateInstantBookingMutableBuilder[Self <: UpdateInstantBooking] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInstantBooking](x: Self) {
     
-    @scala.inline
-    def setDurationInMinutes(value: Minutes): Self = StObject.set(x, "DurationInMinutes", value.asInstanceOf[js.Any])
+    inline def setDurationInMinutes(value: Minutes): Self = StObject.set(x, "DurationInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInMinutesUndefined: Self = StObject.set(x, "DurationInMinutes", js.undefined)
+    inline def setDurationInMinutesUndefined: Self = StObject.set(x, "DurationInMinutes", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

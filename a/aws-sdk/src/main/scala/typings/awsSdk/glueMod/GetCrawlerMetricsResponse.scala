@@ -18,28 +18,21 @@ trait GetCrawlerMetricsResponse extends StObject {
 }
 object GetCrawlerMetricsResponse {
   
-  @scala.inline
-  def apply(): GetCrawlerMetricsResponse = {
+  inline def apply(): GetCrawlerMetricsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCrawlerMetricsResponse]
   }
   
-  @scala.inline
-  implicit class GetCrawlerMetricsResponseMutableBuilder[Self <: GetCrawlerMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCrawlerMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setCrawlerMetricsList(value: CrawlerMetricsList): Self = StObject.set(x, "CrawlerMetricsList", value.asInstanceOf[js.Any])
+    inline def setCrawlerMetricsList(value: CrawlerMetricsList): Self = StObject.set(x, "CrawlerMetricsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlerMetricsListUndefined: Self = StObject.set(x, "CrawlerMetricsList", js.undefined)
+    inline def setCrawlerMetricsListUndefined: Self = StObject.set(x, "CrawlerMetricsList", js.undefined)
     
-    @scala.inline
-    def setCrawlerMetricsListVarargs(value: CrawlerMetrics*): Self = StObject.set(x, "CrawlerMetricsList", js.Array(value :_*))
+    inline def setCrawlerMetricsListVarargs(value: CrawlerMetrics*): Self = StObject.set(x, "CrawlerMetricsList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

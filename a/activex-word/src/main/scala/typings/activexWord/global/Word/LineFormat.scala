@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LineFormat")
 @js.native
-class LineFormat protected ()
+/* private */ class LineFormat ()
   extends StObject
      with typings.activexWord.Word.LineFormat {
   
@@ -71,7 +71,7 @@ class LineFormat protected ()
   /* CompleteClass */
   var Weight: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.LineFormat_typekey")
   var WordDotLineFormat_typekey: typings.activexWord.Word.LineFormat = js.native
 }

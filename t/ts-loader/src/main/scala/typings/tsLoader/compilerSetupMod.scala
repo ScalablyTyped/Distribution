@@ -15,9 +15,7 @@ object compilerSetupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCompiler(loaderOptions: LoaderOptions, log: Logger): Compiler = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompiler")(loaderOptions.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Compiler]
+  inline def getCompiler(loaderOptions: LoaderOptions, log: Logger): Compiler = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompiler")(loaderOptions.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Compiler]
   
-  @scala.inline
-  def getCompilerOptions(configParseResult: ParsedCommandLine): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilerOptions")(configParseResult.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
+  inline def getCompilerOptions(configParseResult: ParsedCommandLine): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilerOptions")(configParseResult.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
 }

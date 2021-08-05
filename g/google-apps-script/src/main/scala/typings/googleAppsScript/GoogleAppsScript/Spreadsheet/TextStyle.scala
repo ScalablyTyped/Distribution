@@ -32,8 +32,7 @@ trait TextStyle extends StObject {
 }
 object TextStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => TextStyleBuilder,
     getFontFamily: () => String | Null,
     getFontSize: () => Integer | Null,
@@ -47,31 +46,22 @@ object TextStyle {
     __obj.asInstanceOf[TextStyle]
   }
   
-  @scala.inline
-  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyle](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => TextStyleBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => TextStyleBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontFamily(value: () => String | Null): Self = StObject.set(x, "getFontFamily", js.Any.fromFunction0(value))
+    inline def setGetFontFamily(value: () => String | Null): Self = StObject.set(x, "getFontFamily", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontSize(value: () => Integer | Null): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
+    inline def setGetFontSize(value: () => Integer | Null): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetForegroundColor(value: () => String | Null): Self = StObject.set(x, "getForegroundColor", js.Any.fromFunction0(value))
+    inline def setGetForegroundColor(value: () => String | Null): Self = StObject.set(x, "getForegroundColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsBold(value: () => Boolean | Null): Self = StObject.set(x, "isBold", js.Any.fromFunction0(value))
+    inline def setIsBold(value: () => Boolean | Null): Self = StObject.set(x, "isBold", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsItalic(value: () => Boolean | Null): Self = StObject.set(x, "isItalic", js.Any.fromFunction0(value))
+    inline def setIsItalic(value: () => Boolean | Null): Self = StObject.set(x, "isItalic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStrikethrough(value: () => Boolean | Null): Self = StObject.set(x, "isStrikethrough", js.Any.fromFunction0(value))
+    inline def setIsStrikethrough(value: () => Boolean | Null): Self = StObject.set(x, "isStrikethrough", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUnderline(value: () => Boolean | Null): Self = StObject.set(x, "isUnderline", js.Any.fromFunction0(value))
+    inline def setIsUnderline(value: () => Boolean | Null): Self = StObject.set(x, "isUnderline", js.Any.fromFunction0(value))
   }
 }

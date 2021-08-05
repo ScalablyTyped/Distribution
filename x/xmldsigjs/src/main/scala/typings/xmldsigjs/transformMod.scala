@@ -22,7 +22,7 @@ object transformMod {
       */
     var XPath: String = js.native
     
-    var innerXml: Node | Null = js.native
+    /* protected */ var innerXml: Node | Null = js.native
   }
   
   @js.native

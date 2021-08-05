@@ -18,25 +18,19 @@ trait ListPublishingDestinationsResponse extends StObject {
 }
 object ListPublishingDestinationsResponse {
   
-  @scala.inline
-  def apply(Destinations: Destinations): ListPublishingDestinationsResponse = {
+  inline def apply(Destinations: Destinations): ListPublishingDestinationsResponse = {
     val __obj = js.Dynamic.literal(Destinations = Destinations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPublishingDestinationsResponse]
   }
   
-  @scala.inline
-  implicit class ListPublishingDestinationsResponseMutableBuilder[Self <: ListPublishingDestinationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPublishingDestinationsResponse](x: Self) {
     
-    @scala.inline
-    def setDestinations(value: Destinations): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: Destinations): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsVarargs(value: Destination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Destination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

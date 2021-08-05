@@ -14,25 +14,21 @@ object cloudwatchMixinsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def onSchedule(name: String, schedule: String, handler: EventRuleEventHandler): EventRuleEventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("onSchedule")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventRuleEventSubscription]
-  @scala.inline
-  def onSchedule(
+  inline def onSchedule(name: String, schedule: String, handler: EventRuleEventHandler): EventRuleEventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("onSchedule")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventRuleEventSubscription]
+  inline def onSchedule(
     name: String,
     schedule: String,
     handler: EventRuleEventHandler,
     args: Unit,
     opts: ComponentResourceOptions
   ): EventRuleEventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("onSchedule")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventRuleEventSubscription]
-  @scala.inline
-  def onSchedule(
+  inline def onSchedule(
     name: String,
     schedule: String,
     handler: EventRuleEventHandler,
     args: EventRuleEventSubscriptionArgs
   ): EventRuleEventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("onSchedule")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EventRuleEventSubscription]
-  @scala.inline
-  def onSchedule(
+  inline def onSchedule(
     name: String,
     schedule: String,
     handler: EventRuleEventHandler,

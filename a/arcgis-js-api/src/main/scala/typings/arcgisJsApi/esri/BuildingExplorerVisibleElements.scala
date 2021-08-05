@@ -33,8 +33,7 @@ trait BuildingExplorerVisibleElements
 }
 object BuildingExplorerVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object BuildingExplorerVisibleElements {
     __obj.asInstanceOf[BuildingExplorerVisibleElements]
   }
   
-  @scala.inline
-  implicit class BuildingExplorerVisibleElementsMutableBuilder[Self <: BuildingExplorerVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingExplorerVisibleElements](x: Self) {
     
-    @scala.inline
-    def setDisciplines(value: Boolean): Self = StObject.set(x, "disciplines", value.asInstanceOf[js.Any])
+    inline def setDisciplines(value: Boolean): Self = StObject.set(x, "disciplines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisciplinesUndefined: Self = StObject.set(x, "disciplines", js.undefined)
+    inline def setDisciplinesUndefined: Self = StObject.set(x, "disciplines", js.undefined)
     
-    @scala.inline
-    def setLevels(value: Boolean): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: Boolean): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setPhases(value: Boolean): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
+    inline def setPhases(value: Boolean): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhasesUndefined: Self = StObject.set(x, "phases", js.undefined)
+    inline def setPhasesUndefined: Self = StObject.set(x, "phases", js.undefined)
   }
 }

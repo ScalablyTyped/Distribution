@@ -22,29 +22,22 @@ trait Attr
 }
 object Attr {
   
-  @scala.inline
-  def apply(attr: String, message: String, node: typings.std.Element, ruleId: String): Attr = {
+  inline def apply(attr: String, message: String, node: typings.std.Element, ruleId: String): Attr = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("attr")
     __obj.asInstanceOf[Attr]
   }
   
-  @scala.inline
-  implicit class AttrMutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
+  extension [Self <: Attr](x: Self) {
     
-    @scala.inline
-    def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: typings.std.Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.std.Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: attr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: attr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

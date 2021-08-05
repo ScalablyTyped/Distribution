@@ -26,7 +26,6 @@ object gameObjectSceneMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): GameObjectScene = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GameObjectScene]
+    inline def create(): GameObjectScene = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GameObjectScene]
   }
 }

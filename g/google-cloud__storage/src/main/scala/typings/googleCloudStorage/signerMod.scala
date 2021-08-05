@@ -39,11 +39,11 @@ object signerMod {
     def this(authClient: AuthClient, bucket: BucketI) = this()
     def this(authClient: AuthClient, bucket: BucketI, file: FileI) = this()
     
-    var authClient: js.Any = js.native
+    /* private */ var authClient: js.Any = js.native
     
-    var bucket: js.Any = js.native
+    /* private */ var bucket: js.Any = js.native
     
-    var file: js.Any = js.native
+    /* private */ var file: js.Any = js.native
     
     /**
       * Create canonical headers for signing v4 url.
@@ -77,9 +77,9 @@ object signerMod {
     
     def getSignedUrl(cfg: SignerGetSignedUrlConfig): js.Promise[SignerGetSignedUrlResponse] = js.native
     
-    var getSignedUrlV2: js.Any = js.native
+    /* private */ var getSignedUrlV2: js.Any = js.native
     
-    var getSignedUrlV4: js.Any = js.native
+    /* private */ var getSignedUrlV4: js.Any = js.native
     
     def parseAccessibleAt(): Double = js.native
     def parseAccessibleAt(accessibleAt: String): Double = js.native
@@ -102,20 +102,16 @@ object signerMod {
   }
   object AuthClient {
     
-    @scala.inline
-    def apply(getCredentials: () => js.Promise[GetCredentialsResponse], sign: String => js.Promise[String]): AuthClient = {
+    inline def apply(getCredentials: () => js.Promise[GetCredentialsResponse], sign: String => js.Promise[String]): AuthClient = {
       val __obj = js.Dynamic.literal(getCredentials = js.Any.fromFunction0(getCredentials), sign = js.Any.fromFunction1(sign))
       __obj.asInstanceOf[AuthClient]
     }
     
-    @scala.inline
-    implicit class AuthClientMutableBuilder[Self <: AuthClient] (val x: Self) extends AnyVal {
+    extension [Self <: AuthClient](x: Self) {
       
-      @scala.inline
-      def setGetCredentials(value: () => js.Promise[GetCredentialsResponse]): Self = StObject.set(x, "getCredentials", js.Any.fromFunction0(value))
+      inline def setGetCredentials(value: () => js.Promise[GetCredentialsResponse]): Self = StObject.set(x, "getCredentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSign(value: String => js.Promise[String]): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: String => js.Promise[String]): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
     }
   }
   
@@ -125,17 +121,14 @@ object signerMod {
   }
   object BucketI {
     
-    @scala.inline
-    def apply(name: String): BucketI = {
+    inline def apply(name: String): BucketI = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketI]
     }
     
-    @scala.inline
-    implicit class BucketIMutableBuilder[Self <: BucketI] (val x: Self) extends AnyVal {
+    extension [Self <: BucketI](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,17 +138,14 @@ object signerMod {
   }
   object FileI {
     
-    @scala.inline
-    def apply(name: String): FileI = {
+    inline def apply(name: String): FileI = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileI]
     }
     
-    @scala.inline
-    implicit class FileIMutableBuilder[Self <: FileI] (val x: Self) extends AnyVal {
+    extension [Self <: FileI](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,20 +155,16 @@ object signerMod {
   }
   object GetCredentialsResponse {
     
-    @scala.inline
-    def apply(): GetCredentialsResponse = {
+    inline def apply(): GetCredentialsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCredentialsResponse]
     }
     
-    @scala.inline
-    implicit class GetCredentialsResponseMutableBuilder[Self <: GetCredentialsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetCredentialsResponse](x: Self) {
       
-      @scala.inline
-      def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
+      inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_emailUndefined: Self = StObject.set(x, "client_email", js.undefined)
+      inline def setClient_emailUndefined: Self = StObject.set(x, "client_email", js.undefined)
     }
   }
   
@@ -208,65 +194,46 @@ object signerMod {
   }
   object GetSignedUrlConfigInternal {
     
-    @scala.inline
-    def apply(bucket: String, expiration: Double, method: String): GetSignedUrlConfigInternal = {
+    inline def apply(bucket: String, expiration: Double, method: String): GetSignedUrlConfigInternal = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSignedUrlConfigInternal]
     }
     
-    @scala.inline
-    implicit class GetSignedUrlConfigInternalMutableBuilder[Self <: GetSignedUrlConfigInternal] (val x: Self) extends AnyVal {
+    extension [Self <: GetSignedUrlConfigInternal](x: Self) {
       
-      @scala.inline
-      def setAccessibleAt(value: Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
+      inline def setAccessibleAt(value: Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
+      inline def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
+      inline def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
+      inline def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
       
-      @scala.inline
-      def setContentMd5(value: String): Self = StObject.set(x, "contentMd5", value.asInstanceOf[js.Any])
+      inline def setContentMd5(value: String): Self = StObject.set(x, "contentMd5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentMd5Undefined: Self = StObject.set(x, "contentMd5", js.undefined)
+      inline def setContentMd5Undefined: Self = StObject.set(x, "contentMd5", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
+      inline def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionHeadersUndefined: Self = StObject.set(x, "extensionHeaders", js.undefined)
+      inline def setExtensionHeadersUndefined: Self = StObject.set(x, "extensionHeaders", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: Query): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: Query): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     }
   }
   
@@ -298,68 +265,48 @@ object signerMod {
   }
   object SignerGetSignedUrlConfig {
     
-    @scala.inline
-    def apply(expires: String | Double | Date, method: GET | PUT | DELETE | POST): SignerGetSignedUrlConfig = {
+    inline def apply(expires: String | Double | Date, method: GET | PUT | DELETE | POST): SignerGetSignedUrlConfig = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignerGetSignedUrlConfig]
     }
     
-    @scala.inline
-    implicit class SignerGetSignedUrlConfigMutableBuilder[Self <: SignerGetSignedUrlConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SignerGetSignedUrlConfig](x: Self) {
       
-      @scala.inline
-      def setAccessibleAt(value: String | Double | Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
+      inline def setAccessibleAt(value: String | Double | Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
+      inline def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
       
-      @scala.inline
-      def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
+      inline def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
+      inline def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
       
-      @scala.inline
-      def setContentMd5(value: String): Self = StObject.set(x, "contentMd5", value.asInstanceOf[js.Any])
+      inline def setContentMd5(value: String): Self = StObject.set(x, "contentMd5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentMd5Undefined: Self = StObject.set(x, "contentMd5", js.undefined)
+      inline def setContentMd5Undefined: Self = StObject.set(x, "contentMd5", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
+      inline def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionHeadersUndefined: Self = StObject.set(x, "extensionHeaders", js.undefined)
+      inline def setExtensionHeadersUndefined: Self = StObject.set(x, "extensionHeaders", js.undefined)
       
-      @scala.inline
-      def setMethod(value: GET | PUT | DELETE | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET | PUT | DELETE | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: Query): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: Query): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setVersion(value: v2 | v4): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: v2 | v4): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
+      inline def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
+      inline def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
     }
   }
   

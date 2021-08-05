@@ -11,22 +11,17 @@ trait Context extends StObject {
 }
 object Context {
   
-  @scala.inline
-  def apply(): Context = {
+  inline def apply(): Context = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Context]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+  extension [Self <: Context](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[ContextRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[ContextRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: ContextRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ContextRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

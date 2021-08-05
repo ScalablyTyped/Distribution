@@ -300,8 +300,7 @@ trait Plus extends StObject {
 }
 object Plus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accelerometer: PlusAccelerometer,
     android: PlusAndroid,
     audio: PlusAudio,
@@ -348,130 +347,88 @@ object Plus {
     __obj.asInstanceOf[Plus]
   }
   
-  @scala.inline
-  implicit class PlusMutableBuilder[Self <: Plus] (val x: Self) extends AnyVal {
+  extension [Self <: Plus](x: Self) {
     
-    @scala.inline
-    def setAccelerometer(value: PlusAccelerometer): Self = StObject.set(x, "accelerometer", value.asInstanceOf[js.Any])
+    inline def setAccelerometer(value: PlusAccelerometer): Self = StObject.set(x, "accelerometer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroid(value: PlusAndroid): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: PlusAndroid): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudio(value: PlusAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: PlusAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarcode(value: PlusBarcode): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
+    inline def setBarcode(value: PlusBarcode): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluetooth(value: PlusBluetooth): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
+    inline def setBluetooth(value: PlusBluetooth): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCamera(value: PlusCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: PlusCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContacts(value: PlusContacts): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: PlusContacts): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: PlusDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: PlusDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: PlusDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: PlusDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloader(value: PlusDownloader): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
+    inline def setDownloader(value: PlusDownloader): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: PlusFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: PlusFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGallery(value: PlusGallery): Self = StObject.set(x, "gallery", value.asInstanceOf[js.Any])
+    inline def setGallery(value: PlusGallery): Self = StObject.set(x, "gallery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeolocation(value: PlusGeolocation): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
+    inline def setGeolocation(value: PlusGeolocation): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIbeacon(value: PlusIbeacon): Self = StObject.set(x, "ibeacon", value.asInstanceOf[js.Any])
+    inline def setIbeacon(value: PlusIbeacon): Self = StObject.set(x, "ibeacon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIo(value: PlusIo): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
+    inline def setIo(value: PlusIo): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIos(value: PlusIos): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: PlusIos): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: PlusKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: PlusKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaps(value: PlusMaps): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+    inline def setMaps(value: PlusMaps): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessaging(value: PlusMessaging): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
+    inline def setMessaging(value: PlusMessaging): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeObj(value: PlusNativeObj): Self = StObject.set(x, "nativeObj", value.asInstanceOf[js.Any])
+    inline def setNativeObj(value: PlusNativeObj): Self = StObject.set(x, "nativeObj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeUI(value: PlusNativeUI): Self = StObject.set(x, "nativeUI", value.asInstanceOf[js.Any])
+    inline def setNativeUI(value: PlusNativeUI): Self = StObject.set(x, "nativeUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigator(value: PlusNavigator): Self = StObject.set(x, "navigator", value.asInstanceOf[js.Any])
+    inline def setNavigator(value: PlusNavigator): Self = StObject.set(x, "navigator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNet(value: PlusNet): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
+    inline def setNet(value: PlusNet): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkinfo(value: PlusNetworkinfo): Self = StObject.set(x, "networkinfo", value.asInstanceOf[js.Any])
+    inline def setNetworkinfo(value: PlusNetworkinfo): Self = StObject.set(x, "networkinfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth(value: PlusOauth): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
+    inline def setOauth(value: PlusOauth): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: PlusOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: PlusOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: PlusOs): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: PlusOs): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment(value: PlusPayment): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
+    inline def setPayment(value: PlusPayment): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximity(value: PlusProximity): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+    inline def setProximity(value: PlusProximity): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: PlusPush): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: PlusPush): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntime(value: PlusRuntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: PlusRuntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen(value: PlusScreen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: PlusScreen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShare(value: PlusShare): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+    inline def setShare(value: PlusShare): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeech(value: PlusSpeech): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
+    inline def setSpeech(value: PlusSpeech): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistic(value: PlusStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: PlusStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: PlusStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: PlusStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: PlusStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: PlusStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploader(value: PlusUploader): Self = StObject.set(x, "uploader", value.asInstanceOf[js.Any])
+    inline def setUploader(value: PlusUploader): Self = StObject.set(x, "uploader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: PlusVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: PlusVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebview(value: PlusWebview): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
+    inline def setWebview(value: PlusWebview): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZip(value: PlusZip): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    inline def setZip(value: PlusZip): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,19 @@ trait OnCharacteristicWriteRequestCallbackResult extends StObject {
 }
 object OnCharacteristicWriteRequestCallbackResult {
   
-  @scala.inline
-  def apply(callbackId: Double, characteristicId: String, serviceId: String, value: ArrayBuffer): OnCharacteristicWriteRequestCallbackResult = {
+  inline def apply(callbackId: Double, characteristicId: String, serviceId: String, value: ArrayBuffer): OnCharacteristicWriteRequestCallbackResult = {
     val __obj = js.Dynamic.literal(callbackId = callbackId.asInstanceOf[js.Any], characteristicId = characteristicId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCharacteristicWriteRequestCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnCharacteristicWriteRequestCallbackResultMutableBuilder[Self <: OnCharacteristicWriteRequestCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnCharacteristicWriteRequestCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
+    inline def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

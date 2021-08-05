@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Arm64Extender extends StObject
 object Arm64Extender {
   
-  @scala.inline
-  def sxtb: typings.fridaGum.fridaGumStrings.sxtb = "sxtb".asInstanceOf[typings.fridaGum.fridaGumStrings.sxtb]
+  inline def sxtb: typings.fridaGum.fridaGumStrings.sxtb = "sxtb".asInstanceOf[typings.fridaGum.fridaGumStrings.sxtb]
   
-  @scala.inline
-  def sxth: typings.fridaGum.fridaGumStrings.sxth = "sxth".asInstanceOf[typings.fridaGum.fridaGumStrings.sxth]
+  inline def sxth: typings.fridaGum.fridaGumStrings.sxth = "sxth".asInstanceOf[typings.fridaGum.fridaGumStrings.sxth]
   
-  @scala.inline
-  def sxtw: typings.fridaGum.fridaGumStrings.sxtw = "sxtw".asInstanceOf[typings.fridaGum.fridaGumStrings.sxtw]
+  inline def sxtw: typings.fridaGum.fridaGumStrings.sxtw = "sxtw".asInstanceOf[typings.fridaGum.fridaGumStrings.sxtw]
   
-  @scala.inline
-  def sxtx: typings.fridaGum.fridaGumStrings.sxtx = "sxtx".asInstanceOf[typings.fridaGum.fridaGumStrings.sxtx]
+  inline def sxtx: typings.fridaGum.fridaGumStrings.sxtx = "sxtx".asInstanceOf[typings.fridaGum.fridaGumStrings.sxtx]
   
-  @scala.inline
-  def uxtb: typings.fridaGum.fridaGumStrings.uxtb = "uxtb".asInstanceOf[typings.fridaGum.fridaGumStrings.uxtb]
+  inline def uxtb: typings.fridaGum.fridaGumStrings.uxtb = "uxtb".asInstanceOf[typings.fridaGum.fridaGumStrings.uxtb]
   
-  @scala.inline
-  def uxth: typings.fridaGum.fridaGumStrings.uxth = "uxth".asInstanceOf[typings.fridaGum.fridaGumStrings.uxth]
+  inline def uxth: typings.fridaGum.fridaGumStrings.uxth = "uxth".asInstanceOf[typings.fridaGum.fridaGumStrings.uxth]
   
-  @scala.inline
-  def uxtw: typings.fridaGum.fridaGumStrings.uxtw = "uxtw".asInstanceOf[typings.fridaGum.fridaGumStrings.uxtw]
+  inline def uxtw: typings.fridaGum.fridaGumStrings.uxtw = "uxtw".asInstanceOf[typings.fridaGum.fridaGumStrings.uxtw]
   
-  @scala.inline
-  def uxtx: typings.fridaGum.fridaGumStrings.uxtx = "uxtx".asInstanceOf[typings.fridaGum.fridaGumStrings.uxtx]
+  inline def uxtx: typings.fridaGum.fridaGumStrings.uxtx = "uxtx".asInstanceOf[typings.fridaGum.fridaGumStrings.uxtx]
 }

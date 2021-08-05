@@ -26,8 +26,7 @@ trait SizeRangeResult
 }
 object SizeRangeResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     maxSize: ScaleDependentStops,
@@ -38,13 +37,10 @@ object SizeRangeResult {
     __obj.asInstanceOf[SizeRangeResult]
   }
   
-  @scala.inline
-  implicit class SizeRangeResultMutableBuilder[Self <: SizeRangeResult] (val x: Self) extends AnyVal {
+  extension [Self <: SizeRangeResult](x: Self) {
     
-    @scala.inline
-    def setMaxSize(value: ScaleDependentStops): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: ScaleDependentStops): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSize(value: ScaleDependentStops): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: ScaleDependentStops): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
   }
 }

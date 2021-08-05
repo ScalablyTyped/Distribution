@@ -13,16 +13,13 @@ trait DiscardSearchResultsRequest extends StObject {
 }
 object DiscardSearchResultsRequest {
   
-  @scala.inline
-  def apply(searchId: String): DiscardSearchResultsRequest = {
+  inline def apply(searchId: String): DiscardSearchResultsRequest = {
     val __obj = js.Dynamic.literal(searchId = searchId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscardSearchResultsRequest]
   }
   
-  @scala.inline
-  implicit class DiscardSearchResultsRequestMutableBuilder[Self <: DiscardSearchResultsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DiscardSearchResultsRequest](x: Self) {
     
-    @scala.inline
-    def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
+    inline def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
   }
 }

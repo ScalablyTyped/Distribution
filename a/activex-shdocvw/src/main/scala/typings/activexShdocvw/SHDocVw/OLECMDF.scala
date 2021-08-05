@@ -22,21 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OLECMDF extends StObject
 object OLECMDF {
   
-  @scala.inline
-  def OLECMDF_DEFHIDEONCTXTMENU: `32` = 32.asInstanceOf[`32`]
+  inline def OLECMDF_DEFHIDEONCTXTMENU: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def OLECMDF_ENABLED: `2` = 2.asInstanceOf[`2`]
+  inline def OLECMDF_ENABLED: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def OLECMDF_INVISIBLE: `16` = 16.asInstanceOf[`16`]
+  inline def OLECMDF_INVISIBLE: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def OLECMDF_LATCHED: `4` = 4.asInstanceOf[`4`]
+  inline def OLECMDF_LATCHED: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def OLECMDF_NINCHED: `8` = 8.asInstanceOf[`8`]
+  inline def OLECMDF_NINCHED: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def OLECMDF_SUPPORTED: `1` = 1.asInstanceOf[`1`]
+  inline def OLECMDF_SUPPORTED: `1` = 1.asInstanceOf[`1`]
 }

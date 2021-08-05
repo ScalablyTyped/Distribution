@@ -18,8 +18,7 @@ object decoratorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Exclude(): js.Function2[
+  inline def Exclude(): js.Function2[
     /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
@@ -28,8 +27,7 @@ object decoratorsMod {
     /* propertyName */ js.UndefOr[String], 
     Unit
   ]]
-  @scala.inline
-  def Exclude(options: ExcludeOptions): js.Function2[
+  inline def Exclude(options: ExcludeOptions): js.Function2[
     /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
@@ -39,8 +37,7 @@ object decoratorsMod {
     Unit
   ]]
   
-  @scala.inline
-  def Expose(): js.Function2[
+  inline def Expose(): js.Function2[
     /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
@@ -49,8 +46,7 @@ object decoratorsMod {
     /* propertyName */ js.UndefOr[String], 
     Unit
   ]]
-  @scala.inline
-  def Expose(options: ExposeOptions): js.Function2[
+  inline def Expose(options: ExposeOptions): js.Function2[
     /* object */ (Record[String, js.Any]) | js.Function, 
     /* propertyName */ js.UndefOr[String], 
     Unit
@@ -60,8 +56,7 @@ object decoratorsMod {
     Unit
   ]]
   
-  @scala.inline
-  def Transform(
+  inline def Transform(
     transformFn: js.Function3[
       /* value */ js.Any, 
       /* obj */ js.Any, 
@@ -69,8 +64,7 @@ object decoratorsMod {
       js.Any
     ]
   ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
-  @scala.inline
-  def Transform(
+  inline def Transform(
     transformFn: js.Function3[
       /* value */ js.Any, 
       /* obj */ js.Any, 
@@ -80,30 +74,20 @@ object decoratorsMod {
     options: TransformOptions
   ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
   
-  @scala.inline
-  def TransformClassToClass(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")().asInstanceOf[js.Function]
-  @scala.inline
-  def TransformClassToClass(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def TransformClassToClass(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")().asInstanceOf[js.Function]
+  inline def TransformClassToClass(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def TransformClassToPlain(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")().asInstanceOf[js.Function]
-  @scala.inline
-  def TransformClassToPlain(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def TransformClassToPlain(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")().asInstanceOf[js.Function]
+  inline def TransformClassToPlain(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def TransformPlainToClass(classType: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  @scala.inline
-  def TransformPlainToClass(classType: js.Any, params: ClassTransformOptions): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def TransformPlainToClass(classType: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def TransformPlainToClass(classType: js.Any, params: ClassTransformOptions): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @scala.inline
-  def Type(): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")().asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
-  @scala.inline
-  def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
-  @scala.inline
-  def Type(
+  inline def Type(): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")().asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  inline def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  inline def Type(
     typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function],
     options: TypeOptions
   ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
-  @scala.inline
-  def Type(typeFunction: Unit, options: TypeOptions): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  inline def Type(typeFunction: Unit, options: TypeOptions): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
 }

@@ -18,8 +18,7 @@ trait Relationship
 }
 object Relationship {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     direction: RelationshipDirection,
@@ -33,25 +32,18 @@ object Relationship {
     __obj.asInstanceOf[Relationship]
   }
   
-  @scala.inline
-  implicit class RelationshipMutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
+  extension [Self <: Relationship](x: Self) {
     
-    @scala.inline
-    def setDirection(value: RelationshipDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: RelationshipDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Array[BaseElement]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[BaseElement]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: BaseElement*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: BaseElement*): Self = StObject.set(x, "source", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: js.Array[BaseElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Array[BaseElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVarargs(value: BaseElement*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: BaseElement*): Self = StObject.set(x, "target", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

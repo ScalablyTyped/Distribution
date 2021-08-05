@@ -19,6 +19,5 @@ object Result {
   @JSImport("antd-mobile", "Result.defaultProps")
   @js.native
   def defaultProps: ButtonType = js.native
-  @scala.inline
-  def defaultProps_=(x: ButtonType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: ButtonType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

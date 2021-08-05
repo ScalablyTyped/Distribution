@@ -45,8 +45,7 @@ trait XServiceInfo
 }
 object XServiceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ImplementationName: String,
     SupportedServiceNames: SafeArray[String],
     acquire: () => Unit,
@@ -60,22 +59,16 @@ object XServiceInfo {
     __obj.asInstanceOf[XServiceInfo]
   }
   
-  @scala.inline
-  implicit class XServiceInfoMutableBuilder[Self <: XServiceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XServiceInfo](x: Self) {
     
-    @scala.inline
-    def setGetImplementationName(value: () => String): Self = StObject.set(x, "getImplementationName", js.Any.fromFunction0(value))
+    inline def setGetImplementationName(value: () => String): Self = StObject.set(x, "getImplementationName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedServiceNames", js.Any.fromFunction0(value))
+    inline def setGetSupportedServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedServiceNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImplementationName(value: String): Self = StObject.set(x, "ImplementationName", value.asInstanceOf[js.Any])
+    inline def setImplementationName(value: String): Self = StObject.set(x, "ImplementationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedServiceNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedServiceNames", value.asInstanceOf[js.Any])
+    inline def setSupportedServiceNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedServiceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsService(value: String => Boolean): Self = StObject.set(x, "supportsService", js.Any.fromFunction1(value))
+    inline def setSupportsService(value: String => Boolean): Self = StObject.set(x, "supportsService", js.Any.fromFunction1(value))
   }
 }

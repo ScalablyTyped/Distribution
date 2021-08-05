@@ -21,8 +21,7 @@ trait StructureRoad
 }
 object StructureRoad {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -39,10 +38,8 @@ object StructureRoad {
     __obj.asInstanceOf[StructureRoad]
   }
   
-  @scala.inline
-  implicit class StructureRoadMutableBuilder[Self <: StructureRoad] (val x: Self) extends AnyVal {
+  extension [Self <: StructureRoad](x: Self) {
     
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

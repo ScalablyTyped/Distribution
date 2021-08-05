@@ -23,22 +23,17 @@ trait GoogleApiYouTubeChannelBannerResource extends StObject {
 }
 object GoogleApiYouTubeChannelBannerResource {
   
-  @scala.inline
-  def apply(etag: String, kind: String, url: String): GoogleApiYouTubeChannelBannerResource = {
+  inline def apply(etag: String, kind: String, url: String): GoogleApiYouTubeChannelBannerResource = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiYouTubeChannelBannerResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubeChannelBannerResourceMutableBuilder[Self <: GoogleApiYouTubeChannelBannerResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubeChannelBannerResource](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

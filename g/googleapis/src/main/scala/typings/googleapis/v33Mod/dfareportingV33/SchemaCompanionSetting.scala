@@ -33,40 +33,29 @@ trait SchemaCompanionSetting extends StObject {
 }
 object SchemaCompanionSetting {
   
-  @scala.inline
-  def apply(): SchemaCompanionSetting = {
+  inline def apply(): SchemaCompanionSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompanionSetting]
   }
   
-  @scala.inline
-  implicit class SchemaCompanionSettingMutableBuilder[Self <: SchemaCompanionSetting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompanionSetting](x: Self) {
     
-    @scala.inline
-    def setCompanionsDisabled(value: Boolean): Self = StObject.set(x, "companionsDisabled", value.asInstanceOf[js.Any])
+    inline def setCompanionsDisabled(value: Boolean): Self = StObject.set(x, "companionsDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionsDisabledUndefined: Self = StObject.set(x, "companionsDisabled", js.undefined)
+    inline def setCompanionsDisabledUndefined: Self = StObject.set(x, "companionsDisabled", js.undefined)
     
-    @scala.inline
-    def setEnabledSizes(value: js.Array[SchemaSize]): Self = StObject.set(x, "enabledSizes", value.asInstanceOf[js.Any])
+    inline def setEnabledSizes(value: js.Array[SchemaSize]): Self = StObject.set(x, "enabledSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledSizesUndefined: Self = StObject.set(x, "enabledSizes", js.undefined)
+    inline def setEnabledSizesUndefined: Self = StObject.set(x, "enabledSizes", js.undefined)
     
-    @scala.inline
-    def setEnabledSizesVarargs(value: SchemaSize*): Self = StObject.set(x, "enabledSizes", js.Array(value :_*))
+    inline def setEnabledSizesVarargs(value: SchemaSize*): Self = StObject.set(x, "enabledSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setImageOnly(value: Boolean): Self = StObject.set(x, "imageOnly", value.asInstanceOf[js.Any])
+    inline def setImageOnly(value: Boolean): Self = StObject.set(x, "imageOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageOnlyUndefined: Self = StObject.set(x, "imageOnly", js.undefined)
+    inline def setImageOnlyUndefined: Self = StObject.set(x, "imageOnly", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

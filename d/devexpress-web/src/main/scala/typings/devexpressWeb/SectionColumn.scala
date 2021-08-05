@@ -21,19 +21,15 @@ trait SectionColumn extends StObject {
 }
 object SectionColumn {
   
-  @scala.inline
-  def apply(spacing: Double, width: Double): SectionColumn = {
+  inline def apply(spacing: Double, width: Double): SectionColumn = {
     val __obj = js.Dynamic.literal(spacing = spacing.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionColumn]
   }
   
-  @scala.inline
-  implicit class SectionColumnMutableBuilder[Self <: SectionColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SectionColumn](x: Self) {
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

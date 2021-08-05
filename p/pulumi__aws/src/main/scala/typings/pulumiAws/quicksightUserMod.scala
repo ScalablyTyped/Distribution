@@ -85,21 +85,16 @@ object quicksightUserMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[User]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserState): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[User]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID]): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID], state: UserState): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[User]
+    inline def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
     
     /**
       * Returns true if the given object is an instance of User.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean]
   }
   
   trait UserArgs extends StObject {
@@ -146,53 +141,38 @@ object quicksightUserMod {
   }
   object UserArgs {
     
-    @scala.inline
-    def apply(email: Input[String], identityType: Input[String], userRole: Input[String]): UserArgs = {
+    inline def apply(email: Input[String], identityType: Input[String], userRole: Input[String]): UserArgs = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], identityType = identityType.asInstanceOf[js.Any], userRole = userRole.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserArgs]
     }
     
-    @scala.inline
-    implicit class UserArgsMutableBuilder[Self <: UserArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserArgs](x: Self) {
       
-      @scala.inline
-      def setAwsAccountId(value: Input[String]): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
+      inline def setAwsAccountId(value: Input[String]): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
+      inline def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
       
-      @scala.inline
-      def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamArn(value: Input[String]): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
+      inline def setIamArn(value: Input[String]): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
+      inline def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
       
-      @scala.inline
-      def setIdentityType(value: Input[String]): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
+      inline def setIdentityType(value: Input[String]): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setSessionName(value: Input[String]): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
+      inline def setSessionName(value: Input[String]): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionNameUndefined: Self = StObject.set(x, "sessionName", js.undefined)
+      inline def setSessionNameUndefined: Self = StObject.set(x, "sessionName", js.undefined)
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
       
-      @scala.inline
-      def setUserRole(value: Input[String]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
+      inline def setUserRole(value: Input[String]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,68 +225,48 @@ object quicksightUserMod {
   }
   object UserState {
     
-    @scala.inline
-    def apply(): UserState = {
+    inline def apply(): UserState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserState]
     }
     
-    @scala.inline
-    implicit class UserStateMutableBuilder[Self <: UserState] (val x: Self) extends AnyVal {
+    extension [Self <: UserState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAwsAccountId(value: Input[String]): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
+      inline def setAwsAccountId(value: Input[String]): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
+      inline def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
       
-      @scala.inline
-      def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setIamArn(value: Input[String]): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
+      inline def setIamArn(value: Input[String]): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
+      inline def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
       
-      @scala.inline
-      def setIdentityType(value: Input[String]): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
+      inline def setIdentityType(value: Input[String]): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityTypeUndefined: Self = StObject.set(x, "identityType", js.undefined)
+      inline def setIdentityTypeUndefined: Self = StObject.set(x, "identityType", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setSessionName(value: Input[String]): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
+      inline def setSessionName(value: Input[String]): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionNameUndefined: Self = StObject.set(x, "sessionName", js.undefined)
+      inline def setSessionNameUndefined: Self = StObject.set(x, "sessionName", js.undefined)
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
       
-      @scala.inline
-      def setUserRole(value: Input[String]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
+      inline def setUserRole(value: Input[String]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
+      inline def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
     }
   }
 }

@@ -56,8 +56,7 @@ object aliasPluginMod {
   }
   object AliasPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alias: String,
       apply: typings.enhancedResolve.resolverMod.^ => Unit,
       name: String,
@@ -70,29 +69,21 @@ object aliasPluginMod {
       __obj.asInstanceOf[AliasPlugin]
     }
     
-    @scala.inline
-    implicit class AliasPluginMutableBuilder[Self <: AliasPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: AliasPlugin](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyModule(value: Boolean): Self = StObject.set(x, "onlyModule", value.asInstanceOf[js.Any])
+      inline def setOnlyModule(value: Boolean): Self = StObject.set(x, "onlyModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: AliasItem): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: AliasItem): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

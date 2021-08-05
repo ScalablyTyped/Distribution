@@ -12,25 +12,19 @@ trait FinishingBailing extends StObject {
 }
 object FinishingBailing {
   
-  @scala.inline
-  def apply(): FinishingBailing = {
+  inline def apply(): FinishingBailing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinishingBailing]
   }
   
-  @scala.inline
-  implicit class FinishingBailingMutableBuilder[Self <: FinishingBailing] (val x: Self) extends AnyVal {
+  extension [Self <: FinishingBailing](x: Self) {
     
-    @scala.inline
-    def `setBaling-type`(value: BalingType): Self = StObject.set(x, "baling-type", value.asInstanceOf[js.Any])
+    inline def `setBaling-type`(value: BalingType): Self = StObject.set(x, "baling-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBaling-typeUndefined`: Self = StObject.set(x, "baling-type", js.undefined)
+    inline def `setBaling-typeUndefined`: Self = StObject.set(x, "baling-type", js.undefined)
     
-    @scala.inline
-    def `setBaling-when`(value: BalingWhen): Self = StObject.set(x, "baling-when", value.asInstanceOf[js.Any])
+    inline def `setBaling-when`(value: BalingWhen): Self = StObject.set(x, "baling-when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBaling-whenUndefined`: Self = StObject.set(x, "baling-when", js.undefined)
+    inline def `setBaling-whenUndefined`: Self = StObject.set(x, "baling-when", js.undefined)
   }
 }

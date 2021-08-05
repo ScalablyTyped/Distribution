@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ASTNode extends StObject
 object ASTNode {
   
-  @scala.inline
-  def ASTElement(
+  inline def ASTElement(
     attrsList: js.Array[Name],
     attrsMap: Record[String, js.Any],
     children: js.Array[ASTNode],
@@ -26,15 +25,13 @@ object ASTNode {
     __obj.asInstanceOf[typings.vueTemplateCompiler.mod.ASTElement]
   }
   
-  @scala.inline
-  def ASTExpression(expression: String, text: String, tokens: js.Array[String | (Record[String, js.Any])]): typings.vueTemplateCompiler.mod.ASTExpression = {
+  inline def ASTExpression(expression: String, text: String, tokens: js.Array[String | (Record[String, js.Any])]): typings.vueTemplateCompiler.mod.ASTExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(2)
     __obj.asInstanceOf[typings.vueTemplateCompiler.mod.ASTExpression]
   }
   
-  @scala.inline
-  def ASTText(text: String): typings.vueTemplateCompiler.mod.ASTText = {
+  inline def ASTText(text: String): typings.vueTemplateCompiler.mod.ASTText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(3)
     __obj.asInstanceOf[typings.vueTemplateCompiler.mod.ASTText]

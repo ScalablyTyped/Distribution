@@ -20,8 +20,7 @@ object subheaderUniDriverMod {
   }
   object CardSubheaderUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -33,17 +32,13 @@ object subheaderUniDriverMod {
       __obj.asInstanceOf[CardSubheaderUniDriver]
     }
     
-    @scala.inline
-    implicit class CardSubheaderUniDriverMutableBuilder[Self <: CardSubheaderUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CardSubheaderUniDriver](x: Self) {
       
-      @scala.inline
-      def setSuffixNode(value: () => UniDriver[js.Any]): Self = StObject.set(x, "suffixNode", js.Any.fromFunction0(value))
+      inline def setSuffixNode(value: () => UniDriver[js.Any]): Self = StObject.set(x, "suffixNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitle(value: () => js.Promise[String]): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+      inline def setTitle(value: () => js.Promise[String]): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitleNode(value: () => UniDriver[js.Any]): Self = StObject.set(x, "titleNode", js.Any.fromFunction0(value))
+      inline def setTitleNode(value: () => UniDriver[js.Any]): Self = StObject.set(x, "titleNode", js.Any.fromFunction0(value))
     }
   }
 }

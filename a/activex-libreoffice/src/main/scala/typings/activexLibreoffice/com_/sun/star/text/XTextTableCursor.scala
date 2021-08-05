@@ -94,8 +94,7 @@ trait XTextTableCursor
 }
 object XTextTableCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RangeName: String,
     acquire: () => Unit,
     getRangeName: () => String,
@@ -115,40 +114,28 @@ object XTextTableCursor {
     __obj.asInstanceOf[XTextTableCursor]
   }
   
-  @scala.inline
-  implicit class XTextTableCursorMutableBuilder[Self <: XTextTableCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XTextTableCursor](x: Self) {
     
-    @scala.inline
-    def setGetRangeName(value: () => String): Self = StObject.set(x, "getRangeName", js.Any.fromFunction0(value))
+    inline def setGetRangeName(value: () => String): Self = StObject.set(x, "getRangeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGoDown(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goDown", js.Any.fromFunction2(value))
+    inline def setGoDown(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
+    inline def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
+    inline def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoUp(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goUp", js.Any.fromFunction2(value))
+    inline def setGoUp(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goUp", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGotoCellByName(value: (String, Boolean) => Boolean): Self = StObject.set(x, "gotoCellByName", js.Any.fromFunction2(value))
+    inline def setGotoCellByName(value: (String, Boolean) => Boolean): Self = StObject.set(x, "gotoCellByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGotoEnd(value: Boolean => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction1(value))
+    inline def setGotoEnd(value: Boolean => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoStart(value: Boolean => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction1(value))
+    inline def setGotoStart(value: Boolean => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMergeRange(value: () => Boolean): Self = StObject.set(x, "mergeRange", js.Any.fromFunction0(value))
+    inline def setMergeRange(value: () => Boolean): Self = StObject.set(x, "mergeRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRangeName(value: String): Self = StObject.set(x, "RangeName", value.asInstanceOf[js.Any])
+    inline def setRangeName(value: String): Self = StObject.set(x, "RangeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitRange(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "splitRange", js.Any.fromFunction2(value))
+    inline def setSplitRange(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "splitRange", js.Any.fromFunction2(value))
   }
 }

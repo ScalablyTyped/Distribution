@@ -22,19 +22,15 @@ trait IPlayerAttackedEntityEventData extends StObject {
 }
 object IPlayerAttackedEntityEventData {
   
-  @scala.inline
-  def apply(attacked_entity: IEntity, player: IEntity): IPlayerAttackedEntityEventData = {
+  inline def apply(attacked_entity: IEntity, player: IEntity): IPlayerAttackedEntityEventData = {
     val __obj = js.Dynamic.literal(attacked_entity = attacked_entity.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlayerAttackedEntityEventData]
   }
   
-  @scala.inline
-  implicit class IPlayerAttackedEntityEventDataMutableBuilder[Self <: IPlayerAttackedEntityEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayerAttackedEntityEventData](x: Self) {
     
-    @scala.inline
-    def setAttacked_entity(value: IEntity): Self = StObject.set(x, "attacked_entity", value.asInstanceOf[js.Any])
+    inline def setAttacked_entity(value: IEntity): Self = StObject.set(x, "attacked_entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }
 }

@@ -18,20 +18,16 @@ object anon {
   }
   object Proposals {
     
-    @scala.inline
-    def apply(proposals: Boolean, version: CorejsVersion): Proposals = {
+    inline def apply(proposals: Boolean, version: CorejsVersion): Proposals = {
       val __obj = js.Dynamic.literal(proposals = proposals.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Proposals]
     }
     
-    @scala.inline
-    implicit class ProposalsMutableBuilder[Self <: Proposals] (val x: Self) extends AnyVal {
+    extension [Self <: Proposals](x: Self) {
       
-      @scala.inline
-      def setProposals(value: Boolean): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
+      inline def setProposals(value: Boolean): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: CorejsVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: CorejsVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

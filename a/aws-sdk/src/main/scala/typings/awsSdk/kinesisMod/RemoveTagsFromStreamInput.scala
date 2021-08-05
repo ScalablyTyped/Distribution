@@ -18,22 +18,17 @@ trait RemoveTagsFromStreamInput extends StObject {
 }
 object RemoveTagsFromStreamInput {
   
-  @scala.inline
-  def apply(StreamName: StreamName, TagKeys: TagKeyList): RemoveTagsFromStreamInput = {
+  inline def apply(StreamName: StreamName, TagKeys: TagKeyList): RemoveTagsFromStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTagsFromStreamInput]
   }
   
-  @scala.inline
-  implicit class RemoveTagsFromStreamInputMutableBuilder[Self <: RemoveTagsFromStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTagsFromStreamInput](x: Self) {
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

@@ -15,31 +15,23 @@ trait InflateFunctionOptions extends StObject {
 }
 object InflateFunctionOptions {
   
-  @scala.inline
-  def apply(): InflateFunctionOptions = {
+  inline def apply(): InflateFunctionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InflateFunctionOptions]
   }
   
-  @scala.inline
-  implicit class InflateFunctionOptionsMutableBuilder[Self <: InflateFunctionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InflateFunctionOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setTo(value: string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
+    inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
+    inline def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
   }
 }

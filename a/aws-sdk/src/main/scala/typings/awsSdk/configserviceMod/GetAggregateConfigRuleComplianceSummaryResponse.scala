@@ -23,34 +23,25 @@ trait GetAggregateConfigRuleComplianceSummaryResponse extends StObject {
 }
 object GetAggregateConfigRuleComplianceSummaryResponse {
   
-  @scala.inline
-  def apply(): GetAggregateConfigRuleComplianceSummaryResponse = {
+  inline def apply(): GetAggregateConfigRuleComplianceSummaryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAggregateConfigRuleComplianceSummaryResponse]
   }
   
-  @scala.inline
-  implicit class GetAggregateConfigRuleComplianceSummaryResponseMutableBuilder[Self <: GetAggregateConfigRuleComplianceSummaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAggregateConfigRuleComplianceSummaryResponse](x: Self) {
     
-    @scala.inline
-    def setAggregateComplianceCounts(value: AggregateComplianceCountList): Self = StObject.set(x, "AggregateComplianceCounts", value.asInstanceOf[js.Any])
+    inline def setAggregateComplianceCounts(value: AggregateComplianceCountList): Self = StObject.set(x, "AggregateComplianceCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateComplianceCountsUndefined: Self = StObject.set(x, "AggregateComplianceCounts", js.undefined)
+    inline def setAggregateComplianceCountsUndefined: Self = StObject.set(x, "AggregateComplianceCounts", js.undefined)
     
-    @scala.inline
-    def setAggregateComplianceCountsVarargs(value: AggregateComplianceCount*): Self = StObject.set(x, "AggregateComplianceCounts", js.Array(value :_*))
+    inline def setAggregateComplianceCountsVarargs(value: AggregateComplianceCount*): Self = StObject.set(x, "AggregateComplianceCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupByKey(value: StringWithCharLimit256): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
+    inline def setGroupByKey(value: StringWithCharLimit256): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByKeyUndefined: Self = StObject.set(x, "GroupByKey", js.undefined)
+    inline def setGroupByKeyUndefined: Self = StObject.set(x, "GroupByKey", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

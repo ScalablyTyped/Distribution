@@ -10,16 +10,13 @@ trait TrackTrackErrorEvent extends StObject {
 }
 object TrackTrackErrorEvent {
   
-  @scala.inline
-  def apply(error: Error): TrackTrackErrorEvent = {
+  inline def apply(error: Error): TrackTrackErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackTrackErrorEvent]
   }
   
-  @scala.inline
-  implicit class TrackTrackErrorEventMutableBuilder[Self <: TrackTrackErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TrackTrackErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

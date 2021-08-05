@@ -14,8 +14,7 @@ object runBlockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(opts: RunBlockOpts): js.Promise[RunBlockResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RunBlockResult]]
+  inline def default(opts: RunBlockOpts): js.Promise[RunBlockResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RunBlockResult]]
   
   trait RunBlockOpts extends StObject {
     
@@ -52,47 +51,34 @@ object runBlockMod {
   }
   object RunBlockOpts {
     
-    @scala.inline
-    def apply(block: js.Any): RunBlockOpts = {
+    inline def apply(block: js.Any): RunBlockOpts = {
       val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunBlockOpts]
     }
     
-    @scala.inline
-    implicit class RunBlockOptsMutableBuilder[Self <: RunBlockOpts] (val x: Self) extends AnyVal {
+    extension [Self <: RunBlockOpts](x: Self) {
       
-      @scala.inline
-      def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerate(value: Boolean): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
+      inline def setGenerate(value: Boolean): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
+      inline def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
       
-      @scala.inline
-      def setRoot(value: Buffer): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Buffer): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSkipBalance(value: Boolean): Self = StObject.set(x, "skipBalance", value.asInstanceOf[js.Any])
+      inline def setSkipBalance(value: Boolean): Self = StObject.set(x, "skipBalance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipBalanceUndefined: Self = StObject.set(x, "skipBalance", js.undefined)
+      inline def setSkipBalanceUndefined: Self = StObject.set(x, "skipBalance", js.undefined)
       
-      @scala.inline
-      def setSkipBlockValidation(value: Boolean): Self = StObject.set(x, "skipBlockValidation", value.asInstanceOf[js.Any])
+      inline def setSkipBlockValidation(value: Boolean): Self = StObject.set(x, "skipBlockValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipBlockValidationUndefined: Self = StObject.set(x, "skipBlockValidation", js.undefined)
+      inline def setSkipBlockValidationUndefined: Self = StObject.set(x, "skipBlockValidation", js.undefined)
       
-      @scala.inline
-      def setSkipNonce(value: Boolean): Self = StObject.set(x, "skipNonce", value.asInstanceOf[js.Any])
+      inline def setSkipNonce(value: Boolean): Self = StObject.set(x, "skipNonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipNonceUndefined: Self = StObject.set(x, "skipNonce", js.undefined)
+      inline def setSkipNonceUndefined: Self = StObject.set(x, "skipNonce", js.undefined)
     }
   }
   
@@ -110,26 +96,20 @@ object runBlockMod {
   }
   object RunBlockResult {
     
-    @scala.inline
-    def apply(receipts: js.Array[TxReceipt], results: js.Array[RunTxResult]): RunBlockResult = {
+    inline def apply(receipts: js.Array[TxReceipt], results: js.Array[RunTxResult]): RunBlockResult = {
       val __obj = js.Dynamic.literal(receipts = receipts.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunBlockResult]
     }
     
-    @scala.inline
-    implicit class RunBlockResultMutableBuilder[Self <: RunBlockResult] (val x: Self) extends AnyVal {
+    extension [Self <: RunBlockResult](x: Self) {
       
-      @scala.inline
-      def setReceipts(value: js.Array[TxReceipt]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
+      inline def setReceipts(value: js.Array[TxReceipt]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptsVarargs(value: TxReceipt*): Self = StObject.set(x, "receipts", js.Array(value :_*))
+      inline def setReceiptsVarargs(value: TxReceipt*): Self = StObject.set(x, "receipts", js.Array(value :_*))
       
-      @scala.inline
-      def setResults(value: js.Array[RunTxResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[RunTxResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: RunTxResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: RunTxResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   
@@ -157,29 +137,22 @@ object runBlockMod {
   }
   object TxReceipt {
     
-    @scala.inline
-    def apply(bitvector: Buffer, gasUsed: Buffer, logs: js.Array[js.Any], status: `0` | `1`): TxReceipt = {
+    inline def apply(bitvector: Buffer, gasUsed: Buffer, logs: js.Array[js.Any], status: `0` | `1`): TxReceipt = {
       val __obj = js.Dynamic.literal(bitvector = bitvector.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[TxReceipt]
     }
     
-    @scala.inline
-    implicit class TxReceiptMutableBuilder[Self <: TxReceipt] (val x: Self) extends AnyVal {
+    extension [Self <: TxReceipt](x: Self) {
       
-      @scala.inline
-      def setBitvector(value: Buffer): Self = StObject.set(x, "bitvector", value.asInstanceOf[js.Any])
+      inline def setBitvector(value: Buffer): Self = StObject.set(x, "bitvector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUsed(value: Buffer): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      inline def setGasUsed(value: Buffer): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsVarargs(value: js.Any*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: js.Any*): Self = StObject.set(x, "logs", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: `0` | `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `0` | `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

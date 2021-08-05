@@ -10,19 +10,15 @@ trait MaybeRevisionedDocument extends StObject {
 }
 object MaybeRevisionedDocument {
   
-  @scala.inline
-  def apply(): MaybeRevisionedDocument = {
+  inline def apply(): MaybeRevisionedDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaybeRevisionedDocument]
   }
   
-  @scala.inline
-  implicit class MaybeRevisionedDocumentMutableBuilder[Self <: MaybeRevisionedDocument] (val x: Self) extends AnyVal {
+  extension [Self <: MaybeRevisionedDocument](x: Self) {
     
-    @scala.inline
-    def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
+    inline def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_revUndefined: Self = StObject.set(x, "_rev", js.undefined)
+    inline def set_revUndefined: Self = StObject.set(x, "_rev", js.undefined)
   }
 }

@@ -69,8 +69,7 @@ object dataTableMod {
     @JSImport("carbon-components/components/data-table/data-table", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object eventHandlers {
@@ -83,8 +82,7 @@ object dataTableMod {
       @js.native
       def actionBarCancel: String = js.native
       
-      @scala.inline
-      def actionBarCancel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("action-bar-cancel")(x.asInstanceOf[js.Any])
+      inline def actionBarCancel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("action-bar-cancel")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/data-table/data-table", "default.eventHandlers.expand")
       @js.native
@@ -93,11 +91,9 @@ object dataTableMod {
       @JSImport("carbon-components/components/data-table/data-table", "default.eventHandlers.expandAll")
       @js.native
       def expandAll: String = js.native
-      @scala.inline
-      def expandAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expandAll")(x.asInstanceOf[js.Any])
+      inline def expandAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expandAll")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def expand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expand")(x.asInstanceOf[js.Any])
+      inline def expand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expand")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/data-table/data-table", "default.eventHandlers.select")
       @js.native
@@ -107,17 +103,14 @@ object dataTableMod {
       @js.native
       def selectAll: String = js.native
       
-      @scala.inline
-      def selectAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select-all")(x.asInstanceOf[js.Any])
+      inline def selectAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select-all")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def select_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
+      inline def select_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/data-table/data-table", "default.eventHandlers.sort")
       @js.native
       def sort: String = js.native
-      @scala.inline
-      def sort_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sort")(x.asInstanceOf[js.Any])
+      inline def sort_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sort")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -156,8 +149,7 @@ object dataTableMod {
   }
   object DataTable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _actionBarCancel: () => Unit,
       _actionBarToggle: js.Any => Unit,
       _changeState: (js.Any, js.Any) => Unit,
@@ -178,53 +170,37 @@ object dataTableMod {
       __obj.asInstanceOf[DataTable]
     }
     
-    @scala.inline
-    implicit class DataTableMutableBuilder[Self <: DataTable] (val x: Self) extends AnyVal {
+    extension [Self <: DataTable](x: Self) {
       
-      @scala.inline
-      def setActivateSearch(value: js.Any => Unit): Self = StObject.set(x, "activateSearch", js.Any.fromFunction1(value))
+      inline def setActivateSearch(value: js.Any => Unit): Self = StObject.set(x, "activateSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeactivateSearch(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "deactivateSearch", js.Any.fromFunction2(value))
+      inline def setDeactivateSearch(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "deactivateSearch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRefreshRows(value: () => Unit): Self = StObject.set(x, "refreshRows", js.Any.fromFunction0(value))
+      inline def setRefreshRows(value: () => Unit): Self = StObject.set(x, "refreshRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_actionBarCancel(value: () => Unit): Self = StObject.set(x, "_actionBarCancel", js.Any.fromFunction0(value))
+      inline def set_actionBarCancel(value: () => Unit): Self = StObject.set(x, "_actionBarCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_actionBarToggle(value: js.Any => Unit): Self = StObject.set(x, "_actionBarToggle", js.Any.fromFunction1(value))
+      inline def set_actionBarToggle(value: js.Any => Unit): Self = StObject.set(x, "_actionBarToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_changeState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction2(value))
+      inline def set_changeState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_expandableHoverToggle(value: js.Any => Unit): Self = StObject.set(x, "_expandableHoverToggle", js.Any.fromFunction1(value))
+      inline def set_expandableHoverToggle(value: js.Any => Unit): Self = StObject.set(x, "_expandableHoverToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleDocumentClick(value: js.Any => Unit): Self = StObject.set(x, "_handleDocumentClick", js.Any.fromFunction1(value))
+      inline def set_handleDocumentClick(value: js.Any => Unit): Self = StObject.set(x, "_handleDocumentClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_keydownHandler(value: js.Any => Unit): Self = StObject.set(x, "_keydownHandler", js.Any.fromFunction1(value))
+      inline def set_keydownHandler(value: js.Any => Unit): Self = StObject.set(x, "_keydownHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_rowExpandToggle(value: js.Any => Unit): Self = StObject.set(x, "_rowExpandToggle", js.Any.fromFunction1(value))
+      inline def set_rowExpandToggle(value: js.Any => Unit): Self = StObject.set(x, "_rowExpandToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_rowExpandToggleAll(value: js.Any => Unit): Self = StObject.set(x, "_rowExpandToggleAll", js.Any.fromFunction1(value))
+      inline def set_rowExpandToggleAll(value: js.Any => Unit): Self = StObject.set(x, "_rowExpandToggleAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_selectAllToggle(value: js.Any => Unit): Self = StObject.set(x, "_selectAllToggle", js.Any.fromFunction1(value))
+      inline def set_selectAllToggle(value: js.Any => Unit): Self = StObject.set(x, "_selectAllToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_selectToggle(value: js.Any => Unit): Self = StObject.set(x, "_selectToggle", js.Any.fromFunction1(value))
+      inline def set_selectToggle(value: js.Any => Unit): Self = StObject.set(x, "_selectToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_sortToggle(value: js.Any => Unit): Self = StObject.set(x, "_sortToggle", js.Any.fromFunction1(value))
+      inline def set_sortToggle(value: js.Any => Unit): Self = StObject.set(x, "_sortToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_toggleState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_toggleState", js.Any.fromFunction2(value))
+      inline def set_toggleState(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_toggleState", js.Any.fromFunction2(value))
     }
   }
 }

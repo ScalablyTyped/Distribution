@@ -20,34 +20,25 @@ trait LineSeriesProps
 }
 object LineSeriesProps {
   
-  @scala.inline
-  def apply(): LineSeriesProps = {
+  inline def apply(): LineSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineSeriesProps]
   }
   
-  @scala.inline
-  implicit class LineSeriesPropsMutableBuilder[Self <: LineSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: LineSeriesProps](x: Self) {
     
-    @scala.inline
-    def setCurve(value: String | (js.Function1[/* x */ js.Any, js.Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: String | (js.Function1[/* x */ js.Any, js.Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveFunction1(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
+    inline def setCurveFunction1(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
+    inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
-    @scala.inline
-    def setGetNull(value: LineSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
+    inline def setGetNull(value: LineSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
+    inline def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
     
-    @scala.inline
-    def setStrokeStyle(value: dashed | solid): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    inline def setStrokeStyle(value: dashed | solid): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+    inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
   }
 }

@@ -26,26 +26,19 @@ object touchRippleMod extends Shortcut {
   trait TouchRippleClassKey extends StObject
   object TouchRippleClassKey {
     
-    @scala.inline
-    def child: typings.materialUiCore.materialUiCoreStrings.child = "child".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.child]
+    inline def child: typings.materialUiCore.materialUiCoreStrings.child = "child".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.child]
     
-    @scala.inline
-    def childLeaving: typings.materialUiCore.materialUiCoreStrings.childLeaving = "childLeaving".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.childLeaving]
+    inline def childLeaving: typings.materialUiCore.materialUiCoreStrings.childLeaving = "childLeaving".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.childLeaving]
     
-    @scala.inline
-    def childPulsate: typings.materialUiCore.materialUiCoreStrings.childPulsate = "childPulsate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.childPulsate]
+    inline def childPulsate: typings.materialUiCore.materialUiCoreStrings.childPulsate = "childPulsate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.childPulsate]
     
-    @scala.inline
-    def ripple: typings.materialUiCore.materialUiCoreStrings.ripple = "ripple".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ripple]
+    inline def ripple: typings.materialUiCore.materialUiCoreStrings.ripple = "ripple".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ripple]
     
-    @scala.inline
-    def ripplePulsate: typings.materialUiCore.materialUiCoreStrings.ripplePulsate = "ripplePulsate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ripplePulsate]
+    inline def ripplePulsate: typings.materialUiCore.materialUiCoreStrings.ripplePulsate = "ripplePulsate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ripplePulsate]
     
-    @scala.inline
-    def rippleVisible: typings.materialUiCore.materialUiCoreStrings.rippleVisible = "rippleVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rippleVisible]
+    inline def rippleVisible: typings.materialUiCore.materialUiCoreStrings.rippleVisible = "rippleVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rippleVisible]
     
-    @scala.inline
-    def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   }
   
   type TouchRippleProps = (StandardProps[

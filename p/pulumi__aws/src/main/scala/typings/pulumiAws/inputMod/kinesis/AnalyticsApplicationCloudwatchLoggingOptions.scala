@@ -24,25 +24,19 @@ trait AnalyticsApplicationCloudwatchLoggingOptions extends StObject {
 }
 object AnalyticsApplicationCloudwatchLoggingOptions {
   
-  @scala.inline
-  def apply(logStreamArn: Input[String], roleArn: Input[String]): AnalyticsApplicationCloudwatchLoggingOptions = {
+  inline def apply(logStreamArn: Input[String], roleArn: Input[String]): AnalyticsApplicationCloudwatchLoggingOptions = {
     val __obj = js.Dynamic.literal(logStreamArn = logStreamArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationCloudwatchLoggingOptions]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationCloudwatchLoggingOptionsMutableBuilder[Self <: AnalyticsApplicationCloudwatchLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationCloudwatchLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLogStreamArn(value: Input[String]): Self = StObject.set(x, "logStreamArn", value.asInstanceOf[js.Any])
+    inline def setLogStreamArn(value: Input[String]): Self = StObject.set(x, "logStreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

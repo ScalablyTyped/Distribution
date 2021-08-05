@@ -12,19 +12,15 @@ trait HashValue extends StObject {
 }
 object HashValue {
   
-  @scala.inline
-  def apply(hashAlg: String, hashValue: String): HashValue = {
+  inline def apply(hashAlg: String, hashValue: String): HashValue = {
     val __obj = js.Dynamic.literal(hashAlg = hashAlg.asInstanceOf[js.Any], hashValue = hashValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashValue]
   }
   
-  @scala.inline
-  implicit class HashValueMutableBuilder[Self <: HashValue] (val x: Self) extends AnyVal {
+  extension [Self <: HashValue](x: Self) {
     
-    @scala.inline
-    def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashValue(value: String): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
+    inline def setHashValue(value: String): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
   }
 }

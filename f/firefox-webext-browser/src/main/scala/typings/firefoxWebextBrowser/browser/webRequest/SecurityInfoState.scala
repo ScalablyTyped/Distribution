@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecurityInfoState extends StObject
 object SecurityInfoState {
   
-  @scala.inline
-  def broken: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken = "broken".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken]
+  inline def broken: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken = "broken".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken]
   
-  @scala.inline
-  def insecure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure = "insecure".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure]
+  inline def insecure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure = "insecure".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure]
   
-  @scala.inline
-  def secure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure = "secure".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure]
+  inline def secure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure = "secure".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure]
   
-  @scala.inline
-  def weak: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak = "weak".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak]
+  inline def weak: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak = "weak".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak]
 }

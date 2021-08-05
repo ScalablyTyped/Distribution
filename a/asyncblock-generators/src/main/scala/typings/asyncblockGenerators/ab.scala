@@ -81,59 +81,42 @@ object ab {
     }
     object TaskOptions {
       
-      @scala.inline
-      def apply(): TaskOptions = {
+      inline def apply(): TaskOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TaskOptions]
       }
       
-      @scala.inline
-      implicit class TaskOptionsMutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TaskOptions](x: Self) {
         
-        @scala.inline
-        def setDontWait(value: Boolean): Self = StObject.set(x, "dontWait", value.asInstanceOf[js.Any])
+        inline def setDontWait(value: Boolean): Self = StObject.set(x, "dontWait", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDontWaitUndefined: Self = StObject.set(x, "dontWait", js.undefined)
+        inline def setDontWaitUndefined: Self = StObject.set(x, "dontWait", js.undefined)
         
-        @scala.inline
-        def setFirstArgIsError(value: Boolean): Self = StObject.set(x, "firstArgIsError", value.asInstanceOf[js.Any])
+        inline def setFirstArgIsError(value: Boolean): Self = StObject.set(x, "firstArgIsError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstArgIsErrorUndefined: Self = StObject.set(x, "firstArgIsError", js.undefined)
+        inline def setFirstArgIsErrorUndefined: Self = StObject.set(x, "firstArgIsError", js.undefined)
         
-        @scala.inline
-        def setIgnoreError(value: Boolean): Self = StObject.set(x, "ignoreError", value.asInstanceOf[js.Any])
+        inline def setIgnoreError(value: Boolean): Self = StObject.set(x, "ignoreError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreErrorUndefined: Self = StObject.set(x, "ignoreError", js.undefined)
+        inline def setIgnoreErrorUndefined: Self = StObject.set(x, "ignoreError", js.undefined)
         
-        @scala.inline
-        def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setResponseFormat(value: js.Array[String]): Self = StObject.set(x, "responseFormat", value.asInstanceOf[js.Any])
+        inline def setResponseFormat(value: js.Array[String]): Self = StObject.set(x, "responseFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseFormatUndefined: Self = StObject.set(x, "responseFormat", js.undefined)
+        inline def setResponseFormatUndefined: Self = StObject.set(x, "responseFormat", js.undefined)
         
-        @scala.inline
-        def setResponseFormatVarargs(value: String*): Self = StObject.set(x, "responseFormat", js.Array(value :_*))
+        inline def setResponseFormatVarargs(value: String*): Self = StObject.set(x, "responseFormat", js.Array(value :_*))
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutIsError(value: Boolean): Self = StObject.set(x, "timeoutIsError", value.asInstanceOf[js.Any])
+        inline def setTimeoutIsError(value: Boolean): Self = StObject.set(x, "timeoutIsError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutIsErrorUndefined: Self = StObject.set(x, "timeoutIsError", js.undefined)
+        inline def setTimeoutIsErrorUndefined: Self = StObject.set(x, "timeoutIsError", js.undefined)
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       }
     }
   }

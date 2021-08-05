@@ -14,28 +14,21 @@ trait ListJobTemplatesResponse extends StObject {
 }
 object ListJobTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListJobTemplatesResponse = {
+  inline def apply(): ListJobTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListJobTemplatesResponseMutableBuilder[Self <: ListJobTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setJobTemplates(value: js.Array[JobTemplate]): Self = StObject.set(x, "jobTemplates", value.asInstanceOf[js.Any])
+    inline def setJobTemplates(value: js.Array[JobTemplate]): Self = StObject.set(x, "jobTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTemplatesUndefined: Self = StObject.set(x, "jobTemplates", js.undefined)
+    inline def setJobTemplatesUndefined: Self = StObject.set(x, "jobTemplates", js.undefined)
     
-    @scala.inline
-    def setJobTemplatesVarargs(value: JobTemplate*): Self = StObject.set(x, "jobTemplates", js.Array(value :_*))
+    inline def setJobTemplatesVarargs(value: JobTemplate*): Self = StObject.set(x, "jobTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

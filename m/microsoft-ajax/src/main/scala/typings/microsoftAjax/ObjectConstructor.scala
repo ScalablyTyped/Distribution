@@ -18,19 +18,15 @@ trait ObjectConstructor extends StObject {
 }
 object ObjectConstructor {
   
-  @scala.inline
-  def apply(getType: js.Any => Type, getTypeName: js.Any => java.lang.String): ObjectConstructor = {
+  inline def apply(getType: js.Any => Type, getTypeName: js.Any => java.lang.String): ObjectConstructor = {
     val __obj = js.Dynamic.literal(getType = js.Any.fromFunction1(getType), getTypeName = js.Any.fromFunction1(getTypeName))
     __obj.asInstanceOf[ObjectConstructor]
   }
   
-  @scala.inline
-  implicit class ObjectConstructorMutableBuilder[Self <: ObjectConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectConstructor](x: Self) {
     
-    @scala.inline
-    def setGetType(value: js.Any => Type): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
+    inline def setGetType(value: js.Any => Type): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTypeName(value: js.Any => java.lang.String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction1(value))
+    inline def setGetTypeName(value: js.Any => java.lang.String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction1(value))
   }
 }

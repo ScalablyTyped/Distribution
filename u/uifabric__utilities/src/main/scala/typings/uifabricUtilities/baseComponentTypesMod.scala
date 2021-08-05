@@ -13,23 +13,18 @@ object baseComponentTypesMod {
   }
   object IBaseProps {
     
-    @scala.inline
-    def apply[T](): IBaseProps[T] = {
+    inline def apply[T](): IBaseProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBaseProps[T]]
     }
     
-    @scala.inline
-    implicit class IBasePropsMutableBuilder[Self <: IBaseProps[?], T] (val x: Self & IBaseProps[T]) extends AnyVal {
+    extension [Self <: IBaseProps[?], T](x: Self & IBaseProps[T]) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[T]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[T]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ T | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ T | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     }
   }
 }

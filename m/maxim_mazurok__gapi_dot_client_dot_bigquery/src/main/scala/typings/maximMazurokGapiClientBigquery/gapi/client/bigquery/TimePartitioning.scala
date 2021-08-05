@@ -28,37 +28,27 @@ trait TimePartitioning extends StObject {
 }
 object TimePartitioning {
   
-  @scala.inline
-  def apply(): TimePartitioning = {
+  inline def apply(): TimePartitioning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimePartitioning]
   }
   
-  @scala.inline
-  implicit class TimePartitioningMutableBuilder[Self <: TimePartitioning] (val x: Self) extends AnyVal {
+  extension [Self <: TimePartitioning](x: Self) {
     
-    @scala.inline
-    def setExpirationMs(value: String): Self = StObject.set(x, "expirationMs", value.asInstanceOf[js.Any])
+    inline def setExpirationMs(value: String): Self = StObject.set(x, "expirationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationMsUndefined: Self = StObject.set(x, "expirationMs", js.undefined)
+    inline def setExpirationMsUndefined: Self = StObject.set(x, "expirationMs", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setRequirePartitionFilter(value: Boolean): Self = StObject.set(x, "requirePartitionFilter", value.asInstanceOf[js.Any])
+    inline def setRequirePartitionFilter(value: Boolean): Self = StObject.set(x, "requirePartitionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirePartitionFilterUndefined: Self = StObject.set(x, "requirePartitionFilter", js.undefined)
+    inline def setRequirePartitionFilterUndefined: Self = StObject.set(x, "requirePartitionFilter", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

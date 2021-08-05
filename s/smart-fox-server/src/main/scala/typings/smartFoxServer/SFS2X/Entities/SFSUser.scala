@@ -119,8 +119,7 @@ trait SFSUser extends StObject {
 }
 object SFSUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aoiEntryPoint: Vec3D,
     containsVariable: String => Boolean,
     getPlayerId: SFSRoom => Double,
@@ -146,67 +145,46 @@ object SFSUser {
     __obj.asInstanceOf[SFSUser]
   }
   
-  @scala.inline
-  implicit class SFSUserMutableBuilder[Self <: SFSUser] (val x: Self) extends AnyVal {
+  extension [Self <: SFSUser](x: Self) {
     
-    @scala.inline
-    def setAoiEntryPoint(value: Vec3D): Self = StObject.set(x, "aoiEntryPoint", value.asInstanceOf[js.Any])
+    inline def setAoiEntryPoint(value: Vec3D): Self = StObject.set(x, "aoiEntryPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
+    inline def setContainsVariable(value: String => Boolean): Self = StObject.set(x, "containsVariable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPlayerId(value: SFSRoom => Double): Self = StObject.set(x, "getPlayerId", js.Any.fromFunction1(value))
+    inline def setGetPlayerId(value: SFSRoom => Double): Self = StObject.set(x, "getPlayerId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUserManager(value: () => UserManager): Self = StObject.set(x, "getUserManager", js.Any.fromFunction0(value))
+    inline def setGetUserManager(value: () => UserManager): Self = StObject.set(x, "getUserManager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVariable(value: String => SFSUserVariable): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
+    inline def setGetVariable(value: String => SFSUserVariable): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVariables(value: () => js.Array[SFSUserVariable]): Self = StObject.set(x, "getVariables", js.Any.fromFunction0(value))
+    inline def setGetVariables(value: () => js.Array[SFSUserVariable]): Self = StObject.set(x, "getVariables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAdmin(value: () => Boolean): Self = StObject.set(x, "isAdmin", js.Any.fromFunction0(value))
+    inline def setIsAdmin(value: () => Boolean): Self = StObject.set(x, "isAdmin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsGuest(value: () => Boolean): Self = StObject.set(x, "isGuest", js.Any.fromFunction0(value))
+    inline def setIsGuest(value: () => Boolean): Self = StObject.set(x, "isGuest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsItMe(value: Boolean): Self = StObject.set(x, "isItMe", value.asInstanceOf[js.Any])
+    inline def setIsItMe(value: Boolean): Self = StObject.set(x, "isItMe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsJoinedInRoom(value: SFSRoom => Boolean): Self = StObject.set(x, "isJoinedInRoom", js.Any.fromFunction1(value))
+    inline def setIsJoinedInRoom(value: SFSRoom => Boolean): Self = StObject.set(x, "isJoinedInRoom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsModerator(value: () => Boolean): Self = StObject.set(x, "isModerator", js.Any.fromFunction0(value))
+    inline def setIsModerator(value: () => Boolean): Self = StObject.set(x, "isModerator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPlayer(value: () => Boolean): Self = StObject.set(x, "isPlayer", js.Any.fromFunction0(value))
+    inline def setIsPlayer(value: () => Boolean): Self = StObject.set(x, "isPlayer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPlayerInRoom(value: SFSRoom => Boolean): Self = StObject.set(x, "isPlayerInRoom", js.Any.fromFunction1(value))
+    inline def setIsPlayerInRoom(value: SFSRoom => Boolean): Self = StObject.set(x, "isPlayerInRoom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsSpectator(value: () => Boolean): Self = StObject.set(x, "isSpectator", js.Any.fromFunction0(value))
+    inline def setIsSpectator(value: () => Boolean): Self = StObject.set(x, "isSpectator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSpectatorInRoom(value: SFSRoom => Boolean): Self = StObject.set(x, "isSpectatorInRoom", js.Any.fromFunction1(value))
+    inline def setIsSpectatorInRoom(value: SFSRoom => Boolean): Self = StObject.set(x, "isSpectatorInRoom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsStandardUser(value: () => Boolean): Self = StObject.set(x, "isStandardUser", js.Any.fromFunction0(value))
+    inline def setIsStandardUser(value: () => Boolean): Self = StObject.set(x, "isStandardUser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeId(value: Double): Self = StObject.set(x, "privilegeId", value.asInstanceOf[js.Any])
+    inline def setPrivilegeId(value: Double): Self = StObject.set(x, "privilegeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

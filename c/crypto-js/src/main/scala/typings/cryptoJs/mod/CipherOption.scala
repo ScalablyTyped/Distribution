@@ -21,25 +21,19 @@ trait CipherOption
 }
 object CipherOption {
   
-  @scala.inline
-  def apply(): CipherOption = {
+  inline def apply(): CipherOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CipherOption]
   }
   
-  @scala.inline
-  implicit class CipherOptionMutableBuilder[Self <: CipherOption] (val x: Self) extends AnyVal {
+  extension [Self <: CipherOption](x: Self) {
     
-    @scala.inline
-    def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
   }
 }

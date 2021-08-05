@@ -27,8 +27,7 @@ trait XIdentifierAccess
 }
 object XIdentifierAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     Identifiers: SafeArray[Double],
     acquire: () => Unit,
@@ -43,16 +42,12 @@ object XIdentifierAccess {
     __obj.asInstanceOf[XIdentifierAccess]
   }
   
-  @scala.inline
-  implicit class XIdentifierAccessMutableBuilder[Self <: XIdentifierAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XIdentifierAccess](x: Self) {
     
-    @scala.inline
-    def setGetByIdentifier(value: Double => js.Any): Self = StObject.set(x, "getByIdentifier", js.Any.fromFunction1(value))
+    inline def setGetByIdentifier(value: Double => js.Any): Self = StObject.set(x, "getByIdentifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIdentifiers(value: () => SafeArray[Double]): Self = StObject.set(x, "getIdentifiers", js.Any.fromFunction0(value))
+    inline def setGetIdentifiers(value: () => SafeArray[Double]): Self = StObject.set(x, "getIdentifiers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIdentifiers(value: SafeArray[Double]): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
+    inline def setIdentifiers(value: SafeArray[Double]): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
   }
 }

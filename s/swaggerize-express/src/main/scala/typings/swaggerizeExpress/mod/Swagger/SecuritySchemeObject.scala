@@ -24,8 +24,7 @@ trait SecuritySchemeObject extends StObject {
 }
 object SecuritySchemeObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizationUrl: String,
     flow: String,
     in: String,
@@ -39,34 +38,24 @@ object SecuritySchemeObject {
     __obj.asInstanceOf[SecuritySchemeObject]
   }
   
-  @scala.inline
-  implicit class SecuritySchemeObjectMutableBuilder[Self <: SecuritySchemeObject] (val x: Self) extends AnyVal {
+  extension [Self <: SecuritySchemeObject](x: Self) {
     
-    @scala.inline
-    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFlow(value: String): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: String): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: ScopesObject): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: ScopesObject): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
+    inline def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

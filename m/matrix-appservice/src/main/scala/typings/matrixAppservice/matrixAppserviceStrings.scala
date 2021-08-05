@@ -8,31 +8,25 @@ object matrixAppserviceStrings {
   
   @js.native
   sealed trait aliases extends StObject
-  @scala.inline
-  def aliases: aliases = "aliases".asInstanceOf[aliases]
+  inline def aliases: aliases = "aliases".asInstanceOf[aliases]
   
   @js.native
   sealed trait ephemeral extends StObject
-  @scala.inline
-  def ephemeral: ephemeral = "ephemeral".asInstanceOf[ephemeral]
+  inline def ephemeral: ephemeral = "ephemeral".asInstanceOf[ephemeral]
   
   @js.native
   sealed trait event extends StObject
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
   sealed trait `http-log` extends StObject
-  @scala.inline
-  def `http-log`: `http-log` = "http-log".asInstanceOf[`http-log`]
+  inline def `http-log`: `http-log` = "http-log".asInstanceOf[`http-log`]
   
   @js.native
   sealed trait rooms extends StObject
-  @scala.inline
-  def rooms: rooms = "rooms".asInstanceOf[rooms]
+  inline def rooms: rooms = "rooms".asInstanceOf[rooms]
   
   @js.native
   sealed trait users extends StObject
-  @scala.inline
-  def users: users = "users".asInstanceOf[users]
+  inline def users: users = "users".asInstanceOf[users]
 }

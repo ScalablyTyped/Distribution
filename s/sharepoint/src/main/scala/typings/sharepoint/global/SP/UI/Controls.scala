@@ -20,8 +20,7 @@ object Controls {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getControl(placeHolderId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getControl")(placeHolderId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getControl(placeHolderId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getControl")(placeHolderId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSGlobal("SP.UI.Controls.Navigation")
@@ -107,8 +106,7 @@ object Controls {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getVersionedLayoutsUrl(pageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersionedLayoutsUrl")(pageName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getVersionedLayoutsUrl(pageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersionedLayoutsUrl")(pageName.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("SP.UI.Controls.NavigationOptions")

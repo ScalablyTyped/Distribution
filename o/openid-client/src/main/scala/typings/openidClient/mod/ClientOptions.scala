@@ -10,22 +10,17 @@ trait ClientOptions extends StObject {
 }
 object ClientOptions {
   
-  @scala.inline
-  def apply(): ClientOptions = {
+  inline def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientOptions]
   }
   
-  @scala.inline
-  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientOptions](x: Self) {
     
-    @scala.inline
-    def setAdditionalAuthorizedParties(value: String | js.Array[String]): Self = StObject.set(x, "additionalAuthorizedParties", value.asInstanceOf[js.Any])
+    inline def setAdditionalAuthorizedParties(value: String | js.Array[String]): Self = StObject.set(x, "additionalAuthorizedParties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalAuthorizedPartiesUndefined: Self = StObject.set(x, "additionalAuthorizedParties", js.undefined)
+    inline def setAdditionalAuthorizedPartiesUndefined: Self = StObject.set(x, "additionalAuthorizedParties", js.undefined)
     
-    @scala.inline
-    def setAdditionalAuthorizedPartiesVarargs(value: String*): Self = StObject.set(x, "additionalAuthorizedParties", js.Array(value :_*))
+    inline def setAdditionalAuthorizedPartiesVarargs(value: String*): Self = StObject.set(x, "additionalAuthorizedParties", js.Array(value :_*))
   }
 }

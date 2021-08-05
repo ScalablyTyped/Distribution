@@ -22,8 +22,7 @@ trait Hotspot
 }
 object Hotspot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPosition: () => Point,
     getText: () => String,
     getUserData: () => js.Any,
@@ -35,25 +34,18 @@ object Hotspot {
     __obj.asInstanceOf[Hotspot]
   }
   
-  @scala.inline
-  implicit class HotspotMutableBuilder[Self <: Hotspot] (val x: Self) extends AnyVal {
+  extension [Self <: Hotspot](x: Self) {
     
-    @scala.inline
-    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUserData(value: () => js.Any): Self = StObject.set(x, "getUserData", js.Any.fromFunction0(value))
+    inline def setGetUserData(value: () => js.Any): Self = StObject.set(x, "getUserData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPosition(value: Point => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: Point => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUserData(value: js.Any => Unit): Self = StObject.set(x, "setUserData", js.Any.fromFunction1(value))
+    inline def setSetUserData(value: js.Any => Unit): Self = StObject.set(x, "setUserData", js.Any.fromFunction1(value))
   }
 }

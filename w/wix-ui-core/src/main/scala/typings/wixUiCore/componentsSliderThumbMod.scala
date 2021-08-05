@@ -24,8 +24,7 @@ object componentsSliderThumbMod {
     def this(props: ThumbProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def getThumbSize(shape: String, rest: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbSize")(shape.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getThumbSize(shape: String, rest: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbSize")(shape.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait ThumbProps extends StObject {
     
@@ -41,8 +40,7 @@ object componentsSliderThumbMod {
   }
   object ThumbProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onMouseEnter: js.Any,
       onMouseLeave: js.Any,
       shape: String,
@@ -53,23 +51,17 @@ object componentsSliderThumbMod {
       __obj.asInstanceOf[ThumbProps]
     }
     
-    @scala.inline
-    implicit class ThumbPropsMutableBuilder[Self <: ThumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbProps](x: Self) {
       
-      @scala.inline
-      def setOnMouseEnter(value: js.Any): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
+      inline def setOnMouseEnter(value: js.Any): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMouseLeave(value: js.Any): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
+      inline def setOnMouseLeave(value: js.Any): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbPosition(value: CSSProperties): Self = StObject.set(x, "thumbPosition", value.asInstanceOf[js.Any])
+      inline def setThumbPosition(value: CSSProperties): Self = StObject.set(x, "thumbPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbSize(value: CSSProperties): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
+      inline def setThumbSize(value: CSSProperties): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
     }
   }
 }

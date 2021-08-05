@@ -9,6 +9,5 @@ object global {
   @JSGlobal("MonacoEnvironment")
   @js.native
   def MonacoEnvironment: js.UndefOr[Environment] = js.native
-  @scala.inline
-  def MonacoEnvironment_=(x: js.UndefOr[Environment]): Unit = js.Dynamic.global.updateDynamic("MonacoEnvironment")(x.asInstanceOf[js.Any])
+  inline def MonacoEnvironment_=(x: js.UndefOr[Environment]): Unit = js.Dynamic.global.updateDynamic("MonacoEnvironment")(x.asInstanceOf[js.Any])
 }

@@ -13,19 +13,15 @@ trait ParsedUsbInterfaceDescriptor extends StObject {
 }
 object ParsedUsbInterfaceDescriptor {
   
-  @scala.inline
-  def apply(parsed: UsbInterfaceDescriptor, returnValue: Boolean): ParsedUsbInterfaceDescriptor = {
+  inline def apply(parsed: UsbInterfaceDescriptor, returnValue: Boolean): ParsedUsbInterfaceDescriptor = {
     val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedUsbInterfaceDescriptor]
   }
   
-  @scala.inline
-  implicit class ParsedUsbInterfaceDescriptorMutableBuilder[Self <: ParsedUsbInterfaceDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedUsbInterfaceDescriptor](x: Self) {
     
-    @scala.inline
-    def setParsed(value: UsbInterfaceDescriptor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+    inline def setParsed(value: UsbInterfaceDescriptor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

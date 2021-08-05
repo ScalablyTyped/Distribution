@@ -38,34 +38,25 @@ trait SegmentImportResource extends StObject {
 }
 object SegmentImportResource {
   
-  @scala.inline
-  def apply(ExternalId: string, Format: Format, RoleArn: string, S3Url: string, Size: integer): SegmentImportResource = {
+  inline def apply(ExternalId: string, Format: Format, RoleArn: string, S3Url: string, Size: integer): SegmentImportResource = {
     val __obj = js.Dynamic.literal(ExternalId = ExternalId.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], S3Url = S3Url.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentImportResource]
   }
   
-  @scala.inline
-  implicit class SegmentImportResourceMutableBuilder[Self <: SegmentImportResource] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentImportResource](x: Self) {
     
-    @scala.inline
-    def setChannelCounts(value: MapOfInteger): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
+    inline def setChannelCounts(value: MapOfInteger): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
+    inline def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: string): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: string): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Url(value: string): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
+    inline def setS3Url(value: string): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

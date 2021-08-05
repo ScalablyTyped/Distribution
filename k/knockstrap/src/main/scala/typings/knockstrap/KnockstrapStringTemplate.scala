@@ -11,16 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object KnockstrapStringTemplate {
   
-  @scala.inline
-  def apply(templateName: String): KnockstrapStringTemplate = {
+  inline def apply(templateName: String): KnockstrapStringTemplate = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockstrapStringTemplate]
   }
   
-  @scala.inline
-  implicit class KnockstrapStringTemplateMutableBuilder[Self <: KnockstrapStringTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapStringTemplate](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

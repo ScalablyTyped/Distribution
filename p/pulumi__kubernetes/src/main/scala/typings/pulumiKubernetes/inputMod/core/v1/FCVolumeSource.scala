@@ -37,49 +37,35 @@ trait FCVolumeSource extends StObject {
 }
 object FCVolumeSource {
   
-  @scala.inline
-  def apply(): FCVolumeSource = {
+  inline def apply(): FCVolumeSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FCVolumeSource]
   }
   
-  @scala.inline
-  implicit class FCVolumeSourceMutableBuilder[Self <: FCVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: FCVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setLun(value: Input[Double]): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
+    inline def setLun(value: Input[Double]): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLunUndefined: Self = StObject.set(x, "lun", js.undefined)
+    inline def setLunUndefined: Self = StObject.set(x, "lun", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setTargetWWNs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "targetWWNs", value.asInstanceOf[js.Any])
+    inline def setTargetWWNs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "targetWWNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetWWNsUndefined: Self = StObject.set(x, "targetWWNs", js.undefined)
+    inline def setTargetWWNsUndefined: Self = StObject.set(x, "targetWWNs", js.undefined)
     
-    @scala.inline
-    def setTargetWWNsVarargs(value: Input[String]*): Self = StObject.set(x, "targetWWNs", js.Array(value :_*))
+    inline def setTargetWWNsVarargs(value: Input[String]*): Self = StObject.set(x, "targetWWNs", js.Array(value :_*))
     
-    @scala.inline
-    def setWwids(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "wwids", value.asInstanceOf[js.Any])
+    inline def setWwids(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "wwids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWwidsUndefined: Self = StObject.set(x, "wwids", js.undefined)
+    inline def setWwidsUndefined: Self = StObject.set(x, "wwids", js.undefined)
     
-    @scala.inline
-    def setWwidsVarargs(value: Input[String]*): Self = StObject.set(x, "wwids", js.Array(value :_*))
+    inline def setWwidsVarargs(value: Input[String]*): Self = StObject.set(x, "wwids", js.Array(value :_*))
   }
 }

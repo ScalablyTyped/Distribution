@@ -37,8 +37,7 @@ trait ResourcePolicyRule extends StObject {
 }
 object ResourcePolicyRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apiGroups: Input[js.Array[Input[String]]],
     resources: Input[js.Array[Input[String]]],
     verbs: Input[js.Array[Input[String]]]
@@ -47,40 +46,28 @@ object ResourcePolicyRule {
     __obj.asInstanceOf[ResourcePolicyRule]
   }
   
-  @scala.inline
-  implicit class ResourcePolicyRuleMutableBuilder[Self <: ResourcePolicyRule] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePolicyRule](x: Self) {
     
-    @scala.inline
-    def setApiGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
+    inline def setApiGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
+    inline def setApiGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setClusterScope(value: Input[Boolean]): Self = StObject.set(x, "clusterScope", value.asInstanceOf[js.Any])
+    inline def setClusterScope(value: Input[Boolean]): Self = StObject.set(x, "clusterScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterScopeUndefined: Self = StObject.set(x, "clusterScope", js.undefined)
+    inline def setClusterScopeUndefined: Self = StObject.set(x, "clusterScope", js.undefined)
     
-    @scala.inline
-    def setNamespaces(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+    inline def setNamespaces(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+    inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
-    @scala.inline
-    def setNamespacesVarargs(value: Input[String]*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: Input[String]*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setVerbs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
+    inline def setVerbs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbsVarargs(value: Input[String]*): Self = StObject.set(x, "verbs", js.Array(value :_*))
+    inline def setVerbsVarargs(value: Input[String]*): Self = StObject.set(x, "verbs", js.Array(value :_*))
   }
 }

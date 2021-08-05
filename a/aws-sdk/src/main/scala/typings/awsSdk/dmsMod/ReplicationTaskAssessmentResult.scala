@@ -43,55 +43,39 @@ trait ReplicationTaskAssessmentResult extends StObject {
 }
 object ReplicationTaskAssessmentResult {
   
-  @scala.inline
-  def apply(): ReplicationTaskAssessmentResult = {
+  inline def apply(): ReplicationTaskAssessmentResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationTaskAssessmentResult]
   }
   
-  @scala.inline
-  implicit class ReplicationTaskAssessmentResultMutableBuilder[Self <: ReplicationTaskAssessmentResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationTaskAssessmentResult](x: Self) {
     
-    @scala.inline
-    def setAssessmentResults(value: String): Self = StObject.set(x, "AssessmentResults", value.asInstanceOf[js.Any])
+    inline def setAssessmentResults(value: String): Self = StObject.set(x, "AssessmentResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentResultsFile(value: String): Self = StObject.set(x, "AssessmentResultsFile", value.asInstanceOf[js.Any])
+    inline def setAssessmentResultsFile(value: String): Self = StObject.set(x, "AssessmentResultsFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentResultsFileUndefined: Self = StObject.set(x, "AssessmentResultsFile", js.undefined)
+    inline def setAssessmentResultsFileUndefined: Self = StObject.set(x, "AssessmentResultsFile", js.undefined)
     
-    @scala.inline
-    def setAssessmentResultsUndefined: Self = StObject.set(x, "AssessmentResults", js.undefined)
+    inline def setAssessmentResultsUndefined: Self = StObject.set(x, "AssessmentResults", js.undefined)
     
-    @scala.inline
-    def setAssessmentStatus(value: String): Self = StObject.set(x, "AssessmentStatus", value.asInstanceOf[js.Any])
+    inline def setAssessmentStatus(value: String): Self = StObject.set(x, "AssessmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentStatusUndefined: Self = StObject.set(x, "AssessmentStatus", js.undefined)
+    inline def setAssessmentStatusUndefined: Self = StObject.set(x, "AssessmentStatus", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
+    inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskIdentifier(value: String): Self = StObject.set(x, "ReplicationTaskIdentifier", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskIdentifier(value: String): Self = StObject.set(x, "ReplicationTaskIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskIdentifierUndefined: Self = StObject.set(x, "ReplicationTaskIdentifier", js.undefined)
+    inline def setReplicationTaskIdentifierUndefined: Self = StObject.set(x, "ReplicationTaskIdentifier", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskLastAssessmentDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskLastAssessmentDate", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskLastAssessmentDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskLastAssessmentDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskLastAssessmentDateUndefined: Self = StObject.set(x, "ReplicationTaskLastAssessmentDate", js.undefined)
+    inline def setReplicationTaskLastAssessmentDateUndefined: Self = StObject.set(x, "ReplicationTaskLastAssessmentDate", js.undefined)
     
-    @scala.inline
-    def setS3ObjectUrl(value: String): Self = StObject.set(x, "S3ObjectUrl", value.asInstanceOf[js.Any])
+    inline def setS3ObjectUrl(value: String): Self = StObject.set(x, "S3ObjectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ObjectUrlUndefined: Self = StObject.set(x, "S3ObjectUrl", js.undefined)
+    inline def setS3ObjectUrlUndefined: Self = StObject.set(x, "S3ObjectUrl", js.undefined)
   }
 }

@@ -14,20 +14,16 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Height = {
+    inline def apply(height: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply[T](index: Double, item: T): Index[T] = {
+    inline def apply[T](index: Double, item: T): Index[T] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index[T]]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[?], T] (val x: Self & Index[T]) extends AnyVal {
+    extension [Self <: Index[?], T](x: Self & Index[T]) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,26 +56,20 @@ object anon {
   }
   object InputRange {
     
-    @scala.inline
-    def apply(inputRange: js.Array[Double], outputRange: js.Array[Double]): InputRange = {
+    inline def apply(inputRange: js.Array[Double], outputRange: js.Array[Double]): InputRange = {
       val __obj = js.Dynamic.literal(inputRange = inputRange.asInstanceOf[js.Any], outputRange = outputRange.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputRange]
     }
     
-    @scala.inline
-    implicit class InputRangeMutableBuilder[Self <: InputRange] (val x: Self) extends AnyVal {
+    extension [Self <: InputRange](x: Self) {
       
-      @scala.inline
-      def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
+      inline def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
+      inline def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputRange(value: js.Array[Double]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
+      inline def setOutputRange(value: js.Array[Double]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputRangeVarargs(value: Double*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
+      inline def setOutputRangeVarargs(value: Double*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
     }
   }
 }

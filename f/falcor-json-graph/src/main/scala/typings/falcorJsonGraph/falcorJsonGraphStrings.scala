@@ -8,16 +8,13 @@ object falcorJsonGraphStrings {
   
   @js.native
   sealed trait atom extends StObject
-  @scala.inline
-  def atom: atom = "atom".asInstanceOf[atom]
+  inline def atom: atom = "atom".asInstanceOf[atom]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait reference extends StObject
-  @scala.inline
-  def reference: reference = "reference".asInstanceOf[reference]
+  inline def reference: reference = "reference".asInstanceOf[reference]
 }

@@ -11,10 +11,8 @@ object workspacesGetImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
-  @scala.inline
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
+  inline def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
+  inline def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
   
   trait GetImageArgs extends StObject {
     
@@ -25,17 +23,14 @@ object workspacesGetImageMod {
   }
   object GetImageArgs {
     
-    @scala.inline
-    def apply(imageId: String): GetImageArgs = {
+    inline def apply(imageId: String): GetImageArgs = {
       val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetImageArgs]
     }
     
-    @scala.inline
-    implicit class GetImageArgsMutableBuilder[Self <: GetImageArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetImageArgs](x: Self) {
       
-      @scala.inline
-      def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,8 +67,7 @@ object workspacesGetImageMod {
   }
   object GetImageResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       id: String,
       imageId: String,
@@ -86,29 +80,21 @@ object workspacesGetImageMod {
       __obj.asInstanceOf[GetImageResult]
     }
     
-    @scala.inline
-    implicit class GetImageResultMutableBuilder[Self <: GetImageResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetImageResult](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatingSystemType(value: String): Self = StObject.set(x, "operatingSystemType", value.asInstanceOf[js.Any])
+      inline def setOperatingSystemType(value: String): Self = StObject.set(x, "operatingSystemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredTenancy(value: String): Self = StObject.set(x, "requiredTenancy", value.asInstanceOf[js.Any])
+      inline def setRequiredTenancy(value: String): Self = StObject.set(x, "requiredTenancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

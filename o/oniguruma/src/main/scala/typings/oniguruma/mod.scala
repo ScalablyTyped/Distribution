@@ -171,26 +171,20 @@ object mod {
   }
   object CaptureIndex {
     
-    @scala.inline
-    def apply(end: Double, index: Double, length: Double, start: Double): CaptureIndex = {
+    inline def apply(end: Double, index: Double, length: Double, start: Double): CaptureIndex = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[CaptureIndex]
     }
     
-    @scala.inline
-    implicit class CaptureIndexMutableBuilder[Self <: CaptureIndex] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureIndex](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,23 +198,18 @@ object mod {
   }
   object Match {
     
-    @scala.inline
-    def apply(captureIndices: js.Array[CaptureIndex], index: Double): Match = {
+    inline def apply(captureIndices: js.Array[CaptureIndex], index: Double): Match = {
       val __obj = js.Dynamic.literal(captureIndices = captureIndices.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match]
     }
     
-    @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+    extension [Self <: Match](x: Self) {
       
-      @scala.inline
-      def setCaptureIndices(value: js.Array[CaptureIndex]): Self = StObject.set(x, "captureIndices", value.asInstanceOf[js.Any])
+      inline def setCaptureIndices(value: js.Array[CaptureIndex]): Self = StObject.set(x, "captureIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureIndicesVarargs(value: CaptureIndex*): Self = StObject.set(x, "captureIndices", js.Array(value :_*))
+      inline def setCaptureIndicesVarargs(value: CaptureIndex*): Self = StObject.set(x, "captureIndices", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
 }

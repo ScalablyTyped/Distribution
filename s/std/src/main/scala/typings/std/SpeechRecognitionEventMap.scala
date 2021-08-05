@@ -30,8 +30,7 @@ trait SpeechRecognitionEventMap extends StObject {
 }
 object SpeechRecognitionEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioend: Event,
     audiostart: Event,
     end: Event,
@@ -48,40 +47,28 @@ object SpeechRecognitionEventMap {
     __obj.asInstanceOf[SpeechRecognitionEventMap]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionEventMapMutableBuilder[Self <: SpeechRecognitionEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionEventMap](x: Self) {
     
-    @scala.inline
-    def setAudioend(value: Event): Self = StObject.set(x, "audioend", value.asInstanceOf[js.Any])
+    inline def setAudioend(value: Event): Self = StObject.set(x, "audioend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudiostart(value: Event): Self = StObject.set(x, "audiostart", value.asInstanceOf[js.Any])
+    inline def setAudiostart(value: Event): Self = StObject.set(x, "audiostart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Event): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Event): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNomatch(value: SpeechRecognitionEvent): Self = StObject.set(x, "nomatch", value.asInstanceOf[js.Any])
+    inline def setNomatch(value: SpeechRecognitionEvent): Self = StObject.set(x, "nomatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: SpeechRecognitionEvent): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SpeechRecognitionEvent): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundend(value: Event): Self = StObject.set(x, "soundend", value.asInstanceOf[js.Any])
+    inline def setSoundend(value: Event): Self = StObject.set(x, "soundend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundstart(value: Event): Self = StObject.set(x, "soundstart", value.asInstanceOf[js.Any])
+    inline def setSoundstart(value: Event): Self = StObject.set(x, "soundstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechend(value: Event): Self = StObject.set(x, "speechend", value.asInstanceOf[js.Any])
+    inline def setSpeechend(value: Event): Self = StObject.set(x, "speechend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechstart(value: Event): Self = StObject.set(x, "speechstart", value.asInstanceOf[js.Any])
+    inline def setSpeechstart(value: Event): Self = StObject.set(x, "speechstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

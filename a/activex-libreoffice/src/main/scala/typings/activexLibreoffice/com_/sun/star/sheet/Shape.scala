@@ -62,8 +62,7 @@ trait Shape
 }
 object Shape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XInterface,
     GluePoints: XIndexContainer,
     HoriOrientPosition: Double,
@@ -117,16 +116,12 @@ object Shape {
     __obj.asInstanceOf[Shape]
   }
   
-  @scala.inline
-  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
+  extension [Self <: Shape](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: XInterface): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: XInterface): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoriOrientPosition(value: Double): Self = StObject.set(x, "HoriOrientPosition", value.asInstanceOf[js.Any])
+    inline def setHoriOrientPosition(value: Double): Self = StObject.set(x, "HoriOrientPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertOrientPosition(value: Double): Self = StObject.set(x, "VertOrientPosition", value.asInstanceOf[js.Any])
+    inline def setVertOrientPosition(value: Double): Self = StObject.set(x, "VertOrientPosition", value.asInstanceOf[js.Any])
   }
 }

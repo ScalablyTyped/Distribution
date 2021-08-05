@@ -16,8 +16,7 @@ object desktopMod {
     /**
       * **NOTE**: Exotic components are not callable.
       */
-    @scala.inline
-    def apply(props: DesktopProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: DesktopProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/ui/dist/components/layout/desktop", "Desktop")
     @js.native
@@ -26,8 +25,7 @@ object desktopMod {
     @JSImport("@storybook/ui/dist/components/layout/desktop", "Desktop.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/layout/desktop", "Desktop.$$typeof")
     @js.native
@@ -60,8 +58,7 @@ object desktopMod {
   }
   object DesktopProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Notifications: ComponentType[js.Any],
       Panel: ComponentType[js.Any],
       Preview: ComponentType[js.Any],
@@ -78,44 +75,31 @@ object desktopMod {
       __obj.asInstanceOf[DesktopProps]
     }
     
-    @scala.inline
-    implicit class DesktopPropsMutableBuilder[Self <: DesktopProps] (val x: Self) extends AnyVal {
+    extension [Self <: DesktopProps](x: Self) {
       
-      @scala.inline
-      def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+      inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifications(value: ComponentType[js.Any]): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: ComponentType[js.Any]): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Layout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Layout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: js.Array[Key]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: js.Array[Key]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesVarargs(value: Key*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: Key*): Self = StObject.set(x, "pages", js.Array(value :_*))
       
-      @scala.inline
-      def setPanel(value: ComponentType[js.Any]): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: ComponentType[js.Any]): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
+      inline def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview(value: ComponentType[js.Any]): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: ComponentType[js.Any]): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidebar(value: ComponentType[js.Any]): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
+      inline def setSidebar(value: ComponentType[js.Any]): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

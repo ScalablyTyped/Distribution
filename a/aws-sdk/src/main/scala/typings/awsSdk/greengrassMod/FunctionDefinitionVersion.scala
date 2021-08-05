@@ -18,28 +18,21 @@ trait FunctionDefinitionVersion extends StObject {
 }
 object FunctionDefinitionVersion {
   
-  @scala.inline
-  def apply(): FunctionDefinitionVersion = {
+  inline def apply(): FunctionDefinitionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionDefinitionVersion]
   }
   
-  @scala.inline
-  implicit class FunctionDefinitionVersionMutableBuilder[Self <: FunctionDefinitionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionDefinitionVersion](x: Self) {
     
-    @scala.inline
-    def setDefaultConfig(value: FunctionDefaultConfig): Self = StObject.set(x, "DefaultConfig", value.asInstanceOf[js.Any])
+    inline def setDefaultConfig(value: FunctionDefaultConfig): Self = StObject.set(x, "DefaultConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultConfigUndefined: Self = StObject.set(x, "DefaultConfig", js.undefined)
+    inline def setDefaultConfigUndefined: Self = StObject.set(x, "DefaultConfig", js.undefined)
     
-    @scala.inline
-    def setFunctions(value: listOfFunction): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: listOfFunction): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
-    @scala.inline
-    def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value :_*))
   }
 }

@@ -18,19 +18,15 @@ trait LicensingOverride extends StObject {
 }
 object LicensingOverride {
   
-  @scala.inline
-  def apply(behavior: ContributionLicensingBehaviorType, id: String): LicensingOverride = {
+  inline def apply(behavior: ContributionLicensingBehaviorType, id: String): LicensingOverride = {
     val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicensingOverride]
   }
   
-  @scala.inline
-  implicit class LicensingOverrideMutableBuilder[Self <: LicensingOverride] (val x: Self) extends AnyVal {
+  extension [Self <: LicensingOverride](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: ContributionLicensingBehaviorType): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: ContributionLicensingBehaviorType): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

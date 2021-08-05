@@ -16,25 +16,19 @@ trait DataInput extends StObject {
 }
 object DataInput {
   
-  @scala.inline
-  def apply(online: Boolean, uuid: String, x: Double, y: Double): DataInput = {
+  inline def apply(online: Boolean, uuid: String, x: Double, y: Double): DataInput = {
     val __obj = js.Dynamic.literal(online = online.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataInput]
   }
   
-  @scala.inline
-  implicit class DataInputMutableBuilder[Self <: DataInput] (val x: Self) extends AnyVal {
+  extension [Self <: DataInput](x: Self) {
     
-    @scala.inline
-    def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
+    inline def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

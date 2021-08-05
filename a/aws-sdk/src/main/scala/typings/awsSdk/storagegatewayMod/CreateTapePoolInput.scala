@@ -33,40 +33,29 @@ trait CreateTapePoolInput extends StObject {
 }
 object CreateTapePoolInput {
   
-  @scala.inline
-  def apply(PoolName: PoolName, StorageClass: TapeStorageClass): CreateTapePoolInput = {
+  inline def apply(PoolName: PoolName, StorageClass: TapeStorageClass): CreateTapePoolInput = {
     val __obj = js.Dynamic.literal(PoolName = PoolName.asInstanceOf[js.Any], StorageClass = StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTapePoolInput]
   }
   
-  @scala.inline
-  implicit class CreateTapePoolInputMutableBuilder[Self <: CreateTapePoolInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTapePoolInput](x: Self) {
     
-    @scala.inline
-    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
+    inline def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionLockTimeInDays(value: RetentionLockTimeInDays): Self = StObject.set(x, "RetentionLockTimeInDays", value.asInstanceOf[js.Any])
+    inline def setRetentionLockTimeInDays(value: RetentionLockTimeInDays): Self = StObject.set(x, "RetentionLockTimeInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "RetentionLockTimeInDays", js.undefined)
+    inline def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "RetentionLockTimeInDays", js.undefined)
     
-    @scala.inline
-    def setRetentionLockType(value: RetentionLockType): Self = StObject.set(x, "RetentionLockType", value.asInstanceOf[js.Any])
+    inline def setRetentionLockType(value: RetentionLockType): Self = StObject.set(x, "RetentionLockType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionLockTypeUndefined: Self = StObject.set(x, "RetentionLockType", js.undefined)
+    inline def setRetentionLockTypeUndefined: Self = StObject.set(x, "RetentionLockType", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: TapeStorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: TapeStorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -13,17 +13,14 @@ object anon {
   }
   object AsBytes {
     
-    @scala.inline
-    def apply(): AsBytes = {
+    inline def apply(): AsBytes = {
       val __obj = js.Dynamic.literal(asBytes = true)
       __obj.asInstanceOf[AsBytes]
     }
     
-    @scala.inline
-    implicit class AsBytesMutableBuilder[Self <: AsBytes] (val x: Self) extends AnyVal {
+    extension [Self <: AsBytes](x: Self) {
       
-      @scala.inline
-      def setAsBytes(value: `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
+      inline def setAsBytes(value: `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,17 +30,14 @@ object anon {
   }
   object AsString {
     
-    @scala.inline
-    def apply(): AsString = {
+    inline def apply(): AsString = {
       val __obj = js.Dynamic.literal(asString = true)
       __obj.asInstanceOf[AsString]
     }
     
-    @scala.inline
-    implicit class AsStringMutableBuilder[Self <: AsString] (val x: Self) extends AnyVal {
+    extension [Self <: AsString](x: Self) {
       
-      @scala.inline
-      def setAsString(value: `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
     }
   }
 }

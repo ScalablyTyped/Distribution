@@ -81,17 +81,13 @@ object mod extends Shortcut {
   trait BreadcrumbLevel extends StObject
   object BreadcrumbLevel {
     
-    @scala.inline
-    def debug: typings.raygun4js.raygun4jsStrings.debug = "debug".asInstanceOf[typings.raygun4js.raygun4jsStrings.debug]
+    inline def debug: typings.raygun4js.raygun4jsStrings.debug = "debug".asInstanceOf[typings.raygun4js.raygun4jsStrings.debug]
     
-    @scala.inline
-    def error: typings.raygun4js.raygun4jsStrings.error = "error".asInstanceOf[typings.raygun4js.raygun4jsStrings.error]
+    inline def error: typings.raygun4js.raygun4jsStrings.error = "error".asInstanceOf[typings.raygun4js.raygun4jsStrings.error]
     
-    @scala.inline
-    def info: typings.raygun4js.raygun4jsStrings.info = "info".asInstanceOf[typings.raygun4js.raygun4jsStrings.info]
+    inline def info: typings.raygun4js.raygun4jsStrings.info = "info".asInstanceOf[typings.raygun4js.raygun4jsStrings.info]
     
-    @scala.inline
-    def warning: typings.raygun4js.raygun4jsStrings.warning = "warning".asInstanceOf[typings.raygun4js.raygun4jsStrings.warning]
+    inline def warning: typings.raygun4js.raygun4jsStrings.warning = "warning".asInstanceOf[typings.raygun4js.raygun4jsStrings.warning]
   }
   
   trait RaygunOptions extends StObject {
@@ -198,140 +194,96 @@ object mod extends Shortcut {
   }
   object RaygunOptions {
     
-    @scala.inline
-    def apply(): RaygunOptions = {
+    inline def apply(): RaygunOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RaygunOptions]
     }
     
-    @scala.inline
-    implicit class RaygunOptionsMutableBuilder[Self <: RaygunOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RaygunOptions](x: Self) {
       
-      @scala.inline
-      def setAllowInsecureSubmissions(value: Boolean): Self = StObject.set(x, "allowInsecureSubmissions", value.asInstanceOf[js.Any])
+      inline def setAllowInsecureSubmissions(value: Boolean): Self = StObject.set(x, "allowInsecureSubmissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowInsecureSubmissionsUndefined: Self = StObject.set(x, "allowInsecureSubmissions", js.undefined)
+      inline def setAllowInsecureSubmissionsUndefined: Self = StObject.set(x, "allowInsecureSubmissions", js.undefined)
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+      inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
-      @scala.inline
-      def setAutomaticPerformanceCustomTimings(value: Boolean): Self = StObject.set(x, "automaticPerformanceCustomTimings", value.asInstanceOf[js.Any])
+      inline def setAutomaticPerformanceCustomTimings(value: Boolean): Self = StObject.set(x, "automaticPerformanceCustomTimings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticPerformanceCustomTimingsUndefined: Self = StObject.set(x, "automaticPerformanceCustomTimings", js.undefined)
+      inline def setAutomaticPerformanceCustomTimingsUndefined: Self = StObject.set(x, "automaticPerformanceCustomTimings", js.undefined)
       
-      @scala.inline
-      def setCaptureMissingRequests(value: Boolean): Self = StObject.set(x, "captureMissingRequests", value.asInstanceOf[js.Any])
+      inline def setCaptureMissingRequests(value: Boolean): Self = StObject.set(x, "captureMissingRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureMissingRequestsUndefined: Self = StObject.set(x, "captureMissingRequests", js.undefined)
+      inline def setCaptureMissingRequestsUndefined: Self = StObject.set(x, "captureMissingRequests", js.undefined)
       
-      @scala.inline
-      def setCaptureUnhandledRejections(value: Boolean): Self = StObject.set(x, "captureUnhandledRejections", value.asInstanceOf[js.Any])
+      inline def setCaptureUnhandledRejections(value: Boolean): Self = StObject.set(x, "captureUnhandledRejections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
+      inline def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
       
-      @scala.inline
-      def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
+      inline def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIpUndefined: Self = StObject.set(x, "clientIp", js.undefined)
+      inline def setClientIpUndefined: Self = StObject.set(x, "clientIp", js.undefined)
       
-      @scala.inline
-      def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
+      inline def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
+      inline def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
       
-      @scala.inline
-      def setDisableAnonymousUserTracking(value: Boolean): Self = StObject.set(x, "disableAnonymousUserTracking", value.asInstanceOf[js.Any])
+      inline def setDisableAnonymousUserTracking(value: Boolean): Self = StObject.set(x, "disableAnonymousUserTracking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAnonymousUserTrackingUndefined: Self = StObject.set(x, "disableAnonymousUserTracking", js.undefined)
+      inline def setDisableAnonymousUserTrackingUndefined: Self = StObject.set(x, "disableAnonymousUserTracking", js.undefined)
       
-      @scala.inline
-      def setDisableErrorTracking(value: Boolean): Self = StObject.set(x, "disableErrorTracking", value.asInstanceOf[js.Any])
+      inline def setDisableErrorTracking(value: Boolean): Self = StObject.set(x, "disableErrorTracking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableErrorTrackingUndefined: Self = StObject.set(x, "disableErrorTracking", js.undefined)
+      inline def setDisableErrorTrackingUndefined: Self = StObject.set(x, "disableErrorTracking", js.undefined)
       
-      @scala.inline
-      def setDisablePulse(value: Boolean): Self = StObject.set(x, "disablePulse", value.asInstanceOf[js.Any])
+      inline def setDisablePulse(value: Boolean): Self = StObject.set(x, "disablePulse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePulseUndefined: Self = StObject.set(x, "disablePulse", js.undefined)
+      inline def setDisablePulseUndefined: Self = StObject.set(x, "disablePulse", js.undefined)
       
-      @scala.inline
-      def setExcludedHostnames(value: js.Array[String | RegExp]): Self = StObject.set(x, "excludedHostnames", value.asInstanceOf[js.Any])
+      inline def setExcludedHostnames(value: js.Array[String | RegExp]): Self = StObject.set(x, "excludedHostnames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedHostnamesUndefined: Self = StObject.set(x, "excludedHostnames", js.undefined)
+      inline def setExcludedHostnamesUndefined: Self = StObject.set(x, "excludedHostnames", js.undefined)
       
-      @scala.inline
-      def setExcludedHostnamesVarargs(value: (String | RegExp)*): Self = StObject.set(x, "excludedHostnames", js.Array(value :_*))
+      inline def setExcludedHostnamesVarargs(value: (String | RegExp)*): Self = StObject.set(x, "excludedHostnames", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludedUserAgents(value: js.Array[String | RegExp]): Self = StObject.set(x, "excludedUserAgents", value.asInstanceOf[js.Any])
+      inline def setExcludedUserAgents(value: js.Array[String | RegExp]): Self = StObject.set(x, "excludedUserAgents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedUserAgentsUndefined: Self = StObject.set(x, "excludedUserAgents", js.undefined)
+      inline def setExcludedUserAgentsUndefined: Self = StObject.set(x, "excludedUserAgents", js.undefined)
       
-      @scala.inline
-      def setExcludedUserAgentsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "excludedUserAgents", js.Array(value :_*))
+      inline def setExcludedUserAgentsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "excludedUserAgents", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: String | onLoad): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String | onLoad): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setIgnore3rdPartyErrors(value: Boolean): Self = StObject.set(x, "ignore3rdPartyErrors", value.asInstanceOf[js.Any])
+      inline def setIgnore3rdPartyErrors(value: Boolean): Self = StObject.set(x, "ignore3rdPartyErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnore3rdPartyErrorsUndefined: Self = StObject.set(x, "ignore3rdPartyErrors", js.undefined)
+      inline def setIgnore3rdPartyErrorsUndefined: Self = StObject.set(x, "ignore3rdPartyErrors", js.undefined)
       
-      @scala.inline
-      def setIgnoreAjaxAbort(value: Boolean): Self = StObject.set(x, "ignoreAjaxAbort", value.asInstanceOf[js.Any])
+      inline def setIgnoreAjaxAbort(value: Boolean): Self = StObject.set(x, "ignoreAjaxAbort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreAjaxAbortUndefined: Self = StObject.set(x, "ignoreAjaxAbort", js.undefined)
+      inline def setIgnoreAjaxAbortUndefined: Self = StObject.set(x, "ignoreAjaxAbort", js.undefined)
       
-      @scala.inline
-      def setIgnoreAjaxError(value: Boolean): Self = StObject.set(x, "ignoreAjaxError", value.asInstanceOf[js.Any])
+      inline def setIgnoreAjaxError(value: Boolean): Self = StObject.set(x, "ignoreAjaxError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreAjaxErrorUndefined: Self = StObject.set(x, "ignoreAjaxError", js.undefined)
+      inline def setIgnoreAjaxErrorUndefined: Self = StObject.set(x, "ignoreAjaxError", js.undefined)
       
-      @scala.inline
-      def setPulseIgnoreUrlCasing(value: Boolean): Self = StObject.set(x, "pulseIgnoreUrlCasing", value.asInstanceOf[js.Any])
+      inline def setPulseIgnoreUrlCasing(value: Boolean): Self = StObject.set(x, "pulseIgnoreUrlCasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulseIgnoreUrlCasingUndefined: Self = StObject.set(x, "pulseIgnoreUrlCasing", js.undefined)
+      inline def setPulseIgnoreUrlCasingUndefined: Self = StObject.set(x, "pulseIgnoreUrlCasing", js.undefined)
       
-      @scala.inline
-      def setPulseMaxVirtualPageDuration(value: Double): Self = StObject.set(x, "pulseMaxVirtualPageDuration", value.asInstanceOf[js.Any])
+      inline def setPulseMaxVirtualPageDuration(value: Double): Self = StObject.set(x, "pulseMaxVirtualPageDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulseMaxVirtualPageDurationUndefined: Self = StObject.set(x, "pulseMaxVirtualPageDuration", js.undefined)
+      inline def setPulseMaxVirtualPageDurationUndefined: Self = StObject.set(x, "pulseMaxVirtualPageDuration", js.undefined)
       
-      @scala.inline
-      def setSetCookieAsSecure(value: Boolean): Self = StObject.set(x, "setCookieAsSecure", value.asInstanceOf[js.Any])
+      inline def setSetCookieAsSecure(value: Boolean): Self = StObject.set(x, "setCookieAsSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetCookieAsSecureUndefined: Self = StObject.set(x, "setCookieAsSecure", js.undefined)
+      inline def setSetCookieAsSecureUndefined: Self = StObject.set(x, "setCookieAsSecure", js.undefined)
       
-      @scala.inline
-      def setWrapAsynchronousCallbacks(value: Boolean): Self = StObject.set(x, "wrapAsynchronousCallbacks", value.asInstanceOf[js.Any])
+      inline def setWrapAsynchronousCallbacks(value: Boolean): Self = StObject.set(x, "wrapAsynchronousCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapAsynchronousCallbacksUndefined: Self = StObject.set(x, "wrapAsynchronousCallbacks", js.undefined)
+      inline def setWrapAsynchronousCallbacksUndefined: Self = StObject.set(x, "wrapAsynchronousCallbacks", js.undefined)
     }
   }
   
@@ -343,20 +295,16 @@ object mod extends Shortcut {
   }
   object RaygunPayload {
     
-    @scala.inline
-    def apply(Details: Client, OccurredOn: Date): RaygunPayload = {
+    inline def apply(Details: Client, OccurredOn: Date): RaygunPayload = {
       val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], OccurredOn = OccurredOn.asInstanceOf[js.Any])
       __obj.asInstanceOf[RaygunPayload]
     }
     
-    @scala.inline
-    implicit class RaygunPayloadMutableBuilder[Self <: RaygunPayload] (val x: Self) extends AnyVal {
+    extension [Self <: RaygunPayload](x: Self) {
       
-      @scala.inline
-      def setDetails(value: Client): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Client): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOccurredOn(value: Date): Self = StObject.set(x, "OccurredOn", value.asInstanceOf[js.Any])
+      inline def setOccurredOn(value: Date): Self = StObject.set(x, "OccurredOn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,29 +322,22 @@ object mod extends Shortcut {
   }
   object RaygunStackTrace {
     
-    @scala.inline
-    def apply(ClassName: String, ColumnNumber: Double, FileName: String, LineNumber: Double, MethodName: String): RaygunStackTrace = {
+    inline def apply(ClassName: String, ColumnNumber: Double, FileName: String, LineNumber: Double, MethodName: String): RaygunStackTrace = {
       val __obj = js.Dynamic.literal(ClassName = ClassName.asInstanceOf[js.Any], ColumnNumber = ColumnNumber.asInstanceOf[js.Any], FileName = FileName.asInstanceOf[js.Any], LineNumber = LineNumber.asInstanceOf[js.Any], MethodName = MethodName.asInstanceOf[js.Any])
       __obj.asInstanceOf[RaygunStackTrace]
     }
     
-    @scala.inline
-    implicit class RaygunStackTraceMutableBuilder[Self <: RaygunStackTrace] (val x: Self) extends AnyVal {
+    extension [Self <: RaygunStackTrace](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "ColumnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "ColumnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "LineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "LineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "MethodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "MethodName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -707,47 +648,34 @@ object mod extends Shortcut {
   }
   object RaygunV2UserDetails {
     
-    @scala.inline
-    def apply(identifier: String): RaygunV2UserDetails = {
+    inline def apply(identifier: String): RaygunV2UserDetails = {
       val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[RaygunV2UserDetails]
     }
     
-    @scala.inline
-    implicit class RaygunV2UserDetailsMutableBuilder[Self <: RaygunV2UserDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RaygunV2UserDetails](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+      inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
       
-      @scala.inline
-      def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+      inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
+      inline def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAnonymous(value: Boolean): Self = StObject.set(x, "isAnonymous", value.asInstanceOf[js.Any])
+      inline def setIsAnonymous(value: Boolean): Self = StObject.set(x, "isAnonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAnonymousUndefined: Self = StObject.set(x, "isAnonymous", js.undefined)
+      inline def setIsAnonymousUndefined: Self = StObject.set(x, "isAnonymous", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
   
@@ -765,29 +693,22 @@ object mod extends Shortcut {
   }
   object TracekitStack {
     
-    @scala.inline
-    def apply(column: Double, context: js.Any, func: String, line: Double, url: String): TracekitStack = {
+    inline def apply(column: Double, context: js.Any, func: String, line: Double, url: String): TracekitStack = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], func = func.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[TracekitStack]
     }
     
-    @scala.inline
-    implicit class TracekitStackMutableBuilder[Self <: TracekitStack] (val x: Self) extends AnyVal {
+    extension [Self <: TracekitStack](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunc(value: String): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+      inline def setFunc(value: String): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -807,8 +728,7 @@ object mod extends Shortcut {
   }
   object TracekitStackTrace {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       message: String,
       mode: String,
       name: String,
@@ -820,29 +740,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TracekitStackTrace]
     }
     
-    @scala.inline
-    implicit class TracekitStackTraceMutableBuilder[Self <: TracekitStackTrace] (val x: Self) extends AnyVal {
+    extension [Self <: TracekitStackTrace](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Array[TracekitStack]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[TracekitStack]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: TracekitStack*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: TracekitStack*): Self = StObject.set(x, "stack", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseragent(value: String): Self = StObject.set(x, "useragent", value.asInstanceOf[js.Any])
+      inline def setUseragent(value: String): Self = StObject.set(x, "useragent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -852,17 +764,14 @@ object mod extends Shortcut {
   }
   object Window {
     
-    @scala.inline
-    def apply(Raygun: RaygunStatic): Window = {
+    inline def apply(Raygun: RaygunStatic): Window = {
       val __obj = js.Dynamic.literal(Raygun = Raygun.asInstanceOf[js.Any])
       __obj.asInstanceOf[Window]
     }
     
-    @scala.inline
-    implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+    extension [Self <: Window](x: Self) {
       
-      @scala.inline
-      def setRaygun(value: RaygunStatic): Self = StObject.set(x, "Raygun", value.asInstanceOf[js.Any])
+      inline def setRaygun(value: RaygunStatic): Self = StObject.set(x, "Raygun", value.asInstanceOf[js.Any])
     }
   }
   

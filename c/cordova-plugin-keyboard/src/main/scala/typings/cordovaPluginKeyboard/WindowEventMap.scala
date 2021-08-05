@@ -34,8 +34,7 @@ trait WindowEventMap extends StObject {
 }
 object WindowEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     keyboardDidHide: Event,
     keyboardDidShow: Event,
     keyboardHeightWillChange: CordovaKeyboardEvent,
@@ -46,22 +45,16 @@ object WindowEventMap {
     __obj.asInstanceOf[WindowEventMap]
   }
   
-  @scala.inline
-  implicit class WindowEventMapMutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: WindowEventMap](x: Self) {
     
-    @scala.inline
-    def setKeyboardDidHide(value: Event): Self = StObject.set(x, "keyboardDidHide", value.asInstanceOf[js.Any])
+    inline def setKeyboardDidHide(value: Event): Self = StObject.set(x, "keyboardDidHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardDidShow(value: Event): Self = StObject.set(x, "keyboardDidShow", value.asInstanceOf[js.Any])
+    inline def setKeyboardDidShow(value: Event): Self = StObject.set(x, "keyboardDidShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardHeightWillChange(value: CordovaKeyboardEvent): Self = StObject.set(x, "keyboardHeightWillChange", value.asInstanceOf[js.Any])
+    inline def setKeyboardHeightWillChange(value: CordovaKeyboardEvent): Self = StObject.set(x, "keyboardHeightWillChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardWillHide(value: Event): Self = StObject.set(x, "keyboardWillHide", value.asInstanceOf[js.Any])
+    inline def setKeyboardWillHide(value: Event): Self = StObject.set(x, "keyboardWillHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardWillShow(value: Event): Self = StObject.set(x, "keyboardWillShow", value.asInstanceOf[js.Any])
+    inline def setKeyboardWillShow(value: Event): Self = StObject.set(x, "keyboardWillShow", value.asInstanceOf[js.Any])
   }
 }

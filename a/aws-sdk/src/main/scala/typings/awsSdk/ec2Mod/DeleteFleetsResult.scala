@@ -18,31 +18,23 @@ trait DeleteFleetsResult extends StObject {
 }
 object DeleteFleetsResult {
   
-  @scala.inline
-  def apply(): DeleteFleetsResult = {
+  inline def apply(): DeleteFleetsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFleetsResult]
   }
   
-  @scala.inline
-  implicit class DeleteFleetsResultMutableBuilder[Self <: DeleteFleetsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFleetsResult](x: Self) {
     
-    @scala.inline
-    def setSuccessfulFleetDeletions(value: DeleteFleetSuccessSet): Self = StObject.set(x, "SuccessfulFleetDeletions", value.asInstanceOf[js.Any])
+    inline def setSuccessfulFleetDeletions(value: DeleteFleetSuccessSet): Self = StObject.set(x, "SuccessfulFleetDeletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "SuccessfulFleetDeletions", js.undefined)
+    inline def setSuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "SuccessfulFleetDeletions", js.undefined)
     
-    @scala.inline
-    def setSuccessfulFleetDeletionsVarargs(value: DeleteFleetSuccessItem*): Self = StObject.set(x, "SuccessfulFleetDeletions", js.Array(value :_*))
+    inline def setSuccessfulFleetDeletionsVarargs(value: DeleteFleetSuccessItem*): Self = StObject.set(x, "SuccessfulFleetDeletions", js.Array(value :_*))
     
-    @scala.inline
-    def setUnsuccessfulFleetDeletions(value: DeleteFleetErrorSet): Self = StObject.set(x, "UnsuccessfulFleetDeletions", value.asInstanceOf[js.Any])
+    inline def setUnsuccessfulFleetDeletions(value: DeleteFleetErrorSet): Self = StObject.set(x, "UnsuccessfulFleetDeletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.undefined)
+    inline def setUnsuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulFleetDeletionsVarargs(value: DeleteFleetErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.Array(value :_*))
+    inline def setUnsuccessfulFleetDeletionsVarargs(value: DeleteFleetErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.Array(value :_*))
   }
 }

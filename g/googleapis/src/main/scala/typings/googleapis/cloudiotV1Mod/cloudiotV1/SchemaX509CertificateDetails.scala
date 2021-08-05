@@ -41,49 +41,35 @@ trait SchemaX509CertificateDetails extends StObject {
 }
 object SchemaX509CertificateDetails {
   
-  @scala.inline
-  def apply(): SchemaX509CertificateDetails = {
+  inline def apply(): SchemaX509CertificateDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaX509CertificateDetails]
   }
   
-  @scala.inline
-  implicit class SchemaX509CertificateDetailsMutableBuilder[Self <: SchemaX509CertificateDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaX509CertificateDetails](x: Self) {
     
-    @scala.inline
-    def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
+    inline def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
+    inline def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setPublicKeyType(value: String): Self = StObject.set(x, "publicKeyType", value.asInstanceOf[js.Any])
+    inline def setPublicKeyType(value: String): Self = StObject.set(x, "publicKeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyTypeUndefined: Self = StObject.set(x, "publicKeyType", js.undefined)
+    inline def setPublicKeyTypeUndefined: Self = StObject.set(x, "publicKeyType", js.undefined)
     
-    @scala.inline
-    def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
+    inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

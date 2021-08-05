@@ -13,8 +13,7 @@ object sendHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sendHTML(
+  inline def sendHTML(
     req: IncomingMessage,
     res: ServerResponse,
     html: String,

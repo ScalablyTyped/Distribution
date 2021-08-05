@@ -13,7 +13,7 @@ object fromPromiseStreamMod {
   class FromPromiseStream protected () extends BaseStream {
     def this(promise: js.Any, scheduler: Scheduler) = this()
     
-    var _promise: js.Any = js.native
+    /* private */ var _promise: js.Any = js.native
   }
   /* static members */
   object FromPromiseStream {
@@ -22,7 +22,6 @@ object fromPromiseStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(promise: js.Any, scheduler: Scheduler): FromPromiseStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromPromiseStream]
+    inline def create(promise: js.Any, scheduler: Scheduler): FromPromiseStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromPromiseStream]
   }
 }

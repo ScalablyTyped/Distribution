@@ -13,18 +13,15 @@ trait DocumentRangeSemanticTokensProvider extends StObject {
 }
 object DocumentRangeSemanticTokensProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideDocumentRangeSemanticTokens: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]
   ): DocumentRangeSemanticTokensProvider = {
     val __obj = js.Dynamic.literal(provideDocumentRangeSemanticTokens = js.Any.fromFunction3(provideDocumentRangeSemanticTokens))
     __obj.asInstanceOf[DocumentRangeSemanticTokensProvider]
   }
   
-  @scala.inline
-  implicit class DocumentRangeSemanticTokensProviderMutableBuilder[Self <: DocumentRangeSemanticTokensProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentRangeSemanticTokensProvider](x: Self) {
     
-    @scala.inline
-    def setProvideDocumentRangeSemanticTokens(value: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentRangeSemanticTokens", js.Any.fromFunction3(value))
+    inline def setProvideDocumentRangeSemanticTokens(value: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentRangeSemanticTokens", js.Any.fromFunction3(value))
   }
 }

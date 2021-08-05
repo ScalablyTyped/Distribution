@@ -12,22 +12,17 @@ trait ClientCredentialsGrantOptions extends StObject {
 }
 object ClientCredentialsGrantOptions {
   
-  @scala.inline
-  def apply(audience: String): ClientCredentialsGrantOptions = {
+  inline def apply(audience: String): ClientCredentialsGrantOptions = {
     val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientCredentialsGrantOptions]
   }
   
-  @scala.inline
-  implicit class ClientCredentialsGrantOptionsMutableBuilder[Self <: ClientCredentialsGrantOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientCredentialsGrantOptions](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

@@ -20,34 +20,25 @@ trait Document
 }
 object Document {
   
-  @scala.inline
-  def apply(): Document = {
+  inline def apply(): Document = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+    inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

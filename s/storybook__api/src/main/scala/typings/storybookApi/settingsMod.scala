@@ -17,17 +17,14 @@ object settingsMod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(lastTrackedStoryId: String): Settings = {
+    inline def apply(lastTrackedStoryId: String): Settings = {
       val __obj = js.Dynamic.literal(lastTrackedStoryId = lastTrackedStoryId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setLastTrackedStoryId(value: String): Self = StObject.set(x, "lastTrackedStoryId", value.asInstanceOf[js.Any])
+      inline def setLastTrackedStoryId(value: String): Self = StObject.set(x, "lastTrackedStoryId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,8 +40,7 @@ object settingsMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changeSettingsTab: String => Unit,
       closeSettings: () => Unit,
       isSettingsScreenActive: () => Boolean,
@@ -54,20 +50,15 @@ object settingsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setChangeSettingsTab(value: String => Unit): Self = StObject.set(x, "changeSettingsTab", js.Any.fromFunction1(value))
+      inline def setChangeSettingsTab(value: String => Unit): Self = StObject.set(x, "changeSettingsTab", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseSettings(value: () => Unit): Self = StObject.set(x, "closeSettings", js.Any.fromFunction0(value))
+      inline def setCloseSettings(value: () => Unit): Self = StObject.set(x, "closeSettings", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSettingsScreenActive(value: () => Boolean): Self = StObject.set(x, "isSettingsScreenActive", js.Any.fromFunction0(value))
+      inline def setIsSettingsScreenActive(value: () => Boolean): Self = StObject.set(x, "isSettingsScreenActive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNavigateToSettingsPage(value: String => js.Promise[Unit]): Self = StObject.set(x, "navigateToSettingsPage", js.Any.fromFunction1(value))
+      inline def setNavigateToSettingsPage(value: String => js.Promise[Unit]): Self = StObject.set(x, "navigateToSettingsPage", js.Any.fromFunction1(value))
     }
   }
   
@@ -77,17 +68,14 @@ object settingsMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(settings: Settings): SubState = {
+    inline def apply(settings: Settings): SubState = {
       val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
 }

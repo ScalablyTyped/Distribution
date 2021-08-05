@@ -38,43 +38,31 @@ trait TestScriptFixture
 }
 object TestScriptFixture {
   
-  @scala.inline
-  def apply(): TestScriptFixture = {
+  inline def apply(): TestScriptFixture = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestScriptFixture]
   }
   
-  @scala.inline
-  implicit class TestScriptFixtureMutableBuilder[Self <: TestScriptFixture] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptFixture](x: Self) {
     
-    @scala.inline
-    def setAutocreate(value: Boolean): Self = StObject.set(x, "autocreate", value.asInstanceOf[js.Any])
+    inline def setAutocreate(value: Boolean): Self = StObject.set(x, "autocreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutocreateUndefined: Self = StObject.set(x, "autocreate", js.undefined)
+    inline def setAutocreateUndefined: Self = StObject.set(x, "autocreate", js.undefined)
     
-    @scala.inline
-    def setAutodelete(value: Boolean): Self = StObject.set(x, "autodelete", value.asInstanceOf[js.Any])
+    inline def setAutodelete(value: Boolean): Self = StObject.set(x, "autodelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutodeleteUndefined: Self = StObject.set(x, "autodelete", js.undefined)
+    inline def setAutodeleteUndefined: Self = StObject.set(x, "autodelete", js.undefined)
     
-    @scala.inline
-    def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def set_autocreate(value: Element): Self = StObject.set(x, "_autocreate", value.asInstanceOf[js.Any])
+    inline def set_autocreate(value: Element): Self = StObject.set(x, "_autocreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_autocreateUndefined: Self = StObject.set(x, "_autocreate", js.undefined)
+    inline def set_autocreateUndefined: Self = StObject.set(x, "_autocreate", js.undefined)
     
-    @scala.inline
-    def set_autodelete(value: Element): Self = StObject.set(x, "_autodelete", value.asInstanceOf[js.Any])
+    inline def set_autodelete(value: Element): Self = StObject.set(x, "_autodelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_autodeleteUndefined: Self = StObject.set(x, "_autodelete", js.undefined)
+    inline def set_autodeleteUndefined: Self = StObject.set(x, "_autodelete", js.undefined)
   }
 }

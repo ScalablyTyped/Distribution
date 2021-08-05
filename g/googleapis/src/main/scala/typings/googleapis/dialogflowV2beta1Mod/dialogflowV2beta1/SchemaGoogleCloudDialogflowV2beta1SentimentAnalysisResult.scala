@@ -17,19 +17,15 @@ trait SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult extends StObject
 }
 object SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResultMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult](x: Self) {
     
-    @scala.inline
-    def setQueryTextSentiment(value: SchemaGoogleCloudDialogflowV2beta1Sentiment): Self = StObject.set(x, "queryTextSentiment", value.asInstanceOf[js.Any])
+    inline def setQueryTextSentiment(value: SchemaGoogleCloudDialogflowV2beta1Sentiment): Self = StObject.set(x, "queryTextSentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTextSentimentUndefined: Self = StObject.set(x, "queryTextSentiment", js.undefined)
+    inline def setQueryTextSentimentUndefined: Self = StObject.set(x, "queryTextSentiment", js.undefined)
   }
 }

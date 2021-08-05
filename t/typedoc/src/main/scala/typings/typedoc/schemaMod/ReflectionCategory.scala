@@ -19,34 +19,27 @@ trait ReflectionCategory
 }
 object ReflectionCategory {
   
-  @scala.inline
-  def apply(title: ModelToObject[String] | String): ReflectionCategory = {
+  inline def apply(title: ModelToObject[String] | String): ReflectionCategory = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReflectionCategory]
   }
   
-  @scala.inline
-  implicit class ReflectionCategoryMutableBuilder[Self <: ReflectionCategory] (val x: Self) extends AnyVal {
+  extension [Self <: ReflectionCategory](x: Self) {
     
-    @scala.inline
-    def setChildren(
+    inline def setChildren(
       value: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: std.Array<typedoc.typedoc/dist/lib/models/reflections/abstract.Reflection>[number]['id'] */ js.Any
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(
+    inline def setChildrenVarargs(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<typedoc.typedoc/dist/lib/models/reflections/abstract.Reflection>[number]['id'] */ js.Any)*
     ): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: ModelToObject[String] | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ModelToObject[String] | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "title", js.Array(value :_*))
   }
 }

@@ -19,26 +19,20 @@ trait ClassedSizeSliderThumbDragEvent extends StObject {
 }
 object ClassedSizeSliderThumbDragEvent {
   
-  @scala.inline
-  def apply(index: Double, state: start | drag, value: Double): ClassedSizeSliderThumbDragEvent = {
+  inline def apply(index: Double, state: start | drag, value: Double): ClassedSizeSliderThumbDragEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("thumb-drag")
     __obj.asInstanceOf[ClassedSizeSliderThumbDragEvent]
   }
   
-  @scala.inline
-  implicit class ClassedSizeSliderThumbDragEventMutableBuilder[Self <: ClassedSizeSliderThumbDragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedSizeSliderThumbDragEvent](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: start | drag): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: start | drag): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `thumb-drag`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `thumb-drag`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

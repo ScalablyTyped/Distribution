@@ -13,49 +13,41 @@ object hashaStrings {
     extends StObject
        with HashaEncoding
        with ToStringEncoding
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait buffer
     extends StObject
        with HashaEncoding
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait hex
     extends StObject
        with HashaEncoding
        with ToStringEncoding
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait latin1
     extends StObject
        with HashaEncoding
        with ToStringEncoding
-  @scala.inline
-  def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
   sealed trait md5 extends StObject
-  @scala.inline
-  def md5: md5 = "md5".asInstanceOf[md5]
+  inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
   sealed trait sha1 extends StObject
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
   sealed trait sha256 extends StObject
-  @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
   
   @js.native
   sealed trait sha512 extends StObject
-  @scala.inline
-  def sha512: sha512 = "sha512".asInstanceOf[sha512]
+  inline def sha512: sha512 = "sha512".asInstanceOf[sha512]
 }

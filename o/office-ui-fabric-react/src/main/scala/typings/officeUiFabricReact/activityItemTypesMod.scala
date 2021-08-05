@@ -107,130 +107,92 @@ object activityItemTypesMod {
   }
   object IActivityItemProps {
     
-    @scala.inline
-    def apply(): IActivityItemProps = {
+    inline def apply(): IActivityItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IActivityItemProps]
     }
     
-    @scala.inline
-    implicit class IActivityItemPropsMutableBuilder[Self <: IActivityItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: IActivityItemProps](x: Self) {
       
-      @scala.inline
-      def setActivityDescription(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "activityDescription", value.asInstanceOf[js.Any])
+      inline def setActivityDescription(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "activityDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityDescriptionText(value: String): Self = StObject.set(x, "activityDescriptionText", value.asInstanceOf[js.Any])
+      inline def setActivityDescriptionText(value: String): Self = StObject.set(x, "activityDescriptionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityDescriptionTextUndefined: Self = StObject.set(x, "activityDescriptionText", js.undefined)
+      inline def setActivityDescriptionTextUndefined: Self = StObject.set(x, "activityDescriptionText", js.undefined)
       
-      @scala.inline
-      def setActivityDescriptionUndefined: Self = StObject.set(x, "activityDescription", js.undefined)
+      inline def setActivityDescriptionUndefined: Self = StObject.set(x, "activityDescription", js.undefined)
       
-      @scala.inline
-      def setActivityDescriptionVarargs(value: ReactNode*): Self = StObject.set(x, "activityDescription", js.Array(value :_*))
+      inline def setActivityDescriptionVarargs(value: ReactNode*): Self = StObject.set(x, "activityDescription", js.Array(value :_*))
       
-      @scala.inline
-      def setActivityIcon(value: ReactNode): Self = StObject.set(x, "activityIcon", value.asInstanceOf[js.Any])
+      inline def setActivityIcon(value: ReactNode): Self = StObject.set(x, "activityIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityIconUndefined: Self = StObject.set(x, "activityIcon", js.undefined)
+      inline def setActivityIconUndefined: Self = StObject.set(x, "activityIcon", js.undefined)
       
-      @scala.inline
-      def setActivityPersonas(value: js.Array[IPersonaSharedProps]): Self = StObject.set(x, "activityPersonas", value.asInstanceOf[js.Any])
+      inline def setActivityPersonas(value: js.Array[IPersonaSharedProps]): Self = StObject.set(x, "activityPersonas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityPersonasUndefined: Self = StObject.set(x, "activityPersonas", js.undefined)
+      inline def setActivityPersonasUndefined: Self = StObject.set(x, "activityPersonas", js.undefined)
       
-      @scala.inline
-      def setActivityPersonasVarargs(value: IPersonaSharedProps*): Self = StObject.set(x, "activityPersonas", js.Array(value :_*))
+      inline def setActivityPersonasVarargs(value: IPersonaSharedProps*): Self = StObject.set(x, "activityPersonas", js.Array(value :_*))
       
-      @scala.inline
-      def setAnimateBeaconSignal(value: Boolean): Self = StObject.set(x, "animateBeaconSignal", value.asInstanceOf[js.Any])
+      inline def setAnimateBeaconSignal(value: Boolean): Self = StObject.set(x, "animateBeaconSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateBeaconSignalUndefined: Self = StObject.set(x, "animateBeaconSignal", js.undefined)
+      inline def setAnimateBeaconSignalUndefined: Self = StObject.set(x, "animateBeaconSignal", js.undefined)
       
-      @scala.inline
-      def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
+      inline def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeaconColorOneUndefined: Self = StObject.set(x, "beaconColorOne", js.undefined)
+      inline def setBeaconColorOneUndefined: Self = StObject.set(x, "beaconColorOne", js.undefined)
       
-      @scala.inline
-      def setBeaconColorTwo(value: String): Self = StObject.set(x, "beaconColorTwo", value.asInstanceOf[js.Any])
+      inline def setBeaconColorTwo(value: String): Self = StObject.set(x, "beaconColorTwo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeaconColorTwoUndefined: Self = StObject.set(x, "beaconColorTwo", js.undefined)
+      inline def setBeaconColorTwoUndefined: Self = StObject.set(x, "beaconColorTwo", js.undefined)
       
-      @scala.inline
-      def setCommentText(value: String): Self = StObject.set(x, "commentText", value.asInstanceOf[js.Any])
+      inline def setCommentText(value: String): Self = StObject.set(x, "commentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentTextUndefined: Self = StObject.set(x, "commentText", js.undefined)
+      inline def setCommentTextUndefined: Self = StObject.set(x, "commentText", js.undefined)
       
-      @scala.inline
-      def setComments(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setCommentsVarargs(value: ReactNode*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: ReactNode*): Self = StObject.set(x, "comments", js.Array(value :_*))
       
-      @scala.inline
-      def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
+      inline def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompactUndefined: Self = StObject.set(x, "isCompact", js.undefined)
+      inline def setIsCompactUndefined: Self = StObject.set(x, "isCompact", js.undefined)
       
-      @scala.inline
-      def setOnRenderActivityDescription(
+      inline def setOnRenderActivityDescription(
         value: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderActivityDescription", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderActivityDescriptionUndefined: Self = StObject.set(x, "onRenderActivityDescription", js.undefined)
+      inline def setOnRenderActivityDescriptionUndefined: Self = StObject.set(x, "onRenderActivityDescription", js.undefined)
       
-      @scala.inline
-      def setOnRenderComments(
+      inline def setOnRenderComments(
         value: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderComments", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderCommentsUndefined: Self = StObject.set(x, "onRenderComments", js.undefined)
+      inline def setOnRenderCommentsUndefined: Self = StObject.set(x, "onRenderComments", js.undefined)
       
-      @scala.inline
-      def setOnRenderIcon(
+      inline def setOnRenderIcon(
         value: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderIcon", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderIconUndefined: Self = StObject.set(x, "onRenderIcon", js.undefined)
+      inline def setOnRenderIconUndefined: Self = StObject.set(x, "onRenderIcon", js.undefined)
       
-      @scala.inline
-      def setOnRenderTimeStamp(
+      inline def setOnRenderTimeStamp(
         value: (/* props */ js.UndefOr[IActivityItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IActivityItemProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderTimeStamp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderTimeStampUndefined: Self = StObject.set(x, "onRenderTimeStamp", js.undefined)
+      inline def setOnRenderTimeStampUndefined: Self = StObject.set(x, "onRenderTimeStamp", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IActivityItemStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IActivityItemStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTimeStamp(value: String | js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: String | js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
+      inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
       
-      @scala.inline
-      def setTimeStampVarargs(value: ReactNode*): Self = StObject.set(x, "timeStamp", js.Array(value :_*))
+      inline def setTimeStampVarargs(value: ReactNode*): Self = StObject.set(x, "timeStamp", js.Array(value :_*))
     }
   }
   
@@ -319,158 +281,108 @@ object activityItemTypesMod {
   }
   object IActivityItemStyles {
     
-    @scala.inline
-    def apply(): IActivityItemStyles = {
+    inline def apply(): IActivityItemStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IActivityItemStyles]
     }
     
-    @scala.inline
-    implicit class IActivityItemStylesMutableBuilder[Self <: IActivityItemStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IActivityItemStyles](x: Self) {
       
-      @scala.inline
-      def setActivityContent(value: IStyle): Self = StObject.set(x, "activityContent", value.asInstanceOf[js.Any])
+      inline def setActivityContent(value: IStyle): Self = StObject.set(x, "activityContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityContentNull: Self = StObject.set(x, "activityContent", null)
+      inline def setActivityContentNull: Self = StObject.set(x, "activityContent", null)
       
-      @scala.inline
-      def setActivityContentUndefined: Self = StObject.set(x, "activityContent", js.undefined)
+      inline def setActivityContentUndefined: Self = StObject.set(x, "activityContent", js.undefined)
       
-      @scala.inline
-      def setActivityPersona(value: IStyle): Self = StObject.set(x, "activityPersona", value.asInstanceOf[js.Any])
+      inline def setActivityPersona(value: IStyle): Self = StObject.set(x, "activityPersona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityPersonaNull: Self = StObject.set(x, "activityPersona", null)
+      inline def setActivityPersonaNull: Self = StObject.set(x, "activityPersona", null)
       
-      @scala.inline
-      def setActivityPersonaUndefined: Self = StObject.set(x, "activityPersona", js.undefined)
+      inline def setActivityPersonaUndefined: Self = StObject.set(x, "activityPersona", js.undefined)
       
-      @scala.inline
-      def setActivityText(value: IStyle): Self = StObject.set(x, "activityText", value.asInstanceOf[js.Any])
+      inline def setActivityText(value: IStyle): Self = StObject.set(x, "activityText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTextNull: Self = StObject.set(x, "activityText", null)
+      inline def setActivityTextNull: Self = StObject.set(x, "activityText", null)
       
-      @scala.inline
-      def setActivityTextUndefined: Self = StObject.set(x, "activityText", js.undefined)
+      inline def setActivityTextUndefined: Self = StObject.set(x, "activityText", js.undefined)
       
-      @scala.inline
-      def setActivityTypeIcon(value: IStyle): Self = StObject.set(x, "activityTypeIcon", value.asInstanceOf[js.Any])
+      inline def setActivityTypeIcon(value: IStyle): Self = StObject.set(x, "activityTypeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTypeIconNull: Self = StObject.set(x, "activityTypeIcon", null)
+      inline def setActivityTypeIconNull: Self = StObject.set(x, "activityTypeIcon", null)
       
-      @scala.inline
-      def setActivityTypeIconUndefined: Self = StObject.set(x, "activityTypeIcon", js.undefined)
+      inline def setActivityTypeIconUndefined: Self = StObject.set(x, "activityTypeIcon", js.undefined)
       
-      @scala.inline
-      def setCommentText(value: IStyle): Self = StObject.set(x, "commentText", value.asInstanceOf[js.Any])
+      inline def setCommentText(value: IStyle): Self = StObject.set(x, "commentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentTextNull: Self = StObject.set(x, "commentText", null)
+      inline def setCommentTextNull: Self = StObject.set(x, "commentText", null)
       
-      @scala.inline
-      def setCommentTextUndefined: Self = StObject.set(x, "commentText", js.undefined)
+      inline def setCommentTextUndefined: Self = StObject.set(x, "commentText", js.undefined)
       
-      @scala.inline
-      def setDoublePersona(value: IStyle): Self = StObject.set(x, "doublePersona", value.asInstanceOf[js.Any])
+      inline def setDoublePersona(value: IStyle): Self = StObject.set(x, "doublePersona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoublePersonaNull: Self = StObject.set(x, "doublePersona", null)
+      inline def setDoublePersonaNull: Self = StObject.set(x, "doublePersona", null)
       
-      @scala.inline
-      def setDoublePersonaUndefined: Self = StObject.set(x, "doublePersona", js.undefined)
+      inline def setDoublePersonaUndefined: Self = StObject.set(x, "doublePersona", js.undefined)
       
-      @scala.inline
-      def setIsCompactContent(value: IStyle): Self = StObject.set(x, "isCompactContent", value.asInstanceOf[js.Any])
+      inline def setIsCompactContent(value: IStyle): Self = StObject.set(x, "isCompactContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompactContentNull: Self = StObject.set(x, "isCompactContent", null)
+      inline def setIsCompactContentNull: Self = StObject.set(x, "isCompactContent", null)
       
-      @scala.inline
-      def setIsCompactContentUndefined: Self = StObject.set(x, "isCompactContent", js.undefined)
+      inline def setIsCompactContentUndefined: Self = StObject.set(x, "isCompactContent", js.undefined)
       
-      @scala.inline
-      def setIsCompactIcon(value: IStyle): Self = StObject.set(x, "isCompactIcon", value.asInstanceOf[js.Any])
+      inline def setIsCompactIcon(value: IStyle): Self = StObject.set(x, "isCompactIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompactIconNull: Self = StObject.set(x, "isCompactIcon", null)
+      inline def setIsCompactIconNull: Self = StObject.set(x, "isCompactIcon", null)
       
-      @scala.inline
-      def setIsCompactIconUndefined: Self = StObject.set(x, "isCompactIcon", js.undefined)
+      inline def setIsCompactIconUndefined: Self = StObject.set(x, "isCompactIcon", js.undefined)
       
-      @scala.inline
-      def setIsCompactPersona(value: IStyle): Self = StObject.set(x, "isCompactPersona", value.asInstanceOf[js.Any])
+      inline def setIsCompactPersona(value: IStyle): Self = StObject.set(x, "isCompactPersona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompactPersonaContainer(value: IStyle): Self = StObject.set(x, "isCompactPersonaContainer", value.asInstanceOf[js.Any])
+      inline def setIsCompactPersonaContainer(value: IStyle): Self = StObject.set(x, "isCompactPersonaContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompactPersonaContainerNull: Self = StObject.set(x, "isCompactPersonaContainer", null)
+      inline def setIsCompactPersonaContainerNull: Self = StObject.set(x, "isCompactPersonaContainer", null)
       
-      @scala.inline
-      def setIsCompactPersonaContainerUndefined: Self = StObject.set(x, "isCompactPersonaContainer", js.undefined)
+      inline def setIsCompactPersonaContainerUndefined: Self = StObject.set(x, "isCompactPersonaContainer", js.undefined)
       
-      @scala.inline
-      def setIsCompactPersonaNull: Self = StObject.set(x, "isCompactPersona", null)
+      inline def setIsCompactPersonaNull: Self = StObject.set(x, "isCompactPersona", null)
       
-      @scala.inline
-      def setIsCompactPersonaUndefined: Self = StObject.set(x, "isCompactPersona", js.undefined)
+      inline def setIsCompactPersonaUndefined: Self = StObject.set(x, "isCompactPersona", js.undefined)
       
-      @scala.inline
-      def setIsCompactRoot(value: IStyle): Self = StObject.set(x, "isCompactRoot", value.asInstanceOf[js.Any])
+      inline def setIsCompactRoot(value: IStyle): Self = StObject.set(x, "isCompactRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompactRootNull: Self = StObject.set(x, "isCompactRoot", null)
+      inline def setIsCompactRootNull: Self = StObject.set(x, "isCompactRoot", null)
       
-      @scala.inline
-      def setIsCompactRootUndefined: Self = StObject.set(x, "isCompactRoot", js.undefined)
+      inline def setIsCompactRootUndefined: Self = StObject.set(x, "isCompactRoot", js.undefined)
       
-      @scala.inline
-      def setIsCompactTimeStamp(value: IStyle): Self = StObject.set(x, "isCompactTimeStamp", value.asInstanceOf[js.Any])
+      inline def setIsCompactTimeStamp(value: IStyle): Self = StObject.set(x, "isCompactTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompactTimeStampNull: Self = StObject.set(x, "isCompactTimeStamp", null)
+      inline def setIsCompactTimeStampNull: Self = StObject.set(x, "isCompactTimeStamp", null)
       
-      @scala.inline
-      def setIsCompactTimeStampUndefined: Self = StObject.set(x, "isCompactTimeStamp", js.undefined)
+      inline def setIsCompactTimeStampUndefined: Self = StObject.set(x, "isCompactTimeStamp", js.undefined)
       
-      @scala.inline
-      def setPersonaContainer(value: IStyle): Self = StObject.set(x, "personaContainer", value.asInstanceOf[js.Any])
+      inline def setPersonaContainer(value: IStyle): Self = StObject.set(x, "personaContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaContainerNull: Self = StObject.set(x, "personaContainer", null)
+      inline def setPersonaContainerNull: Self = StObject.set(x, "personaContainer", null)
       
-      @scala.inline
-      def setPersonaContainerUndefined: Self = StObject.set(x, "personaContainer", js.undefined)
+      inline def setPersonaContainerUndefined: Self = StObject.set(x, "personaContainer", js.undefined)
       
-      @scala.inline
-      def setPulsingBeacon(value: IStyle): Self = StObject.set(x, "pulsingBeacon", value.asInstanceOf[js.Any])
+      inline def setPulsingBeacon(value: IStyle): Self = StObject.set(x, "pulsingBeacon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulsingBeaconNull: Self = StObject.set(x, "pulsingBeacon", null)
+      inline def setPulsingBeaconNull: Self = StObject.set(x, "pulsingBeacon", null)
       
-      @scala.inline
-      def setPulsingBeaconUndefined: Self = StObject.set(x, "pulsingBeacon", js.undefined)
+      inline def setPulsingBeaconUndefined: Self = StObject.set(x, "pulsingBeacon", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTimeStamp(value: IStyle): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: IStyle): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStampNull: Self = StObject.set(x, "timeStamp", null)
+      inline def setTimeStampNull: Self = StObject.set(x, "timeStamp", null)
       
-      @scala.inline
-      def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
+      inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
     }
   }
 }

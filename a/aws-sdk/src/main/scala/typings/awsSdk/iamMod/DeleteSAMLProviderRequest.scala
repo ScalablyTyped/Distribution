@@ -13,16 +13,13 @@ trait DeleteSAMLProviderRequest extends StObject {
 }
 object DeleteSAMLProviderRequest {
   
-  @scala.inline
-  def apply(SAMLProviderArn: arnType): DeleteSAMLProviderRequest = {
+  inline def apply(SAMLProviderArn: arnType): DeleteSAMLProviderRequest = {
     val __obj = js.Dynamic.literal(SAMLProviderArn = SAMLProviderArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSAMLProviderRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSAMLProviderRequestMutableBuilder[Self <: DeleteSAMLProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSAMLProviderRequest](x: Self) {
     
-    @scala.inline
-    def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
+    inline def setSAMLProviderArn(value: arnType): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
   }
 }

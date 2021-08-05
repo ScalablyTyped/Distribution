@@ -24,8 +24,7 @@ trait SyntaxWalker
 }
 object SyntaxWalker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     visitArgumentList: ArgumentListSyntax => js.Any,
     visitArrayLiteralExpression: ArrayLiteralExpressionSyntax => js.Any,
     visitArrayType: ArrayTypeSyntax => js.Any,
@@ -124,28 +123,20 @@ object SyntaxWalker {
     __obj.asInstanceOf[SyntaxWalker]
   }
   
-  @scala.inline
-  implicit class SyntaxWalkerMutableBuilder[Self <: SyntaxWalker] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxWalker](x: Self) {
     
-    @scala.inline
-    def setVisitList(value: ISyntaxList => Unit): Self = StObject.set(x, "visitList", js.Any.fromFunction1(value))
+    inline def setVisitList(value: ISyntaxList => Unit): Self = StObject.set(x, "visitList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitNode(value: SyntaxNode => Unit): Self = StObject.set(x, "visitNode", js.Any.fromFunction1(value))
+    inline def setVisitNode(value: SyntaxNode => Unit): Self = StObject.set(x, "visitNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitNodeOrToken(value: ISyntaxNodeOrToken => Unit): Self = StObject.set(x, "visitNodeOrToken", js.Any.fromFunction1(value))
+    inline def setVisitNodeOrToken(value: ISyntaxNodeOrToken => Unit): Self = StObject.set(x, "visitNodeOrToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitOptionalNode(value: SyntaxNode => Unit): Self = StObject.set(x, "visitOptionalNode", js.Any.fromFunction1(value))
+    inline def setVisitOptionalNode(value: SyntaxNode => Unit): Self = StObject.set(x, "visitOptionalNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitOptionalNodeOrToken(value: ISyntaxNodeOrToken => Unit): Self = StObject.set(x, "visitOptionalNodeOrToken", js.Any.fromFunction1(value))
+    inline def setVisitOptionalNodeOrToken(value: ISyntaxNodeOrToken => Unit): Self = StObject.set(x, "visitOptionalNodeOrToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitOptionalToken(value: js.Any => js.Any): Self = StObject.set(x, "visitOptionalToken", js.Any.fromFunction1(value))
+    inline def setVisitOptionalToken(value: js.Any => js.Any): Self = StObject.set(x, "visitOptionalToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitSeparatedList(value: ISeparatedSyntaxList => Unit): Self = StObject.set(x, "visitSeparatedList", js.Any.fromFunction1(value))
+    inline def setVisitSeparatedList(value: ISeparatedSyntaxList => Unit): Self = StObject.set(x, "visitSeparatedList", js.Any.fromFunction1(value))
   }
 }

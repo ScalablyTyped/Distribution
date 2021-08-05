@@ -12,19 +12,15 @@ trait AppsAddRepoToInstallationEndpoint extends StObject {
 }
 object AppsAddRepoToInstallationEndpoint {
   
-  @scala.inline
-  def apply(installation_id: Double, repository_id: Double): AppsAddRepoToInstallationEndpoint = {
+  inline def apply(installation_id: Double, repository_id: Double): AppsAddRepoToInstallationEndpoint = {
     val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any], repository_id = repository_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsAddRepoToInstallationEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsAddRepoToInstallationEndpointMutableBuilder[Self <: AppsAddRepoToInstallationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsAddRepoToInstallationEndpoint](x: Self) {
     
-    @scala.inline
-    def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
+    inline def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
   }
 }

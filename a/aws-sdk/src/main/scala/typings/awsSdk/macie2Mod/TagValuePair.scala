@@ -18,25 +18,19 @@ trait TagValuePair extends StObject {
 }
 object TagValuePair {
   
-  @scala.inline
-  def apply(): TagValuePair = {
+  inline def apply(): TagValuePair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagValuePair]
   }
   
-  @scala.inline
-  implicit class TagValuePairMutableBuilder[Self <: TagValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: TagValuePair](x: Self) {
     
-    @scala.inline
-    def setKey(value: string): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: string): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: string): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: string): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

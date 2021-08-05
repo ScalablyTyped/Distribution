@@ -22,8 +22,7 @@ object angularAilmentsMod {
   }
   object AngularAilmentDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client: IClient,
       config: IConfig,
       log: ILogger,
@@ -35,11 +34,9 @@ object angularAilmentsMod {
       __obj.asInstanceOf[AngularAilmentDeps]
     }
     
-    @scala.inline
-    implicit class AngularAilmentDepsMutableBuilder[Self <: AngularAilmentDeps] (val x: Self) extends AnyVal {
+    extension [Self <: AngularAilmentDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

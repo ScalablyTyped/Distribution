@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionDirection extends StObject
 object ConnectionDirection {
   
-  @scala.inline
-  def inbound: typings.microsoftGraph.microsoftGraphStrings.inbound = "inbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inbound]
+  inline def inbound: typings.microsoftGraph.microsoftGraphStrings.inbound = "inbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inbound]
   
-  @scala.inline
-  def outbound: typings.microsoftGraph.microsoftGraphStrings.outbound = "outbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.outbound]
+  inline def outbound: typings.microsoftGraph.microsoftGraphStrings.outbound = "outbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.outbound]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

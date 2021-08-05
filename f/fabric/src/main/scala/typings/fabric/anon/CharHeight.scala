@@ -16,25 +16,19 @@ trait CharHeight extends StObject {
 }
 object CharHeight {
   
-  @scala.inline
-  def apply(charHeight: Double, fontSize: String, left: String, top: String): CharHeight = {
+  inline def apply(charHeight: Double, fontSize: String, left: String, top: String): CharHeight = {
     val __obj = js.Dynamic.literal(charHeight = charHeight.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharHeight]
   }
   
-  @scala.inline
-  implicit class CharHeightMutableBuilder[Self <: CharHeight] (val x: Self) extends AnyVal {
+  extension [Self <: CharHeight](x: Self) {
     
-    @scala.inline
-    def setCharHeight(value: Double): Self = StObject.set(x, "charHeight", value.asInstanceOf[js.Any])
+    inline def setCharHeight(value: Double): Self = StObject.set(x, "charHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

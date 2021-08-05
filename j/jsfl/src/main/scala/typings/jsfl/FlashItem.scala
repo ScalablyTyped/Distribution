@@ -57,8 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object FlashItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addData: (String, String, js.Any) => Unit,
     allowSmoothing: Boolean,
     bitRate: String,
@@ -113,67 +112,46 @@ object FlashItem {
     __obj.asInstanceOf[FlashItem]
   }
   
-  @scala.inline
-  implicit class FlashItemMutableBuilder[Self <: FlashItem] (val x: Self) extends AnyVal {
+  extension [Self <: FlashItem](x: Self) {
     
-    @scala.inline
-    def setAddData(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction3(value))
+    inline def setAddData(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAllowSmoothing(value: Boolean): Self = StObject.set(x, "allowSmoothing", value.asInstanceOf[js.Any])
+    inline def setAllowSmoothing(value: Boolean): Self = StObject.set(x, "allowSmoothing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportToFLV(value: String => Boolean): Self = StObject.set(x, "exportToFLV", js.Any.fromFunction1(value))
+    inline def setExportToFLV(value: String => Boolean): Self = StObject.set(x, "exportToFLV", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetData(value: String => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: String => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasData(value: String => Boolean): Self = StObject.set(x, "hasData", js.Any.fromFunction1(value))
+    inline def setHasData(value: String => Boolean): Self = StObject.set(x, "hasData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+    inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageBaseClass(value: String): Self = StObject.set(x, "linkageBaseClass", value.asInstanceOf[js.Any])
+    inline def setLinkageBaseClass(value: String): Self = StObject.set(x, "linkageBaseClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageClassName(value: String): Self = StObject.set(x, "linkageClassName", value.asInstanceOf[js.Any])
+    inline def setLinkageClassName(value: String): Self = StObject.set(x, "linkageClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageExportForAS(value: Boolean): Self = StObject.set(x, "linkageExportForAS", value.asInstanceOf[js.Any])
+    inline def setLinkageExportForAS(value: Boolean): Self = StObject.set(x, "linkageExportForAS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageExportForRS(value: Boolean): Self = StObject.set(x, "linkageExportForRS", value.asInstanceOf[js.Any])
+    inline def setLinkageExportForRS(value: Boolean): Self = StObject.set(x, "linkageExportForRS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageExportInFirstFrame(value: Boolean): Self = StObject.set(x, "linkageExportInFirstFrame", value.asInstanceOf[js.Any])
+    inline def setLinkageExportInFirstFrame(value: Boolean): Self = StObject.set(x, "linkageExportInFirstFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageIdentifier(value: String): Self = StObject.set(x, "linkageIdentifier", value.asInstanceOf[js.Any])
+    inline def setLinkageIdentifier(value: String): Self = StObject.set(x, "linkageIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageImportForRS(value: Boolean): Self = StObject.set(x, "linkageImportForRS", value.asInstanceOf[js.Any])
+    inline def setLinkageImportForRS(value: Boolean): Self = StObject.set(x, "linkageImportForRS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkageURL(value: String): Self = StObject.set(x, "linkageURL", value.asInstanceOf[js.Any])
+    inline def setLinkageURL(value: String): Self = StObject.set(x, "linkageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveData(value: String => Unit): Self = StObject.set(x, "removeData", js.Any.fromFunction1(value))
+    inline def setRemoveData(value: String => Unit): Self = StObject.set(x, "removeData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSourceFileIsCurrent(value: Boolean): Self = StObject.set(x, "sourceFileIsCurrent", value.asInstanceOf[js.Any])
+    inline def setSourceFileIsCurrent(value: Boolean): Self = StObject.set(x, "sourceFileIsCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDeblocking(value: Boolean): Self = StObject.set(x, "useDeblocking", value.asInstanceOf[js.Any])
+    inline def setUseDeblocking(value: Boolean): Self = StObject.set(x, "useDeblocking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseImportedJPEGQuality(value: Boolean): Self = StObject.set(x, "useImportedJPEGQuality", value.asInstanceOf[js.Any])
+    inline def setUseImportedJPEGQuality(value: Boolean): Self = StObject.set(x, "useImportedJPEGQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoType(value: String): Self = StObject.set(x, "videoType", value.asInstanceOf[js.Any])
+    inline def setVideoType(value: String): Self = StObject.set(x, "videoType", value.asInstanceOf[js.Any])
   }
 }

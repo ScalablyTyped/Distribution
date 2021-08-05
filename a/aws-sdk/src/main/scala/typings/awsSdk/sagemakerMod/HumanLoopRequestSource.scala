@@ -13,16 +13,13 @@ trait HumanLoopRequestSource extends StObject {
 }
 object HumanLoopRequestSource {
   
-  @scala.inline
-  def apply(AwsManagedHumanLoopRequestSource: AwsManagedHumanLoopRequestSource): HumanLoopRequestSource = {
+  inline def apply(AwsManagedHumanLoopRequestSource: AwsManagedHumanLoopRequestSource): HumanLoopRequestSource = {
     val __obj = js.Dynamic.literal(AwsManagedHumanLoopRequestSource = AwsManagedHumanLoopRequestSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopRequestSource]
   }
   
-  @scala.inline
-  implicit class HumanLoopRequestSourceMutableBuilder[Self <: HumanLoopRequestSource] (val x: Self) extends AnyVal {
+  extension [Self <: HumanLoopRequestSource](x: Self) {
     
-    @scala.inline
-    def setAwsManagedHumanLoopRequestSource(value: AwsManagedHumanLoopRequestSource): Self = StObject.set(x, "AwsManagedHumanLoopRequestSource", value.asInstanceOf[js.Any])
+    inline def setAwsManagedHumanLoopRequestSource(value: AwsManagedHumanLoopRequestSource): Self = StObject.set(x, "AwsManagedHumanLoopRequestSource", value.asInstanceOf[js.Any])
   }
 }

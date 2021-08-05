@@ -18,25 +18,19 @@ trait CertificateSummary extends StObject {
 }
 object CertificateSummary {
   
-  @scala.inline
-  def apply(): CertificateSummary = {
+  inline def apply(): CertificateSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateSummary]
   }
   
-  @scala.inline
-  implicit class CertificateSummaryMutableBuilder[Self <: CertificateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateSummary](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
   }
 }

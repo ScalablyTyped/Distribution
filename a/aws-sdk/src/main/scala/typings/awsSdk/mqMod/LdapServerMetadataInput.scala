@@ -63,82 +63,57 @@ trait LdapServerMetadataInput extends StObject {
 }
 object LdapServerMetadataInput {
   
-  @scala.inline
-  def apply(): LdapServerMetadataInput = {
+  inline def apply(): LdapServerMetadataInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LdapServerMetadataInput]
   }
   
-  @scala.inline
-  implicit class LdapServerMetadataInputMutableBuilder[Self <: LdapServerMetadataInput] (val x: Self) extends AnyVal {
+  extension [Self <: LdapServerMetadataInput](x: Self) {
     
-    @scala.inline
-    def setHosts(value: listOfString): Self = StObject.set(x, "Hosts", value.asInstanceOf[js.Any])
+    inline def setHosts(value: listOfString): Self = StObject.set(x, "Hosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostsUndefined: Self = StObject.set(x, "Hosts", js.undefined)
+    inline def setHostsUndefined: Self = StObject.set(x, "Hosts", js.undefined)
     
-    @scala.inline
-    def setHostsVarargs(value: string*): Self = StObject.set(x, "Hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: string*): Self = StObject.set(x, "Hosts", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleBase(value: string): Self = StObject.set(x, "RoleBase", value.asInstanceOf[js.Any])
+    inline def setRoleBase(value: string): Self = StObject.set(x, "RoleBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleBaseUndefined: Self = StObject.set(x, "RoleBase", js.undefined)
+    inline def setRoleBaseUndefined: Self = StObject.set(x, "RoleBase", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: string): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: string): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
     
-    @scala.inline
-    def setRoleSearchMatching(value: string): Self = StObject.set(x, "RoleSearchMatching", value.asInstanceOf[js.Any])
+    inline def setRoleSearchMatching(value: string): Self = StObject.set(x, "RoleSearchMatching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleSearchMatchingUndefined: Self = StObject.set(x, "RoleSearchMatching", js.undefined)
+    inline def setRoleSearchMatchingUndefined: Self = StObject.set(x, "RoleSearchMatching", js.undefined)
     
-    @scala.inline
-    def setRoleSearchSubtree(value: boolean): Self = StObject.set(x, "RoleSearchSubtree", value.asInstanceOf[js.Any])
+    inline def setRoleSearchSubtree(value: boolean): Self = StObject.set(x, "RoleSearchSubtree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleSearchSubtreeUndefined: Self = StObject.set(x, "RoleSearchSubtree", js.undefined)
+    inline def setRoleSearchSubtreeUndefined: Self = StObject.set(x, "RoleSearchSubtree", js.undefined)
     
-    @scala.inline
-    def setServiceAccountPassword(value: string): Self = StObject.set(x, "ServiceAccountPassword", value.asInstanceOf[js.Any])
+    inline def setServiceAccountPassword(value: string): Self = StObject.set(x, "ServiceAccountPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountPasswordUndefined: Self = StObject.set(x, "ServiceAccountPassword", js.undefined)
+    inline def setServiceAccountPasswordUndefined: Self = StObject.set(x, "ServiceAccountPassword", js.undefined)
     
-    @scala.inline
-    def setServiceAccountUsername(value: string): Self = StObject.set(x, "ServiceAccountUsername", value.asInstanceOf[js.Any])
+    inline def setServiceAccountUsername(value: string): Self = StObject.set(x, "ServiceAccountUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUsernameUndefined: Self = StObject.set(x, "ServiceAccountUsername", js.undefined)
+    inline def setServiceAccountUsernameUndefined: Self = StObject.set(x, "ServiceAccountUsername", js.undefined)
     
-    @scala.inline
-    def setUserBase(value: string): Self = StObject.set(x, "UserBase", value.asInstanceOf[js.Any])
+    inline def setUserBase(value: string): Self = StObject.set(x, "UserBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserBaseUndefined: Self = StObject.set(x, "UserBase", js.undefined)
+    inline def setUserBaseUndefined: Self = StObject.set(x, "UserBase", js.undefined)
     
-    @scala.inline
-    def setUserRoleName(value: string): Self = StObject.set(x, "UserRoleName", value.asInstanceOf[js.Any])
+    inline def setUserRoleName(value: string): Self = StObject.set(x, "UserRoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRoleNameUndefined: Self = StObject.set(x, "UserRoleName", js.undefined)
+    inline def setUserRoleNameUndefined: Self = StObject.set(x, "UserRoleName", js.undefined)
     
-    @scala.inline
-    def setUserSearchMatching(value: string): Self = StObject.set(x, "UserSearchMatching", value.asInstanceOf[js.Any])
+    inline def setUserSearchMatching(value: string): Self = StObject.set(x, "UserSearchMatching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSearchMatchingUndefined: Self = StObject.set(x, "UserSearchMatching", js.undefined)
+    inline def setUserSearchMatchingUndefined: Self = StObject.set(x, "UserSearchMatching", js.undefined)
     
-    @scala.inline
-    def setUserSearchSubtree(value: boolean): Self = StObject.set(x, "UserSearchSubtree", value.asInstanceOf[js.Any])
+    inline def setUserSearchSubtree(value: boolean): Self = StObject.set(x, "UserSearchSubtree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSearchSubtreeUndefined: Self = StObject.set(x, "UserSearchSubtree", js.undefined)
+    inline def setUserSearchSubtreeUndefined: Self = StObject.set(x, "UserSearchSubtree", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait SetInspectedNodeRequest extends StObject {
 }
 object SetInspectedNodeRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): SetInspectedNodeRequest = {
+  inline def apply(nodeId: NodeId): SetInspectedNodeRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetInspectedNodeRequest]
   }
   
-  @scala.inline
-  implicit class SetInspectedNodeRequestMutableBuilder[Self <: SetInspectedNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetInspectedNodeRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

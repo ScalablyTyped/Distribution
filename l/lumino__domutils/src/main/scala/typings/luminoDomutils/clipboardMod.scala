@@ -17,7 +17,6 @@ object clipboardMod {
       *
       * @param text - The text to copy to the clipboard.
       */
-    @scala.inline
-    def copyText(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyText")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def copyText(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyText")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -12,19 +12,15 @@ trait IClockIdentifiersStatics extends StObject {
 }
 object IClockIdentifiersStatics {
   
-  @scala.inline
-  def apply(twelveHour: String, twentyFourHour: String): IClockIdentifiersStatics = {
+  inline def apply(twelveHour: String, twentyFourHour: String): IClockIdentifiersStatics = {
     val __obj = js.Dynamic.literal(twelveHour = twelveHour.asInstanceOf[js.Any], twentyFourHour = twentyFourHour.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClockIdentifiersStatics]
   }
   
-  @scala.inline
-  implicit class IClockIdentifiersStaticsMutableBuilder[Self <: IClockIdentifiersStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IClockIdentifiersStatics](x: Self) {
     
-    @scala.inline
-    def setTwelveHour(value: String): Self = StObject.set(x, "twelveHour", value.asInstanceOf[js.Any])
+    inline def setTwelveHour(value: String): Self = StObject.set(x, "twelveHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwentyFourHour(value: String): Self = StObject.set(x, "twentyFourHour", value.asInstanceOf[js.Any])
+    inline def setTwentyFourHour(value: String): Self = StObject.set(x, "twentyFourHour", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait CollectionChange extends StObject {
 }
 object CollectionChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: NotifyCollectionChangedAction,
     newItems: js.Array[js.Any],
     newStartingIndex: Double,
@@ -55,28 +54,20 @@ object CollectionChange {
     __obj.asInstanceOf[CollectionChange]
   }
   
-  @scala.inline
-  implicit class CollectionChangeMutableBuilder[Self <: CollectionChange] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionChange](x: Self) {
     
-    @scala.inline
-    def setAction(value: NotifyCollectionChangedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NotifyCollectionChangedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewItems(value: js.Array[js.Any]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
+    inline def setNewItems(value: js.Array[js.Any]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewItemsVarargs(value: js.Any*): Self = StObject.set(x, "newItems", js.Array(value :_*))
+    inline def setNewItemsVarargs(value: js.Any*): Self = StObject.set(x, "newItems", js.Array(value :_*))
     
-    @scala.inline
-    def setNewStartingIndex(value: Double): Self = StObject.set(x, "newStartingIndex", value.asInstanceOf[js.Any])
+    inline def setNewStartingIndex(value: Double): Self = StObject.set(x, "newStartingIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldItems(value: js.Array[js.Any]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
+    inline def setOldItems(value: js.Array[js.Any]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldItemsVarargs(value: js.Any*): Self = StObject.set(x, "oldItems", js.Array(value :_*))
+    inline def setOldItemsVarargs(value: js.Any*): Self = StObject.set(x, "oldItems", js.Array(value :_*))
     
-    @scala.inline
-    def setOldStartingIndex(value: Double): Self = StObject.set(x, "oldStartingIndex", value.asInstanceOf[js.Any])
+    inline def setOldStartingIndex(value: Double): Self = StObject.set(x, "oldStartingIndex", value.asInstanceOf[js.Any])
   }
 }

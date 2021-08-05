@@ -13,19 +13,15 @@ trait HealthCheckCustomConfig extends StObject {
 }
 object HealthCheckCustomConfig {
   
-  @scala.inline
-  def apply(): HealthCheckCustomConfig = {
+  inline def apply(): HealthCheckCustomConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HealthCheckCustomConfig]
   }
   
-  @scala.inline
-  implicit class HealthCheckCustomConfigMutableBuilder[Self <: HealthCheckCustomConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheckCustomConfig](x: Self) {
     
-    @scala.inline
-    def setFailureThreshold(value: FailureThreshold): Self = StObject.set(x, "FailureThreshold", value.asInstanceOf[js.Any])
+    inline def setFailureThreshold(value: FailureThreshold): Self = StObject.set(x, "FailureThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureThresholdUndefined: Self = StObject.set(x, "FailureThreshold", js.undefined)
+    inline def setFailureThresholdUndefined: Self = StObject.set(x, "FailureThreshold", js.undefined)
   }
 }

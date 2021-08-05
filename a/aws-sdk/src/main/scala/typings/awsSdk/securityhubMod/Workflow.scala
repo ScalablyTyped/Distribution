@@ -13,19 +13,15 @@ trait Workflow extends StObject {
 }
 object Workflow {
   
-  @scala.inline
-  def apply(): Workflow = {
+  inline def apply(): Workflow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Workflow]
   }
   
-  @scala.inline
-  implicit class WorkflowMutableBuilder[Self <: Workflow] (val x: Self) extends AnyVal {
+  extension [Self <: Workflow](x: Self) {
     
-    @scala.inline
-    def setStatus(value: WorkflowStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: WorkflowStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

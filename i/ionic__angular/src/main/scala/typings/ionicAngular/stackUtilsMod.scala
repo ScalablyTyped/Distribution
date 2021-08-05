@@ -19,23 +19,17 @@ object stackUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeStackId(prefixUrl: js.Array[String], url: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeStackId")(prefixUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def computeStackId(prefixUrl: js.Array[String], url: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeStackId")(prefixUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def destroyView(view: RouteView): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyView")(view.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def destroyView(view: RouteView): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyView")(view.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getUrl(router: Router, activatedRoute: ActivatedRoute): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(router.asInstanceOf[js.Any], activatedRoute.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getUrl(router: Router, activatedRoute: ActivatedRoute): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(router.asInstanceOf[js.Any], activatedRoute.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def insertView(views: js.Array[RouteView], view: RouteView, direction: RouterDirection): js.Array[RouteView] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertView")(views.asInstanceOf[js.Any], view.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteView]]
+  inline def insertView(views: js.Array[RouteView], view: RouteView, direction: RouterDirection): js.Array[RouteView] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertView")(views.asInstanceOf[js.Any], view.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteView]]
   
-  @scala.inline
-  def isTabSwitch(enteringView: RouteView, leavingView: RouteView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTabSwitch")(enteringView.asInstanceOf[js.Any], leavingView.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTabSwitch(enteringView: RouteView, leavingView: RouteView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTabSwitch")(enteringView.asInstanceOf[js.Any], leavingView.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def toSegments(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSegments")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def toSegments(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSegments")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   trait RouteView extends StObject {
     
@@ -59,8 +53,7 @@ object stackUtilsMod {
   }
   object RouteView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: HTMLElement,
       id: Double,
       ref: ComponentRef[js.Any],
@@ -71,47 +64,33 @@ object stackUtilsMod {
       __obj.asInstanceOf[RouteView]
     }
     
-    @scala.inline
-    implicit class RouteViewMutableBuilder[Self <: RouteView] (val x: Self) extends AnyVal {
+    extension [Self <: RouteView](x: Self) {
       
-      @scala.inline
-      def setAnimationBuilder(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "animationBuilder", js.Any.fromFunction2(value))
+      inline def setAnimationBuilder(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "animationBuilder", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationBuilderUndefined: Self = StObject.set(x, "animationBuilder", js.undefined)
+      inline def setAnimationBuilderUndefined: Self = StObject.set(x, "animationBuilder", js.undefined)
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: ComponentRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: ComponentRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedData(value: js.Any): Self = StObject.set(x, "savedData", value.asInstanceOf[js.Any])
+      inline def setSavedData(value: js.Any): Self = StObject.set(x, "savedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedDataUndefined: Self = StObject.set(x, "savedData", js.undefined)
+      inline def setSavedDataUndefined: Self = StObject.set(x, "savedData", js.undefined)
       
-      @scala.inline
-      def setSavedExtras(value: NavigationExtras): Self = StObject.set(x, "savedExtras", value.asInstanceOf[js.Any])
+      inline def setSavedExtras(value: NavigationExtras): Self = StObject.set(x, "savedExtras", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedExtrasUndefined: Self = StObject.set(x, "savedExtras", js.undefined)
+      inline def setSavedExtrasUndefined: Self = StObject.set(x, "savedExtras", js.undefined)
       
-      @scala.inline
-      def setStackId(value: String): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: String): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+      inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
       
-      @scala.inline
-      def setUnlistenEvents(value: () => Unit): Self = StObject.set(x, "unlistenEvents", js.Any.fromFunction0(value))
+      inline def setUnlistenEvents(value: () => Unit): Self = StObject.set(x, "unlistenEvents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,29 +106,22 @@ object stackUtilsMod {
   }
   object StackEvent {
     
-    @scala.inline
-    def apply(direction: RouterDirection, enteringView: RouteView, tabSwitch: Boolean): StackEvent = {
+    inline def apply(direction: RouterDirection, enteringView: RouteView, tabSwitch: Boolean): StackEvent = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], enteringView = enteringView.asInstanceOf[js.Any], tabSwitch = tabSwitch.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackEvent]
     }
     
-    @scala.inline
-    implicit class StackEventMutableBuilder[Self <: StackEvent] (val x: Self) extends AnyVal {
+    extension [Self <: StackEvent](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: NavDirection): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: NavDirection): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setDirection(value: RouterDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: RouterDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringView(value: RouteView): Self = StObject.set(x, "enteringView", value.asInstanceOf[js.Any])
+      inline def setEnteringView(value: RouteView): Self = StObject.set(x, "enteringView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabSwitch(value: Boolean): Self = StObject.set(x, "tabSwitch", value.asInstanceOf[js.Any])
+      inline def setTabSwitch(value: Boolean): Self = StObject.set(x, "tabSwitch", value.asInstanceOf[js.Any])
     }
   }
 }

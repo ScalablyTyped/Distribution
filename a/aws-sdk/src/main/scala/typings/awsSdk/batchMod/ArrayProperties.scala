@@ -13,19 +13,15 @@ trait ArrayProperties extends StObject {
 }
 object ArrayProperties {
   
-  @scala.inline
-  def apply(): ArrayProperties = {
+  inline def apply(): ArrayProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayProperties]
   }
   
-  @scala.inline
-  implicit class ArrayPropertiesMutableBuilder[Self <: ArrayProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayProperties](x: Self) {
     
-    @scala.inline
-    def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

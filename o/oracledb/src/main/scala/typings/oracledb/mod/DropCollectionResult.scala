@@ -14,16 +14,13 @@ trait DropCollectionResult extends StObject {
 }
 object DropCollectionResult {
   
-  @scala.inline
-  def apply(dropped: Boolean): DropCollectionResult = {
+  inline def apply(dropped: Boolean): DropCollectionResult = {
     val __obj = js.Dynamic.literal(dropped = dropped.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropCollectionResult]
   }
   
-  @scala.inline
-  implicit class DropCollectionResultMutableBuilder[Self <: DropCollectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DropCollectionResult](x: Self) {
     
-    @scala.inline
-    def setDropped(value: Boolean): Self = StObject.set(x, "dropped", value.asInstanceOf[js.Any])
+    inline def setDropped(value: Boolean): Self = StObject.set(x, "dropped", value.asInstanceOf[js.Any])
   }
 }

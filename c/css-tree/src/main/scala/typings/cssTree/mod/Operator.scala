@@ -17,20 +17,16 @@ trait Operator
 }
 object Operator {
   
-  @scala.inline
-  def apply(value: String): Operator = {
+  inline def apply(value: String): Operator = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Operator")
     __obj.asInstanceOf[Operator]
   }
   
-  @scala.inline
-  implicit class OperatorMutableBuilder[Self <: Operator] (val x: Self) extends AnyVal {
+  extension [Self <: Operator](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Operator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Operator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait TablesMixinProperties extends StObject {
 }
 object TablesMixinProperties {
   
-  @scala.inline
-  def apply(): TablesMixinProperties = {
+  inline def apply(): TablesMixinProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TablesMixinProperties]
   }
   
-  @scala.inline
-  implicit class TablesMixinPropertiesMutableBuilder[Self <: TablesMixinProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TablesMixinProperties](x: Self) {
     
-    @scala.inline
-    def setTables(value: CollectionProperties[LayerProperties] | js.Array[LayerProperties]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: CollectionProperties[LayerProperties] | js.Array[LayerProperties]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    @scala.inline
-    def setTablesVarargs(value: LayerProperties*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: LayerProperties*): Self = StObject.set(x, "tables", js.Array(value :_*))
   }
 }

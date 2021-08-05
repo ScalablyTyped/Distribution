@@ -28,34 +28,25 @@ trait S3DataSource extends StObject {
 }
 object S3DataSource {
   
-  @scala.inline
-  def apply(S3DataType: S3DataType, S3Uri: S3Uri): S3DataSource = {
+  inline def apply(S3DataType: S3DataType, S3Uri: S3Uri): S3DataSource = {
     val __obj = js.Dynamic.literal(S3DataType = S3DataType.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DataSource]
   }
   
-  @scala.inline
-  implicit class S3DataSourceMutableBuilder[Self <: S3DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: S3DataSource](x: Self) {
     
-    @scala.inline
-    def setAttributeNames(value: AttributeNames): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
+    inline def setAttributeNames(value: AttributeNames): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
+    inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
-    @scala.inline
-    def setAttributeNamesVarargs(value: AttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: AttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setS3DataDistributionType(value: S3DataDistribution): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
+    inline def setS3DataDistributionType(value: S3DataDistribution): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
+    inline def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
     
-    @scala.inline
-    def setS3DataType(value: S3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
+    inline def setS3DataType(value: S3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

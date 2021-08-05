@@ -14,25 +14,19 @@ trait CanvasHTMLAttributes[T]
 }
 object CanvasHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): CanvasHTMLAttributes[T] = {
+  inline def apply[T](): CanvasHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class CanvasHTMLAttributesMutableBuilder[Self <: CanvasHTMLAttributes[?], T] (val x: Self & CanvasHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: CanvasHTMLAttributes[?], T](x: Self & CanvasHTMLAttributes[T]) {
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

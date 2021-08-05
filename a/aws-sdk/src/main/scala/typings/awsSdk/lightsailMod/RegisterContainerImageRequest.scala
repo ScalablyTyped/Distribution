@@ -23,22 +23,17 @@ trait RegisterContainerImageRequest extends StObject {
 }
 object RegisterContainerImageRequest {
   
-  @scala.inline
-  def apply(digest: String, label: ContainerLabel, serviceName: ContainerServiceName): RegisterContainerImageRequest = {
+  inline def apply(digest: String, label: ContainerLabel, serviceName: ContainerServiceName): RegisterContainerImageRequest = {
     val __obj = js.Dynamic.literal(digest = digest.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterContainerImageRequest]
   }
   
-  @scala.inline
-  implicit class RegisterContainerImageRequestMutableBuilder[Self <: RegisterContainerImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterContainerImageRequest](x: Self) {
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: ContainerLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ContainerLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

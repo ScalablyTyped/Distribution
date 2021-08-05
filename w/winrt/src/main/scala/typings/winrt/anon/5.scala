@@ -13,22 +13,17 @@ trait `5` extends StObject {
 }
 object `5` {
   
-  @scala.inline
-  def apply(items: js.Array[CharacterGrouping], returnValue: Double): `5` = {
+  inline def apply(items: js.Array[CharacterGrouping], returnValue: Double): `5` = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`5`]
   }
   
-  @scala.inline
-  implicit class `5MutableBuilder`[Self <: `5`] (val x: Self) extends AnyVal {
+  extension [Self <: `5`](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[CharacterGrouping]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[CharacterGrouping]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: CharacterGrouping*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CharacterGrouping*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -98,85 +98,59 @@ trait SchemaTreemapChartSpec extends StObject {
 }
 object SchemaTreemapChartSpec {
   
-  @scala.inline
-  def apply(): SchemaTreemapChartSpec = {
+  inline def apply(): SchemaTreemapChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTreemapChartSpec]
   }
   
-  @scala.inline
-  implicit class SchemaTreemapChartSpecMutableBuilder[Self <: SchemaTreemapChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTreemapChartSpec](x: Self) {
     
-    @scala.inline
-    def setColorData(value: SchemaChartData): Self = StObject.set(x, "colorData", value.asInstanceOf[js.Any])
+    inline def setColorData(value: SchemaChartData): Self = StObject.set(x, "colorData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorDataUndefined: Self = StObject.set(x, "colorData", js.undefined)
+    inline def setColorDataUndefined: Self = StObject.set(x, "colorData", js.undefined)
     
-    @scala.inline
-    def setColorScale(value: SchemaTreemapChartColorScale): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
+    inline def setColorScale(value: SchemaTreemapChartColorScale): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
+    inline def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
     
-    @scala.inline
-    def setHeaderColor(value: SchemaColor): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
+    inline def setHeaderColor(value: SchemaColor): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
+    inline def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
     
-    @scala.inline
-    def setHideTooltips(value: Boolean): Self = StObject.set(x, "hideTooltips", value.asInstanceOf[js.Any])
+    inline def setHideTooltips(value: Boolean): Self = StObject.set(x, "hideTooltips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideTooltipsUndefined: Self = StObject.set(x, "hideTooltips", js.undefined)
+    inline def setHideTooltipsUndefined: Self = StObject.set(x, "hideTooltips", js.undefined)
     
-    @scala.inline
-    def setHintedLevels(value: Double): Self = StObject.set(x, "hintedLevels", value.asInstanceOf[js.Any])
+    inline def setHintedLevels(value: Double): Self = StObject.set(x, "hintedLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintedLevelsUndefined: Self = StObject.set(x, "hintedLevels", js.undefined)
+    inline def setHintedLevelsUndefined: Self = StObject.set(x, "hintedLevels", js.undefined)
     
-    @scala.inline
-    def setLabels(value: SchemaChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: SchemaChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLevels(value: Double): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: Double): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setParentLabels(value: SchemaChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
+    inline def setParentLabels(value: SchemaChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
+    inline def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
     
-    @scala.inline
-    def setSizeData(value: SchemaChartData): Self = StObject.set(x, "sizeData", value.asInstanceOf[js.Any])
+    inline def setSizeData(value: SchemaChartData): Self = StObject.set(x, "sizeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeDataUndefined: Self = StObject.set(x, "sizeData", js.undefined)
+    inline def setSizeDataUndefined: Self = StObject.set(x, "sizeData", js.undefined)
     
-    @scala.inline
-    def setTextFormat(value: SchemaTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
+    inline def setTextFormat(value: SchemaTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
+    inline def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

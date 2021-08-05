@@ -21,16 +21,13 @@ trait LineJoint extends StObject
 object LineJoint {
   
   /** the edges of the thick lines will be joined by lines */
-  @scala.inline
-  def BEVEL: `2` = 2.asInstanceOf[`2`]
+  inline def BEVEL: `2` = 2.asInstanceOf[`2`]
   
   /** the middle value between the joints is used */
-  @scala.inline
-  def MIDDLE: `1` = 1.asInstanceOf[`1`]
+  inline def MIDDLE: `1` = 1.asInstanceOf[`1`]
   
   /** the lines join at intersections */
-  @scala.inline
-  def MITER: `3` = 3.asInstanceOf[`3`]
+  inline def MITER: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the area is not filled.
@@ -45,8 +42,7 @@ object LineJoint {
     *
     * the text size is only defined by the font properties
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the dash is a point
@@ -55,6 +51,5 @@ object LineJoint {
     *
     * the lines join with an arc
     */
-  @scala.inline
-  def ROUND: `4` = 4.asInstanceOf[`4`]
+  inline def ROUND: `4` = 4.asInstanceOf[`4`]
 }

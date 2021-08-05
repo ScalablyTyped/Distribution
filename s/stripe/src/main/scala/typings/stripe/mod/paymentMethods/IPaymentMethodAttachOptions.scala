@@ -11,16 +11,13 @@ trait IPaymentMethodAttachOptions extends StObject {
 }
 object IPaymentMethodAttachOptions {
   
-  @scala.inline
-  def apply(customer: String): IPaymentMethodAttachOptions = {
+  inline def apply(customer: String): IPaymentMethodAttachOptions = {
     val __obj = js.Dynamic.literal(customer = customer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodAttachOptions]
   }
   
-  @scala.inline
-  implicit class IPaymentMethodAttachOptionsMutableBuilder[Self <: IPaymentMethodAttachOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentMethodAttachOptions](x: Self) {
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
   }
 }

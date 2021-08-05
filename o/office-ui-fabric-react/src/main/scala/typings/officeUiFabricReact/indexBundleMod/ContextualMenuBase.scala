@@ -21,6 +21,5 @@ object ContextualMenuBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "ContextualMenuBase.defaultProps")
   @js.native
   def defaultProps: IContextualMenuProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IContextualMenuProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IContextualMenuProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

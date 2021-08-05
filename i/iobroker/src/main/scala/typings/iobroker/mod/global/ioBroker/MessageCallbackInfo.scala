@@ -21,25 +21,19 @@ trait MessageCallbackInfo extends StObject {
 }
 object MessageCallbackInfo {
   
-  @scala.inline
-  def apply(ack: Boolean, id: Double, message: MessagePayload, time: Double): MessageCallbackInfo = {
+  inline def apply(ack: Boolean, id: Double, message: MessagePayload, time: Double): MessageCallbackInfo = {
     val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageCallbackInfo]
   }
   
-  @scala.inline
-  implicit class MessageCallbackInfoMutableBuilder[Self <: MessageCallbackInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MessageCallbackInfo](x: Self) {
     
-    @scala.inline
-    def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+    inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: MessagePayload): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessagePayload): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

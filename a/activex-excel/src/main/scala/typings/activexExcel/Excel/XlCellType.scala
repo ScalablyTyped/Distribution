@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCellType extends StObject
 object XlCellType {
   
-  @scala.inline
-  def xlCellTypeAllFormatConditions: `-4172` = -4172.asInstanceOf[`-4172`]
+  inline def xlCellTypeAllFormatConditions: `-4172` = -4172.asInstanceOf[`-4172`]
   
-  @scala.inline
-  def xlCellTypeAllValidation: `-4174` = -4174.asInstanceOf[`-4174`]
+  inline def xlCellTypeAllValidation: `-4174` = -4174.asInstanceOf[`-4174`]
   
-  @scala.inline
-  def xlCellTypeBlanks: `4` = 4.asInstanceOf[`4`]
+  inline def xlCellTypeBlanks: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlCellTypeComments: `-4144` = -4144.asInstanceOf[`-4144`]
+  inline def xlCellTypeComments: `-4144` = -4144.asInstanceOf[`-4144`]
   
-  @scala.inline
-  def xlCellTypeConstants: `2` = 2.asInstanceOf[`2`]
+  inline def xlCellTypeConstants: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlCellTypeFormulas: `-4123` = -4123.asInstanceOf[`-4123`]
+  inline def xlCellTypeFormulas: `-4123` = -4123.asInstanceOf[`-4123`]
   
-  @scala.inline
-  def xlCellTypeLastCell: `11` = 11.asInstanceOf[`11`]
+  inline def xlCellTypeLastCell: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def xlCellTypeSameFormatConditions: `-4173` = -4173.asInstanceOf[`-4173`]
+  inline def xlCellTypeSameFormatConditions: `-4173` = -4173.asInstanceOf[`-4173`]
   
-  @scala.inline
-  def xlCellTypeSameValidation: `-4175` = -4175.asInstanceOf[`-4175`]
+  inline def xlCellTypeSameValidation: `-4175` = -4175.asInstanceOf[`-4175`]
   
-  @scala.inline
-  def xlCellTypeVisible: `12` = 12.asInstanceOf[`12`]
+  inline def xlCellTypeVisible: `12` = 12.asInstanceOf[`12`]
 }

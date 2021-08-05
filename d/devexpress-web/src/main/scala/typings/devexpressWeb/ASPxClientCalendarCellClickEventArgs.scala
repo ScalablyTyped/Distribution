@@ -19,16 +19,13 @@ trait ASPxClientCalendarCellClickEventArgs
 }
 object ASPxClientCalendarCellClickEventArgs {
   
-  @scala.inline
-  def apply(date: Date): ASPxClientCalendarCellClickEventArgs = {
+  inline def apply(date: Date): ASPxClientCalendarCellClickEventArgs = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCalendarCellClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCalendarCellClickEventArgsMutableBuilder[Self <: ASPxClientCalendarCellClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCalendarCellClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

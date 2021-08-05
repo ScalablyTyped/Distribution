@@ -12,19 +12,15 @@ trait WeakValidationMapFormGrou extends StObject {
 }
 object WeakValidationMapFormGrou {
   
-  @scala.inline
-  def apply(): WeakValidationMapFormGrou = {
+  inline def apply(): WeakValidationMapFormGrou = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapFormGrou]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapFormGrouMutableBuilder[Self <: WeakValidationMapFormGrou] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapFormGrou](x: Self) {
     
-    @scala.inline
-    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+    inline def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+    inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
   }
 }

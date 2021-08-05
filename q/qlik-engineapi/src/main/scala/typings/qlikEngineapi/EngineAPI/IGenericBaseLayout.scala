@@ -15,19 +15,15 @@ trait IGenericBaseLayout extends StObject {
 }
 object IGenericBaseLayout {
   
-  @scala.inline
-  def apply(qInfo: INxInfo, qMeta: INxMeta): IGenericBaseLayout = {
+  inline def apply(qInfo: INxInfo, qMeta: INxMeta): IGenericBaseLayout = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericBaseLayout]
   }
   
-  @scala.inline
-  implicit class IGenericBaseLayoutMutableBuilder[Self <: IGenericBaseLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericBaseLayout](x: Self) {
     
-    @scala.inline
-    def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
   }
 }

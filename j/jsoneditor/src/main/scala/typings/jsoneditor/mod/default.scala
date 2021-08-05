@@ -37,8 +37,7 @@ object default {
   @JSImport("jsoneditor", "default.Ajv")
   @js.native
   def Ajv: typings.ajv.mod.Ajv = js.native
-  @scala.inline
-  def Ajv_=(x: Ajv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ajv")(x.asInstanceOf[js.Any])
+  inline def Ajv_=(x: Ajv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ajv")(x.asInstanceOf[js.Any])
   
   /**
     * An array with the names of all known options.
@@ -46,8 +45,7 @@ object default {
   @JSImport("jsoneditor", "default.VALID_OPTIONS")
   @js.native
   def VALID_OPTIONS: js.Array[String] = js.native
-  @scala.inline
-  def VALID_OPTIONS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALID_OPTIONS")(x.asInstanceOf[js.Any])
+  inline def VALID_OPTIONS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALID_OPTIONS")(x.asInstanceOf[js.Any])
   
   /**
     * Access to the bundled vanilla-picker library, used as color picker. Same as `var VanillaPicker = require('vanilla-picker');`.
@@ -55,8 +53,7 @@ object default {
   @JSImport("jsoneditor", "default.VanillaPicker")
   @js.native
   def VanillaPicker: js.Any = js.native
-  @scala.inline
-  def VanillaPicker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VanillaPicker")(x.asInstanceOf[js.Any])
+  inline def VanillaPicker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VanillaPicker")(x.asInstanceOf[js.Any])
   
   /**
     * Access to the bundled Ace editor, via the brace library. Ace is used in code mode. Same as `var ace = require('brace');`.
@@ -64,6 +61,5 @@ object default {
   @JSImport("jsoneditor", "default.ace")
   @js.native
   def ace: Ace = js.native
-  @scala.inline
-  def ace_=(x: Ace): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ace")(x.asInstanceOf[js.Any])
+  inline def ace_=(x: Ace): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ace")(x.asInstanceOf[js.Any])
 }

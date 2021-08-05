@@ -34,31 +34,23 @@ trait PlusWebviewWebviewPosition extends StObject {
 }
 object PlusWebviewWebviewPosition {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewPosition = {
+  inline def apply(): PlusWebviewWebviewPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewPosition]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewPositionMutableBuilder[Self <: PlusWebviewWebviewPosition] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewPosition](x: Self) {
     
-    @scala.inline
-    def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+    inline def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+    inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     
-    @scala.inline
-    def setDock(value: String): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
+    inline def setDock(value: String): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockUndefined: Self = StObject.set(x, "dock", js.undefined)
+    inline def setDockUndefined: Self = StObject.set(x, "dock", js.undefined)
     
-    @scala.inline
-    def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
   }
 }

@@ -63,22 +63,15 @@ object mod {
     var sourceMap: RawSourceMap | Null = js.native
   }
   
-  @scala.inline
-  def createInstrumenter(): Instrumenter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstrumenter")().asInstanceOf[Instrumenter]
-  @scala.inline
-  def createInstrumenter(options: PartialInstrumenterOption): Instrumenter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstrumenter")(options.asInstanceOf[js.Any]).asInstanceOf[Instrumenter]
+  inline def createInstrumenter(): Instrumenter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstrumenter")().asInstanceOf[Instrumenter]
+  inline def createInstrumenter(options: PartialInstrumenterOption): Instrumenter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstrumenter")(options.asInstanceOf[js.Any]).asInstanceOf[Instrumenter]
   
-  @scala.inline
-  def programVisitor(types: TypeofbabelTypes): Visitor = ^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any]).asInstanceOf[Visitor]
-  @scala.inline
-  def programVisitor(types: TypeofbabelTypes, sourceFilePath: String): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any])).asInstanceOf[Visitor]
-  @scala.inline
-  def programVisitor(types: TypeofbabelTypes, sourceFilePath: String, opts: PartialVisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Visitor]
-  @scala.inline
-  def programVisitor(types: TypeofbabelTypes, sourceFilePath: Unit, opts: PartialVisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  inline def programVisitor(types: TypeofbabelTypes): Visitor = ^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any]).asInstanceOf[Visitor]
+  inline def programVisitor(types: TypeofbabelTypes, sourceFilePath: String): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  inline def programVisitor(types: TypeofbabelTypes, sourceFilePath: String, opts: PartialVisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  inline def programVisitor(types: TypeofbabelTypes, sourceFilePath: Unit, opts: PartialVisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Visitor]
   
-  @scala.inline
-  def readInitialCoverage(code: String): InitialCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("readInitialCoverage")(code.asInstanceOf[js.Any]).asInstanceOf[InitialCoverage]
+  inline def readInitialCoverage(code: String): InitialCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("readInitialCoverage")(code.asInstanceOf[js.Any]).asInstanceOf[InitialCoverage]
   
   trait InitialCoverage extends StObject {
     
@@ -92,26 +85,20 @@ object mod {
   }
   object InitialCoverage {
     
-    @scala.inline
-    def apply(coverageData: js.Any, gcv: js.Any, hash: String, path: String): InitialCoverage = {
+    inline def apply(coverageData: js.Any, gcv: js.Any, hash: String, path: String): InitialCoverage = {
       val __obj = js.Dynamic.literal(coverageData = coverageData.asInstanceOf[js.Any], gcv = gcv.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialCoverage]
     }
     
-    @scala.inline
-    implicit class InitialCoverageMutableBuilder[Self <: InitialCoverage] (val x: Self) extends AnyVal {
+    extension [Self <: InitialCoverage](x: Self) {
       
-      @scala.inline
-      def setCoverageData(value: js.Any): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
+      inline def setCoverageData(value: js.Any): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGcv(value: js.Any): Self = StObject.set(x, "gcv", value.asInstanceOf[js.Any])
+      inline def setGcv(value: js.Any): Self = StObject.set(x, "gcv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,8 +124,7 @@ object mod {
   }
   object InstrumenterOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoWrap: Boolean,
       compact: Boolean,
       coverageVariable: String,
@@ -152,32 +138,23 @@ object mod {
       __obj.asInstanceOf[InstrumenterOptions]
     }
     
-    @scala.inline
-    implicit class InstrumenterOptionsMutableBuilder[Self <: InstrumenterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InstrumenterOptions](x: Self) {
       
-      @scala.inline
-      def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
+      inline def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
+      inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEsModules(value: Boolean): Self = StObject.set(x, "esModules", value.asInstanceOf[js.Any])
+      inline def setEsModules(value: Boolean): Self = StObject.set(x, "esModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveComments(value: Boolean): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
+      inline def setPreserveComments(value: Boolean): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduceSourceMap(value: Boolean): Self = StObject.set(x, "produceSourceMap", value.asInstanceOf[js.Any])
+      inline def setProduceSourceMap(value: Boolean): Self = StObject.set(x, "produceSourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUrlCallback(value: (String, String) => Unit): Self = StObject.set(x, "sourceMapUrlCallback", js.Any.fromFunction2(value))
+      inline def setSourceMapUrlCallback(value: (String, String) => Unit): Self = StObject.set(x, "sourceMapUrlCallback", js.Any.fromFunction2(value))
     }
   }
   
@@ -189,20 +166,16 @@ object mod {
   }
   object Visitor {
     
-    @scala.inline
-    def apply(enter: String => Unit, exit: String => typings.istanbulLibInstrument.anon.FileCoverage): Visitor = {
+    inline def apply(enter: String => Unit, exit: String => typings.istanbulLibInstrument.anon.FileCoverage): Visitor = {
       val __obj = js.Dynamic.literal(enter = js.Any.fromFunction1(enter), exit = js.Any.fromFunction1(exit))
       __obj.asInstanceOf[Visitor]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
+    extension [Self <: Visitor](x: Self) {
       
-      @scala.inline
-      def setEnter(value: String => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      inline def setEnter(value: String => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExit(value: String => typings.istanbulLibInstrument.anon.FileCoverage): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
+      inline def setExit(value: String => typings.istanbulLibInstrument.anon.FileCoverage): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
     }
   }
   
@@ -214,20 +187,16 @@ object mod {
   }
   object VisitorOptions {
     
-    @scala.inline
-    def apply(coverageVariable: String, inputSourceMap: RawSourceMap): VisitorOptions = {
+    inline def apply(coverageVariable: String, inputSourceMap: RawSourceMap): VisitorOptions = {
       val __obj = js.Dynamic.literal(coverageVariable = coverageVariable.asInstanceOf[js.Any], inputSourceMap = inputSourceMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[VisitorOptions]
     }
     
-    @scala.inline
-    implicit class VisitorOptionsMutableBuilder[Self <: VisitorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VisitorOptions](x: Self) {
       
-      @scala.inline
-      def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
+      inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputSourceMap(value: RawSourceMap): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
+      inline def setInputSourceMap(value: RawSourceMap): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
     }
   }
 }

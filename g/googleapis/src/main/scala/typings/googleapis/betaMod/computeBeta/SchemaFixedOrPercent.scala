@@ -34,31 +34,23 @@ trait SchemaFixedOrPercent extends StObject {
 }
 object SchemaFixedOrPercent {
   
-  @scala.inline
-  def apply(): SchemaFixedOrPercent = {
+  inline def apply(): SchemaFixedOrPercent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFixedOrPercent]
   }
   
-  @scala.inline
-  implicit class SchemaFixedOrPercentMutableBuilder[Self <: SchemaFixedOrPercent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFixedOrPercent](x: Self) {
     
-    @scala.inline
-    def setCalculated(value: Double): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
+    inline def setCalculated(value: Double): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
+    inline def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
     
-    @scala.inline
-    def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
   }
 }

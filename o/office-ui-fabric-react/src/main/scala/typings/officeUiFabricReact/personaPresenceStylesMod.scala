@@ -12,6 +12,5 @@ object personaPresenceStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IPersonaPresenceStyleProps): IPersonaPresenceStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPersonaPresenceStyles]
+  inline def getStyles(props: IPersonaPresenceStyleProps): IPersonaPresenceStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPersonaPresenceStyles]
 }

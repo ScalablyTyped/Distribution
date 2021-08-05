@@ -24,8 +24,7 @@ trait UserAuthenticationStatusChangingEventArgs extends StObject {
 }
 object UserAuthenticationStatusChangingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentStatus: UserAuthenticationStatus,
     getDeferral: () => UserAuthenticationStatusChangeDeferral,
     newStatus: UserAuthenticationStatus,
@@ -35,19 +34,14 @@ object UserAuthenticationStatusChangingEventArgs {
     __obj.asInstanceOf[UserAuthenticationStatusChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class UserAuthenticationStatusChangingEventArgsMutableBuilder[Self <: UserAuthenticationStatusChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UserAuthenticationStatusChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCurrentStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
+    inline def setCurrentStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => UserAuthenticationStatusChangeDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => UserAuthenticationStatusChangeDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
+    inline def setNewStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

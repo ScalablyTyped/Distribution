@@ -16,16 +16,16 @@ class Location protected ()
     length: Double
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _fileName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _length: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _lineMap: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _start: js.Any = js.native
   
   /* CompleteClass */
@@ -53,8 +53,7 @@ object Location {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def equals_(
+  inline def equals_(
     location1: typings.typescriptServices.TypeScript.Location,
     location2: typings.typescriptServices.TypeScript.Location
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(location1.asInstanceOf[js.Any], location2.asInstanceOf[js.Any])).asInstanceOf[Boolean]

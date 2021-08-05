@@ -20,25 +20,19 @@ trait GoogleIamV1SetIamPolicyRequest extends StObject {
 }
 object GoogleIamV1SetIamPolicyRequest {
   
-  @scala.inline
-  def apply(): GoogleIamV1SetIamPolicyRequest = {
+  inline def apply(): GoogleIamV1SetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIamV1SetIamPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GoogleIamV1SetIamPolicyRequestMutableBuilder[Self <: GoogleIamV1SetIamPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIamV1SetIamPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: GoogleIamV1Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: GoogleIamV1Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -40,43 +40,31 @@ trait IgTreeGridMultiColumnHeaders
 }
 object IgTreeGridMultiColumnHeaders {
   
-  @scala.inline
-  def apply(): IgTreeGridMultiColumnHeaders = {
+  inline def apply(): IgTreeGridMultiColumnHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridMultiColumnHeaders]
   }
   
-  @scala.inline
-  implicit class IgTreeGridMultiColumnHeadersMutableBuilder[Self <: IgTreeGridMultiColumnHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridMultiColumnHeaders](x: Self) {
     
-    @scala.inline
-    def setGroupCollapsed(value: (/* event */ Event, /* ui */ GroupCollapsedEventUIParam) => Unit): Self = StObject.set(x, "groupCollapsed", js.Any.fromFunction2(value))
+    inline def setGroupCollapsed(value: (/* event */ Event, /* ui */ GroupCollapsedEventUIParam) => Unit): Self = StObject.set(x, "groupCollapsed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupCollapsedUndefined: Self = StObject.set(x, "groupCollapsed", js.undefined)
+    inline def setGroupCollapsedUndefined: Self = StObject.set(x, "groupCollapsed", js.undefined)
     
-    @scala.inline
-    def setGroupCollapsing(value: (/* event */ Event, /* ui */ GroupCollapsingEventUIParam) => Unit): Self = StObject.set(x, "groupCollapsing", js.Any.fromFunction2(value))
+    inline def setGroupCollapsing(value: (/* event */ Event, /* ui */ GroupCollapsingEventUIParam) => Unit): Self = StObject.set(x, "groupCollapsing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupCollapsingUndefined: Self = StObject.set(x, "groupCollapsing", js.undefined)
+    inline def setGroupCollapsingUndefined: Self = StObject.set(x, "groupCollapsing", js.undefined)
     
-    @scala.inline
-    def setGroupExpanded(value: (/* event */ Event, /* ui */ GroupExpandedEventUIParam) => Unit): Self = StObject.set(x, "groupExpanded", js.Any.fromFunction2(value))
+    inline def setGroupExpanded(value: (/* event */ Event, /* ui */ GroupExpandedEventUIParam) => Unit): Self = StObject.set(x, "groupExpanded", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupExpandedUndefined: Self = StObject.set(x, "groupExpanded", js.undefined)
+    inline def setGroupExpandedUndefined: Self = StObject.set(x, "groupExpanded", js.undefined)
     
-    @scala.inline
-    def setGroupExpanding(value: (/* event */ Event, /* ui */ GroupExpandingEventUIParam) => Unit): Self = StObject.set(x, "groupExpanding", js.Any.fromFunction2(value))
+    inline def setGroupExpanding(value: (/* event */ Event, /* ui */ GroupExpandingEventUIParam) => Unit): Self = StObject.set(x, "groupExpanding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupExpandingUndefined: Self = StObject.set(x, "groupExpanding", js.undefined)
+    inline def setGroupExpandingUndefined: Self = StObject.set(x, "groupExpanding", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
   }
 }

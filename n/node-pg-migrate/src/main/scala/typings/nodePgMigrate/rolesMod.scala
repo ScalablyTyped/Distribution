@@ -15,15 +15,11 @@ object rolesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alterRole(mOptions: MigrationOptions): AlterRole = ^.asInstanceOf[js.Dynamic].applyDynamic("alterRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterRole]
+  inline def alterRole(mOptions: MigrationOptions): AlterRole = ^.asInstanceOf[js.Dynamic].applyDynamic("alterRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterRole]
   
-  @scala.inline
-  def createRole(mOptions: MigrationOptions): CreateRole = ^.asInstanceOf[js.Dynamic].applyDynamic("createRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateRole]
+  inline def createRole(mOptions: MigrationOptions): CreateRole = ^.asInstanceOf[js.Dynamic].applyDynamic("createRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateRole]
   
-  @scala.inline
-  def dropRole(mOptions: MigrationOptions): DropRole = ^.asInstanceOf[js.Dynamic].applyDynamic("dropRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropRole]
+  inline def dropRole(mOptions: MigrationOptions): DropRole = ^.asInstanceOf[js.Dynamic].applyDynamic("dropRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropRole]
   
-  @scala.inline
-  def renameRole(mOptions: MigrationOptions): RenameRole = ^.asInstanceOf[js.Dynamic].applyDynamic("renameRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameRole]
+  inline def renameRole(mOptions: MigrationOptions): RenameRole = ^.asInstanceOf[js.Dynamic].applyDynamic("renameRole")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameRole]
 }

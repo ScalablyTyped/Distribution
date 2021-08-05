@@ -10,19 +10,15 @@ trait ATSArray extends StObject {
 }
 object ATSArray {
   
-  @scala.inline
-  def apply(ATS: js.Array[String]): ATSArray = {
+  inline def apply(ATS: js.Array[String]): ATSArray = {
     val __obj = js.Dynamic.literal(ATS = ATS.asInstanceOf[js.Any])
     __obj.asInstanceOf[ATSArray]
   }
   
-  @scala.inline
-  implicit class ATSArrayMutableBuilder[Self <: ATSArray] (val x: Self) extends AnyVal {
+  extension [Self <: ATSArray](x: Self) {
     
-    @scala.inline
-    def setATS(value: js.Array[String]): Self = StObject.set(x, "ATS", value.asInstanceOf[js.Any])
+    inline def setATS(value: js.Array[String]): Self = StObject.set(x, "ATS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setATSVarargs(value: String*): Self = StObject.set(x, "ATS", js.Array(value :_*))
+    inline def setATSVarargs(value: String*): Self = StObject.set(x, "ATS", js.Array(value :_*))
   }
 }

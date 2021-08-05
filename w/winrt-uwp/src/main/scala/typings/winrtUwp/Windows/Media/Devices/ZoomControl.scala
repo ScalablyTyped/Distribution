@@ -37,8 +37,7 @@ trait ZoomControl extends StObject {
 }
 object ZoomControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configure: ZoomSettings => Unit,
     max: Double,
     min: Double,
@@ -52,31 +51,22 @@ object ZoomControl {
     __obj.asInstanceOf[ZoomControl]
   }
   
-  @scala.inline
-  implicit class ZoomControlMutableBuilder[Self <: ZoomControl] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomControl](x: Self) {
     
-    @scala.inline
-    def setConfigure(value: ZoomSettings => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+    inline def setConfigure(value: ZoomSettings => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: ZoomTransitionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ZoomTransitionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedModes(value: IVectorView[ZoomTransitionMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
+    inline def setSupportedModes(value: IVectorView[ZoomTransitionMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

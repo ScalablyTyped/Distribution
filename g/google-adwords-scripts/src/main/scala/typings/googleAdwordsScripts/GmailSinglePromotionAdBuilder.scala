@@ -38,8 +38,7 @@ trait GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
 }
 object GmailSinglePromotionAdBuilder {
   
-  @scala.inline
-  def apply[GmailSinglePromotionAd](
+  inline def apply[GmailSinglePromotionAd](
     build: () => AdWordsOperation[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
     withAdvertiser: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
     withCallToAction: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd],
@@ -64,49 +63,34 @@ object GmailSinglePromotionAdBuilder {
     __obj.asInstanceOf[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]
   }
   
-  @scala.inline
-  implicit class GmailSinglePromotionAdBuilderMutableBuilder[Self <: GmailSinglePromotionAdBuilder[?], GmailSinglePromotionAd] (val x: Self & GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]) extends AnyVal {
+  extension [Self <: GmailSinglePromotionAdBuilder[?], GmailSinglePromotionAd](x: Self & GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]) {
     
-    @scala.inline
-    def setWithAdvertiser(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
+    inline def setWithAdvertiser(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithCallToAction(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withCallToAction", js.Any.fromFunction1(value))
+    inline def setWithCallToAction(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withCallToAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithCallToActionButtonColor(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withCallToActionButtonColor", js.Any.fromFunction1(value))
+    inline def setWithCallToActionButtonColor(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withCallToActionButtonColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithCallToActionTextColor(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withCallToActionTextColor", js.Any.fromFunction1(value))
+    inline def setWithCallToActionTextColor(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withCallToActionTextColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithContent(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withContent", js.Any.fromFunction1(value))
+    inline def setWithContent(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithDescription(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
+    inline def setWithDescription(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithDisplayUrl(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
+    inline def setWithDisplayUrl(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithHeader(value: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withHeader", js.Any.fromFunction1(value))
+    inline def setWithHeader(value: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithHeadline(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withHeadline", js.Any.fromFunction1(value))
+    inline def setWithHeadline(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withHeadline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithHeadlineColor(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withHeadlineColor", js.Any.fromFunction1(value))
+    inline def setWithHeadlineColor(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withHeadlineColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithImage(value: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
+    inline def setWithImage(value: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithLogo(value: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withLogo", js.Any.fromFunction1(value))
+    inline def setWithLogo(value: Media => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withLogo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithName(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithSubject(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withSubject", js.Any.fromFunction1(value))
+    inline def setWithSubject(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withSubject", js.Any.fromFunction1(value))
   }
 }

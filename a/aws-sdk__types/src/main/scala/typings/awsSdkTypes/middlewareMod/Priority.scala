@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Priority extends StObject
 object Priority {
   
-  @scala.inline
-  def high: typings.awsSdkTypes.awsSdkTypesStrings.high = "high".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.high]
+  inline def high: typings.awsSdkTypes.awsSdkTypesStrings.high = "high".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.high]
   
-  @scala.inline
-  def low: typings.awsSdkTypes.awsSdkTypesStrings.low = "low".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.low]
+  inline def low: typings.awsSdkTypes.awsSdkTypesStrings.low = "low".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.low]
   
-  @scala.inline
-  def normal: typings.awsSdkTypes.awsSdkTypesStrings.normal = "normal".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.normal]
+  inline def normal: typings.awsSdkTypes.awsSdkTypesStrings.normal = "normal".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.normal]
 }

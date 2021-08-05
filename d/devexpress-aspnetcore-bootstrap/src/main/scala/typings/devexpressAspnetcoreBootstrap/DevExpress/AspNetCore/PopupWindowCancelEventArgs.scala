@@ -14,8 +14,7 @@ trait PopupWindowCancelEventArgs
 }
 object PopupWindowCancelEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     closeReason: BootstrapPopupControlCloseReason,
     sender: Control,
@@ -25,13 +24,10 @@ object PopupWindowCancelEventArgs {
     __obj.asInstanceOf[PopupWindowCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class PopupWindowCancelEventArgsMutableBuilder[Self <: PopupWindowCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PopupWindowCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCloseReason(value: BootstrapPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
+    inline def setCloseReason(value: BootstrapPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: BootstrapPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: BootstrapPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

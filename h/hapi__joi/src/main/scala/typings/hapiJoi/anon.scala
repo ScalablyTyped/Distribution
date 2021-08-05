@@ -50,8 +50,7 @@ object anon {
   }
   object Alternatives {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alternatives: AlternativesSchema,
       any: AnySchema,
       array: ArraySchema,
@@ -70,44 +69,31 @@ object anon {
       __obj.asInstanceOf[Alternatives]
     }
     
-    @scala.inline
-    implicit class AlternativesMutableBuilder[Self <: Alternatives] (val x: Self) extends AnyVal {
+    extension [Self <: Alternatives](x: Self) {
       
-      @scala.inline
-      def setAlternatives(value: AlternativesSchema): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+      inline def setAlternatives(value: AlternativesSchema): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAny(value: AnySchema): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+      inline def setAny(value: AnySchema): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArray(value: ArraySchema): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: ArraySchema): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinary(value: BinarySchema): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: BinarySchema): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoolean(value: BooleanSchema): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: BooleanSchema): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: DateSchema): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: DateSchema): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction(value: FunctionSchema): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: FunctionSchema): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: LinkSchema): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: LinkSchema): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: NumberSchema): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: NumberSchema): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: ObjectSchema[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: ObjectSchema[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: StringSchema): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: StringSchema): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: SymbolSchema): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: SymbolSchema): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,26 +115,20 @@ object anon {
   }
   object Array {
     
-    @scala.inline
-    def apply(): Array = {
+    inline def apply(): Array = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Array]
     }
     
-    @scala.inline
-    implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+    extension [Self <: Array](x: Self) {
       
-      @scala.inline
-      def setArray(value: String | `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: String | `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+      inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String | `false`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | `false`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     }
   }
   
@@ -160,26 +140,20 @@ object anon {
   }
   object Arrays {
     
-    @scala.inline
-    def apply(): Arrays = {
+    inline def apply(): Arrays = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Arrays]
     }
     
-    @scala.inline
-    implicit class ArraysMutableBuilder[Self <: Arrays] (val x: Self) extends AnyVal {
+    extension [Self <: Arrays](x: Self) {
       
-      @scala.inline
-      def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
+      inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
+      inline def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
       
-      @scala.inline
-      def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+      inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     }
   }
   
@@ -191,20 +165,16 @@ object anon {
   }
   object Build {
     
-    @scala.inline
-    def apply(): Build = {
+    inline def apply(): Build = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Build]
     }
     
-    @scala.inline
-    implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
+    extension [Self <: Build](x: Self) {
       
-      @scala.inline
-      def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any]) => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
+      inline def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any]) => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+      inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     }
   }
   
@@ -216,20 +186,16 @@ object anon {
   }
   object From {
     
-    @scala.inline
-    def apply(from: String, to: String): From = {
+    inline def apply(from: String, to: String): From = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[From]
     }
     
-    @scala.inline
-    implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+    extension [Self <: From](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -258,32 +224,24 @@ object anon {
   }
   object Global {
     
-    @scala.inline
-    def apply(): Global = {
+    inline def apply(): Global = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Global]
     }
     
-    @scala.inline
-    implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+    extension [Self <: Global](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: String): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: String): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+      inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -293,18 +251,15 @@ object anon {
   }
   object Override {
     
-    @scala.inline
-    def apply(`override`: Boolean): Override = {
+    inline def apply(`override`: Boolean): Override = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Override]
     }
     
-    @scala.inline
-    implicit class OverrideMutableBuilder[Self <: Override] (val x: Self) extends AnyVal {
+    extension [Self <: Override](x: Self) {
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     }
   }
   
@@ -316,20 +271,16 @@ object anon {
   }
   object To {
     
-    @scala.inline
-    def apply(from: js.Any => js.Any, to: (js.Any, CustomHelpers[js.Any]) => js.Any): To = {
+    inline def apply(from: js.Any => js.Any, to: (js.Any, CustomHelpers[js.Any]) => js.Any): To = {
       val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction2(to))
       __obj.asInstanceOf[To]
     }
     
-    @scala.inline
-    implicit class ToMutableBuilder[Self <: To] (val x: Self) extends AnyVal {
+    extension [Self <: To](x: Self) {
       
-      @scala.inline
-      def setFrom(value: js.Any => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+      inline def setFrom(value: js.Any => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTo(value: (js.Any, CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+      inline def setTo(value: (js.Any, CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
     }
   }
 }

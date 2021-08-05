@@ -15,22 +15,17 @@ trait ReadonlyCollection[K] extends StObject {
 }
 object ReadonlyCollection {
   
-  @scala.inline
-  def apply[K](has: K => Boolean, keys: () => Iterator[K], size: Double): ReadonlyCollection[K] = {
+  inline def apply[K](has: K => Boolean, keys: () => Iterator[K], size: Double): ReadonlyCollection[K] = {
     val __obj = js.Dynamic.literal(has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyCollection[K]]
   }
   
-  @scala.inline
-  implicit class ReadonlyCollectionMutableBuilder[Self <: ReadonlyCollection[?], K] (val x: Self & ReadonlyCollection[K]) extends AnyVal {
+  extension [Self <: ReadonlyCollection[?], K](x: Self & ReadonlyCollection[K]) {
     
-    @scala.inline
-    def setHas(value: K => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: K => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeys(value: () => Iterator[K]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+    inline def setKeys(value: () => Iterator[K]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

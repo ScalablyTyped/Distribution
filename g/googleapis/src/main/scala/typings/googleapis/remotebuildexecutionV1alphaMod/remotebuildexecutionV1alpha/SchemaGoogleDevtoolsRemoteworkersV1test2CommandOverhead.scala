@@ -25,25 +25,19 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverheadMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setOverhead(value: String): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
+    inline def setOverhead(value: String): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
+    inline def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
   }
 }

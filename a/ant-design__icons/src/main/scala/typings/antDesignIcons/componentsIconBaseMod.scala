@@ -46,53 +46,38 @@ object componentsIconBaseMod extends Shortcut {
   }
   object IconProps {
     
-    @scala.inline
-    def apply(icon: IconDefinition): IconProps = {
+    inline def apply(icon: IconDefinition): IconProps = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconProps]
     }
     
-    @scala.inline
-    implicit class IconPropsMutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFocusable(value: String): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: String): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+      inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IconDefinition): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconDefinition): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[SVGSVGElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+      inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+      inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
       
-      @scala.inline
-      def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
+      inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
+      inline def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -104,20 +89,16 @@ object componentsIconBaseMod extends Shortcut {
   }
   object TwoToneColorPalette {
     
-    @scala.inline
-    def apply(primaryColor: String): TwoToneColorPalette = {
+    inline def apply(primaryColor: String): TwoToneColorPalette = {
       val __obj = js.Dynamic.literal(primaryColor = primaryColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[TwoToneColorPalette]
     }
     
-    @scala.inline
-    implicit class TwoToneColorPaletteMutableBuilder[Self <: TwoToneColorPalette] (val x: Self) extends AnyVal {
+    extension [Self <: TwoToneColorPalette](x: Self) {
       
-      @scala.inline
-      def setCalculated(value: Boolean): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
+      inline def setCalculated(value: Boolean): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
+      inline def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
     }
   }
   
@@ -129,23 +110,18 @@ object componentsIconBaseMod extends Shortcut {
   }
   object TwoToneColorPaletteSetter {
     
-    @scala.inline
-    def apply(primaryColor: String): TwoToneColorPaletteSetter = {
+    inline def apply(primaryColor: String): TwoToneColorPaletteSetter = {
       val __obj = js.Dynamic.literal(primaryColor = primaryColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[TwoToneColorPaletteSetter]
     }
     
-    @scala.inline
-    implicit class TwoToneColorPaletteSetterMutableBuilder[Self <: TwoToneColorPaletteSetter] (val x: Self) extends AnyVal {
+    extension [Self <: TwoToneColorPaletteSetter](x: Self) {
       
-      @scala.inline
-      def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+      inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
+      inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
+      inline def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
     }
   }
   

@@ -21,12 +21,10 @@ object OriginalColumnGroup {
   @JSImport("ag-grid/dist/lib/main", "OriginalColumnGroup.EVENT_EXPANDABLE_CHANGED")
   @js.native
   def EVENT_EXPANDABLE_CHANGED: String = js.native
-  @scala.inline
-  def EVENT_EXPANDABLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDABLE_CHANGED")(x.asInstanceOf[js.Any])
+  inline def EVENT_EXPANDABLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDABLE_CHANGED")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "OriginalColumnGroup.EVENT_EXPANDED_CHANGED")
   @js.native
   def EVENT_EXPANDED_CHANGED: String = js.native
-  @scala.inline
-  def EVENT_EXPANDED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDED_CHANGED")(x.asInstanceOf[js.Any])
+  inline def EVENT_EXPANDED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDED_CHANGED")(x.asInstanceOf[js.Any])
 }

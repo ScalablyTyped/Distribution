@@ -25,35 +25,27 @@ trait MaintenanceWindow extends StObject {
 }
 object MaintenanceWindow {
   
-  @scala.inline
-  def apply(): MaintenanceWindow = {
+  inline def apply(): MaintenanceWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindow]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowMutableBuilder[Self <: MaintenanceWindow] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindow](x: Self) {
     
-    @scala.inline
-    def setDailyMaintenanceWindow(value: DailyMaintenanceWindow): Self = StObject.set(x, "dailyMaintenanceWindow", value.asInstanceOf[js.Any])
+    inline def setDailyMaintenanceWindow(value: DailyMaintenanceWindow): Self = StObject.set(x, "dailyMaintenanceWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyMaintenanceWindowUndefined: Self = StObject.set(x, "dailyMaintenanceWindow", js.undefined)
+    inline def setDailyMaintenanceWindowUndefined: Self = StObject.set(x, "dailyMaintenanceWindow", js.undefined)
     
-    @scala.inline
-    def setMaintenanceExclusions(
+    inline def setMaintenanceExclusions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow}
       */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[js.Any]
     ): Self = StObject.set(x, "maintenanceExclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceExclusionsUndefined: Self = StObject.set(x, "maintenanceExclusions", js.undefined)
+    inline def setMaintenanceExclusionsUndefined: Self = StObject.set(x, "maintenanceExclusions", js.undefined)
     
-    @scala.inline
-    def setRecurringWindow(value: RecurringTimeWindow): Self = StObject.set(x, "recurringWindow", value.asInstanceOf[js.Any])
+    inline def setRecurringWindow(value: RecurringTimeWindow): Self = StObject.set(x, "recurringWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurringWindowUndefined: Self = StObject.set(x, "recurringWindow", js.undefined)
+    inline def setRecurringWindowUndefined: Self = StObject.set(x, "recurringWindow", js.undefined)
   }
 }

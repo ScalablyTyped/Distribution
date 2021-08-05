@@ -21,16 +21,16 @@ object buildManifestPluginMod {
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
     ): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var buildId: js.Any = js.native
     
     /* CompleteClass */
     override def createAssets(compilation: js.Any, assets: js.Any): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var modern: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rewrites: js.Any = js.native
   }
   
@@ -41,18 +41,17 @@ object buildManifestPluginMod {
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
     ): Unit
     
-    var buildId: js.Any
+    /* private */ var buildId: js.Any
     
     def createAssets(compilation: js.Any, assets: js.Any): js.Any
     
-    var modern: js.Any
+    /* private */ var modern: js.Any
     
-    var rewrites: js.Any
+    /* private */ var rewrites: js.Any
   }
   object BuildManifestPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit,
       buildId: js.Any,
       createAssets: (js.Any, js.Any) => js.Any,
@@ -63,25 +62,19 @@ object buildManifestPluginMod {
       __obj.asInstanceOf[BuildManifestPlugin]
     }
     
-    @scala.inline
-    implicit class BuildManifestPluginMutableBuilder[Self <: BuildManifestPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: BuildManifestPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuildId(value: js.Any): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+      inline def setBuildId(value: js.Any): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateAssets(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createAssets", js.Any.fromFunction2(value))
+      inline def setCreateAssets(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createAssets", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModern(value: js.Any): Self = StObject.set(x, "modern", value.asInstanceOf[js.Any])
+      inline def setModern(value: js.Any): Self = StObject.set(x, "modern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewrites(value: js.Any): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
+      inline def setRewrites(value: js.Any): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
     }
   }
   

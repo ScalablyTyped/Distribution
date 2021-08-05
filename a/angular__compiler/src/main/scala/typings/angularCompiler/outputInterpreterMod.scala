@@ -13,6 +13,5 @@ object outputInterpreterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interpretStatements(statements: js.Array[Statement], reflector: CompileReflector): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpretStatements")(statements.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def interpretStatements(statements: js.Array[Statement], reflector: CompileReflector): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpretStatements")(statements.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
 }

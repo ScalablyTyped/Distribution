@@ -50,6 +50,6 @@ trait Legend extends StObject {
   
   var Width: Double = js.native
   
-  @JSName("Word.Legend_typekey")
+  /* private */ @JSName("Word.Legend_typekey")
   var WordDotLegend_typekey: Legend = js.native
 }

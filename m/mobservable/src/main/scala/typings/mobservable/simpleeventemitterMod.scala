@@ -38,8 +38,7 @@ object simpleeventemitterMod {
   }
   object SimpleEventEmitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emit: /* repeated */ js.Any => js.Any,
       listeners: js.Array[js.Function1[/* repeated */ js.Any, Unit]],
       on: js.Function1[/* repeated */ js.Any, Unit] => Lambda,
@@ -49,23 +48,17 @@ object simpleeventemitterMod {
       __obj.asInstanceOf[SimpleEventEmitter]
     }
     
-    @scala.inline
-    implicit class SimpleEventEmitterMutableBuilder[Self <: SimpleEventEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleEventEmitter](x: Self) {
       
-      @scala.inline
-      def setEmit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      inline def setEmit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListeners(value: js.Array[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: js.Array[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersVarargs(value: (js.Function1[/* repeated */ js.Any, Unit])*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: (js.Function1[/* repeated */ js.Any, Unit])*): Self = StObject.set(x, "listeners", js.Array(value :_*))
       
-      @scala.inline
-      def setOn(value: js.Function1[/* repeated */ js.Any, Unit] => Lambda): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+      inline def setOn(value: js.Function1[/* repeated */ js.Any, Unit] => Lambda): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnce(value: js.Function1[/* repeated */ js.Any, Unit] => Lambda): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
+      inline def setOnce(value: js.Function1[/* repeated */ js.Any, Unit] => Lambda): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
     }
   }
 }

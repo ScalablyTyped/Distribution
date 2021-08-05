@@ -10,8 +10,6 @@ object operatorsBufferCountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bufferCount[T](bufferSize: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferCount")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def bufferCount[T](bufferSize: Double, startBufferEvery: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferCount")(bufferSize.asInstanceOf[js.Any], startBufferEvery.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def bufferCount[T](bufferSize: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferCount")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def bufferCount[T](bufferSize: Double, startBufferEvery: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferCount")(bufferSize.asInstanceOf[js.Any], startBufferEvery.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

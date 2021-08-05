@@ -17,8 +17,7 @@ trait ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint extends StObject {
 }
 object ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsDeleteSelfHostedRunnerFromOrgEndpoint,
     request: ActionsDeleteSelfHostedRunnerFromOrgRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint {
     __obj.asInstanceOf[ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsDeleteSelfHostedRunnerFromOrgEndpointMutableBuilder[Self <: ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsDeleteSelfHostedRunnerFromOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsDeleteSelfHostedRunnerFromOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsDeleteSelfHostedRunnerFromOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsDeleteSelfHostedRunnerFromOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

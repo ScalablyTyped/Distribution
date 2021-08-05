@@ -16,37 +16,27 @@ trait EditorSerialization extends StObject {
 }
 object EditorSerialization {
   
-  @scala.inline
-  def apply(): EditorSerialization = {
+  inline def apply(): EditorSerialization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorSerialization]
   }
   
-  @scala.inline
-  implicit class EditorSerializationMutableBuilder[Self <: EditorSerialization] (val x: Self) extends AnyVal {
+  extension [Self <: EditorSerialization](x: Self) {
     
-    @scala.inline
-    def setCustom(value: js.Function): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: js.Function): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setEntities(value: Boolean): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: Boolean): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    inline def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+    inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
-    @scala.inline
-    def setSemantic(value: Boolean): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
+    inline def setSemantic(value: Boolean): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
+    inline def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GrantAccessResult extends StObject {
 }
 object GrantAccessResult {
   
-  @scala.inline
-  def apply(): GrantAccessResult = {
+  inline def apply(): GrantAccessResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrantAccessResult]
   }
   
-  @scala.inline
-  implicit class GrantAccessResultMutableBuilder[Self <: GrantAccessResult] (val x: Self) extends AnyVal {
+  extension [Self <: GrantAccessResult](x: Self) {
     
-    @scala.inline
-    def setTemporaryCredential(value: TemporaryCredential): Self = StObject.set(x, "TemporaryCredential", value.asInstanceOf[js.Any])
+    inline def setTemporaryCredential(value: TemporaryCredential): Self = StObject.set(x, "TemporaryCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporaryCredentialUndefined: Self = StObject.set(x, "TemporaryCredential", js.undefined)
+    inline def setTemporaryCredentialUndefined: Self = StObject.set(x, "TemporaryCredential", js.undefined)
   }
 }

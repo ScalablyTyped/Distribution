@@ -15,17 +15,14 @@ trait Rectangle
 }
 object Rectangle {
   
-  @scala.inline
-  def apply(id: String, name: String, position: Point, size: Size): Rectangle = {
+  inline def apply(id: String, name: String, position: Point, size: Size): Rectangle = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RECT")
     __obj.asInstanceOf[Rectangle]
   }
   
-  @scala.inline
-  implicit class RectangleMutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
+  extension [Self <: Rectangle](x: Self) {
     
-    @scala.inline
-    def setType(value: RECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

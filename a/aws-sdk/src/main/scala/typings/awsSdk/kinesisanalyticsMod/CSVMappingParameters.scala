@@ -18,19 +18,15 @@ trait CSVMappingParameters extends StObject {
 }
 object CSVMappingParameters {
   
-  @scala.inline
-  def apply(RecordColumnDelimiter: RecordColumnDelimiter, RecordRowDelimiter: RecordRowDelimiter): CSVMappingParameters = {
+  inline def apply(RecordColumnDelimiter: RecordColumnDelimiter, RecordRowDelimiter: RecordRowDelimiter): CSVMappingParameters = {
     val __obj = js.Dynamic.literal(RecordColumnDelimiter = RecordColumnDelimiter.asInstanceOf[js.Any], RecordRowDelimiter = RecordRowDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSVMappingParameters]
   }
   
-  @scala.inline
-  implicit class CSVMappingParametersMutableBuilder[Self <: CSVMappingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CSVMappingParameters](x: Self) {
     
-    @scala.inline
-    def setRecordColumnDelimiter(value: RecordColumnDelimiter): Self = StObject.set(x, "RecordColumnDelimiter", value.asInstanceOf[js.Any])
+    inline def setRecordColumnDelimiter(value: RecordColumnDelimiter): Self = StObject.set(x, "RecordColumnDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordRowDelimiter(value: RecordRowDelimiter): Self = StObject.set(x, "RecordRowDelimiter", value.asInstanceOf[js.Any])
+    inline def setRecordRowDelimiter(value: RecordRowDelimiter): Self = StObject.set(x, "RecordRowDelimiter", value.asInstanceOf[js.Any])
   }
 }

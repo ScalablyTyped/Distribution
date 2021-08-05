@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VppTokenState extends StObject
 object VppTokenState {
   
-  @scala.inline
-  def assignedToExternalMDM: typings.microsoftGraph.microsoftGraphStrings.assignedToExternalMDM = "assignedToExternalMDM".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.assignedToExternalMDM]
+  inline def assignedToExternalMDM: typings.microsoftGraph.microsoftGraphStrings.assignedToExternalMDM = "assignedToExternalMDM".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.assignedToExternalMDM]
   
-  @scala.inline
-  def expired: typings.microsoftGraph.microsoftGraphStrings.expired = "expired".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.expired]
+  inline def expired: typings.microsoftGraph.microsoftGraphStrings.expired = "expired".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.expired]
   
-  @scala.inline
-  def invalid: typings.microsoftGraph.microsoftGraphStrings.invalid = "invalid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.invalid]
+  inline def invalid: typings.microsoftGraph.microsoftGraphStrings.invalid = "invalid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.invalid]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def valid: typings.microsoftGraph.microsoftGraphStrings.valid = "valid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.valid]
+  inline def valid: typings.microsoftGraph.microsoftGraphStrings.valid = "valid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.valid]
 }

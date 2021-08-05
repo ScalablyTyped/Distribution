@@ -18,10 +18,8 @@ object TSThisType {
   @js.native
   def apply(): TSThisType = js.native
   
-  @scala.inline
-  implicit class TSThisTypeMutableBuilder[Self <: TSThisType] (val x: Self) extends AnyVal {
+  extension [Self <: TSThisType](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSThisType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSThisType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

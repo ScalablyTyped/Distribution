@@ -12,9 +12,7 @@ object getAltAxisMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default_x(axis: x): x | y = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axis.asInstanceOf[js.Any]).asInstanceOf[x | y]
+  inline def default_x(axis: x): x | y = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axis.asInstanceOf[js.Any]).asInstanceOf[x | y]
   
-  @scala.inline
-  def default_y(axis: y): x | y = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axis.asInstanceOf[js.Any]).asInstanceOf[x | y]
+  inline def default_y(axis: y): x | y = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axis.asInstanceOf[js.Any]).asInstanceOf[x | y]
 }

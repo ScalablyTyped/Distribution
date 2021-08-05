@@ -13,22 +13,17 @@ trait GetSpaceParameters extends StObject {
 }
 object GetSpaceParameters {
   
-  @scala.inline
-  def apply(spaceId: String): GetSpaceParameters = {
+  inline def apply(spaceId: String): GetSpaceParameters = {
     val __obj = js.Dynamic.literal(spaceId = spaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSpaceParameters]
   }
   
-  @scala.inline
-  implicit class GetSpaceParametersMutableBuilder[Self <: GetSpaceParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GetSpaceParameters](x: Self) {
     
-    @scala.inline
-    def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
+    inline def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
   }
 }

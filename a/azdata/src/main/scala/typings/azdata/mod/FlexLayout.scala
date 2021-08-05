@@ -59,67 +59,47 @@ trait FlexLayout extends StObject {
 }
 object FlexLayout {
   
-  @scala.inline
-  def apply(): FlexLayout = {
+  inline def apply(): FlexLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexLayout]
   }
   
-  @scala.inline
-  implicit class FlexLayoutMutableBuilder[Self <: FlexLayout] (val x: Self) extends AnyVal {
+  extension [Self <: FlexLayout](x: Self) {
     
-    @scala.inline
-    def setAlignContent(value: AlignContentType): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    inline def setAlignContent(value: AlignContentType): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+    inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
-    @scala.inline
-    def setAlignItems(value: AlignItemsType): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: AlignItemsType): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+    inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    @scala.inline
-    def setFlexFlow(value: String): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
+    inline def setFlexFlow(value: String): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
+    inline def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
     
-    @scala.inline
-    def setFlexWrap(value: FlexWrapType): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+    inline def setFlexWrap(value: FlexWrapType): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+    inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setJustifyContent(value: JustifyContentType): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: JustifyContentType): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+    inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
-    @scala.inline
-    def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTextAlign(value: TextAlignType): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: TextAlignType): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

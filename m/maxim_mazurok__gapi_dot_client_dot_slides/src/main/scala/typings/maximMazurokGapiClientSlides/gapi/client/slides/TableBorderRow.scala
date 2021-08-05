@@ -11,22 +11,17 @@ trait TableBorderRow extends StObject {
 }
 object TableBorderRow {
   
-  @scala.inline
-  def apply(): TableBorderRow = {
+  inline def apply(): TableBorderRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableBorderRow]
   }
   
-  @scala.inline
-  implicit class TableBorderRowMutableBuilder[Self <: TableBorderRow] (val x: Self) extends AnyVal {
+  extension [Self <: TableBorderRow](x: Self) {
     
-    @scala.inline
-    def setTableBorderCells(value: js.Array[TableBorderCell]): Self = StObject.set(x, "tableBorderCells", value.asInstanceOf[js.Any])
+    inline def setTableBorderCells(value: js.Array[TableBorderCell]): Self = StObject.set(x, "tableBorderCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableBorderCellsUndefined: Self = StObject.set(x, "tableBorderCells", js.undefined)
+    inline def setTableBorderCellsUndefined: Self = StObject.set(x, "tableBorderCells", js.undefined)
     
-    @scala.inline
-    def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value :_*))
+    inline def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value :_*))
   }
 }

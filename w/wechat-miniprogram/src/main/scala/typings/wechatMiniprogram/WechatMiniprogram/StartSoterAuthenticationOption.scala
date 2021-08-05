@@ -34,46 +34,33 @@ trait StartSoterAuthenticationOption extends StObject {
 }
 object StartSoterAuthenticationOption {
   
-  @scala.inline
-  def apply(challenge: String, requestAuthModes: js.Array[fingerPrint | facial | speech]): StartSoterAuthenticationOption = {
+  inline def apply(challenge: String, requestAuthModes: js.Array[fingerPrint | facial | speech]): StartSoterAuthenticationOption = {
     val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], requestAuthModes = requestAuthModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSoterAuthenticationOption]
   }
   
-  @scala.inline
-  implicit class StartSoterAuthenticationOptionMutableBuilder[Self <: StartSoterAuthenticationOption] (val x: Self) extends AnyVal {
+  extension [Self <: StartSoterAuthenticationOption](x: Self) {
     
-    @scala.inline
-    def setAuthContent(value: String): Self = StObject.set(x, "authContent", value.asInstanceOf[js.Any])
+    inline def setAuthContent(value: String): Self = StObject.set(x, "authContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthContentUndefined: Self = StObject.set(x, "authContent", js.undefined)
+    inline def setAuthContentUndefined: Self = StObject.set(x, "authContent", js.undefined)
     
-    @scala.inline
-    def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+    inline def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setRequestAuthModes(value: js.Array[fingerPrint | facial | speech]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
+    inline def setRequestAuthModes(value: js.Array[fingerPrint | facial | speech]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAuthModesVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
+    inline def setRequestAuthModesVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* result */ StartSoterAuthenticationSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ StartSoterAuthenticationSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

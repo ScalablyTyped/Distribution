@@ -18,19 +18,15 @@ trait ContactCardDelayedDataLoader extends StObject {
 }
 object ContactCardDelayedDataLoader {
   
-  @scala.inline
-  def apply(close: () => Unit, setData: Contact => Unit): ContactCardDelayedDataLoader = {
+  inline def apply(close: () => Unit, setData: Contact => Unit): ContactCardDelayedDataLoader = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), setData = js.Any.fromFunction1(setData))
     __obj.asInstanceOf[ContactCardDelayedDataLoader]
   }
   
-  @scala.inline
-  implicit class ContactCardDelayedDataLoaderMutableBuilder[Self <: ContactCardDelayedDataLoader] (val x: Self) extends AnyVal {
+  extension [Self <: ContactCardDelayedDataLoader](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetData(value: Contact => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: Contact => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

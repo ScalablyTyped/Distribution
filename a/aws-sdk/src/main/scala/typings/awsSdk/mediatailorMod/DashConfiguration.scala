@@ -23,31 +23,23 @@ trait DashConfiguration extends StObject {
 }
 object DashConfiguration {
   
-  @scala.inline
-  def apply(): DashConfiguration = {
+  inline def apply(): DashConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashConfiguration]
   }
   
-  @scala.inline
-  implicit class DashConfigurationMutableBuilder[Self <: DashConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DashConfiguration](x: Self) {
     
-    @scala.inline
-    def setManifestEndpointPrefix(value: string): Self = StObject.set(x, "ManifestEndpointPrefix", value.asInstanceOf[js.Any])
+    inline def setManifestEndpointPrefix(value: string): Self = StObject.set(x, "ManifestEndpointPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestEndpointPrefixUndefined: Self = StObject.set(x, "ManifestEndpointPrefix", js.undefined)
+    inline def setManifestEndpointPrefixUndefined: Self = StObject.set(x, "ManifestEndpointPrefix", js.undefined)
     
-    @scala.inline
-    def setMpdLocation(value: string): Self = StObject.set(x, "MpdLocation", value.asInstanceOf[js.Any])
+    inline def setMpdLocation(value: string): Self = StObject.set(x, "MpdLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpdLocationUndefined: Self = StObject.set(x, "MpdLocation", js.undefined)
+    inline def setMpdLocationUndefined: Self = StObject.set(x, "MpdLocation", js.undefined)
     
-    @scala.inline
-    def setOriginManifestType(value: OriginManifestType): Self = StObject.set(x, "OriginManifestType", value.asInstanceOf[js.Any])
+    inline def setOriginManifestType(value: OriginManifestType): Self = StObject.set(x, "OriginManifestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginManifestTypeUndefined: Self = StObject.set(x, "OriginManifestType", js.undefined)
+    inline def setOriginManifestTypeUndefined: Self = StObject.set(x, "OriginManifestType", js.undefined)
   }
 }

@@ -19,19 +19,15 @@ trait MessageChannel extends StObject {
 }
 object MessageChannel {
   
-  @scala.inline
-  def apply(port1: MessagePort, port2: MessagePort): MessageChannel = {
+  inline def apply(port1: MessagePort, port2: MessagePort): MessageChannel = {
     val __obj = js.Dynamic.literal(port1 = port1.asInstanceOf[js.Any], port2 = port2.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageChannel]
   }
   
-  @scala.inline
-  implicit class MessageChannelMutableBuilder[Self <: MessageChannel] (val x: Self) extends AnyVal {
+  extension [Self <: MessageChannel](x: Self) {
     
-    @scala.inline
-    def setPort1(value: MessagePort): Self = StObject.set(x, "port1", value.asInstanceOf[js.Any])
+    inline def setPort1(value: MessagePort): Self = StObject.set(x, "port1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort2(value: MessagePort): Self = StObject.set(x, "port2", value.asInstanceOf[js.Any])
+    inline def setPort2(value: MessagePort): Self = StObject.set(x, "port2", value.asInstanceOf[js.Any])
   }
 }

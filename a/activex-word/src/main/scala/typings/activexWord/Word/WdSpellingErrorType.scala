@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSpellingErrorType extends StObject
 object WdSpellingErrorType {
   
-  @scala.inline
-  def wdSpellingCapitalization: `2` = 2.asInstanceOf[`2`]
+  inline def wdSpellingCapitalization: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdSpellingCorrect: `0` = 0.asInstanceOf[`0`]
+  inline def wdSpellingCorrect: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdSpellingNotInDictionary: `1` = 1.asInstanceOf[`1`]
+  inline def wdSpellingNotInDictionary: `1` = 1.asInstanceOf[`1`]
 }

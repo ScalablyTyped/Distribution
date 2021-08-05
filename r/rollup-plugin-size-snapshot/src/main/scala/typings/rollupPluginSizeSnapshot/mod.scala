@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sizeSnapshot(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeSnapshot")().asInstanceOf[Plugin]
-  @scala.inline
-  def sizeSnapshot(options: PluginSizeSnapshotOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeSnapshot")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def sizeSnapshot(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeSnapshot")().asInstanceOf[Plugin]
+  inline def sizeSnapshot(options: PluginSizeSnapshotOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeSnapshot")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   trait PluginSizeSnapshotOptions extends StObject {
     
@@ -28,38 +26,28 @@ object mod {
   }
   object PluginSizeSnapshotOptions {
     
-    @scala.inline
-    def apply(): PluginSizeSnapshotOptions = {
+    inline def apply(): PluginSizeSnapshotOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginSizeSnapshotOptions]
     }
     
-    @scala.inline
-    implicit class PluginSizeSnapshotOptionsMutableBuilder[Self <: PluginSizeSnapshotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginSizeSnapshotOptions](x: Self) {
       
-      @scala.inline
-      def setMatchSnapshot(value: Boolean): Self = StObject.set(x, "matchSnapshot", value.asInstanceOf[js.Any])
+      inline def setMatchSnapshot(value: Boolean): Self = StObject.set(x, "matchSnapshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchSnapshotUndefined: Self = StObject.set(x, "matchSnapshot", js.undefined)
+      inline def setMatchSnapshotUndefined: Self = StObject.set(x, "matchSnapshot", js.undefined)
       
-      @scala.inline
-      def setPrintInfo(value: Boolean): Self = StObject.set(x, "printInfo", value.asInstanceOf[js.Any])
+      inline def setPrintInfo(value: Boolean): Self = StObject.set(x, "printInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintInfoUndefined: Self = StObject.set(x, "printInfo", js.undefined)
+      inline def setPrintInfoUndefined: Self = StObject.set(x, "printInfo", js.undefined)
       
-      @scala.inline
-      def setSnapshotPath(value: String): Self = StObject.set(x, "snapshotPath", value.asInstanceOf[js.Any])
+      inline def setSnapshotPath(value: String): Self = StObject.set(x, "snapshotPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotPathUndefined: Self = StObject.set(x, "snapshotPath", js.undefined)
+      inline def setSnapshotPathUndefined: Self = StObject.set(x, "snapshotPath", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

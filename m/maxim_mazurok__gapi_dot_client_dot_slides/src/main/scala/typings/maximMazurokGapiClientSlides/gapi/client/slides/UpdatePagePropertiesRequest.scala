@@ -21,31 +21,23 @@ trait UpdatePagePropertiesRequest extends StObject {
 }
 object UpdatePagePropertiesRequest {
   
-  @scala.inline
-  def apply(): UpdatePagePropertiesRequest = {
+  inline def apply(): UpdatePagePropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatePagePropertiesRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePagePropertiesRequestMutableBuilder[Self <: UpdatePagePropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePagePropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
+    inline def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
+    inline def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
   }
 }

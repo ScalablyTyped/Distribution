@@ -13,19 +13,15 @@ trait JourneyPushMessage extends StObject {
 }
 object JourneyPushMessage {
   
-  @scala.inline
-  def apply(): JourneyPushMessage = {
+  inline def apply(): JourneyPushMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JourneyPushMessage]
   }
   
-  @scala.inline
-  implicit class JourneyPushMessageMutableBuilder[Self <: JourneyPushMessage] (val x: Self) extends AnyVal {
+  extension [Self <: JourneyPushMessage](x: Self) {
     
-    @scala.inline
-    def setTimeToLive(value: string): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
+    inline def setTimeToLive(value: string): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
+    inline def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
   }
 }

@@ -8,6 +8,5 @@ object zrenderStrings {
   
   @js.native
   sealed trait linear extends StObject
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
+  inline def linear: linear = "linear".asInstanceOf[linear]
 }

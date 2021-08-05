@@ -12,6 +12,5 @@ object renderBorderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(x: Double, y: Double, node: DOMNode[NodeName], output: typings.ink.outputMod.default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], node.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(x: Double, y: Double, node: DOMNode[NodeName], output: typings.ink.outputMod.default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], node.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -24,61 +24,43 @@ trait ConnectorLineColor extends StObject {
 }
 object ConnectorLineColor {
   
-  @scala.inline
-  def apply(): ConnectorLineColor = {
+  inline def apply(): ConnectorLineColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorLineColor]
   }
   
-  @scala.inline
-  implicit class ConnectorLineColorMutableBuilder[Self <: ConnectorLineColor] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorLineColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setConnectorLineColor(value: String): Self = StObject.set(x, "connectorLineColor", value.asInstanceOf[js.Any])
+    inline def setConnectorLineColor(value: String): Self = StObject.set(x, "connectorLineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorLineColorUndefined: Self = StObject.set(x, "connectorLineColor", js.undefined)
+    inline def setConnectorLineColorUndefined: Self = StObject.set(x, "connectorLineColor", js.undefined)
     
-    @scala.inline
-    def setDisabledTextColor(value: String): Self = StObject.set(x, "disabledTextColor", value.asInstanceOf[js.Any])
+    inline def setDisabledTextColor(value: String): Self = StObject.set(x, "disabledTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledTextColorUndefined: Self = StObject.set(x, "disabledTextColor", js.undefined)
+    inline def setDisabledTextColorUndefined: Self = StObject.set(x, "disabledTextColor", js.undefined)
     
-    @scala.inline
-    def setHoverBackgroundColor(value: String): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: String): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverBackgroundColorUndefined: Self = StObject.set(x, "hoverBackgroundColor", js.undefined)
+    inline def setHoverBackgroundColorUndefined: Self = StObject.set(x, "hoverBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setHoveredIconColor(value: String): Self = StObject.set(x, "hoveredIconColor", value.asInstanceOf[js.Any])
+    inline def setHoveredIconColor(value: String): Self = StObject.set(x, "hoveredIconColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoveredIconColorUndefined: Self = StObject.set(x, "hoveredIconColor", js.undefined)
+    inline def setHoveredIconColorUndefined: Self = StObject.set(x, "hoveredIconColor", js.undefined)
     
-    @scala.inline
-    def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
+    inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
+    inline def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
-    @scala.inline
-    def setInactiveIconColor(value: String): Self = StObject.set(x, "inactiveIconColor", value.asInstanceOf[js.Any])
+    inline def setInactiveIconColor(value: String): Self = StObject.set(x, "inactiveIconColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveIconColorUndefined: Self = StObject.set(x, "inactiveIconColor", js.undefined)
+    inline def setInactiveIconColorUndefined: Self = StObject.set(x, "inactiveIconColor", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

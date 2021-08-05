@@ -14,25 +14,19 @@ trait OnSeekData extends StObject {
 }
 object OnSeekData {
   
-  @scala.inline
-  def apply(currentTime: Double, seekTime: Double): OnSeekData = {
+  inline def apply(currentTime: Double, seekTime: Double): OnSeekData = {
     val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], seekTime = seekTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSeekData]
   }
   
-  @scala.inline
-  implicit class OnSeekDataMutableBuilder[Self <: OnSeekData] (val x: Self) extends AnyVal {
+  extension [Self <: OnSeekData](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
+    inline def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

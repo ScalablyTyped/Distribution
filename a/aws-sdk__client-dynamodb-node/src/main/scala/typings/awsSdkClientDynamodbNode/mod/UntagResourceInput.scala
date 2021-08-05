@@ -10,8 +10,7 @@ trait UntagResourceInput
      with typings.awsSdkClientDynamodbNode.typesUntagResourceInputMod.UntagResourceInput
 object UntagResourceInput {
   
-  @scala.inline
-  def apply(ResourceArn: String, TagKeys: js.Array[String] | Iterable[String]): UntagResourceInput = {
+  inline def apply(ResourceArn: String, TagKeys: js.Array[String] | Iterable[String]): UntagResourceInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceInput]
   }

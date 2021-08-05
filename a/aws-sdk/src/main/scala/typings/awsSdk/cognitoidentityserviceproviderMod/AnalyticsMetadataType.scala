@@ -13,19 +13,15 @@ trait AnalyticsMetadataType extends StObject {
 }
 object AnalyticsMetadataType {
   
-  @scala.inline
-  def apply(): AnalyticsMetadataType = {
+  inline def apply(): AnalyticsMetadataType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsMetadataType]
   }
   
-  @scala.inline
-  implicit class AnalyticsMetadataTypeMutableBuilder[Self <: AnalyticsMetadataType] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsMetadataType](x: Self) {
     
-    @scala.inline
-    def setAnalyticsEndpointId(value: StringType): Self = StObject.set(x, "AnalyticsEndpointId", value.asInstanceOf[js.Any])
+    inline def setAnalyticsEndpointId(value: StringType): Self = StObject.set(x, "AnalyticsEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsEndpointIdUndefined: Self = StObject.set(x, "AnalyticsEndpointId", js.undefined)
+    inline def setAnalyticsEndpointIdUndefined: Self = StObject.set(x, "AnalyticsEndpointId", js.undefined)
   }
 }

@@ -129,8 +129,7 @@ object templateAstMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromBoundProperty(prop: BoundElementProperty): BoundElementPropertyAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundElementPropertyAst]
+    inline def fromBoundProperty(prop: BoundElementProperty): BoundElementPropertyAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundElementPropertyAst]
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst")
@@ -204,17 +203,12 @@ object templateAstMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def calcFullName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def calcFullName(name: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def calcFullName(name: String, target: String, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def calcFullName(name: String, target: Null, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def calcFullName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def calcFullName(name: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def calcFullName(name: String, target: String, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def calcFullName(name: String, target: Null, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def fromParsedEvent(event: ParsedEvent): BoundEventAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEventAst]
+    inline def fromParsedEvent(event: ParsedEvent): BoundEventAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEventAst]
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundTextAst")
@@ -677,14 +671,11 @@ object templateAstMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromParsedVariable(v: ParsedVariable): VariableAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedVariable")(v.asInstanceOf[js.Any]).asInstanceOf[VariableAst]
+    inline def fromParsedVariable(v: ParsedVariable): VariableAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedVariable")(v.asInstanceOf[js.Any]).asInstanceOf[VariableAst]
   }
   
-  @scala.inline
-  def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("templateVisitAll")(visitor.asInstanceOf[js.Any], asts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst], context: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("templateVisitAll")(visitor.asInstanceOf[js.Any], asts.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("templateVisitAll")(visitor.asInstanceOf[js.Any], asts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst], context: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("templateVisitAll")(visitor.asInstanceOf[js.Any], asts.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.angularCompiler.angularCompilerNumbers.`0`
@@ -696,20 +687,15 @@ object templateAstMod {
   trait PropertyBindingType extends StObject
   object PropertyBindingType {
     
-    @scala.inline
-    def Animation: `4` = 4.asInstanceOf[`4`]
+    inline def Animation: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Attribute: `1` = 1.asInstanceOf[`1`]
+    inline def Attribute: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Class: `2` = 2.asInstanceOf[`2`]
+    inline def Class: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Property: `0` = 0.asInstanceOf[`0`]
+    inline def Property: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Style: `3` = 3.asInstanceOf[`3`]
+    inline def Style: `3` = 3.asInstanceOf[`3`]
   }
   
   trait QueryMatch extends StObject {
@@ -720,20 +706,16 @@ object templateAstMod {
   }
   object QueryMatch {
     
-    @scala.inline
-    def apply(queryId: Double, value: CompileTokenMetadata): QueryMatch = {
+    inline def apply(queryId: Double, value: CompileTokenMetadata): QueryMatch = {
       val __obj = js.Dynamic.literal(queryId = queryId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryMatch]
     }
     
-    @scala.inline
-    implicit class QueryMatchMutableBuilder[Self <: QueryMatch] (val x: Self) extends AnyVal {
+    extension [Self <: QueryMatch](x: Self) {
       
-      @scala.inline
-      def setQueryId(value: Double): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
+      inline def setQueryId(value: Double): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: CompileTokenMetadata): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: CompileTokenMetadata): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -751,20 +733,16 @@ object templateAstMod {
   }
   object TemplateAst {
     
-    @scala.inline
-    def apply(sourceSpan: ParseSourceSpan, visit: (TemplateAstVisitor, js.Any) => js.Any): TemplateAst = {
+    inline def apply(sourceSpan: ParseSourceSpan, visit: (TemplateAstVisitor, js.Any) => js.Any): TemplateAst = {
       val __obj = js.Dynamic.literal(sourceSpan = sourceSpan.asInstanceOf[js.Any], visit = js.Any.fromFunction2(visit))
       __obj.asInstanceOf[TemplateAst]
     }
     
-    @scala.inline
-    implicit class TemplateAstMutableBuilder[Self <: TemplateAst] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateAst](x: Self) {
       
-      @scala.inline
-      def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+      inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisit(value: (TemplateAstVisitor, js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (TemplateAstVisitor, js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     }
   }
   
@@ -800,8 +778,7 @@ object templateAstMod {
   }
   object TemplateAstVisitor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       visitAttr: (AttrAst, js.Any) => js.Any,
       visitBoundText: (BoundTextAst, js.Any) => js.Any,
       visitDirective: (DirectiveAst, js.Any) => js.Any,
@@ -819,50 +796,35 @@ object templateAstMod {
       __obj.asInstanceOf[TemplateAstVisitor]
     }
     
-    @scala.inline
-    implicit class TemplateAstVisitorMutableBuilder[Self <: TemplateAstVisitor] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateAstVisitor](x: Self) {
       
-      @scala.inline
-      def setVisit(value: (/* ast */ TemplateAst, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (/* ast */ TemplateAst, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitAttr(value: (AttrAst, js.Any) => js.Any): Self = StObject.set(x, "visitAttr", js.Any.fromFunction2(value))
+      inline def setVisitAttr(value: (AttrAst, js.Any) => js.Any): Self = StObject.set(x, "visitAttr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitBoundText(value: (BoundTextAst, js.Any) => js.Any): Self = StObject.set(x, "visitBoundText", js.Any.fromFunction2(value))
+      inline def setVisitBoundText(value: (BoundTextAst, js.Any) => js.Any): Self = StObject.set(x, "visitBoundText", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitDirective(value: (DirectiveAst, js.Any) => js.Any): Self = StObject.set(x, "visitDirective", js.Any.fromFunction2(value))
+      inline def setVisitDirective(value: (DirectiveAst, js.Any) => js.Any): Self = StObject.set(x, "visitDirective", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitDirectiveProperty(value: (BoundDirectivePropertyAst, js.Any) => js.Any): Self = StObject.set(x, "visitDirectiveProperty", js.Any.fromFunction2(value))
+      inline def setVisitDirectiveProperty(value: (BoundDirectivePropertyAst, js.Any) => js.Any): Self = StObject.set(x, "visitDirectiveProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitElement(value: (ElementAst, js.Any) => js.Any): Self = StObject.set(x, "visitElement", js.Any.fromFunction2(value))
+      inline def setVisitElement(value: (ElementAst, js.Any) => js.Any): Self = StObject.set(x, "visitElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitElementProperty(value: (BoundElementPropertyAst, js.Any) => js.Any): Self = StObject.set(x, "visitElementProperty", js.Any.fromFunction2(value))
+      inline def setVisitElementProperty(value: (BoundElementPropertyAst, js.Any) => js.Any): Self = StObject.set(x, "visitElementProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitEmbeddedTemplate(value: (EmbeddedTemplateAst, js.Any) => js.Any): Self = StObject.set(x, "visitEmbeddedTemplate", js.Any.fromFunction2(value))
+      inline def setVisitEmbeddedTemplate(value: (EmbeddedTemplateAst, js.Any) => js.Any): Self = StObject.set(x, "visitEmbeddedTemplate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitEvent(value: (BoundEventAst, js.Any) => js.Any): Self = StObject.set(x, "visitEvent", js.Any.fromFunction2(value))
+      inline def setVisitEvent(value: (BoundEventAst, js.Any) => js.Any): Self = StObject.set(x, "visitEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitNgContent(value: (NgContentAst, js.Any) => js.Any): Self = StObject.set(x, "visitNgContent", js.Any.fromFunction2(value))
+      inline def setVisitNgContent(value: (NgContentAst, js.Any) => js.Any): Self = StObject.set(x, "visitNgContent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitReference(value: (ReferenceAst, js.Any) => js.Any): Self = StObject.set(x, "visitReference", js.Any.fromFunction2(value))
+      inline def setVisitReference(value: (ReferenceAst, js.Any) => js.Any): Self = StObject.set(x, "visitReference", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitText(value: (TextAst, js.Any) => js.Any): Self = StObject.set(x, "visitText", js.Any.fromFunction2(value))
+      inline def setVisitText(value: (TextAst, js.Any) => js.Any): Self = StObject.set(x, "visitText", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
+      inline def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
       
-      @scala.inline
-      def setVisitVariable(value: (VariableAst, js.Any) => js.Any): Self = StObject.set(x, "visitVariable", js.Any.fromFunction2(value))
+      inline def setVisitVariable(value: (VariableAst, js.Any) => js.Any): Self = StObject.set(x, "visitVariable", js.Any.fromFunction2(value))
     }
   }
 }

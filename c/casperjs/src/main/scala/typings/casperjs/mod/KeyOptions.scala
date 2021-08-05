@@ -14,31 +14,23 @@ trait KeyOptions extends StObject {
 }
 object KeyOptions {
   
-  @scala.inline
-  def apply(): KeyOptions = {
+  inline def apply(): KeyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyOptions]
   }
   
-  @scala.inline
-  implicit class KeyOptionsMutableBuilder[Self <: KeyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KeyOptions](x: Self) {
     
-    @scala.inline
-    def setKeepFocus(value: Boolean): Self = StObject.set(x, "keepFocus", value.asInstanceOf[js.Any])
+    inline def setKeepFocus(value: Boolean): Self = StObject.set(x, "keepFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepFocusUndefined: Self = StObject.set(x, "keepFocus", js.undefined)
+    inline def setKeepFocusUndefined: Self = StObject.set(x, "keepFocus", js.undefined)
     
-    @scala.inline
-    def setModifiers(value: String): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: String): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    @scala.inline
-    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
   }
 }

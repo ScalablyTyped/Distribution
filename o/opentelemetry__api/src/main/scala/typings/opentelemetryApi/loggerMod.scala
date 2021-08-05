@@ -32,26 +32,20 @@ object loggerMod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(debug: LogFunction, error: LogFunction, info: LogFunction, warn: LogFunction): Logger = {
+    inline def apply(debug: LogFunction, error: LogFunction, info: LogFunction, warn: LogFunction): Logger = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: LogFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: LogFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: LogFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: LogFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: LogFunction): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: LogFunction): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: LogFunction): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: LogFunction): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
 }

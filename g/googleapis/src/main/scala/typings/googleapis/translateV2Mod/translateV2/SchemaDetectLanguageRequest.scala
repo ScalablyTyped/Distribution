@@ -17,22 +17,17 @@ trait SchemaDetectLanguageRequest extends StObject {
 }
 object SchemaDetectLanguageRequest {
   
-  @scala.inline
-  def apply(): SchemaDetectLanguageRequest = {
+  inline def apply(): SchemaDetectLanguageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDetectLanguageRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDetectLanguageRequestMutableBuilder[Self <: SchemaDetectLanguageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDetectLanguageRequest](x: Self) {
     
-    @scala.inline
-    def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
+    inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
   }
 }

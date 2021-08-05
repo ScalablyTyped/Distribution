@@ -14,17 +14,14 @@ object Global {
   }
   object GlobalInstance {
     
-    @scala.inline
-    def apply(addSidebarContentPanel: ContentPanelDescriptor => js.Promise[ContentPanelView]): GlobalInstance = {
+    inline def apply(addSidebarContentPanel: ContentPanelDescriptor => js.Promise[ContentPanelView]): GlobalInstance = {
       val __obj = js.Dynamic.literal(addSidebarContentPanel = js.Any.fromFunction1(addSidebarContentPanel))
       __obj.asInstanceOf[GlobalInstance]
     }
     
-    @scala.inline
-    implicit class GlobalInstanceMutableBuilder[Self <: GlobalInstance] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalInstance](x: Self) {
       
-      @scala.inline
-      def setAddSidebarContentPanel(value: ContentPanelDescriptor => js.Promise[ContentPanelView]): Self = StObject.set(x, "addSidebarContentPanel", js.Any.fromFunction1(value))
+      inline def setAddSidebarContentPanel(value: ContentPanelDescriptor => js.Promise[ContentPanelView]): Self = StObject.set(x, "addSidebarContentPanel", js.Any.fromFunction1(value))
     }
   }
 }

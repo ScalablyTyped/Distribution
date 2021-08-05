@@ -11,6 +11,5 @@ object wonkaOperatorTakeWhileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def takeWhile[A](f: js.Function1[/* x */ A, Boolean]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeWhile")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def takeWhile[A](f: js.Function1[/* x */ A, Boolean]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeWhile")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

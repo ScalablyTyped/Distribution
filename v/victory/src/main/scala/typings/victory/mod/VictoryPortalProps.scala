@@ -20,25 +20,19 @@ trait VictoryPortalProps extends StObject {
 }
 object VictoryPortalProps {
   
-  @scala.inline
-  def apply(): VictoryPortalProps = {
+  inline def apply(): VictoryPortalProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryPortalProps]
   }
   
-  @scala.inline
-  implicit class VictoryPortalPropsMutableBuilder[Self <: VictoryPortalProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryPortalProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+    inline def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
+    inline def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
   }
 }

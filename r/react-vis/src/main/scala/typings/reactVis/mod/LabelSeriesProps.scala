@@ -23,49 +23,35 @@ trait LabelSeriesProps
 }
 object LabelSeriesProps {
   
-  @scala.inline
-  def apply(): LabelSeriesProps = {
+  inline def apply(): LabelSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelSeriesProps]
   }
   
-  @scala.inline
-  implicit class LabelSeriesPropsMutableBuilder[Self <: LabelSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: LabelSeriesProps](x: Self) {
     
-    @scala.inline
-    def setAllowOffsetToBeReversed(value: Boolean): Self = StObject.set(x, "allowOffsetToBeReversed", value.asInstanceOf[js.Any])
+    inline def setAllowOffsetToBeReversed(value: Boolean): Self = StObject.set(x, "allowOffsetToBeReversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowOffsetToBeReversedUndefined: Self = StObject.set(x, "allowOffsetToBeReversed", js.undefined)
+    inline def setAllowOffsetToBeReversedUndefined: Self = StObject.set(x, "allowOffsetToBeReversed", js.undefined)
     
-    @scala.inline
-    def setLabelAnchorX(value: String): Self = StObject.set(x, "labelAnchorX", value.asInstanceOf[js.Any])
+    inline def setLabelAnchorX(value: String): Self = StObject.set(x, "labelAnchorX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAnchorXUndefined: Self = StObject.set(x, "labelAnchorX", js.undefined)
+    inline def setLabelAnchorXUndefined: Self = StObject.set(x, "labelAnchorX", js.undefined)
     
-    @scala.inline
-    def setLabelAnchorY(value: String): Self = StObject.set(x, "labelAnchorY", value.asInstanceOf[js.Any])
+    inline def setLabelAnchorY(value: String): Self = StObject.set(x, "labelAnchorY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAnchorYUndefined: Self = StObject.set(x, "labelAnchorY", js.undefined)
+    inline def setLabelAnchorYUndefined: Self = StObject.set(x, "labelAnchorY", js.undefined)
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
   }
 }

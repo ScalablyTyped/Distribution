@@ -10,19 +10,15 @@ trait NavigatorSeriesMarkerOptions extends StObject {
 }
 object NavigatorSeriesMarkerOptions {
   
-  @scala.inline
-  def apply(): NavigatorSeriesMarkerOptions = {
+  inline def apply(): NavigatorSeriesMarkerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorSeriesMarkerOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorSeriesMarkerOptionsMutableBuilder[Self <: NavigatorSeriesMarkerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorSeriesMarkerOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

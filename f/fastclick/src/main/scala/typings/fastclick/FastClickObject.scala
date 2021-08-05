@@ -42,8 +42,7 @@ trait FastClickObject extends StObject {
 }
 object FastClickObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     determineEventType: js.Any => String,
     findControl: js.Any => js.Any,
@@ -65,55 +64,38 @@ object FastClickObject {
     __obj.asInstanceOf[FastClickObject]
   }
   
-  @scala.inline
-  implicit class FastClickObjectMutableBuilder[Self <: FastClickObject] (val x: Self) extends AnyVal {
+  extension [Self <: FastClickObject](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetermineEventType(value: js.Any => String): Self = StObject.set(x, "determineEventType", js.Any.fromFunction1(value))
+    inline def setDetermineEventType(value: js.Any => String): Self = StObject.set(x, "determineEventType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindControl(value: js.Any => js.Any): Self = StObject.set(x, "findControl", js.Any.fromFunction1(value))
+    inline def setFindControl(value: js.Any => js.Any): Self = StObject.set(x, "findControl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFocus(value: js.Any => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+    inline def setFocus(value: js.Any => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTargetElementFromEventTarget(value: EventTarget => js.Any): Self = StObject.set(x, "getTargetElementFromEventTarget", js.Any.fromFunction1(value))
+    inline def setGetTargetElementFromEventTarget(value: EventTarget => js.Any): Self = StObject.set(x, "getTargetElementFromEventTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLastTouchIdentifier(value: Double): Self = StObject.set(x, "lastTouchIdentifier", value.asInstanceOf[js.Any])
+    inline def setLastTouchIdentifier(value: Double): Self = StObject.set(x, "lastTouchIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: Element): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Element): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsClick(value: js.Any => Boolean): Self = StObject.set(x, "needsClick", js.Any.fromFunction1(value))
+    inline def setNeedsClick(value: js.Any => Boolean): Self = StObject.set(x, "needsClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNeedsFocus(value: js.Any => Boolean): Self = StObject.set(x, "needsFocus", js.Any.fromFunction1(value))
+    inline def setNeedsFocus(value: js.Any => Boolean): Self = StObject.set(x, "needsFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTapDelay(value: Double): Self = StObject.set(x, "tapDelay", value.asInstanceOf[js.Any])
+    inline def setTapDelay(value: Double): Self = StObject.set(x, "tapDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchBoundary(value: Double): Self = StObject.set(x, "touchBoundary", value.asInstanceOf[js.Any])
+    inline def setTouchBoundary(value: Double): Self = StObject.set(x, "touchBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchStartX(value: Double): Self = StObject.set(x, "touchStartX", value.asInstanceOf[js.Any])
+    inline def setTouchStartX(value: Double): Self = StObject.set(x, "touchStartX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchStartY(value: Double): Self = StObject.set(x, "touchStartY", value.asInstanceOf[js.Any])
+    inline def setTouchStartY(value: Double): Self = StObject.set(x, "touchStartY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingClick(value: Boolean): Self = StObject.set(x, "trackingClick", value.asInstanceOf[js.Any])
+    inline def setTrackingClick(value: Boolean): Self = StObject.set(x, "trackingClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingClickStart(value: Double): Self = StObject.set(x, "trackingClickStart", value.asInstanceOf[js.Any])
+    inline def setTrackingClickStart(value: Double): Self = StObject.set(x, "trackingClickStart", value.asInstanceOf[js.Any])
   }
 }

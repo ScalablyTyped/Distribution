@@ -58,16 +58,16 @@ object popoverMod {
     
     var lastFocus: js.UndefOr[HTMLElement] = js.native
     
-    var onBackdropTap: js.Any = js.native
+    /* private */ var onBackdropTap: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the popover did dismiss.
       */
     def onDidDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     
-    var onDismiss: js.Any = js.native
+    /* private */ var onDismiss: js.Any = js.native
     
-    var onLifecycle: js.Any = js.native
+    /* private */ var onLifecycle: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the popover will dismiss.
@@ -89,6 +89,6 @@ object popoverMod {
       */
     var translucent: Boolean = js.native
     
-    var usersElement: js.Any = js.native
+    /* private */ var usersElement: js.Any = js.native
   }
 }

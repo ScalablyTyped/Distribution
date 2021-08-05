@@ -26,8 +26,7 @@ trait SliderDragValues
 }
 object SliderDragValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientX: Double,
     clientY: Double,
     height: Double,
@@ -44,31 +43,22 @@ object SliderDragValues {
     __obj.asInstanceOf[SliderDragValues]
   }
   
-  @scala.inline
-  implicit class SliderDragValuesMutableBuilder[Self <: SliderDragValues] (val x: Self) extends AnyVal {
+  extension [Self <: SliderDragValues](x: Self) {
     
-    @scala.inline
-    def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+    inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+    inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

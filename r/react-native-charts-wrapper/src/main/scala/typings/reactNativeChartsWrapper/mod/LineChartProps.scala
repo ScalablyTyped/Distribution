@@ -12,16 +12,13 @@ trait LineChartProps
 }
 object LineChartProps {
   
-  @scala.inline
-  def apply(data: LineData): LineChartProps = {
+  inline def apply(data: LineData): LineChartProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineChartProps]
   }
   
-  @scala.inline
-  implicit class LineChartPropsMutableBuilder[Self <: LineChartProps] (val x: Self) extends AnyVal {
+  extension [Self <: LineChartProps](x: Self) {
     
-    @scala.inline
-    def setData(value: LineData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: LineData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

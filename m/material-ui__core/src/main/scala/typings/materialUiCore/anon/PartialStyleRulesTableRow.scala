@@ -20,43 +20,31 @@ trait PartialStyleRulesTableRow extends StObject {
 }
 object PartialStyleRulesTableRow {
   
-  @scala.inline
-  def apply(): PartialStyleRulesTableRow = {
+  inline def apply(): PartialStyleRulesTableRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesTableRow]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesTableRowMutableBuilder[Self <: PartialStyleRulesTableRow] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesTableRow](x: Self) {
     
-    @scala.inline
-    def setFooter(value: CSSProperties): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: CSSProperties): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHead(value: CSSProperties): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: CSSProperties): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+    inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
     
-    @scala.inline
-    def setHover(value: CSSProperties): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: CSSProperties): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSelected(value: CSSProperties): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: CSSProperties): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

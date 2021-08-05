@@ -10,16 +10,13 @@ trait NewsRepositoryInboxResponsePartition extends StObject {
 }
 object NewsRepositoryInboxResponsePartition {
   
-  @scala.inline
-  def apply(time_bucket: NewsRepositoryInboxResponseTimeBucket): NewsRepositoryInboxResponsePartition = {
+  inline def apply(time_bucket: NewsRepositoryInboxResponseTimeBucket): NewsRepositoryInboxResponsePartition = {
     val __obj = js.Dynamic.literal(time_bucket = time_bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponsePartition]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponsePartitionMutableBuilder[Self <: NewsRepositoryInboxResponsePartition] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponsePartition](x: Self) {
     
-    @scala.inline
-    def setTime_bucket(value: NewsRepositoryInboxResponseTimeBucket): Self = StObject.set(x, "time_bucket", value.asInstanceOf[js.Any])
+    inline def setTime_bucket(value: NewsRepositoryInboxResponseTimeBucket): Self = StObject.set(x, "time_bucket", value.asInstanceOf[js.Any])
   }
 }

@@ -72,8 +72,7 @@ object Component {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getComponent(name: String): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  inline def getComponent(name: String): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
   
   /**
     * Get a `Component` based on the name it was registered with.
@@ -88,71 +87,49 @@ object Component {
     *             check the global `videojs` object for a `Component` name and
     *             return that if it exists.
     */
-  @scala.inline
-  def getComponent_Button(name: Button): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def getComponent_Button(name: Button): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
   
-  @scala.inline
-  def getComponent_ClickableComponent(name: ClickableComponent): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
+  inline def getComponent_ClickableComponent(name: ClickableComponent): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
   
-  @scala.inline
-  def getComponent_Component(name: typings.videoJs.videoJsStrings.Component): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  inline def getComponent_Component(name: typings.videoJs.videoJsStrings.Component): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
   
-  @scala.inline
-  def getComponent_Menu(name: Menu): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
+  inline def getComponent_Menu(name: Menu): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
   
-  @scala.inline
-  def getComponent_MenuButton(name: MenuButton): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
+  inline def getComponent_MenuButton(name: MenuButton): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
   
-  @scala.inline
-  def getComponent_MenuItem(name: MenuItem): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
+  inline def getComponent_MenuItem(name: MenuItem): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
   
-  @scala.inline
-  def getComponent_ModalDialog(name: ModalDialog): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
+  inline def getComponent_ModalDialog(name: ModalDialog): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
   
-  @scala.inline
-  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
+  inline def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
   
-  @scala.inline
-  def getComponent_Player(name: typings.videoJs.videoJsStrings.Player): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
+  inline def getComponent_Player(name: typings.videoJs.videoJsStrings.Player): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
   
-  @scala.inline
-  def getComponent_Spacer(name: Spacer): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
+  inline def getComponent_Spacer(name: Spacer): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
   
-  @scala.inline
-  def getComponent_TimeTooltip(name: TimeTooltip): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
+  inline def getComponent_TimeTooltip(name: TimeTooltip): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
   
-  @scala.inline
-  def getComponent_button(name: button_): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def getComponent_button(name: button_): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
   
-  @scala.inline
-  def getComponent_clickablecomponent(name: clickablecomponent_): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
+  inline def getComponent_clickablecomponent(name: clickablecomponent_): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
   
-  @scala.inline
-  def getComponent_component(name: component_): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  inline def getComponent_component(name: component_): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
   
-  @scala.inline
-  def getComponent_menu(name: menu_): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
+  inline def getComponent_menu(name: menu_): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
   
-  @scala.inline
-  def getComponent_menubutton(name: menubutton_): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
+  inline def getComponent_menubutton(name: menubutton_): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
   
-  @scala.inline
-  def getComponent_menuitem(name: menuitem_): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
+  inline def getComponent_menuitem(name: menuitem_): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
   
-  @scala.inline
-  def getComponent_modaldialog(name: modaldialog_): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
+  inline def getComponent_modaldialog(name: modaldialog_): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
   
-  @scala.inline
-  def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
+  inline def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
   
-  @scala.inline
-  def getComponent_player(name: player_): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
+  inline def getComponent_player(name: player_): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
   
-  @scala.inline
-  def getComponent_spacer(name: spacer_): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
+  inline def getComponent_spacer(name: spacer_): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
   
-  @scala.inline
-  def getComponent_timeTooltip(name: timeTooltip_): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
+  inline def getComponent_timeTooltip(name: timeTooltip_): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
   
   /**
     * Register a `Component` with `videojs` given the name and the component.
@@ -172,6 +149,5 @@ object Component {
     *
     * @return The `Component` that was registered.
     */
-  @scala.inline
-  def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], ComponentToRegister.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], ComponentToRegister.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

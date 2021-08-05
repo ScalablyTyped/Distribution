@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-filestyle"
-version := "1.2-dt-20200923Z-a2e69f"
+version := "1.2-dt-20200923Z-a9e5c9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,16 +13,13 @@ trait InputLambdaProcessorUpdate extends StObject {
 }
 object InputLambdaProcessorUpdate {
   
-  @scala.inline
-  def apply(ResourceARNUpdate: ResourceARN): InputLambdaProcessorUpdate = {
+  inline def apply(ResourceARNUpdate: ResourceARN): InputLambdaProcessorUpdate = {
     val __obj = js.Dynamic.literal(ResourceARNUpdate = ResourceARNUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLambdaProcessorUpdate]
   }
   
-  @scala.inline
-  implicit class InputLambdaProcessorUpdateMutableBuilder[Self <: InputLambdaProcessorUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: InputLambdaProcessorUpdate](x: Self) {
     
-    @scala.inline
-    def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
+    inline def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
   }
 }

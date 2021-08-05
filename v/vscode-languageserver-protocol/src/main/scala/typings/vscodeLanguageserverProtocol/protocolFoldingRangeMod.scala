@@ -108,38 +108,28 @@ object protocolFoldingRangeMod {
   }
   object FoldingRange {
     
-    @scala.inline
-    def apply(endLine: Double, startLine: Double): FoldingRange = {
+    inline def apply(endLine: Double, startLine: Double): FoldingRange = {
       val __obj = js.Dynamic.literal(endLine = endLine.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any])
       __obj.asInstanceOf[FoldingRange]
     }
     
-    @scala.inline
-    implicit class FoldingRangeMutableBuilder[Self <: FoldingRange] (val x: Self) extends AnyVal {
+    extension [Self <: FoldingRange](x: Self) {
       
-      @scala.inline
-      def setEndCharacter(value: Double): Self = StObject.set(x, "endCharacter", value.asInstanceOf[js.Any])
+      inline def setEndCharacter(value: Double): Self = StObject.set(x, "endCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndCharacterUndefined: Self = StObject.set(x, "endCharacter", js.undefined)
+      inline def setEndCharacterUndefined: Self = StObject.set(x, "endCharacter", js.undefined)
       
-      @scala.inline
-      def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+      inline def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setStartCharacter(value: Double): Self = StObject.set(x, "startCharacter", value.asInstanceOf[js.Any])
+      inline def setStartCharacter(value: Double): Self = StObject.set(x, "startCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCharacterUndefined: Self = StObject.set(x, "startCharacter", js.undefined)
+      inline def setStartCharacterUndefined: Self = StObject.set(x, "startCharacter", js.undefined)
       
-      @scala.inline
-      def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+      inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,32 +156,24 @@ object protocolFoldingRangeMod {
   }
   object FoldingRangeClientCapabilities {
     
-    @scala.inline
-    def apply(): FoldingRangeClientCapabilities = {
+    inline def apply(): FoldingRangeClientCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FoldingRangeClientCapabilities]
     }
     
-    @scala.inline
-    implicit class FoldingRangeClientCapabilitiesMutableBuilder[Self <: FoldingRangeClientCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: FoldingRangeClientCapabilities](x: Self) {
       
-      @scala.inline
-      def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+      inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+      inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
       
-      @scala.inline
-      def setLineFoldingOnly(value: Boolean): Self = StObject.set(x, "lineFoldingOnly", value.asInstanceOf[js.Any])
+      inline def setLineFoldingOnly(value: Boolean): Self = StObject.set(x, "lineFoldingOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineFoldingOnlyUndefined: Self = StObject.set(x, "lineFoldingOnly", js.undefined)
+      inline def setLineFoldingOnlyUndefined: Self = StObject.set(x, "lineFoldingOnly", js.undefined)
       
-      @scala.inline
-      def setRangeLimit(value: Double): Self = StObject.set(x, "rangeLimit", value.asInstanceOf[js.Any])
+      inline def setRangeLimit(value: Double): Self = StObject.set(x, "rangeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeLimitUndefined: Self = StObject.set(x, "rangeLimit", js.undefined)
+      inline def setRangeLimitUndefined: Self = StObject.set(x, "rangeLimit", js.undefined)
     }
   }
   
@@ -209,17 +191,14 @@ object protocolFoldingRangeMod {
   }
   object FoldingRangeParams {
     
-    @scala.inline
-    def apply(textDocument: TextDocumentIdentifier): FoldingRangeParams = {
+    inline def apply(textDocument: TextDocumentIdentifier): FoldingRangeParams = {
       val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[FoldingRangeParams]
     }
     
-    @scala.inline
-    implicit class FoldingRangeParamsMutableBuilder[Self <: FoldingRangeParams] (val x: Self) extends AnyVal {
+    extension [Self <: FoldingRangeParams](x: Self) {
       
-      @scala.inline
-      def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+      inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +209,7 @@ object protocolFoldingRangeMod {
        with StaticRegistrationOptions
   object FoldingRangeRegistrationOptions {
     
-    @scala.inline
-    def apply(): FoldingRangeRegistrationOptions = {
+    inline def apply(): FoldingRangeRegistrationOptions = {
       val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[FoldingRangeRegistrationOptions]
     }

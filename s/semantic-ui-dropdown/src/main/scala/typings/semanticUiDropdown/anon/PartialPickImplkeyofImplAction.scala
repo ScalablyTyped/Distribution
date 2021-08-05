@@ -19,43 +19,31 @@ trait PartialPickImplkeyofImplAction extends StObject {
 }
 object PartialPickImplkeyofImplAction {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplAction = {
+  inline def apply(): PartialPickImplkeyofImplAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplAction]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplActionMutableBuilder[Self <: PartialPickImplkeyofImplAction] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAlreadySetup(value: String): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
+    inline def setAlreadySetup(value: String): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlreadySetupUndefined: Self = StObject.set(x, "alreadySetup", js.undefined)
+    inline def setAlreadySetupUndefined: Self = StObject.set(x, "alreadySetup", js.undefined)
     
-    @scala.inline
-    def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
+    inline def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoTransitionUndefined: Self = StObject.set(x, "noTransition", js.undefined)
+    inline def setNoTransitionUndefined: Self = StObject.set(x, "noTransition", js.undefined)
   }
 }

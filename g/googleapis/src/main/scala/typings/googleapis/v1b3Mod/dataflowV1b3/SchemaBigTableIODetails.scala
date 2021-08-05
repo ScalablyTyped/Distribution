@@ -26,31 +26,23 @@ trait SchemaBigTableIODetails extends StObject {
 }
 object SchemaBigTableIODetails {
   
-  @scala.inline
-  def apply(): SchemaBigTableIODetails = {
+  inline def apply(): SchemaBigTableIODetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBigTableIODetails]
   }
   
-  @scala.inline
-  implicit class SchemaBigTableIODetailsMutableBuilder[Self <: SchemaBigTableIODetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBigTableIODetails](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

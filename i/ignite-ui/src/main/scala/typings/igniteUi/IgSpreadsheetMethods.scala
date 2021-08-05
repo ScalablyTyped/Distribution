@@ -123,8 +123,7 @@ trait IgSpreadsheetMethods extends StObject {
 }
 object IgSpreadsheetMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: js.Object => Unit,
@@ -150,67 +149,46 @@ object IgSpreadsheetMethods {
     __obj.asInstanceOf[IgSpreadsheetMethods]
   }
   
-  @scala.inline
-  implicit class IgSpreadsheetMethodsMutableBuilder[Self <: IgSpreadsheetMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgSpreadsheetMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
+    inline def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecuteAction(value: js.Object => Boolean): Self = StObject.set(x, "executeAction", js.Any.fromFunction1(value))
+    inline def setExecuteAction(value: js.Object => Boolean): Self = StObject.set(x, "executeAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExportVisualData(value: () => Unit): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
+    inline def setExportVisualData(value: () => Unit): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActivePane(value: () => js.Object): Self = StObject.set(x, "getActivePane", js.Any.fromFunction0(value))
+    inline def setGetActivePane(value: () => js.Object): Self = StObject.set(x, "getActivePane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveSelection(value: () => js.Object): Self = StObject.set(x, "getActiveSelection", js.Any.fromFunction0(value))
+    inline def setGetActiveSelection(value: () => js.Object): Self = StObject.set(x, "getActiveSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveSelectionCellRangeFormat(value: () => js.Object): Self = StObject.set(x, "getActiveSelectionCellRangeFormat", js.Any.fromFunction0(value))
+    inline def setGetActiveSelectionCellRangeFormat(value: () => js.Object): Self = StObject.set(x, "getActiveSelectionCellRangeFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveTable(value: () => js.Object): Self = StObject.set(x, "getActiveTable", js.Any.fromFunction0(value))
+    inline def setGetActiveTable(value: () => js.Object): Self = StObject.set(x, "getActiveTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCellEditMode(value: () => js.Object): Self = StObject.set(x, "getCellEditMode", js.Any.fromFunction0(value))
+    inline def setGetCellEditMode(value: () => js.Object): Self = StObject.set(x, "getCellEditMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsInEditMode(value: () => Boolean): Self = StObject.set(x, "getIsInEditMode", js.Any.fromFunction0(value))
+    inline def setGetIsInEditMode(value: () => Boolean): Self = StObject.set(x, "getIsInEditMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsRenamingWorksheet(value: () => Boolean): Self = StObject.set(x, "getIsRenamingWorksheet", js.Any.fromFunction0(value))
+    inline def setGetIsRenamingWorksheet(value: () => Boolean): Self = StObject.set(x, "getIsRenamingWorksheet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPanes(value: () => Unit): Self = StObject.set(x, "getPanes", js.Any.fromFunction0(value))
+    inline def setGetPanes(value: () => Unit): Self = StObject.set(x, "getPanes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowFilterDialogForTable(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "showFilterDialogForTable", js.Any.fromFunction2(value))
+    inline def setShowFilterDialogForTable(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "showFilterDialogForTable", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowFilterDialogForWorksheet(value: (Double, js.Object) => Unit): Self = StObject.set(x, "showFilterDialogForWorksheet", js.Any.fromFunction2(value))
+    inline def setShowFilterDialogForWorksheet(value: (Double, js.Object) => Unit): Self = StObject.set(x, "showFilterDialogForWorksheet", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowTopOrBottomDialogForTable(value: js.Object => Unit): Self = StObject.set(x, "showTopOrBottomDialogForTable", js.Any.fromFunction1(value))
+    inline def setShowTopOrBottomDialogForTable(value: js.Object => Unit): Self = StObject.set(x, "showTopOrBottomDialogForTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowTopOrBottomDialogForWorksheet(value: Double => Unit): Self = StObject.set(x, "showTopOrBottomDialogForWorksheet", js.Any.fromFunction1(value))
+    inline def setShowTopOrBottomDialogForWorksheet(value: Double => Unit): Self = StObject.set(x, "showTopOrBottomDialogForWorksheet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyleUpdated(value: () => Unit): Self = StObject.set(x, "styleUpdated", js.Any.fromFunction0(value))
+    inline def setStyleUpdated(value: () => Unit): Self = StObject.set(x, "styleUpdated", js.Any.fromFunction0(value))
   }
 }

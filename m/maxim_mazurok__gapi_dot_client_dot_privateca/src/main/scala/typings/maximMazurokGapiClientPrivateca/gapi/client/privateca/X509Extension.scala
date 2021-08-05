@@ -17,31 +17,23 @@ trait X509Extension extends StObject {
 }
 object X509Extension {
   
-  @scala.inline
-  def apply(): X509Extension = {
+  inline def apply(): X509Extension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[X509Extension]
   }
   
-  @scala.inline
-  implicit class X509ExtensionMutableBuilder[Self <: X509Extension] (val x: Self) extends AnyVal {
+  extension [Self <: X509Extension](x: Self) {
     
-    @scala.inline
-    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
+    inline def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: ObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: ObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -32,32 +32,24 @@ object purchases {
   }
   object IProduct {
     
-    @scala.inline
-    def apply(): IProduct = {
+    inline def apply(): IProduct = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProduct]
     }
     
-    @scala.inline
-    implicit class IProductMutableBuilder[Self <: IProduct] (val x: Self) extends AnyVal {
+    extension [Self <: IProduct](x: Self) {
       
-      @scala.inline
-      def setGetFields(value: () => Array): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+      inline def setGetFields(value: () => Array): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
+      inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
       
-      @scala.inline
-      def setPurchase(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "purchase", js.Any.fromFunction1(value))
+      inline def setPurchase(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "purchase", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPurchaseUndefined: Self = StObject.set(x, "purchase", js.undefined)
+      inline def setPurchaseUndefined: Self = StObject.set(x, "purchase", js.undefined)
       
-      @scala.inline
-      def setSetFields(value: /* fields */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+      inline def setSetFields(value: /* fields */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
+      inline def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
     }
   }
   
@@ -84,32 +76,24 @@ object purchases {
   }
   object IPurchase {
     
-    @scala.inline
-    def apply(): IPurchase = {
+    inline def apply(): IPurchase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPurchase]
     }
     
-    @scala.inline
-    implicit class IPurchaseMutableBuilder[Self <: IPurchase] (val x: Self) extends AnyVal {
+    extension [Self <: IPurchase](x: Self) {
       
-      @scala.inline
-      def setComplete(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setGetFields(value: () => Array): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+      inline def setGetFields(value: () => Array): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
+      inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
       
-      @scala.inline
-      def setSetFields(value: /* fields */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+      inline def setSetFields(value: /* fields */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
+      inline def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
     }
   }
   
@@ -139,38 +123,28 @@ object purchases {
   }
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }
     
-    @scala.inline
-    implicit class ISenchaMutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
+    extension [Self <: ISencha](x: Self) {
       
-      @scala.inline
-      def setCanMakePayments(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "canMakePayments", js.Any.fromFunction1(value))
+      inline def setCanMakePayments(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "canMakePayments", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanMakePaymentsUndefined: Self = StObject.set(x, "canMakePayments", js.undefined)
+      inline def setCanMakePaymentsUndefined: Self = StObject.set(x, "canMakePayments", js.undefined)
       
-      @scala.inline
-      def setGetCompletedPurchases(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getCompletedPurchases", js.Any.fromFunction1(value))
+      inline def setGetCompletedPurchases(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getCompletedPurchases", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCompletedPurchasesUndefined: Self = StObject.set(x, "getCompletedPurchases", js.undefined)
+      inline def setGetCompletedPurchasesUndefined: Self = StObject.set(x, "getCompletedPurchases", js.undefined)
       
-      @scala.inline
-      def setGetProducts(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getProducts", js.Any.fromFunction1(value))
+      inline def setGetProducts(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getProducts", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetProductsUndefined: Self = StObject.set(x, "getProducts", js.undefined)
+      inline def setGetProductsUndefined: Self = StObject.set(x, "getProducts", js.undefined)
       
-      @scala.inline
-      def setGetPurchases(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getPurchases", js.Any.fromFunction1(value))
+      inline def setGetPurchases(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getPurchases", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPurchasesUndefined: Self = StObject.set(x, "getPurchases", js.undefined)
+      inline def setGetPurchasesUndefined: Self = StObject.set(x, "getPurchases", js.undefined)
     }
   }
 }

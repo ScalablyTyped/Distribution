@@ -18,22 +18,17 @@ trait TagFilter extends StObject {
 }
 object TagFilter {
   
-  @scala.inline
-  def apply(name: FilterName, values: FilterValues): TagFilter = {
+  inline def apply(name: FilterName, values: FilterValues): TagFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFilter]
   }
   
-  @scala.inline
-  implicit class TagFilterMutableBuilder[Self <: TagFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TagFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: FilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: FilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

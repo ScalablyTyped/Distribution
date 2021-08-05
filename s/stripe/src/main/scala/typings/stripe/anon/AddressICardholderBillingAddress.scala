@@ -11,16 +11,13 @@ trait AddressICardholderBillingAddress extends StObject {
 }
 object AddressICardholderBillingAddress {
   
-  @scala.inline
-  def apply(address: ICardholderBillingAddress): AddressICardholderBillingAddress = {
+  inline def apply(address: ICardholderBillingAddress): AddressICardholderBillingAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressICardholderBillingAddress]
   }
   
-  @scala.inline
-  implicit class AddressICardholderBillingAddressMutableBuilder[Self <: AddressICardholderBillingAddress] (val x: Self) extends AnyVal {
+  extension [Self <: AddressICardholderBillingAddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: ICardholderBillingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: ICardholderBillingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }
 }

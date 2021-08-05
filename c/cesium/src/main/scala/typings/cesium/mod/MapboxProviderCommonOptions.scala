@@ -39,43 +39,31 @@ trait MapboxProviderCommonOptions extends StObject {
 }
 object MapboxProviderCommonOptions {
   
-  @scala.inline
-  def apply(): MapboxProviderCommonOptions = {
+  inline def apply(): MapboxProviderCommonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapboxProviderCommonOptions]
   }
   
-  @scala.inline
-  implicit class MapboxProviderCommonOptionsMutableBuilder[Self <: MapboxProviderCommonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapboxProviderCommonOptions](x: Self) {
     
-    @scala.inline
-    def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
+    inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
-    @scala.inline
-    def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    @scala.inline
-    def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
+    inline def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
+    inline def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
     
-    @scala.inline
-    def setMinimumLevel(value: Double): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
+    inline def setMinimumLevel(value: Double): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
+    inline def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
     
-    @scala.inline
-    def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+    inline def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+    inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

@@ -17,34 +17,25 @@ trait ListQueriesResponse extends StObject {
 }
 object ListQueriesResponse {
   
-  @scala.inline
-  def apply(): ListQueriesResponse = {
+  inline def apply(): ListQueriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListQueriesResponse]
   }
   
-  @scala.inline
-  implicit class ListQueriesResponseMutableBuilder[Self <: ListQueriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListQueriesResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setQueries(value: js.Array[Query]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[Query]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    @scala.inline
-    def setQueriesVarargs(value: Query*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: Query*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

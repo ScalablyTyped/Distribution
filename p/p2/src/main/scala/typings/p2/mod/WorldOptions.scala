@@ -16,37 +16,27 @@ trait WorldOptions extends StObject {
 }
 object WorldOptions {
   
-  @scala.inline
-  def apply(): WorldOptions = {
+  inline def apply(): WorldOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorldOptions]
   }
   
-  @scala.inline
-  implicit class WorldOptionsMutableBuilder[Self <: WorldOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorldOptions](x: Self) {
     
-    @scala.inline
-    def setBroadphase(value: Broadphase): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
+    inline def setBroadphase(value: Broadphase): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadphaseUndefined: Self = StObject.set(x, "broadphase", js.undefined)
+    inline def setBroadphaseUndefined: Self = StObject.set(x, "broadphase", js.undefined)
     
-    @scala.inline
-    def setGravity(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    @scala.inline
-    def setIslandSplit(value: Boolean): Self = StObject.set(x, "islandSplit", value.asInstanceOf[js.Any])
+    inline def setIslandSplit(value: Boolean): Self = StObject.set(x, "islandSplit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIslandSplitUndefined: Self = StObject.set(x, "islandSplit", js.undefined)
+    inline def setIslandSplitUndefined: Self = StObject.set(x, "islandSplit", js.undefined)
     
-    @scala.inline
-    def setSolver(value: Solver): Self = StObject.set(x, "solver", value.asInstanceOf[js.Any])
+    inline def setSolver(value: Solver): Self = StObject.set(x, "solver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolverUndefined: Self = StObject.set(x, "solver", js.undefined)
+    inline def setSolverUndefined: Self = StObject.set(x, "solver", js.undefined)
   }
 }

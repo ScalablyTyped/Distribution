@@ -28,49 +28,35 @@ trait UsageStatistics extends StObject {
 }
 object UsageStatistics {
   
-  @scala.inline
-  def apply(): UsageStatistics = {
+  inline def apply(): UsageStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageStatistics]
   }
   
-  @scala.inline
-  implicit class UsageStatisticsMutableBuilder[Self <: UsageStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: UsageStatistics](x: Self) {
     
-    @scala.inline
-    def setSumByAccount(value: UsageAccountResultList): Self = StObject.set(x, "SumByAccount", value.asInstanceOf[js.Any])
+    inline def setSumByAccount(value: UsageAccountResultList): Self = StObject.set(x, "SumByAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumByAccountUndefined: Self = StObject.set(x, "SumByAccount", js.undefined)
+    inline def setSumByAccountUndefined: Self = StObject.set(x, "SumByAccount", js.undefined)
     
-    @scala.inline
-    def setSumByAccountVarargs(value: UsageAccountResult*): Self = StObject.set(x, "SumByAccount", js.Array(value :_*))
+    inline def setSumByAccountVarargs(value: UsageAccountResult*): Self = StObject.set(x, "SumByAccount", js.Array(value :_*))
     
-    @scala.inline
-    def setSumByDataSource(value: UsageDataSourceResultList): Self = StObject.set(x, "SumByDataSource", value.asInstanceOf[js.Any])
+    inline def setSumByDataSource(value: UsageDataSourceResultList): Self = StObject.set(x, "SumByDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumByDataSourceUndefined: Self = StObject.set(x, "SumByDataSource", js.undefined)
+    inline def setSumByDataSourceUndefined: Self = StObject.set(x, "SumByDataSource", js.undefined)
     
-    @scala.inline
-    def setSumByDataSourceVarargs(value: UsageDataSourceResult*): Self = StObject.set(x, "SumByDataSource", js.Array(value :_*))
+    inline def setSumByDataSourceVarargs(value: UsageDataSourceResult*): Self = StObject.set(x, "SumByDataSource", js.Array(value :_*))
     
-    @scala.inline
-    def setSumByResource(value: UsageResourceResultList): Self = StObject.set(x, "SumByResource", value.asInstanceOf[js.Any])
+    inline def setSumByResource(value: UsageResourceResultList): Self = StObject.set(x, "SumByResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumByResourceUndefined: Self = StObject.set(x, "SumByResource", js.undefined)
+    inline def setSumByResourceUndefined: Self = StObject.set(x, "SumByResource", js.undefined)
     
-    @scala.inline
-    def setSumByResourceVarargs(value: UsageResourceResult*): Self = StObject.set(x, "SumByResource", js.Array(value :_*))
+    inline def setSumByResourceVarargs(value: UsageResourceResult*): Self = StObject.set(x, "SumByResource", js.Array(value :_*))
     
-    @scala.inline
-    def setTopResources(value: UsageResourceResultList): Self = StObject.set(x, "TopResources", value.asInstanceOf[js.Any])
+    inline def setTopResources(value: UsageResourceResultList): Self = StObject.set(x, "TopResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopResourcesUndefined: Self = StObject.set(x, "TopResources", js.undefined)
+    inline def setTopResourcesUndefined: Self = StObject.set(x, "TopResources", js.undefined)
     
-    @scala.inline
-    def setTopResourcesVarargs(value: UsageResourceResult*): Self = StObject.set(x, "TopResources", js.Array(value :_*))
+    inline def setTopResourcesVarargs(value: UsageResourceResult*): Self = StObject.set(x, "TopResources", js.Array(value :_*))
   }
 }

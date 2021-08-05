@@ -66,8 +66,7 @@ trait Field extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codeInterval: Interval,
     hyperlinkAnchor: String,
     hyperlinkTip: String,
@@ -84,40 +83,28 @@ object Field {
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setCodeInterval(value: Interval): Self = StObject.set(x, "codeInterval", value.asInstanceOf[js.Any])
+    inline def setCodeInterval(value: Interval): Self = StObject.set(x, "codeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkAnchor(value: String): Self = StObject.set(x, "hyperlinkAnchor", value.asInstanceOf[js.Any])
+    inline def setHyperlinkAnchor(value: String): Self = StObject.set(x, "hyperlinkAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkTip(value: String): Self = StObject.set(x, "hyperlinkTip", value.asInstanceOf[js.Any])
+    inline def setHyperlinkTip(value: String): Self = StObject.set(x, "hyperlinkTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkUri(value: String): Self = StObject.set(x, "hyperlinkUri", value.asInstanceOf[js.Any])
+    inline def setHyperlinkUri(value: String): Self = StObject.set(x, "hyperlinkUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHyperlink(value: Boolean): Self = StObject.set(x, "isHyperlink", value.asInstanceOf[js.Any])
+    inline def setIsHyperlink(value: Boolean): Self = StObject.set(x, "isHyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultInterval(value: Interval): Self = StObject.set(x, "resultInterval", value.asInstanceOf[js.Any])
+    inline def setResultInterval(value: Interval): Self = StObject.set(x, "resultInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCode(value: Boolean): Self = StObject.set(x, "showCode", value.asInstanceOf[js.Any])
+    inline def setShowCode(value: Boolean): Self = StObject.set(x, "showCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

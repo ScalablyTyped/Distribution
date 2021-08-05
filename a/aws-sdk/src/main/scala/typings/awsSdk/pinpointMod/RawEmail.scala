@@ -13,19 +13,15 @@ trait RawEmail extends StObject {
 }
 object RawEmail {
   
-  @scala.inline
-  def apply(): RawEmail = {
+  inline def apply(): RawEmail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RawEmail]
   }
   
-  @scala.inline
-  implicit class RawEmailMutableBuilder[Self <: RawEmail] (val x: Self) extends AnyVal {
+  extension [Self <: RawEmail](x: Self) {
     
-    @scala.inline
-    def setData(value: _Blob): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: _Blob): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
   }
 }

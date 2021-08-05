@@ -21,25 +21,19 @@ trait SchemaSeverityCount extends StObject {
 }
 object SchemaSeverityCount {
   
-  @scala.inline
-  def apply(): SchemaSeverityCount = {
+  inline def apply(): SchemaSeverityCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSeverityCount]
   }
   
-  @scala.inline
-  implicit class SchemaSeverityCountMutableBuilder[Self <: SchemaSeverityCount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSeverityCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
   }
 }

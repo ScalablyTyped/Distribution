@@ -31,8 +31,7 @@ trait EventElementDisconnectedsMediaType extends StObject {
 }
 object EventElementDisconnectedsMediaType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mediaType: MediaType,
     sink: MediaElement,
     sinkMediaDescription: String,
@@ -47,37 +46,26 @@ object EventElementDisconnectedsMediaType {
     __obj.asInstanceOf[EventElementDisconnectedsMediaType]
   }
   
-  @scala.inline
-  implicit class EventElementDisconnectedsMediaTypeMutableBuilder[Self <: EventElementDisconnectedsMediaType] (val x: Self) extends AnyVal {
+  extension [Self <: EventElementDisconnectedsMediaType](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSink(value: MediaElement): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: MediaElement): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkMediaDescription(value: String): Self = StObject.set(x, "sinkMediaDescription", value.asInstanceOf[js.Any])
+    inline def setSinkMediaDescription(value: String): Self = StObject.set(x, "sinkMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMediaDescription(value: String): Self = StObject.set(x, "sourceMediaDescription", value.asInstanceOf[js.Any])
+    inline def setSourceMediaDescription(value: String): Self = StObject.set(x, "sourceMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ElementDisconnected): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ElementDisconnected): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

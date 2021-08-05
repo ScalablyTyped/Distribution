@@ -12,25 +12,19 @@ trait IConsensusBlocksGetRequest extends StObject {
 }
 object IConsensusBlocksGetRequest {
   
-  @scala.inline
-  def apply(): IConsensusBlocksGetRequest = {
+  inline def apply(): IConsensusBlocksGetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusBlocksGetRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusBlocksGetRequestMutableBuilder[Self <: IConsensusBlocksGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusBlocksGetRequest](x: Self) {
     
-    @scala.inline
-    def setBlockIds(value: js.Array[Uint8Array]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
+    inline def setBlockIds(value: js.Array[Uint8Array]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdsNull: Self = StObject.set(x, "blockIds", null)
+    inline def setBlockIdsNull: Self = StObject.set(x, "blockIds", null)
     
-    @scala.inline
-    def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
+    inline def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
     
-    @scala.inline
-    def setBlockIdsVarargs(value: Uint8Array*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
+    inline def setBlockIdsVarargs(value: Uint8Array*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
   }
 }

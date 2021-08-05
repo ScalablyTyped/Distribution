@@ -11,19 +11,15 @@ trait SheetsChartProperties extends StObject {
 }
 object SheetsChartProperties {
   
-  @scala.inline
-  def apply(): SheetsChartProperties = {
+  inline def apply(): SheetsChartProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SheetsChartProperties]
   }
   
-  @scala.inline
-  implicit class SheetsChartPropertiesMutableBuilder[Self <: SheetsChartProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SheetsChartProperties](x: Self) {
     
-    @scala.inline
-    def setChartImageProperties(value: ImageProperties): Self = StObject.set(x, "chartImageProperties", value.asInstanceOf[js.Any])
+    inline def setChartImageProperties(value: ImageProperties): Self = StObject.set(x, "chartImageProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartImagePropertiesUndefined: Self = StObject.set(x, "chartImageProperties", js.undefined)
+    inline def setChartImagePropertiesUndefined: Self = StObject.set(x, "chartImageProperties", js.undefined)
   }
 }

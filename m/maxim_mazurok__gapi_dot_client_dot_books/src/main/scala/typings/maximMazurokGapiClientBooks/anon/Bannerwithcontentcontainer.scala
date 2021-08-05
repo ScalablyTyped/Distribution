@@ -21,52 +21,37 @@ trait Bannerwithcontentcontainer extends StObject {
 }
 object Bannerwithcontentcontainer {
   
-  @scala.inline
-  def apply(): Bannerwithcontentcontainer = {
+  inline def apply(): Bannerwithcontentcontainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bannerwithcontentcontainer]
   }
   
-  @scala.inline
-  implicit class BannerwithcontentcontainerMutableBuilder[Self <: Bannerwithcontentcontainer] (val x: Self) extends AnyVal {
+  extension [Self <: Bannerwithcontentcontainer](x: Self) {
     
-    @scala.inline
-    def setBanner_with_content_container(value: FillColorArgb): Self = StObject.set(x, "banner_with_content_container", value.asInstanceOf[js.Any])
+    inline def setBanner_with_content_container(value: FillColorArgb): Self = StObject.set(x, "banner_with_content_container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBanner_with_content_containerUndefined: Self = StObject.set(x, "banner_with_content_container", js.undefined)
+    inline def setBanner_with_content_containerUndefined: Self = StObject.set(x, "banner_with_content_container", js.undefined)
     
-    @scala.inline
-    def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+    inline def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
+    inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTotalVolumes(value: Double): Self = StObject.set(x, "totalVolumes", value.asInstanceOf[js.Any])
+    inline def setTotalVolumes(value: Double): Self = StObject.set(x, "totalVolumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalVolumesUndefined: Self = StObject.set(x, "totalVolumes", js.undefined)
+    inline def setTotalVolumesUndefined: Self = StObject.set(x, "totalVolumes", js.undefined)
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     
-    @scala.inline
-    def setVolumes(value: js.Array[Volume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+    inline def setVolumes(value: js.Array[Volume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+    inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    @scala.inline
-    def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait TransitFare extends StObject {
 }
 object TransitFare {
   
-  @scala.inline
-  def apply(currency: String, value: Double): TransitFare = {
+  inline def apply(currency: String, value: Double): TransitFare = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitFare]
   }
   
-  @scala.inline
-  implicit class TransitFareMutableBuilder[Self <: TransitFare] (val x: Self) extends AnyVal {
+  extension [Self <: TransitFare](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

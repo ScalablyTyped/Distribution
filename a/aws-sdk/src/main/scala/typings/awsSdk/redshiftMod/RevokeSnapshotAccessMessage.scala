@@ -23,25 +23,19 @@ trait RevokeSnapshotAccessMessage extends StObject {
 }
 object RevokeSnapshotAccessMessage {
   
-  @scala.inline
-  def apply(AccountWithRestoreAccess: String, SnapshotIdentifier: String): RevokeSnapshotAccessMessage = {
+  inline def apply(AccountWithRestoreAccess: String, SnapshotIdentifier: String): RevokeSnapshotAccessMessage = {
     val __obj = js.Dynamic.literal(AccountWithRestoreAccess = AccountWithRestoreAccess.asInstanceOf[js.Any], SnapshotIdentifier = SnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeSnapshotAccessMessage]
   }
   
-  @scala.inline
-  implicit class RevokeSnapshotAccessMessageMutableBuilder[Self <: RevokeSnapshotAccessMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeSnapshotAccessMessage](x: Self) {
     
-    @scala.inline
-    def setAccountWithRestoreAccess(value: String): Self = StObject.set(x, "AccountWithRestoreAccess", value.asInstanceOf[js.Any])
+    inline def setAccountWithRestoreAccess(value: String): Self = StObject.set(x, "AccountWithRestoreAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SnapshotClusterIdentifier", js.undefined)
+    inline def setSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SnapshotClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
   }
 }

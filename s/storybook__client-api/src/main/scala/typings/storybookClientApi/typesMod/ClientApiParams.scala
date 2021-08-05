@@ -18,30 +18,23 @@ trait ClientApiParams extends StObject {
 }
 object ClientApiParams {
   
-  @scala.inline
-  def apply(storyStore: default): ClientApiParams = {
+  inline def apply(storyStore: default): ClientApiParams = {
     val __obj = js.Dynamic.literal(storyStore = storyStore.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientApiParams]
   }
   
-  @scala.inline
-  implicit class ClientApiParamsMutableBuilder[Self <: ClientApiParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClientApiParams](x: Self) {
     
-    @scala.inline
-    def setDecorateStory(
+    inline def setDecorateStory(
       value: (/* storyFn */ StoryFn[js.Any], /* decorators */ js.Array[DecoratorFunction[js.Any]]) => StoryFn[js.Any]
     ): Self = StObject.set(x, "decorateStory", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDecorateStoryUndefined: Self = StObject.set(x, "decorateStory", js.undefined)
+    inline def setDecorateStoryUndefined: Self = StObject.set(x, "decorateStory", js.undefined)
     
-    @scala.inline
-    def setNoStoryModuleAddMethodHotDispose(value: Boolean): Self = StObject.set(x, "noStoryModuleAddMethodHotDispose", value.asInstanceOf[js.Any])
+    inline def setNoStoryModuleAddMethodHotDispose(value: Boolean): Self = StObject.set(x, "noStoryModuleAddMethodHotDispose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoStoryModuleAddMethodHotDisposeUndefined: Self = StObject.set(x, "noStoryModuleAddMethodHotDispose", js.undefined)
+    inline def setNoStoryModuleAddMethodHotDisposeUndefined: Self = StObject.set(x, "noStoryModuleAddMethodHotDispose", js.undefined)
     
-    @scala.inline
-    def setStoryStore(value: default): Self = StObject.set(x, "storyStore", value.asInstanceOf[js.Any])
+    inline def setStoryStore(value: default): Self = StObject.set(x, "storyStore", value.asInstanceOf[js.Any])
   }
 }

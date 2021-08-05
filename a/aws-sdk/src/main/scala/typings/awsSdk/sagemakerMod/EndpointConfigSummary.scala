@@ -23,8 +23,7 @@ trait EndpointConfigSummary extends StObject {
 }
 object EndpointConfigSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: Timestamp,
     EndpointConfigArn: EndpointConfigArn,
     EndpointConfigName: EndpointConfigName
@@ -33,16 +32,12 @@ object EndpointConfigSummary {
     __obj.asInstanceOf[EndpointConfigSummary]
   }
   
-  @scala.inline
-  implicit class EndpointConfigSummaryMutableBuilder[Self <: EndpointConfigSummary] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointConfigSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointConfigArn(value: EndpointConfigArn): Self = StObject.set(x, "EndpointConfigArn", value.asInstanceOf[js.Any])
+    inline def setEndpointConfigArn(value: EndpointConfigArn): Self = StObject.set(x, "EndpointConfigArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointConfigName(value: EndpointConfigName): Self = StObject.set(x, "EndpointConfigName", value.asInstanceOf[js.Any])
+    inline def setEndpointConfigName(value: EndpointConfigName): Self = StObject.set(x, "EndpointConfigName", value.asInstanceOf[js.Any])
   }
 }

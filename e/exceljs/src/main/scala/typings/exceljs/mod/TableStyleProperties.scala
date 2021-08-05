@@ -40,43 +40,31 @@ trait TableStyleProperties extends StObject {
 }
 object TableStyleProperties {
   
-  @scala.inline
-  def apply(): TableStyleProperties = {
+  inline def apply(): TableStyleProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableStyleProperties]
   }
   
-  @scala.inline
-  implicit class TableStylePropertiesMutableBuilder[Self <: TableStyleProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TableStyleProperties](x: Self) {
     
-    @scala.inline
-    def setShowColumnStripes(value: Boolean): Self = StObject.set(x, "showColumnStripes", value.asInstanceOf[js.Any])
+    inline def setShowColumnStripes(value: Boolean): Self = StObject.set(x, "showColumnStripes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowColumnStripesUndefined: Self = StObject.set(x, "showColumnStripes", js.undefined)
+    inline def setShowColumnStripesUndefined: Self = StObject.set(x, "showColumnStripes", js.undefined)
     
-    @scala.inline
-    def setShowFirstColumn(value: Boolean): Self = StObject.set(x, "showFirstColumn", value.asInstanceOf[js.Any])
+    inline def setShowFirstColumn(value: Boolean): Self = StObject.set(x, "showFirstColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFirstColumnUndefined: Self = StObject.set(x, "showFirstColumn", js.undefined)
+    inline def setShowFirstColumnUndefined: Self = StObject.set(x, "showFirstColumn", js.undefined)
     
-    @scala.inline
-    def setShowLastColumn(value: Boolean): Self = StObject.set(x, "showLastColumn", value.asInstanceOf[js.Any])
+    inline def setShowLastColumn(value: Boolean): Self = StObject.set(x, "showLastColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLastColumnUndefined: Self = StObject.set(x, "showLastColumn", js.undefined)
+    inline def setShowLastColumnUndefined: Self = StObject.set(x, "showLastColumn", js.undefined)
     
-    @scala.inline
-    def setShowRowStripes(value: Boolean): Self = StObject.set(x, "showRowStripes", value.asInstanceOf[js.Any])
+    inline def setShowRowStripes(value: Boolean): Self = StObject.set(x, "showRowStripes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRowStripesUndefined: Self = StObject.set(x, "showRowStripes", js.undefined)
+    inline def setShowRowStripesUndefined: Self = StObject.set(x, "showRowStripes", js.undefined)
     
-    @scala.inline
-    def setTheme(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

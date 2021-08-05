@@ -28,34 +28,25 @@ trait AssociateTargetsWithJobRequest extends StObject {
 }
 object AssociateTargetsWithJobRequest {
   
-  @scala.inline
-  def apply(jobId: JobId, targets: JobTargets): AssociateTargetsWithJobRequest = {
+  inline def apply(jobId: JobId, targets: JobTargets): AssociateTargetsWithJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateTargetsWithJobRequest]
   }
   
-  @scala.inline
-  implicit class AssociateTargetsWithJobRequestMutableBuilder[Self <: AssociateTargetsWithJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateTargetsWithJobRequest](x: Self) {
     
-    @scala.inline
-    def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceId(value: NamespaceId): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
+    inline def setNamespaceId(value: NamespaceId): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
+    inline def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
     
-    @scala.inline
-    def setTargets(value: JobTargets): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: JobTargets): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsVarargs(value: TargetArn*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: TargetArn*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

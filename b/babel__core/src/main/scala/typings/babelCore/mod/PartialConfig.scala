@@ -18,37 +18,27 @@ trait PartialConfig extends StObject {
 }
 object PartialConfig {
   
-  @scala.inline
-  def apply(hasFilesystemConfig: () => Boolean, options: TransformOptions): PartialConfig = {
+  inline def apply(hasFilesystemConfig: () => Boolean, options: TransformOptions): PartialConfig = {
     val __obj = js.Dynamic.literal(hasFilesystemConfig = js.Any.fromFunction0(hasFilesystemConfig), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialConfig]
   }
   
-  @scala.inline
-  implicit class PartialConfigMutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PartialConfig](x: Self) {
     
-    @scala.inline
-    def setBabelignore(value: String): Self = StObject.set(x, "babelignore", value.asInstanceOf[js.Any])
+    inline def setBabelignore(value: String): Self = StObject.set(x, "babelignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBabelignoreUndefined: Self = StObject.set(x, "babelignore", js.undefined)
+    inline def setBabelignoreUndefined: Self = StObject.set(x, "babelignore", js.undefined)
     
-    @scala.inline
-    def setBabelrc(value: String): Self = StObject.set(x, "babelrc", value.asInstanceOf[js.Any])
+    inline def setBabelrc(value: String): Self = StObject.set(x, "babelrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBabelrcUndefined: Self = StObject.set(x, "babelrc", js.undefined)
+    inline def setBabelrcUndefined: Self = StObject.set(x, "babelrc", js.undefined)
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setHasFilesystemConfig(value: () => Boolean): Self = StObject.set(x, "hasFilesystemConfig", js.Any.fromFunction0(value))
+    inline def setHasFilesystemConfig(value: () => Boolean): Self = StObject.set(x, "hasFilesystemConfig", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptions(value: TransformOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TransformOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

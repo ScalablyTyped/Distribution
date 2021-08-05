@@ -23,28 +23,21 @@ trait AcceptPortfolioShareInput extends StObject {
 }
 object AcceptPortfolioShareInput {
   
-  @scala.inline
-  def apply(PortfolioId: Id): AcceptPortfolioShareInput = {
+  inline def apply(PortfolioId: Id): AcceptPortfolioShareInput = {
     val __obj = js.Dynamic.literal(PortfolioId = PortfolioId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptPortfolioShareInput]
   }
   
-  @scala.inline
-  implicit class AcceptPortfolioShareInputMutableBuilder[Self <: AcceptPortfolioShareInput] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptPortfolioShareInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioShareType(value: PortfolioShareType): Self = StObject.set(x, "PortfolioShareType", value.asInstanceOf[js.Any])
+    inline def setPortfolioShareType(value: PortfolioShareType): Self = StObject.set(x, "PortfolioShareType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioShareTypeUndefined: Self = StObject.set(x, "PortfolioShareType", js.undefined)
+    inline def setPortfolioShareTypeUndefined: Self = StObject.set(x, "PortfolioShareType", js.undefined)
   }
 }

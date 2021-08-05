@@ -13,19 +13,15 @@ trait Interchange extends StObject {
 }
 object Interchange {
   
-  @scala.inline
-  def apply(destroy: () => Unit, replace: String => Unit): Interchange = {
+  inline def apply(destroy: () => Unit, replace: String => Unit): Interchange = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), replace = js.Any.fromFunction1(replace))
     __obj.asInstanceOf[Interchange]
   }
   
-  @scala.inline
-  implicit class InterchangeMutableBuilder[Self <: Interchange] (val x: Self) extends AnyVal {
+  extension [Self <: Interchange](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+    inline def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
   }
 }

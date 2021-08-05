@@ -242,8 +242,7 @@ object mod {
   }
   object FastBitSet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Double => Unit,
       array: () => js.Array[Double],
       checkedAdd: Double => `1` | `0`,
@@ -275,83 +274,57 @@ object mod {
       __obj.asInstanceOf[FastBitSet]
     }
     
-    @scala.inline
-    implicit class FastBitSetMutableBuilder[Self <: FastBitSet] (val x: Self) extends AnyVal {
+    extension [Self <: FastBitSet](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Double => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Double => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
+      inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCheckedAdd(value: Double => `1` | `0`): Self = StObject.set(x, "checkedAdd", js.Any.fromFunction1(value))
+      inline def setCheckedAdd(value: Double => `1` | `0`): Self = StObject.set(x, "checkedAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDifference(value: FastBitSet => FastBitSet): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
+      inline def setDifference(value: FastBitSet => FastBitSet): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDifference_size(value: FastBitSet => Double): Self = StObject.set(x, "difference_size", js.Any.fromFunction1(value))
+      inline def setDifference_size(value: FastBitSet => Double): Self = StObject.set(x, "difference_size", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_(value: FastBitSet => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: FastBitSet => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlip(value: Double => Unit): Self = StObject.set(x, "flip", js.Any.fromFunction1(value))
+      inline def setFlip(value: Double => Unit): Self = StObject.set(x, "flip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function1[/* index */ Double, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function1[/* index */ Double, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHammingWeight(value: Double => Double): Self = StObject.set(x, "hammingWeight", js.Any.fromFunction1(value))
+      inline def setHammingWeight(value: Double => Double): Self = StObject.set(x, "hammingWeight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHammingWeight4(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "hammingWeight4", js.Any.fromFunction4(value))
+      inline def setHammingWeight4(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "hammingWeight4", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setHas(value: Double => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: Double => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntersection(value: FastBitSet => FastBitSet): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+      inline def setIntersection(value: FastBitSet => FastBitSet): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntersection_size(value: FastBitSet => Double): Self = StObject.set(x, "intersection_size", js.Any.fromFunction1(value))
+      inline def setIntersection_size(value: FastBitSet => Double): Self = StObject.set(x, "intersection_size", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntersects(value: FastBitSet => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
+      inline def setIntersects(value: FastBitSet => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: Double => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+      inline def setIsEmpty(value: Double => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNew_difference(value: FastBitSet => FastBitSet): Self = StObject.set(x, "new_difference", js.Any.fromFunction1(value))
+      inline def setNew_difference(value: FastBitSet => FastBitSet): Self = StObject.set(x, "new_difference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNew_intersection(value: FastBitSet => FastBitSet): Self = StObject.set(x, "new_intersection", js.Any.fromFunction1(value))
+      inline def setNew_intersection(value: FastBitSet => FastBitSet): Self = StObject.set(x, "new_intersection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNew_union(value: FastBitSet => FastBitSet): Self = StObject.set(x, "new_union", js.Any.fromFunction1(value))
+      inline def setNew_union(value: FastBitSet => FastBitSet): Self = StObject.set(x, "new_union", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResize(value: Double => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(value: Double => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrim(value: () => Unit): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
+      inline def setTrim(value: () => Unit): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnion(value: FastBitSet => FastBitSet): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
+      inline def setUnion(value: FastBitSet => FastBitSet): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnion_size(value: FastBitSet => Double): Self = StObject.set(x, "union_size", js.Any.fromFunction1(value))
+      inline def setUnion_size(value: FastBitSet => Double): Self = StObject.set(x, "union_size", js.Any.fromFunction1(value))
     }
   }
 }

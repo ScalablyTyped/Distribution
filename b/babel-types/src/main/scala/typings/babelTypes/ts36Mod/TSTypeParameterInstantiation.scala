@@ -19,16 +19,12 @@ object TSTypeParameterInstantiation {
   @js.native
   def apply(params: js.Array[TSType]): TSTypeParameterInstantiation = js.native
   
-  @scala.inline
-  implicit class TSTypeParameterInstantiationMutableBuilder[Self <: TSTypeParameterInstantiation] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeParameterInstantiation](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Array[TSType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[TSType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSTypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSTypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait FSInfoResult extends StObject {
 }
 object FSInfoResult {
   
-  @scala.inline
-  def apply(freeSpace: Double, totalSpace: Double): FSInfoResult = {
+  inline def apply(freeSpace: Double, totalSpace: Double): FSInfoResult = {
     val __obj = js.Dynamic.literal(freeSpace = freeSpace.asInstanceOf[js.Any], totalSpace = totalSpace.asInstanceOf[js.Any])
     __obj.asInstanceOf[FSInfoResult]
   }
   
-  @scala.inline
-  implicit class FSInfoResultMutableBuilder[Self <: FSInfoResult] (val x: Self) extends AnyVal {
+  extension [Self <: FSInfoResult](x: Self) {
     
-    @scala.inline
-    def setFreeSpace(value: Double): Self = StObject.set(x, "freeSpace", value.asInstanceOf[js.Any])
+    inline def setFreeSpace(value: Double): Self = StObject.set(x, "freeSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSpace(value: Double): Self = StObject.set(x, "totalSpace", value.asInstanceOf[js.Any])
+    inline def setTotalSpace(value: Double): Self = StObject.set(x, "totalSpace", value.asInstanceOf[js.Any])
   }
 }

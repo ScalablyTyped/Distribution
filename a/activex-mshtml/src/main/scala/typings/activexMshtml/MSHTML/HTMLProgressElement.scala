@@ -10,7 +10,7 @@ trait HTMLProgressElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLProgressElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLProgressElement_typekey")
   var MSHTMLDotHTMLProgressElement_typekey: HTMLProgressElement = js.native
   
   var accessKey: String = js.native

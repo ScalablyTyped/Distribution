@@ -49,52 +49,37 @@ trait bindCollectionOptions extends StObject {
 }
 object bindCollectionOptions {
   
-  @scala.inline
-  def apply(context: js.Object): bindCollectionOptions = {
+  inline def apply(context: js.Object): bindCollectionOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[bindCollectionOptions]
   }
   
-  @scala.inline
-  implicit class bindCollectionOptionsMutableBuilder[Self <: bindCollectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: bindCollectionOptions](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFailure(value: () => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction0(value))
+    inline def setOnFailure(value: () => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setThen(value: () => Unit): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => Unit): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
+    inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
     
-    @scala.inline
-    def setWithIds(value: Boolean): Self = StObject.set(x, "withIds", value.asInstanceOf[js.Any])
+    inline def setWithIds(value: Boolean): Self = StObject.set(x, "withIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithIdsUndefined: Self = StObject.set(x, "withIds", js.undefined)
+    inline def setWithIdsUndefined: Self = StObject.set(x, "withIds", js.undefined)
     
-    @scala.inline
-    def setWithRefs(value: Boolean): Self = StObject.set(x, "withRefs", value.asInstanceOf[js.Any])
+    inline def setWithRefs(value: Boolean): Self = StObject.set(x, "withRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithRefsUndefined: Self = StObject.set(x, "withRefs", js.undefined)
+    inline def setWithRefsUndefined: Self = StObject.set(x, "withRefs", js.undefined)
   }
 }

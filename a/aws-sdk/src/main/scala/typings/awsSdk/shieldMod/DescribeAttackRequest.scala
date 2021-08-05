@@ -13,16 +13,13 @@ trait DescribeAttackRequest extends StObject {
 }
 object DescribeAttackRequest {
   
-  @scala.inline
-  def apply(AttackId: AttackId): DescribeAttackRequest = {
+  inline def apply(AttackId: AttackId): DescribeAttackRequest = {
     val __obj = js.Dynamic.literal(AttackId = AttackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAttackRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAttackRequestMutableBuilder[Self <: DescribeAttackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAttackRequest](x: Self) {
     
-    @scala.inline
-    def setAttackId(value: AttackId): Self = StObject.set(x, "AttackId", value.asInstanceOf[js.Any])
+    inline def setAttackId(value: AttackId): Self = StObject.set(x, "AttackId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait DescribeEventDetailsForOrganizationRequest extends StObject {
 }
 object DescribeEventDetailsForOrganizationRequest {
   
-  @scala.inline
-  def apply(organizationEventDetailFilters: OrganizationEventDetailFiltersList): DescribeEventDetailsForOrganizationRequest = {
+  inline def apply(organizationEventDetailFilters: OrganizationEventDetailFiltersList): DescribeEventDetailsForOrganizationRequest = {
     val __obj = js.Dynamic.literal(organizationEventDetailFilters = organizationEventDetailFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventDetailsForOrganizationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEventDetailsForOrganizationRequestMutableBuilder[Self <: DescribeEventDetailsForOrganizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventDetailsForOrganizationRequest](x: Self) {
     
-    @scala.inline
-    def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setOrganizationEventDetailFilters(value: OrganizationEventDetailFiltersList): Self = StObject.set(x, "organizationEventDetailFilters", value.asInstanceOf[js.Any])
+    inline def setOrganizationEventDetailFilters(value: OrganizationEventDetailFiltersList): Self = StObject.set(x, "organizationEventDetailFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationEventDetailFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEventDetailFilters", js.Array(value :_*))
+    inline def setOrganizationEventDetailFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEventDetailFilters", js.Array(value :_*))
   }
 }

@@ -15,8 +15,7 @@ trait Initial[TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObjec
 }
 object Initial {
   
-  @scala.inline
-  def apply[TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](
+  inline def apply[TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](
     initial: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any,
     states: StatesConfig[js.Any, TStateSchema, TEvent]
   ): Initial[TStateSchema, TEvent] = {
@@ -24,15 +23,12 @@ object Initial {
     __obj.asInstanceOf[Initial[TStateSchema, TEvent]]
   }
   
-  @scala.inline
-  implicit class InitialMutableBuilder[Self <: Initial[?, ?], TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */] (val x: Self & (Initial[TStateSchema, TEvent])) extends AnyVal {
+  extension [Self <: Initial[?, ?], TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](x: Self & (Initial[TStateSchema, TEvent])) {
     
-    @scala.inline
-    def setInitial(
+    inline def setInitial(
       value: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
     ): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStates(value: StatesConfig[js.Any, TStateSchema, TEvent]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: StatesConfig[js.Any, TStateSchema, TEvent]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
   }
 }

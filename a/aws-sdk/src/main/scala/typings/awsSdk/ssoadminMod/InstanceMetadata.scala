@@ -18,25 +18,19 @@ trait InstanceMetadata extends StObject {
 }
 object InstanceMetadata {
   
-  @scala.inline
-  def apply(): InstanceMetadata = {
+  inline def apply(): InstanceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceMetadata]
   }
   
-  @scala.inline
-  implicit class InstanceMetadataMutableBuilder[Self <: InstanceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceMetadata](x: Self) {
     
-    @scala.inline
-    def setIdentityStoreId(value: Id): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
+    inline def setIdentityStoreId(value: Id): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityStoreIdUndefined: Self = StObject.set(x, "IdentityStoreId", js.undefined)
+    inline def setIdentityStoreIdUndefined: Self = StObject.set(x, "IdentityStoreId", js.undefined)
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArnUndefined: Self = StObject.set(x, "InstanceArn", js.undefined)
+    inline def setInstanceArnUndefined: Self = StObject.set(x, "InstanceArn", js.undefined)
   }
 }

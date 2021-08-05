@@ -11,31 +11,20 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTimeout(attempt: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimeout")(attempt.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def createTimeout(attempt: Double, options: CreateTimeoutOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeout")(attempt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def createTimeout(attempt: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimeout")(attempt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def createTimeout(attempt: Double, options: CreateTimeoutOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeout")(attempt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def operation(): RetryOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")().asInstanceOf[RetryOperation]
-  @scala.inline
-  def operation(options: OperationOptions): RetryOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")(options.asInstanceOf[js.Any]).asInstanceOf[RetryOperation]
+  inline def operation(): RetryOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")().asInstanceOf[RetryOperation]
+  inline def operation(options: OperationOptions): RetryOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("operation")(options.asInstanceOf[js.Any]).asInstanceOf[RetryOperation]
   
-  @scala.inline
-  def timeouts(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeouts")().asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def timeouts(options: TimeoutsOptions): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeouts")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def timeouts(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeouts")().asInstanceOf[js.Array[Double]]
+  inline def timeouts(options: TimeoutsOptions): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeouts")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def wrap(`object`: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def wrap(`object`: js.Object, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def wrap(`object`: js.Object, options: Unit, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def wrap(`object`: js.Object, options: OperationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def wrap(`object`: js.Object, options: OperationOptions, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrap(`object`: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def wrap(`object`: js.Object, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrap(`object`: js.Object, options: Unit, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrap(`object`: js.Object, options: OperationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrap(`object`: js.Object, options: OperationOptions, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AttemptTimeoutOptions extends StObject {
     
@@ -51,26 +40,20 @@ object mod {
   }
   object AttemptTimeoutOptions {
     
-    @scala.inline
-    def apply(): AttemptTimeoutOptions = {
+    inline def apply(): AttemptTimeoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttemptTimeoutOptions]
     }
     
-    @scala.inline
-    implicit class AttemptTimeoutOptionsMutableBuilder[Self <: AttemptTimeoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AttemptTimeoutOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -102,38 +85,28 @@ object mod {
   }
   object CreateTimeoutOptions {
     
-    @scala.inline
-    def apply(): CreateTimeoutOptions = {
+    inline def apply(): CreateTimeoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateTimeoutOptions]
     }
     
-    @scala.inline
-    implicit class CreateTimeoutOptionsMutableBuilder[Self <: CreateTimeoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTimeoutOptions](x: Self) {
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      @scala.inline
-      def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+      inline def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+      inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
       
-      @scala.inline
-      def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
+      inline def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
+      inline def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
       
-      @scala.inline
-      def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+      inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
+      inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
     }
   }
   
@@ -161,32 +134,24 @@ object mod {
   }
   object OperationOptions {
     
-    @scala.inline
-    def apply(): OperationOptions = {
+    inline def apply(): OperationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OperationOptions]
     }
     
-    @scala.inline
-    implicit class OperationOptionsMutableBuilder[Self <: OperationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OperationOptions](x: Self) {
       
-      @scala.inline
-      def setForever(value: Boolean): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
+      inline def setForever(value: Boolean): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeverUndefined: Self = StObject.set(x, "forever", js.undefined)
+      inline def setForeverUndefined: Self = StObject.set(x, "forever", js.undefined)
       
-      @scala.inline
-      def setMaxRetryTime(value: Double): Self = StObject.set(x, "maxRetryTime", value.asInstanceOf[js.Any])
+      inline def setMaxRetryTime(value: Double): Self = StObject.set(x, "maxRetryTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetryTimeUndefined: Self = StObject.set(x, "maxRetryTime", js.undefined)
+      inline def setMaxRetryTimeUndefined: Self = StObject.set(x, "maxRetryTime", js.undefined)
       
-      @scala.inline
-      def setUnref(value: Boolean): Self = StObject.set(x, "unref", value.asInstanceOf[js.Any])
+      inline def setUnref(value: Boolean): Self = StObject.set(x, "unref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnrefUndefined: Self = StObject.set(x, "unref", js.undefined)
+      inline def setUnrefUndefined: Self = StObject.set(x, "unref", js.undefined)
     }
   }
   
@@ -256,20 +221,16 @@ object mod {
   }
   object TimeoutsOptions {
     
-    @scala.inline
-    def apply(): TimeoutsOptions = {
+    inline def apply(): TimeoutsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeoutsOptions]
     }
     
-    @scala.inline
-    implicit class TimeoutsOptionsMutableBuilder[Self <: TimeoutsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimeoutsOptions](x: Self) {
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     }
   }
 }

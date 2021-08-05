@@ -32,8 +32,7 @@ trait PersistentVolumeClaimStatus extends StObject {
 }
 object PersistentVolumeClaimStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessModes: js.Array[String],
     capacity: StringDictionary[String],
     conditions: js.Array[PersistentVolumeClaimCondition],
@@ -43,25 +42,18 @@ object PersistentVolumeClaimStatus {
     __obj.asInstanceOf[PersistentVolumeClaimStatus]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimStatusMutableBuilder[Self <: PersistentVolumeClaimStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimStatus](x: Self) {
     
-    @scala.inline
-    def setAccessModes(value: js.Array[String]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
+    inline def setAccessModes(value: js.Array[String]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessModesVarargs(value: String*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
+    inline def setAccessModesVarargs(value: String*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
     
-    @scala.inline
-    def setCapacity(value: StringDictionary[String]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: StringDictionary[String]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditions(value: js.Array[PersistentVolumeClaimCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[PersistentVolumeClaimCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: PersistentVolumeClaimCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: PersistentVolumeClaimCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }
 }

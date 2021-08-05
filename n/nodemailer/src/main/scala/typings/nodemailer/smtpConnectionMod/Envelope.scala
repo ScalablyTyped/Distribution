@@ -24,40 +24,29 @@ trait Envelope extends StObject {
 }
 object Envelope {
   
-  @scala.inline
-  def apply(from: String | `false`, to: String | js.Array[String]): Envelope = {
+  inline def apply(from: String | `false`, to: String | js.Array[String]): Envelope = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Envelope]
   }
   
-  @scala.inline
-  implicit class EnvelopeMutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
+  extension [Self <: Envelope](x: Self) {
     
-    @scala.inline
-    def setDsn(value: DSNOptions): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
+    inline def setDsn(value: DSNOptions): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
+    inline def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String | `false`): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String | `false`): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTo(value: String | js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String | js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
     
-    @scala.inline
-    def setUse8BitMime(value: Boolean): Self = StObject.set(x, "use8BitMime", value.asInstanceOf[js.Any])
+    inline def setUse8BitMime(value: Boolean): Self = StObject.set(x, "use8BitMime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse8BitMimeUndefined: Self = StObject.set(x, "use8BitMime", js.undefined)
+    inline def setUse8BitMimeUndefined: Self = StObject.set(x, "use8BitMime", js.undefined)
   }
 }

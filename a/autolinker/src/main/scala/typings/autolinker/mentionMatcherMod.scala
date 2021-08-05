@@ -30,7 +30,7 @@ object mentionMatcherMod {
       * @private
       * @property {Object} matcherRegexes
       */
-    val matcherRegexes: StringDictionary[RegExp] = js.native
+    /* protected */ val matcherRegexes: StringDictionary[RegExp] = js.native
     
     /**
       * The regular expression to use to check the character before a username match to
@@ -41,7 +41,7 @@ object mentionMatcherMod {
       * @private
       * @property {RegExp} nonWordCharRegex
       */
-    val nonWordCharRegex: RegExp = js.native
+    /* protected */ val nonWordCharRegex: RegExp = js.native
     
     /**
       * @cfg {'twitter'/'instagram'/'soundcloud'} protected
@@ -50,7 +50,7 @@ object mentionMatcherMod {
       *
       * Valid values are: 'twitter', 'instagram', or 'soundcloud'
       */
-    var serviceName: MentionServices = js.native
+    /* protected */ var serviceName: MentionServices = js.native
   }
   
   trait MentionMatcherConfig
@@ -61,17 +61,14 @@ object mentionMatcherMod {
   }
   object MentionMatcherConfig {
     
-    @scala.inline
-    def apply(serviceName: MentionServices, tagBuilder: AnchorTagBuilder): MentionMatcherConfig = {
+    inline def apply(serviceName: MentionServices, tagBuilder: AnchorTagBuilder): MentionMatcherConfig = {
       val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
       __obj.asInstanceOf[MentionMatcherConfig]
     }
     
-    @scala.inline
-    implicit class MentionMatcherConfigMutableBuilder[Self <: MentionMatcherConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MentionMatcherConfig](x: Self) {
       
-      @scala.inline
-      def setServiceName(value: MentionServices): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: MentionServices): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
 }

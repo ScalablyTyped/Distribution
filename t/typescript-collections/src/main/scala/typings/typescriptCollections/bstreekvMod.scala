@@ -64,7 +64,7 @@ object bstreekvMod {
     /* CompleteClass */
     override def clear(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var compare: js.Any = js.native
     
     /**
@@ -79,8 +79,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def createNode(element: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def createNode(element: js.Any): js.Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in inorder.
@@ -102,8 +102,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def heightAux(node: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def heightAux(node: js.Any): js.Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in
@@ -117,11 +117,11 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def inorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def inorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def insertNode(node: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def insertNode(node: js.Any): js.Any = js.native
     
     /**
       * Returns true if this tree contains no elements.
@@ -142,8 +142,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def levelTraversalAux(node: js.Any, callback: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def levelTraversalAux(node: js.Any, callback: js.Any): js.Any = js.native
     
     /**
       * Returns the maximum element of this tree.
@@ -156,8 +156,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def maximumAux(node: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def maximumAux(node: js.Any): js.Any = js.native
     
     /**
       * Returns the minimum element of this tree.
@@ -170,10 +170,10 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def minimumAux(node: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def minimumAux(node: js.Any): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nElements: js.Any = js.native
     
     /**
@@ -187,8 +187,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def postorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def postorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in pre-order.
@@ -201,8 +201,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def preorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def preorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
     
     /**
       * Removes the specified element from this tree if it is present.
@@ -214,10 +214,10 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def removeNode(node: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def removeNode(node: js.Any): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var root: js.Any = js.native
     
     /**
@@ -231,8 +231,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def searchNode(node: js.Any, element: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def searchNode(node: js.Any, element: js.Any): js.Any = js.native
     
     /**
       * Returns the number of elements in this tree.
@@ -251,8 +251,8 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def transplant(n1: js.Any, n2: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def transplant(n1: js.Any, n2: js.Any): js.Any = js.native
   }
   
   trait BSTreeKV[K, V /* <: K */] extends StObject {
@@ -269,7 +269,7 @@ object bstreekvMod {
       */
     def clear(): Unit
     
-    var compare: js.Any
+    /* private */ var compare: js.Any
     
     /**
       * Returns true if this tree contains the specified element.
@@ -362,7 +362,7 @@ object bstreekvMod {
       */
     /* private */ def minimumAux(node: js.Any): js.Any
     
-    var nElements: js.Any
+    /* private */ var nElements: js.Any
     
     /**
       * Executes the provided function once for each element present in this tree in post-order.
@@ -399,7 +399,7 @@ object bstreekvMod {
       */
     /* private */ def removeNode(node: js.Any): js.Any
     
-    var root: js.Any
+    /* private */ var root: js.Any
     
     /**
       * Looks for the value with the provided search key.
@@ -432,8 +432,7 @@ object bstreekvMod {
   }
   object BSTreeKV {
     
-    @scala.inline
-    def apply[K, V /* <: K */](
+    inline def apply[K, V /* <: K */](
       add: V => Boolean,
       clear: () => Unit,
       compare: js.Any,
@@ -470,101 +469,69 @@ object bstreekvMod {
       __obj.asInstanceOf[BSTreeKV[K, V]]
     }
     
-    @scala.inline
-    implicit class BSTreeKVMutableBuilder[Self <: BSTreeKV[?, ?], K, V /* <: K */] (val x: Self & (BSTreeKV[K, V])) extends AnyVal {
+    extension [Self <: BSTreeKV[?, ?], K, V /* <: K */](x: Self & (BSTreeKV[K, V])) {
       
-      @scala.inline
-      def setAdd(value: V => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: V => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+      inline def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContains(value: K => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: K => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateNode(value: js.Any => js.Any): Self = StObject.set(x, "createNode", js.Any.fromFunction1(value))
+      inline def setCreateNode(value: js.Any => js.Any): Self = StObject.set(x, "createNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+      inline def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeightAux(value: js.Any => js.Any): Self = StObject.set(x, "heightAux", js.Any.fromFunction1(value))
+      inline def setHeightAux(value: js.Any => js.Any): Self = StObject.set(x, "heightAux", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "inorderTraversal", js.Any.fromFunction1(value))
+      inline def setInorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "inorderTraversal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "inorderTraversalAux", js.Any.fromFunction3(value))
+      inline def setInorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "inorderTraversalAux", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInsertNode(value: js.Any => js.Any): Self = StObject.set(x, "insertNode", js.Any.fromFunction1(value))
+      inline def setInsertNode(value: js.Any => js.Any): Self = StObject.set(x, "insertNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLevelTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "levelTraversal", js.Any.fromFunction1(value))
+      inline def setLevelTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "levelTraversal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLevelTraversalAux(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "levelTraversalAux", js.Any.fromFunction2(value))
+      inline def setLevelTraversalAux(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "levelTraversalAux", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMaximum(value: () => js.UndefOr[V]): Self = StObject.set(x, "maximum", js.Any.fromFunction0(value))
+      inline def setMaximum(value: () => js.UndefOr[V]): Self = StObject.set(x, "maximum", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaximumAux(value: js.Any => js.Any): Self = StObject.set(x, "maximumAux", js.Any.fromFunction1(value))
+      inline def setMaximumAux(value: js.Any => js.Any): Self = StObject.set(x, "maximumAux", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMinimum(value: () => js.UndefOr[V]): Self = StObject.set(x, "minimum", js.Any.fromFunction0(value))
+      inline def setMinimum(value: () => js.UndefOr[V]): Self = StObject.set(x, "minimum", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMinimumAux(value: js.Any => js.Any): Self = StObject.set(x, "minimumAux", js.Any.fromFunction1(value))
+      inline def setMinimumAux(value: js.Any => js.Any): Self = StObject.set(x, "minimumAux", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNElements(value: js.Any): Self = StObject.set(x, "nElements", value.asInstanceOf[js.Any])
+      inline def setNElements(value: js.Any): Self = StObject.set(x, "nElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "postorderTraversal", js.Any.fromFunction1(value))
+      inline def setPostorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "postorderTraversal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "postorderTraversalAux", js.Any.fromFunction3(value))
+      inline def setPostorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "postorderTraversalAux", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPreorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "preorderTraversal", js.Any.fromFunction1(value))
+      inline def setPreorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "preorderTraversal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "preorderTraversalAux", js.Any.fromFunction3(value))
+      inline def setPreorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "preorderTraversalAux", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemove(value: K => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: K => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveNode(value: js.Any => js.Any): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
+      inline def setRemoveNode(value: js.Any => js.Any): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: K => js.UndefOr[V]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(value: K => js.UndefOr[V]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSearchNode(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "searchNode", js.Any.fromFunction2(value))
+      inline def setSearchNode(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "searchNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[V]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[V]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTransplant(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "transplant", js.Any.fromFunction2(value))
+      inline def setTransplant(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "transplant", js.Any.fromFunction2(value))
     }
   }
 }

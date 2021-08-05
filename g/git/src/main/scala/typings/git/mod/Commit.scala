@@ -64,23 +64,15 @@ object Commit {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def count(repo: js.Any, ref: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def count(repo: js.Any, ref: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def diff(repo: js.Any, a: js.Any, b: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diff(repo: js.Any, a: js.Any, b: js.Any, paths: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diff(repo: js.Any, a: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diff(repo: js.Any, a: js.Any, b: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diff(repo: js.Any, a: js.Any, b: js.Any, paths: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diff(repo: js.Any, a: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def find_all(repo: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def find_all(repo: js.Any, reference: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def find_all(repo: js.Any, reference: js.Any, options: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def find_all(repo: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def find_all(repo: js.Any, reference: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def find_all(repo: js.Any, reference: js.Any, options: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def list_from_string(repo: js.Any, text: js.Any): js.Array[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Array[Commit]]
+  inline def list_from_string(repo: js.Any, text: js.Any): js.Array[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Array[Commit]]
 }

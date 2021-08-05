@@ -18,19 +18,15 @@ trait MouseUp
 }
 object MouseUp {
   
-  @scala.inline
-  def apply(): MouseUp = {
+  inline def apply(): MouseUp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MouseUp]
   }
   
-  @scala.inline
-  implicit class MouseUpMutableBuilder[Self <: MouseUp] (val x: Self) extends AnyVal {
+  extension [Self <: MouseUp](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

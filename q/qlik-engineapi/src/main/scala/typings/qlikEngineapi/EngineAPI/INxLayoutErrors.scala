@@ -16,16 +16,13 @@ trait INxLayoutErrors extends StObject {
 }
 object INxLayoutErrors {
   
-  @scala.inline
-  def apply(ErrorCode: Double): INxLayoutErrors = {
+  inline def apply(ErrorCode: Double): INxLayoutErrors = {
     val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxLayoutErrors]
   }
   
-  @scala.inline
-  implicit class INxLayoutErrorsMutableBuilder[Self <: INxLayoutErrors] (val x: Self) extends AnyVal {
+  extension [Self <: INxLayoutErrors](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
   }
 }

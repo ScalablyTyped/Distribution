@@ -23,31 +23,23 @@ trait Deinterlacer extends StObject {
 }
 object Deinterlacer {
   
-  @scala.inline
-  def apply(): Deinterlacer = {
+  inline def apply(): Deinterlacer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deinterlacer]
   }
   
-  @scala.inline
-  implicit class DeinterlacerMutableBuilder[Self <: Deinterlacer] (val x: Self) extends AnyVal {
+  extension [Self <: Deinterlacer](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: DeinterlaceAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: DeinterlaceAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "Algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "Algorithm", js.undefined)
     
-    @scala.inline
-    def setControl(value: DeinterlacerControl): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+    inline def setControl(value: DeinterlacerControl): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "Control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "Control", js.undefined)
     
-    @scala.inline
-    def setMode(value: DeinterlacerMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: DeinterlacerMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
   }
 }

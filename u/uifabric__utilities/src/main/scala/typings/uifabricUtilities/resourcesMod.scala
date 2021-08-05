@@ -10,9 +10,7 @@ object resourcesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getResourceUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getResourceUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def setBaseUrl(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBaseUrl(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -14,34 +14,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(hashname: md5): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: md5, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: none): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: none, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: ripemd160): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: ripemd160, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: sha1): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: sha1, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: sha256): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: sha256, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: sha512): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: sha512, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: whirlpool): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  @scala.inline
-  def apply(hashname: whirlpool, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: md5): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(hashname: md5, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: none): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(hashname: none, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: ripemd160): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(hashname: ripemd160, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: sha1): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(hashname: sha1, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: sha256): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(hashname: sha256, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: sha512): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(hashname: sha512, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: whirlpool): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(hashname: whirlpool, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
   
   @JSImport("merkle", JSImport.Namespace)
   @js.native
@@ -71,8 +57,7 @@ object mod {
   }
   object MerkleTree {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       depth: () => Double,
       level: Double => js.UndefOr[Double],
       levels: () => Double,
@@ -83,23 +68,17 @@ object mod {
       __obj.asInstanceOf[MerkleTree]
     }
     
-    @scala.inline
-    implicit class MerkleTreeMutableBuilder[Self <: MerkleTree] (val x: Self) extends AnyVal {
+    extension [Self <: MerkleTree](x: Self) {
       
-      @scala.inline
-      def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
+      inline def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLevel(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "level", js.Any.fromFunction1(value))
+      inline def setLevel(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "level", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLevels(value: () => Double): Self = StObject.set(x, "levels", js.Any.fromFunction0(value))
+      inline def setLevels(value: () => Double): Self = StObject.set(x, "levels", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNodes(value: () => Double): Self = StObject.set(x, "nodes", js.Any.fromFunction0(value))
+      inline def setNodes(value: () => Double): Self = StObject.set(x, "nodes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRoot(value: () => String): Self = StObject.set(x, "root", js.Any.fromFunction0(value))
+      inline def setRoot(value: () => String): Self = StObject.set(x, "root", js.Any.fromFunction0(value))
     }
   }
 }

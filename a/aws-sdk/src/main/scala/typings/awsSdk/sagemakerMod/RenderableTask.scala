@@ -13,16 +13,13 @@ trait RenderableTask extends StObject {
 }
 object RenderableTask {
   
-  @scala.inline
-  def apply(Input: TaskInput): RenderableTask = {
+  inline def apply(Input: TaskInput): RenderableTask = {
     val __obj = js.Dynamic.literal(Input = Input.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderableTask]
   }
   
-  @scala.inline
-  implicit class RenderableTaskMutableBuilder[Self <: RenderableTask] (val x: Self) extends AnyVal {
+  extension [Self <: RenderableTask](x: Self) {
     
-    @scala.inline
-    def setInput(value: TaskInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: TaskInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
   }
 }

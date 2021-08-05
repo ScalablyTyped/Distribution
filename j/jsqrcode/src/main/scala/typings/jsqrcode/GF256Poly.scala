@@ -14,7 +14,7 @@ trait GF256Poly extends StObject {
   
   def addOrSubtract(other: GF256Poly): GF256Poly
   
-  var coefficients: js.Array[Double]
+  /* private */ var coefficients: js.Array[Double]
   
   def divide(other: GF256Poly): js.Tuple2[GF256Poly, GF256Poly]
   
@@ -32,8 +32,7 @@ trait GF256Poly extends StObject {
 }
 object GF256Poly {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Coefficients: js.Array[Double],
     Degree: Double,
     Zero: Boolean,
@@ -51,43 +50,30 @@ object GF256Poly {
     __obj.asInstanceOf[GF256Poly]
   }
   
-  @scala.inline
-  implicit class GF256PolyMutableBuilder[Self <: GF256Poly] (val x: Self) extends AnyVal {
+  extension [Self <: GF256Poly](x: Self) {
     
-    @scala.inline
-    def setAddOrSubtract(value: GF256Poly => GF256Poly): Self = StObject.set(x, "addOrSubtract", js.Any.fromFunction1(value))
+    inline def setAddOrSubtract(value: GF256Poly => GF256Poly): Self = StObject.set(x, "addOrSubtract", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCoefficients(value: js.Array[Double]): Self = StObject.set(x, "Coefficients", value.asInstanceOf[js.Any])
+    inline def setCoefficients(value: js.Array[Double]): Self = StObject.set(x, "Coefficients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoefficientsVarargs(value: Double*): Self = StObject.set(x, "Coefficients", js.Array(value :_*))
+    inline def setCoefficientsVarargs(value: Double*): Self = StObject.set(x, "Coefficients", js.Array(value :_*))
     
-    @scala.inline
-    def setDegree(value: Double): Self = StObject.set(x, "Degree", value.asInstanceOf[js.Any])
+    inline def setDegree(value: Double): Self = StObject.set(x, "Degree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivide(value: GF256Poly => js.Tuple2[GF256Poly, GF256Poly]): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
+    inline def setDivide(value: GF256Poly => js.Tuple2[GF256Poly, GF256Poly]): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvaluateAt(value: Double => Double): Self = StObject.set(x, "evaluateAt", js.Any.fromFunction1(value))
+    inline def setEvaluateAt(value: Double => Double): Self = StObject.set(x, "evaluateAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setField(value: GF256): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: GF256): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCoefficient(value: Double => Double): Self = StObject.set(x, "getCoefficient", js.Any.fromFunction1(value))
+    inline def setGetCoefficient(value: Double => Double): Self = StObject.set(x, "getCoefficient", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMultiply1(value: GF256Poly => GF256Poly): Self = StObject.set(x, "multiply1", js.Any.fromFunction1(value))
+    inline def setMultiply1(value: GF256Poly => GF256Poly): Self = StObject.set(x, "multiply1", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMultiply2(value: Double => GF256Poly): Self = StObject.set(x, "multiply2", js.Any.fromFunction1(value))
+    inline def setMultiply2(value: Double => GF256Poly): Self = StObject.set(x, "multiply2", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMultiplyByMonomial(value: (Double, Double) => GF256Poly): Self = StObject.set(x, "multiplyByMonomial", js.Any.fromFunction2(value))
+    inline def setMultiplyByMonomial(value: (Double, Double) => GF256Poly): Self = StObject.set(x, "multiplyByMonomial", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setZero(value: Boolean): Self = StObject.set(x, "Zero", value.asInstanceOf[js.Any])
+    inline def setZero(value: Boolean): Self = StObject.set(x, "Zero", value.asInstanceOf[js.Any])
   }
 }

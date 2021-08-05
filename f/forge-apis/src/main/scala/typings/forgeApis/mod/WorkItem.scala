@@ -24,52 +24,37 @@ trait WorkItem extends StObject {
 }
 object WorkItem {
   
-  @scala.inline
-  def apply(ActivityId: String, Arguments: js.Object, Id: String): WorkItem = {
+  inline def apply(ActivityId: String, Arguments: js.Object, Id: String): WorkItem = {
     val __obj = js.Dynamic.literal(ActivityId = ActivityId.asInstanceOf[js.Any], Arguments = Arguments.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItem]
   }
   
-  @scala.inline
-  implicit class WorkItemMutableBuilder[Self <: WorkItem] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItem](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: String): Self = StObject.set(x, "ActivityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: String): Self = StObject.set(x, "ActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArguments(value: js.Object): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Object): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetail(value: js.Object): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
+    inline def setStatusDetail(value: js.Object): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
+    inline def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

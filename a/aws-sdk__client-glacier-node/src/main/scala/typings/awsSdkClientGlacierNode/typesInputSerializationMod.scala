@@ -17,20 +17,16 @@ object typesInputSerializationMod {
   }
   object InputSerialization {
     
-    @scala.inline
-    def apply(): InputSerialization = {
+    inline def apply(): InputSerialization = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputSerialization]
     }
     
-    @scala.inline
-    implicit class InputSerializationMutableBuilder[Self <: InputSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: InputSerialization](x: Self) {
       
-      @scala.inline
-      def setCsv(value: CSVInput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+      inline def setCsv(value: CSVInput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+      inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
     }
   }
   
@@ -46,20 +42,16 @@ object typesInputSerializationMod {
   }
   object UnmarshalledInputSerialization {
     
-    @scala.inline
-    def apply(): UnmarshalledInputSerialization = {
+    inline def apply(): UnmarshalledInputSerialization = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledInputSerialization]
     }
     
-    @scala.inline
-    implicit class UnmarshalledInputSerializationMutableBuilder[Self <: UnmarshalledInputSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledInputSerialization](x: Self) {
       
-      @scala.inline
-      def setCsv(value: UnmarshalledCSVInput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+      inline def setCsv(value: UnmarshalledCSVInput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+      inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
     }
   }
 }

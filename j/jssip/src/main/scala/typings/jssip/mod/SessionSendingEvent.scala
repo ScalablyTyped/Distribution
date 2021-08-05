@@ -10,16 +10,13 @@ trait SessionSendingEvent extends StObject {
 }
 object SessionSendingEvent {
   
-  @scala.inline
-  def apply(request: OutgoingRequest): SessionSendingEvent = {
+  inline def apply(request: OutgoingRequest): SessionSendingEvent = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionSendingEvent]
   }
   
-  @scala.inline
-  implicit class SessionSendingEventMutableBuilder[Self <: SessionSendingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionSendingEvent](x: Self) {
     
-    @scala.inline
-    def setRequest(value: OutgoingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: OutgoingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

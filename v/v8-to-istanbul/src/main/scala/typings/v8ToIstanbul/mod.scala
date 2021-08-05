@@ -9,37 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(scriptPath: String): V8ToIstanbul = ^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any]).asInstanceOf[V8ToIstanbul]
-  @scala.inline
-  def apply(scriptPath: String, wrapperLength: Double): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
-  @scala.inline
-  def apply(
+  inline def apply(scriptPath: String): V8ToIstanbul = ^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any]).asInstanceOf[V8ToIstanbul]
+  inline def apply(scriptPath: String, wrapperLength: Double): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  inline def apply(
     scriptPath: String,
     wrapperLength: Double,
     sources: Unit,
     excludePath: js.Function1[/* path */ String, Boolean]
   ): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], excludePath.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
-  @scala.inline
-  def apply(scriptPath: String, wrapperLength: Double, sources: Sources): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
-  @scala.inline
-  def apply(
+  inline def apply(scriptPath: String, wrapperLength: Double, sources: Sources): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  inline def apply(
     scriptPath: String,
     wrapperLength: Double,
     sources: Sources,
     excludePath: js.Function1[/* path */ String, Boolean]
   ): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], excludePath.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
-  @scala.inline
-  def apply(
+  inline def apply(
     scriptPath: String,
     wrapperLength: Unit,
     sources: Unit,
     excludePath: js.Function1[/* path */ String, Boolean]
   ): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], excludePath.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
-  @scala.inline
-  def apply(scriptPath: String, wrapperLength: Unit, sources: Sources): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
-  @scala.inline
-  def apply(
+  inline def apply(scriptPath: String, wrapperLength: Unit, sources: Sources): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  inline def apply(
     scriptPath: String,
     wrapperLength: Unit,
     sources: Sources,
@@ -57,14 +49,12 @@ object mod {
   trait Sources extends StObject
   object Sources {
     
-    @scala.inline
-    def OriginalSource(originalSource: String, source: String, sourceMap: Sourcemap): typings.v8ToIstanbul.anon.OriginalSource = {
+    inline def OriginalSource(originalSource: String, source: String, sourceMap: Sourcemap): typings.v8ToIstanbul.anon.OriginalSource = {
       val __obj = js.Dynamic.literal(originalSource = originalSource.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceMap = sourceMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.v8ToIstanbul.anon.OriginalSource]
     }
     
-    @scala.inline
-    def Source(source: String): typings.v8ToIstanbul.anon.Source = {
+    inline def Source(source: String): typings.v8ToIstanbul.anon.Source = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.v8ToIstanbul.anon.Source]
     }
@@ -80,8 +70,7 @@ object mod {
   }
   object V8ToIstanbul {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applyCoverage: js.Array[FunctionCoverage] => Unit,
       load: () => js.Promise[Unit],
       toIstanbul: () => CoverageMapData
@@ -90,17 +79,13 @@ object mod {
       __obj.asInstanceOf[V8ToIstanbul]
     }
     
-    @scala.inline
-    implicit class V8ToIstanbulMutableBuilder[Self <: V8ToIstanbul] (val x: Self) extends AnyVal {
+    extension [Self <: V8ToIstanbul](x: Self) {
       
-      @scala.inline
-      def setApplyCoverage(value: js.Array[FunctionCoverage] => Unit): Self = StObject.set(x, "applyCoverage", js.Any.fromFunction1(value))
+      inline def setApplyCoverage(value: js.Array[FunctionCoverage] => Unit): Self = StObject.set(x, "applyCoverage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToIstanbul(value: () => CoverageMapData): Self = StObject.set(x, "toIstanbul", js.Any.fromFunction0(value))
+      inline def setToIstanbul(value: () => CoverageMapData): Self = StObject.set(x, "toIstanbul", js.Any.fromFunction0(value))
     }
   }
 }

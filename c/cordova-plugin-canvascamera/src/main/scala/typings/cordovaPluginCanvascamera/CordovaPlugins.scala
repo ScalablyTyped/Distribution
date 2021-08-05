@@ -13,16 +13,13 @@ trait CordovaPlugins extends StObject {
 }
 object CordovaPlugins {
   
-  @scala.inline
-  def apply(CanvasCamera: CanvasCamera): CordovaPlugins = {
+  inline def apply(CanvasCamera: CanvasCamera): CordovaPlugins = {
     val __obj = js.Dynamic.literal(CanvasCamera = CanvasCamera.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPlugins](x: Self) {
     
-    @scala.inline
-    def setCanvasCamera(value: CanvasCamera): Self = StObject.set(x, "CanvasCamera", value.asInstanceOf[js.Any])
+    inline def setCanvasCamera(value: CanvasCamera): Self = StObject.set(x, "CanvasCamera", value.asInstanceOf[js.Any])
   }
 }

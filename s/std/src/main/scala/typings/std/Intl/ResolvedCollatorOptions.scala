@@ -22,8 +22,7 @@ trait ResolvedCollatorOptions extends StObject {
 }
 object ResolvedCollatorOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caseFirst: String,
     collation: String,
     ignorePunctuation: Boolean,
@@ -36,28 +35,20 @@ object ResolvedCollatorOptions {
     __obj.asInstanceOf[ResolvedCollatorOptions]
   }
   
-  @scala.inline
-  implicit class ResolvedCollatorOptionsMutableBuilder[Self <: ResolvedCollatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedCollatorOptions](x: Self) {
     
-    @scala.inline
-    def setCaseFirst(value: String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
+    inline def setCaseFirst(value: String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+    inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePunctuation(value: Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
+    inline def setIgnorePunctuation(value: Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+    inline def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
   }
 }

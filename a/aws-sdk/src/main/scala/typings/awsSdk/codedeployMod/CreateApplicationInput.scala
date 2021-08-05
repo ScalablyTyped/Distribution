@@ -23,31 +23,23 @@ trait CreateApplicationInput extends StObject {
 }
 object CreateApplicationInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName): CreateApplicationInput = {
+  inline def apply(applicationName: ApplicationName): CreateApplicationInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationInput]
   }
   
-  @scala.inline
-  implicit class CreateApplicationInputMutableBuilder[Self <: CreateApplicationInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateApplicationInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+    inline def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+    inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

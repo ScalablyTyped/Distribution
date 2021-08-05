@@ -10,6 +10,5 @@ object factorialMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

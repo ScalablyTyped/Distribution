@@ -10,10 +10,8 @@ object findIndexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](arr: js.Array[T], predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default[T](
+  inline def default[T](arr: js.Array[T], predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default[T](
     arr: js.Array[T],
     predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean],
     fromIndex: Double

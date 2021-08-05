@@ -30,8 +30,7 @@ trait XEncryptionProtectedSource2
 }
 object XEncryptionProtectedSource2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     hasEncryptionData: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -44,13 +43,10 @@ object XEncryptionProtectedSource2 {
     __obj.asInstanceOf[XEncryptionProtectedSource2]
   }
   
-  @scala.inline
-  implicit class XEncryptionProtectedSource2MutableBuilder[Self <: XEncryptionProtectedSource2] (val x: Self) extends AnyVal {
+  extension [Self <: XEncryptionProtectedSource2](x: Self) {
     
-    @scala.inline
-    def setHasEncryptionData(value: () => Boolean): Self = StObject.set(x, "hasEncryptionData", js.Any.fromFunction0(value))
+    inline def setHasEncryptionData(value: () => Boolean): Self = StObject.set(x, "hasEncryptionData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEncryptionData(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "setEncryptionData", js.Any.fromFunction1(value))
+    inline def setSetEncryptionData(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "setEncryptionData", js.Any.fromFunction1(value))
   }
 }

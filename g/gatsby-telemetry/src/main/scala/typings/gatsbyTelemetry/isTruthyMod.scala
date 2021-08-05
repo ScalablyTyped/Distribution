@@ -10,6 +10,5 @@ object isTruthyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isTruthy(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTruthy")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTruthy(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTruthy")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

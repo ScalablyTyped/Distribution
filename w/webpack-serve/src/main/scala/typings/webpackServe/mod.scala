@@ -25,8 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(argv: js.Object, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(argv: js.Object, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   @JSImport("webpack-serve", JSImport.Namespace)
   @js.native
@@ -46,8 +45,7 @@ object mod {
   }
   object EventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `build-finished`: Stats,
       `build-started`: Compiler,
       `compiler-error`: Stats,
@@ -62,23 +60,17 @@ object mod {
       __obj.asInstanceOf[EventMap]
     }
     
-    @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+    extension [Self <: EventMap](x: Self) {
       
-      @scala.inline
-      def `setBuild-finished`(value: Stats): Self = StObject.set(x, "build-finished", value.asInstanceOf[js.Any])
+      inline def `setBuild-finished`(value: Stats): Self = StObject.set(x, "build-finished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBuild-started`(value: Compiler): Self = StObject.set(x, "build-started", value.asInstanceOf[js.Any])
+      inline def `setBuild-started`(value: Compiler): Self = StObject.set(x, "build-started", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCompiler-error`(value: Stats): Self = StObject.set(x, "compiler-error", value.asInstanceOf[js.Any])
+      inline def `setCompiler-error`(value: Stats): Self = StObject.set(x, "compiler-error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCompiler-warning`(value: Stats): Self = StObject.set(x, "compiler-warning", value.asInstanceOf[js.Any])
+      inline def `setCompiler-warning`(value: Stats): Self = StObject.set(x, "compiler-warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListening(value: typings.webpackServe.anon.Options): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
+      inline def setListening(value: typings.webpackServe.anon.Options): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,17 +91,14 @@ object mod {
   }
   object InitializedOptions {
     
-    @scala.inline
-    def apply(protocol: http | https): InitializedOptions = {
+    inline def apply(protocol: http | https): InitializedOptions = {
       val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitializedOptions]
     }
     
-    @scala.inline
-    implicit class InitializedOptionsMutableBuilder[Self <: InitializedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitializedOptions](x: Self) {
       
-      @scala.inline
-      def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,20 +112,16 @@ object mod {
   }
   object Middleware {
     
-    @scala.inline
-    def apply(content: () => Unit, webpack: () => Unit): Middleware = {
+    inline def apply(content: () => Unit, webpack: () => Unit): Middleware = {
       val __obj = js.Dynamic.literal(content = js.Any.fromFunction0(content), webpack = js.Any.fromFunction0(webpack))
       __obj.asInstanceOf[Middleware]
     }
     
-    @scala.inline
-    implicit class MiddlewareMutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
+    extension [Self <: Middleware](x: Self) {
       
-      @scala.inline
-      def setContent(value: () => Unit): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
+      inline def setContent(value: () => Unit): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWebpack(value: () => Unit): Self = StObject.set(x, "webpack", js.Any.fromFunction0(value))
+      inline def setWebpack(value: () => Unit): Self = StObject.set(x, "webpack", js.Any.fromFunction0(value))
     }
   }
   
@@ -155,44 +140,32 @@ object mod {
   }
   object OnOptions {
     
-    @scala.inline
-    def apply(): OnOptions = {
+    inline def apply(): OnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnOptions]
     }
     
-    @scala.inline
-    implicit class OnOptionsMutableBuilder[Self <: OnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnOptions](x: Self) {
       
-      @scala.inline
-      def `setBuild-finished`(value: /* args */ Stats => Unit): Self = StObject.set(x, "build-finished", js.Any.fromFunction1(value))
+      inline def `setBuild-finished`(value: /* args */ Stats => Unit): Self = StObject.set(x, "build-finished", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def `setBuild-finishedUndefined`: Self = StObject.set(x, "build-finished", js.undefined)
+      inline def `setBuild-finishedUndefined`: Self = StObject.set(x, "build-finished", js.undefined)
       
-      @scala.inline
-      def `setBuild-started`(value: /* args */ Compiler => Unit): Self = StObject.set(x, "build-started", js.Any.fromFunction1(value))
+      inline def `setBuild-started`(value: /* args */ Compiler => Unit): Self = StObject.set(x, "build-started", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def `setBuild-startedUndefined`: Self = StObject.set(x, "build-started", js.undefined)
+      inline def `setBuild-startedUndefined`: Self = StObject.set(x, "build-started", js.undefined)
       
-      @scala.inline
-      def `setCompiler-error`(value: /* args */ Stats => Unit): Self = StObject.set(x, "compiler-error", js.Any.fromFunction1(value))
+      inline def `setCompiler-error`(value: /* args */ Stats => Unit): Self = StObject.set(x, "compiler-error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def `setCompiler-errorUndefined`: Self = StObject.set(x, "compiler-error", js.undefined)
+      inline def `setCompiler-errorUndefined`: Self = StObject.set(x, "compiler-error", js.undefined)
       
-      @scala.inline
-      def `setCompiler-warning`(value: /* args */ Stats => Unit): Self = StObject.set(x, "compiler-warning", js.Any.fromFunction1(value))
+      inline def `setCompiler-warning`(value: /* args */ Stats => Unit): Self = StObject.set(x, "compiler-warning", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def `setCompiler-warningUndefined`: Self = StObject.set(x, "compiler-warning", js.undefined)
+      inline def `setCompiler-warningUndefined`: Self = StObject.set(x, "compiler-warning", js.undefined)
       
-      @scala.inline
-      def setListening(value: /* args */ typings.webpackServe.anon.Options => Unit): Self = StObject.set(x, "listening", js.Any.fromFunction1(value))
+      inline def setListening(value: /* args */ typings.webpackServe.anon.Options => Unit): Self = StObject.set(x, "listening", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListeningUndefined: Self = StObject.set(x, "listening", js.undefined)
+      inline def setListeningUndefined: Self = StObject.set(x, "listening", js.undefined)
     }
   }
   
@@ -206,26 +179,20 @@ object mod {
   }
   object OpenOptions {
     
-    @scala.inline
-    def apply(): OpenOptions = {
+    inline def apply(): OpenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenOptions]
     }
     
-    @scala.inline
-    implicit class OpenOptionsMutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -284,111 +251,78 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (/* app */ InitializedKoa, /* middleware */ Middleware, Options) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
+      inline def setAdd(value: (/* app */ InitializedKoa, /* middleware */ Middleware, Options) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+      inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      @scala.inline
-      def setClipboard(value: Boolean): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+      inline def setClipboard(value: Boolean): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
+      inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
       
-      @scala.inline
-      def setCompiler(
+      inline def setCompiler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
       ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
+      inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
       
-      @scala.inline
-      def setConfig(
+      inline def setConfig(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
       ): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setDevMiddleware(value: typings.webpackDevMiddleware.mod.Options): Self = StObject.set(x, "devMiddleware", value.asInstanceOf[js.Any])
+      inline def setDevMiddleware(value: typings.webpackDevMiddleware.mod.Options): Self = StObject.set(x, "devMiddleware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevMiddlewareUndefined: Self = StObject.set(x, "devMiddleware", js.undefined)
+      inline def setDevMiddlewareUndefined: Self = StObject.set(x, "devMiddleware", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setHotClient(value: typings.webpackHotClient.mod.Options | Boolean): Self = StObject.set(x, "hotClient", value.asInstanceOf[js.Any])
+      inline def setHotClient(value: typings.webpackHotClient.mod.Options | Boolean): Self = StObject.set(x, "hotClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotClientUndefined: Self = StObject.set(x, "hotClient", js.undefined)
+      inline def setHotClientUndefined: Self = StObject.set(x, "hotClient", js.undefined)
       
-      @scala.inline
-      def setHttp2(value: Boolean): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
+      inline def setHttp2(value: Boolean): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
+      inline def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
       
-      @scala.inline
-      def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: trace | debug | info | warn | error | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: trace | debug | info | warn | error | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setLogTime(value: Boolean): Self = StObject.set(x, "logTime", value.asInstanceOf[js.Any])
+      inline def setLogTime(value: Boolean): Self = StObject.set(x, "logTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogTimeUndefined: Self = StObject.set(x, "logTime", js.undefined)
+      inline def setLogTimeUndefined: Self = StObject.set(x, "logTime", js.undefined)
       
-      @scala.inline
-      def setOn(value: OnOptions): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: OnOptions): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      @scala.inline
-      def setOpen(value: OpenOptions | Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: OpenOptions | Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -423,20 +357,16 @@ object mod {
     }
     object Configuration {
       
-      @scala.inline
-      def apply(): Configuration = {
+      inline def apply(): Configuration = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Configuration]
       }
       
-      @scala.inline
-      implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+      extension [Self <: Configuration](x: Self) {
         
-        @scala.inline
-        def setServe(value: Options): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
+        inline def setServe(value: Options): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServeUndefined: Self = StObject.set(x, "serve", js.undefined)
+        inline def setServeUndefined: Self = StObject.set(x, "serve", js.undefined)
       }
     }
   }

@@ -55,61 +55,43 @@ trait LanguageConfiguration extends StObject {
 }
 object LanguageConfiguration {
   
-  @scala.inline
-  def apply(): LanguageConfiguration = {
+  inline def apply(): LanguageConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageConfiguration]
   }
   
-  @scala.inline
-  implicit class LanguageConfigurationMutableBuilder[Self <: LanguageConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageConfiguration](x: Self) {
     
-    @scala.inline
-    def setBrackets(value: js.Array[CharacterPair]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
+    inline def setBrackets(value: js.Array[CharacterPair]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
+    inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
-    @scala.inline
-    def setBracketsVarargs(value: CharacterPair*): Self = StObject.set(x, "brackets", js.Array(value :_*))
+    inline def setBracketsVarargs(value: CharacterPair*): Self = StObject.set(x, "brackets", js.Array(value :_*))
     
-    @scala.inline
-    def setComments(value: CommentRule): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: CommentRule): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setIndentationRules(value: IndentationRule): Self = StObject.set(x, "indentationRules", value.asInstanceOf[js.Any])
+    inline def setIndentationRules(value: IndentationRule): Self = StObject.set(x, "indentationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentationRulesUndefined: Self = StObject.set(x, "indentationRules", js.undefined)
+    inline def setIndentationRulesUndefined: Self = StObject.set(x, "indentationRules", js.undefined)
     
-    @scala.inline
-    def setOnEnterRules(value: js.Array[OnEnterRule]): Self = StObject.set(x, "onEnterRules", value.asInstanceOf[js.Any])
+    inline def setOnEnterRules(value: js.Array[OnEnterRule]): Self = StObject.set(x, "onEnterRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEnterRulesUndefined: Self = StObject.set(x, "onEnterRules", js.undefined)
+    inline def setOnEnterRulesUndefined: Self = StObject.set(x, "onEnterRules", js.undefined)
     
-    @scala.inline
-    def setOnEnterRulesVarargs(value: OnEnterRule*): Self = StObject.set(x, "onEnterRules", js.Array(value :_*))
+    inline def setOnEnterRulesVarargs(value: OnEnterRule*): Self = StObject.set(x, "onEnterRules", js.Array(value :_*))
     
-    @scala.inline
-    def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
+    inline def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
+    inline def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
     
-    @scala.inline
-    def set__characterPairSupport(value: AutoClosingPairs): Self = StObject.set(x, "__characterPairSupport", value.asInstanceOf[js.Any])
+    inline def set__characterPairSupport(value: AutoClosingPairs): Self = StObject.set(x, "__characterPairSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__characterPairSupportUndefined: Self = StObject.set(x, "__characterPairSupport", js.undefined)
+    inline def set__characterPairSupportUndefined: Self = StObject.set(x, "__characterPairSupport", js.undefined)
     
-    @scala.inline
-    def set__electricCharacterSupport(value: Brackets): Self = StObject.set(x, "__electricCharacterSupport", value.asInstanceOf[js.Any])
+    inline def set__electricCharacterSupport(value: Brackets): Self = StObject.set(x, "__electricCharacterSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__electricCharacterSupportUndefined: Self = StObject.set(x, "__electricCharacterSupport", js.undefined)
+    inline def set__electricCharacterSupportUndefined: Self = StObject.set(x, "__electricCharacterSupport", js.undefined)
   }
 }

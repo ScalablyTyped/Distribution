@@ -18,25 +18,19 @@ trait LabelClickEventUIParam extends StObject {
 }
 object LabelClickEventUIParam {
   
-  @scala.inline
-  def apply(): LabelClickEventUIParam = {
+  inline def apply(): LabelClickEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelClickEventUIParam]
   }
   
-  @scala.inline
-  implicit class LabelClickEventUIParamMutableBuilder[Self <: LabelClickEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: LabelClickEventUIParam](x: Self) {
     
-    @scala.inline
-    def setAllowSliceClick(value: js.Any): Self = StObject.set(x, "allowSliceClick", value.asInstanceOf[js.Any])
+    inline def setAllowSliceClick(value: js.Any): Self = StObject.set(x, "allowSliceClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSliceClickUndefined: Self = StObject.set(x, "allowSliceClick", js.undefined)
+    inline def setAllowSliceClickUndefined: Self = StObject.set(x, "allowSliceClick", js.undefined)
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

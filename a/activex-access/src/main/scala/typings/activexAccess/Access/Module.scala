@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Module extends StObject {
   
-  @JSName("Access.Module_typekey")
+  /* private */ @JSName("Access.Module_typekey")
   var AccessDotModule_typekey: Module = js.native
   
   def AddFromFile(FileName: String): Unit = js.native

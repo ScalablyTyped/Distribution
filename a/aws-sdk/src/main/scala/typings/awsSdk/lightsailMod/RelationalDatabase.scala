@@ -138,175 +138,119 @@ trait RelationalDatabase extends StObject {
 }
 object RelationalDatabase {
   
-  @scala.inline
-  def apply(): RelationalDatabase = {
+  inline def apply(): RelationalDatabase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationalDatabase]
   }
   
-  @scala.inline
-  implicit class RelationalDatabaseMutableBuilder[Self <: RelationalDatabase] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalDatabase](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setBackupRetentionEnabled(value: Boolean): Self = StObject.set(x, "backupRetentionEnabled", value.asInstanceOf[js.Any])
+    inline def setBackupRetentionEnabled(value: Boolean): Self = StObject.set(x, "backupRetentionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupRetentionEnabledUndefined: Self = StObject.set(x, "backupRetentionEnabled", js.undefined)
+    inline def setBackupRetentionEnabledUndefined: Self = StObject.set(x, "backupRetentionEnabled", js.undefined)
     
-    @scala.inline
-    def setCaCertificateIdentifier(value: String): Self = StObject.set(x, "caCertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setCaCertificateIdentifier(value: String): Self = StObject.set(x, "caCertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificateIdentifierUndefined: Self = StObject.set(x, "caCertificateIdentifier", js.undefined)
+    inline def setCaCertificateIdentifierUndefined: Self = StObject.set(x, "caCertificateIdentifier", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setEngine(value: NonEmptyString): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: NonEmptyString): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
-    @scala.inline
-    def setEngineVersion(value: NonEmptyString): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: NonEmptyString): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
     
-    @scala.inline
-    def setHardware(value: RelationalDatabaseHardware): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
+    inline def setHardware(value: RelationalDatabaseHardware): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
+    inline def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
     
-    @scala.inline
-    def setLatestRestorableTime(value: IsoDate): Self = StObject.set(x, "latestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableTime(value: IsoDate): Self = StObject.set(x, "latestRestorableTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestRestorableTimeUndefined: Self = StObject.set(x, "latestRestorableTime", js.undefined)
+    inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "latestRestorableTime", js.undefined)
     
-    @scala.inline
-    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMasterDatabaseName(value: String): Self = StObject.set(x, "masterDatabaseName", value.asInstanceOf[js.Any])
+    inline def setMasterDatabaseName(value: String): Self = StObject.set(x, "masterDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterDatabaseNameUndefined: Self = StObject.set(x, "masterDatabaseName", js.undefined)
+    inline def setMasterDatabaseNameUndefined: Self = StObject.set(x, "masterDatabaseName", js.undefined)
     
-    @scala.inline
-    def setMasterEndpoint(value: RelationalDatabaseEndpoint): Self = StObject.set(x, "masterEndpoint", value.asInstanceOf[js.Any])
+    inline def setMasterEndpoint(value: RelationalDatabaseEndpoint): Self = StObject.set(x, "masterEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterEndpointUndefined: Self = StObject.set(x, "masterEndpoint", js.undefined)
+    inline def setMasterEndpointUndefined: Self = StObject.set(x, "masterEndpoint", js.undefined)
     
-    @scala.inline
-    def setMasterUsername(value: NonEmptyString): Self = StObject.set(x, "masterUsername", value.asInstanceOf[js.Any])
+    inline def setMasterUsername(value: NonEmptyString): Self = StObject.set(x, "masterUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUsernameUndefined: Self = StObject.set(x, "masterUsername", js.undefined)
+    inline def setMasterUsernameUndefined: Self = StObject.set(x, "masterUsername", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "parameterApplyStatus", value.asInstanceOf[js.Any])
+    inline def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "parameterApplyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterApplyStatusUndefined: Self = StObject.set(x, "parameterApplyStatus", js.undefined)
+    inline def setParameterApplyStatusUndefined: Self = StObject.set(x, "parameterApplyStatus", js.undefined)
     
-    @scala.inline
-    def setPendingMaintenanceActions(value: PendingMaintenanceActionList): Self = StObject.set(x, "pendingMaintenanceActions", value.asInstanceOf[js.Any])
+    inline def setPendingMaintenanceActions(value: PendingMaintenanceActionList): Self = StObject.set(x, "pendingMaintenanceActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingMaintenanceActionsUndefined: Self = StObject.set(x, "pendingMaintenanceActions", js.undefined)
+    inline def setPendingMaintenanceActionsUndefined: Self = StObject.set(x, "pendingMaintenanceActions", js.undefined)
     
-    @scala.inline
-    def setPendingMaintenanceActionsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "pendingMaintenanceActions", js.Array(value :_*))
+    inline def setPendingMaintenanceActionsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "pendingMaintenanceActions", js.Array(value :_*))
     
-    @scala.inline
-    def setPendingModifiedValues(value: PendingModifiedRelationalDatabaseValues): Self = StObject.set(x, "pendingModifiedValues", value.asInstanceOf[js.Any])
+    inline def setPendingModifiedValues(value: PendingModifiedRelationalDatabaseValues): Self = StObject.set(x, "pendingModifiedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingModifiedValuesUndefined: Self = StObject.set(x, "pendingModifiedValues", js.undefined)
+    inline def setPendingModifiedValuesUndefined: Self = StObject.set(x, "pendingModifiedValues", js.undefined)
     
-    @scala.inline
-    def setPreferredBackupWindow(value: NonEmptyString): Self = StObject.set(x, "preferredBackupWindow", value.asInstanceOf[js.Any])
+    inline def setPreferredBackupWindow(value: NonEmptyString): Self = StObject.set(x, "preferredBackupWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredBackupWindowUndefined: Self = StObject.set(x, "preferredBackupWindow", js.undefined)
+    inline def setPreferredBackupWindowUndefined: Self = StObject.set(x, "preferredBackupWindow", js.undefined)
     
-    @scala.inline
-    def setPreferredMaintenanceWindow(value: NonEmptyString): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    inline def setPreferredMaintenanceWindow(value: NonEmptyString): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "preferredMaintenanceWindow", js.undefined)
+    inline def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "preferredMaintenanceWindow", js.undefined)
     
-    @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
+    inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
+    inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseBlueprintId(value: NonEmptyString): Self = StObject.set(x, "relationalDatabaseBlueprintId", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseBlueprintId(value: NonEmptyString): Self = StObject.set(x, "relationalDatabaseBlueprintId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseBlueprintIdUndefined: Self = StObject.set(x, "relationalDatabaseBlueprintId", js.undefined)
+    inline def setRelationalDatabaseBlueprintIdUndefined: Self = StObject.set(x, "relationalDatabaseBlueprintId", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseBundleId(value: NonEmptyString): Self = StObject.set(x, "relationalDatabaseBundleId", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseBundleId(value: NonEmptyString): Self = StObject.set(x, "relationalDatabaseBundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseBundleIdUndefined: Self = StObject.set(x, "relationalDatabaseBundleId", js.undefined)
+    inline def setRelationalDatabaseBundleIdUndefined: Self = StObject.set(x, "relationalDatabaseBundleId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setSecondaryAvailabilityZone(value: String): Self = StObject.set(x, "secondaryAvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setSecondaryAvailabilityZone(value: String): Self = StObject.set(x, "secondaryAvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryAvailabilityZoneUndefined: Self = StObject.set(x, "secondaryAvailabilityZone", js.undefined)
+    inline def setSecondaryAvailabilityZoneUndefined: Self = StObject.set(x, "secondaryAvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setState(value: NonEmptyString): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NonEmptyString): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
+    inline def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
+    inline def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

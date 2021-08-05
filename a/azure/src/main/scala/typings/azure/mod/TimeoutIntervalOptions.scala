@@ -14,31 +14,23 @@ trait TimeoutIntervalOptions extends StObject {
 }
 object TimeoutIntervalOptions {
   
-  @scala.inline
-  def apply(): TimeoutIntervalOptions = {
+  inline def apply(): TimeoutIntervalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeoutIntervalOptions]
   }
   
-  @scala.inline
-  implicit class TimeoutIntervalOptionsMutableBuilder[Self <: TimeoutIntervalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimeoutIntervalOptions](x: Self) {
     
-    @scala.inline
-    def setLocationMode(value: String): Self = StObject.set(x, "locationMode", value.asInstanceOf[js.Any])
+    inline def setLocationMode(value: String): Self = StObject.set(x, "locationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationModeUndefined: Self = StObject.set(x, "locationMode", js.undefined)
+    inline def setLocationModeUndefined: Self = StObject.set(x, "locationMode", js.undefined)
     
-    @scala.inline
-    def setMaximumExecutionTimeInMs(value: Double): Self = StObject.set(x, "maximumExecutionTimeInMs", value.asInstanceOf[js.Any])
+    inline def setMaximumExecutionTimeInMs(value: Double): Self = StObject.set(x, "maximumExecutionTimeInMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumExecutionTimeInMsUndefined: Self = StObject.set(x, "maximumExecutionTimeInMs", js.undefined)
+    inline def setMaximumExecutionTimeInMsUndefined: Self = StObject.set(x, "maximumExecutionTimeInMs", js.undefined)
     
-    @scala.inline
-    def setTimeoutIntervalInMs(value: Double): Self = StObject.set(x, "timeoutIntervalInMs", value.asInstanceOf[js.Any])
+    inline def setTimeoutIntervalInMs(value: Double): Self = StObject.set(x, "timeoutIntervalInMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutIntervalInMsUndefined: Self = StObject.set(x, "timeoutIntervalInMs", js.undefined)
+    inline def setTimeoutIntervalInMsUndefined: Self = StObject.set(x, "timeoutIntervalInMs", js.undefined)
   }
 }

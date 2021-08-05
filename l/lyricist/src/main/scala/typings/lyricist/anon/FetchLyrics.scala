@@ -13,25 +13,19 @@ trait FetchLyrics extends StObject {
 }
 object FetchLyrics {
   
-  @scala.inline
-  def apply(): FetchLyrics = {
+  inline def apply(): FetchLyrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FetchLyrics]
   }
   
-  @scala.inline
-  implicit class FetchLyricsMutableBuilder[Self <: FetchLyrics] (val x: Self) extends AnyVal {
+  extension [Self <: FetchLyrics](x: Self) {
     
-    @scala.inline
-    def setFetchLyrics(value: Boolean): Self = StObject.set(x, "fetchLyrics", value.asInstanceOf[js.Any])
+    inline def setFetchLyrics(value: Boolean): Self = StObject.set(x, "fetchLyrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchLyricsUndefined: Self = StObject.set(x, "fetchLyrics", js.undefined)
+    inline def setFetchLyricsUndefined: Self = StObject.set(x, "fetchLyrics", js.undefined)
     
-    @scala.inline
-    def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
+    inline def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
+    inline def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

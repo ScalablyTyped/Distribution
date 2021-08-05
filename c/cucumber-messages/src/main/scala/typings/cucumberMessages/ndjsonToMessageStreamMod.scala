@@ -19,8 +19,8 @@ object ndjsonToMessageStreamMod {
     
     def _transform(chunk: String, encoding: String, callback: TransformCallback): Unit = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    val fromObject: js.Any = js.native
+    /* private */ val fromObject: js.Any = js.native
   }
 }

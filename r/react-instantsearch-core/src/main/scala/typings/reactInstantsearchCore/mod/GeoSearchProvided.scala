@@ -27,8 +27,7 @@ trait GeoSearchProvided[THit] extends StObject {
 }
 object GeoSearchProvided {
   
-  @scala.inline
-  def apply[THit](
+  inline def apply[THit](
     createURL: /* repeated */ js.Any => js.Any,
     currentRefinement: NESW,
     hits: js.Array[THit],
@@ -40,28 +39,20 @@ object GeoSearchProvided {
     __obj.asInstanceOf[GeoSearchProvided[THit]]
   }
   
-  @scala.inline
-  implicit class GeoSearchProvidedMutableBuilder[Self <: GeoSearchProvided[?], THit] (val x: Self & GeoSearchProvided[THit]) extends AnyVal {
+  extension [Self <: GeoSearchProvided[?], THit](x: Self & GeoSearchProvided[THit]) {
     
-    @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentRefinement(value: NESW): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
+    inline def setCurrentRefinement(value: NESW): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHits(value: js.Array[THit]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[THit]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
-    @scala.inline
-    def setIsRefinedWithMap(value: Boolean): Self = StObject.set(x, "isRefinedWithMap", value.asInstanceOf[js.Any])
+    inline def setIsRefinedWithMap(value: Boolean): Self = StObject.set(x, "isRefinedWithMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Lat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Lat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefine(value: NESW => Unit): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: NESW => Unit): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
   }
 }

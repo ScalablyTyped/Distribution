@@ -22,61 +22,43 @@ trait Movement extends StObject {
 }
 object Movement {
   
-  @scala.inline
-  def apply(): Movement = {
+  inline def apply(): Movement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Movement]
   }
   
-  @scala.inline
-  implicit class MovementMutableBuilder[Self <: Movement] (val x: Self) extends AnyVal {
+  extension [Self <: Movement](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setNextStopovers(value: js.Array[StopOver]): Self = StObject.set(x, "nextStopovers", value.asInstanceOf[js.Any])
+    inline def setNextStopovers(value: js.Array[StopOver]): Self = StObject.set(x, "nextStopovers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextStopoversUndefined: Self = StObject.set(x, "nextStopovers", js.undefined)
+    inline def setNextStopoversUndefined: Self = StObject.set(x, "nextStopovers", js.undefined)
     
-    @scala.inline
-    def setNextStopoversVarargs(value: StopOver*): Self = StObject.set(x, "nextStopovers", js.Array(value :_*))
+    inline def setNextStopoversVarargs(value: StopOver*): Self = StObject.set(x, "nextStopovers", js.Array(value :_*))
     
-    @scala.inline
-    def setPolyline(value: FeatureCollection): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+    inline def setPolyline(value: FeatureCollection): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
+    inline def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
     
-    @scala.inline
-    def setTripId(value: String): Self = StObject.set(x, "tripId", value.asInstanceOf[js.Any])
+    inline def setTripId(value: String): Self = StObject.set(x, "tripId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTripIdUndefined: Self = StObject.set(x, "tripId", js.undefined)
+    inline def setTripIdUndefined: Self = StObject.set(x, "tripId", js.undefined)
   }
 }

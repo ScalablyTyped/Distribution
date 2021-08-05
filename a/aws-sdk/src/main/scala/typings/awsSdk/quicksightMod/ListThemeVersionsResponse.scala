@@ -28,40 +28,29 @@ trait ListThemeVersionsResponse extends StObject {
 }
 object ListThemeVersionsResponse {
   
-  @scala.inline
-  def apply(): ListThemeVersionsResponse = {
+  inline def apply(): ListThemeVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListThemeVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListThemeVersionsResponseMutableBuilder[Self <: ListThemeVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListThemeVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setThemeVersionSummaryList(value: ThemeVersionSummaryList): Self = StObject.set(x, "ThemeVersionSummaryList", value.asInstanceOf[js.Any])
+    inline def setThemeVersionSummaryList(value: ThemeVersionSummaryList): Self = StObject.set(x, "ThemeVersionSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeVersionSummaryListUndefined: Self = StObject.set(x, "ThemeVersionSummaryList", js.undefined)
+    inline def setThemeVersionSummaryListUndefined: Self = StObject.set(x, "ThemeVersionSummaryList", js.undefined)
     
-    @scala.inline
-    def setThemeVersionSummaryListVarargs(value: ThemeVersionSummary*): Self = StObject.set(x, "ThemeVersionSummaryList", js.Array(value :_*))
+    inline def setThemeVersionSummaryListVarargs(value: ThemeVersionSummary*): Self = StObject.set(x, "ThemeVersionSummaryList", js.Array(value :_*))
   }
 }

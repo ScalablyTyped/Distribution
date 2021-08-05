@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** structure for reporting parser errors */
 trait IXMLDOMParseError extends StObject {
   
-  @JSName("MSXML2.IXMLDOMParseError_typekey")
+  /* private */ @JSName("MSXML2.IXMLDOMParseError_typekey")
   var MSXML2DotIXMLDOMParseError_typekey: IXMLDOMParseError
   
   /** the error code */
@@ -33,8 +33,7 @@ trait IXMLDOMParseError extends StObject {
 }
 object IXMLDOMParseError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotIXMLDOMParseError_typekey: IXMLDOMParseError,
     errorCode: Double,
     filepos: Double,
@@ -49,31 +48,22 @@ object IXMLDOMParseError {
     __obj.asInstanceOf[IXMLDOMParseError]
   }
   
-  @scala.inline
-  implicit class IXMLDOMParseErrorMutableBuilder[Self <: IXMLDOMParseError] (val x: Self) extends AnyVal {
+  extension [Self <: IXMLDOMParseError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilepos(value: Double): Self = StObject.set(x, "filepos", value.asInstanceOf[js.Any])
+    inline def setFilepos(value: Double): Self = StObject.set(x, "filepos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinepos(value: Double): Self = StObject.set(x, "linepos", value.asInstanceOf[js.Any])
+    inline def setLinepos(value: Double): Self = StObject.set(x, "linepos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSXML2DotIXMLDOMParseError_typekey(value: IXMLDOMParseError): Self = StObject.set(x, "MSXML2.IXMLDOMParseError_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotIXMLDOMParseError_typekey(value: IXMLDOMParseError): Self = StObject.set(x, "MSXML2.IXMLDOMParseError_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcText(value: String): Self = StObject.set(x, "srcText", value.asInstanceOf[js.Any])
+    inline def setSrcText(value: String): Self = StObject.set(x, "srcText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -16,31 +16,23 @@ trait PickPickHorizontalMenuGri extends StObject {
 }
 object PickPickHorizontalMenuGri {
   
-  @scala.inline
-  def apply(): PickPickHorizontalMenuGri = {
+  inline def apply(): PickPickHorizontalMenuGri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickPickHorizontalMenuGri]
   }
   
-  @scala.inline
-  implicit class PickPickHorizontalMenuGriMutableBuilder[Self <: PickPickHorizontalMenuGri] (val x: Self) extends AnyVal {
+  extension [Self <: PickPickHorizontalMenuGri](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setMaxOverflowWidth(value: Double): Self = StObject.set(x, "maxOverflowWidth", value.asInstanceOf[js.Any])
+    inline def setMaxOverflowWidth(value: Double): Self = StObject.set(x, "maxOverflowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOverflowWidthUndefined: Self = StObject.set(x, "maxOverflowWidth", js.undefined)
+    inline def setMaxOverflowWidthUndefined: Self = StObject.set(x, "maxOverflowWidth", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -103,21 +103,16 @@ object ec2clientvpnEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean]
   }
   
   trait EndpointArgs extends StObject {
@@ -171,8 +166,7 @@ object ec2clientvpnEndpointMod {
   }
   object EndpointArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authenticationOptions: Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]]
         ],
@@ -184,60 +178,43 @@ object ec2clientvpnEndpointMod {
       __obj.asInstanceOf[EndpointArgs]
     }
     
-    @scala.inline
-    implicit class EndpointArgsMutableBuilder[Self <: EndpointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointArgs](x: Self) {
       
-      @scala.inline
-      def setAuthenticationOptions(
+      inline def setAuthenticationOptions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]]
             ]
       ): Self = StObject.set(x, "authenticationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationOptionsVarargs(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]*): Self = StObject.set(x, "authenticationOptions", js.Array(value :_*))
+      inline def setAuthenticationOptionsVarargs(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]*): Self = StObject.set(x, "authenticationOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setClientCidrBlock(value: Input[String]): Self = StObject.set(x, "clientCidrBlock", value.asInstanceOf[js.Any])
+      inline def setClientCidrBlock(value: Input[String]): Self = StObject.set(x, "clientCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionLogOptions(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions]): Self = StObject.set(x, "connectionLogOptions", value.asInstanceOf[js.Any])
+      inline def setConnectionLogOptions(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions]): Self = StObject.set(x, "connectionLogOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDnsServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsServers", value.asInstanceOf[js.Any])
+      inline def setDnsServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsServersUndefined: Self = StObject.set(x, "dnsServers", js.undefined)
+      inline def setDnsServersUndefined: Self = StObject.set(x, "dnsServers", js.undefined)
       
-      @scala.inline
-      def setDnsServersVarargs(value: Input[String]*): Self = StObject.set(x, "dnsServers", js.Array(value :_*))
+      inline def setDnsServersVarargs(value: Input[String]*): Self = StObject.set(x, "dnsServers", js.Array(value :_*))
       
-      @scala.inline
-      def setServerCertificateArn(value: Input[String]): Self = StObject.set(x, "serverCertificateArn", value.asInstanceOf[js.Any])
+      inline def setServerCertificateArn(value: Input[String]): Self = StObject.set(x, "serverCertificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitTunnel(value: Input[Boolean]): Self = StObject.set(x, "splitTunnel", value.asInstanceOf[js.Any])
+      inline def setSplitTunnel(value: Input[Boolean]): Self = StObject.set(x, "splitTunnel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitTunnelUndefined: Self = StObject.set(x, "splitTunnel", js.undefined)
+      inline def setSplitTunnelUndefined: Self = StObject.set(x, "splitTunnel", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransportProtocol(value: Input[String]): Self = StObject.set(x, "transportProtocol", value.asInstanceOf[js.Any])
+      inline def setTransportProtocol(value: Input[String]): Self = StObject.set(x, "transportProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportProtocolUndefined: Self = StObject.set(x, "transportProtocol", js.undefined)
+      inline def setTransportProtocolUndefined: Self = StObject.set(x, "transportProtocol", js.undefined)
     }
   }
   
@@ -309,96 +286,68 @@ object ec2clientvpnEndpointMod {
   }
   object EndpointState {
     
-    @scala.inline
-    def apply(): EndpointState = {
+    inline def apply(): EndpointState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointState]
     }
     
-    @scala.inline
-    implicit class EndpointStateMutableBuilder[Self <: EndpointState] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAuthenticationOptions(
+      inline def setAuthenticationOptions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]]
             ]
       ): Self = StObject.set(x, "authenticationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationOptionsUndefined: Self = StObject.set(x, "authenticationOptions", js.undefined)
+      inline def setAuthenticationOptionsUndefined: Self = StObject.set(x, "authenticationOptions", js.undefined)
       
-      @scala.inline
-      def setAuthenticationOptionsVarargs(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]*): Self = StObject.set(x, "authenticationOptions", js.Array(value :_*))
+      inline def setAuthenticationOptionsVarargs(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]*): Self = StObject.set(x, "authenticationOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setClientCidrBlock(value: Input[String]): Self = StObject.set(x, "clientCidrBlock", value.asInstanceOf[js.Any])
+      inline def setClientCidrBlock(value: Input[String]): Self = StObject.set(x, "clientCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientCidrBlockUndefined: Self = StObject.set(x, "clientCidrBlock", js.undefined)
+      inline def setClientCidrBlockUndefined: Self = StObject.set(x, "clientCidrBlock", js.undefined)
       
-      @scala.inline
-      def setConnectionLogOptions(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions]): Self = StObject.set(x, "connectionLogOptions", value.asInstanceOf[js.Any])
+      inline def setConnectionLogOptions(value: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions]): Self = StObject.set(x, "connectionLogOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionLogOptionsUndefined: Self = StObject.set(x, "connectionLogOptions", js.undefined)
+      inline def setConnectionLogOptionsUndefined: Self = StObject.set(x, "connectionLogOptions", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
+      inline def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
       
-      @scala.inline
-      def setDnsServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsServers", value.asInstanceOf[js.Any])
+      inline def setDnsServers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsServersUndefined: Self = StObject.set(x, "dnsServers", js.undefined)
+      inline def setDnsServersUndefined: Self = StObject.set(x, "dnsServers", js.undefined)
       
-      @scala.inline
-      def setDnsServersVarargs(value: Input[String]*): Self = StObject.set(x, "dnsServers", js.Array(value :_*))
+      inline def setDnsServersVarargs(value: Input[String]*): Self = StObject.set(x, "dnsServers", js.Array(value :_*))
       
-      @scala.inline
-      def setServerCertificateArn(value: Input[String]): Self = StObject.set(x, "serverCertificateArn", value.asInstanceOf[js.Any])
+      inline def setServerCertificateArn(value: Input[String]): Self = StObject.set(x, "serverCertificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerCertificateArnUndefined: Self = StObject.set(x, "serverCertificateArn", js.undefined)
+      inline def setServerCertificateArnUndefined: Self = StObject.set(x, "serverCertificateArn", js.undefined)
       
-      @scala.inline
-      def setSplitTunnel(value: Input[Boolean]): Self = StObject.set(x, "splitTunnel", value.asInstanceOf[js.Any])
+      inline def setSplitTunnel(value: Input[Boolean]): Self = StObject.set(x, "splitTunnel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitTunnelUndefined: Self = StObject.set(x, "splitTunnel", js.undefined)
+      inline def setSplitTunnelUndefined: Self = StObject.set(x, "splitTunnel", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransportProtocol(value: Input[String]): Self = StObject.set(x, "transportProtocol", value.asInstanceOf[js.Any])
+      inline def setTransportProtocol(value: Input[String]): Self = StObject.set(x, "transportProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportProtocolUndefined: Self = StObject.set(x, "transportProtocol", js.undefined)
+      inline def setTransportProtocolUndefined: Self = StObject.set(x, "transportProtocol", js.undefined)
     }
   }
 }

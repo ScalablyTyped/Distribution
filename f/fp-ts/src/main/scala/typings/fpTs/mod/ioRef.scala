@@ -18,6 +18,5 @@ object ioRef {
     def this(value: A) = this()
   }
   
-  @scala.inline
-  def newIORef[A](a: A): IO_[typings.fpTs.iorefMod.IORef[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("newIORef")(a.asInstanceOf[js.Any]).asInstanceOf[IO_[typings.fpTs.iorefMod.IORef[A]]]
+  inline def newIORef[A](a: A): IO_[typings.fpTs.iorefMod.IORef[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("newIORef")(a.asInstanceOf[js.Any]).asInstanceOf[IO_[typings.fpTs.iorefMod.IORef[A]]]
 }

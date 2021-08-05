@@ -22,25 +22,19 @@ trait DataFileProperties extends StObject {
 }
 object DataFileProperties {
   
-  @scala.inline
-  def apply(): DataFileProperties = {
+  inline def apply(): DataFileProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataFileProperties]
   }
   
-  @scala.inline
-  implicit class DataFilePropertiesMutableBuilder[Self <: DataFileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DataFileProperties](x: Self) {
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

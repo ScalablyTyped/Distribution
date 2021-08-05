@@ -16,8 +16,7 @@ object usePanelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def usePanels(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex: UsePanelsOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("usePanels")(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def usePanels(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex: UsePanelsOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("usePanels")(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   type CreateExpandById = js.Function1[/* panelId */ String, js.Function0[Unit]]
   
@@ -68,8 +67,7 @@ object usePanelsMod {
   }
   object ProvidedPanelProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       expanded: Boolean,
       headerRef: RefObject[HTMLButtonElement],
@@ -81,26 +79,19 @@ object usePanelsMod {
       __obj.asInstanceOf[ProvidedPanelProps]
     }
     
-    @scala.inline
-    implicit class ProvidedPanelPropsMutableBuilder[Self <: ProvidedPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProvidedPanelProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderRef(value: RefObject[HTMLButtonElement]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
+      inline def setHeaderRef(value: RefObject[HTMLButtonElement]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTop(value: Boolean): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: Boolean): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExpandClick(value: () => Unit): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction0(value))
+      inline def setOnExpandClick(value: () => Unit): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction0(value))
     }
   }
   
@@ -153,41 +144,30 @@ object usePanelsMod {
   }
   object UsePanelsOptions {
     
-    @scala.inline
-    def apply(count: Double, idPrefix: String): UsePanelsOptions = {
+    inline def apply(count: Double, idPrefix: String): UsePanelsOptions = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], idPrefix = idPrefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[UsePanelsOptions]
     }
     
-    @scala.inline
-    implicit class UsePanelsOptionsMutableBuilder[Self <: UsePanelsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UsePanelsOptions](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExpandedIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "defaultExpandedIndex", value.asInstanceOf[js.Any])
+      inline def setDefaultExpandedIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "defaultExpandedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExpandedIndexUndefined: Self = StObject.set(x, "defaultExpandedIndex", js.undefined)
+      inline def setDefaultExpandedIndexUndefined: Self = StObject.set(x, "defaultExpandedIndex", js.undefined)
       
-      @scala.inline
-      def setDefaultExpandedIndexVarargs(value: Double*): Self = StObject.set(x, "defaultExpandedIndex", js.Array(value :_*))
+      inline def setDefaultExpandedIndexVarargs(value: Double*): Self = StObject.set(x, "defaultExpandedIndex", js.Array(value :_*))
       
-      @scala.inline
-      def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
+      inline def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setPreventAllClosed(value: Boolean): Self = StObject.set(x, "preventAllClosed", value.asInstanceOf[js.Any])
+      inline def setPreventAllClosed(value: Boolean): Self = StObject.set(x, "preventAllClosed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventAllClosedUndefined: Self = StObject.set(x, "preventAllClosed", js.undefined)
+      inline def setPreventAllClosedUndefined: Self = StObject.set(x, "preventAllClosed", js.undefined)
     }
   }
 }

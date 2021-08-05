@@ -14,25 +14,19 @@ trait TargetId extends StObject {
 }
 object TargetId {
   
-  @scala.inline
-  def apply(): TargetId = {
+  inline def apply(): TargetId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetId]
   }
   
-  @scala.inline
-  implicit class TargetIdMutableBuilder[Self <: TargetId] (val x: Self) extends AnyVal {
+  extension [Self <: TargetId](x: Self) {
     
-    @scala.inline
-    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     
-    @scala.inline
-    def setTargetMimeType(value: String): Self = StObject.set(x, "targetMimeType", value.asInstanceOf[js.Any])
+    inline def setTargetMimeType(value: String): Self = StObject.set(x, "targetMimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetMimeTypeUndefined: Self = StObject.set(x, "targetMimeType", js.undefined)
+    inline def setTargetMimeTypeUndefined: Self = StObject.set(x, "targetMimeType", js.undefined)
   }
 }

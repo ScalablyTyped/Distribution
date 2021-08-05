@@ -23,11 +23,11 @@ object asyncControllableInputMod {
       */
     def this(props: IAsyncControllableInputProps, context: js.Any) = this()
     
-    var handleChange: js.Any = js.native
+    /* private */ var handleChange: js.Any = js.native
     
-    var handleCompositionEnd: js.Any = js.native
+    /* private */ var handleCompositionEnd: js.Any = js.native
     
-    var handleCompositionStart: js.Any = js.native
+    /* private */ var handleCompositionStart: js.Any = js.native
   }
   /* static members */
   object AsyncControllableInput {
@@ -39,11 +39,9 @@ object asyncControllableInputMod {
     @JSImport("@blueprintjs/core/lib/esm/components/forms/asyncControllableInput", "AsyncControllableInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: IAsyncControllableInputProps, nextState: IAsyncControllableInputState): PartialIAsyncControllable | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], nextState.asInstanceOf[js.Any])).asInstanceOf[PartialIAsyncControllable | Null]
+    inline def getDerivedStateFromProps(nextProps: IAsyncControllableInputProps, nextState: IAsyncControllableInputState): PartialIAsyncControllable | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], nextState.asInstanceOf[js.Any])).asInstanceOf[PartialIAsyncControllable | Null]
   }
   
   trait IAsyncControllableInputProps
@@ -55,26 +53,20 @@ object asyncControllableInputMod {
   }
   object IAsyncControllableInputProps {
     
-    @scala.inline
-    def apply(): IAsyncControllableInputProps = {
+    inline def apply(): IAsyncControllableInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAsyncControllableInputProps]
     }
     
-    @scala.inline
-    implicit class IAsyncControllableInputPropsMutableBuilder[Self <: IAsyncControllableInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: IAsyncControllableInputProps](x: Self) {
       
-      @scala.inline
-      def setInputRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
     }
   }
   
@@ -106,38 +98,28 @@ object asyncControllableInputMod {
   }
   object IAsyncControllableInputState {
     
-    @scala.inline
-    def apply(hasPendingUpdate: Boolean, isComposing: Boolean): IAsyncControllableInputState = {
+    inline def apply(hasPendingUpdate: Boolean, isComposing: Boolean): IAsyncControllableInputState = {
       val __obj = js.Dynamic.literal(hasPendingUpdate = hasPendingUpdate.asInstanceOf[js.Any], isComposing = isComposing.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAsyncControllableInputState]
     }
     
-    @scala.inline
-    implicit class IAsyncControllableInputStateMutableBuilder[Self <: IAsyncControllableInputState] (val x: Self) extends AnyVal {
+    extension [Self <: IAsyncControllableInputState](x: Self) {
       
-      @scala.inline
-      def setHasPendingUpdate(value: Boolean): Self = StObject.set(x, "hasPendingUpdate", value.asInstanceOf[js.Any])
+      inline def setHasPendingUpdate(value: Boolean): Self = StObject.set(x, "hasPendingUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
+      inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextValue(value: InputValue): Self = StObject.set(x, "nextValue", value.asInstanceOf[js.Any])
+      inline def setNextValue(value: InputValue): Self = StObject.set(x, "nextValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextValueUndefined: Self = StObject.set(x, "nextValue", js.undefined)
+      inline def setNextValueUndefined: Self = StObject.set(x, "nextValue", js.undefined)
       
-      @scala.inline
-      def setNextValueVarargs(value: String*): Self = StObject.set(x, "nextValue", js.Array(value :_*))
+      inline def setNextValueVarargs(value: String*): Self = StObject.set(x, "nextValue", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: InputValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: InputValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   

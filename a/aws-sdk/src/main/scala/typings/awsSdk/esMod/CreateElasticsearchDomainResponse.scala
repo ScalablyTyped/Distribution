@@ -13,19 +13,15 @@ trait CreateElasticsearchDomainResponse extends StObject {
 }
 object CreateElasticsearchDomainResponse {
   
-  @scala.inline
-  def apply(): CreateElasticsearchDomainResponse = {
+  inline def apply(): CreateElasticsearchDomainResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateElasticsearchDomainResponse]
   }
   
-  @scala.inline
-  implicit class CreateElasticsearchDomainResponseMutableBuilder[Self <: CreateElasticsearchDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateElasticsearchDomainResponse](x: Self) {
     
-    @scala.inline
-    def setDomainStatus(value: ElasticsearchDomainStatus): Self = StObject.set(x, "DomainStatus", value.asInstanceOf[js.Any])
+    inline def setDomainStatus(value: ElasticsearchDomainStatus): Self = StObject.set(x, "DomainStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainStatusUndefined: Self = StObject.set(x, "DomainStatus", js.undefined)
+    inline def setDomainStatusUndefined: Self = StObject.set(x, "DomainStatus", js.undefined)
   }
 }

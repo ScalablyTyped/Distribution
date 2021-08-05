@@ -31,8 +31,7 @@ trait Wizard
 }
 object Wizard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: XWizardPage,
     DialogWindow: XWindow,
     HelpURL: String,
@@ -58,13 +57,10 @@ object Wizard {
     __obj.asInstanceOf[Wizard]
   }
   
-  @scala.inline
-  implicit class WizardMutableBuilder[Self <: Wizard] (val x: Self) extends AnyVal {
+  extension [Self <: Wizard](x: Self) {
     
-    @scala.inline
-    def setCreateMultiplePathsWizard(value: (SeqEquiv[SeqEquiv[Double]], XWizardController) => Unit): Self = StObject.set(x, "createMultiplePathsWizard", js.Any.fromFunction2(value))
+    inline def setCreateMultiplePathsWizard(value: (SeqEquiv[SeqEquiv[Double]], XWizardController) => Unit): Self = StObject.set(x, "createMultiplePathsWizard", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateSinglePathWizard(value: (SeqEquiv[Double], XWizardController) => Unit): Self = StObject.set(x, "createSinglePathWizard", js.Any.fromFunction2(value))
+    inline def setCreateSinglePathWizard(value: (SeqEquiv[Double], XWizardController) => Unit): Self = StObject.set(x, "createSinglePathWizard", js.Any.fromFunction2(value))
   }
 }

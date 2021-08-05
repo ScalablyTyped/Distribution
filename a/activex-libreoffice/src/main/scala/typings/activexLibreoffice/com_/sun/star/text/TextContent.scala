@@ -38,8 +38,7 @@ trait TextContent
 }
 object TextContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -57,16 +56,12 @@ object TextContent {
     __obj.asInstanceOf[TextContent]
   }
   
-  @scala.inline
-  implicit class TextContentMutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
+  extension [Self <: TextContent](x: Self) {
     
-    @scala.inline
-    def setAnchorType(value: TextContentAnchorType): Self = StObject.set(x, "AnchorType", value.asInstanceOf[js.Any])
+    inline def setAnchorType(value: TextContentAnchorType): Self = StObject.set(x, "AnchorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorTypes(value: SafeArray[TextContentAnchorType]): Self = StObject.set(x, "AnchorTypes", value.asInstanceOf[js.Any])
+    inline def setAnchorTypes(value: SafeArray[TextContentAnchorType]): Self = StObject.set(x, "AnchorTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextWrap(value: WrapTextMode): Self = StObject.set(x, "TextWrap", value.asInstanceOf[js.Any])
+    inline def setTextWrap(value: WrapTextMode): Self = StObject.set(x, "TextWrap", value.asInstanceOf[js.Any])
   }
 }

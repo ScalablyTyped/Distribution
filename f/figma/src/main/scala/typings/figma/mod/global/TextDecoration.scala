@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDecoration extends StObject
 object TextDecoration {
   
-  @scala.inline
-  def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
+  inline def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
   
-  @scala.inline
-  def STRIKETHROUGH: typings.figma.figmaStrings.STRIKETHROUGH = "STRIKETHROUGH".asInstanceOf[typings.figma.figmaStrings.STRIKETHROUGH]
+  inline def STRIKETHROUGH: typings.figma.figmaStrings.STRIKETHROUGH = "STRIKETHROUGH".asInstanceOf[typings.figma.figmaStrings.STRIKETHROUGH]
   
-  @scala.inline
-  def UNDERLINE: typings.figma.figmaStrings.UNDERLINE = "UNDERLINE".asInstanceOf[typings.figma.figmaStrings.UNDERLINE]
+  inline def UNDERLINE: typings.figma.figmaStrings.UNDERLINE = "UNDERLINE".asInstanceOf[typings.figma.figmaStrings.UNDERLINE]
 }

@@ -24,11 +24,11 @@ class Reshape protected () extends Layer {
     * @returns: The output shape with `null` replaced with its computed value.
     * @throws: ValueError: If `inputShape` and `outputShape` do not match.
     */
-  var fixUnknownDimension: js.Any = js.native
+  /* private */ var fixUnknownDimension: js.Any = js.native
   
-  var isUnknown: js.Any = js.native
+  /* private */ var isUnknown: js.Any = js.native
   
-  var targetShape: js.Any = js.native
+  /* private */ var targetShape: js.Any = js.native
 }
 /* static members */
 object Reshape {
@@ -41,6 +41,5 @@ object Reshape {
   @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Reshape.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

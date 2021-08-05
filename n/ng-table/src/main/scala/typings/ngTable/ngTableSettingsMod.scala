@@ -30,15 +30,15 @@ object ngTableSettingsMod {
     
     def createDefaults[T](): ISettings[T] = js.native
     
-    var defaults: js.Any = js.native
+    /* private */ var defaults: js.Any = js.native
     
     def merge[T](existing: ISettings[T], newSettings: ISettings[T]): ISettings[T] = js.native
     
-    var ngTableDefaultGetData: js.Any = js.native
+    /* private */ var ngTableDefaultGetData: js.Any = js.native
     
-    var ngTableDefaultGetGroups: js.Any = js.native
+    /* private */ var ngTableDefaultGetGroups: js.Any = js.native
     
-    var ngTableDefaults: js.Any = js.native
+    /* private */ var ngTableDefaults: js.Any = js.native
     
     /* private */ def optimizeFilterDelay[T](settings: js.Any): js.Any = js.native
   }
@@ -52,8 +52,7 @@ object ngTableSettingsMod {
     @JSImport("ng-table/src/core/ngTableSettings", "NgTableSettings.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   trait ISettings[T] extends StObject {
@@ -134,115 +133,80 @@ object ngTableSettingsMod {
   }
   object ISettings {
     
-    @scala.inline
-    def apply[T](): ISettings[T] = {
+    inline def apply[T](): ISettings[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISettings[T]]
     }
     
-    @scala.inline
-    implicit class ISettingsMutableBuilder[Self <: ISettings[?], T] (val x: Self & ISettings[T]) extends AnyVal {
+    extension [Self <: ISettings[?], T](x: Self & ISettings[T]) {
       
-      @scala.inline
-      def set$loading(value: Boolean): Self = StObject.set(x, "$loading", value.asInstanceOf[js.Any])
+      inline def set$loading(value: Boolean): Self = StObject.set(x, "$loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$loadingUndefined: Self = StObject.set(x, "$loading", js.undefined)
+      inline def set$loadingUndefined: Self = StObject.set(x, "$loading", js.undefined)
       
-      @scala.inline
-      def setCounts(value: js.Array[Double]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+      inline def setCounts(value: js.Array[Double]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
+      inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
       
-      @scala.inline
-      def setCountsVarargs(value: Double*): Self = StObject.set(x, "counts", js.Array(value :_*))
+      inline def setCountsVarargs(value: Double*): Self = StObject.set(x, "counts", js.Array(value :_*))
       
-      @scala.inline
-      def setDataOptions(value: IDataSettings): Self = StObject.set(x, "dataOptions", value.asInstanceOf[js.Any])
+      inline def setDataOptions(value: IDataSettings): Self = StObject.set(x, "dataOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataOptionsUndefined: Self = StObject.set(x, "dataOptions", js.undefined)
+      inline def setDataOptionsUndefined: Self = StObject.set(x, "dataOptions", js.undefined)
       
-      @scala.inline
-      def setDataset(value: js.Array[T]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: js.Array[T]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+      inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
       
-      @scala.inline
-      def setDatasetVarargs(value: T*): Self = StObject.set(x, "dataset", js.Array(value :_*))
+      inline def setDatasetVarargs(value: T*): Self = StObject.set(x, "dataset", js.Array(value :_*))
       
-      @scala.inline
-      def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
+      inline def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
+      inline def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
       
-      @scala.inline
-      def setDefaultSort(value: SortDirection): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
+      inline def setDefaultSort(value: SortDirection): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
+      inline def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
       
-      @scala.inline
-      def setFilterOptions(value: IFilterSettings[T]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+      inline def setFilterOptions(value: IFilterSettings[T]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
+      inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
       
-      @scala.inline
-      def setGetData(value: /* params */ NgTableParams[T] => js.Any | js.Array[T] | IPromise[js.Array[T]]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+      inline def setGetData(value: /* params */ NgTableParams[T] => js.Any | js.Array[T] | IPromise[js.Array[T]]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
+      inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
-      @scala.inline
-      def setGetGroups(
+      inline def setGetGroups(
         value: /* params */ NgTableParams[T] => js.Array[IDataRowGroup[T]] | IPromise[js.Array[IDataRowGroup[T]]]
       ): Self = StObject.set(x, "getGroups", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetGroupsUndefined: Self = StObject.set(x, "getGroups", js.undefined)
+      inline def setGetGroupsUndefined: Self = StObject.set(x, "getGroups", js.undefined)
       
-      @scala.inline
-      def setGroupOptions(value: IGroupSettings): Self = StObject.set(x, "groupOptions", value.asInstanceOf[js.Any])
+      inline def setGroupOptions(value: IGroupSettings): Self = StObject.set(x, "groupOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupOptionsUndefined: Self = StObject.set(x, "groupOptions", js.undefined)
+      inline def setGroupOptionsUndefined: Self = StObject.set(x, "groupOptions", js.undefined)
       
-      @scala.inline
-      def setInterceptors(value: js.Array[IInterceptor[T]]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
+      inline def setInterceptors(value: js.Array[IInterceptor[T]]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
+      inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
       
-      @scala.inline
-      def setInterceptorsVarargs(value: IInterceptor[T]*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: IInterceptor[T]*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
       
-      @scala.inline
-      def setPaginationMaxBlocks(value: Double): Self = StObject.set(x, "paginationMaxBlocks", value.asInstanceOf[js.Any])
+      inline def setPaginationMaxBlocks(value: Double): Self = StObject.set(x, "paginationMaxBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationMaxBlocksUndefined: Self = StObject.set(x, "paginationMaxBlocks", js.undefined)
+      inline def setPaginationMaxBlocksUndefined: Self = StObject.set(x, "paginationMaxBlocks", js.undefined)
       
-      @scala.inline
-      def setPaginationMinBlocks(value: Double): Self = StObject.set(x, "paginationMinBlocks", value.asInstanceOf[js.Any])
+      inline def setPaginationMinBlocks(value: Double): Self = StObject.set(x, "paginationMinBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationMinBlocksUndefined: Self = StObject.set(x, "paginationMinBlocks", js.undefined)
+      inline def setPaginationMinBlocksUndefined: Self = StObject.set(x, "paginationMinBlocks", js.undefined)
       
-      @scala.inline
-      def setSortingIndicator(value: String): Self = StObject.set(x, "sortingIndicator", value.asInstanceOf[js.Any])
+      inline def setSortingIndicator(value: String): Self = StObject.set(x, "sortingIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortingIndicatorUndefined: Self = StObject.set(x, "sortingIndicator", js.undefined)
+      inline def setSortingIndicatorUndefined: Self = StObject.set(x, "sortingIndicator", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
 }

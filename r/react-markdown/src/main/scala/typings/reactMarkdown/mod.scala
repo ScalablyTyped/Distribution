@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(props: ReactMarkdownProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def apply(props: ReactMarkdownProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("react-markdown", JSImport.Namespace)
   @js.native
@@ -30,8 +29,7 @@ object mod {
   @js.native
   val types: js.Array[NodeType] = js.native
   
-  @scala.inline
-  def uriTransformer(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTransformer")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def uriTransformer(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTransformer")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type AlignType = typings.mdast.mod.AlignType
   
@@ -41,20 +39,16 @@ object mod {
   }
   object AllowDangerousHtmlProp {
     
-    @scala.inline
-    def apply(): AllowDangerousHtmlProp = {
+    inline def apply(): AllowDangerousHtmlProp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AllowDangerousHtmlProp]
     }
     
-    @scala.inline
-    implicit class AllowDangerousHtmlPropMutableBuilder[Self <: AllowDangerousHtmlProp] (val x: Self) extends AnyVal {
+    extension [Self <: AllowDangerousHtmlProp](x: Self) {
       
-      @scala.inline
-      def setAllowDangerousHtml(value: Boolean): Self = StObject.set(x, "allowDangerousHtml", value.asInstanceOf[js.Any])
+      inline def setAllowDangerousHtml(value: Boolean): Self = StObject.set(x, "allowDangerousHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDangerousHtmlUndefined: Self = StObject.set(x, "allowDangerousHtml", js.undefined)
+      inline def setAllowDangerousHtmlUndefined: Self = StObject.set(x, "allowDangerousHtml", js.undefined)
     }
   }
   
@@ -64,23 +58,18 @@ object mod {
   }
   object AllowedTypesProp {
     
-    @scala.inline
-    def apply(): AllowedTypesProp = {
+    inline def apply(): AllowedTypesProp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AllowedTypesProp]
     }
     
-    @scala.inline
-    implicit class AllowedTypesPropMutableBuilder[Self <: AllowedTypesProp] (val x: Self) extends AnyVal {
+    extension [Self <: AllowedTypesProp](x: Self) {
       
-      @scala.inline
-      def setAllowedTypes(value: js.Array[NodeType]): Self = StObject.set(x, "allowedTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedTypes(value: js.Array[NodeType]): Self = StObject.set(x, "allowedTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
+      inline def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
       
-      @scala.inline
-      def setAllowedTypesVarargs(value: NodeType*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
+      inline def setAllowedTypesVarargs(value: NodeType*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
     }
   }
   
@@ -90,17 +79,14 @@ object mod {
   }
   object ChildrenProp {
     
-    @scala.inline
-    def apply(children: String): ChildrenProp = {
+    inline def apply(children: String): ChildrenProp = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChildrenProp]
     }
     
-    @scala.inline
-    implicit class ChildrenPropMutableBuilder[Self <: ChildrenProp] (val x: Self) extends AnyVal {
+    extension [Self <: ChildrenProp](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,20 +96,16 @@ object mod {
   }
   object DisallowedTypesProp {
     
-    @scala.inline
-    def apply(disallowedTypes: js.Array[NodeType]): DisallowedTypesProp = {
+    inline def apply(disallowedTypes: js.Array[NodeType]): DisallowedTypesProp = {
       val __obj = js.Dynamic.literal(disallowedTypes = disallowedTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisallowedTypesProp]
     }
     
-    @scala.inline
-    implicit class DisallowedTypesPropMutableBuilder[Self <: DisallowedTypesProp] (val x: Self) extends AnyVal {
+    extension [Self <: DisallowedTypesProp](x: Self) {
       
-      @scala.inline
-      def setDisallowedTypes(value: js.Array[NodeType]): Self = StObject.set(x, "disallowedTypes", value.asInstanceOf[js.Any])
+      inline def setDisallowedTypes(value: js.Array[NodeType]): Self = StObject.set(x, "disallowedTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallowedTypesVarargs(value: NodeType*): Self = StObject.set(x, "disallowedTypes", js.Array(value :_*))
+      inline def setDisallowedTypesVarargs(value: NodeType*): Self = StObject.set(x, "disallowedTypes", js.Array(value :_*))
     }
   }
   
@@ -134,20 +116,16 @@ object mod {
   }
   object EscapeHtmlProp {
     
-    @scala.inline
-    def apply(): EscapeHtmlProp = {
+    inline def apply(): EscapeHtmlProp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EscapeHtmlProp]
     }
     
-    @scala.inline
-    implicit class EscapeHtmlPropMutableBuilder[Self <: EscapeHtmlProp] (val x: Self) extends AnyVal {
+    extension [Self <: EscapeHtmlProp](x: Self) {
       
-      @scala.inline
-      def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
+      inline def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeHtmlUndefined: Self = StObject.set(x, "escapeHtml", js.undefined)
+      inline def setEscapeHtmlUndefined: Self = StObject.set(x, "escapeHtml", js.undefined)
     }
   }
   
@@ -187,83 +165,57 @@ object mod {
   trait NodeType extends StObject
   object NodeType {
     
-    @scala.inline
-    def blockquote: typings.reactMarkdown.reactMarkdownStrings.blockquote = "blockquote".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.blockquote]
+    inline def blockquote: typings.reactMarkdown.reactMarkdownStrings.blockquote = "blockquote".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.blockquote]
     
-    @scala.inline
-    def break: typings.reactMarkdown.reactMarkdownStrings.break = "break".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.break]
+    inline def break: typings.reactMarkdown.reactMarkdownStrings.break = "break".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.break]
     
-    @scala.inline
-    def code: typings.reactMarkdown.reactMarkdownStrings.code = "code".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.code]
+    inline def code: typings.reactMarkdown.reactMarkdownStrings.code = "code".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.code]
     
-    @scala.inline
-    def definition: typings.reactMarkdown.reactMarkdownStrings.definition = "definition".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.definition]
+    inline def definition: typings.reactMarkdown.reactMarkdownStrings.definition = "definition".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.definition]
     
-    @scala.inline
-    def delete: typings.reactMarkdown.reactMarkdownStrings.delete = "delete".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.delete]
+    inline def delete: typings.reactMarkdown.reactMarkdownStrings.delete = "delete".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.delete]
     
-    @scala.inline
-    def emphasis: typings.reactMarkdown.reactMarkdownStrings.emphasis = "emphasis".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.emphasis]
+    inline def emphasis: typings.reactMarkdown.reactMarkdownStrings.emphasis = "emphasis".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.emphasis]
     
-    @scala.inline
-    def footnote: typings.reactMarkdown.reactMarkdownStrings.footnote = "footnote".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnote]
+    inline def footnote: typings.reactMarkdown.reactMarkdownStrings.footnote = "footnote".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnote]
     
-    @scala.inline
-    def footnoteDefinition: typings.reactMarkdown.reactMarkdownStrings.footnoteDefinition = "footnoteDefinition".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnoteDefinition]
+    inline def footnoteDefinition: typings.reactMarkdown.reactMarkdownStrings.footnoteDefinition = "footnoteDefinition".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnoteDefinition]
     
-    @scala.inline
-    def footnoteReference: typings.reactMarkdown.reactMarkdownStrings.footnoteReference = "footnoteReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnoteReference]
+    inline def footnoteReference: typings.reactMarkdown.reactMarkdownStrings.footnoteReference = "footnoteReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.footnoteReference]
     
-    @scala.inline
-    def heading: typings.reactMarkdown.reactMarkdownStrings.heading = "heading".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.heading]
+    inline def heading: typings.reactMarkdown.reactMarkdownStrings.heading = "heading".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.heading]
     
-    @scala.inline
-    def html: typings.reactMarkdown.reactMarkdownStrings.html = "html".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.html]
+    inline def html: typings.reactMarkdown.reactMarkdownStrings.html = "html".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.html]
     
-    @scala.inline
-    def image: typings.reactMarkdown.reactMarkdownStrings.image = "image".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.image]
+    inline def image: typings.reactMarkdown.reactMarkdownStrings.image = "image".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.image]
     
-    @scala.inline
-    def imageReference: typings.reactMarkdown.reactMarkdownStrings.imageReference = "imageReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.imageReference]
+    inline def imageReference: typings.reactMarkdown.reactMarkdownStrings.imageReference = "imageReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.imageReference]
     
-    @scala.inline
-    def inlineCode: typings.reactMarkdown.reactMarkdownStrings.inlineCode = "inlineCode".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.inlineCode]
+    inline def inlineCode: typings.reactMarkdown.reactMarkdownStrings.inlineCode = "inlineCode".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.inlineCode]
     
-    @scala.inline
-    def link: typings.reactMarkdown.reactMarkdownStrings.link = "link".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.link]
+    inline def link: typings.reactMarkdown.reactMarkdownStrings.link = "link".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.link]
     
-    @scala.inline
-    def linkReference: typings.reactMarkdown.reactMarkdownStrings.linkReference = "linkReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.linkReference]
+    inline def linkReference: typings.reactMarkdown.reactMarkdownStrings.linkReference = "linkReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.linkReference]
     
-    @scala.inline
-    def list: typings.reactMarkdown.reactMarkdownStrings.list = "list".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.list]
+    inline def list: typings.reactMarkdown.reactMarkdownStrings.list = "list".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.list]
     
-    @scala.inline
-    def listItem: typings.reactMarkdown.reactMarkdownStrings.listItem = "listItem".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.listItem]
+    inline def listItem: typings.reactMarkdown.reactMarkdownStrings.listItem = "listItem".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.listItem]
     
-    @scala.inline
-    def paragraph: typings.reactMarkdown.reactMarkdownStrings.paragraph = "paragraph".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.paragraph]
+    inline def paragraph: typings.reactMarkdown.reactMarkdownStrings.paragraph = "paragraph".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.paragraph]
     
-    @scala.inline
-    def strong: typings.reactMarkdown.reactMarkdownStrings.strong = "strong".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.strong]
+    inline def strong: typings.reactMarkdown.reactMarkdownStrings.strong = "strong".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.strong]
     
-    @scala.inline
-    def table: typings.reactMarkdown.reactMarkdownStrings.table = "table".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.table]
+    inline def table: typings.reactMarkdown.reactMarkdownStrings.table = "table".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.table]
     
-    @scala.inline
-    def tableCell: typings.reactMarkdown.reactMarkdownStrings.tableCell = "tableCell".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableCell]
+    inline def tableCell: typings.reactMarkdown.reactMarkdownStrings.tableCell = "tableCell".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableCell]
     
-    @scala.inline
-    def tableRow: typings.reactMarkdown.reactMarkdownStrings.tableRow = "tableRow".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableRow]
+    inline def tableRow: typings.reactMarkdown.reactMarkdownStrings.tableRow = "tableRow".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableRow]
     
-    @scala.inline
-    def text: typings.reactMarkdown.reactMarkdownStrings.text = "text".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.text]
+    inline def text: typings.reactMarkdown.reactMarkdownStrings.text = "text".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.text]
     
-    @scala.inline
-    def thematicBreak: typings.reactMarkdown.reactMarkdownStrings.thematicBreak = "thematicBreak".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.thematicBreak]
+    inline def thematicBreak: typings.reactMarkdown.reactMarkdownStrings.thematicBreak = "thematicBreak".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.thematicBreak]
     
-    @scala.inline
-    def yaml: typings.reactMarkdown.reactMarkdownStrings.yaml = "yaml".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.yaml]
+    inline def yaml: typings.reactMarkdown.reactMarkdownStrings.yaml = "yaml".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.yaml]
   }
   
   type Not[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -321,105 +273,74 @@ object mod {
   }
   object ReactMarkdownPropsBase {
     
-    @scala.inline
-    def apply(): ReactMarkdownPropsBase = {
+    inline def apply(): ReactMarkdownPropsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactMarkdownPropsBase]
     }
     
-    @scala.inline
-    implicit class ReactMarkdownPropsBaseMutableBuilder[Self <: ReactMarkdownPropsBase] (val x: Self) extends AnyVal {
+    extension [Self <: ReactMarkdownPropsBase](x: Self) {
       
-      @scala.inline
-      def setAllowNode(value: (/* node */ Content, /* index */ Double, /* parent */ NodeType) => Boolean): Self = StObject.set(x, "allowNode", js.Any.fromFunction3(value))
+      inline def setAllowNode(value: (/* node */ Content, /* index */ Double, /* parent */ NodeType) => Boolean): Self = StObject.set(x, "allowNode", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAllowNodeUndefined: Self = StObject.set(x, "allowNode", js.undefined)
+      inline def setAllowNodeUndefined: Self = StObject.set(x, "allowNode", js.undefined)
       
-      @scala.inline
-      def setAstPlugins(value: PluggableList[Settings]): Self = StObject.set(x, "astPlugins", value.asInstanceOf[js.Any])
+      inline def setAstPlugins(value: PluggableList[Settings]): Self = StObject.set(x, "astPlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAstPluginsUndefined: Self = StObject.set(x, "astPlugins", js.undefined)
+      inline def setAstPluginsUndefined: Self = StObject.set(x, "astPlugins", js.undefined)
       
-      @scala.inline
-      def setAstPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], Settings])*): Self = StObject.set(x, "astPlugins", js.Array(value :_*))
+      inline def setAstPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], Settings])*): Self = StObject.set(x, "astPlugins", js.Array(value :_*))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIncludeNodeIndex(value: Boolean): Self = StObject.set(x, "includeNodeIndex", value.asInstanceOf[js.Any])
+      inline def setIncludeNodeIndex(value: Boolean): Self = StObject.set(x, "includeNodeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeNodeIndexUndefined: Self = StObject.set(x, "includeNodeIndex", js.undefined)
+      inline def setIncludeNodeIndexUndefined: Self = StObject.set(x, "includeNodeIndex", js.undefined)
       
-      @scala.inline
-      def setLinkTarget(value: String | LinkTargetResolver): Self = StObject.set(x, "linkTarget", value.asInstanceOf[js.Any])
+      inline def setLinkTarget(value: String | LinkTargetResolver): Self = StObject.set(x, "linkTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTargetFunction3(value: (/* uri */ String, /* text */ String, /* title */ js.UndefOr[String]) => String): Self = StObject.set(x, "linkTarget", js.Any.fromFunction3(value))
+      inline def setLinkTargetFunction3(value: (/* uri */ String, /* text */ String, /* title */ js.UndefOr[String]) => String): Self = StObject.set(x, "linkTarget", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLinkTargetUndefined: Self = StObject.set(x, "linkTarget", js.undefined)
+      inline def setLinkTargetUndefined: Self = StObject.set(x, "linkTarget", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: PluggableList[Settings]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: PluggableList[Settings]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], Settings])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], Settings])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRawSourcePos(value: Boolean): Self = StObject.set(x, "rawSourcePos", value.asInstanceOf[js.Any])
+      inline def setRawSourcePos(value: Boolean): Self = StObject.set(x, "rawSourcePos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawSourcePosUndefined: Self = StObject.set(x, "rawSourcePos", js.undefined)
+      inline def setRawSourcePosUndefined: Self = StObject.set(x, "rawSourcePos", js.undefined)
       
-      @scala.inline
-      def setRenderers(value: StringDictionary[ElementType[js.Any]]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
+      inline def setRenderers(value: StringDictionary[ElementType[js.Any]]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
+      inline def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
       
-      @scala.inline
-      def setSourcePos(value: Boolean): Self = StObject.set(x, "sourcePos", value.asInstanceOf[js.Any])
+      inline def setSourcePos(value: Boolean): Self = StObject.set(x, "sourcePos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcePosUndefined: Self = StObject.set(x, "sourcePos", js.undefined)
+      inline def setSourcePosUndefined: Self = StObject.set(x, "sourcePos", js.undefined)
       
-      @scala.inline
-      def setTransformImageUri(
+      inline def setTransformImageUri(
         value: (/* uri */ String, /* children */ js.UndefOr[ReactNode], /* title */ js.UndefOr[String], /* alt */ js.UndefOr[String]) => String
       ): Self = StObject.set(x, "transformImageUri", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setTransformImageUriNull: Self = StObject.set(x, "transformImageUri", null)
+      inline def setTransformImageUriNull: Self = StObject.set(x, "transformImageUri", null)
       
-      @scala.inline
-      def setTransformImageUriUndefined: Self = StObject.set(x, "transformImageUri", js.undefined)
+      inline def setTransformImageUriUndefined: Self = StObject.set(x, "transformImageUri", js.undefined)
       
-      @scala.inline
-      def setTransformLinkUri(
+      inline def setTransformLinkUri(
         value: (/* uri */ String, /* children */ js.UndefOr[ReactNode], /* title */ js.UndefOr[String]) => String
       ): Self = StObject.set(x, "transformLinkUri", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformLinkUriNull: Self = StObject.set(x, "transformLinkUri", null)
+      inline def setTransformLinkUriNull: Self = StObject.set(x, "transformLinkUri", null)
       
-      @scala.inline
-      def setTransformLinkUriUndefined: Self = StObject.set(x, "transformLinkUri", js.undefined)
+      inline def setTransformLinkUriUndefined: Self = StObject.set(x, "transformLinkUri", js.undefined)
       
-      @scala.inline
-      def setUnwrapDisallowed(value: Boolean): Self = StObject.set(x, "unwrapDisallowed", value.asInstanceOf[js.Any])
+      inline def setUnwrapDisallowed(value: Boolean): Self = StObject.set(x, "unwrapDisallowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnwrapDisallowedUndefined: Self = StObject.set(x, "unwrapDisallowed", js.undefined)
+      inline def setUnwrapDisallowedUndefined: Self = StObject.set(x, "unwrapDisallowed", js.undefined)
     }
   }
   
@@ -435,20 +356,16 @@ object mod {
   }
   object SkipHtmlProp {
     
-    @scala.inline
-    def apply(): SkipHtmlProp = {
+    inline def apply(): SkipHtmlProp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkipHtmlProp]
     }
     
-    @scala.inline
-    implicit class SkipHtmlPropMutableBuilder[Self <: SkipHtmlProp] (val x: Self) extends AnyVal {
+    extension [Self <: SkipHtmlProp](x: Self) {
       
-      @scala.inline
-      def setSkipHtml(value: Boolean): Self = StObject.set(x, "skipHtml", value.asInstanceOf[js.Any])
+      inline def setSkipHtml(value: Boolean): Self = StObject.set(x, "skipHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipHtmlUndefined: Self = StObject.set(x, "skipHtml", js.undefined)
+      inline def setSkipHtmlUndefined: Self = StObject.set(x, "skipHtml", js.undefined)
     }
   }
   
@@ -459,17 +376,14 @@ object mod {
   }
   object SourceProp {
     
-    @scala.inline
-    def apply(source: String): SourceProp = {
+    inline def apply(source: String): SourceProp = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceProp]
     }
     
-    @scala.inline
-    implicit class SourcePropMutableBuilder[Self <: SourceProp] (val x: Self) extends AnyVal {
+    extension [Self <: SourceProp](x: Self) {
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

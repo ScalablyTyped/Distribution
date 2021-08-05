@@ -52,49 +52,35 @@ trait SchemaAsset extends StObject {
 }
 object SchemaAsset {
   
-  @scala.inline
-  def apply(): SchemaAsset = {
+  inline def apply(): SchemaAsset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsset]
   }
   
-  @scala.inline
-  implicit class SchemaAssetMutableBuilder[Self <: SchemaAsset] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsset](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceProperties", value.asInstanceOf[js.Any])
+    inline def setResourceProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePropertiesUndefined: Self = StObject.set(x, "resourceProperties", js.undefined)
+    inline def setResourcePropertiesUndefined: Self = StObject.set(x, "resourceProperties", js.undefined)
     
-    @scala.inline
-    def setSecurityCenterProperties(value: SchemaSecurityCenterProperties): Self = StObject.set(x, "securityCenterProperties", value.asInstanceOf[js.Any])
+    inline def setSecurityCenterProperties(value: SchemaSecurityCenterProperties): Self = StObject.set(x, "securityCenterProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityCenterPropertiesUndefined: Self = StObject.set(x, "securityCenterProperties", js.undefined)
+    inline def setSecurityCenterPropertiesUndefined: Self = StObject.set(x, "securityCenterProperties", js.undefined)
     
-    @scala.inline
-    def setSecurityMarks(value: SchemaSecurityMarks): Self = StObject.set(x, "securityMarks", value.asInstanceOf[js.Any])
+    inline def setSecurityMarks(value: SchemaSecurityMarks): Self = StObject.set(x, "securityMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityMarksUndefined: Self = StObject.set(x, "securityMarks", js.undefined)
+    inline def setSecurityMarksUndefined: Self = StObject.set(x, "securityMarks", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

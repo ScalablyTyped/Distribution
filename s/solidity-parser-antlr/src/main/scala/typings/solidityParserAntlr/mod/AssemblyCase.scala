@@ -14,17 +14,14 @@ trait AssemblyCase
 }
 object AssemblyCase {
   
-  @scala.inline
-  def apply(): AssemblyCase = {
+  inline def apply(): AssemblyCase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyCase")
     __obj.asInstanceOf[AssemblyCase]
   }
   
-  @scala.inline
-  implicit class AssemblyCaseMutableBuilder[Self <: AssemblyCase] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyCase](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

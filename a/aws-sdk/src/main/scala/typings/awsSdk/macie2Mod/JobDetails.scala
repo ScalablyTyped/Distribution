@@ -28,37 +28,27 @@ trait JobDetails extends StObject {
 }
 object JobDetails {
   
-  @scala.inline
-  def apply(): JobDetails = {
+  inline def apply(): JobDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobDetails]
   }
   
-  @scala.inline
-  implicit class JobDetailsMutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
+  extension [Self <: JobDetails](x: Self) {
     
-    @scala.inline
-    def setIsDefinedInJob(value: IsDefinedInJob): Self = StObject.set(x, "isDefinedInJob", value.asInstanceOf[js.Any])
+    inline def setIsDefinedInJob(value: IsDefinedInJob): Self = StObject.set(x, "isDefinedInJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefinedInJobUndefined: Self = StObject.set(x, "isDefinedInJob", js.undefined)
+    inline def setIsDefinedInJobUndefined: Self = StObject.set(x, "isDefinedInJob", js.undefined)
     
-    @scala.inline
-    def setIsMonitoredByJob(value: IsMonitoredByJob): Self = StObject.set(x, "isMonitoredByJob", value.asInstanceOf[js.Any])
+    inline def setIsMonitoredByJob(value: IsMonitoredByJob): Self = StObject.set(x, "isMonitoredByJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMonitoredByJobUndefined: Self = StObject.set(x, "isMonitoredByJob", js.undefined)
+    inline def setIsMonitoredByJobUndefined: Self = StObject.set(x, "isMonitoredByJob", js.undefined)
     
-    @scala.inline
-    def setLastJobId(value: string): Self = StObject.set(x, "lastJobId", value.asInstanceOf[js.Any])
+    inline def setLastJobId(value: string): Self = StObject.set(x, "lastJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastJobIdUndefined: Self = StObject.set(x, "lastJobId", js.undefined)
+    inline def setLastJobIdUndefined: Self = StObject.set(x, "lastJobId", js.undefined)
     
-    @scala.inline
-    def setLastJobRunTime(value: timestampIso8601): Self = StObject.set(x, "lastJobRunTime", value.asInstanceOf[js.Any])
+    inline def setLastJobRunTime(value: timestampIso8601): Self = StObject.set(x, "lastJobRunTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastJobRunTimeUndefined: Self = StObject.set(x, "lastJobRunTime", js.undefined)
+    inline def setLastJobRunTimeUndefined: Self = StObject.set(x, "lastJobRunTime", js.undefined)
   }
 }

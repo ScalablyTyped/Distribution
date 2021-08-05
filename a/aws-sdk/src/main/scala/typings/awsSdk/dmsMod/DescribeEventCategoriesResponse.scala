@@ -13,22 +13,17 @@ trait DescribeEventCategoriesResponse extends StObject {
 }
 object DescribeEventCategoriesResponse {
   
-  @scala.inline
-  def apply(): DescribeEventCategoriesResponse = {
+  inline def apply(): DescribeEventCategoriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventCategoriesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEventCategoriesResponseMutableBuilder[Self <: DescribeEventCategoriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventCategoriesResponse](x: Self) {
     
-    @scala.inline
-    def setEventCategoryGroupList(value: EventCategoryGroupList): Self = StObject.set(x, "EventCategoryGroupList", value.asInstanceOf[js.Any])
+    inline def setEventCategoryGroupList(value: EventCategoryGroupList): Self = StObject.set(x, "EventCategoryGroupList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCategoryGroupListUndefined: Self = StObject.set(x, "EventCategoryGroupList", js.undefined)
+    inline def setEventCategoryGroupListUndefined: Self = StObject.set(x, "EventCategoryGroupList", js.undefined)
     
-    @scala.inline
-    def setEventCategoryGroupListVarargs(value: EventCategoryGroup*): Self = StObject.set(x, "EventCategoryGroupList", js.Array(value :_*))
+    inline def setEventCategoryGroupListVarargs(value: EventCategoryGroup*): Self = StObject.set(x, "EventCategoryGroupList", js.Array(value :_*))
   }
 }

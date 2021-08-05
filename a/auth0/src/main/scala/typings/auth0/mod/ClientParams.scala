@@ -10,16 +10,13 @@ trait ClientParams extends StObject {
 }
 object ClientParams {
   
-  @scala.inline
-  def apply(client_id: String): ClientParams = {
+  inline def apply(client_id: String): ClientParams = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientParams]
   }
   
-  @scala.inline
-  implicit class ClientParamsMutableBuilder[Self <: ClientParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClientParams](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
   }
 }

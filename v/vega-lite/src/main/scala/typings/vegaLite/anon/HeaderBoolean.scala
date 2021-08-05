@@ -10,16 +10,13 @@ trait HeaderBoolean extends StObject {
 }
 object HeaderBoolean {
   
-  @scala.inline
-  def apply(header: Boolean): HeaderBoolean = {
+  inline def apply(header: Boolean): HeaderBoolean = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderBoolean]
   }
   
-  @scala.inline
-  implicit class HeaderBooleanMutableBuilder[Self <: HeaderBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderBoolean](x: Self) {
     
-    @scala.inline
-    def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

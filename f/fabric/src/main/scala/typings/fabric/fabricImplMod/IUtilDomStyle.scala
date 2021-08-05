@@ -14,16 +14,13 @@ trait IUtilDomStyle extends StObject {
 }
 object IUtilDomStyle {
   
-  @scala.inline
-  def apply(setStyle: (HTMLElement, js.Any) => HTMLElement): IUtilDomStyle = {
+  inline def apply(setStyle: (HTMLElement, js.Any) => HTMLElement): IUtilDomStyle = {
     val __obj = js.Dynamic.literal(setStyle = js.Any.fromFunction2(setStyle))
     __obj.asInstanceOf[IUtilDomStyle]
   }
   
-  @scala.inline
-  implicit class IUtilDomStyleMutableBuilder[Self <: IUtilDomStyle] (val x: Self) extends AnyVal {
+  extension [Self <: IUtilDomStyle](x: Self) {
     
-    @scala.inline
-    def setSetStyle(value: (HTMLElement, js.Any) => HTMLElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
+    inline def setSetStyle(value: (HTMLElement, js.Any) => HTMLElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
   }
 }

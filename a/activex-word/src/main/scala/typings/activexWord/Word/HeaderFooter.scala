@@ -26,13 +26,12 @@ trait HeaderFooter extends StObject {
   
   val Shapes: typings.activexWord.Word.Shapes
   
-  @JSName("Word.HeaderFooter_typekey")
+  /* private */ @JSName("Word.HeaderFooter_typekey")
   var WordDotHeaderFooter_typekey: HeaderFooter
 }
 object HeaderFooter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Exists: Boolean,
@@ -50,40 +49,28 @@ object HeaderFooter {
     __obj.asInstanceOf[HeaderFooter]
   }
   
-  @scala.inline
-  implicit class HeaderFooterMutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderFooter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
+    inline def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: WdHeaderFooterIndex): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: WdHeaderFooterIndex): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHeader(value: Boolean): Self = StObject.set(x, "IsHeader", value.asInstanceOf[js.Any])
+    inline def setIsHeader(value: Boolean): Self = StObject.set(x, "IsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkToPrevious(value: Boolean): Self = StObject.set(x, "LinkToPrevious", value.asInstanceOf[js.Any])
+    inline def setLinkToPrevious(value: Boolean): Self = StObject.set(x, "LinkToPrevious", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumbers(value: PageNumbers): Self = StObject.set(x, "PageNumbers", value.asInstanceOf[js.Any])
+    inline def setPageNumbers(value: PageNumbers): Self = StObject.set(x, "PageNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapes(value: Shapes): Self = StObject.set(x, "Shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: Shapes): Self = StObject.set(x, "Shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "Word.HeaderFooter_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "Word.HeaderFooter_typekey", value.asInstanceOf[js.Any])
   }
 }

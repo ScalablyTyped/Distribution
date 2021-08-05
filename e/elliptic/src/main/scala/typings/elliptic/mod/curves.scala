@@ -55,63 +55,45 @@ object curves {
     }
     object Options {
       
-      @scala.inline
-      def apply(a: String, b: String, g: js.Any, gRed: Boolean, hash: js.Any, n: String, p: String, `type`: String): Options = {
+      inline def apply(a: String, b: String, g: js.Any, gRed: Boolean, hash: js.Any, n: String, p: String, `type`: String): Options = {
         val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], gRed = gRed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], prime = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setA(value: String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+        inline def setA(value: String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+        inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBasis(value: js.Any): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
+        inline def setBasis(value: js.Any): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
+        inline def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
         
-        @scala.inline
-        def setBeta(value: String): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+        inline def setBeta(value: String): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+        inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
         
-        @scala.inline
-        def setG(value: js.Any): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        inline def setG(value: js.Any): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGRed(value: Boolean): Self = StObject.set(x, "gRed", value.asInstanceOf[js.Any])
+        inline def setGRed(value: Boolean): Self = StObject.set(x, "gRed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+        inline def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLambda(value: String): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+        inline def setLambda(value: String): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+        inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
         
-        @scala.inline
-        def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+        inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setP(value: String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+        inline def setP(value: String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrime(value: String): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
+        inline def setPrime(value: String): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimeNull: Self = StObject.set(x, "prime", null)
+        inline def setPrimeNull: Self = StObject.set(x, "prime", null)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }

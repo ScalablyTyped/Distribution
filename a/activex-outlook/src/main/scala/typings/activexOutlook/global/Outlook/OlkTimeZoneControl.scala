@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkTimeZoneControl")
 @js.native
-class OlkTimeZoneControl protected ()
+/* private */ class OlkTimeZoneControl ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkTimeZoneControl {
   
@@ -35,7 +35,7 @@ class OlkTimeZoneControl protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkTimeZoneControl_typekey")
   var OutlookDotOlkTimeZoneControl_typekey: typings.activexOutlook.Outlook.OlkTimeZoneControl = js.native
   

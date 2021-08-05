@@ -58,73 +58,51 @@ trait Params extends StObject {
 }
 object Params {
   
-  @scala.inline
-  def apply(): Params = {
+  inline def apply(): Params = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Params]
   }
   
-  @scala.inline
-  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+  extension [Self <: Params](x: Self) {
     
-    @scala.inline
-    def setDynatable(value: String): Self = StObject.set(x, "dynatable", value.asInstanceOf[js.Any])
+    inline def setDynatable(value: String): Self = StObject.set(x, "dynatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynatableUndefined: Self = StObject.set(x, "dynatable", js.undefined)
+    inline def setDynatableUndefined: Self = StObject.set(x, "dynatable", js.undefined)
     
-    @scala.inline
-    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPerPage(value: String): Self = StObject.set(x, "perPage", value.asInstanceOf[js.Any])
+    inline def setPerPage(value: String): Self = StObject.set(x, "perPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerPageUndefined: Self = StObject.set(x, "perPage", js.undefined)
+    inline def setPerPageUndefined: Self = StObject.set(x, "perPage", js.undefined)
     
-    @scala.inline
-    def setQueries(value: String): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: String): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    @scala.inline
-    def setQueryRecordCount(value: String): Self = StObject.set(x, "queryRecordCount", value.asInstanceOf[js.Any])
+    inline def setQueryRecordCount(value: String): Self = StObject.set(x, "queryRecordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryRecordCountUndefined: Self = StObject.set(x, "queryRecordCount", js.undefined)
+    inline def setQueryRecordCountUndefined: Self = StObject.set(x, "queryRecordCount", js.undefined)
     
-    @scala.inline
-    def setRecord(value: js.Object): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+    inline def setRecord(value: js.Object): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
+    inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
     
-    @scala.inline
-    def setRecords(value: String): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: String): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
-    @scala.inline
-    def setSorts(value: String): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
+    inline def setSorts(value: String): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortsUndefined: Self = StObject.set(x, "sorts", js.undefined)
+    inline def setSortsUndefined: Self = StObject.set(x, "sorts", js.undefined)
     
-    @scala.inline
-    def setTotalRecordCount(value: String): Self = StObject.set(x, "totalRecordCount", value.asInstanceOf[js.Any])
+    inline def setTotalRecordCount(value: String): Self = StObject.set(x, "totalRecordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRecordCountUndefined: Self = StObject.set(x, "totalRecordCount", js.undefined)
+    inline def setTotalRecordCountUndefined: Self = StObject.set(x, "totalRecordCount", js.undefined)
   }
 }

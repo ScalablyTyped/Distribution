@@ -21,13 +21,11 @@ object Switch {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Switch = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Switch]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Switch = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Switch]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.Switch.fn")
   @js.native
   def fn: typings.kendoUi.kendo.mobile.ui.Switch = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.mobile.ui.Switch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.mobile.ui.Switch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

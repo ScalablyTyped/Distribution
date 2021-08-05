@@ -14,25 +14,19 @@ trait DurationToFormatOptions
 }
 object DurationToFormatOptions {
   
-  @scala.inline
-  def apply(): DurationToFormatOptions = {
+  inline def apply(): DurationToFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DurationToFormatOptions]
   }
   
-  @scala.inline
-  implicit class DurationToFormatOptionsMutableBuilder[Self <: DurationToFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DurationToFormatOptions](x: Self) {
     
-    @scala.inline
-    def setFloor(value: Boolean): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+    inline def setFloor(value: Boolean): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
+    inline def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
     
-    @scala.inline
-    def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
   }
 }

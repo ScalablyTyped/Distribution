@@ -24,55 +24,39 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(): Id = {
+  inline def apply(): Id = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMessagingPermit(value: String): Self = StObject.set(x, "messagingPermit", value.asInstanceOf[js.Any])
+    inline def setMessagingPermit(value: String): Self = StObject.set(x, "messagingPermit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagingPermitExpires(value: Timestamp): Self = StObject.set(x, "messagingPermitExpires", value.asInstanceOf[js.Any])
+    inline def setMessagingPermitExpires(value: Timestamp): Self = StObject.set(x, "messagingPermitExpires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagingPermitExpiresUndefined: Self = StObject.set(x, "messagingPermitExpires", js.undefined)
+    inline def setMessagingPermitExpiresUndefined: Self = StObject.set(x, "messagingPermitExpires", js.undefined)
     
-    @scala.inline
-    def setMessagingPermitUndefined: Self = StObject.set(x, "messagingPermit", js.undefined)
+    inline def setMessagingPermitUndefined: Self = StObject.set(x, "messagingPermit", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhotoLastUpdated(value: Timestamp): Self = StObject.set(x, "photoLastUpdated", value.asInstanceOf[js.Any])
+    inline def setPhotoLastUpdated(value: Timestamp): Self = StObject.set(x, "photoLastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoLastUpdatedUndefined: Self = StObject.set(x, "photoLastUpdated", js.undefined)
+    inline def setPhotoLastUpdatedUndefined: Self = StObject.set(x, "photoLastUpdated", js.undefined)
     
-    @scala.inline
-    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
+    inline def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
+    inline def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
     
-    @scala.inline
-    def setType(value: ContactType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContactType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

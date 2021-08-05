@@ -12,19 +12,15 @@ trait InputCount extends StObject {
 }
 object InputCount {
   
-  @scala.inline
-  def apply(inputCount: Double, outputCount: Double): InputCount = {
+  inline def apply(inputCount: Double, outputCount: Double): InputCount = {
     val __obj = js.Dynamic.literal(inputCount = inputCount.asInstanceOf[js.Any], outputCount = outputCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputCount]
   }
   
-  @scala.inline
-  implicit class InputCountMutableBuilder[Self <: InputCount] (val x: Self) extends AnyVal {
+  extension [Self <: InputCount](x: Self) {
     
-    @scala.inline
-    def setInputCount(value: Double): Self = StObject.set(x, "inputCount", value.asInstanceOf[js.Any])
+    inline def setInputCount(value: Double): Self = StObject.set(x, "inputCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputCount(value: Double): Self = StObject.set(x, "outputCount", value.asInstanceOf[js.Any])
+    inline def setOutputCount(value: Double): Self = StObject.set(x, "outputCount", value.asInstanceOf[js.Any])
   }
 }

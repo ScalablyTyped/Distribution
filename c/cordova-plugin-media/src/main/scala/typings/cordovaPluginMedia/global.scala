@@ -42,31 +42,26 @@ object global {
     @JSGlobal("Media.MEDIA_NONE")
     @js.native
     def MEDIA_NONE: Double = js.native
-    @scala.inline
-    def MEDIA_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_NONE")(x.asInstanceOf[js.Any])
+    inline def MEDIA_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_NONE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Media.MEDIA_PAUSED")
     @js.native
     def MEDIA_PAUSED: Double = js.native
-    @scala.inline
-    def MEDIA_PAUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_PAUSED")(x.asInstanceOf[js.Any])
+    inline def MEDIA_PAUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_PAUSED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Media.MEDIA_RUNNING")
     @js.native
     def MEDIA_RUNNING: Double = js.native
-    @scala.inline
-    def MEDIA_RUNNING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_RUNNING")(x.asInstanceOf[js.Any])
+    inline def MEDIA_RUNNING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_RUNNING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Media.MEDIA_STARTING")
     @js.native
     def MEDIA_STARTING: Double = js.native
-    @scala.inline
-    def MEDIA_STARTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STARTING")(x.asInstanceOf[js.Any])
+    inline def MEDIA_STARTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STARTING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Media.MEDIA_STOPPED")
     @js.native
     def MEDIA_STOPPED: Double = js.native
-    @scala.inline
-    def MEDIA_STOPPED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STOPPED")(x.asInstanceOf[js.Any])
+    inline def MEDIA_STOPPED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STOPPED")(x.asInstanceOf[js.Any])
   }
 }

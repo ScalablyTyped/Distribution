@@ -28,8 +28,7 @@ trait CreateNotificationSubscriptionRequest extends StObject {
 }
 object CreateNotificationSubscriptionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Endpoint: SubscriptionEndPointType,
     OrganizationId: IdType,
     Protocol: SubscriptionProtocolType,
@@ -39,19 +38,14 @@ object CreateNotificationSubscriptionRequest {
     __obj.asInstanceOf[CreateNotificationSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class CreateNotificationSubscriptionRequestMutableBuilder[Self <: CreateNotificationSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotificationSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: SubscriptionEndPointType): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: SubscriptionEndPointType): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: SubscriptionProtocolType): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: SubscriptionProtocolType): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "SubscriptionType", value.asInstanceOf[js.Any])
+    inline def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "SubscriptionType", value.asInstanceOf[js.Any])
   }
 }

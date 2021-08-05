@@ -18,8 +18,7 @@ trait ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint extends StO
 }
 object ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint,
     request: TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions,
     response: OctokitResponse[TeamsCreateOrUpdateIdPGroupConnectionsLegacyResponseData]
@@ -28,16 +27,12 @@ object ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint {
     __obj.asInstanceOf[ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpointMutableBuilder[Self <: ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: TeamsCreateOrUpdateIdPGroupConnectionsLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[TeamsCreateOrUpdateIdPGroupConnectionsLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[TeamsCreateOrUpdateIdPGroupConnectionsLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

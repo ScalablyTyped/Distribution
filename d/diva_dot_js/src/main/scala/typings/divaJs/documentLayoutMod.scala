@@ -60,8 +60,7 @@ object documentLayoutMod {
   }
   object DocumentLayout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dimensions: Dimensions,
       getPageDimensions: Double => Dimensions,
       getPageInfo: Double => PageInfo | Null,
@@ -74,32 +73,23 @@ object documentLayoutMod {
       __obj.asInstanceOf[DocumentLayout]
     }
     
-    @scala.inline
-    implicit class DocumentLayoutMutableBuilder[Self <: DocumentLayout] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentLayout](x: Self) {
       
-      @scala.inline
-      def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPageDimensions(value: Double => Dimensions): Self = StObject.set(x, "getPageDimensions", js.Any.fromFunction1(value))
+      inline def setGetPageDimensions(value: Double => Dimensions): Self = StObject.set(x, "getPageDimensions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageInfo(value: Double => PageInfo | Null): Self = StObject.set(x, "getPageInfo", js.Any.fromFunction1(value))
+      inline def setGetPageInfo(value: Double => PageInfo | Null): Self = StObject.set(x, "getPageInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageOffset(value: (Double, js.Object) => Offset): Self = StObject.set(x, "getPageOffset", js.Any.fromFunction2(value))
+      inline def setGetPageOffset(value: (Double, js.Object) => Offset): Self = StObject.set(x, "getPageOffset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPageRegion(value: (Double, js.Object) => Offset): Self = StObject.set(x, "getPageRegion", js.Any.fromFunction2(value))
+      inline def setGetPageRegion(value: (Double, js.Object) => Offset): Self = StObject.set(x, "getPageRegion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPageToViewportCenterOffset(value: (Double, Region) => X): Self = StObject.set(x, "getPageToViewportCenterOffset", js.Any.fromFunction2(value))
+      inline def setGetPageToViewportCenterOffset(value: (Double, Region) => X): Self = StObject.set(x, "getPageToViewportCenterOffset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPageGroups(value: js.Array[PageGroup]): Self = StObject.set(x, "pageGroups", value.asInstanceOf[js.Any])
+      inline def setPageGroups(value: js.Array[PageGroup]): Self = StObject.set(x, "pageGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageGroupsVarargs(value: PageGroup*): Self = StObject.set(x, "pageGroups", js.Array(value :_*))
+      inline def setPageGroupsVarargs(value: PageGroup*): Self = StObject.set(x, "pageGroups", js.Array(value :_*))
     }
   }
 }

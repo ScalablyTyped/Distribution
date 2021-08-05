@@ -94,16 +94,14 @@ object Search {
       * @return The index.
       */
     /* static member */
-    @scala.inline
-    def getIndexer(): typings.winrtUwp.Windows.Storage.Search.ContentIndexer = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndexer")().asInstanceOf[typings.winrtUwp.Windows.Storage.Search.ContentIndexer]
+    inline def getIndexer(): typings.winrtUwp.Windows.Storage.Search.ContentIndexer = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndexer")().asInstanceOf[typings.winrtUwp.Windows.Storage.Search.ContentIndexer]
     /**
       * Gets the per-app index with the specified name or creates a new one, if necessary.
       * @param indexName The index name.
       * @return The index.
       */
     /* static member */
-    @scala.inline
-    def getIndexer(indexName: String): typings.winrtUwp.Windows.Storage.Search.ContentIndexer = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndexer")(indexName.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Search.ContentIndexer]
+    inline def getIndexer(indexName: String): typings.winrtUwp.Windows.Storage.Search.ContentIndexer = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndexer")(indexName.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Search.ContentIndexer]
   }
   
   /** Represents a query for content properties in the ContentIndexer . */

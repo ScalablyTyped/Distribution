@@ -14,19 +14,15 @@ trait SearchDegreeCentralityResultDirected extends StObject {
 }
 object SearchDegreeCentralityResultDirected {
   
-  @scala.inline
-  def apply(indegree: Double, outdegree: Double): SearchDegreeCentralityResultDirected = {
+  inline def apply(indegree: Double, outdegree: Double): SearchDegreeCentralityResultDirected = {
     val __obj = js.Dynamic.literal(indegree = indegree.asInstanceOf[js.Any], outdegree = outdegree.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDegreeCentralityResultDirected]
   }
   
-  @scala.inline
-  implicit class SearchDegreeCentralityResultDirectedMutableBuilder[Self <: SearchDegreeCentralityResultDirected] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDegreeCentralityResultDirected](x: Self) {
     
-    @scala.inline
-    def setIndegree(value: Double): Self = StObject.set(x, "indegree", value.asInstanceOf[js.Any])
+    inline def setIndegree(value: Double): Self = StObject.set(x, "indegree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutdegree(value: Double): Self = StObject.set(x, "outdegree", value.asInstanceOf[js.Any])
+    inline def setOutdegree(value: Double): Self = StObject.set(x, "outdegree", value.asInstanceOf[js.Any])
   }
 }

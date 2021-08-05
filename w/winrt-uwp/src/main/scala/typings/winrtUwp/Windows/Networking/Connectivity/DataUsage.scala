@@ -15,19 +15,15 @@ trait DataUsage extends StObject {
 }
 object DataUsage {
   
-  @scala.inline
-  def apply(bytesReceived: Double, bytesSent: Double): DataUsage = {
+  inline def apply(bytesReceived: Double, bytesSent: Double): DataUsage = {
     val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], bytesSent = bytesSent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataUsage]
   }
   
-  @scala.inline
-  implicit class DataUsageMutableBuilder[Self <: DataUsage] (val x: Self) extends AnyVal {
+  extension [Self <: DataUsage](x: Self) {
     
-    @scala.inline
-    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
   }
 }

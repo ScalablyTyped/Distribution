@@ -13,16 +13,13 @@ trait StopDBClusterMessage extends StObject {
 }
 object StopDBClusterMessage {
   
-  @scala.inline
-  def apply(DBClusterIdentifier: String): StopDBClusterMessage = {
+  inline def apply(DBClusterIdentifier: String): StopDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopDBClusterMessage]
   }
   
-  @scala.inline
-  implicit class StopDBClusterMessageMutableBuilder[Self <: StopDBClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: StopDBClusterMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

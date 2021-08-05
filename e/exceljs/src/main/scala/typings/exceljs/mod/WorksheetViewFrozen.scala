@@ -37,40 +37,29 @@ trait WorksheetViewFrozen extends StObject {
 }
 object WorksheetViewFrozen {
   
-  @scala.inline
-  def apply(): WorksheetViewFrozen = {
+  inline def apply(): WorksheetViewFrozen = {
     val __obj = js.Dynamic.literal(state = "frozen")
     __obj.asInstanceOf[WorksheetViewFrozen]
   }
   
-  @scala.inline
-  implicit class WorksheetViewFrozenMutableBuilder[Self <: WorksheetViewFrozen] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetViewFrozen](x: Self) {
     
-    @scala.inline
-    def setState(value: frozen): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: frozen): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: pageBreakPreview): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: pageBreakPreview): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTopLeftCell(value: String): Self = StObject.set(x, "topLeftCell", value.asInstanceOf[js.Any])
+    inline def setTopLeftCell(value: String): Self = StObject.set(x, "topLeftCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLeftCellUndefined: Self = StObject.set(x, "topLeftCell", js.undefined)
+    inline def setTopLeftCellUndefined: Self = StObject.set(x, "topLeftCell", js.undefined)
     
-    @scala.inline
-    def setXSplit(value: Double): Self = StObject.set(x, "xSplit", value.asInstanceOf[js.Any])
+    inline def setXSplit(value: Double): Self = StObject.set(x, "xSplit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXSplitUndefined: Self = StObject.set(x, "xSplit", js.undefined)
+    inline def setXSplitUndefined: Self = StObject.set(x, "xSplit", js.undefined)
     
-    @scala.inline
-    def setYSplit(value: Double): Self = StObject.set(x, "ySplit", value.asInstanceOf[js.Any])
+    inline def setYSplit(value: Double): Self = StObject.set(x, "ySplit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYSplitUndefined: Self = StObject.set(x, "ySplit", js.undefined)
+    inline def setYSplitUndefined: Self = StObject.set(x, "ySplit", js.undefined)
   }
 }

@@ -22,17 +22,14 @@ object taglibLookupTaglibLookupMod {
   }
   object Element {
     
-    @scala.inline
-    def apply(tagName: String): Element = {
+    inline def apply(tagName: String): Element = {
       val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   

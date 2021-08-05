@@ -70,22 +70,18 @@ object mod extends Shortcut {
   }
   object LevelDatastoreOptions {
     
-    @scala.inline
-    def apply(): LevelDatastoreOptions = {
+    inline def apply(): LevelDatastoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDatastoreOptions]
     }
     
-    @scala.inline
-    implicit class LevelDatastoreOptionsMutableBuilder[Self <: LevelDatastoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDatastoreOptions](x: Self) {
       
-      @scala.inline
-      def setDb(
+      inline def setDb(
         value: (/* location */ String, /* options */ js.UndefOr[js.Any]) => LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
       ): Self = StObject.set(x, "db", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
     }
   }
   

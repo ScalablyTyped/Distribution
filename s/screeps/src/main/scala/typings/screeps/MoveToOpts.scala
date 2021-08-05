@@ -35,37 +35,27 @@ trait MoveToOpts
 }
 object MoveToOpts {
   
-  @scala.inline
-  def apply(): MoveToOpts = {
+  inline def apply(): MoveToOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveToOpts]
   }
   
-  @scala.inline
-  implicit class MoveToOptsMutableBuilder[Self <: MoveToOpts] (val x: Self) extends AnyVal {
+  extension [Self <: MoveToOpts](x: Self) {
     
-    @scala.inline
-    def setNoPathFinding(value: Boolean): Self = StObject.set(x, "noPathFinding", value.asInstanceOf[js.Any])
+    inline def setNoPathFinding(value: Boolean): Self = StObject.set(x, "noPathFinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoPathFindingUndefined: Self = StObject.set(x, "noPathFinding", js.undefined)
+    inline def setNoPathFindingUndefined: Self = StObject.set(x, "noPathFinding", js.undefined)
     
-    @scala.inline
-    def setReusePath(value: Double): Self = StObject.set(x, "reusePath", value.asInstanceOf[js.Any])
+    inline def setReusePath(value: Double): Self = StObject.set(x, "reusePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReusePathUndefined: Self = StObject.set(x, "reusePath", js.undefined)
+    inline def setReusePathUndefined: Self = StObject.set(x, "reusePath", js.undefined)
     
-    @scala.inline
-    def setSerializeMemory(value: Boolean): Self = StObject.set(x, "serializeMemory", value.asInstanceOf[js.Any])
+    inline def setSerializeMemory(value: Boolean): Self = StObject.set(x, "serializeMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializeMemoryUndefined: Self = StObject.set(x, "serializeMemory", js.undefined)
+    inline def setSerializeMemoryUndefined: Self = StObject.set(x, "serializeMemory", js.undefined)
     
-    @scala.inline
-    def setVisualizePathStyle(value: PolyStyle): Self = StObject.set(x, "visualizePathStyle", value.asInstanceOf[js.Any])
+    inline def setVisualizePathStyle(value: PolyStyle): Self = StObject.set(x, "visualizePathStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualizePathStyleUndefined: Self = StObject.set(x, "visualizePathStyle", js.undefined)
+    inline def setVisualizePathStyleUndefined: Self = StObject.set(x, "visualizePathStyle", js.undefined)
   }
 }

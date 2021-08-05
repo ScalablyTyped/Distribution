@@ -22,8 +22,7 @@ trait XFetchProvider
 }
 object XFetchProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     fetch: (Double, Double, Boolean) => FetchResult,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XFetchProvider {
     __obj.asInstanceOf[XFetchProvider]
   }
   
-  @scala.inline
-  implicit class XFetchProviderMutableBuilder[Self <: XFetchProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XFetchProvider](x: Self) {
     
-    @scala.inline
-    def setFetch(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetch", js.Any.fromFunction3(value))
+    inline def setFetch(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetch", js.Any.fromFunction3(value))
   }
 }

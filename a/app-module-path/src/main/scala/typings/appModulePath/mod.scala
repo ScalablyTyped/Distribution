@@ -10,14 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addPath(path: String, parent: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addPath(path: String, parent: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def enableForDir(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableForDir")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableForDir(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableForDir")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def removePath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removePath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

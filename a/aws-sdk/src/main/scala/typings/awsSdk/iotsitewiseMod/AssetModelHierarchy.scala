@@ -23,25 +23,19 @@ trait AssetModelHierarchy extends StObject {
 }
 object AssetModelHierarchy {
   
-  @scala.inline
-  def apply(childAssetModelId: ID, name: Name): AssetModelHierarchy = {
+  inline def apply(childAssetModelId: ID, name: Name): AssetModelHierarchy = {
     val __obj = js.Dynamic.literal(childAssetModelId = childAssetModelId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetModelHierarchy]
   }
   
-  @scala.inline
-  implicit class AssetModelHierarchyMutableBuilder[Self <: AssetModelHierarchy] (val x: Self) extends AnyVal {
+  extension [Self <: AssetModelHierarchy](x: Self) {
     
-    @scala.inline
-    def setChildAssetModelId(value: ID): Self = StObject.set(x, "childAssetModelId", value.asInstanceOf[js.Any])
+    inline def setChildAssetModelId(value: ID): Self = StObject.set(x, "childAssetModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

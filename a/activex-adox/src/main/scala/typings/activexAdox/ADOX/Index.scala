@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Index extends StObject {
   
-  @JSName("ADOX.Index_typekey")
+  /* private */ @JSName("ADOX.Index_typekey")
   var ADOXDotIndex_typekey: Index
   
   var Clustered: Boolean
@@ -33,8 +33,7 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADOXDotIndex_typekey: Index,
     Clustered: Boolean,
     Columns: Columns,
@@ -49,31 +48,22 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setADOXDotIndex_typekey(value: Index): Self = StObject.set(x, "ADOX.Index_typekey", value.asInstanceOf[js.Any])
+    inline def setADOXDotIndex_typekey(value: Index): Self = StObject.set(x, "ADOX.Index_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustered(value: Boolean): Self = StObject.set(x, "Clustered", value.asInstanceOf[js.Any])
+    inline def setClustered(value: Boolean): Self = StObject.set(x, "Clustered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: Columns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Columns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNulls(value: AllowNullsEnum): Self = StObject.set(x, "IndexNulls", value.asInstanceOf[js.Any])
+    inline def setIndexNulls(value: AllowNullsEnum): Self = StObject.set(x, "IndexNulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKey(value: Boolean): Self = StObject.set(x, "PrimaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: Boolean): Self = StObject.set(x, "PrimaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = StObject.set(x, "Unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "Unique", value.asInstanceOf[js.Any])
   }
 }

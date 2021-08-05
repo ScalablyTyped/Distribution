@@ -12,19 +12,15 @@ trait TransformationSetItem extends StObject {
 }
 object TransformationSetItem {
   
-  @scala.inline
-  def apply(position: Double, width: Double): TransformationSetItem = {
+  inline def apply(position: Double, width: Double): TransformationSetItem = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformationSetItem]
   }
   
-  @scala.inline
-  implicit class TransformationSetItemMutableBuilder[Self <: TransformationSetItem] (val x: Self) extends AnyVal {
+  extension [Self <: TransformationSetItem](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

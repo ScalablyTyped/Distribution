@@ -20,30 +20,21 @@ trait ARIACompositeWidgetRole
      with _ARIARole
 object ARIACompositeWidgetRole {
   
-  @scala.inline
-  def combobox: typings.ariaQuery.ariaQueryStrings.combobox = "combobox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.combobox]
+  inline def combobox: typings.ariaQuery.ariaQueryStrings.combobox = "combobox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.combobox]
   
-  @scala.inline
-  def grid: typings.ariaQuery.ariaQueryStrings.grid = "grid".asInstanceOf[typings.ariaQuery.ariaQueryStrings.grid]
+  inline def grid: typings.ariaQuery.ariaQueryStrings.grid = "grid".asInstanceOf[typings.ariaQuery.ariaQueryStrings.grid]
   
-  @scala.inline
-  def listbox: typings.ariaQuery.ariaQueryStrings.listbox = "listbox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.listbox]
+  inline def listbox: typings.ariaQuery.ariaQueryStrings.listbox = "listbox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.listbox]
   
-  @scala.inline
-  def menu: typings.ariaQuery.ariaQueryStrings.menu = "menu".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menu]
+  inline def menu: typings.ariaQuery.ariaQueryStrings.menu = "menu".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menu]
   
-  @scala.inline
-  def menubar: typings.ariaQuery.ariaQueryStrings.menubar = "menubar".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menubar]
+  inline def menubar: typings.ariaQuery.ariaQueryStrings.menubar = "menubar".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menubar]
   
-  @scala.inline
-  def radiogroup: typings.ariaQuery.ariaQueryStrings.radiogroup = "radiogroup".asInstanceOf[typings.ariaQuery.ariaQueryStrings.radiogroup]
+  inline def radiogroup: typings.ariaQuery.ariaQueryStrings.radiogroup = "radiogroup".asInstanceOf[typings.ariaQuery.ariaQueryStrings.radiogroup]
   
-  @scala.inline
-  def tablist: typings.ariaQuery.ariaQueryStrings.tablist = "tablist".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tablist]
+  inline def tablist: typings.ariaQuery.ariaQueryStrings.tablist = "tablist".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tablist]
   
-  @scala.inline
-  def tree: typings.ariaQuery.ariaQueryStrings.tree = "tree".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tree]
+  inline def tree: typings.ariaQuery.ariaQueryStrings.tree = "tree".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tree]
   
-  @scala.inline
-  def treegrid: typings.ariaQuery.ariaQueryStrings.treegrid = "treegrid".asInstanceOf[typings.ariaQuery.ariaQueryStrings.treegrid]
+  inline def treegrid: typings.ariaQuery.ariaQueryStrings.treegrid = "treegrid".asInstanceOf[typings.ariaQuery.ariaQueryStrings.treegrid]
 }

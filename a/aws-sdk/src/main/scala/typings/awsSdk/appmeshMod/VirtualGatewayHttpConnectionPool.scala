@@ -18,22 +18,17 @@ trait VirtualGatewayHttpConnectionPool extends StObject {
 }
 object VirtualGatewayHttpConnectionPool {
   
-  @scala.inline
-  def apply(maxConnections: MaxConnections): VirtualGatewayHttpConnectionPool = {
+  inline def apply(maxConnections: MaxConnections): VirtualGatewayHttpConnectionPool = {
     val __obj = js.Dynamic.literal(maxConnections = maxConnections.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayHttpConnectionPool]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayHttpConnectionPoolMutableBuilder[Self <: VirtualGatewayHttpConnectionPool] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayHttpConnectionPool](x: Self) {
     
-    @scala.inline
-    def setMaxConnections(value: MaxConnections): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+    inline def setMaxConnections(value: MaxConnections): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPendingRequests(value: MaxPendingRequests): Self = StObject.set(x, "maxPendingRequests", value.asInstanceOf[js.Any])
+    inline def setMaxPendingRequests(value: MaxPendingRequests): Self = StObject.set(x, "maxPendingRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPendingRequestsUndefined: Self = StObject.set(x, "maxPendingRequests", js.undefined)
+    inline def setMaxPendingRequestsUndefined: Self = StObject.set(x, "maxPendingRequests", js.undefined)
   }
 }

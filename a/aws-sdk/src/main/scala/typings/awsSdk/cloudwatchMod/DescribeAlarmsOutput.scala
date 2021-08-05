@@ -23,37 +23,27 @@ trait DescribeAlarmsOutput extends StObject {
 }
 object DescribeAlarmsOutput {
   
-  @scala.inline
-  def apply(): DescribeAlarmsOutput = {
+  inline def apply(): DescribeAlarmsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAlarmsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeAlarmsOutputMutableBuilder[Self <: DescribeAlarmsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlarmsOutput](x: Self) {
     
-    @scala.inline
-    def setCompositeAlarms(value: CompositeAlarms): Self = StObject.set(x, "CompositeAlarms", value.asInstanceOf[js.Any])
+    inline def setCompositeAlarms(value: CompositeAlarms): Self = StObject.set(x, "CompositeAlarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeAlarmsUndefined: Self = StObject.set(x, "CompositeAlarms", js.undefined)
+    inline def setCompositeAlarmsUndefined: Self = StObject.set(x, "CompositeAlarms", js.undefined)
     
-    @scala.inline
-    def setCompositeAlarmsVarargs(value: CompositeAlarm*): Self = StObject.set(x, "CompositeAlarms", js.Array(value :_*))
+    inline def setCompositeAlarmsVarargs(value: CompositeAlarm*): Self = StObject.set(x, "CompositeAlarms", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricAlarms(value: MetricAlarms): Self = StObject.set(x, "MetricAlarms", value.asInstanceOf[js.Any])
+    inline def setMetricAlarms(value: MetricAlarms): Self = StObject.set(x, "MetricAlarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricAlarmsUndefined: Self = StObject.set(x, "MetricAlarms", js.undefined)
+    inline def setMetricAlarmsUndefined: Self = StObject.set(x, "MetricAlarms", js.undefined)
     
-    @scala.inline
-    def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value :_*))
+    inline def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

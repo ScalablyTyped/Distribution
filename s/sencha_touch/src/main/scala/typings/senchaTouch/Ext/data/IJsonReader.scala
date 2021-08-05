@@ -36,49 +36,35 @@ trait IJsonReader
 }
 object IJsonReader {
   
-  @scala.inline
-  def apply(): IJsonReader = {
+  inline def apply(): IJsonReader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IJsonReader]
   }
   
-  @scala.inline
-  implicit class IJsonReaderMutableBuilder[Self <: IJsonReader] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonReader](x: Self) {
     
-    @scala.inline
-    def setGetRecord(value: () => String): Self = StObject.set(x, "getRecord", js.Any.fromFunction0(value))
+    inline def setGetRecord(value: () => String): Self = StObject.set(x, "getRecord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecordUndefined: Self = StObject.set(x, "getRecord", js.undefined)
+    inline def setGetRecordUndefined: Self = StObject.set(x, "getRecord", js.undefined)
     
-    @scala.inline
-    def setGetUseSimpleAccessors(value: () => Boolean): Self = StObject.set(x, "getUseSimpleAccessors", js.Any.fromFunction0(value))
+    inline def setGetUseSimpleAccessors(value: () => Boolean): Self = StObject.set(x, "getUseSimpleAccessors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUseSimpleAccessorsUndefined: Self = StObject.set(x, "getUseSimpleAccessors", js.undefined)
+    inline def setGetUseSimpleAccessorsUndefined: Self = StObject.set(x, "getUseSimpleAccessors", js.undefined)
     
-    @scala.inline
-    def setRecord(value: String): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+    inline def setRecord(value: String): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
+    inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
     
-    @scala.inline
-    def setSetRecord(value: /* record */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRecord", js.Any.fromFunction1(value))
+    inline def setSetRecord(value: /* record */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
+    inline def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
     
-    @scala.inline
-    def setSetUseSimpleAccessors(value: /* useSimpleAccessors */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseSimpleAccessors", js.Any.fromFunction1(value))
+    inline def setSetUseSimpleAccessors(value: /* useSimpleAccessors */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseSimpleAccessors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseSimpleAccessorsUndefined: Self = StObject.set(x, "setUseSimpleAccessors", js.undefined)
+    inline def setSetUseSimpleAccessorsUndefined: Self = StObject.set(x, "setUseSimpleAccessors", js.undefined)
     
-    @scala.inline
-    def setUseSimpleAccessors(value: Boolean): Self = StObject.set(x, "useSimpleAccessors", value.asInstanceOf[js.Any])
+    inline def setUseSimpleAccessors(value: Boolean): Self = StObject.set(x, "useSimpleAccessors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSimpleAccessorsUndefined: Self = StObject.set(x, "useSimpleAccessors", js.undefined)
+    inline def setUseSimpleAccessorsUndefined: Self = StObject.set(x, "useSimpleAccessors", js.undefined)
   }
 }

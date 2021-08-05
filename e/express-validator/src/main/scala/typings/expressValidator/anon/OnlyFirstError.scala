@@ -10,19 +10,15 @@ trait OnlyFirstError extends StObject {
 }
 object OnlyFirstError {
   
-  @scala.inline
-  def apply(): OnlyFirstError = {
+  inline def apply(): OnlyFirstError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnlyFirstError]
   }
   
-  @scala.inline
-  implicit class OnlyFirstErrorMutableBuilder[Self <: OnlyFirstError] (val x: Self) extends AnyVal {
+  extension [Self <: OnlyFirstError](x: Self) {
     
-    @scala.inline
-    def setOnlyFirstError(value: Boolean): Self = StObject.set(x, "onlyFirstError", value.asInstanceOf[js.Any])
+    inline def setOnlyFirstError(value: Boolean): Self = StObject.set(x, "onlyFirstError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyFirstErrorUndefined: Self = StObject.set(x, "onlyFirstError", js.undefined)
+    inline def setOnlyFirstErrorUndefined: Self = StObject.set(x, "onlyFirstError", js.undefined)
   }
 }

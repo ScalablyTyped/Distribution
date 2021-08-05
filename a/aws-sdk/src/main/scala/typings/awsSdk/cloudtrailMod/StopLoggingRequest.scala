@@ -13,16 +13,13 @@ trait StopLoggingRequest extends StObject {
 }
 object StopLoggingRequest {
   
-  @scala.inline
-  def apply(Name: String): StopLoggingRequest = {
+  inline def apply(Name: String): StopLoggingRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopLoggingRequest]
   }
   
-  @scala.inline
-  implicit class StopLoggingRequestMutableBuilder[Self <: StopLoggingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopLoggingRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

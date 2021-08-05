@@ -13,19 +13,15 @@ trait ResourceQuota extends StObject {
 }
 object ResourceQuota {
   
-  @scala.inline
-  def apply(): ResourceQuota = {
+  inline def apply(): ResourceQuota = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceQuota]
   }
   
-  @scala.inline
-  implicit class ResourceQuotaMutableBuilder[Self <: ResourceQuota] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceQuota](x: Self) {
     
-    @scala.inline
-    def setMaximum(value: BoxedInt): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: BoxedInt): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
   }
 }

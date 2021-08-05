@@ -18,13 +18,13 @@ object ngQueryVisitorMod {
   class NgQueryResolveVisitor protected () extends StObject {
     def this(typeChecker: TypeChecker) = this()
     
-    var _getClassMetadata: js.Any = js.native
+    /* private */ var _getClassMetadata: js.Any = js.native
     
-    var _recordClassInheritances: js.Any = js.native
+    /* private */ var _recordClassInheritances: js.Any = js.native
     
-    var _recordClassInputSetters: js.Any = js.native
+    /* private */ var _recordClassInputSetters: js.Any = js.native
     
-    var _recordQueryDeclaration: js.Any = js.native
+    /* private */ var _recordQueryDeclaration: js.Any = js.native
     
     /** Maps a class declaration to its class metadata. */
     var classMetadata: ClassMetadataMap = js.native
@@ -34,13 +34,13 @@ object ngQueryVisitorMod {
     
     var typeChecker: TypeChecker = js.native
     
-    var visitAccessorDeclaration: js.Any = js.native
+    /* private */ var visitAccessorDeclaration: js.Any = js.native
     
-    var visitClassDeclaration: js.Any = js.native
+    /* private */ var visitClassDeclaration: js.Any = js.native
     
     def visitNode(node: Node): Unit = js.native
     
-    var visitPropertyDeclaration: js.Any = js.native
+    /* private */ var visitPropertyDeclaration: js.Any = js.native
   }
   
   trait ClassMetadata extends StObject {
@@ -59,38 +59,28 @@ object ngQueryVisitorMod {
   }
   object ClassMetadata {
     
-    @scala.inline
-    def apply(derivedClasses: js.Array[ClassDeclaration], ngInputNames: js.Array[String]): ClassMetadata = {
+    inline def apply(derivedClasses: js.Array[ClassDeclaration], ngInputNames: js.Array[String]): ClassMetadata = {
       val __obj = js.Dynamic.literal(derivedClasses = derivedClasses.asInstanceOf[js.Any], ngInputNames = ngInputNames.asInstanceOf[js.Any], superClass = null)
       __obj.asInstanceOf[ClassMetadata]
     }
     
-    @scala.inline
-    implicit class ClassMetadataMutableBuilder[Self <: ClassMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ClassMetadata](x: Self) {
       
-      @scala.inline
-      def setDerivedClasses(value: js.Array[ClassDeclaration]): Self = StObject.set(x, "derivedClasses", value.asInstanceOf[js.Any])
+      inline def setDerivedClasses(value: js.Array[ClassDeclaration]): Self = StObject.set(x, "derivedClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDerivedClassesVarargs(value: ClassDeclaration*): Self = StObject.set(x, "derivedClasses", js.Array(value :_*))
+      inline def setDerivedClassesVarargs(value: ClassDeclaration*): Self = StObject.set(x, "derivedClasses", js.Array(value :_*))
       
-      @scala.inline
-      def setNgInputNames(value: js.Array[String]): Self = StObject.set(x, "ngInputNames", value.asInstanceOf[js.Any])
+      inline def setNgInputNames(value: js.Array[String]): Self = StObject.set(x, "ngInputNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgInputNamesVarargs(value: String*): Self = StObject.set(x, "ngInputNames", js.Array(value :_*))
+      inline def setNgInputNamesVarargs(value: String*): Self = StObject.set(x, "ngInputNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSuperClass(value: ClassDeclaration): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
+      inline def setSuperClass(value: ClassDeclaration): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuperClassNull: Self = StObject.set(x, "superClass", null)
+      inline def setSuperClassNull: Self = StObject.set(x, "superClass", null)
       
-      @scala.inline
-      def setTemplate(value: ResolvedTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: ResolvedTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   

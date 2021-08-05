@@ -17,16 +17,13 @@ trait ReferenceParams
 }
 object ReferenceParams {
   
-  @scala.inline
-  def apply(context: ReferenceContext, position: Position, textDocument: TextDocumentIdentifier): ReferenceParams = {
+  inline def apply(context: ReferenceContext, position: Position, textDocument: TextDocumentIdentifier): ReferenceParams = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceParams]
   }
   
-  @scala.inline
-  implicit class ReferenceParamsMutableBuilder[Self <: ReferenceParams] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceParams](x: Self) {
     
-    @scala.inline
-    def setContext(value: ReferenceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ReferenceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

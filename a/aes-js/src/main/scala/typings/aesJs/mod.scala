@@ -185,15 +185,13 @@ object mod {
         * Add standard PKCS7 padding to an array.
         * @param data The input data.
         */
-      @scala.inline
-      def pad(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def pad(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
       
       /**
         * Remove standard PKCS7 padding from an array.
         * @param data The input data.
         */
-      @scala.inline
-      def strip(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def strip(data: ByteSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     }
   }
   
@@ -209,15 +207,13 @@ object mod {
         * Convert an array-like object to a hexadecimal string.
         * @param data The input data.
         */
-      @scala.inline
-      def fromBytes(data: ByteSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def fromBytes(data: ByteSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(data.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Convert a hexadecimal string to a Uint8Array.
         * @param data The input string.
         */
-      @scala.inline
-      def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     }
     
     object utf8 {
@@ -230,15 +226,13 @@ object mod {
         * Convert an array-like object containing UTF8 data to a string.
         * @param data The input data.
         */
-      @scala.inline
-      def fromBytes(data: ByteSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def fromBytes(data: ByteSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(data.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Convert a UTF8 encoded string to a Uint8Array.
         * @param data The input string.
         */
-      @scala.inline
-      def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+      inline def toBytes(data: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     }
   }
   

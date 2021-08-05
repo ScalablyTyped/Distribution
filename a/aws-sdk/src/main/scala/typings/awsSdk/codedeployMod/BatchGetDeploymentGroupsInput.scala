@@ -18,22 +18,17 @@ trait BatchGetDeploymentGroupsInput extends StObject {
 }
 object BatchGetDeploymentGroupsInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName, deploymentGroupNames: DeploymentGroupsList): BatchGetDeploymentGroupsInput = {
+  inline def apply(applicationName: ApplicationName, deploymentGroupNames: DeploymentGroupsList): BatchGetDeploymentGroupsInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], deploymentGroupNames = deploymentGroupNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetDeploymentGroupsInput]
   }
   
-  @scala.inline
-  implicit class BatchGetDeploymentGroupsInputMutableBuilder[Self <: BatchGetDeploymentGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetDeploymentGroupsInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupNames(value: DeploymentGroupsList): Self = StObject.set(x, "deploymentGroupNames", value.asInstanceOf[js.Any])
+    inline def setDeploymentGroupNames(value: DeploymentGroupsList): Self = StObject.set(x, "deploymentGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupNamesVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroupNames", js.Array(value :_*))
+    inline def setDeploymentGroupNamesVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroupNames", js.Array(value :_*))
   }
 }

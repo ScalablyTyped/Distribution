@@ -12,16 +12,13 @@ trait ASPxClientChartDesignerSaveCommandExecuteEventArgs
 }
 object ASPxClientChartDesignerSaveCommandExecuteEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean): ASPxClientChartDesignerSaveCommandExecuteEventArgs = {
+  inline def apply(handled: Boolean): ASPxClientChartDesignerSaveCommandExecuteEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientChartDesignerSaveCommandExecuteEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientChartDesignerSaveCommandExecuteEventArgsMutableBuilder[Self <: ASPxClientChartDesignerSaveCommandExecuteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientChartDesignerSaveCommandExecuteEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

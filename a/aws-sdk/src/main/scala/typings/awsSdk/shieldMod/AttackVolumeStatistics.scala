@@ -13,16 +13,13 @@ trait AttackVolumeStatistics extends StObject {
 }
 object AttackVolumeStatistics {
   
-  @scala.inline
-  def apply(Max: Double): AttackVolumeStatistics = {
+  inline def apply(Max: Double): AttackVolumeStatistics = {
     val __obj = js.Dynamic.literal(Max = Max.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttackVolumeStatistics]
   }
   
-  @scala.inline
-  implicit class AttackVolumeStatisticsMutableBuilder[Self <: AttackVolumeStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: AttackVolumeStatistics](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
   }
 }

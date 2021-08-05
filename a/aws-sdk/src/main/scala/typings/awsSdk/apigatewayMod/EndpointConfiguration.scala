@@ -18,31 +18,23 @@ trait EndpointConfiguration extends StObject {
 }
 object EndpointConfiguration {
   
-  @scala.inline
-  def apply(): EndpointConfiguration = {
+  inline def apply(): EndpointConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointConfiguration]
   }
   
-  @scala.inline
-  implicit class EndpointConfigurationMutableBuilder[Self <: EndpointConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointConfiguration](x: Self) {
     
-    @scala.inline
-    def setTypes(value: ListOfEndpointType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: ListOfEndpointType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: EndpointType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: EndpointType*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcEndpointIds(value: ListOfString): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
+    inline def setVpcEndpointIds(value: ListOfString): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointIdsUndefined: Self = StObject.set(x, "vpcEndpointIds", js.undefined)
+    inline def setVpcEndpointIdsUndefined: Self = StObject.set(x, "vpcEndpointIds", js.undefined)
     
-    @scala.inline
-    def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
+    inline def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
   }
 }

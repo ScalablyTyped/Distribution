@@ -75,8 +75,7 @@ trait EsriErrorDetails
 }
 object EsriErrorDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     getHeader: /* headerName */ String => String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -93,34 +92,24 @@ object EsriErrorDetails {
     __obj.asInstanceOf[EsriErrorDetails]
   }
   
-  @scala.inline
-  implicit class EsriErrorDetailsMutableBuilder[Self <: EsriErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: EsriErrorDetails](x: Self) {
     
-    @scala.inline
-    def setGetHeader(value: /* headerName */ String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+    inline def setGetHeader(value: /* headerName */ String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
+    inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageCode(value: String): Self = StObject.set(x, "messageCode", value.asInstanceOf[js.Any])
+    inline def setMessageCode(value: String): Self = StObject.set(x, "messageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubCode(value: Double): Self = StObject.set(x, "subCode", value.asInstanceOf[js.Any])
+    inline def setSubCode(value: Double): Self = StObject.set(x, "subCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

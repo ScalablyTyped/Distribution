@@ -15,31 +15,23 @@ trait PublishCompositeConfigN extends StObject {
 }
 object PublishCompositeConfigN {
   
-  @scala.inline
-  def apply(find: /* repeated */ js.Any => Cursor[js.Any, js.Any]): PublishCompositeConfigN = {
+  inline def apply(find: /* repeated */ js.Any => Cursor[js.Any, js.Any]): PublishCompositeConfigN = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
     __obj.asInstanceOf[PublishCompositeConfigN]
   }
   
-  @scala.inline
-  implicit class PublishCompositeConfigNMutableBuilder[Self <: PublishCompositeConfigN] (val x: Self) extends AnyVal {
+  extension [Self <: PublishCompositeConfigN](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[PublishCompositeConfigN]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[PublishCompositeConfigN]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: PublishCompositeConfigN*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PublishCompositeConfigN*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
+    inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
+    inline def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
     
-    @scala.inline
-    def setFind(value: /* repeated */ js.Any => Cursor[js.Any, js.Any]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: /* repeated */ js.Any => Cursor[js.Any, js.Any]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }
 }

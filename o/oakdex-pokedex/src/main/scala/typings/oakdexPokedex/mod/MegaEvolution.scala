@@ -26,8 +26,7 @@ trait MegaEvolution extends StObject {
 }
 object MegaEvolution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ability: String,
     base_stats: StatObject,
     height_eu: String,
@@ -41,40 +40,28 @@ object MegaEvolution {
     __obj.asInstanceOf[MegaEvolution]
   }
   
-  @scala.inline
-  implicit class MegaEvolutionMutableBuilder[Self <: MegaEvolution] (val x: Self) extends AnyVal {
+  extension [Self <: MegaEvolution](x: Self) {
     
-    @scala.inline
-    def setAbility(value: String): Self = StObject.set(x, "ability", value.asInstanceOf[js.Any])
+    inline def setAbility(value: String): Self = StObject.set(x, "ability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase_stats(value: StatObject): Self = StObject.set(x, "base_stats", value.asInstanceOf[js.Any])
+    inline def setBase_stats(value: StatObject): Self = StObject.set(x, "base_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight_eu(value: String): Self = StObject.set(x, "height_eu", value.asInstanceOf[js.Any])
+    inline def setHeight_eu(value: String): Self = StObject.set(x, "height_eu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight_us(value: String): Self = StObject.set(x, "height_us", value.asInstanceOf[js.Any])
+    inline def setHeight_us(value: String): Self = StObject.set(x, "height_us", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage_suffix(value: String): Self = StObject.set(x, "image_suffix", value.asInstanceOf[js.Any])
+    inline def setImage_suffix(value: String): Self = StObject.set(x, "image_suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage_suffixUndefined: Self = StObject.set(x, "image_suffix", js.undefined)
+    inline def setImage_suffixUndefined: Self = StObject.set(x, "image_suffix", js.undefined)
     
-    @scala.inline
-    def setMega_stone(value: String): Self = StObject.set(x, "mega_stone", value.asInstanceOf[js.Any])
+    inline def setMega_stone(value: String): Self = StObject.set(x, "mega_stone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setWeight_eu(value: String): Self = StObject.set(x, "weight_eu", value.asInstanceOf[js.Any])
+    inline def setWeight_eu(value: String): Self = StObject.set(x, "weight_eu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight_us(value: String): Self = StObject.set(x, "weight_us", value.asInstanceOf[js.Any])
+    inline def setWeight_us(value: String): Self = StObject.set(x, "weight_us", value.asInstanceOf[js.Any])
   }
 }

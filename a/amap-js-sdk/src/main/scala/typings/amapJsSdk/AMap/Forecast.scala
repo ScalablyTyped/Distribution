@@ -28,8 +28,7 @@ trait Forecast extends StObject {
 }
 object Forecast {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: String,
     dayTemp: Double,
     dayWeather: String,
@@ -45,37 +44,26 @@ object Forecast {
     __obj.asInstanceOf[Forecast]
   }
   
-  @scala.inline
-  implicit class ForecastMutableBuilder[Self <: Forecast] (val x: Self) extends AnyVal {
+  extension [Self <: Forecast](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayTemp(value: Double): Self = StObject.set(x, "dayTemp", value.asInstanceOf[js.Any])
+    inline def setDayTemp(value: Double): Self = StObject.set(x, "dayTemp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayWeather(value: String): Self = StObject.set(x, "dayWeather", value.asInstanceOf[js.Any])
+    inline def setDayWeather(value: String): Self = StObject.set(x, "dayWeather", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayWindDir(value: String): Self = StObject.set(x, "dayWindDir", value.asInstanceOf[js.Any])
+    inline def setDayWindDir(value: String): Self = StObject.set(x, "dayWindDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayWindPower(value: String): Self = StObject.set(x, "dayWindPower", value.asInstanceOf[js.Any])
+    inline def setDayWindPower(value: String): Self = StObject.set(x, "dayWindPower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNightTemp(value: Double): Self = StObject.set(x, "nightTemp", value.asInstanceOf[js.Any])
+    inline def setNightTemp(value: Double): Self = StObject.set(x, "nightTemp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNightWeather(value: String): Self = StObject.set(x, "nightWeather", value.asInstanceOf[js.Any])
+    inline def setNightWeather(value: String): Self = StObject.set(x, "nightWeather", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNightWindDir(value: String): Self = StObject.set(x, "nightWindDir", value.asInstanceOf[js.Any])
+    inline def setNightWindDir(value: String): Self = StObject.set(x, "nightWindDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNightWindPower(value: String): Self = StObject.set(x, "nightWindPower", value.asInstanceOf[js.Any])
+    inline def setNightWindPower(value: String): Self = StObject.set(x, "nightWindPower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
   }
 }

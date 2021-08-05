@@ -20,25 +20,19 @@ trait FAILURE extends StObject {
 }
 object FAILURE {
   
-  @scala.inline
-  def apply(): FAILURE = {
+  inline def apply(): FAILURE = {
     val __obj = js.Dynamic.literal(FAILURE = "failure", IN_USE = "in_use", NO_SUCH_DEVICE = "no_such_device", SUCCESS = "success")
     __obj.asInstanceOf[FAILURE]
   }
   
-  @scala.inline
-  implicit class FAILUREMutableBuilder[Self <: FAILURE] (val x: Self) extends AnyVal {
+  extension [Self <: FAILURE](x: Self) {
     
-    @scala.inline
-    def setFAILURE(value: failure_): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
+    inline def setFAILURE(value: failure_): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIN_USE(value: in_use_): Self = StObject.set(x, "IN_USE", value.asInstanceOf[js.Any])
+    inline def setIN_USE(value: in_use_): Self = StObject.set(x, "IN_USE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNO_SUCH_DEVICE(value: no_such_device_): Self = StObject.set(x, "NO_SUCH_DEVICE", value.asInstanceOf[js.Any])
+    inline def setNO_SUCH_DEVICE(value: no_such_device_): Self = StObject.set(x, "NO_SUCH_DEVICE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUCCESS(value: success_): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
+    inline def setSUCCESS(value: success_): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
   }
 }

@@ -122,12 +122,9 @@ object NgZone {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assertInAngularZone(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertInAngularZone")().asInstanceOf[Unit]
+  inline def assertInAngularZone(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertInAngularZone")().asInstanceOf[Unit]
   
-  @scala.inline
-  def assertNotInAngularZone(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNotInAngularZone")().asInstanceOf[Unit]
+  inline def assertNotInAngularZone(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNotInAngularZone")().asInstanceOf[Unit]
   
-  @scala.inline
-  def isInAngularZone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAngularZone")().asInstanceOf[Boolean]
+  inline def isInAngularZone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAngularZone")().asInstanceOf[Boolean]
 }

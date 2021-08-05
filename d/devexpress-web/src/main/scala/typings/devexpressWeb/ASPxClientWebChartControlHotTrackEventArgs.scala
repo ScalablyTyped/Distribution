@@ -63,8 +63,7 @@ trait ASPxClientWebChartControlHotTrackEventArgs
 }
 object ASPxClientWebChartControlHotTrackEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absoluteX: Double,
     absoluteY: Double,
     additionalHitObject: ASPxClientWebChartElement,
@@ -81,37 +80,26 @@ object ASPxClientWebChartControlHotTrackEventArgs {
     __obj.asInstanceOf[ASPxClientWebChartControlHotTrackEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientWebChartControlHotTrackEventArgsMutableBuilder[Self <: ASPxClientWebChartControlHotTrackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWebChartControlHotTrackEventArgs](x: Self) {
     
-    @scala.inline
-    def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
+    inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteY(value: Double): Self = StObject.set(x, "absoluteY", value.asInstanceOf[js.Any])
+    inline def setAbsoluteY(value: Double): Self = StObject.set(x, "absoluteY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalHitObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "additionalHitObject", value.asInstanceOf[js.Any])
+    inline def setAdditionalHitObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "additionalHitObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: ASPxClientWebChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: ASPxClientWebChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitInfo(value: ASPxClientWebChartHitInfo): Self = StObject.set(x, "hitInfo", value.asInstanceOf[js.Any])
+    inline def setHitInfo(value: ASPxClientWebChartHitInfo): Self = StObject.set(x, "hitInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "hitObject", value.asInstanceOf[js.Any])
+    inline def setHitObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "hitObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

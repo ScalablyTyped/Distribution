@@ -10,6 +10,5 @@ object warnOnceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(warning: typings.streamMock.warningMod.default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(warning: typings.streamMock.warningMod.default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

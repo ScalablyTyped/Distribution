@@ -23,8 +23,7 @@ trait APPID extends StObject {
 }
 object APPID {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     APPID: String,
     ENV: String,
     OPENID: String,
@@ -35,22 +34,16 @@ object APPID {
     __obj.asInstanceOf[APPID]
   }
   
-  @scala.inline
-  implicit class APPIDMutableBuilder[Self <: APPID] (val x: Self) extends AnyVal {
+  extension [Self <: APPID](x: Self) {
     
-    @scala.inline
-    def setAPPID(value: String): Self = StObject.set(x, "APPID", value.asInstanceOf[js.Any])
+    inline def setAPPID(value: String): Self = StObject.set(x, "APPID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENV(value: String): Self = StObject.set(x, "ENV", value.asInstanceOf[js.Any])
+    inline def setENV(value: String): Self = StObject.set(x, "ENV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPENID(value: String): Self = StObject.set(x, "OPENID", value.asInstanceOf[js.Any])
+    inline def setOPENID(value: String): Self = StObject.set(x, "OPENID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSOURCE(value: wx_devtools | wx_client | wx_http | wx_unknown | 其他): Self = StObject.set(x, "SOURCE", value.asInstanceOf[js.Any])
+    inline def setSOURCE(value: wx_devtools | wx_client | wx_http | wx_unknown | 其他): Self = StObject.set(x, "SOURCE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNIONID(value: String): Self = StObject.set(x, "UNIONID", value.asInstanceOf[js.Any])
+    inline def setUNIONID(value: String): Self = StObject.set(x, "UNIONID", value.asInstanceOf[js.Any])
   }
 }

@@ -47,8 +47,7 @@ trait IInventoryComponent extends StObject {
 }
 object IInventoryComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additional_slots_per_strength: Double,
     can_be_siphoned_from: Boolean,
     container_type: String,
@@ -61,25 +60,18 @@ object IInventoryComponent {
     __obj.asInstanceOf[IInventoryComponent]
   }
   
-  @scala.inline
-  implicit class IInventoryComponentMutableBuilder[Self <: IInventoryComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IInventoryComponent](x: Self) {
     
-    @scala.inline
-    def setAdditional_slots_per_strength(value: Double): Self = StObject.set(x, "additional_slots_per_strength", value.asInstanceOf[js.Any])
+    inline def setAdditional_slots_per_strength(value: Double): Self = StObject.set(x, "additional_slots_per_strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_be_siphoned_from(value: Boolean): Self = StObject.set(x, "can_be_siphoned_from", value.asInstanceOf[js.Any])
+    inline def setCan_be_siphoned_from(value: Boolean): Self = StObject.set(x, "can_be_siphoned_from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer_type(value: String): Self = StObject.set(x, "container_type", value.asInstanceOf[js.Any])
+    inline def setContainer_type(value: String): Self = StObject.set(x, "container_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventory_size(value: Double): Self = StObject.set(x, "inventory_size", value.asInstanceOf[js.Any])
+    inline def setInventory_size(value: Double): Self = StObject.set(x, "inventory_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrict_to_owner(value: Boolean): Self = StObject.set(x, "restrict_to_owner", value.asInstanceOf[js.Any])
+    inline def setRestrict_to_owner(value: Boolean): Self = StObject.set(x, "restrict_to_owner", value.asInstanceOf[js.Any])
   }
 }

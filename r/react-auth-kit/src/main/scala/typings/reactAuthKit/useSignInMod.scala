@@ -16,6 +16,5 @@ object useSignInMod {
     *
     * @returns - Sign In function
     */
-  @scala.inline
-  def default(): js.Function1[/* signInConfig */ signInFunctionParams, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* signInConfig */ signInFunctionParams, Boolean]]
+  inline def default(): js.Function1[/* signInConfig */ signInFunctionParams, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* signInConfig */ signInFunctionParams, Boolean]]
 }

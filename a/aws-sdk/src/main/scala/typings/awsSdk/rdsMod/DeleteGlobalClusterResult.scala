@@ -10,19 +10,15 @@ trait DeleteGlobalClusterResult extends StObject {
 }
 object DeleteGlobalClusterResult {
   
-  @scala.inline
-  def apply(): DeleteGlobalClusterResult = {
+  inline def apply(): DeleteGlobalClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteGlobalClusterResult]
   }
   
-  @scala.inline
-  implicit class DeleteGlobalClusterResultMutableBuilder[Self <: DeleteGlobalClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGlobalClusterResult](x: Self) {
     
-    @scala.inline
-    def setGlobalCluster(value: GlobalCluster): Self = StObject.set(x, "GlobalCluster", value.asInstanceOf[js.Any])
+    inline def setGlobalCluster(value: GlobalCluster): Self = StObject.set(x, "GlobalCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalClusterUndefined: Self = StObject.set(x, "GlobalCluster", js.undefined)
+    inline def setGlobalClusterUndefined: Self = StObject.set(x, "GlobalCluster", js.undefined)
   }
 }

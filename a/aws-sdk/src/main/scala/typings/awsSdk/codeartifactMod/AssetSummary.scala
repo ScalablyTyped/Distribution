@@ -23,28 +23,21 @@ trait AssetSummary extends StObject {
 }
 object AssetSummary {
   
-  @scala.inline
-  def apply(name: AssetName): AssetSummary = {
+  inline def apply(name: AssetName): AssetSummary = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetSummary]
   }
   
-  @scala.inline
-  implicit class AssetSummaryMutableBuilder[Self <: AssetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AssetSummary](x: Self) {
     
-    @scala.inline
-    def setHashes(value: AssetHashes): Self = StObject.set(x, "hashes", value.asInstanceOf[js.Any])
+    inline def setHashes(value: AssetHashes): Self = StObject.set(x, "hashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashesUndefined: Self = StObject.set(x, "hashes", js.undefined)
+    inline def setHashesUndefined: Self = StObject.set(x, "hashes", js.undefined)
     
-    @scala.inline
-    def setName(value: AssetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AssetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: LongOptional): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: LongOptional): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

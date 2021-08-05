@@ -31,37 +31,27 @@ trait SchemaEntryPoint extends StObject {
 }
 object SchemaEntryPoint {
   
-  @scala.inline
-  def apply(): SchemaEntryPoint = {
+  inline def apply(): SchemaEntryPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntryPoint]
   }
   
-  @scala.inline
-  implicit class SchemaEntryPointMutableBuilder[Self <: SchemaEntryPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntryPoint](x: Self) {
     
-    @scala.inline
-    def setAddOn(value: SchemaGoogleAppsScriptTypeAddOnEntryPoint): Self = StObject.set(x, "addOn", value.asInstanceOf[js.Any])
+    inline def setAddOn(value: SchemaGoogleAppsScriptTypeAddOnEntryPoint): Self = StObject.set(x, "addOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnUndefined: Self = StObject.set(x, "addOn", js.undefined)
+    inline def setAddOnUndefined: Self = StObject.set(x, "addOn", js.undefined)
     
-    @scala.inline
-    def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
+    inline def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPointTypeUndefined: Self = StObject.set(x, "entryPointType", js.undefined)
+    inline def setEntryPointTypeUndefined: Self = StObject.set(x, "entryPointType", js.undefined)
     
-    @scala.inline
-    def setExecutionApi(value: SchemaGoogleAppsScriptTypeExecutionApiEntryPoint): Self = StObject.set(x, "executionApi", value.asInstanceOf[js.Any])
+    inline def setExecutionApi(value: SchemaGoogleAppsScriptTypeExecutionApiEntryPoint): Self = StObject.set(x, "executionApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionApiUndefined: Self = StObject.set(x, "executionApi", js.undefined)
+    inline def setExecutionApiUndefined: Self = StObject.set(x, "executionApi", js.undefined)
     
-    @scala.inline
-    def setWebApp(value: SchemaGoogleAppsScriptTypeWebAppEntryPoint): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
+    inline def setWebApp(value: SchemaGoogleAppsScriptTypeWebAppEntryPoint): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
+    inline def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
   }
 }

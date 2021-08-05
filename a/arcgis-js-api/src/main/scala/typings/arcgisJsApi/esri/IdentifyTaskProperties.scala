@@ -17,19 +17,15 @@ trait IdentifyTaskProperties
 }
 object IdentifyTaskProperties {
   
-  @scala.inline
-  def apply(): IdentifyTaskProperties = {
+  inline def apply(): IdentifyTaskProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentifyTaskProperties]
   }
   
-  @scala.inline
-  implicit class IdentifyTaskPropertiesMutableBuilder[Self <: IdentifyTaskProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IdentifyTaskProperties](x: Self) {
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
   }
 }

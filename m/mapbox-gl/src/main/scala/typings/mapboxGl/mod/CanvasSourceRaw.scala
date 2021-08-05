@@ -17,17 +17,14 @@ trait CanvasSourceRaw
 }
 object CanvasSourceRaw {
   
-  @scala.inline
-  def apply(canvas: String | HTMLCanvasElement, coordinates: js.Array[js.Array[Double]]): CanvasSourceRaw = {
+  inline def apply(canvas: String | HTMLCanvasElement, coordinates: js.Array[js.Array[Double]]): CanvasSourceRaw = {
     val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("canvas")
     __obj.asInstanceOf[CanvasSourceRaw]
   }
   
-  @scala.inline
-  implicit class CanvasSourceRawMutableBuilder[Self <: CanvasSourceRaw] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasSourceRaw](x: Self) {
     
-    @scala.inline
-    def setType(value: canvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: canvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

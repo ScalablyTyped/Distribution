@@ -75,8 +75,7 @@ trait SearchDescriptor
 }
 object SearchDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     SearchBackwards: Boolean,
     SearchCaseSensitive: Boolean,
@@ -107,40 +106,28 @@ object SearchDescriptor {
     __obj.asInstanceOf[SearchDescriptor]
   }
   
-  @scala.inline
-  implicit class SearchDescriptorMutableBuilder[Self <: SearchDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDescriptor](x: Self) {
     
-    @scala.inline
-    def setSearchBackwards(value: Boolean): Self = StObject.set(x, "SearchBackwards", value.asInstanceOf[js.Any])
+    inline def setSearchBackwards(value: Boolean): Self = StObject.set(x, "SearchBackwards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchCaseSensitive(value: Boolean): Self = StObject.set(x, "SearchCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setSearchCaseSensitive(value: Boolean): Self = StObject.set(x, "SearchCaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchRegularExpression(value: Boolean): Self = StObject.set(x, "SearchRegularExpression", value.asInstanceOf[js.Any])
+    inline def setSearchRegularExpression(value: Boolean): Self = StObject.set(x, "SearchRegularExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSimilarity(value: Boolean): Self = StObject.set(x, "SearchSimilarity", value.asInstanceOf[js.Any])
+    inline def setSearchSimilarity(value: Boolean): Self = StObject.set(x, "SearchSimilarity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSimilarityAdd(value: Double): Self = StObject.set(x, "SearchSimilarityAdd", value.asInstanceOf[js.Any])
+    inline def setSearchSimilarityAdd(value: Double): Self = StObject.set(x, "SearchSimilarityAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSimilarityExchange(value: Double): Self = StObject.set(x, "SearchSimilarityExchange", value.asInstanceOf[js.Any])
+    inline def setSearchSimilarityExchange(value: Double): Self = StObject.set(x, "SearchSimilarityExchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSimilarityRelax(value: Boolean): Self = StObject.set(x, "SearchSimilarityRelax", value.asInstanceOf[js.Any])
+    inline def setSearchSimilarityRelax(value: Boolean): Self = StObject.set(x, "SearchSimilarityRelax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSimilarityRemove(value: Double): Self = StObject.set(x, "SearchSimilarityRemove", value.asInstanceOf[js.Any])
+    inline def setSearchSimilarityRemove(value: Double): Self = StObject.set(x, "SearchSimilarityRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchStyles(value: Boolean): Self = StObject.set(x, "SearchStyles", value.asInstanceOf[js.Any])
+    inline def setSearchStyles(value: Boolean): Self = StObject.set(x, "SearchStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchWildcard(value: Boolean): Self = StObject.set(x, "SearchWildcard", value.asInstanceOf[js.Any])
+    inline def setSearchWildcard(value: Boolean): Self = StObject.set(x, "SearchWildcard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchWords(value: Boolean): Self = StObject.set(x, "SearchWords", value.asInstanceOf[js.Any])
+    inline def setSearchWords(value: Boolean): Self = StObject.set(x, "SearchWords", value.asInstanceOf[js.Any])
   }
 }

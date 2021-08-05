@@ -213,32 +213,24 @@ object mod {
   }
   object HtmlRenderingOptions {
     
-    @scala.inline
-    def apply(): HtmlRenderingOptions = {
+    inline def apply(): HtmlRenderingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HtmlRenderingOptions]
     }
     
-    @scala.inline
-    implicit class HtmlRenderingOptionsMutableBuilder[Self <: HtmlRenderingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlRenderingOptions](x: Self) {
       
-      @scala.inline
-      def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+      inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+      inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
       
-      @scala.inline
-      def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
+      inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
+      inline def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
       
-      @scala.inline
-      def setSoftbreak(value: String): Self = StObject.set(x, "softbreak", value.asInstanceOf[js.Any])
+      inline def setSoftbreak(value: String): Self = StObject.set(x, "softbreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoftbreakUndefined: Self = StObject.set(x, "softbreak", js.undefined)
+      inline def setSoftbreakUndefined: Self = StObject.set(x, "softbreak", js.undefined)
     }
   }
   
@@ -254,38 +246,28 @@ object mod {
   }
   object ListData {
     
-    @scala.inline
-    def apply(): ListData = {
+    inline def apply(): ListData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListData]
     }
     
-    @scala.inline
-    implicit class ListDataMutableBuilder[Self <: ListData] (val x: Self) extends AnyVal {
+    extension [Self <: ListData](x: Self) {
       
-      @scala.inline
-      def setBulletChar(value: String): Self = StObject.set(x, "bulletChar", value.asInstanceOf[js.Any])
+      inline def setBulletChar(value: String): Self = StObject.set(x, "bulletChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulletCharUndefined: Self = StObject.set(x, "bulletChar", js.undefined)
+      inline def setBulletCharUndefined: Self = StObject.set(x, "bulletChar", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
+      inline def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTightUndefined: Self = StObject.set(x, "tight", js.undefined)
+      inline def setTightUndefined: Self = StObject.set(x, "tight", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -314,65 +296,45 @@ object mod {
   trait NodeType extends StObject
   object NodeType {
     
-    @scala.inline
-    def block_quote: typings.commonmark.commonmarkStrings.block_quote = "block_quote".asInstanceOf[typings.commonmark.commonmarkStrings.block_quote]
+    inline def block_quote: typings.commonmark.commonmarkStrings.block_quote = "block_quote".asInstanceOf[typings.commonmark.commonmarkStrings.block_quote]
     
-    @scala.inline
-    def code: typings.commonmark.commonmarkStrings.code = "code".asInstanceOf[typings.commonmark.commonmarkStrings.code]
+    inline def code: typings.commonmark.commonmarkStrings.code = "code".asInstanceOf[typings.commonmark.commonmarkStrings.code]
     
-    @scala.inline
-    def code_block: typings.commonmark.commonmarkStrings.code_block = "code_block".asInstanceOf[typings.commonmark.commonmarkStrings.code_block]
+    inline def code_block: typings.commonmark.commonmarkStrings.code_block = "code_block".asInstanceOf[typings.commonmark.commonmarkStrings.code_block]
     
-    @scala.inline
-    def custom_block: typings.commonmark.commonmarkStrings.custom_block = "custom_block".asInstanceOf[typings.commonmark.commonmarkStrings.custom_block]
+    inline def custom_block: typings.commonmark.commonmarkStrings.custom_block = "custom_block".asInstanceOf[typings.commonmark.commonmarkStrings.custom_block]
     
-    @scala.inline
-    def custom_inline: typings.commonmark.commonmarkStrings.custom_inline = "custom_inline".asInstanceOf[typings.commonmark.commonmarkStrings.custom_inline]
+    inline def custom_inline: typings.commonmark.commonmarkStrings.custom_inline = "custom_inline".asInstanceOf[typings.commonmark.commonmarkStrings.custom_inline]
     
-    @scala.inline
-    def document: typings.commonmark.commonmarkStrings.document = "document".asInstanceOf[typings.commonmark.commonmarkStrings.document]
+    inline def document: typings.commonmark.commonmarkStrings.document = "document".asInstanceOf[typings.commonmark.commonmarkStrings.document]
     
-    @scala.inline
-    def emph: typings.commonmark.commonmarkStrings.emph = "emph".asInstanceOf[typings.commonmark.commonmarkStrings.emph]
+    inline def emph: typings.commonmark.commonmarkStrings.emph = "emph".asInstanceOf[typings.commonmark.commonmarkStrings.emph]
     
-    @scala.inline
-    def heading: typings.commonmark.commonmarkStrings.heading = "heading".asInstanceOf[typings.commonmark.commonmarkStrings.heading]
+    inline def heading: typings.commonmark.commonmarkStrings.heading = "heading".asInstanceOf[typings.commonmark.commonmarkStrings.heading]
     
-    @scala.inline
-    def html_block: typings.commonmark.commonmarkStrings.html_block = "html_block".asInstanceOf[typings.commonmark.commonmarkStrings.html_block]
+    inline def html_block: typings.commonmark.commonmarkStrings.html_block = "html_block".asInstanceOf[typings.commonmark.commonmarkStrings.html_block]
     
-    @scala.inline
-    def html_inline: typings.commonmark.commonmarkStrings.html_inline = "html_inline".asInstanceOf[typings.commonmark.commonmarkStrings.html_inline]
+    inline def html_inline: typings.commonmark.commonmarkStrings.html_inline = "html_inline".asInstanceOf[typings.commonmark.commonmarkStrings.html_inline]
     
-    @scala.inline
-    def image: typings.commonmark.commonmarkStrings.image = "image".asInstanceOf[typings.commonmark.commonmarkStrings.image]
+    inline def image: typings.commonmark.commonmarkStrings.image = "image".asInstanceOf[typings.commonmark.commonmarkStrings.image]
     
-    @scala.inline
-    def item: typings.commonmark.commonmarkStrings.item = "item".asInstanceOf[typings.commonmark.commonmarkStrings.item]
+    inline def item: typings.commonmark.commonmarkStrings.item = "item".asInstanceOf[typings.commonmark.commonmarkStrings.item]
     
-    @scala.inline
-    def linebreak: typings.commonmark.commonmarkStrings.linebreak = "linebreak".asInstanceOf[typings.commonmark.commonmarkStrings.linebreak]
+    inline def linebreak: typings.commonmark.commonmarkStrings.linebreak = "linebreak".asInstanceOf[typings.commonmark.commonmarkStrings.linebreak]
     
-    @scala.inline
-    def link: typings.commonmark.commonmarkStrings.link = "link".asInstanceOf[typings.commonmark.commonmarkStrings.link]
+    inline def link: typings.commonmark.commonmarkStrings.link = "link".asInstanceOf[typings.commonmark.commonmarkStrings.link]
     
-    @scala.inline
-    def list: typings.commonmark.commonmarkStrings.list = "list".asInstanceOf[typings.commonmark.commonmarkStrings.list]
+    inline def list: typings.commonmark.commonmarkStrings.list = "list".asInstanceOf[typings.commonmark.commonmarkStrings.list]
     
-    @scala.inline
-    def paragraph: typings.commonmark.commonmarkStrings.paragraph = "paragraph".asInstanceOf[typings.commonmark.commonmarkStrings.paragraph]
+    inline def paragraph: typings.commonmark.commonmarkStrings.paragraph = "paragraph".asInstanceOf[typings.commonmark.commonmarkStrings.paragraph]
     
-    @scala.inline
-    def softbreak: typings.commonmark.commonmarkStrings.softbreak = "softbreak".asInstanceOf[typings.commonmark.commonmarkStrings.softbreak]
+    inline def softbreak: typings.commonmark.commonmarkStrings.softbreak = "softbreak".asInstanceOf[typings.commonmark.commonmarkStrings.softbreak]
     
-    @scala.inline
-    def strong: typings.commonmark.commonmarkStrings.strong = "strong".asInstanceOf[typings.commonmark.commonmarkStrings.strong]
+    inline def strong: typings.commonmark.commonmarkStrings.strong = "strong".asInstanceOf[typings.commonmark.commonmarkStrings.strong]
     
-    @scala.inline
-    def text: typings.commonmark.commonmarkStrings.text = "text".asInstanceOf[typings.commonmark.commonmarkStrings.text]
+    inline def text: typings.commonmark.commonmarkStrings.text = "text".asInstanceOf[typings.commonmark.commonmarkStrings.text]
     
-    @scala.inline
-    def thematic_break: typings.commonmark.commonmarkStrings.thematic_break = "thematic_break".asInstanceOf[typings.commonmark.commonmarkStrings.thematic_break]
+    inline def thematic_break: typings.commonmark.commonmarkStrings.thematic_break = "thematic_break".asInstanceOf[typings.commonmark.commonmarkStrings.thematic_break]
   }
   
   @js.native
@@ -404,20 +366,16 @@ object mod {
   }
   object NodeWalkingStep {
     
-    @scala.inline
-    def apply(entering: Boolean, node: Node): NodeWalkingStep = {
+    inline def apply(entering: Boolean, node: Node): NodeWalkingStep = {
       val __obj = js.Dynamic.literal(entering = entering.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeWalkingStep]
     }
     
-    @scala.inline
-    implicit class NodeWalkingStepMutableBuilder[Self <: NodeWalkingStep] (val x: Self) extends AnyVal {
+    extension [Self <: NodeWalkingStep](x: Self) {
       
-      @scala.inline
-      def setEntering(value: Boolean): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
+      inline def setEntering(value: Boolean): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -432,26 +390,20 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
+      inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
+      inline def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
       
-      @scala.inline
-      def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
   
@@ -465,26 +417,20 @@ object mod {
   }
   object XmlRenderingOptions {
     
-    @scala.inline
-    def apply(): XmlRenderingOptions = {
+    inline def apply(): XmlRenderingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlRenderingOptions]
     }
     
-    @scala.inline
-    implicit class XmlRenderingOptionsMutableBuilder[Self <: XmlRenderingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XmlRenderingOptions](x: Self) {
       
-      @scala.inline
-      def setSourcepos(value: Boolean): Self = StObject.set(x, "sourcepos", value.asInstanceOf[js.Any])
+      inline def setSourcepos(value: Boolean): Self = StObject.set(x, "sourcepos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceposUndefined: Self = StObject.set(x, "sourcepos", js.undefined)
+      inline def setSourceposUndefined: Self = StObject.set(x, "sourcepos", js.undefined)
       
-      @scala.inline
-      def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
 }

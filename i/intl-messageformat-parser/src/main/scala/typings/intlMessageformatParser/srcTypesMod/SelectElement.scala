@@ -15,17 +15,14 @@ trait SelectElement
 }
 object SelectElement {
   
-  @scala.inline
-  def apply(options: Record[String, PluralOrSelectOption], `type`: select, value: String): SelectElement = {
+  inline def apply(options: Record[String, PluralOrSelectOption], `type`: select, value: String): SelectElement = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectElement]
   }
   
-  @scala.inline
-  implicit class SelectElementMutableBuilder[Self <: SelectElement] (val x: Self) extends AnyVal {
+  extension [Self <: SelectElement](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Record[String, PluralOrSelectOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Record[String, PluralOrSelectOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

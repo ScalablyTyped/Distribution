@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(element: HTMLElement, position: Double): Caret = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Caret]
-  @scala.inline
-  def apply(element: HTMLElement, position: Double, options: Options): Caret = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Caret]
+  inline def apply(element: HTMLElement, position: Double): Caret = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Caret]
+  inline def apply(element: HTMLElement, position: Double, options: Options): Caret = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Caret]
   
   @JSImport("textarea-caret", JSImport.Namespace)
   @js.native
@@ -26,23 +24,18 @@ object mod {
   }
   object Caret {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double): Caret = {
+    inline def apply(height: Double, left: Double, top: Double): Caret = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Caret]
     }
     
-    @scala.inline
-    implicit class CaretMutableBuilder[Self <: Caret] (val x: Self) extends AnyVal {
+    extension [Self <: Caret](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,20 +45,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     }
   }
 }

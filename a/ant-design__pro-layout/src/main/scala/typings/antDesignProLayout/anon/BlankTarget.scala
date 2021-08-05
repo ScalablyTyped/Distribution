@@ -17,34 +17,25 @@ trait BlankTarget extends StObject {
 }
 object BlankTarget {
   
-  @scala.inline
-  def apply(href: String): BlankTarget = {
+  inline def apply(href: String): BlankTarget = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlankTarget]
   }
   
-  @scala.inline
-  implicit class BlankTargetMutableBuilder[Self <: BlankTarget] (val x: Self) extends AnyVal {
+  extension [Self <: BlankTarget](x: Self) {
     
-    @scala.inline
-    def setBlankTarget(value: Boolean): Self = StObject.set(x, "blankTarget", value.asInstanceOf[js.Any])
+    inline def setBlankTarget(value: Boolean): Self = StObject.set(x, "blankTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlankTargetUndefined: Self = StObject.set(x, "blankTarget", js.undefined)
+    inline def setBlankTargetUndefined: Self = StObject.set(x, "blankTarget", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait PutVoiceConnectorTerminationCredentialsRequest extends StObject {
 }
 object PutVoiceConnectorTerminationCredentialsRequest {
   
-  @scala.inline
-  def apply(VoiceConnectorId: NonEmptyString): PutVoiceConnectorTerminationCredentialsRequest = {
+  inline def apply(VoiceConnectorId: NonEmptyString): PutVoiceConnectorTerminationCredentialsRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutVoiceConnectorTerminationCredentialsRequest]
   }
   
-  @scala.inline
-  implicit class PutVoiceConnectorTerminationCredentialsRequestMutableBuilder[Self <: PutVoiceConnectorTerminationCredentialsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutVoiceConnectorTerminationCredentialsRequest](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: CredentialList): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: CredentialList): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    @scala.inline
-    def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "Credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "Credentials", js.Array(value :_*))
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

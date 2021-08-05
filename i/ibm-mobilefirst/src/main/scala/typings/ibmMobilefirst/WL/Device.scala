@@ -14,21 +14,17 @@ object Device {
   }
   object AddressPair {
     
-    @scala.inline
-    def apply(`3GAddress`: String, wifiAddress: String): AddressPair = {
+    inline def apply(`3GAddress`: String, wifiAddress: String): AddressPair = {
       val __obj = js.Dynamic.literal(wifiAddress = wifiAddress.asInstanceOf[js.Any])
       __obj.updateDynamic("3GAddress")(`3GAddress`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddressPair]
     }
     
-    @scala.inline
-    implicit class AddressPairMutableBuilder[Self <: AddressPair] (val x: Self) extends AnyVal {
+    extension [Self <: AddressPair](x: Self) {
       
-      @scala.inline
-      def set3GAddress(value: String): Self = StObject.set(x, "3GAddress", value.asInstanceOf[js.Any])
+      inline def set3GAddress(value: String): Self = StObject.set(x, "3GAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWifiAddress(value: String): Self = StObject.set(x, "wifiAddress", value.asInstanceOf[js.Any])
+      inline def setWifiAddress(value: String): Self = StObject.set(x, "wifiAddress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,80 +52,56 @@ object Device {
   }
   object NetworkInfo {
     
-    @scala.inline
-    def apply(): NetworkInfo = {
+    inline def apply(): NetworkInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkInfo]
     }
     
-    @scala.inline
-    implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInfo](x: Self) {
       
-      @scala.inline
-      def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
+      inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
+      inline def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setIpv4Addresses(value: js.Array[AddressPair]): Self = StObject.set(x, "Ipv4Addresses", value.asInstanceOf[js.Any])
+      inline def setIpv4Addresses(value: js.Array[AddressPair]): Self = StObject.set(x, "Ipv4Addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv4AddressesUndefined: Self = StObject.set(x, "Ipv4Addresses", js.undefined)
+      inline def setIpv4AddressesUndefined: Self = StObject.set(x, "Ipv4Addresses", js.undefined)
       
-      @scala.inline
-      def setIpv4AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv4Addresses", js.Array(value :_*))
+      inline def setIpv4AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv4Addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setIpv6Addresses(value: js.Array[AddressPair]): Self = StObject.set(x, "Ipv6Addresses", value.asInstanceOf[js.Any])
+      inline def setIpv6Addresses(value: js.Array[AddressPair]): Self = StObject.set(x, "Ipv6Addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
+      inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
       
-      @scala.inline
-      def setIpv6AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+      inline def setIpv6AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setIsAirplaneMode(value: Boolean): Self = StObject.set(x, "isAirplaneMode", value.asInstanceOf[js.Any])
+      inline def setIsAirplaneMode(value: Boolean): Self = StObject.set(x, "isAirplaneMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAirplaneModeUndefined: Self = StObject.set(x, "isAirplaneMode", js.undefined)
+      inline def setIsAirplaneModeUndefined: Self = StObject.set(x, "isAirplaneMode", js.undefined)
       
-      @scala.inline
-      def setIsNetworkConnected(value: Boolean): Self = StObject.set(x, "isNetworkConnected", value.asInstanceOf[js.Any])
+      inline def setIsNetworkConnected(value: Boolean): Self = StObject.set(x, "isNetworkConnected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNetworkConnectedUndefined: Self = StObject.set(x, "isNetworkConnected", js.undefined)
+      inline def setIsNetworkConnectedUndefined: Self = StObject.set(x, "isNetworkConnected", js.undefined)
       
-      @scala.inline
-      def setIsRoaming(value: Boolean): Self = StObject.set(x, "isRoaming", value.asInstanceOf[js.Any])
+      inline def setIsRoaming(value: Boolean): Self = StObject.set(x, "isRoaming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRoamingUndefined: Self = StObject.set(x, "isRoaming", js.undefined)
+      inline def setIsRoamingUndefined: Self = StObject.set(x, "isRoaming", js.undefined)
       
-      @scala.inline
-      def setNetworkConnectionType(value: String): Self = StObject.set(x, "networkConnectionType", value.asInstanceOf[js.Any])
+      inline def setNetworkConnectionType(value: String): Self = StObject.set(x, "networkConnectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkConnectionTypeUndefined: Self = StObject.set(x, "networkConnectionType", js.undefined)
+      inline def setNetworkConnectionTypeUndefined: Self = StObject.set(x, "networkConnectionType", js.undefined)
       
-      @scala.inline
-      def setTelephonyNetworkType(value: String): Self = StObject.set(x, "telephonyNetworkType", value.asInstanceOf[js.Any])
+      inline def setTelephonyNetworkType(value: String): Self = StObject.set(x, "telephonyNetworkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTelephonyNetworkTypeUndefined: Self = StObject.set(x, "telephonyNetworkType", js.undefined)
+      inline def setTelephonyNetworkTypeUndefined: Self = StObject.set(x, "telephonyNetworkType", js.undefined)
       
-      @scala.inline
-      def setWifiName(value: String): Self = StObject.set(x, "wifiName", value.asInstanceOf[js.Any])
+      inline def setWifiName(value: String): Self = StObject.set(x, "wifiName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWifiNameUndefined: Self = StObject.set(x, "wifiName", js.undefined)
+      inline def setWifiNameUndefined: Self = StObject.set(x, "wifiName", js.undefined)
     }
   }
 }

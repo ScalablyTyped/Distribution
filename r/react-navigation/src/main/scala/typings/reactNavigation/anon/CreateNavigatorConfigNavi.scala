@@ -50,23 +50,18 @@ trait CreateNavigatorConfigNavi extends StObject {
 }
 object CreateNavigatorConfigNavi {
   
-  @scala.inline
-  def apply(): CreateNavigatorConfigNavi = {
+  inline def apply(): CreateNavigatorConfigNavi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNavigatorConfigNavi]
   }
   
-  @scala.inline
-  implicit class CreateNavigatorConfigNaviMutableBuilder[Self <: CreateNavigatorConfigNavi] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNavigatorConfigNavi](x: Self) {
     
-    @scala.inline
-    def setBackBehavior(value: none | initialRoute | history | order): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
+    inline def setBackBehavior(value: none | initialRoute | history | order): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
+    inline def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
     
-    @scala.inline
-    def setDefaultNavigationOptions(
+    inline def setDefaultNavigationOptions(
       value: NavigationScreenConfig[
           js.Object, 
           NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
@@ -74,28 +69,21 @@ object CreateNavigatorConfigNavi {
         ]
     ): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNavigationOptionsFunction1(
+    inline def setDefaultNavigationOptionsFunction1(
       value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[js.Object] => js.Object
     ): Self = StObject.set(x, "defaultNavigationOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultNavigationOptionsUndefined: Self = StObject.set(x, "defaultNavigationOptions", js.undefined)
+    inline def setDefaultNavigationOptionsUndefined: Self = StObject.set(x, "defaultNavigationOptions", js.undefined)
     
-    @scala.inline
-    def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+    inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+    inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
     
-    @scala.inline
-    def setInitialRouteParams(value: NavigationParams): Self = StObject.set(x, "initialRouteParams", value.asInstanceOf[js.Any])
+    inline def setInitialRouteParams(value: NavigationParams): Self = StObject.set(x, "initialRouteParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRouteParamsUndefined: Self = StObject.set(x, "initialRouteParams", js.undefined)
+    inline def setInitialRouteParamsUndefined: Self = StObject.set(x, "initialRouteParams", js.undefined)
     
-    @scala.inline
-    def setNavigationOptions(
+    inline def setNavigationOptions(
       value: NavigationScreenConfig[
           StringDictionary[js.Any], 
           NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
@@ -103,33 +91,24 @@ object CreateNavigatorConfigNavi {
         ]
     ): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptionsFunction1(
+    inline def setNavigationOptionsFunction1(
       value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[StringDictionary[js.Any]] => StringDictionary[js.Any]
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
     
-    @scala.inline
-    def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
     
-    @scala.inline
-    def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setResetOnBlur(value: Boolean): Self = StObject.set(x, "resetOnBlur", value.asInstanceOf[js.Any])
+    inline def setResetOnBlur(value: Boolean): Self = StObject.set(x, "resetOnBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOnBlurUndefined: Self = StObject.set(x, "resetOnBlur", js.undefined)
+    inline def setResetOnBlurUndefined: Self = StObject.set(x, "resetOnBlur", js.undefined)
   }
 }

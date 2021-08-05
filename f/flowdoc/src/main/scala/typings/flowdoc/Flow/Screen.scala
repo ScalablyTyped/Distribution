@@ -19,8 +19,7 @@ trait Screen
 }
 object Screen {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[Layer],
     id: String,
     name: String,
@@ -33,25 +32,18 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  @scala.inline
-  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
+  extension [Self <: Screen](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[Layer]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Layer]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: Layer*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Layer*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: SCREEN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SCREEN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait MohClass extends StObject {
 }
 object MohClass {
   
-  @scala.inline
-  def apply(bridgeId: String): MohClass = {
+  inline def apply(bridgeId: String): MohClass = {
     val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MohClass]
   }
   
-  @scala.inline
-  implicit class MohClassMutableBuilder[Self <: MohClass] (val x: Self) extends AnyVal {
+  extension [Self <: MohClass](x: Self) {
     
-    @scala.inline
-    def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
+    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMohClass(value: String): Self = StObject.set(x, "mohClass", value.asInstanceOf[js.Any])
+    inline def setMohClass(value: String): Self = StObject.set(x, "mohClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMohClassUndefined: Self = StObject.set(x, "mohClass", js.undefined)
+    inline def setMohClassUndefined: Self = StObject.set(x, "mohClass", js.undefined)
   }
 }

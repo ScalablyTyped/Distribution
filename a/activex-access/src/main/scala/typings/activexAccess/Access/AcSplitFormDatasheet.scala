@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcSplitFormDatasheet extends StObject
 object AcSplitFormDatasheet {
   
-  @scala.inline
-  def acDatasheetAllowEdits: `0` = 0.asInstanceOf[`0`]
+  inline def acDatasheetAllowEdits: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acDatasheetReadOnly: `1` = 1.asInstanceOf[`1`]
+  inline def acDatasheetReadOnly: `1` = 1.asInstanceOf[`1`]
 }

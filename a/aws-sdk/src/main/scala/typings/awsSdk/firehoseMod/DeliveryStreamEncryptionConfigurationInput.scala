@@ -18,22 +18,17 @@ trait DeliveryStreamEncryptionConfigurationInput extends StObject {
 }
 object DeliveryStreamEncryptionConfigurationInput {
   
-  @scala.inline
-  def apply(KeyType: KeyType): DeliveryStreamEncryptionConfigurationInput = {
+  inline def apply(KeyType: KeyType): DeliveryStreamEncryptionConfigurationInput = {
     val __obj = js.Dynamic.literal(KeyType = KeyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryStreamEncryptionConfigurationInput]
   }
   
-  @scala.inline
-  implicit class DeliveryStreamEncryptionConfigurationInputMutableBuilder[Self <: DeliveryStreamEncryptionConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryStreamEncryptionConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "KeyARN", value.asInstanceOf[js.Any])
+    inline def setKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "KeyARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyARNUndefined: Self = StObject.set(x, "KeyARN", js.undefined)
+    inline def setKeyARNUndefined: Self = StObject.set(x, "KeyARN", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
   }
 }

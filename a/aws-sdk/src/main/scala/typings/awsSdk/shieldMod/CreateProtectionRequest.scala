@@ -18,19 +18,15 @@ trait CreateProtectionRequest extends StObject {
 }
 object CreateProtectionRequest {
   
-  @scala.inline
-  def apply(Name: ProtectionName, ResourceArn: ResourceArn): CreateProtectionRequest = {
+  inline def apply(Name: ProtectionName, ResourceArn: ResourceArn): CreateProtectionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProtectionRequest]
   }
   
-  @scala.inline
-  implicit class CreateProtectionRequestMutableBuilder[Self <: CreateProtectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProtectionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: ProtectionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProtectionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

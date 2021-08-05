@@ -32,38 +32,28 @@ object textAreaMod extends Shortcut {
   }
   object TextAreaProps {
     
-    @scala.inline
-    def apply(): TextAreaProps = {
+    inline def apply(): TextAreaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAreaProps]
     }
     
-    @scala.inline
-    implicit class TextAreaPropsMutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaProps](x: Self) {
       
-      @scala.inline
-      def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
+      inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
+      inline def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setShowCount(value: Boolean): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
+      inline def setShowCount(value: Boolean): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCountUndefined: Self = StObject.set(x, "showCount", js.undefined)
+      inline def setShowCountUndefined: Self = StObject.set(x, "showCount", js.undefined)
       
-      @scala.inline
-      def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

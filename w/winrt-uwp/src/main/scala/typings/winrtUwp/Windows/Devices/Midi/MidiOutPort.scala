@@ -28,8 +28,7 @@ trait MidiOutPort extends StObject {
 }
 object MidiOutPort {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     deviceId: String,
     sendBuffer: IBuffer => Unit,
@@ -39,19 +38,14 @@ object MidiOutPort {
     __obj.asInstanceOf[MidiOutPort]
   }
   
-  @scala.inline
-  implicit class MidiOutPortMutableBuilder[Self <: MidiOutPort] (val x: Self) extends AnyVal {
+  extension [Self <: MidiOutPort](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
+    inline def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
+    inline def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
   }
 }

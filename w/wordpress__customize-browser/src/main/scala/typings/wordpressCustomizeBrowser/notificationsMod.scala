@@ -36,20 +36,16 @@ object notificationsMod {
   }
   object NotificationsGetOptions {
     
-    @scala.inline
-    def apply(): NotificationsGetOptions = {
+    inline def apply(): NotificationsGetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationsGetOptions]
     }
     
-    @scala.inline
-    implicit class NotificationsGetOptionsMutableBuilder[Self <: NotificationsGetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationsGetOptions](x: Self) {
       
-      @scala.inline
-      def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
@@ -61,26 +57,20 @@ object notificationsMod {
   }
   object NotificationsOptions {
     
-    @scala.inline
-    def apply(): NotificationsOptions = {
+    inline def apply(): NotificationsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationsOptions]
     }
     
-    @scala.inline
-    implicit class NotificationsOptionsMutableBuilder[Self <: NotificationsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationsOptions](x: Self) {
       
-      @scala.inline
-      def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     }
   }
 }

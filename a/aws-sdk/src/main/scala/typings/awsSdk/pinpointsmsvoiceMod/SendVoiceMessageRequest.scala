@@ -30,43 +30,31 @@ trait SendVoiceMessageRequest extends StObject {
 }
 object SendVoiceMessageRequest {
   
-  @scala.inline
-  def apply(): SendVoiceMessageRequest = {
+  inline def apply(): SendVoiceMessageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendVoiceMessageRequest]
   }
   
-  @scala.inline
-  implicit class SendVoiceMessageRequestMutableBuilder[Self <: SendVoiceMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendVoiceMessageRequest](x: Self) {
     
-    @scala.inline
-    def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
+    inline def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerIdUndefined: Self = StObject.set(x, "CallerId", js.undefined)
+    inline def setCallerIdUndefined: Self = StObject.set(x, "CallerId", js.undefined)
     
-    @scala.inline
-    def setConfigurationSetName(value: WordCharactersWithDelimiters): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: WordCharactersWithDelimiters): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
+    inline def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
-    @scala.inline
-    def setContent(value: VoiceMessageContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: VoiceMessageContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setDestinationPhoneNumber(value: NonEmptyString): Self = StObject.set(x, "DestinationPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setDestinationPhoneNumber(value: NonEmptyString): Self = StObject.set(x, "DestinationPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPhoneNumberUndefined: Self = StObject.set(x, "DestinationPhoneNumber", js.undefined)
+    inline def setDestinationPhoneNumberUndefined: Self = StObject.set(x, "DestinationPhoneNumber", js.undefined)
     
-    @scala.inline
-    def setOriginationPhoneNumber(value: NonEmptyString): Self = StObject.set(x, "OriginationPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setOriginationPhoneNumber(value: NonEmptyString): Self = StObject.set(x, "OriginationPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginationPhoneNumberUndefined: Self = StObject.set(x, "OriginationPhoneNumber", js.undefined)
+    inline def setOriginationPhoneNumberUndefined: Self = StObject.set(x, "OriginationPhoneNumber", js.undefined)
   }
 }

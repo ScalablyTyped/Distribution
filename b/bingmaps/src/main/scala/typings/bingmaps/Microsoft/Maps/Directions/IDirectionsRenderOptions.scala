@@ -62,109 +62,75 @@ trait IDirectionsRenderOptions extends StObject {
 }
 object IDirectionsRenderOptions {
   
-  @scala.inline
-  def apply(): IDirectionsRenderOptions = {
+  inline def apply(): IDirectionsRenderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDirectionsRenderOptions]
   }
   
-  @scala.inline
-  implicit class IDirectionsRenderOptionsMutableBuilder[Self <: IDirectionsRenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDirectionsRenderOptions](x: Self) {
     
-    @scala.inline
-    def setAutoUpdateMapView(value: Boolean): Self = StObject.set(x, "autoUpdateMapView", value.asInstanceOf[js.Any])
+    inline def setAutoUpdateMapView(value: Boolean): Self = StObject.set(x, "autoUpdateMapView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdateMapViewUndefined: Self = StObject.set(x, "autoUpdateMapView", js.undefined)
+    inline def setAutoUpdateMapViewUndefined: Self = StObject.set(x, "autoUpdateMapView", js.undefined)
     
-    @scala.inline
-    def setDisplayDisclaimer(value: Boolean): Self = StObject.set(x, "displayDisclaimer", value.asInstanceOf[js.Any])
+    inline def setDisplayDisclaimer(value: Boolean): Self = StObject.set(x, "displayDisclaimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDisclaimerUndefined: Self = StObject.set(x, "displayDisclaimer", js.undefined)
+    inline def setDisplayDisclaimerUndefined: Self = StObject.set(x, "displayDisclaimer", js.undefined)
     
-    @scala.inline
-    def setDisplayManeuverIcons(value: Boolean): Self = StObject.set(x, "displayManeuverIcons", value.asInstanceOf[js.Any])
+    inline def setDisplayManeuverIcons(value: Boolean): Self = StObject.set(x, "displayManeuverIcons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayManeuverIconsUndefined: Self = StObject.set(x, "displayManeuverIcons", js.undefined)
+    inline def setDisplayManeuverIconsUndefined: Self = StObject.set(x, "displayManeuverIcons", js.undefined)
     
-    @scala.inline
-    def setDisplayPostItineraryItemHints(value: Boolean): Self = StObject.set(x, "displayPostItineraryItemHints", value.asInstanceOf[js.Any])
+    inline def setDisplayPostItineraryItemHints(value: Boolean): Self = StObject.set(x, "displayPostItineraryItemHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPostItineraryItemHintsUndefined: Self = StObject.set(x, "displayPostItineraryItemHints", js.undefined)
+    inline def setDisplayPostItineraryItemHintsUndefined: Self = StObject.set(x, "displayPostItineraryItemHints", js.undefined)
     
-    @scala.inline
-    def setDisplayPreItineraryItemHints(value: Boolean): Self = StObject.set(x, "displayPreItineraryItemHints", value.asInstanceOf[js.Any])
+    inline def setDisplayPreItineraryItemHints(value: Boolean): Self = StObject.set(x, "displayPreItineraryItemHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPreItineraryItemHintsUndefined: Self = StObject.set(x, "displayPreItineraryItemHints", js.undefined)
+    inline def setDisplayPreItineraryItemHintsUndefined: Self = StObject.set(x, "displayPreItineraryItemHints", js.undefined)
     
-    @scala.inline
-    def setDisplayRouteSelector(value: Boolean): Self = StObject.set(x, "displayRouteSelector", value.asInstanceOf[js.Any])
+    inline def setDisplayRouteSelector(value: Boolean): Self = StObject.set(x, "displayRouteSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayRouteSelectorUndefined: Self = StObject.set(x, "displayRouteSelector", js.undefined)
+    inline def setDisplayRouteSelectorUndefined: Self = StObject.set(x, "displayRouteSelector", js.undefined)
     
-    @scala.inline
-    def setDisplayStepWarnings(value: Boolean): Self = StObject.set(x, "displayStepWarnings", value.asInstanceOf[js.Any])
+    inline def setDisplayStepWarnings(value: Boolean): Self = StObject.set(x, "displayStepWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayStepWarningsUndefined: Self = StObject.set(x, "displayStepWarnings", js.undefined)
+    inline def setDisplayStepWarningsUndefined: Self = StObject.set(x, "displayStepWarnings", js.undefined)
     
-    @scala.inline
-    def setDisplayWalkingWarning(value: Boolean): Self = StObject.set(x, "displayWalkingWarning", value.asInstanceOf[js.Any])
+    inline def setDisplayWalkingWarning(value: Boolean): Self = StObject.set(x, "displayWalkingWarning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayWalkingWarningUndefined: Self = StObject.set(x, "displayWalkingWarning", js.undefined)
+    inline def setDisplayWalkingWarningUndefined: Self = StObject.set(x, "displayWalkingWarning", js.undefined)
     
-    @scala.inline
-    def setDrivingPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "drivingPolylineOptions", value.asInstanceOf[js.Any])
+    inline def setDrivingPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "drivingPolylineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrivingPolylineOptionsUndefined: Self = StObject.set(x, "drivingPolylineOptions", js.undefined)
+    inline def setDrivingPolylineOptionsUndefined: Self = StObject.set(x, "drivingPolylineOptions", js.undefined)
     
-    @scala.inline
-    def setFirstWaypointPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "firstWaypointPushpinOptions", value.asInstanceOf[js.Any])
+    inline def setFirstWaypointPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "firstWaypointPushpinOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstWaypointPushpinOptionsUndefined: Self = StObject.set(x, "firstWaypointPushpinOptions", js.undefined)
+    inline def setFirstWaypointPushpinOptionsUndefined: Self = StObject.set(x, "firstWaypointPushpinOptions", js.undefined)
     
-    @scala.inline
-    def setItineraryContainer(value: HTMLElement): Self = StObject.set(x, "itineraryContainer", value.asInstanceOf[js.Any])
+    inline def setItineraryContainer(value: HTMLElement): Self = StObject.set(x, "itineraryContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItineraryContainerUndefined: Self = StObject.set(x, "itineraryContainer", js.undefined)
+    inline def setItineraryContainerUndefined: Self = StObject.set(x, "itineraryContainer", js.undefined)
     
-    @scala.inline
-    def setLastWaypointPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "lastWaypointPushpinOptions", value.asInstanceOf[js.Any])
+    inline def setLastWaypointPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "lastWaypointPushpinOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastWaypointPushpinOptionsUndefined: Self = StObject.set(x, "lastWaypointPushpinOptions", js.undefined)
+    inline def setLastWaypointPushpinOptionsUndefined: Self = StObject.set(x, "lastWaypointPushpinOptions", js.undefined)
     
-    @scala.inline
-    def setShowInputPanel(value: Boolean): Self = StObject.set(x, "showInputPanel", value.asInstanceOf[js.Any])
+    inline def setShowInputPanel(value: Boolean): Self = StObject.set(x, "showInputPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInputPanelUndefined: Self = StObject.set(x, "showInputPanel", js.undefined)
+    inline def setShowInputPanelUndefined: Self = StObject.set(x, "showInputPanel", js.undefined)
     
-    @scala.inline
-    def setTransitPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "transitPolylineOptions", value.asInstanceOf[js.Any])
+    inline def setTransitPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "transitPolylineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitPolylineOptionsUndefined: Self = StObject.set(x, "transitPolylineOptions", js.undefined)
+    inline def setTransitPolylineOptionsUndefined: Self = StObject.set(x, "transitPolylineOptions", js.undefined)
     
-    @scala.inline
-    def setWalkingPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "walkingPolylineOptions", value.asInstanceOf[js.Any])
+    inline def setWalkingPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "walkingPolylineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalkingPolylineOptionsUndefined: Self = StObject.set(x, "walkingPolylineOptions", js.undefined)
+    inline def setWalkingPolylineOptionsUndefined: Self = StObject.set(x, "walkingPolylineOptions", js.undefined)
     
-    @scala.inline
-    def setWaypointPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "waypointPushpinOptions", value.asInstanceOf[js.Any])
+    inline def setWaypointPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "waypointPushpinOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointPushpinOptionsUndefined: Self = StObject.set(x, "waypointPushpinOptions", js.undefined)
+    inline def setWaypointPushpinOptionsUndefined: Self = StObject.set(x, "waypointPushpinOptions", js.undefined)
   }
 }

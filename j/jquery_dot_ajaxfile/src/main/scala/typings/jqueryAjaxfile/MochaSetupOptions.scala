@@ -32,64 +32,45 @@ trait MochaSetupOptions extends StObject {
 }
 object MochaSetupOptions {
   
-  @scala.inline
-  def apply(): MochaSetupOptions = {
+  inline def apply(): MochaSetupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MochaSetupOptions]
   }
   
-  @scala.inline
-  implicit class MochaSetupOptionsMutableBuilder[Self <: MochaSetupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MochaSetupOptions](x: Self) {
     
-    @scala.inline
-    def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+    inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+    inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
     
-    @scala.inline
-    def setGlobals(value: js.Array[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: js.Array[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+    inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
-    @scala.inline
-    def setGlobalsVarargs(value: js.Any*): Self = StObject.set(x, "globals", js.Array(value :_*))
+    inline def setGlobalsVarargs(value: js.Any*): Self = StObject.set(x, "globals", js.Array(value :_*))
     
-    @scala.inline
-    def setGrep(value: js.Any): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+    inline def setGrep(value: js.Any): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
+    inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
     
-    @scala.inline
-    def setIgnoreLeaks(value: Boolean): Self = StObject.set(x, "ignoreLeaks", value.asInstanceOf[js.Any])
+    inline def setIgnoreLeaks(value: Boolean): Self = StObject.set(x, "ignoreLeaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreLeaksUndefined: Self = StObject.set(x, "ignoreLeaks", js.undefined)
+    inline def setIgnoreLeaksUndefined: Self = StObject.set(x, "ignoreLeaks", js.undefined)
     
-    @scala.inline
-    def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
-    @scala.inline
-    def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+    inline def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
+    inline def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

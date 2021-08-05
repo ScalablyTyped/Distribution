@@ -31,20 +31,16 @@ object mod extends Shortcut {
   }
   object BitsRange {
     
-    @scala.inline
-    def apply(from: Double, to: Double): BitsRange = {
+    inline def apply(from: Double, to: Double): BitsRange = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[BitsRange]
     }
     
-    @scala.inline
-    implicit class BitsRangeMutableBuilder[Self <: BitsRange] (val x: Self) extends AnyVal {
+    extension [Self <: BitsRange](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,26 +68,20 @@ object mod extends Shortcut {
   }
   object ContinuedFractionResult {
     
-    @scala.inline
-    def apply(denominator: Double, numerator: Double, quotients: js.Array[Double]): ContinuedFractionResult = {
+    inline def apply(denominator: Double, numerator: Double, quotients: js.Array[Double]): ContinuedFractionResult = {
       val __obj = js.Dynamic.literal(denominator = denominator.asInstanceOf[js.Any], numerator = numerator.asInstanceOf[js.Any], quotients = quotients.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContinuedFractionResult]
     }
     
-    @scala.inline
-    implicit class ContinuedFractionResultMutableBuilder[Self <: ContinuedFractionResult] (val x: Self) extends AnyVal {
+    extension [Self <: ContinuedFractionResult](x: Self) {
       
-      @scala.inline
-      def setDenominator(value: Double): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
+      inline def setDenominator(value: Double): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumerator(value: Double): Self = StObject.set(x, "numerator", value.asInstanceOf[js.Any])
+      inline def setNumerator(value: Double): Self = StObject.set(x, "numerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotients(value: js.Array[Double]): Self = StObject.set(x, "quotients", value.asInstanceOf[js.Any])
+      inline def setQuotients(value: js.Array[Double]): Self = StObject.set(x, "quotients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotientsVarargs(value: Double*): Self = StObject.set(x, "quotients", js.Array(value :_*))
+      inline def setQuotientsVarargs(value: Double*): Self = StObject.set(x, "quotients", js.Array(value :_*))
     }
   }
   
@@ -103,17 +93,14 @@ object mod extends Shortcut {
   }
   object ExternalJSQubitsStatic {
     
-    @scala.inline
-    def apply(jsqubits: JSQubitsStatic): ExternalJSQubitsStatic = {
+    inline def apply(jsqubits: JSQubitsStatic): ExternalJSQubitsStatic = {
       val __obj = js.Dynamic.literal(jsqubits = jsqubits.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternalJSQubitsStatic]
     }
     
-    @scala.inline
-    implicit class ExternalJSQubitsStaticMutableBuilder[Self <: ExternalJSQubitsStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalJSQubitsStatic](x: Self) {
       
-      @scala.inline
-      def setJsqubits(value: JSQubitsStatic): Self = StObject.set(x, "jsqubits", value.asInstanceOf[js.Any])
+      inline def setJsqubits(value: JSQubitsStatic): Self = StObject.set(x, "jsqubits", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,8 +148,7 @@ object mod extends Shortcut {
   }
   object JsqubitsmathStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       continuedFraction: (Double, Double) => ContinuedFractionResult,
       findNullSpaceMod2: (js.Array[js.Array[Double]], js.Array[Double]) => js.Array[Double],
       gcd: (Double, Double) => Double,
@@ -174,26 +160,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsqubitsmathStatic]
     }
     
-    @scala.inline
-    implicit class JsqubitsmathStaticMutableBuilder[Self <: JsqubitsmathStatic] (val x: Self) extends AnyVal {
+    extension [Self <: JsqubitsmathStatic](x: Self) {
       
-      @scala.inline
-      def setContinuedFraction(value: (Double, Double) => ContinuedFractionResult): Self = StObject.set(x, "continuedFraction", js.Any.fromFunction2(value))
+      inline def setContinuedFraction(value: (Double, Double) => ContinuedFractionResult): Self = StObject.set(x, "continuedFraction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindNullSpaceMod2(value: (js.Array[js.Array[Double]], js.Array[Double]) => js.Array[Double]): Self = StObject.set(x, "findNullSpaceMod2", js.Any.fromFunction2(value))
+      inline def setFindNullSpaceMod2(value: (js.Array[js.Array[Double]], js.Array[Double]) => js.Array[Double]): Self = StObject.set(x, "findNullSpaceMod2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGcd(value: (Double, Double) => Double): Self = StObject.set(x, "gcd", js.Any.fromFunction2(value))
+      inline def setGcd(value: (Double, Double) => Double): Self = StObject.set(x, "gcd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLcm(value: (Double, Double) => Double): Self = StObject.set(x, "lcm", js.Any.fromFunction2(value))
+      inline def setLcm(value: (Double, Double) => Double): Self = StObject.set(x, "lcm", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPowerFactor(value: Double => Double): Self = StObject.set(x, "powerFactor", js.Any.fromFunction1(value))
+      inline def setPowerFactor(value: Double => Double): Self = StObject.set(x, "powerFactor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPowerMod(value: (Double, Double, Double) => Double): Self = StObject.set(x, "powerMod", js.Any.fromFunction3(value))
+      inline def setPowerMod(value: (Double, Double, Double) => Double): Self = StObject.set(x, "powerMod", js.Any.fromFunction3(value))
     }
   }
   
@@ -289,26 +268,20 @@ object mod extends Shortcut {
     }
     object Measurement {
       
-      @scala.inline
-      def apply(asBitString: () => String, newState: QState, numBits: Double, result: Double): Measurement = {
+      inline def apply(asBitString: () => String, newState: QState, numBits: Double, result: Double): Measurement = {
         val __obj = js.Dynamic.literal(asBitString = js.Any.fromFunction0(asBitString), newState = newState.asInstanceOf[js.Any], numBits = numBits.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[Measurement]
       }
       
-      @scala.inline
-      implicit class MeasurementMutableBuilder[Self <: Measurement] (val x: Self) extends AnyVal {
+      extension [Self <: Measurement](x: Self) {
         
-        @scala.inline
-        def setAsBitString(value: () => String): Self = StObject.set(x, "asBitString", js.Any.fromFunction0(value))
+        inline def setAsBitString(value: () => String): Self = StObject.set(x, "asBitString", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setNewState(value: QState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+        inline def setNewState(value: QState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumBits(value: Double): Self = StObject.set(x, "numBits", value.asInstanceOf[js.Any])
+        inline def setNumBits(value: Double): Self = StObject.set(x, "numBits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResult(value: Double): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        inline def setResult(value: Double): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       }
     }
     
@@ -497,8 +470,7 @@ object mod extends Shortcut {
     }
     object StateWithAmplitude {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         amplitude: Complex,
         asBitString: () => String,
         asNumber: () => Double,
@@ -509,23 +481,17 @@ object mod extends Shortcut {
         __obj.asInstanceOf[StateWithAmplitude]
       }
       
-      @scala.inline
-      implicit class StateWithAmplitudeMutableBuilder[Self <: StateWithAmplitude] (val x: Self) extends AnyVal {
+      extension [Self <: StateWithAmplitude](x: Self) {
         
-        @scala.inline
-        def setAmplitude(value: Complex): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
+        inline def setAmplitude(value: Complex): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAsBitString(value: () => String): Self = StObject.set(x, "asBitString", js.Any.fromFunction0(value))
+        inline def setAsBitString(value: () => String): Self = StObject.set(x, "asBitString", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAsNumber(value: () => Double): Self = StObject.set(x, "asNumber", js.Any.fromFunction0(value))
+        inline def setAsNumber(value: () => Double): Self = StObject.set(x, "asNumber", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumBits(value: Double): Self = StObject.set(x, "numBits", value.asInstanceOf[js.Any])
+        inline def setNumBits(value: Double): Self = StObject.set(x, "numBits", value.asInstanceOf[js.Any])
       }
     }
   }

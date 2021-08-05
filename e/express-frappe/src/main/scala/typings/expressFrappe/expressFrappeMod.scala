@@ -64,70 +64,50 @@ object expressFrappeMod {
   }
   object ExpressFrappeConfig {
     
-    @scala.inline
-    def apply(): ExpressFrappeConfig = {
+    inline def apply(): ExpressFrappeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpressFrappeConfig]
     }
     
-    @scala.inline
-    implicit class ExpressFrappeConfigMutableBuilder[Self <: ExpressFrappeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressFrappeConfig](x: Self) {
       
-      @scala.inline
-      def setBodyParser(value: Boolean | Json): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
+      inline def setBodyParser(value: Boolean | Json): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyParserUndefined: Self = StObject.set(x, "bodyParser", js.undefined)
+      inline def setBodyParserUndefined: Self = StObject.set(x, "bodyParser", js.undefined)
       
-      @scala.inline
-      def setCors(value: Boolean | CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+      inline def setCors(value: Boolean | CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+      inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
       
-      @scala.inline
-      def setErrorHandler(
+      inline def setErrorHandler(
         value: (/* err */ js.Any, /* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "errorHandler", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setIo(value: ExpressFrappeSocketIOConfig): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
+      inline def setIo(value: ExpressFrappeSocketIOConfig): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIoUndefined: Self = StObject.set(x, "io", js.undefined)
+      inline def setIoUndefined: Self = StObject.set(x, "io", js.undefined)
       
-      @scala.inline
-      def setMiddleware(value: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      inline def setMiddleware(value: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+      inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
       
-      @scala.inline
-      def setMiddlewareVarargs(value: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+      inline def setMiddlewareVarargs(value: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])*): Self = StObject.set(x, "middleware", js.Array(value :_*))
       
-      @scala.inline
-      def setMorgan(value: Boolean): Self = StObject.set(x, "morgan", value.asInstanceOf[js.Any])
+      inline def setMorgan(value: Boolean): Self = StObject.set(x, "morgan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMorganUndefined: Self = StObject.set(x, "morgan", js.undefined)
+      inline def setMorganUndefined: Self = StObject.set(x, "morgan", js.undefined)
       
-      @scala.inline
-      def setRoutes(value: js.Array[RouteConfig] | RouteConfigAlternative): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[RouteConfig] | RouteConfigAlternative): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      @scala.inline
-      def setRoutesVarargs(value: RouteConfig*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: RouteConfig*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setStatic(value: String | Options): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+      inline def setStatic(value: String | Options): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+      inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     }
   }
   

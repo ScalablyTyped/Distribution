@@ -14,25 +14,19 @@ trait BlockAction extends StObject {
 }
 object BlockAction {
   
-  @scala.inline
-  def apply(): BlockAction = {
+  inline def apply(): BlockAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlockAction]
   }
   
-  @scala.inline
-  implicit class BlockActionMutableBuilder[Self <: BlockAction] (val x: Self) extends AnyVal {
+  extension [Self <: BlockAction](x: Self) {
     
-    @scala.inline
-    def setBlockAfterDays(value: Double): Self = StObject.set(x, "blockAfterDays", value.asInstanceOf[js.Any])
+    inline def setBlockAfterDays(value: Double): Self = StObject.set(x, "blockAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockAfterDaysUndefined: Self = StObject.set(x, "blockAfterDays", js.undefined)
+    inline def setBlockAfterDaysUndefined: Self = StObject.set(x, "blockAfterDays", js.undefined)
     
-    @scala.inline
-    def setBlockScope(value: String): Self = StObject.set(x, "blockScope", value.asInstanceOf[js.Any])
+    inline def setBlockScope(value: String): Self = StObject.set(x, "blockScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockScopeUndefined: Self = StObject.set(x, "blockScope", js.undefined)
+    inline def setBlockScopeUndefined: Self = StObject.set(x, "blockScope", js.undefined)
   }
 }

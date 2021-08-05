@@ -13,16 +13,13 @@ trait ListenerHandle extends StObject {
 }
 object ListenerHandle {
   
-  @scala.inline
-  def apply(cancel: () => Unit): ListenerHandle = {
+  inline def apply(cancel: () => Unit): ListenerHandle = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
     __obj.asInstanceOf[ListenerHandle]
   }
   
-  @scala.inline
-  implicit class ListenerHandleMutableBuilder[Self <: ListenerHandle] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerHandle](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }
 }

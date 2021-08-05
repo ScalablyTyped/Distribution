@@ -48,49 +48,35 @@ trait IBodyRenderOptions extends StObject {
 }
 object IBodyRenderOptions {
   
-  @scala.inline
-  def apply(): IBodyRenderOptions = {
+  inline def apply(): IBodyRenderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBodyRenderOptions]
   }
   
-  @scala.inline
-  implicit class IBodyRenderOptionsMutableBuilder[Self <: IBodyRenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IBodyRenderOptions](x: Self) {
     
-    @scala.inline
-    def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+    inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
+    inline def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setSprite(value: IBodyRenderOptionsSprite): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
+    inline def setSprite(value: IBodyRenderOptionsSprite): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
+    inline def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
     
-    @scala.inline
-    def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    inline def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+    inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

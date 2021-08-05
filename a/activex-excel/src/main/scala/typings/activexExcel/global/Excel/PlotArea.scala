@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PlotArea")
 @js.native
-class PlotArea protected ()
+/* private */ class PlotArea ()
   extends StObject
      with typings.activexExcel.Excel.PlotArea {
   
@@ -24,7 +24,7 @@ class PlotArea protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PlotArea_typekey")
   var ExcelDotPlotArea_typekey: typings.activexExcel.Excel.PlotArea = js.native
   

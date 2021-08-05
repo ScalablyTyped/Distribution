@@ -18,19 +18,15 @@ trait UpdateRuleMetadataRequest extends StObject {
 }
 object UpdateRuleMetadataRequest {
   
-  @scala.inline
-  def apply(description: description, rule: Rule): UpdateRuleMetadataRequest = {
+  inline def apply(description: description, rule: Rule): UpdateRuleMetadataRequest = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRuleMetadataRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRuleMetadataRequestMutableBuilder[Self <: UpdateRuleMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRuleMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRule(value: Rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: Rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait HttpConf extends StObject {
 }
 object HttpConf {
   
-  @scala.inline
-  def apply(data: js.Any, headers: js.Any, operation: String): HttpConf = {
+  inline def apply(data: js.Any, headers: js.Any, operation: String): HttpConf = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpConf]
   }
   
-  @scala.inline
-  implicit class HttpConfMutableBuilder[Self <: HttpConf] (val x: Self) extends AnyVal {
+  extension [Self <: HttpConf](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

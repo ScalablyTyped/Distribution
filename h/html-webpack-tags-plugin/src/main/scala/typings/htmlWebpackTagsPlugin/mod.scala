@@ -41,38 +41,28 @@ object mod {
   }
   object BaseTagOptions {
     
-    @scala.inline
-    def apply(): BaseTagOptions = {
+    inline def apply(): BaseTagOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseTagOptions]
     }
     
-    @scala.inline
-    implicit class BaseTagOptionsMutableBuilder[Self <: BaseTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseTagOptions](x: Self) {
       
-      @scala.inline
-      def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobFlatten(value: Boolean): Self = StObject.set(x, "globFlatten", value.asInstanceOf[js.Any])
+      inline def setGlobFlatten(value: Boolean): Self = StObject.set(x, "globFlatten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobFlattenUndefined: Self = StObject.set(x, "globFlatten", js.undefined)
+      inline def setGlobFlattenUndefined: Self = StObject.set(x, "globFlatten", js.undefined)
       
-      @scala.inline
-      def setGlobPath(value: String): Self = StObject.set(x, "globPath", value.asInstanceOf[js.Any])
+      inline def setGlobPath(value: String): Self = StObject.set(x, "globPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobPathUndefined: Self = StObject.set(x, "globPath", js.undefined)
+      inline def setGlobPathUndefined: Self = StObject.set(x, "globPath", js.undefined)
       
-      @scala.inline
-      def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+      inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      @scala.inline
-      def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
+      inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
+      inline def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
     }
   }
   
@@ -94,62 +84,44 @@ object mod {
   }
   object CommonOptions {
     
-    @scala.inline
-    def apply(): CommonOptions = {
+    inline def apply(): CommonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonOptions]
     }
     
-    @scala.inline
-    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonOptions](x: Self) {
       
-      @scala.inline
-      def setAddHash(value: (/* assetPath */ String, /* hash */ String) => String): Self = StObject.set(x, "addHash", js.Any.fromFunction2(value))
+      inline def setAddHash(value: (/* assetPath */ String, /* hash */ String) => String): Self = StObject.set(x, "addHash", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddHashUndefined: Self = StObject.set(x, "addHash", js.undefined)
+      inline def setAddHashUndefined: Self = StObject.set(x, "addHash", js.undefined)
       
-      @scala.inline
-      def setAddPublicPath(value: (/* assetPath */ String, /* publicPath */ String) => String): Self = StObject.set(x, "addPublicPath", js.Any.fromFunction2(value))
+      inline def setAddPublicPath(value: (/* assetPath */ String, /* publicPath */ String) => String): Self = StObject.set(x, "addPublicPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddPublicPathUndefined: Self = StObject.set(x, "addPublicPath", js.undefined)
+      inline def setAddPublicPathUndefined: Self = StObject.set(x, "addPublicPath", js.undefined)
       
-      @scala.inline
-      def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setHash(value: Boolean | String | AddHashFunction): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Boolean | String | AddHashFunction): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashFunction2(value: (/* assetPath */ String, /* hash */ String) => String): Self = StObject.set(x, "hash", js.Any.fromFunction2(value))
+      inline def setHashFunction2(value: (/* assetPath */ String, /* hash */ String) => String): Self = StObject.set(x, "hash", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: Boolean | String | AddPublicPathFunction): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: Boolean | String | AddPublicPathFunction): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathFunction2(value: (/* assetPath */ String, /* publicPath */ String) => String): Self = StObject.set(x, "publicPath", js.Any.fromFunction2(value))
+      inline def setPublicPathFunction2(value: (/* assetPath */ String, /* publicPath */ String) => String): Self = StObject.set(x, "publicPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
+      inline def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
+      inline def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
       
-      @scala.inline
-      def setUsePublicPath(value: Boolean): Self = StObject.set(x, "usePublicPath", value.asInstanceOf[js.Any])
+      inline def setUsePublicPath(value: Boolean): Self = StObject.set(x, "usePublicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePublicPathUndefined: Self = StObject.set(x, "usePublicPath", js.undefined)
+      inline def setUsePublicPathUndefined: Self = StObject.set(x, "usePublicPath", js.undefined)
     }
   }
   
@@ -161,20 +133,16 @@ object mod {
   }
   object ExternalObject {
     
-    @scala.inline
-    def apply(packageName: String, variableName: String): ExternalObject = {
+    inline def apply(packageName: String, variableName: String): ExternalObject = {
       val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternalObject]
     }
     
-    @scala.inline
-    implicit class ExternalObjectMutableBuilder[Self <: ExternalObject] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalObject](x: Self) {
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
+      inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,19 +155,16 @@ object mod {
   }
   object HtmlWebpackTagsPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
     ): HtmlWebpackTagsPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[HtmlWebpackTagsPlugin]
     }
     
-    @scala.inline
-    implicit class HtmlWebpackTagsPluginMutableBuilder[Self <: HtmlWebpackTagsPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlWebpackTagsPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -215,23 +180,18 @@ object mod {
   }
   object LinkTagOptions {
     
-    @scala.inline
-    def apply(path: String): LinkTagOptions = {
+    inline def apply(path: String): LinkTagOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkTagOptions]
     }
     
-    @scala.inline
-    implicit class LinkTagOptionsMutableBuilder[Self <: LinkTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LinkTagOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,20 +203,16 @@ object mod {
   }
   object MaybeLinkTagOptions {
     
-    @scala.inline
-    def apply(path: String): MaybeLinkTagOptions = {
+    inline def apply(path: String): MaybeLinkTagOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaybeLinkTagOptions]
     }
     
-    @scala.inline
-    implicit class MaybeLinkTagOptionsMutableBuilder[Self <: MaybeLinkTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MaybeLinkTagOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: TypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -268,20 +224,16 @@ object mod {
   }
   object MaybeScriptTagOptions {
     
-    @scala.inline
-    def apply(path: String): MaybeScriptTagOptions = {
+    inline def apply(path: String): MaybeScriptTagOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaybeScriptTagOptions]
     }
     
-    @scala.inline
-    implicit class MaybeScriptTagOptionsMutableBuilder[Self <: MaybeScriptTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MaybeScriptTagOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: TypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -295,23 +247,18 @@ object mod {
   }
   object MetaTagOptions {
     
-    @scala.inline
-    def apply(attributes: AttributesObject): MetaTagOptions = {
+    inline def apply(attributes: AttributesObject): MetaTagOptions = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaTagOptions]
     }
     
-    @scala.inline
-    implicit class MetaTagOptionsMutableBuilder[Self <: MetaTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetaTagOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -339,85 +286,60 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCssExtensions(value: String | js.Array[String]): Self = StObject.set(x, "cssExtensions", value.asInstanceOf[js.Any])
+      inline def setCssExtensions(value: String | js.Array[String]): Self = StObject.set(x, "cssExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssExtensionsUndefined: Self = StObject.set(x, "cssExtensions", js.undefined)
+      inline def setCssExtensionsUndefined: Self = StObject.set(x, "cssExtensions", js.undefined)
       
-      @scala.inline
-      def setCssExtensionsVarargs(value: String*): Self = StObject.set(x, "cssExtensions", js.Array(value :_*))
+      inline def setCssExtensionsVarargs(value: String*): Self = StObject.set(x, "cssExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setJsExtensions(value: String | js.Array[String]): Self = StObject.set(x, "jsExtensions", value.asInstanceOf[js.Any])
+      inline def setJsExtensions(value: String | js.Array[String]): Self = StObject.set(x, "jsExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsExtensionsUndefined: Self = StObject.set(x, "jsExtensions", js.undefined)
+      inline def setJsExtensionsUndefined: Self = StObject.set(x, "jsExtensions", js.undefined)
       
-      @scala.inline
-      def setJsExtensionsVarargs(value: String*): Self = StObject.set(x, "jsExtensions", js.Array(value :_*))
+      inline def setJsExtensionsVarargs(value: String*): Self = StObject.set(x, "jsExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setLinks(value: String | LinkTagOptions | (js.Array[String | LinkTagOptions])): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: String | LinkTagOptions | (js.Array[String | LinkTagOptions])): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setLinksVarargs(value: (String | LinkTagOptions)*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: (String | LinkTagOptions)*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setMetas(value: String | MetaTagOptions | (js.Array[String | MetaTagOptions])): Self = StObject.set(x, "metas", value.asInstanceOf[js.Any])
+      inline def setMetas(value: String | MetaTagOptions | (js.Array[String | MetaTagOptions])): Self = StObject.set(x, "metas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetasUndefined: Self = StObject.set(x, "metas", js.undefined)
+      inline def setMetasUndefined: Self = StObject.set(x, "metas", js.undefined)
       
-      @scala.inline
-      def setMetasVarargs(value: (String | MetaTagOptions)*): Self = StObject.set(x, "metas", js.Array(value :_*))
+      inline def setMetasVarargs(value: (String | MetaTagOptions)*): Self = StObject.set(x, "metas", js.Array(value :_*))
       
-      @scala.inline
-      def setPrependExternals(value: Boolean): Self = StObject.set(x, "prependExternals", value.asInstanceOf[js.Any])
+      inline def setPrependExternals(value: Boolean): Self = StObject.set(x, "prependExternals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependExternalsUndefined: Self = StObject.set(x, "prependExternals", js.undefined)
+      inline def setPrependExternalsUndefined: Self = StObject.set(x, "prependExternals", js.undefined)
       
-      @scala.inline
-      def setScripts(value: String | ScriptTagOptions | (js.Array[String | ScriptTagOptions])): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: String | ScriptTagOptions | (js.Array[String | ScriptTagOptions])): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      @scala.inline
-      def setScriptsVarargs(value: (String | ScriptTagOptions)*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+      inline def setScriptsVarargs(value: (String | ScriptTagOptions)*): Self = StObject.set(x, "scripts", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(
+      inline def setTags(
         value: String | MaybeLinkTagOptions | MaybeScriptTagOptions | (js.Array[String | MaybeLinkTagOptions | MaybeScriptTagOptions])
       ): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: (String | MaybeLinkTagOptions | MaybeScriptTagOptions)*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: (String | MaybeLinkTagOptions | MaybeScriptTagOptions)*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -433,29 +355,22 @@ object mod {
   }
   object ScriptTagOptions {
     
-    @scala.inline
-    def apply(path: String): ScriptTagOptions = {
+    inline def apply(path: String): ScriptTagOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScriptTagOptions]
     }
     
-    @scala.inline
-    implicit class ScriptTagOptionsMutableBuilder[Self <: ScriptTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptTagOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setExternal(value: ExternalObject): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      inline def setExternal(value: ExternalObject): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+      inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -466,10 +381,8 @@ object mod {
   trait TypeString extends StObject
   object TypeString {
     
-    @scala.inline
-    def css: typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.css = "css".asInstanceOf[typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.css]
+    inline def css: typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.css = "css".asInstanceOf[typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.css]
     
-    @scala.inline
-    def js_ : typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.js_ = "js".asInstanceOf[typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.js_]
+    inline def js_ : typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.js_ = "js".asInstanceOf[typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.js_]
   }
 }

@@ -26,8 +26,7 @@ object eventToObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def serializeEvent[T](event: SyntheticEvent[T, Event]): SerializedEvent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEvent")(event.asInstanceOf[js.Any]).asInstanceOf[SerializedEvent[T]]
+  inline def serializeEvent[T](event: SyntheticEvent[T, Event]): SerializedEvent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEvent")(event.asInstanceOf[js.Any]).asInstanceOf[SerializedEvent[T]]
   
   type SerializedEvent[T] = (Partial[
     AnimationEvent[T] | ChangeEvent[T] | ClipboardEvent[T] | CompositionEvent[T] | KeyboardEvent[T] | (MouseEvent[T, NativeMouseEvent]) | PointerEvent[T] | TouchEvent[T] | TransitionEvent[T] | (UIEvent[T, NativeUIEvent]) | WheelEvent[T]

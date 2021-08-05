@@ -78,73 +78,51 @@ trait ImageServiceIdentifyParametersProperties extends StObject {
 }
 object ImageServiceIdentifyParametersProperties {
   
-  @scala.inline
-  def apply(): ImageServiceIdentifyParametersProperties = {
+  inline def apply(): ImageServiceIdentifyParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageServiceIdentifyParametersProperties]
   }
   
-  @scala.inline
-  implicit class ImageServiceIdentifyParametersPropertiesMutableBuilder[Self <: ImageServiceIdentifyParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageServiceIdentifyParametersProperties](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: PointProperties | PolygonProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: PointProperties | PolygonProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
+    inline def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemCountUndefined: Self = StObject.set(x, "maxItemCount", js.undefined)
+    inline def setMaxItemCountUndefined: Self = StObject.set(x, "maxItemCount", js.undefined)
     
-    @scala.inline
-    def setMosaicRule(value: MosaicRuleProperties): Self = StObject.set(x, "mosaicRule", value.asInstanceOf[js.Any])
+    inline def setMosaicRule(value: MosaicRuleProperties): Self = StObject.set(x, "mosaicRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMosaicRuleUndefined: Self = StObject.set(x, "mosaicRule", js.undefined)
+    inline def setMosaicRuleUndefined: Self = StObject.set(x, "mosaicRule", js.undefined)
     
-    @scala.inline
-    def setPixelSize(value: PointProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+    inline def setPixelSize(value: PointProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+    inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
     
-    @scala.inline
-    def setRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
+    inline def setRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingRuleUndefined: Self = StObject.set(x, "renderingRule", js.undefined)
+    inline def setRenderingRuleUndefined: Self = StObject.set(x, "renderingRule", js.undefined)
     
-    @scala.inline
-    def setRenderingRules(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRules", value.asInstanceOf[js.Any])
+    inline def setRenderingRules(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingRulesUndefined: Self = StObject.set(x, "renderingRules", js.undefined)
+    inline def setRenderingRulesUndefined: Self = StObject.set(x, "renderingRules", js.undefined)
     
-    @scala.inline
-    def setReturnCatalogItems(value: Boolean): Self = StObject.set(x, "returnCatalogItems", value.asInstanceOf[js.Any])
+    inline def setReturnCatalogItems(value: Boolean): Self = StObject.set(x, "returnCatalogItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnCatalogItemsUndefined: Self = StObject.set(x, "returnCatalogItems", js.undefined)
+    inline def setReturnCatalogItemsUndefined: Self = StObject.set(x, "returnCatalogItems", js.undefined)
     
-    @scala.inline
-    def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
+    inline def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
+    inline def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
     
-    @scala.inline
-    def setReturnPixelValues(value: Boolean): Self = StObject.set(x, "returnPixelValues", value.asInstanceOf[js.Any])
+    inline def setReturnPixelValues(value: Boolean): Self = StObject.set(x, "returnPixelValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPixelValuesUndefined: Self = StObject.set(x, "returnPixelValues", js.undefined)
+    inline def setReturnPixelValuesUndefined: Self = StObject.set(x, "returnPixelValues", js.undefined)
     
-    @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }
 }

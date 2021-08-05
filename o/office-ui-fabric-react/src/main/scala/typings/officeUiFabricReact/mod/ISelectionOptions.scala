@@ -9,8 +9,7 @@ trait ISelectionOptions[TItem]
      with typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions[TItem]
 object ISelectionOptions {
   
-  @scala.inline
-  def apply[TItem](): ISelectionOptions[TItem] = {
+  inline def apply[TItem](): ISelectionOptions[TItem] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISelectionOptions[TItem]]
   }

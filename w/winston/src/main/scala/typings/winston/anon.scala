@@ -22,32 +22,24 @@ object anon {
   }
   object Bearer {
     
-    @scala.inline
-    def apply(): Bearer = {
+    inline def apply(): Bearer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bearer]
     }
     
-    @scala.inline
-    implicit class BearerMutableBuilder[Self <: Bearer] (val x: Self) extends AnyVal {
+    extension [Self <: Bearer](x: Self) {
       
-      @scala.inline
-      def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
+      inline def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
+      inline def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -59,20 +51,16 @@ object anon {
   }
   object Colors {
     
-    @scala.inline
-    def apply(colors: CliConfigSetColors, levels: CliConfigSetLevels): Colors = {
+    inline def apply(colors: CliConfigSetColors, levels: CliConfigSetLevels): Colors = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
       __obj.asInstanceOf[Colors]
     }
     
-    @scala.inline
-    implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
+    extension [Self <: Colors](x: Self) {
       
-      @scala.inline
-      def setColors(value: CliConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: CliConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevels(value: CliConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: CliConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,20 +72,16 @@ object anon {
   }
   object ColorsLevels {
     
-    @scala.inline
-    def apply(colors: SyslogConfigSetColors, levels: SyslogConfigSetLevels): ColorsLevels = {
+    inline def apply(colors: SyslogConfigSetColors, levels: SyslogConfigSetLevels): ColorsLevels = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorsLevels]
     }
     
-    @scala.inline
-    implicit class ColorsLevelsMutableBuilder[Self <: ColorsLevels] (val x: Self) extends AnyVal {
+    extension [Self <: ColorsLevels](x: Self) {
       
-      @scala.inline
-      def setColors(value: SyslogConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: SyslogConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevels(value: SyslogConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: SyslogConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,20 +93,16 @@ object anon {
   }
   object Levels {
     
-    @scala.inline
-    def apply(colors: NpmConfigSetColors, levels: NpmConfigSetLevels): Levels = {
+    inline def apply(colors: NpmConfigSetColors, levels: NpmConfigSetLevels): Levels = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
       __obj.asInstanceOf[Levels]
     }
     
-    @scala.inline
-    implicit class LevelsMutableBuilder[Self <: Levels] (val x: Self) extends AnyVal {
+    extension [Self <: Levels](x: Self) {
       
-      @scala.inline
-      def setColors(value: NpmConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: NpmConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevels(value: NpmConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: NpmConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     }
   }
 }

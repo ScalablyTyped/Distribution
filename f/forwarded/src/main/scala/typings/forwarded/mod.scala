@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(req: IncomingMessage): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def apply(req: IncomingMessage): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   @JSImport("forwarded", JSImport.Namespace)
   @js.native

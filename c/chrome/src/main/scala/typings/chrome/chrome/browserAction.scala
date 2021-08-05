@@ -28,23 +28,18 @@ object browserAction {
   }
   object BadgeBackgroundColorDetails {
     
-    @scala.inline
-    def apply(color: String | ColorArray): BadgeBackgroundColorDetails = {
+    inline def apply(color: String | ColorArray): BadgeBackgroundColorDetails = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadgeBackgroundColorDetails]
     }
     
-    @scala.inline
-    implicit class BadgeBackgroundColorDetailsMutableBuilder[Self <: BadgeBackgroundColorDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeBackgroundColorDetails](x: Self) {
       
-      @scala.inline
-      def setColor(value: String | ColorArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String | ColorArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
   }
   
@@ -58,23 +53,18 @@ object browserAction {
   }
   object BadgeTextDetails {
     
-    @scala.inline
-    def apply(text: String): BadgeTextDetails = {
+    inline def apply(text: String): BadgeTextDetails = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadgeTextDetails]
     }
     
-    @scala.inline
-    implicit class BadgeTextDetailsMutableBuilder[Self <: BadgeTextDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeTextDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,23 +82,18 @@ object browserAction {
   }
   object PopupDetails {
     
-    @scala.inline
-    def apply(popup: String): PopupDetails = {
+    inline def apply(popup: String): PopupDetails = {
       val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopupDetails]
     }
     
-    @scala.inline
-    implicit class PopupDetailsMutableBuilder[Self <: PopupDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PopupDetails](x: Self) {
       
-      @scala.inline
-      def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
   }
   
@@ -119,20 +104,16 @@ object browserAction {
   }
   object TabDetails {
     
-    @scala.inline
-    def apply(): TabDetails = {
+    inline def apply(): TabDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabDetails]
     }
     
-    @scala.inline
-    implicit class TabDetailsMutableBuilder[Self <: TabDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TabDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
   }
   
@@ -149,32 +130,24 @@ object browserAction {
   }
   object TabIconDetails {
     
-    @scala.inline
-    def apply(): TabIconDetails = {
+    inline def apply(): TabIconDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabIconDetails]
     }
     
-    @scala.inline
-    implicit class TabIconDetailsMutableBuilder[Self <: TabIconDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TabIconDetails](x: Self) {
       
-      @scala.inline
-      def setImageData(value: ImageData | NumberDictionary[ImageData]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+      inline def setImageData(value: ImageData | NumberDictionary[ImageData]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
+      inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
       
-      @scala.inline
-      def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
   }
   
@@ -188,23 +161,18 @@ object browserAction {
   }
   object TitleDetails {
     
-    @scala.inline
-    def apply(title: String): TitleDetails = {
+    inline def apply(title: String): TitleDetails = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[TitleDetails]
     }
     
-    @scala.inline
-    implicit class TitleDetailsMutableBuilder[Self <: TitleDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TitleDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

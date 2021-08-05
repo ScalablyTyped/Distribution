@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait popoverImageOptionsImagesize extends StObject
 object popoverImageOptionsImagesize {
   
-  @scala.inline
-  def imageSize100: typings.summernote.summernoteStrings.imageSize100 = "imageSize100".asInstanceOf[typings.summernote.summernoteStrings.imageSize100]
+  inline def imageSize100: typings.summernote.summernoteStrings.imageSize100 = "imageSize100".asInstanceOf[typings.summernote.summernoteStrings.imageSize100]
   
-  @scala.inline
-  def imageSize25: typings.summernote.summernoteStrings.imageSize25 = "imageSize25".asInstanceOf[typings.summernote.summernoteStrings.imageSize25]
+  inline def imageSize25: typings.summernote.summernoteStrings.imageSize25 = "imageSize25".asInstanceOf[typings.summernote.summernoteStrings.imageSize25]
   
-  @scala.inline
-  def imageSize50: typings.summernote.summernoteStrings.imageSize50 = "imageSize50".asInstanceOf[typings.summernote.summernoteStrings.imageSize50]
+  inline def imageSize50: typings.summernote.summernoteStrings.imageSize50 = "imageSize50".asInstanceOf[typings.summernote.summernoteStrings.imageSize50]
 }

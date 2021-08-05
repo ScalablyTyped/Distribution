@@ -51,7 +51,7 @@ trait Validation extends StObject {
   
   var ErrorTitle: String = js.native
   
-  @JSName("Excel.Validation_typekey")
+  /* private */ @JSName("Excel.Validation_typekey")
   var ExcelDotValidation_typekey: Validation = js.native
   
   val Formula1: String = js.native

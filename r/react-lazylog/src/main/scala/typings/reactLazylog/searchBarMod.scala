@@ -22,8 +22,7 @@ object searchBarMod {
     @JSImport("react-lazylog/build/SearchBar", "default.defaultProps")
     @js.native
     def defaultProps: PartialSearchBarProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialSearchBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialSearchBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type SearchBar = Component[SearchBarProps, js.Object, js.Any]
@@ -44,50 +43,36 @@ object searchBarMod {
   }
   object SearchBarProps {
     
-    @scala.inline
-    def apply(): SearchBarProps = {
+    inline def apply(): SearchBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchBarProps]
     }
     
-    @scala.inline
-    implicit class SearchBarPropsMutableBuilder[Self <: SearchBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: SearchBarProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFilterActive(value: Boolean): Self = StObject.set(x, "filterActive", value.asInstanceOf[js.Any])
+      inline def setFilterActive(value: Boolean): Self = StObject.set(x, "filterActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterActiveUndefined: Self = StObject.set(x, "filterActive", js.undefined)
+      inline def setFilterActiveUndefined: Self = StObject.set(x, "filterActive", js.undefined)
       
-      @scala.inline
-      def setOnClearSearch(value: () => Unit): Self = StObject.set(x, "onClearSearch", js.Any.fromFunction0(value))
+      inline def setOnClearSearch(value: () => Unit): Self = StObject.set(x, "onClearSearch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClearSearchUndefined: Self = StObject.set(x, "onClearSearch", js.undefined)
+      inline def setOnClearSearchUndefined: Self = StObject.set(x, "onClearSearch", js.undefined)
       
-      @scala.inline
-      def setOnFilterLinesWithMatches(value: /* isFiltered */ Boolean => Unit): Self = StObject.set(x, "onFilterLinesWithMatches", js.Any.fromFunction1(value))
+      inline def setOnFilterLinesWithMatches(value: /* isFiltered */ Boolean => Unit): Self = StObject.set(x, "onFilterLinesWithMatches", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFilterLinesWithMatchesUndefined: Self = StObject.set(x, "onFilterLinesWithMatches", js.undefined)
+      inline def setOnFilterLinesWithMatchesUndefined: Self = StObject.set(x, "onFilterLinesWithMatches", js.undefined)
       
-      @scala.inline
-      def setOnSearch(value: /* keyword */ String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: /* keyword */ String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+      inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      @scala.inline
-      def setResultsCount(value: Double): Self = StObject.set(x, "resultsCount", value.asInstanceOf[js.Any])
+      inline def setResultsCount(value: Double): Self = StObject.set(x, "resultsCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsCountUndefined: Self = StObject.set(x, "resultsCount", js.undefined)
+      inline def setResultsCountUndefined: Self = StObject.set(x, "resultsCount", js.undefined)
     }
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.VPageBreak")
 @js.native
-class VPageBreak protected ()
+/* private */ class VPageBreak ()
   extends StObject
      with typings.activexExcel.Excel.VPageBreak {
   
@@ -27,7 +27,7 @@ class VPageBreak protected ()
   /* CompleteClass */
   override def DragOff(Direction: XlDirection, RegionIndex: Double): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.VPageBreak_typekey")
   var ExcelDotVPageBreak_typekey: typings.activexExcel.Excel.VPageBreak = js.native
   

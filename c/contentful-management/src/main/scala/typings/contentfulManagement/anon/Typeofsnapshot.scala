@@ -17,8 +17,7 @@ trait Typeofsnapshot extends StObject {
 }
 object Typeofsnapshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapSnapshot: (AxiosInstance, SnapshotProps[js.Any]) => Snapshot[js.Any],
     wrapSnapshotCollection: (AxiosInstance, CollectionProp[SnapshotProps[js.Any]]) => Collection[Snapshot[js.Any], SnapshotProps[js.Any]]
   ): Typeofsnapshot = {
@@ -26,14 +25,11 @@ object Typeofsnapshot {
     __obj.asInstanceOf[Typeofsnapshot]
   }
   
-  @scala.inline
-  implicit class TypeofsnapshotMutableBuilder[Self <: Typeofsnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofsnapshot](x: Self) {
     
-    @scala.inline
-    def setWrapSnapshot(value: (AxiosInstance, SnapshotProps[js.Any]) => Snapshot[js.Any]): Self = StObject.set(x, "wrapSnapshot", js.Any.fromFunction2(value))
+    inline def setWrapSnapshot(value: (AxiosInstance, SnapshotProps[js.Any]) => Snapshot[js.Any]): Self = StObject.set(x, "wrapSnapshot", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapSnapshotCollection(
+    inline def setWrapSnapshotCollection(
       value: (AxiosInstance, CollectionProp[SnapshotProps[js.Any]]) => Collection[Snapshot[js.Any], SnapshotProps[js.Any]]
     ): Self = StObject.set(x, "wrapSnapshotCollection", js.Any.fromFunction2(value))
   }

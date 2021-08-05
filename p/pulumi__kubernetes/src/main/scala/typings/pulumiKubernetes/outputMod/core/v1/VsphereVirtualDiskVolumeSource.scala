@@ -31,25 +31,19 @@ trait VsphereVirtualDiskVolumeSource extends StObject {
 }
 object VsphereVirtualDiskVolumeSource {
   
-  @scala.inline
-  def apply(fsType: String, storagePolicyID: String, storagePolicyName: String, volumePath: String): VsphereVirtualDiskVolumeSource = {
+  inline def apply(fsType: String, storagePolicyID: String, storagePolicyName: String, volumePath: String): VsphereVirtualDiskVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], storagePolicyID = storagePolicyID.asInstanceOf[js.Any], storagePolicyName = storagePolicyName.asInstanceOf[js.Any], volumePath = volumePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[VsphereVirtualDiskVolumeSource]
   }
   
-  @scala.inline
-  implicit class VsphereVirtualDiskVolumeSourceMutableBuilder[Self <: VsphereVirtualDiskVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: VsphereVirtualDiskVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragePolicyID(value: String): Self = StObject.set(x, "storagePolicyID", value.asInstanceOf[js.Any])
+    inline def setStoragePolicyID(value: String): Self = StObject.set(x, "storagePolicyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragePolicyName(value: String): Self = StObject.set(x, "storagePolicyName", value.asInstanceOf[js.Any])
+    inline def setStoragePolicyName(value: String): Self = StObject.set(x, "storagePolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumePath(value: String): Self = StObject.set(x, "volumePath", value.asInstanceOf[js.Any])
+    inline def setVolumePath(value: String): Self = StObject.set(x, "volumePath", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait ResourceRequirements extends StObject {
 }
 object ResourceRequirements {
   
-  @scala.inline
-  def apply(): ResourceRequirements = {
+  inline def apply(): ResourceRequirements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceRequirements]
   }
   
-  @scala.inline
-  implicit class ResourceRequirementsMutableBuilder[Self <: ResourceRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceRequirements](x: Self) {
     
-    @scala.inline
-    def setLimits(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setRequests(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
   }
 }

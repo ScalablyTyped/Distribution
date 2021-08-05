@@ -33,16 +33,13 @@ trait Get extends StObject {
 }
 object Get {
   
-  @scala.inline
-  def apply(get: `123`): Get = {
+  inline def apply(get: `123`): Get = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Get]
   }
   
-  @scala.inline
-  implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+  extension [Self <: Get](x: Self) {
     
-    @scala.inline
-    def setGet(value: `123`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `123`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

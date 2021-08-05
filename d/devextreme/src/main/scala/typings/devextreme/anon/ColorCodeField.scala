@@ -44,57 +44,41 @@ trait ColorCodeField extends StObject {
 }
 object ColorCodeField {
   
-  @scala.inline
-  def apply(): ColorCodeField = {
+  inline def apply(): ColorCodeField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorCodeField]
   }
   
-  @scala.inline
-  implicit class ColorCodeFieldMutableBuilder[Self <: ColorCodeField] (val x: Self) extends AnyVal {
+  extension [Self <: ColorCodeField](x: Self) {
     
-    @scala.inline
-    def setColorCodeField(value: String): Self = StObject.set(x, "colorCodeField", value.asInstanceOf[js.Any])
+    inline def setColorCodeField(value: String): Self = StObject.set(x, "colorCodeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorCodeFieldUndefined: Self = StObject.set(x, "colorCodeField", js.undefined)
+    inline def setColorCodeFieldUndefined: Self = StObject.set(x, "colorCodeField", js.undefined)
     
-    @scala.inline
-    def setColorizeGroups(value: Boolean): Self = StObject.set(x, "colorizeGroups", value.asInstanceOf[js.Any])
+    inline def setColorizeGroups(value: Boolean): Self = StObject.set(x, "colorizeGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorizeGroupsUndefined: Self = StObject.set(x, "colorizeGroups", js.undefined)
+    inline def setColorizeGroupsUndefined: Self = StObject.set(x, "colorizeGroups", js.undefined)
     
-    @scala.inline
-    def setPalette(
+    inline def setPalette(
       value: js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
     ): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
+    inline def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteExtensionModeUndefined: Self = StObject.set(x, "paletteExtensionMode", js.undefined)
+    inline def setPaletteExtensionModeUndefined: Self = StObject.set(x, "paletteExtensionMode", js.undefined)
     
-    @scala.inline
-    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    @scala.inline
-    def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: discrete | gradient | none | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: discrete | gradient | none | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

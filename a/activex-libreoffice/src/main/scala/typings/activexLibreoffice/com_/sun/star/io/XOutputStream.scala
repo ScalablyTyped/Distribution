@@ -38,8 +38,7 @@ trait XOutputStream
 }
 object XOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
@@ -51,16 +50,12 @@ object XOutputStream {
     __obj.asInstanceOf[XOutputStream]
   }
   
-  @scala.inline
-  implicit class XOutputStreamMutableBuilder[Self <: XOutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XOutputStream](x: Self) {
     
-    @scala.inline
-    def setCloseOutput(value: () => Unit): Self = StObject.set(x, "closeOutput", js.Any.fromFunction0(value))
+    inline def setCloseOutput(value: () => Unit): Self = StObject.set(x, "closeOutput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteBytes(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "writeBytes", js.Any.fromFunction1(value))
+    inline def setWriteBytes(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "writeBytes", js.Any.fromFunction1(value))
   }
 }

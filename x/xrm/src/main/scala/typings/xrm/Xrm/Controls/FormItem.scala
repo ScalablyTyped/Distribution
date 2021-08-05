@@ -28,22 +28,17 @@ trait FormItem extends StObject {
 }
 object FormItem {
   
-  @scala.inline
-  def apply(getId: () => String, getLabel: () => String, navigate: () => Unit): FormItem = {
+  inline def apply(getId: () => String, getLabel: () => String, navigate: () => Unit): FormItem = {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getLabel = js.Any.fromFunction0(getLabel), navigate = js.Any.fromFunction0(navigate))
     __obj.asInstanceOf[FormItem]
   }
   
-  @scala.inline
-  implicit class FormItemMutableBuilder[Self <: FormItem] (val x: Self) extends AnyVal {
+  extension [Self <: FormItem](x: Self) {
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNavigate(value: () => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction0(value))
+    inline def setNavigate(value: () => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction0(value))
   }
 }

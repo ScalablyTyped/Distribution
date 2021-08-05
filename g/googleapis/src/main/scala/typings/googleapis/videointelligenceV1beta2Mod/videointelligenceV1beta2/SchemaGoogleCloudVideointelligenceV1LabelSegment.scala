@@ -21,25 +21,19 @@ trait SchemaGoogleCloudVideointelligenceV1LabelSegment extends StObject {
 }
 object SchemaGoogleCloudVideointelligenceV1LabelSegment {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1LabelSegment = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1LabelSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1LabelSegment]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1LabelSegmentMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1LabelSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1LabelSegment](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setSegment(value: SchemaGoogleCloudVideointelligenceV1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: SchemaGoogleCloudVideointelligenceV1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

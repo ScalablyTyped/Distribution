@@ -33,40 +33,29 @@ trait SchemaTrainingRun extends StObject {
 }
 object SchemaTrainingRun {
   
-  @scala.inline
-  def apply(): SchemaTrainingRun = {
+  inline def apply(): SchemaTrainingRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrainingRun]
   }
   
-  @scala.inline
-  implicit class SchemaTrainingRunMutableBuilder[Self <: SchemaTrainingRun] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrainingRun](x: Self) {
     
-    @scala.inline
-    def setEvaluationMetrics(value: SchemaEvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
+    inline def setEvaluationMetrics(value: SchemaEvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
+    inline def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaIterationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaIterationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaIterationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaIterationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTrainingOptions(value: SchemaTrainingOptions): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
+    inline def setTrainingOptions(value: SchemaTrainingOptions): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
+    inline def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
   }
 }

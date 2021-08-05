@@ -480,8 +480,7 @@ trait Slides extends StObject {
 }
 object Slides {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newAffineTransform: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform,
     newAutoText: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText,
     newBatchUpdatePresentationRequest: () => BatchUpdatePresentationRequest,
@@ -2522,8 +2521,7 @@ object Slides {
   }
   object AffineTransform {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getScaleX: () => Double,
       getScaleY: () => Double,
       getShearX: () => Double,
@@ -2536,29 +2534,21 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform]
     }
     
-    @scala.inline
-    implicit class AffineTransformMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform](x: Self) {
       
-      @scala.inline
-      def setGetScaleX(value: () => Double): Self = StObject.set(x, "getScaleX", js.Any.fromFunction0(value))
+      inline def setGetScaleX(value: () => Double): Self = StObject.set(x, "getScaleX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScaleY(value: () => Double): Self = StObject.set(x, "getScaleY", js.Any.fromFunction0(value))
+      inline def setGetScaleY(value: () => Double): Self = StObject.set(x, "getScaleY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetShearX(value: () => Double): Self = StObject.set(x, "getShearX", js.Any.fromFunction0(value))
+      inline def setGetShearX(value: () => Double): Self = StObject.set(x, "getShearX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetShearY(value: () => Double): Self = StObject.set(x, "getShearY", js.Any.fromFunction0(value))
+      inline def setGetShearY(value: () => Double): Self = StObject.set(x, "getShearY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTranslateX(value: () => Double): Self = StObject.set(x, "getTranslateX", js.Any.fromFunction0(value))
+      inline def setGetTranslateX(value: () => Double): Self = StObject.set(x, "getTranslateX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTranslateY(value: () => Double): Self = StObject.set(x, "getTranslateY", js.Any.fromFunction0(value))
+      inline def setGetTranslateY(value: () => Double): Self = StObject.set(x, "getTranslateY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBuilder(value: () => AffineTransformBuilder): Self = StObject.set(x, "toBuilder", js.Any.fromFunction0(value))
+      inline def setToBuilder(value: () => AffineTransformBuilder): Self = StObject.set(x, "toBuilder", js.Any.fromFunction0(value))
     }
   }
   
@@ -2593,8 +2583,7 @@ object Slides {
   }
   object AffineTransformBuilder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       build: () => typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform,
       setScaleX: Double => AffineTransformBuilder,
       setScaleY: Double => AffineTransformBuilder,
@@ -2607,29 +2596,21 @@ object Slides {
       __obj.asInstanceOf[AffineTransformBuilder]
     }
     
-    @scala.inline
-    implicit class AffineTransformBuilderMutableBuilder[Self <: AffineTransformBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: AffineTransformBuilder](x: Self) {
       
-      @scala.inline
-      def setBuild(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+      inline def setBuild(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetScaleX(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setScaleX", js.Any.fromFunction1(value))
+      inline def setSetScaleX(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setScaleX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetScaleY(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setScaleY", js.Any.fromFunction1(value))
+      inline def setSetScaleY(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setScaleY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetShearX(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setShearX", js.Any.fromFunction1(value))
+      inline def setSetShearX(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setShearX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetShearY(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setShearY", js.Any.fromFunction1(value))
+      inline def setSetShearY(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setShearY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTranslateX(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setTranslateX", js.Any.fromFunction1(value))
+      inline def setSetTranslateX(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setTranslateX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTranslateY(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setTranslateY", js.Any.fromFunction1(value))
+      inline def setSetTranslateY(value: Double => AffineTransformBuilder): Self = StObject.set(x, "setTranslateY", js.Any.fromFunction1(value))
     }
   }
   
@@ -2647,23 +2628,18 @@ object Slides {
   }
   object AutoText {
     
-    @scala.inline
-    def apply(getAutoTextType: () => AutoTextType, getIndex: () => Integer, getRange: () => TextRange): typings.googleAppsScript.GoogleAppsScript.Slides.AutoText = {
+    inline def apply(getAutoTextType: () => AutoTextType, getIndex: () => Integer, getRange: () => TextRange): typings.googleAppsScript.GoogleAppsScript.Slides.AutoText = {
       val __obj = js.Dynamic.literal(getAutoTextType = js.Any.fromFunction0(getAutoTextType), getIndex = js.Any.fromFunction0(getIndex), getRange = js.Any.fromFunction0(getRange))
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.AutoText]
     }
     
-    @scala.inline
-    implicit class AutoTextMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AutoText] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AutoText](x: Self) {
       
-      @scala.inline
-      def setGetAutoTextType(value: () => AutoTextType): Self = StObject.set(x, "getAutoTextType", js.Any.fromFunction0(value))
+      inline def setGetAutoTextType(value: () => AutoTextType): Self = StObject.set(x, "getAutoTextType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+      inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRange(value: () => TextRange): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
+      inline def setGetRange(value: () => TextRange): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     }
   }
   
@@ -2688,8 +2664,7 @@ object Slides {
   }
   object Border {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDashStyle: () => DashStyle,
       getLineFill: () => typings.googleAppsScript.GoogleAppsScript.Slides.LineFill,
       getWeight: () => Double,
@@ -2702,29 +2677,21 @@ object Slides {
       __obj.asInstanceOf[Border]
     }
     
-    @scala.inline
-    implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+    extension [Self <: Border](x: Self) {
       
-      @scala.inline
-      def setGetDashStyle(value: () => DashStyle): Self = StObject.set(x, "getDashStyle", js.Any.fromFunction0(value))
+      inline def setGetDashStyle(value: () => DashStyle): Self = StObject.set(x, "getDashStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLineFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.LineFill): Self = StObject.set(x, "getLineFill", js.Any.fromFunction0(value))
+      inline def setGetLineFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.LineFill): Self = StObject.set(x, "getLineFill", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
+      inline def setGetWeight(value: () => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+      inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDashStyle(value: DashStyle => Border): Self = StObject.set(x, "setDashStyle", js.Any.fromFunction1(value))
+      inline def setSetDashStyle(value: DashStyle => Border): Self = StObject.set(x, "setDashStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTransparent(value: () => Border): Self = StObject.set(x, "setTransparent", js.Any.fromFunction0(value))
+      inline def setSetTransparent(value: () => Border): Self = StObject.set(x, "setTransparent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetWeight(value: Double => Border): Self = StObject.set(x, "setWeight", js.Any.fromFunction1(value))
+      inline def setSetWeight(value: Double => Border): Self = StObject.set(x, "setWeight", js.Any.fromFunction1(value))
     }
   }
   
@@ -2786,8 +2753,7 @@ object Slides {
     }
     object PresentationsCollection {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         batchUpdate: (BatchUpdatePresentationRequest, String) => BatchUpdatePresentationResponse,
         create: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation,
         get: String => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation
@@ -2796,25 +2762,19 @@ object Slides {
         __obj.asInstanceOf[PresentationsCollection]
       }
       
-      @scala.inline
-      implicit class PresentationsCollectionMutableBuilder[Self <: PresentationsCollection] (val x: Self) extends AnyVal {
+      extension [Self <: PresentationsCollection](x: Self) {
         
-        @scala.inline
-        def setBatchUpdate(value: (BatchUpdatePresentationRequest, String) => BatchUpdatePresentationResponse): Self = StObject.set(x, "batchUpdate", js.Any.fromFunction2(value))
+        inline def setBatchUpdate(value: (BatchUpdatePresentationRequest, String) => BatchUpdatePresentationResponse): Self = StObject.set(x, "batchUpdate", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreate(
+        inline def setCreate(
           value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation
         ): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGet(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        inline def setGet(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPages(value: PagesCollection): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+        inline def setPages(value: PagesCollection): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPagesUndefined: Self = StObject.set(x, "Pages", js.undefined)
+        inline def setPagesUndefined: Self = StObject.set(x, "Pages", js.undefined)
       }
     }
   }
@@ -2832,8 +2792,7 @@ object Slides {
   }
   object Color {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asRgbColor: () => typings.googleAppsScript.GoogleAppsScript.Base.RgbColor,
       asThemeColor: () => ThemeColor,
       getColorType: () => ColorType
@@ -2842,17 +2801,13 @@ object Slides {
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setAsRgbColor(value: () => typings.googleAppsScript.GoogleAppsScript.Base.RgbColor): Self = StObject.set(x, "asRgbColor", js.Any.fromFunction0(value))
+      inline def setAsRgbColor(value: () => typings.googleAppsScript.GoogleAppsScript.Base.RgbColor): Self = StObject.set(x, "asRgbColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsThemeColor(value: () => ThemeColor): Self = StObject.set(x, "asThemeColor", js.Any.fromFunction0(value))
+      inline def setAsThemeColor(value: () => ThemeColor): Self = StObject.set(x, "asThemeColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
+      inline def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
     }
   }
   
@@ -2883,8 +2838,7 @@ object Slides {
   }
   object ConnectionSite {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getIndex: () => Integer,
       getPageElement: () => typings.googleAppsScript.GoogleAppsScript.Slides.PageElement
     ): ConnectionSite = {
@@ -2892,14 +2846,11 @@ object Slides {
       __obj.asInstanceOf[ConnectionSite]
     }
     
-    @scala.inline
-    implicit class ConnectionSiteMutableBuilder[Self <: ConnectionSite] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionSite](x: Self) {
       
-      @scala.inline
-      def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+      inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageElement(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.PageElement): Self = StObject.set(x, "getPageElement", js.Any.fromFunction0(value))
+      inline def setGetPageElement(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.PageElement): Self = StObject.set(x, "getPageElement", js.Any.fromFunction0(value))
     }
   }
   
@@ -3373,8 +3324,7 @@ object Slides {
   }
   object Link {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getLinkType: () => LinkType,
       getLinkedSlide: () => Slide,
       getSlideId: () => String,
@@ -3386,26 +3336,19 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Link]
     }
     
-    @scala.inline
-    implicit class LinkMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Link] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Link](x: Self) {
       
-      @scala.inline
-      def setGetLinkType(value: () => LinkType): Self = StObject.set(x, "getLinkType", js.Any.fromFunction0(value))
+      inline def setGetLinkType(value: () => LinkType): Self = StObject.set(x, "getLinkType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLinkedSlide(value: () => Slide): Self = StObject.set(x, "getLinkedSlide", js.Any.fromFunction0(value))
+      inline def setGetLinkedSlide(value: () => Slide): Self = StObject.set(x, "getLinkedSlide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSlideId(value: () => String): Self = StObject.set(x, "getSlideId", js.Any.fromFunction0(value))
+      inline def setGetSlideId(value: () => String): Self = StObject.set(x, "getSlideId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSlideIndex(value: () => Integer): Self = StObject.set(x, "getSlideIndex", js.Any.fromFunction0(value))
+      inline def setGetSlideIndex(value: () => Integer): Self = StObject.set(x, "getSlideIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSlidePosition(value: () => SlidePosition): Self = StObject.set(x, "getSlidePosition", js.Any.fromFunction0(value))
+      inline def setGetSlidePosition(value: () => SlidePosition): Self = StObject.set(x, "getSlidePosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+      inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     }
   }
   
@@ -3420,20 +3363,16 @@ object Slides {
   }
   object List {
     
-    @scala.inline
-    def apply(getListId: () => String, getListParagraphs: () => js.Array[Paragraph]): List = {
+    inline def apply(getListId: () => String, getListParagraphs: () => js.Array[Paragraph]): List = {
       val __obj = js.Dynamic.literal(getListId = js.Any.fromFunction0(getListId), getListParagraphs = js.Any.fromFunction0(getListParagraphs))
       __obj.asInstanceOf[List]
     }
     
-    @scala.inline
-    implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+    extension [Self <: List](x: Self) {
       
-      @scala.inline
-      def setGetListId(value: () => String): Self = StObject.set(x, "getListId", js.Any.fromFunction0(value))
+      inline def setGetListId(value: () => String): Self = StObject.set(x, "getListId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetListParagraphs(value: () => js.Array[Paragraph]): Self = StObject.set(x, "getListParagraphs", js.Any.fromFunction0(value))
+      inline def setGetListParagraphs(value: () => js.Array[Paragraph]): Self = StObject.set(x, "getListParagraphs", js.Any.fromFunction0(value))
     }
   }
   
@@ -3456,8 +3395,7 @@ object Slides {
   }
   object ListStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applyListPreset: ListPreset => ListStyle,
       getGlyph: () => String,
       getList: () => List,
@@ -3469,26 +3407,19 @@ object Slides {
       __obj.asInstanceOf[ListStyle]
     }
     
-    @scala.inline
-    implicit class ListStyleMutableBuilder[Self <: ListStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ListStyle](x: Self) {
       
-      @scala.inline
-      def setApplyListPreset(value: ListPreset => ListStyle): Self = StObject.set(x, "applyListPreset", js.Any.fromFunction1(value))
+      inline def setApplyListPreset(value: ListPreset => ListStyle): Self = StObject.set(x, "applyListPreset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetGlyph(value: () => String): Self = StObject.set(x, "getGlyph", js.Any.fromFunction0(value))
+      inline def setGetGlyph(value: () => String): Self = StObject.set(x, "getGlyph", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetList(value: () => List): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
+      inline def setGetList(value: () => List): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNestingLevel(value: () => Integer): Self = StObject.set(x, "getNestingLevel", js.Any.fromFunction0(value))
+      inline def setGetNestingLevel(value: () => Integer): Self = StObject.set(x, "getNestingLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsInList(value: () => Boolean): Self = StObject.set(x, "isInList", js.Any.fromFunction0(value))
+      inline def setIsInList(value: () => Boolean): Self = StObject.set(x, "isInList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveFromList(value: () => ListStyle): Self = StObject.set(x, "removeFromList", js.Any.fromFunction0(value))
+      inline def setRemoveFromList(value: () => ListStyle): Self = StObject.set(x, "removeFromList", js.Any.fromFunction0(value))
     }
   }
   
@@ -3895,17 +3826,14 @@ object Slides {
   }
   object PageElementRange {
     
-    @scala.inline
-    def apply(getPageElements: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.PageElement]): PageElementRange = {
+    inline def apply(getPageElements: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.PageElement]): PageElementRange = {
       val __obj = js.Dynamic.literal(getPageElements = js.Any.fromFunction0(getPageElements))
       __obj.asInstanceOf[PageElementRange]
     }
     
-    @scala.inline
-    implicit class PageElementRangeMutableBuilder[Self <: PageElementRange] (val x: Self) extends AnyVal {
+    extension [Self <: PageElementRange](x: Self) {
       
-      @scala.inline
-      def setGetPageElements(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.PageElement]): Self = StObject.set(x, "getPageElements", js.Any.fromFunction0(value))
+      inline def setGetPageElements(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.PageElement]): Self = StObject.set(x, "getPageElements", js.Any.fromFunction0(value))
     }
   }
   
@@ -3918,17 +3846,14 @@ object Slides {
   }
   object PageRange {
     
-    @scala.inline
-    def apply(getPages: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Page]): PageRange = {
+    inline def apply(getPages: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Page]): PageRange = {
       val __obj = js.Dynamic.literal(getPages = js.Any.fromFunction0(getPages))
       __obj.asInstanceOf[PageRange]
     }
     
-    @scala.inline
-    implicit class PageRangeMutableBuilder[Self <: PageRange] (val x: Self) extends AnyVal {
+    extension [Self <: PageRange](x: Self) {
       
-      @scala.inline
-      def setGetPages(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Page]): Self = StObject.set(x, "getPages", js.Any.fromFunction0(value))
+      inline def setGetPages(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Page]): Self = StObject.set(x, "getPages", js.Any.fromFunction0(value))
     }
   }
   
@@ -3943,20 +3868,16 @@ object Slides {
   }
   object Paragraph {
     
-    @scala.inline
-    def apply(getIndex: () => Integer, getRange: () => TextRange): Paragraph = {
+    inline def apply(getIndex: () => Integer, getRange: () => TextRange): Paragraph = {
       val __obj = js.Dynamic.literal(getIndex = js.Any.fromFunction0(getIndex), getRange = js.Any.fromFunction0(getRange))
       __obj.asInstanceOf[Paragraph]
     }
     
-    @scala.inline
-    implicit class ParagraphMutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
+    extension [Self <: Paragraph](x: Self) {
       
-      @scala.inline
-      def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+      inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRange(value: () => TextRange): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
+      inline def setGetRange(value: () => TextRange): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     }
   }
   
@@ -4007,8 +3928,7 @@ object Slides {
   }
   object ParagraphStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getIndentEnd: () => Double,
       getIndentFirstLine: () => Double,
       getIndentStart: () => Double,
@@ -4032,62 +3952,43 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle]
     }
     
-    @scala.inline
-    implicit class ParagraphStyleMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle](x: Self) {
       
-      @scala.inline
-      def setGetIndentEnd(value: () => Double): Self = StObject.set(x, "getIndentEnd", js.Any.fromFunction0(value))
+      inline def setGetIndentEnd(value: () => Double): Self = StObject.set(x, "getIndentEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndentFirstLine(value: () => Double): Self = StObject.set(x, "getIndentFirstLine", js.Any.fromFunction0(value))
+      inline def setGetIndentFirstLine(value: () => Double): Self = StObject.set(x, "getIndentFirstLine", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndentStart(value: () => Double): Self = StObject.set(x, "getIndentStart", js.Any.fromFunction0(value))
+      inline def setGetIndentStart(value: () => Double): Self = StObject.set(x, "getIndentStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLineSpacing(value: () => Double): Self = StObject.set(x, "getLineSpacing", js.Any.fromFunction0(value))
+      inline def setGetLineSpacing(value: () => Double): Self = StObject.set(x, "getLineSpacing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParagraphAlignment(value: () => ParagraphAlignment): Self = StObject.set(x, "getParagraphAlignment", js.Any.fromFunction0(value))
+      inline def setGetParagraphAlignment(value: () => ParagraphAlignment): Self = StObject.set(x, "getParagraphAlignment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSpaceAbove(value: () => Double): Self = StObject.set(x, "getSpaceAbove", js.Any.fromFunction0(value))
+      inline def setGetSpaceAbove(value: () => Double): Self = StObject.set(x, "getSpaceAbove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSpaceBelow(value: () => Double): Self = StObject.set(x, "getSpaceBelow", js.Any.fromFunction0(value))
+      inline def setGetSpaceBelow(value: () => Double): Self = StObject.set(x, "getSpaceBelow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSpacingMode(value: () => SpacingMode): Self = StObject.set(x, "getSpacingMode", js.Any.fromFunction0(value))
+      inline def setGetSpacingMode(value: () => SpacingMode): Self = StObject.set(x, "getSpacingMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTextDirection(value: () => TextDirection): Self = StObject.set(x, "getTextDirection", js.Any.fromFunction0(value))
+      inline def setGetTextDirection(value: () => TextDirection): Self = StObject.set(x, "getTextDirection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetIndentEnd(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setIndentEnd", js.Any.fromFunction1(value))
+      inline def setSetIndentEnd(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setIndentEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIndentFirstLine(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setIndentFirstLine", js.Any.fromFunction1(value))
+      inline def setSetIndentFirstLine(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setIndentFirstLine", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIndentStart(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setIndentStart", js.Any.fromFunction1(value))
+      inline def setSetIndentStart(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setIndentStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLineSpacing(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setLineSpacing", js.Any.fromFunction1(value))
+      inline def setSetLineSpacing(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setLineSpacing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetParagraphAlignment(value: ParagraphAlignment => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setParagraphAlignment", js.Any.fromFunction1(value))
+      inline def setSetParagraphAlignment(value: ParagraphAlignment => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setParagraphAlignment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSpaceAbove(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setSpaceAbove", js.Any.fromFunction1(value))
+      inline def setSetSpaceAbove(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setSpaceAbove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSpaceBelow(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setSpaceBelow", js.Any.fromFunction1(value))
+      inline def setSetSpaceBelow(value: Double => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setSpaceBelow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSpacingMode(value: SpacingMode => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setSpacingMode", js.Any.fromFunction1(value))
+      inline def setSetSpacingMode(value: SpacingMode => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setSpacingMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTextDirection(value: TextDirection => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setTextDirection", js.Any.fromFunction1(value))
+      inline def setSetTextDirection(value: TextDirection => typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle): Self = StObject.set(x, "setTextDirection", js.Any.fromFunction1(value))
     }
   }
   
@@ -4106,8 +4007,7 @@ object Slides {
   }
   object PictureFill {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAs: String => Blob,
       getBlob: () => Blob,
       getContentUrl: () => String,
@@ -4117,20 +4017,15 @@ object Slides {
       __obj.asInstanceOf[PictureFill]
     }
     
-    @scala.inline
-    implicit class PictureFillMutableBuilder[Self <: PictureFill] (val x: Self) extends AnyVal {
+    extension [Self <: PictureFill](x: Self) {
       
-      @scala.inline
-      def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+      inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+      inline def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentUrl(value: () => String): Self = StObject.set(x, "getContentUrl", js.Any.fromFunction0(value))
+      inline def setGetContentUrl(value: () => String): Self = StObject.set(x, "getContentUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSourceUrl(value: () => String): Self = StObject.set(x, "getSourceUrl", js.Any.fromFunction0(value))
+      inline def setGetSourceUrl(value: () => String): Self = StObject.set(x, "getSourceUrl", js.Any.fromFunction0(value))
     }
   }
   
@@ -4145,20 +4040,16 @@ object Slides {
   }
   object Point {
     
-    @scala.inline
-    def apply(getX: () => Double, getY: () => Double): Point = {
+    inline def apply(getX: () => Double, getY: () => Double): Point = {
       val __obj = js.Dynamic.literal(getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY))
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+      inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+      inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     }
   }
   
@@ -4256,56 +4147,40 @@ object Slides {
     }
     object AffineTransform {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform]
       }
       
-      @scala.inline
-      implicit class AffineTransformMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform](x: Self) {
         
-        @scala.inline
-        def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+        inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+        inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
         
-        @scala.inline
-        def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+        inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+        inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
         
-        @scala.inline
-        def setShearX(value: Double): Self = StObject.set(x, "shearX", value.asInstanceOf[js.Any])
+        inline def setShearX(value: Double): Self = StObject.set(x, "shearX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShearXUndefined: Self = StObject.set(x, "shearX", js.undefined)
+        inline def setShearXUndefined: Self = StObject.set(x, "shearX", js.undefined)
         
-        @scala.inline
-        def setShearY(value: Double): Self = StObject.set(x, "shearY", value.asInstanceOf[js.Any])
+        inline def setShearY(value: Double): Self = StObject.set(x, "shearY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShearYUndefined: Self = StObject.set(x, "shearY", js.undefined)
+        inline def setShearYUndefined: Self = StObject.set(x, "shearY", js.undefined)
         
-        @scala.inline
-        def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+        inline def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
+        inline def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
         
-        @scala.inline
-        def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+        inline def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
+        inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
         
-        @scala.inline
-        def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+        inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+        inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       }
     }
     
@@ -4319,32 +4194,24 @@ object Slides {
     }
     object AutoText {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText]
       }
       
-      @scala.inline
-      implicit class AutoTextMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText](x: Self) {
         
-        @scala.inline
-        def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -4356,29 +4223,22 @@ object Slides {
     }
     object BatchUpdatePresentationRequest {
       
-      @scala.inline
-      def apply(): BatchUpdatePresentationRequest = {
+      inline def apply(): BatchUpdatePresentationRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchUpdatePresentationRequest]
       }
       
-      @scala.inline
-      implicit class BatchUpdatePresentationRequestMutableBuilder[Self <: BatchUpdatePresentationRequest] (val x: Self) extends AnyVal {
+      extension [Self <: BatchUpdatePresentationRequest](x: Self) {
         
-        @scala.inline
-        def setRequests(value: js.Array[Request]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+        inline def setRequests(value: js.Array[Request]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+        inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
         
-        @scala.inline
-        def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
+        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
         
-        @scala.inline
-        def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
+        inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
+        inline def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
       }
     }
     
@@ -4392,35 +4252,26 @@ object Slides {
     }
     object BatchUpdatePresentationResponse {
       
-      @scala.inline
-      def apply(): BatchUpdatePresentationResponse = {
+      inline def apply(): BatchUpdatePresentationResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchUpdatePresentationResponse]
       }
       
-      @scala.inline
-      implicit class BatchUpdatePresentationResponseMutableBuilder[Self <: BatchUpdatePresentationResponse] (val x: Self) extends AnyVal {
+      extension [Self <: BatchUpdatePresentationResponse](x: Self) {
         
-        @scala.inline
-        def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
+        inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
+        inline def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
         
-        @scala.inline
-        def setReplies(value: js.Array[Response]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
+        inline def setReplies(value: js.Array[Response]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
+        inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
         
-        @scala.inline
-        def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
+        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
         
-        @scala.inline
-        def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
+        inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
+        inline def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
       }
     }
     
@@ -4436,38 +4287,28 @@ object Slides {
     }
     object Bullet {
       
-      @scala.inline
-      def apply(): Bullet = {
+      inline def apply(): Bullet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Bullet]
       }
       
-      @scala.inline
-      implicit class BulletMutableBuilder[Self <: Bullet] (val x: Self) extends AnyVal {
+      extension [Self <: Bullet](x: Self) {
         
-        @scala.inline
-        def setBulletStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
+        inline def setBulletStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
+        inline def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
         
-        @scala.inline
-        def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+        inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+        inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
         
-        @scala.inline
-        def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+        inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+        inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
         
-        @scala.inline
-        def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+        inline def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+        inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
       }
     }
     
@@ -4477,23 +4318,18 @@ object Slides {
     }
     object ColorScheme {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme]
       }
       
-      @scala.inline
-      implicit class ColorSchemeMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme](x: Self) {
         
-        @scala.inline
-        def setColors(value: js.Array[ThemeColorPair]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+        inline def setColors(value: js.Array[ThemeColorPair]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+        inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
         
-        @scala.inline
-        def setColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value :_*))
+        inline def setColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value :_*))
       }
     }
     
@@ -4507,32 +4343,24 @@ object Slides {
     }
     object ColorStop {
       
-      @scala.inline
-      def apply(): ColorStop = {
+      inline def apply(): ColorStop = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ColorStop]
       }
       
-      @scala.inline
-      implicit class ColorStopMutableBuilder[Self <: ColorStop] (val x: Self) extends AnyVal {
+      extension [Self <: ColorStop](x: Self) {
         
-        @scala.inline
-        def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+        inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+        inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
         
-        @scala.inline
-        def setColor(value: OpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: OpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       }
     }
     
@@ -4546,32 +4374,24 @@ object Slides {
     }
     object CreateImageRequest {
       
-      @scala.inline
-      def apply(): CreateImageRequest = {
+      inline def apply(): CreateImageRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateImageRequest]
       }
       
-      @scala.inline
-      implicit class CreateImageRequestMutableBuilder[Self <: CreateImageRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateImageRequest](x: Self) {
         
-        @scala.inline
-        def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+        inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+        inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -4581,20 +4401,16 @@ object Slides {
     }
     object CreateImageResponse {
       
-      @scala.inline
-      def apply(): CreateImageResponse = {
+      inline def apply(): CreateImageResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateImageResponse]
       }
       
-      @scala.inline
-      implicit class CreateImageResponseMutableBuilder[Self <: CreateImageResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateImageResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -4610,38 +4426,28 @@ object Slides {
     }
     object CreateLineRequest {
       
-      @scala.inline
-      def apply(): CreateLineRequest = {
+      inline def apply(): CreateLineRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateLineRequest]
       }
       
-      @scala.inline
-      implicit class CreateLineRequestMutableBuilder[Self <: CreateLineRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateLineRequest](x: Self) {
         
-        @scala.inline
-        def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+        inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
         
-        @scala.inline
-        def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+        inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+        inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
         
-        @scala.inline
-        def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
+        inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
+        inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -4651,20 +4457,16 @@ object Slides {
     }
     object CreateLineResponse {
       
-      @scala.inline
-      def apply(): CreateLineResponse = {
+      inline def apply(): CreateLineResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateLineResponse]
       }
       
-      @scala.inline
-      implicit class CreateLineResponseMutableBuilder[Self <: CreateLineResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateLineResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -4680,38 +4482,28 @@ object Slides {
     }
     object CreateParagraphBulletsRequest {
       
-      @scala.inline
-      def apply(): CreateParagraphBulletsRequest = {
+      inline def apply(): CreateParagraphBulletsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateParagraphBulletsRequest]
       }
       
-      @scala.inline
-      implicit class CreateParagraphBulletsRequestMutableBuilder[Self <: CreateParagraphBulletsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateParagraphBulletsRequest](x: Self) {
         
-        @scala.inline
-        def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
+        inline def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
+        inline def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
+        inline def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
+        inline def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
       }
     }
     
@@ -4725,32 +4517,24 @@ object Slides {
     }
     object CreateShapeRequest {
       
-      @scala.inline
-      def apply(): CreateShapeRequest = {
+      inline def apply(): CreateShapeRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateShapeRequest]
       }
       
-      @scala.inline
-      implicit class CreateShapeRequestMutableBuilder[Self <: CreateShapeRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateShapeRequest](x: Self) {
         
-        @scala.inline
-        def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+        inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+        inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
+        inline def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
+        inline def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
       }
     }
     
@@ -4760,20 +4544,16 @@ object Slides {
     }
     object CreateShapeResponse {
       
-      @scala.inline
-      def apply(): CreateShapeResponse = {
+      inline def apply(): CreateShapeResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateShapeResponse]
       }
       
-      @scala.inline
-      implicit class CreateShapeResponseMutableBuilder[Self <: CreateShapeResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateShapeResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -4791,44 +4571,32 @@ object Slides {
     }
     object CreateSheetsChartRequest {
       
-      @scala.inline
-      def apply(): CreateSheetsChartRequest = {
+      inline def apply(): CreateSheetsChartRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateSheetsChartRequest]
       }
       
-      @scala.inline
-      implicit class CreateSheetsChartRequestMutableBuilder[Self <: CreateSheetsChartRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateSheetsChartRequest](x: Self) {
         
-        @scala.inline
-        def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+        inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+        inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
         
-        @scala.inline
-        def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+        inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+        inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
         
-        @scala.inline
-        def setLinkingMode(value: String): Self = StObject.set(x, "linkingMode", value.asInstanceOf[js.Any])
+        inline def setLinkingMode(value: String): Self = StObject.set(x, "linkingMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkingModeUndefined: Self = StObject.set(x, "linkingMode", js.undefined)
+        inline def setLinkingModeUndefined: Self = StObject.set(x, "linkingMode", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+        inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+        inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
       }
     }
     
@@ -4838,20 +4606,16 @@ object Slides {
     }
     object CreateSheetsChartResponse {
       
-      @scala.inline
-      def apply(): CreateSheetsChartResponse = {
+      inline def apply(): CreateSheetsChartResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateSheetsChartResponse]
       }
       
-      @scala.inline
-      implicit class CreateSheetsChartResponseMutableBuilder[Self <: CreateSheetsChartResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateSheetsChartResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -4867,41 +4631,30 @@ object Slides {
     }
     object CreateSlideRequest {
       
-      @scala.inline
-      def apply(): CreateSlideRequest = {
+      inline def apply(): CreateSlideRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateSlideRequest]
       }
       
-      @scala.inline
-      implicit class CreateSlideRequestMutableBuilder[Self <: CreateSlideRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateSlideRequest](x: Self) {
         
-        @scala.inline
-        def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
+        inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
+        inline def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setPlaceholderIdMappings(value: js.Array[LayoutPlaceholderIdMapping]): Self = StObject.set(x, "placeholderIdMappings", value.asInstanceOf[js.Any])
+        inline def setPlaceholderIdMappings(value: js.Array[LayoutPlaceholderIdMapping]): Self = StObject.set(x, "placeholderIdMappings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceholderIdMappingsUndefined: Self = StObject.set(x, "placeholderIdMappings", js.undefined)
+        inline def setPlaceholderIdMappingsUndefined: Self = StObject.set(x, "placeholderIdMappings", js.undefined)
         
-        @scala.inline
-        def setPlaceholderIdMappingsVarargs(value: LayoutPlaceholderIdMapping*): Self = StObject.set(x, "placeholderIdMappings", js.Array(value :_*))
+        inline def setPlaceholderIdMappingsVarargs(value: LayoutPlaceholderIdMapping*): Self = StObject.set(x, "placeholderIdMappings", js.Array(value :_*))
         
-        @scala.inline
-        def setSlideLayoutReference(value: LayoutReference): Self = StObject.set(x, "slideLayoutReference", value.asInstanceOf[js.Any])
+        inline def setSlideLayoutReference(value: LayoutReference): Self = StObject.set(x, "slideLayoutReference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlideLayoutReferenceUndefined: Self = StObject.set(x, "slideLayoutReference", js.undefined)
+        inline def setSlideLayoutReferenceUndefined: Self = StObject.set(x, "slideLayoutReference", js.undefined)
       }
     }
     
@@ -4911,20 +4664,16 @@ object Slides {
     }
     object CreateSlideResponse {
       
-      @scala.inline
-      def apply(): CreateSlideResponse = {
+      inline def apply(): CreateSlideResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateSlideResponse]
       }
       
-      @scala.inline
-      implicit class CreateSlideResponseMutableBuilder[Self <: CreateSlideResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateSlideResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -4940,38 +4689,28 @@ object Slides {
     }
     object CreateTableRequest {
       
-      @scala.inline
-      def apply(): CreateTableRequest = {
+      inline def apply(): CreateTableRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateTableRequest]
       }
       
-      @scala.inline
-      implicit class CreateTableRequestMutableBuilder[Self <: CreateTableRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateTableRequest](x: Self) {
         
-        @scala.inline
-        def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+        inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
         
-        @scala.inline
-        def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+        inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+        inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+        inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       }
     }
     
@@ -4981,20 +4720,16 @@ object Slides {
     }
     object CreateTableResponse {
       
-      @scala.inline
-      def apply(): CreateTableResponse = {
+      inline def apply(): CreateTableResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateTableResponse]
       }
       
-      @scala.inline
-      implicit class CreateTableResponseMutableBuilder[Self <: CreateTableResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateTableResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -5010,38 +4745,28 @@ object Slides {
     }
     object CreateVideoRequest {
       
-      @scala.inline
-      def apply(): CreateVideoRequest = {
+      inline def apply(): CreateVideoRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateVideoRequest]
       }
       
-      @scala.inline
-      implicit class CreateVideoRequestMutableBuilder[Self <: CreateVideoRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CreateVideoRequest](x: Self) {
         
-        @scala.inline
-        def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+        inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+        inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+        inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       }
     }
     
@@ -5051,20 +4776,16 @@ object Slides {
     }
     object CreateVideoResponse {
       
-      @scala.inline
-      def apply(): CreateVideoResponse = {
+      inline def apply(): CreateVideoResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateVideoResponse]
       }
       
-      @scala.inline
-      implicit class CreateVideoResponseMutableBuilder[Self <: CreateVideoResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateVideoResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -5082,44 +4803,32 @@ object Slides {
     }
     object CropProperties {
       
-      @scala.inline
-      def apply(): CropProperties = {
+      inline def apply(): CropProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CropProperties]
       }
       
-      @scala.inline
-      implicit class CropPropertiesMutableBuilder[Self <: CropProperties] (val x: Self) extends AnyVal {
+      extension [Self <: CropProperties](x: Self) {
         
-        @scala.inline
-        def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+        inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+        inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
         
-        @scala.inline
-        def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
+        inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
+        inline def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
         
-        @scala.inline
-        def setLeftOffset(value: Double): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
+        inline def setLeftOffset(value: Double): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
+        inline def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
         
-        @scala.inline
-        def setRightOffset(value: Double): Self = StObject.set(x, "rightOffset", value.asInstanceOf[js.Any])
+        inline def setRightOffset(value: Double): Self = StObject.set(x, "rightOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRightOffsetUndefined: Self = StObject.set(x, "rightOffset", js.undefined)
+        inline def setRightOffsetUndefined: Self = StObject.set(x, "rightOffset", js.undefined)
         
-        @scala.inline
-        def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+        inline def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+        inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
       }
     }
     
@@ -5129,20 +4838,16 @@ object Slides {
     }
     object DeleteObjectRequest {
       
-      @scala.inline
-      def apply(): DeleteObjectRequest = {
+      inline def apply(): DeleteObjectRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteObjectRequest]
       }
       
-      @scala.inline
-      implicit class DeleteObjectRequestMutableBuilder[Self <: DeleteObjectRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteObjectRequest](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -5156,32 +4861,24 @@ object Slides {
     }
     object DeleteParagraphBulletsRequest {
       
-      @scala.inline
-      def apply(): DeleteParagraphBulletsRequest = {
+      inline def apply(): DeleteParagraphBulletsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteParagraphBulletsRequest]
       }
       
-      @scala.inline
-      implicit class DeleteParagraphBulletsRequestMutableBuilder[Self <: DeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteParagraphBulletsRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
+        inline def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
+        inline def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
       }
     }
     
@@ -5193,26 +4890,20 @@ object Slides {
     }
     object DeleteTableColumnRequest {
       
-      @scala.inline
-      def apply(): DeleteTableColumnRequest = {
+      inline def apply(): DeleteTableColumnRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteTableColumnRequest]
       }
       
-      @scala.inline
-      implicit class DeleteTableColumnRequestMutableBuilder[Self <: DeleteTableColumnRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteTableColumnRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
+        inline def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
+        inline def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
       }
     }
     
@@ -5224,26 +4915,20 @@ object Slides {
     }
     object DeleteTableRowRequest {
       
-      @scala.inline
-      def apply(): DeleteTableRowRequest = {
+      inline def apply(): DeleteTableRowRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteTableRowRequest]
       }
       
-      @scala.inline
-      implicit class DeleteTableRowRequestMutableBuilder[Self <: DeleteTableRowRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteTableRowRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
+        inline def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
+        inline def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
       }
     }
     
@@ -5257,32 +4942,24 @@ object Slides {
     }
     object DeleteTextRequest {
       
-      @scala.inline
-      def apply(): DeleteTextRequest = {
+      inline def apply(): DeleteTextRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DeleteTextRequest]
       }
       
-      @scala.inline
-      implicit class DeleteTextRequestMutableBuilder[Self <: DeleteTextRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteTextRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
+        inline def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
+        inline def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
       }
     }
     
@@ -5294,26 +4971,20 @@ object Slides {
     }
     object Dimension {
       
-      @scala.inline
-      def apply(): Dimension = {
+      inline def apply(): Dimension = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Dimension]
       }
       
-      @scala.inline
-      implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+      extension [Self <: Dimension](x: Self) {
         
-        @scala.inline
-        def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
+        inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
+        inline def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
         
-        @scala.inline
-        def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+        inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+        inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       }
     }
     
@@ -5325,26 +4996,20 @@ object Slides {
     }
     object DuplicateObjectRequest {
       
-      @scala.inline
-      def apply(): DuplicateObjectRequest = {
+      inline def apply(): DuplicateObjectRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DuplicateObjectRequest]
       }
       
-      @scala.inline
-      implicit class DuplicateObjectRequestMutableBuilder[Self <: DuplicateObjectRequest] (val x: Self) extends AnyVal {
+      extension [Self <: DuplicateObjectRequest](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setObjectIds(value: js.Object): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+        inline def setObjectIds(value: js.Object): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+        inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
       }
     }
     
@@ -5354,20 +5019,16 @@ object Slides {
     }
     object DuplicateObjectResponse {
       
-      @scala.inline
-      def apply(): DuplicateObjectResponse = {
+      inline def apply(): DuplicateObjectResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DuplicateObjectResponse]
       }
       
-      @scala.inline
-      implicit class DuplicateObjectResponseMutableBuilder[Self <: DuplicateObjectResponse] (val x: Self) extends AnyVal {
+      extension [Self <: DuplicateObjectResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -5377,23 +5038,18 @@ object Slides {
     }
     object Group {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group]
       }
       
-      @scala.inline
-      implicit class GroupMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group](x: Self) {
         
-        @scala.inline
-        def setChildren(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setChildrenVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       }
     }
     
@@ -5405,29 +5061,22 @@ object Slides {
     }
     object GroupObjectsRequest {
       
-      @scala.inline
-      def apply(): GroupObjectsRequest = {
+      inline def apply(): GroupObjectsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GroupObjectsRequest]
       }
       
-      @scala.inline
-      implicit class GroupObjectsRequestMutableBuilder[Self <: GroupObjectsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: GroupObjectsRequest](x: Self) {
         
-        @scala.inline
-        def setChildrenObjectIds(value: js.Array[String]): Self = StObject.set(x, "childrenObjectIds", value.asInstanceOf[js.Any])
+        inline def setChildrenObjectIds(value: js.Array[String]): Self = StObject.set(x, "childrenObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenObjectIdsUndefined: Self = StObject.set(x, "childrenObjectIds", js.undefined)
+        inline def setChildrenObjectIdsUndefined: Self = StObject.set(x, "childrenObjectIds", js.undefined)
         
-        @scala.inline
-        def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value :_*))
+        inline def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value :_*))
         
-        @scala.inline
-        def setGroupObjectId(value: String): Self = StObject.set(x, "groupObjectId", value.asInstanceOf[js.Any])
+        inline def setGroupObjectId(value: String): Self = StObject.set(x, "groupObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupObjectIdUndefined: Self = StObject.set(x, "groupObjectId", js.undefined)
+        inline def setGroupObjectIdUndefined: Self = StObject.set(x, "groupObjectId", js.undefined)
       }
     }
     
@@ -5437,20 +5086,16 @@ object Slides {
     }
     object GroupObjectsResponse {
       
-      @scala.inline
-      def apply(): GroupObjectsResponse = {
+      inline def apply(): GroupObjectsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GroupObjectsResponse]
       }
       
-      @scala.inline
-      implicit class GroupObjectsResponseMutableBuilder[Self <: GroupObjectsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: GroupObjectsResponse](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -5464,32 +5109,24 @@ object Slides {
     }
     object Image {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image]
       }
       
-      @scala.inline
-      implicit class ImageMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image](x: Self) {
         
-        @scala.inline
-        def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+        inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+        inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
         
-        @scala.inline
-        def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+        inline def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
+        inline def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
         
-        @scala.inline
-        def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+        inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
+        inline def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
       }
     }
     
@@ -5513,62 +5150,44 @@ object Slides {
     }
     object ImageProperties {
       
-      @scala.inline
-      def apply(): ImageProperties = {
+      inline def apply(): ImageProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ImageProperties]
       }
       
-      @scala.inline
-      implicit class ImagePropertiesMutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
+      extension [Self <: ImageProperties](x: Self) {
         
-        @scala.inline
-        def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+        inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
+        inline def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
         
-        @scala.inline
-        def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+        inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
+        inline def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
         
-        @scala.inline
-        def setCropProperties(value: CropProperties): Self = StObject.set(x, "cropProperties", value.asInstanceOf[js.Any])
+        inline def setCropProperties(value: CropProperties): Self = StObject.set(x, "cropProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCropPropertiesUndefined: Self = StObject.set(x, "cropProperties", js.undefined)
+        inline def setCropPropertiesUndefined: Self = StObject.set(x, "cropProperties", js.undefined)
         
-        @scala.inline
-        def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+        inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
         
-        @scala.inline
-        def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+        inline def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+        inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
         
-        @scala.inline
-        def setRecolor(value: Recolor): Self = StObject.set(x, "recolor", value.asInstanceOf[js.Any])
+        inline def setRecolor(value: Recolor): Self = StObject.set(x, "recolor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRecolorUndefined: Self = StObject.set(x, "recolor", js.undefined)
+        inline def setRecolorUndefined: Self = StObject.set(x, "recolor", js.undefined)
         
-        @scala.inline
-        def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+        inline def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+        inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
         
-        @scala.inline
-        def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+        inline def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+        inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
       }
     }
     
@@ -5584,38 +5203,28 @@ object Slides {
     }
     object InsertTableColumnsRequest {
       
-      @scala.inline
-      def apply(): InsertTableColumnsRequest = {
+      inline def apply(): InsertTableColumnsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertTableColumnsRequest]
       }
       
-      @scala.inline
-      implicit class InsertTableColumnsRequestMutableBuilder[Self <: InsertTableColumnsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertTableColumnsRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setInsertRight(value: Boolean): Self = StObject.set(x, "insertRight", value.asInstanceOf[js.Any])
+        inline def setInsertRight(value: Boolean): Self = StObject.set(x, "insertRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertRightUndefined: Self = StObject.set(x, "insertRight", js.undefined)
+        inline def setInsertRightUndefined: Self = StObject.set(x, "insertRight", js.undefined)
         
-        @scala.inline
-        def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+        inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+        inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
         
-        @scala.inline
-        def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
+        inline def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
+        inline def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
       }
     }
     
@@ -5631,38 +5240,28 @@ object Slides {
     }
     object InsertTableRowsRequest {
       
-      @scala.inline
-      def apply(): InsertTableRowsRequest = {
+      inline def apply(): InsertTableRowsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertTableRowsRequest]
       }
       
-      @scala.inline
-      implicit class InsertTableRowsRequestMutableBuilder[Self <: InsertTableRowsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertTableRowsRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
+        inline def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertBelowUndefined: Self = StObject.set(x, "insertBelow", js.undefined)
+        inline def setInsertBelowUndefined: Self = StObject.set(x, "insertBelow", js.undefined)
         
-        @scala.inline
-        def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+        inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+        inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
         
-        @scala.inline
-        def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
+        inline def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
+        inline def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
       }
     }
     
@@ -5678,38 +5277,28 @@ object Slides {
     }
     object InsertTextRequest {
       
-      @scala.inline
-      def apply(): InsertTextRequest = {
+      inline def apply(): InsertTextRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InsertTextRequest]
       }
       
-      @scala.inline
-      implicit class InsertTextRequestMutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
+      extension [Self <: InsertTextRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
+        inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
+        inline def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -5723,32 +5312,24 @@ object Slides {
     }
     object LayoutPlaceholderIdMapping {
       
-      @scala.inline
-      def apply(): LayoutPlaceholderIdMapping = {
+      inline def apply(): LayoutPlaceholderIdMapping = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LayoutPlaceholderIdMapping]
       }
       
-      @scala.inline
-      implicit class LayoutPlaceholderIdMappingMutableBuilder[Self <: LayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
+      extension [Self <: LayoutPlaceholderIdMapping](x: Self) {
         
-        @scala.inline
-        def setLayoutPlaceholder(value: Placeholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
+        inline def setLayoutPlaceholder(value: Placeholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutPlaceholderObjectId(value: String): Self = StObject.set(x, "layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
+        inline def setLayoutPlaceholderObjectId(value: String): Self = StObject.set(x, "layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutPlaceholderObjectIdUndefined: Self = StObject.set(x, "layoutPlaceholderObjectId", js.undefined)
+        inline def setLayoutPlaceholderObjectIdUndefined: Self = StObject.set(x, "layoutPlaceholderObjectId", js.undefined)
         
-        @scala.inline
-        def setLayoutPlaceholderUndefined: Self = StObject.set(x, "layoutPlaceholder", js.undefined)
+        inline def setLayoutPlaceholderUndefined: Self = StObject.set(x, "layoutPlaceholder", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -5762,32 +5343,24 @@ object Slides {
     }
     object LayoutProperties {
       
-      @scala.inline
-      def apply(): LayoutProperties = {
+      inline def apply(): LayoutProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LayoutProperties]
       }
       
-      @scala.inline
-      implicit class LayoutPropertiesMutableBuilder[Self <: LayoutProperties] (val x: Self) extends AnyVal {
+      extension [Self <: LayoutProperties](x: Self) {
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+        inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
         
-        @scala.inline
-        def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
+        inline def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
+        inline def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -5799,26 +5372,20 @@ object Slides {
     }
     object LayoutReference {
       
-      @scala.inline
-      def apply(): LayoutReference = {
+      inline def apply(): LayoutReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LayoutReference]
       }
       
-      @scala.inline
-      implicit class LayoutReferenceMutableBuilder[Self <: LayoutReference] (val x: Self) extends AnyVal {
+      extension [Self <: LayoutReference](x: Self) {
         
-        @scala.inline
-        def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
+        inline def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutIdUndefined: Self = StObject.set(x, "layoutId", js.undefined)
+        inline def setLayoutIdUndefined: Self = StObject.set(x, "layoutId", js.undefined)
         
-        @scala.inline
-        def setPredefinedLayout(value: String): Self = StObject.set(x, "predefinedLayout", value.asInstanceOf[js.Any])
+        inline def setPredefinedLayout(value: String): Self = StObject.set(x, "predefinedLayout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPredefinedLayoutUndefined: Self = StObject.set(x, "predefinedLayout", js.undefined)
+        inline def setPredefinedLayoutUndefined: Self = StObject.set(x, "predefinedLayout", js.undefined)
       }
     }
     
@@ -5832,32 +5399,24 @@ object Slides {
     }
     object Line {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line]
       }
       
-      @scala.inline
-      implicit class LineMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line](x: Self) {
         
-        @scala.inline
-        def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
+        inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
+        inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
         
-        @scala.inline
-        def setLineProperties(value: LineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
+        inline def setLineProperties(value: LineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
+        inline def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
         
-        @scala.inline
-        def setLineType(value: String): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
+        inline def setLineType(value: String): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
+        inline def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
       }
     }
     
@@ -5869,26 +5428,20 @@ object Slides {
     }
     object LineConnection {
       
-      @scala.inline
-      def apply(): LineConnection = {
+      inline def apply(): LineConnection = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LineConnection]
       }
       
-      @scala.inline
-      implicit class LineConnectionMutableBuilder[Self <: LineConnection] (val x: Self) extends AnyVal {
+      extension [Self <: LineConnection](x: Self) {
         
-        @scala.inline
-        def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
+        inline def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnectedObjectIdUndefined: Self = StObject.set(x, "connectedObjectId", js.undefined)
+        inline def setConnectedObjectIdUndefined: Self = StObject.set(x, "connectedObjectId", js.undefined)
         
-        @scala.inline
-        def setConnectionSiteIndex(value: Double): Self = StObject.set(x, "connectionSiteIndex", value.asInstanceOf[js.Any])
+        inline def setConnectionSiteIndex(value: Double): Self = StObject.set(x, "connectionSiteIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnectionSiteIndexUndefined: Self = StObject.set(x, "connectionSiteIndex", js.undefined)
+        inline def setConnectionSiteIndexUndefined: Self = StObject.set(x, "connectionSiteIndex", js.undefined)
       }
     }
     
@@ -5898,20 +5451,16 @@ object Slides {
     }
     object LineFill {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill]
       }
       
-      @scala.inline
-      implicit class LineFillMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill](x: Self) {
         
-        @scala.inline
-        def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+        inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+        inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
       }
     }
     
@@ -5935,62 +5484,44 @@ object Slides {
     }
     object LineProperties {
       
-      @scala.inline
-      def apply(): LineProperties = {
+      inline def apply(): LineProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LineProperties]
       }
       
-      @scala.inline
-      implicit class LinePropertiesMutableBuilder[Self <: LineProperties] (val x: Self) extends AnyVal {
+      extension [Self <: LineProperties](x: Self) {
         
-        @scala.inline
-        def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+        inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+        inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
         
-        @scala.inline
-        def setEndArrow(value: String): Self = StObject.set(x, "endArrow", value.asInstanceOf[js.Any])
+        inline def setEndArrow(value: String): Self = StObject.set(x, "endArrow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndArrowUndefined: Self = StObject.set(x, "endArrow", js.undefined)
+        inline def setEndArrowUndefined: Self = StObject.set(x, "endArrow", js.undefined)
         
-        @scala.inline
-        def setEndConnection(value: LineConnection): Self = StObject.set(x, "endConnection", value.asInstanceOf[js.Any])
+        inline def setEndConnection(value: LineConnection): Self = StObject.set(x, "endConnection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndConnectionUndefined: Self = StObject.set(x, "endConnection", js.undefined)
+        inline def setEndConnectionUndefined: Self = StObject.set(x, "endConnection", js.undefined)
         
-        @scala.inline
-        def setLineFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill): Self = StObject.set(x, "lineFill", value.asInstanceOf[js.Any])
+        inline def setLineFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill): Self = StObject.set(x, "lineFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineFillUndefined: Self = StObject.set(x, "lineFill", js.undefined)
+        inline def setLineFillUndefined: Self = StObject.set(x, "lineFill", js.undefined)
         
-        @scala.inline
-        def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+        inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
         
-        @scala.inline
-        def setStartArrow(value: String): Self = StObject.set(x, "startArrow", value.asInstanceOf[js.Any])
+        inline def setStartArrow(value: String): Self = StObject.set(x, "startArrow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartArrowUndefined: Self = StObject.set(x, "startArrow", js.undefined)
+        inline def setStartArrowUndefined: Self = StObject.set(x, "startArrow", js.undefined)
         
-        @scala.inline
-        def setStartConnection(value: LineConnection): Self = StObject.set(x, "startConnection", value.asInstanceOf[js.Any])
+        inline def setStartConnection(value: LineConnection): Self = StObject.set(x, "startConnection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartConnectionUndefined: Self = StObject.set(x, "startConnection", js.undefined)
+        inline def setStartConnectionUndefined: Self = StObject.set(x, "startConnection", js.undefined)
         
-        @scala.inline
-        def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+        inline def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+        inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
       }
     }
     
@@ -6006,38 +5537,28 @@ object Slides {
     }
     object Link {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link]
       }
       
-      @scala.inline
-      implicit class LinkMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link](x: Self) {
         
-        @scala.inline
-        def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
+        inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
+        inline def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
         
-        @scala.inline
-        def setRelativeLink(value: String): Self = StObject.set(x, "relativeLink", value.asInstanceOf[js.Any])
+        inline def setRelativeLink(value: String): Self = StObject.set(x, "relativeLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRelativeLinkUndefined: Self = StObject.set(x, "relativeLink", js.undefined)
+        inline def setRelativeLinkUndefined: Self = StObject.set(x, "relativeLink", js.undefined)
         
-        @scala.inline
-        def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
+        inline def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
+        inline def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -6049,26 +5570,20 @@ object Slides {
     }
     object List {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List]
       }
       
-      @scala.inline
-      implicit class ListMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List](x: Self) {
         
-        @scala.inline
-        def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+        inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+        inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
         
-        @scala.inline
-        def setNestingLevel(value: js.Object): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+        inline def setNestingLevel(value: js.Object): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+        inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
       }
     }
     
@@ -6078,20 +5593,16 @@ object Slides {
     }
     object MasterProperties {
       
-      @scala.inline
-      def apply(): MasterProperties = {
+      inline def apply(): MasterProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MasterProperties]
       }
       
-      @scala.inline
-      implicit class MasterPropertiesMutableBuilder[Self <: MasterProperties] (val x: Self) extends AnyVal {
+      extension [Self <: MasterProperties](x: Self) {
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+        inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       }
     }
     
@@ -6103,26 +5614,20 @@ object Slides {
     }
     object MergeTableCellsRequest {
       
-      @scala.inline
-      def apply(): MergeTableCellsRequest = {
+      inline def apply(): MergeTableCellsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MergeTableCellsRequest]
       }
       
-      @scala.inline
-      implicit class MergeTableCellsRequestMutableBuilder[Self <: MergeTableCellsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: MergeTableCellsRequest](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+        inline def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+        inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
       }
     }
     
@@ -6132,20 +5637,16 @@ object Slides {
     }
     object NestingLevel {
       
-      @scala.inline
-      def apply(): NestingLevel = {
+      inline def apply(): NestingLevel = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NestingLevel]
       }
       
-      @scala.inline
-      implicit class NestingLevelMutableBuilder[Self <: NestingLevel] (val x: Self) extends AnyVal {
+      extension [Self <: NestingLevel](x: Self) {
         
-        @scala.inline
-        def setBulletStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
+        inline def setBulletStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
+        inline def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
       }
     }
     
@@ -6155,20 +5656,16 @@ object Slides {
     }
     object NotesProperties {
       
-      @scala.inline
-      def apply(): NotesProperties = {
+      inline def apply(): NotesProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NotesProperties]
       }
       
-      @scala.inline
-      implicit class NotesPropertiesMutableBuilder[Self <: NotesProperties] (val x: Self) extends AnyVal {
+      extension [Self <: NotesProperties](x: Self) {
         
-        @scala.inline
-        def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
+        inline def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeakerNotesObjectIdUndefined: Self = StObject.set(x, "speakerNotesObjectId", js.undefined)
+        inline def setSpeakerNotesObjectIdUndefined: Self = StObject.set(x, "speakerNotesObjectId", js.undefined)
       }
     }
     
@@ -6180,26 +5677,20 @@ object Slides {
     }
     object OpaqueColor {
       
-      @scala.inline
-      def apply(): OpaqueColor = {
+      inline def apply(): OpaqueColor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OpaqueColor]
       }
       
-      @scala.inline
-      implicit class OpaqueColorMutableBuilder[Self <: OpaqueColor] (val x: Self) extends AnyVal {
+      extension [Self <: OpaqueColor](x: Self) {
         
-        @scala.inline
-        def setRgbColor(value: RgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
+        inline def setRgbColor(value: RgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRgbColorUndefined: Self = StObject.set(x, "rgbColor", js.undefined)
+        inline def setRgbColorUndefined: Self = StObject.set(x, "rgbColor", js.undefined)
         
-        @scala.inline
-        def setThemeColor(value: String): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
+        inline def setThemeColor(value: String): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
+        inline def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
       }
     }
     
@@ -6209,20 +5700,16 @@ object Slides {
     }
     object OptionalColor {
       
-      @scala.inline
-      def apply(): OptionalColor = {
+      inline def apply(): OptionalColor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OptionalColor]
       }
       
-      @scala.inline
-      implicit class OptionalColorMutableBuilder[Self <: OptionalColor] (val x: Self) extends AnyVal {
+      extension [Self <: OptionalColor](x: Self) {
         
-        @scala.inline
-        def setOpaqueColor(value: OpaqueColor): Self = StObject.set(x, "opaqueColor", value.asInstanceOf[js.Any])
+        inline def setOpaqueColor(value: OpaqueColor): Self = StObject.set(x, "opaqueColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpaqueColorUndefined: Self = StObject.set(x, "opaqueColor", js.undefined)
+        inline def setOpaqueColorUndefined: Self = StObject.set(x, "opaqueColor", js.undefined)
       }
     }
     
@@ -6238,38 +5725,28 @@ object Slides {
     }
     object Outline {
       
-      @scala.inline
-      def apply(): Outline = {
+      inline def apply(): Outline = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Outline]
       }
       
-      @scala.inline
-      implicit class OutlineMutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
+      extension [Self <: Outline](x: Self) {
         
-        @scala.inline
-        def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+        inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+        inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
         
-        @scala.inline
-        def setOutlineFill(value: OutlineFill): Self = StObject.set(x, "outlineFill", value.asInstanceOf[js.Any])
+        inline def setOutlineFill(value: OutlineFill): Self = StObject.set(x, "outlineFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutlineFillUndefined: Self = StObject.set(x, "outlineFill", js.undefined)
+        inline def setOutlineFillUndefined: Self = StObject.set(x, "outlineFill", js.undefined)
         
-        @scala.inline
-        def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+        inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+        inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
         
-        @scala.inline
-        def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+        inline def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+        inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
       }
     }
     
@@ -6279,20 +5756,16 @@ object Slides {
     }
     object OutlineFill {
       
-      @scala.inline
-      def apply(): OutlineFill = {
+      inline def apply(): OutlineFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OutlineFill]
       }
       
-      @scala.inline
-      implicit class OutlineFillMutableBuilder[Self <: OutlineFill] (val x: Self) extends AnyVal {
+      extension [Self <: OutlineFill](x: Self) {
         
-        @scala.inline
-        def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+        inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+        inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
       }
     }
     
@@ -6318,71 +5791,50 @@ object Slides {
     }
     object Page {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]
       }
       
-      @scala.inline
-      implicit class PageMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page](x: Self) {
         
-        @scala.inline
-        def setLayoutProperties(value: LayoutProperties): Self = StObject.set(x, "layoutProperties", value.asInstanceOf[js.Any])
+        inline def setLayoutProperties(value: LayoutProperties): Self = StObject.set(x, "layoutProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutPropertiesUndefined: Self = StObject.set(x, "layoutProperties", js.undefined)
+        inline def setLayoutPropertiesUndefined: Self = StObject.set(x, "layoutProperties", js.undefined)
         
-        @scala.inline
-        def setMasterProperties(value: MasterProperties): Self = StObject.set(x, "masterProperties", value.asInstanceOf[js.Any])
+        inline def setMasterProperties(value: MasterProperties): Self = StObject.set(x, "masterProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMasterPropertiesUndefined: Self = StObject.set(x, "masterProperties", js.undefined)
+        inline def setMasterPropertiesUndefined: Self = StObject.set(x, "masterProperties", js.undefined)
         
-        @scala.inline
-        def setNotesProperties(value: NotesProperties): Self = StObject.set(x, "notesProperties", value.asInstanceOf[js.Any])
+        inline def setNotesProperties(value: NotesProperties): Self = StObject.set(x, "notesProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesPropertiesUndefined: Self = StObject.set(x, "notesProperties", js.undefined)
+        inline def setNotesPropertiesUndefined: Self = StObject.set(x, "notesProperties", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setPageElements(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]): Self = StObject.set(x, "pageElements", value.asInstanceOf[js.Any])
+        inline def setPageElements(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]): Self = StObject.set(x, "pageElements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageElementsUndefined: Self = StObject.set(x, "pageElements", js.undefined)
+        inline def setPageElementsUndefined: Self = StObject.set(x, "pageElements", js.undefined)
         
-        @scala.inline
-        def setPageElementsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
+        inline def setPageElementsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
         
-        @scala.inline
-        def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
+        inline def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
+        inline def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
         
-        @scala.inline
-        def setPageType(value: String): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
+        inline def setPageType(value: String): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTypeUndefined: Self = StObject.set(x, "pageType", js.undefined)
+        inline def setPageTypeUndefined: Self = StObject.set(x, "pageType", js.undefined)
         
-        @scala.inline
-        def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+        inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+        inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
         
-        @scala.inline
-        def setSlideProperties(value: SlideProperties): Self = StObject.set(x, "slideProperties", value.asInstanceOf[js.Any])
+        inline def setSlideProperties(value: SlideProperties): Self = StObject.set(x, "slideProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlidePropertiesUndefined: Self = StObject.set(x, "slideProperties", js.undefined)
+        inline def setSlidePropertiesUndefined: Self = StObject.set(x, "slideProperties", js.undefined)
       }
     }
     
@@ -6396,32 +5848,24 @@ object Slides {
     }
     object PageBackgroundFill {
       
-      @scala.inline
-      def apply(): PageBackgroundFill = {
+      inline def apply(): PageBackgroundFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PageBackgroundFill]
       }
       
-      @scala.inline
-      implicit class PageBackgroundFillMutableBuilder[Self <: PageBackgroundFill] (val x: Self) extends AnyVal {
+      extension [Self <: PageBackgroundFill](x: Self) {
         
-        @scala.inline
-        def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+        inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+        inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
         
-        @scala.inline
-        def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+        inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+        inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
         
-        @scala.inline
-        def setStretchedPictureFill(value: StretchedPictureFill): Self = StObject.set(x, "stretchedPictureFill", value.asInstanceOf[js.Any])
+        inline def setStretchedPictureFill(value: StretchedPictureFill): Self = StObject.set(x, "stretchedPictureFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStretchedPictureFillUndefined: Self = StObject.set(x, "stretchedPictureFill", js.undefined)
+        inline def setStretchedPictureFillUndefined: Self = StObject.set(x, "stretchedPictureFill", js.undefined)
       }
     }
     
@@ -6455,92 +5899,64 @@ object Slides {
     }
     object PageElement {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]
       }
       
-      @scala.inline
-      implicit class PageElementMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setElementGroup(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group): Self = StObject.set(x, "elementGroup", value.asInstanceOf[js.Any])
+        inline def setElementGroup(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group): Self = StObject.set(x, "elementGroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementGroupUndefined: Self = StObject.set(x, "elementGroup", js.undefined)
+        inline def setElementGroupUndefined: Self = StObject.set(x, "elementGroup", js.undefined)
         
-        @scala.inline
-        def setImage(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+        inline def setImage(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+        inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
         
-        @scala.inline
-        def setLine(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+        inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setShape(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+        inline def setShape(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+        inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
         
-        @scala.inline
-        def setSheetsChart(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart): Self = StObject.set(x, "sheetsChart", value.asInstanceOf[js.Any])
+        inline def setSheetsChart(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart): Self = StObject.set(x, "sheetsChart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSheetsChartUndefined: Self = StObject.set(x, "sheetsChart", js.undefined)
+        inline def setSheetsChartUndefined: Self = StObject.set(x, "sheetsChart", js.undefined)
         
-        @scala.inline
-        def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setTable(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+        inline def setTable(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+        inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+        inline def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+        inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
         
-        @scala.inline
-        def setVideo(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+        inline def setVideo(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+        inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
         
-        @scala.inline
-        def setWordArt(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt): Self = StObject.set(x, "wordArt", value.asInstanceOf[js.Any])
+        inline def setWordArt(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt): Self = StObject.set(x, "wordArt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWordArtUndefined: Self = StObject.set(x, "wordArt", js.undefined)
+        inline def setWordArtUndefined: Self = StObject.set(x, "wordArt", js.undefined)
       }
     }
     
@@ -6554,32 +5970,24 @@ object Slides {
     }
     object PageElementProperties {
       
-      @scala.inline
-      def apply(): PageElementProperties = {
+      inline def apply(): PageElementProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PageElementProperties]
       }
       
-      @scala.inline
-      implicit class PageElementPropertiesMutableBuilder[Self <: PageElementProperties] (val x: Self) extends AnyVal {
+      extension [Self <: PageElementProperties](x: Self) {
         
-        @scala.inline
-        def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
+        inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
+        inline def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
         
-        @scala.inline
-        def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+        inline def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+        inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       }
     }
     
@@ -6591,26 +5999,20 @@ object Slides {
     }
     object PageProperties {
       
-      @scala.inline
-      def apply(): PageProperties = {
+      inline def apply(): PageProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PageProperties]
       }
       
-      @scala.inline
-      implicit class PagePropertiesMutableBuilder[Self <: PageProperties] (val x: Self) extends AnyVal {
+      extension [Self <: PageProperties](x: Self) {
         
-        @scala.inline
-        def setColorScheme(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+        inline def setColorScheme(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+        inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
         
-        @scala.inline
-        def setPageBackgroundFill(value: PageBackgroundFill): Self = StObject.set(x, "pageBackgroundFill", value.asInstanceOf[js.Any])
+        inline def setPageBackgroundFill(value: PageBackgroundFill): Self = StObject.set(x, "pageBackgroundFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageBackgroundFillUndefined: Self = StObject.set(x, "pageBackgroundFill", js.undefined)
+        inline def setPageBackgroundFillUndefined: Self = StObject.set(x, "pageBackgroundFill", js.undefined)
       }
     }
     
@@ -6622,26 +6024,20 @@ object Slides {
     }
     object ParagraphMarker {
       
-      @scala.inline
-      def apply(): ParagraphMarker = {
+      inline def apply(): ParagraphMarker = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParagraphMarker]
       }
       
-      @scala.inline
-      implicit class ParagraphMarkerMutableBuilder[Self <: ParagraphMarker] (val x: Self) extends AnyVal {
+      extension [Self <: ParagraphMarker](x: Self) {
         
-        @scala.inline
-        def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+        inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+        inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
         
-        @scala.inline
-        def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
     
@@ -6667,68 +6063,48 @@ object Slides {
     }
     object ParagraphStyle {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle]
       }
       
-      @scala.inline
-      implicit class ParagraphStyleMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+        inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+        inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
         
-        @scala.inline
-        def setIndentEnd(value: Dimension): Self = StObject.set(x, "indentEnd", value.asInstanceOf[js.Any])
+        inline def setIndentEnd(value: Dimension): Self = StObject.set(x, "indentEnd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentEndUndefined: Self = StObject.set(x, "indentEnd", js.undefined)
+        inline def setIndentEndUndefined: Self = StObject.set(x, "indentEnd", js.undefined)
         
-        @scala.inline
-        def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
+        inline def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
+        inline def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
         
-        @scala.inline
-        def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
+        inline def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
+        inline def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
         
-        @scala.inline
-        def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+        inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
+        inline def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
         
-        @scala.inline
-        def setSpaceAbove(value: Dimension): Self = StObject.set(x, "spaceAbove", value.asInstanceOf[js.Any])
+        inline def setSpaceAbove(value: Dimension): Self = StObject.set(x, "spaceAbove", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceAboveUndefined: Self = StObject.set(x, "spaceAbove", js.undefined)
+        inline def setSpaceAboveUndefined: Self = StObject.set(x, "spaceAbove", js.undefined)
         
-        @scala.inline
-        def setSpaceBelow(value: Dimension): Self = StObject.set(x, "spaceBelow", value.asInstanceOf[js.Any])
+        inline def setSpaceBelow(value: Dimension): Self = StObject.set(x, "spaceBelow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceBelowUndefined: Self = StObject.set(x, "spaceBelow", js.undefined)
+        inline def setSpaceBelowUndefined: Self = StObject.set(x, "spaceBelow", js.undefined)
         
-        @scala.inline
-        def setSpacingMode(value: String): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
+        inline def setSpacingMode(value: String): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingModeUndefined: Self = StObject.set(x, "spacingMode", js.undefined)
+        inline def setSpacingModeUndefined: Self = StObject.set(x, "spacingMode", js.undefined)
       }
     }
     
@@ -6742,32 +6118,24 @@ object Slides {
     }
     object Placeholder {
       
-      @scala.inline
-      def apply(): Placeholder = {
+      inline def apply(): Placeholder = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Placeholder]
       }
       
-      @scala.inline
-      implicit class PlaceholderMutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
+      extension [Self <: Placeholder](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+        inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
         
-        @scala.inline
-        def setParentObjectId(value: String): Self = StObject.set(x, "parentObjectId", value.asInstanceOf[js.Any])
+        inline def setParentObjectId(value: String): Self = StObject.set(x, "parentObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentObjectIdUndefined: Self = StObject.set(x, "parentObjectId", js.undefined)
+        inline def setParentObjectIdUndefined: Self = StObject.set(x, "parentObjectId", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -6793,77 +6161,54 @@ object Slides {
     }
     object Presentation {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation]
       }
       
-      @scala.inline
-      implicit class PresentationMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation](x: Self) {
         
-        @scala.inline
-        def setLayouts(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
+        inline def setLayouts(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutsUndefined: Self = StObject.set(x, "layouts", js.undefined)
+        inline def setLayoutsUndefined: Self = StObject.set(x, "layouts", js.undefined)
         
-        @scala.inline
-        def setLayoutsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "layouts", js.Array(value :_*))
+        inline def setLayoutsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "layouts", js.Array(value :_*))
         
-        @scala.inline
-        def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+        inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+        inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
         
-        @scala.inline
-        def setMasters(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]): Self = StObject.set(x, "masters", value.asInstanceOf[js.Any])
+        inline def setMasters(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]): Self = StObject.set(x, "masters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMastersUndefined: Self = StObject.set(x, "masters", js.undefined)
+        inline def setMastersUndefined: Self = StObject.set(x, "masters", js.undefined)
         
-        @scala.inline
-        def setMastersVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "masters", js.Array(value :_*))
+        inline def setMastersVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "masters", js.Array(value :_*))
         
-        @scala.inline
-        def setNotesMaster(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "notesMaster", value.asInstanceOf[js.Any])
+        inline def setNotesMaster(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "notesMaster", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesMasterUndefined: Self = StObject.set(x, "notesMaster", js.undefined)
+        inline def setNotesMasterUndefined: Self = StObject.set(x, "notesMaster", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
+        inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
+        inline def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
         
-        @scala.inline
-        def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+        inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+        inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
         
-        @scala.inline
-        def setSlides(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+        inline def setSlides(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
+        inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
         
-        @scala.inline
-        def setSlidesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "slides", js.Array(value :_*))
+        inline def setSlidesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page*): Self = StObject.set(x, "slides", js.Array(value :_*))
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -6877,32 +6222,24 @@ object Slides {
     }
     object Range {
       
-      @scala.inline
-      def apply(): Range = {
+      inline def apply(): Range = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Range]
       }
       
-      @scala.inline
-      implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+      extension [Self <: Range](x: Self) {
         
-        @scala.inline
-        def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -6914,29 +6251,22 @@ object Slides {
     }
     object Recolor {
       
-      @scala.inline
-      def apply(): Recolor = {
+      inline def apply(): Recolor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Recolor]
       }
       
-      @scala.inline
-      implicit class RecolorMutableBuilder[Self <: Recolor] (val x: Self) extends AnyVal {
+      extension [Self <: Recolor](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setRecolorStops(value: js.Array[ColorStop]): Self = StObject.set(x, "recolorStops", value.asInstanceOf[js.Any])
+        inline def setRecolorStops(value: js.Array[ColorStop]): Self = StObject.set(x, "recolorStops", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRecolorStopsUndefined: Self = StObject.set(x, "recolorStops", js.undefined)
+        inline def setRecolorStopsUndefined: Self = StObject.set(x, "recolorStops", js.undefined)
         
-        @scala.inline
-        def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value :_*))
+        inline def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value :_*))
       }
     }
     
@@ -6946,20 +6276,16 @@ object Slides {
     }
     object RefreshSheetsChartRequest {
       
-      @scala.inline
-      def apply(): RefreshSheetsChartRequest = {
+      inline def apply(): RefreshSheetsChartRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RefreshSheetsChartRequest]
       }
       
-      @scala.inline
-      implicit class RefreshSheetsChartRequestMutableBuilder[Self <: RefreshSheetsChartRequest] (val x: Self) extends AnyVal {
+      extension [Self <: RefreshSheetsChartRequest](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -6977,47 +6303,34 @@ object Slides {
     }
     object ReplaceAllShapesWithImageRequest {
       
-      @scala.inline
-      def apply(): ReplaceAllShapesWithImageRequest = {
+      inline def apply(): ReplaceAllShapesWithImageRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllShapesWithImageRequest]
       }
       
-      @scala.inline
-      implicit class ReplaceAllShapesWithImageRequestMutableBuilder[Self <: ReplaceAllShapesWithImageRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllShapesWithImageRequest](x: Self) {
         
-        @scala.inline
-        def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+        inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+        inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
         
-        @scala.inline
-        def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
+        inline def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
+        inline def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
         
-        @scala.inline
-        def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+        inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+        inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
         
-        @scala.inline
-        def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
+        inline def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
+        inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
         
-        @scala.inline
-        def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
         
-        @scala.inline
-        def setReplaceMethod(value: String): Self = StObject.set(x, "replaceMethod", value.asInstanceOf[js.Any])
+        inline def setReplaceMethod(value: String): Self = StObject.set(x, "replaceMethod", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceMethodUndefined: Self = StObject.set(x, "replaceMethod", js.undefined)
+        inline def setReplaceMethodUndefined: Self = StObject.set(x, "replaceMethod", js.undefined)
       }
     }
     
@@ -7027,20 +6340,16 @@ object Slides {
     }
     object ReplaceAllShapesWithImageResponse {
       
-      @scala.inline
-      def apply(): ReplaceAllShapesWithImageResponse = {
+      inline def apply(): ReplaceAllShapesWithImageResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllShapesWithImageResponse]
       }
       
-      @scala.inline
-      implicit class ReplaceAllShapesWithImageResponseMutableBuilder[Self <: ReplaceAllShapesWithImageResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllShapesWithImageResponse](x: Self) {
         
-        @scala.inline
-        def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+        inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+        inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
       }
     }
     
@@ -7058,47 +6367,34 @@ object Slides {
     }
     object ReplaceAllShapesWithSheetsChartRequest {
       
-      @scala.inline
-      def apply(): ReplaceAllShapesWithSheetsChartRequest = {
+      inline def apply(): ReplaceAllShapesWithSheetsChartRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllShapesWithSheetsChartRequest]
       }
       
-      @scala.inline
-      implicit class ReplaceAllShapesWithSheetsChartRequestMutableBuilder[Self <: ReplaceAllShapesWithSheetsChartRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllShapesWithSheetsChartRequest](x: Self) {
         
-        @scala.inline
-        def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+        inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+        inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
         
-        @scala.inline
-        def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+        inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+        inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
         
-        @scala.inline
-        def setLinkingMode(value: String): Self = StObject.set(x, "linkingMode", value.asInstanceOf[js.Any])
+        inline def setLinkingMode(value: String): Self = StObject.set(x, "linkingMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkingModeUndefined: Self = StObject.set(x, "linkingMode", js.undefined)
+        inline def setLinkingModeUndefined: Self = StObject.set(x, "linkingMode", js.undefined)
         
-        @scala.inline
-        def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
+        inline def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
+        inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
         
-        @scala.inline
-        def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
         
-        @scala.inline
-        def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+        inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+        inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
       }
     }
     
@@ -7108,20 +6404,16 @@ object Slides {
     }
     object ReplaceAllShapesWithSheetsChartResponse {
       
-      @scala.inline
-      def apply(): ReplaceAllShapesWithSheetsChartResponse = {
+      inline def apply(): ReplaceAllShapesWithSheetsChartResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllShapesWithSheetsChartResponse]
       }
       
-      @scala.inline
-      implicit class ReplaceAllShapesWithSheetsChartResponseMutableBuilder[Self <: ReplaceAllShapesWithSheetsChartResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllShapesWithSheetsChartResponse](x: Self) {
         
-        @scala.inline
-        def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+        inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+        inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
       }
     }
     
@@ -7135,35 +6427,26 @@ object Slides {
     }
     object ReplaceAllTextRequest {
       
-      @scala.inline
-      def apply(): ReplaceAllTextRequest = {
+      inline def apply(): ReplaceAllTextRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllTextRequest]
       }
       
-      @scala.inline
-      implicit class ReplaceAllTextRequestMutableBuilder[Self <: ReplaceAllTextRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllTextRequest](x: Self) {
         
-        @scala.inline
-        def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+        inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+        inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
         
-        @scala.inline
-        def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
+        inline def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
+        inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
         
-        @scala.inline
-        def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+        inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
         
-        @scala.inline
-        def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
+        inline def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
+        inline def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
       }
     }
     
@@ -7173,20 +6456,16 @@ object Slides {
     }
     object ReplaceAllTextResponse {
       
-      @scala.inline
-      def apply(): ReplaceAllTextResponse = {
+      inline def apply(): ReplaceAllTextResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceAllTextResponse]
       }
       
-      @scala.inline
-      implicit class ReplaceAllTextResponseMutableBuilder[Self <: ReplaceAllTextResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceAllTextResponse](x: Self) {
         
-        @scala.inline
-        def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+        inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+        inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
       }
     }
     
@@ -7200,32 +6479,24 @@ object Slides {
     }
     object ReplaceImageRequest {
       
-      @scala.inline
-      def apply(): ReplaceImageRequest = {
+      inline def apply(): ReplaceImageRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReplaceImageRequest]
       }
       
-      @scala.inline
-      implicit class ReplaceImageRequestMutableBuilder[Self <: ReplaceImageRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ReplaceImageRequest](x: Self) {
         
-        @scala.inline
-        def setImageObjectId(value: String): Self = StObject.set(x, "imageObjectId", value.asInstanceOf[js.Any])
+        inline def setImageObjectId(value: String): Self = StObject.set(x, "imageObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageObjectIdUndefined: Self = StObject.set(x, "imageObjectId", js.undefined)
+        inline def setImageObjectIdUndefined: Self = StObject.set(x, "imageObjectId", js.undefined)
         
-        @scala.inline
-        def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
+        inline def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
+        inline def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -7319,272 +6590,184 @@ object Slides {
     }
     object Request {
       
-      @scala.inline
-      def apply(): Request = {
+      inline def apply(): Request = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setCreateImage(value: CreateImageRequest): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
+        inline def setCreateImage(value: CreateImageRequest): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateImageUndefined: Self = StObject.set(x, "createImage", js.undefined)
+        inline def setCreateImageUndefined: Self = StObject.set(x, "createImage", js.undefined)
         
-        @scala.inline
-        def setCreateLine(value: CreateLineRequest): Self = StObject.set(x, "createLine", value.asInstanceOf[js.Any])
+        inline def setCreateLine(value: CreateLineRequest): Self = StObject.set(x, "createLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateLineUndefined: Self = StObject.set(x, "createLine", js.undefined)
+        inline def setCreateLineUndefined: Self = StObject.set(x, "createLine", js.undefined)
         
-        @scala.inline
-        def setCreateParagraphBullets(value: CreateParagraphBulletsRequest): Self = StObject.set(x, "createParagraphBullets", value.asInstanceOf[js.Any])
+        inline def setCreateParagraphBullets(value: CreateParagraphBulletsRequest): Self = StObject.set(x, "createParagraphBullets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateParagraphBulletsUndefined: Self = StObject.set(x, "createParagraphBullets", js.undefined)
+        inline def setCreateParagraphBulletsUndefined: Self = StObject.set(x, "createParagraphBullets", js.undefined)
         
-        @scala.inline
-        def setCreateShape(value: CreateShapeRequest): Self = StObject.set(x, "createShape", value.asInstanceOf[js.Any])
+        inline def setCreateShape(value: CreateShapeRequest): Self = StObject.set(x, "createShape", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateShapeUndefined: Self = StObject.set(x, "createShape", js.undefined)
+        inline def setCreateShapeUndefined: Self = StObject.set(x, "createShape", js.undefined)
         
-        @scala.inline
-        def setCreateSheetsChart(value: CreateSheetsChartRequest): Self = StObject.set(x, "createSheetsChart", value.asInstanceOf[js.Any])
+        inline def setCreateSheetsChart(value: CreateSheetsChartRequest): Self = StObject.set(x, "createSheetsChart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateSheetsChartUndefined: Self = StObject.set(x, "createSheetsChart", js.undefined)
+        inline def setCreateSheetsChartUndefined: Self = StObject.set(x, "createSheetsChart", js.undefined)
         
-        @scala.inline
-        def setCreateSlide(value: CreateSlideRequest): Self = StObject.set(x, "createSlide", value.asInstanceOf[js.Any])
+        inline def setCreateSlide(value: CreateSlideRequest): Self = StObject.set(x, "createSlide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateSlideUndefined: Self = StObject.set(x, "createSlide", js.undefined)
+        inline def setCreateSlideUndefined: Self = StObject.set(x, "createSlide", js.undefined)
         
-        @scala.inline
-        def setCreateTable(value: CreateTableRequest): Self = StObject.set(x, "createTable", value.asInstanceOf[js.Any])
+        inline def setCreateTable(value: CreateTableRequest): Self = StObject.set(x, "createTable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateTableUndefined: Self = StObject.set(x, "createTable", js.undefined)
+        inline def setCreateTableUndefined: Self = StObject.set(x, "createTable", js.undefined)
         
-        @scala.inline
-        def setCreateVideo(value: CreateVideoRequest): Self = StObject.set(x, "createVideo", value.asInstanceOf[js.Any])
+        inline def setCreateVideo(value: CreateVideoRequest): Self = StObject.set(x, "createVideo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateVideoUndefined: Self = StObject.set(x, "createVideo", js.undefined)
+        inline def setCreateVideoUndefined: Self = StObject.set(x, "createVideo", js.undefined)
         
-        @scala.inline
-        def setDeleteObject(value: DeleteObjectRequest): Self = StObject.set(x, "deleteObject", value.asInstanceOf[js.Any])
+        inline def setDeleteObject(value: DeleteObjectRequest): Self = StObject.set(x, "deleteObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteObjectUndefined: Self = StObject.set(x, "deleteObject", js.undefined)
+        inline def setDeleteObjectUndefined: Self = StObject.set(x, "deleteObject", js.undefined)
         
-        @scala.inline
-        def setDeleteParagraphBullets(value: DeleteParagraphBulletsRequest): Self = StObject.set(x, "deleteParagraphBullets", value.asInstanceOf[js.Any])
+        inline def setDeleteParagraphBullets(value: DeleteParagraphBulletsRequest): Self = StObject.set(x, "deleteParagraphBullets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteParagraphBulletsUndefined: Self = StObject.set(x, "deleteParagraphBullets", js.undefined)
+        inline def setDeleteParagraphBulletsUndefined: Self = StObject.set(x, "deleteParagraphBullets", js.undefined)
         
-        @scala.inline
-        def setDeleteTableColumn(value: DeleteTableColumnRequest): Self = StObject.set(x, "deleteTableColumn", value.asInstanceOf[js.Any])
+        inline def setDeleteTableColumn(value: DeleteTableColumnRequest): Self = StObject.set(x, "deleteTableColumn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteTableColumnUndefined: Self = StObject.set(x, "deleteTableColumn", js.undefined)
+        inline def setDeleteTableColumnUndefined: Self = StObject.set(x, "deleteTableColumn", js.undefined)
         
-        @scala.inline
-        def setDeleteTableRow(value: DeleteTableRowRequest): Self = StObject.set(x, "deleteTableRow", value.asInstanceOf[js.Any])
+        inline def setDeleteTableRow(value: DeleteTableRowRequest): Self = StObject.set(x, "deleteTableRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteTableRowUndefined: Self = StObject.set(x, "deleteTableRow", js.undefined)
+        inline def setDeleteTableRowUndefined: Self = StObject.set(x, "deleteTableRow", js.undefined)
         
-        @scala.inline
-        def setDeleteText(value: DeleteTextRequest): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
+        inline def setDeleteText(value: DeleteTextRequest): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteTextUndefined: Self = StObject.set(x, "deleteText", js.undefined)
+        inline def setDeleteTextUndefined: Self = StObject.set(x, "deleteText", js.undefined)
         
-        @scala.inline
-        def setDuplicateObject(value: DuplicateObjectRequest): Self = StObject.set(x, "duplicateObject", value.asInstanceOf[js.Any])
+        inline def setDuplicateObject(value: DuplicateObjectRequest): Self = StObject.set(x, "duplicateObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDuplicateObjectUndefined: Self = StObject.set(x, "duplicateObject", js.undefined)
+        inline def setDuplicateObjectUndefined: Self = StObject.set(x, "duplicateObject", js.undefined)
         
-        @scala.inline
-        def setGroupObjects(value: GroupObjectsRequest): Self = StObject.set(x, "groupObjects", value.asInstanceOf[js.Any])
+        inline def setGroupObjects(value: GroupObjectsRequest): Self = StObject.set(x, "groupObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupObjectsUndefined: Self = StObject.set(x, "groupObjects", js.undefined)
+        inline def setGroupObjectsUndefined: Self = StObject.set(x, "groupObjects", js.undefined)
         
-        @scala.inline
-        def setInsertTableColumns(value: InsertTableColumnsRequest): Self = StObject.set(x, "insertTableColumns", value.asInstanceOf[js.Any])
+        inline def setInsertTableColumns(value: InsertTableColumnsRequest): Self = StObject.set(x, "insertTableColumns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertTableColumnsUndefined: Self = StObject.set(x, "insertTableColumns", js.undefined)
+        inline def setInsertTableColumnsUndefined: Self = StObject.set(x, "insertTableColumns", js.undefined)
         
-        @scala.inline
-        def setInsertTableRows(value: InsertTableRowsRequest): Self = StObject.set(x, "insertTableRows", value.asInstanceOf[js.Any])
+        inline def setInsertTableRows(value: InsertTableRowsRequest): Self = StObject.set(x, "insertTableRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertTableRowsUndefined: Self = StObject.set(x, "insertTableRows", js.undefined)
+        inline def setInsertTableRowsUndefined: Self = StObject.set(x, "insertTableRows", js.undefined)
         
-        @scala.inline
-        def setInsertText(value: InsertTextRequest): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+        inline def setInsertText(value: InsertTextRequest): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+        inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
         
-        @scala.inline
-        def setMergeTableCells(value: MergeTableCellsRequest): Self = StObject.set(x, "mergeTableCells", value.asInstanceOf[js.Any])
+        inline def setMergeTableCells(value: MergeTableCellsRequest): Self = StObject.set(x, "mergeTableCells", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeTableCellsUndefined: Self = StObject.set(x, "mergeTableCells", js.undefined)
+        inline def setMergeTableCellsUndefined: Self = StObject.set(x, "mergeTableCells", js.undefined)
         
-        @scala.inline
-        def setRefreshSheetsChart(value: RefreshSheetsChartRequest): Self = StObject.set(x, "refreshSheetsChart", value.asInstanceOf[js.Any])
+        inline def setRefreshSheetsChart(value: RefreshSheetsChartRequest): Self = StObject.set(x, "refreshSheetsChart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRefreshSheetsChartUndefined: Self = StObject.set(x, "refreshSheetsChart", js.undefined)
+        inline def setRefreshSheetsChartUndefined: Self = StObject.set(x, "refreshSheetsChart", js.undefined)
         
-        @scala.inline
-        def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageRequest): Self = StObject.set(x, "replaceAllShapesWithImage", value.asInstanceOf[js.Any])
+        inline def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageRequest): Self = StObject.set(x, "replaceAllShapesWithImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllShapesWithImageUndefined: Self = StObject.set(x, "replaceAllShapesWithImage", js.undefined)
+        inline def setReplaceAllShapesWithImageUndefined: Self = StObject.set(x, "replaceAllShapesWithImage", js.undefined)
         
-        @scala.inline
-        def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartRequest): Self = StObject.set(x, "replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
+        inline def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartRequest): Self = StObject.set(x, "replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllShapesWithSheetsChartUndefined: Self = StObject.set(x, "replaceAllShapesWithSheetsChart", js.undefined)
+        inline def setReplaceAllShapesWithSheetsChartUndefined: Self = StObject.set(x, "replaceAllShapesWithSheetsChart", js.undefined)
         
-        @scala.inline
-        def setReplaceAllText(value: ReplaceAllTextRequest): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
+        inline def setReplaceAllText(value: ReplaceAllTextRequest): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
+        inline def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
         
-        @scala.inline
-        def setReplaceImage(value: ReplaceImageRequest): Self = StObject.set(x, "replaceImage", value.asInstanceOf[js.Any])
+        inline def setReplaceImage(value: ReplaceImageRequest): Self = StObject.set(x, "replaceImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceImageUndefined: Self = StObject.set(x, "replaceImage", js.undefined)
+        inline def setReplaceImageUndefined: Self = StObject.set(x, "replaceImage", js.undefined)
         
-        @scala.inline
-        def setRerouteLine(value: RerouteLineRequest): Self = StObject.set(x, "rerouteLine", value.asInstanceOf[js.Any])
+        inline def setRerouteLine(value: RerouteLineRequest): Self = StObject.set(x, "rerouteLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRerouteLineUndefined: Self = StObject.set(x, "rerouteLine", js.undefined)
+        inline def setRerouteLineUndefined: Self = StObject.set(x, "rerouteLine", js.undefined)
         
-        @scala.inline
-        def setUngroupObjects(value: UngroupObjectsRequest): Self = StObject.set(x, "ungroupObjects", value.asInstanceOf[js.Any])
+        inline def setUngroupObjects(value: UngroupObjectsRequest): Self = StObject.set(x, "ungroupObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUngroupObjectsUndefined: Self = StObject.set(x, "ungroupObjects", js.undefined)
+        inline def setUngroupObjectsUndefined: Self = StObject.set(x, "ungroupObjects", js.undefined)
         
-        @scala.inline
-        def setUnmergeTableCells(value: UnmergeTableCellsRequest): Self = StObject.set(x, "unmergeTableCells", value.asInstanceOf[js.Any])
+        inline def setUnmergeTableCells(value: UnmergeTableCellsRequest): Self = StObject.set(x, "unmergeTableCells", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnmergeTableCellsUndefined: Self = StObject.set(x, "unmergeTableCells", js.undefined)
+        inline def setUnmergeTableCellsUndefined: Self = StObject.set(x, "unmergeTableCells", js.undefined)
         
-        @scala.inline
-        def setUpdateImageProperties(value: UpdateImagePropertiesRequest): Self = StObject.set(x, "updateImageProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateImageProperties(value: UpdateImagePropertiesRequest): Self = StObject.set(x, "updateImageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateImagePropertiesUndefined: Self = StObject.set(x, "updateImageProperties", js.undefined)
+        inline def setUpdateImagePropertiesUndefined: Self = StObject.set(x, "updateImageProperties", js.undefined)
         
-        @scala.inline
-        def setUpdateLineCategory(value: UpdateLineCategoryRequest): Self = StObject.set(x, "updateLineCategory", value.asInstanceOf[js.Any])
+        inline def setUpdateLineCategory(value: UpdateLineCategoryRequest): Self = StObject.set(x, "updateLineCategory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateLineCategoryUndefined: Self = StObject.set(x, "updateLineCategory", js.undefined)
+        inline def setUpdateLineCategoryUndefined: Self = StObject.set(x, "updateLineCategory", js.undefined)
         
-        @scala.inline
-        def setUpdateLineProperties(value: UpdateLinePropertiesRequest): Self = StObject.set(x, "updateLineProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateLineProperties(value: UpdateLinePropertiesRequest): Self = StObject.set(x, "updateLineProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateLinePropertiesUndefined: Self = StObject.set(x, "updateLineProperties", js.undefined)
+        inline def setUpdateLinePropertiesUndefined: Self = StObject.set(x, "updateLineProperties", js.undefined)
         
-        @scala.inline
-        def setUpdatePageElementAltText(value: UpdatePageElementAltTextRequest): Self = StObject.set(x, "updatePageElementAltText", value.asInstanceOf[js.Any])
+        inline def setUpdatePageElementAltText(value: UpdatePageElementAltTextRequest): Self = StObject.set(x, "updatePageElementAltText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdatePageElementAltTextUndefined: Self = StObject.set(x, "updatePageElementAltText", js.undefined)
+        inline def setUpdatePageElementAltTextUndefined: Self = StObject.set(x, "updatePageElementAltText", js.undefined)
         
-        @scala.inline
-        def setUpdatePageElementTransform(value: UpdatePageElementTransformRequest): Self = StObject.set(x, "updatePageElementTransform", value.asInstanceOf[js.Any])
+        inline def setUpdatePageElementTransform(value: UpdatePageElementTransformRequest): Self = StObject.set(x, "updatePageElementTransform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdatePageElementTransformUndefined: Self = StObject.set(x, "updatePageElementTransform", js.undefined)
+        inline def setUpdatePageElementTransformUndefined: Self = StObject.set(x, "updatePageElementTransform", js.undefined)
         
-        @scala.inline
-        def setUpdatePageElementsZOrder(value: UpdatePageElementsZOrderRequest): Self = StObject.set(x, "updatePageElementsZOrder", value.asInstanceOf[js.Any])
+        inline def setUpdatePageElementsZOrder(value: UpdatePageElementsZOrderRequest): Self = StObject.set(x, "updatePageElementsZOrder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdatePageElementsZOrderUndefined: Self = StObject.set(x, "updatePageElementsZOrder", js.undefined)
+        inline def setUpdatePageElementsZOrderUndefined: Self = StObject.set(x, "updatePageElementsZOrder", js.undefined)
         
-        @scala.inline
-        def setUpdatePageProperties(value: UpdatePagePropertiesRequest): Self = StObject.set(x, "updatePageProperties", value.asInstanceOf[js.Any])
+        inline def setUpdatePageProperties(value: UpdatePagePropertiesRequest): Self = StObject.set(x, "updatePageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdatePagePropertiesUndefined: Self = StObject.set(x, "updatePageProperties", js.undefined)
+        inline def setUpdatePagePropertiesUndefined: Self = StObject.set(x, "updatePageProperties", js.undefined)
         
-        @scala.inline
-        def setUpdateParagraphStyle(value: UpdateParagraphStyleRequest): Self = StObject.set(x, "updateParagraphStyle", value.asInstanceOf[js.Any])
+        inline def setUpdateParagraphStyle(value: UpdateParagraphStyleRequest): Self = StObject.set(x, "updateParagraphStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateParagraphStyleUndefined: Self = StObject.set(x, "updateParagraphStyle", js.undefined)
+        inline def setUpdateParagraphStyleUndefined: Self = StObject.set(x, "updateParagraphStyle", js.undefined)
         
-        @scala.inline
-        def setUpdateShapeProperties(value: UpdateShapePropertiesRequest): Self = StObject.set(x, "updateShapeProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateShapeProperties(value: UpdateShapePropertiesRequest): Self = StObject.set(x, "updateShapeProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateShapePropertiesUndefined: Self = StObject.set(x, "updateShapeProperties", js.undefined)
+        inline def setUpdateShapePropertiesUndefined: Self = StObject.set(x, "updateShapeProperties", js.undefined)
         
-        @scala.inline
-        def setUpdateSlidesPosition(value: UpdateSlidesPositionRequest): Self = StObject.set(x, "updateSlidesPosition", value.asInstanceOf[js.Any])
+        inline def setUpdateSlidesPosition(value: UpdateSlidesPositionRequest): Self = StObject.set(x, "updateSlidesPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateSlidesPositionUndefined: Self = StObject.set(x, "updateSlidesPosition", js.undefined)
+        inline def setUpdateSlidesPositionUndefined: Self = StObject.set(x, "updateSlidesPosition", js.undefined)
         
-        @scala.inline
-        def setUpdateTableBorderProperties(value: UpdateTableBorderPropertiesRequest): Self = StObject.set(x, "updateTableBorderProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateTableBorderProperties(value: UpdateTableBorderPropertiesRequest): Self = StObject.set(x, "updateTableBorderProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTableBorderPropertiesUndefined: Self = StObject.set(x, "updateTableBorderProperties", js.undefined)
+        inline def setUpdateTableBorderPropertiesUndefined: Self = StObject.set(x, "updateTableBorderProperties", js.undefined)
         
-        @scala.inline
-        def setUpdateTableCellProperties(value: UpdateTableCellPropertiesRequest): Self = StObject.set(x, "updateTableCellProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateTableCellProperties(value: UpdateTableCellPropertiesRequest): Self = StObject.set(x, "updateTableCellProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTableCellPropertiesUndefined: Self = StObject.set(x, "updateTableCellProperties", js.undefined)
+        inline def setUpdateTableCellPropertiesUndefined: Self = StObject.set(x, "updateTableCellProperties", js.undefined)
         
-        @scala.inline
-        def setUpdateTableColumnProperties(value: UpdateTableColumnPropertiesRequest): Self = StObject.set(x, "updateTableColumnProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateTableColumnProperties(value: UpdateTableColumnPropertiesRequest): Self = StObject.set(x, "updateTableColumnProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTableColumnPropertiesUndefined: Self = StObject.set(x, "updateTableColumnProperties", js.undefined)
+        inline def setUpdateTableColumnPropertiesUndefined: Self = StObject.set(x, "updateTableColumnProperties", js.undefined)
         
-        @scala.inline
-        def setUpdateTableRowProperties(value: UpdateTableRowPropertiesRequest): Self = StObject.set(x, "updateTableRowProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateTableRowProperties(value: UpdateTableRowPropertiesRequest): Self = StObject.set(x, "updateTableRowProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTableRowPropertiesUndefined: Self = StObject.set(x, "updateTableRowProperties", js.undefined)
+        inline def setUpdateTableRowPropertiesUndefined: Self = StObject.set(x, "updateTableRowProperties", js.undefined)
         
-        @scala.inline
-        def setUpdateTextStyle(value: UpdateTextStyleRequest): Self = StObject.set(x, "updateTextStyle", value.asInstanceOf[js.Any])
+        inline def setUpdateTextStyle(value: UpdateTextStyleRequest): Self = StObject.set(x, "updateTextStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateTextStyleUndefined: Self = StObject.set(x, "updateTextStyle", js.undefined)
+        inline def setUpdateTextStyleUndefined: Self = StObject.set(x, "updateTextStyle", js.undefined)
         
-        @scala.inline
-        def setUpdateVideoProperties(value: UpdateVideoPropertiesRequest): Self = StObject.set(x, "updateVideoProperties", value.asInstanceOf[js.Any])
+        inline def setUpdateVideoProperties(value: UpdateVideoPropertiesRequest): Self = StObject.set(x, "updateVideoProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateVideoPropertiesUndefined: Self = StObject.set(x, "updateVideoProperties", js.undefined)
+        inline def setUpdateVideoPropertiesUndefined: Self = StObject.set(x, "updateVideoProperties", js.undefined)
       }
     }
     
@@ -7594,20 +6777,16 @@ object Slides {
     }
     object RerouteLineRequest {
       
-      @scala.inline
-      def apply(): RerouteLineRequest = {
+      inline def apply(): RerouteLineRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RerouteLineRequest]
       }
       
-      @scala.inline
-      implicit class RerouteLineRequestMutableBuilder[Self <: RerouteLineRequest] (val x: Self) extends AnyVal {
+      extension [Self <: RerouteLineRequest](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -7639,86 +6818,60 @@ object Slides {
     }
     object Response {
       
-      @scala.inline
-      def apply(): Response = {
+      inline def apply(): Response = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Response]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+      extension [Self <: Response](x: Self) {
         
-        @scala.inline
-        def setCreateImage(value: CreateImageResponse): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
+        inline def setCreateImage(value: CreateImageResponse): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateImageUndefined: Self = StObject.set(x, "createImage", js.undefined)
+        inline def setCreateImageUndefined: Self = StObject.set(x, "createImage", js.undefined)
         
-        @scala.inline
-        def setCreateLine(value: CreateLineResponse): Self = StObject.set(x, "createLine", value.asInstanceOf[js.Any])
+        inline def setCreateLine(value: CreateLineResponse): Self = StObject.set(x, "createLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateLineUndefined: Self = StObject.set(x, "createLine", js.undefined)
+        inline def setCreateLineUndefined: Self = StObject.set(x, "createLine", js.undefined)
         
-        @scala.inline
-        def setCreateShape(value: CreateShapeResponse): Self = StObject.set(x, "createShape", value.asInstanceOf[js.Any])
+        inline def setCreateShape(value: CreateShapeResponse): Self = StObject.set(x, "createShape", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateShapeUndefined: Self = StObject.set(x, "createShape", js.undefined)
+        inline def setCreateShapeUndefined: Self = StObject.set(x, "createShape", js.undefined)
         
-        @scala.inline
-        def setCreateSheetsChart(value: CreateSheetsChartResponse): Self = StObject.set(x, "createSheetsChart", value.asInstanceOf[js.Any])
+        inline def setCreateSheetsChart(value: CreateSheetsChartResponse): Self = StObject.set(x, "createSheetsChart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateSheetsChartUndefined: Self = StObject.set(x, "createSheetsChart", js.undefined)
+        inline def setCreateSheetsChartUndefined: Self = StObject.set(x, "createSheetsChart", js.undefined)
         
-        @scala.inline
-        def setCreateSlide(value: CreateSlideResponse): Self = StObject.set(x, "createSlide", value.asInstanceOf[js.Any])
+        inline def setCreateSlide(value: CreateSlideResponse): Self = StObject.set(x, "createSlide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateSlideUndefined: Self = StObject.set(x, "createSlide", js.undefined)
+        inline def setCreateSlideUndefined: Self = StObject.set(x, "createSlide", js.undefined)
         
-        @scala.inline
-        def setCreateTable(value: CreateTableResponse): Self = StObject.set(x, "createTable", value.asInstanceOf[js.Any])
+        inline def setCreateTable(value: CreateTableResponse): Self = StObject.set(x, "createTable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateTableUndefined: Self = StObject.set(x, "createTable", js.undefined)
+        inline def setCreateTableUndefined: Self = StObject.set(x, "createTable", js.undefined)
         
-        @scala.inline
-        def setCreateVideo(value: CreateVideoResponse): Self = StObject.set(x, "createVideo", value.asInstanceOf[js.Any])
+        inline def setCreateVideo(value: CreateVideoResponse): Self = StObject.set(x, "createVideo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateVideoUndefined: Self = StObject.set(x, "createVideo", js.undefined)
+        inline def setCreateVideoUndefined: Self = StObject.set(x, "createVideo", js.undefined)
         
-        @scala.inline
-        def setDuplicateObject(value: DuplicateObjectResponse): Self = StObject.set(x, "duplicateObject", value.asInstanceOf[js.Any])
+        inline def setDuplicateObject(value: DuplicateObjectResponse): Self = StObject.set(x, "duplicateObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDuplicateObjectUndefined: Self = StObject.set(x, "duplicateObject", js.undefined)
+        inline def setDuplicateObjectUndefined: Self = StObject.set(x, "duplicateObject", js.undefined)
         
-        @scala.inline
-        def setGroupObjects(value: GroupObjectsResponse): Self = StObject.set(x, "groupObjects", value.asInstanceOf[js.Any])
+        inline def setGroupObjects(value: GroupObjectsResponse): Self = StObject.set(x, "groupObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupObjectsUndefined: Self = StObject.set(x, "groupObjects", js.undefined)
+        inline def setGroupObjectsUndefined: Self = StObject.set(x, "groupObjects", js.undefined)
         
-        @scala.inline
-        def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageResponse): Self = StObject.set(x, "replaceAllShapesWithImage", value.asInstanceOf[js.Any])
+        inline def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageResponse): Self = StObject.set(x, "replaceAllShapesWithImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllShapesWithImageUndefined: Self = StObject.set(x, "replaceAllShapesWithImage", js.undefined)
+        inline def setReplaceAllShapesWithImageUndefined: Self = StObject.set(x, "replaceAllShapesWithImage", js.undefined)
         
-        @scala.inline
-        def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartResponse): Self = StObject.set(x, "replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
+        inline def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartResponse): Self = StObject.set(x, "replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllShapesWithSheetsChartUndefined: Self = StObject.set(x, "replaceAllShapesWithSheetsChart", js.undefined)
+        inline def setReplaceAllShapesWithSheetsChartUndefined: Self = StObject.set(x, "replaceAllShapesWithSheetsChart", js.undefined)
         
-        @scala.inline
-        def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
+        inline def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
+        inline def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
       }
     }
     
@@ -7732,32 +6885,24 @@ object Slides {
     }
     object RgbColor {
       
-      @scala.inline
-      def apply(): RgbColor = {
+      inline def apply(): RgbColor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RgbColor]
       }
       
-      @scala.inline
-      implicit class RgbColorMutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
+      extension [Self <: RgbColor](x: Self) {
         
-        @scala.inline
-        def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+        inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
+        inline def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
         
-        @scala.inline
-        def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+        inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
+        inline def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
         
-        @scala.inline
-        def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+        inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
+        inline def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
       }
     }
     
@@ -7781,62 +6926,44 @@ object Slides {
     }
     object Shadow {
       
-      @scala.inline
-      def apply(): Shadow = {
+      inline def apply(): Shadow = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Shadow]
       }
       
-      @scala.inline
-      implicit class ShadowMutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
+      extension [Self <: Shadow](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+        inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+        inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
         
-        @scala.inline
-        def setBlurRadius(value: Dimension): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+        inline def setBlurRadius(value: Dimension): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
+        inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
         
-        @scala.inline
-        def setColor(value: OpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: OpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+        inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+        inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
         
-        @scala.inline
-        def setRotateWithShape(value: Boolean): Self = StObject.set(x, "rotateWithShape", value.asInstanceOf[js.Any])
+        inline def setRotateWithShape(value: Boolean): Self = StObject.set(x, "rotateWithShape", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRotateWithShapeUndefined: Self = StObject.set(x, "rotateWithShape", js.undefined)
+        inline def setRotateWithShapeUndefined: Self = StObject.set(x, "rotateWithShape", js.undefined)
         
-        @scala.inline
-        def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+        inline def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+        inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -7852,38 +6979,28 @@ object Slides {
     }
     object Shape {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape]
       }
       
-      @scala.inline
-      implicit class ShapeMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape](x: Self) {
         
-        @scala.inline
-        def setPlaceholder(value: Placeholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+        inline def setPlaceholder(value: Placeholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+        inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
         
-        @scala.inline
-        def setShapeProperties(value: ShapeProperties): Self = StObject.set(x, "shapeProperties", value.asInstanceOf[js.Any])
+        inline def setShapeProperties(value: ShapeProperties): Self = StObject.set(x, "shapeProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShapePropertiesUndefined: Self = StObject.set(x, "shapeProperties", js.undefined)
+        inline def setShapePropertiesUndefined: Self = StObject.set(x, "shapeProperties", js.undefined)
         
-        @scala.inline
-        def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
+        inline def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
+        inline def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
         
-        @scala.inline
-        def setText(value: TextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: TextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -7895,26 +7012,20 @@ object Slides {
     }
     object ShapeBackgroundFill {
       
-      @scala.inline
-      def apply(): ShapeBackgroundFill = {
+      inline def apply(): ShapeBackgroundFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ShapeBackgroundFill]
       }
       
-      @scala.inline
-      implicit class ShapeBackgroundFillMutableBuilder[Self <: ShapeBackgroundFill] (val x: Self) extends AnyVal {
+      extension [Self <: ShapeBackgroundFill](x: Self) {
         
-        @scala.inline
-        def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+        inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+        inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
         
-        @scala.inline
-        def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+        inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+        inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
       }
     }
     
@@ -7932,44 +7043,32 @@ object Slides {
     }
     object ShapeProperties {
       
-      @scala.inline
-      def apply(): ShapeProperties = {
+      inline def apply(): ShapeProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ShapeProperties]
       }
       
-      @scala.inline
-      implicit class ShapePropertiesMutableBuilder[Self <: ShapeProperties] (val x: Self) extends AnyVal {
+      extension [Self <: ShapeProperties](x: Self) {
         
-        @scala.inline
-        def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+        inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
+        inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
         
-        @scala.inline
-        def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+        inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
         
-        @scala.inline
-        def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+        inline def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+        inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
         
-        @scala.inline
-        def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+        inline def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+        inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
         
-        @scala.inline
-        def setShapeBackgroundFill(value: ShapeBackgroundFill): Self = StObject.set(x, "shapeBackgroundFill", value.asInstanceOf[js.Any])
+        inline def setShapeBackgroundFill(value: ShapeBackgroundFill): Self = StObject.set(x, "shapeBackgroundFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShapeBackgroundFillUndefined: Self = StObject.set(x, "shapeBackgroundFill", js.undefined)
+        inline def setShapeBackgroundFillUndefined: Self = StObject.set(x, "shapeBackgroundFill", js.undefined)
       }
     }
     
@@ -7985,38 +7084,28 @@ object Slides {
     }
     object SheetsChart {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart]
       }
       
-      @scala.inline
-      implicit class SheetsChartMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart](x: Self) {
         
-        @scala.inline
-        def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+        inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+        inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
         
-        @scala.inline
-        def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+        inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+        inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
         
-        @scala.inline
-        def setSheetsChartProperties(value: SheetsChartProperties): Self = StObject.set(x, "sheetsChartProperties", value.asInstanceOf[js.Any])
+        inline def setSheetsChartProperties(value: SheetsChartProperties): Self = StObject.set(x, "sheetsChartProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSheetsChartPropertiesUndefined: Self = StObject.set(x, "sheetsChartProperties", js.undefined)
+        inline def setSheetsChartPropertiesUndefined: Self = StObject.set(x, "sheetsChartProperties", js.undefined)
         
-        @scala.inline
-        def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+        inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+        inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
       }
     }
     
@@ -8026,20 +7115,16 @@ object Slides {
     }
     object SheetsChartProperties {
       
-      @scala.inline
-      def apply(): SheetsChartProperties = {
+      inline def apply(): SheetsChartProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SheetsChartProperties]
       }
       
-      @scala.inline
-      implicit class SheetsChartPropertiesMutableBuilder[Self <: SheetsChartProperties] (val x: Self) extends AnyVal {
+      extension [Self <: SheetsChartProperties](x: Self) {
         
-        @scala.inline
-        def setChartImageProperties(value: ImageProperties): Self = StObject.set(x, "chartImageProperties", value.asInstanceOf[js.Any])
+        inline def setChartImageProperties(value: ImageProperties): Self = StObject.set(x, "chartImageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChartImagePropertiesUndefined: Self = StObject.set(x, "chartImageProperties", js.undefined)
+        inline def setChartImagePropertiesUndefined: Self = StObject.set(x, "chartImageProperties", js.undefined)
       }
     }
     
@@ -8051,26 +7136,20 @@ object Slides {
     }
     object Size {
       
-      @scala.inline
-      def apply(): Size = {
+      inline def apply(): Size = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Size]
       }
       
-      @scala.inline
-      implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+      extension [Self <: Size](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Dimension): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Dimension): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -8084,32 +7163,24 @@ object Slides {
     }
     object SlideProperties {
       
-      @scala.inline
-      def apply(): SlideProperties = {
+      inline def apply(): SlideProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SlideProperties]
       }
       
-      @scala.inline
-      implicit class SlidePropertiesMutableBuilder[Self <: SlideProperties] (val x: Self) extends AnyVal {
+      extension [Self <: SlideProperties](x: Self) {
         
-        @scala.inline
-        def setLayoutObjectId(value: String): Self = StObject.set(x, "layoutObjectId", value.asInstanceOf[js.Any])
+        inline def setLayoutObjectId(value: String): Self = StObject.set(x, "layoutObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutObjectIdUndefined: Self = StObject.set(x, "layoutObjectId", js.undefined)
+        inline def setLayoutObjectIdUndefined: Self = StObject.set(x, "layoutObjectId", js.undefined)
         
-        @scala.inline
-        def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
+        inline def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
+        inline def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
         
-        @scala.inline
-        def setNotesPage(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "notesPage", value.asInstanceOf[js.Any])
+        inline def setNotesPage(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "notesPage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesPageUndefined: Self = StObject.set(x, "notesPage", js.undefined)
+        inline def setNotesPageUndefined: Self = StObject.set(x, "notesPage", js.undefined)
       }
     }
     
@@ -8121,26 +7192,20 @@ object Slides {
     }
     object SolidFill {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill]
       }
       
-      @scala.inline
-      implicit class SolidFillMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill](x: Self) {
         
-        @scala.inline
-        def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+        inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+        inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
         
-        @scala.inline
-        def setColor(value: OpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: OpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       }
     }
     
@@ -8152,26 +7217,20 @@ object Slides {
     }
     object StretchedPictureFill {
       
-      @scala.inline
-      def apply(): StretchedPictureFill = {
+      inline def apply(): StretchedPictureFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StretchedPictureFill]
       }
       
-      @scala.inline
-      implicit class StretchedPictureFillMutableBuilder[Self <: StretchedPictureFill] (val x: Self) extends AnyVal {
+      extension [Self <: StretchedPictureFill](x: Self) {
         
-        @scala.inline
-        def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+        inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+        inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
         
-        @scala.inline
-        def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       }
     }
     
@@ -8183,26 +7242,20 @@ object Slides {
     }
     object SubstringMatchCriteria {
       
-      @scala.inline
-      def apply(): SubstringMatchCriteria = {
+      inline def apply(): SubstringMatchCriteria = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SubstringMatchCriteria]
       }
       
-      @scala.inline
-      implicit class SubstringMatchCriteriaMutableBuilder[Self <: SubstringMatchCriteria] (val x: Self) extends AnyVal {
+      extension [Self <: SubstringMatchCriteria](x: Self) {
         
-        @scala.inline
-        def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+        inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+        inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -8222,62 +7275,44 @@ object Slides {
     }
     object Table {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table]
       }
       
-      @scala.inline
-      implicit class TableMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table](x: Self) {
         
-        @scala.inline
-        def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+        inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
         
-        @scala.inline
-        def setHorizontalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "horizontalBorderRows", value.asInstanceOf[js.Any])
+        inline def setHorizontalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "horizontalBorderRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalBorderRowsUndefined: Self = StObject.set(x, "horizontalBorderRows", js.undefined)
+        inline def setHorizontalBorderRowsUndefined: Self = StObject.set(x, "horizontalBorderRows", js.undefined)
         
-        @scala.inline
-        def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value :_*))
+        inline def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value :_*))
         
-        @scala.inline
-        def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+        inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        @scala.inline
-        def setTableColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumns", value.asInstanceOf[js.Any])
+        inline def setTableColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableColumnsUndefined: Self = StObject.set(x, "tableColumns", js.undefined)
+        inline def setTableColumnsUndefined: Self = StObject.set(x, "tableColumns", js.undefined)
         
-        @scala.inline
-        def setTableColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value :_*))
+        inline def setTableColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value :_*))
         
-        @scala.inline
-        def setTableRows(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
+        inline def setTableRows(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
+        inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
         
-        @scala.inline
-        def setTableRowsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+        inline def setTableRowsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
         
-        @scala.inline
-        def setVerticalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "verticalBorderRows", value.asInstanceOf[js.Any])
+        inline def setVerticalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "verticalBorderRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalBorderRowsUndefined: Self = StObject.set(x, "verticalBorderRows", js.undefined)
+        inline def setVerticalBorderRowsUndefined: Self = StObject.set(x, "verticalBorderRows", js.undefined)
         
-        @scala.inline
-        def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value :_*))
+        inline def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value :_*))
       }
     }
     
@@ -8289,26 +7324,20 @@ object Slides {
     }
     object TableBorderCell {
       
-      @scala.inline
-      def apply(): TableBorderCell = {
+      inline def apply(): TableBorderCell = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableBorderCell]
       }
       
-      @scala.inline
-      implicit class TableBorderCellMutableBuilder[Self <: TableBorderCell] (val x: Self) extends AnyVal {
+      extension [Self <: TableBorderCell](x: Self) {
         
-        @scala.inline
-        def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
         
-        @scala.inline
-        def setTableBorderProperties(value: TableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
+        inline def setTableBorderProperties(value: TableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
+        inline def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
       }
     }
     
@@ -8318,20 +7347,16 @@ object Slides {
     }
     object TableBorderFill {
       
-      @scala.inline
-      def apply(): TableBorderFill = {
+      inline def apply(): TableBorderFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableBorderFill]
       }
       
-      @scala.inline
-      implicit class TableBorderFillMutableBuilder[Self <: TableBorderFill] (val x: Self) extends AnyVal {
+      extension [Self <: TableBorderFill](x: Self) {
         
-        @scala.inline
-        def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+        inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+        inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
       }
     }
     
@@ -8345,32 +7370,24 @@ object Slides {
     }
     object TableBorderProperties {
       
-      @scala.inline
-      def apply(): TableBorderProperties = {
+      inline def apply(): TableBorderProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableBorderProperties]
       }
       
-      @scala.inline
-      implicit class TableBorderPropertiesMutableBuilder[Self <: TableBorderProperties] (val x: Self) extends AnyVal {
+      extension [Self <: TableBorderProperties](x: Self) {
         
-        @scala.inline
-        def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+        inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+        inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
         
-        @scala.inline
-        def setTableBorderFill(value: TableBorderFill): Self = StObject.set(x, "tableBorderFill", value.asInstanceOf[js.Any])
+        inline def setTableBorderFill(value: TableBorderFill): Self = StObject.set(x, "tableBorderFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableBorderFillUndefined: Self = StObject.set(x, "tableBorderFill", js.undefined)
+        inline def setTableBorderFillUndefined: Self = StObject.set(x, "tableBorderFill", js.undefined)
         
-        @scala.inline
-        def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+        inline def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+        inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
       }
     }
     
@@ -8380,23 +7397,18 @@ object Slides {
     }
     object TableBorderRow {
       
-      @scala.inline
-      def apply(): TableBorderRow = {
+      inline def apply(): TableBorderRow = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableBorderRow]
       }
       
-      @scala.inline
-      implicit class TableBorderRowMutableBuilder[Self <: TableBorderRow] (val x: Self) extends AnyVal {
+      extension [Self <: TableBorderRow](x: Self) {
         
-        @scala.inline
-        def setTableBorderCells(value: js.Array[TableBorderCell]): Self = StObject.set(x, "tableBorderCells", value.asInstanceOf[js.Any])
+        inline def setTableBorderCells(value: js.Array[TableBorderCell]): Self = StObject.set(x, "tableBorderCells", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableBorderCellsUndefined: Self = StObject.set(x, "tableBorderCells", js.undefined)
+        inline def setTableBorderCellsUndefined: Self = StObject.set(x, "tableBorderCells", js.undefined)
         
-        @scala.inline
-        def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value :_*))
+        inline def setTableBorderCellsVarargs(value: TableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value :_*))
       }
     }
     
@@ -8414,44 +7426,32 @@ object Slides {
     }
     object TableCell {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell]
       }
       
-      @scala.inline
-      implicit class TableCellMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell](x: Self) {
         
-        @scala.inline
-        def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+        inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+        inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
         
-        @scala.inline
-        def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
         
-        @scala.inline
-        def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+        inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+        inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
         
-        @scala.inline
-        def setTableCellProperties(value: TableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
+        inline def setTableCellProperties(value: TableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
+        inline def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
         
-        @scala.inline
-        def setText(value: TextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: TextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -8463,26 +7463,20 @@ object Slides {
     }
     object TableCellBackgroundFill {
       
-      @scala.inline
-      def apply(): TableCellBackgroundFill = {
+      inline def apply(): TableCellBackgroundFill = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCellBackgroundFill]
       }
       
-      @scala.inline
-      implicit class TableCellBackgroundFillMutableBuilder[Self <: TableCellBackgroundFill] (val x: Self) extends AnyVal {
+      extension [Self <: TableCellBackgroundFill](x: Self) {
         
-        @scala.inline
-        def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+        inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+        inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
         
-        @scala.inline
-        def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+        inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+        inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
       }
     }
     
@@ -8494,26 +7488,20 @@ object Slides {
     }
     object TableCellLocation {
       
-      @scala.inline
-      def apply(): TableCellLocation = {
+      inline def apply(): TableCellLocation = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCellLocation]
       }
       
-      @scala.inline
-      implicit class TableCellLocationMutableBuilder[Self <: TableCellLocation] (val x: Self) extends AnyVal {
+      extension [Self <: TableCellLocation](x: Self) {
         
-        @scala.inline
-        def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+        inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+        inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
         
-        @scala.inline
-        def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+        inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+        inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
       }
     }
     
@@ -8525,26 +7513,20 @@ object Slides {
     }
     object TableCellProperties {
       
-      @scala.inline
-      def apply(): TableCellProperties = {
+      inline def apply(): TableCellProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableCellProperties]
       }
       
-      @scala.inline
-      implicit class TableCellPropertiesMutableBuilder[Self <: TableCellProperties] (val x: Self) extends AnyVal {
+      extension [Self <: TableCellProperties](x: Self) {
         
-        @scala.inline
-        def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+        inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
+        inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
         
-        @scala.inline
-        def setTableCellBackgroundFill(value: TableCellBackgroundFill): Self = StObject.set(x, "tableCellBackgroundFill", value.asInstanceOf[js.Any])
+        inline def setTableCellBackgroundFill(value: TableCellBackgroundFill): Self = StObject.set(x, "tableCellBackgroundFill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellBackgroundFillUndefined: Self = StObject.set(x, "tableCellBackgroundFill", js.undefined)
+        inline def setTableCellBackgroundFillUndefined: Self = StObject.set(x, "tableCellBackgroundFill", js.undefined)
       }
     }
     
@@ -8554,20 +7536,16 @@ object Slides {
     }
     object TableColumnProperties {
       
-      @scala.inline
-      def apply(): TableColumnProperties = {
+      inline def apply(): TableColumnProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableColumnProperties]
       }
       
-      @scala.inline
-      implicit class TableColumnPropertiesMutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
+      extension [Self <: TableColumnProperties](x: Self) {
         
-        @scala.inline
-        def setColumnWidth(value: Dimension): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+        inline def setColumnWidth(value: Dimension): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+        inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       }
     }
     
@@ -8581,32 +7559,24 @@ object Slides {
     }
     object TableRange {
       
-      @scala.inline
-      def apply(): TableRange = {
+      inline def apply(): TableRange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableRange]
       }
       
-      @scala.inline
-      implicit class TableRangeMutableBuilder[Self <: TableRange] (val x: Self) extends AnyVal {
+      extension [Self <: TableRange](x: Self) {
         
-        @scala.inline
-        def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+        inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+        inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
         
-        @scala.inline
-        def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+        inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
         
-        @scala.inline
-        def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+        inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+        inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       }
     }
     
@@ -8620,35 +7590,26 @@ object Slides {
     }
     object TableRow {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow]
       }
       
-      @scala.inline
-      implicit class TableRowMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow](x: Self) {
         
-        @scala.inline
-        def setRowHeight(value: Dimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+        inline def setRowHeight(value: Dimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+        inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
         
-        @scala.inline
-        def setTableCells(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
+        inline def setTableCells(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
+        inline def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
         
-        @scala.inline
-        def setTableCellsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
+        inline def setTableCellsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
         
-        @scala.inline
-        def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
+        inline def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
+        inline def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
       }
     }
     
@@ -8658,20 +7619,16 @@ object Slides {
     }
     object TableRowProperties {
       
-      @scala.inline
-      def apply(): TableRowProperties = {
+      inline def apply(): TableRowProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TableRowProperties]
       }
       
-      @scala.inline
-      implicit class TableRowPropertiesMutableBuilder[Self <: TableRowProperties] (val x: Self) extends AnyVal {
+      extension [Self <: TableRowProperties](x: Self) {
         
-        @scala.inline
-        def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
+        inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
+        inline def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
       }
     }
     
@@ -8683,29 +7640,22 @@ object Slides {
     }
     object TextContent {
       
-      @scala.inline
-      def apply(): TextContent = {
+      inline def apply(): TextContent = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextContent]
       }
       
-      @scala.inline
-      implicit class TextContentMutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
+      extension [Self <: TextContent](x: Self) {
         
-        @scala.inline
-        def setLists(value: js.Object): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+        inline def setLists(value: js.Object): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
+        inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
         
-        @scala.inline
-        def setTextElements(value: js.Array[TextElement]): Self = StObject.set(x, "textElements", value.asInstanceOf[js.Any])
+        inline def setTextElements(value: js.Array[TextElement]): Self = StObject.set(x, "textElements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
+        inline def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
         
-        @scala.inline
-        def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
+        inline def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
       }
     }
     
@@ -8723,44 +7673,32 @@ object Slides {
     }
     object TextElement {
       
-      @scala.inline
-      def apply(): TextElement = {
+      inline def apply(): TextElement = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextElement]
       }
       
-      @scala.inline
-      implicit class TextElementMutableBuilder[Self <: TextElement] (val x: Self) extends AnyVal {
+      extension [Self <: TextElement](x: Self) {
         
-        @scala.inline
-        def setAutoText(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
+        inline def setAutoText(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
+        inline def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
         
-        @scala.inline
-        def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+        inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+        inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
         
-        @scala.inline
-        def setParagraphMarker(value: ParagraphMarker): Self = StObject.set(x, "paragraphMarker", value.asInstanceOf[js.Any])
+        inline def setParagraphMarker(value: ParagraphMarker): Self = StObject.set(x, "paragraphMarker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParagraphMarkerUndefined: Self = StObject.set(x, "paragraphMarker", js.undefined)
+        inline def setParagraphMarkerUndefined: Self = StObject.set(x, "paragraphMarker", js.undefined)
         
-        @scala.inline
-        def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+        inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+        inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
         
-        @scala.inline
-        def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
+        inline def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
+        inline def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
       }
     }
     
@@ -8772,26 +7710,20 @@ object Slides {
     }
     object TextRun {
       
-      @scala.inline
-      def apply(): TextRun = {
+      inline def apply(): TextRun = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TextRun]
       }
       
-      @scala.inline
-      implicit class TextRunMutableBuilder[Self <: TextRun] (val x: Self) extends AnyVal {
+      extension [Self <: TextRun](x: Self) {
         
-        @scala.inline
-        def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
     
@@ -8823,86 +7755,60 @@ object Slides {
     }
     object TextStyle {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle]
       }
       
-      @scala.inline
-      implicit class TextStyleMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setBaselineOffset(value: String): Self = StObject.set(x, "baselineOffset", value.asInstanceOf[js.Any])
+        inline def setBaselineOffset(value: String): Self = StObject.set(x, "baselineOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBaselineOffsetUndefined: Self = StObject.set(x, "baselineOffset", js.undefined)
+        inline def setBaselineOffsetUndefined: Self = StObject.set(x, "baselineOffset", js.undefined)
         
-        @scala.inline
-        def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+        inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+        inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
         
-        @scala.inline
-        def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+        inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
         
-        @scala.inline
-        def setFontSize(value: Dimension): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Dimension): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+        inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
         
-        @scala.inline
-        def setForegroundColor(value: OptionalColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+        inline def setForegroundColor(value: OptionalColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+        inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
         
-        @scala.inline
-        def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+        inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+        inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
         
-        @scala.inline
-        def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+        inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
         
-        @scala.inline
-        def setSmallCaps(value: Boolean): Self = StObject.set(x, "smallCaps", value.asInstanceOf[js.Any])
+        inline def setSmallCaps(value: Boolean): Self = StObject.set(x, "smallCaps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmallCapsUndefined: Self = StObject.set(x, "smallCaps", js.undefined)
+        inline def setSmallCapsUndefined: Self = StObject.set(x, "smallCaps", js.undefined)
         
-        @scala.inline
-        def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+        inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+        inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
         
-        @scala.inline
-        def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+        inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+        inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
         
-        @scala.inline
-        def setWeightedFontFamily(value: WeightedFontFamily): Self = StObject.set(x, "weightedFontFamily", value.asInstanceOf[js.Any])
+        inline def setWeightedFontFamily(value: WeightedFontFamily): Self = StObject.set(x, "weightedFontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightedFontFamilyUndefined: Self = StObject.set(x, "weightedFontFamily", js.undefined)
+        inline def setWeightedFontFamilyUndefined: Self = StObject.set(x, "weightedFontFamily", js.undefined)
       }
     }
     
@@ -8914,26 +7820,20 @@ object Slides {
     }
     object ThemeColorPair {
       
-      @scala.inline
-      def apply(): ThemeColorPair = {
+      inline def apply(): ThemeColorPair = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ThemeColorPair]
       }
       
-      @scala.inline
-      implicit class ThemeColorPairMutableBuilder[Self <: ThemeColorPair] (val x: Self) extends AnyVal {
+      extension [Self <: ThemeColorPair](x: Self) {
         
-        @scala.inline
-        def setColor(value: RgbColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: RgbColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -8947,32 +7847,24 @@ object Slides {
     }
     object Thumbnail {
       
-      @scala.inline
-      def apply(): Thumbnail = {
+      inline def apply(): Thumbnail = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Thumbnail]
       }
       
-      @scala.inline
-      implicit class ThumbnailMutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
+      extension [Self <: Thumbnail](x: Self) {
         
-        @scala.inline
-        def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+        inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+        inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -8982,23 +7874,18 @@ object Slides {
     }
     object UngroupObjectsRequest {
       
-      @scala.inline
-      def apply(): UngroupObjectsRequest = {
+      inline def apply(): UngroupObjectsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UngroupObjectsRequest]
       }
       
-      @scala.inline
-      implicit class UngroupObjectsRequestMutableBuilder[Self <: UngroupObjectsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UngroupObjectsRequest](x: Self) {
         
-        @scala.inline
-        def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+        inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+        inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
         
-        @scala.inline
-        def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
       }
     }
     
@@ -9010,26 +7897,20 @@ object Slides {
     }
     object UnmergeTableCellsRequest {
       
-      @scala.inline
-      def apply(): UnmergeTableCellsRequest = {
+      inline def apply(): UnmergeTableCellsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UnmergeTableCellsRequest]
       }
       
-      @scala.inline
-      implicit class UnmergeTableCellsRequestMutableBuilder[Self <: UnmergeTableCellsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UnmergeTableCellsRequest](x: Self) {
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+        inline def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+        inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
       }
     }
     
@@ -9043,32 +7924,24 @@ object Slides {
     }
     object UpdateImagePropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateImagePropertiesRequest = {
+      inline def apply(): UpdateImagePropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateImagePropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateImagePropertiesRequestMutableBuilder[Self <: UpdateImagePropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateImagePropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+        inline def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
+        inline def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -9080,26 +7953,20 @@ object Slides {
     }
     object UpdateLineCategoryRequest {
       
-      @scala.inline
-      def apply(): UpdateLineCategoryRequest = {
+      inline def apply(): UpdateLineCategoryRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateLineCategoryRequest]
       }
       
-      @scala.inline
-      implicit class UpdateLineCategoryRequestMutableBuilder[Self <: UpdateLineCategoryRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateLineCategoryRequest](x: Self) {
         
-        @scala.inline
-        def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
+        inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
+        inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -9113,32 +7980,24 @@ object Slides {
     }
     object UpdateLinePropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateLinePropertiesRequest = {
+      inline def apply(): UpdateLinePropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateLinePropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateLinePropertiesRequestMutableBuilder[Self <: UpdateLinePropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateLinePropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setLineProperties(value: LineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
+        inline def setLineProperties(value: LineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
+        inline def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       }
     }
     
@@ -9152,32 +8011,24 @@ object Slides {
     }
     object UpdatePageElementAltTextRequest {
       
-      @scala.inline
-      def apply(): UpdatePageElementAltTextRequest = {
+      inline def apply(): UpdatePageElementAltTextRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdatePageElementAltTextRequest]
       }
       
-      @scala.inline
-      implicit class UpdatePageElementAltTextRequestMutableBuilder[Self <: UpdatePageElementAltTextRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatePageElementAltTextRequest](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -9191,32 +8042,24 @@ object Slides {
     }
     object UpdatePageElementTransformRequest {
       
-      @scala.inline
-      def apply(): UpdatePageElementTransformRequest = {
+      inline def apply(): UpdatePageElementTransformRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdatePageElementTransformRequest]
       }
       
-      @scala.inline
-      implicit class UpdatePageElementTransformRequestMutableBuilder[Self <: UpdatePageElementTransformRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatePageElementTransformRequest](x: Self) {
         
-        @scala.inline
-        def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
+        inline def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplyModeUndefined: Self = StObject.set(x, "applyMode", js.undefined)
+        inline def setApplyModeUndefined: Self = StObject.set(x, "applyMode", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+        inline def setTransform(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+        inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       }
     }
     
@@ -9228,29 +8071,22 @@ object Slides {
     }
     object UpdatePageElementsZOrderRequest {
       
-      @scala.inline
-      def apply(): UpdatePageElementsZOrderRequest = {
+      inline def apply(): UpdatePageElementsZOrderRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdatePageElementsZOrderRequest]
       }
       
-      @scala.inline
-      implicit class UpdatePageElementsZOrderRequestMutableBuilder[Self <: UpdatePageElementsZOrderRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatePageElementsZOrderRequest](x: Self) {
         
-        @scala.inline
-        def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+        inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+        inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
         
-        @scala.inline
-        def setPageElementObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageElementObjectIds", value.asInstanceOf[js.Any])
+        inline def setPageElementObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageElementObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageElementObjectIdsUndefined: Self = StObject.set(x, "pageElementObjectIds", js.undefined)
+        inline def setPageElementObjectIdsUndefined: Self = StObject.set(x, "pageElementObjectIds", js.undefined)
         
-        @scala.inline
-        def setPageElementObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageElementObjectIds", js.Array(value :_*))
+        inline def setPageElementObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageElementObjectIds", js.Array(value :_*))
       }
     }
     
@@ -9264,32 +8100,24 @@ object Slides {
     }
     object UpdatePagePropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdatePagePropertiesRequest = {
+      inline def apply(): UpdatePagePropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdatePagePropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdatePagePropertiesRequestMutableBuilder[Self <: UpdatePagePropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatePagePropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
+        inline def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
+        inline def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
       }
     }
     
@@ -9307,44 +8135,32 @@ object Slides {
     }
     object UpdateParagraphStyleRequest {
       
-      @scala.inline
-      def apply(): UpdateParagraphStyleRequest = {
+      inline def apply(): UpdateParagraphStyleRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateParagraphStyleRequest]
       }
       
-      @scala.inline
-      implicit class UpdateParagraphStyleRequestMutableBuilder[Self <: UpdateParagraphStyleRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateParagraphStyleRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        @scala.inline
-        def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
+        inline def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
+        inline def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
       }
     }
     
@@ -9358,32 +8174,24 @@ object Slides {
     }
     object UpdateShapePropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateShapePropertiesRequest = {
+      inline def apply(): UpdateShapePropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateShapePropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateShapePropertiesRequestMutableBuilder[Self <: UpdateShapePropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateShapePropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setShapeProperties(value: ShapeProperties): Self = StObject.set(x, "shapeProperties", value.asInstanceOf[js.Any])
+        inline def setShapeProperties(value: ShapeProperties): Self = StObject.set(x, "shapeProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShapePropertiesUndefined: Self = StObject.set(x, "shapeProperties", js.undefined)
+        inline def setShapePropertiesUndefined: Self = StObject.set(x, "shapeProperties", js.undefined)
       }
     }
     
@@ -9395,29 +8203,22 @@ object Slides {
     }
     object UpdateSlidesPositionRequest {
       
-      @scala.inline
-      def apply(): UpdateSlidesPositionRequest = {
+      inline def apply(): UpdateSlidesPositionRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateSlidesPositionRequest]
       }
       
-      @scala.inline
-      implicit class UpdateSlidesPositionRequestMutableBuilder[Self <: UpdateSlidesPositionRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateSlidesPositionRequest](x: Self) {
         
-        @scala.inline
-        def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
+        inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
+        inline def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
         
-        @scala.inline
-        def setSlideObjectIds(value: js.Array[String]): Self = StObject.set(x, "slideObjectIds", value.asInstanceOf[js.Any])
+        inline def setSlideObjectIds(value: js.Array[String]): Self = StObject.set(x, "slideObjectIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlideObjectIdsUndefined: Self = StObject.set(x, "slideObjectIds", js.undefined)
+        inline def setSlideObjectIdsUndefined: Self = StObject.set(x, "slideObjectIds", js.undefined)
         
-        @scala.inline
-        def setSlideObjectIdsVarargs(value: String*): Self = StObject.set(x, "slideObjectIds", js.Array(value :_*))
+        inline def setSlideObjectIdsVarargs(value: String*): Self = StObject.set(x, "slideObjectIds", js.Array(value :_*))
       }
     }
     
@@ -9435,44 +8236,32 @@ object Slides {
     }
     object UpdateTableBorderPropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateTableBorderPropertiesRequest = {
+      inline def apply(): UpdateTableBorderPropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateTableBorderPropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateTableBorderPropertiesRequestMutableBuilder[Self <: UpdateTableBorderPropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateTableBorderPropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setBorderPosition(value: String): Self = StObject.set(x, "borderPosition", value.asInstanceOf[js.Any])
+        inline def setBorderPosition(value: String): Self = StObject.set(x, "borderPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderPositionUndefined: Self = StObject.set(x, "borderPosition", js.undefined)
+        inline def setBorderPositionUndefined: Self = StObject.set(x, "borderPosition", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTableBorderProperties(value: TableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
+        inline def setTableBorderProperties(value: TableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
+        inline def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
         
-        @scala.inline
-        def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+        inline def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+        inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
       }
     }
     
@@ -9488,38 +8277,28 @@ object Slides {
     }
     object UpdateTableCellPropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateTableCellPropertiesRequest = {
+      inline def apply(): UpdateTableCellPropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateTableCellPropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateTableCellPropertiesRequestMutableBuilder[Self <: UpdateTableCellPropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateTableCellPropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTableCellProperties(value: TableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
+        inline def setTableCellProperties(value: TableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
+        inline def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
         
-        @scala.inline
-        def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+        inline def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+        inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
       }
     }
     
@@ -9535,41 +8314,30 @@ object Slides {
     }
     object UpdateTableColumnPropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateTableColumnPropertiesRequest = {
+      inline def apply(): UpdateTableColumnPropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateTableColumnPropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateTableColumnPropertiesRequestMutableBuilder[Self <: UpdateTableColumnPropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateTableColumnPropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setColumnIndices(value: js.Array[Double]): Self = StObject.set(x, "columnIndices", value.asInstanceOf[js.Any])
+        inline def setColumnIndices(value: js.Array[Double]): Self = StObject.set(x, "columnIndices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnIndicesUndefined: Self = StObject.set(x, "columnIndices", js.undefined)
+        inline def setColumnIndicesUndefined: Self = StObject.set(x, "columnIndices", js.undefined)
         
-        @scala.inline
-        def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value :_*))
+        inline def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value :_*))
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setTableColumnProperties(value: TableColumnProperties): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
+        inline def setTableColumnProperties(value: TableColumnProperties): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
+        inline def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
       }
     }
     
@@ -9585,41 +8353,30 @@ object Slides {
     }
     object UpdateTableRowPropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateTableRowPropertiesRequest = {
+      inline def apply(): UpdateTableRowPropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateTableRowPropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateTableRowPropertiesRequestMutableBuilder[Self <: UpdateTableRowPropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateTableRowPropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setRowIndices(value: js.Array[Double]): Self = StObject.set(x, "rowIndices", value.asInstanceOf[js.Any])
+        inline def setRowIndices(value: js.Array[Double]): Self = StObject.set(x, "rowIndices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
+        inline def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
         
-        @scala.inline
-        def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
+        inline def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
         
-        @scala.inline
-        def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
+        inline def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
+        inline def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
       }
     }
     
@@ -9637,44 +8394,32 @@ object Slides {
     }
     object UpdateTextStyleRequest {
       
-      @scala.inline
-      def apply(): UpdateTextStyleRequest = {
+      inline def apply(): UpdateTextStyleRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateTextStyleRequest]
       }
       
-      @scala.inline
-      implicit class UpdateTextStyleRequestMutableBuilder[Self <: UpdateTextStyleRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateTextStyleRequest](x: Self) {
         
-        @scala.inline
-        def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+        inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+        inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        @scala.inline
-        def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
+        inline def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
+        inline def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
       }
     }
     
@@ -9688,32 +8433,24 @@ object Slides {
     }
     object UpdateVideoPropertiesRequest {
       
-      @scala.inline
-      def apply(): UpdateVideoPropertiesRequest = {
+      inline def apply(): UpdateVideoPropertiesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateVideoPropertiesRequest]
       }
       
-      @scala.inline
-      implicit class UpdateVideoPropertiesRequestMutableBuilder[Self <: UpdateVideoPropertiesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateVideoPropertiesRequest](x: Self) {
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+        inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+        inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
         
-        @scala.inline
-        def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
+        inline def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
+        inline def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
       }
     }
     
@@ -9729,38 +8466,28 @@ object Slides {
     }
     object Video {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video]
       }
       
-      @scala.inline
-      implicit class VideoMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+        inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         
-        @scala.inline
-        def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
+        inline def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
+        inline def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
       }
     }
     
@@ -9778,44 +8505,32 @@ object Slides {
     }
     object VideoProperties {
       
-      @scala.inline
-      def apply(): VideoProperties = {
+      inline def apply(): VideoProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[VideoProperties]
       }
       
-      @scala.inline
-      implicit class VideoPropertiesMutableBuilder[Self <: VideoProperties] (val x: Self) extends AnyVal {
+      extension [Self <: VideoProperties](x: Self) {
         
-        @scala.inline
-        def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+        inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+        inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+        inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        @scala.inline
-        def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+        inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
+        inline def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
         
-        @scala.inline
-        def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+        inline def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+        inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+        inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       }
     }
     
@@ -9827,26 +8542,20 @@ object Slides {
     }
     object WeightedFontFamily {
       
-      @scala.inline
-      def apply(): WeightedFontFamily = {
+      inline def apply(): WeightedFontFamily = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WeightedFontFamily]
       }
       
-      @scala.inline
-      implicit class WeightedFontFamilyMutableBuilder[Self <: WeightedFontFamily] (val x: Self) extends AnyVal {
+      extension [Self <: WeightedFontFamily](x: Self) {
         
-        @scala.inline
-        def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+        inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
         
-        @scala.inline
-        def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+        inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+        inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
       }
     }
     
@@ -9856,20 +8565,16 @@ object Slides {
     }
     object WordArt {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt]
       }
       
-      @scala.inline
-      implicit class WordArtMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt](x: Self) {
         
-        @scala.inline
-        def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
+        inline def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderedTextUndefined: Self = StObject.set(x, "renderedText", js.undefined)
+        inline def setRenderedTextUndefined: Self = StObject.set(x, "renderedText", js.undefined)
       }
     }
     
@@ -9879,20 +8584,16 @@ object Slides {
     }
     object WriteControl {
       
-      @scala.inline
-      def apply(): WriteControl = {
+      inline def apply(): WriteControl = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WriteControl]
       }
       
-      @scala.inline
-      implicit class WriteControlMutableBuilder[Self <: WriteControl] (val x: Self) extends AnyVal {
+      extension [Self <: WriteControl](x: Self) {
         
-        @scala.inline
-        def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
+        inline def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
+        inline def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
       }
     }
   }
@@ -9921,8 +8622,7 @@ object Slides {
   }
   object Selection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCurrentPage: () => typings.googleAppsScript.GoogleAppsScript.Slides.Page,
       getPageElementRange: () => PageElementRange,
       getPageRange: () => PageRange,
@@ -9934,26 +8634,19 @@ object Slides {
       __obj.asInstanceOf[Selection]
     }
     
-    @scala.inline
-    implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+    extension [Self <: Selection](x: Self) {
       
-      @scala.inline
-      def setGetCurrentPage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Page): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
+      inline def setGetCurrentPage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Page): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageElementRange(value: () => PageElementRange): Self = StObject.set(x, "getPageElementRange", js.Any.fromFunction0(value))
+      inline def setGetPageElementRange(value: () => PageElementRange): Self = StObject.set(x, "getPageElementRange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageRange(value: () => PageRange): Self = StObject.set(x, "getPageRange", js.Any.fromFunction0(value))
+      inline def setGetPageRange(value: () => PageRange): Self = StObject.set(x, "getPageRange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectionType(value: () => SelectionType): Self = StObject.set(x, "getSelectionType", js.Any.fromFunction0(value))
+      inline def setGetSelectionType(value: () => SelectionType): Self = StObject.set(x, "getSelectionType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTableCellRange(value: () => TableCellRange): Self = StObject.set(x, "getTableCellRange", js.Any.fromFunction0(value))
+      inline def setGetTableCellRange(value: () => TableCellRange): Self = StObject.set(x, "getTableCellRange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTextRange(value: () => TextRange): Self = StObject.set(x, "getTextRange", js.Any.fromFunction0(value))
+      inline def setGetTextRange(value: () => TextRange): Self = StObject.set(x, "getTextRange", js.Any.fromFunction0(value))
     }
   }
   
@@ -10358,8 +9051,7 @@ object Slides {
   }
   object SlidesApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AlignmentPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ js.Any,
       ArrowStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any,
       AutoTextType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ js.Any,
@@ -10400,509 +9092,355 @@ object Slides {
       __obj.asInstanceOf[SlidesApp]
     }
     
-    @scala.inline
-    implicit class SlidesAppMutableBuilder[Self <: SlidesApp] (val x: Self) extends AnyVal {
+    extension [Self <: SlidesApp](x: Self) {
       
-      @scala.inline
-      def setAlignmentPosition(
+      inline def setAlignmentPosition(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ js.Any
       ): Self = StObject.set(x, "AlignmentPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any): Self = StObject.set(x, "ArrowStyle", value.asInstanceOf[js.Any])
+      inline def setArrowStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any): Self = StObject.set(x, "ArrowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoTextType(
+      inline def setAutoTextType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ js.Any
       ): Self = StObject.set(x, "AutoTextType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellMergeState(
+      inline def setCellMergeState(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ js.Any
       ): Self = StObject.set(x, "CellMergeState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorType(
+      inline def setColorType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ js.Any
       ): Self = StObject.set(x, "ColorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentAlignment(
+      inline def setContentAlignment(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ js.Any
       ): Self = StObject.set(x, "ContentAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDashStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ js.Any): Self = StObject.set(x, "DashStyle", value.asInstanceOf[js.Any])
+      inline def setDashStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ js.Any): Self = StObject.set(x, "DashStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ js.Any): Self = StObject.set(x, "FillType", value.asInstanceOf[js.Any])
+      inline def setFillType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ js.Any): Self = StObject.set(x, "FillType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetActivePresentation(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "getActivePresentation", js.Any.fromFunction0(value))
+      inline def setGetActivePresentation(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "getActivePresentation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
+      inline def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLineCategory(
+      inline def setLineCategory(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ js.Any
       ): Self = StObject.set(x, "LineCategory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineFillType(
+      inline def setLineFillType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ js.Any
       ): Self = StObject.set(x, "LineFillType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ js.Any): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
+      inline def setLineType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ js.Any): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ js.Any): Self = StObject.set(x, "LinkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ js.Any): Self = StObject.set(x, "LinkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListPreset(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ js.Any): Self = StObject.set(x, "ListPreset", value.asInstanceOf[js.Any])
+      inline def setListPreset(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ js.Any): Self = StObject.set(x, "ListPreset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewAffineTransformBuilder(value: () => AffineTransformBuilder): Self = StObject.set(x, "newAffineTransformBuilder", js.Any.fromFunction0(value))
+      inline def setNewAffineTransformBuilder(value: () => AffineTransformBuilder): Self = StObject.set(x, "newAffineTransformBuilder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenById(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "openById", js.Any.fromFunction1(value))
+      inline def setOpenById(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "openById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
+      inline def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Slides.Presentation): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageBackgroundType(
+      inline def setPageBackgroundType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ js.Any
       ): Self = StObject.set(x, "PageBackgroundType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageElementType(
+      inline def setPageElementType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ js.Any
       ): Self = StObject.set(x, "PageElementType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any): Self = StObject.set(x, "PageType", value.asInstanceOf[js.Any])
+      inline def setPageType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any): Self = StObject.set(x, "PageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphAlignment(
+      inline def setParagraphAlignment(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ js.Any
       ): Self = StObject.set(x, "ParagraphAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderType(
+      inline def setPlaceholderType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ js.Any
       ): Self = StObject.set(x, "PlaceholderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredefinedLayout(
+      inline def setPredefinedLayout(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ js.Any
       ): Self = StObject.set(x, "PredefinedLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionType(
+      inline def setSelectionType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ js.Any
       ): Self = StObject.set(x, "SelectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ js.Any): Self = StObject.set(x, "ShapeType", value.asInstanceOf[js.Any])
+      inline def setShapeType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ js.Any): Self = StObject.set(x, "ShapeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetsChartEmbedType(
+      inline def setSheetsChartEmbedType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ js.Any
       ): Self = StObject.set(x, "SheetsChartEmbedType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLinkingMode(
+      inline def setSlideLinkingMode(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ js.Any
       ): Self = StObject.set(x, "SlideLinkingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidePosition(
+      inline def setSlidePosition(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ js.Any
       ): Self = StObject.set(x, "SlidePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ js.Any): Self = StObject.set(x, "SpacingMode", value.asInstanceOf[js.Any])
+      inline def setSpacingMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ js.Any): Self = StObject.set(x, "SpacingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextBaselineOffset(
+      inline def setTextBaselineOffset(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ js.Any
       ): Self = StObject.set(x, "TextBaselineOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDirection(
+      inline def setTextDirection(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any
       ): Self = StObject.set(x, "TextDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeColorType(
+      inline def setThemeColorType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any
       ): Self = StObject.set(x, "ThemeColorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoSourceType(
+      inline def setVideoSourceType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ js.Any
       ): Self = StObject.set(x, "VideoSourceType", value.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  implicit class SlidesMutableBuilder[Self <: Slides] (val x: Self) extends AnyVal {
+  extension [Self <: Slides](x: Self) {
     
-    @scala.inline
-    def setNewAffineTransform(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "newAffineTransform", js.Any.fromFunction0(value))
+    inline def setNewAffineTransform(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "newAffineTransform", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewAutoText(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText): Self = StObject.set(x, "newAutoText", js.Any.fromFunction0(value))
+    inline def setNewAutoText(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText): Self = StObject.set(x, "newAutoText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBatchUpdatePresentationRequest(value: () => BatchUpdatePresentationRequest): Self = StObject.set(x, "newBatchUpdatePresentationRequest", js.Any.fromFunction0(value))
+    inline def setNewBatchUpdatePresentationRequest(value: () => BatchUpdatePresentationRequest): Self = StObject.set(x, "newBatchUpdatePresentationRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBullet(value: () => Bullet): Self = StObject.set(x, "newBullet", js.Any.fromFunction0(value))
+    inline def setNewBullet(value: () => Bullet): Self = StObject.set(x, "newBullet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewColorScheme(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme): Self = StObject.set(x, "newColorScheme", js.Any.fromFunction0(value))
+    inline def setNewColorScheme(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme): Self = StObject.set(x, "newColorScheme", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewColorStop(value: () => ColorStop): Self = StObject.set(x, "newColorStop", js.Any.fromFunction0(value))
+    inline def setNewColorStop(value: () => ColorStop): Self = StObject.set(x, "newColorStop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateImageRequest(value: () => CreateImageRequest): Self = StObject.set(x, "newCreateImageRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateImageRequest(value: () => CreateImageRequest): Self = StObject.set(x, "newCreateImageRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateLineRequest(value: () => CreateLineRequest): Self = StObject.set(x, "newCreateLineRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateLineRequest(value: () => CreateLineRequest): Self = StObject.set(x, "newCreateLineRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateParagraphBulletsRequest(value: () => CreateParagraphBulletsRequest): Self = StObject.set(x, "newCreateParagraphBulletsRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateParagraphBulletsRequest(value: () => CreateParagraphBulletsRequest): Self = StObject.set(x, "newCreateParagraphBulletsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateShapeRequest(value: () => CreateShapeRequest): Self = StObject.set(x, "newCreateShapeRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateShapeRequest(value: () => CreateShapeRequest): Self = StObject.set(x, "newCreateShapeRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateSheetsChartRequest(value: () => CreateSheetsChartRequest): Self = StObject.set(x, "newCreateSheetsChartRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateSheetsChartRequest(value: () => CreateSheetsChartRequest): Self = StObject.set(x, "newCreateSheetsChartRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateSlideRequest(value: () => CreateSlideRequest): Self = StObject.set(x, "newCreateSlideRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateSlideRequest(value: () => CreateSlideRequest): Self = StObject.set(x, "newCreateSlideRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateTableRequest(value: () => CreateTableRequest): Self = StObject.set(x, "newCreateTableRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateTableRequest(value: () => CreateTableRequest): Self = StObject.set(x, "newCreateTableRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateVideoRequest(value: () => CreateVideoRequest): Self = StObject.set(x, "newCreateVideoRequest", js.Any.fromFunction0(value))
+    inline def setNewCreateVideoRequest(value: () => CreateVideoRequest): Self = StObject.set(x, "newCreateVideoRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCropProperties(value: () => CropProperties): Self = StObject.set(x, "newCropProperties", js.Any.fromFunction0(value))
+    inline def setNewCropProperties(value: () => CropProperties): Self = StObject.set(x, "newCropProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteObjectRequest(value: () => DeleteObjectRequest): Self = StObject.set(x, "newDeleteObjectRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteObjectRequest(value: () => DeleteObjectRequest): Self = StObject.set(x, "newDeleteObjectRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteParagraphBulletsRequest(value: () => DeleteParagraphBulletsRequest): Self = StObject.set(x, "newDeleteParagraphBulletsRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteParagraphBulletsRequest(value: () => DeleteParagraphBulletsRequest): Self = StObject.set(x, "newDeleteParagraphBulletsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteTableColumnRequest(value: () => DeleteTableColumnRequest): Self = StObject.set(x, "newDeleteTableColumnRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteTableColumnRequest(value: () => DeleteTableColumnRequest): Self = StObject.set(x, "newDeleteTableColumnRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteTableRowRequest(value: () => DeleteTableRowRequest): Self = StObject.set(x, "newDeleteTableRowRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteTableRowRequest(value: () => DeleteTableRowRequest): Self = StObject.set(x, "newDeleteTableRowRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDeleteTextRequest(value: () => DeleteTextRequest): Self = StObject.set(x, "newDeleteTextRequest", js.Any.fromFunction0(value))
+    inline def setNewDeleteTextRequest(value: () => DeleteTextRequest): Self = StObject.set(x, "newDeleteTextRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
+    inline def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDuplicateObjectRequest(value: () => DuplicateObjectRequest): Self = StObject.set(x, "newDuplicateObjectRequest", js.Any.fromFunction0(value))
+    inline def setNewDuplicateObjectRequest(value: () => DuplicateObjectRequest): Self = StObject.set(x, "newDuplicateObjectRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGroup(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
+    inline def setNewGroup(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGroupObjectsRequest(value: () => GroupObjectsRequest): Self = StObject.set(x, "newGroupObjectsRequest", js.Any.fromFunction0(value))
+    inline def setNewGroupObjectsRequest(value: () => GroupObjectsRequest): Self = StObject.set(x, "newGroupObjectsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewImage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image): Self = StObject.set(x, "newImage", js.Any.fromFunction0(value))
+    inline def setNewImage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image): Self = StObject.set(x, "newImage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewImageProperties(value: () => ImageProperties): Self = StObject.set(x, "newImageProperties", js.Any.fromFunction0(value))
+    inline def setNewImageProperties(value: () => ImageProperties): Self = StObject.set(x, "newImageProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertTableColumnsRequest(value: () => InsertTableColumnsRequest): Self = StObject.set(x, "newInsertTableColumnsRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertTableColumnsRequest(value: () => InsertTableColumnsRequest): Self = StObject.set(x, "newInsertTableColumnsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertTableRowsRequest(value: () => InsertTableRowsRequest): Self = StObject.set(x, "newInsertTableRowsRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertTableRowsRequest(value: () => InsertTableRowsRequest): Self = StObject.set(x, "newInsertTableRowsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewInsertTextRequest(value: () => InsertTextRequest): Self = StObject.set(x, "newInsertTextRequest", js.Any.fromFunction0(value))
+    inline def setNewInsertTextRequest(value: () => InsertTextRequest): Self = StObject.set(x, "newInsertTextRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLayoutPlaceholderIdMapping(value: () => LayoutPlaceholderIdMapping): Self = StObject.set(x, "newLayoutPlaceholderIdMapping", js.Any.fromFunction0(value))
+    inline def setNewLayoutPlaceholderIdMapping(value: () => LayoutPlaceholderIdMapping): Self = StObject.set(x, "newLayoutPlaceholderIdMapping", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLayoutProperties(value: () => LayoutProperties): Self = StObject.set(x, "newLayoutProperties", js.Any.fromFunction0(value))
+    inline def setNewLayoutProperties(value: () => LayoutProperties): Self = StObject.set(x, "newLayoutProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLayoutReference(value: () => LayoutReference): Self = StObject.set(x, "newLayoutReference", js.Any.fromFunction0(value))
+    inline def setNewLayoutReference(value: () => LayoutReference): Self = StObject.set(x, "newLayoutReference", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLine(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line): Self = StObject.set(x, "newLine", js.Any.fromFunction0(value))
+    inline def setNewLine(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line): Self = StObject.set(x, "newLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLineConnection(value: () => LineConnection): Self = StObject.set(x, "newLineConnection", js.Any.fromFunction0(value))
+    inline def setNewLineConnection(value: () => LineConnection): Self = StObject.set(x, "newLineConnection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLineFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill): Self = StObject.set(x, "newLineFill", js.Any.fromFunction0(value))
+    inline def setNewLineFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill): Self = StObject.set(x, "newLineFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLineProperties(value: () => LineProperties): Self = StObject.set(x, "newLineProperties", js.Any.fromFunction0(value))
+    inline def setNewLineProperties(value: () => LineProperties): Self = StObject.set(x, "newLineProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLink(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
+    inline def setNewLink(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMasterProperties(value: () => MasterProperties): Self = StObject.set(x, "newMasterProperties", js.Any.fromFunction0(value))
+    inline def setNewMasterProperties(value: () => MasterProperties): Self = StObject.set(x, "newMasterProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMergeTableCellsRequest(value: () => MergeTableCellsRequest): Self = StObject.set(x, "newMergeTableCellsRequest", js.Any.fromFunction0(value))
+    inline def setNewMergeTableCellsRequest(value: () => MergeTableCellsRequest): Self = StObject.set(x, "newMergeTableCellsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewNotesProperties(value: () => NotesProperties): Self = StObject.set(x, "newNotesProperties", js.Any.fromFunction0(value))
+    inline def setNewNotesProperties(value: () => NotesProperties): Self = StObject.set(x, "newNotesProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOpaqueColor(value: () => OpaqueColor): Self = StObject.set(x, "newOpaqueColor", js.Any.fromFunction0(value))
+    inline def setNewOpaqueColor(value: () => OpaqueColor): Self = StObject.set(x, "newOpaqueColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOptionalColor(value: () => OptionalColor): Self = StObject.set(x, "newOptionalColor", js.Any.fromFunction0(value))
+    inline def setNewOptionalColor(value: () => OptionalColor): Self = StObject.set(x, "newOptionalColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOutline(value: () => Outline): Self = StObject.set(x, "newOutline", js.Any.fromFunction0(value))
+    inline def setNewOutline(value: () => Outline): Self = StObject.set(x, "newOutline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOutlineFill(value: () => OutlineFill): Self = StObject.set(x, "newOutlineFill", js.Any.fromFunction0(value))
+    inline def setNewOutlineFill(value: () => OutlineFill): Self = StObject.set(x, "newOutlineFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "newPage", js.Any.fromFunction0(value))
+    inline def setNewPage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "newPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPageBackgroundFill(value: () => PageBackgroundFill): Self = StObject.set(x, "newPageBackgroundFill", js.Any.fromFunction0(value))
+    inline def setNewPageBackgroundFill(value: () => PageBackgroundFill): Self = StObject.set(x, "newPageBackgroundFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPageElement(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement): Self = StObject.set(x, "newPageElement", js.Any.fromFunction0(value))
+    inline def setNewPageElement(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement): Self = StObject.set(x, "newPageElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPageElementProperties(value: () => PageElementProperties): Self = StObject.set(x, "newPageElementProperties", js.Any.fromFunction0(value))
+    inline def setNewPageElementProperties(value: () => PageElementProperties): Self = StObject.set(x, "newPageElementProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPageProperties(value: () => PageProperties): Self = StObject.set(x, "newPageProperties", js.Any.fromFunction0(value))
+    inline def setNewPageProperties(value: () => PageProperties): Self = StObject.set(x, "newPageProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewParagraphMarker(value: () => ParagraphMarker): Self = StObject.set(x, "newParagraphMarker", js.Any.fromFunction0(value))
+    inline def setNewParagraphMarker(value: () => ParagraphMarker): Self = StObject.set(x, "newParagraphMarker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewParagraphStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "newParagraphStyle", js.Any.fromFunction0(value))
+    inline def setNewParagraphStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "newParagraphStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPlaceholder(value: () => Placeholder): Self = StObject.set(x, "newPlaceholder", js.Any.fromFunction0(value))
+    inline def setNewPlaceholder(value: () => Placeholder): Self = StObject.set(x, "newPlaceholder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPresentation(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): Self = StObject.set(x, "newPresentation", js.Any.fromFunction0(value))
+    inline def setNewPresentation(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): Self = StObject.set(x, "newPresentation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRange(value: () => Range): Self = StObject.set(x, "newRange", js.Any.fromFunction0(value))
+    inline def setNewRange(value: () => Range): Self = StObject.set(x, "newRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRecolor(value: () => Recolor): Self = StObject.set(x, "newRecolor", js.Any.fromFunction0(value))
+    inline def setNewRecolor(value: () => Recolor): Self = StObject.set(x, "newRecolor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRefreshSheetsChartRequest(value: () => RefreshSheetsChartRequest): Self = StObject.set(x, "newRefreshSheetsChartRequest", js.Any.fromFunction0(value))
+    inline def setNewRefreshSheetsChartRequest(value: () => RefreshSheetsChartRequest): Self = StObject.set(x, "newRefreshSheetsChartRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewReplaceAllShapesWithImageRequest(value: () => ReplaceAllShapesWithImageRequest): Self = StObject.set(x, "newReplaceAllShapesWithImageRequest", js.Any.fromFunction0(value))
+    inline def setNewReplaceAllShapesWithImageRequest(value: () => ReplaceAllShapesWithImageRequest): Self = StObject.set(x, "newReplaceAllShapesWithImageRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewReplaceAllShapesWithSheetsChartRequest(value: () => ReplaceAllShapesWithSheetsChartRequest): Self = StObject.set(x, "newReplaceAllShapesWithSheetsChartRequest", js.Any.fromFunction0(value))
+    inline def setNewReplaceAllShapesWithSheetsChartRequest(value: () => ReplaceAllShapesWithSheetsChartRequest): Self = StObject.set(x, "newReplaceAllShapesWithSheetsChartRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewReplaceAllTextRequest(value: () => ReplaceAllTextRequest): Self = StObject.set(x, "newReplaceAllTextRequest", js.Any.fromFunction0(value))
+    inline def setNewReplaceAllTextRequest(value: () => ReplaceAllTextRequest): Self = StObject.set(x, "newReplaceAllTextRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewReplaceImageRequest(value: () => ReplaceImageRequest): Self = StObject.set(x, "newReplaceImageRequest", js.Any.fromFunction0(value))
+    inline def setNewReplaceImageRequest(value: () => ReplaceImageRequest): Self = StObject.set(x, "newReplaceImageRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
+    inline def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRerouteLineRequest(value: () => RerouteLineRequest): Self = StObject.set(x, "newRerouteLineRequest", js.Any.fromFunction0(value))
+    inline def setNewRerouteLineRequest(value: () => RerouteLineRequest): Self = StObject.set(x, "newRerouteLineRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewRgbColor(value: () => RgbColor): Self = StObject.set(x, "newRgbColor", js.Any.fromFunction0(value))
+    inline def setNewRgbColor(value: () => RgbColor): Self = StObject.set(x, "newRgbColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewShadow(value: () => Shadow): Self = StObject.set(x, "newShadow", js.Any.fromFunction0(value))
+    inline def setNewShadow(value: () => Shadow): Self = StObject.set(x, "newShadow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewShape(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape): Self = StObject.set(x, "newShape", js.Any.fromFunction0(value))
+    inline def setNewShape(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape): Self = StObject.set(x, "newShape", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewShapeBackgroundFill(value: () => ShapeBackgroundFill): Self = StObject.set(x, "newShapeBackgroundFill", js.Any.fromFunction0(value))
+    inline def setNewShapeBackgroundFill(value: () => ShapeBackgroundFill): Self = StObject.set(x, "newShapeBackgroundFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewShapeProperties(value: () => ShapeProperties): Self = StObject.set(x, "newShapeProperties", js.Any.fromFunction0(value))
+    inline def setNewShapeProperties(value: () => ShapeProperties): Self = StObject.set(x, "newShapeProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSheetsChart(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart): Self = StObject.set(x, "newSheetsChart", js.Any.fromFunction0(value))
+    inline def setNewSheetsChart(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart): Self = StObject.set(x, "newSheetsChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSheetsChartProperties(value: () => SheetsChartProperties): Self = StObject.set(x, "newSheetsChartProperties", js.Any.fromFunction0(value))
+    inline def setNewSheetsChartProperties(value: () => SheetsChartProperties): Self = StObject.set(x, "newSheetsChartProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSize(value: () => Size): Self = StObject.set(x, "newSize", js.Any.fromFunction0(value))
+    inline def setNewSize(value: () => Size): Self = StObject.set(x, "newSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSlideProperties(value: () => SlideProperties): Self = StObject.set(x, "newSlideProperties", js.Any.fromFunction0(value))
+    inline def setNewSlideProperties(value: () => SlideProperties): Self = StObject.set(x, "newSlideProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSolidFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "newSolidFill", js.Any.fromFunction0(value))
+    inline def setNewSolidFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "newSolidFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewStretchedPictureFill(value: () => StretchedPictureFill): Self = StObject.set(x, "newStretchedPictureFill", js.Any.fromFunction0(value))
+    inline def setNewStretchedPictureFill(value: () => StretchedPictureFill): Self = StObject.set(x, "newStretchedPictureFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSubstringMatchCriteria(value: () => SubstringMatchCriteria): Self = StObject.set(x, "newSubstringMatchCriteria", js.Any.fromFunction0(value))
+    inline def setNewSubstringMatchCriteria(value: () => SubstringMatchCriteria): Self = StObject.set(x, "newSubstringMatchCriteria", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table): Self = StObject.set(x, "newTable", js.Any.fromFunction0(value))
+    inline def setNewTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table): Self = StObject.set(x, "newTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableBorderCell(value: () => TableBorderCell): Self = StObject.set(x, "newTableBorderCell", js.Any.fromFunction0(value))
+    inline def setNewTableBorderCell(value: () => TableBorderCell): Self = StObject.set(x, "newTableBorderCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableBorderFill(value: () => TableBorderFill): Self = StObject.set(x, "newTableBorderFill", js.Any.fromFunction0(value))
+    inline def setNewTableBorderFill(value: () => TableBorderFill): Self = StObject.set(x, "newTableBorderFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableBorderProperties(value: () => TableBorderProperties): Self = StObject.set(x, "newTableBorderProperties", js.Any.fromFunction0(value))
+    inline def setNewTableBorderProperties(value: () => TableBorderProperties): Self = StObject.set(x, "newTableBorderProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableBorderRow(value: () => TableBorderRow): Self = StObject.set(x, "newTableBorderRow", js.Any.fromFunction0(value))
+    inline def setNewTableBorderRow(value: () => TableBorderRow): Self = StObject.set(x, "newTableBorderRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCell(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell): Self = StObject.set(x, "newTableCell", js.Any.fromFunction0(value))
+    inline def setNewTableCell(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell): Self = StObject.set(x, "newTableCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCellBackgroundFill(value: () => TableCellBackgroundFill): Self = StObject.set(x, "newTableCellBackgroundFill", js.Any.fromFunction0(value))
+    inline def setNewTableCellBackgroundFill(value: () => TableCellBackgroundFill): Self = StObject.set(x, "newTableCellBackgroundFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCellLocation(value: () => TableCellLocation): Self = StObject.set(x, "newTableCellLocation", js.Any.fromFunction0(value))
+    inline def setNewTableCellLocation(value: () => TableCellLocation): Self = StObject.set(x, "newTableCellLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableCellProperties(value: () => TableCellProperties): Self = StObject.set(x, "newTableCellProperties", js.Any.fromFunction0(value))
+    inline def setNewTableCellProperties(value: () => TableCellProperties): Self = StObject.set(x, "newTableCellProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableColumnProperties(value: () => TableColumnProperties): Self = StObject.set(x, "newTableColumnProperties", js.Any.fromFunction0(value))
+    inline def setNewTableColumnProperties(value: () => TableColumnProperties): Self = StObject.set(x, "newTableColumnProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableRange(value: () => TableRange): Self = StObject.set(x, "newTableRange", js.Any.fromFunction0(value))
+    inline def setNewTableRange(value: () => TableRange): Self = StObject.set(x, "newTableRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableRow(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow): Self = StObject.set(x, "newTableRow", js.Any.fromFunction0(value))
+    inline def setNewTableRow(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow): Self = StObject.set(x, "newTableRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableRowProperties(value: () => TableRowProperties): Self = StObject.set(x, "newTableRowProperties", js.Any.fromFunction0(value))
+    inline def setNewTableRowProperties(value: () => TableRowProperties): Self = StObject.set(x, "newTableRowProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextContent(value: () => TextContent): Self = StObject.set(x, "newTextContent", js.Any.fromFunction0(value))
+    inline def setNewTextContent(value: () => TextContent): Self = StObject.set(x, "newTextContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextElement(value: () => TextElement): Self = StObject.set(x, "newTextElement", js.Any.fromFunction0(value))
+    inline def setNewTextElement(value: () => TextElement): Self = StObject.set(x, "newTextElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextRun(value: () => TextRun): Self = StObject.set(x, "newTextRun", js.Any.fromFunction0(value))
+    inline def setNewTextRun(value: () => TextRun): Self = StObject.set(x, "newTextRun", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
+    inline def setNewTextStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewThemeColorPair(value: () => ThemeColorPair): Self = StObject.set(x, "newThemeColorPair", js.Any.fromFunction0(value))
+    inline def setNewThemeColorPair(value: () => ThemeColorPair): Self = StObject.set(x, "newThemeColorPair", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUngroupObjectsRequest(value: () => UngroupObjectsRequest): Self = StObject.set(x, "newUngroupObjectsRequest", js.Any.fromFunction0(value))
+    inline def setNewUngroupObjectsRequest(value: () => UngroupObjectsRequest): Self = StObject.set(x, "newUngroupObjectsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUnmergeTableCellsRequest(value: () => UnmergeTableCellsRequest): Self = StObject.set(x, "newUnmergeTableCellsRequest", js.Any.fromFunction0(value))
+    inline def setNewUnmergeTableCellsRequest(value: () => UnmergeTableCellsRequest): Self = StObject.set(x, "newUnmergeTableCellsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateImagePropertiesRequest(value: () => UpdateImagePropertiesRequest): Self = StObject.set(x, "newUpdateImagePropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateImagePropertiesRequest(value: () => UpdateImagePropertiesRequest): Self = StObject.set(x, "newUpdateImagePropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateLineCategoryRequest(value: () => UpdateLineCategoryRequest): Self = StObject.set(x, "newUpdateLineCategoryRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateLineCategoryRequest(value: () => UpdateLineCategoryRequest): Self = StObject.set(x, "newUpdateLineCategoryRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateLinePropertiesRequest(value: () => UpdateLinePropertiesRequest): Self = StObject.set(x, "newUpdateLinePropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateLinePropertiesRequest(value: () => UpdateLinePropertiesRequest): Self = StObject.set(x, "newUpdateLinePropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdatePageElementAltTextRequest(value: () => UpdatePageElementAltTextRequest): Self = StObject.set(x, "newUpdatePageElementAltTextRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdatePageElementAltTextRequest(value: () => UpdatePageElementAltTextRequest): Self = StObject.set(x, "newUpdatePageElementAltTextRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdatePageElementTransformRequest(value: () => UpdatePageElementTransformRequest): Self = StObject.set(x, "newUpdatePageElementTransformRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdatePageElementTransformRequest(value: () => UpdatePageElementTransformRequest): Self = StObject.set(x, "newUpdatePageElementTransformRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdatePageElementsZOrderRequest(value: () => UpdatePageElementsZOrderRequest): Self = StObject.set(x, "newUpdatePageElementsZOrderRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdatePageElementsZOrderRequest(value: () => UpdatePageElementsZOrderRequest): Self = StObject.set(x, "newUpdatePageElementsZOrderRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdatePagePropertiesRequest(value: () => UpdatePagePropertiesRequest): Self = StObject.set(x, "newUpdatePagePropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdatePagePropertiesRequest(value: () => UpdatePagePropertiesRequest): Self = StObject.set(x, "newUpdatePagePropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateParagraphStyleRequest(value: () => UpdateParagraphStyleRequest): Self = StObject.set(x, "newUpdateParagraphStyleRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateParagraphStyleRequest(value: () => UpdateParagraphStyleRequest): Self = StObject.set(x, "newUpdateParagraphStyleRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateShapePropertiesRequest(value: () => UpdateShapePropertiesRequest): Self = StObject.set(x, "newUpdateShapePropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateShapePropertiesRequest(value: () => UpdateShapePropertiesRequest): Self = StObject.set(x, "newUpdateShapePropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateSlidesPositionRequest(value: () => UpdateSlidesPositionRequest): Self = StObject.set(x, "newUpdateSlidesPositionRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateSlidesPositionRequest(value: () => UpdateSlidesPositionRequest): Self = StObject.set(x, "newUpdateSlidesPositionRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateTableBorderPropertiesRequest(value: () => UpdateTableBorderPropertiesRequest): Self = StObject.set(x, "newUpdateTableBorderPropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateTableBorderPropertiesRequest(value: () => UpdateTableBorderPropertiesRequest): Self = StObject.set(x, "newUpdateTableBorderPropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateTableCellPropertiesRequest(value: () => UpdateTableCellPropertiesRequest): Self = StObject.set(x, "newUpdateTableCellPropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateTableCellPropertiesRequest(value: () => UpdateTableCellPropertiesRequest): Self = StObject.set(x, "newUpdateTableCellPropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateTableColumnPropertiesRequest(value: () => UpdateTableColumnPropertiesRequest): Self = StObject.set(x, "newUpdateTableColumnPropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateTableColumnPropertiesRequest(value: () => UpdateTableColumnPropertiesRequest): Self = StObject.set(x, "newUpdateTableColumnPropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateTableRowPropertiesRequest(value: () => UpdateTableRowPropertiesRequest): Self = StObject.set(x, "newUpdateTableRowPropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateTableRowPropertiesRequest(value: () => UpdateTableRowPropertiesRequest): Self = StObject.set(x, "newUpdateTableRowPropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateTextStyleRequest(value: () => UpdateTextStyleRequest): Self = StObject.set(x, "newUpdateTextStyleRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateTextStyleRequest(value: () => UpdateTextStyleRequest): Self = StObject.set(x, "newUpdateTextStyleRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUpdateVideoPropertiesRequest(value: () => UpdateVideoPropertiesRequest): Self = StObject.set(x, "newUpdateVideoPropertiesRequest", js.Any.fromFunction0(value))
+    inline def setNewUpdateVideoPropertiesRequest(value: () => UpdateVideoPropertiesRequest): Self = StObject.set(x, "newUpdateVideoPropertiesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewVideo(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video): Self = StObject.set(x, "newVideo", js.Any.fromFunction0(value))
+    inline def setNewVideo(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video): Self = StObject.set(x, "newVideo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewVideoProperties(value: () => VideoProperties): Self = StObject.set(x, "newVideoProperties", js.Any.fromFunction0(value))
+    inline def setNewVideoProperties(value: () => VideoProperties): Self = StObject.set(x, "newVideoProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewWeightedFontFamily(value: () => WeightedFontFamily): Self = StObject.set(x, "newWeightedFontFamily", js.Any.fromFunction0(value))
+    inline def setNewWeightedFontFamily(value: () => WeightedFontFamily): Self = StObject.set(x, "newWeightedFontFamily", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewWordArt(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt): Self = StObject.set(x, "newWordArt", js.Any.fromFunction0(value))
+    inline def setNewWordArt(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt): Self = StObject.set(x, "newWordArt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewWriteControl(value: () => WriteControl): Self = StObject.set(x, "newWriteControl", js.Any.fromFunction0(value))
+    inline def setNewWriteControl(value: () => WriteControl): Self = StObject.set(x, "newWriteControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPresentations(value: PresentationsCollection): Self = StObject.set(x, "Presentations", value.asInstanceOf[js.Any])
+    inline def setPresentations(value: PresentationsCollection): Self = StObject.set(x, "Presentations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationsUndefined: Self = StObject.set(x, "Presentations", js.undefined)
+    inline def setPresentationsUndefined: Self = StObject.set(x, "Presentations", js.undefined)
   }
   
   /**
@@ -10919,20 +9457,16 @@ object Slides {
   }
   object SolidFill {
     
-    @scala.inline
-    def apply(getAlpha: () => Double, getColor: () => Color): typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill = {
+    inline def apply(getAlpha: () => Double, getColor: () => Color): typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill = {
       val __obj = js.Dynamic.literal(getAlpha = js.Any.fromFunction0(getAlpha), getColor = js.Any.fromFunction0(getColor))
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill]
     }
     
-    @scala.inline
-    implicit class SolidFillMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill](x: Self) {
       
-      @scala.inline
-      def setGetAlpha(value: () => Double): Self = StObject.set(x, "getAlpha", js.Any.fromFunction0(value))
+      inline def setGetAlpha(value: () => Double): Self = StObject.set(x, "getAlpha", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetColor(value: () => Color): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
+      inline def setGetColor(value: () => Color): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     }
   }
   
@@ -11063,8 +9597,7 @@ object Slides {
   }
   object TableCell {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getColumnIndex: () => Integer,
       getColumnSpan: () => Integer,
       getContentAlignment: () => ContentAlignment,
@@ -11083,47 +9616,33 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]
     }
     
-    @scala.inline
-    implicit class TableCellMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableCell] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableCell](x: Self) {
       
-      @scala.inline
-      def setGetColumnIndex(value: () => Integer): Self = StObject.set(x, "getColumnIndex", js.Any.fromFunction0(value))
+      inline def setGetColumnIndex(value: () => Integer): Self = StObject.set(x, "getColumnIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetColumnSpan(value: () => Integer): Self = StObject.set(x, "getColumnSpan", js.Any.fromFunction0(value))
+      inline def setGetColumnSpan(value: () => Integer): Self = StObject.set(x, "getColumnSpan", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentAlignment(value: () => ContentAlignment): Self = StObject.set(x, "getContentAlignment", js.Any.fromFunction0(value))
+      inline def setGetContentAlignment(value: () => ContentAlignment): Self = StObject.set(x, "getContentAlignment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFill(value: () => Fill): Self = StObject.set(x, "getFill", js.Any.fromFunction0(value))
+      inline def setGetFill(value: () => Fill): Self = StObject.set(x, "getFill", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeadCell(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getHeadCell", js.Any.fromFunction0(value))
+      inline def setGetHeadCell(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getHeadCell", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMergeState(value: () => CellMergeState): Self = StObject.set(x, "getMergeState", js.Any.fromFunction0(value))
+      inline def setGetMergeState(value: () => CellMergeState): Self = StObject.set(x, "getMergeState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentColumn(value: () => TableColumn): Self = StObject.set(x, "getParentColumn", js.Any.fromFunction0(value))
+      inline def setGetParentColumn(value: () => TableColumn): Self = StObject.set(x, "getParentColumn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentRow(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.TableRow): Self = StObject.set(x, "getParentRow", js.Any.fromFunction0(value))
+      inline def setGetParentRow(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.TableRow): Self = StObject.set(x, "getParentRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Table): Self = StObject.set(x, "getParentTable", js.Any.fromFunction0(value))
+      inline def setGetParentTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Table): Self = StObject.set(x, "getParentTable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRowIndex(value: () => Integer): Self = StObject.set(x, "getRowIndex", js.Any.fromFunction0(value))
+      inline def setGetRowIndex(value: () => Integer): Self = StObject.set(x, "getRowIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRowSpan(value: () => Integer): Self = StObject.set(x, "getRowSpan", js.Any.fromFunction0(value))
+      inline def setGetRowSpan(value: () => Integer): Self = StObject.set(x, "getRowSpan", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => TextRange): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => TextRange): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetContentAlignment(value: ContentAlignment => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "setContentAlignment", js.Any.fromFunction1(value))
+      inline def setSetContentAlignment(value: ContentAlignment => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "setContentAlignment", js.Any.fromFunction1(value))
     }
   }
   
@@ -11136,17 +9655,14 @@ object Slides {
   }
   object TableCellRange {
     
-    @scala.inline
-    def apply(getTableCells: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]): TableCellRange = {
+    inline def apply(getTableCells: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]): TableCellRange = {
       val __obj = js.Dynamic.literal(getTableCells = js.Any.fromFunction0(getTableCells))
       __obj.asInstanceOf[TableCellRange]
     }
     
-    @scala.inline
-    implicit class TableCellRangeMutableBuilder[Self <: TableCellRange] (val x: Self) extends AnyVal {
+    extension [Self <: TableCellRange](x: Self) {
       
-      @scala.inline
-      def setGetTableCells(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]): Self = StObject.set(x, "getTableCells", js.Any.fromFunction0(value))
+      inline def setGetTableCells(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]): Self = StObject.set(x, "getTableCells", js.Any.fromFunction0(value))
     }
   }
   
@@ -11170,8 +9686,7 @@ object Slides {
   }
   object TableColumn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCell: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell,
       getIndex: () => Integer,
       getNumCells: () => Integer,
@@ -11183,26 +9698,19 @@ object Slides {
       __obj.asInstanceOf[TableColumn]
     }
     
-    @scala.inline
-    implicit class TableColumnMutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
+    extension [Self <: TableColumn](x: Self) {
       
-      @scala.inline
-      def setGetCell(value: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
+      inline def setGetCell(value: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+      inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumCells(value: () => Integer): Self = StObject.set(x, "getNumCells", js.Any.fromFunction0(value))
+      inline def setGetNumCells(value: () => Integer): Self = StObject.set(x, "getNumCells", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Table): Self = StObject.set(x, "getParentTable", js.Any.fromFunction0(value))
+      inline def setGetParentTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Table): Self = StObject.set(x, "getParentTable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
   
@@ -11225,8 +9733,7 @@ object Slides {
   }
   object TableRow {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCell: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell,
       getIndex: () => Integer,
       getMinimumHeight: () => Double,
@@ -11238,26 +9745,19 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.TableRow]
     }
     
-    @scala.inline
-    implicit class TableRowMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableRow] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableRow](x: Self) {
       
-      @scala.inline
-      def setGetCell(value: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
+      inline def setGetCell(value: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+      inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinimumHeight(value: () => Double): Self = StObject.set(x, "getMinimumHeight", js.Any.fromFunction0(value))
+      inline def setGetMinimumHeight(value: () => Double): Self = StObject.set(x, "getMinimumHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumCells(value: () => Integer): Self = StObject.set(x, "getNumCells", js.Any.fromFunction0(value))
+      inline def setGetNumCells(value: () => Integer): Self = StObject.set(x, "getNumCells", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Table): Self = StObject.set(x, "getParentTable", js.Any.fromFunction0(value))
+      inline def setGetParentTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Table): Self = StObject.set(x, "getParentTable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
   
@@ -11413,20 +9913,16 @@ object Slides {
   }
   object ThemeColor {
     
-    @scala.inline
-    def apply(getColorType: () => ColorType, getThemeColorType: () => ThemeColorType): ThemeColor = {
+    inline def apply(getColorType: () => ColorType, getThemeColorType: () => ThemeColorType): ThemeColor = {
       val __obj = js.Dynamic.literal(getColorType = js.Any.fromFunction0(getColorType), getThemeColorType = js.Any.fromFunction0(getThemeColorType))
       __obj.asInstanceOf[ThemeColor]
     }
     
-    @scala.inline
-    implicit class ThemeColorMutableBuilder[Self <: ThemeColor] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeColor](x: Self) {
       
-      @scala.inline
-      def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
+      inline def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetThemeColorType(value: () => ThemeColorType): Self = StObject.set(x, "getThemeColorType", js.Any.fromFunction0(value))
+      inline def setGetThemeColorType(value: () => ThemeColorType): Self = StObject.set(x, "getThemeColorType", js.Any.fromFunction0(value))
     }
   }
   

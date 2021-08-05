@@ -13,19 +13,15 @@ trait HttpProperties extends StObject {
 }
 object HttpProperties {
   
-  @scala.inline
-  def apply(): HttpProperties = {
+  inline def apply(): HttpProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpProperties]
   }
   
-  @scala.inline
-  implicit class HttpPropertiesMutableBuilder[Self <: HttpProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HttpProperties](x: Self) {
     
-    @scala.inline
-    def setHttpName(value: NamespaceName): Self = StObject.set(x, "HttpName", value.asInstanceOf[js.Any])
+    inline def setHttpName(value: NamespaceName): Self = StObject.set(x, "HttpName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpNameUndefined: Self = StObject.set(x, "HttpName", js.undefined)
+    inline def setHttpNameUndefined: Self = StObject.set(x, "HttpName", js.undefined)
   }
 }

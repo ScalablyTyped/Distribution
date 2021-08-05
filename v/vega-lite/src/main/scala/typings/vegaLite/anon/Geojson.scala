@@ -23,28 +23,21 @@ trait Geojson extends StObject {
 }
 object Geojson {
   
-  @scala.inline
-  def apply(): Geojson = {
+  inline def apply(): Geojson = {
     val __obj = js.Dynamic.literal(geojson = "geojson", nominal = "nominal", ordinal = "ordinal", quantitative = "quantitative", temporal = "temporal")
     __obj.asInstanceOf[Geojson]
   }
   
-  @scala.inline
-  implicit class GeojsonMutableBuilder[Self <: Geojson] (val x: Self) extends AnyVal {
+  extension [Self <: Geojson](x: Self) {
     
-    @scala.inline
-    def setGeojson(value: geojson): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
+    inline def setGeojson(value: geojson): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNominal(value: nominal): Self = StObject.set(x, "nominal", value.asInstanceOf[js.Any])
+    inline def setNominal(value: nominal): Self = StObject.set(x, "nominal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinal(value: ordinal): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: ordinal): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantitative(value: quantitative): Self = StObject.set(x, "quantitative", value.asInstanceOf[js.Any])
+    inline def setQuantitative(value: quantitative): Self = StObject.set(x, "quantitative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporal(value: temporal): Self = StObject.set(x, "temporal", value.asInstanceOf[js.Any])
+    inline def setTemporal(value: temporal): Self = StObject.set(x, "temporal", value.asInstanceOf[js.Any])
   }
 }

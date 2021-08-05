@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WidgetFormat extends StObject
 object WidgetFormat {
   
-  @scala.inline
-  def classic: typings.deezerSdk.deezerSdkStrings.classic = "classic".asInstanceOf[typings.deezerSdk.deezerSdkStrings.classic]
+  inline def classic: typings.deezerSdk.deezerSdkStrings.classic = "classic".asInstanceOf[typings.deezerSdk.deezerSdkStrings.classic]
   
-  @scala.inline
-  def square: typings.deezerSdk.deezerSdkStrings.square = "square".asInstanceOf[typings.deezerSdk.deezerSdkStrings.square]
+  inline def square: typings.deezerSdk.deezerSdkStrings.square = "square".asInstanceOf[typings.deezerSdk.deezerSdkStrings.square]
 }

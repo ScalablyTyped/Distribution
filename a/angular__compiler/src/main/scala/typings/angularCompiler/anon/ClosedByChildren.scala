@@ -23,58 +23,41 @@ trait ClosedByChildren extends StObject {
 }
 object ClosedByChildren {
   
-  @scala.inline
-  def apply(): ClosedByChildren = {
+  inline def apply(): ClosedByChildren = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClosedByChildren]
   }
   
-  @scala.inline
-  implicit class ClosedByChildrenMutableBuilder[Self <: ClosedByChildren] (val x: Self) extends AnyVal {
+  extension [Self <: ClosedByChildren](x: Self) {
     
-    @scala.inline
-    def setClosedByChildren(value: js.Array[String]): Self = StObject.set(x, "closedByChildren", value.asInstanceOf[js.Any])
+    inline def setClosedByChildren(value: js.Array[String]): Self = StObject.set(x, "closedByChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedByChildrenUndefined: Self = StObject.set(x, "closedByChildren", js.undefined)
+    inline def setClosedByChildrenUndefined: Self = StObject.set(x, "closedByChildren", js.undefined)
     
-    @scala.inline
-    def setClosedByChildrenVarargs(value: String*): Self = StObject.set(x, "closedByChildren", js.Array(value :_*))
+    inline def setClosedByChildrenVarargs(value: String*): Self = StObject.set(x, "closedByChildren", js.Array(value :_*))
     
-    @scala.inline
-    def setClosedByParent(value: Boolean): Self = StObject.set(x, "closedByParent", value.asInstanceOf[js.Any])
+    inline def setClosedByParent(value: Boolean): Self = StObject.set(x, "closedByParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedByParentUndefined: Self = StObject.set(x, "closedByParent", js.undefined)
+    inline def setClosedByParentUndefined: Self = StObject.set(x, "closedByParent", js.undefined)
     
-    @scala.inline
-    def setContentType(value: TagContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: TagContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setIgnoreFirstLf(value: Boolean): Self = StObject.set(x, "ignoreFirstLf", value.asInstanceOf[js.Any])
+    inline def setIgnoreFirstLf(value: Boolean): Self = StObject.set(x, "ignoreFirstLf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreFirstLfUndefined: Self = StObject.set(x, "ignoreFirstLf", js.undefined)
+    inline def setIgnoreFirstLfUndefined: Self = StObject.set(x, "ignoreFirstLf", js.undefined)
     
-    @scala.inline
-    def setImplicitNamespacePrefix(value: String): Self = StObject.set(x, "implicitNamespacePrefix", value.asInstanceOf[js.Any])
+    inline def setImplicitNamespacePrefix(value: String): Self = StObject.set(x, "implicitNamespacePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitNamespacePrefixUndefined: Self = StObject.set(x, "implicitNamespacePrefix", js.undefined)
+    inline def setImplicitNamespacePrefixUndefined: Self = StObject.set(x, "implicitNamespacePrefix", js.undefined)
     
-    @scala.inline
-    def setIsVoid(value: Boolean): Self = StObject.set(x, "isVoid", value.asInstanceOf[js.Any])
+    inline def setIsVoid(value: Boolean): Self = StObject.set(x, "isVoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVoidUndefined: Self = StObject.set(x, "isVoid", js.undefined)
+    inline def setIsVoidUndefined: Self = StObject.set(x, "isVoid", js.undefined)
     
-    @scala.inline
-    def setPreventNamespaceInheritance(value: Boolean): Self = StObject.set(x, "preventNamespaceInheritance", value.asInstanceOf[js.Any])
+    inline def setPreventNamespaceInheritance(value: Boolean): Self = StObject.set(x, "preventNamespaceInheritance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventNamespaceInheritanceUndefined: Self = StObject.set(x, "preventNamespaceInheritance", js.undefined)
+    inline def setPreventNamespaceInheritanceUndefined: Self = StObject.set(x, "preventNamespaceInheritance", js.undefined)
   }
 }

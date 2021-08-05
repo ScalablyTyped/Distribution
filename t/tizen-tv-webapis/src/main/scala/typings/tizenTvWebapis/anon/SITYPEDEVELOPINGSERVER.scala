@@ -29,22 +29,17 @@ trait SITYPEDEVELOPINGSERVER extends StObject {
 }
 object SITYPEDEVELOPINGSERVER {
   
-  @scala.inline
-  def apply(): SITYPEDEVELOPINGSERVER = {
+  inline def apply(): SITYPEDEVELOPINGSERVER = {
     val __obj = js.Dynamic.literal(SI_TYPE_DEVELOPING_SERVER = 2, SI_TYPE_DEVELOPMENT_SERVER = 1, SI_TYPE_OPERATIING_SERVER = 0)
     __obj.asInstanceOf[SITYPEDEVELOPINGSERVER]
   }
   
-  @scala.inline
-  implicit class SITYPEDEVELOPINGSERVERMutableBuilder[Self <: SITYPEDEVELOPINGSERVER] (val x: Self) extends AnyVal {
+  extension [Self <: SITYPEDEVELOPINGSERVER](x: Self) {
     
-    @scala.inline
-    def setSI_TYPE_DEVELOPING_SERVER(value: `2`): Self = StObject.set(x, "SI_TYPE_DEVELOPING_SERVER", value.asInstanceOf[js.Any])
+    inline def setSI_TYPE_DEVELOPING_SERVER(value: `2`): Self = StObject.set(x, "SI_TYPE_DEVELOPING_SERVER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSI_TYPE_DEVELOPMENT_SERVER(value: `1`): Self = StObject.set(x, "SI_TYPE_DEVELOPMENT_SERVER", value.asInstanceOf[js.Any])
+    inline def setSI_TYPE_DEVELOPMENT_SERVER(value: `1`): Self = StObject.set(x, "SI_TYPE_DEVELOPMENT_SERVER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSI_TYPE_OPERATIING_SERVER(value: `0`): Self = StObject.set(x, "SI_TYPE_OPERATIING_SERVER", value.asInstanceOf[js.Any])
+    inline def setSI_TYPE_OPERATIING_SERVER(value: `0`): Self = StObject.set(x, "SI_TYPE_OPERATIING_SERVER", value.asInstanceOf[js.Any])
   }
 }

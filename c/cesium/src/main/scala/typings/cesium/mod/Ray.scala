@@ -22,8 +22,6 @@ object Ray {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getPoint(ray: Ray, t: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")(ray.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
-  @scala.inline
-  def getPoint(ray: Ray, t: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")(ray.asInstanceOf[js.Any], t.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  inline def getPoint(ray: Ray, t: Double): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")(ray.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  inline def getPoint(ray: Ray, t: Double, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")(ray.asInstanceOf[js.Any], t.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
 }

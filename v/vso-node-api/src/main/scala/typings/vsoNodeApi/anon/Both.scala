@@ -16,25 +16,19 @@ trait Both extends StObject {
 }
 object Both {
   
-  @scala.inline
-  def apply(both: scala.Double, none: scala.Double, team: scala.Double, user: scala.Double): Both = {
+  inline def apply(both: scala.Double, none: scala.Double, team: scala.Double, user: scala.Double): Both = {
     val __obj = js.Dynamic.literal(both = both.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Both]
   }
   
-  @scala.inline
-  implicit class BothMutableBuilder[Self <: Both] (val x: Self) extends AnyVal {
+  extension [Self <: Both](x: Self) {
     
-    @scala.inline
-    def setBoth(value: scala.Double): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
+    inline def setBoth(value: scala.Double): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam(value: scala.Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+    inline def setTeam(value: scala.Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: scala.Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: scala.Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

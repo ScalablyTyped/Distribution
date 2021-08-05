@@ -32,8 +32,7 @@ object mod {
   }
   object ComplexityOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lowerCase: Double,
       max: Double,
       min: Double,
@@ -46,29 +45,21 @@ object mod {
       __obj.asInstanceOf[ComplexityOptions]
     }
     
-    @scala.inline
-    implicit class ComplexityOptionsMutableBuilder[Self <: ComplexityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComplexityOptions](x: Self) {
       
-      @scala.inline
-      def setLowerCase(value: Double): Self = StObject.set(x, "lowerCase", value.asInstanceOf[js.Any])
+      inline def setLowerCase(value: Double): Self = StObject.set(x, "lowerCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeric(value: Double): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: Double): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequirementCount(value: Double): Self = StObject.set(x, "requirementCount", value.asInstanceOf[js.Any])
+      inline def setRequirementCount(value: Double): Self = StObject.set(x, "requirementCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: Double): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Double): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpperCase(value: Double): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
+      inline def setUpperCase(value: Double): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
     }
   }
   

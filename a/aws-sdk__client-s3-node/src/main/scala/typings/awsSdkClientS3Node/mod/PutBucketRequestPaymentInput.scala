@@ -10,8 +10,7 @@ trait PutBucketRequestPaymentInput
      with typings.awsSdkClientS3Node.typesPutBucketRequestPaymentInputMod.PutBucketRequestPaymentInput
 object PutBucketRequestPaymentInput {
   
-  @scala.inline
-  def apply(Bucket: String, RequestPaymentConfiguration: RequestPaymentConfiguration): PutBucketRequestPaymentInput = {
+  inline def apply(Bucket: String, RequestPaymentConfiguration: RequestPaymentConfiguration): PutBucketRequestPaymentInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], RequestPaymentConfiguration = RequestPaymentConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketRequestPaymentInput]
   }

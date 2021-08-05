@@ -30,55 +30,39 @@ trait RecurrenceRange extends StObject {
 }
 object RecurrenceRange {
   
-  @scala.inline
-  def apply(): RecurrenceRange = {
+  inline def apply(): RecurrenceRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecurrenceRange]
   }
   
-  @scala.inline
-  implicit class RecurrenceRangeMutableBuilder[Self <: RecurrenceRange] (val x: Self) extends AnyVal {
+  extension [Self <: RecurrenceRange](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: NullableOption[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: NullableOption[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateNull: Self = StObject.set(x, "endDate", null)
+    inline def setEndDateNull: Self = StObject.set(x, "endDate", null)
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setNumberOfOccurrences(value: Double): Self = StObject.set(x, "numberOfOccurrences", value.asInstanceOf[js.Any])
+    inline def setNumberOfOccurrences(value: Double): Self = StObject.set(x, "numberOfOccurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfOccurrencesUndefined: Self = StObject.set(x, "numberOfOccurrences", js.undefined)
+    inline def setNumberOfOccurrencesUndefined: Self = StObject.set(x, "numberOfOccurrences", js.undefined)
     
-    @scala.inline
-    def setRecurrenceTimeZone(value: NullableOption[String]): Self = StObject.set(x, "recurrenceTimeZone", value.asInstanceOf[js.Any])
+    inline def setRecurrenceTimeZone(value: NullableOption[String]): Self = StObject.set(x, "recurrenceTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceTimeZoneNull: Self = StObject.set(x, "recurrenceTimeZone", null)
+    inline def setRecurrenceTimeZoneNull: Self = StObject.set(x, "recurrenceTimeZone", null)
     
-    @scala.inline
-    def setRecurrenceTimeZoneUndefined: Self = StObject.set(x, "recurrenceTimeZone", js.undefined)
+    inline def setRecurrenceTimeZoneUndefined: Self = StObject.set(x, "recurrenceTimeZone", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: NullableOption[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: NullableOption[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateNull: Self = StObject.set(x, "startDate", null)
+    inline def setStartDateNull: Self = StObject.set(x, "startDate", null)
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[RecurrenceRangeType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[RecurrenceRangeType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

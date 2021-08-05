@@ -60,8 +60,7 @@ trait XVisualObject
 }
 object XVisualObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getMapUnit: Double => Double,
     getPreferredVisualRepresentation: Double => VisualRepresentation,
@@ -74,19 +73,14 @@ object XVisualObject {
     __obj.asInstanceOf[XVisualObject]
   }
   
-  @scala.inline
-  implicit class XVisualObjectMutableBuilder[Self <: XVisualObject] (val x: Self) extends AnyVal {
+  extension [Self <: XVisualObject](x: Self) {
     
-    @scala.inline
-    def setGetMapUnit(value: Double => Double): Self = StObject.set(x, "getMapUnit", js.Any.fromFunction1(value))
+    inline def setGetMapUnit(value: Double => Double): Self = StObject.set(x, "getMapUnit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPreferredVisualRepresentation(value: Double => VisualRepresentation): Self = StObject.set(x, "getPreferredVisualRepresentation", js.Any.fromFunction1(value))
+    inline def setGetPreferredVisualRepresentation(value: Double => VisualRepresentation): Self = StObject.set(x, "getPreferredVisualRepresentation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVisualAreaSize(value: Double => Size): Self = StObject.set(x, "getVisualAreaSize", js.Any.fromFunction1(value))
+    inline def setGetVisualAreaSize(value: Double => Size): Self = StObject.set(x, "getVisualAreaSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisualAreaSize(value: (Double, Size) => Unit): Self = StObject.set(x, "setVisualAreaSize", js.Any.fromFunction2(value))
+    inline def setSetVisualAreaSize(value: (Double, Size) => Unit): Self = StObject.set(x, "setVisualAreaSize", js.Any.fromFunction2(value))
   }
 }

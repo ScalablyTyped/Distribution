@@ -35,8 +35,7 @@ object markdowncodeblocksMod {
       *
       * @returns An array of MarkdownCodeBlocks.
       */
-    @scala.inline
-    def findMarkdownCodeBlocks(text: String): js.Array[MarkdownCodeBlock] = ^.asInstanceOf[js.Dynamic].applyDynamic("findMarkdownCodeBlocks")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MarkdownCodeBlock]]
+    inline def findMarkdownCodeBlocks(text: String): js.Array[MarkdownCodeBlock] = ^.asInstanceOf[js.Dynamic].applyDynamic("findMarkdownCodeBlocks")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MarkdownCodeBlock]]
     
     /**
       * Check whether the given file extension is a markdown extension
@@ -44,7 +43,6 @@ object markdowncodeblocksMod {
       *
       * @returns true/false depending on whether this is a supported markdown extension
       */
-    @scala.inline
-    def isMarkdown(`extension`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdown")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isMarkdown(`extension`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdown")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

@@ -10,19 +10,15 @@ trait Mpeg2FilterSettings extends StObject {
 }
 object Mpeg2FilterSettings {
   
-  @scala.inline
-  def apply(): Mpeg2FilterSettings = {
+  inline def apply(): Mpeg2FilterSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mpeg2FilterSettings]
   }
   
-  @scala.inline
-  implicit class Mpeg2FilterSettingsMutableBuilder[Self <: Mpeg2FilterSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Mpeg2FilterSettings](x: Self) {
     
-    @scala.inline
-    def setTemporalFilterSettings(value: TemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
+    inline def setTemporalFilterSettings(value: TemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporalFilterSettingsUndefined: Self = StObject.set(x, "TemporalFilterSettings", js.undefined)
+    inline def setTemporalFilterSettingsUndefined: Self = StObject.set(x, "TemporalFilterSettings", js.undefined)
   }
 }

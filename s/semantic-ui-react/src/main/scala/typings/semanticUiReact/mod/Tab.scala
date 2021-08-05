@@ -19,6 +19,5 @@ class Tab protected ()
 }
 object Tab {
   
-  @scala.inline
-  def apply: TabComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Tab").asInstanceOf[TabComponent]
+  inline def apply: TabComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Tab").asInstanceOf[TabComponent]
 }

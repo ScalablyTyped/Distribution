@@ -38,7 +38,7 @@ object stylableTransformerMod {
     
     def addAdditionalSelectors(addedSelectors: js.Array[AdditionalSelector], selectorAst: SelectorAstNode): Unit = js.native
     
-    var addDevRules: js.Any = js.native
+    /* private */ var addDevRules: js.Any = js.native
     
     def addGlobalsToMeta(selectorAst: js.Array[SelectorAstNode]): Unit = js.native
     def addGlobalsToMeta(selectorAst: js.Array[SelectorAstNode], meta: StylableMeta): Unit = js.native
@@ -71,7 +71,7 @@ object stylableTransformerMod {
     
     def getScopedCSSVar(decl: Declaration, meta: StylableMeta, cssVarsMapping: Record[String, String]): String = js.native
     
-    var handleChunkNode: js.Any = js.native
+    /* private */ var handleChunkNode: js.Any = js.native
     
     def handleClass(meta: StylableMeta, node: SelectorAstNode, name: String): CSSResolve[StylableSymbol] = js.native
     def handleClass(
@@ -116,7 +116,7 @@ object stylableTransformerMod {
       originMeta: StylableMeta
     ): CSSResolve[StylableSymbol] = js.native
     
-    var handleCustomSelector: js.Any = js.native
+    /* private */ var handleCustomSelector: js.Any = js.native
     
     def handleElement(meta: StylableMeta, node: SelectorAstNode, name: String): CSSResolve[StylableSymbol] | Symbol = js.native
     def handleElement(meta: StylableMeta, node: SelectorAstNode, name: String, originMeta: StylableMeta): CSSResolve[StylableSymbol] | Symbol = js.native
@@ -155,11 +155,11 @@ object stylableTransformerMod {
       originMeta: StylableMeta
     ): CSSResolve[StylableSymbol] = js.native
     
-    var isDuplicateStScopeDiagnostic: js.Any = js.native
+    /* private */ var isDuplicateStScopeDiagnostic: js.Any = js.native
     
     var keepValues: Boolean = js.native
     
-    var metaParts: js.Any = js.native
+    /* private */ var metaParts: js.Any = js.native
     
     var mode: EnvMode = js.native
     
@@ -167,9 +167,9 @@ object stylableTransformerMod {
     
     var replaceValueHook: js.UndefOr[typings.stylableCore.stylableTransformerMod.replaceValueHook] = js.native
     
-    var resetTransformProperties: js.Any = js.native
+    /* private */ var resetTransformProperties: js.Any = js.native
     
-    var resolveMetaParts: js.Any = js.native
+    /* private */ var resolveMetaParts: js.Any = js.native
     
     def resolveSelectorElements(meta: StylableMeta, selector: String): js.Array[js.Array[ResolvedElement]] = js.native
     
@@ -178,7 +178,7 @@ object stylableTransformerMod {
     def scope(name: String, namespace: String): String = js.native
     def scope(name: String, namespace: String, delimiter: String): String = js.native
     
-    var scopeClassNode: js.Any = js.native
+    /* private */ var scopeClassNode: js.Any = js.native
     
     def scopeKeyframes(ast: Root_, meta: StylableMeta): Record[String, String] = js.native
     
@@ -340,8 +340,7 @@ object stylableTransformerMod {
     def transformGlobals(ast: Root_, meta: StylableMeta): Unit = js.native
   }
   
-  @scala.inline
-  def removeSTDirective(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSTDirective")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeSTDirective(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSTDirective")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object transformerWarnings {
     
@@ -349,23 +348,17 @@ object stylableTransformerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def CANNOT_EXTEND_JS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_JS")().asInstanceOf[String]
+    inline def CANNOT_EXTEND_JS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_JS")().asInstanceOf[String]
     
-    @scala.inline
-    def CANNOT_EXTEND_UNKNOWN_SYMBOL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_UNKNOWN_SYMBOL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def CANNOT_EXTEND_UNKNOWN_SYMBOL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_UNKNOWN_SYMBOL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def IMPORT_ISNT_EXTENDABLE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("IMPORT_ISNT_EXTENDABLE")().asInstanceOf[String]
+    inline def IMPORT_ISNT_EXTENDABLE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("IMPORT_ISNT_EXTENDABLE")().asInstanceOf[String]
     
-    @scala.inline
-    def KEYFRAME_NAME_RESERVED(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("KEYFRAME_NAME_RESERVED")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def KEYFRAME_NAME_RESERVED(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("KEYFRAME_NAME_RESERVED")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def UNKNOWN_IMPORT_ALIAS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORT_ALIAS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def UNKNOWN_IMPORT_ALIAS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORT_ALIAS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def UNKNOWN_PSEUDO_ELEMENT(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_PSEUDO_ELEMENT")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def UNKNOWN_PSEUDO_ELEMENT(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_PSEUDO_ELEMENT")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   trait AdditionalSelector extends StObject {
@@ -378,23 +371,18 @@ object stylableTransformerMod {
   }
   object AdditionalSelector {
     
-    @scala.inline
-    def apply(customElementChunk: String, node: SelectorAstNode, selectorNode: SelectorAstNode): AdditionalSelector = {
+    inline def apply(customElementChunk: String, node: SelectorAstNode, selectorNode: SelectorAstNode): AdditionalSelector = {
       val __obj = js.Dynamic.literal(customElementChunk = customElementChunk.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], selectorNode = selectorNode.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdditionalSelector]
     }
     
-    @scala.inline
-    implicit class AdditionalSelectorMutableBuilder[Self <: AdditionalSelector] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalSelector](x: Self) {
       
-      @scala.inline
-      def setCustomElementChunk(value: String): Self = StObject.set(x, "customElementChunk", value.asInstanceOf[js.Any])
+      inline def setCustomElementChunk(value: String): Self = StObject.set(x, "customElementChunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: SelectorAstNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: SelectorAstNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorNode(value: SelectorAstNode): Self = StObject.set(x, "selectorNode", value.asInstanceOf[js.Any])
+      inline def setSelectorNode(value: SelectorAstNode): Self = StObject.set(x, "selectorNode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -405,11 +393,9 @@ object stylableTransformerMod {
   trait EnvMode extends StObject
   object EnvMode {
     
-    @scala.inline
-    def development: typings.stylableCore.stylableCoreStrings.development = "development".asInstanceOf[typings.stylableCore.stylableCoreStrings.development]
+    inline def development: typings.stylableCore.stylableCoreStrings.development = "development".asInstanceOf[typings.stylableCore.stylableCoreStrings.development]
     
-    @scala.inline
-    def production: typings.stylableCore.stylableCoreStrings.production = "production".asInstanceOf[typings.stylableCore.stylableCoreStrings.production]
+    inline def production: typings.stylableCore.stylableCoreStrings.production = "production".asInstanceOf[typings.stylableCore.stylableCoreStrings.production]
   }
   
   trait KeyFrameWithNode extends StObject {
@@ -420,20 +406,16 @@ object stylableTransformerMod {
   }
   object KeyFrameWithNode {
     
-    @scala.inline
-    def apply(node: Node, value: String): KeyFrameWithNode = {
+    inline def apply(node: Node, value: String): KeyFrameWithNode = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyFrameWithNode]
     }
     
-    @scala.inline
-    implicit class KeyFrameWithNodeMutableBuilder[Self <: KeyFrameWithNode] (val x: Self) extends AnyVal {
+    extension [Self <: KeyFrameWithNode](x: Self) {
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -445,8 +427,7 @@ object stylableTransformerMod {
   }
   object MetaParts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `class`: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]],
       element: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]]
     ): MetaParts = {
@@ -455,14 +436,11 @@ object stylableTransformerMod {
       __obj.asInstanceOf[MetaParts]
     }
     
-    @scala.inline
-    implicit class MetaPartsMutableBuilder[Self <: MetaParts] (val x: Self) extends AnyVal {
+    extension [Self <: MetaParts](x: Self) {
       
-      @scala.inline
-      def setClass(value: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Record[String, js.Array[CSSResolve[ClassSymbol | ElementSymbol]]]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
   }
   
@@ -476,27 +454,21 @@ object stylableTransformerMod {
   }
   object ResolvedElement {
     
-    @scala.inline
-    def apply(name: String, resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]], `type`: String): ResolvedElement = {
+    inline def apply(name: String, resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]], `type`: String): ResolvedElement = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedElement]
     }
     
-    @scala.inline
-    implicit class ResolvedElementMutableBuilder[Self <: ResolvedElement] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedElement](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolved(value: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedVarargs(value: (CSSResolve[ClassSymbol | ElementSymbol])*): Self = StObject.set(x, "resolved", js.Array(value :_*))
+      inline def setResolvedVarargs(value: (CSSResolve[ClassSymbol | ElementSymbol])*): Self = StObject.set(x, "resolved", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -510,8 +482,7 @@ object stylableTransformerMod {
   }
   object ScopeAnchor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]],
       `type`: `class` | element | `pseudo-element`
@@ -521,20 +492,15 @@ object stylableTransformerMod {
       __obj.asInstanceOf[ScopeAnchor]
     }
     
-    @scala.inline
-    implicit class ScopeAnchorMutableBuilder[Self <: ScopeAnchor] (val x: Self) extends AnyVal {
+    extension [Self <: ScopeAnchor](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolved(value: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedVarargs(value: (CSSResolve[ClassSymbol | ElementSymbol])*): Self = StObject.set(x, "resolved", js.Array(value :_*))
+      inline def setResolvedVarargs(value: (CSSResolve[ClassSymbol | ElementSymbol])*): Self = StObject.set(x, "resolved", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: `class` | element | `pseudo-element`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `class` | element | `pseudo-element`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -572,8 +538,7 @@ object stylableTransformerMod {
   }
   object ScopeContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalSelectors: js.Array[js.Function0[Unit]],
       createNestedContext: SelectorAstNode => ScopeContext,
       elements: js.Array[js.Any],
@@ -589,77 +554,53 @@ object stylableTransformerMod {
       __obj.asInstanceOf[ScopeContext]
     }
     
-    @scala.inline
-    implicit class ScopeContextMutableBuilder[Self <: ScopeContext] (val x: Self) extends AnyVal {
+    extension [Self <: ScopeContext](x: Self) {
       
-      @scala.inline
-      def setAdditionalSelectors(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "additionalSelectors", value.asInstanceOf[js.Any])
+      inline def setAdditionalSelectors(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "additionalSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalSelectorsVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "additionalSelectors", js.Array(value :_*))
+      inline def setAdditionalSelectorsVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "additionalSelectors", js.Array(value :_*))
       
-      @scala.inline
-      def setChunk(value: SelectorChunk2): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: SelectorChunk2): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+      inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
       
-      @scala.inline
-      def setChunks(value: js.Array[SelectorChunk2]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      inline def setChunks(value: js.Array[SelectorChunk2]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
+      inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
       
-      @scala.inline
-      def setChunksVarargs(value: SelectorChunk2*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: SelectorChunk2*): Self = StObject.set(x, "chunks", js.Array(value :_*))
       
-      @scala.inline
-      def setCreateNestedContext(value: SelectorAstNode => ScopeContext): Self = StObject.set(x, "createNestedContext", js.Any.fromFunction1(value))
+      inline def setCreateNestedContext(value: SelectorAstNode => ScopeContext): Self = StObject.set(x, "createNestedContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrentAnchor(value: ScopeAnchor): Self = StObject.set(x, "currentAnchor", value.asInstanceOf[js.Any])
+      inline def setCurrentAnchor(value: ScopeAnchor): Self = StObject.set(x, "currentAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentAnchorUndefined: Self = StObject.set(x, "currentAnchor", js.undefined)
+      inline def setCurrentAnchorUndefined: Self = StObject.set(x, "currentAnchor", js.undefined)
       
-      @scala.inline
-      def setElements(value: js.Array[js.Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[js.Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: js.Any*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: js.Any*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setInitRootAnchor(value: ScopeAnchor => Unit): Self = StObject.set(x, "initRootAnchor", js.Any.fromFunction1(value))
+      inline def setInitRootAnchor(value: ScopeAnchor => Unit): Self = StObject.set(x, "initRootAnchor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMetaParts(value: MetaParts): Self = StObject.set(x, "metaParts", value.asInstanceOf[js.Any])
+      inline def setMetaParts(value: MetaParts): Self = StObject.set(x, "metaParts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaPartsUndefined: Self = StObject.set(x, "metaParts", js.undefined)
+      inline def setMetaPartsUndefined: Self = StObject.set(x, "metaParts", js.undefined)
       
-      @scala.inline
-      def setNode(value: SelectorAstNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: SelectorAstNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setOriginMeta(value: StylableMeta): Self = StObject.set(x, "originMeta", value.asInstanceOf[js.Any])
+      inline def setOriginMeta(value: StylableMeta): Self = StObject.set(x, "originMeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: Rule_): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: Rule_): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "selectorAst", value.asInstanceOf[js.Any])
+      inline def setSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "selectorAst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorIndex(value: Double): Self = StObject.set(x, "selectorIndex", value.asInstanceOf[js.Any])
+      inline def setSelectorIndex(value: Double): Self = StObject.set(x, "selectorIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetCurrentAnchor(value: ScopeAnchor => Unit): Self = StObject.set(x, "setCurrentAnchor", js.Any.fromFunction1(value))
+      inline def setSetCurrentAnchor(value: ScopeAnchor => Unit): Self = StObject.set(x, "setCurrentAnchor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformGlobals(value: Boolean): Self = StObject.set(x, "transformGlobals", value.asInstanceOf[js.Any])
+      inline def setTransformGlobals(value: Boolean): Self = StObject.set(x, "transformGlobals", value.asInstanceOf[js.Any])
     }
   }
   
@@ -677,8 +618,7 @@ object stylableTransformerMod {
   }
   object ScopedSelectorResults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: StylableMeta,
       elements: js.Array[js.Array[ResolvedElement]],
       selector: String,
@@ -688,29 +628,21 @@ object stylableTransformerMod {
       __obj.asInstanceOf[ScopedSelectorResults]
     }
     
-    @scala.inline
-    implicit class ScopedSelectorResultsMutableBuilder[Self <: ScopedSelectorResults] (val x: Self) extends AnyVal {
+    extension [Self <: ScopedSelectorResults](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: StylableMeta): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: StylableMeta): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElements(value: js.Array[js.Array[ResolvedElement]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[js.Array[ResolvedElement]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: js.Array[ResolvedElement]*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: js.Array[ResolvedElement]*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "selectorAst", value.asInstanceOf[js.Any])
+      inline def setSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "selectorAst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: StylableSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: StylableSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolNull: Self = StObject.set(x, "symbol", null)
+      inline def setSymbolNull: Self = StObject.set(x, "symbol", null)
     }
   }
   
@@ -726,8 +658,7 @@ object stylableTransformerMod {
   }
   object StylableExports {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       classes: Record[String, String],
       keyframes: Record[String, String],
       stVars: Record[String, String],
@@ -737,20 +668,15 @@ object stylableTransformerMod {
       __obj.asInstanceOf[StylableExports]
     }
     
-    @scala.inline
-    implicit class StylableExportsMutableBuilder[Self <: StylableExports] (val x: Self) extends AnyVal {
+    extension [Self <: StylableExports](x: Self) {
       
-      @scala.inline
-      def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframes(value: Record[String, String]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: Record[String, String]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStVars(value: Record[String, String]): Self = StObject.set(x, "stVars", value.asInstanceOf[js.Any])
+      inline def setStVars(value: Record[String, String]): Self = StObject.set(x, "stVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVars(value: Record[String, String]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: Record[String, String]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     }
   }
   
@@ -762,20 +688,16 @@ object stylableTransformerMod {
   }
   object StylableResults {
     
-    @scala.inline
-    def apply(exports: StylableExports, meta: StylableMeta): StylableResults = {
+    inline def apply(exports: StylableExports, meta: StylableMeta): StylableResults = {
       val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylableResults]
     }
     
-    @scala.inline
-    implicit class StylableResultsMutableBuilder[Self <: StylableResults] (val x: Self) extends AnyVal {
+    extension [Self <: StylableResults](x: Self) {
       
-      @scala.inline
-      def setExports(value: StylableExports): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: StylableExports): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: StylableMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: StylableMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -787,30 +709,24 @@ object stylableTransformerMod {
   }
   object TransformHooks {
     
-    @scala.inline
-    def apply(): TransformHooks = {
+    inline def apply(): TransformHooks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformHooks]
     }
     
-    @scala.inline
-    implicit class TransformHooksMutableBuilder[Self <: TransformHooks] (val x: Self) extends AnyVal {
+    extension [Self <: TransformHooks](x: Self) {
       
-      @scala.inline
-      def setPostProcessor(
+      inline def setPostProcessor(
         value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults & js.Object
       ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
+      inline def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
       
-      @scala.inline
-      def setReplaceValueHook(
+      inline def setReplaceValueHook(
         value: (/* value */ String, /* name */ String | Args, /* isLocal */ Boolean, /* passedThrough */ js.Array[String]) => String
       ): Self = StObject.set(x, "replaceValueHook", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setReplaceValueHookUndefined: Self = StObject.set(x, "replaceValueHook", js.undefined)
+      inline def setReplaceValueHookUndefined: Self = StObject.set(x, "replaceValueHook", js.undefined)
     }
   }
   
@@ -834,8 +750,7 @@ object stylableTransformerMod {
   }
   object TransformerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       diagnostics: Diagnostics,
       fileProcessor: FileProcessor[StylableMeta],
       requireModule: String => js.Any
@@ -844,51 +759,37 @@ object stylableTransformerMod {
       __obj.asInstanceOf[TransformerOptions]
     }
     
-    @scala.inline
-    implicit class TransformerOptionsMutableBuilder[Self <: TransformerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransformerOptions](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+      inline def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileProcessor(value: FileProcessor[StylableMeta]): Self = StObject.set(x, "fileProcessor", value.asInstanceOf[js.Any])
+      inline def setFileProcessor(value: FileProcessor[StylableMeta]): Self = StObject.set(x, "fileProcessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepValues(value: Boolean): Self = StObject.set(x, "keepValues", value.asInstanceOf[js.Any])
+      inline def setKeepValues(value: Boolean): Self = StObject.set(x, "keepValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
+      inline def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
       
-      @scala.inline
-      def setMode(value: EnvMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: EnvMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPostProcessor(
+      inline def setPostProcessor(
         value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults & js.Object
       ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
+      inline def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
       
-      @scala.inline
-      def setReplaceValueHook(
+      inline def setReplaceValueHook(
         value: (/* value */ String, /* name */ String | Args, /* isLocal */ Boolean, /* passedThrough */ js.Array[String]) => String
       ): Self = StObject.set(x, "replaceValueHook", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setReplaceValueHookUndefined: Self = StObject.set(x, "replaceValueHook", js.undefined)
+      inline def setReplaceValueHookUndefined: Self = StObject.set(x, "replaceValueHook", js.undefined)
       
-      @scala.inline
-      def setRequireModule(value: String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
+      inline def setRequireModule(value: String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
     }
   }
   

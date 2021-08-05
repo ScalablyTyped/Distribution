@@ -9,8 +9,7 @@ trait PlayToConnection
      with IPlayToConnection
 object PlayToConnection {
   
-  @scala.inline
-  def apply(onerror: js.Any, onstatechanged: js.Any, ontransferred: js.Any, state: PlayToConnectionState): PlayToConnection = {
+  inline def apply(onerror: js.Any, onstatechanged: js.Any, ontransferred: js.Any, state: PlayToConnectionState): PlayToConnection = {
     val __obj = js.Dynamic.literal(onerror = onerror.asInstanceOf[js.Any], onstatechanged = onstatechanged.asInstanceOf[js.Any], ontransferred = ontransferred.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToConnection]
   }

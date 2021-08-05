@@ -18,19 +18,15 @@ trait DeleteMultiplexProgramRequest extends StObject {
 }
 object DeleteMultiplexProgramRequest {
   
-  @scala.inline
-  def apply(MultiplexId: string, ProgramName: string): DeleteMultiplexProgramRequest = {
+  inline def apply(MultiplexId: string, ProgramName: string): DeleteMultiplexProgramRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any], ProgramName = ProgramName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMultiplexProgramRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMultiplexProgramRequestMutableBuilder[Self <: DeleteMultiplexProgramRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMultiplexProgramRequest](x: Self) {
     
-    @scala.inline
-    def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
+    inline def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
+    inline def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
   }
 }

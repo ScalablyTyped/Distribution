@@ -12,19 +12,15 @@ trait PickTextTypeKnobvalue extends StObject {
 }
 object PickTextTypeKnobvalue {
   
-  @scala.inline
-  def apply(): PickTextTypeKnobvalue = {
+  inline def apply(): PickTextTypeKnobvalue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickTextTypeKnobvalue]
   }
   
-  @scala.inline
-  implicit class PickTextTypeKnobvalueMutableBuilder[Self <: PickTextTypeKnobvalue] (val x: Self) extends AnyVal {
+  extension [Self <: PickTextTypeKnobvalue](x: Self) {
     
-    @scala.inline
-    def setValue(value: TextTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TextTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

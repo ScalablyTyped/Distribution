@@ -22,19 +22,15 @@ trait SortDirectionStatic extends StObject {
 }
 object SortDirectionStatic {
   
-  @scala.inline
-  def apply(): SortDirectionStatic = {
+  inline def apply(): SortDirectionStatic = {
     val __obj = js.Dynamic.literal(ASC = "ASC", DESC = "DESC")
     __obj.asInstanceOf[SortDirectionStatic]
   }
   
-  @scala.inline
-  implicit class SortDirectionStaticMutableBuilder[Self <: SortDirectionStatic] (val x: Self) extends AnyVal {
+  extension [Self <: SortDirectionStatic](x: Self) {
     
-    @scala.inline
-    def setASC(value: ASC): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
+    inline def setASC(value: ASC): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDESC(value: DESC): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
+    inline def setDESC(value: DESC): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
   }
 }

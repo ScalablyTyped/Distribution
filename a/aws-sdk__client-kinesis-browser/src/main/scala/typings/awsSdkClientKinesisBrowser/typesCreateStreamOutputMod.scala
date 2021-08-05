@@ -20,17 +20,14 @@ object typesCreateStreamOutputMod {
   }
   object CreateStreamOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateStreamOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateStreamOutput]
     }
     
-    @scala.inline
-    implicit class CreateStreamOutputMutableBuilder[Self <: CreateStreamOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateStreamOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait RequestSpotFleetResponse extends StObject {
 }
 object RequestSpotFleetResponse {
   
-  @scala.inline
-  def apply(): RequestSpotFleetResponse = {
+  inline def apply(): RequestSpotFleetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestSpotFleetResponse]
   }
   
-  @scala.inline
-  implicit class RequestSpotFleetResponseMutableBuilder[Self <: RequestSpotFleetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSpotFleetResponse](x: Self) {
     
-    @scala.inline
-    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
+    inline def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
   }
 }

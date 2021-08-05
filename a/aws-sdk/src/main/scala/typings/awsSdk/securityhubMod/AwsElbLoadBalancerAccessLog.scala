@@ -28,37 +28,27 @@ trait AwsElbLoadBalancerAccessLog extends StObject {
 }
 object AwsElbLoadBalancerAccessLog {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerAccessLog = {
+  inline def apply(): AwsElbLoadBalancerAccessLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerAccessLog]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerAccessLogMutableBuilder[Self <: AwsElbLoadBalancerAccessLog] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerAccessLog](x: Self) {
     
-    @scala.inline
-    def setEmitInterval(value: Integer): Self = StObject.set(x, "EmitInterval", value.asInstanceOf[js.Any])
+    inline def setEmitInterval(value: Integer): Self = StObject.set(x, "EmitInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmitIntervalUndefined: Self = StObject.set(x, "EmitInterval", js.undefined)
+    inline def setEmitIntervalUndefined: Self = StObject.set(x, "EmitInterval", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: NonEmptyString): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: NonEmptyString): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
-    @scala.inline
-    def setS3BucketPrefix(value: NonEmptyString): Self = StObject.set(x, "S3BucketPrefix", value.asInstanceOf[js.Any])
+    inline def setS3BucketPrefix(value: NonEmptyString): Self = StObject.set(x, "S3BucketPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketPrefixUndefined: Self = StObject.set(x, "S3BucketPrefix", js.undefined)
+    inline def setS3BucketPrefixUndefined: Self = StObject.set(x, "S3BucketPrefix", js.undefined)
   }
 }

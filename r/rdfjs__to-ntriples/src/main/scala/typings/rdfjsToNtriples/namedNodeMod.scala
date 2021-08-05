@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object namedNodeMod {
   
-  @scala.inline
-  def apply(namedNode: NamedNode[String]): String = ^.asInstanceOf[js.Dynamic].apply(namedNode.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(namedNode: NamedNode[String]): String = ^.asInstanceOf[js.Dynamic].apply(namedNode.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@rdfjs/to-ntriples/lib/namedNode", JSImport.Namespace)
   @js.native

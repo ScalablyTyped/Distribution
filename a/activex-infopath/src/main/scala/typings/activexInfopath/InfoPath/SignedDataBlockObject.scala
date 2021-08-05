@@ -9,7 +9,7 @@ trait SignedDataBlockObject extends StObject {
   
   val Caption: String
   
-  @JSName("InfoPath.SignedDataBlockObject_typekey")
+  /* private */ @JSName("InfoPath.SignedDataBlockObject_typekey")
   var InfoPathDotSignedDataBlockObject_typekey: SignedDataBlockObject
   
   val Name: String
@@ -28,8 +28,7 @@ trait SignedDataBlockObject extends StObject {
 }
 object SignedDataBlockObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Caption: String,
     InfoPathDotSignedDataBlockObject_typekey: SignedDataBlockObject,
     Name: String,
@@ -45,34 +44,24 @@ object SignedDataBlockObject {
     __obj.asInstanceOf[SignedDataBlockObject]
   }
   
-  @scala.inline
-  implicit class SignedDataBlockObjectMutableBuilder[Self <: SignedDataBlockObject] (val x: Self) extends AnyVal {
+  extension [Self <: SignedDataBlockObject](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotSignedDataBlockObject_typekey(value: SignedDataBlockObject): Self = StObject.set(x, "InfoPath.SignedDataBlockObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSignedDataBlockObject_typekey(value: SignedDataBlockObject): Self = StObject.set(x, "InfoPath.SignedDataBlockObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSign(value: () => Unit): Self = StObject.set(x, "Sign", js.Any.fromFunction0(value))
+    inline def setSign(value: () => Unit): Self = StObject.set(x, "Sign", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSignatureContainer(value: IXMLDOMNode): Self = StObject.set(x, "SignatureContainer", value.asInstanceOf[js.Any])
+    inline def setSignatureContainer(value: IXMLDOMNode): Self = StObject.set(x, "SignatureContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureRelation(value: XdSignatureRelation): Self = StObject.set(x, "SignatureRelation", value.asInstanceOf[js.Any])
+    inline def setSignatureRelation(value: XdSignatureRelation): Self = StObject.set(x, "SignatureRelation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatures(value: SignaturesCollection): Self = StObject.set(x, "Signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: SignaturesCollection): Self = StObject.set(x, "Signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXPath(value: String): Self = StObject.set(x, "XPath", value.asInstanceOf[js.Any])
+    inline def setXPath(value: String): Self = StObject.set(x, "XPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXPathNamespaceDeclarations(value: String): Self = StObject.set(x, "XPathNamespaceDeclarations", value.asInstanceOf[js.Any])
+    inline def setXPathNamespaceDeclarations(value: String): Self = StObject.set(x, "XPathNamespaceDeclarations", value.asInstanceOf[js.Any])
   }
 }

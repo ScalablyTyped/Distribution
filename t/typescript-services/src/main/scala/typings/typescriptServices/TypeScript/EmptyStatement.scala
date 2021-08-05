@@ -12,8 +12,7 @@ trait EmptyStatement
 }
 object EmptyStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -39,10 +38,8 @@ object EmptyStatement {
     __obj.asInstanceOf[EmptyStatement]
   }
   
-  @scala.inline
-  implicit class EmptyStatementMutableBuilder[Self <: EmptyStatement] (val x: Self) extends AnyVal {
+  extension [Self <: EmptyStatement](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

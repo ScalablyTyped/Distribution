@@ -31,25 +31,19 @@ trait CinderVolumeSource extends StObject {
 }
 object CinderVolumeSource {
   
-  @scala.inline
-  def apply(fsType: String, readOnly: Boolean, secretRef: LocalObjectReference, volumeID: String): CinderVolumeSource = {
+  inline def apply(fsType: String, readOnly: Boolean, secretRef: LocalObjectReference, volumeID: String): CinderVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], volumeID = volumeID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CinderVolumeSource]
   }
   
-  @scala.inline
-  implicit class CinderVolumeSourceMutableBuilder[Self <: CinderVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: CinderVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeID(value: String): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
+    inline def setVolumeID(value: String): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
   }
 }

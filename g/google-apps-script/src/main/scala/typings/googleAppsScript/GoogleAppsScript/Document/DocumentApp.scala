@@ -46,8 +46,7 @@ trait DocumentApp extends StObject {
 }
 object DocumentApp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attribute: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any,
     ElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any,
     FontFamily: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any,
@@ -67,58 +66,43 @@ object DocumentApp {
     __obj.asInstanceOf[DocumentApp]
   }
   
-  @scala.inline
-  implicit class DocumentAppMutableBuilder[Self <: DocumentApp] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentApp](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveDocument(value: () => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "getActiveDocument", js.Any.fromFunction0(value))
+    inline def setGetActiveDocument(value: () => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "getActiveDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
+    inline def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGlyphType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ js.Any): Self = StObject.set(x, "GlyphType", value.asInstanceOf[js.Any])
+    inline def setGlyphType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ js.Any): Self = StObject.set(x, "GlyphType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignment(
+    inline def setHorizontalAlignment(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ js.Any
     ): Self = StObject.set(x, "HorizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenById(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openById", js.Any.fromFunction1(value))
+    inline def setOpenById(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
+    inline def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParagraphHeading(
+    inline def setParagraphHeading(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ js.Any
     ): Self = StObject.set(x, "ParagraphHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionedLayout(
+    inline def setPositionedLayout(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ js.Any
     ): Self = StObject.set(x, "PositionedLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignment(
+    inline def setTextAlignment(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ js.Any
     ): Self = StObject.set(x, "TextAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignment(
+    inline def setVerticalAlignment(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ js.Any
     ): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
   }

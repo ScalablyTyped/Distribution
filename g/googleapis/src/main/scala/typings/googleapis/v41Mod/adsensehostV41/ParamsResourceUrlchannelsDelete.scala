@@ -29,31 +29,23 @@ trait ParamsResourceUrlchannelsDelete
 }
 object ParamsResourceUrlchannelsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceUrlchannelsDelete = {
+  inline def apply(): ParamsResourceUrlchannelsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUrlchannelsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUrlchannelsDeleteMutableBuilder[Self <: ParamsResourceUrlchannelsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUrlchannelsDelete](x: Self) {
     
-    @scala.inline
-    def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
+    inline def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
+    inline def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setUrlChannelId(value: String): Self = StObject.set(x, "urlChannelId", value.asInstanceOf[js.Any])
+    inline def setUrlChannelId(value: String): Self = StObject.set(x, "urlChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlChannelIdUndefined: Self = StObject.set(x, "urlChannelId", js.undefined)
+    inline def setUrlChannelIdUndefined: Self = StObject.set(x, "urlChannelId", js.undefined)
   }
 }

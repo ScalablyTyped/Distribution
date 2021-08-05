@@ -11,6 +11,5 @@ object getStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(`type`: String): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  inline def default(`type`: String): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any]).asInstanceOf[Storage]
 }

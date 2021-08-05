@@ -10,6 +10,5 @@ object injectableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def injectable(): js.Function1[/* target */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectable")().asInstanceOf[js.Function1[/* target */ js.Any, js.Any]]
+  inline def injectable(): js.Function1[/* target */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectable")().asInstanceOf[js.Function1[/* target */ js.Any, js.Any]]
 }

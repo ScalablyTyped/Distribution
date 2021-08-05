@@ -23,8 +23,7 @@ object runtimeMod {
   }
   object RefreshRuntimeGlobals {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DollarRefreshHelpersDollar: GetRefreshBoundarySignature,
       DollarRefreshInterceptModuleExecutionDollar: String => js.Function0[Unit],
       DollarRefreshRegDollar: (js.Any, String) => Unit,
@@ -38,20 +37,15 @@ object runtimeMod {
       __obj.asInstanceOf[RefreshRuntimeGlobals]
     }
     
-    @scala.inline
-    implicit class RefreshRuntimeGlobalsMutableBuilder[Self <: RefreshRuntimeGlobals] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshRuntimeGlobals](x: Self) {
       
-      @scala.inline
-      def setDollarRefreshHelpersDollar(value: GetRefreshBoundarySignature): Self = StObject.set(x, "$RefreshHelpers$", value.asInstanceOf[js.Any])
+      inline def setDollarRefreshHelpersDollar(value: GetRefreshBoundarySignature): Self = StObject.set(x, "$RefreshHelpers$", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDollarRefreshInterceptModuleExecutionDollar(value: String => js.Function0[Unit]): Self = StObject.set(x, "$RefreshInterceptModuleExecution$", js.Any.fromFunction1(value))
+      inline def setDollarRefreshInterceptModuleExecutionDollar(value: String => js.Function0[Unit]): Self = StObject.set(x, "$RefreshInterceptModuleExecution$", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDollarRefreshRegDollar(value: (js.Any, String) => Unit): Self = StObject.set(x, "$RefreshReg$", js.Any.fromFunction2(value))
+      inline def setDollarRefreshRegDollar(value: (js.Any, String) => Unit): Self = StObject.set(x, "$RefreshReg$", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDollarRefreshSigDollar(value: () => js.Function1[/* type */ js.Any, js.Any]): Self = StObject.set(x, "$RefreshSig$", js.Any.fromFunction0(value))
+      inline def setDollarRefreshSigDollar(value: () => js.Function1[/* type */ js.Any, js.Any]): Self = StObject.set(x, "$RefreshSig$", js.Any.fromFunction0(value))
     }
   }
 }

@@ -18,22 +18,17 @@ trait ProjectWorkItemStateColors extends StObject {
 }
 object ProjectWorkItemStateColors {
   
-  @scala.inline
-  def apply(projectName: String, workItemTypeStateColors: js.Array[WorkItemTypeStateColors]): ProjectWorkItemStateColors = {
+  inline def apply(projectName: String, workItemTypeStateColors: js.Array[WorkItemTypeStateColors]): ProjectWorkItemStateColors = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any], workItemTypeStateColors = workItemTypeStateColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectWorkItemStateColors]
   }
   
-  @scala.inline
-  implicit class ProjectWorkItemStateColorsMutableBuilder[Self <: ProjectWorkItemStateColors] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectWorkItemStateColors](x: Self) {
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeStateColors(value: js.Array[WorkItemTypeStateColors]): Self = StObject.set(x, "workItemTypeStateColors", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypeStateColors(value: js.Array[WorkItemTypeStateColors]): Self = StObject.set(x, "workItemTypeStateColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeStateColorsVarargs(value: WorkItemTypeStateColors*): Self = StObject.set(x, "workItemTypeStateColors", js.Array(value :_*))
+    inline def setWorkItemTypeStateColorsVarargs(value: WorkItemTypeStateColors*): Self = StObject.set(x, "workItemTypeStateColors", js.Array(value :_*))
   }
 }

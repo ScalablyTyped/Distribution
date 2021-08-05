@@ -11,19 +11,15 @@ trait ConfidentialInstanceConfig extends StObject {
 }
 object ConfidentialInstanceConfig {
   
-  @scala.inline
-  def apply(): ConfidentialInstanceConfig = {
+  inline def apply(): ConfidentialInstanceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfidentialInstanceConfig]
   }
   
-  @scala.inline
-  implicit class ConfidentialInstanceConfigMutableBuilder[Self <: ConfidentialInstanceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ConfidentialInstanceConfig](x: Self) {
     
-    @scala.inline
-    def setEnableConfidentialCompute(value: Boolean): Self = StObject.set(x, "enableConfidentialCompute", value.asInstanceOf[js.Any])
+    inline def setEnableConfidentialCompute(value: Boolean): Self = StObject.set(x, "enableConfidentialCompute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableConfidentialComputeUndefined: Self = StObject.set(x, "enableConfidentialCompute", js.undefined)
+    inline def setEnableConfidentialComputeUndefined: Self = StObject.set(x, "enableConfidentialCompute", js.undefined)
   }
 }

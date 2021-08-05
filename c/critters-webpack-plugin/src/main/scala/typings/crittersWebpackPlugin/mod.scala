@@ -111,101 +111,70 @@ object mod {
     }
     object CrittersOptions {
       
-      @scala.inline
-      def apply(): CrittersOptions = {
+      inline def apply(): CrittersOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CrittersOptions]
       }
       
-      @scala.inline
-      implicit class CrittersOptionsMutableBuilder[Self <: CrittersOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CrittersOptions](x: Self) {
         
-        @scala.inline
-        def setAdditionalStylesheets(value: js.Array[String]): Self = StObject.set(x, "additionalStylesheets", value.asInstanceOf[js.Any])
+        inline def setAdditionalStylesheets(value: js.Array[String]): Self = StObject.set(x, "additionalStylesheets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAdditionalStylesheetsUndefined: Self = StObject.set(x, "additionalStylesheets", js.undefined)
+        inline def setAdditionalStylesheetsUndefined: Self = StObject.set(x, "additionalStylesheets", js.undefined)
         
-        @scala.inline
-        def setAdditionalStylesheetsVarargs(value: String*): Self = StObject.set(x, "additionalStylesheets", js.Array(value :_*))
+        inline def setAdditionalStylesheetsVarargs(value: String*): Self = StObject.set(x, "additionalStylesheets", js.Array(value :_*))
         
-        @scala.inline
-        def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+        inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+        inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
         
-        @scala.inline
-        def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+        inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+        inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
         
-        @scala.inline
-        def setFonts(value: Boolean): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+        inline def setFonts(value: Boolean): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+        inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
         
-        @scala.inline
-        def setInlineFonts(value: Boolean): Self = StObject.set(x, "inlineFonts", value.asInstanceOf[js.Any])
+        inline def setInlineFonts(value: Boolean): Self = StObject.set(x, "inlineFonts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineFontsUndefined: Self = StObject.set(x, "inlineFonts", js.undefined)
+        inline def setInlineFontsUndefined: Self = StObject.set(x, "inlineFonts", js.undefined)
         
-        @scala.inline
-        def setInlineThreshold(value: Double): Self = StObject.set(x, "inlineThreshold", value.asInstanceOf[js.Any])
+        inline def setInlineThreshold(value: Double): Self = StObject.set(x, "inlineThreshold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInlineThresholdUndefined: Self = StObject.set(x, "inlineThreshold", js.undefined)
+        inline def setInlineThresholdUndefined: Self = StObject.set(x, "inlineThreshold", js.undefined)
         
-        @scala.inline
-        def setKeyframes(value: KeyframeStrategy): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+        inline def setKeyframes(value: KeyframeStrategy): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
+        inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
         
-        @scala.inline
-        def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+        inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+        inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
         
-        @scala.inline
-        def setMergeStylesheets(value: Boolean): Self = StObject.set(x, "mergeStylesheets", value.asInstanceOf[js.Any])
+        inline def setMergeStylesheets(value: Boolean): Self = StObject.set(x, "mergeStylesheets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeStylesheetsUndefined: Self = StObject.set(x, "mergeStylesheets", js.undefined)
+        inline def setMergeStylesheetsUndefined: Self = StObject.set(x, "mergeStylesheets", js.undefined)
         
-        @scala.inline
-        def setMinimumExternalSize(value: Double): Self = StObject.set(x, "minimumExternalSize", value.asInstanceOf[js.Any])
+        inline def setMinimumExternalSize(value: Double): Self = StObject.set(x, "minimumExternalSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinimumExternalSizeUndefined: Self = StObject.set(x, "minimumExternalSize", js.undefined)
+        inline def setMinimumExternalSizeUndefined: Self = StObject.set(x, "minimumExternalSize", js.undefined)
         
-        @scala.inline
-        def setNoscriptFallback(value: Boolean): Self = StObject.set(x, "noscriptFallback", value.asInstanceOf[js.Any])
+        inline def setNoscriptFallback(value: Boolean): Self = StObject.set(x, "noscriptFallback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoscriptFallbackUndefined: Self = StObject.set(x, "noscriptFallback", js.undefined)
+        inline def setNoscriptFallbackUndefined: Self = StObject.set(x, "noscriptFallback", js.undefined)
         
-        @scala.inline
-        def setPreload(value: body | media | swap | js_ | `js-lazy`): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+        inline def setPreload(value: body | media | swap | js_ | `js-lazy`): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreloadFonts(value: Boolean): Self = StObject.set(x, "preloadFonts", value.asInstanceOf[js.Any])
+        inline def setPreloadFonts(value: Boolean): Self = StObject.set(x, "preloadFonts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreloadFontsUndefined: Self = StObject.set(x, "preloadFonts", js.undefined)
+        inline def setPreloadFontsUndefined: Self = StObject.set(x, "preloadFonts", js.undefined)
         
-        @scala.inline
-        def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+        inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
         
-        @scala.inline
-        def setPruneSource(value: Boolean): Self = StObject.set(x, "pruneSource", value.asInstanceOf[js.Any])
+        inline def setPruneSource(value: Boolean): Self = StObject.set(x, "pruneSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPruneSourceUndefined: Self = StObject.set(x, "pruneSource", js.undefined)
+        inline def setPruneSourceUndefined: Self = StObject.set(x, "pruneSource", js.undefined)
       }
     }
     
@@ -223,14 +192,11 @@ object mod {
     trait KeyframeStrategy extends StObject
     object KeyframeStrategy {
       
-      @scala.inline
-      def all: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.all = "all".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.all]
+      inline def all: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.all = "all".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.all]
       
-      @scala.inline
-      def critical: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.critical = "critical".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.critical]
+      inline def critical: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.critical = "critical".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.critical]
       
-      @scala.inline
-      def none: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none = "none".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none]
+      inline def none: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none = "none".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.none]
     }
     
     /**
@@ -256,23 +222,17 @@ object mod {
     trait LogLevel extends StObject
     object LogLevel {
       
-      @scala.inline
-      def debug: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.debug = "debug".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.debug]
+      inline def debug: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.debug = "debug".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.debug]
       
-      @scala.inline
-      def error: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.error = "error".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.error]
+      inline def error: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.error = "error".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.error]
       
-      @scala.inline
-      def info: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.info = "info".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.info]
+      inline def info: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.info = "info".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.info]
       
-      @scala.inline
-      def silent: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.silent = "silent".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.silent]
+      inline def silent: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.silent = "silent".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.silent]
       
-      @scala.inline
-      def trace: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.trace = "trace".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.trace]
+      inline def trace: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.trace = "trace".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.trace]
       
-      @scala.inline
-      def warn: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.warn = "warn".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.warn]
+      inline def warn: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.warn = "warn".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.warn]
     }
     
     /**
@@ -295,20 +255,15 @@ object mod {
     trait PreloadStrategy extends StObject
     object PreloadStrategy {
       
-      @scala.inline
-      def body: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.body = "body".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.body]
+      inline def body: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.body = "body".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.body]
       
-      @scala.inline
-      def `js-lazy`: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy` = "js-lazy".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy`]
+      inline def `js-lazy`: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy` = "js-lazy".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.`js-lazy`]
       
-      @scala.inline
-      def js_ : typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_ = "js".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_]
+      inline def js_ : typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_ = "js".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.js_]
       
-      @scala.inline
-      def media: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media = "media".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media]
+      inline def media: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media = "media".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.media]
       
-      @scala.inline
-      def swap: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap = "swap".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap]
+      inline def swap: typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap = "swap".asInstanceOf[typings.crittersWebpackPlugin.crittersWebpackPluginStrings.swap]
     }
   }
   type Critters = Plugin

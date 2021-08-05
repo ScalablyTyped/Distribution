@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLOptionElement")
 @js.native
-class IHTMLOptionElement protected ()
+/* private */ class IHTMLOptionElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLOptionElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLOptionElement_typekey")
   var MSHTMLDotIHTMLOptionElement_typekey: typings.activexMshtml.MSHTML.IHTMLOptionElement = js.native
   

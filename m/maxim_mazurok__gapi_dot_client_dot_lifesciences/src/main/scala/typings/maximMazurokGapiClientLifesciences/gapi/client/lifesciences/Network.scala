@@ -27,31 +27,23 @@ trait Network extends StObject {
 }
 object Network {
   
-  @scala.inline
-  def apply(): Network = {
+  inline def apply(): Network = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Network]
   }
   
-  @scala.inline
-  implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+  extension [Self <: Network](x: Self) {
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
-    @scala.inline
-    def setUsePrivateAddress(value: Boolean): Self = StObject.set(x, "usePrivateAddress", value.asInstanceOf[js.Any])
+    inline def setUsePrivateAddress(value: Boolean): Self = StObject.set(x, "usePrivateAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePrivateAddressUndefined: Self = StObject.set(x, "usePrivateAddress", js.undefined)
+    inline def setUsePrivateAddressUndefined: Self = StObject.set(x, "usePrivateAddress", js.undefined)
   }
 }

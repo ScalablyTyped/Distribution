@@ -119,7 +119,7 @@ trait ShellUIHelper extends StObject {
   
   def RunOnceShown(): Unit = js.native
   
-  @JSName("SHDocVw.ShellUIHelper_typekey")
+  /* private */ @JSName("SHDocVw.ShellUIHelper_typekey")
   var SHDocVwDotShellUIHelper_typekey: ShellUIHelper = js.native
   
   def SearchGuideUrl(): String = js.native

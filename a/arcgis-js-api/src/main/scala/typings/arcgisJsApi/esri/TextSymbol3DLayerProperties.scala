@@ -45,43 +45,31 @@ trait TextSymbol3DLayerProperties
 }
 object TextSymbol3DLayerProperties {
   
-  @scala.inline
-  def apply(): TextSymbol3DLayerProperties = {
+  inline def apply(): TextSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextSymbol3DLayerProperties]
   }
   
-  @scala.inline
-  implicit class TextSymbol3DLayerPropertiesMutableBuilder[Self <: TextSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TextSymbol3DLayerProperties](x: Self) {
     
-    @scala.inline
-    def setFont(value: FontProperties): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontProperties): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setHalo(value: TextSymbol3DLayerHaloProperties): Self = StObject.set(x, "halo", value.asInstanceOf[js.Any])
+    inline def setHalo(value: TextSymbol3DLayerHaloProperties): Self = StObject.set(x, "halo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaloUndefined: Self = StObject.set(x, "halo", js.undefined)
+    inline def setHaloUndefined: Self = StObject.set(x, "halo", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: TextSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: TextSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

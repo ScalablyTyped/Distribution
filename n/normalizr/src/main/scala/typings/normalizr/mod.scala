@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def denormalize(input: js.Any, schema: Schema_[js.Any], entities: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("denormalize")(input.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def denormalize(input: js.Any, schema: Schema_[js.Any], entities: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("denormalize")(input.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def normalize[T, E, R](data: js.Any, schema: Schema_[T]): NormalizedSchema[E, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(data.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[NormalizedSchema[E, R]]
+  inline def normalize[T, E, R](data: js.Any, schema: Schema_[T]): NormalizedSchema[E, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(data.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[NormalizedSchema[E, R]]
   
   trait NormalizedSchema[E, R] extends StObject {
     
@@ -26,20 +24,16 @@ object mod {
   }
   object NormalizedSchema {
     
-    @scala.inline
-    def apply[E, R](entities: E, result: R): NormalizedSchema[E, R] = {
+    inline def apply[E, R](entities: E, result: R): NormalizedSchema[E, R] = {
       val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizedSchema[E, R]]
     }
     
-    @scala.inline
-    implicit class NormalizedSchemaMutableBuilder[Self <: NormalizedSchema[?, ?], E, R] (val x: Self & (NormalizedSchema[E, R])) extends AnyVal {
+    extension [Self <: NormalizedSchema[?, ?], E, R](x: Self & (NormalizedSchema[E, R])) {
       
-      @scala.inline
-      def setEntities(value: E): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: E): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: R): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: R): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,8 +49,7 @@ object mod {
        with Schema_[T]
   object SchemaObject {
     
-    @scala.inline
-    def apply[T](): SchemaObject[T] = {
+    inline def apply[T](): SchemaObject[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SchemaObject[T]]
     }
@@ -84,17 +77,14 @@ object mod {
     }
     object Array {
       
-      @scala.inline
-      def apply[T](define: Schema_[js.Any] => Unit): typings.normalizr.mod.schema.Array[T] = {
+      inline def apply[T](define: Schema_[js.Any] => Unit): typings.normalizr.mod.schema.Array[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[typings.normalizr.mod.schema.Array[T]]
       }
       
-      @scala.inline
-      implicit class ArrayMutableBuilder[Self <: typings.normalizr.mod.schema.Array[?], T] (val x: Self & typings.normalizr.mod.schema.Array[T]) extends AnyVal {
+      extension [Self <: typings.normalizr.mod.schema.Array[?], T](x: Self & typings.normalizr.mod.schema.Array[T]) {
         
-        @scala.inline
-        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        inline def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
     
@@ -116,8 +106,7 @@ object mod {
     }
     object Entity {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         _processStrategy: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => T,
         define: Schema_[js.Any] => Unit,
         getId: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => String,
@@ -127,20 +116,15 @@ object mod {
         __obj.asInstanceOf[Entity[T]]
       }
       
-      @scala.inline
-      implicit class EntityMutableBuilder[Self <: Entity[?], T] (val x: Self & Entity[T]) extends AnyVal {
+      extension [Self <: Entity[?], T](x: Self & Entity[T]) {
         
-        @scala.inline
-        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        inline def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetId(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => String): Self = StObject.set(x, "getId", js.Any.fromFunction3(value))
+        inline def setGetId(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => String): Self = StObject.set(x, "getId", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_processStrategy(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => T): Self = StObject.set(x, "_processStrategy", js.Any.fromFunction3(value))
+        inline def set_processStrategy(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => T): Self = StObject.set(x, "_processStrategy", js.Any.fromFunction3(value))
       }
     }
     
@@ -156,41 +140,30 @@ object mod {
     }
     object EntityOptions {
       
-      @scala.inline
-      def apply[T](): EntityOptions[T] = {
+      inline def apply[T](): EntityOptions[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EntityOptions[T]]
       }
       
-      @scala.inline
-      implicit class EntityOptionsMutableBuilder[Self <: EntityOptions[?], T] (val x: Self & EntityOptions[T]) extends AnyVal {
+      extension [Self <: EntityOptions[?], T](x: Self & EntityOptions[T]) {
         
-        @scala.inline
-        def setFallbackStrategy(value: (/* key */ String, /* schema */ Entity[T]) => T): Self = StObject.set(x, "fallbackStrategy", js.Any.fromFunction2(value))
+        inline def setFallbackStrategy(value: (/* key */ String, /* schema */ Entity[T]) => T): Self = StObject.set(x, "fallbackStrategy", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setFallbackStrategyUndefined: Self = StObject.set(x, "fallbackStrategy", js.undefined)
+        inline def setFallbackStrategyUndefined: Self = StObject.set(x, "fallbackStrategy", js.undefined)
         
-        @scala.inline
-        def setIdAttribute(value: String | SchemaFunction): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
+        inline def setIdAttribute(value: String | SchemaFunction): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdAttributeFunction3(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => String): Self = StObject.set(x, "idAttribute", js.Any.fromFunction3(value))
+        inline def setIdAttributeFunction3(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => String): Self = StObject.set(x, "idAttribute", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
+        inline def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
         
-        @scala.inline
-        def setMergeStrategy(value: (/* entityA */ js.Any, /* entityB */ js.Any) => js.Any): Self = StObject.set(x, "mergeStrategy", js.Any.fromFunction2(value))
+        inline def setMergeStrategy(value: (/* entityA */ js.Any, /* entityB */ js.Any) => js.Any): Self = StObject.set(x, "mergeStrategy", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
+        inline def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
         
-        @scala.inline
-        def setProcessStrategy(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => T): Self = StObject.set(x, "processStrategy", js.Any.fromFunction3(value))
+        inline def setProcessStrategy(value: (/* value */ js.Any, /* parent */ js.Any, /* key */ String) => T): Self = StObject.set(x, "processStrategy", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setProcessStrategyUndefined: Self = StObject.set(x, "processStrategy", js.undefined)
+        inline def setProcessStrategyUndefined: Self = StObject.set(x, "processStrategy", js.undefined)
       }
     }
     
@@ -206,17 +179,14 @@ object mod {
     }
     object Object {
       
-      @scala.inline
-      def apply[T](define: Schema_[js.Any] => Unit): Object[T] = {
+      inline def apply[T](define: Schema_[js.Any] => Unit): Object[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[Object[T]]
       }
       
-      @scala.inline
-      implicit class ObjectMutableBuilder[Self <: Object[?], T] (val x: Self & Object[T]) extends AnyVal {
+      extension [Self <: Object[?], T](x: Self & Object[T]) {
         
-        @scala.inline
-        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        inline def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
     
@@ -232,17 +202,14 @@ object mod {
     }
     object Union {
       
-      @scala.inline
-      def apply[T](define: Schema_[js.Any] => Unit): Union[T] = {
+      inline def apply[T](define: Schema_[js.Any] => Unit): Union[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[Union[T]]
       }
       
-      @scala.inline
-      implicit class UnionMutableBuilder[Self <: Union[?], T] (val x: Self & Union[T]) extends AnyVal {
+      extension [Self <: Union[?], T](x: Self & Union[T]) {
         
-        @scala.inline
-        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        inline def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
     
@@ -254,17 +221,14 @@ object mod {
     }
     object Values {
       
-      @scala.inline
-      def apply[T](define: Schema_[js.Any] => Unit): Values[T] = {
+      inline def apply[T](define: Schema_[js.Any] => Unit): Values[T] = {
         val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
         __obj.asInstanceOf[Values[T]]
       }
       
-      @scala.inline
-      implicit class ValuesMutableBuilder[Self <: Values[?], T] (val x: Self & Values[T]) extends AnyVal {
+      extension [Self <: Values[?], T](x: Self & Values[T]) {
         
-        @scala.inline
-        def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
+        inline def setDefine(value: Schema_[js.Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
     }
   }

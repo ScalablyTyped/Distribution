@@ -10,27 +10,19 @@ object colorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asArray(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
-  @scala.inline
-  def asArray(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def asArray(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def asArray(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @scala.inline
-  def asString(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def asString(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def asString(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def asString(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fromString(s: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def fromString(s: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @scala.inline
-  def isStringColor(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringColor")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStringColor(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringColor")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def normalize(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def normalize(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @scala.inline
-  def toString_(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Color = js.Array[Double]
 }

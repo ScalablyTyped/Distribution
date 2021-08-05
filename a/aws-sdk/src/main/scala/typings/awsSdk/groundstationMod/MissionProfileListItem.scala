@@ -28,37 +28,27 @@ trait MissionProfileListItem extends StObject {
 }
 object MissionProfileListItem {
   
-  @scala.inline
-  def apply(): MissionProfileListItem = {
+  inline def apply(): MissionProfileListItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MissionProfileListItem]
   }
   
-  @scala.inline
-  implicit class MissionProfileListItemMutableBuilder[Self <: MissionProfileListItem] (val x: Self) extends AnyVal {
+  extension [Self <: MissionProfileListItem](x: Self) {
     
-    @scala.inline
-    def setMissionProfileArn(value: MissionProfileArn): Self = StObject.set(x, "missionProfileArn", value.asInstanceOf[js.Any])
+    inline def setMissionProfileArn(value: MissionProfileArn): Self = StObject.set(x, "missionProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
+    inline def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
     
-    @scala.inline
-    def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissionProfileIdUndefined: Self = StObject.set(x, "missionProfileId", js.undefined)
+    inline def setMissionProfileIdUndefined: Self = StObject.set(x, "missionProfileId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

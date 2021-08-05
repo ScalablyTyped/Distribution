@@ -98,52 +98,37 @@ trait UrlCreationOptions extends StObject {
 }
 object UrlCreationOptions {
   
-  @scala.inline
-  def apply(): UrlCreationOptions = {
+  inline def apply(): UrlCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlCreationOptions]
   }
   
-  @scala.inline
-  implicit class UrlCreationOptionsMutableBuilder[Self <: UrlCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UrlCreationOptions](x: Self) {
     
-    @scala.inline
-    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+    inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
-    @scala.inline
-    def setPreserveFragment(value: Boolean): Self = StObject.set(x, "preserveFragment", value.asInstanceOf[js.Any])
+    inline def setPreserveFragment(value: Boolean): Self = StObject.set(x, "preserveFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFragmentUndefined: Self = StObject.set(x, "preserveFragment", js.undefined)
+    inline def setPreserveFragmentUndefined: Self = StObject.set(x, "preserveFragment", js.undefined)
     
-    @scala.inline
-    def setQueryParams(value: Params): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+    inline def setQueryParams(value: Params): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParamsHandling(value: QueryParamsHandling): Self = StObject.set(x, "queryParamsHandling", value.asInstanceOf[js.Any])
+    inline def setQueryParamsHandling(value: QueryParamsHandling): Self = StObject.set(x, "queryParamsHandling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParamsHandlingNull: Self = StObject.set(x, "queryParamsHandling", null)
+    inline def setQueryParamsHandlingNull: Self = StObject.set(x, "queryParamsHandling", null)
     
-    @scala.inline
-    def setQueryParamsHandlingUndefined: Self = StObject.set(x, "queryParamsHandling", js.undefined)
+    inline def setQueryParamsHandlingUndefined: Self = StObject.set(x, "queryParamsHandling", js.undefined)
     
-    @scala.inline
-    def setQueryParamsNull: Self = StObject.set(x, "queryParams", null)
+    inline def setQueryParamsNull: Self = StObject.set(x, "queryParams", null)
     
-    @scala.inline
-    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+    inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
-    @scala.inline
-    def setRelativeTo(value: ActivatedRoute): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+    inline def setRelativeTo(value: ActivatedRoute): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeToNull: Self = StObject.set(x, "relativeTo", null)
+    inline def setRelativeToNull: Self = StObject.set(x, "relativeTo", null)
     
-    @scala.inline
-    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
+    inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
   }
 }

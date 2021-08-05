@@ -21,22 +21,17 @@ trait TargetCrashedEvent extends StObject {
 }
 object TargetCrashedEvent {
   
-  @scala.inline
-  def apply(errorCode: integer, status: String, targetId: TargetID): TargetCrashedEvent = {
+  inline def apply(errorCode: integer, status: String, targetId: TargetID): TargetCrashedEvent = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetCrashedEvent]
   }
   
-  @scala.inline
-  implicit class TargetCrashedEventMutableBuilder[Self <: TargetCrashedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TargetCrashedEvent](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: integer): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: integer): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

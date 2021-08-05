@@ -18,17 +18,14 @@ object typesRepositoryTriggerBranchNameListRequiredExceptionMod {
   }
   object RepositoryTriggerBranchNameListRequiredException {
     
-    @scala.inline
-    def apply(): RepositoryTriggerBranchNameListRequiredException = {
+    inline def apply(): RepositoryTriggerBranchNameListRequiredException = {
       val __obj = js.Dynamic.literal(name = "RepositoryTriggerBranchNameListRequiredException")
       __obj.asInstanceOf[RepositoryTriggerBranchNameListRequiredException]
     }
     
-    @scala.inline
-    implicit class RepositoryTriggerBranchNameListRequiredExceptionMutableBuilder[Self <: RepositoryTriggerBranchNameListRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryTriggerBranchNameListRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerBranchNameListRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

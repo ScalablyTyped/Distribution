@@ -16,7 +16,7 @@ trait AddressRuleCondition extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Outlook.AddressRuleCondition_typekey")
+  /* private */ @JSName("Outlook.AddressRuleCondition_typekey")
   var OutlookDotAddressRuleCondition_typekey: AddressRuleCondition
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait AddressRuleCondition extends StObject {
 }
 object AddressRuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Address: js.Any,
     Application: Application,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object AddressRuleCondition {
     __obj.asInstanceOf[AddressRuleCondition]
   }
   
-  @scala.inline
-  implicit class AddressRuleConditionMutableBuilder[Self <: AddressRuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: AddressRuleCondition](x: Self) {
     
-    @scala.inline
-    def setAddress(value: js.Any): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: js.Any): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotAddressRuleCondition_typekey(value: AddressRuleCondition): Self = StObject.set(x, "Outlook.AddressRuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotAddressRuleCondition_typekey(value: AddressRuleCondition): Self = StObject.set(x, "Outlook.AddressRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

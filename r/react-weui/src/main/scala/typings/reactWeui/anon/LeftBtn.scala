@@ -12,19 +12,15 @@ trait LeftBtn extends StObject {
 }
 object LeftBtn {
   
-  @scala.inline
-  def apply(leftBtn: String, rightBtn: String): LeftBtn = {
+  inline def apply(leftBtn: String, rightBtn: String): LeftBtn = {
     val __obj = js.Dynamic.literal(leftBtn = leftBtn.asInstanceOf[js.Any], rightBtn = rightBtn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeftBtn]
   }
   
-  @scala.inline
-  implicit class LeftBtnMutableBuilder[Self <: LeftBtn] (val x: Self) extends AnyVal {
+  extension [Self <: LeftBtn](x: Self) {
     
-    @scala.inline
-    def setLeftBtn(value: String): Self = StObject.set(x, "leftBtn", value.asInstanceOf[js.Any])
+    inline def setLeftBtn(value: String): Self = StObject.set(x, "leftBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightBtn(value: String): Self = StObject.set(x, "rightBtn", value.asInstanceOf[js.Any])
+    inline def setRightBtn(value: String): Self = StObject.set(x, "rightBtn", value.asInstanceOf[js.Any])
   }
 }

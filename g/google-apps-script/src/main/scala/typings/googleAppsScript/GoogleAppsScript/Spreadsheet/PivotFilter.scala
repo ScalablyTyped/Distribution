@@ -22,8 +22,7 @@ trait PivotFilter extends StObject {
 }
 object PivotFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFilterCriteria: () => FilterCriteria,
     getPivotTable: () => PivotTable,
     getSourceDataColumn: () => Integer,
@@ -34,22 +33,16 @@ object PivotFilter {
     __obj.asInstanceOf[PivotFilter]
   }
   
-  @scala.inline
-  implicit class PivotFilterMutableBuilder[Self <: PivotFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PivotFilter](x: Self) {
     
-    @scala.inline
-    def setGetFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "getFilterCriteria", js.Any.fromFunction0(value))
+    inline def setGetFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "getFilterCriteria", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPivotTable(value: () => PivotTable): Self = StObject.set(x, "getPivotTable", js.Any.fromFunction0(value))
+    inline def setGetPivotTable(value: () => PivotTable): Self = StObject.set(x, "getPivotTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSourceDataColumn(value: () => Integer): Self = StObject.set(x, "getSourceDataColumn", js.Any.fromFunction0(value))
+    inline def setGetSourceDataColumn(value: () => Integer): Self = StObject.set(x, "getSourceDataColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFilterCriteria(value: FilterCriteria => PivotFilter): Self = StObject.set(x, "setFilterCriteria", js.Any.fromFunction1(value))
+    inline def setSetFilterCriteria(value: FilterCriteria => PivotFilter): Self = StObject.set(x, "setFilterCriteria", js.Any.fromFunction1(value))
   }
 }

@@ -18,25 +18,19 @@ trait GetInlineStylesForNodeResponse extends StObject {
 }
 object GetInlineStylesForNodeResponse {
   
-  @scala.inline
-  def apply(): GetInlineStylesForNodeResponse = {
+  inline def apply(): GetInlineStylesForNodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInlineStylesForNodeResponse]
   }
   
-  @scala.inline
-  implicit class GetInlineStylesForNodeResponseMutableBuilder[Self <: GetInlineStylesForNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetInlineStylesForNodeResponse](x: Self) {
     
-    @scala.inline
-    def setAttributesStyle(value: CSSStyle): Self = StObject.set(x, "attributesStyle", value.asInstanceOf[js.Any])
+    inline def setAttributesStyle(value: CSSStyle): Self = StObject.set(x, "attributesStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesStyleUndefined: Self = StObject.set(x, "attributesStyle", js.undefined)
+    inline def setAttributesStyleUndefined: Self = StObject.set(x, "attributesStyle", js.undefined)
     
-    @scala.inline
-    def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
+    inline def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
+    inline def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
   }
 }

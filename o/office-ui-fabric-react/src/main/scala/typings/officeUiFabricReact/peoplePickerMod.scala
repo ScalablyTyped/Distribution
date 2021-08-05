@@ -44,8 +44,7 @@ object peoplePickerMod {
     @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "CompactPeoplePickerBase.defaultProps")
     @js.native
     def defaultProps: CreateGenericItem = js.native
-    @scala.inline
-    def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "ListPeoplePicker")
@@ -68,8 +67,7 @@ object peoplePickerMod {
     @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "ListPeoplePickerBase.defaultProps")
     @js.native
     def defaultProps: CreateGenericItem = js.native
-    @scala.inline
-    def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "MemberListPeoplePicker")
@@ -98,12 +96,10 @@ object peoplePickerMod {
     @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "NormalPeoplePickerBase.defaultProps")
     @js.native
     def defaultProps: CreateGenericItem = js.native
-    @scala.inline
-    def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericItem")(name.asInstanceOf[js.Any], currentValidationState.asInstanceOf[js.Any])).asInstanceOf[IGenericItemkeyKey]
+  inline def createGenericItem(name: String, currentValidationState: ValidationState): IGenericItemkeyKey = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericItem")(name.asInstanceOf[js.Any], currentValidationState.asInstanceOf[js.Any])).asInstanceOf[IGenericItemkeyKey]
   
   trait IGenericItem extends StObject {
     
@@ -115,23 +111,18 @@ object peoplePickerMod {
   }
   object IGenericItem {
     
-    @scala.inline
-    def apply(ValidationState: ValidationState, imageInitials: String, primaryText: String): IGenericItem = {
+    inline def apply(ValidationState: ValidationState, imageInitials: String, primaryText: String): IGenericItem = {
       val __obj = js.Dynamic.literal(ValidationState = ValidationState.asInstanceOf[js.Any], imageInitials = imageInitials.asInstanceOf[js.Any], primaryText = primaryText.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGenericItem]
     }
     
-    @scala.inline
-    implicit class IGenericItemMutableBuilder[Self <: IGenericItem] (val x: Self) extends AnyVal {
+    extension [Self <: IGenericItem](x: Self) {
       
-      @scala.inline
-      def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
+      inline def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
+      inline def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationState(value: ValidationState): Self = StObject.set(x, "ValidationState", value.asInstanceOf[js.Any])
+      inline def setValidationState(value: ValidationState): Self = StObject.set(x, "ValidationState", value.asInstanceOf[js.Any])
     }
   }
   

@@ -60,28 +60,23 @@ object Logger {
   /**
     * Get the current logger function
     */
-  @scala.inline
-  def currentLogger(): log = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLogger")().asInstanceOf[log]
+  inline def currentLogger(): log = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLogger")().asInstanceOf[log]
   
   /**
     * Set what classes to log.
     */
-  @scala.inline
-  def filter(`type`: String, values: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def filter(`type`: String, values: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Resets the logger to default settings, error and no filtered classes
     */
-  @scala.inline
-  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   //Set the current logger function
-  @scala.inline
-  def setCurrentLogger(log: log): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentLogger")(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setCurrentLogger(log: log): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentLogger")(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set the current log level
     */
-  @scala.inline
-  def setLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

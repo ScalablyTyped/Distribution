@@ -10,6 +10,5 @@ object mtree {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mtMatch(tname: String, tomatch: String, mval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mt_match")(tname.asInstanceOf[js.Any], tomatch.asInstanceOf[js.Any], mval.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def mtMatch(tname: String, tomatch: String, mval: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mt_match")(tname.asInstanceOf[js.Any], tomatch.asInstanceOf[js.Any], mval.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

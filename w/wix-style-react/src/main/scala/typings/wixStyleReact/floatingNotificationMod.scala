@@ -50,80 +50,56 @@ object floatingNotificationMod {
   }
   object FloatingNotificationProps {
     
-    @scala.inline
-    def apply(): FloatingNotificationProps = {
+    inline def apply(): FloatingNotificationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FloatingNotificationProps]
     }
     
-    @scala.inline
-    implicit class FloatingNotificationPropsMutableBuilder[Self <: FloatingNotificationProps] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingNotificationProps](x: Self) {
       
-      @scala.inline
-      def setButtonProps(value: FloatingNotificationButtonProps): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+      inline def setButtonProps(value: FloatingNotificationButtonProps): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
+      inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setPrefixIcon(value: IconElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
+      inline def setPrefixIcon(value: IconElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
+      inline def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
       
-      @scala.inline
-      def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+      inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+      inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
       
-      @scala.inline
-      def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextButtonProps(value: FloatingNotificationButtonProps): Self = StObject.set(x, "textButtonProps", value.asInstanceOf[js.Any])
+      inline def setTextButtonProps(value: FloatingNotificationButtonProps): Self = StObject.set(x, "textButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextButtonPropsUndefined: Self = StObject.set(x, "textButtonProps", js.undefined)
+      inline def setTextButtonPropsUndefined: Self = StObject.set(x, "textButtonProps", js.undefined)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setType(value: FloatingNotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FloatingNotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -139,25 +115,18 @@ object floatingNotificationMod {
   trait FloatingNotificationType extends StObject
   object FloatingNotificationType {
     
-    @scala.inline
-    def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
+    inline def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
     
-    @scala.inline
-    def destructive: typings.wixStyleReact.wixStyleReactStrings.destructive = "destructive".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.destructive]
+    inline def destructive: typings.wixStyleReact.wixStyleReactStrings.destructive = "destructive".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.destructive]
     
-    @scala.inline
-    def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
+    inline def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
     
-    @scala.inline
-    def preview: typings.wixStyleReact.wixStyleReactStrings.preview = "preview".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.preview]
+    inline def preview: typings.wixStyleReact.wixStyleReactStrings.preview = "preview".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.preview]
     
-    @scala.inline
-    def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
+    inline def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
     
-    @scala.inline
-    def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
+    inline def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
     
-    @scala.inline
-    def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
+    inline def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
   }
 }

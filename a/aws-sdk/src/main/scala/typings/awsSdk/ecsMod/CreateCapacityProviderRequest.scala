@@ -23,28 +23,21 @@ trait CreateCapacityProviderRequest extends StObject {
 }
 object CreateCapacityProviderRequest {
   
-  @scala.inline
-  def apply(autoScalingGroupProvider: AutoScalingGroupProvider, name: String): CreateCapacityProviderRequest = {
+  inline def apply(autoScalingGroupProvider: AutoScalingGroupProvider, name: String): CreateCapacityProviderRequest = {
     val __obj = js.Dynamic.literal(autoScalingGroupProvider = autoScalingGroupProvider.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCapacityProviderRequest]
   }
   
-  @scala.inline
-  implicit class CreateCapacityProviderRequestMutableBuilder[Self <: CreateCapacityProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCapacityProviderRequest](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupProvider(value: AutoScalingGroupProvider): Self = StObject.set(x, "autoScalingGroupProvider", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupProvider(value: AutoScalingGroupProvider): Self = StObject.set(x, "autoScalingGroupProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

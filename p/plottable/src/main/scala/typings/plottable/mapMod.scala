@@ -10,9 +10,9 @@ object mapMod {
   @js.native
   class Map[K, V] () extends StObject {
     
-    var _es6Map: js.Any = js.native
+    /* private */ var _es6Map: js.Any = js.native
     
-    var _keyValuePairs: js.Any = js.native
+    /* private */ var _keyValuePairs: js.Any = js.native
     
     def delete(key: K): Boolean = js.native
     

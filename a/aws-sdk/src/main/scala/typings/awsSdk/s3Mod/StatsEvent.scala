@@ -13,19 +13,15 @@ trait StatsEvent extends StObject {
 }
 object StatsEvent {
   
-  @scala.inline
-  def apply(): StatsEvent = {
+  inline def apply(): StatsEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatsEvent]
   }
   
-  @scala.inline
-  implicit class StatsEventMutableBuilder[Self <: StatsEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StatsEvent](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Stats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Stats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
   }
 }

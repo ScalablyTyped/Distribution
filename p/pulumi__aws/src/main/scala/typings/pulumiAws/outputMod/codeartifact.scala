@@ -19,23 +19,18 @@ object codeartifact {
   }
   object RepositoryExternalConnections {
     
-    @scala.inline
-    def apply(externalConnectionName: String, packageFormat: String, status: String): RepositoryExternalConnections = {
+    inline def apply(externalConnectionName: String, packageFormat: String, status: String): RepositoryExternalConnections = {
       val __obj = js.Dynamic.literal(externalConnectionName = externalConnectionName.asInstanceOf[js.Any], packageFormat = packageFormat.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepositoryExternalConnections]
     }
     
-    @scala.inline
-    implicit class RepositoryExternalConnectionsMutableBuilder[Self <: RepositoryExternalConnections] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryExternalConnections](x: Self) {
       
-      @scala.inline
-      def setExternalConnectionName(value: String): Self = StObject.set(x, "externalConnectionName", value.asInstanceOf[js.Any])
+      inline def setExternalConnectionName(value: String): Self = StObject.set(x, "externalConnectionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageFormat(value: String): Self = StObject.set(x, "packageFormat", value.asInstanceOf[js.Any])
+      inline def setPackageFormat(value: String): Self = StObject.set(x, "packageFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,17 +43,14 @@ object codeartifact {
   }
   object RepositoryUpstream {
     
-    @scala.inline
-    def apply(repositoryName: String): RepositoryUpstream = {
+    inline def apply(repositoryName: String): RepositoryUpstream = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepositoryUpstream]
     }
     
-    @scala.inline
-    implicit class RepositoryUpstreamMutableBuilder[Self <: RepositoryUpstream] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryUpstream](x: Self) {
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     }
   }
 }

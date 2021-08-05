@@ -11,16 +11,13 @@ trait LnglatLngLat extends StObject {
 }
 object LnglatLngLat {
   
-  @scala.inline
-  def apply(lnglat: LngLat): LnglatLngLat = {
+  inline def apply(lnglat: LngLat): LnglatLngLat = {
     val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any])
     __obj.asInstanceOf[LnglatLngLat]
   }
   
-  @scala.inline
-  implicit class LnglatLngLatMutableBuilder[Self <: LnglatLngLat] (val x: Self) extends AnyVal {
+  extension [Self <: LnglatLngLat](x: Self) {
     
-    @scala.inline
-    def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+    inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
   }
 }

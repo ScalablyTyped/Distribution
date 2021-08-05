@@ -33,8 +33,7 @@ trait XSAXEventKeeperStatusChangeBroadcaster
 }
 object XSAXEventKeeperStatusChangeBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSAXEventKeeperStatusChangeListener: XSAXEventKeeperStatusChangeListener => Unit,
     queryInterface: `type` => js.Any,
@@ -45,13 +44,10 @@ object XSAXEventKeeperStatusChangeBroadcaster {
     __obj.asInstanceOf[XSAXEventKeeperStatusChangeBroadcaster]
   }
   
-  @scala.inline
-  implicit class XSAXEventKeeperStatusChangeBroadcasterMutableBuilder[Self <: XSAXEventKeeperStatusChangeBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XSAXEventKeeperStatusChangeBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddSAXEventKeeperStatusChangeListener(value: XSAXEventKeeperStatusChangeListener => Unit): Self = StObject.set(x, "addSAXEventKeeperStatusChangeListener", js.Any.fromFunction1(value))
+    inline def setAddSAXEventKeeperStatusChangeListener(value: XSAXEventKeeperStatusChangeListener => Unit): Self = StObject.set(x, "addSAXEventKeeperStatusChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSAXEventKeeperStatusChangeListener(value: XSAXEventKeeperStatusChangeListener => Unit): Self = StObject.set(x, "removeSAXEventKeeperStatusChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveSAXEventKeeperStatusChangeListener(value: XSAXEventKeeperStatusChangeListener => Unit): Self = StObject.set(x, "removeSAXEventKeeperStatusChangeListener", js.Any.fromFunction1(value))
   }
 }

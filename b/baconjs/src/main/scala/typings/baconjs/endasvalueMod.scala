@@ -10,6 +10,5 @@ object endasvalueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(src: typings.baconjs.observableMod.default[js.Any]): typings.baconjs.observableMod.default[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[js.Object]]
+  inline def default(src: typings.baconjs.observableMod.default[js.Any]): typings.baconjs.observableMod.default[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[js.Object]]
 }

@@ -13,19 +13,15 @@ trait DeleteSpotDatafeedSubscriptionRequest extends StObject {
 }
 object DeleteSpotDatafeedSubscriptionRequest {
   
-  @scala.inline
-  def apply(): DeleteSpotDatafeedSubscriptionRequest = {
+  inline def apply(): DeleteSpotDatafeedSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSpotDatafeedSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSpotDatafeedSubscriptionRequestMutableBuilder[Self <: DeleteSpotDatafeedSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSpotDatafeedSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait DeleteQueuedReservedInstancesRequest extends StObject {
 }
 object DeleteQueuedReservedInstancesRequest {
   
-  @scala.inline
-  def apply(ReservedInstancesIds: DeleteQueuedReservedInstancesIdList): DeleteQueuedReservedInstancesRequest = {
+  inline def apply(ReservedInstancesIds: DeleteQueuedReservedInstancesIdList): DeleteQueuedReservedInstancesRequest = {
     val __obj = js.Dynamic.literal(ReservedInstancesIds = ReservedInstancesIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteQueuedReservedInstancesRequest]
   }
   
-  @scala.inline
-  implicit class DeleteQueuedReservedInstancesRequestMutableBuilder[Self <: DeleteQueuedReservedInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteQueuedReservedInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesIds(value: DeleteQueuedReservedInstancesIdList): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesIds(value: DeleteQueuedReservedInstancesIdList): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
+    inline def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
   }
 }

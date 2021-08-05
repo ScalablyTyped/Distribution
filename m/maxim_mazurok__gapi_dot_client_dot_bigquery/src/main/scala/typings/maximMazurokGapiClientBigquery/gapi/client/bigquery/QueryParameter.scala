@@ -17,31 +17,23 @@ trait QueryParameter extends StObject {
 }
 object QueryParameter {
   
-  @scala.inline
-  def apply(): QueryParameter = {
+  inline def apply(): QueryParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryParameter]
   }
   
-  @scala.inline
-  implicit class QueryParameterMutableBuilder[Self <: QueryParameter] (val x: Self) extends AnyVal {
+  extension [Self <: QueryParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameterType(value: QueryParameterType): Self = StObject.set(x, "parameterType", value.asInstanceOf[js.Any])
+    inline def setParameterType(value: QueryParameterType): Self = StObject.set(x, "parameterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterTypeUndefined: Self = StObject.set(x, "parameterType", js.undefined)
+    inline def setParameterTypeUndefined: Self = StObject.set(x, "parameterType", js.undefined)
     
-    @scala.inline
-    def setParameterValue(value: QueryParameterValue): Self = StObject.set(x, "parameterValue", value.asInstanceOf[js.Any])
+    inline def setParameterValue(value: QueryParameterValue): Self = StObject.set(x, "parameterValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValueUndefined: Self = StObject.set(x, "parameterValue", js.undefined)
+    inline def setParameterValueUndefined: Self = StObject.set(x, "parameterValue", js.undefined)
   }
 }

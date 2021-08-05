@@ -27,19 +27,15 @@ trait InsertCommandArgument extends StObject {
 }
 object InsertCommandArgument {
   
-  @scala.inline
-  def apply(Data: XInputStream, ReplaceExisting: Boolean): InsertCommandArgument = {
+  inline def apply(Data: XInputStream, ReplaceExisting: Boolean): InsertCommandArgument = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], ReplaceExisting = ReplaceExisting.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertCommandArgument]
   }
   
-  @scala.inline
-  implicit class InsertCommandArgumentMutableBuilder[Self <: InsertCommandArgument] (val x: Self) extends AnyVal {
+  extension [Self <: InsertCommandArgument](x: Self) {
     
-    @scala.inline
-    def setData(value: XInputStream): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: XInputStream): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceExisting(value: Boolean): Self = StObject.set(x, "ReplaceExisting", value.asInstanceOf[js.Any])
+    inline def setReplaceExisting(value: Boolean): Self = StObject.set(x, "ReplaceExisting", value.asInstanceOf[js.Any])
   }
 }

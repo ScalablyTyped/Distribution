@@ -10,16 +10,13 @@ trait UploadId extends StObject {
 }
 object UploadId {
   
-  @scala.inline
-  def apply(uploadId: String): UploadId = {
+  inline def apply(uploadId: String): UploadId = {
     val __obj = js.Dynamic.literal(uploadId = uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadId]
   }
   
-  @scala.inline
-  implicit class UploadIdMutableBuilder[Self <: UploadId] (val x: Self) extends AnyVal {
+  extension [Self <: UploadId](x: Self) {
     
-    @scala.inline
-    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

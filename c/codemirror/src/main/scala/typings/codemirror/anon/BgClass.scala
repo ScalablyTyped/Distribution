@@ -26,8 +26,7 @@ trait BgClass extends StObject {
 }
 object BgClass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bgClass: String,
     gutterMarkers: js.Any,
     handle: js.Any,
@@ -41,31 +40,22 @@ object BgClass {
     __obj.asInstanceOf[BgClass]
   }
   
-  @scala.inline
-  implicit class BgClassMutableBuilder[Self <: BgClass] (val x: Self) extends AnyVal {
+  extension [Self <: BgClass](x: Self) {
     
-    @scala.inline
-    def setBgClass(value: String): Self = StObject.set(x, "bgClass", value.asInstanceOf[js.Any])
+    inline def setBgClass(value: String): Self = StObject.set(x, "bgClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterMarkers(value: js.Any): Self = StObject.set(x, "gutterMarkers", value.asInstanceOf[js.Any])
+    inline def setGutterMarkers(value: js.Any): Self = StObject.set(x, "gutterMarkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextClass(value: String): Self = StObject.set(x, "textClass", value.asInstanceOf[js.Any])
+    inline def setTextClass(value: String): Self = StObject.set(x, "textClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgets(value: js.Any): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+    inline def setWidgets(value: js.Any): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapClass(value: String): Self = StObject.set(x, "wrapClass", value.asInstanceOf[js.Any])
+    inline def setWrapClass(value: String): Self = StObject.set(x, "wrapClass", value.asInstanceOf[js.Any])
   }
 }

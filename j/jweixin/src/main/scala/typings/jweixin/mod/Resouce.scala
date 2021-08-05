@@ -10,16 +10,13 @@ trait Resouce extends StObject {
 }
 object Resouce {
   
-  @scala.inline
-  def apply(localId: String): Resouce = {
+  inline def apply(localId: String): Resouce = {
     val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resouce]
   }
   
-  @scala.inline
-  implicit class ResouceMutableBuilder[Self <: Resouce] (val x: Self) extends AnyVal {
+  extension [Self <: Resouce](x: Self) {
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
   }
 }

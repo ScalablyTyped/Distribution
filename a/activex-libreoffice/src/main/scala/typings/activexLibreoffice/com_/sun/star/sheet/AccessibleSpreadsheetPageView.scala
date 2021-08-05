@@ -28,8 +28,7 @@ trait AccessibleSpreadsheetPageView
      with XAccessibleEventBroadcaster
 object AccessibleSpreadsheetPageView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

@@ -19,25 +19,19 @@ trait ExecChannelRequest
 }
 object ExecChannelRequest {
   
-  @scala.inline
-  def apply(command: String, recipient: Double, wantReply: Boolean): ExecChannelRequest = {
+  inline def apply(command: String, recipient: Double, wantReply: Boolean): ExecChannelRequest = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "exec", wantReply = wantReply.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecChannelRequest]
   }
   
-  @scala.inline
-  implicit class ExecChannelRequestMutableBuilder[Self <: ExecChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecChannelRequest](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: exec): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: exec): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
+    inline def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
   }
 }

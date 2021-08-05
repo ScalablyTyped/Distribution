@@ -13,16 +13,13 @@ trait TypeoforganizationInvitat extends StObject {
 }
 object TypeoforganizationInvitat {
   
-  @scala.inline
-  def apply(wrapOrganizationInvitation: (AxiosInstance, OrganizationInvitationProps) => OrganizationInvitation): TypeoforganizationInvitat = {
+  inline def apply(wrapOrganizationInvitation: (AxiosInstance, OrganizationInvitationProps) => OrganizationInvitation): TypeoforganizationInvitat = {
     val __obj = js.Dynamic.literal(wrapOrganizationInvitation = js.Any.fromFunction2(wrapOrganizationInvitation))
     __obj.asInstanceOf[TypeoforganizationInvitat]
   }
   
-  @scala.inline
-  implicit class TypeoforganizationInvitatMutableBuilder[Self <: TypeoforganizationInvitat] (val x: Self) extends AnyVal {
+  extension [Self <: TypeoforganizationInvitat](x: Self) {
     
-    @scala.inline
-    def setWrapOrganizationInvitation(value: (AxiosInstance, OrganizationInvitationProps) => OrganizationInvitation): Self = StObject.set(x, "wrapOrganizationInvitation", js.Any.fromFunction2(value))
+    inline def setWrapOrganizationInvitation(value: (AxiosInstance, OrganizationInvitationProps) => OrganizationInvitation): Self = StObject.set(x, "wrapOrganizationInvitation", js.Any.fromFunction2(value))
   }
 }

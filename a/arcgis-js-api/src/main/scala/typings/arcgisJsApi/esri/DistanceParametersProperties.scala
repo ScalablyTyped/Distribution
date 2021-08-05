@@ -42,37 +42,27 @@ trait DistanceParametersProperties extends StObject {
 }
 object DistanceParametersProperties {
   
-  @scala.inline
-  def apply(): DistanceParametersProperties = {
+  inline def apply(): DistanceParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistanceParametersProperties]
   }
   
-  @scala.inline
-  implicit class DistanceParametersPropertiesMutableBuilder[Self <: DistanceParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceParametersProperties](x: Self) {
     
-    @scala.inline
-    def setDistanceUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "distanceUnit", value.asInstanceOf[js.Any])
+    inline def setDistanceUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "distanceUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUnitUndefined: Self = StObject.set(x, "distanceUnit", js.undefined)
+    inline def setDistanceUnitUndefined: Self = StObject.set(x, "distanceUnit", js.undefined)
     
-    @scala.inline
-    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
-    @scala.inline
-    def setGeometry1(value: GeometryProperties): Self = StObject.set(x, "geometry1", value.asInstanceOf[js.Any])
+    inline def setGeometry1(value: GeometryProperties): Self = StObject.set(x, "geometry1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry1Undefined: Self = StObject.set(x, "geometry1", js.undefined)
+    inline def setGeometry1Undefined: Self = StObject.set(x, "geometry1", js.undefined)
     
-    @scala.inline
-    def setGeometry2(value: GeometryProperties): Self = StObject.set(x, "geometry2", value.asInstanceOf[js.Any])
+    inline def setGeometry2(value: GeometryProperties): Self = StObject.set(x, "geometry2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry2Undefined: Self = StObject.set(x, "geometry2", js.undefined)
+    inline def setGeometry2Undefined: Self = StObject.set(x, "geometry2", js.undefined)
   }
 }

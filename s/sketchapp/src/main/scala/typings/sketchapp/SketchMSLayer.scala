@@ -53,8 +53,7 @@ trait SketchMSLayer extends StObject {
 }
 object SketchMSLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _class: String,
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
@@ -80,82 +79,56 @@ object SketchMSLayer {
     __obj.asInstanceOf[SketchMSLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSLayerMutableBuilder[Self <: SketchMSLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSLayer](x: Self) {
     
-    @scala.inline
-    def setBooleanOperation(value: SketchMSLayerBooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
+    inline def setBooleanOperation(value: SketchMSLayerBooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClippingMaskMode(value: SketchMSLayerClippingMaskMode): Self = StObject.set(x, "clippingMaskMode", value.asInstanceOf[js.Any])
+    inline def setClippingMaskMode(value: SketchMSLayerClippingMaskMode): Self = StObject.set(x, "clippingMaskMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setDo_objectID(value: String): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
+    inline def setDo_objectID(value: String): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportOptions(value: SketchMSLayerExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
+    inline def setExportOptions(value: SketchMSLayerExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: SketchMSLayerFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: SketchMSLayerFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasClippingMask(value: Boolean): Self = StObject.set(x, "hasClippingMask", value.asInstanceOf[js.Any])
+    inline def setHasClippingMask(value: Boolean): Self = StObject.set(x, "hasClippingMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedToViewport(value: Boolean): Self = StObject.set(x, "isFixedToViewport", value.asInstanceOf[js.Any])
+    inline def setIsFixedToViewport(value: Boolean): Self = StObject.set(x, "isFixedToViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFlippedHorizontal(value: Boolean): Self = StObject.set(x, "isFlippedHorizontal", value.asInstanceOf[js.Any])
+    inline def setIsFlippedHorizontal(value: Boolean): Self = StObject.set(x, "isFlippedHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFlippedVertical(value: Boolean): Self = StObject.set(x, "isFlippedVertical", value.asInstanceOf[js.Any])
+    inline def setIsFlippedVertical(value: Boolean): Self = StObject.set(x, "isFlippedVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerListExpandedType(value: Double): Self = StObject.set(x, "layerListExpandedType", value.asInstanceOf[js.Any])
+    inline def setLayerListExpandedType(value: Double): Self = StObject.set(x, "layerListExpandedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayers(value: js.Array[SketchMSLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[SketchMSLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: SketchMSLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: SketchMSLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameIsFixed(value: Boolean): Self = StObject.set(x, "nameIsFixed", value.asInstanceOf[js.Any])
+    inline def setNameIsFixed(value: Boolean): Self = StObject.set(x, "nameIsFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizingConstraint(value: Double): Self = StObject.set(x, "resizingConstraint", value.asInstanceOf[js.Any])
+    inline def setResizingConstraint(value: Double): Self = StObject.set(x, "resizingConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizingType(value: SketchMSLayerResizingType): Self = StObject.set(x, "resizingType", value.asInstanceOf[js.Any])
+    inline def setResizingType(value: SketchMSLayerResizingType): Self = StObject.set(x, "resizingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldBreakMaskChain(value: Boolean): Self = StObject.set(x, "shouldBreakMaskChain", value.asInstanceOf[js.Any])
+    inline def setShouldBreakMaskChain(value: Boolean): Self = StObject.set(x, "shouldBreakMaskChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: SketchMSStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SketchMSStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: String): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: String): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

@@ -31,25 +31,19 @@ trait SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1ExportAgentResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse](x: Self) {
     
-    @scala.inline
-    def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
+    inline def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
+    inline def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
     
-    @scala.inline
-    def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
+    inline def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
+    inline def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
   }
 }

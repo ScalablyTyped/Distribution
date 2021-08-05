@@ -10,15 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hashPassword(password: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashPassword")(password.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def hashPassword(password: String, callback: js.Function2[/* err */ js.Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashPassword")(password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hashPassword(password: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashPassword")(password.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hashPassword(password: String, callback: js.Function2[/* err */ js.Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashPassword")(password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def validatePassword(password: String, hashedPass: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePassword")(password.asInstanceOf[js.Any], hashedPass.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def validatePassword(
+  inline def validatePassword(password: String, hashedPass: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePassword")(password.asInstanceOf[js.Any], hashedPass.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validatePassword(
     password: String,
     hashedPass: String,
     callback: js.Function2[/* err */ js.Any, /* result */ Boolean, Unit]

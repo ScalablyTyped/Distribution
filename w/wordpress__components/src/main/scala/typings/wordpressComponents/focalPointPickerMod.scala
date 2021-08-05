@@ -38,20 +38,16 @@ object focalPointPickerMod {
     }
     object FocalPoint {
       
-      @scala.inline
-      def apply(x: Double, y: Double): FocalPoint = {
+      inline def apply(x: Double, y: Double): FocalPoint = {
         val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
         __obj.asInstanceOf[FocalPoint]
       }
       
-      @scala.inline
-      implicit class FocalPointMutableBuilder[Self <: FocalPoint] (val x: Self) extends AnyVal {
+      extension [Self <: FocalPoint](x: Self) {
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
     
@@ -76,23 +72,18 @@ object focalPointPickerMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onChange: FocalPoint => Unit, url: String, value: FocalPoint): Props = {
+      inline def apply(onChange: FocalPoint => Unit, url: String, value: FocalPoint): Props = {
         val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), url = url.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setOnChange(value: FocalPoint => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: FocalPoint => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: FocalPoint): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: FocalPoint): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
   }

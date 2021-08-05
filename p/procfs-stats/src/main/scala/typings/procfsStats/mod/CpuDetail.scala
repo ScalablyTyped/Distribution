@@ -28,8 +28,7 @@ trait CpuDetail extends StObject {
 }
 object CpuDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     guest: String,
     guest_nice: String,
     idle: String,
@@ -45,37 +44,26 @@ object CpuDetail {
     __obj.asInstanceOf[CpuDetail]
   }
   
-  @scala.inline
-  implicit class CpuDetailMutableBuilder[Self <: CpuDetail] (val x: Self) extends AnyVal {
+  extension [Self <: CpuDetail](x: Self) {
     
-    @scala.inline
-    def setGuest(value: String): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
+    inline def setGuest(value: String): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuest_nice(value: String): Self = StObject.set(x, "guest_nice", value.asInstanceOf[js.Any])
+    inline def setGuest_nice(value: String): Self = StObject.set(x, "guest_nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdle(value: String): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: String): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIowait(value: String): Self = StObject.set(x, "iowait", value.asInstanceOf[js.Any])
+    inline def setIowait(value: String): Self = StObject.set(x, "iowait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIrq(value: String): Self = StObject.set(x, "irq", value.asInstanceOf[js.Any])
+    inline def setIrq(value: String): Self = StObject.set(x, "irq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNice(value: String): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: String): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftirq(value: String): Self = StObject.set(x, "softirq", value.asInstanceOf[js.Any])
+    inline def setSoftirq(value: String): Self = StObject.set(x, "softirq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteal(value: String): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
+    inline def setSteal(value: String): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

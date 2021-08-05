@@ -65,8 +65,7 @@ object mod {
     * @param options the loading and requiring default options
     */
   /* static member */
-  @scala.inline
-  def configure(options: SandboxOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(options: SandboxOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns a new SandboxedModule where moduleId is a regular module path / id as you would normally pass into
@@ -77,10 +76,8 @@ object mod {
     * @param options the loading options
     */
   /* static member */
-  @scala.inline
-  def load(moduleId: String): SandboxedModule = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(moduleId.asInstanceOf[js.Any]).asInstanceOf[SandboxedModule]
-  @scala.inline
-  def load(moduleId: String, options: SandboxOptions): SandboxedModule = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SandboxedModule]
+  inline def load(moduleId: String): SandboxedModule = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(moduleId.asInstanceOf[js.Any]).asInstanceOf[SandboxedModule]
+  inline def load(moduleId: String, options: SandboxOptions): SandboxedModule = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SandboxedModule]
   
   /**
     * Enables a built-in source transformer by name. Currently, SandboxedModule ships with two built in source
@@ -93,8 +90,7 @@ object mod {
     * @param name The name of the built-in source transformer
     */
   /* static member */
-  @scala.inline
-  def registerBuiltInSourceTransformer(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerBuiltInSourceTransformer")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerBuiltInSourceTransformer(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerBuiltInSourceTransformer")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Identical to {@link SandboxedModule.load()}, but returns sandboxedModule.exports directly.
@@ -103,10 +99,8 @@ object mod {
     * @param options the requiring options
     */
   /* static member */
-  @scala.inline
-  def require(moduleId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def require(moduleId: String, options: SandboxOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def require(moduleId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def require(moduleId: String, options: SandboxOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait SandboxOptions extends StObject {
     
@@ -161,50 +155,36 @@ object mod {
   }
   object SandboxOptions {
     
-    @scala.inline
-    def apply(): SandboxOptions = {
+    inline def apply(): SandboxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SandboxOptions]
     }
     
-    @scala.inline
-    implicit class SandboxOptionsMutableBuilder[Self <: SandboxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SandboxOptions](x: Self) {
       
-      @scala.inline
-      def setGlobals(value: js.Object): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: js.Object): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+      inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      @scala.inline
-      def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      @scala.inline
-      def setRequires(value: js.Object): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Object): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+      inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
       
-      @scala.inline
-      def setSingleOnly(value: Boolean): Self = StObject.set(x, "singleOnly", value.asInstanceOf[js.Any])
+      inline def setSingleOnly(value: Boolean): Self = StObject.set(x, "singleOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleOnlyUndefined: Self = StObject.set(x, "singleOnly", js.undefined)
+      inline def setSingleOnlyUndefined: Self = StObject.set(x, "singleOnly", js.undefined)
       
-      @scala.inline
-      def setSourceTransformers(value: js.Object): Self = StObject.set(x, "sourceTransformers", value.asInstanceOf[js.Any])
+      inline def setSourceTransformers(value: js.Object): Self = StObject.set(x, "sourceTransformers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTransformersSingleOnly(value: Boolean): Self = StObject.set(x, "sourceTransformersSingleOnly", value.asInstanceOf[js.Any])
+      inline def setSourceTransformersSingleOnly(value: Boolean): Self = StObject.set(x, "sourceTransformersSingleOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTransformersSingleOnlyUndefined: Self = StObject.set(x, "sourceTransformersSingleOnly", js.undefined)
+      inline def setSourceTransformersSingleOnlyUndefined: Self = StObject.set(x, "sourceTransformersSingleOnly", js.undefined)
       
-      @scala.inline
-      def setSourceTransformersUndefined: Self = StObject.set(x, "sourceTransformers", js.undefined)
+      inline def setSourceTransformersUndefined: Self = StObject.set(x, "sourceTransformers", js.undefined)
     }
   }
   
@@ -247,8 +227,7 @@ object mod {
   }
   object SandboxedModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exports: js.Any,
       filename: String,
       globals: js.Object,
@@ -261,29 +240,21 @@ object mod {
       __obj.asInstanceOf[SandboxedModule]
     }
     
-    @scala.inline
-    implicit class SandboxedModuleMutableBuilder[Self <: SandboxedModule] (val x: Self) extends AnyVal {
+    extension [Self <: SandboxedModule](x: Self) {
       
-      @scala.inline
-      def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobals(value: js.Object): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: js.Object): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: js.Object): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: js.Object): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTransformers(value: js.Object): Self = StObject.set(x, "sourceTransformers", value.asInstanceOf[js.Any])
+      inline def setSourceTransformers(value: js.Object): Self = StObject.set(x, "sourceTransformers", value.asInstanceOf[js.Any])
     }
   }
 }

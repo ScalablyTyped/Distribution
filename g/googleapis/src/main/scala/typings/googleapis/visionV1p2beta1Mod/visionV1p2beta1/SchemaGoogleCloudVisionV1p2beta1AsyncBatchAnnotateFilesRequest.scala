@@ -17,22 +17,17 @@ trait SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest extends StO
 }
 object SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequestMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesRequest](x: Self) {
     
-    @scala.inline
-    def setRequests(value: js.Array[SchemaGoogleCloudVisionV1p2beta1AsyncAnnotateFileRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[SchemaGoogleCloudVisionV1p2beta1AsyncAnnotateFileRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: SchemaGoogleCloudVisionV1p2beta1AsyncAnnotateFileRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: SchemaGoogleCloudVisionV1p2beta1AsyncAnnotateFileRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

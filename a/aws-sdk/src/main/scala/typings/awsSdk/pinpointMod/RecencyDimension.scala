@@ -18,19 +18,15 @@ trait RecencyDimension extends StObject {
 }
 object RecencyDimension {
   
-  @scala.inline
-  def apply(Duration: Duration, RecencyType: RecencyType): RecencyDimension = {
+  inline def apply(Duration: Duration, RecencyType: RecencyType): RecencyDimension = {
     val __obj = js.Dynamic.literal(Duration = Duration.asInstanceOf[js.Any], RecencyType = RecencyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecencyDimension]
   }
   
-  @scala.inline
-  implicit class RecencyDimensionMutableBuilder[Self <: RecencyDimension] (val x: Self) extends AnyVal {
+  extension [Self <: RecencyDimension](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecencyType(value: RecencyType): Self = StObject.set(x, "RecencyType", value.asInstanceOf[js.Any])
+    inline def setRecencyType(value: RecencyType): Self = StObject.set(x, "RecencyType", value.asInstanceOf[js.Any])
   }
 }

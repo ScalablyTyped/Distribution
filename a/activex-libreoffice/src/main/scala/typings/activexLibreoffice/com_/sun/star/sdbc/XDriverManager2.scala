@@ -26,8 +26,7 @@ trait XDriverManager2
      with XEnumerationAccess
 object XDriverManager2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     LoginTimeout: Double,
     acquire: () => Unit,

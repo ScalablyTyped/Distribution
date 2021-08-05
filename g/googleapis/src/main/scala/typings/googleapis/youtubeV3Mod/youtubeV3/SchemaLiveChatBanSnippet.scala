@@ -25,37 +25,27 @@ trait SchemaLiveChatBanSnippet extends StObject {
 }
 object SchemaLiveChatBanSnippet {
   
-  @scala.inline
-  def apply(): SchemaLiveChatBanSnippet = {
+  inline def apply(): SchemaLiveChatBanSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatBanSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatBanSnippetMutableBuilder[Self <: SchemaLiveChatBanSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatBanSnippet](x: Self) {
     
-    @scala.inline
-    def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBanDurationSecondsUndefined: Self = StObject.set(x, "banDurationSeconds", js.undefined)
+    inline def setBanDurationSecondsUndefined: Self = StObject.set(x, "banDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "bannedUserDetails", value.asInstanceOf[js.Any])
+    inline def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "bannedUserDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannedUserDetailsUndefined: Self = StObject.set(x, "bannedUserDetails", js.undefined)
+    inline def setBannedUserDetailsUndefined: Self = StObject.set(x, "bannedUserDetails", js.undefined)
     
-    @scala.inline
-    def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
+    inline def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
+    inline def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

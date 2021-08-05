@@ -50,25 +50,19 @@ trait PlusNativeObjAnimationOptions extends StObject {
 }
 object PlusNativeObjAnimationOptions {
   
-  @scala.inline
-  def apply(): PlusNativeObjAnimationOptions = {
+  inline def apply(): PlusNativeObjAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjAnimationOptionsMutableBuilder[Self <: PlusNativeObjAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObjAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setType(value: `pop-in` | `pop-out` | `slide-in-right` | `slide-out-right`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `pop-in` | `pop-out` | `slide-in-right` | `slide-out-right`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

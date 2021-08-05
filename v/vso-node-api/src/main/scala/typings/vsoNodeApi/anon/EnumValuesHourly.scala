@@ -10,16 +10,13 @@ trait EnumValuesHourly extends StObject {
 }
 object EnumValuesHourly {
   
-  @scala.inline
-  def apply(enumValues: Hourly): EnumValuesHourly = {
+  inline def apply(enumValues: Hourly): EnumValuesHourly = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesHourly]
   }
   
-  @scala.inline
-  implicit class EnumValuesHourlyMutableBuilder[Self <: EnumValuesHourly] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesHourly](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Hourly): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Hourly): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

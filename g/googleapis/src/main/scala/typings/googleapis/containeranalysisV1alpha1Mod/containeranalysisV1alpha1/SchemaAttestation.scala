@@ -20,19 +20,15 @@ trait SchemaAttestation extends StObject {
 }
 object SchemaAttestation {
   
-  @scala.inline
-  def apply(): SchemaAttestation = {
+  inline def apply(): SchemaAttestation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttestation]
   }
   
-  @scala.inline
-  implicit class SchemaAttestationMutableBuilder[Self <: SchemaAttestation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttestation](x: Self) {
     
-    @scala.inline
-    def setPgpSignedAttestation(value: SchemaPgpSignedAttestation): Self = StObject.set(x, "pgpSignedAttestation", value.asInstanceOf[js.Any])
+    inline def setPgpSignedAttestation(value: SchemaPgpSignedAttestation): Self = StObject.set(x, "pgpSignedAttestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgpSignedAttestationUndefined: Self = StObject.set(x, "pgpSignedAttestation", js.undefined)
+    inline def setPgpSignedAttestationUndefined: Self = StObject.set(x, "pgpSignedAttestation", js.undefined)
   }
 }

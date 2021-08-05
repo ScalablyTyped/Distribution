@@ -25,43 +25,31 @@ trait UploadSession extends StObject {
 }
 object UploadSession {
   
-  @scala.inline
-  def apply(): UploadSession = {
+  inline def apply(): UploadSession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadSession]
   }
   
-  @scala.inline
-  implicit class UploadSessionMutableBuilder[Self <: UploadSession] (val x: Self) extends AnyVal {
+  extension [Self <: UploadSession](x: Self) {
     
-    @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
+    inline def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
+    inline def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
-    @scala.inline
-    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
+    inline def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
-    @scala.inline
-    def setNextExpectedRanges(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "nextExpectedRanges", value.asInstanceOf[js.Any])
+    inline def setNextExpectedRanges(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "nextExpectedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextExpectedRangesNull: Self = StObject.set(x, "nextExpectedRanges", null)
+    inline def setNextExpectedRangesNull: Self = StObject.set(x, "nextExpectedRanges", null)
     
-    @scala.inline
-    def setNextExpectedRangesUndefined: Self = StObject.set(x, "nextExpectedRanges", js.undefined)
+    inline def setNextExpectedRangesUndefined: Self = StObject.set(x, "nextExpectedRanges", js.undefined)
     
-    @scala.inline
-    def setNextExpectedRangesVarargs(value: String*): Self = StObject.set(x, "nextExpectedRanges", js.Array(value :_*))
+    inline def setNextExpectedRangesVarargs(value: String*): Self = StObject.set(x, "nextExpectedRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setUploadUrl(value: NullableOption[String]): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
+    inline def setUploadUrl(value: NullableOption[String]): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUrlNull: Self = StObject.set(x, "uploadUrl", null)
+    inline def setUploadUrlNull: Self = StObject.set(x, "uploadUrl", null)
     
-    @scala.inline
-    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
+    inline def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
   }
 }

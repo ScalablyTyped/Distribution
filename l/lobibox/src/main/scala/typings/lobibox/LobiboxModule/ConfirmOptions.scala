@@ -12,19 +12,15 @@ trait ConfirmOptions
 }
 object ConfirmOptions {
   
-  @scala.inline
-  def apply(): ConfirmOptions = {
+  inline def apply(): ConfirmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmOptions]
   }
   
-  @scala.inline
-  implicit class ConfirmOptionsMutableBuilder[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmOptions](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
   }
 }

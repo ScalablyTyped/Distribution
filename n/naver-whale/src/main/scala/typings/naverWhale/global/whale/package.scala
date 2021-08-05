@@ -11,5 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 권한: "debugger"
   * @since Chrome 18.
   */
-@scala.inline
-def debugger: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof chrome.debugger */ js.Any = typings.naverWhale.global.whale.^.asInstanceOf[js.Dynamic].selectDynamic("_debugger").asInstanceOf[/* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof chrome.debugger */ js.Any]
+inline def debugger: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof chrome.debugger */ js.Any = typings.naverWhale.global.whale.^.asInstanceOf[js.Dynamic].selectDynamic("_debugger").asInstanceOf[/* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof chrome.debugger */ js.Any]

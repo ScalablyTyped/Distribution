@@ -22,28 +22,21 @@ trait SchemaCompleteQueryResponse extends StObject {
 }
 object SchemaCompleteQueryResponse {
   
-  @scala.inline
-  def apply(): SchemaCompleteQueryResponse = {
+  inline def apply(): SchemaCompleteQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompleteQueryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCompleteQueryResponseMutableBuilder[Self <: SchemaCompleteQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompleteQueryResponse](x: Self) {
     
-    @scala.inline
-    def setCompletionResults(value: js.Array[SchemaCompletionResult]): Self = StObject.set(x, "completionResults", value.asInstanceOf[js.Any])
+    inline def setCompletionResults(value: js.Array[SchemaCompletionResult]): Self = StObject.set(x, "completionResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionResultsUndefined: Self = StObject.set(x, "completionResults", js.undefined)
+    inline def setCompletionResultsUndefined: Self = StObject.set(x, "completionResults", js.undefined)
     
-    @scala.inline
-    def setCompletionResultsVarargs(value: SchemaCompletionResult*): Self = StObject.set(x, "completionResults", js.Array(value :_*))
+    inline def setCompletionResultsVarargs(value: SchemaCompletionResult*): Self = StObject.set(x, "completionResults", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

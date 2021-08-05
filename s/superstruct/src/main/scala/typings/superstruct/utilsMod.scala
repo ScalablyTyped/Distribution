@@ -18,11 +18,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iteratorShift[T](input: Iterator[T, js.Any, Unit]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorShift")(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  inline def iteratorShift[T](input: Iterator[T, js.Any, Unit]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorShift")(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
-  @scala.inline
-  def toFailures(result: StructResult, context: StructContext): IterableIterator[StructFailure] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFailures")(result.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[StructFailure]]
+  inline def toFailures(result: StructResult, context: StructContext): IterableIterator[StructFailure] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFailures")(result.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[StructFailure]]
   
   type StructRecord[T] = Record[String, Struct[T, js.Any]]
   

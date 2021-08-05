@@ -14,23 +14,18 @@ trait TransactionOrder extends StObject {
 }
 object TransactionOrder {
   
-  @scala.inline
-  def apply(id: String, price: Double, `type`: String): TransactionOrder = {
+  inline def apply(id: String, price: Double, `type`: String): TransactionOrder = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionOrder]
   }
   
-  @scala.inline
-  implicit class TransactionOrderMutableBuilder[Self <: TransactionOrder] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionOrder](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

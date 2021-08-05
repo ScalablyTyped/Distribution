@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Permission")
 @js.native
-class Permission_ protected () extends NativeObject {
+/* private */ class Permission_ () extends NativeObject {
   
   /**
     * Checks the authorization status for a given set of permissions.

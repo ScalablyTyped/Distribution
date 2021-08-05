@@ -29,8 +29,7 @@ trait XEntity
 }
 object XEntity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: XNamedNodeMap,
     ChildNodes: XNodeList,
     FirstChild: XNode,
@@ -84,25 +83,18 @@ object XEntity {
     __obj.asInstanceOf[XEntity]
   }
   
-  @scala.inline
-  implicit class XEntityMutableBuilder[Self <: XEntity] (val x: Self) extends AnyVal {
+  extension [Self <: XEntity](x: Self) {
     
-    @scala.inline
-    def setGetNotationName(value: () => String): Self = StObject.set(x, "getNotationName", js.Any.fromFunction0(value))
+    inline def setGetNotationName(value: () => String): Self = StObject.set(x, "getNotationName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
+    inline def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
+    inline def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotationName(value: String): Self = StObject.set(x, "NotationName", value.asInstanceOf[js.Any])
+    inline def setNotationName(value: String): Self = StObject.set(x, "NotationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "PublicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "PublicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "SystemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "SystemId", value.asInstanceOf[js.Any])
   }
 }

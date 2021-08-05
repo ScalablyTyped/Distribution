@@ -22,23 +22,18 @@ object typesMetricsConfigurationMod {
   }
   object MetricsConfiguration {
     
-    @scala.inline
-    def apply(Id: String): MetricsConfiguration = {
+    inline def apply(Id: String): MetricsConfiguration = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricsConfiguration]
     }
     
-    @scala.inline
-    implicit class MetricsConfigurationMutableBuilder[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: MetricsConfiguration](x: Self) {
       
-      @scala.inline
-      def setFilter(value: MetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: MetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,20 +49,16 @@ object typesMetricsConfigurationMod {
   }
   object UnmarshalledMetricsConfiguration {
     
-    @scala.inline
-    def apply(Id: String): UnmarshalledMetricsConfiguration = {
+    inline def apply(Id: String): UnmarshalledMetricsConfiguration = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledMetricsConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledMetricsConfigurationMutableBuilder[Self <: UnmarshalledMetricsConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledMetricsConfiguration](x: Self) {
       
-      @scala.inline
-      def setFilter(value: UnmarshalledMetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: UnmarshalledMetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     }
   }
 }

@@ -12,8 +12,7 @@ trait Options[E /* <: HTMLElement */]
      with typings.reactMdUtils.useScrollListenerMod.Options[E]
 object Options {
   
-  @scala.inline
-  def apply[E /* <: HTMLElement */](onScroll: /* evt */ Event => Unit): Options[E] = {
+  inline def apply[E /* <: HTMLElement */](onScroll: /* evt */ Event => Unit): Options[E] = {
     val __obj = js.Dynamic.literal(onScroll = js.Any.fromFunction1(onScroll))
     __obj.asInstanceOf[Options[E]]
   }

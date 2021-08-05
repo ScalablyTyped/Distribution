@@ -17,22 +17,17 @@ trait OrderedListToken
 }
 object OrderedListToken {
   
-  @scala.inline
-  def apply(contents: String, location: LocationRange): OrderedListToken = {
+  inline def apply(contents: String, location: LocationRange): OrderedListToken = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ol")
     __obj.asInstanceOf[OrderedListToken]
   }
   
-  @scala.inline
-  implicit class OrderedListTokenMutableBuilder[Self <: OrderedListToken] (val x: Self) extends AnyVal {
+  extension [Self <: OrderedListToken](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

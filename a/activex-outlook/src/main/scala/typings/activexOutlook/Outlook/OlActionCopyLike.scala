@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlActionCopyLike extends StObject
 object OlActionCopyLike {
   
-  @scala.inline
-  def olForward: `2` = 2.asInstanceOf[`2`]
+  inline def olForward: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olReply: `0` = 0.asInstanceOf[`0`]
+  inline def olReply: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olReplyAll: `1` = 1.asInstanceOf[`1`]
+  inline def olReplyAll: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olReplyFolder: `3` = 3.asInstanceOf[`3`]
+  inline def olReplyFolder: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olRespond: `4` = 4.asInstanceOf[`4`]
+  inline def olRespond: `4` = 4.asInstanceOf[`4`]
 }

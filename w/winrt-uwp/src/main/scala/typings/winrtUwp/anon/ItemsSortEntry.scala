@@ -13,19 +13,15 @@ trait ItemsSortEntry extends StObject {
 }
 object ItemsSortEntry {
   
-  @scala.inline
-  def apply(items: SortEntry, returnValue: Double): ItemsSortEntry = {
+  inline def apply(items: SortEntry, returnValue: Double): ItemsSortEntry = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsSortEntry]
   }
   
-  @scala.inline
-  implicit class ItemsSortEntryMutableBuilder[Self <: ItemsSortEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsSortEntry](x: Self) {
     
-    @scala.inline
-    def setItems(value: SortEntry): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: SortEntry): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

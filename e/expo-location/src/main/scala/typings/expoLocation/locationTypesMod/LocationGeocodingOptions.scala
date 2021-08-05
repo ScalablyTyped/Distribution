@@ -14,19 +14,15 @@ trait LocationGeocodingOptions extends StObject {
 }
 object LocationGeocodingOptions {
   
-  @scala.inline
-  def apply(): LocationGeocodingOptions = {
+  inline def apply(): LocationGeocodingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationGeocodingOptions]
   }
   
-  @scala.inline
-  implicit class LocationGeocodingOptionsMutableBuilder[Self <: LocationGeocodingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocationGeocodingOptions](x: Self) {
     
-    @scala.inline
-    def setUseGoogleMaps(value: Boolean): Self = StObject.set(x, "useGoogleMaps", value.asInstanceOf[js.Any])
+    inline def setUseGoogleMaps(value: Boolean): Self = StObject.set(x, "useGoogleMaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseGoogleMapsUndefined: Self = StObject.set(x, "useGoogleMaps", js.undefined)
+    inline def setUseGoogleMapsUndefined: Self = StObject.set(x, "useGoogleMaps", js.undefined)
   }
 }

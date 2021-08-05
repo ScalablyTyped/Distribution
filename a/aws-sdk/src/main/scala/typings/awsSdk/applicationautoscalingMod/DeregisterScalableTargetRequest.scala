@@ -23,8 +23,7 @@ trait DeregisterScalableTargetRequest extends StObject {
 }
 object DeregisterScalableTargetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
     ServiceNamespace: ServiceNamespace
@@ -33,16 +32,12 @@ object DeregisterScalableTargetRequest {
     __obj.asInstanceOf[DeregisterScalableTargetRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterScalableTargetRequestMutableBuilder[Self <: DeregisterScalableTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterScalableTargetRequest](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
   }
 }

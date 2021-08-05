@@ -11,19 +11,15 @@ trait ReimageNodeRequest extends StObject {
 }
 object ReimageNodeRequest {
   
-  @scala.inline
-  def apply(): ReimageNodeRequest = {
+  inline def apply(): ReimageNodeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReimageNodeRequest]
   }
   
-  @scala.inline
-  implicit class ReimageNodeRequestMutableBuilder[Self <: ReimageNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReimageNodeRequest](x: Self) {
     
-    @scala.inline
-    def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
+    inline def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
+    inline def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
   }
 }

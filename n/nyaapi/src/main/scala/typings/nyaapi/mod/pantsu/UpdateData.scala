@@ -12,8 +12,7 @@ trait UpdateData
 }
 object UpdateData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     c: Category,
     description: String,
     hidden: Boolean,
@@ -31,10 +30,8 @@ object UpdateData {
     __obj.asInstanceOf[UpdateData]
   }
   
-  @scala.inline
-  implicit class UpdateDataMutableBuilder[Self <: UpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateData](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -35,43 +35,31 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseError extends StObject {
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseError {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseError = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseError] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseError](x: Self) {
     
-    @scala.inline
-    def setAvailableQuantity(value: Double): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
+    inline def setAvailableQuantity(value: Double): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
+    inline def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdatedPrice(value: GoogleActionsOrdersV3PriceAttribute): Self = StObject.set(x, "updatedPrice", value.asInstanceOf[js.Any])
+    inline def setUpdatedPrice(value: GoogleActionsOrdersV3PriceAttribute): Self = StObject.set(x, "updatedPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedPriceUndefined: Self = StObject.set(x, "updatedPrice", js.undefined)
+    inline def setUpdatedPriceUndefined: Self = StObject.set(x, "updatedPrice", js.undefined)
   }
 }

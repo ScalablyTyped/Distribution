@@ -23,25 +23,19 @@ trait UpdateDistributionRequest extends StObject {
 }
 object UpdateDistributionRequest {
   
-  @scala.inline
-  def apply(DistributionConfig: DistributionConfig, Id: String): UpdateDistributionRequest = {
+  inline def apply(DistributionConfig: DistributionConfig, Id: String): UpdateDistributionRequest = {
     val __obj = js.Dynamic.literal(DistributionConfig = DistributionConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDistributionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDistributionRequestMutableBuilder[Self <: UpdateDistributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDistributionRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
+    inline def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

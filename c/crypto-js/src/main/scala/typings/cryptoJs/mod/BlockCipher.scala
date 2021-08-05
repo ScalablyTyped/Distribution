@@ -16,16 +16,13 @@ trait BlockCipher extends StObject {
 }
 object BlockCipher {
   
-  @scala.inline
-  def apply(blockSize: Double): BlockCipher = {
+  inline def apply(blockSize: Double): BlockCipher = {
     val __obj = js.Dynamic.literal(blockSize = blockSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockCipher]
   }
   
-  @scala.inline
-  implicit class BlockCipherMutableBuilder[Self <: BlockCipher] (val x: Self) extends AnyVal {
+  extension [Self <: BlockCipher](x: Self) {
     
-    @scala.inline
-    def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+    inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
   }
 }

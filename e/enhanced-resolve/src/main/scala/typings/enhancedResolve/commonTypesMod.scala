@@ -79,38 +79,28 @@ object commonTypesMod {
   }
   object LoggingCallbackTools {
     
-    @scala.inline
-    def apply(): LoggingCallbackTools = {
+    inline def apply(): LoggingCallbackTools = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggingCallbackTools]
     }
     
-    @scala.inline
-    implicit class LoggingCallbackToolsMutableBuilder[Self <: LoggingCallbackTools] (val x: Self) extends AnyVal {
+    extension [Self <: LoggingCallbackTools](x: Self) {
       
-      @scala.inline
-      def setLog(value: /* msg */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* msg */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setMissing(value: js.Array[String] | Push): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+      inline def setMissing(value: js.Array[String] | Push): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+      inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       
-      @scala.inline
-      def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
+      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
       
-      @scala.inline
-      def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
-      @scala.inline
-      def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
     }
   }
   
@@ -130,20 +120,16 @@ object commonTypesMod {
   }
   object ResolveContext {
     
-    @scala.inline
-    def apply(): ResolveContext = {
+    inline def apply(): ResolveContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolveContext]
     }
     
-    @scala.inline
-    implicit class ResolveContextMutableBuilder[Self <: ResolveContext] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveContext](x: Self) {
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     }
   }
   
@@ -159,26 +145,20 @@ object commonTypesMod {
   }
   object ResolveError {
     
-    @scala.inline
-    def apply(details: String, message: String, missing: js.Array[String], name: String, recursion: Boolean): ResolveError = {
+    inline def apply(details: String, message: String, missing: js.Array[String], name: String, recursion: Boolean): ResolveError = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recursion = recursion.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveError]
     }
     
-    @scala.inline
-    implicit class ResolveErrorMutableBuilder[Self <: ResolveError] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveError](x: Self) {
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+      inline def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
+      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
       
-      @scala.inline
-      def setRecursion(value: Boolean): Self = StObject.set(x, "recursion", value.asInstanceOf[js.Any])
+      inline def setRecursion(value: Boolean): Self = StObject.set(x, "recursion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,29 +176,22 @@ object commonTypesMod {
   }
   object ResolveParseResult {
     
-    @scala.inline
-    def apply(directory: Boolean, file: Boolean, module: Boolean, query: String, request: String): ResolveParseResult = {
+    inline def apply(directory: Boolean, file: Boolean, module: Boolean, query: String, request: String): ResolveParseResult = {
       val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveParseResult]
     }
     
-    @scala.inline
-    implicit class ResolveParseResultMutableBuilder[Self <: ResolveParseResult] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveParseResult](x: Self) {
       
-      @scala.inline
-      def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,83 +225,58 @@ object commonTypesMod {
   }
   object ResolverRequest {
     
-    @scala.inline
-    def apply(context: ResolveContext, path: String, request: String): ResolverRequest = {
+    inline def apply(context: ResolveContext, path: String, request: String): ResolverRequest = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolverRequest]
     }
     
-    @scala.inline
-    implicit class ResolverRequestMutableBuilder[Self <: ResolverRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverRequest](x: Self) {
       
-      @scala.inline
-      def setContext(value: ResolveContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: ResolveContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFileData(value: DescriptionFileData): Self = StObject.set(x, "descriptionFileData", value.asInstanceOf[js.Any])
+      inline def setDescriptionFileData(value: DescriptionFileData): Self = StObject.set(x, "descriptionFileData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFileDataUndefined: Self = StObject.set(x, "descriptionFileData", js.undefined)
+      inline def setDescriptionFileDataUndefined: Self = StObject.set(x, "descriptionFileData", js.undefined)
       
-      @scala.inline
-      def setDescriptionFilePath(value: String): Self = StObject.set(x, "descriptionFilePath", value.asInstanceOf[js.Any])
+      inline def setDescriptionFilePath(value: String): Self = StObject.set(x, "descriptionFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFilePathUndefined: Self = StObject.set(x, "descriptionFilePath", js.undefined)
+      inline def setDescriptionFilePathUndefined: Self = StObject.set(x, "descriptionFilePath", js.undefined)
       
-      @scala.inline
-      def setDescriptionFileRoot(value: String): Self = StObject.set(x, "descriptionFileRoot", value.asInstanceOf[js.Any])
+      inline def setDescriptionFileRoot(value: String): Self = StObject.set(x, "descriptionFileRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFileRootUndefined: Self = StObject.set(x, "descriptionFileRoot", js.undefined)
+      inline def setDescriptionFileRootUndefined: Self = StObject.set(x, "descriptionFileRoot", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+      inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
       
-      @scala.inline
-      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__innerRequest(value: String): Self = StObject.set(x, "__innerRequest", value.asInstanceOf[js.Any])
+      inline def set__innerRequest(value: String): Self = StObject.set(x, "__innerRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__innerRequestUndefined: Self = StObject.set(x, "__innerRequest", js.undefined)
+      inline def set__innerRequestUndefined: Self = StObject.set(x, "__innerRequest", js.undefined)
       
-      @scala.inline
-      def set__innerRequest_relativePath(value: String): Self = StObject.set(x, "__innerRequest_relativePath", value.asInstanceOf[js.Any])
+      inline def set__innerRequest_relativePath(value: String): Self = StObject.set(x, "__innerRequest_relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__innerRequest_relativePathUndefined: Self = StObject.set(x, "__innerRequest_relativePath", js.undefined)
+      inline def set__innerRequest_relativePathUndefined: Self = StObject.set(x, "__innerRequest_relativePath", js.undefined)
       
-      @scala.inline
-      def set__innerRequest_request(value: String): Self = StObject.set(x, "__innerRequest_request", value.asInstanceOf[js.Any])
+      inline def set__innerRequest_request(value: String): Self = StObject.set(x, "__innerRequest_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__innerRequest_requestUndefined: Self = StObject.set(x, "__innerRequest_request", js.undefined)
+      inline def set__innerRequest_requestUndefined: Self = StObject.set(x, "__innerRequest_request", js.undefined)
     }
   }
 }

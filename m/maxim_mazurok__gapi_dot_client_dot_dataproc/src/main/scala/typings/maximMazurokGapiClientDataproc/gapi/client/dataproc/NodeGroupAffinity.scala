@@ -15,19 +15,15 @@ trait NodeGroupAffinity extends StObject {
 }
 object NodeGroupAffinity {
   
-  @scala.inline
-  def apply(): NodeGroupAffinity = {
+  inline def apply(): NodeGroupAffinity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupAffinity]
   }
   
-  @scala.inline
-  implicit class NodeGroupAffinityMutableBuilder[Self <: NodeGroupAffinity] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupAffinity](x: Self) {
     
-    @scala.inline
-    def setNodeGroupUri(value: String): Self = StObject.set(x, "nodeGroupUri", value.asInstanceOf[js.Any])
+    inline def setNodeGroupUri(value: String): Self = StObject.set(x, "nodeGroupUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupUriUndefined: Self = StObject.set(x, "nodeGroupUri", js.undefined)
+    inline def setNodeGroupUriUndefined: Self = StObject.set(x, "nodeGroupUri", js.undefined)
   }
 }

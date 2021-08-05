@@ -87,120 +87,89 @@ trait AuditLog extends StObject {
 }
 object AuditLog {
   
-  @scala.inline
-  def apply(): AuditLog = {
+  inline def apply(): AuditLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditLog]
   }
   
-  @scala.inline
-  implicit class AuditLogMutableBuilder[Self <: AuditLog] (val x: Self) extends AnyVal {
+  extension [Self <: AuditLog](x: Self) {
     
-    @scala.inline
-    def setAuthenticationInfo(value: AuthenticationInfo): Self = StObject.set(x, "authenticationInfo", value.asInstanceOf[js.Any])
+    inline def setAuthenticationInfo(value: AuthenticationInfo): Self = StObject.set(x, "authenticationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationInfoUndefined: Self = StObject.set(x, "authenticationInfo", js.undefined)
+    inline def setAuthenticationInfoUndefined: Self = StObject.set(x, "authenticationInfo", js.undefined)
     
-    @scala.inline
-    def setAuthorizationInfo(value: js.Array[AuthorizationInfo]): Self = StObject.set(x, "authorizationInfo", value.asInstanceOf[js.Any])
+    inline def setAuthorizationInfo(value: js.Array[AuthorizationInfo]): Self = StObject.set(x, "authorizationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationInfoUndefined: Self = StObject.set(x, "authorizationInfo", js.undefined)
+    inline def setAuthorizationInfoUndefined: Self = StObject.set(x, "authorizationInfo", js.undefined)
     
-    @scala.inline
-    def setAuthorizationInfoVarargs(value: AuthorizationInfo*): Self = StObject.set(x, "authorizationInfo", js.Array(value :_*))
+    inline def setAuthorizationInfoVarargs(value: AuthorizationInfo*): Self = StObject.set(x, "authorizationInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
-    @scala.inline
-    def setNumResponseItems(value: String): Self = StObject.set(x, "numResponseItems", value.asInstanceOf[js.Any])
+    inline def setNumResponseItems(value: String): Self = StObject.set(x, "numResponseItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResponseItemsUndefined: Self = StObject.set(x, "numResponseItems", js.undefined)
+    inline def setNumResponseItemsUndefined: Self = StObject.set(x, "numResponseItems", js.undefined)
     
-    @scala.inline
-    def setRequest(
+    inline def setRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[js.Any]
     ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMetadata(value: RequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
+    inline def setRequestMetadata(value: RequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
+    inline def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResourceLocation(value: ResourceLocation): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
+    inline def setResourceLocation(value: ResourceLocation): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
+    inline def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceOriginalState(
+    inline def setResourceOriginalState(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[js.Any]
     ): Self = StObject.set(x, "resourceOriginalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOriginalStateUndefined: Self = StObject.set(x, "resourceOriginalState", js.undefined)
+    inline def setResourceOriginalStateUndefined: Self = StObject.set(x, "resourceOriginalState", js.undefined)
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[js.Any]
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setServiceData(
+    inline def setServiceData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuditLog & TopLevel[js.Any]
     ): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
+    inline def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -73,91 +73,63 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(): Action = {
+  inline def apply(): Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setClearTimer(value: ClearTimerAction): Self = StObject.set(x, "clearTimer", value.asInstanceOf[js.Any])
+    inline def setClearTimer(value: ClearTimerAction): Self = StObject.set(x, "clearTimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearTimerUndefined: Self = StObject.set(x, "clearTimer", js.undefined)
+    inline def setClearTimerUndefined: Self = StObject.set(x, "clearTimer", js.undefined)
     
-    @scala.inline
-    def setDynamoDB(value: DynamoDBAction): Self = StObject.set(x, "dynamoDB", value.asInstanceOf[js.Any])
+    inline def setDynamoDB(value: DynamoDBAction): Self = StObject.set(x, "dynamoDB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamoDBUndefined: Self = StObject.set(x, "dynamoDB", js.undefined)
+    inline def setDynamoDBUndefined: Self = StObject.set(x, "dynamoDB", js.undefined)
     
-    @scala.inline
-    def setDynamoDBv2(value: DynamoDBv2Action): Self = StObject.set(x, "dynamoDBv2", value.asInstanceOf[js.Any])
+    inline def setDynamoDBv2(value: DynamoDBv2Action): Self = StObject.set(x, "dynamoDBv2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamoDBv2Undefined: Self = StObject.set(x, "dynamoDBv2", js.undefined)
+    inline def setDynamoDBv2Undefined: Self = StObject.set(x, "dynamoDBv2", js.undefined)
     
-    @scala.inline
-    def setFirehose(value: FirehoseAction): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
+    inline def setFirehose(value: FirehoseAction): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
+    inline def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
     
-    @scala.inline
-    def setIotEvents(value: IotEventsAction): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
+    inline def setIotEvents(value: IotEventsAction): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
+    inline def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
     
-    @scala.inline
-    def setIotSiteWise(value: IotSiteWiseAction): Self = StObject.set(x, "iotSiteWise", value.asInstanceOf[js.Any])
+    inline def setIotSiteWise(value: IotSiteWiseAction): Self = StObject.set(x, "iotSiteWise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotSiteWiseUndefined: Self = StObject.set(x, "iotSiteWise", js.undefined)
+    inline def setIotSiteWiseUndefined: Self = StObject.set(x, "iotSiteWise", js.undefined)
     
-    @scala.inline
-    def setIotTopicPublish(value: IotTopicPublishAction): Self = StObject.set(x, "iotTopicPublish", value.asInstanceOf[js.Any])
+    inline def setIotTopicPublish(value: IotTopicPublishAction): Self = StObject.set(x, "iotTopicPublish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotTopicPublishUndefined: Self = StObject.set(x, "iotTopicPublish", js.undefined)
+    inline def setIotTopicPublishUndefined: Self = StObject.set(x, "iotTopicPublish", js.undefined)
     
-    @scala.inline
-    def setLambda(value: LambdaAction): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    inline def setLambda(value: LambdaAction): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+    inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
-    @scala.inline
-    def setResetTimer(value: ResetTimerAction): Self = StObject.set(x, "resetTimer", value.asInstanceOf[js.Any])
+    inline def setResetTimer(value: ResetTimerAction): Self = StObject.set(x, "resetTimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetTimerUndefined: Self = StObject.set(x, "resetTimer", js.undefined)
+    inline def setResetTimerUndefined: Self = StObject.set(x, "resetTimer", js.undefined)
     
-    @scala.inline
-    def setSetTimer(value: SetTimerAction): Self = StObject.set(x, "setTimer", value.asInstanceOf[js.Any])
+    inline def setSetTimer(value: SetTimerAction): Self = StObject.set(x, "setTimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetTimerUndefined: Self = StObject.set(x, "setTimer", js.undefined)
+    inline def setSetTimerUndefined: Self = StObject.set(x, "setTimer", js.undefined)
     
-    @scala.inline
-    def setSetVariable(value: SetVariableAction): Self = StObject.set(x, "setVariable", value.asInstanceOf[js.Any])
+    inline def setSetVariable(value: SetVariableAction): Self = StObject.set(x, "setVariable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetVariableUndefined: Self = StObject.set(x, "setVariable", js.undefined)
+    inline def setSetVariableUndefined: Self = StObject.set(x, "setVariable", js.undefined)
     
-    @scala.inline
-    def setSns(value: SNSTopicPublishAction): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
+    inline def setSns(value: SNSTopicPublishAction): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
+    inline def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
     
-    @scala.inline
-    def setSqs(value: SqsAction): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
+    inline def setSqs(value: SqsAction): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
+    inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
   }
 }

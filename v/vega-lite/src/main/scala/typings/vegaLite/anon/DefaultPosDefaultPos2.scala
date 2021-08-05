@@ -15,19 +15,15 @@ trait DefaultPosDefaultPos2 extends StObject {
 }
 object DefaultPosDefaultPos2 {
   
-  @scala.inline
-  def apply(defaultPos: zeroOrMin | zeroOrMax | mid, defaultPos2: zeroOrMin | zeroOrMax): DefaultPosDefaultPos2 = {
+  inline def apply(defaultPos: zeroOrMin | zeroOrMax | mid, defaultPos2: zeroOrMin | zeroOrMax): DefaultPosDefaultPos2 = {
     val __obj = js.Dynamic.literal(defaultPos = defaultPos.asInstanceOf[js.Any], defaultPos2 = defaultPos2.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultPosDefaultPos2]
   }
   
-  @scala.inline
-  implicit class DefaultPosDefaultPos2MutableBuilder[Self <: DefaultPosDefaultPos2] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultPosDefaultPos2](x: Self) {
     
-    @scala.inline
-    def setDefaultPos(value: zeroOrMin | zeroOrMax | mid): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
+    inline def setDefaultPos(value: zeroOrMin | zeroOrMax | mid): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPos2(value: zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos2", value.asInstanceOf[js.Any])
+    inline def setDefaultPos2(value: zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos2", value.asInstanceOf[js.Any])
   }
 }

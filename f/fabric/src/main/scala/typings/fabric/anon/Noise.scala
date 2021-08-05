@@ -11,16 +11,13 @@ trait Noise extends StObject {
 }
 object Noise {
   
-  @scala.inline
-  def apply(noise: Double): Noise = {
+  inline def apply(noise: Double): Noise = {
     val __obj = js.Dynamic.literal(noise = noise.asInstanceOf[js.Any])
     __obj.asInstanceOf[Noise]
   }
   
-  @scala.inline
-  implicit class NoiseMutableBuilder[Self <: Noise] (val x: Self) extends AnyVal {
+  extension [Self <: Noise](x: Self) {
     
-    @scala.inline
-    def setNoise(value: Double): Self = StObject.set(x, "noise", value.asInstanceOf[js.Any])
+    inline def setNoise(value: Double): Self = StObject.set(x, "noise", value.asInstanceOf[js.Any])
   }
 }

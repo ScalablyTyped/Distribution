@@ -14,22 +14,17 @@ trait MirrorPadAttrs extends StObject {
 }
 object MirrorPadAttrs {
   
-  @scala.inline
-  def apply(mode: reflect | symmetric, paddings: js.Array[js.Tuple2[Double, Double]]): MirrorPadAttrs = {
+  inline def apply(mode: reflect | symmetric, paddings: js.Array[js.Tuple2[Double, Double]]): MirrorPadAttrs = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], paddings = paddings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MirrorPadAttrs]
   }
   
-  @scala.inline
-  implicit class MirrorPadAttrsMutableBuilder[Self <: MirrorPadAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: MirrorPadAttrs](x: Self) {
     
-    @scala.inline
-    def setMode(value: reflect | symmetric): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: reflect | symmetric): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddings(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "paddings", value.asInstanceOf[js.Any])
+    inline def setPaddings(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "paddings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "paddings", js.Array(value :_*))
+    inline def setPaddingsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "paddings", js.Array(value :_*))
   }
 }

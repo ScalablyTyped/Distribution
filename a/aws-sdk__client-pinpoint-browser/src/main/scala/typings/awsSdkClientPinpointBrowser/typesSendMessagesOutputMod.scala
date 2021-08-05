@@ -26,20 +26,16 @@ object typesSendMessagesOutputMod {
   }
   object SendMessagesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, MessageResponse: UnmarshalledMessageResponse): SendMessagesOutput = {
+    inline def apply($metadata: ResponseMetadata, MessageResponse: UnmarshalledMessageResponse): SendMessagesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], MessageResponse = MessageResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendMessagesOutput]
     }
     
-    @scala.inline
-    implicit class SendMessagesOutputMutableBuilder[Self <: SendMessagesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: SendMessagesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageResponse(value: UnmarshalledMessageResponse): Self = StObject.set(x, "MessageResponse", value.asInstanceOf[js.Any])
+      inline def setMessageResponse(value: UnmarshalledMessageResponse): Self = StObject.set(x, "MessageResponse", value.asInstanceOf[js.Any])
     }
   }
 }

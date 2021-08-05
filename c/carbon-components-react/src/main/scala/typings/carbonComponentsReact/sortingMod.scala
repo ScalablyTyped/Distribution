@@ -26,14 +26,11 @@ object sortingMod {
   trait DataTableSortState extends StObject
   object DataTableSortState {
     
-    @scala.inline
-    def ASC: typings.carbonComponentsReact.carbonComponentsReactStrings.ASC = "ASC".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.ASC]
+    inline def ASC: typings.carbonComponentsReact.carbonComponentsReactStrings.ASC = "ASC".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.ASC]
     
-    @scala.inline
-    def DESC: typings.carbonComponentsReact.carbonComponentsReactStrings.DESC = "DESC".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.DESC]
+    inline def DESC: typings.carbonComponentsReact.carbonComponentsReactStrings.DESC = "DESC".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.DESC]
     
-    @scala.inline
-    def NONE: typings.carbonComponentsReact.carbonComponentsReactStrings.NONE = "NONE".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.NONE]
+    inline def NONE: typings.carbonComponentsReact.carbonComponentsReactStrings.NONE = "NONE".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.NONE]
   }
   
   /* Inlined std.Readonly<{  ASC :std.Extract<carbon-components-react.carbon-components-react/lib/components/DataTable/state/sorting.DataTableSortState, 'ASC'>,   DESC :std.Extract<carbon-components-react.carbon-components-react/lib/components/DataTable/state/sorting.DataTableSortState, 'DESC'>,   NONE :std.Extract<carbon-components-react.carbon-components-react/lib/components/DataTable/state/sorting.DataTableSortState, 'NONE'>}> */
@@ -53,8 +50,7 @@ object sortingMod {
   }
   object DataTableSortStates {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ASC: Extract[DataTableSortState, ASC],
       DESC: Extract[DataTableSortState, DESC],
       NONE: Extract[DataTableSortState, NONE]
@@ -63,17 +59,13 @@ object sortingMod {
       __obj.asInstanceOf[DataTableSortStates]
     }
     
-    @scala.inline
-    implicit class DataTableSortStatesMutableBuilder[Self <: DataTableSortStates] (val x: Self) extends AnyVal {
+    extension [Self <: DataTableSortStates](x: Self) {
       
-      @scala.inline
-      def setASC(value: Extract[DataTableSortState, ASC]): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
+      inline def setASC(value: Extract[DataTableSortState, ASC]): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESC(value: Extract[DataTableSortState, DESC]): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
+      inline def setDESC(value: Extract[DataTableSortState, DESC]): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONE(value: Extract[DataTableSortState, NONE]): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: Extract[DataTableSortState, NONE]): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     }
   }
 }

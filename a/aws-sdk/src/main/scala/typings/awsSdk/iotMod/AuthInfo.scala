@@ -18,25 +18,19 @@ trait AuthInfo extends StObject {
 }
 object AuthInfo {
   
-  @scala.inline
-  def apply(resources: Resources): AuthInfo = {
+  inline def apply(resources: Resources): AuthInfo = {
     val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthInfo]
   }
   
-  @scala.inline
-  implicit class AuthInfoMutableBuilder[Self <: AuthInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AuthInfo](x: Self) {
     
-    @scala.inline
-    def setActionType(value: ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
-    @scala.inline
-    def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

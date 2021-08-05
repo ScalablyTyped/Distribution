@@ -18,28 +18,21 @@ trait ListRoutingProfileQueuesResponse extends StObject {
 }
 object ListRoutingProfileQueuesResponse {
   
-  @scala.inline
-  def apply(): ListRoutingProfileQueuesResponse = {
+  inline def apply(): ListRoutingProfileQueuesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRoutingProfileQueuesResponse]
   }
   
-  @scala.inline
-  implicit class ListRoutingProfileQueuesResponseMutableBuilder[Self <: ListRoutingProfileQueuesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRoutingProfileQueuesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRoutingProfileQueueConfigSummaryList(value: RoutingProfileQueueConfigSummaryList): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileQueueConfigSummaryList(value: RoutingProfileQueueConfigSummaryList): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileQueueConfigSummaryListUndefined: Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.undefined)
+    inline def setRoutingProfileQueueConfigSummaryListUndefined: Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.undefined)
     
-    @scala.inline
-    def setRoutingProfileQueueConfigSummaryListVarargs(value: RoutingProfileQueueConfigSummary*): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.Array(value :_*))
+    inline def setRoutingProfileQueueConfigSummaryListVarargs(value: RoutingProfileQueueConfigSummary*): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.Array(value :_*))
   }
 }

@@ -46,52 +46,37 @@ trait Schedule extends StObject {
 }
 object Schedule {
   
-  @scala.inline
-  def apply(StartTime: string): Schedule = {
+  inline def apply(StartTime: string): Schedule = {
     val __obj = js.Dynamic.literal(StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
   
-  @scala.inline
-  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
+  extension [Self <: Schedule](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setEventFilter(value: CampaignEventFilter): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
+    inline def setEventFilter(value: CampaignEventFilter): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
+    inline def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: Frequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Frequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
     
-    @scala.inline
-    def setIsLocalTime(value: boolean): Self = StObject.set(x, "IsLocalTime", value.asInstanceOf[js.Any])
+    inline def setIsLocalTime(value: boolean): Self = StObject.set(x, "IsLocalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocalTimeUndefined: Self = StObject.set(x, "IsLocalTime", js.undefined)
+    inline def setIsLocalTimeUndefined: Self = StObject.set(x, "IsLocalTime", js.undefined)
     
-    @scala.inline
-    def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+    inline def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+    inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: string): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: string): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: string): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: string): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

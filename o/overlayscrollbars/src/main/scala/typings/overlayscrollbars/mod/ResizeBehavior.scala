@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResizeBehavior extends StObject
 object ResizeBehavior {
   
-  @scala.inline
-  def b: typings.overlayscrollbars.overlayscrollbarsStrings.b = "b".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.b]
+  inline def b: typings.overlayscrollbars.overlayscrollbarsStrings.b = "b".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.b]
   
-  @scala.inline
-  def both: typings.overlayscrollbars.overlayscrollbarsStrings.both = "both".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.both]
+  inline def both: typings.overlayscrollbars.overlayscrollbarsStrings.both = "both".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.both]
   
-  @scala.inline
-  def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = "h".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.h]
+  inline def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = "h".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.h]
   
-  @scala.inline
-  def horizontal: typings.overlayscrollbars.overlayscrollbarsStrings.horizontal = "horizontal".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.horizontal]
+  inline def horizontal: typings.overlayscrollbars.overlayscrollbarsStrings.horizontal = "horizontal".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.horizontal]
   
-  @scala.inline
-  def n: typings.overlayscrollbars.overlayscrollbarsStrings.n = "n".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.n]
+  inline def n: typings.overlayscrollbars.overlayscrollbarsStrings.n = "n".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.n]
   
-  @scala.inline
-  def none: typings.overlayscrollbars.overlayscrollbarsStrings.none = "none".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.none]
+  inline def none: typings.overlayscrollbars.overlayscrollbarsStrings.none = "none".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.none]
   
-  @scala.inline
-  def v: typings.overlayscrollbars.overlayscrollbarsStrings.v = "v".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.v]
+  inline def v: typings.overlayscrollbars.overlayscrollbarsStrings.v = "v".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.v]
   
-  @scala.inline
-  def vertical: typings.overlayscrollbars.overlayscrollbarsStrings.vertical = "vertical".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.vertical]
+  inline def vertical: typings.overlayscrollbars.overlayscrollbarsStrings.vertical = "vertical".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.vertical]
 }

@@ -11,8 +11,7 @@ object awaitingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     src: typings.baconjs.observableMod.default[js.Any],
     other: typings.baconjs.observableMod.default[js.Any]
   ): Property[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Property[Boolean]]

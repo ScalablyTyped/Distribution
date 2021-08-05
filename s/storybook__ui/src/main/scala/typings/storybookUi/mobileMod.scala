@@ -26,14 +26,11 @@ object mobileMod {
   trait ActiveTabsType extends StObject
   object ActiveTabsType {
     
-    @scala.inline
-    def addons: typings.storybookUi.storybookUiStrings.addons = "addons".asInstanceOf[typings.storybookUi.storybookUiStrings.addons]
+    inline def addons: typings.storybookUi.storybookUiStrings.addons = "addons".asInstanceOf[typings.storybookUi.storybookUiStrings.addons]
     
-    @scala.inline
-    def canvas: typings.storybookUi.storybookUiStrings.canvas = "canvas".asInstanceOf[typings.storybookUi.storybookUiStrings.canvas]
+    inline def canvas: typings.storybookUi.storybookUiStrings.canvas = "canvas".asInstanceOf[typings.storybookUi.storybookUiStrings.canvas]
     
-    @scala.inline
-    def sidebar: typings.storybookUi.storybookUiStrings.sidebar = "sidebar".asInstanceOf[typings.storybookUi.storybookUiStrings.sidebar]
+    inline def sidebar: typings.storybookUi.storybookUiStrings.sidebar = "sidebar".asInstanceOf[typings.storybookUi.storybookUiStrings.sidebar]
   }
   
   trait MobileProps extends StObject {
@@ -54,8 +51,7 @@ object mobileMod {
   }
   object MobileProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Notifications: ComponentType[js.Any],
       Panel: ComponentType[js.Any],
       Preview: ComponentType[js.Any],
@@ -68,32 +64,23 @@ object mobileMod {
       __obj.asInstanceOf[MobileProps]
     }
     
-    @scala.inline
-    implicit class MobilePropsMutableBuilder[Self <: MobileProps] (val x: Self) extends AnyVal {
+    extension [Self <: MobileProps](x: Self) {
       
-      @scala.inline
-      def setNotifications(value: ComponentType[js.Any]): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: ComponentType[js.Any]): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: InitialActive): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: InitialActive): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
       
-      @scala.inline
-      def setPanel(value: ComponentType[js.Any]): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: ComponentType[js.Any]): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview(value: ComponentType[js.Any]): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: ComponentType[js.Any]): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidebar(value: ComponentType[js.Any]): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
+      inline def setSidebar(value: ComponentType[js.Any]): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,17 +90,14 @@ object mobileMod {
   }
   object MobileState {
     
-    @scala.inline
-    def apply(active: ActiveTabsType): MobileState = {
+    inline def apply(active: ActiveTabsType): MobileState = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[MobileState]
     }
     
-    @scala.inline
-    implicit class MobileStateMutableBuilder[Self <: MobileState] (val x: Self) extends AnyVal {
+    extension [Self <: MobileState](x: Self) {
       
-      @scala.inline
-      def setActive(value: ActiveTabsType): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: ActiveTabsType): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,23 +111,18 @@ object mobileMod {
   }
   object Page {
     
-    @scala.inline
-    def apply(key: String, render: FunctionComponent[js.Object], route: FunctionComponent[js.Object]): Page = {
+    inline def apply(key: String, render: FunctionComponent[js.Object], route: FunctionComponent[js.Object]): Page = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[Page]
     }
     
-    @scala.inline
-    implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+    extension [Self <: Page](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: FunctionComponent[js.Object]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: FunctionComponent[js.Object]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: FunctionComponent[js.Object]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: FunctionComponent[js.Object]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
 }

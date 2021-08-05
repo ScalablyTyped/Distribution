@@ -62,61 +62,43 @@ trait IgGridScrollSettings
 }
 object IgGridScrollSettings {
   
-  @scala.inline
-  def apply(): IgGridScrollSettings = {
+  inline def apply(): IgGridScrollSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridScrollSettings]
   }
   
-  @scala.inline
-  implicit class IgGridScrollSettingsMutableBuilder[Self <: IgGridScrollSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridScrollSettings](x: Self) {
     
-    @scala.inline
-    def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
+    inline def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
+    inline def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
     
-    @scala.inline
-    def setInertiaStep(value: Double): Self = StObject.set(x, "inertiaStep", value.asInstanceOf[js.Any])
+    inline def setInertiaStep(value: Double): Self = StObject.set(x, "inertiaStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaStepUndefined: Self = StObject.set(x, "inertiaStep", js.undefined)
+    inline def setInertiaStepUndefined: Self = StObject.set(x, "inertiaStep", js.undefined)
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
-    @scala.inline
-    def setSmoothing(value: Boolean): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
+    inline def setSmoothing(value: Boolean): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothingDuration(value: Double): Self = StObject.set(x, "smoothingDuration", value.asInstanceOf[js.Any])
+    inline def setSmoothingDuration(value: Double): Self = StObject.set(x, "smoothingDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothingDurationUndefined: Self = StObject.set(x, "smoothingDuration", js.undefined)
+    inline def setSmoothingDurationUndefined: Self = StObject.set(x, "smoothingDuration", js.undefined)
     
-    @scala.inline
-    def setSmoothingStep(value: Double): Self = StObject.set(x, "smoothingStep", value.asInstanceOf[js.Any])
+    inline def setSmoothingStep(value: Double): Self = StObject.set(x, "smoothingStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothingStepUndefined: Self = StObject.set(x, "smoothingStep", js.undefined)
+    inline def setSmoothingStepUndefined: Self = StObject.set(x, "smoothingStep", js.undefined)
     
-    @scala.inline
-    def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+    inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
     
-    @scala.inline
-    def setWheelStep(value: Double): Self = StObject.set(x, "wheelStep", value.asInstanceOf[js.Any])
+    inline def setWheelStep(value: Double): Self = StObject.set(x, "wheelStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheelStepUndefined: Self = StObject.set(x, "wheelStep", js.undefined)
+    inline def setWheelStepUndefined: Self = StObject.set(x, "wheelStep", js.undefined)
   }
 }

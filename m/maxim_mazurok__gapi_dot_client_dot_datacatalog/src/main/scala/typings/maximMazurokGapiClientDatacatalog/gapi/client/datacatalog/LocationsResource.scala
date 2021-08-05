@@ -14,8 +14,7 @@ trait LocationsResource extends StObject {
 }
 object LocationsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entryGroups: EntryGroupsResource,
     tagTemplates: TagTemplatesResource,
     taxonomies: TaxonomiesResource
@@ -24,16 +23,12 @@ object LocationsResource {
     __obj.asInstanceOf[LocationsResource]
   }
   
-  @scala.inline
-  implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsResource](x: Self) {
     
-    @scala.inline
-    def setEntryGroups(value: EntryGroupsResource): Self = StObject.set(x, "entryGroups", value.asInstanceOf[js.Any])
+    inline def setEntryGroups(value: EntryGroupsResource): Self = StObject.set(x, "entryGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagTemplates(value: TagTemplatesResource): Self = StObject.set(x, "tagTemplates", value.asInstanceOf[js.Any])
+    inline def setTagTemplates(value: TagTemplatesResource): Self = StObject.set(x, "tagTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxonomies(value: TaxonomiesResource): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
+    inline def setTaxonomies(value: TaxonomiesResource): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
   }
 }

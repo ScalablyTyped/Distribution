@@ -22,55 +22,39 @@ trait AllowAdding extends StObject {
 }
 object AllowAdding {
   
-  @scala.inline
-  def apply(): AllowAdding = {
+  inline def apply(): AllowAdding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowAdding]
   }
   
-  @scala.inline
-  implicit class AllowAddingMutableBuilder[Self <: AllowAdding] (val x: Self) extends AnyVal {
+  extension [Self <: AllowAdding](x: Self) {
     
-    @scala.inline
-    def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
+    inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAddingUndefined: Self = StObject.set(x, "allowAdding", js.undefined)
+    inline def setAllowAddingUndefined: Self = StObject.set(x, "allowAdding", js.undefined)
     
-    @scala.inline
-    def setAllowDeleting(value: Boolean): Self = StObject.set(x, "allowDeleting", value.asInstanceOf[js.Any])
+    inline def setAllowDeleting(value: Boolean): Self = StObject.set(x, "allowDeleting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDeletingUndefined: Self = StObject.set(x, "allowDeleting", js.undefined)
+    inline def setAllowDeletingUndefined: Self = StObject.set(x, "allowDeleting", js.undefined)
     
-    @scala.inline
-    def setAllowDragging(value: Boolean): Self = StObject.set(x, "allowDragging", value.asInstanceOf[js.Any])
+    inline def setAllowDragging(value: Boolean): Self = StObject.set(x, "allowDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDraggingUndefined: Self = StObject.set(x, "allowDragging", js.undefined)
+    inline def setAllowDraggingUndefined: Self = StObject.set(x, "allowDragging", js.undefined)
     
-    @scala.inline
-    def setAllowEditingTimeZones(value: Boolean): Self = StObject.set(x, "allowEditingTimeZones", value.asInstanceOf[js.Any])
+    inline def setAllowEditingTimeZones(value: Boolean): Self = StObject.set(x, "allowEditingTimeZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditingTimeZonesUndefined: Self = StObject.set(x, "allowEditingTimeZones", js.undefined)
+    inline def setAllowEditingTimeZonesUndefined: Self = StObject.set(x, "allowEditingTimeZones", js.undefined)
     
-    @scala.inline
-    def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
+    inline def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowResizingUndefined: Self = StObject.set(x, "allowResizing", js.undefined)
+    inline def setAllowResizingUndefined: Self = StObject.set(x, "allowResizing", js.undefined)
     
-    @scala.inline
-    def setAllowTimeZoneEditing(value: Boolean): Self = StObject.set(x, "allowTimeZoneEditing", value.asInstanceOf[js.Any])
+    inline def setAllowTimeZoneEditing(value: Boolean): Self = StObject.set(x, "allowTimeZoneEditing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTimeZoneEditingUndefined: Self = StObject.set(x, "allowTimeZoneEditing", js.undefined)
+    inline def setAllowTimeZoneEditingUndefined: Self = StObject.set(x, "allowTimeZoneEditing", js.undefined)
     
-    @scala.inline
-    def setAllowUpdating(value: Boolean): Self = StObject.set(x, "allowUpdating", value.asInstanceOf[js.Any])
+    inline def setAllowUpdating(value: Boolean): Self = StObject.set(x, "allowUpdating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUpdatingUndefined: Self = StObject.set(x, "allowUpdating", js.undefined)
+    inline def setAllowUpdatingUndefined: Self = StObject.set(x, "allowUpdating", js.undefined)
   }
 }

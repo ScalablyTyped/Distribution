@@ -10,16 +10,13 @@ trait UsersFollowEndpoint extends StObject {
 }
 object UsersFollowEndpoint {
   
-  @scala.inline
-  def apply(username: String): UsersFollowEndpoint = {
+  inline def apply(username: String): UsersFollowEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersFollowEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersFollowEndpointMutableBuilder[Self <: UsersFollowEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersFollowEndpoint](x: Self) {
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

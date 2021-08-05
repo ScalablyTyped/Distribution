@@ -11,8 +11,6 @@ object processesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def terminate(process: ChildProcess): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(process.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def terminate(process: ChildProcess, cwd: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(process.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def terminate(process: ChildProcess): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(process.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def terminate(process: ChildProcess, cwd: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(process.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -10,16 +10,13 @@ trait AutosizeInputState extends StObject {
 }
 object AutosizeInputState {
   
-  @scala.inline
-  def apply(inputWidth: Double): AutosizeInputState = {
+  inline def apply(inputWidth: Double): AutosizeInputState = {
     val __obj = js.Dynamic.literal(inputWidth = inputWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutosizeInputState]
   }
   
-  @scala.inline
-  implicit class AutosizeInputStateMutableBuilder[Self <: AutosizeInputState] (val x: Self) extends AnyVal {
+  extension [Self <: AutosizeInputState](x: Self) {
     
-    @scala.inline
-    def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
+    inline def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
   }
 }

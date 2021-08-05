@@ -13,19 +13,15 @@ trait DescribeNotebookExecutionOutput extends StObject {
 }
 object DescribeNotebookExecutionOutput {
   
-  @scala.inline
-  def apply(): DescribeNotebookExecutionOutput = {
+  inline def apply(): DescribeNotebookExecutionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNotebookExecutionOutput]
   }
   
-  @scala.inline
-  implicit class DescribeNotebookExecutionOutputMutableBuilder[Self <: DescribeNotebookExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotebookExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setNotebookExecution(value: NotebookExecution): Self = StObject.set(x, "NotebookExecution", value.asInstanceOf[js.Any])
+    inline def setNotebookExecution(value: NotebookExecution): Self = StObject.set(x, "NotebookExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookExecutionUndefined: Self = StObject.set(x, "NotebookExecution", js.undefined)
+    inline def setNotebookExecutionUndefined: Self = StObject.set(x, "NotebookExecution", js.undefined)
   }
 }

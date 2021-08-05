@@ -15,19 +15,15 @@ trait XboxLiveEndpointPairStateChangedEventArgs extends StObject {
 }
 object XboxLiveEndpointPairStateChangedEventArgs {
   
-  @scala.inline
-  def apply(newState: XboxLiveEndpointPairState, oldState: XboxLiveEndpointPairState): XboxLiveEndpointPairStateChangedEventArgs = {
+  inline def apply(newState: XboxLiveEndpointPairState, oldState: XboxLiveEndpointPairState): XboxLiveEndpointPairStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
     __obj.asInstanceOf[XboxLiveEndpointPairStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class XboxLiveEndpointPairStateChangedEventArgsMutableBuilder[Self <: XboxLiveEndpointPairStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: XboxLiveEndpointPairStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewState(value: XboxLiveEndpointPairState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+    inline def setNewState(value: XboxLiveEndpointPairState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldState(value: XboxLiveEndpointPairState): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+    inline def setOldState(value: XboxLiveEndpointPairState): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
   }
 }

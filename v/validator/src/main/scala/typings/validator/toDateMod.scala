@@ -14,6 +14,5 @@ object toDateMod {
   /**
     * Convert the input string to a `Date`, or `null` if the input is not a date.
     */
-  @scala.inline
-  def default(input: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
+  inline def default(input: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
 }

@@ -26,25 +26,19 @@ trait SchemaPostalCodeRange extends StObject {
 }
 object SchemaPostalCodeRange {
   
-  @scala.inline
-  def apply(): SchemaPostalCodeRange = {
+  inline def apply(): SchemaPostalCodeRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPostalCodeRange]
   }
   
-  @scala.inline
-  implicit class SchemaPostalCodeRangeMutableBuilder[Self <: SchemaPostalCodeRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPostalCodeRange](x: Self) {
     
-    @scala.inline
-    def setPostalCodeRangeBegin(value: String): Self = StObject.set(x, "postalCodeRangeBegin", value.asInstanceOf[js.Any])
+    inline def setPostalCodeRangeBegin(value: String): Self = StObject.set(x, "postalCodeRangeBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeRangeBeginUndefined: Self = StObject.set(x, "postalCodeRangeBegin", js.undefined)
+    inline def setPostalCodeRangeBeginUndefined: Self = StObject.set(x, "postalCodeRangeBegin", js.undefined)
     
-    @scala.inline
-    def setPostalCodeRangeEnd(value: String): Self = StObject.set(x, "postalCodeRangeEnd", value.asInstanceOf[js.Any])
+    inline def setPostalCodeRangeEnd(value: String): Self = StObject.set(x, "postalCodeRangeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeRangeEndUndefined: Self = StObject.set(x, "postalCodeRangeEnd", js.undefined)
+    inline def setPostalCodeRangeEndUndefined: Self = StObject.set(x, "postalCodeRangeEnd", js.undefined)
   }
 }

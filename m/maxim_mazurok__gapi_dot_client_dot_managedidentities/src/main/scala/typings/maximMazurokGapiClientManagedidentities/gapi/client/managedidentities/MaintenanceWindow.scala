@@ -14,25 +14,19 @@ trait MaintenanceWindow extends StObject {
 }
 object MaintenanceWindow {
   
-  @scala.inline
-  def apply(): MaintenanceWindow = {
+  inline def apply(): MaintenanceWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindow]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowMutableBuilder[Self <: MaintenanceWindow] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindow](x: Self) {
     
-    @scala.inline
-    def setDailyCycle(value: DailyCycle): Self = StObject.set(x, "dailyCycle", value.asInstanceOf[js.Any])
+    inline def setDailyCycle(value: DailyCycle): Self = StObject.set(x, "dailyCycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyCycleUndefined: Self = StObject.set(x, "dailyCycle", js.undefined)
+    inline def setDailyCycleUndefined: Self = StObject.set(x, "dailyCycle", js.undefined)
     
-    @scala.inline
-    def setWeeklyCycle(value: WeeklyCycle): Self = StObject.set(x, "weeklyCycle", value.asInstanceOf[js.Any])
+    inline def setWeeklyCycle(value: WeeklyCycle): Self = StObject.set(x, "weeklyCycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyCycleUndefined: Self = StObject.set(x, "weeklyCycle", js.undefined)
+    inline def setWeeklyCycleUndefined: Self = StObject.set(x, "weeklyCycle", js.undefined)
   }
 }

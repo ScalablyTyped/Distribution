@@ -28,37 +28,27 @@ trait DescribeBucketsRequest extends StObject {
 }
 object DescribeBucketsRequest {
   
-  @scala.inline
-  def apply(): DescribeBucketsRequest = {
+  inline def apply(): DescribeBucketsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBucketsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBucketsRequestMutableBuilder[Self <: DescribeBucketsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBucketsRequest](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: BucketCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: BucketCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSortCriteria(value: BucketSortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
+    inline def setSortCriteria(value: BucketSortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
+    inline def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
   }
 }

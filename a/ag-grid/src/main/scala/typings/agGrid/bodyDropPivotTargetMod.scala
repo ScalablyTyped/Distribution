@@ -17,18 +17,18 @@ object bodyDropPivotTargetMod {
     
     /* private */ def clearColumnsList(): js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var columnsToAggregate: js.Any = js.native
+    /* private */ var columnsToAggregate: js.Any = js.native
     
-    var columnsToGroup: js.Any = js.native
+    /* private */ var columnsToGroup: js.Any = js.native
     
-    var columnsToPivot: js.Any = js.native
+    /* private */ var columnsToPivot: js.Any = js.native
     
     /* CompleteClass */
     override def getIconName(): String = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* CompleteClass */
     override def onDragEnter(params: DraggingEvent): Unit = js.native
@@ -42,6 +42,6 @@ object bodyDropPivotTargetMod {
     /* CompleteClass */
     override def onDragging(params: DraggingEvent): Unit = js.native
     
-    var pinned: js.Any = js.native
+    /* private */ var pinned: js.Any = js.native
   }
 }

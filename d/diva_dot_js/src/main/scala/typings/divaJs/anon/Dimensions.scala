@@ -21,8 +21,7 @@ trait Dimensions extends StObject {
 }
 object Dimensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     col: Double,
     dimensions: typings.divaJs.interfacesMod.Dimensions,
     offset: Offset,
@@ -34,25 +33,18 @@ object Dimensions {
     __obj.asInstanceOf[Dimensions]
   }
   
-  @scala.inline
-  implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+  extension [Self <: Dimensions](x: Self) {
     
-    @scala.inline
-    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensions(value: typings.divaJs.interfacesMod.Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: typings.divaJs.interfacesMod.Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+    inline def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
   }
 }

@@ -34,29 +34,25 @@ object reactFoundationStrings {
        with CalloutColors
        with LabelColors
        with ProgressColors
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
+  inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
   sealed trait all
     extends StObject
        with ExtendedBreakpoints
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait auto
     extends StObject
        with SpaceControls
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait bottom
     extends StObject
        with VerticalAlignments
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait center
@@ -64,37 +60,32 @@ object reactFoundationStrings {
        with FloatTypes
        with HorizontalAlignments
        with MenuAlignments
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait checkbox
     extends StObject
        with SwitchInputTypes
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
   sealed trait grow
     extends StObject
        with SpaceControls
-  @scala.inline
-  def grow: grow = "grow".asInstanceOf[grow]
+  inline def grow: grow = "grow".asInstanceOf[grow]
   
   @js.native
   sealed trait info
     extends StObject
        with BadgeColors
        with LabelColors
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait justify
     extends StObject
        with HorizontalAlignments
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait large
@@ -105,44 +96,38 @@ object reactFoundationStrings {
        with CalloutSizes
        with ExtendedBreakpoints
        with SwitchSizes
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait left
     extends StObject
        with FloatTypes
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait margin
     extends StObject
        with GutterTypes
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
+  inline def margin: margin = "margin".asInstanceOf[margin]
   
   @js.native
   sealed trait medium
     extends StObject
        with Breakpoints
        with ExtendedBreakpoints
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait middle
     extends StObject
        with VerticalAlignments
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait padding
     extends StObject
        with GutterTypes
-  @scala.inline
-  def padding: padding = "padding".asInstanceOf[padding]
+  inline def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
   sealed trait primary
@@ -150,15 +135,13 @@ object reactFoundationStrings {
        with ButtonColors
        with ButtonGroupColors
        with CalloutColors
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
+  inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
   sealed trait radio
     extends StObject
        with SwitchInputTypes
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
+  inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
   sealed trait right
@@ -166,8 +149,7 @@ object reactFoundationStrings {
        with FloatTypes
        with HorizontalAlignments
        with MenuAlignments
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait secondary
@@ -178,15 +160,13 @@ object reactFoundationStrings {
        with CalloutColors
        with LabelColors
        with ProgressColors
-  @scala.inline
-  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
   sealed trait shrink
     extends StObject
        with SpaceControls
-  @scala.inline
-  def shrink: shrink = "shrink".asInstanceOf[shrink]
+  inline def shrink: shrink = "shrink".asInstanceOf[shrink]
   
   @js.native
   sealed trait small
@@ -197,22 +177,19 @@ object reactFoundationStrings {
        with CalloutSizes
        with ExtendedBreakpoints
        with SwitchSizes
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait spaced
     extends StObject
        with HorizontalAlignments
-  @scala.inline
-  def spaced: spaced = "spaced".asInstanceOf[spaced]
+  inline def spaced: spaced = "spaced".asInstanceOf[spaced]
   
   @js.native
   sealed trait stretch
     extends StObject
        with VerticalAlignments
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
+  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
   sealed trait success
@@ -223,8 +200,7 @@ object reactFoundationStrings {
        with CalloutColors
        with LabelColors
        with ProgressColors
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait tiny
@@ -232,15 +208,13 @@ object reactFoundationStrings {
        with ButtonGroupSizes
        with ButtonSizes
        with SwitchSizes
-  @scala.inline
-  def tiny: tiny = "tiny".asInstanceOf[tiny]
+  inline def tiny: tiny = "tiny".asInstanceOf[tiny]
   
   @js.native
   sealed trait top
     extends StObject
        with VerticalAlignments
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait warning
@@ -251,22 +225,19 @@ object reactFoundationStrings {
        with CalloutColors
        with LabelColors
        with ProgressColors
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
   sealed trait xlarge
     extends StObject
        with Breakpoints
        with ExtendedBreakpoints
-  @scala.inline
-  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
   
   @js.native
   sealed trait xxlarge
     extends StObject
        with Breakpoints
        with ExtendedBreakpoints
-  @scala.inline
-  def xxlarge: xxlarge = "xxlarge".asInstanceOf[xxlarge]
+  inline def xxlarge: xxlarge = "xxlarge".asInstanceOf[xxlarge]
 }

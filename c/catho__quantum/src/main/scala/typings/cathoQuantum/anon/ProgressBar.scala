@@ -10,19 +10,15 @@ trait ProgressBar extends StObject {
 }
 object ProgressBar {
   
-  @scala.inline
-  def apply(): ProgressBar = {
+  inline def apply(): ProgressBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressBar]
   }
   
-  @scala.inline
-  implicit class ProgressBarMutableBuilder[Self <: ProgressBar] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressBar](x: Self) {
     
-    @scala.inline
-    def setProgressBar(value: js.Object): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+    inline def setProgressBar(value: js.Object): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressBarUndefined: Self = StObject.set(x, "progressBar", js.undefined)
+    inline def setProgressBarUndefined: Self = StObject.set(x, "progressBar", js.undefined)
   }
 }

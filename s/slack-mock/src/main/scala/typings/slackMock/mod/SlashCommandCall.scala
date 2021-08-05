@@ -18,8 +18,7 @@ trait SlashCommandCall[T] extends StObject {
 }
 object SlashCommandCall {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     headers: SlashCommandHttpHeaders,
     params: T,
     statusCode: Double,
@@ -31,22 +30,16 @@ object SlashCommandCall {
     __obj.asInstanceOf[SlashCommandCall[T]]
   }
   
-  @scala.inline
-  implicit class SlashCommandCallMutableBuilder[Self <: SlashCommandCall[?], T] (val x: Self & SlashCommandCall[T]) extends AnyVal {
+  extension [Self <: SlashCommandCall[?], T](x: Self & SlashCommandCall[T]) {
     
-    @scala.inline
-    def setHeaders(value: SlashCommandHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: SlashCommandHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SlashCommandCallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SlashCommandCallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashCommandUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashCommandUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

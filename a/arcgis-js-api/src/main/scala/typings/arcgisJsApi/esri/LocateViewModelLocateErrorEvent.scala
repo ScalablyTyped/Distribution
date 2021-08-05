@@ -10,16 +10,13 @@ trait LocateViewModelLocateErrorEvent extends StObject {
 }
 object LocateViewModelLocateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error): LocateViewModelLocateErrorEvent = {
+  inline def apply(error: Error): LocateViewModelLocateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocateViewModelLocateErrorEvent]
   }
   
-  @scala.inline
-  implicit class LocateViewModelLocateErrorEventMutableBuilder[Self <: LocateViewModelLocateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LocateViewModelLocateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

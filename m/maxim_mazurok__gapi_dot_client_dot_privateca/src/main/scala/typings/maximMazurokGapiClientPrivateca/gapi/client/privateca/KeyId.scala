@@ -11,19 +11,15 @@ trait KeyId extends StObject {
 }
 object KeyId {
   
-  @scala.inline
-  def apply(): KeyId = {
+  inline def apply(): KeyId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyId]
   }
   
-  @scala.inline
-  implicit class KeyIdMutableBuilder[Self <: KeyId] (val x: Self) extends AnyVal {
+  extension [Self <: KeyId](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
   }
 }

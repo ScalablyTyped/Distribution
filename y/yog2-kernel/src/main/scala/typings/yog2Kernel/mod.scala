@@ -70,142 +70,108 @@ object mod extends Shortcut {
   }
   object ActionObject {
     
-    @scala.inline
-    def apply(): ActionObject = {
+    inline def apply(): ActionObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActionObject]
     }
     
-    @scala.inline
-    implicit class ActionObjectMutableBuilder[Self <: ActionObject] (val x: Self) extends AnyVal {
+    extension [Self <: ActionObject](x: Self) {
       
-      @scala.inline
-      def setCopy(
+      inline def setCopy(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "copy", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setDel(
+      inline def setDel(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "del", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
+      inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
       
-      @scala.inline
-      def setDelete(
+      inline def setDelete(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      @scala.inline
-      def setGet(
+      inline def setGet(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      @scala.inline
-      def setHead(
+      inline def setHead(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "head", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setLink(
+      inline def setLink(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "link", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setLock(
+      inline def setLock(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "lock", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+      inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
       
-      @scala.inline
-      def setOptions(
+      inline def setOptions(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "options", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPatch(
+      inline def setPatch(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+      inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
       
-      @scala.inline
-      def setPost(
+      inline def setPost(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      @scala.inline
-      def setPropfind(
+      inline def setPropfind(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "propfind", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPropfindUndefined: Self = StObject.set(x, "propfind", js.undefined)
+      inline def setPropfindUndefined: Self = StObject.set(x, "propfind", js.undefined)
       
-      @scala.inline
-      def setPurge(
+      inline def setPurge(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "purge", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPurgeUndefined: Self = StObject.set(x, "purge", js.undefined)
+      inline def setPurgeUndefined: Self = StObject.set(x, "purge", js.undefined)
       
-      @scala.inline
-      def setPut(
+      inline def setPut(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
+      inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
       
-      @scala.inline
-      def setUnlick(
+      inline def setUnlick(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "unlick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUnlickUndefined: Self = StObject.set(x, "unlick", js.undefined)
+      inline def setUnlickUndefined: Self = StObject.set(x, "unlick", js.undefined)
       
-      @scala.inline
-      def setUnlock(
+      inline def setUnlock(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "unlock", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
+      inline def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
       
-      @scala.inline
-      def setView(
+      inline def setView(
         value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "view", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
   }
   
@@ -407,38 +373,28 @@ object mod extends Shortcut {
   }
   object YogBootstrapOption {
     
-    @scala.inline
-    def apply(): YogBootstrapOption = {
+    inline def apply(): YogBootstrapOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[YogBootstrapOption]
     }
     
-    @scala.inline
-    implicit class YogBootstrapOptionMutableBuilder[Self <: YogBootstrapOption] (val x: Self) extends AnyVal {
+    extension [Self <: YogBootstrapOption](x: Self) {
       
-      @scala.inline
-      def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: Express): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setConfPath(value: String): Self = StObject.set(x, "confPath", value.asInstanceOf[js.Any])
+      inline def setConfPath(value: String): Self = StObject.set(x, "confPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfPathUndefined: Self = StObject.set(x, "confPath", js.undefined)
+      inline def setConfPathUndefined: Self = StObject.set(x, "confPath", js.undefined)
       
-      @scala.inline
-      def setPluginsPath(value: String): Self = StObject.set(x, "pluginsPath", value.asInstanceOf[js.Any])
+      inline def setPluginsPath(value: String): Self = StObject.set(x, "pluginsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsPathUndefined: Self = StObject.set(x, "pluginsPath", js.undefined)
+      inline def setPluginsPathUndefined: Self = StObject.set(x, "pluginsPath", js.undefined)
       
-      @scala.inline
-      def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
+      inline def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
+      inline def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
     }
   }
   

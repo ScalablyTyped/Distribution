@@ -10,16 +10,13 @@ trait PathAttributes extends StObject {
 }
 object PathAttributes {
   
-  @scala.inline
-  def apply(d: String): PathAttributes = {
+  inline def apply(d: String): PathAttributes = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathAttributes]
   }
   
-  @scala.inline
-  implicit class PathAttributesMutableBuilder[Self <: PathAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: PathAttributes](x: Self) {
     
-    @scala.inline
-    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
   }
 }

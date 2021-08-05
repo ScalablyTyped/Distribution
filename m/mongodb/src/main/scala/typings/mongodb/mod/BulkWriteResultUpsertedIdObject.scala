@@ -12,19 +12,15 @@ trait BulkWriteResultUpsertedIdObject extends StObject {
 }
 object BulkWriteResultUpsertedIdObject {
   
-  @scala.inline
-  def apply(_id: typings.bson.mod.ObjectId, index: scala.Double): BulkWriteResultUpsertedIdObject = {
+  inline def apply(_id: typings.bson.mod.ObjectId, index: scala.Double): BulkWriteResultUpsertedIdObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkWriteResultUpsertedIdObject]
   }
   
-  @scala.inline
-  implicit class BulkWriteResultUpsertedIdObjectMutableBuilder[Self <: BulkWriteResultUpsertedIdObject] (val x: Self) extends AnyVal {
+  extension [Self <: BulkWriteResultUpsertedIdObject](x: Self) {
     
-    @scala.inline
-    def setIndex(value: scala.Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: scala.Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_id(value: typings.bson.mod.ObjectId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: typings.bson.mod.ObjectId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

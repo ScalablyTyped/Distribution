@@ -43,58 +43,41 @@ trait LoginRes extends StObject {
 }
 object LoginRes {
   
-  @scala.inline
-  def apply(): LoginRes = {
+  inline def apply(): LoginRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginRes]
   }
   
-  @scala.inline
-  implicit class LoginResMutableBuilder[Self <: LoginRes] (val x: Self) extends AnyVal {
+  extension [Self <: LoginRes](x: Self) {
     
-    @scala.inline
-    def setAnonymousCode(value: String): Self = StObject.set(x, "anonymousCode", value.asInstanceOf[js.Any])
+    inline def setAnonymousCode(value: String): Self = StObject.set(x, "anonymousCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnonymousCodeUndefined: Self = StObject.set(x, "anonymousCode", js.undefined)
+    inline def setAnonymousCodeUndefined: Self = StObject.set(x, "anonymousCode", js.undefined)
     
-    @scala.inline
-    def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
+    inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
+    inline def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
     
-    @scala.inline
-    def setAuthErrorScope(value: js.Any): Self = StObject.set(x, "authErrorScope", value.asInstanceOf[js.Any])
+    inline def setAuthErrorScope(value: js.Any): Self = StObject.set(x, "authErrorScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthErrorScopeUndefined: Self = StObject.set(x, "authErrorScope", js.undefined)
+    inline def setAuthErrorScopeUndefined: Self = StObject.set(x, "authErrorScope", js.undefined)
     
-    @scala.inline
-    def setAuthResult(value: String): Self = StObject.set(x, "authResult", value.asInstanceOf[js.Any])
+    inline def setAuthResult(value: String): Self = StObject.set(x, "authResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthResultUndefined: Self = StObject.set(x, "authResult", js.undefined)
+    inline def setAuthResultUndefined: Self = StObject.set(x, "authResult", js.undefined)
     
-    @scala.inline
-    def setAuthSucessScope(value: js.Array[String]): Self = StObject.set(x, "authSucessScope", value.asInstanceOf[js.Any])
+    inline def setAuthSucessScope(value: js.Array[String]): Self = StObject.set(x, "authSucessScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthSucessScopeUndefined: Self = StObject.set(x, "authSucessScope", js.undefined)
+    inline def setAuthSucessScopeUndefined: Self = StObject.set(x, "authSucessScope", js.undefined)
     
-    @scala.inline
-    def setAuthSucessScopeVarargs(value: String*): Self = StObject.set(x, "authSucessScope", js.Array(value :_*))
+    inline def setAuthSucessScopeVarargs(value: String*): Self = StObject.set(x, "authSucessScope", js.Array(value :_*))
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

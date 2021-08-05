@@ -38,46 +38,33 @@ trait IPersonaStyleProps extends StObject {
 }
 object IPersonaStyleProps {
   
-  @scala.inline
-  def apply(theme: ITheme): IPersonaStyleProps = {
+  inline def apply(theme: ITheme): IPersonaStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaStyleProps]
   }
   
-  @scala.inline
-  implicit class IPersonaStylePropsMutableBuilder[Self <: IPersonaStyleProps] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonaStyleProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCoinSize(value: Double): Self = StObject.set(x, "coinSize", value.asInstanceOf[js.Any])
+    inline def setCoinSize(value: Double): Self = StObject.set(x, "coinSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoinSizeUndefined: Self = StObject.set(x, "coinSize", js.undefined)
+    inline def setCoinSizeUndefined: Self = StObject.set(x, "coinSize", js.undefined)
     
-    @scala.inline
-    def setPresence(value: PersonaPresence): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+    inline def setPresence(value: PersonaPresence): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
+    inline def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
-    @scala.inline
-    def setShowSecondaryText(value: Boolean): Self = StObject.set(x, "showSecondaryText", value.asInstanceOf[js.Any])
+    inline def setShowSecondaryText(value: Boolean): Self = StObject.set(x, "showSecondaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSecondaryTextUndefined: Self = StObject.set(x, "showSecondaryText", js.undefined)
+    inline def setShowSecondaryTextUndefined: Self = StObject.set(x, "showSecondaryText", js.undefined)
     
-    @scala.inline
-    def setSize(value: PersonaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: PersonaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

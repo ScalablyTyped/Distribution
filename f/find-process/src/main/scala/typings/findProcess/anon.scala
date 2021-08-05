@@ -22,41 +22,30 @@ object anon {
   }
   object Cmd {
     
-    @scala.inline
-    def apply(cmd: String, name: String, pid: Double): Cmd = {
+    inline def apply(cmd: String, name: String, pid: Double): Cmd = {
       val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cmd]
     }
     
-    @scala.inline
-    implicit class CmdMutableBuilder[Self <: Cmd] (val x: Self) extends AnyVal {
+    extension [Self <: Cmd](x: Self) {
       
-      @scala.inline
-      def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+      inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
+      inline def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpidUndefined: Self = StObject.set(x, "ppid", js.undefined)
+      inline def setPpidUndefined: Self = StObject.set(x, "ppid", js.undefined)
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     }
   }
 }

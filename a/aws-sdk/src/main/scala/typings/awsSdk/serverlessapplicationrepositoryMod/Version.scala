@@ -78,8 +78,7 @@ trait Version extends StObject {
 }
 object Version {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationId: string,
     CreationTime: string,
     ParameterDefinitions: listOfParameterDefinition,
@@ -92,46 +91,32 @@ object Version {
     __obj.asInstanceOf[Version]
   }
   
-  @scala.inline
-  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+  extension [Self <: Version](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: string): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: string): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterDefinitions(value: listOfParameterDefinition): Self = StObject.set(x, "ParameterDefinitions", value.asInstanceOf[js.Any])
+    inline def setParameterDefinitions(value: listOfParameterDefinition): Self = StObject.set(x, "ParameterDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterDefinitionsVarargs(value: ParameterDefinition*): Self = StObject.set(x, "ParameterDefinitions", js.Array(value :_*))
+    inline def setParameterDefinitionsVarargs(value: ParameterDefinition*): Self = StObject.set(x, "ParameterDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredCapabilities(value: listOfCapability): Self = StObject.set(x, "RequiredCapabilities", value.asInstanceOf[js.Any])
+    inline def setRequiredCapabilities(value: listOfCapability): Self = StObject.set(x, "RequiredCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "RequiredCapabilities", js.Array(value :_*))
+    inline def setRequiredCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "RequiredCapabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setResourcesSupported(value: boolean): Self = StObject.set(x, "ResourcesSupported", value.asInstanceOf[js.Any])
+    inline def setResourcesSupported(value: boolean): Self = StObject.set(x, "ResourcesSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
+    inline def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeArchiveUrl(value: string): Self = StObject.set(x, "SourceCodeArchiveUrl", value.asInstanceOf[js.Any])
+    inline def setSourceCodeArchiveUrl(value: string): Self = StObject.set(x, "SourceCodeArchiveUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeArchiveUrlUndefined: Self = StObject.set(x, "SourceCodeArchiveUrl", js.undefined)
+    inline def setSourceCodeArchiveUrlUndefined: Self = StObject.set(x, "SourceCodeArchiveUrl", js.undefined)
     
-    @scala.inline
-    def setSourceCodeUrl(value: string): Self = StObject.set(x, "SourceCodeUrl", value.asInstanceOf[js.Any])
+    inline def setSourceCodeUrl(value: string): Self = StObject.set(x, "SourceCodeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeUrlUndefined: Self = StObject.set(x, "SourceCodeUrl", js.undefined)
+    inline def setSourceCodeUrlUndefined: Self = StObject.set(x, "SourceCodeUrl", js.undefined)
     
-    @scala.inline
-    def setTemplateUrl(value: string): Self = StObject.set(x, "TemplateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: string): Self = StObject.set(x, "TemplateUrl", value.asInstanceOf[js.Any])
   }
 }

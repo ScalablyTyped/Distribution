@@ -14,22 +14,17 @@ trait ActionSheetEvent extends StObject {
 }
 object ActionSheetEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ActionSheet): ActionSheetEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ActionSheet): ActionSheetEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetEvent]
   }
   
-  @scala.inline
-  implicit class ActionSheetEventMutableBuilder[Self <: ActionSheetEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ActionSheetEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: ActionSheet): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: ActionSheet): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

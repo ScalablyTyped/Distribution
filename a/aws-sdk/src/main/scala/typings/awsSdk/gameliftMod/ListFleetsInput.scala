@@ -28,37 +28,27 @@ trait ListFleetsInput extends StObject {
 }
 object ListFleetsInput {
   
-  @scala.inline
-  def apply(): ListFleetsInput = {
+  inline def apply(): ListFleetsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFleetsInput]
   }
   
-  @scala.inline
-  implicit class ListFleetsInputMutableBuilder[Self <: ListFleetsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListFleetsInput](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildIdUndefined: Self = StObject.set(x, "BuildId", js.undefined)
+    inline def setBuildIdUndefined: Self = StObject.set(x, "BuildId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScriptId(value: ScriptIdOrArn): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptIdOrArn): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptIdUndefined: Self = StObject.set(x, "ScriptId", js.undefined)
+    inline def setScriptIdUndefined: Self = StObject.set(x, "ScriptId", js.undefined)
   }
 }

@@ -51,52 +51,38 @@ object mod {
   }
   object ADProperties {
     
-    @scala.inline
-    def apply(baseDN: String, password: String, url: String, username: String): ADProperties = {
+    inline def apply(baseDN: String, password: String, url: String, username: String): ADProperties = {
       val __obj = js.Dynamic.literal(baseDN = baseDN.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[ADProperties]
     }
     
-    @scala.inline
-    implicit class ADPropertiesMutableBuilder[Self <: ADProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ADProperties](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Group): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Group): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setBaseDN(value: String): Self = StObject.set(x, "baseDN", value.asInstanceOf[js.Any])
+      inline def setBaseDN(value: String): Self = StObject.set(x, "baseDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryParser(
+      inline def setEntryParser(
         value: (/* entry */ js.Object, /* raw */ String, /* cb */ js.Function1[/* entry */ js.Object, Unit]) => Unit
       ): Self = StObject.set(x, "entryParser", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEntryParserUndefined: Self = StObject.set(x, "entryParser", js.undefined)
+      inline def setEntryParserUndefined: Self = StObject.set(x, "entryParser", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: `1000`): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: `1000`): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrals(value: Enabled): Self = StObject.set(x, "referrals", value.asInstanceOf[js.Any])
+      inline def setReferrals(value: Enabled): Self = StObject.set(x, "referrals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferralsUndefined: Self = StObject.set(x, "referrals", js.undefined)
+      inline def setReferralsUndefined: Self = StObject.set(x, "referrals", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,26 +282,20 @@ object mod {
   }
   object AttributeSpec {
     
-    @scala.inline
-    def apply(group: js.Array[GroupAttributes], user: js.Array[UserAttributes]): AttributeSpec = {
+    inline def apply(group: js.Array[GroupAttributes], user: js.Array[UserAttributes]): AttributeSpec = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeSpec]
     }
     
-    @scala.inline
-    implicit class AttributeSpecMutableBuilder[Self <: AttributeSpec] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeSpec](x: Self) {
       
-      @scala.inline
-      def setGroup(value: js.Array[GroupAttributes]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: js.Array[GroupAttributes]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupVarargs(value: GroupAttributes*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: GroupAttributes*): Self = StObject.set(x, "group", js.Array(value :_*))
       
-      @scala.inline
-      def setUser(value: js.Array[UserAttributes]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: js.Array[UserAttributes]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserVarargs(value: UserAttributes*): Self = StObject.set(x, "user", js.Array(value :_*))
+      inline def setUserVarargs(value: UserAttributes*): Self = StObject.set(x, "user", js.Array(value :_*))
     }
   }
   
@@ -329,32 +309,24 @@ object mod {
   }
   object FindResult {
     
-    @scala.inline
-    def apply(groups: js.Array[js.Object], other: js.Array[js.Object], users: js.Array[js.Object]): FindResult = {
+    inline def apply(groups: js.Array[js.Object], other: js.Array[js.Object], users: js.Array[js.Object]): FindResult = {
       val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindResult]
     }
     
-    @scala.inline
-    implicit class FindResultMutableBuilder[Self <: FindResult] (val x: Self) extends AnyVal {
+    extension [Self <: FindResult](x: Self) {
       
-      @scala.inline
-      def setGroups(value: js.Array[js.Object]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[js.Object]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: js.Object*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: js.Object*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setOther(value: js.Array[js.Object]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: js.Array[js.Object]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherVarargs(value: js.Object*): Self = StObject.set(x, "other", js.Array(value :_*))
+      inline def setOtherVarargs(value: js.Object*): Self = StObject.set(x, "other", js.Array(value :_*))
       
-      @scala.inline
-      def setUsers(value: js.Array[js.Object]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[js.Object]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: js.Object*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: js.Object*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -367,17 +339,13 @@ object mod {
   trait GroupAttributes extends StObject
   object GroupAttributes {
     
-    @scala.inline
-    def cn: typings.activedirectory2.activedirectory2Strings.cn = "cn".asInstanceOf[typings.activedirectory2.activedirectory2Strings.cn]
+    inline def cn: typings.activedirectory2.activedirectory2Strings.cn = "cn".asInstanceOf[typings.activedirectory2.activedirectory2Strings.cn]
     
-    @scala.inline
-    def description: typings.activedirectory2.activedirectory2Strings.description = "description".asInstanceOf[typings.activedirectory2.activedirectory2Strings.description]
+    inline def description: typings.activedirectory2.activedirectory2Strings.description = "description".asInstanceOf[typings.activedirectory2.activedirectory2Strings.description]
     
-    @scala.inline
-    def distinguishedName: typings.activedirectory2.activedirectory2Strings.distinguishedName = "distinguishedName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.distinguishedName]
+    inline def distinguishedName: typings.activedirectory2.activedirectory2Strings.distinguishedName = "distinguishedName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.distinguishedName]
     
-    @scala.inline
-    def objectCategory: typings.activedirectory2.activedirectory2Strings.objectCategory = "objectCategory".asInstanceOf[typings.activedirectory2.activedirectory2Strings.objectCategory]
+    inline def objectCategory: typings.activedirectory2.activedirectory2Strings.objectCategory = "objectCategory".asInstanceOf[typings.activedirectory2.activedirectory2Strings.objectCategory]
   }
   
   trait LDAPjsReqProps extends StObject {
@@ -400,56 +368,40 @@ object mod {
   }
   object LDAPjsReqProps {
     
-    @scala.inline
-    def apply(tlsOptions: Ca, url: String): LDAPjsReqProps = {
+    inline def apply(tlsOptions: Ca, url: String): LDAPjsReqProps = {
       val __obj = js.Dynamic.literal(tlsOptions = tlsOptions.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[LDAPjsReqProps]
     }
     
-    @scala.inline
-    implicit class LDAPjsReqPropsMutableBuilder[Self <: LDAPjsReqProps] (val x: Self) extends AnyVal {
+    extension [Self <: LDAPjsReqProps](x: Self) {
       
-      @scala.inline
-      def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+      inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
       
-      @scala.inline
-      def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      @scala.inline
-      def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+      inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+      inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
       
-      @scala.inline
-      def setStrictDN(value: Boolean): Self = StObject.set(x, "strictDN", value.asInstanceOf[js.Any])
+      inline def setStrictDN(value: Boolean): Self = StObject.set(x, "strictDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictDNUndefined: Self = StObject.set(x, "strictDN", js.undefined)
+      inline def setStrictDNUndefined: Self = StObject.set(x, "strictDN", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTlsOptions(value: Ca): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
+      inline def setTlsOptions(value: Ca): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -461,14 +413,11 @@ object mod {
   trait MembershipType extends StObject
   object MembershipType {
     
-    @scala.inline
-    def all: typings.activedirectory2.activedirectory2Strings.all = "all".asInstanceOf[typings.activedirectory2.activedirectory2Strings.all]
+    inline def all: typings.activedirectory2.activedirectory2Strings.all = "all".asInstanceOf[typings.activedirectory2.activedirectory2Strings.all]
     
-    @scala.inline
-    def group: typings.activedirectory2.activedirectory2Strings.group = "group".asInstanceOf[typings.activedirectory2.activedirectory2Strings.group]
+    inline def group: typings.activedirectory2.activedirectory2Strings.group = "group".asInstanceOf[typings.activedirectory2.activedirectory2Strings.group]
     
-    @scala.inline
-    def user: typings.activedirectory2.activedirectory2Strings.user = "user".asInstanceOf[typings.activedirectory2.activedirectory2Strings.user]
+    inline def user: typings.activedirectory2.activedirectory2Strings.user = "user".asInstanceOf[typings.activedirectory2.activedirectory2Strings.user]
   }
   
   trait ReqProps
@@ -495,8 +444,7 @@ object mod {
   }
   object ReqProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: AttributeSpec,
       filter: String | Filter,
       includeMembership: js.Array[MembershipType],
@@ -507,50 +455,35 @@ object mod {
       __obj.asInstanceOf[ReqProps]
     }
     
-    @scala.inline
-    implicit class ReqPropsMutableBuilder[Self <: ReqProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReqProps](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributeSpec): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributeSpec): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDN(value: String): Self = StObject.set(x, "baseDN", value.asInstanceOf[js.Any])
+      inline def setBaseDN(value: String): Self = StObject.set(x, "baseDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDNUndefined: Self = StObject.set(x, "baseDN", js.undefined)
+      inline def setBaseDNUndefined: Self = StObject.set(x, "baseDN", js.undefined)
       
-      @scala.inline
-      def setBindCredentials(value: String): Self = StObject.set(x, "bindCredentials", value.asInstanceOf[js.Any])
+      inline def setBindCredentials(value: String): Self = StObject.set(x, "bindCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindCredentialsUndefined: Self = StObject.set(x, "bindCredentials", js.undefined)
+      inline def setBindCredentialsUndefined: Self = StObject.set(x, "bindCredentials", js.undefined)
       
-      @scala.inline
-      def setBindDN(value: String): Self = StObject.set(x, "bindDN", value.asInstanceOf[js.Any])
+      inline def setBindDN(value: String): Self = StObject.set(x, "bindDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindDNUndefined: Self = StObject.set(x, "bindDN", js.undefined)
+      inline def setBindDNUndefined: Self = StObject.set(x, "bindDN", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String | Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String | Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeMembership(value: js.Array[MembershipType]): Self = StObject.set(x, "includeMembership", value.asInstanceOf[js.Any])
+      inline def setIncludeMembership(value: js.Array[MembershipType]): Self = StObject.set(x, "includeMembership", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeMembershipVarargs(value: MembershipType*): Self = StObject.set(x, "includeMembership", js.Array(value :_*))
+      inline def setIncludeMembershipVarargs(value: MembershipType*): Self = StObject.set(x, "includeMembership", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: base | one | sub): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: base | one | sub): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSizeLimit(value: `0`): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+      inline def setSizeLimit(value: `0`): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLimit(value: `10`): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+      inline def setTimeLimit(value: `10`): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -575,52 +508,36 @@ object mod {
   trait UserAttributes extends StObject
   object UserAttributes {
     
-    @scala.inline
-    def cn: typings.activedirectory2.activedirectory2Strings.cn = "cn".asInstanceOf[typings.activedirectory2.activedirectory2Strings.cn]
+    inline def cn: typings.activedirectory2.activedirectory2Strings.cn = "cn".asInstanceOf[typings.activedirectory2.activedirectory2Strings.cn]
     
-    @scala.inline
-    def comment: typings.activedirectory2.activedirectory2Strings.comment = "comment".asInstanceOf[typings.activedirectory2.activedirectory2Strings.comment]
+    inline def comment: typings.activedirectory2.activedirectory2Strings.comment = "comment".asInstanceOf[typings.activedirectory2.activedirectory2Strings.comment]
     
-    @scala.inline
-    def description: typings.activedirectory2.activedirectory2Strings.description = "description".asInstanceOf[typings.activedirectory2.activedirectory2Strings.description]
+    inline def description: typings.activedirectory2.activedirectory2Strings.description = "description".asInstanceOf[typings.activedirectory2.activedirectory2Strings.description]
     
-    @scala.inline
-    def displayName: typings.activedirectory2.activedirectory2Strings.displayName = "displayName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.displayName]
+    inline def displayName: typings.activedirectory2.activedirectory2Strings.displayName = "displayName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.displayName]
     
-    @scala.inline
-    def distinguishedName: typings.activedirectory2.activedirectory2Strings.distinguishedName = "distinguishedName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.distinguishedName]
+    inline def distinguishedName: typings.activedirectory2.activedirectory2Strings.distinguishedName = "distinguishedName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.distinguishedName]
     
-    @scala.inline
-    def employeeID: typings.activedirectory2.activedirectory2Strings.employeeID = "employeeID".asInstanceOf[typings.activedirectory2.activedirectory2Strings.employeeID]
+    inline def employeeID: typings.activedirectory2.activedirectory2Strings.employeeID = "employeeID".asInstanceOf[typings.activedirectory2.activedirectory2Strings.employeeID]
     
-    @scala.inline
-    def givenName: typings.activedirectory2.activedirectory2Strings.givenName = "givenName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.givenName]
+    inline def givenName: typings.activedirectory2.activedirectory2Strings.givenName = "givenName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.givenName]
     
-    @scala.inline
-    def initials: typings.activedirectory2.activedirectory2Strings.initials = "initials".asInstanceOf[typings.activedirectory2.activedirectory2Strings.initials]
+    inline def initials: typings.activedirectory2.activedirectory2Strings.initials = "initials".asInstanceOf[typings.activedirectory2.activedirectory2Strings.initials]
     
-    @scala.inline
-    def lockoutTime: typings.activedirectory2.activedirectory2Strings.lockoutTime = "lockoutTime".asInstanceOf[typings.activedirectory2.activedirectory2Strings.lockoutTime]
+    inline def lockoutTime: typings.activedirectory2.activedirectory2Strings.lockoutTime = "lockoutTime".asInstanceOf[typings.activedirectory2.activedirectory2Strings.lockoutTime]
     
-    @scala.inline
-    def mail: typings.activedirectory2.activedirectory2Strings.mail = "mail".asInstanceOf[typings.activedirectory2.activedirectory2Strings.mail]
+    inline def mail: typings.activedirectory2.activedirectory2Strings.mail = "mail".asInstanceOf[typings.activedirectory2.activedirectory2Strings.mail]
     
-    @scala.inline
-    def pwdLastSet: typings.activedirectory2.activedirectory2Strings.pwdLastSet = "pwdLastSet".asInstanceOf[typings.activedirectory2.activedirectory2Strings.pwdLastSet]
+    inline def pwdLastSet: typings.activedirectory2.activedirectory2Strings.pwdLastSet = "pwdLastSet".asInstanceOf[typings.activedirectory2.activedirectory2Strings.pwdLastSet]
     
-    @scala.inline
-    def sAMAccountName: typings.activedirectory2.activedirectory2Strings.sAMAccountName = "sAMAccountName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.sAMAccountName]
+    inline def sAMAccountName: typings.activedirectory2.activedirectory2Strings.sAMAccountName = "sAMAccountName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.sAMAccountName]
     
-    @scala.inline
-    def sn: typings.activedirectory2.activedirectory2Strings.sn = "sn".asInstanceOf[typings.activedirectory2.activedirectory2Strings.sn]
+    inline def sn: typings.activedirectory2.activedirectory2Strings.sn = "sn".asInstanceOf[typings.activedirectory2.activedirectory2Strings.sn]
     
-    @scala.inline
-    def userAccountControl: typings.activedirectory2.activedirectory2Strings.userAccountControl = "userAccountControl".asInstanceOf[typings.activedirectory2.activedirectory2Strings.userAccountControl]
+    inline def userAccountControl: typings.activedirectory2.activedirectory2Strings.userAccountControl = "userAccountControl".asInstanceOf[typings.activedirectory2.activedirectory2Strings.userAccountControl]
     
-    @scala.inline
-    def userPrincipalName: typings.activedirectory2.activedirectory2Strings.userPrincipalName = "userPrincipalName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.userPrincipalName]
+    inline def userPrincipalName: typings.activedirectory2.activedirectory2Strings.userPrincipalName = "userPrincipalName".asInstanceOf[typings.activedirectory2.activedirectory2Strings.userPrincipalName]
     
-    @scala.inline
-    def whenCreated: typings.activedirectory2.activedirectory2Strings.whenCreated = "whenCreated".asInstanceOf[typings.activedirectory2.activedirectory2Strings.whenCreated]
+    inline def whenCreated: typings.activedirectory2.activedirectory2Strings.whenCreated = "whenCreated".asInstanceOf[typings.activedirectory2.activedirectory2Strings.whenCreated]
   }
 }

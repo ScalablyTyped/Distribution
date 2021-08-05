@@ -15,19 +15,15 @@ trait ScrollDifference extends StObject {
 }
 object ScrollDifference {
   
-  @scala.inline
-  def apply(displacement: Position, value: Position): ScrollDifference = {
+  inline def apply(displacement: Position, value: Position): ScrollDifference = {
     val __obj = js.Dynamic.literal(displacement = displacement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollDifference]
   }
   
-  @scala.inline
-  implicit class ScrollDifferenceMutableBuilder[Self <: ScrollDifference] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollDifference](x: Self) {
     
-    @scala.inline
-    def setDisplacement(value: Position): Self = StObject.set(x, "displacement", value.asInstanceOf[js.Any])
+    inline def setDisplacement(value: Position): Self = StObject.set(x, "displacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Position): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Position): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

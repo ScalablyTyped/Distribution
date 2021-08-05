@@ -86,67 +86,47 @@ trait AccountWatermarks extends StObject {
 }
 object AccountWatermarks {
   
-  @scala.inline
-  def apply(): AccountWatermarks = {
+  inline def apply(): AccountWatermarks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountWatermarks]
   }
   
-  @scala.inline
-  implicit class AccountWatermarksMutableBuilder[Self <: AccountWatermarks] (val x: Self) extends AnyVal {
+  extension [Self <: AccountWatermarks](x: Self) {
     
-    @scala.inline
-    def setDisplayAngle(value: String): Self = StObject.set(x, "displayAngle", value.asInstanceOf[js.Any])
+    inline def setDisplayAngle(value: String): Self = StObject.set(x, "displayAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAngleUndefined: Self = StObject.set(x, "displayAngle", js.undefined)
+    inline def setDisplayAngleUndefined: Self = StObject.set(x, "displayAngle", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
+    inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImageBase64(value: String): Self = StObject.set(x, "imageBase64", value.asInstanceOf[js.Any])
+    inline def setImageBase64(value: String): Self = StObject.set(x, "imageBase64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBase64Undefined: Self = StObject.set(x, "imageBase64", js.undefined)
+    inline def setImageBase64Undefined: Self = StObject.set(x, "imageBase64", js.undefined)
     
-    @scala.inline
-    def setTransparency(value: String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+    inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     
-    @scala.inline
-    def setWatermarkText(value: String): Self = StObject.set(x, "watermarkText", value.asInstanceOf[js.Any])
+    inline def setWatermarkText(value: String): Self = StObject.set(x, "watermarkText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatermarkTextUndefined: Self = StObject.set(x, "watermarkText", js.undefined)
+    inline def setWatermarkTextUndefined: Self = StObject.set(x, "watermarkText", js.undefined)
   }
 }

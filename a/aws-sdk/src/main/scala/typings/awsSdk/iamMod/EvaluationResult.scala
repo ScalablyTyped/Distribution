@@ -53,70 +53,49 @@ trait EvaluationResult extends StObject {
 }
 object EvaluationResult {
   
-  @scala.inline
-  def apply(EvalActionName: ActionNameType, EvalDecision: PolicyEvaluationDecisionType): EvaluationResult = {
+  inline def apply(EvalActionName: ActionNameType, EvalDecision: PolicyEvaluationDecisionType): EvaluationResult = {
     val __obj = js.Dynamic.literal(EvalActionName = EvalActionName.asInstanceOf[js.Any], EvalDecision = EvalDecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  @scala.inline
-  implicit class EvaluationResultMutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationResult](x: Self) {
     
-    @scala.inline
-    def setEvalActionName(value: ActionNameType): Self = StObject.set(x, "EvalActionName", value.asInstanceOf[js.Any])
+    inline def setEvalActionName(value: ActionNameType): Self = StObject.set(x, "EvalActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalDecision(value: PolicyEvaluationDecisionType): Self = StObject.set(x, "EvalDecision", value.asInstanceOf[js.Any])
+    inline def setEvalDecision(value: PolicyEvaluationDecisionType): Self = StObject.set(x, "EvalDecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalDecisionDetails(value: EvalDecisionDetailsType): Self = StObject.set(x, "EvalDecisionDetails", value.asInstanceOf[js.Any])
+    inline def setEvalDecisionDetails(value: EvalDecisionDetailsType): Self = StObject.set(x, "EvalDecisionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalDecisionDetailsUndefined: Self = StObject.set(x, "EvalDecisionDetails", js.undefined)
+    inline def setEvalDecisionDetailsUndefined: Self = StObject.set(x, "EvalDecisionDetails", js.undefined)
     
-    @scala.inline
-    def setEvalResourceName(value: ResourceNameType): Self = StObject.set(x, "EvalResourceName", value.asInstanceOf[js.Any])
+    inline def setEvalResourceName(value: ResourceNameType): Self = StObject.set(x, "EvalResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalResourceNameUndefined: Self = StObject.set(x, "EvalResourceName", js.undefined)
+    inline def setEvalResourceNameUndefined: Self = StObject.set(x, "EvalResourceName", js.undefined)
     
-    @scala.inline
-    def setMatchedStatements(value: StatementListType): Self = StObject.set(x, "MatchedStatements", value.asInstanceOf[js.Any])
+    inline def setMatchedStatements(value: StatementListType): Self = StObject.set(x, "MatchedStatements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedStatementsUndefined: Self = StObject.set(x, "MatchedStatements", js.undefined)
+    inline def setMatchedStatementsUndefined: Self = StObject.set(x, "MatchedStatements", js.undefined)
     
-    @scala.inline
-    def setMatchedStatementsVarargs(value: Statement*): Self = StObject.set(x, "MatchedStatements", js.Array(value :_*))
+    inline def setMatchedStatementsVarargs(value: Statement*): Self = StObject.set(x, "MatchedStatements", js.Array(value :_*))
     
-    @scala.inline
-    def setMissingContextValues(value: ContextKeyNamesResultListType): Self = StObject.set(x, "MissingContextValues", value.asInstanceOf[js.Any])
+    inline def setMissingContextValues(value: ContextKeyNamesResultListType): Self = StObject.set(x, "MissingContextValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingContextValuesUndefined: Self = StObject.set(x, "MissingContextValues", js.undefined)
+    inline def setMissingContextValuesUndefined: Self = StObject.set(x, "MissingContextValues", js.undefined)
     
-    @scala.inline
-    def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "MissingContextValues", js.Array(value :_*))
+    inline def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "MissingContextValues", js.Array(value :_*))
     
-    @scala.inline
-    def setOrganizationsDecisionDetail(value: OrganizationsDecisionDetail): Self = StObject.set(x, "OrganizationsDecisionDetail", value.asInstanceOf[js.Any])
+    inline def setOrganizationsDecisionDetail(value: OrganizationsDecisionDetail): Self = StObject.set(x, "OrganizationsDecisionDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsDecisionDetailUndefined: Self = StObject.set(x, "OrganizationsDecisionDetail", js.undefined)
+    inline def setOrganizationsDecisionDetailUndefined: Self = StObject.set(x, "OrganizationsDecisionDetail", js.undefined)
     
-    @scala.inline
-    def setPermissionsBoundaryDecisionDetail(value: PermissionsBoundaryDecisionDetail): Self = StObject.set(x, "PermissionsBoundaryDecisionDetail", value.asInstanceOf[js.Any])
+    inline def setPermissionsBoundaryDecisionDetail(value: PermissionsBoundaryDecisionDetail): Self = StObject.set(x, "PermissionsBoundaryDecisionDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsBoundaryDecisionDetailUndefined: Self = StObject.set(x, "PermissionsBoundaryDecisionDetail", js.undefined)
+    inline def setPermissionsBoundaryDecisionDetailUndefined: Self = StObject.set(x, "PermissionsBoundaryDecisionDetail", js.undefined)
     
-    @scala.inline
-    def setResourceSpecificResults(value: ResourceSpecificResultListType): Self = StObject.set(x, "ResourceSpecificResults", value.asInstanceOf[js.Any])
+    inline def setResourceSpecificResults(value: ResourceSpecificResultListType): Self = StObject.set(x, "ResourceSpecificResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceSpecificResultsUndefined: Self = StObject.set(x, "ResourceSpecificResults", js.undefined)
+    inline def setResourceSpecificResultsUndefined: Self = StObject.set(x, "ResourceSpecificResults", js.undefined)
     
-    @scala.inline
-    def setResourceSpecificResultsVarargs(value: ResourceSpecificResult*): Self = StObject.set(x, "ResourceSpecificResults", js.Array(value :_*))
+    inline def setResourceSpecificResultsVarargs(value: ResourceSpecificResult*): Self = StObject.set(x, "ResourceSpecificResults", js.Array(value :_*))
   }
 }

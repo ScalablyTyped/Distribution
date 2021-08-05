@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubscriptionStatus extends StObject
 object SubscriptionStatus {
   
-  @scala.inline
-  def Active: typings.braintree.braintreeStrings.Active = "Active".asInstanceOf[typings.braintree.braintreeStrings.Active]
+  inline def Active: typings.braintree.braintreeStrings.Active = "Active".asInstanceOf[typings.braintree.braintreeStrings.Active]
   
-  @scala.inline
-  def Canceled: typings.braintree.braintreeStrings.Canceled = "Canceled".asInstanceOf[typings.braintree.braintreeStrings.Canceled]
+  inline def Canceled: typings.braintree.braintreeStrings.Canceled = "Canceled".asInstanceOf[typings.braintree.braintreeStrings.Canceled]
   
-  @scala.inline
-  def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
+  inline def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
   
-  @scala.inline
-  def PastDue: typings.braintree.braintreeStrings.PastDue = "PastDue".asInstanceOf[typings.braintree.braintreeStrings.PastDue]
+  inline def PastDue: typings.braintree.braintreeStrings.PastDue = "PastDue".asInstanceOf[typings.braintree.braintreeStrings.PastDue]
   
-  @scala.inline
-  def Pending: typings.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typings.braintree.braintreeStrings.Pending]
+  inline def Pending: typings.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typings.braintree.braintreeStrings.Pending]
 }

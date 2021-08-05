@@ -11,6 +11,5 @@ object getRelayDefaultMissingFieldHandlersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Array[MissingFieldHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[MissingFieldHandler]]
+  inline def default(): js.Array[MissingFieldHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[MissingFieldHandler]]
 }

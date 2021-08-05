@@ -23,7 +23,7 @@ class IonProgressBar protected ()
   /* CompleteClass */
   var buffer: Double = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If true, reverse the progress bar direction.
@@ -43,5 +43,5 @@ class IonProgressBar protected ()
   /* CompleteClass */
   var value: Double = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

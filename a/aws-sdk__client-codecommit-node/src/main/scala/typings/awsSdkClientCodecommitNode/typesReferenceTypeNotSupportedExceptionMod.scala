@@ -16,17 +16,14 @@ object typesReferenceTypeNotSupportedExceptionMod {
   }
   object ReferenceTypeNotSupportedException {
     
-    @scala.inline
-    def apply(): ReferenceTypeNotSupportedException = {
+    inline def apply(): ReferenceTypeNotSupportedException = {
       val __obj = js.Dynamic.literal(name = "ReferenceTypeNotSupportedException")
       __obj.asInstanceOf[ReferenceTypeNotSupportedException]
     }
     
-    @scala.inline
-    implicit class ReferenceTypeNotSupportedExceptionMutableBuilder[Self <: ReferenceTypeNotSupportedException] (val x: Self) extends AnyVal {
+    extension [Self <: ReferenceTypeNotSupportedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceTypeNotSupportedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -33,43 +33,31 @@ trait S3ReportExportConfig extends StObject {
 }
 object S3ReportExportConfig {
   
-  @scala.inline
-  def apply(): S3ReportExportConfig = {
+  inline def apply(): S3ReportExportConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3ReportExportConfig]
   }
   
-  @scala.inline
-  implicit class S3ReportExportConfigMutableBuilder[Self <: S3ReportExportConfig] (val x: Self) extends AnyVal {
+  extension [Self <: S3ReportExportConfig](x: Self) {
     
-    @scala.inline
-    def setBucket(value: NonEmptyString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: NonEmptyString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
+    inline def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
+    inline def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
-    @scala.inline
-    def setEncryptionKey(value: NonEmptyString): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: NonEmptyString): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+    inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    @scala.inline
-    def setPackaging(value: ReportPackagingType): Self = StObject.set(x, "packaging", value.asInstanceOf[js.Any])
+    inline def setPackaging(value: ReportPackagingType): Self = StObject.set(x, "packaging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagingUndefined: Self = StObject.set(x, "packaging", js.undefined)
+    inline def setPackagingUndefined: Self = StObject.set(x, "packaging", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

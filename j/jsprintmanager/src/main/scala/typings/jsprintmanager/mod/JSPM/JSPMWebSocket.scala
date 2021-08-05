@@ -23,11 +23,11 @@ class JSPMWebSocket () extends StObject {
   def this(addr: Unit, port: Unit, secure: Boolean, auto_reconnect: Boolean) = this()
   def this(addr: Unit, port: Unit, secure: Unit, auto_reconnect: Boolean) = this()
   
-  var _addr: js.Any = js.native
+  /* private */ var _addr: js.Any = js.native
   
   /* private */ def _genID(): js.Any = js.native
   
-  var _job_list: js.Any = js.native
+  /* private */ var _job_list: js.Any = js.native
   
   /* private */ def _onClose(e: js.Any, __this: js.Any): js.Any = js.native
   
@@ -39,15 +39,15 @@ class JSPMWebSocket () extends StObject {
   
   /* private */ def _pingPong(): js.Any = js.native
   
-  var _port: js.Any = js.native
+  /* private */ var _port: js.Any = js.native
   
-  var _secure: js.Any = js.native
+  /* private */ var _secure: js.Any = js.native
   
   /* private */ def _send(data: js.Any, ok: js.Any, err: js.Any): js.Any = js.native
   
-  var _status: js.Any = js.native
+  /* private */ var _status: js.Any = js.native
   
-  var _ws: js.Any = js.native
+  /* private */ var _ws: js.Any = js.native
   
   val address: String = js.native
   

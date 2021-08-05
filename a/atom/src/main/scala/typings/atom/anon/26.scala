@@ -13,16 +13,13 @@ trait `26` extends StObject {
 }
 object `26` {
   
-  @scala.inline
-  def apply(clipDirection: backward | forward | closest): `26` = {
+  inline def apply(clipDirection: backward | forward | closest): `26` = {
     val __obj = js.Dynamic.literal(clipDirection = clipDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[`26`]
   }
   
-  @scala.inline
-  implicit class `26MutableBuilder`[Self <: `26`] (val x: Self) extends AnyVal {
+  extension [Self <: `26`](x: Self) {
     
-    @scala.inline
-    def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+    inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
   }
 }

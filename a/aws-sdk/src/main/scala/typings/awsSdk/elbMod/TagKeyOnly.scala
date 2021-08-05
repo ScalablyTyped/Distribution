@@ -13,19 +13,15 @@ trait TagKeyOnly extends StObject {
 }
 object TagKeyOnly {
   
-  @scala.inline
-  def apply(): TagKeyOnly = {
+  inline def apply(): TagKeyOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagKeyOnly]
   }
   
-  @scala.inline
-  implicit class TagKeyOnlyMutableBuilder[Self <: TagKeyOnly] (val x: Self) extends AnyVal {
+  extension [Self <: TagKeyOnly](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

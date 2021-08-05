@@ -10,16 +10,13 @@ trait IEdgeGestureEventArgs extends StObject {
 }
 object IEdgeGestureEventArgs {
   
-  @scala.inline
-  def apply(kind: EdgeGestureKind): IEdgeGestureEventArgs = {
+  inline def apply(kind: EdgeGestureKind): IEdgeGestureEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEdgeGestureEventArgs]
   }
   
-  @scala.inline
-  implicit class IEdgeGestureEventArgsMutableBuilder[Self <: IEdgeGestureEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IEdgeGestureEventArgs](x: Self) {
     
-    @scala.inline
-    def setKind(value: EdgeGestureKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: EdgeGestureKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

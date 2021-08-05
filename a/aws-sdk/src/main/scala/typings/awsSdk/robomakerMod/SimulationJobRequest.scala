@@ -59,91 +59,63 @@ trait SimulationJobRequest extends StObject {
 }
 object SimulationJobRequest {
   
-  @scala.inline
-  def apply(maxJobDurationInSeconds: JobDuration): SimulationJobRequest = {
+  inline def apply(maxJobDurationInSeconds: JobDuration): SimulationJobRequest = {
     val __obj = js.Dynamic.literal(maxJobDurationInSeconds = maxJobDurationInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationJobRequest]
   }
   
-  @scala.inline
-  implicit class SimulationJobRequestMutableBuilder[Self <: SimulationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SimulationJobRequest](x: Self) {
     
-    @scala.inline
-    def setCompute(value: Compute): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
+    inline def setCompute(value: Compute): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
+    inline def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
     
-    @scala.inline
-    def setDataSources(value: DataSourceConfigs): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: DataSourceConfigs): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
+    inline def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
-    @scala.inline
-    def setDataSourcesVarargs(value: DataSourceConfig*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSourceConfig*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
     
-    @scala.inline
-    def setFailureBehavior(value: FailureBehavior): Self = StObject.set(x, "failureBehavior", value.asInstanceOf[js.Any])
+    inline def setFailureBehavior(value: FailureBehavior): Self = StObject.set(x, "failureBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureBehaviorUndefined: Self = StObject.set(x, "failureBehavior", js.undefined)
+    inline def setFailureBehaviorUndefined: Self = StObject.set(x, "failureBehavior", js.undefined)
     
-    @scala.inline
-    def setIamRole(value: IamRole): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
+    inline def setIamRole(value: IamRole): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
+    inline def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
     
-    @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+    inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
-    @scala.inline
-    def setMaxJobDurationInSeconds(value: JobDuration): Self = StObject.set(x, "maxJobDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxJobDurationInSeconds(value: JobDuration): Self = StObject.set(x, "maxJobDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
+    inline def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
+    inline def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
     
-    @scala.inline
-    def setRobotApplications(value: RobotApplicationConfigs): Self = StObject.set(x, "robotApplications", value.asInstanceOf[js.Any])
+    inline def setRobotApplications(value: RobotApplicationConfigs): Self = StObject.set(x, "robotApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRobotApplicationsUndefined: Self = StObject.set(x, "robotApplications", js.undefined)
+    inline def setRobotApplicationsUndefined: Self = StObject.set(x, "robotApplications", js.undefined)
     
-    @scala.inline
-    def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = StObject.set(x, "robotApplications", js.Array(value :_*))
+    inline def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = StObject.set(x, "robotApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setSimulationApplications(value: SimulationApplicationConfigs): Self = StObject.set(x, "simulationApplications", value.asInstanceOf[js.Any])
+    inline def setSimulationApplications(value: SimulationApplicationConfigs): Self = StObject.set(x, "simulationApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimulationApplicationsUndefined: Self = StObject.set(x, "simulationApplications", js.undefined)
+    inline def setSimulationApplicationsUndefined: Self = StObject.set(x, "simulationApplications", js.undefined)
     
-    @scala.inline
-    def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = StObject.set(x, "simulationApplications", js.Array(value :_*))
+    inline def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = StObject.set(x, "simulationApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setUseDefaultApplications(value: BoxedBoolean): Self = StObject.set(x, "useDefaultApplications", value.asInstanceOf[js.Any])
+    inline def setUseDefaultApplications(value: BoxedBoolean): Self = StObject.set(x, "useDefaultApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDefaultApplicationsUndefined: Self = StObject.set(x, "useDefaultApplications", js.undefined)
+    inline def setUseDefaultApplicationsUndefined: Self = StObject.set(x, "useDefaultApplications", js.undefined)
     
-    @scala.inline
-    def setVpcConfig(value: VPCConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+    inline def setVpcConfig(value: VPCConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
   }
 }

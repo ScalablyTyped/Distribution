@@ -35,42 +35,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait stylePointerEvents extends StObject
 object stylePointerEvents {
   
-  @scala.inline
-  def stylePointerEventsAll: `8` = 8.asInstanceOf[`8`]
+  inline def stylePointerEventsAll: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def stylePointerEventsAuto: `11` = 11.asInstanceOf[`11`]
+  inline def stylePointerEventsAuto: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def stylePointerEventsFill: `6` = 6.asInstanceOf[`6`]
+  inline def stylePointerEventsFill: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def stylePointerEventsInitial: `10` = 10.asInstanceOf[`10`]
+  inline def stylePointerEventsInitial: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def stylePointerEventsNone: `9` = 9.asInstanceOf[`9`]
+  inline def stylePointerEventsNone: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def stylePointerEventsNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def stylePointerEventsNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def stylePointerEventsPainted: `5` = 5.asInstanceOf[`5`]
+  inline def stylePointerEventsPainted: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def stylePointerEventsStroke: `7` = 7.asInstanceOf[`7`]
+  inline def stylePointerEventsStroke: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def stylePointerEventsVisible: `4` = 4.asInstanceOf[`4`]
+  inline def stylePointerEventsVisible: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def stylePointerEventsVisibleFill: `2` = 2.asInstanceOf[`2`]
+  inline def stylePointerEventsVisibleFill: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def stylePointerEventsVisiblePainted: `1` = 1.asInstanceOf[`1`]
+  inline def stylePointerEventsVisiblePainted: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def stylePointerEventsVisibleStroke: `3` = 3.asInstanceOf[`3`]
+  inline def stylePointerEventsVisibleStroke: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def stylePointerEvents_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def stylePointerEvents_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

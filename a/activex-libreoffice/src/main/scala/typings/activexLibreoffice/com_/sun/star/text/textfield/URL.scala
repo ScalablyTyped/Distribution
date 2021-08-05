@@ -43,8 +43,7 @@ trait URL
 }
 object URL {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -77,19 +76,14 @@ object URL {
     __obj.asInstanceOf[URL]
   }
   
-  @scala.inline
-  implicit class URLMutableBuilder[Self <: URL] (val x: Self) extends AnyVal {
+  extension [Self <: URL](x: Self) {
     
-    @scala.inline
-    def setFormat(value: Double): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Double): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepresentation(value: String): Self = StObject.set(x, "Representation", value.asInstanceOf[js.Any])
+    inline def setRepresentation(value: String): Self = StObject.set(x, "Representation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFrame(value: String): Self = StObject.set(x, "TargetFrame", value.asInstanceOf[js.Any])
+    inline def setTargetFrame(value: String): Self = StObject.set(x, "TargetFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

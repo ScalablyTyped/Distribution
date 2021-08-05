@@ -16,23 +16,18 @@ object typesMod {
   }
   object RequestErrorOptions {
     
-    @scala.inline
-    def apply(request: RequestOptions): RequestErrorOptions = {
+    inline def apply(request: RequestOptions): RequestErrorOptions = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestErrorOptions]
     }
     
-    @scala.inline
-    implicit class RequestErrorOptionsMutableBuilder[Self <: RequestErrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestErrorOptions](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: ResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: ResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setRequest(value: RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
 }

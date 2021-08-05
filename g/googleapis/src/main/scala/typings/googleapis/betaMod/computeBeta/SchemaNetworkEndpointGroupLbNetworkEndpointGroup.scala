@@ -36,37 +36,27 @@ trait SchemaNetworkEndpointGroupLbNetworkEndpointGroup extends StObject {
 }
 object SchemaNetworkEndpointGroupLbNetworkEndpointGroup {
   
-  @scala.inline
-  def apply(): SchemaNetworkEndpointGroupLbNetworkEndpointGroup = {
+  inline def apply(): SchemaNetworkEndpointGroupLbNetworkEndpointGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworkEndpointGroupLbNetworkEndpointGroup]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkEndpointGroupLbNetworkEndpointGroupMutableBuilder[Self <: SchemaNetworkEndpointGroupLbNetworkEndpointGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetworkEndpointGroupLbNetworkEndpointGroup](x: Self) {
     
-    @scala.inline
-    def setDefaultPort(value: Double): Self = StObject.set(x, "defaultPort", value.asInstanceOf[js.Any])
+    inline def setDefaultPort(value: Double): Self = StObject.set(x, "defaultPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPortUndefined: Self = StObject.set(x, "defaultPort", js.undefined)
+    inline def setDefaultPortUndefined: Self = StObject.set(x, "defaultPort", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

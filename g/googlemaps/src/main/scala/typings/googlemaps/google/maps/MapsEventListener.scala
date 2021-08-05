@@ -14,16 +14,13 @@ trait MapsEventListener extends StObject {
 }
 object MapsEventListener {
   
-  @scala.inline
-  def apply(remove: () => Unit): MapsEventListener = {
+  inline def apply(remove: () => Unit): MapsEventListener = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[MapsEventListener]
   }
   
-  @scala.inline
-  implicit class MapsEventListenerMutableBuilder[Self <: MapsEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: MapsEventListener](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

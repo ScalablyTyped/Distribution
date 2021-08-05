@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticatorProtocol extends StObject
 object AuthenticatorProtocol {
   
-  @scala.inline
-  def ctap2: typings.devtoolsProtocol.devtoolsProtocolStrings.ctap2 = "ctap2".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ctap2]
+  inline def ctap2: typings.devtoolsProtocol.devtoolsProtocolStrings.ctap2 = "ctap2".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ctap2]
   
-  @scala.inline
-  def u2f: typings.devtoolsProtocol.devtoolsProtocolStrings.u2f = "u2f".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.u2f]
+  inline def u2f: typings.devtoolsProtocol.devtoolsProtocolStrings.u2f = "u2f".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.u2f]
 }

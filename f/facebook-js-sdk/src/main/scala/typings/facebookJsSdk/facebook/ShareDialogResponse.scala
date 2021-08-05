@@ -12,16 +12,13 @@ trait ShareDialogResponse
 }
 object ShareDialogResponse {
   
-  @scala.inline
-  def apply(post_id: String): ShareDialogResponse = {
+  inline def apply(post_id: String): ShareDialogResponse = {
     val __obj = js.Dynamic.literal(post_id = post_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareDialogResponse]
   }
   
-  @scala.inline
-  implicit class ShareDialogResponseMutableBuilder[Self <: ShareDialogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ShareDialogResponse](x: Self) {
     
-    @scala.inline
-    def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
+    inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
   }
 }

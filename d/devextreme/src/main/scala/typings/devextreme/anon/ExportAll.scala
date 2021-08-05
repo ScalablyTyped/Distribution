@@ -14,31 +14,23 @@ trait ExportAll extends StObject {
 }
 object ExportAll {
   
-  @scala.inline
-  def apply(): ExportAll = {
+  inline def apply(): ExportAll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportAll]
   }
   
-  @scala.inline
-  implicit class ExportAllMutableBuilder[Self <: ExportAll] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAll](x: Self) {
     
-    @scala.inline
-    def setExportAll(value: String): Self = StObject.set(x, "exportAll", value.asInstanceOf[js.Any])
+    inline def setExportAll(value: String): Self = StObject.set(x, "exportAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportAllUndefined: Self = StObject.set(x, "exportAll", js.undefined)
+    inline def setExportAllUndefined: Self = StObject.set(x, "exportAll", js.undefined)
     
-    @scala.inline
-    def setExportSelectedRows(value: String): Self = StObject.set(x, "exportSelectedRows", value.asInstanceOf[js.Any])
+    inline def setExportSelectedRows(value: String): Self = StObject.set(x, "exportSelectedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportSelectedRowsUndefined: Self = StObject.set(x, "exportSelectedRows", js.undefined)
+    inline def setExportSelectedRowsUndefined: Self = StObject.set(x, "exportSelectedRows", js.undefined)
     
-    @scala.inline
-    def setExportTo(value: String): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
+    inline def setExportTo(value: String): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
+    inline def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
   }
 }

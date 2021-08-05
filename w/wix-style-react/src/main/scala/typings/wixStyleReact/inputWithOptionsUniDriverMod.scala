@@ -22,8 +22,7 @@ object inputWithOptionsUniDriverMod {
   }
   object InputWithOptionsUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       driver: Focus,
       dropdownLayoutDriver: DropdownLayoutUniDriver,
@@ -35,17 +34,13 @@ object inputWithOptionsUniDriverMod {
       __obj.asInstanceOf[InputWithOptionsUniDriver]
     }
     
-    @scala.inline
-    implicit class InputWithOptionsUniDriverMutableBuilder[Self <: InputWithOptionsUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: InputWithOptionsUniDriver](x: Self) {
       
-      @scala.inline
-      def setDriver(value: Focus): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: Focus): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownLayoutDriver(value: DropdownLayoutUniDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
+      inline def setDropdownLayoutDriver(value: DropdownLayoutUniDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDriver(value: InputUniDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
+      inline def setInputDriver(value: InputUniDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
     }
   }
 }

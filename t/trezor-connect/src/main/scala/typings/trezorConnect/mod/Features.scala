@@ -64,8 +64,7 @@ trait Features extends StObject {
 }
 object Features {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bootloader_hash: String,
     device_id: String,
     flags: Double,
@@ -92,100 +91,68 @@ object Features {
     __obj.asInstanceOf[Features]
   }
   
-  @scala.inline
-  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
+  extension [Self <: Features](x: Self) {
     
-    @scala.inline
-    def setBootloader_hash(value: String): Self = StObject.set(x, "bootloader_hash", value.asInstanceOf[js.Any])
+    inline def setBootloader_hash(value: String): Self = StObject.set(x, "bootloader_hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootloader_mode(value: Boolean): Self = StObject.set(x, "bootloader_mode", value.asInstanceOf[js.Any])
+    inline def setBootloader_mode(value: Boolean): Self = StObject.set(x, "bootloader_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootloader_modeNull: Self = StObject.set(x, "bootloader_mode", null)
+    inline def setBootloader_modeNull: Self = StObject.set(x, "bootloader_mode", null)
     
-    @scala.inline
-    def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
+    inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirmware_present(value: Boolean): Self = StObject.set(x, "firmware_present", value.asInstanceOf[js.Any])
+    inline def setFirmware_present(value: Boolean): Self = StObject.set(x, "firmware_present", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirmware_presentNull: Self = StObject.set(x, "firmware_present", null)
+    inline def setFirmware_presentNull: Self = StObject.set(x, "firmware_present", null)
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFw_major(value: Double): Self = StObject.set(x, "fw_major", value.asInstanceOf[js.Any])
+    inline def setFw_major(value: Double): Self = StObject.set(x, "fw_major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFw_minor(value: Double): Self = StObject.set(x, "fw_minor", value.asInstanceOf[js.Any])
+    inline def setFw_minor(value: Double): Self = StObject.set(x, "fw_minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFw_patch(value: Double): Self = StObject.set(x, "fw_patch", value.asInstanceOf[js.Any])
+    inline def setFw_patch(value: Double): Self = StObject.set(x, "fw_patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFw_vendor(value: String): Self = StObject.set(x, "fw_vendor", value.asInstanceOf[js.Any])
+    inline def setFw_vendor(value: String): Self = StObject.set(x, "fw_vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFw_vendor_keys(value: String): Self = StObject.set(x, "fw_vendor_keys", value.asInstanceOf[js.Any])
+    inline def setFw_vendor_keys(value: String): Self = StObject.set(x, "fw_vendor_keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImported(value: Boolean): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
+    inline def setImported(value: Boolean): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialized(value: `true`): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
+    inline def setInitialized(value: `true`): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelNull: Self = StObject.set(x, "label", null)
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNull: Self = StObject.set(x, "language", null)
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
-    @scala.inline
-    def setMajor_version(value: Double): Self = StObject.set(x, "major_version", value.asInstanceOf[js.Any])
+    inline def setMajor_version(value: Double): Self = StObject.set(x, "major_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor_version(value: Double): Self = StObject.set(x, "minor_version", value.asInstanceOf[js.Any])
+    inline def setMinor_version(value: Double): Self = StObject.set(x, "minor_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeeds_backup(value: `false`): Self = StObject.set(x, "needs_backup", value.asInstanceOf[js.Any])
+    inline def setNeeds_backup(value: `false`): Self = StObject.set(x, "needs_backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNo_backup(value: Boolean): Self = StObject.set(x, "no_backup", value.asInstanceOf[js.Any])
+    inline def setNo_backup(value: Boolean): Self = StObject.set(x, "no_backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphrase_cached(value: Boolean): Self = StObject.set(x, "passphrase_cached", value.asInstanceOf[js.Any])
+    inline def setPassphrase_cached(value: Boolean): Self = StObject.set(x, "passphrase_cached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphrase_protection(value: Boolean): Self = StObject.set(x, "passphrase_protection", value.asInstanceOf[js.Any])
+    inline def setPassphrase_protection(value: Boolean): Self = StObject.set(x, "passphrase_protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatch_version(value: Double): Self = StObject.set(x, "patch_version", value.asInstanceOf[js.Any])
+    inline def setPatch_version(value: Double): Self = StObject.set(x, "patch_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPin_cached(value: Boolean): Self = StObject.set(x, "pin_cached", value.asInstanceOf[js.Any])
+    inline def setPin_cached(value: Boolean): Self = StObject.set(x, "pin_cached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPin_protection(value: Boolean): Self = StObject.set(x, "pin_protection", value.asInstanceOf[js.Any])
+    inline def setPin_protection(value: Boolean): Self = StObject.set(x, "pin_protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnfinished_backup(value: Boolean): Self = StObject.set(x, "unfinished_backup", value.asInstanceOf[js.Any])
+    inline def setUnfinished_backup(value: Boolean): Self = StObject.set(x, "unfinished_backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
   }
 }

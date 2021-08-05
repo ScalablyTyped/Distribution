@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modeToStringMod {
   
-  @scala.inline
-  def apply(mode: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mode.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(mode: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mode.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("ipfs-http-client/dist/src/lib/mode-to-string", JSImport.Namespace)
   @js.native

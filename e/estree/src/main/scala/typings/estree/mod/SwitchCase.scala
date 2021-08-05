@@ -18,32 +18,24 @@ trait SwitchCase
 }
 object SwitchCase {
   
-  @scala.inline
-  def apply(consequent: js.Array[Statement]): SwitchCase = {
+  inline def apply(consequent: js.Array[Statement]): SwitchCase = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SwitchCase")
     __obj.asInstanceOf[SwitchCase]
   }
   
-  @scala.inline
-  implicit class SwitchCaseMutableBuilder[Self <: SwitchCase] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchCase](x: Self) {
     
-    @scala.inline
-    def setConsequent(value: js.Array[Statement]): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: js.Array[Statement]): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsequentVarargs(value: Statement*): Self = StObject.set(x, "consequent", js.Array(value :_*))
+    inline def setConsequentVarargs(value: Statement*): Self = StObject.set(x, "consequent", js.Array(value :_*))
     
-    @scala.inline
-    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestNull: Self = StObject.set(x, "test", null)
+    inline def setTestNull: Self = StObject.set(x, "test", null)
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.SwitchCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.SwitchCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

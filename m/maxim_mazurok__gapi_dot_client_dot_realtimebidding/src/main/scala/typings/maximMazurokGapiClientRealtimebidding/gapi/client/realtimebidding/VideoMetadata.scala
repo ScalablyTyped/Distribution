@@ -29,52 +29,37 @@ trait VideoMetadata extends StObject {
 }
 object VideoMetadata {
   
-  @scala.inline
-  def apply(): VideoMetadata = {
+  inline def apply(): VideoMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoMetadata]
   }
   
-  @scala.inline
-  implicit class VideoMetadataMutableBuilder[Self <: VideoMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: VideoMetadata](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setIsValidVast(value: Boolean): Self = StObject.set(x, "isValidVast", value.asInstanceOf[js.Any])
+    inline def setIsValidVast(value: Boolean): Self = StObject.set(x, "isValidVast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValidVastUndefined: Self = StObject.set(x, "isValidVast", js.undefined)
+    inline def setIsValidVastUndefined: Self = StObject.set(x, "isValidVast", js.undefined)
     
-    @scala.inline
-    def setIsVpaid(value: Boolean): Self = StObject.set(x, "isVpaid", value.asInstanceOf[js.Any])
+    inline def setIsVpaid(value: Boolean): Self = StObject.set(x, "isVpaid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVpaidUndefined: Self = StObject.set(x, "isVpaid", js.undefined)
+    inline def setIsVpaidUndefined: Self = StObject.set(x, "isVpaid", js.undefined)
     
-    @scala.inline
-    def setMediaFiles(value: js.Array[MediaFile]): Self = StObject.set(x, "mediaFiles", value.asInstanceOf[js.Any])
+    inline def setMediaFiles(value: js.Array[MediaFile]): Self = StObject.set(x, "mediaFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaFilesUndefined: Self = StObject.set(x, "mediaFiles", js.undefined)
+    inline def setMediaFilesUndefined: Self = StObject.set(x, "mediaFiles", js.undefined)
     
-    @scala.inline
-    def setMediaFilesVarargs(value: MediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value :_*))
+    inline def setMediaFilesVarargs(value: MediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setSkipOffset(value: String): Self = StObject.set(x, "skipOffset", value.asInstanceOf[js.Any])
+    inline def setSkipOffset(value: String): Self = StObject.set(x, "skipOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipOffsetUndefined: Self = StObject.set(x, "skipOffset", js.undefined)
+    inline def setSkipOffsetUndefined: Self = StObject.set(x, "skipOffset", js.undefined)
     
-    @scala.inline
-    def setVastVersion(value: String): Self = StObject.set(x, "vastVersion", value.asInstanceOf[js.Any])
+    inline def setVastVersion(value: String): Self = StObject.set(x, "vastVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVastVersionUndefined: Self = StObject.set(x, "vastVersion", js.undefined)
+    inline def setVastVersionUndefined: Self = StObject.set(x, "vastVersion", js.undefined)
   }
 }

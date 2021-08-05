@@ -21,8 +21,7 @@ trait IContactPicker extends StObject {
 }
 object IContactPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     desiredFields: IVector[String],
     pickMultipleContactsAsync: () => IAsyncOperation[IVectorView[ContactInformation]],
@@ -33,22 +32,16 @@ object IContactPicker {
     __obj.asInstanceOf[IContactPicker]
   }
   
-  @scala.inline
-  implicit class IContactPickerMutableBuilder[Self <: IContactPicker] (val x: Self) extends AnyVal {
+  extension [Self <: IContactPicker](x: Self) {
     
-    @scala.inline
-    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
+    inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredFields(value: IVector[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
+    inline def setDesiredFields(value: IVector[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickMultipleContactsAsync(value: () => IAsyncOperation[IVectorView[ContactInformation]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
+    inline def setPickMultipleContactsAsync(value: () => IAsyncOperation[IVectorView[ContactInformation]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickSingleContactAsync(value: () => IAsyncOperation[ContactInformation]): Self = StObject.set(x, "pickSingleContactAsync", js.Any.fromFunction0(value))
+    inline def setPickSingleContactAsync(value: () => IAsyncOperation[ContactInformation]): Self = StObject.set(x, "pickSingleContactAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectionMode(value: ContactSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    inline def setSelectionMode(value: ContactSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
   }
 }

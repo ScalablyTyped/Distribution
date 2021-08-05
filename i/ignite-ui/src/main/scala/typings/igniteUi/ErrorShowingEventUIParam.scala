@@ -28,37 +28,27 @@ trait ErrorShowingEventUIParam extends StObject {
 }
 object ErrorShowingEventUIParam {
   
-  @scala.inline
-  def apply(): ErrorShowingEventUIParam = {
+  inline def apply(): ErrorShowingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorShowingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ErrorShowingEventUIParamMutableBuilder[Self <: ErrorShowingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorShowingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setFieldOptions(value: js.Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
+    inline def setFieldOptions(value: js.Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldOptionsUndefined: Self = StObject.set(x, "fieldOptions", js.undefined)
+    inline def setFieldOptionsUndefined: Self = StObject.set(x, "fieldOptions", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

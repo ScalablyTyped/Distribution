@@ -18,25 +18,19 @@ trait FindingStatisticsSortCriteria extends StObject {
 }
 object FindingStatisticsSortCriteria {
   
-  @scala.inline
-  def apply(): FindingStatisticsSortCriteria = {
+  inline def apply(): FindingStatisticsSortCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingStatisticsSortCriteria]
   }
   
-  @scala.inline
-  implicit class FindingStatisticsSortCriteriaMutableBuilder[Self <: FindingStatisticsSortCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: FindingStatisticsSortCriteria](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: FindingStatisticsSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: FindingStatisticsSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
   }
 }

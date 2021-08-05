@@ -58,50 +58,36 @@ object autofillTypesMod {
   }
   object IAutofill {
     
-    @scala.inline
-    def apply(clear: () => Unit, focus: () => Unit, isValueSelected: Boolean, value: String): IAutofill = {
+    inline def apply(clear: () => Unit, focus: () => Unit, isValueSelected: Boolean, value: String): IAutofill = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), focus = js.Any.fromFunction0(focus), isValueSelected = isValueSelected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], cursorLocation = null, inputElement = null, selectionEnd = null, selectionStart = null)
       __obj.asInstanceOf[IAutofill]
     }
     
-    @scala.inline
-    implicit class IAutofillMutableBuilder[Self <: IAutofill] (val x: Self) extends AnyVal {
+    extension [Self <: IAutofill](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCursorLocation(value: Double): Self = StObject.set(x, "cursorLocation", value.asInstanceOf[js.Any])
+      inline def setCursorLocation(value: Double): Self = StObject.set(x, "cursorLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorLocationNull: Self = StObject.set(x, "cursorLocation", null)
+      inline def setCursorLocationNull: Self = StObject.set(x, "cursorLocation", null)
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInputElement(value: HTMLInputElement): Self = StObject.set(x, "inputElement", value.asInstanceOf[js.Any])
+      inline def setInputElement(value: HTMLInputElement): Self = StObject.set(x, "inputElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputElementNull: Self = StObject.set(x, "inputElement", null)
+      inline def setInputElementNull: Self = StObject.set(x, "inputElement", null)
       
-      @scala.inline
-      def setIsValueSelected(value: Boolean): Self = StObject.set(x, "isValueSelected", value.asInstanceOf[js.Any])
+      inline def setIsValueSelected(value: Boolean): Self = StObject.set(x, "isValueSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
+      inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionEndNull: Self = StObject.set(x, "selectionEnd", null)
+      inline def setSelectionEndNull: Self = StObject.set(x, "selectionEnd", null)
       
-      @scala.inline
-      def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
+      inline def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionStartNull: Self = StObject.set(x, "selectionStart", null)
+      inline def setSelectionStartNull: Self = StObject.set(x, "selectionStart", null)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,74 +167,52 @@ object autofillTypesMod {
   }
   object IAutofillProps {
     
-    @scala.inline
-    def apply(): IAutofillProps = {
+    inline def apply(): IAutofillProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAutofillProps]
     }
     
-    @scala.inline
-    implicit class IAutofillPropsMutableBuilder[Self <: IAutofillProps] (val x: Self) extends AnyVal {
+    extension [Self <: IAutofillProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IAutofill]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IAutofill]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IAutofill | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IAutofill | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDefaultVisibleValue(value: String): Self = StObject.set(x, "defaultVisibleValue", value.asInstanceOf[js.Any])
+      inline def setDefaultVisibleValue(value: String): Self = StObject.set(x, "defaultVisibleValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVisibleValueUndefined: Self = StObject.set(x, "defaultVisibleValue", js.undefined)
+      inline def setDefaultVisibleValueUndefined: Self = StObject.set(x, "defaultVisibleValue", js.undefined)
       
-      @scala.inline
-      def setEnableAutofillOnKeyPress(value: js.Array[KeyCodes]): Self = StObject.set(x, "enableAutofillOnKeyPress", value.asInstanceOf[js.Any])
+      inline def setEnableAutofillOnKeyPress(value: js.Array[KeyCodes]): Self = StObject.set(x, "enableAutofillOnKeyPress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAutofillOnKeyPressUndefined: Self = StObject.set(x, "enableAutofillOnKeyPress", js.undefined)
+      inline def setEnableAutofillOnKeyPressUndefined: Self = StObject.set(x, "enableAutofillOnKeyPress", js.undefined)
       
-      @scala.inline
-      def setEnableAutofillOnKeyPressVarargs(value: KeyCodes*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value :_*))
+      inline def setEnableAutofillOnKeyPressVarargs(value: KeyCodes*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value :_*))
       
-      @scala.inline
-      def setOnInputChange(value: (/* value */ String, /* composing */ Boolean) => String): Self = StObject.set(x, "onInputChange", js.Any.fromFunction2(value))
+      inline def setOnInputChange(value: (/* value */ String, /* composing */ Boolean) => String): Self = StObject.set(x, "onInputChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
+      inline def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
       
-      @scala.inline
-      def setOnInputValueChange(value: (/* newValue */ js.UndefOr[String], /* composing */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onInputValueChange", js.Any.fromFunction2(value))
+      inline def setOnInputValueChange(value: (/* newValue */ js.UndefOr[String], /* composing */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onInputValueChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnInputValueChangeUndefined: Self = StObject.set(x, "onInputValueChange", js.undefined)
+      inline def setOnInputValueChangeUndefined: Self = StObject.set(x, "onInputValueChange", js.undefined)
       
-      @scala.inline
-      def setPreventValueSelection(value: Boolean): Self = StObject.set(x, "preventValueSelection", value.asInstanceOf[js.Any])
+      inline def setPreventValueSelection(value: Boolean): Self = StObject.set(x, "preventValueSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventValueSelectionUndefined: Self = StObject.set(x, "preventValueSelection", js.undefined)
+      inline def setPreventValueSelectionUndefined: Self = StObject.set(x, "preventValueSelection", js.undefined)
       
-      @scala.inline
-      def setShouldSelectFullInputValueInComponentDidUpdate(value: () => Boolean): Self = StObject.set(x, "shouldSelectFullInputValueInComponentDidUpdate", js.Any.fromFunction0(value))
+      inline def setShouldSelectFullInputValueInComponentDidUpdate(value: () => Boolean): Self = StObject.set(x, "shouldSelectFullInputValueInComponentDidUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldSelectFullInputValueInComponentDidUpdateUndefined: Self = StObject.set(x, "shouldSelectFullInputValueInComponentDidUpdate", js.undefined)
+      inline def setShouldSelectFullInputValueInComponentDidUpdateUndefined: Self = StObject.set(x, "shouldSelectFullInputValueInComponentDidUpdate", js.undefined)
       
-      @scala.inline
-      def setSuggestedDisplayValue(value: String): Self = StObject.set(x, "suggestedDisplayValue", value.asInstanceOf[js.Any])
+      inline def setSuggestedDisplayValue(value: String): Self = StObject.set(x, "suggestedDisplayValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedDisplayValueUndefined: Self = StObject.set(x, "suggestedDisplayValue", js.undefined)
+      inline def setSuggestedDisplayValueUndefined: Self = StObject.set(x, "suggestedDisplayValue", js.undefined)
       
-      @scala.inline
-      def setUpdateValueInWillReceiveProps(value: () => String | Null): Self = StObject.set(x, "updateValueInWillReceiveProps", js.Any.fromFunction0(value))
+      inline def setUpdateValueInWillReceiveProps(value: () => String | Null): Self = StObject.set(x, "updateValueInWillReceiveProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateValueInWillReceivePropsUndefined: Self = StObject.set(x, "updateValueInWillReceiveProps", js.undefined)
+      inline def setUpdateValueInWillReceivePropsUndefined: Self = StObject.set(x, "updateValueInWillReceiveProps", js.undefined)
     }
   }
   

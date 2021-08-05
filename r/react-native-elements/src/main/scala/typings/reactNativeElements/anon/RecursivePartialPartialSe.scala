@@ -482,107 +482,74 @@ trait RecursivePartialPartialSe extends StObject {
 }
 object RecursivePartialPartialSe {
   
-  @scala.inline
-  def apply(): RecursivePartialPartialSe = {
+  inline def apply(): RecursivePartialPartialSe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecursivePartialPartialSe]
   }
   
-  @scala.inline
-  implicit class RecursivePartialPartialSeMutableBuilder[Self <: RecursivePartialPartialSe] (val x: Self) extends AnyVal {
+  extension [Self <: RecursivePartialPartialSe](x: Self) {
     
-    @scala.inline
-    def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
+    inline def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
+    inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    @scala.inline
-    def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
+    inline def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
     
-    @scala.inline
-    def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    inline def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
+    inline def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
     
-    @scala.inline
-    def setAccessibilityHint(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
+    inline def setAccessibilityHint(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
+    inline def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
     
-    @scala.inline
-    def setAccessibilityIgnoresInvertColors(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    inline def setAccessibilityIgnoresInvertColors(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
+    inline def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
     
-    @scala.inline
-    def setAccessibilityLabel(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    @scala.inline
-    def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
+    inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
-    @scala.inline
-    def setAccessibilityRole(value: RecursivePartial[js.UndefOr[AccessibilityRole]]): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
+    inline def setAccessibilityRole(value: RecursivePartial[js.UndefOr[AccessibilityRole]]): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
+    inline def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
     
-    @scala.inline
-    def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
+    inline def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
+    inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
     
-    @scala.inline
-    def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
+    inline def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
+    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
     
-    @scala.inline
-    def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
+    inline def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
+    inline def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
     
-    @scala.inline
-    def setAccessibilityViewIsModal(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    inline def setAccessibilityViewIsModal(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
+    inline def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
     
-    @scala.inline
-    def setAccessible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
+    inline def setAccessible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
+    inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    @scala.inline
-    def setAllowFontScaling(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+    inline def setAllowFontScaling(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+    inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
-    @scala.inline
-    def setAutoCapitalize(value: RecursivePartial[js.UndefOr[none | sentences | words | characters]]): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+    inline def setAutoCapitalize(value: RecursivePartial[js.UndefOr[none | sentences | words | characters]]): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
+    inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
-    @scala.inline
-    def setAutoCompleteType(
+    inline def setAutoCompleteType(
       value: RecursivePartial[
           js.UndefOr[
             `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
@@ -590,365 +557,247 @@ object RecursivePartialPartialSe {
         ]
     ): Self = StObject.set(x, "autoCompleteType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteTypeUndefined: Self = StObject.set(x, "autoCompleteType", js.undefined)
+    inline def setAutoCompleteTypeUndefined: Self = StObject.set(x, "autoCompleteType", js.undefined)
     
-    @scala.inline
-    def setAutoCorrect(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+    inline def setAutoCorrect(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+    inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
-    @scala.inline
-    def setAutoFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    inline def setAutoFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
-    @scala.inline
-    def setBlurOnSubmit(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "blurOnSubmit", value.asInstanceOf[js.Any])
+    inline def setBlurOnSubmit(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "blurOnSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurOnSubmitUndefined: Self = StObject.set(x, "blurOnSubmit", js.undefined)
+    inline def setBlurOnSubmitUndefined: Self = StObject.set(x, "blurOnSubmit", js.undefined)
     
-    @scala.inline
-    def setCancelButtonProps(value: RecursivePartial[js.UndefOr[PartialTouchableOpacityPr]]): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
+    inline def setCancelButtonProps(value: RecursivePartial[js.UndefOr[PartialTouchableOpacityPr]]): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
+    inline def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
     
-    @scala.inline
-    def setCancelButtonTitle(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "cancelButtonTitle", value.asInstanceOf[js.Any])
+    inline def setCancelButtonTitle(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "cancelButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelButtonTitleUndefined: Self = StObject.set(x, "cancelButtonTitle", js.undefined)
+    inline def setCancelButtonTitleUndefined: Self = StObject.set(x, "cancelButtonTitle", js.undefined)
     
-    @scala.inline
-    def setCancelIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "cancelIcon", value.asInstanceOf[js.Any])
+    inline def setCancelIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "cancelIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelIconUndefined: Self = StObject.set(x, "cancelIcon", js.undefined)
+    inline def setCancelIconUndefined: Self = StObject.set(x, "cancelIcon", js.undefined)
     
-    @scala.inline
-    def setCaretHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "caretHidden", value.asInstanceOf[js.Any])
+    inline def setCaretHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "caretHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaretHiddenUndefined: Self = StObject.set(x, "caretHidden", js.undefined)
+    inline def setCaretHiddenUndefined: Self = StObject.set(x, "caretHidden", js.undefined)
     
-    @scala.inline
-    def setClearButtonMode(value: RecursivePartial[js.UndefOr[never | `while-editing` | `unless-editing` | always]]): Self = StObject.set(x, "clearButtonMode", value.asInstanceOf[js.Any])
+    inline def setClearButtonMode(value: RecursivePartial[js.UndefOr[never | `while-editing` | `unless-editing` | always]]): Self = StObject.set(x, "clearButtonMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearButtonModeUndefined: Self = StObject.set(x, "clearButtonMode", js.undefined)
+    inline def setClearButtonModeUndefined: Self = StObject.set(x, "clearButtonMode", js.undefined)
     
-    @scala.inline
-    def setClearIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+    inline def setClearIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
+    inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
-    @scala.inline
-    def setClearTextOnFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "clearTextOnFocus", value.asInstanceOf[js.Any])
+    inline def setClearTextOnFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "clearTextOnFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearTextOnFocusUndefined: Self = StObject.set(x, "clearTextOnFocus", js.undefined)
+    inline def setClearTextOnFocusUndefined: Self = StObject.set(x, "clearTextOnFocus", js.undefined)
     
-    @scala.inline
-    def setCollapsable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
+    inline def setCollapsable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
+    inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setContextMenuHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "contextMenuHidden", value.asInstanceOf[js.Any])
+    inline def setContextMenuHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "contextMenuHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextMenuHiddenUndefined: Self = StObject.set(x, "contextMenuHidden", js.undefined)
+    inline def setContextMenuHiddenUndefined: Self = StObject.set(x, "contextMenuHidden", js.undefined)
     
-    @scala.inline
-    def setDataDetectorTypes(value: RecursivePartial[js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]]]): Self = StObject.set(x, "dataDetectorTypes", value.asInstanceOf[js.Any])
+    inline def setDataDetectorTypes(value: RecursivePartial[js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]]]): Self = StObject.set(x, "dataDetectorTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDetectorTypesUndefined: Self = StObject.set(x, "dataDetectorTypes", js.undefined)
+    inline def setDataDetectorTypesUndefined: Self = StObject.set(x, "dataDetectorTypes", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDisableFullscreenUI(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disableFullscreenUI", value.asInstanceOf[js.Any])
+    inline def setDisableFullscreenUI(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disableFullscreenUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFullscreenUIUndefined: Self = StObject.set(x, "disableFullscreenUI", js.undefined)
+    inline def setDisableFullscreenUIUndefined: Self = StObject.set(x, "disableFullscreenUI", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledInputStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "disabledInputStyle", value.asInstanceOf[js.Any])
+    inline def setDisabledInputStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "disabledInputStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledInputStyleUndefined: Self = StObject.set(x, "disabledInputStyle", js.undefined)
+    inline def setDisabledInputStyleUndefined: Self = StObject.set(x, "disabledInputStyle", js.undefined)
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEditable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    @scala.inline
-    def setEnablesReturnKeyAutomatically(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "enablesReturnKeyAutomatically", value.asInstanceOf[js.Any])
+    inline def setEnablesReturnKeyAutomatically(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "enablesReturnKeyAutomatically", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablesReturnKeyAutomaticallyUndefined: Self = StObject.set(x, "enablesReturnKeyAutomatically", js.undefined)
+    inline def setEnablesReturnKeyAutomaticallyUndefined: Self = StObject.set(x, "enablesReturnKeyAutomatically", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorProps(value: RecursivePartial[js.UndefOr[TextProps]]): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
+    inline def setErrorProps(value: RecursivePartial[js.UndefOr[TextProps]]): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
+    inline def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
     
-    @scala.inline
-    def setErrorStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
+    inline def setErrorStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
+    inline def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
     
-    @scala.inline
-    def setFocusable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
-    @scala.inline
-    def setHasTVPreferredFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
+    inline def setHasTVPreferredFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
+    inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
     
-    @scala.inline
-    def setHitSlop(value: RecursivePartial[js.UndefOr[Insets]]): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
+    inline def setHitSlop(value: RecursivePartial[js.UndefOr[Insets]]): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
+    inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    @scala.inline
-    def setImportantForAccessibility(value: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
+    inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
-    @scala.inline
-    def setImportantForAutofill(
+    inline def setImportantForAutofill(
       value: RecursivePartial[js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants]]
     ): Self = StObject.set(x, "importantForAutofill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportantForAutofillUndefined: Self = StObject.set(x, "importantForAutofill", js.undefined)
+    inline def setImportantForAutofillUndefined: Self = StObject.set(x, "importantForAutofill", js.undefined)
     
-    @scala.inline
-    def setInlineImageLeft(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "inlineImageLeft", value.asInstanceOf[js.Any])
+    inline def setInlineImageLeft(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "inlineImageLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineImageLeftUndefined: Self = StObject.set(x, "inlineImageLeft", js.undefined)
+    inline def setInlineImageLeftUndefined: Self = StObject.set(x, "inlineImageLeft", js.undefined)
     
-    @scala.inline
-    def setInlineImagePadding(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "inlineImagePadding", value.asInstanceOf[js.Any])
+    inline def setInlineImagePadding(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "inlineImagePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineImagePaddingUndefined: Self = StObject.set(x, "inlineImagePadding", js.undefined)
+    inline def setInlineImagePaddingUndefined: Self = StObject.set(x, "inlineImagePadding", js.undefined)
     
-    @scala.inline
-    def setInputAccessoryViewID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "inputAccessoryViewID", value.asInstanceOf[js.Any])
+    inline def setInputAccessoryViewID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "inputAccessoryViewID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputAccessoryViewIDUndefined: Self = StObject.set(x, "inputAccessoryViewID", js.undefined)
+    inline def setInputAccessoryViewIDUndefined: Self = StObject.set(x, "inputAccessoryViewID", js.undefined)
     
-    @scala.inline
-    def setInputComponent(value: RecursivePartial[js.UndefOr[ComponentType[js.Any]]]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
+    inline def setInputComponent(value: RecursivePartial[js.UndefOr[ComponentType[js.Any]]]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputComponentUndefined: Self = StObject.set(x, "InputComponent", js.undefined)
+    inline def setInputComponentUndefined: Self = StObject.set(x, "InputComponent", js.undefined)
     
-    @scala.inline
-    def setInputContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "inputContainerStyle", value.asInstanceOf[js.Any])
+    inline def setInputContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "inputContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputContainerStyleUndefined: Self = StObject.set(x, "inputContainerStyle", js.undefined)
+    inline def setInputContainerStyleUndefined: Self = StObject.set(x, "inputContainerStyle", js.undefined)
     
-    @scala.inline
-    def setInputStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+    inline def setInputStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
+    inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
     
-    @scala.inline
-    def setIsTVSelectable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
+    inline def setIsTVSelectable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
+    inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
-    @scala.inline
-    def setKeyboardAppearance(value: RecursivePartial[js.UndefOr[default | light | dark]]): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
+    inline def setKeyboardAppearance(value: RecursivePartial[js.UndefOr[default | light | dark]]): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardAppearanceUndefined: Self = StObject.set(x, "keyboardAppearance", js.undefined)
+    inline def setKeyboardAppearanceUndefined: Self = StObject.set(x, "keyboardAppearance", js.undefined)
     
-    @scala.inline
-    def setKeyboardType(value: RecursivePartial[js.UndefOr[KeyboardTypeOptions]]): Self = StObject.set(x, "keyboardType", value.asInstanceOf[js.Any])
+    inline def setKeyboardType(value: RecursivePartial[js.UndefOr[KeyboardTypeOptions]]): Self = StObject.set(x, "keyboardType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardTypeUndefined: Self = StObject.set(x, "keyboardType", js.undefined)
+    inline def setKeyboardTypeUndefined: Self = StObject.set(x, "keyboardType", js.undefined)
     
-    @scala.inline
-    def setLabel(value: RecursivePartial[js.UndefOr[String | ReactElement]]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: RecursivePartial[js.UndefOr[String | ReactElement]]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelProps(value: RecursivePartial[js.UndefOr[TextProps]]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
+    inline def setLabelProps(value: RecursivePartial[js.UndefOr[TextProps]]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
+    inline def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
-    @scala.inline
-    def setLabelStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLeftIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+    inline def setLeftIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftIconContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "leftIconContainerStyle", value.asInstanceOf[js.Any])
+    inline def setLeftIconContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "leftIconContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftIconContainerStyleUndefined: Self = StObject.set(x, "leftIconContainerStyle", js.undefined)
+    inline def setLeftIconContainerStyleUndefined: Self = StObject.set(x, "leftIconContainerStyle", js.undefined)
     
-    @scala.inline
-    def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
+    inline def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
     
-    @scala.inline
-    def setLightTheme(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "lightTheme", value.asInstanceOf[js.Any])
+    inline def setLightTheme(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "lightTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightThemeUndefined: Self = StObject.set(x, "lightTheme", js.undefined)
+    inline def setLightThemeUndefined: Self = StObject.set(x, "lightTheme", js.undefined)
     
-    @scala.inline
-    def setLoadingProps(value: RecursivePartial[js.UndefOr[ActivityIndicatorProperties]]): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
+    inline def setLoadingProps(value: RecursivePartial[js.UndefOr[ActivityIndicatorProperties]]): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingPropsUndefined: Self = StObject.set(x, "loadingProps", js.undefined)
+    inline def setLoadingPropsUndefined: Self = StObject.set(x, "loadingProps", js.undefined)
     
-    @scala.inline
-    def setMaxFontSizeMultiplier(value: RecursivePartial[js.UndefOr[Double | Null]]): Self = StObject.set(x, "maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+    inline def setMaxFontSizeMultiplier(value: RecursivePartial[js.UndefOr[Double | Null]]): Self = StObject.set(x, "maxFontSizeMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFontSizeMultiplierUndefined: Self = StObject.set(x, "maxFontSizeMultiplier", js.undefined)
+    inline def setMaxFontSizeMultiplierUndefined: Self = StObject.set(x, "maxFontSizeMultiplier", js.undefined)
     
-    @scala.inline
-    def setMaxLength(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    @scala.inline
-    def setMultiline(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    inline def setMultiline(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+    inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     
-    @scala.inline
-    def setNativeID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    inline def setNativeID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
     
-    @scala.inline
-    def setNeedsOffscreenAlphaCompositing(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    inline def setNeedsOffscreenAlphaCompositing(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
+    inline def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
     
-    @scala.inline
-    def setNumberOfLines(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+    inline def setNumberOfLines(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
+    inline def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
     
-    @scala.inline
-    def setOnAccessibilityAction(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]): Self = StObject.set(x, "onAccessibilityAction", value.asInstanceOf[js.Any])
+    inline def setOnAccessibilityAction(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]): Self = StObject.set(x, "onAccessibilityAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
+    inline def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
     
-    @scala.inline
-    def setOnAccessibilityEscape(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onAccessibilityEscape", value.asInstanceOf[js.Any])
+    inline def setOnAccessibilityEscape(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onAccessibilityEscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
+    inline def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
     
-    @scala.inline
-    def setOnAccessibilityTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onAccessibilityTap", value.asInstanceOf[js.Any])
+    inline def setOnAccessibilityTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onAccessibilityTap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
+    inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
-    @scala.inline
-    def setOnBlur(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+    inline def setOnBlur(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    @scala.inline
-    def setOnCancel(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
+    inline def setOnCancel(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+    inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
-    @scala.inline
-    def setOnChange(
+    inline def setOnChange(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputChangeEventData], Unit]]
         ]
     ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeText(value: RecursivePartial[js.UndefOr[js.Function1[/* text */ String, Unit]]]): Self = StObject.set(x, "onChangeText", value.asInstanceOf[js.Any])
+    inline def setOnChangeText(value: RecursivePartial[js.UndefOr[js.Function1[/* text */ String, Unit]]]): Self = StObject.set(x, "onChangeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeTextUndefined: Self = StObject.set(x, "onChangeText", js.undefined)
+    inline def setOnChangeTextUndefined: Self = StObject.set(x, "onChangeText", js.undefined)
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnClear(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onClear", value.asInstanceOf[js.Any])
+    inline def setOnClear(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+    inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
     
-    @scala.inline
-    def setOnContentSizeChange(
+    inline def setOnContentSizeChange(
       value: RecursivePartial[
           js.UndefOr[
             js.Function1[/* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData], Unit]
@@ -956,119 +805,85 @@ object RecursivePartialPartialSe {
         ]
     ): Self = StObject.set(x, "onContentSizeChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
+    inline def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
     
-    @scala.inline
-    def setOnEndEditing(
+    inline def setOnEndEditing(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputEndEditingEventData], Unit]]
         ]
     ): Self = StObject.set(x, "onEndEditing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEndEditingUndefined: Self = StObject.set(x, "onEndEditing", js.undefined)
+    inline def setOnEndEditingUndefined: Self = StObject.set(x, "onEndEditing", js.undefined)
     
-    @scala.inline
-    def setOnFocus(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
+    inline def setOnFocus(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    @scala.inline
-    def setOnKeyPress(
+    inline def setOnKeyPress(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]]
         ]
     ): Self = StObject.set(x, "onKeyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+    inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
-    @scala.inline
-    def setOnLayout(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]): Self = StObject.set(x, "onLayout", value.asInstanceOf[js.Any])
+    inline def setOnLayout(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]): Self = StObject.set(x, "onLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+    inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
     
-    @scala.inline
-    def setOnMagicTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onMagicTap", value.asInstanceOf[js.Any])
+    inline def setOnMagicTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onMagicTap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
+    inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
-    @scala.inline
-    def setOnMoveShouldSetResponder(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onMoveShouldSetResponder", value.asInstanceOf[js.Any])
+    inline def setOnMoveShouldSetResponder(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onMoveShouldSetResponder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMoveShouldSetResponderCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onMoveShouldSetResponderCapture", value.asInstanceOf[js.Any])
+    inline def setOnMoveShouldSetResponderCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onMoveShouldSetResponderCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
+    inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
     
-    @scala.inline
-    def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
+    inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
     
-    @scala.inline
-    def setOnResponderEnd(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderEnd", value.asInstanceOf[js.Any])
+    inline def setOnResponderEnd(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
+    inline def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
     
-    @scala.inline
-    def setOnResponderGrant(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderGrant", value.asInstanceOf[js.Any])
+    inline def setOnResponderGrant(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderGrant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderGrantUndefined: Self = StObject.set(x, "onResponderGrant", js.undefined)
+    inline def setOnResponderGrantUndefined: Self = StObject.set(x, "onResponderGrant", js.undefined)
     
-    @scala.inline
-    def setOnResponderMove(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderMove", value.asInstanceOf[js.Any])
+    inline def setOnResponderMove(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderMoveUndefined: Self = StObject.set(x, "onResponderMove", js.undefined)
+    inline def setOnResponderMoveUndefined: Self = StObject.set(x, "onResponderMove", js.undefined)
     
-    @scala.inline
-    def setOnResponderReject(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderReject", value.asInstanceOf[js.Any])
+    inline def setOnResponderReject(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderReject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderRejectUndefined: Self = StObject.set(x, "onResponderReject", js.undefined)
+    inline def setOnResponderRejectUndefined: Self = StObject.set(x, "onResponderReject", js.undefined)
     
-    @scala.inline
-    def setOnResponderRelease(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderRelease", value.asInstanceOf[js.Any])
+    inline def setOnResponderRelease(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderReleaseUndefined: Self = StObject.set(x, "onResponderRelease", js.undefined)
+    inline def setOnResponderReleaseUndefined: Self = StObject.set(x, "onResponderRelease", js.undefined)
     
-    @scala.inline
-    def setOnResponderStart(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderStart", value.asInstanceOf[js.Any])
+    inline def setOnResponderStart(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderStartUndefined: Self = StObject.set(x, "onResponderStart", js.undefined)
+    inline def setOnResponderStartUndefined: Self = StObject.set(x, "onResponderStart", js.undefined)
     
-    @scala.inline
-    def setOnResponderTerminate(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderTerminate", value.asInstanceOf[js.Any])
+    inline def setOnResponderTerminate(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onResponderTerminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderTerminateUndefined: Self = StObject.set(x, "onResponderTerminate", js.undefined)
+    inline def setOnResponderTerminateUndefined: Self = StObject.set(x, "onResponderTerminate", js.undefined)
     
-    @scala.inline
-    def setOnResponderTerminationRequest(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onResponderTerminationRequest", value.asInstanceOf[js.Any])
+    inline def setOnResponderTerminationRequest(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onResponderTerminationRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
+    inline def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
     
-    @scala.inline
-    def setOnScroll(
+    inline def setOnScroll(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputScrollEventData], Unit]]
         ]
     ): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+    inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    @scala.inline
-    def setOnSelectionChange(
+    inline def setOnSelectionChange(
       value: RecursivePartial[
           js.UndefOr[
             js.Function1[/* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData], Unit]
@@ -1076,23 +891,17 @@ object RecursivePartialPartialSe {
         ]
     ): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
+    inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
     
-    @scala.inline
-    def setOnStartShouldSetResponder(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onStartShouldSetResponder", value.asInstanceOf[js.Any])
+    inline def setOnStartShouldSetResponder(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onStartShouldSetResponder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStartShouldSetResponderCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onStartShouldSetResponderCapture", value.asInstanceOf[js.Any])
+    inline def setOnStartShouldSetResponderCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]): Self = StObject.set(x, "onStartShouldSetResponderCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
+    inline def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
     
-    @scala.inline
-    def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
+    inline def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
     
-    @scala.inline
-    def setOnSubmitEditing(
+    inline def setOnSubmitEditing(
       value: RecursivePartial[
           js.UndefOr[
             js.Function1[/* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData], Unit]
@@ -1100,231 +909,157 @@ object RecursivePartialPartialSe {
         ]
     ): Self = StObject.set(x, "onSubmitEditing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSubmitEditingUndefined: Self = StObject.set(x, "onSubmitEditing", js.undefined)
+    inline def setOnSubmitEditingUndefined: Self = StObject.set(x, "onSubmitEditing", js.undefined)
     
-    @scala.inline
-    def setOnTextInput(
+    inline def setOnTextInput(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputTextInputEventData], Unit]]
         ]
     ): Self = StObject.set(x, "onTextInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTextInputUndefined: Self = StObject.set(x, "onTextInput", js.undefined)
+    inline def setOnTextInputUndefined: Self = StObject.set(x, "onTextInput", js.undefined)
     
-    @scala.inline
-    def setOnTouchCancel(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
+    inline def setOnTouchCancel(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+    inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
-    @scala.inline
-    def setOnTouchEnd(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
+    inline def setOnTouchEnd(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchEndCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
+    inline def setOnTouchEndCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
+    inline def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
     
-    @scala.inline
-    def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
-    @scala.inline
-    def setOnTouchMove(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
+    inline def setOnTouchMove(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+    inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
-    @scala.inline
-    def setOnTouchStart(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
+    inline def setOnTouchStart(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    @scala.inline
-    def setPasswordRules(value: RecursivePartial[js.UndefOr[String | Null]]): Self = StObject.set(x, "passwordRules", value.asInstanceOf[js.Any])
+    inline def setPasswordRules(value: RecursivePartial[js.UndefOr[String | Null]]): Self = StObject.set(x, "passwordRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRulesUndefined: Self = StObject.set(x, "passwordRules", js.undefined)
+    inline def setPasswordRulesUndefined: Self = StObject.set(x, "passwordRules", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderTextColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "placeholderTextColor", value.asInstanceOf[js.Any])
+    inline def setPlaceholderTextColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "placeholderTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderTextColorUndefined: Self = StObject.set(x, "placeholderTextColor", js.undefined)
+    inline def setPlaceholderTextColorUndefined: Self = StObject.set(x, "placeholderTextColor", js.undefined)
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: RecursivePartial[js.UndefOr[default | ios | android]]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: RecursivePartial[js.UndefOr[default | ios | android]]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setPointerEvents(value: RecursivePartial[js.UndefOr[`box-none` | none | `box-only` | auto]]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: RecursivePartial[js.UndefOr[`box-none` | none | `box-only` | auto]]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
-    @scala.inline
-    def setRejectResponderTermination(value: RecursivePartial[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "rejectResponderTermination", value.asInstanceOf[js.Any])
+    inline def setRejectResponderTermination(value: RecursivePartial[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "rejectResponderTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectResponderTerminationUndefined: Self = StObject.set(x, "rejectResponderTermination", js.undefined)
+    inline def setRejectResponderTerminationUndefined: Self = StObject.set(x, "rejectResponderTermination", js.undefined)
     
-    @scala.inline
-    def setRemoveClippedSubviews(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
+    inline def setRemoveClippedSubviews(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
+    inline def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
     
-    @scala.inline
-    def setRenderErrorMessage(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "renderErrorMessage", value.asInstanceOf[js.Any])
+    inline def setRenderErrorMessage(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "renderErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderErrorMessageUndefined: Self = StObject.set(x, "renderErrorMessage", js.undefined)
+    inline def setRenderErrorMessageUndefined: Self = StObject.set(x, "renderErrorMessage", js.undefined)
     
-    @scala.inline
-    def setRenderToHardwareTextureAndroid(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    inline def setRenderToHardwareTextureAndroid(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
+    inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
     
-    @scala.inline
-    def setReturnKeyLabel(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "returnKeyLabel", value.asInstanceOf[js.Any])
+    inline def setReturnKeyLabel(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "returnKeyLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnKeyLabelUndefined: Self = StObject.set(x, "returnKeyLabel", js.undefined)
+    inline def setReturnKeyLabelUndefined: Self = StObject.set(x, "returnKeyLabel", js.undefined)
     
-    @scala.inline
-    def setReturnKeyType(value: RecursivePartial[js.UndefOr[ReturnKeyTypeOptions]]): Self = StObject.set(x, "returnKeyType", value.asInstanceOf[js.Any])
+    inline def setReturnKeyType(value: RecursivePartial[js.UndefOr[ReturnKeyTypeOptions]]): Self = StObject.set(x, "returnKeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnKeyTypeUndefined: Self = StObject.set(x, "returnKeyType", js.undefined)
+    inline def setReturnKeyTypeUndefined: Self = StObject.set(x, "returnKeyType", js.undefined)
     
-    @scala.inline
-    def setRightIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+    inline def setRightIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIconContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "rightIconContainerStyle", value.asInstanceOf[js.Any])
+    inline def setRightIconContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "rightIconContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIconContainerStyleUndefined: Self = StObject.set(x, "rightIconContainerStyle", js.undefined)
+    inline def setRightIconContainerStyleUndefined: Self = StObject.set(x, "rightIconContainerStyle", js.undefined)
     
-    @scala.inline
-    def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
+    inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
     
-    @scala.inline
-    def setRound(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
-    @scala.inline
-    def setScrollEnabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "scrollEnabled", value.asInstanceOf[js.Any])
+    inline def setScrollEnabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "scrollEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollEnabledUndefined: Self = StObject.set(x, "scrollEnabled", js.undefined)
+    inline def setScrollEnabledUndefined: Self = StObject.set(x, "scrollEnabled", js.undefined)
     
-    @scala.inline
-    def setSearchIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "searchIcon", value.asInstanceOf[js.Any])
+    inline def setSearchIcon(value: RecursivePartial[js.UndefOr[IconNode]]): Self = StObject.set(x, "searchIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchIconUndefined: Self = StObject.set(x, "searchIcon", js.undefined)
+    inline def setSearchIconUndefined: Self = StObject.set(x, "searchIcon", js.undefined)
     
-    @scala.inline
-    def setSecureTextEntry(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "secureTextEntry", value.asInstanceOf[js.Any])
+    inline def setSecureTextEntry(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "secureTextEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureTextEntryUndefined: Self = StObject.set(x, "secureTextEntry", js.undefined)
+    inline def setSecureTextEntryUndefined: Self = StObject.set(x, "secureTextEntry", js.undefined)
     
-    @scala.inline
-    def setSelectTextOnFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "selectTextOnFocus", value.asInstanceOf[js.Any])
+    inline def setSelectTextOnFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "selectTextOnFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
+    inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    @scala.inline
-    def setSelection(value: RecursivePartial[js.UndefOr[Start]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: RecursivePartial[js.UndefOr[Start]]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
+    inline def setSelectionColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
+    inline def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
-    @scala.inline
-    def setSelectionState(value: RecursivePartial[js.UndefOr[DocumentSelectionState]]): Self = StObject.set(x, "selectionState", value.asInstanceOf[js.Any])
+    inline def setSelectionState(value: RecursivePartial[js.UndefOr[DocumentSelectionState]]): Self = StObject.set(x, "selectionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionStateUndefined: Self = StObject.set(x, "selectionState", js.undefined)
+    inline def setSelectionStateUndefined: Self = StObject.set(x, "selectionState", js.undefined)
     
-    @scala.inline
-    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    @scala.inline
-    def setShouldRasterizeIOS(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    inline def setShouldRasterizeIOS(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
+    inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
     
-    @scala.inline
-    def setShowCancel(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
+    inline def setShowCancel(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
+    inline def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
     
-    @scala.inline
-    def setShowLoading(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "showLoading", value.asInstanceOf[js.Any])
+    inline def setShowLoading(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "showLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLoadingUndefined: Self = StObject.set(x, "showLoading", js.undefined)
+    inline def setShowLoadingUndefined: Self = StObject.set(x, "showLoading", js.undefined)
     
-    @scala.inline
-    def setShowSoftInputOnFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "showSoftInputOnFocus", value.asInstanceOf[js.Any])
+    inline def setShowSoftInputOnFocus(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "showSoftInputOnFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSoftInputOnFocusUndefined: Self = StObject.set(x, "showSoftInputOnFocus", js.undefined)
+    inline def setShowSoftInputOnFocusUndefined: Self = StObject.set(x, "showSoftInputOnFocus", js.undefined)
     
-    @scala.inline
-    def setSpellCheck(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+    inline def setSpellCheck(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
+    inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
     
-    @scala.inline
-    def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTestID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    inline def setTestID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    @scala.inline
-    def setTextAlignVertical(value: RecursivePartial[js.UndefOr[auto | top | bottom | center]]): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
+    inline def setTextAlignVertical(value: RecursivePartial[js.UndefOr[auto | top | bottom | center]]): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
+    inline def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
     
-    @scala.inline
-    def setTextBreakStrategy(value: RecursivePartial[js.UndefOr[simple | highQuality | balanced]]): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+    inline def setTextBreakStrategy(value: RecursivePartial[js.UndefOr[simple | highQuality | balanced]]): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
+    inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
     
-    @scala.inline
-    def setTextContentType(
+    inline def setTextContentType(
       value: RecursivePartial[
           js.UndefOr[
             none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
@@ -1332,49 +1067,34 @@ object RecursivePartialPartialSe {
         ]
     ): Self = StObject.set(x, "textContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)
+    inline def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)
     
-    @scala.inline
-    def setTvParallaxMagnification(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
+    inline def setTvParallaxMagnification(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
+    inline def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
     
-    @scala.inline
-    def setTvParallaxProperties(value: RecursivePartial[js.UndefOr[TVParallaxProperties]]): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
+    inline def setTvParallaxProperties(value: RecursivePartial[js.UndefOr[TVParallaxProperties]]): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
+    inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
     
-    @scala.inline
-    def setTvParallaxShiftDistanceX(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+    inline def setTvParallaxShiftDistanceX(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
+    inline def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
     
-    @scala.inline
-    def setTvParallaxShiftDistanceY(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+    inline def setTvParallaxShiftDistanceY(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
+    inline def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
     
-    @scala.inline
-    def setTvParallaxTiltAngle(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+    inline def setTvParallaxTiltAngle(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
+    inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
     
-    @scala.inline
-    def setUnderlineColorAndroid(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "underlineColorAndroid", value.asInstanceOf[js.Any])
+    inline def setUnderlineColorAndroid(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "underlineColorAndroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineColorAndroidUndefined: Self = StObject.set(x, "underlineColorAndroid", js.undefined)
+    inline def setUnderlineColorAndroidUndefined: Self = StObject.set(x, "underlineColorAndroid", js.undefined)
     
-    @scala.inline
-    def setValue(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

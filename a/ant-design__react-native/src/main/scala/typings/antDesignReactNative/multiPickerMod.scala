@@ -30,14 +30,12 @@ object multiPickerMod {
     @JSImport("@ant-design/react-native/lib/picker/MultiPicker", "default.contextType")
     @js.native
     def contextType: js.UndefOr[Context[js.Any]] = js.native
-    @scala.inline
-    def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/picker/MultiPicker", "default.defaultProps")
     @js.native
     def defaultProps: OnValueChange = js.native
-    @scala.inline
-    def defaultProps_=(x: OnValueChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnValueChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait MultiPickerProp extends StObject {
@@ -46,17 +44,14 @@ object multiPickerMod {
   }
   object MultiPickerProp {
     
-    @scala.inline
-    def apply(getValue: js.Function): MultiPickerProp = {
+    inline def apply(getValue: js.Function): MultiPickerProp = {
       val __obj = js.Dynamic.literal(getValue = getValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiPickerProp]
     }
     
-    @scala.inline
-    implicit class MultiPickerPropMutableBuilder[Self <: MultiPickerProp] (val x: Self) extends AnyVal {
+    extension [Self <: MultiPickerProp](x: Self) {
       
-      @scala.inline
-      def setGetValue(value: js.Function): Self = StObject.set(x, "getValue", value.asInstanceOf[js.Any])
+      inline def setGetValue(value: js.Function): Self = StObject.set(x, "getValue", value.asInstanceOf[js.Any])
     }
   }
 }

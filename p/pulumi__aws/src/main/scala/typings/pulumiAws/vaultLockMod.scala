@@ -60,21 +60,16 @@ object vaultLockMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultLockState): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultLockState, opts: CustomResourceOptions): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
+    inline def get(name: String, id: Input[ID]): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
+    inline def get(name: String, id: Input[ID], state: VaultLockState): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
+    inline def get(name: String, id: Input[ID], state: VaultLockState, opts: CustomResourceOptions): VaultLock = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultLock]
     
     /**
       * Returns true if the given object is an instance of VaultLock.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ Boolean]
   }
   
   trait VaultLockArgs extends StObject {
@@ -101,29 +96,22 @@ object vaultLockMod {
   }
   object VaultLockArgs {
     
-    @scala.inline
-    def apply(completeLock: Input[Boolean], policy: Input[String], vaultName: Input[String]): VaultLockArgs = {
+    inline def apply(completeLock: Input[Boolean], policy: Input[String], vaultName: Input[String]): VaultLockArgs = {
       val __obj = js.Dynamic.literal(completeLock = completeLock.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
       __obj.asInstanceOf[VaultLockArgs]
     }
     
-    @scala.inline
-    implicit class VaultLockArgsMutableBuilder[Self <: VaultLockArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VaultLockArgs](x: Self) {
       
-      @scala.inline
-      def setCompleteLock(value: Input[Boolean]): Self = StObject.set(x, "completeLock", value.asInstanceOf[js.Any])
+      inline def setCompleteLock(value: Input[Boolean]): Self = StObject.set(x, "completeLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDeletionError(value: Input[Boolean]): Self = StObject.set(x, "ignoreDeletionError", value.asInstanceOf[js.Any])
+      inline def setIgnoreDeletionError(value: Input[Boolean]): Self = StObject.set(x, "ignoreDeletionError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDeletionErrorUndefined: Self = StObject.set(x, "ignoreDeletionError", js.undefined)
+      inline def setIgnoreDeletionErrorUndefined: Self = StObject.set(x, "ignoreDeletionError", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultName(value: Input[String]): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+      inline def setVaultName(value: Input[String]): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,38 +139,28 @@ object vaultLockMod {
   }
   object VaultLockState {
     
-    @scala.inline
-    def apply(): VaultLockState = {
+    inline def apply(): VaultLockState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VaultLockState]
     }
     
-    @scala.inline
-    implicit class VaultLockStateMutableBuilder[Self <: VaultLockState] (val x: Self) extends AnyVal {
+    extension [Self <: VaultLockState](x: Self) {
       
-      @scala.inline
-      def setCompleteLock(value: Input[Boolean]): Self = StObject.set(x, "completeLock", value.asInstanceOf[js.Any])
+      inline def setCompleteLock(value: Input[Boolean]): Self = StObject.set(x, "completeLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteLockUndefined: Self = StObject.set(x, "completeLock", js.undefined)
+      inline def setCompleteLockUndefined: Self = StObject.set(x, "completeLock", js.undefined)
       
-      @scala.inline
-      def setIgnoreDeletionError(value: Input[Boolean]): Self = StObject.set(x, "ignoreDeletionError", value.asInstanceOf[js.Any])
+      inline def setIgnoreDeletionError(value: Input[Boolean]): Self = StObject.set(x, "ignoreDeletionError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDeletionErrorUndefined: Self = StObject.set(x, "ignoreDeletionError", js.undefined)
+      inline def setIgnoreDeletionErrorUndefined: Self = StObject.set(x, "ignoreDeletionError", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setVaultName(value: Input[String]): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+      inline def setVaultName(value: Input[String]): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultNameUndefined: Self = StObject.set(x, "vaultName", js.undefined)
+      inline def setVaultNameUndefined: Self = StObject.set(x, "vaultName", js.undefined)
     }
   }
 }

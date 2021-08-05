@@ -12,25 +12,19 @@ trait ParentFirst extends StObject {
 }
 object ParentFirst {
   
-  @scala.inline
-  def apply(): ParentFirst = {
+  inline def apply(): ParentFirst = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParentFirst]
   }
   
-  @scala.inline
-  implicit class ParentFirstMutableBuilder[Self <: ParentFirst] (val x: Self) extends AnyVal {
+  extension [Self <: ParentFirst](x: Self) {
     
-    @scala.inline
-    def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
+    inline def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSelfUndefined: Self = StObject.set(x, "includeSelf", js.undefined)
+    inline def setIncludeSelfUndefined: Self = StObject.set(x, "includeSelf", js.undefined)
     
-    @scala.inline
-    def setParentFirst(value: Boolean): Self = StObject.set(x, "parentFirst", value.asInstanceOf[js.Any])
+    inline def setParentFirst(value: Boolean): Self = StObject.set(x, "parentFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFirstUndefined: Self = StObject.set(x, "parentFirst", js.undefined)
+    inline def setParentFirstUndefined: Self = StObject.set(x, "parentFirst", js.undefined)
   }
 }

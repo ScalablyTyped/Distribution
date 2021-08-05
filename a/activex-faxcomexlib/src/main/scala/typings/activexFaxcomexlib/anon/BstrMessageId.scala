@@ -15,22 +15,17 @@ trait BstrMessageId extends StObject {
 }
 object BstrMessageId {
   
-  @scala.inline
-  def apply(bstrMessageId: String, fAddedToReceiveFolder: Boolean, pFaxAccount: FaxAccount): BstrMessageId = {
+  inline def apply(bstrMessageId: String, fAddedToReceiveFolder: Boolean, pFaxAccount: FaxAccount): BstrMessageId = {
     val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId.asInstanceOf[js.Any], fAddedToReceiveFolder = fAddedToReceiveFolder.asInstanceOf[js.Any], pFaxAccount = pFaxAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[BstrMessageId]
   }
   
-  @scala.inline
-  implicit class BstrMessageIdMutableBuilder[Self <: BstrMessageId] (val x: Self) extends AnyVal {
+  extension [Self <: BstrMessageId](x: Self) {
     
-    @scala.inline
-    def setBstrMessageId(value: String): Self = StObject.set(x, "bstrMessageId", value.asInstanceOf[js.Any])
+    inline def setBstrMessageId(value: String): Self = StObject.set(x, "bstrMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAddedToReceiveFolder(value: Boolean): Self = StObject.set(x, "fAddedToReceiveFolder", value.asInstanceOf[js.Any])
+    inline def setFAddedToReceiveFolder(value: Boolean): Self = StObject.set(x, "fAddedToReceiveFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPFaxAccount(value: FaxAccount): Self = StObject.set(x, "pFaxAccount", value.asInstanceOf[js.Any])
+    inline def setPFaxAccount(value: FaxAccount): Self = StObject.set(x, "pFaxAccount", value.asInstanceOf[js.Any])
   }
 }

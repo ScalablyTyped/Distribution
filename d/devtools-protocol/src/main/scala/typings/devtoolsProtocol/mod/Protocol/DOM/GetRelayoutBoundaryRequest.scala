@@ -13,16 +13,13 @@ trait GetRelayoutBoundaryRequest extends StObject {
 }
 object GetRelayoutBoundaryRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): GetRelayoutBoundaryRequest = {
+  inline def apply(nodeId: NodeId): GetRelayoutBoundaryRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelayoutBoundaryRequest]
   }
   
-  @scala.inline
-  implicit class GetRelayoutBoundaryRequestMutableBuilder[Self <: GetRelayoutBoundaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelayoutBoundaryRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

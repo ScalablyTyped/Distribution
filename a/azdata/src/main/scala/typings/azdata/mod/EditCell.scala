@@ -12,16 +12,13 @@ trait EditCell
 }
 object EditCell {
   
-  @scala.inline
-  def apply(displayValue: String, invariantCultureDisplayValue: String, isDirty: Boolean, isNull: Boolean): EditCell = {
+  inline def apply(displayValue: String, invariantCultureDisplayValue: String, isDirty: Boolean, isNull: Boolean): EditCell = {
     val __obj = js.Dynamic.literal(displayValue = displayValue.asInstanceOf[js.Any], invariantCultureDisplayValue = invariantCultureDisplayValue.asInstanceOf[js.Any], isDirty = isDirty.asInstanceOf[js.Any], isNull = isNull.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditCell]
   }
   
-  @scala.inline
-  implicit class EditCellMutableBuilder[Self <: EditCell] (val x: Self) extends AnyVal {
+  extension [Self <: EditCell](x: Self) {
     
-    @scala.inline
-    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
+    inline def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
   }
 }

@@ -63,8 +63,7 @@ object viewMod {
   }
   object InputEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       code: String,
       ctrlKey: Boolean,
@@ -78,38 +77,27 @@ object viewMod {
       __obj.asInstanceOf[InputEvent]
     }
     
-    @scala.inline
-    implicit class InputEventMutableBuilder[Self <: InputEvent] (val x: Self) extends AnyVal {
+    extension [Self <: InputEvent](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputType(value: keyUp | keyDown): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+      inline def setInputType(value: keyUp | keyDown): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,8 +137,7 @@ object viewMod {
   }
   object PropagatedViewEventMapping {
     
-    @scala.inline
-    def apply[Topic, Type](
+    inline def apply[Topic, Type](
       listenerRemoved: String,
       newListener: String,
       `view-blurred`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
@@ -188,53 +175,37 @@ object viewMod {
       __obj.asInstanceOf[PropagatedViewEventMapping[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class PropagatedViewEventMappingMutableBuilder[Self <: PropagatedViewEventMapping[?, ?], Topic, Type] (val x: Self & (PropagatedViewEventMapping[Topic, Type])) extends AnyVal {
+    extension [Self <: PropagatedViewEventMapping[?, ?], Topic, Type](x: Self & (PropagatedViewEventMapping[Topic, Type])) {
       
-      @scala.inline
-      def `setView-blurred`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
+      inline def `setView-blurred`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-crashed`(value: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
+      inline def `setView-crashed`(value: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-created`(value: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
+      inline def `setView-created`(value: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-destroyed`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
+      inline def `setView-destroyed`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-did-change-theme-color`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
+      inline def `setView-did-change-theme-color`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-focused`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
+      inline def `setView-focused`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-hidden`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
+      inline def `setView-hidden`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-hotkey`(value: InputEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
+      inline def `setView-hotkey`(value: InputEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
+      inline def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-page-favicon-updated`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
+      inline def `setView-page-favicon-updated`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-page-title-updated`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
+      inline def `setView-page-title-updated`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-resource-load-failed`(value: (WindowResourceLoadFailedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
+      inline def `setView-resource-load-failed`(value: (WindowResourceLoadFailedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-resource-response-received`(value: (WindowResourceResponseReceivedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
+      inline def `setView-resource-response-received`(value: (WindowResourceResponseReceivedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-shown`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
+      inline def `setView-shown`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-target-changed`(value: (TargetChangedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
+      inline def `setView-target-changed`(value: (TargetChangedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,8 +248,7 @@ object viewMod {
   }
   object PropagatedViewEvents {
     
-    @scala.inline
-    def apply[Topic](
+    inline def apply[Topic](
       listenerRemoved: String,
       newListener: String,
       `view-blurred`: (WindowEvent[Topic, `view-blurred`]) & PropagatedViewIdentity,
@@ -316,63 +286,45 @@ object viewMod {
       __obj.asInstanceOf[PropagatedViewEvents[Topic]]
     }
     
-    @scala.inline
-    implicit class PropagatedViewEventsMutableBuilder[Self <: PropagatedViewEvents[?], Topic] (val x: Self & PropagatedViewEvents[Topic]) extends AnyVal {
+    extension [Self <: PropagatedViewEvents[?], Topic](x: Self & PropagatedViewEvents[Topic]) {
       
-      @scala.inline
-      def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
+      inline def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
+      inline def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-blurred`(value: (WindowEvent[Topic, `view-blurred`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
+      inline def `setView-blurred`(value: (WindowEvent[Topic, `view-blurred`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-crashed`(value: CrashedEvent & (WindowEvent[Topic, `view-crashed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
+      inline def `setView-crashed`(value: CrashedEvent & (WindowEvent[Topic, `view-crashed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-created`(value: CrashedEvent & (WindowEvent[Topic, `view-created`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
+      inline def `setView-created`(value: CrashedEvent & (WindowEvent[Topic, `view-created`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-destroyed`(value: (WindowEvent[Topic, `view-destroyed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
+      inline def `setView-destroyed`(value: (WindowEvent[Topic, `view-destroyed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-did-change-theme-color`(value: (WindowEvent[Topic, `view-did-change-theme-color`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
+      inline def `setView-did-change-theme-color`(value: (WindowEvent[Topic, `view-did-change-theme-color`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-focused`(value: (WindowEvent[Topic, `view-focused`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
+      inline def `setView-focused`(value: (WindowEvent[Topic, `view-focused`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-hidden`(value: (WindowEvent[Topic, `view-hidden`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
+      inline def `setView-hidden`(value: (WindowEvent[Topic, `view-hidden`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-hotkey`(value: InputEvent & (WindowEvent[Topic, `view-hotkey`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
+      inline def `setView-hotkey`(value: InputEvent & (WindowEvent[Topic, `view-hotkey`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[Topic, `view-navigation-rejected`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
+      inline def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[Topic, `view-navigation-rejected`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-page-favicon-updated`(value: (WindowEvent[Topic, `view-page-favicon-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
+      inline def `setView-page-favicon-updated`(value: (WindowEvent[Topic, `view-page-favicon-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-page-title-updated`(value: (WindowEvent[Topic, `view-page-title-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
+      inline def `setView-page-title-updated`(value: (WindowEvent[Topic, `view-page-title-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-resource-load-failed`(
+      inline def `setView-resource-load-failed`(
         value: (WindowResourceLoadFailedEvent[Topic, `view-resource-load-failed`]) & PropagatedViewIdentity
       ): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-resource-response-received`(
+      inline def `setView-resource-response-received`(
         value: (WindowResourceResponseReceivedEvent[Topic, `view-resource-response-received`]) & PropagatedViewIdentity
       ): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-shown`(value: (WindowEvent[Topic, `view-shown`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
+      inline def `setView-shown`(value: (WindowEvent[Topic, `view-shown`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setView-target-changed`(value: (TargetChangedEvent[Topic, `view-target-changed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
+      inline def `setView-target-changed`(value: (TargetChangedEvent[Topic, `view-target-changed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -382,17 +334,14 @@ object viewMod {
   }
   object PropagatedViewIdentity {
     
-    @scala.inline
-    def apply(viewIdentity: NamedIdentity): PropagatedViewIdentity = {
+    inline def apply(viewIdentity: NamedIdentity): PropagatedViewIdentity = {
       val __obj = js.Dynamic.literal(viewIdentity = viewIdentity.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropagatedViewIdentity]
     }
     
-    @scala.inline
-    implicit class PropagatedViewIdentityMutableBuilder[Self <: PropagatedViewIdentity] (val x: Self) extends AnyVal {
+    extension [Self <: PropagatedViewIdentity](x: Self) {
       
-      @scala.inline
-      def setViewIdentity(value: NamedIdentity): Self = StObject.set(x, "viewIdentity", value.asInstanceOf[js.Any])
+      inline def setViewIdentity(value: NamedIdentity): Self = StObject.set(x, "viewIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -406,8 +355,7 @@ object viewMod {
   }
   object TargetChangedEvent {
     
-    @scala.inline
-    def apply[Topic, Type](
+    inline def apply[Topic, Type](
       name: String,
       previousTarget: NamedIdentity,
       target: NamedIdentity,
@@ -420,14 +368,11 @@ object viewMod {
       __obj.asInstanceOf[TargetChangedEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class TargetChangedEventMutableBuilder[Self <: TargetChangedEvent[?, ?], Topic, Type] (val x: Self & (TargetChangedEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: TargetChangedEvent[?, ?], Topic, Type](x: Self & (TargetChangedEvent[Topic, Type])) {
       
-      @scala.inline
-      def setPreviousTarget(value: NamedIdentity): Self = StObject.set(x, "previousTarget", value.asInstanceOf[js.Any])
+      inline def setPreviousTarget(value: NamedIdentity): Self = StObject.set(x, "previousTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: NamedIdentity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: NamedIdentity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -451,8 +396,7 @@ object viewMod {
   }
   object ViewEventMapping {
     
-    @scala.inline
-    def apply[Topic, Type](
+    inline def apply[Topic, Type](
       attached: WindowEvent[Topic, Type],
       blurred: WindowEvent[String, String],
       `certificate-error`: CertificateErrorEvent[String, String],
@@ -487,29 +431,21 @@ object viewMod {
       __obj.asInstanceOf[ViewEventMapping[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class ViewEventMappingMutableBuilder[Self <: ViewEventMapping[?, ?], Topic, Type] (val x: Self & (ViewEventMapping[Topic, Type])) extends AnyVal {
+    extension [Self <: ViewEventMapping[?, ?], Topic, Type](x: Self & (ViewEventMapping[Topic, Type])) {
       
-      @scala.inline
-      def setAttached(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyed(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotkey(value: InputEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+      inline def setHotkey(value: InputEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShown(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
+      inline def setShown(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTarget-changed`(value: TargetChangedEvent[Topic, Type]): Self = StObject.set(x, "target-changed", value.asInstanceOf[js.Any])
+      inline def `setTarget-changed`(value: TargetChangedEvent[Topic, Type]): Self = StObject.set(x, "target-changed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -558,8 +494,7 @@ object viewMod {
   }
   object ViewEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attached: WindowEvent[view, attached],
       blurred: WindowEvent[String, String],
       `certificate-error`: CertificateErrorEvent[String, String],
@@ -594,68 +529,47 @@ object viewMod {
       __obj.asInstanceOf[ViewEvents]
     }
     
-    @scala.inline
-    implicit class ViewEventsMutableBuilder[Self <: ViewEvents] (val x: Self) extends AnyVal {
+    extension [Self <: ViewEvents](x: Self) {
       
-      @scala.inline
-      def setAttached(value: WindowEvent[view, attached]): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: WindowEvent[view, attached]): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurred(value: WindowEvent[String, String]): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
+      inline def setBlurred(value: WindowEvent[String, String]): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCertificate-error`(value: CertificateErrorEvent[String, String]): Self = StObject.set(x, "certificate-error", value.asInstanceOf[js.Any])
+      inline def `setCertificate-error`(value: CertificateErrorEvent[String, String]): Self = StObject.set(x, "certificate-error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrashed(value: CrashedEvent & (WindowEvent[String, String])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
+      inline def setCrashed(value: CrashedEvent & (WindowEvent[String, String])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: WindowEvent[view, created]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: WindowEvent[view, created]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyed(value: WindowEvent[view, destroyed]): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: WindowEvent[view, destroyed]): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDid-change-theme-color`(value: WindowEvent[String, String]): Self = StObject.set(x, "did-change-theme-color", value.asInstanceOf[js.Any])
+      inline def `setDid-change-theme-color`(value: WindowEvent[String, String]): Self = StObject.set(x, "did-change-theme-color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocused(value: WindowEvent[String, String]): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: WindowEvent[String, String]): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFound-in-page`(value: WindowEvent[String, String]): Self = StObject.set(x, "found-in-page", value.asInstanceOf[js.Any])
+      inline def `setFound-in-page`(value: WindowEvent[String, String]): Self = StObject.set(x, "found-in-page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: WindowEvent[view, hidden]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: WindowEvent[view, hidden]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotkey(value: InputEvent & (WindowEvent[view, hotkey])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+      inline def setHotkey(value: InputEvent & (WindowEvent[view, hotkey])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
+      inline def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNavigation-rejected`(value: WindowNavigationRejectedEvent[String, String]): Self = StObject.set(x, "navigation-rejected", value.asInstanceOf[js.Any])
+      inline def `setNavigation-rejected`(value: WindowNavigationRejectedEvent[String, String]): Self = StObject.set(x, "navigation-rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
+      inline def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPage-favicon-updated`(value: WindowEvent[String, String]): Self = StObject.set(x, "page-favicon-updated", value.asInstanceOf[js.Any])
+      inline def `setPage-favicon-updated`(value: WindowEvent[String, String]): Self = StObject.set(x, "page-favicon-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPage-title-updated`(value: PageTitleUpdatedEvent[String, String]): Self = StObject.set(x, "page-title-updated", value.asInstanceOf[js.Any])
+      inline def `setPage-title-updated`(value: PageTitleUpdatedEvent[String, String]): Self = StObject.set(x, "page-title-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setResource-load-failed`(value: WindowResourceLoadFailedEvent[String, String]): Self = StObject.set(x, "resource-load-failed", value.asInstanceOf[js.Any])
+      inline def `setResource-load-failed`(value: WindowResourceLoadFailedEvent[String, String]): Self = StObject.set(x, "resource-load-failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setResource-response-received`(value: WindowResourceResponseReceivedEvent[String, String]): Self = StObject.set(x, "resource-response-received", value.asInstanceOf[js.Any])
+      inline def `setResource-response-received`(value: WindowResourceResponseReceivedEvent[String, String]): Self = StObject.set(x, "resource-response-received", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShown(value: WindowEvent[view, shown]): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
+      inline def setShown(value: WindowEvent[view, shown]): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTarget-changed`(value: TargetChangedEvent[view, `target-changed`]): Self = StObject.set(x, "target-changed", value.asInstanceOf[js.Any])
+      inline def `setTarget-changed`(value: TargetChangedEvent[view, `target-changed`]): Self = StObject.set(x, "target-changed", value.asInstanceOf[js.Any])
     }
   }
 }

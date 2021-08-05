@@ -12,19 +12,15 @@ trait BayesClassifierClassification extends StObject {
 }
 object BayesClassifierClassification {
   
-  @scala.inline
-  def apply(label: String, value: Double): BayesClassifierClassification = {
+  inline def apply(label: String, value: Double): BayesClassifierClassification = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BayesClassifierClassification]
   }
   
-  @scala.inline
-  implicit class BayesClassifierClassificationMutableBuilder[Self <: BayesClassifierClassification] (val x: Self) extends AnyVal {
+  extension [Self <: BayesClassifierClassification](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

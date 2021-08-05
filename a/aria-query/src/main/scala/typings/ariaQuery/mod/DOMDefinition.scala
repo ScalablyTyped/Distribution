@@ -12,25 +12,19 @@ trait DOMDefinition extends StObject {
 }
 object DOMDefinition {
   
-  @scala.inline
-  def apply(): DOMDefinition = {
+  inline def apply(): DOMDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DOMDefinition]
   }
   
-  @scala.inline
-  implicit class DOMDefinitionMutableBuilder[Self <: DOMDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: DOMDefinition](x: Self) {
     
-    @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
-    @scala.inline
-    def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
+    inline def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
+    inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
   }
 }

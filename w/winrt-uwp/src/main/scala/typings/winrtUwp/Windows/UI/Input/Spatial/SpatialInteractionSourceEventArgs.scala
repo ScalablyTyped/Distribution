@@ -10,16 +10,13 @@ trait SpatialInteractionSourceEventArgs extends StObject {
 }
 object SpatialInteractionSourceEventArgs {
   
-  @scala.inline
-  def apply(state: js.Any): SpatialInteractionSourceEventArgs = {
+  inline def apply(state: js.Any): SpatialInteractionSourceEventArgs = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialInteractionSourceEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialInteractionSourceEventArgsMutableBuilder[Self <: SpatialInteractionSourceEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialInteractionSourceEventArgs](x: Self) {
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

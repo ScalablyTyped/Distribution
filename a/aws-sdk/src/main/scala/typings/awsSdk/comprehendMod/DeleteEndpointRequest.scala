@@ -13,16 +13,13 @@ trait DeleteEndpointRequest extends StObject {
 }
 object DeleteEndpointRequest {
   
-  @scala.inline
-  def apply(EndpointArn: ComprehendEndpointArn): DeleteEndpointRequest = {
+  inline def apply(EndpointArn: ComprehendEndpointArn): DeleteEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEndpointRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEndpointRequestMutableBuilder[Self <: DeleteEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: ComprehendEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: ComprehendEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }
 }

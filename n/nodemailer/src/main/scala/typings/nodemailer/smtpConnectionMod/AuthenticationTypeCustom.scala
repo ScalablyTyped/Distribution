@@ -19,20 +19,16 @@ trait AuthenticationTypeCustom
 }
 object AuthenticationTypeCustom {
   
-  @scala.inline
-  def apply(method: String, pass: String, `type`: custom__ | Custom_ | CUSTOM, user: String): AuthenticationTypeCustom = {
+  inline def apply(method: String, pass: String, `type`: custom__ | Custom_ | CUSTOM, user: String): AuthenticationTypeCustom = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationTypeCustom]
   }
   
-  @scala.inline
-  implicit class AuthenticationTypeCustomMutableBuilder[Self <: AuthenticationTypeCustom] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationTypeCustom](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: custom__ | Custom_ | CUSTOM): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: custom__ | Custom_ | CUSTOM): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

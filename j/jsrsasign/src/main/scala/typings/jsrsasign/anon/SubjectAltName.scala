@@ -11,16 +11,13 @@ trait SubjectAltName extends StObject {
 }
 object SubjectAltName {
   
-  @scala.inline
-  def apply(subjectAltName: ArrayParam[Dns]): SubjectAltName = {
+  inline def apply(subjectAltName: ArrayParam[Dns]): SubjectAltName = {
     val __obj = js.Dynamic.literal(subjectAltName = subjectAltName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubjectAltName]
   }
   
-  @scala.inline
-  implicit class SubjectAltNameMutableBuilder[Self <: SubjectAltName] (val x: Self) extends AnyVal {
+  extension [Self <: SubjectAltName](x: Self) {
     
-    @scala.inline
-    def setSubjectAltName(value: ArrayParam[Dns]): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
+    inline def setSubjectAltName(value: ArrayParam[Dns]): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
   }
 }

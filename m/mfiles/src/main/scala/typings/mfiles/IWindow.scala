@@ -38,8 +38,7 @@ trait IWindow extends StObject {
 }
 object IWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Close: () => Unit,
     Events: IWindowEvents,
     Focus: () => Unit,
@@ -60,52 +59,36 @@ object IWindow {
     __obj.asInstanceOf[IWindow]
   }
   
-  @scala.inline
-  implicit class IWindowMutableBuilder[Self <: IWindow] (val x: Self) extends AnyVal {
+  extension [Self <: IWindow](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEvents(value: IWindowEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IWindowEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = StObject.set(x, "IsFocused", value.asInstanceOf[js.Any])
+    inline def setIsFocused(value: Boolean): Self = StObject.set(x, "IsFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximizable(value: Boolean): Self = StObject.set(x, "Maximizable", value.asInstanceOf[js.Any])
+    inline def setMaximizable(value: Boolean): Self = StObject.set(x, "Maximizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximize(value: () => Unit): Self = StObject.set(x, "Maximize", js.Any.fromFunction0(value))
+    inline def setMaximize(value: () => Unit): Self = StObject.set(x, "Maximize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinimizable(value: Boolean): Self = StObject.set(x, "Minimizable", value.asInstanceOf[js.Any])
+    inline def setMinimizable(value: Boolean): Self = StObject.set(x, "Minimizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimize(value: () => Unit): Self = StObject.set(x, "Minimize", js.Any.fromFunction0(value))
+    inline def setMinimize(value: () => Unit): Self = StObject.set(x, "Minimize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "Resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "Resizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestore(value: () => Unit): Self = StObject.set(x, "Restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => Unit): Self = StObject.set(x, "Restore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDefaultSize(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "SetDefaultSize", js.Any.fromFunction3(value))
+    inline def setSetDefaultSize(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "SetDefaultSize", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

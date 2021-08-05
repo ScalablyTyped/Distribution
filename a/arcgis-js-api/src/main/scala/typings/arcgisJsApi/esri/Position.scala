@@ -26,8 +26,7 @@ trait Position
 }
 object Position {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     coordinate: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object Position {
     __obj.asInstanceOf[Position]
   }
   
-  @scala.inline
-  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+  extension [Self <: Position](x: Self) {
     
-    @scala.inline
-    def setCoordinate(value: String): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: String): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

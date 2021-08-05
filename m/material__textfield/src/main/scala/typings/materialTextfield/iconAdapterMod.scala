@@ -47,8 +47,7 @@ object iconAdapterMod {
   }
   object MDCTextFieldIconAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deregisterInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
       getAttr: String => String | Null,
       notifyIconAction: () => Unit,
@@ -61,29 +60,21 @@ object iconAdapterMod {
       __obj.asInstanceOf[MDCTextFieldIconAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldIconAdapterMutableBuilder[Self <: MDCTextFieldIconAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldIconAdapter](x: Self) {
       
-      @scala.inline
-      def setDeregisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAttr(value: String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
+      inline def setGetAttr(value: String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyIconAction(value: () => Unit): Self = StObject.set(x, "notifyIconAction", js.Any.fromFunction0(value))
+      inline def setNotifyIconAction(value: () => Unit): Self = StObject.set(x, "notifyIconAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAttr(value: String => Unit): Self = StObject.set(x, "removeAttr", js.Any.fromFunction1(value))
+      inline def setRemoveAttr(value: String => Unit): Self = StObject.set(x, "removeAttr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAttr(value: (String, String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
+      inline def setSetAttr(value: (String, String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+      inline def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     }
   }
 }

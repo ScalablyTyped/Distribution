@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.AnimationPoint")
 @js.native
-class AnimationPoint protected ()
+/* private */ class AnimationPoint ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.AnimationPoint {
   
@@ -22,7 +22,7 @@ class AnimationPoint protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.AnimationPoint_typekey")
   var PowerPointDotAnimationPoint_typekey: typings.activexPowerpoint.PowerPoint.AnimationPoint = js.native
   

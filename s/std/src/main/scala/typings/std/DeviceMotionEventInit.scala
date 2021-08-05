@@ -18,37 +18,27 @@ trait DeviceMotionEventInit
 }
 object DeviceMotionEventInit {
   
-  @scala.inline
-  def apply(): DeviceMotionEventInit = {
+  inline def apply(): DeviceMotionEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceMotionEventInit]
   }
   
-  @scala.inline
-  implicit class DeviceMotionEventInitMutableBuilder[Self <: DeviceMotionEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceMotionEventInit](x: Self) {
     
-    @scala.inline
-    def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
+    inline def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccelerationIncludingGravity(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "accelerationIncludingGravity", value.asInstanceOf[js.Any])
+    inline def setAccelerationIncludingGravity(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "accelerationIncludingGravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccelerationIncludingGravityUndefined: Self = StObject.set(x, "accelerationIncludingGravity", js.undefined)
+    inline def setAccelerationIncludingGravityUndefined: Self = StObject.set(x, "accelerationIncludingGravity", js.undefined)
     
-    @scala.inline
-    def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
+    inline def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setRotationRate(value: DeviceMotionEventRotationRateInit): Self = StObject.set(x, "rotationRate", value.asInstanceOf[js.Any])
+    inline def setRotationRate(value: DeviceMotionEventRotationRateInit): Self = StObject.set(x, "rotationRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationRateUndefined: Self = StObject.set(x, "rotationRate", js.undefined)
+    inline def setRotationRateUndefined: Self = StObject.set(x, "rotationRate", js.undefined)
   }
 }

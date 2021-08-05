@@ -33,49 +33,35 @@ trait WorkerSettings extends StObject {
 }
 object WorkerSettings {
   
-  @scala.inline
-  def apply(): WorkerSettings = {
+  inline def apply(): WorkerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerSettings]
   }
   
-  @scala.inline
-  implicit class WorkerSettingsMutableBuilder[Self <: WorkerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerSettings](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setReportingEnabled(value: Boolean): Self = StObject.set(x, "reportingEnabled", value.asInstanceOf[js.Any])
+    inline def setReportingEnabled(value: Boolean): Self = StObject.set(x, "reportingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingEnabledUndefined: Self = StObject.set(x, "reportingEnabled", js.undefined)
+    inline def setReportingEnabledUndefined: Self = StObject.set(x, "reportingEnabled", js.undefined)
     
-    @scala.inline
-    def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+    inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
+    inline def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
     
-    @scala.inline
-    def setShuffleServicePath(value: String): Self = StObject.set(x, "shuffleServicePath", value.asInstanceOf[js.Any])
+    inline def setShuffleServicePath(value: String): Self = StObject.set(x, "shuffleServicePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShuffleServicePathUndefined: Self = StObject.set(x, "shuffleServicePath", js.undefined)
+    inline def setShuffleServicePathUndefined: Self = StObject.set(x, "shuffleServicePath", js.undefined)
     
-    @scala.inline
-    def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
+    inline def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
+    inline def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

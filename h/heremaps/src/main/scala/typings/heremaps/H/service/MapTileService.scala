@@ -250,8 +250,7 @@ object MapTileService {
   }
   object Info {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       formats: StringDictionary[js.Any],
       languages: StringDictionary[js.Any],
       maps: StringDictionary[js.Any],
@@ -263,26 +262,19 @@ object MapTileService {
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setFormats(value: StringDictionary[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: StringDictionary[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguages(value: StringDictionary[js.Any]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: StringDictionary[js.Any]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaps(value: StringDictionary[js.Any]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+      inline def setMaps(value: StringDictionary[js.Any]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutions(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+      inline def setResolutions(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemes(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+      inline def setSchemes(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiletypes(value: StringDictionary[js.Any]): Self = StObject.set(x, "tiletypes", value.asInstanceOf[js.Any])
+      inline def setTiletypes(value: StringDictionary[js.Any]): Self = StObject.set(x, "tiletypes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,38 +296,28 @@ object MapTileService {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSubDomain(value: String): Self = StObject.set(x, "subDomain", value.asInstanceOf[js.Any])
+      inline def setSubDomain(value: String): Self = StObject.set(x, "subDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubDomainUndefined: Self = StObject.set(x, "subDomain", js.undefined)
+      inline def setSubDomainUndefined: Self = StObject.set(x, "subDomain", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

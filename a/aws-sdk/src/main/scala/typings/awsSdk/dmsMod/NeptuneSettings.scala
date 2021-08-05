@@ -43,49 +43,35 @@ trait NeptuneSettings extends StObject {
 }
 object NeptuneSettings {
   
-  @scala.inline
-  def apply(S3BucketFolder: String, S3BucketName: String): NeptuneSettings = {
+  inline def apply(S3BucketFolder: String, S3BucketName: String): NeptuneSettings = {
     val __obj = js.Dynamic.literal(S3BucketFolder = S3BucketFolder.asInstanceOf[js.Any], S3BucketName = S3BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NeptuneSettings]
   }
   
-  @scala.inline
-  implicit class NeptuneSettingsMutableBuilder[Self <: NeptuneSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NeptuneSettings](x: Self) {
     
-    @scala.inline
-    def setErrorRetryDuration(value: IntegerOptional): Self = StObject.set(x, "ErrorRetryDuration", value.asInstanceOf[js.Any])
+    inline def setErrorRetryDuration(value: IntegerOptional): Self = StObject.set(x, "ErrorRetryDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorRetryDurationUndefined: Self = StObject.set(x, "ErrorRetryDuration", js.undefined)
+    inline def setErrorRetryDurationUndefined: Self = StObject.set(x, "ErrorRetryDuration", js.undefined)
     
-    @scala.inline
-    def setIamAuthEnabled(value: BooleanOptional): Self = StObject.set(x, "IamAuthEnabled", value.asInstanceOf[js.Any])
+    inline def setIamAuthEnabled(value: BooleanOptional): Self = StObject.set(x, "IamAuthEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamAuthEnabledUndefined: Self = StObject.set(x, "IamAuthEnabled", js.undefined)
+    inline def setIamAuthEnabledUndefined: Self = StObject.set(x, "IamAuthEnabled", js.undefined)
     
-    @scala.inline
-    def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeUndefined: Self = StObject.set(x, "MaxFileSize", js.undefined)
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "MaxFileSize", js.undefined)
     
-    @scala.inline
-    def setMaxRetryCount(value: IntegerOptional): Self = StObject.set(x, "MaxRetryCount", value.asInstanceOf[js.Any])
+    inline def setMaxRetryCount(value: IntegerOptional): Self = StObject.set(x, "MaxRetryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetryCountUndefined: Self = StObject.set(x, "MaxRetryCount", js.undefined)
+    inline def setMaxRetryCountUndefined: Self = StObject.set(x, "MaxRetryCount", js.undefined)
     
-    @scala.inline
-    def setS3BucketFolder(value: String): Self = StObject.set(x, "S3BucketFolder", value.asInstanceOf[js.Any])
+    inline def setS3BucketFolder(value: String): Self = StObject.set(x, "S3BucketFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
+    inline def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
   }
 }

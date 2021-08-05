@@ -70,8 +70,7 @@ object memoryMod {
   }
   object Memory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _store: js.Array[Double],
       extend: (Double, Double) => Unit,
       read: (Double, Double) => Buffer,
@@ -81,23 +80,17 @@ object memoryMod {
       __obj.asInstanceOf[Memory]
     }
     
-    @scala.inline
-    implicit class MemoryMutableBuilder[Self <: Memory] (val x: Self) extends AnyVal {
+    extension [Self <: Memory](x: Self) {
       
-      @scala.inline
-      def setExtend(value: (Double, Double) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+      inline def setExtend(value: (Double, Double) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRead(value: (Double, Double) => Buffer): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      inline def setRead(value: (Double, Double) => Buffer): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWrite(value: (Double, Double, Buffer) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
+      inline def setWrite(value: (Double, Double, Buffer) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_store(value: js.Array[Double]): Self = StObject.set(x, "_store", value.asInstanceOf[js.Any])
+      inline def set_store(value: js.Array[Double]): Self = StObject.set(x, "_store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_storeVarargs(value: Double*): Self = StObject.set(x, "_store", js.Array(value :_*))
+      inline def set_storeVarargs(value: Double*): Self = StObject.set(x, "_store", js.Array(value :_*))
     }
   }
 }

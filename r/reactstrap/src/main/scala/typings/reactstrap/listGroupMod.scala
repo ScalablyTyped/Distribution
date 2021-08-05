@@ -34,38 +34,28 @@ object listGroupMod {
   }
   object ListGroupProps {
     
-    @scala.inline
-    def apply(): ListGroupProps = {
+    inline def apply(): ListGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListGroupProps]
     }
     
-    @scala.inline
-    implicit class ListGroupPropsMutableBuilder[Self <: ListGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListGroupProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setFlush(value: Boolean): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+      inline def setFlush(value: Boolean): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+      inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: Boolean | String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean | String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

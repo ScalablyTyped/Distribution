@@ -13,16 +13,13 @@ trait PlayerEvent extends StObject {
 }
 object PlayerEvent {
   
-  @scala.inline
-  def apply(target: Player): PlayerEvent = {
+  inline def apply(target: Player): PlayerEvent = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerEvent]
   }
   
-  @scala.inline
-  implicit class PlayerEventMutableBuilder[Self <: PlayerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerEvent](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Player): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Player): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object homeMod extends Shortcut {
   }
   object HomeProps {
     
-    @scala.inline
-    def apply(): HomeProps = {
+    inline def apply(): HomeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HomeProps]
     }
     
-    @scala.inline
-    implicit class HomePropsMutableBuilder[Self <: HomeProps] (val x: Self) extends AnyVal {
+    extension [Self <: HomeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

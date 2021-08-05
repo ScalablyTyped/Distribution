@@ -31,16 +31,13 @@ trait UnsupportedNameClashException
 }
 object UnsupportedNameClashException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, NameClash: Double): UnsupportedNameClashException = {
+  inline def apply(Context: XInterface, Message: String, NameClash: Double): UnsupportedNameClashException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], NameClash = NameClash.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedNameClashException]
   }
   
-  @scala.inline
-  implicit class UnsupportedNameClashExceptionMutableBuilder[Self <: UnsupportedNameClashException] (val x: Self) extends AnyVal {
+  extension [Self <: UnsupportedNameClashException](x: Self) {
     
-    @scala.inline
-    def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
+    inline def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
   }
 }

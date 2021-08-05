@@ -17,16 +17,13 @@ trait QueriesFunctions extends StObject {
 }
 object QueriesFunctions {
   
-  @scala.inline
-  def apply(search: (js.Any, String) => Boolean): QueriesFunctions = {
+  inline def apply(search: (js.Any, String) => Boolean): QueriesFunctions = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction2(search))
     __obj.asInstanceOf[QueriesFunctions]
   }
   
-  @scala.inline
-  implicit class QueriesFunctionsMutableBuilder[Self <: QueriesFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: QueriesFunctions](x: Self) {
     
-    @scala.inline
-    def setSearch(value: (js.Any, String) => Boolean): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+    inline def setSearch(value: (js.Any, String) => Boolean): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
   }
 }

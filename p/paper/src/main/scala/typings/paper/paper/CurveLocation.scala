@@ -142,8 +142,7 @@ trait CurveLocation extends StObject {
 }
 object CurveLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     curvature: Double,
     curve: Curve,
     curveOffset: Double,
@@ -167,58 +166,40 @@ object CurveLocation {
     __obj.asInstanceOf[CurveLocation]
   }
   
-  @scala.inline
-  implicit class CurveLocationMutableBuilder[Self <: CurveLocation] (val x: Self) extends AnyVal {
+  extension [Self <: CurveLocation](x: Self) {
     
-    @scala.inline
-    def setCurvature(value: Double): Self = StObject.set(x, "curvature", value.asInstanceOf[js.Any])
+    inline def setCurvature(value: Double): Self = StObject.set(x, "curvature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurve(value: Curve): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: Curve): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveOffset(value: Double): Self = StObject.set(x, "curveOffset", value.asInstanceOf[js.Any])
+    inline def setCurveOffset(value: Double): Self = StObject.set(x, "curveOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquals_(value: CurveLocation => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: CurveLocation => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasOverlap(value: () => Boolean): Self = StObject.set(x, "hasOverlap", js.Any.fromFunction0(value))
+    inline def setHasOverlap(value: () => Boolean): Self = StObject.set(x, "hasOverlap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersection(value: CurveLocation): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
+    inline def setIntersection(value: CurveLocation): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCrossing(value: () => Boolean): Self = StObject.set(x, "isCrossing", js.Any.fromFunction0(value))
+    inline def setIsCrossing(value: () => Boolean): Self = StObject.set(x, "isCrossing", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTouching(value: () => Boolean): Self = StObject.set(x, "isTouching", js.Any.fromFunction0(value))
+    inline def setIsTouching(value: () => Boolean): Self = StObject.set(x, "isTouching", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNormal(value: Point): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Point): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegment(value: Segment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: Segment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangent(value: Point): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
+    inline def setTangent(value: Point): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

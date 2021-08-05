@@ -8,11 +8,9 @@ object hapiCrumbStrings {
   
   @js.native
   sealed trait payload extends StObject
-  @scala.inline
-  def payload: payload = "payload".asInstanceOf[payload]
+  inline def payload: payload = "payload".asInstanceOf[payload]
   
   @js.native
   sealed trait query extends StObject
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
+  inline def query: query = "query".asInstanceOf[query]
 }

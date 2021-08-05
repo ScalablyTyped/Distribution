@@ -13,16 +13,13 @@ trait DeleteFirewallPolicyResponse extends StObject {
 }
 object DeleteFirewallPolicyResponse {
   
-  @scala.inline
-  def apply(FirewallPolicyResponse: FirewallPolicyResponse): DeleteFirewallPolicyResponse = {
+  inline def apply(FirewallPolicyResponse: FirewallPolicyResponse): DeleteFirewallPolicyResponse = {
     val __obj = js.Dynamic.literal(FirewallPolicyResponse = FirewallPolicyResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFirewallPolicyResponse]
   }
   
-  @scala.inline
-  implicit class DeleteFirewallPolicyResponseMutableBuilder[Self <: DeleteFirewallPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFirewallPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = StObject.set(x, "FirewallPolicyResponse", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = StObject.set(x, "FirewallPolicyResponse", value.asInstanceOf[js.Any])
   }
 }

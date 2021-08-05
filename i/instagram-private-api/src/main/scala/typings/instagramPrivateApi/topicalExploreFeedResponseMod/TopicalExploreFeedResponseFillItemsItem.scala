@@ -10,16 +10,13 @@ trait TopicalExploreFeedResponseFillItemsItem extends StObject {
 }
 object TopicalExploreFeedResponseFillItemsItem {
   
-  @scala.inline
-  def apply(media: TopicalExploreFeedResponseMedia): TopicalExploreFeedResponseFillItemsItem = {
+  inline def apply(media: TopicalExploreFeedResponseMedia): TopicalExploreFeedResponseFillItemsItem = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicalExploreFeedResponseFillItemsItem]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseFillItemsItemMutableBuilder[Self <: TopicalExploreFeedResponseFillItemsItem] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseFillItemsItem](x: Self) {
     
-    @scala.inline
-    def setMedia(value: TopicalExploreFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: TopicalExploreFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

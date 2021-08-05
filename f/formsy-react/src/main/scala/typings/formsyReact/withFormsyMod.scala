@@ -34,8 +34,7 @@ object withFormsyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T, V](WrappedComponent: ComponentType[T & PassDownProps[V]]): ComponentType[
+  inline def default[T, V](WrappedComponent: ComponentType[T & PassDownProps[V]]): ComponentType[
     Omit[
       T & WrapperProps[V], 
       /* keyof formsy-react.formsy-react/dist/withFormsy.InjectedProps<V> */ errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
@@ -56,32 +55,27 @@ object withFormsyMod {
     @JSImport("formsy-react/dist/withFormsy", "propTypes.innerRef")
     @js.native
     def innerRef: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-    @scala.inline
-    def innerRef_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerRef")(x.asInstanceOf[js.Any])
+    inline def innerRef_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerRef")(x.asInstanceOf[js.Any])
     
     @JSImport("formsy-react/dist/withFormsy", "propTypes.name")
     @js.native
     def name: Validator[String] = js.native
-    @scala.inline
-    def name_=(x: Validator[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: Validator[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
     
     @JSImport("formsy-react/dist/withFormsy", "propTypes.required")
     @js.native
     def required: Requireable[String | Boolean | js.Object] = js.native
-    @scala.inline
-    def required_=(x: Requireable[String | Boolean | js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("required")(x.asInstanceOf[js.Any])
+    inline def required_=(x: Requireable[String | Boolean | js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("required")(x.asInstanceOf[js.Any])
     
     @JSImport("formsy-react/dist/withFormsy", "propTypes.validations")
     @js.native
     def validations: Requireable[String | js.Object] = js.native
-    @scala.inline
-    def validations_=(x: Requireable[String | js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validations")(x.asInstanceOf[js.Any])
+    inline def validations_=(x: Requireable[String | js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validations")(x.asInstanceOf[js.Any])
     
     @JSImport("formsy-react/dist/withFormsy", "propTypes.value")
     @js.native
     def value: Requireable[js.Any] = js.native
-    @scala.inline
-    def value_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    inline def value_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -164,53 +158,38 @@ object withFormsyMod {
   }
   object WrapperProps {
     
-    @scala.inline
-    def apply[V](name: String): WrapperProps[V] = {
+    inline def apply[V](name: String): WrapperProps[V] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperProps[V]]
     }
     
-    @scala.inline
-    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps[?], V] (val x: Self & WrapperProps[V]) extends AnyVal {
+    extension [Self <: WrapperProps[?], V](x: Self & WrapperProps[V]) {
       
-      @scala.inline
-      def setInnerRef(value: /* ref */ Ref[js.Any] => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRef(value: /* ref */ Ref[js.Any] => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: RequiredValidation[V]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: RequiredValidation[V]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setValidationError(value: ValidationError): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
+      inline def setValidationError(value: ValidationError): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
+      inline def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
       
-      @scala.inline
-      def setValidationErrors(value: StringDictionary[ValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+      inline def setValidationErrors(value: StringDictionary[ValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+      inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
       
-      @scala.inline
-      def setValidations(value: Validations[V]): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
+      inline def setValidations(value: Validations[V]): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
+      inline def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -234,8 +213,7 @@ object withFormsyMod {
   }
   object WrapperState {
     
-    @scala.inline
-    def apply[V](
+    inline def apply[V](
       formSubmitted: Boolean,
       isPristine: Boolean,
       isRequired: Boolean,
@@ -248,32 +226,23 @@ object withFormsyMod {
       __obj.asInstanceOf[WrapperState[V]]
     }
     
-    @scala.inline
-    implicit class WrapperStateMutableBuilder[Self <: WrapperState[?], V] (val x: Self & WrapperState[V]) extends AnyVal {
+    extension [Self <: WrapperState[?], V](x: Self & WrapperState[V]) {
       
-      @scala.inline
-      def setFormSubmitted(value: Boolean): Self = StObject.set(x, "formSubmitted", value.asInstanceOf[js.Any])
+      inline def setFormSubmitted(value: Boolean): Self = StObject.set(x, "formSubmitted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPristine(value: Boolean): Self = StObject.set(x, "isPristine", value.asInstanceOf[js.Any])
+      inline def setIsPristine(value: Boolean): Self = StObject.set(x, "isPristine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+      inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPristineValue(value: V): Self = StObject.set(x, "pristineValue", value.asInstanceOf[js.Any])
+      inline def setPristineValue(value: V): Self = StObject.set(x, "pristineValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationError(value: js.Array[ValidationError]): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
+      inline def setValidationError(value: js.Array[ValidationError]): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationErrorVarargs(value: ValidationError*): Self = StObject.set(x, "validationError", js.Array(value :_*))
+      inline def setValidationErrorVarargs(value: ValidationError*): Self = StObject.set(x, "validationError", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

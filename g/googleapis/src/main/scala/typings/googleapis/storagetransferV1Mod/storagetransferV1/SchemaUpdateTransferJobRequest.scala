@@ -35,31 +35,23 @@ trait SchemaUpdateTransferJobRequest extends StObject {
 }
 object SchemaUpdateTransferJobRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateTransferJobRequest = {
+  inline def apply(): SchemaUpdateTransferJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateTransferJobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateTransferJobRequestMutableBuilder[Self <: SchemaUpdateTransferJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateTransferJobRequest](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setTransferJob(value: SchemaTransferJob): Self = StObject.set(x, "transferJob", value.asInstanceOf[js.Any])
+    inline def setTransferJob(value: SchemaTransferJob): Self = StObject.set(x, "transferJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferJobUndefined: Self = StObject.set(x, "transferJob", js.undefined)
+    inline def setTransferJobUndefined: Self = StObject.set(x, "transferJob", js.undefined)
     
-    @scala.inline
-    def setUpdateTransferJobFieldMask(value: String): Self = StObject.set(x, "updateTransferJobFieldMask", value.asInstanceOf[js.Any])
+    inline def setUpdateTransferJobFieldMask(value: String): Self = StObject.set(x, "updateTransferJobFieldMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTransferJobFieldMaskUndefined: Self = StObject.set(x, "updateTransferJobFieldMask", js.undefined)
+    inline def setUpdateTransferJobFieldMaskUndefined: Self = StObject.set(x, "updateTransferJobFieldMask", js.undefined)
   }
 }

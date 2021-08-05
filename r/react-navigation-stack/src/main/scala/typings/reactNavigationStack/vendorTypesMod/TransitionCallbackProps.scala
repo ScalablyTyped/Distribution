@@ -10,16 +10,13 @@ trait TransitionCallbackProps extends StObject {
 }
 object TransitionCallbackProps {
   
-  @scala.inline
-  def apply(closing: Boolean): TransitionCallbackProps = {
+  inline def apply(closing: Boolean): TransitionCallbackProps = {
     val __obj = js.Dynamic.literal(closing = closing.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionCallbackProps]
   }
   
-  @scala.inline
-  implicit class TransitionCallbackPropsMutableBuilder[Self <: TransitionCallbackProps] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionCallbackProps](x: Self) {
     
-    @scala.inline
-    def setClosing(value: Boolean): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
+    inline def setClosing(value: Boolean): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait SimpleEmailPart extends StObject {
 }
 object SimpleEmailPart {
   
-  @scala.inline
-  def apply(): SimpleEmailPart = {
+  inline def apply(): SimpleEmailPart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleEmailPart]
   }
   
-  @scala.inline
-  implicit class SimpleEmailPartMutableBuilder[Self <: SimpleEmailPart] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleEmailPart](x: Self) {
     
-    @scala.inline
-    def setCharset(value: string): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: string): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharsetUndefined: Self = StObject.set(x, "Charset", js.undefined)
+    inline def setCharsetUndefined: Self = StObject.set(x, "Charset", js.undefined)
     
-    @scala.inline
-    def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
   }
 }

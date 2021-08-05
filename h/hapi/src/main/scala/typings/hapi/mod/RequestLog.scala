@@ -18,8 +18,7 @@ trait RequestLog extends StObject {
 }
 object RequestLog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: String,
     data: String | js.Object,
     request: String,
@@ -30,25 +29,18 @@ object RequestLog {
     __obj.asInstanceOf[RequestLog]
   }
   
-  @scala.inline
-  implicit class RequestLogMutableBuilder[Self <: RequestLog] (val x: Self) extends AnyVal {
+  extension [Self <: RequestLog](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: String | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

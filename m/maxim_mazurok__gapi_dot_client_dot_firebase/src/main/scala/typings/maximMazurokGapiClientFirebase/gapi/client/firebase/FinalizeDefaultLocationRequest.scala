@@ -11,19 +11,15 @@ trait FinalizeDefaultLocationRequest extends StObject {
 }
 object FinalizeDefaultLocationRequest {
   
-  @scala.inline
-  def apply(): FinalizeDefaultLocationRequest = {
+  inline def apply(): FinalizeDefaultLocationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinalizeDefaultLocationRequest]
   }
   
-  @scala.inline
-  implicit class FinalizeDefaultLocationRequestMutableBuilder[Self <: FinalizeDefaultLocationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FinalizeDefaultLocationRequest](x: Self) {
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
   }
 }

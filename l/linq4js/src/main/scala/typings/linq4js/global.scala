@@ -69,55 +69,39 @@ object global {
       @JSGlobal("Linq4JS.Helper.Commands")
       @js.native
       def Commands: Array[typings.linq4js.Linq4JS.EvaluateCommand] = js.native
-      @scala.inline
-      def Commands_=(x: Array[typings.linq4js.Linq4JS.EvaluateCommand]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Commands")(x.asInstanceOf[js.Any])
+      inline def Commands_=(x: Array[typings.linq4js.Linq4JS.EvaluateCommand]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Commands")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def ConvertFunction[T](testFunction: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any]).asInstanceOf[T]
-      @scala.inline
-      def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any])).asInstanceOf[T]
-      @scala.inline
-      def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
-      @scala.inline
-      def ConvertFunction[T](testFunction: T, noAutoReturn: Unit, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any]).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: T, noAutoReturn: Unit, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
       /* static member */
-      @scala.inline
-      def ConvertFunction[T](testFunction: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any]).asInstanceOf[T]
-      @scala.inline
-      def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any])).asInstanceOf[T]
-      @scala.inline
-      def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
-      @scala.inline
-      def ConvertFunction[T](testFunction: String, noAutoReturn: Unit, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any]).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def ConvertFunction[T](testFunction: String, noAutoReturn: Unit, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
       
       /* static member */
       @JSGlobal("Linq4JS.Helper.ConvertStringFunction")
       @js.native
       def ConvertStringFunction: js.Any = js.native
-      @scala.inline
-      def ConvertStringFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertStringFunction")(x.asInstanceOf[js.Any])
+      inline def ConvertStringFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertStringFunction")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @scala.inline
-      def CreateArrayData(array: Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      @scala.inline
-      def CreateArrayData(array: Array[js.Any], value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def CreateArrayData(array: Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def CreateArrayData(array: Array[js.Any], value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def MatchCommand(cmd: String): typings.linq4js.Linq4JS.EvaluateCommandResult = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchCommand")(cmd.asInstanceOf[js.Any]).asInstanceOf[typings.linq4js.Linq4JS.EvaluateCommandResult]
+      inline def MatchCommand(cmd: String): typings.linq4js.Linq4JS.EvaluateCommandResult = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchCommand")(cmd.asInstanceOf[js.Any]).asInstanceOf[typings.linq4js.Linq4JS.EvaluateCommandResult]
       
       /* static member */
-      @scala.inline
-      def NonEnumerable(name: String, value: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NonEnumerable")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def NonEnumerable(name: String, value: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NonEnumerable")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def OrderCompareFunction[T](valueSelector: js.Function1[/* item */ T, js.Any], a: T, b: T, invert: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("OrderCompareFunction")(valueSelector.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def OrderCompareFunction[T](valueSelector: js.Function1[/* item */ T, js.Any], a: T, b: T, invert: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("OrderCompareFunction")(valueSelector.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /* static member */
-      @scala.inline
-      def SplitCommand(command: String): Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SplitCommand")(command.asInstanceOf[js.Any]).asInstanceOf[Array[String]]
+      inline def SplitCommand(command: String): Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SplitCommand")(command.asInstanceOf[js.Any]).asInstanceOf[Array[String]]
     }
     
     @JSGlobal("Linq4JS.OrderDirection")

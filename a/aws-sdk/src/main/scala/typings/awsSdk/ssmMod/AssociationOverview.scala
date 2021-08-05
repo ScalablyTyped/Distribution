@@ -23,31 +23,23 @@ trait AssociationOverview extends StObject {
 }
 object AssociationOverview {
   
-  @scala.inline
-  def apply(): AssociationOverview = {
+  inline def apply(): AssociationOverview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationOverview]
   }
   
-  @scala.inline
-  implicit class AssociationOverviewMutableBuilder[Self <: AssociationOverview] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationOverview](x: Self) {
     
-    @scala.inline
-    def setAssociationStatusAggregatedCount(value: AssociationStatusAggregatedCount): Self = StObject.set(x, "AssociationStatusAggregatedCount", value.asInstanceOf[js.Any])
+    inline def setAssociationStatusAggregatedCount(value: AssociationStatusAggregatedCount): Self = StObject.set(x, "AssociationStatusAggregatedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationStatusAggregatedCountUndefined: Self = StObject.set(x, "AssociationStatusAggregatedCount", js.undefined)
+    inline def setAssociationStatusAggregatedCountUndefined: Self = StObject.set(x, "AssociationStatusAggregatedCount", js.undefined)
     
-    @scala.inline
-    def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
+    inline def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
+    inline def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -93,115 +93,79 @@ trait BurnInDestinationSettings extends StObject {
 }
 object BurnInDestinationSettings {
   
-  @scala.inline
-  def apply(): BurnInDestinationSettings = {
+  inline def apply(): BurnInDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BurnInDestinationSettings]
   }
   
-  @scala.inline
-  implicit class BurnInDestinationSettingsMutableBuilder[Self <: BurnInDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BurnInDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: BurnInAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: BurnInAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "Alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "Alignment", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: BurnInBackgroundColor): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BurnInBackgroundColor): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "BackgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "BackgroundColor", js.undefined)
     
-    @scala.inline
-    def setBackgroundOpacity(value: integerMin0Max255): Self = StObject.set(x, "BackgroundOpacity", value.asInstanceOf[js.Any])
+    inline def setBackgroundOpacity(value: integerMin0Max255): Self = StObject.set(x, "BackgroundOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundOpacityUndefined: Self = StObject.set(x, "BackgroundOpacity", js.undefined)
+    inline def setBackgroundOpacityUndefined: Self = StObject.set(x, "BackgroundOpacity", js.undefined)
     
-    @scala.inline
-    def setFont(value: InputLocation): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: InputLocation): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColor(value: BurnInFontColor): Self = StObject.set(x, "FontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: BurnInFontColor): Self = StObject.set(x, "FontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColorUndefined: Self = StObject.set(x, "FontColor", js.undefined)
+    inline def setFontColorUndefined: Self = StObject.set(x, "FontColor", js.undefined)
     
-    @scala.inline
-    def setFontOpacity(value: integerMin0Max255): Self = StObject.set(x, "FontOpacity", value.asInstanceOf[js.Any])
+    inline def setFontOpacity(value: integerMin0Max255): Self = StObject.set(x, "FontOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontOpacityUndefined: Self = StObject.set(x, "FontOpacity", js.undefined)
+    inline def setFontOpacityUndefined: Self = StObject.set(x, "FontOpacity", js.undefined)
     
-    @scala.inline
-    def setFontResolution(value: integerMin96Max600): Self = StObject.set(x, "FontResolution", value.asInstanceOf[js.Any])
+    inline def setFontResolution(value: integerMin96Max600): Self = StObject.set(x, "FontResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontResolutionUndefined: Self = StObject.set(x, "FontResolution", js.undefined)
+    inline def setFontResolutionUndefined: Self = StObject.set(x, "FontResolution", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: string): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: string): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "FontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "FontSize", js.undefined)
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "Font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "Font", js.undefined)
     
-    @scala.inline
-    def setOutlineColor(value: BurnInOutlineColor): Self = StObject.set(x, "OutlineColor", value.asInstanceOf[js.Any])
+    inline def setOutlineColor(value: BurnInOutlineColor): Self = StObject.set(x, "OutlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineColorUndefined: Self = StObject.set(x, "OutlineColor", js.undefined)
+    inline def setOutlineColorUndefined: Self = StObject.set(x, "OutlineColor", js.undefined)
     
-    @scala.inline
-    def setOutlineSize(value: integerMin0Max10): Self = StObject.set(x, "OutlineSize", value.asInstanceOf[js.Any])
+    inline def setOutlineSize(value: integerMin0Max10): Self = StObject.set(x, "OutlineSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineSizeUndefined: Self = StObject.set(x, "OutlineSize", js.undefined)
+    inline def setOutlineSizeUndefined: Self = StObject.set(x, "OutlineSize", js.undefined)
     
-    @scala.inline
-    def setShadowColor(value: BurnInShadowColor): Self = StObject.set(x, "ShadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: BurnInShadowColor): Self = StObject.set(x, "ShadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorUndefined: Self = StObject.set(x, "ShadowColor", js.undefined)
+    inline def setShadowColorUndefined: Self = StObject.set(x, "ShadowColor", js.undefined)
     
-    @scala.inline
-    def setShadowOpacity(value: integerMin0Max255): Self = StObject.set(x, "ShadowOpacity", value.asInstanceOf[js.Any])
+    inline def setShadowOpacity(value: integerMin0Max255): Self = StObject.set(x, "ShadowOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOpacityUndefined: Self = StObject.set(x, "ShadowOpacity", js.undefined)
+    inline def setShadowOpacityUndefined: Self = StObject.set(x, "ShadowOpacity", js.undefined)
     
-    @scala.inline
-    def setShadowXOffset(value: integer): Self = StObject.set(x, "ShadowXOffset", value.asInstanceOf[js.Any])
+    inline def setShadowXOffset(value: integer): Self = StObject.set(x, "ShadowXOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowXOffsetUndefined: Self = StObject.set(x, "ShadowXOffset", js.undefined)
+    inline def setShadowXOffsetUndefined: Self = StObject.set(x, "ShadowXOffset", js.undefined)
     
-    @scala.inline
-    def setShadowYOffset(value: integer): Self = StObject.set(x, "ShadowYOffset", value.asInstanceOf[js.Any])
+    inline def setShadowYOffset(value: integer): Self = StObject.set(x, "ShadowYOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowYOffsetUndefined: Self = StObject.set(x, "ShadowYOffset", js.undefined)
+    inline def setShadowYOffsetUndefined: Self = StObject.set(x, "ShadowYOffset", js.undefined)
     
-    @scala.inline
-    def setTeletextGridControl(value: BurnInTeletextGridControl): Self = StObject.set(x, "TeletextGridControl", value.asInstanceOf[js.Any])
+    inline def setTeletextGridControl(value: BurnInTeletextGridControl): Self = StObject.set(x, "TeletextGridControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeletextGridControlUndefined: Self = StObject.set(x, "TeletextGridControl", js.undefined)
+    inline def setTeletextGridControlUndefined: Self = StObject.set(x, "TeletextGridControl", js.undefined)
     
-    @scala.inline
-    def setXPosition(value: integerMin0): Self = StObject.set(x, "XPosition", value.asInstanceOf[js.Any])
+    inline def setXPosition(value: integerMin0): Self = StObject.set(x, "XPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXPositionUndefined: Self = StObject.set(x, "XPosition", js.undefined)
+    inline def setXPositionUndefined: Self = StObject.set(x, "XPosition", js.undefined)
     
-    @scala.inline
-    def setYPosition(value: integerMin0): Self = StObject.set(x, "YPosition", value.asInstanceOf[js.Any])
+    inline def setYPosition(value: integerMin0): Self = StObject.set(x, "YPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYPositionUndefined: Self = StObject.set(x, "YPosition", js.undefined)
+    inline def setYPositionUndefined: Self = StObject.set(x, "YPosition", js.undefined)
   }
 }

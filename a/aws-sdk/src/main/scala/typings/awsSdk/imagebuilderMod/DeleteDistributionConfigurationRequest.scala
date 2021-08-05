@@ -13,16 +13,13 @@ trait DeleteDistributionConfigurationRequest extends StObject {
 }
 object DeleteDistributionConfigurationRequest {
   
-  @scala.inline
-  def apply(distributionConfigurationArn: DistributionConfigurationArn): DeleteDistributionConfigurationRequest = {
+  inline def apply(distributionConfigurationArn: DistributionConfigurationArn): DeleteDistributionConfigurationRequest = {
     val __obj = js.Dynamic.literal(distributionConfigurationArn = distributionConfigurationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDistributionConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDistributionConfigurationRequestMutableBuilder[Self <: DeleteDistributionConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDistributionConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionConfigurationArn(value: DistributionConfigurationArn): Self = StObject.set(x, "distributionConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setDistributionConfigurationArn(value: DistributionConfigurationArn): Self = StObject.set(x, "distributionConfigurationArn", value.asInstanceOf[js.Any])
   }
 }

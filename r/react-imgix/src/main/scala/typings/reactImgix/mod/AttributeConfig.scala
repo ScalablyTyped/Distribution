@@ -14,31 +14,23 @@ trait AttributeConfig extends StObject {
 }
 object AttributeConfig {
   
-  @scala.inline
-  def apply(): AttributeConfig = {
+  inline def apply(): AttributeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeConfig]
   }
   
-  @scala.inline
-  implicit class AttributeConfigMutableBuilder[Self <: AttributeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeConfig](x: Self) {
     
-    @scala.inline
-    def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+    inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+    inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
+    inline def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
   }
 }

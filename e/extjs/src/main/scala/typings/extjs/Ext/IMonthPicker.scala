@@ -47,67 +47,47 @@ trait IMonthPicker
 }
 object IMonthPicker {
   
-  @scala.inline
-  def apply(): IMonthPicker = {
+  inline def apply(): IMonthPicker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMonthPicker]
   }
   
-  @scala.inline
-  implicit class IMonthPickerMutableBuilder[Self <: IMonthPicker] (val x: Self) extends AnyVal {
+  extension [Self <: IMonthPicker](x: Self) {
     
-    @scala.inline
-    def setAdjustYear(value: /* offset */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "adjustYear", js.Any.fromFunction1(value))
+    inline def setAdjustYear(value: /* offset */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "adjustYear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdjustYearUndefined: Self = StObject.set(x, "adjustYear", js.undefined)
+    inline def setAdjustYearUndefined: Self = StObject.set(x, "adjustYear", js.undefined)
     
-    @scala.inline
-    def setCancelText(value: java.lang.String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: java.lang.String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+    inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
-    @scala.inline
-    def setGetValue(value: () => Array): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Array): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setHasSelection(value: () => Boolean): Self = StObject.set(x, "hasSelection", js.Any.fromFunction0(value))
+    inline def setHasSelection(value: () => Boolean): Self = StObject.set(x, "hasSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasSelectionUndefined: Self = StObject.set(x, "hasSelection", js.undefined)
+    inline def setHasSelectionUndefined: Self = StObject.set(x, "hasSelection", js.undefined)
     
-    @scala.inline
-    def setOkText(value: java.lang.String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: java.lang.String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
+    inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
-    @scala.inline
-    def setSelectedCls(value: java.lang.String): Self = StObject.set(x, "selectedCls", value.asInstanceOf[js.Any])
+    inline def setSelectedCls(value: java.lang.String): Self = StObject.set(x, "selectedCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedClsUndefined: Self = StObject.set(x, "selectedCls", js.undefined)
+    inline def setSelectedClsUndefined: Self = StObject.set(x, "selectedCls", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => IMonth): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => IMonth): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setShowButtons(value: Boolean): Self = StObject.set(x, "showButtons", value.asInstanceOf[js.Any])
+    inline def setShowButtons(value: Boolean): Self = StObject.set(x, "showButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowButtonsUndefined: Self = StObject.set(x, "showButtons", js.undefined)
+    inline def setShowButtonsUndefined: Self = StObject.set(x, "showButtons", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

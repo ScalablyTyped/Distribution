@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PersistentBrowserSessionMode extends StObject
 object PersistentBrowserSessionMode {
   
-  @scala.inline
-  def always: typings.microsoftGraph.microsoftGraphStrings.always = "always".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.always]
+  inline def always: typings.microsoftGraph.microsoftGraphStrings.always = "always".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.always]
   
-  @scala.inline
-  def never: typings.microsoftGraph.microsoftGraphStrings.never = "never".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.never]
+  inline def never: typings.microsoftGraph.microsoftGraphStrings.never = "never".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.never]
 }

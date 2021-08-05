@@ -25,61 +25,43 @@ trait PartialClassNameMapTableCBody extends StObject {
 }
 object PartialClassNameMapTableCBody {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTableCBody = {
+  inline def apply(): PartialClassNameMapTableCBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTableCBody]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTableCBodyMutableBuilder[Self <: PartialClassNameMapTableCBody] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTableCBody](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+    inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
     
-    @scala.inline
-    def setNumeric(value: String): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    inline def setNumeric(value: String): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+    inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
-    @scala.inline
-    def setPaddingCheckbox(value: String): Self = StObject.set(x, "paddingCheckbox", value.asInstanceOf[js.Any])
+    inline def setPaddingCheckbox(value: String): Self = StObject.set(x, "paddingCheckbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingCheckboxUndefined: Self = StObject.set(x, "paddingCheckbox", js.undefined)
+    inline def setPaddingCheckboxUndefined: Self = StObject.set(x, "paddingCheckbox", js.undefined)
     
-    @scala.inline
-    def setPaddingDense(value: String): Self = StObject.set(x, "paddingDense", value.asInstanceOf[js.Any])
+    inline def setPaddingDense(value: String): Self = StObject.set(x, "paddingDense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingDenseUndefined: Self = StObject.set(x, "paddingDense", js.undefined)
+    inline def setPaddingDenseUndefined: Self = StObject.set(x, "paddingDense", js.undefined)
     
-    @scala.inline
-    def setPaddingNone(value: String): Self = StObject.set(x, "paddingNone", value.asInstanceOf[js.Any])
+    inline def setPaddingNone(value: String): Self = StObject.set(x, "paddingNone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingNoneUndefined: Self = StObject.set(x, "paddingNone", js.undefined)
+    inline def setPaddingNoneUndefined: Self = StObject.set(x, "paddingNone", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

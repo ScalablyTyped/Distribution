@@ -16,19 +16,15 @@ trait SchemaImportProductSetsRequest extends StObject {
 }
 object SchemaImportProductSetsRequest {
   
-  @scala.inline
-  def apply(): SchemaImportProductSetsRequest = {
+  inline def apply(): SchemaImportProductSetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportProductSetsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaImportProductSetsRequestMutableBuilder[Self <: SchemaImportProductSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportProductSetsRequest](x: Self) {
     
-    @scala.inline
-    def setInputConfig(value: SchemaImportProductSetsInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: SchemaImportProductSetsInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object parseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(selector: String): TSQuerySelectorNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[TSQuerySelectorNode]
+  inline def parse(selector: String): TSQuerySelectorNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[TSQuerySelectorNode]
 }

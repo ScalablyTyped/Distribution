@@ -15,6 +15,6 @@ object regionMod {
   trait RegionAnnotation
     extends typings.antvComponent.groupComponentMod.default[RegionAnnotationCfg] {
     
-    var renderRegion: js.Any = js.native
+    /* private */ var renderRegion: js.Any = js.native
   }
 }

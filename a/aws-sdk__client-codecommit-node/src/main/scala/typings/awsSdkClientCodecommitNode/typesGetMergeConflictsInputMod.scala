@@ -57,8 +57,7 @@ object typesGetMergeConflictsInputMod {
   }
   object GetMergeConflictsInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destinationCommitSpecifier: String,
       mergeOption: FAST_FORWARD_MERGE | String,
       repositoryName: String,
@@ -68,40 +67,29 @@ object typesGetMergeConflictsInputMod {
       __obj.asInstanceOf[GetMergeConflictsInput]
     }
     
-    @scala.inline
-    implicit class GetMergeConflictsInputMutableBuilder[Self <: GetMergeConflictsInput] (val x: Self) extends AnyVal {
+    extension [Self <: GetMergeConflictsInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setDestinationCommitSpecifier(value: String): Self = StObject.set(x, "destinationCommitSpecifier", value.asInstanceOf[js.Any])
+      inline def setDestinationCommitSpecifier(value: String): Self = StObject.set(x, "destinationCommitSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeOption(value: FAST_FORWARD_MERGE | String): Self = StObject.set(x, "mergeOption", value.asInstanceOf[js.Any])
+      inline def setMergeOption(value: FAST_FORWARD_MERGE | String): Self = StObject.set(x, "mergeOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCommitSpecifier(value: String): Self = StObject.set(x, "sourceCommitSpecifier", value.asInstanceOf[js.Any])
+      inline def setSourceCommitSpecifier(value: String): Self = StObject.set(x, "sourceCommitSpecifier", value.asInstanceOf[js.Any])
     }
   }
 }

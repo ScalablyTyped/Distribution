@@ -15,19 +15,15 @@ trait TypeofFilter extends StObject {
 }
 object TypeofFilter {
   
-  @scala.inline
-  def apply(extend: js.Object => Filter, fn: Filter): TypeofFilter = {
+  inline def apply(extend: js.Object => Filter, fn: Filter): TypeofFilter = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofFilter]
   }
   
-  @scala.inline
-  implicit class TypeofFilterMutableBuilder[Self <: TypeofFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofFilter](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Filter): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Filter): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Filter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Filter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

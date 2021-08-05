@@ -31,37 +31,27 @@ trait SchemaJobMessage extends StObject {
 }
 object SchemaJobMessage {
   
-  @scala.inline
-  def apply(): SchemaJobMessage = {
+  inline def apply(): SchemaJobMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobMessage]
   }
   
-  @scala.inline
-  implicit class SchemaJobMessageMutableBuilder[Self <: SchemaJobMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobMessage](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMessageImportance(value: String): Self = StObject.set(x, "messageImportance", value.asInstanceOf[js.Any])
+    inline def setMessageImportance(value: String): Self = StObject.set(x, "messageImportance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageImportanceUndefined: Self = StObject.set(x, "messageImportance", js.undefined)
+    inline def setMessageImportanceUndefined: Self = StObject.set(x, "messageImportance", js.undefined)
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
+    inline def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

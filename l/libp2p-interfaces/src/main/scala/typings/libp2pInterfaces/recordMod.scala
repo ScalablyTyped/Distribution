@@ -64,27 +64,21 @@ object recordMod {
   }
   object Record {
     
-    @scala.inline
-    def apply(codec: Uint8Array, domain: String, equals_ : Record => Unit, marshal: () => Unit): Record = {
+    inline def apply(codec: Uint8Array, domain: String, equals_ : Record => Unit, marshal: () => Unit): Record = {
       val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], marshal = js.Any.fromFunction0(marshal))
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[Record]
     }
     
-    @scala.inline
-    implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+    extension [Self <: Record](x: Self) {
       
-      @scala.inline
-      def setCodec(value: Uint8Array): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+      inline def setCodec(value: Uint8Array): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_(value: Record => Unit): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: Record => Unit): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMarshal(value: () => Unit): Self = StObject.set(x, "marshal", js.Any.fromFunction0(value))
+      inline def setMarshal(value: () => Unit): Self = StObject.set(x, "marshal", js.Any.fromFunction0(value))
     }
   }
 }

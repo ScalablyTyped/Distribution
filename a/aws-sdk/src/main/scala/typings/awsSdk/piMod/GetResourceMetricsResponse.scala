@@ -33,46 +33,33 @@ trait GetResourceMetricsResponse extends StObject {
 }
 object GetResourceMetricsResponse {
   
-  @scala.inline
-  def apply(): GetResourceMetricsResponse = {
+  inline def apply(): GetResourceMetricsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourceMetricsResponse]
   }
   
-  @scala.inline
-  implicit class GetResourceMetricsResponseMutableBuilder[Self <: GetResourceMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setAlignedEndTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
+    inline def setAlignedEndTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignedEndTimeUndefined: Self = StObject.set(x, "AlignedEndTime", js.undefined)
+    inline def setAlignedEndTimeUndefined: Self = StObject.set(x, "AlignedEndTime", js.undefined)
     
-    @scala.inline
-    def setAlignedStartTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedStartTime", value.asInstanceOf[js.Any])
+    inline def setAlignedStartTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignedStartTimeUndefined: Self = StObject.set(x, "AlignedStartTime", js.undefined)
+    inline def setAlignedStartTimeUndefined: Self = StObject.set(x, "AlignedStartTime", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
     
-    @scala.inline
-    def setMetricList(value: MetricKeyDataPointsList): Self = StObject.set(x, "MetricList", value.asInstanceOf[js.Any])
+    inline def setMetricList(value: MetricKeyDataPointsList): Self = StObject.set(x, "MetricList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricListUndefined: Self = StObject.set(x, "MetricList", js.undefined)
+    inline def setMetricListUndefined: Self = StObject.set(x, "MetricList", js.undefined)
     
-    @scala.inline
-    def setMetricListVarargs(value: MetricKeyDataPoints*): Self = StObject.set(x, "MetricList", js.Array(value :_*))
+    inline def setMetricListVarargs(value: MetricKeyDataPoints*): Self = StObject.set(x, "MetricList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

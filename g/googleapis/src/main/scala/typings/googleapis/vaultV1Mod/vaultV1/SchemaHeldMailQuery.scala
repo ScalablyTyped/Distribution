@@ -28,31 +28,23 @@ trait SchemaHeldMailQuery extends StObject {
 }
 object SchemaHeldMailQuery {
   
-  @scala.inline
-  def apply(): SchemaHeldMailQuery = {
+  inline def apply(): SchemaHeldMailQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeldMailQuery]
   }
   
-  @scala.inline
-  implicit class SchemaHeldMailQueryMutableBuilder[Self <: SchemaHeldMailQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeldMailQuery](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
+    inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
   }
 }

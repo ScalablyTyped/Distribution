@@ -31,25 +31,19 @@ trait EndpointAddress extends StObject {
 }
 object EndpointAddress {
   
-  @scala.inline
-  def apply(hostname: String, ip: String, nodeName: String, targetRef: ObjectReference): EndpointAddress = {
+  inline def apply(hostname: String, ip: String, nodeName: String, targetRef: ObjectReference): EndpointAddress = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], targetRef = targetRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointAddress]
   }
   
-  @scala.inline
-  implicit class EndpointAddressMutableBuilder[Self <: EndpointAddress] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointAddress](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRef(value: ObjectReference): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: ObjectReference): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

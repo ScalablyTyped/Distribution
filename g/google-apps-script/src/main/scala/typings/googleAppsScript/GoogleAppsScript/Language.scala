@@ -15,20 +15,16 @@ object Language {
   }
   object LanguageAdvancedParameters {
     
-    @scala.inline
-    def apply(): LanguageAdvancedParameters = {
+    inline def apply(): LanguageAdvancedParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LanguageAdvancedParameters]
     }
     
-    @scala.inline
-    implicit class LanguageAdvancedParametersMutableBuilder[Self <: LanguageAdvancedParameters] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageAdvancedParameters](x: Self) {
       
-      @scala.inline
-      def setContentType(value: html | text): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: html | text): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     }
   }
   

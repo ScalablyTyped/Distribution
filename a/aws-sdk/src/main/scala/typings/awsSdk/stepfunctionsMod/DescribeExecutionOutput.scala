@@ -57,67 +57,47 @@ trait DescribeExecutionOutput extends StObject {
 }
 object DescribeExecutionOutput {
   
-  @scala.inline
-  def apply(executionArn: Arn, startDate: Timestamp, stateMachineArn: Arn, status: ExecutionStatus): DescribeExecutionOutput = {
+  inline def apply(executionArn: Arn, startDate: Timestamp, stateMachineArn: Arn, status: ExecutionStatus): DescribeExecutionOutput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExecutionOutput]
   }
   
-  @scala.inline
-  implicit class DescribeExecutionOutputMutableBuilder[Self <: DescribeExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+    inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDetails(value: CloudWatchEventsExecutionDataDetails): Self = StObject.set(x, "inputDetails", value.asInstanceOf[js.Any])
+    inline def setInputDetails(value: CloudWatchEventsExecutionDataDetails): Self = StObject.set(x, "inputDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
+    inline def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDetails(value: CloudWatchEventsExecutionDataDetails): Self = StObject.set(x, "outputDetails", value.asInstanceOf[js.Any])
+    inline def setOutputDetails(value: CloudWatchEventsExecutionDataDetails): Self = StObject.set(x, "outputDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDetailsUndefined: Self = StObject.set(x, "outputDetails", js.undefined)
+    inline def setOutputDetailsUndefined: Self = StObject.set(x, "outputDetails", js.undefined)
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
+    inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopDate(value: Timestamp): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
+    inline def setStopDate(value: Timestamp): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopDateUndefined: Self = StObject.set(x, "stopDate", js.undefined)
+    inline def setStopDateUndefined: Self = StObject.set(x, "stopDate", js.undefined)
     
-    @scala.inline
-    def setTraceHeader(value: TraceHeader): Self = StObject.set(x, "traceHeader", value.asInstanceOf[js.Any])
+    inline def setTraceHeader(value: TraceHeader): Self = StObject.set(x, "traceHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceHeaderUndefined: Self = StObject.set(x, "traceHeader", js.undefined)
+    inline def setTraceHeaderUndefined: Self = StObject.set(x, "traceHeader", js.undefined)
   }
 }

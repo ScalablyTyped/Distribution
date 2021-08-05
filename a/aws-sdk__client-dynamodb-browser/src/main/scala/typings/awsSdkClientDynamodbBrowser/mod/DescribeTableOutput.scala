@@ -10,8 +10,7 @@ trait DescribeTableOutput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeTableOutputMod.DescribeTableOutput
 object DescribeTableOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DescribeTableOutput = {
+  inline def apply($metadata: ResponseMetadata): DescribeTableOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableOutput]
   }

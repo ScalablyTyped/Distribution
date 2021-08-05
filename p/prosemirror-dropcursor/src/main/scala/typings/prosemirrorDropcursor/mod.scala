@@ -12,8 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dropCursor(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropCursor")().asInstanceOf[Plugin[js.Any, js.Any]]
-  @scala.inline
-  def dropCursor(options: Color): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropCursor")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def dropCursor(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropCursor")().asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def dropCursor(options: Color): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropCursor")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
 }

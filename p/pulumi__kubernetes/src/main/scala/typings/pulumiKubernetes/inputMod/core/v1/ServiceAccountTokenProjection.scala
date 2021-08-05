@@ -27,28 +27,21 @@ trait ServiceAccountTokenProjection extends StObject {
 }
 object ServiceAccountTokenProjection {
   
-  @scala.inline
-  def apply(path: Input[String]): ServiceAccountTokenProjection = {
+  inline def apply(path: Input[String]): ServiceAccountTokenProjection = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccountTokenProjection]
   }
   
-  @scala.inline
-  implicit class ServiceAccountTokenProjectionMutableBuilder[Self <: ServiceAccountTokenProjection] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccountTokenProjection](x: Self) {
     
-    @scala.inline
-    def setAudience(value: Input[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: Input[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setExpirationSeconds(value: Input[Double]): Self = StObject.set(x, "expirationSeconds", value.asInstanceOf[js.Any])
+    inline def setExpirationSeconds(value: Input[Double]): Self = StObject.set(x, "expirationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationSecondsUndefined: Self = StObject.set(x, "expirationSeconds", js.undefined)
+    inline def setExpirationSecondsUndefined: Self = StObject.set(x, "expirationSeconds", js.undefined)
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ object operatorBufferToggleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bufferToggle[T, O](
+  inline def bufferToggle[T, O](
     openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<O> */ js.Any,
     closingSelector: js.Function1[
       /* value */ O, 

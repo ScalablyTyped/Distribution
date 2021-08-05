@@ -18,25 +18,19 @@ trait GetExtConfigRes extends StObject {
 }
 object GetExtConfigRes {
   
-  @scala.inline
-  def apply(): GetExtConfigRes = {
+  inline def apply(): GetExtConfigRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetExtConfigRes]
   }
   
-  @scala.inline
-  implicit class GetExtConfigResMutableBuilder[Self <: GetExtConfigRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetExtConfigRes](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtConfigUndefined: Self = StObject.set(x, "extConfig", js.undefined)
+    inline def setExtConfigUndefined: Self = StObject.set(x, "extConfig", js.undefined)
   }
 }

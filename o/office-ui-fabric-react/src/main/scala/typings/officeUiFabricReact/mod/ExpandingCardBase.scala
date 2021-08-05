@@ -22,6 +22,5 @@ object ExpandingCardBase {
   @JSImport("office-ui-fabric-react", "ExpandingCardBase.defaultProps")
   @js.native
   def defaultProps: CompactCardHeight = js.native
-  @scala.inline
-  def defaultProps_=(x: CompactCardHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: CompactCardHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

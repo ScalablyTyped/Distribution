@@ -419,20 +419,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setVue(value: TypeScriptVueExtensionOptions): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
+      inline def setVue(value: TypeScriptVueExtensionOptions): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVueUndefined: Self = StObject.set(x, "vue", js.undefined)
+      inline def setVueUndefined: Self = StObject.set(x, "vue", js.undefined)
     }
   }
   
@@ -462,80 +458,56 @@ object anon {
   }
   object Build {
     
-    @scala.inline
-    def apply(): Build = {
+    inline def apply(): Build = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Build]
     }
     
-    @scala.inline
-    implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
+    extension [Self <: Build](x: Self) {
       
-      @scala.inline
-      def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+      inline def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+      inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
       
-      @scala.inline
-      def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
+      inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
       
-      @scala.inline
-      def setConfigOverwrite(value: TypeScriptConfigurationOverwrite): Self = StObject.set(x, "configOverwrite", value.asInstanceOf[js.Any])
+      inline def setConfigOverwrite(value: TypeScriptConfigurationOverwrite): Self = StObject.set(x, "configOverwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigOverwriteUndefined: Self = StObject.set(x, "configOverwrite", js.undefined)
+      inline def setConfigOverwriteUndefined: Self = StObject.set(x, "configOverwrite", js.undefined)
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDiagnosticOptions(value: PartialTypeScriptDiagnost): Self = StObject.set(x, "diagnosticOptions", value.asInstanceOf[js.Any])
+      inline def setDiagnosticOptions(value: PartialTypeScriptDiagnost): Self = StObject.set(x, "diagnosticOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagnosticOptionsUndefined: Self = StObject.set(x, "diagnosticOptions", js.undefined)
+      inline def setDiagnosticOptionsUndefined: Self = StObject.set(x, "diagnosticOptions", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: `0`): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: `0`): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
+      inline def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryLimitUndefined: Self = StObject.set(x, "memoryLimit", js.undefined)
+      inline def setMemoryLimitUndefined: Self = StObject.set(x, "memoryLimit", js.undefined)
       
-      @scala.inline
-      def setMode(value: readonly | `write-tsbuildinfo` | `write-references`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: readonly | `write-tsbuildinfo` | `write-references`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setTypescriptPath(value: String): Self = StObject.set(x, "typescriptPath", value.asInstanceOf[js.Any])
+      inline def setTypescriptPath(value: String): Self = StObject.set(x, "typescriptPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypescriptPathUndefined: Self = StObject.set(x, "typescriptPath", js.undefined)
+      inline def setTypescriptPathUndefined: Self = StObject.set(x, "typescriptPath", js.undefined)
     }
   }
   
@@ -575,8 +547,7 @@ object anon {
   }
   object Canceled {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canceled: SyncHook[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any, 
           js.Any, 
@@ -609,11 +580,9 @@ object anon {
       __obj.asInstanceOf[Canceled]
     }
     
-    @scala.inline
-    implicit class CanceledMutableBuilder[Self <: Canceled] (val x: Self) extends AnyVal {
+    extension [Self <: Canceled](x: Self) {
       
-      @scala.inline
-      def setCanceled(
+      inline def setCanceled(
         value: SyncHook[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any, 
               js.Any, 
@@ -621,8 +590,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: SyncHook[
               Error, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any, 
@@ -630,8 +598,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssues(
+      inline def setIssues(
         value: SyncWaterfallHook[
               js.Array[Issue], 
               js.UndefOr[
@@ -641,8 +608,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(
+      inline def setStart(
         value: AsyncSeriesWaterfallHook[
               FilesChange, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any, 
@@ -650,8 +616,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaiting(
+      inline def setWaiting(
         value: SyncHook[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any, 
               js.Any, 
@@ -669,26 +634,20 @@ object anon {
   }
   object Compiler {
     
-    @scala.inline
-    def apply(): Compiler = {
+    inline def apply(): Compiler = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Compiler]
     }
     
-    @scala.inline
-    implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
+    extension [Self <: Compiler](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
+      inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
   
@@ -705,38 +664,28 @@ object anon {
   }
   object PartialTypeScriptDiagnost {
     
-    @scala.inline
-    def apply(): PartialTypeScriptDiagnost = {
+    inline def apply(): PartialTypeScriptDiagnost = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialTypeScriptDiagnost]
     }
     
-    @scala.inline
-    implicit class PartialTypeScriptDiagnostMutableBuilder[Self <: PartialTypeScriptDiagnost] (val x: Self) extends AnyVal {
+    extension [Self <: PartialTypeScriptDiagnost](x: Self) {
       
-      @scala.inline
-      def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+      inline def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
+      inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setSemantic(value: Boolean): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
+      inline def setSemantic(value: Boolean): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
+      inline def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
       
-      @scala.inline
-      def setSyntactic(value: Boolean): Self = StObject.set(x, "syntactic", value.asInstanceOf[js.Any])
+      inline def setSyntactic(value: Boolean): Self = StObject.set(x, "syntactic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntacticUndefined: Self = StObject.set(x, "syntactic", js.undefined)
+      inline def setSyntacticUndefined: Self = StObject.set(x, "syntactic", js.undefined)
     }
   }
   
@@ -753,41 +702,30 @@ object anon {
   }
   object PartialWatchFileSystemOpt {
     
-    @scala.inline
-    def apply(): PartialWatchFileSystemOpt = {
+    inline def apply(): PartialWatchFileSystemOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialWatchFileSystemOpt]
     }
     
-    @scala.inline
-    implicit class PartialWatchFileSystemOptMutableBuilder[Self <: PartialWatchFileSystemOpt] (val x: Self) extends AnyVal {
+    extension [Self <: PartialWatchFileSystemOpt](x: Self) {
       
-      @scala.inline
-      def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
+      inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
+      inline def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
       
-      @scala.inline
-      def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
+      inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
+      inline def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
       
-      @scala.inline
-      def setIgnored(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setIgnored(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+      inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
       
-      @scala.inline
-      def setIgnoredVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignored", js.Array(value :_*))
+      inline def setIgnoredVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignored", js.Array(value :_*))
       
-      @scala.inline
-      def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+      inline def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+      inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
     }
   }
   
@@ -799,23 +737,18 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(path: String): Path = {
+    inline def apply(path: String): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+      inline def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+      inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
     }
   }
   
@@ -825,17 +758,14 @@ object anon {
   }
   object TypeofScriptSnapshot {
     
-    @scala.inline
-    def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
+    inline def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
       val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    @scala.inline
-    implicit class TypeofScriptSnapshotMutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofScriptSnapshot](x: Self) {
       
-      @scala.inline
-      def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
+      inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }
   }
   
@@ -10383,17 +10313,14 @@ object anon {
   }
   object Vue {
     
-    @scala.inline
-    def apply(vue: TypeScriptVueExtensionConfiguration): Vue = {
+    inline def apply(vue: TypeScriptVueExtensionConfiguration): Vue = {
       val __obj = js.Dynamic.literal(vue = vue.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vue]
     }
     
-    @scala.inline
-    implicit class VueMutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
+    extension [Self <: Vue](x: Self) {
       
-      @scala.inline
-      def setVue(value: TypeScriptVueExtensionConfiguration): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
+      inline def setVue(value: TypeScriptVueExtensionConfiguration): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -10403,17 +10330,14 @@ object anon {
   }
   object Watcher {
     
-    @scala.inline
-    def apply(watcher: Watchpack): Watcher = {
+    inline def apply(watcher: Watchpack): Watcher = {
       val __obj = js.Dynamic.literal(watcher = watcher.asInstanceOf[js.Any])
       __obj.asInstanceOf[Watcher]
     }
     
-    @scala.inline
-    implicit class WatcherMutableBuilder[Self <: Watcher] (val x: Self) extends AnyVal {
+    extension [Self <: Watcher](x: Self) {
       
-      @scala.inline
-      def setWatcher(value: Watchpack): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
+      inline def setWatcher(value: Watchpack): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     }
   }
 }

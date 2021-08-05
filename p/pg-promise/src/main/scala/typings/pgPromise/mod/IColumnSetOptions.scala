@@ -12,25 +12,19 @@ trait IColumnSetOptions extends StObject {
 }
 object IColumnSetOptions {
   
-  @scala.inline
-  def apply(): IColumnSetOptions = {
+  inline def apply(): IColumnSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnSetOptions]
   }
   
-  @scala.inline
-  implicit class IColumnSetOptionsMutableBuilder[Self <: IColumnSetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IColumnSetOptions](x: Self) {
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setTable(value: String | ITable | TableName): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String | ITable | TableName): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

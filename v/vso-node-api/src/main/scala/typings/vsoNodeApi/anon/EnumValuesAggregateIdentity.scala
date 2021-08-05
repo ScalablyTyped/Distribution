@@ -10,16 +10,13 @@ trait EnumValuesAggregateIdentity extends StObject {
 }
 object EnumValuesAggregateIdentity {
   
-  @scala.inline
-  def apply(enumValues: AggregateIdentity): EnumValuesAggregateIdentity = {
+  inline def apply(enumValues: AggregateIdentity): EnumValuesAggregateIdentity = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAggregateIdentity]
   }
   
-  @scala.inline
-  implicit class EnumValuesAggregateIdentityMutableBuilder[Self <: EnumValuesAggregateIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAggregateIdentity](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AggregateIdentity): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AggregateIdentity): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

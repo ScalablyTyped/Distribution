@@ -64,98 +64,68 @@ object browsingData {
   }
   object DataTypeSet {
     
-    @scala.inline
-    def apply(): DataTypeSet = {
+    inline def apply(): DataTypeSet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataTypeSet]
     }
     
-    @scala.inline
-    implicit class DataTypeSetMutableBuilder[Self <: DataTypeSet] (val x: Self) extends AnyVal {
+    extension [Self <: DataTypeSet](x: Self) {
       
-      @scala.inline
-      def setAppcache(value: Boolean): Self = StObject.set(x, "appcache", value.asInstanceOf[js.Any])
+      inline def setAppcache(value: Boolean): Self = StObject.set(x, "appcache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppcacheUndefined: Self = StObject.set(x, "appcache", js.undefined)
+      inline def setAppcacheUndefined: Self = StObject.set(x, "appcache", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setDownloads(value: Boolean): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
+      inline def setDownloads(value: Boolean): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadsUndefined: Self = StObject.set(x, "downloads", js.undefined)
+      inline def setDownloadsUndefined: Self = StObject.set(x, "downloads", js.undefined)
       
-      @scala.inline
-      def setFileSystems(value: Boolean): Self = StObject.set(x, "fileSystems", value.asInstanceOf[js.Any])
+      inline def setFileSystems(value: Boolean): Self = StObject.set(x, "fileSystems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemsUndefined: Self = StObject.set(x, "fileSystems", js.undefined)
+      inline def setFileSystemsUndefined: Self = StObject.set(x, "fileSystems", js.undefined)
       
-      @scala.inline
-      def setFormData(value: Boolean): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+      inline def setFormData(value: Boolean): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+      inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
       
-      @scala.inline
-      def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setIndexedDB(value: Boolean): Self = StObject.set(x, "indexedDB", value.asInstanceOf[js.Any])
+      inline def setIndexedDB(value: Boolean): Self = StObject.set(x, "indexedDB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexedDBUndefined: Self = StObject.set(x, "indexedDB", js.undefined)
+      inline def setIndexedDBUndefined: Self = StObject.set(x, "indexedDB", js.undefined)
       
-      @scala.inline
-      def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
       
-      @scala.inline
-      def setPasswords(value: Boolean): Self = StObject.set(x, "passwords", value.asInstanceOf[js.Any])
+      inline def setPasswords(value: Boolean): Self = StObject.set(x, "passwords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordsUndefined: Self = StObject.set(x, "passwords", js.undefined)
+      inline def setPasswordsUndefined: Self = StObject.set(x, "passwords", js.undefined)
       
-      @scala.inline
-      def setPluginData(value: Boolean): Self = StObject.set(x, "pluginData", value.asInstanceOf[js.Any])
+      inline def setPluginData(value: Boolean): Self = StObject.set(x, "pluginData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginDataUndefined: Self = StObject.set(x, "pluginData", js.undefined)
+      inline def setPluginDataUndefined: Self = StObject.set(x, "pluginData", js.undefined)
       
-      @scala.inline
-      def setServerBoundCertificates(value: Boolean): Self = StObject.set(x, "serverBoundCertificates", value.asInstanceOf[js.Any])
+      inline def setServerBoundCertificates(value: Boolean): Self = StObject.set(x, "serverBoundCertificates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerBoundCertificatesUndefined: Self = StObject.set(x, "serverBoundCertificates", js.undefined)
+      inline def setServerBoundCertificatesUndefined: Self = StObject.set(x, "serverBoundCertificates", js.undefined)
       
-      @scala.inline
-      def setServiceWorkers(value: Boolean): Self = StObject.set(x, "serviceWorkers", value.asInstanceOf[js.Any])
+      inline def setServiceWorkers(value: Boolean): Self = StObject.set(x, "serviceWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceWorkersUndefined: Self = StObject.set(x, "serviceWorkers", js.undefined)
+      inline def setServiceWorkersUndefined: Self = StObject.set(x, "serviceWorkers", js.undefined)
       
-      @scala.inline
-      def setWebSQL(value: Boolean): Self = StObject.set(x, "webSQL", value.asInstanceOf[js.Any])
+      inline def setWebSQL(value: Boolean): Self = StObject.set(x, "webSQL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebSQLUndefined: Self = StObject.set(x, "webSQL", js.undefined)
+      inline def setWebSQLUndefined: Self = StObject.set(x, "webSQL", js.undefined)
     }
   }
   
@@ -172,32 +142,24 @@ object browsingData {
   }
   object OriginTypes {
     
-    @scala.inline
-    def apply(): OriginTypes = {
+    inline def apply(): OriginTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OriginTypes]
     }
     
-    @scala.inline
-    implicit class OriginTypesMutableBuilder[Self <: OriginTypes] (val x: Self) extends AnyVal {
+    extension [Self <: OriginTypes](x: Self) {
       
-      @scala.inline
-      def setExtension(value: Boolean): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: Boolean): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setProtectedWeb(value: Boolean): Self = StObject.set(x, "protectedWeb", value.asInstanceOf[js.Any])
+      inline def setProtectedWeb(value: Boolean): Self = StObject.set(x, "protectedWeb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtectedWebUndefined: Self = StObject.set(x, "protectedWeb", js.undefined)
+      inline def setProtectedWebUndefined: Self = StObject.set(x, "protectedWeb", js.undefined)
       
-      @scala.inline
-      def setUnprotectedWeb(value: Boolean): Self = StObject.set(x, "unprotectedWeb", value.asInstanceOf[js.Any])
+      inline def setUnprotectedWeb(value: Boolean): Self = StObject.set(x, "unprotectedWeb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprotectedWebUndefined: Self = StObject.set(x, "unprotectedWeb", js.undefined)
+      inline def setUnprotectedWebUndefined: Self = StObject.set(x, "unprotectedWeb", js.undefined)
     }
   }
   
@@ -215,26 +177,20 @@ object browsingData {
   }
   object RemovalOptions {
     
-    @scala.inline
-    def apply(): RemovalOptions = {
+    inline def apply(): RemovalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemovalOptions]
     }
     
-    @scala.inline
-    implicit class RemovalOptionsMutableBuilder[Self <: RemovalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemovalOptions](x: Self) {
       
-      @scala.inline
-      def setOriginTypes(value: typings.chrome.chrome.browsingData.OriginTypes): Self = StObject.set(x, "originTypes", value.asInstanceOf[js.Any])
+      inline def setOriginTypes(value: typings.chrome.chrome.browsingData.OriginTypes): Self = StObject.set(x, "originTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginTypesUndefined: Self = StObject.set(x, "originTypes", js.undefined)
+      inline def setOriginTypesUndefined: Self = StObject.set(x, "originTypes", js.undefined)
       
-      @scala.inline
-      def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+      inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+      inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     }
   }
   
@@ -250,8 +206,7 @@ object browsingData {
   }
   object SettingsCallback {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataRemovalPermitted: typings.chrome.chrome.browsingData.DataTypeSet,
       dataToRemove: typings.chrome.chrome.browsingData.DataTypeSet,
       options: typings.chrome.chrome.browsingData.RemovalOptions
@@ -260,17 +215,13 @@ object browsingData {
       __obj.asInstanceOf[SettingsCallback]
     }
     
-    @scala.inline
-    implicit class SettingsCallbackMutableBuilder[Self <: SettingsCallback] (val x: Self) extends AnyVal {
+    extension [Self <: SettingsCallback](x: Self) {
       
-      @scala.inline
-      def setDataRemovalPermitted(value: typings.chrome.chrome.browsingData.DataTypeSet): Self = StObject.set(x, "dataRemovalPermitted", value.asInstanceOf[js.Any])
+      inline def setDataRemovalPermitted(value: typings.chrome.chrome.browsingData.DataTypeSet): Self = StObject.set(x, "dataRemovalPermitted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataToRemove(value: typings.chrome.chrome.browsingData.DataTypeSet): Self = StObject.set(x, "dataToRemove", value.asInstanceOf[js.Any])
+      inline def setDataToRemove(value: typings.chrome.chrome.browsingData.DataTypeSet): Self = StObject.set(x, "dataToRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: typings.chrome.chrome.browsingData.RemovalOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.chrome.chrome.browsingData.RemovalOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

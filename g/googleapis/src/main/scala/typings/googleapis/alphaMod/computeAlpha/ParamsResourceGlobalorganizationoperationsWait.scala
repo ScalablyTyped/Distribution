@@ -28,31 +28,23 @@ trait ParamsResourceGlobalorganizationoperationsWait
 }
 object ParamsResourceGlobalorganizationoperationsWait {
   
-  @scala.inline
-  def apply(): ParamsResourceGlobalorganizationoperationsWait = {
+  inline def apply(): ParamsResourceGlobalorganizationoperationsWait = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceGlobalorganizationoperationsWait]
   }
   
-  @scala.inline
-  implicit class ParamsResourceGlobalorganizationoperationsWaitMutableBuilder[Self <: ParamsResourceGlobalorganizationoperationsWait] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceGlobalorganizationoperationsWait](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
   }
 }

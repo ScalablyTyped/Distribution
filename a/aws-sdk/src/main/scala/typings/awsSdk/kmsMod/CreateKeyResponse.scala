@@ -13,19 +13,15 @@ trait CreateKeyResponse extends StObject {
 }
 object CreateKeyResponse {
   
-  @scala.inline
-  def apply(): CreateKeyResponse = {
+  inline def apply(): CreateKeyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateKeyResponse]
   }
   
-  @scala.inline
-  implicit class CreateKeyResponseMutableBuilder[Self <: CreateKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateKeyResponse](x: Self) {
     
-    @scala.inline
-    def setKeyMetadata(value: KeyMetadata): Self = StObject.set(x, "KeyMetadata", value.asInstanceOf[js.Any])
+    inline def setKeyMetadata(value: KeyMetadata): Self = StObject.set(x, "KeyMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMetadataUndefined: Self = StObject.set(x, "KeyMetadata", js.undefined)
+    inline def setKeyMetadataUndefined: Self = StObject.set(x, "KeyMetadata", js.undefined)
   }
 }

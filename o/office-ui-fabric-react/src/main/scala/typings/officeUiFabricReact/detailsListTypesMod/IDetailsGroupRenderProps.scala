@@ -19,29 +19,23 @@ trait IDetailsGroupRenderProps
 }
 object IDetailsGroupRenderProps {
   
-  @scala.inline
-  def apply(): IDetailsGroupRenderProps = {
+  inline def apply(): IDetailsGroupRenderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDetailsGroupRenderProps]
   }
   
-  @scala.inline
-  implicit class IDetailsGroupRenderPropsMutableBuilder[Self <: IDetailsGroupRenderProps] (val x: Self) extends AnyVal {
+  extension [Self <: IDetailsGroupRenderProps](x: Self) {
     
-    @scala.inline
-    def setOnRenderFooter(
+    inline def setOnRenderFooter(
       value: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null
     ): Self = StObject.set(x, "onRenderFooter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRenderFooterUndefined: Self = StObject.set(x, "onRenderFooter", js.undefined)
+    inline def setOnRenderFooterUndefined: Self = StObject.set(x, "onRenderFooter", js.undefined)
     
-    @scala.inline
-    def setOnRenderHeader(
+    inline def setOnRenderHeader(
       value: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null
     ): Self = StObject.set(x, "onRenderHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRenderHeaderUndefined: Self = StObject.set(x, "onRenderHeader", js.undefined)
+    inline def setOnRenderHeaderUndefined: Self = StObject.set(x, "onRenderHeader", js.undefined)
   }
 }

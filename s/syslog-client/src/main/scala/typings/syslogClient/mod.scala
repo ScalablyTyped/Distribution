@@ -205,8 +205,7 @@ object mod {
     /* 2 */ val Udp: typings.syslogClient.mod.Transport.Udp & Double = js.native
   }
   
-  @scala.inline
-  def createClient(target: String, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def createClient(target: String, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   
   trait ClientOptions extends StObject {
     
@@ -234,80 +233,56 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+      inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
       
-      @scala.inline
-      def setDateFormatter(value: () => String): Self = StObject.set(x, "dateFormatter", js.Any.fromFunction0(value))
+      inline def setDateFormatter(value: () => String): Self = StObject.set(x, "dateFormatter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDateFormatterUndefined: Self = StObject.set(x, "dateFormatter", js.undefined)
+      inline def setDateFormatterUndefined: Self = StObject.set(x, "dateFormatter", js.undefined)
       
-      @scala.inline
-      def setFacility(value: Facility): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+      inline def setFacility(value: Facility): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+      inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
       
-      @scala.inline
-      def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
+      inline def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgidUndefined: Self = StObject.set(x, "msgid", js.undefined)
+      inline def setMsgidUndefined: Self = StObject.set(x, "msgid", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRfc3164(value: Boolean): Self = StObject.set(x, "rfc3164", value.asInstanceOf[js.Any])
+      inline def setRfc3164(value: Boolean): Self = StObject.set(x, "rfc3164", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRfc3164Undefined: Self = StObject.set(x, "rfc3164", js.undefined)
+      inline def setRfc3164Undefined: Self = StObject.set(x, "rfc3164", js.undefined)
       
-      @scala.inline
-      def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
-      @scala.inline
-      def setSyslogHostname(value: String): Self = StObject.set(x, "syslogHostname", value.asInstanceOf[js.Any])
+      inline def setSyslogHostname(value: String): Self = StObject.set(x, "syslogHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyslogHostnameUndefined: Self = StObject.set(x, "syslogHostname", js.undefined)
+      inline def setSyslogHostnameUndefined: Self = StObject.set(x, "syslogHostname", js.undefined)
       
-      @scala.inline
-      def setTcpTimeout(value: Double): Self = StObject.set(x, "tcpTimeout", value.asInstanceOf[js.Any])
+      inline def setTcpTimeout(value: Double): Self = StObject.set(x, "tcpTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTcpTimeoutUndefined: Self = StObject.set(x, "tcpTimeout", js.undefined)
+      inline def setTcpTimeoutUndefined: Self = StObject.set(x, "tcpTimeout", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   
@@ -329,56 +304,40 @@ object mod {
   }
   object MessageOptions {
     
-    @scala.inline
-    def apply(): MessageOptions = {
+    inline def apply(): MessageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageOptions]
     }
     
-    @scala.inline
-    implicit class MessageOptionsMutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MessageOptions](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+      inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
       
-      @scala.inline
-      def setFacility(value: Facility): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+      inline def setFacility(value: Facility): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+      inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
       
-      @scala.inline
-      def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
+      inline def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgidUndefined: Self = StObject.set(x, "msgid", js.undefined)
+      inline def setMsgidUndefined: Self = StObject.set(x, "msgid", js.undefined)
       
-      @scala.inline
-      def setRfc3164(value: Boolean): Self = StObject.set(x, "rfc3164", value.asInstanceOf[js.Any])
+      inline def setRfc3164(value: Boolean): Self = StObject.set(x, "rfc3164", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRfc3164Undefined: Self = StObject.set(x, "rfc3164", js.undefined)
+      inline def setRfc3164Undefined: Self = StObject.set(x, "rfc3164", js.undefined)
       
-      @scala.inline
-      def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
-      @scala.inline
-      def setSyslogHostname(value: String): Self = StObject.set(x, "syslogHostname", value.asInstanceOf[js.Any])
+      inline def setSyslogHostname(value: String): Self = StObject.set(x, "syslogHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyslogHostnameUndefined: Self = StObject.set(x, "syslogHostname", js.undefined)
+      inline def setSyslogHostnameUndefined: Self = StObject.set(x, "syslogHostname", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
 }

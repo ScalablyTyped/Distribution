@@ -14,8 +14,7 @@ trait ArrayLiteralExpression
 }
 object ArrayLiteralExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object ArrayLiteralExpression {
     __obj.asInstanceOf[ArrayLiteralExpression]
   }
   
-  @scala.inline
-  implicit class ArrayLiteralExpressionMutableBuilder[Self <: ArrayLiteralExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayLiteralExpression](x: Self) {
     
-    @scala.inline
-    def setExpressions(value: ISeparatedSyntaxList2): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: ISeparatedSyntaxList2): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (ArrayLiteralExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ArrayLiteralExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

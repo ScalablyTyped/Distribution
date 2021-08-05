@@ -12,19 +12,15 @@ trait MUIDataTableCurrentData extends StObject {
 }
 object MUIDataTableCurrentData {
   
-  @scala.inline
-  def apply(dataIndex: Double, rowIndex: Double): MUIDataTableCurrentData = {
+  inline def apply(dataIndex: Double, rowIndex: Double): MUIDataTableCurrentData = {
     val __obj = js.Dynamic.literal(dataIndex = dataIndex.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableCurrentData]
   }
   
-  @scala.inline
-  implicit class MUIDataTableCurrentDataMutableBuilder[Self <: MUIDataTableCurrentData] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableCurrentData](x: Self) {
     
-    @scala.inline
-    def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
+    inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

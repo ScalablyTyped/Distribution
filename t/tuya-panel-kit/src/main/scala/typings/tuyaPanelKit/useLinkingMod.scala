@@ -14,8 +14,7 @@ object useLinkingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     ref: RefObject[NavigationContainerRef],
     hasEnabledConfigGetStateFromPathGetPathFromState: LinkingOptions
   ): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], hasEnabledConfigGetStateFromPathGetPathFromState.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]

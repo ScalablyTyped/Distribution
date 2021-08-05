@@ -14,16 +14,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(clockpicker: ClockPicker): JQuery = {
+  inline def apply(clockpicker: ClockPicker): JQuery = {
     val __obj = js.Dynamic.literal(clockpicker = clockpicker.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setClockpicker(value: ClockPicker): Self = StObject.set(x, "clockpicker", value.asInstanceOf[js.Any])
+    inline def setClockpicker(value: ClockPicker): Self = StObject.set(x, "clockpicker", value.asInstanceOf[js.Any])
   }
 }

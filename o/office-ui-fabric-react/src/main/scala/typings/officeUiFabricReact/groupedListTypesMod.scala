@@ -126,83 +126,58 @@ object groupedListTypesMod {
   }
   object IGroup {
     
-    @scala.inline
-    def apply(count: Double, key: String, name: String, startIndex: Double): IGroup = {
+    inline def apply(count: Double, key: String, name: String, startIndex: Double): IGroup = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroup]
     }
     
-    @scala.inline
-    implicit class IGroupMutableBuilder[Self <: IGroup] (val x: Self) extends AnyVal {
+    extension [Self <: IGroup](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[IGroup]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[IGroup]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: IGroup*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: IGroup*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHasMoreData(value: Boolean): Self = StObject.set(x, "hasMoreData", value.asInstanceOf[js.Any])
+      inline def setHasMoreData(value: Boolean): Self = StObject.set(x, "hasMoreData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoreDataUndefined: Self = StObject.set(x, "hasMoreData", js.undefined)
+      inline def setHasMoreDataUndefined: Self = StObject.set(x, "hasMoreData", js.undefined)
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
+      inline def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
       
-      @scala.inline
-      def setIsDropEnabled(value: Boolean): Self = StObject.set(x, "isDropEnabled", value.asInstanceOf[js.Any])
+      inline def setIsDropEnabled(value: Boolean): Self = StObject.set(x, "isDropEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDropEnabledUndefined: Self = StObject.set(x, "isDropEnabled", js.undefined)
+      inline def setIsDropEnabledUndefined: Self = StObject.set(x, "isDropEnabled", js.undefined)
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      @scala.inline
-      def setIsShowingAll(value: Boolean): Self = StObject.set(x, "isShowingAll", value.asInstanceOf[js.Any])
+      inline def setIsShowingAll(value: Boolean): Self = StObject.set(x, "isShowingAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsShowingAllUndefined: Self = StObject.set(x, "isShowingAll", js.undefined)
+      inline def setIsShowingAllUndefined: Self = StObject.set(x, "isShowingAll", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,178 +270,122 @@ object groupedListTypesMod {
   }
   object IGroupDividerProps {
     
-    @scala.inline
-    def apply(): IGroupDividerProps = {
+    inline def apply(): IGroupDividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupDividerProps]
     }
     
-    @scala.inline
-    implicit class IGroupDividerPropsMutableBuilder[Self <: IGroupDividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupDividerProps](x: Self) {
       
-      @scala.inline
-      def setAriaColSpan(value: Double): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
+      inline def setAriaColSpan(value: Double): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaColSpanUndefined: Self = StObject.set(x, "ariaColSpan", js.undefined)
+      inline def setAriaColSpanUndefined: Self = StObject.set(x, "ariaColSpan", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setExpandButtonProps(value: HTMLAttributes[HTMLButtonElement]): Self = StObject.set(x, "expandButtonProps", value.asInstanceOf[js.Any])
+      inline def setExpandButtonProps(value: HTMLAttributes[HTMLButtonElement]): Self = StObject.set(x, "expandButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandButtonPropsUndefined: Self = StObject.set(x, "expandButtonProps", js.undefined)
+      inline def setExpandButtonPropsUndefined: Self = StObject.set(x, "expandButtonProps", js.undefined)
       
-      @scala.inline
-      def setFooterText(value: String): Self = StObject.set(x, "footerText", value.asInstanceOf[js.Any])
+      inline def setFooterText(value: String): Self = StObject.set(x, "footerText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterTextUndefined: Self = StObject.set(x, "footerText", js.undefined)
+      inline def setFooterTextUndefined: Self = StObject.set(x, "footerText", js.undefined)
       
-      @scala.inline
-      def setGroup(value: IGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: IGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
+      inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
+      inline def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
       
-      @scala.inline
-      def setGroupLevel(value: Double): Self = StObject.set(x, "groupLevel", value.asInstanceOf[js.Any])
+      inline def setGroupLevel(value: Double): Self = StObject.set(x, "groupLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupLevelUndefined: Self = StObject.set(x, "groupLevel", js.undefined)
+      inline def setGroupLevelUndefined: Self = StObject.set(x, "groupLevel", js.undefined)
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[IGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[IGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
+      inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
+      inline def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
       
-      @scala.inline
-      def setIsCollapsedGroupSelectVisible(value: Boolean): Self = StObject.set(x, "isCollapsedGroupSelectVisible", value.asInstanceOf[js.Any])
+      inline def setIsCollapsedGroupSelectVisible(value: Boolean): Self = StObject.set(x, "isCollapsedGroupSelectVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsedGroupSelectVisibleUndefined: Self = StObject.set(x, "isCollapsedGroupSelectVisible", js.undefined)
+      inline def setIsCollapsedGroupSelectVisibleUndefined: Self = StObject.set(x, "isCollapsedGroupSelectVisible", js.undefined)
       
-      @scala.inline
-      def setIsGroupLoading(value: /* group */ IGroup => Boolean): Self = StObject.set(x, "isGroupLoading", js.Any.fromFunction1(value))
+      inline def setIsGroupLoading(value: /* group */ IGroup => Boolean): Self = StObject.set(x, "isGroupLoading", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsGroupLoadingUndefined: Self = StObject.set(x, "isGroupLoading", js.undefined)
+      inline def setIsGroupLoadingUndefined: Self = StObject.set(x, "isGroupLoading", js.undefined)
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      @scala.inline
-      def setLoadingText(value: String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+      inline def setLoadingText(value: String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
+      inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
       
-      @scala.inline
-      def setOnGroupHeaderClick(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onGroupHeaderClick", js.Any.fromFunction1(value))
+      inline def setOnGroupHeaderClick(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onGroupHeaderClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGroupHeaderClickUndefined: Self = StObject.set(x, "onGroupHeaderClick", js.undefined)
+      inline def setOnGroupHeaderClickUndefined: Self = StObject.set(x, "onGroupHeaderClick", js.undefined)
       
-      @scala.inline
-      def setOnGroupHeaderKeyUp(value: (/* ev */ KeyboardEvent[HTMLElement], /* group */ IGroup) => Unit): Self = StObject.set(x, "onGroupHeaderKeyUp", js.Any.fromFunction2(value))
+      inline def setOnGroupHeaderKeyUp(value: (/* ev */ KeyboardEvent[HTMLElement], /* group */ IGroup) => Unit): Self = StObject.set(x, "onGroupHeaderKeyUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnGroupHeaderKeyUpUndefined: Self = StObject.set(x, "onGroupHeaderKeyUp", js.undefined)
+      inline def setOnGroupHeaderKeyUpUndefined: Self = StObject.set(x, "onGroupHeaderKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnRenderTitle(
+      inline def setOnRenderTitle(
         value: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderTitle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderTitleUndefined: Self = StObject.set(x, "onRenderTitle", js.undefined)
+      inline def setOnRenderTitleUndefined: Self = StObject.set(x, "onRenderTitle", js.undefined)
       
-      @scala.inline
-      def setOnToggleCollapse(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onToggleCollapse", js.Any.fromFunction1(value))
+      inline def setOnToggleCollapse(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onToggleCollapse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnToggleCollapseUndefined: Self = StObject.set(x, "onToggleCollapse", js.undefined)
+      inline def setOnToggleCollapseUndefined: Self = StObject.set(x, "onToggleCollapse", js.undefined)
       
-      @scala.inline
-      def setOnToggleSelectGroup(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onToggleSelectGroup", js.Any.fromFunction1(value))
+      inline def setOnToggleSelectGroup(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onToggleSelectGroup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnToggleSelectGroupUndefined: Self = StObject.set(x, "onToggleSelectGroup", js.undefined)
+      inline def setOnToggleSelectGroupUndefined: Self = StObject.set(x, "onToggleSelectGroup", js.undefined)
       
-      @scala.inline
-      def setOnToggleSummarize(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onToggleSummarize", js.Any.fromFunction1(value))
+      inline def setOnToggleSummarize(value: /* group */ IGroup => Unit): Self = StObject.set(x, "onToggleSummarize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnToggleSummarizeUndefined: Self = StObject.set(x, "onToggleSummarize", js.undefined)
+      inline def setOnToggleSummarizeUndefined: Self = StObject.set(x, "onToggleSummarize", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+      inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
-      @scala.inline
-      def setShowAllLinkText(value: String): Self = StObject.set(x, "showAllLinkText", value.asInstanceOf[js.Any])
+      inline def setShowAllLinkText(value: String): Self = StObject.set(x, "showAllLinkText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAllLinkTextUndefined: Self = StObject.set(x, "showAllLinkText", js.undefined)
+      inline def setShowAllLinkTextUndefined: Self = StObject.set(x, "showAllLinkText", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setViewport(value: IViewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+      inline def setViewport(value: IViewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+      inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
     }
   }
   
@@ -524,92 +443,66 @@ object groupedListTypesMod {
   }
   object IGroupRenderProps {
     
-    @scala.inline
-    def apply(): IGroupRenderProps = {
+    inline def apply(): IGroupRenderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupRenderProps]
     }
     
-    @scala.inline
-    implicit class IGroupRenderPropsMutableBuilder[Self <: IGroupRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupRenderProps](x: Self) {
       
-      @scala.inline
-      def setCollapseAllVisibility(value: CollapseAllVisibility): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
+      inline def setCollapseAllVisibility(value: CollapseAllVisibility): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseAllVisibilityUndefined: Self = StObject.set(x, "collapseAllVisibility", js.undefined)
+      inline def setCollapseAllVisibilityUndefined: Self = StObject.set(x, "collapseAllVisibility", js.undefined)
       
-      @scala.inline
-      def setFooterProps(value: IGroupFooterProps): Self = StObject.set(x, "footerProps", value.asInstanceOf[js.Any])
+      inline def setFooterProps(value: IGroupFooterProps): Self = StObject.set(x, "footerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterPropsUndefined: Self = StObject.set(x, "footerProps", js.undefined)
+      inline def setFooterPropsUndefined: Self = StObject.set(x, "footerProps", js.undefined)
       
-      @scala.inline
-      def setGetGroupItemLimit(value: /* group */ IGroup => Double): Self = StObject.set(x, "getGroupItemLimit", js.Any.fromFunction1(value))
+      inline def setGetGroupItemLimit(value: /* group */ IGroup => Double): Self = StObject.set(x, "getGroupItemLimit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetGroupItemLimitUndefined: Self = StObject.set(x, "getGroupItemLimit", js.undefined)
+      inline def setGetGroupItemLimitUndefined: Self = StObject.set(x, "getGroupItemLimit", js.undefined)
       
-      @scala.inline
-      def setHeaderProps(value: IGroupHeaderProps): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
+      inline def setHeaderProps(value: IGroupHeaderProps): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPropsUndefined: Self = StObject.set(x, "headerProps", js.undefined)
+      inline def setHeaderPropsUndefined: Self = StObject.set(x, "headerProps", js.undefined)
       
-      @scala.inline
-      def setIsAllGroupsCollapsed(value: Boolean): Self = StObject.set(x, "isAllGroupsCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsAllGroupsCollapsed(value: Boolean): Self = StObject.set(x, "isAllGroupsCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAllGroupsCollapsedUndefined: Self = StObject.set(x, "isAllGroupsCollapsed", js.undefined)
+      inline def setIsAllGroupsCollapsedUndefined: Self = StObject.set(x, "isAllGroupsCollapsed", js.undefined)
       
-      @scala.inline
-      def setOnRenderFooter(
+      inline def setOnRenderFooter(
         value: (/* props */ js.UndefOr[IGroupFooterProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupFooterProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderFooter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderFooterUndefined: Self = StObject.set(x, "onRenderFooter", js.undefined)
+      inline def setOnRenderFooterUndefined: Self = StObject.set(x, "onRenderFooter", js.undefined)
       
-      @scala.inline
-      def setOnRenderHeader(
+      inline def setOnRenderHeader(
         value: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderHeaderUndefined: Self = StObject.set(x, "onRenderHeader", js.undefined)
+      inline def setOnRenderHeaderUndefined: Self = StObject.set(x, "onRenderHeader", js.undefined)
       
-      @scala.inline
-      def setOnRenderShowAll(
+      inline def setOnRenderShowAll(
         value: (/* props */ js.UndefOr[IGroupShowAllProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupShowAllProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderShowAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderShowAllUndefined: Self = StObject.set(x, "onRenderShowAll", js.undefined)
+      inline def setOnRenderShowAllUndefined: Self = StObject.set(x, "onRenderShowAll", js.undefined)
       
-      @scala.inline
-      def setOnToggleCollapseAll(value: /* isAllCollapsed */ Boolean => Unit): Self = StObject.set(x, "onToggleCollapseAll", js.Any.fromFunction1(value))
+      inline def setOnToggleCollapseAll(value: /* isAllCollapsed */ Boolean => Unit): Self = StObject.set(x, "onToggleCollapseAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnToggleCollapseAllUndefined: Self = StObject.set(x, "onToggleCollapseAll", js.undefined)
+      inline def setOnToggleCollapseAllUndefined: Self = StObject.set(x, "onToggleCollapseAll", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setShowAllProps(value: IGroupShowAllProps): Self = StObject.set(x, "showAllProps", value.asInstanceOf[js.Any])
+      inline def setShowAllProps(value: IGroupShowAllProps): Self = StObject.set(x, "showAllProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAllPropsUndefined: Self = StObject.set(x, "showAllProps", js.undefined)
+      inline def setShowAllPropsUndefined: Self = StObject.set(x, "showAllProps", js.undefined)
       
-      @scala.inline
-      def setShowEmptyGroups(value: Boolean): Self = StObject.set(x, "showEmptyGroups", value.asInstanceOf[js.Any])
+      inline def setShowEmptyGroups(value: Boolean): Self = StObject.set(x, "showEmptyGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowEmptyGroupsUndefined: Self = StObject.set(x, "showEmptyGroups", js.undefined)
+      inline def setShowEmptyGroupsUndefined: Self = StObject.set(x, "showEmptyGroups", js.undefined)
     }
   }
   
@@ -736,35 +629,26 @@ object groupedListTypesMod {
   }
   object IGroupedListStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IGroupedListStyleProps = {
+    inline def apply(theme: ITheme): IGroupedListStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupedListStyleProps]
     }
     
-    @scala.inline
-    implicit class IGroupedListStylePropsMutableBuilder[Self <: IGroupedListStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupedListStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
+      inline def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -778,41 +662,30 @@ object groupedListTypesMod {
   }
   object IGroupedListStyles {
     
-    @scala.inline
-    def apply(): IGroupedListStyles = {
+    inline def apply(): IGroupedListStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupedListStyles]
     }
     
-    @scala.inline
-    implicit class IGroupedListStylesMutableBuilder[Self <: IGroupedListStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupedListStyles](x: Self) {
       
-      @scala.inline
-      def setGroup(value: IStyle): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: IStyle): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIsDropping(value: IStyle): Self = StObject.set(x, "groupIsDropping", value.asInstanceOf[js.Any])
+      inline def setGroupIsDropping(value: IStyle): Self = StObject.set(x, "groupIsDropping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIsDroppingNull: Self = StObject.set(x, "groupIsDropping", null)
+      inline def setGroupIsDroppingNull: Self = StObject.set(x, "groupIsDropping", null)
       
-      @scala.inline
-      def setGroupIsDroppingUndefined: Self = StObject.set(x, "groupIsDropping", js.undefined)
+      inline def setGroupIsDroppingUndefined: Self = StObject.set(x, "groupIsDropping", js.undefined)
       
-      @scala.inline
-      def setGroupNull: Self = StObject.set(x, "group", null)
+      inline def setGroupNull: Self = StObject.set(x, "group", null)
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

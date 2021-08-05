@@ -79,29 +79,21 @@ object formatterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def allowFalsish(format: FormatFunc, replaceValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowFalsish")(format.asInstanceOf[js.Any], replaceValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
+    inline def allowFalsish(format: FormatFunc, replaceValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowFalsish")(format.asInstanceOf[js.Any], replaceValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
     
-    @scala.inline
-    def allowNull(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
-    @scala.inline
-    def allowNull(format: FormatFunc, nullValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
+    inline def allowNull(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def allowNull(format: FormatFunc, nullValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
     
-    @scala.inline
-    def arrayOf(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def arrayOf(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @scala.inline
-    def check(format: StringDictionary[FormatFunc], `object`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(format.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def check(format: StringDictionary[FormatFunc], `object`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(format.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @scala.inline
-  def isCommunityResourcable(value: js.Any): /* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResourcable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean]
+  inline def isCommunityResourcable(value: js.Any): /* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResourcable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean]
   
-  @scala.inline
-  def isCommunityResource(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResource")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCommunityResource(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResource")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def showThrottleMessage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showThrottleMessage")().asInstanceOf[Unit]
+  inline def showThrottleMessage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showThrottleMessage")().asInstanceOf[Unit]
   
   trait CommunityResourcable extends StObject {
     
@@ -109,17 +101,14 @@ object formatterMod {
   }
   object CommunityResourcable {
     
-    @scala.inline
-    def apply(isCommunityResource: () => Boolean): CommunityResourcable = {
+    inline def apply(isCommunityResource: () => Boolean): CommunityResourcable = {
       val __obj = js.Dynamic.literal(isCommunityResource = js.Any.fromFunction0(isCommunityResource))
       __obj.asInstanceOf[CommunityResourcable]
     }
     
-    @scala.inline
-    implicit class CommunityResourcableMutableBuilder[Self <: CommunityResourcable] (val x: Self) extends AnyVal {
+    extension [Self <: CommunityResourcable](x: Self) {
       
-      @scala.inline
-      def setIsCommunityResource(value: () => Boolean): Self = StObject.set(x, "isCommunityResource", js.Any.fromFunction0(value))
+      inline def setIsCommunityResource(value: () => Boolean): Self = StObject.set(x, "isCommunityResource", js.Any.fromFunction0(value))
     }
   }
   
@@ -147,8 +136,7 @@ object formatterMod {
   }
   object Formats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       block: FormatFuncs,
       blockWithTransactions: FormatFuncs,
       filter: FormatFuncs,
@@ -162,32 +150,23 @@ object formatterMod {
       __obj.asInstanceOf[Formats]
     }
     
-    @scala.inline
-    implicit class FormatsMutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
+    extension [Self <: Formats](x: Self) {
       
-      @scala.inline
-      def setBlock(value: FormatFuncs): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: FormatFuncs): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockWithTransactions(value: FormatFuncs): Self = StObject.set(x, "blockWithTransactions", value.asInstanceOf[js.Any])
+      inline def setBlockWithTransactions(value: FormatFuncs): Self = StObject.set(x, "blockWithTransactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: FormatFuncs): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: FormatFuncs): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterLog(value: FormatFuncs): Self = StObject.set(x, "filterLog", value.asInstanceOf[js.Any])
+      inline def setFilterLog(value: FormatFuncs): Self = StObject.set(x, "filterLog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceipt(value: FormatFuncs): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
+      inline def setReceipt(value: FormatFuncs): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptLog(value: FormatFuncs): Self = StObject.set(x, "receiptLog", value.asInstanceOf[js.Any])
+      inline def setReceiptLog(value: FormatFuncs): Self = StObject.set(x, "receiptLog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction(value: FormatFuncs): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: FormatFuncs): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionRequest(value: FormatFuncs): Self = StObject.set(x, "transactionRequest", value.asInstanceOf[js.Any])
+      inline def setTransactionRequest(value: FormatFuncs): Self = StObject.set(x, "transactionRequest", value.asInstanceOf[js.Any])
     }
   }
 }

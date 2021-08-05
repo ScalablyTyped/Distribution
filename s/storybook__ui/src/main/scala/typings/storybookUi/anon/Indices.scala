@@ -12,22 +12,17 @@ trait Indices extends StObject {
 }
 object Indices {
   
-  @scala.inline
-  def apply(indices: js.Array[js.Array[Double]], value: String): Indices = {
+  inline def apply(indices: js.Array[js.Array[Double]], value: String): Indices = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Indices]
   }
   
-  @scala.inline
-  implicit class IndicesMutableBuilder[Self <: Indices] (val x: Self) extends AnyVal {
+  extension [Self <: Indices](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

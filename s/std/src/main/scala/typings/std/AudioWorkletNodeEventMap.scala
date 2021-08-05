@@ -10,16 +10,13 @@ trait AudioWorkletNodeEventMap extends StObject {
 }
 object AudioWorkletNodeEventMap {
   
-  @scala.inline
-  def apply(processorerror: Event): AudioWorkletNodeEventMap = {
+  inline def apply(processorerror: Event): AudioWorkletNodeEventMap = {
     val __obj = js.Dynamic.literal(processorerror = processorerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioWorkletNodeEventMap]
   }
   
-  @scala.inline
-  implicit class AudioWorkletNodeEventMapMutableBuilder[Self <: AudioWorkletNodeEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: AudioWorkletNodeEventMap](x: Self) {
     
-    @scala.inline
-    def setProcessorerror(value: Event): Self = StObject.set(x, "processorerror", value.asInstanceOf[js.Any])
+    inline def setProcessorerror(value: Event): Self = StObject.set(x, "processorerror", value.asInstanceOf[js.Any])
   }
 }

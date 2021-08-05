@@ -18,16 +18,13 @@ trait CommandWithSimpleStateBase
 }
 object CommandWithSimpleStateBase {
   
-  @scala.inline
-  def apply(getState: () => SimpleCommandState): CommandWithSimpleStateBase = {
+  inline def apply(getState: () => SimpleCommandState): CommandWithSimpleStateBase = {
     val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[CommandWithSimpleStateBase]
   }
   
-  @scala.inline
-  implicit class CommandWithSimpleStateBaseMutableBuilder[Self <: CommandWithSimpleStateBase] (val x: Self) extends AnyVal {
+  extension [Self <: CommandWithSimpleStateBase](x: Self) {
     
-    @scala.inline
-    def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

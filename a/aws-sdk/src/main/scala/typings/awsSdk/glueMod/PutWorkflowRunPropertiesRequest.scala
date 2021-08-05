@@ -23,22 +23,17 @@ trait PutWorkflowRunPropertiesRequest extends StObject {
 }
 object PutWorkflowRunPropertiesRequest {
   
-  @scala.inline
-  def apply(Name: NameString, RunId: IdString, RunProperties: WorkflowRunProperties): PutWorkflowRunPropertiesRequest = {
+  inline def apply(Name: NameString, RunId: IdString, RunProperties: WorkflowRunProperties): PutWorkflowRunPropertiesRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any], RunProperties = RunProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutWorkflowRunPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class PutWorkflowRunPropertiesRequestMutableBuilder[Self <: PutWorkflowRunPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutWorkflowRunPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "RunProperties", value.asInstanceOf[js.Any])
+    inline def setRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "RunProperties", value.asInstanceOf[js.Any])
   }
 }

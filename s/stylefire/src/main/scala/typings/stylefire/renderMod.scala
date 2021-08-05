@@ -14,8 +14,7 @@ object renderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     state: State,
     changedValues: js.Array[String],
     enableHardwareAcceleration: Boolean,
@@ -26,8 +25,7 @@ object renderMod {
   @js.native
   val aliasMap: AliasMap_ = js.native
   
-  @scala.inline
-  def default_true(state: State, changedValues: `true`, enableHardwareAcceleration: Boolean, blacklist: Set[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], changedValues.asInstanceOf[js.Any], enableHardwareAcceleration.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default_true(state: State, changedValues: `true`, enableHardwareAcceleration: Boolean, blacklist: Set[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], changedValues.asInstanceOf[js.Any], enableHardwareAcceleration.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type AliasMap_ = StringDictionary[String]
 }

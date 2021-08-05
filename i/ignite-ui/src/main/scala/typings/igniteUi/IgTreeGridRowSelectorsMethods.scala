@@ -70,8 +70,7 @@ trait IgTreeGridRowSelectorsMethods extends StObject {
 }
 object IgTreeGridRowSelectorsMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeCheckState: (Double, Boolean) => Unit,
     changeCheckStateById: (js.Object, Boolean) => Unit,
     changeLocale: () => Unit,
@@ -88,40 +87,28 @@ object IgTreeGridRowSelectorsMethods {
     __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
   }
   
-  @scala.inline
-  implicit class IgTreeGridRowSelectorsMethodsMutableBuilder[Self <: IgTreeGridRowSelectorsMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridRowSelectorsMethods](x: Self) {
     
-    @scala.inline
-    def setChangeCheckState(value: (Double, Boolean) => Unit): Self = StObject.set(x, "changeCheckState", js.Any.fromFunction2(value))
+    inline def setChangeCheckState(value: (Double, Boolean) => Unit): Self = StObject.set(x, "changeCheckState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChangeCheckStateById(value: (js.Object, Boolean) => Unit): Self = StObject.set(x, "changeCheckStateById", js.Any.fromFunction2(value))
+    inline def setChangeCheckStateById(value: (js.Object, Boolean) => Unit): Self = StObject.set(x, "changeCheckStateById", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
+    inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCheckStateById(value: js.Object => String): Self = StObject.set(x, "checkStateById", js.Any.fromFunction1(value))
+    inline def setCheckStateById(value: js.Object => String): Self = StObject.set(x, "checkStateById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "checkedRows", js.Any.fromFunction0(value))
+    inline def setCheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "checkedRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPartiallyCheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "partiallyCheckedRows", js.Any.fromFunction0(value))
+    inline def setPartiallyCheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "partiallyCheckedRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRsRenderColgroup(value: () => Unit): Self = StObject.set(x, "rsRenderColgroup", js.Any.fromFunction0(value))
+    inline def setRsRenderColgroup(value: () => Unit): Self = StObject.set(x, "rsRenderColgroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleCheckState(value: Double => Unit): Self = StObject.set(x, "toggleCheckState", js.Any.fromFunction1(value))
+    inline def setToggleCheckState(value: Double => Unit): Self = StObject.set(x, "toggleCheckState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleCheckStateById(value: js.Object => Unit): Self = StObject.set(x, "toggleCheckStateById", js.Any.fromFunction1(value))
+    inline def setToggleCheckStateById(value: js.Object => Unit): Self = StObject.set(x, "toggleCheckStateById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUncheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "uncheckedRows", js.Any.fromFunction0(value))
+    inline def setUncheckedRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "uncheckedRows", js.Any.fromFunction0(value))
   }
 }

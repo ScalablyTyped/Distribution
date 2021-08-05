@@ -68,8 +68,7 @@ trait GLTexture extends StObject {
 }
 object GLTexture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dirtyId: Double,
     dirtyStyleId: Double,
     height: Double,
@@ -85,34 +84,24 @@ object GLTexture {
     __obj.asInstanceOf[GLTexture]
   }
   
-  @scala.inline
-  implicit class GLTextureMutableBuilder[Self <: GLTexture] (val x: Self) extends AnyVal {
+  extension [Self <: GLTexture](x: Self) {
     
-    @scala.inline
-    def setDirtyId(value: Double): Self = StObject.set(x, "dirtyId", value.asInstanceOf[js.Any])
+    inline def setDirtyId(value: Double): Self = StObject.set(x, "dirtyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyStyleId(value: Double): Self = StObject.set(x, "dirtyStyleId", value.asInstanceOf[js.Any])
+    inline def setDirtyStyleId(value: Double): Self = StObject.set(x, "dirtyStyleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalFormat(value: Double): Self = StObject.set(x, "internalFormat", value.asInstanceOf[js.Any])
+    inline def setInternalFormat(value: Double): Self = StObject.set(x, "internalFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMipmap(value: Boolean): Self = StObject.set(x, "mipmap", value.asInstanceOf[js.Any])
+    inline def setMipmap(value: Boolean): Self = StObject.set(x, "mipmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapMode(value: Double): Self = StObject.set(x, "wrapMode", value.asInstanceOf[js.Any])
+    inline def setWrapMode(value: Double): Self = StObject.set(x, "wrapMode", value.asInstanceOf[js.Any])
   }
 }

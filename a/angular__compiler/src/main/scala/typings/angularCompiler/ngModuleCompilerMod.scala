@@ -23,7 +23,7 @@ object ngModuleCompilerMod {
   class NgModuleCompiler protected () extends StObject {
     def this(reflector: CompileReflector) = this()
     
-    var _createNgModuleFactory: js.Any = js.native
+    /* private */ var _createNgModuleFactory: js.Any = js.native
     
     def compile(
       ctx: OutputContext,
@@ -33,6 +33,6 @@ object ngModuleCompilerMod {
     
     def createStub(ctx: OutputContext, ngModuleReference: js.Any): Unit = js.native
     
-    var reflector: js.Any = js.native
+    /* private */ var reflector: js.Any = js.native
   }
 }

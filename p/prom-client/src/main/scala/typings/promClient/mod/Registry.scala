@@ -80,6 +80,5 @@ object Registry {
   	 * Merge registers
   	 * @param registers The registers you want to merge together
   	 */
-  @scala.inline
-  def merge(registers: js.Array[Registry]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(registers.asInstanceOf[js.Any]).asInstanceOf[Registry]
+  inline def merge(registers: js.Array[Registry]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(registers.asInstanceOf[js.Any]).asInstanceOf[Registry]
 }

@@ -12,19 +12,15 @@ trait BlacklistValidatorConfig[T /* <: js.Object */]
 }
 object BlacklistValidatorConfig {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](blacklist: js.Array[String], message: String): BlacklistValidatorConfig[T] = {
+  inline def apply[T /* <: js.Object */](blacklist: js.Array[String], message: String): BlacklistValidatorConfig[T] = {
     val __obj = js.Dynamic.literal(blacklist = blacklist.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlacklistValidatorConfig[T]]
   }
   
-  @scala.inline
-  implicit class BlacklistValidatorConfigMutableBuilder[Self <: BlacklistValidatorConfig[?], T /* <: js.Object */] (val x: Self & BlacklistValidatorConfig[T]) extends AnyVal {
+  extension [Self <: BlacklistValidatorConfig[?], T /* <: js.Object */](x: Self & BlacklistValidatorConfig[T]) {
     
-    @scala.inline
-    def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+    inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
   }
 }

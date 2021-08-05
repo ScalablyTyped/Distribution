@@ -11,16 +11,13 @@ trait IROOM_PASSWORD_STATE_CHANGE extends StObject {
 }
 object IROOM_PASSWORD_STATE_CHANGE {
   
-  @scala.inline
-  def apply(room: SFSRoom): IROOM_PASSWORD_STATE_CHANGE = {
+  inline def apply(room: SFSRoom): IROOM_PASSWORD_STATE_CHANGE = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[IROOM_PASSWORD_STATE_CHANGE]
   }
   
-  @scala.inline
-  implicit class IROOM_PASSWORD_STATE_CHANGEMutableBuilder[Self <: IROOM_PASSWORD_STATE_CHANGE] (val x: Self) extends AnyVal {
+  extension [Self <: IROOM_PASSWORD_STATE_CHANGE](x: Self) {
     
-    @scala.inline
-    def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

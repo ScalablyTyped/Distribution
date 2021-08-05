@@ -65,8 +65,7 @@ trait Storage
 }
 object Storage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     HasEncryptedEntries: Boolean,
@@ -122,28 +121,20 @@ object Storage {
     __obj.asInstanceOf[Storage]
   }
   
-  @scala.inline
-  implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+  extension [Self <: Storage](x: Self) {
     
-    @scala.inline
-    def setHasEncryptedEntries(value: Boolean): Self = StObject.set(x, "HasEncryptedEntries", value.asInstanceOf[js.Any])
+    inline def setHasEncryptedEntries(value: Boolean): Self = StObject.set(x, "HasEncryptedEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNonEncryptedEntries(value: Boolean): Self = StObject.set(x, "HasNonEncryptedEntries", value.asInstanceOf[js.Any])
+    inline def setHasNonEncryptedEntries(value: Boolean): Self = StObject.set(x, "HasNonEncryptedEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRoot(value: Boolean): Self = StObject.set(x, "IsRoot", value.asInstanceOf[js.Any])
+    inline def setIsRoot(value: Boolean): Self = StObject.set(x, "IsRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeFallbackIsUsed(value: Boolean): Self = StObject.set(x, "MediaTypeFallbackIsUsed", value.asInstanceOf[js.Any])
+    inline def setMediaTypeFallbackIsUsed(value: Boolean): Self = StObject.set(x, "MediaTypeFallbackIsUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepairPackage(value: Boolean): Self = StObject.set(x, "RepairPackage", value.asInstanceOf[js.Any])
+    inline def setRepairPackage(value: Boolean): Self = StObject.set(x, "RepairPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

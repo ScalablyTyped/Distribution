@@ -28,20 +28,16 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(causedBy: drag | scale | update): Type = {
+  inline def apply(causedBy: drag | scale | update): Type = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("end")
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setCausedBy(value: drag | scale | update): Self = StObject.set(x, "causedBy", value.asInstanceOf[js.Any])
+    inline def setCausedBy(value: drag | scale | update): Self = StObject.set(x, "causedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

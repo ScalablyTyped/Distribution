@@ -13,6 +13,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractProps(component: VueConstructor[Vue]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractProps")(component.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def extractProps(component: VueConstructor[Vue]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractProps")(component.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
 }

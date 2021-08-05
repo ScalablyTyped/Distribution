@@ -36,46 +36,33 @@ trait SchemaTemplateContents extends StObject {
 }
 object SchemaTemplateContents {
   
-  @scala.inline
-  def apply(): SchemaTemplateContents = {
+  inline def apply(): SchemaTemplateContents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTemplateContents]
   }
   
-  @scala.inline
-  implicit class SchemaTemplateContentsMutableBuilder[Self <: SchemaTemplateContents] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTemplateContents](x: Self) {
     
-    @scala.inline
-    def setImports(value: js.Array[SchemaImportFile]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[SchemaImportFile]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: SchemaImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: SchemaImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setInterpreter(value: String): Self = StObject.set(x, "interpreter", value.asInstanceOf[js.Any])
+    inline def setInterpreter(value: String): Self = StObject.set(x, "interpreter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpreterUndefined: Self = StObject.set(x, "interpreter", js.undefined)
+    inline def setInterpreterUndefined: Self = StObject.set(x, "interpreter", js.undefined)
     
-    @scala.inline
-    def setMainTemplate(value: String): Self = StObject.set(x, "mainTemplate", value.asInstanceOf[js.Any])
+    inline def setMainTemplate(value: String): Self = StObject.set(x, "mainTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainTemplateUndefined: Self = StObject.set(x, "mainTemplate", js.undefined)
+    inline def setMainTemplateUndefined: Self = StObject.set(x, "mainTemplate", js.undefined)
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

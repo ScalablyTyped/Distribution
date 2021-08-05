@@ -13,19 +13,15 @@ trait DestinationSettings extends StObject {
 }
 object DestinationSettings {
   
-  @scala.inline
-  def apply(): DestinationSettings = {
+  inline def apply(): DestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationSettings]
   }
   
-  @scala.inline
-  implicit class DestinationSettingsMutableBuilder[Self <: DestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationSettings](x: Self) {
     
-    @scala.inline
-    def setS3Settings(value: S3DestinationSettings): Self = StObject.set(x, "S3Settings", value.asInstanceOf[js.Any])
+    inline def setS3Settings(value: S3DestinationSettings): Self = StObject.set(x, "S3Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3SettingsUndefined: Self = StObject.set(x, "S3Settings", js.undefined)
+    inline def setS3SettingsUndefined: Self = StObject.set(x, "S3Settings", js.undefined)
   }
 }

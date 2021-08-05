@@ -11,19 +11,15 @@ trait PlaylistContentDetails extends StObject {
 }
 object PlaylistContentDetails {
   
-  @scala.inline
-  def apply(): PlaylistContentDetails = {
+  inline def apply(): PlaylistContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaylistContentDetails]
   }
   
-  @scala.inline
-  implicit class PlaylistContentDetailsMutableBuilder[Self <: PlaylistContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistContentDetails](x: Self) {
     
-    @scala.inline
-    def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
   }
 }

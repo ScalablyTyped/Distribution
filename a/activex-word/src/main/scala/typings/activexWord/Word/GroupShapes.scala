@@ -18,13 +18,12 @@ trait GroupShapes extends StObject {
   
   def Range(Index: js.Any): ShapeRange
   
-  @JSName("Word.GroupShapes_typekey")
+  /* private */ @JSName("Word.GroupShapes_typekey")
   var WordDotGroupShapes_typekey: GroupShapes
 }
 object GroupShapes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -38,28 +37,20 @@ object GroupShapes {
     __obj.asInstanceOf[GroupShapes]
   }
   
-  @scala.inline
-  implicit class GroupShapesMutableBuilder[Self <: GroupShapes] (val x: Self) extends AnyVal {
+  extension [Self <: GroupShapes](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: js.Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
+    inline def setRange(value: js.Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWordDotGroupShapes_typekey(value: GroupShapes): Self = StObject.set(x, "Word.GroupShapes_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotGroupShapes_typekey(value: GroupShapes): Self = StObject.set(x, "Word.GroupShapes_typekey", value.asInstanceOf[js.Any])
   }
 }

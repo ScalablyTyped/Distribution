@@ -32,32 +32,24 @@ object tabContentMod {
   }
   object TabContentProps {
     
-    @scala.inline
-    def apply(): TabContentProps = {
+    inline def apply(): TabContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabContentProps]
     }
     
-    @scala.inline
-    implicit class TabContentPropsMutableBuilder[Self <: TabContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabContentProps](x: Self) {
       
-      @scala.inline
-      def setActiveTab(value: Double | String): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+      inline def setActiveTab(value: Double | String): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+      inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

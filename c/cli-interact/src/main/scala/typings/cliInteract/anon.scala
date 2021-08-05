@@ -16,23 +16,18 @@ object anon {
   }
   object ChoiceOptionsreturnNumeri {
     
-    @scala.inline
-    def apply(returnNumeric: js.UndefOr[Boolean] & `true`): ChoiceOptionsreturnNumeri = {
+    inline def apply(returnNumeric: js.UndefOr[Boolean] & `true`): ChoiceOptionsreturnNumeri = {
       val __obj = js.Dynamic.literal(returnNumeric = returnNumeric.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChoiceOptionsreturnNumeri]
     }
     
-    @scala.inline
-    implicit class ChoiceOptionsreturnNumeriMutableBuilder[Self <: ChoiceOptionsreturnNumeri] (val x: Self) extends AnyVal {
+    extension [Self <: ChoiceOptionsreturnNumeri](x: Self) {
       
-      @scala.inline
-      def setAllowNoAnswer(value: Boolean): Self = StObject.set(x, "allowNoAnswer", value.asInstanceOf[js.Any])
+      inline def setAllowNoAnswer(value: Boolean): Self = StObject.set(x, "allowNoAnswer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNoAnswerUndefined: Self = StObject.set(x, "allowNoAnswer", js.undefined)
+      inline def setAllowNoAnswerUndefined: Self = StObject.set(x, "allowNoAnswer", js.undefined)
       
-      @scala.inline
-      def setReturnNumeric(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnNumeric", value.asInstanceOf[js.Any])
+      inline def setReturnNumeric(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnNumeric", value.asInstanceOf[js.Any])
     }
   }
 }

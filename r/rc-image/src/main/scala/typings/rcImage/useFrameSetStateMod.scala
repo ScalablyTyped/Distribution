@@ -11,8 +11,7 @@ object useFrameSetStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: js.Object */](initial: T): js.Tuple2[T, js.Function1[/* newState */ SetActionType[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initial.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* newState */ SetActionType[T], Unit]]]
+  inline def default[T /* <: js.Object */](initial: T): js.Tuple2[T, js.Function1[/* newState */ SetActionType[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initial.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* newState */ SetActionType[T], Unit]]]
   
   type SetActionType[T] = Partial[T] | (js.Function1[/* state */ T, Partial[T]])
 }

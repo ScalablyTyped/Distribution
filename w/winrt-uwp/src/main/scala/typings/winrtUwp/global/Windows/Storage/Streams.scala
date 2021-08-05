@@ -63,8 +63,7 @@ object Streams {
       * @return The newly created copy.
       */
     /* static member */
-    @scala.inline
-    def createCopyFromMemoryBuffer(input: IMemoryBuffer): typings.winrtUwp.Windows.Storage.Streams.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromMemoryBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.Buffer]
+    inline def createCopyFromMemoryBuffer(input: IMemoryBuffer): typings.winrtUwp.Windows.Storage.Streams.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromMemoryBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.Buffer]
     
     /**
       * Creates a MemoryBuffer from an existing IBuffer .
@@ -72,8 +71,7 @@ object Streams {
       * @return The newly created MemoryBuffer .
       */
     /* static member */
-    @scala.inline
-    def createMemoryBufferOverIBuffer(input: IBuffer): MemoryBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryBufferOverIBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[MemoryBuffer]
+    inline def createMemoryBufferOverIBuffer(input: IBuffer): MemoryBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryBufferOverIBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[MemoryBuffer]
   }
   
   /** Specifies the byte order of a stream. */
@@ -269,8 +267,7 @@ object Streams {
       * @return The data reader.
       */
     /* static member */
-    @scala.inline
-    def fromBuffer(buffer: IBuffer): typings.winrtUwp.Windows.Storage.Streams.DataReader = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.DataReader]
+    inline def fromBuffer(buffer: IBuffer): typings.winrtUwp.Windows.Storage.Streams.DataReader = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.DataReader]
   }
   
   /** Loads data from an input stream. */
@@ -672,8 +669,7 @@ object Streams {
       * @return The asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def copyAndCloseAsync(source: IInputStream, destination: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAndCloseAsync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[Double, Double]]
+    inline def copyAndCloseAsync(source: IInputStream, destination: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAndCloseAsync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[Double, Double]]
     
     /**
       * Copies a source stream to a destination stream.
@@ -682,8 +678,7 @@ object Streams {
       * @return The asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def copyAsync(source: IInputStream, destination: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[Double, Double]]
+    inline def copyAsync(source: IInputStream, destination: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[Double, Double]]
     /**
       * Copies the specified number of bytes from a source stream to a destination stream.
       * @param source The stream to copy data from.
@@ -692,8 +687,7 @@ object Streams {
       * @return The asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def copyAsync(source: IInputStream, destination: IOutputStream, bytesToCopy: Double): IPromiseWithIAsyncOperationWithProgress[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], bytesToCopy.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[Double, Double]]
+    inline def copyAsync(source: IInputStream, destination: IOutputStream, bytesToCopy: Double): IPromiseWithIAsyncOperationWithProgress[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], bytesToCopy.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[Double, Double]]
   }
   
   /** Provides a Windows Runtime random access stream for an IStream base implementation. */
@@ -805,8 +799,7 @@ object Streams {
       * @return The stream that encapsulates file.
       */
     /* static member */
-    @scala.inline
-    def createFromFile(file: IStorageFile): typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(file.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference]
+    inline def createFromFile(file: IStorageFile): typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(file.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference]
     
     /**
       * Creates a random access stream around the specified stream.
@@ -814,8 +807,7 @@ object Streams {
       * @return The random access stream that encapsulates stream.
       */
     /* static member */
-    @scala.inline
-    def createFromStream(stream: IRandomAccessStream): typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference]
+    inline def createFromStream(stream: IRandomAccessStream): typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference]
     
     /**
       * Creates a random access stream around the specified URI.
@@ -823,8 +815,7 @@ object Streams {
       * @return The random access stream that encapsulates uri.
       */
     /* static member */
-    @scala.inline
-    def createFromUri(uri: Uri): typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromUri")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference]
+    inline def createFromUri(uri: Uri): typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromUri")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference]
   }
   
   /** Specifies the type of character encoding for a stream. */

@@ -40,26 +40,20 @@ object triangulationMod {
   }
   object Triangle {
     
-    @scala.inline
-    def apply(source: js.Array[Coordinate], target: js.Array[Coordinate]): Triangle = {
+    inline def apply(source: js.Array[Coordinate], target: js.Array[Coordinate]): Triangle = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Triangle]
     }
     
-    @scala.inline
-    implicit class TriangleMutableBuilder[Self <: Triangle] (val x: Self) extends AnyVal {
+    extension [Self <: Triangle](x: Self) {
       
-      @scala.inline
-      def setSource(value: js.Array[Coordinate]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Array[Coordinate]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceVarargs(value: Coordinate*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: Coordinate*): Self = StObject.set(x, "source", js.Array(value :_*))
       
-      @scala.inline
-      def setTarget(value: js.Array[Coordinate]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Array[Coordinate]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetVarargs(value: Coordinate*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: Coordinate*): Self = StObject.set(x, "target", js.Array(value :_*))
     }
   }
   
@@ -74,20 +68,16 @@ object triangulationMod {
   }
   object Triangulation {
     
-    @scala.inline
-    def apply(calculateSourceExtent: () => Extent, getTriangles: () => js.Array[Triangle]): Triangulation = {
+    inline def apply(calculateSourceExtent: () => Extent, getTriangles: () => js.Array[Triangle]): Triangulation = {
       val __obj = js.Dynamic.literal(calculateSourceExtent = js.Any.fromFunction0(calculateSourceExtent), getTriangles = js.Any.fromFunction0(getTriangles))
       __obj.asInstanceOf[Triangulation]
     }
     
-    @scala.inline
-    implicit class TriangulationMutableBuilder[Self <: Triangulation] (val x: Self) extends AnyVal {
+    extension [Self <: Triangulation](x: Self) {
       
-      @scala.inline
-      def setCalculateSourceExtent(value: () => Extent): Self = StObject.set(x, "calculateSourceExtent", js.Any.fromFunction0(value))
+      inline def setCalculateSourceExtent(value: () => Extent): Self = StObject.set(x, "calculateSourceExtent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTriangles(value: () => js.Array[Triangle]): Self = StObject.set(x, "getTriangles", js.Any.fromFunction0(value))
+      inline def setGetTriangles(value: () => js.Array[Triangle]): Self = StObject.set(x, "getTriangles", js.Any.fromFunction0(value))
     }
   }
 }

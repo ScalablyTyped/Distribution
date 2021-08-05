@@ -21,6 +21,5 @@ object PositioningContainer {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "PositioningContainer.defaultProps")
   @js.native
   def defaultProps: IPositioningContainerProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IPositioningContainerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IPositioningContainerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

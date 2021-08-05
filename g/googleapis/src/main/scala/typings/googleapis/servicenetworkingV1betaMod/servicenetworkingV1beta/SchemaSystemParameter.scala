@@ -31,31 +31,23 @@ trait SchemaSystemParameter extends StObject {
 }
 object SchemaSystemParameter {
   
-  @scala.inline
-  def apply(): SchemaSystemParameter = {
+  inline def apply(): SchemaSystemParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSystemParameter]
   }
   
-  @scala.inline
-  implicit class SchemaSystemParameterMutableBuilder[Self <: SchemaSystemParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSystemParameter](x: Self) {
     
-    @scala.inline
-    def setHttpHeader(value: String): Self = StObject.set(x, "httpHeader", value.asInstanceOf[js.Any])
+    inline def setHttpHeader(value: String): Self = StObject.set(x, "httpHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeaderUndefined: Self = StObject.set(x, "httpHeader", js.undefined)
+    inline def setHttpHeaderUndefined: Self = StObject.set(x, "httpHeader", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUrlQueryParameter(value: String): Self = StObject.set(x, "urlQueryParameter", value.asInstanceOf[js.Any])
+    inline def setUrlQueryParameter(value: String): Self = StObject.set(x, "urlQueryParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlQueryParameterUndefined: Self = StObject.set(x, "urlQueryParameter", js.undefined)
+    inline def setUrlQueryParameterUndefined: Self = StObject.set(x, "urlQueryParameter", js.undefined)
   }
 }

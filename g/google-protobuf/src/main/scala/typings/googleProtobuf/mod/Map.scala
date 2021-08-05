@@ -49,8 +49,7 @@ object Map {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromObject[TK, TV](entries: js.Array[js.Tuple2[TK, TV]], valueCtor: js.Any, valueFromObject: js.Any): Map[TK, TV] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(entries.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any], valueFromObject.asInstanceOf[js.Any])).asInstanceOf[Map[TK, TV]]
+  inline def fromObject[TK, TV](entries: js.Array[js.Tuple2[TK, TV]], valueCtor: js.Any, valueFromObject: js.Any): Map[TK, TV] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(entries.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any], valueFromObject.asInstanceOf[js.Any])).asInstanceOf[Map[TK, TV]]
   
   // This is implemented by jspb.Map.ArrayIteratorIterable_, but that class shouldn't be exported
   trait Iterator[T] extends StObject {
@@ -59,17 +58,14 @@ object Map {
   }
   object Iterator {
     
-    @scala.inline
-    def apply[T](next: () => IteratorResult[T]): Iterator[T] = {
+    inline def apply[T](next: () => IteratorResult[T]): Iterator[T] = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[Iterator[T]]
     }
     
-    @scala.inline
-    implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
+    extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
       
-      @scala.inline
-      def setNext(value: () => IteratorResult[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => IteratorResult[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   
@@ -81,20 +77,16 @@ object Map {
   }
   object IteratorResult {
     
-    @scala.inline
-    def apply[T](done: Boolean, value: T): IteratorResult[T] = {
+    inline def apply[T](done: Boolean, value: T): IteratorResult[T] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IteratorResult[T]]
     }
     
-    @scala.inline
-    implicit class IteratorResultMutableBuilder[Self <: IteratorResult[?], T] (val x: Self & IteratorResult[T]) extends AnyVal {
+    extension [Self <: IteratorResult[?], T](x: Self & IteratorResult[T]) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

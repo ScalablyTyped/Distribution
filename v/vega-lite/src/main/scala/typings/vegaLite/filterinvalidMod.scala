@@ -35,7 +35,6 @@ object filterinvalidMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def make(parent: DataFlowNode, model: UnitModel): FilterInvalidNode = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[FilterInvalidNode]
+    inline def make(parent: DataFlowNode, model: UnitModel): FilterInvalidNode = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[FilterInvalidNode]
   }
 }

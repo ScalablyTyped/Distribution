@@ -19,8 +19,7 @@ trait XDrawPageSummarizer
 }
 object XDrawPageSummarizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -30,10 +29,8 @@ object XDrawPageSummarizer {
     __obj.asInstanceOf[XDrawPageSummarizer]
   }
   
-  @scala.inline
-  implicit class XDrawPageSummarizerMutableBuilder[Self <: XDrawPageSummarizer] (val x: Self) extends AnyVal {
+  extension [Self <: XDrawPageSummarizer](x: Self) {
     
-    @scala.inline
-    def setSummarize(value: XDrawPages => XDrawPage): Self = StObject.set(x, "summarize", js.Any.fromFunction1(value))
+    inline def setSummarize(value: XDrawPages => XDrawPage): Self = StObject.set(x, "summarize", js.Any.fromFunction1(value))
   }
 }

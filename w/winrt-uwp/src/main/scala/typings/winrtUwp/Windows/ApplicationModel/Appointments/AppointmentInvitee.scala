@@ -21,8 +21,7 @@ trait AppointmentInvitee extends StObject {
 }
 object AppointmentInvitee {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     displayName: String,
     response: AppointmentParticipantResponse,
@@ -32,19 +31,14 @@ object AppointmentInvitee {
     __obj.asInstanceOf[AppointmentInvitee]
   }
   
-  @scala.inline
-  implicit class AppointmentInviteeMutableBuilder[Self <: AppointmentInvitee] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentInvitee](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: AppointmentParticipantResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: AppointmentParticipantResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: AppointmentParticipantRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AppointmentParticipantRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

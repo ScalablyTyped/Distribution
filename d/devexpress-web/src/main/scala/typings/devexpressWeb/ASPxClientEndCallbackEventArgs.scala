@@ -18,16 +18,13 @@ trait ASPxClientEndCallbackEventArgs
 }
 object ASPxClientEndCallbackEventArgs {
   
-  @scala.inline
-  def apply(command: String): ASPxClientEndCallbackEventArgs = {
+  inline def apply(command: String): ASPxClientEndCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientEndCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientEndCallbackEventArgsMutableBuilder[Self <: ASPxClientEndCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientEndCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

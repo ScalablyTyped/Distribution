@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTrailingCharacter extends StObject
 object WdTrailingCharacter {
   
-  @scala.inline
-  def wdTrailingNone: `2` = 2.asInstanceOf[`2`]
+  inline def wdTrailingNone: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdTrailingSpace: `1` = 1.asInstanceOf[`1`]
+  inline def wdTrailingSpace: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTrailingTab: `0` = 0.asInstanceOf[`0`]
+  inline def wdTrailingTab: `0` = 0.asInstanceOf[`0`]
 }

@@ -10,16 +10,13 @@ trait NodeEventTarget extends StObject {
 }
 object NodeEventTarget {
   
-  @scala.inline
-  def apply(addListener: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): NodeEventTarget = {
+  inline def apply(addListener: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): NodeEventTarget = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener))
     __obj.asInstanceOf[NodeEventTarget]
   }
   
-  @scala.inline
-  implicit class NodeEventTargetMutableBuilder[Self <: NodeEventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: NodeEventTarget](x: Self) {
     
-    @scala.inline
-    def setAddListener(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+    inline def setAddListener(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
   }
 }

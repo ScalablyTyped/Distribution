@@ -11,19 +11,15 @@ trait RenameQueryResult extends StObject {
 }
 object RenameQueryResult {
   
-  @scala.inline
-  def apply(changes: js.Array[typings.tern.anon.File]): RenameQueryResult = {
+  inline def apply(changes: js.Array[typings.tern.anon.File]): RenameQueryResult = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameQueryResult]
   }
   
-  @scala.inline
-  implicit class RenameQueryResultMutableBuilder[Self <: RenameQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: RenameQueryResult](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[typings.tern.anon.File]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[typings.tern.anon.File]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: typings.tern.anon.File*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: typings.tern.anon.File*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

@@ -24,7 +24,7 @@ trait Attachments extends StObject {
   
   def Item(Index: js.Any): Attachment = js.native
   
-  @JSName("Outlook.Attachments_typekey")
+  /* private */ @JSName("Outlook.Attachments_typekey")
   var OutlookDotAttachments_typekey: Attachments = js.native
   
   val Parent: js.Any = js.native

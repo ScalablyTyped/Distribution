@@ -11,19 +11,15 @@ trait PrimaryGenres extends StObject {
 }
 object PrimaryGenres {
   
-  @scala.inline
-  def apply(music_genre_list: js.Array[Musicgenre]): PrimaryGenres = {
+  inline def apply(music_genre_list: js.Array[Musicgenre]): PrimaryGenres = {
     val __obj = js.Dynamic.literal(music_genre_list = music_genre_list.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryGenres]
   }
   
-  @scala.inline
-  implicit class PrimaryGenresMutableBuilder[Self <: PrimaryGenres] (val x: Self) extends AnyVal {
+  extension [Self <: PrimaryGenres](x: Self) {
     
-    @scala.inline
-    def setMusic_genre_list(value: js.Array[Musicgenre]): Self = StObject.set(x, "music_genre_list", value.asInstanceOf[js.Any])
+    inline def setMusic_genre_list(value: js.Array[Musicgenre]): Self = StObject.set(x, "music_genre_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMusic_genre_listVarargs(value: Musicgenre*): Self = StObject.set(x, "music_genre_list", js.Array(value :_*))
+    inline def setMusic_genre_listVarargs(value: Musicgenre*): Self = StObject.set(x, "music_genre_list", js.Array(value :_*))
   }
 }

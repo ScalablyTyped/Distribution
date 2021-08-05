@@ -18,8 +18,7 @@ trait JSXOpeningElement
 }
 object JSXOpeningElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
     name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName,
     selfClosing: Boolean
@@ -29,19 +28,14 @@ object JSXOpeningElement {
     __obj.asInstanceOf[JSXOpeningElement]
   }
   
-  @scala.inline
-  implicit class JSXOpeningElementMutableBuilder[Self <: JSXOpeningElement] (val x: Self) extends AnyVal {
+  extension [Self <: JSXOpeningElement](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[JSXAttribute | JSXSpreadAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[JSXAttribute | JSXSpreadAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: (JSXAttribute | JSXSpreadAttribute)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: (JSXAttribute | JSXSpreadAttribute)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
+    inline def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXOpeningElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXOpeningElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait Pair extends StObject {
 }
 object Pair {
   
-  @scala.inline
-  def apply(left: Bezier, right: Bezier): Pair = {
+  inline def apply(left: Bezier, right: Bezier): Pair = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pair]
   }
   
-  @scala.inline
-  implicit class PairMutableBuilder[Self <: Pair] (val x: Self) extends AnyVal {
+  extension [Self <: Pair](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Bezier): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Bezier): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Bezier): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Bezier): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

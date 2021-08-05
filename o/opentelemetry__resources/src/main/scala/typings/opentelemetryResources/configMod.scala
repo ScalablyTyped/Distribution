@@ -17,29 +17,22 @@ object configMod {
   }
   object ResourceDetectionConfig {
     
-    @scala.inline
-    def apply(): ResourceDetectionConfig = {
+    inline def apply(): ResourceDetectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceDetectionConfig]
     }
     
-    @scala.inline
-    implicit class ResourceDetectionConfigMutableBuilder[Self <: ResourceDetectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceDetectionConfig](x: Self) {
       
-      @scala.inline
-      def setDetectors(value: js.Array[Detector]): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
+      inline def setDetectors(value: js.Array[Detector]): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorsUndefined: Self = StObject.set(x, "detectors", js.undefined)
+      inline def setDetectorsUndefined: Self = StObject.set(x, "detectors", js.undefined)
       
-      @scala.inline
-      def setDetectorsVarargs(value: Detector*): Self = StObject.set(x, "detectors", js.Array(value :_*))
+      inline def setDetectorsVarargs(value: Detector*): Self = StObject.set(x, "detectors", js.Array(value :_*))
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     }
   }
   
@@ -53,17 +46,14 @@ object configMod {
   }
   object ResourceDetectionConfigWithLogger {
     
-    @scala.inline
-    def apply(logger: Logger): ResourceDetectionConfigWithLogger = {
+    inline def apply(logger: Logger): ResourceDetectionConfigWithLogger = {
       val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceDetectionConfigWithLogger]
     }
     
-    @scala.inline
-    implicit class ResourceDetectionConfigWithLoggerMutableBuilder[Self <: ResourceDetectionConfigWithLogger] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceDetectionConfigWithLogger](x: Self) {
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
   }
 }

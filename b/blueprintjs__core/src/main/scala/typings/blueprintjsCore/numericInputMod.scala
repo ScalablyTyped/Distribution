@@ -28,59 +28,59 @@ object numericInputMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MNumericInput(prevProps: INumericInputProps, prevState: INumericInputState): Unit = js.native
     
-    var decrementButtonHandlers: js.Any = js.native
+    /* private */ var decrementButtonHandlers: js.Any = js.native
     
-    var delta: js.Any = js.native
+    /* private */ var delta: js.Any = js.native
     
-    var didPasteEventJustOccur: js.Any = js.native
+    /* private */ var didPasteEventJustOccur: js.Any = js.native
     
-    var getButtonEventHandlers: js.Any = js.native
+    /* private */ var getButtonEventHandlers: js.Any = js.native
     
-    var getIncrementDelta: js.Any = js.native
+    /* private */ var getIncrementDelta: js.Any = js.native
     
-    var handleButtonClick: js.Any = js.native
+    /* private */ var handleButtonClick: js.Any = js.native
     
-    var handleCompositionEnd: js.Any = js.native
+    /* private */ var handleCompositionEnd: js.Any = js.native
     
-    var handleCompositionUpdate: js.Any = js.native
+    /* private */ var handleCompositionUpdate: js.Any = js.native
     
-    var handleContinuousChange: js.Any = js.native
+    /* private */ var handleContinuousChange: js.Any = js.native
     
-    var handleInputBlur: js.Any = js.native
+    /* private */ var handleInputBlur: js.Any = js.native
     
-    var handleInputChange: js.Any = js.native
+    /* private */ var handleInputChange: js.Any = js.native
     
-    var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputFocus: js.Any = js.native
     
-    var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputKeyDown: js.Any = js.native
     
-    var handleInputKeyPress: js.Any = js.native
+    /* private */ var handleInputKeyPress: js.Any = js.native
     
-    var handleInputPaste: js.Any = js.native
+    /* private */ var handleInputPaste: js.Any = js.native
     
-    var handleNextValue: js.Any = js.native
+    /* private */ var handleNextValue: js.Any = js.native
     
-    var incrementButtonHandlers: js.Any = js.native
+    /* private */ var incrementButtonHandlers: js.Any = js.native
     
-    var incrementValue: js.Any = js.native
+    /* private */ var incrementValue: js.Any = js.native
     
-    var inputElement: js.Any = js.native
+    /* private */ var inputElement: js.Any = js.native
     
-    var inputRef: js.Any = js.native
+    /* private */ var inputRef: js.Any = js.native
     
-    var intervalId: js.Any = js.native
+    /* private */ var intervalId: js.Any = js.native
     
-    var renderButtons: js.Any = js.native
+    /* private */ var renderButtons: js.Any = js.native
     
-    var renderInput: js.Any = js.native
+    /* private */ var renderInput: js.Any = js.native
     
-    var roundAndClampValue: js.Any = js.native
+    /* private */ var roundAndClampValue: js.Any = js.native
     
-    var startContinuousChange: js.Any = js.native
+    /* private */ var startContinuousChange: js.Any = js.native
     
-    var stopContinuousChange: js.Any = js.native
+    /* private */ var stopContinuousChange: js.Any = js.native
     
-    var updateDelta: js.Any = js.native
+    /* private */ var updateDelta: js.Any = js.native
   }
   /* static members */
   object NumericInput {
@@ -92,53 +92,44 @@ object numericInputMod {
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.CONTINUOUS_CHANGE_DELAY")
     @js.native
     def CONTINUOUS_CHANGE_DELAY: js.Any = js.native
-    @scala.inline
-    def CONTINUOUS_CHANGE_DELAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_DELAY")(x.asInstanceOf[js.Any])
+    inline def CONTINUOUS_CHANGE_DELAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_DELAY")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.CONTINUOUS_CHANGE_INTERVAL")
     @js.native
     def CONTINUOUS_CHANGE_INTERVAL: js.Any = js.native
-    @scala.inline
-    def CONTINUOUS_CHANGE_INTERVAL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_INTERVAL")(x.asInstanceOf[js.Any])
+    inline def CONTINUOUS_CHANGE_INTERVAL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_INTERVAL")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.VALUE_EMPTY")
     @js.native
     def VALUE_EMPTY: String = js.native
-    @scala.inline
-    def VALUE_EMPTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_EMPTY")(x.asInstanceOf[js.Any])
+    inline def VALUE_EMPTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_EMPTY")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.VALUE_ZERO")
     @js.native
     def VALUE_ZERO: String = js.native
-    @scala.inline
-    def VALUE_ZERO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_ZERO")(x.asInstanceOf[js.Any])
+    inline def VALUE_ZERO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_ZERO")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.defaultProps")
     @js.native
     def defaultProps: INumericInputProps = js.native
-    @scala.inline
-    def defaultProps_=(x: INumericInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: INumericInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrevMaxProp]
+    inline def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrevMaxProp]
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.getStepMaxPrecision")
     @js.native
     def getStepMaxPrecision: js.Any = js.native
-    @scala.inline
-    def getStepMaxPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStepMaxPrecision")(x.asInstanceOf[js.Any])
+    inline def getStepMaxPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStepMaxPrecision")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.roundAndClampValue")
     @js.native
     def roundAndClampValue: js.Any = js.native
-    @scala.inline
-    def roundAndClampValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundAndClampValue")(x.asInstanceOf[js.Any])
+    inline def roundAndClampValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundAndClampValue")(x.asInstanceOf[js.Any])
   }
   
   trait INumericInputProps
@@ -283,163 +274,112 @@ object numericInputMod {
   }
   object INumericInputProps {
     
-    @scala.inline
-    def apply(): INumericInputProps = {
+    inline def apply(): INumericInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[INumericInputProps]
     }
     
-    @scala.inline
-    implicit class INumericInputPropsMutableBuilder[Self <: INumericInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: INumericInputProps](x: Self) {
       
-      @scala.inline
-      def setAllowNumericCharactersOnly(value: Boolean): Self = StObject.set(x, "allowNumericCharactersOnly", value.asInstanceOf[js.Any])
+      inline def setAllowNumericCharactersOnly(value: Boolean): Self = StObject.set(x, "allowNumericCharactersOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNumericCharactersOnlyUndefined: Self = StObject.set(x, "allowNumericCharactersOnly", js.undefined)
+      inline def setAllowNumericCharactersOnlyUndefined: Self = StObject.set(x, "allowNumericCharactersOnly", js.undefined)
       
-      @scala.inline
-      def setAsyncControl(value: Boolean): Self = StObject.set(x, "asyncControl", value.asInstanceOf[js.Any])
+      inline def setAsyncControl(value: Boolean): Self = StObject.set(x, "asyncControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncControlUndefined: Self = StObject.set(x, "asyncControl", js.undefined)
+      inline def setAsyncControlUndefined: Self = StObject.set(x, "asyncControl", js.undefined)
       
-      @scala.inline
-      def setButtonPosition(value: left | right | none): Self = StObject.set(x, "buttonPosition", value.asInstanceOf[js.Any])
+      inline def setButtonPosition(value: left | right | none): Self = StObject.set(x, "buttonPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
+      inline def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
       
-      @scala.inline
-      def setClampValueOnBlur(value: Boolean): Self = StObject.set(x, "clampValueOnBlur", value.asInstanceOf[js.Any])
+      inline def setClampValueOnBlur(value: Boolean): Self = StObject.set(x, "clampValueOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClampValueOnBlurUndefined: Self = StObject.set(x, "clampValueOnBlur", js.undefined)
+      inline def setClampValueOnBlurUndefined: Self = StObject.set(x, "clampValueOnBlur", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Double | String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Double | String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: /* ref */ HTMLInputElement | Null => js.Any): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRef(value: /* ref */ HTMLInputElement | Null => js.Any): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+      inline def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
+      inline def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
       
-      @scala.inline
-      def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
+      inline def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMajorStepSize(value: Double): Self = StObject.set(x, "majorStepSize", value.asInstanceOf[js.Any])
+      inline def setMajorStepSize(value: Double): Self = StObject.set(x, "majorStepSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorStepSizeNull: Self = StObject.set(x, "majorStepSize", null)
+      inline def setMajorStepSizeNull: Self = StObject.set(x, "majorStepSize", null)
       
-      @scala.inline
-      def setMajorStepSizeUndefined: Self = StObject.set(x, "majorStepSize", js.undefined)
+      inline def setMajorStepSizeUndefined: Self = StObject.set(x, "majorStepSize", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setMinorStepSize(value: Double): Self = StObject.set(x, "minorStepSize", value.asInstanceOf[js.Any])
+      inline def setMinorStepSize(value: Double): Self = StObject.set(x, "minorStepSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorStepSizeNull: Self = StObject.set(x, "minorStepSize", null)
+      inline def setMinorStepSizeNull: Self = StObject.set(x, "minorStepSize", null)
       
-      @scala.inline
-      def setMinorStepSizeUndefined: Self = StObject.set(x, "minorStepSize", js.undefined)
+      inline def setMinorStepSizeUndefined: Self = StObject.set(x, "minorStepSize", js.undefined)
       
-      @scala.inline
-      def setOnButtonClick(value: (/* valueAsNumber */ Double, /* valueAsString */ String) => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction2(value))
+      inline def setOnButtonClick(value: (/* valueAsNumber */ Double, /* valueAsString */ String) => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnButtonClickUndefined: Self = StObject.set(x, "onButtonClick", js.undefined)
+      inline def setOnButtonClickUndefined: Self = StObject.set(x, "onButtonClick", js.undefined)
       
-      @scala.inline
-      def setOnValueChange(
+      inline def setOnValueChange(
         value: (/* valueAsNumber */ Double, /* valueAsString */ String, /* inputElement */ HTMLInputElement | Null) => Unit
       ): Self = StObject.set(x, "onValueChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+      inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
+      inline def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
+      inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
       
-      @scala.inline
-      def setSelectAllOnFocus(value: Boolean): Self = StObject.set(x, "selectAllOnFocus", value.asInstanceOf[js.Any])
+      inline def setSelectAllOnFocus(value: Boolean): Self = StObject.set(x, "selectAllOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllOnFocusUndefined: Self = StObject.set(x, "selectAllOnFocus", js.undefined)
+      inline def setSelectAllOnFocusUndefined: Self = StObject.set(x, "selectAllOnFocus", js.undefined)
       
-      @scala.inline
-      def setSelectAllOnIncrement(value: Boolean): Self = StObject.set(x, "selectAllOnIncrement", value.asInstanceOf[js.Any])
+      inline def setSelectAllOnIncrement(value: Boolean): Self = StObject.set(x, "selectAllOnIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllOnIncrementUndefined: Self = StObject.set(x, "selectAllOnIncrement", js.undefined)
+      inline def setSelectAllOnIncrementUndefined: Self = StObject.set(x, "selectAllOnIncrement", js.undefined)
       
-      @scala.inline
-      def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
+      inline def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepSizeUndefined: Self = StObject.set(x, "stepSize", js.undefined)
+      inline def setStepSizeUndefined: Self = StObject.set(x, "stepSize", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -459,8 +399,7 @@ object numericInputMod {
   }
   object INumericInputState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentImeInputInvalid: Boolean,
       shouldSelectAfterUpdate: Boolean,
       stepMaxPrecision: Double,
@@ -470,32 +409,23 @@ object numericInputMod {
       __obj.asInstanceOf[INumericInputState]
     }
     
-    @scala.inline
-    implicit class INumericInputStateMutableBuilder[Self <: INumericInputState] (val x: Self) extends AnyVal {
+    extension [Self <: INumericInputState](x: Self) {
       
-      @scala.inline
-      def setCurrentImeInputInvalid(value: Boolean): Self = StObject.set(x, "currentImeInputInvalid", value.asInstanceOf[js.Any])
+      inline def setCurrentImeInputInvalid(value: Boolean): Self = StObject.set(x, "currentImeInputInvalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMaxProp(value: Double): Self = StObject.set(x, "prevMaxProp", value.asInstanceOf[js.Any])
+      inline def setPrevMaxProp(value: Double): Self = StObject.set(x, "prevMaxProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMaxPropUndefined: Self = StObject.set(x, "prevMaxProp", js.undefined)
+      inline def setPrevMaxPropUndefined: Self = StObject.set(x, "prevMaxProp", js.undefined)
       
-      @scala.inline
-      def setPrevMinProp(value: Double): Self = StObject.set(x, "prevMinProp", value.asInstanceOf[js.Any])
+      inline def setPrevMinProp(value: Double): Self = StObject.set(x, "prevMinProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMinPropUndefined: Self = StObject.set(x, "prevMinProp", js.undefined)
+      inline def setPrevMinPropUndefined: Self = StObject.set(x, "prevMinProp", js.undefined)
       
-      @scala.inline
-      def setShouldSelectAfterUpdate(value: Boolean): Self = StObject.set(x, "shouldSelectAfterUpdate", value.asInstanceOf[js.Any])
+      inline def setShouldSelectAfterUpdate(value: Boolean): Self = StObject.set(x, "shouldSelectAfterUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepMaxPrecision(value: Double): Self = StObject.set(x, "stepMaxPrecision", value.asInstanceOf[js.Any])
+      inline def setStepMaxPrecision(value: Double): Self = StObject.set(x, "stepMaxPrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

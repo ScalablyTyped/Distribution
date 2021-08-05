@@ -39,12 +39,8 @@ object Material {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Material]
-  @scala.inline
-  def create(value: String): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Material]
-  @scala.inline
-  def create(value: Color): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Material]
-  @scala.inline
-  def create(value: Material): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Material]
+  inline def create(): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Material]
+  inline def create(value: String): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Material]
+  inline def create(value: Color): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Material]
+  inline def create(value: Material): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Material]
 }

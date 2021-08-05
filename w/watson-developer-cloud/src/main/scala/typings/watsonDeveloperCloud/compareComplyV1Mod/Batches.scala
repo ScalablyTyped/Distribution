@@ -12,22 +12,17 @@ trait Batches extends StObject {
 }
 object Batches {
   
-  @scala.inline
-  def apply(): Batches = {
+  inline def apply(): Batches = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Batches]
   }
   
-  @scala.inline
-  implicit class BatchesMutableBuilder[Self <: Batches] (val x: Self) extends AnyVal {
+  extension [Self <: Batches](x: Self) {
     
-    @scala.inline
-    def setBatches(value: js.Array[BatchStatus]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
+    inline def setBatches(value: js.Array[BatchStatus]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
+    inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
     
-    @scala.inline
-    def setBatchesVarargs(value: BatchStatus*): Self = StObject.set(x, "batches", js.Array(value :_*))
+    inline def setBatchesVarargs(value: BatchStatus*): Self = StObject.set(x, "batches", js.Array(value :_*))
   }
 }

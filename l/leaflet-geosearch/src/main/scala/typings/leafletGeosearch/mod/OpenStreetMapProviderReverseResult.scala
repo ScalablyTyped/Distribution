@@ -20,28 +20,21 @@ trait OpenStreetMapProviderReverseResult extends StObject {
 }
 object OpenStreetMapProviderReverseResult {
   
-  @scala.inline
-  def apply(bounds: BoundsTuple, label: String, raw: Address, x: String, y: String): OpenStreetMapProviderReverseResult = {
+  inline def apply(bounds: BoundsTuple, label: String, raw: Address, x: String, y: String): OpenStreetMapProviderReverseResult = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderReverseResult]
   }
   
-  @scala.inline
-  implicit class OpenStreetMapProviderReverseResultMutableBuilder[Self <: OpenStreetMapProviderReverseResult] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStreetMapProviderReverseResult](x: Self) {
     
-    @scala.inline
-    def setBounds(value: BoundsTuple): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: BoundsTuple): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: Address): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Address): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

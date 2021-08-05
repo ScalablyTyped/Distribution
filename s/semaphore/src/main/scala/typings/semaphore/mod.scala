@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Semaphore = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Semaphore]
-  @scala.inline
-  def apply(capacity: Double): Semaphore = ^.asInstanceOf[js.Dynamic].apply(capacity.asInstanceOf[js.Any]).asInstanceOf[Semaphore]
+  inline def apply(): Semaphore = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Semaphore]
+  inline def apply(capacity: Double): Semaphore = ^.asInstanceOf[js.Dynamic].apply(capacity.asInstanceOf[js.Any]).asInstanceOf[Semaphore]
   
   @JSImport("semaphore", JSImport.Namespace)
   @js.native

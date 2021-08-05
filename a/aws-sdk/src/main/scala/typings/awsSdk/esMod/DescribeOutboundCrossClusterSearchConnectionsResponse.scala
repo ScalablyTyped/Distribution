@@ -18,28 +18,21 @@ trait DescribeOutboundCrossClusterSearchConnectionsResponse extends StObject {
 }
 object DescribeOutboundCrossClusterSearchConnectionsResponse {
   
-  @scala.inline
-  def apply(): DescribeOutboundCrossClusterSearchConnectionsResponse = {
+  inline def apply(): DescribeOutboundCrossClusterSearchConnectionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOutboundCrossClusterSearchConnectionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOutboundCrossClusterSearchConnectionsResponseMutableBuilder[Self <: DescribeOutboundCrossClusterSearchConnectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOutboundCrossClusterSearchConnectionsResponse](x: Self) {
     
-    @scala.inline
-    def setCrossClusterSearchConnections(value: OutboundCrossClusterSearchConnections): Self = StObject.set(x, "CrossClusterSearchConnections", value.asInstanceOf[js.Any])
+    inline def setCrossClusterSearchConnections(value: OutboundCrossClusterSearchConnections): Self = StObject.set(x, "CrossClusterSearchConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossClusterSearchConnectionsUndefined: Self = StObject.set(x, "CrossClusterSearchConnections", js.undefined)
+    inline def setCrossClusterSearchConnectionsUndefined: Self = StObject.set(x, "CrossClusterSearchConnections", js.undefined)
     
-    @scala.inline
-    def setCrossClusterSearchConnectionsVarargs(value: OutboundCrossClusterSearchConnection*): Self = StObject.set(x, "CrossClusterSearchConnections", js.Array(value :_*))
+    inline def setCrossClusterSearchConnectionsVarargs(value: OutboundCrossClusterSearchConnection*): Self = StObject.set(x, "CrossClusterSearchConnections", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

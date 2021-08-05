@@ -54,8 +54,7 @@ object Gamepad {
   }
   object Gamepad {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axes: js.Array[Double],
       buttons: js.Array[GamepadButton],
       connected: Boolean,
@@ -68,35 +67,25 @@ object Gamepad {
       __obj.asInstanceOf[typings.w3cGamepad.Gamepad.Gamepad]
     }
     
-    @scala.inline
-    implicit class GamepadMutableBuilder[Self <: typings.w3cGamepad.Gamepad.Gamepad] (val x: Self) extends AnyVal {
+    extension [Self <: typings.w3cGamepad.Gamepad.Gamepad](x: Self) {
       
-      @scala.inline
-      def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
       
-      @scala.inline
-      def setButtons(value: js.Array[GamepadButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[GamepadButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsVarargs(value: GamepadButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: GamepadButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,20 +97,16 @@ object Gamepad {
   }
   object GamepadButton {
     
-    @scala.inline
-    def apply(pressed: Boolean, value: Double): GamepadButton = {
+    inline def apply(pressed: Boolean, value: Double): GamepadButton = {
       val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[GamepadButton]
     }
     
-    @scala.inline
-    implicit class GamepadButtonMutableBuilder[Self <: GamepadButton] (val x: Self) extends AnyVal {
+    extension [Self <: GamepadButton](x: Self) {
       
-      @scala.inline
-      def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+      inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,17 +130,14 @@ object Gamepad {
   }
   object GamepadList {
     
-    @scala.inline
-    def apply(length: Double): GamepadList = {
+    inline def apply(length: Double): GamepadList = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[GamepadList]
     }
     
-    @scala.inline
-    implicit class GamepadListMutableBuilder[Self <: GamepadList] (val x: Self) extends AnyVal {
+    extension [Self <: GamepadList](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
 }

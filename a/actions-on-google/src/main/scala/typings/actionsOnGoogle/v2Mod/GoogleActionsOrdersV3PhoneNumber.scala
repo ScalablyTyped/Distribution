@@ -40,31 +40,23 @@ trait GoogleActionsOrdersV3PhoneNumber extends StObject {
 }
 object GoogleActionsOrdersV3PhoneNumber {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3PhoneNumber = {
+  inline def apply(): GoogleActionsOrdersV3PhoneNumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3PhoneNumber]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3PhoneNumberMutableBuilder[Self <: GoogleActionsOrdersV3PhoneNumber] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3PhoneNumber](x: Self) {
     
-    @scala.inline
-    def setE164PhoneNumber(value: String): Self = StObject.set(x, "e164PhoneNumber", value.asInstanceOf[js.Any])
+    inline def setE164PhoneNumber(value: String): Self = StObject.set(x, "e164PhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE164PhoneNumberUndefined: Self = StObject.set(x, "e164PhoneNumber", js.undefined)
+    inline def setE164PhoneNumberUndefined: Self = StObject.set(x, "e164PhoneNumber", js.undefined)
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setPreferredDomesticCarrierCode(value: String): Self = StObject.set(x, "preferredDomesticCarrierCode", value.asInstanceOf[js.Any])
+    inline def setPreferredDomesticCarrierCode(value: String): Self = StObject.set(x, "preferredDomesticCarrierCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredDomesticCarrierCodeUndefined: Self = StObject.set(x, "preferredDomesticCarrierCode", js.undefined)
+    inline def setPreferredDomesticCarrierCodeUndefined: Self = StObject.set(x, "preferredDomesticCarrierCode", js.undefined)
   }
 }

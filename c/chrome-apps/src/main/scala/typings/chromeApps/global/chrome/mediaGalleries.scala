@@ -37,8 +37,7 @@ object mediaGalleries {
     * The given callback is then fired with a success or failure result.
     * @since Chrome 39.
     */
-  @scala.inline
-  def addGalleryWatch(galleryId: String, callback: js.Function1[/* result */ GalleryWatchResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addGalleryWatch")(galleryId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addGalleryWatch(galleryId: String, callback: js.Function1[/* result */ GalleryWatchResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addGalleryWatch")(galleryId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @deprecated Deprecated since Chrome 51. The mediaGalleries API no longer supports scanning.
@@ -47,8 +46,7 @@ object mediaGalleries {
     * This should be used after the 'finish' onScanProgress() event has happened.
     * All galleries the app has access to are returned, not just the newly added galleries.
     */
-  @scala.inline
-  def addScanResults(callback: js.Function1[/* mediaFileSystems */ js.Array[FileSystem], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addScanResults")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addScanResults(callback: js.Function1[/* mediaFileSystems */ js.Array[FileSystem], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addScanResults")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Present a directory picker to the user and add the selected directory as a gallery.
@@ -57,8 +55,7 @@ object mediaGalleries {
     * Without a user gesture, the callback will run as though the user canceled.
     * @since Chrome 34.
     */
-  @scala.inline
-  def addUserSelectedFolder(
+  inline def addUserSelectedFolder(
     callback: js.Function2[
       /* mediaFileSystems */ js.Array[FileSystem], 
       /* selectedFileSystemName */ String, 
@@ -72,51 +69,43 @@ object mediaGalleries {
     * Cancel any pending media scan.
     * Well behaved apps should provide a way for the user to cancel scans they start.
     */
-  @scala.inline
-  def cancelMediaScan(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelMediaScan")().asInstanceOf[Unit]
+  inline def cancelMediaScan(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelMediaScan")().asInstanceOf[Unit]
   
   /**
     * @deprecated Deprecated since Chrome 51. The user can manually drop access to galleries via the permissions dialog.
     * @description Give up access to a given media gallery.
     */
-  @scala.inline
-  def dropPermissionForMediaFileSystem(galleryId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dropPermissionForMediaFileSystem")(galleryId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def dropPermissionForMediaFileSystem(galleryId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dropPermissionForMediaFileSystem")(galleryId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dropPermissionForMediaFileSystem(galleryId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dropPermissionForMediaFileSystem")(galleryId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dropPermissionForMediaFileSystem(galleryId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dropPermissionForMediaFileSystem")(galleryId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @deprecated Deprecated since Chrome 51. Applications should store their own gallery watches as they are added.
     * Notifies which galleries are being watched via the given callback.
     */
-  @scala.inline
-  def getAllGalleryWatch(callback: js.Function1[/* galleryIds */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllGalleryWatch")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAllGalleryWatch(callback: js.Function1[/* galleryIds */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllGalleryWatch")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @deprecated Deprecated since Chrome 51. Use getMediaFileSystemMetadata instead
     * Get metadata for all available media galleries.
     */
-  @scala.inline
-  def getAllMediaFileSystemMetadata(callback: js.Function1[/* metadatas */ js.Array[MediaFileSystemMetadata], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllMediaFileSystemMetadata")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAllMediaFileSystemMetadata(callback: js.Function1[/* metadatas */ js.Array[MediaFileSystemMetadata], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllMediaFileSystemMetadata")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Get metadata about a specific media file system
     * @since Chrome 26.
     */
-  @scala.inline
-  def getMediaFileSystemMetadata(mediaFileSystem: FileSystem): MediaFileSystemMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getMediaFileSystemMetadata")(mediaFileSystem.asInstanceOf[js.Any]).asInstanceOf[MediaFileSystemMetadata]
+  inline def getMediaFileSystemMetadata(mediaFileSystem: FileSystem): MediaFileSystemMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getMediaFileSystemMetadata")(mediaFileSystem.asInstanceOf[js.Any]).asInstanceOf[MediaFileSystemMetadata]
   
   /**
     * Get the media galleries configured in this user agent.
     * If none are configured or available, the callback will receive an empty array.
     */
-  @scala.inline
-  def getMediaFileSystems(callback: js.Function1[/* mediaFileSystems */ js.Array[FileSystem], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getMediaFileSystems")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getMediaFileSystems(callback: js.Function1[/* mediaFileSystems */ js.Array[FileSystem], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getMediaFileSystems")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Get the media galleries configured in this user agent.
     * If none are configured or available, the callback will receive an empty array.
     */
-  @scala.inline
-  def getMediaFileSystems(
+  inline def getMediaFileSystems(
     options: MediaFileSystemsOptions,
     callback: js.Function1[/* mediaFileSystems */ js.Array[FileSystem], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMediaFileSystems")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -126,15 +115,13 @@ object mediaGalleries {
     * This should work for files in media galleries as well as other DOM filesystems.
     * @since Chrome 38.
     */
-  @scala.inline
-  def getMetadata(mediaFile: Blob, callback: js.Function1[/* metadata */ Metadata, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(mediaFile.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getMetadata(mediaFile: Blob, callback: js.Function1[/* metadata */ Metadata, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(mediaFile.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Gets the media-specific metadata for a media file.
     * This should work for files in media galleries as well as other DOM filesystems.
     * @since Chrome 38.
     */
-  @scala.inline
-  def getMetadata(mediaFile: Blob, options: MetadataOptions, callback: js.Function1[/* metadata */ Metadata, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(mediaFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getMetadata(mediaFile: Blob, options: MetadataOptions, callback: js.Function1[/* metadata */ Metadata, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(mediaFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a media gallery is changed or a gallery watch is dropped
@@ -156,15 +143,13 @@ object mediaGalleries {
     * @deprecated Deprecated since Chrome 51. Use removeGalleryWatch instead.
     * Removes all gallery watches.
     */
-  @scala.inline
-  def removeAllGalleryWatch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllGalleryWatch")().asInstanceOf[Unit]
+  inline def removeAllGalleryWatch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllGalleryWatch")().asInstanceOf[Unit]
   
   /**
     * Removes a gallery watch for the gallery with the specified gallery ID.
     * @since Chrome 39.
     */
-  @scala.inline
-  def removeGalleryWatch(galleryId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeGalleryWatch")(galleryId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeGalleryWatch(galleryId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeGalleryWatch")(galleryId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @deprecated Deprecated since Chrome 51. The mediaGalleries API no longer supports scanning.
@@ -173,6 +158,5 @@ object mediaGalleries {
     * The scan may take a long time so progress and completion is communicated by events.
     * No permission is granted as a result of the scan, see addScanResults.
     */
-  @scala.inline
-  def startMediaScan(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startMediaScan")().asInstanceOf[Unit]
+  inline def startMediaScan(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startMediaScan")().asInstanceOf[Unit]
 }

@@ -10,19 +10,15 @@ trait ModifyReplicationGroupResult extends StObject {
 }
 object ModifyReplicationGroupResult {
   
-  @scala.inline
-  def apply(): ModifyReplicationGroupResult = {
+  inline def apply(): ModifyReplicationGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyReplicationGroupResult]
   }
   
-  @scala.inline
-  implicit class ModifyReplicationGroupResultMutableBuilder[Self <: ModifyReplicationGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyReplicationGroupResult](x: Self) {
     
-    @scala.inline
-    def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+    inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
   }
 }

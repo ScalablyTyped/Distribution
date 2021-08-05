@@ -28,31 +28,23 @@ trait PutBucketLoggingRequest extends StObject {
 }
 object PutBucketLoggingRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, BucketLoggingStatus: BucketLoggingStatus): PutBucketLoggingRequest = {
+  inline def apply(Bucket: BucketName, BucketLoggingStatus: BucketLoggingStatus): PutBucketLoggingRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], BucketLoggingStatus = BucketLoggingStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLoggingRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketLoggingRequestMutableBuilder[Self <: PutBucketLoggingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketLoggingRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketLoggingStatus(value: BucketLoggingStatus): Self = StObject.set(x, "BucketLoggingStatus", value.asInstanceOf[js.Any])
+    inline def setBucketLoggingStatus(value: BucketLoggingStatus): Self = StObject.set(x, "BucketLoggingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
+    inline def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
+    inline def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
   }
 }

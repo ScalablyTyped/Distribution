@@ -18,28 +18,21 @@ trait ListIpRoutesResult extends StObject {
 }
 object ListIpRoutesResult {
   
-  @scala.inline
-  def apply(): ListIpRoutesResult = {
+  inline def apply(): ListIpRoutesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListIpRoutesResult]
   }
   
-  @scala.inline
-  implicit class ListIpRoutesResultMutableBuilder[Self <: ListIpRoutesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListIpRoutesResult](x: Self) {
     
-    @scala.inline
-    def setIpRoutesInfo(value: IpRoutesInfo): Self = StObject.set(x, "IpRoutesInfo", value.asInstanceOf[js.Any])
+    inline def setIpRoutesInfo(value: IpRoutesInfo): Self = StObject.set(x, "IpRoutesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRoutesInfoUndefined: Self = StObject.set(x, "IpRoutesInfo", js.undefined)
+    inline def setIpRoutesInfoUndefined: Self = StObject.set(x, "IpRoutesInfo", js.undefined)
     
-    @scala.inline
-    def setIpRoutesInfoVarargs(value: IpRouteInfo*): Self = StObject.set(x, "IpRoutesInfo", js.Array(value :_*))
+    inline def setIpRoutesInfoVarargs(value: IpRouteInfo*): Self = StObject.set(x, "IpRoutesInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

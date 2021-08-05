@@ -56,9 +56,7 @@ object mod {
     var size: Double = js.native
   }
   
-  @scala.inline
-  def ip2long(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ip2long")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def ip2long(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ip2long")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def long2ip(long: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("long2ip")(long.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def long2ip(long: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("long2ip")(long.asInstanceOf[js.Any]).asInstanceOf[String]
 }

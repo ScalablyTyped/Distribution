@@ -36,31 +36,23 @@ trait TextConditionalFormatLoadOptions extends StObject {
 }
 object TextConditionalFormatLoadOptions {
   
-  @scala.inline
-  def apply(): TextConditionalFormatLoadOptions = {
+  inline def apply(): TextConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextConditionalFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class TextConditionalFormatLoadOptionsMutableBuilder[Self <: TextConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextConditionalFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ConditionalRangeFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ConditionalRangeFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setRule(value: Boolean): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: Boolean): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

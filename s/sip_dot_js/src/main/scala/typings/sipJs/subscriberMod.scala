@@ -34,19 +34,19 @@ object subscriberMod {
       */
     def _refresh(): js.Promise[Unit] = js.native
     
-    var body: js.Any = js.native
+    /* private */ var body: js.Any = js.native
     
-    var event: js.Any = js.native
+    /* private */ var event: js.Any = js.native
     
-    var expires: js.Any = js.native
+    /* private */ var expires: js.Any = js.native
     
-    var extraHeaders: js.Any = js.native
+    /* private */ var extraHeaders: js.Any = js.native
     
-    var id: js.Any = js.native
+    /* private */ var id: js.Any = js.native
     
-    var initSubscriberRequest: js.Any = js.native
+    /* private */ var initSubscriberRequest: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /** @internal */
     /* protected */ def onAccepted(response: IncomingResponse): Unit = js.native
@@ -57,14 +57,14 @@ object subscriberMod {
     /** @internal */
     /* protected */ def onRefresh(request: OutgoingSubscribeRequest): Unit = js.native
     
-    var outgoingRequestMessage: js.Any = js.native
+    /* private */ var outgoingRequestMessage: js.Any = js.native
     
-    var retryAfterTimer: js.Any = js.native
+    /* private */ var retryAfterTimer: js.Any = js.native
     
     def subscribe(options: SubscriberSubscribeOptions): js.Promise[Unit] = js.native
     
-    var subscriberRequest: js.Any = js.native
+    /* private */ var subscriberRequest: js.Any = js.native
     
-    var targetURI: js.Any = js.native
+    /* private */ var targetURI: js.Any = js.native
   }
 }

@@ -44,43 +44,31 @@ trait SchemaDeployment extends StObject {
 }
 object SchemaDeployment {
   
-  @scala.inline
-  def apply(): SchemaDeployment = {
+  inline def apply(): SchemaDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeployment]
   }
   
-  @scala.inline
-  implicit class SchemaDeploymentMutableBuilder[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeployment](x: Self) {
     
-    @scala.inline
-    def setBuild(value: SchemaBuildInfo): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: SchemaBuildInfo): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    @scala.inline
-    def setCloudBuildOptions(value: SchemaCloudBuildOptions): Self = StObject.set(x, "cloudBuildOptions", value.asInstanceOf[js.Any])
+    inline def setCloudBuildOptions(value: SchemaCloudBuildOptions): Self = StObject.set(x, "cloudBuildOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudBuildOptionsUndefined: Self = StObject.set(x, "cloudBuildOptions", js.undefined)
+    inline def setCloudBuildOptionsUndefined: Self = StObject.set(x, "cloudBuildOptions", js.undefined)
     
-    @scala.inline
-    def setContainer(value: SchemaContainerInfo): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: SchemaContainerInfo): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setFiles(value: StringDictionary[SchemaFileInfo]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[SchemaFileInfo]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setZip(value: SchemaZipInfo): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    inline def setZip(value: SchemaZipInfo): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
+    inline def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

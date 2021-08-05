@@ -18,28 +18,21 @@ trait ListPiiEntitiesDetectionJobsResponse extends StObject {
 }
 object ListPiiEntitiesDetectionJobsResponse {
   
-  @scala.inline
-  def apply(): ListPiiEntitiesDetectionJobsResponse = {
+  inline def apply(): ListPiiEntitiesDetectionJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPiiEntitiesDetectionJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListPiiEntitiesDetectionJobsResponseMutableBuilder[Self <: ListPiiEntitiesDetectionJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPiiEntitiesDetectionJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPiiEntitiesDetectionJobPropertiesList(value: PiiEntitiesDetectionJobPropertiesList): Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", value.asInstanceOf[js.Any])
+    inline def setPiiEntitiesDetectionJobPropertiesList(value: PiiEntitiesDetectionJobPropertiesList): Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPiiEntitiesDetectionJobPropertiesListUndefined: Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", js.undefined)
+    inline def setPiiEntitiesDetectionJobPropertiesListUndefined: Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", js.undefined)
     
-    @scala.inline
-    def setPiiEntitiesDetectionJobPropertiesListVarargs(value: PiiEntitiesDetectionJobProperties*): Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setPiiEntitiesDetectionJobPropertiesListVarargs(value: PiiEntitiesDetectionJobProperties*): Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", js.Array(value :_*))
   }
 }

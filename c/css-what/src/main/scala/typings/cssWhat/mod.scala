@@ -12,11 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(selector: String): js.Array[js.Array[Selector]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Selector]]]
-  @scala.inline
-  def parse(selector: String, options: Options): js.Array[js.Array[Selector]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Selector]]]
+  inline def parse(selector: String): js.Array[js.Array[Selector]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Selector]]]
+  inline def parse(selector: String, options: Options): js.Array[js.Array[Selector]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Selector]]]
   
-  @scala.inline
-  def stringify(token: js.Array[js.Array[Selector]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(token: js.Array[js.Array[Selector]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(token.asInstanceOf[js.Any]).asInstanceOf[String]
 }

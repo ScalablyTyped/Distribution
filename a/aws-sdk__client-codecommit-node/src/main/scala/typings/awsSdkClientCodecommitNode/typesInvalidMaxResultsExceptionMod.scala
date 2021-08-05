@@ -24,17 +24,14 @@ object typesInvalidMaxResultsExceptionMod {
   }
   object InvalidMaxResultsException {
     
-    @scala.inline
-    def apply(): InvalidMaxResultsException = {
+    inline def apply(): InvalidMaxResultsException = {
       val __obj = js.Dynamic.literal(name = "InvalidMaxResultsException")
       __obj.asInstanceOf[InvalidMaxResultsException]
     }
     
-    @scala.inline
-    implicit class InvalidMaxResultsExceptionMutableBuilder[Self <: InvalidMaxResultsException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidMaxResultsException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidMaxResultsException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

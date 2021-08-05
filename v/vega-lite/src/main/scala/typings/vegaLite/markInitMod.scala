@@ -31,11 +31,9 @@ object markInitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultFilled(markDef: MarkDef[Mark, ExprRef | SignalRef], config: Config[SignalRef], hasGraticule: Graticule): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultFilled")(markDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasGraticule.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def defaultFilled(markDef: MarkDef[Mark, ExprRef | SignalRef], config: Config[SignalRef], hasGraticule: Graticule): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultFilled")(markDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasGraticule.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def initMarkdef(
+  inline def initMarkdef(
     originalMarkDef: MarkDef[Mark, ExprRef | SignalRef],
     encoding: Encoding[String],
     config: Config[SignalRef]

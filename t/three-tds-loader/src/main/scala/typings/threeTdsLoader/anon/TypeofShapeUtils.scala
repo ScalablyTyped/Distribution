@@ -15,8 +15,7 @@ trait TypeofShapeUtils extends StObject {
 }
 object TypeofShapeUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     area: js.Array[Vec2] => Double,
     isClockWise: js.Array[Vec2] => Boolean,
     triangulateShape: (js.Array[Vec2], js.Array[js.Array[Vec2]]) => js.Array[js.Array[Double]]
@@ -25,16 +24,12 @@ object TypeofShapeUtils {
     __obj.asInstanceOf[TypeofShapeUtils]
   }
   
-  @scala.inline
-  implicit class TypeofShapeUtilsMutableBuilder[Self <: TypeofShapeUtils] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofShapeUtils](x: Self) {
     
-    @scala.inline
-    def setArea(value: js.Array[Vec2] => Double): Self = StObject.set(x, "area", js.Any.fromFunction1(value))
+    inline def setArea(value: js.Array[Vec2] => Double): Self = StObject.set(x, "area", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsClockWise(value: js.Array[Vec2] => Boolean): Self = StObject.set(x, "isClockWise", js.Any.fromFunction1(value))
+    inline def setIsClockWise(value: js.Array[Vec2] => Boolean): Self = StObject.set(x, "isClockWise", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTriangulateShape(value: (js.Array[Vec2], js.Array[js.Array[Vec2]]) => js.Array[js.Array[Double]]): Self = StObject.set(x, "triangulateShape", js.Any.fromFunction2(value))
+    inline def setTriangulateShape(value: (js.Array[Vec2], js.Array[js.Array[Vec2]]) => js.Array[js.Array[Double]]): Self = StObject.set(x, "triangulateShape", js.Any.fromFunction2(value))
   }
 }

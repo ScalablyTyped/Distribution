@@ -29,8 +29,7 @@ trait ASPxClientFormLayout
 }
 object ASPxClientFormLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginUpdate: () => Unit,
     EndUpdate: () => Unit,
@@ -54,16 +53,12 @@ object ASPxClientFormLayout {
     __obj.asInstanceOf[ASPxClientFormLayout]
   }
   
-  @scala.inline
-  implicit class ASPxClientFormLayoutMutableBuilder[Self <: ASPxClientFormLayout] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFormLayout](x: Self) {
     
-    @scala.inline
-    def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "BeginUpdate", js.Any.fromFunction0(value))
+    inline def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "BeginUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndUpdate(value: () => Unit): Self = StObject.set(x, "EndUpdate", js.Any.fromFunction0(value))
+    inline def setEndUpdate(value: () => Unit): Self = StObject.set(x, "EndUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemByName(value: String => ASPxClientLayoutItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
+    inline def setGetItemByName(value: String => ASPxClientLayoutItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
   }
 }

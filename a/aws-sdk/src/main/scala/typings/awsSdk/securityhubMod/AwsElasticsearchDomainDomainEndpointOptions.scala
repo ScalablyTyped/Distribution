@@ -18,25 +18,19 @@ trait AwsElasticsearchDomainDomainEndpointOptions extends StObject {
 }
 object AwsElasticsearchDomainDomainEndpointOptions {
   
-  @scala.inline
-  def apply(): AwsElasticsearchDomainDomainEndpointOptions = {
+  inline def apply(): AwsElasticsearchDomainDomainEndpointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElasticsearchDomainDomainEndpointOptions]
   }
   
-  @scala.inline
-  implicit class AwsElasticsearchDomainDomainEndpointOptionsMutableBuilder[Self <: AwsElasticsearchDomainDomainEndpointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElasticsearchDomainDomainEndpointOptions](x: Self) {
     
-    @scala.inline
-    def setEnforceHTTPS(value: Boolean): Self = StObject.set(x, "EnforceHTTPS", value.asInstanceOf[js.Any])
+    inline def setEnforceHTTPS(value: Boolean): Self = StObject.set(x, "EnforceHTTPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceHTTPSUndefined: Self = StObject.set(x, "EnforceHTTPS", js.undefined)
+    inline def setEnforceHTTPSUndefined: Self = StObject.set(x, "EnforceHTTPS", js.undefined)
     
-    @scala.inline
-    def setTLSSecurityPolicy(value: NonEmptyString): Self = StObject.set(x, "TLSSecurityPolicy", value.asInstanceOf[js.Any])
+    inline def setTLSSecurityPolicy(value: NonEmptyString): Self = StObject.set(x, "TLSSecurityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTLSSecurityPolicyUndefined: Self = StObject.set(x, "TLSSecurityPolicy", js.undefined)
+    inline def setTLSSecurityPolicyUndefined: Self = StObject.set(x, "TLSSecurityPolicy", js.undefined)
   }
 }

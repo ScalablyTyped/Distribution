@@ -23,25 +23,19 @@ trait UpdateAppInstanceUserRequest extends StObject {
 }
 object UpdateAppInstanceUserRequest {
   
-  @scala.inline
-  def apply(AppInstanceUserArn: ChimeArn, Name: UserName): UpdateAppInstanceUserRequest = {
+  inline def apply(AppInstanceUserArn: ChimeArn, Name: UserName): UpdateAppInstanceUserRequest = {
     val __obj = js.Dynamic.literal(AppInstanceUserArn = AppInstanceUserArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAppInstanceUserRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAppInstanceUserRequestMutableBuilder[Self <: UpdateAppInstanceUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAppInstanceUserRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: UserName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: UserName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

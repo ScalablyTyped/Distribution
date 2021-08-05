@@ -61,17 +61,14 @@ object ImagesLoaded {
   }
   object ImagesLoadedOptions {
     
-    @scala.inline
-    def apply(background: `true` | String): ImagesLoadedOptions = {
+    inline def apply(background: `true` | String): ImagesLoadedOptions = {
       val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImagesLoadedOptions]
     }
     
-    @scala.inline
-    implicit class ImagesLoadedOptionsMutableBuilder[Self <: ImagesLoadedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ImagesLoadedOptions](x: Self) {
       
-      @scala.inline
-      def setBackground(value: `true` | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: `true` | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,20 +81,16 @@ object ImagesLoaded {
   }
   object LoadingImage {
     
-    @scala.inline
-    def apply(img: HTMLImageElement, isLoaded: Boolean): LoadingImage = {
+    inline def apply(img: HTMLImageElement, isLoaded: Boolean): LoadingImage = {
       val __obj = js.Dynamic.literal(img = img.asInstanceOf[js.Any], isLoaded = isLoaded.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadingImage]
     }
     
-    @scala.inline
-    implicit class LoadingImageMutableBuilder[Self <: LoadingImage] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingImage](x: Self) {
       
-      @scala.inline
-      def setImg(value: HTMLImageElement): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: HTMLImageElement): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
+      inline def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
     }
   }
 }

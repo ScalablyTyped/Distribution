@@ -38,49 +38,35 @@ trait PoolInfo extends StObject {
 }
 object PoolInfo {
   
-  @scala.inline
-  def apply(): PoolInfo = {
+  inline def apply(): PoolInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolInfo]
   }
   
-  @scala.inline
-  implicit class PoolInfoMutableBuilder[Self <: PoolInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PoolInfo](x: Self) {
     
-    @scala.inline
-    def setPoolARN(value: PoolARN): Self = StObject.set(x, "PoolARN", value.asInstanceOf[js.Any])
+    inline def setPoolARN(value: PoolARN): Self = StObject.set(x, "PoolARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolARNUndefined: Self = StObject.set(x, "PoolARN", js.undefined)
+    inline def setPoolARNUndefined: Self = StObject.set(x, "PoolARN", js.undefined)
     
-    @scala.inline
-    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
+    inline def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
+    inline def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
     
-    @scala.inline
-    def setPoolStatus(value: PoolStatus): Self = StObject.set(x, "PoolStatus", value.asInstanceOf[js.Any])
+    inline def setPoolStatus(value: PoolStatus): Self = StObject.set(x, "PoolStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolStatusUndefined: Self = StObject.set(x, "PoolStatus", js.undefined)
+    inline def setPoolStatusUndefined: Self = StObject.set(x, "PoolStatus", js.undefined)
     
-    @scala.inline
-    def setRetentionLockTimeInDays(value: RetentionLockTimeInDays): Self = StObject.set(x, "RetentionLockTimeInDays", value.asInstanceOf[js.Any])
+    inline def setRetentionLockTimeInDays(value: RetentionLockTimeInDays): Self = StObject.set(x, "RetentionLockTimeInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "RetentionLockTimeInDays", js.undefined)
+    inline def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "RetentionLockTimeInDays", js.undefined)
     
-    @scala.inline
-    def setRetentionLockType(value: RetentionLockType): Self = StObject.set(x, "RetentionLockType", value.asInstanceOf[js.Any])
+    inline def setRetentionLockType(value: RetentionLockType): Self = StObject.set(x, "RetentionLockType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionLockTypeUndefined: Self = StObject.set(x, "RetentionLockType", js.undefined)
+    inline def setRetentionLockTypeUndefined: Self = StObject.set(x, "RetentionLockType", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: TapeStorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: TapeStorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
   }
 }

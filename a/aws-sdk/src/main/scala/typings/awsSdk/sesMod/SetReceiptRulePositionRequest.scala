@@ -23,25 +23,19 @@ trait SetReceiptRulePositionRequest extends StObject {
 }
 object SetReceiptRulePositionRequest {
   
-  @scala.inline
-  def apply(RuleName: ReceiptRuleName, RuleSetName: ReceiptRuleSetName): SetReceiptRulePositionRequest = {
+  inline def apply(RuleName: ReceiptRuleName, RuleSetName: ReceiptRuleSetName): SetReceiptRulePositionRequest = {
     val __obj = js.Dynamic.literal(RuleName = RuleName.asInstanceOf[js.Any], RuleSetName = RuleSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetReceiptRulePositionRequest]
   }
   
-  @scala.inline
-  implicit class SetReceiptRulePositionRequestMutableBuilder[Self <: SetReceiptRulePositionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetReceiptRulePositionRequest](x: Self) {
     
-    @scala.inline
-    def setAfter(value: ReceiptRuleName): Self = StObject.set(x, "After", value.asInstanceOf[js.Any])
+    inline def setAfter(value: ReceiptRuleName): Self = StObject.set(x, "After", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "After", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "After", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: ReceiptRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: ReceiptRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
+    inline def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
   }
 }

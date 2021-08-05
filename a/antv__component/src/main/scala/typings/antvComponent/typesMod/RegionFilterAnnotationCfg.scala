@@ -35,28 +35,21 @@ trait RegionFilterAnnotationCfg
 }
 object RegionFilterAnnotationCfg {
   
-  @scala.inline
-  def apply(color: String, container: IGroup, end: Point, shapes: js.Array[IShape], start: Point): RegionFilterAnnotationCfg = {
+  inline def apply(color: String, container: IGroup, end: Point, shapes: js.Array[IShape], start: Point): RegionFilterAnnotationCfg = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionFilterAnnotationCfg]
   }
   
-  @scala.inline
-  implicit class RegionFilterAnnotationCfgMutableBuilder[Self <: RegionFilterAnnotationCfg] (val x: Self) extends AnyVal {
+  extension [Self <: RegionFilterAnnotationCfg](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapes(value: js.Array[IShape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[IShape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesVarargs(value: IShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: IShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

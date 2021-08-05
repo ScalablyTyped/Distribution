@@ -10,20 +10,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escape(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def makeSaxParser(yourHandler: ISaxHandler): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSaxParser")(yourHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  inline def makeSaxParser(yourHandler: ISaxHandler): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSaxParser")(yourHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @scala.inline
-  def normalizeRCData(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRCData")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizeRCData(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRCData")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def sanitize(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sanitize(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unescapeEntities(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeEntities")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescapeEntities(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeEntities")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait ISaxHandler extends StObject {
     
@@ -45,8 +40,7 @@ object mod {
   }
   object ISaxHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cdata: (String, js.Any) => Unit,
       comment: (String, js.Any) => Unit,
       endDoc: js.Any => Unit,
@@ -60,32 +54,23 @@ object mod {
       __obj.asInstanceOf[ISaxHandler]
     }
     
-    @scala.inline
-    implicit class ISaxHandlerMutableBuilder[Self <: ISaxHandler] (val x: Self) extends AnyVal {
+    extension [Self <: ISaxHandler](x: Self) {
       
-      @scala.inline
-      def setCdata(value: (String, js.Any) => Unit): Self = StObject.set(x, "cdata", js.Any.fromFunction2(value))
+      inline def setCdata(value: (String, js.Any) => Unit): Self = StObject.set(x, "cdata", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComment(value: (String, js.Any) => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction2(value))
+      inline def setComment(value: (String, js.Any) => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEndDoc(value: js.Any => Unit): Self = StObject.set(x, "endDoc", js.Any.fromFunction1(value))
+      inline def setEndDoc(value: js.Any => Unit): Self = StObject.set(x, "endDoc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndTag(value: (String, js.Any) => Unit): Self = StObject.set(x, "endTag", js.Any.fromFunction2(value))
+      inline def setEndTag(value: (String, js.Any) => Unit): Self = StObject.set(x, "endTag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPcdata(value: (String, js.Any) => Unit): Self = StObject.set(x, "pcdata", js.Any.fromFunction2(value))
+      inline def setPcdata(value: (String, js.Any) => Unit): Self = StObject.set(x, "pcdata", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRcdata(value: (String, js.Any) => Unit): Self = StObject.set(x, "rcdata", js.Any.fromFunction2(value))
+      inline def setRcdata(value: (String, js.Any) => Unit): Self = StObject.set(x, "rcdata", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStartDoc(value: js.Any => Unit): Self = StObject.set(x, "startDoc", js.Any.fromFunction1(value))
+      inline def setStartDoc(value: js.Any => Unit): Self = StObject.set(x, "startDoc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartTag(value: (String, js.Array[String], js.Any) => Unit): Self = StObject.set(x, "startTag", js.Any.fromFunction3(value))
+      inline def setStartTag(value: (String, js.Array[String], js.Any) => Unit): Self = StObject.set(x, "startTag", js.Any.fromFunction3(value))
     }
   }
 }

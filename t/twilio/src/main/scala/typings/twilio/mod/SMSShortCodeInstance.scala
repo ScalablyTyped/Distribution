@@ -17,16 +17,13 @@ trait SMSShortCodeInstance
 }
 object SMSShortCodeInstance {
   
-  @scala.inline
-  def apply(get: RestMethod, post: RestMethod, update: RestMethod): SMSShortCodeInstance = {
+  inline def apply(get: RestMethod, post: RestMethod, update: RestMethod): SMSShortCodeInstance = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[SMSShortCodeInstance]
   }
   
-  @scala.inline
-  implicit class SMSShortCodeInstanceMutableBuilder[Self <: SMSShortCodeInstance] (val x: Self) extends AnyVal {
+  extension [Self <: SMSShortCodeInstance](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

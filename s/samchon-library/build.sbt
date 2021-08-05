@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "samchon-library"
-version := "0.1.0-fa405d"
+version := "0.1.0-2cede4"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

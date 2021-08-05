@@ -86,8 +86,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialTooltip.componentMod.MDCTooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTooltip.componentMod.MDCTooltip]
+    inline def attachTo(root: Element): typings.materialTooltip.componentMod.MDCTooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTooltip.componentMod.MDCTooltip]
   }
   
   @JSImport("@material/tooltip", "MDCTooltipFoundation")
@@ -137,8 +136,7 @@ object mod {
     @JSImport("@material/tooltip", "events.HIDDEN")
     @js.native
     def HIDDEN: String = js.native
-    @scala.inline
-    def HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDDEN")(x.asInstanceOf[js.Any])
+    inline def HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDDEN")(x.asInstanceOf[js.Any])
   }
   
   object numbers {
@@ -150,43 +148,36 @@ object mod {
     @JSImport("@material/tooltip", "numbers.BOUNDED_ANCHOR_GAP")
     @js.native
     def BOUNDED_ANCHOR_GAP: Double = js.native
-    @scala.inline
-    def BOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
+    inline def BOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tooltip", "numbers.HIDE_DELAY_MS")
     @js.native
     def HIDE_DELAY_MS: Double = js.native
-    @scala.inline
-    def HIDE_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDE_DELAY_MS")(x.asInstanceOf[js.Any])
+    inline def HIDE_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDE_DELAY_MS")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tooltip", "numbers.MAX_WIDTH")
     @js.native
     def MAX_WIDTH: Double = js.native
-    @scala.inline
-    def MAX_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_WIDTH")(x.asInstanceOf[js.Any])
+    inline def MAX_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_WIDTH")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tooltip", "numbers.MIN_HEIGHT")
     @js.native
     def MIN_HEIGHT: Double = js.native
-    @scala.inline
-    def MIN_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def MIN_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tooltip", "numbers.MIN_VIEWPORT_TOOLTIP_THRESHOLD")
     @js.native
     def MIN_VIEWPORT_TOOLTIP_THRESHOLD: Double = js.native
-    @scala.inline
-    def MIN_VIEWPORT_TOOLTIP_THRESHOLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VIEWPORT_TOOLTIP_THRESHOLD")(x.asInstanceOf[js.Any])
+    inline def MIN_VIEWPORT_TOOLTIP_THRESHOLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VIEWPORT_TOOLTIP_THRESHOLD")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tooltip", "numbers.SHOW_DELAY_MS")
     @js.native
     def SHOW_DELAY_MS: Double = js.native
-    @scala.inline
-    def SHOW_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_DELAY_MS")(x.asInstanceOf[js.Any])
+    inline def SHOW_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_DELAY_MS")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tooltip", "numbers.UNBOUNDED_ANCHOR_GAP")
     @js.native
     def UNBOUNDED_ANCHOR_GAP: Double = js.native
-    @scala.inline
-    def UNBOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNBOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
+    inline def UNBOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNBOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
   }
 }

@@ -32,8 +32,7 @@ trait MobileBroadbandAccount extends StObject {
 }
 object MobileBroadbandAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentDeviceInformation: MobileBroadbandDeviceInformation,
     currentNetwork: MobileBroadbandNetwork,
     getConnectionProfiles: () => IVectorView[ConnectionProfile],
@@ -45,25 +44,18 @@ object MobileBroadbandAccount {
     __obj.asInstanceOf[MobileBroadbandAccount]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandAccountMutableBuilder[Self <: MobileBroadbandAccount] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandAccount](x: Self) {
     
-    @scala.inline
-    def setCurrentDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "currentDeviceInformation", value.asInstanceOf[js.Any])
+    inline def setCurrentDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "currentDeviceInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
+    inline def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConnectionProfiles(value: () => IVectorView[ConnectionProfile]): Self = StObject.set(x, "getConnectionProfiles", js.Any.fromFunction0(value))
+    inline def setGetConnectionProfiles(value: () => IVectorView[ConnectionProfile]): Self = StObject.set(x, "getConnectionProfiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
+    inline def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
+    inline def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
   }
 }

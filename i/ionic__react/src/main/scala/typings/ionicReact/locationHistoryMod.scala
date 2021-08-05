@@ -11,15 +11,15 @@ object locationHistoryMod {
   @js.native
   class LocationHistory () extends StObject {
     
-    var _add: js.Any = js.native
+    /* private */ var _add: js.Any = js.native
     
-    var _clear: js.Any = js.native
+    /* private */ var _clear: js.Any = js.native
     
-    var _getRouteInfosByKey: js.Any = js.native
+    /* private */ var _getRouteInfosByKey: js.Any = js.native
     
-    var _pop: js.Any = js.native
+    /* private */ var _pop: js.Any = js.native
     
-    var _replace: js.Any = js.native
+    /* private */ var _replace: js.Any = js.native
     
     def add(routeInfo: RouteInfo[js.Any]): Unit = js.native
     
@@ -36,11 +36,11 @@ object locationHistoryMod {
     
     def getFirstRouteInfoForTab(tab: String): js.UndefOr[RouteInfo[js.Any]] = js.native
     
-    var locationHistory: js.Any = js.native
+    /* private */ var locationHistory: js.Any = js.native
     
     def previous(): RouteInfo[js.Any] = js.native
     
-    var tabHistory: js.Any = js.native
+    /* private */ var tabHistory: js.Any = js.native
     
     def update(routeInfo: RouteInfo[js.Any]): Unit = js.native
   }

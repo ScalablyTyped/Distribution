@@ -40,8 +40,7 @@ trait KMLLayerViewMapImage
 }
 object KMLLayerViewMapImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Extent: Extent,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -54,19 +53,14 @@ object KMLLayerViewMapImage {
     __obj.asInstanceOf[KMLLayerViewMapImage]
   }
   
-  @scala.inline
-  implicit class KMLLayerViewMapImageMutableBuilder[Self <: KMLLayerViewMapImage] (val x: Self) extends AnyVal {
+  extension [Self <: KMLLayerViewMapImage](x: Self) {
     
-    @scala.inline
-    def setExtent(value: Extent): Self = StObject.set(x, "Extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: Extent): Self = StObject.set(x, "Extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
   }
 }

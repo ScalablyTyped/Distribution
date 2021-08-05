@@ -21,19 +21,16 @@ object Chips {
     * Get Instance
     */
   /* static member */
-  @scala.inline
-  def getInstance(elem: Element): typings.materializeCss.M.Chips = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Chips]
+  inline def getInstance(elem: Element): typings.materializeCss.M.Chips = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Chips]
   
   /**
     * Init Chipses
     */
   /* static member */
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
   ): js.Array[typings.materializeCss.M.Chips] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Chips]]
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: PartialChipsOptions
   ): js.Array[typings.materializeCss.M.Chips] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Chips]]
@@ -41,8 +38,6 @@ object Chips {
     * Init Chips
     */
   /* static member */
-  @scala.inline
-  def init(els: Element): typings.materializeCss.M.Chips = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Chips]
-  @scala.inline
-  def init(els: Element, options: PartialChipsOptions): typings.materializeCss.M.Chips = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Chips]
+  inline def init(els: Element): typings.materializeCss.M.Chips = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Chips]
+  inline def init(els: Element, options: PartialChipsOptions): typings.materializeCss.M.Chips = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Chips]
 }

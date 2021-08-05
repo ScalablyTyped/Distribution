@@ -47,52 +47,37 @@ trait SchemaGoogleCloudMlV1HyperparameterOutput extends StObject {
 }
 object SchemaGoogleCloudMlV1HyperparameterOutput {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1HyperparameterOutput = {
+  inline def apply(): SchemaGoogleCloudMlV1HyperparameterOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1HyperparameterOutput]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1HyperparameterOutputMutableBuilder[Self <: SchemaGoogleCloudMlV1HyperparameterOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1HyperparameterOutput](x: Self) {
     
-    @scala.inline
-    def setAllMetrics(value: js.Array[SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric]): Self = StObject.set(x, "allMetrics", value.asInstanceOf[js.Any])
+    inline def setAllMetrics(value: js.Array[SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric]): Self = StObject.set(x, "allMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllMetricsUndefined: Self = StObject.set(x, "allMetrics", js.undefined)
+    inline def setAllMetricsUndefined: Self = StObject.set(x, "allMetrics", js.undefined)
     
-    @scala.inline
-    def setAllMetricsVarargs(value: SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric*): Self = StObject.set(x, "allMetrics", js.Array(value :_*))
+    inline def setAllMetricsVarargs(value: SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric*): Self = StObject.set(x, "allMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setBuiltInAlgorithmOutput(value: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
+    inline def setBuiltInAlgorithmOutput(value: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuiltInAlgorithmOutputUndefined: Self = StObject.set(x, "builtInAlgorithmOutput", js.undefined)
+    inline def setBuiltInAlgorithmOutputUndefined: Self = StObject.set(x, "builtInAlgorithmOutput", js.undefined)
     
-    @scala.inline
-    def setFinalMetric(value: SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric): Self = StObject.set(x, "finalMetric", value.asInstanceOf[js.Any])
+    inline def setFinalMetric(value: SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric): Self = StObject.set(x, "finalMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalMetricUndefined: Self = StObject.set(x, "finalMetric", js.undefined)
+    inline def setFinalMetricUndefined: Self = StObject.set(x, "finalMetric", js.undefined)
     
-    @scala.inline
-    def setHyperparameters(value: StringDictionary[String]): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
+    inline def setHyperparameters(value: StringDictionary[String]): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperparametersUndefined: Self = StObject.set(x, "hyperparameters", js.undefined)
+    inline def setHyperparametersUndefined: Self = StObject.set(x, "hyperparameters", js.undefined)
     
-    @scala.inline
-    def setIsTrialStoppedEarly(value: Boolean): Self = StObject.set(x, "isTrialStoppedEarly", value.asInstanceOf[js.Any])
+    inline def setIsTrialStoppedEarly(value: Boolean): Self = StObject.set(x, "isTrialStoppedEarly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrialStoppedEarlyUndefined: Self = StObject.set(x, "isTrialStoppedEarly", js.undefined)
+    inline def setIsTrialStoppedEarlyUndefined: Self = StObject.set(x, "isTrialStoppedEarly", js.undefined)
     
-    @scala.inline
-    def setTrialId(value: String): Self = StObject.set(x, "trialId", value.asInstanceOf[js.Any])
+    inline def setTrialId(value: String): Self = StObject.set(x, "trialId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialIdUndefined: Self = StObject.set(x, "trialId", js.undefined)
+    inline def setTrialIdUndefined: Self = StObject.set(x, "trialId", js.undefined)
   }
 }

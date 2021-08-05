@@ -10,16 +10,13 @@ trait Resizable extends StObject {
 }
 object Resizable {
   
-  @scala.inline
-  def apply(Resizable: Boolean): Resizable = {
+  inline def apply(Resizable: Boolean): Resizable = {
     val __obj = js.Dynamic.literal(Resizable = Resizable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resizable]
   }
   
-  @scala.inline
-  implicit class ResizableMutableBuilder[Self <: Resizable] (val x: Self) extends AnyVal {
+  extension [Self <: Resizable](x: Self) {
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "Resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "Resizable", value.asInstanceOf[js.Any])
   }
 }

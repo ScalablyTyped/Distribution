@@ -16,10 +16,8 @@ object mod {
     * @param matchers charset detectors, default value is `detect.DEFAULT_CS_RECOGNIZERS`
     * @returns array of matches sorted by most confident first
     */
-  @scala.inline
-  def apply(input: ArrayLike[Double]): js.Array[CharsetMatch] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[CharsetMatch]]
-  @scala.inline
-  def apply(input: ArrayLike[Double], matchers: js.Array[CharsetMatcher]): js.Array[CharsetMatch] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], matchers.asInstanceOf[js.Any])).asInstanceOf[js.Array[CharsetMatch]]
+  inline def apply(input: ArrayLike[Double]): js.Array[CharsetMatch] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[CharsetMatch]]
+  inline def apply(input: ArrayLike[Double], matchers: js.Array[CharsetMatcher]): js.Array[CharsetMatch] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], matchers.asInstanceOf[js.Any])).asInstanceOf[js.Array[CharsetMatch]]
   
   @JSImport("charset-detector", JSImport.Namespace)
   @js.native
@@ -57,26 +55,20 @@ object mod {
   }
   object CharsetMatch {
     
-    @scala.inline
-    def apply(charsetName: String, confidence: Double): CharsetMatch = {
+    inline def apply(charsetName: String, confidence: Double): CharsetMatch = {
       val __obj = js.Dynamic.literal(charsetName = charsetName.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any])
       __obj.asInstanceOf[CharsetMatch]
     }
     
-    @scala.inline
-    implicit class CharsetMatchMutableBuilder[Self <: CharsetMatch] (val x: Self) extends AnyVal {
+    extension [Self <: CharsetMatch](x: Self) {
       
-      @scala.inline
-      def setCharsetName(value: String): Self = StObject.set(x, "charsetName", value.asInstanceOf[js.Any])
+      inline def setCharsetName(value: String): Self = StObject.set(x, "charsetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     }
   }
   
@@ -99,23 +91,18 @@ object mod {
   }
   object InputStats {
     
-    @scala.inline
-    def apply(byteStats: js.Array[Double], c1Bytes: Boolean): InputStats = {
+    inline def apply(byteStats: js.Array[Double], c1Bytes: Boolean): InputStats = {
       val __obj = js.Dynamic.literal(byteStats = byteStats.asInstanceOf[js.Any], c1Bytes = c1Bytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputStats]
     }
     
-    @scala.inline
-    implicit class InputStatsMutableBuilder[Self <: InputStats] (val x: Self) extends AnyVal {
+    extension [Self <: InputStats](x: Self) {
       
-      @scala.inline
-      def setByteStats(value: js.Array[Double]): Self = StObject.set(x, "byteStats", value.asInstanceOf[js.Any])
+      inline def setByteStats(value: js.Array[Double]): Self = StObject.set(x, "byteStats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByteStatsVarargs(value: Double*): Self = StObject.set(x, "byteStats", js.Array(value :_*))
+      inline def setByteStatsVarargs(value: Double*): Self = StObject.set(x, "byteStats", js.Array(value :_*))
       
-      @scala.inline
-      def setC1Bytes(value: Boolean): Self = StObject.set(x, "c1Bytes", value.asInstanceOf[js.Any])
+      inline def setC1Bytes(value: Boolean): Self = StObject.set(x, "c1Bytes", value.asInstanceOf[js.Any])
     }
   }
 }

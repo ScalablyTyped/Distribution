@@ -13,28 +13,21 @@ trait Errors extends StObject {
 }
 object Errors {
   
-  @scala.inline
-  def apply(): Errors = {
+  inline def apply(): Errors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Errors]
   }
   
-  @scala.inline
-  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+  extension [Self <: Errors](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[SchemaErrorProto]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[SchemaErrorProto]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: SchemaErrorProto*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaErrorProto*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

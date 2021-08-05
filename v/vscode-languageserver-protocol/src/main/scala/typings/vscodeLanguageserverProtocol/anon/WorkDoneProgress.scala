@@ -10,16 +10,13 @@ trait WorkDoneProgress extends StObject {
 }
 object WorkDoneProgress {
   
-  @scala.inline
-  def apply(workDoneProgress: Boolean): WorkDoneProgress = {
+  inline def apply(workDoneProgress: Boolean): WorkDoneProgress = {
     val __obj = js.Dynamic.literal(workDoneProgress = workDoneProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkDoneProgress]
   }
   
-  @scala.inline
-  implicit class WorkDoneProgressMutableBuilder[Self <: WorkDoneProgress] (val x: Self) extends AnyVal {
+  extension [Self <: WorkDoneProgress](x: Self) {
     
-    @scala.inline
-    def setWorkDoneProgress(value: Boolean): Self = StObject.set(x, "workDoneProgress", value.asInstanceOf[js.Any])
+    inline def setWorkDoneProgress(value: Boolean): Self = StObject.set(x, "workDoneProgress", value.asInstanceOf[js.Any])
   }
 }

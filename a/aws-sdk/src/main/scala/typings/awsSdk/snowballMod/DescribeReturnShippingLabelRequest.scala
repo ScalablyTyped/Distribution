@@ -13,19 +13,15 @@ trait DescribeReturnShippingLabelRequest extends StObject {
 }
 object DescribeReturnShippingLabelRequest {
   
-  @scala.inline
-  def apply(): DescribeReturnShippingLabelRequest = {
+  inline def apply(): DescribeReturnShippingLabelRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReturnShippingLabelRequest]
   }
   
-  @scala.inline
-  implicit class DescribeReturnShippingLabelRequestMutableBuilder[Self <: DescribeReturnShippingLabelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReturnShippingLabelRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

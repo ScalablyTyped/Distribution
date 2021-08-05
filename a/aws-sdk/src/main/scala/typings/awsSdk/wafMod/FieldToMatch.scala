@@ -18,22 +18,17 @@ trait FieldToMatch extends StObject {
 }
 object FieldToMatch {
   
-  @scala.inline
-  def apply(Type: MatchFieldType): FieldToMatch = {
+  inline def apply(Type: MatchFieldType): FieldToMatch = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldToMatch]
   }
   
-  @scala.inline
-  implicit class FieldToMatchMutableBuilder[Self <: FieldToMatch] (val x: Self) extends AnyVal {
+  extension [Self <: FieldToMatch](x: Self) {
     
-    @scala.inline
-    def setData(value: MatchFieldData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: MatchFieldData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
-    @scala.inline
-    def setType(value: MatchFieldType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MatchFieldType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

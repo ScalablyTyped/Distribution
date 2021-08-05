@@ -15,25 +15,19 @@ trait Selector extends StObject {
 }
 object Selector {
   
-  @scala.inline
-  def apply(): Selector = {
+  inline def apply(): Selector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Selector]
   }
   
-  @scala.inline
-  implicit class SelectorMutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
+  extension [Self <: Selector](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setOperator(value: Operator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Operator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
   }
 }

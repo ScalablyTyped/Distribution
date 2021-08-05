@@ -18,61 +18,49 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromBufferWithMime(
+  inline def fromBufferWithMime(
     mimeType: String,
     buffer: Buffer,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithMime")(mimeType.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromBufferWithMime(
+  inline def fromBufferWithMime(
     mimeType: String,
     buffer: Buffer,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithMime")(mimeType.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fromBufferWithName(name: String, buffer: Buffer, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromBufferWithName(
+  inline def fromBufferWithName(name: String, buffer: Buffer, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromBufferWithName(
     name: String,
     buffer: Buffer,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fromFileWithMimeAndPath(
+  inline def fromFileWithMimeAndPath(
     mimeType: String,
     filePath: String,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithMimeAndPath")(mimeType.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromFileWithMimeAndPath(
+  inline def fromFileWithMimeAndPath(
     mimeType: String,
     filePath: String,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithMimeAndPath")(mimeType.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fromFileWithPath(filePath: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromFileWithPath(
+  inline def fromFileWithPath(filePath: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromFileWithPath(
     filePath: String,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fromUrl(url: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromUrl(url: String, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromUrl(url: URL_, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromUrl(url: URL_, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(url: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(url: String, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(url: URL_, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(url: URL_, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Config extends StObject {
     
@@ -141,74 +129,52 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setDoc(value: extractorExecOpts): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: extractorExecOpts): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+      inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
       
-      @scala.inline
-      def setDxf(value: extractorExecOpts): Self = StObject.set(x, "dxf", value.asInstanceOf[js.Any])
+      inline def setDxf(value: extractorExecOpts): Self = StObject.set(x, "dxf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxfUndefined: Self = StObject.set(x, "dxf", js.undefined)
+      inline def setDxfUndefined: Self = StObject.set(x, "dxf", js.undefined)
       
-      @scala.inline
-      def setExec(value: ExecException): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+      inline def setExec(value: ExecException): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+      inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
       
-      @scala.inline
-      def setImages(value: extractorExecOpts): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: extractorExecOpts): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setIncludeAltText(value: Boolean): Self = StObject.set(x, "includeAltText", value.asInstanceOf[js.Any])
+      inline def setIncludeAltText(value: Boolean): Self = StObject.set(x, "includeAltText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAltTextUndefined: Self = StObject.set(x, "includeAltText", js.undefined)
+      inline def setIncludeAltTextUndefined: Self = StObject.set(x, "includeAltText", js.undefined)
       
-      @scala.inline
-      def setPdftotextOptions(value: Crop): Self = StObject.set(x, "pdftotextOptions", value.asInstanceOf[js.Any])
+      inline def setPdftotextOptions(value: Crop): Self = StObject.set(x, "pdftotextOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdftotextOptionsUndefined: Self = StObject.set(x, "pdftotextOptions", js.undefined)
+      inline def setPdftotextOptionsUndefined: Self = StObject.set(x, "pdftotextOptions", js.undefined)
       
-      @scala.inline
-      def setPreserveLineBreaks(value: Boolean): Self = StObject.set(x, "preserveLineBreaks", value.asInstanceOf[js.Any])
+      inline def setPreserveLineBreaks(value: Boolean): Self = StObject.set(x, "preserveLineBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveLineBreaksUndefined: Self = StObject.set(x, "preserveLineBreaks", js.undefined)
+      inline def setPreserveLineBreaksUndefined: Self = StObject.set(x, "preserveLineBreaks", js.undefined)
       
-      @scala.inline
-      def setPreserveOnlyMultipleLineBreaks(value: Boolean): Self = StObject.set(x, "preserveOnlyMultipleLineBreaks", value.asInstanceOf[js.Any])
+      inline def setPreserveOnlyMultipleLineBreaks(value: Boolean): Self = StObject.set(x, "preserveOnlyMultipleLineBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveOnlyMultipleLineBreaksUndefined: Self = StObject.set(x, "preserveOnlyMultipleLineBreaks", js.undefined)
+      inline def setPreserveOnlyMultipleLineBreaksUndefined: Self = StObject.set(x, "preserveOnlyMultipleLineBreaks", js.undefined)
       
-      @scala.inline
-      def setRtf(value: extractorExecOpts): Self = StObject.set(x, "rtf", value.asInstanceOf[js.Any])
+      inline def setRtf(value: extractorExecOpts): Self = StObject.set(x, "rtf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtfUndefined: Self = StObject.set(x, "rtf", js.undefined)
+      inline def setRtfUndefined: Self = StObject.set(x, "rtf", js.undefined)
       
-      @scala.inline
-      def setTesseract(value: Lang | Cmd): Self = StObject.set(x, "tesseract", value.asInstanceOf[js.Any])
+      inline def setTesseract(value: Lang | Cmd): Self = StObject.set(x, "tesseract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTesseractUndefined: Self = StObject.set(x, "tesseract", js.undefined)
+      inline def setTesseractUndefined: Self = StObject.set(x, "tesseract", js.undefined)
     }
   }
   
@@ -223,20 +189,16 @@ object mod {
   }
   object URLConfig {
     
-    @scala.inline
-    def apply(): URLConfig = {
+    inline def apply(): URLConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[URLConfig]
     }
     
-    @scala.inline
-    implicit class URLConfigMutableBuilder[Self <: URLConfig] (val x: Self) extends AnyVal {
+    extension [Self <: URLConfig](x: Self) {
       
-      @scala.inline
-      def setTypeOverride(value: String): Self = StObject.set(x, "typeOverride", value.asInstanceOf[js.Any])
+      inline def setTypeOverride(value: String): Self = StObject.set(x, "typeOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeOverrideUndefined: Self = StObject.set(x, "typeOverride", js.undefined)
+      inline def setTypeOverrideUndefined: Self = StObject.set(x, "typeOverride", js.undefined)
     }
   }
   
@@ -246,17 +208,14 @@ object mod {
   }
   object extractorExecOpts {
     
-    @scala.inline
-    def apply(exec: StringDictionary[String]): extractorExecOpts = {
+    inline def apply(exec: StringDictionary[String]): extractorExecOpts = {
       val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any])
       __obj.asInstanceOf[extractorExecOpts]
     }
     
-    @scala.inline
-    implicit class extractorExecOptsMutableBuilder[Self <: extractorExecOpts] (val x: Self) extends AnyVal {
+    extension [Self <: extractorExecOpts](x: Self) {
       
-      @scala.inline
-      def setExec(value: StringDictionary[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+      inline def setExec(value: StringDictionary[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     }
   }
 }

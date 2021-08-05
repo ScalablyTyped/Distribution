@@ -29,31 +29,23 @@ trait ResolveConfigOptions extends StObject {
 }
 object ResolveConfigOptions {
   
-  @scala.inline
-  def apply(): ResolveConfigOptions = {
+  inline def apply(): ResolveConfigOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveConfigOptions]
   }
   
-  @scala.inline
-  implicit class ResolveConfigOptionsMutableBuilder[Self <: ResolveConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveConfigOptions](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setEditorconfig(value: Boolean): Self = StObject.set(x, "editorconfig", value.asInstanceOf[js.Any])
+    inline def setEditorconfig(value: Boolean): Self = StObject.set(x, "editorconfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorconfigUndefined: Self = StObject.set(x, "editorconfig", js.undefined)
+    inline def setEditorconfigUndefined: Self = StObject.set(x, "editorconfig", js.undefined)
     
-    @scala.inline
-    def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
+    inline def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
+    inline def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
   }
 }

@@ -34,8 +34,7 @@ trait XPatternField
 }
 object XPatternField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     String: String,
     acquire: () => Unit,
     getMasks: (js.Array[String], js.Array[String]) => Unit,
@@ -51,28 +50,20 @@ object XPatternField {
     __obj.asInstanceOf[XPatternField]
   }
   
-  @scala.inline
-  implicit class XPatternFieldMutableBuilder[Self <: XPatternField] (val x: Self) extends AnyVal {
+  extension [Self <: XPatternField](x: Self) {
     
-    @scala.inline
-    def setGetMasks(value: (js.Array[String], js.Array[String]) => Unit): Self = StObject.set(x, "getMasks", js.Any.fromFunction2(value))
+    inline def setGetMasks(value: (js.Array[String], js.Array[String]) => Unit): Self = StObject.set(x, "getMasks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
+    inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStrictFormat(value: () => Boolean): Self = StObject.set(x, "isStrictFormat", js.Any.fromFunction0(value))
+    inline def setIsStrictFormat(value: () => Boolean): Self = StObject.set(x, "isStrictFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetMasks(value: (String, String) => Unit): Self = StObject.set(x, "setMasks", js.Any.fromFunction2(value))
+    inline def setSetMasks(value: (String, String) => Unit): Self = StObject.set(x, "setMasks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetStrictFormat(value: Boolean => Unit): Self = StObject.set(x, "setStrictFormat", js.Any.fromFunction1(value))
+    inline def setSetStrictFormat(value: Boolean => Unit): Self = StObject.set(x, "setStrictFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
+    inline def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
   }
 }

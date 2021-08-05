@@ -24,28 +24,21 @@ trait ClassedColorSliderProperties
 }
 object ClassedColorSliderProperties {
   
-  @scala.inline
-  def apply(): ClassedColorSliderProperties = {
+  inline def apply(): ClassedColorSliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassedColorSliderProperties]
   }
   
-  @scala.inline
-  implicit class ClassedColorSliderPropertiesMutableBuilder[Self <: ClassedColorSliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedColorSliderProperties](x: Self) {
     
-    @scala.inline
-    def setBreaks(value: js.Array[ClassedColorSliderBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    inline def setBreaks(value: js.Array[ClassedColorSliderBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+    inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    @scala.inline
-    def setBreaksVarargs(value: ClassedColorSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
+    inline def setBreaksVarargs(value: ClassedColorSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
     
-    @scala.inline
-    def setViewModel(value: ClassedColorSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: ClassedColorSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

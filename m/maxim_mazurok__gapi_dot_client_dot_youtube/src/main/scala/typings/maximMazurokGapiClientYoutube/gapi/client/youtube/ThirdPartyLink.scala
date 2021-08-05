@@ -23,43 +23,31 @@ trait ThirdPartyLink extends StObject {
 }
 object ThirdPartyLink {
   
-  @scala.inline
-  def apply(): ThirdPartyLink = {
+  inline def apply(): ThirdPartyLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThirdPartyLink]
   }
   
-  @scala.inline
-  implicit class ThirdPartyLinkMutableBuilder[Self <: ThirdPartyLink] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyLink](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLinkingToken(value: String): Self = StObject.set(x, "linkingToken", value.asInstanceOf[js.Any])
+    inline def setLinkingToken(value: String): Self = StObject.set(x, "linkingToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkingTokenUndefined: Self = StObject.set(x, "linkingToken", js.undefined)
+    inline def setLinkingTokenUndefined: Self = StObject.set(x, "linkingToken", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: ThirdPartyLinkSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: ThirdPartyLinkSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ThirdPartyLinkStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ThirdPartyLinkStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

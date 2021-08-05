@@ -45,43 +45,31 @@ trait BrokerNodeGroupInfo extends StObject {
 }
 object BrokerNodeGroupInfo {
   
-  @scala.inline
-  def apply(ClientSubnets: listOfString, InstanceType: stringMin5Max32): BrokerNodeGroupInfo = {
+  inline def apply(ClientSubnets: listOfString, InstanceType: stringMin5Max32): BrokerNodeGroupInfo = {
     val __obj = js.Dynamic.literal(ClientSubnets = ClientSubnets.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerNodeGroupInfo]
   }
   
-  @scala.inline
-  implicit class BrokerNodeGroupInfoMutableBuilder[Self <: BrokerNodeGroupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerNodeGroupInfo](x: Self) {
     
-    @scala.inline
-    def setBrokerAZDistribution(value: BrokerAZDistribution): Self = StObject.set(x, "BrokerAZDistribution", value.asInstanceOf[js.Any])
+    inline def setBrokerAZDistribution(value: BrokerAZDistribution): Self = StObject.set(x, "BrokerAZDistribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerAZDistributionUndefined: Self = StObject.set(x, "BrokerAZDistribution", js.undefined)
+    inline def setBrokerAZDistributionUndefined: Self = StObject.set(x, "BrokerAZDistribution", js.undefined)
     
-    @scala.inline
-    def setClientSubnets(value: listOfString): Self = StObject.set(x, "ClientSubnets", value.asInstanceOf[js.Any])
+    inline def setClientSubnets(value: listOfString): Self = StObject.set(x, "ClientSubnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSubnetsVarargs(value: string*): Self = StObject.set(x, "ClientSubnets", js.Array(value :_*))
+    inline def setClientSubnetsVarargs(value: string*): Self = StObject.set(x, "ClientSubnets", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceType(value: stringMin5Max32): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: stringMin5Max32): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setStorageInfo(value: StorageInfo): Self = StObject.set(x, "StorageInfo", value.asInstanceOf[js.Any])
+    inline def setStorageInfo(value: StorageInfo): Self = StObject.set(x, "StorageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageInfoUndefined: Self = StObject.set(x, "StorageInfo", js.undefined)
+    inline def setStorageInfoUndefined: Self = StObject.set(x, "StorageInfo", js.undefined)
   }
 }

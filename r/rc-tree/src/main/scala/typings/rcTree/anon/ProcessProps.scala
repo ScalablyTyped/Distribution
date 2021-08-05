@@ -11,16 +11,13 @@ trait ProcessProps extends StObject {
 }
 object ProcessProps {
   
-  @scala.inline
-  def apply(processProps: DataNode => js.Any): ProcessProps = {
+  inline def apply(processProps: DataNode => js.Any): ProcessProps = {
     val __obj = js.Dynamic.literal(processProps = js.Any.fromFunction1(processProps))
     __obj.asInstanceOf[ProcessProps]
   }
   
-  @scala.inline
-  implicit class ProcessPropsMutableBuilder[Self <: ProcessProps] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessProps](x: Self) {
     
-    @scala.inline
-    def setProcessProps(value: DataNode => js.Any): Self = StObject.set(x, "processProps", js.Any.fromFunction1(value))
+    inline def setProcessProps(value: DataNode => js.Any): Self = StObject.set(x, "processProps", js.Any.fromFunction1(value))
   }
 }

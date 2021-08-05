@@ -22,17 +22,14 @@ object typesCommentContentRequiredExceptionMod {
   }
   object CommentContentRequiredException {
     
-    @scala.inline
-    def apply(): CommentContentRequiredException = {
+    inline def apply(): CommentContentRequiredException = {
       val __obj = js.Dynamic.literal(name = "CommentContentRequiredException")
       __obj.asInstanceOf[CommentContentRequiredException]
     }
     
-    @scala.inline
-    implicit class CommentContentRequiredExceptionMutableBuilder[Self <: CommentContentRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: CommentContentRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

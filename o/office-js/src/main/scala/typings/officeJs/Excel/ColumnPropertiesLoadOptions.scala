@@ -42,31 +42,23 @@ trait ColumnPropertiesLoadOptions
 }
 object ColumnPropertiesLoadOptions {
   
-  @scala.inline
-  def apply(): ColumnPropertiesLoadOptions = {
+  inline def apply(): ColumnPropertiesLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnPropertiesLoadOptions]
   }
   
-  @scala.inline
-  implicit class ColumnPropertiesLoadOptionsMutableBuilder[Self <: ColumnPropertiesLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnPropertiesLoadOptions](x: Self) {
     
-    @scala.inline
-    def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
+    inline def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
+    inline def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setFormat(value: CellPropertiesFormatLoadOAutoIndent): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CellPropertiesFormatLoadOAutoIndent): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

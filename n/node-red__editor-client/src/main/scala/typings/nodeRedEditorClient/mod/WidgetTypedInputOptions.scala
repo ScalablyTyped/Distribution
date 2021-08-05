@@ -24,31 +24,23 @@ trait WidgetTypedInputOptions extends StObject {
 }
 object WidgetTypedInputOptions {
   
-  @scala.inline
-  def apply(types: js.Array[WidgetTypedInputType | WidgetTypedInputTypeDefinition]): WidgetTypedInputOptions = {
+  inline def apply(types: js.Array[WidgetTypedInputType | WidgetTypedInputTypeDefinition]): WidgetTypedInputOptions = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetTypedInputOptions]
   }
   
-  @scala.inline
-  implicit class WidgetTypedInputOptionsMutableBuilder[Self <: WidgetTypedInputOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetTypedInputOptions](x: Self) {
     
-    @scala.inline
-    def setDefault(value: WidgetTypedInputType | String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: WidgetTypedInputType | String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setTypeField(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
+    inline def setTypeField(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
+    inline def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[WidgetTypedInputType | WidgetTypedInputTypeDefinition]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[WidgetTypedInputType | WidgetTypedInputTypeDefinition]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: (WidgetTypedInputType | WidgetTypedInputTypeDefinition)*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: (WidgetTypedInputType | WidgetTypedInputTypeDefinition)*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

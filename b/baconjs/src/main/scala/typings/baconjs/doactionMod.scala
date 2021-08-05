@@ -11,6 +11,5 @@ object doactionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](f: js.Function1[/* value */ V, js.Any]): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
+  inline def default[V](f: js.Function1[/* value */ V, js.Any]): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
 }

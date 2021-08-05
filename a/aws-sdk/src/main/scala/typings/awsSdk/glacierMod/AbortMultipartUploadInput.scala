@@ -23,22 +23,17 @@ trait AbortMultipartUploadInput extends StObject {
 }
 object AbortMultipartUploadInput {
   
-  @scala.inline
-  def apply(accountId: String, uploadId: String, vaultName: String): AbortMultipartUploadInput = {
+  inline def apply(accountId: String, uploadId: String, vaultName: String): AbortMultipartUploadInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortMultipartUploadInput]
   }
   
-  @scala.inline
-  implicit class AbortMultipartUploadInputMutableBuilder[Self <: AbortMultipartUploadInput] (val x: Self) extends AnyVal {
+  extension [Self <: AbortMultipartUploadInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

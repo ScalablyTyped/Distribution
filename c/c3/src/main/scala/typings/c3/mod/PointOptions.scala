@@ -32,43 +32,31 @@ trait PointOptions extends StObject {
 }
 object PointOptions {
   
-  @scala.inline
-  def apply(): PointOptions = {
+  inline def apply(): PointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointOptions]
   }
   
-  @scala.inline
-  implicit class PointOptionsMutableBuilder[Self <: PointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PointOptions](x: Self) {
     
-    @scala.inline
-    def setFocus(value: ExpandEnabled): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: ExpandEnabled): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setR(value: Double | (js.ThisFunction1[/* this */ ChartInternal, /* d */ DataPoint, Double])): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double | (js.ThisFunction1[/* this */ ChartInternal, /* d */ DataPoint, Double])): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setSelect(value: R): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: R): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+    inline def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
+    inline def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

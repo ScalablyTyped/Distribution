@@ -17,8 +17,7 @@ trait Text
 }
 object Text {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -46,13 +45,10 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setRawHtml(value: String): Self = StObject.set(x, "rawHtml", value.asInstanceOf[js.Any])
+    inline def setRawHtml(value: String): Self = StObject.set(x, "rawHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

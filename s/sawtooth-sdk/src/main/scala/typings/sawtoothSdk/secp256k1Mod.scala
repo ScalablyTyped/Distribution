@@ -63,15 +63,13 @@ object secp256k1Mod {
       * @return a private key instance
       * @throws if the private key is not valid
       */
-    @scala.inline
-    def fromHex(privateKeyHex: String): Secp256k1PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(privateKeyHex.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PrivateKey]
+    inline def fromHex(privateKeyHex: String): Secp256k1PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(privateKeyHex.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PrivateKey]
     
     /**
       * @return generates a random PrivateKey
       *
       */
-    @scala.inline
-    def newRandom(): Secp256k1PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("newRandom")().asInstanceOf[Secp256k1PrivateKey]
+    inline def newRandom(): Secp256k1PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("newRandom")().asInstanceOf[Secp256k1PrivateKey]
   }
   
   @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PublicKey")
@@ -96,7 +94,6 @@ object secp256k1Mod {
       * @return a public key instance
       * @throws if the public key is not valid
       */
-    @scala.inline
-    def fromHex(publicKeyHex: String): Secp256k1PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(publicKeyHex.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PublicKey]
+    inline def fromHex(publicKeyHex: String): Secp256k1PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(publicKeyHex.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PublicKey]
   }
 }

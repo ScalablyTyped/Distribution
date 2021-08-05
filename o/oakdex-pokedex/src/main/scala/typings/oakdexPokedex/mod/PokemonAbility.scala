@@ -12,22 +12,17 @@ trait PokemonAbility extends StObject {
 }
 object PokemonAbility {
   
-  @scala.inline
-  def apply(name: String): PokemonAbility = {
+  inline def apply(name: String): PokemonAbility = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PokemonAbility]
   }
   
-  @scala.inline
-  implicit class PokemonAbilityMutableBuilder[Self <: PokemonAbility] (val x: Self) extends AnyVal {
+  extension [Self <: PokemonAbility](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

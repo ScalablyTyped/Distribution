@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ConfigOptions = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ConfigOptions]
+  inline def apply(): ConfigOptions = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ConfigOptions]
   
   @JSImport("@open-wc/testing-karma-bs", JSImport.Namespace)
   @js.native

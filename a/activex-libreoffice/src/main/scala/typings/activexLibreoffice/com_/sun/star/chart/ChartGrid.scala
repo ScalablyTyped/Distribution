@@ -31,8 +31,7 @@ trait ChartGrid
      with XPropertySet
 object ChartGrid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LineCap: LineCap,
     LineColor: Color,
     LineDash: LineDash,

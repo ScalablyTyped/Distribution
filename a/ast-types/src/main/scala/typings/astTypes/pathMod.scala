@@ -15,8 +15,7 @@ object pathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fork: Fork): PathConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[PathConstructor]
+  inline def default(fork: Fork): PathConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[PathConstructor]
   
   @js.native
   trait Path[V] extends StObject {

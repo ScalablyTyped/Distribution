@@ -28,22 +28,17 @@ trait ASPxClientEditValidationEventArgs
 }
 object ASPxClientEditValidationEventArgs {
   
-  @scala.inline
-  def apply(errorText: String, isValid: Boolean, value: String): ASPxClientEditValidationEventArgs = {
+  inline def apply(errorText: String, isValid: Boolean, value: String): ASPxClientEditValidationEventArgs = {
     val __obj = js.Dynamic.literal(errorText = errorText.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientEditValidationEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientEditValidationEventArgsMutableBuilder[Self <: ASPxClientEditValidationEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientEditValidationEventArgs](x: Self) {
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

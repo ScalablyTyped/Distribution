@@ -21,29 +21,22 @@ trait opensshForwardedStreamLocalChannelInfo
 }
 object opensshForwardedStreamLocalChannelInfo {
   
-  @scala.inline
-  def apply(data: SocketChannelData, packetSize: Double, sender: Double, window: Double): opensshForwardedStreamLocalChannelInfo = {
+  inline def apply(data: SocketChannelData, packetSize: Double, sender: Double, window: Double): opensshForwardedStreamLocalChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("forwarded-streamlocal@openssh.com")
     __obj.asInstanceOf[opensshForwardedStreamLocalChannelInfo]
   }
   
-  @scala.inline
-  implicit class opensshForwardedStreamLocalChannelInfoMutableBuilder[Self <: opensshForwardedStreamLocalChannelInfo] (val x: Self) extends AnyVal {
+  extension [Self <: opensshForwardedStreamLocalChannelInfo](x: Self) {
     
-    @scala.inline
-    def setData(value: SocketChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SocketChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
+    inline def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: Double): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Double): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `forwarded-streamlocal@opensshDotcom`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `forwarded-streamlocal@opensshDotcom`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

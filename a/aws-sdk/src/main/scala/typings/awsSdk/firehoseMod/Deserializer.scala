@@ -18,25 +18,19 @@ trait Deserializer extends StObject {
 }
 object Deserializer {
   
-  @scala.inline
-  def apply(): Deserializer = {
+  inline def apply(): Deserializer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deserializer]
   }
   
-  @scala.inline
-  implicit class DeserializerMutableBuilder[Self <: Deserializer] (val x: Self) extends AnyVal {
+  extension [Self <: Deserializer](x: Self) {
     
-    @scala.inline
-    def setHiveJsonSerDe(value: HiveJsonSerDe): Self = StObject.set(x, "HiveJsonSerDe", value.asInstanceOf[js.Any])
+    inline def setHiveJsonSerDe(value: HiveJsonSerDe): Self = StObject.set(x, "HiveJsonSerDe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiveJsonSerDeUndefined: Self = StObject.set(x, "HiveJsonSerDe", js.undefined)
+    inline def setHiveJsonSerDeUndefined: Self = StObject.set(x, "HiveJsonSerDe", js.undefined)
     
-    @scala.inline
-    def setOpenXJsonSerDe(value: OpenXJsonSerDe): Self = StObject.set(x, "OpenXJsonSerDe", value.asInstanceOf[js.Any])
+    inline def setOpenXJsonSerDe(value: OpenXJsonSerDe): Self = StObject.set(x, "OpenXJsonSerDe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenXJsonSerDeUndefined: Self = StObject.set(x, "OpenXJsonSerDe", js.undefined)
+    inline def setOpenXJsonSerDeUndefined: Self = StObject.set(x, "OpenXJsonSerDe", js.undefined)
   }
 }

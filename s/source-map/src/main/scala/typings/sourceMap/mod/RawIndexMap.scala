@@ -14,22 +14,17 @@ trait RawIndexMap
 }
 object RawIndexMap {
   
-  @scala.inline
-  def apply(sections: js.Array[RawSection], version: Double): RawIndexMap = {
+  inline def apply(sections: js.Array[RawSection], version: Double): RawIndexMap = {
     val __obj = js.Dynamic.literal(sections = sections.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawIndexMap]
   }
   
-  @scala.inline
-  implicit class RawIndexMapMutableBuilder[Self <: RawIndexMap] (val x: Self) extends AnyVal {
+  extension [Self <: RawIndexMap](x: Self) {
     
-    @scala.inline
-    def setSections(value: js.Array[RawSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: js.Array[RawSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsVarargs(value: RawSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: RawSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

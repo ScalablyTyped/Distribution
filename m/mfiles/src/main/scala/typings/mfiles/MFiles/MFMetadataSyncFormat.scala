@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFMetadataSyncFormat extends StObject
 object MFMetadataSyncFormat {
   
-  @scala.inline
-  def Excel: `1` = 1.asInstanceOf[`1`]
+  inline def Excel: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def PowerPoint: `2` = 2.asInstanceOf[`2`]
+  inline def PowerPoint: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Word: `0` = 0.asInstanceOf[`0`]
+  inline def Word: `0` = 0.asInstanceOf[`0`]
 }

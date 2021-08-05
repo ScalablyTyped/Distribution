@@ -36,20 +36,16 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(perRequest: Boolean, `type`: none | single | per_room): Type = {
+  inline def apply(perRequest: Boolean, `type`: none | single | per_room): Type = {
     val __obj = js.Dynamic.literal(perRequest = perRequest.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setPerRequest(value: Boolean): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
+    inline def setPerRequest(value: Boolean): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: none | single | per_room): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: none | single | per_room): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

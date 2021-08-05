@@ -20,22 +20,22 @@ object activitymonitorMod {
       */
     def this(options: IOptions[Sender, Args]) = this()
     
-    var _activityStopped: js.Any = js.native
+    /* private */ var _activityStopped: js.Any = js.native
     
-    var _args: js.Any = js.native
+    /* private */ var _args: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /**
       * A signal handler for the monitored signal.
       */
-    var _onSignalFired: js.Any = js.native
+    /* private */ var _onSignalFired: js.Any = js.native
     
-    var _sender: js.Any = js.native
+    /* private */ var _sender: js.Any = js.native
     
-    var _timeout: js.Any = js.native
+    /* private */ var _timeout: js.Any = js.native
     
-    var _timer: js.Any = js.native
+    /* private */ var _timer: js.Any = js.native
     
     /**
       * A signal emitted when activity has ceased.
@@ -99,20 +99,16 @@ object activitymonitorMod {
     }
     object IArguments {
       
-      @scala.inline
-      def apply[Sender, Args](args: Args, sender: Sender): IArguments[Sender, Args] = {
+      inline def apply[Sender, Args](args: Args, sender: Sender): IArguments[Sender, Args] = {
         val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
         __obj.asInstanceOf[IArguments[Sender, Args]]
       }
       
-      @scala.inline
-      implicit class IArgumentsMutableBuilder[Self <: IArguments[?, ?], Sender, Args] (val x: Self & (IArguments[Sender, Args])) extends AnyVal {
+      extension [Self <: IArguments[?, ?], Sender, Args](x: Self & (IArguments[Sender, Args])) {
         
-        @scala.inline
-        def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSender(value: Sender): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+        inline def setSender(value: Sender): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       }
     }
     
@@ -135,23 +131,18 @@ object activitymonitorMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[Sender, Args](signal: ISignal[Sender, Args]): IOptions[Sender, Args] = {
+      inline def apply[Sender, Args](signal: ISignal[Sender, Args]): IOptions[Sender, Args] = {
         val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[Sender, Args]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?, ?], Sender, Args] (val x: Self & (IOptions[Sender, Args])) extends AnyVal {
+      extension [Self <: IOptions[?, ?], Sender, Args](x: Self & (IOptions[Sender, Args])) {
         
-        @scala.inline
-        def setSignal(value: ISignal[Sender, Args]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+        inline def setSignal(value: ISignal[Sender, Args]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       }
     }
   }

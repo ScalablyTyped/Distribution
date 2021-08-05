@@ -18,19 +18,15 @@ trait Tiering extends StObject {
 }
 object Tiering {
   
-  @scala.inline
-  def apply(AccessTier: IntelligentTieringAccessTier, Days: IntelligentTieringDays): Tiering = {
+  inline def apply(AccessTier: IntelligentTieringAccessTier, Days: IntelligentTieringDays): Tiering = {
     val __obj = js.Dynamic.literal(AccessTier = AccessTier.asInstanceOf[js.Any], Days = Days.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tiering]
   }
   
-  @scala.inline
-  implicit class TieringMutableBuilder[Self <: Tiering] (val x: Self) extends AnyVal {
+  extension [Self <: Tiering](x: Self) {
     
-    @scala.inline
-    def setAccessTier(value: IntelligentTieringAccessTier): Self = StObject.set(x, "AccessTier", value.asInstanceOf[js.Any])
+    inline def setAccessTier(value: IntelligentTieringAccessTier): Self = StObject.set(x, "AccessTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDays(value: IntelligentTieringDays): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+    inline def setDays(value: IntelligentTieringDays): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
   }
 }

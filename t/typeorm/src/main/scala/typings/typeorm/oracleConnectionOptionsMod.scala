@@ -35,30 +35,23 @@ object oracleConnectionOptionsMod {
   }
   object OracleConnectionOptions {
     
-    @scala.inline
-    def apply(): OracleConnectionOptions = {
+    inline def apply(): OracleConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("oracle")
       __obj.asInstanceOf[OracleConnectionOptions]
     }
     
-    @scala.inline
-    implicit class OracleConnectionOptionsMutableBuilder[Self <: OracleConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OracleConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setReplication(value: Slaves): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
+      inline def setReplication(value: Slaves): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
+      inline def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setType(value: oracle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: oracle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

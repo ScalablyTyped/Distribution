@@ -41,56 +41,40 @@ object gapi {
       }
       object SiteSummaryResponse {
         
-        @scala.inline
-        def apply(): SiteSummaryResponse = {
+        inline def apply(): SiteSummaryResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SiteSummaryResponse]
         }
         
-        @scala.inline
-        implicit class SiteSummaryResponseMutableBuilder[Self <: SiteSummaryResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SiteSummaryResponse](x: Self) {
           
-          @scala.inline
-          def setAbusiveStatus(value: String): Self = StObject.set(x, "abusiveStatus", value.asInstanceOf[js.Any])
+          inline def setAbusiveStatus(value: String): Self = StObject.set(x, "abusiveStatus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAbusiveStatusUndefined: Self = StObject.set(x, "abusiveStatus", js.undefined)
+          inline def setAbusiveStatusUndefined: Self = StObject.set(x, "abusiveStatus", js.undefined)
           
-          @scala.inline
-          def setEnforcementTime(value: String): Self = StObject.set(x, "enforcementTime", value.asInstanceOf[js.Any])
+          inline def setEnforcementTime(value: String): Self = StObject.set(x, "enforcementTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEnforcementTimeUndefined: Self = StObject.set(x, "enforcementTime", js.undefined)
+          inline def setEnforcementTimeUndefined: Self = StObject.set(x, "enforcementTime", js.undefined)
           
-          @scala.inline
-          def setFilterStatus(value: String): Self = StObject.set(x, "filterStatus", value.asInstanceOf[js.Any])
+          inline def setFilterStatus(value: String): Self = StObject.set(x, "filterStatus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFilterStatusUndefined: Self = StObject.set(x, "filterStatus", js.undefined)
+          inline def setFilterStatusUndefined: Self = StObject.set(x, "filterStatus", js.undefined)
           
-          @scala.inline
-          def setLastChangeTime(value: String): Self = StObject.set(x, "lastChangeTime", value.asInstanceOf[js.Any])
+          inline def setLastChangeTime(value: String): Self = StObject.set(x, "lastChangeTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLastChangeTimeUndefined: Self = StObject.set(x, "lastChangeTime", js.undefined)
+          inline def setLastChangeTimeUndefined: Self = StObject.set(x, "lastChangeTime", js.undefined)
           
-          @scala.inline
-          def setReportUrl(value: String): Self = StObject.set(x, "reportUrl", value.asInstanceOf[js.Any])
+          inline def setReportUrl(value: String): Self = StObject.set(x, "reportUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReportUrlUndefined: Self = StObject.set(x, "reportUrl", js.undefined)
+          inline def setReportUrlUndefined: Self = StObject.set(x, "reportUrl", js.undefined)
           
-          @scala.inline
-          def setReviewedSite(value: String): Self = StObject.set(x, "reviewedSite", value.asInstanceOf[js.Any])
+          inline def setReviewedSite(value: String): Self = StObject.set(x, "reviewedSite", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReviewedSiteUndefined: Self = StObject.set(x, "reviewedSite", js.undefined)
+          inline def setReviewedSiteUndefined: Self = StObject.set(x, "reviewedSite", js.undefined)
           
-          @scala.inline
-          def setUnderReview(value: Boolean): Self = StObject.set(x, "underReview", value.asInstanceOf[js.Any])
+          inline def setUnderReview(value: Boolean): Self = StObject.set(x, "underReview", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUnderReviewUndefined: Self = StObject.set(x, "underReview", js.undefined)
+          inline def setUnderReviewUndefined: Self = StObject.set(x, "underReview", js.undefined)
         }
       }
       
@@ -117,23 +101,18 @@ object gapi {
       }
       object ViolatingSitesResponse {
         
-        @scala.inline
-        def apply(): ViolatingSitesResponse = {
+        inline def apply(): ViolatingSitesResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ViolatingSitesResponse]
         }
         
-        @scala.inline
-        implicit class ViolatingSitesResponseMutableBuilder[Self <: ViolatingSitesResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ViolatingSitesResponse](x: Self) {
           
-          @scala.inline
-          def setViolatingSites(value: js.Array[SiteSummaryResponse]): Self = StObject.set(x, "violatingSites", value.asInstanceOf[js.Any])
+          inline def setViolatingSites(value: js.Array[SiteSummaryResponse]): Self = StObject.set(x, "violatingSites", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setViolatingSitesUndefined: Self = StObject.set(x, "violatingSites", js.undefined)
+          inline def setViolatingSitesUndefined: Self = StObject.set(x, "violatingSites", js.undefined)
           
-          @scala.inline
-          def setViolatingSitesVarargs(value: SiteSummaryResponse*): Self = StObject.set(x, "violatingSites", js.Array(value :_*))
+          inline def setViolatingSitesVarargs(value: SiteSummaryResponse*): Self = StObject.set(x, "violatingSites", js.Array(value :_*))
         }
       }
     }

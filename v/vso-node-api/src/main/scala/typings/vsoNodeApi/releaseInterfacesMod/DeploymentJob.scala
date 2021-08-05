@@ -12,22 +12,17 @@ trait DeploymentJob extends StObject {
 }
 object DeploymentJob {
   
-  @scala.inline
-  def apply(job: ReleaseTask, tasks: js.Array[ReleaseTask]): DeploymentJob = {
+  inline def apply(job: ReleaseTask, tasks: js.Array[ReleaseTask]): DeploymentJob = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentJob]
   }
   
-  @scala.inline
-  implicit class DeploymentJobMutableBuilder[Self <: DeploymentJob] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentJob](x: Self) {
     
-    @scala.inline
-    def setJob(value: ReleaseTask): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: ReleaseTask): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasks(value: js.Array[ReleaseTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[ReleaseTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: ReleaseTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: ReleaseTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

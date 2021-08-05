@@ -40,40 +40,29 @@ trait EventStream extends StObject {
 }
 object EventStream {
   
-  @scala.inline
-  def apply(ApplicationId: string, DestinationStreamArn: string, RoleArn: string): EventStream = {
+  inline def apply(ApplicationId: string, DestinationStreamArn: string, RoleArn: string): EventStream = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], DestinationStreamArn = DestinationStreamArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventStream]
   }
   
-  @scala.inline
-  implicit class EventStreamMutableBuilder[Self <: EventStream] (val x: Self) extends AnyVal {
+  extension [Self <: EventStream](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationStreamArn(value: string): Self = StObject.set(x, "DestinationStreamArn", value.asInstanceOf[js.Any])
+    inline def setDestinationStreamArn(value: string): Self = StObject.set(x, "DestinationStreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalId(value: string): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: string): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedBy(value: string): Self = StObject.set(x, "LastUpdatedBy", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedBy(value: string): Self = StObject.set(x, "LastUpdatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedByUndefined: Self = StObject.set(x, "LastUpdatedBy", js.undefined)
+    inline def setLastUpdatedByUndefined: Self = StObject.set(x, "LastUpdatedBy", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

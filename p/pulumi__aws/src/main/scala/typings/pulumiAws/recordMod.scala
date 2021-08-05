@@ -122,21 +122,16 @@ object recordMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Record]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Record]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RecordState): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Record]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Record]
+    inline def get(name: String, id: Input[ID]): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Record]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Record]
+    inline def get(name: String, id: Input[ID], state: RecordState): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Record]
+    inline def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Record]
     
     /**
       * Returns true if the given object is an instance of Record.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean]
   }
   
   trait RecordArgs extends StObject {
@@ -224,112 +219,79 @@ object recordMod {
   }
   object RecordArgs {
     
-    @scala.inline
-    def apply(name: Input[String], `type`: Input[String | RecordType], zoneId: Input[String]): RecordArgs = {
+    inline def apply(name: Input[String], `type`: Input[String | RecordType], zoneId: Input[String]): RecordArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordArgs]
     }
     
-    @scala.inline
-    implicit class RecordArgsMutableBuilder[Self <: RecordArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RecordArgs](x: Self) {
       
-      @scala.inline
-      def setAliases(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordAlias]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordAlias]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowOverwrite(value: Input[Boolean]): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
+      inline def setAllowOverwrite(value: Input[Boolean]): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
+      inline def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
       
-      @scala.inline
-      def setFailoverRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]]]): Self = StObject.set(x, "failoverRoutingPolicies", value.asInstanceOf[js.Any])
+      inline def setFailoverRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]]]): Self = StObject.set(x, "failoverRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailoverRoutingPoliciesUndefined: Self = StObject.set(x, "failoverRoutingPolicies", js.undefined)
+      inline def setFailoverRoutingPoliciesUndefined: Self = StObject.set(x, "failoverRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setFailoverRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]*): Self = StObject.set(x, "failoverRoutingPolicies", js.Array(value :_*))
+      inline def setFailoverRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]*): Self = StObject.set(x, "failoverRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setGeolocationRoutingPolicies(
+      inline def setGeolocationRoutingPolicies(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]]
             ]
       ): Self = StObject.set(x, "geolocationRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeolocationRoutingPoliciesUndefined: Self = StObject.set(x, "geolocationRoutingPolicies", js.undefined)
+      inline def setGeolocationRoutingPoliciesUndefined: Self = StObject.set(x, "geolocationRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setGeolocationRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]*): Self = StObject.set(x, "geolocationRoutingPolicies", js.Array(value :_*))
+      inline def setGeolocationRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]*): Self = StObject.set(x, "geolocationRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setHealthCheckId(value: Input[String]): Self = StObject.set(x, "healthCheckId", value.asInstanceOf[js.Any])
+      inline def setHealthCheckId(value: Input[String]): Self = StObject.set(x, "healthCheckId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckIdUndefined: Self = StObject.set(x, "healthCheckId", js.undefined)
+      inline def setHealthCheckIdUndefined: Self = StObject.set(x, "healthCheckId", js.undefined)
       
-      @scala.inline
-      def setLatencyRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]]]): Self = StObject.set(x, "latencyRoutingPolicies", value.asInstanceOf[js.Any])
+      inline def setLatencyRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]]]): Self = StObject.set(x, "latencyRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatencyRoutingPoliciesUndefined: Self = StObject.set(x, "latencyRoutingPolicies", js.undefined)
+      inline def setLatencyRoutingPoliciesUndefined: Self = StObject.set(x, "latencyRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setLatencyRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]*): Self = StObject.set(x, "latencyRoutingPolicies", js.Array(value :_*))
+      inline def setLatencyRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]*): Self = StObject.set(x, "latencyRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setMultivalueAnswerRoutingPolicy(value: Input[Boolean]): Self = StObject.set(x, "multivalueAnswerRoutingPolicy", value.asInstanceOf[js.Any])
+      inline def setMultivalueAnswerRoutingPolicy(value: Input[Boolean]): Self = StObject.set(x, "multivalueAnswerRoutingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultivalueAnswerRoutingPolicyUndefined: Self = StObject.set(x, "multivalueAnswerRoutingPolicy", js.undefined)
+      inline def setMultivalueAnswerRoutingPolicyUndefined: Self = StObject.set(x, "multivalueAnswerRoutingPolicy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecords(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
+      inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
       
-      @scala.inline
-      def setRecordsVarargs(value: Input[String]*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Input[String]*): Self = StObject.set(x, "records", js.Array(value :_*))
       
-      @scala.inline
-      def setSetIdentifier(value: Input[String]): Self = StObject.set(x, "setIdentifier", value.asInstanceOf[js.Any])
+      inline def setSetIdentifier(value: Input[String]): Self = StObject.set(x, "setIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetIdentifierUndefined: Self = StObject.set(x, "setIdentifier", js.undefined)
+      inline def setSetIdentifierUndefined: Self = StObject.set(x, "setIdentifier", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Input[Double]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Input[Double]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String | RecordType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String | RecordType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightedRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]]]): Self = StObject.set(x, "weightedRoutingPolicies", value.asInstanceOf[js.Any])
+      inline def setWeightedRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]]]): Self = StObject.set(x, "weightedRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightedRoutingPoliciesUndefined: Self = StObject.set(x, "weightedRoutingPolicies", js.undefined)
+      inline def setWeightedRoutingPoliciesUndefined: Self = StObject.set(x, "weightedRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setWeightedRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]*): Self = StObject.set(x, "weightedRoutingPolicies", js.Array(value :_*))
+      inline def setWeightedRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]*): Self = StObject.set(x, "weightedRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -423,126 +385,88 @@ object recordMod {
   }
   object RecordState {
     
-    @scala.inline
-    def apply(): RecordState = {
+    inline def apply(): RecordState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecordState]
     }
     
-    @scala.inline
-    implicit class RecordStateMutableBuilder[Self <: RecordState] (val x: Self) extends AnyVal {
+    extension [Self <: RecordState](x: Self) {
       
-      @scala.inline
-      def setAliases(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordAlias]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordAlias]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordAlias]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowOverwrite(value: Input[Boolean]): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
+      inline def setAllowOverwrite(value: Input[Boolean]): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
+      inline def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
       
-      @scala.inline
-      def setFailoverRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]]]): Self = StObject.set(x, "failoverRoutingPolicies", value.asInstanceOf[js.Any])
+      inline def setFailoverRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]]]): Self = StObject.set(x, "failoverRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailoverRoutingPoliciesUndefined: Self = StObject.set(x, "failoverRoutingPolicies", js.undefined)
+      inline def setFailoverRoutingPoliciesUndefined: Self = StObject.set(x, "failoverRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setFailoverRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]*): Self = StObject.set(x, "failoverRoutingPolicies", js.Array(value :_*))
+      inline def setFailoverRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordFailoverRoutingPolicy]*): Self = StObject.set(x, "failoverRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setFqdn(value: Input[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
+      inline def setFqdn(value: Input[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFqdnUndefined: Self = StObject.set(x, "fqdn", js.undefined)
+      inline def setFqdnUndefined: Self = StObject.set(x, "fqdn", js.undefined)
       
-      @scala.inline
-      def setGeolocationRoutingPolicies(
+      inline def setGeolocationRoutingPolicies(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]]
             ]
       ): Self = StObject.set(x, "geolocationRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeolocationRoutingPoliciesUndefined: Self = StObject.set(x, "geolocationRoutingPolicies", js.undefined)
+      inline def setGeolocationRoutingPoliciesUndefined: Self = StObject.set(x, "geolocationRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setGeolocationRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]*): Self = StObject.set(x, "geolocationRoutingPolicies", js.Array(value :_*))
+      inline def setGeolocationRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordGeolocationRoutingPolicy]*): Self = StObject.set(x, "geolocationRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setHealthCheckId(value: Input[String]): Self = StObject.set(x, "healthCheckId", value.asInstanceOf[js.Any])
+      inline def setHealthCheckId(value: Input[String]): Self = StObject.set(x, "healthCheckId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckIdUndefined: Self = StObject.set(x, "healthCheckId", js.undefined)
+      inline def setHealthCheckIdUndefined: Self = StObject.set(x, "healthCheckId", js.undefined)
       
-      @scala.inline
-      def setLatencyRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]]]): Self = StObject.set(x, "latencyRoutingPolicies", value.asInstanceOf[js.Any])
+      inline def setLatencyRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]]]): Self = StObject.set(x, "latencyRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatencyRoutingPoliciesUndefined: Self = StObject.set(x, "latencyRoutingPolicies", js.undefined)
+      inline def setLatencyRoutingPoliciesUndefined: Self = StObject.set(x, "latencyRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setLatencyRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]*): Self = StObject.set(x, "latencyRoutingPolicies", js.Array(value :_*))
+      inline def setLatencyRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordLatencyRoutingPolicy]*): Self = StObject.set(x, "latencyRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setMultivalueAnswerRoutingPolicy(value: Input[Boolean]): Self = StObject.set(x, "multivalueAnswerRoutingPolicy", value.asInstanceOf[js.Any])
+      inline def setMultivalueAnswerRoutingPolicy(value: Input[Boolean]): Self = StObject.set(x, "multivalueAnswerRoutingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultivalueAnswerRoutingPolicyUndefined: Self = StObject.set(x, "multivalueAnswerRoutingPolicy", js.undefined)
+      inline def setMultivalueAnswerRoutingPolicyUndefined: Self = StObject.set(x, "multivalueAnswerRoutingPolicy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRecords(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
+      inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
       
-      @scala.inline
-      def setRecordsVarargs(value: Input[String]*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Input[String]*): Self = StObject.set(x, "records", js.Array(value :_*))
       
-      @scala.inline
-      def setSetIdentifier(value: Input[String]): Self = StObject.set(x, "setIdentifier", value.asInstanceOf[js.Any])
+      inline def setSetIdentifier(value: Input[String]): Self = StObject.set(x, "setIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetIdentifierUndefined: Self = StObject.set(x, "setIdentifier", js.undefined)
+      inline def setSetIdentifierUndefined: Self = StObject.set(x, "setIdentifier", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Input[Double]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Input[Double]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String | RecordType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String | RecordType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWeightedRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]]]): Self = StObject.set(x, "weightedRoutingPolicies", value.asInstanceOf[js.Any])
+      inline def setWeightedRoutingPolicies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]]]): Self = StObject.set(x, "weightedRoutingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightedRoutingPoliciesUndefined: Self = StObject.set(x, "weightedRoutingPolicies", js.undefined)
+      inline def setWeightedRoutingPoliciesUndefined: Self = StObject.set(x, "weightedRoutingPolicies", js.undefined)
       
-      @scala.inline
-      def setWeightedRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]*): Self = StObject.set(x, "weightedRoutingPolicies", js.Array(value :_*))
+      inline def setWeightedRoutingPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.route53.RecordWeightedRoutingPolicy]*): Self = StObject.set(x, "weightedRoutingPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+      inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
     }
   }
 }

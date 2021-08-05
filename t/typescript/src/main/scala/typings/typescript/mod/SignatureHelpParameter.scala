@@ -16,8 +16,7 @@ trait SignatureHelpParameter extends StObject {
 }
 object SignatureHelpParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayParts: js.Array[SymbolDisplayPart],
     documentation: js.Array[SymbolDisplayPart],
     isOptional: Boolean,
@@ -27,25 +26,18 @@ object SignatureHelpParameter {
     __obj.asInstanceOf[SignatureHelpParameter]
   }
   
-  @scala.inline
-  implicit class SignatureHelpParameterMutableBuilder[Self <: SignatureHelpParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpParameter](x: Self) {
     
-    @scala.inline
-    def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
+    inline def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
+    inline def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentation(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value :_*))
     
-    @scala.inline
-    def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
+    inline def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

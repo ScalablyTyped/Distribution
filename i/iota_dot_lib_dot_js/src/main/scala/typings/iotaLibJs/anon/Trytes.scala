@@ -10,19 +10,15 @@ trait Trytes extends StObject {
 }
 object Trytes {
   
-  @scala.inline
-  def apply(trytes: js.Array[String]): Trytes = {
+  inline def apply(trytes: js.Array[String]): Trytes = {
     val __obj = js.Dynamic.literal(trytes = trytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trytes]
   }
   
-  @scala.inline
-  implicit class TrytesMutableBuilder[Self <: Trytes] (val x: Self) extends AnyVal {
+  extension [Self <: Trytes](x: Self) {
     
-    @scala.inline
-    def setTrytes(value: js.Array[String]): Self = StObject.set(x, "trytes", value.asInstanceOf[js.Any])
+    inline def setTrytes(value: js.Array[String]): Self = StObject.set(x, "trytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrytesVarargs(value: String*): Self = StObject.set(x, "trytes", js.Array(value :_*))
+    inline def setTrytesVarargs(value: String*): Self = StObject.set(x, "trytes", js.Array(value :_*))
   }
 }

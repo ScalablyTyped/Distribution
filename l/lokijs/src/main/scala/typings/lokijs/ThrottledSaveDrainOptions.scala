@@ -16,8 +16,7 @@ trait ThrottledSaveDrainOptions extends StObject {
 }
 object ThrottledSaveDrainOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     recursiveWait: Boolean,
     recursiveWaitLimit: Boolean,
     recursiveWaitLimitDuration: Double,
@@ -27,19 +26,14 @@ object ThrottledSaveDrainOptions {
     __obj.asInstanceOf[ThrottledSaveDrainOptions]
   }
   
-  @scala.inline
-  implicit class ThrottledSaveDrainOptionsMutableBuilder[Self <: ThrottledSaveDrainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThrottledSaveDrainOptions](x: Self) {
     
-    @scala.inline
-    def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
+    inline def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
+    inline def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
+    inline def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
   }
 }

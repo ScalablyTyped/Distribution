@@ -12,25 +12,19 @@ trait BorderDisabled extends StObject {
 }
 object BorderDisabled {
   
-  @scala.inline
-  def apply(): BorderDisabled = {
+  inline def apply(): BorderDisabled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderDisabled]
   }
   
-  @scala.inline
-  implicit class BorderDisabledMutableBuilder[Self <: BorderDisabled] (val x: Self) extends AnyVal {
+  extension [Self <: BorderDisabled](x: Self) {
     
-    @scala.inline
-    def setBorder(value: Radius): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Radius): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: OpacityOpacityType): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: OpacityOpacityType): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }
 }

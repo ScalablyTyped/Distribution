@@ -58,73 +58,51 @@ trait DomainController extends StObject {
 }
 object DomainController {
   
-  @scala.inline
-  def apply(): DomainController = {
+  inline def apply(): DomainController = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainController]
   }
   
-  @scala.inline
-  implicit class DomainControllerMutableBuilder[Self <: DomainController] (val x: Self) extends AnyVal {
+  extension [Self <: DomainController](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setDnsIpAddr(value: IpAddr): Self = StObject.set(x, "DnsIpAddr", value.asInstanceOf[js.Any])
+    inline def setDnsIpAddr(value: IpAddr): Self = StObject.set(x, "DnsIpAddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsIpAddrUndefined: Self = StObject.set(x, "DnsIpAddr", js.undefined)
+    inline def setDnsIpAddrUndefined: Self = StObject.set(x, "DnsIpAddr", js.undefined)
     
-    @scala.inline
-    def setDomainControllerId(value: DomainControllerId): Self = StObject.set(x, "DomainControllerId", value.asInstanceOf[js.Any])
+    inline def setDomainControllerId(value: DomainControllerId): Self = StObject.set(x, "DomainControllerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainControllerIdUndefined: Self = StObject.set(x, "DomainControllerId", js.undefined)
+    inline def setDomainControllerIdUndefined: Self = StObject.set(x, "DomainControllerId", js.undefined)
     
-    @scala.inline
-    def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
+    inline def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
+    inline def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DomainControllerStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DomainControllerStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setStatusLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StatusLastUpdatedDateTime", js.undefined)
+    inline def setStatusLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StatusLastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setStatusReason(value: DomainControllerStatusReason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: DomainControllerStatusReason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

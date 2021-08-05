@@ -19,11 +19,9 @@ object toolTipMod {
   trait AnimationType extends StObject
   object AnimationType {
     
-    @scala.inline
-    def bounce: typings.reactPowerTooltip.reactPowerTooltipStrings.bounce = "bounce".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.bounce]
+    inline def bounce: typings.reactPowerTooltip.reactPowerTooltipStrings.bounce = "bounce".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.bounce]
     
-    @scala.inline
-    def fade: typings.reactPowerTooltip.reactPowerTooltipStrings.fade = "fade".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.fade]
+    inline def fade: typings.reactPowerTooltip.reactPowerTooltipStrings.fade = "fade".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.fade]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -34,14 +32,11 @@ object toolTipMod {
   trait ArrowAlignType extends StObject
   object ArrowAlignType {
     
-    @scala.inline
-    def center: typings.reactPowerTooltip.reactPowerTooltipStrings.center = "center".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.center]
+    inline def center: typings.reactPowerTooltip.reactPowerTooltipStrings.center = "center".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.center]
     
-    @scala.inline
-    def end: typings.reactPowerTooltip.reactPowerTooltipStrings.end = "end".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.end]
+    inline def end: typings.reactPowerTooltip.reactPowerTooltipStrings.end = "end".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.end]
     
-    @scala.inline
-    def start: typings.reactPowerTooltip.reactPowerTooltipStrings.start = "start".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.start]
+    inline def start: typings.reactPowerTooltip.reactPowerTooltipStrings.start = "start".asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.start]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -61,41 +56,29 @@ object toolTipMod {
   trait PositionType extends StObject
   object PositionType {
     
-    @scala.inline
-    def `bottom center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom center` = ("bottom center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom center`]
+    inline def `bottom center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom center` = ("bottom center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom center`]
     
-    @scala.inline
-    def `bottom end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom end` = ("bottom end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom end`]
+    inline def `bottom end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom end` = ("bottom end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom end`]
     
-    @scala.inline
-    def `bottom start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom start` = ("bottom start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom start`]
+    inline def `bottom start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom start` = ("bottom start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`bottom start`]
     
-    @scala.inline
-    def `left center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`left center` = ("left center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`left center`]
+    inline def `left center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`left center` = ("left center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`left center`]
     
-    @scala.inline
-    def `left end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`left end` = ("left end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`left end`]
+    inline def `left end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`left end` = ("left end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`left end`]
     
-    @scala.inline
-    def `left start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`left start` = ("left start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`left start`]
+    inline def `left start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`left start` = ("left start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`left start`]
     
-    @scala.inline
-    def `right center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`right center` = ("right center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`right center`]
+    inline def `right center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`right center` = ("right center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`right center`]
     
-    @scala.inline
-    def `right end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`right end` = ("right end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`right end`]
+    inline def `right end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`right end` = ("right end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`right end`]
     
-    @scala.inline
-    def `right start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`right start` = ("right start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`right start`]
+    inline def `right start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`right start` = ("right start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`right start`]
     
-    @scala.inline
-    def `top center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`top center` = ("top center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`top center`]
+    inline def `top center`: typings.reactPowerTooltip.reactPowerTooltipStrings.`top center` = ("top center").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`top center`]
     
-    @scala.inline
-    def `top end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`top end` = ("top end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`top end`]
+    inline def `top end`: typings.reactPowerTooltip.reactPowerTooltipStrings.`top end` = ("top end").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`top end`]
     
-    @scala.inline
-    def `top start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`top start` = ("top start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`top start`]
+    inline def `top start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`top start` = ("top start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`top start`]
   }
   
   type Tooltip = Component[TooltipProps, js.Object, js.Any]
@@ -142,125 +125,86 @@ object toolTipMod {
   }
   object TooltipProps {
     
-    @scala.inline
-    def apply(show: Boolean): TooltipProps = {
+    inline def apply(show: Boolean): TooltipProps = {
       val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProps]
     }
     
-    @scala.inline
-    implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setArrowAlign(value: ArrowAlignType): Self = StObject.set(x, "arrowAlign", value.asInstanceOf[js.Any])
+      inline def setArrowAlign(value: ArrowAlignType): Self = StObject.set(x, "arrowAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowAlignUndefined: Self = StObject.set(x, "arrowAlign", js.undefined)
+      inline def setArrowAlignUndefined: Self = StObject.set(x, "arrowAlign", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+      inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+      inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setHoverBackground(value: String): Self = StObject.set(x, "hoverBackground", value.asInstanceOf[js.Any])
+      inline def setHoverBackground(value: String): Self = StObject.set(x, "hoverBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverBackgroundUndefined: Self = StObject.set(x, "hoverBackground", js.undefined)
+      inline def setHoverBackgroundUndefined: Self = StObject.set(x, "hoverBackground", js.undefined)
       
-      @scala.inline
-      def setLineSeparated(value: Boolean | String): Self = StObject.set(x, "lineSeparated", value.asInstanceOf[js.Any])
+      inline def setLineSeparated(value: Boolean | String): Self = StObject.set(x, "lineSeparated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineSeparatedUndefined: Self = StObject.set(x, "lineSeparated", js.undefined)
+      inline def setLineSeparatedUndefined: Self = StObject.set(x, "lineSeparated", js.undefined)
       
-      @scala.inline
-      def setMoveDown(value: String): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
+      inline def setMoveDown(value: String): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveDownUndefined: Self = StObject.set(x, "moveDown", js.undefined)
+      inline def setMoveDownUndefined: Self = StObject.set(x, "moveDown", js.undefined)
       
-      @scala.inline
-      def setMoveLeft(value: String): Self = StObject.set(x, "moveLeft", value.asInstanceOf[js.Any])
+      inline def setMoveLeft(value: String): Self = StObject.set(x, "moveLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveLeftUndefined: Self = StObject.set(x, "moveLeft", js.undefined)
+      inline def setMoveLeftUndefined: Self = StObject.set(x, "moveLeft", js.undefined)
       
-      @scala.inline
-      def setMoveRight(value: String): Self = StObject.set(x, "moveRight", value.asInstanceOf[js.Any])
+      inline def setMoveRight(value: String): Self = StObject.set(x, "moveRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveRightUndefined: Self = StObject.set(x, "moveRight", js.undefined)
+      inline def setMoveRightUndefined: Self = StObject.set(x, "moveRight", js.undefined)
       
-      @scala.inline
-      def setMoveUp(value: String): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
+      inline def setMoveUp(value: String): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveUpUndefined: Self = StObject.set(x, "moveUp", js.undefined)
+      inline def setMoveUpUndefined: Self = StObject.set(x, "moveUp", js.undefined)
       
-      @scala.inline
-      def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+      inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+      inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
 }

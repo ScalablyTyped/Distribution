@@ -36,40 +36,29 @@ trait PortalQueryResultProperties extends StObject {
 }
 object PortalQueryResultProperties {
   
-  @scala.inline
-  def apply(): PortalQueryResultProperties = {
+  inline def apply(): PortalQueryResultProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortalQueryResultProperties]
   }
   
-  @scala.inline
-  implicit class PortalQueryResultPropertiesMutableBuilder[Self <: PortalQueryResultProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PortalQueryResultProperties](x: Self) {
     
-    @scala.inline
-    def setNextQueryParams(value: PortalQueryParamsProperties): Self = StObject.set(x, "nextQueryParams", value.asInstanceOf[js.Any])
+    inline def setNextQueryParams(value: PortalQueryParamsProperties): Self = StObject.set(x, "nextQueryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextQueryParamsUndefined: Self = StObject.set(x, "nextQueryParams", js.undefined)
+    inline def setNextQueryParamsUndefined: Self = StObject.set(x, "nextQueryParams", js.undefined)
     
-    @scala.inline
-    def setQueryParams(value: PortalQueryParamsProperties): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+    inline def setQueryParams(value: PortalQueryParamsProperties): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+    inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

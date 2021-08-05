@@ -24,8 +24,7 @@ trait XToolbarControllerListener
 }
 object XToolbarControllerListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     functionSelected: (String, String) => Unit,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XToolbarControllerListener {
     __obj.asInstanceOf[XToolbarControllerListener]
   }
   
-  @scala.inline
-  implicit class XToolbarControllerListenerMutableBuilder[Self <: XToolbarControllerListener] (val x: Self) extends AnyVal {
+  extension [Self <: XToolbarControllerListener](x: Self) {
     
-    @scala.inline
-    def setFunctionSelected(value: (String, String) => Unit): Self = StObject.set(x, "functionSelected", js.Any.fromFunction2(value))
+    inline def setFunctionSelected(value: (String, String) => Unit): Self = StObject.set(x, "functionSelected", js.Any.fromFunction2(value))
   }
 }

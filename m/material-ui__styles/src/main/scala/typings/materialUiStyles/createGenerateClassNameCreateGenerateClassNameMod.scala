@@ -11,10 +11,8 @@ object createGenerateClassNameCreateGenerateClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GenerateId]
-  @scala.inline
-  def default(options: GenerateClassNameOptions): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[GenerateId]
+  inline def default(): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GenerateId]
+  inline def default(options: GenerateClassNameOptions): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[GenerateId]
   
   trait GenerateClassNameOptions extends StObject {
     
@@ -26,32 +24,24 @@ object createGenerateClassNameCreateGenerateClassNameMod {
   }
   object GenerateClassNameOptions {
     
-    @scala.inline
-    def apply(): GenerateClassNameOptions = {
+    inline def apply(): GenerateClassNameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateClassNameOptions]
     }
     
-    @scala.inline
-    implicit class GenerateClassNameOptionsMutableBuilder[Self <: GenerateClassNameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateClassNameOptions](x: Self) {
       
-      @scala.inline
-      def setDisableGlobal(value: Boolean): Self = StObject.set(x, "disableGlobal", value.asInstanceOf[js.Any])
+      inline def setDisableGlobal(value: Boolean): Self = StObject.set(x, "disableGlobal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableGlobalUndefined: Self = StObject.set(x, "disableGlobal", js.undefined)
+      inline def setDisableGlobalUndefined: Self = StObject.set(x, "disableGlobal", js.undefined)
       
-      @scala.inline
-      def setProductionPrefix(value: String): Self = StObject.set(x, "productionPrefix", value.asInstanceOf[js.Any])
+      inline def setProductionPrefix(value: String): Self = StObject.set(x, "productionPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionPrefixUndefined: Self = StObject.set(x, "productionPrefix", js.undefined)
+      inline def setProductionPrefixUndefined: Self = StObject.set(x, "productionPrefix", js.undefined)
       
-      @scala.inline
-      def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
 }

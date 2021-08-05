@@ -13,19 +13,15 @@ trait TopicIds extends StObject {
 }
 object TopicIds {
   
-  @scala.inline
-  def apply(topicIds: js.Array[String]): TopicIds = {
+  inline def apply(topicIds: js.Array[String]): TopicIds = {
     val __obj = js.Dynamic.literal(topicIds = topicIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicIds]
   }
   
-  @scala.inline
-  implicit class TopicIdsMutableBuilder[Self <: TopicIds] (val x: Self) extends AnyVal {
+  extension [Self <: TopicIds](x: Self) {
     
-    @scala.inline
-    def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
+    inline def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
+    inline def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
   }
 }

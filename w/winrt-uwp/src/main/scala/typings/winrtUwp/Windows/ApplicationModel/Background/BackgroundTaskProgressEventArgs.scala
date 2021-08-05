@@ -15,19 +15,15 @@ trait BackgroundTaskProgressEventArgs extends StObject {
 }
 object BackgroundTaskProgressEventArgs {
   
-  @scala.inline
-  def apply(instanceId: String, progress: Double): BackgroundTaskProgressEventArgs = {
+  inline def apply(instanceId: String, progress: Double): BackgroundTaskProgressEventArgs = {
     val __obj = js.Dynamic.literal(instanceId = instanceId.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundTaskProgressEventArgs]
   }
   
-  @scala.inline
-  implicit class BackgroundTaskProgressEventArgsMutableBuilder[Self <: BackgroundTaskProgressEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundTaskProgressEventArgs](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

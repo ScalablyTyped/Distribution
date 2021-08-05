@@ -17,8 +17,7 @@ trait BoundaryEvent
 }
 object BoundaryEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     attachedToRef: Activity,
@@ -43,13 +42,10 @@ object BoundaryEvent {
     __obj.asInstanceOf[BoundaryEvent]
   }
   
-  @scala.inline
-  implicit class BoundaryEventMutableBuilder[Self <: BoundaryEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BoundaryEvent](x: Self) {
     
-    @scala.inline
-    def setAttachedToRef(value: Activity): Self = StObject.set(x, "attachedToRef", value.asInstanceOf[js.Any])
+    inline def setAttachedToRef(value: Activity): Self = StObject.set(x, "attachedToRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelActivity(value: Boolean): Self = StObject.set(x, "cancelActivity", value.asInstanceOf[js.Any])
+    inline def setCancelActivity(value: Boolean): Self = StObject.set(x, "cancelActivity", value.asInstanceOf[js.Any])
   }
 }

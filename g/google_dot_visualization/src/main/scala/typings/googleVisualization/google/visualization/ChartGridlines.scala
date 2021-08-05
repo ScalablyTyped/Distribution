@@ -12,25 +12,19 @@ trait ChartGridlines extends StObject {
 }
 object ChartGridlines {
   
-  @scala.inline
-  def apply(): ChartGridlines = {
+  inline def apply(): ChartGridlines = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartGridlines]
   }
   
-  @scala.inline
-  implicit class ChartGridlinesMutableBuilder[Self <: ChartGridlines] (val x: Self) extends AnyVal {
+  extension [Self <: ChartGridlines](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

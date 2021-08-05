@@ -12,16 +12,13 @@ trait WebGLVertexArrayObjectOES
 }
 object WebGLVertexArrayObjectOES {
   
-  @scala.inline
-  def apply(__WebGLObject: Unit, __WebGLVertexArrayObjectOES: Unit): WebGLVertexArrayObjectOES = {
+  inline def apply(__WebGLObject: Unit, __WebGLVertexArrayObjectOES: Unit): WebGLVertexArrayObjectOES = {
     val __obj = js.Dynamic.literal(__WebGLObject = __WebGLObject.asInstanceOf[js.Any], __WebGLVertexArrayObjectOES = __WebGLVertexArrayObjectOES.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLVertexArrayObjectOES]
   }
   
-  @scala.inline
-  implicit class WebGLVertexArrayObjectOESMutableBuilder[Self <: WebGLVertexArrayObjectOES] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLVertexArrayObjectOES](x: Self) {
     
-    @scala.inline
-    def set__WebGLVertexArrayObjectOES(value: Unit): Self = StObject.set(x, "__WebGLVertexArrayObjectOES", value.asInstanceOf[js.Any])
+    inline def set__WebGLVertexArrayObjectOES(value: Unit): Self = StObject.set(x, "__WebGLVertexArrayObjectOES", value.asInstanceOf[js.Any])
   }
 }

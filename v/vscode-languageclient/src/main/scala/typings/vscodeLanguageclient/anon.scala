@@ -26,20 +26,16 @@ object anon {
   }
   object Code2Protocol {
     
-    @scala.inline
-    def apply(code2Protocol: /* value */ Uri => String, protocol2Code: /* value */ String => Uri): Code2Protocol = {
+    inline def apply(code2Protocol: /* value */ Uri => String, protocol2Code: /* value */ String => Uri): Code2Protocol = {
       val __obj = js.Dynamic.literal(code2Protocol = js.Any.fromFunction1(code2Protocol), protocol2Code = js.Any.fromFunction1(protocol2Code))
       __obj.asInstanceOf[Code2Protocol]
     }
     
-    @scala.inline
-    implicit class Code2ProtocolMutableBuilder[Self <: Code2Protocol] (val x: Self) extends AnyVal {
+    extension [Self <: Code2Protocol](x: Self) {
       
-      @scala.inline
-      def setCode2Protocol(value: /* value */ Uri => String): Self = StObject.set(x, "code2Protocol", js.Any.fromFunction1(value))
+      inline def setCode2Protocol(value: /* value */ Uri => String): Self = StObject.set(x, "code2Protocol", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProtocol2Code(value: /* value */ String => Uri): Self = StObject.set(x, "protocol2Code", js.Any.fromFunction1(value))
+      inline def setProtocol2Code(value: /* value */ String => Uri): Self = StObject.set(x, "protocol2Code", js.Any.fromFunction1(value))
     }
   }
   
@@ -53,20 +49,16 @@ object anon {
   }
   object Debug {
     
-    @scala.inline
-    def apply(debug: Executable, run: Executable): Debug = {
+    inline def apply(debug: Executable, run: Executable): Debug = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
       __obj.asInstanceOf[Debug]
     }
     
-    @scala.inline
-    implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+    extension [Self <: Debug](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Executable): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Executable): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: Executable): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+      inline def setRun(value: Executable): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +70,16 @@ object anon {
   }
   object Document {
     
-    @scala.inline
-    def apply(document: TextDocument, range: Range): Document = {
+    inline def apply(document: TextDocument, range: Range): Document = {
       val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[Document]
     }
     
-    @scala.inline
-    implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+    extension [Self <: Document](x: Self) {
       
-      @scala.inline
-      def setDocument(value: TextDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: TextDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,20 +89,16 @@ object anon {
   }
   object DocumentSelector {
     
-    @scala.inline
-    def apply(documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector): DocumentSelector = {
+    inline def apply(documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector): DocumentSelector = {
       val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentSelector]
     }
     
-    @scala.inline
-    implicit class DocumentSelectorMutableBuilder[Self <: DocumentSelector] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentSelector](x: Self) {
       
-      @scala.inline
-      def setDocumentSelector(value: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector): Self = StObject.set(x, "documentSelector", value.asInstanceOf[js.Any])
+      inline def setDocumentSelector(value: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector): Self = StObject.set(x, "documentSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentSelectorVarargs(value: (String | DocumentFilter)*): Self = StObject.set(x, "documentSelector", js.Array(value :_*))
+      inline def setDocumentSelectorVarargs(value: (String | DocumentFilter)*): Self = StObject.set(x, "documentSelector", js.Array(value :_*))
     }
   }
   
@@ -124,17 +108,14 @@ object anon {
   }
   object IncludeDeclaration {
     
-    @scala.inline
-    def apply(includeDeclaration: Boolean): IncludeDeclaration = {
+    inline def apply(includeDeclaration: Boolean): IncludeDeclaration = {
       val __obj = js.Dynamic.literal(includeDeclaration = includeDeclaration.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncludeDeclaration]
     }
     
-    @scala.inline
-    implicit class IncludeDeclarationMutableBuilder[Self <: IncludeDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: IncludeDeclaration](x: Self) {
       
-      @scala.inline
-      def setIncludeDeclaration(value: Boolean): Self = StObject.set(x, "includeDeclaration", value.asInstanceOf[js.Any])
+      inline def setIncludeDeclaration(value: Boolean): Self = StObject.set(x, "includeDeclaration", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,20 +127,16 @@ object anon {
   }
   object Placeholder {
     
-    @scala.inline
-    def apply(placeholder: String, range: Range): Placeholder = {
+    inline def apply(placeholder: String, range: Range): Placeholder = {
       val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[Placeholder]
     }
     
-    @scala.inline
-    implicit class PlaceholderMutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
+    extension [Self <: Placeholder](x: Self) {
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,20 +150,16 @@ object anon {
   }
   object Run {
     
-    @scala.inline
-    def apply(debug: NodeModule, run: NodeModule): Run = {
+    inline def apply(debug: NodeModule, run: NodeModule): Run = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
       __obj.asInstanceOf[Run]
     }
     
-    @scala.inline
-    implicit class RunMutableBuilder[Self <: Run] (val x: Self) extends AnyVal {
+    extension [Self <: Run](x: Self) {
       
-      @scala.inline
-      def setDebug(value: NodeModule): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: NodeModule): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: NodeModule): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+      inline def setRun(value: NodeModule): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,17 +169,14 @@ object anon {
   }
   object Send {
     
-    @scala.inline
-    def apply[T /* <: js.Function */](send: T): Send[T] = {
+    inline def apply[T /* <: js.Function */](send: T): Send[T] = {
       val __obj = js.Dynamic.literal(send = send.asInstanceOf[js.Any])
       __obj.asInstanceOf[Send[T]]
     }
     
-    @scala.inline
-    implicit class SendMutableBuilder[Self <: Send[?], T /* <: js.Function */] (val x: Self & Send[T]) extends AnyVal {
+    extension [Self <: Send[?], T /* <: js.Function */](x: Self & Send[T]) {
       
-      @scala.inline
-      def setSend(value: T): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+      inline def setSend(value: T): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,28 +18,21 @@ trait ListEntitlementsResponse extends StObject {
 }
 object ListEntitlementsResponse {
   
-  @scala.inline
-  def apply(): ListEntitlementsResponse = {
+  inline def apply(): ListEntitlementsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEntitlementsResponse]
   }
   
-  @scala.inline
-  implicit class ListEntitlementsResponseMutableBuilder[Self <: ListEntitlementsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEntitlementsResponse](x: Self) {
     
-    @scala.inline
-    def setEntitlements(value: listOfListedEntitlement): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
+    inline def setEntitlements(value: listOfListedEntitlement): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
+    inline def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
     
-    @scala.inline
-    def setEntitlementsVarargs(value: ListedEntitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: ListedEntitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

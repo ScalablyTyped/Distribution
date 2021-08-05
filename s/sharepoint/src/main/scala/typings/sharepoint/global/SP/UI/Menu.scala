@@ -61,6 +61,5 @@ object Menu {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(id: String): typings.sharepoint.SP.UI.Menu = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(id.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.Menu]
+  inline def create(id: String): typings.sharepoint.SP.UI.Menu = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(id.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UI.Menu]
 }

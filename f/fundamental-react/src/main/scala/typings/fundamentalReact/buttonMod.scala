@@ -22,10 +22,8 @@ object buttonMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Button/Button.ButtonProps> & {  displayName :'Button'} */
   object default {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[ButtonProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[ButtonProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[ButtonProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[ButtonProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Button/Button", JSImport.Default)
     @js.native
@@ -34,26 +32,22 @@ object buttonMod {
     @JSImport("fundamental-react/lib/Button/Button", "default.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Button/Button", "default.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialButtonProps] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialButtonProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialButtonProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Button/Button", "default.displayName")
     @js.native
     def displayName: js.UndefOr[Button | String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[Button | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[Button | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Button/Button", "default.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapButtonPr] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapButtonPr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapButtonPr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -63,11 +57,9 @@ object buttonMod {
   trait ButtonOptions extends StObject
   object ButtonOptions {
     
-    @scala.inline
-    def emphasized: typings.fundamentalReact.fundamentalReactStrings.emphasized = "emphasized".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.emphasized]
+    inline def emphasized: typings.fundamentalReact.fundamentalReactStrings.emphasized = "emphasized".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.emphasized]
     
-    @scala.inline
-    def transparent: typings.fundamentalReact.fundamentalReactStrings.transparent = "transparent".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.transparent]
+    inline def transparent: typings.fundamentalReact.fundamentalReactStrings.transparent = "transparent".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.transparent]
   }
   
   trait ButtonProps
@@ -99,74 +91,52 @@ object buttonMod {
   }
   object ButtonProps {
     
-    @scala.inline
-    def apply(): ButtonProps = {
+    inline def apply(): ButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonProps]
     }
     
-    @scala.inline
-    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonProps](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+      inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOption(value: ButtonOptions): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      inline def setOption(value: ButtonOptions): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+      inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
       
-      @scala.inline
-      def setRef(value: RefObject[HTMLButtonElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[HTMLButtonElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setType(value: ButtonTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ButtonTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAttr(value: submit | reset | button_): Self = StObject.set(x, "typeAttr", value.asInstanceOf[js.Any])
+      inline def setTypeAttr(value: submit | reset | button_): Self = StObject.set(x, "typeAttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAttrUndefined: Self = StObject.set(x, "typeAttr", js.undefined)
+      inline def setTypeAttrUndefined: Self = StObject.set(x, "typeAttr", js.undefined)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -181,22 +151,16 @@ object buttonMod {
   trait ButtonTypes extends StObject
   object ButtonTypes {
     
-    @scala.inline
-    def attention: typings.fundamentalReact.fundamentalReactStrings.attention = "attention".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.attention]
+    inline def attention: typings.fundamentalReact.fundamentalReactStrings.attention = "attention".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.attention]
     
-    @scala.inline
-    def ghost: typings.fundamentalReact.fundamentalReactStrings.ghost = "ghost".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.ghost]
+    inline def ghost: typings.fundamentalReact.fundamentalReactStrings.ghost = "ghost".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.ghost]
     
-    @scala.inline
-    def medium: typings.fundamentalReact.fundamentalReactStrings.medium = "medium".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.medium]
+    inline def medium: typings.fundamentalReact.fundamentalReactStrings.medium = "medium".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.medium]
     
-    @scala.inline
-    def negative: typings.fundamentalReact.fundamentalReactStrings.negative = "negative".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.negative]
+    inline def negative: typings.fundamentalReact.fundamentalReactStrings.negative = "negative".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.negative]
     
-    @scala.inline
-    def positive: typings.fundamentalReact.fundamentalReactStrings.positive = "positive".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.positive]
+    inline def positive: typings.fundamentalReact.fundamentalReactStrings.positive = "positive".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.positive]
     
-    @scala.inline
-    def standard: typings.fundamentalReact.fundamentalReactStrings.standard = "standard".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.standard]
+    inline def standard: typings.fundamentalReact.fundamentalReactStrings.standard = "standard".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.standard]
   }
 }

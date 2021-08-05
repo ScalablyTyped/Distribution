@@ -28,37 +28,27 @@ trait Hit extends StObject {
 }
 object Hit {
   
-  @scala.inline
-  def apply(): Hit = {
+  inline def apply(): Hit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hit]
   }
   
-  @scala.inline
-  implicit class HitMutableBuilder[Self <: Hit] (val x: Self) extends AnyVal {
+  extension [Self <: Hit](x: Self) {
     
-    @scala.inline
-    def setExprs(value: Exprs): Self = StObject.set(x, "exprs", value.asInstanceOf[js.Any])
+    inline def setExprs(value: Exprs): Self = StObject.set(x, "exprs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprsUndefined: Self = StObject.set(x, "exprs", js.undefined)
+    inline def setExprsUndefined: Self = StObject.set(x, "exprs", js.undefined)
     
-    @scala.inline
-    def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setHighlights(value: Highlights): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
+    inline def setHighlights(value: Highlights): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
+    inline def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

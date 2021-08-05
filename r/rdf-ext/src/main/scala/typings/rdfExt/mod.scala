@@ -22,29 +22,25 @@ object mod {
   @JSImport("rdf-ext", "Parsers")
   @js.native
   def Parsers: SinkMap[EventEmitter, Stream] = js.native
-  @scala.inline
-  def Parsers_=(x: SinkMap[EventEmitter, Stream]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parsers")(x.asInstanceOf[js.Any])
+  inline def Parsers_=(x: SinkMap[EventEmitter, Stream]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parsers")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("rdf-ext", "Serializers")
   @js.native
   def Serializers: SinkMap[Stream, EventEmitter] = js.native
-  @scala.inline
-  def Serializers_=(x: SinkMap[Stream, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Serializers")(x.asInstanceOf[js.Any])
+  inline def Serializers_=(x: SinkMap[Stream, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Serializers")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("rdf-ext", "asEvent")
   @js.native
   def asEvent: js.Function1[/* p */ js.Any, EventEmitter] = js.native
-  @scala.inline
-  def asEvent_=(x: js.Function1[/* p */ js.Any, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asEvent")(x.asInstanceOf[js.Any])
+  inline def asEvent_=(x: js.Function1[/* p */ js.Any, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asEvent")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("rdf-ext", "waitFor")
   @js.native
   def waitFor: js.Function1[/* event */ js.Any, js.Promise[js.Any]] = js.native
-  @scala.inline
-  def waitFor_=(x: js.Function1[/* event */ js.Any, js.Promise[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitFor")(x.asInstanceOf[js.Any])
+  inline def waitFor_=(x: js.Function1[/* event */ js.Any, js.Promise[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitFor")(x.asInstanceOf[js.Any])
   
   type DataFactoryExt = typings.rdfExt.dataFactoryMod.^
   
@@ -60,8 +56,7 @@ object mod {
   }
   object SinkMap {
     
-    @scala.inline
-    def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](
+    inline def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](
       find: String => Sink[InputStream, OutputStream],
       `import`: (String, js.Any, js.Any) => js.Any,
       list: () => js.Array[String]
@@ -71,17 +66,13 @@ object mod {
       __obj.asInstanceOf[SinkMap[InputStream, OutputStream]]
     }
     
-    @scala.inline
-    implicit class SinkMapMutableBuilder[Self <: SinkMap[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self & (SinkMap[InputStream, OutputStream])) extends AnyVal {
+    extension [Self <: SinkMap[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](x: Self & (SinkMap[InputStream, OutputStream])) {
       
-      @scala.inline
-      def setFind(value: String => Sink[InputStream, OutputStream]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: String => Sink[InputStream, OutputStream]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImport(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "import", js.Any.fromFunction3(value))
+      inline def setImport(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "import", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setList(value: () => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+      inline def setList(value: () => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     }
   }
 }

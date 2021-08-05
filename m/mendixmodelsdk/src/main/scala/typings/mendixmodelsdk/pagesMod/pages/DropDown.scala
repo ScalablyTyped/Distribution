@@ -49,8 +49,7 @@ object DropDown {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def create(model: IModel): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -61,8 +60,7 @@ object DropDown {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -73,8 +71,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -85,8 +82,7 @@ object DropDown {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInDataViewUnderFooterWidget(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -97,8 +93,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidgets(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInDataViewUnderFooterWidgets(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -109,8 +104,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInDataViewUnderWidget(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -121,8 +115,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidgets(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInDataViewUnderWidgets(container: DataView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -133,8 +126,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInDivContainerUnderWidget(container: DivContainer): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -145,8 +137,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidgets(container: DivContainer): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInDivContainerUnderWidgets(container: DivContainer): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -157,8 +148,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -169,8 +159,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidgets(container: GroupBox): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInGroupBoxUnderWidgets(container: GroupBox): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -181,8 +170,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInHeaderUnderLeftWidget(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -193,8 +181,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidgets(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInHeaderUnderLeftWidgets(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -205,8 +192,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInHeaderUnderRightWidget(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -217,8 +203,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidgets(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInHeaderUnderRightWidgets(container: Header): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -229,8 +214,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -241,8 +225,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -253,8 +236,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -265,8 +247,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -277,8 +258,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInLayoutUnderWidget(container: Layout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -289,8 +269,7 @@ object DropDown {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidgets(container: Layout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInLayoutUnderWidgets(container: Layout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -301,8 +280,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -313,8 +291,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -325,8 +302,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInListViewUnderWidget(container: ListView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -337,8 +313,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidgets(container: ListView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInListViewUnderWidgets(container: ListView): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -349,8 +324,7 @@ object DropDown {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -361,8 +335,7 @@ object DropDown {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -373,8 +346,7 @@ object DropDown {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -385,8 +357,7 @@ object DropDown {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -397,8 +368,7 @@ object DropDown {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -409,8 +379,7 @@ object DropDown {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInNativeLayoutUnderWidgets(container: NativeLayout): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -421,8 +390,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -433,8 +401,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -445,8 +412,7 @@ object DropDown {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -457,8 +423,7 @@ object DropDown {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -469,8 +434,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -481,8 +445,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -493,8 +456,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInSnippetUnderWidget(container: Snippet): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -505,8 +467,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidgets(container: Snippet): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInSnippetUnderWidgets(container: Snippet): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -517,8 +478,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -529,8 +489,7 @@ object DropDown {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -541,8 +500,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -553,8 +511,7 @@ object DropDown {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -565,8 +522,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInTabPageUnderWidget(container: TabPage): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -577,8 +533,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidgets(container: TabPage): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInTabPageUnderWidgets(container: TabPage): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -589,8 +544,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInTableCellUnderWidget(container: TableCell): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -601,8 +555,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidgets(container: TableCell): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInTableCellUnderWidgets(container: TableCell): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -613,8 +566,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -625,8 +577,7 @@ object DropDown {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -637,8 +588,7 @@ object DropDown {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -649,8 +599,7 @@ object DropDown {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /**
     * Creates and returns a new DropDown instance in the SDK and on the server.
@@ -661,20 +610,17 @@ object DropDown {
     *  8.2.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderWidgets(container: WidgetValue): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
+  inline def createInWidgetValueUnderWidgets(container: WidgetValue): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDown.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDown.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

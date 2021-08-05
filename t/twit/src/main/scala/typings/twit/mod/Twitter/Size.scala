@@ -16,22 +16,17 @@ trait Size extends StObject {
 }
 object Size {
   
-  @scala.inline
-  def apply(h: Double, resize: crop | fit, w: Double): Size = {
+  inline def apply(h: Double, resize: crop | fit, w: Double): Size = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
     __obj.asInstanceOf[Size]
   }
   
-  @scala.inline
-  implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+  extension [Self <: Size](x: Self) {
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResize(value: crop | fit): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: crop | fit): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

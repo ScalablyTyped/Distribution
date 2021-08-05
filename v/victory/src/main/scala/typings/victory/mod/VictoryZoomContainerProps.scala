@@ -102,79 +102,55 @@ trait VictoryZoomContainerProps
 }
 object VictoryZoomContainerProps {
   
-  @scala.inline
-  def apply(): VictoryZoomContainerProps = {
+  inline def apply(): VictoryZoomContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryZoomContainerProps]
   }
   
-  @scala.inline
-  implicit class VictoryZoomContainerPropsMutableBuilder[Self <: VictoryZoomContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryZoomContainerProps](x: Self) {
     
-    @scala.inline
-    def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
+    inline def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPanUndefined: Self = StObject.set(x, "allowPan", js.undefined)
+    inline def setAllowPanUndefined: Self = StObject.set(x, "allowPan", js.undefined)
     
-    @scala.inline
-    def setAllowZoom(value: Boolean): Self = StObject.set(x, "allowZoom", value.asInstanceOf[js.Any])
+    inline def setAllowZoom(value: Boolean): Self = StObject.set(x, "allowZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowZoomUndefined: Self = StObject.set(x, "allowZoom", js.undefined)
+    inline def setAllowZoomUndefined: Self = StObject.set(x, "allowZoom", js.undefined)
     
-    @scala.inline
-    def setBrushStyle(value: CSSProperties): Self = StObject.set(x, "brushStyle", value.asInstanceOf[js.Any])
+    inline def setBrushStyle(value: CSSProperties): Self = StObject.set(x, "brushStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrushStyleUndefined: Self = StObject.set(x, "brushStyle", js.undefined)
+    inline def setBrushStyleUndefined: Self = StObject.set(x, "brushStyle", js.undefined)
     
-    @scala.inline
-    def setClipContainerComponent(value: ReactElement): Self = StObject.set(x, "clipContainerComponent", value.asInstanceOf[js.Any])
+    inline def setClipContainerComponent(value: ReactElement): Self = StObject.set(x, "clipContainerComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipContainerComponentUndefined: Self = StObject.set(x, "clipContainerComponent", js.undefined)
+    inline def setClipContainerComponentUndefined: Self = StObject.set(x, "clipContainerComponent", js.undefined)
     
-    @scala.inline
-    def setDefaultBrushArea(value: all | none | disable): Self = StObject.set(x, "defaultBrushArea", value.asInstanceOf[js.Any])
+    inline def setDefaultBrushArea(value: all | none | disable): Self = StObject.set(x, "defaultBrushArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBrushAreaUndefined: Self = StObject.set(x, "defaultBrushArea", js.undefined)
+    inline def setDefaultBrushAreaUndefined: Self = StObject.set(x, "defaultBrushArea", js.undefined)
     
-    @scala.inline
-    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setDownsample(value: Double | Boolean): Self = StObject.set(x, "downsample", value.asInstanceOf[js.Any])
+    inline def setDownsample(value: Double | Boolean): Self = StObject.set(x, "downsample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownsampleUndefined: Self = StObject.set(x, "downsample", js.undefined)
+    inline def setDownsampleUndefined: Self = StObject.set(x, "downsample", js.undefined)
     
-    @scala.inline
-    def setMinimumZoom(value: CursorData): Self = StObject.set(x, "minimumZoom", value.asInstanceOf[js.Any])
+    inline def setMinimumZoom(value: CursorData): Self = StObject.set(x, "minimumZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumZoomUndefined: Self = StObject.set(x, "minimumZoom", js.undefined)
+    inline def setMinimumZoomUndefined: Self = StObject.set(x, "minimumZoom", js.undefined)
     
-    @scala.inline
-    def setOnZoomDomainChange(value: (/* domain */ DomainPropType, VictoryZoomContainerProps) => Unit): Self = StObject.set(x, "onZoomDomainChange", js.Any.fromFunction2(value))
+    inline def setOnZoomDomainChange(value: (/* domain */ DomainPropType, VictoryZoomContainerProps) => Unit): Self = StObject.set(x, "onZoomDomainChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnZoomDomainChangeUndefined: Self = StObject.set(x, "onZoomDomainChange", js.undefined)
+    inline def setOnZoomDomainChangeUndefined: Self = StObject.set(x, "onZoomDomainChange", js.undefined)
     
-    @scala.inline
-    def setZoomDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "zoomDimension", value.asInstanceOf[js.Any])
+    inline def setZoomDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "zoomDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomDimensionUndefined: Self = StObject.set(x, "zoomDimension", js.undefined)
+    inline def setZoomDimensionUndefined: Self = StObject.set(x, "zoomDimension", js.undefined)
     
-    @scala.inline
-    def setZoomDomain(value: DomainPropType): Self = StObject.set(x, "zoomDomain", value.asInstanceOf[js.Any])
+    inline def setZoomDomain(value: DomainPropType): Self = StObject.set(x, "zoomDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomDomainUndefined: Self = StObject.set(x, "zoomDomain", js.undefined)
+    inline def setZoomDomainUndefined: Self = StObject.set(x, "zoomDomain", js.undefined)
   }
 }

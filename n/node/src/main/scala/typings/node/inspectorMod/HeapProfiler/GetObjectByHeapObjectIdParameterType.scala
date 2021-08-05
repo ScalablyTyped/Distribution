@@ -15,22 +15,17 @@ trait GetObjectByHeapObjectIdParameterType extends StObject {
 }
 object GetObjectByHeapObjectIdParameterType {
   
-  @scala.inline
-  def apply(objectId: HeapSnapshotObjectId): GetObjectByHeapObjectIdParameterType = {
+  inline def apply(objectId: HeapSnapshotObjectId): GetObjectByHeapObjectIdParameterType = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectByHeapObjectIdParameterType]
   }
   
-  @scala.inline
-  implicit class GetObjectByHeapObjectIdParameterTypeMutableBuilder[Self <: GetObjectByHeapObjectIdParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectByHeapObjectIdParameterType](x: Self) {
     
-    @scala.inline
-    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
+    inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
+    inline def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

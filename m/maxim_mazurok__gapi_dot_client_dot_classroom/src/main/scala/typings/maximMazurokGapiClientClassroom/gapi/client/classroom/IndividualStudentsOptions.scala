@@ -11,22 +11,17 @@ trait IndividualStudentsOptions extends StObject {
 }
 object IndividualStudentsOptions {
   
-  @scala.inline
-  def apply(): IndividualStudentsOptions = {
+  inline def apply(): IndividualStudentsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndividualStudentsOptions]
   }
   
-  @scala.inline
-  implicit class IndividualStudentsOptionsMutableBuilder[Self <: IndividualStudentsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IndividualStudentsOptions](x: Self) {
     
-    @scala.inline
-    def setStudentIds(value: js.Array[String]): Self = StObject.set(x, "studentIds", value.asInstanceOf[js.Any])
+    inline def setStudentIds(value: js.Array[String]): Self = StObject.set(x, "studentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentIdsUndefined: Self = StObject.set(x, "studentIds", js.undefined)
+    inline def setStudentIdsUndefined: Self = StObject.set(x, "studentIds", js.undefined)
     
-    @scala.inline
-    def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value :_*))
+    inline def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value :_*))
   }
 }

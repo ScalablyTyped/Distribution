@@ -18,22 +18,17 @@ trait LayerPhotosOptions
 }
 object LayerPhotosOptions {
   
-  @scala.inline
-  def apply(photos: LayerPhotosData | String): LayerPhotosOptions = {
+  inline def apply(photos: LayerPhotosData | String): LayerPhotosOptions = {
     val __obj = js.Dynamic.literal(photos = photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerPhotosOptions]
   }
   
-  @scala.inline
-  implicit class LayerPhotosOptionsMutableBuilder[Self <: LayerPhotosOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LayerPhotosOptions](x: Self) {
     
-    @scala.inline
-    def setPhotos(value: LayerPhotosData | String): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: LayerPhotosData | String): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTab(value: (/* pic */ LayerPhotosDataItem, /* layero */ JQuery[HTMLElement]) => Unit): Self = StObject.set(x, "tab", js.Any.fromFunction2(value))
+    inline def setTab(value: (/* pic */ LayerPhotosDataItem, /* layero */ JQuery[HTMLElement]) => Unit): Self = StObject.set(x, "tab", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
+    inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
   }
 }

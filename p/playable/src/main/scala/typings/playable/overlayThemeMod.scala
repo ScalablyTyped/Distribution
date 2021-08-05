@@ -17,13 +17,11 @@ object overlayThemeMod {
     @JSImport("playable/dist/src/modules/ui/overlay/overlay.theme", "default.overlayPlaySvgFill")
     @js.native
     def overlayPlaySvgFill: Fill = js.native
-    @scala.inline
-    def overlayPlaySvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overlayPlaySvgFill")(x.asInstanceOf[js.Any])
+    inline def overlayPlaySvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overlayPlaySvgFill")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/overlay/overlay.theme", "default.overlayPlaySvgStroke")
     @js.native
     def overlayPlaySvgStroke: Stroke = js.native
-    @scala.inline
-    def overlayPlaySvgStroke_=(x: Stroke): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overlayPlaySvgStroke")(x.asInstanceOf[js.Any])
+    inline def overlayPlaySvgStroke_=(x: Stroke): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overlayPlaySvgStroke")(x.asInstanceOf[js.Any])
   }
 }

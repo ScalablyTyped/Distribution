@@ -58,8 +58,7 @@ trait ListItemPanel extends StObject {
 }
 object ListItemPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     className: String,
     content: Widget_ | HTMLElement | String | js.Array[js.Any],
     image: String,
@@ -72,31 +71,22 @@ object ListItemPanel {
     __obj.asInstanceOf[ListItemPanel]
   }
   
-  @scala.inline
-  implicit class ListItemPanelMutableBuilder[Self <: ListItemPanel] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemPanel](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Widget_ | HTMLElement | String | js.Array[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Widget_ | HTMLElement | String | js.Array[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItem(value: ListItem): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+    inline def setListItem(value: ListItem): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

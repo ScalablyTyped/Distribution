@@ -18,117 +18,101 @@ object auth0Strings {
   
   @js.native
   sealed trait HS256 extends StObject
-  @scala.inline
-  def HS256: HS256 = "HS256".asInstanceOf[HS256]
+  inline def HS256: HS256 = "HS256".asInstanceOf[HS256]
   
   @js.native
   sealed trait RS256 extends StObject
-  @scala.inline
-  def RS256: RS256 = "RS256".asInstanceOf[RS256]
+  inline def RS256: RS256 = "RS256".asInstanceOf[RS256]
   
   @js.native
   sealed trait access_token extends StObject
-  @scala.inline
-  def access_token: access_token = "access_token".asInstanceOf[access_token]
+  inline def access_token: access_token = "access_token".asInstanceOf[access_token]
   
   @js.native
   sealed trait access_token_authz extends StObject
-  @scala.inline
-  def access_token_authz: access_token_authz = "access_token_authz".asInstanceOf[access_token_authz]
+  inline def access_token_authz: access_token_authz = "access_token_authz".asInstanceOf[access_token_authz]
   
   @js.native
   sealed trait ad
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def ad: ad = "ad".asInstanceOf[ad]
+  inline def ad: ad = "ad".asInstanceOf[ad]
   
   @js.native
   sealed trait adfs
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def adfs: adfs = "adfs".asInstanceOf[adfs]
+  inline def adfs: adfs = "adfs".asInstanceOf[adfs]
   
   @js.native
   sealed trait amazon
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def amazon: amazon = "amazon".asInstanceOf[amazon]
+  inline def amazon: amazon = "amazon".asInstanceOf[amazon]
   
   @js.native
   sealed trait aol
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def aol: aol = "aol".asInstanceOf[aol]
+  inline def aol: aol = "aol".asInstanceOf[aol]
   
   @js.native
   sealed trait auth0
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def auth0: auth0 = "auth0".asInstanceOf[auth0]
+  inline def auth0: auth0 = "auth0".asInstanceOf[auth0]
   
   @js.native
   sealed trait `auth0-adldap`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `auth0-adldap`: `auth0-adldap` = "auth0-adldap".asInstanceOf[`auth0-adldap`]
+  inline def `auth0-adldap`: `auth0-adldap` = "auth0-adldap".asInstanceOf[`auth0-adldap`]
   
   @js.native
   sealed trait `auth0-oidc`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `auth0-oidc`: `auth0-oidc` = "auth0-oidc".asInstanceOf[`auth0-oidc`]
+  inline def `auth0-oidc`: `auth0-oidc` = "auth0-oidc".asInstanceOf[`auth0-oidc`]
   
   @js.native
   sealed trait auth0_managed_certs
     extends StObject
        with CustomDomainType
-  @scala.inline
-  def auth0_managed_certs: auth0_managed_certs = "auth0_managed_certs".asInstanceOf[auth0_managed_certs]
+  inline def auth0_managed_certs: auth0_managed_certs = "auth0_managed_certs".asInstanceOf[auth0_managed_certs]
   
   @js.native
   sealed trait authorization_code
     extends StObject
        with Grant
-  @scala.inline
-  def authorization_code: authorization_code = "authorization_code".asInstanceOf[authorization_code]
+  inline def authorization_code: authorization_code = "authorization_code".asInstanceOf[authorization_code]
   
   @js.native
   sealed trait baidu
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def baidu: baidu = "baidu".asInstanceOf[baidu]
+  inline def baidu: baidu = "baidu".asInstanceOf[baidu]
   
   @js.native
   sealed trait bitbucket
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
+  inline def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
   
   @js.native
   sealed trait bitly
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def bitly: bitly = "bitly".asInstanceOf[bitly]
+  inline def bitly: bitly = "bitly".asInstanceOf[bitly]
   
   @js.native
   sealed trait box
@@ -136,72 +120,62 @@ object auth0Strings {
        with ClientAppType
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def box: box = "box".asInstanceOf[box]
+  inline def box: box = "box".asInstanceOf[box]
   
   @js.native
   sealed trait client_credentials
     extends StObject
        with Grant
-  @scala.inline
-  def client_credentials: client_credentials = "client_credentials".asInstanceOf[client_credentials]
+  inline def client_credentials: client_credentials = "client_credentials".asInstanceOf[client_credentials]
   
   @js.native
   sealed trait cloudbees
     extends StObject
        with ClientAppType
-  @scala.inline
-  def cloudbees: cloudbees = "cloudbees".asInstanceOf[cloudbees]
+  inline def cloudbees: cloudbees = "cloudbees".asInstanceOf[cloudbees]
   
   @js.native
   sealed trait code
     extends StObject
        with SendType
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait completed
     extends StObject
        with JobStatus
-  @scala.inline
-  def completed: completed = "completed".asInstanceOf[completed]
+  inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
   sealed trait concur
     extends StObject
        with ClientAppType
-  @scala.inline
-  def concur: concur = "concur".asInstanceOf[concur]
+  inline def concur: concur = "concur".asInstanceOf[concur]
   
   @js.native
   sealed trait csv
     extends StObject
        with JobFormat
-  @scala.inline
-  def csv: csv = "csv".asInstanceOf[csv]
+  inline def csv: csv = "csv".asInstanceOf[csv]
   
   @js.native
   sealed trait custom
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait daccount
     extends StObject
        with Strategy
-  @scala.inline
-  def daccount: daccount = "daccount".asInstanceOf[daccount]
+  inline def daccount: daccount = "daccount".asInstanceOf[daccount]
   
   @js.native
   sealed trait disabled
     extends StObject
        with CustomDomainStatus
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait dropbox
@@ -209,236 +183,205 @@ object auth0Strings {
        with ClientAppType
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
+  inline def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
   
   @js.native
   sealed trait duo
     extends StObject
        with DeleteDeleteMultifactorParamsProvider
-  @scala.inline
-  def duo: duo = "duo".asInstanceOf[duo]
+  inline def duo: duo = "duo".asInstanceOf[duo]
   
   @js.native
   sealed trait dwolla
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def dwolla: dwolla = "dwolla".asInstanceOf[dwolla]
+  inline def dwolla: dwolla = "dwolla".asInstanceOf[dwolla]
   
   @js.native
   sealed trait echosign
     extends StObject
        with ClientAppType
-  @scala.inline
-  def echosign: echosign = "echosign".asInstanceOf[echosign]
+  inline def echosign: echosign = "echosign".asInstanceOf[echosign]
   
   @js.native
   sealed trait egnyte
     extends StObject
        with ClientAppType
-  @scala.inline
-  def egnyte: egnyte = "egnyte".asInstanceOf[egnyte]
+  inline def egnyte: egnyte = "egnyte".asInstanceOf[egnyte]
   
   @js.native
   sealed trait email
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait evernote
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def evernote: evernote = "evernote".asInstanceOf[evernote]
+  inline def evernote: evernote = "evernote".asInstanceOf[evernote]
   
   @js.native
   sealed trait `evernote-sandbox`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `evernote-sandbox`: `evernote-sandbox` = "evernote-sandbox".asInstanceOf[`evernote-sandbox`]
+  inline def `evernote-sandbox`: `evernote-sandbox` = "evernote-sandbox".asInstanceOf[`evernote-sandbox`]
   
   @js.native
   sealed trait exact
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
+  inline def exact: exact = "exact".asInstanceOf[exact]
   
   @js.native
   sealed trait facebook
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  inline def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
   sealed trait failed
     extends StObject
        with JobStatus
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait fitbit
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def fitbit: fitbit = "fitbit".asInstanceOf[fitbit]
+  inline def fitbit: fitbit = "fitbit".asInstanceOf[fitbit]
   
   @js.native
   sealed trait flickr
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def flickr: flickr = "flickr".asInstanceOf[flickr]
+  inline def flickr: flickr = "flickr".asInstanceOf[flickr]
   
   @js.native
   sealed trait github
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def github: github = "github".asInstanceOf[github]
+  inline def github: github = "github".asInstanceOf[github]
   
   @js.native
   sealed trait `google-apps`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `google-apps`: `google-apps` = "google-apps".asInstanceOf[`google-apps`]
+  inline def `google-apps`: `google-apps` = "google-apps".asInstanceOf[`google-apps`]
   
   @js.native
   sealed trait `google-authenticator`
     extends StObject
        with DeleteDeleteMultifactorParamsProvider
-  @scala.inline
-  def `google-authenticator`: `google-authenticator` = "google-authenticator".asInstanceOf[`google-authenticator`]
+  inline def `google-authenticator`: `google-authenticator` = "google-authenticator".asInstanceOf[`google-authenticator`]
   
   @js.native
   sealed trait `google-oauth2`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `google-oauth2`: `google-oauth2` = "google-oauth2".asInstanceOf[`google-oauth2`]
+  inline def `google-oauth2`: `google-oauth2` = "google-oauth2".asInstanceOf[`google-oauth2`]
   
   @js.native
   sealed trait guardian
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def guardian: guardian = "guardian".asInstanceOf[guardian]
+  inline def guardian: guardian = "guardian".asInstanceOf[guardian]
   
   @js.native
   sealed trait `implicit`
     extends StObject
        with Grant
-  @scala.inline
-  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
   sealed trait instagram
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def instagram: instagram = "instagram".asInstanceOf[instagram]
+  inline def instagram: instagram = "instagram".asInstanceOf[instagram]
   
   @js.native
   sealed trait ip
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def ip: ip = "ip".asInstanceOf[ip]
+  inline def ip: ip = "ip".asInstanceOf[ip]
   
   @js.native
   sealed trait json
     extends StObject
        with JobFormat
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait link
     extends StObject
        with SendType
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait linkedin
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
+  inline def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
   
   @js.native
   sealed trait miicard
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def miicard: miicard = "miicard".asInstanceOf[miicard]
+  inline def miicard: miicard = "miicard".asInstanceOf[miicard]
   
   @js.native
   sealed trait mscrm
     extends StObject
        with ClientAppType
-  @scala.inline
-  def mscrm: mscrm = "mscrm".asInstanceOf[mscrm]
+  inline def mscrm: mscrm = "mscrm".asInstanceOf[mscrm]
   
   @js.native
   sealed trait native
     extends StObject
        with ClientAppType
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
+  inline def native: native = "native".asInstanceOf[native]
   
   @js.native
   sealed trait newrelic
     extends StObject
        with ClientAppType
-  @scala.inline
-  def newrelic: newrelic = "newrelic".asInstanceOf[newrelic]
+  inline def newrelic: newrelic = "newrelic".asInstanceOf[newrelic]
   
   @js.native
   sealed trait non_interactive
     extends StObject
        with ClientAppType
-  @scala.inline
-  def non_interactive: non_interactive = "non_interactive".asInstanceOf[non_interactive]
+  inline def non_interactive: non_interactive = "non_interactive".asInstanceOf[non_interactive]
   
   @js.native
   sealed trait oauth1
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def oauth1: oauth1 = "oauth1".asInstanceOf[oauth1]
+  inline def oauth1: oauth1 = "oauth1".asInstanceOf[oauth1]
   
   @js.native
   sealed trait oauth2
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
+  inline def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
   
   @js.native
   sealed trait office365
@@ -446,105 +389,91 @@ object auth0Strings {
        with ClientAppType
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def office365: office365 = "office365".asInstanceOf[office365]
+  inline def office365: office365 = "office365".asInstanceOf[office365]
   
   @js.native
   sealed trait password
     extends StObject
        with Grant
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
+  inline def password: password = "password".asInstanceOf[password]
   
   @js.native
   sealed trait paypal
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def paypal: paypal = "paypal".asInstanceOf[paypal]
+  inline def paypal: paypal = "paypal".asInstanceOf[paypal]
   
   @js.native
   sealed trait `paypal-sandbox`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `paypal-sandbox`: `paypal-sandbox` = "paypal-sandbox".asInstanceOf[`paypal-sandbox`]
+  inline def `paypal-sandbox`: `paypal-sandbox` = "paypal-sandbox".asInstanceOf[`paypal-sandbox`]
   
   @js.native
   sealed trait pending
     extends StObject
        with CustomDomainStatus
        with JobStatus
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait pending_verification
     extends StObject
        with CustomDomainStatus
-  @scala.inline
-  def pending_verification: pending_verification = "pending_verification".asInstanceOf[pending_verification]
+  inline def pending_verification: pending_verification = "pending_verification".asInstanceOf[pending_verification]
   
   @js.native
   sealed trait pingfederate
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def pingfederate: pingfederate = "pingfederate".asInstanceOf[pingfederate]
+  inline def pingfederate: pingfederate = "pingfederate".asInstanceOf[pingfederate]
   
   @js.native
   sealed trait planningcenter
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def planningcenter: planningcenter = "planningcenter".asInstanceOf[planningcenter]
+  inline def planningcenter: planningcenter = "planningcenter".asInstanceOf[planningcenter]
   
   @js.native
   sealed trait processing
     extends StObject
        with JobStatus
-  @scala.inline
-  def processing: processing = "processing".asInstanceOf[processing]
+  inline def processing: processing = "processing".asInstanceOf[processing]
   
   @js.native
   sealed trait ready
     extends StObject
        with CustomDomainStatus
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
   sealed trait refresh_token
     extends StObject
        with Grant
-  @scala.inline
-  def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
+  inline def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   
   @js.native
   sealed trait regular_web
     extends StObject
        with ClientAppType
-  @scala.inline
-  def regular_web: regular_web = "regular_web".asInstanceOf[regular_web]
+  inline def regular_web: regular_web = "regular_web".asInstanceOf[regular_web]
   
   @js.native
   sealed trait renren
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def renren: renren = "renren".asInstanceOf[renren]
+  inline def renren: renren = "renren".asInstanceOf[renren]
   
   @js.native
   sealed trait rms
     extends StObject
        with ClientAppType
-  @scala.inline
-  def rms: rms = "rms".asInstanceOf[rms]
+  inline def rms: rms = "rms".asInstanceOf[rms]
   
   @js.native
   sealed trait salesforce
@@ -552,46 +481,40 @@ object auth0Strings {
        with ClientAppType
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def salesforce: salesforce = "salesforce".asInstanceOf[salesforce]
+  inline def salesforce: salesforce = "salesforce".asInstanceOf[salesforce]
   
   @js.native
   sealed trait `salesforce-community`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `salesforce-community`: `salesforce-community` = "salesforce-community".asInstanceOf[`salesforce-community`]
+  inline def `salesforce-community`: `salesforce-community` = "salesforce-community".asInstanceOf[`salesforce-community`]
   
   @js.native
   sealed trait `salesforce-sandbox`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `salesforce-sandbox`: `salesforce-sandbox` = "salesforce-sandbox".asInstanceOf[`salesforce-sandbox`]
+  inline def `salesforce-sandbox`: `salesforce-sandbox` = "salesforce-sandbox".asInstanceOf[`salesforce-sandbox`]
   
   @js.native
   sealed trait samlp
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def samlp: samlp = "samlp".asInstanceOf[samlp]
+  inline def samlp: samlp = "samlp".asInstanceOf[samlp]
   
   @js.native
   sealed trait self_managed_certs
     extends StObject
        with CustomDomainType
-  @scala.inline
-  def self_managed_certs: self_managed_certs = "self_managed_certs".asInstanceOf[self_managed_certs]
+  inline def self_managed_certs: self_managed_certs = "self_managed_certs".asInstanceOf[self_managed_certs]
   
   @js.native
   sealed trait sentry
     extends StObject
        with ClientAppType
-  @scala.inline
-  def sentry: sentry = "sentry".asInstanceOf[sentry]
+  inline def sentry: sentry = "sentry".asInstanceOf[sentry]
   
   @js.native
   sealed trait sharepoint
@@ -599,189 +522,163 @@ object auth0Strings {
        with ClientAppType
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def sharepoint: sharepoint = "sharepoint".asInstanceOf[sharepoint]
+  inline def sharepoint: sharepoint = "sharepoint".asInstanceOf[sharepoint]
   
   @js.native
   sealed trait shopify
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def shopify: shopify = "shopify".asInstanceOf[shopify]
+  inline def shopify: shopify = "shopify".asInstanceOf[shopify]
   
   @js.native
   sealed trait slack
     extends StObject
        with ClientAppType
-  @scala.inline
-  def slack: slack = "slack".asInstanceOf[slack]
+  inline def slack: slack = "slack".asInstanceOf[slack]
   
   @js.native
   sealed trait sms
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def sms: sms = "sms".asInstanceOf[sms]
+  inline def sms: sms = "sms".asInstanceOf[sms]
   
   @js.native
   sealed trait soundcloud
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
+  inline def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
   
   @js.native
   sealed trait spa
     extends StObject
        with ClientAppType
-  @scala.inline
-  def spa: spa = "spa".asInstanceOf[spa]
+  inline def spa: spa = "spa".asInstanceOf[spa]
   
   @js.native
   sealed trait springcm
     extends StObject
        with ClientAppType
-  @scala.inline
-  def springcm: springcm = "springcm".asInstanceOf[springcm]
+  inline def springcm: springcm = "springcm".asInstanceOf[springcm]
   
   @js.native
   sealed trait thecity
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def thecity: thecity = "thecity".asInstanceOf[thecity]
+  inline def thecity: thecity = "thecity".asInstanceOf[thecity]
   
   @js.native
   sealed trait `thecity-sandbox`
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def `thecity-sandbox`: `thecity-sandbox` = "thecity-sandbox".asInstanceOf[`thecity-sandbox`]
+  inline def `thecity-sandbox`: `thecity-sandbox` = "thecity-sandbox".asInstanceOf[`thecity-sandbox`]
   
   @js.native
   sealed trait thirtysevensignals
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def thirtysevensignals: thirtysevensignals = "thirtysevensignals".asInstanceOf[thirtysevensignals]
+  inline def thirtysevensignals: thirtysevensignals = "thirtysevensignals".asInstanceOf[thirtysevensignals]
   
   @js.native
   sealed trait twitter
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def twitter: twitter = "twitter".asInstanceOf[twitter]
+  inline def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
   sealed trait txt extends StObject
-  @scala.inline
-  def txt: txt = "txt".asInstanceOf[txt]
+  inline def txt: txt = "txt".asInstanceOf[txt]
   
   @js.native
   sealed trait untappd
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def untappd: untappd = "untappd".asInstanceOf[untappd]
+  inline def untappd: untappd = "untappd".asInstanceOf[untappd]
   
   @js.native
   sealed trait users_export extends StObject
-  @scala.inline
-  def users_export: users_export = "users_export".asInstanceOf[users_export]
+  inline def users_export: users_export = "users_export".asInstanceOf[users_export]
   
   @js.native
   sealed trait users_import extends StObject
-  @scala.inline
-  def users_import: users_import = "users_import".asInstanceOf[users_import]
+  inline def users_import: users_import = "users_import".asInstanceOf[users_import]
   
   @js.native
   sealed trait verification_email extends StObject
-  @scala.inline
-  def verification_email: verification_email = "verification_email".asInstanceOf[verification_email]
+  inline def verification_email: verification_email = "verification_email".asInstanceOf[verification_email]
   
   @js.native
   sealed trait vkontakte
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def vkontakte: vkontakte = "vkontakte".asInstanceOf[vkontakte]
+  inline def vkontakte: vkontakte = "vkontakte".asInstanceOf[vkontakte]
   
   @js.native
   sealed trait waad
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def waad: waad = "waad".asInstanceOf[waad]
+  inline def waad: waad = "waad".asInstanceOf[waad]
   
   @js.native
   sealed trait weibo
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def weibo: weibo = "weibo".asInstanceOf[weibo]
+  inline def weibo: weibo = "weibo".asInstanceOf[weibo]
   
   @js.native
   sealed trait windowslive
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def windowslive: windowslive = "windowslive".asInstanceOf[windowslive]
+  inline def windowslive: windowslive = "windowslive".asInstanceOf[windowslive]
   
   @js.native
   sealed trait wordpress
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def wordpress: wordpress = "wordpress".asInstanceOf[wordpress]
+  inline def wordpress: wordpress = "wordpress".asInstanceOf[wordpress]
   
   @js.native
   sealed trait yahoo
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def yahoo: yahoo = "yahoo".asInstanceOf[yahoo]
+  inline def yahoo: yahoo = "yahoo".asInstanceOf[yahoo]
   
   @js.native
   sealed trait yammer
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def yammer: yammer = "yammer".asInstanceOf[yammer]
+  inline def yammer: yammer = "yammer".asInstanceOf[yammer]
   
   @js.native
   sealed trait yandex
     extends StObject
        with Strategy
        with UnlinkAccountsParamsProvider
-  @scala.inline
-  def yandex: yandex = "yandex".asInstanceOf[yandex]
+  inline def yandex: yandex = "yandex".asInstanceOf[yandex]
   
   @js.native
   sealed trait zendesk
     extends StObject
        with ClientAppType
-  @scala.inline
-  def zendesk: zendesk = "zendesk".asInstanceOf[zendesk]
+  inline def zendesk: zendesk = "zendesk".asInstanceOf[zendesk]
   
   @js.native
   sealed trait zoom
     extends StObject
        with ClientAppType
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

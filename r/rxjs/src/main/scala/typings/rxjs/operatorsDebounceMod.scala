@@ -10,8 +10,7 @@ object operatorsDebounceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def debounce[T](
+  inline def debounce[T](
     durationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any

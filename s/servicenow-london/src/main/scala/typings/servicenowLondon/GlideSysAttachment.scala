@@ -24,8 +24,7 @@ trait GlideSysAttachment extends StObject {
 }
 object GlideSysAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: (String, String, String, String) => Unit,
     deleteAttachment: String => Unit,
     getContent: ScopedGlideRecord => js.Any,
@@ -39,31 +38,22 @@ object GlideSysAttachment {
     __obj.asInstanceOf[GlideSysAttachment]
   }
   
-  @scala.inline
-  implicit class GlideSysAttachmentMutableBuilder[Self <: GlideSysAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: GlideSysAttachment](x: Self) {
     
-    @scala.inline
-    def setCopy(value: (String, String, String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction4(value))
+    inline def setCopy(value: (String, String, String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDeleteAttachment(value: String => Unit): Self = StObject.set(x, "deleteAttachment", js.Any.fromFunction1(value))
+    inline def setDeleteAttachment(value: String => Unit): Self = StObject.set(x, "deleteAttachment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContent(value: ScopedGlideRecord => js.Any): Self = StObject.set(x, "getContent", js.Any.fromFunction1(value))
+    inline def setGetContent(value: ScopedGlideRecord => js.Any): Self = StObject.set(x, "getContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContentBase64(value: ScopedGlideRecord => String): Self = StObject.set(x, "getContentBase64", js.Any.fromFunction1(value))
+    inline def setGetContentBase64(value: ScopedGlideRecord => String): Self = StObject.set(x, "getContentBase64", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContentStream(value: String => js.Object): Self = StObject.set(x, "getContentStream", js.Any.fromFunction1(value))
+    inline def setGetContentStream(value: String => js.Object): Self = StObject.set(x, "getContentStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: (ScopedGlideRecord, String, String, js.Any) => String): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
+    inline def setWrite(value: (ScopedGlideRecord, String, String, js.Any) => String): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setWriteBase64(value: (ScopedGlideRecord, String, String, String) => String): Self = StObject.set(x, "writeBase64", js.Any.fromFunction4(value))
+    inline def setWriteBase64(value: (ScopedGlideRecord, String, String, String) => String): Self = StObject.set(x, "writeBase64", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setWriteContentStream(value: (ScopedGlideRecord, String, String, js.Object) => String): Self = StObject.set(x, "writeContentStream", js.Any.fromFunction4(value))
+    inline def setWriteContentStream(value: (ScopedGlideRecord, String, String, js.Object) => String): Self = StObject.set(x, "writeContentStream", js.Any.fromFunction4(value))
   }
 }

@@ -11,25 +11,19 @@ trait IClientBatchSubmitRequest extends StObject {
 }
 object IClientBatchSubmitRequest {
   
-  @scala.inline
-  def apply(): IClientBatchSubmitRequest = {
+  inline def apply(): IClientBatchSubmitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBatchSubmitRequest]
   }
   
-  @scala.inline
-  implicit class IClientBatchSubmitRequestMutableBuilder[Self <: IClientBatchSubmitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBatchSubmitRequest](x: Self) {
     
-    @scala.inline
-    def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
+    inline def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchesNull: Self = StObject.set(x, "batches", null)
+    inline def setBatchesNull: Self = StObject.set(x, "batches", null)
     
-    @scala.inline
-    def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
+    inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
     
-    @scala.inline
-    def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value :_*))
+    inline def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value :_*))
   }
 }

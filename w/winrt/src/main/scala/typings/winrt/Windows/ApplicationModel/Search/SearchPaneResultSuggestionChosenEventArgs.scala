@@ -9,8 +9,7 @@ trait SearchPaneResultSuggestionChosenEventArgs
      with ISearchPaneResultSuggestionChosenEventArgs
 object SearchPaneResultSuggestionChosenEventArgs {
   
-  @scala.inline
-  def apply(tag: String): SearchPaneResultSuggestionChosenEventArgs = {
+  inline def apply(tag: String): SearchPaneResultSuggestionChosenEventArgs = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPaneResultSuggestionChosenEventArgs]
   }

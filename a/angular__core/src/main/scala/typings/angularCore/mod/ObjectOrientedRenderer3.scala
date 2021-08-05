@@ -27,8 +27,7 @@ trait ObjectOrientedRenderer3
 }
 object ObjectOrientedRenderer3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createComment: String => RComment,
     createElement: String => RElement,
     createElementNS: (String, String) => RElement,
@@ -39,22 +38,16 @@ object ObjectOrientedRenderer3 {
     __obj.asInstanceOf[ObjectOrientedRenderer3]
   }
   
-  @scala.inline
-  implicit class ObjectOrientedRenderer3MutableBuilder[Self <: ObjectOrientedRenderer3] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectOrientedRenderer3](x: Self) {
     
-    @scala.inline
-    def setCreateComment(value: String => RComment): Self = StObject.set(x, "createComment", js.Any.fromFunction1(value))
+    inline def setCreateComment(value: String => RComment): Self = StObject.set(x, "createComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateElement(value: String => RElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
+    inline def setCreateElement(value: String => RElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateElementNS(value: (String, String) => RElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
+    inline def setCreateElementNS(value: (String, String) => RElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateTextNode(value: String => RText): Self = StObject.set(x, "createTextNode", js.Any.fromFunction1(value))
+    inline def setCreateTextNode(value: String => RText): Self = StObject.set(x, "createTextNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQuerySelector(value: String => RElement | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
+    inline def setQuerySelector(value: String => RElement | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
   }
 }

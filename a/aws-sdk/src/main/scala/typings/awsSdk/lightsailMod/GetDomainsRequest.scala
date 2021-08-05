@@ -13,19 +13,15 @@ trait GetDomainsRequest extends StObject {
 }
 object GetDomainsRequest {
   
-  @scala.inline
-  def apply(): GetDomainsRequest = {
+  inline def apply(): GetDomainsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDomainsRequest]
   }
   
-  @scala.inline
-  implicit class GetDomainsRequestMutableBuilder[Self <: GetDomainsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainsRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

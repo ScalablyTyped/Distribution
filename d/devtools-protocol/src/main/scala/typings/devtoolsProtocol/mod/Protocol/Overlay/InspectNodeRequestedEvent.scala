@@ -14,16 +14,13 @@ trait InspectNodeRequestedEvent extends StObject {
 }
 object InspectNodeRequestedEvent {
   
-  @scala.inline
-  def apply(backendNodeId: BackendNodeId): InspectNodeRequestedEvent = {
+  inline def apply(backendNodeId: BackendNodeId): InspectNodeRequestedEvent = {
     val __obj = js.Dynamic.literal(backendNodeId = backendNodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectNodeRequestedEvent]
   }
   
-  @scala.inline
-  implicit class InspectNodeRequestedEventMutableBuilder[Self <: InspectNodeRequestedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InspectNodeRequestedEvent](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait SourceToTargetRef extends StObject {
 }
 object SourceToTargetRef {
   
-  @scala.inline
-  def apply(sourceRef: String, targetRef: String): SourceToTargetRef = {
+  inline def apply(sourceRef: String, targetRef: String): SourceToTargetRef = {
     val __obj = js.Dynamic.literal(sourceRef = sourceRef.asInstanceOf[js.Any], targetRef = targetRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceToTargetRef]
   }
   
-  @scala.inline
-  implicit class SourceToTargetRefMutableBuilder[Self <: SourceToTargetRef] (val x: Self) extends AnyVal {
+  extension [Self <: SourceToTargetRef](x: Self) {
     
-    @scala.inline
-    def setSourceRef(value: String): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
+    inline def setSourceRef(value: String): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRef(value: String): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: String): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

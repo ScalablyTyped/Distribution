@@ -33,34 +33,25 @@ trait PutRecordInput extends StObject {
 }
 object PutRecordInput {
   
-  @scala.inline
-  def apply(Data: Data, PartitionKey: PartitionKey, StreamName: StreamName): PutRecordInput = {
+  inline def apply(Data: Data, PartitionKey: PartitionKey, StreamName: StreamName): PutRecordInput = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordInput]
   }
   
-  @scala.inline
-  implicit class PutRecordInputMutableBuilder[Self <: PutRecordInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecordInput](x: Self) {
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitHashKey(value: HashKey): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
+    inline def setExplicitHashKey(value: HashKey): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitHashKeyUndefined: Self = StObject.set(x, "ExplicitHashKey", js.undefined)
+    inline def setExplicitHashKeyUndefined: Self = StObject.set(x, "ExplicitHashKey", js.undefined)
     
-    @scala.inline
-    def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumberForOrdering(value: SequenceNumber): Self = StObject.set(x, "SequenceNumberForOrdering", value.asInstanceOf[js.Any])
+    inline def setSequenceNumberForOrdering(value: SequenceNumber): Self = StObject.set(x, "SequenceNumberForOrdering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumberForOrderingUndefined: Self = StObject.set(x, "SequenceNumberForOrdering", js.undefined)
+    inline def setSequenceNumberForOrderingUndefined: Self = StObject.set(x, "SequenceNumberForOrdering", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

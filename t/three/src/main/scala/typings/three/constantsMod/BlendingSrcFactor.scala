@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait BlendingSrcFactor extends StObject
 object BlendingSrcFactor {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[BlendingSrcFactor & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingSrcFactor")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BlendingSrcFactor & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[BlendingSrcFactor & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingSrcFactor")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BlendingSrcFactor & scala.Nothing]]
 }

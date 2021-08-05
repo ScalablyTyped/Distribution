@@ -10,8 +10,7 @@ trait DocumentSymbolRegistrationOptions
      with WorkDoneProgressOptions
 object DocumentSymbolRegistrationOptions {
   
-  @scala.inline
-  def apply(): DocumentSymbolRegistrationOptions = {
+  inline def apply(): DocumentSymbolRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[DocumentSymbolRegistrationOptions]
   }

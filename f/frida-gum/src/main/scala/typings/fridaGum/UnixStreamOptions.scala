@@ -14,19 +14,15 @@ trait UnixStreamOptions extends StObject {
 }
 object UnixStreamOptions {
   
-  @scala.inline
-  def apply(): UnixStreamOptions = {
+  inline def apply(): UnixStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnixStreamOptions]
   }
   
-  @scala.inline
-  implicit class UnixStreamOptionsMutableBuilder[Self <: UnixStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnixStreamOptions](x: Self) {
     
-    @scala.inline
-    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+    inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
   }
 }

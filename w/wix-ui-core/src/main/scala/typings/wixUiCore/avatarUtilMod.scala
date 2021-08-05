@@ -13,23 +13,15 @@ object avatarUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nameToInitials(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")().asInstanceOf[String]
-  @scala.inline
-  def nameToInitials(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nameToInitials(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")().asInstanceOf[String]
+  inline def nameToInitials(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def nameToInitials_1(name: String, limit: `1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nameToInitials_1(name: Unit, limit: `1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nameToInitials_1(name: String, limit: `1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nameToInitials_1(name: Unit, limit: `1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def nameToInitials_2(name: String, limit: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nameToInitials_2(name: Unit, limit: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nameToInitials_2(name: String, limit: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nameToInitials_2(name: Unit, limit: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def nameToInitials_3(name: String, limit: `3`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nameToInitials_3(name: Unit, limit: `3`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nameToInitials_3(name: String, limit: `3`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nameToInitials_3(name: Unit, limit: `3`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToInitials")(name.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
 }

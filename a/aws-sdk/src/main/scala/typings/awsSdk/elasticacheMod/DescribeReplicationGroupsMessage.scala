@@ -23,31 +23,23 @@ trait DescribeReplicationGroupsMessage extends StObject {
 }
 object DescribeReplicationGroupsMessage {
   
-  @scala.inline
-  def apply(): DescribeReplicationGroupsMessage = {
+  inline def apply(): DescribeReplicationGroupsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReplicationGroupsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationGroupsMessageMutableBuilder[Self <: DescribeReplicationGroupsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationGroupsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
+    inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
   }
 }

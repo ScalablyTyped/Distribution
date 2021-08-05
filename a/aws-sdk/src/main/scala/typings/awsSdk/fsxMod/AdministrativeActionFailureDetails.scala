@@ -13,19 +13,15 @@ trait AdministrativeActionFailureDetails extends StObject {
 }
 object AdministrativeActionFailureDetails {
   
-  @scala.inline
-  def apply(): AdministrativeActionFailureDetails = {
+  inline def apply(): AdministrativeActionFailureDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdministrativeActionFailureDetails]
   }
   
-  @scala.inline
-  implicit class AdministrativeActionFailureDetailsMutableBuilder[Self <: AdministrativeActionFailureDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AdministrativeActionFailureDetails](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

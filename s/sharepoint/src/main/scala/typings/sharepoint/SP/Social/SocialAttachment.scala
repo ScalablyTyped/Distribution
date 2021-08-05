@@ -78,8 +78,7 @@ trait SocialAttachment
 }
 object SocialAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -110,67 +109,46 @@ object SocialAttachment {
     __obj.asInstanceOf[SocialAttachment]
   }
   
-  @scala.inline
-  implicit class SocialAttachmentMutableBuilder[Self <: SocialAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: SocialAttachment](x: Self) {
     
-    @scala.inline
-    def setGet_attachmentKind(value: () => SocialAttachmentKind): Self = StObject.set(x, "get_attachmentKind", js.Any.fromFunction0(value))
+    inline def setGet_attachmentKind(value: () => SocialAttachmentKind): Self = StObject.set(x, "get_attachmentKind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_clickAction(value: () => SocialAttachmentAction): Self = StObject.set(x, "get_clickAction", js.Any.fromFunction0(value))
+    inline def setGet_clickAction(value: () => SocialAttachmentAction): Self = StObject.set(x, "get_clickAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_contentUri(value: () => String): Self = StObject.set(x, "get_contentUri", js.Any.fromFunction0(value))
+    inline def setGet_contentUri(value: () => String): Self = StObject.set(x, "get_contentUri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
+    inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_height(value: () => Double): Self = StObject.set(x, "get_height", js.Any.fromFunction0(value))
+    inline def setGet_height(value: () => Double): Self = StObject.set(x, "get_height", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_length(value: () => Double): Self = StObject.set(x, "get_length", js.Any.fromFunction0(value))
+    inline def setGet_length(value: () => Double): Self = StObject.set(x, "get_length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_previewUri(value: () => String): Self = StObject.set(x, "get_previewUri", js.Any.fromFunction0(value))
+    inline def setGet_previewUri(value: () => String): Self = StObject.set(x, "get_previewUri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
+    inline def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_width(value: () => Double): Self = StObject.set(x, "get_width", js.Any.fromFunction0(value))
+    inline def setGet_width(value: () => Double): Self = StObject.set(x, "get_width", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_attachmentKind(value: SocialAttachmentKind => SocialAttachmentKind): Self = StObject.set(x, "set_attachmentKind", js.Any.fromFunction1(value))
+    inline def setSet_attachmentKind(value: SocialAttachmentKind => SocialAttachmentKind): Self = StObject.set(x, "set_attachmentKind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_clickAction(value: SocialAttachmentAction => SocialAttachmentAction): Self = StObject.set(x, "set_clickAction", js.Any.fromFunction1(value))
+    inline def setSet_clickAction(value: SocialAttachmentAction => SocialAttachmentAction): Self = StObject.set(x, "set_clickAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_contentUri(value: String => String): Self = StObject.set(x, "set_contentUri", js.Any.fromFunction1(value))
+    inline def setSet_contentUri(value: String => String): Self = StObject.set(x, "set_contentUri", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_description(value: String => String): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
+    inline def setSet_description(value: String => String): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_height(value: Double => Double): Self = StObject.set(x, "set_height", js.Any.fromFunction1(value))
+    inline def setSet_height(value: Double => Double): Self = StObject.set(x, "set_height", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_length(value: Double => Double): Self = StObject.set(x, "set_length", js.Any.fromFunction1(value))
+    inline def setSet_length(value: Double => Double): Self = StObject.set(x, "set_length", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_previewUri(value: String => String): Self = StObject.set(x, "set_previewUri", js.Any.fromFunction1(value))
+    inline def setSet_previewUri(value: String => String): Self = StObject.set(x, "set_previewUri", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_uri(value: String => String): Self = StObject.set(x, "set_uri", js.Any.fromFunction1(value))
+    inline def setSet_uri(value: String => String): Self = StObject.set(x, "set_uri", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_width(value: Double => Double): Self = StObject.set(x, "set_width", js.Any.fromFunction1(value))
+    inline def setSet_width(value: Double => Double): Self = StObject.set(x, "set_width", js.Any.fromFunction1(value))
   }
 }

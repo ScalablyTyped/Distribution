@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.RGBColor")
 @js.native
-class RGBColor protected ()
+/* private */ class RGBColor ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.RGBColor {
   
@@ -17,7 +17,7 @@ class RGBColor protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.RGBColor_typekey")
   var PowerPointDotRGBColor_typekey: typings.activexPowerpoint.PowerPoint.RGBColor = js.native
   

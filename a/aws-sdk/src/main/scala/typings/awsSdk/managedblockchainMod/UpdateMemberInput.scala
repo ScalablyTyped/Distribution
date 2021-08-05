@@ -23,25 +23,19 @@ trait UpdateMemberInput extends StObject {
 }
 object UpdateMemberInput {
   
-  @scala.inline
-  def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString): UpdateMemberInput = {
+  inline def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString): UpdateMemberInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMemberInput]
   }
   
-  @scala.inline
-  implicit class UpdateMemberInputMutableBuilder[Self <: UpdateMemberInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMemberInput](x: Self) {
     
-    @scala.inline
-    def setLogPublishingConfiguration(value: MemberLogPublishingConfiguration): Self = StObject.set(x, "LogPublishingConfiguration", value.asInstanceOf[js.Any])
+    inline def setLogPublishingConfiguration(value: MemberLogPublishingConfiguration): Self = StObject.set(x, "LogPublishingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogPublishingConfigurationUndefined: Self = StObject.set(x, "LogPublishingConfiguration", js.undefined)
+    inline def setLogPublishingConfigurationUndefined: Self = StObject.set(x, "LogPublishingConfiguration", js.undefined)
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
   }
 }

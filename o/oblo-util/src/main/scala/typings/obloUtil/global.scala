@@ -9,6 +9,5 @@ object global {
   @JSGlobal("util")
   @js.native
   def util: ObloUtilStatic = js.native
-  @scala.inline
-  def util_=(x: ObloUtilStatic): Unit = js.Dynamic.global.updateDynamic("util")(x.asInstanceOf[js.Any])
+  inline def util_=(x: ObloUtilStatic): Unit = js.Dynamic.global.updateDynamic("util")(x.asInstanceOf[js.Any])
 }

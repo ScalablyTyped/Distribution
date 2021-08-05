@@ -13,25 +13,25 @@ object guideLineLayerMod {
   class GuideLineLayer[D] protected () extends Component {
     def this(orientation: String) = this()
     
-    var _guideLine: js.Any = js.native
+    /* private */ var _guideLine: js.Any = js.native
     
     /* protected */ def _isVertical(): Boolean = js.native
     
-    var _mode: js.Any = js.native
+    /* private */ var _mode: js.Any = js.native
     
-    var _orientation: js.Any = js.native
+    /* private */ var _orientation: js.Any = js.native
     
-    var _pixelPosition: js.Any = js.native
+    /* private */ var _pixelPosition: js.Any = js.native
     
-    var _scale: js.Any = js.native
+    /* private */ var _scale: js.Any = js.native
     
-    var _scaleUpdateCallback: js.Any = js.native
+    /* private */ var _scaleUpdateCallback: js.Any = js.native
     
     /* protected */ def _setPixelPositionWithoutChangingMode(pixelPosition: Double): Unit = js.native
     
     /* private */ def _syncPixelPositionAndValue(): js.Any = js.native
     
-    var _value: js.Any = js.native
+    /* private */ var _value: js.Any = js.native
     
     /**
       * Gets the position of the guide line in pixel-space.
@@ -89,13 +89,11 @@ object guideLineLayerMod {
     @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer.ORIENTATION_HORIZONTAL")
     @js.native
     def ORIENTATION_HORIZONTAL: String = js.native
-    @scala.inline
-    def ORIENTATION_HORIZONTAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_HORIZONTAL")(x.asInstanceOf[js.Any])
+    inline def ORIENTATION_HORIZONTAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_HORIZONTAL")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer.ORIENTATION_VERTICAL")
     @js.native
     def ORIENTATION_VERTICAL: String = js.native
-    @scala.inline
-    def ORIENTATION_VERTICAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_VERTICAL")(x.asInstanceOf[js.Any])
+    inline def ORIENTATION_VERTICAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_VERTICAL")(x.asInstanceOf[js.Any])
   }
 }

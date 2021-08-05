@@ -17,8 +17,7 @@ trait UIComponent extends StObject {
 }
 object UIComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getParameter: String => js.Any,
     getParameters: () => Record[String, js.Any],
     setParameter: (String, js.Any) => Unit,
@@ -28,19 +27,14 @@ object UIComponent {
     __obj.asInstanceOf[UIComponent]
   }
   
-  @scala.inline
-  implicit class UIComponentMutableBuilder[Self <: UIComponent] (val x: Self) extends AnyVal {
+  extension [Self <: UIComponent](x: Self) {
     
-    @scala.inline
-    def setGetParameter(value: String => js.Any): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
+    inline def setGetParameter(value: String => js.Any): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameters(value: () => Record[String, js.Any]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => Record[String, js.Any]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "setParameter", js.Any.fromFunction2(value))
+    inline def setSetParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "setParameter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetParameters(value: Record[String, js.Any] => Unit): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
+    inline def setSetParameters(value: Record[String, js.Any] => Unit): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
   }
 }

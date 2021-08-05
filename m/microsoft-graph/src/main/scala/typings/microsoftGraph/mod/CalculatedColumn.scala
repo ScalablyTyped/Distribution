@@ -17,40 +17,29 @@ trait CalculatedColumn extends StObject {
 }
 object CalculatedColumn {
   
-  @scala.inline
-  def apply(): CalculatedColumn = {
+  inline def apply(): CalculatedColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalculatedColumn]
   }
   
-  @scala.inline
-  implicit class CalculatedColumnMutableBuilder[Self <: CalculatedColumn] (val x: Self) extends AnyVal {
+  extension [Self <: CalculatedColumn](x: Self) {
     
-    @scala.inline
-    def setFormat(value: NullableOption[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: NullableOption[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatNull: Self = StObject.set(x, "format", null)
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaNull: Self = StObject.set(x, "formula", null)
+    inline def setFormulaNull: Self = StObject.set(x, "formula", null)
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setOutputType(value: NullableOption[String]): Self = StObject.set(x, "outputType", value.asInstanceOf[js.Any])
+    inline def setOutputType(value: NullableOption[String]): Self = StObject.set(x, "outputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputTypeNull: Self = StObject.set(x, "outputType", null)
+    inline def setOutputTypeNull: Self = StObject.set(x, "outputType", null)
     
-    @scala.inline
-    def setOutputTypeUndefined: Self = StObject.set(x, "outputType", js.undefined)
+    inline def setOutputTypeUndefined: Self = StObject.set(x, "outputType", js.undefined)
   }
 }

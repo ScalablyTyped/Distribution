@@ -402,588 +402,464 @@ trait childrenReactNodeLayoutPr extends StObject {
 }
 object childrenReactNodeLayoutPr {
   
-  @scala.inline
-  def apply(): childrenReactNodeLayoutPr = {
+  inline def apply(): childrenReactNodeLayoutPr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[childrenReactNodeLayoutPr]
   }
   
-  @scala.inline
-  implicit class childrenReactNodeLayoutPrMutableBuilder[Self <: childrenReactNodeLayoutPr] (val x: Self) extends AnyVal {
+  extension [Self <: childrenReactNodeLayoutPr](x: Self) {
     
-    @scala.inline
-    def setBottom(
+    inline def setBottom(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomNull: Self = StObject.set(x, "bottom", null)
+    inline def setBottomNull: Self = StObject.set(x, "bottom", null)
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setBottomVarargs(
+    inline def setBottomVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "bottom", js.Array(value :_*))
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDisplay(
+    inline def setDisplay(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNull: Self = StObject.set(x, "display", null)
+    inline def setDisplayNull: Self = StObject.set(x, "display", null)
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setDisplayVarargs(
+    inline def setDisplayVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
     ): Self = StObject.set(x, "display", js.Array(value :_*))
     
-    @scala.inline
-    def setGridArea(
+    inline def setGridArea(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAreaNull: Self = StObject.set(x, "gridArea", null)
+    inline def setGridAreaNull: Self = StObject.set(x, "gridArea", null)
     
-    @scala.inline
-    def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+    inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
-    @scala.inline
-    def setGridAreaVarargs(
+    inline def setGridAreaVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridArea", js.Array(value :_*))
     
-    @scala.inline
-    def setGridAutoColumns(
+    inline def setGridAutoColumns(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoColumnsNull: Self = StObject.set(x, "gridAutoColumns", null)
+    inline def setGridAutoColumnsNull: Self = StObject.set(x, "gridAutoColumns", null)
     
-    @scala.inline
-    def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
+    inline def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
     
-    @scala.inline
-    def setGridAutoColumnsVarargs(
+    inline def setGridAutoColumnsVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridAutoColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setGridAutoFlow(
+    inline def setGridAutoFlow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoFlowNull: Self = StObject.set(x, "gridAutoFlow", null)
+    inline def setGridAutoFlowNull: Self = StObject.set(x, "gridAutoFlow", null)
     
-    @scala.inline
-    def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
+    inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
-    @scala.inline
-    def setGridAutoFlowVarargs(
+    inline def setGridAutoFlowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
     
-    @scala.inline
-    def setGridAutoRows(
+    inline def setGridAutoRows(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoRowsNull: Self = StObject.set(x, "gridAutoRows", null)
+    inline def setGridAutoRowsNull: Self = StObject.set(x, "gridAutoRows", null)
     
-    @scala.inline
-    def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
+    inline def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
     
-    @scala.inline
-    def setGridAutoRowsVarargs(
+    inline def setGridAutoRowsVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridAutoRows", js.Array(value :_*))
     
-    @scala.inline
-    def setGridColumn(
+    inline def setGridColumn(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridColumnGap(
+    inline def setGridColumnGap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridColumnGapNull: Self = StObject.set(x, "gridColumnGap", null)
+    inline def setGridColumnGapNull: Self = StObject.set(x, "gridColumnGap", null)
     
-    @scala.inline
-    def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
+    inline def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
-    @scala.inline
-    def setGridColumnGapVarargs(
+    inline def setGridColumnGapVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
     
-    @scala.inline
-    def setGridColumnNull: Self = StObject.set(x, "gridColumn", null)
+    inline def setGridColumnNull: Self = StObject.set(x, "gridColumn", null)
     
-    @scala.inline
-    def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
+    inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
     
-    @scala.inline
-    def setGridColumnVarargs(
+    inline def setGridColumnVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
     
-    @scala.inline
-    def setGridGap(
+    inline def setGridGap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridGapNull: Self = StObject.set(x, "gridGap", null)
+    inline def setGridGapNull: Self = StObject.set(x, "gridGap", null)
     
-    @scala.inline
-    def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
+    inline def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
     
-    @scala.inline
-    def setGridGapVarargs(
+    inline def setGridGapVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridGap", js.Array(value :_*))
     
-    @scala.inline
-    def setGridRow(
+    inline def setGridRow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRowGap(
+    inline def setGridRowGap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRowGapNull: Self = StObject.set(x, "gridRowGap", null)
+    inline def setGridRowGapNull: Self = StObject.set(x, "gridRowGap", null)
     
-    @scala.inline
-    def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
+    inline def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
     
-    @scala.inline
-    def setGridRowGapVarargs(
+    inline def setGridRowGapVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
     
-    @scala.inline
-    def setGridRowNull: Self = StObject.set(x, "gridRow", null)
+    inline def setGridRowNull: Self = StObject.set(x, "gridRow", null)
     
-    @scala.inline
-    def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
+    inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
     
-    @scala.inline
-    def setGridRowVarargs(
+    inline def setGridRowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridRow", js.Array(value :_*))
     
-    @scala.inline
-    def setGridTemplateAreas(
+    inline def setGridTemplateAreas(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateAreasNull: Self = StObject.set(x, "gridTemplateAreas", null)
+    inline def setGridTemplateAreasNull: Self = StObject.set(x, "gridTemplateAreas", null)
     
-    @scala.inline
-    def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
+    inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
-    @scala.inline
-    def setGridTemplateAreasVarargs(
+    inline def setGridTemplateAreasVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
     
-    @scala.inline
-    def setGridTemplateColumns(
+    inline def setGridTemplateColumns(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateColumnsNull: Self = StObject.set(x, "gridTemplateColumns", null)
+    inline def setGridTemplateColumnsNull: Self = StObject.set(x, "gridTemplateColumns", null)
     
-    @scala.inline
-    def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
+    inline def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
     
-    @scala.inline
-    def setGridTemplateColumnsVarargs(
+    inline def setGridTemplateColumnsVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setGridTemplateRows(
+    inline def setGridTemplateRows(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateRowsNull: Self = StObject.set(x, "gridTemplateRows", null)
+    inline def setGridTemplateRowsNull: Self = StObject.set(x, "gridTemplateRows", null)
     
-    @scala.inline
-    def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
+    inline def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
     
-    @scala.inline
-    def setGridTemplateRowsVarargs(
+    inline def setGridTemplateRowsVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridTemplateRows", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(
+    inline def setHeight(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHeightVarargs(
+    inline def setHeightVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "height", js.Array(value :_*))
     
-    @scala.inline
-    def setLeft(
+    inline def setLeft(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftNull: Self = StObject.set(x, "left", null)
+    inline def setLeftNull: Self = StObject.set(x, "left", null)
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setLeftVarargs(
+    inline def setLeftVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "left", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxHeight(
+    inline def setMaxHeight(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
+    inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxHeightVarargs(
+    inline def setMaxHeightVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxWidth(
+    inline def setMaxWidth(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
+    inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMaxWidthVarargs(
+    inline def setMaxWidthVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setMinHeight(
+    inline def setMinHeight(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
+    inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setMinHeightVarargs(
+    inline def setMinHeightVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
     
-    @scala.inline
-    def setMinWidth(
+    inline def setMinWidth(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
+    inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setMinWidthVarargs(
+    inline def setMinWidthVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setOverflow(
+    inline def setOverflow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowNull: Self = StObject.set(x, "overflow", null)
+    inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
     
-    @scala.inline
-    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    @scala.inline
-    def setOverflowVarargs(
+    inline def setOverflowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
     ): Self = StObject.set(x, "overflow", js.Array(value :_*))
     
-    @scala.inline
-    def setOverflowX(
+    inline def setOverflowX(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
+    inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
     
-    @scala.inline
-    def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
+    inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
-    @scala.inline
-    def setOverflowXVarargs(
+    inline def setOverflowXVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
     ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
     
-    @scala.inline
-    def setOverflowY(
+    inline def setOverflowY(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
+    inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
     
-    @scala.inline
-    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+    inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
-    @scala.inline
-    def setOverflowYVarargs(
+    inline def setOverflowYVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
     ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPositionVarargs(
+    inline def setPositionVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any) | Null)*
     ): Self = StObject.set(x, "position", js.Array(value :_*))
     
-    @scala.inline
-    def setRight(
+    inline def setRight(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightNull: Self = StObject.set(x, "right", null)
+    inline def setRightNull: Self = StObject.set(x, "right", null)
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setRightVarargs(
+    inline def setRightVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "right", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(
+    inline def setSize(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeNull: Self = StObject.set(x, "size", null)
+    inline def setSizeNull: Self = StObject.set(x, "size", null)
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSizeVarargs(
+    inline def setSizeVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "size", js.Array(value :_*))
     
-    @scala.inline
-    def setTop(
+    inline def setTop(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopNull: Self = StObject.set(x, "top", null)
+    inline def setTopNull: Self = StObject.set(x, "top", null)
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setTopVarargs(
+    inline def setTopVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "top", js.Array(value :_*))
     
-    @scala.inline
-    def setVerticalAlign(
+    inline def setVerticalAlign(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
+    inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignVarargs(
+    inline def setVerticalAlignVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(
+    inline def setWidth(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWidthVarargs(
+    inline def setWidthVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
     ): Self = StObject.set(x, "width", js.Array(value :_*))
     
-    @scala.inline
-    def setZIndex(
+    inline def setZIndex(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any, 
           RequiredTheme
         ]
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexNull: Self = StObject.set(x, "zIndex", null)
+    inline def setZIndexNull: Self = StObject.set(x, "zIndex", null)
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
-    @scala.inline
-    def setZIndexVarargs(
+    inline def setZIndexVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | Null)*
     ): Self = StObject.set(x, "zIndex", js.Array(value :_*))
   }

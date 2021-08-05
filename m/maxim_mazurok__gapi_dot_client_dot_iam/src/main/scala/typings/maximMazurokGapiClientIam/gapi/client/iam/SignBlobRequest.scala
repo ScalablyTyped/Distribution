@@ -11,19 +11,15 @@ trait SignBlobRequest extends StObject {
 }
 object SignBlobRequest {
   
-  @scala.inline
-  def apply(): SignBlobRequest = {
+  inline def apply(): SignBlobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignBlobRequest]
   }
   
-  @scala.inline
-  implicit class SignBlobRequestMutableBuilder[Self <: SignBlobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SignBlobRequest](x: Self) {
     
-    @scala.inline
-    def setBytesToSign(value: String): Self = StObject.set(x, "bytesToSign", value.asInstanceOf[js.Any])
+    inline def setBytesToSign(value: String): Self = StObject.set(x, "bytesToSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesToSignUndefined: Self = StObject.set(x, "bytesToSign", js.undefined)
+    inline def setBytesToSignUndefined: Self = StObject.set(x, "bytesToSign", js.undefined)
   }
 }

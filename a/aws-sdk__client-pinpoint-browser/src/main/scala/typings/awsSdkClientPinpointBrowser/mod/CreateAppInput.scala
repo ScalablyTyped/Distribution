@@ -10,8 +10,7 @@ trait CreateAppInput
      with typings.awsSdkClientPinpointBrowser.typesCreateAppInputMod.CreateAppInput
 object CreateAppInput {
   
-  @scala.inline
-  def apply(CreateApplicationRequest: CreateApplicationRequest): CreateAppInput = {
+  inline def apply(CreateApplicationRequest: CreateApplicationRequest): CreateAppInput = {
     val __obj = js.Dynamic.literal(CreateApplicationRequest = CreateApplicationRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAppInput]
   }

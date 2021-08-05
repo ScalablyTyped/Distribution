@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScopeType extends StObject
 object ScopeType {
   
-  @scala.inline
-  def Block: block = "block".asInstanceOf[block]
+  inline def Block: block = "block".asInstanceOf[block]
   
-  @scala.inline
-  def Catch: `catch` = "catch".asInstanceOf[`catch`]
+  inline def Catch: `catch` = "catch".asInstanceOf[`catch`]
   
-  @scala.inline
-  def Closure: closure = "closure".asInstanceOf[closure]
+  inline def Closure: closure = "closure".asInstanceOf[closure]
   
-  @scala.inline
-  def Eval: eval = "eval".asInstanceOf[eval]
+  inline def Eval: eval = "eval".asInstanceOf[eval]
   
-  @scala.inline
-  def Global: global = "global".asInstanceOf[global]
+  inline def Global: global = "global".asInstanceOf[global]
   
-  @scala.inline
-  def Local: local = "local".asInstanceOf[local]
+  inline def Local: local = "local".asInstanceOf[local]
   
-  @scala.inline
-  def Module: module = "module".asInstanceOf[module]
+  inline def Module: module = "module".asInstanceOf[module]
   
-  @scala.inline
-  def Script: script_ = "script".asInstanceOf[script_]
+  inline def Script: script_ = "script".asInstanceOf[script_]
   
-  @scala.inline
-  def WasmExpressionStack: `wasm-expression-stack` = "wasm-expression-stack".asInstanceOf[`wasm-expression-stack`]
+  inline def WasmExpressionStack: `wasm-expression-stack` = "wasm-expression-stack".asInstanceOf[`wasm-expression-stack`]
   
-  @scala.inline
-  def With: `with` = "with".asInstanceOf[`with`]
+  inline def With: `with` = "with".asInstanceOf[`with`]
 }

@@ -64,92 +64,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAfterToggle(value: (/* trigger */ Element, /* element */ Element, /* expanded */ Boolean) => Unit): Self = StObject.set(x, "afterToggle", js.Any.fromFunction3(value))
+      inline def setAfterToggle(value: (/* trigger */ Element, /* element */ Element, /* expanded */ Boolean) => Unit): Self = StObject.set(x, "afterToggle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAfterToggleUndefined: Self = StObject.set(x, "afterToggle", js.undefined)
+      inline def setAfterToggleUndefined: Self = StObject.set(x, "afterToggle", js.undefined)
       
-      @scala.inline
-      def setBeforeToggle(value: (/* trigger */ Element, /* element */ Element, /* expanded */ Boolean) => Unit): Self = StObject.set(x, "beforeToggle", js.Any.fromFunction3(value))
+      inline def setBeforeToggle(value: (/* trigger */ Element, /* element */ Element, /* expanded */ Boolean) => Unit): Self = StObject.set(x, "beforeToggle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBeforeToggleUndefined: Self = StObject.set(x, "beforeToggle", js.undefined)
+      inline def setBeforeToggleUndefined: Self = StObject.set(x, "beforeToggle", js.undefined)
       
-      @scala.inline
-      def setBlockCSS(value: String): Self = StObject.set(x, "blockCSS", value.asInstanceOf[js.Any])
+      inline def setBlockCSS(value: String): Self = StObject.set(x, "blockCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockCSSUndefined: Self = StObject.set(x, "blockCSS", js.undefined)
+      inline def setBlockCSSUndefined: Self = StObject.set(x, "blockCSS", js.undefined)
       
-      @scala.inline
-      def setBlockProcessed(value: (/* element */ Element, /* collapsable */ Boolean) => Unit): Self = StObject.set(x, "blockProcessed", js.Any.fromFunction2(value))
+      inline def setBlockProcessed(value: (/* element */ Element, /* collapsable */ Boolean) => Unit): Self = StObject.set(x, "blockProcessed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlockProcessedUndefined: Self = StObject.set(x, "blockProcessed", js.undefined)
+      inline def setBlockProcessedUndefined: Self = StObject.set(x, "blockProcessed", js.undefined)
       
-      @scala.inline
-      def setCollapsedHeight(value: Double): Self = StObject.set(x, "collapsedHeight", value.asInstanceOf[js.Any])
+      inline def setCollapsedHeight(value: Double): Self = StObject.set(x, "collapsedHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedHeightUndefined: Self = StObject.set(x, "collapsedHeight", js.undefined)
+      inline def setCollapsedHeightUndefined: Self = StObject.set(x, "collapsedHeight", js.undefined)
       
-      @scala.inline
-      def setEmbedCSS(value: Boolean): Self = StObject.set(x, "embedCSS", value.asInstanceOf[js.Any])
+      inline def setEmbedCSS(value: Boolean): Self = StObject.set(x, "embedCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbedCSSUndefined: Self = StObject.set(x, "embedCSS", js.undefined)
+      inline def setEmbedCSSUndefined: Self = StObject.set(x, "embedCSS", js.undefined)
       
-      @scala.inline
-      def setHeightMargin(value: Double): Self = StObject.set(x, "heightMargin", value.asInstanceOf[js.Any])
+      inline def setHeightMargin(value: Double): Self = StObject.set(x, "heightMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightMarginUndefined: Self = StObject.set(x, "heightMargin", js.undefined)
+      inline def setHeightMarginUndefined: Self = StObject.set(x, "heightMargin", js.undefined)
       
-      @scala.inline
-      def setLessLink(value: (js.Function1[/* element */ Element, String]) | String): Self = StObject.set(x, "lessLink", value.asInstanceOf[js.Any])
+      inline def setLessLink(value: (js.Function1[/* element */ Element, String]) | String): Self = StObject.set(x, "lessLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLessLinkFunction1(value: /* element */ Element => String): Self = StObject.set(x, "lessLink", js.Any.fromFunction1(value))
+      inline def setLessLinkFunction1(value: /* element */ Element => String): Self = StObject.set(x, "lessLink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLessLinkUndefined: Self = StObject.set(x, "lessLink", js.undefined)
+      inline def setLessLinkUndefined: Self = StObject.set(x, "lessLink", js.undefined)
       
-      @scala.inline
-      def setMoreLink(value: (js.Function1[/* element */ Element, String]) | String): Self = StObject.set(x, "moreLink", value.asInstanceOf[js.Any])
+      inline def setMoreLink(value: (js.Function1[/* element */ Element, String]) | String): Self = StObject.set(x, "moreLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoreLinkFunction1(value: /* element */ Element => String): Self = StObject.set(x, "moreLink", js.Any.fromFunction1(value))
+      inline def setMoreLinkFunction1(value: /* element */ Element => String): Self = StObject.set(x, "moreLink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoreLinkUndefined: Self = StObject.set(x, "moreLink", js.undefined)
+      inline def setMoreLinkUndefined: Self = StObject.set(x, "moreLink", js.undefined)
       
-      @scala.inline
-      def setSourceOrder(value: after | before): Self = StObject.set(x, "sourceOrder", value.asInstanceOf[js.Any])
+      inline def setSourceOrder(value: after | before): Self = StObject.set(x, "sourceOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceOrderUndefined: Self = StObject.set(x, "sourceOrder", js.undefined)
+      inline def setSourceOrderUndefined: Self = StObject.set(x, "sourceOrder", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStartOpen(value: Boolean): Self = StObject.set(x, "startOpen", value.asInstanceOf[js.Any])
+      inline def setStartOpen(value: Boolean): Self = StObject.set(x, "startOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartOpenUndefined: Self = StObject.set(x, "startOpen", js.undefined)
+      inline def setStartOpenUndefined: Self = StObject.set(x, "startOpen", js.undefined)
     }
   }
   

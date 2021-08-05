@@ -12,22 +12,17 @@ trait WeightedTarget extends StObject {
 }
 object WeightedTarget {
   
-  @scala.inline
-  def apply(child_policy: js.Array[LoadBalancingConfig], weight: Double): WeightedTarget = {
+  inline def apply(child_policy: js.Array[LoadBalancingConfig], weight: Double): WeightedTarget = {
     val __obj = js.Dynamic.literal(child_policy = child_policy.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedTarget]
   }
   
-  @scala.inline
-  implicit class WeightedTargetMutableBuilder[Self <: WeightedTarget] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedTarget](x: Self) {
     
-    @scala.inline
-    def setChild_policy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "child_policy", value.asInstanceOf[js.Any])
+    inline def setChild_policy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "child_policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChild_policyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "child_policy", js.Array(value :_*))
+    inline def setChild_policyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "child_policy", js.Array(value :_*))
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

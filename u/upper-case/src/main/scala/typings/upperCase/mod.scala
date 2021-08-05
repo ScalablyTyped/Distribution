@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def localeUpperCase(str: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localeUpperCase")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def localeUpperCase(str: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localeUpperCase")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def upperCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("upperCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def upperCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("upperCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

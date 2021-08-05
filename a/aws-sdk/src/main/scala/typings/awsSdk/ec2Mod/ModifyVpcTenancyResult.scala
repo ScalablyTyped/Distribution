@@ -13,19 +13,15 @@ trait ModifyVpcTenancyResult extends StObject {
 }
 object ModifyVpcTenancyResult {
   
-  @scala.inline
-  def apply(): ModifyVpcTenancyResult = {
+  inline def apply(): ModifyVpcTenancyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyVpcTenancyResult]
   }
   
-  @scala.inline
-  implicit class ModifyVpcTenancyResultMutableBuilder[Self <: ModifyVpcTenancyResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpcTenancyResult](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
   }
 }

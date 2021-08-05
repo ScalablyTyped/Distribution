@@ -16,16 +16,13 @@ trait BluetoothAdapterStateData
 }
 object BluetoothAdapterStateData {
   
-  @scala.inline
-  def apply(adapterState: BluetoothAdapterState, errMsg: ok | String): BluetoothAdapterStateData = {
+  inline def apply(adapterState: BluetoothAdapterState, errMsg: ok | String): BluetoothAdapterStateData = {
     val __obj = js.Dynamic.literal(adapterState = adapterState.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothAdapterStateData]
   }
   
-  @scala.inline
-  implicit class BluetoothAdapterStateDataMutableBuilder[Self <: BluetoothAdapterStateData] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothAdapterStateData](x: Self) {
     
-    @scala.inline
-    def setAdapterState(value: BluetoothAdapterState): Self = StObject.set(x, "adapterState", value.asInstanceOf[js.Any])
+    inline def setAdapterState(value: BluetoothAdapterState): Self = StObject.set(x, "adapterState", value.asInstanceOf[js.Any])
   }
 }

@@ -12,13 +12,9 @@ object rgb2grayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rgb2gray(hasDWidthHeight: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  @scala.inline
-  def rgb2gray(hasDWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2gray(hasDWidthHeight: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2gray(hasDWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
   
-  @scala.inline
-  def rgb2grayInteger(hasDWidthHeight: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  @scala.inline
-  def rgb2grayInteger(hasDWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2grayInteger(hasDWidthHeight: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2grayInteger(hasDWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
 }

@@ -119,17 +119,14 @@ object CustomFunctions {
   }
   object CancelableInvocation {
     
-    @scala.inline
-    def apply(onCanceled: () => Unit): CancelableInvocation = {
+    inline def apply(onCanceled: () => Unit): CancelableInvocation = {
       val __obj = js.Dynamic.literal(onCanceled = js.Any.fromFunction0(onCanceled))
       __obj.asInstanceOf[CancelableInvocation]
     }
     
-    @scala.inline
-    implicit class CancelableInvocationMutableBuilder[Self <: CancelableInvocation] (val x: Self) extends AnyVal {
+    extension [Self <: CancelableInvocation](x: Self) {
       
-      @scala.inline
-      def setOnCanceled(value: () => Unit): Self = StObject.set(x, "onCanceled", js.Any.fromFunction0(value))
+      inline def setOnCanceled(value: () => Unit): Self = StObject.set(x, "onCanceled", js.Any.fromFunction0(value))
     }
   }
   
@@ -153,23 +150,18 @@ object CustomFunctions {
   }
   object Error {
     
-    @scala.inline
-    def apply(code: ErrorCode): Error = {
+    inline def apply(code: ErrorCode): Error = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -202,29 +194,22 @@ object CustomFunctions {
   }
   object Invocation {
     
-    @scala.inline
-    def apply(): Invocation = {
+    inline def apply(): Invocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Invocation]
     }
     
-    @scala.inline
-    implicit class InvocationMutableBuilder[Self <: Invocation] (val x: Self) extends AnyVal {
+    extension [Self <: Invocation](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setParameterAddresses(value: js.Array[String]): Self = StObject.set(x, "parameterAddresses", value.asInstanceOf[js.Any])
+      inline def setParameterAddresses(value: js.Array[String]): Self = StObject.set(x, "parameterAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterAddressesUndefined: Self = StObject.set(x, "parameterAddresses", js.undefined)
+      inline def setParameterAddressesUndefined: Self = StObject.set(x, "parameterAddresses", js.undefined)
       
-      @scala.inline
-      def setParameterAddressesVarargs(value: String*): Self = StObject.set(x, "parameterAddresses", js.Array(value :_*))
+      inline def setParameterAddressesVarargs(value: String*): Self = StObject.set(x, "parameterAddresses", js.Array(value :_*))
     }
   }
   

@@ -17,31 +17,23 @@ trait DialogHTMLAttributes[T]
 }
 object DialogHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): DialogHTMLAttributes[T] = {
+  inline def apply[T](): DialogHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class DialogHTMLAttributesMutableBuilder[Self <: DialogHTMLAttributes[?], T] (val x: Self & DialogHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: DialogHTMLAttributes[?], T](x: Self & DialogHTMLAttributes[T]) {
     
-    @scala.inline
-    def setOnClose(value: /* event */ Event => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: /* event */ Event => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setReturnValue(value: String): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: String): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
   }
 }

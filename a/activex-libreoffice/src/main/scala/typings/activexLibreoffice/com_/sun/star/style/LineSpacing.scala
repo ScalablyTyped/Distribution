@@ -18,19 +18,15 @@ trait LineSpacing extends StObject {
 }
 object LineSpacing {
   
-  @scala.inline
-  def apply(Height: Double, Mode: Double): LineSpacing = {
+  inline def apply(Height: Double, Mode: Double): LineSpacing = {
     val __obj = js.Dynamic.literal(Height = Height.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineSpacing]
   }
   
-  @scala.inline
-  implicit class LineSpacingMutableBuilder[Self <: LineSpacing] (val x: Self) extends AnyVal {
+  extension [Self <: LineSpacing](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

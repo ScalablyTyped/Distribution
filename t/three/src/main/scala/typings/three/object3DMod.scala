@@ -420,13 +420,11 @@ object object3DMod {
     @JSImport("three/src/core/Object3D", "Object3D.DefaultMatrixAutoUpdate")
     @js.native
     def DefaultMatrixAutoUpdate: Boolean = js.native
-    @scala.inline
-    def DefaultMatrixAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixAutoUpdate")(x.asInstanceOf[js.Any])
+    inline def DefaultMatrixAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixAutoUpdate")(x.asInstanceOf[js.Any])
     
     @JSImport("three/src/core/Object3D", "Object3D.DefaultUp")
     @js.native
     def DefaultUp: Vector3 = js.native
-    @scala.inline
-    def DefaultUp_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultUp")(x.asInstanceOf[js.Any])
+    inline def DefaultUp_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultUp")(x.asInstanceOf[js.Any])
   }
 }

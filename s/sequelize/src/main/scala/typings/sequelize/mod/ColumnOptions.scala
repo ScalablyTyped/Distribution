@@ -36,31 +36,23 @@ trait ColumnOptions extends StObject {
 }
 object ColumnOptions {
   
-  @scala.inline
-  def apply(): ColumnOptions = {
+  inline def apply(): ColumnOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnOptions]
   }
   
-  @scala.inline
-  implicit class ColumnOptionsMutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnOptions](x: Self) {
     
-    @scala.inline
-    def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
+    inline def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
+    inline def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(candidate: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(candidate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(candidate: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(candidate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("valid-data-url", JSImport.Namespace)
   @js.native
@@ -17,6 +16,5 @@ object mod {
   @JSImport("valid-data-url", "regex")
   @js.native
   def regex: RegExp = js.native
-  @scala.inline
-  def regex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regex")(x.asInstanceOf[js.Any])
+  inline def regex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regex")(x.asInstanceOf[js.Any])
 }

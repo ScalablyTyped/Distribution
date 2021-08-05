@@ -15,28 +15,21 @@ trait LayerConfigOptions
 }
 object LayerConfigOptions {
   
-  @scala.inline
-  def apply(): LayerConfigOptions = {
+  inline def apply(): LayerConfigOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerConfigOptions]
   }
   
-  @scala.inline
-  implicit class LayerConfigOptionsMutableBuilder[Self <: LayerConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LayerConfigOptions](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Array[String]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: js.Array[String]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setExtendVarargs(value: String*): Self = StObject.set(x, "extend", js.Array(value :_*))
+    inline def setExtendVarargs(value: String*): Self = StObject.set(x, "extend", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

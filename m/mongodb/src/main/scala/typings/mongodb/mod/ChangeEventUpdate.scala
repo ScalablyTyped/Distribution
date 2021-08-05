@@ -24,8 +24,7 @@ trait ChangeEventUpdate[TSchema /* <: StringDictionary[js.Any] */]
 }
 object ChangeEventUpdate {
   
-  @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](
+  inline def apply[TSchema /* <: StringDictionary[js.Any] */](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `5`[TSchema],
@@ -36,22 +35,16 @@ object ChangeEventUpdate {
     __obj.asInstanceOf[ChangeEventUpdate[TSchema]]
   }
   
-  @scala.inline
-  implicit class ChangeEventUpdateMutableBuilder[Self <: ChangeEventUpdate[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventUpdate[TSchema]) extends AnyVal {
+  extension [Self <: ChangeEventUpdate[?], TSchema /* <: StringDictionary[js.Any] */](x: Self & ChangeEventUpdate[TSchema]) {
     
-    @scala.inline
-    def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
+    inline def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDocument(value: TSchema): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
+    inline def setFullDocument(value: TSchema): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
+    inline def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: update): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: update): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDescription(value: RemovedFields[TSchema]): Self = StObject.set(x, "updateDescription", value.asInstanceOf[js.Any])
+    inline def setUpdateDescription(value: RemovedFields[TSchema]): Self = StObject.set(x, "updateDescription", value.asInstanceOf[js.Any])
   }
 }

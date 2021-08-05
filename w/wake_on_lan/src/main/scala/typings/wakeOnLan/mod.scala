@@ -38,38 +38,28 @@ object mod extends Shortcut {
   }
   object WakeOptions {
     
-    @scala.inline
-    def apply(): WakeOptions = {
+    inline def apply(): WakeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WakeOptions]
     }
     
-    @scala.inline
-    implicit class WakeOptionsMutableBuilder[Self <: WakeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WakeOptions](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setNum_packets(value: Double): Self = StObject.set(x, "num_packets", value.asInstanceOf[js.Any])
+      inline def setNum_packets(value: Double): Self = StObject.set(x, "num_packets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_packetsUndefined: Self = StObject.set(x, "num_packets", js.undefined)
+      inline def setNum_packetsUndefined: Self = StObject.set(x, "num_packets", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   

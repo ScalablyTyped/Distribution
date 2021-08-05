@@ -10,16 +10,13 @@ trait EnumValuesGlobalWorkflow extends StObject {
 }
 object EnumValuesGlobalWorkflow {
   
-  @scala.inline
-  def apply(enumValues: GlobalWorkflow): EnumValuesGlobalWorkflow = {
+  inline def apply(enumValues: GlobalWorkflow): EnumValuesGlobalWorkflow = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesGlobalWorkflow]
   }
   
-  @scala.inline
-  implicit class EnumValuesGlobalWorkflowMutableBuilder[Self <: EnumValuesGlobalWorkflow] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesGlobalWorkflow](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: GlobalWorkflow): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: GlobalWorkflow): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

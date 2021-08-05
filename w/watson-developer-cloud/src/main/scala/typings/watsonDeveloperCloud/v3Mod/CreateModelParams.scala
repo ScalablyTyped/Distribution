@@ -28,46 +28,33 @@ trait CreateModelParams extends StObject {
 }
 object CreateModelParams {
   
-  @scala.inline
-  def apply(base_model_id: String): CreateModelParams = {
+  inline def apply(base_model_id: String): CreateModelParams = {
     val __obj = js.Dynamic.literal(base_model_id = base_model_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModelParams]
   }
   
-  @scala.inline
-  implicit class CreateModelParamsMutableBuilder[Self <: CreateModelParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateModelParams](x: Self) {
     
-    @scala.inline
-    def setBase_model_id(value: String): Self = StObject.set(x, "base_model_id", value.asInstanceOf[js.Any])
+    inline def setBase_model_id(value: String): Self = StObject.set(x, "base_model_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForced_glossary(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "forced_glossary", value.asInstanceOf[js.Any])
+    inline def setForced_glossary(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "forced_glossary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForced_glossaryUndefined: Self = StObject.set(x, "forced_glossary", js.undefined)
+    inline def setForced_glossaryUndefined: Self = StObject.set(x, "forced_glossary", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParallel_corpus(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "parallel_corpus", value.asInstanceOf[js.Any])
+    inline def setParallel_corpus(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "parallel_corpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallel_corpusUndefined: Self = StObject.set(x, "parallel_corpus", js.undefined)
+    inline def setParallel_corpusUndefined: Self = StObject.set(x, "parallel_corpus", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

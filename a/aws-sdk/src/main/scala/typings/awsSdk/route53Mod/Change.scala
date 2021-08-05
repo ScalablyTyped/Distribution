@@ -18,19 +18,15 @@ trait Change extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply(Action: ChangeAction, ResourceRecordSet: ResourceRecordSet): Change = {
+  inline def apply(Action: ChangeAction, ResourceRecordSet: ResourceRecordSet): Change = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], ResourceRecordSet = ResourceRecordSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+  extension [Self <: Change](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordSet(value: ResourceRecordSet): Self = StObject.set(x, "ResourceRecordSet", value.asInstanceOf[js.Any])
+    inline def setResourceRecordSet(value: ResourceRecordSet): Self = StObject.set(x, "ResourceRecordSet", value.asInstanceOf[js.Any])
   }
 }

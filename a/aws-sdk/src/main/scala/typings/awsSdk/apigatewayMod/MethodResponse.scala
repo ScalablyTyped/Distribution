@@ -23,31 +23,23 @@ trait MethodResponse extends StObject {
 }
 object MethodResponse {
   
-  @scala.inline
-  def apply(): MethodResponse = {
+  inline def apply(): MethodResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MethodResponse]
   }
   
-  @scala.inline
-  implicit class MethodResponseMutableBuilder[Self <: MethodResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MethodResponse](x: Self) {
     
-    @scala.inline
-    def setResponseModels(value: MapOfStringToString): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
+    inline def setResponseModels(value: MapOfStringToString): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
+    inline def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
     
-    @scala.inline
-    def setResponseParameters(value: MapOfStringToBoolean): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+    inline def setResponseParameters(value: MapOfStringToBoolean): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+    inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

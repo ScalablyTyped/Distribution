@@ -11,17 +11,14 @@ trait `53` extends StObject {
 }
 object `53` {
   
-  @scala.inline
-  def apply(): `53` = {
+  inline def apply(): `53` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("SwitchCase")
     __obj.asInstanceOf[`53`]
   }
   
-  @scala.inline
-  implicit class `53MutableBuilder`[Self <: `53`] (val x: Self) extends AnyVal {
+  extension [Self <: `53`](x: Self) {
     
-    @scala.inline
-    def setType(value: SwitchCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SwitchCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

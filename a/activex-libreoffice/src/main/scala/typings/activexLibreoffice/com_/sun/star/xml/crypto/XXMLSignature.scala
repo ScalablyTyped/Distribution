@@ -29,8 +29,7 @@ trait XXMLSignature
 }
 object XXMLSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     generate: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate,
     queryInterface: `type` => js.Any,
@@ -41,13 +40,10 @@ object XXMLSignature {
     __obj.asInstanceOf[XXMLSignature]
   }
   
-  @scala.inline
-  implicit class XXMLSignatureMutableBuilder[Self <: XXMLSignature] (val x: Self) extends AnyVal {
+  extension [Self <: XXMLSignature](x: Self) {
     
-    @scala.inline
-    def setGenerate(value: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate): Self = StObject.set(x, "generate", js.Any.fromFunction2(value))
+    inline def setGenerate(value: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate): Self = StObject.set(x, "generate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidate(value: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    inline def setValidate(value: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
   }
 }

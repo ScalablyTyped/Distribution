@@ -49,45 +49,33 @@ trait IMemento
 }
 object IMemento {
   
-  @scala.inline
-  def apply(): IMemento = {
+  inline def apply(): IMemento = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMemento]
   }
   
-  @scala.inline
-  implicit class IMementoMutableBuilder[Self <: IMemento] (val x: Self) extends AnyVal {
+  extension [Self <: IMemento](x: Self) {
     
-    @scala.inline
-    def setCapture(value: (/* props */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
+    inline def setCapture(value: (/* props */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    @scala.inline
-    def setRemove(value: /* props */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* props */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setRestore(
+    inline def setRestore(
       value: (/* props */ js.UndefOr[js.Any], /* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "restore", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRestoreAll(value: (/* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "restoreAll", js.Any.fromFunction2(value))
+    inline def setRestoreAll(value: (/* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "restoreAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRestoreAllUndefined: Self = StObject.set(x, "restoreAll", js.undefined)
+    inline def setRestoreAllUndefined: Self = StObject.set(x, "restoreAll", js.undefined)
     
-    @scala.inline
-    def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+    inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

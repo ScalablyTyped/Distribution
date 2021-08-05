@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartLegendAlignment extends StObject
 object ChartLegendAlignment {
   
-  @scala.inline
-  def center: typings.googleVisualization.googleVisualizationStrings.center = "center".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.center]
+  inline def center: typings.googleVisualization.googleVisualizationStrings.center = "center".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.center]
   
-  @scala.inline
-  def end: typings.googleVisualization.googleVisualizationStrings.end = "end".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.end]
+  inline def end: typings.googleVisualization.googleVisualizationStrings.end = "end".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.end]
   
-  @scala.inline
-  def start: typings.googleVisualization.googleVisualizationStrings.start = "start".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.start]
+  inline def start: typings.googleVisualization.googleVisualizationStrings.start = "start".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.start]
 }

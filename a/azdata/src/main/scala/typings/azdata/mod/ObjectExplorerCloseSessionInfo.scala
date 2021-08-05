@@ -10,16 +10,13 @@ trait ObjectExplorerCloseSessionInfo extends StObject {
 }
 object ObjectExplorerCloseSessionInfo {
   
-  @scala.inline
-  def apply(sessionId: String): ObjectExplorerCloseSessionInfo = {
+  inline def apply(sessionId: String): ObjectExplorerCloseSessionInfo = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectExplorerCloseSessionInfo]
   }
   
-  @scala.inline
-  implicit class ObjectExplorerCloseSessionInfoMutableBuilder[Self <: ObjectExplorerCloseSessionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExplorerCloseSessionInfo](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

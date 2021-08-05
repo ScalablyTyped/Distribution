@@ -37,20 +37,16 @@ object mail {
   }
   object MailAttachment {
     
-    @scala.inline
-    def apply(Data: XTransferable, ReadableName: String): MailAttachment = {
+    inline def apply(Data: XTransferable, ReadableName: String): MailAttachment = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], ReadableName = ReadableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[MailAttachment]
     }
     
-    @scala.inline
-    implicit class MailAttachmentMutableBuilder[Self <: MailAttachment] (val x: Self) extends AnyVal {
+    extension [Self <: MailAttachment](x: Self) {
       
-      @scala.inline
-      def setData(value: XTransferable): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: XTransferable): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableName(value: String): Self = StObject.set(x, "ReadableName", value.asInstanceOf[js.Any])
+      inline def setReadableName(value: String): Self = StObject.set(x, "ReadableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,8 +93,7 @@ object mail {
   }
   object MailMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Attachments: SafeArray[MailAttachment],
       BccRecipients: SafeArray[String],
       Body: XTransferable,
@@ -126,14 +121,11 @@ object mail {
       __obj.asInstanceOf[MailMessage]
     }
     
-    @scala.inline
-    implicit class MailMessageMutableBuilder[Self <: MailMessage] (val x: Self) extends AnyVal {
+    extension [Self <: MailMessage](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (String, String, String, XTransferable) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+      inline def setCreate(value: (String, String, String, XTransferable) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCreateWithAttachment(value: (String, String, String, XTransferable, MailAttachment) => Unit): Self = StObject.set(x, "createWithAttachment", js.Any.fromFunction5(value))
+      inline def setCreateWithAttachment(value: (String, String, String, XTransferable, MailAttachment) => Unit): Self = StObject.set(x, "createWithAttachment", js.Any.fromFunction5(value))
     }
   }
   
@@ -160,16 +152,13 @@ object mail {
   object MailServiceType {
     
     /** A IMAP service */
-    @scala.inline
-    def IMAP: `2` = 2.asInstanceOf[`2`]
+    inline def IMAP: `2` = 2.asInstanceOf[`2`]
     
     /** A POP3 service */
-    @scala.inline
-    def POP3: `1` = 1.asInstanceOf[`1`]
+    inline def POP3: `1` = 1.asInstanceOf[`1`]
     
     /** A SMTP service */
-    @scala.inline
-    def SMTP: `0` = 0.asInstanceOf[`0`]
+    inline def SMTP: `0` = 0.asInstanceOf[`0`]
   }
   
   /**
@@ -209,8 +198,7 @@ object mail {
   }
   object SendMailMessageFailedException {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Context: XInterface,
       InvalidAddresses: SafeArray[String],
       Message: String,
@@ -221,17 +209,13 @@ object mail {
       __obj.asInstanceOf[SendMailMessageFailedException]
     }
     
-    @scala.inline
-    implicit class SendMailMessageFailedExceptionMutableBuilder[Self <: SendMailMessageFailedException] (val x: Self) extends AnyVal {
+    extension [Self <: SendMailMessageFailedException](x: Self) {
       
-      @scala.inline
-      def setInvalidAddresses(value: SafeArray[String]): Self = StObject.set(x, "InvalidAddresses", value.asInstanceOf[js.Any])
+      inline def setInvalidAddresses(value: SafeArray[String]): Self = StObject.set(x, "InvalidAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidSentAddresses(value: SafeArray[String]): Self = StObject.set(x, "ValidSentAddresses", value.asInstanceOf[js.Any])
+      inline def setValidSentAddresses(value: SafeArray[String]): Self = StObject.set(x, "ValidSentAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUnsentAddresses(value: SafeArray[String]): Self = StObject.set(x, "ValidUnsentAddresses", value.asInstanceOf[js.Any])
+      inline def setValidUnsentAddresses(value: SafeArray[String]): Self = StObject.set(x, "ValidUnsentAddresses", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,8 +254,7 @@ object mail {
   }
   object XAuthenticator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Password: String,
       UserName: String,
       acquire: () => Unit,
@@ -284,20 +267,15 @@ object mail {
       __obj.asInstanceOf[XAuthenticator]
     }
     
-    @scala.inline
-    implicit class XAuthenticatorMutableBuilder[Self <: XAuthenticator] (val x: Self) extends AnyVal {
+    extension [Self <: XAuthenticator](x: Self) {
       
-      @scala.inline
-      def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
+      inline def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserName(value: () => String): Self = StObject.set(x, "getUserName", js.Any.fromFunction0(value))
+      inline def setGetUserName(value: () => String): Self = StObject.set(x, "getUserName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -326,8 +304,7 @@ object mail {
   }
   object XConnectionListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       connected: EventObject => Unit,
       disconnected: EventObject => Unit,
@@ -339,14 +316,11 @@ object mail {
       __obj.asInstanceOf[XConnectionListener]
     }
     
-    @scala.inline
-    implicit class XConnectionListenerMutableBuilder[Self <: XConnectionListener] (val x: Self) extends AnyVal {
+    extension [Self <: XConnectionListener](x: Self) {
       
-      @scala.inline
-      def setConnected(value: EventObject => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
+      inline def setConnected(value: EventObject => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisconnected(value: EventObject => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction1(value))
+      inline def setDisconnected(value: EventObject => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction1(value))
     }
   }
   
@@ -445,8 +419,7 @@ object mail {
   }
   object XMailMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Attachments: SafeArray[MailAttachment],
       BccRecipients: SafeArray[String],
       Body: XTransferable,
@@ -472,59 +445,41 @@ object mail {
       __obj.asInstanceOf[XMailMessage]
     }
     
-    @scala.inline
-    implicit class XMailMessageMutableBuilder[Self <: XMailMessage] (val x: Self) extends AnyVal {
+    extension [Self <: XMailMessage](x: Self) {
       
-      @scala.inline
-      def setAddAttachment(value: MailAttachment => Unit): Self = StObject.set(x, "addAttachment", js.Any.fromFunction1(value))
+      inline def setAddAttachment(value: MailAttachment => Unit): Self = StObject.set(x, "addAttachment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddBccRecipient(value: String => Unit): Self = StObject.set(x, "addBccRecipient", js.Any.fromFunction1(value))
+      inline def setAddBccRecipient(value: String => Unit): Self = StObject.set(x, "addBccRecipient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddCcRecipient(value: String => Unit): Self = StObject.set(x, "addCcRecipient", js.Any.fromFunction1(value))
+      inline def setAddCcRecipient(value: String => Unit): Self = StObject.set(x, "addCcRecipient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddRecipient(value: String => Unit): Self = StObject.set(x, "addRecipient", js.Any.fromFunction1(value))
+      inline def setAddRecipient(value: String => Unit): Self = StObject.set(x, "addRecipient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttachments(value: SafeArray[MailAttachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: SafeArray[MailAttachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccRecipients(value: SafeArray[String]): Self = StObject.set(x, "BccRecipients", value.asInstanceOf[js.Any])
+      inline def setBccRecipients(value: SafeArray[String]): Self = StObject.set(x, "BccRecipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: XTransferable): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: XTransferable): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcRecipients(value: SafeArray[String]): Self = StObject.set(x, "CcRecipients", value.asInstanceOf[js.Any])
+      inline def setCcRecipients(value: SafeArray[String]): Self = StObject.set(x, "CcRecipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAttachments(value: () => SafeArray[MailAttachment]): Self = StObject.set(x, "getAttachments", js.Any.fromFunction0(value))
+      inline def setGetAttachments(value: () => SafeArray[MailAttachment]): Self = StObject.set(x, "getAttachments", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBccRecipients(value: () => SafeArray[String]): Self = StObject.set(x, "getBccRecipients", js.Any.fromFunction0(value))
+      inline def setGetBccRecipients(value: () => SafeArray[String]): Self = StObject.set(x, "getBccRecipients", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCcRecipients(value: () => SafeArray[String]): Self = StObject.set(x, "getCcRecipients", js.Any.fromFunction0(value))
+      inline def setGetCcRecipients(value: () => SafeArray[String]): Self = StObject.set(x, "getCcRecipients", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRecipients(value: () => SafeArray[String]): Self = StObject.set(x, "getRecipients", js.Any.fromFunction0(value))
+      inline def setGetRecipients(value: () => SafeArray[String]): Self = StObject.set(x, "getRecipients", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRecipients(value: SafeArray[String]): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
+      inline def setRecipients(value: SafeArray[String]): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyToAddress(value: String): Self = StObject.set(x, "ReplyToAddress", value.asInstanceOf[js.Any])
+      inline def setReplyToAddress(value: String): Self = StObject.set(x, "ReplyToAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderAddress(value: String): Self = StObject.set(x, "SenderAddress", value.asInstanceOf[js.Any])
+      inline def setSenderAddress(value: String): Self = StObject.set(x, "SenderAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderName(value: String): Self = StObject.set(x, "SenderName", value.asInstanceOf[js.Any])
+      inline def setSenderName(value: String): Self = StObject.set(x, "SenderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -630,8 +585,7 @@ object mail {
   }
   object XMailService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentConnectionContext: XCurrentContext,
       SupportedConnectionTypes: SafeArray[String],
       acquire: () => Unit,
@@ -649,35 +603,25 @@ object mail {
       __obj.asInstanceOf[XMailService]
     }
     
-    @scala.inline
-    implicit class XMailServiceMutableBuilder[Self <: XMailService] (val x: Self) extends AnyVal {
+    extension [Self <: XMailService](x: Self) {
       
-      @scala.inline
-      def setAddConnectionListener(value: XConnectionListener => Unit): Self = StObject.set(x, "addConnectionListener", js.Any.fromFunction1(value))
+      inline def setAddConnectionListener(value: XConnectionListener => Unit): Self = StObject.set(x, "addConnectionListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConnect(value: (XCurrentContext, XAuthenticator) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
+      inline def setConnect(value: (XCurrentContext, XAuthenticator) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCurrentConnectionContext(value: XCurrentContext): Self = StObject.set(x, "CurrentConnectionContext", value.asInstanceOf[js.Any])
+      inline def setCurrentConnectionContext(value: XCurrentContext): Self = StObject.set(x, "CurrentConnectionContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentConnectionContext(value: () => XCurrentContext): Self = StObject.set(x, "getCurrentConnectionContext", js.Any.fromFunction0(value))
+      inline def setGetCurrentConnectionContext(value: () => XCurrentContext): Self = StObject.set(x, "getCurrentConnectionContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSupportedConnectionTypes(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedConnectionTypes", js.Any.fromFunction0(value))
+      inline def setGetSupportedConnectionTypes(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedConnectionTypes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
+      inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveConnectionListener(value: XConnectionListener => Unit): Self = StObject.set(x, "removeConnectionListener", js.Any.fromFunction1(value))
+      inline def setRemoveConnectionListener(value: XConnectionListener => Unit): Self = StObject.set(x, "removeConnectionListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSupportedConnectionTypes(value: SafeArray[String]): Self = StObject.set(x, "SupportedConnectionTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedConnectionTypes(value: SafeArray[String]): Self = StObject.set(x, "SupportedConnectionTypes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -700,8 +644,7 @@ object mail {
   }
   object XMailServiceProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       create: MailServiceType => XMailService,
       queryInterface: `type` => js.Any,
@@ -711,11 +654,9 @@ object mail {
       __obj.asInstanceOf[XMailServiceProvider]
     }
     
-    @scala.inline
-    implicit class XMailServiceProviderMutableBuilder[Self <: XMailServiceProvider] (val x: Self) extends AnyVal {
+    extension [Self <: XMailServiceProvider](x: Self) {
       
-      @scala.inline
-      def setCreate(value: MailServiceType => XMailService): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: MailServiceType => XMailService): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -746,8 +687,7 @@ object mail {
   }
   object XSmtpService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentConnectionContext: XCurrentContext,
       SupportedConnectionTypes: SafeArray[String],
       acquire: () => Unit,
@@ -766,11 +706,9 @@ object mail {
       __obj.asInstanceOf[XSmtpService]
     }
     
-    @scala.inline
-    implicit class XSmtpServiceMutableBuilder[Self <: XSmtpService] (val x: Self) extends AnyVal {
+    extension [Self <: XSmtpService](x: Self) {
       
-      @scala.inline
-      def setSendMailMessage(value: XMailMessage => Unit): Self = StObject.set(x, "sendMailMessage", js.Any.fromFunction1(value))
+      inline def setSendMailMessage(value: XMailMessage => Unit): Self = StObject.set(x, "sendMailMessage", js.Any.fromFunction1(value))
     }
   }
 }

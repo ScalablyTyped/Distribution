@@ -27,8 +27,7 @@ trait XSimpleFileAccess2
 }
 object XSimpleFileAccess2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     copy: (String, String) => Unit,
     createFolder: String => Unit,
@@ -54,10 +53,8 @@ object XSimpleFileAccess2 {
     __obj.asInstanceOf[XSimpleFileAccess2]
   }
   
-  @scala.inline
-  implicit class XSimpleFileAccess2MutableBuilder[Self <: XSimpleFileAccess2] (val x: Self) extends AnyVal {
+  extension [Self <: XSimpleFileAccess2](x: Self) {
     
-    @scala.inline
-    def setWriteFile(value: (String, XInputStream) => Unit): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
+    inline def setWriteFile(value: (String, XInputStream) => Unit): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
   }
 }

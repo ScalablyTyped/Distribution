@@ -18,19 +18,15 @@ trait ElasticsearchVersionStatus extends StObject {
 }
 object ElasticsearchVersionStatus {
   
-  @scala.inline
-  def apply(Options: ElasticsearchVersionString, Status: OptionStatus): ElasticsearchVersionStatus = {
+  inline def apply(Options: ElasticsearchVersionString, Status: OptionStatus): ElasticsearchVersionStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchVersionStatus]
   }
   
-  @scala.inline
-  implicit class ElasticsearchVersionStatusMutableBuilder[Self <: ElasticsearchVersionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchVersionStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: ElasticsearchVersionString): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ElasticsearchVersionString): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

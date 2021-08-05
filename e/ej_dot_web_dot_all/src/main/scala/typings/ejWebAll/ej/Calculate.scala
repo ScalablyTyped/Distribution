@@ -61,8 +61,7 @@ trait Calculate extends StObject {
 }
 object Calculate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCustomFunction: (String, String) => Unit,
     addNamedRange: (String, String) => Unit,
     adjustRangeArg: String => String,
@@ -78,38 +77,27 @@ object Calculate {
     __obj.asInstanceOf[Calculate]
   }
   
-  @scala.inline
-  implicit class CalculateMutableBuilder[Self <: Calculate] (val x: Self) extends AnyVal {
+  extension [Self <: Calculate](x: Self) {
     
-    @scala.inline
-    def setAddCustomFunction(value: (String, String) => Unit): Self = StObject.set(x, "addCustomFunction", js.Any.fromFunction2(value))
+    inline def setAddCustomFunction(value: (String, String) => Unit): Self = StObject.set(x, "addCustomFunction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddNamedRange(value: (String, String) => Unit): Self = StObject.set(x, "addNamedRange", js.Any.fromFunction2(value))
+    inline def setAddNamedRange(value: (String, String) => Unit): Self = StObject.set(x, "addNamedRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAdjustRangeArg(value: String => String): Self = StObject.set(x, "adjustRangeArg", js.Any.fromFunction1(value))
+    inline def setAdjustRangeArg(value: String => String): Self = StObject.set(x, "adjustRangeArg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearFormulaDependentCells(value: String => Unit): Self = StObject.set(x, "clearFormulaDependentCells", js.Any.fromFunction1(value))
+    inline def setClearFormulaDependentCells(value: String => Unit): Self = StObject.set(x, "clearFormulaDependentCells", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearLibraryComputationException(value: () => Unit): Self = StObject.set(x, "clearLibraryComputationException", js.Any.fromFunction0(value))
+    inline def setClearLibraryComputationException(value: () => Unit): Self = StObject.set(x, "clearLibraryComputationException", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setColIndex(value: String => Unit): Self = StObject.set(x, "colIndex", js.Any.fromFunction1(value))
+    inline def setColIndex(value: String => Unit): Self = StObject.set(x, "colIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComputeFormula(value: String => String): Self = StObject.set(x, "computeFormula", js.Any.fromFunction1(value))
+    inline def setComputeFormula(value: String => String): Self = StObject.set(x, "computeFormula", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComputedValue(value: String => String): Self = StObject.set(x, "computedValue", js.Any.fromFunction1(value))
+    inline def setComputedValue(value: String => String): Self = StObject.set(x, "computedValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaults(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
   
   trait Model extends StObject

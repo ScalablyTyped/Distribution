@@ -13,16 +13,13 @@ trait UpdateChannelReadMarkerRequest extends StObject {
 }
 object UpdateChannelReadMarkerRequest {
   
-  @scala.inline
-  def apply(ChannelArn: ChimeArn): UpdateChannelReadMarkerRequest = {
+  inline def apply(ChannelArn: ChimeArn): UpdateChannelReadMarkerRequest = {
     val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateChannelReadMarkerRequest]
   }
   
-  @scala.inline
-  implicit class UpdateChannelReadMarkerRequestMutableBuilder[Self <: UpdateChannelReadMarkerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateChannelReadMarkerRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
   }
 }

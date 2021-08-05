@@ -12,17 +12,14 @@ object anon {
   }
   object AutoDestroy {
     
-    @scala.inline
-    def apply(autoDestroy: Boolean): AutoDestroy = {
+    inline def apply(autoDestroy: Boolean): AutoDestroy = {
       val __obj = js.Dynamic.literal(autoDestroy = autoDestroy.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoDestroy]
     }
     
-    @scala.inline
-    implicit class AutoDestroyMutableBuilder[Self <: AutoDestroy] (val x: Self) extends AnyVal {
+    extension [Self <: AutoDestroy](x: Self) {
       
-      @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
     }
   }
 }

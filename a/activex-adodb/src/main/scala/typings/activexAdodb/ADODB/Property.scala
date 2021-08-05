@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Property extends StObject {
   
-  @JSName("ADODB.Property_typekey")
+  /* private */ @JSName("ADODB.Property_typekey")
   var ADODBDotProperty_typekey: Property
   
   /** Sum of one or more of the values in the **PropertyAttributesEnum** enum */
@@ -20,8 +20,7 @@ trait Property extends StObject {
 }
 object Property {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADODBDotProperty_typekey: Property,
     Attributes: PropertyAttributesEnum,
     Name: String,
@@ -33,22 +32,16 @@ object Property {
     __obj.asInstanceOf[Property]
   }
   
-  @scala.inline
-  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+  extension [Self <: Property](x: Self) {
     
-    @scala.inline
-    def setADODBDotProperty_typekey(value: Property): Self = StObject.set(x, "ADODB.Property_typekey", value.asInstanceOf[js.Any])
+    inline def setADODBDotProperty_typekey(value: Property): Self = StObject.set(x, "ADODB.Property_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: PropertyAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: PropertyAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

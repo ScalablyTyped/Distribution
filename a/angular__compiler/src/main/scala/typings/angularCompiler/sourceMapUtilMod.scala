@@ -12,11 +12,9 @@ object sourceMapUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractSourceMap(source: String): SourceMap | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractSourceMap")(source.asInstanceOf[js.Any]).asInstanceOf[SourceMap | Null]
+  inline def extractSourceMap(source: String): SourceMap | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractSourceMap")(source.asInstanceOf[js.Any]).asInstanceOf[SourceMap | Null]
   
-  @scala.inline
-  def originalPositionFor(sourceMap: SourceMap, genPosition: Column): SourceLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("originalPositionFor")(sourceMap.asInstanceOf[js.Any], genPosition.asInstanceOf[js.Any])).asInstanceOf[SourceLocation]
+  inline def originalPositionFor(sourceMap: SourceMap, genPosition: Column): SourceLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("originalPositionFor")(sourceMap.asInstanceOf[js.Any], genPosition.asInstanceOf[js.Any])).asInstanceOf[SourceLocation]
   
   trait SourceLocation extends StObject {
     
@@ -28,23 +26,18 @@ object sourceMapUtilMod {
   }
   object SourceLocation {
     
-    @scala.inline
-    def apply(column: Double, line: Double, source: String): SourceLocation = {
+    inline def apply(column: Double, line: Double, source: String): SourceLocation = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceLocation]
     }
     
-    @scala.inline
-    implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+    extension [Self <: SourceLocation](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

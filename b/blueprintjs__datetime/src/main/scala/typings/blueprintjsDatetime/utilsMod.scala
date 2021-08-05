@@ -11,15 +11,10 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def measureTextWidth(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def measureTextWidth(text: String, className: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def measureTextWidth(text: String, className: String, containerElement: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any], className.asInstanceOf[js.Any], containerElement.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def measureTextWidth(text: String, className: Unit, containerElement: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any], className.asInstanceOf[js.Any], containerElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def measureTextWidth(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def measureTextWidth(text: String, className: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def measureTextWidth(text: String, className: String, containerElement: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any], className.asInstanceOf[js.Any], containerElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def measureTextWidth(text: String, className: Unit, containerElement: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(text.asInstanceOf[js.Any], className.asInstanceOf[js.Any], containerElement.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def padWithZeroes(str: String, minLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padWithZeroes")(str.asInstanceOf[js.Any], minLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padWithZeroes(str: String, minLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padWithZeroes")(str.asInstanceOf[js.Any], minLength.asInstanceOf[js.Any])).asInstanceOf[String]
 }

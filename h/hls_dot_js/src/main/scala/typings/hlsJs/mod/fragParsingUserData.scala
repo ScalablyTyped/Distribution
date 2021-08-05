@@ -14,25 +14,19 @@ trait fragParsingUserData extends StObject {
 }
 object fragParsingUserData {
   
-  @scala.inline
-  def apply(frag: Fragment, id: String, samples: js.Array[js.Any]): fragParsingUserData = {
+  inline def apply(frag: Fragment, id: String, samples: js.Array[js.Any]): fragParsingUserData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], samples = samples.asInstanceOf[js.Any])
     __obj.asInstanceOf[fragParsingUserData]
   }
   
-  @scala.inline
-  implicit class fragParsingUserDataMutableBuilder[Self <: fragParsingUserData] (val x: Self) extends AnyVal {
+  extension [Self <: fragParsingUserData](x: Self) {
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamples(value: js.Array[js.Any]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+    inline def setSamples(value: js.Array[js.Any]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplesVarargs(value: js.Any*): Self = StObject.set(x, "samples", js.Array(value :_*))
+    inline def setSamplesVarargs(value: js.Any*): Self = StObject.set(x, "samples", js.Array(value :_*))
   }
 }

@@ -18,29 +18,22 @@ trait ActionsSetSelectedReposForOrgSecretEndpoint extends StObject {
 }
 object ActionsSetSelectedReposForOrgSecretEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, secret_name: String): ActionsSetSelectedReposForOrgSecretEndpoint = {
+  inline def apply(org_ : String, secret_name: String): ActionsSetSelectedReposForOrgSecretEndpoint = {
     val __obj = js.Dynamic.literal(secret_name = secret_name.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsSetSelectedReposForOrgSecretEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsSetSelectedReposForOrgSecretEndpointMutableBuilder[Self <: ActionsSetSelectedReposForOrgSecretEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsSetSelectedReposForOrgSecretEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
+    inline def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repository_idsUndefined: Self = StObject.set(x, "selected_repository_ids", js.undefined)
+    inline def setSelected_repository_idsUndefined: Self = StObject.set(x, "selected_repository_ids", js.undefined)
     
-    @scala.inline
-    def setSelected_repository_idsVarargs(value: Double*): Self = StObject.set(x, "selected_repository_ids", js.Array(value :_*))
+    inline def setSelected_repository_idsVarargs(value: Double*): Self = StObject.set(x, "selected_repository_ids", js.Array(value :_*))
   }
 }

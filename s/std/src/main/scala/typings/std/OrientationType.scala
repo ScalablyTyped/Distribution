@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrientationType extends StObject
 object OrientationType {
   
-  @scala.inline
-  def `landscape-primary`: typings.std.stdStrings.`landscape-primary` = "landscape-primary".asInstanceOf[typings.std.stdStrings.`landscape-primary`]
+  inline def `landscape-primary`: typings.std.stdStrings.`landscape-primary` = "landscape-primary".asInstanceOf[typings.std.stdStrings.`landscape-primary`]
   
-  @scala.inline
-  def `landscape-secondary`: typings.std.stdStrings.`landscape-secondary` = "landscape-secondary".asInstanceOf[typings.std.stdStrings.`landscape-secondary`]
+  inline def `landscape-secondary`: typings.std.stdStrings.`landscape-secondary` = "landscape-secondary".asInstanceOf[typings.std.stdStrings.`landscape-secondary`]
   
-  @scala.inline
-  def `portrait-primary`: typings.std.stdStrings.`portrait-primary` = "portrait-primary".asInstanceOf[typings.std.stdStrings.`portrait-primary`]
+  inline def `portrait-primary`: typings.std.stdStrings.`portrait-primary` = "portrait-primary".asInstanceOf[typings.std.stdStrings.`portrait-primary`]
   
-  @scala.inline
-  def `portrait-secondary`: typings.std.stdStrings.`portrait-secondary` = "portrait-secondary".asInstanceOf[typings.std.stdStrings.`portrait-secondary`]
+  inline def `portrait-secondary`: typings.std.stdStrings.`portrait-secondary` = "portrait-secondary".asInstanceOf[typings.std.stdStrings.`portrait-secondary`]
 }

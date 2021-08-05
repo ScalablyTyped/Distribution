@@ -21,8 +21,7 @@ trait MediaStreamSourceSwitchStreamsRequest extends StObject {
 }
 object MediaStreamSourceSwitchStreamsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => MediaStreamSourceSwitchStreamsRequestDeferral,
     newStreamDescriptor: IMediaStreamDescriptor,
     oldStreamDescriptor: IMediaStreamDescriptor
@@ -31,16 +30,12 @@ object MediaStreamSourceSwitchStreamsRequest {
     __obj.asInstanceOf[MediaStreamSourceSwitchStreamsRequest]
   }
   
-  @scala.inline
-  implicit class MediaStreamSourceSwitchStreamsRequestMutableBuilder[Self <: MediaStreamSourceSwitchStreamsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamSourceSwitchStreamsRequest](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => MediaStreamSourceSwitchStreamsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => MediaStreamSourceSwitchStreamsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "newStreamDescriptor", value.asInstanceOf[js.Any])
+    inline def setNewStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "newStreamDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "oldStreamDescriptor", value.asInstanceOf[js.Any])
+    inline def setOldStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "oldStreamDescriptor", value.asInstanceOf[js.Any])
   }
 }

@@ -123,115 +123,79 @@ trait IgTreeBindings
 }
 object IgTreeBindings {
   
-  @scala.inline
-  def apply(): IgTreeBindings = {
+  inline def apply(): IgTreeBindings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeBindings]
   }
   
-  @scala.inline
-  implicit class IgTreeBindingsMutableBuilder[Self <: IgTreeBindings] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeBindings](x: Self) {
     
-    @scala.inline
-    def setBindings(value: IgTreeBindingsBindings): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: IgTreeBindingsBindings): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    @scala.inline
-    def setCheckedKey(value: String): Self = StObject.set(x, "checkedKey", value.asInstanceOf[js.Any])
+    inline def setCheckedKey(value: String): Self = StObject.set(x, "checkedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedKeyUndefined: Self = StObject.set(x, "checkedKey", js.undefined)
+    inline def setCheckedKeyUndefined: Self = StObject.set(x, "checkedKey", js.undefined)
     
-    @scala.inline
-    def setChildDataProperty(value: String): Self = StObject.set(x, "childDataProperty", value.asInstanceOf[js.Any])
+    inline def setChildDataProperty(value: String): Self = StObject.set(x, "childDataProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildDataPropertyUndefined: Self = StObject.set(x, "childDataProperty", js.undefined)
+    inline def setChildDataPropertyUndefined: Self = StObject.set(x, "childDataProperty", js.undefined)
     
-    @scala.inline
-    def setChildDataXPath(value: String): Self = StObject.set(x, "childDataXPath", value.asInstanceOf[js.Any])
+    inline def setChildDataXPath(value: String): Self = StObject.set(x, "childDataXPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildDataXPathUndefined: Self = StObject.set(x, "childDataXPath", js.undefined)
+    inline def setChildDataXPathUndefined: Self = StObject.set(x, "childDataXPath", js.undefined)
     
-    @scala.inline
-    def setExpandedKey(value: String): Self = StObject.set(x, "expandedKey", value.asInstanceOf[js.Any])
+    inline def setExpandedKey(value: String): Self = StObject.set(x, "expandedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedKeyUndefined: Self = StObject.set(x, "expandedKey", js.undefined)
+    inline def setExpandedKeyUndefined: Self = StObject.set(x, "expandedKey", js.undefined)
     
-    @scala.inline
-    def setImageUrlKey(value: String): Self = StObject.set(x, "imageUrlKey", value.asInstanceOf[js.Any])
+    inline def setImageUrlKey(value: String): Self = StObject.set(x, "imageUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlKeyUndefined: Self = StObject.set(x, "imageUrlKey", js.undefined)
+    inline def setImageUrlKeyUndefined: Self = StObject.set(x, "imageUrlKey", js.undefined)
     
-    @scala.inline
-    def setImageUrlXPath(value: String): Self = StObject.set(x, "imageUrlXPath", value.asInstanceOf[js.Any])
+    inline def setImageUrlXPath(value: String): Self = StObject.set(x, "imageUrlXPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlXPathUndefined: Self = StObject.set(x, "imageUrlXPath", js.undefined)
+    inline def setImageUrlXPathUndefined: Self = StObject.set(x, "imageUrlXPath", js.undefined)
     
-    @scala.inline
-    def setNavigateUrlKey(value: String): Self = StObject.set(x, "navigateUrlKey", value.asInstanceOf[js.Any])
+    inline def setNavigateUrlKey(value: String): Self = StObject.set(x, "navigateUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigateUrlKeyUndefined: Self = StObject.set(x, "navigateUrlKey", js.undefined)
+    inline def setNavigateUrlKeyUndefined: Self = StObject.set(x, "navigateUrlKey", js.undefined)
     
-    @scala.inline
-    def setNavigateUrlXPath(value: String): Self = StObject.set(x, "navigateUrlXPath", value.asInstanceOf[js.Any])
+    inline def setNavigateUrlXPath(value: String): Self = StObject.set(x, "navigateUrlXPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigateUrlXPathUndefined: Self = StObject.set(x, "navigateUrlXPath", js.undefined)
+    inline def setNavigateUrlXPathUndefined: Self = StObject.set(x, "navigateUrlXPath", js.undefined)
     
-    @scala.inline
-    def setNodeContentTemplate(value: String): Self = StObject.set(x, "nodeContentTemplate", value.asInstanceOf[js.Any])
+    inline def setNodeContentTemplate(value: String): Self = StObject.set(x, "nodeContentTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeContentTemplateUndefined: Self = StObject.set(x, "nodeContentTemplate", js.undefined)
+    inline def setNodeContentTemplateUndefined: Self = StObject.set(x, "nodeContentTemplate", js.undefined)
     
-    @scala.inline
-    def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+    inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
-    @scala.inline
-    def setSearchFieldXPath(value: String): Self = StObject.set(x, "searchFieldXPath", value.asInstanceOf[js.Any])
+    inline def setSearchFieldXPath(value: String): Self = StObject.set(x, "searchFieldXPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFieldXPathUndefined: Self = StObject.set(x, "searchFieldXPath", js.undefined)
+    inline def setSearchFieldXPathUndefined: Self = StObject.set(x, "searchFieldXPath", js.undefined)
     
-    @scala.inline
-    def setTargetKey(value: String): Self = StObject.set(x, "targetKey", value.asInstanceOf[js.Any])
+    inline def setTargetKey(value: String): Self = StObject.set(x, "targetKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetKeyUndefined: Self = StObject.set(x, "targetKey", js.undefined)
+    inline def setTargetKeyUndefined: Self = StObject.set(x, "targetKey", js.undefined)
     
-    @scala.inline
-    def setTextKey(value: String): Self = StObject.set(x, "textKey", value.asInstanceOf[js.Any])
+    inline def setTextKey(value: String): Self = StObject.set(x, "textKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextKeyUndefined: Self = StObject.set(x, "textKey", js.undefined)
+    inline def setTextKeyUndefined: Self = StObject.set(x, "textKey", js.undefined)
     
-    @scala.inline
-    def setTextXPath(value: String): Self = StObject.set(x, "textXPath", value.asInstanceOf[js.Any])
+    inline def setTextXPath(value: String): Self = StObject.set(x, "textXPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextXPathUndefined: Self = StObject.set(x, "textXPath", js.undefined)
+    inline def setTextXPathUndefined: Self = StObject.set(x, "textXPath", js.undefined)
     
-    @scala.inline
-    def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+    inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
+    inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
     
-    @scala.inline
-    def setValueXPath(value: String): Self = StObject.set(x, "valueXPath", value.asInstanceOf[js.Any])
+    inline def setValueXPath(value: String): Self = StObject.set(x, "valueXPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueXPathUndefined: Self = StObject.set(x, "valueXPath", js.undefined)
+    inline def setValueXPathUndefined: Self = StObject.set(x, "valueXPath", js.undefined)
   }
 }

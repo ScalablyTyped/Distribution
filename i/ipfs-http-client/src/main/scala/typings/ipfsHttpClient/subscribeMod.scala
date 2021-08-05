@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object subscribeMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function3[
+  inline def apply(clientOptions: ClientOptions): js.Function3[
     /* topic */ js.Any, 
     /* handler */ js.Any, 
     /* options */ js.UndefOr[js.Object], 

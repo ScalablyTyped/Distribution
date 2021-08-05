@@ -178,8 +178,7 @@ trait NumberingLevel extends StObject {
 }
 object NumberingLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Adjust: Double,
     BulletChar: String,
     BulletColor: Color,
@@ -212,88 +211,60 @@ object NumberingLevel {
     __obj.asInstanceOf[NumberingLevel]
   }
   
-  @scala.inline
-  implicit class NumberingLevelMutableBuilder[Self <: NumberingLevel] (val x: Self) extends AnyVal {
+  extension [Self <: NumberingLevel](x: Self) {
     
-    @scala.inline
-    def setAdjust(value: Double): Self = StObject.set(x, "Adjust", value.asInstanceOf[js.Any])
+    inline def setAdjust(value: Double): Self = StObject.set(x, "Adjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletChar(value: String): Self = StObject.set(x, "BulletChar", value.asInstanceOf[js.Any])
+    inline def setBulletChar(value: String): Self = StObject.set(x, "BulletChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletColor(value: Color): Self = StObject.set(x, "BulletColor", value.asInstanceOf[js.Any])
+    inline def setBulletColor(value: Color): Self = StObject.set(x, "BulletColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletFont(value: FontDescriptor): Self = StObject.set(x, "BulletFont", value.asInstanceOf[js.Any])
+    inline def setBulletFont(value: FontDescriptor): Self = StObject.set(x, "BulletFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletFontName(value: String): Self = StObject.set(x, "BulletFontName", value.asInstanceOf[js.Any])
+    inline def setBulletFontName(value: String): Self = StObject.set(x, "BulletFontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletId(value: Double): Self = StObject.set(x, "BulletId", value.asInstanceOf[js.Any])
+    inline def setBulletId(value: Double): Self = StObject.set(x, "BulletId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletRelSize(value: Double): Self = StObject.set(x, "BulletRelSize", value.asInstanceOf[js.Any])
+    inline def setBulletRelSize(value: Double): Self = StObject.set(x, "BulletRelSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
+    inline def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLineIndent(value: Double): Self = StObject.set(x, "FirstLineIndent", value.asInstanceOf[js.Any])
+    inline def setFirstLineIndent(value: Double): Self = StObject.set(x, "FirstLineIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLineOffset(value: Double): Self = StObject.set(x, "FirstLineOffset", value.asInstanceOf[js.Any])
+    inline def setFirstLineOffset(value: Double): Self = StObject.set(x, "FirstLineOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicBitmap(value: XBitmap): Self = StObject.set(x, "GraphicBitmap", value.asInstanceOf[js.Any])
+    inline def setGraphicBitmap(value: XBitmap): Self = StObject.set(x, "GraphicBitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicSize(value: Size): Self = StObject.set(x, "GraphicSize", value.asInstanceOf[js.Any])
+    inline def setGraphicSize(value: Size): Self = StObject.set(x, "GraphicSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicURL(value: String): Self = StObject.set(x, "GraphicURL", value.asInstanceOf[js.Any])
+    inline def setGraphicURL(value: String): Self = StObject.set(x, "GraphicURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingStyleName(value: String): Self = StObject.set(x, "HeadingStyleName", value.asInstanceOf[js.Any])
+    inline def setHeadingStyleName(value: String): Self = StObject.set(x, "HeadingStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentAt(value: Double): Self = StObject.set(x, "IndentAt", value.asInstanceOf[js.Any])
+    inline def setIndentAt(value: Double): Self = StObject.set(x, "IndentAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFollowedBy(value: Double): Self = StObject.set(x, "LabelFollowedBy", value.asInstanceOf[js.Any])
+    inline def setLabelFollowedBy(value: Double): Self = StObject.set(x, "LabelFollowedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
+    inline def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListtabStopPosition(value: Double): Self = StObject.set(x, "ListtabStopPosition", value.asInstanceOf[js.Any])
+    inline def setListtabStopPosition(value: Double): Self = StObject.set(x, "ListtabStopPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleName(value: String): Self = StObject.set(x, "ParagraphStyleName", value.asInstanceOf[js.Any])
+    inline def setParagraphStyleName(value: String): Self = StObject.set(x, "ParagraphStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNumbering(value: Double): Self = StObject.set(x, "ParentNumbering", value.asInstanceOf[js.Any])
+    inline def setParentNumbering(value: Double): Self = StObject.set(x, "ParentNumbering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionAndSpaceMode(value: Double): Self = StObject.set(x, "PositionAndSpaceMode", value.asInstanceOf[js.Any])
+    inline def setPositionAndSpaceMode(value: Double): Self = StObject.set(x, "PositionAndSpaceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartWith(value: Double): Self = StObject.set(x, "StartWith", value.asInstanceOf[js.Any])
+    inline def setStartWith(value: Double): Self = StObject.set(x, "StartWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolTextDistance(value: Double): Self = StObject.set(x, "SymbolTextDistance", value.asInstanceOf[js.Any])
+    inline def setSymbolTextDistance(value: Double): Self = StObject.set(x, "SymbolTextDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertOrient(value: Double): Self = StObject.set(x, "VertOrient", value.asInstanceOf[js.Any])
+    inline def setVertOrient(value: Double): Self = StObject.set(x, "VertOrient", value.asInstanceOf[js.Any])
   }
 }

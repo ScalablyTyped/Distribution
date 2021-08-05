@@ -8,21 +8,17 @@ object fnvLiteStrings {
   
   @js.native
   sealed trait base36 extends StObject
-  @scala.inline
-  def base36: base36 = "base36".asInstanceOf[base36]
+  inline def base36: base36 = "base36".asInstanceOf[base36]
   
   @js.native
   sealed trait base64 extends StObject
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait base64Url extends StObject
-  @scala.inline
-  def base64Url: base64Url = "base64Url".asInstanceOf[base64Url]
+  inline def base64Url: base64Url = "base64Url".asInstanceOf[base64Url]
   
   @js.native
   sealed trait hex extends StObject
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
 }

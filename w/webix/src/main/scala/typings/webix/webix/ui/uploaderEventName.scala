@@ -33,75 +33,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uploaderEventName extends StObject
 object uploaderEventName {
   
-  @scala.inline
-  def onAfterFileAdd: typings.webix.webixStrings.onAfterFileAdd = "onAfterFileAdd".asInstanceOf[typings.webix.webixStrings.onAfterFileAdd]
+  inline def onAfterFileAdd: typings.webix.webixStrings.onAfterFileAdd = "onAfterFileAdd".asInstanceOf[typings.webix.webixStrings.onAfterFileAdd]
   
-  @scala.inline
-  def onAfterRender: typings.webix.webixStrings.onAfterRender = "onAfterRender".asInstanceOf[typings.webix.webixStrings.onAfterRender]
+  inline def onAfterRender: typings.webix.webixStrings.onAfterRender = "onAfterRender".asInstanceOf[typings.webix.webixStrings.onAfterRender]
   
-  @scala.inline
-  def onAfterScroll: typings.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typings.webix.webixStrings.onAfterScroll]
+  inline def onAfterScroll: typings.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typings.webix.webixStrings.onAfterScroll]
   
-  @scala.inline
-  def onBeforeFileAdd: typings.webix.webixStrings.onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[typings.webix.webixStrings.onBeforeFileAdd]
+  inline def onBeforeFileAdd: typings.webix.webixStrings.onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[typings.webix.webixStrings.onBeforeFileAdd]
   
-  @scala.inline
-  def onBeforeRender: typings.webix.webixStrings.onBeforeRender = "onBeforeRender".asInstanceOf[typings.webix.webixStrings.onBeforeRender]
+  inline def onBeforeRender: typings.webix.webixStrings.onBeforeRender = "onBeforeRender".asInstanceOf[typings.webix.webixStrings.onBeforeRender]
   
-  @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
+  inline def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   
-  @scala.inline
-  def onBlur: typings.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typings.webix.webixStrings.onBlur]
+  inline def onBlur: typings.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typings.webix.webixStrings.onBlur]
   
-  @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
+  inline def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   
-  @scala.inline
-  def onEnter: typings.webix.webixStrings.onEnter = "onEnter".asInstanceOf[typings.webix.webixStrings.onEnter]
+  inline def onEnter: typings.webix.webixStrings.onEnter = "onEnter".asInstanceOf[typings.webix.webixStrings.onEnter]
   
-  @scala.inline
-  def onFileUpload: typings.webix.webixStrings.onFileUpload = "onFileUpload".asInstanceOf[typings.webix.webixStrings.onFileUpload]
+  inline def onFileUpload: typings.webix.webixStrings.onFileUpload = "onFileUpload".asInstanceOf[typings.webix.webixStrings.onFileUpload]
   
-  @scala.inline
-  def onFileUploadError: typings.webix.webixStrings.onFileUploadError = "onFileUploadError".asInstanceOf[typings.webix.webixStrings.onFileUploadError]
+  inline def onFileUploadError: typings.webix.webixStrings.onFileUploadError = "onFileUploadError".asInstanceOf[typings.webix.webixStrings.onFileUploadError]
   
-  @scala.inline
-  def onFocus: typings.webix.webixStrings.onFocus = "onFocus".asInstanceOf[typings.webix.webixStrings.onFocus]
+  inline def onFocus: typings.webix.webixStrings.onFocus = "onFocus".asInstanceOf[typings.webix.webixStrings.onFocus]
   
-  @scala.inline
-  def onItemClick: typings.webix.webixStrings.onItemClick = "onItemClick".asInstanceOf[typings.webix.webixStrings.onItemClick]
+  inline def onItemClick: typings.webix.webixStrings.onItemClick = "onItemClick".asInstanceOf[typings.webix.webixStrings.onItemClick]
   
-  @scala.inline
-  def onKeyPress: typings.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typings.webix.webixStrings.onKeyPress]
+  inline def onKeyPress: typings.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typings.webix.webixStrings.onKeyPress]
   
-  @scala.inline
-  def onLongTouch: typings.webix.webixStrings.onLongTouch = "onLongTouch".asInstanceOf[typings.webix.webixStrings.onLongTouch]
+  inline def onLongTouch: typings.webix.webixStrings.onLongTouch = "onLongTouch".asInstanceOf[typings.webix.webixStrings.onLongTouch]
   
-  @scala.inline
-  def onSwipeX: typings.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typings.webix.webixStrings.onSwipeX]
+  inline def onSwipeX: typings.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typings.webix.webixStrings.onSwipeX]
   
-  @scala.inline
-  def onSwipeY: typings.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typings.webix.webixStrings.onSwipeY]
+  inline def onSwipeY: typings.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typings.webix.webixStrings.onSwipeY]
   
-  @scala.inline
-  def onTimedKeyPress: typings.webix.webixStrings.onTimedKeyPress = "onTimedKeyPress".asInstanceOf[typings.webix.webixStrings.onTimedKeyPress]
+  inline def onTimedKeyPress: typings.webix.webixStrings.onTimedKeyPress = "onTimedKeyPress".asInstanceOf[typings.webix.webixStrings.onTimedKeyPress]
   
-  @scala.inline
-  def onTouchEnd: typings.webix.webixStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typings.webix.webixStrings.onTouchEnd]
+  inline def onTouchEnd: typings.webix.webixStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typings.webix.webixStrings.onTouchEnd]
   
-  @scala.inline
-  def onTouchMove: typings.webix.webixStrings.onTouchMove = "onTouchMove".asInstanceOf[typings.webix.webixStrings.onTouchMove]
+  inline def onTouchMove: typings.webix.webixStrings.onTouchMove = "onTouchMove".asInstanceOf[typings.webix.webixStrings.onTouchMove]
   
-  @scala.inline
-  def onTouchStart: typings.webix.webixStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.webix.webixStrings.onTouchStart]
+  inline def onTouchStart: typings.webix.webixStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.webix.webixStrings.onTouchStart]
   
-  @scala.inline
-  def onUploadComplete: typings.webix.webixStrings.onUploadComplete = "onUploadComplete".asInstanceOf[typings.webix.webixStrings.onUploadComplete]
+  inline def onUploadComplete: typings.webix.webixStrings.onUploadComplete = "onUploadComplete".asInstanceOf[typings.webix.webixStrings.onUploadComplete]
   
-  @scala.inline
-  def onViewResize: typings.webix.webixStrings.onViewResize = "onViewResize".asInstanceOf[typings.webix.webixStrings.onViewResize]
+  inline def onViewResize: typings.webix.webixStrings.onViewResize = "onViewResize".asInstanceOf[typings.webix.webixStrings.onViewResize]
   
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
+  inline def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }

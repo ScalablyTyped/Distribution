@@ -32,29 +32,22 @@ object gapi {
       }
       object ListLocationsResponse {
         
-        @scala.inline
-        def apply(): ListLocationsResponse = {
+        inline def apply(): ListLocationsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListLocationsResponse]
         }
         
-        @scala.inline
-        implicit class ListLocationsResponseMutableBuilder[Self <: ListLocationsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListLocationsResponse](x: Self) {
           
-          @scala.inline
-          def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+          inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+          inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
           
-          @scala.inline
-          def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+          inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -68,29 +61,22 @@ object gapi {
       }
       object ListOperationsResponse {
         
-        @scala.inline
-        def apply(): ListOperationsResponse = {
+        inline def apply(): ListOperationsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListOperationsResponse]
         }
         
-        @scala.inline
-        implicit class ListOperationsResponseMutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListOperationsResponse](x: Self) {
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
           
-          @scala.inline
-          def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+          inline def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+          inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
           
-          @scala.inline
-          def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+          inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
         }
       }
       
@@ -107,38 +93,28 @@ object gapi {
       }
       object ListWorkflowsResponse {
         
-        @scala.inline
-        def apply(): ListWorkflowsResponse = {
+        inline def apply(): ListWorkflowsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListWorkflowsResponse]
         }
         
-        @scala.inline
-        implicit class ListWorkflowsResponseMutableBuilder[Self <: ListWorkflowsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListWorkflowsResponse](x: Self) {
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
           
-          @scala.inline
-          def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
+          inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
+          inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
           
-          @scala.inline
-          def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+          inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
           
-          @scala.inline
-          def setWorkflows(value: js.Array[Workflow]): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
+          inline def setWorkflows(value: js.Array[Workflow]): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWorkflowsUndefined: Self = StObject.set(x, "workflows", js.undefined)
+          inline def setWorkflowsUndefined: Self = StObject.set(x, "workflows", js.undefined)
           
-          @scala.inline
-          def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "workflows", js.Array(value :_*))
+          inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "workflows", js.Array(value :_*))
         }
       }
       
@@ -169,52 +145,40 @@ object gapi {
       }
       object Location {
         
-        @scala.inline
-        def apply(): Location = {
+        inline def apply(): Location = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Location]
         }
         
-        @scala.inline
-        implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+        extension [Self <: Location](x: Self) {
           
-          @scala.inline
-          def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+          inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+          inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
           
-          @scala.inline
-          def setLabels(
+          inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
             */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+          inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          @scala.inline
-          def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+          inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+          inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
           
-          @scala.inline
-          def setMetadata(
+          inline def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+          inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         }
       }
       
@@ -271,52 +235,40 @@ object gapi {
       }
       object Operation {
         
-        @scala.inline
-        def apply(): Operation = {
+        inline def apply(): Operation = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Operation]
         }
         
-        @scala.inline
-        implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+        extension [Self <: Operation](x: Self) {
           
-          @scala.inline
-          def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+          inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+          inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
           
-          @scala.inline
-          def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+          inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+          inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
           
-          @scala.inline
-          def setMetadata(
+          inline def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+          inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setResponse(
+          inline def setResponse(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+          inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
         }
       }
       
@@ -339,44 +291,32 @@ object gapi {
       }
       object OperationMetadata {
         
-        @scala.inline
-        def apply(): OperationMetadata = {
+        inline def apply(): OperationMetadata = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[OperationMetadata]
         }
         
-        @scala.inline
-        implicit class OperationMetadataMutableBuilder[Self <: OperationMetadata] (val x: Self) extends AnyVal {
+        extension [Self <: OperationMetadata](x: Self) {
           
-          @scala.inline
-          def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+          inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+          inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
           
-          @scala.inline
-          def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+          inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+          inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
           
-          @scala.inline
-          def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+          inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+          inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
           
-          @scala.inline
-          def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+          inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+          inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
           
-          @scala.inline
-          def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+          inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+          inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
         }
       }
       
@@ -410,17 +350,14 @@ object gapi {
       }
       object ProjectsResource {
         
-        @scala.inline
-        def apply(locations: LocationsResource): ProjectsResource = {
+        inline def apply(locations: LocationsResource): ProjectsResource = {
           val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        @scala.inline
-        implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+        extension [Self <: ProjectsResource](x: Self) {
           
-          @scala.inline
-          def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+          inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
         }
       }
       
@@ -446,23 +383,18 @@ object gapi {
       }
       object Status {
         
-        @scala.inline
-        def apply(): Status = {
+        inline def apply(): Status = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Status]
         }
         
-        @scala.inline
-        implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+        extension [Self <: Status](x: Self) {
           
-          @scala.inline
-          def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+          inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+          inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
           
-          @scala.inline
-          def setDetails(
+          inline def setDetails(
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
@@ -470,21 +402,17 @@ object gapi {
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+          inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
           
-          @scala.inline
-          def setDetailsVarargs(
+          inline def setDetailsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[js.Any])*
           ): Self = StObject.set(x, "details", js.Array(value :_*))
           
-          @scala.inline
-          def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+          inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         }
       }
       
@@ -537,78 +465,56 @@ object gapi {
       }
       object Workflow {
         
-        @scala.inline
-        def apply(): Workflow = {
+        inline def apply(): Workflow = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Workflow]
         }
         
-        @scala.inline
-        implicit class WorkflowMutableBuilder[Self <: Workflow] (val x: Self) extends AnyVal {
+        extension [Self <: Workflow](x: Self) {
           
-          @scala.inline
-          def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+          inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+          inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setLabels(
+          inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
             */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+          inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setRevisionCreateTime(value: String): Self = StObject.set(x, "revisionCreateTime", value.asInstanceOf[js.Any])
+          inline def setRevisionCreateTime(value: String): Self = StObject.set(x, "revisionCreateTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRevisionCreateTimeUndefined: Self = StObject.set(x, "revisionCreateTime", js.undefined)
+          inline def setRevisionCreateTimeUndefined: Self = StObject.set(x, "revisionCreateTime", js.undefined)
           
-          @scala.inline
-          def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+          inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+          inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
           
-          @scala.inline
-          def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+          inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+          inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
           
-          @scala.inline
-          def setSourceContents(value: String): Self = StObject.set(x, "sourceContents", value.asInstanceOf[js.Any])
+          inline def setSourceContents(value: String): Self = StObject.set(x, "sourceContents", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSourceContentsUndefined: Self = StObject.set(x, "sourceContents", js.undefined)
+          inline def setSourceContentsUndefined: Self = StObject.set(x, "sourceContents", js.undefined)
           
-          @scala.inline
-          def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+          inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+          inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
           
-          @scala.inline
-          def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+          inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+          inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
         }
       }
       

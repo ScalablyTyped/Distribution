@@ -29,25 +29,19 @@ trait UpdateBrokerStorageRequest extends StObject {
 }
 object UpdateBrokerStorageRequest {
   
-  @scala.inline
-  def apply(ClusterArn: string, CurrentVersion: string, TargetBrokerEBSVolumeInfo: listOfBrokerEBSVolumeInfo): UpdateBrokerStorageRequest = {
+  inline def apply(ClusterArn: string, CurrentVersion: string, TargetBrokerEBSVolumeInfo: listOfBrokerEBSVolumeInfo): UpdateBrokerStorageRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any], TargetBrokerEBSVolumeInfo = TargetBrokerEBSVolumeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBrokerStorageRequest]
   }
   
-  @scala.inline
-  implicit class UpdateBrokerStorageRequestMutableBuilder[Self <: UpdateBrokerStorageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBrokerStorageRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
+    inline def setTargetBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", js.Array(value :_*))
+    inline def setTargetBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", js.Array(value :_*))
   }
 }

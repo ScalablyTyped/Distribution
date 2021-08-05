@@ -14,10 +14,8 @@ object mod {
     * Create a new strong error middleware funciton using the given options.
     * @param options
     */
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("strong-error-handler", JSImport.Namespace)
   @js.native
@@ -62,47 +60,34 @@ object mod {
     }
     object options {
       
-      @scala.inline
-      def apply(): options = {
+      inline def apply(): options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[options]
       }
       
-      @scala.inline
-      implicit class optionsMutableBuilder[Self <: options] (val x: Self) extends AnyVal {
+      extension [Self <: options](x: Self) {
         
-        @scala.inline
-        def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+        inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+        inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
         
-        @scala.inline
-        def setDefaultType(value: String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
+        inline def setDefaultType(value: String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
+        inline def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
         
-        @scala.inline
-        def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+        inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+        inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
         
-        @scala.inline
-        def setNegotiateContentType(value: Boolean): Self = StObject.set(x, "negotiateContentType", value.asInstanceOf[js.Any])
+        inline def setNegotiateContentType(value: Boolean): Self = StObject.set(x, "negotiateContentType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNegotiateContentTypeUndefined: Self = StObject.set(x, "negotiateContentType", js.undefined)
+        inline def setNegotiateContentTypeUndefined: Self = StObject.set(x, "negotiateContentType", js.undefined)
         
-        @scala.inline
-        def setSafeFields(value: js.Array[String]): Self = StObject.set(x, "safeFields", value.asInstanceOf[js.Any])
+        inline def setSafeFields(value: js.Array[String]): Self = StObject.set(x, "safeFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSafeFieldsUndefined: Self = StObject.set(x, "safeFields", js.undefined)
+        inline def setSafeFieldsUndefined: Self = StObject.set(x, "safeFields", js.undefined)
         
-        @scala.inline
-        def setSafeFieldsVarargs(value: String*): Self = StObject.set(x, "safeFields", js.Array(value :_*))
+        inline def setSafeFieldsVarargs(value: String*): Self = StObject.set(x, "safeFields", js.Array(value :_*))
       }
     }
   }

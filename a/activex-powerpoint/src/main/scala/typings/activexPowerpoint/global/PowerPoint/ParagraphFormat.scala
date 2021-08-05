@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ParagraphFormat")
 @js.native
-class ParagraphFormat protected ()
+/* private */ class ParagraphFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ParagraphFormat {
   
@@ -44,7 +44,7 @@ class ParagraphFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ParagraphFormat_typekey")
   var PowerPointDotParagraphFormat_typekey: typings.activexPowerpoint.PowerPoint.ParagraphFormat = js.native
   

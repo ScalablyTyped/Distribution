@@ -16,25 +16,19 @@ trait Max extends StObject {
 }
 object Max {
   
-  @scala.inline
-  def apply(len: String, max: String, min: String, range: String): Max = {
+  inline def apply(len: String, max: String, min: String, range: String): Max = {
     val __obj = js.Dynamic.literal(len = len.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Max]
   }
   
-  @scala.inline
-  implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+  extension [Self <: Max](x: Self) {
     
-    @scala.inline
-    def setLen(value: String): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
+    inline def setLen(value: String): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

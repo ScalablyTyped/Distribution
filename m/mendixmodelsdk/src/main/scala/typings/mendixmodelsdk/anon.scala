@@ -63,8 +63,7 @@ object anon {
   }
   object AppType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disk: Double,
       endpoint: String,
       environmentId: String,
@@ -80,74 +79,51 @@ object anon {
       __obj.asInstanceOf[AppType]
     }
     
-    @scala.inline
-    implicit class AppTypeMutableBuilder[Self <: AppType] (val x: Self) extends AnyVal {
+    extension [Self <: AppType](x: Self) {
       
-      @scala.inline
-      def setAppType(value: Licensed | Unlicensed | Sandbox): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
+      inline def setAppType(value: Licensed | Unlicensed | Sandbox): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppTypeUndefined: Self = StObject.set(x, "appType", js.undefined)
+      inline def setAppTypeUndefined: Self = StObject.set(x, "appType", js.undefined)
       
-      @scala.inline
-      def setBuildErrors(value: js.Array[IBuildError]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
+      inline def setBuildErrors(value: js.Array[IBuildError]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildErrorsUndefined: Self = StObject.set(x, "buildErrors", js.undefined)
+      inline def setBuildErrorsUndefined: Self = StObject.set(x, "buildErrors", js.undefined)
       
-      @scala.inline
-      def setBuildErrorsVarargs(value: IBuildError*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
+      inline def setBuildErrorsVarargs(value: IBuildError*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setBuildstatus(value: String): Self = StObject.set(x, "buildstatus", value.asInstanceOf[js.Any])
+      inline def setBuildstatus(value: String): Self = StObject.set(x, "buildstatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildstatusNull: Self = StObject.set(x, "buildstatus", null)
+      inline def setBuildstatusNull: Self = StObject.set(x, "buildstatus", null)
       
-      @scala.inline
-      def setConsistencyErrors(value: js.Array[IProblem]): Self = StObject.set(x, "consistencyErrors", value.asInstanceOf[js.Any])
+      inline def setConsistencyErrors(value: js.Array[IProblem]): Self = StObject.set(x, "consistencyErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsistencyErrorsUndefined: Self = StObject.set(x, "consistencyErrors", js.undefined)
+      inline def setConsistencyErrorsUndefined: Self = StObject.set(x, "consistencyErrors", js.undefined)
       
-      @scala.inline
-      def setConsistencyErrorsVarargs(value: IProblem*): Self = StObject.set(x, "consistencyErrors", js.Array(value :_*))
+      inline def setConsistencyErrorsVarargs(value: IProblem*): Self = StObject.set(x, "consistencyErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setDisk(value: Double): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
+      inline def setDisk(value: Double): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+      inline def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: SuccessAppState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: SuccessAppState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: success_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: success_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,33 +141,25 @@ object anon {
   }
   object Cause {
     
-    @scala.inline
-    def apply(state: CannotFixAppState): Cause = {
+    inline def apply(state: CannotFixAppState): Cause = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fail")
       __obj.asInstanceOf[Cause]
     }
     
-    @scala.inline
-    implicit class CauseMutableBuilder[Self <: Cause] (val x: Self) extends AnyVal {
+    extension [Self <: Cause](x: Self) {
       
-      @scala.inline
-      def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setState(value: CannotFixAppState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: CannotFixAppState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: fail): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fail): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,20 +171,16 @@ object anon {
   }
   object Copy {
     
-    @scala.inline
-    def apply(copy: Element[IAbstractModel], idMap: IMap[Structure[IAbstractModel, IContainer | Null]]): Copy = {
+    inline def apply(copy: Element[IAbstractModel], idMap: IMap[Structure[IAbstractModel, IContainer | Null]]): Copy = {
       val __obj = js.Dynamic.literal(copy = copy.asInstanceOf[js.Any], idMap = idMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[Copy]
     }
     
-    @scala.inline
-    implicit class CopyMutableBuilder[Self <: Copy] (val x: Self) extends AnyVal {
+    extension [Self <: Copy](x: Self) {
       
-      @scala.inline
-      def setCopy(value: Element[IAbstractModel]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Element[IAbstractModel]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdMap(value: IMap[Structure[IAbstractModel, IContainer | Null]]): Self = StObject.set(x, "idMap", value.asInstanceOf[js.Any])
+      inline def setIdMap(value: IMap[Structure[IAbstractModel, IContainer | Null]]): Self = StObject.set(x, "idMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,29 +196,22 @@ object anon {
   }
   object EventId {
     
-    @scala.inline
-    def apply(eventId: Double, message: String, problems: js.Array[js.Any], status: BuildResultStatus): EventId = {
+    inline def apply(eventId: Double, message: String, problems: js.Array[js.Any], status: BuildResultStatus): EventId = {
       val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], problems = problems.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventId]
     }
     
-    @scala.inline
-    implicit class EventIdMutableBuilder[Self <: EventId] (val x: Self) extends AnyVal {
+    extension [Self <: EventId](x: Self) {
       
-      @scala.inline
-      def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+      inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProblems(value: js.Array[js.Any]): Self = StObject.set(x, "problems", value.asInstanceOf[js.Any])
+      inline def setProblems(value: js.Array[js.Any]): Self = StObject.set(x, "problems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProblemsVarargs(value: js.Any*): Self = StObject.set(x, "problems", js.Array(value :_*))
+      inline def setProblemsVarargs(value: js.Any*): Self = StObject.set(x, "problems", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: BuildResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: BuildResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,17 +238,14 @@ object anon {
   }
   object ToRawChangeValue {
     
-    @scala.inline
-    def apply[P](toRawChangeValue: P => js.Any): ToRawChangeValue[P] = {
+    inline def apply[P](toRawChangeValue: P => js.Any): ToRawChangeValue[P] = {
       val __obj = js.Dynamic.literal(toRawChangeValue = js.Any.fromFunction1(toRawChangeValue))
       __obj.asInstanceOf[ToRawChangeValue[P]]
     }
     
-    @scala.inline
-    implicit class ToRawChangeValueMutableBuilder[Self <: ToRawChangeValue[?], P] (val x: Self & ToRawChangeValue[P]) extends AnyVal {
+    extension [Self <: ToRawChangeValue[?], P](x: Self & ToRawChangeValue[P]) {
       
-      @scala.inline
-      def setToRawChangeValue(value: P => js.Any): Self = StObject.set(x, "toRawChangeValue", js.Any.fromFunction1(value))
+      inline def setToRawChangeValue(value: P => js.Any): Self = StObject.set(x, "toRawChangeValue", js.Any.fromFunction1(value))
     }
   }
 }

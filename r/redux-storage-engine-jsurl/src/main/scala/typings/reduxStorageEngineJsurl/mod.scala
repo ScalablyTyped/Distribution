@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): StorageEngine = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StorageEngine]
+  inline def apply(): StorageEngine = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StorageEngine]
   
   @JSImport("redux-storage-engine-jsurl", JSImport.Namespace)
   @js.native

@@ -11,23 +11,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAllCountries(): StringDictionary[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCountries")().asInstanceOf[StringDictionary[Country]]
+  inline def getAllCountries(): StringDictionary[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCountries")().asInstanceOf[StringDictionary[Country]]
   
-  @scala.inline
-  def getAllTimezones(): StringDictionary[Timezone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllTimezones")().asInstanceOf[StringDictionary[Timezone]]
+  inline def getAllTimezones(): StringDictionary[Timezone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllTimezones")().asInstanceOf[StringDictionary[Timezone]]
   
-  @scala.inline
-  def getCountry(id: String): Country | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountry")(id.asInstanceOf[js.Any]).asInstanceOf[Country | Null]
+  inline def getCountry(id: String): Country | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountry")(id.asInstanceOf[js.Any]).asInstanceOf[Country | Null]
   
-  @scala.inline
-  def getCountryForTimezone(name: String): Country | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountryForTimezone")(name.asInstanceOf[js.Any]).asInstanceOf[Country | Null]
+  inline def getCountryForTimezone(name: String): Country | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountryForTimezone")(name.asInstanceOf[js.Any]).asInstanceOf[Country | Null]
   
-  @scala.inline
-  def getTimezone(name: String): Timezone | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezone")(name.asInstanceOf[js.Any]).asInstanceOf[Timezone | Null]
+  inline def getTimezone(name: String): Timezone | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezone")(name.asInstanceOf[js.Any]).asInstanceOf[Timezone | Null]
   
-  @scala.inline
-  def getTimezonesForCountry(id: String): js.Array[Timezone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezonesForCountry")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Timezone]]
+  inline def getTimezonesForCountry(id: String): js.Array[Timezone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezonesForCountry")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Timezone]]
   
   trait Country extends StObject {
     
@@ -39,26 +33,20 @@ object mod {
   }
   object Country {
     
-    @scala.inline
-    def apply(id: String, name: String, timezones: js.Array[String]): Country = {
+    inline def apply(id: String, name: String, timezones: js.Array[String]): Country = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timezones = timezones.asInstanceOf[js.Any])
       __obj.asInstanceOf[Country]
     }
     
-    @scala.inline
-    implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+    extension [Self <: Country](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezones(value: js.Array[String]): Self = StObject.set(x, "timezones", value.asInstanceOf[js.Any])
+      inline def setTimezones(value: js.Array[String]): Self = StObject.set(x, "timezones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezonesVarargs(value: String*): Self = StObject.set(x, "timezones", js.Array(value :_*))
+      inline def setTimezonesVarargs(value: String*): Self = StObject.set(x, "timezones", js.Array(value :_*))
     }
   }
   
@@ -80,41 +68,30 @@ object mod {
   }
   object Timezone {
     
-    @scala.inline
-    def apply(dstOffset: Double, dstOffsetStr: String, name: String, utcOffset: Double, utcOffsetStr: String): Timezone = {
+    inline def apply(dstOffset: Double, dstOffsetStr: String, name: String, utcOffset: Double, utcOffsetStr: String): Timezone = {
       val __obj = js.Dynamic.literal(dstOffset = dstOffset.asInstanceOf[js.Any], dstOffsetStr = dstOffsetStr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], utcOffset = utcOffset.asInstanceOf[js.Any], utcOffsetStr = utcOffsetStr.asInstanceOf[js.Any], aliasOf = null, country = null)
       __obj.asInstanceOf[Timezone]
     }
     
-    @scala.inline
-    implicit class TimezoneMutableBuilder[Self <: Timezone] (val x: Self) extends AnyVal {
+    extension [Self <: Timezone](x: Self) {
       
-      @scala.inline
-      def setAliasOf(value: String): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
+      inline def setAliasOf(value: String): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasOfNull: Self = StObject.set(x, "aliasOf", null)
+      inline def setAliasOfNull: Self = StObject.set(x, "aliasOf", null)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryNull: Self = StObject.set(x, "country", null)
+      inline def setCountryNull: Self = StObject.set(x, "country", null)
       
-      @scala.inline
-      def setDstOffset(value: Double): Self = StObject.set(x, "dstOffset", value.asInstanceOf[js.Any])
+      inline def setDstOffset(value: Double): Self = StObject.set(x, "dstOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDstOffsetStr(value: String): Self = StObject.set(x, "dstOffsetStr", value.asInstanceOf[js.Any])
+      inline def setDstOffsetStr(value: String): Self = StObject.set(x, "dstOffsetStr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
+      inline def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcOffsetStr(value: String): Self = StObject.set(x, "utcOffsetStr", value.asInstanceOf[js.Any])
+      inline def setUtcOffsetStr(value: String): Self = StObject.set(x, "utcOffsetStr", value.asInstanceOf[js.Any])
     }
   }
 }

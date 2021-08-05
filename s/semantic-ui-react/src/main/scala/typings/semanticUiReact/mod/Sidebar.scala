@@ -19,6 +19,5 @@ class Sidebar protected ()
 }
 object Sidebar {
   
-  @scala.inline
-  def apply: SidebarComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Sidebar").asInstanceOf[SidebarComponent]
+  inline def apply: SidebarComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Sidebar").asInstanceOf[SidebarComponent]
 }

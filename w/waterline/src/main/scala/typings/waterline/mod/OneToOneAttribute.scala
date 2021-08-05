@@ -13,16 +13,13 @@ trait OneToOneAttribute
 }
 object OneToOneAttribute {
   
-  @scala.inline
-  def apply(model: String): OneToOneAttribute = {
+  inline def apply(model: String): OneToOneAttribute = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[OneToOneAttribute]
   }
   
-  @scala.inline
-  implicit class OneToOneAttributeMutableBuilder[Self <: OneToOneAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: OneToOneAttribute](x: Self) {
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

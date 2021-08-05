@@ -21,8 +21,7 @@ trait ISpeechRecognitionConstraint extends StObject {
 }
 object ISpeechRecognitionConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isEnabled: Boolean,
     probability: SpeechRecognitionConstraintProbability,
     tag: String,
@@ -33,19 +32,14 @@ object ISpeechRecognitionConstraint {
     __obj.asInstanceOf[ISpeechRecognitionConstraint]
   }
   
-  @scala.inline
-  implicit class ISpeechRecognitionConstraintMutableBuilder[Self <: ISpeechRecognitionConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: ISpeechRecognitionConstraint](x: Self) {
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    inline def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

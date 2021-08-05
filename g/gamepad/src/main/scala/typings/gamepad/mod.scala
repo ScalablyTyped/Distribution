@@ -33,8 +33,7 @@ object mod extends Shortcut {
   }
   object GamepadInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axisStates: js.Array[Double],
       buttonStates: js.Array[Boolean],
       description: String,
@@ -46,32 +45,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GamepadInstance]
     }
     
-    @scala.inline
-    implicit class GamepadInstanceMutableBuilder[Self <: GamepadInstance] (val x: Self) extends AnyVal {
+    extension [Self <: GamepadInstance](x: Self) {
       
-      @scala.inline
-      def setAxisStates(value: js.Array[Double]): Self = StObject.set(x, "axisStates", value.asInstanceOf[js.Any])
+      inline def setAxisStates(value: js.Array[Double]): Self = StObject.set(x, "axisStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisStatesVarargs(value: Double*): Self = StObject.set(x, "axisStates", js.Array(value :_*))
+      inline def setAxisStatesVarargs(value: Double*): Self = StObject.set(x, "axisStates", js.Array(value :_*))
       
-      @scala.inline
-      def setButtonStates(value: js.Array[Boolean]): Self = StObject.set(x, "buttonStates", value.asInstanceOf[js.Any])
+      inline def setButtonStates(value: js.Array[Boolean]): Self = StObject.set(x, "buttonStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonStatesVarargs(value: Boolean*): Self = StObject.set(x, "buttonStates", js.Array(value :_*))
+      inline def setButtonStatesVarargs(value: Boolean*): Self = StObject.set(x, "buttonStates", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceID(value: Double): Self = StObject.set(x, "deviceID", value.asInstanceOf[js.Any])
+      inline def setDeviceID(value: Double): Self = StObject.set(x, "deviceID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductID(value: Double): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
+      inline def setProductID(value: Double): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorID(value: Double): Self = StObject.set(x, "vendorID", value.asInstanceOf[js.Any])
+      inline def setVendorID(value: Double): Self = StObject.set(x, "vendorID", value.asInstanceOf[js.Any])
     }
   }
   

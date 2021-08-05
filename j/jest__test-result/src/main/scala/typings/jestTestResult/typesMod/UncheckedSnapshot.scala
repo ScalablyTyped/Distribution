@@ -12,22 +12,17 @@ trait UncheckedSnapshot extends StObject {
 }
 object UncheckedSnapshot {
   
-  @scala.inline
-  def apply(filePath: String, keys: js.Array[String]): UncheckedSnapshot = {
+  inline def apply(filePath: String, keys: js.Array[String]): UncheckedSnapshot = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncheckedSnapshot]
   }
   
-  @scala.inline
-  implicit class UncheckedSnapshotMutableBuilder[Self <: UncheckedSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: UncheckedSnapshot](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

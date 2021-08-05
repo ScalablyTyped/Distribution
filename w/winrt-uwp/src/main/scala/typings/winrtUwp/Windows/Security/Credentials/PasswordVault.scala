@@ -50,8 +50,7 @@ trait PasswordVault extends StObject {
 }
 object PasswordVault {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: PasswordCredential => Unit,
     findAllByResource: String => IVectorView[PasswordCredential],
     findAllByUserName: String => IVectorView[PasswordCredential],
@@ -63,25 +62,18 @@ object PasswordVault {
     __obj.asInstanceOf[PasswordVault]
   }
   
-  @scala.inline
-  implicit class PasswordVaultMutableBuilder[Self <: PasswordVault] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordVault](x: Self) {
     
-    @scala.inline
-    def setAdd(value: PasswordCredential => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: PasswordCredential => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindAllByResource(value: String => IVectorView[PasswordCredential]): Self = StObject.set(x, "findAllByResource", js.Any.fromFunction1(value))
+    inline def setFindAllByResource(value: String => IVectorView[PasswordCredential]): Self = StObject.set(x, "findAllByResource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindAllByUserName(value: String => IVectorView[PasswordCredential]): Self = StObject.set(x, "findAllByUserName", js.Any.fromFunction1(value))
+    inline def setFindAllByUserName(value: String => IVectorView[PasswordCredential]): Self = StObject.set(x, "findAllByUserName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: PasswordCredential => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: PasswordCredential => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRetrieve(value: (String, String) => PasswordCredential): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
+    inline def setRetrieve(value: (String, String) => PasswordCredential): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRetrieveAll(value: () => IVectorView[PasswordCredential]): Self = StObject.set(x, "retrieveAll", js.Any.fromFunction0(value))
+    inline def setRetrieveAll(value: () => IVectorView[PasswordCredential]): Self = StObject.set(x, "retrieveAll", js.Any.fromFunction0(value))
   }
 }

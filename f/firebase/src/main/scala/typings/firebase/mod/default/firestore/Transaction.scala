@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.Transaction")
 @js.native
-class Transaction protected () extends StObject {
+/* private */ class Transaction () extends StObject {
   
   /**
     * Deletes the document referred to by the provided `DocumentReference`.

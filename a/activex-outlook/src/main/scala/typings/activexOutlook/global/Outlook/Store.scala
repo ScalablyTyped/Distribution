@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Store")
 @js.native
-class Store protected ()
+/* private */ class Store ()
   extends StObject
      with typings.activexOutlook.Outlook.Store {
   
@@ -65,7 +65,7 @@ class Store protected ()
   /* CompleteClass */
   override val MAPIOBJECT: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Store_typekey")
   var OutlookDotStore_typekey: typings.activexOutlook.Outlook.Store = js.native
   

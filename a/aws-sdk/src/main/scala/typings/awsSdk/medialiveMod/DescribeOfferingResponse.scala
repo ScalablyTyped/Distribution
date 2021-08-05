@@ -63,79 +63,55 @@ trait DescribeOfferingResponse extends StObject {
 }
 object DescribeOfferingResponse {
   
-  @scala.inline
-  def apply(): DescribeOfferingResponse = {
+  inline def apply(): DescribeOfferingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOfferingResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOfferingResponseMutableBuilder[Self <: DescribeOfferingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOfferingResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: string): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: string): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setDuration(value: integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setDurationUnits(value: OfferingDurationUnits): Self = StObject.set(x, "DurationUnits", value.asInstanceOf[js.Any])
+    inline def setDurationUnits(value: OfferingDurationUnits): Self = StObject.set(x, "DurationUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUnitsUndefined: Self = StObject.set(x, "DurationUnits", js.undefined)
+    inline def setDurationUnitsUndefined: Self = StObject.set(x, "DurationUnits", js.undefined)
     
-    @scala.inline
-    def setFixedPrice(value: double): Self = StObject.set(x, "FixedPrice", value.asInstanceOf[js.Any])
+    inline def setFixedPrice(value: double): Self = StObject.set(x, "FixedPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedPriceUndefined: Self = StObject.set(x, "FixedPrice", js.undefined)
+    inline def setFixedPriceUndefined: Self = StObject.set(x, "FixedPrice", js.undefined)
     
-    @scala.inline
-    def setOfferingDescription(value: string): Self = StObject.set(x, "OfferingDescription", value.asInstanceOf[js.Any])
+    inline def setOfferingDescription(value: string): Self = StObject.set(x, "OfferingDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingDescriptionUndefined: Self = StObject.set(x, "OfferingDescription", js.undefined)
+    inline def setOfferingDescriptionUndefined: Self = StObject.set(x, "OfferingDescription", js.undefined)
     
-    @scala.inline
-    def setOfferingId(value: string): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: string): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
+    inline def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
     
-    @scala.inline
-    def setOfferingType(value: OfferingType): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
+    inline def setOfferingType(value: OfferingType): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
+    inline def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
     
-    @scala.inline
-    def setRegion(value: string): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: string): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setResourceSpecification(value: ReservationResourceSpecification): Self = StObject.set(x, "ResourceSpecification", value.asInstanceOf[js.Any])
+    inline def setResourceSpecification(value: ReservationResourceSpecification): Self = StObject.set(x, "ResourceSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceSpecificationUndefined: Self = StObject.set(x, "ResourceSpecification", js.undefined)
+    inline def setResourceSpecificationUndefined: Self = StObject.set(x, "ResourceSpecification", js.undefined)
     
-    @scala.inline
-    def setUsagePrice(value: double): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
+    inline def setUsagePrice(value: double): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePriceUndefined: Self = StObject.set(x, "UsagePrice", js.undefined)
+    inline def setUsagePriceUndefined: Self = StObject.set(x, "UsagePrice", js.undefined)
   }
 }

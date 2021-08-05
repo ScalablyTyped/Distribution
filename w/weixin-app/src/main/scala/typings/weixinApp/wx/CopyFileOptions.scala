@@ -15,19 +15,15 @@ trait CopyFileOptions
 }
 object CopyFileOptions {
   
-  @scala.inline
-  def apply(destPath: String, srcPath: String): CopyFileOptions = {
+  inline def apply(destPath: String, srcPath: String): CopyFileOptions = {
     val __obj = js.Dynamic.literal(destPath = destPath.asInstanceOf[js.Any], srcPath = srcPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyFileOptions]
   }
   
-  @scala.inline
-  implicit class CopyFileOptionsMutableBuilder[Self <: CopyFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CopyFileOptions](x: Self) {
     
-    @scala.inline
-    def setDestPath(value: String): Self = StObject.set(x, "destPath", value.asInstanceOf[js.Any])
+    inline def setDestPath(value: String): Self = StObject.set(x, "destPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcPath(value: String): Self = StObject.set(x, "srcPath", value.asInstanceOf[js.Any])
+    inline def setSrcPath(value: String): Self = StObject.set(x, "srcPath", value.asInstanceOf[js.Any])
   }
 }

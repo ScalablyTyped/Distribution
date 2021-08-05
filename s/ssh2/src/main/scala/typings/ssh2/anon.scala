@@ -16,23 +16,18 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: String, family: String, port: Double): Address = {
+    inline def apply(address: String, family: String, port: Double): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,17 +37,14 @@ object anon {
   }
   object Fd {
     
-    @scala.inline
-    def apply(fd: Double): Fd = {
+    inline def apply(fd: Double): Fd = {
       val __obj = js.Dynamic.literal(fd = fd.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fd]
     }
     
-    @scala.inline
-    implicit class FdMutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
+    extension [Self <: Fd](x: Self) {
       
-      @scala.inline
-      def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+      inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     }
   }
 }

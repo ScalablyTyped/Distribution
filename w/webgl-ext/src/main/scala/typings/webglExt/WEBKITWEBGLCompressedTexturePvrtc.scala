@@ -16,8 +16,7 @@ trait WEBKITWEBGLCompressedTexturePvrtc extends StObject {
 }
 object WEBKITWEBGLCompressedTexturePvrtc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     COMPRESSED_RGBA_PVRTC_2BPPV1_IMG: Double,
     COMPRESSED_RGBA_PVRTC_4BPPV1_IMG: Double,
     COMPRESSED_RGB_PVRTC_2BPPV1_IMG: Double,
@@ -27,19 +26,14 @@ object WEBKITWEBGLCompressedTexturePvrtc {
     __obj.asInstanceOf[WEBKITWEBGLCompressedTexturePvrtc]
   }
   
-  @scala.inline
-  implicit class WEBKITWEBGLCompressedTexturePvrtcMutableBuilder[Self <: WEBKITWEBGLCompressedTexturePvrtc] (val x: Self) extends AnyVal {
+  extension [Self <: WEBKITWEBGLCompressedTexturePvrtc](x: Self) {
     
-    @scala.inline
-    def setCOMPRESSED_RGBA_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_RGBA_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_RGBA_PVRTC_4BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_RGBA_PVRTC_4BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_RGB_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_RGB_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_RGB_PVRTC_4BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_RGB_PVRTC_4BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
   }
 }

@@ -41,31 +41,23 @@ trait ParticipantInfo extends StObject {
 }
 object ParticipantInfo {
   
-  @scala.inline
-  def apply(affiliation: Double, flags: Double, id: String, reason: String, resource: String, role: Double): ParticipantInfo = {
+  inline def apply(affiliation: Double, flags: Double, id: String, reason: String, resource: String, role: Double): ParticipantInfo = {
     val __obj = js.Dynamic.literal(affiliation = affiliation.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticipantInfo]
   }
   
-  @scala.inline
-  implicit class ParticipantInfoMutableBuilder[Self <: ParticipantInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ParticipantInfo](x: Self) {
     
-    @scala.inline
-    def setAffiliation(value: Double): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
+    inline def setAffiliation(value: Double): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: Double): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Double): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

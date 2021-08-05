@@ -21,20 +21,17 @@ object ShowPagingBarType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType.No")
   @js.native
   def No: ShowPagingBarType = js.native
-  @scala.inline
-  def No_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
+  inline def No_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType.YesWithTotalCount")
   @js.native
   def YesWithTotalCount: ShowPagingBarType = js.native
-  @scala.inline
-  def YesWithTotalCount_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithTotalCount")(x.asInstanceOf[js.Any])
+  inline def YesWithTotalCount_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithTotalCount")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType.YesWithoutTotalCount")
   @js.native
   def YesWithoutTotalCount: ShowPagingBarType = js.native
-  @scala.inline
-  def YesWithoutTotalCount_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithoutTotalCount")(x.asInstanceOf[js.Any])
+  inline def YesWithoutTotalCount_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithoutTotalCount")(x.asInstanceOf[js.Any])
 }

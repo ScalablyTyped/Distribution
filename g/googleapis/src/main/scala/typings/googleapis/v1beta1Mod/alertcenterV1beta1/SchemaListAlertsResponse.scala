@@ -24,28 +24,21 @@ trait SchemaListAlertsResponse extends StObject {
 }
 object SchemaListAlertsResponse {
   
-  @scala.inline
-  def apply(): SchemaListAlertsResponse = {
+  inline def apply(): SchemaListAlertsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListAlertsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListAlertsResponseMutableBuilder[Self <: SchemaListAlertsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListAlertsResponse](x: Self) {
     
-    @scala.inline
-    def setAlerts(value: js.Array[SchemaAlert]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
+    inline def setAlerts(value: js.Array[SchemaAlert]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
+    inline def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
     
-    @scala.inline
-    def setAlertsVarargs(value: SchemaAlert*): Self = StObject.set(x, "alerts", js.Array(value :_*))
+    inline def setAlertsVarargs(value: SchemaAlert*): Self = StObject.set(x, "alerts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

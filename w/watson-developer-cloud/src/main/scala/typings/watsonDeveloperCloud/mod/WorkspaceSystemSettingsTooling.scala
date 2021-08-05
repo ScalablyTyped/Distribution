@@ -12,19 +12,15 @@ trait WorkspaceSystemSettingsTooling extends StObject {
 }
 object WorkspaceSystemSettingsTooling {
   
-  @scala.inline
-  def apply(): WorkspaceSystemSettingsTooling = {
+  inline def apply(): WorkspaceSystemSettingsTooling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceSystemSettingsTooling]
   }
   
-  @scala.inline
-  implicit class WorkspaceSystemSettingsToolingMutableBuilder[Self <: WorkspaceSystemSettingsTooling] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceSystemSettingsTooling](x: Self) {
     
-    @scala.inline
-    def setStore_generic_responses(value: Boolean): Self = StObject.set(x, "store_generic_responses", value.asInstanceOf[js.Any])
+    inline def setStore_generic_responses(value: Boolean): Self = StObject.set(x, "store_generic_responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore_generic_responsesUndefined: Self = StObject.set(x, "store_generic_responses", js.undefined)
+    inline def setStore_generic_responsesUndefined: Self = StObject.set(x, "store_generic_responses", js.undefined)
   }
 }

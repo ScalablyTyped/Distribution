@@ -21,25 +21,19 @@ trait SchemaCustomHttpPattern extends StObject {
 }
 object SchemaCustomHttpPattern {
   
-  @scala.inline
-  def apply(): SchemaCustomHttpPattern = {
+  inline def apply(): SchemaCustomHttpPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomHttpPattern]
   }
   
-  @scala.inline
-  implicit class SchemaCustomHttpPatternMutableBuilder[Self <: SchemaCustomHttpPattern] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomHttpPattern](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

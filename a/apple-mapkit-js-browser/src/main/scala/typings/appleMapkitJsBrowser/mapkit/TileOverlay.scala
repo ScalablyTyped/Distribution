@@ -43,8 +43,7 @@ trait TileOverlay extends StObject {
 }
 object TileOverlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Object,
     maximumZ: Double,
     minimumZ: Double,
@@ -56,29 +55,21 @@ object TileOverlay {
     __obj.asInstanceOf[TileOverlay]
   }
   
-  @scala.inline
-  implicit class TileOverlayMutableBuilder[Self <: TileOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: TileOverlay](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
+    inline def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
+    inline def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+    inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUrlTemplate(value: String | URLTemplateCallback): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
+    inline def setUrlTemplate(value: String | URLTemplateCallback): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlTemplateFunction5(
+    inline def setUrlTemplateFunction5(
       value: (/* x */ Double, /* y */ Double, /* z */ Double, /* scale */ Double, /* data */ js.Object) => String
     ): Self = StObject.set(x, "urlTemplate", js.Any.fromFunction5(value))
   }

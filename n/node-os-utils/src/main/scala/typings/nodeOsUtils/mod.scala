@@ -19,11 +19,9 @@ object mod {
   @js.native
   val drive: typings.nodeOsUtils.driveMod.default = js.native
   
-  @scala.inline
-  def exec(command: String): js.Function0[js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[String]]]
+  inline def exec(command: String): js.Function0[js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[String]]]
   
-  @scala.inline
-  def isNotSupported(res: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotSupported")(res.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNotSupported(res: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotSupported")(res.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("node-os-utils", "mem")
   @js.native
@@ -46,14 +44,12 @@ object mod {
     @JSImport("node-os-utils", "options.INTERVAL")
     @js.native
     def INTERVAL: Double = js.native
-    @scala.inline
-    def INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERVAL")(x.asInstanceOf[js.Any])
+    inline def INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERVAL")(x.asInstanceOf[js.Any])
     
     @JSImport("node-os-utils", "options.NOT_SUPPORTED_VALUE")
     @js.native
     def NOT_SUPPORTED_VALUE: String = js.native
-    @scala.inline
-    def NOT_SUPPORTED_VALUE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_SUPPORTED_VALUE")(x.asInstanceOf[js.Any])
+    inline def NOT_SUPPORTED_VALUE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_SUPPORTED_VALUE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("node-os-utils", "os")
@@ -72,6 +68,5 @@ object mod {
   @js.native
   val users: typings.nodeOsUtils.usersMod.default = js.native
   
-  @scala.inline
-  def wrapExec(command: String): js.Function0[js.Function0[js.Promise[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapExec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function0[js.Promise[String]]]]
+  inline def wrapExec(command: String): js.Function0[js.Function0[js.Promise[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapExec")(command.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function0[js.Promise[String]]]]
 }

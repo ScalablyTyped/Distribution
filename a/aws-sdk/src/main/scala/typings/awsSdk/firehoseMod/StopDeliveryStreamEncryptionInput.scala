@@ -13,16 +13,13 @@ trait StopDeliveryStreamEncryptionInput extends StObject {
 }
 object StopDeliveryStreamEncryptionInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName): StopDeliveryStreamEncryptionInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName): StopDeliveryStreamEncryptionInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopDeliveryStreamEncryptionInput]
   }
   
-  @scala.inline
-  implicit class StopDeliveryStreamEncryptionInputMutableBuilder[Self <: StopDeliveryStreamEncryptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopDeliveryStreamEncryptionInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait DescribeWorkspacesConnectionStatusRequest extends StObject {
 }
 object DescribeWorkspacesConnectionStatusRequest {
   
-  @scala.inline
-  def apply(): DescribeWorkspacesConnectionStatusRequest = {
+  inline def apply(): DescribeWorkspacesConnectionStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspacesConnectionStatusRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspacesConnectionStatusRequestMutableBuilder[Self <: DescribeWorkspacesConnectionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspacesConnectionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWorkspaceIds(value: WorkspaceIdList): Self = StObject.set(x, "WorkspaceIds", value.asInstanceOf[js.Any])
+    inline def setWorkspaceIds(value: WorkspaceIdList): Self = StObject.set(x, "WorkspaceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdsUndefined: Self = StObject.set(x, "WorkspaceIds", js.undefined)
+    inline def setWorkspaceIdsUndefined: Self = StObject.set(x, "WorkspaceIds", js.undefined)
     
-    @scala.inline
-    def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = StObject.set(x, "WorkspaceIds", js.Array(value :_*))
+    inline def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = StObject.set(x, "WorkspaceIds", js.Array(value :_*))
   }
 }

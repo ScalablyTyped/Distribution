@@ -23,31 +23,23 @@ trait SchemaAccountCustomerService extends StObject {
 }
 object SchemaAccountCustomerService {
   
-  @scala.inline
-  def apply(): SchemaAccountCustomerService = {
+  inline def apply(): SchemaAccountCustomerService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountCustomerService]
   }
   
-  @scala.inline
-  implicit class SchemaAccountCustomerServiceMutableBuilder[Self <: SchemaAccountCustomerService] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountCustomerService](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

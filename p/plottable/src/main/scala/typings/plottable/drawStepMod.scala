@@ -17,20 +17,16 @@ object drawStepMod {
   }
   object AppliedDrawStep {
     
-    @scala.inline
-    def apply(animator: IAnimator, attrToAppliedProjector: AttributeToAppliedProjector): AppliedDrawStep = {
+    inline def apply(animator: IAnimator, attrToAppliedProjector: AttributeToAppliedProjector): AppliedDrawStep = {
       val __obj = js.Dynamic.literal(animator = animator.asInstanceOf[js.Any], attrToAppliedProjector = attrToAppliedProjector.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppliedDrawStep]
     }
     
-    @scala.inline
-    implicit class AppliedDrawStepMutableBuilder[Self <: AppliedDrawStep] (val x: Self) extends AnyVal {
+    extension [Self <: AppliedDrawStep](x: Self) {
       
-      @scala.inline
-      def setAnimator(value: IAnimator): Self = StObject.set(x, "animator", value.asInstanceOf[js.Any])
+      inline def setAnimator(value: IAnimator): Self = StObject.set(x, "animator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrToAppliedProjector(value: AttributeToAppliedProjector): Self = StObject.set(x, "attrToAppliedProjector", value.asInstanceOf[js.Any])
+      inline def setAttrToAppliedProjector(value: AttributeToAppliedProjector): Self = StObject.set(x, "attrToAppliedProjector", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +38,16 @@ object drawStepMod {
   }
   object DrawStep {
     
-    @scala.inline
-    def apply(animator: IAnimator, attrToProjector: AttributeToProjector): DrawStep = {
+    inline def apply(animator: IAnimator, attrToProjector: AttributeToProjector): DrawStep = {
       val __obj = js.Dynamic.literal(animator = animator.asInstanceOf[js.Any], attrToProjector = attrToProjector.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawStep]
     }
     
-    @scala.inline
-    implicit class DrawStepMutableBuilder[Self <: DrawStep] (val x: Self) extends AnyVal {
+    extension [Self <: DrawStep](x: Self) {
       
-      @scala.inline
-      def setAnimator(value: IAnimator): Self = StObject.set(x, "animator", value.asInstanceOf[js.Any])
+      inline def setAnimator(value: IAnimator): Self = StObject.set(x, "animator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrToProjector(value: AttributeToProjector): Self = StObject.set(x, "attrToProjector", value.asInstanceOf[js.Any])
+      inline def setAttrToProjector(value: AttributeToProjector): Self = StObject.set(x, "attrToProjector", value.asInstanceOf[js.Any])
     }
   }
 }

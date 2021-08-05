@@ -43,8 +43,7 @@ trait HidInputReport extends StObject {
 }
 object HidInputReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedBooleanControls: IVectorView[HidBooleanControl],
     data: IBuffer,
     getBooleanControl: js.Any,
@@ -58,31 +57,22 @@ object HidInputReport {
     __obj.asInstanceOf[HidInputReport]
   }
   
-  @scala.inline
-  implicit class HidInputReportMutableBuilder[Self <: HidInputReport] (val x: Self) extends AnyVal {
+  extension [Self <: HidInputReport](x: Self) {
     
-    @scala.inline
-    def setActivatedBooleanControls(value: IVectorView[HidBooleanControl]): Self = StObject.set(x, "activatedBooleanControls", value.asInstanceOf[js.Any])
+    inline def setActivatedBooleanControls(value: IVectorView[HidBooleanControl]): Self = StObject.set(x, "activatedBooleanControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBooleanControl(value: js.Any): Self = StObject.set(x, "getBooleanControl", value.asInstanceOf[js.Any])
+    inline def setGetBooleanControl(value: js.Any): Self = StObject.set(x, "getBooleanControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = StObject.set(x, "getBooleanControlByDescription", js.Any.fromFunction1(value))
+    inline def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = StObject.set(x, "getBooleanControlByDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumericControl(value: js.Any): Self = StObject.set(x, "getNumericControl", value.asInstanceOf[js.Any])
+    inline def setGetNumericControl(value: js.Any): Self = StObject.set(x, "getNumericControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = StObject.set(x, "getNumericControlByDescription", js.Any.fromFunction1(value))
+    inline def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = StObject.set(x, "getNumericControlByDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionedBooleanControls(value: IVectorView[HidBooleanControl]): Self = StObject.set(x, "transitionedBooleanControls", value.asInstanceOf[js.Any])
+    inline def setTransitionedBooleanControls(value: IVectorView[HidBooleanControl]): Self = StObject.set(x, "transitionedBooleanControls", value.asInstanceOf[js.Any])
   }
 }

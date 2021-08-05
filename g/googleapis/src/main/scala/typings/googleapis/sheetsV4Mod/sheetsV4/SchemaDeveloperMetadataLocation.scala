@@ -33,37 +33,27 @@ trait SchemaDeveloperMetadataLocation extends StObject {
 }
 object SchemaDeveloperMetadataLocation {
   
-  @scala.inline
-  def apply(): SchemaDeveloperMetadataLocation = {
+  inline def apply(): SchemaDeveloperMetadataLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeveloperMetadataLocation]
   }
   
-  @scala.inline
-  implicit class SchemaDeveloperMetadataLocationMutableBuilder[Self <: SchemaDeveloperMetadataLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeveloperMetadataLocation](x: Self) {
     
-    @scala.inline
-    def setDimensionRange(value: SchemaDimensionRange): Self = StObject.set(x, "dimensionRange", value.asInstanceOf[js.Any])
+    inline def setDimensionRange(value: SchemaDimensionRange): Self = StObject.set(x, "dimensionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionRangeUndefined: Self = StObject.set(x, "dimensionRange", js.undefined)
+    inline def setDimensionRangeUndefined: Self = StObject.set(x, "dimensionRange", js.undefined)
     
-    @scala.inline
-    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
     
-    @scala.inline
-    def setSpreadsheet(value: Boolean): Self = StObject.set(x, "spreadsheet", value.asInstanceOf[js.Any])
+    inline def setSpreadsheet(value: Boolean): Self = StObject.set(x, "spreadsheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetUndefined: Self = StObject.set(x, "spreadsheet", js.undefined)
+    inline def setSpreadsheetUndefined: Self = StObject.set(x, "spreadsheet", js.undefined)
   }
 }

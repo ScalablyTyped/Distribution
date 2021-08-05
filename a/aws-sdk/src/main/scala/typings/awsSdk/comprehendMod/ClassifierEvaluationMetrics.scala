@@ -48,61 +48,43 @@ trait ClassifierEvaluationMetrics extends StObject {
 }
 object ClassifierEvaluationMetrics {
   
-  @scala.inline
-  def apply(): ClassifierEvaluationMetrics = {
+  inline def apply(): ClassifierEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassifierEvaluationMetrics]
   }
   
-  @scala.inline
-  implicit class ClassifierEvaluationMetricsMutableBuilder[Self <: ClassifierEvaluationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifierEvaluationMetrics](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "Accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "Accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyUndefined: Self = StObject.set(x, "Accuracy", js.undefined)
+    inline def setAccuracyUndefined: Self = StObject.set(x, "Accuracy", js.undefined)
     
-    @scala.inline
-    def setF1Score(value: Double): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
+    inline def setF1Score(value: Double): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1ScoreUndefined: Self = StObject.set(x, "F1Score", js.undefined)
+    inline def setF1ScoreUndefined: Self = StObject.set(x, "F1Score", js.undefined)
     
-    @scala.inline
-    def setHammingLoss(value: Double): Self = StObject.set(x, "HammingLoss", value.asInstanceOf[js.Any])
+    inline def setHammingLoss(value: Double): Self = StObject.set(x, "HammingLoss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHammingLossUndefined: Self = StObject.set(x, "HammingLoss", js.undefined)
+    inline def setHammingLossUndefined: Self = StObject.set(x, "HammingLoss", js.undefined)
     
-    @scala.inline
-    def setMicroF1Score(value: Double): Self = StObject.set(x, "MicroF1Score", value.asInstanceOf[js.Any])
+    inline def setMicroF1Score(value: Double): Self = StObject.set(x, "MicroF1Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicroF1ScoreUndefined: Self = StObject.set(x, "MicroF1Score", js.undefined)
+    inline def setMicroF1ScoreUndefined: Self = StObject.set(x, "MicroF1Score", js.undefined)
     
-    @scala.inline
-    def setMicroPrecision(value: Double): Self = StObject.set(x, "MicroPrecision", value.asInstanceOf[js.Any])
+    inline def setMicroPrecision(value: Double): Self = StObject.set(x, "MicroPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicroPrecisionUndefined: Self = StObject.set(x, "MicroPrecision", js.undefined)
+    inline def setMicroPrecisionUndefined: Self = StObject.set(x, "MicroPrecision", js.undefined)
     
-    @scala.inline
-    def setMicroRecall(value: Double): Self = StObject.set(x, "MicroRecall", value.asInstanceOf[js.Any])
+    inline def setMicroRecall(value: Double): Self = StObject.set(x, "MicroRecall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicroRecallUndefined: Self = StObject.set(x, "MicroRecall", js.undefined)
+    inline def setMicroRecallUndefined: Self = StObject.set(x, "MicroRecall", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
     
-    @scala.inline
-    def setRecall(value: Double): Self = StObject.set(x, "Recall", value.asInstanceOf[js.Any])
+    inline def setRecall(value: Double): Self = StObject.set(x, "Recall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecallUndefined: Self = StObject.set(x, "Recall", js.undefined)
+    inline def setRecallUndefined: Self = StObject.set(x, "Recall", js.undefined)
   }
 }

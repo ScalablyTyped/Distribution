@@ -16,8 +16,7 @@ trait ComputedContext_ extends StObject {
 }
 object ComputedContext_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDependencies: () => js.Array[Subscribable_[js.Any]],
     getDependenciesCount: () => Double,
     isInitial: () => Boolean,
@@ -27,19 +26,14 @@ object ComputedContext_ {
     __obj.asInstanceOf[ComputedContext_]
   }
   
-  @scala.inline
-  implicit class ComputedContext_MutableBuilder[Self <: ComputedContext_] (val x: Self) extends AnyVal {
+  extension [Self <: ComputedContext_](x: Self) {
     
-    @scala.inline
-    def setGetDependencies(value: () => js.Array[Subscribable_[js.Any]]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction0(value))
+    inline def setGetDependencies(value: () => js.Array[Subscribable_[js.Any]]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDependenciesCount(value: () => Double): Self = StObject.set(x, "getDependenciesCount", js.Any.fromFunction0(value))
+    inline def setGetDependenciesCount(value: () => Double): Self = StObject.set(x, "getDependenciesCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInitial(value: () => Boolean): Self = StObject.set(x, "isInitial", js.Any.fromFunction0(value))
+    inline def setIsInitial(value: () => Boolean): Self = StObject.set(x, "isInitial", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterDependency(value: Subscribable_[js.Any] => Unit): Self = StObject.set(x, "registerDependency", js.Any.fromFunction1(value))
+    inline def setRegisterDependency(value: Subscribable_[js.Any] => Unit): Self = StObject.set(x, "registerDependency", js.Any.fromFunction1(value))
   }
 }

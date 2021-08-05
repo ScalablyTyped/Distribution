@@ -17,16 +17,13 @@ trait Type
 }
 object Type {
   
-  @scala.inline
-  def apply($type: timestamp | date): Type = {
+  inline def apply($type: timestamp | date): Type = {
     val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def set$type(value: timestamp | date): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+    inline def set$type(value: timestamp | date): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
   }
 }

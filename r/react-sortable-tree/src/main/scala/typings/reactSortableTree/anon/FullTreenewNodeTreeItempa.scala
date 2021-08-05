@@ -27,8 +27,7 @@ trait FullTreenewNodeTreeItempa extends StObject {
 }
 object FullTreenewNodeTreeItempa {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
     newNode: TreeItem,
     treeData: js.Array[TreeItem]
@@ -37,43 +36,30 @@ object FullTreenewNodeTreeItempa {
     __obj.asInstanceOf[FullTreenewNodeTreeItempa]
   }
   
-  @scala.inline
-  implicit class FullTreenewNodeTreeItempaMutableBuilder[Self <: FullTreenewNodeTreeItempa] (val x: Self) extends AnyVal {
+  extension [Self <: FullTreenewNodeTreeItempa](x: Self) {
     
-    @scala.inline
-    def setAddAsFirstChild(value: Boolean): Self = StObject.set(x, "addAsFirstChild", value.asInstanceOf[js.Any])
+    inline def setAddAsFirstChild(value: Boolean): Self = StObject.set(x, "addAsFirstChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAsFirstChildUndefined: Self = StObject.set(x, "addAsFirstChild", js.undefined)
+    inline def setAddAsFirstChildUndefined: Self = StObject.set(x, "addAsFirstChild", js.undefined)
     
-    @scala.inline
-    def setExpandParent(value: Boolean): Self = StObject.set(x, "expandParent", value.asInstanceOf[js.Any])
+    inline def setExpandParent(value: Boolean): Self = StObject.set(x, "expandParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandParentUndefined: Self = StObject.set(x, "expandParent", js.undefined)
+    inline def setExpandParentUndefined: Self = StObject.set(x, "expandParent", js.undefined)
     
-    @scala.inline
-    def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
+    inline def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
+    inline def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
     
-    @scala.inline
-    def setNewNode(value: TreeItem): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
+    inline def setNewNode(value: TreeItem): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentKey(value: Double | String): Self = StObject.set(x, "parentKey", value.asInstanceOf[js.Any])
+    inline def setParentKey(value: Double | String): Self = StObject.set(x, "parentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentKeyUndefined: Self = StObject.set(x, "parentKey", js.undefined)
+    inline def setParentKeyUndefined: Self = StObject.set(x, "parentKey", js.undefined)
     
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+    inline def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+    inline def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

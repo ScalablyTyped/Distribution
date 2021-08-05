@@ -12,25 +12,19 @@ trait DiagramEditableTool extends StObject {
 }
 object DiagramEditableTool {
   
-  @scala.inline
-  def apply(): DiagramEditableTool = {
+  inline def apply(): DiagramEditableTool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramEditableTool]
   }
   
-  @scala.inline
-  implicit class DiagramEditableToolMutableBuilder[Self <: DiagramEditableTool] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramEditableTool](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

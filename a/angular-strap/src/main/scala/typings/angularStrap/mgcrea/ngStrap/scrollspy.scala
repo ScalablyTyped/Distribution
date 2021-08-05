@@ -23,8 +23,7 @@ object scrollspy {
   }
   object IScrollspy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activate: Double => Unit,
       checkOffsets: () => Unit,
       trackElement: (js.Any, js.Any) => Unit,
@@ -34,20 +33,15 @@ object scrollspy {
       __obj.asInstanceOf[IScrollspy]
     }
     
-    @scala.inline
-    implicit class IScrollspyMutableBuilder[Self <: IScrollspy] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollspy](x: Self) {
       
-      @scala.inline
-      def setActivate(value: Double => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+      inline def setActivate(value: Double => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCheckOffsets(value: () => Unit): Self = StObject.set(x, "checkOffsets", js.Any.fromFunction0(value))
+      inline def setCheckOffsets(value: () => Unit): Self = StObject.set(x, "checkOffsets", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrackElement(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "trackElement", js.Any.fromFunction2(value))
+      inline def setTrackElement(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "trackElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUntrackElement(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "untrackElement", js.Any.fromFunction2(value))
+      inline def setUntrackElement(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "untrackElement", js.Any.fromFunction2(value))
     }
   }
   
@@ -59,26 +53,20 @@ object scrollspy {
   }
   object IScrollspyOptions {
     
-    @scala.inline
-    def apply(): IScrollspyOptions = {
+    inline def apply(): IScrollspyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScrollspyOptions]
     }
     
-    @scala.inline
-    implicit class IScrollspyOptionsMutableBuilder[Self <: IScrollspyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollspyOptions](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -88,17 +76,14 @@ object scrollspy {
   }
   object IScrollspyProvider {
     
-    @scala.inline
-    def apply(defaults: IScrollspyOptions): IScrollspyProvider = {
+    inline def apply(defaults: IScrollspyOptions): IScrollspyProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScrollspyProvider]
     }
     
-    @scala.inline
-    implicit class IScrollspyProviderMutableBuilder[Self <: IScrollspyProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollspyProvider](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: IScrollspyOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: IScrollspyOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
   

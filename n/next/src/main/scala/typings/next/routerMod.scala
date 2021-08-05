@@ -63,48 +63,32 @@ object routerMod {
     @JSImport("next/dist/next-server/lib/router/router", "default.events")
     @js.native
     def events: MittEmitter = js.native
-    @scala.inline
-    def events_=(x: MittEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+    inline def events_=(x: MittEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def addBasePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def addBasePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def addLocale(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def addLocale(path: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def addLocale(path: String, locale: String, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def addLocale(path: String, locale: Unit, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addLocale(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def addLocale(path: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addLocale(path: String, locale: String, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addLocale(path: String, locale: Unit, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def addLocale_false(path: String, locale: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def addLocale_false(path: String, locale: `false`, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addLocale_false(path: String, locale: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addLocale_false(path: String, locale: `false`, defaultLocale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], defaultLocale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def delBasePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("delBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def delBasePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("delBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def delLocale(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("delLocale")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def delLocale(path: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("delLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def delLocale(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("delLocale")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def delLocale(path: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("delLocale")(path.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def hasBasePath(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasBasePath(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBasePath")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def interpolateAs(route: String, asPathname: String, query: ParsedUrlQuery): Params = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateAs")(route.asInstanceOf[js.Any], asPathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Params]
+  inline def interpolateAs(route: String, asPathname: String, query: ParsedUrlQuery): Params = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateAs")(route.asInstanceOf[js.Any], asPathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Params]
   
-  @scala.inline
-  def isLocalURL(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLocalURL(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def resolveHref(currentPath: String, href: Url): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHref")(currentPath.asInstanceOf[js.Any], href.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def resolveHref(currentPath: String, href: Url, resolveAs: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHref")(currentPath.asInstanceOf[js.Any], href.asInstanceOf[js.Any], resolveAs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveHref(currentPath: String, href: Url): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHref")(currentPath.asInstanceOf[js.Any], href.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveHref(currentPath: String, href: Url, resolveAs: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHref")(currentPath.asInstanceOf[js.Any], href.asInstanceOf[js.Any], resolveAs.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type AppComponent = ComponentType[AppProps]
   
@@ -130,50 +114,36 @@ object routerMod {
   }
   object BaseRouter {
     
-    @scala.inline
-    def apply(asPath: String, basePath: String, pathname: String, query: ParsedUrlQuery, route: String): BaseRouter = {
+    inline def apply(asPath: String, basePath: String, pathname: String, query: ParsedUrlQuery, route: String): BaseRouter = {
       val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseRouter]
     }
     
-    @scala.inline
-    implicit class BaseRouterMutableBuilder[Self <: BaseRouter] (val x: Self) extends AnyVal {
+    extension [Self <: BaseRouter](x: Self) {
       
-      @scala.inline
-      def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
+      inline def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+      inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+      inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,53 +169,38 @@ object routerMod {
   }
   object CompletePrivateRouteInfo {
     
-    @scala.inline
-    def apply(Component: ComponentType[js.Object], styleSheets: js.Array[StyleSheetTuple]): CompletePrivateRouteInfo = {
+    inline def apply(Component: ComponentType[js.Object], styleSheets: js.Array[StyleSheetTuple]): CompletePrivateRouteInfo = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], styleSheets = styleSheets.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompletePrivateRouteInfo]
     }
     
-    @scala.inline
-    implicit class CompletePrivateRouteInfoMutableBuilder[Self <: CompletePrivateRouteInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CompletePrivateRouteInfo](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setStyleSheets(value: js.Array[StyleSheetTuple]): Self = StObject.set(x, "styleSheets", value.asInstanceOf[js.Any])
+      inline def setStyleSheets(value: js.Array[StyleSheetTuple]): Self = StObject.set(x, "styleSheets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleSheetsVarargs(value: StyleSheetTuple*): Self = StObject.set(x, "styleSheets", js.Array(value :_*))
+      inline def setStyleSheetsVarargs(value: StyleSheetTuple*): Self = StObject.set(x, "styleSheets", js.Array(value :_*))
       
-      @scala.inline
-      def set__N_SSG(value: Boolean): Self = StObject.set(x, "__N_SSG", value.asInstanceOf[js.Any])
+      inline def set__N_SSG(value: Boolean): Self = StObject.set(x, "__N_SSG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__N_SSGUndefined: Self = StObject.set(x, "__N_SSG", js.undefined)
+      inline def set__N_SSGUndefined: Self = StObject.set(x, "__N_SSG", js.undefined)
       
-      @scala.inline
-      def set__N_SSP(value: Boolean): Self = StObject.set(x, "__N_SSP", value.asInstanceOf[js.Any])
+      inline def set__N_SSP(value: Boolean): Self = StObject.set(x, "__N_SSP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__N_SSPUndefined: Self = StObject.set(x, "__N_SSP", js.undefined)
+      inline def set__N_SSPUndefined: Self = StObject.set(x, "__N_SSP", js.undefined)
     }
   }
   
@@ -258,11 +213,9 @@ object routerMod {
   trait HistoryMethod extends StObject
   object HistoryMethod {
     
-    @scala.inline
-    def pushState: typings.next.nextStrings.pushState = "pushState".asInstanceOf[typings.next.nextStrings.pushState]
+    inline def pushState: typings.next.nextStrings.pushState = "pushState".asInstanceOf[typings.next.nextStrings.pushState]
     
-    @scala.inline
-    def replaceState: typings.next.nextStrings.replaceState = "replaceState".asInstanceOf[typings.next.nextStrings.replaceState]
+    inline def replaceState: typings.next.nextStrings.replaceState = "replaceState".asInstanceOf[typings.next.nextStrings.replaceState]
   }
   
   trait NextHistoryState extends StObject {
@@ -275,23 +228,18 @@ object routerMod {
   }
   object NextHistoryState {
     
-    @scala.inline
-    def apply(as: String, options: TransitionOptions, url: String): NextHistoryState = {
+    inline def apply(as: String, options: TransitionOptions, url: String): NextHistoryState = {
       val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[NextHistoryState]
     }
     
-    @scala.inline
-    implicit class NextHistoryStateMutableBuilder[Self <: NextHistoryState] (val x: Self) extends AnyVal {
+    extension [Self <: NextHistoryState](x: Self) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: TransitionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: TransitionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -347,8 +295,7 @@ object routerMod {
   }
   object NextRouter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asPath: String,
       back: () => Unit,
       basePath: String,
@@ -367,74 +314,53 @@ object routerMod {
       __obj.asInstanceOf[NextRouter]
     }
     
-    @scala.inline
-    implicit class NextRouterMutableBuilder[Self <: NextRouter] (val x: Self) extends AnyVal {
+    extension [Self <: NextRouter](x: Self) {
       
-      @scala.inline
-      def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
+      inline def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
+      inline def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforePopState(value: /* cb */ BeforePopStateCallback => Unit): Self = StObject.set(x, "beforePopState", js.Any.fromFunction1(value))
+      inline def setBeforePopState(value: /* cb */ BeforePopStateCallback => Unit): Self = StObject.set(x, "beforePopState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+      inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
       
-      @scala.inline
-      def setEvents(value: MittEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: MittEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
+      inline def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+      inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefetch(
+      inline def setPrefetch(
         value: (/* url */ String, /* asPath */ js.UndefOr[String], /* options */ js.UndefOr[PrefetchOptions]) => js.Promise[Unit]
       ): Self = StObject.set(x, "prefetch", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPush(
+      inline def setPush(
         value: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[TransitionOptions]) => js.Promise[Boolean]
       ): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+      inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReplace(
+      inline def setReplace(
         value: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[TransitionOptions]) => js.Promise[Boolean]
       ): Self = StObject.set(x, "replace", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -446,26 +372,20 @@ object routerMod {
   }
   object PrefetchOptions {
     
-    @scala.inline
-    def apply(): PrefetchOptions = {
+    inline def apply(): PrefetchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrefetchOptions]
     }
     
-    @scala.inline
-    implicit class PrefetchOptionsMutableBuilder[Self <: PrefetchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrefetchOptions](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String | `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String | `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -476,14 +396,12 @@ object routerMod {
   trait PrivateRouteInfo extends StObject
   object PrivateRouteInfo {
     
-    @scala.inline
-    def CompletePrivateRouteInfo(Component: ComponentType[js.Object], styleSheets: js.Array[StyleSheetTuple]): typings.next.routerMod.CompletePrivateRouteInfo = {
+    inline def CompletePrivateRouteInfo(Component: ComponentType[js.Object], styleSheets: js.Array[StyleSheetTuple]): typings.next.routerMod.CompletePrivateRouteInfo = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], styleSheets = styleSheets.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.next.routerMod.CompletePrivateRouteInfo]
     }
     
-    @scala.inline
-    def OmitCompletePrivateRouteI(Component: ComponentType[js.Object]): typings.next.anon.OmitCompletePrivateRouteI = {
+    inline def OmitCompletePrivateRouteI(Component: ComponentType[js.Object]): typings.next.anon.OmitCompletePrivateRouteI = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], initial = true)
       __obj.asInstanceOf[typings.next.anon.OmitCompletePrivateRouteI]
     }
@@ -622,26 +540,20 @@ object routerMod {
   }
   object TransitionOptions {
     
-    @scala.inline
-    def apply(): TransitionOptions = {
+    inline def apply(): TransitionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionOptions]
     }
     
-    @scala.inline
-    implicit class TransitionOptionsMutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionOptions](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String | `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String | `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+      inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
+      inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
     }
   }
   

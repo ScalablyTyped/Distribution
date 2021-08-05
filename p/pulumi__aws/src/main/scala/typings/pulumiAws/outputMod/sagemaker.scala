@@ -17,29 +17,22 @@ object sagemaker {
   }
   object CodeRepositoryGitConfig {
     
-    @scala.inline
-    def apply(repositoryUrl: String): CodeRepositoryGitConfig = {
+    inline def apply(repositoryUrl: String): CodeRepositoryGitConfig = {
       val __obj = js.Dynamic.literal(repositoryUrl = repositoryUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeRepositoryGitConfig]
     }
     
-    @scala.inline
-    implicit class CodeRepositoryGitConfigMutableBuilder[Self <: CodeRepositoryGitConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CodeRepositoryGitConfig](x: Self) {
       
-      @scala.inline
-      def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
       
-      @scala.inline
-      def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
+      inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretArn(value: String): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+      inline def setSecretArn(value: String): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretArnUndefined: Self = StObject.set(x, "secretArn", js.undefined)
+      inline def setSecretArnUndefined: Self = StObject.set(x, "secretArn", js.undefined)
     }
   }
   
@@ -77,8 +70,7 @@ object sagemaker {
   }
   object EndpointConfigurationDataCaptureConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       captureOptions: js.Array[EndpointConfigurationDataCaptureConfigCaptureOption],
       destinationS3Uri: String,
       initialSamplingPercentage: Double
@@ -87,38 +79,27 @@ object sagemaker {
       __obj.asInstanceOf[EndpointConfigurationDataCaptureConfig]
     }
     
-    @scala.inline
-    implicit class EndpointConfigurationDataCaptureConfigMutableBuilder[Self <: EndpointConfigurationDataCaptureConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointConfigurationDataCaptureConfig](x: Self) {
       
-      @scala.inline
-      def setCaptureContentTypeHeader(value: EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader): Self = StObject.set(x, "captureContentTypeHeader", value.asInstanceOf[js.Any])
+      inline def setCaptureContentTypeHeader(value: EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader): Self = StObject.set(x, "captureContentTypeHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureContentTypeHeaderUndefined: Self = StObject.set(x, "captureContentTypeHeader", js.undefined)
+      inline def setCaptureContentTypeHeaderUndefined: Self = StObject.set(x, "captureContentTypeHeader", js.undefined)
       
-      @scala.inline
-      def setCaptureOptions(value: js.Array[EndpointConfigurationDataCaptureConfigCaptureOption]): Self = StObject.set(x, "captureOptions", value.asInstanceOf[js.Any])
+      inline def setCaptureOptions(value: js.Array[EndpointConfigurationDataCaptureConfigCaptureOption]): Self = StObject.set(x, "captureOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureOptionsVarargs(value: EndpointConfigurationDataCaptureConfigCaptureOption*): Self = StObject.set(x, "captureOptions", js.Array(value :_*))
+      inline def setCaptureOptionsVarargs(value: EndpointConfigurationDataCaptureConfigCaptureOption*): Self = StObject.set(x, "captureOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setDestinationS3Uri(value: String): Self = StObject.set(x, "destinationS3Uri", value.asInstanceOf[js.Any])
+      inline def setDestinationS3Uri(value: String): Self = StObject.set(x, "destinationS3Uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCapture(value: Boolean): Self = StObject.set(x, "enableCapture", value.asInstanceOf[js.Any])
+      inline def setEnableCapture(value: Boolean): Self = StObject.set(x, "enableCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCaptureUndefined: Self = StObject.set(x, "enableCapture", js.undefined)
+      inline def setEnableCaptureUndefined: Self = StObject.set(x, "enableCapture", js.undefined)
       
-      @scala.inline
-      def setInitialSamplingPercentage(value: Double): Self = StObject.set(x, "initialSamplingPercentage", value.asInstanceOf[js.Any])
+      inline def setInitialSamplingPercentage(value: Double): Self = StObject.set(x, "initialSamplingPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     }
   }
   
@@ -136,32 +117,24 @@ object sagemaker {
   }
   object EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader {
     
-    @scala.inline
-    def apply(): EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader = {
+    inline def apply(): EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader]
     }
     
-    @scala.inline
-    implicit class EndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderMutableBuilder[Self <: EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader](x: Self) {
       
-      @scala.inline
-      def setCsvContentTypes(value: js.Array[String]): Self = StObject.set(x, "csvContentTypes", value.asInstanceOf[js.Any])
+      inline def setCsvContentTypes(value: js.Array[String]): Self = StObject.set(x, "csvContentTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvContentTypesUndefined: Self = StObject.set(x, "csvContentTypes", js.undefined)
+      inline def setCsvContentTypesUndefined: Self = StObject.set(x, "csvContentTypes", js.undefined)
       
-      @scala.inline
-      def setCsvContentTypesVarargs(value: String*): Self = StObject.set(x, "csvContentTypes", js.Array(value :_*))
+      inline def setCsvContentTypesVarargs(value: String*): Self = StObject.set(x, "csvContentTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setJsonContentTypes(value: js.Array[String]): Self = StObject.set(x, "jsonContentTypes", value.asInstanceOf[js.Any])
+      inline def setJsonContentTypes(value: js.Array[String]): Self = StObject.set(x, "jsonContentTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonContentTypesUndefined: Self = StObject.set(x, "jsonContentTypes", js.undefined)
+      inline def setJsonContentTypesUndefined: Self = StObject.set(x, "jsonContentTypes", js.undefined)
       
-      @scala.inline
-      def setJsonContentTypesVarargs(value: String*): Self = StObject.set(x, "jsonContentTypes", js.Array(value :_*))
+      inline def setJsonContentTypesVarargs(value: String*): Self = StObject.set(x, "jsonContentTypes", js.Array(value :_*))
     }
   }
   
@@ -174,17 +147,14 @@ object sagemaker {
   }
   object EndpointConfigurationDataCaptureConfigCaptureOption {
     
-    @scala.inline
-    def apply(captureMode: String): EndpointConfigurationDataCaptureConfigCaptureOption = {
+    inline def apply(captureMode: String): EndpointConfigurationDataCaptureConfigCaptureOption = {
       val __obj = js.Dynamic.literal(captureMode = captureMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointConfigurationDataCaptureConfigCaptureOption]
     }
     
-    @scala.inline
-    implicit class EndpointConfigurationDataCaptureConfigCaptureOptionMutableBuilder[Self <: EndpointConfigurationDataCaptureConfigCaptureOption] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointConfigurationDataCaptureConfigCaptureOption](x: Self) {
       
-      @scala.inline
-      def setCaptureMode(value: String): Self = StObject.set(x, "captureMode", value.asInstanceOf[js.Any])
+      inline def setCaptureMode(value: String): Self = StObject.set(x, "captureMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,38 +192,28 @@ object sagemaker {
   }
   object EndpointConfigurationProductionVariant {
     
-    @scala.inline
-    def apply(initialInstanceCount: Double, instanceType: String, modelName: String, variantName: String): EndpointConfigurationProductionVariant = {
+    inline def apply(initialInstanceCount: Double, instanceType: String, modelName: String, variantName: String): EndpointConfigurationProductionVariant = {
       val __obj = js.Dynamic.literal(initialInstanceCount = initialInstanceCount.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], variantName = variantName.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointConfigurationProductionVariant]
     }
     
-    @scala.inline
-    implicit class EndpointConfigurationProductionVariantMutableBuilder[Self <: EndpointConfigurationProductionVariant] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointConfigurationProductionVariant](x: Self) {
       
-      @scala.inline
-      def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
+      inline def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
+      inline def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
       
-      @scala.inline
-      def setInitialInstanceCount(value: Double): Self = StObject.set(x, "initialInstanceCount", value.asInstanceOf[js.Any])
+      inline def setInitialInstanceCount(value: Double): Self = StObject.set(x, "initialInstanceCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialVariantWeight(value: Double): Self = StObject.set(x, "initialVariantWeight", value.asInstanceOf[js.Any])
+      inline def setInitialVariantWeight(value: Double): Self = StObject.set(x, "initialVariantWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialVariantWeightUndefined: Self = StObject.set(x, "initialVariantWeight", js.undefined)
+      inline def setInitialVariantWeightUndefined: Self = StObject.set(x, "initialVariantWeight", js.undefined)
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantName(value: String): Self = StObject.set(x, "variantName", value.asInstanceOf[js.Any])
+      inline def setVariantName(value: String): Self = StObject.set(x, "variantName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,47 +252,34 @@ object sagemaker {
   }
   object ModelContainer {
     
-    @scala.inline
-    def apply(image: String): ModelContainer = {
+    inline def apply(image: String): ModelContainer = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelContainer]
     }
     
-    @scala.inline
-    implicit class ModelContainerMutableBuilder[Self <: ModelContainer] (val x: Self) extends AnyVal {
+    extension [Self <: ModelContainer](x: Self) {
       
-      @scala.inline
-      def setContainerHostname(value: String): Self = StObject.set(x, "containerHostname", value.asInstanceOf[js.Any])
+      inline def setContainerHostname(value: String): Self = StObject.set(x, "containerHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerHostnameUndefined: Self = StObject.set(x, "containerHostname", js.undefined)
+      inline def setContainerHostnameUndefined: Self = StObject.set(x, "containerHostname", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageConfig(value: ModelContainerImageConfig): Self = StObject.set(x, "imageConfig", value.asInstanceOf[js.Any])
+      inline def setImageConfig(value: ModelContainerImageConfig): Self = StObject.set(x, "imageConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageConfigUndefined: Self = StObject.set(x, "imageConfig", js.undefined)
+      inline def setImageConfigUndefined: Self = StObject.set(x, "imageConfig", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setModelDataUrl(value: String): Self = StObject.set(x, "modelDataUrl", value.asInstanceOf[js.Any])
+      inline def setModelDataUrl(value: String): Self = StObject.set(x, "modelDataUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelDataUrlUndefined: Self = StObject.set(x, "modelDataUrl", js.undefined)
+      inline def setModelDataUrlUndefined: Self = StObject.set(x, "modelDataUrl", js.undefined)
     }
   }
   
@@ -345,17 +292,14 @@ object sagemaker {
   }
   object ModelContainerImageConfig {
     
-    @scala.inline
-    def apply(repositoryAccessMode: String): ModelContainerImageConfig = {
+    inline def apply(repositoryAccessMode: String): ModelContainerImageConfig = {
       val __obj = js.Dynamic.literal(repositoryAccessMode = repositoryAccessMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelContainerImageConfig]
     }
     
-    @scala.inline
-    implicit class ModelContainerImageConfigMutableBuilder[Self <: ModelContainerImageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ModelContainerImageConfig](x: Self) {
       
-      @scala.inline
-      def setRepositoryAccessMode(value: String): Self = StObject.set(x, "repositoryAccessMode", value.asInstanceOf[js.Any])
+      inline def setRepositoryAccessMode(value: String): Self = StObject.set(x, "repositoryAccessMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -394,47 +338,34 @@ object sagemaker {
   }
   object ModelPrimaryContainer {
     
-    @scala.inline
-    def apply(image: String): ModelPrimaryContainer = {
+    inline def apply(image: String): ModelPrimaryContainer = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelPrimaryContainer]
     }
     
-    @scala.inline
-    implicit class ModelPrimaryContainerMutableBuilder[Self <: ModelPrimaryContainer] (val x: Self) extends AnyVal {
+    extension [Self <: ModelPrimaryContainer](x: Self) {
       
-      @scala.inline
-      def setContainerHostname(value: String): Self = StObject.set(x, "containerHostname", value.asInstanceOf[js.Any])
+      inline def setContainerHostname(value: String): Self = StObject.set(x, "containerHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerHostnameUndefined: Self = StObject.set(x, "containerHostname", js.undefined)
+      inline def setContainerHostnameUndefined: Self = StObject.set(x, "containerHostname", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageConfig(value: ModelPrimaryContainerImageConfig): Self = StObject.set(x, "imageConfig", value.asInstanceOf[js.Any])
+      inline def setImageConfig(value: ModelPrimaryContainerImageConfig): Self = StObject.set(x, "imageConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageConfigUndefined: Self = StObject.set(x, "imageConfig", js.undefined)
+      inline def setImageConfigUndefined: Self = StObject.set(x, "imageConfig", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setModelDataUrl(value: String): Self = StObject.set(x, "modelDataUrl", value.asInstanceOf[js.Any])
+      inline def setModelDataUrl(value: String): Self = StObject.set(x, "modelDataUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelDataUrlUndefined: Self = StObject.set(x, "modelDataUrl", js.undefined)
+      inline def setModelDataUrlUndefined: Self = StObject.set(x, "modelDataUrl", js.undefined)
     }
   }
   
@@ -447,17 +378,14 @@ object sagemaker {
   }
   object ModelPrimaryContainerImageConfig {
     
-    @scala.inline
-    def apply(repositoryAccessMode: String): ModelPrimaryContainerImageConfig = {
+    inline def apply(repositoryAccessMode: String): ModelPrimaryContainerImageConfig = {
       val __obj = js.Dynamic.literal(repositoryAccessMode = repositoryAccessMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelPrimaryContainerImageConfig]
     }
     
-    @scala.inline
-    implicit class ModelPrimaryContainerImageConfigMutableBuilder[Self <: ModelPrimaryContainerImageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ModelPrimaryContainerImageConfig](x: Self) {
       
-      @scala.inline
-      def setRepositoryAccessMode(value: String): Self = StObject.set(x, "repositoryAccessMode", value.asInstanceOf[js.Any])
+      inline def setRepositoryAccessMode(value: String): Self = StObject.set(x, "repositoryAccessMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -469,26 +397,20 @@ object sagemaker {
   }
   object ModelVpcConfig {
     
-    @scala.inline
-    def apply(securityGroupIds: js.Array[String], subnets: js.Array[String]): ModelVpcConfig = {
+    inline def apply(securityGroupIds: js.Array[String], subnets: js.Array[String]): ModelVpcConfig = {
       val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelVpcConfig]
     }
     
-    @scala.inline
-    implicit class ModelVpcConfigMutableBuilder[Self <: ModelVpcConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ModelVpcConfig](x: Self) {
       
-      @scala.inline
-      def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+      inline def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+      inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
     }
   }
 }
